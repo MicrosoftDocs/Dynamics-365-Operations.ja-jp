@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,101 +18,101 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0499f604049240a226b4002710817034598b1e66
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529213"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977716"
 ---
-# <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a><span data-ttu-id="3e8c2-103">Supply Chain Management の顧客への Sales の勘定の直接同期</span><span class="sxs-lookup"><span data-stu-id="3e8c2-103">Synchronize accounts directly from Sales to customers in Supply Chain Management</span></span>
+# <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a><span data-ttu-id="bcbbd-103">Supply Chain Management の顧客への Sales の勘定の直接同期</span><span class="sxs-lookup"><span data-stu-id="bcbbd-103">Synchronize accounts directly from Sales to customers in Supply Chain Management</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> <span data-ttu-id="3e8c2-104">見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-104">Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).</span></span>
+> <span data-ttu-id="bcbbd-104">見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-104">Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).</span></span>
 
-<span data-ttu-id="3e8c2-105">このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に勘定を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-105">This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.</span></span>
+<span data-ttu-id="bcbbd-105">このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に勘定を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-105">This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.</span></span>
 
-## <a name="data-flow-in-prospect-to-cash"></a><span data-ttu-id="3e8c2-106">見込み客の現金化へのデータフロー</span><span class="sxs-lookup"><span data-stu-id="3e8c2-106">Data flow in Prospect to cash</span></span>
+## <a name="data-flow-in-prospect-to-cash"></a><span data-ttu-id="bcbbd-106">見込み客の現金化へのデータフロー</span><span class="sxs-lookup"><span data-stu-id="bcbbd-106">Data flow in Prospect to cash</span></span>
 
-<span data-ttu-id="3e8c2-107">見込み客の現金化ソリューションは、Supply Chain Management と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-107">The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales.</span></span>  <span data-ttu-id="3e8c2-108">データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Supply Chain Management と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-108">The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales.</span></span> <span data-ttu-id="3e8c2-109">次の図は、Supply Chain Management と Sales の間でデータを同期させる方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-109">The following illustration shows how the data is synchronized between Supply Chain Management and Sales.</span></span>
+<span data-ttu-id="bcbbd-107">見込み客の現金化ソリューションは、Supply Chain Management と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-107">The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales.</span></span>  <span data-ttu-id="bcbbd-108">データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Supply Chain Management と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-108">The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales.</span></span> <span data-ttu-id="bcbbd-109">次の図は、Supply Chain Management と Sales の間でデータを同期させる方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-109">The following illustration shows how the data is synchronized between Supply Chain Management and Sales.</span></span>
 
-<span data-ttu-id="3e8c2-110">[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)</span><span class="sxs-lookup"><span data-stu-id="3e8c2-110">[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)</span></span>
+<span data-ttu-id="bcbbd-110">[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)</span><span class="sxs-lookup"><span data-stu-id="bcbbd-110">[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)</span></span>
 
-## <a name="templates-and-tasks"></a><span data-ttu-id="3e8c2-111">テンプレートおよびタスク</span><span class="sxs-lookup"><span data-stu-id="3e8c2-111">Templates and tasks</span></span>
+## <a name="templates-and-tasks"></a><span data-ttu-id="bcbbd-111">テンプレートおよびタスク</span><span class="sxs-lookup"><span data-stu-id="bcbbd-111">Templates and tasks</span></span>
 
-<span data-ttu-id="3e8c2-112">利用可能なテンプレートにアクセスするには、[Power Apps 管理者センター](https://preview.admin.powerapps.com/dataintegration)を開きます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-112">To access the available templates, open [Power Apps Admin Center](https://preview.admin.powerapps.com/dataintegration).</span></span> <span data-ttu-id="3e8c2-113">**プロジェクト** を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-113">Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.</span></span>
+<span data-ttu-id="bcbbd-112">利用可能なテンプレートにアクセスするには、[Power Apps 管理者センター](https://preview.admin.powerapps.com/dataintegration)を開きます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-112">To access the available templates, open [Power Apps Admin Center](https://preview.admin.powerapps.com/dataintegration).</span></span> <span data-ttu-id="bcbbd-113">**プロジェクト** を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-113">Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.</span></span>
 
-<span data-ttu-id="3e8c2-114">Sales から Supply Chain Management への勘定同期には、以下のテンプレートと基本的なタスクが使用されます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-114">The following template and underlying task are used to synchronize accounts from Sales to Supply Chain Management:</span></span>
+<span data-ttu-id="bcbbd-114">Sales から Supply Chain Management への勘定同期には、以下のテンプレートと基本的なタスクが使用されます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-114">The following template and underlying task are used to synchronize accounts from Sales to Supply Chain Management:</span></span>
 
-- <span data-ttu-id="3e8c2-115">**データ統合におけるテンプレートの名前:**  勘定 (Sales からFinance and Operations ) - 直接</span><span class="sxs-lookup"><span data-stu-id="3e8c2-115">**Name of the template in Data integration:** Accounts (Sales to Fin and Ops) - Direct</span></span>
-- <span data-ttu-id="3e8c2-116">**プロジェクトのタスクの名前:** - 勘定 - 顧客</span><span class="sxs-lookup"><span data-stu-id="3e8c2-116">**Name of the task in the project:** Accounts - Customers</span></span>
+- <span data-ttu-id="bcbbd-115">**データ統合におけるテンプレートの名前:**  勘定 (Sales からFinance and Operations ) - 直接</span><span class="sxs-lookup"><span data-stu-id="bcbbd-115">**Name of the template in Data integration:** Accounts (Sales to Fin and Ops) - Direct</span></span>
+- <span data-ttu-id="bcbbd-116">**プロジェクトのタスクの名前:** - 勘定 - 顧客</span><span class="sxs-lookup"><span data-stu-id="bcbbd-116">**Name of the task in the project:** Accounts - Customers</span></span>
 
-<span data-ttu-id="3e8c2-117">アカウント/顧客の同期が発生する前に、同期タスクは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-117">No synchronization tasks are required before Account/Customer synchronization can occur.</span></span>
+<span data-ttu-id="bcbbd-117">アカウント/顧客の同期が発生する前に、同期タスクは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-117">No synchronization tasks are required before Account/Customer synchronization can occur.</span></span>
 
-## <a name="entity-set"></a><span data-ttu-id="3e8c2-118">エンティティ セット</span><span class="sxs-lookup"><span data-stu-id="3e8c2-118">Entity set</span></span>
+## <a name="entity-set"></a><span data-ttu-id="bcbbd-118">エンティティ セット</span><span class="sxs-lookup"><span data-stu-id="bcbbd-118">Entity set</span></span>
 
-| <span data-ttu-id="3e8c2-119">販売注文</span><span class="sxs-lookup"><span data-stu-id="3e8c2-119">Sales</span></span>    | <span data-ttu-id="3e8c2-120">サプライ チェーン マネジメント</span><span class="sxs-lookup"><span data-stu-id="3e8c2-120">Supply Chain Management</span></span> |
+| <span data-ttu-id="bcbbd-119">販売注文</span><span class="sxs-lookup"><span data-stu-id="bcbbd-119">Sales</span></span>    | <span data-ttu-id="bcbbd-120">サプライ チェーン マネジメント</span><span class="sxs-lookup"><span data-stu-id="bcbbd-120">Supply Chain Management</span></span> |
 |----------|------------------------|
-| <span data-ttu-id="3e8c2-121">アカウント</span><span class="sxs-lookup"><span data-stu-id="3e8c2-121">Accounts</span></span> | <span data-ttu-id="3e8c2-122">顧客 V2</span><span class="sxs-lookup"><span data-stu-id="3e8c2-122">Customers V2</span></span>           |
+| <span data-ttu-id="bcbbd-121">アカウント</span><span class="sxs-lookup"><span data-stu-id="bcbbd-121">Accounts</span></span> | <span data-ttu-id="bcbbd-122">顧客 V2</span><span class="sxs-lookup"><span data-stu-id="bcbbd-122">Customers V2</span></span>           |
 
-## <a name="entity-flow"></a><span data-ttu-id="3e8c2-123">エンティティのフロー</span><span class="sxs-lookup"><span data-stu-id="3e8c2-123">Entity flow</span></span>
+## <a name="entity-flow"></a><span data-ttu-id="bcbbd-123">エンティティのフロー</span><span class="sxs-lookup"><span data-stu-id="bcbbd-123">Entity flow</span></span>
 
-<span data-ttu-id="3e8c2-124">勘定は Sales で管理され、Supply Chain Management に顧客として同期されます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-124">Accounts are managed in Sales and synchronized to Supply Chain Management as customers.</span></span> <span data-ttu-id="3e8c2-125">これらの顧客の **外部管理** プロパティを **はい** に設定し、Sales から生成される顧客を追跡します。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-125">The **Is Externally Maintained** property on these customers is set to **Yes** to track customers that originate from Sales.</span></span> <span data-ttu-id="3e8c2-126">請求時に、この情報は、売上に同期される請求書のフィルター処理に使用されます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-126">During invoicing, this information is used to filter invoices that are synchronized to Sales.</span></span>
+<span data-ttu-id="bcbbd-124">勘定は Sales で管理され、Supply Chain Management に顧客として同期されます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-124">Accounts are managed in Sales and synchronized to Supply Chain Management as customers.</span></span> <span data-ttu-id="bcbbd-125">これらの顧客の **外部管理** プロパティを **はい** に設定し、Sales から生成される顧客を追跡します。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-125">The **Is Externally Maintained** property on these customers is set to **Yes** to track customers that originate from Sales.</span></span> <span data-ttu-id="bcbbd-126">請求時に、この情報は、売上に同期される請求書のフィルター処理に使用されます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-126">During invoicing, this information is used to filter invoices that are synchronized to Sales.</span></span>
 
-## <a name="prospect-to-cash-solution-for-sales"></a><span data-ttu-id="3e8c2-127">売上の見込顧客を現金化するソリューション</span><span class="sxs-lookup"><span data-stu-id="3e8c2-127">Prospect to cash solution for Sales</span></span>
+## <a name="prospect-to-cash-solution-for-sales"></a><span data-ttu-id="bcbbd-127">売上の見込顧客を現金化するソリューション</span><span class="sxs-lookup"><span data-stu-id="bcbbd-127">Prospect to cash solution for Sales</span></span>
 
-<span data-ttu-id="3e8c2-128">**勘定番号** フィールドは、**勘定** ページで利用できます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-128">The **Account Number** field is available on the **Account** page.</span></span> <span data-ttu-id="3e8c2-129">統合をサポートするため固有なナチュラル キーとなっています。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-129">It has been made a natural and unique key in order to support the integration.</span></span> <span data-ttu-id="3e8c2-130">顧客関係管理 (CRM) ソリューションのナチュラル キー機能は、すでに **勘定番号** フィールドを使用しているが、勘定ごとに一意の **勘定番号** 値を使用していない顧客に影響する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-130">The natural key feature of the Customer Relationship Management (CRM) solution might affect customers who already use the **Account Number** field, but who don't use unique **Account Number** values per account.</span></span> <span data-ttu-id="3e8c2-131">現時点では、統合ソリューションは、このケースをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-131">Currently, the integration solution doesn't support this case.</span></span>
+<span data-ttu-id="bcbbd-128">**勘定番号** 列は、**勘定** ページで利用できます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-128">The **Account Number** column is available on the **Account** page.</span></span> <span data-ttu-id="bcbbd-129">統合をサポートするため固有なナチュラル キーとなっています。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-129">It has been made a natural and unique key in order to support the integration.</span></span> <span data-ttu-id="bcbbd-130">顧客関係管理 (CRM) ソリューションのナチュラル キー機能は、すでに **勘定番号** 列を使用しているが、勘定ごとに一意の **勘定番号** 値を使用していない顧客に影響する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-130">The natural key feature of the Customer Relationship Management (CRM) solution might affect customers who already use the **Account Number** column, but who don't use unique **Account Number** values per account.</span></span> <span data-ttu-id="bcbbd-131">現時点では、統合ソリューションは、このケースをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-131">Currently, the integration solution doesn't support this case.</span></span>
 
-<span data-ttu-id="3e8c2-132">新しいアカウントが作成され、**勘定番号** 値が存在しない場合、番号順序を使用して自動的に生成されます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-132">When a new account is created, if an **Account Number** value doesn't already exist, it's automatically generated by using a number sequence.</span></span> <span data-ttu-id="3e8c2-133">その値は **勘定** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-133">The value consists of **ACC**, followed by an increasing number sequence and then a suffix of six characters.</span></span> <span data-ttu-id="3e8c2-134">次に例を示します: **ACC-01000-BVRCPS**</span><span class="sxs-lookup"><span data-stu-id="3e8c2-134">Here is an example: **ACC-01000-BVRCPS**</span></span>
+<span data-ttu-id="bcbbd-132">新しいアカウントが作成され、**勘定番号** 値が存在しない場合、番号順序を使用して自動的に生成されます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-132">When a new account is created, if an **Account Number** value doesn't already exist, it's automatically generated by using a number sequence.</span></span> <span data-ttu-id="bcbbd-133">その値は **勘定** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-133">The value consists of **ACC**, followed by an increasing number sequence and then a suffix of six characters.</span></span> <span data-ttu-id="bcbbd-134">次に例を示します: **ACC-01000-BVRCPS**</span><span class="sxs-lookup"><span data-stu-id="bcbbd-134">Here is an example: **ACC-01000-BVRCPS**</span></span>
 
-<span data-ttu-id="3e8c2-135">売上の統合ソリューションが適用されている場合、アップグレード スクリプトにより、売上の既存のアカウントの、**勘定番号** フィールドが設定されます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-135">When the integration solution for Sales is applied, an upgrade script sets the **Account Number** field for existing accounts in Sales.</span></span> <span data-ttu-id="3e8c2-136">**勘定番号** 値がない場合は、前述した番号順序を使用します。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-136">If there are no **Account Number** values, the number sequence that was mentioned earlier is used.</span></span>
+<span data-ttu-id="bcbbd-135">売上の統合ソリューションが適用されている場合、アップグレード スクリプトにより、売上の既存のアカウントの、**勘定番号** 列が設定されます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-135">When the integration solution for Sales is applied, an upgrade script sets the **Account Number** column for existing accounts in Sales.</span></span> <span data-ttu-id="bcbbd-136">**勘定番号** 値がない場合は、前述した番号順序を使用します。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-136">If there are no **Account Number** values, the number sequence that was mentioned earlier is used.</span></span>
 
-## <a name="preconditions-and-mapping-setup"></a><span data-ttu-id="3e8c2-137">前提条件とマッピングの設定</span><span class="sxs-lookup"><span data-stu-id="3e8c2-137">Preconditions and mapping setup</span></span>
+## <a name="preconditions-and-mapping-setup"></a><span data-ttu-id="bcbbd-137">前提条件とマッピングの設定</span><span class="sxs-lookup"><span data-stu-id="bcbbd-137">Preconditions and mapping setup</span></span>
 
-- <span data-ttu-id="3e8c2-138">**CustomerGroupId** マッピングは、Supply Chain Management で有効な値に更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-138">The **CustomerGroupId** mapping must be updated to a valid value in Supply Chain Management.</span></span> <span data-ttu-id="3e8c2-139">既定値を指定するか、値マップを使用して値を設定できます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-139">You can specify a default value, or you can set the value by using a value map.</span></span>
+- <span data-ttu-id="bcbbd-138">**CustomerGroupId** マッピングは、Supply Chain Management で有効な値に更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-138">The **CustomerGroupId** mapping must be updated to a valid value in Supply Chain Management.</span></span> <span data-ttu-id="bcbbd-139">既定値を指定するか、値マップを使用して値を設定できます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-139">You can specify a default value, or you can set the value by using a value map.</span></span>
 
-    <span data-ttu-id="3e8c2-140">既定のテンプレートの値は **10** です。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-140">The default template value is **10**.</span></span>
+    <span data-ttu-id="bcbbd-140">既定のテンプレートの値は **10** です。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-140">The default template value is **10**.</span></span>
 
-- <span data-ttu-id="3e8c2-141">次のマッピングを追加することによって、Supply Chain Management で必要な手動更新の数を減らすことができます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-141">By adding the following mappings, you can help reduce the number of manual updates that are required in Supply Chain Management.</span></span> <span data-ttu-id="3e8c2-142">たとえば、**国/地域** または **市町村** のデフォルト値または値マップを使用できます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-142">You can use a default value or a value map from, for example, **Country/Region** or **City**.</span></span>
+- <span data-ttu-id="bcbbd-141">次のマッピングを追加することによって、Supply Chain Management で必要な手動更新の数を減らすことができます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-141">By adding the following mappings, you can help reduce the number of manual updates that are required in Supply Chain Management.</span></span> <span data-ttu-id="bcbbd-142">たとえば、**国/地域** または **市町村** のデフォルト値または値マップを使用できます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-142">You can use a default value or a value map from, for example, **Country/Region** or **City**.</span></span>
 
-    - <span data-ttu-id="3e8c2-143">**SiteId** – Supply Chain Management で見積書および販売注文を生成するにはサイトが必要です。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-143">**SiteId** – A site is required in order to generate quotations and sales order lines in Supply Chain Management.</span></span> <span data-ttu-id="3e8c2-144">デフォルトのサイトは、製品から、または注文ヘッダーの顧客から取得できます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-144">A default site can be taken either from the product, or from the customer from the order header.</span></span>
+    - <span data-ttu-id="bcbbd-143">**SiteId** – Supply Chain Management で見積書および販売注文を生成するにはサイトが必要です。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-143">**SiteId** – A site is required in order to generate quotations and sales order lines in Supply Chain Management.</span></span> <span data-ttu-id="bcbbd-144">デフォルトのサイトは、製品から、または注文ヘッダーの顧客から取得できます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-144">A default site can be taken either from the product, or from the customer from the order header.</span></span>
 
-        <span data-ttu-id="3e8c2-145">既定のテンプレートの値は **1** です。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-145">The default template value is **1**.</span></span>
+        <span data-ttu-id="bcbbd-145">既定のテンプレートの値は **1** です。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-145">The default template value is **1**.</span></span>
 
-    - <span data-ttu-id="3e8c2-146">**WarehouseId** – Supply Chain Management で見積書および販売注文を処理するには倉庫が必要です。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-146">**WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Supply Chain Management.</span></span> <span data-ttu-id="3e8c2-147">デフォルト倉庫は、製品から、または Supply Chain Management の受注ヘッダーの顧客から取得できます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-147">A default warehouse can be taken either from the product, or from the customer from the order header in Supply Chain Management.</span></span>
+    - <span data-ttu-id="bcbbd-146">**WarehouseId** – Supply Chain Management で見積書および販売注文を処理するには倉庫が必要です。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-146">**WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Supply Chain Management.</span></span> <span data-ttu-id="bcbbd-147">デフォルト倉庫は、製品から、または Supply Chain Management の受注ヘッダーの顧客から取得できます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-147">A default warehouse can be taken either from the product, or from the customer from the order header in Supply Chain Management.</span></span>
 
-        <span data-ttu-id="3e8c2-148">既定のテンプレートの値は **13** です。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-148">The default template value is **13**.</span></span>
+        <span data-ttu-id="bcbbd-148">既定のテンプレートの値は **13** です。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-148">The default template value is **13**.</span></span>
 
-    - <span data-ttu-id="3e8c2-149">**LanguageId** – Supply Chain Management で見積書および販売注文を生成するには言語が必要です。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-149">**LanguageId** – A language is required in order to generate quotations and sales orders in Supply Chain Management.</span></span> <span data-ttu-id="3e8c2-150">既定では、顧客からの注文ヘッダの言語が使用されます。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-150">By default, the language from the order header from the customer is used.</span></span>
+    - <span data-ttu-id="bcbbd-149">**LanguageId** – Supply Chain Management で見積書および販売注文を生成するには言語が必要です。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-149">**LanguageId** – A language is required in order to generate quotations and sales orders in Supply Chain Management.</span></span> <span data-ttu-id="bcbbd-150">既定では、顧客からの注文ヘッダの言語が使用されます。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-150">By default, the language from the order header from the customer is used.</span></span>
 
-        <span data-ttu-id="3e8c2-151">既定のテンプレートの値は **en-us** です。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-151">The default template value is **en-us**.</span></span>
+        <span data-ttu-id="bcbbd-151">既定のテンプレートの値は **en-us** です。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-151">The default template value is **en-us**.</span></span>
 
-## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="3e8c2-152">データ統合のテンプレートのマッピング</span><span class="sxs-lookup"><span data-stu-id="3e8c2-152">Template mapping in Data integration</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="3e8c2-153">**支払条件**,**運賃条件**,**配送条件**,**送付方法**,および **配送モード** フィールドは、既定のマッピングに含まれていません。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-153">The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't included in the default mappings.</span></span> <span data-ttu-id="3e8c2-154">これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-154">To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synchronized between.</span></span>
-
-<span data-ttu-id="3e8c2-155">次の図は、データ統合のテンプレート マッピングの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-155">The following illustrations show an example of a template mapping in Data integration.</span></span> 
+## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="bcbbd-152">データ統合のテンプレートのマッピング</span><span class="sxs-lookup"><span data-stu-id="bcbbd-152">Template mapping in Data integration</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3e8c2-156">マッピングは、Sales から Supply Chain Management にどのフィールド情報を同期するかを表示します。</span><span class="sxs-lookup"><span data-stu-id="3e8c2-156">The mapping shows which field information will be synchronized from Sales to Supply Chain Management.</span></span>
+> <span data-ttu-id="bcbbd-153">**支払条件**、**運賃条件**、**配送条件**、**送付方法**、および **配送モード** 列は、既定のマッピングには含まれていません。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-153">The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** columns aren't included in the default mappings.</span></span> <span data-ttu-id="bcbbd-154">これらの列をマップするには、テーブル間で同期される組織内のデータに固有の値マッピングを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-154">To map these columns, you must set up a value mapping that is specific to the data in the organizations that the table is synchronized between.</span></span>
+
+<span data-ttu-id="bcbbd-155">次の図は、データ統合のテンプレート マッピングの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-155">The following illustrations show an example of a template mapping in Data integration.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="bcbbd-156">マッピングは、Sales から Supply Chain Management にどの列情報を同期するかを表示します。</span><span class="sxs-lookup"><span data-stu-id="bcbbd-156">The mapping shows which column information will be synchronized from Sales to Supply Chain Management.</span></span>
 
 ![データ統合のテンプレートのマッピング](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
-## <a name="related-topics"></a><span data-ttu-id="3e8c2-158">関連トピック</span><span class="sxs-lookup"><span data-stu-id="3e8c2-158">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="bcbbd-158">関連トピック</span><span class="sxs-lookup"><span data-stu-id="bcbbd-158">Related topics</span></span>
 
 
-[<span data-ttu-id="3e8c2-159">見込顧客を現金化</span><span class="sxs-lookup"><span data-stu-id="3e8c2-159">Prospect to cash</span></span>](prospect-to-cash.md)
+[<span data-ttu-id="bcbbd-159">見込顧客を現金化</span><span class="sxs-lookup"><span data-stu-id="bcbbd-159">Prospect to cash</span></span>](prospect-to-cash.md)
 
-[<span data-ttu-id="3e8c2-160">Supply Chain Management の顧客への Sales の勘定の直接同期</span><span class="sxs-lookup"><span data-stu-id="3e8c2-160">Synchronize accounts directly from Sales to customers in Supply Chain Management</span></span>](accounts-template-mapping-direct.md)
+[<span data-ttu-id="bcbbd-160">Supply Chain Management の顧客への Sales の勘定の直接同期</span><span class="sxs-lookup"><span data-stu-id="bcbbd-160">Synchronize accounts directly from Sales to customers in Supply Chain Management</span></span>](accounts-template-mapping-direct.md)
 
-[<span data-ttu-id="3e8c2-161">Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期</span><span class="sxs-lookup"><span data-stu-id="3e8c2-161">Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management</span></span>](contacts-template-mapping-direct.md)
+[<span data-ttu-id="bcbbd-161">Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期</span><span class="sxs-lookup"><span data-stu-id="bcbbd-161">Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management</span></span>](contacts-template-mapping-direct.md)
 
-[<span data-ttu-id="3e8c2-162">販売注文の Sales と Supply Chain Management の間の直接同期</span><span class="sxs-lookup"><span data-stu-id="3e8c2-162">Synchronization of sales orders directly between Sales and Supply Chain Management</span></span>](sales-order-template-mapping-direct-two-ways.md)
+[<span data-ttu-id="bcbbd-162">販売注文の Sales と Supply Chain Management の間の直接同期</span><span class="sxs-lookup"><span data-stu-id="bcbbd-162">Synchronization of sales orders directly between Sales and Supply Chain Management</span></span>](sales-order-template-mapping-direct-two-ways.md)
 
-[<span data-ttu-id="3e8c2-163">売上請求書のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期</span><span class="sxs-lookup"><span data-stu-id="3e8c2-163">Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales</span></span>](sales-invoice-template-mapping-direct.md)
+[<span data-ttu-id="bcbbd-163">売上請求書のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期</span><span class="sxs-lookup"><span data-stu-id="bcbbd-163">Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales</span></span>](sales-invoice-template-mapping-direct.md)
 

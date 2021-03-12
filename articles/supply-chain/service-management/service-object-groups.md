@@ -11,58 +11,57 @@ ms.technology: ''
 ms.search.form: SMAServiceObjectGroups
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4438487fa234cf093b557bca9455717b2cd3ca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7a8e050afb44787072f78e2c971394956cb1026f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431651"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977591"
 ---
-# <a name="service-object-groups"></a><span data-ttu-id="0bc4a-103">サービス対象グループ</span><span class="sxs-lookup"><span data-stu-id="0bc4a-103">Service object groups</span></span> 
+# <a name="service-object-groups"></a><span data-ttu-id="32870-103">サービス対象グループ</span><span class="sxs-lookup"><span data-stu-id="32870-103">Service object groups</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0bc4a-104">対象グループは、レポートや統計用の対象に関するデータの並べ替えやフィルタ処理を行う場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-104">Object groups are useful for sorting and filtering the data about objects for reports and statistics.</span></span> <span data-ttu-id="0bc4a-105">たとえば、地理的な場所またはタイプ別に対象をグループ化できます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-105">For example, you can group objects by geographical location or by type.</span></span>
+<span data-ttu-id="32870-104">対象グループは、レポートや統計用の対象に関するデータの並べ替えやフィルタ処理を行う場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="32870-104">Object groups are useful for sorting and filtering the data about objects for reports and statistics.</span></span> <span data-ttu-id="32870-105">たとえば、地理的な場所またはタイプ別に対象をグループ化できます。</span><span class="sxs-lookup"><span data-stu-id="32870-105">For example, you can group objects by geographical location or by type.</span></span>
 
-## <a name="group-by-geographical-location"></a><span data-ttu-id="0bc4a-106">地理的な場所別のグループ化</span><span class="sxs-lookup"><span data-stu-id="0bc4a-106">Group by geographical location</span></span>
+## <a name="group-by-geographical-location"></a><span data-ttu-id="32870-106">地理的な場所別のグループ化</span><span class="sxs-lookup"><span data-stu-id="32870-106">Group by geographical location</span></span>
 
-<span data-ttu-id="0bc4a-107">このグループ化の方法を使用すると、会社がサービスを提供しているさまざまな対象の場所を表示できます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-107">You can use this grouping method to show where the various different objects that your company services are located.</span></span> <span data-ttu-id="0bc4a-108">地理的な場所別に対象をグループ化すると、たとえば、特定の国/地域で既にサービスを提供している対象を識別する必要がある場合などにも役立ちます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-108">Grouping objects by geographical location can also be useful if, for example, you must identify the objects that your company already provides services for in a particular country/region.</span></span>
+<span data-ttu-id="32870-107">このグループ化の方法を使用すると、会社がサービスを提供しているさまざまな対象の場所を表示できます。</span><span class="sxs-lookup"><span data-stu-id="32870-107">You can use this grouping method to show where the various different objects that your company services are located.</span></span> <span data-ttu-id="32870-108">地理的な場所別に対象をグループ化すると、たとえば、特定の国/地域で既にサービスを提供している対象を識別する必要がある場合などにも役立ちます。</span><span class="sxs-lookup"><span data-stu-id="32870-108">Grouping objects by geographical location can also be useful if, for example, you must identify the objects that your company already provides services for in a particular country/region.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0bc4a-109">例</span><span class="sxs-lookup"><span data-stu-id="0bc4a-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="32870-109">例</span><span class="sxs-lookup"><span data-stu-id="32870-109">Example</span></span>
 
-<span data-ttu-id="0bc4a-110">ベルギーの顧客からサービス センターに電話があり、対象 ABC のサービス合意を作成するように依頼されました。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-110">A customer from Belgium calls your service center and wants to create a service agreement for an object, ABC.</span></span> <span data-ttu-id="0bc4a-111">ベルギーでサービスを提供しているすべての対象には、ベルギーという地理的な場所の対象グループを関連付けてあります。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-111">You have attached an object group for geographical location, Belgium, to all objects that are serviced in Belgium.</span></span> <span data-ttu-id="0bc4a-112">フィルタとしてこのグループを使用して、プログラムに既に ABC のレコードがあるか、または新しい対象を設定する必要があるかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-112">By using this group as a filter, you can quickly search to see whether you already have a record for ABC in the program, or whether you must set up a new object.</span></span> 
+<span data-ttu-id="32870-110">ベルギーの顧客からサービス センターに電話があり、対象 ABC のサービス合意を作成するように依頼されました。</span><span class="sxs-lookup"><span data-stu-id="32870-110">A customer from Belgium calls your service center and wants to create a service agreement for an object, ABC.</span></span> <span data-ttu-id="32870-111">ベルギーでサービスを提供しているすべての対象には、ベルギーという地理的な場所の対象グループを関連付けてあります。</span><span class="sxs-lookup"><span data-stu-id="32870-111">You have attached an object group for geographical location, Belgium, to all objects that are serviced in Belgium.</span></span> <span data-ttu-id="32870-112">フィルタとしてこのグループを使用して、プログラムに既に ABC のレコードがあるか、または新しい対象を設定する必要があるかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="32870-112">By using this group as a filter, you can quickly search to see whether you already have a record for ABC in the program, or whether you must set up a new object.</span></span> 
 
-## <a name="group-by-type"></a><span data-ttu-id="0bc4a-113">タイプ別のグループ化</span><span class="sxs-lookup"><span data-stu-id="0bc4a-113">Group by type</span></span>
+## <a name="group-by-type"></a><span data-ttu-id="32870-113">タイプ別のグループ化</span><span class="sxs-lookup"><span data-stu-id="32870-113">Group by type</span></span>
 
-<span data-ttu-id="0bc4a-114">このグループ化の方法を使用すると、会社でサービスを実行している対象のタイプを表示できます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-114">You can use this grouping method to show the types of objects that your company services.</span></span> <span data-ttu-id="0bc4a-115">タイプ別に対象をグループ化すると、たとえば、既にプログラムに存在する同様の対象に基づいて新しい対象を作成する場合などにも役立ちます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-115">Grouping objects by type can also be useful if, for example, you want to create a new object based on similar objects that already exist in the program.</span></span>
+<span data-ttu-id="32870-114">このグループ化の方法を使用すると、会社でサービスを実行している対象のタイプを表示できます。</span><span class="sxs-lookup"><span data-stu-id="32870-114">You can use this grouping method to show the types of objects that your company services.</span></span> <span data-ttu-id="32870-115">タイプ別に対象をグループ化すると、たとえば、既にプログラムに存在する同様の対象に基づいて新しい対象を作成する場合などにも役立ちます。</span><span class="sxs-lookup"><span data-stu-id="32870-115">Grouping objects by type can also be useful if, for example, you want to create a new object based on similar objects that already exist in the program.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0bc4a-116">例</span><span class="sxs-lookup"><span data-stu-id="0bc4a-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="32870-116">例</span><span class="sxs-lookup"><span data-stu-id="32870-116">Example</span></span>
 
-<span data-ttu-id="0bc4a-117">顧客から電話があり、空調機械 HIJ のサービス合意を設定するように依頼されました。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-117">A customer calls and wants to set up a service agreement for an air conditioning machine, HIJ.</span></span> <span data-ttu-id="0bc4a-118">既にこの機械のレコードがありません。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-118">You do not already have a record for this machine.</span></span> <span data-ttu-id="0bc4a-119">ただし、空調装置という名前のオブジェクト グループを設定して、このグループは空調機械のすべてのオブジェクトに関連付されました。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-119">However, you have set up an object group titled Air Conditioners, and you have attached this group to all air conditioning objects.</span></span> <span data-ttu-id="0bc4a-120">したがって、他の空調機械すべてをすばやく検索し、これらのオブジェクトのテンプレート情報を使用してHIJ のサービス契約項目を作成できます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-120">Therefore, you can quickly search for and identify all other air conditioning machines and use the template information from these objects to create service agreement lines for HIJ.</span></span> <span data-ttu-id="0bc4a-121">この方法で対象グループを使用して、簡単に新しい対象を設定し、実行するサービス作業を決定できます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-121">By using object groups in this manner, you can quickly set up new objects and determine the service tasks that must be performed on them.</span></span> 
+<span data-ttu-id="32870-117">顧客から電話があり、空調機械 HIJ のサービス合意を設定するように依頼されました。</span><span class="sxs-lookup"><span data-stu-id="32870-117">A customer calls and wants to set up a service agreement for an air conditioning machine, HIJ.</span></span> <span data-ttu-id="32870-118">既にこの機械のレコードがありません。</span><span class="sxs-lookup"><span data-stu-id="32870-118">You do not already have a record for this machine.</span></span> <span data-ttu-id="32870-119">ただし、空調装置という名前のオブジェクト グループを設定して、このグループは空調機械のすべてのオブジェクトに関連付されました。</span><span class="sxs-lookup"><span data-stu-id="32870-119">However, you have set up an object group titled Air Conditioners, and you have attached this group to all air conditioning objects.</span></span> <span data-ttu-id="32870-120">したがって、他の空調機械すべてをすばやく検索し、これらのオブジェクトのテンプレート情報を使用してHIJ のサービス契約項目を作成できます。</span><span class="sxs-lookup"><span data-stu-id="32870-120">Therefore, you can quickly search for and identify all other air conditioning machines and use the template information from these objects to create service agreement lines for HIJ.</span></span> <span data-ttu-id="32870-121">この方法で対象グループを使用して、簡単に新しい対象を設定し、実行するサービス作業を決定できます。</span><span class="sxs-lookup"><span data-stu-id="32870-121">By using object groups in this manner, you can quickly set up new objects and determine the service tasks that must be performed on them.</span></span> 
 
-## <a name="create-service-object-groups"></a><span data-ttu-id="0bc4a-122">サービス対象グループの作成</span><span class="sxs-lookup"><span data-stu-id="0bc4a-122">Create service object groups</span></span>
+## <a name="create-service-object-groups"></a><span data-ttu-id="32870-122">サービス対象グループの作成</span><span class="sxs-lookup"><span data-stu-id="32870-122">Create service object groups</span></span>
 
-<span data-ttu-id="0bc4a-123">サービス対象を割り当てることができるグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-123">Create groups that you can assign service objects to.</span></span> <span data-ttu-id="0bc4a-124">サービス対象とは、サービスを実行する他の製品および在庫品目です。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-124">Service objects are inventory items and other products for which services are performed.</span></span> <span data-ttu-id="0bc4a-125">サービス対象のグループ化することによって、同様のそして関連するサービス対象のレポートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-125">By grouping service objects, you can create reports for similar and related service objects.</span></span> <span data-ttu-id="0bc4a-126">たとえば、サービス対象グループは 2 種類のサービス対象から構成される場合があります: 1 番目のサービス対象はキット、2 番目のサービス対象はキットをインストールするサービスです。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-126">For example, a service object group might consist of two service objects: One service object is a kit, and the second service object is the service to install the kit.</span></span>
+<span data-ttu-id="32870-123">サービス対象を割り当てることができるグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="32870-123">Create groups that you can assign service objects to.</span></span> <span data-ttu-id="32870-124">サービス対象とは、サービスを実行する他の製品および在庫品目です。</span><span class="sxs-lookup"><span data-stu-id="32870-124">Service objects are inventory items and other products for which services are performed.</span></span> <span data-ttu-id="32870-125">サービス対象のグループ化することによって、同様のそして関連するサービス対象のレポートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="32870-125">By grouping service objects, you can create reports for similar and related service objects.</span></span> <span data-ttu-id="32870-126">たとえば、サービス対象グループは 2 種類のサービス対象から構成される場合があります: 1 番目のサービス対象はキット、2 番目のサービス対象はキットをインストールするサービスです。</span><span class="sxs-lookup"><span data-stu-id="32870-126">For example, a service object group might consist of two service objects: One service object is a kit, and the second service object is the service to install the kit.</span></span>
 
-<span data-ttu-id="0bc4a-127">サービス対象グループを作成するには、次の手順に従います:</span><span class="sxs-lookup"><span data-stu-id="0bc4a-127">To create service object groups, follow these steps:</span></span>
+<span data-ttu-id="32870-127">サービス対象グループを作成するには、次の手順に従います:</span><span class="sxs-lookup"><span data-stu-id="32870-127">To create service object groups, follow these steps:</span></span>
 
-1. <span data-ttu-id="0bc4a-128">**サービス管理 > 設定 > サービス対象 > サービス対象グループ** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-128">Click **Service management > Setup > Service objects > Service object groups**.</span></span>
+1. <span data-ttu-id="32870-128">**サービス管理 > 設定 > サービス対象 > サービス対象グループ** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="32870-128">Click **Service management > Setup > Service objects > Service object groups**.</span></span>
 
-2. <span data-ttu-id="0bc4a-129">**新規** をクリックして、新しいサービス対象グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-129">Click **New** to create a new service object group.</span></span>
+2. <span data-ttu-id="32870-129">**新規** をクリックして、新しいサービス対象グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="32870-129">Click **New** to create a new service object group.</span></span>
 
-3. <span data-ttu-id="0bc4a-130">サービス対象グループに一意の名前、および必要に応じて説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-130">Enter a unique name for the service object group and, optionally, a description.</span></span>
+3. <span data-ttu-id="32870-130">サービス対象グループに一意の名前、および必要に応じて説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="32870-130">Enter a unique name for the service object group and, optionally, a description.</span></span>
 
-<span data-ttu-id="0bc4a-131">**サービス対象** フォームを使用すると、グループにサービス対象を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="0bc4a-131">You can assign service objects to the group by using the **Service objects** form.</span></span> 
+<span data-ttu-id="32870-131">**サービス対象** フォームを使用すると、グループにサービス対象を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="32870-131">You can assign service objects to the group by using the **Service objects** form.</span></span> 
 
-## <a name="see-also"></a><span data-ttu-id="0bc4a-132">参照</span><span class="sxs-lookup"><span data-stu-id="0bc4a-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="32870-132">参照</span><span class="sxs-lookup"><span data-stu-id="32870-132">See also</span></span>
 
-[<span data-ttu-id="0bc4a-133">サービス対象の作成</span><span class="sxs-lookup"><span data-stu-id="0bc4a-133">Create service objects</span></span>](create-service-objects.md)
+[<span data-ttu-id="32870-133">サービス対象の作成</span><span class="sxs-lookup"><span data-stu-id="32870-133">Create service objects</span></span>](create-service-objects.md)
 
 

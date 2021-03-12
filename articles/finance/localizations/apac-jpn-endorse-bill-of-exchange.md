@@ -11,42 +11,41 @@ ms.technology: ''
 ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 28791
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3b58c7f09ba4ed6cc5869fa691c02b8a0b55d56
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 583aaf8c4a70e4f99b68435dd6ac2d9bbc00f284
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408182"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978321"
 ---
-# <a name="pay-a-vendor-by-endorsing-a-bill-of-exchange-for-japan"></a><span data-ttu-id="5c036-103">日本での受取手形の裏書による仕入先への支払</span><span class="sxs-lookup"><span data-stu-id="5c036-103">Pay a vendor by endorsing a bill of exchange for Japan</span></span>
+# <a name="pay-a-vendor-by-endorsing-a-bill-of-exchange-for-japan"></a><span data-ttu-id="170d2-103">日本での受取手形の裏書による仕入先への支払</span><span class="sxs-lookup"><span data-stu-id="170d2-103">Pay a vendor by endorsing a bill of exchange for Japan</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5c036-104">日本では、多くの場合、為替手形 (BOE) は仕入先に裏書きされ、支払方法として使用されます。</span><span class="sxs-lookup"><span data-stu-id="5c036-104">In Japan, bills of exchange (BOE) are often endorsed to a vendor and used as a method of payment.</span></span> <span data-ttu-id="5c036-105">BOEs のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。</span><span class="sxs-lookup"><span data-stu-id="5c036-105">A list page for BOEs provides centralized management of the BOE lifecycle.</span></span>
+<span data-ttu-id="170d2-104">日本では、多くの場合、為替手形 (BOE) は仕入先に裏書きされ、支払方法として使用されます。</span><span class="sxs-lookup"><span data-stu-id="170d2-104">In Japan, bills of exchange (BOE) are often endorsed to a vendor and used as a method of payment.</span></span> <span data-ttu-id="170d2-105">BOEs のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。</span><span class="sxs-lookup"><span data-stu-id="170d2-105">A list page for BOEs provides centralized management of the BOE lifecycle.</span></span>
 
-<span data-ttu-id="5c036-106">BOE の管理を開始するには、為替手形振出仕訳帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="5c036-106">To start managing a BOE, open the Draw bill of exchange journal.</span></span> <span data-ttu-id="5c036-107">このタイプの仕訳帳を転記すると、BOE ステータスが **振出** の場合、次のステージの BOE のライフ サイクルを管理できます。</span><span class="sxs-lookup"><span data-stu-id="5c036-107">When this type of journal is posted, if the status of the BOE is **Drawn**, users can manage the BOE lifecycle in following stages.</span></span>
+<span data-ttu-id="170d2-106">BOE の管理を開始するには、為替手形振出仕訳帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="170d2-106">To start managing a BOE, open the Draw bill of exchange journal.</span></span> <span data-ttu-id="170d2-107">このタイプの仕訳帳を転記すると、BOE ステータスが **振出** の場合、次のステージの BOE のライフ サイクルを管理できます。</span><span class="sxs-lookup"><span data-stu-id="170d2-107">When this type of journal is posted, if the status of the BOE is **Drawn**, users can manage the BOE lifecycle in following stages.</span></span>
 
-## <a name="endorsea-boe-to-a-vendor"></a><span data-ttu-id="5c036-108">仕入先に対する BOE の裏書</span><span class="sxs-lookup"><span data-stu-id="5c036-108">Endorse a BOE to a vendor</span></span>
-<span data-ttu-id="5c036-109">リスト ページには、振り出された顧客の BOE が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5c036-109">The list page shows customer BOEs that have been drawn.</span></span> <span data-ttu-id="5c036-110">一つ以上の仕入先に裏書きする BOE を選択できます。</span><span class="sxs-lookup"><span data-stu-id="5c036-110">You can select one or more BOEs to endorse to a vendor.</span></span> <span data-ttu-id="5c036-111">ただし、複数の BOE がオンの場合、それらに裏書きする前に、**振出** ステータスがすべてに必要です。</span><span class="sxs-lookup"><span data-stu-id="5c036-111">However, if multiple BOEs are selected, they all must have a status of **Drawn** before you can endorse them.</span></span> <span data-ttu-id="5c036-112">会計伝票は裏書きした BOE の勘定と買掛金勘定の残高の変更を記録するために生成されます。</span><span class="sxs-lookup"><span data-stu-id="5c036-112">An accounting voucher will be generated to record the balance change in the endorsed BOE account and the accounts payable account.</span></span>
+## <a name="endorse-a-boe-to-a-vendor"></a><span data-ttu-id="170d2-108">仕入先に対する BOE を裏書きする</span><span class="sxs-lookup"><span data-stu-id="170d2-108">Endorse a BOE to a vendor</span></span>
+<span data-ttu-id="170d2-109">リスト ページには、振り出された顧客の BOE が表示されます。</span><span class="sxs-lookup"><span data-stu-id="170d2-109">The list page shows customer BOEs that have been drawn.</span></span> <span data-ttu-id="170d2-110">仕入先に裏書きする 1 つ以上の BOE を選択できます。</span><span class="sxs-lookup"><span data-stu-id="170d2-110">You can select one or more BOEs to endorse to a vendor.</span></span> <span data-ttu-id="170d2-111">ただし、複数の BOE が選択されている場合、裏書きする前にすべてが **振出** の状態である必要があります。</span><span class="sxs-lookup"><span data-stu-id="170d2-111">However, if multiple BOEs are selected, they all must have a status of **Drawn** before you can endorse them.</span></span> <span data-ttu-id="170d2-112">会計伝票は裏書きした BOE の勘定と買掛金勘定の残高の変更を記録するために生成されます。</span><span class="sxs-lookup"><span data-stu-id="170d2-112">An accounting voucher will be generated to record the balance change in the endorsed BOE account and the accounts payable account.</span></span>
 
-## <a name="settle-vendor-transactions"></a><span data-ttu-id="5c036-113">仕入先トランザクションの決済</span><span class="sxs-lookup"><span data-stu-id="5c036-113">Settle vendor transactions</span></span>
-<span data-ttu-id="5c036-114">BOE が裏書きされると **裏書済** ステータスに変更されます。</span><span class="sxs-lookup"><span data-stu-id="5c036-114">When a BOE is endorsed, its status changes to **Endorsed**.</span></span> <span data-ttu-id="5c036-115">買掛金勘定のユーザーが仕入先請求書に対して、仕入先トランザクションを決済できます。</span><span class="sxs-lookup"><span data-stu-id="5c036-115">An Accounts payable user can then settle the vendor transaction against a vendor invoice.</span></span> <span data-ttu-id="5c036-116">仕入先トランザクションの決済時に BOE 自体のステータスは変更されません。</span><span class="sxs-lookup"><span data-stu-id="5c036-116">The status of the BOE itself doesn't change when the vendor transaction is settled.</span></span>
+## <a name="settle-vendor-transactions"></a><span data-ttu-id="170d2-113">仕入先トランザクションの決済</span><span class="sxs-lookup"><span data-stu-id="170d2-113">Settle vendor transactions</span></span>
+<span data-ttu-id="170d2-114">BOE が裏書きされると **裏書済** ステータスに変更されます。</span><span class="sxs-lookup"><span data-stu-id="170d2-114">When a BOE is endorsed, its status changes to **Endorsed**.</span></span> <span data-ttu-id="170d2-115">買掛金勘定のユーザーが仕入先の請求書に対して、仕入先トランザクションを決済できます。</span><span class="sxs-lookup"><span data-stu-id="170d2-115">An Accounts payable user can then settle the vendor transaction against a vendor invoice.</span></span> <span data-ttu-id="170d2-116">仕入先トランザクションの決済時に BOE 自体のステータスは変更されません。</span><span class="sxs-lookup"><span data-stu-id="170d2-116">The status of the BOE itself doesn't change when the vendor transaction is settled.</span></span>
 
-## <a name="settle-endorsed-boes"></a><span data-ttu-id="5c036-117">裏書済 BOE の決済</span><span class="sxs-lookup"><span data-stu-id="5c036-117">Settle endorsed BOEs</span></span>
-<span data-ttu-id="5c036-118">BOE のライフ サイクルは、BOE が支払われる、または期限切れになった時点で終了します。</span><span class="sxs-lookup"><span data-stu-id="5c036-118">The lifecycle of a BOE ends when the BOE is paid or expires.</span></span> <span data-ttu-id="5c036-119">裏書きした BOE の場合、BOE を選択し、裏書を決済できます。</span><span class="sxs-lookup"><span data-stu-id="5c036-119">For endorsed BOEs, you can select the BOE and settle the endorsement.</span></span> <span data-ttu-id="5c036-120">会計伝票は裏書きした BOE の勘定と振出済 BOE の勘定の残高の変更を記録するために生成されます。</span><span class="sxs-lookup"><span data-stu-id="5c036-120">An accounting voucher will be generated to record the balance change in the endorsed BOE account and the drawn BOE account.</span></span>
+## <a name="settle-endorsed-boes"></a><span data-ttu-id="170d2-117">裏書済 BOE の決済</span><span class="sxs-lookup"><span data-stu-id="170d2-117">Settle endorsed BOEs</span></span>
+<span data-ttu-id="170d2-118">BOE のライフ サイクルは、BOE が支払われる、または期限切れになった時点で終了します。</span><span class="sxs-lookup"><span data-stu-id="170d2-118">The lifecycle of a BOE ends when the BOE is paid or expires.</span></span> <span data-ttu-id="170d2-119">裏書きした BOE の場合、BOE を選択し、裏書を決済できます。</span><span class="sxs-lookup"><span data-stu-id="170d2-119">For endorsed BOEs, you can select the BOE and settle the endorsement.</span></span> <span data-ttu-id="170d2-120">会計伝票は裏書きした BOE 勘定と振出済 BOE 勘定の残高の変更を記録するために生成されます。</span><span class="sxs-lookup"><span data-stu-id="170d2-120">An accounting voucher will be generated to record the balance change in the endorsed BOE account and the drawn BOE account.</span></span>
 
-## <a name="reserve-endorsement"></a><span data-ttu-id="5c036-121">裏書の引当</span><span class="sxs-lookup"><span data-stu-id="5c036-121">Reserve endorsement</span></span>
-<span data-ttu-id="5c036-122">BOE の状態が **裏書済** の場合、裏書引当を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="5c036-122">If the status of a BOE is **Endorsed**, a user can reserve its endorsement.</span></span>
+## <a name="reserve-endorsement"></a><span data-ttu-id="170d2-121">裏書の引当</span><span class="sxs-lookup"><span data-stu-id="170d2-121">Reserve endorsement</span></span>
+<span data-ttu-id="170d2-122">BOE の状態が **裏書済** の場合、裏書引当を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="170d2-122">If the status of a BOE is **Endorsed**, a user can reserve its endorsement.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="5c036-123">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="5c036-123">Additional resources</span></span>
-- [<span data-ttu-id="5c036-124">顧客の受取手形の裏書による仕入先トランザクションの支払</span><span class="sxs-lookup"><span data-stu-id="5c036-124">Pay a vendor transaction by endorsing a customer bill of exchange</span></span>](./tasks/pay-vendor-transaction.md)
-- [<span data-ttu-id="5c036-125">裏書済受取手形の取消</span><span class="sxs-lookup"><span data-stu-id="5c036-125">Reverse an endorsed bill of exchange</span></span>](./tasks/reverse-endorsed-bill-exchange.md)
-- [<span data-ttu-id="5c036-126">顧客の為替手形の裏書きによって日本の支払を設定します</span><span class="sxs-lookup"><span data-stu-id="5c036-126">Setup Japan payment by endorsing a customer bill of exchange</span></span>](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
-- [<span data-ttu-id="5c036-127">裏書済受取手形の決済</span><span class="sxs-lookup"><span data-stu-id="5c036-127">Settle an endorsed bill of exchange</span></span>](./tasks/settle-endorsed-bill-exchange.md)
+## <a name="additional-resources"></a><span data-ttu-id="170d2-123">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="170d2-123">Additional resources</span></span>
+- [<span data-ttu-id="170d2-124">顧客の受取手形の裏書による仕入先トランザクションの支払</span><span class="sxs-lookup"><span data-stu-id="170d2-124">Pay a vendor transaction by endorsing a customer bill of exchange</span></span>](./tasks/pay-vendor-transaction.md)
+- [<span data-ttu-id="170d2-125">裏書済受取手形の取消</span><span class="sxs-lookup"><span data-stu-id="170d2-125">Reverse an endorsed bill of exchange</span></span>](./tasks/reverse-endorsed-bill-exchange.md)
+- [<span data-ttu-id="170d2-126">顧客の為替手形の裏書きによって日本の支払を設定します</span><span class="sxs-lookup"><span data-stu-id="170d2-126">Setup Japan payment by endorsing a customer bill of exchange</span></span>](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
+- [<span data-ttu-id="170d2-127">裏書済受取手形の決済</span><span class="sxs-lookup"><span data-stu-id="170d2-127">Settle an endorsed bill of exchange</span></span>](./tasks/settle-endorsed-bill-exchange.md)
 

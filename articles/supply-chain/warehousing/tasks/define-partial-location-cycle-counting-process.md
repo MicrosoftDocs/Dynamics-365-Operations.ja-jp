@@ -11,65 +11,64 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39a256a5a88a6d70373d6e23f1f380da6791f418
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0778cc7c1703dcfd5ea77979aafc99f4f040830d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432296"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977141"
 ---
-# <a name="define-partial-location-cycle-counting-process"></a><span data-ttu-id="2efb0-103">部分的な場所の循環棚卸プロセスの定義</span><span class="sxs-lookup"><span data-stu-id="2efb0-103">Define partial location cycle counting process</span></span> 
+# <a name="define-partial-location-cycle-counting-process"></a><span data-ttu-id="10edd-103">部分的な場所の循環棚卸プロセスの定義</span><span class="sxs-lookup"><span data-stu-id="10edd-103">Define partial location cycle counting process</span></span> 
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2efb0-104">循環棚卸作業を使用して棚卸作業を作成する場合は、その場所において手持在庫の代わりに、特定の製品および製品バリアントのみがカウントされるよう要求することによって、実際の棚卸操作を指示できます。</span><span class="sxs-lookup"><span data-stu-id="2efb0-104">When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location.</span></span> <span data-ttu-id="2efb0-105">特定の製品をフィルター処理することで、倉庫マネージャーはレビュー間接費を削減し、統合ミスを回避し、時間を節約できます。</span><span class="sxs-lookup"><span data-stu-id="2efb0-105">By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time.</span></span> <span data-ttu-id="2efb0-106">通常、倉庫マネージャが設定タスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-106">Typically, a warehouse manager performs the setup tasks.</span></span> <span data-ttu-id="2efb0-107">USMF デモ データ会社または独自のデータを使用して、この手順を踏むことができます。</span><span class="sxs-lookup"><span data-stu-id="2efb0-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
+<span data-ttu-id="10edd-104">循環棚卸作業を使用して棚卸作業を作成する場合は、その場所において手持在庫の代わりに、特定の製品および製品バリアントのみがカウントされるよう要求することによって、実際の棚卸操作を指示できます。</span><span class="sxs-lookup"><span data-stu-id="10edd-104">When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location.</span></span> <span data-ttu-id="10edd-105">特定の製品をフィルター処理することで、倉庫マネージャーはレビュー間接費を削減し、統合ミスを回避し、時間を節約できます。</span><span class="sxs-lookup"><span data-stu-id="10edd-105">By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time.</span></span> <span data-ttu-id="10edd-106">通常、倉庫マネージャが設定タスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="10edd-106">Typically, a warehouse manager performs the setup tasks.</span></span> <span data-ttu-id="10edd-107">USMF デモ データ会社または独自のデータを使用して、この手順を踏むことができます。</span><span class="sxs-lookup"><span data-stu-id="10edd-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
 
 
-## <a name="create-a-cycle-counting-work-template"></a><span data-ttu-id="2efb0-108">循環棚卸作業テンプレートを作成します</span><span class="sxs-lookup"><span data-stu-id="2efb0-108">Create a cycle counting work template</span></span>
-1. <span data-ttu-id="2efb0-109">[倉庫管理] > [設定] > [作業] > [作業テンプレート] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-109">Go to Warehouse management > Setup > Work > Work templates.</span></span>
-2. <span data-ttu-id="2efb0-110">[ワーク オーダー タイプ] フィールドで、[循環棚卸] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-110">In the Work order type field, select 'Cycle counting'.</span></span>
-3. <span data-ttu-id="2efb0-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-111">Click New.</span></span>
-4. <span data-ttu-id="2efb0-112">[順序番号] フィールドに番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-112">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="2efb0-113">並べ替え順序は、最小番号から最大番号です。</span><span class="sxs-lookup"><span data-stu-id="2efb0-113">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="2efb0-114">値は 0 (ゼロ) より大きい値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2efb0-114">The value must be more than 0 (zero).</span></span>  
-5. <span data-ttu-id="2efb0-115">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-115">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="2efb0-116">[作業テンプレート] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-116">In the Work template field, type a value.</span></span>
-7. <span data-ttu-id="2efb0-117">[作業テンプレートの説明] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-117">In the Work template description field, type a value.</span></span>
-8. <span data-ttu-id="2efb0-118">[作業プール ID] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-118">In the Work pool ID field, enter or select a value.</span></span>
-9. <span data-ttu-id="2efb0-119">[作業の優先順位] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-119">In the Work priority field, enter a number.</span></span>
-10. <span data-ttu-id="2efb0-120">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-120">Click Save.</span></span>
-11. <span data-ttu-id="2efb0-121">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-121">Click New.</span></span>
-12. <span data-ttu-id="2efb0-122">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-122">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="2efb0-123">[作業タイプ] フィールドで [棚卸] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-123">In the Work type field, select 'Counting'.</span></span>
-14. <span data-ttu-id="2efb0-124">[作業クラス ID] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-124">In the Work class ID field, enter or select a value.</span></span>
-15. <span data-ttu-id="2efb0-125">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-125">Click Save.</span></span>
-16. <span data-ttu-id="2efb0-126">[作業明細行内訳] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-126">Click Work line breaks.</span></span>
-17. <span data-ttu-id="2efb0-127">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-127">Click New.</span></span>
-18. <span data-ttu-id="2efb0-128">[順序番号] フィールドに番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-128">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="2efb0-129">並べ替え順序は、最小番号から最大番号です。</span><span class="sxs-lookup"><span data-stu-id="2efb0-129">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="2efb0-130">値は 0 (ゼロ) より大きい値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2efb0-130">The value must be more than 0 (zero).</span></span>  
-19. <span data-ttu-id="2efb0-131">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-131">Click Save.</span></span>
-20. <span data-ttu-id="2efb0-132">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="2efb0-132">Close the page.</span></span>
-21. <span data-ttu-id="2efb0-133">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="2efb0-133">Close the page.</span></span>
+## <a name="create-a-cycle-counting-work-template"></a><span data-ttu-id="10edd-108">循環棚卸作業テンプレートを作成します</span><span class="sxs-lookup"><span data-stu-id="10edd-108">Create a cycle counting work template</span></span>
+1. <span data-ttu-id="10edd-109">[倉庫管理] > [設定] > [作業] > [作業テンプレート] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="10edd-109">Go to Warehouse management > Setup > Work > Work templates.</span></span>
+2. <span data-ttu-id="10edd-110">[ワーク オーダー タイプ] フィールドで、[循環棚卸] を選択します。</span><span class="sxs-lookup"><span data-stu-id="10edd-110">In the Work order type field, select 'Cycle counting'.</span></span>
+3. <span data-ttu-id="10edd-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-111">Click New.</span></span>
+4. <span data-ttu-id="10edd-112">[順序番号] フィールドに番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-112">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="10edd-113">並べ替え順序は、最小番号から最大番号です。</span><span class="sxs-lookup"><span data-stu-id="10edd-113">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="10edd-114">値は 0 (ゼロ) より大きい値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="10edd-114">The value must be more than 0 (zero).</span></span>  
+5. <span data-ttu-id="10edd-115">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="10edd-115">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="10edd-116">[作業テンプレート] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-116">In the Work template field, type a value.</span></span>
+7. <span data-ttu-id="10edd-117">[作業テンプレートの説明] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-117">In the Work template description field, type a value.</span></span>
+8. <span data-ttu-id="10edd-118">[作業プール ID] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="10edd-118">In the Work pool ID field, enter or select a value.</span></span>
+9. <span data-ttu-id="10edd-119">[作業の優先順位] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-119">In the Work priority field, enter a number.</span></span>
+10. <span data-ttu-id="10edd-120">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-120">Click Save.</span></span>
+11. <span data-ttu-id="10edd-121">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-121">Click New.</span></span>
+12. <span data-ttu-id="10edd-122">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="10edd-122">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="10edd-123">[作業タイプ] フィールドで [棚卸] を選択します。</span><span class="sxs-lookup"><span data-stu-id="10edd-123">In the Work type field, select 'Counting'.</span></span>
+14. <span data-ttu-id="10edd-124">[作業クラス ID] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="10edd-124">In the Work class ID field, enter or select a value.</span></span>
+15. <span data-ttu-id="10edd-125">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-125">Click Save.</span></span>
+16. <span data-ttu-id="10edd-126">[作業明細行内訳] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-126">Click Work line breaks.</span></span>
+17. <span data-ttu-id="10edd-127">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-127">Click New.</span></span>
+18. <span data-ttu-id="10edd-128">[順序番号] フィールドに番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-128">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="10edd-129">並べ替え順序は、最小番号から最大番号です。</span><span class="sxs-lookup"><span data-stu-id="10edd-129">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="10edd-130">値は 0 (ゼロ) より大きい値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="10edd-130">The value must be more than 0 (zero).</span></span>  
+19. <span data-ttu-id="10edd-131">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-131">Click Save.</span></span>
+20. <span data-ttu-id="10edd-132">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="10edd-132">Close the page.</span></span>
+21. <span data-ttu-id="10edd-133">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="10edd-133">Close the page.</span></span>
 
-## <a name="create-a-cycle-counting-plan"></a><span data-ttu-id="2efb0-134">循環棚卸計画を作成します</span><span class="sxs-lookup"><span data-stu-id="2efb0-134">Create a cycle counting plan</span></span>
-1. <span data-ttu-id="2efb0-135">[倉庫管理] > [設定] > [循環棚卸] > [循環棚卸計画] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-135">Go to Warehouse management > Setup > Cycle counting > Cycle count plans.</span></span>
-2. <span data-ttu-id="2efb0-136">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-136">Click New.</span></span>
-3. <span data-ttu-id="2efb0-137">[循環棚卸計画 ID] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-137">In the Cycle counting plan ID field, type a value.</span></span>
-4. <span data-ttu-id="2efb0-138">[説明] フィールドで値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-138">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="2efb0-139">[循環棚卸の最大数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-139">In the Maximum number of cycle counts field, enter a number.</span></span>
-6. <span data-ttu-id="2efb0-140">[作業テンプレート] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-140">In the Work template field, enter or select a value.</span></span>
-7. <span data-ttu-id="2efb0-141">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-141">Click New.</span></span>
-8. <span data-ttu-id="2efb0-142">[順序番号] フィールドに番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-142">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="2efb0-143">並べ替え順序は、最小番号から最大番号です。</span><span class="sxs-lookup"><span data-stu-id="2efb0-143">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="2efb0-144">値は 0 (ゼロ) より大きい値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2efb0-144">The value must be more than 0 (zero).</span></span>  
-9. <span data-ttu-id="2efb0-145">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-145">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="2efb0-146">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-146">Click Save.</span></span>
-11. <span data-ttu-id="2efb0-147">[製品クエリの定義] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-147">Click Define product query.</span></span>
-12. <span data-ttu-id="2efb0-148">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-148">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="2efb0-149">[基準] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="2efb0-149">In the Criteria field, enter or select a value.</span></span>
-14. <span data-ttu-id="2efb0-150">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2efb0-150">Click OK.</span></span>
-15. <span data-ttu-id="2efb0-151">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="2efb0-151">Close the page.</span></span>
+## <a name="create-a-cycle-counting-plan"></a><span data-ttu-id="10edd-134">循環棚卸計画を作成します</span><span class="sxs-lookup"><span data-stu-id="10edd-134">Create a cycle counting plan</span></span>
+1. <span data-ttu-id="10edd-135">[倉庫管理] > [設定] > [循環棚卸] > [循環棚卸計画] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="10edd-135">Go to Warehouse management > Setup > Cycle counting > Cycle count plans.</span></span>
+2. <span data-ttu-id="10edd-136">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-136">Click New.</span></span>
+3. <span data-ttu-id="10edd-137">[循環棚卸計画 ID] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-137">In the Cycle counting plan ID field, type a value.</span></span>
+4. <span data-ttu-id="10edd-138">[説明] フィールドで値を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-138">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="10edd-139">[循環棚卸の最大数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-139">In the Maximum number of cycle counts field, enter a number.</span></span>
+6. <span data-ttu-id="10edd-140">[作業テンプレート] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="10edd-140">In the Work template field, enter or select a value.</span></span>
+7. <span data-ttu-id="10edd-141">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-141">Click New.</span></span>
+8. <span data-ttu-id="10edd-142">[順序番号] フィールドに番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-142">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="10edd-143">並べ替え順序は、最小番号から最大番号です。</span><span class="sxs-lookup"><span data-stu-id="10edd-143">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="10edd-144">値は 0 (ゼロ) より大きい値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="10edd-144">The value must be more than 0 (zero).</span></span>  
+9. <span data-ttu-id="10edd-145">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="10edd-145">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="10edd-146">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-146">Click Save.</span></span>
+11. <span data-ttu-id="10edd-147">[製品クエリの定義] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-147">Click Define product query.</span></span>
+12. <span data-ttu-id="10edd-148">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="10edd-148">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="10edd-149">[基準] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="10edd-149">In the Criteria field, enter or select a value.</span></span>
+14. <span data-ttu-id="10edd-150">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10edd-150">Click OK.</span></span>
+15. <span data-ttu-id="10edd-151">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="10edd-151">Close the page.</span></span>
 
