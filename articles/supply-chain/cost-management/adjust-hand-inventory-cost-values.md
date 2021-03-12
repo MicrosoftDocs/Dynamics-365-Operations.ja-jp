@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventAdjInventOnHand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53231
 ms.assetid: bc1fde9f-5ad9-4339-8ae8-e2839b792eb2
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fc97db0f0b637e27ece904fe24e91a92044bc17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6a702a083d60bdb289712027fbaee5c0a72e60cb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432171"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963841"
 ---
 # <a name="adjust-on-hand-inventory-cost-values"></a>手持在庫原価価値の調整
 
@@ -44,6 +43,3 @@ ms.locfileid: "4432171"
 -   2 月 5 日: コスト USD 13.00、数量 1
 
 この 2 つの品目の原価を USD 15.00 に設定するには、手持在庫調整オプションを使用して、未処理の手持在庫数量を最後の在庫原価計算期間の時点で調整します。 **注記:** 手持在庫調整トランザクションの転記日は、最後の在庫原価計算の実行日になります。 この日付は変更できません。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

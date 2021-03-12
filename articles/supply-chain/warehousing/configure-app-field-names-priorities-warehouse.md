@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7a4cfe62aa50c423adfd116a81d7962c30b25fcf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ac31b3d2b3b1d9ca51919fe75e06f0de1cda0c63
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431886"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963438"
 ---
 # <a name="configure-app-field-names-in-the-warehouse-app"></a>倉庫アプリのアプリ フィールド名のコンフィギュレーション
 
@@ -144,6 +143,3 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 --------
 
 [倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

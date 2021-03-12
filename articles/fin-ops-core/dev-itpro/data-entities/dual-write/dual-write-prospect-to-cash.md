@@ -3,7 +3,7 @@ title: 二重書き込みの見込顧客を現金化
 description: このトピックでは、二重書き込みの見込顧客を現金化に関する情報を提供します。
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683650"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959604"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>二重書き込みの見込顧客を現金化
 
@@ -37,6 +37,11 @@ ms.locfileid: "4683650"
 
 ![見込顧客を現金化への二重書き込みデータフロー](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
+顧客と連絡先の統合については、[統合された顧客マスター](customer-mapping.md) を参照してください。 成果物統合については、[統一された製品経験](product-mapping.md) を参照してください。
+
+> [!NOTE]
+> Dynamics 365 Sales では、見込顧客と顧客の両方が、**RelationshipType** 列が **見込顧客** または **顧客** である **アカウント** テーブル内のレコードを参照します。 ビジネス ロジックに、最初に見込み客として、次に顧客として **アカウント** レコードを作成して承認する **アカウント** 認定プロセスが含まれる場合、そのレコードは顧客 (`RelationshipType=Customer`) の場合にのみ Finance and Operations アプリに同期されます。 **アカウント** 行を見込顧客として同期する場合は、見込顧客データを統合するカスタム マップが必要です。
+
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
 販売見積を同期するためには、次の設定を更新する必要があります。
@@ -46,11 +51,11 @@ ms.locfileid: "4683650"
 Sales で、**設定 \> 管理 \> システム設定 \> 販売** の順にクリックし、次の設定が使用されていることを確認してください。
 
 - **システム プライジング計算の使用** システム オプションが、**はい** に設定されています。
-- **割引の計算方法** フィールドが、**明細行品目** に設定されている。
+- **割引の計算方法** 列が、**明細行品目** に設定されている。
 
 ### <a name="sites-and-warehouses"></a>サイトと倉庫
 
-Supply Chain Management では、見積明細行と注文明細行に対して **サイト** と **倉庫** フィールドが必要です。 サイトと倉庫を既定の注文設定に設定した場合、これらのフィールドは、見積明細行または注文明細行に製品を追加したときに自動的に設定されます。 
+Supply Chain Management では、見積明細行と注文明細行に対して **サイト** と **倉庫** 列が必要です。 サイトと倉庫を既定の注文設定で設定した場合、これらの列は、見積明細行または注文明細行に製品を追加したときに自動的に設定されます。 
 
 ### <a name="number-sequences-for-quotations-and-orders"></a>見積と注文の番号順序
 
@@ -62,9 +67,9 @@ Sales および Supply Chain Management で見積と注文が作成され同期�
 
 販売見積が Sales または Supply Chain Management で作成されます。 Sales で見積を作成すると、その見積がリアル タイムで Supply Chain Management に同期されます。 同様に、Supply Chain Management で見積を作成すると、その見積がリアル タイムで Sales に同期されます。 次のポイントに注意します。
 
-+ 見積の製品に割引を追加できます。 この場合、割引は Supply Chain Management に同期されます。 **割引**、**請求**、および **税** フィールドは、ヘッダーで Supply Chain Management の設定によって制御されます。 この設定では、統合マッピングはサポートされていません。 代わりに、**価格**、**割引**、**請求金額**、および **税** の各フィールドは、Supply Chain Management で管理および処理されます。
-+ 販売見積ヘッダーの読み取り専用フィールドの **割引 %**、**割引**、**貨物量**。
-+ **運賃条件**、**配送条件**、**送付方法**、および **配送モード** フィールドは、既定のマッピングの一部ではありません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
++ 見積の製品に割引を追加できます。 この場合、割引は Supply Chain Management に同期されます。 **割引**、**諸費用**、**税** 列は、ヘッダーで Supply Chain Management の設定によって制御されます。 この設定では、統合マッピングはサポートされていません。 代わりに、**価格**、**割引**、**諸費用**、**税** の各列は、Supply Chain Management で管理および処理されます。
++ 販売見積ヘッダーの **割引 %**、**割引**、**送料** 列は、読み取り専用列です。
++ **運賃条件**、**配送条件**、**送付方法**、および **配送モード** 列は、既定のマッピングの一部ではありません。 これらの列をマップするには、テーブルが同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
 また、Field Service ソリューションも使用している場合は、**見積明細行の簡易作成** パラメータを再度有効にする必要があります。 このパラメータを再度有効にすると、簡易作成機能を使用して、見積明細行の作成を続行することができます。
 1. Dynamics 365 Sales アプリケーションに移動します。
@@ -82,7 +87,7 @@ Sales および Supply Chain Management で見積と注文が作成され同期�
 + 割引計算と丸め:
 
     - Sales での割引計算モデルは、Supply Chain Management の割引計算モデルとは異なります。 Supply Chain Management では、販売注文明細行の最終的な割引金額は、割引額と割引率の組み合わせの結果です。 この最終割引額をライン上の数量で割ると、丸め処理が発生する可能性があります。 ただし、この丸め処理単位の割引額が Sales に同期されている場合は、この丸め処理は考慮されません。 Supply Chain Management の販売明細行からの全額割引が Sales に正しく同期されるようにするには、全額を明細行の数量で除算せずに同期させる必要があります。 したがって、Sales で割引の計算方法を **明細行品目** として定義する必要があります。
-    - 販売注文行が Sales から Supply Chain Management に同期される場合、明細行全体の割引額が使用されます。 Supply Chain Management には、明細行の完全な割引金額を格納できるフィールドがないため、金額は数量で除算されて、**行割引** フィールドに格納されます。 この区分中に発生する丸めは、販売明細行の **販売費用** フィールドに保管されます。
+    - 販売注文行が Sales から Supply Chain Management に同期される場合、明細行全体の割引額が使用されます。 Supply Chain Management には、明細行の完全な割引金額を格納できる列がないため、金額は数量で除算されて、**行割引** 列に格納されます。 この区分中に発生する丸めは、販売明細行の **販売費用** 列に保管されます。
 
 ### <a name="example-synchronization-from-sales-to-supply-chain-management"></a>例: Sales から Supply Chain Management への同期
 
@@ -98,7 +103,7 @@ Supply Chain Management から Sales に同期すると、次の結果が得ら�
 
 ## <a name="dual-write-solution-for-sales"></a>Sales のための二重書き込みソリューション
 
-新しいフィールドが **注文** エンティティに追加され、ページに表示されます。 これらのフィールドのほとんどは、Sales の **統合** タブに表示されます。 状態フィールドがどのようにマッピングされるかについての詳細については、[販売注文の状態フィールドのマッピングを設定する](sales-status-map.md) を参照してください。
+新しい列が **注文** テーブルに追加され、ページに表示されます。 これらの列のほとんどは、Sales の **統合** タブに表示されます。 状態列がどのようにマッピングされるかについての詳細は、[販売注文の状態列のマッピングを設定する](sales-status-map.md) を参照してください。
 
 + **販売注文** ページに **請求書作成** または **注文のキャンセル** ボタンは Sales に表示されません。
 + **販売注文状態** は **有効** のままにすると、Supply Chain Management からの変更が Sales の販売注文に流れるようにします。 この動作を管理するためには、既定の **ステイトコード \[ステータス\]** 値を **有効** に設定します。
@@ -107,18 +112,18 @@ Supply Chain Management から Sales に同期すると、次の結果が得ら�
 
 売上請求書が Supply Chain Management で作成され、Sales に同期されます。 次のポイントに注意します。
 
-+ **請求書番号** フィールドが **請求書** エンティティに追加され、ページに表示されます。
++ **請求書番号** 列が **請求書** テーブルに追加され、ページに表示されます。
 + 請求書が Supply Chain Management で作成され、Sales に同期されるため、**販売注文** ページの **請求書の作成** ボタンは非表示になります。 請求書が Supply Chain Management から同期されるため、**請求書** ページは編集できません。
 + Supply Chain Management からの関連請求書が Sales に同期されると、**販売注文状態** 値は自動的に **請求済** に変更されます。 さらに、請求書の作成元である販売注文の所有者は、請求書の所有者として割り当てられます。 したがって、販売注文書の所有者は、請求書を表示することができます。
-+ **運賃条件**、**配送条件**、および **荷渡方法** フィールドは既定のマッピングには含まれていません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
++ **運賃条件**、**配送条件**、および **配送モード** 列は既定のマッピングには含まれていません。 これらの列をマップするには、テーブルが同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
 ## <a name="templates"></a>テンプレート
 
 次の表に示されているように、見込顧客を現金化するには、データ操作中に連携して動作するコア テーブル マップのコレクションが含まれています。
 
-| Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ | 説明 |
+| Finance and Operations アプリ | Customer Engagement アプリ | 説明 |
 |-----------------------------|-----------------------------------|-------------|
-| 売上請求書ヘッダー V2    | 請求書                          |             |
+| 売上請求書ヘッダー V2    | 請求書                          | Finance and Operations アプリの売上請求書ヘッダー V2 テーブルには、販売注文と自由形式の 請求書が含まれています。 Dataverse では、自由形式の請求書ドキュメントを除外するデュアル書き込み用のフィルターが適用されます。 |
 | 売上請求書明細行 V2      | invoicedetails                    |             |
 | CDS 販売注文ヘッダー     | 販売注文                       |             |
 | CDS 販売注文明細行       | 販売注文詳細                 |             |
@@ -135,6 +140,11 @@ Supply Chain Management から Sales に同期すると、次の結果が得ら�
 + [すべての製品を msdyn_globalproducts へ](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [価格表](product-mapping.md)
 
+## <a name="limitations"></a>制限
+- 返品注文はサポートされていません。
+- 訂正票はサポートされていません。
+- 顧客や仕入先など、マスタ データに対して財務分析コードを設定する必要があります。 顧客が見積書または販売注文に追加されると、顧客レコード に関連付けられている財務分析コードが自動的に注文にフローします。 現在、デュアル書き込みにはマスター データの財務分析コード データは含まれていません。 
+
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
@@ -150,6 +160,3 @@ Supply Chain Management から Sales に同期すると、次の結果が得ら�
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

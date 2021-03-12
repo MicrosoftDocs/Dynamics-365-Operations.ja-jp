@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustConsInvoice_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc2a3fe7baa74fbd57a126101d4d49bc7b953767
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1ad904c8b89810cca1021cfc6e3adca9cc9c0f9c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408197"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961359"
 ---
 # <a name="create-and-confirm-a-customer-consolidated-invoice"></a>顧客月次締め請求書の作成および確認
 
@@ -55,6 +54,3 @@ ms.locfileid: "4408197"
 5. [確認] をクリックします。
     * [確定] をクリックすると、[月次締め請求書のステータス] は「確定済」に変わります。 確定後、月次締め請求書はロックされ編集できません。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

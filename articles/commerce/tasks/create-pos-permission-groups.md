@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, HcmJob
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ffc64fd39a390af3ca7110178ef0999527106dc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ac03e1bfb7a2463b31feca0a4303c182a00ad259
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413803"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964823"
 ---
 # <a name="create-pos-permission-groups"></a>POS アクセス許可グループの作成
 
@@ -48,6 +47,3 @@ ms.locfileid: "4413803"
 16. [POS アクセス許可グループ] フィールドで、値を入力または選択します。 作業者の POS アクセス許可が職位のレベルで上書きされない場合、このジョブの職位のすべての作業者は、この POS アクセス許可グループの設定を使用します。  
 17. **保存** を選択します。 変更が保存された後、チャネルへ変更をプッシュするために、スタッフ配送スケジュールを実行する必要があります。  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

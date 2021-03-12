@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 957246ac9a758de9f420b9c672520dcb07c43a69
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3a880d4be461ea9b2caa61b7d038f9b24486a919
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693957"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798882"
 ---
 # <a name="configure-conditional-decisions-in-a-workflow"></a>ワークフローでの条件付き意思決定のコンフィギュレーション
 
@@ -52,6 +52,3 @@ ms.locfileid: "4693957"
     2. フォームの **条件の検証** 領域でレコードを選択します。
     3. **テスト** をクリックします。 システムによってレコードが評価され、定義した条件を満たすかどうかが判定されます。
     4. **OK** または **キャンセル** をクリックして、**プロパティ** フォームに戻ります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,7 +52,7 @@ ms.locfileid: "4930641"
 
 6. インポートされたデータベースに対して適切なデータ アップグレード パッケージを実行します。
 
-## <a name="turn-off-the-ax-2012-aos-instances"></a>AX 2012 AOS インスタンスをオフにします。
+## <a name="turn-off-the-ax-2012-aos-instances"></a>AX 2012 AOS インスタンスをオフにします
 
 このタスクには、AX 2012 のシステム管理者とサーバー管理者が含まれます。
 
@@ -207,7 +207,7 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 1. レベル 2 (またはそれ以上) サンドボックス環境により使用される Azure SQL データベース インスタンスには、環境自体の外からのアクセスを防ぐファイアウォール ルールがあります。
 2. Bacpac インポートのパフォーマンスは、Azure SQL データベース インスタンスとし同じ Azure データセンター コンピューターからインポートした場合、何倍も向上します。
 
-bacpac ファイルを AOS マシンに移動する方法を選択することができます。自分の SFTP または他のセキュアな転送サービスがある可能性があります。 Azure ストレージを使用することをお勧めします。Azure ストレージを使用するには、ユーザー自身のサブスクリプション (Dynamics サブスクリプション自体に含まれていません)で独自の Azure ストレージ アカウントを取得する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](https://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
+bacpac ファイルを AOS マシンに移動する方法を選択することができます。自分の SFTP または他のセキュアな転送サービスがある可能性があります。 Azure ストレージを使用することをお勧めします。Azure ストレージを使用するには、ユーザー自身のサブスクリプション (Dynamics サブスクリプション自体に含まれていません)で独自の Azure ストレージ アカウントを取得する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure Storage Explorer](https://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
 
 Microsoft Dynamics Lifecycle Services (LCS) でアセット ライブラリを使用することもできます。 ただし、アップロードとダウンロードには、Azure ストレージよりも長い時間がかかります。 このオプションを使用するには、次のようにします。
 1. LCS でプロジェクトにサインインし、アセット ライブラリに移動します。
@@ -303,6 +303,3 @@ ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ### <a name="upgrade-a-copy-of-the-database-in-a-development-environment"></a>データベースのコピーを開発環境でアップグレードする
 
 開発環境で同じデータベースをアップグレードすることを強くお勧めします。 開発環境で利用できるデータベースのコピーを使用する場合は、アップグレードされたサンドボックス環境で検出されるバグを調査する方がはるかに簡単です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

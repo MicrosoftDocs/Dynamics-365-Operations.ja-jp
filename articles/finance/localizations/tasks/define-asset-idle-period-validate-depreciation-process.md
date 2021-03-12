@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetParameters, AssetIdlePeriodAssign_JP, AssetTable, AssetBook, AssetIdlePeriodUpdate_JP, AssetProfile, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3914a2158302ead7ff9561fa5f82843f3d96a4d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ff39fe1a308a25fe6dc81e824fe7464c571b68c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408191"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964497"
 ---
 # <a name="define-asset-idle-period-and-validate-depreciation-process"></a>資産のアイドル期間の定義および減価償却プロセスの検証
 
@@ -113,6 +112,3 @@ ms.locfileid: "4408191"
 17. [OK] をクリックします。
     * アイドル期間に対して作成された特別償却の仕訳帳は検証なし  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

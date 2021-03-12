@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a033ac521349803832e4415d4950edc21912aa4e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 33d33f73e3ffa03dc3c45edac46052980d02828a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408190"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964491"
 ---
 # <a name="depreciate-and-accrue-the-interest-expense-for-asset-retirement-obligations"></a>資産除去責務の支払利子の減価償却および見越計上
 
@@ -76,6 +75,3 @@ ms.locfileid: "4408190"
     * 支払利子は、トランザクション タイプごとに示されます。  
 14. [転記] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

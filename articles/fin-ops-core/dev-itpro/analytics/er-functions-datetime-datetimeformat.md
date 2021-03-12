@@ -3,7 +3,7 @@ title: DATETIMEFORMAT ER 関数
 description: このトピックでは、DATETIMEFORMAT 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 manager: kfend
-ms.date: 12/03/2019
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d42767b814f36eb75b4a43d07c663b2dd1b2c879
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 90bd2900434b1be509f72ec82375e52ea32bc424
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684957"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4825376"
 ---
 # <a name="datetimeformat-er-function"></a>DATETIMEFORMAT ER 関数
 
@@ -52,6 +52,9 @@ DATETIMEFORMAT (datetime, format, culture)
 
 出力文字列の形式。
 
+> [!NOTE]
+> 書式文字列では、標準形式またはカスタム形式を使用する場合、大文字と小文字が区別されます。 たとえば、[標準](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) "d" 書式指定子は短い日付パターンを使用して日付を返し、標準 "D" 書式指定子は長い日付パターンを使用して日付を返します。 また、[カスタム](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) "M" 書式指定子は月を 1 から 12 の値で返しますが、カスタム "m" 書式指定子は 0 から 59 の分を返します。
+
 `culture`: *文字列*
 
 書式設定に使用するカルチャ。
@@ -78,11 +81,8 @@ DATETIMEFORMAT (datetime, format, culture)
 
 ## <a name="example-3"></a>例 3
 
-`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` は、**言語と国/地域の基本設定** セクションにタイムゾーン値 **(GMT-08:00) 太平洋標準時 (米国およびカナダ)** を持つアプリケーション ユーザーによって開始されたプロセス中に呼び出されると、文字列値 **2019-11-12T08:00:00.0000000-08:00** を返します。
+`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` は、**言語と国/地域の基本設定** セクションでタイム ゾーン値 **(GMT-08:00) 太平洋標準時 (米国およびカナダ)** を持つアプリケーション ユーザーが開始したプロセス中に関数が呼び出されると、文字列値 **2019-11-12T08:00:00.0000000-08:00** を返します。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [日時の関数](er-functions-category-datetime.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

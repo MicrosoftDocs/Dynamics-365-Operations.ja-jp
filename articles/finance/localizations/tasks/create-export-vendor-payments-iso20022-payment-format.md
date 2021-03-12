@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ff8a2858bfa96eb1d4b0afa1e48ebd1b578a4431
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445286"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964544"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>ISO20022 支払形式を使用した仕入先支払の作成とエクスポート
 
@@ -50,6 +49,3 @@ ms.locfileid: "4445286"
     3.    **ファイル名** フィールドに値を入力します。 この例では、EUR 支払が原因で、生成されたファイルは SEPAに準拠します。 他の通貨での支払いの生成には、ISO20022 口座振替や他の仕入先の支払形式も使用できます。
     4.    **銀行口座** フィールドで、値を入力または選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5b7a953ea54286a7e48b392728d2cc9bb2902072
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 221e38cbe31e2ad24a56cb2e71206a1ebcdd619e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692821"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799007"
 ---
 # <a name="enable-users-to-receive-workflow-related-email-messages"></a>ワークフロー関連の電子メール メッセージを受信するためのユーザーを有効にする
 
@@ -41,6 +41,3 @@ ms.locfileid: "4692821"
 
 > [!NOTE]
 > ワークフローがシステムレベル (会社固有ではない) または組織レベル (会社固有) のワークフローのいずれであるかによって、ワークフローの電子メール テンプレートは、システム電子メール テンプレートまたは組織の電子メール テンプレートから取得されます。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a34ae8084c0ad55221f4ab93eb8c6481fa8c4771
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e3a5f9a73bdee50e3e7c68125144c3b43305efa8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413721"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961562"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション
 
@@ -52,6 +51,3 @@ POS での現金による支払の際、ユーザーは、顧客によって支�
 
 - **合計金額以上** ー 既定では、POS は未払い金額より多い紙幣の通貨単位のみを表示し、ワンタッチの支払/入金ができるようにします。 たとえば、請求額が $7.50 の場合、POS は次の通貨単位を表示します: $10、$20、$50、および $100。 これらの金額のいずれかにタッチすると、自動的にその金額に対する売上の支払/入金をします。 $1 および $5 紙幣、これらの金額は、請求額よりも少ないため表示されません。
 - **すべての貨幣単位** ー 請求額に関係なく、POS で常にすべての紙幣の貨幣単位を表示するために、このオプションを選択します。 つまり、ユーザーは請求額に達する紙幣の組み合わせを使用できます。 たとえば、請求額が $25.00 の場合は、ユーザーは $20 よび $5 を選択して販売を完了できます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

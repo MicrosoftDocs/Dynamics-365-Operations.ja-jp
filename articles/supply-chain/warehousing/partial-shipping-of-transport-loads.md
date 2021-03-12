@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSTransportLoad
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: e92a15cf4e2694eba1804184a02a7fd13159799e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68a3d175e89e89d0909b140863b1aa61a184fce6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431845"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963288"
 ---
 # <a name="partial-shipment-of-a-transport-load"></a>輸送積荷の部分的出荷
 
@@ -66,6 +65,3 @@ ms.locfileid: "4431845"
 
 1. **倉庫管理** \> **積荷** \> **輸送積荷** を選択します。
 2. **確定** グループの **出荷と入荷** タブのアクション ウィンドウで、**配送** を選択します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetAcceleratedDepEquipmentGroup_JP, AssetTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 77795baaac189015f2012aaf12ed458b7bbc711d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 42bc1c2669a9f0dfc6922ce5aa822a476ffe3c03
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408201"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961543"
 ---
 # <a name="create-and-assign-an-equipment-group"></a>設備グループの作成および割り当て
 
@@ -64,6 +63,3 @@ ms.locfileid: "4408201"
 4. [固定資産設備グループ] フィールドに値を入力します。
 5. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

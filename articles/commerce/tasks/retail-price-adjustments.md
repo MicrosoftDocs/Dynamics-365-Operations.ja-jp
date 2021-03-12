@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailDiscountPriceGroup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83498fa0a0432cb182106d6d273cb6117ed0b094
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7443f69473c0aad478d47f80f284b1156bad9c24
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413788"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962988"
 ---
 # <a name="retail-price-adjustments"></a>小売価格調整
 
@@ -53,6 +52,3 @@ ms.locfileid: "4413788"
 14. ページを閉じます。
 15. ページを更新します。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

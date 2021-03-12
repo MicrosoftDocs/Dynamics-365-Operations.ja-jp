@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 61e9e6aa660bc0828645c6bf1f2655539804831a
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: d014fcd542462e092f6e88232dff8fd5ee2253c1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594529"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963463"
 ---
 # <a name="autofirming-with-planning-optimization"></a>計画最適化の自動確定
 
@@ -67,6 +66,3 @@ Microsoft Dynamics 365 Supply Chain Management に組み込まれる計画の最
 - 自動確定は要求期日 (終了日) に基づきます。
 - 注文が期限内に確定されるようにするには、確定タイム フェンスはリード タイムよりも長くする必要があります。
 - 現在の週に開始する必要があるすべての注文を確定する場合、確定タイム フェンスはリードタイム + 1 週間にする必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

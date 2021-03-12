@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb34f90e13de765e8b35d9294b847c802fdaf31b
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: cd336a59481c77d4e0a22f14f8bb2ce6dbd8f028
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694596"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798958"
 ---
 # <a name="set-a-users-preferred-time-zone"></a>ユーザーの優先タイム ゾーンの設定
 
@@ -35,6 +35,3 @@ ms.locfileid: "4694596"
 5. **タイム ゾーン** フィールドで、ドロップダウン リストからオプションを選択します。
 6. **保存** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

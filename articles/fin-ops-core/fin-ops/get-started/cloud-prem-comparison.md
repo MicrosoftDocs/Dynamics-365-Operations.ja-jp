@@ -3,7 +3,7 @@ title: クラウドおよびオンプレミスの機能比較
 description: このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。
 author: sericks007
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 5b49dc6d5170af6fecc537a9a9130900e08bb26a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 309131f0d7390288a46f84b1375bd87922407159
+ms.sourcegitcommit: a017fc0583a894382b959e22511231dd07d4254a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694570"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959897"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドとオンプレミスの機能比較
 
@@ -118,9 +118,10 @@ ms.locfileid: "4694570"
 | Lifecycle サービス                   |                                                                                           | 有       | 有             |
 |                                      | コンフィギュレーション可能な業務プロセス                                                           | 有       | 無              |
 | ローカライズ                        |                                                                                           | 有       | 有             |
-| 製造                        |                                                                                           | 有       | 有             |
-| マスター プランおよび予測      |                                                                                           | 有       | 有             |
-| モバイル アプリ、ワークスペース、およびプラットフォーム |                                                                                           | 有       | 有             |
+| 製造                        |                                                                                           | あり       | あり             |
+| マスター プランおよび予測      |                                                                                           | あり       | あり             |
+| 計画の最適化                |                                                                                           | あり       | なし              |
+| モバイル アプリ、ワークスペース、およびプラットフォーム |                                                                                           | あり       | あり             |
 | Office 統合                   |                                                                                           | はい       | はい             |
 | 組織管理          |                                                                                           | はい       | はい             |
 | 調達             |                                                                                           | はい       | はい             |
@@ -175,6 +176,3 @@ ms.locfileid: "4694570"
 
 \* オンプレミス環境では、クライアントの結果が PerfTimer によってのみ表示されます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

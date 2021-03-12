@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetReductionEntryProfile_JP, AssetTable, AssetBook
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e698bdc8feb584a1e4f56257307064d0eda03a28
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7e5c35988469366ee7d0831f1624dd4be61c90a7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408199"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961540"
 ---
 # <a name="create-and-assign-a-reduction-entry-document-for-a-government-grant-subsidy"></a>政府助成金の圧縮記帳ドキュメントの作成および割り当て
 
@@ -69,6 +68,3 @@ ms.locfileid: "4408199"
 7. ドキュメントの日付を入力します。
 8. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

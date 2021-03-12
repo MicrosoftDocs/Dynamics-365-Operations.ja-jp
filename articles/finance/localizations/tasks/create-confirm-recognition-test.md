@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetImpairmentManageTestResult_JP, AssetImpairmentRecognition_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 64baee8d23f481da415189a455b957e5a93e6984
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a16951822506a88fead0df5606920e0b751b4f56
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408195"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961356"
 ---
 # <a name="create-and-confirm-recognition-test"></a>認識テストの作成および確認
 
@@ -58,6 +57,3 @@ ms.locfileid: "4408195"
     * 確認済の認識テストだけを転記することができます。  
 11. [はい] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

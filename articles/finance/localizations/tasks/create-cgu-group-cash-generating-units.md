@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetImpairmentCashGenUnitGroup_JP, SysQueryForm, AssetImpairmentCashGenUnit_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6414daad2fa331aae9afb3fa5189f0d237b3b07
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a53b073b70a574280275c76b42588d7cb15a08a6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408198"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961473"
 ---
 # <a name="create-cgu-group-and-cash-generating-units"></a>CGU グループおよび資産グループの作成
 
@@ -100,6 +99,3 @@ ms.locfileid: "4408198"
     * 認識テストの実行に使用できるのは、有効な CGU グループだけです。  
 2. [はい] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
