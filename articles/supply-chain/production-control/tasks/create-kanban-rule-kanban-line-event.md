@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, SalesTableListPage, SalesCreateOrder, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a6c4b7103874a6d955b21e99b8e219a039d4b55
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 02511fea05cb1dfde17b1b8acaac97dcc136c062
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431685"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981258"
 ---
 # <a name="create-a-kanban-rule-using-a-kanban-line-event"></a>かんばん明細行イベントを使用したかんばんルールの作成
 
@@ -69,6 +68,3 @@ ms.locfileid: "4431685"
     * 作成済みのかんばんルールに基づいて活動を処理するために 27 のかんばんが作成されたことを確認します。  
     * これは最後のステップです。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

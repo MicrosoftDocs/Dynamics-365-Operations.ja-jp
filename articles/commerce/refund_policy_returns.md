@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: c2a9325f09ffe43c3436b7e0ca2ab511e1f57f83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89e8fe78414e73053317ebe19e3afcc89231d440
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413853"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979719"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>チャネルの返品と払戻のポリシーを作成および更新する
 
@@ -104,6 +103,3 @@ Dynamics 365 Commerce のチャネルの返品ポリシーでは、小売業者�
 
 
 ![支払方法のリスト](media/Return-policy-page5.PNG "許可された払戻タイプ")
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

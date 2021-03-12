@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413679"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980001"
 ---
 # <a name="assortment-management"></a>品揃え管理
 
@@ -107,6 +106,3 @@ Commerce 実装のための品揃えを計画および管理する場合、次�
 - **品揃えの範囲外の販売と返品** – この機能は、店舗のコア製品の組み合わせに属する製品に対して使用可能な製品の数を制限することで、小売業者が品揃えを効率的に管理できます。 この機能は、製品が誤って品揃えから除外された場合や製品が品揃えの有効期限外に返品された場合にも、小売業者が対応できるようにします。
 
 製品データがチャネル データベースに存在しない場合にも、製品の販売、返品、または顧客注文にすることができるように、POS は必要な情報を取得し、リアルタイムで本社に電話をかけることができます。 この方法で取得された製品情報は、そのトランザクションの範囲内でのみ使用できます。 製品は、品揃え定義に追加されません。 したがって、必要に応じて後続のリアルタイム コールが行われます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

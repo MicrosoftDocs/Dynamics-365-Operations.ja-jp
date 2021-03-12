@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bddfc706f85192f112f08e172934c7ff66faf35d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445136"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979491"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA 口座振替の概要
 
@@ -126,6 +125,3 @@ SEPA 口座振替は、個人または 1 つの会社から別の会社または
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

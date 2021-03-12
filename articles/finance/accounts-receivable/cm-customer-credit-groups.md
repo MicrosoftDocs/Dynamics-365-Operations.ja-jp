@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1ddf41d88d085b102a7d69eeeff0ec463d8b4137
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fb17a94cd4a472ad609a0c2f688c4a700f072072
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445151"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979117"
 ---
 # <a name="customer-credit-groups"></a>顧客の与信グループ
 
@@ -39,6 +38,3 @@ ms.locfileid: "4445151"
 顧客の与信グループの設定を完了した後、法人と顧客 ID を指定することにより、顧客を追加することができます。 顧客の与信グループに新しい顧客を追加すると、すべての法人間で同じ顧客 ID が検索され、顧客の与信グループにその顧客を追加するように求められます。
 
 **指定の期間に達している残高** メニューを使用して、顧客の与信グループに含まれるすべての請求書の顧客のエイジング残高の詳細を表示します。 **エイジング残高** ページには、請求書の顧客 ID の指定の期間に達している残高の概要が表示されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

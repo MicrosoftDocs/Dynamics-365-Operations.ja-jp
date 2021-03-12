@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d2a125b4e71016ad620f128af2e3c9f29aa04f4c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5910ab85b1b0b2df992a24ad3cf7a032e7b98ea9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413705"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980135"
 ---
 # <a name="add-a-welcome-message"></a>ようこそメッセージの追加
 
@@ -68,6 +67,3 @@ E コマース Web サイトのようこそメッセージは、訪問者に実�
 
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a6a29b180564dc4e4dd768b9e4b97c8877ce00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445139"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979591"
 ---
 # <a name="project-invoicing"></a>プロジェクト請求
 
@@ -75,7 +74,7 @@ ms.locfileid: "4445139"
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>プロジェクト請求書リスト ページ上に交付情報を表示する
 
-公的部門のユーザーは、**交付 ID** や **交付名** を **プロジェクト仮発行請求書** および **プロジェクト請求書** リスト ページに追加できます。 これらの列は、**交付情報をプロジェクト請求書リスト ページに追加** 機能を使用して有効になります。 この機能は既定では無効になっており、 **ワークスぺース > 機能管理** で有効にすることができます。 この機能を有効にするためのサポートについては、システム管理者にお問い合わせください。
+公的部門のユーザーは、**交付 ID** や **交付名** を **プロジェクト仮発行請求書** および **プロジェクト請求書** リスト ページに追加できます。 これらの列は、**交付情報をプロジェクト請求書リスト ページに追加** 機能を使用して有効になります。 この機能は既定では無効になっており、**ワークスぺース > 機能管理** で有効にすることができます。 この機能を有効にするためのサポートについては、システム管理者にお問い合わせください。
 
 ## <a name="on-account-invoicing"></a>分割払い請求書発行
 プロジェクトの分割払い請求書で入力した量は、タイミング、完成率、および関係するプロジェクト契約で指定された他の請求基準に基づいています。 その量は、時間、品目、経費、またはプロジェクトに転記された費用に基づいては計算されません。 
@@ -132,6 +131,3 @@ ms.locfileid: "4445139"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

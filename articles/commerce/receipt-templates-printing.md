@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a66590f18df04d2be0500b7fb1ab183cf64718e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413857"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979756"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>受領書フォーマットを設定しデザインします
 
@@ -46,6 +45,10 @@ ms.locfileid: "4413857"
     - **印刷しない** – レシートは印刷されません。
     - **ユーザーに確認する** – ユーザーはレシートを印刷するように求められます。
     - **必要時** – このオプションは、ギフト レシートにのみ使用されます。 ギフト レシートが必要な場合は、このオプションを選択すると、ユーザーは **変更** ページからギフト レシートを印刷できます。
+
+## <a name="print-images"></a>画像の印刷
+
+レシート デザイナーには、レシートに印刷される画像の指定に使用できる **ロゴ** 変数が含まれています。 **ロゴ** 変数を使用して領収書に含める画像は、モノクロのビットマップ(.bmp)ファイルタイプでなければなりません。 レシートデザイナーで .bmp 画像を指定していても、プリンタへの送信時に印刷されない場合、ファイルサイズが大きすぎるか、画像のピクセル サイズがプリンタに対応していない可能性があります。 この場合は、画像ファイルの解像度を下げてみてください。   
 
 ## <a name="design-a-receipt-format"></a>受領書フォーマットのデザイン
 
@@ -82,6 +85,3 @@ ms.locfileid: "4413857"
 
 > [!NOTE]
 > 2 つのプリンターを使用する場合、１ つ目のプリンターは標準の 40 列のサーマル レシートの印刷に使用できます。 2 番目のプリンタは、通常、詳細情報を要求する全ページのレシート タイプの印刷に使用されます。 これらのレシート タイプでは、顧客注文のレシートおよび顧客請求書が含まれます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

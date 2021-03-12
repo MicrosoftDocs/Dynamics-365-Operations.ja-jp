@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: VendPosting
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43450c5f7ab8295b896b591880da9d0bddd955cf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b6447228f00d91fd2dddd43c1ceb57dff0c6df9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445019"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979192"
 ---
 # <a name="vendor-posting-profiles"></a>仕入先転記プロファイル
 
@@ -119,6 +118,3 @@ ms.locfileid: "4445019"
 | **決算** | この転記プロファイルを持つトランザクションの自動決済を有効にする場合は、このオプションを選択します。 このオプションがオフの場合、**未処理トランザクションの決済** ページを使用してトランザクションを手動で決済する必要があります。 |
 | **キャンセル**     | この転記プロファイルを持つトランザクションのキャンセルを可能にするには、このオプションを選択します。                                                                                                               |
 | **閉じる**      | この転記プロファイルを設定したトランザクションを締めるときに切り替える転記プロファイルを選択します。 トランザクションは、完全に決済されるとクローズ済と見なされます。                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

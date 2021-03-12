@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30947d01cfb85ea3dbf1aa3e4ea8e092efd18cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3cc8465fb56239f91982db15601cf87e3c00d3fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432062"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980959"
 ---
 # <a name="validate-a-production-flow-and-version"></a>生産フローおよびバージョンの検証
 
@@ -64,6 +63,3 @@ ms.locfileid: "4432062"
     * 実際のサイクル時間の期間は、実際のサイクル時間を計算するために実際の分数を遡って集計されるジョブの日数です。 価は随時変更することができ、実際のサイクル時間の計算にのみ使用されます。  
 13. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

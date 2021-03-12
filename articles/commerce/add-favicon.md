@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f249348fac526fc7814045b1b1b71c898430c0f2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413687"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980434"
 ---
 # <a name="add-a-favicon"></a>お気に入りの追加
 
@@ -66,7 +65,7 @@ ms.locfileid: "4413687"
 1. **新規ページ フラグメント** ダイアログボ ックスで、ページ フラグメントの基になるモジュールに **メタタグ** を選択します。
 1. フラグメントの名前を入力し、**OK** を選択します。
 1. フラグメント階層ツリーで、**既定のメタタグ** 子を選択し ます。
-1. 右側のウィンドウで、 **Metaタグ** 配下の **追加** を選択、前述の作成済みの HTML 文字列を入力します。 
+1. 右側のウィンドウで、 **Metaタグ** 配下の **追加** を選択、前述の作成済みの HTML 文字列を入力します。 
 1. **編集の完了** を選択し、 **発行** を選択してフラグメントを公開します。
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>ページの HTML 内の head セクションにメタタグのページ フラグメントを追加する
@@ -99,6 +98,3 @@ ms.locfileid: "4413687"
 
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

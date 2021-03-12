@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb3b505af826b1881aa8245fff66e6f05ad7486a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413682"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979678"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>小売販売のクーポンの設定
 
@@ -82,6 +81,3 @@ ms.locfileid: "4413682"
 - **HQ は部分的に更新されますが、Commerce Scale Unit と POS は更新されません。** HQ 更新では、クーポンと割引ページが更新され、コマース価格エンジンも更新されます。 これら 2 つのコンポーネントの一方だけが更新された場合、コマースの一部のページで価格計算データが一致しなくなります。 そのため、予期しない割引の計算やエラーが、割引の計算時に発生する可能性があります。
 - **HQ は更新されますが、Commerce Scale Unit と POS は更新されません (N-1)。** すべての店舗を同時に更新できるわけではないため、売店舗を更新する前に、HQ を更新することをお勧めします。 N-1 シナリオでは、クーポンに関連する新しい機能は、まだ更新されていない店舗では使用できません。 たとえば、クーポン機能は、明細行の「除外」について説明します。 割引に明細行の除外を使用する場合は、以前のバージョンを実行している店舗では適用されません。
 - **HQ は更新されませんが、Commerce Scale Unit と POS は更新されます (N-1)。** Commerce Scale Unit で更新された価格エンジンで価格の計算時にレガシ割引コードを処理できるので、このシナリオでは更新による機能の影響はありません。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

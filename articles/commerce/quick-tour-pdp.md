@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0f50b4e7b78f4a5b9fe674a101476879923e10d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413858"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979831"
 ---
 # <a name="product-details-pages-overview"></a>製品詳細ページの概要
 
@@ -88,6 +87,3 @@ PDP の最も重要なモジュールは購入ボックス モジュールで、
 [アカウント管理ページの概要](quick-tour-account-management.md)
 
 [製品の詳細ページの拡充](enrich-product-page.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

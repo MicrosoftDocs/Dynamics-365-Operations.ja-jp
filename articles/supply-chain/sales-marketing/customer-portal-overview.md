@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 86d9a40d991e915d3529e0c330f7559d8e7ce9ea
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 25b1962af182fc2749fcd6ec0035613d8365deb1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529581"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980809"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Dynamics 365 Supply Chain Management の顧客ポータルの概要
 
@@ -64,11 +63,8 @@ ms.locfileid: "4529581"
 
 [Power Appsポータル](https://docs.microsoft.com/powerapps/maker/portals/overview)を使用することで、組織の外部のユーザーがログインできる外部向けの Web サイトをユーザーが作成できるようになります。 ポータルの作成には、コードの記述がほとんど必要ありません。 顧客ポータルは、Microsoft から入手可能な、多くの [Dynamics 365 ポータルテンプレート](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) の1つです。
 
-[デュアル書き込み](https://docs.microsoft.com/powerapps/maker/portals/overview)は、Dynamics 365 のモデル駆動型のアプリと Finance and Operations アプリ間の、ほぼリアルタイムのやり取りを実現する既成のインフラストラクチャ製品です。 デュアル書き込みは、Finance and Operations アプリと Common Data Service の間で密に結合された双方向の統合を可能とします。 そのため、アプリを横断して統合されたユーザー エクスペリエンスを実現します。 顧客ポータルは、デュアル書き込みと同期されているエンティティに依存関係があります。 Supply Chain Management のデータを顧客ポータルに提示する前に、デュアル書き込みを適切なすべてのエンティティに対して有効化する必要があります。
+[デュアル書き込み](https://docs.microsoft.com/powerapps/maker/portals/overview) は、Customer Engagement アプリと Finance and Operations アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャ製品です。 デュアル書き込みは、Finance and Operations アプリと Microsoft Dataverse の間で密に結合された双方向の統合を可能とします。 そのため、アプリを横断して統合されたユーザー エクスペリエンスを実現します。 顧客ポータルは、デュアル書き込みと同期されているテーブルに依存関係があります。 Supply Chain Management からのデータを顧客ポータルで表示する前に、デュアル書き込みをすべての適切なテーブルに対して有効にする必要があります。
 
 ![顧客ポータルの依存関係](media/customer-portal-elements.png "顧客ポータルの依存関係")
 
 顧客ポータルは、 Power Apps ポータルを使用して Supply Chain Management のインストール データを使用した外部向けの Web サイトを構築したいと考えている組織にとっての出発点としての役割を果たします。 これにより、組織は、デュアル書き込み、Supply Chain Management、Power Apps ポータルを接続することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

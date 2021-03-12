@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f7e4d01970f459f66934fe434ec7307104b39b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 94b391ab5028f76debb75d25ac9469e25361cb12
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413846"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979619"
 ---
 # <a name="commerce-hierarchies"></a>コマース階層
 
@@ -45,6 +44,3 @@ ms.locfileid: "4413846"
 | ナビゲーション階層   | この階層タイプを使用すると、製品をグループ化してカテゴリに整理し、製品がオンラインまたは POS で閲覧できるようになります。 |
 
 カテゴリ階層を使用して製品を構造化することで、製品の属性およびプロパティをカテゴリ レベルで設定および管理できます。 これらの属性およびプロパティには、製品分析コードおよび POS の設定が含まれます。 そのカテゴリに割り当てる製品は、定義するプロパティと属性を自動的に継承します。 また、選択したカテゴリの複数の製品に、製品のプロパティ設定を同時にコピーできます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

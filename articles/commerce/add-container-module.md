@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 23d81eaee6684ff2b041f93edd05076af66d322d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413689"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980534"
 ---
 # <a name="container-module"></a>コンテナー モジュール
 
@@ -142,6 +141,3 @@ ms.locfileid: "4413689"
 [ヘッダー モジュール](author-header-module.md)
 
 [フッター モジュール](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
