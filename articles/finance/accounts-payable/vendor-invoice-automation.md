@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6d19d0e10f477e498e8f0fff1f431bc4bfdd9a1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0e5c08fc09439ce3889ade4f1da44120275ee075
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445129"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993294"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>スキャン済みドキュメントの請求書の自動化
 
@@ -232,6 +231,3 @@ Contoso がセキュリティを適用しない場合、同じユーザーがす
 + **買掛金勘定係** および **買掛金勘定マネージャー** – 仕入先請求書の管理職務がこれらのロールに割り当てられます。
 
 既定では、ユーザー ロールが任意のページでの編集権限を提供している場合、ユーザーは添付ファイル ビューアーでの強調表示、ブロック、およびコメント アクションの編集権限も有します。 ただし、ページの編集権限があるものの添付ファイル ビューアーの編集権限を持たない特定のロールが必要なシナリオの場合、このユース ケースの必要を満たすためには前のリストから適切な権限を使用することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

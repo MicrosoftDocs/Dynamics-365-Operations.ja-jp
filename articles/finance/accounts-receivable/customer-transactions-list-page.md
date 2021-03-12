@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 948f83d56e560cc21205294c15de4b2097d2ad2e
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: c1bb422b12489598d099b59b3447f620c80c9438
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4445406"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991070"
 ---
 # <a name="customer-transactions-list-page"></a>顧客トランザクション リスト ページ
 
@@ -97,6 +96,3 @@ ms.locfileid: "4445406"
 - **現金割引の条件を編集** - 基準日と現金割引条件に基づき、現金割引は変更されます。
 
 支払設定の編集を終えたら、**閉じる** を選び変更を保存します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 68e72bc17005c11f28f572114357f906098cc045
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517383"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993347"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
@@ -347,7 +346,7 @@ B2C テナントの **ユーザー** セクションには、オプションで�
 
 [新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
-[eコマース サイトの作成](create-ecommerce-site.md)
+[E コマース サイトの作成](create-ecommerce-site.md)
 
 [オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
@@ -362,6 +361,3 @@ B2C テナントの **ユーザー** セクションには、オプションで�
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

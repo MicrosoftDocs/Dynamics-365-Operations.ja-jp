@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e8b1b908dfd6d1d6072b6efa83f13ae5784c85c1
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 89c5fc768aafe9e5de9adcde32e7b4d0a084941b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445377"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990920"
 ---
 # <a name="set-up-lease-journal-names"></a>リース仕訳帳名の設定
 
@@ -37,6 +36,3 @@ ms.locfileid: "4445377"
 2. **一般** タブの **初期認識仕訳帳名** フィールドで、仕訳帳を選択します。 すべての初期認識仕訳帳エントリは、この仕訳帳名に転記されます。
 3. **請求書仕訳帳名** フィールドで、仕訳帳を選択します。 **仕入先への支払** オプションがリース帳簿に対して **はい** に設定されている場合は、リースおよび経費の支払請求書がこの仕訳帳名に転記されます。
 4. **リース仕訳帳名** フィールドで、仕訳帳を選択します。 すべての減価償却、利息、および短期再分類のエントリは、この仕訳帳名に転記されます。 **仕入先への支払** オプションがリース帳簿に対して **いいえ** に設定されている場合は、リース支払および経費エントリもこの仕訳帳名に転記されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

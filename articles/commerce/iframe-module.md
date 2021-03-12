@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: b7b5935a81377e0cb6acfc497eece6148bf1eeee
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665399"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993372"
 ---
 # <a name="iframe-module"></a>IFRAME​​ モジュール
 
@@ -77,6 +76,3 @@ iframe モジュールをページに追加して外部動画を表示するに�
 [モジュール ライブラリの概要](starter-kit-overview.md)
 
 [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

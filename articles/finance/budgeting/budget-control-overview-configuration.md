@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670e6be595fb891408b1b0804c68a41650b0da0b
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 4b371e6c87c65e707bf1468eb8df4be892f7750d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4445405"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990946"
 ---
 # <a name="budget-control-overview"></a>予算管理の概要
 
@@ -127,6 +126,3 @@ Microsoft Dynamics 365 Finance で予算が承認された後に、予算計画�
 このページから、ユーザーは **期間別の予算管理統計** ページを詳細表示し、予算の利用可能性の詳細および選択された予算管理分析コードの組み合わせの引当を表示できます。 ユーザーは、**予算管理統計** ページを詳細表示し、予算管理で使用されるすべての財務分析コードの組み合わせの予算の利用可能性を表示できます。 
 
 予算管理が発注書に対して有効化されると、予算マネージャーは **元帳予算および予測** ワークスペースを使用して、予算チェックの警告が付いたすべての未確認の発注書および元帳予算のエラーのキューを確認できます。 予算管理者に予算超過の権限が構成されている場合、ワークスペースで直接発注書を確認することができます。    
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

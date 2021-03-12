@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1805e1f87ee70a1f35d9105b8f7ad6c95861efcc
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 1086231c65a726df5162d3593419a129d6ae5655
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445401"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992761"
 ---
 # <a name="use-lease-approval-workflows"></a>リース承認ワークフローの使用
 
@@ -45,6 +44,3 @@ ms.locfileid: "4445401"
 
 8. ワークフローを停止するには、**ワークフロー履歴** ページで **リコール** を選択します。 表示されるダイアログ ボックスで、コメントを入力し、**OK** を選択します。
 9. ワークフローを無効にする場合、または作成済みのワークフローを有効にする場合は、**資産リース \> 設定 \> リース ワークフロー** に移動します。 次に、**リース ワークフロー** ページで、**ワークフロー \> バージョン** を選択します。 現在のワークフローを非アクティブにするには、リース バージョン ダイアログ ボックスで有効なリースを選択し、**無効にする** を選択します。 既存のワークフローを有効にするには、ワークフローを選択し、**有効にする** を選択します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 04aca717c3f255799699d63fb74ee0b543f8c8ba
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4445346"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993266"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>仕入先請求書入力ワークスペース
 
@@ -117,6 +116,3 @@ ms.locfileid: "4445346"
 | インポートに失敗した請求書 | <ul><li>インポートに失敗した請求書</li><li>会社でインポートに失敗した請求書</li></ul> |
 | 自動化エラーの原因 | <ul><li>エラーになった請求書</li><li>会社による請求書のエラー</li><li>仕入先グループ別の請求書エラー</li></ul> |
 | ワークフローの状態                | <ul><li>ワークフローでの請求書</li><li>仕入先請求書ワークフロー インスタンス</li><li>承認者あたりの割り当て</li><li>会社ごとの仕入先請求書ワークフロー</li><li>承認者によるワークフローでの平均日数</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

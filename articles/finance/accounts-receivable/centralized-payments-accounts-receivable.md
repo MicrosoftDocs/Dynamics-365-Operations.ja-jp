@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 644ef7cc9535522b72b03ba81a72b1070c8e2ba1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445158"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993042"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>売掛金勘定の集中支払
 
@@ -296,6 +295,3 @@ Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を
 | 売掛金 (Fabrikam West)    |              | 75.00         |
 | Fabrikam East からの借り (Fabrikam West) | 25.00        |               |
 | 売掛金 (Fabrikam West)    |              | 25.00         |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

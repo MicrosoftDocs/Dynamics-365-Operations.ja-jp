@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 19c7de1436b2fe4a859ac20d3db1fefa445a115f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527341"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991868"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 
@@ -35,7 +34,7 @@ ms.locfileid: "4527341"
 このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
 > [!NOTE]
-> 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
+> 見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 
@@ -63,8 +62,8 @@ Sales から Supply Chain Management への販売見積ヘッダーと明細行�
 
 | 販売注文        | サプライ チェーン マネジメント     |
 |--------------|----------------------------|
-| 引用       | CDS 販売見積ヘッダー |
-| QuoteDetails | CDS 販売見積明細行  |
+| 引用       | Dataverse 販売見積もりのヘッダー |
+| QuoteDetails | Dataverse 販売見積明細行  |
 
 ## <a name="entity-flow"></a>エンティティのフロー
 
@@ -143,6 +142,3 @@ Sales では、値が Supply Chain Management に同期されていないため�
 
 [見込顧客を現金化](prospect-to-cash.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7091e8ba7940e358d77c69c63e26c8f3d9337713
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: d188138654ba20d8393ed4bca8124a65402daff2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4413899"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991443"
 ---
 # <a name="call-center-sales-functionality"></a>コール センターの販売機能
 
@@ -69,6 +68,3 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 ## <a name="configure-continuity-programs"></a>連続プログラムのコンフィギュレーション
 
 [コール センターの連続プログラムの設定](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustPosting, CustVendExternalItem
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dff786d6e872e48f9605f9a472b7bffd409c5b3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71134331eae2c25f242915d63d8a4ef1dd33ed3f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445049"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991095"
 ---
 # <a name="customer-posting-profiles"></a>顧客転記プロファイル
 
@@ -140,6 +139,3 @@ ms.locfileid: "4445049"
 
 詳細については、「[顧客支払の概要](../cash-bank-management/tasks/customer-payment-overview.md)」を参照してください。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

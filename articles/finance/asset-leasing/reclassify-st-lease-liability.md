@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 46bcd396c93bc1d2944241165d438f8ccc013e20
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 08ca824bb4c4a02a80f2187fb5f8fe4e8b7327c9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445380"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992917"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>リース負債の短期部分の再分類
 
@@ -41,6 +40,3 @@ ms.locfileid: "4445380"
 4. **転記** パラメータをオンにします。 または、エントリを作成するが転記されない場合は、このパラメータをオフのままにしておきます。
 5. 転記の前に **転記の前にプレビュー** パラメータをオンにして、このエントリを表示します。
 6. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

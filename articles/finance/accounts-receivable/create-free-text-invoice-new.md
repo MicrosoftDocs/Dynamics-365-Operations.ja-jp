@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 726d4979059417871a00626c55da32fa4286cb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445054"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991120"
 ---
 # <a name="create-a-free-text-invoice"></a>自由書式の請求書の作成
 
@@ -30,7 +29,7 @@ ms.locfileid: "4445054"
 
 ## <a name="create-a-free-text-invoice"></a>自由書式の請求書の作成
 
-1. **売掛金勘定 \> 請求書 \> すべての自由書式の請求書** の順に移動します。
+1. **売掛金勘定 (または売上台帳)\> 請求書 \> すべての自由書式の請求書** の順に移動します。
 2. **新規** を選択します。
 3. **顧客口座** フィールドで値を選択します。
 
@@ -85,6 +84,3 @@ ms.locfileid: "4445054"
 テンプレートから自由書式の請求書を作成できます。 **請求書** タブの **新しいコピー元テンプレート** を選択する場合、新しい自由書式の請求書のテンプレート名および顧客 ID を選択することができます。 支払条件および顧客からの支払方法などの既定値は、顧客から自動的に入力したり、またはテンプレートに保存されている値を使用することもできます。
 
 新しい自由書式の請求書が作成され、必要に応じてその値を編集することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

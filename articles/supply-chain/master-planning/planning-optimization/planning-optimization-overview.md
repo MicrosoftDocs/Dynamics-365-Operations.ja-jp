@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f5b51047dbfc95406ebcdda2255b58e41044a6a6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431744"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992623"
 ---
 # <a name="planning-optimization-overview"></a>計画の最適化の概要
 
@@ -78,6 +77,3 @@ LCS から計画の最適化アドインをインストールすると、計画�
 [プランへのフィルターの適用](plan-filters.md)
 
 [計画ジョブのキャンセル](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

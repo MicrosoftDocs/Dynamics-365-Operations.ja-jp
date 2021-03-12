@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustPaymMode, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b9960c3fdf0d65be19e28dbb41913a310ae7530
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a948bf772e55f20c7010101fd11da83940a0b268
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445179"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990969"
 ---
 # <a name="establish-customer-method-of-payment"></a>顧客の支払方法の設定
 
@@ -46,6 +45,3 @@ ms.locfileid: "4445179"
 15. この支払方法に使用する支払属性を定義するには、 **支払属性** タブを使用します。
 16. **保存** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

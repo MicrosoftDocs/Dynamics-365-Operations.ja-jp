@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CAMMobileCostObjectOverviewDetailsCurrentPeriod, CAMMobileCostObjectList, CAMMobileCostObjectOverviewDetailsPreviousPeriod, CAMMobileCostObjectOverview, CAMMobileCostObjectOverviewDetailsYearToDate, CAMMobileCostControlWorkspaceConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 267114
 ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4fc35feb4f3a67ba9c8c70c2d2f8c07cb944b0f6
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 58d86dbd2a3207b72d91165ede675bfe3ab8091e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4445409"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990895"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>コスト管理モバイル ワークスペース
 
@@ -145,6 +144,3 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 11. 個々の原価要素のパフォーマンスを表示します。
 12. 特定の原価要素も検索できます。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

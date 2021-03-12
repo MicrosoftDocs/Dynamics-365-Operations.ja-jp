@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2aa1980ebc1fa8412fc388e7837bc40b6902bc0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445058"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991254"
 ---
 # <a name="credit-management-setup"></a>与信管理の設定 
 
@@ -153,6 +152,3 @@ ms.locfileid: "4445058"
 2. スコアリング グループ情報を評価する方法を定義する比較演算子を選択します。
 3. スコアリング グループに対して指定されている値と比較する値を入力します。
 4. スコアリング グループに対して指定された値と顧客情報が一致した場合に割り当てる与信限度額を入力します。 たとえば、**低** スコアリング グループの自動与信限度額を作成します。 業務年数がスコアリング グループの 1 つである場合は、顧客が業務 5 年以内の場合には 10 万の与信限度額を割り当て、10 年にわたって業務を行っている場合はその他に 20 万を割り当てる明細行を定義できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
