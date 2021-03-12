@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4432410"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987482"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>エンジニアリング バージョンとエンジニアリング製品カテゴリ
 
@@ -162,6 +161,3 @@ ms.locfileid: "4432410"
 *バージョン* 製品分析コードを使用する製品 (併せて、トランザクションへの物流上の影響) については、そのバージョンが BOM と工順にも追加されます。 この動作は、**有効期間の実施** の設定に関係なく、異なるバージョンの BOM と工順を区別するのに役立ちます。
 
 *バージョン* 製品分析コードを使用しない製品 (トランザクションへの物流上の影響なし) については、そのバージョンは BOM や工順には追加されません。 したがって、異なるバージョンの BOM と工順には違いがありません。 この場合は、**有効期間を実施する** オプションを *はい* に設定することが強く推奨されます。 このようにして、エンジニアリング バージョンが重複しないようにすることができます。また、以前のバージョンの BOM と工順を最初に無効化することなく新しいバージョンの BOM と工順を有効にすることもできます。 この場合に **有効期間の実施** オプションを *はい* に設定した場合、最新バージョンを有効にするには、以前のバージョンの　BOM 工順を手動で無効にする必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

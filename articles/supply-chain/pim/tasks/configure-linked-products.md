@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98cd12e04d8a9a41cd6987f58f46cfe9a761ee2e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8fa38ed951db0b28387c61e23a19381c1c7895d8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431972"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986982"
 ---
 # <a name="configure-linked-products"></a>リンクされた製品のコンフィギュレーション
 
@@ -40,6 +39,3 @@ ms.locfileid: "4431972"
 10. [数量] フィールドに数値を入力します。
 11. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

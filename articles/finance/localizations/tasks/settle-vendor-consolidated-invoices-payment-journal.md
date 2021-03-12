@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendConsInvoice_JP, LedgerJournalTable, LedgerJournalTransVendPaym, VendPaymProposalEdit
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 43c7ba8ffc6a0fa71eb5f36aab8c208d26bcf982
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7f1784092fded19fa41a0323ed5f581e595337b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408130"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987998"
 ---
 # <a name="settle-vendor-consolidated-invoices-by-using-a-payment-journal"></a>支払仕訳帳を使用した仕入先月次締め請求書の決済
 
@@ -62,6 +61,3 @@ ms.locfileid: "4408130"
 15. [買掛金勘定] > [定期処理タスク] > [月次締め請求書] の順に移動します。
     * 月次締め請求書のステータスが [決済済] に更新されていることを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: 元の予算を作成し、公的機関の暫定予算エントリをリバースします
-description: 元の予算エントリを作成し、予算モデルおよび暫定予算金額を含む分析コード値を使用している場合、暫定予算金額を取り消すことができます。
+description: このトピックでは、予算モデルおよび暫定的な予算金額を持つ分析コード値を使用して、元の予算エントリを作成する方法、取り消す方法について説明します。
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 32d89216d49a743729de8910f738276cbddcd8bb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 134e2ca851d72965198026107817c66a808ac705
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445279"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987957"
 ---
 # <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a>元の予算を作成し、公的機関の暫定予算エントリをリバースします
 
@@ -51,6 +50,3 @@ ms.locfileid: "4445279"
     * オプションを選択するには、ページ上部の [ロック解除] のアイコンをクリックします。  
 18. [更新] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

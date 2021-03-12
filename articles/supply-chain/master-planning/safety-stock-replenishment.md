@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: ee5775826c4f7f499d015145a5e8f0f6c7a42903
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbc0ca146327fada1325f4b11965c23948d3565d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431740"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987257"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>品目に対する安全在庫フルフィルメント
 
@@ -116,6 +115,3 @@ ms.locfileid: "4431740"
 マスター プランの補充フェーズでは、安全在庫補充の優先度が下がることはもうありません。 手持在庫は、他の任意の需要タイプの前に使用できます。 延滞計算の時に、遅れた販売明細行、BOM 明細行の要件、および他のすべての需要タイプを調べ、それらが安全在庫が使用できるように指定されている時間に期限遵守で配送されるかどうかを見極めるため、新しいロジックが追加されます。 安全在庫の使用により遅延が最小限にできることをシステムが示す場合、販売明細行またはBOM 明細行は、最初の補充を安全在庫に置き換え、代わりにシステムが安全在庫の補充をトリガーします。
 
 計画または品目が延滞計算に対して設定されていない場合、安全在庫制約には他の任意の需要タイプと同じ優先順位があります。 つまり、他の需要タイプの前に、手持在庫およびその他の利用可能な在庫の引当があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

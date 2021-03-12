@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendConsInvoice_JP, VendTable, VendOpenTrans
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6aa1b0b2526940acc63e7b0be05b9c8dbc499cbc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2bc4021586b52063823126fb2f251b3287d0a89e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408129"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987995"
 ---
 # <a name="settle-vendor-consolidated-invoices-by-using-settle-transactions"></a>決済トランザクションを使用した仕入先月次締め請求書の決済
 
@@ -67,6 +66,3 @@ ms.locfileid: "4408129"
 1. [買掛金勘定] > [定期処理タスク] > [月次締め請求書] の順に移動します。
     * 月次締め請求書のステータスが「決済済」になっていることを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

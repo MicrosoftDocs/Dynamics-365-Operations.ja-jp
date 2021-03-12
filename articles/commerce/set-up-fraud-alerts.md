@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79103
 ms.assetid: e342af8d-7498-4d20-8483-ab368429c578
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 15950edd142b222a90bee7876718f4fc5c607468
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413832"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985789"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>コール センターの詐欺警告の設定および使用
 
@@ -69,6 +68,3 @@ ms.locfileid: "4413832"
 不正確認のため保留中の注文を表示および管理するには、**Retail とコマース** \> **顧客** \> **注文保留** の順に移動します。 **注文保留** ページで、リストからエントリを選択し、**注文保留** をクリックすると、保留の理由に関する情報を含む詳細ビューが表示されます。 **不正の詳細** クイック タブで、適用された注文とスコアに一致することが検出された体系的な不正基準を表示することができます。 注文が手動保留にされている場合、**メモ** クイック タブの **不正メモ** セクションを参照して注文を保留にしたユーザーによって入力されたコメントを確認できます。
 
 保留注文の操作方法の詳細については、[注文保留](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) を参照してください。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
