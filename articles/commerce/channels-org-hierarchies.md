@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b887616ef29396ba99ca0c7428ab89df01b3008c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413714"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997778"
 ---
 # <a name="set-up-organization-hierarchies"></a>組織階層の設定
 
@@ -88,6 +87,3 @@ ms.locfileid: "4413714"
 [チャネルの概要](channels-overview.md)
 
 [チャネル設定の前提条件](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

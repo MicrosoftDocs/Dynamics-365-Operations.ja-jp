@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetGroup, AssetGroupBookSetup,  AssetTable, AssetBook
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a9b57c36854104c302603bdb15228677c35b0439
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 12495935ab617bb0526aa790225f6ee7bb804a38
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408167"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997438"
 ---
 # <a name="maintain-fixed-asset-master-data-files-for-deductible-expenses"></a>損金の固定資産マスター データ ファイルの管理
 
@@ -66,6 +65,3 @@ ms.locfileid: "4408167"
 4. [帳簿] をクリックします。
     * 帳簿が自動的に作成されたことを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f9395d39a68cd11f57262c791dd7646975c5e516
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528926"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998506"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 
@@ -62,13 +61,13 @@ ms.locfileid: "4528926"
 
 | **Field Service** | **サプライ チェーン マネジメント** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS 販売注文ヘッダー |
-| msdyn_workorderservices | CDS 販売注文明細行   |
-| msdyn_workorderproducts | CDS 販売注文明細行   |
+| msdyn_workorders        | Dataverse 販売注文ヘッダー |
+| msdyn_workorderservices | Dataverse 販売注文明細行   |
+| msdyn_workorderproducts | Dataverse 販売注文明細行   |
 
 ## <a name="entity-flow"></a>エンティティのフロー
 
-Field Service で作業オーダーが作成されます。 作業オーダーが外部で管理された製品のみを含んでおり、**ワーク オーダー ステータス** の値が **未終了－未スケジューリング** および **終了－キャンセル済** と異なる場合、作業オーダーは Common Data Service データ統合プロジェクトを通して Supply Chain Management に同期させることができます。 作業オーダーの更新は、Supply Chain Management での販売注文として同期されます。 これらの更新には、発生元のタイプやステータスに関する情報が含まれます。
+Field Service で作業オーダーが作成されます。 作業オーダーが外部で管理された製品のみを含んでおり、**ワーク オーダー ステータス** の値が **未終了－未スケジューリング** および **終了－キャンセル済** と異なる場合、作業オーダーは Microsoft Dataverse データ統合プロジェクトを通して Supply Chain Management に同期させることができます。 作業オーダーの更新は、Supply Chain Management での販売注文として同期されます。 これらの更新には、発生元のタイプやステータスに関する情報が含まれます。
 
 ## <a name="estimated-versus-used"></a>見積済と使用済
 
@@ -273,6 +272,3 @@ Field Service および Supply Chain Management の統合をサポートする�
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および ((msdyn_linestatus eq 690970001) または (msdynce_headersystemstatus eq 690970004) または (msdyn_allocated ne true))
 
 [![データ統合のテンプレートのマッピング](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

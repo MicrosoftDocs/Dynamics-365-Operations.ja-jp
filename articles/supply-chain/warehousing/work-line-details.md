@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 07dbfa301e4b242f50a9c2758b11b5ad2c31b261
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432341"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998356"
 ---
 # <a name="work-line-details"></a>作業ラインの詳細
 
@@ -128,6 +127,3 @@ ms.locfileid: "4432341"
 
 > [!IMPORTANT]
 > 作業ラインの数量の一部のみをキャンセルする場合は、積荷明細行から古い数量を削除する必要もあります。 それ以外の場合は、過少配送が正しく設定されていないと、積荷明細行は出荷確認できません。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

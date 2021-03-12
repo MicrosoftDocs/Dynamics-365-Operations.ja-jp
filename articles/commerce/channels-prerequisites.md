@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0da0457240cf12686fff2fa929c7fb510c11f242
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0705efac4659f96ebca1c67f6f0ab8d23c99d81e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413712"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997703"
 ---
 # <a name="channel-setup-prerequisites"></a>チャネル設定の前提条件
 
@@ -86,6 +85,3 @@ Dynamics 365 Commerce チャネルを作成する前に、いくつかの前提�
 [小売チャネルの設定](channel-setup-retail.md)
     
 [オンライン チャネルの設定](channel-setup-online.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

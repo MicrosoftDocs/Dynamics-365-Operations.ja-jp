@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 4c0eebedd31a04dc23b396600315206d70fe8876
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4413903"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997575"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>オムニ チャネルの高度な自動請求
 
@@ -222,6 +221,3 @@ POS の **諸費用の管理** ページで、ユーザーはヘッダーおよ�
 
 [ヘッダー請求金額を一致する販売明細行に比例配分する](pro-rate-charges-matching-lines.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

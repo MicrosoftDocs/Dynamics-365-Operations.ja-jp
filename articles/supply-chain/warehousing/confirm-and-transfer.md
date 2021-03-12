@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431730"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996329"
 ---
 # <a name="confirm-and-transfer"></a>確認および転送
 
@@ -230,6 +229,3 @@ ms.locfileid: "4431730"
 - **数量を新しい積荷に分割** するオプションは、残りの作業ヘッダーのステータスが *処理中* になっている場合にも機能します。 したがって、オーダーのピッキングが既に実行されている場合でも、その機能を使用できます。
 - ステータスが *オープン* または *処理中* の作業が残っているときに、**未履行の数量をキャンセル** を選択すると、次のエラー メッセージが表示されます。「積荷の残りの数量をキャンセルできません。 積荷に対して未処理の作業があります。」
 - 未処理の作業はないが、積荷に未リリースの積荷明細行がある際に、**未履行の数量をキャンセル** を選択すると、次のエラー メッセージが表示されます。「品目の数量が過少配送に定義された割合を超えているため、積荷の出荷を確認できませんでした。」 エラーを回避するには、未リリースの積荷明細行の **過少配送** 率を 100 % に設定します。 未リリースの明細行は新しい積荷に移動されませんが、現在の積荷は過少配送として確認されます。 この場合、元の注文を再度リリースすることはできません。 したがって、これを別の方法で処理する必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

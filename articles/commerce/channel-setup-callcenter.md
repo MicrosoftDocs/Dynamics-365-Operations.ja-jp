@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: b25626dafc07d576699ceba3cc9ca691db45cb9f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4413905"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997753"
 ---
 # <a name="set-up-a-call-center-channel"></a>コール センターのチャネルの設定
 
@@ -136,6 +135,3 @@ Commerce 本社からコール センター チャネルにリンクされた販
 [詐欺警告の設定および使用](set-up-fraud-alerts.md)
 
 [コール センターの連続プログラムの設定](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

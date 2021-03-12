@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ebc5cfa490a4c8538fd081aced0844ed01d63a26
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 138c256b56593c4fafb20050a97e614fa584597c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4413912"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997828"
 ---
 # <a name="cart-icon-module"></a>買い物カゴ アイコン モジュール
 
@@ -66,6 +65,3 @@ ms.locfileid: "4413912"
 [注文詳細のモジュール](order-confirmation-module.md)
 
 [ギフト カード モジュール](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

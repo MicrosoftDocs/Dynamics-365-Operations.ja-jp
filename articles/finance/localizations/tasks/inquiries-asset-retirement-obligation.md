@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTrans, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationExplorer_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68e54c69b0411ba88e808a08dcd2e2e1a194ada8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7712a08ce7403b6e363d28a8b141bf8e43c4c347
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408175"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997445"
 ---
 # <a name="inquiries-of-the-asset-retirement-obligation-related-transactions"></a>資産除去責務に関連するトランザクションの照会
 
@@ -56,6 +55,3 @@ ms.locfileid: "4408175"
 5. [転記金額] セクションを展開または折りたたみます。
 6. [差異] セクションを展開または折りたたみます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

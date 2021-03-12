@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 0bbebcc7b2ab89bf2f5db7294acfca1d8a5ad96e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d8c2288a18398f71a75dad6e51d51ba4b09561e6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413744"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997678"
 ---
 # <a name="ship-orders-from-another-store-by-using-the-charge-send-feature"></a>請求金額送信機能を使用して別の店舗から注文を出荷
 
@@ -42,6 +41,3 @@ Commerce の請求金額送信機能で、顧客注文を 1 つの店舗で受�
 「出荷先」アドレスを選択する機能は変わりません。
 
 注文明細行を処理するために使用できる出荷方法は、製品と住所の有効な荷渡方法の設定に基づいています。 荷渡方法の有効性に関するルールは、本社 (HQ) でのみ維持されるため、POS クライアントは出荷明細行の有効な荷渡方法を取得するためにリアルタイムの呼び出しを行います。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

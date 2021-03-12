@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute, ProdJournalCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ce08532b8281d730cd5fae4ebd634a08c5baeedd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 81caa6693d86c797d8565270094556ae4e103e6a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431678"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998681"
 ---
 # <a name="create-a-production-order"></a>製造オーダーの作成
 
@@ -71,6 +70,3 @@ ms.locfileid: "4431678"
 6. [保存] をクリックします。
 7. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

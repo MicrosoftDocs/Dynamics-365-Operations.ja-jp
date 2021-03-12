@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: da27e3ed0a0e50126590609d09575befe17a7aa2
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 9a1af453349d69ef94d725e138a898c73ea052fa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517129"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997603"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Commerce 環境での複数の B2C テナントのコンフィギュレーション
 
@@ -116,7 +115,7 @@ Azure AD B2C テナントをお客様の環境に追加するには、次の手�
 
 [新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
-[eコマース サイトの作成](create-ecommerce-site.md)
+[E コマース サイトの作成](create-ecommerce-site.md)
 
 [オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
@@ -131,6 +130,3 @@ Azure AD B2C テナントをお客様の環境に追加するには、次の手�
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

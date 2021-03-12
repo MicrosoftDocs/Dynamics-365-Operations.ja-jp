@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendParameters, PaymDay, PaymTerm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 59900cbbd2912daa0f6f31c8ebe83736be87b2d8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5d6950cccd0435030c7b6244a665535013720fe5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408162"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997459"
 ---
 # <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable"></a>月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定
 
@@ -57,6 +56,3 @@ ms.locfileid: "4408162"
     * [締日] は R1 リリースでは表示されません。 代わりに [当月] を選択できます。 この結果、手動での調整を必要とするわずかな差が生じる場合があります。   
 4. [支払期日] フィールドに値を入力します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
