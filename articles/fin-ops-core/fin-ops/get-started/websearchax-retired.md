@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 4a4899ad01065b835a6a63a0a418b34d89c4cd3b
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8e7890b6cf25d50e135e3d82d45647dfe8697655
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693620"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797935"
 ---
-# <a name="websearchax-page-has-been-retired"></a><span data-ttu-id="cb319-104">WebSearchAX ページは破棄されました</span><span class="sxs-lookup"><span data-stu-id="cb319-104">WebSearchAX page has been retired</span></span>
+# <a name="websearchax-page-has-been-retired"></a><span data-ttu-id="7f2aa-104">WebSearchAX ページは破棄されました</span><span class="sxs-lookup"><span data-stu-id="7f2aa-104">WebSearchAX page has been retired</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cb319-105">WebSearchAX ページを破棄する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb319-105">We've had to retire the WebSearchAX page.</span></span> <span data-ttu-id="cb319-106">お気に入りの検索エンジンからサイト検索を使用して、置換することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cb319-106">We recommend that you use site search from your favorite search engine to replace it.</span></span> <span data-ttu-id="cb319-107">例:</span><span class="sxs-lookup"><span data-stu-id="cb319-107">For example:</span></span>
+<span data-ttu-id="7f2aa-105">WebSearchAX ページを破棄する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f2aa-105">We've had to retire the WebSearchAX page.</span></span> <span data-ttu-id="7f2aa-106">お気に入りの検索エンジンからサイト検索を使用して、置換することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="7f2aa-106">We recommend that you use site search from your favorite search engine to replace it.</span></span> <span data-ttu-id="7f2aa-107">例:</span><span class="sxs-lookup"><span data-stu-id="7f2aa-107">For example:</span></span>
 
-<span data-ttu-id="cb319-108">サイト: technet.microsoft.com dynamics ax 2012「検索用語」</span><span class="sxs-lookup"><span data-stu-id="cb319-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
+<span data-ttu-id="7f2aa-108">サイト: technet.microsoft.com dynamics ax 2012「検索用語」</span><span class="sxs-lookup"><span data-stu-id="7f2aa-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
 
-<span data-ttu-id="cb319-109">- または -</span><span class="sxs-lookup"><span data-stu-id="cb319-109">–or–</span></span>
+<span data-ttu-id="7f2aa-109">- または -</span><span class="sxs-lookup"><span data-stu-id="7f2aa-109">–or–</span></span>
 
-<span data-ttu-id="cb319-110">サイト: msdn.microsoft.com Dynamics AX 2012 「検索用語」</span><span class="sxs-lookup"><span data-stu-id="cb319-110">site:msdn.microsoft.com dynamics ax 2012 "search term"</span></span>
+<span data-ttu-id="7f2aa-110">サイト: msdn.microsoft.com Dynamics AX 2012 「検索用語」</span><span class="sxs-lookup"><span data-stu-id="7f2aa-110">site:msdn.microsoft.com dynamics ax 2012 "search term"</span></span>

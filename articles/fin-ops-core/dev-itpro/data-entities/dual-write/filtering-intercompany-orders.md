@@ -1,6 +1,6 @@
 ---
-title: '[Orders] と [OrderLines] の同期を回避するために会社間注文をフィルターする'
-description: このトピックは会社間注文をフィルターして [Orders] と [OrderLines] の同期を回避する方法について説明します。
+title: 会社間注文をフィルター処理して Orders および OrderLines の同期を回避する
+description: このトピックでは、会社間注文をフィルタ処理して、Orders と OrderLines エンティティが同期されないようにする方法について説明します。
 author: negudava
 manager: tfehr
 ms.date: 11/09/2020
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,49 +18,51 @@ ms.search.industry: ''
 ms.author: negudava
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 6c5e1e2467673badd20366d3bd8e1b93b8078b26
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: 342db8c1b4337145bfd61f5698ff6de25434a400
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4701036"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796609"
 ---
-# <a name="filter-intercompany-orders-to-avoid-synchronizing-orders-and-orderlines"></a><span data-ttu-id="bb95b-103">[Orders] と [OrderLines] の同期を回避するために会社間注文をフィルターする</span><span class="sxs-lookup"><span data-stu-id="bb95b-103">Filter intercompany orders to avoid synchronizing Orders and OrderLines</span></span>
+# <a name="filter-intercompany-orders-to-avoid-syncing-orders-and-orderlines"></a><span data-ttu-id="1a98f-103">会社間注文をフィルター処理して Orders および OrderLines の同期を回避する</span><span class="sxs-lookup"><span data-stu-id="1a98f-103">Filter intercompany orders to avoid syncing Orders and OrderLines</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="bb95b-104">会社間注文をフィルター処理して **注文** エンティティと **OrderLines** エンティティの同期を回避できます。</span><span class="sxs-lookup"><span data-stu-id="bb95b-104">You can filter intercompany orders to avoid synchronizing the **Orders** and **OrderLines** entities.</span></span> <span data-ttu-id="bb95b-105">一部のシナリオでは、Customer Engagement アプリで会社間注文の詳細は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="bb95b-105">In some scenarios, the intercompany order details are not necessary in customer engagement app.</span></span>
+<span data-ttu-id="1a98f-104">会社間注文をフィルター処理して **Orders** テーブルと **OrderLines** テーブルが同期されないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-104">You can filter intercompany orders so that the **Orders** and **OrderLines** tables aren't synced.</span></span> <span data-ttu-id="1a98f-105">一部のシナリオでは、Customer Engagement アプリで会社間注文の詳細は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="1a98f-105">In some scenarios, the intercompany order details aren't required in a customer engagement app.</span></span>
 
-<span data-ttu-id="bb95b-106">各標準 Common Data Service エンティティは、**IntercompanyOrder** フィールドへの参照を使用して拡張され、デュアル書き込みマップは、フィルターの追加フィールドを参照するように変更されます。</span><span class="sxs-lookup"><span data-stu-id="bb95b-106">Each of the standard Common Data Service entities is extended with references to the **IntercompanyOrder** field, and the dual-write maps are modified to refer to the additional fields in the filters.</span></span> <span data-ttu-id="bb95b-107">この結果、会社間注文が同期されなくなります。</span><span class="sxs-lookup"><span data-stu-id="bb95b-107">The result is that the intercompany orders are no longer synchronized.</span></span> <span data-ttu-id="bb95b-108">このプロセスは、Customer Engagement アプリで不要なデータを回避します。</span><span class="sxs-lookup"><span data-stu-id="bb95b-108">This process avoids unnecessary data in the customer engagement app.</span></span>
+<span data-ttu-id="1a98f-106">各標準 Dataverse テーブルは、**IntercompanyOrder** 列への参照を使用して拡張され、デュアル書き込みマップは、フィルターの追加列を参照するように変更されます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-106">Each standard Dataverse table is extended through references to the **IntercompanyOrder** column, and the dual-write maps are modified so that they refer to the additional columns in the filters.</span></span> <span data-ttu-id="1a98f-107">したがって、会社間注文は同期されなくなります。</span><span class="sxs-lookup"><span data-stu-id="1a98f-107">Therefore, the intercompany orders are no longer synced.</span></span> <span data-ttu-id="1a98f-108">このプロセスは、Customer Engagement アプリで不要なデータを防ぐことができます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-108">This process helps prevent unnecessary data in the customer engagement app.</span></span>
 
-1. <span data-ttu-id="bb95b-109">**IntercompanyOrder** の参照を **CDS 販売注文ヘッダー** に追加します。</span><span class="sxs-lookup"><span data-stu-id="bb95b-109">Add a reference to **IntercompanyOrder** to **CDS Sales Order Headers**.</span></span> <span data-ttu-id="bb95b-110">この値は、会社間注文に対してのみ設定されます。</span><span class="sxs-lookup"><span data-stu-id="bb95b-110">It is populated on only intercompany orders.</span></span> <span data-ttu-id="bb95b-111">フィールド **IntercompanyOrder** は、**SalesTable** で使用できます。</span><span class="sxs-lookup"><span data-stu-id="bb95b-111">The field **IntercompanyOrder** is available in **SalesTable**.</span></span>
+1. <span data-ttu-id="1a98f-109">**IntercompanyOrder** 列への参照を追加して、**CDS 販売注文ヘッダー** テーブルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-109">Extend the **CDS Sales Order Headers** table by adding a reference to the **IntercompanyOrder** column.</span></span> <span data-ttu-id="1a98f-110">この列は、会社間注文でのみ入力されます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-110">This column is filled in only on intercompany orders.</span></span> <span data-ttu-id="1a98f-111">**IntercompanyOrder** 列は、**SalesTable** テーブルで使用できます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-111">The **IntercompanyOrder** column is available in the **SalesTable** table.</span></span>
 
-    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="ターゲット、SalesOrderHeader にステージングをマッピングする":::
-    
-2. <span data-ttu-id="bb95b-113">**CDS 販売注文ヘッダー** が拡張されたら、マッピングで **IntercompanyOrder** フィールドが使用可能になります。</span><span class="sxs-lookup"><span data-stu-id="bb95b-113">After **CDS Sales Order Headers** is extended, the **IntercompanyOrder** field is available in the mapping.</span></span> <span data-ttu-id="bb95b-114">フィルターを `INTERCOMPANYORDER == ""` でクエリ文字列として適用します。</span><span class="sxs-lookup"><span data-stu-id="bb95b-114">Apply a filter with `INTERCOMPANYORDER == ""` as the query string.</span></span>
+    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="CDS 販売注文ヘッダーのターゲット ページにステージングをマップする":::
 
-    :::image type="content" source="media/filter-sales-order-header.png" alt-text="販売注文ヘッダー、クエリの編集":::
+2. <span data-ttu-id="1a98f-113">**CDS 販売注文ヘッダー** が拡張されたら、マッピングで **IntercompanyOrder** 列が使用可能になります。</span><span class="sxs-lookup"><span data-stu-id="1a98f-113">After **CDS Sales Order Headers** is extended, the **IntercompanyOrder** column is available in the mapping.</span></span> <span data-ttu-id="1a98f-114">クエリ文字列として `INTERCOMPANYORDER == ""` を含むフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-114">Apply a filter that has `INTERCOMPANYORDER == ""` as the query string.</span></span>
 
-3. <span data-ttu-id="bb95b-116">**IntercompanyInventTransId** への参照を **CDS 販売注文明細行** に追加します。</span><span class="sxs-lookup"><span data-stu-id="bb95b-116">Add a reference to **IntercompanyInventTransId** to **CDS Sales Order Lines**.</span></span>  <span data-ttu-id="bb95b-117">この値は、会社間注文に対してのみ設定されます。</span><span class="sxs-lookup"><span data-stu-id="bb95b-117">It is populated on only intercompany orders.</span></span> <span data-ttu-id="bb95b-118">フィールド **InterCompanyInventTransID** は、**SalesLine** で使用できます。</span><span class="sxs-lookup"><span data-stu-id="bb95b-118">The field **InterCompanyInventTransID** is available in **SalesLine**.</span></span>
+    :::image type="content" source="media/filter-sales-order-header.png" alt-text="CDS 販売注文ヘッダーのクエリ ダイアログ ボックスを編集する":::
 
-    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="ターゲット、SalesOrderLine にステージングをマッピングする":::
+3. <span data-ttu-id="1a98f-116">**IntercompanyInventTransId** 列への参照を追加して、**CDS 販売注文明細行** テーブルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-116">Extend the **CDS Sales Order Lines** table by adding a reference to the **IntercompanyInventTransId** column.</span></span> <span data-ttu-id="1a98f-117">この列は、会社間注文でのみ入力されます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-117">This column is filled in only on intercompany orders.</span></span> <span data-ttu-id="1a98f-118">**InterCompanyInventTransId** 列は、**SalesLine** テーブルで使用できます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-118">The **InterCompanyInventTransId** column is available in the **SalesLine** table.</span></span>
 
-4. <span data-ttu-id="bb95b-120">**CDS 販売注文ヘッダー** が拡張されたら、マッピングで **IntercompanyInventTransId** フィールドが使用可能になります。</span><span class="sxs-lookup"><span data-stu-id="bb95b-120">After **CDS Sales Order Lines** is extended, the **IntercompanyInventTransId** field is available in the mapping.</span></span> <span data-ttu-id="bb95b-121">フィルターを `INTERCOMPANYINVENTTRANSID == ""` でクエリ文字列として適用します。</span><span class="sxs-lookup"><span data-stu-id="bb95b-121">Apply a filter with `INTERCOMPANYINVENTTRANSID == ""` as the query string.</span></span>
+    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="CDS 販売注文明細行のターゲット ページにステージングをマップする":::
 
-    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="販売注文明細行、クエリを編集":::
+4. <span data-ttu-id="1a98f-120">**CDS 販売注文明細行** が拡張されたら、マッピングで **IntercompanyInventTransId** 列が使用可能になります。</span><span class="sxs-lookup"><span data-stu-id="1a98f-120">After **CDS Sales Order Lines** is extended, the **IntercompanyInventTransId** column is available in the mapping.</span></span> <span data-ttu-id="1a98f-121">クエリ文字列として `INTERCOMPANYINVENTTRANSID == ""` を含むフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-121">Apply a filter that has `INTERCOMPANYINVENTTRANSID == ""` as the query string.</span></span>
 
-5. <span data-ttu-id="bb95b-123">ステップ 1 とステップ 2 で Common Data Service エンティティを拡張したときと同じ方法で、**売上請求書のヘッダー V2** と **売上請求書の明細行 V2** を拡張します。</span><span class="sxs-lookup"><span data-stu-id="bb95b-123">Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same way you extended the Common Data Service entities in steps 1 and 2.</span></span> <span data-ttu-id="bb95b-124">次に、フィルター クエリを追加します。</span><span class="sxs-lookup"><span data-stu-id="bb95b-124">Then add the filter queries.</span></span> <span data-ttu-id="bb95b-125">**売上請求書ヘッダー V2** のフィルター文字列は、`(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")` になります。</span><span class="sxs-lookup"><span data-stu-id="bb95b-125">The filter string for **Sales Invoice Header V2** is `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")`.</span></span> <span data-ttu-id="bb95b-126">**売上請求書の明細行 V2** のフィルター文字列は、`INTERCOMPANYINVENTTRANSID == ""` になります。</span><span class="sxs-lookup"><span data-stu-id="bb95b-126">The filter string for **Sales Invoice Lines V2** is `INTERCOMPANYINVENTTRANSID == ""`.</span></span>
+    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="CDS 販売注文明細行のクエリ ダイアログ ボックスを編集する":::
 
-    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="ターゲット、販売請求書ヘッダーにステージングをマッピングする":::
+5. <span data-ttu-id="1a98f-123">手順 1 と 2 を繰り返して、**売上請求書ヘッダー V2** テーブルを拡張し、フィルター クエリを追加します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-123">Repeat steps 1 and 2 to extend the **Sales Invoice Header V2** table and add a filter query.</span></span> <span data-ttu-id="1a98f-124">この場合は、フィルターのクエリ文字列として `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")` を使用します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-124">In this case, use `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")` as the query string for the filter.</span></span>
 
-    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="販売請求書ヘッダー、クエリの編集":::
+    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="売上請求書ヘッダー V2 のターゲット ページにステージングをマップする":::
 
-    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="販売請求書の明細行、クエリの編集":::
+    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="売上請求書ヘッダー V2 のクエリ ダイアログ ボックスを編集する":::
 
-6. <span data-ttu-id="bb95b-130">**見積書** エンティティには会社間関係がありません。</span><span class="sxs-lookup"><span data-stu-id="bb95b-130">The **Quotations** entity doesn't have an intercompany relationship.</span></span> <span data-ttu-id="bb95b-131">他のユーザーが会社間顧客に対する見積を作成した場合は、**CustGroup** フィールドを使用して、これらのすべての顧客を 1 つの顧客グループに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="bb95b-131">If someone creates a quote for one of your intercompany customers, you can put all of these customers in one customer group by using the **CustGroup** field.</span></span>  <span data-ttu-id="bb95b-132">ヘッダーと明細行を拡張して **CustGroup** フィールドを追加してから、このグループを含めないようにフィルターすることもできます。</span><span class="sxs-lookup"><span data-stu-id="bb95b-132">Header and lines can be extended to add the **CustGroup** field and then filter to not include this group.</span></span>
+6. <span data-ttu-id="1a98f-127">手順 3 と 4 を繰り返して、**売上請求明細行 V2** テーブルを拡張し、フィルター クエリを追加します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-127">Repeat steps 3 and 4 to extend the **Sales Invoice Lines V2** table and add a filter query.</span></span> <span data-ttu-id="1a98f-128">この場合は、フィルターのクエリ文字列として `INTERCOMPANYINVENTTRANSID == ""` を使用します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-128">In this case, use `INTERCOMPANYINVENTTRANSID == ""` as the query string for the filter.</span></span>
 
-    :::image type="content" source="media/filter-cust-group.png" alt-text="ターゲット、Sales Quotation Headerにステージングをマッピングする":::
+    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="売上請求明細行 V2 のクエリ ダイアログ ボックスを編集する":::
 
-7. <span data-ttu-id="bb95b-134">**見積** エンティティの範囲を指定したら、クエリ文字列として `CUSTGROUP !=  "<company>"` にフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="bb95b-134">After you extent the **Quotations** entity, apply a filter with `CUSTGROUP !=  "<company>"` as the query string.</span></span>
+7. <span data-ttu-id="1a98f-130">**見積書** テーブルには会社間関係がありません。</span><span class="sxs-lookup"><span data-stu-id="1a98f-130">The **Quotations** table doesn't have an intercompany relationship.</span></span> <span data-ttu-id="1a98f-131">他のユーザーが会社間顧客に対する見積を作成した場合は、**CustGroup** 列を使用して、そのすべての顧客を 1 つの顧客グループに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-131">If someone creates a quotation for one of your intercompany customers, you can use the **CustGroup** column to put all those customers into one customer group.</span></span> <span data-ttu-id="1a98f-132">**CustGroup** 列を追加してヘッダーと行を拡張し、グループが含まれないようにフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="1a98f-132">You can extend the header and lines by adding the **CustGroup** column, and then filter so that the group isn't included.</span></span>
 
-    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="販売見積ヘッダー、クエリの編集":::
+    :::image type="content" source="media/filter-cust-group.png" alt-text="CDS 販売見積書ヘッダーのターゲット ページにステージングをマップする":::
+
+8. <span data-ttu-id="1a98f-134">**見積書** を拡張した後、クエリ文字列として `CUSTGROUP != "<company>"` を含むフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="1a98f-134">After **Quotations** is extended, apply a filter that has `CUSTGROUP != "<company>"` as the query string.</span></span>
+
+    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="CDS 販売見積ヘッダーのクエリ ダイアログ ボックスを編集する":::
