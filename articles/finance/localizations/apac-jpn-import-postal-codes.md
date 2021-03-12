@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DirPartyTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed798e1b7848bdb647f3ef0ca6a61b073b89e646
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 88ac2c6ebfb28695dbbf21a7c0b1fb6f018143b2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408133"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978315"
 ---
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 
@@ -51,6 +50,3 @@ ms.locfileid: "4408133"
 5. インポート プロジェクトのソース ファイル形式を「CSV (Unicode)」に設定します。
 6. **インポート** をクリックします。
 7. 結果を検証します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

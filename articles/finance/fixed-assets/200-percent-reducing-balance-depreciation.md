@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0474a8cecccaf1e23874458c27e0bea991140b6c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f012f934015e334aea468b5b62741749103d7790
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445233"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978742"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200% 逓減残高による減価償却
 
@@ -77,19 +76,16 @@ ms.locfileid: "4445233"
 | 耐用年数             | 5      |
 | 年次減価償却率 | 40%    |
 
-200% 低減残高法では、200% を耐用年数で除算します。 この比率は、資産の正味簿価額で乗算され、各年の減価償却金額が決まります。
+200% 逓減残高法では、200% を耐用年数で除算します。 この比率は、資産の正味簿価額で乗算され、各年の減価償却金額が決まります。
 
 | 期間 | 年次減価償却額の計算 | 簿価額             | 年末の正味簿価額 |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| 年 1 | (11,000 – 1,000) × 40% = 4,000                | 11,000 – 4,000 = 7,000 | 11,000 – 1,000 – 4,000 = 6,000        |
-| 年 2 | 6,000 × 40% = 2,400                           | 7,000 – 2,400 = 4,600  | 6,000 – 2,400 = 3,600                 |
-| 年 3 | 3,600 × 40% = 1,440                           | 4,600 – 1,440 = 3,160  | 3,600 – 1,440 = 2,160                 |
+| 年 1 | (11,000 – 1,000) × 40% = 4,000                | 11,000 – 4,000 = 7,000 | 11,000 – 1,000 – 4,000 = 6,000        |
+| 年 2 | 6,000 × 40% = 2,400                           | 7,000 – 2,400 = 4,600  | 6,000 – 2,400 = 3,600                 |
+| 年 3 | 3,600 × 40% = 1,440                           | 4,600 – 1,440 = 3,160  | 3,600 – 1,440 = 2,160                 |
 
 > [!NOTE] 
-> 通常、200% 逓減残高による減価償却方法を使用して計算される金額が、定額法を使用して計算された金額より低くなる場合、残余耐用期間では定額法への換算が行われます。
+> 通常、200 =% 逓減残高による減価償却法を使用して計算した金額が、定額法を使用して計算した金額より低くなる場合、残存耐用年数は定額法に換算されます。
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

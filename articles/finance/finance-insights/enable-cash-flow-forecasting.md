@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 321c716c10b136769ea3a48a3b60a8a717798338
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 1977dac4a3ab66cca2248dc0124d3a06d6963f40
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646232"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978767"
 ---
 # <a name="enable-cash-flow-forecasting-preview"></a>キャッシュ フロー予測の有効化 (プレビュー)
 
@@ -67,6 +66,3 @@ ms.locfileid: "4646232"
 ## <a name="privacy-notice"></a>プライバシー通知
 
 プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

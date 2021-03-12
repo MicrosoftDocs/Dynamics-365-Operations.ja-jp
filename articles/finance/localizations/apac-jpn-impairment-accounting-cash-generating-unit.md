@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_JP, AssetCashGeneratingUnitGroup_JP, AssetImpairmentRecognitionMethod1_JP, AssetImpairmentRecognitionMethod2_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 25691
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8d6353f4fa70657b80c80dd17186fae5b1939a7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: adaefe439f2a8e31d28e1fa9f31a91cab27aa0ed
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408135"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978318"
 ---
 # <a name="fixed-asset-impairment-accounting-on-cash-generating-units-for-japan"></a>日本のキャッシュ生成単位の固定資産減損会計
 
@@ -58,6 +57,3 @@ ms.locfileid: "4408135"
 - [日本の固定資産の減損会計](apac-jpn-impairment-accounting-fixed-assets.md)
 - [資産グループの減損損失の提案と転記](./tasks/propose-post-impairment-amount-cash-generating-unit.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

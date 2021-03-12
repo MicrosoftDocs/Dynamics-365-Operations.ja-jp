@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10154
 ms.assetid: da3d689f-3625-4896-a74a-7890e4fa26eb
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c74075e730f986b633ecc81ea39c8f3e0839ae61
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8de7b32b8bd9e8327744874317e5e294b65d5dab
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408137"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978324"
 ---
 # <a name="equally-divided-depreciation-method-for-japan"></a>日本の均等償却方法
 
@@ -106,6 +105,3 @@ Finance が均等減価償却法を使用して減価償却を計算する場合
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

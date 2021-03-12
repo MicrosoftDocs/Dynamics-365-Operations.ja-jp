@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6cf3cad973949a7aa7f0040ec37014380fa5dcdf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8363258afa9c9c3513e82575409633c1059f5d27
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445338"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978388"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-finance"></a>Dynamics 365 Finance を検討している業務の意志決定者向けラーニング カタログ
 
@@ -32,9 +31,10 @@ ms.locfileid: "4445338"
 | コンテンツ   | 説明   | 書式設定    | 期間    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。   Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか? 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。                                                                                                                                                                                            | 無料の自習型オンライン学習パス                                            | 7 時間   |
-| [Dynamics 365および Power Platform の基礎](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/)                                                  | ビジネス アプリケーションについて学ぶことに関心がありますか。   この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。                                                                                                                                                                                                              | 無料の自習型オンライン学習パス                                            | 5.5 時間 |
+| [Dynamics 365 および Power Platform の基本](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/)                                                  | ビジネス アプリケーションについて学ぶことに関心がありますか。   この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。                                                                                                                                                                                                              | 無料の自習型オンライン学習パス                                            | 5.5 時間 |
 | [Finance and Operations アプリの使用を開始する](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)                                                       | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。   Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。                                    | 無料の自習型オンライン学習パス                                            | 2 時間   |
 | [Dynamics 365 Finance の使用を開始する](https://docs.microsoft.com/learn/modules/get-started-financial-management-dyn365-finance/)                                       | Dynamics 365 Finance は、変化の激しいビジネス環境に適応できるようにビジネス ユーザーを支援します。 企業が財務を管理し、資金を管理するために必要なすべてのものを、財務計画と予測のための正確な情報とともに提供し、分析ツールを使用して最新の状態に保つことができます。 財務はあらゆる業務の中心であるため、Dynamics 365 Finance の機能に精通することが重要です。 | 無料の自習型オンライン学習モジュール                                          | 1 時間    |
+| [Dynamics 365 Project Operations で 経費管理の使用を開始する](https://docs.microsoft.com/learn/modules/get-started-expense-management/) | Dynamics 365 Project Operations の経費管理モジュールは、組織が従業員の経費を追跡し、管理することができます。 経費管理を使用すると、支払情報の保存、クレジット カード トランザクションのインポート、および従業員が組織の経費を負担した場合に使う金額を追跡できます。 また、経費ポリシーの設定、承認の自動化、Project Operations を使用することで合理化されたビジネス プロセスを提供することもできます。 | 無料の自習型オンライン学習パス                                            | 1 時間 |
 | [コース MB-900T01-A: Dynamics 365 の基本](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)                                                                | このコースでは、Dynamics 365 の機能と事業価値について理解します。 このコースでは、Dynamics 365 アプリケーション、Power Platform、クラウドの概念、セキュリティ モデル、およびライセンスに関する考慮事項について説明します。                                                                                                                                                                                                      | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異ります | 1 日間     |
 
 ## <a name="exam"></a>試験<a name="exam"></a>
@@ -42,6 +42,3 @@ ms.locfileid: "4445338"
 | コンテンツ   | 説明   | 書式設定    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 の基本](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Microsoft Dynamics 365: Power Platform、クラウドの概念、ライセンス オプション、および配置とリリースのオプション、を理解していることを証明します。 | 試験、費用は地域によって異ります |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

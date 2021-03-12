@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7dfb215683b4ee5d186626492bd90116d1a06a1d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432345"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976841"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>移動オーダー用の倉庫の設定 
 
@@ -53,6 +52,3 @@ ms.locfileid: "4432345"
 2. **入荷場所** フィールドで、**倉庫** を選択します。
 3. **出荷倉庫**、**入荷倉庫**、および **配送日数** を選択します。 
 4. (オプション) 荷渡方法によっては、**荷渡方法ごとの配送日数** タブで配送時間を設定することもできます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

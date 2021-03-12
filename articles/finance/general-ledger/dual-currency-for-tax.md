@@ -3,7 +3,7 @@ title: 税金の二重通貨サポート
 description: このトピックでは、税務ドメインでの二重通貨会計機能の拡張方法と、税金の計算および転記に対する影響について説明します
 author: EricWang
 manager: Ann Beebe
-ms.date: 12/16/2019
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 9e5db8e4bbd14aa30196e3be617cdfcb72c091fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e3e7ff93ca3c6a2266ba0f33c8eac7ceade0d4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445144"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978606"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>消費税の二重通貨サポート
 [!include [banner](../includes/banner.md)]
@@ -44,8 +43,7 @@ Dynamics 365 Finance 用の二重通貨機能は、バージョン 8.1 (2018 年
 
 二重通貨のサポートにより、機能管理には次の 2 つの新機能が用意されています。 
 
-- 消費税変換 (バージョン 10.0.9 のリリース)
-- レポート通貨での税決済の自動残高 (バージョン 10.0.11 のリリース)
+- 消費税変換 (バージョン 10.0.13 での新機能)
 
 消費税の二重通貨サポートにより、税の通貨での税額が正確に計算され、会計通貨とレポートの通貨の両方で消費税精算残高が正確に計算されるようになります。 
 
@@ -53,8 +51,8 @@ Dynamics 365 Finance 用の二重通貨機能は、バージョン 8.1 (2018 年
 
 **消費税変換** パラメータには、トランザクション通貨から税通貨に税金額を換算するためのオプションが 2 つあります。 
 
-- 会計通貨: パスは "トランザクション通貨での金額 > 会計通貨での金額 > 税通貨での金額"となります。 通貨換算では、会計通貨為替レートタイプ (元帳の設定で構成) が使用されます。
-- レポート通貨: パスは "トランザクション通貨での金額 > レポート通貨での金額 > 税通貨での金額" となります。 通貨換算では、レポート通貨為替レートタイプ (元帳の設定で構成) が使用されます。
+- 会計通貨: パスは "トランザクション通貨での金額 > 会計通貨での金額 > 税通貨での金額"となります。 通貨換算では、会計通貨為替レートタイプ (元帳の設定で構成したもの) が使用されます。
+- レポート通貨: パスは "トランザクション通貨での金額 > レポート通貨での金額 > 税通貨での金額" となります。 通貨換算では、レポート通貨為替レートタイプ (元帳の設定で構成したもの) が使用されます。
 
 ### <a name="example"></a>例
 
@@ -109,7 +107,7 @@ TAXUNCOMMITTED テーブルにのみ保存されているがまだ転記され�
 
 ## <a name="tax-settlement-auto-balance-in-reporting-currency"></a>レポート通貨での税決済の自動残高 
 
-消費税の換算パスが "会計通貨" になっていたり、1 つの税決済期間での為替レートの変更など、特定の理由で税決済がレポート通貨に分散されていない場合、元帳の設定で税額の差異を調整し、コンフィギュレーションされた実現利益/損失の会計に相殺するために、自動的に勘定項目を生成します。
+消費税の換算パスが "会計通貨" になっていたり、ひとつの税決済期間での為替レートの変更など、特定の理由で税決済がレポート通貨に分散されていない場合、自動的に会計入力を生成して税額差異を調整し、元帳設定で設定した為替決済の損益勘定と相殺します。
 
 前の例を使用して、この機能を実際に確認するには、転記時の TAXTRANS テーブルのデータが次のようになっているものとします。
 
@@ -145,6 +143,3 @@ TAXUNCOMMITTED テーブルにのみ保存されているがまだ転記され�
 - [二重通貨](dual-currency.md)
 - [消費税の概要](indirect-taxes-overview.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

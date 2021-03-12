@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bcae977ede91dcaf4e455353f023e9eee4fcb2b1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431762"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977491"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>クロスドッキングの自動リリース出荷
 
@@ -179,6 +178,3 @@ ms.locfileid: "4431762"
 - リンクされた販売注文に対して、倉庫にリリースが発生します。
 - リリースに基づいて、出荷とクロスドッキングの作業が作成されます。 この作業では、倉庫オペレーターに対して、販売注文明細行をフルフィルメントするために必要な数量をピッキングし、クロスドッキング場所ディレクティブで指定された出庫場所にプットするように指示します。
 - 製造オーダーの数量が販売注文で要求される数量を超える場合は、通常のプット アウェイ作業が作成されます。 この作業では、場所ディレクティブに従って、クロスドッキング後に残っている完成品の数量をピッキングし、通常の保管場所に移動するよう倉庫オペレーターに指示します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

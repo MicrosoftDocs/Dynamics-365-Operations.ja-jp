@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b697cce8ecb9ece282fc659ab4d97c4b747c5e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 826920980bdd2d30337c92553bd0367b119f676c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431827"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977341"
 ---
 # <a name="system-grouping-on-an-open-work-list"></a>オープン作業一覧のシステム グループ化
 
@@ -42,6 +41,3 @@ ms.locfileid: "4431827"
 | システム グループ化フィールド | <strong>システム作業の許可</strong> が <strong>はい</strong> に設定されている場合にのみ使用できます。 ピッキング作業をどのように作業者にグループ化するかを決定するフィールドを選択します。 たとえば、<strong>ShipmentId</strong> フィールドを選択した場合、作業者はピッキング作業をグループ化する出荷 ID をスキャンします。 出荷のすべての作業が作業者に割り当てられます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 <strong>システム グループ化ラベル</strong> フィールドを使用して、作業者に何をスキャンするかを通知します。 |
 | システム グループ化ラベル |                       <strong>システム作業の許可</strong> が <strong>はい</strong> に設定されている場合にのみ使用できます。 ピッキング作業がグループ化されたときに、何をスキャンするかを作業者に通知する情報を入力します。 たとえば、<strong>ShipmentId</strong> フィールドを使用して出荷別にピッキング作業をグループ化する場合、このフィールドに出荷 ID を入力することができます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化</strong> フィールドでグループ化するフィールドを選択する必要もあります。                       |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

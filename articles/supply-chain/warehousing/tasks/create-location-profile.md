@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 320059184dc69c4fd34c4b50265ceb142d47a467
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bd5924447c0af21b5b26a2dc9098cf245b7ee12
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431828"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977266"
 ---
 # <a name="create-a-location-profile"></a>場所プロファイルの作成
 
@@ -43,6 +42,3 @@ ms.locfileid: "4431828"
 10. **循環棚卸** フィールドで **はい** を選択します。
 11. **保存** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

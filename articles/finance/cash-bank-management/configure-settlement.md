@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 094b8876b3b10b6dcbc0ce399a1a9915271459ed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ebc6fcfe20082f76007eabb86d5e33dbfc900dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445326"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976455"
 ---
 # <a name="configure-settlement"></a>決済のコンフィギュレーション
 
@@ -67,6 +66,3 @@ ms.locfileid: "4445326"
 
 -   多くの場合、組織は必要ではない財務分析コードにゼロを入力するために固定分析コードを使用します。 これは、売掛金勘定/買掛金勘定などの貸借対照表勘定の一般的なケースです。 通常ゼロが入力される財務分析コードを追跡しないために勘定構造を使用できます。  貸借対照表勘定用の固定分析コードは削除することができ、固定分析コードを使用する必要をなくすことができます。
 -   組織が売掛金勘定/買掛金勘定の主勘定で固定分析コードを必要とし、支払いの固定分析コードを既定値にする方法がある場合、支払に対する固定分析コードは仕入先トランザクションに保管されます。 これによって、システムは売掛金勘定/買掛金勘定の主勘定を再構築して、固定分析コードの値を含めることができます。 固定分析コードの値は、仕入先または支払仕訳帳の仕訳帳名のいずれかで既定として定義されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

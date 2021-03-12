@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fade659c320e0ea1059644324859c9a3cb273c96
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7f3e121fdc0f69ace15e0fa08bde0af739ef7d28
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431662"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977816"
 ---
 # <a name="end-a-production-order"></a>製造オーダーの終了
 
@@ -46,6 +45,3 @@ ms.locfileid: "4431662"
 1. [アクション] ペインで [原価の管理] をクリックします。
 2. [原価の比較の表示] をクリックします。
     * 製造オーダーの終了後は、見積原価価格を実際の原価価格と比較して製造差異の概要を得ることができます。  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

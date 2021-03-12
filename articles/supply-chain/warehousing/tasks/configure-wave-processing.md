@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aa193f6d62613893f9d5da4351d43a810dbf1596
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e22816b33739141fbcd188d631a07313db415959
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432351"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977291"
 ---
 # <a name="configure-wave-processing"></a>ウェーブ処理のコンフィギュレーション
 
@@ -61,6 +60,3 @@ ms.locfileid: "4432351"
 販売注文とかんばん注文では、棚卸資産は注文が倉庫にリリースされる前に引当する必要があります。 そうしなければ、品門行または配賦行はウェーブで処理することはできません。 製造オーダーでは、[部分引当の許可] を選択するというオプションもあります。 たとえば、生産を開始する必要がある材料があり、プロセスを終了するための追加の材料が利用可能になるまで待機できる場合に役立ちます。 このオプションを選択する場合、追加の材料が使用可能になるときに、倉庫プロセスに手動でリリースを繰り返す必要があります。  
 25. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

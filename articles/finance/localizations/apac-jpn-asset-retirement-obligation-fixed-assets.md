@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10174
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4d3179ad299db60e0f1a0ed920012bbafc9e8b9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 367f9320b2247d60f3ce03123a628513d44225c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408183"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978333"
 ---
 # <a name="set-up-asset-retirement-obligation-for-fixed-assets-for-japan"></a>日本の固定資産の資産償却責務を設定します。
 
@@ -51,7 +50,7 @@ ARO を使用するには、次の設定手順を完了する必要がありま�
 -   既定の帳簿、理由コード、および番号順序などの、基本的な固定資産パラメーターを **固定資産パラメーター** ページで設定します
 -   固定資産グループを **固定資産グループ** ページで定義します
 -   減価償却の会計カレンダーを設定します
--   現在の市場の割引率を使用する割引率スケジュールを設定して、ARO 金額を計算します
+-   現在の市場の割引率を使用する割引率スケジュール (キャッシュ フロー割引率) を設定して、ARO 金額を計算します
 -   資産に使用する ARO タイプと、ARO 金額の変更を転記する頻度を指定します
 -   ARO の見積償却原価計画を設定し、資産の耐用年数の会計期間ごとに ARO 金額をシミュレーションします
 -   **資本化資産償却責務** と **資産償却債務 - 増加** **経費** のドキュメント タイプで使用する転記プロファイルを設定します。
@@ -69,6 +68,3 @@ ARO を使用するには、次の設定手順を完了する必要がありま�
 |    コンフィギュレーション キー     | アプリケーション オブジェクト ツリー (AOT) の<strong>データ ディクショナリ</strong> &gt; <strong>コンフィギュレーション キー</strong> ノードで、固定<strong>資産</strong>のコンフィギュレーション キーが使用できることを確認します。 |
 | セキュリティ ロールおよび職務 |                                                  このタスクを実行するには、<strong>固定資産の管理</strong>のセキュリティ ロールのメンバーである必要があります。                                                  |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e8778a96030494cbb5d819bf214fca104864eff4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431755"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977416"
 ---
 # <a name="sales-returns"></a>販売返品
 
@@ -257,7 +256,7 @@ ms.locfileid: "4431755"
 ### <a name="credit-correction"></a>貸方訂正
 
 請求プロセスの一部として、雑費が正しいことを確認します。 元帳転記が訂正 (Storno) となるよう、請求書または貸方票を転記する際に **請求の転記** ページの **その他** タブで **貸方訂正** オプションを使用することを考慮してください。 
->[注記!] 既定では、**売掛金勘定パラメーター** ページで **修正用訂正票** オプションが有効になっている場合、**貸方訂正** オプションは有効化されます。 ただし、Storno で返品を転記しないことをお勧めします。
+>[注記!] 既定では、**売掛金勘定パラメータ** ページで **修正用訂正票** オプションが有効になっている場合、**貸方訂正** オプションは有効化されます。 ただし、Storno で返品を転記しないことをお勧めします。
 
 ## <a name="create-intercompany-return-orders"></a>会社間返品注文の作成 
 返品注文は組織内の 2 つの会社間で完了されます。 サポートされているシナリオは次のとおりです。
@@ -311,7 +310,7 @@ ms.locfileid: "4431755"
 
 ![返品注文は顧客請求書を参照しません。](./media/SalesReturn09.png)  
 
->[注記!] 品目マスターの価格が **返品原価価格** パラメーターの既定値として使用されます。 既定の価格は、在庫払出時に原価価格と異なります。 したがって、3 つの損失が発生するという影響が生じます。 さらに、返品注文には、販売注文で顧客に適用された割引は含まれません。 したがって、過大な貸方が発生します。
+>[注記!] 品目マスタの価格が **返品原価価格** パラメータの既定値として使用されます。 既定の価格は、在庫払出時に原価価格と異なります。 したがって、3 つの損失が発生するという影響が生じます。 さらに、返品注文には、販売注文で顧客に適用された割引は含まれません。 したがって、過大な貸方が発生します。
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>例 2: 貸方訂正が返品注文に対して選択されます
 
@@ -331,6 +330,3 @@ ms.locfileid: "4431755"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

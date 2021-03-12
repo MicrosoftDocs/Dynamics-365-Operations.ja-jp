@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 28abef376e8462c9a69dbd8e5033ea799b6a4b3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b206dbda56acd4fcd4aa98be4b5e0d6c839f0354
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445203"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976419"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>国際銀行番号 (IBAN) 口座の検証を管理
 
@@ -48,6 +47,3 @@ IBAN の構造についての情報は、Microsoft Dynamics 365 Finance に格�
     検証では、銀行口座番号が銀行口座番号を表す IBAN の一部と一致していることも確認します。 銀行口座番号が一致しない場合は、警告メッセージが表示されます。 このメッセージは、警告のみです。 銀行口座番号と一致しない場合でも続行することができます。
 
     検証では、銀行支店コードが銀行支店コードを表す IBAN の一部と一致していることも確認します。 銀行支店コードには、銀行番号と、多くの場合は追加の銀行支店が含まれます。 銀行支店コードが一致しない場合は、警告メッセージが表示されます。 このメッセージは、警告のみです。 銀行支店コードが一致しない場合でも続行することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

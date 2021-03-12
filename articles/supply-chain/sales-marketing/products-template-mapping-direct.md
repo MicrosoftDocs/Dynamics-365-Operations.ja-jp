@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 6ffd55585ff43f993876de6c669eb61e74a9fd79
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ecee843b6c09c86b4e40ab34cc113e5a7e7c76f8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527317"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977691"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>製品を Supply Chain Management から Sales の製品に直接同期する
 
@@ -33,7 +32,7 @@ ms.locfileid: "4527317"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
+> 見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Sales に製品を直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
@@ -80,7 +79,7 @@ Sales では、新しい **外部管理** フィールドが製品に追加さ�
 
 > [!NOTE]
 > - 製品の同期は、一致する通貨を含む価格リストなしでは成功しません。
-> - データ統合プロジェクトの pricelevelid.name [既定の価格リスト (名前)] をマッピングすることにより、統合に使用される価格リストを制御できます。 入力値は、全小文字である必要があります。 たとえば、'標準' という名前の販売での価格リストの既定値は、次のようになります。出力先フィールド: pricelevelid.name [既定の価格リスト (名前)]、およびタイプのマッピング: [ {  "transformType": "既定", "defaultValue": "標準" } ]。
+> - データ統合プロジェクトの pricelevelid.name [既定の価格リスト (名前)] をマッピングすることにより、統合に使用される価格リストを制御できます。 入力値は、全小文字である必要があります。 たとえば、'標準' という名前の販売での価格リストの既定値は、次のようになります。出力先フィールド: pricelevelid.name [既定の価格リスト (名前)]、およびタイプのマッピング: [ { "transformType": "既定", "defaultValue": "標準" } ]。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
@@ -124,6 +123,3 @@ Sales では、新しい **外部管理** フィールドが製品に追加さ�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

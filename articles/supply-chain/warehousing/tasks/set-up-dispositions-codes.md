@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSDispositionTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d84699e8e4323792ac67b69236d264e33eeaf28
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: b7c98526423b28fcb6c4e00a9f2cfd84d5a9119e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432350"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977016"
 ---
 # <a name="set-up-dispositions-codes"></a>廃棄コードの設定
 
@@ -41,6 +40,3 @@ ms.locfileid: "4432350"
 6. [返品廃棄コード] フィールドに値を入力します。
     * 返品廃棄コードにより、登録された品目の返品注文プロセスの残りが決まります。 この例では、顧客は貸方票を受け取る必要があります。 アクションの貸方を含む返品廃棄コードを追加します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

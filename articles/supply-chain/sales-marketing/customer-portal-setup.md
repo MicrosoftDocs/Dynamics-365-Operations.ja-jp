@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e61fc5f7151a0bb61d496d47f4ad4e727a2a1d65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2153bbca2be7c72e48b9dc51b1f7fdbe2ab89903
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529533"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977741"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>顧客ポータルのインストール、設定、更新
 
@@ -31,7 +30,7 @@ ms.locfileid: "4529533"
 顧客ポータルの実装には、次のライセンスを所有している必要があります :
 
 - **Power Apps ポータル** - このライセンスは、顧客ポータルのホストに必要です。 ポータルは、使用率に基づいてライセンス供与されます。 詳細については、[Power Apps ポータルのライセンス要件](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals) を参照してください。
-- **デュアル書き込み** - Supply Chain Management のエンティティにデュアル書き込みを有効にするには、必要なライセンスを所有している必要があります。 詳細については、[デュアル書き込みのシステム要件](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md) を参照してください。
+- **デュアル書き込み** - Supply Chain Management のテーブルにデュアル書き込みを有効にするには、必要なライセンスを所有している必要があります。 詳細については、[デュアル書き込みのシステム要件](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md) を参照してください。
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>デュアル書き込みと、Power Apps ポータルの依存関係
 
@@ -39,13 +38,13 @@ ms.locfileid: "4529533"
 
 ![顧客ポータルの依存関係](media/customer-portal-elements.png "顧客ポータルの依存関係")
 
-Supply Chain Management の他の機能とは異なり、顧客ポータルのテンプレートは Power Apps ポータルに存在します。 したがって、顧客ポータルは、Power Apps ポータルやデュアル書き込みのエンティティが提供する機能や能力によって制限されます。
+Supply Chain Management の他の機能とは異なり、顧客ポータルのテンプレートは Power Apps ポータルに存在します。 したがって、顧客ポータルは、Power Apps ポータルやデュアル書き込みのテーブルが提供する機能や能力によって制限されます。
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>顧客ポータルを有効化する設定が必要です
 
 必要なライセンスを確認した後は、デュアル書き込みを設定し、[デュアル書き込みの初回同期](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md)に記載の指示に従って設定することができます。
 
-デュアル書き込みでは、以下のエンティティ マッピングを有効化してください :
+デュアル書き込みでは、以下のテーブル マッピングを有効化してください:
 
 - 販売注文ヘッダー
 - 販売注文の詳細
@@ -80,12 +79,9 @@ Supply Chain Management の他の機能とは異なり、顧客ポータルの�
 - [Power Apps ポータル ドキュメント](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [デュアル書き込みのドキュメント](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-ポータルを効果的に管理するには、Power Appsポータルと Common Data Service のライフサイクルを理解しておく必要があります。 詳細については、次のリソースを参照してください :
+ポータルを効果的に管理するには、Power Appsポータルと Microsoft Dataverse のライフサイクルを理解しておく必要があります。 詳細については、次のリソースを参照してください :
 
 - [ポータルのライフ サイクルについて](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
 - [ポータルのアップグレード](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [ポータルの構成の移行](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [ソリューションのライフサイクル管理 : Dynamics 365 for Customer Engagement アプリ](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
