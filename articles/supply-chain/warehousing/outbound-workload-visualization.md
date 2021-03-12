@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: cbfb395c9103ff31979bfd57333f689e38915652
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645436"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965555"
 ---
 # <a name="outbound-workload-visualization"></a>出庫ワークロードの視覚化
 
@@ -98,6 +97,3 @@ ms.locfileid: "4645436"
 ![ゾーンと作業状態の視覚化](media/work-viz-chart.png "ゾーンと作業状態の視覚化")
 
 このグラフには、**FLOOR** および **BULK** という名前の 2 つのゾーンと **空白** のゾーンが示されています。 **空白** のゾーンは、ゾーンのメンバーではないすべての作業明細行を表します。 グラフには、関係のないすべてのフィルター処理されたデータが常に **空白** として表示され、できるだけ視覚化できるようになっています。 **FLOOR** ゾーンでは、グラフに 3 つの終了した明細行と 4 つの未処理の明細行が表示されています。 **BULK** ゾーンでは、グラフに 4 つの終了した明細行と 1 つの未処理の明細行、24 のキャンセルされた明細行が表示されています。 最後に、ゾーンに含まれていない 8 つの終了した明細行がグラフに表示されるため、**空白** として一覧されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

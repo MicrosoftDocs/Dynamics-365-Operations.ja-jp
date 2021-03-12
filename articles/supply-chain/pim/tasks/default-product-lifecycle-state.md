@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8766208f0dff0cf24db7335ef00c42749811f8fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 16f604d5e06859b15c6f610e7a5c822ef2089ea3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431953"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966908"
 ---
 # <a name="create-a-default-product-lifecycle-state"></a>既定の製品のライフサイクルの状態を作成
 
@@ -62,6 +61,3 @@ ms.locfileid: "4431953"
 > [!NOTE]
 > アクティブな状態を設定したと仮定して、アクティブな状態を選択し、マスター プランおよび BOM レベルの計算で製品を使用できるようになります。 当然、一貫した計画に必要なすべての製品の詳細が指定されている場合にのみ意味があります。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

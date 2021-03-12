@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63993fca2164301d31dbfa1474a4cf5eb16273e6
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: d999c91aa1cc14f29ebfa6be8e456e45ef0d3fa4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516819"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966183"
 ---
 # <a name="troubleshoot-process-manufacturing"></a>プロセス製造のトラブルシューティング
 
@@ -41,6 +40,3 @@ ms.locfileid: "4516819"
 > 日付 %1 で在庫決算を実行しようとしています。 期末と一致する日付 %1 での一括引き落とし原価計算の実行が登録されていません。 期末と一致する日付 %1 での一括引き落とし原価計算を必ず実行してください。 補助元帳および総勘定元帳において、在庫評価、売却済の商品の原価、および差異は、この処理が実行されるまで正しくない可能性があります。
 
 この問題は、リリース 10.0.13 またはそれ以降で修正されています。 詳細については、[KB 4582468](https://fix.lcs.dynamics.com/Issue/Details?kb=4582468&bugId=468844&dbType=3&qc=fcd64080446a27382cfde3e4c3bdcfb714279185932259cd11ceb0d500617296) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1de8373471ff8187bd476305c9ed0b26beaa52d5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413676"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965281"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>販売時点管理 (POS) での製品検索および顧客検索
 
@@ -118,6 +117,3 @@ Modern 販売時点管理 (MPOS) およびクラウド販売時点管理 (CPOS) 
 
 予期しないパフォーマンスの問題を防ぐために、このコンフィギュレーションは **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** という名前のフライティング フラグの後ろに隠されています。 そのため、ユーザー インターフェイス (UI) に **既定の顧客検索モード** の設定を表示するには、小売業者はユーザー承認テスト (UAT) および実稼働環境のためにサポート チケットを作成する必要があります。 チケットを受け取った後、エンジニアリング チームは小売業者と協力し、パフォーマンスの評価と必要なすべての最適化の実装を行うのに小売業者が非実稼働環境でテストを行っていることを確認します。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

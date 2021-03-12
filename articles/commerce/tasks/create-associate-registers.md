@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 001bdd61f9266798dadae2ac7c96a4f4c19dbb94
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2415945c5a8f73e095627d638fcc572c50ffe8ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413812"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964898"
 ---
 # <a name="create-and-associate-registers"></a>レジスターの作成と関連付け
 
@@ -44,6 +43,3 @@ ms.locfileid: "4413812"
     * EFT POS レジスター番号はどの支払ターミナルが認証要求を送信しているかを支払処理担当者に通知するために使用されます。 この値は、"ターミナル ID" または "TID" と呼ばれます。 TID は、支払デバイスのステッカーの明細行から見つけることができます。  
 9. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd4225d9e7ad65939c57cb770ba521377c87dea3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8db243949b2aeee0a8263276234d439652905449
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431753"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965580"
 ---
 # <a name="schedule-workload-capacity"></a>ワークロード能力のスケジューリング
 
@@ -80,6 +79,3 @@ ms.locfileid: "4431753"
 3. **注文タイプ** フィールドで、**計画済かつ確認済**、**計画済**、または **確認済** を選択し、レポートで予測する注文のタイプを示します。
 4. **負荷タイプ** フィールドで、負荷タイプを選択して、量、または重量のワークロード能力を予測するかどうかを指定します。
 5. **ワークロード能力** フィールドで、ワークロード能力の設定を選択します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 68f091cca9c3c2baa03813553127ee41abe6d522
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4432418"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967235"
 ---
 # <a name="release-product-structures"></a>リリース製品構造
 
@@ -160,6 +159,3 @@ BOM または工順を含むエンジニアリング製品がリリースされ�
 たとえば、製品 X は、*設計キャビネット* 製品所有者グループに割り当てられています。 また、製品 X は製品 Y の一部であり、*デザイン スピーカー* 製品所有者グループに割り当てられています。 *デザイン スピーカー* 製品所有者グループのユーザーが、製品 Y とその BOM をリリースした場合、製品 X は製品 Y と共にリリースされます。
 
 詳細については、[製品所有者](product-owner.md)を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

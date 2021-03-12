@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb201dac1cbfa59f1a46ef42da3822040f74e620
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 17660c8e3e35290c1c959b4f33818590dd15b822
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413808"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964976"
 ---
 # <a name="create-and-associate-a-device"></a>デバイスの作成と関連付け
 
@@ -41,6 +40,3 @@ ms.locfileid: "4413808"
 9. 一覧で、選択された行のリンクをクリックします。
 10. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

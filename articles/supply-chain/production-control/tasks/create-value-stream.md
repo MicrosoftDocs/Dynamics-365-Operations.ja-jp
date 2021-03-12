@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: OMOperatingUnit, DefaultDashboard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f894ef19f868403d3150c346f3fed54416367204
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b3ffc8f96a0c85e032aa2c8e1a371d08b8877a88
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431673"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966308"
 ---
 # <a name="create-a-value-stream"></a>バリュー ストリームの作成
 
@@ -49,6 +48,3 @@ ms.locfileid: "4431673"
 2. ページを閉じます。
 3. ページを更新します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

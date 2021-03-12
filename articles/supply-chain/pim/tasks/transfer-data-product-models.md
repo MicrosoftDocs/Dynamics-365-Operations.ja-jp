@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCImport
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ba4e01bec0ce5e7c0234dea13313fcf2db70b48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a1f992ff912f32e2ff75b99c200934d4a28e2ef6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431811"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966808"
 ---
 # <a name="transfer-data-for-product-models"></a>製品モデルのためのデータの転送
 
@@ -37,6 +36,3 @@ ms.locfileid: "4431811"
 5. [製品モデルをエクスポート] をクリックします。
     * ダウンロードの動作は、セキュリティ設定の設定方法によってブラウザーごとに異なります。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

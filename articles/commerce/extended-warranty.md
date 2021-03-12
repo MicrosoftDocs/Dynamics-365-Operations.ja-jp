@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a875343d9b93f5ebf2c2992fba8b2f182310461e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413644"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965121"
 ---
 # <a name="create-and-configure-extended-warranties"></a>延長保証の作成と設定
 
@@ -142,7 +141,7 @@ Commerce で保証ポリシーの番号シーケンスを構成するには、�
 
 Commerce で保証グループを設定するには、次の手順を実行します。
 
-1.  **Retail と Commerce \> 製品とカテゴリ \> 保証 \> 保証グループ** の順に移動します。
+1. **Retail と Commerce \> 製品とカテゴリ \> 保証 \> 保証グループ** の順に移動します。
 1. **新規** を選択して、保証グループを作成します。
 1. **名前** フィールドに、新しいグループの名前を入力します。
 1. **一般** クイック タブの **説明** フィールドに、グループの説明を入力します。
@@ -239,6 +238,3 @@ Commerce Headquarters で保証トランザクションを処理するには、�
 [品揃えの設定](set-up-assortments.md)
 
 [番号順序の概要](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 58b5a35800ab464f25868c6756b16f25d14d8d78
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 8321a0d8516a6c2c085ce9c1236f70af1cca98da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4432419"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967261"
 ---
 # <a name="product-readiness"></a>製品準備完了
 
@@ -148,6 +147,3 @@ ms.locfileid: "4432419"
 | アンケート | チェックリストに使用するアンケートを選択します。 このチェックリストは、準備完了チェックが実行された会社のローカル チェックリストです。 チェックリストに対する回答が正しいかどうかをシステムが評価できるようにする必要があります。 したがって、チェックリストでは、正しい回答に基づいて評価が実行されるように設定する必要があります。 アンケートの作成方法の詳細については、[アンケートの使用](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires)とそれに関連するトピックを参照してください。 |
 | 自動承認 | 準備完了チェック レコードには、承認状態を示す **承認済** チェックボックスが含まれます。 割り当て済みユーザーがチェックを完了した直後に承認済みに設定する必要がある場合は、**自動承認** チェックボックスをオンにします。 追加のステップとして明示的な承認を必須にする場合は、このチェックボックスをオフにします。 |
 | 必須 | 割り当てられたユーザーが入力する必要のあるチェックの場合は、このチェックボックスをオンにします。 必須のチェックをスキップすることはできません。 |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

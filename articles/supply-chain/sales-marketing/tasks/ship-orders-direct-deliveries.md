@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 31cb26479ccb74dfb58fd5590cd60d7b7c64c292
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432378"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966108"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>直納として注文を出荷
 
@@ -82,6 +81,3 @@ ms.locfileid: "4432378"
     - [直納] のページは、直納予定のすべての販売注文明細行を購買担当者に提供するワークベンチとして機能し、それぞれの発注書を作成することができます。 また、未処理の直納注文および確認済の注文を [確認および出荷] タブで表示することができます。  
     - 直納注文は作成後、自動的に [確認] タブに移動します。このページから注文を直接確認することもできます。 購買は確認されると、受領書を登録できる [出荷] タブに自動的に移動します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

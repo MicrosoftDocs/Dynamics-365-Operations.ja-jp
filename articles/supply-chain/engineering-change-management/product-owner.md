@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductOwner
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4308020d66995d857e547be47216cb82caacf035
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 90f5596f9b5fc45e78cc49a3309c45864e07e70b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4432412"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967336"
 ---
 # <a name="product-owners"></a>製品所有者
 
@@ -61,6 +60,3 @@ ms.locfileid: "4432412"
 ## <a name="product-owners-and-approvals"></a>製品所有者と承認
 
 製品所有者は、特定の技術上の変更によって製品にメリットが得られるかどうかを把握しているので、多くの場合、エンジニアリング変更管理で承認プロセスの一部としてそれらを含めることは理にかなっています。 この方法は、エンジニアリング変更管理に使用されるワークフローの参加者プロバイダーとして製品所有者を設定することによって実装できます。 次に、エンジニアリング変更要求とエンジニアリング変更命令に含まれる製品に基づいて、ワークフローに承認タスクが割り当てられます。 詳細については、[エンジニアリング製品に対する変更の管理](engineering-change-management.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

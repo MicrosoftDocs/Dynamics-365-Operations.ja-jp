@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4413902"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965405"
 ---
 # <a name="store-order-fulfillment"></a>店舗注文のフルフィルメント
 
@@ -218,6 +217,3 @@ ms.locfileid: "4413902"
 - 作成日
 - 出荷日
 - 入荷日
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

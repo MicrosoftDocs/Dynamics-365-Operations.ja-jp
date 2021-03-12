@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4432272"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966282"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを実行するデバイスを設定する
 
@@ -80,6 +79,3 @@ ms.locfileid: "4432272"
 既定では、生産現場の実行インターフェースは、12 時間誰も使用しない場合、自動的にサインアウトします。 Supply Chain Management ユーザーは、再度サインインする必要があります。 ただし、タイムアウト制限を最大 90 日まで延長できます。
 
 タイムアウト制限を延長するには、Supply Chain Management にサインインし、**システム管理 \> ユーザー \> セッション拡張機能** に移動します。 デバイスへのサインインに使用する Supply Chain Management のユーザー アカウントと、セッションをアクティブにしておく時間数を指定します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

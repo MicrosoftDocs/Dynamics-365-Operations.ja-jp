@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8e92759bd567a973a0d3bce7b8b99be1edbc0e1e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98ca6f7713b2f605a49a97d391fb8485bea78c4b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431949"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966383"
 ---
 # <a name="pay-based-on-registrations"></a>登録に基づく支払い
 
@@ -599,6 +598,3 @@ ms.locfileid: "4431949"
 - 休暇の自動挿入
 
 フレックス時間が有効になっている作業者の毎日の登録が計算されると、**フレックス- 時間の自動挿入** フィールドに指定された休暇コードが既定の休暇コードとして使用されます。 作業者がフレックス時間に対して有効でない場合、**休暇の自動挿入** フィールドで指定されている休暇コードを使用します。 会社が、フレックス時間で勤務できる作業者およびフレックス時間で勤務できない作業者から成る場合は、両方のパラメーターを設定する必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

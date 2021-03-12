@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventStdCostConv, CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f66f7061c608379689016e3c0b9c5ba4ad23dc9e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9333bda96ceae378ab74892534db13761038a06c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432136"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967361"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>標準原価の前提条件概要
 
@@ -80,6 +79,3 @@ ms.locfileid: "4432136"
 
 - [Dynamics 365 for Finance and Operations で直接材料の標準原価を設定する方法](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Dynamics 365 for Finance and Operations での標準直接人件費](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
