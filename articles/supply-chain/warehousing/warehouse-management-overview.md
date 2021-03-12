@@ -11,65 +11,64 @@ ms.technology: ''
 ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad0659a86e75dc4a5a204ebc05405f62abf2ca1e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 432004a7389434248ddde242b153dfb3cd955055
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432342"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970131"
 ---
-# <a name="warehouse-management-overview"></a><span data-ttu-id="cb886-103">倉庫管理の概要</span><span class="sxs-lookup"><span data-stu-id="cb886-103">Warehouse management overview</span></span>
+# <a name="warehouse-management-overview"></a><span data-ttu-id="ba864-103">倉庫管理の概要</span><span class="sxs-lookup"><span data-stu-id="ba864-103">Warehouse management overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cb886-104">倉庫管理モジュールは、製造、配送、および小売企業の倉庫プロセスを管理できます。</span><span class="sxs-lookup"><span data-stu-id="cb886-104">The Warehouse management module lets you manage warehouse processes in manufacturing, distribution, and retail companies.</span></span> <span data-ttu-id="cb886-105">このモジュールは、倉庫施設をいつでも最適なレベルにサポートする幅広い機能を持っています。</span><span class="sxs-lookup"><span data-stu-id="cb886-105">This module has a wide range of features to support the warehouse facility at an optimal level, at any time.</span></span> <span data-ttu-id="cb886-106">倉庫管理では、輸送、製造、品質テスト、購買、移動、販売、返品などの他のビジネス プロセスが完全に統合されます。</span><span class="sxs-lookup"><span data-stu-id="cb886-106">Warehouse management is fully integrated with other business processes such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.</span></span>
+<span data-ttu-id="ba864-104">倉庫管理モジュールは、製造、配送、および小売企業の倉庫プロセスを管理できます。</span><span class="sxs-lookup"><span data-stu-id="ba864-104">The Warehouse management module lets you manage warehouse processes in manufacturing, distribution, and retail companies.</span></span> <span data-ttu-id="ba864-105">このモジュールは、倉庫施設をいつでも最適なレベルにサポートする幅広い機能を持っています。</span><span class="sxs-lookup"><span data-stu-id="ba864-105">This module has a wide range of features to support the warehouse facility at an optimal level, at any time.</span></span> <span data-ttu-id="ba864-106">倉庫管理では、輸送、製造、品質テスト、購買、移動、販売、返品などの他のビジネス プロセスが完全に統合されます。</span><span class="sxs-lookup"><span data-stu-id="ba864-106">Warehouse management is fully integrated with other business processes such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="cb886-107">使用開始</span><span class="sxs-lookup"><span data-stu-id="cb886-107">Get started</span></span>
-<span data-ttu-id="cb886-108">倉庫管理の操作を開始するには、会社の業務プロセスをサポートするための通常倉庫のパラメーターの設定を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb886-108">To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of your company.</span></span>
+## <a name="get-started"></a><span data-ttu-id="ba864-107">使用開始</span><span class="sxs-lookup"><span data-stu-id="ba864-107">Get started</span></span>
+<span data-ttu-id="ba864-108">倉庫管理の操作を開始するには、会社の業務プロセスをサポートするための通常倉庫のパラメーターの設定を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba864-108">To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of your company.</span></span>
 
-- <span data-ttu-id="cb886-109">**倉庫管理** > **設定** ページ下の **倉庫管理パラメーター** に移動し、通常倉庫のパラメーターの設定をします。</span><span class="sxs-lookup"><span data-stu-id="cb886-109">Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.</span></span>
+- <span data-ttu-id="ba864-109">**倉庫管理** > **設定** ページ下の **倉庫管理パラメーター** に移動し、通常倉庫のパラメーターの設定をします。</span><span class="sxs-lookup"><span data-stu-id="ba864-109">Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.</span></span>
 
-<span data-ttu-id="cb886-110">業務要件に従って入庫/出庫の倉庫プロセスワークフローをコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb886-110">You must configure components for inbound and outbound warehouse process workflows according to business requirements.</span></span> <span data-ttu-id="cb886-111">コンフィギュレーションする必要がある最も重要なコンポーネントは、ウェーブ テンプレート、作業テンプレート、作業プールと場所のディレクティブです。</span><span class="sxs-lookup"><span data-stu-id="cb886-111">The most important components that you must configure are wave templates, work templates, work pools, and location directives.</span></span>
+<span data-ttu-id="ba864-110">業務要件に従って入庫/出庫の倉庫プロセスワークフローをコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba864-110">You must configure components for inbound and outbound warehouse process workflows according to business requirements.</span></span> <span data-ttu-id="ba864-111">コンフィギュレーションする必要がある最も重要なコンポーネントは、ウェーブ テンプレート、作業テンプレート、作業プールと場所のディレクティブです。</span><span class="sxs-lookup"><span data-stu-id="ba864-111">The most important components that you must configure are wave templates, work templates, work pools, and location directives.</span></span>
 
-- [<span data-ttu-id="cb886-112">倉庫のコンフィギュレーションの概要</span><span class="sxs-lookup"><span data-stu-id="cb886-112">Warehouse configuration overview</span></span>](warehouse-configuration.md)
-- [<span data-ttu-id="cb886-113">作業テンプレートと場所ディレクティブを使用した倉庫作業の制御</span><span class="sxs-lookup"><span data-stu-id="cb886-113">Control warehouse work by using work templates and location directives</span></span>](control-warehouse-location-directives.md)
-- [<span data-ttu-id="cb886-114">倉庫作業用のモバイル デバイスの設定</span><span class="sxs-lookup"><span data-stu-id="cb886-114">Set up mobile devices for warehouse work</span></span>](configure-mobile-devices-warehouse.md)
-- [<span data-ttu-id="cb886-115">発注書のプット アウェイ場所のディレクティブの設定</span><span class="sxs-lookup"><span data-stu-id="cb886-115">Set up a location directive for purchase order put-away</span></span>](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
-- [<span data-ttu-id="cb886-116">発注書の作業テンプレートの設定</span><span class="sxs-lookup"><span data-stu-id="cb886-116">Set up a work template for purchase orders</span></span>](./tasks/set-up-work-template-purchase-orders.md)
+- [<span data-ttu-id="ba864-112">倉庫のコンフィギュレーションの概要</span><span class="sxs-lookup"><span data-stu-id="ba864-112">Warehouse configuration overview</span></span>](warehouse-configuration.md)
+- [<span data-ttu-id="ba864-113">作業テンプレートと場所ディレクティブを使用した倉庫作業の制御</span><span class="sxs-lookup"><span data-stu-id="ba864-113">Control warehouse work by using work templates and location directives</span></span>](control-warehouse-location-directives.md)
+- [<span data-ttu-id="ba864-114">倉庫作業用のモバイル デバイスの設定</span><span class="sxs-lookup"><span data-stu-id="ba864-114">Set up mobile devices for warehouse work</span></span>](configure-mobile-devices-warehouse.md)
+- [<span data-ttu-id="ba864-115">発注書のプット アウェイ場所のディレクティブの設定</span><span class="sxs-lookup"><span data-stu-id="ba864-115">Set up a location directive for purchase order put-away</span></span>](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
+- [<span data-ttu-id="ba864-116">発注書の作業テンプレートの設定</span><span class="sxs-lookup"><span data-stu-id="ba864-116">Set up a work template for purchase orders</span></span>](./tasks/set-up-work-template-purchase-orders.md)
 
-## <a name="warehouse-management-processes"></a><span data-ttu-id="cb886-117">倉庫管理プロセス</span><span class="sxs-lookup"><span data-stu-id="cb886-117">Warehouse management processes</span></span>
-- <span data-ttu-id="cb886-118">販売注文、返品、移動オーダー、製造オーダー、およびかんばんの元伝票の統合されたサポート</span><span class="sxs-lookup"><span data-stu-id="cb886-118">Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban</span></span>  
-- <span data-ttu-id="cb886-119">変動、入庫、出庫材料ワークフローサポートはクエリに基づいています</span><span class="sxs-lookup"><span data-stu-id="cb886-119">Flexible, inbound and outbound material workflow support based on queries</span></span>
-- <span data-ttu-id="cb886-120">製造、および輸送管理提供との完全な統合</span><span class="sxs-lookup"><span data-stu-id="cb886-120">Full integration with the Manufacturing and Transportation offerings</span></span>
-- <span data-ttu-id="cb886-121">在庫限度と場所の容積測定をフルコントロール</span><span class="sxs-lookup"><span data-stu-id="cb886-121">Full control of location stocking limits and location volumetrics</span></span>
-- <span data-ttu-id="cb886-122">在庫状態によって管理された在庫プロパティ</span><span class="sxs-lookup"><span data-stu-id="cb886-122">Inventory properties controlled by inventory status</span></span>
-- <span data-ttu-id="cb886-123">完全バッチとシリアル品目サポート</span><span class="sxs-lookup"><span data-stu-id="cb886-123">Full batch and serial item support</span></span>
-- <span data-ttu-id="cb886-124">さまざまな品目の入荷能力</span><span class="sxs-lookup"><span data-stu-id="cb886-124">Various item receiving capabilities</span></span>
-- <span data-ttu-id="cb886-125">積荷の複数ピッキング</span><span class="sxs-lookup"><span data-stu-id="cb886-125">Multiple picking strategies</span></span>
-- <span data-ttu-id="cb886-126">次世代バーコード スキャナーのサポート</span><span class="sxs-lookup"><span data-stu-id="cb886-126">Out-of-the-box support for the next generation of barcode scanners</span></span>
-- <span data-ttu-id="cb886-127">倉庫プロセスのパレット/コンテナーのタイプ</span><span class="sxs-lookup"><span data-stu-id="cb886-127">Pallet/container types for warehouse processes</span></span>
-- <span data-ttu-id="cb886-128">高度な棚卸能力</span><span class="sxs-lookup"><span data-stu-id="cb886-128">Advanced counting capabilities</span></span>
-- <span data-ttu-id="cb886-129">Zebra ZPL サポートでラベルの印刷およびラベル ルート指定</span><span class="sxs-lookup"><span data-stu-id="cb886-129">Label printing and label routing with Zebra ZPL support</span></span>
-- <span data-ttu-id="cb886-130">ビジネス インテリジェンスの Power BI への統合</span><span class="sxs-lookup"><span data-stu-id="cb886-130">Business intelligence integration into Power BI</span></span>
-- <span data-ttu-id="cb886-131">在庫の手動、および自動移動</span><span class="sxs-lookup"><span data-stu-id="cb886-131">Manual and automatic movement of inventory</span></span>
-- <span data-ttu-id="cb886-132">完全に統合された品質テスト (QMS)</span><span class="sxs-lookup"><span data-stu-id="cb886-132">Fully-integrated quality control (QMS)</span></span>
-- <span data-ttu-id="cb886-133">作業者の材料取り扱いの完全なトレーサビリティ</span><span class="sxs-lookup"><span data-stu-id="cb886-133">Full traceability of workers' material handling</span></span>
-- <span data-ttu-id="cb886-134">出荷ウェーブ処理</span><span class="sxs-lookup"><span data-stu-id="cb886-134">Outbound wave processing</span></span>
-- <span data-ttu-id="cb886-135">手動の梱包と自動のコンテナ詰めをサポート</span><span class="sxs-lookup"><span data-stu-id="cb886-135">Manual packing and automatic containerization support</span></span>
-- <span data-ttu-id="cb886-136">クラスター ピッキング</span><span class="sxs-lookup"><span data-stu-id="cb886-136">Cluster picking</span></span>
-- <span data-ttu-id="cb886-137">シンプルクロスドッキング</span><span class="sxs-lookup"><span data-stu-id="cb886-137">Simple cross docking</span></span>
+## <a name="warehouse-management-processes"></a><span data-ttu-id="ba864-117">倉庫管理プロセス</span><span class="sxs-lookup"><span data-stu-id="ba864-117">Warehouse management processes</span></span>
+- <span data-ttu-id="ba864-118">販売注文、返品、移動オーダー、製造オーダー、およびかんばんの元伝票の統合されたサポート</span><span class="sxs-lookup"><span data-stu-id="ba864-118">Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban</span></span>  
+- <span data-ttu-id="ba864-119">変動、入庫、出庫材料ワークフローサポートはクエリに基づいています</span><span class="sxs-lookup"><span data-stu-id="ba864-119">Flexible, inbound and outbound material workflow support based on queries</span></span>
+- <span data-ttu-id="ba864-120">製造、および輸送管理提供との完全な統合</span><span class="sxs-lookup"><span data-stu-id="ba864-120">Full integration with the Manufacturing and Transportation offerings</span></span>
+- <span data-ttu-id="ba864-121">在庫限度と場所の容積測定をフルコントロール</span><span class="sxs-lookup"><span data-stu-id="ba864-121">Full control of location stocking limits and location volumetrics</span></span>
+- <span data-ttu-id="ba864-122">在庫状態によって管理された在庫プロパティ</span><span class="sxs-lookup"><span data-stu-id="ba864-122">Inventory properties controlled by inventory status</span></span>
+- <span data-ttu-id="ba864-123">完全バッチとシリアル品目サポート</span><span class="sxs-lookup"><span data-stu-id="ba864-123">Full batch and serial item support</span></span>
+- <span data-ttu-id="ba864-124">さまざまな品目の入荷能力</span><span class="sxs-lookup"><span data-stu-id="ba864-124">Various item receiving capabilities</span></span>
+- <span data-ttu-id="ba864-125">積荷の複数ピッキング</span><span class="sxs-lookup"><span data-stu-id="ba864-125">Multiple picking strategies</span></span>
+- <span data-ttu-id="ba864-126">次世代バーコード スキャナーのサポート</span><span class="sxs-lookup"><span data-stu-id="ba864-126">Out-of-the-box support for the next generation of barcode scanners</span></span>
+- <span data-ttu-id="ba864-127">倉庫プロセスのパレット/コンテナーのタイプ</span><span class="sxs-lookup"><span data-stu-id="ba864-127">Pallet/container types for warehouse processes</span></span>
+- <span data-ttu-id="ba864-128">高度な棚卸能力</span><span class="sxs-lookup"><span data-stu-id="ba864-128">Advanced counting capabilities</span></span>
+- <span data-ttu-id="ba864-129">Zebra ZPL サポートでラベルの印刷およびラベル ルート指定</span><span class="sxs-lookup"><span data-stu-id="ba864-129">Label printing and label routing with Zebra ZPL support</span></span>
+- <span data-ttu-id="ba864-130">ビジネス インテリジェンスの Power BI への統合</span><span class="sxs-lookup"><span data-stu-id="ba864-130">Business intelligence integration into Power BI</span></span>
+- <span data-ttu-id="ba864-131">在庫の手動、および自動移動</span><span class="sxs-lookup"><span data-stu-id="ba864-131">Manual and automatic movement of inventory</span></span>
+- <span data-ttu-id="ba864-132">完全に統合された品質テスト (QMS)</span><span class="sxs-lookup"><span data-stu-id="ba864-132">Fully-integrated quality control (QMS)</span></span>
+- <span data-ttu-id="ba864-133">作業者の材料取り扱いの完全なトレーサビリティ</span><span class="sxs-lookup"><span data-stu-id="ba864-133">Full traceability of workers' material handling</span></span>
+- <span data-ttu-id="ba864-134">出荷ウェーブ処理</span><span class="sxs-lookup"><span data-stu-id="ba864-134">Outbound wave processing</span></span>
+- <span data-ttu-id="ba864-135">手動の梱包と自動のコンテナ詰めをサポート</span><span class="sxs-lookup"><span data-stu-id="ba864-135">Manual packing and automatic containerization support</span></span>
+- <span data-ttu-id="ba864-136">クラスター ピッキング</span><span class="sxs-lookup"><span data-stu-id="ba864-136">Cluster picking</span></span>
+- <span data-ttu-id="ba864-137">シンプルクロスドッキング</span><span class="sxs-lookup"><span data-stu-id="ba864-137">Simple cross docking</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="cb886-138">追加リソース</span><span class="sxs-lookup"><span data-stu-id="cb886-138">Additional resources</span></span>
-### <a name="whats-new-and-in-development"></a><span data-ttu-id="cb886-139">新機能および開発中の機能</span><span class="sxs-lookup"><span data-stu-id="cb886-139">What's new and in development</span></span>
-<span data-ttu-id="cb886-140">リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cb886-140">Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="ba864-138">追加リソース</span><span class="sxs-lookup"><span data-stu-id="ba864-138">Additional resources</span></span>
+### <a name="whats-new-and-in-development"></a><span data-ttu-id="ba864-139">新機能および開発中の機能</span><span class="sxs-lookup"><span data-stu-id="ba864-139">What's new and in development</span></span>
+<span data-ttu-id="ba864-140">リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ba864-140">Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.</span></span>
 
-### <a name="blogs"></a><span data-ttu-id="cb886-141">ブログ</span><span class="sxs-lookup"><span data-stu-id="cb886-141">Blogs</span></span>
-<span data-ttu-id="cb886-142">倉庫管理およびその他のソリューションに関する意見、ニュース、その他の情報については、「[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cb886-142">You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).</span></span>
+### <a name="blogs"></a><span data-ttu-id="ba864-141">ブログ</span><span class="sxs-lookup"><span data-stu-id="ba864-141">Blogs</span></span>
+<span data-ttu-id="ba864-142">倉庫管理およびその他のソリューションに関する意見、ニュース、その他の情報については、「[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ba864-142">You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).</span></span>
 
 
  

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19111
 ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
 ms.search.region: Global
@@ -19,33 +18,33 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daa36dad4009cc25b89363dcff6b4496205522e3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 914c7e8c757664ec791b46924600b74c9c979e8f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431849"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967436"
 ---
-# <a name="inventory-object-values"></a><span data-ttu-id="450e3-103">在庫オブジェクトの値</span><span class="sxs-lookup"><span data-stu-id="450e3-103">Inventory object values</span></span>
+# <a name="inventory-object-values"></a><span data-ttu-id="bf005-103">在庫オブジェクトの値</span><span class="sxs-lookup"><span data-stu-id="bf005-103">Inventory object values</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="450e3-104">この記事は、在庫オブジェクトの値の計算方法についての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="450e3-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
+<span data-ttu-id="bf005-104">この記事は、在庫オブジェクトの値の計算方法についての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="bf005-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
 
-<span data-ttu-id="450e3-105">**現物数量** という名前の新しい機能は、特定の在庫オブジェクトの値を表示できます。</span><span class="sxs-lookup"><span data-stu-id="450e3-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
+<span data-ttu-id="bf005-105">**現物数量** という名前の新しい機能は、特定の在庫オブジェクトの値を表示できます。</span><span class="sxs-lookup"><span data-stu-id="bf005-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
 
-<span data-ttu-id="450e3-106">原価オブジェクトは、在庫会計が実行されるエンティティ レベルを表します。</span><span class="sxs-lookup"><span data-stu-id="450e3-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="450e3-107">原価オブジェクトの詳細については、「[原価オブジェクト](cost-object.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="450e3-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
+<span data-ttu-id="bf005-106">原価オブジェクトは、在庫会計が実行されるエンティティ レベルを表します。</span><span class="sxs-lookup"><span data-stu-id="bf005-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="bf005-107">原価オブジェクトの詳細については、「[原価オブジェクト](cost-object.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bf005-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
 
-<span data-ttu-id="450e3-108">特定の在庫オブジェクトの値を表示するには、**原価のオブジェクト** ページで **現物数量** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="450e3-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="450e3-109">在庫オブジェクトの値がどのように計算されるかは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="450e3-109">Here is how the value of an inventory object is calculated:</span></span> 
+<span data-ttu-id="bf005-108">特定の在庫オブジェクトの値を表示するには、**原価のオブジェクト** ページで **現物数量** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bf005-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="bf005-109">在庫オブジェクトの値がどのように計算されるかは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="bf005-109">Here is how the value of an inventory object is calculated:</span></span> 
 
-<span data-ttu-id="450e3-110">在庫オブジェクト . 値 = コスト オブジェクト . 平均単位コスト × 在庫オブジェクト . 数量</span><span class="sxs-lookup"><span data-stu-id="450e3-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
+<span data-ttu-id="bf005-110">在庫オブジェクト . 値 = コスト オブジェクト . 平均単位コスト × 在庫オブジェクト . 数量</span><span class="sxs-lookup"><span data-stu-id="bf005-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
 
-<span data-ttu-id="450e3-111">次の例では、在庫オブジェクトとコスト オブジェクトの値の計算方法を示します。</span><span class="sxs-lookup"><span data-stu-id="450e3-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="450e3-112">2 つの製品受領書イベントは、品目 A に登録されます。</span><span class="sxs-lookup"><span data-stu-id="450e3-112">Two product receipt events are registered on item A:</span></span>
+<span data-ttu-id="bf005-111">次の例では、在庫オブジェクトとコスト オブジェクトの値の計算方法を示します。</span><span class="sxs-lookup"><span data-stu-id="bf005-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="bf005-112">2 つの製品受領書イベントは、品目 A に登録されます。</span><span class="sxs-lookup"><span data-stu-id="bf005-112">Two product receipt events are registered on item A:</span></span>
 
--   <span data-ttu-id="450e3-113">製品受領書 1 : 数量 = 100 個、金額 = $1,000.00、サイト = 1、倉庫 =11、バッチ番号。</span><span class="sxs-lookup"><span data-stu-id="450e3-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="450e3-114">= B1</span><span class="sxs-lookup"><span data-stu-id="450e3-114">= B1</span></span>
--   <span data-ttu-id="450e3-115">製品受領書 2 : 数量 = 50 個、金額 = $800.00、サイト = 1、倉庫 =11、バッチ番号。</span><span class="sxs-lookup"><span data-stu-id="450e3-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="450e3-116">= B2</span><span class="sxs-lookup"><span data-stu-id="450e3-116">= B2</span></span>
+-   <span data-ttu-id="bf005-113">製品受領書 1 : 数量 = 100 個、金額 = $1,000.00、サイト = 1、倉庫 =11、バッチ番号。</span><span class="sxs-lookup"><span data-stu-id="bf005-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="bf005-114">= B1</span><span class="sxs-lookup"><span data-stu-id="bf005-114">= B1</span></span>
+-   <span data-ttu-id="bf005-115">製品受領書 2 : 数量 = 50 個、金額 = $800.00、サイト = 1、倉庫 =11、バッチ番号。</span><span class="sxs-lookup"><span data-stu-id="bf005-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="bf005-116">= B2</span><span class="sxs-lookup"><span data-stu-id="bf005-116">= B2</span></span>
 
-<span data-ttu-id="450e3-117">次の表に、原価オブジェクトの計算結果を示します。</span><span class="sxs-lookup"><span data-stu-id="450e3-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="450e3-118">**原価オブジェクト** ページの結果を表示できます。</span><span class="sxs-lookup"><span data-stu-id="450e3-118">You can view the result on the **Cost object** page.</span></span>
+<span data-ttu-id="bf005-117">次の表に、原価オブジェクトの計算結果を示します。</span><span class="sxs-lookup"><span data-stu-id="bf005-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="bf005-118">**原価オブジェクト** ページの結果を表示できます。</span><span class="sxs-lookup"><span data-stu-id="bf005-118">You can view the result on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -59,29 +58,29 @@ ms.locfileid: "4431849"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="450e3-119">オブジェクト タイプ</span><span class="sxs-lookup"><span data-stu-id="450e3-119">Object type</span></span></th>
-<th><span data-ttu-id="450e3-120">品目番号</span><span class="sxs-lookup"><span data-stu-id="450e3-120">Item number</span></span></th>
-<th><span data-ttu-id="450e3-121">サービス拠点</span><span class="sxs-lookup"><span data-stu-id="450e3-121">Site</span></span></th>
-<th><span data-ttu-id="450e3-122">件数</span><span class="sxs-lookup"><span data-stu-id="450e3-122">Quantity</span></span></th>
-<th><span data-ttu-id="450e3-123">在庫単位</span><span class="sxs-lookup"><span data-stu-id="450e3-123">Inventory unit</span></span></th>
-<th><span data-ttu-id="450e3-124">値</span><span class="sxs-lookup"><span data-stu-id="450e3-124">Value</span></span></th>
-<th><span data-ttu-id="450e3-125">平均単位原価</span><span class="sxs-lookup"><span data-stu-id="450e3-125">Average unit cost</span></span></th>
+<th><span data-ttu-id="bf005-119">オブジェクト タイプ</span><span class="sxs-lookup"><span data-stu-id="bf005-119">Object type</span></span></th>
+<th><span data-ttu-id="bf005-120">品目番号</span><span class="sxs-lookup"><span data-stu-id="bf005-120">Item number</span></span></th>
+<th><span data-ttu-id="bf005-121">サービス拠点</span><span class="sxs-lookup"><span data-stu-id="bf005-121">Site</span></span></th>
+<th><span data-ttu-id="bf005-122">件数</span><span class="sxs-lookup"><span data-stu-id="bf005-122">Quantity</span></span></th>
+<th><span data-ttu-id="bf005-123">在庫単位</span><span class="sxs-lookup"><span data-stu-id="bf005-123">Inventory unit</span></span></th>
+<th><span data-ttu-id="bf005-124">値</span><span class="sxs-lookup"><span data-stu-id="bf005-124">Value</span></span></th>
+<th><span data-ttu-id="bf005-125">平均単位原価</span><span class="sxs-lookup"><span data-stu-id="bf005-125">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="450e3-126">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="450e3-126">Cost object</span></span></td>
-<td><span data-ttu-id="450e3-127">A</span><span class="sxs-lookup"><span data-stu-id="450e3-127">A</span></span></td>
-<td><span data-ttu-id="450e3-128">1</span><span class="sxs-lookup"><span data-stu-id="450e3-128">1</span></span></td>
-<td><span data-ttu-id="450e3-129">150</span><span class="sxs-lookup"><span data-stu-id="450e3-129">150</span></span></td>
-<td><span data-ttu-id="450e3-130">個数</span><span class="sxs-lookup"><span data-stu-id="450e3-130">Pcs.</span></span></td>
-<td><p><span data-ttu-id="450e3-131">$1800.00</span><span class="sxs-lookup"><span data-stu-id="450e3-131">$1800.00</span></span></p></td>
-<td><p><span data-ttu-id="450e3-132">$12.00</span><span class="sxs-lookup"><span data-stu-id="450e3-132">$12.00</span></span></p></td>
+<td><span data-ttu-id="bf005-126">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="bf005-126">Cost object</span></span></td>
+<td><span data-ttu-id="bf005-127">A</span><span class="sxs-lookup"><span data-stu-id="bf005-127">A</span></span></td>
+<td><span data-ttu-id="bf005-128">1</span><span class="sxs-lookup"><span data-stu-id="bf005-128">1</span></span></td>
+<td><span data-ttu-id="bf005-129">150</span><span class="sxs-lookup"><span data-stu-id="bf005-129">150</span></span></td>
+<td><span data-ttu-id="bf005-130">個数</span><span class="sxs-lookup"><span data-stu-id="bf005-130">Pcs.</span></span></td>
+<td><p><span data-ttu-id="bf005-131">$1800.00</span><span class="sxs-lookup"><span data-stu-id="bf005-131">$1800.00</span></span></p></td>
+<td><p><span data-ttu-id="bf005-132">$12.00</span><span class="sxs-lookup"><span data-stu-id="bf005-132">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="450e3-133">次の表に、在庫オブジェクトの計算結果を示します。</span><span class="sxs-lookup"><span data-stu-id="450e3-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="450e3-134">**原価オブジェクト** ページの **現物数量** をクリックすることにより、結果を表示できます。</span><span class="sxs-lookup"><span data-stu-id="450e3-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
+<span data-ttu-id="bf005-133">次の表に、在庫オブジェクトの計算結果を示します。</span><span class="sxs-lookup"><span data-stu-id="bf005-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="bf005-134">**原価オブジェクト** ページの **現物数量** をクリックすることにより、結果を表示できます。</span><span class="sxs-lookup"><span data-stu-id="bf005-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -97,53 +96,53 @@ ms.locfileid: "4431849"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="450e3-135">オブジェクト タイプ</span><span class="sxs-lookup"><span data-stu-id="450e3-135">Object type</span></span></th>
-<th><span data-ttu-id="450e3-136">品目番号</span><span class="sxs-lookup"><span data-stu-id="450e3-136">Item number</span></span></th>
-<th><span data-ttu-id="450e3-137">サービス拠点</span><span class="sxs-lookup"><span data-stu-id="450e3-137">Site</span></span></th>
-<th><span data-ttu-id="450e3-138">倉庫</span><span class="sxs-lookup"><span data-stu-id="450e3-138">Warehouse</span></span></th>
-<th><span data-ttu-id="450e3-139">バッチ番号</span><span class="sxs-lookup"><span data-stu-id="450e3-139">Batch No.</span></span></th>
-<th><span data-ttu-id="450e3-140">件数</span><span class="sxs-lookup"><span data-stu-id="450e3-140">Quantity</span></span></th>
-<th><span data-ttu-id="450e3-141">在庫単位</span><span class="sxs-lookup"><span data-stu-id="450e3-141">Inventory unit</span></span></th>
-<th><span data-ttu-id="450e3-142">値</span><span class="sxs-lookup"><span data-stu-id="450e3-142">Value</span></span></th>
-<th><span data-ttu-id="450e3-143">平均単位原価</span><span class="sxs-lookup"><span data-stu-id="450e3-143">Average unit cost</span></span></th>
+<th><span data-ttu-id="bf005-135">オブジェクト タイプ</span><span class="sxs-lookup"><span data-stu-id="bf005-135">Object type</span></span></th>
+<th><span data-ttu-id="bf005-136">品目番号</span><span class="sxs-lookup"><span data-stu-id="bf005-136">Item number</span></span></th>
+<th><span data-ttu-id="bf005-137">サービス拠点</span><span class="sxs-lookup"><span data-stu-id="bf005-137">Site</span></span></th>
+<th><span data-ttu-id="bf005-138">倉庫</span><span class="sxs-lookup"><span data-stu-id="bf005-138">Warehouse</span></span></th>
+<th><span data-ttu-id="bf005-139">バッチ番号</span><span class="sxs-lookup"><span data-stu-id="bf005-139">Batch No.</span></span></th>
+<th><span data-ttu-id="bf005-140">件数</span><span class="sxs-lookup"><span data-stu-id="bf005-140">Quantity</span></span></th>
+<th><span data-ttu-id="bf005-141">在庫単位</span><span class="sxs-lookup"><span data-stu-id="bf005-141">Inventory unit</span></span></th>
+<th><span data-ttu-id="bf005-142">値</span><span class="sxs-lookup"><span data-stu-id="bf005-142">Value</span></span></th>
+<th><span data-ttu-id="bf005-143">平均単位原価</span><span class="sxs-lookup"><span data-stu-id="bf005-143">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="450e3-144">在庫オブジェクト</span><span class="sxs-lookup"><span data-stu-id="450e3-144">Inventory object</span></span></td>
-<td><span data-ttu-id="450e3-145">A</span><span class="sxs-lookup"><span data-stu-id="450e3-145">A</span></span></td>
-<td><span data-ttu-id="450e3-146">1</span><span class="sxs-lookup"><span data-stu-id="450e3-146">1</span></span></td>
-<td><span data-ttu-id="450e3-147">11</span><span class="sxs-lookup"><span data-stu-id="450e3-147">11</span></span></td>
-<td><span data-ttu-id="450e3-148">B1</span><span class="sxs-lookup"><span data-stu-id="450e3-148">B1</span></span></td>
-<td><span data-ttu-id="450e3-149">100</span><span class="sxs-lookup"><span data-stu-id="450e3-149">100</span></span></td>
-<td><span data-ttu-id="450e3-150">個数</span><span class="sxs-lookup"><span data-stu-id="450e3-150">Pcs.</span></span></td>
-<td><p><span data-ttu-id="450e3-151">$1200.00</span><span class="sxs-lookup"><span data-stu-id="450e3-151">$1200.00</span></span></p></td>
-<td><p><span data-ttu-id="450e3-152">$12.00</span><span class="sxs-lookup"><span data-stu-id="450e3-152">$12.00</span></span></p></td>
+<td><span data-ttu-id="bf005-144">在庫オブジェクト</span><span class="sxs-lookup"><span data-stu-id="bf005-144">Inventory object</span></span></td>
+<td><span data-ttu-id="bf005-145">A</span><span class="sxs-lookup"><span data-stu-id="bf005-145">A</span></span></td>
+<td><span data-ttu-id="bf005-146">1</span><span class="sxs-lookup"><span data-stu-id="bf005-146">1</span></span></td>
+<td><span data-ttu-id="bf005-147">11</span><span class="sxs-lookup"><span data-stu-id="bf005-147">11</span></span></td>
+<td><span data-ttu-id="bf005-148">B1</span><span class="sxs-lookup"><span data-stu-id="bf005-148">B1</span></span></td>
+<td><span data-ttu-id="bf005-149">100</span><span class="sxs-lookup"><span data-stu-id="bf005-149">100</span></span></td>
+<td><span data-ttu-id="bf005-150">個数</span><span class="sxs-lookup"><span data-stu-id="bf005-150">Pcs.</span></span></td>
+<td><p><span data-ttu-id="bf005-151">$1200.00</span><span class="sxs-lookup"><span data-stu-id="bf005-151">$1200.00</span></span></p></td>
+<td><p><span data-ttu-id="bf005-152">$12.00</span><span class="sxs-lookup"><span data-stu-id="bf005-152">$12.00</span></span></p></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="450e3-153">在庫オブジェクト</span><span class="sxs-lookup"><span data-stu-id="450e3-153">Inventory object</span></span></td>
-<td><span data-ttu-id="450e3-154">A</span><span class="sxs-lookup"><span data-stu-id="450e3-154">A</span></span></td>
-<td><span data-ttu-id="450e3-155">1</span><span class="sxs-lookup"><span data-stu-id="450e3-155">1</span></span></td>
-<td><span data-ttu-id="450e3-156">11</span><span class="sxs-lookup"><span data-stu-id="450e3-156">11</span></span></td>
-<td><span data-ttu-id="450e3-157">B2</span><span class="sxs-lookup"><span data-stu-id="450e3-157">B2</span></span></td>
-<td><span data-ttu-id="450e3-158">50</span><span class="sxs-lookup"><span data-stu-id="450e3-158">50</span></span></td>
-<td><span data-ttu-id="450e3-159">個数</span><span class="sxs-lookup"><span data-stu-id="450e3-159">Pcs.</span></span></td>
-<td><p><span data-ttu-id="450e3-160">$600.00</span><span class="sxs-lookup"><span data-stu-id="450e3-160">$600.00</span></span></p></td>
-<td><p><span data-ttu-id="450e3-161">$12.00</span><span class="sxs-lookup"><span data-stu-id="450e3-161">$12.00</span></span></p></td>
+<td><span data-ttu-id="bf005-153">在庫オブジェクト</span><span class="sxs-lookup"><span data-stu-id="bf005-153">Inventory object</span></span></td>
+<td><span data-ttu-id="bf005-154">A</span><span class="sxs-lookup"><span data-stu-id="bf005-154">A</span></span></td>
+<td><span data-ttu-id="bf005-155">1</span><span class="sxs-lookup"><span data-stu-id="bf005-155">1</span></span></td>
+<td><span data-ttu-id="bf005-156">11</span><span class="sxs-lookup"><span data-stu-id="bf005-156">11</span></span></td>
+<td><span data-ttu-id="bf005-157">B2</span><span class="sxs-lookup"><span data-stu-id="bf005-157">B2</span></span></td>
+<td><span data-ttu-id="bf005-158">50</span><span class="sxs-lookup"><span data-stu-id="bf005-158">50</span></span></td>
+<td><span data-ttu-id="bf005-159">個数</span><span class="sxs-lookup"><span data-stu-id="bf005-159">Pcs.</span></span></td>
+<td><p><span data-ttu-id="bf005-160">$600.00</span><span class="sxs-lookup"><span data-stu-id="bf005-160">$600.00</span></span></p></td>
+<td><p><span data-ttu-id="bf005-161">$12.00</span><span class="sxs-lookup"><span data-stu-id="bf005-161">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="450e3-162">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="450e3-162">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="bf005-162">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="bf005-162">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="450e3-163">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="450e3-163">Cost objects</span></span>](cost-object.md)
+[<span data-ttu-id="bf005-163">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="bf005-163">Cost objects</span></span>](cost-object.md)
 
-[<span data-ttu-id="450e3-164">原価エントリ</span><span class="sxs-lookup"><span data-stu-id="450e3-164">Cost entries</span></span>](cost-entries.md)
+[<span data-ttu-id="bf005-164">原価エントリ</span><span class="sxs-lookup"><span data-stu-id="bf005-164">Cost entries</span></span>](cost-entries.md)
 
-[<span data-ttu-id="450e3-165">新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="450e3-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
+[<span data-ttu-id="bf005-165">新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="bf005-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
 
 
 
