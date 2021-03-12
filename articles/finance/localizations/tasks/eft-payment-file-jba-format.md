@@ -11,48 +11,47 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24e32951c037f32ee26bbe002d63fd96e19fbd1a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6322791b30b955878180dcd9e81b4d7007caebff
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408187"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990003"
 ---
-# <a name="generate-eft-payment-file-with-jba-format"></a><span data-ttu-id="3f928-103">JBA 形式で EFT 支払ファイルを生成</span><span class="sxs-lookup"><span data-stu-id="3f928-103">Generate EFT payment file with JBA format</span></span>
+# <a name="generate-eft-payment-file-with-jba-format"></a><span data-ttu-id="87697-103">JBA 形式で EFT 支払ファイルを生成</span><span class="sxs-lookup"><span data-stu-id="87697-103">Generate EFT payment file with JBA format</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3f928-104">日本では一般的に、銀行間の電子資金決済 (EFT) には全国銀行協会 (JBA) のファイル形式が使用されています。</span><span class="sxs-lookup"><span data-stu-id="3f928-104">In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks.</span></span> 
+<span data-ttu-id="87697-104">日本では一般的に、銀行間の電子資金決済 (EFT) には全国銀行協会 (JBA) のファイル形式が使用されています。</span><span class="sxs-lookup"><span data-stu-id="87697-104">In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks.</span></span> 
 
 
 
-<span data-ttu-id="3f928-105">このタスクでは、JBA 形式を使用した EFT ファイルの生成方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="3f928-105">Use this task to learn how to generate an EFT file with the JBA format.</span></span>
+<span data-ttu-id="87697-105">このタスクでは、JBA 形式を使用した EFT ファイルの生成方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="87697-105">Use this task to learn how to generate an EFT file with the JBA format.</span></span>
 
 
 
-<span data-ttu-id="3f928-106">この手順では、JPMF デモ会社のデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="3f928-106">This task uses the JPMF demo company data.</span></span>
+<span data-ttu-id="87697-106">この手順では、JPMF デモ会社のデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="87697-106">This task uses the JPMF demo company data.</span></span>
 
-1. <span data-ttu-id="3f928-107">[買掛金勘定] > [支払] > [支払仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="3f928-107">Go to Accounts payable > Payments > Payment journal.</span></span>
-2. <span data-ttu-id="3f928-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f928-108">Click New.</span></span>
-3. <span data-ttu-id="3f928-109">[名前] フィールドに、「VendaPay」と入力します。</span><span class="sxs-lookup"><span data-stu-id="3f928-109">In the Name field, type 'VendPay'.</span></span>
-4. <span data-ttu-id="3f928-110">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f928-110">Click Lines.</span></span>
-5. <span data-ttu-id="3f928-111">[口座] フィールドで、「JPMF-000001」という値を指定します。</span><span class="sxs-lookup"><span data-stu-id="3f928-111">In the Account field, specify the values 'JPMF-000001'.</span></span>
-6. <span data-ttu-id="3f928-112">[借方] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f928-112">In the Debit field, enter a number.</span></span>
-7. <span data-ttu-id="3f928-113">後で参照するために、[相手勘定] フィールドの値をメモします。</span><span class="sxs-lookup"><span data-stu-id="3f928-113">Note the value in the Offset account field to reference later</span></span>
-8. <span data-ttu-id="3f928-114">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f928-114">Click Save.</span></span>
-9. <span data-ttu-id="3f928-115">[支払の生成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f928-115">Click Generate payments.</span></span>
-10. <span data-ttu-id="3f928-116">[支払方法] フィールドで、JBA のファイル形式に対して有効化されている支払方法を選択します。</span><span class="sxs-lookup"><span data-stu-id="3f928-116">In the Method of payment field, select a method of payment that is enabled for the JBA file format..</span></span>
-11. <span data-ttu-id="3f928-117">[名前] フィールドで、生成されたファイルのファイル名を指定します。</span><span class="sxs-lookup"><span data-stu-id="3f928-117">In the File name field, Specify a file name for the generated file..</span></span>
-12. <span data-ttu-id="3f928-118">[銀行口座] フィールドで、前にメモした値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3f928-118">Use the value noted previously in the Bank account field</span></span>
-    * <span data-ttu-id="3f928-119">仕入先の仕訳帳明細行で [相殺銀行口座] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3f928-119">Select a Offset bank account in the vendor journal lines.</span></span>  
-13. <span data-ttu-id="3f928-120">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f928-120">Click OK.</span></span>
-    * <span data-ttu-id="3f928-121">支払管理レポートを印刷する場合は、スライダーを切り替えます。</span><span class="sxs-lookup"><span data-stu-id="3f928-121">Toggle the slider if you want to print the payment control report.</span></span>  
-14. <span data-ttu-id="3f928-122">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f928-122">Click OK.</span></span>
-    * <span data-ttu-id="3f928-123">.zip ファイルが生成され、ファイルをダウンロードするように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="3f928-123">A .zip file will be generated and you will be prompted to download the file.</span></span>  
-    * <span data-ttu-id="3f928-124">[支払ステータス] が、[送信済] に切り替わります。</span><span class="sxs-lookup"><span data-stu-id="3f928-124">The Payment status will now switch to be 'Sent'.</span></span>  
+1. <span data-ttu-id="87697-107">[買掛金勘定] > [支払] > [支払仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="87697-107">Go to Accounts payable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="87697-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87697-108">Click New.</span></span>
+3. <span data-ttu-id="87697-109">[名前] フィールドに、「VendaPay」と入力します。</span><span class="sxs-lookup"><span data-stu-id="87697-109">In the Name field, type 'VendPay'.</span></span>
+4. <span data-ttu-id="87697-110">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87697-110">Click Lines.</span></span>
+5. <span data-ttu-id="87697-111">[口座] フィールドで、「JPMF-000001」という値を指定します。</span><span class="sxs-lookup"><span data-stu-id="87697-111">In the Account field, specify the values 'JPMF-000001'.</span></span>
+6. <span data-ttu-id="87697-112">[借方] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="87697-112">In the Debit field, enter a number.</span></span>
+7. <span data-ttu-id="87697-113">後で参照するために、[相手勘定] フィールドの値をメモします。</span><span class="sxs-lookup"><span data-stu-id="87697-113">Note the value in the Offset account field to reference later</span></span>
+8. <span data-ttu-id="87697-114">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87697-114">Click Save.</span></span>
+9. <span data-ttu-id="87697-115">[支払の生成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87697-115">Click Generate payments.</span></span>
+10. <span data-ttu-id="87697-116">[支払方法] フィールドで、JBA のファイル形式に対して有効化されている支払方法を選択します。</span><span class="sxs-lookup"><span data-stu-id="87697-116">In the Method of payment field, select a method of payment that is enabled for the JBA file format..</span></span>
+11. <span data-ttu-id="87697-117">[名前] フィールドで、生成されたファイルのファイル名を指定します。</span><span class="sxs-lookup"><span data-stu-id="87697-117">In the File name field, Specify a file name for the generated file..</span></span>
+12. <span data-ttu-id="87697-118">[銀行口座] フィールドで、前にメモした値を使用します。</span><span class="sxs-lookup"><span data-stu-id="87697-118">Use the value noted previously in the Bank account field</span></span>
+    * <span data-ttu-id="87697-119">仕入先の仕訳帳明細行で [相殺銀行口座] を選択します。</span><span class="sxs-lookup"><span data-stu-id="87697-119">Select a Offset bank account in the vendor journal lines.</span></span>  
+13. <span data-ttu-id="87697-120">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87697-120">Click OK.</span></span>
+    * <span data-ttu-id="87697-121">支払管理レポートを印刷する場合は、スライダーを切り替えます。</span><span class="sxs-lookup"><span data-stu-id="87697-121">Toggle the slider if you want to print the payment control report.</span></span>  
+14. <span data-ttu-id="87697-122">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="87697-122">Click OK.</span></span>
+    * <span data-ttu-id="87697-123">.zip ファイルが生成され、ファイルをダウンロードするように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="87697-123">A .zip file will be generated and you will be prompted to download the file.</span></span>  
+    * <span data-ttu-id="87697-124">[支払ステータス] が、[送信済] に切り替わります。</span><span class="sxs-lookup"><span data-stu-id="87697-124">The Payment status will now switch to be 'Sent'.</span></span>  
 
