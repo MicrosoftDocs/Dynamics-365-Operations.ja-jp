@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 54e3176ccf4bc3218afdf085f910e6d2a9c1b9ff
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694840"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796757"
 ---
 # <a name="create-a-legal-entity"></a>法人の作成
 
@@ -45,6 +45,3 @@ ms.locfileid: "4694840"
 15. **税登録** セクションを展開します。 **税登録** セクションで、税務当局に報告するために使用される登録番号を入力します。
 16. **税金 1099** セクションを展開します。 **税金 1099** セクションで、法人の 1099 情報を入力します。  
 17. **保存** をクリックします。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

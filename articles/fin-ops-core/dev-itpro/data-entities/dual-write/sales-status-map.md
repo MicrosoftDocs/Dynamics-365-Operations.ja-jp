@@ -1,6 +1,6 @@
 ---
-title: 販売注文状態フィールドのマッピングの設定
-description: このトピックでは、販売注文の状態フィールドを二重書き込み用に設定する方法について説明します。
+title: 販売注文の状態列のマッピングを設定する
+description: このトピックでは、販売注文の状態列を二重書き込み用に設定する方法について説明します。
 author: dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -18,22 +18,22 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4454577"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744302"
 ---
-# <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>販売注文状態フィールドのマッピングの設定
+# <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>販売注文の状態列のマッピングを設定する
 
 [!include [banner](../../includes/banner.md)]
 
-販売注文の状態を示すフィールドは、Microsoft Dynamics 365 Supply Chain Management と Dynamics 365 Sales で異なる列挙値を持っています。 これらのフィールドを二重書き込みでマップするには、追加の設定が必要です。
+販売注文の状態を示す列は、Microsoft Dynamics 365 Supply Chain Management と Dynamics 365 Sales で異なる列挙値を持っています。 これらの列を二重書き込みでマップするには、追加の設定が必要です。
 
-## <a name="fields-in-supply-chain-management"></a>Supply Chain Management のフィールド
+## <a name="columns-in-supply-chain-management"></a>Supply Chain Management の列
 
-Supply Chain Management では、2 つのフィールドが販売注文の状態を反映します。 マップする必要があるフィールドは **状態** と **ドキュメントの状態** です。
+Supply Chain Management では、2 つの列が販売注文の状態を反映します。 マップする必要がある列は **状態** と **ドキュメントの状態** です。
 
 **状態** 列挙型では、注文の全体的な状態を指定します。 この状態は、注文ヘッダーに表示されます。
 
@@ -53,9 +53,9 @@ Supply Chain Management では、2 つのフィールドが販売注文の状態
 - 梱包明細
 - 請求書
 
-## <a name="fields-in-sales"></a>Sales のフィールド
+## <a name="columns-in-sales"></a>Sales の列
 
-Sales では、2 つのフィールドが注文の状態を示します。 マップする必要があるフィールドは **状態** と **処理状態** です。
+Sales では、2 つの列が注文の状態を示します。 マップする必要がある列は **状態** と **処理状態** です。
 
 **状態** 列挙型では、注文の全体的な状態を指定します。 次の値があります:
 
@@ -95,7 +95,7 @@ Sales では、2 つのフィールドが注文の状態を示します。 マ�
 
 ## <a name="setup"></a>段取り
 
-販売注文状態フィールドのマッピングを設定するには、**IsSOPIntegrationEnabled** と **isIntegrationUser** 属性を有効にする必要があります。
+販売注文状態の列のマッピングを設定するには、**IsSOPIntegrationEnabled** 属性と **isIntegrationUser** 属性を有効にする必要があります。
 
 **IsSOPIntegrationEnabled** 属性を有効にするには、次の手順を実行します。
 
@@ -110,14 +110,14 @@ Sales では、2 つのフィールドが注文の状態を示します。 マ�
     Xrm.WebApi.updateRecord("organization",
     "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
     true}).then(
-        function success(result) {
-            console.log("Account updated");
-            // perform operations on record update
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on row update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
     );
     ```
 
@@ -129,13 +129,13 @@ Sales では、2 つのフィールドが注文の状態を示します。 マ�
 
 **isIntegrationUser** 属性を有効にするには、次の手順を実行します。
 
-1. Sales では **設定 \> カスタマイズ \> システムのカスタマイズ** に移動し、**ユーザー エンティティ** を選択して、**フォーム \> ユーザー** を開きます。
+1. Sales では **設定 \> カスタマイズ \> システムのカスタマイズ** に移動し、**ユーザー テーブル** を選択して、**フォーム \> ユーザー** を開きます。
 
     ![ユーザー フォームを開く](media/sales-map-user.png)
 
 2. フィールド エクスプローラーで **統合ユーザーモード** を検索し、それをダブルクリックして、フォームに追加します。 変更を保存します。
 
-    ![統合ユーザーモード フィールドのフォームへの追加](media/sales-map-field-explorer.png)
+    ![統合ユーザーモード列のフォームへの追加](media/sales-map-field-explorer.png)
 
 3. Sales では、**設定 \> セキュリティ \> ユーザー** に移動し、表示を **有効なユーザー** から **アプリケーション ユーザー** に変更します。
 
@@ -145,11 +145,8 @@ Sales では、2 つのフィールドが注文の状態を示します。 マ�
 
     ![アプリケーション ユーザーの一覧](media/sales-map-user-mode.png)
 
-5. **統合ユーザー モード** フィールド値を **はい** に変更します。
+5. **統合ユーザー モード** 列の値を **はい** に変更します。
 
-    ![統合ユーザー モード フィールド値の変更](media/sales-map-user-mode-yes.png)
+    ![統合ユーザー モード列の値の変更](media/sales-map-user-mode-yes.png)
 
 これで、販売注文がマップされました。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

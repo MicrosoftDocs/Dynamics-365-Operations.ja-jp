@@ -36,7 +36,7 @@ Retail ハイブリッド アプリは、[Xamarin](https://docs.microsoft.com/xa
 ## <a name="development-tools"></a>開発ツール
 Retail ハイブリッド アプリは、Android および iOS スマートフォン プラットフォームをサポートします。 このアプリは、Xamarin を使用して構築されています。つまり、開発用コンピューターには Xamarin をインストールする必要があります。 iOS アプリをビルドするには、Xamarin がインストールされている Mac が必要です。 Microsoft Windows を実行しているコンピューターで Android および iOS の両方に対して開発を行うことができますが、Mac を使用して iOS プラットフォームのビルドを完了する必要があります。 Mac が共有チーム リソースである場合、ビルド処理のためだけ Mac を使用する場合があります。 開発に使用するすべてのコンピューターに、Retail ソフトウェアの開発キット (Retail SDK) をコピーする必要があります。 Retail SDK は、「[Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)」を使用してプロビジョニングされるすべての開発者 VM で使用できます。
 
-Xamarin の詳細については、[ドXamarin のドキュメント](https://docs.microsoft.com/xamarin/)を参照してください。
+Xamarin の詳細については、[Xamarin のドキュメント](https://docs.microsoft.com/xamarin/)を参照してください。
 
 ## <a name="set-up-and-install-xamarin-on-windows"></a>Windows での Xamarin のセットアップとインストール
 
@@ -108,16 +108,16 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 
 その他の支払プロセッサや周辺機器への対応は、Payments および Hardware SDKs を通して ISVs から実装することができます。 
 
-### <a name="set-up-peripherals-to-work-with-the-hybrid-android-app"></a>周辺機器をハイブリッド Android アプリと連係させるための設定を行います。
+### <a name="set-up-peripherals-to-work-with-the-hybrid-android-app"></a>周辺機器をハイブリッド Android アプリと連係させるための設定を行います
 
-ハイブリッド Android アプリのハードウェアの直接対応を有効にするには、MPOSに対しす設定と同じ方法で専用のハードウェアステーションを設定します。 専用もしくははIPCハードウェアステーションを設定する手順については、 [Retail 周辺機器](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1) を参照してください。
+ハイブリッド Android アプリのハードウェアの直接対応を有効にするには、MPOSに対しす設定と同じ方法で専用のハードウェアステーションを設定します。 専用もしくははIPCハードウェアステーションを設定する手順については、 [Retail 周辺機器](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1) を参照してください
 
 > [!NOTE]
 > デモデータが付属している専用ハードウェアステーションは、ハイブリッド Android アプリと併用しないでください。 デモデータを含むハイブリッド Android アプリをテストするには、既存のハードウェアステーションを削除し、新しい専用ハードウェアステーションを作成します。 
 >
 > これを行うには、**Retail とコマース > チャネル > 店舗 > すべての店舗** の順に移動します。 使用する店舗 (通常は "HOUSTON") を選択します。 
 >
-> 店舗の詳細 フォームで、 **Hardware stations** ファストタブまで下にスクロールしていきます。 既存の専用ハードウェアステーションを削除して **追加** を選択して新しいハードウェアステーションのタイプに **専用** を追加します。 説明がオプションです。 ハードウェアステーションについてはその他の詳細は必要ありません。 
+> 店舗の詳細 フォームで、 **ハードウェア ステーション** ファストタブまで下にスクロールしていきます。 既存の専用ハードウェアステーションを削除して **追加** を選択して新しいハードウェアステーションのタイプに **専用** を追加します。 説明がオプションです。 ハードウェアステーションについてはその他の詳細は必要ありません。 
 
 支払コネクタを設定するには、 [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration) に記載されている標準の設定手順に従ってください。 モダンPOSまたはIISハードウェアステーションコンフィギュレーションの更新という名称のセクションは省略します。
 
@@ -126,6 +126,3 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 ## <a name="additional-resources"></a>追加リソース
 - [支払に関するよく寄せられる質問](payments-retail.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

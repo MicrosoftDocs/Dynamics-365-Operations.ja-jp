@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60e6fb7d38bd3ca78538ca10a15f6fb09bba52a3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693907"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796901"
 ---
 # <a name="address-books-faq"></a>アドレス帳に関するよく寄せられる質問
 
@@ -67,6 +67,3 @@ ms.locfileid: "4693907"
 ## <a name="can-i-translate-address-information-for-party-records"></a>関係者レコードの住所情報を翻訳できますか。
 
 プログラム内のユーザーの言語 (システム言語) で情報を表示して、販売注文などのドキュメントでは別の言語で表示するように住所情報の翻訳を設定できます。 国/地域名、住所の目的、名前の順序の翻訳を入力できます。 たとえば、システム言語がデンマーク語で、フランスの顧客に販売注文を作成するとします。 この場合、プログラムではデンマーク語で顧客レコードを表示しつつ、印刷した販売注文にはフランス語で住所情報を表示することができます。 翻訳を設定した場合、一覧に各品目の翻訳を入力する必要があります。 翻訳が入力されていない品目は、システム言語で表示されます。 たとえば、システムの言語が、デンマーク語で、スペインの顧客にドキュメントを送信するとします。 住所情報にスペイン語 (ESP) の翻訳を入力しなかった場合、その情報は、システムと印刷資料ともにデンマーク語で表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

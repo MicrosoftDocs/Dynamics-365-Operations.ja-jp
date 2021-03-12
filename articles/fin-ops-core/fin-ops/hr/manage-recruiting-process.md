@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f440a42ea475a42c803475d82e3027625bf4db
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 71e30a30aee5edcea2e24b326b0f263612b6b897
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694912"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798046"
 ---
 # <a name="manage-recruiting-processes"></a>採用プロセスの管理
 
@@ -103,6 +103,3 @@ web 上で申請者が提出した雇用申請は、職務広告に反応して�
 ## <a name="hiring-applicants"></a>雇用の申請者
 
 **申請** ページを使用して申請者を雇用します。 申請者を雇用する場合、申請レコードは **採用済** のステータスになり、申請者のグローバル アドレス帳のレコードは新しい作業者レコードに関連付けられます。 新しい作業者レコードのグローバル アドレス帳情報への変更は、申請者レコードにも表示されます。 新しい従業員があなたの企業内の別の仕事を申請した場合、これによりデータ入力を減らすことができます。 新しい職位に既存の作業者を雇用するには、**申請のステータス** ボックスの **職位の変更** をクリックして転送プロセスを開始します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

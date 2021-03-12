@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7fd1fc4756e74a5d07ffae533b6b9837b960f17a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693753"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798204"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool を使用したデータ認識不可能テスト
 
@@ -49,6 +49,3 @@ ERP アプリケーションの機能の検証は、完全にデータ認識不�
     - 一般的な検証の代わりに、特定のトランザクションに対するフィルター処理をした後にのみ検証します。 たとえば、レコード数について、検証が他のすべてのトランザクションを除外するように、トランザクション番号またはトランザクション日付に対してフィルター処理を行います。 
     - 顧客残高または予算チェックを確認している場合、値を先に保存してトランザクション値を追加することにより、固定の予測値を検証する代わりに、予測された結果を検証します。 
  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683566"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744640"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>初めて同期をする際に発生する問題のトラブルシューティング
 
@@ -98,7 +98,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>仕入先 V2–to–msdyn_vendors テーブル マッピングでのエラーを解決する
 
-テーブルに **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドの値を持つ既存の行がある場合、**msdyn\_vendors** に対して **仕入先 V2** のマッピングで初期同期エラーが発生する場合があります。 これらのエラーの発生は、**InvoiceVendorAccountNumber** が自己参照フィールドであり、**PrimaryContactPersonId** が仕入先マッピングで循環参照であるためです。
+テーブルに **PrimaryContactPersonId** 列と **InvoiceVendorAccountNumber** 列の値を持つ既存の行がある場合、**msdyn\_vendors** に対して **仕入先 V2** のマッピングで初期同期エラーが発生する場合があります。 これらのエラーの発生は、**InvoiceVendorAccountNumber** が自己参照列であり、**PrimaryContactPersonId** が仕入先マッピングで循環参照であるためです。
 
 表示されるエラーメッセージの形式は次のとおりです。
 
@@ -109,26 +109,26 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 - *フィールド msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid のガイドを解決できませんでした。検索で 000056 は見つかりませんでした。次の URL で、参照データが存在するかどうかを確認してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *フィールド msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber のガイドを解決できませんでした。検索で V24-1 は見つかりませんでした。参照データが存在するかどうかは次の URL を試してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-仕入先エンティティの任意の行に **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドがある場合、以下のステップの手順に従って、初期同期を正常に完了してください。
+仕入先テーブルの任意の行に **PrimaryContactPersonId** 列と **InvoiceVendorAccountNumber** 列がある場合、以下のステップの手順に従って、初期同期を正常に完了してください。
 
-1. Finance and Operations アプリで、マッピングから **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドを削除し、マッピングを保存します。
+1. Finance and Operations アプリで、マッピングから **PrimaryContactPersonId** 列と **InvoiceVendorAccountNumber** 列を削除し、マッピングを保存します。
 
     1. **仕入先 V2 (msdyn\_vendors)** の二重書き込みマッピング ページで、左のフィールドにある **テーブル マッピング** タブで、**Finance and Operations apps.Vendors V2** を選択します。 右側のフィルターで、**Sales.Vendor** を選択します。
-    2. **primarycontactperson** を検索して、**PrimaryContactPersonId** ソース フィールドを見つけます。
+    2. **primarycontactperson** を検索して、**PrimaryContactPersonId** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
-        ![PrimaryContactPersonId フィールドの削除](media/vend_selfref3.png)
+        ![PrimaryContactPersonId 列の削除](media/vend_selfref3.png)
 
-    4. これらの手順を繰り返して、**InvoiceVendorAccountNumber** フィールドを削除します。
+    4. これらの手順を繰り返して、**InvoiceVendorAccountNumber** 列を削除します。
 
-        ![InvoiceVendorAccountNumber フィールドの削除](media/vend-selfref4.png)
+        ![InvoiceVendorAccountNumber 列の削除](media/vend-selfref4.png)
 
     5. マッピングへの変更を保存します。
 
-2. **仕入先 V2** エンティティの Change Tracking をオフにします。
+2. **仕入先 V2** テーブルの Change Tracking をオフにします。
 
     1. **データ管理** ワークスペースで、**データ テーブル** タイルを選択します。
-    2. **仕入先 V2** エンティティを選択します。
+    2. **仕入先 V2** テーブルを選択します。
     3. 操作ウィンドウで、**オプション** を選択し、**Change Tracking** を選択します。
 
         ![Change Tracking オプションの選択](media/selfref_options.png)
@@ -138,14 +138,14 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
         ![Change Tracking を無効にする選択](media/selfref_tracking.png)
 
 3. **仕入先 V2 (msdyn\_vendors)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
-4. **CDS 連絡先 V2 (連絡先)** マッピングの初期同期を実行します。 連絡先行に対しても初期同期する必要があるため、仕入先エンティティの基本連絡先フィールドを同期する場合は、このマッピングを同期する必要があります。
-5. **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドを **仕入先 V2 (msdyn\_vendors)** マッピングに追加し直し、マッピングを保存します。
+4. **CDS 連絡先 V2 (連絡先)** マッピングの初期同期を実行します。 連絡先行に対しても初期同期する必要があるため、仕入先テーブルの基本連絡先列を同期する場合は、このマッピングを同期する必要があります。
+5. **PrimaryContactPersonId** 列と **InvoiceVendorAccountNumber** 列を **仕入先 V2 (msdyn\_vendors)** マッピングに追加し直し、マッピングを保存します。
 6. **仕入先 V2 (msdyn\_vendors)** マッピングの初期同期を再度実行します。 Change Tracking がオフになっているため、すべての行が同期されます。
-7. **仕入先 V2** エンティティの Change Tracking をオフにし直します。
+7. **仕入先 V2** テーブルの Change Tracking をオフにし直します。
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>顧客 V3–to–Accounts テーブル マッピングでエラーを解決する
 
-テーブルに **ContactPersonID** フィールドと **InvoiceAccount** フィールドの値を持つ既存の行がある場合、**アカウント** に対して **顧客 V3** のマッピングで初期同期エラーが発生する場合があります。 これらのエラーは、**InvoiceAccount** が自己参照フィールドであり、**ContactPersonID** が仕入先マッピングで循環参照であるためです。
+テーブルに **ContactPersonID** 列と **InvoiceAccount** 列の値を持つ既存の行がある場合、**アカウント** に対して **顧客 V3** のマッピングで初期同期エラーが発生する場合があります。 これらのエラーは、**InvoiceAccount** が自己参照列であり、**ContactPersonID** が仕入先マッピングで循環参照であるためです。
 
 表示されるエラーメッセージの形式は次のとおりです。
 
@@ -156,26 +156,26 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 - *フィールド primarycontactid.msdyn\_contactpersonid のガイドを解決できませんでした。検索で 000056 は見つかりませんでした。次の URL で、参照データが存在するかどうかを確認してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *フィールド msdyn\_billingaccount.accountnumber のガイドを解決できませんでした。検索で 1206-1 は見つかりませんでした。次の URL で、参照データが存在するかどうかを確認してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-顧客エンティティの任意の行に **ContactPersonID** フィールドと **InvoiceAccount** フィールドがある場合、以下のステップの手順に従って、初期同期を正常に完了してください。 この方法は、**アカウント** と **連絡先** などの既成のテーブルに使用できます。
+顧客テーブルの任意の行に **ContactPersonID** 列と **InvoiceAccount** 列がある場合、以下のステップの手順に従って、初期同期を正常に完了してください。 この方法は、**アカウント** と **連絡先** などの既成のテーブルに使用できます。
 
-1. Finance and Operations アプリで、**顧客 V3 (アカウント)** マッピングからフィールド **ContactPersonID** フィールドと **InvoiceAccount** フィールドを削除し、マッピングを保存します。
+1. Finance and Operations アプリで、**顧客 V3 (アカウント)** マッピングから **ContactPersonID** 列と **InvoiceAccount** 列を削除し、マッピングを保存します。
 
     1. **顧客 V3 (アカウント)** の二重書き込みマッピング ページにある **テーブル マッピング** タブの左のフィルタで、**Finance and Operations apps.Customers V3** を選択します。 右側のフィルターで、**Dataverse.Account** を選択します。
-    2. **contactperson** を検索して、**ContactPersonID** ソース フィールドを見つけます。
+    2. **contactperson** を検索して、**ContactPersonID** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
-        ![ContactPersonID フィールドの削除](media/cust_selfref3.png)
+        ![ContactPersonID 列の削除](media/cust_selfref3.png)
 
-    4. これらの手順を繰り返して、**InvoiceAccount** フィールドを削除します。
+    4. これらの手順を繰り返して、**InvoiceAccount** 列を削除します。
 
-        ![InvoiceAccount フィールドの削除](media/cust_selfref4.png)
+        ![InvoiceAccount 列の削除](media/cust_selfref4.png)
 
     5. マッピングへの変更を保存します。
 
-2. **仕入先 V3** エンティティの Change Tracking をオフにします。
+2. **仕入先 V3** テーブルの Change Tracking をオフにします。
 
     1. **データ管理** ワークスペースで、**データ テーブル** タイルを選択します。
-    2. **顧客 V3** エンティティを選択します。
+    2. **顧客 V3** テーブルを選択します。
     3. 操作ウィンドウで、**オプション** を選択し、**Change Tracking** を選択します。
 
         ![Change Tracking オプションの選択](media/selfref_options.png)
@@ -190,7 +190,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     > [!NOTE]
     > 同じ名前のマップが 2 つあります。 **詳細** タブで次の説明を持つマップを必ず選択してください: **FO.CDS 仕入先の連絡先 V2 から CDS.Contacts との間の同期のための二重書き込みテンプレート。新しいパッケージ \[Dynamics365SupplyChainExtended\] が必要です。**
 
-5. **顧客 V3 (アカウント)** マッピングから **InvoiceAccount** フィールドと **ContactPersonId** フィールドを追加し、マッピングを保存します。 **InvoiceAccount** フィールドと **ContactPersonId** フィールドの両方が再度ライブ同期モードの一部になりました。 次の手順では、これらのフィールドの初期同期をおこないます。
+5. **顧客 V3 (アカウント)** マッピングに **InvoiceAccount** 列と **ContactPersonId** 列を追加し直し、マッピングを保存します。 **InvoiceAccount** 列と **ContactPersonId** 列の両方が再度ライブ同期モードの一部になりました。 次の手順では、これらの列の初期同期をおこないます。
 6. **顧客 V3 (アカウント)** マッピングの初期同期を再度実行します。 Change Tracking が無効になっているため、**InvoiceAccount** と **ContactPersonId** のデータが Finance and Operations アプリから Dataverse に同期されます。
 7. **InvoiceAccount** と **ContactPersonId** のデータを Dataverse から Finance and Operations アプリに同期するには 、データ統合プロジェクトを使用します。
 
@@ -210,7 +210,4 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
     行の初期同期が完了しました。
 
-8. Finance and Operations アプリで、**顧客 V3** エンティティの Change Tracking をオンにし直します。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+8. Finance and Operations アプリで、**顧客 V3** テーブルの Change Tracking をオンにし直します。

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 41777436a624f9b98956553243056b92a00c1ed6
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: b9bd15e73535f1d07b664ed659f9f15b3b0b7594
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693873"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797466"
 ---
 # <a name="manage-email-templates"></a>電子メール テンプレートの管理
 
@@ -47,6 +47,3 @@ ms.locfileid: "4693873"
 8. 電子メール メッセージの入力を続け、任意の箇所にブックマーク フィールドを挿入します。
 9. **保存** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

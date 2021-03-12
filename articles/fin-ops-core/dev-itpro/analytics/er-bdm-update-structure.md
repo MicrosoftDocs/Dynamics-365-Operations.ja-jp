@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd279b28c43e22bec6bf814845fe97828bc96d81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681331"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728092"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>ビジネス ドキュメント テンプレートの構造の更新 
 
@@ -56,7 +56,7 @@ Office 365 オンライン機能を使用してテンプレートを変更する
 5. **OK** を選択して、新しいテンプレートを作成します。
 
     > [!NOTE]
-    > Office Online にまだサインインしていない場合は、[Office 365 サインイン ページに移動](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page) します。 Finance 環境に戻るには、ブラウザーの **戻る** ボタンを選択します。
+    > Office Online にまだサインインしていない場合は、[Office 365 サインイン ページに移動](er-business-document-management.md#frequently-asked-questions) します。 Finance 環境に戻るには、ブラウザーの **戻る** ボタンを選択します。
 
     新しいテンプレートが、テンプレート エディター ページの Excel Online 埋め込みコントロールで編集するために開かれます。
 
@@ -106,6 +106,3 @@ Office 365 オンライン機能を使用してテンプレートを変更する
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [ビジネス ドキュメント管理の概要](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

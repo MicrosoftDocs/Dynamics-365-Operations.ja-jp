@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693405"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797787"
 ---
 # <a name="enter-payroll-beginning-balances"></a>給与の期首残高を入力します。
 
@@ -166,6 +166,3 @@ ms.locfileid: "4693405"
 2. **はい** をクリックするのは、「この支払明細書を相殺するために取消支払明細書が作成されます。 支払明細書を編集することもできません。 この支払明細書を取り消しますか」 というメッセージが表示されたときです。 
 
 支払明細書を取り消した後、前に作成した損益計算書から新しい支払明細書を作成することができます。 新しい支払明細書を生成する前に、損益計算書に誤った行を修正してから、正しい金額の新しい支払明細書を生成します。 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

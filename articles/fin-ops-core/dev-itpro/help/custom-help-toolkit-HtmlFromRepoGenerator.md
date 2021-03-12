@@ -29,9 +29,9 @@ ms.locfileid: "4685091"
 
 **HtmlFromRepoGenerator** ツールには、Microsoft のソース ファイルに基づくカスタム ヘルプの作成をサポートする機能が用意されています。 ツールを使用して次のタスクを実行できます:
 
-- Microsoft ドキュメント リポジトリを複製します。
-- Microsoft リポジトリの複製から開発者および管理者のコンテンツを削除します。
-- 複製に既に存在しないファイルへのリンクを更新します。
+- Microsoft ドキュメント リポジトリをクローンします。
+- Microsoft リポジトリのクローンから開発者および管理者のコンテンツを削除します。
+- クローンに既に存在しないファイルへのリンクを更新します。
 - Finance and Operations クライアントでサポートされている言語オプションと一致するように **ms.locale** プロパティの値を更新します。
 
     クライアントが使用する言語記述子は、対応する GitHub リポジトリで使用されている言語記述子と異なります。 ローカライズされたカスタム ヘルプを呼び出す前に、ソース コンテンツの言語記述子を変更して、クライアントの言語と一致させる必要があります。 詳細については、[製品およびヘルプの言語およびロケール記述子](language-locale.md) を参照してください。
@@ -124,6 +124,3 @@ HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNot
 [Azure にカスタム ヘルプを展開](walkthrough-help-azure.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換](migrate-dynamicsax2012.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

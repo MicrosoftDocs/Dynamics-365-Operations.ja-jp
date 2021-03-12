@@ -27,15 +27,15 @@ ms.locfileid: "4798529"
 
 [!include [banner](../includes/banner.md)]
 
-残念ながら、`microsoft.com` ドメインから axerd web のウェブ ページを破棄する必要がありました。 しかし、AxErd はサード パーティがホストしているその他の場所で利用可能な場合があります。
+残念ながら、`microsoft.com` ドメインから AxErd Web ページを破棄する必要がありました。 しかし、AxErd はサード パーティがホストしているその他の場所で利用可能な場合があります。
 
-Axerd は、多くの Microsoft Dynamics AX 2012 のテーブルに対して、エンティティ関係図 (erds) を提供しています。
+AxErd は、多くの Microsoft Dynamics AX 2012 のテーブルに対して、エンティティ関係図 (ERDs) を提供しています。
 
 ## <a name="source-on-github"></a>GitHub 上のソース
 
 プロジェクトのソースコードと ウェブページの HTML ファイルの両方を GitHub リポジトリに投稿することができました：https://github.com/Microsoft/ax-2012-doc-tools
 
-HTML ページはリポジトリの [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm) にあります。
+HTML ページはリポジトリの [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm) にあります
 
 独自の ERD を作成する方法についての説明は以下にあります: [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
@@ -46,6 +46,3 @@ HTML ページはリポジトリの [https://github.com/Microsoft/ax-2012-doc-to
 2018 年 3 月に、サードパーティが GitHub から AxErd のソースをコピーし、次のサイトに再配置しました。 このサイトは、2020 年 3 月時点で稼働中です。
 
 - [https://AlexDMeyer.com/ax2012erd/](https://AlexDMeyer.com/ax2012erd/)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

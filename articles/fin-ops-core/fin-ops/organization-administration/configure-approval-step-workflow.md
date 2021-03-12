@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71d51f137cc0e0fcc18b39f8b92ab5c44b359609
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694079"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797099"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>ワークフローでの承認ステップのコンフィギュレーション
 
@@ -276,6 +276,3 @@ ms.locfileid: "4694079"
 
 5. エスカレーション パスに追加するユーザーごとに、ステップ 3～4 を繰り返します。 ユーザーの順序は、変更できます。
 6. エスカレーション パスに含まれるユーザーが、割り当てられた時間内に対応しない場合、システムによってドキュメントが自動的に処理されます。 システムによる処理を指定するには、**アクション** 行を選択し、**アクションの終了** タブでアクションを選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

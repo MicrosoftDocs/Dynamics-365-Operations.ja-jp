@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72db7660c07b2f57f8609ab6c14964193e842d75
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688570"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797344"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 
 [!include[banner](../includes/banner.md)]
 
-すべての構成済み [電子レポート (ER)](general-electronic-reporting.md) [形式](general-electronic-reporting.md#FormatComponentOutbound) と [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components) コンポーネントは、設計時に [検証](er-fillable-excel.md#validate-an-er-format) できます。 この検証では、実行エラーやパフォーマンスの低下など、発生する可能性のあるランタイムの問題を防ぐために、整合性チェックが行われます。 検出された問題ごとに、問題のある要素のパスが提供されます。 一部の問題については、自動修正が利用できます。
+すべての構成済み [電子レポート (ER)](general-electronic-reporting.md) [形式](general-electronic-reporting.md#FormatComponentOutbound) と [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components) コンポーネントは、設計時に [検証](er-fillable-excel.md#validate-an-er-format) できます。 この検証では、実行エラーやパフォーマンスの低下など、発生する可能性のあるランタイムの問題を防ぐために、整合性チェックが実行されます。 このチェックでは、検出された問題ごとに、問題のある要素のパスを提供します。 一部の問題については、自動修正が利用できます。
 
 既定では、前述の ER コンポーネントを含む ER 構成について、次の場合に検証が自動的に適用されます:
 
@@ -69,7 +68,7 @@ ms.locfileid: "4688570"
 2. **構成** ページ、アクション ウィンドウ、**構成** タブ、**詳細設定** グループで、**ユーザー パラメーター** を選択します。
 3. **インポート後に構成を検証** オプションを **いいえ** に設定します。
 
-バージョンの状態が変更またはリベースされたときに検証をスキップするには、次の手順を実行します。
+バージョンの状態を変更またはリベースするときに検証をスキップするには、次の手順を実行します。
 
 1. **組織管理 \> 電子申告 \> コンフィギュレーション** の順に移動します。
 2. **構成** ページ、アクション ウィンドウ、**構成** タブ、**詳細設定** グループで、**ユーザー パラメーター** を選択します。
@@ -406,7 +405,7 @@ ER モデル マッピング デザイナーのデータ ソース ペインで�
 
 ## <a name="executability-of-a-join-data-source"></a><a id="i6"></a>JOIN データ ソースの実行可能性
 
-[JOIN](er-join-data-sources.md) データ ソースは、関連するフィールドに基づいて 2 つ以上のデータベース テーブルのレコードを組み合わせたものです。 すべての **JOIN** データ ソースは、データベース レベルまたはメモリ内のいずれかで実行されるように構成できます。 **JOIN** データ ソースが、データベース レベルで実行されるように構成されている場合、ER はそのデータ ソースで参照されているデータ ソースに対して直接 SQL クエリを確立できるかどうかを確認します。 1 つ以上の参照データソースで直接 SQL クエリを確立できない場合、ER モデル マッピング デザイナーで検証エラーが発生します。 受信するメッセージは、構成された **JOIN** データ ソースを実行時に実行できないことを示しています。
+[JOIN](er-join-data-sources.md) データ ソースは、関連するフィールドに基づいて 2 つ以上のデータベース テーブルのレコードを組み合わせたものです。 すべての **JOIN** データ ソースは、データベース レベルまたはメモリ内のいずれかで実行されるように構成できます。 **JOIN** データ ソースが、データベース レベルで実行されるように構成されている場合、ER はそのデータ ソースで参照されているデータ ソースに対して直接 SQL クエリを確立できるかどうかを確認します。 1 つ以上の参照データ ソースで直接 SQL クエリを確立できない場合、ER モデル マッピング デザイナーで検証エラーが発生します。 受信するメッセージは、構成された **JOIN** データ ソースを実行時に実行できないことを示しています。
 
 次の手順は、この問題がどのように発生するかを示しています。
 
@@ -458,7 +457,7 @@ ER モデル マッピング デザイナーのデータ ソース ペインで�
 
 ## <a name="preferability-of-filter-vs-where-function"></a><a id="i7"></a>FILTER 関数 対 WHERE 関数の優先度
 
-組み込み [FILTER](er-functions-list-filter.md) ER 関数は、アプリケーション テーブル、ビュー、またはデータ エンティティにアクセスするために使用され、1 回の SQL 呼び出しを行うことで、必要なデータをレコードの一覧として取得します。 [WHERE](er-functions-list-where.md) 関数は、指定されたソースからすべてのレコードをフェッチし、メモリ内でレコード選択を行います。 **レコード リスト** タイプのデータ ソースは、両方の関数の引数として使用され、レコードを取得するためのソースを指定します。 ERは、**WHERE** 関数で参照されるデータ ソースに対して直接 SQL 呼び出しを確立できるかどうかを確認します。 直接呼び出しを確立できない場合、ER モデル マッピング デザイナーで検証警告が発生します。 受信するメッセージは、効率を向上させるために、**WHERE** 関数の代わりに **FILTER** 関数を使用することを推奨しています。
+組み込み [FILTER](er-functions-list-filter.md) ER 関数は、アプリケーション テーブル、ビュー、またはデータ エンティティにアクセスするために使用され、1 回の SQL 呼び出しを行うことで、必要なデータをレコードの一覧として取得します。 [WHERE](er-functions-list-where.md) 関数は、指定されたソースからすべてのレコードをフェッチし、メモリ内でレコード選択を行います。 **レコード リスト** タイプのデータ ソースは、両方の関数の引数として使用され、レコードを取得するためのソースを指定します。 ERは、**WHERE** 関数で参照されるデータ ソースに対して直接 SQL 呼び出しを確立できるかどうかを確認します。 直接呼び出しを確立できる場合、ER モデル マッピング デザイナーで検証警告が発生します。 受信するメッセージは、効率を向上させるために、**WHERE** 関数の代わりに **FILTER** 関数を使用することを推奨しています。
 
 次の手順は、この問題がどのように発生するかを示しています。
 
@@ -489,11 +488,11 @@ ER モデル マッピング デザイナーのデータ ソース ペインで�
 
 ### <a name="manual-resolution"></a>手動解決
 
-**WHERE** 関数を **FILTER** 関数に置き換えることで、検証グリッドに記載されているすべてのデータ ソースの式を手動で調整できます。
+**WHERE** 関数を **FILTER** 関数に置き換えることで、検証グリッド内のすべてのデータ ソースの式を手動で調整できます。
 
 ## <a name="preferability-of-allitemsquery-vs-allitems-function"></a><a id="i8"></a>ALLITEMSQUERY 関数 対 ALLITEMS 関数の優先度
 
-組み込みの [ALLITEMS](er-functions-list-allitems.md) と [ALLITEMSQUERY](er-functions-list-allitemsquery.md) ER関数は、指定したパスに一致するすべての項目を表すレコードの一覧から成るフラット化された **レコード リスト** の値を取得するために使用されます。 ER は、**ALLITEMS** 関数で参照されるデータ ソースに対して直接 SQL 呼び出しを確立できるかどうかを確認します。 直接呼び出しを確立できない場合、ER モデル マッピング デザイナーで検証警告が発生します。 受信するメッセージは、効率を向上させるために、**ALLITEMS** 関数の代わりに **ALLITEMSQUERY** 関数を使用することを推奨しています。
+組み込みの [ALLITEMS](er-functions-list-allitems.md) と [ALLITEMSQUERY](er-functions-list-allitemsquery.md) ER 関数は、指定したパスに一致するすべての項目を表すレコードの一覧から成るフラット化された **レコード リスト** の値を返します。 ER は、**ALLITEMS** 関数で参照されるデータ ソースに対して直接 SQL 呼び出しを確立できるかどうかを確認します。 直接呼び出しを確立できる場合、ER モデル マッピング デザイナーで検証警告が発生します。 受信するメッセージは、効率を向上させるために、**ALLITEMS** 関数の代わりに **ALLITEMSQUERY** 関数を使用することを推奨しています。
 
 次の手順は、この問題がどのように発生するかを示しています。
 
@@ -526,11 +525,11 @@ ER モデル マッピング デザイナーのデータ ソース ペインで�
 
 ## <a name="consideration-of-empty-list-cases"></a><a id="i9"></a>空リストの場合の考慮
 
-ER 形式またはモデル マッピング コンポーネントを構成して、**レコード リスト** タイプのデータ ソースのフィールド値を取得することができ ます。 ERは、存在しないレコードのフィールドから値がフェッチされるときのランタイム エラーを防ぐために、呼び出されるデータ ソースにレコードが含まれていない (つまり空である) 場合を考慮して設計されているかどうかを確認します。
+ER 形式またはモデル マッピング コンポーネントを構成して、**レコード リスト** タイプのデータ ソースのフィールド値を取得することができます。 ERは、存在しないレコードのフィールドから値がフェッチされるときのランタイム エラーを防ぐために、呼び出されるデータ ソースにレコードが含まれていない (つまり空である) 場合を考慮して設計されているかどうかを確認します。
 
 次の手順は、この問題がどのように発生するかを示しています。
 
-1. ER データ モデル、ER モデル マッピング、ER モデル マッピング コンポーネントの構成を同時に開始します。
+1. ER データ モデル、ER モデル マッピング、 ER 形式コンポーネントの構成を同時に開始します。
 2. データ モデル ツリーで、**Root3** という名前のルート項目を追加します。
 3. **レコード リスト** タイプの入れ子になった項目を追加して、**Root3** 項目を変更します。
 4. 新しい入れ子になった項目 **Vendor** に名前を付けます。
@@ -573,11 +572,11 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 
     ![形式デザイナー ページでデータ ソースにバインドした形式要素の検証](./media/er-components-inspections-09c.png)
 
-16. 検証エラーが発生することに注意してください。 メッセージは、**model.Vendor** リストが空の場合、実行時に、構成済みの **Statement\\Party\\Name** と **Statement\\Party\\AccountNum** に対してエラーがスローされる可能性があることを示しています。
+16. 検証エラーが発生することに注意してください。 メッセージは、`model.Vendor` リストが空の場合、実行時に、構成済みの **Statement\\Party\\Name** と **Statement\\Party\\AccountNum** に対してエラーがスローされる可能性があることを示しています。
 
     ![構成済みの形式コンポーネントの潜在的なエラーを通知する検証エラー](./media/er-components-inspections-09d.png)
 
-次の図は、警告を無視し、**実行** を選択して形式を実行し、存在しない仕入先のアカウント番号を選択した場合に発生するランタイム エラーを示しています。 要求された仕入先が存在しないため、**model.Vendor** リストは空になります (つまり、レコードが含まれていません)。
+次の図は、警告を無視し、**実行** を選択して形式を実行し、存在しない仕入先のアカウント番号を選択した場合に発生するランタイム エラーを示しています。 要求された仕入先が存在しないため、`model.Vendor` リストは空になります (つまり、レコードが含まれていません)。
 
 ![形式マッピングの実行中に発生したランタイム エラー](./media/er-components-inspections-09e.png)
 
@@ -589,15 +588,15 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 
 #### <a name="option-1"></a>オプション 1
 
-**Statement\\Party\\Name** 形式要素を **model.Vendor** データ ソース項目にバインドできます。 実行時に、このバインドは **model.Vendor** データ ソースを最初に呼び出します。 **model.Vendor** が、空のレコード リストを返す場合、入れ子になった形式要素は実行されません。 したがって、この形式構成に対して検証警告は発生しません。
+**Statement\\Party\\Name** 形式要素を `model.Vendor` データ ソース項目にバインドできます。 実行時に、このバインドは `model.Vendor` データ ソースを最初に呼び出します。 `model.Vendor` が、空のレコード リストを返す場合、入れ子になった形式要素は実行されません。 したがって、この形式構成に対して検証警告は発生しません。
 
 ![形式デザイナー ページで形式要素をデータ ソース項目にバインドする](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>オプション 2
 
-**Statement\\Party\\Name** 形式要素のバインドを `model.Vendor.Name` から `FIRSTORNULL(model.Vendor).Name` に変更します。 更新されたバインドは、**レコード リスト** タイプの **model.Vendor** データ ソースの最初のレコードを、**レコード** タイプの新しいデータ ソースに条件付きで変換します。 この新しいデータ ソースには、同じセットのフィールドが含まれています。
+**Statement\\Party\\Name** 形式要素のバインドを `model.Vendor.Name` から `FIRSTORNULL(model.Vendor).Name` に変更します。 更新されたバインドは、**レコード リスト** タイプの `model.Vendor` データ ソースの最初のレコードを、**レコード** タイプの新しいデータ ソースに条件付きで変換します。 この新しいデータ ソースには、同じセットのフィールドが含まれています。
 
-- **model.Vendor** データ ソースに使用可能なレコードが少なくとも 1 つある場合、そのレコードのフィールドには、**model.Vendor** データ ソースの最初のレコードのフィールドの値が設定されます。 この場合、更新されたバインドは仕入先名を返します。
+- `model.Vendor` データ ソースに使用可能なレコードが少なくとも 1 つある場合、そのレコードのフィールドには、`model.Vendor` データ ソースの最初のレコードのフィールドの値が設定されます。 この場合、更新されたバインドは仕入先名を返します。
 - それ以外の場合は、作成されたレコードのすべてのフィールドは、そのフィールドのデータ型の既定値が設定されます。 この場合は、**文字列** データ型の既定値として空白文字列を返します。
 
 したがって、**Statement\\Party\\Name** の形式要素が、`FIRSTORNULL(model.Vendor).Name` 式にバインドされても、検証の警告は発生しません。
@@ -606,13 +605,13 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 
 #### <a name="option-3"></a>オプション 3
 
-**レコード リスト** タイプの **model.Vendor** データ ソースが、レコードを返さないときに生成されるドキュメントに入力されるデータ (この例では、テキスト **使用不可**) を明示的に指定する場合は、**Statement\\Party\\Name** 形式要素のバインドを `model.Vendor.Name` から `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")` に変更します。 式 `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")` を使用することもできます。
+**レコード リスト** タイプの `model.Vendor` データ ソースが、レコードを返さないときに (テキスト この例では **使用できません**)、生成されるドキュメントに入力されるデータを明示的に指定する場合は、**Statement\\Party\\Name** 形式要素のバインドを `model.Vendor.Name` から `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")` に変更します。 式 `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")` を使用することもできます。
 
 ### <a name="additional-consideration"></a><a id="i9a"></a>その他の考慮事項
 
-検査では、別の潜在的な問題についても警告します。 既定では、**Statement\\Party\\Name** と **Statement\\Party\\AccountNum** の形式要素を **レコード リスト** タイプの **model.Vendor** データ ソースの適切なフィールドにバインドすると、これらのバインドが実行され、**model.Vendor** データ ソースの最初のレコードの適切なフィールドの値を取得します (リストが空でない場合)。
+検査では、別の潜在的な問題についても警告します。 既定では、**Statement\\Party\\Name** と **Statement\\Party\\AccountNum** の形式要素を **レコード リスト** タイプの `model.Vendor` データ ソースの適切なフィールドにバインドすると、これらのバインドが実行され、`model.Vendor` データ ソースの最初のレコードの適切なフィールドの値を取得します (リストが空でない場合)。
 
-**Statement\\Party** 形式要素を **model.Vendor** データ ソースにバインドしていないため、形式の実行中に **Statement\\Party** 要素は、**model.Vendor** データソースの各レコードに対して反復処理されません。 代わりに、このリストに複数のレコードが含まれている場合、生成されるドキュメントには、レコード リストの最初のレコードからのみ情報が入力されます。 したがって、形式が **model.Vendor** データ ソースのすべての仕入先に関する情報で、生成されたドキュメントを埋めることが目的の場合に、問題が発生することがあります。 この問題を修正するには、**Statement\\Party** 要素を **model.Vendor** データ ソースにバインドします。
+**Statement\\Party** 形式要素を `model.Vendor` データ ソースにバインドしていないため、形式の実行中に **Statement\\Party** 要素は、`model.Vendor` データ ソースの各レコードに対して反復処理されません。 代わりに、このリストに複数のレコードが含まれている場合、生成されるドキュメントには、レコード リストの最初のレコードからのみ情報が入力されます。 したがって、形式が `model.Vendor` データ ソースのすべての仕入先に関する情報で、生成されたドキュメントを埋めることが目的の場合に、問題が発生することがあります。 この問題を修正するには、**Statement\\Party** 要素を `model.Vendor` データ ソースにバインドします。
 
 ## <a name="executability-of-an-expression-with-filter-function-caching"></a><a id="i10"></a>FILTER 関数による式の実行可能性 (キャッシュ)
 
@@ -661,7 +660,7 @@ ER 形式コンポーネントを構成する場合、基本 ER データ モデ
 
 次の手順は、この問題がどのように発生するかを示しています。
 
-1. ER データ モデル、ER モデル マッピング、ER モデル マッピング コンポーネントの構成を同時に開始します。
+1. ER データ モデル、ER モデル マッピング、 ER 形式コンポーネントの構成を同時に開始します。
 2. データ モデル ツリーで、**Root3** という名前のルート項目を追加します。
 3. **レコード リスト** タイプの新しい入れ子になった項目を追加して、**Root3** 項目を変更します。
 4. 新しい入れ子になった項目 **Vendor** に名前を付けます。
@@ -699,7 +698,7 @@ ER 形式コンポーネントを構成する場合、基本 ER データ モデ
 
 14. 次の方法で、形式要素を指定されたデータ ソースにバインドします:
 
-    - **Statement\\Party** 形式要素を **model.Vendor** データ ソース項目にバインドします。
+    - **Statement\\Party** 形式要素を `model.Vendor` データ ソース項目にバインドします。
     - **Statement\\Party\\Name** 形式要素を **model.Vendor.Name** データ ソース フィールドにバインドします。
     - **Statement\\Party\\AccountNum** 形式要素を **model.Vendor.AccountNumber** データ ソース フィールドにバインドします。
 
@@ -813,6 +812,3 @@ Excel テンプレートをインポートすることで、編集可能な ER �
 [電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング](trace-execution-er-troubleshoot-perf.md)
 
 [ビジネス ドキュメント管理の概要](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

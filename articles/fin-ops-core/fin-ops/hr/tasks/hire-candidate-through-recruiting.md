@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c2e10c56a2bd53b1bda9704e13324aa5a0d96848
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 120fc00de7b66490c491d70b38aae79190de708f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692871"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797286"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>採用による候補者の雇用
 
@@ -45,6 +45,3 @@ ms.locfileid: "4692871"
 15. [連絡先情報] セクションを展開または折りたたみます。
 16. [個人情報] セクションを展開または折りたたみます。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

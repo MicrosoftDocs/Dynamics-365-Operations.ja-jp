@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685566"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744616"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>ライブ同期に関する問題のトラブルシューティング
 
@@ -46,11 +46,11 @@ Finance and Operations アプリで行を作成した際に、次のエラー �
 
 この問題を修正するには、[システム要件と前提条件](requirements-and-prerequisites.md) に記載されている手順を実行してください。 これらの手順を完了するには、Dataverse で作成したデュアル書き込みアプリケーションのユーザーにシステム管理者ロールが割り当てられている必要があります。 また、既定の所有チームにシステム管理者ロールが割り当てられている必要があります。
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Finance and Operations アプリで行を作成時に、エンティティのライブ同期では、常に同様のエラーが発生する
+## <a name="live-synchronization-for-any-table-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Finance and Operations アプリで行を作成時に、テーブルのライブ同期では、常に同様のエラーが発生する
 
 **問題の修正に必要な役割：** システム管理者
 
-エンティティ データを Finance and Operations アプリに保存するたびに、次のようなエラーメッセージが表示される場合があります：
+テーブル データを Finance and Operations アプリに保存するたびに、次のようなエラー メッセージが表示される場合があります:
 
 *データベースへの変更を保存できません。作業単位で取引をコミットすることはできません。エンティティ uoms にデータを書き込むことができません。UnitOfMeasureEntity への書き込みが失敗し、次のエラーメッセージが表示されました。エンティティ uoms と同期することはできません。*
 
@@ -58,8 +58,8 @@ Finance and Operations アプリで行を作成した際に、次のエラー �
 
 データが両面に存在し、問題がデータに起因するものではないことが分かった場合は、次の手順を実行してください。
 
-1. 関連するエンティティを停止します。
-2. Finance and Operations アプリにサインインし、失敗したエンティティの行が DualWriteProjectConfiguration テーブルと DualWriteProjectFieldConfiguration テーブルに存在することを確認します。 たとえば、**顧客** エンティティに障害が発生した場合、クエリは次のようになります。
+1. 関連するテーブルを停止します。
+2. Finance and Operations アプリにサインインし、失敗したテーブルの行が DualWriteProjectConfiguration テーブルと DualWriteProjectFieldConfiguration テーブルに存在することを確認します。 たとえば、**顧客** テーブルに障害が発生した場合、クエリは次のようになります。
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -68,7 +68,7 @@ Finance and Operations アプリで行を作成した際に、次のエラー �
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. テーブルのマッピングを停止しても、失敗したエンティティの行が存在する場合は、失敗したエンティティに関連する行を削除してください。 DualWriteProjectConfiguration テーブルの **projectname** 列をメモし、プロジェクト名を使用して行を削除することで、DualWriteProjectFieldConfiguration テーブル内のレコードをフェッチします。
+3. テーブルのマッピングを停止しても、失敗したテーブルの行が存在する場合は、失敗したテーブルに関連する行を削除してください。 DualWriteProjectConfiguration テーブルの **projectname** 列をメモし、プロジェクト名を使用して行を削除することで、DualWriteProjectFieldConfiguration テーブル内の行をフェッチします。
 4. テーブルのマッピングを開始します。 データが問題なく同期されていることを検証してください。
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Finance and Operations アプリにデータを作成する際の、読み取り、書き込み権限に関するエラーを処理する
@@ -127,6 +127,3 @@ Dynamics 365 のモデル駆動アプリでは、次のようにエラーが表�
 
 3. **externalenvironmentURL** の列に、正しい Dataverse またはアプリの URL が設定されていることを確認してください。 誤った Dataverse の URL を指している重複行を削除します。 DUALWRITEPROJECTFIELDCONFIGURATION テーブルと DUALWRITEPROJECTCONFIGURATION テーブルにて該当する行を削除します。
 4. テーブルのマッピングを停止して、再起動してください
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

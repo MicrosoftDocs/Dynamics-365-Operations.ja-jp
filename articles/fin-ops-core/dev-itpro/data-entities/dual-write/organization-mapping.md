@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: e2b652f11db62eb58ffc2ec2fc4322149e7d45d1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5132fd85fdf2c08ccded9db590328c394a2f984e
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680075"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744696"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Dataverse の組織階層
 
@@ -49,9 +49,9 @@ Finance and Operations アプリと Dataverse を構成するビジネス エコ
 
 Finance and Operations アプリ | その他の Dynamics 365 アプリ | 説明
 -----------------------|--------------------------------|---
-組織階層の目的 | msdyn_internalorganizationhierarchypurposes | このテンプレートでは、組織階層目的エンティティの一方向の同期を行うことができます。
-組織階層タイプ | msdyn_internalorganizationhierarchytypes | このテンプレートでは、組織階層タイプ エンティティの一方向の同期を行うことができます。
-組織階層 - 公開済 | msdyn_internalorganizationhierarchies | このテンプレートでは、組織階層の公開済みエンティティの一方向の同期を行うことができます。
+組織階層の目的 | msdyn_internalorganizationhierarchypurposes | このテンプレートでは、組織階層目的テーブルの一方向の同期を行うことができます。
+組織階層タイプ | msdyn_internalorganizationhierarchytypes | このテンプレートでは、組織階層タイプ テーブルの一方向の同期を行うことができます。
+組織階層 - 公開済み | msdyn_internalorganizationhierarchies | このテンプレートでは、組織階層の公開済みテーブルの一方向の同期を行うことができます。
 作業単位 | msdyn_internalorganizations |
 法人 | msdyn_internalorganizations |
 法人 | cdm_companies | 法人 (会社) 情報の双方向の同期を提供します。
@@ -73,6 +73,3 @@ Dataverse の内部組織情報は、**作業単位** と **法人エンティ�
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

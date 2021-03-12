@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2973454e585f8ee45c0b6ee95c8b41e93bc2d962
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694290"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797605"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>ワークフローの承認プロセスでのアクション
 
@@ -141,6 +141,3 @@ Adventure Works の経費精算書部門のメンバーは、キューを監視�
 たとえば、康介が USD 12,000 の経費精算書を提出し、このドキュメントが政美に割り当てられています。 政美が変更を要求すると、経費精算書は康介に送り返されます。
 
 その後、康介は経費報告書を再送信できるようになります。 最初に変更を依頼することもできますが、または経費精算書のオリジナル バージョンを再送信することもできます。 康介が経費報告書を再送信すると、今度は承認プロセスの最初の承認者である卓也に承認のために送られます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

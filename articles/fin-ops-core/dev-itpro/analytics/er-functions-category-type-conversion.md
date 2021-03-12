@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686078"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740811"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>型変換カテゴリ内の ER 関数のリスト
 
@@ -38,6 +38,14 @@ ms.locfileid: "4686078"
 | [IntValue](er-functions-conversion-intvalue.md)       | この関数は、指定された文字列を表す *Int* 値を返します。 |
 | [NumberValue](er-functions-conversion-numbervalue.md) | この関数は、指定された *文字列* 値から変換された *実数* 値を返します。 変換時に、指定された 10 進と桁区切り記号が考慮されます。 |
 | [金額](er-functions-conversion-value.md)             | この関数は、指定された *文字列* 値から変換された *実数* 値を返します。 |
+
+## <a name="type-conversion-functions-in-the-container-category"></a>コンテナー カテゴリ内の型変換関数
+
+次の表では、[コンテナー](er-functions-category-container.md) カテゴリにおける型変換関数について説明します。
+
+| 関数 | 説明 |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | この関数は、指定された *文字列* 型の入力を *コンテナー* 型のデータ項目に変換します。 |
 
 ## <a name="type-conversion-functions-in-the-date-and-time-category"></a>日付と時刻のカテゴリ内の型変換関数のリスト
 
@@ -79,6 +87,3 @@ ms.locfileid: "4686078"
 [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 
 [電子報告のフォーミュラ言語](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

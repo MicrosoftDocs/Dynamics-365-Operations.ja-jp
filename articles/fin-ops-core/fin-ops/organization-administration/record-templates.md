@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0b55046e6c523398b4a30e674dc9f77bb6fedf3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ca9ddaed0c4aad6aeb3877384778d33f83e6e4aa
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693211"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796854"
 ---
 # <a name="record-templates-overview"></a>レコード テンプレートの概要
 
@@ -37,6 +37,3 @@ ms.locfileid: "4693211"
 > テンプレートを適用できるのは、アクセスできる領域だけです。 ただし、すべてのユーザーが使用できるテンプレートを作成している場合、新しいレコードを作成すると、すべてのテンプレートのタイトルが、本人と他のユーザーに表示されます。 テンプレートを命名する場合には、これを考慮してください。 たとえば、法人の一部の従業員に歩合給が支払われていることが機密事項の場合、「コミッション」などの、用語が含まれる名前の使用を避けてください。
 
 アクセス許可がある 1 つ以上のテンプレートが特定のフォームに存在し、そのフォームで新しいレコードを作成するときには、**目的のテンプレートの選択** ページが表示されます。 一覧からテンプレートを選択すると、新しいレコードが作成されて、選択したテンプレートに基づく既定の情報が設定されます。 新しいレコードを作成するときにテンプレートを使用しない場合は、**テンプレートの選択** ページの **今後このメッセージを表示しない** チェック ボックスをオンにします。 テンプレート選択ダイアログ ボックスを再び表示するには、レコードを右クリックし、**レコード情報** をクリックして、**テンプレート選択の表示** をクリックします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

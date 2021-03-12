@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 47c07dd0e2f311b61297340a48a5a31cb1de3903
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685668"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744856"
 ---
 # <a name="guidance-for-dual-write-setup"></a>デュアル書き込みの設定方法に関するガイダンス
 
@@ -36,7 +36,7 @@ ms.locfileid: "4685668"
 Finance and Operations 環境と Dataverse 環境との間には、デュアル書き込み接続を設定できます。
 
 + **Finance and Operations 環境** では、**Finance and Operations アプリケーション** の基盤となるプラットフォームを提供します (たとえば、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、および Dynamics 365 Human Resources)。
-+ **Dataverse 環境** では、**Customer Engagement アプリ** の基盤となるプラットフォームを提供します (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、および Dynamics 365 Project Service Automation)。
++ **Dataverse 環境** では、**Customer Engagement アプリ** (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 column Service、Dynamics 365 Marketing、および Dynamics 365 Project Service Automation) の基盤となるプラットフォームを提供します。
 
 > [!IMPORTANT]
 > Dynamics 365 Finance の Human Resources モジュールでは 、デュアル書き込み接続に対応していますが、Dynamics 365 Human Resources アプリでは対応していません。
@@ -138,6 +138,3 @@ Finance and Operations アプリの既存インスタンスと Customer Engageme
 例については、[Customers V3 の有効化—連絡先テーブル マップ](enable-entity-map.md#enable-table-map)を参照してください
 
 初期同期を実行する必要がある各エンティティのデータ ボリュームに基づく代替的なアプローチについては、[初期同期の考慮事項](initial-sync-guidance.md)を参照してください。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf06046c772cd128f5600ed319cc3d0d4457b07f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 260fae39d9a98feb7bfa82188c5b05de9a533136
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694718"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796633"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>番号順序を個別に設定する
 
@@ -40,6 +40,3 @@ ms.locfileid: "4694718"
 8. **一般** セクションを展開します。 [全般] クイック タブで、番号順序を手動で生成するかどうか、および連続させるかどうかを選択します。 また、番号順序で使用できる最小番号と最大番号を入力します。 連続しない番号順序を連続する番号順序に変更することはお勧めしません。 番号順序が、完全には連続しなくなります。 この変更を行うと、データベースに重複キーエラーが発生してしまうこともあります。 また、連続する番号順序は、パフォーマンスに大きな影響を与えます。   
 9. **保存** をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

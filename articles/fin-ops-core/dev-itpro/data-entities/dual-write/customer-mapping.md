@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 801538e320ca78b0cc55bb4e4b8a80d38b9b48d6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b7e9cd27bb918dc3a6088b45803329deb01a864e
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685642"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744404"
 ---
 # <a name="integrated-customer-master"></a>統合された顧客マスター
 
@@ -42,9 +42,9 @@ ms.locfileid: "4685642"
 
 顧客は、商用 / 組織の顧客および消費者 / エンド ユーザーの 2 種類に大きく分類できます。 これら 2 種類の顧客は、Finance and Operations と Dataverse にて、異なる方法で格納および処理されます。
 
-Finance and Operations では、商用 / 組織の顧客および消費者 / エンド ユーザーの両方が、**CustTable** (CustCustomerV3Entity) という名前の単一のテーブルでマスターされ、**タイプ** 属性に基づいて分類されます。 (**タイプ** が **組織** に設定されている場合、顧客は商用 / 組織の顧客であり、**タイプ** が **人材** に設定されている場合、顧客はコンシューマ / エンド ユーザーです。) 主な連絡担当者情報は、SMMContactPersonEntity エンティティを介して処理されます。
+Finance and Operations では、商用 / 組織の顧客および消費者 / エンド ユーザーの両方が、**CustTable** (CustCustomerV3Entity) という名前の単一のテーブルでマスターされ、**タイプ** 属性に基づいて分類されます。 (**タイプ** が **組織** に設定されている場合、顧客は商用/組織の顧客であり、**タイプ** が **個人** に設定されている場合、顧客はコンシューマー/エンド ユーザーです。) 主な連絡担当者情報は、SMMContactPersonEntity テーブルを介して処理されます。
 
-Dataverseでは、商取引 / 組織の顧客は口座エンティティで習得され、**リレーションシップ タイプ** 属性が **顧客** に設定されている場合、顧客として識別されます。 コンシューマ / エンド ユーザーと連絡担当者の両方が、連絡先エンティティによって表されます。 コンシューマー / エンド ユーザーおよび連絡担当者の間を明確に分離するために、**連絡先** エンティティには **販売可能** という名前のブール フラグがあります。 **販売可能** が **True** の場合、連絡先はコンシューマー / エンド ユーザーであり、その連絡先に対して見積と注文を作成できます。 **販売可能が** が **False** の場合、連絡先は顧客の主要な連絡担当者にすぎません。
+Dataverse では、商取引/組織の顧客はアカウント テーブルで習得され、**RelationshipType** 属性が **顧客** に設定されている場合、顧客として識別されます。 コンシューマ/エンド ユーザーと連絡担当者の両方が、連絡先テーブルによって表されます。 コンシューマー/エンド ユーザーと連絡担当者の間を明確に分離するために、**連絡先** テーブルには **販売可能** という名前のブール値フラグがあります。 **販売可能** が **True** の場合、連絡先はコンシューマー / エンド ユーザーであり、その連絡先に対して見積と注文を作成できます。 **販売可能が** が **False** の場合、連絡先は顧客の主要な連絡担当者にすぎません。
 
 販売不能な取引先担当者が見積または注文プロセスに参加する場合、**販売可能** が **True** に設定され、取引先担当者に販売可能な取引先担当者としてフラグが設定されます。 販売可能な取引先担当者になった連絡先は、引き続き販売可能な連絡先です。
 
@@ -89,6 +89,3 @@ CDS 連絡先 V2             | 連絡先                        | このテン�
 [!include [mapping payment schedules](includes/PaymentSchedules-msdyn-paymentschedules.md)]
 
 [!include [mapping terms of payment](includes/TermsofPayment-msdyn-paymentterms.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

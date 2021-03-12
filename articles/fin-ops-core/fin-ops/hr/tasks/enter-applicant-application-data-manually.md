@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ea39e86ace40cd8e3ad2733b7f7f7a873a963e7
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a1039acd53f493e810b11aafd85116d034b7d323
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693043"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797316"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>申請者およびアプリケーション データの手動入力
 
@@ -61,6 +61,3 @@ ms.locfileid: "4693043"
 6. [保存] をクリックします。
     * 申請を保存した後、申請者の経験、報奨と送付状を含むドキュメントを添付できます。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

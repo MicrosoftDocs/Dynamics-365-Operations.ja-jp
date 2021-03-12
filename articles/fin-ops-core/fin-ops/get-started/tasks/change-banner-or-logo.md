@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 61c286391d83d70036dbed7eae6755cdefce5f2e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 73c66d189035f7bdc302480038c44645eccb50f9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693670"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798073"
 ---
 # <a name="change-the-banner-or-logo"></a>バナーまたはロゴの変更
 
@@ -39,6 +39,3 @@ ms.locfileid: "4693670"
 6. **ナビゲーション ウィンドウ > モジュール > 共通 > 共通 > 既定のダッシュボード** に移動します。 ダッシュボードに新しいバナーまたはロゴの画像が表示されているはずです。  
     
     会社のピッカーを使用して、バナーをアップロードしたものに、会社を変更する必要があるかもしれません。  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

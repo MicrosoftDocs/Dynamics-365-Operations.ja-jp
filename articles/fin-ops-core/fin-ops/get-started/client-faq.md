@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1925c23891a637ba9e9666538323274819692a06
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6fe6da2575b7de866de614ad399c8ad5c0110d9a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692921"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798502"
 ---
 # <a name="client-faq"></a>クライアント FAQ
 
@@ -54,6 +54,3 @@ ms.locfileid: "4692921"
 
 - コントロールに **詳細の表示** 機能がある場合、およびコントロールに値がある場合、その値はハイパーリンクとして表示されます。 ハイパーリンクをクリックすると、詳細を含むページを開くことができます。
 - また、**詳細の表示** はショートカット メニューのオプションです。 右クリックしたときに、いつショートカット メニューが表示されるかについては、前のセクションを参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

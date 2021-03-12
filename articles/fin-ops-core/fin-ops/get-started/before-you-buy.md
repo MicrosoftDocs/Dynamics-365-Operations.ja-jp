@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694139"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798552"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
@@ -30,7 +30,7 @@ Dynamics 365 Finance、Dynamics 365 Supply Chain Management、または Dynamics
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>手順 1: Finance and Operations を 30 日間無料で試す
 
-Dynamics 365 for Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce は、簡単な E メールでのサインアップを通じて 30 日間お試しいただけます。 Finance and Operations アプリケーションのトライアル バージョンには、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオの探索や練習には使用できますが、カスタマイズすることはできません。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations) で詳細を確認できます。
+Dynamics 365 for Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce は、簡単な E メールでのサインアップを通じて 30 日間お試しいただけます。 Finance and Operations アプリケーションのトライアル バージョンには、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオの探索や練習には使用できますが、カスタマイズすることはできません。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 [プレビュー サブスクリプションのサインアップ](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe) で詳細を確認できます。
 
 ## <a name="step-two-choose-a-deployment-option"></a>ステップ 2: 配置オプションを選択
 
@@ -93,6 +93,3 @@ Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速�
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>AX 2012 からアップグレードまたは AX 2009 から移行する場合
 
 Microsoft Dynamics AX 2012 からアップグレードまたは Microsoft Dynamics AX 2009 から移行する場合は、さらに長い期間のトライアル版の対象となる可能性があります。 詳細については、<daxcf@microsoft.com> にお問い合わせください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688262"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744544"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -65,23 +65,23 @@ Package Deployer ツールをインストールした後、次の手順に従っ
 
 1. Dynamics 365 のモデル駆動型アプリにサインインし、**システム** 配下の **設定** ページを開き、 **管理** を選択します。
 2. **管理者** ページで、**システム管理** を選択します。
-3. **カスタマイズ** タブの **プラグインおよびユーザー定義ワークフロー活動の追跡** フィールドで、**すべて** を選択してプラグインのトレース ログを有効にします。 例外が発生したときにのみトレースログを記録する場合は **例外** を選択します。
+3. **カスタマイズ** タブの **プラグインおよびユーザー定義ワークフロー活動の追跡** 列で、**すべて** を選択してプラグインのトレース ログを有効にします。 例外が発生したときにのみトレースログを記録する場合は **例外** を選択します。
 
 
 トレースログを確認にするには、次の手順に従います。
 
 1. Dynamics 365 のモデル駆動型アプリにサインインし、**カスタマイズ** 配下の **設定** ページを開き、 **プラグイン トレース ログ** を選択します。
-2. **タイプ名** フィールドが **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** に設定されているトレース ログを検索します。
+2. **タイプ名** 列が **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** に設定されているトレース ログを検索します。
 3. 完全なログを表示するには、項目をダブルクリックし、**実行** ファストタブで **メッセージ ブロック** のテキストを確認します。
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>デバッグ モードを有効にして、アプリ Finance and Operations でのライブ同期に関する問題のトラブルシューティングを行います。
 
 **エラーを表示するために必要な役割：** Dataverse で発生したシステム管理のデュアル書き込みエラーは、Finance and Operations アプリに表示される場合があります。 エラーメッセージの完全なテキストが表示されない場合がありますが、これはメッセージが長すぎるか個人の識別情報 (PII) が含まれていることが原因です。 エラーの詳細ログを有効にするには、次の手順を実行してください。
 
-1. Finance and Operations アプリにおけるすべてのプロジェクトの構成は、**DualWriteProjectConfiguration** エンティティ内に **IsDebugMode** プロパティが存在します。 Excel アドインを使用して **DualWriteProjectConfiguration** エンティティを開きます。
+1. Finance and Operations アプリにおけるすべてのプロジェクトの構成は、**DualWriteProjectConfiguration** テーブル内に **IsDebugMode** プロパティが存在します。 Excel アドインを使用して **DualWriteProjectConfiguration** テーブルを開きます。
 
     > [!TIP]
-    > エンティティを簡単に開くには、Excelアドインで **デザイン** モードを有効にしてから、ワークシートに **DualWriteProjectConfigurationEntity** を追加してください。 詳細については、[Excel でエンティティ データを開き、Excel アドインを使用して更新する](../../office-integration/use-excel-add-in.md)を参照してください。
+    > テーブルを簡単に開くには、Excel アドインで **デザイン** モードを有効にしてから、ワークシートに **DualWriteProjectConfigurationEntity** を追加してください。 詳細については、[Excel でテーブル データを開き、Excel アドインを使用して更新する](../../office-integration/use-excel-add-in.md) を参照してください。
 
 2. プロジェクトの **IsDebugMode** プロパティを **はい** に設定します。
 3. エラーが発生するシナリオを実行します。
@@ -118,10 +118,7 @@ Package Deployer ツールをインストールした後、次の手順に従っ
 Dynamics 365 Sales で販売注文を作成する際に、**+ 製品の追加** をクリックすると、Dynamics 365 Project Operations の注文明細行フォームにリダイレクトされる場合があります。 このフォームでは、販売注文明細行の **情報** フォームを表示することはできません。 **新規注文明細行** 配下のドロップダウン リストには、**情報** のオプションが表示されません。 これが発生するのは、プロジェクト オペレーションがご利用の環境にインストールされているためです。
 
 **情報** フォームのオプションを再度有効にするには、次の手順を実行してください：
-1. **注文明細行** エンティティに移動します。
+1. **注文明細行** テーブルに移動します。
 2. フォーム ノード配下の **情報** フォームを確認します。 
 3. **情報** フォームを選択し、**セキュリティロールの有効化** をクリックします。 
 4. **すべてのユーザーに表示** されるようにセキュリティ設定を変更します。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

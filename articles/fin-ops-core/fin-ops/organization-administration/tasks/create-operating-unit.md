@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0157e7e080f6b65dc6b3bb8f01ace5b521bb3dca
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 70a57741340df2aec5c20dc576672b6acc8343dd
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694816"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796733"
 ---
 # <a name="create-an-operating-unit"></a>作業単位の作成
 
@@ -41,6 +41,3 @@ ms.locfileid: "4694816"
     + 電子メール アドレス、URL と電話番号など通信方法に関する情報を入力します。 新しい通信記録を入力するには、[新規] をクリックします。 既存の通信記録を変更するには、**詳細オプション > 詳細** の順にクリックします。   
 6. 必要に応じて **作業単位数** を変更します。 この番号は、対応する **関係者** レコードに固有の ID であり、他の作業単位と同じではありません。
 7. **保存** を選択します。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
