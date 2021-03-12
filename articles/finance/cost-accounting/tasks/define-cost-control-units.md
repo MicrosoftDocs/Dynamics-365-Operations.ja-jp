@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMCostControlUnit
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 698989d55994660fa7566cf473cf3fa1ae1d9a83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ac39cc87e69f65117a7463b12d90ce1bb122847f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445321"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990695"
 ---
 # <a name="define-cost-control-units"></a>原価管理単位の定義
 
@@ -41,6 +40,3 @@ ms.locfileid: "4445321"
 10. [分析コード] フィールドで、値を入力または選択します。
 11. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

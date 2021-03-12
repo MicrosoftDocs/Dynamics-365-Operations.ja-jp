@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88f5170610ea9b5634c4bf5da7079cacccdafe04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7246d42b42404f0f1215bbf14b8ad168fe12691c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445320"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990720"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>原価会計元帳のデータ ソースの管理
 
@@ -48,6 +47,3 @@ ms.locfileid: "4445320"
 14. [転記階層] フィールドで、[現行] を選択します。
 15. [OK] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

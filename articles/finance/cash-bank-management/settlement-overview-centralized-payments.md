@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea661441c6c810d144d423b054c1bef058cdd9d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e66d5aac0c2ed966727ef569ac5345fcd91b841e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445175"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989205"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>集中支払の決済の概要
 
@@ -108,6 +107,3 @@ ms.locfileid: "4445175"
 
 ## <a name="withholding-tax"></a>源泉徴収税
 請求書に関連付けられている仕入先口座は、源泉徴収税計算するかを決定するために使用されます。 源泉徴収税を適用する場合は、請求書に関連付けられている法人で計算されます。 法人が異なる通貨を使用すると、請求書に関連付けられている法人の為替レートが使用されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

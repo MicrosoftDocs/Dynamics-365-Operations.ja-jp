@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0997af638c141661afb677e2407a90a883168aed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9259c9bbf52c1c09a7092db6976fc3fabca6601
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445042"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990442"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>固定資産の取得の提案
 
@@ -43,6 +42,3 @@ ms.locfileid: "4445042"
 - 帳簿で設定された取得日付と取得価格が付いている固定資産のみが取得提案に含まれます。  
 11. ページで、**帳簿** タブを選択します。
 12. **投稿** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

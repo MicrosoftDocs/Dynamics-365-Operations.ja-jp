@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6d15a79a359b3c708b2b33893d700377a57c3eb7
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512237"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988484"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>メキシコ向け電子請求のアドオンの使用を開始する
 
@@ -299,6 +298,3 @@ MX-00010 と MX-00016 (CFDI 請求書と CFDI 取消) 機能を有効にする�
 - [電子請求書アドオン機能の概要](e-invoicing-service-overview.md)
 - [電子請求書のアドオンの使用を開始する](e-invoicing-get-started.md)
 - [電子請求のアドオン設定](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

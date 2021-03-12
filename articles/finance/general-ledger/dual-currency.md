@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 04126c0cddd1242e9607274e35f4b7626ad573d2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445034"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990467"
 ---
 # <a name="dual-currency"></a>二重通貨
 
@@ -209,6 +208,3 @@ Dynamics 365 Finance バージョン 10.0.5 (2019 年 10 月) に導入された
 -  連結会社のトランザクション通貨として、ソース会社から会計通貨またはレポート通貨を使用するかどうかを選択できるようになります。
 
 - ソース会社からの会計通貨またはレポート通貨は、双方の通貨が同じである場合は、連結会社の会計通貨金額またはレポート通貨金額に直接コピーされます。 連結会社の会計およびレポートの通貨金額は、いずれの通貨も同じでない場合は、為替レートを使用して計算されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

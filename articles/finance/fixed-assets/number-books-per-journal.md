@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d4ba98cefdc0b555eedfaa56b6a3ca4870b5de93
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: cfb9a9e1456a7d9067e3c4369a7eb7150326655d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650670"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988955"
 ---
 # <a name="number-of-books-per-journal"></a>仕訳帳ごとの帳簿数
 
@@ -46,7 +45,7 @@ ms.locfileid: "4650670"
 
 帳簿数の制限は、重複する資産 ID が同じ仕訳帳に存在しない場合に適用されます。 ただし、資産 ID が帳簿 ID と同じである場合は、仕訳帳ごとの帳簿の数を制限して、資産 ID を同じ仕訳帳に保持することができます。
 
-たとえば、5,001 の固定資産 ID がある場合は、各固定資産 ID に 3 つの帳簿が関連付けられ、各資産帳簿が同じ転記階層に転記されます。 集計を行わずに 3 つの連続する月に対して減価償却を実行します。 バッチジョブによって減価償却仕訳帳が作成され、システムは 667 の固定資産 ID と各固定資産 ID に対して  3 つの帳簿がある 7 つの仕訳帳を作成します。 この結果、2,001 帳簿になります。 したがって、3 か月で、同じ仕訳帳に同じ資産 ID を保持するための 6,003 の仕訳帳明細行が存在することになります。 また、各固定資産 ID に対して 332 の固定資産 ID と 3 つの帳簿を持つ仕訳帳が 1 つ作成されます。 3 か月で、明細行が 2,988 行になります。
+たとえば、5,001 の固定資産 ID がある場合は、各固定資産 ID に 3 つの帳簿が関連付けられ、各資産帳簿が同じ転記階層に転記されます。 集計を行わずに 3 つの連続する月に対して減価償却を実行します。  バッチジョブによって減価償却仕訳帳が作成され、システムは 667 の固定資産 ID と各固定資産 ID に対して  3 つの帳簿がある 7 つの仕訳帳を作成します。 この結果、2,001 帳簿になります。 したがって、3 か月で、同じ仕訳帳に同じ資産 ID を保持するための 6,003 の仕訳帳明細行が存在することになります。 また、各固定資産 ID に対して 332 の固定資産 ID と 3 つの帳簿を持つ仕訳帳が 1 つ作成されます。 3 か月で、明細行が 2,988 行になります。
 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+> [!Note] 
+> 償却提案の作成時に **減価償却の集計** パラメータが有効になっている場合は、**仕訳帳あたりの帳簿数 - 償却提案** フィールドの値は無効になります。 この場合、仕訳帳ごとの帳簿数は 6000 となり、内部定義の上限に達しています。

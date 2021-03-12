@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9162bb9b56432dbeb4638e0598dcbf436ab0b1b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413872"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989504"
 ---
 # <a name="retail-statements"></a>小売明細書
 
@@ -88,6 +87,3 @@ Dynamics 365 Commerce では、クラウド販売時点管理 (POS) または Mo
 - POS のトランザクションに顧客が追加された販売により、個別の販売注文と請求書が固有の顧客ごとに 1 つずつ生成されます。
 
 支払仕訳帳は明細書の支払に対して自動的に作成され、在庫は POS 店舗に更新されます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

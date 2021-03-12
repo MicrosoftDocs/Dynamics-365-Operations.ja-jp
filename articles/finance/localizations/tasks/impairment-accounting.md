@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4232f4ce055904e11239535facfed07dab6f1785
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 316f8a5e864b23167ec9cceaf4e8b911f6f910b7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408177"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988287"
 ---
 # <a name="setup-impairment-accounting-common-parameters-and-posting-profile"></a>減損会計の共通パラメーターおよび転記プロファイルの設定
 
@@ -60,6 +59,3 @@ ms.locfileid: "4408177"
 9. [相殺勘定] フィールドで、任意の値を指定します。
 10. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

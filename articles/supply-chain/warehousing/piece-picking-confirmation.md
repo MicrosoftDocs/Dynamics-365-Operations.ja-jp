@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed63245066799d7d8f14362ab6c9193c0cda7c4a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66903d142ecb7228e4fdec56dbd45472acbdeb69
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431842"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989646"
 ---
 # <a name="piece-picking-confirmation"></a>ピース ピッキング確認
 
@@ -51,6 +50,3 @@ ms.locfileid: "4431842"
 | ピース ピッキング確認 | 選択と棚卸作業タイプに使用できます。 製品の確認書が自動的に選択されます。 モバイル デバイスから各在庫を確認できます。 |
 |  ピースの最大数  |                   ピース ピッキングの確認が有効化された場合にピッキング作業に使用できます。 確認する必要がある在庫数の制限を設定します。                   |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

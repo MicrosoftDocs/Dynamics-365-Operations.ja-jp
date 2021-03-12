@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile, AssetBookTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3f280c73e169dac48e4f38d4457e03ab02a0b32c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 29f29685ae4b1225cc22a5b1ebd4496a2c8a6cff
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408200"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990021"
 ---
 # <a name="create-accelerated-depreciation-profile-and-assign-it-to-book"></a>加速減価償却プロファイルを作成し、帳簿に割り当てる
 
@@ -58,6 +57,3 @@ ms.locfileid: "4408200"
 4. 事前にメモした値を [加速償却プロファイル] に使用します。
 5. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

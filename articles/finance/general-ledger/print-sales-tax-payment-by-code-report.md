@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 7033999f7258e9ddd1d01620f9ad416e94ef3111
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dd490663e66d1eda0eb0ea052e5b54fb867f81df
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445197"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990301"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>コード別消費税支払レポートの印刷 
 
@@ -48,6 +47,3 @@ ms.locfileid: "4445197"
 次の図で、生成されるレポートの例を示します。 レポート コードが割り当てられている消費税コードに対して **消費税通貨** フィールドが **EUR** に設定されている場合、レポート コード **101** が通貨 **EUR** であることがレポートに表示されます。
 
 ![コード別消費税支払レポートの例](media/Sales-tax-payment-by-code-2.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

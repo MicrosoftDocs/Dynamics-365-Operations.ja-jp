@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 74acfab28d45fc75c4ecd595aeba1fb1e13bbcff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a5dbe0d822f7bdb1a62a99c43ef9f7170c889676
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445269"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988880"
 ---
 # <a name="import-currency-exchange-rates"></a>通貨為替レートのインポート
 
@@ -56,6 +55,3 @@ ms.locfileid: "4445269"
 | **既存の為替レートを上書きする**   | このチェック ボックスは、特定の日付の為替レートが既に存在する場合に、通貨ペアの既存の為替レートの更新を管理します。 このチェック ボックスをオフにすると、別の為替レートが既にある場合、特定の日付の為替レートはインポートされません。                                                                                       |
 | **祝祭日にはインポートしない** | このチェック ボックスは祝祭日の日付の為替レートのインポートを管理します。 たとえば、このチェック ボックスを選択し、為替レートのプロバイダーとして、欧州中央銀行を使用すると、現在の法人に関連する祝祭日の為替レートは更新されません。 このオプションは、一部のプロバイダーでは使用できない場合があります。 |
 | **前日からのレート** | このチェックボックスは、**機能管理** ページの **現在または過去の日付での ECB インポート** を有効にした場合に使用できます。 このチェック ボックスは、プロバイダーである *ヨーロッパ中央銀行* に対してのみ使用できます。 このチェック ボックスを選択して、前営業日の 16:00 CET 頃に欧州中央銀行が公表した通貨為替レートをインポートします。 既定では、このチェック ボックスはオンになっています。 平日の同日に公開されている通貨の為替レートをインポートする場合は、このチェック ボックスをオフにします。  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetRetirementObligationDocument_JP, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationLine_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e25cb02da6a55f5fcb293c49d1354c7f66a6cd
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: fffa82b76a8fade3d1ef721336a9971edb42a1d0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4408206"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988216"
 ---
 # <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力
 
@@ -67,6 +66,3 @@ ms.locfileid: "4408206"
 2. **トランザクション日付** フィールドで、資産除去責務を認識する日付を入力します
 3. **見積除去原価調整** フィールドにキャッシュ フロー金額を入力します
 4. **OK** をクリックします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

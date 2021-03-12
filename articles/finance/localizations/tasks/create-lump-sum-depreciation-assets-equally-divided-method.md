@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 95a7a491ad01a2cea6d4964b4ce19ed663d5bc67
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 75382aa4c1e4be94524163063a043c8a577fd725
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408193"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990030"
 ---
 # <a name="create-lump-sum-depreciation-assets-using-equally-divided-method"></a>均等償却を使用した一括比例配分減価償却資産の作成
 
@@ -63,6 +62,3 @@ ms.locfileid: "4408193"
     * [均等償却年数] が 3 年であることを確認します。  
     * この値は、固定資産のタイプが一括比例配分か、繰延資産か、または低価額資産かによって異なります。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

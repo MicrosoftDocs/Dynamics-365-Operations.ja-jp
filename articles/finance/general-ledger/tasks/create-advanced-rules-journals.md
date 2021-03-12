@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalControl, CompanyLookup, LedgerJournalPostControl
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea6ca24d27bb5b00bbe31060ce2f7e40bf2fb335
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c06855c7a7648c5829b90bc548a7d2e400967698
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445263"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988605"
 ---
 # <a name="create-advanced-rules-for-journals"></a>仕訳帳の詳細なルールの作成
 
@@ -58,6 +57,3 @@ ms.locfileid: "4445263"
 4. ツリーで、「この仕訳帳名で転記を許可するグループ」をチェックします。
 5. **OK** をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

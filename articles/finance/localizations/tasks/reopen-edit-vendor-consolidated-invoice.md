@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendConsInvoice_JP, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed874be8722d1305f111a5a478946c79fa1c8467
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1d0dd5a4b31ce6d58f25735042696fa254f7f183
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408142"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988232"
 ---
 # <a name="reopen-and-edit-a-vendor-consolidated-invoice"></a>仕入先月次締め請求書の再オープンと編集
 
@@ -55,6 +54,3 @@ ms.locfileid: "4408142"
     * [月次締め日] 前に請求されている発注書が追加されていることを確認します。  
 3. [確認] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b6d32cc2c1844c6c334dd00b249c736e153f13d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c0a648984a8b4aaa314707e72a615f516116a193
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445324"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990745"
 ---
 # <a name="create-a-cost-rollup-policy"></a>原価ロールアップ ポリシーの作成
 
@@ -68,6 +67,3 @@ ms.locfileid: "4445324"
     * 全てのコスト センターに、対応する第 2 原価要素が位置づけされるまで続けます。  
 16. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

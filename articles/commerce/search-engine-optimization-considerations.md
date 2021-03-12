@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 639d6fa74954b5f74560c7e51523ab2b4d2b7f62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413836"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989355"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>サイトにおける検索エンジン最適化 (SEO) の考慮事項
 
@@ -56,6 +55,3 @@ Dynamics 365 Commerce は、ビジュアル ページ ビルダーの「What You
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
 [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

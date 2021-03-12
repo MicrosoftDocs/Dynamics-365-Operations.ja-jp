@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: ''
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: cd06410dd6260e6a371b0044546be7f8c9957c80
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432277"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989824"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>IoT インテリジェンスの Azure resources を設定する
 
@@ -162,6 +161,3 @@ Redis キャッシュの接続文字列のシークレットを保存するに�
 > いずれかの接続文字列を更新する場合は、常にこのシークレットの値も更新する必要があります。
 
 以上で、必要な Azure リソースのプロビジョニングが完了しました。 次の手順では、[Microsoft Dynamics Lifecycle Services (LCS) に、IoT インテリジェンスをインストール](iot-lcs-setup.md) します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
