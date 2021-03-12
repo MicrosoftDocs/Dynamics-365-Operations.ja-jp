@@ -11,34 +11,33 @@ ms.technology: ''
 ms.search.form: SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0553cef4bd5cafa89d756ae393284f4c23453727
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dcc5fc4e982be082991f875bd8f5b6b71ce82ad9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432092"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974588"
 ---
-# <a name="create-subscription-fee-transactions"></a><span data-ttu-id="3378d-103">定期売買手数料トランザクションの作成</span><span class="sxs-lookup"><span data-stu-id="3378d-103">Create subscription fee transactions</span></span> 
+# <a name="create-subscription-fee-transactions"></a><span data-ttu-id="de4f6-103">定期売買手数料トランザクションの作成</span><span class="sxs-lookup"><span data-stu-id="de4f6-103">Create subscription fee transactions</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="3378d-104">**サービス管理** \> **共通** \> **サービスの定期売買** \> **すべてのサービス定期売買** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="3378d-104">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span>
+1.  <span data-ttu-id="de4f6-104">**サービス管理** \> **共通** \> **サービスの定期売買** \> **すべてのサービス定期売買** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="de4f6-104">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span>
 
-2.  <span data-ttu-id="3378d-105">**すべてのサービス定期売買** リスト ページで、定期売買手数料トランザクションを作成する定期売買を選択します。</span><span class="sxs-lookup"><span data-stu-id="3378d-105">On the **All service subscriptions** list page, select the subscription for which you want to create a subscription fee transaction.</span></span>
+2.  <span data-ttu-id="de4f6-105">**すべてのサービス定期売買** リスト ページで、定期売買手数料トランザクションを作成する定期売買を選択します。</span><span class="sxs-lookup"><span data-stu-id="de4f6-105">On the **All service subscriptions** list page, select the subscription for which you want to create a subscription fee transaction.</span></span>
 
-3.  <span data-ttu-id="3378d-106">**アクション ウィンドウ** の、**定期売買** タブで、**定期売買手数料** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3378d-106">On the **Action Pane**, on the **Subscription** tab, click **Subscription fees**.</span></span>
+3.  <span data-ttu-id="de4f6-106">**アクション ウィンドウ** の、**定期売買** タブで、**定期売買手数料** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de4f6-106">On the **Action Pane**, on the **Subscription** tab, click **Subscription fees**.</span></span>
 
-4.  <span data-ttu-id="3378d-107">**定期売買手数料の作成** フォームで、フィールドに適切な情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="3378d-107">On the **Create subscription fee** form, enter the appropriate information in the fields.</span></span>
+4.  <span data-ttu-id="de4f6-107">**定期売買手数料の作成** フォームで、フィールドに適切な情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="de4f6-107">On the **Create subscription fee** form, enter the appropriate information in the fields.</span></span>
 
-5.  <span data-ttu-id="3378d-108">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3378d-108">Click **OK**.</span></span>
+5.  <span data-ttu-id="de4f6-108">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de4f6-108">Click **OK**.</span></span>
 
   
 
