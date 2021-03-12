@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BOMTable, BOMConfigRule, ConfigItemIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6bc0af4d95e9430d0b5c8b7fc9a4ade076802044
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d75e9ecaa814085e8fce1836125553511cf4f48b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431967"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999734"
 ---
 # <a name="create-configuration-rules"></a>コンフィギュレーション ルールの作成
 
@@ -55,6 +54,3 @@ ms.locfileid: "4431967"
     * 選択された方法によって選択または選択解除となる品目番号を選択します。  
 18. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

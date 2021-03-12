@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e4002bf7dddb196edf306268ecc16e1bfa5d6d1e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d8d28b9670d8752c1039684551d56b1779a10b20
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432144"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001602"
 ---
 # <a name="production-output-location"></a>生産出荷場所
 
@@ -40,6 +39,3 @@ ms.locfileid: "4432144"
 4. そこに場所が見つからない場合は、製造オーダーに定義されている倉庫で定義されている出荷場所を使用します。
 
 既定の生産出荷場所は、高度な倉庫プロセスを使用して設定されている製品にのみ設定されます。 このタイプの品目が完了報告されると、**商品の保存を完了** または **連産品および副産物の保存** タイプの倉庫作業が作成されます。 このタイプの作業は、ピッキング場所として生産出荷場所を使用します。 プット アウェイの場所は、場所ディレクティブによって決定されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce750745d6f094a296b43827568ee1745179de2d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0fb1f9e017de71d01fbf7a05b579d68b702aa7c9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432376"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001502"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>販売注文に対する同一バッチの引当
 
@@ -45,6 +44,3 @@ ms.locfileid: "4432376"
 - 有効期限、出庫期限、および顧客の販売可能日数に基づくと、バッチの在庫有効期間が十分に残っていない。
 
 **倉庫管理プロセスを使用** が有効になっている保管分析コード グループに関連付けられている品目については、場所分析コードの上に定義されているバッチ番号在庫分析コードのある引当階層を使用して、特定のバッチ番号を引当することができます。 販売および移動指示明細書の **バッチ引当** ページで、利用可能なバッチ番号に基づいて複数の明細行を選択および引当することもできます。 場所の下にバッチ番号分析コードがある引当階層を使用している場合の処理の詳細については、[フレキシブルな倉庫レベル分析コードの引当ポリシー](../warehousing/flexible-warehouse-level-dimension-reservation.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

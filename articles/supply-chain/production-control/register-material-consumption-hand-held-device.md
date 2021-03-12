@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1706093
 ms.assetid: 75ee68e0-4b9f-4f4d-b286-f498e0eb73fa
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67fbb8eebb637a96638c574373441213c66e9ddc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40779d1f8bc14072928767ae1c83fdda47476871
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432244"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998881"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>モバイル デバイスを使用して材料消費を登録する
 
@@ -40,7 +39,7 @@ ms.locfileid: "4432244"
 
 継続的な生産プロセス (5) では、バッチ管理されている原材料 RM-100 が消費されます。 材料が、それぞれ 100 ポンドの 2 つのバッチ B1 および B2 でライセンス プレート PL-1 の場所 Bulk-001 (1) に手持在庫であります。 倉庫作業 (2) がリリースされ、RM-100 が処理され、Bulk-001 からライセンス プレートにより制御されていないものと定義される生産入庫の場所 PIL-01 (3) にピッキングされます。 機械オペレーターは生産入庫の場所 (3) の材料の重さを計測し、その重量とバッチ番号を消費済 (4) として登録します。 生産入庫の場所から、定義済の時間間隔で材料の一部が手動で生産プロセスに追加されます。 機械オペレーターが材料を追加すると、スケールで計量され、バッチ番号が登録されます。
 
-## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>ハンドヘルド デバイスを使用して消費を登録するワークフローの設定
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>ハンドヘルド デバイスを使用して消費を登録するワークフローの設定
 バッチ管理されている原材料 RM-100 がある部品表で、完成品 FG-100 を作成します。 RM-100 の 2 つのバッチ B1 および B2 を、100 の数量で場所 Bulk-001 にライセンス プレート PL-1 で追加します。 RM-100 の部品表の部品消費ルールが **手動** に設定されます。 生産入庫の場所を PIL-01 に設定します。 倉庫 51 でこの場所を既定の生産入庫の場所として選択することでこの操作を行うことができます。
 
 1.  新しいモバイル デバイス メニュー項目を作成します。 
@@ -68,7 +67,7 @@ ms.locfileid: "4432244"
 
 製造オーダーが開始された後は、ハンドヘルド デバイスのワークフローで材料消費を登録できます。 まず、バッチ B1 の 25 ポンドの消費を登録します。
 
-6.  ハンドヘルド デバイスのメニューの **材料消費の登録** のメニュー項目を選択して、次の詳細を入力します。 
+6.  ハンドヘルド デバイスのメニューの **材料消費の** **登録** のメニュー項目を選択して、次の詳細を入力します。 
 
 -    製造オーダー番号。 
 -    このケース PIL-01 で材料が消費される場所。 
@@ -78,11 +77,11 @@ ms.locfileid: "4432244"
 
 7.  **OK** を選択します。
 
-ディスプレイに「仕訳帳明細行が作成されました」というメッセージが表示されることに注意してください。 製造オーダーに、品目番号 RM-100 およびバッチ番号 B1 のタイプ **生産ピッキング リスト** の未処理の仕訳帳があります。 
+ディスプレイに "仕訳帳明細行が作成されました" というメッセージが表示されることに注意してください。 製造オーダーに、品目番号 RM-100 およびバッチ番号 B1 のタイプ **生産ピッキング リスト** の未処理の仕訳帳があります。 
 
 バッチ番号 B2 など、登録を選択して続行できるようになり、**OK** を選択するたびに、新しい仕訳帳明細行が未処理の仕訳帳に追加されます。 
 
-登録が完了したら、**実行** を選択して仕訳帳に転記し、ワークフローを終了します。
+登録が完了したら、**完了** を選択して仕訳帳に転記し、ワークフローを終了します。
 
 ### <a name="additional-comments"></a>追加コメント 
 
@@ -92,6 +91,3 @@ ms.locfileid: "4432244"
 -   材料は超過消費することができます。 たとえば、材料が 100 ポンドの数量で消費される見積の場合、105 ポンドといった数量で超過消費することができます。
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

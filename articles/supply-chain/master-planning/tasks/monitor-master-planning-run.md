@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1cbe2c55ef9e3ed35db30ca927f3472c750c1db5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431739"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999809"
 ---
 # <a name="monitor-a-master-planning-run"></a>マスター プランの実行の監視
 
@@ -127,6 +126,3 @@ ms.locfileid: "4431739"
 1. グリッドで、**フィールド** フィールドが **品目番号** に設定されている行を選択します。
 1. **基準** フィールドに値を入力します。
 1. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

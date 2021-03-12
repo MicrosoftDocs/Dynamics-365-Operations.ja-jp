@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a9b7fe1722c366eb504882c61a337a95500c92ab
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413859"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000512"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>買い物カゴと清算ページの概要
 
@@ -107,6 +106,3 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 [製品詳細ページの概要](quick-tour-pdp.md)
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

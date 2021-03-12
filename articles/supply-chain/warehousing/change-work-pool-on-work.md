@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66d110c3235e8a87b64bf160bdad8524fad6abe5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432001"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001152"
 ---
 # <a name="change-work-pool-on-work"></a>作業での作業プールの変更
 
@@ -149,6 +148,3 @@ ms.locfileid: "4432001"
 > **作業プールの変更** ダイアログ ボックスが表示された際に、既定で **作業プール ID** フィールドが空白になる場合があります。 このフィールドが空白になっている場合に **OK** を選択して変更を適用すると、作業プールが作業から完全に削除されます。
 >
 > 作業プールを切り替えるだけでなく、この手順を使用して、作業プールがない作業項目に作業プールを追加したり、作業プールがある作業項目から作業プールを削除したりすることもできます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

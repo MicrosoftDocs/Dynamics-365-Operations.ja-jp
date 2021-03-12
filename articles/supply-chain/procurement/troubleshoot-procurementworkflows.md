@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: cdedc45b8f057310801f134104156a732fb58d86
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e8274890c581fffc7330538430c9b2ba060041bc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432389"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999106"
 ---
 # <a name="troubleshoot-procurement-and-sourcing-workflows"></a>調達ワークフローに関するトラブルシューティング
 
@@ -80,6 +79,3 @@ SysWorkflowQueue-resume
 
 この問題は、変更管理の対象になる発注書に対してのみ発生します。 これは、このキャンセルに必要のある変更が懸念されることから発生します。 この承認は、システムによって自動的に行うことができます。 したがって、このプロセスでは、キャンセルされた発注書を承認ワークフローに送信して、*承認済* 状態にすることができます。 この時点で、**発注書の準備** ワークスペースのドラフト発注書の一覧にその発注書が表示されなくなります。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

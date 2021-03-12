@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ae4062401cd5be2371c45642b78bf3708b04f664
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432325"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001201"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>例外処理の倉庫作業をキャンセルする
 
@@ -45,6 +44,3 @@ Microsoft Dynamics 365 Supply Chain Management のキャンセル作業機能を
 作業をブロック解除するには、システムは残りの作業明細行をキャンセルし、ユーザーが指定した作業 ID に関連付けられている倉庫データを修正します。 その後、影響を受ける品目数量を含む、通常の倉庫処理工程を再開できます。
 
 作業がキャンセルされた後に影響を受ける品目を特定の場所に配置するには、ユーザーはモバイル デバイスで在庫移動または数量調整操作を使用する必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
