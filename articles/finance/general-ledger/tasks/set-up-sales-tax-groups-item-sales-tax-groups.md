@@ -11,42 +11,41 @@ ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24210129f7595c6544234c20915f4003bf0e1eb8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e35f98de715af95b0bec2b2ca5d7e7570aa8fdba
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445037"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994493"
 ---
-# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="6db49-103">売上税グループと品目売上税グループの設定</span><span class="sxs-lookup"><span data-stu-id="6db49-103">Set up sales tax groups and item sales tax groups</span></span>
+# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="d6c70-103">売上税グループと品目売上税グループの設定</span><span class="sxs-lookup"><span data-stu-id="d6c70-103">Set up sales tax groups and item sales tax groups</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6db49-104">このタスクの記録では、売上税および品目売上税のグループ設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="6db49-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="6db49-105">売上税グループは、顧客と仕入先に関連付けられた売上税コードのグループです。</span><span class="sxs-lookup"><span data-stu-id="6db49-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="6db49-106">また、特定の仕入先や顧客には転記されないトランザクションの勘定科目にも関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="6db49-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="6db49-107">品目売上税グループは、製品などのリソースに関連付けられた売上税コードのグループです。</span><span class="sxs-lookup"><span data-stu-id="6db49-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="6db49-108">特定のトランザクションに適用される売上税は、トランザクションの売上税グループと品目売上税グループの両方に含まれる売上税コードによって決定されます。</span><span class="sxs-lookup"><span data-stu-id="6db49-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="6db49-109">売上税の計算が可能なのは、売上税の計算または記録が必要な各トランザクションに対して、売上税グループと品目売上税グループが選択されている場合のみです。</span><span class="sxs-lookup"><span data-stu-id="6db49-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
+<span data-ttu-id="d6c70-104">このタスクの記録では、売上税および品目売上税のグループ設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="d6c70-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="d6c70-105">売上税グループは、顧客と仕入先に関連付けられた売上税コードのグループです。</span><span class="sxs-lookup"><span data-stu-id="d6c70-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="d6c70-106">また、特定の仕入先や顧客には転記されないトランザクションの勘定科目にも関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="d6c70-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="d6c70-107">品目売上税グループは、製品などのリソースに関連付けられた売上税コードのグループです。</span><span class="sxs-lookup"><span data-stu-id="d6c70-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="d6c70-108">特定のトランザクションに適用される売上税は、トランザクションの売上税グループと品目売上税グループの両方に含まれる売上税コードによって決定されます。</span><span class="sxs-lookup"><span data-stu-id="d6c70-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="d6c70-109">売上税の計算が可能なのは、売上税の計算または記録が必要な各トランザクションに対して、売上税グループと品目売上税グループが選択されている場合のみです。</span><span class="sxs-lookup"><span data-stu-id="d6c70-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
 
-1. <span data-ttu-id="6db49-110">**ナビゲーション ウィンドウ > モジュール > 税 > 間接税 > 売上税 > 売上税グループ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="6db49-110">Go to **Navigation pane > Modules > Tax > Indirect taxes > Sales tax > Sales tax groups**.</span></span>
-2. <span data-ttu-id="6db49-111">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db49-111">Click **New**.</span></span>
-3. <span data-ttu-id="6db49-112">**売上税グループ** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6db49-112">In the **Sales tax group** field, type a value.</span></span>
-4. <span data-ttu-id="6db49-113">**説明** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6db49-113">In the **Description** field, type a value.</span></span>
-5. <span data-ttu-id="6db49-114">**設定** セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="6db49-114">Toggle the expansion of the **Setup** section.</span></span>
-6. <span data-ttu-id="6db49-115">**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db49-115">Click **Add**.</span></span>
-7. <span data-ttu-id="6db49-116">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="6db49-116">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="6db49-117">**売上税コード** フィールドで、ドロップダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="6db49-117">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="6db49-118">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db49-118">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="6db49-119">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db49-119">Click **Save**.</span></span>
-11. <span data-ttu-id="6db49-120">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6db49-120">Close the page.</span></span>
-12. <span data-ttu-id="6db49-121">**税 > 間接税 > 売上税 > 品目売上税グループ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="6db49-121">Go to **Tax > Indirect taxes > Sales tax > Item sales tax groups**.</span></span>
-13. <span data-ttu-id="6db49-122">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db49-122">Click **New**.</span></span>
-14. <span data-ttu-id="6db49-123">**品目売上税グループ** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6db49-123">In the **Item sales tax group** field, type a value.</span></span>
-15. <span data-ttu-id="6db49-124">**説明** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6db49-124">In the **Description** field, type a value.</span></span>
-16. <span data-ttu-id="6db49-125">**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db49-125">Click **Add**.</span></span>
-17. <span data-ttu-id="6db49-126">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="6db49-126">In the list, mark the selected row.</span></span>
-18. <span data-ttu-id="6db49-127">**売上税コード** フィールドで、ドロップダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="6db49-127">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="6db49-128">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db49-128">In the list, click the link in the selected row.</span></span>
-20. <span data-ttu-id="6db49-129">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6db49-129">Click **Save**.</span></span>
+1. <span data-ttu-id="d6c70-110">**ナビゲーション ウィンドウ > モジュール > 税 > 間接税 > 売上税 > 売上税グループ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="d6c70-110">Go to **Navigation pane > Modules > Tax > Indirect taxes > Sales tax > Sales tax groups**.</span></span>
+2. <span data-ttu-id="d6c70-111">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-111">Click **New**.</span></span>
+3. <span data-ttu-id="d6c70-112">**売上税グループ** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="d6c70-112">In the **Sales tax group** field, type a value.</span></span>
+4. <span data-ttu-id="d6c70-113">**説明** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="d6c70-113">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="d6c70-114">**設定** セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="d6c70-114">Toggle the expansion of the **Setup** section.</span></span>
+6. <span data-ttu-id="d6c70-115">**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-115">Click **Add**.</span></span>
+7. <span data-ttu-id="d6c70-116">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-116">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="d6c70-117">**売上税コード** フィールドで、ドロップダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="d6c70-117">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="d6c70-118">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-118">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="d6c70-119">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-119">Click **Save**.</span></span>
+11. <span data-ttu-id="d6c70-120">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="d6c70-120">Close the page.</span></span>
+12. <span data-ttu-id="d6c70-121">**税 > 間接税 > 売上税 > 品目売上税グループ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="d6c70-121">Go to **Tax > Indirect taxes > Sales tax > Item sales tax groups**.</span></span>
+13. <span data-ttu-id="d6c70-122">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-122">Click **New**.</span></span>
+14. <span data-ttu-id="d6c70-123">**品目売上税グループ** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="d6c70-123">In the **Item sales tax group** field, type a value.</span></span>
+15. <span data-ttu-id="d6c70-124">**説明** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="d6c70-124">In the **Description** field, type a value.</span></span>
+16. <span data-ttu-id="d6c70-125">**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-125">Click **Add**.</span></span>
+17. <span data-ttu-id="d6c70-126">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-126">In the list, mark the selected row.</span></span>
+18. <span data-ttu-id="d6c70-127">**売上税コード** フィールドで、ドロップダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="d6c70-127">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="d6c70-128">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-128">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="d6c70-129">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d6c70-129">Click **Save**.</span></span>
 
