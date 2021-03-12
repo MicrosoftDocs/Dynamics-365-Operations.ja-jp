@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3891d846f51b5335809876a6557dfb5a031272c8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fbd0ead6d73f4b032bdc3805fce87ec9c802535
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413817"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006163"
 ---
 # <a name="task-management-overview"></a>タスク管理の概要
 
@@ -53,6 +52,3 @@ ms.locfileid: "4413817"
 [店舗または従業員へのタスク リストの割り当て](task-mgmt-assign-lists.md)
 
 [POS におけるタスクの管理](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

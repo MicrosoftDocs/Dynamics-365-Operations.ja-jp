@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0a5ca1e116e931ba992eab51a06dae9fdf92756
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413814"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006138"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) および Cloud POS のタスク レコーダーとヘルプ
 
@@ -34,7 +33,7 @@ ms.locfileid: "4413814"
 
 ## <a name="overview"></a>概要
 
-Retail Modern POS またはクラウド POS のタスク レコーダーは、高い応答性に焦点を合わせて構築された新しいソリューションです。 業務プロセスを記録する消費者向けに、拡張性とシームレスな統合のための柔軟なアプリケーション プログラミング インターフェイス (API) を提供します。 さらに、Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) で業務プロセス モデル (BPM) ツールと統合されたタスク レコーダーが公開されました。 そのため、ユーザーは、引き続き記録からリッチな業務プロセス ダイアグラムを作成してアプリケーションを分析、設計できます。
+Retail Modern POS またはクラウド POS のタスク レコーダーは、高い応答性に焦点を合わせて構築された新しいソリューションです。 業務プロセスを記録する消費者向けに、拡張性とシームレスな統合のための柔軟なアプリケーション プログラミング インターフェイス (API) を提供します。 さらに、Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) で業務プロセス モデル (BPM) ツールと統合されたタスク レコーダーが公開されました。 そのため、ユーザーは、引き続き記録からリッチな業務プロセス ダイアグラムを作成してアプリケーションを分析、設計できます。
 
 ## <a name="architecture"></a>アーキテクチャ
 
@@ -56,7 +55,7 @@ POS でタスク記録を有効化するには、次の手順に従います。
 次の手順に従い、タスク レコーダーを使用して新しい記録を作成します。
 
 1. Retail Modern POS または Cloud POS を起動し、サインインします。
-2. **設定** ページの **タスク レコーダー** セクションで、**タスク レコーダーを開く** をクリックします。 **タスク レコーダー** ウィンドウが表示されます。 右上隅の **閉じる** ボタン (**X**) をクリックして **タスク レコーダー** ウィンドウを閉じてから、新しい記録を開始します。 ウィンドウをもう一度開くには、手順 2 を繰り返します。
+2. **設定** ページの **タスク レコーダー** セクションで、**タスク レコーダーを開く** をクリックします。 **タスク レコーダー** ウィンドウが表示されます。 右上隅の **閉じる** ボタン (**X**) をクリックして **タスク レコーダー** ウィンドウを閉じてから、新しい記録を開始します。 ペインをもう一度開くには、手順 2 を繰り返します。
 
     [![[タスク レコーダー] ウィンドウ](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
@@ -146,6 +145,3 @@ You can specify the beginning and end of a set of grouped steps by using the **�
 
 > [!NOTE]
 > Retail Modern POS および Cloud POS のヘルプ システムでは、使用しているフォームまたは行っている操作によるタスク ガイドは表示されません。 検索ボックスにプロセス名を入力して **検索** ボタンをクリックする必要があります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

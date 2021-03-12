@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
-ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.openlocfilehash: e4abe1a03997853053f60c750199874a61fc68c0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654201"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006394"
 ---
 # <a name="advanced-load-building-during-wave"></a>ウェーブ中の高度な積荷構築
 
@@ -250,6 +249,3 @@ ms.locfileid: "4654201"
 1. 作成した販売注文の **販売注文明細行** クイック タブで **明細行の追加** を選択して、別の行を追加します。
 1. 新しい明細行で、**品目番号** フィールドを *M9200* に、**数量** フィールドを *1* に設定します。
 1. 6 行目から 9 行目を繰り返して明細行を引当し、倉庫にリリースします。 以前と同様に、システムは追加した明細行に **新規** の出荷を作成します。 ただし、この品目は **CarAudio** 品目グループのものであるため、**積荷混合グループに設定した制約を渡すことができません**。 したがって、**新しい積荷に追加** されます。 積荷構築テンプレートに積荷混合グループを指定していない場合は、この出荷が最初の積荷に追加されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
