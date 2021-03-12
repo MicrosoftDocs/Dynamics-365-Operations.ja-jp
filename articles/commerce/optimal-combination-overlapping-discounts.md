@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 565722da65cbb711acedb5acf7de4edfbd615314
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 747c67812b0a357c35778c82531e9db7e99e510b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413765"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972710"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>重複割引の最適な組み合わせを決定する
 
@@ -84,6 +83,3 @@ ms.locfileid: "4413765"
 ![基準金額の計算式](./media/overlapping-discount-combo-06.jpg)
 
 共有製品郡における各割引の基準金額の値が計算された後、割引は最大限の基準金額の値から最低限の基準金額の値まで、徹底して順番に共有製品に適用されます。 この方法では、1 回の割引インスタンスが適用されるたびに、残りのすべての割引可能性が比較されることはありません。 その代わりに、重複割引は 1 回比較され、その後順番に適用されます。 追加の比較は行われません。 **Commerce パラメーター** ページの **割引** タブで、基準金額の値のメソッドに切り替えるようにしきい値を設定できます。 合計割引を計算するための許容可能な時間は、小売業によって異なります。 ただし、この時間は、一般に、数 10 ミリ秒から 1 秒の範囲内に入ります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

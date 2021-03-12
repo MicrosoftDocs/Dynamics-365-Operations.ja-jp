@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 17b4b2f487fdeb9f1aa7d77bf87197885ba60e47
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b41b87cd3e2e80b87318c5c771d45a4d0e5d4b85
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445150"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971706"
 ---
 # <a name="periodic-credit-management-tasks"></a>定期与信管理タスク
 
@@ -44,6 +43,3 @@ ms.locfileid: "4445150"
 **顧客残高統計** の更新プロセスを実行すると、**残高統計の照会** ページに表示される残高統計の計算を更新できます。 この情報は、リスクのスコアと、**顧客** ページの与信統計情報ボックスに表示される値を計算するために使用されます。
 
 プロセスを実行すると、単一の顧客の顧客残高統計が更新されます。 複数の顧客に対してプロセスを実行するバッチ ジョブを設定するには、**残高統計の計算** ページ (**与信管理\>定期処理のタスク\>残高統計の計算**) を使用します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

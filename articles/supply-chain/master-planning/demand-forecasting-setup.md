@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b7b0976494a8bb128ae6bb40cbcdf7c691185f23
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432207"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970509"
 ---
 # <a name="demand-forecasting-setup"></a>需要予測の設定
 
@@ -84,8 +83,8 @@ ms.locfileid: "4432207"
 - **信頼レベルのパーセンテージ**: 信頼区間は、需要予測の商品見積として機能する値の範囲で構成されます。 95% の信頼レベルのパーセンテージは、未来の需要が信頼区間の範囲外になるリスクが 5% あることを示します。
 - **季節性の強制**: 特定のタイプの季節性を使用するようにモデルに強制するかどうかを指定します。 ARIMA と ETS にのみ適用されます。 オプション: 自動 (既定)、なし、追加、乗算。
 - **予測モデル**: オプション: ARIMA、ARIMA、ETS、STL、ETS+ARIMA、ETS+STL、すべて。 最も適合するモデルを選択するには、**すべて** を使用してください。
-- **最大予測値**: 予測に使用する最大値を指定します。 形式: +1E[n] または数値定数。
-- **最小予測値**: 予測に使用する最小値を指定します。 形式: -1E[n] または数値定数。
+- **最大予測値**: 予測に使用する最大値を指定します。 形式: +1E [n] または数値定数。
+- **最小予測値**: 予測に使用する最小値を指定します。 形式: -1E [n] または数値定数。
 - **欠落値の代入**: 履歴データのギャップを埋める方法を指定します。 オプション: 数値、平均、以前の値、線形補間、多項式補間。
 - **欠落値の代入スコープ**: 値の代入を個々の粒度属性のデータ範囲に適用するか、データセット全体に適用するかを指定します。 オプション: GRANULARITY_ATTRIBUTE (既定値)、グローバル。
 - **季節性のヒント**: 季節データについては、予測の精度を高めるために予測モデルに対するヒントを指定してください。 形式: 需要パターンが繰り返し現れるバケット数を整数で指定します。 たとえば、6 か月ごとに繰り返されるデータの場合は「6」を入力します。
@@ -102,6 +101,3 @@ ms.locfileid: "4432207"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 91c0a96abdd7df9e85e63ca6b1b47a57f3f401eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e14b029a1420eda6af6e83392f295a071a29842a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413628"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972433"
 ---
 # <a name="retail-price-reports"></a>小売価格レポート
 
@@ -44,6 +43,3 @@ ms.locfileid: "4413628"
 | 価格変更のある製品の表示 | これを **はい** 設定すると、価格が変更された日付のみの価格が表示されます。 選択した **開始日** から *1 日前* の価格が常に表示され、それにより店舗マネージャーは選択した期間に価格変更がない製品を簡単に識別でき、また現在の価格も確認できます。 |
 
 レポートが生成された後、追加のフィルタリング ニーズに合わせて Excel ファイルをダウンロードできます。 価格レポートを使用して、過去の日付の製品の価格履歴を確認することもできます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

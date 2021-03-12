@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f71006570cd8f2bdc0385388eae0800cd29d3ec8
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: ff0aa5fd0b78814dfa5bb00d6d5ef2984c566d14
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445388"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971406"
 ---
 # <a name="configure-lease-parameters"></a>リースのパラメーターを構成する
 
@@ -46,6 +45,3 @@ ms.locfileid: "4445388"
 
     > [!NOTE]
     > このオプションは **いいえ** のままにしておくことをお勧めします。 このオプションの設定は、決済済みの帳簿が誤って減価償却されないようにする検証と制御に使用されます。 このオプションを  **いいえ** に設定すると、正味簿価額と将来の減価償却計算を正確に保つことができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

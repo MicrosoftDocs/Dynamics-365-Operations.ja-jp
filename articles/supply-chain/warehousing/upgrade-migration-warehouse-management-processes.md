@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 123be2430f910dfbea438cb6a51be7203eb39fc8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45d9809d4bbf1b5a68c3f799ce5d51f9709d276b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431625"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970284"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>倉庫管理を Microsoft Dynamics AX 2012 から Supply Chain Management にアップグレードする 
 
@@ -83,6 +82,3 @@ Supply Chain Management では、品目の追跡が倉庫管理プロセスに�
 6.  **品目の保管分析コード グループの変更** ページで、品目番号、保管分析コード グループ、および単位順序グループを追加します。 ページ上に直接、Microsoft Office 統合の使用、または [データ管理](../../dev-itpro/data-entities/data-entities.md) にあるデータ エンティティ プロセスを使用してこのステップを完了できます。
 7.  変更の検証。 検証プロセスの一部として、データの整合性のさまざまな検証が実行されます。 より大きなアップグレード プロセスの一部として、発生した問題をソースの実装上で調整する必要があるかもしれません。 この場合は、追加のデータ アップグレードが必要になります。
 8.  変更の処理。 すべての在庫分析コードの更新にはしばらく時間がかかる場合があります。 バッチ ジョブタスクを使用して、進捗状況を監視することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445316"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971281"
 ---
 # <a name="budget-planning"></a>予算計画
 
@@ -106,7 +105,7 @@ ms.locfileid: "4445316"
 
 2.5. 「特定の組織にアクセス許可を付与」を選択します。 最初の手順で作成した組織階層を選択します。 財務のノードを選択し、子を含むアクセス許可のボタンをクリックします 
 
-***重要!*** *– このタスクを実行する際には、DEMF の法人のコンテキストにいることを確認してください。組織のセキュリティは、法人のエンティティごとに適用されるからです* 
+**_重要!_* _ _組織のセキュリティは法人ごとに適用されるため、このタスクを実行する際には、DEMF の法人のコンテキストを使用していることを確認してください* 
 
 ### <a name="task-3-create-scenarios"></a>タスク 3: シナリオの作成
 3.1。 [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。 シナリオのページで、このラボでさらに使用するシナリオに注意してください: 前年度の実績と予算。 
@@ -247,6 +246,3 @@ C. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコン�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

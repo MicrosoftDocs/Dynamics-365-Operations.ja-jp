@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14471
 ms.assetid: b633a7c4-c18d-42e7-91cc-adcdc8a3ba98
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f4d5178aeb3294fd3b40815bb294a7f2ff08b71
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 025582134ddbb6d060d7d9a62405b0e510ac0fe0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445083"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971581"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>複数の割引期間を持つ一部の顧客支払を決済する
 
@@ -34,7 +33,7 @@ ms.locfileid: "4445083"
 Fabrikam は、顧客 4031 に 2 つの現金割引期間を提示します。 顧客は、請求書の支払が 5 日以内に行われた場合には 2% の現金割引を、14 日以内に行われた場合には 1% の現金割引を受けます。 Fabrikam は、一部支払に対する現金割引も提供します。 決済のパラメーターは **売掛金勘定パラメーター** ページにあります。
 
 ## <a name="invoice"></a>請求書
-6 月 25 日に、Arnie は顧客 4031 に対して 1,000.00 ドルの請求書を入力して転記します。 Arnie はこの請求書の現金割引を確認すると、請求書の支払が 6 月 30 日までに行われた場合、顧客は 4031 は 20.00 ドルの割引きを受けることがわかります。 請求書の支払が 7 月 9 日までに行われた場合、顧客は 10.00 ドルの割引を受けます。
+6 月 25 日に、アーニーは顧客 4031 に対して 1,000.00 ドルの請求書を入力して転記します。 アーニーはこの請求書の現金割引を確認すると、請求書の支払が 6 月 30 日までに行われた場合、顧客は 4031 は 20.00 ドルの割引きを受けることがわかります。 請求書の支払が 7 月 9 日までに行われた場合、顧客は 10.00 ドルの割引を受けます。
 
 | 現金割引日 | 現金割引金額 | トランザクション通貨の金額 |
 |--------------------|----------------------|--------------------------------|
@@ -98,6 +97,3 @@ Fabrikam は、顧客 4031 に 2 つの現金割引期間を提示します。 �
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

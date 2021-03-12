@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98ea865812a0ef187697fadbfc6f576df6595db4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445152"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971756"
 ---
 # <a name="credit-management-parameters-setup"></a>与信管理パラメーターの設定
 
@@ -79,6 +78,3 @@ ms.locfileid: "4445152"
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>番号順序と共有番号順序パラメーター
 
 与信限度額調整を処理するには、仕訳帳 ID が必要です。 仕訳帳 ID の生成に使用する与信限度額調整番号を追加する必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b5cc07c5dfb2444ff086c8b1f3bcc7634d8644d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bbfb6537118a9936c127018427b0516e7ea002a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445207"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971531"
 ---
 # <a name="review-collections-information"></a>取立情報の確認
 
@@ -143,6 +142,3 @@ ms.locfileid: "4445207"
 5. **リストを表示** を選択します。
 - 顧客 ID を選択するか、既定のエントリを使用します。 既定では、これはリスト ページで、またはこのフォームを開いたフォームで選択した顧客 ID です。 リスト ページからフォームを開いた場合は、リストの顧客は、リスト ページで使用される回収プールに含まれる顧客です。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

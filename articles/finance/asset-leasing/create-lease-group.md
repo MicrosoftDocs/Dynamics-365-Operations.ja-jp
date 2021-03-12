@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f8512a59d0e9935090f97a0f0237bfefc8473955
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 2c06f6f943c8a47fbe650a67017b95d799914a0e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445386"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971356"
 ---
 # <a name="create-a-lease-group"></a>リース グループの作成
 
@@ -50,6 +49,3 @@ ms.locfileid: "4445386"
 1. **資産リース \> 設定 \> リース グループ** の順に移動します。
 2. リース グループを選択し、**帳簿** を選択し ます。
 3. **新規** を選択し、**帳簿タイプ** フィールドで、リース グループに割り当てる帳簿を選択します。 リースをさまざまな方法で計上する必要がある場合は、複数の帳簿をリース グループに割り当てることができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

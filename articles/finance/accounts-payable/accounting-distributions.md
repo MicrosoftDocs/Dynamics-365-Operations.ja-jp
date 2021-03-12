@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3901fb61c1c8f9a9fd13b8ea558877daf884f3ee
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445342"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972244"
 ---
 # <a name="accounting-distributions"></a>勘定配布
 
@@ -57,6 +56,3 @@ ms.locfileid: "4445342"
 バージョン 10.0.13 では、新しいフィールドが適切に設定されていることを確実にする目的で、勘定配布テーブルを検証する機能が追加されました。 この機能は、**元伝票の会計フレームワークを使用して、ドキュメントのデータの追加検証の有効化** と呼ばれます。 この機能を使用する前に **機能管理** ワークスペースを使用してこれらの機能を有効にする必要があります。 この機能を有効にするには、**機能の管理** ページの **検索** フィールドで機能名を検索し、**今すぐ有効にする** を選択します。
 
 詳細については、[仕入先の請求書の勘定配布と補助元帳仕訳](accounting-distributions-subledger-journal-entries-vendor-invoices.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

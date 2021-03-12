@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7e6778f61a9367399e4b71d5b2bb2459c09ba508
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b69b505996b5536088578885c11a7e8c27f4975
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445025"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971856"
 ---
 # <a name="define-vendor-payment-terms"></a>仕入先の支払条件の定義
 
@@ -47,6 +46,3 @@ ms.locfileid: "4445025"
 16. 顧客請求書に対して現金割引が転記される主勘定を入力してから、仕入先請求書に対して現金割引を転記する主勘定を入力します。 **割引の相手勘定** が **仕入先割引の主勘定を使用** に設定されている場合、主勘定が使用されるようになります。 オプションで **請求明細行の勘定** を選択した場合、現金割引は、請求書明細行の資産/経費用勘定に転記されるようになります。  
 17. **保存** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

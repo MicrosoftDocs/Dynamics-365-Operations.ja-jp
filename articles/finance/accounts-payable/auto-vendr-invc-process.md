@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 9a033258feeccf172f1e2c03a9f49305054b24c2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665325"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972134"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>自動化された仕入先請求プロセスの概要
 
@@ -69,6 +68,3 @@ ms.locfileid: "4665325"
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>仕入先請求書の自動化 – 複数の請求書の自動処理を再開する
 インポートされた請求書が自動化プロセスを経てワークフローに正常に送信されなかった場合、システムはこの請求書を以降の自動処理から削除します。 自動化されたプロセスがワークフローに再提出する前に、買掛金勘定の担当者が請求書を確認し、編集することができます。 同じ修正で複数の請求書のエラー原因が解決できる場合は、**自動請求処理の再開** ページで自動処理を再開することができます。 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
