@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a71ea3983018b136d4fe3b22eadc0c332d2a698
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 124f7473cbdae8890f74115d461603f50cc58be8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432333"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004880"
 ---
 # <a name="set-up-shipping-carriers"></a>出荷配送業者の設定
 
@@ -73,6 +72,3 @@ ms.locfileid: "4432333"
 9. **輸送時間エンジン** フィールドで、ドロップダウン メニューからオプションを選択します。
 10. **保存** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b9bd4e67ed64218f9c4ac87bd143f73680af9ac4
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: bf50b0b8da2859caab4db2394f2d56f7b76793ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432291"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004805"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>変動倉庫レベルの分析引当ポリシー
 
@@ -854,6 +853,3 @@ ms.locfileid: "4432291"
     - 移動オーダーおよび原材料のピッキング
 
 - ディレクティブ単位での梱包のためのコンテナー連結ルールには、制限があります。 注文が確定された引当では、**ディレクティブ単位別の梱包** フィールドが有効になっているコンテナー構築テンプレートを使用しないことをお勧めします。 現在の設計では、倉庫作業の作成時にロケーションの指示は使用されません。 したがって、コンテナー詰めのウェーブ ステップ中には、単位順序グループ (在庫単位) の最小単位のみが適用されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

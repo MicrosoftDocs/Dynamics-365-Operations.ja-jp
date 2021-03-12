@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: cd1ac44bd9e36a482f18bccd250726fe7b7cf4d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51f3b6bbfa24c0b2e44db512868449681d7b698a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408156"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005786"
 ---
 # <a name="japan-overview"></a>日本の概要
 
@@ -128,6 +127,3 @@ ms.locfileid: "4408156"
 - [電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics のローカライズのポータル: オーストラリアのレポート (CustomerSource アカウントが必要です)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/japan.html)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

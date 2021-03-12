@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 94e54220a68889fd31ac3b269f7a7f6f8dd98c8e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432379"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005205"
 ---
 # <a name="inventory-on-hand-list"></a>手持在庫リスト
 
@@ -146,6 +145,3 @@ ms.locfileid: "4432379"
 | IA0001 | 1 | 2 | 2 |
 
 **フィルター** ペインの設定は、このセクションの冒頭で示した詳細 (非集計) 在庫テーブルに適用されることに注意してください。 したがって、条件 **引当可能現物数** \| _1_\| **よりも少ない、または等しい** では、テーブルから2つの行が検出されます (**引当可能現物数** に _1_ の値を持つ1番目と3番目の行)。 ただし、このシナリオでは、**手持在庫のリスト** ページで **倉庫** の分析コードを表示するようには設定されていません 。 したがって、表示されるすべての分析コードの値が同じであるため、元の2つの行が1つの結果行に集計されます。 **引当可能現物数** の値は _2_ と表示されるため、一見ではこの行がフィルタ条件に反しているように見えます。 ただし、**フィルター** ペインの設定は、**手持在庫リスト** ページに表示される集計テーブルには適用されず、元のテーブルに対して適用されるため、正確な結果を表わしていることになります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: af4321cd9d6e15c82c4eef1f1ca218b8301ebf35
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4413906"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003656"
 ---
 # <a name="store-configurations-for-retail-statements"></a>小売明細書の店舗のコンフィギュレーション
 
@@ -49,6 +48,3 @@ ms.locfileid: "4413906"
 17. 定義された各明細書の方法で明細書が作成されるようにする場合は、**明細書の方法別分割** で「はい」を選択します。 このアクションは、並列処理できる小さな明細書が大量に作成されるため、店舗の大量のトランザクションの転記のパフォーマンスを改善する必要がある場合に役立ちます。  
 18. **一般** クイック タブの **既存の顧客** フィールドで、飛び込みの顧客への販売に使用する顧客口座を選択できます。  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

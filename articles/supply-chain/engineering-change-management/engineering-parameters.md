@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0cf0e56a8aece98379aa0f181d7b7ff665767544
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: dee5429c31bfc872afedfa76ced89633b4b72c96
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4432416"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005380"
 ---
 # <a name="engineering-change-management-parameters"></a>エンジニアリング変更管理のパラメーター
 
@@ -57,6 +56,3 @@ ms.locfileid: "4432416"
 | 重大度ルール | エンジニアリング変更オーダーの重大度をどのように確立するかを選択します。 ユーザーが **重要度** フィールドに値を入力する必要がある場合は、*手動* を選択し ます。 *計算* を選択すると、エンジニアリング変更オーダーのアクション ペインで **重要度の計算** を選択したときに、**重要度** フィールドの値が計算されます。 この場合、システムは **重要度ルールセット** ページで定義されている重要度ルールを使用します。 *自動的に計算* を選択すると、**重大度** フィールドの値が自動的に計算され、重要度のルールセットに従って入力されます。 |
 | 影響を受ける製品の再リリース | このフィールドは、エンジニアリングの変更オーダーを使用して製品をリリースする場合に適用されます。 **リリース** ダイアログボックスでは、すべての製品を選択するか、影響を受ける製品のみを提案するかを選択できます。 |
 | リリースする BOM レベル | リリースする BOM レベルの深さ。 BOM のレベル数が、ここで指定された値よりも多い場合 (つまりより深い場合) は、指定された値を通るレベルのみが解放されます。 |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 991da4a1056bec933698d043fe45fe4e280f555a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432289"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004830"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
@@ -478,6 +477,3 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
     - **数量** – _7_ を入力します。これは、仕入先が発注書の合計数量 12 (10 は元の注文数量、2 は 20% の許容超過配送数量です) の一部として配送することを許可されている残りの数量です。 最初の積荷に対して、5 個が既に登録されていることに注意してください。
 
 2 番目の積荷は、数量 7 で更新され、この数量に基づいて製品の入庫を行い、更新できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

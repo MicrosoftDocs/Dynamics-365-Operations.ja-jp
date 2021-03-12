@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4432415"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005330"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>製品ライフサイクルの状態とトランザクション
 
@@ -76,6 +75,3 @@ ms.locfileid: "4432415"
 | 保険証書 | 次のいずれかの値を選択して、このライフサイクル状態の製品に対して現在のプロセスを許可するかどうか、およびどのように許可するかを制御します。<ul><li>**有効** – 業務プロセスは許可されます。</li><li>**ブロック** – プロセスは許可されていません。 このライフサイクル状態の製品に対してプロセスを使用しようとすると、システムはそのユーザーをブロックし、代わりにエラーを表示します。 たとえば、製品版の購入を中止することができます。</li><li>**警告付きで有効化** – プロセスは許可されますが、警告が表示されます。 たとえば、研究開発部門によって作成された製造オーダーにプロトタイプ製品を配置することができます。 ただし、他の部門は、まだ製品を生産しないようにする必要があることを認識しておく必要があります。</li></ul> |
 
 ライフサイクル状態のルールをカスタマイズとして追加している場合は、上部ウィンドウで **プロセスの更新** を選択することにより、ユーザーインターフェイス (UI) にそれらのルールを表示できます。 **プロセスの更新** ボタンは、管理者のみが使用できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 54682
 ms.assetid: dc0e2855-83a0-41a7-a398-3c7852597d1a
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1322d43d536bf7ff4c40fcdecebbd95a46f70d2d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2b6b5e7b654b5732290489c0dbcb13d1cc441e9c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431943"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002051"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>現物価格とマーキングを使用した FIFO
 
@@ -136,6 +135,3 @@ FIFO を使用する場合、LIFO ルールを使用する必要はありませ�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

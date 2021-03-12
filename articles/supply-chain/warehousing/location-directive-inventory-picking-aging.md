@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432284"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004630"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>場所のディレクティブ在庫ピッキング エイジング
 
@@ -140,6 +139,3 @@ LIFO 戦略は、最新のエイジング日付を含む場所を検出し、そ
 1. **作業タイプ** の値が *ピッキング* となっている行は、**場所** の値が *FL-001* であることに注意してください。 この場所には、最新のエイジング日付 (LIFO) を持つライセンス プレートが含まれています。
 
 このようなシナリオでは、選択した戦略に応じて、場所のエージング戦略が、最も古い在庫または最新の在庫のいずれかを持つ在庫場所に作業をどのように指示するかを見てきました。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

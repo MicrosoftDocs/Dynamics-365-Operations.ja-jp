@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7a017cdbcbfa01d4dba383f2b6b7c742e54014e4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 9822a11dbb277726b60ff82843bd26314e968345
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445397"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003259"
 ---
 # <a name="impair-right-of-use-assets"></a>使用権資産の減損
 
@@ -102,6 +101,3 @@ ms.locfileid: "4445397"
 7. 減損の正味効果を表示するには、[負債] テーブルと [資産トランザクション] テーブルに移動します。 減損経費は使用権資産を減少しましたが、リース負債のキャリー額が変更されていないことに注意してください。
 
 この減損には、考慮する必要があるもう 1 つの影響があります。 使用権資産金額はリース負債よりもはるかに少ないので、この金額は以前とは異なる減価償却を行う必要があります。 特に、この資産は、トランザクションの日付から開始され、残りの 84 か月のリースにわたって定額法で減価償却されるようになります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

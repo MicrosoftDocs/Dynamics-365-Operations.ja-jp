@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431986"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001802"
 ---
 # <a name="calendars-and-master-planning"></a>カレンダーおよびマスター プラン
 
@@ -143,6 +142,3 @@ ms.locfileid: "4431986"
 
 ### <a name="updating-scm-related-calendars"></a>SCM 関連カレンダーの更新
 すべての該当するカレンダーが対応する場所 (仕入先、顧客、倉庫、荷渡方法、または補充グループ) に割り当てられることが重要ですが、変更を反映するように更新することも重要です。 システムでは、割り当てられているカレンダーの組み合わせによって、生産、移動、購買、および販売注文日を定義します。 誰が対応する領域に割り当てたりカレンダーを更新するかを明確にすることがベスト プラクティスです。 営業日に故障やその他の異常な変更があった場合は、それに従ってカレンダーを更新することが不可欠です。 マスター プランや生産スケジュールなどのカレンダーに依存するすべてのタスクは、カレンダーが更新される際に再実行される必要があります。 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

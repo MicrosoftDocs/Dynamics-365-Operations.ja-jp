@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1ea7f5244b483a1b9d6c55227c676a3878a71d83
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 0a4070a1dd5d53bb502ba2ab0c91dbdc90ded34d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646408"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005055"
 ---
 # <a name="load-templates"></a>積荷テンプレート
 
@@ -54,6 +53,3 @@ ms.locfileid: "4646408"
 1. アクション ウィンドウの、**供給と需要** タブの **追加** グループで、**新しい積荷へ** を選択します。
 1. **積荷テンプレートの割り当て** ダイアログ ボックスの、**積荷テンプレート ID** フィールドで、適用するテンプレートを選択します。
 1. テンプレートを適用するには、**OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

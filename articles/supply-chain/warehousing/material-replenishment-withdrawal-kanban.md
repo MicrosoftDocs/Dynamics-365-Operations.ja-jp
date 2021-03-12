@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 9de46acd8e568be08518d9bf93067748e0541023
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432279"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004476"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>引き取りかんばんを使用した補充
 
@@ -87,6 +86,3 @@ ms.locfileid: "4432279"
 
 生産入庫の場所でかんばんを消費すると、空と報告され、新しいかんばんがフローに追加されます。 かんばんが作成されると、ウェーブ明細行がかんばんウェーブに追加されます。 かんばんウェーブが処理されるときは、かんばんピッキング用の倉庫作業が作成されます。 倉庫作業者は、かんばんピッキングの作業を処理すると倉庫場所のかんばん用材料をピッキングする作業を行うよう指示されます。 この倉庫作業者がピッキングを確認する際、かんばんは自動的に完了し、作業者は材料を生産入庫の場所に配置するようガイドされます。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

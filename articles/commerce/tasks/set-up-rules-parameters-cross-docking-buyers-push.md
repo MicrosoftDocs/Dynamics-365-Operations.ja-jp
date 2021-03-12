@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailReplenishmentRuleTable, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bccd92946783628dce37c3fd018e4dd927efd49
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc5404e5eb1679659604a6268fa09519a7a4282e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413783"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003726"
 ---
 # <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a>クロス ドッキングおよび集中的購買のルールとパラメーターの設定
 
@@ -48,6 +47,3 @@ ms.locfileid: "4413783"
 14. [重量] フィールドに数値を入力します。
 15. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

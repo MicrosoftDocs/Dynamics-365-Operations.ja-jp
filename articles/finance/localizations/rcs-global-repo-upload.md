@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ef12c911c8953b181db1c0eff0874a3d8cfcb3da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445246"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005751"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Regulatory Configuration Services (RCS) で ER の構成を作成し、グローバル リポジトリにアップロードする
 
@@ -98,6 +97,3 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 > [!NOTE]
 > 構成は、作成した構成プロバイダーによってのみ削除できます。 構成が別の組織と共有されている場合、削除する前に構成の共有を解除する必要があります。
  
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
