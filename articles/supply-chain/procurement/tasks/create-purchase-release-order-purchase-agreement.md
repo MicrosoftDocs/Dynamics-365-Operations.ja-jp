@@ -1,7 +1,7 @@
 ---
 title: 購買契約書からの購買リリース注文の作成
 description: この手順では、発注書を作成するときに購買契約書を使用する方法を示します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/09/2019
 ms.topic: business-process
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee0c40dfc3c820343c7054238cc2da47e8203d59
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c095eaf1a93d6f1a803c6c9618c930fb2eda2d2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431904"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021067"
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>購買契約書からの購買リリース注文の作成
 
@@ -59,6 +58,3 @@ ms.locfileid: "4431904"
 3. ページを閉じます。
 4. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

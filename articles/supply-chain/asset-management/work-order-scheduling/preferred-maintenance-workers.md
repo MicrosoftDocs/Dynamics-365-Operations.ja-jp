@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkerPreferred
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c0637609a34890360a3b81355a8d21ef1b9faf8c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab36d9fde0cc6e864f21f9ebd09834f5098c1913
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431912"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021407"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>優先メンテナンス作業者の設定
 
@@ -68,6 +67,3 @@ ms.locfileid: "4431912"
 
 ワーク オーダー スケジューリング中に、どの作業者がワーク オーダーに関連するジョブを完了する必要があるかを決定するために、異なるスコアが計算されます (これらのスコアは、**資産管理パラメーター** > **ワーク オーダー スケジューリング** リンクで設定されます)。 ワーク オーダー スケジューリング中に、2 人以上の優先メンテナンス作業者またはメンテナンス担当作業者が同じスコアを獲得した場合、1 人の作業者がランダムに選択されます。 それ以外の場合は、最高のスコアを持つ作業者が常にワーク オーダーを完了するために割り当てられます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

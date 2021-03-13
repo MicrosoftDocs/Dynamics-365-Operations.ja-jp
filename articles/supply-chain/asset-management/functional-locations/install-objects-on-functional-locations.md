@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationObjectChange, EntAssetFunctionalLocationObjectInstall, EntAssetFunctionalLocationObject
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85b9f473cc725896a00501510eea02d7cfb21782
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5ea67e2392d8e25a2a5f3cb7e1ff5032322f2c48
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431855"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022033"
 ---
 # <a name="install-assets-on-functional-locations"></a>機能的な場所に資産を導入する
 
@@ -83,6 +82,3 @@ ms.locfileid: "4431855"
 1. **すべての機能的な場所** ページで、資産を自動的に作成する機能的な場所が、この目的のために作成した機能的な場所タイプを使用していることを確認します。
 2. リストから機能的な場所を選択します。
 3. **機能的な場所の状態を更新する** を選択し、この目的のために作成したライフサイクル状態を選択します。 1 つの資産が機能的な場所に自動的に導入されるようになりました。 この資産は、機能的な場所と同じ名前です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

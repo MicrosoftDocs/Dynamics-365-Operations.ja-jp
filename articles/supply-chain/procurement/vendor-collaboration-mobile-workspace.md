@@ -1,7 +1,7 @@
 ---
 title: 仕入先コラボレーションのモバイル ワークスペース
 description: このトピックでは、[仕入先コラボレーション] モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、仕入先が、承認のために送信された発注書に関する最新の状態を保つことができるようにします。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: mkirknel
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc73fe415ec2b9a266dda6b7f1b3469b7a77f256
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432242"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020839"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>仕入先コラボレーションのモバイル ワークスペース
 
@@ -170,6 +169,3 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 
 ### <a name="open-confirmed-orders"></a>確認済みのオープン注文
 顧客によって発注書が確認されると、(発注書の状態が **確認済** に変更される)、確定済受注の公開に表示されます。 これは、顧客が受領済に登録されるまでリストに保持されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

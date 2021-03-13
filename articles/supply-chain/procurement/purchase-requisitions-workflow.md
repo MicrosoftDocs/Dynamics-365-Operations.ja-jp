@@ -1,7 +1,7 @@
 ---
 title: 購買要求ワークフロー
 description: ワークフロー プロセスは、レビュー プロセスを介し、[ドラフト] の状態から [承認済] の最終状態へ購買要求を移動します。 購買要求が作成されレビュー用に送信されると、ワークフロー プロセスが開始されます。 購買要求が承認されると、発注書が購買要求明細行に対して生成され、仕入先に注文処理のために送信されます。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a9dceb3f9e71163dcaf8b8763317110ef019844
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f6069e2ab93e1ce4299669850bdae37e82b17428
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431809"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021983"
 ---
 # <a name="purchase-requisition-workflow"></a>購買要求ワークフロー
 
@@ -121,6 +120,3 @@ ms.locfileid: "4431809"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

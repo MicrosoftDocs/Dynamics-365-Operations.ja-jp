@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51837275203dc2d4f31dc4dec9bf970a7ebeba7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431788"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021557"
 ---
 # <a name="work-order-project-setup"></a>作業指示書プロジェクトの設定
 
@@ -86,6 +85,3 @@ ms.locfileid: "4431788"
 > 作業指示書明細行が作成されるたびに、資産管理によって、作業指示書ジョブ プロジェクトに関連するプロジェクト グループが検索されます。 検索は、このトピックで説明されている設定に基づいて行われます。 すべてのプロジェクト グループには、関連するプロジェクト タイプがあります。 **時間/実費払い** または **固定価格** プロジェクト タイプを持つプロジェクト グループは、顧客 ID に関連付けられている資産に対してのみ有効です。
 >
 > 親プロジェクトとプロジェクト グループについては、システムが使用可能な作業指示書プロジェクトまたはプロジェクト グループを選択する場合、前の手順を使用して作成したレコードに基づいて選択されます。 資産管理では、作業指示書プロジェクトに関連しているレコードを調べて、一致の可能性をチェックします。 常に最も限定的な組み合わせを最初にチェックします。 つまり、作業指示書の親プロジェクトの場合、資産管理はまず **資産** フィールドに一致の可能性があるかどうかをチェックします。 一致するものが見つからない場合は、**資産タイプ** フィールドにおいて一致がチェックします。 一致するものが見つからない場合は、**機能的な場所** フィールドなどにおいて一致がチェックされます。 **作業指示書プロジェクト設定** ページのレイアウトで分かるように、この動作は、最も限定的な組み合わせを見つけるために、資産管理が各レコードを右から左に一致をチェックすることを意味します。 一致するものが見つからなかった場合は、プロジェクト ID のみが選択された既定のレコードが使用されます。 関連するプロジェクト グループを検索するプロセスも同じです。 資産管理は、まず **資産** フィールドの一致をチェックし、そして **資産タイプ** フィールド、さらに **作業指示書タイプ** フィールドの順にチェックします。 一致するものが見つからなかった場合は、プロジェクト ID のみが選択された既定のレコードが使用されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

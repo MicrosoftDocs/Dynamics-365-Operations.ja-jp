@@ -1,7 +1,7 @@
 ---
 title: 監査ポリシー違反およびケース
 description: 記事は、監査ポリシー ルール違反からどのように監査ケースが生成されるかを説明します。 また、監査ポリシーがドキュメントの選択の日付範囲を使用する、さまざまな方法に関する情報が含まれます。
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13091
 ms.assetid: e0e66c6d-c396-4a9d-b3b6-3641d130fdc0
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d14894d331037033b27fac3fd7ff98c5521eaf98
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddd403bfe82b1a7d3c0c5999f89bde19f1bba5e8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445145"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022108"
 ---
 # <a name="audit-policy-violations-and-cases"></a>監査ポリシー違反およびケース
 
@@ -61,6 +60,3 @@ ms.locfileid: "4445145"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorker
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4c1e068d273374c6c8ac162a92be6130d85cbe40
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c8856d0c7a7b76318755dc6bcdbb1859de1fa20a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431786"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021482"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>メンテナンス作業者のカレンダーとスケジューリング
 
@@ -39,6 +38,3 @@ ms.locfileid: "4431786"
 
 ツールと資産のカレンダー設定は、作業指示書のスケジューリングに関連付けられている必要はありません。 メンテナンスに対してツールと資産が 24 時間利用可能であることを前提としています。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

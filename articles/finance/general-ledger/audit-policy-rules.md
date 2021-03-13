@@ -1,7 +1,7 @@
 ---
 title: 監査ポリシー ルール
 description: 経費精算書、仕入先請求書、および発注書が、作成したポリシー ルールに準拠しているかどうか評価するには、監査ポリシーを使用できます。 監査ポリシーに関連付けられているすべてのルールが、指定したスケジュールに従ってバッチ モードで実行されます。  各ポリシー ルールは、ポリシー ルール タイプのインスタンスです。 各ポリシー ルール タイプに対して、一度に 1 つのポリシー ルールだけ有効にできます。
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12991
 ms.assetid: 8d787017-71dc-418f-b8c2-4ea9763d9978
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de6406029aa88424863dd9a47505f5b3ad27f237
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445146"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021244"
 ---
 # <a name="audit-policy-rules"></a>監査ポリシー ルール
 
@@ -101,6 +100,3 @@ ms.locfileid: "4445146"
 [元伝票の監査ポリシーの定義](tasks/define-audit-policies-source-documents.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
