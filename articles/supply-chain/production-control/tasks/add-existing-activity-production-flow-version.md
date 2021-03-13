@@ -11,48 +11,47 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanActivityAddExistingLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f95958e57b1b1a93e43eb2cf02d2651ccb9587b6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff549fd6ed526eefc5514ce2013cc31a700510f8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431697"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006944"
 ---
-# <a name="add-an-existing-activity-to-a-production-flow-version"></a><span data-ttu-id="8a7f3-103">生産フロー バージョンへの既存の活動の追加</span><span class="sxs-lookup"><span data-stu-id="8a7f3-103">Add an existing activity to a production flow version</span></span>
+# <a name="add-an-existing-activity-to-a-production-flow-version"></a><span data-ttu-id="720a4-103">生産フロー バージョンへの既存の活動の追加</span><span class="sxs-lookup"><span data-stu-id="720a4-103">Add an existing activity to a production flow version</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="8a7f3-104">生産フローの新バージョンを作成する際に、旧バージョン向けに作成された活動を新バージョンに加えることができます。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-104">When creating new versions of production flows, you can choose to add activities created for the older versions, to the new version.</span></span> <span data-ttu-id="8a7f3-105">この手順では、活動をコピーしないで既存の生産フロー向けの新バージョンの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-105">This procedure shows how a new version is created for an existing production flow, without copying the activities.</span></span> <span data-ttu-id="8a7f3-106">次の手順では、既存の活動が新バージョンに追加されます。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-106">In the next step, an existing activity is added to the new version.</span></span> 
+<span data-ttu-id="720a4-104">生産フローの新バージョンを作成する際に、旧バージョン向けに作成された活動を新バージョンに加えることができます。</span><span class="sxs-lookup"><span data-stu-id="720a4-104">When creating new versions of production flows, you can choose to add activities created for the older versions, to the new version.</span></span> <span data-ttu-id="720a4-105">この手順では、活動をコピーしないで既存の生産フロー向けの新バージョンの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="720a4-105">This procedure shows how a new version is created for an existing production flow, without copying the activities.</span></span> <span data-ttu-id="720a4-106">次の手順では、既存の活動が新バージョンに追加されます。</span><span class="sxs-lookup"><span data-stu-id="720a4-106">In the next step, an existing activity is added to the new version.</span></span> 
 
-<span data-ttu-id="8a7f3-107">この作業には、既に作成されたバージョンおよび活動を含む生産フローが必要です。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-107">This task requires production flow with version and activities already created.</span></span>
+<span data-ttu-id="720a4-107">この作業には、既に作成されたバージョンおよび活動を含む生産フローが必要です。</span><span class="sxs-lookup"><span data-stu-id="720a4-107">This task requires production flow with version and activities already created.</span></span>
 
 
-## <a name="create-a-new-production-flow-version"></a><span data-ttu-id="8a7f3-108">新しい生産フロー バージョンの作成</span><span class="sxs-lookup"><span data-stu-id="8a7f3-108">Create a new production flow version</span></span>
-1. <span data-ttu-id="8a7f3-109">[生産管理] > [設定] > [リーン生産フロー] > [生産フロー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-109">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
-2. <span data-ttu-id="8a7f3-110">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-110">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="8a7f3-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-111">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="8a7f3-112">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-112">Click Edit.</span></span>
-5. <span data-ttu-id="8a7f3-113">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-113">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="8a7f3-114">[有効期限] フィールドに日時を入力します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-114">In the Expiration date field, enter a date and time.</span></span>
-    * <span data-ttu-id="8a7f3-115">新規生産フロー バージョンを作成する前に、有効なバージョンの期限切れの日時をチェックすることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-115">Note that before you create a new production flow version, make sure to check the expiration date and time of the active version.</span></span> <span data-ttu-id="8a7f3-116">新規バージョンは有効な開始日（バージョン終了日の翌日）で作成します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-116">The new version will be created with an effective start date, which connects to the expiry date of the selected version.</span></span>  
-7. <span data-ttu-id="8a7f3-117">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-117">Click Add.</span></span>
-8. <span data-ttu-id="8a7f3-118">[バージョンからのコピー] フィールドで、「いいえ」を選択します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-118">Select No in the Copy from version field.</span></span>
-    * <span data-ttu-id="8a7f3-119">コピーしたバージョンの活動の大半が新しい活動と交換された場合、[空のバージョンで開始する] に「いいえ」を選択します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-119">Select No to start with an empty version if most of the activities of the copied version will be replaced by new activities.</span></span> <span data-ttu-id="8a7f3-120">変更のない活動を、手動で「活動形式における既存機能に加える」に加えます。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-120">Add the unchanged activities to the Add existing function in the activity form manually.</span></span>  
-9. <span data-ttu-id="8a7f3-121">[重複するかんばんルール] フィールドで、「いいえ」を選択します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-121">Select No in the Duplicate kanban rules field.</span></span>
-    * <span data-ttu-id="8a7f3-122">活動が新しいバージョンにコピーされていない場合、新しいバージョンの作成時にかんばんルールをコピーすることはできません。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-122">When the activities are not copied to the new version, it is not possible to copy the kanban rules at the time of creation of the new version.</span></span>   <span data-ttu-id="8a7f3-123">代わりに、旧生産フローバージョンのかんばんルールを新規バージョンの活動を使用するかんばんルールと交換するために、交換かんばん機能かんばんルール形式で作成します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-123">Instead you will use the create replacement kanban function later in the kanban rule form, to replace kanban rules of the old production flow version with kanban rules using the activities of the new version.</span></span>  
-10. <span data-ttu-id="8a7f3-124">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-124">Click OK.</span></span>
-11. <span data-ttu-id="8a7f3-125">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-125">In the list, find and select the desired record.</span></span>
+## <a name="create-a-new-production-flow-version"></a><span data-ttu-id="720a4-108">新しい生産フロー バージョンの作成</span><span class="sxs-lookup"><span data-stu-id="720a4-108">Create a new production flow version</span></span>
+1. <span data-ttu-id="720a4-109">[生産管理] > [設定] > [リーン生産フロー] > [生産フロー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="720a4-109">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="720a4-110">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="720a4-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="720a4-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="720a4-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="720a4-112">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="720a4-112">Click Edit.</span></span>
+5. <span data-ttu-id="720a4-113">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="720a4-113">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="720a4-114">[有効期限] フィールドに日時を入力します。</span><span class="sxs-lookup"><span data-stu-id="720a4-114">In the Expiration date field, enter a date and time.</span></span>
+    * <span data-ttu-id="720a4-115">新規生産フロー バージョンを作成する前に、有効なバージョンの期限切れの日時をチェックすることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="720a4-115">Note that before you create a new production flow version, make sure to check the expiration date and time of the active version.</span></span> <span data-ttu-id="720a4-116">新規バージョンは有効な開始日（バージョン終了日の翌日）で作成します。</span><span class="sxs-lookup"><span data-stu-id="720a4-116">The new version will be created with an effective start date, which connects to the expiry date of the selected version.</span></span>  
+7. <span data-ttu-id="720a4-117">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="720a4-117">Click Add.</span></span>
+8. <span data-ttu-id="720a4-118">[バージョンからのコピー] フィールドで、「いいえ」を選択します。</span><span class="sxs-lookup"><span data-stu-id="720a4-118">Select No in the Copy from version field.</span></span>
+    * <span data-ttu-id="720a4-119">コピーしたバージョンの活動の大半が新しい活動と交換された場合、[空のバージョンで開始する] に「いいえ」を選択します。</span><span class="sxs-lookup"><span data-stu-id="720a4-119">Select No to start with an empty version if most of the activities of the copied version will be replaced by new activities.</span></span> <span data-ttu-id="720a4-120">変更のない活動を、手動で「活動形式における既存機能に加える」に加えます。</span><span class="sxs-lookup"><span data-stu-id="720a4-120">Add the unchanged activities to the Add existing function in the activity form manually.</span></span>  
+9. <span data-ttu-id="720a4-121">[重複するかんばんルール] フィールドで、「いいえ」を選択します。</span><span class="sxs-lookup"><span data-stu-id="720a4-121">Select No in the Duplicate kanban rules field.</span></span>
+    * <span data-ttu-id="720a4-122">活動が新しいバージョンにコピーされていない場合、新しいバージョンの作成時にかんばんルールをコピーすることはできません。</span><span class="sxs-lookup"><span data-stu-id="720a4-122">When the activities are not copied to the new version, it is not possible to copy the kanban rules at the time of creation of the new version.</span></span>   <span data-ttu-id="720a4-123">代わりに、旧生産フローバージョンのかんばんルールを新規バージョンの活動を使用するかんばんルールと交換するために、交換かんばん機能かんばんルール形式で作成します。</span><span class="sxs-lookup"><span data-stu-id="720a4-123">Instead you will use the create replacement kanban function later in the kanban rule form, to replace kanban rules of the old production flow version with kanban rules using the activities of the new version.</span></span>  
+10. <span data-ttu-id="720a4-124">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="720a4-124">Click OK.</span></span>
+11. <span data-ttu-id="720a4-125">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="720a4-125">In the list, find and select the desired record.</span></span>
 
-## <a name="add-an-existing-activity"></a><span data-ttu-id="8a7f3-126">既存の活動を追加する</span><span class="sxs-lookup"><span data-stu-id="8a7f3-126">Add an existing activity</span></span>
-1. <span data-ttu-id="8a7f3-127">[活動] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-127">Click Activities.</span></span>
-2. <span data-ttu-id="8a7f3-128">[既存を追加] をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-128">Click Add existing to open the drop dialog.</span></span>
-    * <span data-ttu-id="8a7f3-129">新規生産フロー バージョンに追加される既存の活動を検索、選択します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-129">Find and select an existing activity to be added to the new production flow version.</span></span>  <span data-ttu-id="8a7f3-130">リストは、フローの以前のバージョンに代わるこの生産フローのために作成されたすべての活動を示すことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-130">Note that the list shows all activities that have been created for this production flow for all previous versions of the flow.</span></span>  
-3. <span data-ttu-id="8a7f3-131">[活動] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-131">In the Activity field, enter or select a value.</span></span>
-4. <span data-ttu-id="8a7f3-132">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8a7f3-132">Click OK.</span></span>
+## <a name="add-an-existing-activity"></a><span data-ttu-id="720a4-126">既存の活動を追加する</span><span class="sxs-lookup"><span data-stu-id="720a4-126">Add an existing activity</span></span>
+1. <span data-ttu-id="720a4-127">[活動] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="720a4-127">Click Activities.</span></span>
+2. <span data-ttu-id="720a4-128">[既存を追加] をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="720a4-128">Click Add existing to open the drop dialog.</span></span>
+    * <span data-ttu-id="720a4-129">新規生産フロー バージョンに追加される既存の活動を検索、選択します。</span><span class="sxs-lookup"><span data-stu-id="720a4-129">Find and select an existing activity to be added to the new production flow version.</span></span>  <span data-ttu-id="720a4-130">リストは、フローの以前のバージョンに代わるこの生産フローのために作成されたすべての活動を示すことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="720a4-130">Note that the list shows all activities that have been created for this production flow for all previous versions of the flow.</span></span>  
+3. <span data-ttu-id="720a4-131">[活動] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="720a4-131">In the Activity field, enter or select a value.</span></span>
+4. <span data-ttu-id="720a4-132">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="720a4-132">Click OK.</span></span>
 

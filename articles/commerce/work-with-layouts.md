@@ -11,101 +11,100 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 57dc0de64ce7536cf70c1f277d5212c3b8dd7480
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413771"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009596"
 ---
-# <a name="work-with-preset-layouts"></a><span data-ttu-id="39d15-103">プリセット レイアウトの使用</span><span class="sxs-lookup"><span data-stu-id="39d15-103">Work with preset layouts</span></span>
+# <a name="work-with-preset-layouts"></a><span data-ttu-id="98923-103">プリセット レイアウトの使用</span><span class="sxs-lookup"><span data-stu-id="98923-103">Work with preset layouts</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="39d15-104">このトピックでは、Microsoft Dynamics 365 Commerce でのプリセット レイアウトの使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="39d15-104">This topic describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="98923-104">このトピックでは、Microsoft Dynamics 365 Commerce でのプリセット レイアウトの使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="98923-104">This topic describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="39d15-105">概要</span><span class="sxs-lookup"><span data-stu-id="39d15-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="98923-105">概要</span><span class="sxs-lookup"><span data-stu-id="98923-105">Overview</span></span>
 
-<span data-ttu-id="39d15-106">このトピックの手順を実行する前に、[プリセットおよびカスタム レイアウト](templates-layouts-overview.md#preset-and-custom-layouts) を必ずお読みください。</span><span class="sxs-lookup"><span data-stu-id="39d15-106">Before you complete the procedures in this topic, be sure to read [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts).</span></span> <span data-ttu-id="39d15-107">一般的な概要については、[テンプレートとレイアウトの概要](templates-layouts-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="39d15-107">For a general overview, see [Templates and layouts overview](templates-layouts-overview.md).</span></span>
+<span data-ttu-id="98923-106">このトピックの手順を実行する前に、[プリセットおよびカスタム レイアウト](templates-layouts-overview.md#preset-and-custom-layouts) を必ずお読みください。</span><span class="sxs-lookup"><span data-stu-id="98923-106">Before you complete the procedures in this topic, be sure to read [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts).</span></span> <span data-ttu-id="98923-107">一般的な概要については、[テンプレートとレイアウトの概要](templates-layouts-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="98923-107">For a general overview, see [Templates and layouts overview](templates-layouts-overview.md).</span></span>
 
-## <a name="create-a-new-preset-layout"></a><span data-ttu-id="39d15-108">新しいプリセット レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="39d15-108">Create a new preset layout</span></span>
+## <a name="create-a-new-preset-layout"></a><span data-ttu-id="98923-108">新しいプリセット レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="98923-108">Create a new preset layout</span></span>
 
-<span data-ttu-id="39d15-109">プリセット レイアウトを作成するには 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="39d15-109">There are two methods for creating a preset layout.</span></span> <span data-ttu-id="39d15-110">既存のカスタム レイアウトを新しいプリセット レイアウトとして保存するか、またはプリセット レイアウトを最初から作成するかです。</span><span class="sxs-lookup"><span data-stu-id="39d15-110">You can save an existing custom layout as a new preset layout, or you can create a preset layout from scratch.</span></span>
+<span data-ttu-id="98923-109">プリセット レイアウトを作成するには 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="98923-109">There are two methods for creating a preset layout.</span></span> <span data-ttu-id="98923-110">既存のカスタム レイアウトを新しいプリセット レイアウトとして保存するか、またはプリセット レイアウトを最初から作成するかです。</span><span class="sxs-lookup"><span data-stu-id="98923-110">You can save an existing custom layout as a new preset layout, or you can create a preset layout from scratch.</span></span>
 
-### <a name="create-a-preset-layout-from-an-existing-custom-layout"></a><span data-ttu-id="39d15-111">既存のカスタム レイアウトからプリセット レイアウトを作成</span><span class="sxs-lookup"><span data-stu-id="39d15-111">Create a preset layout from an existing custom layout</span></span>
+### <a name="create-a-preset-layout-from-an-existing-custom-layout"></a><span data-ttu-id="98923-111">既存のカスタム レイアウトからプリセット レイアウトを作成</span><span class="sxs-lookup"><span data-stu-id="98923-111">Create a preset layout from an existing custom layout</span></span>
 
-<span data-ttu-id="39d15-112">既存のカスタム レイアウトからプリセット レイアウトを作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="39d15-112">To create a preset layout from an existing custom layout, follow these steps.</span></span>
+<span data-ttu-id="98923-112">既存のカスタム レイアウトからプリセット レイアウトを作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="98923-112">To create a preset layout from an existing custom layout, follow these steps.</span></span>
 
-1. <span data-ttu-id="39d15-113">現在プリセット レイアウトを使用していないが、サイトの他のページで再利用するモジュール構造を使用している、既存のページを開きます。</span><span class="sxs-lookup"><span data-stu-id="39d15-113">Open an existing page that doesn't currently use a preset layout, and that has a module structure that you want to reuse for other pages on your site.</span></span>
-1. <span data-ttu-id="39d15-114">**編集** を選択してページをチェックアウトします。</span><span class="sxs-lookup"><span data-stu-id="39d15-114">Select **Edit** to check out the page.</span></span>
-1. <span data-ttu-id="39d15-115">**新しいレイアウトとして保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-115">Select **Save as new layout**.</span></span> <span data-ttu-id="39d15-116">**新しいレイアウトとして保存** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="39d15-116">The **Save as new layout** dialog box appears.</span></span>
-1. <span data-ttu-id="39d15-117">プリセット レイアウトに名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="39d15-117">Enter a name and description for your preset layout.</span></span> <span data-ttu-id="39d15-118">レイアウトから新しいページを作成したり、そのページに切り替えると、入力した値が他の作成者に対して表示されます。</span><span class="sxs-lookup"><span data-stu-id="39d15-118">The values that you enter will be shown to other authors when they create new pages from your layout or switch to it.</span></span> <span data-ttu-id="39d15-119">したがって、ページ作成者にとって有用な値を入力します。</span><span class="sxs-lookup"><span data-stu-id="39d15-119">Therefore, enter values that will be useful to page authors.</span></span>
-1. <span data-ttu-id="39d15-120">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-120">Select **OK**.</span></span>
+1. <span data-ttu-id="98923-113">現在プリセット レイアウトを使用していないが、サイトの他のページで再利用するモジュール構造を使用している、既存のページを開きます。</span><span class="sxs-lookup"><span data-stu-id="98923-113">Open an existing page that doesn't currently use a preset layout, and that has a module structure that you want to reuse for other pages on your site.</span></span>
+1. <span data-ttu-id="98923-114">**編集** を選択してページをチェックアウトします。</span><span class="sxs-lookup"><span data-stu-id="98923-114">Select **Edit** to check out the page.</span></span>
+1. <span data-ttu-id="98923-115">**新しいレイアウトとして保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-115">Select **Save as new layout**.</span></span> <span data-ttu-id="98923-116">**新しいレイアウトとして保存** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="98923-116">The **Save as new layout** dialog box appears.</span></span>
+1. <span data-ttu-id="98923-117">プリセット レイアウトに名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="98923-117">Enter a name and description for your preset layout.</span></span> <span data-ttu-id="98923-118">レイアウトから新しいページを作成したり、そのページに切り替えると、入力した値が他の作成者に対して表示されます。</span><span class="sxs-lookup"><span data-stu-id="98923-118">The values that you enter will be shown to other authors when they create new pages from your layout or switch to it.</span></span> <span data-ttu-id="98923-119">したがって、ページ作成者にとって有用な値を入力します。</span><span class="sxs-lookup"><span data-stu-id="98923-119">Therefore, enter values that will be useful to page authors.</span></span>
+1. <span data-ttu-id="98923-120">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-120">Select **OK**.</span></span>
 
-<span data-ttu-id="39d15-121">プリセット レイアウトは、新しいページを作成するとき、または同じテンプレート階層内のページに別のレイアウトを選択するときに、使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="39d15-121">The preset layout will now be available when you create new pages or select a different layout for a page in the same template hierarchy.</span></span>
+<span data-ttu-id="98923-121">プリセット レイアウトは、新しいページを作成するとき、または同じテンプレート階層内のページに別のレイアウトを選択するときに、使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="98923-121">The preset layout will now be available when you create new pages or select a different layout for a page in the same template hierarchy.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="39d15-122">特定のページが現在プリセット レイアウトにバインドされているかどうかをすばやく確認するには、ページ リスト ビューでページを選択し、右側のプロパティ ウィンドウでレイアウト メタデータを検査します。</span><span class="sxs-lookup"><span data-stu-id="39d15-122">To quickly see whether a specific page is currently bound to a preset layout, select the page in the pages list view, and inspect the layout metadata in the property pane on the right.</span></span>
+> <span data-ttu-id="98923-122">特定のページが現在プリセット レイアウトにバインドされているかどうかをすばやく確認するには、ページ リスト ビューでページを選択し、右側のプロパティ ウィンドウでレイアウト メタデータを検査します。</span><span class="sxs-lookup"><span data-stu-id="98923-122">To quickly see whether a specific page is currently bound to a preset layout, select the page in the pages list view, and inspect the layout metadata in the property pane on the right.</span></span>
 
-### <a name="create-a-new-preset-layout"></a><span data-ttu-id="39d15-123">新しいプリセット レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="39d15-123">Create a new preset layout</span></span>
+### <a name="create-a-new-preset-layout"></a><span data-ttu-id="98923-123">新しいプリセット レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="98923-123">Create a new preset layout</span></span>
 
-<span data-ttu-id="39d15-124">プリセット レイアウトを最初から作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="39d15-124">To create a preset layout from scratch, follow these steps.</span></span>
+<span data-ttu-id="98923-124">プリセット レイアウトを最初から作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="98923-124">To create a preset layout from scratch, follow these steps.</span></span>
 
-1. <span data-ttu-id="39d15-125">左のナビゲーション ウィンドウで、**レイアウト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-125">In the navigation pane on the left, select **Layouts**.</span></span>
-1. <span data-ttu-id="39d15-126">**新しいレイアウト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-126">Select **New Layout**.</span></span> <span data-ttu-id="39d15-127">**新しいレイアウト** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="39d15-127">The **New layout** dialog box appears.</span></span>
-1. <span data-ttu-id="39d15-128">プリセット レイアウトに使用するテンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-128">Select the template to use for your preset layout.</span></span>
-1. <span data-ttu-id="39d15-129">プリセット レイアウトに名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="39d15-129">Enter a name and description for your preset layout.</span></span> <span data-ttu-id="39d15-130">レイアウトから新しいページを作成したり、そのページに切り替えると、入力した値が他の作成者に対して表示されます。</span><span class="sxs-lookup"><span data-stu-id="39d15-130">The values that you enter will be shown to other authors when they create new pages from your layout or switch to it.</span></span> <span data-ttu-id="39d15-131">したがって、ページ作成者にとって有用な値を入力します。</span><span class="sxs-lookup"><span data-stu-id="39d15-131">Therefore, enter values that will be useful to page authors.</span></span>
-1. <span data-ttu-id="39d15-132">**OK** をクリックして新しいプリセット レイアウトを作成し、レイアウト エディターを開きます。</span><span class="sxs-lookup"><span data-stu-id="39d15-132">Select **OK** to create the new preset layout and open the layout editor.</span></span>
-1. <span data-ttu-id="39d15-133">レイアウト エディターで、左側のアウトライン ツリーと右側のプロパティ ウィンドウを使用して、モジュールを追加およびコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="39d15-133">In the layout editor, add and configure modules by using the outline tree on the left and the property pane on the right.</span></span> <span data-ttu-id="39d15-134">(このプロセスは、テンプレート エディターでテンプレートのモジュールを追加およびコンフィギュレーションするプロセスに似ています。) モジュールの配置とすべてのロックされた既定の設定は、このプリセット レイアウトを使用するすべてのページで、一元化されたモジュール コンフィギュレーションになります。</span><span class="sxs-lookup"><span data-stu-id="39d15-134">(The process resembles the process for adding and configuring modules for a template in the template editor.) The arrangement of modules and any locked default settings become the centralized module configuration for any pages that use this preset layout.</span></span>
+1. <span data-ttu-id="98923-125">左のナビゲーション ウィンドウで、**レイアウト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-125">In the navigation pane on the left, select **Layouts**.</span></span>
+1. <span data-ttu-id="98923-126">**新しいレイアウト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-126">Select **New Layout**.</span></span> <span data-ttu-id="98923-127">**新しいレイアウト** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="98923-127">The **New layout** dialog box appears.</span></span>
+1. <span data-ttu-id="98923-128">プリセット レイアウトに使用するテンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-128">Select the template to use for your preset layout.</span></span>
+1. <span data-ttu-id="98923-129">プリセット レイアウトに名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="98923-129">Enter a name and description for your preset layout.</span></span> <span data-ttu-id="98923-130">レイアウトから新しいページを作成したり、そのページに切り替えると、入力した値が他の作成者に対して表示されます。</span><span class="sxs-lookup"><span data-stu-id="98923-130">The values that you enter will be shown to other authors when they create new pages from your layout or switch to it.</span></span> <span data-ttu-id="98923-131">したがって、ページ作成者にとって有用な値を入力します。</span><span class="sxs-lookup"><span data-stu-id="98923-131">Therefore, enter values that will be useful to page authors.</span></span>
+1. <span data-ttu-id="98923-132">**OK** をクリックして新しいプリセット レイアウトを作成し、レイアウト エディターを開きます。</span><span class="sxs-lookup"><span data-stu-id="98923-132">Select **OK** to create the new preset layout and open the layout editor.</span></span>
+1. <span data-ttu-id="98923-133">レイアウト エディターで、左側のアウトライン ツリーと右側のプロパティ ウィンドウを使用して、モジュールを追加およびコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="98923-133">In the layout editor, add and configure modules by using the outline tree on the left and the property pane on the right.</span></span> <span data-ttu-id="98923-134">(このプロセスは、テンプレート エディターでテンプレートのモジュールを追加およびコンフィギュレーションするプロセスに似ています。) モジュールの配置とすべてのロックされた既定の設定は、このプリセット レイアウトを使用するすべてのページで、一元化されたモジュール コンフィギュレーションになります。</span><span class="sxs-lookup"><span data-stu-id="98923-134">(The process resembles the process for adding and configuring modules for a template in the template editor.) The arrangement of modules and any locked default settings become the centralized module configuration for any pages that use this preset layout.</span></span>
 
-## <a name="modify-a-preset-layout"></a><span data-ttu-id="39d15-135">プリセット レイアウトの変更</span><span class="sxs-lookup"><span data-stu-id="39d15-135">Modify a preset layout</span></span>
+## <a name="modify-a-preset-layout"></a><span data-ttu-id="98923-135">プリセット レイアウトの変更</span><span class="sxs-lookup"><span data-stu-id="98923-135">Modify a preset layout</span></span>
 
-<span data-ttu-id="39d15-136">プリセット レイアウトを変更するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="39d15-136">To modify a preset layout, follow these steps.</span></span>
+<span data-ttu-id="98923-136">プリセット レイアウトを変更するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="98923-136">To modify a preset layout, follow these steps.</span></span>
 
-1. <span data-ttu-id="39d15-137">左のナビゲーション ウィンドウで、**レイアウト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-137">In the navigation pane on the left, select **Layouts**.</span></span>
-1. <span data-ttu-id="39d15-138">レイアウト エディターの、左側にあるアウトライン ツリーで、変更するモジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-138">In the layout editor, in the outline tree on the left, select the module to modify.</span></span> <span data-ttu-id="39d15-139">そして、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="39d15-139">Then follow any of these steps:</span></span>
+1. <span data-ttu-id="98923-137">左のナビゲーション ウィンドウで、**レイアウト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-137">In the navigation pane on the left, select **Layouts**.</span></span>
+1. <span data-ttu-id="98923-138">レイアウト エディターの、左側にあるアウトライン ツリーで、変更するモジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-138">In the layout editor, in the outline tree on the left, select the module to modify.</span></span> <span data-ttu-id="98923-139">そして、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="98923-139">Then follow any of these steps:</span></span>
 
-    - <span data-ttu-id="39d15-140">親モジュール内でモジュールを上下に移動するには、モジュールの省略記号ボタン (**...**) をクリックし、**上へ移動** または **下へ移動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-140">To move a module up or down inside its parent, select the ellipsis button (**...**) for the module, and then select **Move up** or **Move down**.</span></span>
-    - <span data-ttu-id="39d15-141">モジュールの既定の設定を変更するには、プロパティ ウィンドウを使用して既定値を入力し、必要に応じてすべての下流ページでロックします。</span><span class="sxs-lookup"><span data-stu-id="39d15-141">To change a module's default settings, use the property pane to enter default values and optionally lock them for all downstream pages.</span></span>
-    - <span data-ttu-id="39d15-142">コンテナー モジュールに新しいモジュールまたはフラグメントを追加するには、省略記号ボタンを選択し、**モジュールの追加** または **フラグメントの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-142">To add new modules or fragments to container modules, select the ellipsis button, and then select **Add module** or **Add fragment**.</span></span>
-    - <span data-ttu-id="39d15-143">レイアウトからモジュールを削除するには、省略記号ボタンを選択し、**削除** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-143">To remove a module from the layout, select the ellipsis button, and then select **Delete**.</span></span>
+    - <span data-ttu-id="98923-140">親モジュール内でモジュールを上下に移動するには、モジュールの省略記号ボタン (**...**) をクリックし、**上へ移動** または **下へ移動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-140">To move a module up or down inside its parent, select the ellipsis button (**...**) for the module, and then select **Move up** or **Move down**.</span></span>
+    - <span data-ttu-id="98923-141">モジュールの既定の設定を変更するには、プロパティ ウィンドウを使用して既定値を入力し、必要に応じてすべての下流ページでロックします。</span><span class="sxs-lookup"><span data-stu-id="98923-141">To change a module's default settings, use the property pane to enter default values and optionally lock them for all downstream pages.</span></span>
+    - <span data-ttu-id="98923-142">コンテナー モジュールに新しいモジュールまたはフラグメントを追加するには、省略記号ボタンを選択し、**モジュールの追加** または **フラグメントの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-142">To add new modules or fragments to container modules, select the ellipsis button, and then select **Add module** or **Add fragment**.</span></span>
+    - <span data-ttu-id="98923-143">レイアウトからモジュールを削除するには、省略記号ボタンを選択し、**削除** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-143">To remove a module from the layout, select the ellipsis button, and then select **Delete**.</span></span>
 
-## <a name="change-a-preset-layout-theme"></a><span data-ttu-id="39d15-144">プリセット レイアウトのテーマ変更</span><span class="sxs-lookup"><span data-stu-id="39d15-144">Change a preset layout theme</span></span>
+## <a name="change-a-preset-layout-theme"></a><span data-ttu-id="98923-144">プリセット レイアウトのテーマ変更</span><span class="sxs-lookup"><span data-stu-id="98923-144">Change a preset layout theme</span></span>
 
-<span data-ttu-id="39d15-145">プリセット レイアウトを使用するすべてのページに既定のテーマを設定するのが一般的な方法です。</span><span class="sxs-lookup"><span data-stu-id="39d15-145">A typical practice is to set a default theme for all pages that use a preset layout.</span></span>
+<span data-ttu-id="98923-145">プリセット レイアウトを使用するすべてのページに既定のテーマを設定するのが一般的な方法です。</span><span class="sxs-lookup"><span data-stu-id="98923-145">A typical practice is to set a default theme for all pages that use a preset layout.</span></span>
 
-<span data-ttu-id="39d15-146">プリセット レイアウトを使用するすべての子ページのテーマを設定または変更するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="39d15-146">To set or change the theme for all child pages that use your preset layout, follow these steps.</span></span>
+<span data-ttu-id="98923-146">プリセット レイアウトを使用するすべての子ページのテーマを設定または変更するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="98923-146">To set or change the theme for all child pages that use your preset layout, follow these steps.</span></span>
 
-1. <span data-ttu-id="39d15-147">レイアウト エディターの、左側にあるアウトライン ツリーで、ページ コンテナー モジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-147">In the layout editor, in the outline tree on the left, select the page container module.</span></span> <span data-ttu-id="39d15-148">(通常、このモジュールは 2 番目のノードであり、**既定のページ** として名づけられます。)</span><span class="sxs-lookup"><span data-stu-id="39d15-148">(Typically, this module is the second node and is named **Default page**.)</span></span>
-1. <span data-ttu-id="39d15-149">右側のプロパティ ウィンドウの **テーマ** フィールドで、テーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-149">In the property pane on the right, in the **Theme** field, select a theme.</span></span>
+1. <span data-ttu-id="98923-147">レイアウト エディターの、左側にあるアウトライン ツリーで、ページ コンテナー モジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-147">In the layout editor, in the outline tree on the left, select the page container module.</span></span> <span data-ttu-id="98923-148">(通常、このモジュールは 2 番目のノードであり、**既定のページ** として名づけられます。)</span><span class="sxs-lookup"><span data-stu-id="98923-148">(Typically, this module is the second node and is named **Default page**.)</span></span>
+1. <span data-ttu-id="98923-149">右側のプロパティ ウィンドウの **テーマ** フィールドで、テーマを選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-149">In the property pane on the right, in the **Theme** field, select a theme.</span></span>
 
-## <a name="save-check-in-preview-and-publish-a-preset-layout"></a><span data-ttu-id="39d15-150">プリセット レイアウトの保存、チェック イン、プレビュー、および公開</span><span class="sxs-lookup"><span data-stu-id="39d15-150">Save, check in, preview, and publish a preset layout</span></span>
+## <a name="save-check-in-preview-and-publish-a-preset-layout"></a><span data-ttu-id="98923-150">プリセット レイアウトの保存、チェック イン、プレビュー、および公開</span><span class="sxs-lookup"><span data-stu-id="98923-150">Save, check in, preview, and publish a preset layout</span></span>
 
-<span data-ttu-id="39d15-151">プリセット レイアウトを保存してチェック インするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="39d15-151">To save and check in your preset layout, follow these steps.</span></span>
+<span data-ttu-id="98923-151">プリセット レイアウトを保存してチェック インするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="98923-151">To save and check in your preset layout, follow these steps.</span></span>
 
-1. <span data-ttu-id="39d15-152">レイアウト エディターの上部にある **保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-152">Select **Save** at the top of the layout editor.</span></span> <span data-ttu-id="39d15-153">保存された変更は、チェック インされるまで下流ページに影響しません。</span><span class="sxs-lookup"><span data-stu-id="39d15-153">Saved changes don't affect downstream pages until they are checked in.</span></span>
-1. <span data-ttu-id="39d15-154">**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-154">Select **Finish editing**.</span></span> <span data-ttu-id="39d15-155">下流のワークフローで変更が検出可能になりました。</span><span class="sxs-lookup"><span data-stu-id="39d15-155">Your changes are now discoverable for downstream workflows.</span></span>
+1. <span data-ttu-id="98923-152">レイアウト エディターの上部にある **保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-152">Select **Save** at the top of the layout editor.</span></span> <span data-ttu-id="98923-153">保存された変更は、チェック インされるまで下流ページに影響しません。</span><span class="sxs-lookup"><span data-stu-id="98923-153">Saved changes don't affect downstream pages until they are checked in.</span></span>
+1. <span data-ttu-id="98923-154">**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-154">Select **Finish editing**.</span></span> <span data-ttu-id="98923-155">下流のワークフローで変更が検出可能になりました。</span><span class="sxs-lookup"><span data-stu-id="98923-155">Your changes are now discoverable for downstream workflows.</span></span>
 
-<span data-ttu-id="39d15-156">変更をプレビューするには、プリセット レイアウトを使用している既存のページを開くか、レイアウトから新しいページを作成します。</span><span class="sxs-lookup"><span data-stu-id="39d15-156">To preview your changes, either open an existing page that uses the preset layout or create a new page from the layout.</span></span>
+<span data-ttu-id="98923-156">変更をプレビューするには、プリセット レイアウトを使用している既存のページを開くか、レイアウトから新しいページを作成します。</span><span class="sxs-lookup"><span data-stu-id="98923-156">To preview your changes, either open an existing page that uses the preset layout or create a new page from the layout.</span></span>
 
-<span data-ttu-id="39d15-157">プリセット レイアウトの変更をプレビューしたら、次のいずれかの手順に従って、実際のサイトにレイアウトを発行します。</span><span class="sxs-lookup"><span data-stu-id="39d15-157">After you've previewed the changes to your preset layout, follow one of these steps to publish the layout to your live site:</span></span>
+<span data-ttu-id="98923-157">プリセット レイアウトの変更をプレビューしたら、次のいずれかの手順に従って、実際のサイトにレイアウトを発行します。</span><span class="sxs-lookup"><span data-stu-id="98923-157">After you've previewed the changes to your preset layout, follow one of these steps to publish the layout to your live site:</span></span>
 
-* <span data-ttu-id="39d15-158">**レイアウト** に移動し、レイアウトを選択して、**公開** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="39d15-158">Go to **Layouts**, select the layout, and then select **Publish**.</span></span>
-* <span data-ttu-id="39d15-159">レイアウト名を選択してレイアウト エディターを開き、**発行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="39d15-159">Select the layout name to open the layout editor, and then select **Publish**.</span></span>
-* <span data-ttu-id="39d15-160">未公開のレイアウトを参照するページを公開します。</span><span class="sxs-lookup"><span data-stu-id="39d15-160">Publish a page that references the unpublished layout.</span></span> <span data-ttu-id="39d15-161">レイアウトは自動的に公開されます。</span><span class="sxs-lookup"><span data-stu-id="39d15-161">The layout will automatically be published.</span></span>
+* <span data-ttu-id="98923-158">**レイアウト** に移動し、レイアウトを選択して、**公開** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="98923-158">Go to **Layouts**, select the layout, and then select **Publish**.</span></span>
+* <span data-ttu-id="98923-159">レイアウト名を選択してレイアウト エディターを開き、**発行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="98923-159">Select the layout name to open the layout editor, and then select **Publish**.</span></span>
+* <span data-ttu-id="98923-160">未公開のレイアウトを参照するページを公開します。</span><span class="sxs-lookup"><span data-stu-id="98923-160">Publish a page that references the unpublished layout.</span></span> <span data-ttu-id="98923-161">レイアウトは自動的に公開されます。</span><span class="sxs-lookup"><span data-stu-id="98923-161">The layout will automatically be published.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="39d15-162">複数のページから、プリセット レイアウトを参照することができます。</span><span class="sxs-lookup"><span data-stu-id="39d15-162">Preset layouts can be referenced by multiple pages.</span></span> <span data-ttu-id="39d15-163">プリセット レイアウトを発行する場合は、複数のページのレイアウトに影響を与える可能性があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="39d15-163">When you publish a preset layout, be aware that you might affect the layout of multiple pages.</span></span>
+> <span data-ttu-id="98923-162">複数のページから、プリセット レイアウトを参照することができます。</span><span class="sxs-lookup"><span data-stu-id="98923-162">Preset layouts can be referenced by multiple pages.</span></span> <span data-ttu-id="98923-163">プリセット レイアウトを発行する場合は、複数のページのレイアウトに影響を与える可能性があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="98923-163">When you publish a preset layout, be aware that you might affect the layout of multiple pages.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="39d15-164">追加リソース</span><span class="sxs-lookup"><span data-stu-id="39d15-164">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="98923-164">追加リソース</span><span class="sxs-lookup"><span data-stu-id="98923-164">Additional resources</span></span>
 
-[<span data-ttu-id="39d15-165">テンプレートとレイアウトの概要</span><span class="sxs-lookup"><span data-stu-id="39d15-165">Templates and layouts overview</span></span>](templates-layouts-overview.md)
+[<span data-ttu-id="98923-165">テンプレートとレイアウトの概要</span><span class="sxs-lookup"><span data-stu-id="98923-165">Templates and layouts overview</span></span>](templates-layouts-overview.md)
 
-[<span data-ttu-id="39d15-166">テンプレートの使用</span><span class="sxs-lookup"><span data-stu-id="39d15-166">Work with templates</span></span>](work-with-templates.md)
+[<span data-ttu-id="98923-166">テンプレートの使用</span><span class="sxs-lookup"><span data-stu-id="98923-166">Work with templates</span></span>](work-with-templates.md)
