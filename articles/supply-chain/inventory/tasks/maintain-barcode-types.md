@@ -11,38 +11,37 @@ ms.technology: ''
 ms.search.form: BarcodeSetup, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 979726a1d094146b546bbc6d31963367de2c59f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71bbc090d928cb80d19db33655ec9c9cc8e654bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432222"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011500"
 ---
-# <a name="maintain-barcode-types"></a><span data-ttu-id="e4050-103">バーコード タイプの管理</span><span class="sxs-lookup"><span data-stu-id="e4050-103">Maintain barcode types</span></span>
+# <a name="maintain-barcode-types"></a><span data-ttu-id="6a1dd-103">バーコード タイプの管理</span><span class="sxs-lookup"><span data-stu-id="6a1dd-103">Maintain barcode types</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e4050-104">この手順は、ピッキング リスト レポートの一部として使用される、新しいバーコードの定義を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e4050-104">This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report.</span></span> <span data-ttu-id="e4050-105">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="e4050-105">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="e4050-106">USMF を使用すると、表示される例の値を使用できます。</span><span class="sxs-lookup"><span data-stu-id="e4050-106">If you are using USMF you can use the example values that are shown.</span></span> <span data-ttu-id="e4050-107">通常、これらのタスクを実施するのは、倉庫マネージャーです。</span><span class="sxs-lookup"><span data-stu-id="e4050-107">These tasks would typically be carried out by a warehouse manager.</span></span>
+<span data-ttu-id="6a1dd-104">この手順は、ピッキング リスト レポートの一部として使用される、新しいバーコードの定義を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-104">This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report.</span></span> <span data-ttu-id="6a1dd-105">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-105">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="6a1dd-106">USMF を使用すると、表示される例の値を使用できます。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-106">If you are using USMF you can use the example values that are shown.</span></span> <span data-ttu-id="6a1dd-107">通常、これらのタスクを実施するのは、倉庫マネージャーです。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-107">These tasks would typically be carried out by a warehouse manager.</span></span>
 
-1. <span data-ttu-id="e4050-108">[バーコード] に移動します。</span><span class="sxs-lookup"><span data-stu-id="e4050-108">Go to Bar codes.</span></span>
-2. <span data-ttu-id="e4050-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e4050-109">Click New.</span></span>
-3. <span data-ttu-id="e4050-110">[バーコード設定] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e4050-110">In the Barcode setup field, type a value.</span></span>
-4. <span data-ttu-id="e4050-111">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e4050-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="e4050-112">[バーコード タイプ] フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="e4050-112">In the Bar code type field, select an option.</span></span>
-    * <span data-ttu-id="e4050-113">USMF を使用している場合、「Code 39」を選択できます。</span><span class="sxs-lookup"><span data-stu-id="e4050-113">If you're using USMF, you can select 'Code 39'.</span></span>  
-6. <span data-ttu-id="e4050-114">[サイズ] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e4050-114">In the Size field, enter a number.</span></span>
-7. <span data-ttu-id="e4050-115">[最大の長さ] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e4050-115">In the Maximum length field, enter a number.</span></span>
-8. <span data-ttu-id="e4050-116">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e4050-116">Click Save.</span></span>
-9. <span data-ttu-id="e4050-117">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e4050-117">Close the page.</span></span>
-10. <span data-ttu-id="e4050-118">[在庫および倉庫管理パラメーター] に移動します。</span><span class="sxs-lookup"><span data-stu-id="e4050-118">Go to Inventory and warehouse management parameters.</span></span>
-11. <span data-ttu-id="e4050-119">[バーコード設定] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="e4050-119">In the Barcode setup field, enter or select a value.</span></span>
-    * <span data-ttu-id="e4050-120">以前に作成したバーコード設定を選択します。しかしバーコード形式は、プロセスで使用されているレコード タイプに対する固有識別子の形式と一致している必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e4050-120">Select the barcode setup that you created before, but be aware that the bar code format must match the format of the unique identifier for the record type used in the process.</span></span> <span data-ttu-id="e4050-121">たとえば、ピッキング ルートに対するバーコード形式は、通常番号順序であるピッキング ルート参照の形式と一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e4050-121">For example, for picking routes, the bar code format should match the format of the picking route reference, which is typically a number sequence.</span></span>  
-12. <span data-ttu-id="e4050-122">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e4050-122">Click Save.</span></span>
-13. <span data-ttu-id="e4050-123">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e4050-123">Close the page.</span></span>
+1. <span data-ttu-id="6a1dd-108">[バーコード] に移動します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-108">Go to Bar codes.</span></span>
+2. <span data-ttu-id="6a1dd-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-109">Click New.</span></span>
+3. <span data-ttu-id="6a1dd-110">[バーコード設定] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-110">In the Barcode setup field, type a value.</span></span>
+4. <span data-ttu-id="6a1dd-111">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="6a1dd-112">[バーコード タイプ] フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-112">In the Bar code type field, select an option.</span></span>
+    * <span data-ttu-id="6a1dd-113">USMF を使用している場合、「Code 39」を選択できます。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-113">If you're using USMF, you can select 'Code 39'.</span></span>  
+6. <span data-ttu-id="6a1dd-114">[サイズ] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-114">In the Size field, enter a number.</span></span>
+7. <span data-ttu-id="6a1dd-115">[最大の長さ] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-115">In the Maximum length field, enter a number.</span></span>
+8. <span data-ttu-id="6a1dd-116">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-116">Click Save.</span></span>
+9. <span data-ttu-id="6a1dd-117">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-117">Close the page.</span></span>
+10. <span data-ttu-id="6a1dd-118">[在庫および倉庫管理パラメーター] に移動します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-118">Go to Inventory and warehouse management parameters.</span></span>
+11. <span data-ttu-id="6a1dd-119">[バーコード設定] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-119">In the Barcode setup field, enter or select a value.</span></span>
+    * <span data-ttu-id="6a1dd-120">以前に作成したバーコード設定を選択します。しかしバーコード形式は、プロセスで使用されているレコード タイプに対する固有識別子の形式と一致している必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-120">Select the barcode setup that you created before, but be aware that the bar code format must match the format of the unique identifier for the record type used in the process.</span></span> <span data-ttu-id="6a1dd-121">たとえば、ピッキング ルートに対するバーコード形式は、通常番号順序であるピッキング ルート参照の形式と一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-121">For example, for picking routes, the bar code format should match the format of the picking route reference, which is typically a number sequence.</span></span>  
+12. <span data-ttu-id="6a1dd-122">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-122">Click Save.</span></span>
+13. <span data-ttu-id="6a1dd-123">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6a1dd-123">Close the page.</span></span>
 
