@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectTree, EntAssetFunctionalLocationTree
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc4cd9ada9c1f64b434cd657eb5f5654c1328ef4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d0256cc86dc306c8addb37d2c8f335470b19177a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432098"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019407"
 ---
 # <a name="asset-view"></a>資産表示
 
@@ -48,6 +47,3 @@ ms.locfileid: "4432098"
 ツリー ビューで資産を選択した場合は、**有効な要求** または **有効なワーク オーダー** を選択して、資産に関連するメンテンナンス要求またはワーク オーダーを表示できます。 **開く** \> **機能的な場所**、**資産**、または **資産 BOM** を選択して、関連ビューを開くこともできます。
 
 **表示** フィールドで選択できる **資産の機能的な場所** オプションは、資産を選択できる任意の資産ルックアップでも使用できます。 たとえば、[資産の作成](../objects/create-an-object.md)、メンテナンス要求の作成、ワーク オーダーの作成など、ツリー ビューが **資産表示** タブに表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

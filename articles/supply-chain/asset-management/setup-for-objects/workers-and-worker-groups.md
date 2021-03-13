@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29fb487f02c28dbe940a1e00891f1e7ed20135b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431867"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017395"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>メンテナンス作業者および作業者グループ
 
@@ -64,6 +63,3 @@ ms.locfileid: "4431867"
 6. リソース グループを選択したメンテナンス作業者グループに関連づける場合は、**リソース グループからコピー** を選択します。 **グループ** フィールドで、カレンダーの設定をコピーするリソース グループを選択します。 次に、**作業者グループ** フィールドで、リソース グループのカレンダー設定をコピーする作業者グループを選択します。 このステップは、作業指示書のスケジューリング中に、メンテナンス作業者がリソース (ワーク センター) に関連するカレンダーを使用する場合にのみ関連します。
 
     **詳細** クイック タブのフィールドには、選択したメンテナンス作業者グループに設定されたメンテナンス作業者グループの数が表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

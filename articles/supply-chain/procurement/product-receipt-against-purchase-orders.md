@@ -1,7 +1,7 @@
 ---
 title: 発注書に対する製品受領書
 description: このトピックでは、入庫の際の、製品を登録するためのさまざまなオプションについて説明します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/15/2018
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cead310eaa86d755399e512f99d6782bfa551211
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: a07b6b05b8eb25b8c41a5eecbb71fb765a3e9d5f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432287"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019682"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>発注書に対する製品受領書
 
@@ -69,6 +68,3 @@ ms.locfileid: "4432287"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

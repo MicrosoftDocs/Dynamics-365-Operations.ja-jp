@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0d2f4e86b5dec84d4a24db6a4f9f9f16f6a765bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431857"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018474"
 ---
 # <a name="work-hour-control"></a>作業時間の管理
 
@@ -74,6 +73,3 @@ ms.locfileid: "4431857"
 時間計算を行う別の方法は、**すべての資産** または **有効な資産** で複数の資産を選択することです。 その後、**一般** クイック タブの **時間管理** ボタンをクリックします。 選択した資産は、**対象に含めるレコード** クイック タブの **資産** フィールドに自動的に挿入されます。 **資産時間管理** ダイアログで **OK** をクリックすると、選択した資産の計算が表示されます。 同じ手順を、**すべての機能的な場所** または **有効な機能的な場所** の機能的な場所、および **すべてのワーク オーダー** または **有効なワーク オーダー** のワーク オーダーに対して実行できます。
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

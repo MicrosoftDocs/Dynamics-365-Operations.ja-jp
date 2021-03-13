@@ -1,7 +1,7 @@
 ---
 title: 調達カテゴリ階層の設定
 description: この手順では、調達カテゴリ階層に新しいノードを作成する方法、および調達プロセスに使用する調達カテゴリをコンフィギュレーションする方法を示します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/21/2019
 ms.topic: business-process
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e45c80718c73ad785643c2a5fc0e712b291104d5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb37b2761708770b82f23cfbed86248d30a59410
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432257"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017320"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>調達カテゴリ階層の設定
 
@@ -45,6 +44,3 @@ ms.locfileid: "4432257"
 4. 調達カテゴリに追加する製品を選択します。
 5. 矢印を選択して **選択済** テーブルに製品を追加します。
 6. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

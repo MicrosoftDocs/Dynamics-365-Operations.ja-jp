@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetStandardSparePartsItemGroup, EntAssetObjectBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f42646ae865cd530203c997fd10c8ccd59e7fa2b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: baaf516eb386c3cf63d72bf31800b8731121fe26
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432100"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019527"
 ---
 # <a name="asset-boms"></a>資産 BOM
 
@@ -84,6 +83,3 @@ ms.locfileid: "4432100"
 5. 品目の有効期限が切れる場合 **は、有効期限** フィールドに終了日を入力します。
 6. **品目番号** フィールドで、品目を選択します。 名前は **製品名** フィールドに自動的に入力されます。
 7. **数量** フィールドに、使用される数量を入力します。 **単位** フィールドは自動的に更新されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

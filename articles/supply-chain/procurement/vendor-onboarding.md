@@ -1,7 +1,7 @@
 ---
 title: Onboard 仕入先
 description: このトピックでは、新しい仕入先の研修のプロセスを説明します。 このプロセス中に、さまざまなロールにより必要なアクションを説明します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 081c2e5145a9175ace946e332e299247e706b548
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432364"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019882"
 ---
 # <a name="onboard-vendors"></a>Onboard 仕入先
 
@@ -175,6 +174,3 @@ Supply Chain Management にサインインする見込み仕入先ユーザー�
 |         承認済         |                                                                               仕入先要求が承認されます。                                                                               |                                                                                                   見込み仕入先の登録要求、仕入先登録ウィザードに入力されたデータ、および仕入先要求が削除されます。                                                                                                    |
 |         拒否済         |                                                                               仕入先要求が否認されます。                                                                               |                                                                                                   見込み仕入先の登録要求、仕入先登録ウィザードに入力されたデータ、および仕入先要求が削除されます。                                                                                                    |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: 外部仕入先との仕入先コラボレーション
 description: このトピックでは、購買担当者が外部仕入先とコラボレーションして、発注書および委託販売在庫に関する情報を交換する方法について説明します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432365"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016756"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>外部仕入先との仕入先コラボレーション
 
@@ -259,6 +258,3 @@ RFQ プロセスに対してパラメータを設定するユーザーは、複�
 - %createddate%
 
 RFQ を送信した後に修正が要求され送信される場合、招待されたすべての仕入先に RFQ が再送信されます。 **見積の公開済依頼を開く** ページで、公開されたドキュメントも更新されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba9e29d4a59b07dec6c6c98d3f7cd16db97d2607
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6c64a0c07bf692385370e4bd2a99f51b211cd397
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432260"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018706"
 ---
 # <a name="functional-location-types"></a>機能的な場所のタイプ
 
@@ -67,6 +66,3 @@ ms.locfileid: "4432260"
 
 >[!NOTE] 
 >**一般** クイック タブでは、機能的な場所タイプに設定された資産タイプ、メンテナンス計画、資産属性要件、許可タイプ、属性、および機能的な場所の数の概要を取得することができます。 **機能的な場所** フィールドには、機能的な場所タイプを使用する機能的な場所の数が表示されます。 **コピー** ボタンを使用して、機能的な場所タイプから、選択した機能的な場所タイプに設定をコピーできます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: 消費要求の作成
 description: このトピックでは、要求を作成するプロセスについて説明します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acc2cdb9b74cccaefe565b0e2ae8ec4c5f2401c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c76a24999eef16f239578dd6c8cf9e2e5a8ca634
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431831"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018924"
 ---
 # <a name="create-a-requisition-for-consumption"></a>消費要求の作成
 
@@ -92,6 +91,3 @@ ms.locfileid: "4431831"
 6. ページを閉じます。
 7. ページを更新します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

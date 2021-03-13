@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 75edc1b683c4ea6c2bac8e509e6f6da8c56c5e6a
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665250"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018871"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>小売店舗のユーザー定義の証明書プロファイル
 
@@ -122,6 +121,3 @@ Commerce Runtime で、証明書プロファイルが呼び出されたときに
 
 > [!NOTE]
 > Commerce Runtime では、証明書の新しいバージョンが最初に呼び出されます。 証明書がまだ特定の店舗または特定のターミナルで更新されていない場合は、以前のバージョンが呼び出されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

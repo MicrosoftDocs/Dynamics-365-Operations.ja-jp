@@ -1,7 +1,7 @@
 ---
 title: 購買返品注文の作成
 description: この手順では、仕入先請求書ドキュメントから新しい発注書に明細行をコピーするために、訂正票アクションを使用した購買返品注文の作成方法を示します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 635e9ffb629a844bc5cccfa5d2a538ef0cf098d9
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 10b3e695ffcd44909be4781eac5d4eaeef199b03
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432315"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017062"
 ---
 # <a name="create-a-purchase-return-order"></a>購買返品注文の作成
 
@@ -68,6 +67,3 @@ ms.locfileid: "4432315"
 4. **製品受領書** フィールドに値を入力します。 このフィールドは製品受領書仕訳帳で伝票として使用される参照を入力するために使用されます。  
 5. **OK** をクリックします。 商品が購買返品注文の出荷時にすぐ記録され、製品受領書仕訳帳が作成されています。 製品受領書のアクションを使用して発注書で作成された仕訳帳を表示し、受け取り商品または返品商品、およびやり取りした時期を確認できます。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: リピート発注書の作成
 description: このトピックでは、以前の購買発注ドキュメントから新しい発注書、または既存の発注書に明細行をコピーして、リピート発注書 (PO) を作成する方法を示します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bf5e92ad6bc62dd008a51aacca891cb7253a723
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 65eb801fb363ce2484dcce4d086d1b2b5ad3388f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432314"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017345"
 ---
 # <a name="create-a-repeat-purchase-order"></a>リピート発注書の作成
 
@@ -70,6 +69,3 @@ ms.locfileid: "4432314"
 4. 目的の発注書に対する明細行を選択します。 この発注書の 1 つの注文明細行も、選択されていることを確認します。  
 5. **OK** を選択します。 追加の注文明細行は、発注書に追加されました。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

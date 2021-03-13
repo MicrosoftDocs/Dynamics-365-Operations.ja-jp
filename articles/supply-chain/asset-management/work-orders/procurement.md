@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 552b1b211460ae86af06e183af91c062a3ee569a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432159"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020207"
 ---
 # <a name="procurement"></a>調達
 
@@ -100,6 +99,3 @@ ms.locfileid: "4432159"
 
 同様に、作業指示書における購買要求の明細行に関連付けられている活動番号を表示または入力するには、**作業指示書の購買要求** 一覧ページで購買要求の記録を選び、**購買要求** の列で購買要求のリンクを選択します。 **明細行の詳細** クイックタブの **プロジェクト** タブで、**活動番号** フィールドを参照してください。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

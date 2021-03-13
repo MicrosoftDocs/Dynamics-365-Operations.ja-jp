@@ -1,7 +1,7 @@
 ---
 title: 仕入先コラボレーションを使用した委託販売在庫の監視
 description: この手順は、顧客との委託販売で置いた製品の在庫レベルに関する情報を表示する際の仕入先との連携方法を示します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c74f09ee2056ce88442bf8f8ccba3985638525a6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f2e782bed4cd9f2f13e2ee45afffaef277279131
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432223"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020132"
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>仕入先コラボレーションを使用した委託販売在庫の監視
 
@@ -43,6 +42,3 @@ ms.locfileid: "4432223"
 1. [仕入先コラボレーション] > [委託販売在庫] > [手持委託販売在庫] の順に移動します。
     * 手持委託製品在庫ページは、顧客の倉庫で所有している在庫を示します。 [規模のタブを表示] をクリックして、サイトや倉庫などその他の規模を表示できます。   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

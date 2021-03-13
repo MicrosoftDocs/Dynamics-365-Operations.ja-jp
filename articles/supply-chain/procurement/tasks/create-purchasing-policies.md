@@ -1,7 +1,7 @@
 ---
 title: 購入ポリシーの作成
 description: このトピックでは、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d4ba2a23f84972391283eaf01cef70a161c75226
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 86ffdff4cdb256fdae39de6228555da5fb88c707
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431903"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017037"
 ---
 # <a name="create-purchasing-policies"></a>購入ポリシーの作成
 
@@ -51,12 +50,9 @@ ms.locfileid: "4431903"
 
 ## <a name="add-a-policy-rule"></a>ポリシー ルールの追加
 1. **ポリシー ルール タイプ** の一覧で、**請求目的のルール** を選択します。
-- 既定の要求目的を [消費] と入力するよに設定し、代わりに [補充] タイプ も選択できるようにルールを作成します。  
+- 既定の要求目的を [消費] と入力するように設定し、代わりに [補充] タイプ も選択できるようにルールを作成します。  
 2. **ポリシー ルールの作成** を選択します。
 3. **手動での上書きを許可** フィールドで、**はい** を選択します。
 4. **閉じる** を選択します。
 - 次に、購入ポリシーの他のポリシー ルールを設定できます。 ポリシー ルール タイプでは、1 つの調達ポリシー内で同時に有効なルールを重複させることはできないことに注意してください。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

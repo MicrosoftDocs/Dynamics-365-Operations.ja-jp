@@ -1,7 +1,7 @@
 ---
 title: 仕入先ポータルを使用して、仕入先と連携
 description: このトピックでは、購買担当者が仕入先ポータルを使用して、発注書の確認プロセス中に外部仕入先と連携して作業する方法について説明します。 この情報は、2016 年 2 月 &amp; 2016 年 5 月バージョン Dynamics AX にのみ適用されます。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e451b419da59817ccf397fbb231a1cd112fd45ca
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 4aece4fd621be803abe5011e40785f6a3301924f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432395"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019106"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>仕入先ポータルを使用した仕入先とのコラボレーション
 
@@ -104,6 +103,3 @@ Dynamics AX で発注書が作成されます。 **承認済** ステータス�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

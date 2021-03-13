@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 22d5e371c386abc71946bf64ed8792647f78cf1b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432025"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019181"
 ---
 # <a name="create-maintenance-requests"></a>メンテナンス要求の作成
 
@@ -74,6 +73,3 @@ ms.locfileid: "4432025"
 
 > [!NOTE]
 > メンテナンス要求の作成時に資産を選択した場合は、資産に 1 つのエラーを追加できます。 メンテナンス要求を作成したら、必要に応じてさらにエラーを追加できます。 エラーを追加するには、**すべてのメンテナンス要求** ページの **資産エラー** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

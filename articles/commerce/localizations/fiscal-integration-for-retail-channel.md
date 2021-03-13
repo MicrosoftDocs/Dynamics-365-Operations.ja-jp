@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413847"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017470"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>コマース チャネルの会計統合の概要
 
@@ -150,6 +149,3 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 Retail SDK で使用可能な次のレガシ会計統合機能は、会計統合フレームワークを使用せず、それ以降の更新では推奨されません。
 
 - [スウェーデン向け制御ユニットの統合サンプル (レガシ)](./retail-sdk-control-unit-sample.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
