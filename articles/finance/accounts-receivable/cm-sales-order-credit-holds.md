@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 754b34d9d522451082ba6010297431788e4151f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445059"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012266"
 ---
 # <a name="credit-holds-for-sales-orders"></a>販売注文の与信保留
 [!include [banner](../includes/banner.md)]
@@ -265,6 +264,3 @@ ms.locfileid: "4445059"
 与信管理は、現在販売注文に対してのみ使用できます。 自由書式の請求書、販売注文のポイントおよびコールセンターの注文では、与信限度額を調整するために追加する一時的な与信限度額と保険/保証が使用されます。 この場合、ブロック ルールは使用されず、与信限度額に問題がある場合、保留リストには入れられません。
 
 与信管理では、プロジェクト請求書はサポートされません。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

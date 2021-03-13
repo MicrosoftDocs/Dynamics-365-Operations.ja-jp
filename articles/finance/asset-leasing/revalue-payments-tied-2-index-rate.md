@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 83684afbd5e11b890a59bc1469ddefffd1777c4e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 2cbe54ad92aff2f8a85e47301635fe4b6819e9a7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445378"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012064"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>指標金利にリンクされたリース支払の再評価
 
@@ -68,6 +67,3 @@ IFRS 16 リースに対するリース再評価プロセスの影響を表示す
 新たに生成された支払スケジュール (再評価日に開始) を表示したり、更新支払金額の合計を表示したりできます。 新しいリース負債の償却スケジュールと資産の減価償却スケジュールも作成されたため、調整済み支払スケジュールも反映されます。
 
 この仕訳入力は、調整済みの仕訳入力を、指標の再評価に関連するリース支払変更勘定に自動転記しています。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

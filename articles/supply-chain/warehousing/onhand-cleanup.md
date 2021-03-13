@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432348"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014486"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>倉庫管理の手持在庫エントリ クリーンアップ ジョブ
 
@@ -50,7 +49,12 @@ ms.locfileid: "4432348"
 
 ## <a name="possible-user-impact"></a>考えられるユーザーへの影響
 
-特定のレベル (ライセンス プレートのレベルなど) のすべてのレコードが手持在庫エントリのクリーンアップ ジョブによって削除されると、ユーザーへの影響が生じる可能性があります。 この場合、関連する手持在庫エントリは使用できなくなるため、ライセンス プレートで以前に在庫が使用可能になったことを確認する機能が予想どおりに機能しないことがあります。 (この機能によって、ユーザーが手持在庫情報を表示するときの **分析コード表示** にある条件、**数量 \<\> 0** がチェックされます)。ただし、クリーンアップ ジョブによって提供されるパフォーマンス向上で、このような機能上の小さな損失は補われるはずです。
+特定のレベル (ライセンス プレートのレベルなど) のすべてのレコードが手持在庫エントリのクリーンアップ ジョブによって削除されると、ユーザーへの影響が生じる可能性があります。 この場合、関連する手持在庫エントリは使用できなくなるため、ライセンス プレートで以前に在庫が使用可能になったことを確認する機能が予想どおりに機能しないことがあります。 たとえば、次のような状況が発生します。
+
+- **手持在庫** リストで、ユーザーが条件 **数量 \<\> 0** を選択解除するか、**分析コード表示設定** で **終了済トランザクション** 条件を選択します。
+- ユーザーが **現在の日付** パラメーターを設定した場合の、過去の期間の **在庫分析コード別の物理在庫** レポート。
+
+ただし、クリーンアップ ジョブによって提供されるパフォーマンスの向上は、機能におけるこれらの小さな損失を損なう必要があります。
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>最大実行時間の設定を有効にする
 
@@ -58,6 +62,3 @@ ms.locfileid: "4432348"
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *倉庫管理の手持在庫エントリ クリーンアップ ジョブの最大実行時間*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

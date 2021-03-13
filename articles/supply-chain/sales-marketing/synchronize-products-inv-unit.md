@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 911c5cc79ae359bbb77d31f366ccfeabf282a33e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c5be622d6f62d54bcec053b93700ce0c234b8308
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432107"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010900"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service へ在庫単位のある製品の同期
 
@@ -63,6 +62,3 @@ INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryuni
 ### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>在庫単位のある Field Service 製品 (Supply Chain Management から Field Service): 製品
 
 [![データ統合のテンプレートのマッピング](./media/FSProduct1.png)](./media/FSProduct1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529189"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011374"
 ---
 # <a name="product-identifiers"></a>製品 ID
 
@@ -44,7 +43,7 @@ Dynamics 365 Supply Chain Management では、製品の主要な識別子は製�
 
 Supply Chain Management を実装するときは、製品番号の戦略を特に考慮する必要があります。 適正な番号付けシステムは、物流フローが改善され、エラーを防ぐのに役立ちます。 適正な商品 ID は、最大 15 の文字です。 原則的には、10 文字未満で、5 つ以上の分類文字が含まれています。 高速検索を有効にするため、検索名を使用することもできます。 検索名は、製品の分類を表す追加の名前です。
 
-Common Data Service を使用すると、Supply Chain Management の製品番号も、Common Data Service の製品番号になります。 製品バリアントは、特徴的製品として Common Data Service に同期されます。
+Microsoft Dataverse を使用すると、Supply Chain Management の製品番号も、Microsoft Dataverse の製品番号になります。 製品バリアントは、特徴的製品として Dataverse に同期されます。
 
 ## <a name="item-number-and-product-dimensions"></a>品目番号および製品分析コード
 
@@ -167,7 +166,7 @@ Supply Chain Management では、特定の測定単位を定義することに�
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>製品エンティティ ID (すべての製品 ID をエクスポート)
 
-製品エンティティ ID モデルは、CDS のバージョン 1.0 が製品を参照するために使用されるすべての識別子でプロビジョニングされるように作成されました。 この作業を簡素化するために、すべての識別子は 1 つのグローバル識別子テーブルに集計され、1 つのモデルとしてエクスポートできます。 CDS のこのバージョンが、製品識別子のモデルを使用しないことに注意してください。 したがって、**製品エンティティ共通データ サービス識別子エンティティ** のエンティティおよびこのプロセスは、実用性には限りがあり、今後変更される可能性があります。
+製品エンティティ ID モデルは、Dataverse のバージョン 1.0 が製品を参照するために使用されるすべての識別子でプロビジョニングされるように作成されました。 この作業を簡素化するために、すべての識別子は 1 つのグローバル識別子テーブルに集計され、1 つのモデルとしてエクスポートできます。 Dataverse  のこのバージョンが、製品識別子のモデルを使用しないことに注意してください。 したがって、**製品エンティティ共通データ サービス識別子エンティティ** のエンティティおよびこのプロセスは、実用性には限りがあり、今後変更される可能性があります。
 
 製品 ID テーブルは、定期的なバッチ ジョブを使用して、メインの法人のすべての参照テーブルから設定されたグローバル テーブルです。 グローバル製品マスター スコープの定義として、法人と製品カテゴリ階層を選択する必要があります。 グローバル製品 ID テーブルの生成は、選択された法人にリリースされる製品と、製品カテゴリ階層の **Common data service** ロールのために選択された製品の階層のメンバーである製品に限定されます。
 
@@ -175,7 +174,7 @@ Supply Chain Management では、特定の測定単位を定義することに�
 
 環境をコンフィギュレーションするには、次の手順に従います。
 
-1. CDS のカテゴリ階層を選択します。 **カテゴリ階層ロールのアソシエーション** ページで、階層が **Common data service** ロールに関連付けられていない場合、新しい関連付けを作成する必要があります。 **Common data service** ロールを選択し、CDS に同期する製品のポートフォリオを表すカテゴリ階層を関連付けます。
+1. Dataverse のカテゴリ階層を選択します。 **カテゴリ階層ロールのアソシエーション** ページで、階層が **Common data service** ロールに関連付けられていない場合、新しい関連付けを作成する必要があります。 **共通データ サービス** ロールを選択し、Dataverse に同期する製品のポートフォリオを表すカテゴリ階層を関連付けます。
 2. グローバル製品マスター データの法人を選択します。 **製品属性** タブの **製品情報管理パラメーター** ページで、製品や品目識別子を主に管理されているマスター会社を選択します。
 3. ID コードタイプおよびエクスポートされるコードを定義します。 **製品情報管理** &gt; **設定** &gt; **製品 ID コード** に移動します。 ID コード タイプを生成するためには、**一般的なコード** を選択します。 コード タイプ エントリは、選択された法人で見つかった識別子の各タイプごとに生成されます。
 
@@ -190,6 +189,3 @@ Supply Chain Management では、特定の測定単位を定義することに�
 ## <a name="related-topic"></a>関連するトピック
 
 [注文入力時の製品および製品バリアントの検索](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

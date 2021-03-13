@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 163c2e00bd0363303596a48199a833369e51b232
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: ce04af89a385ede2c45a4e86d4028918c13c2089
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4432271"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011650"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Dynamics 365 Supply Chain Management 10.0.9 の新機能と変更点 (2020 年 4 月)
 
@@ -44,7 +43,7 @@ ms.locfileid: "4432271"
 
 - [リード タイムと作業日数 (公的部門) に基づいて、PO の出荷日を計算する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
 
-- [倉庫管理を使用する CW 製品処理](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - 詳細については、[倉庫管理による CW 製品の処理](../warehousing/catch-weight-processing.md)および [CW 製品の改善点](https://www.microsoft.com/videoplayer/embed/RE4jzx8)を参照してください。
+- [倉庫管理を使用する CW 製品処理](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - 詳細については、[倉庫管理を使った CW 製品の処理](../warehousing/catch-weight-processing.md)と[CW 製品の改善点](https://www.microsoft.com/videoplayer/embed/RE4jzx8)のビデオを参照してください。
 
 - [品目価格の保管の比較](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage)<br> - 詳細については、[品目価格の保管レポートの比較](../cost-management/compare-item-price.md)を参照してください。
 
@@ -52,7 +51,7 @@ ms.locfileid: "4432271"
 
 - [クロスドッキング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)<br> - 詳細については、[計画中のクロスドッキング](https://www.microsoft.com/videoplayer/embed/RE4f7LF)のビデオを参照してください。
 
-- 詳細 CW 統合 [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1)、[10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2)、[10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3)、[10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4)、[10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5)、[10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6)、[10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - 詳細については、[倉庫管理による CW 製品の処理](../warehousing/catch-weight-processing.md) および [CW 製品の改善点](https://www.microsoft.com/videoplayer/embed/RE4jzx8)も参照してください。
+- 詳細 CW 統合 [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1)、[10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2)、[10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3)、[10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4)、[10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5)、[10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6)、[10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - 詳細については、[倉庫管理を使った CW 製品の処理](../warehousing/catch-weight-processing.md)と[CW 製品の改善点](https://www.microsoft.com/videoplayer/embed/RE4jzx8)のビデオも参照してください。
 
 - [固定資産と資産管理ライフサイクルの統合](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)<br> - 詳細については、[資産管理と固定資産の統合](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md)を参照してください。
 
@@ -124,6 +123,3 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.9 には、プラットフ�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

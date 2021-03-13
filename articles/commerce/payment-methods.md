@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2b56609de3b2620dcc605c6c6d697cb74c8ed6c1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54bff6b7962ade09ea5c1f5f8d7721757dea1fc3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413764"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012369"
 ---
 # <a name="payment-methods"></a>支払方法
 
@@ -49,6 +48,3 @@ ms.locfileid: "4413764"
 2. 組織全体のカード タイプとカード番号の作成。 クレジット カードまたはデビット カードを受け入れる場合、カードの支払方法を 1 つ作成し、組織全体のカード タイプとカード番号を作成する必要があります。
 3. 店舗の支払方法を設定。 支払方法を各店舗に関連付けて、各支払方法の店舗固有の設定を入力します。
 4. 店舗のカード支払方法の設定。 店舗で受け入れるカード支払方法について、カードの設定を行います。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

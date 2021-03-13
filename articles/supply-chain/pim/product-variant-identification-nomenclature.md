@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 220104
 ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 90c01e4281246d890ef888c56ca137f83e83741c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f17f9e1401c68c11e23f327d96028663470b3245
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431733"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011325"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>製品バリアント番号と名前の分類
 
@@ -121,7 +120,7 @@ BOM には、2 つのコンフィギュレーション グループに分割さ�
 2.  テキスト定数: "&"
 3.  コンフィギュレーション グループ: フロント グリル
 
-この場合、布のフロント グリルが付いた標準キャビネットのコンフィギュレーション ID は M0007&M0021 になります。
+この場合、布のフロント グリルが付いた標準キャビネットの構成 ID は M0007&M0021 になります。
 
 ## <a name="nomenclature-for-a-combination-of-product-variants-and-configurations"></a>製品バリアントおよびコンフィギュレーションの組み合わせの分類
 制約ベースのコンフィギュレーション テクノロジまたは分析コードベースのコンフィギュレーション テクノロジを使用して、製品マスターの製品バリアントを設定する場合、製品バリアントの製品バリアント番号にコンフィギュレーション分析コードの分類を含めることができます。 バリアントをコンフィギュレーションするには、次の手順に従います。
@@ -198,6 +197,3 @@ BOM には、2 つのコンフィギュレーション グループに分割さ�
 
 [コンフィギュレーション済製品バリアントにおける製品番号の分類の作成](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

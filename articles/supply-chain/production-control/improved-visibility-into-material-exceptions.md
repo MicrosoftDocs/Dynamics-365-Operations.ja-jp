@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: bd4392417c7fd389c1c5fadf3e61be33a2f336db
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432310"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011125"
 ---
 # <a name="visibility-into-material-exceptions"></a>材料の例外の把握
 
@@ -67,6 +66,3 @@ BOM またはフォーミュラ明細行がリリースされると、生産ウ�
 **注意が必要な未処理の倉庫作業** タイルは、未処理の作業がある倉庫にリリースされ、ワークスペース日付より早い、または同じ原材料日付を持つ BOM およびフォーミュラ明細行の数を表示します。 明細行は、ワークスぺースのフィルターに適用される運営リソースによっても消費されなければなりません。
 
 タイルが選択されている場合、**すべての作業** ページが開かれます。 このページは、リリースされた BOM からの作業明細行およびタイルの条件を満たすフォーミュラ明細行を含むオープン作業ヘッダーの数によってフィルター処理されます。 **すべての作業** ページから、手動で作業を処理できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

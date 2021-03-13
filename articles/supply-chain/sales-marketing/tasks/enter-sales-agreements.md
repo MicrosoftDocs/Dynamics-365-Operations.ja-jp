@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm, SalesAgreementCustomerReferencesPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d69f3eaacea641460b407c1456ee50600262fee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1c63097340cf709976510451c157ab691e87d06e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431766"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010814"
 ---
 # <a name="enter-sales-agreements"></a>販売契約書の入力
 
@@ -57,6 +56,3 @@ ms.locfileid: "4431766"
 11. **OK** を選択します。
 12. ページを閉じます。 これで、契約は有効になります。 顧客の注文を契約にリンクすることを開始して、確定済ターゲットに対して相殺できます。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

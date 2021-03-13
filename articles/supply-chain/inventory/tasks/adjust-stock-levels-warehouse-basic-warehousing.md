@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9678dffd84e9e4032510811731a67da953b40431
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b397dd7efdfcd8874bc5bb44aaa12ab1dc8cb66
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432234"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011574"
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>倉庫の在庫レベルの調整 (基本倉庫)
 
@@ -60,6 +59,3 @@ ms.locfileid: "4432234"
 5. フォームを閉じます。
 6. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

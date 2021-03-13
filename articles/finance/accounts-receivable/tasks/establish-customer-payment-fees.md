@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustPaymFee, CustPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6475671002379d84519df05a0198a17ac000677
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99201039c30cd9d8e900662cd9e33b0a5db8e55a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445178"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012117"
 ---
 # <a name="establish-customer-payment-fees"></a>顧客支払手数料の設定
 
@@ -51,6 +50,3 @@ ms.locfileid: "4445178"
 18. **手数料の通貨** フィールドで、手数料の通貨を選択します。 これは、作成される手数料の通貨です。  
 19. **保存** をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

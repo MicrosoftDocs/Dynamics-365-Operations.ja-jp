@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 046204d36e2fc7a69129aaf7fe027b2abc7e8dd9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9f84e3ffc79920fc6ef49a6391f76acdd89252a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413743"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012472"
 ---
 # <a name="info-codes-and-info-code-groups"></a>情報コードおよび情報コード グループ
 
@@ -56,6 +55,3 @@ Commerce で、情報コード グループを作成できます。 情報コー
 **例 2: 情報コードと情報コード グループの関連付け**
 
 モバイル デバイスなどの特定の製品を販売するとき、電話番号、携帯機器識別番号 (MEID)、およびシリアル番号などの一連の特定の情報を収集する必要が常にあります。 ただし、タブレットと携帯電話を対比したさまざまな情報も収集する必要があります。 電話番号、MEID、およびシリアル番号に対するプロンプトを含む情報コード グループを設定し、情報コード グループを個別の情報コードに関連付けることができます。 製品固有の情報コードがトリガーされると、次に情報コード グループがトリガーされ、各デバイスについてリンクされた複数のセットの情報コードを定義しなくても、共通データを収集できるようになります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

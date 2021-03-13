@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431721"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011675"
 ---
 # <a name="inventory-journal-approval-workflows"></a>在庫仕訳帳の承認ワークフロー
 
@@ -31,6 +30,13 @@ ms.locfileid: "4431721"
 
 > [!NOTE]
 > 在庫仕訳帳のワークフローは、在庫管理モジュールを使用して記録された取引にのみ適用されます。 倉庫管理モジュールからトリガーされた在庫仕訳帳では動作しません。
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>在庫仕訳帳の承認ワークフロー機能をオンにする
+
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+
+- **モジュール:** *在庫と倉庫管理*
+- **機能名:** *在庫仕訳帳承認ワークフロー*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>在庫仕訳帳の承認ワークフローの作成
 
@@ -112,6 +118,3 @@ ms.locfileid: "4431721"
 1. ナビゲーション ウィンドウで、**在庫管理 \> 仕訳帳の入力 \> 項目** を展開し、在庫仕訳帳のタイプを選択します。
 1. 関連する仕訳を開きます。
 1. アクションペインの **ワークフロー** ボタンを選択すると、ドロップダウン ダイアログ ボックスが開きます。 **ワークフロー履歴** を選択します。 詳細については、[ワークフロー履歴を確認する](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md)を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

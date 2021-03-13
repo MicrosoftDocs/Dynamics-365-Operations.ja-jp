@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65ee884fb22c1a38e2d3022085fed7e3e6077d1f
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: ae6a3078743fc9cd43c71bc1d4531c0553ee53bb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644540"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012142"
 ---
 # <a name="reimburse-customers"></a>顧客への払戻し
 
@@ -49,6 +48,3 @@ ms.locfileid: "4644540"
 
 5. 作成された払い戻しトランザクションを表示するには、**払い戻し** レポート (**売掛金勘定 \> 照会およびレポート \> 払い戻しレポート**) を使用します。
 6. 買掛金勘定で、払い戻しプロセスの結果として作成された仕入先請求書に対する支払を作成します。 仕入先への支払方法の詳細については、[仕入先への支払に関する概要](../accounts-payable/Vendor-payments-workspace.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
