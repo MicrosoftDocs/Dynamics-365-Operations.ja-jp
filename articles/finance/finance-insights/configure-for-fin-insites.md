@@ -11,76 +11,78 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 38cdeb9110691e594b4b90fc5bc79e369c9f4707
-ms.sourcegitcommit: 1cfd6e0c808341b0f5bafbde7d04b0255b27352f
+ms.openlocfilehash: bb887bbff5eb5b92f588d3fa966ea204633575db
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664093"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115635"
 ---
-# <a name="configuration-for-finance-insights-preview"></a><span data-ttu-id="e7925-103">Finance Insights の構成 (プレビュー版)</span><span class="sxs-lookup"><span data-stu-id="e7925-103">Configuration for Finance insights (preview)</span></span>
+# <a name="configuration-for-finance-insights-preview"></a><span data-ttu-id="438ac-103">Finance Insights の構成 (プレビュー版)</span><span class="sxs-lookup"><span data-stu-id="438ac-103">Configuration for Finance insights (preview)</span></span>
 
 [!include [banner](../includes/banner.md)]
+
 [!include [preview banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="e7925-104">Finance insights では、Common Data Service を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、強力な予測ツールを提供します。</span><span class="sxs-lookup"><span data-stu-id="e7925-104">Finance insights combines functionality from Microsoft Dynamics 365 Finance with Common Data Service, Azure, and AI Builder to provide powerful forecasting tools for your organization.</span></span> <span data-ttu-id="e7925-105">このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="e7925-105">This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.</span></span>
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-## <a name="deploy-dynamics-365-finance"></a><span data-ttu-id="e7925-106">Dynamics 365 Finance のデプロイ</span><span class="sxs-lookup"><span data-stu-id="e7925-106">Deploy Dynamics 365 Finance</span></span>
+<span data-ttu-id="438ac-104">Finance insights では、Microsoft Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、強力な予測ツールを提供します。</span><span class="sxs-lookup"><span data-stu-id="438ac-104">Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization.</span></span> <span data-ttu-id="438ac-105">このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="438ac-105">This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.</span></span>
 
-<span data-ttu-id="e7925-107">環境をデプロイするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e7925-107">Deploy the environments by following these steps.</span></span>
+## <a name="deploy-dynamics-365-finance"></a><span data-ttu-id="438ac-106">Dynamics 365 Finance のデプロイ</span><span class="sxs-lookup"><span data-stu-id="438ac-106">Deploy Dynamics 365 Finance</span></span>
 
-1. <span data-ttu-id="e7925-108">Microsoft Dynamics Lifecycle Services (LCS) で、Dynamics 365 Finance 環境を作成または更新します。</span><span class="sxs-lookup"><span data-stu-id="e7925-108">In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment.</span></span> <span data-ttu-id="e7925-109">この環境では、アプリ バージョン10.0.11/プラットフォーム更新プログラム 35またはそれ以降が必要となります。</span><span class="sxs-lookup"><span data-stu-id="e7925-109">The environment requires app version 10.0.11/Platform update 35 or later.</span></span>
-2. <span data-ttu-id="e7925-110">この環境は、サンドボックスの高可用性 (HA) 環境である必要があります。</span><span class="sxs-lookup"><span data-stu-id="e7925-110">The environment must be a high-availability (HA) environment in Sandbox.</span></span> <span data-ttu-id="e7925-111">(このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e7925-111">(This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span></span>
-3. <span data-ttu-id="e7925-112">Contoso のデモデータを使用している場合は、顧客支払予測、キャッシュフロー予測、予算予測機能の使用にあたり、追加のサンプルデータが必要になります。</span><span class="sxs-lookup"><span data-stu-id="e7925-112">If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features.</span></span> 
+<span data-ttu-id="438ac-107">環境をデプロイするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="438ac-107">Deploy the environments by following these steps.</span></span>
 
-## <a name="configure-common-data-service"></a><span data-ttu-id="e7925-113">Common Data Service のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="e7925-113">Configure Common Data Service</span></span>
+1. <span data-ttu-id="438ac-108">Microsoft Dynamics Lifecycle Services (LCS) で、Dynamics 365 Finance 環境を作成または更新します。</span><span class="sxs-lookup"><span data-stu-id="438ac-108">In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment.</span></span> <span data-ttu-id="438ac-109">この環境では、アプリ バージョン10.0.11/プラットフォーム更新プログラム 35またはそれ以降が必要となります。</span><span class="sxs-lookup"><span data-stu-id="438ac-109">The environment requires app version 10.0.11/Platform update 35 or later.</span></span>
+2. <span data-ttu-id="438ac-110">この環境は、サンドボックスの高可用性 (HA) 環境である必要があります。</span><span class="sxs-lookup"><span data-stu-id="438ac-110">The environment must be a high-availability (HA) environment in Sandbox.</span></span> <span data-ttu-id="438ac-111">(このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="438ac-111">(This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span></span>
+3. <span data-ttu-id="438ac-112">Contoso のデモデータを使用している場合は、顧客支払予測、キャッシュフロー予測、予算予測機能の使用にあたり、追加のサンプルデータが必要になります。</span><span class="sxs-lookup"><span data-stu-id="438ac-112">If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features.</span></span> 
 
-<span data-ttu-id="e7925-114">以下の手動構成ステップを完了するか、提供されている Windows PowerShell スクリプトを使用すると設定のプロセスを高速化することができます。</span><span class="sxs-lookup"><span data-stu-id="e7925-114">You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided.</span></span> <span data-ttu-id="e7925-115">PowerShell スクリプトの実行が完了すると、Finance insights の構成に使用する値が提供されます。</span><span class="sxs-lookup"><span data-stu-id="e7925-115">When the PowerShell script has finished running, it will give you values to use to configure Finance insights.</span></span> 
+## <a name="configure-dataverse"></a><span data-ttu-id="438ac-113">Dataverse のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="438ac-113">Configure Dataverse</span></span>
+
+<span data-ttu-id="438ac-114">以下の手動構成ステップを完了するか、提供されている Windows PowerShell スクリプトを使用すると設定のプロセスを高速化することができます。</span><span class="sxs-lookup"><span data-stu-id="438ac-114">You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided.</span></span> <span data-ttu-id="438ac-115">PowerShell スクリプトの実行が完了すると、Finance insights の構成に使用する値が提供されます。</span><span class="sxs-lookup"><span data-stu-id="438ac-115">When the PowerShell script has finished running, it will give you values to use to configure Finance insights.</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="e7925-116">スクリプトを実行するには、PCで PowerShell を開きます。</span><span class="sxs-lookup"><span data-stu-id="e7925-116">Open PowerShell on your PC to run the script.</span></span> <span data-ttu-id="e7925-117">PowerShell バージョン5 が必要となる場合があります。</span><span class="sxs-lookup"><span data-stu-id="e7925-117">You may need PowerShell version 5.</span></span> <span data-ttu-id="e7925-118">Microsoft Azure CLI の "Try it" オプションが機能しない場合があります。</span><span class="sxs-lookup"><span data-stu-id="e7925-118">The Microsoft Azure CLI "Try it" option may not work.</span></span>
+> <span data-ttu-id="438ac-116">スクリプトを実行するには、PCで PowerShell を開きます。</span><span class="sxs-lookup"><span data-stu-id="438ac-116">Open PowerShell on your PC to run the script.</span></span> <span data-ttu-id="438ac-117">PowerShell バージョン5 が必要となる場合があります。</span><span class="sxs-lookup"><span data-stu-id="438ac-117">You may need PowerShell version 5.</span></span> <span data-ttu-id="438ac-118">Microsoft Azure CLI の "Try it" オプションが機能しない場合があります。</span><span class="sxs-lookup"><span data-stu-id="438ac-118">The Microsoft Azure CLI "Try it" option may not work.</span></span>
 
-# <a name="manual-configuration-steps"></a>[<span data-ttu-id="e7925-119">手動構成の手順</span><span class="sxs-lookup"><span data-stu-id="e7925-119">Manual configuration steps</span></span>](#tab/configuration-steps)
+# <a name="manual-configuration-steps"></a>[<span data-ttu-id="438ac-119">手動構成の手順</span><span class="sxs-lookup"><span data-stu-id="438ac-119">Manual configuration steps</span></span>](#tab/configuration-steps)
 
-1. <span data-ttu-id="e7925-120">[Power Platform 管理センター ](https://admin.powerplatform.microsoft.com/)を開き、次の手順に従って、同じ Active Directory テナントに新しい Common Data Service 環境を作成します。</span><span class="sxs-lookup"><span data-stu-id="e7925-120">Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Common Data Service environment in the same Active Directory tenant:</span></span>
+1. <span data-ttu-id="438ac-120">[Power Platform 管理センター ](https://admin.powerplatform.microsoft.com/)を開き、次の手順に従って、同じ Active Directory テナントに新しい Dataverse 環境を作成します。</span><span class="sxs-lookup"><span data-stu-id="438ac-120">Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:</span></span>
 
-    1. <span data-ttu-id="e7925-121">**環境** ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="e7925-121">Open the **Environments** page.</span></span>
+    1. <span data-ttu-id="438ac-121">**環境** ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="438ac-121">Open the **Environments** page.</span></span>
 
-        <span data-ttu-id="e7925-122">[![ 環境ページ](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span><span class="sxs-lookup"><span data-stu-id="e7925-122">[![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span></span>
+        <span data-ttu-id="438ac-122">[![ 環境ページ](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span><span class="sxs-lookup"><span data-stu-id="438ac-122">[![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span></span>
 
-    2. <span data-ttu-id="e7925-123">**新しい環境** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-123">Select **New environment**.</span></span>
-    3. <span data-ttu-id="e7925-124">**タイプ** フィールドで、**サンドボックス** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-124">In the **Type** field, select **Sandbox**.</span></span>
-    4. <span data-ttu-id="e7925-125">**データベースの作成** オプションを、**はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="e7925-125">Set the **Create Database** option to **Yes**.</span></span>
-    5. <span data-ttu-id="e7925-126">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-126">Select **Next**.</span></span>
-    6. <span data-ttu-id="e7925-127">組織で使用する言語と通貨を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-127">Select the language and currency for your organization.</span></span>
-    7. <span data-ttu-id="e7925-128">その他のすべてのフィールドで使用する規定値を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="e7925-128">Accept the default values for the other fields.</span></span>
-    8. <span data-ttu-id="e7925-129">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-129">Select **Save**.</span></span>
-    9. <span data-ttu-id="e7925-130">**環境** ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="e7925-130">Refresh the **Environments** page.</span></span>
-    10. <span data-ttu-id="e7925-131">**状態** フィールドの値が **準備完了** に更新されるまで待機します。</span><span class="sxs-lookup"><span data-stu-id="e7925-131">Wait until the value of the **State** field is updated to **Ready**.</span></span>
-    11. <span data-ttu-id="e7925-132">Common Data Service コンテナ― ID をメモします。</span><span class="sxs-lookup"><span data-stu-id="e7925-132">Make a note of the Common Data Service organization ID.</span></span>
-    12. <span data-ttu-id="e7925-133">環境を選択し、**設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-133">Select the environment, and then select **Settings**.</span></span>
-    13. <span data-ttu-id="e7925-134">**リソース \> すべてのレガシー設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-134">Select **Resources \> All Legacy Settings**.</span></span>
-    14. <span data-ttu-id="e7925-135">トップ ナビゲーションバーで、**設定** を選択し、**カスタマイズ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-135">On the top navigation bar, select **Settings**, and then select **Customizations**.</span></span>
-    15. <span data-ttu-id="e7925-136">**開発者リソース** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-136">Select **Developer Resources**.</span></span>
-    16. <span data-ttu-id="e7925-137">**インスタンス参照情報の ID** フィールドを、前述の手順でメモした  Common Data Service 組織 ID の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="e7925-137">Set the **Instance Reference Information ID** field to the Common Data Service organization ID value that you made a note of earlier.</span></span>
-    17. <span data-ttu-id="e7925-138">ブラウザーのアドレスバーで、Common Data Service 組織の URL をメモします。</span><span class="sxs-lookup"><span data-stu-id="e7925-138">In the browser's address bar, make a note of the URL for the Common Data Service organization.</span></span> <span data-ttu-id="e7925-139">URL は次のようなものになるでしょう: [`https://org42b2b3d3.crm.dynamics.com`]。</span><span class="sxs-lookup"><span data-stu-id="e7925-139">For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.</span></span>
+    2. <span data-ttu-id="438ac-123">**新しい環境** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-123">Select **New environment**.</span></span>
+    3. <span data-ttu-id="438ac-124">**タイプ** フィールドで、**サンドボックス** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-124">In the **Type** field, select **Sandbox**.</span></span>
+    4. <span data-ttu-id="438ac-125">**データベースの作成** オプションを、**はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="438ac-125">Set the **Create Database** option to **Yes**.</span></span>
+    5. <span data-ttu-id="438ac-126">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-126">Select **Next**.</span></span>
+    6. <span data-ttu-id="438ac-127">組織で使用する言語と通貨を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-127">Select the language and currency for your organization.</span></span>
+    7. <span data-ttu-id="438ac-128">その他のすべてのフィールドで使用する規定値を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="438ac-128">Accept the default values for the other fields.</span></span>
+    8. <span data-ttu-id="438ac-129">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-129">Select **Save**.</span></span>
+    9. <span data-ttu-id="438ac-130">**環境** ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="438ac-130">Refresh the **Environments** page.</span></span>
+    10. <span data-ttu-id="438ac-131">**状態** フィールドの値が **準備完了** に更新されるまで待機します。</span><span class="sxs-lookup"><span data-stu-id="438ac-131">Wait until the value of the **State** field is updated to **Ready**.</span></span>
+    11. <span data-ttu-id="438ac-132">Dataverse コンテナ― ID をメモします。</span><span class="sxs-lookup"><span data-stu-id="438ac-132">Make a note of the Dataverse organization ID.</span></span>
+    12. <span data-ttu-id="438ac-133">環境を選択し、**設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-133">Select the environment, and then select **Settings**.</span></span>
+    13. <span data-ttu-id="438ac-134">**リソース \> すべてのレガシー設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-134">Select **Resources \> All Legacy Settings**.</span></span>
+    14. <span data-ttu-id="438ac-135">トップ ナビゲーションバーで、**設定** を選択し、**カスタマイズ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-135">On the top navigation bar, select **Settings**, and then select **Customizations**.</span></span>
+    15. <span data-ttu-id="438ac-136">**開発者リソース** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-136">Select **Developer Resources**.</span></span>
+    16. <span data-ttu-id="438ac-137">**インスタンス参照情報の ID** フィールドを、前述の手順でメモした  Dataverse 組織 ID の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="438ac-137">Set the **Instance Reference Information ID** field to the Dataverse organization ID value that you made a note of earlier.</span></span>
+    17. <span data-ttu-id="438ac-138">ブラウザーのアドレスバーで、Dataverse 組織の URL をメモします。</span><span class="sxs-lookup"><span data-stu-id="438ac-138">In the browser's address bar, make a note of the URL for the Dataverse organization.</span></span> <span data-ttu-id="438ac-139">URL は次のようなものになるでしょう: [`https://org42b2b3d3.crm.dynamics.com`]。</span><span class="sxs-lookup"><span data-stu-id="438ac-139">For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.</span></span>
 
-2. <span data-ttu-id="e7925-140">キャッシュフロー予測機能や予算予測機能を使用する場合は、次の手順に従って、注釈の制限を少なくとも 50 メガバイト (MB) に更新してください。</span><span class="sxs-lookup"><span data-stu-id="e7925-140">If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):</span></span>
+2. <span data-ttu-id="438ac-140">キャッシュフロー予測機能や予算予測機能を使用する場合は、次の手順に従って、注釈の制限を少なくとも 50 メガバイト (MB) に更新してください。</span><span class="sxs-lookup"><span data-stu-id="438ac-140">If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):</span></span>
 
-    1. <span data-ttu-id="e7925-141">[Power Apps ポータル](https://make.powerapps.com)を開きます。</span><span class="sxs-lookup"><span data-stu-id="e7925-141">Open the [Power Apps portal](https://make.powerapps.com).</span></span>
-    2. <span data-ttu-id="e7925-142">作成した環境を選択し、 **詳細設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-142">Select the environment that you just created, and then select **Advanced settings**.</span></span>
-    3. <span data-ttu-id="e7925-143">**設定 \> 電子メールの構成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-143">Select **Settings \> Email Configuration**.</span></span>
-    4. <span data-ttu-id="e7925-144">**最大ファイルサイズ** フィールドの値を **51,200** に変更します。</span><span class="sxs-lookup"><span data-stu-id="e7925-144">Change the value of the **Maximum file size** field to **51,200**.</span></span> <span data-ttu-id="e7925-145">(値は、キロバイト \[KB\] で表されます。)</span><span class="sxs-lookup"><span data-stu-id="e7925-145">(The value is expressed in kilobytes \[KB\].)</span></span>
-    5. <span data-ttu-id="e7925-146">**OK** を選択して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="e7925-146">Select **OK** to save your changes.</span></span>
+    1. <span data-ttu-id="438ac-141">[Power Apps ポータル](https://make.powerapps.com)を開きます。</span><span class="sxs-lookup"><span data-stu-id="438ac-141">Open the [Power Apps portal](https://make.powerapps.com).</span></span>
+    2. <span data-ttu-id="438ac-142">作成した環境を選択し、 **詳細設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-142">Select the environment that you just created, and then select **Advanced settings**.</span></span>
+    3. <span data-ttu-id="438ac-143">**設定 \> 電子メールの構成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-143">Select **Settings \> Email Configuration**.</span></span>
+    4. <span data-ttu-id="438ac-144">**最大ファイルサイズ** フィールドの値を **51,200** に変更します。</span><span class="sxs-lookup"><span data-stu-id="438ac-144">Change the value of the **Maximum file size** field to **51,200**.</span></span> <span data-ttu-id="438ac-145">(値は、キロバイト \[KB\] で表されます。)</span><span class="sxs-lookup"><span data-stu-id="438ac-145">(The value is expressed in kilobytes \[KB\].)</span></span>
+    5. <span data-ttu-id="438ac-146">**OK** を選択して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="438ac-146">Select **OK** to save your changes.</span></span>
 
-# <a name="windows-powershell-configuration-script"></a>[<span data-ttu-id="e7925-147">Windows PowerShell 構成スクリプト</span><span class="sxs-lookup"><span data-stu-id="e7925-147">Windows PowerShell configuration script</span></span>](#tab/powershell-configuration-script)
+# <a name="windows-powershell-configuration-script"></a>[<span data-ttu-id="438ac-147">Windows PowerShell 構成スクリプト</span><span class="sxs-lookup"><span data-stu-id="438ac-147">Windows PowerShell configuration script</span></span>](#tab/powershell-configuration-script)
 
 ```azurecli-interactive
 Write-Output 'The following modules need to be present for execution of this script:'
@@ -265,190 +267,192 @@ catch {
 ```
 ---
 
-## <a name="configure-the-azure-setup"></a><span data-ttu-id="e7925-148">Azure の設定を構成する</span><span class="sxs-lookup"><span data-stu-id="e7925-148">Configure the Azure setup</span></span>
+## <a name="configure-the-azure-setup"></a><span data-ttu-id="438ac-148">Azure の設定を構成する</span><span class="sxs-lookup"><span data-stu-id="438ac-148">Configure the Azure setup</span></span>
 
-### <a name="enter-the-common-data-service-directory-id-and-the-users-azure-ad-object-id"></a><span data-ttu-id="e7925-149">Common Data Service ディレクトリ ID とユーザーの Azure AD オブジェクト ID を入力します</span><span class="sxs-lookup"><span data-stu-id="e7925-149">Enter the Common Data Service directory ID and the user's Azure AD object ID</span></span>
+### <a name="enter-the-dataverse-directory-id-and-the-users-azure-ad-object-id"></a><span data-ttu-id="438ac-149">Dataverse ディレクトリ ID とユーザーの Azure AD オブジェクト ID を入力します</span><span class="sxs-lookup"><span data-stu-id="438ac-149">Enter the Dataverse directory ID and the user's Azure AD object ID</span></span>
 
-1. <span data-ttu-id="e7925-150">Common Data Service ディレクトリ ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-150">Enter the Common Data Service directory ID:</span></span>
+1. <span data-ttu-id="438ac-150">Dataverse ディレクトリ ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-150">Enter the Dataverse directory ID:</span></span>
 
-    1. <span data-ttu-id="e7925-151">[Azure ポータル](https://portal.azure.com)を開きます。</span><span class="sxs-lookup"><span data-stu-id="e7925-151">Open the [Azure portal](https://portal.azure.com).</span></span>
-    2. <span data-ttu-id="e7925-152">Common Data Service 環境の作成に使用したユーザー ID を使用してログインします。</span><span class="sxs-lookup"><span data-stu-id="e7925-152">Sign in by using the user ID that was used to create the Common Data Service environment.</span></span>
-    3. <span data-ttu-id="e7925-153">**Azure Active Directory** に移動します。</span><span class="sxs-lookup"><span data-stu-id="e7925-153">Go to **Azure Active Directory**.</span></span>
-    4. <span data-ttu-id="e7925-154">**テナント ID** の値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="e7925-154">Copy the **Tenant ID** value.</span></span>
+    1. <span data-ttu-id="438ac-151">[Azure ポータル](https://portal.azure.com)を開きます。</span><span class="sxs-lookup"><span data-stu-id="438ac-151">Open the [Azure portal](https://portal.azure.com).</span></span>
+    2. <span data-ttu-id="438ac-152">Dataverse 環境の作成に使用したユーザー ID を使用してログインします。</span><span class="sxs-lookup"><span data-stu-id="438ac-152">Sign in by using the user ID that was used to create the Dataverse environment.</span></span>
+    3. <span data-ttu-id="438ac-153">**Azure Active Directory** に移動します。</span><span class="sxs-lookup"><span data-stu-id="438ac-153">Go to **Azure Active Directory**.</span></span>
+    4. <span data-ttu-id="438ac-154">**テナント ID** の値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="438ac-154">Copy the **Tenant ID** value.</span></span>
 
-2. <span data-ttu-id="e7925-155">ユーザーの Azure Active Directory (Azure AD) オブジェクト ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-155">Enter the user's Azure Active Directory (Azure AD) object ID:</span></span>
+2. <span data-ttu-id="438ac-155">ユーザーの Azure Active Directory (Azure AD) オブジェクト ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-155">Enter the user's Azure Active Directory (Azure AD) object ID:</span></span>
 
-    1. <span data-ttu-id="e7925-156">[Azure portal](https://portal.azure.com)で、**ユーザー** に移動して電子メールアドレスでユーザーを検索します。</span><span class="sxs-lookup"><span data-stu-id="e7925-156">In the [Azure portal](https://portal.azure.com), go to **Users**, and search for the user by email address.</span></span>
-    2. <span data-ttu-id="e7925-157">ユーザーの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-157">Select the user's name.</span></span>
-    3. <span data-ttu-id="e7925-158">**オブジェクト ID** の値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="e7925-158">Copy the **Object ID** value.</span></span>
+    1. <span data-ttu-id="438ac-156">[Azure portal](https://portal.azure.com)で、**ユーザー** に移動して電子メールアドレスでユーザーを検索します。</span><span class="sxs-lookup"><span data-stu-id="438ac-156">In the [Azure portal](https://portal.azure.com), go to **Users**, and search for the user by email address.</span></span>
+    2. <span data-ttu-id="438ac-157">ユーザーの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-157">Select the user's name.</span></span>
+    3. <span data-ttu-id="438ac-158">**オブジェクト ID** の値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="438ac-158">Copy the **Object ID** value.</span></span>
 
-### <a name="use-azure-cloud-shell-to-set-up-finance-insights-data-lake-resources"></a><span data-ttu-id="e7925-159">Azure Cloud Shell を使用した Finance insights Data Lake リソースの設定</span><span class="sxs-lookup"><span data-stu-id="e7925-159">Use Azure Cloud Shell to set up Finance insights Data Lake resources</span></span>
+### <a name="use-azure-cloud-shell-to-set-up-finance-insights-data-lake-resources"></a><span data-ttu-id="438ac-159">Azure Cloud Shell を使用した Finance insights Data Lake リソースの設定</span><span class="sxs-lookup"><span data-stu-id="438ac-159">Use Azure Cloud Shell to set up Finance insights Data Lake resources</span></span>
 
-# <a name="use-a-windows-powershell-script"></a>[<span data-ttu-id="e7925-160">Windows PowerShell スクリプトを使用する</span><span class="sxs-lookup"><span data-stu-id="e7925-160">Use a Windows PowerShell script</span></span>](#tab/use-a-powershell-script)
+# <a name="use-a-windows-powershell-script"></a>[<span data-ttu-id="438ac-160">Windows PowerShell スクリプトを使用する</span><span class="sxs-lookup"><span data-stu-id="438ac-160">Use a Windows PowerShell script</span></span>](#tab/use-a-powershell-script)
 
-<span data-ttu-id="e7925-161">Windows PowerShell スクリプトが指定されているため、[Azure Data Lakeへのエクスポートの構成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)で説明されているように Azure リソースを簡単に設定できます。</span><span class="sxs-lookup"><span data-stu-id="e7925-161">A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake).</span></span> <span data-ttu-id="e7925-162">手動による設定を行う場合は、この手順を省略して、[手動設定](#manual-setup)の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="e7925-162">If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.</span></span>
+<span data-ttu-id="438ac-161">Windows PowerShell スクリプトが指定されているため、[Azure Data Lakeへのエクスポートの構成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)で説明されているように Azure リソースを簡単に設定できます。</span><span class="sxs-lookup"><span data-stu-id="438ac-161">A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake).</span></span> <span data-ttu-id="438ac-162">手動による設定を行う場合は、この手順を省略して、[手動設定](#manual-setup)の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="438ac-162">If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e7925-163">PowerShell スクリプトを実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e7925-163">Follow the steps below to run the PowerShell script.</span></span> <span data-ttu-id="e7925-164">Azure CLI の "Try it" オプション、または PC 上でのスクリプト実行ができない場合があります。</span><span class="sxs-lookup"><span data-stu-id="e7925-164">The Azure CLI "Try it" option, or running the script on your PC may not work.</span></span>
+> <span data-ttu-id="438ac-163">PowerShell スクリプトを実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="438ac-163">Follow the steps below to run the PowerShell script.</span></span> <span data-ttu-id="438ac-164">Azure CLI の "Try it" オプション、または PC 上でのスクリプト実行ができない場合があります。</span><span class="sxs-lookup"><span data-stu-id="438ac-164">The Azure CLI "Try it" option, or running the script on your PC may not work.</span></span>
 
-<span data-ttu-id="e7925-165">Windows PowerShell スクリプトを使用して Azure をコ構成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e7925-165">Follow these steps to configure Azure by using the Windows PowerShell script.</span></span> <span data-ttu-id="e7925-166">Azure リソース グループ、Azure リソース、 Azure AD アプリケーションを作成する権限を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e7925-166">You must have rights to create an Azure resource group, Azure resources, and an Azure AD application.</span></span> <span data-ttu-id="e7925-167">必要なアクセス許可については、[Azure AD のアクセス許可の確認](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e7925-167">For information about the required permissions, see [Check Azure AD permissions](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span></span>
+<span data-ttu-id="438ac-165">Windows PowerShell スクリプトを使用して Azure をコ構成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="438ac-165">Follow these steps to configure Azure by using the Windows PowerShell script.</span></span> <span data-ttu-id="438ac-166">Azure リソース グループ、Azure リソース、 Azure AD アプリケーションを作成する権限を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="438ac-166">You must have rights to create an Azure resource group, Azure resources, and an Azure AD application.</span></span> <span data-ttu-id="438ac-167">必要なアクセス許可については、[Azure AD のアクセス許可の確認](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="438ac-167">For information about the required permissions, see [Check Azure AD permissions](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span></span>
 
-1. <span data-ttu-id="e7925-168">[Azure portal](https://portal.azure.com)で、対象の Azure サブスクリプションにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="e7925-168">In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.</span></span> <span data-ttu-id="e7925-169">**検索** フィールドの右側にある **Cloud Shell** ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-169">Select the **Cloud Shell** button to the right of the **Search** field.</span></span>
-2. <span data-ttu-id="e7925-170">**PowerShell** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-170">Select **PowerShell**.</span></span>
-3. <span data-ttu-id="e7925-171">プロンプトが表示された場合は、ストレージを作成します。</span><span class="sxs-lookup"><span data-stu-id="e7925-171">Create storage, if you're prompted to do so.</span></span> <span data-ttu-id="e7925-172">その後、Windows PowerShell スクリプトをセッションにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e7925-172">Then upload the Windows PowerShell script to the session.</span></span>
-4. <span data-ttu-id="e7925-173">スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e7925-173">Run the script.</span></span>
-5. <span data-ttu-id="e7925-174">プロンプトに従ってスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e7925-174">Follow the prompts to run the script.</span></span>
-6. <span data-ttu-id="e7925-175">スクリプト出力の情報を使用して、LCS に **Data Lake にエクスポートする** アドインをインストールします。</span><span class="sxs-lookup"><span data-stu-id="e7925-175">Use the information from the script output to install the **Export to Data Lake** add-in in LCS.</span></span>
-7. <span data-ttu-id="e7925-176">スクリプト出力の情報を使用して、Finance (**システム管理 \> システムパラメーター \> データ接続**) の **データ接続** ページのエンティティストアを有効にします。</span><span class="sxs-lookup"><span data-stu-id="e7925-176">Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).</span></span>
+1. <span data-ttu-id="438ac-168">[Azure portal](https://portal.azure.com)で、対象の Azure サブスクリプションにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="438ac-168">In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.</span></span> <span data-ttu-id="438ac-169">**検索** フィールドの右側にある **Cloud Shell** ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-169">Select the **Cloud Shell** button to the right of the **Search** field.</span></span>
+2. <span data-ttu-id="438ac-170">**PowerShell** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-170">Select **PowerShell**.</span></span>
+3. <span data-ttu-id="438ac-171">プロンプトが表示された場合は、ストレージを作成します。</span><span class="sxs-lookup"><span data-stu-id="438ac-171">Create storage, if you're prompted to do so.</span></span> <span data-ttu-id="438ac-172">その後、Windows PowerShell スクリプトをセッションにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="438ac-172">Then upload the Windows PowerShell script to the session.</span></span>
+4. <span data-ttu-id="438ac-173">スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="438ac-173">Run the script.</span></span>
+5. <span data-ttu-id="438ac-174">プロンプトに従ってスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="438ac-174">Follow the prompts to run the script.</span></span>
+6. <span data-ttu-id="438ac-175">スクリプト出力の情報を使用して、LCS に **Data Lake にエクスポートする** アドインをインストールします。</span><span class="sxs-lookup"><span data-stu-id="438ac-175">Use the information from the script output to install the **Export to Data Lake** add-in in LCS.</span></span>
+7. <span data-ttu-id="438ac-176">スクリプト出力の情報を使用して、Finance (**システム管理 \> システムパラメーター \> データ接続**) の **データ接続** ページのエンティティストアを有効にします。</span><span class="sxs-lookup"><span data-stu-id="438ac-176">Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).</span></span>
 
-### <a name="manual-setup"></a><span data-ttu-id="e7925-177">手動設定</span><span class="sxs-lookup"><span data-stu-id="e7925-177">Manual setup</span></span>
+### <a name="manual-setup"></a><span data-ttu-id="438ac-177">手動設定</span><span class="sxs-lookup"><span data-stu-id="438ac-177">Manual setup</span></span>
 
-#### <a name="add-applications-to-the-azure-ad-tenant"></a><span data-ttu-id="e7925-178">Azure AD テナントへのアプリケーションの追加</span><span class="sxs-lookup"><span data-stu-id="e7925-178">Add applications to the Azure AD tenant</span></span>
+#### <a name="add-applications-to-the-azure-ad-tenant"></a><span data-ttu-id="438ac-178">Azure AD テナントへのアプリケーションの追加</span><span class="sxs-lookup"><span data-stu-id="438ac-178">Add applications to the Azure AD tenant</span></span>
 
-1. <span data-ttu-id="e7925-179">[Azure ポータル](https://portal.azure.com)で **Azure Active Directory** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="e7925-179">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**.</span></span>
-2. <span data-ttu-id="e7925-180">**管理 \> エンタープライズ アプリケーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-180">Select **Manage \> Enterprise applications**.</span></span>
-3. <span data-ttu-id="e7925-181">次のアプリケーションをアプリ ID で検索します。</span><span class="sxs-lookup"><span data-stu-id="e7925-181">Search for the following applications by app ID.</span></span>
+1. <span data-ttu-id="438ac-179">[Azure ポータル](https://portal.azure.com)で **Azure Active Directory** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="438ac-179">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**.</span></span>
+2. <span data-ttu-id="438ac-180">**管理 \> エンタープライズ アプリケーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-180">Select **Manage \> Enterprise applications**.</span></span>
+3. <span data-ttu-id="438ac-181">次のアプリケーションをアプリ ID で検索します。</span><span class="sxs-lookup"><span data-stu-id="438ac-181">Search for the following applications by app ID.</span></span>
 
-    | <span data-ttu-id="e7925-182">申請書</span><span class="sxs-lookup"><span data-stu-id="e7925-182">Application</span></span>                              | <span data-ttu-id="e7925-183">アプリ ID</span><span class="sxs-lookup"><span data-stu-id="e7925-183">App ID</span></span>                               |
+    | <span data-ttu-id="438ac-182">申請書</span><span class="sxs-lookup"><span data-stu-id="438ac-182">Application</span></span>                              | <span data-ttu-id="438ac-183">アプリ ID</span><span class="sxs-lookup"><span data-stu-id="438ac-183">App ID</span></span>                               |
     |------------------------------------------|--------------------------------------|
-    | <span data-ttu-id="e7925-184">Microsoft Dynamics ERP マイクロサービス</span><span class="sxs-lookup"><span data-stu-id="e7925-184">Microsoft Dynamics ERP Microservices</span></span>     | <span data-ttu-id="e7925-185">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span><span class="sxs-lookup"><span data-stu-id="e7925-185">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span></span> |
-    | <span data-ttu-id="e7925-186">Microsoft Dynamics ERP マイクロサービス CDS</span><span class="sxs-lookup"><span data-stu-id="e7925-186">Microsoft Dynamics ERP Microservices CDS</span></span> | <span data-ttu-id="e7925-187">703e2651-d3fc-48f5-942c-74274233dba8</span><span class="sxs-lookup"><span data-stu-id="e7925-187">703e2651-d3fc-48f5-942c-74274233dba8</span></span> |
-    | <span data-ttu-id="e7925-188">AI Builder の承認サービス</span><span class="sxs-lookup"><span data-stu-id="e7925-188">AI Builder Authorization Service</span></span>         | <span data-ttu-id="e7925-189">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span><span class="sxs-lookup"><span data-stu-id="e7925-189">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span></span> |
+    | <span data-ttu-id="438ac-184">Microsoft Dynamics ERP マイクロサービス</span><span class="sxs-lookup"><span data-stu-id="438ac-184">Microsoft Dynamics ERP Microservices</span></span>     | <span data-ttu-id="438ac-185">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span><span class="sxs-lookup"><span data-stu-id="438ac-185">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span></span> |
+    | <span data-ttu-id="438ac-186">Microsoft Dynamics ERP マイクロサービス CDS</span><span class="sxs-lookup"><span data-stu-id="438ac-186">Microsoft Dynamics ERP Microservices CDS</span></span> | <span data-ttu-id="438ac-187">703e2651-d3fc-48f5-942c-74274233dba8</span><span class="sxs-lookup"><span data-stu-id="438ac-187">703e2651-d3fc-48f5-942c-74274233dba8</span></span> |
+    | <span data-ttu-id="438ac-188">AI Builder の承認サービス</span><span class="sxs-lookup"><span data-stu-id="438ac-188">AI Builder Authorization Service</span></span>         | <span data-ttu-id="438ac-189">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span><span class="sxs-lookup"><span data-stu-id="438ac-189">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span></span> |
 
-<span data-ttu-id="e7925-190">前述のアプリケーションが見つからない場合は、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e7925-190">If you can't find any of the preceding applications, try the following steps.</span></span>
+<span data-ttu-id="438ac-190">前述のアプリケーションが見つからない場合は、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="438ac-190">If you can't find any of the preceding applications, try the following steps.</span></span>
 
-1. <span data-ttu-id="e7925-191">ローカル コンピューターで、**スタート**  メニューを選択し、**powershell** を検索します。</span><span class="sxs-lookup"><span data-stu-id="e7925-191">On your local machine, select the **Start** menu, and search for **powershell**.</span></span>
-2. <span data-ttu-id="e7925-192">**Windows PowerShell** を右クリックし、**管理者として実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-192">Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.</span></span>
-3. <span data-ttu-id="e7925-193">以下のコマンドを実行して **AzureAD** モジュールをインストールします。</span><span class="sxs-lookup"><span data-stu-id="e7925-193">Run the following command to install the **AzureAD** module.</span></span>
+1. <span data-ttu-id="438ac-191">ローカル コンピューターで、**スタート**  メニューを選択し、**powershell** を検索します。</span><span class="sxs-lookup"><span data-stu-id="438ac-191">On your local machine, select the **Start** menu, and search for **powershell**.</span></span>
+2. <span data-ttu-id="438ac-192">**Windows PowerShell** を右クリックし、**管理者として実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-192">Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.</span></span>
+3. <span data-ttu-id="438ac-193">以下のコマンドを実行して **AzureAD** モジュールをインストールします。</span><span class="sxs-lookup"><span data-stu-id="438ac-193">Run the following command to install the **AzureAD** module.</span></span>
 
     `Install-Module -Name AzureAD`
 
-4. <span data-ttu-id="e7925-194">NuGet プロバイダーを続行する必要がある場合は、**Y** を選択してインストールします。</span><span class="sxs-lookup"><span data-stu-id="e7925-194">If a NuGet provider is required to continue, select **Y** to install it.</span></span>
-5. <span data-ttu-id="e7925-195">「信頼できないリポジトリ」のメッセージが表示された場合は、**Y** を選択して続行します。</span><span class="sxs-lookup"><span data-stu-id="e7925-195">If an "Untrusted repository" message appears, select **Y** to continue.</span></span>
-6. <span data-ttu-id="e7925-196">追加の必要がある各アプリケーションについては、以下のコマンドを実行してアプリケーションを Azure AD に追加します。</span><span class="sxs-lookup"><span data-stu-id="e7925-196">For each application that must be added, run the following commands to add the application to Azure AD.</span></span> <span data-ttu-id="e7925-197">プロンプトが表示されたら、管理者で Azure AD にログインします。</span><span class="sxs-lookup"><span data-stu-id="e7925-197">When you're prompted, sign in as the Azure AD administrator.</span></span>
+4. <span data-ttu-id="438ac-194">NuGet プロバイダーを続行する必要がある場合は、**Y** を選択してインストールします。</span><span class="sxs-lookup"><span data-stu-id="438ac-194">If a NuGet provider is required to continue, select **Y** to install it.</span></span>
+5. <span data-ttu-id="438ac-195">「信頼できないリポジトリ」のメッセージが表示された場合は、**Y** を選択して続行します。</span><span class="sxs-lookup"><span data-stu-id="438ac-195">If an "Untrusted repository" message appears, select **Y** to continue.</span></span>
+6. <span data-ttu-id="438ac-196">追加の必要がある各アプリケーションについては、以下のコマンドを実行してアプリケーションを Azure AD に追加します。</span><span class="sxs-lookup"><span data-stu-id="438ac-196">For each application that must be added, run the following commands to add the application to Azure AD.</span></span> <span data-ttu-id="438ac-197">プロンプトが表示されたら、管理者で Azure AD にログインします。</span><span class="sxs-lookup"><span data-stu-id="438ac-197">When you're prompted, sign in as the Azure AD administrator.</span></span>
 
     `Connect-AzureAD`
 
     `New-AzureADServicePrincipal –AppId <AppId>`
 
-#### <a name="create-azure-resources"></a><span data-ttu-id="e7925-198">Azure リソースの作成</span><span class="sxs-lookup"><span data-stu-id="e7925-198">Create Azure resources</span></span>
+#### <a name="create-azure-resources"></a><span data-ttu-id="438ac-198">Azure リソースの作成</span><span class="sxs-lookup"><span data-stu-id="438ac-198">Create Azure resources</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e7925-199">Common Data Service 環境と同じ Azure AD インスタンスで次のリソースを作成してください。</span><span class="sxs-lookup"><span data-stu-id="e7925-199">Make sure that you create the following resources in the same Azure AD instance as the Common Data Service environment.</span></span> <span data-ttu-id="e7925-200">別の Azure AD インスタンスのリソースを使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="e7925-200">You can't use resources from a different Azure AD instance.</span></span>
+> <span data-ttu-id="438ac-199">Dataverse 環境と同じ Azure AD インスタンスで次のリソースを作成してください。</span><span class="sxs-lookup"><span data-stu-id="438ac-199">Make sure that you create the following resources in the same Azure AD instance as the Dataverse environment.</span></span> <span data-ttu-id="438ac-200">別の Azure AD インスタンスのリソースを使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="438ac-200">You can't use resources from a different Azure AD instance.</span></span>
 
-1. <span data-ttu-id="e7925-201">新しいストレージ アカウントを作成する方法:</span><span class="sxs-lookup"><span data-stu-id="e7925-201">Create a new storage account:</span></span>
+1. <span data-ttu-id="438ac-201">新しいストレージ アカウントを作成する方法:</span><span class="sxs-lookup"><span data-stu-id="438ac-201">Create a new storage account:</span></span>
 
-    1. <span data-ttu-id="e7925-202">[Azure ポータル](https://portal.azure.com)で、新しいストレージ アカウントを作成します。</span><span class="sxs-lookup"><span data-stu-id="e7925-202">In the [Azure portal](https://portal.azure.com), create a storage account.</span></span>
-    2. <span data-ttu-id="e7925-203">**ストレージ アカウントの作成** ダイアログ ボックスで、次のフィールドを設定します。</span><span class="sxs-lookup"><span data-stu-id="e7925-203">In the **Create storage account** dialog box, set the following fields:</span></span>
+    1. <span data-ttu-id="438ac-202">[Azure ポータル](https://portal.azure.com)で、新しいストレージ アカウントを作成します。</span><span class="sxs-lookup"><span data-stu-id="438ac-202">In the [Azure portal](https://portal.azure.com), create a storage account.</span></span>
+    2. <span data-ttu-id="438ac-203">**ストレージ アカウントの作成** ダイアログ ボックスで、次のフィールドを設定します。</span><span class="sxs-lookup"><span data-stu-id="438ac-203">In the **Create storage account** dialog box, set the following fields:</span></span>
 
-        - <span data-ttu-id="e7925-204">**場所** - ご利用の環境が設置されているデータセンターを選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-204">**Location** – Select the data center where your environment is located.</span></span>
-        - <span data-ttu-id="e7925-205">**パフォーマンス** - **標準** を選択することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e7925-205">**Performance** – We recommend that you select **Standard**.</span></span>
-        - <span data-ttu-id="e7925-206">**アカウントの種類** - 必ず **Storage V2** を選択してください。</span><span class="sxs-lookup"><span data-stu-id="e7925-206">**Account kind** – You must select **StorageV2**.</span></span>
+        - <span data-ttu-id="438ac-204">**場所** - ご利用の環境が設置されているデータセンターを選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-204">**Location** – Select the data center where your environment is located.</span></span>
+        - <span data-ttu-id="438ac-205">**パフォーマンス** - **標準** を選択することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="438ac-205">**Performance** – We recommend that you select **Standard**.</span></span>
+        - <span data-ttu-id="438ac-206">**アカウントの種類** - 必ず **Storage V2** を選択してください。</span><span class="sxs-lookup"><span data-stu-id="438ac-206">**Account kind** – You must select **StorageV2**.</span></span>
 
-    3. <span data-ttu-id="e7925-207">**詳細オプション** ダイアログボックスの **Data Lake storage Gen2** オプションで、**階層型名前空間** 機能配下の **有効** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-207">In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature.</span></span> <span data-ttu-id="e7925-208">この機能を無効にすると、Power BI データ フローなどのサービスを含む Finance and Operations アプリが書き込んだデータを使用することができません。</span><span class="sxs-lookup"><span data-stu-id="e7925-208">If you disable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.</span></span>
-    4. <span data-ttu-id="e7925-209">**確認して作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-209">Select **Review and create**.</span></span> <span data-ttu-id="e7925-210">配置が完了したら、新しいリソースが Azure ポータルに表示されます。</span><span class="sxs-lookup"><span data-stu-id="e7925-210">When the deployment is completed, the new resource will be shown in the Azure portal.</span></span>
-    5. <span data-ttu-id="e7925-211">作成したストレージ アカウントに移動します。</span><span class="sxs-lookup"><span data-stu-id="e7925-211">Go to the storage account that you created.</span></span>
-    6. <span data-ttu-id="e7925-212">左側のメニューで、**アクセス キー** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-212">On the left menu, select **Access keys**.</span></span>
-    7. <span data-ttu-id="e7925-213">**Key1** または **Key2** の接続文字列をコピーして保存します。</span><span class="sxs-lookup"><span data-stu-id="e7925-213">Copy and save the connection string for either **Key1** or **Key2**.</span></span>
-    8. <span data-ttu-id="e7925-214">ストレージアカウント名をコピーして保存し ます。</span><span class="sxs-lookup"><span data-stu-id="e7925-214">Copy and save the storage account name.</span></span>
+    3. <span data-ttu-id="438ac-207">**詳細オプション** ダイアログボックスの **Data Lake storage Gen2** オプションで、**階層型名前空間** 機能配下の **有効** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-207">In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature.</span></span> <span data-ttu-id="438ac-208">この機能を無効にすると、Power BI データ フローなどのサービスを含む Finance and Operations アプリが書き込んだデータを使用することができません。</span><span class="sxs-lookup"><span data-stu-id="438ac-208">If you disable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.</span></span>
+    4. <span data-ttu-id="438ac-209">**確認して作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-209">Select **Review and create**.</span></span> <span data-ttu-id="438ac-210">配置が完了したら、新しいリソースが Azure ポータルに表示されます。</span><span class="sxs-lookup"><span data-stu-id="438ac-210">When the deployment is completed, the new resource will be shown in the Azure portal.</span></span>
+    5. <span data-ttu-id="438ac-211">作成したストレージ アカウントに移動します。</span><span class="sxs-lookup"><span data-stu-id="438ac-211">Go to the storage account that you created.</span></span>
+    6. <span data-ttu-id="438ac-212">左側のメニューで、**アクセス キー** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-212">On the left menu, select **Access keys**.</span></span>
+    7. <span data-ttu-id="438ac-213">**Key1** または **Key2** の接続文字列をコピーして保存します。</span><span class="sxs-lookup"><span data-stu-id="438ac-213">Copy and save the connection string for either **Key1** or **Key2**.</span></span>
+    8. <span data-ttu-id="438ac-214">ストレージアカウント名をコピーして保存し ます。</span><span class="sxs-lookup"><span data-stu-id="438ac-214">Copy and save the storage account name.</span></span>
 
-2. <span data-ttu-id="e7925-215">新しいキー コンテナーの作成:</span><span class="sxs-lookup"><span data-stu-id="e7925-215">Create a new key vault:</span></span>
+2. <span data-ttu-id="438ac-215">新しいキー コンテナーの作成:</span><span class="sxs-lookup"><span data-stu-id="438ac-215">Create a new key vault:</span></span>
 
-    1. <span data-ttu-id="e7925-216">[Azure portal](https://portal.azure.com)で、新しいキー コンテナーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e7925-216">In the [Azure portal](https://portal.azure.com), create a key vault.</span></span>
-    2. <span data-ttu-id="e7925-217">**Key Vault の作成** ダイアログ ボックスの **場所** フィールドで、環境があるデータ センターを選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-217">In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.</span></span>
-    3. <span data-ttu-id="e7925-218">キー コンテナーが作成されたら、一覧で選択し、**シークレット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-218">After key vault is created, select it in the list, and then select **Secrets**.</span></span>
-    4. <span data-ttu-id="e7925-219">**生成/インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-219">Select **Generate/Import**.</span></span>
-    5. <span data-ttu-id="e7925-220">**シークレットを作成** ダイアログ ボックスの **アップロード オプション** フィールドで、**手動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-220">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
-    6. <span data-ttu-id="e7925-221">シークレットの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-221">Enter a name for the secret.</span></span> <span data-ttu-id="e7925-222">その後で指定する必要があるため、名前をメモします。</span><span class="sxs-lookup"><span data-stu-id="e7925-222">Make a note of the name, because you will have to provide it later.</span></span>
-    7. <span data-ttu-id="e7925-223">**値** フィールドに、前述の手順でストレージ アカウントから取得した接続文字列を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-223">In the **Value** field, enter the connection string that you obtained from the storage account in the previous procedure.</span></span>
-    8. <span data-ttu-id="e7925-224">**有効** を選択し、**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-224">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="e7925-225">シークレットが作成され、Key Vault に追加されます。</span><span class="sxs-lookup"><span data-stu-id="e7925-225">The secret is created and added to Key Vault.</span></span>
-    9. <span data-ttu-id="e7925-226">**キー コンテナーの概要** を開き、DNS 名を控えておきます。</span><span class="sxs-lookup"><span data-stu-id="e7925-226">Go to the **Key Vault Overview**, and make a note of the DNS name.</span></span>
+    1. <span data-ttu-id="438ac-216">[Azure portal](https://portal.azure.com)で、新しいキー コンテナーを作成します。</span><span class="sxs-lookup"><span data-stu-id="438ac-216">In the [Azure portal](https://portal.azure.com), create a key vault.</span></span>
+    2. <span data-ttu-id="438ac-217">**Key Vault の作成** ダイアログ ボックスの **場所** フィールドで、環境があるデータ センターを選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-217">In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.</span></span>
+    3. <span data-ttu-id="438ac-218">キー コンテナーが作成されたら、一覧で選択し、**シークレット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-218">After key vault is created, select it in the list, and then select **Secrets**.</span></span>
+    4. <span data-ttu-id="438ac-219">**生成/インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-219">Select **Generate/Import**.</span></span>
+    5. <span data-ttu-id="438ac-220">**シークレットを作成** ダイアログ ボックスの **アップロード オプション** フィールドで、**手動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-220">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
+    6. <span data-ttu-id="438ac-221">シークレットの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-221">Enter a name for the secret.</span></span> <span data-ttu-id="438ac-222">その後で指定する必要があるため、名前をメモします。</span><span class="sxs-lookup"><span data-stu-id="438ac-222">Make a note of the name, because you will have to provide it later.</span></span>
+    7. <span data-ttu-id="438ac-223">**値** フィールドに、前述の手順でストレージ アカウントから取得した接続文字列を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-223">In the **Value** field, enter the connection string that you obtained from the storage account in the previous procedure.</span></span>
+    8. <span data-ttu-id="438ac-224">**有効** を選択し、**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-224">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="438ac-225">シークレットが作成され、Key Vault に追加されます。</span><span class="sxs-lookup"><span data-stu-id="438ac-225">The secret is created and added to Key Vault.</span></span>
+    9. <span data-ttu-id="438ac-226">**キー コンテナーの概要** を開き、DNS 名を控えておきます。</span><span class="sxs-lookup"><span data-stu-id="438ac-226">Go to the **Key Vault Overview**, and make a note of the DNS name.</span></span>
 
-3. <span data-ttu-id="e7925-227">Azure AD アプリケーションを作成、登録します。</span><span class="sxs-lookup"><span data-stu-id="e7925-227">Create and register an Azure AD application:</span></span>
+3. <span data-ttu-id="438ac-227">Azure AD アプリケーションを作成、登録します。</span><span class="sxs-lookup"><span data-stu-id="438ac-227">Create and register an Azure AD application:</span></span>
 
-    1. <span data-ttu-id="e7925-228">[Azure portal](https://portal.azure.com) で、**Azure Active Directory** にアクセスし、**App registrations** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-228">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and then select **App registrations**.</span></span>
-    2. <span data-ttu-id="e7925-229">**新規アプリケーションの登録** を選択し、次のフィールドを設定します。</span><span class="sxs-lookup"><span data-stu-id="e7925-229">Select **New application registration**, and set the following fields:</span></span>
+    1. <span data-ttu-id="438ac-228">[Azure portal](https://portal.azure.com) で、**Azure Active Directory** にアクセスし、**App registrations** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-228">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and then select **App registrations**.</span></span>
+    2. <span data-ttu-id="438ac-229">**新規アプリケーションの登録** を選択し、次のフィールドを設定します。</span><span class="sxs-lookup"><span data-stu-id="438ac-229">Select **New application registration**, and set the following fields:</span></span>
 
-        - <span data-ttu-id="e7925-230">**名前** - アプリの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-230">**Name** – Enter the name of the app.</span></span>
-        - <span data-ttu-id="e7925-231">**アプリケーション タイプ** - **Web API** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-231">**Application type** – Select **Web API**.</span></span>
-        - <span data-ttu-id="e7925-232">**リダイレクト URI の設定** - Dynamics 365 インスタンスの URL を入力します (例: `https://yourdynamicsinstance.dynamics.com/auth` )。</span><span class="sxs-lookup"><span data-stu-id="e7925-232">**Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.</span></span>
+        - <span data-ttu-id="438ac-230">**名前** - アプリの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-230">**Name** – Enter the name of the app.</span></span>
+        - <span data-ttu-id="438ac-231">**アプリケーション タイプ** - **Web API** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-231">**Application type** – Select **Web API**.</span></span>
+        - <span data-ttu-id="438ac-232">**リダイレクト URI の設定** - Dynamics 365 インスタンスの URL を入力します (例: `https://yourdynamicsinstance.dynamics.com/auth` )。</span><span class="sxs-lookup"><span data-stu-id="438ac-232">**Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.</span></span>
 
-    3. <span data-ttu-id="e7925-233">作成したアプリに移動し、**アプリケーション (クライアント) ID** の値をコピーして保存します。</span><span class="sxs-lookup"><span data-stu-id="e7925-233">Go to the app that you just created, and copy and save its **Application (client) ID** value.</span></span> <span data-ttu-id="e7925-234">後続の処理でキー コンテナーを設定する際に、このシークレットの値を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e7925-234">You will have to provide this value later, when you set up the key vault.</span></span>
-    4. <span data-ttu-id="e7925-235">**API アクセス許可** に移動し、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e7925-235">Go to **API permissions**, and follow these steps:</span></span>
+    3. <span data-ttu-id="438ac-233">作成したアプリに移動し、**アプリケーション (クライアント) ID** の値をコピーして保存します。</span><span class="sxs-lookup"><span data-stu-id="438ac-233">Go to the app that you just created, and copy and save its **Application (client) ID** value.</span></span> <span data-ttu-id="438ac-234">後続の処理でキー コンテナーを設定する際に、このシークレットの値を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="438ac-234">You will have to provide this value later, when you set up the key vault.</span></span>
+    4. <span data-ttu-id="438ac-235">**API アクセス許可** に移動し、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="438ac-235">Go to **API permissions**, and follow these steps:</span></span>
 
-        1. <span data-ttu-id="e7925-236">**アクセス許可の追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-236">Select **Add a permission**.</span></span>
-        2. <span data-ttu-id="e7925-237">**Azure Key vault** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-237">Select **Azure Key vault**.</span></span>
-        3. <span data-ttu-id="e7925-238">[委任されたアクセス許可] を選択した後、**ユーザー\_なりすまし** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-238">After you select delegated permissions, select **user\_impersonation**.</span></span>
-        4. <span data-ttu-id="e7925-239">**アクセス許可の追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-239">Select **Add permissions**.</span></span>
+        1. <span data-ttu-id="438ac-236">**アクセス許可の追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-236">Select **Add a permission**.</span></span>
+        2. <span data-ttu-id="438ac-237">**Azure Key vault** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-237">Select **Azure Key vault**.</span></span>
+        3. <span data-ttu-id="438ac-238">[委任されたアクセス許可] を選択した後、**ユーザー\_なりすまし** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-238">After you select delegated permissions, select **user\_impersonation**.</span></span>
+        4. <span data-ttu-id="438ac-239">**アクセス許可の追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-239">Select **Add permissions**.</span></span>
 
-    5. <span data-ttu-id="e7925-240">アプリのメニューで、**証明書\&シークレット** を選択し、次の手順に従ってキー コンテナーのシークレットを作成します。</span><span class="sxs-lookup"><span data-stu-id="e7925-240">On the menu for the app, select **Certificates \& secrets**, and then follow these steps to create Key Vault secrets:</span></span>
+    5. <span data-ttu-id="438ac-240">アプリのメニューで、**証明書\&シークレット** を選択し、次の手順に従ってキー コンテナーのシークレットを作成します。</span><span class="sxs-lookup"><span data-stu-id="438ac-240">On the menu for the app, select **Certificates \& secrets**, and then follow these steps to create Key Vault secrets:</span></span>
 
-        1. <span data-ttu-id="e7925-241">**新しいクライアント シークレット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-241">Select **New client secret**.</span></span>
-        2. <span data-ttu-id="e7925-242">**キーの説明** フィールドに、名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-242">In the **Key Description** field, enter a name.</span></span>
-        3. <span data-ttu-id="e7925-243">期間を選択し、**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-243">Select a duration, and then select **Add**.</span></span> <span data-ttu-id="e7925-244">シークレットが **値** フィールドに生成されます。</span><span class="sxs-lookup"><span data-stu-id="e7925-244">A secret is generated in the **Value** field.</span></span>
-        4. <span data-ttu-id="e7925-245">シークレットの値をコピーして保存します。</span><span class="sxs-lookup"><span data-stu-id="e7925-245">Copy and save the secret value.</span></span>
+        1. <span data-ttu-id="438ac-241">**新しいクライアント シークレット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-241">Select **New client secret**.</span></span>
+        2. <span data-ttu-id="438ac-242">**キーの説明** フィールドに、名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-242">In the **Key Description** field, enter a name.</span></span>
+        3. <span data-ttu-id="438ac-243">期間を選択し、**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-243">Select a duration, and then select **Add**.</span></span> <span data-ttu-id="438ac-244">シークレットが **値** フィールドに生成されます。</span><span class="sxs-lookup"><span data-stu-id="438ac-244">A secret is generated in the **Value** field.</span></span>
+        4. <span data-ttu-id="438ac-245">シークレットの値をコピーして保存します。</span><span class="sxs-lookup"><span data-stu-id="438ac-245">Copy and save the secret value.</span></span>
 
-4. <span data-ttu-id="e7925-246">新しいキー コンテナーの作成:</span><span class="sxs-lookup"><span data-stu-id="e7925-246">Create Key Vault secrets:</span></span>
+4. <span data-ttu-id="438ac-246">新しいキー コンテナーの作成:</span><span class="sxs-lookup"><span data-stu-id="438ac-246">Create Key Vault secrets:</span></span>
 
-    1. <span data-ttu-id="e7925-247">前述の手順で作成したキー コンテナーに移動し、**シークレット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-247">Go to the key vault that you created earlier, and select **Secrets**.</span></span>
-    2. <span data-ttu-id="e7925-248">次の表の各シークレットに対して、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e7925-248">For each secret name in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="438ac-247">前述の手順で作成したキー コンテナーに移動し、**シークレット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-247">Go to the key vault that you created earlier, and select **Secrets**.</span></span>
+    2. <span data-ttu-id="438ac-248">次の表の各シークレットに対して、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="438ac-248">For each secret name in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="e7925-249">**生成/インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-249">Select **Generate/Import**.</span></span>
-        2. <span data-ttu-id="e7925-250">**シークレットを作成** ダイアログ ボックスの **アップロード オプション** フィールドで、**手動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-250">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
-        3. <span data-ttu-id="e7925-251">次の表から、シークレットの名前と値を作成します。</span><span class="sxs-lookup"><span data-stu-id="e7925-251">Create the secret name and value from the following table.</span></span>
-        4. <span data-ttu-id="e7925-252">**有効** を選択し、**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-252">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="e7925-253">シークレットが作成され、Key Vault に追加されます。</span><span class="sxs-lookup"><span data-stu-id="e7925-253">The secret is created and added to Key Vault.</span></span>
+        1. <span data-ttu-id="438ac-249">**生成/インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-249">Select **Generate/Import**.</span></span>
+        2. <span data-ttu-id="438ac-250">**シークレットを作成** ダイアログ ボックスの **アップロード オプション** フィールドで、**手動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-250">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
+        3. <span data-ttu-id="438ac-251">次の表から、シークレットの名前と値を作成します。</span><span class="sxs-lookup"><span data-stu-id="438ac-251">Create the secret name and value from the following table.</span></span>
+        4. <span data-ttu-id="438ac-252">**有効** を選択し、**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-252">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="438ac-253">シークレットが作成され、Key Vault に追加されます。</span><span class="sxs-lookup"><span data-stu-id="438ac-253">The secret is created and added to Key Vault.</span></span>
 
-        | <span data-ttu-id="e7925-254">シークレット名</span><span class="sxs-lookup"><span data-stu-id="e7925-254">Secret name</span></span>                       | <span data-ttu-id="e7925-255">シークレットの値</span><span class="sxs-lookup"><span data-stu-id="e7925-255">Secret value</span></span>                                                                                |
+        | <span data-ttu-id="438ac-254">シークレット名</span><span class="sxs-lookup"><span data-stu-id="438ac-254">Secret name</span></span>                       | <span data-ttu-id="438ac-255">シークレットの値</span><span class="sxs-lookup"><span data-stu-id="438ac-255">Secret value</span></span>                                                                                |
         |-----------------------------------|---------------------------------------------------------------------------------------------|
-        | <span data-ttu-id="e7925-256">アプリ ID</span><span class="sxs-lookup"><span data-stu-id="e7925-256">app-id</span></span>                            | <span data-ttu-id="e7925-257">作成済みのアプリケーション アプリ ID</span><span class="sxs-lookup"><span data-stu-id="e7925-257">The app ID of the application that you created earlier</span></span>                                      |
-        | <span data-ttu-id="e7925-258">アプリのシークレット</span><span class="sxs-lookup"><span data-stu-id="e7925-258">app-secret</span></span>                        | <span data-ttu-id="e7925-259">前述の手順で保存したクライアント シークレット</span><span class="sxs-lookup"><span data-stu-id="e7925-259">The client secret that you saved earlier</span></span>                                                    |
-        | <span data-ttu-id="e7925-260">storage-account-name</span><span class="sxs-lookup"><span data-stu-id="e7925-260">storage-account-name</span></span>              | <span data-ttu-id="e7925-261">前に作成したストレージアカウントの名前 (例: **sstorageaccount1**)</span><span class="sxs-lookup"><span data-stu-id="e7925-261">The name of the storage account that you created earlier, such as **storageaccount1**</span></span>       |
-        | <span data-ttu-id="e7925-262">ストレージ - アカウント - 接続 - 文字列</span><span class="sxs-lookup"><span data-stu-id="e7925-262">storage-account-connection-string</span></span> | <span data-ttu-id="e7925-263">ストレージ アカウントの **アクセス キー** ページからコピーした接続文字列</span><span class="sxs-lookup"><span data-stu-id="e7925-263">The connection string that you copied from the **Access keys** page for the storage account</span></span> |
+        | <span data-ttu-id="438ac-256">アプリ ID</span><span class="sxs-lookup"><span data-stu-id="438ac-256">app-id</span></span>                            | <span data-ttu-id="438ac-257">作成済みのアプリケーション アプリ ID</span><span class="sxs-lookup"><span data-stu-id="438ac-257">The app ID of the application that you created earlier</span></span>                                      |
+        | <span data-ttu-id="438ac-258">アプリのシークレット</span><span class="sxs-lookup"><span data-stu-id="438ac-258">app-secret</span></span>                        | <span data-ttu-id="438ac-259">前述の手順で保存したクライアント シークレット</span><span class="sxs-lookup"><span data-stu-id="438ac-259">The client secret that you saved earlier</span></span>                                                    |
+        | <span data-ttu-id="438ac-260">storage-account-name</span><span class="sxs-lookup"><span data-stu-id="438ac-260">storage-account-name</span></span>              | <span data-ttu-id="438ac-261">前に作成したストレージアカウントの名前 (例: **sstorageaccount1**)</span><span class="sxs-lookup"><span data-stu-id="438ac-261">The name of the storage account that you created earlier, such as **storageaccount1**</span></span>       |
+        | <span data-ttu-id="438ac-262">ストレージ - アカウント - 接続 - 文字列</span><span class="sxs-lookup"><span data-stu-id="438ac-262">storage-account-connection-string</span></span> | <span data-ttu-id="438ac-263">ストレージ アカウントの **アクセス キー** ページからコピーした接続文字列</span><span class="sxs-lookup"><span data-stu-id="438ac-263">The connection string that you copied from the **Access keys** page for the storage account</span></span> |
 
-5. <span data-ttu-id="e7925-264">アプリケーションを承認してキー コンテナーにアクセスする方法:</span><span class="sxs-lookup"><span data-stu-id="e7925-264">Authorize the application to access the key vault:</span></span>
+5. <span data-ttu-id="438ac-264">アプリケーションを承認してキー コンテナーにアクセスする方法:</span><span class="sxs-lookup"><span data-stu-id="438ac-264">Authorize the application to access the key vault:</span></span>
 
-    1. <span data-ttu-id="e7925-265">[Azure portal](https://portal.azure.com)で、作成済のキー コンテナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="e7925-265">In the [Azure portal](https://portal.azure.com), open the key vault that you created earlier.</span></span>
-    2. <span data-ttu-id="e7925-266">アクセス ポリシーを選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-266">Select the access policies.</span></span>
-    3. <span data-ttu-id="e7925-267">次のアプリケーションに対して、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e7925-267">For each application in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="438ac-265">[Azure portal](https://portal.azure.com)で、作成済のキー コンテナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="438ac-265">In the [Azure portal](https://portal.azure.com), open the key vault that you created earlier.</span></span>
+    2. <span data-ttu-id="438ac-266">アクセス ポリシーを選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-266">Select the access policies.</span></span>
+    3. <span data-ttu-id="438ac-267">次のアプリケーションに対して、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="438ac-267">For each application in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="e7925-268">**アクセス ポリシー** を選択し、アクセス ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e7925-268">Select **Add Access Policy** to create an access policy.</span></span>
-        2. <span data-ttu-id="e7925-269">**シークレットのアクセス許可** フィールドで、次の表からアクセス許可を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-269">In the **Secret permissions** field, select the permissions from the following table.</span></span>
-        3. <span data-ttu-id="e7925-270">**プリンシパルの選択** フィールドで、次の表からアプリケーションの表示名を検索します。</span><span class="sxs-lookup"><span data-stu-id="e7925-270">In the **Select principal** field, search for the application display name from the following table.</span></span>
-        4. <span data-ttu-id="e7925-271">**選択** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-271">Select **Select**.</span></span>
-        5. <span data-ttu-id="e7925-272">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-272">Select **Add**.</span></span>
-        6. <span data-ttu-id="e7925-273">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-273">Select **Save**.</span></span>
+        1. <span data-ttu-id="438ac-268">**アクセス ポリシー** を選択し、アクセス ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="438ac-268">Select **Add Access Policy** to create an access policy.</span></span>
+        2. <span data-ttu-id="438ac-269">**シークレットのアクセス許可** フィールドで、次の表からアクセス許可を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-269">In the **Secret permissions** field, select the permissions from the following table.</span></span>
+        3. <span data-ttu-id="438ac-270">**プリンシパルの選択** フィールドで、次の表からアプリケーションの表示名を検索します。</span><span class="sxs-lookup"><span data-stu-id="438ac-270">In the **Select principal** field, search for the application display name from the following table.</span></span>
+        4. <span data-ttu-id="438ac-271">**選択** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-271">Select **Select**.</span></span>
+        5. <span data-ttu-id="438ac-272">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-272">Select **Add**.</span></span>
+        6. <span data-ttu-id="438ac-273">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-273">Select **Save**.</span></span>
 
-        | <span data-ttu-id="e7925-274">申請書</span><span class="sxs-lookup"><span data-stu-id="e7925-274">Application</span></span>                                              | <span data-ttu-id="e7925-275">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e7925-275">Permissions</span></span> |
+        | <span data-ttu-id="438ac-274">申請書</span><span class="sxs-lookup"><span data-stu-id="438ac-274">Application</span></span>                                              | <span data-ttu-id="438ac-275">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="438ac-275">Permissions</span></span> |
         |----------------------------------------------------------|-------------|
-        | <span data-ttu-id="e7925-276">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="e7925-276">The display name of the new application that you created</span></span> | <span data-ttu-id="e7925-277">取得、リスト表示</span><span class="sxs-lookup"><span data-stu-id="e7925-277">Get, List</span></span>   |
-        | <span data-ttu-id="e7925-278">**Microsoft Dynamics ERP マイクロサービス**</span><span class="sxs-lookup"><span data-stu-id="e7925-278">**Microsoft Dynamics ERP Microservices**</span></span>                 | <span data-ttu-id="e7925-279">取得、リスト表示</span><span class="sxs-lookup"><span data-stu-id="e7925-279">Get, List</span></span>   |
+        | <span data-ttu-id="438ac-276">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="438ac-276">The display name of the new application that you created</span></span> | <span data-ttu-id="438ac-277">取得、リスト表示</span><span class="sxs-lookup"><span data-stu-id="438ac-277">Get, List</span></span>   |
+        | <span data-ttu-id="438ac-278">**Microsoft Dynamics ERP マイクロサービス**</span><span class="sxs-lookup"><span data-stu-id="438ac-278">**Microsoft Dynamics ERP Microservices**</span></span>                 | <span data-ttu-id="438ac-279">取得、リスト表示</span><span class="sxs-lookup"><span data-stu-id="438ac-279">Get, List</span></span>   |
 
-6. <span data-ttu-id="e7925-280">ストレージ アカウントにアクセスするロールを割り当てるには、次の操作を行います:</span><span class="sxs-lookup"><span data-stu-id="e7925-280">Assign roles to access the storage account:</span></span>
+6. <span data-ttu-id="438ac-280">ストレージ アカウントにアクセスするロールを割り当てるには、次の操作を行います:</span><span class="sxs-lookup"><span data-stu-id="438ac-280">Assign roles to access the storage account:</span></span>
 
-    1. <span data-ttu-id="e7925-281">[Azure ポータル](https://portal.azure.com)で、作成済のストレージ アカウントを開きます。</span><span class="sxs-lookup"><span data-stu-id="e7925-281">In the [Azure portal](https://portal.azure.com), open the storage account that you created earlier.</span></span>
-    2. <span data-ttu-id="e7925-282">**アクセスの制御 (IAM)** を選択し 、**ロールの割り当て** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-282">Select **Access Control (IAM)**, and then select **Role Assignments**.</span></span>
-    3. <span data-ttu-id="e7925-283">**追加、 ロールの割り当ての追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-283">Select **Add, Add Role Assignment**.</span></span>
-    4. <span data-ttu-id="e7925-284">次のアプリケーションに対して、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e7925-284">For each application in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="438ac-281">[Azure ポータル](https://portal.azure.com)で、作成済のストレージ アカウントを開きます。</span><span class="sxs-lookup"><span data-stu-id="438ac-281">In the [Azure portal](https://portal.azure.com), open the storage account that you created earlier.</span></span>
+    2. <span data-ttu-id="438ac-282">**アクセスの制御 (IAM)** を選択し 、**ロールの割り当て** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-282">Select **Access Control (IAM)**, and then select **Role Assignments**.</span></span>
+    3. <span data-ttu-id="438ac-283">**追加、 ロールの割り当ての追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-283">Select **Add, Add Role Assignment**.</span></span>
+    4. <span data-ttu-id="438ac-284">次のアプリケーションに対して、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="438ac-284">For each application in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="e7925-285">以下の表からロールを選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-285">Select the role from the following table.</span></span>
-        2. <span data-ttu-id="e7925-286">**アクセス権の割り当て先** シールドは、**Azure AD ユーザー、グループ、またはサービス プリンシパル** のままにします。</span><span class="sxs-lookup"><span data-stu-id="e7925-286">Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.</span></span>
-        3. <span data-ttu-id="e7925-287">**選択** フィールドで、次の表からアプリケーションを入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-287">In the **Select** field, enter the application from the following table.</span></span>
-        4. <span data-ttu-id="e7925-288">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-288">Select **Save**.</span></span>
+        1. <span data-ttu-id="438ac-285">以下の表からロールを選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-285">Select the role from the following table.</span></span>
+        2. <span data-ttu-id="438ac-286">**アクセス権の割り当て先** シールドは、**Azure AD ユーザー、グループ、またはサービス プリンシパル** のままにします。</span><span class="sxs-lookup"><span data-stu-id="438ac-286">Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.</span></span>
+        3. <span data-ttu-id="438ac-287">**選択** フィールドで、次の表からアプリケーションを入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-287">In the **Select** field, enter the application from the following table.</span></span>
+        4. <span data-ttu-id="438ac-288">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-288">Select **Save**.</span></span>
 
-        | <span data-ttu-id="e7925-289">申請書</span><span class="sxs-lookup"><span data-stu-id="e7925-289">Application</span></span>                                              | <span data-ttu-id="e7925-290">役割</span><span class="sxs-lookup"><span data-stu-id="e7925-290">Role</span></span>                        |
+        | <span data-ttu-id="438ac-289">申請書</span><span class="sxs-lookup"><span data-stu-id="438ac-289">Application</span></span>                                              | <span data-ttu-id="438ac-290">役割</span><span class="sxs-lookup"><span data-stu-id="438ac-290">Role</span></span>                        |
         |----------------------------------------------------------|-----------------------------|
-        | <span data-ttu-id="e7925-291">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="e7925-291">The display name of the new application that you created</span></span> | <span data-ttu-id="e7925-292">所有者</span><span class="sxs-lookup"><span data-stu-id="e7925-292">Owner</span></span>                       |
-        | <span data-ttu-id="e7925-293">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="e7925-293">The display name of the new application that you created</span></span> | <span data-ttu-id="e7925-294">寄稿者</span><span class="sxs-lookup"><span data-stu-id="e7925-294">Contributor</span></span>                 |
-        | <span data-ttu-id="e7925-295">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="e7925-295">The display name of the new application that you created</span></span> | <span data-ttu-id="e7925-296">ストレージ アカウントの共同作成者</span><span class="sxs-lookup"><span data-stu-id="e7925-296">Storage Account Contributor</span></span> |
-        | <span data-ttu-id="e7925-297">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="e7925-297">The display name of the new application that you created</span></span> | <span data-ttu-id="e7925-298">ストレージ BLOB データの所有者</span><span class="sxs-lookup"><span data-stu-id="e7925-298">Storage Blob Data Owner</span></span>     |
-        | <span data-ttu-id="e7925-299">**AI Builder の承認サービス**</span><span class="sxs-lookup"><span data-stu-id="e7925-299">**AI Builder Authorization Service**</span></span>                     | <span data-ttu-id="e7925-300">ストレージ BLOB データの読み取り</span><span class="sxs-lookup"><span data-stu-id="e7925-300">Storage Blob Data Reader</span></span>    |
+        | <span data-ttu-id="438ac-291">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="438ac-291">The display name of the new application that you created</span></span> | <span data-ttu-id="438ac-292">所有者</span><span class="sxs-lookup"><span data-stu-id="438ac-292">Owner</span></span>                       |
+        | <span data-ttu-id="438ac-293">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="438ac-293">The display name of the new application that you created</span></span> | <span data-ttu-id="438ac-294">寄稿者</span><span class="sxs-lookup"><span data-stu-id="438ac-294">Contributor</span></span>                 |
+        | <span data-ttu-id="438ac-295">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="438ac-295">The display name of the new application that you created</span></span> | <span data-ttu-id="438ac-296">ストレージ アカウントの共同作成者</span><span class="sxs-lookup"><span data-stu-id="438ac-296">Storage Account Contributor</span></span> |
+        | <span data-ttu-id="438ac-297">作成した新しいアプリケーションの表示名称</span><span class="sxs-lookup"><span data-stu-id="438ac-297">The display name of the new application that you created</span></span> | <span data-ttu-id="438ac-298">ストレージ BLOB データの所有者</span><span class="sxs-lookup"><span data-stu-id="438ac-298">Storage Blob Data Owner</span></span>     |
+        | <span data-ttu-id="438ac-299">**AI Builder の承認サービス**</span><span class="sxs-lookup"><span data-stu-id="438ac-299">**AI Builder Authorization Service**</span></span>                     | <span data-ttu-id="438ac-300">ストレージ BLOB データの読み取り</span><span class="sxs-lookup"><span data-stu-id="438ac-300">Storage Blob Data Reader</span></span>    |
 
-# <a name="azure-cli"></a>[<span data-ttu-id="e7925-301">Azure CLI</span><span class="sxs-lookup"><span data-stu-id="e7925-301">Azure CLI</span></span>](#tab/azure-azure-cli)
+# <a name="azure-cli"></a>[<span data-ttu-id="438ac-301">Azure CLI</span><span class="sxs-lookup"><span data-stu-id="438ac-301">Azure CLI</span></span>](#tab/azure-azure-cli)
 
 ```
 function New-FinanceDataLakeAzureResources {
-    $defaultSecretExpiryInYear = 1
+    Assert-ScriptSetup
 
+    $ClientAppName = 'Finance Data Lake Application'
+    $DefaultSecretExpiryInYear = 1
     $MicrosoftDynamicsERPMicroservicesAppId = '0cdb527f-a8d1-4bf8-9436-b352c68682b2'
     $MicrosoftDynamicsERPMicroservicesCDSAppId = '703e2651-d3fc-48f5-942c-74274233dba8'
     $AIBuilderAuthorizationServiceAppId = 'ad40333e-9910-4b61-b281-e3aeeb8c3ef3'
@@ -461,74 +465,65 @@ function New-FinanceDataLakeAzureResources {
     $userContext = ConvertFrom-Json ((az ad signed-in-user show) -join '')
     $user = Get-AzureADUser -Filter ("UserPrincipalName eq '" + $userContext.UserPrincipalName + "'")
 
-    $subscriptionId = (Read-Host -Prompt "Enter the Azure Subscription ID: (blank for default)")
-    if ($subscriptionId.Trim() -ne '') {
-        $azSubscription = Select-AzSubscription -SubscriptionId $subscriptionId
-    }
-
-    $resourceGroupName = (Read-Host -Prompt "Enter the Azure Resource Group name: (blank for 'FinanceDataLake')")
-    if ($null -eq $resourceGroupName -or $resourceGroupName.Trim() -eq '') {
-        $resourceGroupName = 'FinanceDataLake'
-    }
-    $resourceGroup = Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue
-
-    if (-not ($resourceGroup)) {
-        $resourceLocation = ''
-        $azResourceLocations = (Get-AzLocation | Select-Object Location).Location
-        while ($resourceLocation.Trim() -eq '' -or (-not ($resourceLocation -in $azResourceLocations))) {
-            $resourceLocation = (Read-Host -Prompt "Enter the location in which to create the Azure Resource Group: ('help' to see values)")
-            if ($resourceLocation -eq 'help') {
-                $azResourceLocations
-                $resourceLocation = ''
-            }
+    Set-AzureSubscription
+    
+    $resourceGroup = $null
+    $ResourceGroupName = 'D365FinanceInsightsDataLake'
+    $ResourceGroupNameSuffix = ''
+    $FullResourceGroupName = ''
+    Write-Output ("The default Azure Resource Group name is '{0}'" -f $ResourceGroupName)
+    while (-not ($resourceGroup)) {
+        $ResourceGroupNameSuffix = (Read-Host -Prompt "Enter optional Azure Resource Group name suffix: (leave blank for no suffix)")
+        if ([string]::IsNullOrWhitespace($ResourceGroupNameSuffix))
+        {
+            $FullResourceGroupName = $ResourceGroupName
         }
-        $resourceGroup = New-AzResourceGroup -Name $resourceGroupName -Location $resourceLocation
-    }
-    else {
-        $resourceLocation = $resourceGroup.Location
-    }
+        else
+        {
+            if ($ResourceGroupNameSuffix -notmatch "^[A-Za-z0-9]+$") {
+                Write-Warning "The Azure Resource Group name suffix can only include alphanumeric characters."
+                continue
+            }
 
-    $clientAppName = (Read-Host -Prompt "Enter the name of the application registration: (blank for 'Finance Data Lake Application')")
-    if ($clientAppName.Trim() -eq '') {
-        $clientAppName = 'Finance Data Lake Application'
-    }
+            if ($ResourceGroupNameSuffix.Length -gt 60) {
+                Write-Warning "The Azure Resource Group name suffix cannot be longer than 60 characters."
+                continue
+            }
 
-    Write-Output '================================================================================='
+            $FullResourceGroupName = $ResourceGroupName + $ResourceGroupNameSuffix
+        }
+        
+        $resourceGroup = Get-AzResourceGroup -Name $FullResourceGroupName -ErrorAction SilentlyContinue
 
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesAppId | Format-Table -AutoSize
-        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesAppId + "'")
-        Write-Output ("Added AAD Enterprise Application 'Microsoft Dynamics ERP Microservices' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesAppId)
+        if (-not ($resourceGroup)) {
+            Write-Output ("Your new Azure Resource Group name is '{0}'" -f $FullResourceGroupName)
+            $resourceLocation = ''
+            $azResourceLocations = (Get-AzLocation | Select-Object Location).Location
+            while ([string]::IsNullOrWhitespace($resourceLocation) -or (-not ($resourceLocation -in $azResourceLocations))) {
+                $resourceLocation = (Read-Host -Prompt "Enter the location in which to create the Azure Resource Group: ('help' to see values)")
+                if ($resourceLocation -eq 'help') {
+                    Write-Output ("List of available regions is '{0}'" -f ($azResourceLocations -join ','))
+                }
+                elseif ([string]::IsNullOrWhitespace($resourceLocation) -or (-not ($resourceLocation -in $azResourceLocations)))
+                {
+                    Write-Warning ("The provided location is not available for resource group. List of available regions is '{0}'" -f ($azResourceLocations -join ','))
+                }
+            }
+            $resourceGroup = New-AzResourceGroup -Name $FullResourceGroupName -Location $resourceLocation
+            Write-Output ("Created Azure Resource Group '{0}'" -f $resourceGroup.ResourceGroupName)
+        }
+        else {
+            Write-Output ("Found Azure Resource Group '{0}'" -f ($resourceGroup.ResourceGroupName))
+        }
     }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'Microsoft Dynamics ERP Microservices' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesAppId)
-    }
-    $MicrosoftDynamicsERPMicroservicesAppObjectId = $service.ObjectId
-
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesCDSAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesCDSAppId | Format-Table -AutoSize
-        Write-Output ("Added AAD Enterprise Application 'Microsoft Dynamics ERP Microservices CDS' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesCDSAppId)
-    }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'Microsoft Dynamics ERP Microservices CDS' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesCDSAppId)
-    }
-
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AIBuilderAuthorizationServiceAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $AIBuilderAuthorizationServiceAppId | Format-Table -AutoSize
-        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AIBuilderAuthorizationServiceAppId + "'")
-        Write-Output ("Added AAD Enterprise Application 'AI Builder Authorization Service' with Application ID {0}" -f $AIBuilderAuthorizationServiceAppId)
-    }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'AI Builder Authorization Service' with Application ID {0}" -f $AIBuilderAuthorizationServiceAppId)
-    }
-    $aibuilderAuthorizationServiceObjectId = $service.ObjectId
 
     Write-Output '================================================================================='
+    $MicrosoftDynamicsERPMicroservicesAppObjectId = Create-ADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesAppId
+    Create-ADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesCDSAppId | Out-Null
+    $aibuilderAuthorizationServiceObjectId = Create-ADServicePrincipal -AppId $AIBuilderAuthorizationServiceAppId
+    Write-Output ('=================================================================================')
 
-    $clientAppSPN = Get-AzureADServicePrincipal -Filter ("DisplayName eq '" + $clientAppName + "'")
+    $clientAppSPN = Get-AzureADServicePrincipal -Filter ("DisplayName eq '" + $ClientAppName + "'")
     if (-not ($clientAppSPN)) {
         $keyVaultPrincipal = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $KeyVaultServicePrincipalAppId + "'")
         if (-not $keyVaultPrincipal)
@@ -553,18 +548,18 @@ function New-FinanceDataLakeAzureResources {
         $graphAccess.ResourceAppId = $graphPrincipal.AppId
         $graphAccess.ResourceAccess = (New-Object -TypeName "microsoft.open.azuread.model.resourceAccess" -ArgumentList $userRead.Id, "Scope")
 
-        $clientApp = New-AzureADApplication -DisplayName $clientAppName -RequiredResourceAccess @($keyVaultAccess, $graphAccess)
-        $clientAppSPN = New-AzureADServicePrincipal -AppId $clientApp.AppId -Tags @($clientAppName)
+        $clientApp = New-AzureADApplication -DisplayName $ClientAppName -RequiredResourceAccess @($keyVaultAccess, $graphAccess)
+        $clientAppSPN = New-AzureADServicePrincipal -AppId $clientApp.AppId -Tags @($ClientAppName)
         $clientAppId = $clientApp.AppId
-        Write-Output ('Created App Registration "' + $clientAppName + '" with Application Id: ' + $clientAppId)
+        Write-Output ('Created App Registration "' + $ClientAppName + '" with Application Id: ' + $clientAppId)
     }
     else {
-        $clientApp = Get-AzureADApplication -Filter ("DisplayName eq '" + $clientAppName + "'")
+        $clientApp = Get-AzureADApplication -Filter ("DisplayName eq '" + $ClientAppName + "'")
         $clientAppId = $clientApp.AppId
-        Write-Output ('Found App Registration "' + $clientAppName + '" with Application Id: ' + $clientAppId)
+        Write-Output ('Found App Registration "' + $ClientAppName + '" with Application Id: ' + $clientAppId)
     }
             
-    $clientAppSecretCredential = New-AzureADApplicationPasswordCredential -ObjectId $clientApp.ObjectId -CustomKeyIdentifier "ClientAppAccessKey" -EndDate (get-date).AddYears($defaultSecretExpiryInYear)
+    $clientAppSecretCredential = New-AzureADApplicationPasswordCredential -ObjectId $clientApp.ObjectId -CustomKeyIdentifier "ClientAppAccessKey" -EndDate (get-date).AddYears($DefaultSecretExpiryInYear)
     $ClientAppSecret = $clientAppSecretCredential.Value
     $clientAppSpId = $clientAppSPN.ObjectId
 
@@ -574,36 +569,93 @@ function New-FinanceDataLakeAzureResources {
     $templateObject = ConvertFrom-Json $azureTemplate -AsHashtable
     $templateObject.{$schema} = "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#"
     Write-Output 'Provisioning Azure resources. This may take a few minutes.'
-    $deployment = New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateObject $templateObject -aibuilderAppObjectId $aibuilderAuthorizationServiceObjectId -clientAppId $clientAppId -clientAppSecret $ClientAppSecret -clientAppSpObjectId  $clientAppSpId -microserviceSpObjectId $MicrosoftDynamicsERPMicroservicesAppObjectId -userSpObjectId $user.ObjectId
+    try {
+        $deployment = New-AzResourceGroupDeployment -ResourceGroupName $FullResourceGroupName -TemplateObject $templateObject -aibuilderAppObjectId $aibuilderAuthorizationServiceObjectId -clientAppId $clientAppId -clientAppSecret $ClientAppSecret -clientAppSpObjectId  $clientAppSpId -microserviceSpObjectId $MicrosoftDynamicsERPMicroservicesAppObjectId -userSpObjectId $user.ObjectId -Force -ErrorAction Stop
+    }
+    catch {
+        $ErrorMessage = $_.Exception.Message
+        if ($ErrorMessage.Contains("not allowed to be updated"))
+        {
+            Write-Error ($ErrorMessage)
+            Write-Warning "Some items in the existing resource group $FullResourceGroupName could not be updated. To resolve the issue, remove the existing resource group $FullResourceGroupName and run the script again."
+        }
+        else {
+            throw
+        }
 
+    }
     if ($deployment.ProvisioningState -eq 'Succeeded') {
         Write-Output "Successfully deployed the following resources to Azure:"
         Write-Output ("  Key Vault:                         " + $deployment.Outputs.keyVaultName.Value)
         Write-Output ("  Storage Account:                   " + $deployment.Outputs.storageAccountName.Value)
+        
+        $keyVault = Get-AzKeyVault -VaultName $deployment.Outputs.keyVaultName.Value
+        $tenantId = (Get-AzContext).Tenant.Id
+
+        Write-Output "Values for LCS Data Lake Add-In:"
+        Write-Output ("  Tenant ID:                         " + $tenantId)
+        Write-Output ("  DNS Name:                          " + $keyVault.VaultUri)
+        Write-Output "  Storage account secret name:       storage-account-name"
+        Write-Output "  Application ID secret name:        app-id"
+        Write-Output "  Application Secret secret name:    app-secret"
+        Write-Warning "Copy this information for the LCS Add-in for easy access. Azure Cloud Shell will eventually time out and close."
+
+        Write-Output '================================================================================='
+        Write-Output "Values for System parameters > Data connections:"
+        Write-Output ("  Application ID:                    " + $clientAppId)
+        Write-Output ("  Application Secret:                " + $ClientAppSecret)
+        Write-Output ("  DNS name:                          " + $keyVault.VaultUri)
+        Write-Output "  Secret name:                       storage-account-connection-string"
+        Write-Warning "Copy this information for the System parameters for easy access. Azure Cloud Shell will eventually time out and close."
     }
     else {
         Write-Output ("Provisioning Azure resources failed with the following state: " + $deployment.ProvisioningState)
-        Write-Output ("Some of the resources may have been created in resource group: " + $resourceGroupName)
+        Write-Output ("Some of the resources may have been created in resource group: " + $FullResourceGroupName)
+    }
+}
+
+function Assert-ScriptSetup {
+    if ($PSVersionTable.PSEdition -ne 'Core' -or -not $env:ACC_TID) { 
+        throw "This script needs to be uploaded and run from Azure Cloud Shell (PowerShell)." 
+    }
+    
+    if ((Get-AzContext) -eq $null -and (Connect-AzAccount) -eq $null) {
+        throw 'Unable to connect to Azure account.'
+    }
+}
+
+function Set-AzureSubscription {
+    $azSubscription = $null
+    while (-not ($azSubscription)) {
+        $subscriptionId = (Read-Host -Prompt "Enter the Azure Subscription ID: (leave blank for default)")
+        if ([string]::IsNullOrWhitespace($subscriptionId)){
+            break
+        }
+        elseif (-not [guid]::TryParse($subscriptionId, $([ref][guid]::Empty))) {
+                Write-Warning "Azure Subscription ID must be a valid GUID."
+                continue
+        }
+
+        $azSubscription = Select-AzSubscription -SubscriptionId $subscriptionId
+    }
+}
+
+function Create-ADServicePrincipal {
+    param (
+        [string] $AppId
+    )
+
+    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AppId + "'")
+    if (-not $service) {
+        New-AzureADServicePrincipal -AppId $AppId | Out-Null
+        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AppId + "'")
+        Write-Host ("Added AAD Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
+    }
+    else {
+        Write-Host ("Found AAD Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
     }
 
-    Write-Output '================================================================================='
-
-    $keyVault = Get-AzKeyVault -VaultName $deployment.Outputs.keyVaultName.Value
-    Write-Output "Values for LCS Data Lake Add-In:"
-    Write-Output ("  Tenant ID:                         " + $subscriptionContext.Context.Subscription.TenantId)
-    Write-Output ("  DNS Name:                          " + $keyVault.VaultUri)
-    Write-Output "  Storage account secret name:       storage-account-name"
-    Write-Output "  Application ID secret name:        app-id"
-    Write-Output "  Application Secret secret name:    app-secret"
-    Write-Warning "Copy this information for the LCS Add-in as it is not saved. Azure Cloud Shell will eventually time out and close."
-
-    Write-Output '================================================================================='
-    Write-Output "Values for System parameters > Data connections:"
-    Write-Output ("  Application ID:                    " + $clientAppId)
-    Write-Output ("  Application Secret:                " + $ClientAppSecret)
-    Write-Output ("  DNS name:                          " + $keyVault.VaultUri)
-    Write-Output "  Secret name:                       storage-account-connection-string"
-    Write-Warning "Copy this information for the System parameters as it is not saved. Azure Cloud Shell will eventually time out and close."
+    return $service.ObjectId
 }
 
 $azureTemplate = @"
@@ -867,11 +919,17 @@ $azureTemplate = @"
 "@
 
 try {
+  Start-Transcript -path (Join-Path $HOME Provision-FinInsights-Azure.log)
   New-FinanceDataLakeAzureResources
 }
 catch {
   Write-Error $_.Exception.Message
-  Write-Warning $_.Exception.StackTrace
+
+  if ($PSItem.Exception.StackTrace -ne $null)
+  {
+      Write-Warning $_.Exception.StackTrace
+  }
+
   $inner = $_.Exception.InnerException
   while ($null -ne $inner) {
     Write-Output 'Inner Exception:'
@@ -880,63 +938,66 @@ catch {
     $inner = $inner.InnerException
   }
 }
+finally {
+  Stop-Transcript
+}
 
 ```
 ---
 
-## <a name="configure-the-entity-store"></a><span data-ttu-id="e7925-302">エンティティの保存を構成する</span><span class="sxs-lookup"><span data-stu-id="e7925-302">Configure the entity store</span></span>
+## <a name="configure-the-entity-store"></a><span data-ttu-id="438ac-302">エンティティの保存を構成する</span><span class="sxs-lookup"><span data-stu-id="438ac-302">Configure the entity store</span></span>
 
-<span data-ttu-id="e7925-303">Finance 環境でエンティティの保存を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e7925-303">Follow these steps to set up the entity store in your Finance environment.</span></span>
+<span data-ttu-id="438ac-303">Finance 環境でエンティティの保存を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="438ac-303">Follow these steps to set up the entity store in your Finance environment.</span></span>
 
-1. <span data-ttu-id="e7925-304">**システム管理 \> 設定 \> システム パラメーター \> データ接続** に移動します。</span><span class="sxs-lookup"><span data-stu-id="e7925-304">Go to **System administration \> Setup \> System parameters \> Data connections**.</span></span>
-2. <span data-ttu-id="e7925-305">**Data Lake 統合の有効化** オプションを **はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="e7925-305">Set the **Enable Data Lake integration** option to **Yes**.</span></span>
-3. <span data-ttu-id="e7925-306">次のキー コンテナー フィールドを設定します。</span><span class="sxs-lookup"><span data-stu-id="e7925-306">Set the following Key Vault fields:</span></span>
+1. <span data-ttu-id="438ac-304">**システム管理 \> 設定 \> システム パラメーター \> データ接続** に移動します。</span><span class="sxs-lookup"><span data-stu-id="438ac-304">Go to **System administration \> Setup \> System parameters \> Data connections**.</span></span>
+2. <span data-ttu-id="438ac-305">**Data Lake 統合の有効化** オプションを **はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="438ac-305">Set the **Enable Data Lake integration** option to **Yes**.</span></span>
+3. <span data-ttu-id="438ac-306">次のキー コンテナー フィールドを設定します。</span><span class="sxs-lookup"><span data-stu-id="438ac-306">Set the following Key Vault fields:</span></span>
 
-    - <span data-ttu-id="e7925-307">**アプリケーション (クライアント) ID**: 以前に作成したアプリケーションクライアント ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-307">**Application (client) ID** – Enter the application client ID that you created earlier.</span></span>
-    - <span data-ttu-id="e7925-308">**アプリケーションのシークレット** - 以前に作成したアプリケーションで使用する保存済みのシークレットを入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-308">**Application Secret** – Enter the secret that you saved for the application that you created earlier.</span></span>
-    - <span data-ttu-id="e7925-309">**DNS 名** - ドメイン ネーム システム (DNS) 名は、前述の手順で作成したアプリケーションの [アプリケーションの詳細] ページで確認できます。</span><span class="sxs-lookup"><span data-stu-id="e7925-309">**DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.</span></span>
-    - <span data-ttu-id="e7925-310">**シークレット名** - **ストレージ アカウントの接続文字列** を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-310">**Secret name** – Enter **storage-account-connection-string**.</span></span>
+    - <span data-ttu-id="438ac-307">**アプリケーション (クライアント) ID**: 以前に作成したアプリケーションクライアント ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-307">**Application (client) ID** – Enter the application client ID that you created earlier.</span></span>
+    - <span data-ttu-id="438ac-308">**アプリケーションのシークレット** - 以前に作成したアプリケーションで使用する保存済みのシークレットを入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-308">**Application Secret** – Enter the secret that you saved for the application that you created earlier.</span></span>
+    - <span data-ttu-id="438ac-309">**DNS 名** - ドメイン ネーム システム (DNS) 名は、前述の手順で作成したアプリケーションの [アプリケーションの詳細] ページで確認できます。</span><span class="sxs-lookup"><span data-stu-id="438ac-309">**DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.</span></span>
+    - <span data-ttu-id="438ac-310">**シークレット名** - **ストレージ アカウントの接続文字列** を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-310">**Secret name** – Enter **storage-account-connection-string**.</span></span>
 
-## <a name="configure-the-data-lake"></a><span data-ttu-id="e7925-311">Data Lake を構成する</span><span class="sxs-lookup"><span data-stu-id="e7925-311">Configure the data lake</span></span>
+## <a name="configure-the-data-lake"></a><span data-ttu-id="438ac-311">Data Lake を構成する</span><span class="sxs-lookup"><span data-stu-id="438ac-311">Configure the data lake</span></span>
 
-<span data-ttu-id="e7925-312">LCS を使用して Azure Data Lake アドインを環境に追加するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e7925-312">Follow these steps to use LCS to add the Azure Data Lake add-in to the environment.</span></span>
+<span data-ttu-id="438ac-312">LCS を使用して Azure Data Lake アドインを環境に追加するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="438ac-312">Follow these steps to use LCS to add the Azure Data Lake add-in to the environment.</span></span>
 
-1. <span data-ttu-id="e7925-313">LCS にログインし、ページの右側にある環境名の下の **完全な詳細** を選択し ます。</span><span class="sxs-lookup"><span data-stu-id="e7925-313">Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.</span></span>
-2. <span data-ttu-id="e7925-314">**環境アドイン** セクションで、**新しいアドインのインストール** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-314">In the **Environment add-ins** section, select **Install a new add-in**.</span></span>
-3. <span data-ttu-id="e7925-315">**Data Lake へのエクスポート** アドインを選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-315">Select the **Export to Data Lake** add-in.</span></span>
-4. <span data-ttu-id="e7925-316">次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-316">Enter the following values.</span></span>
+1. <span data-ttu-id="438ac-313">LCS にログインし、ページの右側にある環境名の下の **完全な詳細** を選択し ます。</span><span class="sxs-lookup"><span data-stu-id="438ac-313">Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.</span></span>
+2. <span data-ttu-id="438ac-314">**環境アドイン** セクションで、**新しいアドインのインストール** を選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-314">In the **Environment add-ins** section, select **Install a new add-in**.</span></span>
+3. <span data-ttu-id="438ac-315">**Data Lake へのエクスポート** アドインを選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-315">Select the **Export to Data Lake** add-in.</span></span>
+4. <span data-ttu-id="438ac-316">次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-316">Enter the following values.</span></span>
 
-    | <span data-ttu-id="e7925-317">先頭値</span><span class="sxs-lookup"><span data-stu-id="e7925-317">Value</span></span>                                                              | <span data-ttu-id="e7925-318">説明</span><span class="sxs-lookup"><span data-stu-id="e7925-318">Description</span></span> |
+    | <span data-ttu-id="438ac-317">先頭値</span><span class="sxs-lookup"><span data-stu-id="438ac-317">Value</span></span>                                                              | <span data-ttu-id="438ac-318">説明</span><span class="sxs-lookup"><span data-stu-id="438ac-318">Description</span></span> |
     |--------------------------------------------------------------------|-------------|
-    | <span data-ttu-id="e7925-319">キーの保管場所がある Azure サブスクリプションのテナント ID</span><span class="sxs-lookup"><span data-stu-id="e7925-319">Tenant ID of the Azure Subscription where the Key Vault is located</span></span> | <span data-ttu-id="e7925-320">ストレージ アカウント、アプリ、キーコンテナーが配置されているテナント ID です。</span><span class="sxs-lookup"><span data-stu-id="e7925-320">The tenant ID where the storage account, apps, and key vaults are located.</span></span> <span data-ttu-id="e7925-321">この値を検索するには、[Azure portal](https://portal.azure.com) を開き、**Azure Active Directory** に移動し、**テナント ID** の値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="e7925-321">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
-    | <span data-ttu-id="e7925-322">Key Vault の DNS 名を指定する</span><span class="sxs-lookup"><span data-stu-id="e7925-322">Provide the DNS name of your Key Vault</span></span>                             | <span data-ttu-id="e7925-323">キー コンテナーの DNS 名 (例:  `https://customkeyvault.vault.azure.net/`)。</span><span class="sxs-lookup"><span data-stu-id="e7925-323">The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`.</span></span> <span data-ttu-id="e7925-324">(この値は、エンティティ ストアで使用されている DNS 名と同一のものです。)</span><span class="sxs-lookup"><span data-stu-id="e7925-324">(This value matches the DNS name that is used in the entity store.)</span></span> |
-    | <span data-ttu-id="e7925-325">ストレージ アカウントの名前を含むシークレットを指定します</span><span class="sxs-lookup"><span data-stu-id="e7925-325">Provide the secret that contains the name of the storage account</span></span>   | <span data-ttu-id="e7925-326">**storage-account-name**</span><span class="sxs-lookup"><span data-stu-id="e7925-326">**storage-account-name**</span></span> |
-    | <span data-ttu-id="e7925-327">Data Lake へのアクセスに使用するアプリ ID のシークレット名</span><span class="sxs-lookup"><span data-stu-id="e7925-327">Secret Name for App ID to be used for accessing Data Lake</span></span>          | <span data-ttu-id="e7925-328">**アプリの ID**</span><span class="sxs-lookup"><span data-stu-id="e7925-328">**app-id**</span></span> |
-    | <span data-ttu-id="e7925-329">アプリの ID に使用するシークレット名</span><span class="sxs-lookup"><span data-stu-id="e7925-329">Secret name to be used with App ID</span></span>                                 | <span data-ttu-id="e7925-330">**アプリのシークレット**</span><span class="sxs-lookup"><span data-stu-id="e7925-330">**app-secret**</span></span> |
+    | <span data-ttu-id="438ac-319">キーの保管場所がある Azure サブスクリプションのテナント ID</span><span class="sxs-lookup"><span data-stu-id="438ac-319">Tenant ID of the Azure Subscription where the Key Vault is located</span></span> | <span data-ttu-id="438ac-320">ストレージ アカウント、アプリ、キーコンテナーが配置されているテナント ID です。</span><span class="sxs-lookup"><span data-stu-id="438ac-320">The tenant ID where the storage account, apps, and key vaults are located.</span></span> <span data-ttu-id="438ac-321">この値を検索するには、[Azure portal](https://portal.azure.com) を開き、**Azure Active Directory** に移動し、**テナント ID** の値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="438ac-321">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
+    | <span data-ttu-id="438ac-322">Key Vault の DNS 名を指定する</span><span class="sxs-lookup"><span data-stu-id="438ac-322">Provide the DNS name of your Key Vault</span></span>                             | <span data-ttu-id="438ac-323">キー コンテナーの DNS 名 (例:  `https://customkeyvault.vault.azure.net/`)。</span><span class="sxs-lookup"><span data-stu-id="438ac-323">The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`.</span></span> <span data-ttu-id="438ac-324">(この値は、エンティティ ストアで使用されている DNS 名と同一のものです。)</span><span class="sxs-lookup"><span data-stu-id="438ac-324">(This value matches the DNS name that is used in the entity store.)</span></span> |
+    | <span data-ttu-id="438ac-325">ストレージ アカウントの名前を含むシークレットを指定します</span><span class="sxs-lookup"><span data-stu-id="438ac-325">Provide the secret that contains the name of the storage account</span></span>   | <span data-ttu-id="438ac-326">**storage-account-name**</span><span class="sxs-lookup"><span data-stu-id="438ac-326">**storage-account-name**</span></span> |
+    | <span data-ttu-id="438ac-327">Data Lake へのアクセスに使用するアプリ ID のシークレット名</span><span class="sxs-lookup"><span data-stu-id="438ac-327">Secret Name for App ID to be used for accessing Data Lake</span></span>          | <span data-ttu-id="438ac-328">**アプリの ID**</span><span class="sxs-lookup"><span data-stu-id="438ac-328">**app-id**</span></span> |
+    | <span data-ttu-id="438ac-329">アプリの ID に使用するシークレット名</span><span class="sxs-lookup"><span data-stu-id="438ac-329">Secret name to be used with App ID</span></span>                                 | <span data-ttu-id="438ac-330">**アプリのシークレット**</span><span class="sxs-lookup"><span data-stu-id="438ac-330">**app-secret**</span></span> |
 
-5. <span data-ttu-id="e7925-331">条件に同意し、**インストール** を選択し ます。</span><span class="sxs-lookup"><span data-stu-id="e7925-331">Agree to the terms, and select **Install**.</span></span>
+5. <span data-ttu-id="438ac-331">条件に同意し、**インストール** を選択し ます。</span><span class="sxs-lookup"><span data-stu-id="438ac-331">Agree to the terms, and select **Install**.</span></span>
 
-<span data-ttu-id="e7925-332">このアドインは数分以内にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="e7925-332">The add-in will be installed within a few minutes.</span></span>
+<span data-ttu-id="438ac-332">このアドインは数分以内にインストールされます。</span><span class="sxs-lookup"><span data-stu-id="438ac-332">The add-in will be installed within a few minutes.</span></span>
 
-## <a name="configure-ai-builder"></a><span data-ttu-id="e7925-333">AI Builder の構成</span><span class="sxs-lookup"><span data-stu-id="e7925-333">Configure AI Builder</span></span>
+## <a name="configure-ai-builder"></a><span data-ttu-id="438ac-333">AI Builder の構成</span><span class="sxs-lookup"><span data-stu-id="438ac-333">Configure AI Builder</span></span>
 
-1. <span data-ttu-id="e7925-334">LCS にサインインし、**環境の詳細** ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="e7925-334">Sign in to LCS, and open the **Environment details** page.</span></span>
-2. <span data-ttu-id="e7925-335">**環境アドイン** セクションまでスクロールします。</span><span class="sxs-lookup"><span data-stu-id="e7925-335">Scroll to the **Environment add-ins** section.</span></span> <span data-ttu-id="e7925-336">この環境に既にインストールされているアドインが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e7925-336">You should see the add-ins that are already installed in this environment.</span></span> <span data-ttu-id="e7925-337">**Data Lake にエクスポートする** アドインがない場合は、このアドインを構成します。</span><span class="sxs-lookup"><span data-stu-id="e7925-337">If the **Export to Data Lake** add-in isn't among them, configure this add-in.</span></span>
-3. <span data-ttu-id="e7925-338">**分析情報の取得** アドインを選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-338">Select the **Get insights** add-in.</span></span>
-4. <span data-ttu-id="e7925-339">**分析情報の取得** アドインの詳細ページで、次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-339">On the **Get insights** add-in details page, enter the following values.</span></span>
+1. <span data-ttu-id="438ac-334">LCS にサインインし、**環境の詳細** ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="438ac-334">Sign in to LCS, and open the **Environment details** page.</span></span>
+2. <span data-ttu-id="438ac-335">**環境アドイン** セクションまでスクロールします。</span><span class="sxs-lookup"><span data-stu-id="438ac-335">Scroll to the **Environment add-ins** section.</span></span> <span data-ttu-id="438ac-336">この環境に既にインストールされているアドインが表示されます。</span><span class="sxs-lookup"><span data-stu-id="438ac-336">You should see the add-ins that are already installed in this environment.</span></span> <span data-ttu-id="438ac-337">**Data Lake にエクスポートする** アドインがない場合は、このアドインを構成します。</span><span class="sxs-lookup"><span data-stu-id="438ac-337">If the **Export to Data Lake** add-in isn't among them, configure this add-in.</span></span>
+3. <span data-ttu-id="438ac-338">**分析情報の取得** アドインを選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-338">Select the **Get insights** add-in.</span></span>
+4. <span data-ttu-id="438ac-339">**分析情報の取得** アドインの詳細ページで、次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-339">On the **Get insights** add-in details page, enter the following values.</span></span>
 
-    | <span data-ttu-id="e7925-340">先頭値</span><span class="sxs-lookup"><span data-stu-id="e7925-340">Value</span></span>                                                    | <span data-ttu-id="e7925-341">説明</span><span class="sxs-lookup"><span data-stu-id="e7925-341">Description</span></span> |
+    | <span data-ttu-id="438ac-340">先頭値</span><span class="sxs-lookup"><span data-stu-id="438ac-340">Value</span></span>                                                    | <span data-ttu-id="438ac-341">説明</span><span class="sxs-lookup"><span data-stu-id="438ac-341">Description</span></span> |
     |----------------------------------------------------------|-------------|
-    | <span data-ttu-id="e7925-342">CDS 組織の URL</span><span class="sxs-lookup"><span data-stu-id="e7925-342">CDS Organization URL</span></span>                                     | <span data-ttu-id="e7925-343">Common Data Service インスタンスの Common Data Service 組織の URL です。</span><span class="sxs-lookup"><span data-stu-id="e7925-343">The Common Data Service organization URL of the Common Data Service instance.</span></span> <span data-ttu-id="e7925-344">この値を見つけるするには、[Power Apps ポータル](https://make.powerapps.com)を開き、右上隅にある **設定** ボタン (歯車記号) を選択し、**詳細設定** を選択して、URLをコピーします。</span><span class="sxs-lookup"><span data-stu-id="e7925-344">To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Advanced settings**, and copy the URL.</span></span> <span data-ttu-id="e7925-345">URL の末尾には "dynamics.com" が付きます</span><span class="sxs-lookup"><span data-stu-id="e7925-345">(The URL ends with "dynamics.com.")</span></span> |
-    | <span data-ttu-id="e7925-346">CDS Org ID</span><span class="sxs-lookup"><span data-stu-id="e7925-346">CDS Org ID</span></span>                                               | <span data-ttu-id="e7925-347">Common Data Service インスタンスの環境 ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="e7925-347">The environment ID of the Common Data Service instance.</span></span> <span data-ttu-id="e7925-348">この値を見つけるするには、[Power Apps ポータル](https://make.powerapps.com)を開き、右上隅にある **設定** ボタン (歯車記号) を選択し、**カスタマイズ \> 開発者リソース \> インスタンスの参照情報** を選択し、**ID** 値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="e7925-348">To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Customizations \> Developer resources \> Instance Reference Information**, and copy the **ID** value.</span></span> |
-    | <span data-ttu-id="e7925-349">CDS テナント ID (AAD のディレクトリ ID)</span><span class="sxs-lookup"><span data-stu-id="e7925-349">CDS Tenant ID (Directory ID from AAD)</span></span>               | <span data-ttu-id="e7925-350">Common Data Service インスタンスのテナント ID です。</span><span class="sxs-lookup"><span data-stu-id="e7925-350">The tenant ID of the Common Data Service instance.</span></span> <span data-ttu-id="e7925-351">この値を検索するには、[Azure portal](https://portal.azure.com) を開き、**Azure Active Directory** に移動し、**テナント ID** の値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="e7925-351">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
-    | <span data-ttu-id="e7925-352">システム管理者ロールを持つユーザー オブジェクトの ID を指定します</span><span class="sxs-lookup"><span data-stu-id="e7925-352">Provide user object ID who has system administrator role</span></span> | <span data-ttu-id="e7925-353">Azure AD のユーザーの Common Data Service ユーザーのオブジェクト ID です。</span><span class="sxs-lookup"><span data-stu-id="e7925-353">The Azure AD user object ID of the user in Common Data Service.</span></span> <span data-ttu-id="e7925-354">このユーザーは、Common Data Service インスタンスのシステム管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="e7925-354">This user must be a system administrator of the Common Data Service instance.</span></span> <span data-ttu-id="e7925-355">この値を検索するには、[Azure portal](https://portal.azure.com)を開き、**Azure Active Directory\>** ユーザーに移動し、ユーザーを選択して、**ID** セクションで **オブジェクト ID** 値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="e7925-355">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value.</span></span> |
-    | <span data-ttu-id="e7925-356">これはテナントの既定の CD 環境ですか？</span><span class="sxs-lookup"><span data-stu-id="e7925-356">Is this the default CDS environment for the tenant?</span></span>      | <span data-ttu-id="e7925-357">Common Data Service インスタンスが最初に作成された運用インスタンスの場合は、このチェックボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="e7925-357">If the Common Data Service instance was the first production instance that was created, select this check box.</span></span> <span data-ttu-id="e7925-358">Common Data Service インスタンスが手動で作成された場合は、このチェックボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="e7925-358">If the Common Data Service instance was manually created, clear this check box.</span></span> |
+    | <span data-ttu-id="438ac-342">CDS 組織の URL</span><span class="sxs-lookup"><span data-stu-id="438ac-342">CDS Organization URL</span></span>                                     | <span data-ttu-id="438ac-343">Dataverse インスタンスの Dataverse 組織の URL です。</span><span class="sxs-lookup"><span data-stu-id="438ac-343">The Dataverse organization URL of the Dataverse instance.</span></span> <span data-ttu-id="438ac-344">この値を見つけるするには、[Power Apps ポータル](https://make.powerapps.com)を開き、右上隅にある **設定** ボタン (歯車記号) を選択し、**詳細設定** を選択して、URLをコピーします。</span><span class="sxs-lookup"><span data-stu-id="438ac-344">To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Advanced settings**, and copy the URL.</span></span> <span data-ttu-id="438ac-345">URL の末尾には "dynamics.com" が付きます</span><span class="sxs-lookup"><span data-stu-id="438ac-345">(The URL ends with "dynamics.com.")</span></span> |
+    | <span data-ttu-id="438ac-346">CDS Org ID</span><span class="sxs-lookup"><span data-stu-id="438ac-346">CDS Org ID</span></span>                                               | <span data-ttu-id="438ac-347">Dataverse インスタンスの環境 ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="438ac-347">The environment ID of the Dataverse instance.</span></span> <span data-ttu-id="438ac-348">この値を見つけるするには、[Power Apps ポータル](https://make.powerapps.com)を開き、右上隅にある **設定** ボタン (歯車記号) を選択し、**カスタマイズ \> 開発者リソース \> インスタンスの参照情報** を選択し、**ID** 値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="438ac-348">To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Customizations \> Developer resources \> Instance Reference Information**, and copy the **ID** value.</span></span> |
+    | <span data-ttu-id="438ac-349">CDS テナント ID (AAD のディレクトリ ID)</span><span class="sxs-lookup"><span data-stu-id="438ac-349">CDS Tenant ID (Directory ID from AAD)</span></span>               | <span data-ttu-id="438ac-350">Dataverse インスタンスのテナント ID です。</span><span class="sxs-lookup"><span data-stu-id="438ac-350">The tenant ID of the Dataverse instance.</span></span> <span data-ttu-id="438ac-351">この値を検索するには、[Azure portal](https://portal.azure.com) を開き、**Azure Active Directory** に移動し、**テナント ID** の値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="438ac-351">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
+    | <span data-ttu-id="438ac-352">システム管理者ロールを持つユーザー オブジェクトの ID を指定します</span><span class="sxs-lookup"><span data-stu-id="438ac-352">Provide user object ID who has system administrator role</span></span> | <span data-ttu-id="438ac-353">Azure AD のユーザーの Dataverse ユーザーのオブジェクト ID です。</span><span class="sxs-lookup"><span data-stu-id="438ac-353">The Azure AD user object ID of the user in Dataverse.</span></span> <span data-ttu-id="438ac-354">このユーザーは、Dataverse インスタンスのシステム管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="438ac-354">This user must be a system administrator of the Dataverse instance.</span></span> <span data-ttu-id="438ac-355">この値を検索するには、[Azure portal](https://portal.azure.com)を開き、**Azure Active Directory\>** ユーザーに移動し、ユーザーを選択して、**ID** セクションで **オブジェクト ID** 値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="438ac-355">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value.</span></span> |
+    | <span data-ttu-id="438ac-356">これはテナントの既定の CD 環境ですか？</span><span class="sxs-lookup"><span data-stu-id="438ac-356">Is this the default CDS environment for the tenant?</span></span>      | <span data-ttu-id="438ac-357">Dataverse インスタンスが最初に作成された運用インスタンスの場合は、このチェックボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="438ac-357">If the Dataverse instance was the first production instance that was created, select this check box.</span></span> <span data-ttu-id="438ac-358">Dataverse インスタンスが手動で作成された場合は、このチェックボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="438ac-358">If the Dataverse instance was manually created, clear this check box.</span></span> |
 
-## <a name="feedback-and-support"></a><span data-ttu-id="e7925-359">フィードバックとサポート</span><span class="sxs-lookup"><span data-stu-id="e7925-359">Feedback and support</span></span>
+## <a name="feedback-and-support"></a><span data-ttu-id="438ac-359">フィードバックとサポート</span><span class="sxs-lookup"><span data-stu-id="438ac-359">Feedback and support</span></span>
 
-<span data-ttu-id="e7925-360">フィードバックの提供またはサポートが必要な場合は、[顧客支払い分析情報 (プレビュー)](mailto:fiap@microsoft.com) に電子メールを送信してください。</span><span class="sxs-lookup"><span data-stu-id="e7925-360">Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.</span></span>
+<span data-ttu-id="438ac-360">フィードバックの提供またはサポートが必要な場合は、[顧客支払い分析情報 (プレビュー)](mailto:fiap@microsoft.com) に電子メールを送信してください。</span><span class="sxs-lookup"><span data-stu-id="438ac-360">Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.</span></span>
 
-## <a name="privacy-notice"></a><span data-ttu-id="e7925-361">プライバシー通知</span><span class="sxs-lookup"><span data-stu-id="e7925-361">Privacy notice</span></span>
+## <a name="privacy-notice"></a><span data-ttu-id="438ac-361">プライバシー通知</span><span class="sxs-lookup"><span data-stu-id="438ac-361">Privacy notice</span></span>
 
-<span data-ttu-id="e7925-362">プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。</span><span class="sxs-lookup"><span data-stu-id="e7925-362">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
+<span data-ttu-id="438ac-362">プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。</span><span class="sxs-lookup"><span data-stu-id="438ac-362">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>

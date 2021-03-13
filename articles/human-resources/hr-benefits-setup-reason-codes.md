@@ -2,8 +2,8 @@
 title: 理由コードの設定
 description: Dynamics 365 Human Resources は、理由コードを使用して、従業員の給付金が変化する理由を説明します。
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,64 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83923eecf7eb23a21b8dbbd39491014fa2bc20d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ae82c8312d344f5380adec8413766304681a0a05
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419401"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113241"
 ---
-# <a name="set-up-reason-codes"></a><span data-ttu-id="3afcc-103">理由コードの設定</span><span class="sxs-lookup"><span data-stu-id="3afcc-103">Set up reason codes</span></span>
+# <a name="set-up-reason-codes"></a><span data-ttu-id="06af6-103">理由コードの設定</span><span class="sxs-lookup"><span data-stu-id="06af6-103">Set up reason codes</span></span>
 
-<span data-ttu-id="3afcc-104">Dynamics 365 Human Resources は、理由コードを使用して、従業員の給付金が変化する理由を説明します。</span><span class="sxs-lookup"><span data-stu-id="3afcc-104">Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.</span></span> 
+<span data-ttu-id="06af6-104">Dynamics 365 Human Resources は、理由コードを使用して、従業員の給付金が変化する理由を説明します。</span><span class="sxs-lookup"><span data-stu-id="06af6-104">Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.</span></span>
 
-1. <span data-ttu-id="3afcc-105">**給付金管理** ワーク スペースの **設定** で、**理由コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3afcc-105">In the **Benefits management** workspace, under **Setup**, select **Reason codes**.</span></span>
+> [!NOTE]
+> <span data-ttu-id="06af6-105">2021 年 1 月時点で、理由コードは、**従業員管理ワーク** スペースに移行されているため、**福利厚生管理** ワークスペースでは　ご利用いただけません。</span><span class="sxs-lookup"><span data-stu-id="06af6-105">As of January 2021, reason codes are migrating to the **Personnel management** workspace instead of the **Benefits management** workspace.</span></span> <span data-ttu-id="06af6-106">詳細については、[従業員管理に理由コードを手動で移行する](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="06af6-106">For more information, see [Manually migrate reason codes to Personnel management](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).</span></span>
 
-2. <span data-ttu-id="3afcc-106">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3afcc-106">Select **New**.</span></span>
+## <a name="create-reason-codes"></a><span data-ttu-id="06af6-107">理由コードの作成</span><span class="sxs-lookup"><span data-stu-id="06af6-107">Create reason codes</span></span>
 
-3. <span data-ttu-id="3afcc-107">次のフィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="3afcc-107">Specify values for the following fields:</span></span>
+1. <span data-ttu-id="06af6-108">**Human Resources** ワークスペース (または理由コードがまだ移行されていない場合は **福利厚生管理** ワークスペース) で、**リンク** を選択し、**理由コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06af6-108">In the **Personnel management** workspace (or **Benefits management** workspace if your reason codes haven't yet migrated), select **Links**, and then select **Reason codes**.</span></span>
 
-   | <span data-ttu-id="3afcc-108">フィールド</span><span class="sxs-lookup"><span data-stu-id="3afcc-108">Field</span></span> | <span data-ttu-id="3afcc-109">説明</span><span class="sxs-lookup"><span data-stu-id="3afcc-109">Description</span></span> |
+2. <span data-ttu-id="06af6-109">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06af6-109">Select **New**.</span></span>
+
+3. <span data-ttu-id="06af6-110">次のフィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="06af6-110">Specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="06af6-111">フィールド</span><span class="sxs-lookup"><span data-stu-id="06af6-111">Field</span></span> | <span data-ttu-id="06af6-112">説明</span><span class="sxs-lookup"><span data-stu-id="06af6-112">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="3afcc-110">**理由コード**</span><span class="sxs-lookup"><span data-stu-id="3afcc-110">**Reason code**</span></span> | <span data-ttu-id="3afcc-111">従業員が給付金プランの登録を変更する理由を識別する一意の名前。</span><span class="sxs-lookup"><span data-stu-id="3afcc-111">A unique name to identify the reason an employee would change a benefit plan enrollment.</span></span> |
-   | <span data-ttu-id="3afcc-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="3afcc-112">**Description**</span></span> | <span data-ttu-id="3afcc-113">理由コードの説明。</span><span class="sxs-lookup"><span data-stu-id="3afcc-113">A description of the reason code.</span></span> |
+   | <span data-ttu-id="06af6-113">**理由コード**</span><span class="sxs-lookup"><span data-stu-id="06af6-113">**Reason code**</span></span> | <span data-ttu-id="06af6-114">従業員が給付金プランの登録を変更する理由を識別する一意の名前。</span><span class="sxs-lookup"><span data-stu-id="06af6-114">A unique name to identify the reason an employee would change a benefit plan enrollment.</span></span> |
+   | <span data-ttu-id="06af6-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="06af6-115">**Description**</span></span> | <span data-ttu-id="06af6-116">理由コードの説明。</span><span class="sxs-lookup"><span data-stu-id="06af6-116">A description of the reason code.</span></span> |
 
-4. <span data-ttu-id="3afcc-114">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3afcc-114">Select **Save**.</span></span> 
+4. <span data-ttu-id="06af6-117">**該当するシナリオ** で、**福利厚生管理** を **はい** に 設定します。</span><span class="sxs-lookup"><span data-stu-id="06af6-117">Under **Applicable scenarios**, set **Benefits management** to **Yes**.</span></span> <span data-ttu-id="06af6-118">(理由コードがまだ **担当者管理** ワークスペースに移行していない場合は、適用されません。)</span><span class="sxs-lookup"><span data-stu-id="06af6-118">(Not applicable if your reason codes haven't yet migrated to the **Personnel management** workspace.)</span></span>
+
+5. <span data-ttu-id="06af6-119">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06af6-119">Select **Save**.</span></span>
+
+## <a name="manually-migrate-reason-codes-to-personnel-management"></a><span data-ttu-id="06af6-120">従業員管理に理由コードを手動で移行する</span><span class="sxs-lookup"><span data-stu-id="06af6-120">Manually migrate reason codes to Personnel management</span></span>
+
+<span data-ttu-id="06af6-121">2021 年 1 月時点で、理由コードは、**従業員管理** ワークスペースに移行されているため、**福利厚生管理** ワークスペースではご利用いただけません。</span><span class="sxs-lookup"><span data-stu-id="06af6-121">In January 2021, reason codes are migrating to the **Personnel management** workspace instead of the **Benefits management** workspace.</span></span> <span data-ttu-id="06af6-122">ほとんどの理由コード データは、環境内で自動的に移行されます。</span><span class="sxs-lookup"><span data-stu-id="06af6-122">Most reason code data will automatically migrate in your environment.</span></span> <span data-ttu-id="06af6-123">一部の理由コード データは移行されない場合があります。</span><span class="sxs-lookup"><span data-stu-id="06af6-123">Some reason code data might not migrate.</span></span> <span data-ttu-id="06af6-124">たとえば、理由コードの最大文字数が15文字となった場合、15文字を超える理由コードは自動的に移行されません。</span><span class="sxs-lookup"><span data-stu-id="06af6-124">For example, reason codes now have a 15-character maximum, so any reason codes longer than 15 characters won't migrate automatically.</span></span>
+
+<span data-ttu-id="06af6-125">**福利厚生管理** ワークスペースの **リンク** ページにバナーが表示され、移行に関する情報やコードが移行されなかった理由が通知されます。</span><span class="sxs-lookup"><span data-stu-id="06af6-125">You'll see a banner on the **Links** page of the **Benefits management** workspace informing you about the migration and whether any reason codes didn't migrate.</span></span>
+
+1. <span data-ttu-id="06af6-126">移行ステータスに関する詳細を示す **理由コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06af6-126">Select **Reason codes** for details about migration status.</span></span>
+
+   <span data-ttu-id="06af6-127">[![理由コード](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)</span><span class="sxs-lookup"><span data-stu-id="06af6-127">[![Reason codes](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)</span></span>
+
+2. <span data-ttu-id="06af6-128">移行に失敗した理由コードを選択します。</span><span class="sxs-lookup"><span data-stu-id="06af6-128">Select a reason code that failed to migrate.</span></span>
+
+   <span data-ttu-id="06af6-129">[![理由コードの移行状態](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)</span><span class="sxs-lookup"><span data-stu-id="06af6-129">[![Reason code migration status](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)</span></span>
+
+3. <span data-ttu-id="06af6-130">**理由コードの移行** を選択します 。</span><span class="sxs-lookup"><span data-stu-id="06af6-130">Select **Migrate reason code**.</span></span>
+
+   <span data-ttu-id="06af6-131">[![理由コードを移行する](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)</span><span class="sxs-lookup"><span data-stu-id="06af6-131">[![Migrate reason code](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)</span></span>
+
+4. <span data-ttu-id="06af6-132">**福利厚生理由コード移行** ペインでは、Human Resources の理由コードにマッピングする 2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="06af6-132">In the **Benefit reason code migration** pane, you have two options for mapping to a Personnel management reason code:</span></span>
+
+   - <span data-ttu-id="06af6-133">従業員管理で既存の理由コードを使用するには、**既存の理由コードを使用** から選択します。</span><span class="sxs-lookup"><span data-stu-id="06af6-133">To use an existing reason code in Personnel management, choose one from the **Use existing reason code** dropdown.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="06af6-134">従業員管理で既存の理由コードを使用できるのは、別の福利厚生管理理由コードにまだ移行していない場合のみです。</span><span class="sxs-lookup"><span data-stu-id="06af6-134">You can only use an existing reason code in Personnel management if another Benefits management reason code hasn't already migrated to it.</span></span>
+   - <span data-ttu-id="06af6-135">従業員管理に新しい理由コードを作成するには、**新しい理由コード** に新たな理由コードを入力し、**新しい説明** に説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="06af6-135">To create a new reason code in Personnel management, enter a new one in **New reason code**, and then enter a description in **New description**.</span></span>
+
+   <span data-ttu-id="06af6-136">[![従業員管理の理由コードへのマッピング](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)</span><span class="sxs-lookup"><span data-stu-id="06af6-136">[![Map to a Personnel management reason code](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)</span></span>
+
+<span data-ttu-id="06af6-137">理由コードが Human Resources に移行した後で、福利厚生管理でそれらを使用するオプションは自動的に **はい** に設定 されます。</span><span class="sxs-lookup"><span data-stu-id="06af6-137">After reason codes migrate to Personnel management, the option for using them in Benefits management is automatically set to **Yes**.</span></span>
+
+<span data-ttu-id="06af6-138">[![福利厚生管理で理由コードを使用する](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)</span><span class="sxs-lookup"><span data-stu-id="06af6-138">[![Use reason code in Benefits management](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)</span></span>
