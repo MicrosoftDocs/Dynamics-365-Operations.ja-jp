@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566036c6361194d910a0fc34bd5d72147585ec4f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dffedfafd9d75320accf0e27f072bab6fd51f135
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431869"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016555"
 ---
 # <a name="asset-lifecycle-states"></a>資産ライフサイクル状態
 
@@ -70,6 +69,3 @@ ms.locfileid: "4431869"
 
 6. **ライフサイクル状態の更新プログラム** を選択して、選択したライフサイクル状態に従うことができる資産ライフサイクル状態を定義します。
 7. 修復のために受け取った資産を処理する場合は、**資産状態** クイック タブを使用します。 **受信/送信** セクションで、資産ライフサイクル状態を選択して、修理のために受け取る資産のワークフローを示すことができます。 顧客または部門にローン資産を提供する場合は、**ローン** セクションで、ローン資産のライフサイクル状態を選択できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

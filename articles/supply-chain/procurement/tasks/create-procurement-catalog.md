@@ -1,7 +1,7 @@
 ---
 title: 調達カタログの作成
 description: このトピックでは、調達カタログの作成方法を説明します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatProcureCatalogCreate, CatProcureCatalogEdit, SysPolicyListPage, SysPolicy, CatCatalogPolicyRule, PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqAddItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 20966291ce6297561514ce9d9f7e945859997351
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eaf8b8d8b369aa704344d6984a0f111af6e4285b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431907"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016480"
 ---
 # <a name="create-a-procurement-catalog"></a>調達カタログの作成
 
@@ -66,6 +65,3 @@ ms.locfileid: "4431907"
 7. **明細行に追加** を選択します。
 8. **OK** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

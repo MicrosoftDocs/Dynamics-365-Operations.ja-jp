@@ -1,7 +1,7 @@
 ---
 title: 特定の製品の仕入先の承認
 description: この手順では、特定の製品に対する仕入先の承認方法を示します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fafa2f7da5575206d452f31bb297790874369dfd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1cc7d8a93bdbdb5a1446fc34beff4b74aa9d11a0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431909"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016656"
 ---
 # <a name="approve-vendors-for-specific-products"></a>特定の製品の仕入先の承認
 
@@ -40,7 +39,7 @@ ms.locfileid: "4431909"
 9. **有効期限** フィールドで、日付を入力します。 2 か月先の日付を選択します。  
 10. **追加** をクリックします。
 11. **仕入先** フィールドで、値を入力または選択します。
-12. **有効期限** フィールドで、日付を入力します。 前の有効期限とは異なる日付をを選択します。  
+12. **有効期限** フィールドで、日付を入力します。 前の有効期限とは異なる日付を選択します。  
 13. ページを閉じます。
 14. アクション ウィンドウで、**承認仕入先** をクリックします。
 15. **有効期限** フィールドで、日付を入力します。 この日付は、特定の日付の時点で、誰が承認済仕入先かを確認することができるフィルターとして機能します。  
@@ -62,6 +61,3 @@ ms.locfileid: "4431909"
 31. ページを閉じます。
 32. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
