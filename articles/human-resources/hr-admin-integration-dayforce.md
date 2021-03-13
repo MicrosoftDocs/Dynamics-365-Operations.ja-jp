@@ -2,7 +2,7 @@
 title: Dayforce との統合を構成する
 description: Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統合は、この記事で説明するいくつかの構成手順に依存します。 支払の実行を処理する前に、Human Resources および Dayforce の両方で、統合を構成する必要があります。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 044a2d2f632b2c98ce94b6d61c2582a861640b68
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419295"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113252"
 ---
 # <a name="configure-integration-with-dayforce"></a>Dayforce との統合を構成する
 
@@ -676,6 +676,3 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 
 従業員は、**パスポート** ID タイプの複数の ID 番号を申告できます。 ただし、現在の有効なパスポート入力のみが Dayforce に統合されます。 すべてのパスポート入力が期限切れの場合、最後に発行されたパスポートが Dayforce に統合されます。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

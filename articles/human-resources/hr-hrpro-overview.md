@@ -2,7 +2,7 @@
 title: 概要
 description: Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定、従業員の報酬と福利厚生の設定、および従業員の管理について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 32a7ca7c74b3f84519145d26c6e0461f546dbee3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 78fddd033c777f5be6408d5e2db691ae966edb3a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419439"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115249"
 ---
 # <a name="overview"></a>概要
 
@@ -57,13 +57,12 @@ Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定
 [部門の定義](hr-personnel-define-departments.md)</br>
 [職務の定義](hr-personnel-define-jobs.md)</br>
 [ワークフローを使用した従業員情報の管理](hr-workflow-manage-employee-information.md)</br>
-[職位の報告関係の修正](hr-personnel-modify-reporting-relationships-position.md)</br>
+[職位の報告関係の変更](hr-personnel-modify-reporting-relationships-position.md)</br>
 [作業者情報の入力](hr-personnel-enter-worker-information.md)</br>
 [作業者への貸与品目](hr-personnel-loan-item-worker.md)</br>
-[プロジェクト タイムシートの入力](hr-personnel-enter-project-timesheets.md)</br>
 [大量雇用プロジェクト](hr-personnel-mass-hire-projects.md)</br>
 [職位の設定](hr-personnel-set-up-positions.md)</br>
-[けが/病気の情報の設定](hr-personnel-set-up-injury-illness-information.md)</br>
+[けが/病気の情報を設定します](hr-personnel-set-up-injury-illness-information.md)</br>
 
 ## <a name="set-up-compensation-plans"></a>報酬プランの設定
 
@@ -128,6 +127,3 @@ Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

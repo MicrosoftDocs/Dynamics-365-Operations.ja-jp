@@ -2,7 +2,7 @@
 title: 従業員セルフ サービスのコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービスでトップレベル ナビゲーション用のタイルを構成できます。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d1534e37e83e22dd9860de54165c062935db3798
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32981812eac3c08e1409fe5470b550e421f5d6c9
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419422"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113258"
 ---
 # <a name="configure-employee-self-service"></a>従業員セルフ サービスのコンフィギュレーション
 
@@ -72,6 +72,3 @@ Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービス�
    | **終了** | タイルが使用可能になる終了日時。 |
 
 4. **保存** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

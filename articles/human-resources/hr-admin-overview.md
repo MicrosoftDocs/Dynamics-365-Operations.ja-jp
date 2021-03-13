@@ -1,8 +1,8 @@
 ---
-title: 概要
+title: 管理の概要
 description: この管理者ガイドは、Dynamics 365 Human Resources の設定、管理、およびトラブルシューティングに役立ちます。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527864"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113320"
 ---
-# <a name="overview"></a>概要
+# <a name="administration-overview"></a>管理の概要
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "4527864"
 
 - データ統合の設定
   - [データ統合テクノロジの選択](hr-admin-integration-choose-technology.md)
-  - [Common Data Service 統合のコンフィギュレーション](hr-admin-integration-common-data-service.md)
+  - [Dataverse 統合のコンフィギュレーション](hr-admin-integration-common-data-service.md)
   - [Finance との統合のコンフィギュレーション](hr-admin-integration-finance.md)
   - [Dayforce との統合のコンフィギュレーション](hr-admin-integration-dayforce.md)
   - [定期的なデータ エクスポート アプリの作成](hr-admin-integration-recurring-data-export.md)
@@ -102,5 +102,3 @@ ms.locfileid: "4527864"
 - [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)
 - [開発者ガイド](hr-developer-overview.md)
 - [ユーザー ガイド](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

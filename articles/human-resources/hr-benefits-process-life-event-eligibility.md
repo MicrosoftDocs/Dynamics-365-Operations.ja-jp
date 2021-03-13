@@ -2,7 +2,7 @@
 title: ライフ イベントの適格性を処理
 description: この記事では、ライフ イベント適格性の処理を実行する方法について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17ecef1412eb0232fbb4782bd9d2d79f210c7e80
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c7e9fda1b5e3dc2c0afdfd4c23bed277b4748bfd
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419320"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113287"
 ---
 # <a name="process-life-event-eligibility"></a>ライフ イベントの適格性を処理
 
@@ -48,6 +48,3 @@ ms.locfileid: "4419320"
    4. **OK** を選択します。 設定したパラメータで処理が実行されます。
 
 4. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

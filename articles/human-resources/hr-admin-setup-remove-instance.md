@@ -2,7 +2,7 @@
 title: インスタンスの削除
 description: この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1490bd95c284b58497325e57979e63a8190cb386
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419407"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113266"
 ---
 # <a name="remove-an-instance"></a>インスタンスの削除
 
@@ -85,6 +85,3 @@ ms.locfileid: "4419407"
 
 > [!Warning]
 > Power Apps 環境は、削除後の 7 日間のみ保存されています。 この 7 日の期間内に環境を復旧する必要があります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

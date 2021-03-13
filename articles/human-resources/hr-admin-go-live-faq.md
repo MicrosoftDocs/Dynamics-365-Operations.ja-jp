@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: c5041d515b261bb3e4b14885e0ec0ce788edf729
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668948"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113243"
 ---
 # <a name="go-live-faq"></a>Go-Live に関するよく寄せられる質問 
 
@@ -66,7 +66,7 @@ Azureリソースや Dynamics 365 Human Resources 環境に直接アクセスす
 
 - Azure SQL データベースを独自の Azure テナントに展開し、BYOD (Bring Your Own Device) 機能を使用してデータを同期させることができます。 詳細については、[独自のデータベースを導入する (byod)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database)を参照してください。
 
-- Common Data Service の統合を使用して、選択したエンティティを Common Data Service データベースに同期することができます。 詳細については、[Common Data Service エンティティ](hr-developer-entities.md)を参照してください。 
+- Dataverse の統合を使用して、選択したエンティティを Dataverse データベースに同期することができます。 詳細については、[Dataverse の表](hr-developer-entities.md)を参照してください。 
 
 ## <a name="how-often-is-my-production-database-backed-up"></a>どのくらいの頻度で生産データベースがバックアップされますか。 
 
@@ -99,6 +99,3 @@ No. ただし、運用環境をサンドボックス環境にコピーするデ�
  ## <a name="see-also"></a>参照
 
  [Go-Live の準備](hr-admin-go-live-prepare.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: フレックス クレジット プログラムの設定
 description: Microsoft Dynamics 365 Human Resources のフレックス クレジット プログラムを使用して、所定のフレックス クレジットの数に応じて従業員を給付金に登録できます。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 157984479a041f0bf4555aa96ed3f7e62e415d81
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f701d9e38e04769f1255e6f8cb3ee757bf22f96c
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419328"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113302"
 ---
 # <a name="set-up-flex-credit-programs"></a>フレックス クレジット プログラムの設定
 
@@ -45,6 +45,3 @@ Microsoft Dynamics 365 Human Resources のフレックス クレジット プロ
    | **比例配分ルール** | 従業員がフレックス クレジット期間の中間に雇用された場合に、比例配分のフレックス クレジットに使用するルール。 </br></br><ul><li>**なし** – フレックス クレジット期間の開始後に雇用された場合、従業員はフレックス クレジットを受け取りません。</li><li>**フル クレジット** – 雇用された時期に関係なく、従業員はフレックス クレジットの全額を受け取ります。</li><li>**比例配分** – 開始日に基づいて、従業員はフレックス クレジットの比例配分を受け取ります。</li></ul> |
    | **フレックス クレジット比例配分式** | フレックス クレジット プログラムの給付金期間の中間に、雇用された従業員に対する比例配分のフレックス クレジットに使用するルール。 比例配分は、従業員の雇用開始日に基づきます。 このフィールドは、**比例配分ルール** フィールドの **比例配分** を選択した場合のみ使用されます。 </br></br><ul><li>**毎日** – 従業員が日付レベルに対して受け取るフレックス クレジット数を比例配分。 フレックス クレジットの合計数は、期間の日数で除算されます。 たとえば、給付期間が 400 日である場合、フレックス クレジットの合計数が 400 に分割され、1 日あたりに入庫するフレックス クレジットの数が計算されます。</li><li>**当月** – 従業員が当月に丸められた月レベルに受け取るフレックス クレジットの数値を比例配分。 フレックス クレジットの合計数は、期間の月数で除算されます。 たとえば、給付期間が 15 月である場合、フレックス クレジットの合計数が 15 ごとに分割され、月あたりに入庫するフレックス クレジットの数が計算されます。</li><li>**翌月** – 従業員が翌月に丸められた月レベルに受け取るフレックス クレジットの数値を比例配分。 フレックス クレジットの合計数は、期間の月数で除算されます。 たとえば、給付期間が 15 月である場合、フレックス クレジットの合計数が 15 で分割され、月あたりに入庫するフレックス クレジットの数が計算されます。</li></ul> |
    
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

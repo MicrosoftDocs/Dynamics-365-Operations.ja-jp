@@ -2,7 +2,7 @@
 title: Human Resources の新機能および変更された機能
 description: 週ごとに、Microsoft Dynamics 365 Human Resources の新しいリリースを提供します。 ここに記載されているトピックでは、毎週行われる変更について詳しく説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 675a3f0faed0ce8be4ce2633585ce8e0cf1c9be7
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: ec952f8c121f97396c135d10258a6431e8f2257e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669087"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113325"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resources の新機能および変更された機能
 
@@ -49,6 +49,8 @@ ms.locfileid: "4669087"
 
 Human Resources の隔週リリースの新機能や変更事項をについては、次の記事を参照してください:
 
+[2021 年 1 月 28 日](hr-whats-new-2021-01-28.md)</br>
+[2021 年 1 月 21 日](hr-whats-new-2021-01-21.md)</br>
 [2020 年 12 月 2 日](hr-whats-new-2020-12-02.md)</br>
 [2020 年 10 月 22 日](hr-whats-new-2020-10-22.md)</br>
 [2020 年 9 月 16 日](hr-whats-new-2020-09-16.md)</br>
@@ -79,6 +81,3 @@ Human Resources の隔週リリースの新機能や変更事項をについて�
 [Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

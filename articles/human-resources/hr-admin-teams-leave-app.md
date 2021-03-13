@@ -2,7 +2,7 @@
 title: Teams における人事管理アプリ
 description: このトピックでは、Microsoft Teams における Microsoft Dynamics 365 Human Resources について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e714be06984f399235f0799ef077a92deae64d9e
-ms.sourcegitcommit: b0aa724a18ab1fbb5a62925f048c54b2c676ebf4
+ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "4476080"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113265"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
 
@@ -134,6 +134,3 @@ Human Resources アプリでチャット ボットと会話しながら、会話
 [Microsoft Teams ヘルプ センター](https://support.office.com/teams)</br>
 [Teams での休暇要求の管理](hr-teams-leave-app.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

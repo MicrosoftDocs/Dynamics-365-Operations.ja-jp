@@ -2,7 +2,7 @@
 title: 待機期間のコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resources では、待機日は、給付金プランに使用するマイルストーンを確立します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1937ab54eb7898afe0fed6659c3ae676626e8ad
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 07ceed65a0346912d4be012a5cec502b0f0a6149
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419384"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113184"
 ---
 # <a name="configure-waiting-periods"></a>待機期間のコンフィギュレーション
 
@@ -45,6 +45,3 @@ Microsoft Dynamics 365 Human Resources では、待機日は、給付金プラ�
    | **待機日数** | 待機日の計算に使用する待機日を選択します。 |
 
 4. **保存** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

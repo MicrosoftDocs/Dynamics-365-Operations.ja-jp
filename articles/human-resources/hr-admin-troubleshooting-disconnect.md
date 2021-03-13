@@ -2,7 +2,7 @@
 title: クライアントの接続が切断される
 description: この記事では、顧客が自身の環境から切断され、またその理由が分からない場合の対処方法について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: d02916283bbd4cee6502942020df1b275a0242b3
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4419457"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113291"
 ---
 # <a name="client-disconnects"></a>クライアントの接続が切断される
 
@@ -52,6 +52,3 @@ Microsoft Dynamics 365 Human Resources は、2 つの異なるセッションが
 特定のブラウザー タイプにつき 1 つだけの環境が開いていることを確認します。 ユーザーは、同じ環境 (つまり、同じブラウザの複数のタブ) に対して複数のセッションを開くことができます。
 
 同時に 2 つの環境間を移動するユーザーは、異なるブラウザー タイプで各環境を開く必要があります。 (たとえば、ユーザー A は Chrome で環境 1 を、Microsoft Edge で環境 2 を表示できます。)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

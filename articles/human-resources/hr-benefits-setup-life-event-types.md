@@ -2,7 +2,7 @@
 title: ライフ イベント タイプのコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resources は、ライフ イベント タイプを使用して従業員の給付金の登録を更新するのに有効なイベントを定義します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419358"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113286"
 ---
 # <a name="configure-life-event-types"></a>ライフ イベント タイプのコンフィギュレーション
 
@@ -88,6 +88,3 @@ Microsoft Dynamics 365 Human Resources は、ライフ イベント タイプを
 | **適格性ルール オーバーライドの有効期限 (米国固有ではありません)** | 人事管理の詳細> 給与金 > 計画 > 給付金 > 適格性ルールをオーバーライドする | ライフ イベント変更処理の使用。 たとえば、計画の適格性ルール オーバーライド有効期限を今日の 午後 5 時 00 分と編集した場合、午後 5 時 00 分または次の日以降いつでも、ライフ イベントの変更処理を実行すると、適格性ルール オーバーライドが期限切れになったことを示すメッセージが表示されます。 |
 | **新しい給付金計画 (米国固有ではありません)** | 人事管理の詳細 > 給付金 > 計画 > 新規 | <ul><li>適格性オプションは現在の計画に追加されます</li><li>適格性オプションが関連付けられた新しい計画が追加されます</li></ul></br></br>人事管理はこのインスタンスでライフ イベントの適格性処理を実行する必要があります。 |
 | **適格性ルールの変更 (米国固有ではありません)** | 人事管理の詳細> 給付金 > ルール/オプション > 適格性ルール | ライフ イベント適格性処理の使用。 **EhrBenefitEligibilityRule** レコードは次の値が変更された場合ログに記録されます。**UseEmplCategory**、**UseEmplStatus**、または **UseEmplType**。 変更されたルールまたは適格性基準に対して既に存在するライフ イベント取引のみを更新します。 |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a35abcb8a2f6aa8031c8d84a44c2a8ad93883ac
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: f615584785ba48a140e4e97991a4594047fea8ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669177"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113185"
 ---
 # <a name="recruit-job-candidates"></a>職務候補者の採用
 
@@ -38,7 +38,7 @@ Dynamics 365 Human Resources を使用すると、採用要求の管理が簡単
 別の採用アプリケーションを使用していない場合は、Human Resources で手動で候補者を管理することもできます。
 
 >[!NOTE]
->管理者または開発者が Human Resources とサードパーティの採用アプリケーションを統合する場合は、[Common Data Service 統合の構成](hr-admin-integration-common-data-service.md) および [Common Data Service 仮想エンティティの構成](hr-admin-integration-common-data-service-virtual-entities.md) を参照してください
+>管理者または開発者が Human Resources とサードパーティの採用アプリケーションを統合する場合は、[Dataverse 統合の構成](hr-admin-integration-common-data-service.md) および [Dataverse 仮想エンティティの構成](hr-admin-integration-common-data-service-virtual-entities.md) を参照してください
 >
 > [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics) からも採用統合アプリを利用できます。
 >
@@ -46,15 +46,13 @@ Dynamics 365 Human Resources を使用すると、採用要求の管理が簡単
 
 ## <a name="enable-recruiting-requests"></a>採用要求を有効にする
 
-Human Resources に採用要求を送信する場合は、まず **人事管理パラメーター** で機能を有効にする必要があります。
+Human Resources に採用要求を送信する場合は、まず **Human Resources 共有パラメーター** で機能を有効にする必要があります。
 
 1. **人事管理** ワークスペースで、**リンク** を選択します。
 
-2. **設定** で、**人事管理パラメーター** を選択します。
+2. **設定** で、**人事管理共有パラメーター** を選択します。
 
-3. **一般** タブで、**採用** から **採用要求の有効化** を **はい** に設定します。
-
-   ![採用要求を有効にする](./media/hr-recruit-0-enable-requests.png)
+3. **採用** の **採用** タブで、 **採用要求の有効化** を **はい** に設定します。
 
 ## <a name="add-a-recruiting-request-location"></a>採用要求の勤務場所の追加
 
@@ -224,8 +222,6 @@ HR のプロフェッショナルにすべての採用要求を表示するに�
 
 ## <a name="see-also"></a>参照
 
-[Common Data Service 仮想エンティティの構成](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[構成 Dataverse 仮想テーブル](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [従業員の編成](hr-personnel-departments-jobs-positions.md)<br>
 [職務のコンポーネントの設定](hr-personnel-jobs.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

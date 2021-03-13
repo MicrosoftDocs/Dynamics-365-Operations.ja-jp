@@ -1,7 +1,7 @@
 ---
 title: 在庫の視覚化アドイン
 description: このトピックでは、Dynamics 365 Supply Chain Management の在庫の視覚化アドインのインストールおよび構成方法を説明します。
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625068"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114673"
 ---
 # <a name="inventory-visibility-add-in"></a>在庫の視覚化アドイン
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Inventory Visibility Add-in は、リアルタイムで手持在庫を追跡可能できる独立したスケーラブルなマイクロサービスで、グローバルなビューの在庫表示が実現します。
 
 手持在庫に関連するすべての情報は、低レベルの SQL 統合を通じて準リアルタイムでサービスにエクスポートされます。 外部システムは RESTful APIs を通じてサービスにアクセスし、指定された分析コードの組み合わせに関する手持在庫情報にクエリを実行します。こうすることで使用可能な手持在庫の一覧を取得することができます。
 
-Inventory Visibility は、Common Data Service に構築されたマイクロサービスなので、Power Apps を構築および Power BI を適用することで拡張し、カスタマイズした機能を提供して、業務要件を満たすことができます。 インデックスをアップグレードして在庫クエリを実行することもできます。
+Inventory Visibility は、Microsoft Dataverse に構築されたマイクロサービスなので、Power Apps を構築および Power BI を適用することで拡張し、カスタマイズした機能を提供して、業務要件を満たすことができます。 インデックスをアップグレードして在庫クエリを実行することもできます。
 
 Inventory Visibility には、複数のサードパーティ システムと統合できる構成オプションが用意されています。 このオプションでは、標準化された在庫分析コード、カスタマイズされた拡張性、標準化され構成可能な計算済の数量がサポートされます。
 
@@ -80,28 +80,55 @@ Inventory Visibility Add-in をインストールするには、以下を実行�
 
 セキュリティ サービス トークンを取得するには、次の操作を行います。
 
-1. `aadToken` を取得して、エンドポイント: https://securityservice.operations365.dynamics.com/token を呼び出します。
-1. 本体の `client_assertion` を `aadToken` で置き換えます。
-1. 本体のコンテキストを、アドインを配置する環境で置き換えます。
-1. 本体のスコープを次のように置き換えます。
+1. Azure Portalにログインし、このログインを使用して Supply Chain Management アプリケーションの `clientId` と `clientSecret` を探します。
+1. 次のプロパティを持つ HTTP 要求を送信することにより、 Azure Active Directory トークン (`aadToken`) をフェッチします。
+    - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **メソッド** - `GET`
+    - **本文の内容 (フォーム データ)**:
 
-    - MCK のスコープ - "https://inventoryservice.operations365.dynamics.cn/.default"  
-    (`appsettings.mck.json` で MCK の Azure Active Directory アプリケーション ID およびテナント ID が表示されます)。
-    - PROD のスコープ - "https://inventoryservice.operations365.dynamics.com/.default"  
-    (`appsettings.prod.json` で PROD の Azure Active Directory アプリケーション ID およびテナント ID が表示されます)。
+        | キー | 値 |
+        | --- | --- |
+        | クライアント ID | ${aadAppId} |
+        | クライアント シークレット | ${aadAppSecret} |
+        | 付与タイプ | client_credentials |
+        | リソース | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. 応答で `aadToken` を受け取っている必要があります。これは次の例と似ています。
 
-    結果は次の例のようになります。
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. 次に似た JSON 要求を形成します。
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    場所:
+    - `client_assertion` 値は、前の手順で受け取った `aadToken` である必要があります。
+    - この `context` 値は、アドインを配置する環境 ID である必要があります。
+    - 例に示すように、他のすべての値を設定します。
+
+1. 次のプロパティを使用して HTTP 要求を送信します。
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **メソッド** - `POST`
+    - **HTTP ヘッダー** - API バージョンを含めます (キーは `Api-Version` で値は `1.0` です)
+    - **本文の内容** - 前の手順で作成した JSON 要求を含めます。
 
 1. `access_token` を取得します。 これは、Inventory Visibility API を呼び出すためのベアラー トークンとして必要なものです。 次に例を示します。
 
@@ -500,6 +527,3 @@ HTTP `POST` メソッドでクエリが実行されます。
 ```
 
 "数量" フィールドは、測定とそれに関連付けられた値のディクショナリとして構成されています。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

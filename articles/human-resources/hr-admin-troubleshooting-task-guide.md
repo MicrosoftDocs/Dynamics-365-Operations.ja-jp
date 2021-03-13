@@ -2,7 +2,7 @@
 title: LCS にタスク ガイドを保存して再生する
 description: この記事では、タスク Guides を Microsoft Dynamics Lifecycle Services (LCS) に保存し、それらを再生する方法について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c81c345932e0e3dce4b13104222ed9f668a3c460
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419379"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113326"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>LCS にタスク ガイドを保存して再生する
 
@@ -63,6 +63,3 @@ LCS からタスク ガイドを再生するにはこれらの手順に従いま
 2. **LCS から開く** を選択します。
 3. タスク ガイドが保存されているライブラリと BPM ノードを選択します。
 4. タスク ガイドを開きます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

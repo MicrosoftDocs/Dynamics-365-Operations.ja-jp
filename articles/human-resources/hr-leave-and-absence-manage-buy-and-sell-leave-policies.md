@@ -2,7 +2,7 @@
 title: 休暇ポリシーの売買管理
 description: Dynamics 365 Human Resources で従業員が休暇を売買できるようにすることができます。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89563204cf1423ddce47d7bacace8f14edf87005
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419425"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115999"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>休暇の売買ポリシーの管理
 
@@ -80,6 +80,3 @@ ms.locfileid: "4419425"
 [休暇計画の累計](hr-leave-and-absence-accrue.md)</br>
 [休暇の売買](hr-employee-self-service-buy-sell-leave.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

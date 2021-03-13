@@ -2,7 +2,7 @@
 title: 適格性ルールとオプションを構成する
 description: Microsoft Dynamics 365 Human Resources の給付金管理に適格性ルールとオプションを設定します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70054acafc3aec35fd985c0ca81e928519ddd0a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2920a03eaec226b306d03ebf8b899113128c410e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419324"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113247"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>適格性ルールとオプションを構成する
 
@@ -176,6 +176,3 @@ Microsoft Dynamics 365 Human Resources の給付金管理に必要なパラメ�
    | **適格性ルール** | 給付金プログラムに適用する適格性ルールを選択します。 このページの **適格性ルール** タブで適格性ルールを定義します。 |
    
 4. **保存** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

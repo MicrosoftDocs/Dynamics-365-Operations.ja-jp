@@ -1,5 +1,5 @@
 ---
-title: ワークフロー システムに請求書を送信し、製品受領書明細行を照合 (プレビュー)
+title: ワークフロー システムに請求書を送信し、製品受領書行を照合
 description: このトピックでは、仕入先請求書をワークフロー システムに送信し、転記された製品受領書明細行を仕入先請求書に自動的に照合するプロセスについて説明します。
 author: abruer
 manager: AnnBe
@@ -11,23 +11,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 03c9f6752a0bb9641f67d65580aca18276e43e9a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445029"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115659"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a>ワークフロー システムに請求書を送信し、製品受領書明細行を照合 (プレビュー)
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>ワークフロー システムに請求書を送信し、製品受領書行を照合
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、仕入先請求書をワークフロー システムに送信し、転記された製品受領書明細行を仕入先請求書に自動的に照合するプロセスについて説明します。
 
@@ -47,13 +45,10 @@ ms.locfileid: "4445029"
 
 照合された受領書の数量が請求書の数量より少ない、スリーウェイ マッチングポリシーを持つ請求書明細行は、自動化された製品受領書との照合プロセスに含まれます。
 
-自動化されたワークフローへの送信プロセスに含まれていない請求書の **最新の照合** 状態を表示するには、**仕入先請求書** ページから請求書を開きます。 請求書を表示すると、照合検証情報が更新されます。
+自動化されたワークフローへの送信プロセスに含まれていない請求書の **最新の照合** 状態を表示するには、**仕入先請求書** ページから請求書を開きます。 請求書を表示すると、照合検証情報が更新されます。 **請求書照合の検証** のバックグラウンド タスクを使用して、**最終一致** ステータス が自動的に更新されます。 **プロセスの自動化** ページの **バックグラウンド プロセス** タブ (**システム管理者\>設定\>プロセス自動化**) で、**最終一致** ステータスを自動的に更新するプロセスを構成できます 。
 
 請求書明細行は、次のいずれかの条件が満たされた場合に自動処理から除外されます。
 
 - 請求書明細行の **自動受領書照合状態** 値は、**失敗** です。
 - 請求書が使用されています。
 - 請求書はワークフロー システムにあります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

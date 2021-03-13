@@ -2,7 +2,7 @@
 title: 固定報酬計画の作成
 description: 固定報酬は、従業員の通常の全体の給与や賃金を示します。 この記事は、固定報酬プランを作成し、従業員を登録する前に設定する必要があるコンポーネントを説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 06f4a335adfc1e6f438589613efec02f92bfd756
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aa370ad5b873d707aba865b7f90e22acfc4825ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419388"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113197"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>固定報酬プランの作成
 
@@ -98,6 +98,3 @@ ms.locfileid: "4419388"
 
 システムは、等級タイプまたはバンドのタイプの報酬プランに対して指定された報酬金額が、従業員の職務に指定された報酬レベルの最小および最大の基準点の範囲内であることを確認します。 報酬金額が許可範囲外の場合は、固定報酬プランで設定されている許容範囲レベルに応じて、警告メッセージまたはエラー メッセージが表示されます。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

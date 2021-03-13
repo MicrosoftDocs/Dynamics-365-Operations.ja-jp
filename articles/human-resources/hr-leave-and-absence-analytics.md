@@ -2,7 +2,7 @@
 title: 休暇の分析の表示
 description: Dynamics 365 Human Resources において、休暇の分析、発生と残日数、および残日数のトレンドを表示します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a6cca83cf6eb17d9d700058365ac54c54efca7eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 488745388312f0a2ef936dac2f8252431123fe33
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419429"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5116071"
 ---
 # <a name="view-analytics-for-leave-and-absence"></a>休暇の分析の表示
 
@@ -45,5 +45,3 @@ Dynamics 365 Human Resources は、組織の休暇のトレンドを理解する
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇計画の作成](hr-leave-and-absence-plans.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

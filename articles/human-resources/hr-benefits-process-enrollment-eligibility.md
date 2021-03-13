@@ -2,7 +2,7 @@
 title: 登録の適格性を処理
 description: この記事では、登録資格のプロセスを実行する方法について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 69ea23e4051a6975a5892cd027777c5a88472509
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419325"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113289"
 ---
 # <a name="process-enrollment-eligibility"></a>登録の適格性を処理
 
@@ -72,6 +72,3 @@ ms.locfileid: "4419325"
    | **結果状態** | これは、適格または不適格です。 従業員が適格性ルールの基準を満たしていない場合、従業員が支払頻度や固定報酬などの必要な情報を欠落している場合、または、従業員の登録をさまたげる福利厚生計画の情報が欠落している場合、結果の状態は不適格になります。 |
    | **結果メッセージ** | 従業員が福利厚生計画に不適格である理由、または適格性ルールに合格したかどうかを示します。 |
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

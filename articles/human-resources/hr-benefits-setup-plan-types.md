@@ -2,7 +2,7 @@
 title: 計画タイプの作成
 description: Microsoft Dynamics 365 Human Resources のプラン タイプは、給付金の特定のタイプを高レベルにグループ化したものです。 各プラン タイプには、そのプラン タイプのルールを決定するプラン タイプ コードがあります。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 88a6d89bf98ea145bbb6a4eb8f4e052e5f4088e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e24c11fb6e84a7480a40b706b106cd8465470f5c
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419395"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113255"
 ---
 # <a name="create-plan-types"></a>計画タイプの作成
 
@@ -63,6 +63,3 @@ Microsoft Dynamics 365 Human Resources のプラン タイプは、給付金の�
    | **レポート ウィンドウ** | ライフ イベントのレポート ウィンドウを日単位で指定します。 **注記**: 金額を入力しない場合、システムはレポート ウィンドウはゼロとみなし、ライフ イベントは処理されません。 |
 
 5. **保存** を選択します。 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

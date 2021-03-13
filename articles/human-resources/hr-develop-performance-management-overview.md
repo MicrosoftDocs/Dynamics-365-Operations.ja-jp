@@ -2,7 +2,7 @@
 title: パフォーマンス管理
 description: 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Human Resources
 ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 722ae95de3b1822f3c7246394c3d16b8b827723b
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419382"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115611"
 ---
 # <a name="performance-management"></a>パフォーマンス管理
 
@@ -163,5 +163,3 @@ Worker Review ワークフローには 2 つの要素があります:
 ### <a name="review-types"></a>確認タイプ
 
 業績確認タイプは、確認の動作をコントロールできます。 確認のためのワークフローを有効にするか、または無効にすることができます。 確認がワークフローを使用していない場合は、確認の作成時に使用される既定のステータスを定義できます。 従業員、管理者、または両方が確認でサインオフする必要があるかどうかを選択することもできます。
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

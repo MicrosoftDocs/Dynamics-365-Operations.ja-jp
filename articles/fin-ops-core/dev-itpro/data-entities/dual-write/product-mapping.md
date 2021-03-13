@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 46f2f846f1259d433630a69f17f7b8db9514e6fa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680051"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115683"
 ---
 # <a name="unified-product-experience"></a>統一された製品経験
 
@@ -53,8 +53,8 @@ Finance and Operations アプリからの製品データ モデルを次に示�
 
 Finance and Operations アプリ | その他の Dynamics 365 アプリ | 説明
 -----------------------|--------------------------------|---
-リリース済製品 V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails** エンティティには、製品を定義する Finance and Operations アプリのフィールドが含まれ、これには製品の財務情報と管理情報が含まれています。 
-Dataverse リリース済特徴的製品 | 品目 | **製品** エンティティには、製品を定義するフィールドが含まれます。 これには、個々の製品 (製品サブタイプの製品) と製品バリアントが含まれます。 次の表に、このマッピングを示します。
+リリース済製品 V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails** テーブルには、製品を定義する Finance and Operations アプリの列が含まれ、これには製品の財務情報と管理情報が含まれています。 
+Dataverse リリース済特徴的製品 | 品目 | **製品** テーブルには、製品を定義する列が含まれます。 これには、個々の製品 (製品サブタイプの製品) と製品バリアントが含まれます。 次の表に、このマッピングを示します。
 バーコードで識別される製品番号 | msdyn\_productbarcodes | 製品のバーコードは、製品を一意に識別するために使用されます。
 既定の注文設定 | msdyn\_productdefaultordersettings
 製品固有の既定の注文設定 | msdyn_productdefaultordersettings
@@ -65,36 +65,38 @@ Dataverse リリース済特徴的製品 | 品目 | **製品** エンティテ�
 サイズ | msdyn\_productsizes
 スタイル | msdyn\_productsytles
 コンフィギュレーション | msdyn\_productconfigurations
-製品マスターの色 | msdyn_sharedproductcolors | **共有製品の色** エンティティは、特定の製品マスターに対して設定できる色を示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
-製品マスターのサイズ | msdyn_sharedproductsizes | **共有製品のサイズ** エンティティは、特定の製品マスターに対して設定できるサイズを示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
-製品マスターのスタイル | msdyn_sharedproductstyles | **共有製品のスタイル** エンティティは、特定の製品マスターに対して設定できるスタイルを示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
-製品マスターのコンフィギュレーション | msdyn_sharedproductconfigurations | **共有製品のコンフィギュレーション** エンティティは、特定の製品マスターに対して設定できるコンフィギュレーションを示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
-すべての製品 | msdyn_globalproducts | すべての製品エンティティには、Finance and Operations アプリで使用可能なすべての製品 (リリース済製品と非リリース製品の両方) が含まれます。
+製品マスターの色 | msdyn_sharedproductcolors | **共有製品の色** テーブルは、特定の製品マスターに対して設定できる色を示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
+製品マスターのサイズ | msdyn_sharedproductsizes | **共有製品のサイズ** テーブルは、特定の製品マスターに対して設定できるサイズを示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
+製品マスターのスタイル | msdyn_sharedproductstyles | **共有製品のスタイル** テーブルは、特定の製品マスターに対して設定できるスタイルを示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
+製品マスターのコンフィギュレーション | msdyn_sharedproductconfigurations | **共有製品の構成** テーブルは、特定の製品マスターに対して設定できる構成を示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
+すべての製品 | msdyn_globalproducts | すべての製品テーブルには、Finance and Operations アプリで使用可能なすべての製品 (リリース済製品と非リリース製品の両方) が含まれます。
 単位 | uoms
 単位換算 | msdyn_ unitofmeasureconversions
 製品固有の測定単位換算 | msdyn_productspecificunitofmeasureconversion
-製品カテゴリ | msdyn_productcategories | 各製品カテゴリおよびその構造と特性に関する情報は、製品カテゴリ エンティティに含まれています。 
-製品カテゴリ階層 | msdyn_productcategoryhierarhies | 製品階層を使用して、製品を分類またはグループ化します。 カテゴリ階層は、製品カテゴリの階層エンティティを使用して Dataverse で使用できます。 
+製品カテゴリ | msdyn_productcategories | 各製品カテゴリとその構造と特性に関する情報は、製品カテゴリ テーブルに含まれています。 
+製品カテゴリ階層 | msdyn_productcategoryhierarhies | 製品階層を使用して、製品を分類またはグループ化します。 カテゴリ階層は、製品カテゴリの階層テーブルを使用して Dataverse で利用可能です。 
 製品カテゴリ階層ロール | msdyn_productcategoryhierarchies | 製品階層は、D365 Finance and Operations のさまざまなロールに対して使用できます。 これらは製品カテゴリのロール エンティティが使用される、各ロールで使用するカテゴリを指定します。 
-製品カテゴリの割り当て | msdyn_productcategoryassignments | 製品をカテゴリに割り当てるには、製品カテゴリの割り当てエンティティを使用できます。
+製品カテゴリの割り当て | msdyn_productcategoryassignments | 製品をカテゴリに割り当てるには、製品カテゴリの割り当てテーブルを使用できます。
 
 ## <a name="integration-of-products"></a>製品の統合
 
-このモデルでは、製品が、Dataverse にある **製品** と **msdyn\_sharedproductdetails** という 2 つのテーブルの組み合わせによって表されます。 最初のエンティティには、製品の定義 (製品の固有 ID、製品名、説明) が含まれており、2 番目のエンティティには、製品レベルで保存されたフィールドが含まれています。 この 2 つのテーブルの組み合わせを使用して、最小在庫管理単位 (SKU) の概念に従って製品を定義します。 リリースされた各製品の情報は、記載されているテーブル (製品および共有製品の詳細) で提供されます。 すべての製品 (リリース済であるかどうかにかかわらず) を追跡する場合は、**グローバル製品** エンティティが使用されます。 
+このモデルでは、製品が、Dataverse にある **製品** と **msdyn\_sharedproductdetails** という 2 つのテーブルの組み合わせによって表されます。 最初のテーブルには、製品の定義 (製品の固有 ID、製品名、説明) が含まれており、2 番目のテーブルには、製品レベルで保存された列が含まれています。 この 2 つのテーブルの組み合わせを使用して、最小在庫管理単位 (SKU) の概念に従って製品を定義します。 リリースされた各製品の情報は、記載されているテーブル (製品および共有製品の詳細) で提供されます。 すべての製品 (リリース済であるかどうかにかかわらず) を追跡する場合は、**グローバル製品** テーブルが使用されます。 
 
 製品は SKU として表されるため、特徴的製品、製品マスター、および製品バリアントの概念は、次に示すとおり、Dataverse に取り込むことができます。
 
-- **製品サブタイプの製品** は、自身で定義されている製品です。 分析コードを定義する必要はありません。 例として、特定の書籍が挙げられます。 これらの製品については、**製品** エンティティに 1 つのレコードが作成され、**msdyn\_sharedproductdetails** エンティティに 1 つのレコードが作成されます。 製品ファミリレコードは作成されません。
-- **製品マスター** は、業務プロセスの動作を決定する定義とルールを保持する汎用製品として使用されます。 これらの定義に基づいて、製品バリアントと呼ばれる特徴的製品を生成することができます。 たとえば、T シャツは製品マスターであり、色とサイズを分析コードとして持つことができます。 この分析コードの組み合わせが異なるバリアント (S サイズの青い T シャツまたは M サイズの緑の T シャツなど) をリリースすることができます。 統合では、バリアントごとに 1 つのレコードが製品テーブルに作成されます。 このレコードには、さまざまな分析コードなど、バリアント固有の情報が含まれています。 製品の一般情報は、**msdyn\_sharedproductdetails** エンティティに格納されています。 (この汎用情報は製品マスターに保持されます。) 製品マスター情報は、リリースされた製品マスターが作成されるとすぐに (ただし、バリアントがリリースされる前に)  Dataverse に同期されます。
+- **製品サブタイプの製品** は、自身で定義されている製品です。 分析コードを定義する必要はありません。 例として、特定の書籍が挙げられます。 これらの製品については、**製品** テーブルに 1 つの行が作成され、**msdyn\_sharedproductdetails** テーブルに 1 つの行が作成されます。 製品ファミリ行は作成されません。
+- **製品マスター** は、業務プロセスの動作を決定する定義とルールを保持する汎用製品として使用されます。 これらの定義に基づいて、製品バリアントと呼ばれる特徴的製品を生成することができます。 たとえば、T シャツは製品マスターであり、色とサイズを分析コードとして持つことができます。 この分析コードの組み合わせが異なるバリアント (S サイズの青い T シャツまたは M サイズの緑の T シャツなど) をリリースすることができます。 統合では、バリアントごとに 1 つの行が製品テーブルに作成されます。 この行には、さまざまな分析コードなど、バリアント固有の情報が含まれています。 製品の一般情報は、**msdyn\_sharedproductdetails** テーブルに格納されています。 (この汎用情報は製品マスターに保持されます。) 製品マスター情報は、リリースされた製品マスターが作成されるとすぐに (ただし、バリアントがリリースされる前に)  Dataverse に同期されます。
 - **特徴的製品** は、製品サブタイプのすべての製品とすべての製品バリアントを参照します。 
 
 ![製品のデータ モデル](media/dual-write-product.png)
 
-デュアル書き込み機能が有効になっている場合、Finance and Operations からの製品が他の Dynamics 365 製品に **下書き** 状態で同期されます。 同期の内容は、同じ通貨の最初の価格表に追加されます。 これは、同期の内容が、製品が Finance and Operations アプリでリリースされている法人の通貨と一致する Dynamics 365 アプリの最初の価格表に追加されるという意味です。 
+デュアル書き込み機能が有効になっている場合、Finance and Operations からの製品が他の Dynamics 365 製品に **下書き** 状態で同期されます。 同期の内容は、同じ通貨の最初の価格表に追加されます。 これは、同期の内容が、製品が Finance and Operations アプリでリリースされている法人の通貨と一致する Dynamics 365 アプリの最初の価格表に追加されるという意味です。 指定した通貨の価格リストがない場合は、価格リストが自動的に作成され、製品が割り当てられます。 
 
 既定では、Finance and Operations アプリの製品は、**下書き** 状態で他の Dynamics 365 アプリに同期されます。 製品を **有効** 状態と同期して、販売注文の見積書で直接使用できるようにするには、例として、次の設定を選択する必要があります。**システム > 管理 > システム管理 > システム設定 > 販売** タブで、**有効な状態で製品を作成 = はい** を選択します。 
 
-製品の同期は、Finance and Operations アプリから Dataverse に対して実行されることに注意してください。 つまり、製品エンティティのフィールドの値は Dataverseで変更できますが、同期がトリガーされるときに (Finance and Operations アプリで製品フィールドが変更されるとき)、Dataverse の値が上書きされます。 
+製品が同期されている場合は、Salse では必須フィールドなので、Finance and Operations アプリの **販売単位** フィールドに値を入力する必要があります。
+
+製品の同期は、Finance and Operations アプリから Dataverse に対して実行されることに注意してください。 つまり、製品テーブル列の値は Dataverseで変更できますが、同期がトリガーされるときに (Finance and Operations アプリで製品フィールドが変更されるとき)、Dataverse の値が上書きされます。 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -166,7 +168,7 @@ Dataverse リリース済特徴的製品 | 品目 | **製品** エンティテ�
 
 Finance and Operations アプリやその他の Dynamics 365 アプリで一致/重複する単位の場合:
 
-+ **単位は、Finance and Operations アプリ内の関連付けられている単位クラスに対応する他の Dynamics 365 アプリの単位グループに属します**。 この場合、他の Dynamics 365 アプリの msdyn_symbol フィールドには、Finance and Operations アプリの単位記号を入力する必要があります。 したがって、データが照合されると、その単位グループは、他の Dynamics 365 アプリでは "外部管理" として設定されます。
++ **単位は、Finance and Operations アプリ内の関連付けられている単位クラスに対応する他の Dynamics 365 アプリの単位グループに属します**。 この場合、他の Dynamics 365 アプリの msdyn_symbol 列には、Finance and Operations アプリの単位記号を入力する必要があります。 したがって、データが照合されると、その単位グループは、他の Dynamics 365 アプリでは "外部管理" として設定されます。
 + **単位は、Finance and Operations アプリの関連付けられた単位クラスに対応していない他の Dynamics 365 アプリの単位グループに属しています (他の Dynamics 365 アプリにある単位クラスの Finance and Operations アプリに既存の単位クラスはありません)。** この場合、msdyn_symbol にはランダムな文字列を入力する必要があります。 この値は、他の Dynamics 365 アプリで一意である必要があります。
 
 Finance and Operations の単位および単位クラスで、他の Dynamics 365 アプリに存在しない場合:
@@ -175,7 +177,7 @@ Finance and Operations の単位および単位クラスで、他の Dynamics 36
 
 他の Dynamics 365 アプリの単位で、Finance and Operations アプリに存在しない場合:
 
-すべての単位で msdyn_symbol のフィールドを入力する必要があります。 単位は、対応する単位クラス (存在する場合) の Finance and Operations アプリでいつでも作成できます。 単位クラスが存在しない場合は、まず、他の Dynamics 365 アプリ単位グループに一致する単位クラスを作成する必要があります (ただし、列挙型を拡張する場合は、拡張機能を使用する場合を除き、Finance and Operations アプリで単位クラスを作成することはできません)。 これにより、単位を作成できます。 Finance and Operations アプリの単位記号は、その単位に対して他の Dynamics 365 アプリで以前に指定された msdyn_symbol である必要があります。
+すべての単位で msdyn_symbol の列を入力する必要があります。 単位は、対応する単位クラス (存在する場合) の Finance and Operations アプリでいつでも作成できます。 単位クラスが存在しない場合は、まず、他の Dynamics 365 アプリ単位グループに一致する単位クラスを作成する必要があります (ただし、列挙型を拡張する場合は、拡張機能を使用する場合を除き、Finance and Operations アプリで単位クラスを作成することはできません)。 これにより、単位を作成できます。 Finance and Operations アプリの単位記号は、その単位に対して他の Dynamics 365 アプリで以前に指定された msdyn_symbol である必要があります。
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>製品ポリシー: 分析コード、追跡、保管グループ
 
@@ -202,7 +204,7 @@ Finance and Operations の単位および単位クラスで、他の Dynamics 36
 
 Dynamics 365 for Finance and Operations と Dataverse の製品との間で製品を一意に識別するために、統合キーが使用されます。 製品では、**(productnumber)** は Dataverse の製品を識別する固有のキーです。 これは、次の連結によって構成されます **(会社、msdyn_productnumber)**。 **会社** は Finance and Operations の法人エンティティを示し、**msdyn_productnumber** は Finance and Operations の特定の製品の製品番号を示します。 
 
-その他の Dynamics 365 アプリのユーザーについては、この製品は **msdyn_productnumber** という UI で識別されます (フィールドのラベルが **製品番号** であることに注意してください)。 製品フォームでは、会社と msydn_productnumber の両方が表示されます。 ただし、製品の固有キーである (productnumber) フィールドは表示されません。 
+その他の Dynamics 365 アプリのユーザーについては、この製品は **msdyn_productnumber** という UI で識別されます (列のラベルが **製品番号** であることに注意してください)。 製品フォームでは、会社と msydn_productnumber の両方が表示されます。 ただし、製品の固有キーである (productnumber) 列は表示されません。 
 
 Dataverse でアプリを作成した場合は、**製品番号** (固有の製品 ID) を統合キーとして使用することに注意する必要があります。 **msdyn_productnumber** は一意ではないので使用しないでください。 
 
@@ -210,12 +212,12 @@ Dataverse でアプリを作成した場合は、**製品番号** (固有の製�
 
 ### <a name="initial-synchronization-of-products"></a>製品の初期同期 
 
-デュアル書き込みが有効になっている場合、Finance and Operations アプリの製品は Dataverse および他の Dynamics 365 のモデル駆動型アプリに同期されます。 デュアル書き込みがリリースされる前に Dataverse および他の Dynamics 365 アプリで作成された製品は、Finance and Operations アプリの製品データに更新および照合されません。
+デュアル書き込みが有効になっている場合、Finance and Operations アプリからの製品は Dataverse と Customer Engagement アプリに同期されます。 デュアル書き込みがリリースされる前に Dataverse および他の Dynamics 365 アプリで作成された製品は、Finance and Operations アプリの製品データに更新および照合されません。
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Finance and Operations および他の Dynamics 365 アプリの製品データの照合
 
-Finance and Operations と Dataverse、および他の Dynamics 365 アプリで同じ製品が保持 (重複/一致) されている場合、デュアル書き込みを有効にすると、Finance and Operations の製品が同期され、同じ製品の重複したレコードが Dataverse に表示されます。
-以前の状況を回避するために、他の Dynamics 365 アプリが Finance and Operations と重複/一致する製品を所有している場合、二重書き込みを有効にする管理者は、製品の同期が行われる前に **会社** (例: "USMF") および **msdyn_productnumber** (例: : "1234:Black:S") のフィールドをブートストラップする必要があります。 つまり、Dataverse の製品のこの 2 つのフィールドには、製品をその製品番号と照合する必要がある Finance and Operations の各会社を入力する必要があります。 
+Finance and Operations と Dataverse、その他の Dynamics 365 アプリで同じ製品が保持 (重複/一致) されている場合、デュアル書き込みを有効にすると、Finance and Operations の製品が同期され、同じ製品の重複した行が Dataverse に表示されます。
+以前の状況を回避するために、他の Dynamics 365 アプリが Finance and Operations と重複/一致する製品を所有している場合、二重書き込みを有効にする管理者は、製品の同期が行われる前に **会社** (例: "USMF") および **msdyn_productnumber** (例: : "1234:Black:S") の列をブートストラップする必要があります。 つまり、Dataverse の製品のこの 2 つの列には、製品をその製品番号と照合する必要がある Finance and Operations の各会社を入力する必要があります。 
 
 次に、同期が有効になって実行されると、Finance and Operations の製品が Dataverse および他の Dynamics 365 アプリの一致する製品と同期されます。 これは、特徴的製品と製品バリアントの両方に適用できます。 
 
@@ -223,6 +225,3 @@ Finance and Operations と Dataverse、および他の Dynamics 365 アプリで
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Dynamics 365 アプリから Finance and Operations への製品データの移行
 
 その他の Dynamics 365 アプリに Finance and Operations に存在しない製品がある場合は、管理者はまず **EcoResReleasedProductCreationV2Entity** を使用して、その製品を Finance and Operations にインポートできます。 次に、上記の説明に従って、Finance and Operations および他の Dynamics 365 アプリの製品データを照合します。 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

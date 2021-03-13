@@ -2,7 +2,7 @@
 title: 定期的なデータ エクスポートのアプリの作成
 description: この記事では Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97972d2179c42e9d2d672cbebb75643ef0a02a62
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419412"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113236"
 ---
 # <a name="create-a-recurring-data-export-app"></a>定期的なデータ エクスポートのアプリの作成
 
@@ -152,7 +152,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
         ![変数アクションの設定](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
-        > デザイナーが同じ方法で値を表示するとしても、 **変数を設定** アクション (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) の値は **Invoke an HTTP request 2** 本文値の値とは異なります。
+        > デザイナーが同じ方法で値を表示するとしても、 **変数を設定** アクション (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) の値は **HTTP request 2 の呼び出し** 本文値の値とは異なります。
 
 7. エクスポートしたパッケージのダウンロード URL を取得します。
 
@@ -205,6 +205,3 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 このチュートリアルではロジック アプリを使用して Human Resources からデータをエクスポートして、そのエクスポートしたデータを OneDrive for Business フォルダーに保存する方法を学びました。 ビジネスのニーズに合わせて、このチュートリアルの手順を必要に応じて変更できます。
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

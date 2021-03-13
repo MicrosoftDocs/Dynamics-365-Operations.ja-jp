@@ -2,7 +2,7 @@
 title: 報酬プロセスの定義と結果の計算
 description: 報酬プロセスは、固定および変動報酬プランに登録された従業員の新しい報酬金額および報奨を決定するのに使用されます。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 254eb4f83cc734e43920b912e81c7a9230ca82dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e4f49d9167e6d96500c7dbf5c1a25e04796b33a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419399"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113224"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>報酬プロセスの定義と結果の計算
 
@@ -100,6 +100,3 @@ ms.locfileid: "4419399"
 10. [承認済] をクリックします。
     * レコードが承認された後は、従業員の公式の報酬レコードに読み込むこともできます。 新しい報酬は、報酬プロセスで設定されているトランザクション日付の時点で有効です。  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

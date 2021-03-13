@@ -2,7 +2,7 @@
 title: ライフ イベントのプロセス
 description: Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ada986888a22afe83885985a694cd00ff94c9217
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 42b7e2606bca4bb5eda1c9bfc7940f9067c4b943
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419321"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113225"
 ---
 # <a name="process-life-events"></a>ライフ イベントのプロセス
 
@@ -57,6 +57,3 @@ Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中�
    4. **OK** を選択します。 設定したパラメータで処理が実行されます。
 
 4. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

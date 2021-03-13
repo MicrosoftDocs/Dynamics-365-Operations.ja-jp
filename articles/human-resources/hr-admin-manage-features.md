@@ -1,8 +1,8 @@
 ---
-title: 機能の管理
+title: Human Resources の機能を管理する
 description: Dynamics 365 Human Resources で新機能をオンまたはオフにする方法について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d400604bf1b044de52457b3f7a6eb858220a1972
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419411"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113310"
 ---
-# <a name="manage-features"></a>機能の管理
+# <a name="manage-features-in-human-resources"></a>Human Resources の機能を管理する
 
 Microsoft Dynamics 365 Human Resources の新機能の継続的なロールアウトの一環として、お客様にできるだけ早く新しい機能を体験していただきたいと思います。 一般公開される準備がほぼ整っており、広範なテストを経たプレビュー機能を提供します。 一般提供にリリースする前に、顧客フィードバックおよび検証の最終ラウンドを探しています。
 
@@ -94,5 +94,3 @@ Human Resources の新機能に関する詳細は、[Human Resources の新機�
 
 - [Human Resources の新機能](hr-admin-whats-new.md)
 - [Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

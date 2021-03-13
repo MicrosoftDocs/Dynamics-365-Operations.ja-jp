@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4fda9d85b459d233e6239f3fcffbb48e596d4085
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527888"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113327"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn タレント ハブとの統合
 
@@ -127,14 +127,14 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
     - **名前**: 以前に作成した Power Apps セキュリティ ロール (**LinkedIn タレント ハブ HRIS の統合** など) の名前を入力します。
     - **ユーザー ID**: 人事管理でデータを書き込むアクセス許可を持つユーザーを選択します。
 
-### <a name="create-the-entity-in-common-data-service"></a>Common Data Service でのエンティティの作成
+### <a name="create-the-table-in-dataverse"></a>Dataverse でのテーブルの作成
 
 > [!IMPORTANT]
-> LinkedIn タレント ハブは、Common Data Service for Human Resources の仮想エンティティに依存します。 設定でのこの手順の前提条件として、仮想エンティティを構成する必要があります。 仮想エンティティの構成方法については、[Common Data Service 仮想エンティティの構成](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities) を参照してください。
+> LinkedIn タレント ハブは、Dataverse for Human Resources の仮想テーブルに依存します。 設定でのこの手順の前提条件として、仮想テーブルを構成する必要があります。 仮想テーブルの構成方法については、[Dataverse 仮想テーブルの構成](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities) を参照してください。
 
-1. Human Resources で、**Common Data Service (CDS) の統合** ページを開きます。
+1. Human Resources で、**Dataverse の統合** ページを開きます。
 
-2. **仮想エンティティ** タブを選択します。
+2. **仮想テーブル** タブを選択します。
 
 3. エンティティの一覧をエンティティ ラベルでフィルターして、**LinkedIn がエクスポートした候補者** を検索します。
 
@@ -142,7 +142,7 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 
 ## <a name="exporting-candidate-records"></a>候補者レコードのエクスポート
 
-設定が完了した後、採用担当者と人事管理 (HR) 担当者は、LinkedIn タレント ハブの **HRIS へのエクスポート** 機能を使用して、採用された候補者レコードを LinkedIn タレント ハブから Human Resources にエクスポートできます。
+設定が完了した後、採用担当者と人事管理 (HR) 担当者は、LinkedIn タレント ハブの **HRIS へのエクスポート** 機能を使用して、採用された候補者のレコードを LinkedIn タレント ハブから Human Resources にエクスポートできます。
 
 ### <a name="export-records-from-linkedin-talent-hub"></a>LinkedIn タレント ハブからのレコードのエクスポート
 
@@ -188,8 +188,5 @@ LinkedIn タレント ハブから Human Resources にエクスポートされ�
 
 ## <a name="see-also"></a>参照
 
-[Common Data Service 仮想エンティティの構成](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Common Data Service とは](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[構成 Dataverse 仮想テーブル](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
