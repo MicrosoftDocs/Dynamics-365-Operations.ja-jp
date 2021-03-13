@@ -1,5 +1,5 @@
 ---
-title: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+title: 一般仕訳エンティティを使用した伝票のインポート
 description: このトピックでは、一般仕訳エンティティを使用して一般仕訳帳にデータをインポートするためのヒントを提供します。
 author: rcarlson
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b36e11bd9ef338334f7ac1b6412edb7754010f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8ccb479cf7bcf86c01ed274a7a39856d538f220f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129602"
 ---
-# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+# <a name="importing-vouchers-by-using-the-general-journal-entity"></a>一般仕訳エンティティを使用した伝票のインポート
 
 [!include [banner](../includes/banner.md)]
 
@@ -65,6 +65,3 @@ ms.locfileid: "4687646"
 - **伝票番号** フィールドが **自動生成** に設定されている場合、インポートは成功しません。 **伝票番号** フィールドの **自動生成** の設定はサポートされていません。
 
 既定では、一般仕訳帳エンティティは、セット ベースのプロセスを使用します。 組織のビジネス要件を評価した後、**セット ベースのプロセス** 設定は **データ管理** ワークスペースの **データ エンティティ** をクリックして変更できます。 セットベースのプロセスを使用して、インポート処理を高速化します。 セットベースのプロセスを使用しない場合は、一般仕訳帳エンティティ インポートのインポートは速度が遅くなります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 3 月 10 日)
 description: この記事では、2020 年 3 月 10 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 944481727f3222a10f128ac3078c117f5ae7d193
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b1819ddb996d83b03151eb228ec740f603f98409
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127996"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 3 月 10 日)
 
@@ -45,7 +45,7 @@ ms.locfileid: "4526921"
 
 例: ベンジャミン マーティンは福利厚生管理者です。 従業員のオンボードでは、ベンジャミンに対してタスクが作成され、新しい従業員の給付金の選択が確認されます。 ベンジャミンには、完了した過去のタスクと、完了する必要がある将来のタスクがあります。 ベンジャミンが会社を退職することを決定したので、タスクを再割り当てまたは削除する必要があります。 タスクのメンテナンス フォーム (**作業者** フォームのアクション ウィンドウ) では、ベンジャミンのすべてのタスクが別の作業者に再割り当てされるかまたは削除されます。  
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service ソリューションが、次の変更で利用可能になりました。
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse ソリューションが、次の変更で利用可能になりました。
 
 | 説明 | 計上額 |
 | --- | --- |
@@ -57,18 +57,18 @@ ms.locfileid: "4526921"
 | 新しい変動報酬の設定エンティティ | <ul><li>**変動報酬プラン タイプ**</li><li>**変動報酬プラン**</li><li>**給付ルール**</li><li>**変動報酬プラン レベル**</li></ul> |
 | 新しい **作業者カレンダー雇用** エンティティ | <ul><li>追加された **作業カレンダー エンティティ**</li></ul> |
 | 新しい **給与職位詳細** エンティティ | <ul><li>追加された **給与職位詳細**</li></ul> |
-| 新しい **肩書** エンティティ | <ul><li>追加された **タイトル**</li></ul> 新しい **タイトル** エンティティは Common Data Service に含まれますが、この時点では **職位** または **職務** エンティティから参照されません。 |
+| 新しい **肩書** エンティティ | <ul><li>追加された **タイトル**</li></ul> 新しい **タイトル** エンティティは Dataverse に含まれますが、この時点では **職位** または **職務** エンティティから参照されません。 |
 
 > [!NOTE]
-> 職位と雇用どちらの財務分析コードは、Human Resources から Common Data Service への更新の一方向の統合を提供します。 財務分析コードの更新は、現在 Common Data Service から Human Resources へは同期されません。
+> 職位と雇用どちらの財務分析コードは、Human Resources から Dataverse への更新の一方向の統合を提供します。 財務分析コードの更新は、現在 Dataverse から Human Resources へは同期されません。
 
-今後数週間のうちに、これらのエンティティの変更がすべての環境で使用できるようになります。 Human Resources の最新 Common Data Service ソリューションを手動でインストールするには、次の操作を行います。
+今後数週間のうちに、これらのエンティティの変更がすべての環境で使用できるようになります。 Human Resources の最新 Dataverse ソリューションを手動でインストールするには、次の操作を行います。
 
 1.  [Power Platform 管理センター](https://admin.powerplatform.microsoft.com) に移動します。
 
 2.  **環境** を選択します。
 
-3.  アップグレードする環境を検索します。 環境は、Human Resources の **バージョン情報** フォームで、**Common Data Service 情報** セクションの **環境名** に対応している必要があります。
+3.  アップグレードする環境を検索します。 環境は、Human Resources の **バージョン情報** フォームで、**Dataverse 情報** セクションの **環境名** に対応している必要があります。
 
 4.  環境の詳細を表示するための環境を選択します。
 
@@ -106,5 +106,3 @@ ms.locfileid: "4526921"
 [Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

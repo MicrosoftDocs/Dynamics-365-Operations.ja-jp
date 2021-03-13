@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
@@ -19,19 +18,22 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
+ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432179"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5142278"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>倉庫アプリのインストールと接続
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このトピックでは、クラウド配置の倉庫管理の構成方法について説明します。 オンプレミス配置の倉庫管理の構成方法をについては、[オンプレミス配置の倉庫管理](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md) を参照してください。
+> このトピックでは、古い倉庫アプリ構成する方法について説明します。 新しい倉庫管理モバイル アプリケーション (現在パブリック プレビュー中) を構成する方法の詳細については、[倉庫管理モバイル アプリをインストールして接続する](install-configure-warehouse-management-app.md) を参照してください。
+
+> [!NOTE]
+> このトピックでは、クラウド配置の倉庫管理アプリの構成方法について説明します。 オンプレミス配置の倉庫管理アプリの構成方法については、[オンプレミス配置の倉庫管理](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md) を参照してください。
 
 倉庫アプリは Google Play ストアおよび Microsoft Store で利用可能です。 アプリはスタンドアロンのコンポーネントとして提供されています。 したがって、各デバイスでダウンロードしてから、Microsoft Dynamics 365 Supply Chain Management 環境に接続を構成する必要があります。
 
@@ -274,6 +276,3 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 1. アプリケーションのクライアント ID が手順 2 でメモしたクライアント ID と一致していることを確認してください。
 1. ツール バーで、**削除** を選択します。
 1. 確認メッセージが表示されたら、**はい** を選択します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Teams での休暇要求の管理
 description: このトピックでは、Microsoft Teams で Dynamics 365 Human Resources アプリを使用して休暇を申請する方法について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
-ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
+ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4419458"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128164"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -196,7 +196,6 @@ Teams の Human Resources アプリには、今後のリリースに向けて修
 | --- | --- |
 | デスクトップで 400% に拡大すると、一部のアクション ボタンが表示されない場合があります。 | この拡大のレベルがサポートされるまで、代わりに拡大鏡を使用することをお勧めします。 |
 | **休暇** タブで、VoiceOver が、タイムアウト グリッドのヘッダーを読みながら、ボタンのアクションを読み上げます。 | グリッド内のヘッダーと要素は年によってグループ化され、折りたたむことができます。 VoiceOver は、これをアクション可能な項目として解釈しますが、アクション可能ではありません。 |
-| ポップアップまたはメニューが開いているときにスワイプすると、VoiceOver はポップアップまたはメニューのコンテンツを読み取りません。 | フィンガー スキャンを使用してコンテンツを確認します。 |
 | **休暇** タブで、新しい要求の **理由コード** へ移動する際に追加のスワイプ ジェスチャがあります。 | スワイプ ナビゲーションがアクセスしようとしている非表示のコントロールはありません。 |
 | **休暇** タブで、カレンダーが開いている状態でスワイプすると、新しい要求の上部または要求の編集中に移動するのではなく、コントロールの外部に出てしまいます。 | **今日に移動** が表示された場合、コントロールの最後で逆方向にスワイプして一番上に戻ることを検討してください。 |
 | VoiceOver は、日付のラベルを読み取りません。 | ペアになる日付は、常に **開始日** と **終了日** です。 |
@@ -229,6 +228,3 @@ Human Resources アプリでチャット ボットと会話しながら、会話
 [Microsoft Teams のダウンロードとインストール](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams ヘルプ センター](https://support.office.com/teams)</br>
 [Teams の Human Resources アプリ](hr-admin-teams-leave-app.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

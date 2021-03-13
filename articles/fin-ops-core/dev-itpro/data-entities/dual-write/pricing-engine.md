@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
+title: Supply Chain Management の価格決定エンジンとのオンデマンド同期
 description: このトピックでは、Dynamics 365 Sales からの Microsoft Dynamics 365 Supply Chain Management の価格決定エンジンを使用する方法について説明します。
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: 740ae20704abd9c59f64c2c7622fa96d65dccb1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45a9de18a3ff9c50eba8b316171b492605d683d4
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4454643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130656"
 ---
-# <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
+# <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Supply Chain Management の価格決定エンジンとのオンデマンド同期
 
 [!include [banner](../../includes/banner.md)]
 
@@ -40,7 +40,7 @@ Microsoft Dynamics 365 Supply Chain Managementには、売買契約、価格リ�
 3. 新しい注文明細行を追加します。
 4. 新しい注文を作成する場合は、アクション ウィンドウで **注文の価格** を選択します。 既存の注文を更新する場合は、アクション ウィンドウで **再計算** を選択します。
 
-    以下のフィールドは、自動入力されます。
+    以下の列は、自動入力されます。
 
     + 詳細金額
     + 割引率
@@ -58,17 +58,14 @@ Microsoft Dynamics 365 Supply Chain Managementには、売買契約、価格リ�
 
 ## <a name="how-it-works"></a>この機能の動作
 
-Sales で **注文の価格** を選択すると、Supply Chain Management の **販売注文 \> 表示** タブの **合計** 機能が、関連付けられている販売注文に対して呼び出されます。 Sales の注文合計の値は、Supply Chain Management の対応フィールドへの入力に使用されます。
+Sales で **注文の価格** を選択すると、Supply Chain Management の **販売注文 \> 表示** タブの **合計** 機能が、関連付けられている販売注文に対して呼び出されます。 Sales の注文合計の値は、Supply Chain Management の対応列への入力に使用されます。
 
 Supply Chain Management で販売注文の合計が計算されるとき、顧客や販売注文に一覧表示されている製品の既存の売買契約と販売契約書がこの計算で評価されます。 この情報は、合計の計算に使用されます。 **注文の価格** が選択された場合、Supply Chain Management で行われたすべての設定が販売によって自動的に反映されます。
 
 ## <a name="limitations"></a>制限
 
-Sales のフィールドが入力されている場合は、次の制限事項が適用されます。
+Sales の列が入力されている場合は、次の制限事項が適用されます。
 
 + Supply Chain Management での請求金額と請求金額配賦の設定は、Sales ではレプリケートされません。
-+ 価格決定では、Supply Chain Management の販売注文行ページの **小売チャネル** フィールドで指定された特別な小売価格は考慮しません。
++ 価格決定では、Supply Chain Management の販売注文行ページの **小売チャネル** 列で指定された特別な小売価格は考慮しません。
 + Supply Chain Management の **取引手当管理** セクションで定義されている割引は考慮されません。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

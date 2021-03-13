@@ -1,6 +1,6 @@
 ---
-title: 初期設定中に発生した問題に関するトラブルシューティング
-description: このトピックでは、Finance and Operations アプリと Dataverse においてデュアル書き込み統合の初期設定を行う際に、発生する可能性がある問題を修正するトラブルシューティング情報を提供します。
+title: 初期セットアップ中の問題のトラブルシューティング
+description: このトピックでは、デュアル書き込み統合の初期設定中に発生する問題を修正するために役立つ情報を提供します。
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cfbc1ab3ef6d47f6ec2d8ca4ca4b8940784e6e49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685590"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129984"
 ---
-# <a name="troubleshoot-issues-during-initial-setup"></a>初期設定中に発生した問題に関するトラブルシューティング
+# <a name="troubleshoot-issues-during-initial-setup"></a>初期セットアップ中の問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
@@ -71,13 +71,13 @@ Finance and Operations アプリで **Dataverseへのリンク** を開いた際
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>会社のデータとデュアル書き込みのチームがリンク設定中に正しく設定されていることを確認する
 
-デュアル書き込みが正常に機能するように、設定時に選択した会社は Dataverse 環境で作成されます。 既定では、これらの会社は読み取り専用となっており、**IsDualWriteEnable** プロパティは **True** に設定されています。 さらに、既定の所有権を持つ業務部門の所有者とチームが作成され、会社名が含まれます。 マッピングを有効にする前に、既定のチームの所有者が指定されていることを確認してください。 **会社 (CDM \_Company)** エンティティを検索するには、次の手順に従います。
+デュアル書き込みが正常に機能するように、設定時に選択した会社は Dataverse 環境で作成されます。 既定では、これらの会社は読み取り専用となっており、**IsDualWriteEnable** プロパティは **True** に設定されています。 さらに、既定の所有権を持つ業務部門の所有者とチームが作成され、会社名が含まれます。 マッピングを有効にする前に、既定のチームの所有者が指定されていることを確認してください。 **会社 (CDM\_Company)** テーブルを検索するには、次の手順に従います。
 
 1. Dynamics 365 のモデル駆動型のアプリで、右上隅のフィルターを選択します。
 2. ドロップダウン リストにて、**会社** を選択します。
 3. 結果を表示するには、**実行** を選択します。
 4. デュアル書き込みの構成時にリンクしていた会社を選択します。
-5. **既定の所有チーム** フィールドに値が設定されていることを確認します。 次の図では、**既定の所有チーム** フィールドが **USMF デュアル書き込み** に設定されています。
+5. **既定の所有チーム** 列に値が設定されていることを確認します。 次の図では、**既定の所有チーム** 列が **USMF デュアル書き込み** に設定されています。
 
     ![既定の所有チームを確認する](media/default_owning_team.png)
 
@@ -88,6 +88,3 @@ Finance and Operations アプリで **Dataverseへのリンク** を開いた際
 *デュアル書き込みエラー: プラグインの登録に失敗しました：\[（プロジェクト DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea のパーティション マッピングを取得できません。エラー DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea で許容されるマッピングの最大パーティション数を超過超しました）\]、1 つまたは複数のエラーが発生しました。*
 
 現在のところ、環境をリンク可能なリーガル テーブルの制限は、約 40 件です。 このエラーは、マッピングを有効化する際に発生し、環境間で 40 以上のリーガル テーブルがリンクされている場合に発生します。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

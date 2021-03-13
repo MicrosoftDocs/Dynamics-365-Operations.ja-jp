@@ -1,9 +1,9 @@
 ---
 title: Dynamics 365 Human Resources (2020 年 9 月 3 日) の新機能および変更された機能
 description: このトピックでは、2020 年 9 月 3 日に更新された、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
-author: Darinkramer
+author: andreabichsel
 manager: tfehr
-ms.date: 9/03/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ddffff18e1d6d16bd5a5f7e7021f9a34651307fa
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 41763a8817d0c39b14284a247cf3e46678e7811b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527461"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130858"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Dynamics 365 Human Resources (2020 年 9 月 3 日) の新機能および変更された機能
 
@@ -106,9 +106,9 @@ Human Resources の今後の機能の詳細については、[Dynamics 365 Human
 
 ## <a name="coming-soon"></a>間もなく公開
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Common Data Service に含まれるチェックリスト エンティティ
+### <a name="checklist-entities-included-in-dataverse"></a>Dataverse に含まれるチェックリスト エンティティ
 
-オンボード、オフボード、転送、および業務プロセスのチェックリスト エンティティは、Common Data Service ですぐに使用可能になります。
+オンボード、オフボード、転送、および業務プロセスのチェックリスト エンティティは、Dataverse ですぐに使用可能になります。
 
 ### <a name="benefits-management-reason-codes"></a>福利厚生管理の理由コード
 
@@ -120,6 +120,3 @@ Human Resources の今後の機能の詳細については、[Dynamics 365 Human
 [Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

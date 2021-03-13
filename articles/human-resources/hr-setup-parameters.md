@@ -2,7 +2,7 @@
 title: 人事管理パラメーターのコンフィギュレーション
 description: 他のパラメーター設定は会社固有ですが、人事管理のパラメーター設定は会社間で共有されます。 この記事は、会社固有の HR パラメーターを設定する方法を説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 131606ebaff49a2c63d22bcfdb5e523f4df87ec6
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419315"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129128"
 ---
 # <a name="configure-human-resources-parameters"></a>人事管理パラメーターのコンフィギュレーション
 
@@ -50,6 +50,3 @@ ms.locfileid: "4419315"
 
 > [!NOTE]
 > 作業時間数は 1,250 を超えることはできず、雇用期間は 12 か月を超えることはできません。 これらの最大値は米国の連邦法に従います。 最後に、**従業員セルフサービス** タブの設定で、マネージャが自分たちの従業員に代わって入力できる情報を決定します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

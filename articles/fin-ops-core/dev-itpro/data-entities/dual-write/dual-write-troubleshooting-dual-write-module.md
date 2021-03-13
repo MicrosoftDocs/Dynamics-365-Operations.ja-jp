@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリのデュアル書き込みモジュールに関する問題のトラブルシューティング
+title: Finance and Operations アプリでのデュアル書き込み問題のトラブルシューティング
 description: このトピックでは、アプリの Finance and Operations デュアル書き込みモジュールの問題修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131248"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Finance and Operations アプリのデュアル書き込みモジュールに関する問題のトラブルシューティング
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Finance and Operations アプリでのデュアル書き込み問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "4683626"
 
 **問題の修正に必要な資格情報：** デュアル書き込みを設定したのと同じユーザー。
 
-新しいエンティティをデュアル書き込みで構成する場合に、次のエラーメッセージが表示される場合があります。 マッピングを作成できるのは、デュアル書き込み接続を設定したユーザーだけです。
+新しいテーブルをデュアル書き込みで構成する場合に、次のエラー メッセージが表示される場合があります。 マッピングを作成できるのは、デュアル書き込み接続を設定したユーザーだけです。
 
 *応答状態コードが成功とならない: 401 (権限なし)*
 
@@ -77,7 +77,7 @@ ms.locfileid: "4683626"
 
 この問題を修正するには、チケットを作成してデータ統合チームに問い合わせてください。 データ統合チームがマッピンがバックエンドで **実行されていない** ことを識別できるように、ネットワークのトレースを添付してください。
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>テーブル マッピングの開始中にエラーが発生する
+## <a name="error-while-trying-to-start-a-table-mapping"></a>テーブル マッピングの開始中にエラーが発生する
 
 マッピングの状態を **実行中** に設定しようとすると、次のようなエラーが表示される場合があります。
 
@@ -86,7 +86,4 @@ ms.locfileid: "4683626"
 このエラーの修正方法は、エラーの原因によって異なります。
 
 + マッピングに依存マッピングが含まれている場合は、このテーブル マッピングの依存マッピングを有効にする必要があります。
-+ マッピング元、またはマッピング先のフィールドがない可能性があります。 Finance and Operations アプリのフィールドが見つからない場合は、[マッピングにおけるエンティティ フィールドの欠落](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps) のセクションに記載されている手順を実行します。 Dataverse でフィールドが表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、フィールドが自動的にマッピングに反映されるようにします。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ マッピングにソース列、または出力先の列がない可能性があります。 Finance and Operations アプリの列が存在しない場合は、[マップに存在しないテーブル列の問題](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) のセクションに記載されている手順を実行します。 Dataverse で列が表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、列が自動的にマッピングに反映されるようにします。

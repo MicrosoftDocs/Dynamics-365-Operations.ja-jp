@@ -2,7 +2,7 @@
 title: けが/病気の情報を設定します
 description: 雇用者は、従業員がいつ危険な仕事場により、傷害を負ったか、また疾病を患ったかを把握している必要があります。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRMInjurySetup, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 117ae1d690221dbbe0cf4287a3f986cdb3606623
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 39c569bb4f3f532feb9e716309878617c136989b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419386"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128212"
 ---
 # <a name="set-up-injury-and-illness-information"></a>けが/病気の情報を設定します
 
@@ -65,6 +65,3 @@ ms.locfileid: "4419386"
     * 報告先機関とは、インシデントを報告する先の機関です。 既定のチェック・ボックスをオンにして、傷害と疾病の報告先である既定の機関を選択します。  
 23. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

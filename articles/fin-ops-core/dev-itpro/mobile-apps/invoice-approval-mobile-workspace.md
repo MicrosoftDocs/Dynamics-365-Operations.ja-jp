@@ -1,6 +1,6 @@
 ---
 title: モバイル ワークスペースの請求書承認
-description: このトピックでは、請求書承認モバイル ワークスペースに関する情報を提供します。 このワークスペースは、仕入先請求書ヘッダーのワークフロー プロセスを通して割り当てられている請求書の一覧を提供します。
+description: このトピックでは、請求書承認モバイル ワークスペースに関する情報を提供します。
 author: abruer
 manager: AnnBe
 ms.date: 12/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8d4b40c7ce8939248e85b6b6f3d359bd16e35b0d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1a7aa1a03791b8ccb7050389097d1272f5930a49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683411"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127572"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>モバイル ワークスペースの請求書承認
 
@@ -86,6 +86,3 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 7.  **添付ファイル** を選択して、請求書に添付されているメモまたはファイルを表示します。
 8.  **請求書の詳細** ページで、確認プロセスを完了する適切なワークフロー アクションを選択します。
 9.  **完了** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

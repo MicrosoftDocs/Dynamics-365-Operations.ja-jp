@@ -1,6 +1,6 @@
 ---
-title: Lifecycle Services からの二重書き込み設定
-description: このトピックでは、新しい Finance and Operations 環境と新しい Dataverse 環境間での二重書き込み接続を Microsoft Dynamics Lifecycle Services (LCS) から設定する方法について説明します。
+title: Lifecycle Services からの二重書き込みの設定
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS). からデュアル書き込み接続を設定する方法について説明します。
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
@@ -18,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25db9c58c3d09e44dcf11b48cae1a9eda4241c35
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: df67e498b963af3ded7464f46f37bb4b2ca7d852
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683528"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127596"
 ---
-# <a name="dual-write-setup-from-lifecycle-services"></a>Lifecycle Services からの二重書き込み設定
+# <a name="dual-write-setup-from-lifecycle-services"></a>Lifecycle Services からの二重書き込みの設定
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -56,7 +54,7 @@ ms.locfileid: "4683528"
     - テナントに Dataverse が既にプロビジョニングされている場合、それを選択できます。
 
         1. **Dataverse のコンフィギュレーション** オプションを **はい** に設定します。
-        2. **使用可能な環境** フィールドで、Finance and Operations データと統合する環境を選択します。 一覧には、管理者特権を持っているすべての環境が含まれます。
+        2. **使用可能な環境** 列で、Finance and Operations データと統合する環境を選択します。 一覧には、管理者特権を持っているすべての環境が含まれます。
         3. **同意** チェック ボックスをオンにして、使用条件に同意することを示します。
 
         ![テナントに Dataverse が既にプロビジョニングされている場合の Dataverse タブ](../dual-write/media/lcs_setup_1.png)
@@ -76,9 +74,9 @@ ms.locfileid: "4683528"
         ![テナントに Dataverse 環境がまだ存在しない場合の Dataverse タブ](../dual-write/media/lcs_setup_2.png)
 
 7. **配置設定** ウィザードの残りの手順を完了します。
-8. 環境の状態が **配置** になった後、環境の詳細ページを開きます。 **Dataverse 環境情報** セクションには、リンクされている Finance and Operations 環境および Dataverse 環境の名前が表示されます。
+8. 環境の状態が **配置** になった後、環境の詳細ページを開きます。 **Power Platform 統合** セクションには、リンクされている Finance and Operations 環境と Dataverse 環境の名前が表示されます。
 
-    ![Dataverse 環境情報セクション](../dual-write/media/lcs_setup_3.png)
+    ![Power Platform統合 セクション](../dual-write/media/lcs_setup_3.png)
 
 9. Finance and Operations 環境の管理者がリンクを完了するには、LCS にサインインし、**アプリの CDS にリンク** を選択する必要があります。 環境の詳細ページには、管理者の連絡先情報が表示されます。
 
@@ -86,10 +84,8 @@ ms.locfileid: "4683528"
 
 10. Finance and Operations 環境で **データ統合** ワークスペースを開いて、使用可能なテンプレートを管理するには、**アプリの CDS にリンク** を選択します。
 
-    ![Dataverse 環境情報セクションのアプリの CDS ボタンににリンク](../dual-write/media/lcs_setup_4.png)
+    ![Power Platform 統合セクションのアプリの CDS ボタンににリンク](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > LCS を使用して環境のリンクを解除することはできません。 環境のリンクを解除するには、Finance and Operations 環境の **データ統合** ワークスペースを開き、**リンク解除** を選択します。
 
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

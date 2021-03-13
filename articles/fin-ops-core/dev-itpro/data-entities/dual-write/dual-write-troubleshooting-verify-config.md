@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリと Dataverse でデュアル書き込みの構成を確認する
+title: Finance and Operations アプリと Dataverse でのデュアル書き込み構成の検証
 description: このトピックでは、Finance and Operations アプリと Dataverse 間でデュアル書き込みが構成されているかどうかを確認する方法について説明します。
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 361d6555b60e02832c337b6f416b2b3627b6d365
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129310"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Finance and Operations アプリと Dataverse でデュアル書き込みの構成を確認する
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Finance and Operations アプリと Dataverse でのデュアル書き込み構成の検証
 
 [!include [banner](../../includes/banner.md)]
 
@@ -51,13 +51,10 @@ Finance and Operations アプリでデータを作成する際に発生する問
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Dataverse アプリでデュアル書き込みが構成されていることを確認する
 
-データの作成時に、Dataverse ページに **会社** フィールドが表示されている場合は、デュアル書き込みが構成されています。
+データの作成時に、Dataverse ページに **会社** 列が表示されている場合は、デュアル書き込みが構成されています。
 
 ![Dataverse の接続を確認します](media/verify_cds.png)
 
 Dataverse でデータの作成時に発生する問題の修正方法については、[ライブ同期に関する問題のトラブルシューティング](dual-write-troubleshooting-live-sync.md) を参照してください。
 
 Dataverse でデータの作成時にエラーが発生した場合にエラーの詳細の確認する方法については、[ Dataverse でプラグイン追跡ログを有効化してエラーの詳細を確認する](dual-write-troubleshooting.md#enable-view-trace) を参照してください。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

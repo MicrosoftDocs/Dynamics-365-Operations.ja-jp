@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resources の新機能、または変更された機能 (2020 年 7 月 23 日)
 description: このトピックでは、2020 年 7 月 23 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0672e3039f54a4591db49eee00d69bf5e4278fd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f5e10d6d1dedfc251a1a00110b50c9096314d75b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528452"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127524"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-23-2020"></a>Dynamics 365 Human Resources の新機能、または変更された機能 (2020 年 7 月 23 日)
 
@@ -33,7 +33,7 @@ ms.locfileid: "4528452"
 
 ## <a name="deleting-financial-dimensions-on-a-position-doesnt-work-as-expected-445476"></a>職位の財務分析コードの削除が想定された機能をしない (445476)
 
-職位から分析コードを削除すると、Common Data Service からも同じ職位が削除されてしまう。
+職位から分析コードを削除すると、Dataverse からも同じ職位が削除されてしまう。
 
 ## <a name="positions-not-in-hierarchy-show-inactive-positions-397257"></a>階層にない職位が非アクティブな職位を表示する (397257)
 
@@ -94,9 +94,9 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 
 ## <a name="coming-soon"></a>間もなく公開
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Common Data Service に含まれるチェックリスト エンティティ
+## <a name="checklist-entities-included-in-dataverse"></a>Dataverse に含まれるチェックリスト エンティティ
 
-オンボード、オフボード、転送、および業務プロセスのチェックリスト エンティティは、Common Data Service ですぐに使用可能になります。
+オンボード、オフボード、転送、および業務プロセスのチェックリスト エンティティは、Dataverse ですぐに使用可能になります。
 
 ## <a name="platform-changes"></a>プラットフォームの変更
 
@@ -108,6 +108,3 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 [Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

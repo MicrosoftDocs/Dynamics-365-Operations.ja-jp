@@ -1,7 +1,7 @@
 ---
 title: 予算計画のアップグレード
-description: Microsoft Dynamics AX 2012 および Dynamics 365 Finance 間の予算計画には大きな違いがあります。 一部の機能はアップグレードされていないため、再コンフィギュレーションが必要です。 このトピックでは、どのような再コンフィギュレーションが必要かを説明し、アップグレードの完了後に考慮すべき新機能についても説明します。
-author: ryansandness
+description: このトピックでは、どのような再コンフィギュレーションが必要かを説明し、アップグレードの完了後に考慮すべき新機能についても説明します。
+author: panolte
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1b1ac233feb124fea261f65f16656fea1ac2ae37
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127182"
 ---
 # <a name="upgrade-budget-planning"></a>予算計画のアップグレード
 
@@ -162,6 +162,3 @@ AX 2012 で、予算計画には、各値ごとに保存された 1 つの計画
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 複数のワークシートを含む Excel データ エンティティ テンプレートからのデータ インポート
+title: 複数のワークシート付きデータ テンプレート
 description: このトピックでは、Excel データ エンティティのテンプレートを使用して Finance and Operations にデータをインポートする方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130584"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>複数のワークシートを含む Excel データ エンティティ テンプレートからのデータ インポート
+# <a name="data-templates-with-multiple-worksheets"></a>複数のワークシート付きデータ テンプレート
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ ms.locfileid: "4688082"
 ## <a name="upload-a-file-using-run-project"></a>プロジェクトを実行してファイルをアップロードする
 
 **プロジェクトを実行** オプションを使用して Excel ファイルをアップロードして、インポート プロジェクトを実行することができます。 データ プロジェクト内のデータ エンティティの既存のマッピングと同じワークシートを持つファイルのみをアップロードするように注意する必要があります。 新しくアップロードされたファイルにワークシートが見つからない場合、システムはエラーを表示してインポートを停止します。 エンティティに対してワークシートへのマッピングを変更する必要がある場合は、**プロジェクトを実行** エクスペリエンスのファイルを使用する前に、データプロジェクト内のマッピングを最初にデータプロジェクト内から更新する必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

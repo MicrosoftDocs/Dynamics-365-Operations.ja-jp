@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 948860bb064dde1085fef4a74da2d9a600892294
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445385"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131008"
 ---
 # <a name="set-up-lease-books"></a>リース帳簿の設定
 
@@ -53,6 +52,4 @@ ms.locfileid: "4445385"
     | 短期的しきい値                     | 短期リースのしきい値として使用する月数を入力します。 リース期間がここで入力した月数以下である場合は、システムによってリースが短期リースとして分類され、繰延賃貸処置が適用されます。 |
     | 少額しきい値                      | 少額リースのしきい値として使用する金額を入力します。 資産の公平価値がここで入力した値以下である場合、またはその値である場合は、システムによってリースが少額リースとして分類され、繰延賃貸処置が適用されます。 |
     | 仕入先に支払う                            | このオプションを **はい** に設定すると、各リースで指定された仕入先勘定に対して、請求書としてリース支払を転記できるようになります。 リース支払を転記すると、仕入先勘定の貸方に転記されます。 このオプションを **いいえ** に設定した場合は、**リース転記パラメーター** ページの **リース支払** 転記タイプに指定された勘定が代わりに貸方に転記されます。 |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    | リース規則                       | リース開始日の規則を選択してください。<ul><li><b>なし</b> - リースの開始日を変更日として使用します。</li><li><b>満 1 か月</b> - 開始日は、はリースを開始した月の最初の日になります。</li></ul><p><b>なし</b> を選択すると、負債の償却スケジュールや資産減価償却スケジュールが月末ではなく、月の途中で経費を見越計上して転記してしまうリスクがあります。 <b>月全体</b> を選択すると、システムによってその月の初日にリースの勘定が開始され、月の経費全体が見越計上され、その月の最後の日に転記されます。</p><p><strong>注意:</strong>リース規則機能は、機能管理でオンにする必要があります。 <b>管理機能</b> ワークスペースで、<b>資産リースのリース規則</b> 機能を探して選択し、<b>今すぐ有効にする</b> を選択します。</p> |

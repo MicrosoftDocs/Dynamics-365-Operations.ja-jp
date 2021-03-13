@@ -1,6 +1,6 @@
 ---
 title: アプリケーション データを含むドキュメントを生成するための形式の変更
-description: この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 3 - モデルとマッピングの変更)」の手順を完了する必要があります。
+description: このトピックでは、電子ドキュメントを生成し、アプリケーション データを更新するためのレポート コンフィギュレーションを設計する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e820e909bcd80b4747c06ccaaeb05c03f52b6963
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684550"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129400"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するための形式の変更
 
@@ -149,6 +149,3 @@ ms.locfileid: "4684550"
 46. ページを閉じます。
 47. ページを閉じます。
 48. ページを閉じます。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

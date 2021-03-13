@@ -2,7 +2,7 @@
 title: 共有パラメーターのコンフィギュレーション
 description: 職位レコードなど、会社間で共有されるのレコードの共有パラメーターを設定する必要があります。 この記事は、法人間に人事管理パラメーターを設定する方法を説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 72742c38c3ff25d665bd1a3d0ea54f167dc0693c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7b399e0e8972a15837648d7ae6ec0eaacb5196b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130426"
 ---
 # <a name="configure-shared-parameters"></a>共有パラメーターのコンフィギュレーション
 
@@ -45,6 +45,3 @@ ms.locfileid: "4419314"
 
 -   **常時** – 職位の作成時に新しい職位に作業者を割り当てることができます。 職位を作成すると、**職位** ページの **概要** タブ上の **割り当てに使用可能** 日時が、自動的に作成日時に設定されます。
 -   **なし** – 職位の作成時に新しい職位に作業者を割り当てることはできません。 このオプションを選択する場合、新しい各職位が使用できるように **職位** ページを開き、作業者の割り当てを有効にするのに **一般** タブの **割り当てに使用可能** 日付を入力する必要があります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

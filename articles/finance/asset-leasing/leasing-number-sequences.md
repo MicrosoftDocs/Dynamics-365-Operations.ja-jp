@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 66b48723bbff7f176ef192924e8ea2b96641ba56
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: c21b7a55ff611a5d3ab745f3af5e2e855240531b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445393"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128958"
 ---
 # <a name="assign-number-sequences"></a>番号順序の割り当て
 
@@ -36,6 +35,4 @@ ms.locfileid: "4445393"
 3. サイド バーの **番号順序** を選択します。
 4. **リース ID** 照会の番号順序を選択します。 この番号順序は、各リースの固有識別子を生成するために使用されます。
 5. **プロセス ID** 照会の番号順序を選択します。 この番号順序は、各インデックス 再評価プロセスの固有識別子を生成するために使用されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+6. **終了提案 ID** の照会に使用する番号順序を選択します。 この番号順序は、終了の提案で使用する固有識別子を生成するために使用されます。

@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 6 月 25 日)
 description: このトピックでは、2020 年 6 月 23 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 06/25/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28eecb6289e5e895e860cffa29a55e773c6aadaa
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ad80e53c0a24d602ac446d3e0765f397dd0fc2d9
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528720"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127500"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 6 月 23 日)
 
@@ -118,9 +118,9 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 
 **人事管理パラメータ** で新しいオプションが使用可能になり、従業員セルフ サービス ワークスペースの名前をセルフ サービスに更新します。
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Common Data Service に含まれるチェックリスト エンティティ
+## <a name="checklist-entities-included-in-dataverse"></a>Dataverse に含まれるチェックリスト エンティティ
 
-オンボード、オフボード、転送、および業務プロセスのチェックリスト エンティティは、Common Data Service 内ですぐに使用可能になります。
+オンボード、オフボード、転送、および業務プロセスのチェックリスト エンティティは、Dataverse 内ですぐに使用可能になります。
 
 ## <a name="see-also"></a>参照
 
@@ -128,5 +128,3 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 [Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

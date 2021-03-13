@@ -2,7 +2,7 @@
 title: 新しい部門の定義
 description: 部門は、販売または会計など、事業の機能領域を表す作業単位です。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e35d3744661c3f94745803ba698449e6cb917875
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 13511b1cdf56716de635602720a343e9593adf61
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419392"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130270"
 ---
 # <a name="define-new-departments"></a>新しい部門の定義
 
@@ -52,6 +52,3 @@ ms.locfileid: "4419392"
 16. [変更の説明] フィールドで、値を入力します。
 17. [発行] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

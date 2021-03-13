@@ -1,6 +1,6 @@
 ---
 title: 自分のチーム モバイル ワークスペース
-description: このトピックでは、管理者が直属の部下と拡張スタッフを表示できる自分のチーム モバイル ワークスペースについて、情報を提供します。 ユーザーは、レポート チェーン内の各個人に称賛を送信することもできます。
+description: このトピックでは、管理者が直属の部下と拡張スタッフを表示できる自分のチーム モバイル ワークスペースについて、情報を提供します。
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 79678c42545a07054af00cd408e04e9d1a42caed
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680973"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127548"
 ---
 # <a name="my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペース
 
@@ -97,6 +97,3 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 1.  **称賛の送信** を選択します。 
 1. 送信する称賛のテキストを入力します。 
 1. **完了** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

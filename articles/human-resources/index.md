@@ -2,7 +2,7 @@
 title: ようこそ Dynamics 365 Human Resources
 description: Dynamics 365 Human Resources は、複数の領域にわたってデータ駆動型の従業員エクスペリエンスを構築するために必要となる、従業員に関するインサイトを提供します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65100ba5798ac5731d510c8f6f112bb7a33b4e65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1136d4c811f819665202f5f93e54b63b98188970
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129547"
 ---
 # <a name="welcome-to-dynamics-365-human-resources"></a>ようこそ Dynamics 365 Human Resources
 
@@ -61,7 +61,7 @@ Human Resources はユーザーや業務データを関連付けて、従業員�
 
 [概要](hr-developer-overview.md)</br>
 [Power Apps および Power Automate での拡張](hr-developer-power-apps.md)</br>
-[Common Data Service の Human Resources エンティティ](hr-developer-entities.md)</br>
+[Dataverse の Human Resources エンティティ](hr-developer-entities.md)</br>
 [カスタム フィールド](hr-developer-custom-fields.md)</br>
 [データ統合を設定します](hr-admin-integration-choose-technology.md)</br>
 [エンティティ API 照会](hr-developer-api-authentication.md)
@@ -78,6 +78,3 @@ Human Resources はユーザーや業務データを関連付けて、従業員�
 [休暇および欠勤の管理](hr-leave-and-absence-overview.md)</br>
 [従業員の開発](hr-develop-performance-management-overview.md)</br>
 [コースの作成](hr-learning-courses.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

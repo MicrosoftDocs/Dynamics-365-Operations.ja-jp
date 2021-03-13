@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resources（2020 年 5 月 1 日）の新機能と変更された機能
 description: この記事では、2020 年 5 月 1 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 074c678d9d8294aabf4e78b2a6ee0fa53efbaf23
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b7e41762e4283d5a4b0c9dd8359c5fb2bdabfc26
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419385"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127876"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-1-2020"></a>Dynamics 365 Human Resources（2020 年 5 月 1 日）の新機能と変更された機能
 
@@ -109,5 +109,3 @@ SharePoint で保存されているドキュメントのドキュメント プ�
 [Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
