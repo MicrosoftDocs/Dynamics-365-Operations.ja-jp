@@ -1,6 +1,6 @@
 ---
 title: 以前のリリースの削除済みまたは非推奨の機能
-description: このトピックでは、Dynamics 365 for Finance and Operations とその製品の以前のリリースから削除された機能、または削除される予定だった機能について説明します。
+description: このトピックでは、Dynamics 365 for Finance and Operations と以前のリリースから削除された機能、または削除される予定だった機能について説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 09/21/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b862938ec8226cc963fb8c85fcfc2241684eab7
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679959"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154388"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -39,7 +39,7 @@ ms.locfileid: "4679959"
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 プラットフォーム更新プログラム 31
 
@@ -970,9 +970,9 @@ ICMS の税金の連邦税明細書
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | この機能は、別の機能で置き換えられました。 |
-| **別の機能で置き換えられているか?**   | Common data service                                      |
+| **別の機能で置き換えられているか?**   | Dataverse                                      |
 | **影響を受ける製品領域**         | Dynamics のコネクタ                         |
-| **ステータス**                         | Dynamics AX 7.0 から削除されました。                           |
+| **状態**                         | Dynamics AX 7.0 から削除されました。                           |
 
 ### <a name="container-unit-and-multi-dimension-on-hand"></a>コンテナー 単位および多次元手持在庫
 
@@ -1373,6 +1373,3 @@ Windows 8 タブレット アプリケーションは経費入力と承認のた
 |     <strong>影響を受ける製品領域</strong>     |                                              一般会計                                              |
 |             <strong>ステータス</strong>             |                                      Dynamics AX 2012 から削除された                                      |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

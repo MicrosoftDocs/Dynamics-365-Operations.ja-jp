@@ -3,7 +3,7 @@ title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: d57182aa34c4897ef3703d0f8ed08d032c261170
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689569"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154090"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -32,7 +32,55 @@ ms.locfileid: "4689569"
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="feature-removed-effective-january-28-2021"></a>機能が 2021 年 1 月 28 日に削除済み
+
+### <a name="batch-job-to-handle-sql-index-defragmentation"></a>SQL インデックスの最適化を処理するためのバッチ ジョブ
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 顧客によるインデックス管理の運用、監視、および管理の間接費を削減するために、この機能は削除されました。 |
+| **別の機能で置き換えられているか?**   | 今後、インデックスのメンテナンスは Microsoft サービスによって実行されます。 これは、ユーザーのワークロードに影響を与えずに連続して発生します。 |
+| **影響を受ける製品領域**         | Finance and Operations アプリ|
+| **配置オプション**              | クラウドの配置: Microsoftによって管理される実稼働環境および Tier 2 から Tier 5 の環境に影響します。 |
+| **状態**                         | この機能は削除されました。 |
+
+
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.17 に対する Platform update
+
+> [!IMPORTANT]
+> バージョン 10.0.17 は、プレビュー リリースの一部として使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[1 つのバージョンのサービス更新に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version)を参照してください。
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Visual Studio の最新バージョンをサポートするためには、Visual Studio の X++ 拡張機能に変更を加える必要があります。 これらの変更は、Visual Studio 2015 と互換性がありません。 |
+| **別の機能で置き換えられているか?**   | Visual Studio 2017 は、配置および必要なバージョンとして Visual Studio 2015 を置き換えます。 |
+| **影響を受ける製品領域**         | Visual Studio 開発ツール |
+| **配置オプション**              | All |
+| **状態**                         | 非推奨。 更新時に、以前の X++ ツールは Visual Studio 2015 から削除され、更新されたツールは Visual Studio 2015 にはインストールされません。 ホストされているビルドには影響はありません。 仮想マシンを構築する場合は、[Azure Pipelines でのレガシ パイプラインの更新](../dev-tools/pipeline-msbuild-update.md) の説明に従って、ビルド パイプライン (ビルド定義) を手動で更新して、MSBuild 14.0 (Visual Studio 2015) から MSBuild 15.0 (Visual Studio 2017) に依存関係を変更する必要があります。 |
+
+### <a name="user-avatar"></a>ユーザー アバター 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | ナビゲーション バーの右側に表示されるユーザーの権限は、既に廃止されている、Dynamics 365 ヘッダー コントロールの API を使用して取得されました。 |
+| **別の機能で置き換えられているか?**   | ユーザーは、ナビゲーション バーのイニシャルを円の中に表示します。 これは、開発機械で現在使用されているビジュアルと同じです。 |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | All |
+| **状態**                         | バージョン 10.0.17 から削除済み |
+
+### <a name="enterprise-portal-ep-deprecation"></a>エンタープライズ ポータル (EP) の非推奨  
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Dynamics AX 2012 エンタープライズ ポータル (EP) に関連付けられたメタデータ コンポーネントは、Finance and Operations アプリケーションでサポートされたことがないので廃止されました。 |
+| **別の機能で置き換えられているか?**   | なし |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | All |
+| **状態**                         | 非推奨。 すべての EP コードは、2021 年 10 月リリース版で削除される予定です。 |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.15 に対する Platform update
 
@@ -192,6 +240,3 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>削除済みまたは非推奨の機能に関する以前の発表
 以前のリリースで削除または非推奨になった機能の詳細については、[以前のリリースで削除または非推奨になった機能](../migration-upgrade/deprecated-features.md)を参照してください。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

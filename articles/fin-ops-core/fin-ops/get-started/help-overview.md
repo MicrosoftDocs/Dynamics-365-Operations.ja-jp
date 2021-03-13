@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: bcf58a7005a8e61c5fba9c5065d75ebae8b909cc
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695142"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154156"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -163,7 +163,4 @@ On the **System parameters** page, follow these steps:
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | 古いリリースのコンテンツをホストします。 |
 | [Dynamics コミュニティ](https://community.dynamics.com/) | ブログ、フォーラム、ビデオをホストします。 |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | 評価と販売情報を提供します。 |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | トレーニングリソース、ダウンロード可能なレポート、ホワイト ペーパーをホストしており、サービス プラン保有者に向けられた重要なサポート サイトです。 このサイトのリソースによっては、アクセスにサービス計画が必要な場合があります。 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | トレーニングリソース、ダウンロード可能なレポート、ホワイト ペーパーをホストしており、サービス プラン保有者に向けられた重要なサポート サイトです。 このサイトのリソースによっては、アクセスにサービス計画が必要な場合があります。 |

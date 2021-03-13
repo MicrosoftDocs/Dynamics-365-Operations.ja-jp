@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6ba2e1a3a884d29bff491f914aa2d5f9ece2b84
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432204"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154230"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>需要予測の履歴データのインポート
 
@@ -34,31 +33,31 @@ ms.locfileid: "4432204"
 **データ管理** ワークスペースで、エンティティのすべてのフィールドの概要を表示することができます。
 
 1. **データ管理** ワークスペースを開きます。
-2. **データ エンティティ** タイルをクリックします。
+2. **データ エンティティ** タイルを選択します。
 3. エンティティの一覧で、**履歴外需** を探します。
-4. **ターゲット フィールド** をクリックします。 次のエンティティ フィールドは必須です: サイト (**DeliveringSiteId**)、日付 (**DemandDate**)、数量 (**DemandQuantity**)、および品目番号 (**ItemNumber**) か品目配賦キー (**ProductAllocationKeyId**) のいずれか。
+4. **ターゲット フィールド** を選択します。 次のエンティティ フィールドは必須です: サイト (**DeliveringSiteId**)、日付 (**DemandDate**)、数量 (**DemandQuantity**)、および品目番号 (**ItemNumber**) か品目配賦キー (**ProductAllocationKeyId**) のいずれか。
 
 データ エンティティを使用するには、履歴需要データを含む Microsoft Excel ファイルまたはコンマ区切り値 (CSV) ファイルが必要です。 次の例では、CSV ファイルからデータをインポートする方法を示します。
 
+インポート後のデータのクリーンアップ方法など、データのインポート方法の詳細については、[データのインポートとエクスポートのジョブの概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) 、と関連トピックを参照してください。
+
 ## <a name="example"></a>例
 
-次のファイルを例として使用できます。 [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast) をダウンロードします。 このファイルには、品目 D0001 の需要履歴データが含まれています。 また、次の必須フィールドのみが含まれています: サイト、数量、および需要の日付。
+次のファイルを例として使用できます。 [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/) をダウンロードします。 このファイルには、品目 D0001 の需要履歴データが含まれています。 また、次の必須フィールドのみが含まれています: サイト、数量、および需要の日付。
 
 1. 履歴需要データをインポートする会社を選択します。
 2. **データ管理** ワークスペースを開きます。
-3. **インポート** タイルをクリックします。
+3. **インポート** タイルを選択します。
 4. インポート プロジェクトの名前を入力します (たとえば、**品目 D0001 の履歴需要のインポート**)。
 5. **ソース データ形式** フィールドで、インポートするファイルのファイル形式を選択します。 この例の HistoricalDemandData ファイルをインポートするには、**CSV** を選択します。
 6. **エンティティ名** フィールドで、**履歴外需** を選択します。
 7. ファイルをコンピューターに保存して、アップロードします。
-8. **インポート** をクリックします。
+8. **インポート** を選択します。
 9. **実行の要約** ページが自動的に開きます。 インポート データをページで確認します。
 
 履歴需要データをインポートした後、需要予測を生成できます。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)  
+[データ インポート/エクスポート ジョブの概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)

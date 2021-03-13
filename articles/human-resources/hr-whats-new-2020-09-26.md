@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527413"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152200"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 2020 年 9 月 26 日
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527413"
 
 このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
-新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/) を参照してください。
+新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
 
 ## <a name="in-this-release"></a>今回のリリース
 
@@ -58,7 +57,7 @@ ms.locfileid: "4527413"
 | 481401 | 発生日基準が発生開始日より後で月末の場合、発生処理がハングする | 発生日基準が発生開始日より後で月末の場合、発生処理に遅延が発生しないように更新されます。 |
 | 447167 | 期限が切れるレコード リストに非アクティブな従業者が含まれる | **人事管理** の **期限が切れるレコード** タブには、に非アクティブな従業者が含まれていました。 現在は、アクティブな従業者のみが含まれます。 |
 | 486840 | **自分自身に割り当てられた作業項目** から誤った休暇申請が開く | **自分自身に割り当てられた作業項目** から休暇申請を選択しても、現在のユーザーに割り当てられた直近の休暇申請を開かなくなりました。 |
-| 506868 | **職位** エンティティの Common Data Service **タイトル** フィールドが設定されていません | **職務** と **職位** エンティティの **タイトル** フィールドが未指定として表示されました。 現在、**タイトル** フィールドが表示されます。 |
+| 506868 | **職位** エンティティの Dataverse **タイトル** フィールドが設定されていません | **職務** と **職位** エンティティの **タイトル** フィールドが未指定として表示されました。 現在、**タイトル** フィールドが表示されます。 |
 | 430359 | 管理者ロールと従業員ロールが割り当てられているオフボード チェックリスト タスクにアクセスできない | 将来の退職日が決まっている従業者が、従業員ロールまたは管理者ロールしか持っていない場合、チェックリストのタスクにアクセスできませんでした。 これにより、従業員ロールまたは管理者ロールしか持っていないユーザーは、将来の退職日でオフボード タスクにアクセスできます。 |
 | 458102 | 新規従業員が、作成時に **従業者給与情報** エンティティに表示されない | 新規従業員は、エンティティをエクスポートする前に従業員の給与情報を開くことなく、従業者給与情報に含まれます。 |
 
@@ -85,6 +84,3 @@ ms.locfileid: "4527413"
 [Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [更新プロセス](hr-admin-setup-update-process.md)
 [機能の管理](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
