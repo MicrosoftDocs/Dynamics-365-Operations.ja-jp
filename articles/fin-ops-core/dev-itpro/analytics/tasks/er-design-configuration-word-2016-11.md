@@ -1,101 +1,166 @@
 ---
-title: Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン
-description: 次の手順では、システム管理者または電子申告開発者のロールを持つユーザーが、電子申告形式をコンフィギュレーションして、Microsoft Word ファイルとしてレポートを生成する方法を説明します。
+title: Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成
+description: このトピックでは、Excel ブックとしてレポートを生成するように設計されたレポート形式で、Word ドキュメントとしてレポートを生成するように構成する方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 01/11/2021
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9d4959b511022e1aa98544d23da6afcda1f6adf2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 769913fd0344eb276b3b1bd055255272ca5dfffd
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681928"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092719"
 ---
-# <a name="design-er-configurations-to-generate-reports-in-word-format"></a><span data-ttu-id="e2ad3-103">Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン</span><span class="sxs-lookup"><span data-stu-id="e2ad3-103">Design ER configurations to generate reports in Word format</span></span>
+# <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a><span data-ttu-id="ad24f-103">Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成</span><span class="sxs-lookup"><span data-stu-id="ad24f-103">Reuse ER configurations with Excel templates to generate reports in Word format</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e2ad3-104">次の手順では、システム管理者または電子申告開発者のロールを持つユーザーが、電子申告 (ER) 形式をコンフィギュレーションして、Microsoft Word ファイルとしてレポートを生成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-104">The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting (ER) formats to generate reports as Microsoft Word files.</span></span> <span data-ttu-id="e2ad3-105">これらのステップは GBSI 会社で実行できます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-105">These steps can be performed in the GBSI company.</span></span>
+<span data-ttu-id="ad24f-104">レポートを Microsoft Word ドキュメントとして生成するように、新しい [電子申告 (ER)](../general-electronic-reporting.md) [形式](../general-electronic-reporting.md#FormatComponentOutbound) を [構成](../er-design-configuration-word.md) することができます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-104">To generate reports as Microsoft Word documents, you can [configure](../er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound).</span></span> <span data-ttu-id="ad24f-105">または、最初に Excel ブックとしてレポートを生成するように設計された ER 形式を再利用できます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-105">Alternatively, you can reuse an ER format that was originally designed to generate reports as Excel workbooks.</span></span> <span data-ttu-id="ad24f-106">この場合、Excel テンプレートを Word テンプレートに置き換える必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad24f-106">In this case, you must replace the Excel template with a Word template.</span></span>
 
-<span data-ttu-id="e2ad3-106">これらのステップを完了するには、まずに 「OPENXML 形式でレポートを生成する ER 構成の作成」タスク ガイドに記載の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-106">To complete these steps, you must first complete the steps in the "Create an ER configuration for generating reports in OPENXML format" task guide.</span></span> <span data-ttu-id="e2ad3-107">また事前に、サンプル レポート用に次のテンプレートをダウンロードしてローカルに保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-107">In advance, you must also download and save the following templates locally for the sample report:</span></span>
+<span data-ttu-id="ad24f-107">次の手順は、システム管理者ロールまたは電子申告開発者ロールでユーザーが、レポートを Excel ファイルとして生成するように設計された ER 形式を再利用することで、Word ファイルとしてレポートを生成する ER 形式を構成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-107">The following procedures show how a user in either the System administrator role or the Electronic reporting developer role can configure an ER format to generate reports as Word files by reusing an ER format that was designed to generate reports as Excel files.</span></span>
 
-- [<span data-ttu-id="e2ad3-108">支払レポートのテンプレート</span><span class="sxs-lookup"><span data-stu-id="e2ad3-108">Template of Payment Report</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)
-- [<span data-ttu-id="e2ad3-109">支払レポートのバインドされたテンプレート</span><span class="sxs-lookup"><span data-stu-id="e2ad3-109">Bounded Template of Payment Report</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)
+<span data-ttu-id="ad24f-108">GBSI 社を例に使用して、これらの手順について解説します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-108">These procedures can be completed in the GBSI company.</span></span>
 
+## <a name="prerequisites"></a><span data-ttu-id="ad24f-109">必要条件</span><span class="sxs-lookup"><span data-stu-id="ad24f-109">Prerequisites</span></span>
 
-<span data-ttu-id="e2ad3-110">この手順は Microsoft Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-110">This procedure is for a feature that was added in Microsoft Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="ad24f-110">これらの手順を完了するには、まず [OPENXML 形式でレポートを生成する構成を設計する](er-design-reports-openxml-2016-11.md) タスク ガイドにある手順に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad24f-110">To complete these procedures, you must first follow the steps in the [Design a configuration for generating reports in OPENXML format](er-design-reports-openxml-2016-11.md) task guide.</span></span>
 
+<span data-ttu-id="ad24f-111">また、サンプル レポート用に次のテンプレートをダウンロードしてローカルに保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad24f-111">You must also download and locally save the following templates for the sample report:</span></span>
 
-## <a name="select-the-existing-er-report-configuration"></a><span data-ttu-id="e2ad3-111">既存の ER レポート コンフィギュレーションを選択します</span><span class="sxs-lookup"><span data-stu-id="e2ad3-111">Select the existing ER report configuration</span></span>
-1. <span data-ttu-id="e2ad3-112">**ナビゲーション ウィンドウで、モジュール > 組織の管理 > ワークスペース > 電子レポート** へ移動します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-112">In the **Navigation pane, go to Modules > Organization administration > Workspaces > Electronic reporting**.</span></span> <span data-ttu-id="e2ad3-113">構成 プロバイダー「Litware、Inc.」 を確認します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-113">Make sure that the configuration provider 'Litware, Inc.'</span></span> <span data-ttu-id="e2ad3-114">有効として選択されます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-114">is selected as active.</span></span>  
-2. <span data-ttu-id="e2ad3-115">**コンフィギュレーションをレポートする** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-115">Click **Reporting configurations**.</span></span> <span data-ttu-id="e2ad3-116">OPENXML 形式でレポート出力を生成するように最初に設計された既存の ER コンフィギュレーションを再使用します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-116">We will re-use the existing ER configuration that has been originally designed to generate the report output in OPENXML format.</span></span>  
-3. <span data-ttu-id="e2ad3-117">ツリーで、「Payment model」を展開します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-117">In the tree, expand 'Payment model'.</span></span>
-4. <span data-ttu-id="e2ad3-118">ツリーで、「Payment model\Sample worksheet report」を選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-118">In the tree, select 'Payment model\Sample worksheet report'.</span></span>
-5. <span data-ttu-id="e2ad3-119">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-119">Click Designer.</span></span>
+- [<span data-ttu-id="ad24f-112">支払レポート (SampleVendPaymDocReport.docx) のテンプレート</span><span class="sxs-lookup"><span data-stu-id="ad24f-112">Template of Payment Report (SampleVendPaymDocReport.docx)</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)
+- [<span data-ttu-id="ad24f-113">支払レポート (SampleVendPaymDocReportBounded.docx) のバインドされたテンプレート</span><span class="sxs-lookup"><span data-stu-id="ad24f-113">Bounded Template of Payment Report (SampleVendPaymDocReportBounded.docx)</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)
 
-## <a name="replace-the-excel-template-with-the-word-template"></a><span data-ttu-id="e2ad3-120">Excel テンプレートを Word テンプレートに置き換えます</span><span class="sxs-lookup"><span data-stu-id="e2ad3-120">Replace the Excel template with the Word template</span></span>
+<span data-ttu-id="ad24f-114">これらの手順は、Dynamics 365 for Operations バージョン 1611 (2016年11月) で追加された機能に関するものです。</span><span class="sxs-lookup"><span data-stu-id="ad24f-114">These procedures are for a feature that was added in Dynamics 365 for Operations version 1611 (November 2016).</span></span>
 
-<span data-ttu-id="e2ad3-121">現在は、OPENXML 形式で出力を生成するテンプレートとして Excel ドキュメントが使用されます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-121">Currently, the Excel document is used as a template to generate the output in OPENXML format.</span></span> <span data-ttu-id="e2ad3-122">レポートのテンプレートを Word 形式でインポートします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-122">We will import the report's template in Word format.</span></span>
+## <a name="select-the-existing-er-report-configuration"></a><span data-ttu-id="ad24f-115">既存の ER レポート コンフィギュレーションを選択します</span><span class="sxs-lookup"><span data-stu-id="ad24f-115">Select the existing ER report configuration</span></span>
 
-1. <span data-ttu-id="e2ad3-123">**添付ファイル** クリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-123">Click **Attachments**.</span></span> <span data-ttu-id="e2ad3-124">既存の Excel テンプレートを、以前ダウンロードした Word テンプレート SampleVendPaymDocReport.docx に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-124">Replace the existing Excel template with the Word template that you downloaded earlier, SampleVendPaymDocReport.docx.</span></span> <span data-ttu-id="e2ad3-125">このテンプレートには、ER 出力を生成するドキュメントのレイアウトのみが含まれていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-125">Note, this template only contains the layout of the document we want to generate as ER output.</span></span>  
-2. <span data-ttu-id="e2ad3-126">**削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-126">Click **Delete**.</span></span>
-3. <span data-ttu-id="e2ad3-127">**はい** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-127">Click **Yes**.</span></span>
-4. <span data-ttu-id="e2ad3-128">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-128">Click **New**.</span></span>
-5. <span data-ttu-id="e2ad3-129">**ファイル** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-129">Click **File**.</span></span>
-6. <span data-ttu-id="e2ad3-130">**参照** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-130">Click **Browse**.</span></span> <span data-ttu-id="e2ad3-131">以前ダウンロードした SampleVendPaymDocReport.docx を参照して選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-131">Navigate to and select SampleVendPaymDocReport.docx that you previously downloaded.</span></span> <span data-ttu-id="e2ad3-132">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-132">Click **OK**.</span></span> <span data-ttu-id="e2ad3-133">前のステップでダウンロードしたテンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-133">Select the template that you downloaded in the previous step.</span></span>  
-7. <span data-ttu-id="e2ad3-134">**テンプレート** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-134">In the **Template** field, enter or select a value.</span></span>
+1. <span data-ttu-id="ad24f-116">Dynamics 365 Finance で、**組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-116">In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.</span></span>
+2. <span data-ttu-id="ad24f-117">**Litware, Inc.** 構成プロバイダーが **有効** として選択されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-117">Make sure that the **Litware, Inc.** configuration provider is selected as **Active**.</span></span> <span data-ttu-id="ad24f-118">有効になっていない場合は、[構成プロバイダーを作成して、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) タスク ガイドにある手順に従います。</span><span class="sxs-lookup"><span data-stu-id="ad24f-118">If it isn't, follow the steps in the [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md) task guide.</span></span>
+3. <span data-ttu-id="ad24f-119">**コンフィギュレーションをレポートする** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-119">Select **Reporting configurations**.</span></span> <span data-ttu-id="ad24f-120">OPENXML 形式でレポート出力を生成するように設計された既存の ER 構成を再利用します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-120">You will reuse the existing ER configuration that was designed to generate the report output in OPENXML format.</span></span>
+4. <span data-ttu-id="ad24f-121">**構成** ページの左側ペインにある構成ツリーで、**支払モデル** を展開し、**サンプル ワークシート レポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-121">On the **Configurations** page, in the configuration tree in the left pane, expand **Payment model**, and select **Sample worksheet report**.</span></span>
 
-## <a name="extend-the-word-template-by-adding-a-custom-xml-part"></a><span data-ttu-id="e2ad3-135">カスタム XML 部分を追加して、Word テンプレートを拡張します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-135">Extend the Word template by adding a custom XML part</span></span>
-1. <span data-ttu-id="e2ad3-136">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-136">Click **Save**.</span></span> <span data-ttu-id="e2ad3-137">保存アクションは、構成の変更を保存するだけでなく、添付されている Word テンプレートも更新します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-137">In addition to storing configuration changes, the Save action also updates the attached Word template.</span></span> <span data-ttu-id="e2ad3-138">設計されたフォーマットの構造は、「レポート」 という名前の新しいカスタム XML パーツとして、添付の Word 文書に移植されます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-138">The structure of the designed format is ported to the attached Word document as a new custom XML part with the name 'Report'.</span></span> <span data-ttu-id="e2ad3-139">関連付けられている Word テンプレートには、ER 出力として生成するドキュメントのレイアウトを含むだけでなく、実行時に ER がこのテンプレートに実装するデータの構造も含まれます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-139">Note that the attached Word template contains not only the layout of the document we want to generate as ER output, it also contains the structure of data that ER will populate into this template at runtime.</span></span>  
-2. <span data-ttu-id="e2ad3-140">**添付ファイル** クリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-140">Click **Attachments**.</span></span>
-    + <span data-ttu-id="e2ad3-141">ここで、カスタム XML 内の 「レポート」 の要素を Word ドキュメント パーツにバインドする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-141">Now you need to bind the elements of the custom XML part 'Report' to the Word document parts.</span></span>  
-    + <span data-ttu-id="e2ad3-142">カスタム XML パーツの要素でバインドされたコンテンツ コントロールを含む形式としてデザイン可能な Word 文書に慣れている場合は、次のサブタスクのすべてのステップを再生して、そのようなドキュメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-142">If you're familiar with Word documents that can be designed as forms containing content controls that are bounded with elements of custom XML parts – play all steps of the next sub-task to create such a document.</span></span> <span data-ttu-id="e2ad3-143">詳細については、[ユーザーが入力または印刷するフォームを Word で作成](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-143">For more details, see [Create forms that users complete or print in Words](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US).</span></span> <span data-ttu-id="e2ad3-144">そうでない場合は、次のサブタスクのすべてのステップをスキップします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-144">Otherwise, skip all the steps in the next sub-task.</span></span>  
+    > [!NOTE]
+    > <span data-ttu-id="ad24f-122">選択した ER 形式の下書きバージョンは、**バージョン** クイックタブで編集できます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-122">The draft version of the selected ER format can be edited on the **Versions** FastTab.</span></span>
 
-## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a><span data-ttu-id="e2ad3-145">データ バインドを行うカスタム XML 部分と共に Word を取得します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-145">Get Word with custom XML part to do data bindings</span></span>
+5. <span data-ttu-id="ad24f-123">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ad24f-123">Select **Designer**.</span></span>
+6. <span data-ttu-id="ad24f-124">**形式デザイナー** ページで、ルート形式要素のタイトルが、Excel テンプレートが現在使用されていることを示していることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="ad24f-124">On the **Format designer** page, notice that the title of the root format element indicates that an Excel template is currently used.</span></span>
 
-<span data-ttu-id="e2ad3-146">Word でこのドキュメントを開き、以下の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-146">Open this document in Word and do the following:</span></span>  
-1. <span data-ttu-id="e2ad3-147">Word 開発者タブを開きます (有効になっていない場合は、リボンをカスタマイズします)。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-147">Open the Word Developer tab (customize the ribbon if it is not enabled yet).</span></span>
-2. <span data-ttu-id="e2ad3-148">XML マッピング ウィンドウを選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-148">Select XML mapping pane.</span></span>
-3. <span data-ttu-id="e2ad3-149">ルックアップで、「レポート」 のカスタム XML パーツを選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-149">Select the 'Report' custom XML part in the lookup.</span></span>
-4. <span data-ttu-id="e2ad3-150">選択したカスタム XML パーツの要素と Word ドキュメントのコンテンツ コントロールとのマッピングを行います。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-150">Do mapping of the elements of the selected custom XML part and content controls of the Word document.</span></span>  <span data-ttu-id="e2ad3-151">5.</span><span class="sxs-lookup"><span data-stu-id="e2ad3-151">5.</span></span> <span data-ttu-id="e2ad3-152">ローカル ドライブに更新された Word ドキュメントを保存します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-152">Save the updated Word document on a local drive.</span></span>  
+![既存の構成の選択](../media/er-design-configuration-word-2016-11-image01.gif)
 
-## <a name="upload-the-word-template-with-custom-xml-part-bounded-to-content-controls"></a><span data-ttu-id="e2ad3-153">コンテンツ コントロールにバインドされたカスタム XML 部分と共に Word テンプレートをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-153">Upload the Word template with custom XML part bounded to content controls</span></span>
-1. <span data-ttu-id="e2ad3-154">**削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-154">Click **Delete**.</span></span>
-2. <span data-ttu-id="e2ad3-155">**はい** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-155">Click **Yes**.</span></span> <span data-ttu-id="e2ad3-156">新しいテンプレートを追加します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-156">Add a new template.</span></span> <span data-ttu-id="e2ad3-157">前のサブタスクのステップを完了した場合、作成してローカルに保存した Word 文書を選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-157">If you competed the steps in the previous subtask, select the Word document that you prepared and saved locally.</span></span> <span data-ttu-id="e2ad3-158">そうでない場合、以前ダウンロードした SampleVendPaymDocReportBounded.docx MS Word テンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-158">Otherwise, select the SampleVendPaymDocReportBounded.docx MS Word template that you downloaded earlier.</span></span>  
-3. <span data-ttu-id="e2ad3-159">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-159">Click **New**.</span></span>
-4. <span data-ttu-id="e2ad3-160">**ファイル** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-160">Click **File**.</span></span>
-5. <span data-ttu-id="e2ad3-161">**参照** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-161">Click **Browse**.</span></span> <span data-ttu-id="e2ad3-162">以前ダウンロードした SampleVendPaymDocReportBounded.docx を参照して選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-162">Navigate to and select SampleVendPaymDocReportBounded.docx that you previously downloaded.</span></span> <span data-ttu-id="e2ad3-163">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-163">Click **OK**.</span></span>
-6. <span data-ttu-id="e2ad3-164">**テンプレート** フィールドで、前のステップでダウンロードしたドキュメントを選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-164">In the **Template** field, select the document that you downloaded in the previous step.</span></span>
-7. <span data-ttu-id="e2ad3-165">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-165">Click **Save**.</span></span>
-8. <span data-ttu-id="e2ad3-166">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-166">Close the page.</span></span>
+## <a name="review-the-downloaded-word-template"></a><span data-ttu-id="ad24f-126">ダウンロードした Word テンプレートの確認</span><span class="sxs-lookup"><span data-stu-id="ad24f-126">Review the downloaded Word template</span></span>
 
-## <a name="execute-the-format-to-create-word-output"></a><span data-ttu-id="e2ad3-167">フォーマットを実行して Word 出力を作成する</span><span class="sxs-lookup"><span data-stu-id="e2ad3-167">Execute the format to create Word output</span></span>
-1. <span data-ttu-id="e2ad3-168">**アクション ウィンドウ** で、**構成** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-168">On the **Action Pane**, click **Configurations**.</span></span>
-2. <span data-ttu-id="e2ad3-169">**ユーザー パラメーター** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-169">Click **User parameters**.</span></span>
-3. <span data-ttu-id="e2ad3-170">**設定の実行** フィールドで、はいを選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-170">Select Yes in the **Run settings** field.</span></span>
-4. <span data-ttu-id="e2ad3-171">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-171">Click **OK**.</span></span>
-5. <span data-ttu-id="e2ad3-172">**編集** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-172">Click **Edit**.</span></span>
-6. <span data-ttu-id="e2ad3-173">**ドラフトの実行** フィールドで、はいを選択します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-173">Select Yes in the **Run Draft** field.</span></span>
-7. <span data-ttu-id="e2ad3-174">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-174">Click **Save**.</span></span>
-8. <span data-ttu-id="e2ad3-175">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-175">Close the page.</span></span>
-9. <span data-ttu-id="e2ad3-176">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-176">Close the page.</span></span>
-10. <span data-ttu-id="e2ad3-177">**ナビゲーション ウィンドウ** で、**モジュール > 買掛金勘定 > 支払 > 支払仕訳** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-177">In the **Navigation pane**, go to **Modules > Accounts payable > Payments > Payment journal**.</span></span>
-11. <span data-ttu-id="e2ad3-178">**行** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-178">Click **Lines**.</span></span>
-12. <span data-ttu-id="e2ad3-179">一覧で、すべての行のマークを設定または解除します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-179">In the list, mark or unmark all rows.</span></span>
-13. <span data-ttu-id="e2ad3-180">**支払ステータス** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-180">Click **Payment status**.</span></span>
-14. <span data-ttu-id="e2ad3-181">**なし** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-181">Click **None**.</span></span>
-15. <span data-ttu-id="e2ad3-182">**支払の生成** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-182">Click **Generate payments**.</span></span>
-16. <span data-ttu-id="e2ad3-183">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-183">Click **OK**.</span></span>
-17. <span data-ttu-id="e2ad3-184">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-184">Click **OK**.</span></span> <span data-ttu-id="e2ad3-185">生成された出力を解析します。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-185">Analyze the generated output.</span></span> <span data-ttu-id="e2ad3-186">作成された出力が Word 形式で表示され、その出力に処理済みの支払の詳細が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e2ad3-186">Note that the created output is presented in Word format and contains the details of the processed payments.</span></span>  
+1. <span data-ttu-id="ad24f-127">Word デスクトップ アプリケーションで、先にダウンロードした **SampleVendPaymDocReport.docx** テンプレート ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-127">In the Word desktop application, open the **SampleVendPaymDocReport.docx** template file that you downloaded earlier.</span></span>
+2. <span data-ttu-id="ad24f-128">テンプレートに、ER 出力として生成するドキュメントのレイアウトのみが含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-128">Verify that the template contains only the layout of the document that you want to generate as ER output.</span></span>
 
+![デスクトップ アプリケーションの Word テンプレート レイアウト](../media/er-design-configuration-word-2016-11-image02.png)
+
+## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a><span data-ttu-id="ad24f-130">Excel テンプレートを Word テンプレートに置き換え、カスタム XML パーツを追加する</span><span class="sxs-lookup"><span data-stu-id="ad24f-130">Replace the Excel template with the Word template and add a custom XML part</span></span>
+
+<span data-ttu-id="ad24f-131">現在は、OPENXML 形式で出力を生成するテンプレートとして Excel ドキュメントが使用されます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-131">Currently, the Excel document is used as a template to generate the output in OPENXML format.</span></span> <span data-ttu-id="ad24f-132">このテンプレートを、以前ダウンロードした SampleVendPaymDocReport.docx Word テンプレート ファイルに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-132">You will replace this template with the SampleVendPaymDocReport.docx Word template file that you downloaded earlier.</span></span> <span data-ttu-id="ad24f-133">また、カスタム XML パーツを追加して、Word テンプレートを拡張します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-133">You will also extend the Word template by adding a custom XML part.</span></span>
+
+1. <span data-ttu-id="ad24f-134">Finance の **形式デザイナー** ページにある **形式** タブで、**添付ファイル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-134">In Finance, on the **Format designer** page, on the **Format** tab, select **Attachments**.</span></span>
+2. <span data-ttu-id="ad24f-135">**添付ファイル** ページで **削除** を選択して、既存の Excel テンプレートを削除します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-135">On the **Attachments** page, select **Delete** to remove the existing Excel template.</span></span> <span data-ttu-id="ad24f-136">**はい** を選択して、変更を確認します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-136">Select **Yes** to confirm the change.</span></span>
+3. <span data-ttu-id="ad24f-137">**新規** \> **ファイル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-137">Select **New** \> **File**.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="ad24f-138">ER パラメーターで [構成](../electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) されているドキュメント タイプを選択して、ER 形式テンプレートを保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad24f-138">You must select a document type that has been [configured](../electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) in the ER parameters to store templates of ER formats.</span></span>
+
+4. <span data-ttu-id="ad24f-139">**参照** を選択し、先にダウンロードした **SampleVendPaymDocReport.docx** ファイルを参照して選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-139">Select **Browse**, and then browse to and select the **SampleVendPaymDocReport.docx** file that you downloaded earlier.</span></span>
+5. <span data-ttu-id="ad24f-140">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-140">Select **OK**.</span></span>
+6. <span data-ttu-id="ad24f-141">**添付ファイル** ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-141">Close the **Attachments** page.</span></span>
+7. <span data-ttu-id="ad24f-142">**形式デザイナー** ページの **テンプレート** フィールドで、以前に使用した Excel テンプレートの代わりに、その Word テンプレートを使用する **SampleVendPaymDocReport.docx** ファイルを入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-142">On the **Format designer** page, in the **Template** field, enter or select the **SampleVendPaymDocReport.docx** file to use that Word template instead of the Excel template that was previously used.</span></span>
+8. <span data-ttu-id="ad24f-143">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-143">Select **Save**.</span></span>
+
+    <span data-ttu-id="ad24f-144">**保存** アクションは、構成の変更を保存することに加えて、添付された Word テンプレートを更新します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-144">In addition to storing configuration changes, the **Save** action updates the attached Word template.</span></span> <span data-ttu-id="ad24f-145">設計されたフォーマットの階層構造は、**レポート** という名前の新しいカスタム XML パーツとして、添付の Word ドキュメントに追加されます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-145">The hierarchical structure of the designed format is added to the attached Word document as a new custom XML part that is named **Report**.</span></span> <span data-ttu-id="ad24f-146">添付された Word テンプレートには、ER 出力として生成されるドキュメントのレイアウトと、実行時に ER がそのテンプレートに入力するデータの構造が含まれます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-146">The attached Word template contains the layout of the document that will be generated as ER output and the structure of data that ER will enter in that template at runtime.</span></span>
+
+9. <span data-ttu-id="ad24f-147">ルート形式要素のタイトルが、Word テンプレートが現在使用されていることを示していることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="ad24f-147">Notice that the title of the root format element indicates that a Word template is currently used.</span></span>
+
+    ![Excel テンプレートを Word テンプレートに置き換え、カスタム XML パーツを追加する](../media/er-design-configuration-word-2016-11-image03.gif)
+
+10. <span data-ttu-id="ad24f-149">**形式** タブで、**添付ファイル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-149">On the **Format** tab, select **Attachments**.</span></span>
+
+<span data-ttu-id="ad24f-150">**レポート** カスタム XML パーツの要素を Word ドキュメントのコンテンツ コントロールにマップできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="ad24f-150">You can now map the elements of the **Report** custom XML part to the content controls of the Word document.</span></span>
+
+<span data-ttu-id="ad24f-151">[カスタム XML パーツ](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) の要素にマップされた [コンテンツ コントロール](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) を含む形式として Word ドキュメントを設計するプロセスに精通している場合は、次の手順にあるすべてのステップを実行して、ドキュメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-151">If you're familiar with the process of designing Word documents as forms that contain [content controls](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) that are mapped to elements of [custom XML parts](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), complete all steps in the next procedure to create the document.</span></span> <span data-ttu-id="ad24f-152">詳細については、[ユーザーが入力または印刷するフォームを Word で作成](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad24f-152">For more information, see [Create forms that users complete or print in Words](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b).</span></span> <span data-ttu-id="ad24f-153">それ以外の場合、次の手順をスキップします。</span><span class="sxs-lookup"><span data-stu-id="ad24f-153">Otherwise, skip the next procedure.</span></span>
+
+## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a><span data-ttu-id="ad24f-154">カスタム XML パーツを含む Word ドキュメントの取得とデータ マッピングの実行</span><span class="sxs-lookup"><span data-stu-id="ad24f-154">Get a Word document that has a custom XML part and do data mapping</span></span>
+
+1. <span data-ttu-id="ad24f-155">Finance の **添付ファイル** ページで **開く** を選択し、Finance から選択したテンプレートをダウンロードして、ローカルで Word ドキュメントとして保存します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-155">In Finance, on the **Attachments** page, select **Open** to download the selected template from Finance and store it locally as a Word document.</span></span>
+3. <span data-ttu-id="ad24f-156">Word デスクトップ アプリケーションで、ダウンロードしたドキュメントを開きます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-156">In the Word desktop application, open the document that you just downloaded.</span></span>
+4. <span data-ttu-id="ad24f-157">**開発者** タブで、**XML マッピング ウィンドウ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-157">On the **Developer** tab, select **XML Mapping Pane**.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="ad24f-158">**開発者** タブがリボンに表示されない場合は、リボンをカスタマイズして追加します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-158">If the **Developer** tab doesn't appear on the ribbon, customize the ribbon to add it.</span></span>
+
+5. <span data-ttu-id="ad24f-159">**XML マッピング** ウィンドウの **カスタム XML パーツ** フィールドで、**レポート** カスタム XML パーツを選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-159">In the **XML Mapping** pane, in the **Custom XML Part** field, select the **Report** custom XML part.</span></span>
+6. <span data-ttu-id="ad24f-160">選択した **レポート** カスタム XML パーツの要素と Word ドキュメントのコンテンツ コントロールをマップします。</span><span class="sxs-lookup"><span data-stu-id="ad24f-160">Map the elements of the selected **Report** custom XML part and the content controls of the Word document.</span></span>
+7. <span data-ttu-id="ad24f-161">更新された Word ドキュメントを **SampleVendPaymDocReportBounded.docx** としてローカルに保存します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-161">Save the updated Word document locally as **SampleVendPaymDocReportBounded.docx**.</span></span>
+
+## <a name="review-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a><span data-ttu-id="ad24f-162">カスタム XML パーツがコンテンツ コントロールにマップされている Word テンプレートを確認</span><span class="sxs-lookup"><span data-stu-id="ad24f-162">Review the Word template where the custom XML part is mapped to content controls</span></span>
+
+1. <span data-ttu-id="ad24f-163">Word デスクトップ アプリケーションで、**SampleVendPaymDocReportBounded.docx** テンプレート ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-163">In the Word desktop application, open the **SampleVendPaymDocReportBounded.docx** template file.</span></span>
+2. <span data-ttu-id="ad24f-164">テンプレートに、ER 出力として生成するドキュメントのレイアウトが含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-164">Verify that the template contains the layout of the document that you want to generate as ER output.</span></span> <span data-ttu-id="ad24f-165">このテンプレートで実行時に ER が入力するデータのプレースホルダーとして使用されるコンテンツ コントロールは、**レポート** カスタム XML パーツの要素と Word ドキュメントのコンテンツ コントロールの間で構成されるマッピングに基づきます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-165">The content controls that are used as placeholders for data that ER will enter in this template at runtime are based on the mappings that are configured between elements of the **Report** custom XML part and the content controls of the Word document.</span></span>
+
+![デスクトップ アプリケーションの Word テンプレート プレビュー](../media/er-design-configuration-word-2016-11-image04.png)
+
+## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a><span data-ttu-id="ad24f-167">カスタム XML パーツがコンテンツ コントロールにマップされている Word テンプレートを更新</span><span class="sxs-lookup"><span data-stu-id="ad24f-167">Upload the Word template where the custom XML part is mapped to content controls</span></span>
+
+1. <span data-ttu-id="ad24f-168">Finance の **添付ファイル** ページで、**削除** を選択して、**レポート** カスタム XML パーツの要素とコンテンツ コントロールの間にマッピングがない Word テンプレート を削除します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-168">In Finance, on the **Attachments** page, select **Delete** to remove the Word template that has no mappings between elements of the **Report** custom XML part and content controls.</span></span> <span data-ttu-id="ad24f-169">**はい** を選択して、変更を確認します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-169">Select **Yes** to confirm the change.</span></span>
+2. <span data-ttu-id="ad24f-170">**新規** \> **ファイル** を選択し、**レポート** カスタム XML パーツの要素とコンテンツ コントロールの間のマッピングを含む新しいテンプレート ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-170">Select **New** \> **File** to add a new template file that contains mappings between elements of the **Report** custom XML part and content controls.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="ad24f-171">ER パラメーターで [構成](../electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) されているドキュメント タイプを選択して、ER 形式テンプレートを保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad24f-171">You must select a document type that has been [configured](../electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) in the ER parameters to store templates of ER formats.</span></span>
+
+3. <span data-ttu-id="ad24f-172">**参照** を選択し、[カスタム XML パーツを含む Word の取得とデータ マッピングの実行](#get-word-doc) セクションで手順を実行して、ダウンロードまたは準備した **SampleVendPaymDocReportBounded.docx** ファイルを参照して選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-172">Select **Browse**, and then browse to and select the **SampleVendPaymDocReportBounded.docx** file that you downloaded or prepared by completing the procedure in the [Get a Word that has a custom XML part to do data mapping](#get-word-doc) section.</span></span>
+4. <span data-ttu-id="ad24f-173">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-173">Select **OK**.</span></span>
+5. <span data-ttu-id="ad24f-174">**添付ファイル** ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-174">Close the **Attachments** page.</span></span>
+6. <span data-ttu-id="ad24f-175">**形式デザイナー** ページの **テンプレート** フィールドで、ダウンロードしたドキュメントを選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-175">On the **Format designer** page, in the **Template** field, select the document that you just downloaded.</span></span>
+7. <span data-ttu-id="ad24f-176">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-176">Select **Save**.</span></span>
+8. <span data-ttu-id="ad24f-177">**形式デザイナー** ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-177">Close the **Format designer** page.</span></span>
+
+## <a name="mark-the-configured-format-as-runnable"></a><span data-ttu-id="ad24f-178">構成された形式を実行可能としてマーク</span><span class="sxs-lookup"><span data-stu-id="ad24f-178">Mark the configured format as runnable</span></span>
+
+<span data-ttu-id="ad24f-179">編集可能な形式の下書きバージョンを実行するには、[実行可能](../er-quick-start2-customize-report.md#MarkFormatRunnable) にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad24f-179">To run the draft version of the editable format, you must make it [runnable](../er-quick-start2-customize-report.md#MarkFormatRunnable).</span></span>
+
+1. <span data-ttu-id="ad24f-180">Finance の **構成** ページにあるアクション ペインの **構成** タブの **詳細設定** グループで、**ユーザー パラメーター** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-180">In Finance, on the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.</span></span>
+2. <span data-ttu-id="ad24f-181">**ユーザー パラメーター** ダイアログ ボックスで、**実行設定** オプションを **はい** に設定し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-181">In the **User parameters** dialog box, set the **Run settings** option to **Yes**, and then select **OK**.</span></span>
+3. <span data-ttu-id="ad24f-182">**編集** を選択し、必要に応じて現在のページを編集可能にします。</span><span class="sxs-lookup"><span data-stu-id="ad24f-182">Select **Edit** to make the current page editable, as required.</span></span>
+4. <span data-ttu-id="ad24f-183">現在選択されている **サンプル ワークシート レポート** 構成について、**ドラフトの実行** オプションを **はい** に 設定します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-183">For the currently selected **Sample worksheet report** configuration, set the **Run Draft** option to **Yes**.</span></span>
+5. <span data-ttu-id="ad24f-184">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-184">Select **Save**.</span></span>
+
+## <a name="run-the-format-to-create-output-in-word-format"></a><span data-ttu-id="ad24f-185">Word 形式で出力を作成するための形式の実行</span><span class="sxs-lookup"><span data-stu-id="ad24f-185">Run the format to create output in Word format</span></span>
+
+1. <span data-ttu-id="ad24f-186">Finance で **買掛金勘定** \> **支払** \> **支払仕訳帳** に移動します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-186">In Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.</span></span>
+2. <span data-ttu-id="ad24f-187">先に入力した支払仕訳帳で、**明細行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-187">In a payment journal that you entered earlier, select **Lines**.</span></span>
+3. <span data-ttu-id="ad24f-188">**仕入先支払** ページ で、グリッド内のすべての行を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-188">On the **Vendor payments** page, select all rows in the grid.</span></span>
+4. <span data-ttu-id="ad24f-189">**支払ステータス** \> **なし** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-189">Select **Payment status** \> **None**.</span></span>
+
+    ![仕入先支払ページでの処理に対する支払](../media/er-design-configuration-word-2016-11-image05.png)
+
+5. <span data-ttu-id="ad24f-191">アクション ペインで **支払の生成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-191">On the Action Pane, select **Generate payments**.</span></span>
+6. <span data-ttu-id="ad24f-192">表示されるダイアログ ボックスで、次の手順に従います:</span><span class="sxs-lookup"><span data-stu-id="ad24f-192">In the dialog box that appears, follow these steps:</span></span>
+
+    1. <span data-ttu-id="ad24f-193">**支払方法** フィールドで、**電子** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-193">In the **Method of payment** field, select **Electronic**.</span></span>
+    2. <span data-ttu-id="ad24f-194">**銀行口座** フィールドで、 **GBSI OPER** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-194">In the **Bank account** field, select **GBSI OPER**.</span></span>
+    3. <span data-ttu-id="ad24f-195">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-195">Select **OK**.</span></span>
+
+7. <span data-ttu-id="ad24f-196">**電子レポート パラメーター** ダイアログ ボックスで、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-196">In the **Electronic report parameters** dialog box, select **OK**.</span></span>
+8. <span data-ttu-id="ad24f-197">作成された出力は、Word 形式で表示され、処理済みの支払の詳細が含まれます。</span><span class="sxs-lookup"><span data-stu-id="ad24f-197">The generated output is presented in Word format and contains the details of the processed payments.</span></span> <span data-ttu-id="ad24f-198">生成された出力を解析します。</span><span class="sxs-lookup"><span data-stu-id="ad24f-198">Analyze the generated output.</span></span>
+
+    ![Word 形式で生成された出力](../media/er-design-configuration-word-2016-11-image06.png)
+
+## <a name="additional-resources"></a><span data-ttu-id="ad24f-200">追加リソース</span><span class="sxs-lookup"><span data-stu-id="ad24f-200">Additional resources</span></span>
+
+- [<span data-ttu-id="ad24f-201">Word 形式でレポートを生成するための新しい ER 構成を設計する</span><span class="sxs-lookup"><span data-stu-id="ad24f-201">Design a new ER configuration to generate reports in Word format</span></span>](../er-design-configuration-word.md)
+- [<span data-ttu-id="ad24f-202">ER を使用して生成されるドキュメントへの画像や図形の埋め込み</span><span class="sxs-lookup"><span data-stu-id="ad24f-202">Embed images and shapes in documents that you generate by using ER</span></span>](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
