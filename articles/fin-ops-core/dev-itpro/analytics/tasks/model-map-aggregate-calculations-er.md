@@ -1,6 +1,6 @@
 ---
 title: データベース レベルでの集約計算に対するモデル マッピング コンフィギュレーションの使用
-description: この手順は、新しい電子申告 (ER) モデル マッピング コンフィギュレーションをデザインして、効率的な集計計算の組み込み ER 機能を使用する方法に関する情報を提供します。
+description: このトピックでは、新しい電子申告モデル マッピング構成を設計して、効率的な集計計算の組み込み ER 機能を使用する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1c4ddf0fac5ba962c3dab545bfa7e0df4afa948
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6a392697f6b91bc6555d0d72d09ecd7da32e1a3f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684118"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094268"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>データベース レベルでの集約計算に対するモデル マッピング コンフィギュレーションの使用
 
@@ -116,6 +116,3 @@ ms.locfileid: "4684118"
 68. [保存] をクリックします。
     * '実行場所' フィールドは、たとえ集約定義が無く、'テーブル レコード' タイプの選択されたデータ ソースが同じ 'イントラスタット' テーブルを参照しても、このグループ化はメモリーの実行時に実行されることを示します。 これは、そのデータ ソースがまだ SQL データベース レベルに翻訳できないいくつかの計算済フィールドを含むからです。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

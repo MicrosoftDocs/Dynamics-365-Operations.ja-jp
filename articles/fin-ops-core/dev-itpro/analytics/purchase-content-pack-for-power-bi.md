@@ -1,6 +1,6 @@
 ---
 title: 購買支出の分析 Power BI コンテンツ
-description: このトピックでは、購買支出の分析 Power BI コンテンツの内容について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
+description: このトピックでは、購買支出の分析 Power BI コンテンツの内容について説明します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/24/2019
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5914abaafab509e278d7a85441928feddb0b5164
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680617"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093445"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>購買支出の分析 Power BI コンテンツ
 
@@ -154,6 +154,3 @@ ms.locfileid: "4680617"
 | 日付                  | 日付、年度相殺                                    |
 
 既定では、コンテンツは、現在の暦年のデータが表示されます。 ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。 会社フィルターを変更することもできます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

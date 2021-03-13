@@ -1,6 +1,6 @@
 ---
 title: 財務諸表での列の定義
-description: この記事では、列定義に関する情報を示します。 列定義は、レポートの各列の内容を定義する、レポート コンポーネントまたは構成要素です。 行定義のように、基本的な列の定義は、複数のレポートに使用できます。
+description: この記事では、列定義に関する情報を示します。 列定義は、レポートの列の内容を定義する、レポート コンポーネントです。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687233"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093112"
 ---
 # <a name="column-definitions-in-financial-reports"></a>財務諸表での列の定義
 
@@ -226,7 +226,7 @@ ms.locfileid: "4687233"
 | [列の幅]        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | 印刷コントロール       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-ユーザーは、**列のヘッダー** セルをダブルクリックして、列のヘッダー ダイアログ ボックスを開き、次の情報を入力します。
+ユーザーは、列 B の 列ヘッダー セルをダブルクリックして、**列ヘッダー** ダイアログ ボックスを開き、以下の情報を入力します。
 
 | フィールド              | 先頭値                 |
 |--------------------|-----------------------|
@@ -236,7 +236,6 @@ ms.locfileid: "4687233"
 | 両端揃え      | 選択はなされません。 |
 | スプレッド開始        | B                     |
 | スプレッド終了          | BASE                  |
-| 予算ヘッダー      | 基準 +1 列を終了  |
 
 情報を入力した後、**OK** をクリックします。 続いて、ユーザーは、C 列の **列ヘッダー** セルをダブルクリックして列ヘッダーのダイアログ ボックスを開き、以下の情報を入力します。
 
@@ -244,10 +243,10 @@ ms.locfileid: "4687233"
 |--------------------|-----------------------|
 | 列のヘッダーテキスト | 予算                |
 | 自動テキストの挿入    | 選択はなされません。 |
-| 形式オプション     | フィールド                   |
+| 形式オプション     | ボックス                   |
 | 両端揃え      | 選択はなされません。 |
-| スプレッド開始        | 貸方                     |
-| スプレッド終了          | [基準 +2]                |
+| スプレッド開始        | [基準 +1]                |
+| スプレッド終了          | M                     |
 
 これで、このレポートが生成されるたびに、「実際」 という単語が実際のデータを含む列に印刷され、「予算」 という単語が予算予測を含む列に印刷されます。 また、列の数は毎月調整されます。
 
@@ -599,6 +598,3 @@ ms.locfileid: "4687233"
 [財務諸表デザイナーでの行の定義](row-definitions-financial-reporting.md)
 
 [財務諸表の高度な形式オプション](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

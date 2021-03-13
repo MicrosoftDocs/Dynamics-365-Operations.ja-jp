@@ -1,7 +1,7 @@
 ---
 title: 実績対予算 Power BI コンテンツ
-description: このトピックでは、実績対予算 Power BI コンテンツについて説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
-author: ryansandness
+description: このトピックでは、実績対予算 Power BI コンテンツについて説明します。 レポートへのアクセス方法およびデータ モデルに関する情報を提供します。
+author: panolte
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
@@ -12,15 +12,15 @@ ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a185da5055741ac30c7e237ef72d07084644651
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 908b96af5b3d67f265953648edd6aa7ec31556a4
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685276"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093851"
 ---
 # <a name="actual-vs-budget-power-bi-content"></a>実績対予算 Power BI コンテンツ
 
@@ -57,6 +57,3 @@ ms.locfileid: "4685276"
 | 元帳                   | 現在の元帳へのレポートをフィルター処理するために使用される元帳              |
 | 予算コード              | レポートをフィルター処理する予算コード                                                |
 | 法人            | 現在の法人へのレポートをフィルター処理するために使用される法人 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: ER プリンター送信先のタイプ
-description: このトピックでは、PDF または Microsoft Office 形式 (Excel\Word) で送信ドキュメントを生成するようにコンフィギュレーションされている電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対して、プリンター送信先をコンフィギュレーションする方法について説明します。
+description: このトピックでは、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対してプリンター出力先を構成する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 03/17/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679609"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094082"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>プリンター出力先
 
@@ -70,6 +70,3 @@ Microsoft Dynamics 365 Finance の現在のインスタンスで **プリンタ�
 
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

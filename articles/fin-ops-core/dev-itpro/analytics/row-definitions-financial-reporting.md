@@ -1,6 +1,6 @@
 ---
 title: 財務諸表デザイナーでの行の定義
-description: 行定義は、財務レポートの各行の内容を指定する、レポート コンポーネントまたは構成要素です。 行定義は、複数の会社が使用できる構成要素グループを作成するために、列定義、レポート ツリー定義およびレポートの定義と組み合わせることができます。
+description: 行定義は、財務レポートの各行の内容を指定する、レポート コンポーネントまたは構成要素です。
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 214a36a1284756e47aa1d28af99234657f1861c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 274fa4bd137407c504f74335291e4c8e7999625b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688286"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093268"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>財務諸表デザイナーでの行の定義
 
@@ -187,6 +187,3 @@ ms.locfileid: "4688286"
 ## <a name="additional-resources"></a>追加リソース
 
 [財務諸表](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

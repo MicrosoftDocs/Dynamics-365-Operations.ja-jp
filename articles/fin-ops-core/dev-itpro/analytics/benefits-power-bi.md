@@ -1,6 +1,6 @@
 ---
 title: 給付金 Power BI コンテンツ
-description: このトピックでは、給付金 Power BI コンテンツについて説明します。 含まれているレポートへのアクセス方法、およびコンテンツを作成するために使用したデータモデルとエンティティについて説明します。
+description: このトピックでは、給付金 Power BI コンテンツについて説明します。
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d0a5fe54bb4f5541f610f8ea76afa7813e3a599a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5a894ebfb79eab4888178c930b9e7d55cf735c91
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687259"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093084"
 ---
 # <a name="benefits-power-bi-content"></a>給付金 Power BI コンテンツ
 
@@ -69,6 +69,3 @@ ms.locfileid: "4687259"
 | 従業員名            | 名、姓、フルネーム                                                                       | 現在の従業員、退職済従業員、従業員のトレンド |
 | 従業員の肩書き           | 役職と勤続日数                                                                                   | 現在の従業員、退職済従業員、従業員のトレンド |
 | 従業員のトレンド           | 時間経過に伴う作業者、人員、会社、職位                                                        | 会社、報酬、地理的な場所、従業員名、レポート先、カレンダーのオフセット、日付、従業員の肩書き、従業員層、雇用、職務、福利厚生 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

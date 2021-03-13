@@ -1,6 +1,6 @@
 ---
 title: 画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションの確認
-description: これらのステップを完了するには、まず、「ER 画像を埋め込んだMS Office形式のレポートを作成する (パート 1 - パラメータの設定)」タスク ガイドに記載のステップを完了する必要があります。
+description: このトピックでは、埋め込み画像を含む電子ドキュメントを生成するためのレポート コンフィギュレーションを設計する方法について説明します。 (パート 1 - パラメータの設定)。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c41ff1ba99411b97ea2b5d9f31bdee7c7701315
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3eee6300350dd96c34f2eab44704d1895e6171ff
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684358"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093648"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションの確認
 
@@ -91,6 +91,3 @@ ms.locfileid: "4684358"
     * 印刷済みの小切手フォームに表示される一部のラベルは、テスト目的で作成する際にレポートに含まれます。 ただし、それらのラベルは、事前印刷のフォームに既に含まれているため、実際の印刷中には印刷されません。  
 15. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

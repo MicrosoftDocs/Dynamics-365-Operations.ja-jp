@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 7690f3bb17a56b9a16b6e818b675064b1979948e
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4413879"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097368"
 ---
 # <a name="verify-page-content-accessibility"></a>ページ コンテンツのアクセシビリティの検証
 
@@ -86,5 +85,4 @@ ms.locfileid: "4413879"
 
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[URL のパラメーターに基いて動的な電子商取引ページを作成する](create-dynamic-pages.md)

@@ -1,6 +1,6 @@
 ---
 title: 財務諸表デザイナーでのレポート定義
-description: この記事では、レポート定義に関する情報を示します。 レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。 レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。
+description: この記事では、レポート定義に関する情報を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 779548dc49be0a92456df791017045803f70bd86
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7d5531112cfb803912849af3af785b2a69a79f3d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683114"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093417"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>財務諸表デザイナーでのレポート定義
 
@@ -84,6 +84,3 @@ ms.locfileid: "4683114"
 ## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: ER データ モデル要素に作成された形式のコンポーネントのマップ (2016 年 11 月)
-description: 次の手順では、システム管理者ロールまたは電子申告開発者ロールのいずれかのユーザーが、支払いビジネス ドメインの電子ドキュメント書式を定義する電子レポート (ER) のコンポーネントにデータ モデルをマッピングする様子を示します。
+description: このトピックでは、作成された電子申告 (ER) コンフィギュレーションのコンポーネントにデータ モデル要素をマップする方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 109a6736196b6ed3d1445a9f1a70c5f2b9d5af58
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 043c66cf3345678aa7750ef50323700384579299
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684334"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093776"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER データ モデル要素に作成された形式のコンポーネントのマップ (2016 年 11 月)
 
@@ -113,6 +113,3 @@ ms.locfileid: "4684334"
 1. [ISO 国/地域コード] セクションを展開します。
     * 各書式へのアクセスは、書式が適用される特定の国/地域の ID によって制限することができます。 特定の書式の国/地域のリストが空の場合、この書式は任意の会社で使用することができます。 一部の ISO 国/地域コードがその国/地域のリストに挿入された場合、この書式は基本住所がその国/地域にある場合にのみ会社で使用することができます。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

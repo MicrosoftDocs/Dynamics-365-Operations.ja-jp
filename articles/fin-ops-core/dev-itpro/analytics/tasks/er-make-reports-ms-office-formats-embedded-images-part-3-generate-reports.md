@@ -1,6 +1,6 @@
 ---
 title: 画像が埋め込まれた Office 形式でのレポートの生成
-description: 次のステップでは、「システム管理者」または「電子申告開発者」ロールが付与されたユーザーが、電子申告（ER）の構成を設計し、埋め込み画像を含む MS Office 形式（Excel および Word）で電子ドキュメントを生成する方法を説明します。
+description: このトピックでは、電子申告 (ER) コンフィギュレーションを設計して、Excel と Word で埋め込み画像を含む電子ドキュメントを生成する方法を示します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7e15162251e5d6fa91c5a938fd846ef5b5c8cd7f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684382"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093826"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>画像が埋め込まれた Office 形式でのレポートの生成
 
@@ -119,6 +119,3 @@ ms.locfileid: "4684382"
 23. [OK] をクリックします。
     * 作成した出荷を確認します。 出力は、会社のロゴ、権限者の署名、選択した透かしのテキストを表示する埋め込み画像付きの Word ドキュメントとして生成されています。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

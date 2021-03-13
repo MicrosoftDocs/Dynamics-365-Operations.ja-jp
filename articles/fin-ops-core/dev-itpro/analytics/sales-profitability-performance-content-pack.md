@@ -1,6 +1,6 @@
 ---
 title: 販売と収益性のパフォーマンス Power BI コンテンツ
-description: このトピックでは、販売と収益性のパフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
+description: このトピックでは、販売と収益性のパフォーマンス Power BI コンテンツに何が含まれているのか説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b5ad461c86f44d880f57c940f6e3a5cb325f7e08
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7aafaa4c974f6b72e78f870eceb266fd0ef71900
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688238"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093566"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>販売と収益性のパフォーマンス Power BI コンテンツ
 
@@ -107,6 +107,3 @@ ms.locfileid: "4688238"
 | 日付            | 日付                                                |
 
 既定では、コンテンツは、現在の暦年のデータが表示されます。 ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。 会社フィルターを変更することもできます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

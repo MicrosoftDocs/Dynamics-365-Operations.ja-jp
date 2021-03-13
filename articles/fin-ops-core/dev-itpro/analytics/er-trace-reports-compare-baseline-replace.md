@@ -1,6 +1,6 @@
 ---
 title: 生成された ER レポートのトレース結果およびベースライン値との比較における改善
-description: このトピックでは、ER ベースライン機能が Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019 年 6 月) でどのように改善されたかについての情報を提供します。
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019年6月) における ER ベースライン機能の改善について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c00a5d9e2804f6ec0f6cb4c544029a1235ee58d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682850"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094007"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>生成された ER レポートのトレース結果およびベースライン値との比較における改善
 
@@ -59,7 +59,7 @@ ms.locfileid: "4682850"
 
 選択した **ER ベースラインを学習するための形式** 形式にベースラインが追加されましたが、このベースラインにはまだベースライン ルールが追加されていません。
 
-![電子申告形式のベースライン ページ](media/GER-BaselineSample-AddBaseline2.PNG "電子申告形式のベースライン ページのスクリーンショット")
+![電子申告形式のベースライン ページ、ルールは未設定](media/GER-BaselineSample-AddBaseline2.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
 ### <a name="make-a-new-baseline-rule"></a>新しいベースライン ルールの作成
 
@@ -72,7 +72,7 @@ ms.locfileid: "4682850"
 7. **OK** を選択します。
 8. **ベースライン** を選択します。
 
-    ![電子申告形式のベースライン ページ](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "電子申告形式のベースライン ページのスクリーンショット")
+    ![電子申告形式のベースライン ページ、選択したベースライン](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
     生成された送信ファイルは、実行された ER 形式のベースラインに自動的に関連付けられています。 ベースライン ルールは、このベースラインに自動的に追加され、関連付けられたファイルへの参照も含まれます。
 
@@ -130,7 +130,7 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 3. ベースラインの一覧で、**ER ベースラインを学習するための形式** 形式に対して構成されているベースラインを選択します。
 4. **ベースライン** クイックタブで、**削除** を選択して先ほど構成したベースライン ルールを削除します。
 
-![電子申告形式のベースライン ページ](media/GER-BaselineSample-AddBaseline3.PNG "電子申告形式のベースライン ページのスクリーンショット")
+![電子申告形式のベースライン ページ、削除済](media/GER-BaselineSample-AddBaseline3.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>デザインされたER形式のバインドの置換を定義する
 
@@ -138,7 +138,7 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 2. 形式のコンポーネント ツリーで、**出力** を展開して、**出力\\ドキュメント** を展開し、**出力\\ドキュメント\\ProcessingDateTime** のチェック ボックスを選択します。
 3. **OK** を選択します。
 
-![電子申告形式のベースライン ページ](media/GER-BaselineSample-AddBaseline4.PNG "電子申告形式のベースライン ページのスクリーンショット")
+![電子申告形式のベースライン ページ、コンポーネント](media/GER-BaselineSample-AddBaseline4.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
 選択した ER 形式のコンポーネントが、**置換** クイックタブのコンポーネントの一覧に追加されました。 基本 ER 形式をデバッグ モードで実行すると、各コンポーネントの形式のバインドは、**バインド** 列に表示されるバインドによって置き換えられます。 **置換** クイックタブに表示されているコンポーネントの既定のバインドを変更するには、**編集** を選択します。
 
@@ -207,6 +207,3 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 
 - [生成されたレポート結果を追跡し、ベースライン値と比較する](er-trace-reports-compare-baseline.md)
 - [タスク レコーダー リソース](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

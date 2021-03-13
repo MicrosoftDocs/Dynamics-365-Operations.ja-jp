@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.16 のプレビュー (2021 年 2 月)
+title: Dynamics 365 Supply Chain Management 10.0.16 の新機能および変更された機能 (2021 年 2 月)
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.16 の新機能または変更された機能について説明します。
 author: kamaybac
 manager: annbe
@@ -10,26 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 963979c9d24c275f77347ec5d682f318db18f915
-ms.sourcegitcommit: be4b9d557511bbb43e71a93f2c3b23b5f1a4669d
+ms.openlocfilehash: 1ffd98a94b9ed3201be3c4530b8fba7e2820c268
+ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4626805"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104992"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Management 10.0.16 のプレビュー (2021 年 2 月)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Management 10.0.16 の新機能および変更された機能 (2021 年 2 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、バージョン 10.0.16 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.689 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.16 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.689 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2020 年 11 月
 - **リリースの一般提供 (手動更新):** 2021 年 1 月
@@ -40,8 +38,11 @@ ms.locfileid: "4626805"
 このリリースでは次の機能が含まれています。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。 [リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
 
 - [カスタマイズ可能な作業現場の実行インターフェイス](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - 詳細については、[生産現場の実行インターフェースを実行するデバイスを設定する](../production-control/production-floor-execution-setup.md)を参照してください。
+
 - [Dynamics 365 Supply Chain Management の在庫の視覚化アドイン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - 詳細については、[在庫の視覚化アドイン](../inventory/inventory-visibility.md)を参照してください。
+
 - [元伝票明細行のライセンス プレートの検証](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - 詳細については、[倉庫のコンフィギュレーションの概要](../warehousing/warehouse-configuration.md)を参照してください。
+
 - [倉庫管理の出庫ワークロードのビジュアル化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - 詳細については、[出庫ワークロードの視覚化](../warehousing/outbound-workload-visualization.md)を参照してください。
 
 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
@@ -88,7 +89,7 @@ ms.locfileid: "4626805"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.16 (2020 年 10 月) のプラットフォーム アップデート](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.16 (2021 年 2 月) のプラットフォーム アップデート](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -110,6 +111,3 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.16 には、Platform updates
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

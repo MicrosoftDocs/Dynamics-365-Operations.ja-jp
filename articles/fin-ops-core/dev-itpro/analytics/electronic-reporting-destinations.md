@@ -1,9 +1,9 @@
 ---
 title: 電子申告 (ER) の送信先
-description: このトピックでは、電子申告 (ER) の送信先の管理、サポートされている宛先のタイプ、およびセキュリティ上の注意事項について説明します。
+description: このトピックでは、電子申告の送信先の管理、サポートされている送信先のタイプ、およびセキュリティ上の注意事項について説明します。
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687161"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097284"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -62,7 +62,7 @@ ER フォーマット構成の既定の動作は、ERフォーマットの開始
 **バッチ処理** オプションを **はい** に設定した場合 、ER フォーマットは [バッチ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) モードで実行されます。 **ERパラメータ** ダイアログボックスの **バックグラウンドで実行する** タブで、実行時に指定されたパラメータに基づいて、適切なバッチジョブが作成されます。
 
 > [!NOTE]
-> ER 形式マッピングの実行を通知する目的で、ジョブの記述が開始されます。 また、実行された ER コンポーネントの名前も含まれています。
+> ジョブ記述は、ER 形式マッピングの実行について通知します。 また、実行される ER コンポーネントの名前も含まれています。
 
 [![ER 形式の実行](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -96,7 +96,9 @@ ER フォーマット構成の既定の動作は、ERフォーマットの開始
 
 [![1 つの形式要素に対する複数の送信先のコンフィギュレーション](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
-## <a name="destination-types"></a>送信先タイプ
+ER 形式を実行すると、その形式のコンポーネントに対して構成されている送信先すべてが常に実行されます。 さらに、Finance **バージョン 10.0.17以降** では、ER の送信先機能が強化され、1 つの ER 形式に対してさまざまな送信先セットを構成できるようになりました。 このコンフィギュレーションは、各セットを特定のユーザー アクションに対してコンフィギュレーション済みとしてマークします。 ER API は [拡張](er-apis-app10-0-17.md) され、ER 形式を実行することでユーザーが実行するアクションを提供できるようになりました。 指定されたアクション コードは、ER の送信先に渡されます。 提供されているアクション コードに応じて、ER 形式のさまざまな出力先を実行できます。 詳細については、[アクション依存の ER 送信先を構成する](er-action-dependent-destinations.md) を参照してください。
+
+## <a name="destination-types"></a>行先タイプ
 
 ER 形式では、現在、次の送信先がサポートされています。 同時にすべてのタイプを有効または無効にできます。 この方法で、何もしないか、コンポーネントを構成済みのすべての送信先に送信します。
 
@@ -154,7 +156,7 @@ ER 形式のドラフト バージョンを使用するには、適宜 ER 形式
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a> 出力の PDF への変換
 
-PDF への変換オプションを使用して、Microsoft Office 形式の出力 (Excel/Word) を PDF 形式に変換することができます。
+PDF への変換オプションを使用して、Microsoft Office (Excel または Word) 形式の出力を PDF 形式に変換することができます。
 
 ### <a name="make-pdf-conversion-available"></a>PDF 変換を使用可能にする
 
@@ -164,21 +166,20 @@ PDF への変換オプションを使用して、Microsoft Office 形式の出�
 
 ### <a name="applicability"></a>適合性
 
-PDF への変換オプションは、Microsoft Office Excel または Word 形式 (**Excel ファイル**) で出力を生成するのに使用されるファイル コンポーネントに対してのみ有効にすることができます。 このオプションをオンにすると、Office 形式で生成された出力は自動的に PDF 形式に変換されます。
+PDF への変換オプションは、Office (Excel または Word) 形式 (**Excel ファイル**) で出力を生成するのに使用されるファイル コンポーネントに対してのみ有効にすることができます。 このオプションをオンにすると、Office 形式で生成された出力は自動的に PDF 形式に変換されます。
 
 ### <a name="limitations"></a>制限
 
 > [!NOTE]
 > この機能はプレビュー機能で、[Microsoft Dynamics 365 プレビューの追加使用条件](https://go.microsoft.com/fwlink/?linkid=2105274) で説明されている使用条件に従います。
 
-> [!NOTE]
-> PDF への変換オプションは、クラウド配置に対してのみ使用可能です。
->
-> 生成される PDF は最大 300 ページに制限されます。
->
-> Microsoft Dynamics 365 Finance バージョン 10.0.9（2020 年 4 月）では、Excel 出力から作成された PDF 文書には、横向きページのみがサポートされています。 Dynamics 365 Finance バージョン 10.0.10 のリリース（2020 年 5 月）では、ER 出力先を構成する際に、Excel 出力から生成される PDF 文書の[ページの向きを指定](#SelectPdfPageOrientation)することができます。
->
-> 埋め込みフォントがない出力の変換については、Windows オペレーティング システム共通のシステム フォントだけが使用されます。
+PDF への変換オプションは、クラウド展開に対してのみ使用可能です。
+
+生成される PDF ドキュメントは最大長 300 ページに制限されます。
+
+Finance **バージョン 10.0.9** では、Excel 出力から生成される PDF ドキュメントでは、横方向のみがサポートされます。 Finance **バージョン 10.0.10 (2020 年 5 月) 以降** では、ER 送信先を構成する際に、Excel 出力から生成される PDF ドキュメントの [印刷の向きを指定](#SelectPdfPageOrientation) することができます。
+
+埋め込みフォントを含まない出力の変換には、Windows オペレーティング システム共通のシステム フォントのみが使用されます。
 
 ### <a name="use-the-pdf-conversion-option"></a>PDF 変換オプションの使用
 
@@ -188,16 +189,16 @@ PDF への変換オプションは、Microsoft Office Excel または Word 形�
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">PDF 変換で使用するページの向きを選択する</a>
 
-ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、PDF のページの向きを指定できます。 ファイルの保存先の指定時にExcel フォーマットを指定し、 **PDF に変換する** チェック ボックスを選択して PDF 変換を有効化すると、**ページの向き** フィールドが **PDF conversion settings** ファストタブで利用可能になります。 **ページの方向** フィールドで、ページの向きを選択します。
+ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、PDF ドキュメントの印刷の向きを指定できます。 ファイルの保存先の指定時にExcel フォーマットを指定し、 **PDF に変換する** チェック ボックスを選択して PDF 変換を有効化すると、**ページの向き** フィールドが **PDF conversion settings** ファストタブで利用可能になります。 **ページの方向** フィールドで、ページの向きを選択します。
 
 [![PDF 変換の対象とするページの方向を選択する](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> PDF ページの方向を選択するオプションを使用するには、Microsoft Dynamics 365 Finance のバージョン 10.0.10（2020年5月）またはそれ以降のバージョンをインストールする必要があります。
+> PDF の印刷の向きを選択するオプションを使用するには、Finance バージョン 10.0.10 以降をインストールする必要があります。
 >
 > 選択したページの向きは、Excel 形式で生成され、PDF 形式に変換されたすべての ER の構成に適用されます。
 >
-> Word 形式の ER 構成を変換して PDF を作成した場合は、PDF のページの向きは Word 文書から取得されます。
+> Word 形式の ER 構成を PDF 形式に変換する場合、PDF ドキュメントの印刷の向きは、Word ドキュメントから取得されます。
 
 ## <a name="security-considerations"></a>セキュリティ上の注意事項
 
@@ -225,7 +226,7 @@ ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>出力先設定のファイルの出力先の目的は何ですか。 その設定では何をしますか。
 
-**ファイル** 出力先はダイアログ ボックスを制御するために使用します。 この出力先を有効にした場合、または構成に出力先が定義されていない場合は、出力ファイルが作成された後に保存または開くダイアログ ボックスが表示されます。
+**ファイル** の送信先は、対話モードで ER 形式を実行するときに Web ブラウザーのダイアログ ボックス を制御するために使用されます。 この送信先を有効にした場合、または構成に送信先が定義されていない場合は、出力ファイルが作成された後に開くまたは保存ダイアログ ボックスが Web ブラウザーに表示されます。
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>電子メールを送信できる仕入先に参照するフォーミュラの例をあげてください。
 
@@ -239,5 +240,4 @@ ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、
 
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[アクション依存の ER 送信先を構成する](er-action-dependent-destinations.md)

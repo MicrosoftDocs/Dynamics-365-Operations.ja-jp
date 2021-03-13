@@ -3,7 +3,7 @@ title: クライアンテリングの概要
 description: このトピックでは、店舗のアプリケーションで使用できる新しいクライアンテリングの機能の概要を提供します。
 author: bebeale
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 206031f5ddbaedb2b581a452fe8979252647f0c4
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413748"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097258"
 ---
 # <a name="clienteling-overview"></a>クライアンテリングの概要
 
@@ -37,7 +36,7 @@ ms.locfileid: "4413748"
 
 Microsoft Dynamics 365 Commerce では、小売業者はクライアント ブック機能を使用して、主な顧客との長期的な関係を築くよう店舗スタッフを支援することができます。
 
-クライアント ブックには、各顧客の連絡先情報を表示する顧客カードの他に、小売業者が定義し、Headquarters でコンフィギュレーションされている 3 つの追加プロパティが含まれます。 小売業者は、顧客について店員が知っておくべき最も重要な事項を 3 つ決定できます。 例えば、宝石の小売業者は、記念日や誕生日などを最も重要な日付に含めることでしょう。これらの日付に、人々がより多くの宝石を購入する可能性があるからです。 同様に、ファッション小売業者は、顧客が好むショッピングの興味やブランドを含めることができます。
+クライアントブックには、各顧客の連絡先情報を表わす顧客カードと、小売業者が定義し、本部で設定した3つのプロパティが含まれています。 小売業者は、顧客について店員が知っておくべき最も重要な事項を 3 つ決定できます。 例えば、宝石の小売業者は、記念日や誕生日などを最も重要な日付に含めることでしょう。これらの日付に、人々がより多くの宝石を購入する可能性があるからです。 同様に、ファッション小売業者は、顧客が好むショッピングの興味やブランドを含めることができます。
 
 またクライアント ブックでは、店員が一覧をフィルタ処理して、特定の条件を満たす顧客のみを表示することもできます。 たとえば、靴の新しいコレクションが店舗に到着し、店員が靴を購入したい顧客に通知したいとします。 この場合、店員はクライアント ブックをフィルター処理して関連する顧客を見つけ、更にアクションを起こすことができます。
 
@@ -106,24 +105,30 @@ Customer Insights と Commerce の統合を有効にするには、Commerce が�
 
 統合を設定するには、これらの手順に従います。
 
-1. Azure ポータルで、アプリケーションを登録します。 このアプリケーションは、Customer Insights での認証に使用されます。 手順については、[クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)を参照してください。
-2. アプリケーションにシークレットを生成します 後で必要になるので、シークレットをメモして、安全な場所に保管してください。 また、シークレットの有効期間を選択します。
+1. Azure ポータルで、新しいアプリケーションを登録し、アプリケーション名、アプリケーションID、シークレットをメモしておきます。 この情報は、Commerce と Customer Insights のサービス間の認証に使用されます。 シークレットは Key Vault で安全に保管する必要があることにご注意ください。 以下の例では、アプリケーション名、アプリケーションID、シークレットにそれぞれ CI_Access_name、CI_Access_AppID、CI_Access_Secret を使用しています。 詳細については、[クイックスタート : Microsoft ID プラットフォームにアプリケーションを登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) を参照してください。
 
     > [!IMPORTANT]
     > 期限が切れる前にシークレットを変更することを忘れないように、対策を講じてください。 そうでない場合、統合は予期せず停止します。
 
-3. Azure Key Vault を作成し、アプリケーションのシークレットを保存します。 手順については、[クイックスタート: Azure ポータルを使用して Azure Key Vault からシークレットを設定および取得する](https://docs.microsoft.com/azure/key-vault/quick-create-portal)を参照してください。
-4. Commerce から Azure Key Vault へのアクセスを有効にします。 この手順を完了するには、アプリケーション ID とシークレットが必要です。 アプリケーションは、手順 1 で作成したものと同じアプリケーションでも、新しいアプリケーションでも構いません。 (つまり、手順 1 で作成したアプリケーションを使用して、Key Vault アクセスと Customer Insights サービス アクセスの両方を使用することも、アクセスのタイプごとに固有のアプリケーションを作成することもできます。) 手順については、[Azure Stack Key Vault の店舗サービス プリンシパル クレデンシャル](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal)を参照してください。
-5. Headquarters で、**システム管理 \> 設定 \> Key Vault パラメーター** に移動し、Key Vault に必要な情報を入力します。 次に、**Key Vault クライアント** フィールドに手順 4 で使用したアプリケーション ID を入力して、Commerce が Key Vault でシークレットにアクセスできるようにします。
-6. ステップ 1 で作成したアプリケーションを安全なアプリケーション (セーフ リストとも呼ばれます) の一覧に追加するには、Customer Insights にアクセスして、アプリケーションへの **表示** アクセスを提供します。 手順については、[アクセス許可](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions)を参照してください。
-7. Commerce の **Commerce パラメーター** ページ、**クライアンテリング** タブ、**Dynamics 365 Customer Insights** クイック タブで、次の手順を実行します。
+2. Customer Insights インスタンスに移動し、上記で作成したアプリケーションの名前 (この例では "CI_Access_name) を検索します。
+3. Azure Key Vault を作成し、名前と URL をメモします (この例では、"KeyVaultName"、"KeyVault VAULT")。 手順については、[クイックスタート: Azure ポータルを使用して Azure Key Vault からシークレットを設定および取得する](https://docs.microsoft.com/azure/key-vault/quick-create-portal)を参照してください。
+4. KeyVault にシークレット (この例では "CI_Access_Secret) を保存します。 シークレット を KeyVault に保存すると、シークレットに名前が付けられます。 シークレットの名前をメモします (この例では 'SecretName')。
+5. Azure Key Vault からシステムにアクセスするには、アプリケーション ID とアプリケーションで構成された別のアプリケーションを作成する必要があります (この例では、"KeyVault_Access_AppID"、"KeyVault_Access_Secret")。 安全上の観点から、シークレットは再表示されません。
+6. API を使用して Commerce からキー コンテナーにアクセスするには、アプリケーションへのアクセス許可を付与する必要があります。 Azure portal のアプリケーション ページに移動します。 **管理** セクションで、 **API のアクセス許可** を選択します。 **Azure key vault** にアクセスするためのアクセス許可を追加します。 このアクセス許可については、**アクセス ポリシー** を選択します。 テンプレートに **シークレットの管理** を使用し、**取得**、**一覧**、**復号化**、**暗号化** オプションを選択します。 
+5. Commerce Headquarters で、**システム管理 \> 設定 \> Key Vault パラメーター** に移動し、Key Vault に必要な情報を入力します。 次に、**Key Vault クライアント** フィールドに手順 4 で使用したアプリケーション ID を入力して、Commerce が Key Vault でシークレットにアクセスできるようにします。
+6. ステップ 1 で作成したアプリケーションを安全なアプリケーション (セーフ リストとも呼ばれます) の一覧に追加するには、Customer Insights にアクセスして、アプリケーションへの **表示** アクセスを選択します。 手順については、[アクセス許可](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions)を参照してください。
+7. Commerce HQ の **システム管理 > 設定 >  Key Vault パラメーター** ページで、以下の説明に従ってフィールドを更新します。 
 
-    1. **アプリケーション ID** フィールドに、手順 1 で使用したアプリケーション ID を入力します。
-    2. **シークレット名** フィールドに、手順 5 で作成した Key Vault シークレットの名前を入力します。
-    3. **Customer Insights を有効化する** オプション **はい** に設定します。 何らかの理由で設定に失敗した場合は、エラー メッセージが表示され、このオプションは **いいえ** に設定されます。
-    4. テスト環境や実稼動環境など、Customer Insights で複数の環境を持つことができます。 **環境 インスタンス ID** フィールドに、適切な環境を入力します。
-    5. **代替顧客 ID** フィールドに、顧客 ID 番号にマップされている Customer Insights のプロパティを入力します。 (Commerce では、顧客 ID 番号は顧客 ID です。)
-    6. 残りの 3 つのプロパティは、クライアント ブックの顧客カードに表示される指標です。 顧客カードに表示する指標を 3 つまで選択することができます。 (ただし、必ず指標を選択する必要はありません。) 既述のように、システムはこれらの値を最初に表示し、次にクライアント ブック属性グループの値を表示します。
+- **Key Vault URL** : "KeyVaultURL" (上記の手順 3 から)。
+- **Key Vault クライアント** : "KeyVault_Access_AppID" (上記の手順 5 から)。
+- **Key Vault 秘密鍵** : "KeyVault_Access_Secret" (上記の手順 5 から)。
+- **シークレット** セクション:
+    - **名前** : 任意の名前 ("CISecret" など)。
+    - **説明** : 任意の値。
+    - **シークレット** : **vault**://<Name of key vault>/<name of secret>> この例では、"vault://KeyVaultName/SecretName" です。
 
+フィールドを更新した後、**検証** を選択して、Commerce アプリケーションからアクセス可能なことを確認してください。
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+8. **Commerce パラメータ** ページの Commerce で、**Dynamics 365 Customer Insights** クイックタブの **クライアント** タブで、**アプリケーション ID** を、"CI_Access_AppID" に設定します (上記の手順 1 から)。 **シークレット名** に、上記の手順 7 で入力したシークレット ("CISecret") を選択します。 **Customer Insights を有効化する** オプション **はい** に設定します。 何らかの理由で設定に失敗した場合は、エラー メッセージが表示され、このオプションは **いいえ** に設定されます。 
+
+テスト環境や実稼動環境など、Customer Insights で複数の環境を持つことができます。 **環境 インスタンス ID** フィールドに、適切な環境を入力します。 **代替顧客 ID** フィールドに、顧客 ID 番号にマップされている Customer Insights のプロパティを入力します。 (Commerce では、顧客アカウント番号が顧客 ID となります。) 残りの 3 つのプロパティは、クライアント ブックの顧客カードに表示されるメジャーです。 顧客カードに表示する指標を 3 つまで選択することができます。 ただし、メジャーを選択する必要はありません。 前述のように、これらの値が最初に表示された後、クライアント ブックの属性グループの値が示されます。

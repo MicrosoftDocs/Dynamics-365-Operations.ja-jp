@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcb8eda188a6796282a7a800b87a68dfef9d7d62
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413677"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097341"
 ---
 # <a name="enrich-a-product-page"></a>製品ページの拡充
 
@@ -72,7 +71,6 @@ ms.locfileid: "4413677"
 
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
 
-[ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)
+[ページ コンテンツのアクセシビリティの検証](verify-accessibility.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[URL のパラメーターに基いて動的な電子商取引ページを作成する](create-dynamic-pages.md)

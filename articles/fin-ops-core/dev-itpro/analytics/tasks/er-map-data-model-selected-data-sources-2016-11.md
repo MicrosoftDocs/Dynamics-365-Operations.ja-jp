@@ -1,6 +1,6 @@
 ---
 title: ER データ モデルを選択したデータ ソースにマップする
-description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) データ モデルを選択した Microsoft Dynamics 365 Finance データ ソースにマップする方法を説明します。
+description: このトピックでは、選択した Microsoft Dynamics 365 Finance データ ソースに電子申告 (ER) データ モデルをマップする方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2d09370b0e08897799d40c41c20c21b58e885dc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3e2ba94c9ec3ecc33f0c697d9f18f763749e4ba1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684310"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093751"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>ER データ モデルを選択したデータ ソースにマップする
 
@@ -146,6 +146,3 @@ ms.locfileid: "4684310"
 5. 現在のコンフィギュレーションの完了したバージョンを選択します。
     * 作成したコンフィギュレーションが完了したバージョン 1 として保存されることに注意してください。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

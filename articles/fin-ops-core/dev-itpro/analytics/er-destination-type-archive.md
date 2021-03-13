@@ -1,6 +1,6 @@
 ---
 title: ER アーカイブ送信先のタイプ
-description: このトピックでは、送信ドキュメントを生成するようにコンフィギュレーションされている電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対して、アーカイブ送信先をコンフィギュレーションする方法に関する情報を提供します。
+description: このトピックでは、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対してアーカイブ送信先を構成する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 11/30/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3dee7ec614ec1372feaa1150f5e4ebb14c32f60e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0067024d7a29e2a1db3b7fdba9ea3c6a63aad648
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094132"
 ---
 # <a name="archive-er-destination-type"></a>ER アーカイブ送信先のタイプ
 
@@ -57,6 +57,3 @@ ms.locfileid: "4679681"
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

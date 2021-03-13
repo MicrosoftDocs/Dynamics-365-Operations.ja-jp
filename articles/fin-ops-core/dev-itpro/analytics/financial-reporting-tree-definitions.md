@@ -1,6 +1,6 @@
 ---
 title: 財務諸表のレポート ツリー定義
-description: この記事では、レポート ツリー定義に関する情報を示します。 レポート ツリー定義は、組織の構造と階層の定義に役立つレポート コンポーネント、または構成要素です。
+description: この記事では、レポート ツリー定義について説明します。 レポート ツリー定義は、組織の構造を定義するレポート コンポーネントです。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/07/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 17f749863af3c37658935d5065cf053d0a165c1e
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682676"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093904"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>財務諸表のレポート ツリー定義
 
@@ -220,6 +220,3 @@ ms.locfileid: "4682676"
 ## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

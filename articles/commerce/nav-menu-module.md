@@ -3,14 +3,13 @@ title: ナビゲーション メニュー モジュール
 description: このトピックでは、ナビゲーション メニュー モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +17,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: 65f8b6128b140f3fa776659d8920dfc5e095213f
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4413889"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097393"
 ---
 # <a name="navigation-menu-module"></a>ナビゲーション メニュー モジュール
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、ナビゲーション メニュー モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 ナビゲーション メニュー モジュールの主な目的は、Dynamics 365 Commerce 本社で定義されているチャンネル ナビゲーション階層に従って、サイトのユーザーが商品やサイトのページを参照できるようにすることです。 ナビゲーション メニュー モジュールでコンフィギュレーションされた品目は、サイトのヘッダーのナビゲーションとして表示されます。 ナビゲーション メニュー モジュールは、電子商取引サイトの他のページにリンクする静的メニュー項目もサポートします。
 
@@ -46,7 +44,9 @@ ms.locfileid: "4413889"
 |---------------------------|-----------------------|-------------|
 | 配賦元                  | **Retail**、**手動による作成**、**Retail と手動作成** | **Retail** の値を使用すると、Commerce 本社のチャンネル ナビゲーション階層がナビゲーション メニューに表示されます。 **手動作成** の値によって、静的なメニュー項目を選別できます。 **Retail および手動作成** 値により、両方を組み合わせることができます。 |
 | カテゴリ イメージの表示 | **True** または **False**    | このプロパティを有効にすると、カテゴリごとのカテゴリ イメージがナビゲーション メニューに表示されます。 Commerce リリース 10.0.14 に追加されました。 |
-| 複数レベルのナビゲーション メニューの有効化 | **True** または **False** | このプロパティを有効にすると、ナビゲーション メニューに複数のレベルのナビゲーション階層を表示できます。 この機能は Dynamics 365 Commerce 10.0.15 リリースで使用できます。 |
+| プロモーションの表示 | **True** または **False** | このプロパティを有効にすると、画像、リンク、テキストを使用してプロモーションを構成できます。 このプロパティは、Commerce のバージョン 10.0.17 リリースで追加されました。 |
+| プロモーションの追加 | テキスト、画像、またはリンク | **プロモーションの表示** プロパティが有効になっている場合は、ナビゲーション メニューで、プロモーション コンテンツにテキスト、画像、リンクを追加できます。 |
+| 複数レベルのナビゲーション メニューの有効化 | **True** または **False** | このプロパティを有効にすると、ナビゲーション メニューに複数のレベルのナビゲーション階層を表示できます。 この機能は、Commerce のバージョン 10.0.15 リリースで利用できます。 |
 | レベルの数 | integer | このプロパティは、**複数レベルのナビゲーション メニューの有効化** プロパティが、**True** に設定されている場合に表示されるレベルの数を定義します。 |
 | 静的メニュー項目| 値の配列| メニュー項目名を静的サイトページへのリンクに関連付ける静的メニュー項目。 その他のメニュー項目以下にメニュー項目を作成できます。 既定では、静的メニューはルート レベルで表示され、存在する場合はチャンネル ナビゲーション階層に追加されます。 |
 | ルート メニューを表示 | **True** または **False** | このプロパティを有効にすると、ナビゲーション メニューをカスタム ルート (例えば **今すぐ購入**) で定義できます。 この機能は Dynamics 365 Commerce 10.0.15 リリースで使用できます。 |
@@ -72,6 +72,3 @@ ms.locfileid: "4413889"
 [Cookie のコンプライアンス](cookie-compliance.md)
 
 [ヘッダー モジュール](author-header-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

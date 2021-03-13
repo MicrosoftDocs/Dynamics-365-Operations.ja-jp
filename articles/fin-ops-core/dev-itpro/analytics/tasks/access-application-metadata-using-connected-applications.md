@@ -1,6 +1,6 @@
 ---
 title: 接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
-description: このトピックの手順では、Regulatory Configuration Service (RCS) のユーザーが Finance and Operations のメタデータを使用して、新しい電子申告 (ER) モデルのマッピングをデザインする方法について説明します。
+description: このトピックの手順では、Regulatory Configuration Service のユーザーが、メタデータを使用して、新しい電子申告モデル マッピングをデザインする方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/29/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 457d5760fb704b7a93ce16c081b7c5e6d0ff19c1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682144"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093333"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
 
@@ -113,6 +113,3 @@ ms.locfileid: "4682144"
 11. ページを閉じます。 
 
 異なるバージョンのアプリケーションのメタデータを使用してこのモデル マッピングを評価する必要がある場合は、接続されている別のアプリケーションを登録してこのモデル マッピングに割り当て、新しいメタデータに対してそれを検証します。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

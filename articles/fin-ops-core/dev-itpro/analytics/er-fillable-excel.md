@@ -1,6 +1,6 @@
 ---
-title: Excel 形式でドキュメントを生成する構成を設計する
-description: このトピックでは、Excel のテンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
+title: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
+description: このトピックでは、Excel テンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686541"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094032"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel 形式でドキュメントを生成する構成を設計する
 
@@ -189,6 +189,3 @@ Microsoft Excel ブック形式の送信ドキュメントが生成された場�
 [ER を使用して生成されるドキュメントへの画像や図形の埋め込み](electronic-reporting-embed-images-shapes.md)
 
 [Power BI にデータをプルするよう電子申告 (ER) を構成する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

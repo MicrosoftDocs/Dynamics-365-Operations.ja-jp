@@ -1,6 +1,6 @@
 ---
 title: 財務諸表デザイナーでのユーザーの基本設定
-description: この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。 個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。
+description: このトピックでは、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a7d7124da3d0e9596f364c17065c95610384a8ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 46a681b3a783b4f76946d2a972d73a11254ec56c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687380"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093190"
 ---
 # <a name="user-preferences-in-financial-report-designer"></a>財務諸表デザイナーでのユーザーの基本設定
 
@@ -72,6 +72,3 @@ ms.locfileid: "4687380"
 ## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

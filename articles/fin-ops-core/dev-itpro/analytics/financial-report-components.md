@@ -1,6 +1,6 @@
 ---
 title: 財務諸表コンポーネント
-description: この記事では、財務諸表でコンポーネント、またはレポート定義の構成要素ブロックを使用する方法について説明します。 これらの構成要素には、行定義、列定義、およびレポート ツリー定義が含まれます。 記事では、構成要素を整理およびロックする方法、および構成要素グループを操作する方法について説明します。
+description: この記事では、財務諸表でコンポーネント、またはレポート定義の構成要素ブロックを使用する方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d066ee69887f05c8fe14eebac1111c4db26ec628
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682724"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093979"
 ---
 # <a name="financial-report-components"></a>財務諸表コンポーネント
 
@@ -126,6 +126,3 @@ ms.locfileid: "4682724"
 ## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

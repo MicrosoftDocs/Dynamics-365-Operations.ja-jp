@@ -1,6 +1,6 @@
 ---
 title: 画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションのデザイン
-description: このトピックの手順は、Microsoft Office (Excel および Word) の埋め込み画像を含む電子ドキュメントを生成する、電子申告 (ER) コンフィギュレーションの設計方法に関する情報を提供します。
+description: このトピックでは、埋め込み画像を含む Excel と Word 形式で電子ドキュメントを生成するコンフィギュレーションをデザインする方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2018
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b60ed6b07851c44ceb4b8f313bc65f04b802e646
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684406"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093673"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションのデザイン
 
@@ -90,6 +90,3 @@ ms.locfileid: "4684406"
  30. [無効な銀行口座での事前通知の作成を許容] フィールドで [はい] を選択します。  
  31. [保存] をクリックします。  
  32. ページを閉じます。  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

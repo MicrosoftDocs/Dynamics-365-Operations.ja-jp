@@ -1,6 +1,6 @@
 ---
 title: RCS で使用するアプリケーション メタデータを準備する
-description: このトピックの手順では、Regulatory Configuration Service (RCS) の ER モデル マッピング コンフィギュレーションを設計するためのアプリケーションのメタデータを含む、新しい電子レポート (ER) コンフィギュレーションの作成方法について説明します。
+description: このトピックでは、アプリケーション メタデータを含む新しいレポート構成を作成する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/28/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbc1ca45a39f2a5c3309276f9e2f5d2b7d2ba5f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d5f55d089a88642cb2bda70274472ad0f0e45cd7
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684094"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094243"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>RCS で使用するアプリケーション メタデータを準備する
 [!include [banner](../../includes/banner.md)]
@@ -80,6 +80,3 @@ Intrastat のレコード テーブルに関するメタデータ情報を追加
 3.    **OK** をクリックします。 
     
 作成された ER メタデータ コンフィギュレーションは、RCS にインポートすることができ、対外取引ビジネス ドメインのメタデータに関する情報のソースとして使用することのできる XML ファイルとして保存されています。 この情報に基づいて、アプリケーション メタデータと ER データ モデルとの間のマッピングを指定することができます。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

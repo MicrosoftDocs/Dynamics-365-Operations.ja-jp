@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4445364"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104232"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure ストレージ アカウントとキー コンテナーの作成
 
 [!include [banner](../includes/banner.md)]
-
-
-
-電子請求のアドオン サービスでは、会社が所有している Microsoft Azure のリソースにすべての業務データを格納する必要があります。 サービスが正常に動作し、電子請求書アドオンで必要とされ生成されるすべてのビジネス データにアクセスできるようにするためには、2 つの主要な Azure リソースを作成する必要があります。
-
-- 電子請求書を格納するための Azure ストレージ アカウント (Blob ストレージ)
-- 証明書とストレージアカウントの一意リソース識別子 (URI) を格納するためのAzure key vault
-
-> [!NOTE]
-> 電子請求書作成アドオンで使用するには、専用のキー コンテナーのリソースと顧客の Blob ストレージを特別に割り当てる必要があります。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -91,6 +80,3 @@ ms.locfileid: "4445364"
 9. **プリンシパル** ダイアログ ボックスで、**電子請求のアドオン** を追加してプリンシパルを選択し ます。
 10. **追加** を選択し、**キー コンテナーの変更を保存する** を選択します。
 11. **概要** ページで、 キー コンテナーの **DNS 名** の値をコピーして保存します。 この値は、RCS におけるサービスの設定時に使用され、*キー コンテナーの URI* として参照されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

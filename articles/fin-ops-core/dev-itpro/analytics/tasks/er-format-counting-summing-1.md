@@ -1,6 +1,6 @@
 ---
 title: ER 棚卸および集計を行うための形式のコンフィギュレーション (第 1 部 - 形式の作成)
-description: 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。
+description: このトピックでは、既に生成されたテキスト出力のデータに基づいて棚卸および集計を行うために電子レポート形式を構成する方法について説明します。 (第 1 部)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1742582057cc912d8e6f90eb14e9e4cdcd193608
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7a3639b5ac28f8a571642e983906d658dabf05b1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684718"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093025"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-1---create-format"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (第 1 部 - 形式の作成)
 
@@ -56,6 +56,3 @@ ms.locfileid: "4684718"
 8. ツリーで、「Intrastat model」を展開します。
 9. ツリーで、「イントラスタットmodel\Intrastat (DE)を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

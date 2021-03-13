@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services からのコンフィギュレーションのインポート
-description: このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、新しいバージョンの電子申告 (ER) コンフィギュレーションを Microsoft Dynamics Lifecycle Services (LCS) からインポートする方法について説明します。
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) コンフィギュレーションの新しいバージョンをインポートする方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 602886b0dd729b8ec52940f42bd1c393dac8acda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684454"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093698"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Lifecycle Services からのコンフィギュレーションのインポート
 
@@ -103,6 +103,3 @@ ms.locfileid: "4684454"
     この例では、状態が **共有** となっているコンフィギュレーションのバージョンを選択します。
 
     選択したデータ モデル コンフィギュレーションの共有バージョン 1 も使用できるようになりました。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

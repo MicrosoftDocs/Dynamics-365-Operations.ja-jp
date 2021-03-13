@@ -1,6 +1,6 @@
 ---
 title: 電子申告の生成および ER によるアプリケーション データの更新
-description: 送信する電子ドキュメントを生成するために、アプリケーションで使用できる電子申告 (ER) 形式をデザインできます。 受信した電子ドキュメントを解析し、これらのドキュメントの内容を使用してアプリケーション データの更新を行う ER 形式をデザインすることもできます。
+description: 送信する電子ドキュメントを生成するために、アプリケーションで使用できる電子申告 (ER) 形式をデザインできます。
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b9e17d67c437d384ab941d28b8d5ce2b0e3738f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ae3405a882ac37fd9758d8ff0902896562fa06b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688391"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093876"
 ---
-# <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>電子申告の生成および ER によるアプリケーション データの更新
+# <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>ER を使用して電子ドキュメントを生成し、アプリケーション データを更新する
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,6 +40,3 @@ ms.locfileid: "4688391"
 - [ER データ モデル コンフィギュレーション: イントラスタット (モデル)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER モデル マッピング コンフィギュレーション: イントラスタット (マッピング)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER 形式コンフィギュレーション: イントラスタット (形式)](https://go.microsoft.com/fwlink/?linkid=849038)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

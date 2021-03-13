@@ -3,7 +3,7 @@ title: 電子請求書アドオン機能の概要
 description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management で電子請求のアドオンを設定する方法について説明します。
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4445363"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104211"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>電子請求書アドオン機能の概要
 
@@ -45,9 +44,9 @@ Microsoft Dynamics 365 Finance および、Dynamics 365 Supply Chain Management 
 
 電子請求書のアドオンを使用するには、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトからインストールする必要があります。 次に、セットアップ手順に従って、財務または Supply Chain Management との統合を有効化します。 詳細情報については、[電子請求書アドオンの使用を開始する](e-invoicing-get-started.md)を参照してください。
 
-## <a name="availability"></a>適用の対象
+## <a name="service-availability"></a><a name="availability"></a>サービスの可用性
 
-初期段階において、電子請求書作成のアドオンは、プレビュー プログラムを介して選ばれた顧客が利用できます。 後日、より多くの顧客にプレビューを公開する予定です。 最終的には、サービスが一般的に利用可能となります。 国/地域固有の要件に対応する機能は、リリースの段階によっては制限がされる場合があるため、サポートされている国/地域固有となるソリューションの範囲および、範囲を示す最新のドキュメントを常に確認する必要があります。
+現在、電子請求書アドオンはプレビュー プログラムご利用のお客様が利用いただけますが、次のフェーズでは一般のお客様にもご利用いただけるようになる予定です。 国/地域固有の要件に対応する機能は、リリースの段階によっては制限がされる場合があるため、サポートされている国/地域固有となるソリューションの範囲および、範囲を示す最新のドキュメントを常に確認する必要があります。
 
 電子請求のアドオンは、次の Azure の地域で展開されます :
 
@@ -76,7 +75,7 @@ Microsoft Dynamics 365 Finance および、Dynamics 365 Supply Chain Management 
     - 複数の国に対する追加コンテンツとの、組み込みの簡単で拡張性のある、構成可能な統合
 
     > [!NOTE]
-    > 現時点では、対応している直接送信は限られています。 詳細については、前述の [可用性](#availability) セクションを参照してください。 対応範囲はは今後拡張する予定です。
+    > 現時点では、対応している直接送信は限られています。 詳細については、前述の [サービスの可用性](#availability) セクションを参照してください。 対応範囲はは今後拡張する予定です。
 
 - 構成可能な例外メッセージ処理を含む、Web サービスからのレスポンスの処理
 - 電子署名への対応 (XMLDSig 署名アルゴリズムの使用など)
@@ -104,15 +103,9 @@ LCS から電子請求書アドオンをインストールし、必要となる�
 ![電子請求書アドオン設定のデータ フロー](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>プライバシー通知
-電子請求書を有効化して使用するには、税務登録 ID を含む一部のデータの送信が必要となる場合があります。 これは、政府の web サービスとの統合に必要となる事前定義された形式で電子請求書を送信する目的で、税務当局によって認可された第三者機関に送信されます。 これらの外部システムから Dynamics 365 のオンライン サービスにインポートされたデータは、当社の [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=512132) の対象となります。 詳細については、各国固有の機能説明書のプライバシーに関する注意事項を参照してください。
+電子請求書のアドオンを有効化して使用するには、税務登録 ID を含む一部のデータの送信が必要となる場合があります。 これは、政府の web サービスとの統合に必要となる事前定義された形式で電子請求書を送信する目的で、税務当局によって認可された第三者機関に送信されます。 これらの外部システムから Dynamics 365 のオンライン サービスにインポートされたデータは、当社の [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=512132) の対象となります。 詳細については、各国固有の機能説明書のプライバシーに関する注意事項を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
-
-- [電子請求書のアドオンの使用を開始する](e-invoicing-get-started.md)
-- [ブラジル向け電子請求のアドオンの使用を開始する](e-invoicing-bra-get-started.md)
-- [メキシコ向け電子請求のアドオンの使用を開始する](e-invoicing-mex-get-started.md)
-- [イタリア向け電子請求書のアドオンの使用を開始する](e-invoicing-ita-get-started.md)
-- [電子請求のアドオン設定](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [サービス管理](e-invoicing-service-administration.md)
+- [RCS で電子請求書を構成する](e-invoicing-configuration-rcs.md)
+- [Finance および Supply Chain Management で電子請求書を発行する](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
