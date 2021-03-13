@@ -1,6 +1,6 @@
 ---
 title: 購買支出の分析 Power BI コンテンツ
-description: このトピックでは、購買支出の分析 Power BI コンテンツの内容について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
+description: このトピックでは、購買支出の分析 Power BI コンテンツの内容について説明します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/24/2019
@@ -17,141 +17,141 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5914abaafab509e278d7a85441928feddb0b5164
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680617"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093445"
 ---
-# <a name="purchase-spend-analysis-power-bi-content"></a><span data-ttu-id="2689d-104">購買支出の分析 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="2689d-104">Purchase spend analysis Power BI content</span></span>
+# <a name="purchase-spend-analysis-power-bi-content"></a><span data-ttu-id="a385f-103">購買支出の分析 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="a385f-103">Purchase spend analysis Power BI content</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2689d-105">このトピックでは、**購買支出の分析** Microsoft Power BI コンテンツの内容について説明します。</span><span class="sxs-lookup"><span data-stu-id="2689d-105">This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content.</span></span> <span data-ttu-id="2689d-106">Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="2689d-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
+<span data-ttu-id="a385f-104">このトピックでは、**購買支出の分析** Microsoft Power BI コンテンツの内容について説明します。</span><span class="sxs-lookup"><span data-stu-id="a385f-104">This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content.</span></span> <span data-ttu-id="a385f-105">Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="a385f-105">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="2689d-107">概要</span><span class="sxs-lookup"><span data-stu-id="2689d-107">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="a385f-106">概要</span><span class="sxs-lookup"><span data-stu-id="a385f-106">Overview</span></span>
 
-<span data-ttu-id="2689d-108">**購買支出の分析** Power BI コンテンツは、予算を担当する購買部門のマネージャーおよびマネージャーが購買支出を追跡できるように設計されています。</span><span class="sxs-lookup"><span data-stu-id="2689d-108">The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep track of purchase spending.</span></span> <span data-ttu-id="2689d-109">マネージャーは、以下の方法で購買支出を分析できます:</span><span class="sxs-lookup"><span data-stu-id="2689d-109">Managers can analyze purchase spending in the following ways:</span></span>
+<span data-ttu-id="a385f-107">**購買支出の分析** Power BI コンテンツは、予算を担当する購買部門のマネージャーおよびマネージャーが購買支出を追跡できるように設計されています。</span><span class="sxs-lookup"><span data-stu-id="a385f-107">The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep track of purchase spending.</span></span> <span data-ttu-id="a385f-108">マネージャーは、以下の方法で購買支出を分析できます:</span><span class="sxs-lookup"><span data-stu-id="a385f-108">Managers can analyze purchase spending in the following ways:</span></span>
 
-- <span data-ttu-id="2689d-110">会計年度の購買 (仕入先グループと個々の仕入先、調達カテゴリと個々の製品、仕入先の場所)</span><span class="sxs-lookup"><span data-stu-id="2689d-110">Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)</span></span>
-- <span data-ttu-id="2689d-111">前年比購買の変化 (仕入先グループと調達カテゴリ)</span><span class="sxs-lookup"><span data-stu-id="2689d-111">Year-over-year purchase change (by vendor group and procurement category)</span></span>
+- <span data-ttu-id="a385f-109">会計年度の購買 (仕入先グループと個々の仕入先、調達カテゴリと個々の製品、仕入先の場所)</span><span class="sxs-lookup"><span data-stu-id="a385f-109">Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)</span></span>
+- <span data-ttu-id="a385f-110">前年比購買の変化 (仕入先グループと調達カテゴリ)</span><span class="sxs-lookup"><span data-stu-id="a385f-110">Year-over-year purchase change (by vendor group and procurement category)</span></span>
 
-<span data-ttu-id="2689d-112">コンテンツは購買トランザクション データを使用して、会社全体の購買数の集計ビュー、仕入先および製品の購買先支出の内訳の両方を提供します。</span><span class="sxs-lookup"><span data-stu-id="2689d-112">The content uses purchase transactional data, and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product.</span></span> <span data-ttu-id="2689d-113">レポートでは時間経過に伴う購買支出の変化が強調表示されています。</span><span class="sxs-lookup"><span data-stu-id="2689d-113">Reports highlight changes in purchase spending over time.</span></span> <span data-ttu-id="2689d-114">そのため、このレポートは、個々の仕入先や製品の積極的および消極的な支出動向を管理者に警告するために使用することができます。</span><span class="sxs-lookup"><span data-stu-id="2689d-114">Therefore, the reports can be used to alert managers about positive and negative spending trends for individual vendors and products.</span></span> <span data-ttu-id="2689d-115">また、チャートは、様々な調達カテゴリおよび仕入先グループの購買支出を示します。</span><span class="sxs-lookup"><span data-stu-id="2689d-115">Additionally, charts show purchase spending for different procurement categories and vendor groups.</span></span> <span data-ttu-id="2689d-116">それゆえ、カテゴリおよび地域マネージャーは、チャートを使用して支出行動の変化を識別することができます。</span><span class="sxs-lookup"><span data-stu-id="2689d-116">Therefore, category and regional managers can use the charts to help identify changes in spending behavior.</span></span>
+<span data-ttu-id="a385f-111">コンテンツは購買トランザクション データを使用して、会社全体の購買数の集計ビュー、仕入先および製品の購買先支出の内訳の両方を提供します。</span><span class="sxs-lookup"><span data-stu-id="a385f-111">The content uses purchase transactional data, and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product.</span></span> <span data-ttu-id="a385f-112">レポートでは時間経過に伴う購買支出の変化が強調表示されています。</span><span class="sxs-lookup"><span data-stu-id="a385f-112">Reports highlight changes in purchase spending over time.</span></span> <span data-ttu-id="a385f-113">そのため、このレポートは、個々の仕入先や製品の積極的および消極的な支出動向を管理者に警告するために使用することができます。</span><span class="sxs-lookup"><span data-stu-id="a385f-113">Therefore, the reports can be used to alert managers about positive and negative spending trends for individual vendors and products.</span></span> <span data-ttu-id="a385f-114">また、チャートは、様々な調達カテゴリおよび仕入先グループの購買支出を示します。</span><span class="sxs-lookup"><span data-stu-id="a385f-114">Additionally, charts show purchase spending for different procurement categories and vendor groups.</span></span> <span data-ttu-id="a385f-115">それゆえ、カテゴリおよび地域マネージャーは、チャートを使用して支出行動の変化を識別することができます。</span><span class="sxs-lookup"><span data-stu-id="a385f-115">Therefore, category and regional managers can use the charts to help identify changes in spending behavior.</span></span>
 
-## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="2689d-117">Power BI コンテンツへのアクセス</span><span class="sxs-lookup"><span data-stu-id="2689d-117">Accessing the Power BI content</span></span>
-<span data-ttu-id="2689d-118">**購買支出の分析** Power BI コンテンツは **購買支出の分析** ページ (**調達** \> **照会およびレポート** \> **購買パフォーマンスの分析** \> **購買支出の分析**) に表示されます。</span><span class="sxs-lookup"><span data-stu-id="2689d-118">The **Purchase spend analysis** Power BI content is shown on the **Purchase and spend analysis** page (**Procurement and sourcing** \> **Inquiries and reports** \> **Purchase performance analysis** \> **Purchase and spend analysis**).</span></span>
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="a385f-116">Power BI コンテンツへのアクセス</span><span class="sxs-lookup"><span data-stu-id="a385f-116">Accessing the Power BI content</span></span>
+<span data-ttu-id="a385f-117">**購買支出の分析** Power BI コンテンツは **購買支出の分析** ページ (**調達** \> **照会およびレポート** \> **購買パフォーマンスの分析** \> **購買支出の分析**) に表示されます。</span><span class="sxs-lookup"><span data-stu-id="a385f-117">The **Purchase spend analysis** Power BI content is shown on the **Purchase and spend analysis** page (**Procurement and sourcing** \> **Inquiries and reports** \> **Purchase performance analysis** \> **Purchase and spend analysis**).</span></span>
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="2689d-119">Power BI コンテンツに含まれるメトリックス</span><span class="sxs-lookup"><span data-stu-id="2689d-119">Metrics that are included in the Power BI content</span></span>
-<span data-ttu-id="2689d-120">**購買支出の分析** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。</span><span class="sxs-lookup"><span data-stu-id="2689d-120">The **Purchase spend analysis** Power BI content includes a report that consists of a set of metrics.</span></span> <span data-ttu-id="2689d-121">これらのメトリックスはグラフ、タイル、表として視覚化されます。</span><span class="sxs-lookup"><span data-stu-id="2689d-121">These metrics are visualized as charts, tiles, and tables.</span></span> 
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="a385f-118">Power BI コンテンツに含まれるメトリックス</span><span class="sxs-lookup"><span data-stu-id="a385f-118">Metrics that are included in the Power BI content</span></span>
+<span data-ttu-id="a385f-119">**購買支出の分析** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。</span><span class="sxs-lookup"><span data-stu-id="a385f-119">The **Purchase spend analysis** Power BI content includes a report that consists of a set of metrics.</span></span> <span data-ttu-id="a385f-120">これらのメトリックスはグラフ、タイル、表として視覚化されます。</span><span class="sxs-lookup"><span data-stu-id="a385f-120">These metrics are visualized as charts, tiles, and tables.</span></span> 
 
-<span data-ttu-id="2689d-122">次の表は、視覚化の概要を示しています。</span><span class="sxs-lookup"><span data-stu-id="2689d-122">The following sections provide an overview of the visualizations.</span></span>
+<span data-ttu-id="a385f-121">次の表は、視覚化の概要を示しています。</span><span class="sxs-lookup"><span data-stu-id="a385f-121">The following sections provide an overview of the visualizations.</span></span>
 
-### <a name="purchase-by-vendor-report-page"></a><span data-ttu-id="2689d-123">仕入先別購入レポートページ</span><span class="sxs-lookup"><span data-stu-id="2689d-123">Purchase by vendor report page</span></span>
-<span data-ttu-id="2689d-124">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="2689d-124">**Charts**</span></span>
-- <span data-ttu-id="2689d-125">購買別トップ 10 の仕入先 (積み上げ棒グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-125">Top 10 vendors by purchase (stacked bar chart)</span></span>
-- <span data-ttu-id="2689d-126">仕入先グループ、国、名前別購買合計 (円グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-126">Total purchase by vendor group / country / name (pie chart)</span></span>
-- <span data-ttu-id="2689d-127">仕入先グループ、国、名前別購買 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-127">Purchase by vendor group / country / name (column chart)</span></span>
-- <span data-ttu-id="2689d-128">仕入先グループ、国、名前別平均購買 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-128">Average purchase by vendor group / country / name (column chart)</span></span>
+### <a name="purchase-by-vendor-report-page"></a><span data-ttu-id="a385f-122">仕入先別購入レポートページ</span><span class="sxs-lookup"><span data-stu-id="a385f-122">Purchase by vendor report page</span></span>
+<span data-ttu-id="a385f-123">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="a385f-123">**Charts**</span></span>
+- <span data-ttu-id="a385f-124">購買別トップ 10 の仕入先 (積み上げ棒グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-124">Top 10 vendors by purchase (stacked bar chart)</span></span>
+- <span data-ttu-id="a385f-125">仕入先グループ、国、名前別購買合計 (円グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-125">Total purchase by vendor group / country / name (pie chart)</span></span>
+- <span data-ttu-id="a385f-126">仕入先グループ、国、名前別購買 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-126">Purchase by vendor group / country / name (column chart)</span></span>
+- <span data-ttu-id="a385f-127">仕入先グループ、国、名前別平均購買 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-127">Average purchase by vendor group / country / name (column chart)</span></span>
 
-<span data-ttu-id="2689d-129">**タイル**</span><span class="sxs-lookup"><span data-stu-id="2689d-129">**Tiles**</span></span>
-- <span data-ttu-id="2689d-130">購買の合計</span><span class="sxs-lookup"><span data-stu-id="2689d-130">Total purchase</span></span>
-- <span data-ttu-id="2689d-131">前年比購買成長</span><span class="sxs-lookup"><span data-stu-id="2689d-131">YOY purchase growth</span></span>
-- <span data-ttu-id="2689d-132">合計仕入先数</span><span class="sxs-lookup"><span data-stu-id="2689d-132">Total # vendors</span></span>
-- <span data-ttu-id="2689d-133">有効な仕入先合計数</span><span class="sxs-lookup"><span data-stu-id="2689d-133">Total # of active vendors</span></span>
+<span data-ttu-id="a385f-128">**タイル**</span><span class="sxs-lookup"><span data-stu-id="a385f-128">**Tiles**</span></span>
+- <span data-ttu-id="a385f-129">購買の合計</span><span class="sxs-lookup"><span data-stu-id="a385f-129">Total purchase</span></span>
+- <span data-ttu-id="a385f-130">前年比購買成長</span><span class="sxs-lookup"><span data-stu-id="a385f-130">YOY purchase growth</span></span>
+- <span data-ttu-id="a385f-131">合計仕入先数</span><span class="sxs-lookup"><span data-stu-id="a385f-131">Total # vendors</span></span>
+- <span data-ttu-id="a385f-132">有効な仕入先合計数</span><span class="sxs-lookup"><span data-stu-id="a385f-132">Total # of active vendors</span></span>
 
-<span data-ttu-id="2689d-134">**例**</span><span class="sxs-lookup"><span data-stu-id="2689d-134">**Example**</span></span>
+<span data-ttu-id="a385f-133">**例**</span><span class="sxs-lookup"><span data-stu-id="a385f-133">**Example**</span></span>
 <img src="media/spend1.png" alt="Purchase by vendor">
 
-### <a name="purchase-by-product-report-page"></a><span data-ttu-id="2689d-135">製品別購買レポートページ</span><span class="sxs-lookup"><span data-stu-id="2689d-135">Purchase by product report page</span></span>
+### <a name="purchase-by-product-report-page"></a><span data-ttu-id="a385f-134">製品別購買レポートページ</span><span class="sxs-lookup"><span data-stu-id="a385f-134">Purchase by product report page</span></span>
 
-<span data-ttu-id="2689d-136">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="2689d-136">**Charts**</span></span>
-- <span data-ttu-id="2689d-137">調達カテゴリまたは製品名別購買 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-137">Purchase by procurement category / product name (column chart)</span></span>
-- <span data-ttu-id="2689d-138">調達カテゴリまたは製品名 (円グラフ) 別購買合計</span><span class="sxs-lookup"><span data-stu-id="2689d-138">Total purchase by procurement category / product name (pie chart)</span></span>
-- <span data-ttu-id="2689d-139">購買別トップ 10 製品 (積み上げ棒グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-139">Top 10 products by purchase (stacked bar chart)</span></span>
+<span data-ttu-id="a385f-135">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="a385f-135">**Charts**</span></span>
+- <span data-ttu-id="a385f-136">調達カテゴリまたは製品名別購買 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-136">Purchase by procurement category / product name (column chart)</span></span>
+- <span data-ttu-id="a385f-137">調達カテゴリまたは製品名 (円グラフ) 別購買合計</span><span class="sxs-lookup"><span data-stu-id="a385f-137">Total purchase by procurement category / product name (pie chart)</span></span>
+- <span data-ttu-id="a385f-138">購買別トップ 10 製品 (積み上げ棒グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-138">Top 10 products by purchase (stacked bar chart)</span></span>
 
-<span data-ttu-id="2689d-140">**タイル**</span><span class="sxs-lookup"><span data-stu-id="2689d-140">**Tiles**</span></span>
-- <span data-ttu-id="2689d-141">製品の合計数</span><span class="sxs-lookup"><span data-stu-id="2689d-141">Total # of products</span></span></li>
-- <span data-ttu-id="2689d-142">製品合計数の有効な製品の合計割合</span><span class="sxs-lookup"><span data-stu-id="2689d-142">Total active products percentage of total # of products</span></span>
-- <span data-ttu-id="2689d-143">購買の 80% を占める製品の数</span><span class="sxs-lookup"><span data-stu-id="2689d-143">Number of products accounting for 80% purchase</span></span>
+<span data-ttu-id="a385f-139">**タイル**</span><span class="sxs-lookup"><span data-stu-id="a385f-139">**Tiles**</span></span>
+- <span data-ttu-id="a385f-140">製品の合計数</span><span class="sxs-lookup"><span data-stu-id="a385f-140">Total # of products</span></span></li>
+- <span data-ttu-id="a385f-141">製品合計数の有効な製品の合計割合</span><span class="sxs-lookup"><span data-stu-id="a385f-141">Total active products percentage of total # of products</span></span>
+- <span data-ttu-id="a385f-142">購買の 80% を占める製品の数</span><span class="sxs-lookup"><span data-stu-id="a385f-142">Number of products accounting for 80% purchase</span></span>
 
-<span data-ttu-id="2689d-144">**例**</span><span class="sxs-lookup"><span data-stu-id="2689d-144">**Example**</span></span>
+<span data-ttu-id="a385f-143">**例**</span><span class="sxs-lookup"><span data-stu-id="a385f-143">**Example**</span></span>
 
 
 <img src="media/purchaseByProduct.png" alt="Purchase by Product">
 
-### <a name="purchase-by-period-report-page"></a><span data-ttu-id="2689d-145">期間別購買レポートページ</span><span class="sxs-lookup"><span data-stu-id="2689d-145">Purchase by period report page</span></span>
-<span data-ttu-id="2689d-146">このページでは、今年度と昨年度の購買、および調達カテゴリによる成長が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2689d-146">This page shows purchases this year and last year, and growth by procurement category.</span></span>
+### <a name="purchase-by-period-report-page"></a><span data-ttu-id="a385f-144">期間別購買レポートページ</span><span class="sxs-lookup"><span data-stu-id="a385f-144">Purchase by period report page</span></span>
+<span data-ttu-id="a385f-145">このページでは、今年度と昨年度の購買、および調達カテゴリによる成長が表示されます。</span><span class="sxs-lookup"><span data-stu-id="a385f-145">This page shows purchases this year and last year, and growth by procurement category.</span></span>
 
-<span data-ttu-id="2689d-147">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="2689d-147">**Charts**</span></span> 
-- <span data-ttu-id="2689d-148">月/日別の購買 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-148">Purchase by month / day (column chart)</span></span>
-- <span data-ttu-id="2689d-149">累計購買金額の前年比差異 (伝播)</span><span class="sxs-lookup"><span data-stu-id="2689d-149">Cumulative purchase YOY variance (waterfall chart)</span></span>
-- <span data-ttu-id="2689d-150">合計購買金額の前年比成長 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-150">Total purchase YOY growth (column chart)</span></span>
-- <span data-ttu-id="2689d-151">調達明細書 (マトリックス)</span><span class="sxs-lookup"><span data-stu-id="2689d-151">Procurement statement (matrix)</span></span>
+<span data-ttu-id="a385f-146">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="a385f-146">**Charts**</span></span> 
+- <span data-ttu-id="a385f-147">月/日別の購買 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-147">Purchase by month / day (column chart)</span></span>
+- <span data-ttu-id="a385f-148">累計購買金額の前年比差異 (伝播)</span><span class="sxs-lookup"><span data-stu-id="a385f-148">Cumulative purchase YOY variance (waterfall chart)</span></span>
+- <span data-ttu-id="a385f-149">合計購買金額の前年比成長 (円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-149">Total purchase YOY growth (column chart)</span></span>
+- <span data-ttu-id="a385f-150">調達明細書 (マトリックス)</span><span class="sxs-lookup"><span data-stu-id="a385f-150">Procurement statement (matrix)</span></span>
 
-<span data-ttu-id="2689d-152">**タイル**</span><span class="sxs-lookup"><span data-stu-id="2689d-152">**Tiles**</span></span>
-- <span data-ttu-id="2689d-153">前年比購買成長</span><span class="sxs-lookup"><span data-stu-id="2689d-153">YOY purchase growth</span></span>
-- <span data-ttu-id="2689d-154">前年比購買成長の割合 %</span><span class="sxs-lookup"><span data-stu-id="2689d-154">YOY purchase growth %</span></span>
+<span data-ttu-id="a385f-151">**タイル**</span><span class="sxs-lookup"><span data-stu-id="a385f-151">**Tiles**</span></span>
+- <span data-ttu-id="a385f-152">前年比購買成長</span><span class="sxs-lookup"><span data-stu-id="a385f-152">YOY purchase growth</span></span>
+- <span data-ttu-id="a385f-153">前年比購買成長の割合 %</span><span class="sxs-lookup"><span data-stu-id="a385f-153">YOY purchase growth %</span></span>
 
-<span data-ttu-id="2689d-155">**例**</span><span class="sxs-lookup"><span data-stu-id="2689d-155">**Example**</span></span>
+<span data-ttu-id="a385f-154">**例**</span><span class="sxs-lookup"><span data-stu-id="a385f-154">**Example**</span></span>
 <img src="media/purchaseByPeriod.png" alt="Purchase by Period">
 
-### <a name="purchase-by-vendor-location-report-page"></a><span data-ttu-id="2689d-156">仕入先場所別購買レポートページ</span><span class="sxs-lookup"><span data-stu-id="2689d-156">Purchase by vendor location report page</span></span>
+### <a name="purchase-by-vendor-location-report-page"></a><span data-ttu-id="a385f-155">仕入先場所別購買レポートページ</span><span class="sxs-lookup"><span data-stu-id="a385f-155">Purchase by vendor location report page</span></span>
 
-<span data-ttu-id="2689d-157">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="2689d-157">**Charts**</span></span>
-- <span data-ttu-id="2689d-158">市町村別の購買</span><span class="sxs-lookup"><span data-stu-id="2689d-158">Purchase by city</span></span>
-- <span data-ttu-id="2689d-159">購買額の前年比成長の割合 %</span><span class="sxs-lookup"><span data-stu-id="2689d-159">Purchase YOY growth %</span></span>
-- <span data-ttu-id="2689d-160">購買国</span><span class="sxs-lookup"><span data-stu-id="2689d-160">Purchase by country</span></span>
+<span data-ttu-id="a385f-156">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="a385f-156">**Charts**</span></span>
+- <span data-ttu-id="a385f-157">市町村別の購買</span><span class="sxs-lookup"><span data-stu-id="a385f-157">Purchase by city</span></span>
+- <span data-ttu-id="a385f-158">購買額の前年比成長の割合 %</span><span class="sxs-lookup"><span data-stu-id="a385f-158">Purchase YOY growth %</span></span>
+- <span data-ttu-id="a385f-159">購買国</span><span class="sxs-lookup"><span data-stu-id="a385f-159">Purchase by country</span></span>
 
-<span data-ttu-id="2689d-161">**例**</span><span class="sxs-lookup"><span data-stu-id="2689d-161">**Example**</span></span>
+<span data-ttu-id="a385f-160">**例**</span><span class="sxs-lookup"><span data-stu-id="a385f-160">**Example**</span></span>
 <img src="media/purchByVendorLocation.png" alt="Purchase by Vendor Location">
 
-### <a name="purchase-spend-analysis-by-time-report-page"></a><span data-ttu-id="2689d-162">時間別購買先支出の分析レポートページ</span><span class="sxs-lookup"><span data-stu-id="2689d-162">Purchase spend analysis by time report page</span></span>
+### <a name="purchase-spend-analysis-by-time-report-page"></a><span data-ttu-id="a385f-161">時間別購買先支出の分析レポートページ</span><span class="sxs-lookup"><span data-stu-id="a385f-161">Purchase spend analysis by time report page</span></span>
 
-<span data-ttu-id="2689d-163">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="2689d-163">**Charts**</span></span> 
-- <span data-ttu-id="2689d-164">月/日別今年度の購買 (折れ線グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-164">Purchase current year by month / day (line chart)</span></span>
-- <span data-ttu-id="2689d-165">今年度および昨年度の購買 (線と円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="2689d-165">Purchase current and last year (line and column chart)</span></span>
+<span data-ttu-id="a385f-162">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="a385f-162">**Charts**</span></span> 
+- <span data-ttu-id="a385f-163">月/日別今年度の購買 (折れ線グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-163">Purchase current year by month / day (line chart)</span></span>
+- <span data-ttu-id="a385f-164">今年度および昨年度の購買 (線と円柱グラフ)</span><span class="sxs-lookup"><span data-stu-id="a385f-164">Purchase current and last year (line and column chart)</span></span>
 
-<span data-ttu-id="2689d-166">**例**</span><span class="sxs-lookup"><span data-stu-id="2689d-166">**Example**</span></span>
+<span data-ttu-id="a385f-165">**例**</span><span class="sxs-lookup"><span data-stu-id="a385f-165">**Example**</span></span>
 <img src="media/PurchByTIme.png" alt="Purchase by Time">
 
-### <a name="purchase-spend-analysis-by-vendor-report-page"></a><span data-ttu-id="2689d-167">仕入先別購買先支出の分析レポートページ</span><span class="sxs-lookup"><span data-stu-id="2689d-167">Purchase spend analysis by vendor report page</span></span>
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a><span data-ttu-id="a385f-166">仕入先別購買先支出の分析レポートページ</span><span class="sxs-lookup"><span data-stu-id="a385f-166">Purchase spend analysis by vendor report page</span></span>
 
-<span data-ttu-id="2689d-168">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="2689d-168">**Charts**</span></span> 
-- <span data-ttu-id="2689d-169">トップ 10 の仕入先の購買割合 % (じょうご)</span><span class="sxs-lookup"><span data-stu-id="2689d-169">Top 10 vendor purchase % of purchase (funnel)</span></span>
-- <span data-ttu-id="2689d-170">トップ 10 仕入先による増加支出額の前年比</span><span class="sxs-lookup"><span data-stu-id="2689d-170">Top 10 vendors with increased spending YOY</span></span>
-- <span data-ttu-id="2689d-171">トップ 10 仕入先による減少支出額の前年比</span><span class="sxs-lookup"><span data-stu-id="2689d-171">Top 10 vendors with decreased spending YOY</span></span>
+<span data-ttu-id="a385f-167">**グラフ**</span><span class="sxs-lookup"><span data-stu-id="a385f-167">**Charts**</span></span> 
+- <span data-ttu-id="a385f-168">トップ 10 の仕入先の購買割合 % (じょうご)</span><span class="sxs-lookup"><span data-stu-id="a385f-168">Top 10 vendor purchase % of purchase (funnel)</span></span>
+- <span data-ttu-id="a385f-169">トップ 10 仕入先による増加支出額の前年比</span><span class="sxs-lookup"><span data-stu-id="a385f-169">Top 10 vendors with increased spending YOY</span></span>
+- <span data-ttu-id="a385f-170">トップ 10 仕入先による減少支出額の前年比</span><span class="sxs-lookup"><span data-stu-id="a385f-170">Top 10 vendors with decreased spending YOY</span></span>
 
-<span data-ttu-id="2689d-172">**例** 
-</span><span class="sxs-lookup"><span data-stu-id="2689d-172">**Example** 
+<span data-ttu-id="a385f-171">**例** 
+</span><span class="sxs-lookup"><span data-stu-id="a385f-171">**Example** 
 </span></span><img src="media/PurchSpendAnalysisByVendor.png" alt="Purchase spend by vendor">
 
 
-## <a name="data-model-and-entities"></a><span data-ttu-id="2689d-173">データ モデルおよびエンティティ</span><span class="sxs-lookup"><span data-stu-id="2689d-173">Data model and entities</span></span>
-<span data-ttu-id="2689d-174">次のデータは、**購買支出の分析** Power BI コンテンツのレポート ページに入力するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="2689d-174">The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content.</span></span> <span data-ttu-id="2689d-175">このデータは、エンティティ ストアで実施される集計の測定として表されます。</span><span class="sxs-lookup"><span data-stu-id="2689d-175">This data is represented as aggregate measurements that are staged in the Entity store.</span></span> <span data-ttu-id="2689d-176">エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。</span><span class="sxs-lookup"><span data-stu-id="2689d-176">The Entity store is a Microsoft SQL Server database that is optimized for analytics.</span></span> <span data-ttu-id="2689d-177">詳細については、[エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2689d-177">For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span>
+## <a name="data-model-and-entities"></a><span data-ttu-id="a385f-172">データ モデルおよびエンティティ</span><span class="sxs-lookup"><span data-stu-id="a385f-172">Data model and entities</span></span>
+<span data-ttu-id="a385f-173">次のデータは、**購買支出の分析** Power BI コンテンツのレポート ページに入力するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="a385f-173">The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content.</span></span> <span data-ttu-id="a385f-174">このデータは、エンティティ ストアで実施される集計の測定として表されます。</span><span class="sxs-lookup"><span data-stu-id="a385f-174">This data is represented as aggregate measurements that are staged in the Entity store.</span></span> <span data-ttu-id="a385f-175">エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。</span><span class="sxs-lookup"><span data-stu-id="a385f-175">The Entity store is a Microsoft SQL Server database that is optimized for analytics.</span></span> <span data-ttu-id="a385f-176">詳細については、[エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a385f-176">For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span>
 
-<span data-ttu-id="2689d-178">このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の購買キューブに使用できた集計の測定のサブセットです。</span><span class="sxs-lookup"><span data-stu-id="2689d-178">The aggregate measurements in this content are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3.</span></span> <span data-ttu-id="2689d-179">エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2689d-179">To stage the cube's aggregate measurements in the Entity store, you must make them deployable.</span></span> <span data-ttu-id="2689d-180">詳細については、[エンティティ ストアと Power BI の統合](power-bi-integration-entity-store.md) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2689d-180">For more information, see the procedure for staging aggregate measurements in the Entity store in [Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span> <span data-ttu-id="2689d-181">次のキー集計の測定は、請求明細行エンティティから直接使用でき、コンテンツの基準として使用されます。</span><span class="sxs-lookup"><span data-stu-id="2689d-181">The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content.</span></span>
+<span data-ttu-id="a385f-177">このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の購買キューブに使用できた集計の測定のサブセットです。</span><span class="sxs-lookup"><span data-stu-id="a385f-177">The aggregate measurements in this content are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3.</span></span> <span data-ttu-id="a385f-178">エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a385f-178">To stage the cube's aggregate measurements in the Entity store, you must make them deployable.</span></span> <span data-ttu-id="a385f-179">詳細については、[エンティティ ストアと Power BI の統合](power-bi-integration-entity-store.md) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a385f-179">For more information, see the procedure for staging aggregate measurements in the Entity store in [Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span> <span data-ttu-id="a385f-180">次のキー集計の測定は、請求明細行エンティティから直接使用でき、コンテンツの基準として使用されます。</span><span class="sxs-lookup"><span data-stu-id="a385f-180">The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content.</span></span>
 
-| <span data-ttu-id="2689d-182">エンティティ</span><span class="sxs-lookup"><span data-stu-id="2689d-182">Entity</span></span>        | <span data-ttu-id="2689d-183">キー集計の測定</span><span class="sxs-lookup"><span data-stu-id="2689d-183">Key aggregate measurements</span></span> | <span data-ttu-id="2689d-184">データ ソース</span><span class="sxs-lookup"><span data-stu-id="2689d-184">Data source</span></span>                                 | <span data-ttu-id="2689d-185">フィールド</span><span class="sxs-lookup"><span data-stu-id="2689d-185">Field</span></span>              | <span data-ttu-id="2689d-186">説明</span><span class="sxs-lookup"><span data-stu-id="2689d-186">Description</span></span>                            |
+| <span data-ttu-id="a385f-181">エンティティ</span><span class="sxs-lookup"><span data-stu-id="a385f-181">Entity</span></span>        | <span data-ttu-id="a385f-182">キー集計の測定</span><span class="sxs-lookup"><span data-stu-id="a385f-182">Key aggregate measurements</span></span> | <span data-ttu-id="a385f-183">データ ソース</span><span class="sxs-lookup"><span data-stu-id="a385f-183">Data source</span></span>                                 | <span data-ttu-id="a385f-184">フィールド</span><span class="sxs-lookup"><span data-stu-id="a385f-184">Field</span></span>              | <span data-ttu-id="a385f-185">説明</span><span class="sxs-lookup"><span data-stu-id="a385f-185">Description</span></span>                            |
 |---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
-| <span data-ttu-id="2689d-187">請求明細行</span><span class="sxs-lookup"><span data-stu-id="2689d-187">Invoice lines</span></span> | <span data-ttu-id="2689d-188">購買</span><span class="sxs-lookup"><span data-stu-id="2689d-188">Purchase</span></span>                   | <span data-ttu-id="2689d-189">VendInvoiceTrans</span><span class="sxs-lookup"><span data-stu-id="2689d-189">VendInvoiceTrans</span></span>                            | <span data-ttu-id="2689d-190">合計 (LineAmountMST)</span><span class="sxs-lookup"><span data-stu-id="2689d-190">SUM(LineAmountMST)</span></span> | <span data-ttu-id="2689d-191">会計通貨での金額。</span><span class="sxs-lookup"><span data-stu-id="2689d-191">The amount in the accounting currency.</span></span> |
+| <span data-ttu-id="a385f-186">請求明細行</span><span class="sxs-lookup"><span data-stu-id="a385f-186">Invoice lines</span></span> | <span data-ttu-id="a385f-187">購買</span><span class="sxs-lookup"><span data-stu-id="a385f-187">Purchase</span></span>                   | <span data-ttu-id="a385f-188">VendInvoiceTrans</span><span class="sxs-lookup"><span data-stu-id="a385f-188">VendInvoiceTrans</span></span>                            | <span data-ttu-id="a385f-189">合計 (LineAmountMST)</span><span class="sxs-lookup"><span data-stu-id="a385f-189">SUM(LineAmountMST)</span></span> | <span data-ttu-id="a385f-190">会計通貨での金額。</span><span class="sxs-lookup"><span data-stu-id="a385f-190">The amount in the accounting currency.</span></span> |
 
-<span data-ttu-id="2689d-192">次の表は、請求明細行のエンティティのコンテンツで計算される主要な測定単位を示します。</span><span class="sxs-lookup"><span data-stu-id="2689d-192">The following table shows the key measurements in the content that are calculated from the Invoice lines entity.</span></span>
+<span data-ttu-id="a385f-191">次の表は、請求明細行のエンティティのコンテンツで計算される主要な測定単位を示します。</span><span class="sxs-lookup"><span data-stu-id="a385f-191">The following table shows the key measurements in the content that are calculated from the Invoice lines entity.</span></span>
 
-| <span data-ttu-id="2689d-193">基準</span><span class="sxs-lookup"><span data-stu-id="2689d-193">Measure</span></span>               | <span data-ttu-id="2689d-194">計算</span><span class="sxs-lookup"><span data-stu-id="2689d-194">Calculation</span></span>                                                                                         |
+| <span data-ttu-id="a385f-192">基準</span><span class="sxs-lookup"><span data-stu-id="a385f-192">Measure</span></span>               | <span data-ttu-id="a385f-193">計算</span><span class="sxs-lookup"><span data-stu-id="a385f-193">Calculation</span></span>                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="2689d-195">今年度の購買</span><span class="sxs-lookup"><span data-stu-id="2689d-195">Purchase current year</span></span> | <span data-ttu-id="2689d-196">今年度の購買 = SUM('請求明細行'\[購買\])</span><span class="sxs-lookup"><span data-stu-id="2689d-196">Purchase current year = SUM('Invoice lines'\[Purchase\])</span></span>                                            |
-| <span data-ttu-id="2689d-197">昨年度の購買</span><span class="sxs-lookup"><span data-stu-id="2689d-197">Purchase last year</span></span>    | <span data-ttu-id="2689d-198">昨年購買 = CALCULATE(合計 ('請求明細行'\[購買\]), SAMEPERIODLASTYEAR(日付\[日付\]))</span><span class="sxs-lookup"><span data-stu-id="2689d-198">Purchase last year = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\]))</span></span> |
-| <span data-ttu-id="2689d-199">前年比購買成長</span><span class="sxs-lookup"><span data-stu-id="2689d-199">YOY purchase growth</span></span>   | <span data-ttu-id="2689d-200">前年比購買成長 = \[今年度の購買\] – \[昨年度の購買\]</span><span class="sxs-lookup"><span data-stu-id="2689d-200">YOY purchase growth = \[Purchase current year\] – \[Purchase last year\]</span></span>                            |
+| <span data-ttu-id="a385f-194">今年度の購買</span><span class="sxs-lookup"><span data-stu-id="a385f-194">Purchase current year</span></span> | <span data-ttu-id="a385f-195">今年度の購買 = SUM('請求明細行'\[購買\])</span><span class="sxs-lookup"><span data-stu-id="a385f-195">Purchase current year = SUM('Invoice lines'\[Purchase\])</span></span>                                            |
+| <span data-ttu-id="a385f-196">昨年度の購買</span><span class="sxs-lookup"><span data-stu-id="a385f-196">Purchase last year</span></span>    | <span data-ttu-id="a385f-197">昨年購買 = CALCULATE(合計 ('請求明細行'\[購買\]), SAMEPERIODLASTYEAR(日付\[日付\]))</span><span class="sxs-lookup"><span data-stu-id="a385f-197">Purchase last year = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\]))</span></span> |
+| <span data-ttu-id="a385f-198">前年比購買成長</span><span class="sxs-lookup"><span data-stu-id="a385f-198">YOY purchase growth</span></span>   | <span data-ttu-id="a385f-199">前年比購買成長 = \[今年度の購買\] – \[昨年度の購買\]</span><span class="sxs-lookup"><span data-stu-id="a385f-199">YOY purchase growth = \[Purchase current year\] – \[Purchase last year\]</span></span>                            |
 
-<span data-ttu-id="2689d-201">コンテンツの以下のキー分析コードは、より高い粒度を達成し深い分析洞察を取得できるように、集計の測定をスライスするフィルターとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="2689d-201">The following key dimensions in the content are used as filters to slice the aggregate measurements, so that you can achieve more granularity and gain deeper analytical insights.</span></span>
+<span data-ttu-id="a385f-200">コンテンツの以下のキー分析コードは、より高い粒度を達成し深い分析洞察を取得できるように、集計の測定をスライスするフィルターとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="a385f-200">The following key dimensions in the content are used as filters to slice the aggregate measurements, so that you can achieve more granularity and gain deeper analytical insights.</span></span>
 
-| <span data-ttu-id="2689d-202">エンティティ</span><span class="sxs-lookup"><span data-stu-id="2689d-202">Entity</span></span>                 | <span data-ttu-id="2689d-203">属性の例</span><span class="sxs-lookup"><span data-stu-id="2689d-203">Examples of attributes</span></span>                                |
+| <span data-ttu-id="a385f-201">エンティティ</span><span class="sxs-lookup"><span data-stu-id="a385f-201">Entity</span></span>                 | <span data-ttu-id="a385f-202">属性の例</span><span class="sxs-lookup"><span data-stu-id="a385f-202">Examples of attributes</span></span>                                |
 |------------------------|-------------------------------------------------------|
-| <span data-ttu-id="2689d-204">仕入先</span><span class="sxs-lookup"><span data-stu-id="2689d-204">Vendors</span></span>                | <span data-ttu-id="2689d-205">仕入先グループ、仕入先の国または地域、仕入先名</span><span class="sxs-lookup"><span data-stu-id="2689d-205">Vendor groups, Vendor country or regions, Vendor name</span></span> |
-| <span data-ttu-id="2689d-206">製品</span><span class="sxs-lookup"><span data-stu-id="2689d-206">Products</span></span>               | <span data-ttu-id="2689d-207">製品番号、製品名、品目グループの名前</span><span class="sxs-lookup"><span data-stu-id="2689d-207">Product number, Product name, Item groups name</span></span>        |
-| <span data-ttu-id="2689d-208">調達カテゴリ</span><span class="sxs-lookup"><span data-stu-id="2689d-208">Procurement categories</span></span> | <span data-ttu-id="2689d-209">調達カテゴリ、調達カテゴリの名前</span><span class="sxs-lookup"><span data-stu-id="2689d-209">Procurement category, Procurement category names</span></span>      |
-| <span data-ttu-id="2689d-210">法人</span><span class="sxs-lookup"><span data-stu-id="2689d-210">Legal entities</span></span>         | <span data-ttu-id="2689d-211">法人名</span><span class="sxs-lookup"><span data-stu-id="2689d-211">Legal entity name</span></span>                                     |
-| <span data-ttu-id="2689d-212">日付</span><span class="sxs-lookup"><span data-stu-id="2689d-212">Dates</span></span>                  | <span data-ttu-id="2689d-213">日付、年度相殺</span><span class="sxs-lookup"><span data-stu-id="2689d-213">Dates, Year offset</span></span>                                    |
+| <span data-ttu-id="a385f-203">仕入先</span><span class="sxs-lookup"><span data-stu-id="a385f-203">Vendors</span></span>                | <span data-ttu-id="a385f-204">仕入先グループ、仕入先の国または地域、仕入先名</span><span class="sxs-lookup"><span data-stu-id="a385f-204">Vendor groups, Vendor country or regions, Vendor name</span></span> |
+| <span data-ttu-id="a385f-205">製品</span><span class="sxs-lookup"><span data-stu-id="a385f-205">Products</span></span>               | <span data-ttu-id="a385f-206">製品番号、製品名、品目グループの名前</span><span class="sxs-lookup"><span data-stu-id="a385f-206">Product number, Product name, Item groups name</span></span>        |
+| <span data-ttu-id="a385f-207">調達カテゴリ</span><span class="sxs-lookup"><span data-stu-id="a385f-207">Procurement categories</span></span> | <span data-ttu-id="a385f-208">調達カテゴリ、調達カテゴリの名前</span><span class="sxs-lookup"><span data-stu-id="a385f-208">Procurement category, Procurement category names</span></span>      |
+| <span data-ttu-id="a385f-209">法人</span><span class="sxs-lookup"><span data-stu-id="a385f-209">Legal entities</span></span>         | <span data-ttu-id="a385f-210">法人名</span><span class="sxs-lookup"><span data-stu-id="a385f-210">Legal entity name</span></span>                                     |
+| <span data-ttu-id="a385f-211">日付</span><span class="sxs-lookup"><span data-stu-id="a385f-211">Dates</span></span>                  | <span data-ttu-id="a385f-212">日付、年度相殺</span><span class="sxs-lookup"><span data-stu-id="a385f-212">Dates, Year offset</span></span>                                    |
 
-<span data-ttu-id="2689d-214">既定では、コンテンツは、現在の暦年のデータが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2689d-214">By default, the content shows data for the current calendar year.</span></span> <span data-ttu-id="2689d-215">ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。</span><span class="sxs-lookup"><span data-stu-id="2689d-215">However, you can change the date filter in the report filters section.</span></span> <span data-ttu-id="2689d-216">会社フィルターを変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="2689d-216">You can also change the company filter.</span></span>
+<span data-ttu-id="a385f-213">既定では、コンテンツは、現在の暦年のデータが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a385f-213">By default, the content shows data for the current calendar year.</span></span> <span data-ttu-id="a385f-214">ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。</span><span class="sxs-lookup"><span data-stu-id="a385f-214">However, you can change the date filter in the report filters section.</span></span> <span data-ttu-id="a385f-215">会社フィルターを変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="a385f-215">You can also change the company filter.</span></span>

@@ -1,6 +1,6 @@
 ---
 title: 財務諸表デザイナーでのユーザーの基本設定
-description: この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。 個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。
+description: このトピックでは、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,58 +17,58 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a7d7124da3d0e9596f364c17065c95610384a8ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 46a681b3a783b4f76946d2a972d73a11254ec56c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687380"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093190"
 ---
-# <a name="user-preferences-in-financial-report-designer"></a><span data-ttu-id="ef9d7-104">財務諸表デザイナーでのユーザーの基本設定</span><span class="sxs-lookup"><span data-stu-id="ef9d7-104">User preferences in financial report designer</span></span>
+# <a name="user-preferences-in-financial-report-designer"></a><span data-ttu-id="2d190-103">財務諸表デザイナーでのユーザーの基本設定</span><span class="sxs-lookup"><span data-stu-id="2d190-103">User preferences in financial report designer</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ef9d7-105">この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-105">This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.</span></span> <span data-ttu-id="ef9d7-106">個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-106">You can also control how individual reports, the report library, and the default file locations are displayed.</span></span>
+<span data-ttu-id="2d190-104">この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2d190-104">This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.</span></span> <span data-ttu-id="2d190-105">個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。</span><span class="sxs-lookup"><span data-stu-id="2d190-105">You can also control how individual reports, the report library, and the default file locations are displayed.</span></span>
 
-## <a name="set-user-preferences"></a><span data-ttu-id="ef9d7-107">ユーザー基本設定の設定</span><span class="sxs-lookup"><span data-stu-id="ef9d7-107">Set user preferences</span></span>
+## <a name="set-user-preferences"></a><span data-ttu-id="2d190-106">ユーザー基本設定の設定</span><span class="sxs-lookup"><span data-stu-id="2d190-106">Set user preferences</span></span>
 
-1. <span data-ttu-id="ef9d7-108">[レポート デザイナー] の **ツール** メニューで、**オプション** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-108">In Report Designer, on the **Tools** menu, click **Options**.</span></span>
-2. <span data-ttu-id="ef9d7-109">**オプション** ダイアログ ボックスで、基本設定を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-109">In the **Options** dialog box, select your preferences.</span></span>
-3. <span data-ttu-id="ef9d7-110">**OK** をクリックします</span><span class="sxs-lookup"><span data-stu-id="ef9d7-110">Click **OK**.</span></span>
+1. <span data-ttu-id="2d190-107">[レポート デザイナー] の **ツール** メニューで、**オプション** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d190-107">In Report Designer, on the **Tools** menu, click **Options**.</span></span>
+2. <span data-ttu-id="2d190-108">**オプション** ダイアログ ボックスで、基本設定を選択します。</span><span class="sxs-lookup"><span data-stu-id="2d190-108">In the **Options** dialog box, select your preferences.</span></span>
+3. <span data-ttu-id="2d190-109">**OK** をクリックします</span><span class="sxs-lookup"><span data-stu-id="2d190-109">Click **OK**.</span></span>
 
-## <a name="options-dialog-box-options"></a><span data-ttu-id="ef9d7-111">[オプション] ダイアログ ボックスのオプション</span><span class="sxs-lookup"><span data-stu-id="ef9d7-111">Options dialog box options</span></span>
+## <a name="options-dialog-box-options"></a><span data-ttu-id="2d190-110">[オプション] ダイアログ ボックスのオプション</span><span class="sxs-lookup"><span data-stu-id="2d190-110">Options dialog box options</span></span>
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="ef9d7-112">ユーザー オプション</span><span class="sxs-lookup"><span data-stu-id="ef9d7-112">User option</span></span></th>
-<th><span data-ttu-id="ef9d7-113">説明</span><span class="sxs-lookup"><span data-stu-id="ef9d7-113">Description</span></span></th>
+<th><span data-ttu-id="2d190-111">ユーザー オプション</span><span class="sxs-lookup"><span data-stu-id="2d190-111">User option</span></span></th>
+<th><span data-ttu-id="2d190-112">説明</span><span class="sxs-lookup"><span data-stu-id="2d190-112">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="ef9d7-114">起動時</span><span class="sxs-lookup"><span data-stu-id="ef9d7-114">At startup</span></span></td>
-<td><span data-ttu-id="ef9d7-115">レポート デザイナーの開始時の表示を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-115">Select what you see when Report Designer starts.</span></span> <span data-ttu-id="ef9d7-116">次のオプションのいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-116">Select one of the following options:</span></span>
+<td><span data-ttu-id="2d190-113">起動時</span><span class="sxs-lookup"><span data-stu-id="2d190-113">At startup</span></span></td>
+<td><span data-ttu-id="2d190-114">レポート デザイナーの開始時の表示を選択します。</span><span class="sxs-lookup"><span data-stu-id="2d190-114">Select what you see when Report Designer starts.</span></span> <span data-ttu-id="2d190-115">次のオプションのいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="2d190-115">Select one of the following options:</span></span>
 <ul>
-<li><span data-ttu-id="ef9d7-117"><strong>最後にロードされたレポートのロード</strong> – 最後に表示したレポートを開きます。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-117"><strong>Load last loaded report</strong> – Open the last report that you viewed.</span></span></li>
-<li><span data-ttu-id="ef9d7-118"><strong>開いているウィンドウの表示</strong> – <strong>開いている</strong> ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-118"><strong>Show Open window</strong> – Open the <strong>Open</strong> window.</span></span> <span data-ttu-id="ef9d7-119"><strong>開いている</strong> ウィンドウには、すばやい構成要素の検索に使用できる検索ウィンドウがあります。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-119">The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</span></span></li>
-<li><span data-ttu-id="ef9d7-120"><strong>空の環境を表示</strong> – 空のデザイナー ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-120"><strong>Show empty environment</strong> – Open an empty designer window.</span></span></li>
+<li><span data-ttu-id="2d190-116"><strong>最後にロードされたレポートのロード</strong> – 最後に表示したレポートを開きます。</span><span class="sxs-lookup"><span data-stu-id="2d190-116"><strong>Load last loaded report</strong> – Open the last report that you viewed.</span></span></li>
+<li><span data-ttu-id="2d190-117"><strong>開いているウィンドウの表示</strong> – <strong>開いている</strong> ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="2d190-117"><strong>Show Open window</strong> – Open the <strong>Open</strong> window.</span></span> <span data-ttu-id="2d190-118"><strong>開いている</strong> ウィンドウには、すばやい構成要素の検索に使用できる検索ウィンドウがあります。</span><span class="sxs-lookup"><span data-stu-id="2d190-118">The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</span></span></li>
+<li><span data-ttu-id="2d190-119"><strong>空の環境を表示</strong> – 空のデザイナー ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="2d190-119"><strong>Show empty environment</strong> – Open an empty designer window.</span></span></li>
 </ul></td>
 </tr>
 <tr>
-<td><span data-ttu-id="ef9d7-121">レポート デザイナーを終了する前の確認表示</span><span class="sxs-lookup"><span data-stu-id="ef9d7-121">Display confirmation before exiting Report Designer</span></span></td>
-<td><span data-ttu-id="ef9d7-122">アプリケーションを終了したとき、警告メッセージを表示するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-122">Select whether to receive a warning message when you exit the application.</span></span> <span data-ttu-id="ef9d7-123">このメッセージは、意図せずにプログラムを終了しないことを保証するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-123">This message helps guarantee that you don't exit the program unintentionally.</span></span></td>
+<td><span data-ttu-id="2d190-120">レポート デザイナーを終了する前の確認表示</span><span class="sxs-lookup"><span data-stu-id="2d190-120">Display confirmation before exiting Report Designer</span></span></td>
+<td><span data-ttu-id="2d190-121">アプリケーションを終了したとき、警告メッセージを表示するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="2d190-121">Select whether to receive a warning message when you exit the application.</span></span> <span data-ttu-id="2d190-122">このメッセージは、意図せずにプログラムを終了しないことを保証するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="2d190-122">This message helps guarantee that you don't exit the program unintentionally.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="ef9d7-124">列ヘッダーにセルの下線を自動的に適用</span><span class="sxs-lookup"><span data-stu-id="ef9d7-124">Automatically apply cell underline in column headers</span></span></td>
-<td><span data-ttu-id="ef9d7-125">新しい列ヘッダーのセルに下線を挿入するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-125">Select whether to insert an underline in the cell of a new column header.</span></span></td>
+<td><span data-ttu-id="2d190-123">列ヘッダーにセルの下線を自動的に適用</span><span class="sxs-lookup"><span data-stu-id="2d190-123">Automatically apply cell underline in column headers</span></span></td>
+<td><span data-ttu-id="2d190-124">新しい列ヘッダーのセルに下線を挿入するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="2d190-124">Select whether to insert an underline in the cell of a new column header.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="ef9d7-126">Management Reporter ファイルの場所</span><span class="sxs-lookup"><span data-stu-id="ef9d7-126">Management Reporter files location</span></span></td>
-<td><span data-ttu-id="ef9d7-127">ファイルの既定の場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-127">Specify the default location for files.</span></span> <span data-ttu-id="ef9d7-128">アプリケーションは、構成要素のグループをエクスポートするときに既定の場所を使用します。</span><span class="sxs-lookup"><span data-stu-id="ef9d7-128">The application uses the default location when you export building block groups.</span></span></td>
+<td><span data-ttu-id="2d190-125">Management Reporter ファイルの場所</span><span class="sxs-lookup"><span data-stu-id="2d190-125">Management Reporter files location</span></span></td>
+<td><span data-ttu-id="2d190-126">ファイルの既定の場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="2d190-126">Specify the default location for files.</span></span> <span data-ttu-id="2d190-127">アプリケーションは、構成要素のグループをエクスポートするときに既定の場所を使用します。</span><span class="sxs-lookup"><span data-stu-id="2d190-127">The application uses the default location when you export building block groups.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-resources"></a><span data-ttu-id="ef9d7-129">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="ef9d7-129">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="2d190-128">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="2d190-128">Additional resources</span></span>
 
-[<span data-ttu-id="ef9d7-130">財務報告</span><span class="sxs-lookup"><span data-stu-id="ef9d7-130">Financial reporting</span></span>](financial-reporting-intro.md)
+[<span data-ttu-id="2d190-129">財務報告</span><span class="sxs-lookup"><span data-stu-id="2d190-129">Financial reporting</span></span>](financial-reporting-intro.md)

@@ -10,66 +10,67 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcb8eda188a6796282a7a800b87a68dfef9d7d62
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413677"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097341"
 ---
-# <a name="enrich-a-product-page"></a><span data-ttu-id="a93f7-103">製品ページの拡充</span><span class="sxs-lookup"><span data-stu-id="a93f7-103">Enrich a product page</span></span>
+# <a name="enrich-a-product-page"></a><span data-ttu-id="07652-103">製品ページの拡充</span><span class="sxs-lookup"><span data-stu-id="07652-103">Enrich a product page</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="a93f7-104">このトピックでは、Microsoft Dynamics 365 Commerce で製品ページを拡充する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-104">This topic describes how to enrich a product page in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="07652-104">このトピックでは、Microsoft Dynamics 365 Commerce で製品ページを拡充する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="07652-104">This topic describes how to enrich a product page in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="a93f7-105">概要</span><span class="sxs-lookup"><span data-stu-id="a93f7-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="07652-105">概要</span><span class="sxs-lookup"><span data-stu-id="07652-105">Overview</span></span>
 
-<span data-ttu-id="a93f7-106">既定では、サイトは汎用ページを使用して製品データを表示します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-106">By default, your site uses a generic page to show product data.</span></span> <span data-ttu-id="a93f7-107">このページには、製品とその販売に必要なコントロールに関する基本的な情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="a93f7-107">This page includes the basic information about the product and the controls that are required to sell it.</span></span> <span data-ttu-id="a93f7-108">ただし、特定の製品の追加画像またはテキストを使用して、Commerce Scale Unit から取得した情報を補足することができます。</span><span class="sxs-lookup"><span data-stu-id="a93f7-108">However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product.</span></span> <span data-ttu-id="a93f7-109">このプロセスは、製品ページの拡充と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="a93f7-109">This process is known as enriching the product page.</span></span>
+<span data-ttu-id="07652-106">既定では、サイトは汎用ページを使用して製品データを表示します。</span><span class="sxs-lookup"><span data-stu-id="07652-106">By default, your site uses a generic page to show product data.</span></span> <span data-ttu-id="07652-107">このページには、製品とその販売に必要なコントロールに関する基本的な情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="07652-107">This page includes the basic information about the product and the controls that are required to sell it.</span></span> <span data-ttu-id="07652-108">ただし、特定の製品の追加画像またはテキストを使用して、Commerce Scale Unit から取得した情報を補足することができます。</span><span class="sxs-lookup"><span data-stu-id="07652-108">However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product.</span></span> <span data-ttu-id="07652-109">このプロセスは、製品ページの拡充と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="07652-109">This process is known as enriching the product page.</span></span>
 
-<span data-ttu-id="a93f7-110">多くの場合、製品に特定の追加コンテンツを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a93f7-110">In many cases, you will want to use specific additional content for your products.</span></span> <span data-ttu-id="a93f7-111">オーサリング ツールで **Retail と Commerce** にアクセスすると、サイトに割り当てられているチャネルの製品の一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="a93f7-111">When you go to **Retail and Commerce** in the authoring tool, you will see a list of products from the channel that is assigned to the site.</span></span> <span data-ttu-id="a93f7-112">この一覧の **拡充** 列は、製品の製品ページが拡充されているかどうかを示しています。</span><span class="sxs-lookup"><span data-stu-id="a93f7-112">In this list, the **Enriched** column indicates whether the product page for a product has been enriched.</span></span> <span data-ttu-id="a93f7-113">列にチェック マークが表示される場合は、製品に対して拡充された製品ページが存在します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-113">If a check mark appears in the column, an enriched product page exists for the product.</span></span> <span data-ttu-id="a93f7-114">チェック マークが表示されない場合は、製品に対して既定の製品ページとコンテンツが使用されます。</span><span class="sxs-lookup"><span data-stu-id="a93f7-114">If no check mark appears, the default product page and content are used for the product.</span></span> <span data-ttu-id="a93f7-115">一覧で製品名を選択して、拡充された製品ページと非拡充の製品ページの両方をプレビューできます。</span><span class="sxs-lookup"><span data-stu-id="a93f7-115">You can preview both enriched and non-enriched product pages by selecting a product name in the list.</span></span>
+<span data-ttu-id="07652-110">多くの場合、製品に特定の追加コンテンツを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="07652-110">In many cases, you will want to use specific additional content for your products.</span></span> <span data-ttu-id="07652-111">オーサリング ツールで **Retail と Commerce** にアクセスすると、サイトに割り当てられているチャネルの製品の一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="07652-111">When you go to **Retail and Commerce** in the authoring tool, you will see a list of products from the channel that is assigned to the site.</span></span> <span data-ttu-id="07652-112">この一覧の **拡充** 列は、製品の製品ページが拡充されているかどうかを示しています。</span><span class="sxs-lookup"><span data-stu-id="07652-112">In this list, the **Enriched** column indicates whether the product page for a product has been enriched.</span></span> <span data-ttu-id="07652-113">列にチェック マークが表示される場合は、製品に対して拡充された製品ページが存在します。</span><span class="sxs-lookup"><span data-stu-id="07652-113">If a check mark appears in the column, an enriched product page exists for the product.</span></span> <span data-ttu-id="07652-114">チェック マークが表示されない場合は、製品に対して既定の製品ページとコンテンツが使用されます。</span><span class="sxs-lookup"><span data-stu-id="07652-114">If no check mark appears, the default product page and content are used for the product.</span></span> <span data-ttu-id="07652-115">一覧で製品名を選択して、拡充された製品ページと非拡充の製品ページの両方をプレビューできます。</span><span class="sxs-lookup"><span data-stu-id="07652-115">You can preview both enriched and non-enriched product pages by selecting a product name in the list.</span></span>
 
-## <a name="enrich-a-product-page"></a><span data-ttu-id="a93f7-116">製品ページの拡充</span><span class="sxs-lookup"><span data-stu-id="a93f7-116">Enrich a product page</span></span>
+## <a name="enrich-a-product-page"></a><span data-ttu-id="07652-116">製品ページの拡充</span><span class="sxs-lookup"><span data-stu-id="07652-116">Enrich a product page</span></span>
 
-<span data-ttu-id="a93f7-117">製品ページを拡充するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="a93f7-117">To enrich a product page, follow these steps.</span></span>
+<span data-ttu-id="07652-117">製品ページを拡充するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="07652-117">To enrich a product page, follow these steps.</span></span>
 
-1. <span data-ttu-id="a93f7-118">**サイト** で、**Fabrikam** (またはサイトの名前) を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-118">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
-1. <span data-ttu-id="a93f7-119">左のナビゲーション ウィンドウで、**製品** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-119">In the navigation pane on the left, select **Products**.</span></span>
-1. <span data-ttu-id="a93f7-120">拡充された製品ページがない製品を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-120">Select any product that doesn't have an enriched product page.</span></span>
-1. <span data-ttu-id="a93f7-121">アクション ウィンドウで、**製品ページの拡充** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-121">On the Action Pane, select **Enrich product page**.</span></span>
-1. <span data-ttu-id="a93f7-122">**PDP テンプレート** を選択し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-122">Select **PDP-template**, and then select **OK**.</span></span>
-1. <span data-ttu-id="a93f7-123">左側のページのアウトライン ツリーで、**メイン** スロットを展開します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-123">In the page outline tree on the left, expand the **Main** slot.</span></span>
-1. <span data-ttu-id="a93f7-124">**メイン** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-124">Select the ellipsis button (**...**) for the **Main** slot, and then select **Add Module**.</span></span>
-1. <span data-ttu-id="a93f7-125">**コンテナー 2** を選択し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-125">Select **Container 2**, and then select **OK**.</span></span>
-1. <span data-ttu-id="a93f7-126">**コンテナー 2** の省略ボタンを選択し、**モジュールの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-126">Select the ellipsis button for **Container 2**, and then select **Add Module**.</span></span>
-1. <span data-ttu-id="a93f7-127">**機能** を選択し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-127">Select **Feature**, and then select **OK**.</span></span>
-1. <span data-ttu-id="a93f7-128">右側のプロパティ ウィンドウの **リッチ テキスト** フィールドに、更新された製品の説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-128">In the properties pane on the right, in the **Rich Text** field, enter the updated description of the product.</span></span>
-1. <span data-ttu-id="a93f7-129">**ヘッダー** フィールドに、ヘッダーのテキストを入力してから **OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-129">In the **Heading** field, enter heading text, and then select **OK**.</span></span>
-1. <span data-ttu-id="a93f7-130">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-130">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="a93f7-131">**コメント** フィールドに、**製品を拡充した** と入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-131">In the **Comments** field, enter **Enriched a product**, and then select **OK**.</span></span>
-1. <span data-ttu-id="a93f7-132">**プレビュー** を選択して、拡充された製品ページをプレビューします。</span><span class="sxs-lookup"><span data-stu-id="a93f7-132">Select **Preview** to preview the enriched product page.</span></span> <span data-ttu-id="a93f7-133">完了したら、プレビュー タブを閉じて、作成ツールに戻ります。</span><span class="sxs-lookup"><span data-stu-id="a93f7-133">When you've finished, close the preview tab to return to the authoring tool.</span></span>
-1. <span data-ttu-id="a93f7-134">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a93f7-134">Select **Publish**.</span></span>
+1. <span data-ttu-id="07652-118">**サイト** で、**Fabrikam** (またはサイトの名前) を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-118">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
+1. <span data-ttu-id="07652-119">左のナビゲーション ウィンドウで、**製品** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-119">In the navigation pane on the left, select **Products**.</span></span>
+1. <span data-ttu-id="07652-120">拡充された製品ページがない製品を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-120">Select any product that doesn't have an enriched product page.</span></span>
+1. <span data-ttu-id="07652-121">アクション ウィンドウで、**製品ページの拡充** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-121">On the Action Pane, select **Enrich product page**.</span></span>
+1. <span data-ttu-id="07652-122">**PDP テンプレート** を選択し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-122">Select **PDP-template**, and then select **OK**.</span></span>
+1. <span data-ttu-id="07652-123">左側のページのアウトライン ツリーで、**メイン** スロットを展開します。</span><span class="sxs-lookup"><span data-stu-id="07652-123">In the page outline tree on the left, expand the **Main** slot.</span></span>
+1. <span data-ttu-id="07652-124">**メイン** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-124">Select the ellipsis button (**...**) for the **Main** slot, and then select **Add Module**.</span></span>
+1. <span data-ttu-id="07652-125">**コンテナー 2** を選択し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-125">Select **Container 2**, and then select **OK**.</span></span>
+1. <span data-ttu-id="07652-126">**コンテナー 2** の省略ボタンを選択し、**モジュールの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-126">Select the ellipsis button for **Container 2**, and then select **Add Module**.</span></span>
+1. <span data-ttu-id="07652-127">**機能** を選択し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-127">Select **Feature**, and then select **OK**.</span></span>
+1. <span data-ttu-id="07652-128">右側のプロパティ ウィンドウの **リッチ テキスト** フィールドに、更新された製品の説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="07652-128">In the properties pane on the right, in the **Rich Text** field, enter the updated description of the product.</span></span>
+1. <span data-ttu-id="07652-129">**ヘッダー** フィールドに、ヘッダーのテキストを入力してから **OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-129">In the **Heading** field, enter heading text, and then select **OK**.</span></span>
+1. <span data-ttu-id="07652-130">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-130">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="07652-131">**コメント** フィールドに、**製品を拡充した** と入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-131">In the **Comments** field, enter **Enriched a product**, and then select **OK**.</span></span>
+1. <span data-ttu-id="07652-132">**プレビュー** を選択して、拡充された製品ページをプレビューします。</span><span class="sxs-lookup"><span data-stu-id="07652-132">Select **Preview** to preview the enriched product page.</span></span> <span data-ttu-id="07652-133">完了したら、プレビュー タブを閉じて、作成ツールに戻ります。</span><span class="sxs-lookup"><span data-stu-id="07652-133">When you've finished, close the preview tab to return to the authoring tool.</span></span>
+1. <span data-ttu-id="07652-134">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="07652-134">Select **Publish**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="a93f7-135">追加リソース</span><span class="sxs-lookup"><span data-stu-id="a93f7-135">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="07652-135">追加リソース</span><span class="sxs-lookup"><span data-stu-id="07652-135">Additional resources</span></span>
 
-[<span data-ttu-id="a93f7-136">既存のサイト ページの変更</span><span class="sxs-lookup"><span data-stu-id="a93f7-136">Modify an existing site page</span></span>](modify-existing-page.md)
+[<span data-ttu-id="07652-136">既存のサイト ページの変更</span><span class="sxs-lookup"><span data-stu-id="07652-136">Modify an existing site page</span></span>](modify-existing-page.md)
 
-[<span data-ttu-id="a93f7-137">新しいサイト ページの追加</span><span class="sxs-lookup"><span data-stu-id="a93f7-137">Add a new site page</span></span>](add-new-page.md)
+[<span data-ttu-id="07652-137">新しいサイト ページの追加</span><span class="sxs-lookup"><span data-stu-id="07652-137">Add a new site page</span></span>](add-new-page.md)
 
-[<span data-ttu-id="a93f7-138">ページ レイアウトの選択</span><span class="sxs-lookup"><span data-stu-id="a93f7-138">Select page layouts</span></span>](select-page-layouts.md)
+[<span data-ttu-id="07652-138">ページ レイアウトの選択</span><span class="sxs-lookup"><span data-stu-id="07652-138">Select page layouts</span></span>](select-page-layouts.md)
 
-[<span data-ttu-id="a93f7-139">SEO メタデータの管理</span><span class="sxs-lookup"><span data-stu-id="a93f7-139">Manage SEO metadata</span></span>](manage-seo-metadata.md)
+[<span data-ttu-id="07652-139">SEO メタデータの管理</span><span class="sxs-lookup"><span data-stu-id="07652-139">Manage SEO metadata</span></span>](manage-seo-metadata.md)
 
-[<span data-ttu-id="a93f7-140">ページの保存、プレビュー、および公開</span><span class="sxs-lookup"><span data-stu-id="a93f7-140">Save, preview, and publish a page</span></span>](save-preview-publish-page.md)
+[<span data-ttu-id="07652-140">ページの保存、プレビュー、および公開</span><span class="sxs-lookup"><span data-stu-id="07652-140">Save, preview, and publish a page</span></span>](save-preview-publish-page.md)
 
-[<span data-ttu-id="a93f7-141">カテゴリ ランディング ページの拡充</span><span class="sxs-lookup"><span data-stu-id="a93f7-141">Enrich a category landing page</span></span>](enrich-category-page.md)
+[<span data-ttu-id="07652-141">カテゴリ ランディング ページの拡充</span><span class="sxs-lookup"><span data-stu-id="07652-141">Enrich a category landing page</span></span>](enrich-category-page.md)
 
-[<span data-ttu-id="a93f7-142">ページ コンテンツ アクセシビリティの検証</span><span class="sxs-lookup"><span data-stu-id="a93f7-142">Verify page content accessibility</span></span>](verify-accessibility.md)
+[<span data-ttu-id="07652-142">ページ コンテンツのアクセシビリティの検証</span><span class="sxs-lookup"><span data-stu-id="07652-142">Verify page content accessibility</span></span>](verify-accessibility.md)
+
+[<span data-ttu-id="07652-143">URL のパラメーターに基いて動的な電子商取引ページを作成する</span><span class="sxs-lookup"><span data-stu-id="07652-143">Create dynamic e-commerce pages based on URL parameters</span></span>](create-dynamic-pages.md)
