@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bf20ed737707b7cf99023e3c78489caf4a68eab
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4525e79cb388cc9bbcfe1d038a53cf53916a678c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432227"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008091"
 ---
 # <a name="create-and-process-a-conformance"></a>不適合の作成および処理
 
@@ -67,6 +66,3 @@ ms.locfileid: "4432227"
 2. **不適合のクローズ** を選択します。
 3. **はい** を選択します。
 4. ページを閉じます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

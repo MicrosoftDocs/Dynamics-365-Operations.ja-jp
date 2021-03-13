@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646082"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009371"
 ---
 # <a name="improve-the-prediction-model-preview"></a>予測モデルの改善 (プレビュー)
 
@@ -42,19 +41,19 @@ ms.locfileid: "4646082"
 
 ## <a name="select-fields"></a>フィールドの選択
 
-モデルに含めるフィールドを選択している場合は、Azure data lakeでデータにマップされている Common Data Service エンティティで使用可能なすべてのフィールドが一覧に含まれていることに注意してください。 一部のフィールドは選択 **しない** でください。 選択されていないフィールドは、次の 3 つのカテゴリのいずれかに分類されます。
+モデルに含めるフィールドを選択している場合は、Azure data lakeでデータにマッピングされている Microsoft Dataverse テーブルで使用可能なすべてのフィールドが一覧に含まれていることに注意してください。 一部のフィールドは選択 **しない** でください。 選択されていないフィールドは、次の 3 つのカテゴリのいずれかに分類されます。
 
-- このフィールドは Common Data Service エンティティに必要ですが、Data Lake にはこのフィールドのバッキング データがありません。
+- このフィールドは Dataverse テーブルに必要ですが、Data Lake にはこのフィールドのバッキング データがありません。
 - このフィールドは ID であるため、機械学習機能に対しては意味を持ちません。
 - このフィールドは、予測では使用できない情報を表します。
 
 次のセクションでは、請求書エンティティおよび顧客エンティティに使用できるフィールドと、トレーニング対象として選択 **しない** フィールドを示します。 これらの各フィールドに指定されたカテゴリは、上の一覧のカテゴリを参照します。
  
-### <a name="invoice-common-data-model-entity"></a>請求書 Common Data Model エンティティ
+### <a name="invoice-dataverse-table"></a>請求書 Dataverse テーブル
 
-次の図は、請求書エンティティで使用できるフィールドを示しています。
+次の図は、請求書テーブルで使用できるフィールドを示しています。
 
-[![請求書エンティティで使用できるフィールド](./media/available-fields.png)](./media/available-fields.png)
+[![請求書テーブルで使用できるフィールド](./media/available-fields.png)](./media/available-fields.png)
 
 次のフィールドは、トレーニング対象として選択しないでください。
 
@@ -65,11 +64,11 @@ ms.locfileid: "4646082"
 - **ソース レコード** (カテゴリ 2)
 - **ソース テーブル** (カテゴリ 2)
 
-### <a name="customer-common-data-model-entity"></a>顧客 Common Data Model エンティティ
+### <a name="customer-dataverse-table"></a>顧客 Dataverse テーブル
 
-次の図は、顧客エンティティで使用できるフィールドを示しています。
+次の図は、顧客テーブルで使用できるフィールドを示しています。
 
-[![顧客エンティティで使用できるフィールド](./media/related-entities.png)](./media/related-entities.png)
+[![顧客テーブルで使用できるフィールド](./media/related-entities.png)](./media/related-entities.png)
 
 次のフィールドは、トレーニング対象として選択しないでください。
 
@@ -83,6 +82,3 @@ ms.locfileid: "4646082"
 
 #### <a name="privacy-notice"></a>プライバシー通知
 プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

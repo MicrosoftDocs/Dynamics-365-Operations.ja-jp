@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f50318e0a955d8244ba854aa1fd73ad7532b9198
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f54c02fc828d60f4ddb28be932bbf8eb137ee92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431937"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008174"
 ---
 # <a name="inventory-value-storage-report"></a>在庫評価額ストレージ レポート
 
@@ -106,6 +105,3 @@ ms.locfileid: "4431937"
 1. **実行の概要** ページが表示され、エクスポートジョブの状態とエクスポートされたエンティティのリストを表示することができます。 **エンティティ処理の状態** セクションで、一覧表示されている **在庫評価額** エンティティを選択し、**ファイルのダウンロード** を選び、エンティティからエクスポートされたデータをダウンロードします。
 
 データをエクスポートするためのデータ管理の使用方法については、[データ インポートとエクスポートのジョブ概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

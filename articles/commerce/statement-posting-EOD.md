@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e76a5ad741dca5831b609a5b991aa70e3753c621
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413824"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009646"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>明細書転記機能の改良
 
@@ -174,6 +173,3 @@ ms.locfileid: "4413824"
 
     - **Retail とコマース** \> **バックオフィスの設定** \> **パラメーター** \> **コマース パラメーター** の順に移動します。 その後、**明細レベル** フィールドの、**在庫更新** クイック タブの、**転記** タブで、**集計** を選択します。
     - **Retail とコマース** \> **バックオフィスの設定** \> **パラメーター** \> **コマース パラメーター** の順に移動します。 それから、**集計** クイック タブの、**転記** タブで、**伝票トランザクション** オプションを **はい** に設定します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

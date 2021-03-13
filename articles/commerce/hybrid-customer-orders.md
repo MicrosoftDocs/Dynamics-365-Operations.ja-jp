@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 261164
 ms.assetid: 9d99a5b9-4662-499a-bece-3ea1d6092934
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1c2105aa99e0489d7643d076e84123eec628679e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bec8389645a06a8287e51195341909ec71a8af2b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413839"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009696"
 ---
 # <a name="hybrid-customer-orders"></a>ハイブリッド顧客注文
 
@@ -41,6 +40,3 @@ Commerce では、顧客注文のすべての製品または選択された製�
 ## <a name="additional-resources"></a>追加リソース
 
 [Modern POS (MPOS) の顧客注文](customer-orders-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailChannelReport, RetailChannelManagementWorkspace
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57811
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8d95bb0927de5a1906efe180cb9e725c380a724f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4688d3268986a9ae6fb2c9601396b56aacf87a93
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413823"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009621"
 ---
 # <a name="analyze-store-performance"></a>店舗のパフォーマンスの分析
 
@@ -45,6 +44,3 @@ Retail の一部として、次の場所のいずれかの最初から用意さ�
 - 税集計
 - 価格変更の概要
 - 割引概要
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

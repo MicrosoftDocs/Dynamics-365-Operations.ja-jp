@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432161"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007710"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>製品コンフィギュレーション モデルでの式の制約とテーブルの制約
 
@@ -112,7 +111,7 @@ ms.locfileid: "4432161"
 <td>これは最初の条件が false、2 番目の条件が true、または両方とも true の場合に true です。</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>演算子:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>オペレーター:</strong> Implies[x != 0, y &gt;= 0]</li>
 <li><strong>インフィックス表記法:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
@@ -121,7 +120,7 @@ ms.locfileid: "4432161"
 <td>これは、すべての条件が true の場合にのみ true です。 条件数が 0 の場合、<strong>True</strong> になります。</td>
 <td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>演算子:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>オペレーター:</strong> And[x == 2, y &lt;= 2]</li>
 <li><strong>インフィックス表記法:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
@@ -130,7 +129,7 @@ ms.locfileid: "4432161"
 <td>これは、任意の条件が true の場合に true です。 条件数が 0 の場合、<strong>False</strong> になります。</td>
 <td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>演算子:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>オペレーター:</strong> Or[x == 2, y &lt;= 2]</li>
 <li><strong>インフィックス表記法:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
@@ -139,7 +138,7 @@ ms.locfileid: "4432161"
 <td>これにより要件が合計されます。 条件数が 0 の場合、<strong>0</strong> になります。</td>
 <td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
-<li><strong>演算子:</strong> Plus[x, y, 2] == z</li>
+<li><strong>オペレーター:</strong> Plus[x, y, 2] == z</li>
 <li><strong>インフィックス表記法:</strong> x + y + 2 == z</li>
 </ul></td>
 </tr>
@@ -148,7 +147,7 @@ ms.locfileid: "4432161"
 <td>これは引数を無効にします。 これは条件がきっかり 1 つの場合に限ります。</td>
 <td>Minus[expr], infix: -expr</td>
 <td><ul>
-<li><strong>演算子:</strong> Minus[x] == y</li>
+<li><strong>オペレーター:</strong> Minus[x] == y</li>
 <li><strong>インフィックス表記法:</strong> -x == y</li>
 </ul></td>
 </tr>
@@ -156,23 +155,23 @@ ms.locfileid: "4432161"
 <td>Abs</td>
 <td>これは、条件の絶対値を取ります。 これは条件がきっかり 1 つの場合に限ります。</td>
 <td>Abs[expr]</td>
-<td><strong>演算子:</strong> Abs[x]</td>
+<td><strong>オペレーター:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
 <td>時間</td>
 <td>これは、条件の製品を取ります。 条件数が 0 の場合、<strong>1</strong> になります。</td>
 <td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
-<li><strong>演算子:</strong> Times[x, y, 2] == z</li>
+<li><strong>オペレーター:</strong> Times[x, y, 2] == z</li>
 <li><strong>インフィックス表記法:</strong> x * y * 2 == z</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>パワー</td>
-<td>これは、指数関数を取ります。 これはべき乗を右から左に適用します。 (つまり、&#39;右結合です)。したがって、<strong>Power[a, b, c]</strong> は <strong>Power[a, Power[b, c]]</strong>と等価です。 <strong>Power</strong> は、指数が正の定数の場合にのみ使用できます。</td>
+<td>これは、指数関数を取ります。 これはべき乗を右から左に適用します。 (つまり、右結合です)。したがって、<strong>Power[a, b, c]</strong> は <strong>Power[a, Power[b, c]]</strong> と等価です。 <strong>Power</strong> は、指数が正の定数の場合にのみ使用できます。</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
-<li><strong>演算子:</strong> Power[x, 2] == y</li>
+<li><strong>オペレーター:</strong> Power[x, 2] == y</li>
 <li><strong>インフィックス表記法:</strong> x ^ 2 == y</li>
 </ul></td>
 </tr>
@@ -180,20 +179,20 @@ ms.locfileid: "4432161"
 <td>最大</td>
 <td>これにより、最大条件が作成されます。 条件数が 0 の場合、<strong>Infinity</strong> (無限) になります。</td>
 <td>Max[args]</td>
-<td><strong>演算子:</strong> Max[x, y, 2] == z</td>
+<td><strong>オペレーター: </strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
 <td>最小</td>
 <td>これにより、最小条件が作成されます。 条件数が 0 の場合、<strong>Infinity</strong> (無限) になります。</td>
 <td>Min[args]</td>
-<td><strong>演算子:</strong> Min[x, y, 2] == z</td>
+<td><strong>オペレーター:</strong> Min[x, y, 2] == z</td>
 </tr>
 <tr class="odd">
 <td>ない</td>
 <td>これにより、条件の論理逆数が作成されます。 これは条件がきっかり 1 つの場合に限ります。</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>演算子:</strong> Not[x] &amp; Not[y == 3]</li>
+<li><strong>オペレーター:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>インフィックス表記法:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -222,7 +221,7 @@ ms.locfileid: "4432161"
 |        (x)        |                           かっこは既定の優先順位より優先されます。                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>式の制約がなぜ正しく検証されないのですか。
-製品コンフィギュレーション モデルの属性、コンポーネント、またはサブコンポーネントのソルバー名として予約済みのキーワードは使用できません。ここでは、使用できない予約済みキーワードの一覧を示します:
+製品コンフィギュレーション モデルの属性、コンポーネント、またはサブコンポーネントのソルバー名として予約済みのキーワードは使用できません。 ここでは、使用できない予約済みキーワードの一覧を示します:
 
 -   シーリング
 -   要素
@@ -254,6 +253,3 @@ ms.locfileid: "4432161"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

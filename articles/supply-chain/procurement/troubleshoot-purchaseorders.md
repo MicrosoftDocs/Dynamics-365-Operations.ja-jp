@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7b65c23fc7ac04fc30c0001bee9541a475026018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432386"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007494"
 ---
 # <a name="troubleshoot-purchase-orders"></a>発注書のトラブルシューティング
 
@@ -132,7 +131,7 @@ ms.locfileid: "4432386"
 
 レコードに有効日が *01/11/2018*、有効期限が *なし* となっている問題の説明で説明されているシナリオでは、有効期限が常にあるという、問題の説明で説明されているシナリオについては、有効日が *01/10/2018* で有効期限が *なし* となっている新規レコードをインポートできます。 ただし、データ管理を通じて有効日が *01/12/2018* に更新されるように期間を短縮することはできません。 この変更は UI を通じて行なわなければなりません。
 
-## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>発注書ヘッダーの配送先住所を変更した後、配送先名は同期されません。
+## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-name-isnt-synced"></a>発注書ヘッダーの配送先住所を変更した後、配送先名は同期されません。
 
 ### <a name="issue-description"></a>問題の説明
 
@@ -145,6 +144,3 @@ ms.locfileid: "4432386"
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>発注書をキャンセルしたユーザーを見つけることができますか ?
 
 この情報は、発注書が変更管理の対象となる場合にのみ追跡されます。 変更管理を使用すると、変更 (キャンセル) を送信したユーザーと、変更を承認したユーザーを確認できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

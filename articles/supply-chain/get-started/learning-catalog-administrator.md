@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ba93bdcb64237af627c5a6d5adb834583f08f768
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: a4e158be2d20755e2380d573116383101fd6d07f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516622"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008172"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Dynamics 365 Supply Chain Management 管理者向けラーニング カタログ
 
@@ -88,6 +87,3 @@ ms.locfileid: "4516622"
 | コンテンツ  | 説明  | 書式設定  |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Dynamics 365 の基本](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Microsoft Dynamics 365、Power Platform、クラウドの概念、ライセンス オプション、および配置とリリースのオプションを理解していることを証明します。 | 試験、費用は地域によって異なる |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

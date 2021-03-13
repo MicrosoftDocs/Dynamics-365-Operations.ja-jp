@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2202b6b50d4b4b675759275379023a182b01af17
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432256"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007269"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
@@ -204,6 +203,3 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 1. **一般** タブで、**既定の注文数量に対する検証** を次のいずれかの値に設定します :
     - **厳密** : すべての **標準注文数量** の値が、各クイックタブ (**発注書**、**在庫**、**販売注文**) に対して **複数** の値の倍数になるようにするには、このオプションを選択します。
     - **標準** : 標準の検証を使用するには、このオプションを選択します (この機能が有効化されていない場合も同様に機能します)。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

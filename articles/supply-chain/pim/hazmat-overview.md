@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff285e7e8bcdd2a3197f0ccae569ac880b796028
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431716"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007594"
 ---
 # <a name="hazardous-materials-overview"></a>危険物の概要
 
@@ -62,6 +61,3 @@ ms.locfileid: "4431716"
 ## <a name="warehouse-management"></a>倉庫管理
 
 倉庫管理で出荷を準備すると、製品情報管理で設定した情報を使用するいくつかの新しいレポートを印刷できるようになります。 利用可能なレポートとその使用方法の詳細については、[危険物の照会およびレポート](hazmat-reports.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

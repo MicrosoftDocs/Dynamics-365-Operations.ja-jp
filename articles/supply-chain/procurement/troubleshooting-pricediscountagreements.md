@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b4349eeba285492202b5df8481b277a06708a4c8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 14fdddabde7739cbf9ba0fcee0fa0b8b816e74dd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432387"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007369"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>価格、割引、契約、リベートのトラブルシューティング
 
@@ -125,6 +124,3 @@ ms.locfileid: "4432387"
 
 承認されたかまたは却下されたかに関係なく、見積依頼 (RFQ) に対するすべての返信は、売買契約を作成できます。 詳細については、[見積依頼 (RFQ) の概要](request-quotations.md) を参照してください。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

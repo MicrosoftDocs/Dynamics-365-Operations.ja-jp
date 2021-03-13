@@ -10,7 +10,6 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4a41f877816e331351a0950dcdc07ee07f643beb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7d0440514369f8271004993d009ef7c3a36edb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431720"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008062"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペース
 
@@ -130,6 +129,3 @@ Finance and Operations モバイル アプリのダウンロードとインス�
     -   現物在庫による (このビューは、合計金額を表します)。
     -   現物引当済による (このビューは、引当済金額を表します)。
     -   物理的に利用可能ごと (この表示は予約なしの利用可能な金額を表します。)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

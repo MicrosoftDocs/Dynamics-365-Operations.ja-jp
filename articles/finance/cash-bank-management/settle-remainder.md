@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 52b0b456a6d9879c480ac3f076a32e382426a89c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 14244ccfef69a8bff3390539ff7b851a8f5b5ec1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445177"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009571"
 ---
 # <a name="settle-remainder"></a>残余決済
 
@@ -70,6 +69,3 @@ ms.locfileid: "4445177"
 7)  また、決済残高を含む支払仕訳帳を作成するか、または仕訳帳なしで転記するかを選択できます。 支払仕訳帳を作成するには、**仕訳帳で編集** で **はい** を選択します。 作成した支払仕訳帳を編集することができます。
 8)  **残余決済** をクリックします。 仕訳帳を作成することを選択した場合、ボタンは **仕訳帳の作成** に変わります。 代わりに、**仕訳帳の作成** をクリックします。
 9)  支払仕訳帳を作成した場合は、**残余決済** をクリックした後に仕訳帳ページが開きます。 仕訳帳明細行は、金額として残余決済金額を使用し、相手勘定として残余決済勘定を使用して、仕訳に追加されます。 他の顧客または仕入先に決済金額を転記できるように顧客または仕入先を追加した場合は、その顧客または仕入先に決済金額を転記するための明細行が仕訳帳に追加されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63a9856035088642254fd43d14cb324a89bc19d6
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 5ba514a6af360074696814278b51ba41327a294d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432309"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006994"
 ---
 # <a name="lean-manufacturing-overview"></a>リーン生産の概要
 
@@ -51,7 +50,7 @@ lean manufacturing の土台を作成するには、生産および物流プロ�
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a>かんばんを使用した要望要求のシグナル
 プル システムでは商品が必要な場合にのみ商品が作成されます。 このプラクティスにより、出荷のリード タイムと過剰な在庫が減少します。 かんばんを使用して、生産フローに基づいく条件を計画、追跡およびプロセス処理できます。 かんばんフレームワークを作成するには、かんばんを作成する時間、および要求が満たされる方法を定義するかんばんルールを作成します。 かんばんルールは 2 種類作成できます。 製造ルールはプロセスかんばん作業を作成し、および撤回かんばんルールは転送かんばん作業を作成します。 次の補充戦略を設定できます。
--   **固定数量** かんばんルールは材料取り扱い単位の固定数に関連付けられるため、有効なかんばん数に比例することを意味します。 かんばんのすべての製品が消費され、材料取り扱い単位を手動で空白にする場合は、同じタイプの新しいかんばんが作成されます。固定数量かんばんルールを作成する際に、最適なかんばん数量および使用された製品の量を計算できます。 計算は、予測、オープン注文の実需、品目を補充するリード タイム、および履歴需要を考慮します。
+-   **固定数量** かんばんルールは材料取り扱い単位の固定数に関連付けられるため、有効なかんばん数に比例することを意味します。 かんばんのすべての製品が消費され、材料取り扱い単位を手動で空白にする場合は、同じタイプの新しいかんばんが作成されます。 固定数量かんばんルールを作成する際に、最適なかんばん数量および使用された製品の量を計算できます。 計算は、予測、オープン注文の実需、品目を補充するリード タイム、および履歴需要を考慮します。
 -   **スケジュール済** かんばんルールは、マスター プランによって計算される要求を補充します。 マスター プランによって、かんばんに確定する計画かんばんが生成されます。
 -   **イベント** かんばんルールにより、販売注文明細行、生産の BOM 明細行、かんばん明細行または最小在庫設定により生じる必要量を補充します。 イベントかんばんが生成されると、それらはソース要件に固定されます。
 
@@ -83,6 +82,3 @@ Lean manufacturing は、かんばんルールで管理される製造および�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

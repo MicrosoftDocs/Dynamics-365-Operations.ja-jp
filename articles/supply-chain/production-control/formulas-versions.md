@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e5ff5916366f968cbf8dc9a5614466ef89faa92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431897"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007165"
 ---
 # <a name="formulas-and-formula-versions"></a>フォーミュラとフォーミュラ バージョン
 
@@ -71,6 +70,3 @@ BOM とは異なり、1 つの BOM は多くの場合複数の BOM バージョ�
 
 ## <a name="use-step-consumption"></a>ステップ消費の使用
 ステップ消費では、構成材料の **フォーミュラ明細行** タブに数量を入力する必要がありません。 その代わり、ステップ消費は **シリーズの開始** 値と **数量** 値を持つように構成されます。 バッチ オーダーで選択された数量を満たす一連のレコードごとのステップ消費からの情報。 ステップ消費は、消費係数がバッチ オーダーのサイズに関して直線的でない場合、および特定の数量の閾値が満たされない時に条件のみを高める場合に便利です。 新しい式のこの機能を有効にするには、**消費計算** グループの下で、利用できる構成材料の式設定を **標準** から **ステップ** に変更します。 **式明細行** ページの **設定** タブでこの消費方法を指定します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
