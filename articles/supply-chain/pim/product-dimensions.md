@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
+ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431736"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118684"
 ---
 # <a name="product-dimensions"></a>製品分析コード
 
@@ -122,7 +121,7 @@ ms.locfileid: "4431736"
 
 ### <a name="areas-where-the-version-dimension-isnt-supported"></a>バージョン分析コードがサポートされていない領域
 
-次の領域では、この分析コードの導入によって互換性に影響する変更が行われるため、このバージョン分析コードはサポートされていません。
+次の領域では、バージョン分析コードはサポートされません (これらの領域は引き続き使用できますが、バージョン分析コードが使用されている製品) のバージョンを追加することはできません。 たとえば、仕入先カタログにバージョンが設定された品目を追加できない場合があります。 これは、これらの領域にバージョン分析コードを持つ製品を追加すると、破壊的変更の原因となる可能性があるからです。
 
 - 月次原価計算明細書
 - 原価オブジェクト明細書キャッシュ
@@ -146,6 +145,3 @@ ms.locfileid: "4431736"
 
 > [!IMPORTANT]
 > バージョン分析コードを有効にして使用すると、在庫分析コードを参照する一部のソリューションが正常に機能しなくなる可能性があります。 これらの問題を確認して修正するには、影響を受けるソリューションについて独立系ソフトウェアベンダー (ISV) に問い合わせてください。 詳細については、[バージョン分析コードを有効にする](#enable-version-dim) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

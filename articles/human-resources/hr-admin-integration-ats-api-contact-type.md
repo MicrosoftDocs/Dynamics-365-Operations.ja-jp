@@ -1,0 +1,49 @@
+---
+title: 連絡先タイプ
+description: このトピックでは、Dynamics 365 Human Resources における連絡先タイプのオプションについて説明します。
+author: jaredha
+manager: tfehr
+ms.date: 02/05/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-human-resources
+ms.technology: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: jaredha
+ms.search.validFrom: 2021-02-05
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 701e18950ccad3bf3621d148daaf6046f4b76b77
+ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5125668"
+---
+# <a name="contact-type"></a>連絡先タイプ
+
+このトピックでは、Dynamics 365 Human Resources における連絡先タイプのオプションについて説明します。
+
+物理名 : mshr_logisticselectronicaddressmethodtype
+
+このリストは、候補者の連絡先タイプに対して、値のオプション セットを提供します。 
+
+| 先頭値 | ラベル | 説明 |
+| --- | --- | --- |
+| 200000000 | None | 選択するタイプがありません。 |
+| 200000001 | 電話 | 電話番号 |
+| 200000002 | メール アドレス | メール アドレスです。 |
+| 200000003 | URL | Web サイトの URL です。 |
+| 200000004 | テレックス | テレックスの番号です。 |
+| 200000005 | FAX | FAX 番号です。 |
+| 200000006 | Facebook | Facebook のアカウントです。 ユーザー ID で識別します。 |
+| 200000007 | Twitter | Twitter のアカウントです。 @username で識別します。 |
+| 200000008 | LinkedIn | LinkedIn のアカウントです。 ユーザー名 で識別します。 |
+
+## <a name="see-also"></a>参照
+
+[申請者追跡システム統合APIの概要](hr-admin-integration-ats-api-introduction.md)<br>
+[採用する採用候補者に対するクエリの例](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
