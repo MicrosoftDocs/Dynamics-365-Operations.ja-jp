@@ -1,6 +1,6 @@
 ---
 title: アプリケーション データを含むドキュメントを生成するためのモデルおよびマッピングの変更
-description: この手順のステップを完了するには、まず 「ER アプリケーション データ更新と共にドキュメントを生成する (パート 2 - ドキュメントの生成)」 に記載の手順を完了する必要があります。
+description: このトピックでは、電子ドキュメントを生成し、アプリケーション データを更新するためのレポート コンフィギュレーションを設計する方法について説明します。 (パート 2 - ドキュメントの生成)。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3401ec98ac1b61572d07fbb30d4465de78473fca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 025429c8e6775d20634703853df04d63c0651b98
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684574"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092900"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するためのモデルおよびマッピングの変更
 
@@ -168,6 +168,3 @@ ms.locfileid: "4684574"
 66. ページを閉じます。
 67. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

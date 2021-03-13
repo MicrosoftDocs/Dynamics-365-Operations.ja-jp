@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e3cb5dc59373b7af76fffa1b1c59728c84dfb5fb
+ms.sourcegitcommit: fd62ab3d399b0d6ea0d362f1d403a300e84a576d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693285"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "5067626"
 ---
 # <a name="configure-workflow-properties"></a>ワークフロー プロパティのコンフィギュレーション
 
@@ -73,6 +73,9 @@ ms.locfileid: "4693285"
     4. **翻訳テキスト** フィールドで、テキストを入力します。
     5. テキストをカスタマイズするには、プレースホルダーを挿入します。 プレースホルダーを入力する方法については、ステップ 3 を参照してください。
     6. **閉じる** をクリックします。
+
+> [!NOTE]
+> ターゲット情報が正しく貼り付けられていないため、プレースホルダーはコピーと貼り付けを使用して追加できません。 インターフェイスを使用してプレースホルダーを追加します。
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>有効化条件を使用してこのワークフローがをいつ使用するかを指定する
 
@@ -179,6 +182,3 @@ ms.locfileid: "4693285"
 2. **ワークフローに関するコメントの入力** フィールドにコメントを入力します。
 3. 入力したコメントを確認します。 追加したコメントは変更できません。
 4. **追加** をクリックして、**コメントの履歴** 領域にコメントを追加します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

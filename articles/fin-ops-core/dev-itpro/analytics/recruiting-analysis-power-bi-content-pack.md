@@ -1,6 +1,6 @@
 ---
 title: Recruiting Power BI コンテンツ
-description: このトピックでは、Recruiting Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+description: このトピックでは、Recruiting Power BI コンテンツについて説明します。
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 524b1c29d204c1b013546008b1be7868cbf8db06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 237af011229e3d84f54bc601753dc621f8335d2f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680565"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092744"
 ---
 # <a name="recruiting-power-bi-content"></a>Recruiting Power BI コンテンツ
 
@@ -64,6 +64,3 @@ ms.locfileid: "4680565"
 | パフォーマンス          | 評価、説明、評価モデル                            | 申請者、採用済申請者、退職済申請者 |
 | 採用プロジェクト  | プロジェクト説明、プロジェクト ステータス、空き状況                | 申請者、採用済申請者、退職済申請者 |
 | 退職済申請者 | 退職済申請者、理由、パフォーマンス、終了日 | 会社、カレンダーのオフセット、日付、地理的な場所、パフォーマンス、人口統計、雇用、メディア、採用プロジェクト、申請者名 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

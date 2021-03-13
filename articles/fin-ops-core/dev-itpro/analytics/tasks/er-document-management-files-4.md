@@ -1,6 +1,6 @@
 ---
 title: ER 形式の出力 (パート 4 - 形式の実行) におけるドキュメント管理ファイルの使用
-description: 次の手順では、システム管理者または電子申告開発者のロールに指定されたユーザーが、ER 出力のドキュメント管理ファイルを使用するために電子申告の形式をコンフィギュレーションする方法を説明します。
+description: このトピックでは、ER 出力でドキュメント管理ファイルを使用するために電子申告形式を構成する方法について説明します。 (パート 4)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 89e09d79389dc2c883c429cfee3164632e0cdc0f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d437b31b8a55f345ebc3567bc8c6a2c5ecfd2eec
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681784"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092519"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a>ER 形式の出力 (パート 4 - 形式の実行) におけるドキュメント管理ファイルの使用
 
@@ -69,6 +69,3 @@ ms.locfileid: "4681784"
 11. [OK] をクリックします。
     * 生成された出荷を確認します。 各添付ファイルに対して単一のXMLノードが作成されたことに注意してください。 添付ファイルのコンテンツは、MIME (base64) テキスト形式で XML 出力に取り込まれます。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

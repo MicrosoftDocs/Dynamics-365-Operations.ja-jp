@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services へのコンフィギュレーションのアップロード
-description: このトピックでは、システム管理者または電子申告開発者の役割のユーザーが新しい電子申告 (ER) コンフィギュレーションを作成し、Microsoft Dynamics Lifecycle Services (LCS) にアップロードする方法について説明します。
+description: このトピックでは、新しい電子申告 (ER) のコンフィギュレーションを作成して、Microsoft Dynamics Lifecycle Services (LCS) にアップロードする方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92fc6d7a8b2508c9a1f7b56ca8115adbd6ae00ea
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684166"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092544"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Lifecycle Services へのコンフィギュレーションのアップロード
 
@@ -145,6 +145,3 @@ ms.locfileid: "4684166"
     アップロードした ER コンフィギュレーションがリストされます。
 
     プロバイダーがこの LCS プロジェクトにアクセスできる場合に、アップロードされた LCS コンフィギュレーションは、別のインスタンスにインポートできることに注意してください。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

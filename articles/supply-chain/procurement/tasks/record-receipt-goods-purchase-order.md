@@ -1,7 +1,7 @@
 ---
 title: 発注書に記載されている商品の受取の記録
 description: このトピックでは、商品の受取を発注書に直接記録する方法について説明します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd8ca2cbd24f326c4eaf9cd39e32de0eca81149d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: d016df08850c75858c50b7f9a97b11b566d26cb0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432391"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022661"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>発注書に記載されている商品の受取の記録
 
@@ -49,6 +48,3 @@ ms.locfileid: "4432391"
 6. **数量** を「4」に設定します。 ここで、注文の行ごとに、入庫中の数量を手動で指定できます。  
 7. **OK** を選択します。 これで商品が発注書で入庫済みと記録され、これを反映して製品受領書仕訳帳がドキュメントとして作成されました。 製品受領書のアクションを使用して発注書で作成された仕訳帳を表示し、受け取り製品、および受け取り時期を確認できます。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

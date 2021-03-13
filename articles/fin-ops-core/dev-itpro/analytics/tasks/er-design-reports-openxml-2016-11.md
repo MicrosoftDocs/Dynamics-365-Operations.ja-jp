@@ -1,6 +1,6 @@
 ---
 title: OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)
-description: このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、電子ドキュメントを OPENXML 形式で生成するためのテンプレートを含む新しい電子申告 (ER) のコンフィギュレーションを作成する方法を説明します。
+description: このトピックでは、OPENXML 形式で電子ドキュメントを生成するためのテンプレートを含む新しい電子申告 (ER) コンフィギュレーションを作成する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/12/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b832961061d05e3f1ae046f820bc7a37baaf90c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681904"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092669"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)
 
@@ -150,6 +150,3 @@ ms.locfileid: "4681904"
 17. **銀行口座** フィールドで、`GBSI OPER` と入力します。
 18. **OK** を選択し、もう一度 **OK** を選択します。 この支払メッセージに使用される各通貨コードの支払明細行および合計の詳細を含む、作成されたワークシートを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

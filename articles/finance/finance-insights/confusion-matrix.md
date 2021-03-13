@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6a1620c33ee1e23a79ef5413afebdee332aa82b6
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 5223bdfbc0f5828b5dccac30362783075ce8157f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645020"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044375"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>機械学習モデルの結果 (プレビュー版)
 
@@ -37,7 +36,7 @@ ms.locfileid: "4645020"
 
 たとえば、いくつかの身体的属性や行動的属性に基づいて、ペットが犬なのか猫なのかを予測するなどです。 30匹の犬と20匹の猫を含むテストのデータセットを使用している場合、混乱マトリックスは次の図のようになります。
 
-[![種の予測例](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+![種の予測例](media/species-prediction-matrix.png)
 
 緑のセルの数値は、正しい予測を表します。 ご覧のように、モデルは猫の割合が高いことを予測していました。 モデルの全体的な精度は簡単に計算できます。 この場合は、42÷ 50 (0.84) になります。
 
@@ -47,7 +46,7 @@ ms.locfileid: "4645020"
 
 次に、3つの状態を持つファイナンス シナリオの分類に関する問題を検討します。 このモデルでは、顧客請求書が時間どおりに支払われるか、遅延しているか、または遅延しているかを予測します。 この場合、 テスト請求書 100 件のうち、50 件は定時払い、35 件は遅延、15 件は大幅に遅延しています。 この場合、モデルが次の図のような混乱マトリックスを生成する場合があります。
 
-[![モデル 1](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)モデル 1
+![モデル 1](media/payment-prediction-matrix.png)]
 
 混乱マトリックスには、簡素な精度メトリックよりもはるかに多くの情報が提供されます。 ただし、わかりやすさを維持しています。 この混乱マトリックスでは、出力クラスのカウントが類似しているデータセットがあるかどうかを示します。 マルチクラスシナリオでは、前に示した顧客支払などのように、出力クラスが序数である場合に予測からどれだけ乖離しているかを示します。
 
@@ -58,7 +57,7 @@ ms.locfileid: "4645020"
 
 ただし、より詳細に理解するためには、正確さに関連するいくつかの問題に注意する必要があります。 メトリックの有用性は、問題のコンテキストによって異なります。 モデルのパフォーマンスに関してよく発生する問題は、"モデルがどの程度良好であるか？" という点です。 ただし、この質問に対する回答は、必ずしもわかりやすいわけではありません。 次の混乱マトリックスについて検討してください (モデル2)。
 
-[![大規模サンプルを使用した支払予測の例](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![大規模サンプルを使用した支払予測の例](media/payment-prediction-matrix-2.png)
 
 簡単な計算では、このモデルの精度 (70 + 10 + 3) ÷100 (0.83) が示されます。 表面的には、この結果は、精度 0.73 の以前のマルチ クラス モデル (モデル1) の結果よりも優れているようです。 ただし、それでも良いでしょうか。
 
@@ -103,7 +102,7 @@ F1 のメジャーは、精度とリコールを結合します。 この結果�
 
 具体的な例を以下に示します。 このトピックでは、動物が犬なのか猫なのかを予測するモデルの例を示しました。 ここでも同じ図を使用します。
 
-[![種の予測例](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![種の予測の例 (再掲)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 ここでは、"犬" を正の答えとして使用した場合の結果を示します。
 
@@ -115,11 +114,11 @@ F1 のメジャーは、精度とリコールを結合します。 この結果�
 
 F1 の精度を理解するのは簡単ではありませんが、基本的な精度の数字には、微妙な精度が追加されます。 また、次の説明に示すように、不安定なデータセットに対応することもできます。
 
-このトピックの[モデルの精度](#classify-machine-learning-accuracy)セクションでは、次の 2 つの混乱マトリックスを比較しています。 1 つ目のモデルでは精度が低かったにもかかわらず、定時払いの既定の推測よりも改善が見られたため、より有用なモデルと判断されました。
+このトピックの[モデルの精度](#model-accuracy)セクションでは、次の 2 つの混乱マトリックスを比較しています。 1 つ目のモデルでは精度が低かったにもかかわらず、定時払いの既定の推測よりも改善が見られたため、より有用なモデルと判断されました。
 
-[![支払予測と実績の比較例](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+![支払予測と実績の比較例](media/payment-prediction-matrix.png)
 
-[![大規模サンプルを使用した支払予測の例](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![大規模サンプルを使用した支払予測の例 (再掲)](media/payment-prediction-matrix-2.png)
 
 この 2 つのモデルを F1 スコアで比較してみましょう。 F1 スコアは、各状態の精度とリコールを考慮し、F1 マクロ計算で状態間の F1 スコアを平均化し、全体的な F1 スコアを決定します。 他にも F1 の変種はありますが、3 つの状態すべてに平等に考慮されていることを考えると、マクロ版を検討する価値がありそうです。
 
@@ -142,6 +141,3 @@ F1 の精度を理解するのは簡単ではありませんが、基本的な�
 
 #### <a name="privacy-notice"></a>プライバシー通知
 プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,22 +10,21 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594977"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053416"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>顧客注文に対して複数の受け取り配送モードを有効にする
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Microsoft Dynamics 365 Commerce バージョン 10.0.16 またはそれ以降では、顧客が店舗で集荷する注文を作成するときに、買い物客または販売担当者が選択できる複数の荷渡方法を定義できます。 このようにして、組織は買い物客に複数の集配オプションを提供できます。 たとえば、多くの小売業者は、注文に対して、店舗内の集配またはカーブサイド ピックアップのいずれかの選択を行うことになります。 Commerce では、これらのさまざまな集荷配送モードの構成をサポートしています。 ユーザーは、サポートされている任意の Commerce チャネルチャネル (電子商取引、コールセンター、店舗) で顧客注文を作成するときに、それらを利用できます。
 
@@ -86,6 +85,3 @@ Commerce バージョン 10.0.15 では、組織は指定された集荷配送�
 ## <a name="considerations-for-distributed-order-management"></a>配分済み注文の管理に関する考慮事項
 
 Commerce の[配分済み注文の管理 (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom)機能は、店舗集配としてマークされている販売明細行を無視します。 これらの機能は、構成済の集荷配送モードにリンクされている販売明細行が DOM ロジックをバイパスし、新しいフルフィルメント倉庫に再割り当てされないように更新されています。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

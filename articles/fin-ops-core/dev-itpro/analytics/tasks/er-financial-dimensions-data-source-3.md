@@ -1,6 +1,6 @@
 ---
 title: ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
-description: 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
+description: このトピックでは、財務分析コードを ER レポートのデータ ソースとして使用するために、電子申告 (ER) モデルを構成する方法について説明します。 (第 3 部)
 author: NickSelin
 manager: AnnBe
 ms.date: 05/27/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a12f88f1e8b5e451bc8a5c5486d820da61bf3ad0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b0d6da96850e04d5e975b3febbfae2737c8a86af
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684790"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092303"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
 
@@ -145,6 +145,3 @@ ms.locfileid: "4684790"
 46. ページを閉じます。
 ![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format2.png)
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

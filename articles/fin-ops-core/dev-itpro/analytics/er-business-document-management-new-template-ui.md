@@ -1,6 +1,6 @@
 ---
 title: ビジネス ドキュメント管理の新しいドキュメント ユーザー インターフェイス
-description: このトピックでは、電子申告 (ER) フレームワークのビジネス ドキュメント管理機能で新しいドキュメント ユーザー インターフェイス (UI) を使用する方法について説明します。
+description: このトピックでは、電子申告のビジネス ドキュメント管理機能で新しいドキュメント ユーザー インターフェイスを使用する方法について説明します。
 author: v-anamir
 manager: AnnBe
 ms.date: 05/12/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2cb6e0da4af07b9b8486bf1e5bda29523cbd08e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 64ac52385ae6145f7428ebbc3cb77e395557bce2
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681355"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092228"
 ---
 # <a name="new-document-user-interface-in-business-document-management"></a>ビジネス ドキュメント管理の新しいドキュメント ユーザー インターフェイス
 
@@ -64,6 +64,3 @@ ms.locfileid: "4681355"
 **新規ドキュメント** ボタンは、ユーザーは別のプロバイダーによって提供される電子申告 (ER) 形式コンフィギュレーションのテンプレートの作成および編集のために使用されます。 この例において、プロバイダーは Microsoft です。 **新規ドキュメント** を選択すると、現在のプロバイダーと他のプロバイダーが所有するすべてのテンプレートが表示されます。 テンプレートを選択すると、編集用に開かれます。 編集したテンプレートは、自動的に生成される新規 ER 形式コンフィギュレーションで保存されます。
 
 詳細については、[ビジネス ドキュメント管理の概要](er-business-document-management.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aba35563266d1149131124f489f89da61432bfb2
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
+ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669176"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5080041"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Dynamics 365 Human Resources (2020 年 12 月 2 日) の新機能および変更された機能
 
@@ -61,7 +60,7 @@ ms.locfileid: "4669176"
 | 514087 | BenefitEligibilityProcessResult には、処理に使用された日時を含める必要があります。 | BenefitEligibity 処理結果に、以前は含まれていなかった前回の処理の datetimestamp が含まれています。 |
 | 526903 | **人事管理の共有パラメーター** で **被指名人の自動選択** がオンになっているときは、扶養者のいるプランでは給付金の登録は失敗します。 | **被指名人の自動選択** オプションで既定の被指名人がオンになっているときに発生する扶養者に対する給付金登録の失敗に関する問題が解決されました。 |
 | 521922 | **詳細なしで休暇を表示** パラメーターでは、チームの休暇カレンダーにある休暇要求の詳細を表示します。 | **詳細なしで休暇を表示** が **休暇パラメーター** で **はい** に設定されているときに、休暇タイプ、休暇タイプの色、および日付の詳細がチームの休暇カレンダーに表示されていました。 これが解決すると、今度は休暇タイプが表示されなくなり、チームの休暇カレンダーにあるすべての休暇タイプに既定の休暇タイプの色 (濃い青) が使用されます。 |
-| 527316 | 職務、職位、および作業者の通知に対するタイトルの変更は同期されません。 | 以前、タイトルの関係は、職務、職位、および作業者のエンティティに追加されました。 このリレーションの同期は、Human Resources から Common Data Serviceの同期には適用しますが、Common Data Service からの通知には適用しませんでした。 この問題は解決されました。 |
+| 527316 | 職務、職位、および作業者の通知に対するタイトルの変更は同期されません。 | 以前、タイトルの関係は、職務、職位、および作業者のエンティティに追加されました。 このリレーションの同期は、Human Resources から Dataverseの同期には適用しますが、Dataverse からの通知には適用しませんでした。 この問題は解決されました。 |
 | 512275 | **休暇パラメーター** から色のオプションを削除します。 | これで休暇タイプで色が定義され、**休暇パラメーター** で色のオプションが不要になったため、色のオプションが削除されました。 |
 | 437112 | 従業員の職位割り当て時に誤解を招くエラー メッセージ テキスト。 | 作業者を採用して有効でない職位を割り当てようとしているときに表示されるエラー メッセージを更新しました。 更新済メッセージ **指定された職位は雇用開始日の時点で有効ではありません。この職位の期間を確認してください。** |
 | 527816 | **休暇** ページのパフォーマンス問題。 | **休暇** ページでパフォーマンスが改善されました。 |
@@ -92,6 +91,3 @@ ms.locfileid: "4669176"
 [Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

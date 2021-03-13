@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 203d12956825286b77a107bb9fd91c451ecfd1e6
+ms.sourcegitcommit: dc3deca942864c4a8354096183c9e1b9b88992f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4413885"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "5032936"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>POS ユーザー インターフェイスのビジュアル コンフィギュレーション
 
@@ -117,7 +116,10 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 
 ![コンパクト レイアウトのボタン グリッド](../commerce/media/Compact-View-Button-Grids.png)
 
-### <a name="images"></a>イメージ
+> [!NOTE]
+> デザイナーのボタンのサイズは、ウィンドウのサイズに合わせて拡大縮小されるため、POS で表示された実際のボタンを正確に反映していない場合があります。 ボタングリッドレイアウトを最も適格にシミュレートするには、デザイナー ウィンドウを POS と同じサイズに調整します。
+
+### <a name="images"></a>画像
 
 画面レイアウトでの各レイアウト サイズで、POS UI に含めるための画像を指定できます。 フル POS レイアウトには、ようこそ画面に 1 つの画像を指定できます。 この画像は、左側に最初の UI 要素として表示されます。 **トランザクション** 画面で、タブの画像、またはロゴとして画像を使用することができます。 コンパクト POS レイアウトは、これらの画像を使用しません。
 
@@ -205,6 +207,3 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 ## <a name="additional-resources"></a>追加リソース
 
 [Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

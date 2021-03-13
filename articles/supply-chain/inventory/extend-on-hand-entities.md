@@ -10,23 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3bf3a7d48b0aa3e48845882be0ee86da17ed040
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e805b9379c73f7b7eb2820662fad70e28181ebf
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432034"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5043396"
 ---
 # <a name="extend-inventory-on-hand-data-entities"></a>手持在庫データ エンティティの拡張
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management には、[拡張機能を使用してテーブルにフィールドを追加](../../fin-ops-core/dev-itpro/extensibility/add-field-extension) できる [拡張性](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) 機能が用意されています。 このトピックでは、`INVENTORSITEONHANDENTITY` と `INVENTWAREHOUSEONHANDENTITY` ビューに拡張フィールドを追加して、手持在庫データ エンティティの機能が拡張で使用できるようにする例を示します。 データ エンティティの詳細については、[データ管理の概要](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management には、[拡張機能を使用してテーブルにフィールドを追加](../../fin-ops-core/dev-itpro/extensibility/add-field-extension.md) できる [拡張性](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) 機能が用意されています。 このトピックでは、`INVENTORSITEONHANDENTITY` と `INVENTWAREHOUSEONHANDENTITY` ビューに拡張フィールドを追加して、手持在庫データ エンティティの機能が拡張で使用できるようにする例を示します。 データ エンティティの詳細については、[データ管理の概要](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。
 
 > [!NOTE]
 > 手持在庫データ エンティティの一覧を以下に示します:
@@ -69,6 +68,3 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 これらの手順を完了した後で、新しいフィールドを追加することで、サイト別の手持在庫と倉庫データ エンティティ別の手持在庫を拡張できます。 このようにして、これらのデータ エンティティを使用するデータ移行中に、拡張フィールドが認識されて含まれるようにします。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

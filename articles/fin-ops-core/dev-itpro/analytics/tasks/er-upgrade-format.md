@@ -1,6 +1,6 @@
 ---
 title: ER 形式の新しい基準バージョンを採用してその形式をアップグレードする
-description: 次のステップでは、システム管理者または電子申告開発者のロールに割り当てられているユーザーが、電子申告 (ER) の形式のコンフィギュレーションを維持管理する方法について説明します。
+description: このトピックでは、電子申告 (ER) 形式のコンフィギュレーションを管理する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b76fb09ff961a3100b6a4bf890c1b12e6a0a2771
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684263"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092569"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER 形式の新しい基準バージョンを採用してその形式をアップグレードする
 
@@ -243,6 +243,3 @@ Proseware, Inc. は最近発表された国固有の要件に従った電子支�
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>カスタマイズされた形式の支払ファイル生成テストの実行
 並列する Finance and Operations セッションで 「作成されたフォーマットを使用して支払い用の電子文書を生成する」 の手順を完了します。 電子支払方法のパラメーターで作成した 「BACS (英国関税)」 形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

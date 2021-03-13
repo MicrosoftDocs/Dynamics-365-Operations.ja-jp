@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664275"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077581"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスをデザインする
 
@@ -57,7 +56,7 @@ ms.locfileid: "4664275"
 1. ページのヘッダーで次の設定を行います。
 
     - **タブ名** - タブの名前を指定します。
-    - **メイン ビュー** - 事前に定義された 2 つのジョブ リスト (*有効なジョブ* または *すべてのジョブ*) から選択します。
+    - **メイン ビュー** - 事前に定義された 2 つのジョブ リスト (*有効なジョブ*、*すべてのジョブ*、または *マイ マシン*) から選択します。
     - **詳細ビュー** - 空白の値または **ジョブの詳細** のいずれかを選択します。 空白の値を選択すると、詳細な情報はタブに表示されません。**ジョブの詳細** を選択した場合は、メイン ビューのジョブ リストで選択したジョブの詳細な説明が、詳細ビューに表示されます。
 
 1. **プライマリ ツールバー** セクションで、プライマリ ツールバーで使用できるボタンを選択します。 **使用できるアクション** 列には、追加できるすべてのボタンの一覧が表示されます。 **選択したアクション** 列には、現在のコンフィギュレーションに含まれるすべてのボタンの一覧が表示されます。 列の間のボタンを使用して、選択した品目を必要に応じて列間で移動します。 **選択したアクション** 列の横にある上下ボタンを使用して、ユーザー インターフェイスにボタンが表示される順序を制御します。
@@ -79,6 +78,3 @@ ms.locfileid: "4664275"
 1. 必要に応じて、追加のタブを追加します。
 
 1. 必要に応じてタブを配置するには、ツールバーの **上へ移動** または **下へ移動** ボタンを使用します。 上のスクリーンショットに示されている順序で、タブは左から右に表示されます (一番上にあるタブが左側に表示されます)。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

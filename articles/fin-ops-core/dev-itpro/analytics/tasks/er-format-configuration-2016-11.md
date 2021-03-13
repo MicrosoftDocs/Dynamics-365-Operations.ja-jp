@@ -1,6 +1,6 @@
 ---
 title: ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)
-description: このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER)の形式コンフィギュレーション作成方法について説明します。
+description: このトピックでは、電子申告 (ER) 用の形式コンフィギュレーションを作成する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/02/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e4cd3960594ab37ca867792c655cfd28dc332fa9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9404d1e242c83d2103d1f24c42589c33b9f57f02
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684766"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092253"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)
 
@@ -158,6 +158,3 @@ ms.locfileid: "4684766"
 42. **保存** をクリックします。
 43. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: アプリケーション クラスのメソッドを呼び出す ER 式の設計
-description: このガイドは、ER の式で必要なアプリケーション クラスのメソッドを呼び出すことによって、電子申告 (ER) コンフィギュレーションで既存のアプリケーション ロジックを再利用する方法に関する情報を提供します。
+description: このトピックでは、必要なアプリケーション クラスのメソッドを呼び出すことによって、電子申告コンフィギュレーションで既存のアプリケーション ロジックを再利用する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2de6464aaceadd60a82a70f428f42cd4f864eb8
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682024"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092088"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>アプリケーション クラスのメソッドを呼び出す ER 式の設計
 
@@ -157,6 +157,3 @@ ms.locfileid: "4682024"
 2. [OK] をクリックします。
     * 選択ファイルからインポートされてデータ モデルにポートされたデータを表すXML 書式の出力を確認します。 インポートされた TXT ファイルの 3 つの行のみが処理されたことに注意してください。 有効でない明細行 4 の IBAN コードはスキップされ、情報ログにエラー メッセージが表示されます。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

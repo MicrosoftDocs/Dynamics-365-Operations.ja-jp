@@ -10,24 +10,22 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Commerce, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: faf5fba70bf9297727464e6046806696ab725001
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: f4ecb990cfe792e92142f922c43c71ef8494e117
+ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594978"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "5031851"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>配信モードによるトランザクション メールのカスタマイズ
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で特定の通知タイプと配信のモードに対応したカスタムメール テンプレートを設定する方法について説明します。
 
@@ -73,6 +71,3 @@ Commerce 本社の特定の荷渡方法にメール テンプレートをコン�
 [コール センター注文の作成](tasks/create-call-center-orders.md)
 
 [POS での荷渡方法の変更](pos-change-delivery-mode.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

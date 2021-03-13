@@ -1,6 +1,6 @@
 ---
 title: 倉庫のパフォーマンス Power BI コンテンツ
-description: このトピックでは、倉庫パフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
+description: このトピックでは、倉庫パフォーマンス Power BI コンテンツに何が含まれているのか説明します。
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4594c6c09abdac72a03ac1338701d2291b234106
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: be4acbb8eae3fd7d8dd0db4f99c3a2db06808f21
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687404"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092819"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>倉庫のパフォーマンス Power BI コンテンツ
 
@@ -111,6 +111,3 @@ ms.locfileid: "4687404"
 | 出荷パフォーマンス        | 製品別出荷                       | CustPackingSlipOnTimeStatus           | 期日前、期限内、遅延 (この表で前の説明を参照してください)。 |
 | 出荷パフォーマンス        | 顧客別出荷                      | CustPackingSlipOnTimeStatus           | 期日前、期限内、遅延 (この表で前の説明を参照してください)。 |
 | 出荷パフォーマンス        | サイト / 倉庫別出荷              | CustPackingSlipOnTimeStatus           | 期日前、期限内、遅延 (この表で前の説明を参照してください)。 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

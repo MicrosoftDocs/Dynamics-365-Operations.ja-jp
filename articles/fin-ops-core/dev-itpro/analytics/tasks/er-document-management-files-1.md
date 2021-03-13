@@ -1,6 +1,6 @@
 ---
 title: ER ドキュメント管理ファイルを形式出力で使用する (第 1 部 - データ モデルの準備)
-description: 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。
+description: このトピックでは、ER 出力でドキュメント管理ファイル (添付ファイル) を使用するために電子申告 (ER) 形式を構成する方法について説明します。 (第 1 部)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b82c63c572cc946737ba54deb10a03dc437c01b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bff518c60f0f36bdc88245d79bd82f0c4d0599ed
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681831"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092644"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER ドキュメント管理ファイルを形式出力で使用する (第 1 部 - データ モデルの準備)
 
@@ -74,6 +74,3 @@ Microsoft 提供の設定から取得した顧客請求書モデルの設定を�
 3. [名称] フィールドに、「顧客請求書モデル（カスタム）」を入力します。
 4. [コンフィギュレーションの作成] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

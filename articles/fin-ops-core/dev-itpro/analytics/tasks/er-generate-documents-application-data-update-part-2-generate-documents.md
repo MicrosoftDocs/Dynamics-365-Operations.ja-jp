@@ -1,6 +1,6 @@
 ---
 title: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのデザイン
-description: この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 1 - コンフィギュレーションのインポート)」の手順を完了する必要があります。
+description: このトピックでは、電子ドキュメントを生成するために電子申告 (ER) コンフィギュレーションをデザインする方法について説明します。 (パート 1 - コンフィギュレーションのインポート)。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d099836ba00ffa1d4fd002af4ac3e6045b41c6a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 417c419dc6925bac337fe74a2f057395316ec75d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684598"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092925"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのデザイン
 
@@ -58,6 +58,3 @@ ms.locfileid: "4684598"
 10. ページを閉じます。
 11. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

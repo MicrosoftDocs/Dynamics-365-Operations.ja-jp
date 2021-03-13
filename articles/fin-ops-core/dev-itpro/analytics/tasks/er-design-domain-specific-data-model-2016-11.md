@@ -1,6 +1,6 @@
 ---
 title: ER 設計ドメイン固有のデータ モデル
-description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子支払ドキュメントのデータ モデルを含む新しい電子申告 (ER) のコンフィギュレーションを作成する方法を説明します。
+description: このトピックでは、電子支払ドキュメントのデータ モデルを含む新しい電子申告 (ER) コンフィギュレーションを作成する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 268f661079b80551b36ad2e1877615d878350051
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1eb2c6e5b5f186fb6db7c32a9982807274e5ea1b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681952"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092694"
 ---
 # <a name="er-design-domain-specific-data-model"></a>ER 設計ドメイン固有のデータ モデル
 
@@ -187,6 +187,3 @@ ms.locfileid: "4681952"
 65. [保存] をクリックします。
 66. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
