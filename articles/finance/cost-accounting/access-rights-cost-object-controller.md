@@ -105,3 +105,6 @@ ms.locfileid: "4978892"
 - [原価管理ワークスペース](cost-control-workspace.md)
 - [分析コード階層](dimension-hierarchy.md)
 - [原価会計コンテンツ パックのセキュリティ設定](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

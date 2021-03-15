@@ -68,3 +68,6 @@ Commerce ソリューションが Microsoft Dynamics Lifecycle Services (LCS) �
 - Commerce チャネル
 - レジスターとデバイス
 - 品揃え
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

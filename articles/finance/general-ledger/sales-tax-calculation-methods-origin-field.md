@@ -130,3 +130,6 @@ SALESTAX: [発生元] = [正味金額の割合]。[売上税の前に計算] オ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

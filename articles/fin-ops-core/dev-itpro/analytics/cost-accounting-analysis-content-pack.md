@@ -123,3 +123,6 @@ ms.locfileid: "5093389"
 | 会計カレンダー                   | カレンダー、カレンダーの説明                                                                                       |
 | 年度                       | 暦年                                                                                                        |
 | 会計年度期間                     | 暦年                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

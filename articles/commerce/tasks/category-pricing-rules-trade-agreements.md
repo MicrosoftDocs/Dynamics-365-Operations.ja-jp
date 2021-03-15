@@ -58,3 +58,6 @@ ms.locfileid: "5006088"
 24. [カテゴリ価格のルール] タブをクリックします。
     * チャンネルの特定の [カテゴリ価格決定ルール] はこのリストに表示されます。  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

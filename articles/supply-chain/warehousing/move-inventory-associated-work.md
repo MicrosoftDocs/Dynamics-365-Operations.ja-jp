@@ -58,3 +58,6 @@ ms.locfileid: "4970334"
 この機能も Microsoft Dynamics AX 2012 R3 にバックポートされているため、CU12 の一部として利用可能になります。
 KB 番号 3192548 を通じて個別にダウンロードすることもできます。 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

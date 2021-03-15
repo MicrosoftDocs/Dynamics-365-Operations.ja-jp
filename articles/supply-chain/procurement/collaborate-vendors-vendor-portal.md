@@ -103,3 +103,6 @@ Dynamics AX で発注書が作成されます。 **承認済** ステータス�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

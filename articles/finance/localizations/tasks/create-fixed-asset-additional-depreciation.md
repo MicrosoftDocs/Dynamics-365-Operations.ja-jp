@@ -53,3 +53,6 @@ ms.locfileid: "4990012"
     * 割増償却は、この日の翌日から開始します。  
 9. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

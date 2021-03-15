@@ -39,3 +39,6 @@ ms.locfileid: "4970184"
 ### <a name="issue-resolution"></a>問題の解決
 
 モバイル デバイスのアプリ エミュレーターは、管理者アカウントでのみ機能するように設定されています。 すべてのテストとライブ プロセスの目的では、倉庫アプリ自体を使用することをお勧めします。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

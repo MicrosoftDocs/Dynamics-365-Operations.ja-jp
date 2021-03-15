@@ -87,3 +87,6 @@ PDP の最も重要なモジュールは購入ボックス モジュールで、
 [アカウント管理ページの概要](quick-tour-account-management.md)
 
 [製品の詳細ページの拡充](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

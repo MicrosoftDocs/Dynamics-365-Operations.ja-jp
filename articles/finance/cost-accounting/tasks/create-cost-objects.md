@@ -50,3 +50,6 @@ ms.locfileid: "4990770"
 ## <a name="view-the-imported-cost-centers"></a>インポートされたコストセンターを表示します。
 1. [分析コード メンバーの表示] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

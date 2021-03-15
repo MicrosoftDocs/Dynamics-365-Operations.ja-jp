@@ -140,3 +140,6 @@ Dynamics 365 Commerce アプリケーションのユーザーとして、ロー�
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

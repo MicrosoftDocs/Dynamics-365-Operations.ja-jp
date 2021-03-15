@@ -207,3 +207,6 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 ## <a name="additional-resources"></a>追加リソース
 
 [Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

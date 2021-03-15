@@ -64,3 +64,6 @@ ms.locfileid: "5010950"
 29. [OK] をクリックします。
 30. 早めに退勤する理由を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

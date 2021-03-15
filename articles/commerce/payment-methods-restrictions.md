@@ -60,3 +60,6 @@ ms.locfileid: "5012394"
 
 トランザクションにレシートありの返品とレシートなしの返品の両方がある場合、トランザクションはレシートありの返品ワークフローになるため、制限条件は適用されません。 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

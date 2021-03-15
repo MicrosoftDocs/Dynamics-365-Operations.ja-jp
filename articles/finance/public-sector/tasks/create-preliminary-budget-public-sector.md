@@ -52,3 +52,6 @@ ms.locfileid: "4975163"
 19. [更新] をクリックします。
     * 更新の結果を表示するには、青色のバーの [メッセージの詳細] をクリックします。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

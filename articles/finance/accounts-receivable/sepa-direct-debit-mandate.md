@@ -53,3 +53,6 @@ ms.locfileid: "4995496"
 
 [顧客の口座引落の委任状の作成](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

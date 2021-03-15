@@ -91,3 +91,6 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

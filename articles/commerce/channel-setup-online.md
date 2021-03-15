@@ -133,3 +133,6 @@ E コマース サイトで複数の言語をサポートする場合は、**言
 [コール センターのチャネルの設定](channel-setup-callcenter.md)
 
 [Adyen 向け Dynamics 365 Payment Connector](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ ms.locfileid: "5097106"
 [製品推奨事項の概要](product-recommendations.md)
 
 [クイック ビュー モジュール](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

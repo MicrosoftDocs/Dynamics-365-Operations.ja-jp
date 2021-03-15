@@ -87,3 +87,6 @@ ms.locfileid: "5131248"
 
 + マッピングに依存マッピングが含まれている場合は、このテーブル マッピングの依存マッピングを有効にする必要があります。
 + マッピングにソース列、または出力先の列がない可能性があります。 Finance and Operations アプリの列が存在しない場合は、[マップに存在しないテーブル列の問題](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) のセクションに記載されている手順を実行します。 Dataverse で列が表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、列が自動的にマッピングに反映されるようにします。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

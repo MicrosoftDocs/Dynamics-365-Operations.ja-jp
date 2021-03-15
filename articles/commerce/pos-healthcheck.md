@@ -82,3 +82,6 @@ OPOS キーロックなどの一部のデバイスには、最初から用意さ
 ## <a name="related-articles"></a>関連記事
 
 [Modern POS (MPOS) のトリガーと印刷](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

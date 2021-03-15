@@ -61,3 +61,6 @@ ms.locfileid: "5006113"
 24. [新しいクレジット カードの既定のプロセッサ] チェックボックスをオンにします。
 25. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

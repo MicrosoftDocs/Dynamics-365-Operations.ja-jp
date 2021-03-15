@@ -85,3 +85,6 @@ Dynamics 365 Commerce に新しい法人を作成するには、次の手順を�
 [チャネルの概要](channels-overview.md)
 
 [チャネル設定の前提条件](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

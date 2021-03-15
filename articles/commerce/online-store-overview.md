@@ -120,3 +120,6 @@ Dynamics 365 Commerce は Azure Active Directory (Azure AD) 企業と顧客間 (
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
 
 [ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

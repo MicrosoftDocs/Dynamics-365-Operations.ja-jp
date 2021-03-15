@@ -41,3 +41,6 @@ ms.locfileid: "4796829"
 7. アドレス帳に選択した利用可能なチームを追加するには、矢印をクリックします。
 8. **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

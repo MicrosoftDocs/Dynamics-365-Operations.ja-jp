@@ -71,3 +71,6 @@ ms.locfileid: "5130269"
 33. [教育] セクションの展開を切り替えます。
 34. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

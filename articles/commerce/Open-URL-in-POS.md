@@ -82,3 +82,6 @@ POS で開くように URL をコンフィギュレーションするには、�
 5. アクションとして **URL を開く** を選択します。
 6. 使用する URL を入力します。
 7. 新しいウィンドウで URL を開くかどうかをコンフィギュレーションします。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ Commerce サイト ビルダーの評価とレビューの傾向を表示する�
 [評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
 
 [Dynamics 365 Retail の商品評価の同期](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

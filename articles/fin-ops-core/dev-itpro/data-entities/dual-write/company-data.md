@@ -102,3 +102,6 @@ Customer Engagement アプリで会社名を自動入力するには、いくつ
 
 :::image type="content" source="media/apply-company-context.png" alt-text="会社コンテキストの適用":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

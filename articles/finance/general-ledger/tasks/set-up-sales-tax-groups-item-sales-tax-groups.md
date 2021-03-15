@@ -49,3 +49,6 @@ ms.locfileid: "4994493"
 19. 一覧で、選択された行のリンクをクリックします。
 20. **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

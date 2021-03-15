@@ -61,3 +61,6 @@ ms.locfileid: "5154230"
 
 [統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)  
 [データ インポート/エクスポート ジョブの概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

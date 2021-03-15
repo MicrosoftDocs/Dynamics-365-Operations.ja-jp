@@ -84,3 +84,6 @@ Commerce サイトビルダーの B2B 注文数量制限機能を有効にする
 [B2B eコマース サイトでのビジネス パートナー ユーザーの管理](manage-b2b-users.md)
 
 [B2B eコマース サイト用の顧客アカウントの支払方法の構成](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

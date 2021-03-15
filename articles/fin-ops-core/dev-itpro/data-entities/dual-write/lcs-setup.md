@@ -89,3 +89,6 @@ ms.locfileid: "5127596"
 > [!NOTE]
 > LCS を使用して環境のリンクを解除することはできません。 環境のリンクを解除するには、Finance and Operations 環境の **データ統合** ワークスペースを開き、**リンク解除** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

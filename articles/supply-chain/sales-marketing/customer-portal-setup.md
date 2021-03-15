@@ -85,3 +85,6 @@ Supply Chain Management の他の機能とは異なり、顧客ポータルの�
 - [ポータルのアップグレード](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [ポータルの構成の移行](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [ソリューションのライフサイクル管理 : Dynamics 365 for Customer Engagement アプリ](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

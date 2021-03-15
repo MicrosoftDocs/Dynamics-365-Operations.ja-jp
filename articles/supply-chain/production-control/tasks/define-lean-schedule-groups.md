@@ -55,3 +55,6 @@ ms.locfileid: "4977891"
 3. [品目配賦キー] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 4. 一覧で、選択された行のリンクをクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

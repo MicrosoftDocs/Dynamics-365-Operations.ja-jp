@@ -168,3 +168,6 @@ Microsoft Dynamics 365 Supply Chain Management には、場所を操作したり
 
 > [!NOTE]
 > 場所フィールドは、倉庫トランザクションによってのみ更新されます。 仕訳帳またはその他の非 WHS プロセスを使用して在庫を移動した場合、フィールドは更新されません。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

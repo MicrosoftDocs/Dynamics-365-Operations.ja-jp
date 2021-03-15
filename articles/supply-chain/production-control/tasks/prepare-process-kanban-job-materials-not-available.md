@@ -51,3 +51,6 @@ ms.locfileid: "4994094"
 6. [準備] をクリックします。
     * [ジョブ ステータス] にアイコンがあるということは、ジョブが準備が整っていることを意味します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

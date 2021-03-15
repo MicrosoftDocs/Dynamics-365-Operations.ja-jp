@@ -42,3 +42,6 @@ Commerce の一部として、そのままで使用できる **年別チャネ�
 - **店舗管理** ワークスペース &gt; **Retail と Commerce** &gt; **チャネル** &gt; **店舗管理** &gt; **レポート** &gt; **時間別チャネル売上レポート**
 - **店舗財務** ワークスペース &gt; **Retail と Commerce** &gt; **チャネル** &gt; **店舗財務** &gt; **レポート** &gt; **時間別チャネル売上レポート**
 - **照会およびレポート** セクション &gt; **Retail と Commerce** &gt; **照会およびレポート** &gt; **売上レポート** &gt; **時間別チャネル売上レポート**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

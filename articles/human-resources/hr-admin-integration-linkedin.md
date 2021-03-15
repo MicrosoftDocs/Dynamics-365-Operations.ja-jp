@@ -190,3 +190,6 @@ LinkedIn タレント ハブから Human Resources にエクスポートされ�
 
 [構成 Dataverse 仮想テーブル](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

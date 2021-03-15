@@ -75,3 +75,6 @@ ms.locfileid: "5060759"
 派生した源泉徴収税額は仕入先支払から差し引き、関連する伝票の **源泉徴収税勘定** に転記されます。
 
 ![関連する伝票が表示される源泉徴収税勘定](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

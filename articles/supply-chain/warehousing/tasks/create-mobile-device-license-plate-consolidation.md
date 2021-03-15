@@ -36,3 +36,6 @@ ms.locfileid: "4977241"
 5. [モード] フィールドで [間接] を選択します。
 6. [活動コード] フィールドでは、[ライセンスプレートを結合する] を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

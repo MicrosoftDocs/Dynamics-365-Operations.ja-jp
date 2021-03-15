@@ -69,3 +69,6 @@ ms.locfileid: "5006061"
 38. **アクション ウィンドウ** で販売をクリックします。
 39. **販売価格** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

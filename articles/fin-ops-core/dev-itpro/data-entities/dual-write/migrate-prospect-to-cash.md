@@ -98,3 +98,6 @@ ms.locfileid: "4959849"
 ## <a name="quote-and-quote-product-tables"></a>見積および見積製品テーブル
 
 **見積** テーブルについては、このトピックの前にある [オーダー テーブル](#order-table) セクションの指示に従ってください。 **見積製品** テーブルについては、[オーダー製品テーブル](#order-products-table) セクションの指示に従ってください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

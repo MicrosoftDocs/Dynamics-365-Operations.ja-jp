@@ -86,3 +86,6 @@ Supply Chain Management には、容積ベースの積荷構築戦略という�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

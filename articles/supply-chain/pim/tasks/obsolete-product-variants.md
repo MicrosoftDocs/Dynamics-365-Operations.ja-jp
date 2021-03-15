@@ -72,3 +72,6 @@ ms.locfileid: "4986857"
 
 8. 一覧で、目的のレコードを見つけ、選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

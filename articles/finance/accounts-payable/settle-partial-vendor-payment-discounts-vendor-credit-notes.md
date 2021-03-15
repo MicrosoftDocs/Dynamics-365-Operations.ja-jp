@@ -70,3 +70,6 @@ Fabrikam の仕入先は、訂正票に対して現金割引を提供します�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

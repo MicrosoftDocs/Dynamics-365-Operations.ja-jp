@@ -45,3 +45,6 @@ ms.locfileid: "5003209"
 6. [転記] をクリックします。
     * 選択した請求書を転記します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

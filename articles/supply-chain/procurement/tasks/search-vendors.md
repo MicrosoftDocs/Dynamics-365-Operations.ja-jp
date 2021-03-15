@@ -38,3 +38,6 @@ ms.locfileid: "5020707"
 6. [国/地域] フィールドに値を入力します。
 7. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

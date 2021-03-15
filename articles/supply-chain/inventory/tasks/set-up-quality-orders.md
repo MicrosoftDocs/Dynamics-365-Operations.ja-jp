@@ -135,3 +135,5 @@ ms.locfileid: "5011475"
 
 > [!NOTE]
 > *倉庫プロセスの品質管理* 機能では、品質関連の設定のその他の追加オプションを提供します。 これは新しい条件 (**適用可能な倉庫タイプ**) と新しい設定 (**品質処理ポリシー**) が追加されます。 この機能を有効にした場合、詳細については [倉庫プロセスの品質管理](../quality-management-for-warehouses-processes.md) を参照してください。
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

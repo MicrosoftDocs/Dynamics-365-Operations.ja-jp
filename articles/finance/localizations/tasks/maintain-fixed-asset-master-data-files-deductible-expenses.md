@@ -65,3 +65,6 @@ ms.locfileid: "4997438"
 4. [帳簿] をクリックします。
     * 帳簿が自動的に作成されたことを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

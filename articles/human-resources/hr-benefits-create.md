@@ -53,3 +53,6 @@ ms.locfileid: "5113230"
 6. [有効開始] フィールドで、日付と時刻を入力します。
 7. [福利厚生の作成] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

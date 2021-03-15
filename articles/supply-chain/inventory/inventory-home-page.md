@@ -57,3 +57,6 @@ ms.locfileid: "5000262"
 
 ### <a name="task-guides"></a>タスク ガイド
 追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの **ヘルプ** ボタンをクリックします
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

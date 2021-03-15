@@ -103,3 +103,6 @@ ms.locfileid: "5092950"
 21. [開く] をクリックします。
     * 選択した設定の実行中に収集された計算と集計の情報を含む作成済みのXMLファイルを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

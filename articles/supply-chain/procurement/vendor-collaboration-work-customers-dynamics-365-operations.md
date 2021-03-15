@@ -146,3 +146,6 @@ RFQ が修正された場合は、新しい入札を入力する必要があり�
 ## <a name="additional-resources"></a>その他のリソース
 
 [仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

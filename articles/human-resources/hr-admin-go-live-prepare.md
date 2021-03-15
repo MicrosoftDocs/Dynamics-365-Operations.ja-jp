@@ -99,3 +99,6 @@ Go-Live チェックリスト を完了したら、電子メールで、FastTrac
 ## <a name="see-also"></a>参照
 
 [Go-Live に関するよく寄せられる質問](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

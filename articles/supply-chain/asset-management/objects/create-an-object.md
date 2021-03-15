@@ -115,3 +115,6 @@ ms.locfileid: "5019432"
 ## <a name="financial-dimensions"></a>財務分析コード
 
 資産の財務分析コードを選択できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

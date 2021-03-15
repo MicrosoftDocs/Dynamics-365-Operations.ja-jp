@@ -71,3 +71,6 @@ Commerce 本社では、国や地域ごとに送付先住所の形式を定義�
 [注文詳細のモジュール](order-confirmation-module.md)
 
 [ギフト カード モジュール](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

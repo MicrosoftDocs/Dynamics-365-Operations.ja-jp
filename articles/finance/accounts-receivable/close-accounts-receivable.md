@@ -61,3 +61,6 @@ EU 販売リストの作成および送信
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ ms.locfileid: "5006819"
 3. [日曜日] セクションを展開します。
 4. [払出不可] フィールドで [はい] を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

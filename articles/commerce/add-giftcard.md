@@ -93,3 +93,6 @@ ms.locfileid: "4980385"
 [外部ギフト カードのサポート](./dev-itpro/gift-card.md)
 
 [SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

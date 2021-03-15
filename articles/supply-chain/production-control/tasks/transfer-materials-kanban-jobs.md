@@ -65,3 +65,6 @@ ms.locfileid: "4981034"
 2. [完了] をクリックします。
     * これで、両方のジョブの転送が完了します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -148,3 +148,6 @@ ER 財務分析コードをデータ ソースとして使用する（第 2 部�
 49. [保存] をクリックします。
 50. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

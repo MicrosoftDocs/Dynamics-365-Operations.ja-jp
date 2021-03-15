@@ -106,3 +106,6 @@ ms.locfileid: "5016681"
 ## <a name="view-the-purchase-order-that-is-generated"></a>生成された発注書を表示する
 
 アクション ペインの **一般** タブで、**発注書** を選択します。 表示されるページに、入札を承認したときに生成された発注書が表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

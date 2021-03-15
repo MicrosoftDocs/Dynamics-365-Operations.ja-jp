@@ -58,3 +58,6 @@ ms.locfileid: "5001951"
 1. **システム管理 \> 設定 \> ライセンス コンフィギュレーション** の順にクリックします。
 1. **取引** ノードを展開し、**エンジニアリング変更管理** チェックボックスをオンにします。
 1. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、メンテナンス モードをオフにします。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

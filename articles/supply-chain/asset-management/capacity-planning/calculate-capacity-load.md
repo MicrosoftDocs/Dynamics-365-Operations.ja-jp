@@ -60,3 +60,6 @@ ms.locfileid: "5022586"
 >[!NOTE]
 >スケジュール済み作業指示書に関する能力計画にのみ焦点を合わせる場合は、[スケジュール済み作業指示書の最大能力負荷の計算](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

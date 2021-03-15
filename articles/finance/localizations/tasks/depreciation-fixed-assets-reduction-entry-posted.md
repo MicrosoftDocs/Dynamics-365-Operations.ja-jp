@@ -52,3 +52,6 @@ ms.locfileid: "4964488"
     * 圧縮記帳に属する減価償却は、ドキュメント タイプにより下線が引かれた固定資産の減価償却とは別になります。  
 13. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

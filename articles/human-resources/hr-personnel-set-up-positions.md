@@ -67,3 +67,6 @@ ms.locfileid: "5130476"
 30. [部門] フィールドで、値を入力または選択します。
 31. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ ms.locfileid: "4990192"
 - [round 関数](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

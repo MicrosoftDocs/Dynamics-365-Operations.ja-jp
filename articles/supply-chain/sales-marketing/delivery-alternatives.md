@@ -150,3 +150,6 @@ ms.locfileid: "5035269"
 ## <a name="additional-resources"></a>その他のリソース
 
 [注文納期日](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

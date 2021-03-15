@@ -42,3 +42,6 @@ ms.locfileid: "4965933"
 ## <a name="related-topics"></a>関連トピック
 
 [サービス契約の概要](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

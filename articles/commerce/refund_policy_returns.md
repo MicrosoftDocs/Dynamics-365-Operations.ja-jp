@@ -103,3 +103,6 @@ Dynamics 365 Commerce のチャネルの返品ポリシーでは、小売業者�
 
 
 ![支払方法のリスト](media/Return-policy-page5.PNG "許可された払戻タイプ")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

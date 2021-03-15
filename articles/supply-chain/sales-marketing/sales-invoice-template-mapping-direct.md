@@ -137,3 +137,6 @@ Supply Chain Management から Sales への販売請求書ヘッダーと明細�
 [Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期](contacts-template-mapping-direct.md)
 
 [販売注文の Sales と Supply Chain Management の間の直接同期](sales-order-template-mapping-direct-two-ways.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

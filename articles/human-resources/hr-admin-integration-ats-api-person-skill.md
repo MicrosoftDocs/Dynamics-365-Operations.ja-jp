@@ -84,3 +84,6 @@ ms.locfileid: "5126101"
 [申請者追跡システム統合APIの概要](hr-admin-integration-ats-api-introduction.md)<br>
 [採用する採用候補者に対するクエリの例](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

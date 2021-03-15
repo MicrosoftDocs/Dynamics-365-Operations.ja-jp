@@ -72,3 +72,6 @@ Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービス�
    | **終了** | タイルが使用可能になる終了日時。 |
 
 4. **保存** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

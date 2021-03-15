@@ -43,3 +43,6 @@ Dynamics 365 Commerce を使用して、上位 10 製品の収益性を調査で
 - **店舗管理** ワークスペース &gt; **Retail と Commerce** &gt; **チャネル** &gt; **店舗管理** &gt; **レポート** &gt; **上位製品レポート**
 - **カテゴリと製品の管理** ワークスペース &gt; **Retail とコマース** &gt; **チャネル** &gt; **店舗管理** &gt; **レポート** &gt; **上位製品レポート**
 - **照会およびレポート** セクション &gt; **Retail と Commerce** &gt; **照会およびレポート** &gt; **売上レポート** &gt; **上位製品レポート**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

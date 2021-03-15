@@ -72,3 +72,6 @@ ms.locfileid: "5097393"
 [Cookie のコンプライアンス](cookie-compliance.md)
 
 [ヘッダー モジュール](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

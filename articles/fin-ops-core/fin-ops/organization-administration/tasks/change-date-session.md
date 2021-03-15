@@ -32,3 +32,6 @@ ms.locfileid: "4796876"
 2. **日付** フィールドに日付を入力します。
 3. **OK** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

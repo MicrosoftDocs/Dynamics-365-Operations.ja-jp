@@ -91,3 +91,6 @@ Dynamics 365 Commerce のタスク管理では、タスク リストを複数の
 [タスク リストの作成およびタスクの追加](task-mgmt-create-lists.md)
 
 [POS におけるタスクの管理](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

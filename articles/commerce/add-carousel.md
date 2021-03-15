@@ -85,3 +85,6 @@ ms.locfileid: "4986007"
 [コンテンツ ブロック モジュール](add-hero-module.md)
 
 [ビデオ プレーヤー モジュール](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

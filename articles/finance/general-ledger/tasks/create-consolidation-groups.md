@@ -46,3 +46,6 @@ ms.locfileid: "4978640"
 8. [連結勘定] フィールドに値を入力します。
 9. [連結勘定名] フィールドに値を入力します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

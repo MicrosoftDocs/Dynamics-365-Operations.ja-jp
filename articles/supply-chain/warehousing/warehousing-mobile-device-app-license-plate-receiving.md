@@ -104,3 +104,6 @@ ASN データは、*梱包構造* を使用して、積荷と出荷にリンク�
 *完了レポート* の製造シナリオに関する詳細情報は、[倉庫作業ポリシーの概要](warehouse-work-policies.md) を参照してください。
 
 入庫積荷管理に関する詳細情報については、[発注書に対する入庫積荷の倉庫処理](inbound-load-handling.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

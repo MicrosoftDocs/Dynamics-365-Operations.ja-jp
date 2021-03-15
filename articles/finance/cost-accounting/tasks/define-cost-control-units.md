@@ -40,3 +40,6 @@ ms.locfileid: "4990695"
 10. [分析コード] フィールドで、値を入力または選択します。
 11. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

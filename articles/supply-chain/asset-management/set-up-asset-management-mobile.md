@@ -84,3 +84,6 @@ Finance and Operations (Dynamics 365) モバイル アプリで資産管理機�
 **資産管理** モバイル ワークスペースの使用方法の詳細については、[資産管理モバイル ワークスペースの使用](asset-management-mobile-workspace.md) を参照してください。
 
 Finance and Operations (Dynamics 365) モバイル アプリの詳細については、[モバイル アプリのホーム ページ](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

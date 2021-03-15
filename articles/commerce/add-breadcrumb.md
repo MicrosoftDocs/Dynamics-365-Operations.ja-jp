@@ -94,3 +94,6 @@ PDP に階層リンク モジュールを追加して必要なプロパティを
 [購入ボックス モジュール](add-buy-box.md)
 
 [SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

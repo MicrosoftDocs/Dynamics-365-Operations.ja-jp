@@ -164,3 +164,6 @@ GBSI 社を例に使用して、これらの手順について解説します。
 
 - [Word 形式でレポートを生成するための新しい ER 構成を設計する](../er-design-configuration-word.md)
 - [ER を使用して生成されるドキュメントへの画像や図形の埋め込み](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

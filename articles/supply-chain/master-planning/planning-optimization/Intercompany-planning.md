@@ -87,3 +87,6 @@ ms.locfileid: "4983597"
 次の図は、計画製造オーダーの **複数レベルのペギング** ページで、この例がどのように表示されるかを示します。
 
 ![3 つの会社が関わる会社間の例](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

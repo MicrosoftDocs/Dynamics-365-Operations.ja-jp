@@ -74,3 +74,6 @@ ms.locfileid: "4968295"
     * 正しい結果が作成されていることを確認します。  
 13. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

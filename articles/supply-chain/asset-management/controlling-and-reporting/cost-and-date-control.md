@@ -107,3 +107,6 @@ ms.locfileid: "5019078"
 ![作業指示書日付管理での計算結果の例](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

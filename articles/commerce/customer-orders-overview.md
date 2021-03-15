@@ -170,3 +170,6 @@ POS [画面のレイアウト ](https://docs.microsoft.com/dynamics365/commerce/
 ## <a name="additional-resources"></a>その他のリソース
 
 [ハイブリッド顧客注文](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

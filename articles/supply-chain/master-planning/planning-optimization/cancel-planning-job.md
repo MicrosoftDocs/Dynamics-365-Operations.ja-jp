@@ -59,3 +59,6 @@ Microsoft Dynamics 365 Supply Chain Management では、計画の最適化機能
 [計画の履歴と計画ログの表示](plan-history-logs.md)
 
 [プランへのフィルターの適用](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -163,3 +163,6 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 [オンライン支払手段を Adyen コネクタで保存](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [オムニ チャネル支払の概要](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

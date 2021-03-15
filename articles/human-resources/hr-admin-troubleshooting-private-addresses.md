@@ -39,3 +39,6 @@ ms.locfileid: "5113233"
 3. **保存** を選択します。
 
 ![グローバル アドレス帳パラメーター ページ](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

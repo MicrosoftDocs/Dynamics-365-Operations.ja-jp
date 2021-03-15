@@ -42,3 +42,6 @@ ms.locfileid: "4826397"
 
 > [!IMPORTANT] 
 > 職務の分離に関するルールへの準拠は、ルールを作成する際には検証されません。 既存のロールの競合を作成するルールを作成できます。 既存のユーザー ロールの割り当てが、新しいルールと競合している可能性があります。 ルールを作成または変更した後で、コンプライアンスを検証する必要があります。 詳細については、[職務分掌の競合の識別と解決](identify-resolve-conflicts-segregation-duties.md) を参照してください
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

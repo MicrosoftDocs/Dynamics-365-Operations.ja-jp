@@ -95,3 +95,6 @@ ms.locfileid: "5131796"
 1. 一部のメンテナンス計画の実行時にのみオプションを適用する場合は、**対象に含めるレコード** クイックタブで Microsoft Dynamics 365 Supply Chain Management の他のバッチ ジョブと同様に、必要に応じてフィルターを追加します。
 1. **バックグラウンドで実行** クイックタブで、Supply Chain Management の他のバッチ ジョブと同様に、必要に応じてバッチとスケジューリング オプションを設定します。
 1. **OK** を選択して、選択したメンテナンス計画を実行および/またはスケジュールします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ ms.locfileid: "4970659"
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇および欠勤要求の管理](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

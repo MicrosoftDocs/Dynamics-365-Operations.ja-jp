@@ -75,3 +75,6 @@ Ctrl + /、または Alt + Q を押しても、アクション検索を開始で
 ## <a name="action-search-vs-navigation-search"></a>アクション検索対ナビゲーション検索
 
 アクション検索がページで検索し実行するアクションであるのに対し、複数のページを検索し移動する別の検索メカニズムがあります。 この機能の詳細については、「[ナビゲーション検索](navigation-search.md)」の記事を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ ms.locfileid: "4999909"
 [プランへのフィルターの適用](plan-filters.md)
 
 [計画ジョブのキャンセル](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

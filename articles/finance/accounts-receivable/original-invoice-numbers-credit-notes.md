@@ -97,3 +97,6 @@ ms.locfileid: "5100005"
 
 > [!NOTE]
 > 請求書の原本への参照が印刷されることを前提として、文書の印刷可能な形式が正しく設定されていることを確認してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

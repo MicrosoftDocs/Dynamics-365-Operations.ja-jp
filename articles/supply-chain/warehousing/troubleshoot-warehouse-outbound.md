@@ -61,3 +61,6 @@ ms.locfileid: "4993981"
 ### <a name="issue-resolution"></a>問題の解決
 
 Microsoft は、この問題を評価し、それが機能上の制限であることを確認しました。 現時点では、WMS は直接配送をサポートしていません。 したがって、直納を使用するには、WMS 以外の品目および倉庫を選択する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

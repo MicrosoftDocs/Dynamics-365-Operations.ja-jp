@@ -60,3 +60,5 @@ Dynamics 365 Human Resources で休暇計画を作成したら、それを作業
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇計画の作成](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

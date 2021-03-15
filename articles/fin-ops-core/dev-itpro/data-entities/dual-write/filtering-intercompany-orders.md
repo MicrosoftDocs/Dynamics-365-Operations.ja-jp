@@ -66,3 +66,6 @@ ms.locfileid: "4796609"
 8. **見積書** を拡張した後、クエリ文字列として `CUSTGROUP != "<company>"` を含むフィルターを適用します。
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="CDS 販売見積ヘッダーのクエリ ダイアログ ボックスを編集する":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

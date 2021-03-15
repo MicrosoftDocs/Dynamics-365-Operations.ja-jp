@@ -368,3 +368,6 @@ BPM 明細行が削除されると、BPM 明細行に関連付けられている
 **削除された BPM 明細行**
 
 - スケジュール済みかんばん作業の移動
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

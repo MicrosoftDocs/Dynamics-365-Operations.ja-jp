@@ -72,3 +72,6 @@ Supply Chain Management で、**販売可能なリリース済製品** データ
 ### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service 製品 (Supply Chain Management から Field Service) : 製品 - 製品
 
 [![データ統合のテンプレートのマッピング](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

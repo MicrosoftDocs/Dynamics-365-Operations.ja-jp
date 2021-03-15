@@ -49,3 +49,6 @@ ms.locfileid: "4991332"
 15. [カード トランザクション] をクリックします。
 16. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

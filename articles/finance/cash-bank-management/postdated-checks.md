@@ -98,3 +98,6 @@ Dynamics 365 Finance は、次の表に示すように、売掛金勘定と買�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ ms.locfileid: "4990995"
 21. 7 の月からの利息の計算に使う、月ごとの利率を入力します。 この例の場合、2.5 です。
 22. 設定を完了するには、[終了] をクリックしてください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

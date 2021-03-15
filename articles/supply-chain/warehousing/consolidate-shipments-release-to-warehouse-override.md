@@ -83,3 +83,6 @@ ms.locfileid: "4963339"
 
 - [出荷連結ポリシー](about-shipment-consolidation-policies.md)
 - [出荷連結ポリシーを構成する](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ ms.locfileid: "4982409"
 
 [新しいテーマの作成](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

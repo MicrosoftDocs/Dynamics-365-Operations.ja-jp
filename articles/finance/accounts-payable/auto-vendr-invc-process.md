@@ -68,3 +68,6 @@ ms.locfileid: "4972134"
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>仕入先請求書の自動化 – 複数の請求書の自動処理を再開する
 インポートされた請求書が自動化プロセスを経てワークフローに正常に送信されなかった場合、システムはこの請求書を以降の自動処理から削除します。 自動化されたプロセスがワークフローに再提出する前に、買掛金勘定の担当者が請求書を確認し、編集することができます。 同じ修正で複数の請求書のエラー原因が解決できる場合は、**自動請求処理の再開** ページで自動処理を再開することができます。 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

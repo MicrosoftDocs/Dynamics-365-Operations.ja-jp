@@ -48,3 +48,6 @@ ms.locfileid: "5130328"
     * 必要に応じて、新しい職位の [部門] を選択します。  
 13. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

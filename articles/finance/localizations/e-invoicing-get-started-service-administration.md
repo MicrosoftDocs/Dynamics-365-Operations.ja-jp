@@ -150,3 +150,6 @@ ms.locfileid: "5104403"
 
 3. **環境** フィールドに、電子請求書のアドオン環境の名前を入力します。
 4. **保存** を選択し、ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

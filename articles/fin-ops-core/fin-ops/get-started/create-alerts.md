@@ -102,3 +102,6 @@ ms.locfileid: "4798430"
     ```
 2. SysTableBrowser フォームから警告を作成します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ ms.locfileid: "4977191"
 15. 一覧で、製品を受け入れる倉庫を見つけ、選択します。
 16. 選択した倉庫に対して作成された注文を表示するには、[注文] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

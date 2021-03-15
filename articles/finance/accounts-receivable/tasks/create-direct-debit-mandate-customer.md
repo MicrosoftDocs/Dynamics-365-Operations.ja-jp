@@ -89,3 +89,6 @@ ms.locfileid: "4991045"
 3. 委任状を追加した顧客を選択します。
 4. **口座引落の委任状 ID** フィールドで、値を入力または選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

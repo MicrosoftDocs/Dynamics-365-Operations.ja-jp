@@ -52,3 +52,6 @@ ms.locfileid: "4992323"
 
 ## <a name="select-the-product-configuration"></a>製品コンフィギュレーションの選択
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1029,3 +1029,6 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 - [Azure での Retail E-commerce 開発/テスト環境の配置](deploy-retail-ecommerce-devtest-environment-azure.md) 
 - [Azure での Retail Mobility 開発/テスト環境の配置](deploy-retail-mobility-devtest-environment-azure.md) 
 - [Azure での高可用性環境の配置](deploy-high-availability-environment-azure.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

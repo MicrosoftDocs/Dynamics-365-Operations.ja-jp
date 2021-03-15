@@ -438,3 +438,6 @@ ms.locfileid: "4996387"
 [在庫状態](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

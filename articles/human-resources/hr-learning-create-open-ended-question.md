@@ -38,3 +38,6 @@ ms.locfileid: "5114983"
     * テキストまたはメモの入力タイプは自由回答式の質問に使用されます。  
 6. [テキスト] フィールドに、質問を入力します。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

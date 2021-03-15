@@ -61,3 +61,6 @@ Commerce は、チャネル固有の割引を定義するために価格グル�
 ## <a name="additional-resources"></a>その他のリソース
 
 [価格調整と割引](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

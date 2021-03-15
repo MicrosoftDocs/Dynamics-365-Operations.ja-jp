@@ -52,3 +52,6 @@ ms.locfileid: "5006163"
 [店舗または従業員へのタスク リストの割り当て](task-mgmt-assign-lists.md)
 
 [POS におけるタスクの管理](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

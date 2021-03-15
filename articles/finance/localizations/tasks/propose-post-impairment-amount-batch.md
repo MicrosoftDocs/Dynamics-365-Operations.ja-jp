@@ -47,3 +47,6 @@ ms.locfileid: "4988241"
     * 固定資産が正しく作成され、減損損失額が正しいことを確認します。  
 14. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

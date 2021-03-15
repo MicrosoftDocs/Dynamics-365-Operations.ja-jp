@@ -107,3 +107,6 @@ Supply Chain Management フィールド **主勘定表示値** に対する既�
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>契約請求書 (Field Service から Supply Chain Management) : 請求明細行
 
 [![データ統合のテンプレートのマッピング](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

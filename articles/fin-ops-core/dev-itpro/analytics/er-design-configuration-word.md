@@ -72,3 +72,6 @@ ER 形式への変更をデザイン時に保存すると、階層形式の構�
 
 - [Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成](./tasks/er-design-configuration-word-2016-11.md)
 - [ER を使用して生成されるドキュメントへの画像や図形の埋め込み](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ ms.locfileid: "5004579"
 
 > [!NOTE]
 > たとえば、同じ場所に異なる数量を持つ品目の補充などを制御するために、場所別在庫限度を使用することはできません。 この場合は、*補充テンプレート* を使用します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

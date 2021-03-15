@@ -241,3 +241,6 @@ ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [アクション依存の ER 送信先を構成する](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

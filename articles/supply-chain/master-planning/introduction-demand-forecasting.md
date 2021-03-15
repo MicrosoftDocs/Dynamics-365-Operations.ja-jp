@@ -102,3 +102,6 @@ Supply Chain Management を使用してベースラインの予測を視覚化�
 [需要予測を計算するときに、トランザクション履歴データから異常値を削除](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

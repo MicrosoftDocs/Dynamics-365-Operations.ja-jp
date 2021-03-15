@@ -90,3 +90,6 @@ ms.locfileid: "5097181"
 [モジュール ライブラリの概要](starter-kit-overview.md)
 
 [クイック ビュー モジュール](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

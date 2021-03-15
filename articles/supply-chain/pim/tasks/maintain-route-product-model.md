@@ -66,3 +66,6 @@ ms.locfileid: "4966833"
 15. [要件] フィールドで、値を入力または選択します。
 16. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

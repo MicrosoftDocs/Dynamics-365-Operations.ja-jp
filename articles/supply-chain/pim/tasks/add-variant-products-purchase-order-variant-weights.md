@@ -47,3 +47,6 @@ ms.locfileid: "4967008"
 17. 数量を '1000' に設定します。
 18. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ BOM バージョンの需要展開は、特定サイト (および場合によ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -147,3 +147,6 @@ ms.locfileid: "4976332"
     * 転記済みの仕訳入力を確認します。  
 16. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

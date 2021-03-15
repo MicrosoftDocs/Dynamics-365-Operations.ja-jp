@@ -250,3 +250,6 @@ MRP では、最初の販売注文に関連付けられた計画オーダーが�
 ## <a name="see-also"></a>参照
 
 詳しい解説については、元の [(動的) マイナス在庫日数の詳細](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/) ブログ投稿を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -183,3 +183,6 @@ Microsoft Dynamics 365 Human Resources は、Dataverse を使用して拡張性�
 [Human Resources 仮想テーブルに関するよく寄せられる質問](hr-admin-virtual-entity-faq.md)<br>
 [Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [用語の更新](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

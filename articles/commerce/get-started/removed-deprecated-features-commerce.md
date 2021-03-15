@@ -122,3 +122,6 @@ ms.locfileid: "5154204"
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>削除済みまたは非推奨の機能に関する以前の発表
 以前のリリースで削除または非推奨になった機能の詳細については、[以前のリリースで削除または非推奨になった機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ ms.locfileid: "4999834"
 1. Microsoft Office で **開く** をクリックします。
 2. Excel で **需要予測の編集** をクリックします。 Excel では、需要予測明細行を追加、削除、および編集できます。 Excel でデータを検索できない場合、「サインインしたままにする」オプションを有効化することによってサイン インし、データ接続のアプリを信頼する必要があります。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

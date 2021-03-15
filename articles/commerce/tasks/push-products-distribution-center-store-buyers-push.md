@@ -52,3 +52,6 @@ ms.locfileid: "5012344"
 19. [注文の作成] をクリックします。
 20. [はい] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

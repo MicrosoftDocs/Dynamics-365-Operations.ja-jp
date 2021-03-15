@@ -183,3 +183,5 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 ## <a name="see-also"></a>参照
 
 [申請者追跡システム統合APIの概要](hr-admin-integration-ats-api-introduction.md)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

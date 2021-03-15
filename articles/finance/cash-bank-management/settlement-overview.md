@@ -77,3 +77,6 @@ ms.locfileid: "4989173"
 ## <a name="additional-resources"></a>追加リソース
 
 - [残余決済](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

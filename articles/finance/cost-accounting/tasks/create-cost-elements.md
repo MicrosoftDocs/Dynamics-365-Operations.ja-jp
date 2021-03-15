@@ -57,3 +57,6 @@ ms.locfileid: "4990795"
 1. [分析コード メンバーの表示] をクリックします。
     * 原価が適用される事業のコスト要素として、インポートされた勘定科目が表示されます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

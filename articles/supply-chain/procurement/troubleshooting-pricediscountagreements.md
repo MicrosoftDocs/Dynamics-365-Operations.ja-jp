@@ -124,3 +124,6 @@ ms.locfileid: "5007369"
 
 承認されたかまたは却下されたかに関係なく、見積依頼 (RFQ) に対するすべての返信は、売買契約を作成できます。 詳細については、[見積依頼 (RFQ) の概要](request-quotations.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

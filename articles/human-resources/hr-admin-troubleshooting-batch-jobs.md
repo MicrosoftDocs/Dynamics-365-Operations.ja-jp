@@ -65,3 +65,6 @@ Microsoft Dynamics 365 Human Resources は、通常の営業時間中に実行�
 ## <a name="additional-resources"></a>追加リソース
 
 [自動クリーンアップ タスクを使用したパフォーマンスの最適化](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -259,3 +259,6 @@ Supply Chain Management がリリース済製品に最も関連する関連工�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

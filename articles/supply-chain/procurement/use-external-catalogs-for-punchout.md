@@ -54,3 +54,5 @@ ms.locfileid: "5018756"
 
 - [パンチアウト e-procurement の外部カタログの設定](set-up-external-catalog-for-punchout.md)
 - [cXML の拡張機能の購入](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

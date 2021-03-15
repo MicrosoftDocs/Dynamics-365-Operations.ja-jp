@@ -150,3 +150,6 @@ Sales では、2 つの列が注文の状態を示します。 マップする�
     ![統合ユーザー モード列の値の変更](media/sales-map-user-mode-yes.png)
 
 これで、販売注文がマップされました。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ ms.locfileid: "4978605"
 21. **為替換算タイプ** フィールドで、口座の為替レートの計算方法を選択します。
 22. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

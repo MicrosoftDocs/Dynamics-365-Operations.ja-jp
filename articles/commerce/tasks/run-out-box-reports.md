@@ -63,3 +63,6 @@ ms.locfileid: "5003711"
 5. [エクスポート] をクリックします。
 6. PDF をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

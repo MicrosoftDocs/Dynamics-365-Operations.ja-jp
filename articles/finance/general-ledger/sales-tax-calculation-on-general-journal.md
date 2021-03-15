@@ -156,3 +156,6 @@ ms.locfileid: "4975561"
 | 消費税収入 | 負              | 税収入の勘定 | 負 (貸方)  |
 | 消費税支払    | 正              | 税支払の勘定    | 負 (貸方)  |
 | 消費税支払    | 負              | 税支払の勘定    | 正 (借方)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

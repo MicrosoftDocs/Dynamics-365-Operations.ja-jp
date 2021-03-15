@@ -126,3 +126,6 @@ ms.locfileid: "4968352"
 |         2,001 ～ 0         | 20% |                    2,545.00                     |         509.00          |
 |                         |            |        <strong>合計 WHT 金額</strong>        | <strong>759.00</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

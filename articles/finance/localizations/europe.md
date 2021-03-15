@@ -99,3 +99,6 @@ ms.locfileid: "5099902"
 
 - [電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

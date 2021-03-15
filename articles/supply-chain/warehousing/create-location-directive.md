@@ -257,3 +257,6 @@ ms.locfileid: "4963313"
 
 - ビデオ: [倉庫管理コンフィギュレーションの詳細情報](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - ヘルプ トピック: [作業テンプレートと場所のディレクティブを使用した倉庫作業の制御](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

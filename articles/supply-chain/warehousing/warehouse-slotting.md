@@ -383,3 +383,6 @@ ms.locfileid: "4993756"
 1. 必要に応じて繰り返し自動的に実行されるように設定します。
 
 シナリオの演習では、自動スロッティングを **しない** に設定してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

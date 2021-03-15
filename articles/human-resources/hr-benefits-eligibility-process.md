@@ -54,3 +54,6 @@ ms.locfileid: "5113198"
 25. [ステータス列フィルター] を開きます。
 26. 昇順で並べ替え
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

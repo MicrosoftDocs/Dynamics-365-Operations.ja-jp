@@ -56,3 +56,6 @@ ms.locfileid: "4988001"
     * 決済日は、必要に応じて変更できます。  
     * ステータスが「裏書決済済」に更新されていることを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

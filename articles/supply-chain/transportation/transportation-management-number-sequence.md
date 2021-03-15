@@ -48,3 +48,6 @@ ms.locfileid: "5004743"
 1. **編集** を選択します。
 1. **概要** クイックタブで、**製品番号順序** フィールドのオプションを選択します。
 1. ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

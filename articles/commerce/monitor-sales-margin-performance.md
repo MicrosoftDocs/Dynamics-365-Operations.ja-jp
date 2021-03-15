@@ -48,3 +48,6 @@ Commerce の一部として、ユーザーは次の分析コードで販売と�
 - **カテゴリと製品の管理** ワークスペース &gt; **Retail および Commerce** &gt; **製品とカテゴリ** &gt; **店舗管理** &gt; **レポート**
 - **価格設定および割引の管理** ワークスペース &gt; **Retail および Commerce** &gt; **価格決定と割引** &gt; **店舗管理** &gt; **レポート**
 - **照会とレポート** セクション &gt; **Retail および Commerce** &gt; **照会とレポート** &gt; **売上レポート**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

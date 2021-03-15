@@ -97,3 +97,6 @@ ms.locfileid: "4967133"
 ## <a name="related-topic"></a>関連するトピック
 
 [コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ ms.locfileid: "4974038"
 14. [付帯サービス手数料タイプ] フィールドに数値を入力します。
 15. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

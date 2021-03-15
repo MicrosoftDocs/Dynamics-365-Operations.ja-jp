@@ -51,3 +51,6 @@ ms.locfileid: "4988023"
 4. 一覧で、選択された行「SEPA CT」のリンクをクリックします。
 5. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

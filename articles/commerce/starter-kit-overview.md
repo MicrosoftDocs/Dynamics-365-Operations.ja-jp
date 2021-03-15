@@ -65,3 +65,6 @@ Dynamics 365 Commerce モジュール ライブラリは、E コマース Web �
 [ヘッダー モジュール](author-header-module.md)
 
 [フッター モジュール](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

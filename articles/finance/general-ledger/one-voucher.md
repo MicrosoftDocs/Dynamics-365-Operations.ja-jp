@@ -186,3 +186,6 @@ Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) に
 ### <a name="the-system-allows-it"></a>システムはそれを許可します
 
 組織は多くの場合、システムが影響を理解することなくそれらを使用できるようにするため、単なる 1 つのバウチャー機能を使用することがあります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

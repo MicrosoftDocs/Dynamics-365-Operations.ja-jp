@@ -36,3 +36,6 @@ Dynamics 365 Human Resources 雇用カテゴリを設定して、作業者と同
 3. **作業者タイプ**、**雇用カテゴリ**、および **説明** の値を指定します。
 
 4. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

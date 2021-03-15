@@ -133,3 +133,6 @@ BOM 内の品目を交換する場合は、BOM デザイナで BOM 明細行の�
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ ms.locfileid: "5005105"
 7. [送信] をクリックします。
 8. 工順を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

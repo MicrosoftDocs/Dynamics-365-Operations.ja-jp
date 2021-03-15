@@ -64,3 +64,6 @@ ms.locfileid: "4979266"
 10. アクション ウィンドウで、[確認] をクリックします。
 11. [照合の詳細] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

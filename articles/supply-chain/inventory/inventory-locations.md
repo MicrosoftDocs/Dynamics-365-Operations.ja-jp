@@ -65,3 +65,6 @@ ms.locfileid: "4978016"
 --------
 
 [新しい倉庫レイアウトの作成](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

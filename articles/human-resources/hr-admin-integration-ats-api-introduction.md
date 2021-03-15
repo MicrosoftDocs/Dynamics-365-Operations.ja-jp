@@ -137,3 +137,5 @@ API 用の仮想テーブルの生成の詳細については、[Dataverse 仮�
 [Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Microsoft Dataverse Web API を使用する](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
 [Web API を使用したオプション セットの作成と更新](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

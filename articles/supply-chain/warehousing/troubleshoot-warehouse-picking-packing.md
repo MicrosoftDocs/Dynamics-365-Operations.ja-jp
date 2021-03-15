@@ -109,3 +109,6 @@ WMS が有効になっている品目に対して転記された梱包明細を�
 ### <a name="issue-resolution"></a>問題の解決
 
 この問題を修正するには、クラスター プロファイルを編集し、**職位のアクティブ化** オプションを *いいえ* に設定します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

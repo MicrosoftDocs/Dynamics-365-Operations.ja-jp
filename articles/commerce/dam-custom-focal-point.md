@@ -59,3 +59,6 @@ ms.locfileid: "4972935"
 [画像のトリミング](dam-crop-images.md)
 
 [静的ファイルのアップロードと提供](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

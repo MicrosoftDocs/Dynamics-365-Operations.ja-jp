@@ -60,3 +60,6 @@ ms.locfileid: "4973963"
 
 > [!NOTE]
 > **出荷配送業者** ページで作成したプロファイルは、**評価プロファイル** ページにも表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

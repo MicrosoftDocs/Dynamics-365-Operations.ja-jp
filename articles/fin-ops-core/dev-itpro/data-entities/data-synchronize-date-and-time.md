@@ -40,3 +40,6 @@ ms.locfileid: "4798722"
 4. **タイム ゾーン** を **協定世界タイムゾーン** に変更し、**言語** を **En-US** に変更します。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

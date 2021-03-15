@@ -55,3 +55,6 @@ ms.locfileid: "5006944"
 3. [活動] フィールドで値を入力または選択します。
 4. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -135,3 +135,6 @@ FIFO を使用する場合、LIFO ルールを使用する必要はありませ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

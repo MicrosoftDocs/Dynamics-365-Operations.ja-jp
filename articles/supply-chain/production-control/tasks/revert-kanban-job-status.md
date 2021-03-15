@@ -54,3 +54,6 @@ ms.locfileid: "4981159"
     * 同じジョブを選択します。  
     * 空のかんばんアイコンによって示される、かんばん作業のジョブ ステータスが [計画済] に戻されていることを確認してください。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

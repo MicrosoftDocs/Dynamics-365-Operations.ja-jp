@@ -59,3 +59,6 @@ ms.locfileid: "5012225"
 
 
 詳細については、「[顧客支払の預金](tasks/deposit-customer-payments.md)」を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

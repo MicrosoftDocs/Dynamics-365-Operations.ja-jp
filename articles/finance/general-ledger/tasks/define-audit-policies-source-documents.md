@@ -87,3 +87,6 @@ ms.locfileid: "5021432"
 57. **関連** セクションを展開します。
 58. 一覧で、目的のレコードを見つけ、選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

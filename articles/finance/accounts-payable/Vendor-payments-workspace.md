@@ -77,3 +77,6 @@ ms.locfileid: "4979566"
 |    顧客残高への仕入先     |                                                                                                                   <ul><li>顧客残高への仕入先</li><li>会社ごとの顧客残高への仕入先</li><li>顧客残高への仕入先の詳細</li></ul>                                                                                                                    |
 |    支払保留の請求書     |                                                                                         <ul><li>支払保留の請求書</li><li>支払保留の請求書の詳細</li><li>会社ごとの支払保留の請求書</li><li>仕入先グループごとの支払保留の請求書</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

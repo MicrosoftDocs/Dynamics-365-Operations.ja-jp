@@ -88,3 +88,6 @@ ms.locfileid: "4969606"
 
 > [!NOTE]
 > 資産のリース仕訳帳は手動で作成できません。 リースのスケジュールが作成されると、自動的に作成されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

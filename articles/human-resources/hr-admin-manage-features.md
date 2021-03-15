@@ -94,3 +94,5 @@ Human Resources の新機能に関する詳細は、[Human Resources の新機�
 
 - [Human Resources の新機能](hr-admin-whats-new.md)
 - [Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

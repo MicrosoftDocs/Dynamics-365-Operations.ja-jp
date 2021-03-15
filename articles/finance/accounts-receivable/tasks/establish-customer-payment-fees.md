@@ -50,3 +50,6 @@ ms.locfileid: "5012117"
 18. **手数料の通貨** フィールドで、手数料の通貨を選択します。 これは、作成される手数料の通貨です。  
 19. **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

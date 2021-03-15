@@ -36,3 +36,6 @@ Dynamics 365 Human Resources で丸めルールを設定して、組織のニー
 3. **最も近い値に丸める**、**シナリオ**、および **丸めフォーム** の値を指定します。
 
 4. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

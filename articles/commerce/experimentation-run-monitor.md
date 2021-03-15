@@ -52,3 +52,6 @@ ms.locfileid: "4965221"
 
 ## <a name="next-step"></a>次のステップ
 [バリエーションのレベルを上げて実験を完了する](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Cookie 同意モジュールを複数のサイト ページに効率的に追加
 [ヘッダー モジュール](author-header-module.md) 
 
 [Cookie のコンプライアンス](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

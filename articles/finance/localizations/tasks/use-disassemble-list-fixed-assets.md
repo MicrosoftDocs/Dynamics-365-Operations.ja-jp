@@ -70,3 +70,6 @@ ms.locfileid: "4968277"
     * 貸方金額を変更できます。  
 8. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

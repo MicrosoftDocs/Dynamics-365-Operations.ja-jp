@@ -50,3 +50,6 @@ ms.locfileid: "4797704"
 ## <a name="additional-resources"></a>追加リソース
 
 [ワークフローの作成の概要](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

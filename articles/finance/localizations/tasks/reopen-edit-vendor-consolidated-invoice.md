@@ -54,3 +54,6 @@ ms.locfileid: "4988232"
     * [月次締め日] 前に請求されている発注書が追加されていることを確認します。  
 3. [確認] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

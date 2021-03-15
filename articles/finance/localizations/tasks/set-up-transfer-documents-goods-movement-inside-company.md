@@ -73,3 +73,6 @@ ms.locfileid: "4988048"
 10. [梱包明細] をクリックします。
 11. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

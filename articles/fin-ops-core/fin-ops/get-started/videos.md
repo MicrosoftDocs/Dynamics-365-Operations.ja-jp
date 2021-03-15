@@ -167,3 +167,6 @@ ms.locfileid: "4797878"
 [FastTrack 技術解説](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) は、対象分野固有の詳細知識により顧客とパートナーにベスト プラクティスと技術的なレベルを提供することに焦点を合わせます。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 [Bing Maps REST API](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [マップ モジュール](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

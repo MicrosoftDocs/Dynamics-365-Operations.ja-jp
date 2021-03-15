@@ -100,3 +100,6 @@ Commerce サイト ビルダでデジタル ギフト カードのカスタム�
 [オンライン機能プロファイルの作成](online-functionality-profile.md)
 
 [外部ギフト カードのサポート](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

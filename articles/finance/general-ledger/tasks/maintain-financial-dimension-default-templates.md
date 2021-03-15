@@ -41,3 +41,6 @@ ms.locfileid: "4968630"
 11. 入力された割合に対応する財務分析コード値を入力します。
 12. **保存** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

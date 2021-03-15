@@ -44,3 +44,6 @@ ms.locfileid: "5130160"
 2. [編集] をクリックします。
 3. [実際の返却日] フィールドに日付を入力します。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

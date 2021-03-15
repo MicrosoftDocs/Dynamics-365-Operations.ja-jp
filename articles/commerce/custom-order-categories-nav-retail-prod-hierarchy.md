@@ -87,3 +87,6 @@ ms.locfileid: "4976766"
 
 > [!NOTE]
 > 既定では、カスタム並べ替え順序機能が無効になっています。 この機能およびその他の機能を有効にする方法については、[機能管理](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

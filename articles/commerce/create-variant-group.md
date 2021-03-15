@@ -72,3 +72,6 @@ Dynamics 365 Commerce は、製品に対して複数のバリアントをサポ�
 [小売製品の設定](set-up-retail-products.md)
 
 [製品分析コード](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

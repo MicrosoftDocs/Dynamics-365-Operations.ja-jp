@@ -409,3 +409,6 @@ Supply Chain Management では、生産フロアのジョブを生成すると�
 - *すべて* の関係を含む工順工程関係を定義し、それらの関係にガイドを割り当てると、ジョブには最も具体的な関係のあるガイドのみが表示されます。  
 
 ![関連するガイドを解決する図](media/instruction-guides-Resolve.png "関連するガイドを解決する図")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

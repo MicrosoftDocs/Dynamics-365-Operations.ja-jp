@@ -237,3 +237,6 @@ ms.locfileid: "4985864"
 - [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Dynamics 365 Commerce 評価環境で BOPIS を構成する](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

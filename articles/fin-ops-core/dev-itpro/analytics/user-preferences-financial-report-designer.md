@@ -72,3 +72,6 @@ ms.locfileid: "5093190"
 ## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

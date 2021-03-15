@@ -110,3 +110,6 @@ Web サイトのユーザーは、ナビゲーション階層からカテゴリ�
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

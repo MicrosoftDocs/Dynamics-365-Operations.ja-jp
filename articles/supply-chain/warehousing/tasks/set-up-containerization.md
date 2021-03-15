@@ -80,3 +80,6 @@ ms.locfileid: "4977041"
 11. **フィールドの選択** フィールドで、値を入力または選択します。
 12. **OK** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

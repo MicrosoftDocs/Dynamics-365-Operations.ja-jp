@@ -74,3 +74,6 @@ ms.locfileid: "4980459"
 
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

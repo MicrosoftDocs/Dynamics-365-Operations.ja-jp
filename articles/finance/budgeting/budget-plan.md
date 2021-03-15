@@ -246,3 +246,6 @@ C. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコン�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

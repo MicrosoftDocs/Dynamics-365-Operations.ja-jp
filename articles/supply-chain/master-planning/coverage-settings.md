@@ -65,3 +65,6 @@ ms.locfileid: "4999984"
 ## <a name="additional-resources"></a>追加リソース
 
 [マスター プランの概要](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

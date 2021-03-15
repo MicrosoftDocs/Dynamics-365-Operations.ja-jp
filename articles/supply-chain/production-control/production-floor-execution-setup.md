@@ -79,3 +79,6 @@ ms.locfileid: "4966282"
 既定では、生産現場の実行インターフェースは、12 時間誰も使用しない場合、自動的にサインアウトします。 Supply Chain Management ユーザーは、再度サインインする必要があります。 ただし、タイムアウト制限を最大 90 日まで延長できます。
 
 タイムアウト制限を延長するには、Supply Chain Management にサインインし、**システム管理 \> ユーザー \> セッション拡張機能** に移動します。 デバイスへのサインインに使用する Supply Chain Management のユーザー アカウントと、セッションをアクティブにしておく時間数を指定します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

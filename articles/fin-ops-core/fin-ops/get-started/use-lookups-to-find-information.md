@@ -83,3 +83,6 @@ ms.locfileid: "4798146"
 フィルターが適用された後 (以下の画像を参照)、ユーザーは通常通り行を検索して選択できます。
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

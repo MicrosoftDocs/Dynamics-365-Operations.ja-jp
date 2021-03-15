@@ -240,3 +240,6 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>削除済みまたは非推奨の機能に関する以前の発表
 以前のリリースで削除または非推奨になった機能の詳細については、[以前のリリースで削除または非推奨になった機能](../migration-upgrade/deprecated-features.md)を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

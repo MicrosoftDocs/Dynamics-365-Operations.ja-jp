@@ -57,3 +57,6 @@ ms.locfileid: "4975511"
 レポートで非課税勘定のみを表示するには、次の図に示すように、アスタリスク(\*) などのフィルター条件を設定します。
 
 ![非課税勘定を表示するレポート](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

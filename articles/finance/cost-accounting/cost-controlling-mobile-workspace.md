@@ -144,3 +144,6 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 11. 個々の原価要素のパフォーマンスを表示します。
 12. 特定の原価要素も検索できます。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

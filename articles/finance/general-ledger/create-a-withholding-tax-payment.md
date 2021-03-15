@@ -40,3 +40,6 @@ ms.locfileid: "5060762"
 7. **OK** をクリックします。
 
 ![源泉徴収税支払に使用するパラメーター](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

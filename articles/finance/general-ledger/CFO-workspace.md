@@ -55,3 +55,6 @@ ms.locfileid: "4985115"
 16. プロジェクトを構築して、結果を表示するアプリケーションを開きます。
 
     [![完了済ワークスペース](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

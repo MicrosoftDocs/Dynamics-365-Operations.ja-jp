@@ -243,3 +243,6 @@ Proseware, Inc. は最近発表された国固有の要件に従った電子支�
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>カスタマイズされた形式の支払ファイル生成テストの実行
 並列する Finance and Operations セッションで 「作成されたフォーマットを使用して支払い用の電子文書を生成する」 の手順を完了します。 電子支払方法のパラメーターで作成した 「BACS (英国関税)」 形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

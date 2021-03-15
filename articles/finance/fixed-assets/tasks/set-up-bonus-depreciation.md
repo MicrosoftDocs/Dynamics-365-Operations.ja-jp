@@ -48,3 +48,6 @@ ms.locfileid: "4968932"
     * 割合または金額の既定値は特別減価償却費の設定によって決まります。  
 8. [優先順位] フィールドに数値を入力します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

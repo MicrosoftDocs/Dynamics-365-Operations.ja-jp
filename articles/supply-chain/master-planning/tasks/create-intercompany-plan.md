@@ -53,3 +53,6 @@ ms.locfileid: "5011414"
 2. 一覧で、選択された行のリンクをクリックします。 StaticPlanのリンクをクリックします。 会社USMFにいる必要があります。  
 3. **計画オーダー** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

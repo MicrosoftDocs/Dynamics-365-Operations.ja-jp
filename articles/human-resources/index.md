@@ -78,3 +78,6 @@ Human Resources はユーザーや業務データを関連付けて、従業員�
 [休暇および欠勤の管理](hr-leave-and-absence-overview.md)</br>
 [従業員の開発](hr-develop-performance-management-overview.md)</br>
 [コースの作成](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

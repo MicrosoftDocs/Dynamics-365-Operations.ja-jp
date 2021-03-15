@@ -63,3 +63,6 @@ ms.locfileid: "4972333"
     * この品目がコールセンターで販売される場合、追加のビジネス ロジックは、選択した連続プログラムから適用されます。  
 7. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

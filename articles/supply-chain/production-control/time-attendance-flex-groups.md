@@ -184,3 +184,6 @@ ms.locfileid: "4980909"
 | 午後 06 時 00 分 | 午後 08 時 00 分 | 2    | 1.5       | 3            |
 | 午後 08 時 00 分 | 午後 09 時 00 分 | 1    | 2         | 2            |
 |          |          |      | **合計** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

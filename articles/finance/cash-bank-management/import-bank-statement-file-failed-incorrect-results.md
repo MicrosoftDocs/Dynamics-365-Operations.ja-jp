@@ -107,3 +107,6 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

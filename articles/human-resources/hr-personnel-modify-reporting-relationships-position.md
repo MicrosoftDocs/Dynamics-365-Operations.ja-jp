@@ -44,3 +44,6 @@ ms.locfileid: "5127058"
 12. [報告先職位] フィールドで値を入力または選択します。  例: 000437
 13. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

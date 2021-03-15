@@ -129,3 +129,6 @@ ER 形式を実行するときに、構成済の送信先設定を実行時に�
 [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
 [Application update 10.0.17 での電子申告フレームワーク API の変更](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

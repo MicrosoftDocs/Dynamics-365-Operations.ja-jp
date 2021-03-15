@@ -71,3 +71,6 @@ ms.locfileid: "4796999"
 + [ワークフロー内の並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)
 + [品目ワークフローのコンフィギュレーション](configure-line-item-workflow.md)
 + [ワークフローに関するよく寄せられる質問](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

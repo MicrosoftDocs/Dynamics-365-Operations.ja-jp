@@ -72,3 +72,6 @@ ms.locfileid: "4979856"
 [買い物カゴとチェックアウト ページの概要](quick-tour-cart-checkout.md)
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

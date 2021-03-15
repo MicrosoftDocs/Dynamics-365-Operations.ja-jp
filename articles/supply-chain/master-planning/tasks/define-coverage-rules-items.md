@@ -101,3 +101,6 @@ ms.locfileid: "4999884"
 11. **購買時間** フィールドに '5' を入力します。
 12. **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

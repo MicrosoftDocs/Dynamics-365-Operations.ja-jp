@@ -108,3 +108,6 @@ ms.locfileid: "5009596"
 [テンプレートとレイアウトの概要](templates-layouts-overview.md)
 
 [テンプレートの使用](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

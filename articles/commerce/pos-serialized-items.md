@@ -135,3 +135,6 @@ POS の **注文の実行** 操作を使用してシリアル化された品目�
 [POS でのインバウンド在庫操作](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [POS でのアウトバウンド在庫操作](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

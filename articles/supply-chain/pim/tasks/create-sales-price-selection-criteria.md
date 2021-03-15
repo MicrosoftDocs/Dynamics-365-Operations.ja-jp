@@ -53,3 +53,6 @@ ms.locfileid: "4999659"
 4. [基準] フィールドで、[顧客グループ 10] を選択します。 
 5. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -117,3 +117,6 @@ Microsoft 365 の個人連絡先に仕入先の連絡先を追加できます。
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

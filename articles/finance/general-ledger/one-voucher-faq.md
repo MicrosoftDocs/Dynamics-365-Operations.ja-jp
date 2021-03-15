@@ -51,3 +51,6 @@ ms.locfileid: "5107752"
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>廃止予定日が決定した場合、その日付はどこで告知されるますか？
 
 単一の伝票の非推奨化は、広く拡散すべき大きな変更点です。 これは、製品ドキュメント、ブログ記事、および該当するマイクロソフトの主催するカンファレンスでの発表を通じて、非推奨となる日付けよりも先立って通知されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

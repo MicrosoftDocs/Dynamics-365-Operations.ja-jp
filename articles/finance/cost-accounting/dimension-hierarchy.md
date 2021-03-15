@@ -332,3 +332,6 @@ Excel または Power BI を使用してレポートを作成する場合は、�
 > [!NOTE] 
 > - アクセス リスト階層が Power BI のデータに影響を及ぼす前に、アクセス リスト階層と Power BI の行レベルのセキュリティがペアリングされる必要があります。 詳細については、「[原価会計コンテンツ パックのセキュリティ設定](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)」を参照してください。
 > - アクセス リスト階層は、Excel へのデータのエクスポートの保護には役立ちません。 したがって、そのレポート ツールは、データの表示に完全なアクセス権を持つ必要があるコスト経理担当者およびマネージャーのみが使用します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

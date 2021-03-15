@@ -42,3 +42,6 @@ ms.locfileid: "4988223"
 6. [伝票] をクリックします。
     * 会計伝票が取消に対して生成されていることを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

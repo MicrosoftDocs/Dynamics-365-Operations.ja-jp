@@ -109,3 +109,6 @@ Microsoft Dynamics 365 Supply Chain Management の以前のバージョンでは
 ### <a name="issue-resolution"></a>問題の解決
 
 これは、請求書および請求書グループのパラメータ設定によって異なります。 詳細については、[発注書と在庫の変動に関する会計転記](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

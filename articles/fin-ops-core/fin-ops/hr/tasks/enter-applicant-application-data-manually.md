@@ -61,3 +61,6 @@ ms.locfileid: "4797316"
 6. [保存] をクリックします。
     * 申請を保存した後、申請者の経験、報奨と送付状を含むドキュメントを添付できます。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

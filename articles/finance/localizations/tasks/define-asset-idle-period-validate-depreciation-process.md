@@ -112,3 +112,6 @@ ms.locfileid: "4964497"
 17. [OK] をクリックします。
     * アイドル期間に対して作成された特別償却の仕訳帳は検証なし  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

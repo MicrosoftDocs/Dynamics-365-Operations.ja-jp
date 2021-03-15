@@ -99,3 +99,6 @@ Microsoft では、ユーザー定義のヘルプを展開して **ヘルプ** �
 [タスク レコーダー リソース](../../dev-itpro/user-interface/task-recorder.md)  
 [タスク レコーダーを使用したドキュメントやトレーニングの作成](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [カスタム ヘルプ GitHub リポジトリ](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ ms.locfileid: "5011750"
 6. [原価の比較の表示] をクリックします。
 7. [閉じる] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

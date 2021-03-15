@@ -57,3 +57,6 @@ ms.locfileid: "5019607"
 次の図は、すべての有効なメンテナンス要求に関する **メンテナンス要求リスト** レポートの例を示しています。
 
 ![メンテナンス要求リスト レポート](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ ms.locfileid: "4985165"
 15. [OK] をクリックします。
     *  処理結果は、一括更新のレポートに表示されます。     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

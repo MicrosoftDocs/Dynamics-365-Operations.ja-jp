@@ -76,3 +76,6 @@ ms.locfileid: "4979142"
 | 督促状         | <ul><li>督促状コードの金額</li><li>回収コードの量の詳細</li><li>会社別の督促状の量</li><li>顧客グループ別の督促状の量</li><li>地域ごとの督促状の量</li></ul> |
 
 これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) を参照してください。 また、基になるデータのエクスポート機能を使用して、視覚化で要約されている基になるデータをエクスポートすることができます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

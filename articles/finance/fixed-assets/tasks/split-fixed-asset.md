@@ -62,3 +62,6 @@ ms.locfileid: "4975944"
     - 取得トランザクションは、新しい資産に対して同じ金額で作成されます。
 
 4. **投稿** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

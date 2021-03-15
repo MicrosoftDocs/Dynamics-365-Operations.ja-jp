@@ -136,3 +136,6 @@ ms.locfileid: "4973134"
 [ドキュメントの状態とライフサイクル](document-states-overview.md)
 
 [公開グループの作業](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

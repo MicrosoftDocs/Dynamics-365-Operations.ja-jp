@@ -108,3 +108,6 @@ ms.locfileid: "5017520"
 
 ワーク オーダーをワーク オーダー プールから削除する場合は、これらの手順を繰り返して、手順 3 で **削除** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

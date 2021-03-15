@@ -54,3 +54,6 @@ ms.locfileid: "5009221"
 6. [耐用年数] フィールドに数値を入力します。
     * 耐用年数を設定した後に減価償却期間のフィールド値が計算されます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

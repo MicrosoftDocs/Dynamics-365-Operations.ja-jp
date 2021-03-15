@@ -65,3 +65,6 @@ ms.locfileid: "5016480"
 7. **明細行に追加** を選択します。
 8. **OK** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

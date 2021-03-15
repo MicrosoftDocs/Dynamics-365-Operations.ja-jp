@@ -81,3 +81,6 @@ ms.locfileid: "4983419"
 5. [予測明細行の詳細] をクリックします。
     * このページでは、正確性の値、履歴需要および予測を確認できます。 予測にも変更を加えることができます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

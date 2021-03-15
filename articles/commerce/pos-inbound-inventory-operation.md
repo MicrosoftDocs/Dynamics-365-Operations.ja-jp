@@ -220,3 +220,6 @@ POS から、新しい移動オーダー ドキュメントを作成できます
 ## <a name="related-topics"></a>関連トピック
 
 [POS での出庫在庫操作](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

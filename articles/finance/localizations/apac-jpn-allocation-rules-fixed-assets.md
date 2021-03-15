@@ -60,3 +60,6 @@ ms.locfileid: "4968362"
 
 ## <a name="additional-resources"></a>その他のリソース
 - [資産グループへの共有資産とのれんの帳簿価額の配賦](./tasks/allocate-carrying-amount.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

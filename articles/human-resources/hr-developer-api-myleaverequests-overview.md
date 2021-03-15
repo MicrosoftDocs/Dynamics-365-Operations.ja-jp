@@ -64,3 +64,5 @@ Microsoft Dynamics 365 Human Resourcesの MyLeaveRequests エンティティは�
 
 - [休暇申請をワークフローに送信する](hr-developer-api-myleaverequests-submit.md)
 - [認証](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

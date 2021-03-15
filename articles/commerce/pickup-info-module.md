@@ -69,3 +69,6 @@ Commerce 本社では、適切な店舗の集荷時間帯がコンフィギュ�
 [注文確認モジュール](order-confirmation-module.md)
 
 [注文詳細のモジュール](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

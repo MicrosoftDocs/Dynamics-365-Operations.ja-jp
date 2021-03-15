@@ -255,3 +255,5 @@ Human Resources から Finance にデータを統合する場合は、ID に基�
 次の図は、データ インテグレーターのテンプレート マッピングの例を示しています。 
 
 ![テンプレートのマッピング](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

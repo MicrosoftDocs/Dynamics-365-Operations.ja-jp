@@ -41,3 +41,6 @@ ms.locfileid: "5007619"
     * [分析コード ベースのコンフィギュレーション テクノロジ] を選択します。  
 9. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

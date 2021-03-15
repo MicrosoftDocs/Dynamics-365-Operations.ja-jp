@@ -82,3 +82,6 @@ ms.locfileid: "4998756"
     * 見積もりを行った製造オーダーの M0001 を供給するために作成されたかんばんを確認します。  
     * これは最後のステップです!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

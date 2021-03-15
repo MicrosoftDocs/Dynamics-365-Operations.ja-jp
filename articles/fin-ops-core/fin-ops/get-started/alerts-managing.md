@@ -82,3 +82,6 @@ ms.locfileid: "4798595"
 
 1. **システム管理** &gt; **定期処理タスク** &gt; **警告** &gt; **期日の警告** に移動します。
 2. **期日の警告** ダイアログ ボックスで、適切な情報を入力します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

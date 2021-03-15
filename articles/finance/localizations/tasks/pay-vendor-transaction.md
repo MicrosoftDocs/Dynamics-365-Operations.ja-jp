@@ -56,3 +56,6 @@ ms.locfileid: "4968298"
 12. [伝票] をクリックします。
     * 会計伝票が裏書用に生成されていることを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

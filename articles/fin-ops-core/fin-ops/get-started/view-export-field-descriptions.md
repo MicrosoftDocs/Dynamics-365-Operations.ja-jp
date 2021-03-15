@@ -107,3 +107,6 @@ ms.locfileid: "4797902"
 ## <a name="additional-resources"></a>追加リソース
 
 [フィールドの説明のカスタマイズ](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

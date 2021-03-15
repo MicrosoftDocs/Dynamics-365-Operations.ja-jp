@@ -160,3 +160,6 @@ Supply Chain Management から Sales に同期すると、次の結果が得ら�
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

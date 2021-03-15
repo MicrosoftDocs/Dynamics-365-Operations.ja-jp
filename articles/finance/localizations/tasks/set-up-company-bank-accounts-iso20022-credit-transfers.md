@@ -51,3 +51,6 @@ ms.locfileid: "4988173"
 4. [銀行口座] フィールドで、値を入力または選択します。
 5. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ ms.locfileid: "5092278"
 ![ER コンフィギュレーション ページ](../media/er-financial-dimensions-guides-run3.png)
     * 生成された出荷を確認します。 選択したバッチの各トランザクションについては、対応する分析コードの財務分析コードが表示されます。 このレポートを実行して、レポートが選択した分析コード数またはインスタンスに構成した分析コード数に依存していないことを確認するために異なる分析コードを選択します。  
 ![ER コンフィギュレーション ページ](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

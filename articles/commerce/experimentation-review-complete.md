@@ -60,3 +60,6 @@ Commerce サイト ビルダーで実験を削除するには、次の手順に�
 
 ## <a name="previous-step"></a>前のステップ
 [実験の実行と監視](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

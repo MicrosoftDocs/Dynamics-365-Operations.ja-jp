@@ -41,3 +41,6 @@ ms.locfileid: "4992423"
 製品ライフサイクルの状態の詳細については、[製品ライフサイクルの状態の概要](../../pim/product-lifecycle.md)を参照してください。
 
 製品ライフサイクルの状態を使用して、製品をマスター プランおよび BOM レベルの計算から製品を除外する手順の詳細については、[マスター プランから製品を除外する製品ライフサイクルの状態を作成](../../pim/tasks/exclude-products-master-planning.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

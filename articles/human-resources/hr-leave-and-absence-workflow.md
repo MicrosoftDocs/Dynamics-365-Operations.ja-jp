@@ -81,3 +81,6 @@ Dynamics 365 Human Resources でワークフローを作成して、休暇およ
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

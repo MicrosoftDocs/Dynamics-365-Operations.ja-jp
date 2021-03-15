@@ -159,3 +159,6 @@ ms.locfileid: "5113290"
 1. **給付金管理** ワーク スペースの **プラン** で、**給付金プラン** を選択します。
 
 2. **フレックス クレジット プログラム** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

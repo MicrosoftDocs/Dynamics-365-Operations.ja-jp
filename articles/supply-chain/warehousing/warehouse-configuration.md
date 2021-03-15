@@ -118,3 +118,6 @@ Supply Chain Management で倉庫管理を使用するには、倉庫を作成�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ ms.locfileid: "5004980"
 1. [配送担当者のチェックアウト] をクリックします。
 2. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ ms.locfileid: "4968906"
 3. **明細行** を選択します。
 4. **投稿** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

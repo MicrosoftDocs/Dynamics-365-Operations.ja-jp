@@ -77,3 +77,6 @@ Commerce サイト ビルダーの商品コレクション モジュールにク
 [製品収集モジュール](product-collection-module-overview.md)
 
 [検索結果モジュール](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

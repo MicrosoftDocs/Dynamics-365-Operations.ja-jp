@@ -48,3 +48,6 @@ ms.locfileid: "5006469"
 1. 選択した出荷配送業者のコードにマップする輸送状態コードを選択します。
 1. 出荷配送業者が使用する外部コードを入力します。
 1. ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

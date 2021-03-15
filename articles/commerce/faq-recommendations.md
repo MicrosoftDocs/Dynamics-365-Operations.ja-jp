@@ -99,3 +99,6 @@ ms.locfileid: "5009902"
 [収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
 
 [推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

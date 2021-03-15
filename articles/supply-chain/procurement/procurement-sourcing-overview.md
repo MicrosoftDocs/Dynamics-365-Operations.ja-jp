@@ -92,3 +92,6 @@ ms.locfileid: "5019707"
 ## <a name="vendor-performance"></a>仕入先のパフォーマンス
 
 支出分析および仕入先のパフォーマンス分析を含む、*調達と買掛金勘定レポート* では、購買のパフォーマンスと確認に対応しています。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -290,3 +290,6 @@ RCS では、**アンデプロイ** コマンドを使用して、電子請求�
 ## <a name="additional-resources"></a>追加リソース
 
 - [Finance および Supply Chain Management で電子請求書を発行する](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

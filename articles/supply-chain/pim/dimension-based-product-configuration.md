@@ -87,3 +87,6 @@ BOM は、分析コード ベースの製品コンフィギュレーションの
 7.  [コンフィギュレーション ルールの作成](tasks/create-configuration-rules.md)
 8.  [分析コードベースのコンフィギュレーションの作成](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

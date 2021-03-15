@@ -141,3 +141,6 @@ A[サイズ変更スプレッドシート](https://adfsdocs.blob.core.windows.ne
 ## <a name="virtualization-and-oversubscription"></a>仮想化と過剰加入
 
 AOS のようなミッション クリティカルなサービスは、コア、メモリ、ディスクなどの専用リソースを持つ仮想ホストでホストする必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

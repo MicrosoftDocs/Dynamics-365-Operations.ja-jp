@@ -68,3 +68,6 @@ ms.locfileid: "4961540"
 7. ドキュメントの日付を入力します。
 8. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

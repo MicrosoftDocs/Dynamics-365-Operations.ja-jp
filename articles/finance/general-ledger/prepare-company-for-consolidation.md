@@ -67,3 +67,6 @@ ms.locfileid: "4990310"
 
 > [!NOTE]
 > 連結を処理する前に、連結をする関連法人を準備する必要があります。 詳細については、[連結法人を設定する](set-up-subsidiary-company-for-consolidation.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

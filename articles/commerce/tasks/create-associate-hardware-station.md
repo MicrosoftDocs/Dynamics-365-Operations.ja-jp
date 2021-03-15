@@ -57,3 +57,6 @@ ms.locfileid: "4964923"
 23. [EFT ターミナル ID] フィールドに値を入力します。
 24. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

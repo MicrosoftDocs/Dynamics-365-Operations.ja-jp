@@ -51,3 +51,6 @@ ms.locfileid: "5000062"
 2. **はい** をクリックします。
 3. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

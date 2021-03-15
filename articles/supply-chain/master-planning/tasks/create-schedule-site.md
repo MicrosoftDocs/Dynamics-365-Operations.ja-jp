@@ -55,3 +55,6 @@ ms.locfileid: "5007894"
 4. [材料] をクリックします。
     * このページで、製造オーダー工程用の材料消費見積、および現在利用可能な在庫を確認できます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

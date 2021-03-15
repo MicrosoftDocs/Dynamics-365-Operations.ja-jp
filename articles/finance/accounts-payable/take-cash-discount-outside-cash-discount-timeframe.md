@@ -90,3 +90,6 @@ April は **決済金額** フィールドの値を **500.00** に更新しま�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

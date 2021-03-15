@@ -91,3 +91,6 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 4. Finance and Operations アプリにて **デュアル書き込み** ページの **テーブル マッピング** ページを開きます。
 5. マッピング上で属性が自動設定されていない場合は、**属性の追加** ボタンをクリックして手動で追加し、**保存** をクリックします。 
 6. マッピングを選択し、**実行** をクリックします。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

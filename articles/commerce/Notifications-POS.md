@@ -76,3 +76,6 @@ ms.locfileid: "4976791"
 次の図は、さまざまなサイズのボタンに対する **コンテンツの配置** フィールドで、**右上** と **センター** を選択することによる結果を示します。
 
 ![POS ボタンのライブ コンテンツ](./media/ButtonsWithLiveContent.png "POS ボタンのライブ コンテンツ")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

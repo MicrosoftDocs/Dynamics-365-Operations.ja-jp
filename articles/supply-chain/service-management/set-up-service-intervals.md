@@ -53,3 +53,6 @@ ms.locfileid: "4991668"
 ## <a name="related-topics"></a>関連トピック
 
 [サービス期間](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

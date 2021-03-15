@@ -45,3 +45,6 @@ ms.locfileid: "4967586"
     - **有効な原価 – 品目価格** – 在庫が定期的にマイナスになり、同時に、トランザクション量が高い業務プロセスを使用している場合、組織でパフォーマンスの問題が発生する可能性があります。 この設定は、これらのパフォーマンスの問題を軽減するのに役立ちます。
 
 ![在庫会計パラメーター](media/inventory-accounting-parameters.png "在庫会計パラメーター")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ ms.locfileid: "4986882"
 5. 一覧で、選択された行をマークします。
 6. [製品ライフサイクルの状態] フィールドで値を入力または選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

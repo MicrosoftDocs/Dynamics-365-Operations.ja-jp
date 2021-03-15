@@ -58,3 +58,6 @@ ms.locfileid: "4970384"
 [計画の履歴と計画ログの表示](plan-history-logs.md)
 
 [計画ジョブのキャンセル](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Retail の一部として、次の場所のいずれかの最初から用意さ�
 - 税集計
 - 価格変更の概要
 - 割引概要
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ ms.locfileid: "4971756"
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>番号順序と共有番号順序パラメーター
 
 与信限度額調整を処理するには、仕訳帳 ID が必要です。 仕訳帳 ID の生成に使用する与信限度額調整番号を追加する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

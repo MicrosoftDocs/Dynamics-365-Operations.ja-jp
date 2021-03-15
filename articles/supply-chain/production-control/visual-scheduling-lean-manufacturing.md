@@ -94,3 +94,6 @@ ms.locfileid: "4998606"
 
 [リーン生産のかんばん作業のスケジューリング](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ ms.locfileid: "4999709"
 17. [生産数] フィールドに数値を入力します。
 18. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

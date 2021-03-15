@@ -85,3 +85,6 @@ Commerce バージョン 10.0.15 では、組織は指定された集荷配送�
 ## <a name="considerations-for-distributed-order-management"></a>配分済み注文の管理に関する考慮事項
 
 Commerce の[配分済み注文の管理 (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom)機能は、店舗集配としてマークされている販売明細行を無視します。 これらの機能は、構成済の集荷配送モードにリンクされている販売明細行が DOM ロジックをバイパスし、新しいフルフィルメント倉庫に再割り当てされないように更新されています。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

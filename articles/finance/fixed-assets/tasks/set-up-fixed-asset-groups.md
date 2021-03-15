@@ -38,3 +38,6 @@ ms.locfileid: "4994843"
 8. **減価償却方法** フィールドで、オプションを選択します。
 9. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

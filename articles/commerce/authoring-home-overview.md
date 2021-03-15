@@ -121,3 +121,6 @@ Dynamics 365 Commerce は、複数の Web サイトの作成と管理をサポ�
 [サイトにおける検索エンジン最適化 (SEO) の考慮事項](search-engine-optimization-considerations.md)
 
 [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

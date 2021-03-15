@@ -239,3 +239,6 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 1. **完了** を選択します。
 
     ![メンテナンス要求への添付ファイルの追加](media/am-mobile-10.png "メンテナンス要求への添付ファイルの追加")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

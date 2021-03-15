@@ -49,3 +49,6 @@ ms.locfileid: "5115031"
 - [休暇および欠勤タイプのコンフィギュレーション](hr-leave-and-absence-types.md)
 - [休暇計画の累計](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

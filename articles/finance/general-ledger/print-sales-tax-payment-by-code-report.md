@@ -47,3 +47,6 @@ ms.locfileid: "4990301"
 次の図で、生成されるレポートの例を示します。 レポート コードが割り当てられている消費税コードに対して **消費税通貨** フィールドが **EUR** に設定されている場合、レポート コード **101** が通貨 **EUR** であることがレポートに表示されます。
 
 ![コード別消費税支払レポートの例](media/Sales-tax-payment-by-code-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

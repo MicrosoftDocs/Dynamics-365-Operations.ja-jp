@@ -293,3 +293,6 @@ Finance and Operations アプリでは、すべての表形式のグリッドの
 ### <a name="quality-update-for-1009platform-update-33"></a>品質更新プログラム 10.0.9／プラットフォーム更新プログラム 33
 
 - [KB 4550367] 時刻の値が正確に書式設定されない。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

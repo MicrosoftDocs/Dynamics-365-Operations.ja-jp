@@ -64,3 +64,6 @@ Microsoft は、この問題を評価し、それが機能上の制限である�
 1. 積荷数量の過剰入荷
 
 詳細については、[発注書に対する登録済製品の数量の転記](inbound-load-handling.md#post-registered-quantities)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

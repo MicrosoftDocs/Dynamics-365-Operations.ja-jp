@@ -44,3 +44,6 @@ ms.locfileid: "5092063"
 2. **有効に設定** を選択します。
 
 ![電子申告ワークスペース ページ](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

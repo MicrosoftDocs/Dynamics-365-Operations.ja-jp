@@ -69,3 +69,6 @@ ms.locfileid: "5021933"
 
 - 別のカウンターに関連するカウンターを設定できます。 この場合、カウンターが更新されると、関連するカウンターが同時に自動的に更新されます。 関連するカウンターの設定方法の詳細については、[カウンター](../setup-for-objects/counters.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ GTIN コードは、GS1 組織によって割り当てられます。 この例�
 11. [GTIN] フィールドに値を入力します。
 12. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

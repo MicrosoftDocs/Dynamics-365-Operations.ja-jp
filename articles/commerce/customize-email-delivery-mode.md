@@ -71,3 +71,6 @@ Commerce 本社の特定の荷渡方法にメール テンプレートをコン�
 [コール センター注文の作成](tasks/create-call-center-orders.md)
 
 [POS での荷渡方法の変更](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

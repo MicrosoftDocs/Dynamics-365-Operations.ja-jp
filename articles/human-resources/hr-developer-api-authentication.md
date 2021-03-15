@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 アクセス トークンを取得したら、上記のように、データ API に送信する各要求でベアラー トークンとして認証ヘッダーでトークンを渡します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

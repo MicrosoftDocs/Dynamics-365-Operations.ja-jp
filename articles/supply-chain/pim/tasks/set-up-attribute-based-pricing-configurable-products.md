@@ -51,3 +51,6 @@ ms.locfileid: "4986782"
 8. **式** フィールドに、値を入力します。 たとえば、`50` と入力します。 
 9. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

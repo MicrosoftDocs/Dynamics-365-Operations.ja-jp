@@ -118,3 +118,6 @@ Dynamics 365 Commerce では、ページのヘッダーは、ヘッダー、プ�
 [サイト セレクター モジュール](site-selector.md)
 
 [店舗セレクター モジュール](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

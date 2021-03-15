@@ -41,3 +41,6 @@ ms.locfileid: "5022008"
 次の図は、**すべてのメンテナンス要求** リスト ページの例を示しています。
 
 ![すべてのメンテナンス要求リスト ページ](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

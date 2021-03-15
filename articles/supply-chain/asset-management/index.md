@@ -37,3 +37,6 @@ ms.locfileid: "5018806"
 ![資産管理の統合方法の概要](media/overview-integrate2.jpg)
 
 資産管理を使用すると、機械、生産施設、車両など、社内のさまざまな設備の管理とサービスに関連するタスクを効率的に管理および実行できます。 資産管理は、さまざまな業界にわたるソリューションをサポートしています。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

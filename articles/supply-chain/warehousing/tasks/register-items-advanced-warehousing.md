@@ -75,3 +75,6 @@ ms.locfileid: "4977091"
     * [OK] をクリックしてから、メッセージ バーを確認します。 操作完了というメッセージが表示されるはずです。  
 5. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

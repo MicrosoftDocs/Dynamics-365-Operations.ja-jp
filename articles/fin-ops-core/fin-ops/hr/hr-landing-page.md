@@ -93,3 +93,6 @@ Microsoft Dynamics AX は、アメリカ障碍者法 (Americans with Disabilitie
 - [アンケートのデザイン](../../../talent/design-questionnaires.md)
 - [アンケートの配布とスケジューリング](../../../talent/distribute-questionnaires.md)
 - [アンケート結果の表示と評価](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

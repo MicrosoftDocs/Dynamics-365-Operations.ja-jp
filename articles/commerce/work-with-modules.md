@@ -172,3 +172,6 @@ ms.locfileid: "5000462"
 
 [公開グループの作業](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

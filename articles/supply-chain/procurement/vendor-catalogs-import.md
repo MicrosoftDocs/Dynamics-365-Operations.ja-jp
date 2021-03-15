@@ -69,3 +69,6 @@ Microsoft Dynamics 365 クライアントから、仕入先より送信された
 3. **名前を付けて保存** ダイアログ ボックスで、カタログ ファイル テンプレートを保管する場所を選択したり、ファイルを保存します。
 
 詳細および例については、このブログ投稿を参照してください: [Dynamics AX の仕入先カタログ](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/)。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

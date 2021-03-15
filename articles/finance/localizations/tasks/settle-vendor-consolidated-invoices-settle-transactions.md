@@ -66,3 +66,6 @@ ms.locfileid: "4987995"
 1. [買掛金勘定] > [定期処理タスク] > [月次締め請求書] の順に移動します。
     * 月次締め請求書のステータスが「決済済」になっていることを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

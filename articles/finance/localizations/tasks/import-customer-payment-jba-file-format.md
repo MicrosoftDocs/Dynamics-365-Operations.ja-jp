@@ -53,3 +53,6 @@ ms.locfileid: "4988284"
 11. [口座] フィールドで、「JPMF-000001」という値を指定します。
 12. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

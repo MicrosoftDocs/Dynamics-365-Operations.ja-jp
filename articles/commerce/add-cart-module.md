@@ -117,3 +117,6 @@ ms.locfileid: "4985982"
 [小売チャンネルの引当可能在庫数量の計算](calculated-inventory-retail-channels.md)
 
 [オンライン機能プロファイルの作成](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

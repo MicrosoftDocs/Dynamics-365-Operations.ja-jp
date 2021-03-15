@@ -56,3 +56,6 @@ ms.locfileid: "5001077"
 新しい、拡張された製品プロパティ構造を使用して、関連付けられた製品にプッシュされる必要がある更新された製品プロパティを選択することができます。 **Commerce 製品階層** ページのアクション ウィンドウで、**カテゴリ** を選択し、次に **製品の更新** を選択して **製品の更新** ダイアログ ボックスを開きます。
 
 ![製品の更新ダイアログ ボックス](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

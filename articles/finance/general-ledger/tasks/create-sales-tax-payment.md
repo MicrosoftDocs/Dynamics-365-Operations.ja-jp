@@ -36,3 +36,6 @@ ms.locfileid: "4968707"
 5. **トランザクション日付** フィールドに、日付を入力します。
 6. **OK** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

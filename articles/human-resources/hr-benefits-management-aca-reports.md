@@ -207,3 +207,6 @@ ACA のレポート可能ではないとマークされ、Form 1095-C が必要�
 
 > [!NOTE]
 > このページには、**ACA レポ-ト可能** としてマークされている福利厚生プランだけが表示されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

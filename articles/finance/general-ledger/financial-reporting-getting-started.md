@@ -174,3 +174,6 @@ ms.locfileid: "4975689"
 ## <a name="additional-resources"></a>追加リソース
 - [財務諸表の表示](view-financial-reports.md)
 - [財務諸表のレポート ツリー定義](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

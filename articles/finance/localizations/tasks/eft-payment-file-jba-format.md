@@ -55,3 +55,6 @@ ms.locfileid: "4990003"
     * .zip ファイルが生成され、ファイルをダウンロードするように求めるメッセージが表示されます。  
     * [支払ステータス] が、[送信済] に切り替わります。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

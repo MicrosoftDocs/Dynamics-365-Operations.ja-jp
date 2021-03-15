@@ -109,3 +109,6 @@ LCS から電子請求書アドオンをインストールし、必要となる�
 - [サービス管理](e-invoicing-service-administration.md)
 - [RCS で電子請求書を構成する](e-invoicing-configuration-rcs.md)
 - [Finance および Supply Chain Management で電子請求書を発行する](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

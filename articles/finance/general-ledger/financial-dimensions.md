@@ -139,3 +139,6 @@ ms.locfileid: "4975742"
 
 - [財務分析コードの定義](tasks/define-financial-dimensions.md)
 - [財務分析コード用の既定テンプレートの管理](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

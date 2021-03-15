@@ -93,3 +93,6 @@ ms.locfileid: "4974413"
 
 [サービス期間の設定](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

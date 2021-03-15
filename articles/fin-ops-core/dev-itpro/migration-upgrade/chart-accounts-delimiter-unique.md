@@ -41,3 +41,6 @@ Microsoft Dynamics AX 2012 では、勘定科目表および分析コード値�
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>更新された区切り記号が環境で必要かどうかを判断する方法 
 アップグレードされた環境の区切り記号が競合している場合、セグメント化エントリ コントロールまたは分析コード エントリ コントロールに値を入力する際に動作が不安定になることがあります つまり、勘定と分析コードの組み合わせを入力するときは、ルックアップまたはポップ アップ メニューを常に使用する必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

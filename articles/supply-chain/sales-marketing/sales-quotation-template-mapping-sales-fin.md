@@ -142,3 +142,6 @@ Sales では、値が Supply Chain Management に同期されていないため�
 
 [見込顧客を現金化](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

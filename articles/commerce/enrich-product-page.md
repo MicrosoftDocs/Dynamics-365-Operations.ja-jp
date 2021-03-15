@@ -74,3 +74,6 @@ ms.locfileid: "5097341"
 [ページ コンテンツのアクセシビリティの検証](verify-accessibility.md)
 
 [URL のパラメーターに基いて動的な電子商取引ページを作成する](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

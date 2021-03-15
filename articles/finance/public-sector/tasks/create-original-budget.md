@@ -50,3 +50,6 @@ ms.locfileid: "4987957"
     * オプションを選択するには、ページ上部の [ロック解除] のアイコンをクリックします。  
 18. [更新] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

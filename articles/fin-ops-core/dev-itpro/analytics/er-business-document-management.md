@@ -579,3 +579,6 @@ Finance の ERコンフィギュレーションの [一覧](general-electronic-r
 |                             | 販売注文梱包明細 (LT) (Excel)           |
 |                             | 販売注文梱包明細 (PL) (Excel)           |
 |                             | 販売注文梱包明細 (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

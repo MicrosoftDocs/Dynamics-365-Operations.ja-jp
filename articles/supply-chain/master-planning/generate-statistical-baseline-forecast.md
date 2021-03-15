@@ -77,3 +77,6 @@ ms.locfileid: "5007980"
 - [ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
 
 - [調整された需要予測の承認](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

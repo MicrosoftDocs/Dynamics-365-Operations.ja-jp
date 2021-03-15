@@ -50,3 +50,6 @@ ms.locfileid: "4963791"
 
 [製造品目の標準原価を管理するための準備](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

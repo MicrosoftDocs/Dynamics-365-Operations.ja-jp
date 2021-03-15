@@ -292,3 +292,6 @@ ms.locfileid: "5104943"
 - ウェーブ テーブル レコードを処理する
 - 倉庫ハブからスケール ユニットへのメッセージ プロセッサ
 - 倉庫注文明細行に対する数量更新要求の処理
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ ms.locfileid: "4964491"
     * 支払利子は、トランザクション タイプごとに示されます。  
 14. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

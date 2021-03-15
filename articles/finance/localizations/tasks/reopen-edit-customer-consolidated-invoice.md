@@ -55,3 +55,6 @@ ms.locfileid: "4988226"
     * [月次締め日] 前に請求済の販売注文が含まれていることを確認します。  
 3. [確認] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

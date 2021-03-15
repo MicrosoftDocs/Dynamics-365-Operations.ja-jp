@@ -150,3 +150,6 @@ Dataverse テーブルに表示されるユーザー設定フィールドごと�
 [インスタンスの削除](hr-admin-setup-remove-instance.md)</br>
 [更新プロセス](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

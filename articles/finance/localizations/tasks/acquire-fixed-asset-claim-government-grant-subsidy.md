@@ -69,3 +69,6 @@ ms.locfileid: "4990064"
     * 政府助成金を入力します。  
 14. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -154,3 +154,6 @@ ms.locfileid: "4965530"
 ## <a name="other-blocked-operations"></a>他のブロックされた操作
 
 分割されている作業に関連する作業明細行、作業在庫トランザクション、または補充リンクを変更する工程が失敗し、"ID \#\#\#\# の作業は現在分割されています" というエラー メッセージが表示されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ ms.locfileid: "4974288"
 ## <a name="related-topics"></a>関連トピック
 
 [サービス テンプレート行のコピー](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

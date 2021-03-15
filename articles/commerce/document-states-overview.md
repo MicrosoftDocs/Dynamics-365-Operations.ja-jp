@@ -60,3 +60,6 @@ ms.locfileid: "4982619"
 [テンプレートとレイアウトの概要](templates-layouts-overview.md)
 
 [サイト ナビゲーションのカスタマイズ](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

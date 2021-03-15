@@ -143,3 +143,6 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 --------
 
 [倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

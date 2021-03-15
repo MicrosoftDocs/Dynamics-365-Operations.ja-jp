@@ -57,3 +57,6 @@ ms.locfileid: "4990021"
 4. 事前にメモした値を [加速償却プロファイル] に使用します。
 5. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

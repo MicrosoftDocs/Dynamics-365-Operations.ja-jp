@@ -55,3 +55,6 @@ Dynamics 365 Commerce は、ビジュアル ページ ビルダーの「What You
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
 [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

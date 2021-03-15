@@ -89,3 +89,6 @@ ms.locfileid: "4972372"
 [収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

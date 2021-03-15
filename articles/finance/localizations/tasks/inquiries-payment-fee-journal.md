@@ -44,3 +44,6 @@ ms.locfileid: "5009056"
 5. [支払手数料集計] をクリックします。
     * 仕入先の支払手数料集計を確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

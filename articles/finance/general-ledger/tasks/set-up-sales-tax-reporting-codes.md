@@ -38,3 +38,6 @@ ms.locfileid: "4994518"
 6. **簡単な説明** フィールドに、社内用の説明を入力します。
 7. **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

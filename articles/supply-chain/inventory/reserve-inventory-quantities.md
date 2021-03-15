@@ -82,3 +82,6 @@ ms.locfileid: "5000212"
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>生産パラメータ ページの在庫引当ポリシー
 
 **生産パラメータ** ページの **一般** タブの **引当** フィールドの値は、引当を行う必要のある在庫の生産プロセスでの既定ポイントを決定します。 たとえば、在庫は作業がスケジュールされた時点、または作業の開始時に引当することができます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

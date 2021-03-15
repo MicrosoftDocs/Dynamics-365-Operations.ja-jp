@@ -39,3 +39,6 @@ ms.locfileid: "4977616"
 ## <a name="related-topics"></a>関連トピック
 
 [時間枠](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

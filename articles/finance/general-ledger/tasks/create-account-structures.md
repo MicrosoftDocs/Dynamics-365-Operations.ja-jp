@@ -60,3 +60,6 @@ ms.locfileid: "4968584"
 29. **アクション ウィンドウ** で、**有効化** をクリックします。
 30. **有効化** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

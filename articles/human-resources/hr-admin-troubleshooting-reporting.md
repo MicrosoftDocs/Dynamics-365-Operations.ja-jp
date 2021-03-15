@@ -49,3 +49,6 @@ ms.locfileid: "5113232"
 **長期のソリューション**
 
 追加の Power BI オプションが利用可能になり、さらに多くのデータとエンティティが Dataverse の一部になります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

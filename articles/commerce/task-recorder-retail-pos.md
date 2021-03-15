@@ -145,3 +145,6 @@ You can specify the beginning and end of a set of grouped steps by using the **�
 
 > [!NOTE]
 > Retail Modern POS および Cloud POS のヘルプ システムでは、使用しているフォームまたは行っている操作によるタスク ガイドは表示されません。 検索ボックスにプロセス名を入力して **検索** ボタンをクリックする必要があります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

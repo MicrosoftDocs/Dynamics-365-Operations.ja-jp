@@ -55,3 +55,6 @@ ms.locfileid: "5113305"
     ![同期ボタン](media/get-more.png)
 
     同期が完了した後、人事管理はホーム ページに表示されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

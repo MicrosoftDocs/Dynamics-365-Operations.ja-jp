@@ -82,3 +82,6 @@ Contoso コンサルティングは新しいクラウド配置プロジェクト
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

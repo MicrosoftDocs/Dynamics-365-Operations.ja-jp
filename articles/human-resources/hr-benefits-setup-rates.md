@@ -93,3 +93,6 @@ Microsoft Dynamics 365 Human Resources のレートにより、雇用主およ�
    | **フレックス クレジット喫煙者レート** | 喫煙者の階層レベルに定義された計算に基づいて、フレックス クレジットが給付金合計に加算されます。 |
 
 5. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -353,3 +353,6 @@ ms.locfileid: "4996401"
 ## <a name="additional-resources"></a>追加リソース
 
 - [出荷連結ポリシー](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -383,3 +383,6 @@ Human Resources では、次の式を使用します。
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇および欠勤タイプのコンフィギュレーション](hr-leave-and-absence-types.md)
 - [休暇計画の累計](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

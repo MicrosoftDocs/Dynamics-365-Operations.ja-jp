@@ -125,3 +125,6 @@ Dynamics 365 Supply Chain Management のリーン生産は、工順依存しま�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

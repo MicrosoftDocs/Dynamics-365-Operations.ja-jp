@@ -124,3 +124,6 @@ ms.locfileid: "4975063"
 #### <a name="blogs"></a>ブログ
 
 [Dynamics 365 for Finance and Operations で販売がどのように機能するか](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations)の転記にて、販売プロセスの概要が分かります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

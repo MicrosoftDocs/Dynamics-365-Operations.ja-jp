@@ -63,3 +63,6 @@ ms.locfileid: "5020888"
 >[!NOTE]
 >手動のカウンター登録に対する差異を定義する範囲を設定できます。 登録が定義された範囲に含まれていない場合に表示されるメッセージのタイプを指定することもできます。 カウンターの設定方法の詳細については、[カウンター](../setup-for-objects/counters.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

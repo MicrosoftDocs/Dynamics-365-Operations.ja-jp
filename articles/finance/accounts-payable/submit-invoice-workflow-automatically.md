@@ -52,3 +52,6 @@ ms.locfileid: "5115659"
 - 請求書明細行の **自動受領書照合状態** 値は、**失敗** です。
 - 請求書が使用されています。
 - 請求書はワークフロー システムにあります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

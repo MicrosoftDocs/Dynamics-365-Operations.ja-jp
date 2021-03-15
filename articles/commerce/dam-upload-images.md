@@ -96,3 +96,6 @@ ms.locfileid: "4963013"
 [画像の中心のカスタマイズ](dam-custom-focal-point.md)
 
 [静的ファイルのアップロードと提供](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

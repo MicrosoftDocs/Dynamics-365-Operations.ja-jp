@@ -109,3 +109,6 @@ ms.locfileid: "4972910"
 [ページ URL の作成](create-page-url.md)
 
 [公開グループで動作](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

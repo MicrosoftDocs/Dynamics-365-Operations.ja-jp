@@ -94,3 +94,6 @@ E コマース ウェブ サイトの評価およびレビューでは、それ�
 [製品詳細ページに評価とレビュー モジュールをコンフィギュレーション](ratings-reviews-modules.md)
 
 [Dynamics 365 Retail の商品評価の同期](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

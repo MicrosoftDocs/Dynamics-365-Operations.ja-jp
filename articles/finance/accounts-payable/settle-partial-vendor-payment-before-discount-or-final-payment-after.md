@@ -121,3 +121,6 @@ April が割引日よりも後に支払う場合でも、仕入先が彼女に�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

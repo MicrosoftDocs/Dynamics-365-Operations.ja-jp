@@ -157,3 +157,6 @@ Supply Chain Management の SQL Server インスタンスにログインし、**
 
 > [!IMPORTANT]
 > 実稼働環境でスクリプトを実行する前に、必要に応じてスクリプトを入念に編集し、テスト環境でテストしてから、結果のデータを確認することを強く推奨します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

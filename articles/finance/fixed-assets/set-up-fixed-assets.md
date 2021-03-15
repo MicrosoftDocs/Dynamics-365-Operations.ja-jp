@@ -83,3 +83,6 @@ ms.locfileid: "4978514"
 最後に、**番号順序** タブで、固定資産の番号順序を定義します。 **固定資産** 番号順序は、**固定資産グループ** 番号が指定されている場合は、それによって上書きすることができます。
 
 詳細については、「[固定資産の作成](tasks/create-fixed-asset.md)」を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

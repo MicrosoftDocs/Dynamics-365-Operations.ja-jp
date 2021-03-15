@@ -36,3 +36,6 @@ Microsoft Dynamics 365 Supply Chain Management の原価会計サービス ア�
 ## <a name="related-resources"></a>関連するリソース
 
 [原価会計の使用を開始する](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

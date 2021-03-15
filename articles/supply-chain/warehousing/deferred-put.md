@@ -109,3 +109,6 @@ ms.locfileid: "4973788"
 ## <a name="deleting-completed-tasks"></a>完了済みのタスクの削除
 
 完了した繰延プット処理タスクは、それらを選択してページ上で削除することで削除できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

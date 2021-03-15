@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resources の控除を使用して、各給付金�
 4. 利益率の設定に対する変更を追跡して維持するには、**アクション** を選択し、**バージョンの維持** を選択します。
 
 5. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

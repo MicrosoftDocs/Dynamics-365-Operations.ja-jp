@@ -174,3 +174,6 @@ ms.locfileid: "4972408"
 [オムニ チャネルの高度な自動請求](omni-auto-charges.md)
 
 [チャンルごとの自動請求の有効化とコンフィギュレーション](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

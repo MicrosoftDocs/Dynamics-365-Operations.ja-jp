@@ -47,3 +47,6 @@ ms.locfileid: "4964873"
 12. ホーム ページで、**店舗の財務** を選択します。
 13. **転記済明細書** タブを選択します。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

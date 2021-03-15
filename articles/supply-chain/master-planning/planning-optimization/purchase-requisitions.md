@@ -101,3 +101,6 @@ ms.locfileid: "4992347"
 > 購買要求にペギングされる計画オーダーが固定された後、計画エンジンは購買要求にペギングを維持します。 確認された注文に購買要求を満たすために必要な数量が不足しているのが見つかった場合は、差異に対して新しい計画オーダーが作成されます。
 
 購買要求の詳細については、[購買要求の概要](../../procurement/purchase-requisitions-overview.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

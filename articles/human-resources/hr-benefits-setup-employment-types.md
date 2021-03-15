@@ -41,3 +41,6 @@ Dynamics 365 Human Resources 雇用タイプを設定して、作業者と同じ
    | **説明** | 従業員タイプの説明。 |
 
 4. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

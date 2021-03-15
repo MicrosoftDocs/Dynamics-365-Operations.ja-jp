@@ -95,3 +95,6 @@ Dataverse での既存の通貨列の保管では、4 桁以上の小数点以�
 ### <a name="tables-currency-column"></a>テーブル: 通貨列
 
 特定の通貨列に対して構成可能な小数位の数は 4 つに制限されます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

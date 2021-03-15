@@ -97,3 +97,6 @@ Microsoft リポジトリは公開されているため、コンテンツを入�
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  
 [DocFx](https://dotnet.github.io/docfx/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

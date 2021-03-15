@@ -254,3 +254,6 @@ ER は、ビジネス ユーザーに対し、外部データ ファイルを、
 27. ページを閉じます。
 28. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ ms.locfileid: "4969131"
 次の図は、転記された伝票を示しています。
 
 [![正味帳簿価格](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

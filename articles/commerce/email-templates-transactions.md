@@ -202,3 +202,6 @@ Dynamics 365 Commerce で電子メールを構成する方法の詳細につい�
 [電子メールのレシートを設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Modern POS (MPOS) からの領収書メールを送信する](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

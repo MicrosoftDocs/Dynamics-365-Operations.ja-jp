@@ -73,3 +73,6 @@ ms.locfileid: "4976333"
     * この勘定は、開始差益の転記時に借方に転記され、支払の転記時に貸方に転記されます。  
 9. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ BOM 計算を開始するときに、さまざまな情報ソースを指定で�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

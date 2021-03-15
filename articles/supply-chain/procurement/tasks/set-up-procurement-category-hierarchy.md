@@ -44,3 +44,6 @@ ms.locfileid: "5017320"
 4. 調達カテゴリに追加する製品を選択します。
 5. 矢印を選択して **選択済** テーブルに製品を追加します。
 6. **OK** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

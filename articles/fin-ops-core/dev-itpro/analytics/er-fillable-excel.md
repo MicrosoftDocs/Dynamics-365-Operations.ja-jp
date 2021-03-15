@@ -189,3 +189,6 @@ Microsoft Excel ブック形式の送信ドキュメントが生成された場�
 [ER を使用して生成されるドキュメントへの画像や図形の埋め込み](electronic-reporting-embed-images-shapes.md)
 
 [Power BI にデータをプルするよう電子申告 (ER) を構成する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

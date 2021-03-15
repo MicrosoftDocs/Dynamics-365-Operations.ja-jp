@@ -298,3 +298,6 @@ Finance の ER 構成の一覧が更新されました。 [グローバル リ�
 
 - [電子申告 (ER) コンフィギュレーションの作成](electronic-reporting-configuration.md)
 - [電子申告 (ER) コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

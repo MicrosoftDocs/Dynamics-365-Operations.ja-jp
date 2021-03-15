@@ -80,3 +80,6 @@ ATP チェックが完了したときに、品目に使用される分析コー�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ ms.locfileid: "5017370"
 >[!NOTE]
 >ワーク オーダーのメンテナンス作業者スケジューリングするには、そのメンテナンス作業者が予定されている開始日時に対応可能である必要があります。 作業者の使用可能性は、[作業者カレンダー](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md)で設定されます。 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

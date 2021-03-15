@@ -42,3 +42,6 @@ ms.locfileid: "4978539"
 | 6            | BusinessUnit、1 部門、2 | セグメント順序で定義されている財務分析コードの属性。<p>**エクスポート** ページを使用して、属性の定義方法を確認できます。</p> |
 | 7            | 002,1,658 | <ul><li>財務分析コードの値</li><li>RecordDimensions で提供されるインデックスとしての財務分析コード</li><li>RecordTrans または RecordTrans2 の固有レコード ID に関連付けられた一意のレコード ID</li></ul> |
 | 8            | 002,1,1 | <ul><li>RecordBudget のトランザクションに関連付けられている分析コードの値</li><li>RecordDimensions で提供されるインデックスとしての財務分析コード</li><li>ファイル内のトランザクション明細行の順序に対応する、曖昧な行レコード ID</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

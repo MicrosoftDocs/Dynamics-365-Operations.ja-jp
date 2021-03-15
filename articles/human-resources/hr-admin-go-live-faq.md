@@ -99,3 +99,6 @@ No. ただし、運用環境をサンドボックス環境にコピーするデ�
  ## <a name="see-also"></a>参照
 
  [Go-Live の準備](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

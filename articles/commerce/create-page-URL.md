@@ -106,3 +106,6 @@ URL を別の URL にリダイレクトするには、次の手順に従いま�
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
 [サイトに言語を追加する](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

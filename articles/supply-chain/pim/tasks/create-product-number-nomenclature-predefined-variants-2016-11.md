@@ -57,3 +57,6 @@ ms.locfileid: "5007544"
 5. **製品バリアント番号の分類** フィールドに、値を入力または選択します。
 6. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ ms.locfileid: "4986982"
 10. [数量] フィールドに数値を入力します。
 11. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

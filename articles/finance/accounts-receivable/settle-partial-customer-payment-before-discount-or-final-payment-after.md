@@ -110,3 +110,6 @@ Fabrikam は顧客 4027 に商品を販売します。 Fabrikam は、請求書�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

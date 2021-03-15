@@ -60,3 +60,6 @@ ms.locfileid: "5007644"
 ## <a name="warehouse-management"></a>倉庫管理
 
 出荷の準備ができると、いくつかの新しいレポートを印刷できます。 これらのレポートでは、製品情報管理で設定した情報が使用されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

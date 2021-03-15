@@ -59,3 +59,6 @@ ms.locfileid: "4990367"
 
 - [財務分析コード](financial-dimensions.md)
 - [詳細ルール構造の作成と割り当て](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

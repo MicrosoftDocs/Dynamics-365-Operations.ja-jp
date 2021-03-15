@@ -62,3 +62,6 @@ ms.locfileid: "4998819"
 8. 一覧で、選択された行のリンクをクリックします。
     * 以前のサブタスクで作成した ポリシー Speaker2016 を追加します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

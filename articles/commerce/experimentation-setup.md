@@ -53,3 +53,6 @@ ms.locfileid: "5000795"
 
 ## <a name="next-step"></a>次のステップ
 [実験を接続して編集する](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ ms.locfileid: "4995218"
 [コスト オブジェクト コントローラーのアクセス権の定義](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

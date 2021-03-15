@@ -221,3 +221,6 @@ Human Resources でアクセス許可を付与するのは、次の 2 つの Azu
 [外部データ ソースのデータを含む仮想テーブルの作成と編集](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Power Apps ポータルについて](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Power Apps でのアプリの作成の概要](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

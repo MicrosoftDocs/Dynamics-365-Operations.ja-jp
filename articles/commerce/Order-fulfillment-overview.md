@@ -217,3 +217,6 @@ ms.locfileid: "4965405"
 - 作成日
 - 出荷日
 - 入荷日
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

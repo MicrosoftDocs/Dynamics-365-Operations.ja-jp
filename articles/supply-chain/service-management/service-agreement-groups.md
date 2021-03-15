@@ -41,3 +41,6 @@ ms.locfileid: "5001302"
 ## <a name="related-topics"></a>関連トピック
 
 [サービス契約グループの作成](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ ms.locfileid: "5113318"
 ## <a name="see-also"></a>参照
 
 [従業員およびマネージャー セルフサービスの概要](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

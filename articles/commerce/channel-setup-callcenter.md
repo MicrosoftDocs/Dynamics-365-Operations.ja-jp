@@ -135,3 +135,6 @@ Commerce 本社からコール センター チャネルにリンクされた販
 [詐欺警告の設定および使用](set-up-fraud-alerts.md)
 
 [コール センターの連続プログラムの設定](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

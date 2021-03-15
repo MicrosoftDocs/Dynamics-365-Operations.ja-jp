@@ -41,3 +41,6 @@ ms.locfileid: "4968430"
 3. **リンク済** オプションを選択またはクリアして主勘定を選択します。
 4. **OK** を選択します。
 5. **はい** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

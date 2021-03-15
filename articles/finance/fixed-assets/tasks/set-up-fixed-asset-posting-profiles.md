@@ -122,3 +122,6 @@ ms.locfileid: "4994818"
 88. **主勘定** フィールドに、目的の値を指定します。
 89. **相殺勘定** フィールドで、任意の値を指定します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

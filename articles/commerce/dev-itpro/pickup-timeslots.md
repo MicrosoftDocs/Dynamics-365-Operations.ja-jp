@@ -127,3 +127,6 @@ POS で注文または注文明細行が集荷に対して識別されると、�
 ## <a name="additional-resources"></a>追加リソース
 
 [集荷情報モジュール](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ ms.locfileid: "5060822"
 ## <a name="see-also"></a>参照
 
 - [電子申告形式における XML 要素の実行の延期](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

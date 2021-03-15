@@ -161,3 +161,6 @@ Redis キャッシュの接続文字列のシークレットを保存するに�
 > いずれかの接続文字列を更新する場合は、常にこのシークレットの値も更新する必要があります。
 
 以上で、必要な Azure リソースのプロビジョニングが完了しました。 次の手順では、[Microsoft Dynamics Lifecycle Services (LCS) に、IoT インテリジェンスをインストール](iot-lcs-setup.md) します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

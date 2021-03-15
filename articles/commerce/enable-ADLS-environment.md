@@ -114,3 +114,6 @@ Azure Data Lake Storage が環境に対してコンフィギュレーション�
 [推奨事項とデモ データの作成](product-recommendations-demo-data.md)
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

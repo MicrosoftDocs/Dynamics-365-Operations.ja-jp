@@ -61,3 +61,6 @@ ms.locfileid: "4965971"
 [サービス契約の作成および締結の概要](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

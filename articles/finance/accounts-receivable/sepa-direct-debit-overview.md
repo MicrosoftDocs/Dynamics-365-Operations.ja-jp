@@ -83,3 +83,6 @@ SEPA 口座引落用の電子支払ファイルを次の形式で生成します
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

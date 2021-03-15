@@ -52,3 +52,6 @@ ms.locfileid: "5017215"
 
     ![図 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

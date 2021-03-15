@@ -105,3 +105,6 @@ ms.locfileid: "4980110"
 [テキスト ブロック モジュール](add-content-rich-block.md)
 
 [コンテンツ ブロック モジュール](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

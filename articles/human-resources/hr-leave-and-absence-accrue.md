@@ -111,3 +111,6 @@ Dynamics 365 Human Resources において、複数の従業員または個々の
 
 [休暇の概要](hr-leave-and-absence-overview.md)</br>
 [休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

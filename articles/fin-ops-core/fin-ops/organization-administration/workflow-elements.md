@@ -89,3 +89,6 @@ ms.locfileid: "4797579"
 ### <a name="subworkflow"></a>サブワークフロー
 
 *サブワークフロー* は、他のワークフローのコンテキストで実行するワークフローです。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

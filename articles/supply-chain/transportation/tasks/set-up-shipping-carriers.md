@@ -72,3 +72,6 @@ ms.locfileid: "5004880"
 9. **輸送時間エンジン** フィールドで、ドロップダウン メニューからオプションを選択します。
 10. **保存** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

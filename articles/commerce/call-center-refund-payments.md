@@ -108,3 +108,6 @@ ms.locfileid: "4991418"
 ## <a name="additional-resources"></a>追加リソース
 
 [コール センターでの支払方法](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

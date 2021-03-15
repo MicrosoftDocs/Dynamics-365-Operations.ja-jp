@@ -105,3 +105,6 @@ ms.locfileid: "5104407"
 
 > [!NOTE]
 > 一部の国では、ドキュメントの番号付けに対して既に特定のロジックが実装されています。 この場合、国固有のロジックは、**時系列番号付け** 機能よりも優先されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ ms.locfileid: "4991020"
 10. **キャンセル** をクリックします。
 11. **はい** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

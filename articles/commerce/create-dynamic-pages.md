@@ -96,3 +96,6 @@ Commerce サイト ビルダーで動的ページへの経路を構成するに�
 [ページ コンテンツのアクセシビリティの検証](verify-accessibility.md)
 
 [オンライン チャネルの拡張性](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

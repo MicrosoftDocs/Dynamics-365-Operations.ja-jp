@@ -97,3 +97,6 @@ BOM 計算では、警告メッセージが生成されます。 選択した品
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

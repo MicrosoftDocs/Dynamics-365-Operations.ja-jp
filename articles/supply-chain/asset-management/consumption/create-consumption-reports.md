@@ -77,3 +77,6 @@ ms.locfileid: "5022536"
 >[!NOTE]
 >また、[作業指示書レポート](../work-orders/work-order-report.md) を生成することもできます。これにはより多くの作業指示の詳細が含まれます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

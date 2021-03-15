@@ -248,3 +248,6 @@ Power BI は、空の行を表示または非表示するオプションを提�
 - [1 つのボックス環境における分析ワークスペースおよびレポートへのアクセス](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Power BI Embedded を使用したワークスペースへの分析の追加](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

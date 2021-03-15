@@ -52,3 +52,6 @@ ms.locfileid: "4978817"
 [信用状の銀行融資契約の作成](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

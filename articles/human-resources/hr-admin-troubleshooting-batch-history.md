@@ -64,3 +64,6 @@ Microsoft Dynamics 365 Human Resources では、バッチ ジョブ履歴が大�
 
 8. 必要に応じて、**バックグラウンドで実行** でその他のパラメータを変更してから、**OK** を選択します。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

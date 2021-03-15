@@ -47,3 +47,6 @@ ms.locfileid: "5016430"
     * 販売と原価価格が使用できることを確認します。 必要であっても使用できない場合は、情報を入力します。  
 14. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

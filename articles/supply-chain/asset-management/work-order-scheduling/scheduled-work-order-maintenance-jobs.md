@@ -51,3 +51,6 @@ ms.locfileid: "5017595"
 
 ![図 1](media/07-work-order-scheduling.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

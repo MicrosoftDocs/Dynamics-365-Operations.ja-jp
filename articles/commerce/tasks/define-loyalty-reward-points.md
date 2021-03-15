@@ -45,3 +45,6 @@ ms.locfileid: "5000487"
 10. [有効期限の単位] フィールドで、オプションを選択します。
 11. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

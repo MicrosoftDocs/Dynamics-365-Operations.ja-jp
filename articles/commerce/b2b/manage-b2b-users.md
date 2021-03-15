@@ -139,3 +139,6 @@ Commerce 本部の取引先とユーザーをオンボードするには、以�
 [B2B eコマース サイトの製品数量制限の設定](quantity-limits.md)
 
 [番号順序の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

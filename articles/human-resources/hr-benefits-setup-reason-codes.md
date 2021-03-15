@@ -79,3 +79,5 @@ Dynamics 365 Human Resources は、理由コードを使用して、従業員の
 理由コードが Human Resources に移行した後で、福利厚生管理でそれらを使用するオプションは自動的に **はい** に設定 されます。
 
 [![福利厚生管理で理由コードを使用する](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

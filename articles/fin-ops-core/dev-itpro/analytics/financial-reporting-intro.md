@@ -96,3 +96,6 @@ ms.locfileid: "5093954"
 
 ## <a name="additional-resources"></a>追加リソース
 [財務諸表の生成](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ BOM に複数のレベルがある場合、**展開** フィールドを使用�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

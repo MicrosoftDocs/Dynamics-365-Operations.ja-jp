@@ -101,3 +101,6 @@ ms.locfileid: "4797025"
 - [ドキュメント管理のコンフィギュレーション](configure-document-management.md)
 - [電子メールのコンフィギュレーションと送信](configure-email.md)
 - [日時データとタイム ゾーン](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ ms.locfileid: "4988219"
     * 減損固定資産の確認フォームが表示されます。  
     * [減損テスト ID] は有効です。     後に [提案と転記] で使用するため、[減損テスト ID] を忘れないでください。   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

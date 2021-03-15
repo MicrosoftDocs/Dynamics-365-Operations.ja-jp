@@ -112,3 +112,5 @@ cXML プロトコルの詳細については、[cXML.org Web サイト](http://c
 
 - [cXML の拡張機能の購入](purchasing-cxml-enhancements.md)
 - [パンチアウト e-procurement の外部カタログの使用](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

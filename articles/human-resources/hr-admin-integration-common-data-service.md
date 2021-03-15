@@ -126,3 +126,6 @@ Human Resources と Dataverse の間のテーブルで完全同期を実行す�
 [Human Resources 仮想テーブルに関するよく寄せられる質問](hr-admin-virtual-entity-faq.md)<br>
 [Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [用語の更新](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Dynamics 365 Human Resources で、作業時間カレンダーには、組織内
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇タイプのコンフィギュレーション](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

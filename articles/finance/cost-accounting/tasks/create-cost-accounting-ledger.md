@@ -37,3 +37,6 @@ ms.locfileid: "4990845"
 8. [統計分析コード] フィールドで、値を入力または選択します。
 9. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

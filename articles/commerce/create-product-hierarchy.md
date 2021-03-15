@@ -79,3 +79,6 @@ Commerce 製品階層を作成してコンフィギュレーションするに�
 [製品カテゴリおよび製品の管理](category-management-product-creation.md)
 
 [販売促進エンティティの並べ替え順序の変更](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

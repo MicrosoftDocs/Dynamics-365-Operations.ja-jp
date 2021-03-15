@@ -93,3 +93,6 @@ ms.locfileid: "5002671"
 14. [確認] をクリックします。
     * 確認済 [加速償却ドキュメント] のみ提案として使用できます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

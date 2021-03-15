@@ -135,3 +135,6 @@ Commerce サイト ビルダーでフラグメントを編集するには、次�
 [プリセット レイアウトの使用](work-with-layouts.md)
 
 [公開グループで動作](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

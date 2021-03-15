@@ -57,3 +57,6 @@ ms.locfileid: "5018049"
 次の図は、顧客に基づく機能的な場所の例を示しています。
 
 ![顧客に基づく機能上の場所を示す図](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

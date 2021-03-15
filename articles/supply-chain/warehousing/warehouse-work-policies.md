@@ -300,3 +300,6 @@ ms.locfileid: "4998456"
 ライセンス プレートの受け取りと作業ポリシーに関する詳細については、[ウェアハウス アプリを介したライセンス プレートの受け取り](warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
 
 入庫積荷管理に関する詳細情報については、[発注書に対する入庫積荷の倉庫処理](inbound-load-handling.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

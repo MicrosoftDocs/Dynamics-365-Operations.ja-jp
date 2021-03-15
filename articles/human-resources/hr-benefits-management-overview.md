@@ -97,3 +97,6 @@ ms.locfileid: "5113303"
 - [ライフ イベントの適格性の処理](hr-benefits-process-life-event-eligibility.md)
 - [レート変更の処理](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

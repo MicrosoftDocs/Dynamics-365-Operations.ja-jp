@@ -238,3 +238,6 @@ ms.locfileid: "4986507"
 
 > [!NOTE]
 > ラベルを構成するには、**倉庫管理 \> 設定 \> ドキュメント回覧 \> ドキュメント回覧** の順に移動します。 詳細については、[ライセンス プレート ラベル印刷の有効化](../warehousing/tasks/license-plate-label-printing.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

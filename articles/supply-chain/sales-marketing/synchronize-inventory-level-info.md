@@ -92,3 +92,6 @@ Supply Chain Management は、在庫レベルのマスターとして機能し�
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>製品在庫 (Supply Chain Management から Field Service): 製品在庫
 
 [![データ統合のテンプレートのマッピング](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

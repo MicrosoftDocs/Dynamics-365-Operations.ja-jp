@@ -138,3 +138,6 @@ Finance および Supply Chain Management に入力された環境名は、RCS �
 
 - [RCS で電子請求書を構成する](e-invoicing-configuration-rcs.md)
 - [Finance および Supply Chain Management で電子請求書を発行する](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

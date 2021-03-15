@@ -93,3 +93,6 @@ Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速�
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>AX 2012 からアップグレードまたは AX 2009 から移行する場合
 
 Microsoft Dynamics AX 2012 からアップグレードまたは Microsoft Dynamics AX 2009 から移行する場合は、さらに長い期間のトライアル版の対象となる可能性があります。 詳細については、<daxcf@microsoft.com> にお問い合わせください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

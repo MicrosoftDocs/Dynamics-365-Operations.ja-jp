@@ -77,3 +77,6 @@ ms.locfileid: "4974338"
 
 サービス合意に対してサービス注文を自動的に作成すると、合意におけるサービス対象の関係が、サービス注文にも作成されます。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

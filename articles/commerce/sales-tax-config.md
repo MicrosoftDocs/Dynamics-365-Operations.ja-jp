@@ -81,3 +81,6 @@ Commerce 本社の顧客の出荷先住所レコードに対する税グルー�
 
 [非課税の計算](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ ms.locfileid: "4975869"
 10. **固定資産** フィールドで、値を入力または選択します。
 11. **投稿** を選択します。 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

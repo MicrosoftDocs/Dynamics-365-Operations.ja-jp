@@ -35,3 +35,6 @@ ms.locfileid: "4992448"
 ## <a name="additional-resources"></a>その他のリソース
 
 [循環棚卸](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ ms.locfileid: "5008019"
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>CW 品目の結合後に在庫仕訳帳上でその CW 情報を確認できないのはどうしてですか。
 他のすべての品目と同様に、CW 品目のバッチを結合できます。 ただし、CW 情報は在庫仕訳帳に表示されません。 バッチ マージを在庫仕訳帳に転送する前に、CW 情報を確認することをお勧めします。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

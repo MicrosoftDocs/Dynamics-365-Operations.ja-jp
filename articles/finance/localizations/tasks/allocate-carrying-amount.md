@@ -58,3 +58,6 @@ ms.locfileid: "4975348"
 6. 一覧で、すべての行のマークを設定または解除します。
 7. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

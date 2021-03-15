@@ -86,3 +86,6 @@ ms.locfileid: "4987556"
 > [!NOTE] 
 > 終了済みの最終の在庫期間のみを再オープンすることができます。 初期の在庫決算を取り消すには、最新の決算から在庫原価計算プロシージャを個別に取り消す必要があります。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

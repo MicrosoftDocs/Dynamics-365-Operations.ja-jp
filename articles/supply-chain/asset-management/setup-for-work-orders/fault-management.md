@@ -132,3 +132,6 @@ ms.locfileid: "5020967"
 
 > [!NOTE]
 > エラー現象、領域、タイプ、原因、および救済の名前は必要に応じて変更できます。 名前の変更は、関連するエラー登録に自動的に反映されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

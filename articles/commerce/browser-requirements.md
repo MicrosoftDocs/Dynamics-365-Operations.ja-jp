@@ -47,3 +47,6 @@ Dynamics 365 Commerce サイトをもっともサポートする Web ブラウ�
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

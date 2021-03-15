@@ -62,3 +62,6 @@ ms.locfileid: "5014486"
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *倉庫管理の手持在庫エントリ クリーンアップ ジョブの最大実行時間*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

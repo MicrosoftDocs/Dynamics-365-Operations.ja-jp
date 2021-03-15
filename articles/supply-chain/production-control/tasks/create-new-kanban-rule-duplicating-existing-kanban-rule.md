@@ -43,3 +43,6 @@ ms.locfileid: "5011000"
 3. [OK] をクリックします。
     * かんばんルール 000017 の複製が作成されることに注目してください。    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

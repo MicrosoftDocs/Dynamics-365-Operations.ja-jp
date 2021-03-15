@@ -87,3 +87,6 @@ Dynamics 365 Commerce では、クラウド販売時点管理 (POS) または Mo
 - POS のトランザクションに顧客が追加された販売により、個別の販売注文と請求書が固有の顧客ごとに 1 つずつ生成されます。
 
 支払仕訳帳は明細書の支払に対して自動的に作成され、在庫は POS 店舗に更新されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

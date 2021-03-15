@@ -69,3 +69,6 @@ ms.locfileid: "4977791"
 7. [編集] をクリックします。
 8. [支払協定] フィールドで値を入力または選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

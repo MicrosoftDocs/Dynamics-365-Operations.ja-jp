@@ -215,3 +215,6 @@ Supply Chain Management によって共有されている Dataverse と Field Se
 [!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
 
 [!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

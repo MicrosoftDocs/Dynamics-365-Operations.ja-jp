@@ -134,3 +134,6 @@ ms.locfileid: "5006444"
 ## <a name="additional-resources"></a>追加リソース
 
 - [出荷連結ポリシーを構成する](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

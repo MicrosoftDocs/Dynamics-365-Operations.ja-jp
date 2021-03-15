@@ -55,3 +55,6 @@ ms.locfileid: "5006683"
 
 [返品品目の廃棄方法の指定](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

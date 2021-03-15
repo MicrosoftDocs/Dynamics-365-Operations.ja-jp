@@ -116,3 +116,6 @@ Sales から Supply Chain Management への勘定同期には、以下のテン�
 
 [売上請求書のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期](sales-invoice-template-mapping-direct.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

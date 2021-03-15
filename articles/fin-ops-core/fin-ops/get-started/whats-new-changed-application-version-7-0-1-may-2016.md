@@ -106,3 +106,6 @@ ms.locfileid: "4797167"
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
 
 [新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Dynamics 365 Commerce の強化された並べ替えにより、顧客は検索�
 [既定のカテゴリ ランディング ページと検索結果ページの概要](category-search-page-overview.md)
 
 [SEO メタデータの管理](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -125,3 +125,6 @@ SEPA 口座振替は、個人または 1 つの会社から別の会社または
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

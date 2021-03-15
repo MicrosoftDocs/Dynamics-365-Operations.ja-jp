@@ -54,3 +54,6 @@ ms.locfileid: "4999734"
     * 選択された方法によって選択または選択解除となる品目番号を選択します。  
 18. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -153,3 +153,6 @@ Epson のレシート プリンターを設定するには、Epson ePOS-Print �
 - [Android と iOS での POS ハイブリッドアプリの設定](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [ネットワーク周辺機器サポートの概要](https://go.microsoft.com/fwlink/?linkid=2129965)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

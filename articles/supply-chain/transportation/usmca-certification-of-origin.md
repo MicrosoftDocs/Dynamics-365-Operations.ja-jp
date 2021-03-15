@@ -139,3 +139,6 @@ USMCA 機能を使用するには、システム上で有効化する必要が�
 ### <a name="page-numbers"></a>ページ番号
 
 ドキュメントの下部に印刷される現在のページとページ数です。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

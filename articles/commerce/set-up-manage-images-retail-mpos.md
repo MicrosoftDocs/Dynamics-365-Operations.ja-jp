@@ -208,3 +208,6 @@ MPOS はオンライン モード (MPOS が Commerce Scale Unit に接続され�
 5. カテゴリ、従業員、および顧客など、他のエンティティの類似したプロセスに従います。
 
     [![オフライン画像](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

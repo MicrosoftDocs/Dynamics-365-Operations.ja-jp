@@ -57,3 +57,6 @@ ms.locfileid: "4977066"
 2. [製品受領書] をクリックします。
 3. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

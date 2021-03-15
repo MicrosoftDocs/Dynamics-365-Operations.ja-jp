@@ -165,3 +165,6 @@ ms.locfileid: "4973738"
 ## <a name="see-also"></a>参照
 
 [詳細については、ブログ記事 WMS-倉庫フィルター コードを参照してください](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

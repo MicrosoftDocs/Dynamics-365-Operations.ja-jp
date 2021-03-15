@@ -59,3 +59,6 @@ ms.locfileid: "4961499"
 9. **未出荷の販売注文** をクリックします。
 10. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

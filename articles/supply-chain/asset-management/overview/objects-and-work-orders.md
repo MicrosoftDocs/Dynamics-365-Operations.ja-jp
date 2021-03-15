@@ -54,3 +54,6 @@ ms.locfileid: "5020942"
 
 > [!NOTE]
 > 一般に、Dynamics 365 Supply Chain Management および **アセット管理** モジュールで作業する場合は、**新規** を選択して新しいレコードを作成するか、**編集** を選択して既存のレコードを更新してから、**保存** を選択して新規または編集したデータを保存します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

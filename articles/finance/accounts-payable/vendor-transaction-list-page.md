@@ -96,3 +96,6 @@ ms.locfileid: "4993241"
 - **現金割引の条件を編集** - 基準日と現金割引条件に基づき、現金割引は変更されます。
 
 支払設定の編集を終えたら、**閉じる** を選び変更を保存します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

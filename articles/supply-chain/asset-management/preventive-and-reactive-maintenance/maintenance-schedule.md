@@ -67,3 +67,6 @@ ms.locfileid: "5017960"
 
 ![図 1](media/16-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Supply Chain Management では、運輸サービス、関連する発注書の�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

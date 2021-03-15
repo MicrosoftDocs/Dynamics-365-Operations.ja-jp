@@ -803,3 +803,6 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
 2. 両方のテスト ケースが成功していることを確認します。
 
     ![両方のテスト ケースに対して成功に設定された結果フィールド](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

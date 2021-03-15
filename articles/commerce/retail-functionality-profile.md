@@ -63,3 +63,6 @@ ms.locfileid: "4979650"
 [画面レイアウトの概要](pos-screen-layouts.md)       
 
 [Retail Hardware Station のコンフィギュレーションおよびインストール](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

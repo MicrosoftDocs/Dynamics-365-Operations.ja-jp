@@ -208,3 +208,6 @@ Sales での割引計算モデルは、Supply Chain Management の割引計算�
 ## <a name="related-topics"></a>関連トピック
 
 [見込顧客を現金化](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

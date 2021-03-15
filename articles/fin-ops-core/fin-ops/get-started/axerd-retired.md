@@ -46,3 +46,6 @@ HTML ページはリポジトリの [https://github.com/Microsoft/ax-2012-doc-to
 2018 年 3 月に、サードパーティが GitHub から AxErd のソースをコピーし、次のサイトに再配置しました。 このサイトは、2020 年 3 月時点で稼働中です。
 
 - [https://AlexDMeyer.com/ax2012erd/](https://AlexDMeyer.com/ax2012erd/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

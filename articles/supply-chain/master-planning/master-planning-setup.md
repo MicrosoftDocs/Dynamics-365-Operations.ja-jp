@@ -226,3 +226,6 @@ ms.locfileid: "4999959"
 このタイム フェンス内にある計画済供給オーダーのみが使用され、その外側に新しい計画オーダーが作成されます。 動的マイナス在庫日数の利点は、個々の製品のリード タイムが含まれるため、既存の注文を再利用し、リード タイムによる遅延で後の日付で新しい計画オーダーを作成するのを避けれるという点です。 
 
 詳細については、[マイナス在庫日数および動的マイナス在庫日数](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

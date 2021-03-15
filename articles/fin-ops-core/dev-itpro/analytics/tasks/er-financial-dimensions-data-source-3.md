@@ -145,3 +145,6 @@ ms.locfileid: "5092303"
 46. ページを閉じます。
 ![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

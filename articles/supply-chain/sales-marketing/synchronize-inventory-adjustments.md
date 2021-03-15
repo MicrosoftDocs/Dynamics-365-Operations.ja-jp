@@ -80,3 +80,6 @@ ms.locfileid: "5010975"
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>在庫振替 (Field Service から Supply Chain Management): 在庫振替
 
 [![データ統合のテンプレートのマッピング](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

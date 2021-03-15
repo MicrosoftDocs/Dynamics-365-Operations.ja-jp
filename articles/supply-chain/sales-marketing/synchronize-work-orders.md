@@ -76,3 +76,6 @@ ms.locfileid: "5010813"
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderService
 
 [![データ統合のテンプレートのマッピング](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

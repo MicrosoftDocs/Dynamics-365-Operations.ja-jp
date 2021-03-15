@@ -112,3 +112,6 @@ ms.locfileid: "4993403"
 [チャネルの概要](channels-overview.md)
 
 [チャネル設定の前提条件](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

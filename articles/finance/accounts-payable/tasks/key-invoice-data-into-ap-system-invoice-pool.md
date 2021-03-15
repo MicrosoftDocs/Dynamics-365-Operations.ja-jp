@@ -67,3 +67,6 @@ ms.locfileid: "4979291"
 13. **トランザクション** を選択します。
 14. 作成した請求書を選択します。 仕入帳昇給額は取り消されて、適切な経費勘定に転記されます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

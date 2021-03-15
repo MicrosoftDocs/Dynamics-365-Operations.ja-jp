@@ -71,3 +71,6 @@ Microsoft Dynamics 365 Commerce では、小売業者は、顧客が優先支払
 
 > [!NOTE]
 > **すべての割引を禁止** のコンフィギュレーションが **はい** に設定されている場合、製品に割引は適用されません。 非偶数の支払/入金ベースの割引は適用されません。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

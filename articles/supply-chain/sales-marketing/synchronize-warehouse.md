@@ -80,3 +80,6 @@ Field Service および Supply Chain Management の統合をサポートする�
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>倉庫 (Supply Chain Management から Field Service): 倉庫
 
 [![データ統合のテンプレートのマッピング](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ ms.locfileid: "4994182"
 5. ツリーで、「Sales line 000832\Kanban 000558\Issue for L0001\Kanban 000559」を選択します。
     * すべてのペギング ツリーが [計画済] であるため、2 番目のかんばんジョブも計画済になります。 かんばん作業の状態が [未計画] から [計画済] に変更されていることを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

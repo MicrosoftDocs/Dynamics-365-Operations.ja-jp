@@ -95,3 +95,6 @@ ms.locfileid: "5009246"
 連結および通貨換算の詳細については、このトピックの親トピック、[財務連結および通貨換算の概要](./financial-consolidations-currency-translation.md) を参照してください。
 
 連結財務諸表を生成するシナリオの詳細については、[連結財務諸表の生成](./generating-consolidated-financial-statements.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ ms.locfileid: "4970434"
 
 - ビデオ: [倉庫管理コンフィギュレーションの詳細情報](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - ヘルプ トピック: [場所のディレクティブの作成](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

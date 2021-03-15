@@ -94,3 +94,6 @@ ms.locfileid: "4998981"
 ## <a name="additional-resources"></a>追加リソース
 
 [ジョブ カード デバイスから完了報告をする](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

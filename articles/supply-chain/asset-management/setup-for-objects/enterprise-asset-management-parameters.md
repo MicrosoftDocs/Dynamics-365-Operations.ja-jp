@@ -106,3 +106,6 @@ ms.locfileid: "5020657"
 ## <a name="the-number-sequences-tab"></a>番号順序 タブ
 
 このセクションで必要な番号順序を選択します。 資産には、2 つの番号順序があります。1 つは手動で作成された資産用で、もう 1 つは保留中の資産を通して作成された資産用です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

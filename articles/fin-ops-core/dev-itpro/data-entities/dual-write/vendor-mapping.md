@@ -75,3 +75,6 @@ CDS 連絡先 V2             | 連絡先                    | [連絡先](custom
 [!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
 
 [!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

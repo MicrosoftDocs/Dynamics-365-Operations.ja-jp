@@ -238,3 +238,6 @@ Commerce Headquarters で保証トランザクションを処理するには、�
 [品揃えの設定](set-up-assortments.md)
 
 [番号順序の概要](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

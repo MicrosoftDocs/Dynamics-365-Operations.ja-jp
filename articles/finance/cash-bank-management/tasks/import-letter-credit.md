@@ -184,3 +184,6 @@ ms.locfileid: "5009546"
     * [銀行ドキュメント番号]、[融資限度]、[使用金額] および [融資残高] のトランザクションのレポートを確認します。  
 8. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

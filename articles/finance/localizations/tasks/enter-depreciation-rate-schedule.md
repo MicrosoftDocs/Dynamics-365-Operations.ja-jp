@@ -57,3 +57,6 @@ ms.locfileid: "4989970"
     * 前のタスクで変更した減価償却スケジュールを選択します。  
 5. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

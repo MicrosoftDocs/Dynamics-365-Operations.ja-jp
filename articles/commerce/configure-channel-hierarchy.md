@@ -83,3 +83,6 @@ ms.locfileid: "5001028"
 [チャンネル ナビゲーション階層を作成する](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

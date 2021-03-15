@@ -80,3 +80,6 @@ ms.locfileid: "4975536"
 
 > [!NOTE]
 > この方法を利用して、関連会社の1つの法人の勘定科目表から連結法人の勘定科目表を作成することができます。 (詳細については、[連結勘定グループと追加の連結勘定](../budgeting/consolidation-account-groups-consolidation-accounts.md)を参照。)  そして、各連結主勘定に適切な連結換算原則を設定し、すべての関連会社の連結を実行します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

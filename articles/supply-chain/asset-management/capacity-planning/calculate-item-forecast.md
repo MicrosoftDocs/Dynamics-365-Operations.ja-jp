@@ -59,3 +59,6 @@ ms.locfileid: "5022561"
 8. 品目に製品、保管、または追跡用分析コードを表示する場合は、**分析コードの表示** ボタンをクリックします。 該当するチェック ボックスを選択して、**OK** をクリックします。
 
 ![図 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

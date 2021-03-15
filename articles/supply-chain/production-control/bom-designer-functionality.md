@@ -120,3 +120,6 @@ BOM 明細行または BOM を編集するには、**BOM 明細行** または *
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ ms.locfileid: "4983394"
 19. すべての計画プロセス フィールドを無効にするには、いいえを選択します。
 20. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

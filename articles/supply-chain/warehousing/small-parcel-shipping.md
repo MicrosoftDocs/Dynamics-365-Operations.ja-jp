@@ -279,3 +279,6 @@ SPS のレート エンジンを作成して配置したら、次の手順に従
     ![出荷ラベルの例](media/sps-label-example.png "出荷ラベルの例")
 
 1. **コンテナーのマニフェスト ID** と **運賃合計** の値が、配送業者から受信したとして追加されました。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ ms.locfileid: "4968807"
 4. **設定** タブで、**税金計算遅延** オプションを **はい** に設定します。
 
 ![一般仕訳帳ページの画像](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ ms.locfileid: "4988980"
 | 評価マップ        | 固定資産の詳細 |
 
 データを使用して分析を表示するには、まず、**エンティティ格納** ページで AssetTransactionMeasure 集計測定を更新する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

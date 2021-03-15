@@ -138,3 +138,6 @@ Finance and Operations アプリの既存インスタンスと Customer Engageme
 例については、[Customers V3 の有効化—連絡先テーブル マップ](enable-entity-map.md#enable-table-map)を参照してください
 
 初期同期を実行する必要がある各エンティティのデータ ボリュームに基づく代替的なアプローチについては、[初期同期の考慮事項](initial-sync-guidance.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

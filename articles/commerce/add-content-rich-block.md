@@ -88,3 +88,6 @@ ms.locfileid: "4980484"
 
 [ビデオ プレーヤー モジュール](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

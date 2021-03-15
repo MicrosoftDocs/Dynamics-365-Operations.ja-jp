@@ -676,3 +676,6 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 
 従業員は、**パスポート** ID タイプの複数の ID 番号を申告できます。 ただし、現在の有効なパスポート入力のみが Dayforce に統合されます。 すべてのパスポート入力が期限切れの場合、最後に発行されたパスポートが Dayforce に統合されます。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

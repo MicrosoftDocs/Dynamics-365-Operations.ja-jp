@@ -143,3 +143,6 @@ TAXUNCOMMITTED テーブルにのみ保存されているがまだ転記され�
 - [二重通貨](dual-currency.md)
 - [消費税の概要](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

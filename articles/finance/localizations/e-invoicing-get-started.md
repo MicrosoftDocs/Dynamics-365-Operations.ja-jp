@@ -235,3 +235,6 @@ ms.locfileid: "5111223"
 - [メキシコ向け電子請求のアドオンの使用を開始する](e-invoicing-mex-get-started.md)
 - [イタリア向け電子請求書のアドオンの使用を開始する](e-invoicing-ita-get-started.md)
 - [エジプトの顧客電子請求書](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

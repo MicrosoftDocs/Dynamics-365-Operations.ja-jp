@@ -57,3 +57,6 @@ ms.locfileid: "4990022"
 1. [固定資産] > [設定] > [償却率表] > [経年表] に移動します。
     * 減価償却プロファイルの更新には対応するデータが必要です。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

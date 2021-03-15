@@ -302,3 +302,6 @@ B2B の eコマースサイトには、注文テンプレート リストのペ�
 [コンテンツ ブロック モジュール](../add-hero-module.md)
 
 [製品コレクション](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

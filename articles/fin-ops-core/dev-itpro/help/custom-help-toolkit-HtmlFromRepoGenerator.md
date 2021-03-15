@@ -124,3 +124,6 @@ HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNot
 [Azure にカスタム ヘルプを展開](walkthrough-help-azure.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換](migrate-dynamicsax2012.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

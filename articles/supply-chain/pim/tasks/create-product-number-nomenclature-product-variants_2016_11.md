@@ -101,3 +101,6 @@ ms.locfileid: "4992373"
 43. ページを閉じます。
 44. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

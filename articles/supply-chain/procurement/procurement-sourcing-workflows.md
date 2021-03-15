@@ -79,3 +79,6 @@ ms.locfileid: "5019757"
 - [購買要求のビジネス プロセスのワークフローの定義](https://www.microsoft.com/download/details.aspx?id=101821)
 - [購買要求ワークフロー](purchase-requisitions-workflow.md)
 - [Onboard 仕入先](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

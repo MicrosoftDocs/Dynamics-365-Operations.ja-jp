@@ -361,3 +361,6 @@ B2C テナントの **ユーザー** セクションには、オプションで�
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

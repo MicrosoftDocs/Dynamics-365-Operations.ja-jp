@@ -53,3 +53,6 @@ ms.locfileid: "4996304"
 1. **出荷の確認** ダイアログ ボックスの **OK** を選択し、バッチ ジョブをバッチキューに追加します。
 
 詳細については、[バッチ処理の概要](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

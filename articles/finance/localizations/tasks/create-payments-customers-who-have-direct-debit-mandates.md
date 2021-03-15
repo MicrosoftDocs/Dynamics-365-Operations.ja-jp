@@ -67,3 +67,6 @@ ms.locfileid: "4964569"
 11. [OK] をクリックします。
 12. [OK] をクリックします。
 13. [支払の作成] をクリックします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

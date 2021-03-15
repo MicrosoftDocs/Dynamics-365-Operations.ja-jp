@@ -52,3 +52,6 @@ ms.locfileid: "5130270"
 16. [変更の説明] フィールドで、値を入力します。
 17. [発行] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

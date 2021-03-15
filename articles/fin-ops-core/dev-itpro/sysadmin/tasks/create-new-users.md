@@ -81,3 +81,6 @@ Finance and Operations アプリの購入方法とライセンスの取得方法
 B2B ユーザーを実装するための詳細なオプションについては、[B2B ユーザーの Azure AD へのエクスポート](../implement-b2b.md) を参照してください。
 
 コンフィギュレーション済システム アカウントの詳細については、[コンフィギュレーション済みのシステム アカウント](../pre-configured-system-accounts.md) を参照してください
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

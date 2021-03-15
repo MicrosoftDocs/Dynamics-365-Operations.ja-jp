@@ -76,3 +76,6 @@ B2B e コマース サイトのチェック アウト ページで顧客勘定�
 [B2B eコマース サイトの製品数量制限の設定](quantity-limits.md)
 
 [SDK およびモジュール ライブラリの更新](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

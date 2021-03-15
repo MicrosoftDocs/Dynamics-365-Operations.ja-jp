@@ -255,3 +255,6 @@ ms.locfileid: "4798229"
 
 [欠落している勘定分析のキーボード ショートカット](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

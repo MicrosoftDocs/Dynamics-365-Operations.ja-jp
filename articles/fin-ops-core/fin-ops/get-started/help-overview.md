@@ -164,3 +164,6 @@ On the **System parameters** page, follow these steps:
 | [Dynamics コミュニティ](https://community.dynamics.com/) | ブログ、フォーラム、ビデオをホストします。 |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | 評価と販売情報を提供します。 |
 | [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | トレーニングリソース、ダウンロード可能なレポート、ホワイト ペーパーをホストしており、サービス プラン保有者に向けられた重要なサポート サイトです。 このサイトのリソースによっては、アクセスにサービス計画が必要な場合があります。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

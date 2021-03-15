@@ -181,3 +181,6 @@ Dataverse で予定どおりにデータが表示されない場合は、エン�
 - データ管理:
 
   - [データ管理](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

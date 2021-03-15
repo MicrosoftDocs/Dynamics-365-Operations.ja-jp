@@ -71,3 +71,6 @@ ms.locfileid: "4968355"
 - [減損会計の共通パラメーターおよび転記プロファイルの設定](./tasks/impairment-accounting.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

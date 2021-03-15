@@ -139,3 +139,6 @@ Aprilはこの支払を転記します。 彼女はこのトランザクショ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

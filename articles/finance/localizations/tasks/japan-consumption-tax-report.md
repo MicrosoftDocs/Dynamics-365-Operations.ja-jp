@@ -63,3 +63,6 @@ ms.locfileid: "4997450"
 
 > [!NOTE]
 > 2019 年 10 月 1 日から提出される消費税申告書を計算するには、**機能管理** ワークスペースの **消費税申告書** 機能を有効にする必要があります。 詳細については [機能管理の概要](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

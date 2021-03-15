@@ -59,3 +59,6 @@ ms.locfileid: "4988139"
     * たとえば、「DEMF OPER」銀行口座を選択します。  
 6. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

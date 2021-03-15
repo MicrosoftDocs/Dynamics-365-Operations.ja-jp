@@ -53,3 +53,6 @@ ms.locfileid: "4797729"
     > 並列活動の分岐はすべて同時に実行されるため、分岐の順序は重要ではありません。
 
 3. 各分岐をコンフィギュレーションするには、[ワークフロー内の並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

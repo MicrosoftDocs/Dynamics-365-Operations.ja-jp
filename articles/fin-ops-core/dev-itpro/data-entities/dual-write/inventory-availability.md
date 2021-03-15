@@ -118,3 +118,6 @@ Finance and Operations フィールド | タイプのマッピング | Customer 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

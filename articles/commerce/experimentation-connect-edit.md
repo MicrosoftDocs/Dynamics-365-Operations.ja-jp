@@ -94,3 +94,6 @@ Commerce サイト ビルダーでの実験の接続を開始するには、以�
 
 ## <a name="next-step"></a>次のステップ
 [実験のプレビューと公開](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

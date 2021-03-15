@@ -70,3 +70,6 @@ ms.locfileid: "4978330"
 ## <a name="additional-resources"></a>その他のリソース
 - [支払手数料の生成および転記](./tasks/post-payment-fee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
