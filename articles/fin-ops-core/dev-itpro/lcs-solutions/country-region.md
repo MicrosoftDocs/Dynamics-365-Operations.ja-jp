@@ -1,27 +1,26 @@
 ---
 title: グローバリゼーション リソース
 description: このトピックでは、国/地域固有の機能および提供内容について詳しく説明しているリソースの一覧を示します。
-author: ShylaThompson
+author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: sericks
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed89c0c9cb915af0d5a70d14d1f0e251f20554d7
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 26411c24751f698a6789bbbd687aca8f378f7d65
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154122"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560921"
 ---
 # <a name="globalization-resources"></a>グローバリゼーション リソース
 
@@ -55,7 +54,6 @@ Finance and Operations アプリには、[製品のローカライズおよび�
 
 #### <a name="regulatory-updates"></a>規制の更新
 -   [規制の更新](../../../finance/localizations/regulatory-updates.md)
--   [ローカライズ ポータル](https://docs.microsoft.com/dynamics/s-e/) (毎週更新)
 -   [Lifecycle Services (LCS) の問題検索](../lifecycle-services/issue-search-lcs.md) (毎日更新)
 
 #### <a name="communication-and-alerts"></a>コミュニケーションと警告

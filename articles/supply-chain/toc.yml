@@ -72,14 +72,16 @@
                   items:
                     - name: Supply Chain Management ホーム ページの新機能または変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.18 (2021 年 5 月)
+                      href: get-started/whats-new-scm-10-0-18.md
                     - name: Supply Chain Management 10.0.17 (2021 年 4 月)
                       href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management 10.0.16 (2021 年 2 月)
                       href: get-started/whats-new-scm-10-0-16.md
-                    - name: Supply Chain Management 10.0.15 (2021 年 1 月)
-                      href: get-started/whats-new-scm-10-0-15.md
                 - name: 削除済みまたは非推奨の機能
                   items:
+                    - name: 削除済みまたは非推奨の機能のホーム ページ
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
                       href: get-started/removed-deprecated-features-scm-updates.md
                     - name: 以前のリリースの削除済みまたは非推奨の機能
@@ -1349,6 +1351,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: 在庫分析コード当たりの移動平均原価の追跡
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: 在庫トランザクションのアーカイブ
+              href: inventory/archive-inventory-transactions.md
             - name: 在庫の視覚化アドイン
               href: inventory/inventory-visibility.md
         - name: IoT インテリジェンス
@@ -2021,6 +2025,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: エンジニアリング バージョンとエンジニアリング製品カテゴリ
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: 既存の製品の変更管理の有効化
+              href: engineering-change-management/change-management-existing-products.md
             - name: 製品ライフサイクルの状態とトランザクション
               href: engineering-change-management/product-lifecycle-state-transactions.md
             - name: エンジニアリング製品に対する変更の管理
@@ -2125,10 +2131,12 @@
                           href: production-control/production-floor-execution-configure.md
                         - name: 生産現場の実行インターフェースをデザインする
                           href: production-control/production-floor-execution-tabs.md
-                        - name: 生産現場の実行インターフェースを実行するデバイスを設定する
+                        - name: 生産現場の実行インターフェイスを実行するデバイスを設定する
                           href: production-control/production-floor-execution-setup.md
-                        - name: 生産現場の実行インターフェースを作業者が使用する方法
+                        - name: 生産現場の実行インターフェイスを作業者が使用する方法
                           href: production-control/production-floor-execution-use.md
+                        - name: 生産現場の実行ユーザー インターフェイス コントロールのスタイル
+                          href: production-control/production-floor-execution-styles.md
                     - name: デバイスのジョブ カードのコンフィギュレーション
                       href: production-control/config-job-card-device.md
                     - name: ジョブ カード デバイスからの完了レポート
@@ -2729,6 +2737,54 @@
               href: transportation/tasks/set-up-shipping-carriers.md
             - name: 品目の配送制約の設定
               href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: 陸揚原価
+          items:
+            - name: 陸揚原価モジュールの概要
+              href: landed-cost/landed-cost-overview.md
+            - name: 陸揚原価と輸送管理の比較
+              href: landed-cost/landed-cost-vs-tms.md
+            - name: 陸揚原価モジュールの設定とコンフィギュレーション
+              items:
+                - name: 陸揚原価パラメーター
+                  href: landed-cost/landed-cost-parameters.md
+                - name: 陸揚原価の調達パラメーター
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: 航海状態の設定
+                  href: landed-cost/voyage-status-setup.md
+                - name: 出荷コンテナの設定
+                  href: landed-cost/shipping-container-setup.md
+                - name: 配送情報の設定
+                  href: landed-cost/delivery-information-setup.md
+                - name: マルチレッグ旅程の設定
+                  href: landed-cost/multi-leg-journey-setup.md
+                - name: 出荷情報の設定
+                  href: landed-cost/shipping-information-setup.md
+                - name: 原価パラメーター値の設定
+                  href: landed-cost/costing-parameters-setup.md
+                - name: 総勘定元帳の既定の説明
+                  href: landed-cost/defult-descriptions.md
+            - name: 陸揚原価に関して追加された仕入先設定
+              href: landed-cost/vendors-landed-cost-settings.md
+            - name: 航海、コンテナ、フォリオに関する作業
+              items:
+                - name: 航海の管理
+                  href: landed-cost/manage-voyages.md
+                - name: 出荷コンテナの管理
+                  href: landed-cost/manage-shipping-containers.md
+                - name: フォリオの管理
+                  href: landed-cost/manage-folios.md
+            - name: 入航と出荷コンテナ旅程の追跡
+              href: landed-cost/inbound-tracking.md
+            - name: 陸揚原価の見積と管理
+              href: landed-cost/estimate-manage-landed-costs.md
+            - name: 輸送中の処理
+              href: landed-cost/in-transit-processing.md
+            - name: 超過/過少トランザクションの処理
+              href: landed-cost/over-under-transactions.md
+            - name: 陸揚原価の照会
+              href: landed-cost/landed-cost-inquiries.md
+            - name: 陸揚原価レポート
+              href: landed-cost/landed-cost-reports.md
         - name: 倉庫管理
           items:
             - name: 倉庫管理の概要
@@ -2925,10 +2981,12 @@
                       href: warehousing/change-work-pool-on-work.md
                     - name: 品目の連結 - 場所の使用率
                       href: warehousing/item-consolidation-location-utilization.md
-                    - name: 倉庫作業のトラブルシューティング
-                      href: warehousing/troubleshoot-warehouse-work.md
                     - name: 作業の分割
                       href: warehousing/work-split.md
+                    - name: 材料取り扱い設備のインターフェイス (MHAX)
+                      href: warehousing/mhax.md
+                    - name: 倉庫作業のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-work.md
             - name: 倉庫の設定
               items:
                 - name: 倉庫のコンフィギュレーション
@@ -2987,6 +3045,8 @@
                   items:
                     - name: 倉庫管理モバイル アプリのインストールと接続
                       href: warehousing/install-configure-warehouse-management-app.md
+                    - name: モバイル デバイスのユーザー設定
+                      href: warehousing/mobile-device-user-settings.md
                     - name: 倉庫アプリのインストールと接続
                       href: warehousing/install-configure-warehousing-app.md
                     - name: 倉庫アプリでカメラを使用するバーコード スキャン
