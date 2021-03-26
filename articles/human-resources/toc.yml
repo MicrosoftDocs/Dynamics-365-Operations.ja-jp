@@ -5,6 +5,10 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 3 月 8 日
+          href: hr-whats-new-2021-03-08.md
+        - name: 2021 年 2 月 22 日
+          href: hr-whats-new-2021-02-22.md
         - name: 2021 年 1 月 28 日
           href: hr-whats-new-2021-01-28.md
         - name: 2021 年 1 月 21 日
@@ -89,9 +93,9 @@
               href: hr-admin-integration-common-data-service.md
             - name: Dataverse テーブル
               href: hr-developer-entities.md
-            - name: Dataverse 仮想エンティティのコンフィギュレーション
+            - name: Dataverse の仮想テーブルのコンフィギュレーション
               href: hr-admin-integration-common-data-service-virtual-entities.md
-            - name: Human Resources の仮想エンティティに関するよく寄せられる質問
+            - name: Human Resources 仮想テーブルに関するよく寄せられる質問
               href: hr-admin-virtual-entity-faq.md
             - name: Finance との統合のコンフィギュレーション
               href: hr-admin-integration-finance.md
@@ -623,9 +627,11 @@
               items:
                 - name: 福利厚生の管理の概要
                   href: hr-benefits-management-overview.md
+                - name: 給付金管理ワークスペース
+                  href: hr-benefits-management-workspace.md
                 - name: 福利厚生の管理のコンフィギュレーション
                   items:
-                    - name: 会社ごとの福利厚生管理パラメータのコンフィギュレーション
+                    - name: 会社ごとの福利厚生管理パラメーターのコンフィギュレーション
                       href: hr-benefits-setup-parameters-per-company.md
                     - name: すべての会社の福利厚生管理と従業員セルフサービスのパラメータの設定
                       href: hr-benefits-setup-parameters.md
@@ -779,7 +785,9 @@
               href: hr-employee-manager-self-service-overview.md
             - name: マネージャー セルフ サービスでカスタム リンクを作成する
               href: hr-employee-manager-self-service-custom-links.md
-            - name: 従業員セルフサービスのワークスペース名を変更する
+            - name: 従業員セルフサービスのワークスペース名の変更
               href: hr-employee-self-service-workspace-name.md
             - name: 個人情報の編集
               href: hr-employee-manager-self-service-edit-personal-information.md
+            - name: 個人情報の編集の制限
+              href: hr-employee-self-service-restrict-editing.md

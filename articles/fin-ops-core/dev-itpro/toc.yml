@@ -14,6 +14,8 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
+                - name: 10.0.18 のプラットフォーム更新プログラム (2021 年 5 月)
+                  href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)
@@ -22,6 +24,8 @@
                   href: get-started/whats-new-platform-updates-10-0-15.md
             - name: 削除済みまたは非推奨の機能
               items:
+                - name: 削除済みまたは非推奨の機能のホーム ページ
+                  href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: 削除済みまたは非推奨のプラットフォームの機能
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: 以前のリリースの削除済みまたは非推奨の機能
@@ -38,6 +42,8 @@
               href: business-events/app-business-events.md
             - name: ワークフロー ビジネス イベント
               href: business-events/business-events-workflow.md
+            - name: バッチ ビジネス イベント
+              href: business-events/system-business-events.md
             - name: ビジネス イベントとしての警告
               href: business-events/alerts-business-events.md
             - name: Microsoft Flow 内のビジネス イベント
@@ -216,10 +222,14 @@
                               href: data-entities/dual-write/commerce-pricing.md
                             - name: サービスのための社内資産
                               href: data-entities/dual-write/in-house-assets.md
-                            - name: 作業者、職務、および職位の統合
-                              href: data-entities/dual-write/integrated-hr.md
                             - name: 引当可能在庫数
                               href: data-entities/dual-write/inventory-availability.md
+                            - name: 作業者、職務、および職位の統合
+                              href: data-entities/dual-write/integrated-hr.md
+                            - name: 注記の統合
+                              href: data-entities/dual-write/notes-integration.md
+                            - name: マッピング参照
+                              href: data-entities/dual-write/mapping-reference.md
                         - name: 二重書き込みのサポート
                           items:
                             - name: Field Service ソリューションと Project Service Automation ソリューションのサポート
@@ -642,6 +652,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Azure Pipelines での Lifecycle Services (LCS) 接続の作成
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: 新しい NuGet パッケージ用にホストされる Azure Pipeline の更新
+                  href: dev-tools/pipeline-nuget-split.md
                 - name: Azure Pipelines でのレガシ パイプラインの更新
                   href: dev-tools/pipeline-msbuild-update.md
             - name: フリート管理のサンプル アプリケーション
@@ -1100,8 +1112,6 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: モニタリングおよび診断
               href: lifecycle-services/monitoring-diagnostics.md
-            - name: 影響分析レポート
-              href: lifecycle-services/impact-analysis-report.md
             - name: 環境サービスの再開
               href: lifecycle-services/restart-environment-services.md
             - name: 稼働停止をレポート
@@ -1448,6 +1458,8 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: B2B ユーザーの Azure AD へのエクスポート
               href: sysadmin/implement-b2b.md
+            - name: データ管理
+              href: sysadmin/DataMaintenancePortal.md
             - name: セキュリティ
               items:
                 - name: ロールベース セキュリティ

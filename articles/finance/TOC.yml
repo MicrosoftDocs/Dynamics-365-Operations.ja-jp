@@ -72,7 +72,9 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.17 (2021 年 3 月)
+                    - name: Finance 10.0.18 (2021 年 5 月)
+                      href: get-started/whats-new-changed-10-0-18.md
+                    - name: Finance 10.0.17 (2021 年 4 月)
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (2021 年 2 月)
                       href: get-started/whats-new-changed-10-0-16.md
@@ -80,6 +82,8 @@
                       href: get-started/whats-new-changed-10-0-15.md
             - name: 削除済みまたは非推奨の機能
               items:
+                - name: 削除済みまたは非推奨の機能のホーム ページ
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
                   href: get-started/removed-deprecated-features-finance.md
                 - name: 以前のリリースの削除済みまたは非推奨の機能
@@ -474,6 +478,8 @@
               href: accounts-receivable/tasks/create-collection-letter-sequence.md
             - name: 督促状の処理
               href: accounts-receivable/tasks/process-collection-letters.md
+            - name: 督促状の処理例
+              href: accounts-receivable/process-collection-letters-example.md
             - name: 売掛金勘定のエイジング情報の設定および生成
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: 顧客エイジング レポート
@@ -482,10 +488,12 @@
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: 詳細なメモの管理
               href: localizations/emea-ita-exil-structured-notes.md
-            - name: 貸方票での元の請求書への参照
+            - name: 訂正票での元の請求書への参照
               href: accounts-receivable/original-invoice-numbers-credit-notes.md
             - name: ドキュメントと伝票の時系列での番号付け
               href: accounts-receivable/chrono-numbers.md
+            - name: 印刷された顧客請求書にハッシュ番号を付けてアーカイブする
+              href: accounts-receivable/archive-printed-invoices.md
         - name: 予算作成
           items:
             - name: 予算作成用のホーム ページ
@@ -1318,6 +1326,8 @@
                   href: public-sector/tasks/create-vendor-certification-type-public-sector.md
                 - name: 公的機関の複数の一時仕入先と請求書のインポートおよび作成
                   href: public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: 請求書の勘定配布の編集の制限
+                  href: public-sector/restrict-edit-accounting-distributions.md
                 - name: 公的機関での一時仕入先の計画
                   href: public-sector/plan-one-time-vendors-public-sector.md
                 - name: 公的機関の購買契約書へのアクセスの制御
@@ -1428,8 +1438,8 @@
                       href: localizations/e-invoicing-get-started.md
                     - name: ブラジル用電子請求アドオンの使用を開始する
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: エジプトの顧客電子請求書
-                      href: localizations/emea-egy-e-invoices.md
+                    - name: エジプト用電子請求アドオンの使用を開始する
+                      href: localizations/e-invoicing-eg-get-started.md
                     - name: イタリア用電子請求アドオンの使用を開始する
                       href: localizations/e-invoicing-ita-get-started.md
                     - name: メキシコ用電子請求アドオンの使用を開始する
@@ -1580,6 +1590,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: 会計施設の NF-e パラメーターの設定
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2020.006 – NF-e 向け中継販売デジタル プラットフォーム
+                      href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: NT2019.001 - NF-e/NFC-e の税便益および非課税ルール
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
@@ -1782,8 +1794,10 @@
                   href: localizations/egypt.md
                 - name: エジプトの登録番号のコンフィギュレーション
                   href: localizations/emea-egy-reg-numbers.md
-                - name: エジプトの請求書レイアウトの構成
+                - name: エジプトの請求書レイアウトのコンフィギュレーション
                   href: localizations/emea-egy-invoice-layout.md
+                - name: エジプトの顧客電子請求書
+                  href: localizations/emea-egy-e-invoices.md
             - name: エストニア
               items:
                 - name: エストニアの概要
@@ -2008,12 +2022,14 @@
                   items:
                     - name: ドイツ語監査ファイルの概要
                       href: localizations/emea-deu-gdpdu-audit-data-export.md
-                    - name: 監査ファイルのコンフィギュレーションのカスタマイズ
-                      href: localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: 監査ファイルの生成
-                      href: localizations/tasks/german-audit-file.md
                     - name: 監査ファイルのコンフィギュレーションのインポート
                       href: localizations/tasks/import-german-audit-file-configuration.md
+                    - name: 監査ファイルの生成
+                      href: localizations/tasks/german-audit-file.md
+                    - name: 監査ファイルのコンフィギュレーションのカスタマイズ
+                      href: localizations/tasks/customize-german-audit-file-configuration.md
+                    - name: 監査ファイル コンフィギュレーションへのフィルターの追加
+                      href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: 2 年目の追加取得の減価償却調整
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: VAT 申告電子送信 (ELSTER)
@@ -2306,7 +2322,7 @@
                   href: localizations/emea-ita-quarterly-vat-communication.md
                 - name: ブラック リスト レポート
                   href: localizations/emea-ita-black-list-report.md
-                - name: 報告日
+                - name: 報告日と会計仕訳帳
                   href: localizations/emea-ita-competence-date.md
                 - name: 固定資産の減価償却
                   href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3253,7 +3269,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: 財務パフォーマンス
                   href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: 財務インサイト
+                - name: 財務分析
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
                 - name: 固定資産管理
                   href: fixed-assets/Fixed-asset-management-workspace.md
@@ -3493,12 +3509,18 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
                         - name: ValueInLarge
@@ -3673,8 +3695,10 @@
                   items:
                     - name: Word 形式のレポートを生成するための新しい ER コンフィギュレーションを設計する
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
-                    - name: Excel テンプレートで ER コンフィギュレーションを再利用して Word 形式のレポートを生成する
+                    - name: Excel テンプレートで電子申告コンフィギュレーションを再利用して Word 形式のレポートを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: 生成されるレポートの Word コンテンツ コントロールを非表示にする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
                 - name: PDF テンプレートを入力するためのコンフィギュレーションを設計する
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: 画像や図形を埋め込む
@@ -3759,6 +3783,8 @@
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: GR でコンフィギュレーションを共有する
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: クイック スタート ガイド
               items:
                 - name: カスタム電子ドキュメントを生成するための電子申告形式の調整
