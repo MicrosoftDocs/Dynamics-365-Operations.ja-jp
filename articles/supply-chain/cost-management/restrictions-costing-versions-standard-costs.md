@@ -18,35 +18,38 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5339c3c4a62b94a06cbffc200ed1e9b227d6b6af
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0f8f5707b6f51372684606d135c0643b36e3a94f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963791"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245254"
 ---
-#  <a name="restrictions-on-costing-versions-for-standard-costs"></a><span data-ttu-id="ca7e3-103">標準原価の原価計算バージョンの制限</span><span class="sxs-lookup"><span data-stu-id="ca7e3-103">Restrictions on costing versions for standard costs</span></span>
+#  <a name="restrictions-on-costing-versions-for-standard-costs"></a><span data-ttu-id="239a3-103">標準原価の原価計算バージョンの制限</span><span class="sxs-lookup"><span data-stu-id="239a3-103">Restrictions on costing versions for standard costs</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ca7e3-104">このトピックでは、標準原価の原価計算バージョンに適用する制限について説明します。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-104">This topic describes the restrictions that apply to a costing version for standard costs.</span></span> 
+<span data-ttu-id="239a3-104">このトピックでは、標準原価の原価計算バージョンに適用する制限について説明します。</span><span class="sxs-lookup"><span data-stu-id="239a3-104">This topic describes the restrictions that apply to a costing version for standard costs.</span></span> 
 
-<span data-ttu-id="ca7e3-105">次の制限は、標準原価原則への保証の順守に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-105">The following restrictions help guarantee adherence to standard costing principles:</span></span>
+<span data-ttu-id="239a3-105">次の制限は、標準原価原則への保証の順守に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="239a3-105">The following restrictions help guarantee adherence to standard costing principles:</span></span>
 
--  <span data-ttu-id="ca7e3-106">品目の原価には、費用が含まれる必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-106">Charges must be included in an item's cost.</span></span> <span data-ttu-id="ca7e3-107">製造品目の費用は、部品表 (BOM) および工順情報内の償却済固定費を表します。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-107">The charges for a manufactured item represent the amortized constant costs in the bill of materials (BOM) and route information.</span></span> <span data-ttu-id="ca7e3-108">したがって、これらの費用を単位原価に含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-108">Therefore, the charges must be included in the unit cost.</span></span> <span data-ttu-id="ca7e3-109">購買品目の費用も品目の単位原価に含まれます。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-109">The charges for a purchased item are also included in the item's unit cost.</span></span>
+-  <span data-ttu-id="239a3-106">品目の原価には、費用が含まれる必要があります。</span><span class="sxs-lookup"><span data-stu-id="239a3-106">Charges must be included in an item's cost.</span></span> <span data-ttu-id="239a3-107">製造品目の費用は、部品表 (BOM) および工順情報内の償却済固定費を表します。</span><span class="sxs-lookup"><span data-stu-id="239a3-107">The charges for a manufactured item represent the amortized constant costs in the bill of materials (BOM) and route information.</span></span> <span data-ttu-id="239a3-108">したがって、これらの費用を単位原価に含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="239a3-108">Therefore, the charges must be included in the unit cost.</span></span> <span data-ttu-id="239a3-109">購買品目の費用も品目の単位原価に含まれます。</span><span class="sxs-lookup"><span data-stu-id="239a3-109">The charges for a purchased item are also included in the item's unit cost.</span></span>
 
--  <span data-ttu-id="ca7e3-110">製造品目の標準原価の計算は、標準原価の原価バージョン内の原価レコードに基づく必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-110">Calculation of standard costs for manufactured items must be based on the cost records in a costing version for standard costs.</span></span> <span data-ttu-id="ca7e3-111">原価データの代わりのソースは、購入品目の購入価格売買契約などのように、予定原価の原価バージョンのみで使用できます。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-111">Alternative sources of cost data can be used only with a costing version for planned costs, such as purchase price trade agreements for purchased items.</span></span> <span data-ttu-id="ca7e3-112">原価データの代わりのソースは、BOM 計算グループによって定義されます。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-112">Alternative sources of cost data are defined by the BOM calculation group.</span></span>
+-  <span data-ttu-id="239a3-110">製造品目の標準原価の計算は、標準原価の原価バージョン内の原価レコードに基づく必要があります。</span><span class="sxs-lookup"><span data-stu-id="239a3-110">Calculation of standard costs for manufactured items must be based on the cost records in a costing version for standard costs.</span></span> <span data-ttu-id="239a3-111">原価データの代わりのソースは、購入品目の購入価格売買契約などのように、予定原価の原価バージョンのみで使用できます。</span><span class="sxs-lookup"><span data-stu-id="239a3-111">Alternative sources of cost data can be used only with a costing version for planned costs, such as purchase price trade agreements for purchased items.</span></span> <span data-ttu-id="239a3-112">原価データの代わりのソースは、BOM 計算グループによって定義されます。</span><span class="sxs-lookup"><span data-stu-id="239a3-112">Alternative sources of cost data are defined by the BOM calculation group.</span></span>
 
--  <span data-ttu-id="ca7e3-113">BOM の計算は、単一レベル展開モードで実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-113">BOM calculations must be performed in a single-level explosion mode.</span></span>
+-  <span data-ttu-id="239a3-113">BOM の計算は、単一レベル展開モードで実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="239a3-113">BOM calculations must be performed in a single-level explosion mode.</span></span>
 
-<span data-ttu-id="ca7e3-114">標準原価の品目原価データは、標準原価または予定原価を含む別の原価バージョンにコピーできます。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-114">The item cost data for standard costs can be copied to another costing version that contains standard costs or planned costs.</span></span> <span data-ttu-id="ca7e3-115">ただし、このトピックで先に示した制限は予定原価には適用されないので、予定原価に対する品目原価データは、標準原価を含む原価バージョンにはコピーできません。</span><span class="sxs-lookup"><span data-stu-id="ca7e3-115">However, the item cost data for planned costs can't be copied to a cost version that contains standard costs, because the restrictions that are listed earlier in this topic don't apply to planned costs.</span></span>
+<span data-ttu-id="239a3-114">標準原価の品目原価データは、標準原価または予定原価を含む別の原価バージョンにコピーできます。</span><span class="sxs-lookup"><span data-stu-id="239a3-114">The item cost data for standard costs can be copied to another costing version that contains standard costs or planned costs.</span></span> <span data-ttu-id="239a3-115">ただし、このトピックで先に示した制限は予定原価には適用されないので、予定原価に対する品目原価データは、標準原価を含む原価バージョンにはコピーできません。</span><span class="sxs-lookup"><span data-stu-id="239a3-115">However, the item cost data for planned costs can't be copied to a cost version that contains standard costs, because the restrictions that are listed earlier in this topic don't apply to planned costs.</span></span>
 
-<a name="related-topics"></a><span data-ttu-id="ca7e3-116">関連トピック</span><span class="sxs-lookup"><span data-stu-id="ca7e3-116">Related topics</span></span>
+<a name="related-topics"></a><span data-ttu-id="239a3-116">関連トピック</span><span class="sxs-lookup"><span data-stu-id="239a3-116">Related topics</span></span>
 --------
 
-[<span data-ttu-id="ca7e3-117">原価計算バージョンの概要</span><span class="sxs-lookup"><span data-stu-id="ca7e3-117">Costing versions overview</span></span>](costing-versions.md)
+[<span data-ttu-id="239a3-117">原価計算バージョンの概要</span><span class="sxs-lookup"><span data-stu-id="239a3-117">Costing versions overview</span></span>](costing-versions.md)
 
-[<span data-ttu-id="ca7e3-118">非製造環境での標準原価の更新</span><span class="sxs-lookup"><span data-stu-id="ca7e3-118">Update standard costs in a non-manufacturing environment</span></span>](update-standard-costs-non-manufacturing-environment.md)
+[<span data-ttu-id="239a3-118">非製造環境での標準原価の更新</span><span class="sxs-lookup"><span data-stu-id="239a3-118">Update standard costs in a non-manufacturing environment</span></span>](update-standard-costs-non-manufacturing-environment.md)
 
-[<span data-ttu-id="ca7e3-119">製造品目の標準原価を管理するための準備</span><span class="sxs-lookup"><span data-stu-id="ca7e3-119">Prepare to maintain standard costs for manufactured items</span></span>](update-standard-costs-manufacturing-environment.md)
+[<span data-ttu-id="239a3-119">製造品目の標準原価を管理するための準備</span><span class="sxs-lookup"><span data-stu-id="239a3-119">Prepare to maintain standard costs for manufactured items</span></span>](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
