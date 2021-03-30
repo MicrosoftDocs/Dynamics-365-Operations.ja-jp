@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 964a3850ddceb9575666b1a74ab973070aa82384
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cf3e153adfb4fc65e2d4eabad02765a2cf45a5c2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988238"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239609"
 ---
 # <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit"></a>資産グループの減損損失の提案と転記
 

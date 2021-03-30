@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ff39fe1a308a25fe6dc81e824fe7464c571b68c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 236bb5cebc2967f72e1b968072b35b54ab5cd393
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964497"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207191"
 ---
 # <a name="define-asset-idle-period-and-validate-depreciation-process"></a>資産のアイドル期間の定義および減価償却プロセスの検証
 

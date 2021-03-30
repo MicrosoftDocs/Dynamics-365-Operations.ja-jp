@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a53b073b70a574280275c76b42588d7cb15a08a6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 378d6fd77bdb360ecacdb98007e3ea85897e7ab6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961473"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212907"
 ---
 # <a name="create-cgu-group-and-cash-generating-units"></a>CGU グループおよび資産グループの作成
 

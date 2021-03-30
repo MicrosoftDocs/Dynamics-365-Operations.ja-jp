@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12f4bc8b5e1b7c27990eff077ba49ea1c450400c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6eb826c5509aadd2a42f04a44ae00d1cbd86b988
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962507"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236674"
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-one-asset"></a>単一資産の資産耐用年数期間中の減価償却方法の変更
 
