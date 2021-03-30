@@ -1,6 +1,6 @@
 ---
 title: 階層リンク モジュール
-description: このトピックでは、階層リンク モジュールと、Microsoft Dynamics 365 Commerce のサイト ページへの追加方法について説明します。
+description: このトピックでは、 breadcrumb モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
 ms.date: 10/20/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1883281c62575ae0b48b6e584876185bb179b4f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06f8ffdecd1f77468ed88043929f29b6957c2e6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986082"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206562"
 ---
 # <a name="breadcrumb-module"></a>階層リンク モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、階層リンク モジュールと、Microsoft Dynamics 365 Commerce のサイト ページへの追加方法について説明します。
-
-## <a name="overview"></a>概要
+このトピックでは、 breadcrumb モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 階層リンク モジュールは、サイト ページにおけるセカンダリ ナビゲーションを提供する目的で使用されます。 通常は、ページ上部のヘッダー下部に表示されます。 階層リンク モジュールは任意のページに追加することができますが、製品カテゴリの階層を示す、またはサイト内を簡単に移動する方法として、製品の詳細ページ (PDPs) 上で使用される場合が多く見られます。 また、ユーザーが検索ページまたは一覧ページから PDP を開く際に、階層リンク モジュールを使用して [結果に戻る] リンクを表示することもできます。 これにより、ユーザーは簡単に [フィルタ処理済リスト] のページに戻って買い物を続けることができます。
 

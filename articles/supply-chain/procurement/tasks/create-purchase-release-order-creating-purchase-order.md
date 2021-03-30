@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f82cabebea5c9e86e898c064c70a0e7a48b49d3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: eaa441318ed7d00ce205f4f59b983b25cf97f086
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016606"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211985"
 ---
 # <a name="create-a-purchase-release-order-when-creating-the-purchase-order"></a>発注書の作成時に購買リリース注文を作成
 

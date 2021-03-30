@@ -1,6 +1,6 @@
 ---
 title: IFRAME​​ モジュール
-description: このトピックでは、iframeモジュールを使用して、Microsoft Dynamics 365 Commerceでサイトのページに追加する方法を説明します。
+description: このトピックでは、iframe モジュールについて取り上げ、Microsoft Dynamics 365 Commerce でサイトのページに追加する方法を説明します。
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b7b5935a81377e0cb6acfc497eece6148bf1eeee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 178469d58e5cb619c3eacfa6760f0eaec18be0dc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993372"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206135"
 ---
-# <a name="iframe-module"></a>IFRAME​​ モジュール
+# <a name="iframe-module"></a>iframe モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、iframeモジュールを使用して、Microsoft Dynamics 365 Commerceでサイトのページに追加する方法を説明します。
-
-## <a name="overview"></a>概要
+このトピックでは、iframe モジュールについて取り上げ、Microsoft Dynamics 365 Commerce でサイトのページに追加する方法を説明します。
 
 iframe モジュールは、サイトの外部コンテンツをホストする iframe (インライン フレーム) を提供します。 たとえば、どのサイトのページでも YouTube の動画や PDF ファイル ビューアをホストすることができます。 
 

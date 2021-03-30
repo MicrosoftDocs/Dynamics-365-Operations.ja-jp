@@ -16,14 +16,14 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3990365dda0a0cff7adcc1d97120293d43f6e858
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 987dca54e47b909014862e310aa424019d8c4677
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973134"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207826"
 ---
-# <a name="enable-and-use-cross-channel-sharing"></a>クロスチャンネル共有の有効化と使用
+# <a name="enable-and-use-cross-channel-sharing"></a>クロスチャネル共有の有効化と使用
 
 [!include [banner](includes/banner.md)]
 

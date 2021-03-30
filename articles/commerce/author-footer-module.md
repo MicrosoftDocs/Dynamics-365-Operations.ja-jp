@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 038fee32cbf1ed6b4967f440faaf3c0d4fa583f6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 16c9ca145aff97f0af242da4cf662367f1f4ca3d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979950"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211451"
 ---
 # <a name="footer-module"></a>フッター モジュール  
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、フッター モジュール、および Microsoft Dynamics 365 Commerce での作成方法について説明します。
-
-## <a name="overview"></a>概要
 
 フッター モジュールは、ページ フッターに表示されるモジュールをホストするために使用される特別なコンテナーです。 たとえば、**お問い合わせ** や **店舗ポリシー** ページなど、サイト内のさまざまなページへのリンクを含めることができます。
 

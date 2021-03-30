@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e432f54aaad5bdd73c3c10c387f1a24650e1414a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e4fecd7dfbba9ec348a26bf6aa00b73faa4a1125
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982084"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208395"
 ---
 # <a name="setup-payment-fee-for-japan"></a>日本の支払手数料の設定
 

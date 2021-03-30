@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a77196be69bb71d917bf84c633199a3af3fbf478
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b9325ef31fc61d451584930b09c2039156c0c05
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986032"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206586"
 ---
 # <a name="promo-banner-module"></a>プロモーション バナー モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、プロモーション バナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 プロモーション バナー モジュールは、ページにインライン情報メッセージを表示するために使用されます。 電子商取引サイトのすべてのページに表示される、サイト全体のプロモーションを表示するために使用できます。 
 
