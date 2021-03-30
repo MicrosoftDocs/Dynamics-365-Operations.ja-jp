@@ -18,25 +18,25 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ac31b3d2b3b1d9ca51919fe75e06f0de1cda0c63
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4c22a4314c36ba7112456ef264df500af98996f3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963438"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232962"
 ---
-# <a name="configure-app-field-names-in-the-warehouse-app"></a><span data-ttu-id="6c095-103">倉庫アプリのアプリ フィールド名のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6c095-103">Configure app field names in the warehouse app</span></span>
+# <a name="configure-app-field-names-in-the-warehouse-app"></a><span data-ttu-id="4b9ab-103">倉庫アプリのアプリ フィールド名のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="4b9ab-103">Configure app field names in the warehouse app</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6c095-104">このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6c095-104">This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management.</span></span> 
+<span data-ttu-id="4b9ab-104">このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-104">This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management.</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="6c095-105">このトピックは、倉庫管理の機能に適用されます。</span><span class="sxs-lookup"><span data-stu-id="6c095-105">This topic applies to features in Warehouse management.</span></span> <span data-ttu-id="6c095-106">在庫管理の機能には適用しません。</span><span class="sxs-lookup"><span data-stu-id="6c095-106">It doesn’t apply to features in Inventory management.</span></span> <span data-ttu-id="6c095-107">Warehousing は倉庫作業の実行に使用できるアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="6c095-107">Warehousing is an application that you can use to perform warehouse tasks.</span></span> <span data-ttu-id="6c095-108">アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="6c095-108">You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned.</span></span> <span data-ttu-id="6c095-109">このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Warehousing での使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6c095-109">This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing.</span></span> <span data-ttu-id="6c095-110">FWarehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル [倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6c095-110">For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure the warehouse app overview](install-configure-warehousing-app.md).</span></span>
+> <span data-ttu-id="4b9ab-105">このトピックは、倉庫管理の機能に適用されます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-105">This topic applies to features in Warehouse management.</span></span> <span data-ttu-id="4b9ab-106">在庫管理の機能には適用しません。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-106">It doesn’t apply to features in Inventory management.</span></span> <span data-ttu-id="4b9ab-107">Warehousing は倉庫作業の実行に使用できるアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-107">Warehousing is an application that you can use to perform warehouse tasks.</span></span> <span data-ttu-id="4b9ab-108">アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-108">You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned.</span></span> <span data-ttu-id="4b9ab-109">このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Warehousing での使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-109">This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing.</span></span> <span data-ttu-id="4b9ab-110">FWarehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル [倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-110">For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure the warehouse app overview](install-configure-warehousing-app.md).</span></span>
 
-## <a name="configure-warehouse-app-field-names"></a><span data-ttu-id="6c095-111">倉庫アプリ フィールド名のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6c095-111">Configure warehouse app field names</span></span>
+## <a name="configure-warehouse-app-field-names"></a><span data-ttu-id="4b9ab-111">倉庫アプリ フィールド名のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="4b9ab-111">Configure warehouse app field names</span></span>
 
-<span data-ttu-id="6c095-112">Warehousing をモバイル デバイスで使用するときに、**倉庫アプリ フィールド名** ページでお使いのデバイスにメタデータをどのように表示するかをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="6c095-112">When you use Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page.</span></span> <span data-ttu-id="6c095-113">新しい会社で、**既定の設定の作成** をクリックして倉庫モバイル デバイス ワークフローで使用されるすべてのフィールド名を生成してから、優先される入力モードと入力タイプを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="6c095-113">In a new company, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them.</span></span> <span data-ttu-id="6c095-114">すべてのフィールド名を生成すると、次の入力オプションを選択できます。</span><span class="sxs-lookup"><span data-stu-id="6c095-114">After you have generated all field names, you can select the following input options.</span></span>
+<span data-ttu-id="4b9ab-112">Warehousing をモバイル デバイスで使用するときに、**倉庫アプリ フィールド名** ページでお使いのデバイスにメタデータをどのように表示するかをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-112">When you use Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page.</span></span> <span data-ttu-id="4b9ab-113">新しい会社で、**既定の設定の作成** をクリックして倉庫モバイル デバイス ワークフローで使用されるすべてのフィールド名を生成してから、優先される入力モードと入力タイプを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-113">In a new company, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them.</span></span> <span data-ttu-id="4b9ab-114">すべてのフィールド名を生成すると、次の入力オプションを選択できます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-114">After you have generated all field names, you can select the following input options.</span></span>
 
 <table>
 <colgroup>
@@ -45,31 +45,31 @@ ms.locfileid: "4963438"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="6c095-115">オプション</span><span class="sxs-lookup"><span data-stu-id="6c095-115">Option</span></span></th>
-<th><span data-ttu-id="6c095-116">説明</span><span class="sxs-lookup"><span data-stu-id="6c095-116">Description</span></span></th>
+<th><span data-ttu-id="4b9ab-115">オプション</span><span class="sxs-lookup"><span data-stu-id="4b9ab-115">Option</span></span></th>
+<th><span data-ttu-id="4b9ab-116">説明</span><span class="sxs-lookup"><span data-stu-id="4b9ab-116">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="6c095-117">優先入力モード</span><span class="sxs-lookup"><span data-stu-id="6c095-117">Preferred input mode</span></span></td>
-<td><span data-ttu-id="6c095-118">このオプションは、スキャン フィールドまたは手動入力フィールドを選択したフィールド名に表示するかどうかを定義します。</span><span class="sxs-lookup"><span data-stu-id="6c095-118">This option defines whether a scanning field or a manual entry input field should be shown for the selected field name.</span></span> <span data-ttu-id="6c095-119">これは、バーコードがフィールドに使用されるかどうかによって、フィールドを区別する場合に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6c095-119">This is useful to distinguish fields depending on if barcodes are used for the field.</span></span> <span data-ttu-id="6c095-120"><strong>注記:</strong> 優先入力モードを <strong>スキャン</strong> に設定したフィールド名では、バーコードが読み取れない場合や破損している場合に手動で情報を入力できます。</span><span class="sxs-lookup"><span data-stu-id="6c095-120"><strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the barcode is unreadable or damaged.</span></span></td>
+<td><span data-ttu-id="4b9ab-117">優先入力モード</span><span class="sxs-lookup"><span data-stu-id="4b9ab-117">Preferred input mode</span></span></td>
+<td><span data-ttu-id="4b9ab-118">このオプションは、スキャン フィールドまたは手動入力フィールドを選択したフィールド名に表示するかどうかを定義します。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-118">This option defines whether a scanning field or a manual entry input field should be shown for the selected field name.</span></span> <span data-ttu-id="4b9ab-119">これは、バーコードがフィールドに使用されるかどうかによって、フィールドを区別する場合に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-119">This is useful to distinguish fields depending on if barcodes are used for the field.</span></span> <span data-ttu-id="4b9ab-120"><strong>注記:</strong> 優先入力モードを <strong>スキャン</strong> に設定したフィールド名では、バーコードが読み取れない場合や破損している場合に手動で情報を入力できます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-120"><strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the barcode is unreadable or damaged.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="6c095-121">入力タイプ</span><span class="sxs-lookup"><span data-stu-id="6c095-121">Input type</span></span></td>
-<td><span data-ttu-id="6c095-122">このオプションは、どの入力タイプを選択したフィールド名に使用するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="6c095-122">This option defines what input type should be used for the selected field name.</span></span> <span data-ttu-id="6c095-123">次の 4 つのオプションが使用可能です。</span><span class="sxs-lookup"><span data-stu-id="6c095-123">Four options are available:</span></span>
+<td><span data-ttu-id="4b9ab-121">入力タイプ</span><span class="sxs-lookup"><span data-stu-id="4b9ab-121">Input type</span></span></td>
+<td><span data-ttu-id="4b9ab-122">このオプションは、どの入力タイプを選択したフィールド名に使用するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-122">This option defines what input type should be used for the selected field name.</span></span> <span data-ttu-id="4b9ab-123">次の 4 つのオプションが使用可能です。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-123">Four options are available:</span></span>
 <ul>
-<li><span data-ttu-id="6c095-124"><strong>選択</strong> - 選択するオプションの一覧を含みます。</span><span class="sxs-lookup"><span data-stu-id="6c095-124"><strong>Selection</strong> - Contains a list of options to choose from.</span></span> <span data-ttu-id="6c095-125">このオプションのフィールド名は編集できません。</span><span class="sxs-lookup"><span data-stu-id="6c095-125">Field names with this option are not editable.</span></span></li>
-<li><span data-ttu-id="6c095-126"><strong>日付</strong> - 日付として指定されたフィールド名がラベルとともに日付形式で表示されます。</span><span class="sxs-lookup"><span data-stu-id="6c095-126"><strong>Date</strong> - Field names specified as date will show a date format with the label.</span></span> <span data-ttu-id="6c095-127">これは、倉庫作業者が日付を入力する形式を確認するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6c095-127">This helps warehouse workers see in which format to enter the date.</span></span> <span data-ttu-id="6c095-128">このオプションのフィールド名は編集できません。</span><span class="sxs-lookup"><span data-stu-id="6c095-128">Field names with this option are not editable.</span></span></li>
-<li><span data-ttu-id="6c095-129"><strong>アルファ</strong> - 選択されている場合、アプリに手動で情報を入力する際にデバイス キーボードを使用します。</span><span class="sxs-lookup"><span data-stu-id="6c095-129"><strong>Alpha</strong> - If selected, the device keyboard will be used when entering information manually in the app.</span></span> <span data-ttu-id="6c095-130">使用するデバイスに応じて、キーボード エクスペリエンスを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="6c095-130">The keyboard experience can be changed depending on which device is used.</span></span></li>
-<li><span data-ttu-id="6c095-131"><strong>数値</strong> - 数値入力のみを使用するフィールド名では、このオプションを選択してデバイス キーボードではなくカスタムのテンキーを入力フィールドとともに表示できます。</span><span class="sxs-lookup"><span data-stu-id="6c095-131"><strong>Numeric</strong> - For field names that use numeric input only, you can select this option to display a custom numeric keypad with the input field instead of the device keyboard.</span></span></li>
+<li><span data-ttu-id="4b9ab-124"><strong>選択</strong> - 選択するオプションの一覧を含みます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-124"><strong>Selection</strong> - Contains a list of options to choose from.</span></span> <span data-ttu-id="4b9ab-125">このオプションのフィールド名は編集できません。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-125">Field names with this option are not editable.</span></span></li>
+<li><span data-ttu-id="4b9ab-126"><strong>日付</strong> - 日付として指定されたフィールド名がラベルとともに日付形式で表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-126"><strong>Date</strong> - Field names specified as date will show a date format with the label.</span></span> <span data-ttu-id="4b9ab-127">これは、倉庫作業者が日付を入力する形式を確認するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-127">This helps warehouse workers see in which format to enter the date.</span></span> <span data-ttu-id="4b9ab-128">このオプションのフィールド名は編集できません。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-128">Field names with this option are not editable.</span></span></li>
+<li><span data-ttu-id="4b9ab-129"><strong>アルファ</strong> - 選択されている場合、アプリに手動で情報を入力する際にデバイス キーボードを使用します。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-129"><strong>Alpha</strong> - If selected, the device keyboard will be used when entering information manually in the app.</span></span> <span data-ttu-id="4b9ab-130">使用するデバイスに応じて、キーボード エクスペリエンスを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-130">The keyboard experience can be changed depending on which device is used.</span></span></li>
+<li><span data-ttu-id="4b9ab-131"><strong>数値</strong> - 数値入力のみを使用するフィールド名では、このオプションを選択してデバイス キーボードではなくカスタムのテンキーを入力フィールドとともに表示できます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-131"><strong>Numeric</strong> - For field names that use numeric input only, you can select this option to display a custom numeric keypad with the input field instead of the device keyboard.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="configure-warehouse-app-field-priority"></a><span data-ttu-id="6c095-132">倉庫アプリ フィールドの優先順位のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6c095-132">Configure warehouse app field priority</span></span>
+## <a name="configure-warehouse-app-field-priority"></a><span data-ttu-id="4b9ab-132">倉庫アプリ フィールドの優先順位のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="4b9ab-132">Configure warehouse app field priority</span></span>
 
-<span data-ttu-id="6c095-133">**倉庫アプリ フィールドの優先順位** ページで、フィールド名を異なる優先順位グループに配置できます。</span><span class="sxs-lookup"><span data-stu-id="6c095-133">On the **Warehouse app field priority** page, you can put field names into different priority groups.</span></span> <span data-ttu-id="6c095-134">これにより、倉庫作業者がアプリを使用してタスクを実行する際に、どの情報を主要なタスク ページに表示すべきかを決定することができます。</span><span class="sxs-lookup"><span data-stu-id="6c095-134">This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app.</span></span> <span data-ttu-id="6c095-135">**既定の設定の作成** をクリックすると、優先順位グループの既定の設定が生成されます。</span><span class="sxs-lookup"><span data-stu-id="6c095-135">If you click **Create default setup**, a default set of priority groups will be generated.</span></span> <span data-ttu-id="6c095-136">必要な数だけ優先順位グループを作成することもできますが、3 つの優先順位グループだけがタスク ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="6c095-136">It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page.</span></span> <span data-ttu-id="6c095-137">システムはアプリにメタデータを送信する際に、優先順位グループに応じて各フィールドに相対的な優先順位を割り当てて、アプリはメタデータを含む上位 3 つの優先順位グループをタスク ページに表示します。</span><span class="sxs-lookup"><span data-stu-id="6c095-137">When the system sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page.</span></span> <span data-ttu-id="6c095-138">オーバーフローしているメタデータの残りは、2 番目の詳細ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="6c095-138">The rest of the overflowing metadata will be displayed on a secondary details page.</span></span> <span data-ttu-id="6c095-139">次の表に、5 つの優先順位グループの例を示します。</span><span class="sxs-lookup"><span data-stu-id="6c095-139">The following table shows an example of five priority groups.</span></span>
+<span data-ttu-id="4b9ab-133">**倉庫アプリ フィールドの優先順位** ページで、フィールド名を異なる優先順位グループに配置できます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-133">On the **Warehouse app field priority** page, you can put field names into different priority groups.</span></span> <span data-ttu-id="4b9ab-134">これにより、倉庫作業者がアプリを使用してタスクを実行する際に、どの情報を主要なタスク ページに表示すべきかを決定することができます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-134">This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app.</span></span> <span data-ttu-id="4b9ab-135">**既定の設定の作成** をクリックすると、優先順位グループの既定の設定が生成されます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-135">If you click **Create default setup**, a default set of priority groups will be generated.</span></span> <span data-ttu-id="4b9ab-136">必要な数だけ優先順位グループを作成することもできますが、3 つの優先順位グループだけがタスク ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-136">It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page.</span></span> <span data-ttu-id="4b9ab-137">システムはアプリにメタデータを送信する際に、優先順位グループに応じて各フィールドに相対的な優先順位を割り当てて、アプリはメタデータを含む上位 3 つの優先順位グループをタスク ページに表示します。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-137">When the system sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page.</span></span> <span data-ttu-id="4b9ab-138">オーバーフローしているメタデータの残りは、2 番目の詳細ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-138">The rest of the overflowing metadata will be displayed on a secondary details page.</span></span> <span data-ttu-id="4b9ab-139">次の表に、5 つの優先順位グループの例を示します。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-139">The following table shows an example of five priority groups.</span></span>
 
 <table>
 <colgroup>
@@ -78,68 +78,71 @@ ms.locfileid: "4963438"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="6c095-140">優先順位グループ</span><span class="sxs-lookup"><span data-stu-id="6c095-140">Priority group</span></span></th>
-<th><span data-ttu-id="6c095-141">割り当て済フィールド</span><span class="sxs-lookup"><span data-stu-id="6c095-141">Assigned fields</span></span></th>
+<th><span data-ttu-id="4b9ab-140">優先順位グループ</span><span class="sxs-lookup"><span data-stu-id="4b9ab-140">Priority group</span></span></th>
+<th><span data-ttu-id="4b9ab-141">割り当て済フィールド</span><span class="sxs-lookup"><span data-stu-id="4b9ab-141">Assigned fields</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td> <span data-ttu-id="6c095-142">優先順位 10</span><span class="sxs-lookup"><span data-stu-id="6c095-142">Priority 10</span></span></td>
+<td> <span data-ttu-id="4b9ab-142">優先順位 10</span><span class="sxs-lookup"><span data-stu-id="4b9ab-142">Priority 10</span></span></td>
 <td><ul>
-<li><span data-ttu-id="6c095-143">項目</span><span class="sxs-lookup"><span data-stu-id="6c095-143">Item</span></span></li>
-<li><span data-ttu-id="6c095-144">件数</span><span class="sxs-lookup"><span data-stu-id="6c095-144">Quantity</span></span></li>
-<li><span data-ttu-id="6c095-145">計量単位</span><span class="sxs-lookup"><span data-stu-id="6c095-145">Unit of measure</span></span></li>
+<li><span data-ttu-id="4b9ab-143">項目</span><span class="sxs-lookup"><span data-stu-id="4b9ab-143">Item</span></span></li>
+<li><span data-ttu-id="4b9ab-144">件数</span><span class="sxs-lookup"><span data-stu-id="4b9ab-144">Quantity</span></span></li>
+<li><span data-ttu-id="4b9ab-145">計量単位</span><span class="sxs-lookup"><span data-stu-id="4b9ab-145">Unit of measure</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td> <span data-ttu-id="6c095-146">優先順位 20</span><span class="sxs-lookup"><span data-stu-id="6c095-146">Priority 20</span></span></td>
+<td> <span data-ttu-id="4b9ab-146">優先順位 20</span><span class="sxs-lookup"><span data-stu-id="4b9ab-146">Priority 20</span></span></td>
 <td><ul>
-<li><span data-ttu-id="6c095-147">クラスター位置</span><span class="sxs-lookup"><span data-stu-id="6c095-147">Cluster position</span></span></li>
-<li><span data-ttu-id="6c095-148">クラスター</span><span class="sxs-lookup"><span data-stu-id="6c095-148">Cluster</span></span></li>
+<li><span data-ttu-id="4b9ab-147">クラスター位置</span><span class="sxs-lookup"><span data-stu-id="4b9ab-147">Cluster position</span></span></li>
+<li><span data-ttu-id="4b9ab-148">クラスター</span><span class="sxs-lookup"><span data-stu-id="4b9ab-148">Cluster</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td> <span data-ttu-id="6c095-149">優先順位 30</span><span class="sxs-lookup"><span data-stu-id="6c095-149">Priority 30</span></span></td>
+<td> <span data-ttu-id="4b9ab-149">優先順位 30</span><span class="sxs-lookup"><span data-stu-id="4b9ab-149">Priority 30</span></span></td>
 <td><ul>
-<li><span data-ttu-id="6c095-150">品目の説明</span><span class="sxs-lookup"><span data-stu-id="6c095-150">Item description</span></span></li>
+<li><span data-ttu-id="4b9ab-150">品目の説明</span><span class="sxs-lookup"><span data-stu-id="4b9ab-150">Item description</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td> <span data-ttu-id="6c095-151">優先順位 40</span><span class="sxs-lookup"><span data-stu-id="6c095-151">Priority 40</span></span></td>
+<td> <span data-ttu-id="4b9ab-151">優先順位 40</span><span class="sxs-lookup"><span data-stu-id="4b9ab-151">Priority 40</span></span></td>
 <td><ul>
-<li><span data-ttu-id="6c095-152">構成</span><span class="sxs-lookup"><span data-stu-id="6c095-152">Configuration</span></span></li>
-<li><span data-ttu-id="6c095-153">色</span><span class="sxs-lookup"><span data-stu-id="6c095-153">Color</span></span></li>
-<li><span data-ttu-id="6c095-154">サイズ</span><span class="sxs-lookup"><span data-stu-id="6c095-154">Size</span></span></li>
-<li><span data-ttu-id="6c095-155">スタイル</span><span class="sxs-lookup"><span data-stu-id="6c095-155">Style</span></span></li>
+<li><span data-ttu-id="4b9ab-152">構成</span><span class="sxs-lookup"><span data-stu-id="4b9ab-152">Configuration</span></span></li>
+<li><span data-ttu-id="4b9ab-153">色</span><span class="sxs-lookup"><span data-stu-id="4b9ab-153">Color</span></span></li>
+<li><span data-ttu-id="4b9ab-154">サイズ</span><span class="sxs-lookup"><span data-stu-id="4b9ab-154">Size</span></span></li>
+<li><span data-ttu-id="4b9ab-155">スタイル</span><span class="sxs-lookup"><span data-stu-id="4b9ab-155">Style</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td> <span data-ttu-id="6c095-156">優先順位 50</span><span class="sxs-lookup"><span data-stu-id="6c095-156">Priority 50</span></span></td>
+<td> <span data-ttu-id="4b9ab-156">優先順位 50</span><span class="sxs-lookup"><span data-stu-id="4b9ab-156">Priority 50</span></span></td>
 <td><ul>
-<li><span data-ttu-id="6c095-157">保管場所</span><span class="sxs-lookup"><span data-stu-id="6c095-157">Location</span></span></li>
-<li><span data-ttu-id="6c095-158">ライセンス プレート</span><span class="sxs-lookup"><span data-stu-id="6c095-158">License plate</span></span></li>
+<li><span data-ttu-id="4b9ab-157">保管場所</span><span class="sxs-lookup"><span data-stu-id="4b9ab-157">Location</span></span></li>
+<li><span data-ttu-id="4b9ab-158">ライセンス プレート</span><span class="sxs-lookup"><span data-stu-id="4b9ab-158">License plate</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="6c095-159">たとえば、倉庫作業者がモバイル デバイスのタスクを実行しているときに、アプリケーションに表示されるメタデータが次のフィールドで構成されている場合 :</span><span class="sxs-lookup"><span data-stu-id="6c095-159">For example, when a warehouse worker is performing a task on a mobile device, if the metadata that will be displayed in the app consists of the following fields:</span></span>
+<span data-ttu-id="4b9ab-159">たとえば、倉庫作業者がモバイル デバイスのタスクを実行しているときに、アプリケーションに表示されるメタデータが次のフィールドで構成されている場合 :</span><span class="sxs-lookup"><span data-stu-id="4b9ab-159">For example, when a warehouse worker is performing a task on a mobile device, if the metadata that will be displayed in the app consists of the following fields:</span></span>
 
--   <span data-ttu-id="6c095-160">項目</span><span class="sxs-lookup"><span data-stu-id="6c095-160">Item</span></span>
--   <span data-ttu-id="6c095-161">件数</span><span class="sxs-lookup"><span data-stu-id="6c095-161">Quantity</span></span>
--   <span data-ttu-id="6c095-162">計量単位</span><span class="sxs-lookup"><span data-stu-id="6c095-162">Unit of measure</span></span>
--   <span data-ttu-id="6c095-163">品目の説明</span><span class="sxs-lookup"><span data-stu-id="6c095-163">Item description</span></span>
--   <span data-ttu-id="6c095-164">サイズと場所</span><span class="sxs-lookup"><span data-stu-id="6c095-164">Size and Location</span></span>
+-   <span data-ttu-id="4b9ab-160">項目</span><span class="sxs-lookup"><span data-stu-id="4b9ab-160">Item</span></span>
+-   <span data-ttu-id="4b9ab-161">件数</span><span class="sxs-lookup"><span data-stu-id="4b9ab-161">Quantity</span></span>
+-   <span data-ttu-id="4b9ab-162">計量単位</span><span class="sxs-lookup"><span data-stu-id="4b9ab-162">Unit of measure</span></span>
+-   <span data-ttu-id="4b9ab-163">品目の説明</span><span class="sxs-lookup"><span data-stu-id="4b9ab-163">Item description</span></span>
+-   <span data-ttu-id="4b9ab-164">サイズと場所</span><span class="sxs-lookup"><span data-stu-id="4b9ab-164">Size and Location</span></span>
 
-<span data-ttu-id="6c095-165">上の表で設定されている倉庫アプリ フィールドの優先順位に基づいて、情報の次の 3 行は、タスク ページに表示されます :</span><span class="sxs-lookup"><span data-stu-id="6c095-165">Based on the warehouse app field priority set up in the table above, the following 3 rows of information will be displayed on the task page:</span></span>
+<span data-ttu-id="4b9ab-165">上の表で設定されている倉庫アプリ フィールドの優先順位に基づいて、情報の次の 3 行は、タスク ページに表示されます :</span><span class="sxs-lookup"><span data-stu-id="4b9ab-165">Based on the warehouse app field priority set up in the table above, the following 3 rows of information will be displayed on the task page:</span></span>
 
--   <span data-ttu-id="6c095-166">行 1: 品目、数量、測定単位</span><span class="sxs-lookup"><span data-stu-id="6c095-166">Row 1: Item, Quantity, Unit of measure</span></span>
--   <span data-ttu-id="6c095-167">行 2: 品目の説明</span><span class="sxs-lookup"><span data-stu-id="6c095-167">Row 2: Item description</span></span>
--   <span data-ttu-id="6c095-168">行 3 : サイズ</span><span class="sxs-lookup"><span data-stu-id="6c095-168">Row 3: Size</span></span>
+-   <span data-ttu-id="4b9ab-166">行 1: 品目、数量、測定単位</span><span class="sxs-lookup"><span data-stu-id="4b9ab-166">Row 1: Item, Quantity, Unit of measure</span></span>
+-   <span data-ttu-id="4b9ab-167">行 2: 品目の説明</span><span class="sxs-lookup"><span data-stu-id="4b9ab-167">Row 2: Item description</span></span>
+-   <span data-ttu-id="4b9ab-168">行 3 : サイズ</span><span class="sxs-lookup"><span data-stu-id="4b9ab-168">Row 3: Size</span></span>
 
-<span data-ttu-id="6c095-169">場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="6c095-169">The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page.</span></span> <span data-ttu-id="6c095-170">ユーザー インターフェイスの詳細や例については、ブログ投稿 [Finance and Operations - Warehousing の発表](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6c095-170">To learn more and see examples of the user interface, refer to the blog post [Announcing Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).</span></span>
+<span data-ttu-id="4b9ab-169">場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-169">The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page.</span></span> <span data-ttu-id="4b9ab-170">ユーザー インターフェイスの詳細や例については、ブログ投稿 [Finance and Operations - Warehousing の発表](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4b9ab-170">To learn more and see examples of the user interface, refer to the blog post [Announcing Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="6c095-171">追加リソース</span><span class="sxs-lookup"><span data-stu-id="6c095-171">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="4b9ab-171">追加リソース</span><span class="sxs-lookup"><span data-stu-id="4b9ab-171">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="6c095-172">倉庫アプリのインストールとコンフィギュレーションの概要</span><span class="sxs-lookup"><span data-stu-id="6c095-172">Install and configure the warehouse app overview</span></span>](install-configure-warehousing-app.md)
+[<span data-ttu-id="4b9ab-172">倉庫アプリのインストールとコンフィギュレーションの概要</span><span class="sxs-lookup"><span data-stu-id="4b9ab-172">Install and configure the warehouse app overview</span></span>](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

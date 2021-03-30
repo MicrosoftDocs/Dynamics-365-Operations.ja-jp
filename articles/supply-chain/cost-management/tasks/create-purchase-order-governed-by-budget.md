@@ -14,50 +14,53 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbfbbef3bd7c7398f0f17b6cddbbff8c4755638d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 100db102f74d477bcfde48a24828b817fd65e033
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963716"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239510"
 ---
-# <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="5ae73-103">予算に基づく発注書の作成</span><span class="sxs-lookup"><span data-stu-id="5ae73-103">Create a purchase order governed by budget</span></span>
+# <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="13d1b-103">予算に基づく発注書の作成</span><span class="sxs-lookup"><span data-stu-id="13d1b-103">Create a purchase order governed by budget</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="5ae73-104">この手順を使用して、利用可能な予算の確認をする発注書を作成します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="5ae73-105">この記録では、USMF デモ データ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-105">This recording uses the USMF demo data company.</span></span>
+<span data-ttu-id="13d1b-104">この手順を使用して、利用可能な予算の確認をする発注書を作成します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="13d1b-105">この記録では、USMF デモ データ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-105">This recording uses the USMF demo data company.</span></span>
 
 
-## <a name="review-the-budget-control-configuration"></a><span data-ttu-id="5ae73-106">予算管理コンフィギュレーションを確認する</span><span class="sxs-lookup"><span data-stu-id="5ae73-106">Review the budget control configuration</span></span>
-1. <span data-ttu-id="5ae73-107">[予算作成] > [設定] > [予算管理] > [予算管理コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-107">Go to Budgeting > Setup > Budget control > Budget control configuration.</span></span>
-2. <span data-ttu-id="5ae73-108">[利用可能な予算財源] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-108">Click the Budget funds available tab.</span></span>
-3. <span data-ttu-id="5ae73-109">[伝票と仕訳帳] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-109">Click the Documents and journals tab.</span></span>
-4. <span data-ttu-id="5ae73-110">[予算管理ルールの定義] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-110">Click the Define budget control rules tab.</span></span>
-5. <span data-ttu-id="5ae73-111">[予算グループの定義] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-111">Click the Define budget groups tab.</span></span>
-6. <span data-ttu-id="5ae73-112">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5ae73-112">Close the page.</span></span>
+## <a name="review-the-budget-control-configuration"></a><span data-ttu-id="13d1b-106">予算管理コンフィギュレーションを確認する</span><span class="sxs-lookup"><span data-stu-id="13d1b-106">Review the budget control configuration</span></span>
+1. <span data-ttu-id="13d1b-107">[予算作成] > [設定] > [予算管理] > [予算管理コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-107">Go to Budgeting > Setup > Budget control > Budget control configuration.</span></span>
+2. <span data-ttu-id="13d1b-108">[利用可能な予算財源] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-108">Click the Budget funds available tab.</span></span>
+3. <span data-ttu-id="13d1b-109">[伝票と仕訳帳] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-109">Click the Documents and journals tab.</span></span>
+4. <span data-ttu-id="13d1b-110">[予算管理ルールの定義] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-110">Click the Define budget control rules tab.</span></span>
+5. <span data-ttu-id="13d1b-111">[予算グループの定義] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-111">Click the Define budget groups tab.</span></span>
+6. <span data-ttu-id="13d1b-112">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="13d1b-112">Close the page.</span></span>
 
-## <a name="create-the-purchase-order-header"></a><span data-ttu-id="5ae73-113">発注ヘッダーの作成</span><span class="sxs-lookup"><span data-stu-id="5ae73-113">Create the purchase order header</span></span>
-1. <span data-ttu-id="5ae73-114">[調達] > [発注書] > [すべての発注書] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-114">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="5ae73-115">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-115">Click New.</span></span>
-3. <span data-ttu-id="5ae73-116">[仕入先] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-116">In the Vendor account field, enter or select a value.</span></span>
-4. <span data-ttu-id="5ae73-117">[一般] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-117">Expand the General section.</span></span>
-5. <span data-ttu-id="5ae73-118">[転記日] フィールドで、日付を「2016-01-01」に設定します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-118">In the Accounting date field, set the date to '2016-01-01'.</span></span>
-6. <span data-ttu-id="5ae73-119">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-119">Click OK.</span></span>
+## <a name="create-the-purchase-order-header"></a><span data-ttu-id="13d1b-113">発注ヘッダーの作成</span><span class="sxs-lookup"><span data-stu-id="13d1b-113">Create the purchase order header</span></span>
+1. <span data-ttu-id="13d1b-114">[調達] > [発注書] > [すべての発注書] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-114">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="13d1b-115">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-115">Click New.</span></span>
+3. <span data-ttu-id="13d1b-116">[仕入先] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-116">In the Vendor account field, enter or select a value.</span></span>
+4. <span data-ttu-id="13d1b-117">[一般] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-117">Expand the General section.</span></span>
+5. <span data-ttu-id="13d1b-118">[転記日] フィールドで、日付を「2016-01-01」に設定します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-118">In the Accounting date field, set the date to '2016-01-01'.</span></span>
+6. <span data-ttu-id="13d1b-119">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-119">Click OK.</span></span>
 
-## <a name="add-a-purchase-order-line"></a><span data-ttu-id="5ae73-120">発注明細行の追加</span><span class="sxs-lookup"><span data-stu-id="5ae73-120">Add a purchase order line</span></span>
-1. <span data-ttu-id="5ae73-121">[調達カテゴリ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-121">In the Procurement category field, enter or select a value.</span></span>
-2. <span data-ttu-id="5ae73-122">[数量] を「2」に設定します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-122">Set Quantity to '2'.</span></span>
-3. <span data-ttu-id="5ae73-123">[単位] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-123">In the Unit field, enter or select a value.</span></span>
-4. <span data-ttu-id="5ae73-124">[単価] を「10000」に設定します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-124">Set Unit price to '10000'.</span></span>
-5. <span data-ttu-id="5ae73-125">[財務] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-125">Click Financials.</span></span>
-6. <span data-ttu-id="5ae73-126">[金額の配分] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-126">Click Distribute amounts.</span></span>
-7. <span data-ttu-id="5ae73-127">[勘定科目] フィールドで、値「601300-001-023--」を指定します。</span><span class="sxs-lookup"><span data-stu-id="5ae73-127">In the Ledger account field, specify the value '601300-001-023--'.</span></span>
-8. <span data-ttu-id="5ae73-128">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5ae73-128">Close the page.</span></span>
+## <a name="add-a-purchase-order-line"></a><span data-ttu-id="13d1b-120">発注明細行の追加</span><span class="sxs-lookup"><span data-stu-id="13d1b-120">Add a purchase order line</span></span>
+1. <span data-ttu-id="13d1b-121">[調達カテゴリ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-121">In the Procurement category field, enter or select a value.</span></span>
+2. <span data-ttu-id="13d1b-122">[数量] を「2」に設定します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-122">Set Quantity to '2'.</span></span>
+3. <span data-ttu-id="13d1b-123">[単位] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-123">In the Unit field, enter or select a value.</span></span>
+4. <span data-ttu-id="13d1b-124">[単価] を「10000」に設定します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-124">Set Unit price to '10000'.</span></span>
+5. <span data-ttu-id="13d1b-125">[財務] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-125">Click Financials.</span></span>
+6. <span data-ttu-id="13d1b-126">[金額の配分] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-126">Click Distribute amounts.</span></span>
+7. <span data-ttu-id="13d1b-127">[勘定科目] フィールドで、値「601300-001-023--」を指定します。</span><span class="sxs-lookup"><span data-stu-id="13d1b-127">In the Ledger account field, specify the value '601300-001-023--'.</span></span>
+8. <span data-ttu-id="13d1b-128">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="13d1b-128">Close the page.</span></span>
 
-## <a name="perform-budget-checking"></a><span data-ttu-id="5ae73-129">予算確認の実行</span><span class="sxs-lookup"><span data-stu-id="5ae73-129">Perform budget checking</span></span>
-1. <span data-ttu-id="5ae73-130">[財務] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-130">Click Financials.</span></span>
-2. <span data-ttu-id="5ae73-131">[予算確認の実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-131">Click Perform budget checking.</span></span>
-3. <span data-ttu-id="5ae73-132">[財務] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-132">Click Financials.</span></span>
-4. <span data-ttu-id="5ae73-133">[予算確認のエラーまたは警告] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-133">Click Budget check errors or warnings.</span></span>
-5. <span data-ttu-id="5ae73-134">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5ae73-134">Click Close.</span></span>
+## <a name="perform-budget-checking"></a><span data-ttu-id="13d1b-129">予算確認の実行</span><span class="sxs-lookup"><span data-stu-id="13d1b-129">Perform budget checking</span></span>
+1. <span data-ttu-id="13d1b-130">[財務] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-130">Click Financials.</span></span>
+2. <span data-ttu-id="13d1b-131">[予算確認の実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-131">Click Perform budget checking.</span></span>
+3. <span data-ttu-id="13d1b-132">[財務] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-132">Click Financials.</span></span>
+4. <span data-ttu-id="13d1b-133">[予算確認のエラーまたは警告] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-133">Click Budget check errors or warnings.</span></span>
+5. <span data-ttu-id="13d1b-134">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13d1b-134">Click Close.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,47 +18,50 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41530a10eba71716a07e593d6d93e35fecd83b34
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1ffc550ff719950a603811c65cb9b790ded5c2c8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989746"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236054"
 ---
-# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a><span data-ttu-id="dbf04-104">マスター プラン - サイトと倉庫の補充、倉庫は必須</span><span class="sxs-lookup"><span data-stu-id="dbf04-104">Master planning for site and warehouse coverage, warehouse mandatory</span></span>
+# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a><span data-ttu-id="abd01-104">マスター プラン - サイトと倉庫の補充、倉庫は必須</span><span class="sxs-lookup"><span data-stu-id="abd01-104">Master planning for site and warehouse coverage, warehouse mandatory</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="dbf04-105">このトピックでは、サイトおよび倉庫の補充分析コードを持つ品目の計画方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="dbf04-105">This topic describes how an item that has site and warehouse as coverage dimensions is planned.</span></span> <span data-ttu-id="dbf04-106">倉庫分析コードは必須です。</span><span class="sxs-lookup"><span data-stu-id="dbf04-106">The warehouse dimension is mandatory.</span></span>
+<span data-ttu-id="abd01-105">このトピックでは、サイトおよび倉庫の補充分析コードを持つ品目の計画方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="abd01-105">This topic describes how an item that has site and warehouse as coverage dimensions is planned.</span></span> <span data-ttu-id="abd01-106">倉庫分析コードは必須です。</span><span class="sxs-lookup"><span data-stu-id="abd01-106">The warehouse dimension is mandatory.</span></span>
 
-<span data-ttu-id="dbf04-107">このマスター計画シナリオの前提条件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dbf04-107">This master planning scenario involves the following conditions:</span></span>
+<span data-ttu-id="abd01-107">このマスター計画シナリオの前提条件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="abd01-107">This master planning scenario involves the following conditions:</span></span>
 
--   <span data-ttu-id="dbf04-108">サイト分析コードが必須に設定され、需要トランザクションで入力されている。</span><span class="sxs-lookup"><span data-stu-id="dbf04-108">The site dimension is set to mandatory and must be entered on the demand transaction.</span></span>
--   <span data-ttu-id="dbf04-109">倉庫分析コードが必須に設定され、需要トランザクションで入力されている。</span><span class="sxs-lookup"><span data-stu-id="dbf04-109">The warehouse dimension is set to mandatory and must be entered on the demand transaction.</span></span>
--   <span data-ttu-id="dbf04-110">サイト分析コードおよび倉庫分析コードが補充計画用に設定されている。</span><span class="sxs-lookup"><span data-stu-id="dbf04-110">The site and warehouse dimensions are set for coverage planning.</span></span> <span data-ttu-id="dbf04-111">他の分析コードが補充計画に対して設定されている場合もある。</span><span class="sxs-lookup"><span data-stu-id="dbf04-111">Other dimensions may be set for coverage planning also.</span></span> <span data-ttu-id="dbf04-112">ただし、これらはマルチサイト機能の影響を受けない。</span><span class="sxs-lookup"><span data-stu-id="dbf04-112">However, they are not affected by the multisite functionality.</span></span>
+-   <span data-ttu-id="abd01-108">サイト分析コードが必須に設定され、需要トランザクションで入力されている。</span><span class="sxs-lookup"><span data-stu-id="abd01-108">The site dimension is set to mandatory and must be entered on the demand transaction.</span></span>
+-   <span data-ttu-id="abd01-109">倉庫分析コードが必須に設定され、需要トランザクションで入力されている。</span><span class="sxs-lookup"><span data-stu-id="abd01-109">The warehouse dimension is set to mandatory and must be entered on the demand transaction.</span></span>
+-   <span data-ttu-id="abd01-110">サイト分析コードおよび倉庫分析コードが補充計画用に設定されている。</span><span class="sxs-lookup"><span data-stu-id="abd01-110">The site and warehouse dimensions are set for coverage planning.</span></span> <span data-ttu-id="abd01-111">他の分析コードが補充計画に対して設定されている場合もある。</span><span class="sxs-lookup"><span data-stu-id="abd01-111">Other dimensions may be set for coverage planning also.</span></span> <span data-ttu-id="abd01-112">ただし、これらはマルチサイト機能の影響を受けない。</span><span class="sxs-lookup"><span data-stu-id="abd01-112">However, they are not affected by the multisite functionality.</span></span>
 
-<span data-ttu-id="dbf04-113">次の図は、マスター計画がどのように進行するかを示しています。</span><span class="sxs-lookup"><span data-stu-id="dbf04-113">The following graphic illustrates how master planning proceeds.</span></span> <span data-ttu-id="dbf04-114">図の中で使用されているパラメータとその設定場所を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dbf04-114">The parameters that are referred to in the graphic, and their locations, are as follows:</span></span>
--   <span data-ttu-id="dbf04-115">倉庫は **手動** に設定されています。</span><span class="sxs-lookup"><span data-stu-id="dbf04-115">The warehouse is set to **Manual**.</span></span> <span data-ttu-id="dbf04-116">**在庫管理] &gt; [設定] &gt; [在庫詳細] &gt; [倉庫** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="dbf04-116">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="dbf04-117">**マスター計画** クイック タブに、**手動** フィールドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="dbf04-117">On the **Master planning** FastTab, see the **Manual** field.</span></span>
--   <span data-ttu-id="dbf04-118">品目に対して品目補充が定義されています。</span><span class="sxs-lookup"><span data-stu-id="dbf04-118">Item coverage is defined for the item.</span></span> <span data-ttu-id="dbf04-119">**製品情報管理] &gt; [製品] &gt; [リリースされた製品** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="dbf04-119">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="dbf04-120">品目を選択し、[アクション ウィンドウ] の **計画** タブで、**品目補充** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dbf04-120">Select the item, and then, on the Action Pane, on the **Plan** tab, click **Item coverage**.</span></span>
--   <span data-ttu-id="dbf04-121">倉庫に対して補充関係が定義されています。</span><span class="sxs-lookup"><span data-stu-id="dbf04-121">Refill relations are defined for the warehouse.</span></span> <span data-ttu-id="dbf04-122">**在庫管理] &gt; [設定] &gt; [在庫詳細] &gt; [倉庫** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="dbf04-122">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="dbf04-123">**マスター計画** クイック タブに、**主要倉庫** フィールド グループが表示されます。</span><span class="sxs-lookup"><span data-stu-id="dbf04-123">On the **Master planning** FastTab, see the **Main warehouse** field group.</span></span>
--   <span data-ttu-id="dbf04-124">既定の注文タイプには [生産]、[発注書] または [かんばん] が設定されます。</span><span class="sxs-lookup"><span data-stu-id="dbf04-124">The default order type is set to Production, Purchase order, or Kanban.</span></span> <span data-ttu-id="dbf04-125">**製品情報管理] &gt; [製品] &gt; [リリースされた製品** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="dbf04-125">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="dbf04-126">品目を選択し、[アクション ウィンドウ] の **計画** タブで、**既定の注文設定** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dbf04-126">Select the item, and then, on the Action Pane, on the **Plan** tab, click **Default order settings**.</span></span> <span data-ttu-id="dbf04-127">**既定の注文設定** フォームの **既定の注文タイプ** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dbf04-127">In the **Default order settings** form, see the **Default order type**.</span></span>
+<span data-ttu-id="abd01-113">次の図は、マスター計画がどのように進行するかを示しています。</span><span class="sxs-lookup"><span data-stu-id="abd01-113">The following graphic illustrates how master planning proceeds.</span></span> <span data-ttu-id="abd01-114">図の中で使用されているパラメータとその設定場所を次に示します。</span><span class="sxs-lookup"><span data-stu-id="abd01-114">The parameters that are referred to in the graphic, and their locations, are as follows:</span></span>
+-   <span data-ttu-id="abd01-115">倉庫は **手動** に設定されています。</span><span class="sxs-lookup"><span data-stu-id="abd01-115">The warehouse is set to **Manual**.</span></span> <span data-ttu-id="abd01-116">**在庫管理] &gt; [設定] &gt; [在庫詳細] &gt; [倉庫** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="abd01-116">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="abd01-117">**マスター計画** クイック タブに、**手動** フィールドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="abd01-117">On the **Master planning** FastTab, see the **Manual** field.</span></span>
+-   <span data-ttu-id="abd01-118">品目に対して品目補充が定義されています。</span><span class="sxs-lookup"><span data-stu-id="abd01-118">Item coverage is defined for the item.</span></span> <span data-ttu-id="abd01-119">**製品情報管理] &gt; [製品] &gt; [リリースされた製品** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="abd01-119">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="abd01-120">品目を選択し、[アクション ウィンドウ] の **計画** タブで、**品目補充** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="abd01-120">Select the item, and then, on the Action Pane, on the **Plan** tab, click **Item coverage**.</span></span>
+-   <span data-ttu-id="abd01-121">倉庫に対して補充関係が定義されています。</span><span class="sxs-lookup"><span data-stu-id="abd01-121">Refill relations are defined for the warehouse.</span></span> <span data-ttu-id="abd01-122">**在庫管理] &gt; [設定] &gt; [在庫詳細] &gt; [倉庫** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="abd01-122">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="abd01-123">**マスター計画** クイック タブに、**主要倉庫** フィールド グループが表示されます。</span><span class="sxs-lookup"><span data-stu-id="abd01-123">On the **Master planning** FastTab, see the **Main warehouse** field group.</span></span>
+-   <span data-ttu-id="abd01-124">既定の注文タイプには [生産]、[発注書] または [かんばん] が設定されます。</span><span class="sxs-lookup"><span data-stu-id="abd01-124">The default order type is set to Production, Purchase order, or Kanban.</span></span> <span data-ttu-id="abd01-125">**製品情報管理] &gt; [製品] &gt; [リリースされた製品** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="abd01-125">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="abd01-126">品目を選択し、[アクション ウィンドウ] の **計画** タブで、**既定の注文設定** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="abd01-126">Select the item, and then, on the Action Pane, on the **Plan** tab, click **Default order settings**.</span></span> <span data-ttu-id="abd01-127">**既定の注文設定** フォームの **既定の注文タイプ** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="abd01-127">In the **Default order settings** form, see the **Default order type**.</span></span>
 
 ![サイトと倉庫の補充が必要、倉庫は必須    ](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousemandatory.jpg)
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="dbf04-129">追加リソース</span><span class="sxs-lookup"><span data-stu-id="dbf04-129">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="abd01-129">追加リソース</span><span class="sxs-lookup"><span data-stu-id="abd01-129">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="dbf04-130">マスター プランとマルチサイト機能の概要</span><span class="sxs-lookup"><span data-stu-id="dbf04-130">Master planning and multisite functionality overview</span></span>](master-plan-multisite-functionality.md)
+[<span data-ttu-id="abd01-130">マスター プランとマルチサイト機能の概要</span><span class="sxs-lookup"><span data-stu-id="abd01-130">Master planning and multisite functionality overview</span></span>](master-plan-multisite-functionality.md)
 
-[<span data-ttu-id="dbf04-131">マスター プラン - サイトの補充、倉庫は必須</span><span class="sxs-lookup"><span data-stu-id="dbf04-131">Master planning for site coverage, mandatory warehouse</span></span>](master-plan-site-coverage-warehouse-mandatory.md)
+[<span data-ttu-id="abd01-131">マスター プラン - サイトの補充、倉庫は必須</span><span class="sxs-lookup"><span data-stu-id="abd01-131">Master planning for site coverage, mandatory warehouse</span></span>](master-plan-site-coverage-warehouse-mandatory.md)
 
-[<span data-ttu-id="dbf04-132">マスター プラン - サイトの補充、倉庫は必須ではない</span><span class="sxs-lookup"><span data-stu-id="dbf04-132">Master planning for site coverage, warehouse not mandatory</span></span>](master-plan-site-coverage-warehouse-not-mandatory.md)
+[<span data-ttu-id="abd01-132">マスター プラン - サイトの補充、倉庫は必須ではない</span><span class="sxs-lookup"><span data-stu-id="abd01-132">Master planning for site coverage, warehouse not mandatory</span></span>](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[<span data-ttu-id="dbf04-133">マスター プラン - サイトと倉庫の補充、倉庫は必須ではない</span><span class="sxs-lookup"><span data-stu-id="dbf04-133">Master planning for site and warehouse coverage, warehouse not mandatory</span></span>](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[<span data-ttu-id="abd01-133">マスター プラン - サイトと倉庫の補充、倉庫は必須ではない</span><span class="sxs-lookup"><span data-stu-id="abd01-133">Master planning for site and warehouse coverage, warehouse not mandatory</span></span>](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[<span data-ttu-id="dbf04-134">BOM バージョンの決定</span><span class="sxs-lookup"><span data-stu-id="dbf04-134">Determine the BOM version</span></span>](master-plan-bom-version-determined.md)
+[<span data-ttu-id="abd01-134">BOM バージョンの決定</span><span class="sxs-lookup"><span data-stu-id="abd01-134">Determine the BOM version</span></span>](master-plan-bom-version-determined.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
