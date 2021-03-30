@@ -15,61 +15,64 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebc070f591b03256b6a9043e88967581394fe07
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ba18582a27bbec3639095b589101af09366579e2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982072"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208384"
 ---
-# <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a><span data-ttu-id="3f1f9-103">内部在庫移動の移動文書の生成</span><span class="sxs-lookup"><span data-stu-id="3f1f9-103">Generate a transfer document for an internal inventory transfer</span></span>
+# <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a><span data-ttu-id="32027-103">内部在庫移動の移動文書の生成</span><span class="sxs-lookup"><span data-stu-id="32027-103">Generate a transfer document for an internal inventory transfer</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3f1f9-104">この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-104">This procedure shows how to create transfer documents for goods movement inside a company.</span></span> <span data-ttu-id="3f1f9-105">この手順はリトアニアに主たる所在地を置く法人のみが使用できます。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-105">This procedure is only available for legal entities with a primary address in Lithuania.</span></span> <span data-ttu-id="3f1f9-106">この手順は、リトアニアに主たる事務所を置く企業 DEMF のデモデータを使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-106">The procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="3f1f9-107">この手順を完了する前に、"社内の製品移動に関わるドキュメントの設定" の手順を実施する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-107">Before you can complete this procedure, you must complete the "Set up transfer documents for goods movement inside a company" procedure.</span></span> <span data-ttu-id="3f1f9-108">この手順は在庫経理担当者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-108">This procedure is intended for inventory accountants.</span></span> <span data-ttu-id="3f1f9-109">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="32027-104">この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="32027-104">This procedure shows how to create transfer documents for goods movement inside a company.</span></span> <span data-ttu-id="32027-105">この手順はリトアニアに主たる所在地を置く法人のみが使用できます。</span><span class="sxs-lookup"><span data-stu-id="32027-105">This procedure is only available for legal entities with a primary address in Lithuania.</span></span> <span data-ttu-id="32027-106">この手順は、リトアニアに主たる事務所を置く企業 DEMF のデモデータを使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="32027-106">The procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="32027-107">この手順を完了する前に、"社内の製品移動に関わるドキュメントの設定" の手順を実施する必要があります。</span><span class="sxs-lookup"><span data-stu-id="32027-107">Before you can complete this procedure, you must complete the "Set up transfer documents for goods movement inside a company" procedure.</span></span> <span data-ttu-id="32027-108">この手順は在庫経理担当者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="32027-108">This procedure is intended for inventory accountants.</span></span> <span data-ttu-id="32027-109">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="32027-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-transfer-order"></a><span data-ttu-id="3f1f9-110">移動オーダーの作成</span><span class="sxs-lookup"><span data-stu-id="3f1f9-110">Create a transfer order</span></span>
-1. <span data-ttu-id="3f1f9-111">[在庫管理] > [受信した注文] > [移動オーダー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-111">Go to Inventory management > Inbound orders > Transfer order.</span></span>
-2. <span data-ttu-id="3f1f9-112">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-112">Click New.</span></span>
-3. <span data-ttu-id="3f1f9-113">[移動元倉庫] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-113">In the From warehouse field, enter or select a value.</span></span>
-4. <span data-ttu-id="3f1f9-114">[移動先倉庫] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-114">In the To warehouse field, enter or select a value.</span></span>
-5. <span data-ttu-id="3f1f9-115">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-115">Click Add.</span></span>
-6. <span data-ttu-id="3f1f9-116">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-116">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="3f1f9-117">[品目番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-117">In the Item number field, enter or select a value.</span></span>
+## <a name="create-a-transfer-order"></a><span data-ttu-id="32027-110">移動オーダーの作成</span><span class="sxs-lookup"><span data-stu-id="32027-110">Create a transfer order</span></span>
+1. <span data-ttu-id="32027-111">[在庫管理] > [受信した注文] > [移動オーダー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="32027-111">Go to Inventory management > Inbound orders > Transfer order.</span></span>
+2. <span data-ttu-id="32027-112">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-112">Click New.</span></span>
+3. <span data-ttu-id="32027-113">[移動元倉庫] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-113">In the From warehouse field, enter or select a value.</span></span>
+4. <span data-ttu-id="32027-114">[移動先倉庫] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-114">In the To warehouse field, enter or select a value.</span></span>
+5. <span data-ttu-id="32027-115">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-115">Click Add.</span></span>
+6. <span data-ttu-id="32027-116">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="32027-116">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="32027-117">[品目番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-117">In the Item number field, enter or select a value.</span></span>
 
-## <a name="enter-transportation-details-for-the-transfer-order"></a><span data-ttu-id="3f1f9-118">移動オーダーの配送情報を入力する</span><span class="sxs-lookup"><span data-stu-id="3f1f9-118">Enter transportation details for the transfer order</span></span>
-1. <span data-ttu-id="3f1f9-119">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-119">Click Save.</span></span>
-2. <span data-ttu-id="3f1f9-120">アクション ウィンドウで、[発送] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-120">On the Action Pane, click Ship.</span></span>
-3. <span data-ttu-id="3f1f9-121">[輸送の詳細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-121">Click Transportation details.</span></span>
-4. <span data-ttu-id="3f1f9-122">[配送情報の印刷] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-122">Select Yes in the Print transportation details field.</span></span>
-5. <span data-ttu-id="3f1f9-123">[製品配送元] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-123">In the Goods issued by field, enter or select a value.</span></span>
-6. <span data-ttu-id="3f1f9-124">[パッケージ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-124">In the Package field, type a value.</span></span>
-7. <span data-ttu-id="3f1f9-125">[積荷のリスクレベル] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-125">In the Risk level of the load field, type a value.</span></span>
-8. <span data-ttu-id="3f1f9-126">[配送業者] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-126">In the Carrier field, enter or select a value.</span></span>
-9. <span data-ttu-id="3f1f9-127">[モデル] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-127">In the Model field, enter or select a value.</span></span>
-10. <span data-ttu-id="3f1f9-128">[登録番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-128">In the Registration number field, type a value.</span></span>
-11. <span data-ttu-id="3f1f9-129">[トレーラー登録番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-129">In the Trailer registration number field, type a value.</span></span>
-12. <span data-ttu-id="3f1f9-130">[ドライバー] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-130">In the Driver field, enter or select a value.</span></span>
-13. <span data-ttu-id="3f1f9-131">[ドライバー名] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-131">In the Driver name field, type a value.</span></span>
-14. <span data-ttu-id="3f1f9-132">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-132">Click Save.</span></span>
-15. <span data-ttu-id="3f1f9-133">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-133">Close the page.</span></span>
+## <a name="enter-transportation-details-for-the-transfer-order"></a><span data-ttu-id="32027-118">移動オーダーの配送情報を入力する</span><span class="sxs-lookup"><span data-stu-id="32027-118">Enter transportation details for the transfer order</span></span>
+1. <span data-ttu-id="32027-119">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-119">Click Save.</span></span>
+2. <span data-ttu-id="32027-120">アクション ウィンドウで、[発送] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-120">On the Action Pane, click Ship.</span></span>
+3. <span data-ttu-id="32027-121">[輸送の詳細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-121">Click Transportation details.</span></span>
+4. <span data-ttu-id="32027-122">[配送情報の印刷] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-122">Select Yes in the Print transportation details field.</span></span>
+5. <span data-ttu-id="32027-123">[製品配送元] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-123">In the Goods issued by field, enter or select a value.</span></span>
+6. <span data-ttu-id="32027-124">[パッケージ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="32027-124">In the Package field, type a value.</span></span>
+7. <span data-ttu-id="32027-125">[積荷のリスクレベル] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="32027-125">In the Risk level of the load field, type a value.</span></span>
+8. <span data-ttu-id="32027-126">[配送業者] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-126">In the Carrier field, enter or select a value.</span></span>
+9. <span data-ttu-id="32027-127">[モデル] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-127">In the Model field, enter or select a value.</span></span>
+10. <span data-ttu-id="32027-128">[登録番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="32027-128">In the Registration number field, type a value.</span></span>
+11. <span data-ttu-id="32027-129">[トレーラー登録番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="32027-129">In the Trailer registration number field, type a value.</span></span>
+12. <span data-ttu-id="32027-130">[ドライバー] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-130">In the Driver field, enter or select a value.</span></span>
+13. <span data-ttu-id="32027-131">[ドライバー名] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="32027-131">In the Driver name field, type a value.</span></span>
+14. <span data-ttu-id="32027-132">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-132">Click Save.</span></span>
+15. <span data-ttu-id="32027-133">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="32027-133">Close the page.</span></span>
 
-## <a name="view-the-packing-slip-for-the-unposted-transfer-order"></a><span data-ttu-id="3f1f9-134">未転記の移動オーダーの梱包明細を表示する </span><span class="sxs-lookup"><span data-stu-id="3f1f9-134">View the packing slip for the unposted transfer order</span></span>
-1. <span data-ttu-id="3f1f9-135">[梱包明細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-135">Click Packing slip.</span></span>
-2. <span data-ttu-id="3f1f9-136">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-136">Click OK.</span></span>
-3. <span data-ttu-id="3f1f9-137">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-137">Close the page.</span></span>
+## <a name="view-the-packing-slip-for-the-unposted-transfer-order"></a><span data-ttu-id="32027-134">未転記の移動オーダーの梱包明細を表示する </span><span class="sxs-lookup"><span data-stu-id="32027-134">View the packing slip for the unposted transfer order</span></span>
+1. <span data-ttu-id="32027-135">[梱包明細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-135">Click Packing slip.</span></span>
+2. <span data-ttu-id="32027-136">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-136">Click OK.</span></span>
+3. <span data-ttu-id="32027-137">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="32027-137">Close the page.</span></span>
 
-## <a name="view-the-packing-slip-for-the-posted-transfer-order"></a><span data-ttu-id="3f1f9-138">転記済みの移動オーダーの梱包明細を表示する </span><span class="sxs-lookup"><span data-stu-id="3f1f9-138">View the packing slip for the posted transfer order</span></span>
-1. <span data-ttu-id="3f1f9-139">アクション ウィンドウで、[移動オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-139">On the Action Pane, click Transfer order.</span></span>
-2. <span data-ttu-id="3f1f9-140">アクション ウィンドウで、[発送] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-140">On the Action Pane, click Ship.</span></span>
-3. <span data-ttu-id="3f1f9-141">[発送移動オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-141">Click Ship transfer order.</span></span>
-4. <span data-ttu-id="3f1f9-142">[一般] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-142">Click the General tab.</span></span>
-5. <span data-ttu-id="3f1f9-143">[更新] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-143">In the Update field, select an option.</span></span>
-6. <span data-ttu-id="3f1f9-144">[概要] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-144">Click the Overview tab.</span></span>
-7. <span data-ttu-id="3f1f9-145">[梱包明細] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-145">In the Packing slip field, type a value.</span></span>
-8. <span data-ttu-id="3f1f9-146">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-146">Click OK.</span></span>
-9. <span data-ttu-id="3f1f9-147">アクション ウィンドウで、[発送] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-147">On the Action Pane, click Ship.</span></span>
-10. <span data-ttu-id="3f1f9-148">[梱包明細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-148">Click Packing slip.</span></span>
-11. <span data-ttu-id="3f1f9-149">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f1f9-149">Click OK.</span></span>
+## <a name="view-the-packing-slip-for-the-posted-transfer-order"></a><span data-ttu-id="32027-138">転記済みの移動オーダーの梱包明細を表示する </span><span class="sxs-lookup"><span data-stu-id="32027-138">View the packing slip for the posted transfer order</span></span>
+1. <span data-ttu-id="32027-139">アクション ウィンドウで、[移動オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-139">On the Action Pane, click Transfer order.</span></span>
+2. <span data-ttu-id="32027-140">アクション ウィンドウで、[発送] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-140">On the Action Pane, click Ship.</span></span>
+3. <span data-ttu-id="32027-141">[発送移動オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-141">Click Ship transfer order.</span></span>
+4. <span data-ttu-id="32027-142">[一般] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-142">Click the General tab.</span></span>
+5. <span data-ttu-id="32027-143">[更新] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="32027-143">In the Update field, select an option.</span></span>
+6. <span data-ttu-id="32027-144">[概要] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-144">Click the Overview tab.</span></span>
+7. <span data-ttu-id="32027-145">[梱包明細] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="32027-145">In the Packing slip field, type a value.</span></span>
+8. <span data-ttu-id="32027-146">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-146">Click OK.</span></span>
+9. <span data-ttu-id="32027-147">アクション ウィンドウで、[発送] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-147">On the Action Pane, click Ship.</span></span>
+10. <span data-ttu-id="32027-148">[梱包明細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-148">Click Packing slip.</span></span>
+11. <span data-ttu-id="32027-149">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32027-149">Click OK.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

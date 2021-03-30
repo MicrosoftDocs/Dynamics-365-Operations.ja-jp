@@ -18,36 +18,39 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e3a5f9a73bdee50e3e7c68125144c3b43305efa8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b2fb6676f45bc7efa4652de60e829b507292ac37
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961562"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213189"
 ---
-# <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a><span data-ttu-id="40095-103">販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="40095-103">Configure cash denominations for the point of sale (POS)</span></span>
+# <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a><span data-ttu-id="de88c-103">販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="de88c-103">Configure cash denominations for the point of sale (POS)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="40095-104">紙幣および硬貨の現金貨幣単位は、POS 内で店舗のレジ担当者、店員およびマネージャーにより使用されるバック オフィスで定義できます。</span><span class="sxs-lookup"><span data-stu-id="40095-104">Cash denominations for notes and coins can be defined in the back office to be used by cashiers, sales associates, and managers at the store from within the POS.</span></span> <span data-ttu-id="40095-105">これらの貨幣単位は、営業終了時の支払/入金申告、または売上の簡単な支払/入金の現金計算をする助けとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="40095-105">These denominations can be used to aid in counting cash for end of day tender declarations or for quickly tendering a sale.</span></span>
+<span data-ttu-id="de88c-104">紙幣および硬貨の現金貨幣単位は、POS 内で店舗のレジ担当者、店員およびマネージャーにより使用されるバック オフィスで定義できます。</span><span class="sxs-lookup"><span data-stu-id="de88c-104">Cash denominations for notes and coins can be defined in the back office to be used by cashiers, sales associates, and managers at the store from within the POS.</span></span> <span data-ttu-id="de88c-105">これらの貨幣単位は、営業終了時の支払/入金申告、または売上の簡単な支払/入金の現金計算をする助けとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="de88c-105">These denominations can be used to aid in counting cash for end of day tender declarations or for quickly tendering a sale.</span></span>
 
-## <a name="define-denominations"></a><span data-ttu-id="40095-106">貨幣単位の定義</span><span class="sxs-lookup"><span data-stu-id="40095-106">Define denominations</span></span>
+## <a name="define-denominations"></a><span data-ttu-id="de88c-106">貨幣単位の定義</span><span class="sxs-lookup"><span data-stu-id="de88c-106">Define denominations</span></span>
 
-<span data-ttu-id="40095-107">貨幣単位は店舗ごとに、店舗のプロパティ ページから **設定** \> **現金申告** オプションで設定されます。</span><span class="sxs-lookup"><span data-stu-id="40095-107">The denominations are set up per store on the **Set up** \> **Cash declaration** option from the store property page.</span></span>
+<span data-ttu-id="de88c-107">貨幣単位は店舗ごとに、店舗のプロパティ ページから **設定** \> **現金申告** オプションで設定されます。</span><span class="sxs-lookup"><span data-stu-id="de88c-107">The denominations are set up per store on the **Set up** \> **Cash declaration** option from the store property page.</span></span>
 
 ![現金申告オプション](./media/image1-denomination.png)
 
-<span data-ttu-id="40095-109">貨幣単位を定義する方法:</span><span class="sxs-lookup"><span data-stu-id="40095-109">To define a denomination:</span></span>
+<span data-ttu-id="de88c-109">貨幣単位を定義する方法:</span><span class="sxs-lookup"><span data-stu-id="de88c-109">To define a denomination:</span></span>
 
-1. <span data-ttu-id="40095-110">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="40095-110">Click **New**.</span></span>
-1. <span data-ttu-id="40095-111">種類 (硬貨または紙幣) を指定します。</span><span class="sxs-lookup"><span data-stu-id="40095-111">Specify the type (coin or note).</span></span>
-1. <span data-ttu-id="40095-112">金額 (値) を指定します。</span><span class="sxs-lookup"><span data-stu-id="40095-112">Specify the amount (value).</span></span>
+1. <span data-ttu-id="de88c-110">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de88c-110">Click **New**.</span></span>
+1. <span data-ttu-id="de88c-111">種類 (硬貨または紙幣) を指定します。</span><span class="sxs-lookup"><span data-stu-id="de88c-111">Specify the type (coin or note).</span></span>
+1. <span data-ttu-id="de88c-112">金額 (値) を指定します。</span><span class="sxs-lookup"><span data-stu-id="de88c-112">Specify the amount (value).</span></span>
 
 ![現金申告貨幣ページ](./media/image2-denomination.png)
 
-## <a name="configure-the-functionality-profile"></a><span data-ttu-id="40095-114">機能プロファイルのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="40095-114">Configure the functionality profile</span></span>
+## <a name="configure-the-functionality-profile"></a><span data-ttu-id="de88c-114">機能プロファイルのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="de88c-114">Configure the functionality profile</span></span>
 
-<span data-ttu-id="40095-115">POS での現金による支払の際、ユーザーは、顧客によって支払われた金額をすばやく入力するため紙幣の通貨単位を使用できます。</span><span class="sxs-lookup"><span data-stu-id="40095-115">When paying by cash in POS, the user can use the note denominations to quickly enter the amount paid by the customer.</span></span> <span data-ttu-id="40095-116">機能プロファイルで、POSで貨幣単位を表示するための 2 つのオプションをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="40095-116">In the functionality profile, you can configure the two options for showing the denomination in POS.</span></span>
+<span data-ttu-id="de88c-115">POS での現金による支払の際、ユーザーは、顧客によって支払われた金額をすばやく入力するため紙幣の通貨単位を使用できます。</span><span class="sxs-lookup"><span data-stu-id="de88c-115">When paying by cash in POS, the user can use the note denominations to quickly enter the amount paid by the customer.</span></span> <span data-ttu-id="de88c-116">機能プロファイルで、POSで貨幣単位を表示するための 2 つのオプションをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="de88c-116">In the functionality profile, you can configure the two options for showing the denomination in POS.</span></span>
 
-- <span data-ttu-id="40095-117">**合計金額以上** ー 既定では、POS は未払い金額より多い紙幣の通貨単位のみを表示し、ワンタッチの支払/入金ができるようにします。</span><span class="sxs-lookup"><span data-stu-id="40095-117">**Greater or equal to amount due** – By default, POS will only show the note denominations that are greater than the amount due, which allows for one-touch tendering.</span></span> <span data-ttu-id="40095-118">たとえば、請求額が $7.50 の場合、POS は次の通貨単位を表示します: $10、$20、$50、および $100。</span><span class="sxs-lookup"><span data-stu-id="40095-118">For example, if the amount due is $7.50, POS would show the following denominations: $10, $20, $50, and $100.</span></span> <span data-ttu-id="40095-119">これらの金額のいずれかにタッチすると、自動的にその金額に対する売上の支払/入金をします。</span><span class="sxs-lookup"><span data-stu-id="40095-119">Touching any of these amounts will automatically tender the sale for that amount.</span></span> <span data-ttu-id="40095-120">$1 および $5 紙幣、これらの金額は、請求額よりも少ないため表示されません。</span><span class="sxs-lookup"><span data-stu-id="40095-120">The $1 and $5 notes are not shown since these amounts are less than the amount due.</span></span>
-- <span data-ttu-id="40095-121">**すべての貨幣単位** ー 請求額に関係なく、POS で常にすべての紙幣の貨幣単位を表示するために、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="40095-121">**All denominations** – Select this option to always show all note denominations in POS, regardless of the amount due.</span></span> <span data-ttu-id="40095-122">つまり、ユーザーは請求額に達する紙幣の組み合わせを使用できます。</span><span class="sxs-lookup"><span data-stu-id="40095-122">This means that the user can use a combination of notes to reach the amount due.</span></span> <span data-ttu-id="40095-123">たとえば、請求額が $25.00 の場合は、ユーザーは $20 よび $5 を選択して販売を完了できます。</span><span class="sxs-lookup"><span data-stu-id="40095-123">For example, if the amount due is $25.00, the user can choose $20 and $5 to complete the sale.</span></span>
+- <span data-ttu-id="de88c-117">**合計金額以上** ー 既定では、POS は未払い金額より多い紙幣の通貨単位のみを表示し、ワンタッチの支払/入金ができるようにします。</span><span class="sxs-lookup"><span data-stu-id="de88c-117">**Greater or equal to amount due** – By default, POS will only show the note denominations that are greater than the amount due, which allows for one-touch tendering.</span></span> <span data-ttu-id="de88c-118">たとえば、請求額が $7.50 の場合、POS は次の通貨単位を表示します: $10、$20、$50、および $100。</span><span class="sxs-lookup"><span data-stu-id="de88c-118">For example, if the amount due is $7.50, POS would show the following denominations: $10, $20, $50, and $100.</span></span> <span data-ttu-id="de88c-119">これらの金額のいずれかにタッチすると、自動的にその金額に対する売上の支払/入金をします。</span><span class="sxs-lookup"><span data-stu-id="de88c-119">Touching any of these amounts will automatically tender the sale for that amount.</span></span> <span data-ttu-id="de88c-120">$1 および $5 紙幣、これらの金額は、請求額よりも少ないため表示されません。</span><span class="sxs-lookup"><span data-stu-id="de88c-120">The $1 and $5 notes are not shown since these amounts are less than the amount due.</span></span>
+- <span data-ttu-id="de88c-121">**すべての貨幣単位** ー 請求額に関係なく、POS で常にすべての紙幣の貨幣単位を表示するために、このオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="de88c-121">**All denominations** – Select this option to always show all note denominations in POS, regardless of the amount due.</span></span> <span data-ttu-id="de88c-122">つまり、ユーザーは請求額に達する紙幣の組み合わせを使用できます。</span><span class="sxs-lookup"><span data-stu-id="de88c-122">This means that the user can use a combination of notes to reach the amount due.</span></span> <span data-ttu-id="de88c-123">たとえば、請求額が $25.00 の場合は、ユーザーは $20 よび $5 を選択して販売を完了できます。</span><span class="sxs-lookup"><span data-stu-id="de88c-123">For example, if the amount due is $25.00, the user can choose $20 and $5 to complete the sale.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
