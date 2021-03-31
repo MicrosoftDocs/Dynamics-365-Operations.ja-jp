@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0bf37453740d1c2b09b5bd7ae4841f23da20a3ec
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1ea46ae90dedcc3ad3c3b305bddeb4d98827353a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687540"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5230671"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
 
@@ -32,7 +32,7 @@ ms.locfileid: "4687540"
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>オフライン モードにおけるギフト カード トランザクションを完了する
 
-ギフト カードの残高は Microsoft Dynamics 365 Commerce 本社で集中管理する必要があるため、内部ギフト カードは Real-time Service に依存します。 不正またはその他の同期の問題を防ぐために、ギフト カードはトランザクションに追加されるとすぐにロックされます。 ロック機能を使用すると、ギフト カードを複数のターミナルで同時に使用することはできなくなります。 トランザクションが完了すると、ギフト カードは更新されロック解除されます。
+ギフト カードの残高は、Microsoft Dynamics 365 Commerce 本社で集中管理する必要があるため、内部ギフト カードは Real-time Service に依存します。 不正またはその他の同期の問題を防ぐために、ギフト カードはトランザクションに追加されるとすぐにロックされます。 ロック機能を使用すると、ギフト カードを複数のターミナルで同時に使用することはできなくなります。 トランザクションが完了すると、ギフト カードは更新されロック解除されます。
 
 ただし、ギフト カードがトランザクションに追加された後に POS が接続を失った場合、ギフト カードは使用できなくなる場合があります。 この状況を回避するため、Dynamics 365 Commerce には POS がオフラインの間にギフト カード明細行を含むトランザクションを完了できるようにするパラメーターがあります。 このパラメーターがオンになっている場合は、強制的にオフラインにされたギフト カード トランザクションは、オフライン トランザクションと共に保存され、オフライン トランザクションが同期されるとコマース本社に同期されます。 また同期により、ギフト カードのロックは解除され、別のターミナルで使用できるようになります。
 

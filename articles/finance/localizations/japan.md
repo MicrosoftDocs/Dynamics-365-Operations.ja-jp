@@ -14,12 +14,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 51f3b6bbfa24c0b2e44db512868449681d7b698a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bfdd9fc12d8e4bac934803b0ef634894a1c43690
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005786"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226189"
 ---
 # <a name="japan-overview"></a>日本の概要
 

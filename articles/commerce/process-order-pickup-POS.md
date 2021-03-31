@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 2156542ed0932fab6fb4fa4035e009ad89eeb18f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2e7df580557486c67fc82af19f742bc8002cb881
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003756"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231083"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>POS で顧客注文集荷を処理する
 
@@ -36,7 +36,7 @@ ms.locfileid: "5003756"
 
 ![集荷の操作](media/pickupoperation.png)
 
-Microsoft Dynamics 365 Commerce バージョン 10.0.17 とそれ以降では、**販売時点管理機能での集荷注文処理のユーザー エクスペリエンスを向上させる** 機能を 、Commerce 本部の機能管理を使用して有効にできます。 この機能をオフにすると、ユーザーは集荷数量を選択できません。 既定では、明細行で注文された完全な数量が集荷される数量となります。 ユーザーが注文処理を介して集荷を実行する際に、集荷に必要な項目の選択を忘れてしまう可能性があるため、問題となる可能性があります。
+Microsoft Dynamics 365 Commerce バージョン 10.0.17 以降では、**販売時点管理機能での集荷注文処理のユーザー エクスペリエンスを向上させる** 機能を Commerce 本部の機能管理を使用して有効にできます。 この機能をオフにすると、ユーザーは集荷数量を選択できません。 既定では、明細行で注文された完全な数量が集荷される数量となります。 ユーザーが注文処理を介して集荷を実行する際に、集荷に必要な項目の選択を忘れてしまう可能性があるため、問題となる可能性があります。
 
 **販売時点管理機能での集荷注文処理のユーザー エクスペリエンスを向上させる** 機能により、集荷される商品の選択と、集荷される商品の数量をよりコントロールできるようになりました。 顧客が **集荷** を選択する前に、注文の実行ページで販売注文のすべての行を選択する必要があります。 選択可能なすべての品目が表示されます。 1つの製品明細行が選択されている場合でも、集荷には複数の明細行を指定できます。
 
