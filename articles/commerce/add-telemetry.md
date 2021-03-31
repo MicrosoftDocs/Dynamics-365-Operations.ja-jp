@@ -16,108 +16,111 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dfebc6616186a3a8859b00e90c178129feaa324b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e035c767474cba19c3a31eafdefb08b422b564ba
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980160"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209206"
 ---
-# <a name="add-script-code-to-site-pages-to-support-telemetry"></a><span data-ttu-id="06137-103">サイト ページにスクリプト コードを追加してテレメトリをサポートする</span><span class="sxs-lookup"><span data-stu-id="06137-103">Add script code to site pages to support telemetry</span></span>
+# <a name="add-script-code-to-site-pages-to-support-telemetry"></a><span data-ttu-id="1883a-103">サイト ページにスクリプト コードを追加してテレメトリをサポートする</span><span class="sxs-lookup"><span data-stu-id="1883a-103">Add script code to site pages to support telemetry</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="06137-104">このトピックでは、クライアント側のテレメトリの収集をサポートするクライアント側のスクリプト コードをサイト ページに追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="06137-104">This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.</span></span>
+<span data-ttu-id="1883a-104">このトピックでは、クライアント側のテレメトリの収集をサポートするクライアント側のスクリプト コードをサイト ページに追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="1883a-104">This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="06137-105">概要</span><span class="sxs-lookup"><span data-stu-id="06137-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="1883a-105">概要</span><span class="sxs-lookup"><span data-stu-id="1883a-105">Overview</span></span>
 
-<span data-ttu-id="06137-106">Web Analytics は、顧客がサイトとどのように対話するかを理解し、最大のコンバージョンのためにエクスペリエンスを最適化するのに役立つ決定を下したい場合に、重要なツールとなります。</span><span class="sxs-lookup"><span data-stu-id="06137-106">Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion.</span></span> <span data-ttu-id="06137-107">Google Analytics、Clicky、Moz Analytics、KISSMetrics など、これらの目標を達成するために、多くの Web Analytics パッケージが用意されています。</span><span class="sxs-lookup"><span data-stu-id="06137-107">Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics.</span></span> <span data-ttu-id="06137-108">ほとんどの Web Analytics パッケージでは、サイトのすべてのページの HTML の **\<head\>** 要素にクライアント側のスクリプト コードを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06137-108">Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="06137-109">このトピックの手順は、Microsoft Dynamics 365 Commerce がネイティブに提供していない他のカスタム クライアント側機能にも適用されます。</span><span class="sxs-lookup"><span data-stu-id="06137-109">The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.</span></span>
-
-## <a name="create-a-reusable-fragment-for-your-script-code"></a><span data-ttu-id="06137-110">スクリプ トコードに再利用可能なフラグメントを作成する</span><span class="sxs-lookup"><span data-stu-id="06137-110">Create a reusable fragment for your script code</span></span>
-
-<span data-ttu-id="06137-111">フラグメントを使用すると、使用するテンプレートに関係なく、サイト上のすべてのページでインラインまたは外部スクリプト コードを再利用できます。</span><span class="sxs-lookup"><span data-stu-id="06137-111">A fragment allows you to reuse inline or external script code across all pages on your site, regardless of the template they use.</span></span>
-
-### <a name="create-a-reusable-fragment-for-your-inline-script-code"></a><span data-ttu-id="06137-112">インライン スクリプト コードに再利用可能なフラグメントを作成する</span><span class="sxs-lookup"><span data-stu-id="06137-112">Create a reusable fragment for your inline script code</span></span>
-
-<span data-ttu-id="06137-113">サイト ビルダーのインライン スクリプト コードに再利用可能なフラグメントを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="06137-113">To create a reusable fragment for your inline script code in site builder, follow these steps.</span></span>
-
-1. <span data-ttu-id="06137-114">**フラグメント** に移動し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-114">Go to **Fragments**, and then select **New**.</span></span>
-1. <span data-ttu-id="06137-115">**新規フラグメント** ダイアログ ボックスで、**インライン スクリプト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-115">In the **New fragment** dialog box, select **Inline script**.</span></span>
-1. <span data-ttu-id="06137-116">**フラグメント名** で、フラグメントの名前を入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-116">Under **Fragment name**, enter a name for the fragment, and then select **OK**.</span></span>
-1. <span data-ttu-id="06137-117">作成したフラグメントで、**既定のインライン スクリプト** モジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-117">Under the fragment that you created, select the **Default inline script** module.</span></span>
-1. <span data-ttu-id="06137-118">右側のプロパティウィンドウの **インライン スクリプト** で、クライアント サイド スクリプトを入力します。</span><span class="sxs-lookup"><span data-stu-id="06137-118">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="06137-119">次に、必要に応じて他のオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="06137-119">Then configure other options as you require.</span></span>
-1. <span data-ttu-id="06137-120">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-120">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="06137-121">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-121">Select **Publish**.</span></span>
-
-### <a name="create-a-reusable-fragment-for-your-external-script-code"></a><span data-ttu-id="06137-122">外部スクリプト コードに再利用可能なフラグメントを作成する</span><span class="sxs-lookup"><span data-stu-id="06137-122">Create a reusable fragment for your external script code</span></span>
-
-<span data-ttu-id="06137-123">サイト ビルダーの外部スクリプト コードに再利用可能なフラグメントを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="06137-123">To create a reusable fragment for your external script code in site builder, follow these steps.</span></span>
-
-1. <span data-ttu-id="06137-124">**フラグメント** に移動し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-124">Go to **Fragments**, and then select **New**.</span></span>
-1. <span data-ttu-id="06137-125">**新規フラグメント** ダイアログ ボックスで、**外部スクリプト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-125">In the **New fragment** dialog box, select **External script**.</span></span>
-1. <span data-ttu-id="06137-126">**フラグメント名** で、フラグメントの名前を入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-126">Under **Fragment name**, enter a name for the fragment, and then select **OK**.</span></span>
-1. <span data-ttu-id="06137-127">作成したフラグメントで、**既定の外部スクリプト** モジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-127">Under the fragment that you created, select the **Default external script** module.</span></span>
-1. <span data-ttu-id="06137-128">右側のプロパティウィンドウの **スクリプト ソース** で、外部スクリプト ソースの外部または相対 URL を追加します。</span><span class="sxs-lookup"><span data-stu-id="06137-128">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="06137-129">次に、必要に応じて他のオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="06137-129">Then configure other options as you require.</span></span>
-1. <span data-ttu-id="06137-130">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-130">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="06137-131">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-131">Select **Publish**.</span></span>
+<span data-ttu-id="1883a-106">Web Analytics は、顧客がサイトとどのように対話するかを理解し、最大のコンバージョンのためにエクスペリエンスを最適化するのに役立つ決定を下したい場合に、重要なツールとなります。</span><span class="sxs-lookup"><span data-stu-id="1883a-106">Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion.</span></span> <span data-ttu-id="1883a-107">Google Analytics、Clicky、Moz Analytics、KISSMetrics など、これらの目標を達成するために、多くの Web Analytics パッケージが用意されています。</span><span class="sxs-lookup"><span data-stu-id="1883a-107">Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics.</span></span> <span data-ttu-id="1883a-108">ほとんどの Web Analytics パッケージでは、サイトのすべてのページの HTML の **\<head\>** 要素にクライアント側のスクリプト コードを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1883a-108">Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="06137-132">サイトのコンテンツ セキュリティ ポリシー (CSP) が有効になっている場合は、すべての外部 URL が Commerce サイト ビルダーの **script-src** CSP ディレクティブに追加されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="06137-132">If content security policy (CSP) is enabled for your site, ensure that all external URLs are added to the **script-src** CSP directive in Commerce site builder.</span></span> <span data-ttu-id="06137-133">詳細については、[コンテンツ セキュリティ  ポリシー (CSP) の管理](manage-csp.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="06137-133">For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).</span></span>
+> <span data-ttu-id="1883a-109">このトピックの手順は、Microsoft Dynamics 365 Commerce がネイティブに提供していない他のカスタム クライアント側機能にも適用されます。</span><span class="sxs-lookup"><span data-stu-id="1883a-109">The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.</span></span>
 
-## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a><span data-ttu-id="06137-134">スクリプト コードを含むフラグメントをテンプレートに追加する</span><span class="sxs-lookup"><span data-stu-id="06137-134">Add a fragment that includes script code to a template</span></span>
+## <a name="create-a-reusable-fragment-for-your-script-code"></a><span data-ttu-id="1883a-110">スクリプ トコードに再利用可能なフラグメントを作成する</span><span class="sxs-lookup"><span data-stu-id="1883a-110">Create a reusable fragment for your script code</span></span>
 
-<span data-ttu-id="06137-135">サイト ビルダーのテンプレートにスクリプト コードを含むフラグメントを追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="06137-135">To add a fragment that includes script code to a template in site builder, follow these steps.</span></span>
+<span data-ttu-id="1883a-111">フラグメントを使用すると、使用するテンプレートに関係なく、サイト上のすべてのページでインラインまたは外部スクリプト コードを再利用できます。</span><span class="sxs-lookup"><span data-stu-id="1883a-111">A fragment allows you to reuse inline or external script code across all pages on your site, regardless of the template they use.</span></span>
 
-1. <span data-ttu-id="06137-136">**テンプレート** に移動して、スクリプト コードを追加するページのテンプレートを開きます。</span><span class="sxs-lookup"><span data-stu-id="06137-136">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
-1. <span data-ttu-id="06137-137">左ウィンドウでテンプレート階層を展開し、**HTML ヘッド** スロットを表示します。</span><span class="sxs-lookup"><span data-stu-id="06137-137">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
-1. <span data-ttu-id="06137-138">**HTML Head** スロットの省略ボタン (**...**) を選択し、**フラグメントの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-138">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add fragment**.</span></span>
-1. <span data-ttu-id="06137-139">スクリプト コードに対して作成したフラグメントを選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-139">Select the fragment that you created for your script code.</span></span>
-1. <span data-ttu-id="06137-140">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-140">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="06137-141">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-141">Select **Publish**.</span></span>
+### <a name="create-a-reusable-fragment-for-your-inline-script-code"></a><span data-ttu-id="1883a-112">インライン スクリプト コードに再利用可能なフラグメントを作成する</span><span class="sxs-lookup"><span data-stu-id="1883a-112">Create a reusable fragment for your inline script code</span></span>
 
-## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a><span data-ttu-id="06137-142">外部スクリプトまたはインライン スクリプトを直接テンプレートに追加する</span><span class="sxs-lookup"><span data-stu-id="06137-142">Add an external script or inline script directly to a template</span></span>
+<span data-ttu-id="1883a-113">サイト ビルダーのインライン スクリプト コードに再利用可能なフラグメントを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1883a-113">To create a reusable fragment for your inline script code in site builder, follow these steps.</span></span>
 
-<span data-ttu-id="06137-143">単一のテンプレートによって制御される一連のページにインラインまたは外部スクリプトを直接挿入する場合は、最初にフラグメントを作成する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="06137-143">If you want to insert an inline or external script directly into a set of pages that are controlled by a single template, you don't have to create a fragment first.</span></span>
+1. <span data-ttu-id="1883a-114">**フラグメント** に移動し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-114">Go to **Fragments**, and then select **New**.</span></span>
+1. <span data-ttu-id="1883a-115">**新規フラグメント** ダイアログ ボックスで、**インライン スクリプト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-115">In the **New fragment** dialog box, select **Inline script**.</span></span>
+1. <span data-ttu-id="1883a-116">**フラグメント名** で、フラグメントの名前を入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-116">Under **Fragment name**, enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="1883a-117">作成したフラグメントで、**既定のインライン スクリプト** モジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-117">Under the fragment that you created, select the **Default inline script** module.</span></span>
+1. <span data-ttu-id="1883a-118">右側のプロパティウィンドウの **インライン スクリプト** で、クライアント サイド スクリプトを入力します。</span><span class="sxs-lookup"><span data-stu-id="1883a-118">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="1883a-119">次に、必要に応じて他のオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="1883a-119">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="1883a-120">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-120">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="1883a-121">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-121">Select **Publish**.</span></span>
 
-### <a name="add-an-inline-script-directly-to-a-template"></a><span data-ttu-id="06137-144">インライン スクリプトを直接テンプレートに追加する</span><span class="sxs-lookup"><span data-stu-id="06137-144">Add an inline script directly to a template</span></span>
+### <a name="create-a-reusable-fragment-for-your-external-script-code"></a><span data-ttu-id="1883a-122">外部スクリプト コードに再利用可能なフラグメントを作成する</span><span class="sxs-lookup"><span data-stu-id="1883a-122">Create a reusable fragment for your external script code</span></span>
 
-<span data-ttu-id="06137-145">サイト ビルダーのテンプレートにインライン スクリプトを直接追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="06137-145">To add an inline script directly to a template in site builder, follow these steps.</span></span>
+<span data-ttu-id="1883a-123">サイト ビルダーの外部スクリプト コードに再利用可能なフラグメントを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1883a-123">To create a reusable fragment for your external script code in site builder, follow these steps.</span></span>
 
-1. <span data-ttu-id="06137-146">**テンプレート** に移動して、スクリプト コードを追加するページのテンプレートを開きます。</span><span class="sxs-lookup"><span data-stu-id="06137-146">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
-1. <span data-ttu-id="06137-147">左ウィンドウでテンプレート階層を展開し、**HTML ヘッド** スロットを表示します。</span><span class="sxs-lookup"><span data-stu-id="06137-147">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
-1. <span data-ttu-id="06137-148">**HTML Head** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-148">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
-1. <span data-ttu-id="06137-149">**モジュールの追加** ダイアログ ボックスで、**インライン スクリプト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-149">In the **Add Module** dialog box, select **Inline script**.</span></span>
-1. <span data-ttu-id="06137-150">右側のプロパティウィンドウの **インライン スクリプト** で、クライアント サイド スクリプトを入力します。</span><span class="sxs-lookup"><span data-stu-id="06137-150">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="06137-151">次に、必要に応じて他のオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="06137-151">Then configure other options as you require.</span></span>
-1. <span data-ttu-id="06137-152">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-152">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="06137-153">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-153">Select **Publish**.</span></span>
+1. <span data-ttu-id="1883a-124">**フラグメント** に移動し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-124">Go to **Fragments**, and then select **New**.</span></span>
+1. <span data-ttu-id="1883a-125">**新規フラグメント** ダイアログ ボックスで、**外部スクリプト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-125">In the **New fragment** dialog box, select **External script**.</span></span>
+1. <span data-ttu-id="1883a-126">**フラグメント名** で、フラグメントの名前を入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-126">Under **Fragment name**, enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="1883a-127">作成したフラグメントで、**既定の外部スクリプト** モジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-127">Under the fragment that you created, select the **Default external script** module.</span></span>
+1. <span data-ttu-id="1883a-128">右側のプロパティウィンドウの **スクリプト ソース** で、外部スクリプト ソースの外部または相対 URL を追加します。</span><span class="sxs-lookup"><span data-stu-id="1883a-128">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="1883a-129">次に、必要に応じて他のオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="1883a-129">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="1883a-130">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-130">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="1883a-131">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-131">Select **Publish**.</span></span>
 
-### <a name="add-an-external-script-directly-to-a-template"></a><span data-ttu-id="06137-154">外部スクリプトを直接テンプレートに追加する</span><span class="sxs-lookup"><span data-stu-id="06137-154">Add an external script directly to a template</span></span>
+> [!NOTE]
+> <span data-ttu-id="1883a-132">サイトのコンテンツ セキュリティ ポリシー (CSP) が有効になっている場合は、すべての外部 URL が Commerce サイト ビルダーの **script-src** CSP ディレクティブに追加されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="1883a-132">If content security policy (CSP) is enabled for your site, ensure that all external URLs are added to the **script-src** CSP directive in Commerce site builder.</span></span> <span data-ttu-id="1883a-133">詳細については、[コンテンツ セキュリティ  ポリシー (CSP) の管理](manage-csp.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1883a-133">For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).</span></span>
 
-<span data-ttu-id="06137-155">サイト ビルダーのテンプレートに外部スクリプトを直接追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="06137-155">To add an external script directly to a template in site builder, follow these steps.</span></span>
+## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a><span data-ttu-id="1883a-134">スクリプト コードを含むフラグメントをテンプレートに追加する</span><span class="sxs-lookup"><span data-stu-id="1883a-134">Add a fragment that includes script code to a template</span></span>
 
-1. <span data-ttu-id="06137-156">**テンプレート** に移動して、スクリプト コードを追加するページのテンプレートを開きます。</span><span class="sxs-lookup"><span data-stu-id="06137-156">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
-1. <span data-ttu-id="06137-157">左ウィンドウでテンプレート階層を展開し、**HTML ヘッド** スロットを表示します。</span><span class="sxs-lookup"><span data-stu-id="06137-157">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
-1. <span data-ttu-id="06137-158">**HTML Head** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-158">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
-1. <span data-ttu-id="06137-159">**モジュールの追加** ダイアログ ボックスで、**外部スクリプト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-159">In the **Add Module** dialog box, select **External script**.</span></span>
-1. <span data-ttu-id="06137-160">右側のプロパティウィンドウの **スクリプト ソース** で、外部スクリプト ソースの外部または相対 URL を追加します。</span><span class="sxs-lookup"><span data-stu-id="06137-160">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="06137-161">次に、必要に応じて他のオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="06137-161">Then configure other options as you require.</span></span>
-1. <span data-ttu-id="06137-162">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-162">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="06137-163">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06137-163">Select **Publish**.</span></span>
+<span data-ttu-id="1883a-135">サイト ビルダーのテンプレートにスクリプト コードを含むフラグメントを追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1883a-135">To add a fragment that includes script code to a template in site builder, follow these steps.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="06137-164">追加リソース</span><span class="sxs-lookup"><span data-stu-id="06137-164">Additional resources</span></span>
+1. <span data-ttu-id="1883a-136">**テンプレート** に移動して、スクリプト コードを追加するページのテンプレートを開きます。</span><span class="sxs-lookup"><span data-stu-id="1883a-136">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="1883a-137">左ウィンドウでテンプレート階層を展開し、**HTML ヘッド** スロットを表示します。</span><span class="sxs-lookup"><span data-stu-id="1883a-137">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="1883a-138">**HTML Head** スロットの省略ボタン (**...**) を選択し、**フラグメントの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-138">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add fragment**.</span></span>
+1. <span data-ttu-id="1883a-139">スクリプト コードに対して作成したフラグメントを選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-139">Select the fragment that you created for your script code.</span></span>
+1. <span data-ttu-id="1883a-140">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-140">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="1883a-141">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-141">Select **Publish**.</span></span>
 
-[<span data-ttu-id="06137-165">ロゴの追加</span><span class="sxs-lookup"><span data-stu-id="06137-165">Add a logo</span></span>](add-logo.md)
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a><span data-ttu-id="1883a-142">外部スクリプトまたはインライン スクリプトを直接テンプレートに追加する</span><span class="sxs-lookup"><span data-stu-id="1883a-142">Add an external script or inline script directly to a template</span></span>
 
-[<span data-ttu-id="06137-166">サイト テーマの選択</span><span class="sxs-lookup"><span data-stu-id="06137-166">Select a site theme</span></span>](select-site-theme.md)
+<span data-ttu-id="1883a-143">単一のテンプレートによって制御される一連のページにインラインまたは外部スクリプトを直接挿入する場合は、最初にフラグメントを作成する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="1883a-143">If you want to insert an inline or external script directly into a set of pages that are controlled by a single template, you don't have to create a fragment first.</span></span>
 
-[<span data-ttu-id="06137-167">CSS 上書きファイルの作業</span><span class="sxs-lookup"><span data-stu-id="06137-167">Work with CSS override files</span></span>](css-override-files.md)
+### <a name="add-an-inline-script-directly-to-a-template"></a><span data-ttu-id="1883a-144">インライン スクリプトを直接テンプレートに追加する</span><span class="sxs-lookup"><span data-stu-id="1883a-144">Add an inline script directly to a template</span></span>
 
-[<span data-ttu-id="06137-168">ファビコンの追加</span><span class="sxs-lookup"><span data-stu-id="06137-168">Add a favicon</span></span>](add-favicon.md)
+<span data-ttu-id="1883a-145">サイト ビルダーのテンプレートにインライン スクリプトを直接追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1883a-145">To add an inline script directly to a template in site builder, follow these steps.</span></span>
 
-[<span data-ttu-id="06137-169">ようこそメッセージの追加</span><span class="sxs-lookup"><span data-stu-id="06137-169">Add a welcome message</span></span>](add-welcome-message.md)
+1. <span data-ttu-id="1883a-146">**テンプレート** に移動して、スクリプト コードを追加するページのテンプレートを開きます。</span><span class="sxs-lookup"><span data-stu-id="1883a-146">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="1883a-147">左ウィンドウでテンプレート階層を展開し、**HTML ヘッド** スロットを表示します。</span><span class="sxs-lookup"><span data-stu-id="1883a-147">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="1883a-148">**HTML Head** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-148">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="1883a-149">**モジュールの追加** ダイアログ ボックスで、**インライン スクリプト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-149">In the **Add Module** dialog box, select **Inline script**.</span></span>
+1. <span data-ttu-id="1883a-150">右側のプロパティウィンドウの **インライン スクリプト** で、クライアント サイド スクリプトを入力します。</span><span class="sxs-lookup"><span data-stu-id="1883a-150">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="1883a-151">次に、必要に応じて他のオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="1883a-151">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="1883a-152">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-152">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="1883a-153">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-153">Select **Publish**.</span></span>
 
-[<span data-ttu-id="06137-170">著作権に関する注意事項の追加</span><span class="sxs-lookup"><span data-stu-id="06137-170">Add a copyright notice</span></span>](add-copyright-notice.md)
+### <a name="add-an-external-script-directly-to-a-template"></a><span data-ttu-id="1883a-154">外部スクリプトを直接テンプレートに追加する</span><span class="sxs-lookup"><span data-stu-id="1883a-154">Add an external script directly to a template</span></span>
 
-[<span data-ttu-id="06137-171">サイトに言語を追加する</span><span class="sxs-lookup"><span data-stu-id="06137-171">Add languages to your site</span></span>](add-languages-to-site.md)
+<span data-ttu-id="1883a-155">サイト ビルダーのテンプレートに外部スクリプトを直接追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1883a-155">To add an external script directly to a template in site builder, follow these steps.</span></span>
+
+1. <span data-ttu-id="1883a-156">**テンプレート** に移動して、スクリプト コードを追加するページのテンプレートを開きます。</span><span class="sxs-lookup"><span data-stu-id="1883a-156">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="1883a-157">左ウィンドウでテンプレート階層を展開し、**HTML ヘッド** スロットを表示します。</span><span class="sxs-lookup"><span data-stu-id="1883a-157">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="1883a-158">**HTML Head** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-158">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="1883a-159">**モジュールの追加** ダイアログ ボックスで、**外部スクリプト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-159">In the **Add Module** dialog box, select **External script**.</span></span>
+1. <span data-ttu-id="1883a-160">右側のプロパティウィンドウの **スクリプト ソース** で、外部スクリプト ソースの外部または相対 URL を追加します。</span><span class="sxs-lookup"><span data-stu-id="1883a-160">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="1883a-161">次に、必要に応じて他のオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="1883a-161">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="1883a-162">**保存** を選択し、**編集完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-162">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="1883a-163">**公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1883a-163">Select **Publish**.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="1883a-164">追加リソース</span><span class="sxs-lookup"><span data-stu-id="1883a-164">Additional resources</span></span>
+
+[<span data-ttu-id="1883a-165">ロゴの追加</span><span class="sxs-lookup"><span data-stu-id="1883a-165">Add a logo</span></span>](add-logo.md)
+
+[<span data-ttu-id="1883a-166">サイト テーマの選択</span><span class="sxs-lookup"><span data-stu-id="1883a-166">Select a site theme</span></span>](select-site-theme.md)
+
+[<span data-ttu-id="1883a-167">CSS 上書きファイルの作業</span><span class="sxs-lookup"><span data-stu-id="1883a-167">Work with CSS override files</span></span>](css-override-files.md)
+
+[<span data-ttu-id="1883a-168">ファビコンの追加</span><span class="sxs-lookup"><span data-stu-id="1883a-168">Add a favicon</span></span>](add-favicon.md)
+
+[<span data-ttu-id="1883a-169">ようこそメッセージの追加</span><span class="sxs-lookup"><span data-stu-id="1883a-169">Add a welcome message</span></span>](add-welcome-message.md)
+
+[<span data-ttu-id="1883a-170">著作権に関する注意事項の追加</span><span class="sxs-lookup"><span data-stu-id="1883a-170">Add a copyright notice</span></span>](add-copyright-notice.md)
+
+[<span data-ttu-id="1883a-171">サイトに言語を追加する</span><span class="sxs-lookup"><span data-stu-id="1883a-171">Add languages to your site</span></span>](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

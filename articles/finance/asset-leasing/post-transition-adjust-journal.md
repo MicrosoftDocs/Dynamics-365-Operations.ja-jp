@@ -17,32 +17,35 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 51ae41e22507d77f32b8b0f4685cce797fd19cff
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7ed62f52753a6697a7547ada0317041669cf3506
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969556"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207208"
 ---
-# <a name="post-transition-adjustment-journal-entries-in-asset-leasing"></a><span data-ttu-id="3a00f-103">資産リースの移行調整仕訳入力の転記</span><span class="sxs-lookup"><span data-stu-id="3a00f-103">Post transition adjustment journal entries in Asset leasing</span></span>
+# <a name="post-transition-adjustment-journal-entries-in-asset-leasing"></a><span data-ttu-id="3332c-103">資産リースの移行調整仕訳入力の転記</span><span class="sxs-lookup"><span data-stu-id="3332c-103">Post transition adjustment journal entries in Asset leasing</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3a00f-104">このトピックでは、リース ポートフォリオを次の新しいリース会計基準、米国 (US GAAP) および International Financial Reporting Standard 16 (IFRS 16) の標準規格である、Accounting Standards Codification Topic 842 (ASC 842)、に移行するために使用できる機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="3a00f-104">This topic describes the functionality that lets you transition a lease portfolio to the new lease accounting standards: Accounting Standards Codification Topic 842 (ASC 842), which is the standard in Generally Accepted Accounting Principles in the US (US GAAP), and International Financial Reporting Standard 16 (IFRS 16).</span></span>
+<span data-ttu-id="3332c-104">このトピックでは、リース ポートフォリオを次の新しいリース会計基準、米国 (US GAAP) および International Financial Reporting Standard 16 (IFRS 16) の標準規格である、Accounting Standards Codification Topic 842 (ASC 842)、に移行するために使用できる機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="3332c-104">This topic describes the functionality that lets you transition a lease portfolio to the new lease accounting standards: Accounting Standards Codification Topic 842 (ASC 842), which is the standard in Generally Accepted Accounting Principles in the US (US GAAP), and International Financial Reporting Standard 16 (IFRS 16).</span></span>
 
-<span data-ttu-id="3a00f-105">新しい基準への切り替えに関する帳簿の設定方法については、[リース帳簿の設定](set-up-lease-books.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3a00f-105">For information about how to set up a book for the transition to the new standards, see [Set up lease books](set-up-lease-books.md).</span></span>
+<span data-ttu-id="3332c-105">新しい基準への切り替えに関する帳簿の設定方法については、[リース帳簿の設定](set-up-lease-books.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3332c-105">For information about how to set up a book for the transition to the new standards, see [Set up lease books](set-up-lease-books.md).</span></span>
 
-<span data-ttu-id="3a00f-106">切り替え調整仕訳入力を作成すると、仕訳入力が生成されます。</span><span class="sxs-lookup"><span data-stu-id="3a00f-106">When you create a transition adjustment journal entry, a journal entry is generated.</span></span> <span data-ttu-id="3a00f-107">この入力には、その日付に新しい標準が追加されたときにリースを記録したときの貸借対照表への影響が反映されます。</span><span class="sxs-lookup"><span data-stu-id="3a00f-107">This entry reflects the balance sheet impact of recording the lease under the new standards on that date.</span></span> <span data-ttu-id="3a00f-108">該当する日付のキャリー額に対して適切な資産勘定が借方に転記され、負債勘定が貸方に転記されます。</span><span class="sxs-lookup"><span data-stu-id="3a00f-108">The appropriate asset account is debited for the carrying amount on that date, and the liability account is credited.</span></span> <span data-ttu-id="3a00f-109">この差額は、保留中の収益に借方または貸方記入されます。</span><span class="sxs-lookup"><span data-stu-id="3a00f-109">The difference is either debited or credited to retained earnings.</span></span>
+<span data-ttu-id="3332c-106">切り替え調整仕訳入力を作成すると、仕訳入力が生成されます。</span><span class="sxs-lookup"><span data-stu-id="3332c-106">When you create a transition adjustment journal entry, a journal entry is generated.</span></span> <span data-ttu-id="3332c-107">この入力には、その日付に新しい標準が追加されたときにリースを記録したときの貸借対照表への影響が反映されます。</span><span class="sxs-lookup"><span data-stu-id="3332c-107">This entry reflects the balance sheet impact of recording the lease under the new standards on that date.</span></span> <span data-ttu-id="3332c-108">該当する日付のキャリー額に対して適切な資産勘定が借方に転記され、負債勘定が貸方に転記されます。</span><span class="sxs-lookup"><span data-stu-id="3332c-108">The appropriate asset account is debited for the carrying amount on that date, and the liability account is credited.</span></span> <span data-ttu-id="3332c-109">この差額は、保留中の収益に借方または貸方記入されます。</span><span class="sxs-lookup"><span data-stu-id="3332c-109">The difference is either debited or credited to retained earnings.</span></span>
 
-<span data-ttu-id="3a00f-110">新しい会計基準に準拠するように切り替え調整を転記するには、次のステップに従います。</span><span class="sxs-lookup"><span data-stu-id="3a00f-110">To post a transition adjustment in compliance with the new accounting standards, follow these steps.</span></span>
+<span data-ttu-id="3332c-110">新しい会計基準に準拠するように切り替え調整を転記するには、次のステップに従います。</span><span class="sxs-lookup"><span data-stu-id="3332c-110">To post a transition adjustment in compliance with the new accounting standards, follow these steps.</span></span>
 
-1. <span data-ttu-id="3a00f-111">**リースの概要** ページで、リースを選択して **帳簿** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a00f-111">On the **Lease summary** page, select the lease, and then select **Books**.</span></span>
-2. <span data-ttu-id="3a00f-112">帳簿で、**支払スケジュール** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a00f-112">In the book, select **Payment schedule**.</span></span>
-3. <span data-ttu-id="3a00f-113">**支払スケジュール** ダイアログ ボックスで、**確認** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a00f-113">In the **Payment schedule** dialog box, select **Confirm**.</span></span> <span data-ttu-id="3a00f-114">ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3a00f-114">Then close the dialog box.</span></span>
-4. <span data-ttu-id="3a00f-115">**切り替えの調整** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a00f-115">Select **Transition adjustment**.</span></span>
+1. <span data-ttu-id="3332c-111">**リースの概要** ページで、リースを選択して **帳簿** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3332c-111">On the **Lease summary** page, select the lease, and then select **Books**.</span></span>
+2. <span data-ttu-id="3332c-112">帳簿で、**支払スケジュール** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3332c-112">In the book, select **Payment schedule**.</span></span>
+3. <span data-ttu-id="3332c-113">**支払スケジュール** ダイアログ ボックスで、**確認** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3332c-113">In the **Payment schedule** dialog box, select **Confirm**.</span></span> <span data-ttu-id="3332c-114">ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3332c-114">Then close the dialog box.</span></span>
+4. <span data-ttu-id="3332c-115">**切り替えの調整** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3332c-115">Select **Transition adjustment**.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="3a00f-116">**切り替え帳簿** フィールドが使用可能な帳簿に割り当てられているリース帳簿に対してのみ、切り替え調整を作成できます。</span><span class="sxs-lookup"><span data-stu-id="3a00f-116">A transition adjustment can be created only for lease books that are assigned to a book where the **Transition book** field is available.</span></span> <span data-ttu-id="3a00f-117">**リースの開始日** フィールドの値が切り替え日よりも後の場合、**切り替え調整** フィールドの値は更新されません。</span><span class="sxs-lookup"><span data-stu-id="3a00f-117">If the value in the **Lease commencement** field is later than the transition date, the value in the **Transition adjustment** field won't be updated.</span></span>
+    > <span data-ttu-id="3332c-116">**切り替え帳簿** フィールドが使用可能な帳簿に割り当てられているリース帳簿に対してのみ、切り替え調整を作成できます。</span><span class="sxs-lookup"><span data-stu-id="3332c-116">A transition adjustment can be created only for lease books that are assigned to a book where the **Transition book** field is available.</span></span> <span data-ttu-id="3332c-117">**リースの開始日** フィールドの値が切り替え日よりも後の場合、**切り替え調整** フィールドの値は更新されません。</span><span class="sxs-lookup"><span data-stu-id="3332c-117">If the value in the **Lease commencement** field is later than the transition date, the value in the **Transition adjustment** field won't be updated.</span></span>
 
-5. <span data-ttu-id="3a00f-118">仕訳入力を表示するには、**資産リース仕訳** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a00f-118">To view the journal entry, select **Asset leasing journals**.</span></span>
-6. <span data-ttu-id="3a00f-119">新規仕訳を選択し、**転記** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a00f-119">Select the new journal, and then select **Post**.</span></span>
+5. <span data-ttu-id="3332c-118">仕訳入力を表示するには、**資産リース仕訳** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3332c-118">To view the journal entry, select **Asset leasing journals**.</span></span>
+6. <span data-ttu-id="3332c-119">新規仕訳を選択し、**転記** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3332c-119">Select the new journal, and then select **Post**.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
