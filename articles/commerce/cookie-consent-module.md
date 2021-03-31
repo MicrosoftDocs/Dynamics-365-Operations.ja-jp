@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 504232285267fb3663093a84a371e0040233ce23
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 57c8876f1faf08ce965ccd796551996a8651e2eb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993528"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213941"
 ---
 # <a name="cookie-consent-module"></a>Cookie の同意モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Cookie の同意モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Cookie の同意モジュールは、ブラウザのクッキーを追跡する機能やモジュールに対し、サイトの利用者に向けて明示的にクッキーの同意を促すものです。 サイトの利用者が新しいブラウザ セッションでサイトを初めて閲覧する際には、この同意が必要となります。 同意が得られて場合は、追跡されるため、サイトの利用者は再び同意を求められることはありません。 詳細については、[Cookie に関するコンプライアンス](cookie-compliance.md) を参照してください。
 

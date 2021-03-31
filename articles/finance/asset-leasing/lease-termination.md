@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 144559b14878a44afd8a77648bb5ce1d3ba17832
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: ff3795f26ab10ac19cc3a0dd00dca65095118f45
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5131294"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207306"
 ---
 # <a name="propose-a-lease-for-termination"></a>解約に向けたリースの提案
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 リースが早期に終了した場合、資産リースでは終了の仕訳入力をしてリース負債、使用権 (ROU) 資産、減価償却累計額の損金処理を記録し、損益を帳簿に記録できます。 早期終了プロセスによりリースが終了し、関連付けられているリース帳簿が終了します。 個々のリース帳簿は終了しません。 このトピックでは、終了に向けたリースの提案、リース終了仕訳エントリを処理する機能について説明します。
 

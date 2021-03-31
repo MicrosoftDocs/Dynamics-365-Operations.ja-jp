@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: abb9909c03577763ff7e6242c9395a58159df6ca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5b0ce69f57e6ba691803752280466b41ced7c521
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985982"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206490"
 ---
 # <a name="cart-module"></a>カート モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、カート モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 カート モジュールでは、顧客がチェックアウトに進む前にカートに追加された品目が表示されます。 モジュールには注文集計も表示され、顧客はプロモーション コードを適用または削除できます。
 

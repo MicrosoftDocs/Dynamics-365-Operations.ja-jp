@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e70648da2cc1c526625b6e34fd0867d40abb5a85
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 1208b968e476ccbc7a726facf1db896c7bf3c36f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035932"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211180"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>B2B eコマース サイトの製品数量制限の設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "5035932"
 
 ほとんどの製品には、グループ化を定義する単位を持っています。 このグループは、製品の販売方法に影響します。 商品によっては、数量のグループが追加されている場合があります。 このグループにより、製品を個別の単位として販売できるか、複数の単位として販売できるか、また、従う必要がある最小または最大の注文数量制限があるかどうかを決定します。
 
-数量制限機能を使用することで、Microsoft Dynamics 365 Commerce で設定されている最小、最大、複数、標準の数量 (既定の注文設定または Commerce サイトビルダーのサイト設定) が、eコマースで発注された顧客の注文に適用されます。 製品数量の制限は、販売時点管理 (POS) およびコール センターでは現在サポートされていません。
+数量制限機能を使用することで、Microsoft Dynamics 365 Commerce で設定されている最小、最大、複数、標準の数量 (既定の注文設定または Commerce サイト ビルダーのサイト設定) が、eコマースで発注された顧客の注文に適用されます。 製品数量の制限は、販売時点管理 (POS) およびコール センターでは現在サポートされていません。
 
 多くの小売業者は、様々な製品や条件を満たすための顧客注文 (特別注文と呼ばれる場合もあります) のオプションを提供しています。 以下に一般的なシナリオを挙げます。
 

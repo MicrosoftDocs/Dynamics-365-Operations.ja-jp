@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 754e2f83d6c8ff5d3698d98062e54bba7ccd9836
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 82dfd6ac7e97d838ef442fd6ded4a4f165fc795b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035931"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211204"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>B2B eコマース サイト用の顧客アカウントの支払方法の構成
 
@@ -29,7 +29,7 @@ ms.locfileid: "5035931"
 
 このトピックでは、企業間 (B2B) の eコマースサイトに対して顧客勘定の支払方法を構成する方法について説明します。
 
-小売業者は、eコマースチャネルで販売する商品やサービスと引き換えに、様々なタイプの支払いを受け入れることができます。 小売業者が受け入れる各支払タイプは、システムの設定時に Microsoft Dynamics 365 Commerce で構成する必要があります。 B2B e コマース サイトでは、顧客勘定 (または"勘定上") の支払方法がサポートされている必要があります。 
+小売業者は、eコマースチャネルで販売する商品やサービスと引き換えに、様々なタイプの支払いを受け入れることができます。 小売業者が受け入れる各支払タイプは、システムの設定時に Microsoft Dynamics 365 Commerce でコンフィギュレーションする必要があります。 B2B e コマース サイトでは、顧客勘定 (または"勘定上") の支払方法がサポートされている必要があります。 
 
 ## <a name="prerequisites"></a>必要条件
 

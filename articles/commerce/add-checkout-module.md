@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb32b014ac35e33db28d3dee03b01dfa43f5d6a5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5e800daa6eeb54a2eda535cb57aa45559b59b4ea
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980509"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206466"
 ---
 # <a name="checkout-module"></a>チェックアウト モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、ページにチェックアウト モジュールを追加し、必要なプロパティを設定する方法について説明します。
-
-## <a name="overview"></a>概要
 
 チェックアウト モジュールは、注文を作成するために必要なすべてのモジュールをホストする特別なコンテナーです。 これは、顧客が購買を行うのに必要なすべての情報を入力するために使用する、ステップバイステップのフローを示します。 これは、出荷先住所、配送方法、および請求書情報を示します。 また、注文集計や、顧客注文に関連するその他の情報も表示されます。
 

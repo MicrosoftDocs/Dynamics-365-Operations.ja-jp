@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 96b76a08206b8c1bc5029acdfd385fda2870ca85
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 9cd1e3e38bf7dd5ac536104c850cbfc6c53abcfd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035933"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211252"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理
 
