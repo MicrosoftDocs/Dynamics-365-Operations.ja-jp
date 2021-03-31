@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 42bc1c2669a9f0dfc6922ce5aa822a476ffe3c03
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e3eeb51cd27568a46c51760c7333d6dcf422547f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961543"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224616"
 ---
 # <a name="create-and-assign-an-equipment-group"></a>設備グループの作成および割り当て
 
