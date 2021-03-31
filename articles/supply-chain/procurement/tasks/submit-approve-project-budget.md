@@ -16,43 +16,46 @@ ms.search.industry: Service industries
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b871a3fef3515d3a79fb4b55406a93fc16d02faa
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 72ac6705ef8584ef41980a1cc9490227538de365
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018731"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222852"
 ---
-# <a name="submit-and-approve-project-budget"></a><span data-ttu-id="9102a-103">プロジェクト予算の送信および承認</span><span class="sxs-lookup"><span data-stu-id="9102a-103">Submit and approve project budget</span></span>
+# <a name="submit-and-approve-project-budget"></a><span data-ttu-id="eb60b-103">プロジェクト予算の送信および承認</span><span class="sxs-lookup"><span data-stu-id="eb60b-103">Submit and approve project budget</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9102a-104">この手順ではプロジェクトの予算を作成して送信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9102a-104">This procedure shows you how to create and submit the budget for a project.</span></span> 
+<span data-ttu-id="eb60b-104">この手順ではプロジェクトの予算を作成して送信する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-104">This procedure shows you how to create and submit the budget for a project.</span></span> 
 
-<span data-ttu-id="9102a-105">プロジェクト予算を作成するとき、プロジェクトの収益および原価の見積を入力してから、実際のプロジェクト トランザクションの管理に使用することができます。</span><span class="sxs-lookup"><span data-stu-id="9102a-105">When you create a project budget, you can enter estimated revenues and costs for a project, and then use those to control actual project transactions.</span></span> <span data-ttu-id="9102a-106">プロジェクトの予算作成では、元の予算と修正内容をプロジェクト ワークフローに送って認証を申請する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9102a-106">In project budgeting, all original budgets and revisions must be sent to project workflow for approval.</span></span> <span data-ttu-id="9102a-107">ワークフローを使用すると、プロセスの管理を強化できるうえ、変更履歴レコードを作成できます。</span><span class="sxs-lookup"><span data-stu-id="9102a-107">Workflow gives you increased control over the process and creates a change history record.</span></span>
+<span data-ttu-id="eb60b-105">プロジェクト予算を作成するとき、プロジェクトの収益および原価の見積を入力してから、実際のプロジェクト トランザクションの管理に使用することができます。</span><span class="sxs-lookup"><span data-stu-id="eb60b-105">When you create a project budget, you can enter estimated revenues and costs for a project, and then use those to control actual project transactions.</span></span> <span data-ttu-id="eb60b-106">プロジェクトの予算作成では、元の予算と修正内容をプロジェクト ワークフローに送って認証を申請する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eb60b-106">In project budgeting, all original budgets and revisions must be sent to project workflow for approval.</span></span> <span data-ttu-id="eb60b-107">ワークフローを使用すると、プロセスの管理を強化できるうえ、変更履歴レコードを作成できます。</span><span class="sxs-lookup"><span data-stu-id="eb60b-107">Workflow gives you increased control over the process and creates a change history record.</span></span>
 
-<span data-ttu-id="9102a-108">このタスクは、USSI データ セットを使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="9102a-108">This task was created using the USSI data set.</span></span>
+<span data-ttu-id="eb60b-108">このタスクは、USSI データ セットを使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="eb60b-108">This task was created using the USSI data set.</span></span>
 
-1. <span data-ttu-id="9102a-109">**ナビゲーション ウィンドウ** で、**モジュール > プロジェクト管理および会計 > プロジェクト > すべてのプロジェクト** に移動します。</span><span class="sxs-lookup"><span data-stu-id="9102a-109">In the **Navigation pane**, go to **Modules > Project management and accounting > Projects > All projects**.</span></span>
-2. <span data-ttu-id="9102a-110">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="9102a-110">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="9102a-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-111">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="9102a-112">**アクション** ペインで **計画** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-112">On the **Action Pane**, click **Plan**.</span></span>
-5. <span data-ttu-id="9102a-113">**プロジェクト予算** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-113">Click **Project budget**.</span></span>
-6. <span data-ttu-id="9102a-114">**説明** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9102a-114">In the **Description** field, type a value.</span></span>
-7. <span data-ttu-id="9102a-115">**原価** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="9102a-115">Expand the **Cost** fastTab.</span></span>
-8. <span data-ttu-id="9102a-116">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-116">Click **New**.</span></span>
-9. <span data-ttu-id="9102a-117">**トランザクション タイプ** フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="9102a-117">In the **Transaction type** field, select an option.</span></span>
-10. <span data-ttu-id="9102a-118">**カテゴリ** フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="9102a-118">In the **Category** field, enter or select a value.</span></span>
-11. <span data-ttu-id="9102a-119">**元の予算** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9102a-119">In the **Original budget** field, enter a number.</span></span>
-12. <span data-ttu-id="9102a-120">**収益** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="9102a-120">Expand the **Revenues** fastTab.</span></span>
-13. <span data-ttu-id="9102a-121">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-121">Click **New**.</span></span>
-14. <span data-ttu-id="9102a-122">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="9102a-122">In the list, mark the selected row.</span></span>
-15. <span data-ttu-id="9102a-123">**トランザクション タイプ** フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="9102a-123">In the **Transaction type** field, select an option.</span></span>
-16. <span data-ttu-id="9102a-124">**カテゴリ** フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="9102a-124">In the **Category** field, enter or select a value.</span></span>
-17. <span data-ttu-id="9102a-125">**元の予算** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9102a-125">In the **Original budget** field, enter a number.</span></span>
-18. <span data-ttu-id="9102a-126">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-126">Click **Save**.</span></span>
-19. <span data-ttu-id="9102a-127">**ワークフロー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-127">Click **Workflow**.</span></span>
-20. <span data-ttu-id="9102a-128">**送信** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-128">Click **Submit**.</span></span>
-21. <span data-ttu-id="9102a-129">**コメント** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9102a-129">In the **Comment** field, type a value.</span></span>
-22. <span data-ttu-id="9102a-130">**送信** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9102a-130">Click **Submit**.</span></span>
+1. <span data-ttu-id="eb60b-109">**ナビゲーション ウィンドウ** で、**モジュール > プロジェクト管理および会計 > プロジェクト > すべてのプロジェクト** に移動します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-109">In the **Navigation pane**, go to **Modules > Project management and accounting > Projects > All projects**.</span></span>
+2. <span data-ttu-id="eb60b-110">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="eb60b-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="eb60b-112">**アクション** ペインで **計画** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-112">On the **Action Pane**, click **Plan**.</span></span>
+5. <span data-ttu-id="eb60b-113">**プロジェクト予算** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-113">Click **Project budget**.</span></span>
+6. <span data-ttu-id="eb60b-114">**説明** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-114">In the **Description** field, type a value.</span></span>
+7. <span data-ttu-id="eb60b-115">**原価** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-115">Expand the **Cost** fastTab.</span></span>
+8. <span data-ttu-id="eb60b-116">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-116">Click **New**.</span></span>
+9. <span data-ttu-id="eb60b-117">**トランザクション タイプ** フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-117">In the **Transaction type** field, select an option.</span></span>
+10. <span data-ttu-id="eb60b-118">**カテゴリ** フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-118">In the **Category** field, enter or select a value.</span></span>
+11. <span data-ttu-id="eb60b-119">**元の予算** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-119">In the **Original budget** field, enter a number.</span></span>
+12. <span data-ttu-id="eb60b-120">**収益** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-120">Expand the **Revenues** fastTab.</span></span>
+13. <span data-ttu-id="eb60b-121">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-121">Click **New**.</span></span>
+14. <span data-ttu-id="eb60b-122">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-122">In the list, mark the selected row.</span></span>
+15. <span data-ttu-id="eb60b-123">**トランザクション タイプ** フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-123">In the **Transaction type** field, select an option.</span></span>
+16. <span data-ttu-id="eb60b-124">**カテゴリ** フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-124">In the **Category** field, enter or select a value.</span></span>
+17. <span data-ttu-id="eb60b-125">**元の予算** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-125">In the **Original budget** field, enter a number.</span></span>
+18. <span data-ttu-id="eb60b-126">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-126">Click **Save**.</span></span>
+19. <span data-ttu-id="eb60b-127">**ワークフロー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-127">Click **Workflow**.</span></span>
+20. <span data-ttu-id="eb60b-128">**送信** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-128">Click **Submit**.</span></span>
+21. <span data-ttu-id="eb60b-129">**コメント** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="eb60b-129">In the **Comment** field, type a value.</span></span>
+22. <span data-ttu-id="eb60b-130">**送信** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb60b-130">Click **Submit**.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

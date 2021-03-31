@@ -15,33 +15,36 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c89247c870ef3edcaaa30831efaef9b03a9bc166
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 56600abe791c2a299f6c8f77398e0e5ac51710a3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003209"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220182"
 ---
-# <a name="generate-and-post-recurring-free-text-invoices"></a><span data-ttu-id="4f263-103">定期的な自由書式の請求書の生成と転記</span><span class="sxs-lookup"><span data-stu-id="4f263-103">Generate and post recurring free text invoices</span></span>
+# <a name="generate-and-post-recurring-free-text-invoices"></a><span data-ttu-id="060eb-103">定期的な自由書式の請求書の生成と転記</span><span class="sxs-lookup"><span data-stu-id="060eb-103">Generate and post recurring free text invoices</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4f263-104">定期請求書は、顧客に対して同じ金額を定期的に請求する際に使用します。</span><span class="sxs-lookup"><span data-stu-id="4f263-104">Recurring invoices are used to invoice customers regularly for the same amount.</span></span> <span data-ttu-id="4f263-105">このレコードでは、USMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="4f263-105">This recording uses the USMF demo company.</span></span> <span data-ttu-id="4f263-106">記録は A/R 請求書の管理および処理を行う担当者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="4f263-106">The recording is intended for the person responsible for managing and processing A/R invoices.</span></span>
+<span data-ttu-id="060eb-104">定期請求書は、顧客に対して同じ金額を定期的に請求する際に使用します。</span><span class="sxs-lookup"><span data-stu-id="060eb-104">Recurring invoices are used to invoice customers regularly for the same amount.</span></span> <span data-ttu-id="060eb-105">このレコードでは、USMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="060eb-105">This recording uses the USMF demo company.</span></span> <span data-ttu-id="060eb-106">記録は A/R 請求書の管理および処理を行う担当者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="060eb-106">The recording is intended for the person responsible for managing and processing A/R invoices.</span></span>
 
 
-## <a name="generate-recurring-invoices"></a><span data-ttu-id="4f263-107">定期請求書の生成</span><span class="sxs-lookup"><span data-stu-id="4f263-107">Generate recurring invoices</span></span>
+## <a name="generate-recurring-invoices"></a><span data-ttu-id="060eb-107">定期請求書の生成</span><span class="sxs-lookup"><span data-stu-id="060eb-107">Generate recurring invoices</span></span>
 
-## <a name="post-recurring-invoices"></a><span data-ttu-id="4f263-108">定期請求書の転記</span><span class="sxs-lookup"><span data-stu-id="4f263-108">Post recurring invoices</span></span>
-1. <span data-ttu-id="4f263-109">[売掛金勘定] > [請求書] > [定期請求書] > [定期請求書の転記] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4f263-109">Go to Accounts receivable > Invoices > Recurring invoices > Post recurring invoices.</span></span>
-    * <span data-ttu-id="4f263-110">既に生成されている定期請求書に表示および印刷されるこのページを使用します。</span><span class="sxs-lookup"><span data-stu-id="4f263-110">Use this page to view and print recurring invoices that have already been generated.</span></span>  
-2. <span data-ttu-id="4f263-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f263-111">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="4f263-112">定期請求書グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="4f263-112">Select the recurring invoice group.</span></span>  
-3. <span data-ttu-id="4f263-113">[合計] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f263-113">Click Totals.</span></span>
-    * <span data-ttu-id="4f263-114">定期請求書グループの合計を確認します。</span><span class="sxs-lookup"><span data-stu-id="4f263-114">Verify totals for the recurring invoice group.</span></span>  
-4. <span data-ttu-id="4f263-115">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f263-115">Click Close.</span></span>
-    * <span data-ttu-id="4f263-116">各行の下には、定期的な自由書式の請求書が記載されます。</span><span class="sxs-lookup"><span data-stu-id="4f263-116">Each line below is a recurring free text invoice.</span></span> <span data-ttu-id="4f263-117">行を選択し、[詳細] ボタンをクリックし、自由書式の請求書の詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="4f263-117">You can select a line and click 'Details' button to view free text invoice details.</span></span>  
-5. <span data-ttu-id="4f263-118">[検証] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f263-118">Click Validate.</span></span>
-    * <span data-ttu-id="4f263-119">選択した請求書にエラーがないことを確認してください。しかし、請求書は転記しません。</span><span class="sxs-lookup"><span data-stu-id="4f263-119">Verify that the selected invoices do not have errors, but do not post the invoices.</span></span>  
-6. <span data-ttu-id="4f263-120">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4f263-120">Click Post.</span></span>
-    * <span data-ttu-id="4f263-121">選択した請求書を転記します。</span><span class="sxs-lookup"><span data-stu-id="4f263-121">Post the selected invoices.</span></span>  
+## <a name="post-recurring-invoices"></a><span data-ttu-id="060eb-108">定期請求書の転記</span><span class="sxs-lookup"><span data-stu-id="060eb-108">Post recurring invoices</span></span>
+1. <span data-ttu-id="060eb-109">[売掛金勘定] > [請求書] > [定期請求書] > [定期請求書の転記] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="060eb-109">Go to Accounts receivable > Invoices > Recurring invoices > Post recurring invoices.</span></span>
+    * <span data-ttu-id="060eb-110">既に生成されている定期請求書に表示および印刷されるこのページを使用します。</span><span class="sxs-lookup"><span data-stu-id="060eb-110">Use this page to view and print recurring invoices that have already been generated.</span></span>  
+2. <span data-ttu-id="060eb-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="060eb-111">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="060eb-112">定期請求書グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="060eb-112">Select the recurring invoice group.</span></span>  
+3. <span data-ttu-id="060eb-113">[合計] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="060eb-113">Click Totals.</span></span>
+    * <span data-ttu-id="060eb-114">定期請求書グループの合計を確認します。</span><span class="sxs-lookup"><span data-stu-id="060eb-114">Verify totals for the recurring invoice group.</span></span>  
+4. <span data-ttu-id="060eb-115">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="060eb-115">Click Close.</span></span>
+    * <span data-ttu-id="060eb-116">各行の下には、定期的な自由書式の請求書が記載されます。</span><span class="sxs-lookup"><span data-stu-id="060eb-116">Each line below is a recurring free text invoice.</span></span> <span data-ttu-id="060eb-117">行を選択し、[詳細] ボタンをクリックし、自由書式の請求書の詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="060eb-117">You can select a line and click 'Details' button to view free text invoice details.</span></span>  
+5. <span data-ttu-id="060eb-118">[検証] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="060eb-118">Click Validate.</span></span>
+    * <span data-ttu-id="060eb-119">選択した請求書にエラーがないことを確認してください。しかし、請求書は転記しません。</span><span class="sxs-lookup"><span data-stu-id="060eb-119">Verify that the selected invoices do not have errors, but do not post the invoices.</span></span>  
+6. <span data-ttu-id="060eb-120">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="060eb-120">Click Post.</span></span>
+    * <span data-ttu-id="060eb-121">選択した請求書を転記します。</span><span class="sxs-lookup"><span data-stu-id="060eb-121">Post the selected invoices.</span></span>  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

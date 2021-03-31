@@ -17,25 +17,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47df457d92f6eb41d04c63db6d3a99a4a9a74439
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b18acd7b66baa804d5a230116a43ca820c097af1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001328"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219224"
 ---
-# <a name="service-activities"></a><span data-ttu-id="94945-103">サービス活動</span><span class="sxs-lookup"><span data-stu-id="94945-103">Service activities</span></span>        
+# <a name="service-activities"></a><span data-ttu-id="67760-103">サービス活動</span><span class="sxs-lookup"><span data-stu-id="67760-103">Service activities</span></span>        
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="94945-104">サービス注文の作業を定義および管理するには、サービス活動を作成します。</span><span class="sxs-lookup"><span data-stu-id="94945-104">Create service activities to define and maintain tasks in a service order.</span></span> <span data-ttu-id="94945-105">サービス注文には、作業者が実行する一つ以上のサービス活動を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="94945-105">A service order can include one or more service activities to be performed by a worker.</span></span>
+<span data-ttu-id="67760-104">サービス注文の作業を定義および管理するには、サービス活動を作成します。</span><span class="sxs-lookup"><span data-stu-id="67760-104">Create service activities to define and maintain tasks in a service order.</span></span> <span data-ttu-id="67760-105">サービス注文には、作業者が実行する一つ以上のサービス活動を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="67760-105">A service order can include one or more service activities to be performed by a worker.</span></span>
 
-<span data-ttu-id="94945-106">サービス活動は、**活動タイプ** フォームで定義されます。</span><span class="sxs-lookup"><span data-stu-id="94945-106">Service activities are defined in the **Activity types** form.</span></span> <span data-ttu-id="94945-107">(**販売とマーケティング** \> **設定** \> **活動** \> **活動タイプ** をクリックします。) 活動を設定すると、それらを関連するサービス契約に基づいて自動的にサービス注文に追加できるか、または行をサービス注文に追加するときに手動で活動を追加できます。</span><span class="sxs-lookup"><span data-stu-id="94945-107">(Click **Sales and marketing** \> **Setup** \> **Activities** \> **Activity types**.) After you set up activities, you can add them to service orders automatically based on the related service agreement, or you can manually add activities when you add lines to a service order.</span></span>
+<span data-ttu-id="67760-106">サービス活動は、**活動タイプ** フォームで定義されます。</span><span class="sxs-lookup"><span data-stu-id="67760-106">Service activities are defined in the **Activity types** form.</span></span> <span data-ttu-id="67760-107">(**販売とマーケティング** \> **設定** \> **活動** \> **活動タイプ** をクリックします。) 活動を設定すると、それらを関連するサービス契約に基づいて自動的にサービス注文に追加できるか、または行をサービス注文に追加するときに手動で活動を追加できます。</span><span class="sxs-lookup"><span data-stu-id="67760-107">(Click **Sales and marketing** \> **Setup** \> **Activities** \> **Activity types**.) After you set up activities, you can add them to service orders automatically based on the related service agreement, or you can manually add activities when you add lines to a service order.</span></span>
 
-<span data-ttu-id="94945-108">**派遣表** フォームでは、サービス活動の状態を表示できます。</span><span class="sxs-lookup"><span data-stu-id="94945-108">You can view the status of service activities in the **Dispatch board** form.</span></span> <span data-ttu-id="94945-109">そのフォームではさらに、1 人の作業者からの別の作業者に活動を割り当て直すことができます。</span><span class="sxs-lookup"><span data-stu-id="94945-109">You can also reassign activities from one worker to another worker in that form.</span></span>
+<span data-ttu-id="67760-108">**派遣表** フォームでは、サービス活動の状態を表示できます。</span><span class="sxs-lookup"><span data-stu-id="67760-108">You can view the status of service activities in the **Dispatch board** form.</span></span> <span data-ttu-id="67760-109">そのフォームではさらに、1 人の作業者からの別の作業者に活動を割り当て直すことができます。</span><span class="sxs-lookup"><span data-stu-id="67760-109">You can also reassign activities from one worker to another worker in that form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="94945-110">参照</span><span class="sxs-lookup"><span data-stu-id="94945-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="67760-110">参照</span><span class="sxs-lookup"><span data-stu-id="67760-110">See also</span></span>
 
-<span data-ttu-id="94945-111">[派遣表 (フォーム)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="94945-111">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
+<span data-ttu-id="67760-111">[派遣表 (フォーム)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="67760-111">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

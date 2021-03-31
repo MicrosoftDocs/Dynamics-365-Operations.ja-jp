@@ -17,36 +17,39 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3896a8574f7910ee09b360deb3ede10f061290bc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 71b94e6fa4faafdc5fbe68e89635ec79616164bb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991226"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217533"
 ---
-# <a name="correct-a-free-text-invoice"></a><span data-ttu-id="db8d6-103">自由書式の請求書を訂正</span><span class="sxs-lookup"><span data-stu-id="db8d6-103">Correct a free text invoice</span></span>
+# <a name="correct-a-free-text-invoice"></a><span data-ttu-id="5fa43-103">自由書式の請求書を訂正</span><span class="sxs-lookup"><span data-stu-id="5fa43-103">Correct a free text invoice</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="db8d6-104">この記事では、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="db8d6-104">This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.</span></span>
+<span data-ttu-id="5fa43-104">この記事では、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="5fa43-104">This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.</span></span>
 
-<span data-ttu-id="db8d6-105">転記済みの自由書式の請求書を修正するには、転記された自由書式の請求書を開きます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-105">To correct a free text invoice that has already been posted, open the posted free text invoice.</span></span> <span data-ttu-id="db8d6-106">**請求書** ページで、**キャンセル** を選択してから、**請求書の修正** を選択します。</span><span class="sxs-lookup"><span data-stu-id="db8d6-106">On the **Invoice** page, select **Cancel**, and then select **Correct invoice**.</span></span> <span data-ttu-id="db8d6-107">理由コードを選択し、コメントを追加して、および新しい訂正請求書の日付を選択します。</span><span class="sxs-lookup"><span data-stu-id="db8d6-107">Select a reason code, add comments, and select the date for new corrected invoice.</span></span> <span data-ttu-id="db8d6-108">訂正請求書を変更して、転記できます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-108">You can modify the corrected invoice, and post it.</span></span> 
+<span data-ttu-id="5fa43-105">転記済みの自由書式の請求書を修正するには、転記された自由書式の請求書を開きます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-105">To correct a free text invoice that has already been posted, open the posted free text invoice.</span></span> <span data-ttu-id="5fa43-106">**請求書** ページで、**キャンセル** を選択してから、**請求書の修正** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fa43-106">On the **Invoice** page, select **Cancel**, and then select **Correct invoice**.</span></span> <span data-ttu-id="5fa43-107">理由コードを選択し、コメントを追加して、および新しい訂正請求書の日付を選択します。</span><span class="sxs-lookup"><span data-stu-id="5fa43-107">Select a reason code, add comments, and select the date for new corrected invoice.</span></span> <span data-ttu-id="5fa43-108">訂正請求書を変更して、転記できます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-108">You can modify the corrected invoice, and post it.</span></span> 
 
-<span data-ttu-id="db8d6-109">訂正請求書を転記すると、キャンセル請求書が元の請求金額と一致する貸方金額に対して作成されます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-109">When you post the corrected invoice, a canceling invoice is created for a credit amount that equals the original invoice amount.</span></span> <span data-ttu-id="db8d6-110">したがって、元の請求書とキャンセル請求書の合計残高が 0 (ゼロ) になります。</span><span class="sxs-lookup"><span data-stu-id="db8d6-110">Therefore, the combined balance of the original invoice and the canceling invoice is 0 (zero).</span></span> <span data-ttu-id="db8d6-111">キャンセル請求書が元の請求書に対して決済されます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-111">The canceling invoice is settled against the original invoice.</span></span> 
+<span data-ttu-id="5fa43-109">訂正請求書を転記すると、キャンセル請求書が元の請求金額と一致する貸方金額に対して作成されます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-109">When you post the corrected invoice, a canceling invoice is created for a credit amount that equals the original invoice amount.</span></span> <span data-ttu-id="5fa43-110">したがって、元の請求書とキャンセル請求書の合計残高が 0 (ゼロ) になります。</span><span class="sxs-lookup"><span data-stu-id="5fa43-110">Therefore, the combined balance of the original invoice and the canceling invoice is 0 (zero).</span></span> <span data-ttu-id="5fa43-111">キャンセル請求書が元の請求書に対して決済されます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-111">The canceling invoice is settled against the original invoice.</span></span> 
 
-<span data-ttu-id="db8d6-112">訂正請求書を転記すると、3 つの請求書ができます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-112">After you post the corrected invoice, you will have three invoices:</span></span>
+<span data-ttu-id="5fa43-112">訂正請求書を転記すると、3 つの請求書ができます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-112">After you post the corrected invoice, you will have three invoices:</span></span>
 
--   <span data-ttu-id="db8d6-113">**元の請求書** – 修正している情報を含む請求書。</span><span class="sxs-lookup"><span data-stu-id="db8d6-113">**Original invoice** – The invoice that includes the information that you're correcting.</span></span>
--   <span data-ttu-id="db8d6-114">**キャンセル請求書** – システム生成の貸方請求書。最後に修正された請求書をキャンセルするために作成されます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-114">**Canceling invoice** – The system-generated credit invoice that was created to cancel the invoice that was most recently corrected.</span></span>
--   <span data-ttu-id="db8d6-115">**訂正請求書** – 修正された請求書情報を含む請求書。</span><span class="sxs-lookup"><span data-stu-id="db8d6-115">**Corrected invoice** – The invoice that contains the corrected invoice information.</span></span>
+-   <span data-ttu-id="5fa43-113">**元の請求書** – 修正している情報を含む請求書。</span><span class="sxs-lookup"><span data-stu-id="5fa43-113">**Original invoice** – The invoice that includes the information that you're correcting.</span></span>
+-   <span data-ttu-id="5fa43-114">**キャンセル請求書** – システム生成の貸方請求書。最後に修正された請求書をキャンセルするために作成されます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-114">**Canceling invoice** – The system-generated credit invoice that was created to cancel the invoice that was most recently corrected.</span></span>
+-   <span data-ttu-id="5fa43-115">**訂正請求書** – 修正された請求書情報を含む請求書。</span><span class="sxs-lookup"><span data-stu-id="5fa43-115">**Corrected invoice** – The invoice that contains the corrected invoice information.</span></span>
 
-<span data-ttu-id="db8d6-116">2 つの方法でキャンセル請求書と訂正請求書を識別できます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-116">You can identify canceling and correcting invoices in two ways:</span></span>
+<span data-ttu-id="5fa43-116">2 つの方法でキャンセル請求書と訂正請求書を識別できます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-116">You can identify canceling and correcting invoices in two ways:</span></span>
 
--   <span data-ttu-id="db8d6-117">**すべての自由書式の請求書** ページには、**訂正** 列が含まれており、ここでキャンセル請求書か訂正請求書かを確認できます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-117">The **All free text invoices** page includes a **Correction** column, where you can see which invoices are canceling invoices and corrected invoices.</span></span>
--   <span data-ttu-id="db8d6-118">自由書式の請求書ヘッダーには、**キャンセル請求書 '\[請求書番号\]'** または **訂正請求書 '\[請求書番号\]'** のステータスが示されます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-118">The header of the free text invoice shows a status of **Cancelling invoice '\[invoice number\]'** or **Corrected invoice '\[invoice number\]'**.</span></span>
+-   <span data-ttu-id="5fa43-117">**すべての自由書式の請求書** ページには、**訂正** 列が含まれており、ここでキャンセル請求書か訂正請求書かを確認できます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-117">The **All free text invoices** page includes a **Correction** column, where you can see which invoices are canceling invoices and corrected invoices.</span></span>
+-   <span data-ttu-id="5fa43-118">自由書式の請求書ヘッダーには、**キャンセル請求書 '\[請求書番号\]'** または **訂正請求書 '\[請求書番号\]'** のステータスが示されます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-118">The header of the free text invoice shows a status of **Cancelling invoice '\[invoice number\]'** or **Corrected invoice '\[invoice number\]'**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="db8d6-119">この機能は、**自由書式の請求訂正** コンフィギュレーション キーが選択されている場合にのみ利用できます。</span><span class="sxs-lookup"><span data-stu-id="db8d6-119">This feature is available only if the **Free text invoice correction** configuration key is selected.</span></span> <span data-ttu-id="db8d6-120">構成キーを有効にする方法の詳細については、[メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) の、設定キーの有効化 (または無効化) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="db8d6-120">For more information on how to enable Configuration keys refer to the Enable (or disable) configuration keys section in the [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) topic.</span></span> 
+> <span data-ttu-id="5fa43-119">この機能は、**自由書式の請求訂正** コンフィギュレーション キーが選択されている場合にのみ利用できます。</span><span class="sxs-lookup"><span data-stu-id="5fa43-119">This feature is available only if the **Free text invoice correction** configuration key is selected.</span></span> <span data-ttu-id="5fa43-120">構成キーを有効にする方法の詳細については、[メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) の、設定キーの有効化 (または無効化) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5fa43-120">For more information on how to enable Configuration keys refer to the Enable (or disable) configuration keys section in the [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) topic.</span></span> 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
