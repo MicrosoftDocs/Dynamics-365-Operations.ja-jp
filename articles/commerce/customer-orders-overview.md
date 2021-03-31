@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6fec80dd2836a5400a7178e732fe1d5da41aca4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995798"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220513"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>販売時点管理 (POS) の顧客注文
 

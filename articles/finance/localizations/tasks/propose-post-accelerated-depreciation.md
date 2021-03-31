@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e57166ba614a44a7acd61c21a53a89966f6ff181
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1cea2bd5d0ef4cf08d7abecca0a29ddc8887d9bf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988244"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222962"
 ---
 # <a name="propose-and-post-accelerated-depreciation"></a>増加償却の提案と転記
 

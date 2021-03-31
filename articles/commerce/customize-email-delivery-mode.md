@@ -1,6 +1,6 @@
 ---
 title: 配信モードによるトランザクション メールのカスタマイズ
-description: このトピックでは、Microsoft Dynamics 365 Commerce で特定の通知タイプと配信のモードに対応したカスタムメール テンプレートを設定する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce で特定の通知タイプと配信のモードに対応したカスタム メール テンプレートを設定する方法について説明します。
 author: stuharg
 manager: annbe
 ms.date: 11/16/2020
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: f4ecb990cfe792e92142f922c43c71ef8494e117
-ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
+ms.openlocfilehash: d0d96ddb20b2b09751d8c0c0bf8af713de35279a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5031851"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222636"
 ---
-# <a name="customize-transactional-emails-by-mode-of-delivery"></a>配信モードによるトランザクション メールのカスタマイズ
+# <a name="customize-transactional-emails-by-mode-of-delivery"></a>配送モードによるトランザクション メールのカスタマイズ
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で特定の通知タイプと配信のモードに対応したカスタムメール テンプレートを設定する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce で特定の通知タイプと配信のモードに対応したカスタム メール テンプレートを設定する方法について説明します。
 
 トランザクション メールは、通知タイプ (たとえば、**注文作成済み**、**注文梱包済み**、**注文の請求済み**) と配送モード (夜間、店舗内のピックアップ、カーブサイド ピックアップなど) を組み合わせてカスタマイズできるようになりました。 カスタム トランザクション メールでは、小売業者は注文の配信のモードに応じたフルフィルメントを行って、顧客の注文を提供することができます。 たとえば、"注文の梱包済み" イベントをカスタマイズして、カーブサイド ピックアップを選択した顧客に対して、そのためのカーブサイド ピックアップに関する指示を提供できます。 また、出荷の注文を行う顧客の配送業者と出荷情報を提供することもできます。
 

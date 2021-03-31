@@ -1,6 +1,6 @@
 ---
 title: 支払いモジュール
-description: このトピックでは、支払いモジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+description: このトピックでは、支払いモジュールについて取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
 manager: annbe
 ms.date: 11/18/2020
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 85b5d8306eb4e9f2a4b9df13d95ab88020c3591e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d9c0956e30d413f5ae695cf75b06fb58711b2944
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000668"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222498"
 ---
-# <a name="payment-module"></a>支払いモジュール
+# <a name="payment-module"></a>支払モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、支払いモジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+このトピックでは、支払いモジュールについて取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 
 支払モジュールにより、顧客はクレジット カードやデビット カードを使用して注文の支払を行うことができます。 このモジュールの支払い統合は、 Dynamics 365 Payment Connector によって提供されます。 支払いコネクタを設定および構成方法についての詳細は、[Adyen 用の Dynamics 365 Payment Connector ](dev-itpro/adyen-connector.md) を参照してください。  
 

@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130758"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219990"
 ---
 # <a name="adjust-leases"></a>リースの調整
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、リースを調整する方法について説明します。 リースの条件が変更された場合、リースが拡張された場合、またはその他の状況が変化した場合は、調整が必要になることがあります。 資産リースは、リースの変更に関する Accounting Standards Codification Topic 842 (ASC 842) および International Financial Reporting Standard 16 (IFRS 16) のガイダンスに準拠しています。 ASC 842-20-15-1 では、リースの変更を、リースの範囲や対価に変更を生じさせる契約条件の変更と定義しています。 IFRS 16 の パラグラフ 39 では、 賃借人はリース支払の変動を反映するようにリース負債を再評価する必要があることが示されています。
 

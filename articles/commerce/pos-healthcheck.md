@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 59e2505345d82f47efebfba6cc6f3403d03acc84
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 48391a3160c42fdc94be9e7e62024e9e193b94dc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000537"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216678"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>POS 周辺機器およびサービスの正常性チェック
 
@@ -34,7 +34,7 @@ ms.locfileid: "5000537"
 
 小売店舗は、多くのアプリケーションとデバイスが使用される複雑な環境になることがあります。 たとえば、周辺機器が故障したり、誤って 1 日中プラグが外れるなど、相互関係のため、操作が増えると常に操作をスムーズに実行するのが困難になることがあります。 デバイスやサービスに関係する問題のトラブルシューティングは、大きな商社には費用がかかり、小さな操作ゆえに均等にもどかしくなることがあります。
 
-Microsoft Dynamics 365 Commerce バージョン 10.0.10 以降には、このような費用とフラストレーションを回避するのに役立つ正常性チェックの操作が含まれています。 通常の操作以外のこの操作により、POS からデバイスを直接テストする方法が提供されます。 したがって、小売業者は問題が発生する前に検出することができます。
+Microsoft Dynamics 365 Commerce バージョン 10.0.10 以降には、このようなコストとフラストレーションを回避するのに役立つ正常性チェックの操作が含まれています。 通常の操作以外のこの操作により、POS からデバイスを直接テストする方法が提供されます。 したがって、小売業者は問題が発生する前に検出することができます。
 
 ## <a name="key-terms"></a>重要な用語
 
