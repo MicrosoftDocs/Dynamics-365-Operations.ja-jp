@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7457875a61b37c9c4b33269a94218931d4755e25
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5c2584f5897e79dc8b08ac70062e52ebef3a8b6c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997450"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256610"
 ---
 # <a name="generate-japan-consumption-tax-report"></a>日本消費税レポートの生成
 
