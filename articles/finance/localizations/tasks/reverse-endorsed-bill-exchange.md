@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 264342b61df93bd09e7ab35f72c4352e69cb6316
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea531836cb8c8d032de6fe8c619f1fad62c7bf90
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988223"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255678"
 ---
 # <a name="reverse-an-endorsed-bill-of-exchange"></a>裏書済受取手形の取消
 

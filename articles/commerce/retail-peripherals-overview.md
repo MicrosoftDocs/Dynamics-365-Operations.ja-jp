@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7ab4ab4d04433ca03ac90acc583afceea2014e8e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 64033f0e1568ae88aef6617592243ac7d0b21ab7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989532"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254942"
 ---
 # <a name="peripherals"></a>周辺機器
 

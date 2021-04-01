@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90af5d9011addc373243298feaf62a145a3ea9dd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 97545e0de53a5472c9da93f802c94657d79046da
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988228"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260733"
 ---
 # <a name="propose-special-depreciation"></a>特別償却の提案
 
