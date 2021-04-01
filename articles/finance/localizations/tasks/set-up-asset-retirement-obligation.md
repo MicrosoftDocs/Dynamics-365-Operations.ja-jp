@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fffa82b76a8fade3d1ef721336a9971edb42a1d0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3481d66d98a3b251f60422e7e6e7eb56d69039c7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988216"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239607"
 ---
 # <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力
 
