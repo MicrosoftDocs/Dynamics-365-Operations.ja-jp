@@ -17,42 +17,45 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d99f067e93de57b5b13787f128f450f736660351
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f61c3514818365dc250e1313b0e6b2f775d9bc89
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006682"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262048"
 ---
-# <a name="perform-invoice-updates-for-returns"></a><span data-ttu-id="edc7a-103">返品による請求書更新の実行</span><span class="sxs-lookup"><span data-stu-id="edc7a-103">Perform invoice updates for returns</span></span> 
+# <a name="perform-invoice-updates-for-returns"></a><span data-ttu-id="73e21-103">返品による請求書更新の実行</span><span class="sxs-lookup"><span data-stu-id="73e21-103">Perform invoice updates for returns</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="edc7a-104">返品注文は、返品された注文としてマークされた販売注文の一タイプです。</span><span class="sxs-lookup"><span data-stu-id="edc7a-104">A return order is a type of sales order that is marked as a returned order.</span></span> <span data-ttu-id="edc7a-105">したがって 、**返品注文** フォームの代わりに返品注文の請求書を生成するには、**すべての販売注文** リスト ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="edc7a-105">Therefore, the **All sales orders** list page is used to generate invoices for return orders instead of the **Return orders** form.</span></span> <span data-ttu-id="edc7a-106">この機能は、返品注文と販売注文を同じ担当者が同時に請求する、組織で採用されている業務プロセスをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="edc7a-106">This functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.</span></span>
+<span data-ttu-id="73e21-104">返品注文は、返品された注文としてマークされた販売注文の一タイプです。</span><span class="sxs-lookup"><span data-stu-id="73e21-104">A return order is a type of sales order that is marked as a returned order.</span></span> <span data-ttu-id="73e21-105">したがって 、**返品注文** フォームの代わりに返品注文の請求書を生成するには、**すべての販売注文** リスト ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="73e21-105">Therefore, the **All sales orders** list page is used to generate invoices for return orders instead of the **Return orders** form.</span></span> <span data-ttu-id="73e21-106">この機能は、返品注文と販売注文を同じ担当者が同時に請求する、組織で採用されている業務プロセスをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="73e21-106">This functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.</span></span>
 
-<span data-ttu-id="edc7a-107">返品品目の請求書は負の量であるため、訂正票と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="edc7a-107">Because the invoice for a returned item is for a negative amount, it is called a credit note.</span></span>
+<span data-ttu-id="73e21-107">返品品目の請求書は負の量であるため、訂正票と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="73e21-107">Because the invoice for a returned item is for a negative amount, it is called a credit note.</span></span>
 
-<span data-ttu-id="edc7a-108">請求書の更新をバッチ処理として設定する場合、タイプが **返品注文** の販売注文の返品明細行ステータスを、注文の梱包明細が更新済であることを示す **受入済** にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="edc7a-108">When you set up the invoice update for batch processing, the sales order of type **Returned order** must have a return line status of **Received**, which indicates that the order's packing slip has been updated.</span></span>
+<span data-ttu-id="73e21-108">請求書の更新をバッチ処理として設定する場合、タイプが **返品注文** の販売注文の返品明細行ステータスを、注文の梱包明細が更新済であることを示す **受入済** にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="73e21-108">When you set up the invoice update for batch processing, the sales order of type **Returned order** must have a return line status of **Received**, which indicates that the order's packing slip has been updated.</span></span>
 
-## <a name="post-an-invoice-for-a-return-order"></a><span data-ttu-id="edc7a-109">返品注文の請求書を転記する</span><span class="sxs-lookup"><span data-stu-id="edc7a-109">Post an invoice for a return order</span></span>
+## <a name="post-an-invoice-for-a-return-order"></a><span data-ttu-id="73e21-109">返品注文の請求書を転記する</span><span class="sxs-lookup"><span data-stu-id="73e21-109">Post an invoice for a return order</span></span>
 
-1.  <span data-ttu-id="edc7a-110">**売掛金管理** \> **共通** \> **販売注文** \> **すべての販売注文** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="edc7a-110">Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.</span></span>
+1.  <span data-ttu-id="73e21-110">**売掛金管理** \> **共通** \> **販売注文** \> **すべての販売注文** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="73e21-110">Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.</span></span>
 
-2.  <span data-ttu-id="edc7a-111">**返品注文** が **注文タイプ** フィールドに表示される販売注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="edc7a-111">Select a sales order for which **Returned order** is displayed in the **Order type** field.</span></span>
+2.  <span data-ttu-id="73e21-111">**返品注文** が **注文タイプ** フィールドに表示される販売注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="73e21-111">Select a sales order for which **Returned order** is displayed in the **Order type** field.</span></span>
 
-3.  <span data-ttu-id="edc7a-112">アクション ウィンドウの、**請求書** タブで、**生成** グループから **請求書** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="edc7a-112">On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.</span></span>
+3.  <span data-ttu-id="73e21-112">アクション ウィンドウの、**請求書** タブで、**生成** グループから **請求書** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73e21-112">On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.</span></span>
 
-4.  <span data-ttu-id="edc7a-113">**パラメーター** タブで **転記** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="edc7a-113">On the **Parameters** tab, select the **Posting** check box.</span></span>
+4.  <span data-ttu-id="73e21-113">**パラメーター** タブで **転記** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="73e21-113">On the **Parameters** tab, select the **Posting** check box.</span></span>
 
-5.  <span data-ttu-id="edc7a-114">フォームの情報を確認し、必要な変更を行います。</span><span class="sxs-lookup"><span data-stu-id="edc7a-114">Review information in the form and make any changes that are needed.</span></span>
+5.  <span data-ttu-id="73e21-114">フォームの情報を確認し、必要な変更を行います。</span><span class="sxs-lookup"><span data-stu-id="73e21-114">Review information in the form and make any changes that are needed.</span></span>
 
-6.  <span data-ttu-id="edc7a-115">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="edc7a-115">Click **OK**.</span></span> <span data-ttu-id="edc7a-116">訂正票が転記されます。</span><span class="sxs-lookup"><span data-stu-id="edc7a-116">The credit note is posted.</span></span>
+6.  <span data-ttu-id="73e21-115">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73e21-115">Click **OK**.</span></span> <span data-ttu-id="73e21-116">訂正票が転記されます。</span><span class="sxs-lookup"><span data-stu-id="73e21-116">The credit note is posted.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="edc7a-117">参照</span><span class="sxs-lookup"><span data-stu-id="edc7a-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="73e21-117">参照</span><span class="sxs-lookup"><span data-stu-id="73e21-117">See also</span></span>
 
-[<span data-ttu-id="edc7a-118">返品による梱包明細票の更新</span><span class="sxs-lookup"><span data-stu-id="edc7a-118">Packing slip updates for returns</span></span>](packing-slip-updates-returns.md)
+[<span data-ttu-id="73e21-118">返品による梱包明細票の更新</span><span class="sxs-lookup"><span data-stu-id="73e21-118">Packing slip updates for returns</span></span>](packing-slip-updates-returns.md)
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
