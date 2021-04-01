@@ -16,34 +16,37 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc5404e5eb1679659604a6268fa09519a7a4282e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3d4cd276283483340f1dc0bc995cc9073a8aa9c0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003726"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232692"
 ---
-# <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a><span data-ttu-id="33dfe-103">クロス ドッキングおよび集中的購買のルールとパラメーターの設定</span><span class="sxs-lookup"><span data-stu-id="33dfe-103">Set up rules and parameters for cross docking and buyer's push</span></span>
+# <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a><span data-ttu-id="f2ffe-103">クロス ドッキングおよび集中的購買のルールとパラメーターの設定</span><span class="sxs-lookup"><span data-stu-id="f2ffe-103">Set up rules and parameters for cross docking and buyer's push</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="33dfe-104">この手順では、補充ルールを作成するための手順を示します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-104">This procedure demonstrates the steps to create Replenishment rules.</span></span> <span data-ttu-id="33dfe-105">クロスドッキングと集中的購買を実行するときに、補充ルールを製品の店舗への配分を管理するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="33dfe-105">Replenishment rules can be used to control how products are distributed to stores when using Cross-docking and Buyer´s push.</span></span> <span data-ttu-id="33dfe-106">補充ルールは、店舗または店舗グループに対して設定できます。</span><span class="sxs-lookup"><span data-stu-id="33dfe-106">Replenishment rules can be set up for stores or store groups.</span></span> <span data-ttu-id="33dfe-107">ルールの行ごとに定義された重量によって、補充ルールをクロスドッキングまたは集中的購買で配分方法として使用する場合に、店舗間で配分される製品の数量が制御されます。</span><span class="sxs-lookup"><span data-stu-id="33dfe-107">The weight defined for each line in a rule will control how the quantities of products will get distributed between the stores when using Replenishment rules as the distribution method in Cross-docking or Buyer´s push.</span></span> <span data-ttu-id="33dfe-108">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-108">This procedure uses the USRT demo company.</span></span>
+<span data-ttu-id="f2ffe-104">この手順では、補充ルールを作成するための手順を示します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-104">This procedure demonstrates the steps to create Replenishment rules.</span></span> <span data-ttu-id="f2ffe-105">クロスドッキングと集中的購買を実行するときに、補充ルールを製品の店舗への配分を管理するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-105">Replenishment rules can be used to control how products are distributed to stores when using Cross-docking and Buyer´s push.</span></span> <span data-ttu-id="f2ffe-106">補充ルールは、店舗または店舗グループに対して設定できます。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-106">Replenishment rules can be set up for stores or store groups.</span></span> <span data-ttu-id="f2ffe-107">ルールの行ごとに定義された重量によって、補充ルールをクロスドッキングまたは集中的購買で配分方法として使用する場合に、店舗間で配分される製品の数量が制御されます。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-107">The weight defined for each line in a rule will control how the quantities of products will get distributed between the stores when using Replenishment rules as the distribution method in Cross-docking or Buyer´s push.</span></span> <span data-ttu-id="f2ffe-108">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-108">This procedure uses the USRT demo company.</span></span>
 
-1. <span data-ttu-id="33dfe-109">[補充ルール] に移動します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-109">Go to Replenishment rules.</span></span>
-2. <span data-ttu-id="33dfe-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33dfe-110">Click New.</span></span>
-3. <span data-ttu-id="33dfe-111">[補充ルール] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-111">In the Replenishment rule field, type a value.</span></span>
-4. <span data-ttu-id="33dfe-112">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-112">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="33dfe-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33dfe-113">Click Save.</span></span>
-6. <span data-ttu-id="33dfe-114">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33dfe-114">Click Add.</span></span>
-7. <span data-ttu-id="33dfe-115">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="33dfe-115">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="33dfe-116">補充階層またはタイプのチャンネルを選択できます。</span><span class="sxs-lookup"><span data-stu-id="33dfe-116">You can choose Replenishment hierarchy or Channel for the type.</span></span> <span data-ttu-id="33dfe-117">この値によって、名前で選択した内容がチャンネルの階層または特定のチャンネルであるかが管理されます。</span><span class="sxs-lookup"><span data-stu-id="33dfe-117">The value controls whether the selection in Name will be a hierarchy of channels or a specific channel.</span></span>  <span data-ttu-id="33dfe-118">この例では、補充階層として設定を保持します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-118">For this example, leave it set as Replenishment hierarchy.</span></span>  
-8. <span data-ttu-id="33dfe-119">[名前] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-119">In the Name field, select a value.</span></span>
-    * <span data-ttu-id="33dfe-120">既定の重量の値は、倉庫で定義された重量から入力されます。</span><span class="sxs-lookup"><span data-stu-id="33dfe-120">The default weight value is populated from the weight defined on the warehouse.</span></span>  <span data-ttu-id="33dfe-121">この重量を補充ルールで使用できます。また、[重量] フィールドに新しい重量を入力できます。</span><span class="sxs-lookup"><span data-stu-id="33dfe-121">This weight can be used for the Replenishment rule or you can enter a new weight in the Weight field.</span></span>  
-9. <span data-ttu-id="33dfe-122">[重量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-122">In the Weight field, enter a number.</span></span>
-10. <span data-ttu-id="33dfe-123">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33dfe-123">Click Add.</span></span>
-11. <span data-ttu-id="33dfe-124">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="33dfe-124">In the list, mark the selected row.</span></span>
-12. <span data-ttu-id="33dfe-125">[タイプ] フィールドで [チャンネル] を選択します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-125">In the Type field, select 'Channel'.</span></span>
-13. <span data-ttu-id="33dfe-126">[名前] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-126">In the Name field, enter or select a value.</span></span>
-14. <span data-ttu-id="33dfe-127">[重量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="33dfe-127">In the Weight field, enter a number.</span></span>
-15. <span data-ttu-id="33dfe-128">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33dfe-128">Click Save.</span></span>
+1. <span data-ttu-id="f2ffe-109">[補充ルール] に移動します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-109">Go to Replenishment rules.</span></span>
+2. <span data-ttu-id="f2ffe-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-110">Click New.</span></span>
+3. <span data-ttu-id="f2ffe-111">[補充ルール] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-111">In the Replenishment rule field, type a value.</span></span>
+4. <span data-ttu-id="f2ffe-112">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="f2ffe-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-113">Click Save.</span></span>
+6. <span data-ttu-id="f2ffe-114">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-114">Click Add.</span></span>
+7. <span data-ttu-id="f2ffe-115">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-115">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="f2ffe-116">補充階層またはタイプのチャンネルを選択できます。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-116">You can choose Replenishment hierarchy or Channel for the type.</span></span> <span data-ttu-id="f2ffe-117">この値によって、名前で選択した内容がチャンネルの階層または特定のチャンネルであるかが管理されます。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-117">The value controls whether the selection in Name will be a hierarchy of channels or a specific channel.</span></span>  <span data-ttu-id="f2ffe-118">この例では、補充階層として設定を保持します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-118">For this example, leave it set as Replenishment hierarchy.</span></span>  
+8. <span data-ttu-id="f2ffe-119">[名前] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-119">In the Name field, select a value.</span></span>
+    * <span data-ttu-id="f2ffe-120">既定の重量の値は、倉庫で定義された重量から入力されます。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-120">The default weight value is populated from the weight defined on the warehouse.</span></span>  <span data-ttu-id="f2ffe-121">この重量を補充ルールで使用できます。また、[重量] フィールドに新しい重量を入力できます。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-121">This weight can be used for the Replenishment rule or you can enter a new weight in the Weight field.</span></span>  
+9. <span data-ttu-id="f2ffe-122">[重量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-122">In the Weight field, enter a number.</span></span>
+10. <span data-ttu-id="f2ffe-123">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-123">Click Add.</span></span>
+11. <span data-ttu-id="f2ffe-124">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-124">In the list, mark the selected row.</span></span>
+12. <span data-ttu-id="f2ffe-125">[タイプ] フィールドで [チャンネル] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-125">In the Type field, select 'Channel'.</span></span>
+13. <span data-ttu-id="f2ffe-126">[名前] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-126">In the Name field, enter or select a value.</span></span>
+14. <span data-ttu-id="f2ffe-127">[重量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-127">In the Weight field, enter a number.</span></span>
+15. <span data-ttu-id="f2ffe-128">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2ffe-128">Click Save.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
