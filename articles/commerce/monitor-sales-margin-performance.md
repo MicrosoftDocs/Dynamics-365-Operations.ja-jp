@@ -18,33 +18,36 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 51dc7c4b62a497e3dc9279b3c5a616057316c106
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d8d6a99e0ed3f331051d504e3a1ce2bd403cc17
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985889"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251310"
 ---
-# <a name="monitor-sales-and-margin-performance"></a><span data-ttu-id="9b546-103">販売と利益幅のパフォーマンスの監視</span><span class="sxs-lookup"><span data-stu-id="9b546-103">Monitor sales and margin performance</span></span>
+# <a name="monitor-sales-and-margin-performance"></a><span data-ttu-id="c8870-103">販売と利益幅のパフォーマンスの監視</span><span class="sxs-lookup"><span data-stu-id="c8870-103">Monitor sales and margin performance</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="9b546-104">Dynamics 365 Commerce を使用してリアルタイムに販売と利益幅のパフォーマンスを監視できます。</span><span class="sxs-lookup"><span data-stu-id="9b546-104">You can monitor sales and margin performance in real time using Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="c8870-104">Dynamics 365 Commerce を使用してリアルタイムに販売と利益幅のパフォーマンスを監視できます。</span><span class="sxs-lookup"><span data-stu-id="c8870-104">You can monitor sales and margin performance in real time using Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="9b546-105">Commerce の一部として、ユーザーは次の分析コードで販売と利益幅のパフォーマンスを組織階層のさまざまなレベルでリアル タイムに監視できます。</span><span class="sxs-lookup"><span data-stu-id="9b546-105">As part of Commerce, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:</span></span>
+<span data-ttu-id="c8870-105">Commerce の一部として、ユーザーは次の分析コードで販売と利益幅のパフォーマンスを組織階層のさまざまなレベルでリアル タイムに監視できます。</span><span class="sxs-lookup"><span data-stu-id="c8870-105">As part of Commerce, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:</span></span>
 
-- <span data-ttu-id="9b546-106">製品</span><span class="sxs-lookup"><span data-stu-id="9b546-106">Products</span></span>
-- <span data-ttu-id="9b546-107">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="9b546-107">Categories</span></span>
-- <span data-ttu-id="9b546-108">割引</span><span class="sxs-lookup"><span data-stu-id="9b546-108">Discounts</span></span>
-- <span data-ttu-id="9b546-109">期間を年とする</span><span class="sxs-lookup"><span data-stu-id="9b546-109">Years as time period</span></span>
-- <span data-ttu-id="9b546-110">登録/ターミナル</span><span class="sxs-lookup"><span data-stu-id="9b546-110">Registers/terminals</span></span>
-- <span data-ttu-id="9b546-111">スタッフ/従業員</span><span class="sxs-lookup"><span data-stu-id="9b546-111">Staff/employees</span></span>
-- <span data-ttu-id="9b546-112">顧客</span><span class="sxs-lookup"><span data-stu-id="9b546-112">Customers</span></span>
-- <span data-ttu-id="9b546-113">作業単位</span><span class="sxs-lookup"><span data-stu-id="9b546-113">Operating units</span></span>
+- <span data-ttu-id="c8870-106">製品</span><span class="sxs-lookup"><span data-stu-id="c8870-106">Products</span></span>
+- <span data-ttu-id="c8870-107">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="c8870-107">Categories</span></span>
+- <span data-ttu-id="c8870-108">割引</span><span class="sxs-lookup"><span data-stu-id="c8870-108">Discounts</span></span>
+- <span data-ttu-id="c8870-109">期間を年とする</span><span class="sxs-lookup"><span data-stu-id="c8870-109">Years as time period</span></span>
+- <span data-ttu-id="c8870-110">登録/ターミナル</span><span class="sxs-lookup"><span data-stu-id="c8870-110">Registers/terminals</span></span>
+- <span data-ttu-id="c8870-111">スタッフ/従業員</span><span class="sxs-lookup"><span data-stu-id="c8870-111">Staff/employees</span></span>
+- <span data-ttu-id="c8870-112">顧客</span><span class="sxs-lookup"><span data-stu-id="c8870-112">Customers</span></span>
+- <span data-ttu-id="c8870-113">作業単位</span><span class="sxs-lookup"><span data-stu-id="c8870-113">Operating units</span></span>
 
-<span data-ttu-id="9b546-114">また、階層グリッド構造を活用する 2 つの固有のレポートにより、ユーザーは既定の製品カテゴリ階層でトップ カテゴリ ノードからカテゴリの個々のリーフ ノードへドリル ダウンして、販売と利益幅のパフォーマンスを監視することができます。</span><span class="sxs-lookup"><span data-stu-id="9b546-114">Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default product category hierarchy.</span></span> <span data-ttu-id="9b546-115">ユーザーは、レポート用に既定の組織階層として定義された組織階層で、上位の作業単位から個々のチャンネルにドリルダウンすることもできます。</span><span class="sxs-lookup"><span data-stu-id="9b546-115">Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for reporting.</span></span> <span data-ttu-id="9b546-116">次の場所のいずれかからレポートを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="9b546-116">You can open the reports from any of the following locations:</span></span>
+<span data-ttu-id="c8870-114">また、階層グリッド構造を活用する 2 つの固有のレポートにより、ユーザーは既定の製品カテゴリ階層でトップ カテゴリ ノードからカテゴリの個々のリーフ ノードへドリル ダウンして、販売と利益幅のパフォーマンスを監視することができます。</span><span class="sxs-lookup"><span data-stu-id="c8870-114">Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default product category hierarchy.</span></span> <span data-ttu-id="c8870-115">ユーザーは、レポート用に既定の組織階層として定義された組織階層で、上位の作業単位から個々のチャンネルにドリルダウンすることもできます。</span><span class="sxs-lookup"><span data-stu-id="c8870-115">Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for reporting.</span></span> <span data-ttu-id="c8870-116">次の場所のいずれかからレポートを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="c8870-116">You can open the reports from any of the following locations:</span></span>
 
-- <span data-ttu-id="9b546-117">**店舗管理** ワークスペース &gt; **Retail および Commerce** &gt; **チャンネル** &gt; **店舗管理** &gt; **レポート**</span><span class="sxs-lookup"><span data-stu-id="9b546-117">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports**</span></span>
-- <span data-ttu-id="9b546-118">**カテゴリと製品の管理** ワークスペース &gt; **Retail および Commerce** &gt; **製品とカテゴリ** &gt; **店舗管理** &gt; **レポート**</span><span class="sxs-lookup"><span data-stu-id="9b546-118">**Category and product management** workspace &gt; **Retail and Commerce** &gt; **Product and categories** &gt; **Store management** &gt; **Reports**</span></span>
-- <span data-ttu-id="9b546-119">**価格設定および割引の管理** ワークスペース &gt; **Retail および Commerce** &gt; **価格決定と割引** &gt; **店舗管理** &gt; **レポート**</span><span class="sxs-lookup"><span data-stu-id="9b546-119">**Pricing and discount management** workspace &gt; **Retail and Commerce** &gt; **Pricing and discounts** &gt; **Store management** &gt; **Reports**</span></span>
-- <span data-ttu-id="9b546-120">**照会とレポート** セクション &gt; **Retail および Commerce** &gt; **照会とレポート** &gt; **売上レポート**</span><span class="sxs-lookup"><span data-stu-id="9b546-120">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
+- <span data-ttu-id="c8870-117">**店舗管理** ワークスペース &gt; **Retail および Commerce** &gt; **チャンネル** &gt; **店舗管理** &gt; **レポート**</span><span class="sxs-lookup"><span data-stu-id="c8870-117">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="c8870-118">**カテゴリと製品の管理** ワークスペース &gt; **Retail および Commerce** &gt; **製品とカテゴリ** &gt; **店舗管理** &gt; **レポート**</span><span class="sxs-lookup"><span data-stu-id="c8870-118">**Category and product management** workspace &gt; **Retail and Commerce** &gt; **Product and categories** &gt; **Store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="c8870-119">**価格設定および割引の管理** ワークスペース &gt; **Retail および Commerce** &gt; **価格決定と割引** &gt; **店舗管理** &gt; **レポート**</span><span class="sxs-lookup"><span data-stu-id="c8870-119">**Pricing and discount management** workspace &gt; **Retail and Commerce** &gt; **Pricing and discounts** &gt; **Store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="c8870-120">**照会とレポート** セクション &gt; **Retail および Commerce** &gt; **照会とレポート** &gt; **売上レポート**</span><span class="sxs-lookup"><span data-stu-id="c8870-120">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

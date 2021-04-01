@@ -17,44 +17,47 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4704dde64305bd285d9796cc161205709bd6e7ed
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 628110e62d30a717b243530367196aeaf930e3e3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988930"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256742"
 ---
-# <a name="post-with-derived-books"></a><span data-ttu-id="05f25-103">派生帳簿を転記する</span><span class="sxs-lookup"><span data-stu-id="05f25-103">Post with derived books</span></span>
+# <a name="post-with-derived-books"></a><span data-ttu-id="eacab-103">派生帳簿を転記する</span><span class="sxs-lookup"><span data-stu-id="eacab-103">Post with derived books</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="05f25-104">この記事は、派生帳簿を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="05f25-104">This article describes how to use derived books.</span></span>
+<span data-ttu-id="eacab-104">この記事は、派生帳簿を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="eacab-104">This article describes how to use derived books.</span></span>
 
-<span data-ttu-id="05f25-105">派生帳簿を含む帳簿のトランザクションを転記すると、派生帳簿トランザクションは仕訳帳、発注書、または自由書式の請求書に自動的に転記されます。</span><span class="sxs-lookup"><span data-stu-id="05f25-105">When you post transactions for a book that contains derived books, the derived book transactions are posted automatically in journals, purchase orders, or free text invoices.</span></span> <span data-ttu-id="05f25-106">ただし、[固定資産] 仕訳で基本帳簿トランザクションを作成した場合は、派生トランザクションを転記する前にその金額を表示および変更できます。</span><span class="sxs-lookup"><span data-stu-id="05f25-106">However, if you prepare the primary book transactions in the Fixed assets journal, you can view and modify the amounts of the derived transactions before you post them.</span></span>
--   <span data-ttu-id="05f25-107">売上税勘定、顧客勘定、仕入先勘定など一部の勘定は、基本帳簿の転記によって一度だけ更新されます。</span><span class="sxs-lookup"><span data-stu-id="05f25-107">Certain accounts, such as sales tax and customer or vendor accounts, are updated only once by postings of the primary book.</span></span> <span data-ttu-id="05f25-108">派生帳簿トランザクションは、[固定資産転記プロファイル] ページの派生帳簿で定義されている勘定に転記されます。</span><span class="sxs-lookup"><span data-stu-id="05f25-108">The derived book transactions are posted to the accounts that have been defined for the derived book in the Fixed asset posting profiles page.</span></span>
--   <span data-ttu-id="05f25-109">[取得] は、派生帳簿のトランザクション タイプとして頻繁に使用されます。</span><span class="sxs-lookup"><span data-stu-id="05f25-109">Acquisition is often used as the transaction type for the derived books.</span></span> <span data-ttu-id="05f25-110">帳簿および派生帳簿を固定資産の取得時から固定資産に適用する必要がある場合は、このタイプを使用します。</span><span class="sxs-lookup"><span data-stu-id="05f25-110">You use this when the book and the derived book should be applied to the fixed asset from the time of the acquisition of the fixed asset.</span></span>
--   <span data-ttu-id="05f25-111">トランザクション タイプの他の値も適用できます。</span><span class="sxs-lookup"><span data-stu-id="05f25-111">Other values for the transaction type can also apply.</span></span> <span data-ttu-id="05f25-112">たとえば、帳簿および派生帳簿の売却および処分の間隔が同一である場合は、すべての固定資産トランザクション タイプを派生帳簿の設定に使用できます。</span><span class="sxs-lookup"><span data-stu-id="05f25-112">For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.</span></span>
+<span data-ttu-id="eacab-105">派生帳簿を含む帳簿のトランザクションを転記すると、派生帳簿トランザクションは仕訳帳、発注書、または自由書式の請求書に自動的に転記されます。</span><span class="sxs-lookup"><span data-stu-id="eacab-105">When you post transactions for a book that contains derived books, the derived book transactions are posted automatically in journals, purchase orders, or free text invoices.</span></span> <span data-ttu-id="eacab-106">ただし、[固定資産] 仕訳で基本帳簿トランザクションを作成した場合は、派生トランザクションを転記する前にその金額を表示および変更できます。</span><span class="sxs-lookup"><span data-stu-id="eacab-106">However, if you prepare the primary book transactions in the Fixed assets journal, you can view and modify the amounts of the derived transactions before you post them.</span></span>
+-   <span data-ttu-id="eacab-107">売上税勘定、顧客勘定、仕入先勘定など一部の勘定は、基本帳簿の転記によって一度だけ更新されます。</span><span class="sxs-lookup"><span data-stu-id="eacab-107">Certain accounts, such as sales tax and customer or vendor accounts, are updated only once by postings of the primary book.</span></span> <span data-ttu-id="eacab-108">派生帳簿トランザクションは、[固定資産転記プロファイル] ページの派生帳簿で定義されている勘定に転記されます。</span><span class="sxs-lookup"><span data-stu-id="eacab-108">The derived book transactions are posted to the accounts that have been defined for the derived book in the Fixed asset posting profiles page.</span></span>
+-   <span data-ttu-id="eacab-109">[取得] は、派生帳簿のトランザクション タイプとして頻繁に使用されます。</span><span class="sxs-lookup"><span data-stu-id="eacab-109">Acquisition is often used as the transaction type for the derived books.</span></span> <span data-ttu-id="eacab-110">帳簿および派生帳簿を固定資産の取得時から固定資産に適用する必要がある場合は、このタイプを使用します。</span><span class="sxs-lookup"><span data-stu-id="eacab-110">You use this when the book and the derived book should be applied to the fixed asset from the time of the acquisition of the fixed asset.</span></span>
+-   <span data-ttu-id="eacab-111">トランザクション タイプの他の値も適用できます。</span><span class="sxs-lookup"><span data-stu-id="eacab-111">Other values for the transaction type can also apply.</span></span> <span data-ttu-id="eacab-112">たとえば、帳簿および派生帳簿の売却および処分の間隔が同一である場合は、すべての固定資産トランザクション タイプを派生帳簿の設定に使用できます。</span><span class="sxs-lookup"><span data-stu-id="eacab-112">For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="05f25-113">派生帳簿に転記する減価償却額は、基本帳簿に転記した金額と同じになります。</span><span class="sxs-lookup"><span data-stu-id="05f25-113">Depreciation posted in the derived book will be the same amount as was posted for the primary book.</span></span> <span data-ttu-id="05f25-114">これらの帳簿間で減価償却方法が異なる場合は、派生プロセスを使用して減価償却トランザクションを生成しないでください。</span><span class="sxs-lookup"><span data-stu-id="05f25-114">If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process.</span></span> |
+> <span data-ttu-id="eacab-113">派生帳簿に転記する減価償却額は、基本帳簿に転記した金額と同じになります。</span><span class="sxs-lookup"><span data-stu-id="eacab-113">Depreciation posted in the derived book will be the same amount as was posted for the primary book.</span></span> <span data-ttu-id="eacab-114">これらの帳簿間で減価償却方法が異なる場合は、派生プロセスを使用して減価償却トランザクションを生成しないでください。</span><span class="sxs-lookup"><span data-stu-id="eacab-114">If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="05f25-115">例</span><span class="sxs-lookup"><span data-stu-id="05f25-115">Example</span></span> 
-<span data-ttu-id="05f25-116">ここでは、派生帳簿機能を使用して取得トランザクションを設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="05f25-116">The following information describes how to set up acquisition transactions with the derived book functionality.</span></span>
+## <a name="example"></a><span data-ttu-id="eacab-115">例</span><span class="sxs-lookup"><span data-stu-id="eacab-115">Example</span></span> 
+<span data-ttu-id="eacab-116">ここでは、派生帳簿機能を使用して取得トランザクションを設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="eacab-116">The following information describes how to set up acquisition transactions with the derived book functionality.</span></span>
 
-1.  <span data-ttu-id="05f25-117">[帳簿] ページの帳簿を作成します。</span><span class="sxs-lookup"><span data-stu-id="05f25-117">Create the books on the Books page.</span></span>
-    -   <span data-ttu-id="05f25-118">会計用の帳簿: VM 1、現在の転記階層</span><span class="sxs-lookup"><span data-stu-id="05f25-118">The book for accounting: VM 1, Current posting layer</span></span>
-    -   <span data-ttu-id="05f25-119">税務用の帳簿: VM 2、税の転記階層</span><span class="sxs-lookup"><span data-stu-id="05f25-119">The book for tax purposes: VM 2, Tax posting layer</span></span>
+1.  <span data-ttu-id="eacab-117">[帳簿] ページの帳簿を作成します。</span><span class="sxs-lookup"><span data-stu-id="eacab-117">Create the books on the Books page.</span></span>
+    -   <span data-ttu-id="eacab-118">会計用の帳簿: VM 1、現在の転記階層</span><span class="sxs-lookup"><span data-stu-id="eacab-118">The book for accounting: VM 1, Current posting layer</span></span>
+    -   <span data-ttu-id="eacab-119">税務用の帳簿: VM 2、税の転記階層</span><span class="sxs-lookup"><span data-stu-id="eacab-119">The book for tax purposes: VM 2, Tax posting layer</span></span>
 
-2.  <span data-ttu-id="05f25-120">[VM 1] で、[派生帳簿] タブをクリックします。[帳簿] フィールドで [VM 2] を、[トランザクション タイプ] フィールドで [取得] を選択します。</span><span class="sxs-lookup"><span data-stu-id="05f25-120">On VM 1, click the Derived books tab. Select VM 2 in the Book field, and Acquisition in the Transaction type field.</span></span>
+2.  <span data-ttu-id="eacab-120">[VM 1] で、[派生帳簿] タブをクリックします。[帳簿] フィールドで [VM 2] を、[トランザクション タイプ] フィールドで [取得] を選択します。</span><span class="sxs-lookup"><span data-stu-id="eacab-120">On VM 1, click the Derived books tab. Select VM 2 in the Book field, and Acquisition in the Transaction type field.</span></span>
 
-<span data-ttu-id="05f25-121">これにより、特定の固定資産に帳簿を関連付けることができるようになります。</span><span class="sxs-lookup"><span data-stu-id="05f25-121">The books then can be attached to specific fixed assets.</span></span> 
+<span data-ttu-id="eacab-121">これにより、特定の固定資産に帳簿を関連付けることができるようになります。</span><span class="sxs-lookup"><span data-stu-id="eacab-121">The books then can be attached to specific fixed assets.</span></span> 
 
-<span data-ttu-id="05f25-122">帳簿 VM1 を使用して固定資産の取得を転記すると、VM 1 だけでなく派生帳簿 VM 2 にもその取得が転記されます。</span><span class="sxs-lookup"><span data-stu-id="05f25-122">When an acquisition is posted for a fixed asset with book VM 1, the acquisition is posted not only on VM 1, but also on the derived book VM 2.</span></span> <span data-ttu-id="05f25-123">両方の固定資産帳簿のステータスが [未処理] に更新されます。</span><span class="sxs-lookup"><span data-stu-id="05f25-123">The status of both fixed asset books is updated to Open.</span></span>
+<span data-ttu-id="eacab-122">帳簿 VM1 を使用して固定資産の取得を転記すると、VM 1 だけでなく派生帳簿 VM 2 にもその取得が転記されます。</span><span class="sxs-lookup"><span data-stu-id="eacab-122">When an acquisition is posted for a fixed asset with book VM 1, the acquisition is posted not only on VM 1, but also on the derived book VM 2.</span></span> <span data-ttu-id="eacab-123">両方の固定資産帳簿のステータスが [未処理] に更新されます。</span><span class="sxs-lookup"><span data-stu-id="eacab-123">The status of both fixed asset books is updated to Open.</span></span>
 
 > [!NOTE]                                                                                                         
-> <span data-ttu-id="05f25-124">派生帳簿を使用しない場合は、帳簿 VM 1 および帳簿 VM 2 の両方に対して固定資産の取得を転記する必要があります。</span><span class="sxs-lookup"><span data-stu-id="05f25-124">If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.</span></span>
+> <span data-ttu-id="eacab-124">派生帳簿を使用しない場合は、帳簿 VM 1 および帳簿 VM 2 の両方に対して固定資産の取得を転記する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eacab-124">If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.</span></span>
 
-<span data-ttu-id="05f25-125">詳細については、「[派生帳簿](derived-books.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05f25-125">For more information, see [Derived books](derived-books.md)</span></span>
+<span data-ttu-id="eacab-125">詳細については、「[派生帳簿](derived-books.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eacab-125">For more information, see [Derived books](derived-books.md)</span></span>
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
