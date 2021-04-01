@@ -1,9 +1,9 @@
 ---
 title: 出荷先住所モジュール
-description: このトピックでは、支払いモジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+description: このトピックでは、出荷先住所モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6a5eb69c7746be419779b1a844ee35ec375a324c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e590c966ca6bd8111df5f91cbac0485afaa45c78
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985639"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234416"
 ---
-# <a name="shipping-address-module"></a>発送先住所モジュール
+# <a name="shipping-address-module"></a>出荷先住所モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、支払いモジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
-
-## <a name="overview"></a>概要
+このトピックでは、出荷先住所モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
 
 出荷先住所モジュールにより、顧客がチェックアウト フロー中に注文の出荷先住所を追加または選択できます。 顧客がサインインしている場合、その顧客用に以前に保存されたすべての住所が表示され、そこから選ぶことができます。 顧客は、新しい住所を追加することもできます。 出荷先住所モジュールは、出荷を必要とする注文のすべての品目に対して使用されます。
 
@@ -49,6 +47,8 @@ Commerce 本社では、国や地域ごとに送付先住所の形式を定義�
 |---------------|--------|-------------|
 | ヘッダー | ヘッダー テキストとヘッダー タグ (**H1**、**H2**、**H3**、**H4**、**H5**、または **H6**) | 出荷先住所モジュールのオプション ヘッダー。 |
 | 住所タイプを表示する | **True** または **False** | このオプションのプロパティが **True** に設定されている場合は、**自宅** や **勤務先** などの住所タイプが表示されます。 住所タイプが指定されていない場合、住所は **タイプ**=**その他** として自動的に保存され ます。 |
+| 自動提案の有効化| **True** または **False** | このオプションのプロパティが **True** に設定されている場合は、住所の自動提案が提供されます。 これらの提案は、Bing Maps を利用しています。 サイトに Bing Maps を統合する設定方法の詳細については、[店舗のセレクター モジュール](store-selector.md) を参照してください。 この機能は、Commerce バージョン 10.0.15 リリース以降で使用できます。|
+|自動提案のオプション| 数| 住所の自動提案が有効になっている場合は、提供する必要のある提案の最大数など、追加のオプションを指定できます。|
 
 ## <a name="add-a-shipping-address-module-to-a-checkout-page-and-set-the-required-properties"></a>精算ページに出荷先住所モジュールを追加して必要なプロパティを設定する
 
@@ -68,9 +68,11 @@ Commerce 本社では、国や地域ごとに送付先住所の形式を定義�
 
 [集荷情報モジュール](pickup-info-module.md)
 
-[注文詳細のモジュール](order-confirmation-module.md)
+[注文詳細モジュール](order-confirmation-module.md)
 
 [ギフト カード モジュール](add-giftcard.md)
+
+[店舗セレクター モジュール](store-selector.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

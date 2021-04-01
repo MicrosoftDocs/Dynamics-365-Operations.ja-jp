@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 540e660a9a48350c4eb331c4aac54ded94416718
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ab554c09dcd02165582aa198a74ee82cee6e195e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964488"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236167"
 ---
 # <a name="depreciation-of-fixed-assets-with-reduction-entry-posted"></a>圧縮記帳の転記が存在する固定資産の減価償却
 

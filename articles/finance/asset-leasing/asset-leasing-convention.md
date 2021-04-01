@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea89d54f1ce3a1e971d41623bf44f909f7dfdf09
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 7072c34ccbffc6bf135f55fd594cac4d9ea5a463
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5131293"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237519"
 ---
 # <a name="asset-leasing-conventions"></a>資産リース規則
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックは、リース資産の規則について説明します。 リース規則は、リース帳簿の開始日を決定するために使用されます。 リース規則が **なし** に設定されている場合、開始日はリースの開始日と同じになります (**リース開始日** フィールドの値)。 リース規則が **満 1 か月** 設定されている場合、開始日はリースを開始した月の最初の日になります。
 

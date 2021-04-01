@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4b3440c046ff055c8afa012c80c56aba741fef27
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fcb0c2317315308de51d8247d23a930f10c3de6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985564"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234296"
 ---
 # <a name="module-library-overview"></a>モジュール ライブラリの概要
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce モジュール ライブラリの概要を表示します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce モジュール ライブラリは、E コマース Web サイトを構築するために使用できるモジュールの集合です。 モジュールには、ユーザー インターフェイス (UI) の側面と機能的動作の側面の両方があります。
 

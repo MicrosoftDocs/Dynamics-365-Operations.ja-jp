@@ -1,6 +1,6 @@
 ---
 title: "\"同じような説明を探す\" 推奨事項の有効化"
-description: このトピックでは、Microsoft Dynamics 365 Commerce で、製品推奨 「類似した説明を探す」 を有効にする方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce で、"同じような説明を探す" 製品推奨事項を有効にする方法について説明します。
 author: bsokolov
 manager: AnnBe
 ms.date: 01/13/2021
@@ -18,18 +18,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b3b7abf47a3bdacaa4b91ae32b68a809a84b0b1d
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: b6b397b1f21e3dfcdb4a2b7fe67ddb541d090a97
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5098636"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234392"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>"同じような説明を探す" 推奨事項の有効化
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で、製品推奨 「類似した説明を探す」 を有効にする方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce で、"同じような説明を探す" 製品推奨事項を有効にする方法について説明します。
 
 Dynamics 365 Commerce の「類似した説明を探す」 のおすすめ候補機能は、人工知能と機械学習 (AI-ML) を使って、顧客が探しているものと似たような記述のある商品を推奨してくれます。 Commerce のすべての小売チャネルで「類似した説明を探す」のおすすめ候補を利用できるようにすることで、小売業者は顧客が欲しいものを簡単に見つけることができます。
 
