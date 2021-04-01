@@ -1,6 +1,6 @@
 ---
 title: 電子商取引サイトの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce における電子商取引サイトのサポートの概要について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce における eコマース サイトのサポートの概要について説明します。
 author: bicyclingfool
 manager: AnnBe
 ms.date: 11/05/2020
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ae220e98acbda99255beefea598d973dbaa22368
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 53bce671d6aca35335a3b3ef557a94fa60da1edc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997550"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251190"
 ---
 # <a name="e-commerce-site-overview"></a>eコマース サイトの概要
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce における電子商取引サイトのサポートの概要について説明します。 これには、Dynamics 365 Commerce で電子商取引オンライン ストアが初期化および管理される方法に関する情報が含まれています。 また、オンラインストア、および電子商取引サイトの設定と構成の方法に関する詳細情報へのリンクも提供します。 このトピックでは、多くの基本的な概念について説明しますが、生産的な電子商取引サイトの設定に必要なものすべてについては説明しません。 詳細なトピックについては、Dynamics 365 Commerce ドキュメントを参照してください。
+このトピックでは、Microsoft Dynamics 365 Commerce における eコマース サイトのサポートの概要について説明します。 これには、Dynamics 365 Commerce で電子商取引オンライン ストアが初期化および管理される方法に関する情報が含まれています。 また、オンラインストア、および電子商取引サイトの設定と構成の方法に関する詳細情報へのリンクも提供します。 このトピックでは、多くの基本的な概念について説明しますが、生産的な電子商取引サイトの設定に必要なものすべてについては説明しません。 詳細なトピックについては、Dynamics 365 Commerce ドキュメントを参照してください。
 
 ## <a name="online-store-channel"></a>オンライン ストア チャネル
 

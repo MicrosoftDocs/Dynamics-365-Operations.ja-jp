@@ -1,6 +1,6 @@
 ---
 title: マップ モジュール
-description: このトピックでは、マップ モジュールを取り上げ、 Microsoft Dynamics 365 Commerce での構成方法について説明します。
+description: このトピックでは、マップ モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -17,21 +17,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e93358a9c76e8eb7bfb4ade4f772dece2aa5f7d3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 74991a2979540dab344f39976005250637fab29c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982494"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252585"
 ---
-# <a name="map-module"></a>マップ モジュール
+# <a name="map-module"></a>地図モジュール
 
 [!include [banner](includes/banner.md)]
 
 
-このトピックでは、マップ モジュールを取り上げ、 Microsoft Dynamics 365 Commerce での構成方法について説明します。
-
-## <a name="overview"></a>概要
+このトピックでは、マップ モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 
 マップ モジュールは、[Bing Maps V8 Web コントロール](https://docs.microsoft.com/bingmaps/v8-web-control/) を使用してレンダリングされるインタラクティブなマップ上の店舗の場所を示します。 Bing Maps API キーは必須で、Commerce 本社の共有パラメータ ページに追加する必要があります。 マップ モジュールには、マップの場所を表示するためにユーザーが選択できる、道路、航空写真、路上などのさまざまなビューが用意されています。 また、ズームやユーザーの位置の使用などの操作も可能になります。
 
