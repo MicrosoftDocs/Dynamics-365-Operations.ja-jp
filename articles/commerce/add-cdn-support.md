@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985957"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582722"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>コンテンツ配信ネットワーク (CDN) のサポートの追加
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce 環境にコンテンツ配信ネットワーク (CDN) を追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce の E コマース環境を設定すると、CDN サービスと連携するようにコンフィギュレーションできます。 
 
@@ -96,8 +93,8 @@ Azure Front Door Service でルート指定ルールを設定するには、次�
 1. **名前** フィールドに、**既定** と入力します。
 1. **承認済プロトコル** フィールドで、**HTTP と HTTPS** を選択します。
 1. **フロントエンド ホスト** フィールドで、**dynamics-ecom-tenant-name.azurefd.net** を入力します。
-1. **照合するパターン** の、上のフィールドで、**/\** _ と入力します。
-1. **工順の詳細** で、**工順タイプ** オプションを **次** に設定します。
+1. **照合するパターン** の、上のフィールドで、**/\*** と入力します。
+1. **工順の詳細** で、**工順タイプ** オプションを **転送** に設定します。
 1. **バックエンド プール** フィールドで、**ecom-backend** を選択します。
 1. **転送プロトコル** フィールド グループで、**照合要求** オプションを選択します。 
 1. **URL Rewrite** オプションを **無効** に設定します。
@@ -109,8 +106,8 @@ Azure Front Door Service でキャッシュ ルールを設定するには、次
 1. **名前** フィールドに、**静的** と入力します。
 1. **承認済プロトコル** フィールドで、**HTTP と HTTPS** を選択します。
 1. **フロントエンド ホスト** フィールドで、**dynamics-ecom-tenant-name.azurefd.net** を入力します。
-1. **照合するパターン** の、上のフィールドで、**/\_msdyn365/\_scnr/\** _ と入力します。
-1. **工順の詳細** で、**工順タイプ** オプションを **次** に設定します。
+1. **照合するパターン** の、上のフィールドで、**/\_msdyn365/\_scnr/\*** と入力します。
+1. **工順の詳細** で、**工順タイプ** オプションを **転送** に設定します。
 1. **バックエンド プール** フィールドで、**ecom-backend** を選択します。
 1. **転送プロトコル** フィールド グループで、**照合要求** オプションを選択します。
 1. **URL Rewrite** オプションを **無効** に設定します。
@@ -143,25 +140,7 @@ Azure Front Door にカスタムドメインを追加する方法の詳細につ
 
 ## <a name="additional-resources"></a>追加リソース
 
-[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
-
-[新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
-
-[E コマース サイトの作成](create-ecommerce-site.md)
-
-[オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
-
-[robots.txt ファイルの管理](manage-robots-txt-files.md)
-
-[URL リダイレクトの一括アップロード](upload-bulk-redirects.md)
-
-[B2C テナントを Commerce に 設定](set-up-B2C-tenant.md)
-
-[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
-
-[Commerce 環境での複数の B2C テナントのコンフィギュレーション](configure-multi-B2C-tenants.md)
-
-[場所に基づく店舗検出の有効化](enable-store-detection.md)
+[コンテンツ配信ネットワークの実装オプション](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

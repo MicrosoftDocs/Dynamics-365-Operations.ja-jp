@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
-ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
+ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "5131796"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500577"
 ---
 # <a name="creating-work-orders"></a>作業指示書の作成
 
@@ -62,8 +62,7 @@ ms.locfileid: "5131796"
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>メンテナンス計画の実行中に自動的に作成される作業指示書明細行のグループ化
 
-> [!IMPORTANT]
-> このセクションに記載されている機能は、プレビュー リリースの一部として提供されます。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[1 つのバージョンのサービス更新に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version)を参照してください。
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 この機能を使用すると、システムがメンテナンス計画に基づいて作業指示書が自動的に生成されるように設定されている場合に、1 つの作業指示書に作業指示書明細行をグループ化するためのルールを定義できます。 以前は、自動生成された作業指示書には、1 行しか含めることができませんでした。 ただし、作業指示書を資産、資産タイプ、または機能の場所などによってグループ化できるようになりました。 (このトピックの前のセクションで説明したように、手動生成された作業指示書は、この方法で既にグループ化されている場合があります。)
 

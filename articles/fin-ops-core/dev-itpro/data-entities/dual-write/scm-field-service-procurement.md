@@ -6,7 +6,6 @@ manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c2b0d5be38425b5ceebb38b7964f5ec600b1c838
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 79a971e3de43cb0161d4ac5012f657a947bc567c
+ms.sourcegitcommit: afbdc268bcdb1755d7f1bc79ad1b7fc801b2e2f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141907"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5579975"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Supply Chain Management と Field Service の間の調達の統合
 
@@ -47,8 +46,8 @@ Microsoft Dynamics 365 Supply Chain Management は、信頼性の高い調達機
 
 ### <a name="prerequisites"></a>必要条件
 
-+ **デュアル書き込み** – 詳細については、[デュアル書き込みホームページ](dual-write-home-page.md#dual-write-setup) をご覧ください。
-+ **Dynamics 365 Field Service** – 詳細については、[Dynamics 365 Field Service のインストール方法](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service) をご覧ください。
+- **デュアル書き込み** – 詳細については、[デュアル書き込みホームページ](dual-write-home-page.md#dual-write-setup) をご覧ください。
+- **Dynamics 365 Field Service** – 詳細については、[Dynamics 365 Field Service のインストール方法](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service) をご覧ください。
 
 この機能が  Microsoft Dataverse で有効な場合は、デュアル書き込みおよび Field Service により、新しいメタデータ、フォーム、ビュー、ロジックで環境を拡張する複数のソリューション レイヤーが導入されます。 これらのソリューションは、任意の順序で有効にできます。通常、次の順序でインストールします。
 
@@ -57,8 +56,8 @@ Microsoft Dynamics 365 Supply Chain Management は、信頼性の高い調達機
 3. **Supply Chain Management Extended** - 環境でデュアル 書き込みを有効にすると、Supply Chain Management Extended が自動的にインストールされます。 
 4. **One GIFSCM ソリューション** - One GIFSCM は、どちらかのソリューション (Field Service または Supply Chain Management) が最後にインストールするソリューション によって自動的にインストールされます。
 
-    + Field Service が既に環境にインストールされている場合に、Supply Chain Management Extended をインストールするデュアル書き込みを有効にした場合は、OneFSSCM がインストールされます。
-    + Supply Chain Management Extended が既に環境にインストールされている場合に、Field Service をインストールする場合は、OneFSSCM がインストールされます。
+    - Field Service が既に環境にインストールされている場合に、Supply Chain Management Extended をインストールするデュアル書き込みを有効にした場合は、OneFSSCM がインストールされます。
+    - Supply Chain Management Extended が既に環境にインストールされている場合に、Field Service をインストールする場合は、OneFSSCM がインストールされます。
 
 ## <a name="initial-synchronization"></a>初期同期
 
@@ -124,22 +123,22 @@ One GIFSCM がインストールされている場合は、Field Service and Sup
 
 ## <a name="supported-scenarios"></a>サポートされているシナリオ
 
-+ 発注書は、Dataverse ユーザーが作成および更新できます。 ただし、このプロセスとデータは Supply Chain Management で制御されます。 Supply Chain Management の発注書列の更新に対する制約は、Field Service からの更新の場合に適用されます。 たとえば、発注書が確定した場合は更新できない場合があります。 
-+ Supply Chain Management で発注書が変更管理によって制御される場合、Field Service ユーザーは、Supply Chain Management の承認ステータスが *ドラフト* の場合にのみ発注書を更新 できます。
-+ いくつかの列は Supply Chain Management でのみ管理され、Field Service で更新できません。 更新できない列については、製品のマッピング テーブルを確認してください。 便宜上、多くの列では、Dataverse ページ上で読み取り専用に設定されています。 
+- 発注書は、Dataverse ユーザーが作成および更新できます。 ただし、このプロセスとデータは Supply Chain Management で制御されます。 Supply Chain Management の発注書列の更新に対する制約は、Field Service からの更新の場合に適用されます。 たとえば、発注書が確定した場合は更新できない場合があります。 
+- Supply Chain Management で発注書が変更管理によって制御される場合、Field Service ユーザーは、Supply Chain Management の承認ステータスが *ドラフト* の場合にのみ発注書を更新 できます。
+- いくつかの列は Supply Chain Management でのみ管理され、Field Service で更新できません。 更新できない列については、製品のマッピング テーブルを確認してください。 便宜上、多くの列では、Dataverse ページ上で読み取り専用に設定されています。 
 
     たとえば、価格情報の列は Supply Chain Management によって管理されます。 Supply Chain Management には、Field Service の特典を提供する取引契約があります。 **単価**、**割引**、**正味金額** などの列は、Supply Chain Management からのみ表示されます。 価格が Field Service と同期を行う場合は、発注書データを入力するときに、Dataverse で **発注書** ページと **発注書製品** ページの **同期** 機能を使用する必要があります。 詳細については、[オンデマンドの Dynamics 365 Supply Chain Management 調達データでの同期](#sync-procurement) を参照してください。
 
-+ Supply Chain Management には発注書の最新の合計はないので、**合計** 列は Field Service でのみ使用できます。 Supply Chain Management の合計は、Field Service で使用できない複数のパラメータに基づいて計算されます。
-+ 調達カテゴリだけが指定されている発注書明細行、または指定された製品が *サービス* 製品タイプまたは Field Service 製品タイプの品目である場合は、Supply Chain Management でのみ開始できます。 明細行が同期され、Field Service で Dataverse に表示されます。
-+ Supply Chain Management ではなく Field Service だけがインストールされている場合、発注書では **倉庫** 列は必須です。 ただし、Supply Chain Management がインストールされている場合、特定の状況で倉庫が指定されていない発注書明細行は Supply Chain Management によって許可されるので、この要件は大きではありません。
-+ 製品受領 (Dataverse での発注書受領) は Supply Chain Management によって管理され、Supply Chain Management がインストールされている場合 Dataverse は作成できません。 Supply Chain Management からの製品受領は、Supply Chain Management から Dataverse へと同期されます。
-+ Supply Chain Management では過小配送が許可されています。 One GIFSCM ソリューションは、過小配送シナリオで注文中の残りの数量を調整するために、製品受領ライン (または Dataverse での発注書受領製品) が Dataverse で作成または更新されると、在庫仕訳帳行を作成して調整するロジックを追加します。
+- Supply Chain Management には発注書の最新の合計はないので、**合計** 列は Field Service でのみ使用できます。 Supply Chain Management の合計は、Field Service で使用できない複数のパラメータに基づいて計算されます。
+- 調達カテゴリだけが指定されている発注書明細行、または指定された製品が *サービス* 製品タイプまたは Field Service 製品タイプの品目である場合は、Supply Chain Management でのみ開始できます。 明細行が同期され、Field Service で Dataverse に表示されます。
+- Supply Chain Management ではなく Field Service だけがインストールされている場合、発注書では **倉庫** 列は必須です。 ただし、Supply Chain Management がインストールされている場合、特定の状況で倉庫が指定されていない発注書明細行は Supply Chain Management によって許可されるので、この要件は大きではありません。
+- 製品受領 (Dataverse での発注書受領) は Supply Chain Management によって管理され、Supply Chain Management がインストールされている場合 Dataverse は作成できません。 Supply Chain Management からの製品受領は、Supply Chain Management から Dataverse へと同期されます。
+- Supply Chain Management では過小配送が許可されています。 One GIFSCM ソリューションは、過小配送シナリオで注文中の残りの数量を調整するために、製品受領ライン (または Dataverse での発注書受領製品) が Dataverse で作成または更新されると、在庫仕訳帳行を作成して調整するロジックを追加します。
 
 ## <a name="unsupported-scenarios"></a>サポートされないシナリオ
 
-+ Field Service は、Supply Chain Management でキャンセルされた発注書に明細行が追加されるのを防ぎます。 Field Service で発注書のシステム ステータスを変更し、その新しい行を Field Service または Supply Chain Management に追加することができます。
-+ 調達行は両方のシステムの在庫レベルに影響を与えるが、この統合は Supply Chain Management と Field Service での在庫配置を保証しません。 Field Service と Supply Chain Management は両方とも、在庫レベルを更新するその他のプロセスがあります。 これらのプロセスは調達の範囲を外しています。
+- Field Service は、Supply Chain Management でキャンセルされた発注書に明細行が追加されるのを防ぎます。 Field Service で発注書のシステム ステータスを変更し、その新しい行を Field Service または Supply Chain Management に追加することができます。
+- 調達行は両方のシステムの在庫レベルに影響を与えるが、この統合は Supply Chain Management と Field Service での在庫配置を保証しません。 Field Service と Supply Chain Management は両方とも、在庫レベルを更新するその他のプロセスがあります。 これらのプロセスは調達の範囲を外しています。
 
 ## <a name="status-management"></a>状態管理
 
@@ -161,13 +160,13 @@ Field Service での発注書の状態は、Supply Chain Management の状態と
 
 状態の列には次のルールが適用されます。
 
-+ Supply Chain Management の状態は、Field Service から更新されません。 ただし、Supply Chain Management の発注書の状態が変更された場合は、Field Service の状態が更新される場合があります。
-+ Supply Chain Management の発注書の変更管理が進行中で、変更の処理中の場合、承認ステータスは *ドラフト* または *確認中* になります。 この場合、Field Service の承認の状態は *Null* に設定されます。
-+ Supply Chain Management の発注書の承認ステータスが *承認済*、*外部レビュー*、*確認済*、または *[終了済]* に設定されている場合は、Field Service 発注書の承認状態が *承認済* に設定されます。
-+ Supply Chain Management の発注書の承認状態が *拒否済* に設定されている場合、Field Service 発注書の承認状態が *拒否済* に設定されます。
-+ Supply Chain Management のドキュメント ヘッダーの状態が *オープン注文 (バックオーダー)* に変更され、Field Service 発注書の状態が *ドラフト* または *キャンセル済* になった場合は、Field Service 発注書の状態が *提出済* に変更されます。
-+ Supply Chain Management のドキュメント ヘッダーの状態が *キャンセル済* に変更され、Field Service の発注書受領製品が 発注書に (発注書製品を介して) 関連付けられている場合、Field Service システム状態が *キャンセル済* に設定されます。
-+ Supply Chain Management の発注書明細行の状態が *キャンセル済* の場合は、Field Service の発注書製品の状態が *キャンセル済* に設定されます。 また、Supply Chain Management の発注書明細行の状態が *キャンセル済* から *バックオーダー* に変更された場合は、Field Service の発注書製品品目ステータスが *保留中* に設定されます。
+- Supply Chain Management の状態は、Field Service から更新されません。 ただし、Supply Chain Management の発注書の状態が変更された場合は、Field Service の状態が更新される場合があります。
+- Supply Chain Management の発注書の変更管理が進行中で、変更の処理中の場合、承認ステータスは *ドラフト* または *確認中* になります。 この場合、Field Service の承認の状態は *Null* に設定されます。
+- Supply Chain Management の発注書の承認ステータスが *承認済*、*外部レビュー*、*確認済*、または *[終了済]* に設定されている場合は、Field Service 発注書の承認状態が *承認済* に設定されます。
+- Supply Chain Management の発注書の承認状態が *拒否済* に設定されている場合、Field Service 発注書の承認状態が *拒否済* に設定されます。
+- Supply Chain Management のドキュメント ヘッダーの状態が *オープン注文 (バックオーダー)* に変更され、Field Service 発注書の状態が *ドラフト* または *キャンセル済* になった場合は、Field Service 発注書の状態が *提出済* に変更されます。
+- Supply Chain Management のドキュメント ヘッダーの状態が *キャンセル済* に変更され、Field Service の発注書受領製品が 発注書に (発注書製品を介して) 関連付けられている場合、Field Service システム状態が *キャンセル済* に設定されます。
+- Supply Chain Management の発注書明細行の状態が *キャンセル済* の場合は、Field Service の発注書製品の状態が *キャンセル済* に設定されます。 また、Supply Chain Management の発注書明細行の状態が *キャンセル済* から *バックオーダー* に変更された場合は、Field Service の発注書製品品目ステータスが *保留中* に設定されます。
 
 ## <a name="sync-with-the-supply-chain-management-procurement-data-on-demand"></a><a id="sync-procurement"></a>Supply Chain Management の調達データオンデマンドとの同期
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988484"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592649"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>メキシコ向け電子請求のアドオンの使用を開始する
 
@@ -291,7 +291,7 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
     ![提出書類の取り消しログの詳細を表示する](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>プライバシー通知
-MX-00010 と MX-00016 (CFDI 請求書と CFDI 取消) 機能を有効にするには、組織の税務登録 ID を含むデータを送信する必要があります。 これは、政府の web サービスとの統合に必要な所定の形式で、この税務当局に電子請求書を送信する目的で、税務当局から権限を与えられた第三者機関に送信されます。 管理者は、**組織管理 \> 設定 \>電子ドキュメント パラメータ** に移動して、MX-00010 および MX-00016 (CFDI 請求書と CFDI 取消) 機能を有効、または無効にすることができ ます。 **機能** タブを選択し 、MX-00010 と MX-00016 の機能が含まれる行を選択して、適切な選択をしてください。 これらの外部システムから Dynamics 365 のオンライン サービスにインポートされたデータは、当社の [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=512132) の対象となります。 詳細については、各国固有の機能説明書のプライバシーに関する注意事項を参照してください。
+**CFDI メキシコの電子請求 (MX)** 機能を有効にするには、組織の税務登録 ID を含む一部のデータの送信が必要となる場合があります。 これは、政府の web サービスとの統合に必要な所定の形式で、この税務当局に電子請求書を送信する目的で、税務当局から権限を与えられた第三者機関に送信されます。 管理者は、**組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動して、**CFDI メキシコの電子請求 (MX)** 機能を有効または無効にすることができます。 **機能** タブを選択し、**CFDI メキシコの電子請求 (MX)** 機能を含む行を選択して、適切な選択を行います。 これらの外部システムから Dynamics 365 のオンライン サービスにインポートされたデータは、当社の [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=512132) の対象となります。 詳細については、各国固有の機能説明書のプライバシーに関する注意事項を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

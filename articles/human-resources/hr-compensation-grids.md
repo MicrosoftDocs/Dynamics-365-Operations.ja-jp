@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13415f68f41555f3e86cbe699cf921e9a2cf6d5c
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: b7e68ec4d172ced7ac66837e9580971d22b23b5f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113196"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465753"
 ---
 # <a name="set-up-compensation-grids"></a>報酬グリッドの設定
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [報酬] グリッドは、固定報酬プランの支払構造を定義または維持するために使用します。 [報酬] グリッドは、複数のプラン間で共有または新しい報酬プランの作成時にコピーすることができます。  報酬グリッドを作成する前に、[レベル] と [基準] ポイントを設定する必要があります。 この例では、[レベル] と [基準] ポイントのデモ データを使用して、報酬グリッドの新しい [等級] タイプを作成します。 この手順の作成に使用するデモ データの会社は USMF です。
 

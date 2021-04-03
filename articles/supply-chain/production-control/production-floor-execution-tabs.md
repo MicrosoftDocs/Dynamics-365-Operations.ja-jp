@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 282785799b6d61a00a356fcc2ae86ff0e3b7b39f
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077581"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501033"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスをデザインする
 
@@ -45,7 +46,7 @@ ms.locfileid: "5077581"
 
 新しいタブを作成して構成するには、次の手順に従います:
 
-1. **生産管理 &gt; 設定 &gt; 製造実行** に移動します。
+1. **生産管理 \> 設定 \> 製造実行 \> 生産現場の実行を構成** に移動します。
 
 1. アクション ウィンドウの **タブのデザイン** を選択して、**タブのデザイン** ページを開きます。
 
@@ -67,7 +68,7 @@ ms.locfileid: "5077581"
 
 必要なタブをすべてデザインしたら、構成に関連付けることができます。
 
-1. **生産管理 &gt; 設定 &gt; 生産フロア実行の構成** に移動します。
+1. **生産管理 \> 設定 \> 製造実行 \> 生産現場の実行を構成** に移動します。
 
     ![生産フロア実行の構成](media/pfe-config-prod-floor-execution.png "生産フロア実行の構成")
 

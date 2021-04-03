@@ -3,10 +3,9 @@ title: 以前のリリースの削除済みまたは非推奨の機能
 description: このトピックでは、Dynamics 365 for Finance and Operations と以前のリリースから削除された機能、または削除される予定だった機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b862938ec8226cc963fb8c85fcfc2241684eab7
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: db276c693a729b919bc609bb4b94843bb11a8fe3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154388"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559333"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -39,7 +38,7 @@ ms.locfileid: "5154388"
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 プラットフォーム更新プログラム 31
 
@@ -375,12 +374,12 @@ ER 式ビルダーで使用されるカスタム機能を導入する可能性�
 | **ステータス**                       | 非推奨: 2つのレポートのメニュー項目は、バージョン 7.3 では削除されています。 ただし、レポートのコードは製品に残っています。 計画では、将来のリリースでコードは削除されます。 |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>AppSource で使用できる Power BI コンテンツ パック
-[Microsoft AppSource](https://appsource.microsoft.com) サイトで利用可能な、**原価管理**、**財務パフォーマンス**、および **小売チャネルの実績** コンテンツ パックは、Microsoft Power BI での製品更新の結果として、使用できなくなりました。 Finance and Operations でも、これらのコンテンツ パックを PowerBI.com に配置するために使用するシステム管理フォームは廃止予定とされています。
+[Microsoft AppSource](https://appsource.microsoft.com) サイトで利用可能な、**原価管理**、**財務パフォーマンス**、および **Retail Channel Performance** コンテンツ パックは、Microsoft Power BI での製品更新の結果として、使用できなくなりました。 Finance and Operations でも、これらのコンテンツ パックを PowerBI.com に配置するために使用するシステム管理フォームは廃止予定とされています。
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | Microsoft Power BI での製品の更新。 |
-| **別の機能での置き換え?**   | [AppSource](https://appsource.microsoft.com) サイトで利用可能な、**原価管理**、**財務パフォーマンス**、および **小売チャネルの実績** コンテンツ パックは、データベース レベルでソリューション統合を許可する分析アプリケーションにより置き換えられます。 分析アプリケーションの詳細については、[ワークスペースの埋め込み Power BI](../../dev-itpro/analytics/embed-power-bi-workspaces.md) を参照してください。    |
+| **別の機能で置き換えられているか?**   | [AppSource](https://appsource.microsoft.com) サイトで利用可能な、**原価管理**、**財務パフォーマンス**、および **小売チャネルの実績** コンテンツ パックは、データベース レベルでソリューション統合を許可する分析アプリケーションにより置き換えられます。 分析アプリケーションの詳細については、[ワークスペースの埋め込み Power BI](../../dev-itpro/analytics/embed-power-bi-workspaces.md) を参照してください。    |
 | **影響を受ける製品領域**         | 原価管理、財務、および小売                                                                                               |
 | **配置オプション**              | クラウドのみ (PowerBI.com との統合は、オンプレミス配置ではサポートされていません。)                                                                                                            |
 | **ステータス**                         | 非推奨: 機能を削除するためのターゲットのタイムフレームは 2018 年 第 2 四半期です。    |
@@ -919,7 +918,7 @@ ICMS の税金の連邦税明細書
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | この機能は、別の機能で置き換えられました。   |
-| **別の機能での置き換え?**   | Microsoft Power BI の財務パフォーマンス監視コンテンツ パックには、Business Analyzer で以前利用できた主要な財務メトリックが含まれます。 |
+| **別の機能で置き換えられているか?**   | Microsoft Power BI の財務パフォーマンス監視コンテンツ パックには、Business Analyzer で以前利用できた主要な財務メトリックが含まれます。 |
 | **影響を受ける製品領域**         | 一般会計      |
 | **ステータス**                         | 非推奨: Business Analyzer の使用は推奨されていません。    |
 

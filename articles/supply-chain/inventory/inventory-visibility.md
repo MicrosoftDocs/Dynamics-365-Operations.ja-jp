@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 4e588be2ac5aae395ca66e3c9a743a67d71db7c0
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114673"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574225"
 ---
 # <a name="inventory-visibility-add-in"></a>在庫の視覚化アドイン
 
@@ -48,11 +48,64 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、 Inventory Visibil
 Inventory Visibility Add-in をインストールする前に、以下を実行する必要があります。
 
 - 少なくとも 1 つの環境が配置されている LCS 実装プロジェクトを取得する。
-- LCS でのオファリングで使用するベータ キーを生成する。
-- LCS でのユーザーに対するオファリングのベータ キーを有効にします。
-- Microsoft Inventory Visibility 製品チームに連絡して、Inventory Visibility Add-in を配置する環境 ID を知らせてください。
+- [アドインの概要](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md)で提供されるアドインを設定するための前提条件が完了したことを確認します。 在庫の視覚化にデュアル書き込みリンクは必要ありません。
+- [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) から在庫の視覚化チームに連絡して、次の 3 つの必要なファイルを入手してください。
+
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (実行している Supply Chain Management がバージョン 10.0.18 より以前のバージョンの場合)
+
+> [!NOTE]
+> 現在サポートされている国や地域には、カナダ、米国、欧州連合 (EU) が含まれます。
 
 これらの前提条件について質問がある場合は、Inventory Visibility 製品チームに問い合わせてください。
+
+### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Dataverse を設定する
+
+Dataverse を設定するには、次の手順に従います。
+
+1. テナントにサービス プリンシパルを追加します。
+
+    1. [Graph 用 Azure Active Directory  PowerShell をインストールする](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)に記載の手順に従って Azure AD PowerShell モジュール v2 をインストールします。
+    1. 次の PowerShell コマンドを実行します。
+
+        ```powershell
+        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+
+        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+        ```
+
+1. Dataverse で在庫の視覚化のアプリケーション ユーザーを作成します。
+
+    1. Dataverse 環境の URLを開きます。
+    1. **詳細設定 \> システム \> セキュリティ \> ユーザー** の順に移動し、アプリケーション ユーザーを作成します。 表示メニューを使用して、ページ ビューを **アプリケーション ユーザー** に変更します。
+    1. **新規** を選択します。 アプリケーション ID を *3022308a-b9bd-4a18-b8ac-2ddedb2075e1* に設定します。 (変更を保存すると、オブジェクト ID が自動的に読み込まれます。) 名前はカスタマイズできます。 たとえば、*在庫の視覚化* に変更できます。 完了したら、**保存** を選択します。
+    1. **ロールの割り当て** を選択してから、**システム管理者** を選択します。 **Common Data Service ユーザー** という名前のロールがある場合は、それも選択します。
+
+    詳細については、「[アプリケーション ユーザーの作成](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user)」を参照してください。
+
+1. Dataverse 構成関連エンティティと Power Apps を含む `Inventory Visibility Dataverse Solution.zip` ファイルをインポートします。
+
+    1. **ソリューション** ページに移動します。
+    1. **インポート** を選択します。
+
+1. 構成のアップグレード トリガー フローをインポートします。
+
+    1. Microsoft Flow ページに移動します。
+    1. *Dataverse (レガシ)* という名前の接続が存在することを確認します。 (存在しない場合は作成します。)
+    1. `Inventory Visibility Configuration Trigger.zip` ファイルをインポートします。 インポートすると、トリガーが **マイ フロー** の下に表示されます 。
+    1. 環境情報に基づいて、次の 4 つの変数を初期化します。
+
+        - Azure テナント ID
+        - Azure アプリケーション クライアント ID
+        - Azure アプリケーション クライアント シークレット
+        - 在庫の視覚化エンドポイント
+
+            この変数の詳細については、このトピックで後述する[在庫の視覚化統合の設定](#setup-inventory-visibility-integration) を参照してください。
+
+        ![構成トリガー](media/configuration-trigger.png "構成トリガー")
+
+    1. **有効化** を選択します。
 
 ### <a name="install-the-add-in"></a><a name="install-add-in"></a>アドインのインストール
 
@@ -61,14 +114,16 @@ Inventory Visibility Add-in をインストールするには、以下を実行�
 1. [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) ポータルにサインインします。
 1. ホーム ページで、環境が展開されているプロジェクトを選択します。
 1. プロジェクト ページで、アドインをインストールする環境を選択します。
-1. 環境 ページで、**環境アドイン** セクションが表示されるまで下にスクロールします。 セクションが表示されない場合は、必須のベータ キーが完全に処理されていることを確認してください。
+1. 環境ページで、**Power Platform 統合** セクションの **環境アドイン** セクションが表示されるまで下にスクロールします。このセクションでは Dataverse 環境名を検索できます。
 1. **環境アドイン** セクションで、**新しいアドインのインストール** を選択します。
+
     ![LCS の環境ページ](media/inventory-visibility-environment.png "LCS の環境ページ")
+
 1. **新しいアドインのインストール** リンクを選択します。 使用可能なアドインの一覧が表示されます。
-1. 一覧から **在庫サービス** を選択します。 (**Inventory Visibility Add-in for Dynamics 365 Supply Chain Management** として一覧表示される場合があります。)
+1. 一覧で **在庫の視覚化** を選択します。
 1. 環境に対して次のフィールドの値を入力します。
 
-    - **AAD アプリケーション ID**
+    - **AAD アプリケーション (クライアント) ID**
     - **AAD テナント ID**
 
     ![セットアップ ページに追加](media/inventory-visibility-setup.png "アドイン セットアップ ページ")
@@ -76,11 +131,74 @@ Inventory Visibility Add-in をインストールするには、以下を実行�
 1. **使用条件** チェック ボックスを選択して、使用条件に同意します。
 1. **インストール** を選択します。 アドインの状態は、**インストール中** として表示されます。 完了したらページを更新して、状態が **インストール済み** に変わっているかを確認します。
 
-### <a name="get-a-security-service-token"></a>セキュリティ サービス トークンの取得
+### <a name="uninstall-the-add-in"></a><a name="uninstall-add-in"></a>アドインのアンインストール
+
+アドインをアンインストールするには、**アンインストール** を選択します。 LCS を更新すると、在庫の視覚化アドインが削除されます。 アンインストールのプロセスでは、アドイン登録が削除され、サービスに格納されているすべてのビジネス データをクリーンアップするジョブが開始されます。
+
+## <a name="consume-on-hand-inventory-data-from-supply-chain-management"></a>Supply Chain Management からの手持在庫データの消費
+
+### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>在庫の視覚化統合パッケージの配置
+
+Supply Chain Management バージョン 10.0.17 以前を実行している場合、[inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) で在庫の視覚化のオンボード サポート チームに連絡してパッケージ ファイルを取得してください。 その後、LCS にパッケージを配置します。
+
+> [!NOTE]
+> 配置中にバージョンの不一致エラーが発生した場合は、X++ プロジェクトを手動で開発環境にインポートする必要があります。 その後、配置可能パッケージを開発環境に作成し、それを実稼働環境に配置します。
+> 
+> このコードは Supply Chain Management バージョン 10.0.18 に含まれています。 そのバージョン以降を実行する場合、配置は必須ではありません。
+
+Supply Chain Management 環境で次の機能が有効になっていることを確認してください。 (既定では、有効になっています。)
+
+| 機能の説明 | コード バージョン | トグル クラス |
+|---|---|---|
+| InventSum テーブルで在庫分析コードの使用の有効化または無効化 | 10.0.11 | InventUseDimOfInventSumToggle |
+| InventSumDelta テーブルで在庫分析コードの使用の有効化または無効化 | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
+
+### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Inventory Visibility 統合の設定
+
+1. Supply Chain Management で、**[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ワークスペースを開き、在庫の可視性の **在庫の視覚化統合** 機能を有効にします。
+1. **在庫管理 \> 設定 \>在庫の視覚化統合パラメーター** の順に移動し、実行している在庫の視覚化で環境の URL を入力します。
+
+    LCS 環境の Azure リージョンを検索してから、URL を入力します。 URL には次のフォームがあります。
+
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+
+    たとえば、ヨーロッパにいる場合、環境には次のいずれかの URL が表示されます。
+
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+
+    現在、以下のリージョンが利用可能です。
+
+    | Azure リージョン | リージョンの短縮名 |
+    |---|---|
+    | オーストラリア東部 | eau |
+    | オーストラリア南東部 | seau |
+    | カナダ中部 | cca |
+    | カナダ東部 | eca |
+    | 北ヨーロッパ | neu |
+    | 西ヨーロッパ | weu |
+    | 米国東部 | eus |
+    | 米国西部 | wus |
+
+1. **在庫管理 \> 定期処理 \> 在庫の視覚化統合** の順に移動し、ジョブを有効します。 Supply Chain Management からのすべての在庫変更イベントが在庫の視覚化に転記されるようになります。
+
+## <a name="the-inventory-visibility-add-in-public-api"></a><a name="inventory-visibility-public-api"></a>在庫の視覚化アドイン パブリック API
+
+在庫の視覚化アドインのパブリック REST API は、特定の統合エンドポイントを複数提供します。 次の 3 つの主要な相互作用タイプをサポートします。
+
+- 外部システムから、手持在庫の変更をアドインに転記する
+- 外部システムから現在の手持在庫数量を問い合わせる
+- Supply Chain Management 手持在庫との自動同期
+
+自動同期はパブリック API の一部ではありません。 代わりに、在庫の視覚化アドインが有効になっている環境のバックグラウンドで処理されます。
+
+### <a name="authentication"></a><a name="inventory-visibility-authentication"></a>認証
+
+プラットフォーム セキュリティ トークンは、在庫の視覚化アドインを呼び出すために使用されます。 したがって、Azure AD アプリケーションを使用して *Azure Active Directory (Azure AD) トークン* を生成する必要があります。 その後、この Azure AD トークンを使用して、セキュリティ サービスから *アクセス トークン* を取得する必要があります。
 
 セキュリティ サービス トークンを取得するには、次の操作を行います。
 
-1. Azure Portalにログインし、このログインを使用して Supply Chain Management アプリケーションの `clientId` と `clientSecret` を探します。
+1. Azure ポータルにサインインし、このサインインを使用して Supply Chain Management アプリケーションの `clientId` と `clientSecret` を検索します。
 1. 次のプロパティを持つ HTTP 要求を送信することにより、 Azure Active Directory トークン (`aadToken`) をフェッチします。
     - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
     - **メソッド** - `GET`
@@ -140,27 +258,7 @@ Inventory Visibility Add-in をインストールするには、以下を実行�
     }
     ```
 
-### <a name="uninstall-the-add-in"></a>アドインのアンインストール
-
-アドインをアンインストールするには、**アンインストール** を選択します。 LCS を更新すると、Inventory Visibility Add-in が削除されます。 アンインストールのプロセスでは、アドイン登録が削除され、サービスに格納されているすべてのビジネス データをクリーンアップするジョブが開始されます。
-
-## <a name="inventory-visibility-add-in-public-api"></a>Inventory Visibility Add-in パブリック API
-
-Inventory Visibility Add-in のパブリック REST API は、特定の統合エンドポイントを複数提供します。 次の 3 つの主要な相互作用タイプをサポートします。
-
-- 外部システムから、手持在庫の変更をアドインに転記する。
-- 外部システムから現在の手持在庫数量を問い合わせる。
-- 手持ちの Supply Chain Management との自動同期。
-
-自動同期はパブリック API には含まれませんが、Inventory Visibility Add-in が有効な環境ではバックグラウンドで実行されます。
-
-### <a name="authentication"></a>認証
-
-プラットフォーム セキュリティ トークンは、Inventory Visibility Add-in を呼び出すために使用されるので、Azure Active Directory アプリケーションを使用して Azure Active Directory トークンを生成する必要があります。
-
-セキュリティ トークンを取得する方法の詳細については、[Inventory Visibility Add-in のインストール](#install-add-in) を参照してください。
-
-### <a name="configure-the-inventory-visibility-api"></a>Inventory Visibility API の構成
+### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Inventory Visibility API の構成
 
 このサービスを使用する前に、次のサブセクションで説明する構成を完了する必要があります。 環境の詳細によって、構成が異なる場合があります。 主に 4 つの部分から構成されます。
 
@@ -257,7 +355,7 @@ Inventory Visibility を使用すると、分析コードまたは分析コー�
 
 #### <a name="custom-measurement"></a>カスタム測定
 
-既定の測定数量は Supply Chain Management にリンクされていますが、既定の測定値の組み合わせで構成された数量が必要な場合があります。 そのためには、カスタム数量を構成し、手持在庫クエリの出力に追加します。
+既定の測定数量は Supply Chain Management にリンクされています。 ただし、既定の測定値の組み合わせにより構成される数量が必要な場合があります。 そのためには、カスタム数量を構成し、手持在庫クエリの出力に追加します。
 
 この機能により、追加または削除される一連の測定を定義して、カスタム測定を作成できるようになります。
 

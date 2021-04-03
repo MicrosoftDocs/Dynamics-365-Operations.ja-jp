@@ -3,7 +3,7 @@ title: Azure ストレージ アカウントとキー コンテナーの作成
 description: このトピックでは、Azure ストレージ アカウントとキー コンテナーを作成する方法について説明します。
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
+ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104232"
+ms.lasthandoff: 02/22/2021
+ms.locfileid: "5479348"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure ストレージ アカウントとキー コンテナーの作成
 
@@ -77,9 +77,12 @@ ms.locfileid: "5104232"
 
     ![証明書のアクセス許可の付与](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. **プリンシパル** ダイアログ ボックスで、**電子請求のアドオン** を追加してプリンシパルを選択し ます。
-10. **追加** を選択し、**キー コンテナーの変更を保存する** を選択します。
-11. **概要** ページで、 キー コンテナーの **DNS 名** の値をコピーして保存します。 この値は、RCS におけるサービスの設定時に使用され、*キー コンテナーの URI* として参照されます。
+9. **プリンシパルの選択** フィールドで、**選択なし** を選択します。
+10. **プリンシパル** ダイアログ ボックスで、**電子請求書サービス** を追加してプリンシパルを選択します。
+11. **追加** を選択し、**キー コンテナーの変更を保存する** を選択します。
+12. **概要** ページで、 キー コンテナーの **DNS 名** の値をコピーして保存します。 この値は、RCS におけるサービスの設定時に使用され、*キー コンテナーの URI* として参照されます。
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
