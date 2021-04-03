@@ -16,39 +16,42 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3720945823cf127f776a9ea6a6ad75a72ceec00c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bf5dc0320e16bb53dbebc9e0bea689e0125b9827
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012344"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232837"
 ---
-# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a><span data-ttu-id="12edc-103">集中的購買を使用した物流センターから店舗への製品の配送</span><span class="sxs-lookup"><span data-stu-id="12edc-103">Push products from distribution center to store using buyer's push</span></span>
+# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a><span data-ttu-id="bf4ce-103">集中的購買を使用した物流センターから店舗への製品の配送</span><span class="sxs-lookup"><span data-stu-id="bf4ce-103">Push products from distribution center to store using buyer's push</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="12edc-104">この手順は、一つの場所から、一つまたは複数の店舗に製品を配分する集中的購買を作成および処理する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="12edc-104">This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores.</span></span> <span data-ttu-id="12edc-105">ユーザーは、複数のコンフィギュレーションを定義したり、製品の配分方法を提案するシステムを使用できます。あるいは製品をどこに、どの程度各店舗に配分するか手動で入力することもできます。</span><span class="sxs-lookup"><span data-stu-id="12edc-105">The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store.</span></span> <span data-ttu-id="12edc-106">この手順には、補充ルール、組織階層と店舗の重量などの集中的購買に使用できるデータの設定は含まれません。</span><span class="sxs-lookup"><span data-stu-id="12edc-106">This procedure doesn't include setup of data that can be used in the Buyer´s push, such as replenishment rules, organizational hierarchies, and store weights.</span></span> <span data-ttu-id="12edc-107">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="12edc-107">This procedure uses the USRT demo company.</span></span>
+<span data-ttu-id="bf4ce-104">この手順は、一つの場所から、一つまたは複数の店舗に製品を配分する集中的購買を作成および処理する手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-104">This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores.</span></span> <span data-ttu-id="bf4ce-105">ユーザーは、複数のコンフィギュレーションを定義したり、製品の配分方法を提案するシステムを使用できます。あるいは製品をどこに、どの程度各店舗に配分するか手動で入力することもできます。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-105">The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store.</span></span> <span data-ttu-id="bf4ce-106">この手順には、補充ルール、組織階層と店舗の重量などの集中的購買に使用できるデータの設定は含まれません。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-106">This procedure doesn't include setup of data that can be used in the Buyer´s push, such as replenishment rules, organizational hierarchies, and store weights.</span></span> <span data-ttu-id="bf4ce-107">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-107">This procedure uses the USRT demo company.</span></span>
 
-1. <span data-ttu-id="12edc-108">[集中的購買] に移動します。</span><span class="sxs-lookup"><span data-stu-id="12edc-108">Go to Buyer's push.</span></span>
-2. <span data-ttu-id="12edc-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="12edc-109">Click New.</span></span>
-3. <span data-ttu-id="12edc-110">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="12edc-110">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="12edc-111">[サイト] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="12edc-111">In the Site field, enter or select a value.</span></span>
-5. <span data-ttu-id="12edc-112">[倉庫] フィールドで、手持在庫数量の製品のある倉庫を入力、または選択します。</span><span class="sxs-lookup"><span data-stu-id="12edc-112">In the Warehouse field, enter or select a warehouse that has products with on-hand quantities.</span></span>
-6. <span data-ttu-id="12edc-113">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="12edc-113">Click Add.</span></span>
-7. <span data-ttu-id="12edc-114">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="12edc-114">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="12edc-115">[品目番号] フィールドで、製品を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="12edc-115">In the Item number field, enter or select a product.</span></span>
-9. <span data-ttu-id="12edc-116">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="12edc-116">Click Add.</span></span>
-10. <span data-ttu-id="12edc-117">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="12edc-117">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="12edc-118">[品目番号] フィールドで、バリアント製品を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="12edc-118">In the Item number field, enter or select a variant product.</span></span>
-    * <span data-ttu-id="12edc-119">バリアント製品を入力すると、明細行がバリアントごとに作成されます。</span><span class="sxs-lookup"><span data-stu-id="12edc-119">When entering a variant product, lines will be created for each variant.</span></span>  
-12. <span data-ttu-id="12edc-120">一覧で行をマーキングします。</span><span class="sxs-lookup"><span data-stu-id="12edc-120">In the list, mark a row.</span></span>
-13. <span data-ttu-id="12edc-121">[プッシュ数量] フィールドに、配布する選択された製品の数量を入力します。</span><span class="sxs-lookup"><span data-stu-id="12edc-121">In the Pushed quantity field, type how many of the selected product you want to distribute.</span></span>
-14. <span data-ttu-id="12edc-122">[プッシュする追加数量] フィールドで、配送先の有効数量がある製品の数量を入力します。</span><span class="sxs-lookup"><span data-stu-id="12edc-122">In the Additional quantity to push field, enter the quantity of the products that have available quantity to distribute.</span></span>
-15. <span data-ttu-id="12edc-123">[配送] フィールドで、[場所の重量] を入力します。</span><span class="sxs-lookup"><span data-stu-id="12edc-123">In the Distribution field, enter 'Location weight'.</span></span>
-    * <span data-ttu-id="12edc-124">配送のために、他のルールを使用する他のタイプを選択できます。</span><span class="sxs-lookup"><span data-stu-id="12edc-124">You can select the other types to use other rules for the distribution.</span></span>  
-16. <span data-ttu-id="12edc-125">[補充階層] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="12edc-125">In the Replenishment hierarchy field, select a value.</span></span>
-17. <span data-ttu-id="12edc-126">[品揃えの考慮] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="12edc-126">Select Yes in the Respect assortments field.</span></span>
-18. <span data-ttu-id="12edc-127">[数量の計算] クリックし、[倉庫] セクションの行に追加される数量を確認します。</span><span class="sxs-lookup"><span data-stu-id="12edc-127">Click Calculate quantities and review the quantities that are added to the rows in the Warehouse section.</span></span>
-19. <span data-ttu-id="12edc-128">[注文の作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="12edc-128">Click Create order.</span></span>
-20. <span data-ttu-id="12edc-129">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="12edc-129">Click Yes.</span></span>
+1. <span data-ttu-id="bf4ce-108">[集中的購買] に移動します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-108">Go to Buyer's push.</span></span>
+2. <span data-ttu-id="bf4ce-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-109">Click New.</span></span>
+3. <span data-ttu-id="bf4ce-110">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-110">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="bf4ce-111">[サイト] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-111">In the Site field, enter or select a value.</span></span>
+5. <span data-ttu-id="bf4ce-112">[倉庫] フィールドで、手持在庫数量の製品のある倉庫を入力、または選択します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-112">In the Warehouse field, enter or select a warehouse that has products with on-hand quantities.</span></span>
+6. <span data-ttu-id="bf4ce-113">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-113">Click Add.</span></span>
+7. <span data-ttu-id="bf4ce-114">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-114">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="bf4ce-115">[品目番号] フィールドで、製品を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-115">In the Item number field, enter or select a product.</span></span>
+9. <span data-ttu-id="bf4ce-116">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-116">Click Add.</span></span>
+10. <span data-ttu-id="bf4ce-117">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-117">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="bf4ce-118">[品目番号] フィールドで、バリアント製品を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-118">In the Item number field, enter or select a variant product.</span></span>
+    * <span data-ttu-id="bf4ce-119">バリアント製品を入力すると、明細行がバリアントごとに作成されます。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-119">When entering a variant product, lines will be created for each variant.</span></span>  
+12. <span data-ttu-id="bf4ce-120">一覧で行をマーキングします。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-120">In the list, mark a row.</span></span>
+13. <span data-ttu-id="bf4ce-121">[プッシュ数量] フィールドに、配布する選択された製品の数量を入力します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-121">In the Pushed quantity field, type how many of the selected product you want to distribute.</span></span>
+14. <span data-ttu-id="bf4ce-122">[プッシュする追加数量] フィールドで、配送先の有効数量がある製品の数量を入力します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-122">In the Additional quantity to push field, enter the quantity of the products that have available quantity to distribute.</span></span>
+15. <span data-ttu-id="bf4ce-123">[配送] フィールドで、[場所の重量] を入力します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-123">In the Distribution field, enter 'Location weight'.</span></span>
+    * <span data-ttu-id="bf4ce-124">配送のために、他のルールを使用する他のタイプを選択できます。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-124">You can select the other types to use other rules for the distribution.</span></span>  
+16. <span data-ttu-id="bf4ce-125">[補充階層] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-125">In the Replenishment hierarchy field, select a value.</span></span>
+17. <span data-ttu-id="bf4ce-126">[品揃えの考慮] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-126">Select Yes in the Respect assortments field.</span></span>
+18. <span data-ttu-id="bf4ce-127">[数量の計算] クリックし、[倉庫] セクションの行に追加される数量を確認します。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-127">Click Calculate quantities and review the quantities that are added to the rows in the Warehouse section.</span></span>
+19. <span data-ttu-id="bf4ce-128">[注文の作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-128">Click Create order.</span></span>
+20. <span data-ttu-id="bf4ce-129">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bf4ce-129">Click Yes.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

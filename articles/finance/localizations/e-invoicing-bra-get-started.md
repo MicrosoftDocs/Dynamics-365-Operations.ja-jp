@@ -1,9 +1,9 @@
 ---
 title: ブラジル向け電子請求のアドオンの使用を開始する
-description: このトピックでは、ブラジル における Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management の電子請求のアドオンを使い始める際に役立つ情報を提供します。
+description: このトピックでは、ブラジル における Finance および Supply Chain Management の電子請求のアドオンを使い始める際に役立つ情報を提供します。
 author: gionoder
 manager: AnnBe
-ms.date: 09/04/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,294 +17,125 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0320bd1d9e93cc30ed75f28e387ac2ec8dbfc226
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: eaf9433ad2d9ccf3d3c5632d0f2d4fe772ff8bde
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962838"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592673"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a><span data-ttu-id="128f0-103">ブラジル向け電子請求のアドオンの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="128f0-103">Get started with the Electronic invoicing add-on for Brazil</span></span> 
+# <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a><span data-ttu-id="6b61c-103">ブラジル向け電子請求のアドオンの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="6b61c-103">Get started with the Electronic invoicing add-on for Brazil</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
+<span data-ttu-id="6b61c-104">このトピックでは、ブラジルの電子請求アドオンの使用を開始する方法について解説します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-104">This topic explains how to get started with the Electronic invoicing add-on for Brazil.</span></span> <span data-ttu-id="6b61c-105">このトピックでは、Regulatory Configuration Services (RCS) で国ごとに異なる構成手順について説明し、トピック[電子請求のアドオンの使用を開始する](e-invoicing-get-started.md)で説明されている手順を補完します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-105">The procedures in this topic guide you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS), and complement the steps described in the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
+
+## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a><span data-ttu-id="6b61c-106">ブラジル NF-e (BR) 電子請求機能の国別コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6b61c-106">Country-specific configuration for Brazilian NF-e (BR) Electronic invoicing feature</span></span>
+
+<span data-ttu-id="6b61c-107">ブラジルの NF-e (BR) 電子請求機能を構成するには、特定の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-107">Configuring the Brazilian NF-e (BR) Electronic invoicing feature requires that specific steps be completed.</span></span> <span data-ttu-id="6b61c-108">構成の一部のパラメーターは既定値で公開されているため、事業運営に合わせて確認および更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-108">Some of the parameters from the configurations are published with default values, so they must be reviewed and updated to better fit your business operation.</span></span>
+
+### <a name="prerequisites"></a><span data-ttu-id="6b61c-109">必要条件</span><span class="sxs-lookup"><span data-stu-id="6b61c-109">Prerequisites</span></span>
+
+<span data-ttu-id="6b61c-110">このセクションの手順を完了する前に、トピック [電子請求のアドオンの使用を開始する](e-invoicing-get-started.md)の **組織のプロバイダー配下に電子請求書発行機能を作成する** に説明されているように、組織のブラジル NF-e (BR) 電子請求機能を作成します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-110">Before you complete the procedure in this section, create a Brazilian NF-e (BR) Electronic invoicing feature for your organization, as described in the **Create an Electronic invoicing feature under your organization provider** section of the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
+
+1. <span data-ttu-id="6b61c-111">RCS で、**グローバリゼーション機能** ワークスペースの **機能** セクションで、**電子請求のアドオン** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-111">In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-on** tile.</span></span>
+2. <span data-ttu-id="6b61c-112">**電子請求アドオン機能** ページで、作成した **ブラジル NF-e (BR)** 電子請求機能が選択されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-112">On the **Electronic invoicing add-on Features** page, verify that the **Brazilian NF-e (BR)** Electronic invoicing feature you created is selected.</span></span>
+3. <span data-ttu-id="6b61c-113">**バージョン** タブで、**ドラフト** バージョンが選択されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-113">On the **Versions** tab, verify that the **Draft** version is selected.</span></span>
+4. <span data-ttu-id="6b61c-114">グリッドにある **設定** タブで、**送信** を選択し、**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-114">On the **Setups** tab, in the grid, select **Submit** and then select **Edit.**</span></span>
+5. <span data-ttu-id="6b61c-115">**アクション** タブの **アクション** フィールド グループで、**(プレビュー) xml ドキュメントへの署名** アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-115">On the **Actions** tab, in the **Actions** field group, select **(Preview) Sign xml document** action.</span></span>
+6. <span data-ttu-id="6b61c-116">**パラメーター** フィールド グループで **証明書の名前** を選択し、**値** フィールドで Key Vault パラメーターに関連付けられている証明書の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-116">In the **Parameters** field group, select **Certificate name**, and in the **Value** field, enter the name of certificate associated to your Key vault parameter.</span></span>
+7. <span data-ttu-id="6b61c-117">**アクション** タブの **アクション** フィールド グループで、**(プレビュー) xml ドキュメントへの署名** アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-117">On the **Actions** tab, in the **Actions** field group, select **(Preview) Call Brazilian SEFAZ service** action.</span></span>
+8. <span data-ttu-id="6b61c-118">**パラメーター** フィールド グループで、**URL アドレス** パラメーターを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-118">In the **Parameters** field group, select **URL address** parameter.</span></span>
+9. <span data-ttu-id="6b61c-119">**値** フィールドで、必要に応じて、SEFAZ ドキュメントによって公開されている Web サービスの URL を確認して更新し、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-119">In the **Value** field, if necessary, review and update the URL of the web services published by the SEFAZ documentation for your state and then select **Save.**</span></span>
+10. <span data-ttu-id="6b61c-120">**適合性ルール** タブの **適合性ルールの設定** フィールド グループで、Web サービスの URL が参照されているのと同じ状態について、必要に応じて **状態** フィールド基準を確認および更新します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-120">On the **Applicability rules** tab, in the **Setup of applicability rule** field group, review and update the **State** field criteria as necessary for the same state which the URL of the web services is referred to.</span></span>
+11. <span data-ttu-id="6b61c-121">**保存** を選択して、ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6b61c-121">Select **Save** and close the page.</span></span>
+12. <span data-ttu-id="6b61c-122">アプリケーションの設定を構成するには、[電子請求アドオンの使用を開始する](e-invoicing-get-started.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b61c-122">To configure the application setup, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
+
+## <a name="country-specific-configuration-of-application-setup-for-brazilian-nf-e-br-electronic-invoicing-feature"></a><span data-ttu-id="6b61c-123">ブラジル NF-e (BR) 電子請求機能のアプリケーション設定の国別コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6b61c-123">Country-specific configuration of application setup for Brazilian NF-e (BR) Electronic invoicing feature</span></span>
+
+<span data-ttu-id="6b61c-124">ブラジルの NF-e (BR) 電子請求機能のアプリケーション設定を構成するには、特定の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-124">Configuring the Application setup for Brazilian NF-e (BR) Electronic invoicing feature requires that specific steps be completed.</span></span> <span data-ttu-id="6b61c-125">電子請求機能を電子請求アドオン サービス環境に配置する前に、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-125">Complete these steps before you deploy your Electronic invoicing feature to your Electronic invoicing add-on service environment.</span></span>
+
+### <a name="prerequisites"></a><span data-ttu-id="6b61c-126">必要条件</span><span class="sxs-lookup"><span data-stu-id="6b61c-126">Prerequisites</span></span>
+
+<span data-ttu-id="6b61c-127">このセクションの手順を完了する前に、トピック [電子請求のアドオンの使用を開始する](e-invoicing-get-started.md)の **アプリケーション設定を構成する** セクションで説明されているように、ブラジルの NF-e (BR) 電子請求機能のアプリケーション構成を作成して開始します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-127">Before you complete the procedure in this section, create and initiate the application configuration of the Brazilian NF-e (BR) Electronic invoicing feature as described in the **Configure the application setup** section in the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
+
+1. <span data-ttu-id="6b61c-128">RCS で、**グローバリゼーション機能** ワークスペースの **機能** セクションで、**電子請求のアドオン** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-128">In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-on** tile.</span></span>
+2. <span data-ttu-id="6b61c-129">**電子請求アドオン機能** ページで、**ブラジルの NF-e (BR)** 電子請求機能が選択されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-129">On the **Electronic invoicing add-on Features** page, verify that the **Brazilian NF-e (BR)** Electronic invoicing feature is selected.</span></span>
+3. <span data-ttu-id="6b61c-130">**バージョン** タブで、**ドラフト** バージョンが選択されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-130">On the **Versions** tab, verify that the **Draft** version is selected.</span></span>
+4. <span data-ttu-id="6b61c-131">**設定** タブで、**アプリケーション設定** を選択し、**接続済みアプリケーション** フィールドで、配置するアプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-131">On the **Setups** tab, select **Application setup** and in the **Connected application** field, select the application to where you want to deploy.</span></span>
+5. <span data-ttu-id="6b61c-132">**テーブル名** フィールドで、**会計ドキュメント ヘッダー** が選択されているか確認します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-132">In the **Table name** field, verify if **Fiscal document header** is selected.</span></span>
+6. <span data-ttu-id="6b61c-133">**応答タイプ** を選択し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-133">Select **Response types**, and then select **New**.</span></span>
+7. <span data-ttu-id="6b61c-134">**応答タイプ** フィールドに固定値として "Response" と入力し、**説明** フィールドに "Description" と入力します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-134">In the **Response type** field, enter "Response" as a fixed value, and in the **Description** field, enter "Description".</span></span>
+8. <span data-ttu-id="6b61c-135">**提出の状態** フィールドで **保留** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-135">In the **Submission status** field, select **Pending**.</span></span>
+9. <span data-ttu-id="6b61c-136">**モデル マッピング** フィールドで、**応答メッセージからモデルマッピング** を **(プレビュー) 応答メッセージのインポート形式** と共に選択し、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-136">In the **Model mapping** field, select **Model mapping from response  message** with **(Preview) Response message import format**, and then select **Save**.</span></span>
+10. <span data-ttu-id="6b61c-137">**新規** を選択し、**応答タイプ** フィールドに固定値として "ResponseData" と入力し、**説明フィールド** に、"Description" と入力します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-137">Select **New** and in the **Response type** field, enter "ResponseData" as a fixed value and in the **Description** field, enter "Description".</span></span>
+11. <span data-ttu-id="6b61c-138">**提出の状態** フィールドで **保留** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-138">In the **Submission status** field, select **Pending**.</span></span>
+12. <span data-ttu-id="6b61c-139">**モデル マッピング** フィールドで、**応答データのインポート** を **(プレビュー) NF-e 応答データのインポート形式 (BR)** と共に選択し、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-139">In the **Model mapping** field, select **Response data import** with **(Preview) NF-e response data import format (BR)**, and then select **Save**.</span></span>
+13. <span data-ttu-id="6b61c-140">電子請求機能を配置する方法については、[電子請求アドオンの使用を開始する](e-invoicing-get-started.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b61c-140">To deploy the Electronic invoicing feature, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
+
+## <a name="country-specific-configuration-for-brazilian-nfs-e-abrasf-curitiba-br-electronic-invoicing-feature"></a><span data-ttu-id="6b61c-141">ブラジル NFS-e ABRASF クリチバ (BR) 電子請求機能の国別コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6b61c-141">Country-specific configuration for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature</span></span>
+
+<span data-ttu-id="6b61c-142">ブラジルの NFS-e ABRASF クリチバ (BR) 電子請求機能を構成するには、特定の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-142">Configuring the Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature requires that specific steps be completed.</span></span> <span data-ttu-id="6b61c-143">構成の一部のパラメーターは既定値で公開されているため、事業運営に合わせて確認および更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-143">Some of the parameters from the configurations are published with default values, so they must be reviewed and updated to better fit your business operation.</span></span>
+
+### <a name="prerequisites"></a><span data-ttu-id="6b61c-144">必要条件</span><span class="sxs-lookup"><span data-stu-id="6b61c-144">Prerequisites</span></span>
+
+<span data-ttu-id="6b61c-145">このセクションの手順を実行する前に、組織内にブラジルの NFS-e ABRASF クリチバ (BR) 電子請求機能を作成します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-145">Before you complete the procedure in this section, create a Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature in your organization.</span></span> <span data-ttu-id="6b61c-146">これについては、トピック [電子請求アドオンの使用を開始する](e-invoicing-get-started.md)の **電子請求機能を構成する** で説明されています。</span><span class="sxs-lookup"><span data-stu-id="6b61c-146">This is described in the **Configure Electronic invoicing feature** section in the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
+
+1. <span data-ttu-id="6b61c-147">RCS で、**グローバリゼーション機能** ワークスペースの **機能** セクションで、**電子請求のアドオン** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-147">In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-on** tile.</span></span>
+2. <span data-ttu-id="6b61c-148">**電子請求アドオン機能** ページで、作成した **ブラジルの NFS-e ABRASF クリチバ (BR)** 電子請求機能が選択されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-148">On the **Electronic invoicing add-on Features** page, verify that the **Brazilian NFS-e ABRASF Curitiba (BR)** Electronic invoicing feature you created is selected.</span></span>
+3. <span data-ttu-id="6b61c-149">**バージョン** タブで、**ドラフト** バージョンが選択されていることを確認し、グリッドの **設定** タブで、**送信** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-149">On the **Versions** tab, verify the **Draft** version is selected, and on the **Setups** tab, in the grid, select **Submit**.</span></span>
+4. <span data-ttu-id="6b61c-150">**編集** を選択し、**アクション** フィールド グループの **アクション** タブで、最初の **(プレビュー) xml ドキュメントへの署名** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-150">Select **Edit** and on the **Actions** tab, in the **Actions** field group, select the first occurrence of **(Preview) Sign xml document**.</span></span>
+5. <span data-ttu-id="6b61c-151">**パラメーター** フィールド グループで、**証明書の名前** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-151">In the **Parameters** field group, select **Certificate name**.</span></span>
+6. <span data-ttu-id="6b61c-152">**値** フィールドに、Key Vault パラメーターに関連付けられている証明書の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-152">In the **Value** field, enter the name of certificate associated to your Key vault parameter.</span></span>
+7. <span data-ttu-id="6b61c-153">**アクション** フィールド グループで、2 番目に表示される **(プレビュー) xml ドキュメントへの署名** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-153">In the **Actions** field group, select the second occurrence of **(Preview) Signxml document**.</span></span>
+8. <span data-ttu-id="6b61c-154">**パラメーター** フィールド グループで、**証明書の名前** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-154">In the **Parameters** field group, select **Certificate name**.</span></span>
+9. <span data-ttu-id="6b61c-155">**値** フィールドに、Key Vault パラメーターに関連付けられている証明書の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-155">In the **Value** field, enter the name of certificate associated to your Key vault parameter.</span></span>
+10. <span data-ttu-id="6b61c-156">**アクション** タブの **アクション** フィールド グループで、**(プレビュー) xml ドキュメントへの署名** アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-156">On the **Actions** tab, in the **Actions** field group, select **(Preview) Call Brazilian SEFAZ service** action.</span></span>
+11. <span data-ttu-id="6b61c-157">**パラメーター** フィールド グループで、**URL アドレス** パラメーターを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-157">In the **Parameters** field group, select **URL address** parameter.</span></span>
+12. <span data-ttu-id="6b61c-158">**値** フィールドで、必要に応じて、クリチバ市の税務部門によって公開されている Web サービスの URL を確認して更新し、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-158">In the **Value** field, if necessary, review and update the URL of the web services published by the tax department for the city of Curitiba and then select **Save.**</span></span>
+13. <span data-ttu-id="6b61c-159">グリッドにある **設定** タブで、**照会** を選択し、**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-159">On the **Setups** tab, in the grid, select **Inquire** and then select **Edit.**</span></span>
+14. <span data-ttu-id="6b61c-160">**アクション** タブの **アクション** フィールド グループで、**(プレビュー) xml ドキュメントへの署名** アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-160">On the **Actions** tab, in the **Actions** field group, select **(Preview) Call Brazilian SEFAZ service** action.</span></span>
+15. <span data-ttu-id="6b61c-161">**パラメーター** フィールド グループで、**URL アドレス** パラメーターを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-161">In the **Parameters** field group, select **URL address** parameter.</span></span>
+16. <span data-ttu-id="6b61c-162">**値** フィールドで、必要に応じて、クリチバ市の税務部門によって公開されている Web サービスの URL を確認して更新します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-162">In the **Value** field, if necessary, review and update the URL of the web services published by the tax department for the city of Curitiba.</span></span>
+17. <span data-ttu-id="6b61c-163">**保存** を選択し、ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6b61c-163">Select **Save** and then close the page.</span></span>
+18. <span data-ttu-id="6b61c-164">アプリケーションの設定を構成するには、[電子請求アドオンの使用を開始する](e-invoicing-get-started.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b61c-164">To configure the application setup, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
+
+## <a name="country-specific-configuration-of-application-setup-for-brazilian-nfs-e-abrasf-curitiba-br-electronic-invoicing-feature"></a><span data-ttu-id="6b61c-165">ブラジルの NFS-e ABRASF クリチバ (BR) 電子請求機能用アプリケーション設定の国別コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6b61c-165">Country-specific configuration of application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature</span></span>
+
+<span data-ttu-id="6b61c-166">ブラジルの NFS-e ABRASF Curitiba (BR) 電子請求機能のアプリケーション設定を構成するには、電子請求機能を電子請求アドオン サービス環境に配置する前に、特定の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-166">Configuring the application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature requires that specific steps be completed before you deploy your Electronic invoicing feature to your Electronic invoicing add-on service environment.</span></span>
+
+### <a name="prerequisites"></a><span data-ttu-id="6b61c-167">必要条件</span><span class="sxs-lookup"><span data-stu-id="6b61c-167">Prerequisites</span></span>
+
+<span data-ttu-id="6b61c-168">このセクションの手順を完了する前に、トピック [電子請求のアドオンの使用を開始する](e-invoicing-get-started.md)のセクション **アプリケーション設定を構成する** で説明されているブラジルの NFS-e ABRASF クリチバ (BR) 電子請求機能を作成して開始します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-168">Before you complete the procedure in this section, create and initiate a Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature as described in the section **Configure the application setup** in the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
+
+1. <span data-ttu-id="6b61c-169">RCS で、**グローバリゼーション機能** ワークスペースの **機能** セクションで、**電子請求のアドオン** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-169">In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-on** tile.</span></span>
+2. <span data-ttu-id="6b61c-170">**電子請求アドオン機能** ページで、**ブラジルの NFS-e ABRASF クリチバ (BR)** 電子請求機能が選択されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-170">On the **Electronic invoicing add-on Features** page, verify that the **Brazilian NFS-e ABRASF Curitiba (BR)** Electronic invoicing feature is selected.</span></span>
+3. <span data-ttu-id="6b61c-171">**バージョン** タブで、**ドラフト** バージョンが選択されていることを確認し、**設定** タブで、**アプリケーション設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-171">On the **Versions** tab, verify that the **Draft** version is selected, and on the **Setups** tab, select **Application setup**.</span></span>
+4. <span data-ttu-id="6b61c-172">**接続済みアプリケーション** フィールドで、配置するアプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-172">In the **Connected application** field, select the application where you want to deploy.</span></span>
+5. <span data-ttu-id="6b61c-173">**テーブル名** フィールドで、会計ドキュメント ヘッダーが選択されているか確認します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-173">On **Table name** field, verify that the fiscal document header is selected.</span></span>
+6. <span data-ttu-id="6b61c-174">**応答タイプ** を選択し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-174">Select **Response types** and select **New**.</span></span>
+7. <span data-ttu-id="6b61c-175">**応答タイプ** フィールドに固定値として "ABRASFCuritibaSubmitResponse" と入力し、**説明** フィールドに "Description" と入力します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-175">In the **Response type** field, enter "ABRASFCuritibaSubmitResponse" as a fixed value, and in the **Description** field, enter "Description".</span></span>
+8. <span data-ttu-id="6b61c-176">**提出の状態** フィールドで **保留** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-176">In the **Submission status** field, select **Pending**.</span></span>
+9. <span data-ttu-id="6b61c-177">**モデル マッピング** フィールドで、**応答メッセージのインポート** を **(プレビュー)  NFS-e ABRASF クリチバ 応答メッセージのインポート (BR)** と共に選択し、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-177">In the **Model mapping** field, select **Response message import**, with **(Preview) NFS-e ABRASF Curitiba response message import (BR)** and then select **Save**.</span></span>
+10. <span data-ttu-id="6b61c-178">**新規** を選択し、**応答タイプ** フィールドに固定値として "ABRASFCuritibaSubmitResponseData" と入力し、**説明フィールド** に、"Description" と入力します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-178">Select **New**, and in the **Response type** field, enter "ABRASFCuritibaSubmitResponseData", and in the **Description** field, enter "Description".</span></span>
+11. <span data-ttu-id="6b61c-179">**提出の状態** フィールドで **保留** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-179">In the **Submission status** field, select **Pending**.</span></span>
+12. <span data-ttu-id="6b61c-180">**モデル マッピング** フィールドで、**応答データのインポート** を **(プレビュー) NFS-e ABRASF 応答データのインポート形式 (BR)** と共に選択し、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-180">In the **Model mapping** field, select **Response data import**, with **(Preview) NFS-e ABRASF response data import format (BR)** and then select **Save**.</span></span>
+13. <span data-ttu-id="6b61c-181">**新規** を選択し、**応答タイプ** フィールドに "ABRASFCuritibaInquireResponse" と入力し、**説明** フィールドに、"Description" と入力します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-181">Select **New**, and in the **Response type** field, enter "ABRASFCuritibaInquireResponse", and in the **Description** field, enter "Description".</span></span>
+14. <span data-ttu-id="6b61c-182">**提出の状態** フィールドで **保留** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-182">In the **Submission status** field, select **Pending**.</span></span>
+15. <span data-ttu-id="6b61c-183">**モデル マッピング** フィールドで、**応答メッセージのインポート** を **(プレビュー) NFS-e ABRASF クリチバ 応答メッセージのインポート (BR)** と共に選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-183">In the **Model mapping** field, select **Response message import**, with **(Preview) NFS-e ABRASF Curitiba response message import (BR).**</span></span>
+16. <span data-ttu-id="6b61c-184">**保存** を選択してトピック[電子請求アドオンの使用を開始する](e-invoicing-get-started.md)に戻り、電子請求機能を配置します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-184">Select **Save** and then return to the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md) to deploy the Electronic invoicing feature.</span></span>
+
+## <a name="privacy-notice"></a><span data-ttu-id="6b61c-185">プライバシー通知</span><span class="sxs-lookup"><span data-stu-id="6b61c-185">Privacy notice</span></span>
+<span data-ttu-id="6b61c-186">**NF-e 連邦 - ブラジルの電子請求 (BR)** および **NFS-e - ブラジルのサービス (市) 電子請求** 機能を有効にするには、組織の税務登録 ID を含む一部のデータの送信が必要となる場合があります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-186">Enabling the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features may require sending limited data, including the organization tax registration ID.</span></span> <span data-ttu-id="6b61c-187">このデータは、政府の Web サービスとの統合に必要な所定の形式で、この税務当局に電子請求書を送信する目的で、税務当局から権限を与えられた第三者機関に送信されます。</span><span class="sxs-lookup"><span data-stu-id="6b61c-187">This data is transmitted to third-party agencies authorized by the tax authority for the purpose of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service.</span></span> <span data-ttu-id="6b61c-188">管理者は、**NF-e 連邦 - ブラジルの電子請求 (BR)** および **NFS-e - ブラジルのサービス (市) 電子請求** 機能を有効またはオフにできます。</span><span class="sxs-lookup"><span data-stu-id="6b61c-188">As an administrator, you can enable or turn off the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features.</span></span> <span data-ttu-id="6b61c-189">これを行うには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-189">The following steps show how to do this:</span></span> 
+
+1. <span data-ttu-id="6b61c-190">**組織管理** > **設定** > **電子ドキュメント パラメーター** に移動します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-190">Go to **Organization administration** > **Setup** > **Electronic document parameters**.</span></span> 
+2. <span data-ttu-id="6b61c-191">**機能** タブで、**NF-e 連邦 - ブラジルの電子請求 (BR)** または **NFS-e - ブラジルのサービス (市) 電子請求** 機能を含む行を選択し、その機能を選択します。</span><span class="sxs-lookup"><span data-stu-id="6b61c-191">On the **Features** tab, select the row that contains the **NF-e Federal - Brazilian electronic invoice (BR)** or the **NFS-e - Brazilian service (city) electronic invoice** feature, and select the feature.</span></span> <span data-ttu-id="6b61c-192">これらの外部システムから Dynamics 365 のオンライン サービスにインポートされたデータは、当社の [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=512132) の対象となります。</span><span class="sxs-lookup"><span data-stu-id="6b61c-192">Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132).</span></span> <span data-ttu-id="6b61c-193">詳細については、各国固有の機能説明書のプライバシーに関する注意事項を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b61c-193">Consult the Privacy notice sections in country-specific feature documentation for more information.</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="128f0-104">ブラジル向けの電子請求書アドオンは、現在のところ、Microsoft Dynamics 365 Finance や Dynamics 365 Supply Chain Management に組み込まれている会計文書の統合で利用できる機能のすべてに対応していません。</span><span class="sxs-lookup"><span data-stu-id="128f0-104">The Electronic invoicing add-on for Brazil doesn't currently support all the functions that are available in the fiscal document integration that is built into Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="6b61c-194">追加リソース</span><span class="sxs-lookup"><span data-stu-id="6b61c-194">Additional resources</span></span>
 
-<span data-ttu-id="128f0-105">このトピックでは、ブラジ向け電子請求書作成アドオンの使用を開始するにあたっての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="128f0-105">This topic provides information that will help you get started with the Electronic invoicing add-on for Brazil.</span></span> <span data-ttu-id="128f0-106">このガイドでは、Regulatory Configuration Services (RCS) 、財務、Supply Chain Management における、国ごとに異なる構成手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="128f0-106">It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and in Finance and Supply Chain Management.</span></span> <span data-ttu-id="128f0-107">また、サービスを通じて NF-E 会計ドキュメント (電子請求書ドキュメントモデル 55) を提出するプロセス、および処理結果と会計ドキュメントの状態を確認する方法についても説明します。</span><span class="sxs-lookup"><span data-stu-id="128f0-107">It also guides you through the process of submitting an NF-e fiscal document (Electronic fiscal document model 55) through the service, and it explains how review the processing results and the status of the fiscal documents.</span></span>
+- [<span data-ttu-id="6b61c-195">電子請求アドオンの概要</span><span class="sxs-lookup"><span data-stu-id="6b61c-195">Electronic invoicing add-on overview</span></span>](e-invoicing-service-overview.md)
+- [<span data-ttu-id="6b61c-196">電子請求アドオン サービス管理の使用を開始する</span><span class="sxs-lookup"><span data-stu-id="6b61c-196">Get started with Electronic invoicing add-on service administration</span></span>](e-invoicing-get-started-service-administration.md)
+- [<span data-ttu-id="6b61c-197">電子請求アドオンの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="6b61c-197">Get started with the Electronic invoicing add-on</span></span>](e-invoicing-get-started.md)
 
-## <a name="prerequisites"></a><span data-ttu-id="128f0-108">必要条件</span><span class="sxs-lookup"><span data-stu-id="128f0-108">Prerequisites</span></span>
 
-<span data-ttu-id="128f0-109">このトピックの手順を実行する前に、 [電子請求アドオンを使用する](e-invoicing-get-started.md)に記載の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="128f0-109">Before you complete the steps in this topic, you must complete the steps in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).</span></span>
-
-## <a name="rcs-setup"></a><span data-ttu-id="128f0-110">RCS の設定</span><span class="sxs-lookup"><span data-stu-id="128f0-110">RCS setup</span></span>
-
-<span data-ttu-id="128f0-111">RCS の設定を行う際には、次の作業を実行します :</span><span class="sxs-lookup"><span data-stu-id="128f0-111">During the RCS setup, you will complete these tasks:</span></span>
-
-1. <span data-ttu-id="128f0-112">NF-E 会計ドキュメントで使用する電子請求書機能をインポートします。</span><span class="sxs-lookup"><span data-stu-id="128f0-112">Import the e-Invoicing feature for NF-e fiscal documents.</span></span>
-2. <span data-ttu-id="128f0-113">NF-e 会計書類を提出して承認を得るために必要となるファイル形式を確認してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-113">Review the file formats that are required to submit NF-e fiscal documents for authorization.</span></span>
-3. <span data-ttu-id="128f0-114">承認された NF-e の取消申請に必要となるファイル形式を確認してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-114">Review the file formats that are required to request the cancellation of an approved NF-e.</span></span>
-4. <span data-ttu-id="128f0-115">NF-e 会計書類を提出して承認を得るために必要となるイベントを設定します。</span><span class="sxs-lookup"><span data-stu-id="128f0-115">Configure the event that is required to submit NF-e fiscal documents for authorization.</span></span>
-5. <span data-ttu-id="128f0-116">承認された NF-e の取消申請を行うために必要となるイベントを構成します。</span><span class="sxs-lookup"><span data-stu-id="128f0-116">Configure the event that is required to request the cancellation of an approved NF-e.</span></span>
-6. <span data-ttu-id="128f0-117">電子請求書作成アドオン環境に電子請求書機能を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="128f0-117">Assign the e-Invoicing feature to an Electronic invoicing add-on environment.</span></span>
-7. <span data-ttu-id="128f0-118">電子請求書機能を公開する。</span><span class="sxs-lookup"><span data-stu-id="128f0-118">Publish the e-Invoicing feature.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="128f0-119">"電子請求のアドオン機能" は、電子請求書のアドオン サーバーを使用するように構成および公開されたリソースの総称です。</span><span class="sxs-lookup"><span data-stu-id="128f0-119">"The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing add-on server.</span></span> <span data-ttu-id="128f0-120">電子請求書機能の設定では、電子申告 (ER) 構成フォーマットを使用して設定可能なエクスポートおよびインポートファイルを作成し、アクションおよびアクション フローを使用して、リクエストの送信、応答のインポート、応答内容の解析に設定可能なルールの作成を可能にするなどの機能が組み合わされています。</span><span class="sxs-lookup"><span data-stu-id="128f0-120">The setup of the e-Invoicing feature combines, among other things, the use of Electronic reporting (ER) configuration formats to create configurable export and import files, and the use of actions and actions flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.</span></span>
-
-## <a name="import-the-e-invoicing-feature"></a><span data-ttu-id="128f0-121">電子請求書機能をインポートする</span><span class="sxs-lookup"><span data-stu-id="128f0-121">Import the e-Invoicing feature</span></span>
-
-1. <span data-ttu-id="128f0-122">RCS アカウントにサインインします</span><span class="sxs-lookup"><span data-stu-id="128f0-122">Sign in to your RCS account</span></span>
-2. <span data-ttu-id="128f0-123">**グローバリゼーション機能** ワークスペースの **機能** セクションで、**電子請求書** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-123">In the **Globalization features** workspace, in the **Features** section, select the **e-Invoicing** tile.</span></span>
-3. <span data-ttu-id="128f0-124">**電子請求書機能** ページで、**インポート** を選択して、グローバルレポジトリから  NF-e  の会計ドキュメントの電子請求機能をインポートします。</span><span class="sxs-lookup"><span data-stu-id="128f0-124">On the **e-Invoicing Features** page, select **Import** to import a NF-e fiscal document e-Invoicing feature from the Global repository.</span></span>
-
-    ![ボタンのインポート](media/e-Invoicing-services-get-started-BRA-Select-Import-e-Invoicing-feature.png)
-
-4. <span data-ttu-id="128f0-126">NF-E 会計ドキュメント機能を選択し、**インポート** を選択し ます。</span><span class="sxs-lookup"><span data-stu-id="128f0-126">Select the NF-e fiscal document feature, and then select **Import**.</span></span>
-
-    ![NF-e 機能のインポート](media/e-Invoicing-services-get-started-BRA-Select-Import-NF-e-feature.png)
-
-### <a name="create-a-new-version-of-the-nf-e-fiscal-document-feature"></a><span data-ttu-id="128f0-128">NF-e 会計ドキュメント機能の新しいバージョンを作成する</span><span class="sxs-lookup"><span data-stu-id="128f0-128">Create a new version of the NF-e fiscal document feature</span></span>
-
-- <span data-ttu-id="128f0-129">**電子請求機能** ページの **バージョン** タブで、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-129">On the **e-Invoicing Features** page, on the **Versions** tab, select **New**.</span></span>
-
-![新しい電子請求書機能のバージョンを追加する](media/e-Invoicing-services-get-started-BRA-Select-New-e-Invoicing-feature-version.png)
-
-### <a name="update-the-configuration-version"></a><span data-ttu-id="128f0-131">構成のバージョンを更新する</span><span class="sxs-lookup"><span data-stu-id="128f0-131">Update the configuration version</span></span>
-
-1. <span data-ttu-id="128f0-132">**電子請求機能** ページの **構成** タブで、**追加** または **削除** を選択して、構成のバージョン (ER ファイル形式の構成) を管理します。</span><span class="sxs-lookup"><span data-stu-id="128f0-132">On the **e-Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions (ER file format configurations).</span></span>
-
-    ![電子請求書機能の構成を管理する](media/e-Invoicing-services-get-started-BRA-Manage-e-Invoicing-feature-configurations.png)
-
-    - <span data-ttu-id="128f0-134">NF-e 会計文書機能の新しいバージョンを作成すると、すべての構成バージョン (ERファイル形式) が最新バージョンから継承されます。</span><span class="sxs-lookup"><span data-stu-id="128f0-134">When you create a new version of the NF-e fiscal document feature, all configuration version (ER file formats) are inherited from the latest version.</span></span>
-    - <span data-ttu-id="128f0-135">NF-e 会計文書を提出して承認を得るには、以下の構成バージョンが必要です :</span><span class="sxs-lookup"><span data-stu-id="128f0-135">To submit the NF-e fiscal document for authorization, the following configuration versions are required:</span></span>
-
-        - <span data-ttu-id="128f0-136">NFe 送信エクスポートの形式</span><span class="sxs-lookup"><span data-stu-id="128f0-136">NFe submit export format</span></span>
-        - <span data-ttu-id="128f0-137">NFe 応答メッセージのインポート</span><span class="sxs-lookup"><span data-stu-id="128f0-137">NFe response message import</span></span>
-        - <span data-ttu-id="128f0-138">NFe エラー ログのインポート</span><span class="sxs-lookup"><span data-stu-id="128f0-138">NFe error log import</span></span>
-
-    - <span data-ttu-id="128f0-139">NF-e の取り消しを提出するには、次の構成バージョンが必要です :</span><span class="sxs-lookup"><span data-stu-id="128f0-139">To submit the NF-e cancellation, the following configuration version is required:</span></span>
-
-        - <span data-ttu-id="128f0-140">NFe 取り消しエクスポートの形式</span><span class="sxs-lookup"><span data-stu-id="128f0-140">NFe cancel export format</span></span>
-
-2. <span data-ttu-id="128f0-141">一覧で構成バージョンを選択し、**編集** または **表示** を選択すると、**形式デザイナ** ページが表示されます。このページで、構成の編集や表示をすることができます。</span><span class="sxs-lookup"><span data-stu-id="128f0-141">In the list, select a configuration version, and then select **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.</span></span>
-
-    ![形式デザイナー ページを開く](media/e-Invoicing-services-get-started-BRA-Configuration-ER-fomat-designer.png)
-
-3. <span data-ttu-id="128f0-143">**形式デザイナー** ページを使用して、ER 形式ファイルの構成を編集、確認します。</span><span class="sxs-lookup"><span data-stu-id="128f0-143">Use the **Format designer** page to edit or view the ER format file configurations.</span></span> <span data-ttu-id="128f0-144">詳細については、[電子ドキュメントのコンフィギュレーションの作成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-144">For more information, see [Create electronic document configurations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).</span></span>
-
-    ![形式デザイナーのページ](media/e-Invoicing-services-get-started-BRA-ER-Format-designer.png)
-
-### <a name="manage-the-e-invoicing-feature-setups"></a><span data-ttu-id="128f0-146">電子請求書機能の設定を管理する</span><span class="sxs-lookup"><span data-stu-id="128f0-146">Manage the e-Invoicing feature setups</span></span>
-
-- <span data-ttu-id="128f0-147">**電子請求機能** ページの **設定** タブで、**追加** または **削除** を選択して、電子請求機能の設定 (NF-e イベント) を管理します。</span><span class="sxs-lookup"><span data-stu-id="128f0-147">On the **e-Invoicing Features** page, on the **Setups** tab, select **Add** or **Delete** to manage the e-Invoicing feature setups (that is, NF-e events).</span></span>
-
-![電子請求書機能の設定を管理する](media/e-Invoicing-services-get-started-BRA-Manage-e-Invoicing-feature-setup.png)
-
-<span data-ttu-id="128f0-149">その他の電子請求機能から派生した NF-e 会計ドキュメント機能の新しいバージョンを作成すると、すべての機能設定 (NF-eイベント) が最新バージョンから継承されます。</span><span class="sxs-lookup"><span data-stu-id="128f0-149">When you create a new version of the NF-e fiscal document feature that is derived from another e-Invoicing feature, all feature setups (NF-e events) are inherited from the latest version.</span></span>
-
-<span data-ttu-id="128f0-150">NF-e の会計書類を提出して承認を得るには、**提出** 機能の設定が必要となります。</span><span class="sxs-lookup"><span data-stu-id="128f0-150">To submit NF-e fiscal documents for authorization, the **Submit** feature setup is required.</span></span>
-
-<span data-ttu-id="128f0-151">NF-e の取り消しを提出するには、**取り消し** 機能の設定が必要です。</span><span class="sxs-lookup"><span data-stu-id="128f0-151">To submit NF-e cancellation, the **Cancellation** feature setup is required.</span></span>
-
-#### <a name="configure-the-submit-feature-setup"></a><span data-ttu-id="128f0-152">提出機能の設定を構成する</span><span class="sxs-lookup"><span data-stu-id="128f0-152">Configure the Submit feature setup</span></span>
-
-1. <span data-ttu-id="128f0-153">**電子請求機能** ページ上の **設定** タブで、**機能の設定** 列で、**提出** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-153">On the **e-Invoicing Features** page, on the **Setups** tab, in the **Feature setup** column, select **Submit**.</span></span>
-2. <span data-ttu-id="128f0-154">**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-154">Select **Edit**.</span></span>
-
-    ![電子請求書機能の設定を編集する](media/e-Invoicing-services-get-started-BRA-Edit-e-Invoicing-feature-setup.png)
-
-3. <span data-ttu-id="128f0-156">**機能のバージョン設定** ページで、**アクション** タブを選択してアクションの一覧を管理します。</span><span class="sxs-lookup"><span data-stu-id="128f0-156">On the **Feature version setup** page, select the **Actions** tab to manage the list of actions.</span></span>
-
-    ![アクション タブ](media/e-Invoicing-services-get-started-BRA-Select-Actions.png)
-
-4. <span data-ttu-id="128f0-158">NF-e 会計書類を提出して承認を得るために必要となるアクションを確認してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-158">Review the actions that are required to submit an NF-e for authorization.</span></span>
-
-    | <span data-ttu-id="128f0-159">アクション ID</span><span class="sxs-lookup"><span data-stu-id="128f0-159">Action ID</span></span> | <span data-ttu-id="128f0-160">アクション名</span><span class="sxs-lookup"><span data-stu-id="128f0-160">Action name</span></span>                  | <span data-ttu-id="128f0-161">アクション説明</span><span class="sxs-lookup"><span data-stu-id="128f0-161">Action description</span></span>                                                |
-    |-----------|------------------------------|-------------------------------------------------------------------|
-    | <span data-ttu-id="128f0-162">1</span><span class="sxs-lookup"><span data-stu-id="128f0-162">1</span></span>         | <span data-ttu-id="128f0-163">ドキュメントの変換</span><span class="sxs-lookup"><span data-stu-id="128f0-163">Transform document</span></span>           | <span data-ttu-id="128f0-164">提出に使用する NF-e XML ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="128f0-164">Create the NF-e XML file for submission.</span></span>                          |
-    | <span data-ttu-id="128f0-165">2</span><span class="sxs-lookup"><span data-stu-id="128f0-165">2</span></span>         | <span data-ttu-id="128f0-166">ドキュメントに署名</span><span class="sxs-lookup"><span data-stu-id="128f0-166">Sign document</span></span>                | <span data-ttu-id="128f0-167">XML ファイルにデジタル証明書を適用します。</span><span class="sxs-lookup"><span data-stu-id="128f0-167">Apply the digital certificate to the XML file.</span></span>                    |
-    | <span data-ttu-id="128f0-168">3</span><span class="sxs-lookup"><span data-stu-id="128f0-168">3</span></span>         | <span data-ttu-id="128f0-169">ブラジル SEFAZ サービスの呼び出し</span><span class="sxs-lookup"><span data-stu-id="128f0-169">Call Brazilian SEFAZ service</span></span> | <span data-ttu-id="128f0-170">署名された XML ファイルを web サービスに提出して承認を得ます。</span><span class="sxs-lookup"><span data-stu-id="128f0-170">Submit the signed XML file to the web services for authorization.</span></span> |
-    | <span data-ttu-id="128f0-171">4</span><span class="sxs-lookup"><span data-stu-id="128f0-171">4</span></span>         | <span data-ttu-id="128f0-172">応答の処理</span><span class="sxs-lookup"><span data-stu-id="128f0-172">Process response</span></span>             | <span data-ttu-id="128f0-173">Web サービスの応答を取得する。</span><span class="sxs-lookup"><span data-stu-id="128f0-173">Get the web service response.</span></span>                                     |
-    | <span data-ttu-id="128f0-174">5</span><span class="sxs-lookup"><span data-stu-id="128f0-174">5</span></span>         | <span data-ttu-id="128f0-175">ドキュメントの変換</span><span class="sxs-lookup"><span data-stu-id="128f0-175">Transform document</span></span>           | <span data-ttu-id="128f0-176">応答として受信したファイルの内容を解析します。</span><span class="sxs-lookup"><span data-stu-id="128f0-176">Parse the content of the file that is received as a response.</span></span>     |
-    | <span data-ttu-id="128f0-177">6</span><span class="sxs-lookup"><span data-stu-id="128f0-177">6</span></span>         | <span data-ttu-id="128f0-178">ドキュメントの変換</span><span class="sxs-lookup"><span data-stu-id="128f0-178">Transform document</span></span>           | <span data-ttu-id="128f0-179">提出状態の問い合わせに使用する XML ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="128f0-179">Create the XML file to inquire about status of the submission.</span></span>    |
-    | <span data-ttu-id="128f0-180">7</span><span class="sxs-lookup"><span data-stu-id="128f0-180">7</span></span>         | <span data-ttu-id="128f0-181">ブラジル SEFAZ サービスの呼び出し</span><span class="sxs-lookup"><span data-stu-id="128f0-181">Call Brazilian SEFAZ service</span></span> | <span data-ttu-id="128f0-182">提出状態を要求する XML ファイルを送信します。</span><span class="sxs-lookup"><span data-stu-id="128f0-182">Submit the XML file that requests the submission status.</span></span>          |
-    | <span data-ttu-id="128f0-183">8</span><span class="sxs-lookup"><span data-stu-id="128f0-183">8</span></span>         | <span data-ttu-id="128f0-184">応答の処理</span><span class="sxs-lookup"><span data-stu-id="128f0-184">Process response</span></span>             | <span data-ttu-id="128f0-185">Web サービスの応答を取得する。</span><span class="sxs-lookup"><span data-stu-id="128f0-185">Get the web service response.</span></span>                                     |
-
-#### <a name="set-up-the-url-for-sefaz-web-services"></a><span data-ttu-id="128f0-186">SEFAZ webサービスの URL を設定する</span><span class="sxs-lookup"><span data-stu-id="128f0-186">Set up the URL for SEFAZ web services</span></span> 
-
-1. <span data-ttu-id="128f0-187">**機能のバージョン設定** ページで、**アクション** タブの **アクション** クイックタブで、**ブラジルの SEFAZ サービスの呼び出し**(アクションID  **3**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-187">On the **Feature version setup** page, on the **Actions** tab, on the **Actions** FastTab, select **Call Brazilian SEFAZ service** (action ID **3**).</span></span>
-2. <span data-ttu-id="128f0-188">**パラメーター** クイックタブの **URL アドレス パラメーター**  フィールドに、NF-e の提出に使用する SEFAZ webサービスの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="128f0-188">On the **Parameters** FastTab, in the **URL address parameter** field, enter the URL of the SEFAZ web service for NF-e submission.</span></span>
-3. <span data-ttu-id="128f0-189">**アクション** クイックタブで、**ブラジルの SEFAZ サービスの呼び出し** (アクション ID **7**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-189">On the **Actions** FastTab, select **Call Brazilian SEFAZ service** (action ID **7**).</span></span>
-4. <span data-ttu-id="128f0-190">**パラメーター** クイックタブの **URL アドレス パラメーター**  フィールドに、NF-e の提出に使用する SEFAZ webサービスの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="128f0-190">On the **Parameters** FastTab, in the **URL address parameter** field, enter the URL of the SEFAZ web service for NF-e submission.</span></span>
-
-#### <a name="configure-the-cancellation-feature-setup"></a><span data-ttu-id="128f0-191">取り消し機能の設定を構成する</span><span class="sxs-lookup"><span data-stu-id="128f0-191">Configure the Cancellation feature setup</span></span>
-
-1. <span data-ttu-id="128f0-192">**電子請求機能** ページ上の **設定** タブで、**機能の設定** 列で、**取り消し** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-192">On the **e-Invoicing Features** page, on the **Setups** tab, in the **Feature setup** column, select **Cancellation**.</span></span>
-2. <span data-ttu-id="128f0-193">**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-193">Select **Edit**.</span></span>
-3. <span data-ttu-id="128f0-194">**機能のバージョン設定** ページで、**アクション** タブを選択してアクションの一覧を管理します。</span><span class="sxs-lookup"><span data-stu-id="128f0-194">On the **Feature version setup** page, select the **Actions** tab to manage the list of actions.</span></span>
-4. <span data-ttu-id="128f0-195">承認された NF-e の取消申請に必要となるアクションを確認してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-195">Review the actions that are required to request the cancellation of an approved NF-e.</span></span>
-
-    | <span data-ttu-id="128f0-196">アクション ID</span><span class="sxs-lookup"><span data-stu-id="128f0-196">Action ID</span></span> | <span data-ttu-id="128f0-197">アクション名</span><span class="sxs-lookup"><span data-stu-id="128f0-197">Action name</span></span>                  | <span data-ttu-id="128f0-198">アクション説明</span><span class="sxs-lookup"><span data-stu-id="128f0-198">Action description</span></span>                                               |
-    |-----------|------------------------------|------------------------------------------------------------------|
-    | <span data-ttu-id="128f0-199">1</span><span class="sxs-lookup"><span data-stu-id="128f0-199">1</span></span>         | <span data-ttu-id="128f0-200">ドキュメントの変換</span><span class="sxs-lookup"><span data-stu-id="128f0-200">Transform document</span></span>           | <span data-ttu-id="128f0-201">取り消しに使用する NF-e XML ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="128f0-201">Create the NF-e cancellation XML file for submission.</span></span>            |
-    | <span data-ttu-id="128f0-202">2</span><span class="sxs-lookup"><span data-stu-id="128f0-202">2</span></span>         | <span data-ttu-id="128f0-203">ドキュメントに署名</span><span class="sxs-lookup"><span data-stu-id="128f0-203">Sign document</span></span>                | <span data-ttu-id="128f0-204">XML ファイルにデジタル証明書を適用します。</span><span class="sxs-lookup"><span data-stu-id="128f0-204">Apply the digital certificate to the XML file.</span></span>                   |
-    | <span data-ttu-id="128f0-205">3</span><span class="sxs-lookup"><span data-stu-id="128f0-205">3</span></span>         | <span data-ttu-id="128f0-206">ブラジル SEFAZ サービスの呼び出し</span><span class="sxs-lookup"><span data-stu-id="128f0-206">Call Brazilian SEFAZ service</span></span> | <span data-ttu-id="128f0-207">署名された XML ファイルを web サービスに提出して取り消しをします。</span><span class="sxs-lookup"><span data-stu-id="128f0-207">Submit the signed XML file to the web services for cancellation.</span></span> |
-    | <span data-ttu-id="128f0-208">4</span><span class="sxs-lookup"><span data-stu-id="128f0-208">4</span></span>         | <span data-ttu-id="128f0-209">応答の処理</span><span class="sxs-lookup"><span data-stu-id="128f0-209">Process response</span></span>             | <span data-ttu-id="128f0-210">Web サービスの応答を取得する。</span><span class="sxs-lookup"><span data-stu-id="128f0-210">Get the web service response.</span></span>                                    |
-
-#### <a name="set-up-the-url-for-sefaz-web-services"></a><span data-ttu-id="128f0-211">SEFAZ webサービスの URL を設定する</span><span class="sxs-lookup"><span data-stu-id="128f0-211">Set up the URL for SEFAZ web services</span></span>
-
-1. <span data-ttu-id="128f0-212">**機能のバージョン設定** ページで、**アクション** タブの **アクション** クイックタブで、**ブラジルの SEFAZ サービスの呼び出し**(アクションID  **3**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-212">On the **Feature version setup** page, on the **Actions** tab, on the **Actions** FastTab, select **Call Brazilian SEFAZ service** (action ID **3**).</span></span>
-2. <span data-ttu-id="128f0-213">**パラメーター** クイックタブの **URL アドレス パラメーター**  フィールドに、承認済み NF-e の取り消しを行う SEFAZ webサービスの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="128f0-213">On the **Parameters** FastTab, in the **URL address parameter** field, enter the URL of the SEFAZ web service for cancellation of an approved NF-e.</span></span>
-
-### <a name="make-an-e-invoicing-environment-available-and-assign-a-draft-version"></a><span data-ttu-id="128f0-214">電子請求書の環境を有効にして下書きのバージョンを割り当てる</span><span class="sxs-lookup"><span data-stu-id="128f0-214">Make an e-Invoicing environment available and assign a Draft version</span></span>
-
-1. <span data-ttu-id="128f0-215">**電子請求書機能** ページの **環境** タブで、**有効化** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-215">On the **e-Invoicing Features** page, on the **Environments** tab, select **Enable**.</span></span>
-2. <span data-ttu-id="128f0-216">**環境** フィールドで、環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-216">In the **Environment** field, select the environment.</span></span>
-3. <span data-ttu-id="128f0-217">**有効開始** フィールドで、環境が有効になる日付を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-217">In the **Effective from** field, select the date when the environment should become effective.</span></span>
-4. <span data-ttu-id="128f0-218">**有効化** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-218">Select **Enable**.</span></span>
-
-![電子請求書の環境を有効化する](media/e-Invoicing-services-get-started-BRA-Enable-e-Invoicing-environment.png)
-
-### <a name="change-the-status-to-completed"></a><span data-ttu-id="128f0-220">状態を完了に変更する</span><span class="sxs-lookup"><span data-stu-id="128f0-220">Change the status to Completed</span></span>
-
-1. <span data-ttu-id="128f0-221">**電子請求書機能** ページの **バージョン** タブで、状態が **下書き** となっている電子請求書機能のバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-221">On the **e-Invoicing Features** page, on the **Versions** tab, select the version of the e-Invoicing feature that has a status of **Draft**.</span></span>
-2. <span data-ttu-id="128f0-222">**ステータスの変更 \> 完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-222">Select **Change status \> Complete**.</span></span>
-
-### <a name="change-the-status-to-publish"></a><span data-ttu-id="128f0-223">状態を公開に変更する</span><span class="sxs-lookup"><span data-stu-id="128f0-223">Change the status to Publish</span></span>
-
-1. <span data-ttu-id="128f0-224">**電子請求書機能** ページの **バージョン** タブで、状態が **完了** となっている電子請求書機能のバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-224">On the **e-Invoicing Features** page, on the **Versions** tab, select the version of the e-Invoicing feature that has a status of **Completed**.</span></span>
-2. <span data-ttu-id="128f0-225">**状態の変更 \> 公開** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-225">Select **Change status \> Publish**.</span></span>
-
-![電子請求書機能を公開する](media/e-Invoicing-services-get-started-BRA-Publish-e-Invoicing-feature.png)
-
-## <a name="set-up-electronic-invoicing-add-on-integration-in-finance-or-supply-chain-management"></a><span data-ttu-id="128f0-227">財務や Supply Chain Management における電子請求書のアドオン統合を設定する</span><span class="sxs-lookup"><span data-stu-id="128f0-227">Set up Electronic invoicing add-on integration in Finance or Supply Chain Management</span></span>
-
-<span data-ttu-id="128f0-228">設定を行う際には、次の作業を実行します :</span><span class="sxs-lookup"><span data-stu-id="128f0-228">During setup, you will complete these tasks:</span></span>
-
-1. <span data-ttu-id="128f0-229">ブラジル向け NF-e 連邦機能を有効にします。</span><span class="sxs-lookup"><span data-stu-id="128f0-229">Turn on the NF-e Federal feature for Brazil.</span></span>
-2. <span data-ttu-id="128f0-230">特定の ER データ モデル、データ モデル マッピング、NF-e 会計ドキュメントに必要な形式をインポートします。</span><span class="sxs-lookup"><span data-stu-id="128f0-230">Import the specific ER data model, the data model mapping, and the formats that are required for NF-e fiscal documents.</span></span>
-3. <span data-ttu-id="128f0-231">ER の構成をインポートし、送信プロセスが返された後に会計ドキュメントの状態を更新するために必要となる応答タイプを設定します。</span><span class="sxs-lookup"><span data-stu-id="128f0-231">Import the ER configuration, and set up the response types that are required to update the status of the fiscal document after the submission process is returned.</span></span>
-
-### <a name="turn-on-the-nf-e-federal-feature-for-brazil"></a><span data-ttu-id="128f0-232">ブラジル向け NF-e 連邦機能を有効にする</span><span class="sxs-lookup"><span data-stu-id="128f0-232">Turn on the NF-e Federal feature for Brazil</span></span>
-
-1. <span data-ttu-id="128f0-233">**組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動します。</span><span class="sxs-lookup"><span data-stu-id="128f0-233">Go to **Organization administration \> Setup \> Electronic document parameters**.</span></span>
-2. <span data-ttu-id="128f0-234">**機能** タブで、機能参照 **BR00053** 行の **有効** チェックボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="128f0-234">On the **Features** tab, select the **Enable** check box in the row for feature reference **BR00053**.</span></span>
-
-### <a name="import-the-er-data-model-mapping-required-for-nf-e-fiscal-documents"></a><span data-ttu-id="128f0-235">NF-e 会計ドキュメントに必要となる ER データ モデル マッピングをインポートする</span><span class="sxs-lookup"><span data-stu-id="128f0-235">Import the ER data model mapping required for NF-e fiscal documents</span></span>
-
-1. <span data-ttu-id="128f0-236">財務にログインします。</span><span class="sxs-lookup"><span data-stu-id="128f0-236">Sign in to Finance.</span></span>
-2. <span data-ttu-id="128f0-237">**電子レポート** ワークスペースの、**構成プロバイダー** セクションで、**Microsoft** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-237">In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.</span></span> <span data-ttu-id="128f0-238">この構成プロバイダーが **有効** に設定されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-238">Make sure that this configuration provider is set to **Active**.</span></span> <span data-ttu-id="128f0-239">プロバイダーを **有効化** を設定する方法については、[構成プロバイダーを作成して有効化としてマークする](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-239">For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).</span></span>
-3. <span data-ttu-id="128f0-240">**リポジトリ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-240">Select **Repositories**.</span></span>
-4. <span data-ttu-id="128f0-241">**グローバル リソース \>  開く** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-241">Select **Global resource \> Open**.</span></span>
-5. <span data-ttu-id="128f0-242">**会計ドキュメントのマッピング** 構成をインポートします。</span><span class="sxs-lookup"><span data-stu-id="128f0-242">Import **Fiscal documents mapping** configurations.</span></span>
-
-### <a name="import-er-configurations-and-set-up-the-response-types-for-fiscal-documents"></a><span data-ttu-id="128f0-243">ER構成をインポートして会計ドキュメントの応答タイプを設定する</span><span class="sxs-lookup"><span data-stu-id="128f0-243">Import ER configurations and set up the response types for fiscal documents</span></span>
-
-1. <span data-ttu-id="128f0-244">**電子レポート** ワークスペースの、**構成プロバイダー** セクションで、**Microsoft** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-244">In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.</span></span>
-2. <span data-ttu-id="128f0-245">**リポジトリ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-245">Select **Repositories**.</span></span>
-3. <span data-ttu-id="128f0-246">**グローバル リソース \>  開く** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-246">Select **Global resource \> Open**.</span></span>
-4. <span data-ttu-id="128f0-247">**NF-e エラーログのインポート (BR)**、**NF-e 応答データのインポート形式 (BR)**、および **NF-e 応答メッセージのインポート (BR)** をインポートします。</span><span class="sxs-lookup"><span data-stu-id="128f0-247">Import **NF-e error log import (BR)**, **NF-e response data import format (BR)**, and **NF-e response message import (BR)**.</span></span>
-5. <span data-ttu-id="128f0-248">**組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動します。</span><span class="sxs-lookup"><span data-stu-id="128f0-248">Go to **Organization administration \> Setup \> Electronic document parameters**.</span></span>
-6. <span data-ttu-id="128f0-249">**電子ドキュメント** タブで、**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-249">On the **Electronic document** tab, select **Add**.</span></span>
-6. <span data-ttu-id="128f0-250">**テーブル名** フィールドに、**会計ドキュメント ヘッダー** を入力し ます。</span><span class="sxs-lookup"><span data-stu-id="128f0-250">In the **Table name** field, enter **Fiscal document header**.</span></span>
-7. <span data-ttu-id="128f0-251">**ドキュメント コンテキスト** フィールドで、**顧客請求書コンテキスト モデル - 会計ドキュメントのコンテキスト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-251">In the **Document context** field, select **Customer invoice context model – Fiscal document context**.</span></span>
-8. <span data-ttu-id="128f0-252">**応答タイプ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-252">Select **Response types**.</span></span>
-9. <span data-ttu-id="128f0-253">**新規** を選択し、続いて **応答タイプ** フィールドで、**応答** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-253">Select **New**, and then, in the **Response type** field, select **Response**.</span></span>
-10. <span data-ttu-id="128f0-254">**提出の状態** フィールドで **保留** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-254">In the **Submission status** field, select **Pending**.</span></span>
-11. <span data-ttu-id="128f0-255">**モデル マッピング** フィールドで、**応答メッセージのインポート形式 - 応答メッセージからモデル マッピング** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-255">In the **Model mapping** field, select **Response message import format – Model mapping from response message**.</span></span>
-12. <span data-ttu-id="128f0-256">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-256">Select **Save**.</span></span>
-13. <span data-ttu-id="128f0-257">**新規** を選択し、続いて **応答タイプ** フィールドで、**ResponseData** と入力します。</span><span class="sxs-lookup"><span data-stu-id="128f0-257">Select **New**, and then, in the **Response type** field, enter **ResponseData**.</span></span>
-14. <span data-ttu-id="128f0-258">**提出の状態** フィールドで **保留** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-258">In the **Submission status** field, select **Pending**.</span></span>
-15. <span data-ttu-id="128f0-259">**モデル マッピング** フィールドで、**NFe 応答データのインポート形式 - 応答データインポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-259">In the **Model mapping** field, select **NFe response data import format – Response data import**.</span></span>
-16. <span data-ttu-id="128f0-260">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-260">Select **Save**.</span></span>
-
-## <a name="electronic-invoice-processing"></a><span data-ttu-id="128f0-261">電子請求書の処理</span><span class="sxs-lookup"><span data-stu-id="128f0-261">Electronic invoice processing</span></span>
-
-<span data-ttu-id="128f0-262">財務の処置を行う際には、次の作業を実行します :</span><span class="sxs-lookup"><span data-stu-id="128f0-262">During processing in Finance, you will complete these tasks:</span></span>
-
-1. <span data-ttu-id="128f0-263">電子請求書のアドオンを使用して会計ドキュメントを送信します。</span><span class="sxs-lookup"><span data-stu-id="128f0-263">Submit a fiscal document through the Electronic invoicing add-on.</span></span>
-2. <span data-ttu-id="128f0-264">送信の実行ログを表示し、処理の結果を確認します。</span><span class="sxs-lookup"><span data-stu-id="128f0-264">View the submission execution logs and review the results of processing.</span></span>
-3. <span data-ttu-id="128f0-265">電子請求書アドオンを使用して会計書類の取り消しを送信します。</span><span class="sxs-lookup"><span data-stu-id="128f0-265">Submit the cancellation of a fiscal document through the Electronic invoicing add-on.</span></span>
-
-### <a name="submit-nf-e-fiscal-documents-for-sefaz-authorization"></a><span data-ttu-id="128f0-266">SEFAZ 承認用の NF-e 会計ドキュメントを送信する</span><span class="sxs-lookup"><span data-stu-id="128f0-266">Submit NF-e fiscal documents for SEFAZ authorization</span></span> 
-
-<span data-ttu-id="128f0-267">**構成可能な電子請求書作成アドオンの統合** 機能を有効化すると、NF-e 会計書類を提出して承認を得る (**エクスポート/インポート NF-e プロセス**) 従来のプロセスが使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="128f0-267">After you turn on the **Configurable Electronic invoicing add-on integration** feature, the old process for submitting NF-e fiscal documents for authorization (**Export/Import NF-e process**) can no longer be used.</span></span> <span data-ttu-id="128f0-268">これは、**電子ドキュメントの送信** という名前の新しいプロセスによって置き換えられ ます。</span><span class="sxs-lookup"><span data-stu-id="128f0-268">It's replaced by a new process that is named **Submit electronic documents**.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="128f0-269">続行する前に、顧客の会計事務所が発行した顧客の会計書類モデル 55 が 1 つ以上あることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-269">Before you continue, make sure that you have one or more customer fiscal documents model 55 that were issued by the customer's fiscal establishment.</span></span> <span data-ttu-id="128f0-270">これらの会計ドキュメントの方向は **発信** に設定されている必要があり、状態を **作成** する必要があります。</span><span class="sxs-lookup"><span data-stu-id="128f0-270">The direction for these fiscal documents must be set to **Outgoing**, and the status must be **Created**.</span></span> <span data-ttu-id="128f0-271">詳細については、[顧客会計ドキュメントの発行 (ブラジル)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document)を参照してください 。</span><span class="sxs-lookup"><span data-stu-id="128f0-271">For more information, see [Issue customer fiscal document (Brazil)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document).</span></span>
-
-1. <span data-ttu-id="128f0-272">**組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの送信** に移動します。</span><span class="sxs-lookup"><span data-stu-id="128f0-272">Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.</span></span>
-2. <span data-ttu-id="128f0-273">ドキュメントを初めて送信する場合は、必ず **ドキュメントの再送信** オプションを **いいえ** に設定してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-273">For the first submission of any document, always set the **Resubmit documents** option to **No**.</span></span> <span data-ttu-id="128f0-274">サービスを使用してドキュメントを再送信する必要がある場合は、このオプションを **はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="128f0-274">If you must resubmit a document through the service, set this option to **Yes**.</span></span>
-3. <span data-ttu-id="128f0-275">**含めるレコード** クイックタブで、**フィルター** を選択して **照会** ダイアログ ボックスを開きます。ここでは送信するドキュメントを選択するクエリを作成できます。</span><span class="sxs-lookup"><span data-stu-id="128f0-275">On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for submission.</span></span>
-4. <span data-ttu-id="128f0-276">**範囲** タブで **追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-276">On the **Range** tab, select **Add**.</span></span>
-5. <span data-ttu-id="128f0-277">**テーブル名** フィールドに、**会計ドキュメント ヘッダー** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-277">In the **Table** field, select **Fiscal document header**.</span></span>
-6. <span data-ttu-id="128f0-278">**派生テーブル** フィールドに、**会計ドキュメント ヘッダー** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-278">In the **Derived table** field, select **Fiscal document header**.</span></span>
-6. <span data-ttu-id="128f0-279">**フィールド** フィールドで、**番号** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-279">In the **Field** field, select **Number**.</span></span>
-7. <span data-ttu-id="128f0-280">**基準** フィールドに、送信する必要のある会計ドキュメントの番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="128f0-280">In the **Criteria** field, enter the number of the fiscal document that should be submitted.</span></span>
-8. <span data-ttu-id="128f0-281">**OK** を選択して **照会** ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="128f0-281">Select **OK** to close the **Inquiry** dialog box.</span></span>
-8. <span data-ttu-id="128f0-282">**OK** を選択し、選択したドキュメントを送信します。</span><span class="sxs-lookup"><span data-stu-id="128f0-282">Select **OK** to submit the selected documents.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="128f0-283">このサービスを利用して初めて書類を提出する際は、電子請求書アドオンとの接続を確認するように促されます。</span><span class="sxs-lookup"><span data-stu-id="128f0-283">During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the Electronic invoicing add-on.</span></span> <span data-ttu-id="128f0-284">**ここをクリックして電子ドキュメント送信サービスに接続する** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-284">Select **Click here to connect to Electronic Document Submission Service**.</span></span>
-
-### <a name="view-all-submission-logs"></a><span data-ttu-id="128f0-285">すべての提出ログを表示する</span><span class="sxs-lookup"><span data-stu-id="128f0-285">View all submission logs</span></span>
-
-<span data-ttu-id="128f0-286">**構成可能な電子請求書作成アドオンの統合** 機能を有効にすると、ドキュメントの提出プロセスをフォローする新しいページが利用可能となります。</span><span class="sxs-lookup"><span data-stu-id="128f0-286">After you turn on the **Configurable Electronic invoicing add-on integration** feature, a new page is available that lets you follow up on the document submission process.</span></span> <span data-ttu-id="128f0-287">このページを使用して全ての提出書類の提出ログを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="128f0-287">You can use this page to view the submission logs for all submitted documents.</span></span>
-
-1. <span data-ttu-id="128f0-288">**組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの提出ログ** に移動します。</span><span class="sxs-lookup"><span data-stu-id="128f0-288">Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.</span></span>
-2. <span data-ttu-id="128f0-289">**ドキュメント タイプ** フィールドで、**会計ドキュメントのヘッダー** を選択して会計ドキュメントのみをフィルタ処理します。</span><span class="sxs-lookup"><span data-stu-id="128f0-289">In the **Document type** field, select **Fiscal document header** to filter for fiscal documents only.</span></span>
-3. <span data-ttu-id="128f0-290">アクション ウィンドウで、**照会\> 提出の詳細** を選択して、提出実行ログの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="128f0-290">On the Action Pane, select **Inquiries \> Submission details** to view the details of the submission execution logs.</span></span>
-
-![提出書類ログの詳細を表示する](media/e-Invoicing-services-get-started-BRA-View-Submission-log-details.png)
-
-> [!NOTE] 
-> <span data-ttu-id="128f0-292">NF-e 会計ドキュメントの場合、**エラーコード** 列には SEFAZ web サービスによって返されたリターン コードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="128f0-292">For NF-e fiscal documents, the **Error code** column shows the return code that was returned by SEFAZ web services.</span></span>
-
-### <a name="view-submission-logs-through-the-fiscal-document-page"></a><span data-ttu-id="128f0-293">会計ドキュメント ページを介して提出ログを表示する</span><span class="sxs-lookup"><span data-stu-id="128f0-293">View submission logs through the fiscal document page</span></span>
-
-<span data-ttu-id="128f0-294">**構成可能な電子請求書作成アドオンの統合** 機能を有効にすると、会計ドキュメント ページを介して提出書類のログを表示することも可能です。</span><span class="sxs-lookup"><span data-stu-id="128f0-294">After you turn on the **Configurable Electronic invoicing add-on integration** feature, you can also view the submission logs through the fiscal document page.</span></span>
-
-1. <span data-ttu-id="128f0-295">**一般会計 \> 照会とレポート \> 会計ドキュメント \> すべての会計ドキュメント** に移動します。</span><span class="sxs-lookup"><span data-stu-id="128f0-295">Go to **General ledger \> Inquiries and reports \> Fiscal documents \> All fiscal documents**.</span></span>
-2. <span data-ttu-id="128f0-296">電子請求アドオンで以前に送信された会計ドキュメントを選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-296">Select a fiscal document that was previously submitted through the Electronic invoicing add-on.</span></span>
-3. <span data-ttu-id="128f0-297">アクション ウィンドウの **NF-e 連邦** タブで、**電子ドキュメント ログ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-297">On the Action Pane, on the **NF-e federal** tab, select **Electronic document log**.</span></span>
-
-![会計ドキュメント ページから提出ログを表示する](media/e-Invoicing-services-get-started-BRA-View-Submission-log-from-Fiscal-document-viewer.png)
-
-### <a name="submit-approved-nf-e-fiscal-documents-for-sefaz-cancellation"></a><span data-ttu-id="128f0-299">SEFAZ 取り消しに使用する承認済の NF-e 会計ドキュメントを送信する</span><span class="sxs-lookup"><span data-stu-id="128f0-299">Submit approved NF-e fiscal documents for SEFAZ cancellation</span></span>
-
-<span data-ttu-id="128f0-300">**構成可能な電子請求書作成アドオンの統合** 機能を有効化すると、NF-e 会計書類の取り消しに使用する従来のプロセスが使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="128f0-300">After you turn on the **Configurable Electronic invoicing add-on integration** feature, the old process for canceling NF-e fiscal documents can no longer be used.</span></span> <span data-ttu-id="128f0-301">**電子ドキュメントの送信ログ** ページに埋め込まれた新しい取り消しプロセスに置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="128f0-301">It's replaced by a new cancellation process that is embedded on the **Electronic document submission log** page.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="128f0-302">承認済の NF-e 会計ドキュメントの顧客会計文書の取消が実行されたことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-302">Make sure that you've run the cancellation of the customer fiscal document for an approved NF-e fiscal document.</span></span> <span data-ttu-id="128f0-303">詳細については、[顧客会計ドキュメントの取り消し (ブラジル)](https://docs.microsoft.com/dynamics365/finance/localizations/latam-bra-cancel-customer-fiscal-documents)を参照してください 。</span><span class="sxs-lookup"><span data-stu-id="128f0-303">For more information see, [Cancel customer fiscal document (Brazil)](https://docs.microsoft.com/dynamics365/finance/localizations/latam-bra-cancel-customer-fiscal-documents).</span></span>
-
-1. <span data-ttu-id="128f0-304">**組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの提出ログ** に移動します。</span><span class="sxs-lookup"><span data-stu-id="128f0-304">Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.</span></span>
-2. <span data-ttu-id="128f0-305">会計ドキュメントを選択し、**機能 \> 関連する提出書類を送信する** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-305">Select the fiscal document, and then select **Functions \> Send related submissions**.</span></span>
-3. <span data-ttu-id="128f0-306">提出に関する説明を入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-306">Enter a description for the related submission, and then select **OK**.</span></span>
-
-### <a name="view-cancellation-submission-logs"></a><span data-ttu-id="128f0-307">すべての取り消し提出ログを表示する</span><span class="sxs-lookup"><span data-stu-id="128f0-307">View cancellation submission logs</span></span>
-
-1. <span data-ttu-id="128f0-308">**組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの提出ログ** に移動します。</span><span class="sxs-lookup"><span data-stu-id="128f0-308">Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.</span></span>
-2. <span data-ttu-id="128f0-309">**ドキュメント タイプ** フィールドで、**会計ドキュメントのヘッダー** を選択して会計ドキュメントのみをフィルタ処理します。</span><span class="sxs-lookup"><span data-stu-id="128f0-309">In the **Document type** field, select **Fiscal document header** to filter for fiscal documents only.</span></span>
-3. <span data-ttu-id="128f0-310">会計ドキュメントを選択し、アクション ウィンドウで、**照会 \> 関連する提出書類** を選択します。</span><span class="sxs-lookup"><span data-stu-id="128f0-310">Select the fiscal document, and then, on the Action Pane, select **Inquiries \> Related submission**.</span></span>
-
-    <span data-ttu-id="128f0-311">関連する提出書類は、最初に作成された主要な提出書類に関連付けられている提出書類です。</span><span class="sxs-lookup"><span data-stu-id="128f0-311">Related submissions are submissions that are related to a main submission that was made first.</span></span> <span data-ttu-id="128f0-312">たとえば、特定の NF-e を承認する提出書類は、メインの提出書類です。</span><span class="sxs-lookup"><span data-stu-id="128f0-312">For example, the submission that authorizes a specific NF-e is the main submission.</span></span> <span data-ttu-id="128f0-313">SEFAZ 内の同一の NF-e の取り消しを要求する提出書類は、関連付けられている提出書類です。</span><span class="sxs-lookup"><span data-stu-id="128f0-313">The submission that requests the cancellation of the same NF-e in SEFAZ is a related submission.</span></span> <span data-ttu-id="128f0-314">これは、別の提出書類を通じて行われたジョブの取り消しを申請している場合にのみ存在します。</span><span class="sxs-lookup"><span data-stu-id="128f0-314">It exists only because it's requesting the cancellation of the job that was done through another submission.</span></span>
-
-    <span data-ttu-id="128f0-315">**関連する提出書類** ページには、特定の会計ドキュメントに関連する提出書類とその提出書類の状態が表示されます。</span><span class="sxs-lookup"><span data-stu-id="128f0-315">The **Related submissions** page shows all related submissions, and their submission status, for a given fiscal document.</span></span> <span data-ttu-id="128f0-316">次の図では、最初の行は、会計ドキュメントの承認を要求する提出書類を表します。</span><span class="sxs-lookup"><span data-stu-id="128f0-316">In the following illustration, the first line represents the submission that requested approval of the fiscal document.</span></span> <span data-ttu-id="128f0-317">2 行目は、その会計ドキュメントを取り消しした提出書類を表します。</span><span class="sxs-lookup"><span data-stu-id="128f0-317">The second line represents the submission that canceled that fiscal document.</span></span>
-
-    ![取り消し提出ログを表示する](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log.png)
-
-4. <span data-ttu-id="128f0-319">アクション ウィンドウで、**照会\> 提出の詳細** を選択して、提出実行ログの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="128f0-319">On the Action Pane, select **Inquiries \> Submission details** to view the details of the submission execution logs.</span></span>
-
-    ![提出書類の取り消しログの詳細を表示する](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
-
-## <a name="privacy-notice"></a><span data-ttu-id="128f0-321">プライバシー通知</span><span class="sxs-lookup"><span data-stu-id="128f0-321">Privacy notice</span></span>
-<span data-ttu-id="128f0-322">BR-00053 (NF-e 連邦) 機能を有効にすると、組織の税務登録 ID を含む、一部のデータを送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="128f0-322">Enabling the BR-00053 (NF-e Federal) feature may require sending limited data, which includes the organization tax registration ID.</span></span> <span data-ttu-id="128f0-323">これは、政府の web サービスとの統合に必要な所定の形式で、この税務当局に電子請求書を送信する目的で、税務当局から権限を与えられた第三者機関に送信されます。</span><span class="sxs-lookup"><span data-stu-id="128f0-323">This will be transmitted to third-party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service.</span></span> <span data-ttu-id="128f0-324">管理者は、**組織管理 \> 設定 \>電子ドキュメント パラメータ** に移動して、BR-00053 (NF-e 連邦) 機能を有効、または無効にすることができ ます。</span><span class="sxs-lookup"><span data-stu-id="128f0-324">An administrator can enable and disable the BR-00053 (NF-e Federal) feature by navigating to **Organization administration \> Setup \> Electronic document parameters**.</span></span> <span data-ttu-id="128f0-325">**機能** タブを選択し 、BR-00053 機能が含まれている行を選択して、適切な選択を行います。</span><span class="sxs-lookup"><span data-stu-id="128f0-325">Select the **Features** tab, select the row containing the BR-00053 feature, and then make the appropriate selection.</span></span> <span data-ttu-id="128f0-326">これらの外部システムから Dynamics 365 のオンライン サービスにインポートされたデータは、当社の [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=512132) の対象となります。</span><span class="sxs-lookup"><span data-stu-id="128f0-326">Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132).</span></span> <span data-ttu-id="128f0-327">詳細については、各国固有の機能説明書のプライバシーに関する注意事項を参照してください。</span><span class="sxs-lookup"><span data-stu-id="128f0-327">Please consult the Privacy notice sections in country-specific feature documentation for more information.</span></span>
-
-
-## <a name="additional-resources"></a><span data-ttu-id="128f0-328">追加リソース</span><span class="sxs-lookup"><span data-stu-id="128f0-328">Additional resources</span></span>
-
-- [<span data-ttu-id="128f0-329">電子請求書アドオン機能の概要</span><span class="sxs-lookup"><span data-stu-id="128f0-329">Electronic invoicing add-on overview</span></span>](e-invoicing-service-overview.md)
-- [<span data-ttu-id="128f0-330">電子請求書のアドオンの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="128f0-330">Get started with the Electronic invoicing add-on</span></span>](e-invoicing-get-started.md)
-- [<span data-ttu-id="128f0-331">電子請求のアドオン設定</span><span class="sxs-lookup"><span data-stu-id="128f0-331">Set up the Electronic invoicing add-on</span></span>](e-invoicing-setup.md)
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
