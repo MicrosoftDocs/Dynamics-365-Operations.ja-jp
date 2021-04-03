@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: ReqPlanSched, ReqGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 8075f8d7c3868c6d6012edbce17dbbb4749209ab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 20b4012e054a25d7d21c6f017d8ebcf18f6ee28d
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992347"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501081"
 ---
 # <a name="purchase-requisitions"></a>購買要求
 
@@ -44,7 +44,7 @@ ms.locfileid: "4992347"
 
 ### <a name="set-the-approved-requisitions-time-fence-for-a-coverage-group"></a>補充グループに対する承認済要求タイム フェンスの設定
 
-1. **マスター プラン** \> **設定** \> **補充** \> **補充グループ** に移動します。
+1. **マスター プラン** \> **設定** \> **補充** \> **補充グループ** の順に移動します。
 1. 補充グループを作成または選択します。
 1. **その他** のクイック タブで、**承認済要求タイム フェンス (日数)** フィールドをタイム フェンスに含める日数を設定します。
 1. 承認済要求タイム フェンスを設定する追加の補充グループごとに手順 2 と 3 を繰り返します。

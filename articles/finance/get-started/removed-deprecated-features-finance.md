@@ -3,7 +3,7 @@ title: Dynamics 365 Finance の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
 author: roschlom
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,15 +11,15 @@ ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7090a7461c7b77d74f081afd8f22db100cdf0792
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
+ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154180"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5474066"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは推奨されない機能
 
@@ -33,7 +33,19 @@ ms.locfileid: "5154180"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 > [!NOTE]
-> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Finance 10.0.17 リリースの削除済みまたは非推奨の機能
+
+### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>電子申告コンフィギュレーションのストレージ オプションとしての LCS リポジトリ
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 新しい Regulatory Configuration Service (RCS) のグローバル リポジトリに置き換えられます |
+| **別の機能で置き換えられているか?**   | あり |
+| **影響を受ける製品領域**         | Dynamics 365 Finance、Supply Chain Management、Project Operations 製品|
+| **配置オプション**              | All |
+| **状態**                         | 非推奨: 2022 年 4 月 1 日より、電子申告 (ER) コンフィギュレーションのストレージ オプションとして Microsoft Dynamics Lifecycle Services (LCS) リポジトリのサポートを終了する予定です。 新しい Microsoft ER コンフィギュレーションは、グローバル リポジトリからのみダウンロードできるように公開されます。 グローバル リポジトリは、Dynamics 365 製品と RCS からアクセスできます。 詳細については、[RCS から ER コンフィグレーションをインポートする](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) を参照してください。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Finance 10.0.16 リリースの削除済みまたは非推奨の機能
 

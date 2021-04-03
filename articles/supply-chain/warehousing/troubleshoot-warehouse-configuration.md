@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994006"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487100"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>倉庫コンフィギュレーションのトラブルシューティング
 
@@ -109,5 +109,32 @@ ms.locfileid: "4994006"
 
 必要に応じて、ページの他のフィールドを設定できます。
 
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>場所プロファイルのドック管理プロファイルは、在庫タイプの混合を防ぎません。
+
+### <a name="issue-description"></a>問題の説明
+
+*出荷連結ポリシー* を使用しています。 *場所プロファイル* の *ドック管理プロファイル* を設定しましたが、作業の作成時には、最終的な場所で在庫タイプが混合します。
+
+### <a name="issue-resolution"></a>問題の解決
+
+ドック管理プロファイルでは、事前に作業を分割する必要があります。 つまり、ドック管理プロファイルでは、作業ヘッダーに複数のプット場所がないことを想定しています。
+
+ドック管理プロファイルで在庫の混合を効果的に管理するには、作業ヘッダーの区切りを設定する必要があります。
+
+この例では、ドック管理プロファイルは **混合しない在庫タイプ** を *出荷 ID* に設定されるように構成しています。その場合は、作業ヘッダーの区切りを設定します。
+
+1. **倉庫管理 \> 設定 \> 作業 \> 作業テンプレート** の順に移動します。
+1. 編集する **作業指示書のタイプ** (*発注書* など) を選択します。
+1. 編集するには、作業テンプレートを選択します。
+1. アクション ウィンドウで、**クエリの編集** を選択します。
+1. **並べ替え** タブを開き、次の設定で行を追加します。
+    - **テーブル** - *一時的な作業トランザクション*
+    - **派生テーブル** - *一時的な作業トランザクション*
+    - **フィールド** - *出荷 ID*
+1. **OK** を選択します。
+1. **作業テンプレート** ページに戻ります。 アクション ウィンドウで、**作業ヘッダーの分割** を選択します。
+1. アクション ウィンドウで、**編集** を選択します。
+1. **フィールド名***出荷 ID* に関連付けられているチェックボックスをオンにします。
+1. アクション ウィンドウで、**保存** を選択します。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

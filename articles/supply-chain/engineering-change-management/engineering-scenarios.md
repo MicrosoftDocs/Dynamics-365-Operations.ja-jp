@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 19fab4f6b81eaf6e3605b6668212eece10606360
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 56e868f3050432db8d3b1721da435665f554d90d
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987582"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487924"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>エンジニアリングの変更管理機能のチュートリアル
 
@@ -397,7 +397,6 @@ ms.locfileid: "4987582"
 
 1. アクション ペインの **変更―ダー** タブ、**状態の変更** グループで、**承認** を選択します。
 1. **プロセス** を選択して、製品の情報を更新します。
-1. **完了** を選択すると、変更オーダーが完了済としてマークされます。
 
 ## <a name="release-the-changed-product"></a>変更した製品のリリース
 
@@ -411,5 +410,8 @@ ms.locfileid: "4987582"
 1. **OK** を選択し、**リリース**  ダイアログ ボックスを閉じて、偏光オーダーに戻ります。
 1. アクション ペインの、**変更オーダー** タブ、**製品リリース** グループで、**プロセス** を選択して、影響を受ける製品を選択した会社にリリースします。 または、**製品構造のリリース** を選択してリリースプロセスを開始します。
 
+## <a name="complete-the-change-order"></a>変更オーダーの完了
+
+変更オーダーを完了としてマークして、それ以上のアクションが残っていないことを示す場合は、アクション ウィンドウで **完了** を選択します。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

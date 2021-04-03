@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970309"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556269"
 ---
 # <a name="planned-cross-docking"></a>計画済クロスドッキング
 
@@ -37,14 +37,14 @@ ms.locfileid: "4970309"
 > [!NOTE]
 > 倉庫管理パラメーターでこの機能の設定が有効になっている場合でも、クロスドッキング作業がキャンセルされると、在庫トランザクションは登録解除 **されません**。
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>計画済クロスドッキング機能を有効にする
+## <a name="turn-on-the-planned-cross-docking-features"></a>計画済クロスドッキング機能を有効にする
 
-高度な計画済クロスドッキングを使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
+このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、次の機能を次の順序でオンにします:
 
-- **モジュール:** *倉庫管理*
-- **機能名 :** *計画済クロスドッキング*
+1. *計画済クロスドッキング*
+2. *クロスドッキング テンプレートと場所ディレクティブ*
 
-## <a name="setup"></a>セットアップ
+## <a name="setup"></a>段取り
 
 ### <a name="regenerate-load-posting-methods"></a>積荷の転記メソッドの再生成
 
@@ -89,6 +89,10 @@ ms.locfileid: "4970309"
     - **供給受領の再検証 :** *いいえ*
 
         このオプションは、受領時に供給を再検証するかどうかを定義します。 このオプションが *はい* に設定されている場合は、最大時間ウィンドウと有効期限の日付範囲の両方がチェックされます。
+
+    - **ディレクティブ コード** このフィールドは空白のままにします
+
+        このオプションを選択すると、場所ディレクティブを使用することで、クロスドッキング在庫の移動の最適な場所を決定できます。 関連する各クロスドッキング テンプレートにディレクティブ コードを割り当てると、このコードを設定できます。 各ディレクティブ コードは、一意の場所のディレクティブを識別します。
 
     - **時間ウィンドウの検証 :** *はい*
 

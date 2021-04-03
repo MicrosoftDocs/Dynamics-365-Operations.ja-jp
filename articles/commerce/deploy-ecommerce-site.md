@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3b750ee89a85688dcebe673f9c3ff13693e9fcad
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d31e3e7248809a00ad51183b80205d1351567ab3
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976741"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477879"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>新しい eコマース テナントのデプロイ
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して新しい Dynamics 365 Commerce e コマース サイトをデプロイする方法について説明します。
-
-## <a name="overview"></a>概要
 
 Microsoft Dynamics Lifecycle Services (LCS) は、パートナーや顧客がプロジェクト環境を管理したり、Microsoft Dynamics 製品や機能に関する最新情報を表示したり、サポート インシデントを作成、追跡、参照したりするために使用できる、クラウドベースのコラボレーション ワークスペースです。 e コマースの管理機能は LCS に統合されています。
 

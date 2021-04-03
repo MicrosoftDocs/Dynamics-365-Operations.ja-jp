@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 38f53d402ebe9f9f358281dd3996797a20923056
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: f5a942ef93af4348404c74d8b15d98ae6fa796ff
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125476"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466739"
 ---
 # <a name="party-contact"></a>関係者の連絡先
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、Dynamics 365 Human Resources の関係者の連絡先エンティティについて説明します。
 
@@ -60,7 +62,7 @@ ms.locfileid: "5125476"
 | プロパティ<br>**現物名**<br>**_種類_** | 使用 | 説明 |
 | --- | --- | --- |
 | **当事者連絡先エンティティ ID**<br>mshr_dirpartycontactentityid<br>*文字列* | 読み取り専用<br>必須 | システムが生成した、エンティティ レコードの一意識別子です。 |
-| **当事者番号**<br>mshr_partynumber<br>*文字列* | 読み取り/書き込み<br>必須 | 関連付けられている当事者 (人物) レコードの ID です。 |
+| **関係者番号**<br>mshr_partynumber<br>*文字列* | 読み取り/書き込み<br>必須 | 関連付けられている当事者 (人物) レコードの ID です。 |
 | **個人 ID の値**<br>_mshr_fk_person_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー : mshr_dirpersonentity の mshr_dirpersonentityid | システムが生成する、当事者 (個人) エンティティ レコードの識別子です。 |
 | **場所 ID**<br>mshr_locationid<br>*文字列* | 読み取り/書き込み<br>必須 | 住所レコードの場所 ID です。 mshr_logisticspostaladdresslocationcdsentity エンティティ内の設定をします。 |
 | **説明**<br>mshr_description<br>*文字列* | 読み取り/書き込み<br>必須 | 連絡先の詳細についての説明です。 |
