@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,40 +17,40 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d4d681b2362c90b69007ea44c01c886f96cc1db1
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684008"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568081"
 ---
-# <a name="in-house-assets-for-servicing"></a><span data-ttu-id="5406d-103">サービスのための社内資産</span><span class="sxs-lookup"><span data-stu-id="5406d-103">In-house assets for servicing</span></span>
+# <a name="in-house-assets-for-servicing"></a><span data-ttu-id="500ad-103">サービスのための社内資産</span><span class="sxs-lookup"><span data-stu-id="500ad-103">In-house assets for servicing</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-<span data-ttu-id="5406d-104">Microsoft Dynamics 365 Field Service は、顧客資産をサービスするように設計されています。</span><span class="sxs-lookup"><span data-stu-id="5406d-104">Microsoft Dynamics 365 Field Service is designed to service customer assets.</span></span> <span data-ttu-id="5406d-105">Dynamics 365 Supply Chain Management の資産管理は、社内資産を維持するように設計されています。</span><span class="sxs-lookup"><span data-stu-id="5406d-105">Asset management for Dynamics 365 Supply Chain Management is designed to maintain in-house assets.</span></span> <span data-ttu-id="5406d-106">この 2 つのアプリを統合すると、Field Service を使用して顧客資産と社内資産の両方にサービスを提供できます。</span><span class="sxs-lookup"><span data-stu-id="5406d-106">Integration of these two apps lets you use Field Service to service both customer assets and in-house assets.</span></span> <span data-ttu-id="5406d-107">また、機能の場所または階層に基づいて資産を分類し、詳細レベルでサービスを追跡することもできます。</span><span class="sxs-lookup"><span data-stu-id="5406d-107">You can also classify the assets, based on functional location or hierarchy, and track the servicing at a detailed level.</span></span>
+<span data-ttu-id="500ad-104">Microsoft Dynamics 365 Field Service は、顧客資産をサービスするように設計されています。</span><span class="sxs-lookup"><span data-stu-id="500ad-104">Microsoft Dynamics 365 Field Service is designed to service customer assets.</span></span> <span data-ttu-id="500ad-105">Dynamics 365 Supply Chain Management の資産管理は、社内資産を維持するように設計されています。</span><span class="sxs-lookup"><span data-stu-id="500ad-105">Asset management for Dynamics 365 Supply Chain Management is designed to maintain in-house assets.</span></span> <span data-ttu-id="500ad-106">この 2 つのアプリを統合すると、Field Service を使用して顧客資産と社内資産の両方にサービスを提供できます。</span><span class="sxs-lookup"><span data-stu-id="500ad-106">Integration of these two apps lets you use Field Service to service both customer assets and in-house assets.</span></span> <span data-ttu-id="500ad-107">また、機能の場所または階層に基づいて資産を分類し、詳細レベルでサービスを追跡することもできます。</span><span class="sxs-lookup"><span data-stu-id="500ad-107">You can also classify the assets, based on functional location or hierarchy, and track the servicing at a detailed level.</span></span>
 
-<span data-ttu-id="5406d-108">詳細については、[Dynamics 365 Field Service と Supply Chain Management の統合](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5406d-108">For more information, see [Integrate Dynamics 365 Field Service and Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).</span></span>
+<span data-ttu-id="500ad-108">詳細については、[Dynamics 365 Field Service と Supply Chain Management の統合](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="500ad-108">For more information, see [Integrate Dynamics 365 Field Service and Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).</span></span>
 
-## <a name="templates"></a><span data-ttu-id="5406d-109">テンプレート</span><span class="sxs-lookup"><span data-stu-id="5406d-109">Templates</span></span>
+## <a name="templates"></a><span data-ttu-id="500ad-109">テンプレート</span><span class="sxs-lookup"><span data-stu-id="500ad-109">Templates</span></span>
 
-<span data-ttu-id="5406d-110">社内資産には、次のテーブルに示すように、データの相互作用中に連携して作業するコア テーブル マップのコレクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5406d-110">In-house-assets include a collection of core table maps that work together during data interaction, as shown in the following table.</span></span>
+<span data-ttu-id="500ad-110">社内資産には、次のテーブルに示すように、データの相互作用中に連携して作業するコア テーブル マップのコレクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="500ad-110">In-house-assets include a collection of core table maps that work together during data interaction, as shown in the following table.</span></span>
 
-| <span data-ttu-id="5406d-111">Finance and Operations アプリ</span><span class="sxs-lookup"><span data-stu-id="5406d-111">Finance and Operations apps</span></span> | <span data-ttu-id="5406d-112">Dynamics 365 のモデル駆動型アプリ</span><span class="sxs-lookup"><span data-stu-id="5406d-112">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="5406d-113">説明</span><span class="sxs-lookup"><span data-stu-id="5406d-113">Description</span></span> |
+| <span data-ttu-id="500ad-111">Finance and Operations アプリ</span><span class="sxs-lookup"><span data-stu-id="500ad-111">Finance and Operations apps</span></span> | <span data-ttu-id="500ad-112">Dynamics 365 のモデル駆動型アプリ</span><span class="sxs-lookup"><span data-stu-id="500ad-112">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="500ad-113">説明</span><span class="sxs-lookup"><span data-stu-id="500ad-113">Description</span></span> |
 |-----------------------------|-----------------------------------|-------------|
-| <span data-ttu-id="5406d-114">資産管理資産のライフサイクル モデル</span><span class="sxs-lookup"><span data-stu-id="5406d-114">Asset management asset lifecycle models</span></span> | <span data-ttu-id="5406d-115">msdyn\_assetlifecyclemodels</span><span class="sxs-lookup"><span data-stu-id="5406d-115">msdyn\_assetlifecyclemodels</span></span> | |
-| <span data-ttu-id="5406d-116">資産管理資産のライフサイクル状態</span><span class="sxs-lookup"><span data-stu-id="5406d-116">Asset management asset lifecycle states</span></span> | <span data-ttu-id="5406d-117">msdyn\_assetlifecyclestates</span><span class="sxs-lookup"><span data-stu-id="5406d-117">msdyn\_assetlifecyclestates</span></span> | |
-| <span data-ttu-id="5406d-118">資産管理資産</span><span class="sxs-lookup"><span data-stu-id="5406d-118">Asset management assets</span></span> | <span data-ttu-id="5406d-119">msdyn\_customerassets</span><span class="sxs-lookup"><span data-stu-id="5406d-119">msdyn\_customerassets</span></span> | |
-| <span data-ttu-id="5406d-120">資産管理資産のタイプ</span><span class="sxs-lookup"><span data-stu-id="5406d-120">Asset management asset types</span></span> | <span data-ttu-id="5406d-121">msdyn\_customerassetcategories</span><span class="sxs-lookup"><span data-stu-id="5406d-121">msdyn\_customerassetcategories</span></span> | |
-| <span data-ttu-id="5406d-122">資産管理機能の場所のライフサイクル モデル</span><span class="sxs-lookup"><span data-stu-id="5406d-122">Asset management functional location lifecycle models</span></span> | <span data-ttu-id="5406d-123">msdyn\_functionallocationlifecyclemodels</span><span class="sxs-lookup"><span data-stu-id="5406d-123">msdyn\_functionallocationlifecyclemodels</span></span> | |
-| <span data-ttu-id="5406d-124">資産管理機能の場所のライフサイクル状態</span><span class="sxs-lookup"><span data-stu-id="5406d-124">Asset management functional location lifecycle states</span></span> | <span data-ttu-id="5406d-125">msdyn\_functionallocationlifecyclestates</span><span class="sxs-lookup"><span data-stu-id="5406d-125">msdyn\_functionallocationlifecyclestates</span></span> | |
-| <span data-ttu-id="5406d-126">資産管理機能の場所</span><span class="sxs-lookup"><span data-stu-id="5406d-126">Asset management functional locations</span></span> | <span data-ttu-id="5406d-127">msdyn\_functionallocations</span><span class="sxs-lookup"><span data-stu-id="5406d-127">msdyn\_functionallocations</span></span> | |
-| <span data-ttu-id="5406d-128">資産管理機能の場所のタイプ</span><span class="sxs-lookup"><span data-stu-id="5406d-128">Asset management functional location types</span></span> | <span data-ttu-id="5406d-129">msdyn\_functionallocationtypes</span><span class="sxs-lookup"><span data-stu-id="5406d-129">msdyn\_functionallocationtypes</span></span> | |
-| <span data-ttu-id="5406d-130">資産管理メーカー</span><span class="sxs-lookup"><span data-stu-id="5406d-130">Asset management manufacturers</span></span> | <span data-ttu-id="5406d-131">msdyn\_manufacturers</span><span class="sxs-lookup"><span data-stu-id="5406d-131">msdyn\_manufacturers</span></span> | |
-| <span data-ttu-id="5406d-132">資産管理モデル</span><span class="sxs-lookup"><span data-stu-id="5406d-132">Asset management models</span></span> | <span data-ttu-id="5406d-133">msdyn\_models</span><span class="sxs-lookup"><span data-stu-id="5406d-133">msdyn\_models</span></span> | |
-| <span data-ttu-id="5406d-134">資産管理の保証</span><span class="sxs-lookup"><span data-stu-id="5406d-134">Asset management warranty</span></span> | <span data-ttu-id="5406d-135">msdyn\_warranties</span><span class="sxs-lookup"><span data-stu-id="5406d-135">msdyn\_warranties</span></span> | |
+| <span data-ttu-id="500ad-114">資産管理資産のライフサイクル モデル</span><span class="sxs-lookup"><span data-stu-id="500ad-114">Asset management asset lifecycle models</span></span> | <span data-ttu-id="500ad-115">msdyn\_assetlifecyclemodels</span><span class="sxs-lookup"><span data-stu-id="500ad-115">msdyn\_assetlifecyclemodels</span></span> | |
+| <span data-ttu-id="500ad-116">資産管理資産のライフサイクル状態</span><span class="sxs-lookup"><span data-stu-id="500ad-116">Asset management asset lifecycle states</span></span> | <span data-ttu-id="500ad-117">msdyn\_assetlifecyclestates</span><span class="sxs-lookup"><span data-stu-id="500ad-117">msdyn\_assetlifecyclestates</span></span> | |
+| <span data-ttu-id="500ad-118">資産管理資産</span><span class="sxs-lookup"><span data-stu-id="500ad-118">Asset management assets</span></span> | <span data-ttu-id="500ad-119">msdyn\_customerassets</span><span class="sxs-lookup"><span data-stu-id="500ad-119">msdyn\_customerassets</span></span> | |
+| <span data-ttu-id="500ad-120">資産管理資産のタイプ</span><span class="sxs-lookup"><span data-stu-id="500ad-120">Asset management asset types</span></span> | <span data-ttu-id="500ad-121">msdyn\_customerassetcategories</span><span class="sxs-lookup"><span data-stu-id="500ad-121">msdyn\_customerassetcategories</span></span> | |
+| <span data-ttu-id="500ad-122">資産管理機能の場所のライフサイクル モデル</span><span class="sxs-lookup"><span data-stu-id="500ad-122">Asset management functional location lifecycle models</span></span> | <span data-ttu-id="500ad-123">msdyn\_functionallocationlifecyclemodels</span><span class="sxs-lookup"><span data-stu-id="500ad-123">msdyn\_functionallocationlifecyclemodels</span></span> | |
+| <span data-ttu-id="500ad-124">資産管理機能の場所のライフサイクル状態</span><span class="sxs-lookup"><span data-stu-id="500ad-124">Asset management functional location lifecycle states</span></span> | <span data-ttu-id="500ad-125">msdyn\_functionallocationlifecyclestates</span><span class="sxs-lookup"><span data-stu-id="500ad-125">msdyn\_functionallocationlifecyclestates</span></span> | |
+| <span data-ttu-id="500ad-126">資産管理機能の場所</span><span class="sxs-lookup"><span data-stu-id="500ad-126">Asset management functional locations</span></span> | <span data-ttu-id="500ad-127">msdyn\_functionallocations</span><span class="sxs-lookup"><span data-stu-id="500ad-127">msdyn\_functionallocations</span></span> | |
+| <span data-ttu-id="500ad-128">資産管理機能の場所のタイプ</span><span class="sxs-lookup"><span data-stu-id="500ad-128">Asset management functional location types</span></span> | <span data-ttu-id="500ad-129">msdyn\_functionallocationtypes</span><span class="sxs-lookup"><span data-stu-id="500ad-129">msdyn\_functionallocationtypes</span></span> | |
+| <span data-ttu-id="500ad-130">資産管理メーカー</span><span class="sxs-lookup"><span data-stu-id="500ad-130">Asset management manufacturers</span></span> | <span data-ttu-id="500ad-131">msdyn\_manufacturers</span><span class="sxs-lookup"><span data-stu-id="500ad-131">msdyn\_manufacturers</span></span> | |
+| <span data-ttu-id="500ad-132">資産管理モデル</span><span class="sxs-lookup"><span data-stu-id="500ad-132">Asset management models</span></span> | <span data-ttu-id="500ad-133">msdyn\_models</span><span class="sxs-lookup"><span data-stu-id="500ad-133">msdyn\_models</span></span> | |
+| <span data-ttu-id="500ad-134">資産管理の保証</span><span class="sxs-lookup"><span data-stu-id="500ad-134">Asset management warranty</span></span> | <span data-ttu-id="500ad-135">msdyn\_warranties</span><span class="sxs-lookup"><span data-stu-id="500ad-135">msdyn\_warranties</span></span> | |
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -76,3 +75,6 @@ ms.locfileid: "4684008"
 [!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
 [!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

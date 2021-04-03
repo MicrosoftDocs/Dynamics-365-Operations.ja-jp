@@ -3,7 +3,7 @@ title: Azure ストレージ アカウントとキー コンテナーの作成
 description: このトピックでは、Azure ストレージ アカウントとキー コンテナーを作成する方法について説明します。
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,66 +17,72 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
+ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104232"
+ms.lasthandoff: 02/22/2021
+ms.locfileid: "5479348"
 ---
-# <a name="create-an-azure-storage-account-and-a-key-vault"></a><span data-ttu-id="b391a-103">Azure ストレージ アカウントとキー コンテナーの作成</span><span class="sxs-lookup"><span data-stu-id="b391a-103">Create an Azure storage account and a key vault</span></span>
+# <a name="create-an-azure-storage-account-and-a-key-vault"></a><span data-ttu-id="7ad39-103">Azure ストレージ アカウントとキー コンテナーの作成</span><span class="sxs-lookup"><span data-stu-id="7ad39-103">Create an Azure storage account and a key vault</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="prerequisites"></a><span data-ttu-id="b391a-104">必要条件</span><span class="sxs-lookup"><span data-stu-id="b391a-104">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7ad39-104">必要条件</span><span class="sxs-lookup"><span data-stu-id="7ad39-104">Prerequisites</span></span>
 
-<span data-ttu-id="b391a-105">このトピックのタスクを完了する前に、以下の前提条件を完了していることを確認してください :</span><span class="sxs-lookup"><span data-stu-id="b391a-105">Before you can complete the steps in this topic, you must make sure that the following tasks have been completed:</span></span>
+<span data-ttu-id="7ad39-105">このトピックのタスクを完了する前に、以下の前提条件を完了していることを確認してください :</span><span class="sxs-lookup"><span data-stu-id="7ad39-105">Before you can complete the steps in this topic, you must make sure that the following tasks have been completed:</span></span>
 
-- <span data-ttu-id="b391a-106">Azure でのキー コンテナーのリソースの作成。</span><span class="sxs-lookup"><span data-stu-id="b391a-106">Create a key vault resource in Azure.</span></span> <span data-ttu-id="b391a-107">詳細については、[Azure のキー コンテナー](https://docs.microsoft.com/azure/key-vault/general/overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b391a-107">For more information, see [About Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview).</span></span>
-- <span data-ttu-id="b391a-108">Azure ストレージ アカウント (Blob ストレージ) の作成。</span><span class="sxs-lookup"><span data-stu-id="b391a-108">Create an Azure storage account (Blob storage).</span></span> <span data-ttu-id="b391a-109">詳細については、[Azure ストレージ アカウントを管理する](https://docs.microsoft.com/azure/storage/blobs/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b391a-109">For more information, see [Maintaining Azure Storage Account](https://docs.microsoft.com/azure/storage/blobs/).</span></span>
+- <span data-ttu-id="7ad39-106">Azure でのキー コンテナーのリソースの作成。</span><span class="sxs-lookup"><span data-stu-id="7ad39-106">Create a key vault resource in Azure.</span></span> <span data-ttu-id="7ad39-107">詳細については、[Azure のキー コンテナー](https://docs.microsoft.com/azure/key-vault/general/overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7ad39-107">For more information, see [About Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview).</span></span>
+- <span data-ttu-id="7ad39-108">Azure ストレージ アカウント (Blob ストレージ) の作成。</span><span class="sxs-lookup"><span data-stu-id="7ad39-108">Create an Azure storage account (Blob storage).</span></span> <span data-ttu-id="7ad39-109">詳細については、[Azure ストレージ アカウントを管理する](https://docs.microsoft.com/azure/storage/blobs/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7ad39-109">For more information, see [Maintaining Azure Storage Account](https://docs.microsoft.com/azure/storage/blobs/).</span></span>
 
-## <a name="overview"></a><span data-ttu-id="b391a-110">概要</span><span class="sxs-lookup"><span data-stu-id="b391a-110">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="7ad39-110">概要</span><span class="sxs-lookup"><span data-stu-id="7ad39-110">Overview</span></span>
 
-<span data-ttu-id="b391a-111">このトピックでは、2 つの主要な手順について説明します :</span><span class="sxs-lookup"><span data-stu-id="b391a-111">In this topic, you will complete two main steps:</span></span>
+<span data-ttu-id="7ad39-111">このトピックでは、2 つの主要な手順について説明します :</span><span class="sxs-lookup"><span data-stu-id="7ad39-111">In this topic, you will complete two main steps:</span></span>
 
-- <span data-ttu-id="b391a-112">Azure のストレージ アカウントを設定してストレージ アカウントの URI を取得します。</span><span class="sxs-lookup"><span data-stu-id="b391a-112">Set up the Azure storage account to get the storage account URI.</span></span>
-- <span data-ttu-id="b391a-113">キーコンテナーを設定し、ストレージ アカウントの URI を格納します。</span><span class="sxs-lookup"><span data-stu-id="b391a-113">Set up the key vault to store the storage account URI.</span></span>
+- <span data-ttu-id="7ad39-112">Azure のストレージ アカウントを設定してストレージ アカウントの URI を取得します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-112">Set up the Azure storage account to get the storage account URI.</span></span>
+- <span data-ttu-id="7ad39-113">キーコンテナーを設定し、ストレージ アカウントの URI を格納します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-113">Set up the key vault to store the storage account URI.</span></span>
 
-## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a><span data-ttu-id="b391a-114">Azure のストレージ アカウントを設定してストレージ アカウントの URI を取得する</span><span class="sxs-lookup"><span data-stu-id="b391a-114">Set up the Azure storage account to get the storage account URI</span></span>
+## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a><span data-ttu-id="7ad39-114">Azure のストレージ アカウントを設定してストレージ アカウントの URI を取得する</span><span class="sxs-lookup"><span data-stu-id="7ad39-114">Set up the Azure storage account to get the storage account URI</span></span>
 
-1. <span data-ttu-id="b391a-115">電子請求のアドオンで使用するストレージ アカウントを開きます。</span><span class="sxs-lookup"><span data-stu-id="b391a-115">Open the storage account that you plan to use with the Electronic invoicing add-on.</span></span>
-2. <span data-ttu-id="b391a-116">**Blob サービス** \> **コンテナー** に移動 し、新しいコンテナーを作成します。</span><span class="sxs-lookup"><span data-stu-id="b391a-116">Go to **Blob service** \> **Containers**, and create a new container.</span></span>
-3. <span data-ttu-id="b391a-117">コンテナーの名前を入力し、**パブリック アクセス レベル** フィールドを **プライベート (匿名アクセスなし)** に設定し ます。</span><span class="sxs-lookup"><span data-stu-id="b391a-117">Enter a name for the container, and set the **Public access level** field to **Private (no anonymous access)**.</span></span>
-4. <span data-ttu-id="b391a-118">コンテナーを開き、 **設定 \> アクセス ポリシー** に移動します。</span><span class="sxs-lookup"><span data-stu-id="b391a-118">Open the container, and go to **Settings \> Access policy**.</span></span>
-5. <span data-ttu-id="b391a-119">**ポリシーの追加** を選択して、保存されているアクセス ポリシーを追加します。</span><span class="sxs-lookup"><span data-stu-id="b391a-119">Select **Add policy** to add a stored access policy.</span></span>
-6. <span data-ttu-id="b391a-120">必要に応じて、 **識別子** フィールドと **アクセス許可** フィールドを設定します。</span><span class="sxs-lookup"><span data-stu-id="b391a-120">Set the **Identifier** and **Permissions** fields as appropriate.</span></span> <span data-ttu-id="b391a-121">**キーのアクセス許可** フィールドで、すべてのアクセス許可を選択します。</span><span class="sxs-lookup"><span data-stu-id="b391a-121">In the **Permissions** field, you should select all permissions.</span></span>
+1. <span data-ttu-id="7ad39-115">電子請求のアドオンで使用するストレージ アカウントを開きます。</span><span class="sxs-lookup"><span data-stu-id="7ad39-115">Open the storage account that you plan to use with the Electronic invoicing add-on.</span></span>
+2. <span data-ttu-id="7ad39-116">**Blob サービス** \> **コンテナー** に移動 し、新しいコンテナーを作成します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-116">Go to **Blob service** \> **Containers**, and create a new container.</span></span>
+3. <span data-ttu-id="7ad39-117">コンテナーの名前を入力し、**パブリック アクセス レベル** フィールドを **プライベート (匿名アクセスなし)** に設定し ます。</span><span class="sxs-lookup"><span data-stu-id="7ad39-117">Enter a name for the container, and set the **Public access level** field to **Private (no anonymous access)**.</span></span>
+4. <span data-ttu-id="7ad39-118">コンテナーを開き、 **設定 \> アクセス ポリシー** に移動します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-118">Open the container, and go to **Settings \> Access policy**.</span></span>
+5. <span data-ttu-id="7ad39-119">**ポリシーの追加** を選択して、保存されているアクセス ポリシーを追加します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-119">Select **Add policy** to add a stored access policy.</span></span>
+6. <span data-ttu-id="7ad39-120">必要に応じて、 **識別子** フィールドと **アクセス許可** フィールドを設定します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-120">Set the **Identifier** and **Permissions** fields as appropriate.</span></span> <span data-ttu-id="7ad39-121">**キーのアクセス許可** フィールドで、すべてのアクセス許可を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-121">In the **Permissions** field, you should select all permissions.</span></span>
 
     ![Blob ストレージのアクセス許可を付与する](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
-7. <span data-ttu-id="b391a-123">開始日と有効期限を入力します。</span><span class="sxs-lookup"><span data-stu-id="b391a-123">Enter the start and expiry dates.</span></span> <span data-ttu-id="b391a-124">有効期限は未来の日付にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b391a-124">The expiry date should be in future.</span></span>
-8. <span data-ttu-id="b391a-125">**OK** をクリックしてポリシーを保存し、変更をコンテナーに保存します。</span><span class="sxs-lookup"><span data-stu-id="b391a-125">Select **OK** to save the policy, and then save your changes to the container.</span></span>
-9. <span data-ttu-id="b391a-126">ストレージ アカウントに戻り、**記憶域エクスプローラー (プレビュー)** を開きます。</span><span class="sxs-lookup"><span data-stu-id="b391a-126">Return to the storage account, and open **Storage Explorer (preview)**.</span></span>
-10. <span data-ttu-id="b391a-127">コンテナーを右クリックし、**共有アクセス署名の取得** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b391a-127">Right-click the container, and then select **Get Shared Access Signature**.</span></span>
-11. <span data-ttu-id="b391a-128">**共有アクセス署名** ダイアログ ボックスで、**URI** フィールドに値をコピーして格納します。</span><span class="sxs-lookup"><span data-stu-id="b391a-128">In the **Shared Access Signature** dialog box, copy and store the value in the **URI** field.</span></span> <span data-ttu-id="b391a-129">この値は、次の手順で使用され、*共有アクセス署名 URI* として参照されます。</span><span class="sxs-lookup"><span data-stu-id="b391a-129">This value will be used in the next procedure and will be referred to as the *shared access signature URI*.</span></span>
+7. <span data-ttu-id="7ad39-123">開始日と有効期限を入力します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-123">Enter the start and expiry dates.</span></span> <span data-ttu-id="7ad39-124">有効期限は未来の日付にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="7ad39-124">The expiry date should be in future.</span></span>
+8. <span data-ttu-id="7ad39-125">**OK** をクリックしてポリシーを保存し、変更をコンテナーに保存します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-125">Select **OK** to save the policy, and then save your changes to the container.</span></span>
+9. <span data-ttu-id="7ad39-126">ストレージ アカウントに戻り、**記憶域エクスプローラー (プレビュー)** を開きます。</span><span class="sxs-lookup"><span data-stu-id="7ad39-126">Return to the storage account, and open **Storage Explorer (preview)**.</span></span>
+10. <span data-ttu-id="7ad39-127">コンテナーを右クリックし、**共有アクセス署名の取得** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-127">Right-click the container, and then select **Get Shared Access Signature**.</span></span>
+11. <span data-ttu-id="7ad39-128">**共有アクセス署名** ダイアログ ボックスで、**URI** フィールドに値をコピーして格納します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-128">In the **Shared Access Signature** dialog box, copy and store the value in the **URI** field.</span></span> <span data-ttu-id="7ad39-129">この値は、次の手順で使用され、*共有アクセス署名 URI* として参照されます。</span><span class="sxs-lookup"><span data-stu-id="7ad39-129">This value will be used in the next procedure and will be referred to as the *shared access signature URI*.</span></span>
 
     ![URI 値の選択とコピー](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
-## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a><span data-ttu-id="b391a-131">キー コンテナーを設定し、ストレージ アカウントの URI を格納する</span><span class="sxs-lookup"><span data-stu-id="b391a-131">Set up the key vault to store the storage account URI</span></span>
+## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a><span data-ttu-id="7ad39-131">キー コンテナーを設定し、ストレージ アカウントの URI を格納する</span><span class="sxs-lookup"><span data-stu-id="7ad39-131">Set up the key vault to store the storage account URI</span></span>
 
-1. <span data-ttu-id="b391a-132">電子請求書作成アドオンで使用するキー コンテナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="b391a-132">Open the key vault that you intend to use with the Electronic invoicing add-on.</span></span>
-2. <span data-ttu-id="b391a-133">**設定** \> **秘密** に移動し、**生成/インポート** を選択して 新しい秘密を作成します。</span><span class="sxs-lookup"><span data-stu-id="b391a-133">Go to **Settings** \> **Secrets**, and then select **Generate/Import** to create a new secret.</span></span>
-3. <span data-ttu-id="b391a-134">**シークレットを作成** ページの **アップロード オプション** フィールドで、**手動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b391a-134">On the **Create a secret** page, in the **Upload options** field, select **Manual**.</span></span>
-4. <span data-ttu-id="b391a-135">秘密の名称を入力します。</span><span class="sxs-lookup"><span data-stu-id="b391a-135">Enter the name of the secret.</span></span> <span data-ttu-id="b391a-136">この名前は、Regulatory Configuration Services (RCS) のサービス設定時に使用され、*キー コンテナーの秘密名称* と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="b391a-136">This name will be used during setup of the service in Regulatory Configuration Service (RCS) and will be referred to as the *key vault secret name*.</span></span>
-5. <span data-ttu-id="b391a-137">**値** フィールドで、**共有アクセス署名 URI** を選択し、**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b391a-137">In the **Value** field, select **Shared Access Signature URI**, and then select **Create**.</span></span>
-6. <span data-ttu-id="b391a-138">アクセス ポリシーを設定して、電子請求書発行アドオンに自分が作成した秘密への適切なレベルの安全なアクセス権を付与します。</span><span class="sxs-lookup"><span data-stu-id="b391a-138">Set up the access policy to grant the Electronic invoicing add-on the correct level of secure access to the secret you created.</span></span> <span data-ttu-id="b391a-139">**設定 \>アクセス ポリシー** に移動し 、**アクセス ポリシーの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b391a-139">Go to **Settings \> Access policy**, and select **Add Access Policy**.</span></span>
-7. <span data-ttu-id="b391a-140">**取得** と **一覧** の操作に、秘密のアクセス許可を設定します。</span><span class="sxs-lookup"><span data-stu-id="b391a-140">Set the secret permissions for the **Get** and **List** operations.</span></span>
+1. <span data-ttu-id="7ad39-132">電子請求書作成アドオンで使用するキー コンテナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="7ad39-132">Open the key vault that you intend to use with the Electronic invoicing add-on.</span></span>
+2. <span data-ttu-id="7ad39-133">**設定** \> **秘密** に移動し、**生成/インポート** を選択して 新しい秘密を作成します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-133">Go to **Settings** \> **Secrets**, and then select **Generate/Import** to create a new secret.</span></span>
+3. <span data-ttu-id="7ad39-134">**シークレットを作成** ページの **アップロード オプション** フィールドで、**手動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-134">On the **Create a secret** page, in the **Upload options** field, select **Manual**.</span></span>
+4. <span data-ttu-id="7ad39-135">秘密の名称を入力します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-135">Enter the name of the secret.</span></span> <span data-ttu-id="7ad39-136">この名前は、Regulatory Configuration Services (RCS) のサービス設定時に使用され、*キー コンテナーの秘密名称* と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="7ad39-136">This name will be used during setup of the service in Regulatory Configuration Service (RCS) and will be referred to as the *key vault secret name*.</span></span>
+5. <span data-ttu-id="7ad39-137">**値** フィールドで、**共有アクセス署名 URI** を選択し、**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-137">In the **Value** field, select **Shared Access Signature URI**, and then select **Create**.</span></span>
+6. <span data-ttu-id="7ad39-138">アクセス ポリシーを設定して、電子請求書発行アドオンに自分が作成した秘密への適切なレベルの安全なアクセス権を付与します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-138">Set up the access policy to grant the Electronic invoicing add-on the correct level of secure access to the secret you created.</span></span> <span data-ttu-id="7ad39-139">**設定 \>アクセス ポリシー** に移動し 、**アクセス ポリシーの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-139">Go to **Settings \> Access policy**, and select **Add Access Policy**.</span></span>
+7. <span data-ttu-id="7ad39-140">**取得** と **一覧** の操作に、秘密のアクセス許可を設定します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-140">Set the secret permissions for the **Get** and **List** operations.</span></span>
 
     ![サービス アクセスの付与](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
-8. <span data-ttu-id="b391a-142">**取得** と **一覧** の操作に、証明書のアクセス許可を設定します。</span><span class="sxs-lookup"><span data-stu-id="b391a-142">Set the certificate permissions for **Get** and **List** operations.</span></span>
+8. <span data-ttu-id="7ad39-142">**取得** と **一覧** の操作に、証明書のアクセス許可を設定します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-142">Set the certificate permissions for **Get** and **List** operations.</span></span>
 
     ![証明書のアクセス許可の付与](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. <span data-ttu-id="b391a-144">**プリンシパル** ダイアログ ボックスで、**電子請求のアドオン** を追加してプリンシパルを選択し ます。</span><span class="sxs-lookup"><span data-stu-id="b391a-144">In the **Principal** dialog box, select the principal by adding **Electronic invoicing add-on**.</span></span>
-10. <span data-ttu-id="b391a-145">**追加** を選択し、**キー コンテナーの変更を保存する** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b391a-145">Select **Add**, and then select **Save Key Vault changes**.</span></span>
-11. <span data-ttu-id="b391a-146">**概要** ページで、 キー コンテナーの **DNS 名** の値をコピーして保存します。</span><span class="sxs-lookup"><span data-stu-id="b391a-146">On the **Overview** page, copy the **DNS name** value for the key vault.</span></span> <span data-ttu-id="b391a-147">この値は、RCS におけるサービスの設定時に使用され、*キー コンテナーの URI* として参照されます。</span><span class="sxs-lookup"><span data-stu-id="b391a-147">This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.</span></span>
+9. <span data-ttu-id="7ad39-144">**プリンシパルの選択** フィールドで、**選択なし** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-144">In the **Select principal** field, select **None selected**.</span></span>
+10. <span data-ttu-id="7ad39-145">**プリンシパル** ダイアログ ボックスで、**電子請求書サービス** を追加してプリンシパルを選択します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-145">In the **Principal** dialog box, select the principal by adding **e-Invoicing Service**.</span></span>
+11. <span data-ttu-id="7ad39-146">**追加** を選択し、**キー コンテナーの変更を保存する** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-146">Select **Add**, and then select **Save Key Vault changes**.</span></span>
+12. <span data-ttu-id="7ad39-147">**概要** ページで、 キー コンテナーの **DNS 名** の値をコピーして保存します。</span><span class="sxs-lookup"><span data-stu-id="7ad39-147">On the **Overview** page, copy the **DNS name** value for the key vault.</span></span> <span data-ttu-id="7ad39-148">この値は、RCS におけるサービスの設定時に使用され、*キー コンテナーの URI* として参照されます。</span><span class="sxs-lookup"><span data-stu-id="7ad39-148">This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.</span></span>
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
