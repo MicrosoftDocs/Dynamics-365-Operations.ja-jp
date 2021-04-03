@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b21d4d631bcdf603b38212f5f76bb78937d3d3c
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f1c3ced43b1f5693c5d5466fd97a20beb358fa20
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115079"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463337"
 ---
 # <a name="configure-leave-and-absence-types"></a>休暇タイプのコンフィギュレーション
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources で休暇タイプは、従業員がレポートできる休暇のタイプを定義します。 休暇タイプは、組織のニーズに応じてカスタマイズできます。 たとえば次のような休暇タイプを入力します。
 
@@ -72,8 +74,7 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
    
  3. 休暇タイプに **繰越休暇タイプ** を設定します。 このオプションを選択すると、繰越残日数は指定された休暇タイプに転送されます。 繰越休暇タイプも、休暇および不就業プランに含める必要があります。 
  
- 4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日を設定することもできます。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。 
- 
+ 4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日を設定することもできます。 有効日は、休暇の有効期限を処理するバッチ ジョブの実行を開始する時期、またはルールが有効になる日付を決定するために使用されます。 有効期限自体は、バッチ ジョブが処理に設定された後、常に休暇計画の開始日に実行されます。 たとえば、計画の開始日は 2020 年 1 月 1 日の場合でも、ルールは 2020 年 6 月 1 日まで作成されませんでした。 有効日を 2020 年 6 月 1 日に設定すると、ルールは次の年の境界である、2021 年 1 月 1 日に処理されます。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。 
  
 ## <a name="see-also"></a>参照
 

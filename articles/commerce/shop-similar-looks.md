@@ -1,6 +1,6 @@
 ---
 title: "\"類似したルックを買う\" 推奨を有効にする"
-description: このトピックでは、Microsoft Dynamics 365 Commerce での "類似したスタイルを探す" 推奨製品を有効にする方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce で "同じような商品を探す" 製品推奨製品を有効にする方法について説明します。
 author: bebeale
 manager: AnnBe
 ms.date: 08/06/2020
@@ -18,20 +18,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 95e4246d6c5f9ac5bc86b626be0d971f756c5130
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d0b3585ce326e47b119b3f6c41436b9e6494ec87
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985614"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478095"
 ---
-# <a name="enable-shop-similar-looks-recommendations"></a>"類似したルックを買う" 推奨を有効にする
+# <a name="enable-shop-similar-looks-recommendations"></a>"同じような商品を探す" 推奨事項の有効化
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce での "類似したスタイルを探す" 推奨製品を有効にする方法について説明します。
-
-## <a name="overview"></a>概要
+このトピックでは、Microsoft Dynamics 365 Commerce で "同じような商品を探す" 製品推奨製品を有効にする方法について説明します。
 
 Dynamics 365 Commerce の "類似したスタイルを探す" 推奨機能は、人工知能と機械学習 (AI-ML) の機能を使用して、顧客に対して視覚的に類似した製品の推奨を提供します。 Commerce におけるすべての小売チャンネルについて、"類似したスタイルを探す" 推奨を提供することによって、小売業者は顧客が欲しいものを簡単に見つけられるようにすることで、顧客満足度を高めることができます。
 

@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5cf5b8cd297f1686998688979a736f47f7d100c4
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 3ab2117ea0d4cf7413dddf09d953e0da39e6882a
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113299"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465705"
 ---
 # <a name="process-compensation"></a>報酬処理
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 報酬処理では、賃金調整、昇給目標、およびパフォーマンスに基づいて、従業員の新しい基本報酬金額を計算することができます。 この記事では、従業員のパフォーマンスを考慮しない固定報酬プランの報酬処理の基本フローについて説明します。
 

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d16de8c339fadff074ef8ec30b0b4d6e3412569
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001852"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470772"
 ---
 # <a name="forecast-reduction-keys"></a>予測下方修正キー
 
@@ -198,7 +198,7 @@ ms.locfileid: "5001852"
 予測下方修正キーは、予測要求を削減するため **トランザクション - 下方修正キー** および **率 - 下方修正キー** の方法で使用されます。 下方修正キーを作成および設定するには、次の手順に従います。
 
 1. **マスター プラン \> 設定 \> 補充 \> 下方修正キー** の順に移動します。
-2. **新規** を選択または **Ctrl+N** を押して下方修正キーを作成します。
+2. **新規** を選択して、下方修正キーを作成します。
 3. **下方修正キー** フィールドで、予測下方修正キーの固有識別子を入力します。 その後、**名前** フィールドで、名前を入力します。 
 4. 各期間の期間および下方修正キーの割合を定義します。
 

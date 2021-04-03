@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f99bff8846cf95bc25f0396444a3920c48f73b1e
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 4bf2c6525f245a72811f4f239479be360c0c434c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115851"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465657"
 ---
 # <a name="create-variable-compensation-plans"></a>変動報酬プランの作成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 変動報酬は賞与または株式報奨などの従業員の不規則な支払を構成します。 この記事は、変動報酬を使用し、従業員を変動報酬プランに登録する前に設定する必要があるコンポーネントを説明します。
 

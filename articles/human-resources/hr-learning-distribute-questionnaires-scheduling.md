@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0cd101bfe88ae1acb051ba11a676da66ef6a3db6
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 50be7631ec303171640b7fa9e6d283a198bd1a52
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115465"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465009"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>スケジューリングを使用したアンケートの配布
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 アンケートのスケジューリングによって、複数の回答者に対するアンケートを計画して配布することができます。 この手順の作成に使用するデモ データの会社は USMF です。
 
@@ -55,7 +57,7 @@ ms.locfileid: "5115465"
 
 11. [テキスト] フィールドで、電子メールメッセージの本文を入力します。 変数は、システム内の値を置換するために使用できることに注意してください。
 
-    * 例: %P% 様、従業員セルフサービスにログインして、従業員の健康アンケートを完了してください。  Contoso  
+    * 例: %P% 様、従業員セルフ サービスにログインして、従業員の健康アンケートを完了してください。  Contoso  
 
 12. [保存] をクリックします。
 

@@ -3,7 +3,7 @@ title: Teams における人事管理アプリ
 description: このトピックでは、Microsoft Teams における Microsoft Dynamics 365 Human Resources について説明します。
 author: andreabichsel
 manager: tfehr
-ms.date: 09/30/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113265"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487876"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Teams の Microsoft Dynamics 365 Human Resources アプリを使用すると、従業員は簡単に休暇を申請することができ、Microsoft Teams にて休暇の残日数情報を表示することができます。 従業員は bot と対話して情報を要求できます。 **休暇** タブには、より詳細な情報が表示されます。 さらに、Human Resources アプリの外部で、チームやチャットで今後の休暇に関する情報を送信できます。
 
-![Teams Human Resources の休暇アプリ ボット](./media/hr-admin-teams-leave-app-bot.png)
+![Teams Human Resources の休暇アプリ ボット](./media/hr-teams-leave-app-bot.png)
 
 ![Teams Human Resources 休暇アプリの休暇タブ](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -39,16 +39,18 @@ Microsoft Teams の Microsoft Dynamics 365 Human Resources アプリを使用す
 
 ## <a name="install-and-setup"></a>インストールと設定
 
-Human Resources アプリは、Teams ストアにあります。 Teams アプリのインストールについては、[Teams で休暇申請を管理する](hr-teams-leave-app.md)を参照してください 。
+Dynamics 365 Human Resources アプリは、Teams ストアにあります。 Teams アプリのインストールについては、[Teams で休暇申請を管理する](hr-teams-leave-app.md)を参照してください 。
 
 Teams におけるアプリのアクセス許可の管理については、[Microsoft Teams におけるアプリのアクセス許可ポリシーを管理する](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies)を参照してください。
 
+ユーザーがアプリで休暇および欠勤カレンダーを表示するには、機能管理で **Teams の休暇および欠勤カレンダー** を有効にする必要があります。 機能を有効にする方法については、[機能の管理](hr-admin-manage-features.md)を参照してください。
+
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリの通知を有効にする
 
-ユーザーが Teams アプリで休暇申請通知を受け取るようにするには、Human Resources で通知を有効にする必要があります。
+ユーザーが Teams アプリで休暇申請通知を受け取るようにするには、Dynamics 365 Human Resources で通知を有効にする必要があります。
 
 >[!NOTE]
->Teams にサインインしていて、Teams の Human Resources アプリを使用しているユーザーだけが、通知を受け取ります。
+>Teams にサインインしていて、Teams の Dynamics 365 Human Resources アプリを使用しているユーザーだけが、通知を受け取ります。
 
 1. 人事管理では、**システム管理** を選択します。
 
@@ -66,7 +68,7 @@ Teams におけるアプリのアクセス許可の管理については、[Micr
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>個々のユーザーの Teams の通知をオンまたはオフにする
 
-Teams の Human Resources アプリの通知を有効にした後、ユーザーごとに通知をオンまたはオフにすることができます。
+Teams の Dynamics 365 Human Resources アプリの通知を有効にした後、ユーザーごとに通知をオンまたはオフにすることができます。
 
 1. 人事管理では、**システム管理** を選択します。
 
@@ -82,9 +84,28 @@ Teams の Human Resources アプリの通知を有効にした後、ユーザー
 
 6. **保存** を選択します。
 
-## <a name="known-issues"></a>既知の問題
+## <a name="supported-languages"></a>対応している言語
 
-| 出庫 | ステータス |
+Teams の Dynamics 365 Human Resources アプリでは、次の言語がサポートされます。
+
+| ロケール ID | 言語 |
+| --- | --- |
+| de-DE | ドイツ語 (ドイツ) |
+| es-ES | スペイン語 (スペイン) |
+| es-MX | スペイン語 (メキシコ) |
+| fr-CA | フランス語 (カナダ) |
+| fr-FR | フランス語 (フランス) |
+| it-IT | イタリア語 (イタリア) |
+| nl-NL | オランダ語 (オランダ) |
+| pt-BR | ポルトガル語 (ブラジル) |
+| tr-TR | トルコ語 (トルコ) |
+| zh-CN | 中国語 (簡体) |
+
+## <a name="notes"></a>摘要
+
+今後のリリースでは、次の作業項目が予定されています。
+
+| 作業項目 | 状態 |
 | --- | --- |
 | 未来日付の休暇を送信する場合に、残日数に誤りがあることを示します。 | 予測機能は未実装です。 現在日付の残日数が表示されます。 |
 | **レビュー中** の申請をキャンセルできない 。 | この機能には現在対応していないため、今後のリリースで対応予定です。 |
@@ -100,7 +121,7 @@ Teams の Human Resources アプリの通知を有効にした後、ユーザー
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリで休暇申請を承認する際のエラー
 
-Teams アプリで休暇申請を承認しようとしたときにユーザーがエラーを受信した場合は、次のトラブルシューティングの手順を実行します。
+Teams アプリで休暇申請を承認しようとしたときにユーザーがエラーを受信した場合は、次のトラブルシューティングの手順を試行します。
 
 1. Teams のアカウントが、Human Resources へのアクセスに使用するものと同じであることを確認します。
 

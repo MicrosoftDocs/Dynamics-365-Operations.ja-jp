@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67dac872d6dc3a5046f5d554b1f185aa6607d193
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 0a76220647417b6ff69e2f0ab5b2fa5297db5c49
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115007"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467846"
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a>前の質問の回答に応じた質問の作成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 

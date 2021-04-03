@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
-ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
+ms.openlocfilehash: 5e241475c9652ab2dafe6886479e9c0a93711aca
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "4962443"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466763"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>すべての会社に対する給付金の管理と従業員セルフサービス パラメータの設定
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources で給付金計画を設定する前に、給付金管理パラメーターをコンフィギュレーションする必要があります。 これらのパラメーターは既定値、理由コード、およびその他のオプションを設定します。 
 
