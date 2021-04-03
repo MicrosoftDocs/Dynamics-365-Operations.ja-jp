@@ -17,43 +17,46 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f93a68f19b0b952eb2964b404bb957865c625cd
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 53091f2e3c159f73f11b3dfcefd597f2c1494d19
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018049"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253089"
 ---
-# <a name="functional-locations-and-assets"></a><span data-ttu-id="f5f61-104">機能的な場所と資産</span><span class="sxs-lookup"><span data-stu-id="f5f61-104">Functional locations and assets</span></span>
+# <a name="functional-locations-and-assets"></a><span data-ttu-id="0bb19-104">機能的な場所と資産</span><span class="sxs-lookup"><span data-stu-id="0bb19-104">Functional locations and assets</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="f5f61-105">このトピックでは、資産管理の機能的な場所と資産について説明します。</span><span class="sxs-lookup"><span data-stu-id="f5f61-105">This topic describes functional locations and assets in Asset Management.</span></span> <span data-ttu-id="f5f61-106">資産管理は、Dynamics 365 Supply Chain Management の資産およびメンテナンス ジョブを管理するための高度なモジュールです。</span><span class="sxs-lookup"><span data-stu-id="f5f61-106">Asset Management is an advanced module for managing assets and maintenance jobs in Dynamics 365 Supply Chain Management.</span></span>
+<span data-ttu-id="0bb19-105">このトピックでは、資産管理の機能的な場所と資産について説明します。</span><span class="sxs-lookup"><span data-stu-id="0bb19-105">This topic describes functional locations and assets in Asset Management.</span></span> <span data-ttu-id="0bb19-106">資産管理は、Dynamics 365 Supply Chain Management の資産およびメンテナンス ジョブを管理するための高度なモジュールです。</span><span class="sxs-lookup"><span data-stu-id="0bb19-106">Asset Management is an advanced module for managing assets and maintenance jobs in Dynamics 365 Supply Chain Management.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="f5f61-107">概要</span><span class="sxs-lookup"><span data-stu-id="f5f61-107">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="0bb19-107">概要</span><span class="sxs-lookup"><span data-stu-id="0bb19-107">Overview</span></span>
 
-<span data-ttu-id="f5f61-108">資産管理は、Finance and Operations アプリでいくつかのモジュールとシームレスに統合されています。</span><span class="sxs-lookup"><span data-stu-id="f5f61-108">Asset Management is integrated seamlessly with several modules with other Finance and Operations apps.</span></span> <span data-ttu-id="f5f61-109">次の図は、他のモジュールとのインターフェイスを示しています。</span><span class="sxs-lookup"><span data-stu-id="f5f61-109">The following illustration shows the interfaces with other modules.</span></span>
+<span data-ttu-id="0bb19-108">資産管理は、Finance and Operations アプリでいくつかのモジュールとシームレスに統合されています。</span><span class="sxs-lookup"><span data-stu-id="0bb19-108">Asset Management is integrated seamlessly with several modules with other Finance and Operations apps.</span></span> <span data-ttu-id="0bb19-109">次の図は、他のモジュールとのインターフェイスを示しています。</span><span class="sxs-lookup"><span data-stu-id="0bb19-109">The following illustration shows the interfaces with other modules.</span></span>
 
 ![他のモジュールとの資産管理インターフェイスを示す図](media/01-overview-image.png)
 
-<span data-ttu-id="f5f61-111">資産管理を使用すると、社内のさまざまな種類の設備の管理とサービスに関連するすべてのタスクを効率的に管理および実行できます。</span><span class="sxs-lookup"><span data-stu-id="f5f61-111">Asset Management lets you efficiently manage and perform all tasks that are related to managing and servicing many types of equipment in your company.</span></span> <span data-ttu-id="f5f61-112">この設備には、機械、生産施設、および車両が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f5f61-112">This equipment includes machines, production equipment, and vehicles.</span></span> <span data-ttu-id="f5f61-113">資産管理は、さまざまな業界にわたるソリューションもサポートしています。</span><span class="sxs-lookup"><span data-stu-id="f5f61-113">Asset Management also supports solutions across numerous industries.</span></span>
+<span data-ttu-id="0bb19-111">資産管理を使用すると、社内のさまざまな種類の設備の管理とサービスに関連するすべてのタスクを効率的に管理および実行できます。</span><span class="sxs-lookup"><span data-stu-id="0bb19-111">Asset Management lets you efficiently manage and perform all tasks that are related to managing and servicing many types of equipment in your company.</span></span> <span data-ttu-id="0bb19-112">この設備には、機械、生産施設、および車両が含まれます。</span><span class="sxs-lookup"><span data-stu-id="0bb19-112">This equipment includes machines, production equipment, and vehicles.</span></span> <span data-ttu-id="0bb19-113">資産管理は、さまざまな業界にわたるソリューションもサポートしています。</span><span class="sxs-lookup"><span data-stu-id="0bb19-113">Asset Management also supports solutions across numerous industries.</span></span>
 
-<span data-ttu-id="f5f61-114">次の図は、資産管理で対象となる主な機能の概要を示しています。</span><span class="sxs-lookup"><span data-stu-id="f5f61-114">The following illustration shows an overview of the main functionality that is covered by Asset Management.</span></span>
+<span data-ttu-id="0bb19-114">次の図は、資産管理で対象となる主な機能の概要を示しています。</span><span class="sxs-lookup"><span data-stu-id="0bb19-114">The following illustration shows an overview of the main functionality that is covered by Asset Management.</span></span>
 
 ![資産管理の主要機能を示す図](media/02-overview-image.png)
 
-## <a name="functional-locations-and-assets"></a><span data-ttu-id="f5f61-116">機能の場所と資産</span><span class="sxs-lookup"><span data-stu-id="f5f61-116">Functional locations and assets</span></span>
+## <a name="functional-locations-and-assets"></a><span data-ttu-id="0bb19-116">機能の場所と資産</span><span class="sxs-lookup"><span data-stu-id="0bb19-116">Functional locations and assets</span></span>
 
-<span data-ttu-id="f5f61-117">機能的な場所は、場所にある資産を管理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f5f61-117">Functional locations are used to manage assets on locations.</span></span> <span data-ttu-id="f5f61-118">この管理には、機能的な場所の資産原価の追跡が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f5f61-118">This management includes tracking of asset costs on functional locations.</span></span> <span data-ttu-id="f5f61-119">機能的な場所は階層構造で、場所はサブの場所を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="f5f61-119">Functional locations are structured hierarchically, and locations can have sub-locations.</span></span> <span data-ttu-id="f5f61-120">機能的な場所の構造は静的です。</span><span class="sxs-lookup"><span data-stu-id="f5f61-120">The structure of functional locations is static.</span></span> <span data-ttu-id="f5f61-121">つまり、場所を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="f5f61-121">In other words, locations can't change place.</span></span> <span data-ttu-id="f5f61-122">資産は機能的な場所に導入でき、必要に応じて、後で他の機能的な場所に導入することができます。</span><span class="sxs-lookup"><span data-stu-id="f5f61-122">Assets can be installed on functional locations and, as required, can be installed on other functional locations later.</span></span>
+<span data-ttu-id="0bb19-117">機能的な場所は、場所にある資産を管理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="0bb19-117">Functional locations are used to manage assets on locations.</span></span> <span data-ttu-id="0bb19-118">この管理には、機能的な場所の資産原価の追跡が含まれます。</span><span class="sxs-lookup"><span data-stu-id="0bb19-118">This management includes tracking of asset costs on functional locations.</span></span> <span data-ttu-id="0bb19-119">機能的な場所は階層構造で、場所はサブの場所を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="0bb19-119">Functional locations are structured hierarchically, and locations can have sub-locations.</span></span> <span data-ttu-id="0bb19-120">機能的な場所の構造は静的です。</span><span class="sxs-lookup"><span data-stu-id="0bb19-120">The structure of functional locations is static.</span></span> <span data-ttu-id="0bb19-121">つまり、場所を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="0bb19-121">In other words, locations can't change place.</span></span> <span data-ttu-id="0bb19-122">資産は機能的な場所に導入でき、必要に応じて、後で他の機能的な場所に導入することができます。</span><span class="sxs-lookup"><span data-stu-id="0bb19-122">Assets can be installed on functional locations and, as required, can be installed on other functional locations later.</span></span>
 
-<span data-ttu-id="f5f61-123">資産原価は、常に資産の場所に従います。</span><span class="sxs-lookup"><span data-stu-id="f5f61-123">Asset costs always follow the location of the asset.</span></span> <span data-ttu-id="f5f61-124">つまり、新しい機能的な場所に資産を導入すると、その資産は新しい機能的な場所に関連する財務分析コードを自動的に使用します。</span><span class="sxs-lookup"><span data-stu-id="f5f61-124">In other words, if you install an asset on a new functional location, the asset automatically uses the financial dimensions that are related to the new functional location.</span></span> <span data-ttu-id="f5f61-125">したがって、資産原価は、常に資産が現在導入されている機能的な場所に関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="f5f61-125">Therefore, asset costs are always related to the functional location that the asset is  currently installed on.</span></span> <span data-ttu-id="f5f61-126">財務分析コードのこの自動処理は、会社が機能的な場所に関するプロジェクト管理とレポートを行う際に、コストの完全な追跡をするのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="f5f61-126">This automatic handling of financial dimensions helps guarantee complete tracking of costs when your company does project controlling and reporting on functional locations.</span></span>
+<span data-ttu-id="0bb19-123">資産原価は、常に資産の場所に従います。</span><span class="sxs-lookup"><span data-stu-id="0bb19-123">Asset costs always follow the location of the asset.</span></span> <span data-ttu-id="0bb19-124">つまり、新しい機能的な場所に資産を導入すると、その資産は新しい機能的な場所に関連する財務分析コードを自動的に使用します。</span><span class="sxs-lookup"><span data-stu-id="0bb19-124">In other words, if you install an asset on a new functional location, the asset automatically uses the financial dimensions that are related to the new functional location.</span></span> <span data-ttu-id="0bb19-125">したがって、資産原価は、常に資産が現在導入されている機能的な場所に関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="0bb19-125">Therefore, asset costs are always related to the functional location that the asset is  currently installed on.</span></span> <span data-ttu-id="0bb19-126">財務分析コードのこの自動処理は、会社が機能的な場所に関するプロジェクト管理とレポートを行う際に、コストの完全な追跡をするのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="0bb19-126">This automatic handling of financial dimensions helps guarantee complete tracking of costs when your company does project controlling and reporting on functional locations.</span></span>
 
-<span data-ttu-id="f5f61-127">機能的な場所の階層を構築する方法は、内部設備の管理や顧客設備の管理に関する会社の要件によって異なります。</span><span class="sxs-lookup"><span data-stu-id="f5f61-127">The way that you build your hierarchy of functional locations depends on your company's requirements for maintaining internal equipment or servicing customer equipment.</span></span> <span data-ttu-id="f5f61-128">次の図は、地理的な場所に基づく機能的な場所の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="f5f61-128">The following figure shows an example of functional locations that are based on geographical locations.</span></span>
+<span data-ttu-id="0bb19-127">機能的な場所の階層を構築する方法は、内部設備の管理や顧客設備の管理に関する会社の要件によって異なります。</span><span class="sxs-lookup"><span data-stu-id="0bb19-127">The way that you build your hierarchy of functional locations depends on your company's requirements for maintaining internal equipment or servicing customer equipment.</span></span> <span data-ttu-id="0bb19-128">次の図は、地理的な場所に基づく機能的な場所の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="0bb19-128">The following figure shows an example of functional locations that are based on geographical locations.</span></span>
 
 ![地理的な場所に基づく機能上の場所を示す図](media/03-overview-image.png)
 
-<span data-ttu-id="f5f61-130">次の図は、顧客に基づく機能的な場所の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="f5f61-130">The following figure shows an example of functional locations that are based on customers.</span></span>
+<span data-ttu-id="0bb19-130">次の図は、顧客に基づく機能的な場所の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="0bb19-130">The following figure shows an example of functional locations that are based on customers.</span></span>
 
 ![顧客に基づく機能上の場所を示す図](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
