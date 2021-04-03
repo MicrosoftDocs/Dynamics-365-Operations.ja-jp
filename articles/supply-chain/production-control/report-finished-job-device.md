@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 2e9258d0a2f2006f404b24f15605af5a2ad1b281
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7eabcb23681a9b2427fa1065b045e639cc98f9d7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986507"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262144"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>ジョブ カード デバイスから完了として報告する
 

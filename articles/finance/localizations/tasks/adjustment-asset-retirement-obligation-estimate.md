@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3c187df822bd2d86a4e6a2b7a40d1a59f9b106f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4f2951971ac157ab3ad84a4789c7ee444fb50ae2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990033"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253887"
 ---
 # <a name="adjustment-of-the-asset-retirement-obligation-estimate"></a>資産除去債務見積の調整
 

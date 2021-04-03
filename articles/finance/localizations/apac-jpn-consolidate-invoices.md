@@ -17,12 +17,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34fed76d30bb383bbb01af5f6c9548cc7c05cd28
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7045af0c9dcf96424469d76ae2b332433c02db62
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978327"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258194"
 ---
 # <a name="consolidated-invoices-for-japan"></a>日本向け月次締め請求書
 

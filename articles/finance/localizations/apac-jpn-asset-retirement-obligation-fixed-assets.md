@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 367f9320b2247d60f3ce03123a628513d44225c4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ac1657f920424ad3b9f00d4d65d0739551af7e55
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978333"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258196"
 ---
 # <a name="set-up-asset-retirement-obligation-for-fixed-assets-for-japan"></a>日本の固定資産の資産償却責務を設定します。
 

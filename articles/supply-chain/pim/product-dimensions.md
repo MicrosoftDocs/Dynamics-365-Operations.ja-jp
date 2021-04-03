@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118684"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260650"
 ---
 # <a name="product-dimensions"></a>製品分析コード
 
@@ -106,7 +106,7 @@ ms.locfileid: "5118684"
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **マップ:** マップが在庫分析コードを使用する場合は、対応するマップへの対応するリレーション マッピングを更新してバージョン分析コードを含める必要があります。 拡張モデルかテーブルの拡張機能で、フィールドに在庫分析コードが含まれているテーブルを参照します。
-1. **Microsoft Dynamics 365 Commerce機能:** これを有効にすると、Dynamics 365 Supply Chain Management の Commerce 固有のコード全体にバージョン分析コードが表示されます。 ただし、バージョン分析コードはまだ Commerce チャネル データベースや販売時点管理 (POS) や E コマース アプリケーションではサポートされていません。 これらの Commerce 専用アプリケーションは、ユーザーがバージョン分析コードごとに在庫の販売/出荷、または返品/入荷することをサポートしていません。 在庫状況のルックアップ関数では、Commerce アプリのバージョン分析コードで在庫を識別しません。 この動作は、Commerce 全体のコンフィギュレーション分析コードの現在の動作に似ています。
+1. **Microsoft Dynamics 365 Commerce 機能:** これを有効にすると、Dynamics 365 Supply Chain Management の Commerce 固有のコード全体にバージョン分析コードが表示されます。 ただし、バージョン分析コードはまだ Commerce チャネル データベースや販売時点管理 (POS) や E コマース アプリケーションではサポートされていません。 これらの Commerce 専用アプリケーションは、ユーザーがバージョン分析コードごとに在庫の販売/出荷、または返品/入荷することをサポートしていません。 在庫状況のルックアップ関数では、Commerce アプリのバージョン分析コードで在庫を識別しません。 この動作は、Commerce 全体のコンフィギュレーション分析コードの現在の動作に似ています。
 
 #### <a name="turn-on-the-version-dimension"></a>バージョン分析コードをオンにする
 
