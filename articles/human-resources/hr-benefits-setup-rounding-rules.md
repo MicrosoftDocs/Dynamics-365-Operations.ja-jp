@@ -18,21 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a603c31e3a36072b6456bea212ad176009c8b48
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: c3e6c091ad6a6ef9f4310d41ba61f854918db9b1
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113240"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468374"
 ---
-# <a name="set-up-rounding-rules"></a><span data-ttu-id="a5d17-103">丸めルールの設定</span><span class="sxs-lookup"><span data-stu-id="a5d17-103">Set up rounding rules</span></span>
+# <a name="set-up-rounding-rules"></a><span data-ttu-id="66bad-103">丸めルールの設定</span><span class="sxs-lookup"><span data-stu-id="66bad-103">Set up rounding rules</span></span>
 
-<span data-ttu-id="a5d17-104">Dynamics 365 Human Resources で丸めルールを設定して、組織のニーズを合わせることができます。</span><span class="sxs-lookup"><span data-stu-id="a5d17-104">You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-1. <span data-ttu-id="a5d17-105">**給付金管理** ワーク スペースの **設定** で、**丸めルール** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a5d17-105">In the **Benefits management** workspace, under **Setup**, select **Rounding rules**.</span></span>
+<span data-ttu-id="66bad-104">Dynamics 365 Human Resources で丸めルールを設定して、組織のニーズを合わせることができます。</span><span class="sxs-lookup"><span data-stu-id="66bad-104">You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.</span></span>
 
-2. <span data-ttu-id="a5d17-106">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a5d17-106">Select **New**.</span></span>
+1. <span data-ttu-id="66bad-105">**給付金管理** ワーク スペースの **設定** で、**丸めルール** を選択します。</span><span class="sxs-lookup"><span data-stu-id="66bad-105">In the **Benefits management** workspace, under **Setup**, select **Rounding rules**.</span></span>
 
-3. <span data-ttu-id="a5d17-107">**最も近い値に丸める**、**シナリオ**、および **丸めフォーム** の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="a5d17-107">Specify values for **Round to the nearest**, **Scenario**, and **Rounding form**.</span></span>
+2. <span data-ttu-id="66bad-106">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="66bad-106">Select **New**.</span></span>
 
-4. <span data-ttu-id="a5d17-108">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a5d17-108">Select **Save**.</span></span> 
+3. <span data-ttu-id="66bad-107">**最も近い値に丸める**、**シナリオ**、および **丸めフォーム** の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="66bad-107">Specify values for **Round to the nearest**, **Scenario**, and **Rounding form**.</span></span>
+
+4. <span data-ttu-id="66bad-108">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="66bad-108">Select **Save**.</span></span> 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
