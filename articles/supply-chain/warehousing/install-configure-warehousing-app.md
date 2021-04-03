@@ -18,19 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142278"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486980"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>倉庫アプリのインストールと接続
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このトピックでは、古い倉庫アプリ構成する方法について説明します。 新しい倉庫管理モバイル アプリケーション (現在パブリック プレビュー中) を構成する方法の詳細については、[倉庫管理モバイル アプリをインストールして接続する](install-configure-warehouse-management-app.md) を参照してください。
+> このトピックでは、古い倉庫アプリ構成する方法について説明します。 新しい倉庫管理モバイル アプリを構成する方法の詳細については、[倉庫管理モバイル アプリをインストールして接続する](install-configure-warehouse-management-app.md)を参照してください。
 
 > [!NOTE]
 > このトピックでは、クラウド配置の倉庫管理アプリの構成方法について説明します。 オンプレミス配置の倉庫管理アプリの構成方法については、[オンプレミス配置の倉庫管理](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md) を参照してください。

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae82c8312d344f5380adec8413766304681a0a05
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: c799a81f38a5dbd5996afbda9529fa83d7fe5cf9
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113241"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468398"
 ---
 # <a name="set-up-reason-codes"></a>理由コードの設定
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources は、理由コードを使用して、従業員の給付金が変化する理由を説明します。
 

@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6eed4b787a0ff7871700c2990549c8c3349be01b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9306553586d3e9f59aa8f519066fc63899cbb5bc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002671"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236662"
 ---
 # <a name="create-an-accelerated-depreciation-document-and-enter-usage-data"></a>増加償却ドキュメントの作成および使用状況データの入力
 

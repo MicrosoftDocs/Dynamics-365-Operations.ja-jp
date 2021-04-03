@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1424bc4c4ff0f8528d6577e80324082cb2ec7f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a0b94bcc1c33889f336541f3dd8ba4782fac0261
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977166"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238993"
 ---
 # <a name="define-cycle-counting"></a>循環棚卸の定義 
 

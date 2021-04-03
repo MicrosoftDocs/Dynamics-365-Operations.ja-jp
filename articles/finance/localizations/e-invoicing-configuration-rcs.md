@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bb4a426bb54ee21197f9954d946d60ea55f5eb76
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104406"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592625"
 ---
 # <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Regulatory Configuration Services (RCS) で電子請求アドオンを構成する
 
@@ -64,7 +64,6 @@ ms.locfileid: "5104406"
 | ベルギー        | ベルギー 電子請求書 (BE)      | 売上請求書とプロジェクト請求書 |
 | ブラジル         | ブラジル NF-e (BR)                  | 財政文書モデル 55、督促状、取消書、廃棄物 |
 | ブラジル         | ブラジル NFS-e ABRASF クリチバ (BR) | 会計ドキュメントのサービス |
-| ブラジル         | ブラジル NFS-e サンパウロ (BR)       | 会計ドキュメントのサービス |
 | デンマーク        | デンマーク 電子請求書 (DK)       | 売上請求書とプロジェクト請求書 |
 | エジプト          | エジプト 電子請求書 (EG) | 売上請求書とプロジェクト請求書 |
 | エストニア        | エストニア 電子請求書 (EE)     | 売上請求書とプロジェクト請求書 |
@@ -119,10 +118,6 @@ ms.locfileid: "5104406"
 
 - NFS-e ABRASF クリチバ (BR)
 - NFS-e ABRASF 調査書 クリチバ (BR)
-
-#### <a name="brazilian-br-nfs-e-nfs-e-so-paulo-city"></a>ブラジル (BR) NFS-e: NFS-e サンパウロ市
-
-- NFS-e サンパウロ (BR)
 
 #### <a name="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark"></a>デンマーク (BE) 電子請求書 : デンマーク向け、売上請求書とプロジェクト請求書
 
@@ -210,7 +205,7 @@ ms.locfileid: "5104406"
 | ブラジル SEFAZ サービスの呼び出し                  | ブラジルの SEFAZ サービスと統合して会計書類を提出します。       | プレビュー           |
 | メキシコ PAC サービスの呼び出し                      | CFDI 提出に向けたメキシコ PAC サービスとの統合を行います。                      | プレビュー           |
 | 応答の処理                              | Web サービス コールから受信した応答を分析します。                     | 一般に入手可能  |
-| MS Power Automate を使用する                         | Microsoft Power Automate に組み込まれたフローとの統合をします。                       | プレビュー           |
+| MS Power Automate を使用する                         | Microsoft Power Automate に組み込まれたフローと統合します。                       | プレビュー           |
 
 ## <a name="configuration-providers"></a>コンフィギュレーション提供者
 
