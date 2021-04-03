@@ -1,9 +1,9 @@
 ---
 title: トランザクション イベント用の電子メール テンプレートの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベントにおける電子メールテンプレートの作成、アップロード、構成する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベント用の電子メール テンプレートの作成、アップロード、および構成する方法について説明します。
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000788"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555248"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>トランザクション イベント用の電子メール テンプレートの作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベントにおける電子メールテンプレートの作成、アップロード、構成する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベント用の電子メール テンプレートの作成、アップロード、および構成する方法について説明します。
 
 ## <a name="overview"></a>概要
 
@@ -39,7 +39,7 @@ Dynamics 365 Commerce では、トランザクション イベントについて
 
 電子メール テンプレートを作成するには、次の手順に従います。
 
-1. Commerce 本部で **Retail と Commerce \> 本社の設定 \> 組織の電子メール テンプレート** または、**組織管理 \> 設定 \> 組織の電子メール テンプレート** にある **組織の電子メールテンプレート** に移動します。
+1. Commerce 本部で、**Retail と Commerce \> 本社の設定 \> 組織の電子メール テンプレート** または、**組織管理 \> 設定 \> 組織の電子メール テンプレート** に移動します。
 1. **新規** を選択します。
 1. **全般** 配下で、次のフィールドを設定します:
 
@@ -78,28 +78,29 @@ Dynamics 365 Commerce では、トランザクション イベントについて
 
 以下のプレースホルダーは、販売注文レベルで定義されたデータを取得して表示します (販売明細行レベルとは異なります)。
 
-| プレースホルダー名    | プレースホルダー値                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | 注文を行った顧客の名称です。                   |
-| salesid             | 注文の販売 ID です。                                       |
-| deliveryaddress     | 出荷注文の配送先住所です。                         |
-| customeraddress     | 顧客の住所です。                                     |
-| deliverydate        | 配送日です。                                               |
-| shipdate            | 出荷日です。                                                   |
-| modeofdelivery      | 注文の出荷モードです。                                  |
-| 請求             | 注文に対する金額の合計です。                                 |
-| 税                 | 注文の税の合計です。                                     |
-| 合計               | 注文に対する金額の総計です。                                  |
-| ordernetamount      | 注文の合計金額から税の合計を差し引いた金額です。             |
-| 割引            | 注文に対する割引の合計です。                                |
-| storename           | 注文を行った店舗の名称です。                |
-| storeaddress        | 注文を行った顧客の住所です。                  |
-| storeopenfrom       | 注文を行った店舗の開店時間です。             |
-| storeopento         | 注文を行った店舗の閉店時間です。             |
-| pickupstorename     | 注文が受け取られる店舗の名称です。         |
-| pickupstoreaddress  | 注文がピッキングされる店舗の住所です。      |
-| pickupopenstorefrom | 注文がピッキングされる店舗の開店時間です。 |
-| pickupopenstoreto   | 注文がピッキングされる店舗の閉店時間です。 |
+| プレースホルダー名     | プレースホルダー値                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | 注文を行った顧客の名称です。               |
+| salesid              | 注文の販売 ID です。                                   |
+| deliveryaddress      | 出荷注文の配送先住所です。                     |
+| customeraddress      | 顧客の住所です。                                 |
+| customeremailaddress | 顧客がチェックアウト時に入力した電子メール アドレスです。     |
+| deliverydate         | 配送日です。                                           |
+| shipdate             | 出荷日です。                                               |
+| modeofdelivery       | 注文の出荷モードです。                              |
+| 請求              | 注文に対する金額の合計です。                             |
+| 税                  | 注文の税の合計です。                                 |
+| 合計                | 注文に対する金額の総計です。                              |
+| ordernetamount       | 注文の合計金額から税の合計を差し引いた金額です。         |
+| 割引             | 注文に対する割引の合計です。                            |
+| storename            | 注文を行った店舗の名称です。            |
+| storeaddress         | 注文を行った顧客の住所です。              |
+| storeopenfrom        | 注文を行った店舗の開店時間です。         |
+| storeopento          | 注文を行った店舗の閉店時間です。         |
+| pickupstorename      | 注文が受け取られる店舗の名称です。     |
+| pickupstoreaddress   | 注文がピッキングされる店舗の住所です。  |
+| pickupopenstorefrom  | 注文がピッキングされる店舗の開店時間です。 |
+| pickupopenstoreto    | 注文がピッキングされる店舗の閉店時間です。 |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>注文ラインのプレースホルダー (販売ライン レベル)
 
@@ -169,11 +170,8 @@ Dynamics 365 Commerce では、トランザクション イベントについて
 
 領収書は、販売時点管理 (POS) で購入した顧客に電子メールで送信することができます。 一般的には、メールで送信する領収書のテンプレートの作成手順は、その他のトランザクション イベントのテンプレートの作成手順と同じです。 この場合、以下の変更が必要となります:
 
-- 電子メールのテンプレートで使用するメール ID には **emailRecpt** を指定する必要があります。
-- 領収書のテキストは、**%message%** のプレースホルダーを使用して電子メールに挿入されます。 領収書の本文が正しく表示されるように、 **%message%** プレースホルダーを HTML タグの **&lt;pre&gt;** **&lt;/pre&gt;** で囲みます。
-- 電子メールのヘッダーとフッターにおける HTML の改行は、領収書の本文が正しく表示されるように HTML の **&lt;br /&gt;** タグに変換されます。 領収書メールの不要な縦のスペースを削除するには、HTML 内の縦のスペースが不要な場所で改行を削除します。
-
-電子メールで送信する領収書の構成方法については、[電子メールで送信する領収書の設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts) を参照してください。
+- 領収書のテキストは、**%message%** のプレースホルダーを使用して電子メールに挿入されます。 領収書の本文が正しく表示されるように、**%message%** プレースホルダーを HTML タグの **&lt;pre&gt;** および **&lt;/pre&gt;** で囲みます。
+- **%receiptid%** プレースホルダーは、領収書の ID を表す QRコードまたはバーコードを表示するために使用できます。 (QRコードおよびバーコードはサード パーティ サービスによって動的に生成および提供されます。) 電子メールで送信する領収書の QRコードまたはバーコードを表示する方法については、[QRコードまたはバーコードをトランザクションおよび領収書の電子メールに追加する](add-qr-code-barcode-email.md) を参照してください。
 
 ## <a name="upload-the-email-html"></a>電子メールの HTML をアップロードする
 

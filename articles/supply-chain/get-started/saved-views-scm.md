@@ -16,14 +16,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 78cb1c5a90061af224fcd5933af81b6c5cd7e57d
-ms.sourcegitcommit: 5d62c53d84f2ec27136427acfd4314d055298a7b
+ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5123471"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500697"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Management の標準保存済みビュー
+
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management には、必要に応じて有効および使用できる保存済みビューがいくつか含まれています。 一部の標準保存済みビューの中には、特定のロールやタスク ("品質管理" や "受信" など) に対して最適化された名前が付けられたものがあります。 その他は、Microsoft の使用状況統計によって最も頻繁に使用されるフィールドと設定のみを含む最適化も行っています。 一般に、これらの保存済みビューは *簡略化* ビューと呼ばれます。 このトピックでは、使用できる標準の保存済みビューと、それらを有効にしてカスタマイズする方法について説明します。
 
