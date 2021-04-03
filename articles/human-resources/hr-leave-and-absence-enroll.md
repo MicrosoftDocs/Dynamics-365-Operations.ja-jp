@@ -18,45 +18,49 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c2bf77e32271102cf908f0588ae4d84ffade20a8
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 0447096548a4cb6caacf146f9c9a8e968c989acf
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5116023"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468110"
 ---
-# <a name="assign-workers-to-a-leave-plan"></a><span data-ttu-id="8f858-103">休暇計画に作業者を割り当てる</span><span class="sxs-lookup"><span data-stu-id="8f858-103">Assign workers to a leave plan</span></span>
+# <a name="assign-workers-to-a-leave-plan"></a><span data-ttu-id="ef58f-103">休暇計画に作業者を割り当てる</span><span class="sxs-lookup"><span data-stu-id="ef58f-103">Assign workers to a leave plan</span></span>
 
-<span data-ttu-id="8f858-104">Dynamics 365 Human Resources で休暇計画を作成したら、それを作業者に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="8f858-104">After you've created a leave and absence plan in Dynamics 365 Human Resources, assign it to workers.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="assign-a-plan-to-a-group-of-employees"></a><span data-ttu-id="8f858-105">従業員のグループに計画を割り当てる</span><span class="sxs-lookup"><span data-stu-id="8f858-105">Assign a plan to a group of employees</span></span>
+<span data-ttu-id="ef58f-104">Dynamics 365 Human Resources で休暇計画を作成したら、それを作業者に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="ef58f-104">After you've created a leave and absence plan in Dynamics 365 Human Resources, assign it to workers.</span></span>
 
-1. <span data-ttu-id="8f858-106">**休暇** ページで、割り当てたい休暇計画を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f858-106">On the **Leave and absence** page, select the plan you want to assign.</span></span>
+## <a name="assign-a-plan-to-a-group-of-employees"></a><span data-ttu-id="ef58f-105">従業員のグループに計画を割り当てる</span><span class="sxs-lookup"><span data-stu-id="ef58f-105">Assign a plan to a group of employees</span></span>
 
-2. <span data-ttu-id="8f858-107">**従業員を割り当てる** を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f858-107">Select **Assign to employees**.</span></span>
+1. <span data-ttu-id="ef58f-106">**休暇** ページで、割り当てたい休暇計画を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-106">On the **Leave and absence** page, select the plan you want to assign.</span></span>
 
-3. <span data-ttu-id="8f858-108">必要に応じて次の設定を調整します。</span><span class="sxs-lookup"><span data-stu-id="8f858-108">Adjust the following settings as appropriate:</span></span>
+2. <span data-ttu-id="ef58f-107">**従業員を割り当てる** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-107">Select **Assign to employees**.</span></span>
 
-   - <span data-ttu-id="8f858-109">**雇用開始日の登録**</span><span class="sxs-lookup"><span data-stu-id="8f858-109">**Enroll on employment start date**</span></span>
-   - <span data-ttu-id="8f858-110">**登録日**</span><span class="sxs-lookup"><span data-stu-id="8f858-110">**Enrollment date**</span></span>
-   - <span data-ttu-id="8f858-111">**終了日**</span><span class="sxs-lookup"><span data-stu-id="8f858-111">**End date**</span></span>
-   - <span data-ttu-id="8f858-112">**層基準**</span><span class="sxs-lookup"><span data-stu-id="8f858-112">**Tier basis**</span></span>
+3. <span data-ttu-id="ef58f-108">必要に応じて次の設定を調整します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-108">Adjust the following settings as appropriate:</span></span>
 
-4. <span data-ttu-id="8f858-113">**登録する作業者** で、その休暇計画に割り当てるすべての作業者を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f858-113">Under **Workers to enroll**, select all the works to assign to the plan.</span></span>
+   - <span data-ttu-id="ef58f-109">**雇用開始日の登録**</span><span class="sxs-lookup"><span data-stu-id="ef58f-109">**Enroll on employment start date**</span></span>
+   - <span data-ttu-id="ef58f-110">**登録日**</span><span class="sxs-lookup"><span data-stu-id="ef58f-110">**Enrollment date**</span></span>
+   - <span data-ttu-id="ef58f-111">**終了日**</span><span class="sxs-lookup"><span data-stu-id="ef58f-111">**End date**</span></span>
+   - <span data-ttu-id="ef58f-112">**層基準**</span><span class="sxs-lookup"><span data-stu-id="ef58f-112">**Tier basis**</span></span>
 
-5. <span data-ttu-id="8f858-114">ページの下部にある **割り当てる** を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f858-114">Select **Assign plan** at the bottom of the page.</span></span>
+4. <span data-ttu-id="ef58f-113">**登録する作業者** で、その休暇計画に割り当てるすべての作業者を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-113">Under **Workers to enroll**, select all the works to assign to the plan.</span></span>
 
-## <a name="assign-a-plan-to-an-employee"></a><span data-ttu-id="8f858-115">1 人の従業員に計画を割り当てる</span><span class="sxs-lookup"><span data-stu-id="8f858-115">Assign a plan to an employee</span></span>
+5. <span data-ttu-id="ef58f-114">ページの下部にある **割り当てる** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-114">Select **Assign plan** at the bottom of the page.</span></span>
 
-1. <span data-ttu-id="8f858-116">従業員のレコードで、**休暇** を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f858-116">On the employee's record, select **Leave**.</span></span>
+## <a name="assign-a-plan-to-an-employee"></a><span data-ttu-id="ef58f-115">1 人の従業員に計画を割り当てる</span><span class="sxs-lookup"><span data-stu-id="ef58f-115">Assign a plan to an employee</span></span>
 
-2. <span data-ttu-id="8f858-117">**休暇** を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f858-117">Select **Leave and absence**.</span></span>
+1. <span data-ttu-id="ef58f-116">従業員のレコードで、**休暇** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-116">On the employee's record, select **Leave**.</span></span>
 
-3. <span data-ttu-id="8f858-118">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f858-118">Select **New**.</span></span>
+2. <span data-ttu-id="ef58f-117">**休暇** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-117">Select **Leave and absence**.</span></span>
 
-4. <span data-ttu-id="8f858-119">登録日を入力し、休暇計画を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f858-119">Enter an enrollment date and select a leave plan.</span></span>
+3. <span data-ttu-id="ef58f-118">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-118">Select **New**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8f858-120">参照</span><span class="sxs-lookup"><span data-stu-id="8f858-120">See also</span></span>
+4. <span data-ttu-id="ef58f-119">登録日を入力し、休暇計画を選択します。</span><span class="sxs-lookup"><span data-stu-id="ef58f-119">Enter an enrollment date and select a leave plan.</span></span>
 
-- [<span data-ttu-id="8f858-121">休暇の概要</span><span class="sxs-lookup"><span data-stu-id="8f858-121">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
-- [<span data-ttu-id="8f858-122">休暇計画の作成</span><span class="sxs-lookup"><span data-stu-id="8f858-122">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+## <a name="see-also"></a><span data-ttu-id="ef58f-120">参照</span><span class="sxs-lookup"><span data-stu-id="ef58f-120">See also</span></span>
+
+- [<span data-ttu-id="ef58f-121">休暇の概要</span><span class="sxs-lookup"><span data-stu-id="ef58f-121">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="ef58f-122">休暇計画の作成</span><span class="sxs-lookup"><span data-stu-id="ef58f-122">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

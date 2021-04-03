@@ -16,46 +16,51 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da578c57be57b55e9175600461549416faa1298
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 5b93f68790a72af28130d80ed189538f9c5c87ab
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130352"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467108"
 ---
-# <a name="create-loan-items"></a><span data-ttu-id="684f8-103">貸与品目の作成</span><span class="sxs-lookup"><span data-stu-id="684f8-103">Create loan items</span></span>
+# <a name="create-loan-items"></a><span data-ttu-id="90f02-103">貸与品目の作成</span><span class="sxs-lookup"><span data-stu-id="90f02-103">Create loan items</span></span>
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="684f8-104">貸与品目は、会社が作業者に貸与する電話やコンピューターを含む現物品目を追跡するのに役立つレコードです。</span><span class="sxs-lookup"><span data-stu-id="684f8-104">Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers.</span></span> <span data-ttu-id="684f8-105">個々の現物品目は、対応する貸与品目が必要です。</span><span class="sxs-lookup"><span data-stu-id="684f8-105">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="684f8-106">各貸与品目のレコードに、貸与中の品目、貸与の責任者、および貸与可能な日数を記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="684f8-106">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can be on loan.</span></span> <span data-ttu-id="684f8-107">キー、アクセス カード、制服などの複数の貸与品目を同時に作成できます。</span><span class="sxs-lookup"><span data-stu-id="684f8-107">You can create multiple loan items, such as keys, access cards, or uniforms, at the same time.</span></span> <span data-ttu-id="684f8-108">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="684f8-108">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="90f02-104">貸与品目は、会社が作業者に貸与する電話やコンピューターを含む現物品目を追跡するのに役立つレコードです。</span><span class="sxs-lookup"><span data-stu-id="90f02-104">Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers.</span></span> <span data-ttu-id="90f02-105">個々の現物品目は、対応する貸与品目が必要です。</span><span class="sxs-lookup"><span data-stu-id="90f02-105">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="90f02-106">各貸与品目のレコードに、貸与中の品目、貸与の責任者、および貸与可能な日数を記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="90f02-106">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can be on loan.</span></span> <span data-ttu-id="90f02-107">キー、アクセス カード、制服などの複数の貸与品目を同時に作成できます。</span><span class="sxs-lookup"><span data-stu-id="90f02-107">You can create multiple loan items, such as keys, access cards, or uniforms, at the same time.</span></span> <span data-ttu-id="90f02-108">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="90f02-108">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-loan-types"></a><span data-ttu-id="684f8-109">貸与タイプの作成</span><span class="sxs-lookup"><span data-stu-id="684f8-109">Create Loan types</span></span>
-1. <span data-ttu-id="684f8-110">[人事管理] > [作業者] > [貸与品目] > [貸与タイプ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="684f8-110">Go to Human resources > Workers > Loan items > Loan types.</span></span>
-2. <span data-ttu-id="684f8-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="684f8-111">Click New.</span></span>
-3. <span data-ttu-id="684f8-112">[貸与タイプ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-112">In the Loan type field, type a value.</span></span>
-4. <span data-ttu-id="684f8-113">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="684f8-114">この貸与タイプに割り当てられた品目を延滞できる日数を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-114">Enter the number of days that items assigned to this loan type can be overdue.</span></span> 
-6. <span data-ttu-id="684f8-115">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="684f8-115">Click Save.</span></span>
-7. <span data-ttu-id="684f8-116">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="684f8-116">Close the page.</span></span>
-8. <span data-ttu-id="684f8-117">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="684f8-117">Refresh the page.</span></span>
+## <a name="create-loan-types"></a><span data-ttu-id="90f02-109">貸与タイプの作成</span><span class="sxs-lookup"><span data-stu-id="90f02-109">Create Loan types</span></span>
+1. <span data-ttu-id="90f02-110">[人事管理] > [作業者] > [貸与品目] > [貸与タイプ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="90f02-110">Go to Human resources > Workers > Loan items > Loan types.</span></span>
+2. <span data-ttu-id="90f02-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90f02-111">Click New.</span></span>
+3. <span data-ttu-id="90f02-112">[貸与タイプ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-112">In the Loan type field, type a value.</span></span>
+4. <span data-ttu-id="90f02-113">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="90f02-114">この貸与タイプに割り当てられた品目を延滞できる日数を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-114">Enter the number of days that items assigned to this loan type can be overdue.</span></span> 
+6. <span data-ttu-id="90f02-115">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90f02-115">Click Save.</span></span>
+7. <span data-ttu-id="90f02-116">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="90f02-116">Close the page.</span></span>
+8. <span data-ttu-id="90f02-117">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="90f02-117">Refresh the page.</span></span>
 
-## <a name="create-loan-items"></a><span data-ttu-id="684f8-118">貸与品目の作成</span><span class="sxs-lookup"><span data-stu-id="684f8-118">Create Loan items</span></span>
-1. <span data-ttu-id="684f8-119">[人事管理] > [作業者] > [貸与品目] > [貸与品目] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="684f8-119">Go to Human resources > Workers > Loan items > Loan items.</span></span>
-2. <span data-ttu-id="684f8-120">[貸与品目の作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="684f8-120">Click Create loan items.</span></span>
-3. <span data-ttu-id="684f8-121">[数量] フィールドで、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-121">In the Qty. field, enter a number.</span></span>
-4. <span data-ttu-id="684f8-122">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-122">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="684f8-123">[貸与タイプ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="684f8-123">In the Loan type field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="684f8-124">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="684f8-124">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="684f8-125">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="684f8-125">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="684f8-126">品目を貸与できる日数を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-126">Enter the number of days the item can be on loan.</span></span>
-    * <span data-ttu-id="684f8-127">[貸与設備] ページの [返却予定] フィールドの既定値は、現在の日付にこの数を加算して計算されます。</span><span class="sxs-lookup"><span data-stu-id="684f8-127">The default value for the Planned return field on the Loaned equipment page is calculated as the current date plus this number.</span></span>  
-9. <span data-ttu-id="684f8-128">[担当者] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="684f8-128">In the Person in charge field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="684f8-129">[選択] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="684f8-129">Click Select.</span></span>
-11. <span data-ttu-id="684f8-130">[開始値] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-130">In the Starting value field, enter a number.</span></span>
-12. <span data-ttu-id="684f8-131">[間隔] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-131">In the Interval field, enter a number.</span></span>
-13. <span data-ttu-id="684f8-132">[形式] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-132">In the Format field, type a value.</span></span>
-    * <span data-ttu-id="684f8-133">たとえば、貸与品目の開始番号が 10 の場合、[形式] フィールドには 2 つの数値記号を入力します。</span><span class="sxs-lookup"><span data-stu-id="684f8-133">For example, if the starting number for a loan item is 10, enter two number symbols symbols in the Format field.</span></span>  
-14. <span data-ttu-id="684f8-134">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="684f8-134">Click OK.</span></span>
-15. <span data-ttu-id="684f8-135">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="684f8-135">Refresh the page.</span></span>
+## <a name="create-loan-items"></a><span data-ttu-id="90f02-118">貸与品目の作成</span><span class="sxs-lookup"><span data-stu-id="90f02-118">Create Loan items</span></span>
+1. <span data-ttu-id="90f02-119">[人事管理] > [作業者] > [貸与品目] > [貸与品目] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="90f02-119">Go to Human resources > Workers > Loan items > Loan items.</span></span>
+2. <span data-ttu-id="90f02-120">[貸与品目の作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90f02-120">Click Create loan items.</span></span>
+3. <span data-ttu-id="90f02-121">[数量] フィールドで、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-121">In the Qty. field, enter a number.</span></span>
+4. <span data-ttu-id="90f02-122">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-122">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="90f02-123">[貸与タイプ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="90f02-123">In the Loan type field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="90f02-124">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="90f02-124">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="90f02-125">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="90f02-125">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="90f02-126">品目を貸与できる日数を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-126">Enter the number of days the item can be on loan.</span></span>
+    * <span data-ttu-id="90f02-127">[貸与設備] ページの [返却予定] フィールドの既定値は、現在の日付にこの数を加算して計算されます。</span><span class="sxs-lookup"><span data-stu-id="90f02-127">The default value for the Planned return field on the Loaned equipment page is calculated as the current date plus this number.</span></span>  
+9. <span data-ttu-id="90f02-128">[担当者] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="90f02-128">In the Person in charge field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="90f02-129">[選択] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90f02-129">Click Select.</span></span>
+11. <span data-ttu-id="90f02-130">[開始値] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-130">In the Starting value field, enter a number.</span></span>
+12. <span data-ttu-id="90f02-131">[間隔] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-131">In the Interval field, enter a number.</span></span>
+13. <span data-ttu-id="90f02-132">[形式] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-132">In the Format field, type a value.</span></span>
+    * <span data-ttu-id="90f02-133">たとえば、貸与品目の開始番号が 10 の場合、[形式] フィールドには 2 つの数値記号を入力します。</span><span class="sxs-lookup"><span data-stu-id="90f02-133">For example, if the starting number for a loan item is 10, enter two number symbols symbols in the Format field.</span></span>  
+14. <span data-ttu-id="90f02-134">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90f02-134">Click OK.</span></span>
+15. <span data-ttu-id="90f02-135">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="90f02-135">Refresh the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,25 +17,30 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6598094e7877a30c35e1b03794f82c8a4ec001a7
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 49f9f50b774df8e215c084bbb493a6be9de6b234
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113233"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463939"
 ---
-# <a name="access-to-private-addresses-by-security-role"></a><span data-ttu-id="d7276-103">セキュリティ ロールによる個人住所へのアクセス</span><span class="sxs-lookup"><span data-stu-id="d7276-103">Access to private addresses by security role</span></span>
+# <a name="access-to-private-addresses-by-security-role"></a><span data-ttu-id="b0660-103">セキュリティ ロールによる個人住所へのアクセス</span><span class="sxs-lookup"><span data-stu-id="b0660-103">Access to private addresses by security role</span></span>
 
-<span data-ttu-id="d7276-104">**払出**</span><span class="sxs-lookup"><span data-stu-id="d7276-104">**Issue**</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="d7276-105">顧客がセキュリティ ロールを複製し、その新しいロールとしてサインインした後は、顧客はプライベートとしてマークされた住所を見ることができません。</span><span class="sxs-lookup"><span data-stu-id="d7276-105">After a customer duplicates a security role and signs in as that new role, the customer can't see addresses that were marked as private.</span></span>
+<span data-ttu-id="b0660-104">**払出**</span><span class="sxs-lookup"><span data-stu-id="b0660-104">**Issue**</span></span>
 
-<span data-ttu-id="d7276-106">**解像度**</span><span class="sxs-lookup"><span data-stu-id="d7276-106">**Resolution**</span></span>
+<span data-ttu-id="b0660-105">顧客がセキュリティ ロールを複製し、その新しいロールとしてサインインした後は、顧客はプライベートとしてマークされた住所を見ることができません。</span><span class="sxs-lookup"><span data-stu-id="b0660-105">After a customer duplicates a security role and signs in as that new role, the customer can't see addresses that were marked as private.</span></span>
 
-<span data-ttu-id="d7276-107">問題を解決するには、顧客は複製したセキュリティ ロールのための以下の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d7276-107">To resolve the issue, the customer must follow these steps for the duplicated security role.</span></span>
+<span data-ttu-id="b0660-106">**解像度**</span><span class="sxs-lookup"><span data-stu-id="b0660-106">**Resolution**</span></span>
 
-1. <span data-ttu-id="d7276-108">**組織管理\> グローバル アドレス帳 \> グローバル アドレス帳パラメーター** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="d7276-108">Go to **Organization administration \> Global address book \> Global address book parameters**.</span></span>
-2. <span data-ttu-id="d7276-109">**プライベートな場所のセキュリティ** タブで、新しいセキュリティ ロールを **利用可能なロール** リストから、**選択されたロール** リストへ移動します。</span><span class="sxs-lookup"><span data-stu-id="d7276-109">On the **Private location security** tab, move the new security role from the **Available roles** list to the **Selected roles** list.</span></span>
-3. <span data-ttu-id="d7276-110">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d7276-110">Select **Save**.</span></span>
+<span data-ttu-id="b0660-107">問題を解決するには、顧客は複製したセキュリティ ロールのための以下の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b0660-107">To resolve the issue, the customer must follow these steps for the duplicated security role.</span></span>
+
+1. <span data-ttu-id="b0660-108">**組織管理\> グローバル アドレス帳 \> グローバル アドレス帳パラメーター** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b0660-108">Go to **Organization administration \> Global address book \> Global address book parameters**.</span></span>
+2. <span data-ttu-id="b0660-109">**プライベートな場所のセキュリティ** タブで、新しいセキュリティ ロールを **利用可能なロール** リストから、**選択されたロール** リストへ移動します。</span><span class="sxs-lookup"><span data-stu-id="b0660-109">On the **Private location security** tab, move the new security role from the **Available roles** list to the **Selected roles** list.</span></span>
+3. <span data-ttu-id="b0660-110">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b0660-110">Select **Save**.</span></span>
 
 ![グローバル アドレス帳パラメーター ページ](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
