@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,59 +16,62 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98b91a983c60bb99280763f7f7a944d08f535e60
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 64f43ad29d59ade1e124b6800734b003f6ca07df
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686006"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561473"
 ---
-# <a name="intvalue-er-function"></a><span data-ttu-id="6d160-103">INTVALUE ER 関数</span><span class="sxs-lookup"><span data-stu-id="6d160-103">INTVALUE ER function</span></span>
+# <a name="intvalue-er-function"></a><span data-ttu-id="3f380-103">INTVALUE ER 関数</span><span class="sxs-lookup"><span data-stu-id="3f380-103">INTVALUE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6d160-104">`INTVALUE` 関数は、指定された文字列を表す *Int* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="6d160-104">The `INTVALUE` function returns an *Int* value that represents the specified string.</span></span>
+<span data-ttu-id="3f380-104">`INTVALUE` 関数は、指定された文字列を表す *Int* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="3f380-104">The `INTVALUE` function returns an *Int* value that represents the specified string.</span></span>
 
-## <a name="syntax-1"></a><span data-ttu-id="6d160-105">構文 1</span><span class="sxs-lookup"><span data-stu-id="6d160-105">Syntax 1</span></span>
+## <a name="syntax-1"></a><span data-ttu-id="3f380-105">構文 1</span><span class="sxs-lookup"><span data-stu-id="3f380-105">Syntax 1</span></span>
 
 ```vb
 INTVALUE (text)
 ```
 
-## <a name="syntax-2"></a><span data-ttu-id="6d160-106">構文 2</span><span class="sxs-lookup"><span data-stu-id="6d160-106">Syntax 2</span></span>
+## <a name="syntax-2"></a><span data-ttu-id="3f380-106">構文 2</span><span class="sxs-lookup"><span data-stu-id="3f380-106">Syntax 2</span></span>
 
 ```vb
 INTVALUE (number)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="6d160-107">引数</span><span class="sxs-lookup"><span data-stu-id="6d160-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="3f380-107">引数</span><span class="sxs-lookup"><span data-stu-id="3f380-107">Arguments</span></span>
 
-<span data-ttu-id="6d160-108">`text`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="6d160-108">`text`: *String*</span></span>
+<span data-ttu-id="3f380-108">`text`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="3f380-108">`text`: *String*</span></span>
 
-<span data-ttu-id="6d160-109">*Int* 数に変換する必要があるテキスト値。</span><span class="sxs-lookup"><span data-stu-id="6d160-109">A text value that must be converted to an *Int* number.</span></span>
+<span data-ttu-id="3f380-109">*Int* 数に変換する必要があるテキスト値。</span><span class="sxs-lookup"><span data-stu-id="3f380-109">A text value that must be converted to an *Int* number.</span></span>
 
-<span data-ttu-id="6d160-110">`number`: *実数* または *整数*</span><span class="sxs-lookup"><span data-stu-id="6d160-110">`number`: *Real* or *Integer*</span></span>
+<span data-ttu-id="3f380-110">`number`: *実数* または *整数*</span><span class="sxs-lookup"><span data-stu-id="3f380-110">`number`: *Real* or *Integer*</span></span>
 
-<span data-ttu-id="6d160-111">*Int* 数に変換する必要がある数値の *実数* または *整数* 値。</span><span class="sxs-lookup"><span data-stu-id="6d160-111">A numeric *Real* or *Integer* value that must be converted to an *Int* number.</span></span>
+<span data-ttu-id="3f380-111">*Int* 数に変換する必要がある数値の *実数* または *整数* 値。</span><span class="sxs-lookup"><span data-stu-id="3f380-111">A numeric *Real* or *Integer* value that must be converted to an *Int* number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="6d160-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="6d160-112">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="3f380-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="3f380-112">Return values</span></span>
 
-<span data-ttu-id="6d160-113">*Int*</span><span class="sxs-lookup"><span data-stu-id="6d160-113">*Int*</span></span>
+<span data-ttu-id="3f380-113">*Int*</span><span class="sxs-lookup"><span data-stu-id="3f380-113">*Int*</span></span>
 
-<span data-ttu-id="6d160-114">結果数値。</span><span class="sxs-lookup"><span data-stu-id="6d160-114">The resulting numeric value.</span></span>
+<span data-ttu-id="3f380-114">結果数値。</span><span class="sxs-lookup"><span data-stu-id="3f380-114">The resulting numeric value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="6d160-115">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="6d160-115">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="3f380-115">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="3f380-115">Usage notes</span></span>
 
-<span data-ttu-id="6d160-116">任意の小数点以下の桁数が切り捨てられます。</span><span class="sxs-lookup"><span data-stu-id="6d160-116">Any decimal places are truncated.</span></span>
+<span data-ttu-id="3f380-116">任意の小数点以下の桁数が切り捨てられます。</span><span class="sxs-lookup"><span data-stu-id="3f380-116">Any decimal places are truncated.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="6d160-117">例 1</span><span class="sxs-lookup"><span data-stu-id="6d160-117">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="3f380-117">例 1</span><span class="sxs-lookup"><span data-stu-id="3f380-117">Example 1</span></span>
 
-<span data-ttu-id="6d160-118">`INTVALUE ("100.77")` は、*Int* の値 **100** を返します。</span><span class="sxs-lookup"><span data-stu-id="6d160-118">`INTVALUE ("100.77")` returns the *Int* value **100**.</span></span>
+<span data-ttu-id="3f380-118">`INTVALUE ("100.77")` は、*Int* の値 **100** を返します。</span><span class="sxs-lookup"><span data-stu-id="3f380-118">`INTVALUE ("100.77")` returns the *Int* value **100**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="6d160-119">例 2</span><span class="sxs-lookup"><span data-stu-id="6d160-119">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="3f380-119">例 2</span><span class="sxs-lookup"><span data-stu-id="3f380-119">Example 2</span></span>
 
-<span data-ttu-id="6d160-120">`INTVALUE (-100.77)` は、*Int* の値 **-100** を返します。</span><span class="sxs-lookup"><span data-stu-id="6d160-120">`INTVALUE (-100.77)` returns the *Int* value **-100**.</span></span>
+<span data-ttu-id="3f380-120">`INTVALUE (-100.77)` は、*Int* の値 **-100** を返します。</span><span class="sxs-lookup"><span data-stu-id="3f380-120">`INTVALUE (-100.77)` returns the *Int* value **-100**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="6d160-121">追加リソース</span><span class="sxs-lookup"><span data-stu-id="6d160-121">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="3f380-121">追加リソース</span><span class="sxs-lookup"><span data-stu-id="3f380-121">Additional resources</span></span>
 
-[<span data-ttu-id="6d160-122">型変換関数</span><span class="sxs-lookup"><span data-stu-id="6d160-122">Type conversion functions</span></span>](er-functions-category-type-conversion.md)
+[<span data-ttu-id="3f380-122">型変換関数</span><span class="sxs-lookup"><span data-stu-id="3f380-122">Type conversion functions</span></span>](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

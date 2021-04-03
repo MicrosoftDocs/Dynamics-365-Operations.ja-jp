@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,41 +16,44 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bca82cd596ba1e3ec42b3dba91ee6c4871ff8601
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 21942fa47b968fa10bfc9b07f269d44e495139fe
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686861"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564843"
 ---
-# <a name="ch_bank_mod_10-er-function"></a><span data-ttu-id="4c757-103">CH_BANK_MOD_10 ER 関数</span><span class="sxs-lookup"><span data-stu-id="4c757-103">CH_BANK_MOD_10 ER function</span></span>
+# <a name="ch_bank_mod_10-er-function"></a><span data-ttu-id="4060c-103">CH_BANK_MOD_10 ER 関数</span><span class="sxs-lookup"><span data-stu-id="4060c-103">CH_BANK_MOD_10 ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4c757-104">`CH_BANK_MOD_10` 関数は、指定された請求書番号の桁数に基づいて、MOD10 式として債権者参照を表す *文字列* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="4c757-104">The `CH_BANK_MOD_10` function returns a *String* value that represents a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="4060c-104">`CH_BANK_MOD_10` 関数は、指定された請求書番号の桁数に基づいて、MOD10 式として債権者参照を表す *文字列* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="4060c-104">The `CH_BANK_MOD_10` function returns a *String* value that represents a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4c757-105">構文</span><span class="sxs-lookup"><span data-stu-id="4c757-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4060c-105">構文</span><span class="sxs-lookup"><span data-stu-id="4060c-105">Syntax</span></span>
 
 ```vb
 CH_BANK_MOD_10 (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="4c757-106">引数</span><span class="sxs-lookup"><span data-stu-id="4c757-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="4060c-106">引数</span><span class="sxs-lookup"><span data-stu-id="4060c-106">Arguments</span></span>
 
-<span data-ttu-id="4c757-107">`invoice number digits`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="4c757-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="4060c-107">`invoice number digits`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="4060c-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="4c757-108">請求書番号の桁数を表すテキスト値。</span><span class="sxs-lookup"><span data-stu-id="4c757-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="4060c-108">請求書番号の桁数を表すテキスト値。</span><span class="sxs-lookup"><span data-stu-id="4060c-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="4c757-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="4c757-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="4060c-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="4060c-109">Return values</span></span>
 
-<span data-ttu-id="4c757-110">*文字列*</span><span class="sxs-lookup"><span data-stu-id="4c757-110">*String*</span></span>
+<span data-ttu-id="4060c-110">*文字列*</span><span class="sxs-lookup"><span data-stu-id="4060c-110">*String*</span></span>
 
-<span data-ttu-id="4c757-111">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="4c757-111">The resulting text value.</span></span>
+<span data-ttu-id="4060c-111">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="4060c-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4c757-112">例</span><span class="sxs-lookup"><span data-stu-id="4c757-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4060c-112">例</span><span class="sxs-lookup"><span data-stu-id="4060c-112">Example</span></span>
 
-<span data-ttu-id="4c757-113">`CH_BANK_MOD_10 ("VEND-200002")` は、**3** を返します。</span><span class="sxs-lookup"><span data-stu-id="4c757-113">`CH_BANK_MOD_10 ("VEND-200002")` returns **3**.</span></span>
+<span data-ttu-id="4060c-113">`CH_BANK_MOD_10 ("VEND-200002")` は、**3** を返します。</span><span class="sxs-lookup"><span data-stu-id="4060c-113">`CH_BANK_MOD_10 ("VEND-200002")` returns **3**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="4c757-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="4c757-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="4060c-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="4060c-114">Additional resources</span></span>
 
-[<span data-ttu-id="4c757-115">その他 (ビジネス ドメインの特定の) 関数</span><span class="sxs-lookup"><span data-stu-id="4c757-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="4060c-115">その他 (ビジネス ドメインの特定の) 関数</span><span class="sxs-lookup"><span data-stu-id="4060c-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
