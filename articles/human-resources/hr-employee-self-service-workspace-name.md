@@ -18,30 +18,35 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 383af930e7ea5b14584069dff09e45b92808df23
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: b6df9391f8b97573f7874f8bc19450db3fdadd88
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115201"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463217"
 ---
-# <a name="change-employee-self-service-workspace-name"></a><span data-ttu-id="791f1-103">従業員セルフ サービス ワークスペース名の変更</span><span class="sxs-lookup"><span data-stu-id="791f1-103">Change Employee self service workspace name</span></span>
+# <a name="change-employee-self-service-workspace-name"></a><span data-ttu-id="b51ab-103">従業員セルフ サービス ワークスペース名の変更</span><span class="sxs-lookup"><span data-stu-id="b51ab-103">Change Employee self service workspace name</span></span>
 
-<span data-ttu-id="791f1-104">ボランティアやその他の非従業員がいる場合は、**従業員セルフ サービス** ワークスペースの名前を変更できます。</span><span class="sxs-lookup"><span data-stu-id="791f1-104">If you have volunteers or other non-employees, you might want to change the name of the **Employee self-service** workspace.</span></span> <span data-ttu-id="791f1-105">代わりに、このワークスペースを **セルフ サービス** に変更できます。</span><span class="sxs-lookup"><span data-stu-id="791f1-105">You can change this workspace to **Self service** instead.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+<span data-ttu-id="b51ab-104">ボランティアやその他の非従業員がいる場合は、**従業員セルフ サービス** ワークスペースの名前を変更できます。</span><span class="sxs-lookup"><span data-stu-id="b51ab-104">If you have volunteers or other non-employees, you might want to change the name of the **Employee self-service** workspace.</span></span> <span data-ttu-id="b51ab-105">代わりに、このワークスペースを **セルフ サービス** に変更できます。</span><span class="sxs-lookup"><span data-stu-id="b51ab-105">You can change this workspace to **Self service** instead.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="791f1-106">**従業員セルフ サービス** ワークスペースの名前を変更すると、Dynamics 365 Human Resources が内部で使用するメニュー項目も変更されます。</span><span class="sxs-lookup"><span data-stu-id="791f1-106">Changing the name of the **Employee self-service** workspace also changes the menu item that is used internally by Dynamics 365 Human Resources.</span></span> <span data-ttu-id="791f1-107">以前に **HcmEmployeeSelfServiceWorkspace** メニュー項目にセキュリティのカスタマイズを適用している場合は、パリティを保持するために、同じ変更を **HcmSelfServiceWorkspace** に適用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="791f1-107">If you previously applied security customizations to the **HcmEmployeeSelfServiceWorkspace** menu item, we recommend applying the same changes to **HcmSelfServiceWorkspace** to maintain parity.</span></span>
+> <span data-ttu-id="b51ab-106">**従業員セルフ サービス** ワークスペースの名前を変更すると、Dynamics 365 Human Resources が内部で使用するメニュー項目も変更されます。</span><span class="sxs-lookup"><span data-stu-id="b51ab-106">Changing the name of the **Employee self-service** workspace also changes the menu item that is used internally by Dynamics 365 Human Resources.</span></span> <span data-ttu-id="b51ab-107">以前に **HcmEmployeeSelfServiceWorkspace** メニュー項目にセキュリティのカスタマイズを適用している場合は、パリティを保持するために、同じ変更を **HcmSelfServiceWorkspace** に適用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="b51ab-107">If you previously applied security customizations to the **HcmEmployeeSelfServiceWorkspace** menu item, we recommend applying the same changes to **HcmSelfServiceWorkspace** to maintain parity.</span></span>
 
-1. <span data-ttu-id="791f1-108">Human Resources では、**人事管理** を選択し、**リンク** を選択して、**人事管理パラメーター** を選択します。</span><span class="sxs-lookup"><span data-stu-id="791f1-108">In Human Resources, select **Personnel management**, select **Links**, and then select **Human resources parameters**.</span></span>
+1. <span data-ttu-id="b51ab-108">Human Resources では、**人事管理** を選択し、**リンク** を選択して、**人事管理パラメーター** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b51ab-108">In Human Resources, select **Personnel management**, select **Links**, and then select **Human resources parameters**.</span></span>
 
-2. <span data-ttu-id="791f1-109">**従業員セルフ サービス** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="791f1-109">Select the **Employee self-service** tab.</span></span>
+2. <span data-ttu-id="b51ab-109">**従業員セルフ サービス** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="b51ab-109">Select the **Employee self-service** tab.</span></span>
 
-3. <span data-ttu-id="791f1-110">**表示名** の **セルフ サービス** を選択します。</span><span class="sxs-lookup"><span data-stu-id="791f1-110">Under **Display name**, select **Self service**.</span></span>
+3. <span data-ttu-id="b51ab-110">**表示名** の **セルフ サービス** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b51ab-110">Under **Display name**, select **Self service**.</span></span>
 
    ![従業員セルフ サービス ワークスペース名をセルフ サービスに変更](./media/hr-employee-self-service-workspace-name.png)
 
-4. <span data-ttu-id="791f1-112">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="791f1-112">Select **Save**.</span></span>
+4. <span data-ttu-id="b51ab-112">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b51ab-112">Select **Save**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="791f1-113">追加リソース</span><span class="sxs-lookup"><span data-stu-id="791f1-113">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="b51ab-113">追加リソース</span><span class="sxs-lookup"><span data-stu-id="b51ab-113">Additional resources</span></span>
 
-- [<span data-ttu-id="791f1-114">従業員およびマネージャー セルフサービスの概要</span><span class="sxs-lookup"><span data-stu-id="791f1-114">Employee and Manager self-service overview</span></span>](hr-employee-manager-self-service-overview.md)
+- [<span data-ttu-id="b51ab-114">従業員およびマネージャー セルフサービスの概要</span><span class="sxs-lookup"><span data-stu-id="b51ab-114">Employee and Manager self-service overview</span></span>](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

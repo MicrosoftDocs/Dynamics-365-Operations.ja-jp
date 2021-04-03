@@ -18,24 +18,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a47065a28f116cde5ce2983acada2f735f8c5edf
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 86e6868b5172ea113fab63780773633427a45a1a
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115297"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463193"
 ---
-# <a name="manage-leave-and-absence-requests"></a><span data-ttu-id="5224d-103">休暇および欠勤要求の管理</span><span class="sxs-lookup"><span data-stu-id="5224d-103">Manage leave and absence requests</span></span>
+# <a name="manage-leave-and-absence-requests"></a><span data-ttu-id="58e7b-103">休暇および欠勤要求の管理</span><span class="sxs-lookup"><span data-stu-id="58e7b-103">Manage leave and absence requests</span></span>
 
-<span data-ttu-id="5224d-104">休暇申請の管理は、Dynamics 365 Human Resources の **従業員セルフサービス** ワークスペースから行えます。</span><span class="sxs-lookup"><span data-stu-id="5224d-104">Manage time-off requests from the **Employee self-service** workspace in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="5224d-105">申請は、単純な 1 日申請、または複数の休暇タイプを含む複数日申請が可能です。</span><span class="sxs-lookup"><span data-stu-id="5224d-105">Requests might be simple single-day requests or multiple-day requests that include multiple leave and absence types.</span></span> <span data-ttu-id="5224d-106">ワークフローが有効でない場合は、申請は自動的に承認されます。</span><span class="sxs-lookup"><span data-stu-id="5224d-106">If a workflow isn't enabled, the requests are automatically approved.</span></span> <span data-ttu-id="5224d-107">ワークフローを有効にすると、ワークフローの構成に応じて、承認を自動化したり、サインオフを要求したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="5224d-107">When a workflow is enabled, the approval can be automatic or require sign-off, depending on the workflow configuration.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-1. <span data-ttu-id="5224d-108">**従業員セルフサービス** ワークスペースで、**自分のチーム** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5224d-108">In the **Employee self-service** workspace, select **My team**.</span></span>
+<span data-ttu-id="58e7b-104">休暇申請の管理は、Dynamics 365 Human Resources の **従業員セルフサービス** ワークスペースから行えます。</span><span class="sxs-lookup"><span data-stu-id="58e7b-104">Manage time-off requests from the **Employee self-service** workspace in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="58e7b-105">申請は、単純な 1 日申請、または複数の休暇タイプを含む複数日申請が可能です。</span><span class="sxs-lookup"><span data-stu-id="58e7b-105">Requests might be simple single-day requests or multiple-day requests that include multiple leave and absence types.</span></span> <span data-ttu-id="58e7b-106">ワークフローが有効でない場合は、申請は自動的に承認されます。</span><span class="sxs-lookup"><span data-stu-id="58e7b-106">If a workflow isn't enabled, the requests are automatically approved.</span></span> <span data-ttu-id="58e7b-107">ワークフローを有効にすると、ワークフローの構成に応じて、承認を自動化したり、サインオフを要求したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="58e7b-107">When a workflow is enabled, the approval can be automatic or require sign-off, depending on the workflow configuration.</span></span>
 
-2. <span data-ttu-id="5224d-109">**自分のチームの情報** で、**休暇** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="5224d-109">Under **My team information**, select the **Leave and absence** tab.</span></span> 
+1. <span data-ttu-id="58e7b-108">**従業員セルフサービス** ワークスペースで、**自分のチーム** を選択します。</span><span class="sxs-lookup"><span data-stu-id="58e7b-108">In the **Employee self-service** workspace, select **My team**.</span></span>
 
-3. <span data-ttu-id="5224d-110">必要に応じて自分のチーム メンバーの休暇申請を表示および承認します。</span><span class="sxs-lookup"><span data-stu-id="5224d-110">View and approve your team members' time-off requests as necessary.</span></span>
+2. <span data-ttu-id="58e7b-109">**自分のチームの情報** で、**休暇** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="58e7b-109">Under **My team information**, select the **Leave and absence** tab.</span></span> 
 
-## <a name="see-also"></a><span data-ttu-id="5224d-111">参照</span><span class="sxs-lookup"><span data-stu-id="5224d-111">See also</span></span>
+3. <span data-ttu-id="58e7b-110">必要に応じて自分のチーム メンバーの休暇申請を表示および承認します。</span><span class="sxs-lookup"><span data-stu-id="58e7b-110">View and approve your team members' time-off requests as necessary.</span></span>
 
-- [<span data-ttu-id="5224d-112">休暇の概要</span><span class="sxs-lookup"><span data-stu-id="5224d-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
-- [<span data-ttu-id="5224d-113">休暇計画の作成</span><span class="sxs-lookup"><span data-stu-id="5224d-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+## <a name="see-also"></a><span data-ttu-id="58e7b-111">参照</span><span class="sxs-lookup"><span data-stu-id="58e7b-111">See also</span></span>
+
+- [<span data-ttu-id="58e7b-112">休暇の概要</span><span class="sxs-lookup"><span data-stu-id="58e7b-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="58e7b-113">休暇計画の作成</span><span class="sxs-lookup"><span data-stu-id="58e7b-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

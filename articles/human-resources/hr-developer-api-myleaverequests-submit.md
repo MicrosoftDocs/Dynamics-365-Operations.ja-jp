@@ -18,61 +18,63 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51be70edbe1439340377fd01b9760d49d3a75348
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: aeb3d66ad24f96efea1b0ea9828a537f8853c94b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115515"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465489"
 ---
-# <a name="submit-a-leave-request-to-workflow"></a><span data-ttu-id="a5f0b-103">休暇申請をワークフローに送信する</span><span class="sxs-lookup"><span data-stu-id="a5f0b-103">Submit a leave request to workflow</span></span>
+# <a name="submit-a-leave-request-to-workflow"></a><span data-ttu-id="f6f11-103">休暇申請をワークフローに送信する</span><span class="sxs-lookup"><span data-stu-id="f6f11-103">Submit a leave request to workflow</span></span>
 
-<span data-ttu-id="a5f0b-104">Microsoft Dynamics 365 Human Resources では、MyLeaveRequests submit () アプリケーション プログラミング インターフェイス (API) を使用して、休暇要求をワークフローに送信できます。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-104">In Microsoft Dynamics 365 Human Resources, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to workflow.</span></span> <span data-ttu-id="a5f0b-105">この API は、MyLeaveRequests OData エンティティでアクションとして公開されます。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-105">This API is exposed as an action on the MyLeaveRequests OData entity.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="prerequisites"></a><span data-ttu-id="a5f0b-106">必要条件</span><span class="sxs-lookup"><span data-stu-id="a5f0b-106">Prerequisites</span></span>
+<span data-ttu-id="f6f11-104">Microsoft Dynamics 365 Human Resources では、MyLeaveRequests submit () アプリケーション プログラミング インターフェイス (API) を使用して、休暇要求をワークフローに送信できます。</span><span class="sxs-lookup"><span data-stu-id="f6f11-104">In Microsoft Dynamics 365 Human Resources, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to workflow.</span></span> <span data-ttu-id="f6f11-105">この API は、MyLeaveRequests OData エンティティでアクションとして公開されます。</span><span class="sxs-lookup"><span data-stu-id="f6f11-105">This API is exposed as an action on the MyLeaveRequests OData entity.</span></span>
 
-<span data-ttu-id="a5f0b-107">休暇要求はデータベースに保存する必要があり、MyLeaveRequests エンティティを通じて取得できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-107">The leave request must be saved in the database and must be retrievable through the MyLeaveRequests entity.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f6f11-106">必要条件</span><span class="sxs-lookup"><span data-stu-id="f6f11-106">Prerequisites</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a5f0b-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a5f0b-108">Permissions</span></span>
+<span data-ttu-id="f6f11-107">休暇要求はデータベースに保存する必要があり、MyLeaveRequests エンティティを通じて取得できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="f6f11-107">The leave request must be saved in the database and must be retrievable through the MyLeaveRequests entity.</span></span>
 
-<span data-ttu-id="a5f0b-109">この API を呼び出すには、次のアクセス許可の 1 つが必要です。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="a5f0b-110">アクセス許可およびその選択方法の詳細については、[認証](hr-developer-api-authentication.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-110">For more information about permissions and how to select them, see [Authentication](hr-developer-api-authentication.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f6f11-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f6f11-108">Permissions</span></span>
 
-| <span data-ttu-id="a5f0b-111">アクセス許可のタイプ</span><span class="sxs-lookup"><span data-stu-id="a5f0b-111">Permission type</span></span>                    | <span data-ttu-id="a5f0b-112">アクセス許可 (最小の特権から最大の特権)</span><span class="sxs-lookup"><span data-stu-id="a5f0b-112">Permissions (from least privileged to most privileged)</span></span> |
+<span data-ttu-id="f6f11-109">この API を呼び出すには、次のアクセス許可の 1 つが必要です。</span><span class="sxs-lookup"><span data-stu-id="f6f11-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="f6f11-110">アクセス許可およびその選択方法の詳細については、[認証](hr-developer-api-authentication.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f6f11-110">For more information about permissions and how to select them, see [Authentication](hr-developer-api-authentication.md).</span></span>
+
+| <span data-ttu-id="f6f11-111">アクセス許可のタイプ</span><span class="sxs-lookup"><span data-stu-id="f6f11-111">Permission type</span></span>                    | <span data-ttu-id="f6f11-112">アクセス許可 (最小の特権から最大の特権)</span><span class="sxs-lookup"><span data-stu-id="f6f11-112">Permissions (from least privileged to most privileged)</span></span> |
 |------------------------------------|--------------------------------------------------------|
-| <span data-ttu-id="a5f0b-113">委任 (勤務先または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="a5f0b-113">Delegated (work or school account)</span></span> | <span data-ttu-id="a5f0b-114">ユーザー \_ 偽装</span><span class="sxs-lookup"><span data-stu-id="a5f0b-114">user\_impersonation</span></span>                                    |
+| <span data-ttu-id="f6f11-113">委任 (勤務先または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="f6f11-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f6f11-114">ユーザー \_ 偽装</span><span class="sxs-lookup"><span data-stu-id="f6f11-114">user\_impersonation</span></span>                                    |
 
-## <a name="https-request"></a><span data-ttu-id="a5f0b-115">HTTPS 要求</span><span class="sxs-lookup"><span data-stu-id="a5f0b-115">HTTPS request</span></span>
+## <a name="https-request"></a><span data-ttu-id="f6f11-115">HTTPS 要求</span><span class="sxs-lookup"><span data-stu-id="f6f11-115">HTTPS request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```HTTP
 POST https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/MyLeaveRequests(RequestId='{requestId}', LeaveType='{leaveType}', LeaveDate={leaveDate}, dataAreaId={dataArea})/Microsoft.Dynamics.DataEntities.submit?cross-company=true
 ```
 
-<span data-ttu-id="a5f0b-116">この要求は OData の標準に準拠しています。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-116">The request conforms to OData standards.</span></span> <span data-ttu-id="a5f0b-117">{requestId}、{leaveType}、{leaveDate}、{dataArea} の各パラメーターは、MyLeaveRequests エンティティの複合ナチュラル キーを構成するフィールドを参照します。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-117">The {requestId}, {leaveType}, {leaveDate}, and {dataArea} parameters refer to the fields that make up the composite natural key for the MyLeaveRequests entity.</span></span>
+<span data-ttu-id="f6f11-116">この要求は OData の標準に準拠しています。</span><span class="sxs-lookup"><span data-stu-id="f6f11-116">The request conforms to OData standards.</span></span> <span data-ttu-id="f6f11-117">{requestId}、{leaveType}、{leaveDate}、{dataArea} の各パラメーターは、MyLeaveRequests エンティティの複合ナチュラル キーを構成するフィールドを参照します。</span><span class="sxs-lookup"><span data-stu-id="f6f11-117">The {requestId}, {leaveType}, {leaveDate}, and {dataArea} parameters refer to the fields that make up the composite natural key for the MyLeaveRequests entity.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a5f0b-118">MyLeaveRequests エンティティのフィールドは休暇要求の個々の行を参照しますが、送信 API を呼び出すと、休暇要求全体 (すべての行) がワークフローに送信されます。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-118">While the fields for the MyLeaveRequests entity refer to an individual line in the leave request, calling the submit API will submit the entire leave request (all lines) to workflow.</span></span>
+> <span data-ttu-id="f6f11-118">MyLeaveRequests エンティティのフィールドは休暇要求の個々の行を参照しますが、送信 API を呼び出すと、休暇要求全体 (すべての行) がワークフローに送信されます。</span><span class="sxs-lookup"><span data-stu-id="f6f11-118">While the fields for the MyLeaveRequests entity refer to an individual line in the leave request, calling the submit API will submit the entire leave request (all lines) to workflow.</span></span>
 
-### <a name="request-headers"></a><span data-ttu-id="a5f0b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a5f0b-119">Request headers</span></span>
+### <a name="request-headers"></a><span data-ttu-id="f6f11-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f6f11-119">Request headers</span></span>
 
-| <span data-ttu-id="a5f0b-120">表題</span><span class="sxs-lookup"><span data-stu-id="a5f0b-120">Header</span></span>         | <span data-ttu-id="a5f0b-121">金額</span><span class="sxs-lookup"><span data-stu-id="a5f0b-121">Value</span></span>                     |
+| <span data-ttu-id="f6f11-120">表題</span><span class="sxs-lookup"><span data-stu-id="f6f11-120">Header</span></span>         | <span data-ttu-id="f6f11-121">金額</span><span class="sxs-lookup"><span data-stu-id="f6f11-121">Value</span></span>                     |
 |----------------|---------------------------|
-| <span data-ttu-id="a5f0b-122">承認</span><span class="sxs-lookup"><span data-stu-id="a5f0b-122">Authorization</span></span>  | <span data-ttu-id="a5f0b-123">ベアラー {token} (必須)</span><span class="sxs-lookup"><span data-stu-id="a5f0b-123">Bearer {token} (required)</span></span> |
-| <span data-ttu-id="a5f0b-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a5f0b-124">Content-Type</span></span>   | <span data-ttu-id="a5f0b-125">アプリケーション /json</span><span class="sxs-lookup"><span data-stu-id="a5f0b-125">application/json</span></span>          |
+| <span data-ttu-id="f6f11-122">承認</span><span class="sxs-lookup"><span data-stu-id="f6f11-122">Authorization</span></span>  | <span data-ttu-id="f6f11-123">ベアラー {token} (必須)</span><span class="sxs-lookup"><span data-stu-id="f6f11-123">Bearer {token} (required)</span></span> |
+| <span data-ttu-id="f6f11-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f6f11-124">Content-Type</span></span>   | <span data-ttu-id="f6f11-125">アプリケーション /json</span><span class="sxs-lookup"><span data-stu-id="f6f11-125">application/json</span></span>          |
 
-### <a name="request-body"></a><span data-ttu-id="a5f0b-126">要求の本文</span><span class="sxs-lookup"><span data-stu-id="a5f0b-126">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="f6f11-126">要求の本文</span><span class="sxs-lookup"><span data-stu-id="f6f11-126">Request body</span></span>
 
-<span data-ttu-id="a5f0b-127">このメソッドの要求の本文を供給しないでください。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-127">Don't supply a request body for this method.</span></span>
+<span data-ttu-id="f6f11-127">このメソッドの要求の本文を供給しないでください。</span><span class="sxs-lookup"><span data-stu-id="f6f11-127">Don't supply a request body for this method.</span></span>
 
-### <a name="response"></a><span data-ttu-id="a5f0b-128">応答</span><span class="sxs-lookup"><span data-stu-id="a5f0b-128">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f6f11-128">応答</span><span class="sxs-lookup"><span data-stu-id="f6f11-128">Response</span></span>
 
-<span data-ttu-id="a5f0b-129">成功したときの応答は常に **204 No Content (内容なし)** です。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-129">A successful response is always a **204 No Content** response.</span></span>
+<span data-ttu-id="f6f11-129">成功したときの応答は常に **204 No Content (内容なし)** です。</span><span class="sxs-lookup"><span data-stu-id="f6f11-129">A successful response is always a **204 No Content** response.</span></span>
 
-<span data-ttu-id="a5f0b-130">未承認の呼び出し元は、**401 Unauthorized (未承認)** または **403 Forbidden (許可されていません)** といった応答を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-130">Unauthorized callers will receive a **401 Unauthorized** or a **403 Forbidden** response.</span></span>
+<span data-ttu-id="f6f11-130">未承認の呼び出し元は、**401 Unauthorized (未承認)** または **403 Forbidden (許可されていません)** といった応答を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="f6f11-130">Unauthorized callers will receive a **401 Unauthorized** or a **403 Forbidden** response.</span></span>
 
-<span data-ttu-id="a5f0b-131">送信が失敗した場合 (たとえば検証のため)、応答は **500 Server Error (サーバー エラー)** になり、応答本文には詳細を含む JSON オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-131">If submission is unsuccessful (because of validation, for example), the response will be a **500 Server Error**, and the response body will include a JSON object with further details.</span></span>
+<span data-ttu-id="f6f11-131">送信が失敗した場合 (たとえば検証のため)、応答は **500 Server Error (サーバー エラー)** になり、応答本文には詳細を含む JSON オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f6f11-131">If submission is unsuccessful (because of validation, for example), the response will be a **500 Server Error**, and the response body will include a JSON object with further details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a5f0b-132">例</span><span class="sxs-lookup"><span data-stu-id="a5f0b-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f6f11-132">例</span><span class="sxs-lookup"><span data-stu-id="f6f11-132">Example</span></span>
 
 ```http
 POST https://aos-rts-sf-550e5c091f6-prod-westus2.hr.talent.dynamics.com/namespaces/b2eb8003-334f-4a84-ab63-edbe23569090/data/MyLeaveRequests(RequestId='USMF-000065', LeaveType='Vacation', LeaveDate=2019-10-04T12:00:00Z, dataAreaId='USMF')/Microsoft.Dynamics.DataEntities.submit
@@ -92,19 +94,21 @@ POST https://aos-rts-sf-550e5c091f6-prod-westus2.hr.talent.dynamics.com/namespac
 }
 ```
 
-## <a name="validation-and-error-messages"></a><span data-ttu-id="a5f0b-133">検証とエラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="a5f0b-133">Validation and error messages</span></span>
+## <a name="validation-and-error-messages"></a><span data-ttu-id="f6f11-133">検証とエラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="f6f11-133">Validation and error messages</span></span>
 
-<span data-ttu-id="a5f0b-134">送信 API の呼び出しの一環として、人事管理は送信前にビジネス ロジック検証を実行することにより、休暇要求は送信に対して有効な状態にあることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-134">As part of the call to the submit API, Human Resources performs business logic validation before submission, which ensures the leave request is in a valid state for submission.</span></span> <span data-ttu-id="a5f0b-135">検証が失敗した場合に応答で受け取る可能性のあるエラー メッセージは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-135">The possible error messages you may receive in the response if validations fail are:</span></span>
+<span data-ttu-id="f6f11-134">送信 API の呼び出しの一環として、人事管理は送信前にビジネス ロジック検証を実行することにより、休暇要求は送信に対して有効な状態にあることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="f6f11-134">As part of the call to the submit API, Human Resources performs business logic validation before submission, which ensures the leave request is in a valid state for submission.</span></span> <span data-ttu-id="f6f11-135">検証が失敗した場合に応答で受け取る可能性のあるエラー メッセージは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f6f11-135">The possible error messages you may receive in the response if validations fail are:</span></span>
 
- - <span data-ttu-id="a5f0b-136">この要求による '{LeaveTypeId}' の残日数は、{date} の最小許容残日数を下回っています。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-136">The request would put the '{LeaveTypeId}' balance below the allowed minimum balance on {date}.</span></span>
- - <span data-ttu-id="a5f0b-137">完了状態の休暇申請要求は送信できません。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-137">Time off request in Completed state cannot be submitted.</span></span>
- - <span data-ttu-id="a5f0b-138">変更が行われていないため、要求を送信または保存できません。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-138">Unable to submit or save request as no changes have been made.</span></span> <span data-ttu-id="a5f0b-139">量または休暇タイプを追加または更新して、もう一度やり直してください。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-139">Add or update the amount or the leave type and try again.</span></span>
- - <span data-ttu-id="a5f0b-140">入力された休暇申請には、既存の保留中の申請と同じ休暇タイプおよび日付が 1 日以上含まれています。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-140">The time off request entered contains one or more days with the same date and leave type as an existing pending request.</span></span> <span data-ttu-id="a5f0b-141">変更を加えるには、既存の要求を取り消してください。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-141">Please recall the existing request to make changes.</span></span>
- - <span data-ttu-id="a5f0b-142">理由コード '{ReasonCodeId}' は申請における休暇のタイプのいずれにも適用されません。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-142">Reason code '{ReasonCodeId}' doesn't apply to any of the leave types in the request.</span></span>
- - <span data-ttu-id="a5f0b-143">休暇タイプ '{LeaveTypeId}' には理由コードが必要です。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-143">Leave type '{LeaveTypeId}' requires a reason code.</span></span> <span data-ttu-id="a5f0b-144">適切なタイプと理由コードを選択します。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-144">Select the appropriate type and reason code.</span></span>
- - <span data-ttu-id="a5f0b-145">休暇申請が正常に送信されていません。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-145">The time off was not submitted successfully.</span></span> <span data-ttu-id="a5f0b-146">休暇申請は下書きの要求として保存されました。</span><span class="sxs-lookup"><span data-stu-id="a5f0b-146">The time off has been saved as a draft request.</span></span>
+ - <span data-ttu-id="f6f11-136">この要求による '{LeaveTypeId}' の残日数は、{date} の最小許容残日数を下回っています。</span><span class="sxs-lookup"><span data-stu-id="f6f11-136">The request would put the '{LeaveTypeId}' balance below the allowed minimum balance on {date}.</span></span>
+ - <span data-ttu-id="f6f11-137">完了状態の休暇申請要求は送信できません。</span><span class="sxs-lookup"><span data-stu-id="f6f11-137">Time off request in Completed state cannot be submitted.</span></span>
+ - <span data-ttu-id="f6f11-138">変更が行われていないため、要求を送信または保存できません。</span><span class="sxs-lookup"><span data-stu-id="f6f11-138">Unable to submit or save request as no changes have been made.</span></span> <span data-ttu-id="f6f11-139">量または休暇タイプを追加または更新して、もう一度やり直してください。</span><span class="sxs-lookup"><span data-stu-id="f6f11-139">Add or update the amount or the leave type and try again.</span></span>
+ - <span data-ttu-id="f6f11-140">入力された休暇申請には、既存の保留中の申請と同じ休暇タイプおよび日付が 1 日以上含まれています。</span><span class="sxs-lookup"><span data-stu-id="f6f11-140">The time off request entered contains one or more days with the same date and leave type as an existing pending request.</span></span> <span data-ttu-id="f6f11-141">変更を加えるには、既存の要求を取り消してください。</span><span class="sxs-lookup"><span data-stu-id="f6f11-141">Please recall the existing request to make changes.</span></span>
+ - <span data-ttu-id="f6f11-142">理由コード '{ReasonCodeId}' は申請における休暇のタイプのいずれにも適用されません。</span><span class="sxs-lookup"><span data-stu-id="f6f11-142">Reason code '{ReasonCodeId}' doesn't apply to any of the leave types in the request.</span></span>
+ - <span data-ttu-id="f6f11-143">休暇タイプ '{LeaveTypeId}' には理由コードが必要です。</span><span class="sxs-lookup"><span data-stu-id="f6f11-143">Leave type '{LeaveTypeId}' requires a reason code.</span></span> <span data-ttu-id="f6f11-144">適切なタイプと理由コードを選択します。</span><span class="sxs-lookup"><span data-stu-id="f6f11-144">Select the appropriate type and reason code.</span></span>
+ - <span data-ttu-id="f6f11-145">休暇申請が正常に送信されていません。</span><span class="sxs-lookup"><span data-stu-id="f6f11-145">The time off was not submitted successfully.</span></span> <span data-ttu-id="f6f11-146">休暇申請は下書きの要求として保存されました。</span><span class="sxs-lookup"><span data-stu-id="f6f11-146">The time off has been saved as a draft request.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a5f0b-147">参照</span><span class="sxs-lookup"><span data-stu-id="a5f0b-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f6f11-147">参照</span><span class="sxs-lookup"><span data-stu-id="f6f11-147">See also</span></span>
 
-- [<span data-ttu-id="a5f0b-148">MyLeaveRequests の概要</span><span class="sxs-lookup"><span data-stu-id="a5f0b-148">MyLeaveRequests overview</span></span>](hr-developer-api-myleaverequests-overview.md)
-- [<span data-ttu-id="a5f0b-149">認証</span><span class="sxs-lookup"><span data-stu-id="a5f0b-149">Authentication</span></span>](hr-developer-api-authentication.md)
+- [<span data-ttu-id="f6f11-148">MyLeaveRequests の概要</span><span class="sxs-lookup"><span data-stu-id="f6f11-148">MyLeaveRequests overview</span></span>](hr-developer-api-myleaverequests-overview.md)
+- [<span data-ttu-id="f6f11-149">認証</span><span class="sxs-lookup"><span data-stu-id="f6f11-149">Authentication</span></span>](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
