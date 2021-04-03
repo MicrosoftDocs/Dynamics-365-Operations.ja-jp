@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e83bcf60e494e6f04387727bedf41175faa07557
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 031f1ecf6b9ee0673021e838c4a4e23755199543
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115803"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465609"
 ---
 # <a name="create-performance-reviews"></a>業績の確認の作成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 このトピックでは、パフォーマンス レビューの作成方法を説明し、レビューの各セクションの目的について説明します。 この手順は、デモ データ会社 USMF を使用して作成されました。

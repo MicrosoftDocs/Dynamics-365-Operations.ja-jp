@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a5843b53ae857f1aa65491008c7f0970f20d53f5
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: d537f17dad7e511400c48c6e624f7644048d1c6d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113195"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465729"
 ---
 # <a name="compensation-plans"></a>報酬プラン
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 報酬と給付金マネージャーは、報酬管理を使用して、組織の従業員の固定報酬プランおよび変動報酬プランを管理し、処理できます。
 

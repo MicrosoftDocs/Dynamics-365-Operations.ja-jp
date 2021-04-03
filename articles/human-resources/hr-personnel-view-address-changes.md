@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
-ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
+ms.openlocfilehash: 27324b7705fe37ab00e169e8ea05c7768f32b120
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5152056"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467340"
 ---
 # <a name="view-and-manage-address-changes"></a>住所変更の表示と管理
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、Dynamics 365 Human Resources で従業員セルフサービスの **個人の詳細の編集** ページまたは **作業者**  の詳細ページで、住所の変更を表示および管理する方法について説明します。
 

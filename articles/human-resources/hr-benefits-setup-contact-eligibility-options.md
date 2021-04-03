@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 137416477928fd4d6b4438f25df5afea93972027
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 2f300ac917ac21db9fffbffcc6eb8589357c0a3e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113272"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466209"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>個人の連絡先適格性オプションのコンフィギュレーション
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 この記事では、Microsoft Dynamics 365 Human Resources で給付金で使用する個人の連絡先のタイプをコンフィギュレーションする方法について説明します。 個人の連絡先は、受益者または扶養家族とすることができます。 
 

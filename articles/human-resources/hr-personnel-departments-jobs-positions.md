@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e1dace0dc6477e259d1004440c4cda8060bf90e3
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: eb0c50d9030be75947c65e921b3c6d3ba729a0d2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130232"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464479"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>部門、職務、職位を使用した従業員の編成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 部門、職務、および職位は、人事管理で管理される組織の要素です。 この記事では、これらの要素についての概念に関する情報を説明します。 
 

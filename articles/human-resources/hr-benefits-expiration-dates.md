@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 6e4eb882f564e2b74ae15cd54fcda6e5370b07d4
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: f309dcbef7b0816f529f75b3ca505e2c9224e3ac
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113249"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465057"
 ---
 # <a name="manage-benefit-expiration-dates"></a>給付金の有効期限の管理
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 この手順では、給付金付を期限切れにするまたは延長する方法、および福利厚生に登録されている作業者の登録日を管理する方法について説明します。 この手順の作成に使用するデモ データの会社は USMF です。
 

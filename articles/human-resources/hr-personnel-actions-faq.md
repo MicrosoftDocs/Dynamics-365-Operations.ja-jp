@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 43c727fa8e0508adf66109efd84a66cb31df7ea3
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 5eee8855a5a6eda4f6c0ad926f9366121de3ee7d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115417"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467118"
 ---
 # <a name="personnel-actions-faq"></a>個人のアクションに関するよく寄せられる質問
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 この記事では、組織で個人のアクションを使用する場合に生じる質問に答えます。 個人のアクションは、特定の個人に関連するタスクを実行する際に行う必要がある追加手順です。 個人のアクションが必要なタスクの例は、新しい職位を作成、既存の職位の値を変更、新しい作業者を雇う、作業者を転送する、作業者の報酬を変更、職位の割り当てを変更または作業者を終了することなでです。
 

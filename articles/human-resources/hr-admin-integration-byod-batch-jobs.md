@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 4b9cf4b4181b64ef4daf397edd852fb2f881424e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 62ac38eae01a82eedea7e5a5206bd75b4cd958e8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113186"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465873"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>BYOD でスケジュール設定されたバッチ ジョブを最適化する
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、データベースの持ち込み (BYOD) 機能を使用している場合のパフォーマンスの最適化方法について説明します。 詳細については、[自分のデータベースの持ち込み (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)を参照してください。
 

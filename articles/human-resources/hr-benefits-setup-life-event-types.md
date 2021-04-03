@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 7b1f2fd953c1678a5099f4f3b5cf08fa6674f4db
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113286"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466041"
 ---
 # <a name="configure-life-event-types"></a>ライフ イベント タイプのコンフィギュレーション
 
-Microsoft Dynamics 365 Human Resources は、ライフ イベント タイプを使用して、従業員福利厚生登録の更新に有効なイベントを定義します。 たとえば、結婚や子供の出産があります。 各ライフ イベント タイプ ID は、1 つのライフ イベント タイプにのみ関連付けることができます。 たとえば、ライフ イベント タイプ従業員の住所変更に関連付けられた住所変更というライフ イベント ID を作成する場合、別の ID を作成して従業員の住所変更のラベルを付けて、ライフ イベント タイプ従業員の住所変更と関連付けることはできません。 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources では、ライフ イベント タイプを使用して、従業員福利厚生登録の更新に有効なイベントを定義します。 たとえば、結婚や子供の出産があります。 各ライフ イベント タイプ ID は、1 つのライフ イベント タイプにのみ関連付けることができます。 たとえば、ライフ イベント タイプ従業員の住所変更に関連付けられた住所変更というライフ イベント ID を作成する場合、別の ID を作成して従業員の住所変更のラベルを付けて、ライフ イベント タイプ従業員の住所変更と関連付けることはできません。 
 
 ライフ イベント タイプを作成した後、それらを計画タイプに関連付ける必要があります。 詳細については、[計画タイプの作成](hr-benefits-setup-plan-types.md) を参照してください。
 

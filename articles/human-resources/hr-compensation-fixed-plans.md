@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: aa370ad5b873d707aba865b7f90e22acfc4825ee
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: cc6a639bd593b9a41217a054023a9de82f373c1f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113197"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465777"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>固定報酬プランの作成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 固定報酬は、従業員の通常の全体の給与や賃金を示します。 この記事は、固定報酬プランを作成し、従業員を登録する前に設定する必要があるコンポーネントを説明します。
 
