@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,53 +16,56 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d90c19ddc64286843347976c000267e416bf05
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 85ad6508c0d16796efbf1ad81e25d74365de8f30
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688446"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570775"
 ---
-# <a name="adddays-er-function"></a><span data-ttu-id="072a9-103">ADDDAYS ER 関数</span><span class="sxs-lookup"><span data-stu-id="072a9-103">ADDDAYS ER function</span></span>
+# <a name="adddays-er-function"></a><span data-ttu-id="07982-103">ADDDAYS ER 関数</span><span class="sxs-lookup"><span data-stu-id="07982-103">ADDDAYS ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="072a9-104">`ADDDAYS` 関数は、指定された開始日前後の指定された日数の *日時* 値を計算します。</span><span class="sxs-lookup"><span data-stu-id="072a9-104">The `ADDDAYS` function calculates a *DateTime* value that is the specified number of days before or after a specified start date.</span></span>
+<span data-ttu-id="07982-104">`ADDDAYS` 関数は、指定された開始日前後の指定された日数の *日時* 値を計算します。</span><span class="sxs-lookup"><span data-stu-id="07982-104">The `ADDDAYS` function calculates a *DateTime* value that is the specified number of days before or after a specified start date.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="072a9-105">構文</span><span class="sxs-lookup"><span data-stu-id="072a9-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="07982-105">構文</span><span class="sxs-lookup"><span data-stu-id="07982-105">Syntax</span></span>
 
 ```vb
 ADDDAYS (datetime, days)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="072a9-106">引数</span><span class="sxs-lookup"><span data-stu-id="072a9-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="07982-106">引数</span><span class="sxs-lookup"><span data-stu-id="07982-106">Arguments</span></span>
 
-<span data-ttu-id="072a9-107">`datetime`: *日時*</span><span class="sxs-lookup"><span data-stu-id="072a9-107">`datetime`: *DateTime*</span></span>
+<span data-ttu-id="07982-107">`datetime`: *日時*</span><span class="sxs-lookup"><span data-stu-id="07982-107">`datetime`: *DateTime*</span></span>
 
-<span data-ttu-id="072a9-108">開始日を表す日付/時刻値。</span><span class="sxs-lookup"><span data-stu-id="072a9-108">A date/time value that represents the start date.</span></span>
+<span data-ttu-id="07982-108">開始日を表す日付/時刻値。</span><span class="sxs-lookup"><span data-stu-id="07982-108">A date/time value that represents the start date.</span></span>
 
-<span data-ttu-id="072a9-109">`days`: *整数*</span><span class="sxs-lookup"><span data-stu-id="072a9-109">`days`: *Integer*</span></span>
+<span data-ttu-id="07982-109">`days`: *整数*</span><span class="sxs-lookup"><span data-stu-id="07982-109">`days`: *Integer*</span></span>
 
-<span data-ttu-id="072a9-110">`datetime` の前後の日数。</span><span class="sxs-lookup"><span data-stu-id="072a9-110">The number of days before or after `datetime`.</span></span>
+<span data-ttu-id="07982-110">`datetime` の前後の日数。</span><span class="sxs-lookup"><span data-stu-id="07982-110">The number of days before or after `datetime`.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="072a9-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="072a9-111">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="07982-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="07982-111">Return values</span></span>
 
-<span data-ttu-id="072a9-112">*日時*</span><span class="sxs-lookup"><span data-stu-id="072a9-112">*DateTime*</span></span>
+<span data-ttu-id="07982-112">*日時*</span><span class="sxs-lookup"><span data-stu-id="07982-112">*DateTime*</span></span>
 
-<span data-ttu-id="072a9-113">結果日時値。</span><span class="sxs-lookup"><span data-stu-id="072a9-113">The resulting date/time value.</span></span>
+<span data-ttu-id="07982-113">結果日時値。</span><span class="sxs-lookup"><span data-stu-id="07982-113">The resulting date/time value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="072a9-114">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="072a9-114">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="07982-114">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="07982-114">Usage notes</span></span>
 
-<span data-ttu-id="072a9-115">`days` の正の値は、未来の日付になります。</span><span class="sxs-lookup"><span data-stu-id="072a9-115">A positive value for `days` yields a future date.</span></span> <span data-ttu-id="072a9-116">負の値は、過去の日付になります。</span><span class="sxs-lookup"><span data-stu-id="072a9-116">A negative value yields a past date.</span></span>
+<span data-ttu-id="07982-115">`days` の正の値は、未来の日付になります。</span><span class="sxs-lookup"><span data-stu-id="07982-115">A positive value for `days` yields a future date.</span></span> <span data-ttu-id="07982-116">負の値は、過去の日付になります。</span><span class="sxs-lookup"><span data-stu-id="07982-116">A negative value yields a past date.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="072a9-117">例 1</span><span class="sxs-lookup"><span data-stu-id="072a9-117">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="07982-117">例 1</span><span class="sxs-lookup"><span data-stu-id="07982-117">Example 1</span></span>
 
-<span data-ttu-id="072a9-118">`ADDDAYS (NOW(), 7)` は、7 日後の日付と時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="072a9-118">`ADDDAYS (NOW(), 7)` returns the date and time seven days in the future.</span></span>
+<span data-ttu-id="07982-118">`ADDDAYS (NOW(), 7)` は、7 日後の日付と時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="07982-118">`ADDDAYS (NOW(), 7)` returns the date and time seven days in the future.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="072a9-119">例 2</span><span class="sxs-lookup"><span data-stu-id="072a9-119">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="07982-119">例 2</span><span class="sxs-lookup"><span data-stu-id="07982-119">Example 2</span></span>
 
-<span data-ttu-id="072a9-120">`ADDDAYS (NOW(), -3)` は、3 日前の日付と時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="072a9-120">`ADDDAYS (NOW(), -3)` returns the date and time three days in the past.</span></span>
+<span data-ttu-id="07982-120">`ADDDAYS (NOW(), -3)` は、3 日前の日付と時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="07982-120">`ADDDAYS (NOW(), -3)` returns the date and time three days in the past.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="072a9-121">追加リソース</span><span class="sxs-lookup"><span data-stu-id="072a9-121">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="07982-121">追加リソース</span><span class="sxs-lookup"><span data-stu-id="07982-121">Additional resources</span></span>
 
-[<span data-ttu-id="072a9-122">日時の関数</span><span class="sxs-lookup"><span data-stu-id="072a9-122">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="07982-122">日時の関数</span><span class="sxs-lookup"><span data-stu-id="07982-122">Date and time functions</span></span>](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
