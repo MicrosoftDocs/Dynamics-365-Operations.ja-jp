@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e24c11fb6e84a7480a40b706b106cd8465470f5c
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 1d8db6900e6b697e988e2a7e9e31828b70e4ad0d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113255"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463915"
 ---
 # <a name="create-plan-types"></a>計画タイプの作成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources のプラン タイプは、給付金の特定のタイプを高レベルにグループ化したものです。 各プラン タイプには、そのプラン タイプのルールを決定するプラン タイプ コードがあります。 たとえば、プラン タイプ基本ライフには、一種の生命保険プランなのでライフ プラン タイプ コード用に確立されたルールに準拠する必要があるため、プラン タイプ コード ライフがあります。 別のプラン タイプは、同じくプラン タイプ コード ライフの補助ライフになります。
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8662035235aa9b4788ced83c2c0efc0e4862e2a6
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: ab6b212efca7fa69d74d06ce2dbbab09d50f044c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113318"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467196"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>マネージャー セルフサービスでのカスタム リンクの作成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 カスタム リンクをマネージャー セルフサービスの **自分のチーム** タブで追加できます。 この機能を使用すると、重要な情報にすばやくアクセスできます。 これは、従業員セルフ サービスの **個人情報** タブでカスタム リンクを追加するのと似ています。
 

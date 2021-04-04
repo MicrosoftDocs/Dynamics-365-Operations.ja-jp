@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077480"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556317"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
@@ -41,7 +42,8 @@ ms.locfileid: "5077480"
 
 ### <a name="the-production-floor-execution-interface"></a>生産現場の実行インターフェース
 
-これは、このトピックで説明されている主要な機能です。 生産現場の実行インターフェイスをシステムに追加します。 有効にするには、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。  
+これは、このトピックで説明されている主要な機能です。 生産現場の実行インターフェイスをシステムに追加します。 有効にするには、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
+
 - 生産現場の実行
 
 ### <a name="generate-license-plates"></a>ライセンス プレートの生成
@@ -79,6 +81,7 @@ ms.locfileid: "5077480"
 
 次に、選択したデバイス構成のさまざまな設定を構成します。 次のフィールドを使用できます:
 
+- **出勤と退勤のみ** - 出勤時および退勤時機能のみを提供する簡略化されたインターフェイスを作成するには、このオプションを *はい* に設定します。 これにより、このページのその他のオプションのほとんどが無効に設定されます。 このオプションを有効にする前に、**タブ選択** の FastTab からすべての明細行を削除する必要があります。
 - **退勤時のレポート数量** - このオプションを *はい* に設定すると、作業者は退勤時に進行中のジョブに関するフィードバックを報告するように指示されます。このオプションを *いいえ* に設定すると、作業者にはこのメッセージが表示されません。
 - **従業員のロック** – このオプションを *いいえ* に設定すると、作業者は登録 (新しい職務など) を行った直後にサインアウトされます。 その後、デバイスはサインイン ページに戻ります。 このオプションを *はい* に設定すると、作業者はジョブ カード デバイスにサインインしたままになります。 ただし、作業者は手動でサインアウトできるため、ジョブ カード デバイスが同じシステム ユーザー アカウントで実行されている間、別の作業者がサインインできます。 これらタイプのアカウントの詳細については、[割り当てられたユーザー](config-job-card-device.md#assigned-users)を参照してください。
 - **登録の実際時間を使用する** - このオプションを *はい* に設定すると、新しい各登録の時間が、作業者が登録を送信した正確な時間に設定されます。 このオプションを *いいえ* に設定すると、代わりにサインイン時間が使用されます。 従業員が長期間サインインしたままになることが多い場合に、**従業員のロック** および/または **単一の作業者** オプションを *はい* に設定している場合は、通常、このオプションを *はい* に設定します。

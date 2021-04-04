@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142326"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487028"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションのインストールと接続
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142326"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> このトピックでは、現在パブリック プレビュー中の新しい倉庫管理モバイル アプリケーションを構成する方法について説明します。 古い倉庫アプリケーションを構成する方法の詳細については、[倉庫アプリをインストールして接続する」](../../supply-chain/warehousing/install-configure-warehousing-app.md) を参照してください。
+> このトピックでは、新しい倉庫管理モバイル アプリの構成方法について説明します。 古い倉庫アプリケーションを構成する方法の詳細については、[倉庫アプリをインストールして接続する」](../../supply-chain/warehousing/install-configure-warehousing-app.md) を参照してください。
 
-倉庫管理モバイル アプリのパブリック プレビューは、Microsoft アプリ センターでダウンロードできます。 アプリはスタンドアロンのコンポーネントとして提供されています。 したがって、各デバイスでダウンロードしてから、Microsoft Dynamics 365 Supply Chain Management 環境に接続を構成する必要があります。
-
-このトピックでは、各モバイル デバイスに倉庫管理モバイル アプリをインストールして、Supply Chain Management 環境へ接続するように構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
+このトピックでは、各モバイル デバイスに倉庫管理モバイル アプリをダウンロードおよびインストールして、Supply Chain Management 環境へ接続するようアプリを構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
 
 ## <a name="system-requirements"></a>システム要件
 
@@ -53,17 +51,27 @@ ms.locfileid: "5142326"
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションを取得する
 
-次のいずれかのリンクを使用して、アプリをダウンロードします:
+小規模な配置の場合は、通常、該当のストアから各デバイスにアプリをインストールし、使用している環境への接続を手動で構成します。
 
-- **Windows (UWP):** [App Center プレビュー プログラム - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+大規模な配置の場合は、アプリ配置またはコンフィギュレーションを自動化でき、多くのデバイスを管理するのに便利です。 たとえば、[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) などモバイル デバイス管理やモバイル アプリケーション管理ソリューションを使用する場合があります。 Intune を使用してアプリを追加する方法については、[Microsoft Intune にアプリを追加する](https://docs.microsoft.com/mem/intune/apps/apps-add) を参照してください。
 
-    このアプリはプレビュー アプリケーションなので、インストールするにはいくつかの追加手順が必要です。 詳細については、[App Center からのビルドのインストール](https://docs.microsoft.com/appcenter/distribution/installation) を参照してください。
+### <a name="install-the-app-from-an-app-store"></a>アプリ ストアからのアプリのインストール
 
-- **Android:** [App Center プレビュー プログラム - Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+単一のデバイスにアプリケーションをインストールするもっとも簡単な方法は、常に最新の一般公開バージョンを提供するアプリ ストアからインストールする方法です。 Microsoft Intune は、アプリ ストアからアプリをフェッチすることもできます。 次のいずれかのリンクを使用して、アプリ ストアからアプリをインストールします。
 
-    このアプリはプレビュー アプリケーションなので、インストールするにはいくつかの追加手順が必要です。 詳細については、[Android アプリをテストする](https://docs.microsoft.com/appcenter/distribution/testers/testing-android) を参照してください。
+- **Windows (UWP):** [Microsoft Store の倉庫管理](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-小規模な配置の場合は、該当のストアから各デバイスにアプリをインストールし、使用している環境への接続を手動で構成することができます。 ただし、アプリの配置や構成を自動化することもできます。 この方法は、多数のデバイスを管理し、[Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) などのモバイル デバイス管理およびモバイル アプリケーションの管理ソリューションを使用している場合などに有用です。 Intune を使用してアプリを追加する方法については、[Microsoft Intune にアプリを追加する](https://docs.microsoft.com/mem/intune/apps/apps-add) を参照してください。
+- **Android:** [Google Play ストアの倉庫管理](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Microsoft アプリ センターからアプリをダウンロードする
+
+アプリ ストアからインストールする代わりに、Microsoft アプリ センターからアプリをダウンロードすることもできます。 アプリ センターには、サイドロードできるインストール可能なパッケージが提供されています。 アプリ センターでは、現在のバージョンに加えて、以前のバージョンをダウンロードしたり、試せる今後の機能を備えたプレビュー バージョンが提供されている場合もあります。Microsoft アプリ センターから倉庫管理モバイル アプリの最新バージョン、以前のバージョン、またはプレビュー バージョンをダウンロードするには、次のいずれかのリンクを使用します。
+
+- **Windows (UWP):** [倉庫管理 (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    Windows デバイスにダウンロードしたパッケージをインストールし、必要な証明書を設定する方法の手順については、[アプリ センターからのビルドのインストール](https://docs.microsoft.com/appcenter/distribution/installation)を参照してください。
+
+- **Android:** [倉庫管理 (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    プレビュー バージョンをダウンロードする場合、インストールするにはいくつかの追加手順が必要です。 詳細については、[Android アプリをテストする](https://docs.microsoft.com/appcenter/distribution/testers/testing-android) を参照してください。
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Azure Active Directoryで Web サービス アプリケーションを作成する
 

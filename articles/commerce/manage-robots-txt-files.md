@@ -16,21 +16,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2e25a584121b700e566c29dbfe3fbbd72bf998cc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: afd7982179dc9845c9adc24e8c7c9951a04460a3
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982544"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477711"
 ---
 # <a name="manage-robotstxt-files"></a>robots.txt ファイルの管理
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の robots.txt ファイルを管理する方法について説明します。
-
-## <a name="overview"></a>概要
 
 ロボット除外標準または robots.txt は、Web サイトが Web ロボットと通信するために使用する標準です。 参照すべきではない Web サイトのすべての領域について、Web ロボットに指示します。 多くの場合、検索エンジンはロボットを使用して Web サイトをインデックス化します。
 

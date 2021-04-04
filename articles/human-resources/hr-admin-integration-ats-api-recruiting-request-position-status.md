@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f7bae64f58f0bdc1603b3c1b5493f1ebcfa8de9
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 01e8aa5157d0ad1c01f996886e7845e49ab97603
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5126053"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464721"
 ---
 # <a name="recruiting-request-position-status"></a>採用で要求する職位の状態
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、Dynamics 365 Human Resources の採用で要求する職位の状態のオプションセットについて説明します。
 

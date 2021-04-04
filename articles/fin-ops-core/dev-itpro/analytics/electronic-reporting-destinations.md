@@ -2,11 +2,10 @@
 title: 電子申告 (ER) の送信先
 description: このトピックでは、電子申告の送信先の管理、サポートされている送信先のタイプ、およびセキュリティ上の注意事項について説明します。
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 0fe0992412edf6f78be4ed293052e3501a7224ad
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097284"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569722"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -166,12 +165,14 @@ PDF への変換オプションを使用して、Microsoft Office (Excel また�
 
 ### <a name="applicability"></a>適合性
 
-PDF への変換オプションは、Office (Excel または Word) 形式 (**Excel ファイル**) で出力を生成するのに使用されるファイル コンポーネントに対してのみ有効にすることができます。 このオプションをオンにすると、Office 形式で生成された出力は自動的に PDF 形式に変換されます。
-
-### <a name="limitations"></a>制限
+PDF への変換オプションは、Office (Excel または Word) 形式 (**Excel ファイル**) で出力を生成するのに使用されるファイル コンポーネントに対してのみ有効にすることができます。 このオプションをオンにすると、Office 形式で生成された出力は自動的に PDF 形式に変換されます。 **バージョン 10.0.18 より前** の Finance では、[Excel](er-fillable-excel.md) または [Word](er-design-configuration-word.md) 形式で出力を生成するために使用される **Excel\\File** タイプのコンポーネントに対してのみこのオプションをオンにできます。 ただし、**バージョン 10.0.18 以降** では、**Common\\File** タイプのコンポーネントに対してのみこのオプションをオンにすることもできます。
 
 > [!NOTE]
-> この機能はプレビュー機能で、[Microsoft Dynamics 365 プレビューの追加使用条件](https://go.microsoft.com/fwlink/?linkid=2105274) で説明されている使用条件に従います。
+> **Common\\File** タイプの ER コンポーネントの PDF 変換オプションをオンすると表示される警告メッセージに注意してください。 このメッセージは、選択したファイル コンポーネントが実行時に PDF 形式のコンテンツまたは PDF に変換可能なコンテンツを公開することを設計時に保証する方法がないことを通知します。 したがって、選択したファイル コンポーネントが実行時に PDF 形式または PDF に変換可能なコンテンツを公開する場合にのみ、このオプションをオンにする必要があります。
+> 
+> **Excel\\File** タイプのコンポーネントの PDF 変換オプションをオンにした場合、そのコンポーネントが PDF 以外の形式でコンテンツを公開し、公開されたコンテンツを PDF 形式に変換できない場合は、実行時に例外が発生します。 受信したメッセージは、生成されたコンテンツを PDF 形式に変換できないことを通知します。
+
+### <a name="limitations"></a>制限
 
 PDF への変換オプションは、クラウド展開に対してのみ使用可能です。
 
