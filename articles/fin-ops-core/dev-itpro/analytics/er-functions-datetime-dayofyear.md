@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,45 +16,48 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9b937e7fae3e90d1a87196fab653dfac8e94179
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ba63c96355a6a7a1eccaddf39e47a3edb2d1e651
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682392"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563537"
 ---
-# <a name="dayofyear-er-function"></a><span data-ttu-id="fa9a3-103">DAYOFYEAR ER 関数</span><span class="sxs-lookup"><span data-stu-id="fa9a3-103">DAYOFYEAR ER function</span></span>
+# <a name="dayofyear-er-function"></a><span data-ttu-id="fdd16-103">DAYOFYEAR ER 関数</span><span class="sxs-lookup"><span data-stu-id="fdd16-103">DAYOFYEAR ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="fa9a3-104">`DAYOFYEAR` 関数は、1 月 1 日から指定された日までの日数を表す *整数* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="fa9a3-104">The `DAYOFYEAR` function returns an *Integer* value that represents the number of days between January 1 and the specified date.</span></span>
+<span data-ttu-id="fdd16-104">`DAYOFYEAR` 関数は、1 月 1 日から指定された日までの日数を表す *整数* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="fdd16-104">The `DAYOFYEAR` function returns an *Integer* value that represents the number of days between January 1 and the specified date.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fa9a3-105">構文</span><span class="sxs-lookup"><span data-stu-id="fa9a3-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fdd16-105">構文</span><span class="sxs-lookup"><span data-stu-id="fdd16-105">Syntax</span></span>
 
 ```vb
 DAYOFYEAR (date) as Integer
 ```
 
-## <a name="arguments"></a><span data-ttu-id="fa9a3-106">引数</span><span class="sxs-lookup"><span data-stu-id="fa9a3-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="fdd16-106">引数</span><span class="sxs-lookup"><span data-stu-id="fdd16-106">Arguments</span></span>
 
-<span data-ttu-id="fa9a3-107">`date`: *日付*</span><span class="sxs-lookup"><span data-stu-id="fa9a3-107">`date`: *Date*</span></span>
+<span data-ttu-id="fdd16-107">`date`: *日付*</span><span class="sxs-lookup"><span data-stu-id="fdd16-107">`date`: *Date*</span></span>
 
-<span data-ttu-id="fa9a3-108">日数の計算に使用する日付を表す日付値。</span><span class="sxs-lookup"><span data-stu-id="fa9a3-108">A date value that represents the date to use for the calculation of the number of days.</span></span>
+<span data-ttu-id="fdd16-108">日数の計算に使用する日付を表す日付値。</span><span class="sxs-lookup"><span data-stu-id="fdd16-108">A date value that represents the date to use for the calculation of the number of days.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="fa9a3-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="fa9a3-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="fdd16-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="fdd16-109">Return values</span></span>
 
-<span data-ttu-id="fa9a3-110">*整数*</span><span class="sxs-lookup"><span data-stu-id="fa9a3-110">*Integer*</span></span>
+<span data-ttu-id="fdd16-110">*整数*</span><span class="sxs-lookup"><span data-stu-id="fdd16-110">*Integer*</span></span>
 
-<span data-ttu-id="fa9a3-111">結果数値。</span><span class="sxs-lookup"><span data-stu-id="fa9a3-111">The resulting numeric value.</span></span>
+<span data-ttu-id="fdd16-111">結果数値。</span><span class="sxs-lookup"><span data-stu-id="fdd16-111">The resulting numeric value.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="fa9a3-112">例 1</span><span class="sxs-lookup"><span data-stu-id="fa9a3-112">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="fdd16-112">例 1</span><span class="sxs-lookup"><span data-stu-id="fdd16-112">Example 1</span></span>
 
-<span data-ttu-id="fa9a3-113">`DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))` は、**61** を返します。</span><span class="sxs-lookup"><span data-stu-id="fa9a3-113">`DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))` returns **61**.</span></span>
+<span data-ttu-id="fdd16-113">`DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))` は、**61** を返します。</span><span class="sxs-lookup"><span data-stu-id="fdd16-113">`DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))` returns **61**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="fa9a3-114">例 2</span><span class="sxs-lookup"><span data-stu-id="fa9a3-114">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="fdd16-114">例 2</span><span class="sxs-lookup"><span data-stu-id="fdd16-114">Example 2</span></span>
 
-<span data-ttu-id="fa9a3-115">`DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` は、**1** を返します。</span><span class="sxs-lookup"><span data-stu-id="fa9a3-115">`DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` returns **1**.</span></span>
+<span data-ttu-id="fdd16-115">`DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` は、**1** を返します。</span><span class="sxs-lookup"><span data-stu-id="fdd16-115">`DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` returns **1**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="fa9a3-116">追加リソース</span><span class="sxs-lookup"><span data-stu-id="fa9a3-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="fdd16-116">追加リソース</span><span class="sxs-lookup"><span data-stu-id="fdd16-116">Additional resources</span></span>
 
-[<span data-ttu-id="fa9a3-117">日時の関数</span><span class="sxs-lookup"><span data-stu-id="fa9a3-117">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="fdd16-117">日時の関数</span><span class="sxs-lookup"><span data-stu-id="fdd16-117">Date and time functions</span></span>](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

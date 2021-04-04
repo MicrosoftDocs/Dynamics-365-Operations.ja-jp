@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,27 +15,30 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.openlocfilehash: c5425f53ba66b4123457154386bf51342697fbd1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 57d0ce9d483f4c849855e4247b4fd0fd067abb1b
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683205"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565309"
 ---
-# <a name="quick-import-export"></a><span data-ttu-id="717b7-103">簡易インポートとエクスポート</span><span class="sxs-lookup"><span data-stu-id="717b7-103">Quick import export</span></span>
+# <a name="quick-import-export"></a><span data-ttu-id="908c6-103">簡易インポートとエクスポート</span><span class="sxs-lookup"><span data-stu-id="908c6-103">Quick import export</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="717b7-104">簡易インポート/エクスポートの目的は、より少ない手順でインポートとエクスポートを実行できるようにすることです。</span><span class="sxs-lookup"><span data-stu-id="717b7-104">The purpose of Quick import export is to let you import and export with fewer steps.</span></span>
+<span data-ttu-id="908c6-104">簡易インポート/エクスポートの目的は、より少ない手順でインポートとエクスポートを実行できるようにすることです。</span><span class="sxs-lookup"><span data-stu-id="908c6-104">The purpose of Quick import export is to let you import and export with fewer steps.</span></span>
 
-<span data-ttu-id="717b7-105">ユーザーがインポートまたはエクスポートの簡易なジョブを迅速に実行できるよう [簡易インポート/エクスポート] 機能を追加しました。</span><span class="sxs-lookup"><span data-stu-id="717b7-105">We added the Quick Import Export feature to let users import or export simple jobs that they want to execute quickly.</span></span> <span data-ttu-id="717b7-106">原則的にこの機能は、ファイルがシステムに自動的にマップしており、ユーザーは高度なマッピングを行ったりインポートまたはエクスポート ジョブを繰り返し作成する必要はない、というシナリオ内で使用します。</span><span class="sxs-lookup"><span data-stu-id="717b7-106">Ideally this feature is used in scenarios in which a file automatically maps to the system and user does not need to go through advanced mapping or create repeated import or export jobs.</span></span>
+<span data-ttu-id="908c6-105">ユーザーがインポートまたはエクスポートの簡易なジョブを迅速に実行できるよう [簡易インポート/エクスポート] 機能を追加しました。</span><span class="sxs-lookup"><span data-stu-id="908c6-105">We added the Quick Import Export feature to let users import or export simple jobs that they want to execute quickly.</span></span> <span data-ttu-id="908c6-106">原則的にこの機能は、ファイルがシステムに自動的にマップしており、ユーザーは高度なマッピングを行ったりインポートまたはエクスポート ジョブを繰り返し作成する必要はない、というシナリオ内で使用します。</span><span class="sxs-lookup"><span data-stu-id="908c6-106">Ideally this feature is used in scenarios in which a file automatically maps to the system and user does not need to go through advanced mapping or create repeated import or export jobs.</span></span>
 
-- <span data-ttu-id="717b7-107">この機能は、追加設定なしでの使用、さらにカスタム エンティティ両方の操作をサポートします。</span><span class="sxs-lookup"><span data-stu-id="717b7-107">This feature supports working with both out-of-the-box and custom entities.</span></span>
-- <span data-ttu-id="717b7-108">ファイルからインポートすることができ、ODBC データ ソースを使用している場合は、インポートを定義するクエリを選択します。</span><span class="sxs-lookup"><span data-stu-id="717b7-108">You can import from files, and if you are using an ODBC data source, you can select a query to use to define your import.</span></span>
-- <span data-ttu-id="717b7-109">AX またはファイルのいずれかのソース データ形式を事前に定義しておく必要があり、それらの場所が決まっています。</span><span class="sxs-lookup"><span data-stu-id="717b7-109">You must have previously defined source data formats for either AX or File, and know where they are located.</span></span>
-- <span data-ttu-id="717b7-110">簡易インポート/エクスポートを使用するために処理グループを作成する必要はありません。それはインポートまたはエクスポート ジョブを実行するとき自動的にシステムにより作成されます。</span><span class="sxs-lookup"><span data-stu-id="717b7-110">You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job.</span></span> <span data-ttu-id="717b7-111">簡易インポート/エクスポートによりインポートされたデータの履歴を保存するよう選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="717b7-111">You can also choose keep the history of the data imported by the quick import/export.</span></span>
+- <span data-ttu-id="908c6-107">この機能は、追加設定なしでの使用、さらにカスタム エンティティ両方の操作をサポートします。</span><span class="sxs-lookup"><span data-stu-id="908c6-107">This feature supports working with both out-of-the-box and custom entities.</span></span>
+- <span data-ttu-id="908c6-108">ファイルからインポートすることができ、ODBC データ ソースを使用している場合は、インポートを定義するクエリを選択します。</span><span class="sxs-lookup"><span data-stu-id="908c6-108">You can import from files, and if you are using an ODBC data source, you can select a query to use to define your import.</span></span>
+- <span data-ttu-id="908c6-109">AX またはファイルのいずれかのソース データ形式を事前に定義しておく必要があり、それらの場所が決まっています。</span><span class="sxs-lookup"><span data-stu-id="908c6-109">You must have previously defined source data formats for either AX or File, and know where they are located.</span></span>
+- <span data-ttu-id="908c6-110">簡易インポート/エクスポートを使用するために処理グループを作成する必要はありません。それはインポートまたはエクスポート ジョブを実行するとき自動的にシステムにより作成されます。</span><span class="sxs-lookup"><span data-stu-id="908c6-110">You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job.</span></span> <span data-ttu-id="908c6-111">簡易インポート/エクスポートによりインポートされたデータの履歴を保存するよう選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="908c6-111">You can also choose keep the history of the data imported by the quick import/export.</span></span>
 
-  <span data-ttu-id="717b7-112">簡易インポート/エクスポートは、DIXF の概念に精通しているという前提で使用するように注意してください。</span><span class="sxs-lookup"><span data-stu-id="717b7-112">Note that Quick import export assumes that you are familiar with the concepts of DIXF.</span></span>
+  <span data-ttu-id="908c6-112">簡易インポート/エクスポートは、DIXF の概念に精通しているという前提で使用するように注意してください。</span><span class="sxs-lookup"><span data-stu-id="908c6-112">Note that Quick import export assumes that you are familiar with the concepts of DIXF.</span></span>
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

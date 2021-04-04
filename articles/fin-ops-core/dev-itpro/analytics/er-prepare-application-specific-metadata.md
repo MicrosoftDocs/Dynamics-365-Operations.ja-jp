@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
@@ -15,268 +14,271 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 37da06f4ba86594c6368dcd1049456c58bf87e3a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680197"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565468"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a><span data-ttu-id="978a5-103">RCS および ER のアプリケーション固有のメタデータを準備する</span><span class="sxs-lookup"><span data-stu-id="978a5-103">Prepare application-specific metadata for RCS and ER</span></span>
+# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a><span data-ttu-id="a605e-103">RCS および ER のアプリケーション固有のメタデータを準備する</span><span class="sxs-lookup"><span data-stu-id="a605e-103">Prepare application-specific metadata for RCS and ER</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="978a5-104">このトピックでは、次のタスクの例について説明します。</span><span class="sxs-lookup"><span data-stu-id="978a5-104">This topic walks you through examples of the following tasks:</span></span>
+<span data-ttu-id="a605e-104">このトピックでは、次のタスクの例について説明します。</span><span class="sxs-lookup"><span data-stu-id="a605e-104">This topic walks you through examples of the following tasks:</span></span>
 
-- [<span data-ttu-id="978a5-105">RCS で使用できるアプリケーション メタデータを準備する</span><span class="sxs-lookup"><span data-stu-id="978a5-105">Prepare application metadata that can be used in RCS</span></span>](#prepare-application-metadata-that-can-be-used-in-rcs)
-- [<span data-ttu-id="978a5-106">ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする</span><span class="sxs-lookup"><span data-stu-id="978a5-106">Access application metadata by using an ER configuration</span></span>](#access-application-metadata-by-using-an-er-configuration)
-- [<span data-ttu-id="978a5-107">接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする</span><span class="sxs-lookup"><span data-stu-id="978a5-107">Access application metadata by using connected applications</span></span>](#access-application-metadata-by-using-connected-applications)
+- [<span data-ttu-id="a605e-105">RCS で使用できるアプリケーション メタデータを準備する</span><span class="sxs-lookup"><span data-stu-id="a605e-105">Prepare application metadata that can be used in RCS</span></span>](#prepare-application-metadata-that-can-be-used-in-rcs)
+- [<span data-ttu-id="a605e-106">ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする</span><span class="sxs-lookup"><span data-stu-id="a605e-106">Access application metadata by using an ER configuration</span></span>](#access-application-metadata-by-using-an-er-configuration)
+- [<span data-ttu-id="a605e-107">接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする</span><span class="sxs-lookup"><span data-stu-id="a605e-107">Access application metadata by using connected applications</span></span>](#access-application-metadata-by-using-connected-applications)
 
-## <a name="prepare-application-metadata-that-can-be-used-in-rcs"></a><span data-ttu-id="978a5-108">RCS で使用できるアプリケーション メタデータを準備する</span><span class="sxs-lookup"><span data-stu-id="978a5-108">Prepare application metadata that can be used in RCS</span></span>
+## <a name="prepare-application-metadata-that-can-be-used-in-rcs"></a><span data-ttu-id="a605e-108">RCS で使用できるアプリケーション メタデータを準備する</span><span class="sxs-lookup"><span data-stu-id="a605e-108">Prepare application metadata that can be used in RCS</span></span>
 
-<span data-ttu-id="978a5-109">次の手順では、**システム管理者** または **電子報告開発者** のロールを持つユーザーが、Regulatory Configuration Service (RCS) の ER モデル マッピング コンフィギュレーションを設計するためのアプリケーションのメタデータを含む、新しい電子レポート (ER) コンフィギュレーションを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="978a5-109">The following procedure shows how a user who has the **System Administrator** or **Electronic Reporting Developer** role can create an Electronic reporting (ER) configuration that contains metadata for the application, and that is used to design ER model mapping configurations in Regulatory configuration service (RCS).</span></span> <span data-ttu-id="978a5-110">この例で作成されたサンプル ER モデル マッピング コンフィギュレーションは、対外貿易トランザクションにアクセスするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="978a5-110">The sample ER model mapping configuration that is created in this example will be used to access foreign trade transactions.</span></span>
+<span data-ttu-id="a605e-109">次の手順では、**システム管理者** または **電子報告開発者** のロールを持つユーザーが、Regulatory Configuration Service (RCS) の ER モデル マッピング コンフィギュレーションを設計するためのアプリケーションのメタデータを含む、新しい電子レポート (ER) コンフィギュレーションを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a605e-109">The following procedure shows how a user who has the **System Administrator** or **Electronic Reporting Developer** role can create an Electronic reporting (ER) configuration that contains metadata for the application, and that is used to design ER model mapping configurations in Regulatory configuration service (RCS).</span></span> <span data-ttu-id="a605e-110">この例で作成されたサンプル ER モデル マッピング コンフィギュレーションは、対外貿易トランザクションにアクセスするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="a605e-110">The sample ER model mapping configuration that is created in this example will be used to access foreign trade transactions.</span></span>
 
-<span data-ttu-id="978a5-111">この例では、RCS を使用して、対外貿易ビジネスのドメインからの情報を含む電子ドキュメントを生成するアプリケーションの ER ソリューションを設計します。</span><span class="sxs-lookup"><span data-stu-id="978a5-111">For this example, you want to use RCS to design an ER solution for the application that will be used to generate electronic documents that contain information from the foreign trade business domain.</span></span> <span data-ttu-id="978a5-112">ER データ モデルと必要なデータ ソース間のマッピングを指定するには、RCS でアプリケーションのメタデータにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-112">To specify the mapping between the ER data model and the sources of required data, you must have access to application metadata in RCS.</span></span> <span data-ttu-id="978a5-113">そのため、ER ソリューション設計プロセスの一部として、選択したビジネス ドメインに対する生成 ER レポートに現在必要とされるすべてのメタデータを含む、新しい ER メタデータ コンフィギュレーションを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-113">Therefore, as part of the process of designing the ER solution, you must configure a new ER metadata configuration that contains all the metadata that is currently required in order to generate ER reports for the selected business domain.</span></span>
+<span data-ttu-id="a605e-111">この例では、RCS を使用して、対外貿易ビジネスのドメインからの情報を含む電子ドキュメントを生成するアプリケーションの ER ソリューションを設計します。</span><span class="sxs-lookup"><span data-stu-id="a605e-111">For this example, you want to use RCS to design an ER solution for the application that will be used to generate electronic documents that contain information from the foreign trade business domain.</span></span> <span data-ttu-id="a605e-112">ER データ モデルと必要なデータ ソース間のマッピングを指定するには、RCS でアプリケーションのメタデータにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-112">To specify the mapping between the ER data model and the sources of required data, you must have access to application metadata in RCS.</span></span> <span data-ttu-id="a605e-113">そのため、ER ソリューション設計プロセスの一部として、選択したビジネス ドメインに対する生成 ER レポートに現在必要とされるすべてのメタデータを含む、新しい ER メタデータ コンフィギュレーションを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-113">Therefore, as part of the process of designing the ER solution, you must configure a new ER metadata configuration that contains all the metadata that is currently required in order to generate ER reports for the selected business domain.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="978a5-114">この例では、サンプル会社 Litware, Inc. のコンフィギュレーションを作成します。これらの手順はすべての会社で実行することができます。</span><span class="sxs-lookup"><span data-stu-id="978a5-114">In this example, you will create a configuration for the sample company, Litware, Inc. These steps can be performed in any company.</span></span>
+> <span data-ttu-id="a605e-114">この例では、サンプル会社 Litware, Inc. のコンフィギュレーションを作成します。これらの手順はすべての会社で実行することができます。</span><span class="sxs-lookup"><span data-stu-id="a605e-114">In this example, you will create a configuration for the sample company, Litware, Inc. These steps can be performed in any company.</span></span>
 
-1. <span data-ttu-id="978a5-115">**組織管理  \> ワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="978a5-115">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
-2. <span data-ttu-id="978a5-116">サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ** としてマークされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="978a5-116">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**.</span></span> <span data-ttu-id="978a5-117">このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)という手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-117">If you don't see this configuration provider, complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure.</span></span> 
-3. <span data-ttu-id="978a5-118">**メタデータ コンフィギュレーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-118">Select **Metadata configurations**.</span></span>
-4. <span data-ttu-id="978a5-119">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-119">Select **Create configuration**.</span></span>
-5. <span data-ttu-id="978a5-120">ドロップダウン ダイアログ ボックスの **名前** フィールドに名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-120">In the drop-down dialog box, in the **Name** field, enter a name.</span></span> <span data-ttu-id="978a5-121">この例では、**対外貿易メタデータ** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-121">For this example, enter **Foreign trade metadata**.</span></span>
-6. <span data-ttu-id="978a5-122">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-122">Select **Create configuration**.</span></span>
-7. <span data-ttu-id="978a5-123">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="978a5-123">Select **Designer**.</span></span>
-8. <span data-ttu-id="978a5-124">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-124">Select **Add**.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="978a5-125">アプリケーション全体に対して、または選択したモデル、モジュールに対して、すべてのメタデータを選択することができます。</span><span class="sxs-lookup"><span data-stu-id="978a5-125">You can select all metadata either for the whole application, or for selected models or modules.</span></span> <span data-ttu-id="978a5-126">どちらの場合も、レコードのテーブル、列挙体、および拡張データ型 (EDTs) のメタデータが自動的に追加されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="978a5-126">In both cases, be aware that the following metadata will be automatically added: tables of records, enumerations, and extended data types (EDTs).</span></span> <span data-ttu-id="978a5-127">メタデータの追加のタイプが必要な場合、手動で追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-127">When additional types of metadata are required, they must be manually added.</span></span>
-
-    <span data-ttu-id="978a5-128">対外貿易トランザクションに関連付けられたメタデータをいくつか追加し、手動でメタデータ項目を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-128">You must add some metadata that is related to foreign trade transactions and manually select metadata items.</span></span>
-
-9. <span data-ttu-id="978a5-129">**データソースを追加 \> テーブル レコード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-129">Select **Add data source \> Table records**.</span></span>
-10. <span data-ttu-id="978a5-130">**名前** フィールドにある **イントラスタット** の値をフィルタ処理します。</span><span class="sxs-lookup"><span data-stu-id="978a5-130">Filter on a value of **Intrastat** in the **Name** field.</span></span>
-11. <span data-ttu-id="978a5-131">**イントラスタット** テーブル レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-131">Select the **Intrastat** table record.</span></span>
-12. <span data-ttu-id="978a5-132">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-132">Select **OK**.</span></span>
-
-    <span data-ttu-id="978a5-133">イントラスタットのレコード テーブルに関するメタデータ情報を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-133">You must add metadata information about the Intrastat table of records.</span></span>
-
-13. <span data-ttu-id="978a5-134">ツリーで、**テーブル レコード イントラスタット\> \>リレーション \> イントラスタットコモディティ (テーブル レコード EcoResCategory)** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-134">In the tree, select **Table records Intrastat \> \>Relations \> IntrastatCommodity (Table records EcoResCategory)**.</span></span>
-14. <span data-ttu-id="978a5-135">**メタデータの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-135">Select **Add metadata**.</span></span>
+1. <span data-ttu-id="a605e-115">**組織管理  \> ワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a605e-115">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
+2. <span data-ttu-id="a605e-116">サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ** としてマークされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="a605e-116">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**.</span></span> <span data-ttu-id="a605e-117">このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)という手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-117">If you don't see this configuration provider, complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure.</span></span> 
+3. <span data-ttu-id="a605e-118">**メタデータ コンフィギュレーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-118">Select **Metadata configurations**.</span></span>
+4. <span data-ttu-id="a605e-119">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-119">Select **Create configuration**.</span></span>
+5. <span data-ttu-id="a605e-120">ドロップダウン ダイアログ ボックスの **名前** フィールドに名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-120">In the drop-down dialog box, in the **Name** field, enter a name.</span></span> <span data-ttu-id="a605e-121">この例では、**対外貿易メタデータ** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-121">For this example, enter **Foreign trade metadata**.</span></span>
+6. <span data-ttu-id="a605e-122">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-122">Select **Create configuration**.</span></span>
+7. <span data-ttu-id="a605e-123">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a605e-123">Select **Designer**.</span></span>
+8. <span data-ttu-id="a605e-124">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-124">Select **Add**.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="978a5-136">選択したレコード テーブルに必要な関係に関するメタデータは、手動で追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-136">Metadata about required relations for the selected table of records must be added manually.</span></span>
+    > <span data-ttu-id="a605e-125">アプリケーション全体に対して、または選択したモデル、モジュールに対して、すべてのメタデータを選択することができます。</span><span class="sxs-lookup"><span data-stu-id="a605e-125">You can select all metadata either for the whole application, or for selected models or modules.</span></span> <span data-ttu-id="a605e-126">どちらの場合も、レコードのテーブル、列挙体、および拡張データ型 (EDTs) のメタデータが自動的に追加されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a605e-126">In both cases, be aware that the following metadata will be automatically added: tables of records, enumerations, and extended data types (EDTs).</span></span> <span data-ttu-id="a605e-127">メタデータの追加のタイプが必要な場合、手動で追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-127">When additional types of metadata are required, they must be manually added.</span></span>
 
-15. <span data-ttu-id="978a5-137">**データソースの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-137">Select **Add data source**.</span></span>
-16. <span data-ttu-id="978a5-138">**列挙** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-138">Select **Enumeration**.</span></span>
-17. <span data-ttu-id="978a5-139">**名前** フィールドにある **IntrastatDirection** の値をフィルタ処理します。</span><span class="sxs-lookup"><span data-stu-id="978a5-139">Filter on a value of **IntrastatDirection** in the **Name** field.</span></span>
-18. <span data-ttu-id="978a5-140">**IntrastatDirection** の列挙レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-140">Select the **IntrastatDirection** enumeration record.</span></span>
-19. <span data-ttu-id="978a5-141">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-141">Select **OK**.</span></span>
-20. <span data-ttu-id="978a5-142">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-142">Select **Save**.</span></span>
-21. <span data-ttu-id="978a5-143">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="978a5-143">Close the page.</span></span>
-22. <span data-ttu-id="978a5-144">メタデータ コンフィギュレーションのドラフト バージョンの完了</span><span class="sxs-lookup"><span data-stu-id="978a5-144">Complete the draft version of the metadata configuration:</span></span>
+    <span data-ttu-id="a605e-128">対外貿易トランザクションに関連付けられたメタデータをいくつか追加し、手動でメタデータ項目を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-128">You must add some metadata that is related to foreign trade transactions and manually select metadata items.</span></span>
 
-    1. <span data-ttu-id="978a5-145">**ステータスの変更 \> 完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-145">Select **Change status \> Complete**.</span></span>
-    2. <span data-ttu-id="978a5-146">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-146">Select **OK**.</span></span>
-    3. <span data-ttu-id="978a5-147">完了したバージョン 1 を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-147">Select the completed version 1.</span></span>
+9. <span data-ttu-id="a605e-129">**データソースを追加 \> テーブル レコード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-129">Select **Add data source \> Table records**.</span></span>
+10. <span data-ttu-id="a605e-130">**名前** フィールドにある **イントラスタット** の値をフィルタ処理します。</span><span class="sxs-lookup"><span data-stu-id="a605e-130">Filter on a value of **Intrastat** in the **Name** field.</span></span>
+11. <span data-ttu-id="a605e-131">**イントラスタット** テーブル レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-131">Select the **Intrastat** table record.</span></span>
+12. <span data-ttu-id="a605e-132">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-132">Select **OK**.</span></span>
 
-23. <span data-ttu-id="978a5-148">完了したバージョンのメタデータ コンフィギュレーションをアプリケーションから XML ファイルとしてエクスポートする</span><span class="sxs-lookup"><span data-stu-id="978a5-148">Export the completed version of the metadata configuration from the application as an XML file:</span></span>
+    <span data-ttu-id="a605e-133">イントラスタットのレコード テーブルに関するメタデータ情報を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-133">You must add metadata information about the Intrastat table of records.</span></span>
 
-    1. <span data-ttu-id="978a5-149">**交換 \> XML ファイルとしてエクスポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-149">Select **Exchange \> Export as XML file**.</span></span>
-    2. <span data-ttu-id="978a5-150">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-150">Select **OK**.</span></span>
+13. <span data-ttu-id="a605e-134">ツリーで、**テーブル レコード イントラスタット\> \>リレーション \> イントラスタットコモディティ (テーブル レコード EcoResCategory)** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-134">In the tree, select **Table records Intrastat \> \>Relations \> IntrastatCommodity (Table records EcoResCategory)**.</span></span>
+14. <span data-ttu-id="a605e-135">**メタデータの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-135">Select **Add metadata**.</span></span>
 
-<span data-ttu-id="978a5-151">作成した ER メタデータ コンフィギュレーションは、**対外貿易メタデータ .xml** ファイルとして保存されます。</span><span class="sxs-lookup"><span data-stu-id="978a5-151">The ER metadata configuration that you created is saved as the **Foreign trade metadata.xml** file.</span></span> <span data-ttu-id="978a5-152">これをRCSにインポートすることで、対外貿易ビジネス ドメインのメタデータのソースとして使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="978a5-152">You can now import it into RCS, so that it can be used as the source of metadata for the foreign trade business domain.</span></span> <span data-ttu-id="978a5-153">この情報に基づいて、アプリケーション メタデータと ER データ モデルとの間のマッピングを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="978a5-153">Based on this information, you can specify the mapping between application metadata and the ER data model.</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="a605e-136">選択したレコード テーブルに必要な関係に関するメタデータは、手動で追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-136">Metadata about required relations for the selected table of records must be added manually.</span></span>
 
-## <a name="access-application-metadata-by-using-an-er-configuration"></a><span data-ttu-id="978a5-154">ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする</span><span class="sxs-lookup"><span data-stu-id="978a5-154">Access application metadata by using an ER configuration</span></span>
+15. <span data-ttu-id="a605e-137">**データソースの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-137">Select **Add data source**.</span></span>
+16. <span data-ttu-id="a605e-138">**列挙** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-138">Select **Enumeration**.</span></span>
+17. <span data-ttu-id="a605e-139">**名前** フィールドにある **IntrastatDirection** の値をフィルタ処理します。</span><span class="sxs-lookup"><span data-stu-id="a605e-139">Filter on a value of **IntrastatDirection** in the **Name** field.</span></span>
+18. <span data-ttu-id="a605e-140">**IntrastatDirection** の列挙レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-140">Select the **IntrastatDirection** enumeration record.</span></span>
+19. <span data-ttu-id="a605e-141">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-141">Select **OK**.</span></span>
+20. <span data-ttu-id="a605e-142">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-142">Select **Save**.</span></span>
+21. <span data-ttu-id="a605e-143">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a605e-143">Close the page.</span></span>
+22. <span data-ttu-id="a605e-144">メタデータ コンフィギュレーションのドラフト バージョンの完了</span><span class="sxs-lookup"><span data-stu-id="a605e-144">Complete the draft version of the metadata configuration:</span></span>
 
-<span data-ttu-id="978a5-155">次の手順は、**システム管理者** または **電子レポート開発者** のロールを持つ RCS ユーザーが、アプリケーションのメタデータを使用して新しい ER モデル マッピングをデザインする方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="978a5-155">The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata from the application.</span></span> <span data-ttu-id="978a5-156">アプリケーション メタデータには、対外貿易トランザクションにアクセスするためのサンプル メタデータ セットを含む ER メタデータ コンフィギュレーションを使用してアクセスされます。</span><span class="sxs-lookup"><span data-stu-id="978a5-156">Application metadata will be accessed by using an ER metadata configuration that contains a sample set of metadata to access foreign trade transactions.</span></span>
+    1. <span data-ttu-id="a605e-145">**ステータスの変更 \> 完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-145">Select **Change status \> Complete**.</span></span>
+    2. <span data-ttu-id="a605e-146">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-146">Select **OK**.</span></span>
+    3. <span data-ttu-id="a605e-147">完了したバージョン 1 を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-147">Select the completed version 1.</span></span>
 
-<span data-ttu-id="978a5-157">これを完了する前に、ます次の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-157">Before you can complete this procedure, you must first complete the following procedures:</span></span>
+23. <span data-ttu-id="a605e-148">完了したバージョンのメタデータ コンフィギュレーションをアプリケーションから XML ファイルとしてエクスポートする</span><span class="sxs-lookup"><span data-stu-id="a605e-148">Export the completed version of the metadata configuration from the application as an XML file:</span></span>
 
-- [<span data-ttu-id="978a5-158">コンフィギュレーション プロバイダーを作成し、有効としてマークする</span><span class="sxs-lookup"><span data-stu-id="978a5-158">Create configuration providers and mark them as active</span></span>](tasks/er-configuration-provider-mark-it-active-2016-11.md)
-- [<span data-ttu-id="978a5-159">RCS で使用できるアプリケーション メタデータを準備する</span><span class="sxs-lookup"><span data-stu-id="978a5-159">Prepare application metadata that can be used in RCS</span></span>](#prepare-application-metadata-that-can-be-used-in-rcs)
+    1. <span data-ttu-id="a605e-149">**交換 \> XML ファイルとしてエクスポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-149">Select **Exchange \> Export as XML file**.</span></span>
+    2. <span data-ttu-id="a605e-150">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-150">Select **OK**.</span></span>
 
-1. <span data-ttu-id="978a5-160">**すべてのワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="978a5-160">Go to **All workspaces \> Electronic reporting**.</span></span>
-2. <span data-ttu-id="978a5-161">サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ** としてマークされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="978a5-161">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**.</span></span> <span data-ttu-id="978a5-162">このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)という手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-162">If you don't see this configuration provider, complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure.</span></span> 
-3. <span data-ttu-id="978a5-163">アプリケーションのメタデータを含む ER メタデータ コンフィギュレーションをインポートします。これは対外貿易ビジネス ドメインのための電子ドキュメントを生成するようコンフィギュレーションされています。</span><span class="sxs-lookup"><span data-stu-id="978a5-163">Import the ER metadata configuration that contains metadata for the application, and that is configured to generate electronic documents for the foreign trade business domain.</span></span> <span data-ttu-id="978a5-164">このトピックの前の部分 [RCS で使用できるアプリケーション メタデータを準備する](#prepare-application-metadata-that-can-be-used-in-rcs)の手順で ER メタデータ コンフィギュレーションを作成し、XML ファイルとしてエクスポートしました。</span><span class="sxs-lookup"><span data-stu-id="978a5-164">You created this ER metadata configuration and exported it as an XML file in the [Prepare application metadata that can be used in RCS](#prepare-application-metadata-that-can-be-used-in-rcs) procedure earlier in this topic.</span></span>
+<span data-ttu-id="a605e-151">作成した ER メタデータ コンフィギュレーションは、**対外貿易メタデータ .xml** ファイルとして保存されます。</span><span class="sxs-lookup"><span data-stu-id="a605e-151">The ER metadata configuration that you created is saved as the **Foreign trade metadata.xml** file.</span></span> <span data-ttu-id="a605e-152">これをRCSにインポートすることで、対外貿易ビジネス ドメインのメタデータのソースとして使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="a605e-152">You can now import it into RCS, so that it can be used as the source of metadata for the foreign trade business domain.</span></span> <span data-ttu-id="a605e-153">この情報に基づいて、アプリケーション メタデータと ER データ モデルとの間のマッピングを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="a605e-153">Based on this information, you can specify the mapping between application metadata and the ER data model.</span></span>
 
-    1. <span data-ttu-id="978a5-165">**メタデータ コンフィギュレーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-165">Select **Metadata configurations**.</span></span>
-    2. <span data-ttu-id="978a5-166">**交換** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-166">Select **Exchange**.</span></span>
-    3. <span data-ttu-id="978a5-167">**XML ファイルから読み込む** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-167">Select **Load from XML file**.</span></span>
-    4. <span data-ttu-id="978a5-168">参照し、**対外貿易メタデータ .xml** ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-168">Browse to select the **Foreign trade metadata.xml** file.</span></span>
-    5. <span data-ttu-id="978a5-169">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-169">Select **OK**.</span></span>
-    6. <span data-ttu-id="978a5-170">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="978a5-170">Close the page.</span></span>
+## <a name="access-application-metadata-by-using-an-er-configuration"></a><span data-ttu-id="a605e-154">ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする</span><span class="sxs-lookup"><span data-stu-id="a605e-154">Access application metadata by using an ER configuration</span></span>
 
-4. <span data-ttu-id="978a5-171">データ モデル コンフィギュレーションの作成</span><span class="sxs-lookup"><span data-stu-id="978a5-171">Create a data model configuration:</span></span>
+<span data-ttu-id="a605e-155">次の手順は、**システム管理者** または **電子レポート開発者** のロールを持つ RCS ユーザーが、アプリケーションのメタデータを使用して新しい ER モデル マッピングをデザインする方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="a605e-155">The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata from the application.</span></span> <span data-ttu-id="a605e-156">アプリケーション メタデータには、対外貿易トランザクションにアクセスするためのサンプル メタデータ セットを含む ER メタデータ コンフィギュレーションを使用してアクセスされます。</span><span class="sxs-lookup"><span data-stu-id="a605e-156">Application metadata will be accessed by using an ER metadata configuration that contains a sample set of metadata to access foreign trade transactions.</span></span>
 
-    1. <span data-ttu-id="978a5-172">**コンフィギュレーションをレポートする** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-172">Select **Reporting configurations**.</span></span>
-    2. <span data-ttu-id="978a5-173">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-173">Select **Create configuration**.</span></span>
-    3. <span data-ttu-id="978a5-174">ドロップ ダウン ダイアログ ボックスの **名前** フィールドに、**対外貿易モデル** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-174">In the drop-down dialog box, in the **Name** field, enter **Foreign trade model**.</span></span>
-    4. <span data-ttu-id="978a5-175">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-175">Select **Create configuration**.</span></span>
-    5. <span data-ttu-id="978a5-176">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="978a5-176">Select **Designer**.</span></span>
-    6. <span data-ttu-id="978a5-177">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="978a5-177">Select **New** to open the drop dialog.</span></span>
+<span data-ttu-id="a605e-157">これを完了する前に、ます次の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-157">Before you can complete this procedure, you must first complete the following procedures:</span></span>
 
-        1. <span data-ttu-id="978a5-178">**名前** フィールドに、**ルート** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-178">In the **Name** field, type **Root**.</span></span>
-        2. <span data-ttu-id="978a5-179">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-179">Select **Add**.</span></span>
+- [<span data-ttu-id="a605e-158">コンフィギュレーション プロバイダーを作成し、有効としてマークする</span><span class="sxs-lookup"><span data-stu-id="a605e-158">Create configuration providers and mark them as active</span></span>](tasks/er-configuration-provider-mark-it-active-2016-11.md)
+- [<span data-ttu-id="a605e-159">RCS で使用できるアプリケーション メタデータを準備する</span><span class="sxs-lookup"><span data-stu-id="a605e-159">Prepare application metadata that can be used in RCS</span></span>](#prepare-application-metadata-that-can-be-used-in-rcs)
+
+1. <span data-ttu-id="a605e-160">**すべてのワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a605e-160">Go to **All workspaces \> Electronic reporting**.</span></span>
+2. <span data-ttu-id="a605e-161">サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ** としてマークされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="a605e-161">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**.</span></span> <span data-ttu-id="a605e-162">このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)という手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-162">If you don't see this configuration provider, complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure.</span></span> 
+3. <span data-ttu-id="a605e-163">アプリケーションのメタデータを含む ER メタデータ コンフィギュレーションをインポートします。これは対外貿易ビジネス ドメインのための電子ドキュメントを生成するようコンフィギュレーションされています。</span><span class="sxs-lookup"><span data-stu-id="a605e-163">Import the ER metadata configuration that contains metadata for the application, and that is configured to generate electronic documents for the foreign trade business domain.</span></span> <span data-ttu-id="a605e-164">このトピックの前の部分 [RCS で使用できるアプリケーション メタデータを準備する](#prepare-application-metadata-that-can-be-used-in-rcs)の手順で ER メタデータ コンフィギュレーションを作成し、XML ファイルとしてエクスポートしました。</span><span class="sxs-lookup"><span data-stu-id="a605e-164">You created this ER metadata configuration and exported it as an XML file in the [Prepare application metadata that can be used in RCS](#prepare-application-metadata-that-can-be-used-in-rcs) procedure earlier in this topic.</span></span>
+
+    1. <span data-ttu-id="a605e-165">**メタデータ コンフィギュレーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-165">Select **Metadata configurations**.</span></span>
+    2. <span data-ttu-id="a605e-166">**交換** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-166">Select **Exchange**.</span></span>
+    3. <span data-ttu-id="a605e-167">**XML ファイルから読み込む** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-167">Select **Load from XML file**.</span></span>
+    4. <span data-ttu-id="a605e-168">参照し、**対外貿易メタデータ .xml** ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-168">Browse to select the **Foreign trade metadata.xml** file.</span></span>
+    5. <span data-ttu-id="a605e-169">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-169">Select **OK**.</span></span>
+    6. <span data-ttu-id="a605e-170">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a605e-170">Close the page.</span></span>
+
+4. <span data-ttu-id="a605e-171">データ モデル コンフィギュレーションの作成</span><span class="sxs-lookup"><span data-stu-id="a605e-171">Create a data model configuration:</span></span>
+
+    1. <span data-ttu-id="a605e-172">**コンフィギュレーションをレポートする** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-172">Select **Reporting configurations**.</span></span>
+    2. <span data-ttu-id="a605e-173">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-173">Select **Create configuration**.</span></span>
+    3. <span data-ttu-id="a605e-174">ドロップ ダウン ダイアログ ボックスの **名前** フィールドに、**対外貿易モデル** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-174">In the drop-down dialog box, in the **Name** field, enter **Foreign trade model**.</span></span>
+    4. <span data-ttu-id="a605e-175">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-175">Select **Create configuration**.</span></span>
+    5. <span data-ttu-id="a605e-176">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a605e-176">Select **Designer**.</span></span>
+    6. <span data-ttu-id="a605e-177">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="a605e-177">Select **New** to open the drop dialog.</span></span>
+
+        1. <span data-ttu-id="a605e-178">**名前** フィールドに、**ルート** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-178">In the **Name** field, type **Root**.</span></span>
+        2. <span data-ttu-id="a605e-179">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-179">Select **Add**.</span></span>
     
-    7. <span data-ttu-id="978a5-180">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="978a5-180">Select **New** to open the drop dialog.</span></span>
+    7. <span data-ttu-id="a605e-180">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="a605e-180">Select **New** to open the drop dialog.</span></span>
 
-        1. <span data-ttu-id="978a5-181">**名前** フィールドに、**トランザクション** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-181">In the **Name** field, type **Transaction**.</span></span>
-        2. <span data-ttu-id="978a5-182">**品目タイプ** フィールドで、**レコード リスト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-182">In the **Item type** field, select **Record list**.</span></span>
-        3. <span data-ttu-id="978a5-183">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-183">Select **Add**.</span></span>
+        1. <span data-ttu-id="a605e-181">**名前** フィールドに、**トランザクション** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-181">In the **Name** field, type **Transaction**.</span></span>
+        2. <span data-ttu-id="a605e-182">**品目タイプ** フィールドで、**レコード リスト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-182">In the **Item type** field, select **Record list**.</span></span>
+        3. <span data-ttu-id="a605e-183">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-183">Select **Add**.</span></span>
  
-    8. <span data-ttu-id="978a5-184">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="978a5-184">Select **New** to open the drop dialog.</span></span>
+    8. <span data-ttu-id="a605e-184">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="a605e-184">Select **New** to open the drop dialog.</span></span>
 
-        1. <span data-ttu-id="978a5-185">**名前** フィールドに、**コモディティ コード** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-185">In the **Name** field, type **Commodity code**.</span></span>
-        2. <span data-ttu-id="978a5-186">**品目タイプ** フィールドで、**文字列** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-186">In the **Item type** field, select **String**.</span></span>
-        3. <span data-ttu-id="978a5-187">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-187">Select **Add**.</span></span>
+        1. <span data-ttu-id="a605e-185">**名前** フィールドに、**コモディティ コード** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-185">In the **Name** field, type **Commodity code**.</span></span>
+        2. <span data-ttu-id="a605e-186">**品目タイプ** フィールドで、**文字列** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-186">In the **Item type** field, select **String**.</span></span>
+        3. <span data-ttu-id="a605e-187">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-187">Select **Add**.</span></span>
 
-    9. <span data-ttu-id="978a5-188">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="978a5-188">Select **New** to open the drop dialog.</span></span>
+    9. <span data-ttu-id="a605e-188">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="a605e-188">Select **New** to open the drop dialog.</span></span>
 
-        1. <span data-ttu-id="978a5-189">名前フィールドに、**請求金額** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-189">In the Name field, type **Invoiced amount**.</span></span>
-        2. <span data-ttu-id="978a5-190">**品目タイプ** フィールドで、**実数** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-190">In the **Item type** field, select **Real**.</span></span>
-        3. <span data-ttu-id="978a5-191">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-191">Select **Add**.</span></span>
+        1. <span data-ttu-id="a605e-189">名前フィールドに、**請求金額** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-189">In the Name field, type **Invoiced amount**.</span></span>
+        2. <span data-ttu-id="a605e-190">**品目タイプ** フィールドで、**実数** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-190">In the **Item type** field, select **Real**.</span></span>
+        3. <span data-ttu-id="a605e-191">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-191">Select **Add**.</span></span>
 
-    10. <span data-ttu-id="978a5-192">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="978a5-192">Select **New** to open the drop dialog.</span></span>
+    10. <span data-ttu-id="a605e-192">**新規** を選択すると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="a605e-192">Select **New** to open the drop dialog.</span></span>
 
-        1. <span data-ttu-id="978a5-193">**名前** フィールドに、**日付** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-193">In the **Name** field, type **Date**.</span></span>
-        2. <span data-ttu-id="978a5-194">**品目タイプ** フィールドで、**日付** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-194">In the **Item type** field, select **Date**.</span></span>
-        3. <span data-ttu-id="978a5-195">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-195">Select **Add**.</span></span>
+        1. <span data-ttu-id="a605e-193">**名前** フィールドに、**日付** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-193">In the **Name** field, type **Date**.</span></span>
+        2. <span data-ttu-id="a605e-194">**品目タイプ** フィールドで、**日付** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-194">In the **Item type** field, select **Date**.</span></span>
+        3. <span data-ttu-id="a605e-195">**追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-195">Select **Add**.</span></span>
  
-    11. <span data-ttu-id="978a5-196">**追加 \> ルート参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-196">Select **Add \> Root reference**.</span></span>
-    12. <span data-ttu-id="978a5-197">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-197">Select **OK**.</span></span>
-    13. <span data-ttu-id="978a5-198">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-198">Select **Save**.</span></span>
-    14. <span data-ttu-id="978a5-199">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="978a5-199">Close the page.</span></span>
-    15. <span data-ttu-id="978a5-200">**ステータスの変更 \> 完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-200">Select **Change status \> Complete**.</span></span>
-    16. <span data-ttu-id="978a5-201">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-201">Select **OK**.</span></span>
+    11. <span data-ttu-id="a605e-196">**追加 \> ルート参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-196">Select **Add \> Root reference**.</span></span>
+    12. <span data-ttu-id="a605e-197">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-197">Select **OK**.</span></span>
+    13. <span data-ttu-id="a605e-198">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-198">Select **Save**.</span></span>
+    14. <span data-ttu-id="a605e-199">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a605e-199">Close the page.</span></span>
+    15. <span data-ttu-id="a605e-200">**ステータスの変更 \> 完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-200">Select **Change status \> Complete**.</span></span>
+    16. <span data-ttu-id="a605e-201">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-201">Select **OK**.</span></span>
 
-5. <span data-ttu-id="978a5-202">モデル マッピング コンフィギュレーションの作成</span><span class="sxs-lookup"><span data-stu-id="978a5-202">Create a model mapping configuration:</span></span>
+5. <span data-ttu-id="a605e-202">モデル マッピング コンフィギュレーションの作成</span><span class="sxs-lookup"><span data-stu-id="a605e-202">Create a model mapping configuration:</span></span>
 
-    1. <span data-ttu-id="978a5-203">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-203">Select **Create configuration**.</span></span>
-    2. <span data-ttu-id="978a5-204">ドロップ ダウン ダイアログ ボックスの **新規** フィールドに、**データ モデル対外貿易モデルに基づいたモデル マッピング** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-204">In the drop-down dialog box, in the **New** field, enter **Model Mapping based on data model Foreign trade model**.</span></span>
-    3. <span data-ttu-id="978a5-205">**名前** フィールドに、**対外貿易マッピング** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-205">In the **Name** field, enter **Foreign trade mapping**.</span></span>
-    4. <span data-ttu-id="978a5-206">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-206">Select **Create configuration**.</span></span>
-    5. <span data-ttu-id="978a5-207">**必要条件** のクイック タブで、**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-207">On the **Prerequisites** FastTab, select **Edit**.</span></span>
-    6. <span data-ttu-id="978a5-208">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-208">Select **New**.</span></span>
-    7. <span data-ttu-id="978a5-209">**必要条件のコンポーネント タイプ** フィールドで、**コンフィギュレーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-209">In the **Prerequisite component type** field, select **Configuration**.</span></span>
-    8. <span data-ttu-id="978a5-210">**対外貿易メタデータ** コンフィギュレーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-210">Select the **Foreign trade metadata** configuration.</span></span>
-    9. <span data-ttu-id="978a5-211">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-211">Select **Save**.</span></span> <span data-ttu-id="978a5-212">参照が **対外貿易メタデータ** コンフィギュレーションのバージョン 1 に追加されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="978a5-212">Notice that the reference is added to version 1 of the **Foreign trade metadata** configuration.</span></span> <span data-ttu-id="978a5-213">このコンフィギュレーションのアプリケーション メタデータは、このモデル マッピングをデザインするときに提供されます。</span><span class="sxs-lookup"><span data-stu-id="978a5-213">Application metadata from this configuration will be offered while the model mapping is designed.</span></span>
-    10. <span data-ttu-id="978a5-214">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="978a5-214">Close the page.</span></span>
-    11. <span data-ttu-id="978a5-215">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="978a5-215">Select **Designer**.</span></span>
-    12. <span data-ttu-id="978a5-216">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="978a5-216">Select **Designer**.</span></span>
-    13. <span data-ttu-id="978a5-217">ツリーで、**Dynamics 365 for Operations \> テーブル レコード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-217">In the tree, select **Dynamics 365 for Operations \> Table records**.</span></span>
-    14. <span data-ttu-id="978a5-218">**ルートの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-218">Select **Add root**.</span></span>
-    15. <span data-ttu-id="978a5-219">**名前** フィールドに、**イントラスタット** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-219">In the **Name** field, enter **Intrastat**.</span></span>
-    16. <span data-ttu-id="978a5-220">**イントラスタット** テーブル レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-220">Select **Intrastat** table records.</span></span>
-    17. <span data-ttu-id="978a5-221">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-221">Select **OK**.</span></span>
+    1. <span data-ttu-id="a605e-203">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-203">Select **Create configuration**.</span></span>
+    2. <span data-ttu-id="a605e-204">ドロップ ダウン ダイアログ ボックスの **新規** フィールドに、**データ モデル対外貿易モデルに基づいたモデル マッピング** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-204">In the drop-down dialog box, in the **New** field, enter **Model Mapping based on data model Foreign trade model**.</span></span>
+    3. <span data-ttu-id="a605e-205">**名前** フィールドに、**対外貿易マッピング** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-205">In the **Name** field, enter **Foreign trade mapping**.</span></span>
+    4. <span data-ttu-id="a605e-206">**コンフィギュレーションの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-206">Select **Create configuration**.</span></span>
+    5. <span data-ttu-id="a605e-207">**必要条件** のクイック タブで、**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-207">On the **Prerequisites** FastTab, select **Edit**.</span></span>
+    6. <span data-ttu-id="a605e-208">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-208">Select **New**.</span></span>
+    7. <span data-ttu-id="a605e-209">**必要条件のコンポーネント タイプ** フィールドで、**コンフィギュレーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-209">In the **Prerequisite component type** field, select **Configuration**.</span></span>
+    8. <span data-ttu-id="a605e-210">**対外貿易メタデータ** コンフィギュレーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-210">Select the **Foreign trade metadata** configuration.</span></span>
+    9. <span data-ttu-id="a605e-211">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-211">Select **Save**.</span></span> <span data-ttu-id="a605e-212">参照が **対外貿易メタデータ** コンフィギュレーションのバージョン 1 に追加されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a605e-212">Notice that the reference is added to version 1 of the **Foreign trade metadata** configuration.</span></span> <span data-ttu-id="a605e-213">このコンフィギュレーションのアプリケーション メタデータは、このモデル マッピングをデザインするときに提供されます。</span><span class="sxs-lookup"><span data-stu-id="a605e-213">Application metadata from this configuration will be offered while the model mapping is designed.</span></span>
+    10. <span data-ttu-id="a605e-214">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a605e-214">Close the page.</span></span>
+    11. <span data-ttu-id="a605e-215">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a605e-215">Select **Designer**.</span></span>
+    12. <span data-ttu-id="a605e-216">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a605e-216">Select **Designer**.</span></span>
+    13. <span data-ttu-id="a605e-217">ツリーで、**Dynamics 365 for Operations \> テーブル レコード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-217">In the tree, select **Dynamics 365 for Operations \> Table records**.</span></span>
+    14. <span data-ttu-id="a605e-218">**ルートの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-218">Select **Add root**.</span></span>
+    15. <span data-ttu-id="a605e-219">**名前** フィールドに、**イントラスタット** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-219">In the **Name** field, enter **Intrastat**.</span></span>
+    16. <span data-ttu-id="a605e-220">**イントラスタット** テーブル レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-220">Select **Intrastat** table records.</span></span>
+    17. <span data-ttu-id="a605e-221">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-221">Select **OK**.</span></span>
 
         > [!NOTE]
-        > <span data-ttu-id="978a5-222">現在使用されているメタデータ セットに追加されたテーブルは 2 つだけなので、2 つのテーブルのみが提供されています。</span><span class="sxs-lookup"><span data-stu-id="978a5-222">Only two tables are offered, because only two tables were added to the set of metadata that is currently used.</span></span>
+        > <span data-ttu-id="a605e-222">現在使用されているメタデータ セットに追加されたテーブルは 2 つだけなので、2 つのテーブルのみが提供されています。</span><span class="sxs-lookup"><span data-stu-id="a605e-222">Only two tables are offered, because only two tables were added to the set of metadata that is currently used.</span></span>
 
-    18. <span data-ttu-id="978a5-223">**バインド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-223">Select **Bind**.</span></span>
-    19. <span data-ttu-id="978a5-224">ツリーで、**イントラスタット \> AmountMST** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-224">In the tree, select **Intrastat \> AmountMST**.</span></span>
-    20. <span data-ttu-id="978a5-225">ツリーで、**トランザクション = イントラスタット \> 請求金額** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-225">In the tree, select **Transaction = Intrastat \> Invoiced amount**.</span></span>
-    21. <span data-ttu-id="978a5-226">**バインド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-226">Select **Bind**.</span></span>
-    22. <span data-ttu-id="978a5-227">ツリーで、**イントラスタット \> TransDate** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-227">In the tree, select **Intrastat \> TransDate**.</span></span>
-    23. <span data-ttu-id="978a5-228">ツリーで、**トランザクション = イントラスタット \> 日付** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-228">In the tree, select **Transaction = Intrastat \> Date**.</span></span>
-    24. <span data-ttu-id="978a5-229">**バインド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-229">Select **Bind**.</span></span>
-    25. <span data-ttu-id="978a5-230">ツリーで、**イントラスタット \> \>リレーション \> イントラスタットコモディティ \> コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-230">In the tree, select **Intrastat \> \>Relations \> IntrastatCommodity \> Code**.</span></span>
-    26. <span data-ttu-id="978a5-231">ツリーで、**トランザクション = イントラスタット \> コモディティ コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-231">In the tree, select **Transaction = Intrastat \> Commodity code**.</span></span>
-    27. <span data-ttu-id="978a5-232">**バインド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-232">Select **Bind**.</span></span>
-    28. <span data-ttu-id="978a5-233">**検証** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-233">Select **Validate**.</span></span>
+    18. <span data-ttu-id="a605e-223">**バインド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-223">Select **Bind**.</span></span>
+    19. <span data-ttu-id="a605e-224">ツリーで、**イントラスタット \> AmountMST** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-224">In the tree, select **Intrastat \> AmountMST**.</span></span>
+    20. <span data-ttu-id="a605e-225">ツリーで、**トランザクション = イントラスタット \> 請求金額** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-225">In the tree, select **Transaction = Intrastat \> Invoiced amount**.</span></span>
+    21. <span data-ttu-id="a605e-226">**バインド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-226">Select **Bind**.</span></span>
+    22. <span data-ttu-id="a605e-227">ツリーで、**イントラスタット \> TransDate** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-227">In the tree, select **Intrastat \> TransDate**.</span></span>
+    23. <span data-ttu-id="a605e-228">ツリーで、**トランザクション = イントラスタット \> 日付** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-228">In the tree, select **Transaction = Intrastat \> Date**.</span></span>
+    24. <span data-ttu-id="a605e-229">**バインド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-229">Select **Bind**.</span></span>
+    25. <span data-ttu-id="a605e-230">ツリーで、**イントラスタット \> \>リレーション \> イントラスタットコモディティ \> コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-230">In the tree, select **Intrastat \> \>Relations \> IntrastatCommodity \> Code**.</span></span>
+    26. <span data-ttu-id="a605e-231">ツリーで、**トランザクション = イントラスタット \> コモディティ コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-231">In the tree, select **Transaction = Intrastat \> Commodity code**.</span></span>
+    27. <span data-ttu-id="a605e-232">**バインド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-232">Select **Bind**.</span></span>
+    28. <span data-ttu-id="a605e-233">**検証** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-233">Select **Validate**.</span></span>
 
         > [!NOTE]
-        > <span data-ttu-id="978a5-234">検証が完了した後、参照された ER メタデータ コンフィギュレーションのアプリケーション メタデータの詳細を使用して説明されているデータ ソース項目に、データ モデルの要素が正常にバインドされました。</span><span class="sxs-lookup"><span data-stu-id="978a5-234">After validation is completed, you've successfully bound elements of the data model to items of the data sources that are described by using details of the application metadata from the referenced ER metadata configuration.</span></span>
+        > <span data-ttu-id="a605e-234">検証が完了した後、参照された ER メタデータ コンフィギュレーションのアプリケーション メタデータの詳細を使用して説明されているデータ ソース項目に、データ モデルの要素が正常にバインドされました。</span><span class="sxs-lookup"><span data-stu-id="a605e-234">After validation is completed, you've successfully bound elements of the data model to items of the data sources that are described by using details of the application metadata from the referenced ER metadata configuration.</span></span>
 
-    29. <span data-ttu-id="978a5-235">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-235">Select **Save**.</span></span>
+    29. <span data-ttu-id="a605e-235">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-235">Select **Save**.</span></span>
 
-<span data-ttu-id="978a5-236">必要に応じて、アプリケーションで既存のメタデータ セットを拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="978a5-236">As you require, you can extend the existing set of metadata in the application.</span></span> <span data-ttu-id="978a5-237">その後、新しい完了版の ER メタデータ コンフィギュレーションをエクスポートし、それを RCS にインポートして、インポートされたメタデータ コンフィギュレーションの新しいバージョンを参照してコンフィギュレーション済みモデル マッピングの前提条件を更新することができます。</span><span class="sxs-lookup"><span data-stu-id="978a5-237">You can then export the new completed version of the ER metadata configuration, import it into RCS, and update the prerequisites of the configured model mapping configuration to refer to a new version of the imported metadata configuration.</span></span>
+<span data-ttu-id="a605e-236">必要に応じて、アプリケーションで既存のメタデータ セットを拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="a605e-236">As you require, you can extend the existing set of metadata in the application.</span></span> <span data-ttu-id="a605e-237">その後、新しい完了版の ER メタデータ コンフィギュレーションをエクスポートし、それを RCS にインポートして、インポートされたメタデータ コンフィギュレーションの新しいバージョンを参照してコンフィギュレーション済みモデル マッピングの前提条件を更新することができます。</span><span class="sxs-lookup"><span data-stu-id="a605e-237">You can then export the new completed version of the ER metadata configuration, import it into RCS, and update the prerequisites of the configured model mapping configuration to refer to a new version of the imported metadata configuration.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="978a5-238">アプリケーション メタデータに関する情報を取得するこの方法は、ローカルに展開されたアプリケーションで利用できる唯一の方法です (ローカル ビジネス データ \[LBD\]、またはオンプレミスの場合、配置モデルはアプリケーションに使用されます)。</span><span class="sxs-lookup"><span data-stu-id="978a5-238">This method for getting information about application metadata is the only available method for applications that are locally deployed (that is, when a local business data \[LBD\], or on-premises, deployment model is used for the application).</span></span>
+> <span data-ttu-id="a605e-238">アプリケーション メタデータに関する情報を取得するこの方法は、ローカルに展開されたアプリケーションで利用できる唯一の方法です (ローカル ビジネス データ \[LBD\]、またはオンプレミスの場合、配置モデルはアプリケーションに使用されます)。</span><span class="sxs-lookup"><span data-stu-id="a605e-238">This method for getting information about application metadata is the only available method for applications that are locally deployed (that is, when a local business data \[LBD\], or on-premises, deployment model is used for the application).</span></span>
 
-## <a name="access-application-metadata-by-using-connected-applications"></a><span data-ttu-id="978a5-239">接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする</span><span class="sxs-lookup"><span data-stu-id="978a5-239">Access application metadata by using connected applications</span></span>
+## <a name="access-application-metadata-by-using-connected-applications"></a><span data-ttu-id="a605e-239">接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする</span><span class="sxs-lookup"><span data-stu-id="a605e-239">Access application metadata by using connected applications</span></span>
 
-<span data-ttu-id="978a5-240">次の手順は、**システム管理者** または **電子レポート開発者** のロールを持つ RCS ユーザーが、アプリケーションのメタデータを使用して新しい ER モデル マッピングをデザインする方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="978a5-240">The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata of the application.</span></span> <span data-ttu-id="978a5-241">アプリケーションのメタデータは、RCS 接続されたアプリケーションを使用してオンラインでアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="978a5-241">Application metadata will be accessed online by using RCS connected application.</span></span> <span data-ttu-id="978a5-242">サンプル ER モデルマッピングは、対外貿易トランザクションにアクセスするようにコンフィギュレーションされます。</span><span class="sxs-lookup"><span data-stu-id="978a5-242">A sample ER model mapping will be configured to access foreign trade transactions.</span></span>
+<span data-ttu-id="a605e-240">次の手順は、**システム管理者** または **電子レポート開発者** のロールを持つ RCS ユーザーが、アプリケーションのメタデータを使用して新しい ER モデル マッピングをデザインする方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="a605e-240">The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata of the application.</span></span> <span data-ttu-id="a605e-241">アプリケーションのメタデータは、RCS 接続されたアプリケーションを使用してオンラインでアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="a605e-241">Application metadata will be accessed online by using RCS connected application.</span></span> <span data-ttu-id="a605e-242">サンプル ER モデルマッピングは、対外貿易トランザクションにアクセスするようにコンフィギュレーションされます。</span><span class="sxs-lookup"><span data-stu-id="a605e-242">A sample ER model mapping will be configured to access foreign trade transactions.</span></span>
 
-<span data-ttu-id="978a5-243">この手順を完了するには、まず RCS にある [コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-243">To complete this procedure, you must first complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure in RCS.</span></span> <span data-ttu-id="978a5-244">このトピックの前の部分にある [ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする](#access-application-metadata-by-using-an-er-configuration)の手順をまだ完了していない場合は、[Dynamics 365 for Finance and Operations 8.1 電子レポート タスク ガイド](https://go.microsoft.com/fwlink/?linkid=2082739)のページに移動し、次の ER コンフィギュレーション ファイルを事前にダウンロードし、ローカルに保存してください : **対外貿易メタデータ .xml**、**対外貿易モデル .xml**、および **対外貿易マッピング .xml**</span><span class="sxs-lookup"><span data-stu-id="978a5-244">If you haven't yet completed the [Access application metadata by using an ER configuration](#access-application-metadata-by-using-an-er-configuration) procedure earlier in this topic, go to [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page to download the following ER configuration files in advance and save them locally: **Foreign trade metadata.xml**, **Foreign trade model.xml**, and **Foreign trade mapping.xml**.</span></span>
+<span data-ttu-id="a605e-243">この手順を完了するには、まず RCS にある [コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-243">To complete this procedure, you must first complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure in RCS.</span></span> <span data-ttu-id="a605e-244">このトピックの前の部分にある [ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする](#access-application-metadata-by-using-an-er-configuration)の手順をまだ完了していない場合は、[Dynamics 365 for Finance and Operations 8.1 電子レポート タスク ガイド](https://go.microsoft.com/fwlink/?linkid=2082739)のページに移動し、次の ER コンフィギュレーション ファイルを事前にダウンロードし、ローカルに保存してください : **対外貿易メタデータ .xml**、**対外貿易モデル .xml**、および **対外貿易マッピング .xml**</span><span class="sxs-lookup"><span data-stu-id="a605e-244">If you haven't yet completed the [Access application metadata by using an ER configuration](#access-application-metadata-by-using-an-er-configuration) procedure earlier in this topic, go to [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page to download the following ER configuration files in advance and save them locally: **Foreign trade metadata.xml**, **Foreign trade model.xml**, and **Foreign trade mapping.xml**.</span></span>
 
 
-### <a name="get-required-er-configurations"></a><span data-ttu-id="978a5-245">必要な ER コンフィギュレーションの取得</span><span class="sxs-lookup"><span data-stu-id="978a5-245">Get required ER configurations</span></span>
+### <a name="get-required-er-configurations"></a><span data-ttu-id="a605e-245">必要な ER コンフィギュレーションの取得</span><span class="sxs-lookup"><span data-stu-id="a605e-245">Get required ER configurations</span></span>
 
-<span data-ttu-id="978a5-246">このトピックの前の部分にある [ER コンフィギュレーションを使用したアプリケーション メタデータへのアクセス](#access-application-metadata-by-using-an-er-configuration)手順を既に完了している場合、現在の RCS インスタンスに必要なすべての ER コンフィギュレーション (対外貿易メタデータ、モデルおよびマッピングのコンフィギュレーション) は、既に存在しています。</span><span class="sxs-lookup"><span data-stu-id="978a5-246">If you've already completed the [Access application metadata by using an ER configuration](#access-application-metadata-by-using-an-er-configuration) procedure earlier in this topic, you already have all the required ER configurations (the foreign trade metadata, model, and mapping configurations) in the current RCS instance.</span></span> <span data-ttu-id="978a5-247">その場合は、この手順をスキップできます。</span><span class="sxs-lookup"><span data-stu-id="978a5-247">In that case, you can skip this procedure.</span></span>
+<span data-ttu-id="a605e-246">このトピックの前の部分にある [ER コンフィギュレーションを使用したアプリケーション メタデータへのアクセス](#access-application-metadata-by-using-an-er-configuration)手順を既に完了している場合、現在の RCS インスタンスに必要なすべての ER コンフィギュレーション (対外貿易メタデータ、モデルおよびマッピングのコンフィギュレーション) は、既に存在しています。</span><span class="sxs-lookup"><span data-stu-id="a605e-246">If you've already completed the [Access application metadata by using an ER configuration](#access-application-metadata-by-using-an-er-configuration) procedure earlier in this topic, you already have all the required ER configurations (the foreign trade metadata, model, and mapping configurations) in the current RCS instance.</span></span> <span data-ttu-id="a605e-247">その場合は、この手順をスキップできます。</span><span class="sxs-lookup"><span data-stu-id="a605e-247">In that case, you can skip this procedure.</span></span>
 
-1. <span data-ttu-id="978a5-248">**すべてのワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="978a5-248">Go to **All workspaces \> Electronic reporting**.</span></span>
-2. <span data-ttu-id="978a5-249">**コンフィギュレーションをレポートする** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-249">Select **Reporting configurations**.</span></span>
-3. <span data-ttu-id="978a5-250">**対外貿易メタデータ .xml**、**対外貿易モデル .xml**、**対外貿易マッピング .xml** コンフィギュレーション ファイルを読み込み、それぞれについて、次の一連の手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="978a5-250">Load the **Foreign trade metadata.xml**, **Foreign trade model.xml**, and **Foreign trade mapping.xml** configuration files repeating the following chain of steps for each of them:</span></span>
+1. <span data-ttu-id="a605e-248">**すべてのワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a605e-248">Go to **All workspaces \> Electronic reporting**.</span></span>
+2. <span data-ttu-id="a605e-249">**コンフィギュレーションをレポートする** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-249">Select **Reporting configurations**.</span></span>
+3. <span data-ttu-id="a605e-250">**対外貿易メタデータ .xml**、**対外貿易モデル .xml**、**対外貿易マッピング .xml** コンフィギュレーション ファイルを読み込み、それぞれについて、次の一連の手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="a605e-250">Load the **Foreign trade metadata.xml**, **Foreign trade model.xml**, and **Foreign trade mapping.xml** configuration files repeating the following chain of steps for each of them:</span></span>
 
-    1. <span data-ttu-id="978a5-251">**交換** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-251">Select **Exchange**.</span></span>
-    2. <span data-ttu-id="978a5-252">**XML ファイルから読み込む** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-252">Select **Load from XML file**.</span></span>
-    3. <span data-ttu-id="978a5-253">**参照** を選択し、ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-253">Select **Browse**, and select a file.</span></span>
-    4. <span data-ttu-id="978a5-254">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-254">Select **OK**.</span></span>
+    1. <span data-ttu-id="a605e-251">**交換** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-251">Select **Exchange**.</span></span>
+    2. <span data-ttu-id="a605e-252">**XML ファイルから読み込む** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-252">Select **Load from XML file**.</span></span>
+    3. <span data-ttu-id="a605e-253">**参照** を選択し、ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-253">Select **Browse**, and select a file.</span></span>
+    4. <span data-ttu-id="a605e-254">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-254">Select **OK**.</span></span>
 
-### <a name="register-the-connection-with-the-application"></a><span data-ttu-id="978a5-255">アプリケーションとの接続を登録する</span><span class="sxs-lookup"><span data-stu-id="978a5-255">Register the connection with the application</span></span>
+### <a name="register-the-connection-with-the-application"></a><span data-ttu-id="a605e-255">アプリケーションとの接続を登録する</span><span class="sxs-lookup"><span data-stu-id="a605e-255">Register the connection with the application</span></span>
 
-1. <span data-ttu-id="978a5-256">**すべてのワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="978a5-256">Go to **All workspaces \> Electronic reporting**.</span></span>
-2. <span data-ttu-id="978a5-257">**接続アプリケーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-257">Select **Connected applications**.</span></span>
-3. <span data-ttu-id="978a5-258">コンフィギュレーションされたアプリケーションが Microsoft Azure に基づいており、RCS ユーザーが一般にアクセスできることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="978a5-258">Make sure that the configured application is based on Microsoft Azure, and that it is accessible in general to RCS users.</span></span> <span data-ttu-id="978a5-259">現在の RCS ユーザーは、アプリケーションのメタデータにアクセスする権限を与えるロールで、このアプリケーションのユーザーとして登録されているコンフィギュレーションされたアプリケーションにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="978a5-259">The current RCS user must have access to the configured application being registered as a user of this application in a role that gives them privileges to access the application's metadata.</span></span>
-4. <span data-ttu-id="978a5-260">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-260">Select **New**.</span></span>
-5. <span data-ttu-id="978a5-261">**名前** フィールドに、接続されたアプリケーションの名前として **MyConnectedApp** と入力します。</span><span class="sxs-lookup"><span data-stu-id="978a5-261">In the **Name** field, enter **MyConnectedApp** as the name of the connected application.</span></span>
-6. <span data-ttu-id="978a5-262">**アプリケーション** フィールドに、アプリケーションの URL を指定します。</span><span class="sxs-lookup"><span data-stu-id="978a5-262">In the **Application** field, specify the URL of the application.</span></span>
-7. <span data-ttu-id="978a5-263">**テナント** フィールドに、アプリケーションのプロバイダーを指定します。</span><span class="sxs-lookup"><span data-stu-id="978a5-263">In the **Tenant** field, specify the provider of the application.</span></span>
-8. <span data-ttu-id="978a5-264">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-264">Select **Save**.</span></span> 
-9. <span data-ttu-id="978a5-265">コンフィギュレーションされたアプリケーションへの接続を確認するときは、**リモート アプリケーションへの接続** ページで、**ここを選択して、選択したリモート アプリケーションに接続する** のリンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-265">When you check the connection to the configured application, on the **Connect to remote application** page, select the **Select here to connect to selected remote application** link.</span></span> 
-10. <span data-ttu-id="978a5-266">**接続の確認** を選択し、コンフィギュレーションされたアプリケーションへのアクセスを検証します。</span><span class="sxs-lookup"><span data-stu-id="978a5-266">Select **Check connection** to validate access to the configured application.</span></span>
-11. <span data-ttu-id="978a5-267">**閉じる** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-267">Select **Close**.</span></span>
+1. <span data-ttu-id="a605e-256">**すべてのワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a605e-256">Go to **All workspaces \> Electronic reporting**.</span></span>
+2. <span data-ttu-id="a605e-257">**接続アプリケーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-257">Select **Connected applications**.</span></span>
+3. <span data-ttu-id="a605e-258">コンフィギュレーションされたアプリケーションが Microsoft Azure に基づいており、RCS ユーザーが一般にアクセスできることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="a605e-258">Make sure that the configured application is based on Microsoft Azure, and that it is accessible in general to RCS users.</span></span> <span data-ttu-id="a605e-259">現在の RCS ユーザーは、アプリケーションのメタデータにアクセスする権限を与えるロールで、このアプリケーションのユーザーとして登録されているコンフィギュレーションされたアプリケーションにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a605e-259">The current RCS user must have access to the configured application being registered as a user of this application in a role that gives them privileges to access the application's metadata.</span></span>
+4. <span data-ttu-id="a605e-260">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-260">Select **New**.</span></span>
+5. <span data-ttu-id="a605e-261">**名前** フィールドに、接続されたアプリケーションの名前として **MyConnectedApp** と入力します。</span><span class="sxs-lookup"><span data-stu-id="a605e-261">In the **Name** field, enter **MyConnectedApp** as the name of the connected application.</span></span>
+6. <span data-ttu-id="a605e-262">**アプリケーション** フィールドに、アプリケーションの URL を指定します。</span><span class="sxs-lookup"><span data-stu-id="a605e-262">In the **Application** field, specify the URL of the application.</span></span>
+7. <span data-ttu-id="a605e-263">**テナント** フィールドに、アプリケーションのプロバイダーを指定します。</span><span class="sxs-lookup"><span data-stu-id="a605e-263">In the **Tenant** field, specify the provider of the application.</span></span>
+8. <span data-ttu-id="a605e-264">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-264">Select **Save**.</span></span> 
+9. <span data-ttu-id="a605e-265">コンフィギュレーションされたアプリケーションへの接続を確認するときは、**リモート アプリケーションへの接続** ページで、**ここを選択して、選択したリモート アプリケーションに接続する** のリンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-265">When you check the connection to the configured application, on the **Connect to remote application** page, select the **Select here to connect to selected remote application** link.</span></span> 
+10. <span data-ttu-id="a605e-266">**接続の確認** を選択し、コンフィギュレーションされたアプリケーションへのアクセスを検証します。</span><span class="sxs-lookup"><span data-stu-id="a605e-266">Select **Check connection** to validate access to the configured application.</span></span>
+11. <span data-ttu-id="a605e-267">**閉じる** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-267">Select **Close**.</span></span>
 
-<span data-ttu-id="978a5-268">この手順を完了して接続検証に成功すると、コンフィギュレーションされたアプリケーションのバージョンとテナントの詳細が、現在のグリッドで更新されます。</span><span class="sxs-lookup"><span data-stu-id="978a5-268">After you complete this procedure and validation of the connection succeeds, the version and tenant details for the configured application will be updated in the current grid.</span></span>
+<span data-ttu-id="a605e-268">この手順を完了して接続検証に成功すると、コンフィギュレーションされたアプリケーションのバージョンとテナントの詳細が、現在のグリッドで更新されます。</span><span class="sxs-lookup"><span data-stu-id="a605e-268">After you complete this procedure and validation of the connection succeeds, the version and tenant details for the configured application will be updated in the current grid.</span></span>
 
-### <a name="review-the-existing-model-mapping-configuration"></a><span data-ttu-id="978a5-269">既存のモデル マッピング コンフィギュレーションを確認する</span><span class="sxs-lookup"><span data-stu-id="978a5-269">Review the existing model mapping configuration</span></span>
+### <a name="review-the-existing-model-mapping-configuration"></a><span data-ttu-id="a605e-269">既存のモデル マッピング コンフィギュレーションを確認する</span><span class="sxs-lookup"><span data-stu-id="a605e-269">Review the existing model mapping configuration</span></span>
 
-1. <span data-ttu-id="978a5-270">**すべてのワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="978a5-270">Go to **All workspaces \> Electronic reporting**.</span></span>
-2. <span data-ttu-id="978a5-271">**コンフィギュレーションをレポートする** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-271">Select **Reporting configurations**.</span></span>
-3. <span data-ttu-id="978a5-272">ツリーで、**対外貿易モデル \> 対外貿易マッピング** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-272">In the tree, select **Foreign trade model \> Foreign trade mapping**.</span></span>
-4. <span data-ttu-id="978a5-273">**必要条件** のクイック タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-273">Select the **Prerequisites** FasTab.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="978a5-274">現在、このマッピングはメタデータのコンフィギュレーションを参照しています。</span><span class="sxs-lookup"><span data-stu-id="978a5-274">Currently, this mapping refers to the metadata configuration.</span></span> <span data-ttu-id="978a5-275">このコンフィギュレーションのアプリケーション メタデータは、このモデル マッピングをデザインするときに提供されます。</span><span class="sxs-lookup"><span data-stu-id="978a5-275">Application metadata from this configuration will be offered while this model mapping is designed.</span></span>
-
-4. <span data-ttu-id="978a5-276">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="978a5-276">Select **Designer**.</span></span>
-5. <span data-ttu-id="978a5-277">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="978a5-277">Select **Designer**.</span></span>
-6. <span data-ttu-id="978a5-278">ツリーで、**Dynamics 365 for Operations \> テーブル レコード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-278">In the tree, select **Dynamics 365 for Operations \> Table records**.</span></span>
-7. <span data-ttu-id="978a5-279">**ルートの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-279">Select **Add root**.</span></span>
-8. <span data-ttu-id="978a5-280">**テーブル** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-280">In the **Table** field, enter or select a value.</span></span>
+1. <span data-ttu-id="a605e-270">**すべてのワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a605e-270">Go to **All workspaces \> Electronic reporting**.</span></span>
+2. <span data-ttu-id="a605e-271">**コンフィギュレーションをレポートする** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-271">Select **Reporting configurations**.</span></span>
+3. <span data-ttu-id="a605e-272">ツリーで、**対外貿易モデル \> 対外貿易マッピング** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-272">In the tree, select **Foreign trade model \> Foreign trade mapping**.</span></span>
+4. <span data-ttu-id="a605e-273">**必要条件** のクイック タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-273">Select the **Prerequisites** FasTab.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="978a5-281">現在、このマッピングはメタデータのコンフィギュレーションを参照しています。</span><span class="sxs-lookup"><span data-stu-id="978a5-281">Currently, this mapping refers to the metadata configuration.</span></span> <span data-ttu-id="978a5-282">このコンフィギュレーションのアプリケーション メタデータは、このモデル マッピングをデザインするときに提供されます。</span><span class="sxs-lookup"><span data-stu-id="978a5-282">Application metadata from this configuration will be offered while this model mapping is designed.</span></span>
+    > <span data-ttu-id="a605e-274">現在、このマッピングはメタデータのコンフィギュレーションを参照しています。</span><span class="sxs-lookup"><span data-stu-id="a605e-274">Currently, this mapping refers to the metadata configuration.</span></span> <span data-ttu-id="a605e-275">このコンフィギュレーションのアプリケーション メタデータは、このモデル マッピングをデザインするときに提供されます。</span><span class="sxs-lookup"><span data-stu-id="a605e-275">Application metadata from this configuration will be offered while this model mapping is designed.</span></span>
 
-9. <span data-ttu-id="978a5-283">**キャンセル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-283">Select **Cancel**.</span></span>
-
-### <a name="assign-the-connected-application-to-a-model-mapping"></a><span data-ttu-id="978a5-284">接続されたアプリケーションをモデル マッピングに割り当てる</span><span class="sxs-lookup"><span data-stu-id="978a5-284">Assign the connected application to a model mapping</span></span>
-
-1. <span data-ttu-id="978a5-285">**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-285">Select **Edit**.</span></span>
-2. <span data-ttu-id="978a5-286">**接続されたアプリケーション フィールド** で、**MyConnectedApp** アプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-286">In the **Connected application field**, select the **MyConnectedApp** application.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="978a5-287">このマッピングは、選択した接続アプリケーションのメタデータを参照します。</span><span class="sxs-lookup"><span data-stu-id="978a5-287">This mapping refers to the metadata of the selected connected application.</span></span> <span data-ttu-id="978a5-288">マッピングがメタデータ コンフィギュレーションと接続されたアプリケーションを同時に参照する場合、接続されたアプリケーションのメタデータが使用されます。</span><span class="sxs-lookup"><span data-stu-id="978a5-288">If a mapping refers to the metadata configuration and the connected application at the same time, the metadata of the connected application will be used.</span></span>
-
-3. <span data-ttu-id="978a5-289">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="978a5-289">Select **Designer**.</span></span>
-4. <span data-ttu-id="978a5-290">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="978a5-290">Select **Designer**.</span></span>
-5. <span data-ttu-id="978a5-291">ツリーで、**Dynamics 365 for Operations \> テーブル レコード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-291">In the tree, select **Dynamics 365 for Operations \> Table records**.</span></span>
-6. <span data-ttu-id="978a5-292">**ルートの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-292">Select **Add root**.</span></span>
-7. <span data-ttu-id="978a5-293">**テーブル** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-293">In the **Table** field, enter or select a value.</span></span>
+4. <span data-ttu-id="a605e-276">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a605e-276">Select **Designer**.</span></span>
+5. <span data-ttu-id="a605e-277">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a605e-277">Select **Designer**.</span></span>
+6. <span data-ttu-id="a605e-278">ツリーで、**Dynamics 365 for Operations \> テーブル レコード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-278">In the tree, select **Dynamics 365 for Operations \> Table records**.</span></span>
+7. <span data-ttu-id="a605e-279">**ルートの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-279">Select **Add root**.</span></span>
+8. <span data-ttu-id="a605e-280">**テーブル** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-280">In the **Table** field, enter or select a value.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="978a5-294">この時点で、マッピングは、割り当てられた接続アプリケーションのすべてのメタデータを使用するため、2 つ以上のアプリケーション テーブルが提供されました。</span><span class="sxs-lookup"><span data-stu-id="978a5-294">At this point, more than two application tables are offered, because this mapping uses all the metadata of the connected application that has been assigned to it.</span></span>
+    > <span data-ttu-id="a605e-281">現在、このマッピングはメタデータのコンフィギュレーションを参照しています。</span><span class="sxs-lookup"><span data-stu-id="a605e-281">Currently, this mapping refers to the metadata configuration.</span></span> <span data-ttu-id="a605e-282">このコンフィギュレーションのアプリケーション メタデータは、このモデル マッピングをデザインするときに提供されます。</span><span class="sxs-lookup"><span data-stu-id="a605e-282">Application metadata from this configuration will be offered while this model mapping is designed.</span></span>
 
-8. <span data-ttu-id="978a5-295">**キャンセル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-295">Select **Cancel**.</span></span>
-9. <span data-ttu-id="978a5-296">**検証** を選択します。</span><span class="sxs-lookup"><span data-stu-id="978a5-296">Select **Validate**.</span></span>
+9. <span data-ttu-id="a605e-283">**キャンセル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-283">Select **Cancel**.</span></span>
 
-<span data-ttu-id="978a5-297">これで、このマッピングに割り当てられた接続アプリケーションのメタデータの詳細を使用して、説明されているデータ ソース項目にデータ モデルの要素が正常にバインドされました。</span><span class="sxs-lookup"><span data-stu-id="978a5-297">You've now bound elements of the data model to items of the data sources that are described by using details of the metadata of the connected application that has been assigned to this mapping.</span></span>
+### <a name="assign-the-connected-application-to-a-model-mapping"></a><span data-ttu-id="a605e-284">接続されたアプリケーションをモデル マッピングに割り当てる</span><span class="sxs-lookup"><span data-stu-id="a605e-284">Assign the connected application to a model mapping</span></span>
 
-<span data-ttu-id="978a5-298">異なるバージョンのアプリケーションのメタデータを使用してこのモデル マッピングを評価する必要がある場合は、接続されている別のアプリケーションを登録しモデル マッピングに割り当て、新しいメタデータに対してそれを検証します。</span><span class="sxs-lookup"><span data-stu-id="978a5-298">When you must evaluate this model mapping by using the metadata of a different version of the application, register another connected application, assign it to this model mapping, and validate it against the new metadata.</span></span>
+1. <span data-ttu-id="a605e-285">**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-285">Select **Edit**.</span></span>
+2. <span data-ttu-id="a605e-286">**接続されたアプリケーション フィールド** で、**MyConnectedApp** アプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-286">In the **Connected application field**, select the **MyConnectedApp** application.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="978a5-299">追加リソース</span><span class="sxs-lookup"><span data-stu-id="978a5-299">Additional resources</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="a605e-287">このマッピングは、選択した接続アプリケーションのメタデータを参照します。</span><span class="sxs-lookup"><span data-stu-id="a605e-287">This mapping refers to the metadata of the selected connected application.</span></span> <span data-ttu-id="a605e-288">マッピングがメタデータ コンフィギュレーションと接続されたアプリケーションを同時に参照する場合、接続されたアプリケーションのメタデータが使用されます。</span><span class="sxs-lookup"><span data-stu-id="a605e-288">If a mapping refers to the metadata configuration and the connected application at the same time, the metadata of the connected application will be used.</span></span>
 
-<span data-ttu-id="978a5-300">または、アプリケーションの **RCS で使用できるアプリケーション メタデータを準備する** タスク ガイド、**ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする** および RCS の **接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする** タスク ガイドを再生することができます。</span><span class="sxs-lookup"><span data-stu-id="978a5-300">Alternatively, you can play the **Prepare application metadata that can be used in RCS** task guide in the application as as well as the **Access application metadata by using an ER configuration** and **Access application metadata by using connected applications** task guides in RCS.</span></span> <span data-ttu-id="978a5-301">これらのタスク ガイドは、[Dynamics 365 for Finance and Operations 8.1 電子レポート タスク ガイド](https://go.microsoft.com/fwlink/?linkid=2082739)のページからダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="978a5-301">These task guides can be downloaded from the [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page.</span></span>
+3. <span data-ttu-id="a605e-289">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a605e-289">Select **Designer**.</span></span>
+4. <span data-ttu-id="a605e-290">**デザイナー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a605e-290">Select **Designer**.</span></span>
+5. <span data-ttu-id="a605e-291">ツリーで、**Dynamics 365 for Operations \> テーブル レコード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-291">In the tree, select **Dynamics 365 for Operations \> Table records**.</span></span>
+6. <span data-ttu-id="a605e-292">**ルートの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-292">Select **Add root**.</span></span>
+7. <span data-ttu-id="a605e-293">**テーブル** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-293">In the **Table** field, enter or select a value.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="a605e-294">この時点で、マッピングは、割り当てられた接続アプリケーションのすべてのメタデータを使用するため、2 つ以上のアプリケーション テーブルが提供されました。</span><span class="sxs-lookup"><span data-stu-id="a605e-294">At this point, more than two application tables are offered, because this mapping uses all the metadata of the connected application that has been assigned to it.</span></span>
+
+8. <span data-ttu-id="a605e-295">**キャンセル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-295">Select **Cancel**.</span></span>
+9. <span data-ttu-id="a605e-296">**検証** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a605e-296">Select **Validate**.</span></span>
+
+<span data-ttu-id="a605e-297">これで、このマッピングに割り当てられた接続アプリケーションのメタデータの詳細を使用して、説明されているデータ ソース項目にデータ モデルの要素が正常にバインドされました。</span><span class="sxs-lookup"><span data-stu-id="a605e-297">You've now bound elements of the data model to items of the data sources that are described by using details of the metadata of the connected application that has been assigned to this mapping.</span></span>
+
+<span data-ttu-id="a605e-298">異なるバージョンのアプリケーションのメタデータを使用してこのモデル マッピングを評価する必要がある場合は、接続されている別のアプリケーションを登録しモデル マッピングに割り当て、新しいメタデータに対してそれを検証します。</span><span class="sxs-lookup"><span data-stu-id="a605e-298">When you must evaluate this model mapping by using the metadata of a different version of the application, register another connected application, assign it to this model mapping, and validate it against the new metadata.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="a605e-299">追加リソース</span><span class="sxs-lookup"><span data-stu-id="a605e-299">Additional resources</span></span>
+
+<span data-ttu-id="a605e-300">または、アプリケーションの **RCS で使用できるアプリケーション メタデータを準備する** タスク ガイド、**ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする** および RCS の **接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする** タスク ガイドを再生することができます。</span><span class="sxs-lookup"><span data-stu-id="a605e-300">Alternatively, you can play the **Prepare application metadata that can be used in RCS** task guide in the application as as well as the **Access application metadata by using an ER configuration** and **Access application metadata by using connected applications** task guides in RCS.</span></span> <span data-ttu-id="a605e-301">これらのタスク ガイドは、[Dynamics 365 for Finance and Operations 8.1 電子レポート タスク ガイド](https://go.microsoft.com/fwlink/?linkid=2082739)のページからダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="a605e-301">These task guides can be downloaded from the [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page.</span></span>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
