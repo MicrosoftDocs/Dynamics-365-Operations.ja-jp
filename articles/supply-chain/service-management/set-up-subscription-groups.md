@@ -17,34 +17,37 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd9f6dfdf17ffd506fff21763388ee0ca7526681
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fbc991c22271ccc3d9c50ade635a80c635b35f73
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991593"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470885"
 ---
-# <a name="set-up-subscription-groups"></a><span data-ttu-id="27545-103">定期売買グループを設定します</span><span class="sxs-lookup"><span data-stu-id="27545-103">Set up subscription groups</span></span> 
+# <a name="set-up-subscription-groups"></a><span data-ttu-id="32232-103">定期売買グループを設定します</span><span class="sxs-lookup"><span data-stu-id="32232-103">Set up subscription groups</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="27545-104">**サービス管理** \> **設定** \> **サービスの定期売買** \> **定期売買グループ** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="27545-104">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.</span></span>
+1.  <span data-ttu-id="32232-104">**サービス管理** \> **設定** \> **サービスの定期売買** \> **定期売買グループ** に移動します。</span><span class="sxs-lookup"><span data-stu-id="32232-104">Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.</span></span>
 
-2.  <span data-ttu-id="27545-105">Ctrl + N キーを押すか、**新規** をクリックして、新しい定期売買グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="27545-105">Press Ctrl+N or click **New** to create a new subscription group.</span></span>
+2.  <span data-ttu-id="32232-105">**新規作成** を選択して、新しい定期売買グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="32232-105">Select **New** to create a new subscription group.</span></span>
 
-3.  <span data-ttu-id="27545-106">**定期売買グループ** フィールドに、新しい定期売買グループの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="27545-106">In the **Subscription group** field, enter a name for the new subscription group.</span></span>
+3.  <span data-ttu-id="32232-106">**定期売買グループ** フィールドに、新しい定期売買グループの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="32232-106">In the **Subscription group** field, enter a name for the new subscription group.</span></span>
 
-4.  <span data-ttu-id="27545-107">**請求** フィールドで、定期売買の請求頻度を選択します。</span><span class="sxs-lookup"><span data-stu-id="27545-107">In the **Invoicing** field, select an invoicing frequency for the subscription.</span></span> <span data-ttu-id="27545-108">請求頻度は、**期間タイプ** フォームで設定する期間コードによって示されます。</span><span class="sxs-lookup"><span data-stu-id="27545-108">The invoicing frequency is indicated by a period code that is set up in the **Period types** form.</span></span>
+4.  <span data-ttu-id="32232-107">**請求** フィールドで、定期売買の請求頻度を選択します。</span><span class="sxs-lookup"><span data-stu-id="32232-107">In the **Invoicing** field, select an invoicing frequency for the subscription.</span></span> <span data-ttu-id="32232-108">請求頻度は、**期間タイプ** フォームで設定する期間コードによって示されます。</span><span class="sxs-lookup"><span data-stu-id="32232-108">The invoicing frequency is indicated by a period code that is set up in the **Period types** form.</span></span>
 
-5.  <span data-ttu-id="27545-109">定期売買トランザクションの収益を見越計上するには、**未収収益** チェックボックスをオンにし、**見越計上** フィールドで、頻度を選択します。</span><span class="sxs-lookup"><span data-stu-id="27545-109">To accrue revenue for subscription transactions, select the **Accrue revenue** check box, and then in the **Accrual** field, select a frequency.</span></span> <span data-ttu-id="27545-110">見越計上の頻度は **期間** フォームで設定する期間コードに基づいています。</span><span class="sxs-lookup"><span data-stu-id="27545-110">The accrual frequency is based on a period code that is set up in the **Periods** form.</span></span>
+5.  <span data-ttu-id="32232-109">定期売買トランザクションの収益を見越計上するには、**未収収益** チェックボックスをオンにし、**見越計上** フィールドで、頻度を選択します。</span><span class="sxs-lookup"><span data-stu-id="32232-109">To accrue revenue for subscription transactions, select the **Accrue revenue** check box, and then in the **Accrual** field, select a frequency.</span></span> <span data-ttu-id="32232-110">見越計上の頻度は **期間** フォームで設定する期間コードに基づいています。</span><span class="sxs-lookup"><span data-stu-id="32232-110">The accrual frequency is based on a period code that is set up in the **Periods** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="27545-111">参照</span><span class="sxs-lookup"><span data-stu-id="27545-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="32232-111">参照</span><span class="sxs-lookup"><span data-stu-id="32232-111">See also</span></span>
 
-<span data-ttu-id="27545-112">[定期売買グループ (フォーム)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="27545-112">[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span></span>
+<span data-ttu-id="32232-112">[定期売買グループ (フォーム)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="32232-112">[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span></span>
 
-[<span data-ttu-id="27545-113">定期売買グループ</span><span class="sxs-lookup"><span data-stu-id="27545-113">Subscription groups</span></span>](subscription-groups.md)
+[<span data-ttu-id="32232-113">定期売買グループ</span><span class="sxs-lookup"><span data-stu-id="32232-113">Subscription groups</span></span>](subscription-groups.md)
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

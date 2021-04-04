@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,41 +16,44 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ccb52d7d88f292720360ae913ead5be239165193
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f6c2777065656affc992a427194286008c1df42f
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687673"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559203"
 ---
-# <a name="emptylist-er-function"></a><span data-ttu-id="81d5b-103">EMPTYLIST ER 関数</span><span class="sxs-lookup"><span data-stu-id="81d5b-103">EMPTYLIST ER function</span></span>
+# <a name="emptylist-er-function"></a><span data-ttu-id="34854-103">EMPTYLIST ER 関数</span><span class="sxs-lookup"><span data-stu-id="34854-103">EMPTYLIST ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="81d5b-104">`EMPTYLIST` 関数は、指定されたリストをリスト構造のソースとして使用し、空の *レコード リスト* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="81d5b-104">The `EMPTYLIST` function returns an empty *Record list* value by using the specified list as a source for the list structure.</span></span>
+<span data-ttu-id="34854-104">`EMPTYLIST` 関数は、指定されたリストをリスト構造のソースとして使用し、空の *レコード リスト* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="34854-104">The `EMPTYLIST` function returns an empty *Record list* value by using the specified list as a source for the list structure.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="81d5b-105">構文</span><span class="sxs-lookup"><span data-stu-id="81d5b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="34854-105">構文</span><span class="sxs-lookup"><span data-stu-id="34854-105">Syntax</span></span>
 
 ```vb
 EMPTYLIST (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="81d5b-106">引数</span><span class="sxs-lookup"><span data-stu-id="81d5b-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="34854-106">引数</span><span class="sxs-lookup"><span data-stu-id="34854-106">Arguments</span></span>
 
-<span data-ttu-id="81d5b-107">`list`: *レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="81d5b-107">`list`: *Record list*</span></span>
+<span data-ttu-id="34854-107">`list`: *レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="34854-107">`list`: *Record list*</span></span>
 
-<span data-ttu-id="81d5b-108">*レコード リスト* データ型のデータ ソースの項目の有効なパス。</span><span class="sxs-lookup"><span data-stu-id="81d5b-108">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="34854-108">*レコード リスト* データ型のデータ ソースの項目の有効なパス。</span><span class="sxs-lookup"><span data-stu-id="34854-108">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="81d5b-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="81d5b-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="34854-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="34854-109">Return values</span></span>
 
-<span data-ttu-id="81d5b-110">*レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="81d5b-110">*Record list*</span></span>
+<span data-ttu-id="34854-110">*レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="34854-110">*Record list*</span></span>
 
-<span data-ttu-id="81d5b-111">レコードの結果リスト。</span><span class="sxs-lookup"><span data-stu-id="81d5b-111">The resulting list of records.</span></span>
+<span data-ttu-id="34854-111">レコードの結果リスト。</span><span class="sxs-lookup"><span data-stu-id="34854-111">The resulting list of records.</span></span>
 
-## <a name="example"></a><span data-ttu-id="81d5b-112">例</span><span class="sxs-lookup"><span data-stu-id="81d5b-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="34854-112">例</span><span class="sxs-lookup"><span data-stu-id="34854-112">Example</span></span>
 
-<span data-ttu-id="81d5b-113">`EMPTYLIST (SPLIT ("abc", 1))` は、使用する `SPLIT` 関数によって返されるリストと同じ構造を持つ新しい空のリストを返します。</span><span class="sxs-lookup"><span data-stu-id="81d5b-113">`EMPTYLIST (SPLIT ("abc", 1))` returns a new empty list that has the same structure as the list that is returned by the `SPLIT` function that is used.</span></span>
+<span data-ttu-id="34854-113">`EMPTYLIST (SPLIT ("abc", 1))` は、使用する `SPLIT` 関数によって返されるリストと同じ構造を持つ新しい空のリストを返します。</span><span class="sxs-lookup"><span data-stu-id="34854-113">`EMPTYLIST (SPLIT ("abc", 1))` returns a new empty list that has the same structure as the list that is returned by the `SPLIT` function that is used.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="81d5b-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="81d5b-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="34854-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="34854-114">Additional resources</span></span>
 
-[<span data-ttu-id="81d5b-115">リスト機能</span><span class="sxs-lookup"><span data-stu-id="81d5b-115">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="34854-115">リスト機能</span><span class="sxs-lookup"><span data-stu-id="34854-115">List functions</span></span>](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 法人の作成
+title: 法人を作成します
 description: このトピックでは、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。
 author: samjarawan
 manager: annbe
@@ -16,72 +16,72 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9491feb004366a02155225bfb323773e130f3dc9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 016b67631a53139d12d65dfaf594f49b030326b1
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993606"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478215"
 ---
-# <a name="create-legal-entities"></a><span data-ttu-id="bfef6-103">法人の作成</span><span class="sxs-lookup"><span data-stu-id="bfef6-103">Create legal entities</span></span>
-
+# <a name="create-legal-entities"></a><span data-ttu-id="2e1f3-103">法人を作成します</span><span class="sxs-lookup"><span data-stu-id="2e1f3-103">Create legal entities</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="bfef6-104">このトピックでは、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="bfef6-104">This topic describes how to create legal entities in Microsoft Dynamics 365 Commerce, which must be created and configured before creating channels.</span></span>
+<span data-ttu-id="2e1f3-104">このトピックでは、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-104">This topic describes how to create legal entities in Microsoft Dynamics 365 Commerce, which must be created and configured before creating channels.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="bfef6-105">概要</span><span class="sxs-lookup"><span data-stu-id="bfef6-105">Overview</span></span>
+<span data-ttu-id="2e1f3-105">法人とは、登記または法的手続きを済ませた法律上の構造を持つ組織です。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-105">A legal entity is an organization that has a registered or legislated legal structure.</span></span> <span data-ttu-id="2e1f3-106">法人には、法的契約の締結が認められており、業績を報告する収支報告書の作成が義務付けられています。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-106">Legal entities can enter into legal contracts and are required to prepare statements that report on their performance.</span></span>
 
-<span data-ttu-id="bfef6-106">法人とは、登記または法的手続きを済ませた法律上の構造を持つ組織です。</span><span class="sxs-lookup"><span data-stu-id="bfef6-106">A legal entity is an organization that has a registered or legislated legal structure.</span></span> <span data-ttu-id="bfef6-107">法人には、法的契約の締結が認められており、業績を報告する収支報告書の作成が義務付けられています。</span><span class="sxs-lookup"><span data-stu-id="bfef6-107">Legal entities can enter into legal contracts and are required to prepare statements that report on their performance.</span></span>
+<span data-ttu-id="2e1f3-107">会社とは、法人の 1 つのタイプです。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-107">A company is a type of legal entity.</span></span> <span data-ttu-id="2e1f3-108">現在、会社はユーザーが作成できる唯一の法人であり、個々の法人は会社 ID と関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-108">Currently, companies are the only kind of legal entity that you can create, and every legal entity is associated with a company ID.</span></span> <span data-ttu-id="2e1f3-109">この関連付けは、プログラム内の一部の機能エリアで法人 ID (データモデルでは *DataAreaId*) が使用されているために設けられています。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-109">This association exists because some functional areas in the program use a company ID, or *DataAreaId*, in their data models.</span></span> <span data-ttu-id="2e1f3-110">これらの機能エリアでは、データのセキュリティ区分として法人が使用されています。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-110">In these functional areas, companies are used as a boundary for data security.</span></span> <span data-ttu-id="2e1f3-111">ユーザーは、現在ログオン中の会社のデータにのみアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-111">Users can access data only for the company that they are currently logged on to.</span></span> 
 
-<span data-ttu-id="bfef6-108">会社とは、法人の 1 つのタイプです。</span><span class="sxs-lookup"><span data-stu-id="bfef6-108">A company is a type of legal entity.</span></span> <span data-ttu-id="bfef6-109">現在、会社はユーザーが作成できる唯一の法人であり、個々の法人は会社 ID と関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="bfef6-109">Currently, companies are the only kind of legal entity that you can create, and every legal entity is associated with a company ID.</span></span> <span data-ttu-id="bfef6-110">この関連付けは、プログラム内の一部の機能エリアで法人 ID (データモデルでは *DataAreaId*) が使用されているために設けられています。</span><span class="sxs-lookup"><span data-stu-id="bfef6-110">This association exists because some functional areas in the program use a company ID, or *DataAreaId*, in their data models.</span></span> <span data-ttu-id="bfef6-111">これらの機能エリアでは、データのセキュリティ区分として法人が使用されています。</span><span class="sxs-lookup"><span data-stu-id="bfef6-111">In these functional areas, companies are used as a boundary for data security.</span></span> <span data-ttu-id="bfef6-112">ユーザーは、現在ログオン中の会社のデータにのみアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="bfef6-112">Users can access data only for the company that they are currently logged on to.</span></span> 
+<span data-ttu-id="2e1f3-112">チャネルを作成するときは、チャネルが属している法人を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-112">When creating a channel, you must specify which legal entity that channel belongs to.</span></span>
 
-<span data-ttu-id="bfef6-113">チャネルを作成するときは、チャネルが属している法人を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bfef6-113">When creating a channel, you must specify which legal entity that channel belongs to.</span></span>
+## <a name="create-a-new-legal-entity"></a><span data-ttu-id="2e1f3-113">新しい法人の作成</span><span class="sxs-lookup"><span data-stu-id="2e1f3-113">Create a new legal entity</span></span>
 
-## <a name="create-a-new-legal-entity"></a><span data-ttu-id="bfef6-114">新しい法人の作成</span><span class="sxs-lookup"><span data-stu-id="bfef6-114">Create a new legal entity</span></span>
+<span data-ttu-id="2e1f3-114">Dynamics 365 Commerce に新しい法人を作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-114">To create a new legal entity in Dynamics 365 Commerce, follow these steps.</span></span>
 
-<span data-ttu-id="bfef6-115">Dynamics 365 Commerce に新しい法人を作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-115">To create a new legal entity in Dynamics 365 Commerce, follow these steps.</span></span>
-
-1. <span data-ttu-id="bfef6-116">ナビゲーション ウィンドウで、**モジュール \> 本社の設定 \> 法人** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-116">In the navigation pane, go to  **Modules \> Headquarters setup \> Legal entities**.</span></span>
-1. <span data-ttu-id="bfef6-117">アクション ウィンドウで、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-117">On the action pane, select **New**.</span></span> <span data-ttu-id="bfef6-118">**新しい法人** ウィンドウが右側に表示されます。</span><span class="sxs-lookup"><span data-stu-id="bfef6-118">The **New legal entity** pane appears on the right.</span></span>
-1. <span data-ttu-id="bfef6-119">**名前** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-119">In the **Name** field, enter a value.</span></span>
-1. <span data-ttu-id="bfef6-120">**会社** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-120">In the **Company** field, enter a value.</span></span>
-1. <span data-ttu-id="bfef6-121">**国/地域** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-121">In the **Country/region** field, enter or select a value.</span></span>
-1. <span data-ttu-id="bfef6-122">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-122">Select **OK**.</span></span> 
+1. <span data-ttu-id="2e1f3-115">ナビゲーション ウィンドウで、**モジュール \> 本社の設定 \> 法人** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-115">In the navigation pane, go to  **Modules \> Headquarters setup \> Legal entities**.</span></span>
+1. <span data-ttu-id="2e1f3-116">アクション ウィンドウで、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-116">On the action pane, select **New**.</span></span> <span data-ttu-id="2e1f3-117">**新しい法人** ウィンドウが右側に表示されます。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-117">The **New legal entity** pane appears on the right.</span></span>
+1. <span data-ttu-id="2e1f3-118">**名前** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-118">In the **Name** field, enter a value.</span></span>
+1. <span data-ttu-id="2e1f3-119">**会社** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-119">In the **Company** field, enter a value.</span></span>
+1. <span data-ttu-id="2e1f3-120">**国/地域** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-120">In the **Country/region** field, enter or select a value.</span></span>
+1. <span data-ttu-id="2e1f3-121">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-121">Select **OK**.</span></span> 
 
    ![法人の作成](media/legal-entities.png)
 
-1. <span data-ttu-id="bfef6-124">**一般** セクションで、法人に関する次の一般情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-124">In the **General** section, provide the following general information about the legal entity:</span></span> 
-   1. <span data-ttu-id="bfef6-125">検索名が必要な場合、検索名を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-125">Enter a search name, if a search name is required.</span></span> <span data-ttu-id="bfef6-126">検索名は、この法人を検索するために使用できる代替名です。</span><span class="sxs-lookup"><span data-stu-id="bfef6-126">A search name is an alternate name that can be used to search for this legal entity.</span></span> 
-   1. <span data-ttu-id="bfef6-127">この法人が連結会社として使用されているかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-127">Select whether this legal entity is being used as a consolidation company.</span></span>
-   1. <span data-ttu-id="bfef6-128">この法人が削除会社として使用されているかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-128">Select whether this legal entity is being used as an elimination company.</span></span> 
-   1. <span data-ttu-id="bfef6-129">エンティティの **既定の言語** を選択します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-129">Select the **default language** for the entity.</span></span> 
-   1. <span data-ttu-id="bfef6-130">エンティティの **タイム ゾーン** を選択します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-130">Select the **time zone** for the entity.</span></span>
-1. <span data-ttu-id="bfef6-131">**住所** セクションで、**編集** を選択して、番地、郵便番号、市区町村名などの住所情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-131">In the **Addresses** section, select **Edit** to enter address information, such as the street name and number, postal code, and city.</span></span>
-1. <span data-ttu-id="bfef6-132">**連絡先情報** セクションで、電子メール アドレス、URL と電話番号など通信方法に関する情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-132">In the **Contact information** section, enter information about methods of communication, such as email addresses, URLs, and telephone numbers.</span></span>
-1. <span data-ttu-id="bfef6-133">**法定レポート** セクションで、法定レポートに使用される登録番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-133">In the **Statutory reporting** section, enter the registration numbers that are used for statutory reporting.</span></span>
-1. <span data-ttu-id="bfef6-134">**登録番号** セクションで、法人に必要な情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-134">In the **Registration numbers** section, enter any information required by the legal entity.</span></span>
-1. <span data-ttu-id="bfef6-135">**銀行口座情報** セクションで、法人の銀行口座と処理番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-135">In the **Bank account information** section, enter bank accounts and routing numbers for the legal entity.</span></span>
-1. <span data-ttu-id="bfef6-136">**対外貿易およびロジスティクス** セクションで、法人の出荷情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-136">In the **Foreign trade and logistics** section, enter shipping information for the legal entity.</span></span>
-1. <span data-ttu-id="bfef6-137">**番号順序** セクションで、法人に関連付けられている番号順序を表示できます。</span><span class="sxs-lookup"><span data-stu-id="bfef6-137">In the **Number sequences** section, you can view the number sequences that are associated with the legal entity.</span></span> <span data-ttu-id="bfef6-138">開始時は空になります。</span><span class="sxs-lookup"><span data-stu-id="bfef6-138">This will be empty to start with.</span></span>
-1. <span data-ttu-id="bfef6-139">**ダッシュボードの画像** セクションで、法人に関連するロゴまたはダッシュボードの画像を表示または変更します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-139">In the **Dashboard image** section, view or change the logo and dashboard image associated with the legal entity.</span></span>
-1. <span data-ttu-id="bfef6-140">**税登録** セクションで、税務当局に報告するために使用される登録番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-140">In the **Tax registration** section, enter the registration numbers that are used to report to tax authorities.</span></span>
-1. <span data-ttu-id="bfef6-141">**税金 1099** セクションで、法人の 1099 情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-141">In the **Tax 1099** section, enter 1099 information for the legal entity.</span></span>
-1. <span data-ttu-id="bfef6-142">**税情報** セクションで、法人の税情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-142">In the **Tax invormation** section, enter tax information for the legal entity.</span></span>
-1. <span data-ttu-id="bfef6-143">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="bfef6-143">Select **Save**.</span></span>
+1. <span data-ttu-id="2e1f3-123">**一般** セクションで、法人に関する次の一般情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-123">In the **General** section, provide the following general information about the legal entity:</span></span> 
+   1. <span data-ttu-id="2e1f3-124">検索名が必要な場合、検索名を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-124">Enter a search name, if a search name is required.</span></span> <span data-ttu-id="2e1f3-125">検索名は、この法人を検索するために使用できる代替名です。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-125">A search name is an alternate name that can be used to search for this legal entity.</span></span> 
+   1. <span data-ttu-id="2e1f3-126">この法人が連結会社として使用されているかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-126">Select whether this legal entity is being used as a consolidation company.</span></span>
+   1. <span data-ttu-id="2e1f3-127">この法人が削除会社として使用されているかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-127">Select whether this legal entity is being used as an elimination company.</span></span> 
+   1. <span data-ttu-id="2e1f3-128">エンティティの **既定の言語** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-128">Select the **default language** for the entity.</span></span> 
+   1. <span data-ttu-id="2e1f3-129">エンティティの **タイム ゾーン** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-129">Select the **time zone** for the entity.</span></span>
+1. <span data-ttu-id="2e1f3-130">**住所** セクションで、**編集** を選択して、番地、郵便番号、市区町村名などの住所情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-130">In the **Addresses** section, select **Edit** to enter address information, such as the street name and number, postal code, and city.</span></span>
+1. <span data-ttu-id="2e1f3-131">**連絡先情報** セクションで、電子メール アドレス、URL と電話番号など通信方法に関する情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-131">In the **Contact information** section, enter information about methods of communication, such as email addresses, URLs, and telephone numbers.</span></span>
+1. <span data-ttu-id="2e1f3-132">**法定レポート** セクションで、法定レポートに使用される登録番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-132">In the **Statutory reporting** section, enter the registration numbers that are used for statutory reporting.</span></span>
+1. <span data-ttu-id="2e1f3-133">**登録番号** セクションで、法人に必要な情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-133">In the **Registration numbers** section, enter any information required by the legal entity.</span></span>
+1. <span data-ttu-id="2e1f3-134">**銀行口座情報** セクションで、法人の銀行口座と処理番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-134">In the **Bank account information** section, enter bank accounts and routing numbers for the legal entity.</span></span>
+1. <span data-ttu-id="2e1f3-135">**対外貿易およびロジスティクス** セクションで、法人の出荷情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-135">In the **Foreign trade and logistics** section, enter shipping information for the legal entity.</span></span>
+1. <span data-ttu-id="2e1f3-136">**番号順序** セクションで、法人に関連付けられている番号順序を表示できます。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-136">In the **Number sequences** section, you can view the number sequences that are associated with the legal entity.</span></span> <span data-ttu-id="2e1f3-137">開始時は空になります。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-137">This will be empty to start with.</span></span>
+1. <span data-ttu-id="2e1f3-138">**ダッシュボードの画像** セクションで、法人に関連するロゴまたはダッシュボードの画像を表示または変更します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-138">In the **Dashboard image** section, view or change the logo and dashboard image associated with the legal entity.</span></span>
+1. <span data-ttu-id="2e1f3-139">**税登録** セクションで、税務当局に報告するために使用される登録番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-139">In the **Tax registration** section, enter the registration numbers that are used to report to tax authorities.</span></span>
+1. <span data-ttu-id="2e1f3-140">**税金 1099** セクションで、法人の 1099 情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-140">In the **Tax 1099** section, enter 1099 information for the legal entity.</span></span>
+1. <span data-ttu-id="2e1f3-141">**税情報** セクションで、法人の税情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-141">In the **Tax invormation** section, enter tax information for the legal entity.</span></span>
+1. <span data-ttu-id="2e1f3-142">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-142">Select **Save**.</span></span>
 
-<span data-ttu-id="bfef6-144">次の図は、法人の例の詳細を示しています。</span><span class="sxs-lookup"><span data-stu-id="bfef6-144">The following image shows details of an example legal entity.</span></span>
+<span data-ttu-id="2e1f3-143">次の図は、法人の例の詳細を示しています。</span><span class="sxs-lookup"><span data-stu-id="2e1f3-143">The following image shows details of an example legal entity.</span></span>
 
 ![法人の一般セクション](media/legal-entities-general.png)
    
-## <a name="additional-resources"></a><span data-ttu-id="bfef6-146">追加リソース</span><span class="sxs-lookup"><span data-stu-id="bfef6-146">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="2e1f3-145">追加リソース</span><span class="sxs-lookup"><span data-stu-id="2e1f3-145">Additional resources</span></span>
 
-[<span data-ttu-id="bfef6-147">組織と組織階層の概要</span><span class="sxs-lookup"><span data-stu-id="bfef6-147">Organizations and organizational hierarchies overview</span></span>](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+[<span data-ttu-id="2e1f3-146">組織と組織階層の概要</span><span class="sxs-lookup"><span data-stu-id="2e1f3-146">Organizations and organizational hierarchies overview</span></span>](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 
-[<span data-ttu-id="bfef6-148">組織階層の計画</span><span class="sxs-lookup"><span data-stu-id="bfef6-148">Plan your organizational hierarchy</span></span>](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+[<span data-ttu-id="2e1f3-147">組織階層の計画</span><span class="sxs-lookup"><span data-stu-id="2e1f3-147">Plan your organizational hierarchy</span></span>](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 
-[<span data-ttu-id="bfef6-149">組織階層</span><span class="sxs-lookup"><span data-stu-id="bfef6-149">Organization hierarchies</span></span>](channels-org-hierarchies.md)
+[<span data-ttu-id="2e1f3-148">組織階層</span><span class="sxs-lookup"><span data-stu-id="2e1f3-148">Organization hierarchies</span></span>](channels-org-hierarchies.md)
 
-[<span data-ttu-id="bfef6-150">チャネルの概要</span><span class="sxs-lookup"><span data-stu-id="bfef6-150">Channels overview</span></span>](channels-overview.md)
+[<span data-ttu-id="2e1f3-149">チャネルの概要</span><span class="sxs-lookup"><span data-stu-id="2e1f3-149">Channels overview</span></span>](channels-overview.md)
 
-[<span data-ttu-id="bfef6-151">チャネル設定の前提条件</span><span class="sxs-lookup"><span data-stu-id="bfef6-151">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+[<span data-ttu-id="2e1f3-150">チャネル設定の前提条件</span><span class="sxs-lookup"><span data-stu-id="2e1f3-150">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: アドレス帳の新規作成
+title: 新しいアドレス帳の作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce でアドレス帳を新規作成する方法について説明します。
 author: samjarawan
 manager: annbe
@@ -16,43 +16,43 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a2887bdb09b9c5754a2bb17b2cd8053b5d4fb273
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6b25e4d560d94c3481b717939e28f1eaa2f2ecde
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976642"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477854"
 ---
-# <a name="create-new-address-book"></a><span data-ttu-id="78bf1-103">新しいアドレス帳の作成</span><span class="sxs-lookup"><span data-stu-id="78bf1-103">Create new address book</span></span>
-
+# <a name="create-new-address-book"></a><span data-ttu-id="87c53-103">新しいアドレス帳の作成</span><span class="sxs-lookup"><span data-stu-id="87c53-103">Create new address book</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="78bf1-104">このトピックでは、Microsoft Dynamics 365 Commerce でアドレス帳を新規作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="78bf1-104">This topic describes how to create a new address book in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="87c53-104">このトピックでは、Microsoft Dynamics 365 Commerce でアドレス帳を新規作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="87c53-104">This topic describes how to create a new address book in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="78bf1-105">概要</span><span class="sxs-lookup"><span data-stu-id="78bf1-105">Overview</span></span>
+<span data-ttu-id="87c53-105">Commerce では、顧客リストやチャネルの従業員リストを保存するなど、さまざまな理由でアドレス帳が使用されます。</span><span class="sxs-lookup"><span data-stu-id="87c53-105">Address books are used in Commerce for various reasons including storing customer lists and employee lists for a channel.</span></span> <span data-ttu-id="87c53-106">アドレス帳は、単一のチャネルで使用したり、チャネル間で共有したりできます。</span><span class="sxs-lookup"><span data-stu-id="87c53-106">Address books can be used for a single channel or shared between channels.</span></span>
 
-<span data-ttu-id="78bf1-106">Commerce では、顧客リストやチャネルの従業員リストを保存するなど、さまざまな理由でアドレス帳が使用されます。</span><span class="sxs-lookup"><span data-stu-id="78bf1-106">Address books are used in Commerce for various reasons including storing customer lists and employee lists for a channel.</span></span> <span data-ttu-id="78bf1-107">アドレス帳は、単一のチャネルで使用したり、チャネル間で共有したりできます。</span><span class="sxs-lookup"><span data-stu-id="78bf1-107">Address books can be used for a single channel or shared between channels.</span></span>
+## <a name="create-a-new-address-book"></a><span data-ttu-id="87c53-107">アドレス帳の新規作成</span><span class="sxs-lookup"><span data-stu-id="87c53-107">Create a new address book</span></span>
 
-## <a name="create-a-new-address-book"></a><span data-ttu-id="78bf1-108">アドレス帳の新規作成</span><span class="sxs-lookup"><span data-stu-id="78bf1-108">Create a new address book</span></span>
-
-<span data-ttu-id="78bf1-109">新しいアドレス帳を作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="78bf1-109">To create a new address book, follow these steps.</span></span>
+<span data-ttu-id="87c53-108">新しいアドレス帳を作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="87c53-108">To create a new address book, follow these steps.</span></span>
  
-1. <span data-ttu-id="78bf1-110">ナビゲーション ウィンドウで、**モジュール \> チャネル設定 \> アドレス帳** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="78bf1-110">In the navigation pane, go to **Modules \> Channel setup \> Address books**.</span></span>
-1. <span data-ttu-id="78bf1-111">アクション バーで、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="78bf1-111">On the action bar, select **New**.</span></span>
-1. <span data-ttu-id="78bf1-112">名前と説明情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="78bf1-112">Enter name and description information.</span></span>
-1. <span data-ttu-id="78bf1-113">アクション バーで、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="78bf1-113">On the action bar, select **Save**.</span></span>
+1. <span data-ttu-id="87c53-109">ナビゲーション ウィンドウで、**モジュール \> チャネル設定 \> アドレス帳** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="87c53-109">In the navigation pane, go to **Modules \> Channel setup \> Address books**.</span></span>
+1. <span data-ttu-id="87c53-110">アクション バーで、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="87c53-110">On the action bar, select **New**.</span></span>
+1. <span data-ttu-id="87c53-111">名前と説明情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="87c53-111">Enter name and description information.</span></span>
+1. <span data-ttu-id="87c53-112">アクション バーで、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="87c53-112">On the action bar, select **Save**.</span></span>
 
-<span data-ttu-id="78bf1-114">次の図は、小売店舗の従業員アドレス帳の作成を示しています。</span><span class="sxs-lookup"><span data-stu-id="78bf1-114">The following image shows the creation of an employee address book for a retail store.</span></span>
+<span data-ttu-id="87c53-113">次の図は、小売店舗の従業員アドレス帳の作成を示しています。</span><span class="sxs-lookup"><span data-stu-id="87c53-113">The following image shows the creation of an employee address book for a retail store.</span></span>
 
 ![従業員のアドレス帳の例](media/address-books.png)
 
-## <a name="additional-resources"></a><span data-ttu-id="78bf1-116">追加リソース</span><span class="sxs-lookup"><span data-stu-id="78bf1-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="87c53-115">追加リソース</span><span class="sxs-lookup"><span data-stu-id="87c53-115">Additional resources</span></span>
 
-[<span data-ttu-id="78bf1-117">情報コードおよび情報コード グループ</span><span class="sxs-lookup"><span data-stu-id="78bf1-117">Info codes and info code groups</span></span>](info-codes-retail.md)           
+[<span data-ttu-id="87c53-116">情報コードおよび情報コード グループ</span><span class="sxs-lookup"><span data-stu-id="87c53-116">Info codes and info code groups</span></span>](info-codes-retail.md)           
 
-[<span data-ttu-id="78bf1-118">小売機能プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="78bf1-118">Create a retail functionality profile</span></span>](retail-functionality-profile.md)      
+[<span data-ttu-id="87c53-117">小売機能プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="87c53-117">Create a retail functionality profile</span></span>](retail-functionality-profile.md)      
 
-[<span data-ttu-id="78bf1-119">画面レイアウトの概要</span><span class="sxs-lookup"><span data-stu-id="78bf1-119">Screen layout overview</span></span>](pos-screen-layouts.md)       
+[<span data-ttu-id="87c53-118">画面レイアウトの概要</span><span class="sxs-lookup"><span data-stu-id="87c53-118">Screen layout overview</span></span>](pos-screen-layouts.md)       
 
-[<span data-ttu-id="78bf1-120">Retail Hardware Station のコンフィギュレーションおよびインストール</span><span class="sxs-lookup"><span data-stu-id="78bf1-120">Configure and install Retail hardware station</span></span>](retail-hardware-station-configuration-installation.md)  
+[<span data-ttu-id="87c53-119">Retail Hardware Station のコンフィギュレーションおよびインストール</span><span class="sxs-lookup"><span data-stu-id="87c53-119">Configure and install Retail hardware station</span></span>](retail-hardware-station-configuration-installation.md)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
