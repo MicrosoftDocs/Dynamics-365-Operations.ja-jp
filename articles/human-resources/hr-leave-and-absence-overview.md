@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3de3de5a93c700526645c248b54783b64d77f2e7
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 1192a45d0d2fffbe2ecba65551641c090c08db8e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115975"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463433"
 ---
 # <a name="leave-and-absence-overview"></a>休暇の概要
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources は、従業員に休暇による大きな益を与える助けになります。 **休暇および欠勤** ワークスペースは、新しい休暇計画の作成に使用できる柔軟なフレームワークを提供します。 また、申請の管理に使用するワークフローと従業員が休暇の申請に使用する直観的なセルフサービス ページも用意されています。 分析では、組織が休暇残日数および休暇計画の用途を測定および監視するのに役立ちます。
 
