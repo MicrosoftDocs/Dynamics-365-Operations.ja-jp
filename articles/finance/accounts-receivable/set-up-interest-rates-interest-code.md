@@ -3,7 +3,7 @@ title: 利息コードに対する金利の設定
 description: 利息コードには、利息がかかる日付と、支払期限を過ぎた勘定における計算方法を決める設定値が含まれます。
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169a397dfdd32f728a09e2ad279842edc289c19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5d9ff856e34eb894c5d0ab5fe17c8e95f62fff57
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971632"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555368"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>利息コードに対する金利の設定
 
@@ -46,10 +46,19 @@ ms.locfileid: "4971632"
 
 - 利息金額はすべての通貨に適用されます。
 - オプションの利子の限度額を入力できます。
-- <strong>パーセンテージ</strong> は、<strong>利息コードの設定</strong> ページの **<strong>次に基づいて**利息を計算</strong> フィールドで選択されます。
+- **パーセンテージ** は、**利息コードの設定** ページの **次に基づいて利息を計算** フィールドで選択されます。
 
 たとえば、請求書の支払がトランザクション期日を超えると 2 か月ごとに 5% の利息が付く利子コードを設定するには、**利息の計算間隔** フィールドに 2 を入力し、 **月** を選択します。
 
+> [!NOTE] 
+> 利子計算書の新しいアルゴリズムが機能管理を使用して追加されます。 このアルゴリズムを使用するには、**(GBL) 1 日あたりの利息を 365 で割った年率として計算できるようにする** 機能を有効にします。 この機能を有効にする方法についての詳細は、[機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+> 
+> 利子計算書の金額の計算に使用される計算式は次のとおりです。 
+>  
+> 利子計算書の金額 = 借入額 * 年間利子 % / 365 * 遅延日数
+>  
+> この機能は、バージョン 10.0.18 以降で利用できます。    
+ 
 ## <a name="interest-rates-based-on-amounts"></a>金額に基づいた利率
 通貨ごとの指定金額を計算する利率を設定できます。
 - 利息金額は、利息コードで通貨ごとに指定されます。

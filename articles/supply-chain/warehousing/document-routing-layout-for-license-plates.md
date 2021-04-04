@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 66ba73ab5c790aa4a67419842f63f6f741bf0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c20d3d0540f8f1a05928df9aff5253745982da9
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973763"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558265"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>ライセンス プレート ラベルのドキュメント ルーティング レイアウト
 
 [!include [banner](../includes/banner.md)]
+
 
 ドキュメント ルーティング レイアウトでは、ライセンス プレート ラベルのレイアウトと、その上に印刷されるデータを定義します。 印刷トリガー ポイントは、モバイル デバイスのメニュー項目と作業テンプレートを設定するときに設定します。
 
@@ -51,6 +52,10 @@ ms.locfileid: "4973763"
 印刷される値を表示するには、**倉庫管理 \> 照会およびレポート \> ライセンス プレート ラベル** に移動します。
 
 いくつかの広く使用されているラベル生成ツールには、ラベル レイアウトのテキストの書式設定に役立つものがあります。 これらのツールの多くは、`$FieldName$` 形式をサポートしています。 さらに、Microsoft Dynamics 365 Supply Chain Management では、ドキュメント ルーティング レイアウトのフィールド マッピングの一部として特別な書式設定ロジックを使用しています。
+
+## <a name="turn-on-this-feature-for-your-system"></a>システムでこの機能を有効化する
+
+このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*拡張されたライセンス プレート ラベルのレイアウト* 機能を有効にします。
 
 ## <a name="custom-number-formats"></a>カスタム数値形式
 

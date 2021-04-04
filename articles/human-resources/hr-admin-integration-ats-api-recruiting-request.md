@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125428"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500625"
 ---
 # <a name="recruiting-request"></a>採用要求
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、Dynamics 365 Human Resources の人物の採用要求エンティティについて説明します。
 
@@ -98,7 +100,8 @@ ms.locfileid: "5125428"
 | **職務タイプ ID の値**<br>_mshr_fk_jobtype_id_value<br>*GUID* | 読み取り専用<br>オプション<br>外部キー : mshr_hcmjobtypenentity entity の mshr_hcmjobtypeentityid | システムが生成する、 採用要求のジョブに関連付けられたジョブタイプの一意識別子です。 |
 | **控除状態**<br>mshr_exemptstatus<br>*JobExemptStatus* オプション セット | 読み取り専用<br>オプション | ジョブ タイプに基づく FLSA の控除状態です。 |
 | **推定開始日**<br>mshr_estimatedstartdate<br>*日* | 読み取り/書き込み<br>必須 | 候補者が業務を始める見込み開始日です。 |
-| **外部説明**<br>mshr_externaldescription<br>*文字列* | 読み取り/書き込み<br>オプション | ジョブ/職位の候補者向け説明です。 | 報酬の低しきい値<br>mshr_compensationlowthreshold<br>*二重* | 読み取り/書き込み<br>オプション | 報酬レベルの下限です。 |
+| **外部説明**<br>mshr_externaldescription<br>*文字列* | 読み取り/書き込み<br>オプション | ジョブ/職位の候補者向け説明です。 | 
+| **報酬の低しきい値**<br>mshr_compensationlowthreshold<br>*二重* | 読み取り/書き込み<br>オプション | 報酬レベルの下限です。 |
 | **報酬のコントロール ポイント**<br>mshr_compensationcontrolpoint<br>*二重* | 読み取り/書き込み<br>オプション | 報酬レベルのコントロール ポイントです。 |
 | **報酬の高しきい値**<br>mshr_compensationhighthreshold<br>*二重* | 読み取り/書き込み<br>オプション | 報酬レベルの上限です。 |
 | **報酬レベル**<br>mshr_compensationlevelid<br>*文字列* | 読み取り/書き込み<br>オプション | 職務の報酬レベルです。 ひとつの職務に複数の報酬レベルで設定できます。 この属性は、この要求に対して選択された職務の報酬レベルを示します。 |

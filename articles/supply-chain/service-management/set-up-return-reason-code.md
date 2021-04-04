@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c321531ace9e17f7d099be6280fd30500b991577
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d268c6fc90457c9f84f66ea5dbf86df356bea0f4
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991718"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470671"
 ---
 # <a name="set-up-return-reason-codes"></a>返品理由コードの設定   
 
@@ -31,9 +31,9 @@ ms.locfileid: "4991718"
 
 ## <a name="set-up-return-reason-code-groups"></a>返品理由コード グループの設定 
 
-1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード グループ** の順にクリックします。
+1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード グループ** に移動します。
 
-2.  Ctrl + N キーを押して、新しい返品理由コード グループの行を作成します。
+2.  **新規** を選択し、新しい返品理由コード グループの行を作成します。
 
 3.  **返品理由コード グループ** フィールドに、このグループの ID を入力します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "4991718"
 
 この手順では、顧客が製品を返品した理由を示すために使用できる、返品理由コードを設定できます。
 
-1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード** の順にクリックします。
+1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード** に移動します。
 
 2.  Ctrl + N キーを押して、新しい返品理由コード行を作成します。
 

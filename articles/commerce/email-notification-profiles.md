@@ -1,9 +1,9 @@
 ---
 title: 電子メール通知プロファイルの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce で電子メール通知プロファイルを作成する方法について説明します。
-author: samjarawan
+author: bicyclingfool
 manager: annbe
-ms.date: 03/31/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -13,26 +13,23 @@ ms.reviewer: v-chgri
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: samjar
+ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9378fb200a239433f2023bb90f72840dace1c0eb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d82a1abe68ff6e162acb75c6fdc1e207af11c279
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000827"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555310"
 ---
 # <a name="set-up-an-email-notification-profile"></a>電子メール通知プロファイルの設定
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で電子メール通知プロファイルを作成する方法について説明します。
 
-## <a name="overview"></a>概要
-
-チャネルを作成する前に、プロファイルを設定して、発注書の作成、注文出荷の状態、支払不履行など、さまざまなイベントに対して電子メール通知を送信できるようにします。
+チャンネルを作成する場合は、電子メール通知プロファイルを設定できます。 このようにして、発注書の作成、注文出荷の状態、支払不履行など、さまざまなトランザクション イベントについて顧客に電子メールを送信できます。
 
 追加の電子メールのコンフィギュレーションに関する詳細については、[電子メールのコンフィギュレーションおよび送信](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json) を参照してください。
 
@@ -48,7 +45,7 @@ ms.locfileid: "5000827"
 
 ### <a name="create-an-email-template"></a>電子メール テンプレートを作成する
 
-電子メール通知を作成する前に、送信者の電子メール情報および電子メール テンプレートを含む組織の電子メール テンプレートを作成する必要があります。
+電子メール通知タイプを有効にする前に、Commerce 本社で組織の電子メール テンプレートを作成する必要があります。 このテンプレートでは、サポートする各言語の電子メールの件名、送信者、既定の言語、および電子メールの本文を定義します。
 
 電子メール テンプレートを作成するには、次の手順に従います。
 
@@ -58,7 +55,7 @@ ms.locfileid: "5000827"
 1. **送信者名** フィールドに、送信者の名前を入力します。
 1. **電子メールの説明** フィールドに、意味のある名前を入力します。
 1. **送信電子メール** フィールドに、送信者の電子メール アドレスを入力します。
-1. **一般** セクションで、必要なオプション情報すべて (電子メールの優先順位など) を入力します。
+1. **一般** セクションで、電子メール テンプレートの既定の言語を選択します。 既定の言語は、指定された言語にローカライズされたテンプレートが存在しない場合に使用されます。
 1. 電子 **メール メッセージのコンテンツ** セクションを **展開** し、新規を選択して、テンプレート コンテンツを作成します。 各コンテンツ項目について、言語を選択し、電子メールの件名行を入力します。 電子メールに本文が含まれる場合、**本文** ボックスがオンになっていることを確認します。
 1. アクション ウィンドウで、電子メール **本文テンプレート** を提供する電子メール メッセージを選択します。
 

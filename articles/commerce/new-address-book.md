@@ -1,5 +1,5 @@
 ---
-title: アドレス帳の新規作成
+title: 新しいアドレス帳の作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce でアドレス帳を新規作成する方法について説明します。
 author: samjarawan
 manager: annbe
@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a2887bdb09b9c5754a2bb17b2cd8053b5d4fb273
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6b25e4d560d94c3481b717939e28f1eaa2f2ecde
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976642"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477854"
 ---
 # <a name="create-new-address-book"></a>新しいアドレス帳の作成
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でアドレス帳を新規作成する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Commerce では、顧客リストやチャネルの従業員リストを保存するなど、さまざまな理由でアドレス帳が使用されます。 アドレス帳は、単一のチャネルで使用したり、チャネル間で共有したりできます。
 

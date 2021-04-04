@@ -16,18 +16,16 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2519dcaf657b495a494b6f45f93930d980d89a65
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965321"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477807"
 ---
-# <a name="set-up-order-fulfillment-for-stores"></a>店舗における注文のフルフィルメントを設定
+# <a name="set-up-order-fulfillment-for-stores"></a>店舗における注文のフルフィルメントの設定
 
 [!include [banner](includes/banner.md)]
-
-## <a name="overview"></a>概要
 
 多くの小売業者は、注文する店舗を有効化することで、注文のフルフィルメントを最適化したいと考えています。 店舗レベルでの注文のフルフィルメントは、特定の店舗の過剰在庫のシナリオを軽減するために役立ちます。また、店舗が余分な能力を持っているか、店舗が顧客とのより近い輸送距離内に位置する場合に、物流の視点から必要とされる場合があります。 これに対処するために、販売時点管理で統一された注文のフィルフィルメントの操作が利用できます。
 

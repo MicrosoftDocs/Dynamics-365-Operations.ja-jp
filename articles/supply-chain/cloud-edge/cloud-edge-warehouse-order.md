@@ -19,12 +19,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c04127b9fe621d962be2d7fe06358b3bd1b78916
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5105716"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556365"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
 
@@ -51,6 +51,8 @@ ms.locfileid: "5105716"
 1. **調達 \> 発注書 \> すべての発注書** に移動します。
 1. アクション ペインの、**倉庫** タブにある **アクション** グループで、**倉庫にリリース** を選択します。
 1. 関連する倉庫の注文明細行を表示するには、関連する発注書を開き、**発注書明細行** セクションで明細行を選択し、ツール バーで **倉庫 \> 倉庫注文明細行** を選択します。 すべての明細行を表示するには、**倉庫管理 \> 照会およびレポート \> 倉庫注文明細行** の順に移動します。
+
+**倉庫管理 > 倉庫へのリリース > 発注書の自動リリース** の順に移動することで、バッチ ジョブから *倉庫へのリリース* プロセスをトリガーできます。 バッチ ジョブの設定時に、クエリに基づいて特定の発注書明細行を選択できます。 一般的なシナリオとして、翌日に到着する予定のすべての確認済発注書明細行をリリースする反復バッチ ジョブを設定します。
 
 ## <a name="cancel-a-warehouse-order"></a>倉庫オーダーのキャンセル
 

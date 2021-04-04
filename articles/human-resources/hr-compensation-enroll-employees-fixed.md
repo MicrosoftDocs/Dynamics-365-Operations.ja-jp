@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc8373a4a39a1a212ab445b2b300fbddfe0e4a39
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: a129bf9a6cb6a3ef92597e2ff9d126e3e5ce973b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113271"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468254"
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>固定報酬プランへの従業員の登録
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 報酬および福利厚生のマネージャーは、基準賃金を管理する固定報酬プランに従業員を割り当てることができます。 この手順は、固定プランが作成され、有効となり、適格性ルールが計画に対して設定されることを前提としています。 この手順の作成に使用するデモ データの会社は USMF です。 手順を開始するには、[人事管理] > [作業者] > [従業員] > [報酬] > [固定プラン] の順に移動します。
 

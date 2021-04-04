@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a53fc77a7d457534428929bd431175be7cf450f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 14da5fd2b409790de2269036ccb941ffa6d3311c
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979650"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478311"
 ---
 # <a name="create-a-retail-functionality-profile"></a>小売機能プロファイルの作成
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce に機能プロファイルを作成する方法について説明します。
-
-## <a name="overview"></a>概要
 
 コマース機能プロファイルは、オンライン チャネルに使用されるさまざまな設定を提供します。 各チャネルでは、機能プロファイルを指定する必要があります。
 
