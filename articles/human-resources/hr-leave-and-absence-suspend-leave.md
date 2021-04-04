@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 05cb032a5f0417f24e1d85186820b866cdd2613f
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 7cec59a0ed478752b44fd28494f549007cbfbddb
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115031"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463241"
 ---
 # <a name="suspend-leave"></a>休暇の中断
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 従業員の休暇を一時停止して、選択した休暇タイプに対して休暇の見越計上処理を停止できます。 
 

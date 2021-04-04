@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9aca699283a9de6ea551bd02184498aed88143e9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9774d5f4e97d3f768366ba552e5928929bacf508
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991643"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470932"
 ---
 # <a name="set-up-service-order-stages"></a>サービス注文ステージを設定します 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **設定** \> **サービス注文** \> **サービス ステージ** の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービス注文** \> **サービス ステージ** に移動します。
 
-2.  Ctrl + N キーを押して、新しいレコードを作成します。
+2.  **新規作成** を選択して、新しいレコードを作成します。
 
 3.  **サービス ステージ** および **説明** フィールドで、サービス ステージ ID と説明を指定します。
 
