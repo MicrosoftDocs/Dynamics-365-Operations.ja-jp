@@ -17,38 +17,41 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb22c5b604f9bc7aacad014385b036e78d9110e6
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 00e9acea04252207a3715744ec5c9d7da141d4b5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017215"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253688"
 ---
-# <a name="target-entities"></a><span data-ttu-id="3c3cd-103">ターゲット エンティティ</span><span class="sxs-lookup"><span data-stu-id="3c3cd-103">Target entities</span></span>
+# <a name="target-entities"></a><span data-ttu-id="ffc2e-103">ターゲット エンティティ</span><span class="sxs-lookup"><span data-stu-id="ffc2e-103">Target entities</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="3c3cd-104">**データ管理** ワークスペースでは、ターゲット エンティティ、関連するエンティティ タイプ、および **資産管理** モジュールに関連するステージング テーブルの概要を取得できます。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-104">In the **Data management** workspace, you can get an overview of target entities, related entity types and staging tables related to the **Asset management** module.</span></span> 
+<span data-ttu-id="ffc2e-104">**データ管理** ワークスペースでは、ターゲット エンティティ、関連するエンティティ タイプ、および **資産管理** モジュールに関連するステージング テーブルの概要を取得できます。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-104">In the **Data management** workspace, you can get an overview of target entities, related entity types and staging tables related to the **Asset management** module.</span></span> 
 
-1. <span data-ttu-id="3c3cd-105">画面の左上隅にある **Finance and Operations** ボタンをクリックし、**データ管理** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-105">Click the **Finance and Operations** button in the upper-left corner of the screen, and click **Data management**.</span></span>
+1. <span data-ttu-id="ffc2e-105">画面の左上隅にある **Finance and Operations** ボタンをクリックし、**データ管理** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-105">Click the **Finance and Operations** button in the upper-left corner of the screen, and click **Data management**.</span></span>
 
-2. <span data-ttu-id="3c3cd-106">**インポート/エクスポート** セクションで、**データ エンティティ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-106">In the **Import / Export** section, click **Data entities**.</span></span> 
+2. <span data-ttu-id="ffc2e-106">**インポート/エクスポート** セクションで、**データ エンティティ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-106">In the **Import / Export** section, click **Data entities**.</span></span> 
 
     ![図 1](media/01-data-management.png)
 
-3. <span data-ttu-id="3c3cd-108">**ターゲット エンティティ** ページで、フィルターで「資産管理」を検索し、Enter キーを押して、資産管理に関連するエンティティの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-108">On the **Target entities** page, search for "asset management" in the filter, and press Enter to see a list of the entities related to Asset management.</span></span>
+3. <span data-ttu-id="ffc2e-108">**ターゲット エンティティ** ページで、フィルターで「資産管理」を検索し、Enter キーを押して、資産管理に関連するエンティティの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-108">On the **Target entities** page, search for "asset management" in the filter, and press Enter to see a list of the entities related to Asset management.</span></span>
 
-    <span data-ttu-id="3c3cd-109">次の図は、資産管理エンティティの一部を示しています。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-109">The figure below shows some of the Asset management entities.</span></span>
+    <span data-ttu-id="ffc2e-109">次の図は、資産管理エンティティの一部を示しています。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-109">The figure below shows some of the Asset management entities.</span></span>
 
    ![図 2](media/02-data-management.png)
 
-4. <span data-ttu-id="3c3cd-111">エンティティを選択し、**ターゲット マッピングの変更** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-111">Select an entity and click **Modify target mapping**.</span></span>
+4. <span data-ttu-id="ffc2e-111">エンティティを選択し、**ターゲット マッピングの変更** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-111">Select an entity and click **Modify target mapping**.</span></span>
 
-5. <span data-ttu-id="3c3cd-112">**ステージングをターゲットにマップ** ページに、選択したエンティティに関連するステージング フィールドの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-112">On the **Map staging to target** page, you see a list of the staging fields related to the selected entity.</span></span> <span data-ttu-id="3c3cd-113">**マッピングの視覚化** をクリックして、ステージング データとターゲット データがどのように関連しているかの概要をグラフィック表示します。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-113">Click **Mapping visualization** to see a graphic overview of how staging data and target data are related.</span></span> 
+5. <span data-ttu-id="ffc2e-112">**ステージングをターゲットにマップ** ページに、選択したエンティティに関連するステージング フィールドの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-112">On the **Map staging to target** page, you see a list of the staging fields related to the selected entity.</span></span> <span data-ttu-id="ffc2e-113">**マッピングの視覚化** をクリックして、ステージング データとターゲット データがどのように関連しているかの概要をグラフィック表示します。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-113">Click **Mapping visualization** to see a graphic overview of how staging data and target data are related.</span></span> 
 
-    <span data-ttu-id="3c3cd-114">次の図では、資産タイプ エンティティに関連するフィールドの視覚化が示されています。</span><span class="sxs-lookup"><span data-stu-id="3c3cd-114">In the figure below, a visualization of the fields related to the asset types entity is shown.</span></span>
+    <span data-ttu-id="ffc2e-114">次の図では、資産タイプ エンティティに関連するフィールドの視覚化が示されています。</span><span class="sxs-lookup"><span data-stu-id="ffc2e-114">In the figure below, a visualization of the fields related to the asset types entity is shown.</span></span>
 
     ![図 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

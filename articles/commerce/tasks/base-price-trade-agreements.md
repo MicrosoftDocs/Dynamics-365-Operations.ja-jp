@@ -16,56 +16,59 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db3a91807c0cfb51426c03eeaf7785168e6ad0de
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bab25988a9d4aad4d4e36fd9bdffbbf52473435e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006061"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259473"
 ---
-# <a name="base-price-and-trade-agreements"></a><span data-ttu-id="f68ac-103">基準価格と売買契約</span><span class="sxs-lookup"><span data-stu-id="f68ac-103">Base price and trade agreements</span></span>
+# <a name="base-price-and-trade-agreements"></a><span data-ttu-id="4d757-103">基準価格と売買契約</span><span class="sxs-lookup"><span data-stu-id="4d757-103">Base price and trade agreements</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f68ac-104">この手順では、チャンネル固有の販売価格の売買契約の作成方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-104">This procedure walks through creating channel-specific sales price trade agreements.</span></span> <span data-ttu-id="f68ac-105">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-105">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="4d757-104">この手順では、チャンネル固有の販売価格の売買契約の作成方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="4d757-104">This procedure walks through creating channel-specific sales price trade agreements.</span></span> <span data-ttu-id="4d757-105">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="4d757-105">This procedure uses the USRT demo data company.</span></span>
 
-1. <span data-ttu-id="f68ac-106">**ナビゲーション ウィンドウ** で、**モジュール > Retail と Commerce > 価格と割引の管理 > 価格グループ > すべての価格グループ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-106">In the **Navigation pane**, go to **Modules > Retail and Commerce > Pricing and discounts management > Price groups > All price groups**.</span></span> <span data-ttu-id="f68ac-107">価格グループは、売買契約を特定のチャネルに割り当てる方法です。</span><span class="sxs-lookup"><span data-stu-id="f68ac-107">Price groups are how trade agreements are assigned to specific channels.</span></span> <span data-ttu-id="f68ac-108">価格グループを使用して、チャンネル固有の価格設定が可能なチャンネルに売買契約を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-108">Using price groups to assign trade agreements to a channel enables channel-specific pricing.</span></span>  
-2. <span data-ttu-id="f68ac-109">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-109">Click **New**.</span></span>
-3. <span data-ttu-id="f68ac-110">**価格グループ** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-110">In the **Price groups** field, type a value.</span></span>
-4. <span data-ttu-id="f68ac-111">**名前** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-111">In the **Name** field, type a value.</span></span>
-5. <span data-ttu-id="f68ac-112">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-112">Click **Save**.</span></span>
-6. <span data-ttu-id="f68ac-113">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-113">Close the page.</span></span>
-7. <span data-ttu-id="f68ac-114">**ナビゲーション ウィンドウ** で、**モジュール > Retail と Commerce > チャネル > 店舗 > すべての店舗** に移動します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-114">In the **Navigation pane**, go to **Modules > Retail and Commerce > Channels > Stores > All stores**.</span></span>
-8. <span data-ttu-id="f68ac-115">一覧で「ニューヨーク」を選択します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-115">In the list, select 'New York'</span></span>
-9. <span data-ttu-id="f68ac-116">アクション ウィンドウで、**店舗** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-116">On the Action Pane, click **Store**.</span></span>
-10. <span data-ttu-id="f68ac-117">**価格グループ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-117">Click **Price groups**.</span></span>
-11. <span data-ttu-id="f68ac-118">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-118">Click **New**.</span></span>
-12. <span data-ttu-id="f68ac-119">**価格グループ** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-119">In the **Price groups** field, click the drop-down button to open the lookup.</span></span>
-13. <span data-ttu-id="f68ac-120">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-120">In the list, find and select the desired record.</span></span>
-14. <span data-ttu-id="f68ac-121">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-121">Click **Save**.</span></span>
-15. <span data-ttu-id="f68ac-122">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-122">Close the page.</span></span>
-16. <span data-ttu-id="f68ac-123">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-123">Close the page.</span></span>
-17. <span data-ttu-id="f68ac-124">**ナビゲーション ウィンドウ** で、**モジュール > Retail と Commerce > 製品とカテゴリ > カテゴリ別リリース済製品** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-124">In the **Navigation pane**, go to **Modules > Retail and Commerce > Products and categories > Released products by category**.</span></span>
-18. <span data-ttu-id="f68ac-125">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-125">In the list, click the link in the selected row.</span></span>
-19. <span data-ttu-id="f68ac-126">**編集** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-126">Click **Edit**.</span></span>
-20. <span data-ttu-id="f68ac-127">**販売** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-127">Expand the **Sell** fastTab.</span></span>
-21. <span data-ttu-id="f68ac-128">**価格** フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-128">In the **Price** field, enter a number.</span></span> <span data-ttu-id="f68ac-129">この価格は、適用できる売買契約がない場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-129">This price is used if no applicable trade agreements are found.</span></span>  
-22. <span data-ttu-id="f68ac-130">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-130">Click **Save**.</span></span>
-23. <span data-ttu-id="f68ac-131">**アクション ウィンドウ** で、**販売** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-131">On the **Action Pane**, click **Sell**.</span></span>
-24. <span data-ttu-id="f68ac-132">**売買契約** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-132">Click **Create trade agreements**.</span></span>
-25. <span data-ttu-id="f68ac-133">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-133">Click **New**.</span></span>
-26. <span data-ttu-id="f68ac-134">**名前** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-134">In the **Name** field, click the drop-down button to open the lookup.</span></span>
-27. <span data-ttu-id="f68ac-135">一覧で、**Commerce** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-135">In the list, select **Commerce**.</span></span> <span data-ttu-id="f68ac-136">デモ データで、**Commerce** 仕訳帳名の既定のリレーションは **価格 (販売)** です。</span><span class="sxs-lookup"><span data-stu-id="f68ac-136">In the demo data, the **Commerce** journal name has the default relation of **Price (sales)**.</span></span> <span data-ttu-id="f68ac-137">これは、作成されたすべての新しい明細行が、販売価格の売買契約の既定値であることを意味します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-137">That means all new lines created will default to sales price trade agreements.</span></span>  
-28. <span data-ttu-id="f68ac-138">**アクション ウィンドウ** で、**明細行** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-138">On the **Action pane**, click **Lines**.</span></span>
-29. <span data-ttu-id="f68ac-139">**関係者コード タイプ** フィールドで、'グループ' を選択します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-139">In the **Party code type** field, select 'Group'.</span></span>
-30. <span data-ttu-id="f68ac-140">**勘定の選択** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-140">In the **Account selection** field, click the drop-down button to open the lookup.</span></span>
-31. <span data-ttu-id="f68ac-141">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-141">In the list, find and select the desired record.</span></span> <span data-ttu-id="f68ac-142">これによって、チャンネルから価格グループ、売買契約へのリンクが完了します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-142">This will complete the link from Channel to Price group to Trade agreement.</span></span>  
-32. <span data-ttu-id="f68ac-143">**商品関係** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-143">In the **Item relation** field, type a value.</span></span>
-33. <span data-ttu-id="f68ac-144">**通貨金額** フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-144">In the **Amount in currency** field, enter a number.</span></span>
-34. <span data-ttu-id="f68ac-145">**詳細** クイック タブで、**次を検索** チェックボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-145">In the **Details** fastTab, check or uncheck the **Find next** checkbox.</span></span> <span data-ttu-id="f68ac-146">**次を検索** が 'はい' に設定されている場合、価格決定エンジンは販売価格の低い適用できる売買契約を検索し続けます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-146">When **Find next** is set to 'Yes', the pricing engine will continue to search for applicable trade agreements with a lower sale price.</span></span> <span data-ttu-id="f68ac-147">**次を検索** が 'いいえ' に設定されている場合、価格エンジンは検索を中止し、その売買契約を使用します。</span><span class="sxs-lookup"><span data-stu-id="f68ac-147">When **Find next** is set to 'No', the price engine stops searching and uses the trade agreement.</span></span>  
-35. <span data-ttu-id="f68ac-148">**転記** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-148">Click **Post**.</span></span>
-36. <span data-ttu-id="f68ac-149">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-149">Click **OK**.</span></span>
-37. <span data-ttu-id="f68ac-150">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f68ac-150">Close the page.</span></span>
-38. <span data-ttu-id="f68ac-151">**アクション ウィンドウ** で販売をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-151">On the **Action Pane**, click Sell.</span></span>
-39. <span data-ttu-id="f68ac-152">**販売価格** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f68ac-152">Click **Sales price**.</span></span>
+1. <span data-ttu-id="4d757-106">**ナビゲーション ウィンドウ** で、**モジュール > Retail と Commerce > 価格と割引の管理 > 価格グループ > すべての価格グループ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4d757-106">In the **Navigation pane**, go to **Modules > Retail and Commerce > Pricing and discounts management > Price groups > All price groups**.</span></span> <span data-ttu-id="4d757-107">価格グループは、売買契約を特定のチャネルに割り当てる方法です。</span><span class="sxs-lookup"><span data-stu-id="4d757-107">Price groups are how trade agreements are assigned to specific channels.</span></span> <span data-ttu-id="4d757-108">価格グループを使用して、チャンネル固有の価格設定が可能なチャンネルに売買契約を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="4d757-108">Using price groups to assign trade agreements to a channel enables channel-specific pricing.</span></span>  
+2. <span data-ttu-id="4d757-109">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-109">Click **New**.</span></span>
+3. <span data-ttu-id="4d757-110">**価格グループ** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d757-110">In the **Price groups** field, type a value.</span></span>
+4. <span data-ttu-id="4d757-111">**名前** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d757-111">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="4d757-112">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-112">Click **Save**.</span></span>
+6. <span data-ttu-id="4d757-113">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4d757-113">Close the page.</span></span>
+7. <span data-ttu-id="4d757-114">**ナビゲーション ウィンドウ** で、**モジュール > Retail と Commerce > チャネル > 店舗 > すべての店舗** に移動します。</span><span class="sxs-lookup"><span data-stu-id="4d757-114">In the **Navigation pane**, go to **Modules > Retail and Commerce > Channels > Stores > All stores**.</span></span>
+8. <span data-ttu-id="4d757-115">一覧で「ニューヨーク」を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d757-115">In the list, select 'New York'</span></span>
+9. <span data-ttu-id="4d757-116">アクション ウィンドウで、**店舗** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-116">On the Action Pane, click **Store**.</span></span>
+10. <span data-ttu-id="4d757-117">**価格グループ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-117">Click **Price groups**.</span></span>
+11. <span data-ttu-id="4d757-118">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-118">Click **New**.</span></span>
+12. <span data-ttu-id="4d757-119">**価格グループ** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="4d757-119">In the **Price groups** field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="4d757-120">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="4d757-120">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="4d757-121">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-121">Click **Save**.</span></span>
+15. <span data-ttu-id="4d757-122">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4d757-122">Close the page.</span></span>
+16. <span data-ttu-id="4d757-123">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4d757-123">Close the page.</span></span>
+17. <span data-ttu-id="4d757-124">**ナビゲーション ウィンドウ** で、**モジュール > Retail と Commerce > 製品とカテゴリ > カテゴリ別リリース済製品** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4d757-124">In the **Navigation pane**, go to **Modules > Retail and Commerce > Products and categories > Released products by category**.</span></span>
+18. <span data-ttu-id="4d757-125">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-125">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="4d757-126">**編集** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-126">Click **Edit**.</span></span>
+20. <span data-ttu-id="4d757-127">**販売** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="4d757-127">Expand the **Sell** fastTab.</span></span>
+21. <span data-ttu-id="4d757-128">**価格** フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d757-128">In the **Price** field, enter a number.</span></span> <span data-ttu-id="4d757-129">この価格は、適用できる売買契約がない場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="4d757-129">This price is used if no applicable trade agreements are found.</span></span>  
+22. <span data-ttu-id="4d757-130">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-130">Click **Save**.</span></span>
+23. <span data-ttu-id="4d757-131">**アクション ウィンドウ** で、**販売** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-131">On the **Action Pane**, click **Sell**.</span></span>
+24. <span data-ttu-id="4d757-132">**売買契約** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-132">Click **Create trade agreements**.</span></span>
+25. <span data-ttu-id="4d757-133">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-133">Click **New**.</span></span>
+26. <span data-ttu-id="4d757-134">**名前** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="4d757-134">In the **Name** field, click the drop-down button to open the lookup.</span></span>
+27. <span data-ttu-id="4d757-135">一覧で、**Commerce** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d757-135">In the list, select **Commerce**.</span></span> <span data-ttu-id="4d757-136">デモ データで、**Commerce** 仕訳帳名の既定のリレーションは **価格 (販売)** です。</span><span class="sxs-lookup"><span data-stu-id="4d757-136">In the demo data, the **Commerce** journal name has the default relation of **Price (sales)**.</span></span> <span data-ttu-id="4d757-137">これは、作成されたすべての新しい明細行が、販売価格の売買契約の既定値であることを意味します。</span><span class="sxs-lookup"><span data-stu-id="4d757-137">That means all new lines created will default to sales price trade agreements.</span></span>  
+28. <span data-ttu-id="4d757-138">**アクション ウィンドウ** で、**明細行** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-138">On the **Action pane**, click **Lines**.</span></span>
+29. <span data-ttu-id="4d757-139">**関係者コード タイプ** フィールドで、'グループ' を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d757-139">In the **Party code type** field, select 'Group'.</span></span>
+30. <span data-ttu-id="4d757-140">**勘定の選択** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="4d757-140">In the **Account selection** field, click the drop-down button to open the lookup.</span></span>
+31. <span data-ttu-id="4d757-141">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="4d757-141">In the list, find and select the desired record.</span></span> <span data-ttu-id="4d757-142">これによって、チャンネルから価格グループ、売買契約へのリンクが完了します。</span><span class="sxs-lookup"><span data-stu-id="4d757-142">This will complete the link from Channel to Price group to Trade agreement.</span></span>  
+32. <span data-ttu-id="4d757-143">**商品関係** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d757-143">In the **Item relation** field, type a value.</span></span>
+33. <span data-ttu-id="4d757-144">**通貨金額** フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d757-144">In the **Amount in currency** field, enter a number.</span></span>
+34. <span data-ttu-id="4d757-145">**詳細** クイック タブで、**次を検索** チェックボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="4d757-145">In the **Details** fastTab, check or uncheck the **Find next** checkbox.</span></span> <span data-ttu-id="4d757-146">**次を検索** が 'はい' に設定されている場合、価格決定エンジンは販売価格の低い適用できる売買契約を検索し続けます。</span><span class="sxs-lookup"><span data-stu-id="4d757-146">When **Find next** is set to 'Yes', the pricing engine will continue to search for applicable trade agreements with a lower sale price.</span></span> <span data-ttu-id="4d757-147">**次を検索** が 'いいえ' に設定されている場合、価格エンジンは検索を中止し、その売買契約を使用します。</span><span class="sxs-lookup"><span data-stu-id="4d757-147">When **Find next** is set to 'No', the price engine stops searching and uses the trade agreement.</span></span>  
+35. <span data-ttu-id="4d757-148">**転記** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-148">Click **Post**.</span></span>
+36. <span data-ttu-id="4d757-149">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-149">Click **OK**.</span></span>
+37. <span data-ttu-id="4d757-150">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4d757-150">Close the page.</span></span>
+38. <span data-ttu-id="4d757-151">**アクション ウィンドウ** で販売をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-151">On the **Action Pane**, click Sell.</span></span>
+39. <span data-ttu-id="4d757-152">**販売価格** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d757-152">Click **Sales price**.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
