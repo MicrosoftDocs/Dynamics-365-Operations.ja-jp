@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1e7d7389c1bcf0f6024464e37b36d39efae5b832
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: b8b94c1844470938d5e53423f045f5af4c1793d3
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113234"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466811"
 ---
 # <a name="system-requirements"></a>システム要件
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 この記事では、Microsoft Dynamics 365 Human Resources の要件について説明します。 また、人事管理が利用可能な国および地域、および人事管理データの言語とローカライズの概要について説明します。
 

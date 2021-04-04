@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5822b3413a6fa4b6044a97ec320521b4d7206bad
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1b2a42889d0e6acfc23e4fd450405ef31ca810fd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988980"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240940"
 ---
 # <a name="fixed-asset-management-workspace"></a>固定資産管理ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
-**固定資産管理** ワークスペースでは、システムに入力されている固定資産に関連する情報が表示されます。 このワークスペースには、概要ビューと分析ビューが含まれます。 **自分の作業** タブには、概要タイル、固定資産の詳細、および現在の会社内の固定資産の関連情報が表示されます。 ワークスペースの Power BI 分析セクションに、分析を直接追加することもできます。 **分析 – すべての会社** タブでは、Microsoft Power BI の機能を使用して、すべての会社内の固定資産に関連付けられているビジュアルを表示します。
+**固定資産管理** ワークスペースでは、システムに入力されている固定資産に関連する情報が表示されます。 このワークスペースには、概要ビューと分析ビューが含まれます。 **自分の作業** タブには、概要タイル、固定資産の詳細、および現在の会社内の固定資産の関連情報が表示されます。 ワークスペースの Power BI 分析セクションに、分析を直接追加することもできます。 **分析 - すべての会社** タブでは、Microsoft Power BI の機能を使用して、すべての会社内の固定資産に関連付けられているビジュアルを表示します。
 
 ## <a name="my-work"></a>自分の作業
 

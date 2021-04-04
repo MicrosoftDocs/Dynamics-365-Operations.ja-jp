@@ -14,20 +14,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c519095d174414d6d4a8c86bc171ea62e1c72582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea6844307e63b351ef914134b7d8392b0910019a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012435"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478391"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>在庫バッファーと在庫レベルのコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイトで在庫状況に関するメッセージングを決定する在庫バッファーと在庫レベルをコンフィギュレーションする方法について説明します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce Headquarters には、在庫データと、販売時点管理 (POS) アプリケーション、電子商取引店舗、非同期で在庫をプルおよびプッシュするその他のカスタム統合アプリケーションなど、さまざまなチャネルが含まれています。 したがって、Commerce Headquarters の手持在庫ページ、POS ユーザー インターフェイス (UI)、E コマースの在庫状況 API から取得される使用可能な在庫値は、常にリアルタイムで 100% 正確であるとは限りません。
 

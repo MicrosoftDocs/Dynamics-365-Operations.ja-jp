@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 07/07/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56b6666310309817ff30ccb3902721880b829ee0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0c2600ad8f441e6b73b143c27afa08ad0a5c2748
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679817"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571008"
 ---
 # <a name="import-users-from-azure-active-directory"></a>Azure Active Directory からユーザーをインポートする
 
@@ -46,7 +45,7 @@ ms.locfileid: "4679817"
 2. **システム管理 > ユーザー > ユーザー** の順に移動します。
 3. **バッチ インポート** をクリックします。
 4. **バックグラウンドで実行** セクションを展開します。
-4. **バッチ処理** フィールドで **はい を選択します。
+4. **バッチ処理** フィールドで **はい** を選択します。
 6. **バッチ グループ** フィールドで、値を入力または選択します。 これは、オプションのステップです。  
 7. **個人** フィールドでは、**はい** を選択します。 これは、オプションのステップです。  
 8. **重要なジョブ** フィールドでは、**はい** を選択します。 これは、オプションのステップです。  
