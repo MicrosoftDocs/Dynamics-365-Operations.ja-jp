@@ -3,10 +3,9 @@ title: ドキュメントを Excel 形式で生成するためのコンフィギ
 description: このトピックでは、Excel テンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094032"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574176"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel 形式でドキュメントを生成する構成を設計する
 
@@ -54,7 +53,7 @@ ER 形式のコンポーネントを構成するには、アクション ウィ�
 送信ドキュメントのレイアウトを指定するには、 **Excel\\ファイル** コンポーネントに拡張子 .xlsx の Excel ワークブックを 出力ドキュメントのテンプレートとして添付します。
 
 > [!NOTE]
-> テンプレートを手動で関連付ける場合は、[ER パラメータ](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) でこの目的に対して構成されている[ドキュメント タイプ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types)を使用する必要があり ます。
+> テンプレートを手動で関連付ける場合は、[ER パラメータ](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) でこの目的に対して構成されている[ドキュメント タイプ](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types)を使用する必要があり ます。
 
 ![Excel\ファイル コンポーネントに添付ファイルを追加する](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ ER オペレーション デザイナーの **マッピング** タブで、**�
 
 **改ページ** コンポーネントは、Excel が新たなページを開始するように強制します。 Excel の既定のページ設定を使用する場合、このコンポーネントは必要ありませんが、Excel で ER 形式のページ構造を使用する場合にはこのコンポーネントを推奨します。
 
+## <a name="footer-component"></a>フッター コンポーネント
+
+**フッター** コンポーネントは、Excel ブックの生成されたワークシートの下部にフッターを入力するために使用されます。
+
+> [!NOTE]
+> このコンポーネントを各 **シート** コンポーネントに追加して、生成された Excel ブックの異なるワークシートに異なるフッターを指定できます。
+
+個々の **フッター** コンポーネントを構成する場合、**ヘッダー/フッターの外観** プロパティを使用して、コンポーネントが使用されるページを指定できます。 使用可能な値は次のとおりです。
+
+- **任意** - 親 Excel ワークシートの任意のページに対して構成されている **フッター** コンポーネントを実行します。
+- **最初** - 親 Excel ワークシートの最初のページに対して構成されている **フッター** コンポーネントを実行します。
+- **偶数** - 親 Excel ワークシートの偶数ページに対して構成されている **フッター** コンポーネントを実行します。
+- **奇数** - 親 Excel ワークシートの奇数ページに対して構成されている **フッター** コンポーネントを実行します。
+
+1つの **シート** コンポーネントに対して、それぞれ **ヘッダー/フッターの外観** プロパティに対して異なる値を持つ複数の **フッター** コンポーネントを追加できます。 この方法で、Excel ワークシートの異なるタイプのページに異なるフッターを生成できます。
+
+> [!NOTE]
+> 1つの **シート** コンポーネントに対して、それぞれ **ヘッダー/フッターの外観** プロパティに対して異なる値を持つ複数の **フッター** コンポーネントを追加できます。 それ以外の場合、[検証エラー](er-components-inspections.md#i16) が発生します。 受信したエラー メッセージで不整合が通知されます。
+
+追加された **フッター** コンポーネントの下に、**テキスト\\列**、**テキスト\\日時**、または他のタイプの要求された入れ子のコンポーネントを追加します。 それらのコンポーネントのバインディングを構成して、ページ フッターの入力方法を指定します。
+
+特別な[形式コード](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) を使用して、生成されるフッターのコンテンツを正しく書式設定することもできます。 この方法を学習するには、このトピックの後半にある[例 1](#example-1) の手順に従います。
+
+> [!NOTE]
+> 形式を構成する場合は、Excel の[制限](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) と 1 つのヘッダーまたはフッターの最大文字数を必ず考慮してください。
+
+## <a name="header-component"></a>ヘッダー コンポーネント
+
+**ヘッダー** コンポーネントは、Excel ブックの生成されたワークシートの上部にヘッダーを入力するために使用されます。 **フッター** コンポーネントと同じように使用されます。
+
 ## <a name="edit-an-added-er-format"></a>追加された ER 形式の編集
 
 ### <a name="update-a-template"></a>テンプレートの更新
@@ -175,6 +204,48 @@ Microsoft Excel ブック形式の送信ドキュメントが生成された場�
     >[!NOTE]
     > 生成されたドキュメントを Excel でプレビュー用に開くと、数式の再計算が手動で強制されます。
     > このオプションは、生成されたドキュメントに数式を含むセルの値が含まれていない可能性があるため、Excel でのプレビューなしで生成されたドキュメント (PDF の変換、電子メールなど) の使用を想定する ER 送信先を構成する場合は、使用しないでください。
+
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>例1: フッターのコンテンツを書式設定する
+
+1. 提供されている ER コンフィギュレーションを使用して、自由書式のドキュメントを[生成](er-generate-printable-fti-forms.md) します。
+2. 生成されたドキュメントのフッターを確認します。 ドキュメントの現在のページ番号とページの合計数に関する情報が含まれることに注意してください。
+
+    ![生成されたドキュメントのフッターを Excel 形式で確認する](./media/er-fillable-excel-footer-1.gif)
+
+3. ER 形式デザイナーで、確認のためにサンプルの ER 形式を[開き](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) ます。
+
+    **請求書** ワークシートのフッターは、**フッター** コンポーネントの下に存在する 2 つの **文字列** コンポーネントの設定に基づいて生成されます。
+
+    - 最初の **文字列** コンポーネントは、Excel が特定の形式を強制的に適用する次の特別な形式コードを入力します。
+
+        - **&C**- 中央にフッター テキストを配置する。
+        - **&"Segoe UI,Regular"&8**- フッター テキストを 8 ポイントの "Segoe UI Regular" フォントで表示します。
+
+    - 2 番目の **文字列** コンポーネントは、現在のドキュメントの現在のページ数とページの合計数を含むテキストを入力します。
+
+    ![形式デザイナーのページでフッター ER 形式コンポーネントを確認する](./media/er-fillable-excel-footer-2.png)
+
+4. サンプル ER 形式をカスタマイズして、現在のページ フッターを変更します。
+
+    1. サンプル ER 形式に基づく派生 ER 形式の **自由形式の請求書 (Excel)** を[作成](er-quick-start2-customize-report.md#DeriveProvidedFormat) します。
+    2. **請求書** ワークシートの **フッター** コンポーネントのための最初の新しい **文字列** コンポーネントのペアを追加します。
+
+        1. 左側の会社名に対応し、8 ポイントの "Segoe UI Regular" フォント (**"&L&"Segoe UI,Regular"&8"**) で表示される **文字列** コンポーネントを追加します。
+        2. 会社名を入力する **文字列** コンポーネント (**model.InvoiceBase.CompanyInfo.Name**) を追加します。
+
+    3. **請求書** ワークシートの **フッター** コンポーネントのための 2 番目の新しい **文字列** コンポーネントのペアを追加します。
+
+        1. 右側の処理日に対応し、8 ポイントの "Segoe UI Regular" フォント (**"&R&"Segoe UI,Regular"&8"**) で表示される **文字列** コンポーネントを追加します。
+        2. カスタム形式で処理日を入力する **文字列** コンポーネント を追加します (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**)。
+
+        ![形式デザイナーのページでフッター ER 形式コンポーネントを確認する](./media/er-fillable-excel-footer-3.png)
+
+    4. 派生 ER 形式の **自由書式の請求書 (Excel)** のドラフト バージョンを[完了](er-quick-start2-customize-report.md#CompleteDerivedFormat) します。
+
+5. 印刷管理を [コンフィギュレーション](er-generate-printable-fti-forms.md#configure-print-management) して、サンプル ER 形式の代わりに派生 ER 形式の **自由書式の請求書 (Excel)** を使用します。
+6. 印刷可能な FTI ドキュメントを生成し、生成されたドキュメントのフッターを確認します。
+
+    ![生成されたドキュメントのフッターを Excel 形式で確認する](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>追加リソース
 

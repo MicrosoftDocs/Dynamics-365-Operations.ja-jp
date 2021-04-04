@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8e67a6faf52b51264555b06f56b289d19ca580d6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 39583c244f09f54551d560e8b1dd9f1a5a1590cc
+ms.sourcegitcommit: 72f70c81176e86cda714a4712525f73514c895b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992498"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "5457332"
 ---
 # <a name="troubleshoot-planning-optimization"></a>計画最適化のトラブルシューティング 
 
@@ -48,12 +48,6 @@ ms.locfileid: "4992498"
 計画の最適化は、一部の領域における組み込みマスタープランのデザインとは異なります。 また、保留されている機能が原因で発生することもあります。
 
 **修正** : [分析計画の最適化] を実行して結果を分析し、関連ドキュメントを参照して影響を理解してください。 詳細については、[計画の最適化フィット分析](planning-optimization-fit-analysis.md) を参照してください。
-
-## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>マスター計画では、補充タイム フェンスを考慮しません
-
-これは、最適化の計画の保留中の機能が原因で発生します。
-
-**修正**: 保留機能が利用できるようになるまで、計画された注文をフィルター処理または削除して、補充タイムフェンス以外からの提案を削除します。
 
 ## <a name="cant-enable-planning-optimization"></a>計画の最適化を有効化できない
 

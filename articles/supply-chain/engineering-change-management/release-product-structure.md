@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967235"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580918"
 ---
 # <a name="release-product-structures"></a>リリース製品構造
 
@@ -76,8 +76,6 @@ ms.locfileid: "4967235"
 ## <a name="release-policies"></a>リリース ポリシー
 
 すべての運営会社が同じ製品データを必要とするわけではありません。 一般に、エンジニアリング製品を製造する運用会社は BOM を必要とするのに対し、エンジニアリング製品のみを販売する運営会社では BOM を必要としません。 リリース ポリシーを使用して、製品のリリースに使用されるパラメーターを設定できます。
-
-エンジニアリング製品の場合、リリース ポリシーはエンジニアリング製品カテゴリで割り当てられ、フィールドは必須です。 標準製品の場合、ポリシーは共有プロダクトに割り当てられ、フィールドはオプションです。
 
 エンジニアリング製品カテゴリの詳細については、[エンジニアリング バージョンとエンジニアリング製品のカテゴリ](engineering-versions-product-category.md) を参照してください。
 

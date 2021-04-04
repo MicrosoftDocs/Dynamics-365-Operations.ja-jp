@@ -3,7 +3,7 @@ title: 電子請求書アドオン管理コンポーネント
 description: このトピックでは、電子請求書アドオンの管理に関連するコンポーネントについて説明します。
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6f630ebb694217c3bd52378a649933a670c090f2
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 70ef47dd45200a14c9d780f3c280c554d0e52ac3
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104405"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592577"
 ---
 # <a name="electronic-invoicing-add-on-administration-components"></a>電子請求書アドオン管理コンポーネント
 
@@ -39,11 +39,15 @@ Microsoft Azure を使用して、key vault およびストレージ アカウ�
 
 Microsoft Dynamics Lifecycle Services (LCS) を使用して、LCS デプロイ プロジェクトのマイクロサービスに対するアドオンを有効にします。
 
-LCS で、**プレビュー機能管理** タイルを選択し、**電子請求サービス機能** 機能を有効化します。
+> [!NOTE]
+> LCS にマイクロサービス アドオンをインストールするには、少なくとも Tier 2 以上の仮想マシンが必要です。 環境計画に関する詳細については、[環境計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
+ 
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) は、電子請求書のアドオンの構成に使用します。 環境や電子請求書機能などのリソースは、RCSで作成、管理、ホストされます。 リソースの準備が整うと、電子請求アドオン サービスにリソースが公開されます。
+
+RCS の登録については、[Regulatory services](https://marketing.configure.global.dynamics.com/) を参照してください。
 
 RCS の詳細については、[Regulatory Configuration Services (RCS) - グローバリゼーション機能](rcs-globalization-feature.md)を参照してください
 
@@ -53,22 +57,14 @@ RCS を使用して電子請求書を構成するには、電子請求アドオ�
 
 #### <a name="service-endpoint"></a>サービス エンドポイント
 
-電子請求アドオン エンドポイントの URL は、Azure の地理的条件によって異なる場合があります。 次の表に、地域ごとの可用性の一覧を示します。
+電子請求のアドオンは、いくつかの Azure データセンターの地域で使用できます。 次の表に、地域ごとの可用性の一覧を示します。
 
-| Azure データ センターの地域 | サービス エンドポイント URL                                                       |
-|----------------------------|----------------------------------------------------------------------------|
-| 米国東部                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| 米国西部                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| 北ヨーロッパ                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| 西ヨーロッパ                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
-
-#### <a name="application-id"></a>アプリケーション ID
-
-アプリケーション ID は、電子請求アドオン アプリケーションの ID を意味します。 この例では、値が **0cdb527f-a8d1-4bf8-9436-b352c68682b2** に固定されています。
-
-#### <a name="lcs-environment-id"></a>LCS 環境の ID
-
-LCS 環境の ID は、組織の LCS サブスクリプションの ID を意味します。
+| Azure データ センターの地域 |
+|----------------------------|
+| 米国東部                    |
+| 米国西部                    |
+| 北ヨーロッパ                   |
+| 西ヨーロッパ                    |
 
 ### <a name="service-environments"></a>サービス環境
 
