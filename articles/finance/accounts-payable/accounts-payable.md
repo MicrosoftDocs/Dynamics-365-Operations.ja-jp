@@ -2,11 +2,9 @@
 title: 買掛金勘定ホーム ページ
 description: このトピックでは、買掛金勘定の概要を示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 882afecdb33e5ad59a793f2f2391cb1ad27f911e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e20c26939389a72a8b3249bcb26bb3871768bbee
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250701"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820862"
 ---
 # <a name="accounts-payable-home-page"></a>買掛金勘定ホーム ページ
 

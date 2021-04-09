@@ -2,11 +2,9 @@
 title: 分散型注文管理 (DOM)
 description: このトピックでは、Dynamics 365 Commerce の分散型注文管理 (DOM) の機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9ace77dba534615874e52ba95ee9dc6d71951d9e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f50bc2828df19062a6bdced6faaa7b4d66c38bed
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204331"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792778"
 ---
 # <a name="distributed-order-management-dom"></a>分散型注文管理 (DOM)
 

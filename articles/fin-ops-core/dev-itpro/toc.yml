@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: 10.0.15 のプラットフォーム更新プログラム (2021 年 1 月)
-                  href: get-started/whats-new-platform-updates-10-0-15.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -226,6 +224,10 @@
                               href: data-entities/dual-write/inventory-availability.md
                             - name: 作業者、職務、および職位の統合
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: 当事者およびグローバル アドレス帳
+                              href: data-entities/dual-write/party-gab.md
+                            - name: Power Portal を当事者のデータ モデルで使用する
+                              href: data-entities/dual-write/party-gab-portal.md
                             - name: 注記の統合
                               href: data-entities/dual-write/notes-integration.md
                             - name: マッピング参照
@@ -526,13 +528,15 @@
                   items:
                     - name: LCS での設置プロジェクトの設定
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: オンプレミス環境の設定と配置
+                    - name: オンプレミス環境の設定と配置 (Platform update 41 以降)
+                      href: deployment/setup-deploy-on-premises-pu41.md
+                    - name: オンプレミス環境の設定と配置 (Platform update 12 ～ 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: オンプレミス環境での Retail チャネル コンポーネントのインストール手順
                       href: deployment/deploy-retail-onprem.md
                     - name: カスタム モデルの開発とオンプレミス環境への配置
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: 環境のメンテナンス
+                - name: 環境操作
                   items:
                     - name: オンプレミス配置への更新プログラムの適用
                       href: deployment/apply-updates-on-premises.md
@@ -542,6 +546,8 @@
                       href: user-interface/client-disconnected.md
                     - name: オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
                       href: deployment/onprem-batchonly.md
+                    - name: SQL Server Reporting Services (SSRS) ノードの高可用性のコンフィギュレーション
+                      href: deployment/onprem-SSRSHA.md
                     - name: オンプレミス環境用プロキシのコンフィギュレーション
                       href: deployment/onprem-reverseproxy.md
                     - name: オンプレミス診断
@@ -1136,20 +1142,24 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform 統合
           items:
-            - name: Finance and Operations と Microsoft Power Platform の統合
-              href: power-platform/overview.md
-            - name: アドインの概要
-              href: power-platform/add-ins-overview.md
-            - name: エンティティ モデリング
-              href: power-platform/entity-modeling.md
-            - name: アプリケーション ライフサイクル管理
-              href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations および Dataverse 管理リファレンス
-              href: power-platform/admin-reference.md
-            - name: Power Apps ポータルと Finance and Operations
-              href: power-platform/power-portal-reference.md
-            - name: Finance and Operations 仮想エンティティに関するよく寄せられる質問
-              href: power-platform/faq.md
+            - name: 仮想エンティティ
+              items:
+                - name: Finance and Operations と Microsoft Power Platform の統合
+                  href: power-platform/overview.md
+                - name: エンティティ モデリング
+                  href: power-platform/entity-modeling.md
+                - name: アプリケーション ライフサイクル管理
+                  href: power-platform/application-lifecycle-management.md
+                - name: Finance and Operations および Dataverse 管理リファレンス
+                  href: power-platform/admin-reference.md
+                - name: Power Apps ポータルと Finance and Operations
+                  href: power-platform/power-portal-reference.md
+                - name: Finance and Operations 仮想エンティティに関するよく寄せられる質問
+                  href: power-platform/faq.md
+            - name: アドイン
+              items:
+                - name: アドインの概要
+                  href: power-platform/add-ins-overview.md
         - name: モバイル プラットフォーム
           items:
             - name: モバイル プラットフォームのリソース
@@ -1390,9 +1400,11 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Regression Suite Automation Tool チュートリアル
               href: perf-test/rsat/rsat-tutorial.md
+            - name: 管理者以外のユーザーのコンフィギュレーション
+              href: perf-test/rsat/rsat-configure-nonadmin.md
             - name: ベスト プラクティス
               href: perf-test/rsat/rsat-best-practices.md
-            - name: Regression Suite Automation Tool を使用したデータに依存しないテスト
+            - name: Regression Suite Automation Tool を使用したデータ認識不可能テスト
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: トラブルシューティング
               href: perf-test/rsat/rsat-troubleshooting.md

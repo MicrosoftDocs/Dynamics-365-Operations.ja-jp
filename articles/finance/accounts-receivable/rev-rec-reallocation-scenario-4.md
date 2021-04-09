@@ -2,11 +2,9 @@
 title: 収益認識の再配賦 - シナリオ 4
 description: このトピックでは、一部が請求済の既存の販売注文から、明細行が削除された、再配賦シナリオについて説明します。 このシナリオでは、明細行が販売注文から削除された場合でも、キャンセル済状態に設定された場合でも、同じ結果となります。
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50a2d0d2ca28d9b62713502700f2c4bd2e42751e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2b53145ac1ef4b277afadb4262fd1e704a2e7662
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238307"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830667"
 ---
 # <a name="revenue-recognition-reallocation--scenario-4"></a>収益認識の再配賦 – シナリオ 4
 

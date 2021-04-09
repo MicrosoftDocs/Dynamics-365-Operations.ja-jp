@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (2021 年 2 月)
                       href: get-started/whats-new-changed-10-0-16.md
-                    - name: Finance 10.0.15 (2021 年 1 月)
-                      href: get-started/whats-new-changed-10-0-15.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -1418,13 +1416,13 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: 規制の更新
               href: localizations/regulatory-updates.md
-            - name: 電子請求アドオン
+            - name: 電子請求
               items:
-                - name: 電子請求アドオンの概要
+                - name: 電子請求の概要
                   href: localizations/e-invoicing-service-overview.md
-                - name: 電子請求アドオン管理コンポーネント
+                - name: 電子請求管理コンポーネント
                   href: localizations/e-invoicing-service-administration.md
-                - name: Regulatory Configuration Services (RCS) での電子請求アドオンのコンフィギュレーション
+                - name: Regulatory Configuration Services (RCS) での電子請求のコンフィギュレーション
                   href: localizations/e-invoicing-configuration-rcs.md
                 - name: Finance および Supply Chain Management での電子請求書の発行
                   href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
@@ -1432,20 +1430,22 @@
                   href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
                 - name: 使用開始
                   items:
-                    - name: 電子請求アドオン サービス管理の使用を開始する
+                    - name: 電子請求サービス管理の使用を開始する
                       href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: 電子請求アドオンの使用を開始する
+                    - name: 電子請求の使用を開始する
                       href: localizations/e-invoicing-get-started.md
-                    - name: ブラジル用電子請求アドオンの使用を開始する
+                    - name: ブラジル用電子請求の使用を開始する
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: エジプト用電子請求アドオンの使用を開始する
+                    - name: エジプト用電子請求の使用を開始する
                       href: localizations/e-invoicing-eg-get-started.md
-                    - name: イタリア用電子請求アドオンの使用を開始する
+                    - name: イタリア用電子請求の使用を開始する
                       href: localizations/e-invoicing-ita-get-started.md
-                    - name: メキシコ用電子請求アドオンの使用を開始する
+                    - name: メキシコ用電子請求の使用を開始する
                       href: localizations/e-invoicing-mex-get-started.md
-                    - name: 電子請求アドオンの設定
+                    - name: 電子請求の設定
                       href: localizations/e-invoicing-setup.md
+                - name: 電子請求に関するよく寄せられる質問
+                  href: localizations/e-invoicing-faq.md
             - name: オーストラリア
               items:
                 - name: オーストラリアの概要
@@ -1794,10 +1794,14 @@
                   href: localizations/egypt.md
                 - name: エジプトの登録番号のコンフィギュレーション
                   href: localizations/emea-egy-reg-numbers.md
-                - name: エジプトの請求書レイアウトのコンフィギュレーション
+                - name: エジプト用請求書レイアウトの構成
                   href: localizations/emea-egy-invoice-layout.md
                 - name: エジプトの顧客電子請求書
                   href: localizations/emea-egy-e-invoices.md
+                - name: エジプト用 VAT 申告
+                  href: localizations/emea-egy-vat-declaration.md
+                - name: エジプト用源泉徴収税申告
+                  href: localizations/emea-egy-wht-declaration.md
             - name: エストニア
               items:
                 - name: エストニアの概要
@@ -2082,6 +2086,38 @@
                   href: localizations/india.md
                 - name: インドのローカライズのスコープ
                   href: localizations/apac-ind-scope.md
+                - name: インドのローカライズに関する新機能および変更された機能
+                  items:
+                    - name: 10.0.0 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-00.md
+                    - name: 10.0.01 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-01.md
+                    - name: 10.0.02 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-02.md
+                    - name: 10.0.03 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-03.md
+                    - name: 10.0.04 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-04.md
+                    - name: 10.0.05 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-05.md
+                    - name: 10.0.06 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-06.md
+                    - name: 10.0.07 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-07.md
+                    - name: 10.0.08 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-08.md
+                    - name: 10.0.09 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-09.md
+                    - name: 10.0.10 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-10.md
+                    - name: 10.0.11 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-11.md
+                    - name: 10.0.12 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-12.md
+                    - name: 10.0.13 の新機能または変更された機能
+                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: 10.0.14 の新機能または変更された機能
+                      href: localizations/apac-ind-news-letter-10-0-14.md
                 - name: 固定資産
                   items:
                     - name: インドの固定資産の概要
@@ -2108,210 +2144,198 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: 資本品目の固定資産への移動
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: インドの商品及びサービス税
+                - name: 間接税
                   items:
-                    - name: インド商品及びサービス税の概要
-                      href: localizations/apac-ind-gst.md
-                    - name: インド商品及びサービス税のローカライズに関する新機能および変更された機能
+                    - name: インドの商品及びサービス税
                       items:
-                        - name: 10.0.0 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-00.md
-                        - name: 10.0.01 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-01.md
-                        - name: 10.0.02 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-02.md
-                        - name: 10.0.03 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-03.md
-                        - name: 10.0.04 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-04.md
-                        - name: 10.0.05 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-05.md
-                        - name: 10.0.06 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-06.md
-                        - name: 10.0.07 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-07.md
-                        - name: 10.0.08 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-08.md
-                        - name: 10.0.09 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-09.md
-                        - name: 10.0.10 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-10.md
-                        - name: 10.0.11 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-11.md
-                        - name: 10.0.12 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-12.md
-                        - name: 10.0.13 の新機能または変更された機能
-                          href: localizations/ind-news-letter-10-0-13.md
-                        - name: 10.0.14 の新機能または変更された機能
-                          href: localizations/apac-ind-news-letter-10-0-14.md
-                    - name: インド商品及びサービス税参照グループ
-                      href: localizations/apac-ind-gst-reference-groups.md
-                    - name: キャッシュ レジスターの商品及びサービス税統合
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
-                    - name: マスター データの設定
-                      items:
-                        - name: ビジネス業種の作成
-                          href: localizations/apac-ind-GST-create-business-vertical.md
-                        - name: 州コードと連邦直轄領の更新
-                          href: localizations/apac-ind-GST-update-state-code-union-territory.md
-                        - name: GSTIN マスターの作成
-                          href: localizations/apac-ind-GST-create-gstin-master.md
-                        - name: GSTIN および参照番号順序の定義
-                          href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
-                        - name: HSN コードとサービス会計コードの定義
-                          href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
-                        - name: 税率の作成
-                          href: localizations/apac-ind-GST-create-tax-rate-type.md
-                        - name: 商品及びサービス税転記タイプの主勘定の作成
-                          href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
-                        - name: 税決済期間の作成
-                          href: localizations/apac-ind-GST-create-tax-settlement-period.md
-                        - name: 税登録グループへの GSTIN の関連付け
-                          href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
-                    - name: 税設定
-                      items:
-                        - name: 税コンフィギュレーションの定義と法人への配置
-                          href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
-                        - name: コンフィギュレーション税タイプのマップ - 関税
-                          href: localizations/apac-ind-GST-map-configuration-tax-types.md
-                        - name: レート テーブルと比率テーブルの設定
-                          href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
-                        - name: 消費税階層と税相殺ルールの設定
-                          href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
-                    - name: 購買トランザクション
-                      items:
-                        - name: 未登録仕入先からの購入
-                          href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
-                        - name: 未登録仕入先からの課税対象品目の購入
-                          href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
-                        - name: 登録仕入先からの購入
-                          href: localizations/apac-ind-GST-purchases-registered-vendor.md
-                        - name: 割引済商品の購入
-                          href: localizations/apac-ind-GST-purchase-discounted-goods.md
-                        - name: 非課税商品の購入
-                          href: localizations/apac-ind-GST-purchase-exempted-goods.md
-                        - name: 税率 0 の商品の購入
-                          href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
-                        - name: 商品及びサービス税がない商品の購入
-                          href: localizations/apac-ind-GST-purchase-non-gst-goods.md
-                        - name: 複合ディーラーからの購入
-                          href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
-                        - name: 出荷費用がかかる課税対象商品の購入
-                          href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
-                        - name: 課税対象商品がある仕入請求書の変更
-                          href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
-                        - name: 固定資産の購入
-                          href: localizations/apac-ind-GST-purchase-fixed-asset.md
-                        - name: 仕入請求書に対する訂正票の作成
-                          href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
-                        - name: 仕入請求書に対する借方票の作成
-                          href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
-                        - name: サンプリング品目の破壊が関与する品質指示
-                          href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
-                        - name: 購買返品注文
-                          href: localizations/apac-ind-GST-purchase-return-order.md
-                        - name: 逆請求がある仕入先の前払
-                          href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
-                    - name: 販売トランザクション
-                      items:
-                        - name: 消費者への課税対象商品の販売
-                          href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
-                        - name: 登録済顧客への販売
-                          href: localizations/apac-ind-GST-sell-registered-customer.md
-                        - name: 自由書式の請求書
-                          href: localizations/apac-ind-GST-free-text-invoices.md
-                        - name: 逆請求がある課税対象商品の販売
-                          href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
-                        - name: 非課税品目の販売
-                          href: localizations/apac-ind-GST-sales-exempted-item.md
-                        - name: 税率 0 の商品の販売
-                          href: localizations/apac-ind-GST-sell-zero-rated-goods.md
-                        - name: 商品及びサービス税がない商品の販売
-                          href: localizations/apac-ind-GST-sell-non-gst-goods.md
-                        - name: 割引と仮評価が適用される課税対象商品の販売
-                          href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
-                        - name: 出荷費用が課税される課税対象商品の販売
-                          href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
-                        - name: 価格が税込みまたは税抜きの販売
-                          href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
-                        - name: 売上請求書に対する借方票の作成
-                          href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
-                        - name: 売上請求書に対する訂正票の作成
-                          href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
-                        - name: 配送先住所に基づいて分割されている売上請求書
-                          href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
-                        - name: 返品注文
-                          href: localizations/apac-ind-GST-return-order-form.md
-                    - name: 外部トランザクション
-                      items:
-                        - name: 商品及びサービス税がある商品のインポート
-                          href: localizations/apac-ind-GST-import-goods-gst.md
-                        - name: 商品及びサービス税があるサービスのインポート
-                          href: localizations/apac-ind-import-services-gst.md
-                        - name: 税率 0 の商品のエクスポート
-                          href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
-                        - name: 税率 0 のサービスのエクスポート
-                          href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
-                    - name: 在庫トランザクション
-                      items:
-                        - name: 在庫移動オーダー
-                          href: localizations/apac-ind-stock-transfer.md
-                        - name: 移転価格が課税される在庫移動オーダー
-                          href: localizations/apac-ind-GST-stock-transfer-transactions.md
-                    - name: 顧客支払トランザクション
-                      items:
-                        - name: 税込みの前払
-                          href: localizations/apac-ind-GST-advance-payment-includes-tax.md
-                        - name: 請求書の転記時に決済される前払
-                          href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
-                        - name: 税込みの前払と請求書の手動決済
-                          href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
-                        - name: 税込みの請求書の支払
-                          href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
-                        - name: 税込みの前払の変更
-                          href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
-                        - name: 顧客の支払の払戻
-                          href: localizations/apac-ind-GST-customer-payment-refund.md
-                    - name: 直接税トランザクション
+                        - name: インドの商品及びサービス税の概要
+                          href: localizations/apac-ind-gst.md
+                        - name: 税エンジン
+                          items:
+                            - name: 税エンジンの概要
+                              href: general-ledger/tax-engine.md
+                            - name: コンフィギュレーションのインポート
+                              href: general-ledger/tax-engine-import-configuration.md
+                            - name: 高度なフォーミュラ デザイナー
+                              href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                            - name: 税エンジンの適用性
+                              href: general-ledger/tax-engine-applicability.md
+                            - name: 税コンポーネントの作成
+                              href: localizations/tax-engine-create-tax-component.md
+                            - name: 税エンジンの統合
+                              href: general-ledger/tax-engine-integration.md
+                            - name: 税エンジンの拡張
+                              href: general-ledger/extend-tax-engine-configurations.md
+                            - name: TaxDocumentJSON テーブルのクリーンアップ
+                              href: localizations/gte-clean-up-tax-document-json-table.md
+                            - name: GTE のトラブルシューティング
+                              href: localizations/tax-engine-trouble-shooting.md
+                        - name: マスター データの設定
+                          items:
+                            - name: ビジネス業種の作成
+                              href: localizations/apac-ind-GST-create-business-vertical.md
+                            - name: 州コードと連邦直轄領の更新
+                              href: localizations/apac-ind-GST-update-state-code-union-territory.md
+                            - name: GSTIN マスターの作成
+                              href: localizations/apac-ind-GST-create-gstin-master.md
+                            - name: GSTIN および参照番号順序の定義
+                              href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                            - name: HSN コードとサービス会計コードの定義
+                              href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                            - name: 税率の作成
+                              href: localizations/apac-ind-GST-create-tax-rate-type.md
+                            - name: 商品及びサービス税転記タイプの主勘定の作成
+                              href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                            - name: 税決済期間の作成
+                              href: localizations/apac-ind-GST-create-tax-settlement-period.md
+                            - name: 税登録グループへの GSTIN の関連付け
+                              href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                        - name: 税設定
+                          items:
+                            - name: 税コンフィギュレーションの定義と法人への配置
+                              href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                            - name: コンフィギュレーション税タイプのマップ - 関税
+                              href: localizations/apac-ind-GST-map-configuration-tax-types.md
+                            - name: レート テーブルと比率テーブルの設定
+                              href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                            - name: 消費税階層と税相殺ルールの設定
+                              href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                            - name: インドの商品及びサービス税参照グループ
+                              href: localizations/apac-ind-gst-reference-groups.md
+                        - name: 税トランザクション
+                          items:
+                            - name: 購買トランザクション
+                              items:
+                                - name: 未登録仕入先からの購入
+                                  href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                                - name: 未登録仕入先からの課税対象品目の購入
+                                  href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                                - name: 登録仕入先からの購入
+                                  href: localizations/apac-ind-GST-purchases-registered-vendor.md
+                                - name: 割引済商品の購入
+                                  href: localizations/apac-ind-GST-purchase-discounted-goods.md
+                                - name: 非課税商品の購入
+                                  href: localizations/apac-ind-GST-purchase-exempted-goods.md
+                                - name: 税率 0 の商品の購入
+                                  href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                                - name: 商品及びサービス税がない商品の購入
+                                  href: localizations/apac-ind-GST-purchase-non-gst-goods.md
+                                - name: 複合ディーラーからの購入
+                                  href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                                - name: 出荷費用がかかる課税対象商品の購入
+                                  href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                                - name: 課税対象商品がある仕入請求書の変更
+                                  href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                                - name: 固定資産の購入
+                                  href: localizations/apac-ind-GST-purchase-fixed-asset.md
+                                - name: 仕入請求書に対する訂正票の作成
+                                  href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                                - name: 仕入請求書に対する借方票の作成
+                                  href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                                - name: サンプリング品目の破壊が関与する品質指示
+                                  href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                                - name: 購買返品注文
+                                  href: localizations/apac-ind-GST-purchase-return-order.md
+                                - name: 逆請求がある仕入先の前払
+                                  href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                            - name: 販売トランザクション
+                              items:
+                                - name: 消費者への課税対象商品の販売
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                                - name: 登録済顧客への販売
+                                  href: localizations/apac-ind-GST-sell-registered-customer.md
+                                - name: 自由書式の請求書
+                                  href: localizations/apac-ind-GST-free-text-invoices.md
+                                - name: 逆請求がある課税対象商品の販売
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                                - name: 非課税品目の販売
+                                  href: localizations/apac-ind-GST-sales-exempted-item.md
+                                - name: 税率 0 の商品の販売
+                                  href: localizations/apac-ind-GST-sell-zero-rated-goods.md
+                                - name: 商品及びサービス税がない商品の販売
+                                  href: localizations/apac-ind-GST-sell-non-gst-goods.md
+                                - name: 割引と仮評価が適用される課税対象商品の販売
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                                - name: 出荷費用が課税される課税対象商品の販売
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                                - name: 価格が税込みまたは税抜きの販売
+                                  href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                                - name: 売上請求書に対する借方票の作成
+                                  href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                                - name: 売上請求書に対する訂正票の作成
+                                  href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                                - name: 配送先住所に基づいて分割されている売上請求書
+                                  href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                                - name: 返品注文
+                                  href: localizations/apac-ind-GST-return-order-form.md
+                            - name: 外部トランザクション
+                              items:
+                                - name: 商品及びサービス税がある商品のインポート
+                                  href: localizations/apac-ind-GST-import-goods-gst.md
+                                - name: 商品及びサービス税があるサービスのインポート
+                                  href: localizations/apac-ind-import-services-gst.md
+                                - name: 税率 0 の商品のエクスポート
+                                  href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                                - name: 税率 0 のサービスのエクスポート
+                                  href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                                - name: エクスポート注文に対する貸方票または借方票
+                                  href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
+                            - name: 在庫移動トランザクション
+                              items:
+                                - name: 在庫移動オーダー
+                                  href: localizations/apac-ind-stock-transfer.md
+                                - name: 移転価格が課税される在庫移動オーダー
+                                  href: localizations/apac-ind-GST-stock-transfer-transactions.md
+                            - name: 顧客支払トランザクション
+                              items:
+                                - name: 税込みの前払
+                                  href: localizations/apac-ind-GST-advance-payment-includes-tax.md
+                                - name: 請求書の転記時に決済される前払
+                                  href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                                - name: 税込みの前払と請求書の手動決済
+                                  href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                                - name: 税込みの請求書の支払
+                                  href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                                - name: 税込みの前払の変更
+                                  href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                                - name: 顧客の支払の払戻
+                                  href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: 税調整
+                              items:
+                                - name: 税額の調整
+                                  href: localizations/apac-ind-GST-tax-adjustments.md
+                                - name: 税仕訳帳の作成
+                                  href: localizations/apac-ind-GST-tax-journal.md
+                            - name: 税務書類の照会
+                              items:
+                                - name: 税の照会
+                                  href: localizations/apac-ind-GST-tax-inquiry.md
+                        - name: 税決済
+                          items:
+                            - name: ルール ベースの税決済
+                              href: localizations/apac-ind-GST-tax-settlement.md
+                        - name: GSTR 報告書
+                          items:
+                            - name: 新しい GSTR-1 と GSTR-2 の返却フォーマット
+                              href: localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md
+                            - name: ANX-1 と購買登録用の新しい GSTR オフライン ツール
+                              href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
+                            - name: 税還付用 GSTR レポート データの生成
+                              href: localizations/apac-ind-GST-tax-returns.md
+                            - name: GSTR レポートに対してマルチ バッチ処理を有効化する
+                              href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                - name: 直接税
+                  items:
+                    - name: インドの源泉徴収税
                       items:
                         - name: 税控除の計算時に商品及びサービス税を含める
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
                         - name: 徴税の計算時に商品及びサービス税を含める
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-                    - name: 税額の調整
-                      href: localizations/apac-ind-GST-tax-adjustments.md
-                    - name: ルール ベースの税決済
-                      href: localizations/apac-ind-GST-tax-settlement.md
-                    - name: 税仕訳帳の作成
-                      href: localizations/apac-ind-GST-tax-journal.md
-                    - name: 税還付用 GSTR レポート データの生成
-                      href: localizations/apac-ind-GST-tax-returns.md
-                    - name: GSTR レポートに対してマルチ バッチ処理を有効化する
-                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
-                    - name: 税の照会
-                      href: localizations/apac-ind-GST-tax-inquiry.md
-                    - name: TaxDocumentJSON テーブルのクリーンアップ
-                      href: localizations/gte-clean-up-tax-document-json-table.md
-                - name: 税エンジン
-                  items:
-                    - name: 税エンジンの概要
-                      href: general-ledger/tax-engine.md
-                    - name: コンフィギュレーションのインポート
-                      href: general-ledger/tax-engine-import-configuration.md
-                    - name: 高度なフォーミュラ デザイナー
-                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
-                    - name: 税エンジンの適用性
-                      href: general-ledger/tax-engine-applicability.md
-                    - name: 税コンポーネントの作成
-                      href: localizations/tax-engine-create-tax-component.md
-                    - name: 税エンジンの統合
-                      href: general-ledger/tax-engine-integration.md
-                    - name: 税エンジンの拡張
-                      href: general-ledger/extend-tax-engine-configurations.md
-                    - name: GTE のトラブルシューティング
-                      href: localizations/tax-engine-trouble-shooting.md
-                - name: 税しきい値に関するよく寄せられる質問
-                  href: localizations/apac-ind-tax-thresholds.md
+                        - name: 税しきい値に関するよく寄せられる質問
+                          href: localizations/apac-ind-tax-thresholds.md
+                        - name: 商品の売上に課せられる TCS
+                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
             - name: イタリア
               items:
                 - name: イタリアの概要
@@ -2568,6 +2592,8 @@
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: i. リトアニアに関する SAF の報告
                   href: localizations/emea-ltu-isaf.md
+                - name: リトアニアの税の標準監査ファイル (SAF-T)
+                  href: localizations/emea-ltu-saf-t.md
             - name: マレーシア
               items:
                 - name: マレーシアの概要
@@ -2930,6 +2956,8 @@
                       href: localizations/rus-deferred-expenses-register.md
                     - name: キャッシュ フロー税登録
                       href: localizations/rus-cash-flow-tax-registers.md
+                    - name: 評価される経費登録
+                      href: localizations/rus-rated-expenses-registers.md
             - name: サウジアラビア
               items:
                 - name: サウジアラビアの概要
@@ -3381,11 +3409,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: アプリケーション固有のメタデータを準備する
                       items:
-                        - name: (ER) RCS で使用するアプリケーション メタデータを準備する
+                        - name: RCS で使用する電子申告のアプリケーション メタデータを準備する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする
+                        - name: ER コンフィギュレーションを使用して RCS のアプリケーション メタデータにアクセスする
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) 接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
+                        - name: 接続されているアプリケーションを使用して RCS のアプリケーション メタデータにアクセスする
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
                         - name: モデル マッピングを定義し、データ ソースを選択する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3403,7 +3431,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
                     - name: 形式の新しい基準バージョンを採用してその形式をアップグレードする
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
-            - name: 電子申告のフォーミュラ デザイナー
+            - name: ER のフォーミュラ デザイナー
               items:
                 - name: フォーミュラ デザイナー
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
@@ -3675,7 +3703,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'テキスト: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: さまざまな形式で送信電子ドキュメントを生成するための電子申告形式を設計する
+            - name: さまざまな形式で送信ドキュメントを生成するための電子申告形式を設計する
               items:
                 - name: 送信ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
                   items:
@@ -3703,7 +3731,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: 画像や図形を埋め込む
                   items:
-                    - name: (ER) 生成するドキュメントに画像や図形を埋め込む
+                    - name: 生成するドキュメントに画像や図形を埋め込む
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
                     - name: 画像や図形の埋め込み例
                       items:
@@ -3717,7 +3745,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: 生成されたファイルの BOM 文字を非表示にする
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
-            - name: 電子申告を使用してアプリケーション データを更新する
+            - name: ER を使用してアプリケーション データを更新する
               items:
                 - name: 電子ドキュメントを生成してアプリケーション データを更新する
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
@@ -3763,8 +3791,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory services (RCS)
                   items:
-                    - name: Regulatory Configuration Services (RCS) - グローバリゼーション機能
-                      href: localizations/rcs-globalization-feature.md
+                    - name: RCS のグローバリゼーション機能
+                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
                     - name: Finance に電子申告コンフィギュレーションをダウンロードする
                       items:
                         - name: RCS からコンフィギュレーションをダウンロードする
@@ -3896,17 +3924,17 @@
                     - name: 行先タイプ
                       items:
                         - name: アーカイブ先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
                         - name: 電子メール送信先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
                         - name: ファイル出力先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
                         - name: Power BI 出力先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
                         - name: プリンター出力先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
                         - name: 画面出力先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
                     - name: 行先のコンフィギュレーション
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: アクションに依存する行先のコンフィギュレーション
@@ -3919,11 +3947,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
                     - name: 生成された ER レポートの追跡結果およびベースライン値との比較における改善
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                    - name: 電子申告を使用したテストの自動化
+                    - name: ER によるテストの自動化
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
                 - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
                   items:
-                    - name: Power BI にデータをプルするよう電子申告を構成する
+                    - name: Power BI にデータをプルするよう ER を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json

@@ -2,11 +2,9 @@
 title: 収益認識の再配賦 - シナリオ 1
 description: このトピックでは、2 つの販売注文が入力されたが、まだ確認済の状態である、再配賦シナリオについて説明します。 3 つ以上の販売注文が確認済の状態にある場合も、同じシナリオで、同様の結果となります。
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 25fb32ce72555e573cd37a0ab092b51b99bb4372
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f94b054d213dc2b347f4e5a7b2f4c2a51d519f57
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260880"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824007"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>収益認識の再配賦 – シナリオ 1
 

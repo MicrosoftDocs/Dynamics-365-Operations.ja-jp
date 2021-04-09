@@ -2,11 +2,9 @@
 title: 小売店舗トランザクション用トリクル フィードベースの注文作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce の店舗トランザクションに対するトリクル フィードベースの注文作成について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0fdb1f636183e8365729ab8947a50614a77eaeac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e0686b1b3113440808ea195683e15fb2c66b4558
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211048"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801846"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>小売店舗トランザクション用トリクル フィードベースの注文作成
 
