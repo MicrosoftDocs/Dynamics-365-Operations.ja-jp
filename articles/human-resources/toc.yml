@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 3 月 22 日
+          href: hr-whats-new-2021-03-22.md
         - name: 2021 年 3 月 8 日
           href: hr-whats-new-2021-03-08.md
         - name: 2021 年 2 月 22 日
@@ -265,6 +267,8 @@
               href: hr-admin-troubleshooting-batch-jobs.md
             - name: 自動クリーンアップ タスクを使用したパフォーマンスの最適化
               href: hr-admin-troubleshooting-batch-history.md
+            - name: 行き詰まったバッチ ジョブのリセット
+              href: hr-admin-troubleshooting-batch-execution.md
             - name: 分析レポートが更新されない
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Power Apps 管理センターで環境を作成できない
