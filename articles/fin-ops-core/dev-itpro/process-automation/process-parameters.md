@@ -2,11 +2,9 @@
 title: プロセス パラメーター
 description: このトピックでは、プロセス自動化フレームワークでカスタム パラメーターを実装する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,45 +13,45 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7ea87c9a44acacc5bed4ec097d62a5d225f749
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6ec9071a5c8b62249e5bcab78919967df9f30bc1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683963"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751344"
 ---
-# <a name="process-parameters"></a><span data-ttu-id="20602-103">プロセス パラメーター</span><span class="sxs-lookup"><span data-stu-id="20602-103">Process parameters</span></span>
+# <a name="process-parameters"></a><span data-ttu-id="0a44b-103">プロセス パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a44b-103">Process parameters</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="20602-104">ほとんどの場合、プロセスには、そのプロセスに固有のカスタム パラメーターを格納する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20602-104">In most cases, a process must store custom parameters that are specific to its processes.</span></span> <span data-ttu-id="20602-105">たとえば、あるプロセスが日付範囲または顧客番号を必要とする場合があります。</span><span class="sxs-lookup"><span data-stu-id="20602-105">For example, a process might require a date range or a customer number.</span></span> <span data-ttu-id="20602-106">これらのパラメーターを表示および格納するには、独自のユーザー インターフェイス (UI) とカスタム テーブルを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20602-106">You must create your own user interface (UI) and custom tables to show and store these parameters.</span></span> <span data-ttu-id="20602-107">タイプにパラメーターがない場合は、このタスクを省略できます。</span><span class="sxs-lookup"><span data-stu-id="20602-107">If a type doesn't have any parameters, you can skip this task.</span></span>
+<span data-ttu-id="0a44b-104">ほとんどの場合、プロセスには、そのプロセスに固有のカスタム パラメーターを格納する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-104">In most cases, a process must store custom parameters that are specific to its processes.</span></span> <span data-ttu-id="0a44b-105">たとえば、あるプロセスが日付範囲または顧客番号を必要とする場合があります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-105">For example, a process might require a date range or a customer number.</span></span> <span data-ttu-id="0a44b-106">これらのパラメーターを表示および格納するには、独自のユーザー インターフェイス (UI) とカスタム テーブルを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-106">You must create your own user interface (UI) and custom tables to show and store these parameters.</span></span> <span data-ttu-id="0a44b-107">タイプにパラメーターがない場合は、このタスクを省略できます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-107">If a type doesn't have any parameters, you can skip this task.</span></span>
 
-<span data-ttu-id="20602-108">ユーザーが UI でシリーズを作成すると、**シリーズの作成** ウィザードが複数のフォーム パーツをホストします。各フォームには、関連するパラメーター セットが含まれています。</span><span class="sxs-lookup"><span data-stu-id="20602-108">When a user creates a series in the UI, the **Create series** wizard hosts multiple form parts, each of which contains a related set of parameters.</span></span> <span data-ttu-id="20602-109">プロセスのフォーム パーツには、ユーザーがパラメーターを入力するために使用する UI が含まれています。</span><span class="sxs-lookup"><span data-stu-id="20602-109">The form parts for the process contain the UI that the user uses to enter the parameters.</span></span> <span data-ttu-id="20602-110">これらのフォーム パーツは、プロセスの開発者によって作成され、タイプ登録を通じて提供されます。</span><span class="sxs-lookup"><span data-stu-id="20602-110">These form parts are built by the developer of the process and provided through type registration.</span></span> <span data-ttu-id="20602-111">フォーム パーツは、カスタム パラメーターを初期化、検証、および書き込みできるインターフェイスを実装します。</span><span class="sxs-lookup"><span data-stu-id="20602-111">A form part implements interfaces that let you initialize, validate, and write the custom parameters.</span></span>
+<span data-ttu-id="0a44b-108">ユーザーが UI でシリーズを作成すると、**シリーズの作成** ウィザードが複数のフォーム パーツをホストします。各フォームには、関連するパラメーター セットが含まれています。</span><span class="sxs-lookup"><span data-stu-id="0a44b-108">When a user creates a series in the UI, the **Create series** wizard hosts multiple form parts, each of which contains a related set of parameters.</span></span> <span data-ttu-id="0a44b-109">プロセスのフォーム パーツには、ユーザーがパラメーターを入力するために使用する UI が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0a44b-109">The form parts for the process contain the UI that the user uses to enter the parameters.</span></span> <span data-ttu-id="0a44b-110">これらのフォーム パーツは、プロセスの開発者によって作成され、タイプ登録を通じて提供されます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-110">These form parts are built by the developer of the process and provided through type registration.</span></span> <span data-ttu-id="0a44b-111">フォーム パーツは、カスタム パラメーターを初期化、検証、および書き込みできるインターフェイスを実装します。</span><span class="sxs-lookup"><span data-stu-id="0a44b-111">A form part implements interfaces that let you initialize, validate, and write the custom parameters.</span></span>
 
-<span data-ttu-id="20602-112">カスタム パラメーター テーブルには、通常、次の 2 つのタイプのレコードがあります。</span><span class="sxs-lookup"><span data-stu-id="20602-112">The custom parameter tables typically have two types of records:</span></span>
+<span data-ttu-id="0a44b-112">カスタム パラメーター テーブルには、通常、次の 2 つのタイプのレコードがあります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-112">The custom parameter tables typically have two types of records:</span></span>
 
-- <span data-ttu-id="20602-113">すべての発生のテンプレートとして機能するシリーズにバインドされるテンプレート レコード。</span><span class="sxs-lookup"><span data-stu-id="20602-113">A template record that is bound to the series that serves as a template for all occurrences.</span></span>
-- <span data-ttu-id="20602-114">発生に固有のレコード。その発生の実行時に使用されるパラメーターが含まれます。</span><span class="sxs-lookup"><span data-stu-id="20602-114">A record that is specific to an occurrence and contains the parameters that will be used when that occurrence runs.</span></span> <span data-ttu-id="20602-115">ユーザーは、必要に応じて、各発生に対してパラメーターを上書きできます。</span><span class="sxs-lookup"><span data-stu-id="20602-115">Users can override the parameters for each occurrence as they require.</span></span>
+- <span data-ttu-id="0a44b-113">すべての発生のテンプレートとして機能するシリーズにバインドされるテンプレート レコード。</span><span class="sxs-lookup"><span data-stu-id="0a44b-113">A template record that is bound to the series that serves as a template for all occurrences.</span></span>
+- <span data-ttu-id="0a44b-114">発生に固有のレコード。その発生の実行時に使用されるパラメーターが含まれます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-114">A record that is specific to an occurrence and contains the parameters that will be used when that occurrence runs.</span></span> <span data-ttu-id="0a44b-115">ユーザーは、必要に応じて、各発生に対してパラメーターを上書きできます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-115">Users can override the parameters for each occurrence as they require.</span></span>
 
-<span data-ttu-id="20602-116">パラメーター テーブルには通常、**ProcessScheduleSeries** テーブルへのひとつの外部キー (**RecId**) と、**ProcessScheduleOccurrence** テーブルへの別の外部キー (**RecId**) があります。</span><span class="sxs-lookup"><span data-stu-id="20602-116">Parameter tables typically have one foreign key (**RecId**) to the **ProcessScheduleSeries** table and another foreign key (**RecId**) to the **ProcessScheduleOccurrence** table.</span></span> <span data-ttu-id="20602-117">テンプレート レコードには、シリーズ外部キーがありますが、発生への外部キーはありません。</span><span class="sxs-lookup"><span data-stu-id="20602-117">The template record has a series foreign key, but it doesn't have a foreign key to the occurrence.</span></span> <span data-ttu-id="20602-118">他のすべてのレコードには、両方の外部キーがあります。</span><span class="sxs-lookup"><span data-stu-id="20602-118">All other records have both foreign keys.</span></span>
+<span data-ttu-id="0a44b-116">パラメーター テーブルには通常、**ProcessScheduleSeries** テーブルへのひとつの外部キー (**RecId**) と、**ProcessScheduleOccurrence** テーブルへの別の外部キー (**RecId**) があります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-116">Parameter tables typically have one foreign key (**RecId**) to the **ProcessScheduleSeries** table and another foreign key (**RecId**) to the **ProcessScheduleOccurrence** table.</span></span> <span data-ttu-id="0a44b-117">テンプレート レコードには、シリーズ外部キーがありますが、発生への外部キーはありません。</span><span class="sxs-lookup"><span data-stu-id="0a44b-117">The template record has a series foreign key, but it doesn't have a foreign key to the occurrence.</span></span> <span data-ttu-id="0a44b-118">他のすべてのレコードには、両方の外部キーがあります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-118">All other records have both foreign keys.</span></span>
 
-<span data-ttu-id="20602-119">これらのパラメーターを維持するために使用されるインタフェースは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="20602-119">The following interfaces are used to maintain these parameters.</span></span>
+<span data-ttu-id="0a44b-119">これらのパラメーターを維持するために使用されるインタフェースは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="0a44b-119">The following interfaces are used to maintain these parameters.</span></span>
 
-## <a name="processscheduleparametersiinitialize-interface"></a><span data-ttu-id="20602-120">ProcessScheduleParametersIInitialize インターフェイス</span><span class="sxs-lookup"><span data-stu-id="20602-120">ProcessScheduleParametersIInitialize interface</span></span>
+## <a name="processscheduleparametersiinitialize-interface"></a><span data-ttu-id="0a44b-120">ProcessScheduleParametersIInitialize インターフェイス</span><span class="sxs-lookup"><span data-stu-id="0a44b-120">ProcessScheduleParametersIInitialize interface</span></span>
 
-<span data-ttu-id="20602-121">**ProcessScheduleParametersIInitialize** インターフェイスを使用すると、ユーザーがプロセス自動化フレームワークの UI を操作するときにパラメーターを初期化できます。</span><span class="sxs-lookup"><span data-stu-id="20602-121">The **ProcessScheduleParametersIInitialize** interface lets you initialize parameters when the user interacts with the UI of the process automation framework.</span></span> <span data-ttu-id="20602-122">プロセス固有のパラメーターを表示するウィザード用に作成されたフォーム パーツは、このインターフェイスを実装します。</span><span class="sxs-lookup"><span data-stu-id="20602-122">The form part that is built for the wizard that shows process-specific parameters implements this interface.</span></span>
+<span data-ttu-id="0a44b-121">**ProcessScheduleParametersIInitialize** インターフェイスを使用すると、ユーザーがプロセス自動化フレームワークの UI を操作するときにパラメーターを初期化できます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-121">The **ProcessScheduleParametersIInitialize** interface lets you initialize parameters when the user interacts with the UI of the process automation framework.</span></span> <span data-ttu-id="0a44b-122">プロセス固有のパラメーターを表示するウィザード用に作成されたフォーム パーツは、このインターフェイスを実装します。</span><span class="sxs-lookup"><span data-stu-id="0a44b-122">The form part that is built for the wizard that shows process-specific parameters implements this interface.</span></span>
 
-## <a name="processscheduleparametersivalidate-interface"></a><span data-ttu-id="20602-123">ProcessScheduleParametersIValidate インターフェイス</span><span class="sxs-lookup"><span data-stu-id="20602-123">ProcessScheduleParametersIValidate interface</span></span>
+## <a name="processscheduleparametersivalidate-interface"></a><span data-ttu-id="0a44b-123">ProcessScheduleParametersIValidate インターフェイス</span><span class="sxs-lookup"><span data-stu-id="0a44b-123">ProcessScheduleParametersIValidate interface</span></span>
 
-<span data-ttu-id="20602-124">**ProcessScheduleParametersIValidate** インターフェイスを使用すると、ユーザーがフォーム パーツに入力したパラメーターを検証できます。</span><span class="sxs-lookup"><span data-stu-id="20602-124">The **ProcessScheduleParametersIValidate** interface lets you validate the parameters that the user enters in the form part.</span></span>
+<span data-ttu-id="0a44b-124">**ProcessScheduleParametersIValidate** インターフェイスを使用すると、ユーザーがフォーム パーツに入力したパラメーターを検証できます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-124">The **ProcessScheduleParametersIValidate** interface lets you validate the parameters that the user enters in the form part.</span></span>
 
-## <a name="processscheduleparametersiwrite-interface"></a><span data-ttu-id="20602-125">ProcessScheduleParametersIWrite インターフェイス</span><span class="sxs-lookup"><span data-stu-id="20602-125">ProcessScheduleParametersIWrite interface</span></span>
+## <a name="processscheduleparametersiwrite-interface"></a><span data-ttu-id="0a44b-125">ProcessScheduleParametersIWrite インターフェイス</span><span class="sxs-lookup"><span data-stu-id="0a44b-125">ProcessScheduleParametersIWrite interface</span></span>
 
-<span data-ttu-id="20602-126">**ProcessScheduleParametersIWrite** インターフェイスを使用すると、パラメーターをカスタム パラメーター テーブルに書き込むことができます。</span><span class="sxs-lookup"><span data-stu-id="20602-126">The **ProcessScheduleParametersIWrite** interface lets you write the parameters to their custom parameter tables.</span></span>
+<span data-ttu-id="0a44b-126">**ProcessScheduleParametersIWrite** インターフェイスを使用すると、パラメーターをカスタム パラメーター テーブルに書き込むことができます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-126">The **ProcessScheduleParametersIWrite** interface lets you write the parameters to their custom parameter tables.</span></span>
 
-## <a name="example"></a><span data-ttu-id="20602-127">例</span><span class="sxs-lookup"><span data-stu-id="20602-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0a44b-127">例</span><span class="sxs-lookup"><span data-stu-id="0a44b-127">Example</span></span>
 
-<span data-ttu-id="20602-128">次の例では、上記の 3 つのインターフェイスがサンプルのテスト プロセスで使用されています。</span><span class="sxs-lookup"><span data-stu-id="20602-128">In the following example, the three interfaces that were just described are used for a sample test process.</span></span> <span data-ttu-id="20602-129">この例では、フォーム パーツに *メッセージ* と呼ばれる 1 つの文字列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="20602-129">In this example, the form part contains a single string that is known as a *message*.</span></span>
+<span data-ttu-id="0a44b-128">次の例では、上記の 3 つのインターフェイスがサンプルのテスト プロセスで使用されています。</span><span class="sxs-lookup"><span data-stu-id="0a44b-128">In the following example, the three interfaces that were just described are used for a sample test process.</span></span> <span data-ttu-id="0a44b-129">この例では、フォーム パーツに *メッセージ* と呼ばれる 1 つの文字列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0a44b-129">In this example, the form part contains a single string that is known as a *message*.</span></span>
 
 ```xpp
 [Form]
@@ -164,13 +162,13 @@ implements ProcessScheduleParametersIWrite, ProcessScheduleParametersIValidate, 
 }
 ```
 
-## <a name="processscheduleideleteoccurrence-interface"></a><span data-ttu-id="20602-130">ProcessScheduleIDeleteOccurrence インターフェイス</span><span class="sxs-lookup"><span data-stu-id="20602-130">ProcessScheduleIDeleteOccurrence interface</span></span>
+## <a name="processscheduleideleteoccurrence-interface"></a><span data-ttu-id="0a44b-130">ProcessScheduleIDeleteOccurrence インターフェイス</span><span class="sxs-lookup"><span data-stu-id="0a44b-130">ProcessScheduleIDeleteOccurrence interface</span></span>
 
-<span data-ttu-id="20602-131">ユーザーまたはシステムが発生を削除したことを示すイベントを受け取るための **ProcessScheduleIDeleteOccurrence** インターフェイスを実装します。</span><span class="sxs-lookup"><span data-stu-id="20602-131">Implement the **ProcessScheduleIDeleteOccurrence** interface to receive an event that indicates that a user or the system has deleted occurrences.</span></span> <span data-ttu-id="20602-132">その発生に関連付けられているパラメーターを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20602-132">The parameters that are related to that occurrence should be deleted.</span></span>
+<span data-ttu-id="0a44b-131">ユーザーまたはシステムが発生を削除したことを示すイベントを受け取るための **ProcessScheduleIDeleteOccurrence** インターフェイスを実装します。</span><span class="sxs-lookup"><span data-stu-id="0a44b-131">Implement the **ProcessScheduleIDeleteOccurrence** interface to receive an event that indicates that a user or the system has deleted occurrences.</span></span> <span data-ttu-id="0a44b-132">その発生に関連付けられているパラメーターを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-132">The parameters that are related to that occurrence should be deleted.</span></span>
 
-<span data-ttu-id="20602-133">このインターフェイスは、特定のタイプの **SysPlugIn** を介して呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="20602-133">This interface is invoked via **SysPlugIn** for a specific type.</span></span> <span data-ttu-id="20602-134">タイプを登録したときに作成されたタイプ名を使用します。</span><span class="sxs-lookup"><span data-stu-id="20602-134">Use the type name that was created when the type was registered.</span></span>
+<span data-ttu-id="0a44b-133">このインターフェイスは、特定のタイプの **SysPlugIn** を介して呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-133">This interface is invoked via **SysPlugIn** for a specific type.</span></span> <span data-ttu-id="0a44b-134">タイプを登録したときに作成されたタイプ名を使用します。</span><span class="sxs-lookup"><span data-stu-id="0a44b-134">Use the type name that was created when the type was registered.</span></span>
 
-<span data-ttu-id="20602-135">セットベースの削除を実行できるように、Microsoft Azure SQL データベースの一時テーブルが渡されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="20602-135">Note that a Microsoft Azure SQL Database temp table is passed in so that you can do set-based deletes.</span></span>
+<span data-ttu-id="0a44b-135">セットベースの削除を実行できるように、Microsoft Azure SQL データベースの一時テーブルが渡されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="0a44b-135">Note that a Microsoft Azure SQL Database temp table is passed in so that you can do set-based deletes.</span></span>
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -212,11 +210,11 @@ implements ProcessScheduleIDeleteOccurrence
 }
 ```
 
-## <a name="processscheduleideleteseries-interface"></a><span data-ttu-id="20602-136">ProcessScheduleIDeleteSeries インターフェイス</span><span class="sxs-lookup"><span data-stu-id="20602-136">ProcessScheduleIDeleteSeries interface</span></span>
+## <a name="processscheduleideleteseries-interface"></a><span data-ttu-id="0a44b-136">ProcessScheduleIDeleteSeries インターフェイス</span><span class="sxs-lookup"><span data-stu-id="0a44b-136">ProcessScheduleIDeleteSeries interface</span></span>
 
-<span data-ttu-id="20602-137">**ProcessScheduleIDeleteSeries** は、**ProcessScheduleIDeleteOccurrence** に似ています。</span><span class="sxs-lookup"><span data-stu-id="20602-137">The **ProcessScheduleIDeleteSeries** interface resembles **ProcessScheduleIDeleteOccurrence**.</span></span> <span data-ttu-id="20602-138">このイベントは、シリーズが削除されるたびに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="20602-138">The event is invoked whenever a series is deleted.</span></span> <span data-ttu-id="20602-139">すべての発生に関して、パラメーター レコードをすべて削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20602-139">You should delete all parameter records for all occurrences.</span></span> <span data-ttu-id="20602-140">これらのレコードには、シリーズ テンプレート レコードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="20602-140">These records include the series template record.</span></span>
+<span data-ttu-id="0a44b-137">**ProcessScheduleIDeleteSeries** は、**ProcessScheduleIDeleteOccurrence** に似ています。</span><span class="sxs-lookup"><span data-stu-id="0a44b-137">The **ProcessScheduleIDeleteSeries** interface resembles **ProcessScheduleIDeleteOccurrence**.</span></span> <span data-ttu-id="0a44b-138">このイベントは、シリーズが削除されるたびに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-138">The event is invoked whenever a series is deleted.</span></span> <span data-ttu-id="0a44b-139">すべての発生に関して、パラメーター レコードをすべて削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-139">You should delete all parameter records for all occurrences.</span></span> <span data-ttu-id="0a44b-140">これらのレコードには、シリーズ テンプレート レコードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="0a44b-140">These records include the series template record.</span></span>
 
-<span data-ttu-id="20602-141">セットベースの削除を実行できるように、SQL データベースの一時テーブルが渡されます。</span><span class="sxs-lookup"><span data-stu-id="20602-141">A SQL Database temp table is passed in so that you can do set-based deletes.</span></span>
+<span data-ttu-id="0a44b-141">セットベースの削除を実行できるように、SQL データベースの一時テーブルが渡されます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-141">A SQL Database temp table is passed in so that you can do set-based deletes.</span></span>
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -250,13 +248,13 @@ implements ProcessScheduleIDeleteSeries
 }
 ```
 
-## <a name="processscheduleiexplodeoccurrences-interface"></a><span data-ttu-id="20602-142">ProcessScheduleIExplodeOccurrences インターフェイス</span><span class="sxs-lookup"><span data-stu-id="20602-142">ProcessScheduleIExplodeOccurrences interface</span></span>
+## <a name="processscheduleiexplodeoccurrences-interface"></a><span data-ttu-id="0a44b-142">ProcessScheduleIExplodeOccurrences インターフェイス</span><span class="sxs-lookup"><span data-stu-id="0a44b-142">ProcessScheduleIExplodeOccurrences interface</span></span>
 
-<span data-ttu-id="20602-143">ユーザーが UI を通じて新しいシリーズを作成すると、すべての将来の発生が生成されます。</span><span class="sxs-lookup"><span data-stu-id="20602-143">When a user creates a new series through the UI, all the future occurrences are generated.</span></span> <span data-ttu-id="20602-144">したがって、シリーズが毎日実行される場合は、プロセス自動化フレームワークによって毎日発生が作成されます。</span><span class="sxs-lookup"><span data-stu-id="20602-144">Therefore, if the series runs every day, the process automation framework creates an occurrence for every day.</span></span> <span data-ttu-id="20602-145">このアクションは、*シリーズの生成* と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="20602-145">This action is known as *generating the series*.</span></span> <span data-ttu-id="20602-146">**ProcessScheduleIExplodeOccurrences** イベントは、シリーズが生成されたときに発生します。</span><span class="sxs-lookup"><span data-stu-id="20602-146">The **ProcessScheduleIExplodeOccurrences** event is fired when the series is generated.</span></span> <span data-ttu-id="20602-147">パラメーター テーブル内の各発生にパラメーター レコードを作成するには、シリーズ テンプレート レコードをテンプレートとして使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20602-147">The series template record should be used as a template to create parameter records for each occurrence in the parameter tables.</span></span>
+<span data-ttu-id="0a44b-143">ユーザーが UI を通じて新しいシリーズを作成すると、すべての将来の発生が生成されます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-143">When a user creates a new series through the UI, all the future occurrences are generated.</span></span> <span data-ttu-id="0a44b-144">したがって、シリーズが毎日実行される場合は、プロセス自動化フレームワークによって毎日発生が作成されます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-144">Therefore, if the series runs every day, the process automation framework creates an occurrence for every day.</span></span> <span data-ttu-id="0a44b-145">このアクションは、*シリーズの生成* と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-145">This action is known as *generating the series*.</span></span> <span data-ttu-id="0a44b-146">**ProcessScheduleIExplodeOccurrences** イベントは、シリーズが生成されたときに発生します。</span><span class="sxs-lookup"><span data-stu-id="0a44b-146">The **ProcessScheduleIExplodeOccurrences** event is fired when the series is generated.</span></span> <span data-ttu-id="0a44b-147">パラメーター テーブル内の各発生にパラメーター レコードを作成するには、シリーズ テンプレート レコードをテンプレートとして使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a44b-147">The series template record should be used as a template to create parameter records for each occurrence in the parameter tables.</span></span>
 
-<span data-ttu-id="20602-148">最適なパフォーマンスを得るためのパラメーター レコードを作成するために、SQL データベースの一時テーブルが渡されます。</span><span class="sxs-lookup"><span data-stu-id="20602-148">A SQL Database temp table is passed in so that you can do set-based creation of parameter records for optimal performance.</span></span>
+<span data-ttu-id="0a44b-148">最適なパフォーマンスを得るためのパラメーター レコードを作成するために、SQL データベースの一時テーブルが渡されます。</span><span class="sxs-lookup"><span data-stu-id="0a44b-148">A SQL Database temp table is passed in so that you can do set-based creation of parameter records for optimal performance.</span></span>
 
-<span data-ttu-id="20602-149">次の例では、パラメーター テーブルに **Type** という名前の 1 つのパラメーターが格納されています。</span><span class="sxs-lookup"><span data-stu-id="20602-149">In the following example, a parameter table stores a single parameter that is named **Type**.</span></span> <span data-ttu-id="20602-150">このパラメーターはプロセス自動化フレームワーク タイプとは関連していませんが、キャッシュ フロー予測に固有です。</span><span class="sxs-lookup"><span data-stu-id="20602-150">This parameter isn't related to the process automation framework type but is specific to cash flow forecasting.</span></span>
+<span data-ttu-id="0a44b-149">次の例では、パラメーター テーブルに **Type** という名前の 1 つのパラメーターが格納されています。</span><span class="sxs-lookup"><span data-stu-id="0a44b-149">In the following example, a parameter table stores a single parameter that is named **Type**.</span></span> <span data-ttu-id="0a44b-150">このパラメーターはプロセス自動化フレームワーク タイプとは関連していませんが、キャッシュ フロー予測に固有です。</span><span class="sxs-lookup"><span data-stu-id="0a44b-150">This parameter isn't related to the process automation framework type but is specific to cash flow forecasting.</span></span>
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -293,3 +291,6 @@ implements ProcessScheduleIExplodeOccurrences
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

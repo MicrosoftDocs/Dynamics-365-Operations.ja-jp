@@ -2,11 +2,9 @@
 title: 運用ワークスペースの構築
 description: このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,161 +14,164 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9ceed8d2488e1784b368bcc28154a4b3ce8370f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f4bd903f0f725c985b1d59571e220d3814353416
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679748"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752672"
 ---
-# <a name="build-operational-workspaces"></a><span data-ttu-id="f0491-103">運用ワークスペースの構築</span><span class="sxs-lookup"><span data-stu-id="f0491-103">Build operational workspaces</span></span>
+# <a name="build-operational-workspaces"></a><span data-ttu-id="ead0f-103">運用ワークスペースの構築</span><span class="sxs-lookup"><span data-stu-id="ead0f-103">Build operational workspaces</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f0491-104">このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="f0491-104">This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces.</span></span> 
+<span data-ttu-id="ead0f-104">このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-104">This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces.</span></span> 
 
-## <a name="a-workspace-is-defined-as"></a><span data-ttu-id="f0491-105">ワークスペースは、次のように定義されています。</span><span class="sxs-lookup"><span data-stu-id="f0491-105">A workspace is defined as...</span></span>
+## <a name="a-workspace-is-defined-as"></a><span data-ttu-id="ead0f-105">ワークスペースは、次のように定義されています。</span><span class="sxs-lookup"><span data-stu-id="ead0f-105">A workspace is defined as...</span></span>
 
-- <span data-ttu-id="f0491-106">プライマリ ナビゲーション メカニズムの一部。</span><span class="sxs-lookup"><span data-stu-id="f0491-106">Part of the primary navigation mechanism.</span></span>
-- <span data-ttu-id="f0491-107">事業活動 (ターゲット ユーザーの作業を構成するタスクの論理グループ) をサポートするフォーム。</span><span class="sxs-lookup"><span data-stu-id="f0491-107">A form that supports a business activity (a logical group of tasks that make up the work of a target persona).</span></span>
-- <span data-ttu-id="f0491-108">単純なタスクをワークスペースで直接完了できるようにすることで、活動の初期の概要を提供し、生産性を向上させる方法。</span><span class="sxs-lookup"><span data-stu-id="f0491-108">A way to provide an initial overview and to increase productivity in the activity by allowing simple tasks to be completed directly in the workspace.</span></span>
+- <span data-ttu-id="ead0f-106">プライマリ ナビゲーション メカニズムの一部。</span><span class="sxs-lookup"><span data-stu-id="ead0f-106">Part of the primary navigation mechanism.</span></span>
+- <span data-ttu-id="ead0f-107">事業活動 (ターゲット ユーザーの作業を構成するタスクの論理グループ) をサポートするフォーム。</span><span class="sxs-lookup"><span data-stu-id="ead0f-107">A form that supports a business activity (a logical group of tasks that make up the work of a target persona).</span></span>
+- <span data-ttu-id="ead0f-108">単純なタスクをワークスペースで直接完了できるようにすることで、活動の初期の概要を提供し、生産性を向上させる方法。</span><span class="sxs-lookup"><span data-stu-id="ead0f-108">A way to provide an initial overview and to increase productivity in the activity by allowing simple tasks to be completed directly in the workspace.</span></span>
 
-## <a name="workspaces-have-the-following-goals"></a><span data-ttu-id="f0491-109">ワークスペースには次の目的があります...</span><span class="sxs-lookup"><span data-stu-id="f0491-109">Workspaces have the following goals...</span></span>
+## <a name="workspaces-have-the-following-goals"></a><span data-ttu-id="ead0f-109">ワークスペースには次の目的があります...</span><span class="sxs-lookup"><span data-stu-id="ead0f-109">Workspaces have the following goals...</span></span>
 
-- <span data-ttu-id="f0491-110">情報に基づいた意思決定をサポートするために、ユーザーがアクティビティの現在の状態を理解できるようにします。</span><span class="sxs-lookup"><span data-stu-id="f0491-110">Enable the user to understand the current state of the activity to support informed decisions.</span></span>
-- <span data-ttu-id="f0491-111">データを選択することでユーザーを深いページに移動させ、情報のないページへのラウンド トリップを回避します。</span><span class="sxs-lookup"><span data-stu-id="f0491-111">Let users navigate to deeper pages by selecting data, which avoids round-trips to pages with no information.</span></span>
-- <span data-ttu-id="f0491-112">深いページへのラウンド トリップを回避するためにワークスペースでユーザーに軽いタスクを実行させます。</span><span class="sxs-lookup"><span data-stu-id="f0491-112">Let users perform light tasks in the workspaces to avoid round-trips to deeper pages.</span></span>
-- <span data-ttu-id="f0491-113">ワークスペースを離れることなく活動を完了します。</span><span class="sxs-lookup"><span data-stu-id="f0491-113">Complete an activity without leaving the workspace.</span></span>
-- <span data-ttu-id="f0491-114">ナビゲーションの必要性が減少します。</span><span class="sxs-lookup"><span data-stu-id="f0491-114">Reduce the need for navigation.</span></span>
-- <span data-ttu-id="f0491-115">ビジュアル効果を提供します。</span><span class="sxs-lookup"><span data-stu-id="f0491-115">Provide visual impact.</span></span>
-- <span data-ttu-id="f0491-116">最小限の COGS と迅速な応答時間をもたらす規範的なパターンとベスト プラクティスを使用して構築します。</span><span class="sxs-lookup"><span data-stu-id="f0491-116">Be constructed using prescriptive patterns and best practices that lead to minimal COGS and fast response times.</span></span>
+- <span data-ttu-id="ead0f-110">情報に基づいた意思決定をサポートするために、ユーザーがアクティビティの現在の状態を理解できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ead0f-110">Enable the user to understand the current state of the activity to support informed decisions.</span></span>
+- <span data-ttu-id="ead0f-111">データを選択することでユーザーを深いページに移動させ、情報のないページへのラウンド トリップを回避します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-111">Let users navigate to deeper pages by selecting data, which avoids round-trips to pages with no information.</span></span>
+- <span data-ttu-id="ead0f-112">深いページへのラウンド トリップを回避するためにワークスペースでユーザーに軽いタスクを実行させます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-112">Let users perform light tasks in the workspaces to avoid round-trips to deeper pages.</span></span>
+- <span data-ttu-id="ead0f-113">ワークスペースを離れることなく活動を完了します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-113">Complete an activity without leaving the workspace.</span></span>
+- <span data-ttu-id="ead0f-114">ナビゲーションの必要性が減少します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-114">Reduce the need for navigation.</span></span>
+- <span data-ttu-id="ead0f-115">ビジュアル効果を提供します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-115">Provide visual impact.</span></span>
+- <span data-ttu-id="ead0f-116">最小限の COGS と迅速な応答時間をもたらす規範的なパターンとベスト プラクティスを使用して構築します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-116">Be constructed using prescriptive patterns and best practices that lead to minimal COGS and fast response times.</span></span>
 
-<span data-ttu-id="f0491-117">[![ワークスペースの例](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png)</span><span class="sxs-lookup"><span data-stu-id="f0491-117">[![Example of a workspace](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png)</span></span> 
+<span data-ttu-id="ead0f-117">[![ワークスペースの例](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png)</span><span class="sxs-lookup"><span data-stu-id="ead0f-117">[![Example of a workspace](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png)</span></span> 
 
-<span data-ttu-id="f0491-118">これらの目標を達成するため、工程ワークスペース パターンが開発されました。</span><span class="sxs-lookup"><span data-stu-id="f0491-118">To accomplish these goals, the operation workspace pattern was developed.</span></span>
+<span data-ttu-id="ead0f-118">これらの目標を達成するため、工程ワークスペース パターンが開発されました。</span><span class="sxs-lookup"><span data-stu-id="ead0f-118">To accomplish these goals, the operation workspace pattern was developed.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f0491-119">例</span><span class="sxs-lookup"><span data-stu-id="f0491-119">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ead0f-119">例</span><span class="sxs-lookup"><span data-stu-id="ead0f-119">Examples</span></span>
 
-<span data-ttu-id="f0491-120">ワークスペースの例は、**フリート管理** の **予約管理** ワークスペースです。</span><span class="sxs-lookup"><span data-stu-id="f0491-120">An example of a workspace is the **Reservation management** workspace in **Fleet management**.</span></span> <span data-ttu-id="f0491-121">メニュー項目 **FMClerkWorkspace** にアクセスすることにより取得することができます。</span><span class="sxs-lookup"><span data-stu-id="f0491-121">You can get to it by accessing the menu item **FMClerkWorkspace**.</span></span>   <span data-ttu-id="f0491-122">上記のワークスペースには、次の項目があります。</span><span class="sxs-lookup"><span data-stu-id="f0491-122">The workspace, shown above, has the following items:</span></span>
+<span data-ttu-id="ead0f-120">ワークスペースの例は、**フリート管理** の **予約管理** ワークスペースです。</span><span class="sxs-lookup"><span data-stu-id="ead0f-120">An example of a workspace is the **Reservation management** workspace in **Fleet management**.</span></span> <span data-ttu-id="ead0f-121">メニュー項目 **FMClerkWorkspace** にアクセスすることにより取得することができます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-121">You can get to it by accessing the menu item **FMClerkWorkspace**.</span></span>   <span data-ttu-id="ead0f-122">上記のワークスペースには、次の項目があります。</span><span class="sxs-lookup"><span data-stu-id="ead0f-122">The workspace, shown above, has the following items:</span></span>
 
-- <span data-ttu-id="f0491-123">**集計** - タイルとグラフが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f0491-123">**Summary** - Contains tiles and a chart.</span></span>
-- <span data-ttu-id="f0491-124">**レンタル** - 3 ページから成る垂直タブ コントロールが含まれています。最初のページが選択され、右端に対応する内容が表示されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-124">**Rentals** - Contains a vertical tab control having three pages - the first is selected, and you can see the corresponding content on the rightmost side.</span></span>
-- <span data-ttu-id="f0491-125">**統計** - 積み上げグラフを含みます。</span><span class="sxs-lookup"><span data-stu-id="f0491-125">**Statistics** - Contains stacked charts.</span></span>
-- <span data-ttu-id="f0491-126">**関連リンク** - このユーザーと活動に関連するフォームへのグループ化された一連のメニュー項目のリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f0491-126">**Related links** - Contains a series of grouped menu item links to forms of relevance to this user and activity.</span></span>
+- <span data-ttu-id="ead0f-123">**集計** - タイルとグラフが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ead0f-123">**Summary** - Contains tiles and a chart.</span></span>
+- <span data-ttu-id="ead0f-124">**レンタル** - 3 ページから成る垂直タブ コントロールが含まれています。最初のページが選択され、右端に対応する内容が表示されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-124">**Rentals** - Contains a vertical tab control having three pages - the first is selected, and you can see the corresponding content on the rightmost side.</span></span>
+- <span data-ttu-id="ead0f-125">**統計** - 積み上げグラフを含みます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-125">**Statistics** - Contains stacked charts.</span></span>
+- <span data-ttu-id="ead0f-126">**関連リンク** - このユーザーと活動に関連するフォームへのグループ化された一連のメニュー項目のリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ead0f-126">**Related links** - Contains a series of grouped menu item links to forms of relevance to this user and activity.</span></span>
 
-<span data-ttu-id="f0491-127">全体のフォームとその中の各セクションは、UX パターンとサブパターンを使用して定義されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-127">The overall form, as well as each of the sections within, are defined using UX patterns and subpatterns.</span></span> <span data-ttu-id="f0491-128">対応するパターンについては、次のセクションで詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="f0491-128">The corresponding patterns are described in detail in the following sections.</span></span>
+<span data-ttu-id="ead0f-127">全体のフォームとその中の各セクションは、UX パターンとサブパターンを使用して定義されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-127">The overall form, as well as each of the sections within, are defined using UX patterns and subpatterns.</span></span> <span data-ttu-id="ead0f-128">対応するパターンについては、次のセクションで詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-128">The corresponding patterns are described in detail in the following sections.</span></span>
 
-## <a name="patterns-and-subpatterns"></a><span data-ttu-id="f0491-129">パターンおよびサブパターン</span><span class="sxs-lookup"><span data-stu-id="f0491-129">Patterns and subpatterns</span></span>
-<span data-ttu-id="f0491-130">オペレーション ワークスペースを作成するときは、その目的に合わせて定義されたパターンとサブパターンを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0491-130">When building an operational workspace, you must use the patterns and subpatterns defined for that purpose.</span></span> <span data-ttu-id="f0491-131">これらのパターンとサブパターンは以下で説明します。</span><span class="sxs-lookup"><span data-stu-id="f0491-131">These patterns and subpatterns are described below.</span></span> <span data-ttu-id="f0491-132">一般に、コントロールがパターンの構造内で引用されている場合、共通名 (ControlType) \[カーディナリティ\]として示されます。カーディナリティが指定されていない場合、項目が 1 回だけ要求されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-132">In general, when a control is cited within a pattern's structure, it will be described as: Common name (ControlType) \[cardinality\] If cardinality isn't specified, then the item is required exactly once.</span></span> <span data-ttu-id="f0491-133">単純なパターンおよびサブパターンでは構造ツリーが省略されています。</span><span class="sxs-lookup"><span data-stu-id="f0491-133">Simple patterns and subpatterns have the structural tree omitted.</span></span>
+## <a name="patterns-and-subpatterns"></a><span data-ttu-id="ead0f-129">パターンおよびサブパターン</span><span class="sxs-lookup"><span data-stu-id="ead0f-129">Patterns and subpatterns</span></span>
+<span data-ttu-id="ead0f-130">オペレーション ワークスペースを作成するときは、その目的に合わせて定義されたパターンとサブパターンを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ead0f-130">When building an operational workspace, you must use the patterns and subpatterns defined for that purpose.</span></span> <span data-ttu-id="ead0f-131">これらのパターンとサブパターンは以下で説明します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-131">These patterns and subpatterns are described below.</span></span> <span data-ttu-id="ead0f-132">一般に、コントロールがパターンの構造内で引用されている場合、共通名 (ControlType) \[カーディナリティ\]として示されます。カーディナリティが指定されていない場合、項目が 1 回だけ要求されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-132">In general, when a control is cited within a pattern's structure, it will be described as: Common name (ControlType) \[cardinality\] If cardinality isn't specified, then the item is required exactly once.</span></span> <span data-ttu-id="ead0f-133">単純なパターンおよびサブパターンでは構造ツリーが省略されています。</span><span class="sxs-lookup"><span data-stu-id="ead0f-133">Simple patterns and subpatterns have the structural tree omitted.</span></span>
 
-### <a name="patterns"></a><span data-ttu-id="f0491-134">パターン</span><span class="sxs-lookup"><span data-stu-id="f0491-134">Patterns</span></span>
+### <a name="patterns"></a><span data-ttu-id="ead0f-134">パターン</span><span class="sxs-lookup"><span data-stu-id="ead0f-134">Patterns</span></span>
 
-<span data-ttu-id="f0491-135">運用ワークスペースで使用するトップレベルのパターンがあります。</span><span class="sxs-lookup"><span data-stu-id="f0491-135">There are the top-level patterns for use with operational workspaces.</span></span>
+<span data-ttu-id="ead0f-135">運用ワークスペースで使用するトップレベルのパターンがあります。</span><span class="sxs-lookup"><span data-stu-id="ead0f-135">There are the top-level patterns for use with operational workspaces.</span></span>
 
-#### <a name="workspace-operational"></a><span data-ttu-id="f0491-136">作業可能なワークスペース</span><span class="sxs-lookup"><span data-stu-id="f0491-136">Workspace Operational</span></span>
+#### <a name="workspace-operational"></a><span data-ttu-id="ead0f-136">作業可能なワークスペース</span><span class="sxs-lookup"><span data-stu-id="ead0f-136">Workspace Operational</span></span>
 
-<span data-ttu-id="f0491-137">このパターンは主な運用ワークスペース パターンであり、運用ワークスペース フォームの **設計** ノードに適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0491-137">This pattern is the primary operational workspace pattern and should be applied to the **Design** node of the operational workspace form.</span></span> <span data-ttu-id="f0491-138">次の構造体を指定します。</span><span class="sxs-lookup"><span data-stu-id="f0491-138">It will prescribe the following structure:</span></span>
+<span data-ttu-id="ead0f-137">このパターンは主な運用ワークスペース パターンであり、運用ワークスペース フォームの **設計** ノードに適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ead0f-137">This pattern is the primary operational workspace pattern and should be applied to the **Design** node of the operational workspace form.</span></span> <span data-ttu-id="ead0f-138">次の構造体を指定します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-138">It will prescribe the following structure:</span></span>
 
-- <span data-ttu-id="f0491-139">デザイン</span><span class="sxs-lookup"><span data-stu-id="f0491-139">Design</span></span>
-    - <span data-ttu-id="f0491-140">ActionPane (ActionPane) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="f0491-140">ActionPane (ActionPane) \[0..\*\]</span></span>
-    - <span data-ttu-id="f0491-141">ワークスペース ページ フィルター グループ (グループ) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-141">Workspace Page Filter Group (Group) \[0..1\]</span></span>
-        - <span data-ttu-id="f0491-142">サブパターン: ワークスペース ページ フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="f0491-142">Subpattern: Workspace Page Filter Group</span></span>
-    - <span data-ttu-id="f0491-143">パノラマ (タブ)</span><span class="sxs-lookup"><span data-stu-id="f0491-143">Panorama (Tab)</span></span>
-        - <span data-ttu-id="f0491-144">セクション概要タイル (TabPage)</span><span class="sxs-lookup"><span data-stu-id="f0491-144">Section Summary Tiles (TabPage)</span></span>
-            - <span data-ttu-id="f0491-145">サブパターン: セクション タイル</span><span class="sxs-lookup"><span data-stu-id="f0491-145">Subpattern: Section tiles</span></span>
-        - <span data-ttu-id="f0491-146">セクション タブ付きリスト (TabPage)</span><span class="sxs-lookup"><span data-stu-id="f0491-146">Section Tabbed List (TabPage)</span></span>
-            - <span data-ttu-id="f0491-147">サブパターン: セクション タブ付きリスト</span><span class="sxs-lookup"><span data-stu-id="f0491-147">Subpattern: Section Tabbed List</span></span>
-        - <span data-ttu-id="f0491-148">セクション グラフ (TabPage) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-148">Section Charts (TabPage) \[0..1\]</span></span>
-            - <span data-ttu-id="f0491-149">サブパターン: セクション積み上げグラフ</span><span class="sxs-lookup"><span data-stu-id="f0491-149">Subpattern: Section Stacked Chart</span></span>
-        - <span data-ttu-id="f0491-150">セクション関連リンク (TabPage)</span><span class="sxs-lookup"><span data-stu-id="f0491-150">Section-Related Links (TabPage)</span></span>
-            - <span data-ttu-id="f0491-151">サブパターン: セクション関連リンク</span><span class="sxs-lookup"><span data-stu-id="f0491-151">Subpattern: Section-Related Links</span></span>
+- <span data-ttu-id="ead0f-139">デザイン</span><span class="sxs-lookup"><span data-stu-id="ead0f-139">Design</span></span>
+    - <span data-ttu-id="ead0f-140">ActionPane (ActionPane) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-140">ActionPane (ActionPane) \[0..\*\]</span></span>
+    - <span data-ttu-id="ead0f-141">ワークスペース ページ フィルター グループ (グループ) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-141">Workspace Page Filter Group (Group) \[0..1\]</span></span>
+        - <span data-ttu-id="ead0f-142">サブパターン: ワークスペース ページ フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="ead0f-142">Subpattern: Workspace Page Filter Group</span></span>
+    - <span data-ttu-id="ead0f-143">パノラマ (タブ)</span><span class="sxs-lookup"><span data-stu-id="ead0f-143">Panorama (Tab)</span></span>
+        - <span data-ttu-id="ead0f-144">セクション概要タイル (TabPage)</span><span class="sxs-lookup"><span data-stu-id="ead0f-144">Section Summary Tiles (TabPage)</span></span>
+            - <span data-ttu-id="ead0f-145">サブパターン: セクション タイル</span><span class="sxs-lookup"><span data-stu-id="ead0f-145">Subpattern: Section tiles</span></span>
+        - <span data-ttu-id="ead0f-146">セクション タブ付きリスト (TabPage)</span><span class="sxs-lookup"><span data-stu-id="ead0f-146">Section Tabbed List (TabPage)</span></span>
+            - <span data-ttu-id="ead0f-147">サブパターン: セクション タブ付きリスト</span><span class="sxs-lookup"><span data-stu-id="ead0f-147">Subpattern: Section Tabbed List</span></span>
+        - <span data-ttu-id="ead0f-148">セクション グラフ (TabPage) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-148">Section Charts (TabPage) \[0..1\]</span></span>
+            - <span data-ttu-id="ead0f-149">サブパターン: セクション積み上げグラフ</span><span class="sxs-lookup"><span data-stu-id="ead0f-149">Subpattern: Section Stacked Chart</span></span>
+        - <span data-ttu-id="ead0f-150">セクション関連リンク (TabPage)</span><span class="sxs-lookup"><span data-stu-id="ead0f-150">Section-Related Links (TabPage)</span></span>
+            - <span data-ttu-id="ead0f-151">サブパターン: セクション関連リンク</span><span class="sxs-lookup"><span data-stu-id="ead0f-151">Subpattern: Section-Related Links</span></span>
 
-#### <a name="form-part-section-list"></a><span data-ttu-id="f0491-152">フォーム パート セクション リスト</span><span class="sxs-lookup"><span data-stu-id="f0491-152">Form Part Section List</span></span>
+#### <a name="form-part-section-list"></a><span data-ttu-id="ead0f-152">フォーム パート セクション リスト</span><span class="sxs-lookup"><span data-stu-id="ead0f-152">Form Part Section List</span></span>
 
-<span data-ttu-id="f0491-153">このパターンは、リストを含む **フォーム パート** フォームに使用されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-153">This pattern is used for **Form Part** forms containing a list.</span></span> <span data-ttu-id="f0491-154">これらのリストは、運用ワークスペースのパターンのセクション タブ付きリスト TabPage 内で参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-154">These lists are referenced within the Section Tabbed List TabPage in the Workspace Operational pattern.</span></span>
+<span data-ttu-id="ead0f-153">このパターンは、リストを含む **フォーム パート** フォームに使用されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-153">This pattern is used for **Form Part** forms containing a list.</span></span> <span data-ttu-id="ead0f-154">これらのリストは、運用ワークスペースのパターンのセクション タブ付きリスト TabPage 内で参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-154">These lists are referenced within the Section Tabbed List TabPage in the Workspace Operational pattern.</span></span>
 
-- <span data-ttu-id="f0491-155">デザイン</span><span class="sxs-lookup"><span data-stu-id="f0491-155">Design</span></span>
-    - <span data-ttu-id="f0491-156">ヘッダー グループ (グループ) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-156">Header Group (Group) \[0..1\]</span></span>
-        - <span data-ttu-id="f0491-157">サブパターン: フィルターおよびツール バー - インラインまたはサブパターン: フィルターおよびツール バー - 積み上げ</span><span class="sxs-lookup"><span data-stu-id="f0491-157">Subpattern: Filters and toolbar - Inline OR Subpattern: Filters and Toolbar - Stacked</span></span>
-    - <span data-ttu-id="f0491-158">コンテンツ グリッド (グリッド)</span><span class="sxs-lookup"><span data-stu-id="f0491-158">Content Grid (Grid)</span></span>
-    - <span data-ttu-id="f0491-159">既定のアクション ボタン ($Button - ボタンの種類) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-159">Default Action Button ($Button - any type of button) \[0..1\]</span></span>
-    - <span data-ttu-id="f0491-160">すべてのメニュー項目 (MenuFunctionButton) \[0..1\] を参照してください</span><span class="sxs-lookup"><span data-stu-id="f0491-160">See All Menu Item (MenuFunctionButton) \[0..1\]</span></span>
+- <span data-ttu-id="ead0f-155">デザイン</span><span class="sxs-lookup"><span data-stu-id="ead0f-155">Design</span></span>
+    - <span data-ttu-id="ead0f-156">ヘッダー グループ (グループ) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-156">Header Group (Group) \[0..1\]</span></span>
+        - <span data-ttu-id="ead0f-157">サブパターン: フィルターおよびツール バー - インラインまたはサブパターン: フィルターおよびツール バー - 積み上げ</span><span class="sxs-lookup"><span data-stu-id="ead0f-157">Subpattern: Filters and toolbar - Inline OR Subpattern: Filters and Toolbar - Stacked</span></span>
+    - <span data-ttu-id="ead0f-158">コンテンツ グリッド (グリッド)</span><span class="sxs-lookup"><span data-stu-id="ead0f-158">Content Grid (Grid)</span></span>
+    - <span data-ttu-id="ead0f-159">既定のアクション ボタン ($Button - ボタンの種類) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-159">Default Action Button ($Button - any type of button) \[0..1\]</span></span>
+    - <span data-ttu-id="ead0f-160">すべてのメニュー項目 (MenuFunctionButton) \[0..1\] を参照してください</span><span class="sxs-lookup"><span data-stu-id="ead0f-160">See All Menu Item (MenuFunctionButton) \[0..1\]</span></span>
 
-#### <a name="hub-part-chart"></a><span data-ttu-id="f0491-161">ハブ パート グラフ</span><span class="sxs-lookup"><span data-stu-id="f0491-161">Hub Part Chart</span></span>
+#### <a name="hub-part-chart"></a><span data-ttu-id="ead0f-161">ハブ パート グラフ</span><span class="sxs-lookup"><span data-stu-id="ead0f-161">Hub Part Chart</span></span>
 
-<span data-ttu-id="f0491-162">このパターンは、チャート コントロールを含む **フォーム パート** フォームに使用されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-162">This pattern is used for **Form Part** forms containing a chart control.</span></span> <span data-ttu-id="f0491-163">これらのチャート フォームは、2 つのサブパターン、セクション タイルとセクション積み上げグラフで参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-163">These chart forms are referenced within two subpatterns: Section Tiles and Section Stacked Chart.</span></span> <span data-ttu-id="f0491-164">厳密に 1 つのグラフ コントロールが必要です。</span><span class="sxs-lookup"><span data-stu-id="f0491-164">It requires exactly one Chart control.</span></span>
+<span data-ttu-id="ead0f-162">このパターンは、チャート コントロールを含む **フォーム パート** フォームに使用されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-162">This pattern is used for **Form Part** forms containing a chart control.</span></span> <span data-ttu-id="ead0f-163">これらのチャート フォームは、2 つのサブパターン、セクション タイルとセクション積み上げグラフで参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-163">These chart forms are referenced within two subpatterns: Section Tiles and Section Stacked Chart.</span></span> <span data-ttu-id="ead0f-164">厳密に 1 つのグラフ コントロールが必要です。</span><span class="sxs-lookup"><span data-stu-id="ead0f-164">It requires exactly one Chart control.</span></span>
 
-### <a name="subpatterns"></a><span data-ttu-id="f0491-165">サブパターン</span><span class="sxs-lookup"><span data-stu-id="f0491-165">Subpatterns</span></span>
+### <a name="subpatterns"></a><span data-ttu-id="ead0f-165">サブパターン</span><span class="sxs-lookup"><span data-stu-id="ead0f-165">Subpatterns</span></span>
 
-#### <a name="workspace-page-filter-group"></a><span data-ttu-id="f0491-166">ワークスペース ページ フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="f0491-166">Workspace Page Filter Group</span></span>
+#### <a name="workspace-page-filter-group"></a><span data-ttu-id="ead0f-166">ワークスペース ページ フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="ead0f-166">Workspace Page Filter Group</span></span>
 
-<span data-ttu-id="f0491-167">このサブパターンは、運用ワークスペースパターンのワークスペース ページ フィルター グループで参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-167">This subpattern is referenced in the pattern Workspace Operational, in Workspace Page Filter Group.</span></span> <span data-ttu-id="f0491-168">これは、単一の入力コントロールに使用でき、ワークスペースを全体としてフィルター処理するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="f0491-168">It allows for a single input control, which can be used to filter the workspace as a whole.</span></span>
+<span data-ttu-id="ead0f-167">このサブパターンは、運用ワークスペースパターンのワークスペース ページ フィルター グループで参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-167">This subpattern is referenced in the pattern Workspace Operational, in Workspace Page Filter Group.</span></span> <span data-ttu-id="ead0f-168">これは、単一の入力コントロールに使用でき、ワークスペースを全体としてフィルター処理するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-168">It allows for a single input control, which can be used to filter the workspace as a whole.</span></span>
 
-#### <a name="section-tiles"></a><span data-ttu-id="f0491-169">セクション タイル</span><span class="sxs-lookup"><span data-stu-id="f0491-169">Section Tiles</span></span>
+#### <a name="section-tiles"></a><span data-ttu-id="ead0f-169">セクション タイル</span><span class="sxs-lookup"><span data-stu-id="ead0f-169">Section Tiles</span></span>
 
-<span data-ttu-id="f0491-170">このサブパターンは、運用ワークスペースパターンのセクション概要タイルで参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-170">This subpattern is referenced in the pattern Workspace Operational, in Section Summary tiles.</span></span> <span data-ttu-id="f0491-171">これはタイルとグラフの両方に使用できます。</span><span class="sxs-lookup"><span data-stu-id="f0491-171">It allows for both tiles and charts.</span></span> <span data-ttu-id="f0491-172">任意の順序で、任意のタイルおよびグラフの数を定義できます。</span><span class="sxs-lookup"><span data-stu-id="f0491-172">Any number of tiles and charts can be defined, in any order.</span></span> <span data-ttu-id="f0491-173">タイルは TileButton コントロールで定義され、チャートはフォーム パーツ コントロールで定義されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-173">Tiles are defined with TileButton controls, and charts are defined with Form Part controls.</span></span> <span data-ttu-id="f0491-174">チャート フォーム パーツは、タイルが表示された状態で正しくチャートが流れるように、通常のタイルの分析コードと一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0491-174">A chart Form Part must have dimensions that match those of a normal tile, to ensure the chart flows correctly with the tiles displayed.</span></span>
+<span data-ttu-id="ead0f-170">このサブパターンは、運用ワークスペースパターンのセクション概要タイルで参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-170">This subpattern is referenced in the pattern Workspace Operational, in Section Summary tiles.</span></span> <span data-ttu-id="ead0f-171">これはタイルとグラフの両方に使用できます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-171">It allows for both tiles and charts.</span></span> <span data-ttu-id="ead0f-172">任意の順序で、任意のタイルおよびグラフの数を定義できます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-172">Any number of tiles and charts can be defined, in any order.</span></span> <span data-ttu-id="ead0f-173">タイルは TileButton コントロールで定義され、チャートはフォーム パーツ コントロールで定義されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-173">Tiles are defined with TileButton controls, and charts are defined with Form Part controls.</span></span> <span data-ttu-id="ead0f-174">チャート フォーム パーツは、タイルが表示された状態で正しくチャートが流れるように、通常のタイルの分析コードと一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ead0f-174">A chart Form Part must have dimensions that match those of a normal tile, to ensure the chart flows correctly with the tiles displayed.</span></span>
 
-#### <a name="section-tabbed-list"></a><span data-ttu-id="f0491-175">セクション タブ付きリスト</span><span class="sxs-lookup"><span data-stu-id="f0491-175">Section Tabbed List</span></span>
+#### <a name="section-tabbed-list"></a><span data-ttu-id="ead0f-175">セクション タブ付きリスト</span><span class="sxs-lookup"><span data-stu-id="ead0f-175">Section Tabbed List</span></span>
 
-<span data-ttu-id="f0491-176">このサブパターンは、運用ワークスペースパターンのセクションタブ付きリンクで参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-176">This subpattern is referenced in the pattern Workspace Operational, in Section Tabbed List.</span></span> <span data-ttu-id="f0491-177">これは、モデル化する複数のリスト コンテナーに使用でき、それぞれ最終的に目的のリストを含むフォームを指定するフォーム パーツを参照します。</span><span class="sxs-lookup"><span data-stu-id="f0491-177">It allows for multiple list containers to be modeled, each of which ultimately references a Form Part that points to a form containing the desired list.</span></span> <span data-ttu-id="f0491-178">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0491-178">It requires the following structure:</span></span>
+<span data-ttu-id="ead0f-176">このサブパターンは、運用ワークスペースパターンのセクションタブ付きリンクで参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-176">This subpattern is referenced in the pattern Workspace Operational, in Section Tabbed List.</span></span> <span data-ttu-id="ead0f-177">これは、モデル化する複数のリスト コンテナーに使用でき、それぞれ最終的に目的のリストを含むフォームを指定するフォーム パーツを参照します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-177">It allows for multiple list containers to be modeled, each of which ultimately references a Form Part that points to a form containing the desired list.</span></span> <span data-ttu-id="ead0f-178">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="ead0f-178">It requires the following structure:</span></span>
 
-- <span data-ttu-id="f0491-179">タブ付きの一覧 (タブ)</span><span class="sxs-lookup"><span data-stu-id="f0491-179">Tabbed List (Tab)</span></span>
-    - <span data-ttu-id="f0491-180">Tabbed List Page (TabPage) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="f0491-180">Tabbed List Page (TabPage) \[0..\*\]</span></span>
-        - <span data-ttu-id="f0491-181">フォーム パート セクション リスト (FormPartControl)。</span><span class="sxs-lookup"><span data-stu-id="f0491-181">Form Part Section List (FormPartControl).</span></span> <span data-ttu-id="f0491-182">**注記**: 参照されるフォームは、フォームのパターン、フォーム パート セクション リストを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0491-182">**Note**: The referenced form must use the form pattern, Form Part Section List.</span></span>
+- <span data-ttu-id="ead0f-179">タブ付きの一覧 (タブ)</span><span class="sxs-lookup"><span data-stu-id="ead0f-179">Tabbed List (Tab)</span></span>
+    - <span data-ttu-id="ead0f-180">Tabbed List Page (TabPage) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-180">Tabbed List Page (TabPage) \[0..\*\]</span></span>
+        - <span data-ttu-id="ead0f-181">フォーム パート セクション リスト (FormPartControl)。</span><span class="sxs-lookup"><span data-stu-id="ead0f-181">Form Part Section List (FormPartControl).</span></span> <span data-ttu-id="ead0f-182">**注記**: 参照されるフォームは、フォームのパターン、フォーム パート セクション リストを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ead0f-182">**Note**: The referenced form must use the form pattern, Form Part Section List.</span></span>
 
-#### <a name="section-stacked-chart"></a><span data-ttu-id="f0491-183">セクション積み上げグラフ</span><span class="sxs-lookup"><span data-stu-id="f0491-183">Section Stacked Chart</span></span>
+#### <a name="section-stacked-chart"></a><span data-ttu-id="ead0f-183">セクション積み上げグラフ</span><span class="sxs-lookup"><span data-stu-id="ead0f-183">Section Stacked Chart</span></span>
 
-<span data-ttu-id="f0491-184">このサブパターンは、運用ワークスペースパターンのセクション積み上げグラフで参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-184">This subpattern is referenced in the pattern Workspace Operational, in Section Stacked Chart.</span></span> <span data-ttu-id="f0491-185">これは最大 2 つのグラフに使用でき、垂直積み上げ方向で表示されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-185">It allows for up to two charts, which will be rendered in a vertically stacked orientation.</span></span> <span data-ttu-id="f0491-186">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0491-186">It requires the following structure:</span></span>
+<span data-ttu-id="ead0f-184">このサブパターンは、運用ワークスペースパターンのセクション積み上げグラフで参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-184">This subpattern is referenced in the pattern Workspace Operational, in Section Stacked Chart.</span></span> <span data-ttu-id="ead0f-185">これは最大 2 つのグラフに使用でき、垂直積み上げ方向で表示されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-185">It allows for up to two charts, which will be rendered in a vertically stacked orientation.</span></span> <span data-ttu-id="ead0f-186">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="ead0f-186">It requires the following structure:</span></span>
 
-- <span data-ttu-id="f0491-187">タブ ページ (TabPage)</span><span class="sxs-lookup"><span data-stu-id="f0491-187">Tab page (TabPage)</span></span>
-    - <span data-ttu-id="f0491-188">最初のグラフ FormPart (FormPartControl) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-188">First Chart FormPart (FormPartControl) \[0..1\]</span></span>
-    - <span data-ttu-id="f0491-189">2 番目のグラフ FormPart (FormPartControl) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-189">Second Chart FormPart (FormPartControl) \[0..1\]</span></span>
+- <span data-ttu-id="ead0f-187">タブ ページ (TabPage)</span><span class="sxs-lookup"><span data-stu-id="ead0f-187">Tab page (TabPage)</span></span>
+    - <span data-ttu-id="ead0f-188">最初のグラフ FormPart (FormPartControl) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-188">First Chart FormPart (FormPartControl) \[0..1\]</span></span>
+    - <span data-ttu-id="ead0f-189">2 番目のグラフ FormPart (FormPartControl) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-189">Second Chart FormPart (FormPartControl) \[0..1\]</span></span>
 
-#### <a name="section-related-links"></a><span data-ttu-id="f0491-190">セクション関連リンク</span><span class="sxs-lookup"><span data-stu-id="f0491-190">Section-Related Links</span></span>
+#### <a name="section-related-links"></a><span data-ttu-id="ead0f-190">セクション関連リンク</span><span class="sxs-lookup"><span data-stu-id="ead0f-190">Section-Related Links</span></span>
 
-<span data-ttu-id="f0491-191">このサブパターンは、運用ワークスペースパターンのセクション関連リンクで参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-191">This subpattern is referenced in the pattern Workspace Operational, in Section-Related Links.</span></span> <span data-ttu-id="f0491-192">これは 1 レベルの入れ子を持つ、一連のリンクに使用できます。</span><span class="sxs-lookup"><span data-stu-id="f0491-192">It allows for a series of links, with one level of nesting permitted.</span></span> <span data-ttu-id="f0491-193">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0491-193">It requires the following structure:</span></span>
+<span data-ttu-id="ead0f-191">このサブパターンは、運用ワークスペースパターンのセクション関連リンクで参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-191">This subpattern is referenced in the pattern Workspace Operational, in Section-Related Links.</span></span> <span data-ttu-id="ead0f-192">これは 1 レベルの入れ子を持つ、一連のリンクに使用できます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-192">It allows for a series of links, with one level of nesting permitted.</span></span> <span data-ttu-id="ead0f-193">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="ead0f-193">It requires the following structure:</span></span>
 
-- <span data-ttu-id="f0491-194">タブ ページ (TabPage)</span><span class="sxs-lookup"><span data-stu-id="f0491-194">Tab page (TabPage)</span></span>
-    - <span data-ttu-id="f0491-195">メニュー機能ボタン (MenuFunctionButton) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="f0491-195">Menu Function Button (MenuFunctionButton) \[0..\*\]</span></span>
-    - <span data-ttu-id="f0491-196">リンク グループ (グループ) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="f0491-196">Links Group (Group) \[0..\*\]</span></span>
-        - <span data-ttu-id="f0491-197">メニュー機能ボタン (MenuFunctionButton) \[1..\*\]</span><span class="sxs-lookup"><span data-stu-id="f0491-197">Menu Function Button (MenuFunctionButton) \[1..\*\]</span></span>
+- <span data-ttu-id="ead0f-194">タブ ページ (TabPage)</span><span class="sxs-lookup"><span data-stu-id="ead0f-194">Tab page (TabPage)</span></span>
+    - <span data-ttu-id="ead0f-195">メニュー機能ボタン (MenuFunctionButton) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-195">Menu Function Button (MenuFunctionButton) \[0..\*\]</span></span>
+    - <span data-ttu-id="ead0f-196">リンク グループ (グループ) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-196">Links Group (Group) \[0..\*\]</span></span>
+        - <span data-ttu-id="ead0f-197">メニュー機能ボタン (MenuFunctionButton) \[1..\*\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-197">Menu Function Button (MenuFunctionButton) \[1..\*\]</span></span>
 
-#### <a name="filters-and-toolbar--inline"></a><span data-ttu-id="f0491-198">フィルターおよびツールバー – インライン</span><span class="sxs-lookup"><span data-stu-id="f0491-198">Filters and Toolbar – Inline</span></span>
+#### <a name="filters-and-toolbar--inline"></a><span data-ttu-id="ead0f-198">フィルターおよびツールバー – インライン</span><span class="sxs-lookup"><span data-stu-id="ead0f-198">Filters and Toolbar – Inline</span></span>
 
-<span data-ttu-id="f0491-199">このサブパターンは、ヘッダー グループのフォーム パターン セクション リストのパターンで参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-199">This subpattern is referenced in the pattern Form Part Section List, in Header Group.</span></span> <span data-ttu-id="f0491-200">これは、すべての同じ行で一部のフィルターとツール バーに使用できます。</span><span class="sxs-lookup"><span data-stu-id="f0491-200">It allows for some filters and a toolbar, all on the same line.</span></span> <span data-ttu-id="f0491-201">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0491-201">It requires the following structure:</span></span>
+<span data-ttu-id="ead0f-199">このサブパターンは、ヘッダー グループのフォーム パターン セクション リストのパターンで参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-199">This subpattern is referenced in the pattern Form Part Section List, in Header Group.</span></span> <span data-ttu-id="ead0f-200">これは、すべての同じ行で一部のフィルターとツール バーに使用できます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-200">It allows for some filters and a toolbar, all on the same line.</span></span> <span data-ttu-id="ead0f-201">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="ead0f-201">It requires the following structure:</span></span>
 
-- <span data-ttu-id="f0491-202">グループ (グループ)</span><span class="sxs-lookup"><span data-stu-id="f0491-202">Group (Group)</span></span>
-    - <span data-ttu-id="f0491-203">フィルタ グループ (グループ) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-203">Filter Group (Group) \[0..1\]</span></span>
-        - <span data-ttu-id="f0491-204">簡易フィルター (QuickFilterControl) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-204">Quick Filter (QuickFilterControl) \[0..1\]</span></span>
-        - <span data-ttu-id="f0491-205">カスタム フィルター フィールド ($フィールド - フィールドの任意の種類) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="f0491-205">Custom Filter Fields ($Field – any type of field) \[0..\*\]</span></span>
-    - <span data-ttu-id="f0491-206">ツールバー (ActionPane) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-206">Toolbar (ActionPane) \[0..1\]</span></span>
+- <span data-ttu-id="ead0f-202">グループ (グループ)</span><span class="sxs-lookup"><span data-stu-id="ead0f-202">Group (Group)</span></span>
+    - <span data-ttu-id="ead0f-203">フィルタ グループ (グループ) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-203">Filter Group (Group) \[0..1\]</span></span>
+        - <span data-ttu-id="ead0f-204">簡易フィルター (QuickFilterControl) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-204">Quick Filter (QuickFilterControl) \[0..1\]</span></span>
+        - <span data-ttu-id="ead0f-205">カスタム フィルター フィールド ($フィールド - フィールドの任意の種類) \[0..\*\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-205">Custom Filter Fields ($Field – any type of field) \[0..\*\]</span></span>
+    - <span data-ttu-id="ead0f-206">ツールバー (ActionPane) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-206">Toolbar (ActionPane) \[0..1\]</span></span>
 
-#### <a name="filters-and-toolbar---stacked"></a><span data-ttu-id="f0491-207">フィルターおよびツールバー - 積み上げ</span><span class="sxs-lookup"><span data-stu-id="f0491-207">Filters and Toolbar - Stacked</span></span>
+#### <a name="filters-and-toolbar---stacked"></a><span data-ttu-id="ead0f-207">フィルターおよびツールバー - 積み上げ</span><span class="sxs-lookup"><span data-stu-id="ead0f-207">Filters and Toolbar - Stacked</span></span>
 
-<span data-ttu-id="f0491-208">このサブパターンは、ヘッダー グループのフォーム パターン セクション リストのパターンで参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-208">This subpattern is referenced in the pattern Form Part Section List, in the Header Group.</span></span> <span data-ttu-id="f0491-209">1 つの行の複数のフィルター フィールドとこれらのフィルターの下の 1 つの行に 1 つのツールバーが許されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-209">It allows for some filter fields on one line, and a toolbar on a line below those filters.</span></span> <span data-ttu-id="f0491-210">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0491-210">It requires the following structure:</span></span>
+<span data-ttu-id="ead0f-208">このサブパターンは、ヘッダー グループのフォーム パターン セクション リストのパターンで参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-208">This subpattern is referenced in the pattern Form Part Section List, in the Header Group.</span></span> <span data-ttu-id="ead0f-209">1 つの行の複数のフィルター フィールドとこれらのフィルターの下の 1 つの行に 1 つのツールバーが許されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-209">It allows for some filter fields on one line, and a toolbar on a line below those filters.</span></span> <span data-ttu-id="ead0f-210">次の構造が必要です。</span><span class="sxs-lookup"><span data-stu-id="ead0f-210">It requires the following structure:</span></span>
 
-- <span data-ttu-id="f0491-211">グループ (グループ)</span><span class="sxs-lookup"><span data-stu-id="f0491-211">Group (Group)</span></span>
-    - <span data-ttu-id="f0491-212">フィルタ グループ (グループ) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-212">Filter Group (Group) \[0..1\]</span></span>
-        - <span data-ttu-id="f0491-213">簡易フィルター (QuickFilterControl) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-213">Quick Filter (QuickFilterControl) \[0..1\]</span></span>
-        - <span data-ttu-id="f0491-214">フィルター フィールド 1 ($Field - フィールドの任意の種類) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-214">Filter Field 1 ($Field - any type of field) \[0..1\]</span></span>
-        - <span data-ttu-id="f0491-215">フィルター フィールド 2 ($Field - フィールドの任意の種類) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-215">Filter Field 2 ($Field - any type of field) \[0..1\]</span></span>
-    - <span data-ttu-id="f0491-216">ツールバー (ActionPane) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="f0491-216">Toolbar (ActionPane) \[0..1\]</span></span>
+- <span data-ttu-id="ead0f-211">グループ (グループ)</span><span class="sxs-lookup"><span data-stu-id="ead0f-211">Group (Group)</span></span>
+    - <span data-ttu-id="ead0f-212">フィルタ グループ (グループ) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-212">Filter Group (Group) \[0..1\]</span></span>
+        - <span data-ttu-id="ead0f-213">簡易フィルター (QuickFilterControl) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-213">Quick Filter (QuickFilterControl) \[0..1\]</span></span>
+        - <span data-ttu-id="ead0f-214">フィルター フィールド 1 ($Field - フィールドの任意の種類) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-214">Filter Field 1 ($Field - any type of field) \[0..1\]</span></span>
+        - <span data-ttu-id="ead0f-215">フィルター フィールド 2 ($Field - フィールドの任意の種類) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-215">Filter Field 2 ($Field - any type of field) \[0..1\]</span></span>
+    - <span data-ttu-id="ead0f-216">ツールバー (ActionPane) \[0..1\]</span><span class="sxs-lookup"><span data-stu-id="ead0f-216">Toolbar (ActionPane) \[0..1\]</span></span>
 
-### <a name="future-best-practices-check"></a><span data-ttu-id="f0491-217">将来のベスト プラクティスの確認</span><span class="sxs-lookup"><span data-stu-id="f0491-217">Future best practices check</span></span>
+### <a name="future-best-practices-check"></a><span data-ttu-id="ead0f-217">将来のベスト プラクティスの確認</span><span class="sxs-lookup"><span data-stu-id="ead0f-217">Future best practices check</span></span>
 
-<span data-ttu-id="f0491-218">最終的にワークスペース用に構築されるベストプラクティス (BP) チェックがいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="f0491-218">There are a few best practice (BP) checks that will eventually be built for workspaces.</span></span> <span data-ttu-id="f0491-219">これらのチェックは、パフォーマンスや設計上の理由から推奨されるアイテムについてユーザーに指導することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="f0491-219">These checks are intended to provide guidance to the user about items that are recommended for performance or design reasons.</span></span>
+<span data-ttu-id="ead0f-218">最終的にワークスペース用に構築されるベストプラクティス (BP) チェックがいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="ead0f-218">There are a few best practice (BP) checks that will eventually be built for workspaces.</span></span> <span data-ttu-id="ead0f-219">これらのチェックは、パフォーマンスや設計上の理由から推奨されるアイテムについてユーザーに指導することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="ead0f-219">These checks are intended to provide guidance to the user about items that are recommended for performance or design reasons.</span></span>
 
-#### <a name="filters-are-covered-by-indexes"></a><span data-ttu-id="f0491-220">インデックスの対象となるフィルター</span><span class="sxs-lookup"><span data-stu-id="f0491-220">Filters are covered by indexes</span></span>
+#### <a name="filters-are-covered-by-indexes"></a><span data-ttu-id="ead0f-220">インデックスの対象となるフィルター</span><span class="sxs-lookup"><span data-stu-id="ead0f-220">Filters are covered by indexes</span></span>
 
-<span data-ttu-id="f0491-221">このチェックは、ワークスペース全体のフィルタ上のフィールドとして使用するようにモデル化されたフィールドがすべてインデックスでカバーされるようにするためのものです。</span><span class="sxs-lookup"><span data-stu-id="f0491-221">This check is intended to ensure that any field that is modeled for use as a field on a workspace-wide filter is covered by an index.</span></span> <span data-ttu-id="f0491-222">このチェックにより、ユーザーがこれらのフィルターを利用した際のパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="f0491-222">This check will help ensure that performance remains superior when users are taking advantage of these filters.</span></span>
+<span data-ttu-id="ead0f-221">このチェックは、ワークスペース全体のフィルタ上のフィールドとして使用するようにモデル化されたフィールドがすべてインデックスでカバーされるようにするためのものです。</span><span class="sxs-lookup"><span data-stu-id="ead0f-221">This check is intended to ensure that any field that is modeled for use as a field on a workspace-wide filter is covered by an index.</span></span> <span data-ttu-id="ead0f-222">このチェックにより、ユーザーがこれらのフィルターを利用した際のパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="ead0f-222">This check will help ensure that performance remains superior when users are taking advantage of these filters.</span></span>
 
-#### <a name="chart-parts-only-contain-olap-charts"></a><span data-ttu-id="f0491-223">OLAP チャートのみが含まれているグラフ部品</span><span class="sxs-lookup"><span data-stu-id="f0491-223">Chart parts only contain OLAP charts</span></span>
+#### <a name="chart-parts-only-contain-olap-charts"></a><span data-ttu-id="ead0f-223">OLAP チャートのみが含まれているグラフ部品</span><span class="sxs-lookup"><span data-stu-id="ead0f-223">Chart parts only contain OLAP charts</span></span>
 
-<span data-ttu-id="f0491-224">ワークスペースにグラフが含まれているときは、そのグラフは分離したフォームとしてモデル化され、そのフォームはフォーム パーツ コントロールを使用してワークスペース上で参照されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-224">When a workspace contains a chart, that chart is modeled as a separate form, and that form is referenced on the workspace via a Form Part control.</span></span> <span data-ttu-id="f0491-225">このチェックの目的は、ワークスペースから最終的に参照されるチャートが OLAP データのみを使用するようにすることです。</span><span class="sxs-lookup"><span data-stu-id="f0491-225">The intent of this check is to ensure that any such charts ultimately referenced from a workspace are only using OLAP data.</span></span>
+<span data-ttu-id="ead0f-224">ワークスペースにグラフが含まれているときは、そのグラフは分離したフォームとしてモデル化され、そのフォームはフォーム パーツ コントロールを使用してワークスペース上で参照されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-224">When a workspace contains a chart, that chart is modeled as a separate form, and that form is referenced on the workspace via a Form Part control.</span></span> <span data-ttu-id="ead0f-225">このチェックの目的は、ワークスペースから最終的に参照されるチャートが OLAP データのみを使用するようにすることです。</span><span class="sxs-lookup"><span data-stu-id="ead0f-225">The intent of this check is to ensure that any such charts ultimately referenced from a workspace are only using OLAP data.</span></span>
 
-#### <a name="count-tiles-have-queries-defined"></a><span data-ttu-id="f0491-226">カウント タイルにはクエリが定義されています</span><span class="sxs-lookup"><span data-stu-id="f0491-226">Count tiles have queries defined</span></span>
+#### <a name="count-tiles-have-queries-defined"></a><span data-ttu-id="ead0f-226">カウント タイルにはクエリが定義されています</span><span class="sxs-lookup"><span data-stu-id="ead0f-226">Count tiles have queries defined</span></span>
 
-<span data-ttu-id="f0491-227">これらのフォームは通常複数のカウント タイルを含むため、タイル キャッシュ システムは、ワークスペースのパフォーマンスを向上させるために実装されています。</span><span class="sxs-lookup"><span data-stu-id="f0491-227">A tile caching system has been implemented to improve performance of workspaces, as these forms generally contain several count tiles.</span></span> <span data-ttu-id="f0491-228">キャッシュ システムと共に正常に作動するこれらのカウント タイルについては、各タイルにはクエリが定義されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0491-228">For these count tiles to work correctly with the caching system, each tile must have a query defined.</span></span> <span data-ttu-id="f0491-229">そのクエリは、タイル、またはタイルによって参照されるメニュー項目で定義されます。</span><span class="sxs-lookup"><span data-stu-id="f0491-229">That query may be defined on the tile or on the menu item referenced by the tile.</span></span> <span data-ttu-id="f0491-230">この BP チェックの目的は、すべてのカウント タイルについてこれらの 2 つの場所のいずれかにクエリが確実に定義されるようにすることです。</span><span class="sxs-lookup"><span data-stu-id="f0491-230">The intent of this BP check is to ensure a query is defined in one of these two locations for all count tiles.</span></span>
+<span data-ttu-id="ead0f-227">これらのフォームは通常複数のカウント タイルを含むため、タイル キャッシュ システムは、ワークスペースのパフォーマンスを向上させるために実装されています。</span><span class="sxs-lookup"><span data-stu-id="ead0f-227">A tile caching system has been implemented to improve performance of workspaces, as these forms generally contain several count tiles.</span></span> <span data-ttu-id="ead0f-228">キャッシュ システムと共に正常に作動するこれらのカウント タイルについては、各タイルにはクエリが定義されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ead0f-228">For these count tiles to work correctly with the caching system, each tile must have a query defined.</span></span> <span data-ttu-id="ead0f-229">そのクエリは、タイル、またはタイルによって参照されるメニュー項目で定義されます。</span><span class="sxs-lookup"><span data-stu-id="ead0f-229">That query may be defined on the tile or on the menu item referenced by the tile.</span></span> <span data-ttu-id="ead0f-230">この BP チェックの目的は、すべてのカウント タイルについてこれらの 2 つの場所のいずれかにクエリが確実に定義されるようにすることです。</span><span class="sxs-lookup"><span data-stu-id="ead0f-230">The intent of this BP check is to ensure a query is defined in one of these two locations for all count tiles.</span></span>
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

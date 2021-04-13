@@ -2,11 +2,9 @@
 title: IoT インテリジェンス ホーム ページ
 description: このトピックでは、IoT インテリジェンスに関する情報へのリンクについて説明します。
 author: robinarh
-manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,53 +13,56 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edd83daec2caef7383f1f9f5232769e4a98a0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1482c38de9d91fe256f2a1b28959ebcb0202295d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000021"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814864"
 ---
-# <a name="iot-intelligence-home-page"></a><span data-ttu-id="3d673-103">IoT インテリジェンスのホーム ページ</span><span class="sxs-lookup"><span data-stu-id="3d673-103">IoT Intelligence home page</span></span>
+# <a name="iot-intelligence-home-page"></a><span data-ttu-id="8d6a0-103">IoT インテリジェンスのホーム ページ</span><span class="sxs-lookup"><span data-stu-id="8d6a0-103">IoT Intelligence home page</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> <span data-ttu-id="3d673-104">この機能は、現在次の国/地域でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="3d673-104">This feature is currently only available in the following countries/regions:</span></span>
+> <span data-ttu-id="8d6a0-104">この機能は、現在次の国/地域でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-104">This feature is currently only available in the following countries/regions:</span></span>
 >
-> - <span data-ttu-id="3d673-105">US (米国)</span><span class="sxs-lookup"><span data-stu-id="3d673-105">US (United States of America)</span></span>
-> - <span data-ttu-id="3d673-106">EU (欧州連合)</span><span class="sxs-lookup"><span data-stu-id="3d673-106">EU (European Union)</span></span>
-> - <span data-ttu-id="3d673-107">AU (オーストラリア)</span><span class="sxs-lookup"><span data-stu-id="3d673-107">AU (Australia)</span></span>
-> - <span data-ttu-id="3d673-108">CA (カナダ)</span><span class="sxs-lookup"><span data-stu-id="3d673-108">CA (Canada)</span></span>
-> - <span data-ttu-id="3d673-109">UK (英国)</span><span class="sxs-lookup"><span data-stu-id="3d673-109">UK (United Kingdom)</span></span>
+> - <span data-ttu-id="8d6a0-105">US (米国)</span><span class="sxs-lookup"><span data-stu-id="8d6a0-105">US (United States of America)</span></span>
+> - <span data-ttu-id="8d6a0-106">EU (欧州連合)</span><span class="sxs-lookup"><span data-stu-id="8d6a0-106">EU (European Union)</span></span>
+> - <span data-ttu-id="8d6a0-107">AU (オーストラリア)</span><span class="sxs-lookup"><span data-stu-id="8d6a0-107">AU (Australia)</span></span>
+> - <span data-ttu-id="8d6a0-108">CA (カナダ)</span><span class="sxs-lookup"><span data-stu-id="8d6a0-108">CA (Canada)</span></span>
+> - <span data-ttu-id="8d6a0-109">UK (英国)</span><span class="sxs-lookup"><span data-stu-id="8d6a0-109">UK (United Kingdom)</span></span>
 
-<span data-ttu-id="3d673-110">IoT インテリジェンス、Microsoft Dynamics 365 Supply Chain Management のアドインです。</span><span class="sxs-lookup"><span data-stu-id="3d673-110">IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="3d673-111">また、モノのインターネット (Internet of Things: IoT) の信号を Supply Chain Management のデータと統合し、実用的な分析情報を生み出します。</span><span class="sxs-lookup"><span data-stu-id="3d673-111">It integrates Internet of Things (IoT) signals with data in Supply Chain Management to produce actionable insights.</span></span>
+<span data-ttu-id="8d6a0-110">IoT インテリジェンス、Microsoft Dynamics 365 Supply Chain Management のアドインです。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-110">IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="8d6a0-111">また、モノのインターネット (Internet of Things: IoT) の信号を Supply Chain Management のデータと統合し、実用的な分析情報を生み出します。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-111">It integrates Internet of Things (IoT) signals with data in Supply Chain Management to produce actionable insights.</span></span>
 
-<span data-ttu-id="3d673-112">IoT インテリジェンスにより、次のシナリオがサポートされます:</span><span class="sxs-lookup"><span data-stu-id="3d673-112">IoT Intelligence supports the following scenarios:</span></span>
+<span data-ttu-id="8d6a0-112">IoT インテリジェンスにより、次のシナリオがサポートされます:</span><span class="sxs-lookup"><span data-stu-id="8d6a0-112">IoT Intelligence supports the following scenarios:</span></span>
 
-+ <span data-ttu-id="3d673-113">**生産の遅延** – このシナリオでは、実際のサイクル時間と計画されたサイクル時間を比較します。</span><span class="sxs-lookup"><span data-stu-id="3d673-113">**Production delays** – This scenario compares actual cycle time to planned cycle time.</span></span> <span data-ttu-id="3d673-114">Supply Chain Management では、生産が予定通りに進んでいないことが通知されるため、介入して業務効率を最大化し、注文の遅延を回避できます。</span><span class="sxs-lookup"><span data-stu-id="3d673-114">Supply Chain Management notifies you when production isn't on schedule, so that you can intervene to maximize operating efficiency and avoid order delays.</span></span>
-+ <span data-ttu-id="3d673-115">**設備のダウンタイム** – このシナリオでは、測定された稼働時間をユーザー定義パラメータと比較します。</span><span class="sxs-lookup"><span data-stu-id="3d673-115">**Equipment downtime** – This scenario compares measured uptime to user-defined parameters.</span></span> <span data-ttu-id="3d673-116">Supply Chain Management は、では、停止しきい値を超えると通知されるため、生産作業指示書の再計画やメンテナンス作業指示書の作成などのアクションを実行できます。</span><span class="sxs-lookup"><span data-stu-id="3d673-116">Supply Chain Management notifies you when an outage threshold is exceeded, so that you can take actions such as rescheduling a production work order or creating a maintenance work order.</span></span>
-+ <span data-ttu-id="3d673-117">**製品品質** – このシナリオでは、湿気や気温などのセンサー測定値をユーザー定義の品質指標と比較します。</span><span class="sxs-lookup"><span data-stu-id="3d673-117">**Product quality** – This scenario compares sensor readings, such as moisture and temperature, to user-defined quality metrics.</span></span> <span data-ttu-id="3d673-118">Supply Chain Management では、誤差が発生すると通知されるため、介入して品質基準を維持し、無駄を最小限に抑えることができます。</span><span class="sxs-lookup"><span data-stu-id="3d673-118">Supply Chain Management notifies you when a deviation occurs, so that you can intervene to maintain quality standards and minimize waste.</span></span>
++ <span data-ttu-id="8d6a0-113">**生産の遅延** – このシナリオでは、実際のサイクル時間と計画されたサイクル時間を比較します。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-113">**Production delays** – This scenario compares actual cycle time to planned cycle time.</span></span> <span data-ttu-id="8d6a0-114">Supply Chain Management では、生産が予定通りに進んでいないことが通知されるため、介入して業務効率を最大化し、注文の遅延を回避できます。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-114">Supply Chain Management notifies you when production isn't on schedule, so that you can intervene to maximize operating efficiency and avoid order delays.</span></span>
++ <span data-ttu-id="8d6a0-115">**設備のダウンタイム** – このシナリオでは、測定された稼働時間をユーザー定義パラメータと比較します。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-115">**Equipment downtime** – This scenario compares measured uptime to user-defined parameters.</span></span> <span data-ttu-id="8d6a0-116">Supply Chain Management は、では、停止しきい値を超えると通知されるため、生産作業指示書の再計画やメンテナンス作業指示書の作成などのアクションを実行できます。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-116">Supply Chain Management notifies you when an outage threshold is exceeded, so that you can take actions such as rescheduling a production work order or creating a maintenance work order.</span></span>
++ <span data-ttu-id="8d6a0-117">**製品品質** – このシナリオでは、湿気や気温などのセンサー測定値をユーザー定義の品質指標と比較します。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-117">**Product quality** – This scenario compares sensor readings, such as moisture and temperature, to user-defined quality metrics.</span></span> <span data-ttu-id="8d6a0-118">Supply Chain Management では、誤差が発生すると通知されるため、介入して品質基準を維持し、無駄を最小限に抑えることができます。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-118">Supply Chain Management notifies you when a deviation occurs, so that you can intervene to maintain quality standards and minimize waste.</span></span>
 
-<span data-ttu-id="3d673-119">次の図は、Azure IoT Hub、IoT インテリジェンス、Supply Chain Management の相互作用を示しています。</span><span class="sxs-lookup"><span data-stu-id="3d673-119">The following illustration shows the interaction of Azure IoT Hub, IoT Intelligence, and Supply Chain Management.</span></span>
+<span data-ttu-id="8d6a0-119">次の図は、Azure IoT Hub、IoT インテリジェンス、Supply Chain Management の相互作用を示しています。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-119">The following illustration shows the interaction of Azure IoT Hub, IoT Intelligence, and Supply Chain Management.</span></span>
 
 ![IoT Hub、IoT インテリジェンス、Supply Chain Management](media/iot_intelligence.png)
 
-## <a name="setup"></a><span data-ttu-id="3d673-121">セットアップ</span><span class="sxs-lookup"><span data-stu-id="3d673-121">Setup</span></span>
+## <a name="setup"></a><span data-ttu-id="8d6a0-121">セットアップ</span><span class="sxs-lookup"><span data-stu-id="8d6a0-121">Setup</span></span>
 
-<span data-ttu-id="3d673-122">コードを記述することなく、IoT インテリジェンスを設定およびコンフィギュレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="3d673-122">You can set up and configure IoT Intelligence without writing any code.</span></span> <span data-ttu-id="3d673-123">基本的な手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="3d673-123">Here are the basic steps.</span></span>
+<span data-ttu-id="8d6a0-122">コードを記述することなく、IoT インテリジェンスを設定およびコンフィギュレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-122">You can set up and configure IoT Intelligence without writing any code.</span></span> <span data-ttu-id="8d6a0-123">基本的な手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-123">Here are the basic steps.</span></span>
 
-1. <span data-ttu-id="3d673-124">[Azure リソースの設定](iot-azure-setup.md) – Supply Chain Management からアクセスできる IoT ハブ、Redis キャッシュ、Key Vault を作成します。</span><span class="sxs-lookup"><span data-stu-id="3d673-124">[Set up Azure resources](iot-azure-setup.md) – Create an IoT hub, a Redis cache, and a key vault that can be accessed from Supply Chain Management.</span></span>
-2. <span data-ttu-id="3d673-125">[IoT Hub のメッセージ スキーマ 形式 ](iot-schema-format.md) – メッセージを IoT Hub に送信するようにデバイスをコンフィギュレーションして、JavaScript Object Notation (JSON) メッセージ形式を定義します。</span><span class="sxs-lookup"><span data-stu-id="3d673-125">[Message schema formats for IoT Hub](iot-schema-format.md) – Configure your devices to send messages to IoT Hub, and define the JavaScript Object Notation (JSON) message format.</span></span>
-3. <span data-ttu-id="3d673-126">機能管理で、IoT インテリジェンス機能のフラグを有効にします。</span><span class="sxs-lookup"><span data-stu-id="3d673-126">In Feature Management, enable the IoT Intelligence feature flag.</span></span> 
-4. <span data-ttu-id="3d673-127">[IoT インテリジェンス アドインを Microsoft Dynamics Lifecycle Services (LCS) にインストールする](iot-lcs-setup.md) – LCS にアドインをインストールし、Azure シークレットをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="3d673-127">[Install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md) – Install the add-in in LCS, and configure the Azure secrets.</span></span>
-5. <span data-ttu-id="3d673-128">[指標の設定](iot-metrics-setup.md) – Supply Chain Management の指標を設定します。</span><span class="sxs-lookup"><span data-stu-id="3d673-128">[Set up metrics](iot-metrics-setup.md) – Set up metrics in Supply Chain Management.</span></span>
-6. <span data-ttu-id="3d673-129">[シナリオ設定](iot-scenario-setup.md) – Supply Chain Management でシナリオを設定します。</span><span class="sxs-lookup"><span data-stu-id="3d673-129">[Scenario setup](iot-scenario-setup.md) – Set up the scenarios in Supply Chain Management.</span></span>
+1. <span data-ttu-id="8d6a0-124">[Azure リソースの設定](iot-azure-setup.md) – Supply Chain Management からアクセスできる IoT ハブ、Redis キャッシュ、Key Vault を作成します。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-124">[Set up Azure resources](iot-azure-setup.md) – Create an IoT hub, a Redis cache, and a key vault that can be accessed from Supply Chain Management.</span></span>
+2. <span data-ttu-id="8d6a0-125">[IoT Hub のメッセージ スキーマ 形式 ](iot-schema-format.md) – メッセージを IoT Hub に送信するようにデバイスをコンフィギュレーションして、JavaScript Object Notation (JSON) メッセージ形式を定義します。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-125">[Message schema formats for IoT Hub](iot-schema-format.md) – Configure your devices to send messages to IoT Hub, and define the JavaScript Object Notation (JSON) message format.</span></span>
+3. <span data-ttu-id="8d6a0-126">機能管理で、IoT インテリジェンス機能のフラグを有効にします。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-126">In Feature Management, enable the IoT Intelligence feature flag.</span></span> 
+4. <span data-ttu-id="8d6a0-127">[IoT インテリジェンス アドインを Microsoft Dynamics Lifecycle Services (LCS) にインストールする](iot-lcs-setup.md) – LCS にアドインをインストールし、Azure シークレットをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-127">[Install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md) – Install the add-in in LCS, and configure the Azure secrets.</span></span>
+5. <span data-ttu-id="8d6a0-128">[指標の設定](iot-metrics-setup.md) – Supply Chain Management の指標を設定します。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-128">[Set up metrics](iot-metrics-setup.md) – Set up metrics in Supply Chain Management.</span></span>
+6. <span data-ttu-id="8d6a0-129">[シナリオ設定](iot-scenario-setup.md) – Supply Chain Management でシナリオを設定します。</span><span class="sxs-lookup"><span data-stu-id="8d6a0-129">[Scenario setup](iot-scenario-setup.md) – Set up the scenarios in Supply Chain Management.</span></span>
 
-## <a name="tracking-and-maintenance"></a><span data-ttu-id="3d673-130">進捗管理とメンテナンス</span><span class="sxs-lookup"><span data-stu-id="3d673-130">Tracking and maintenance</span></span>
+## <a name="tracking-and-maintenance"></a><span data-ttu-id="8d6a0-130">進捗管理とメンテナンス</span><span class="sxs-lookup"><span data-stu-id="8d6a0-130">Tracking and maintenance</span></span>
 
-+ [<span data-ttu-id="3d673-131">Dynamics 365 Supply Chain Management でシナリオを監視</span><span class="sxs-lookup"><span data-stu-id="3d673-131">Monitor scenarios in Dynamics 365 Supply Chain Management</span></span>](iot-management.md#monitor-scenarios)
-+ [<span data-ttu-id="3d673-132">シナリオの無効化</span><span class="sxs-lookup"><span data-stu-id="3d673-132">Disable a scenario</span></span>](iot-scenario-setup.md#disable-a-scenario)
-+ [<span data-ttu-id="3d673-133">アドインのアンインストール</span><span class="sxs-lookup"><span data-stu-id="3d673-133">Uninstall the add-in</span></span>](iot-lcs-setup.md#uninstall-addin)
-+ [<span data-ttu-id="3d673-134">実行中の IoT インテリジェンス シナリオの変更</span><span class="sxs-lookup"><span data-stu-id="3d673-134">Modify a running IoT Intelligence scenario</span></span>](iot-management.md#modify-a-running-iot-intelligence-scenario)
-+ [<span data-ttu-id="3d673-135">シミュレーション オプション</span><span class="sxs-lookup"><span data-stu-id="3d673-135">Simulation options</span></span>](iot-management.md#simulation-options)
++ [<span data-ttu-id="8d6a0-131">Dynamics 365 Supply Chain Management でシナリオを監視</span><span class="sxs-lookup"><span data-stu-id="8d6a0-131">Monitor scenarios in Dynamics 365 Supply Chain Management</span></span>](iot-management.md#monitor-scenarios)
++ [<span data-ttu-id="8d6a0-132">シナリオの無効化</span><span class="sxs-lookup"><span data-stu-id="8d6a0-132">Disable a scenario</span></span>](iot-scenario-setup.md#disable-a-scenario)
++ [<span data-ttu-id="8d6a0-133">アドインのアンインストール</span><span class="sxs-lookup"><span data-stu-id="8d6a0-133">Uninstall the add-in</span></span>](iot-lcs-setup.md#uninstall-addin)
++ [<span data-ttu-id="8d6a0-134">実行中の IoT インテリジェンス シナリオの変更</span><span class="sxs-lookup"><span data-stu-id="8d6a0-134">Modify a running IoT Intelligence scenario</span></span>](iot-management.md#modify-a-running-iot-intelligence-scenario)
++ [<span data-ttu-id="8d6a0-135">シミュレーション オプション</span><span class="sxs-lookup"><span data-stu-id="8d6a0-135">Simulation options</span></span>](iot-management.md#simulation-options)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: カスタム ボタンを POS ヘッダー バーに追加
 description: このトピックでは、POS ヘッダー バーに新しいカスタム ボタンを追加する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,44 +14,44 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2020
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 0fe2461d886cf1e2e3775cda44fc6c73027fa367
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c68efaac430d937d0085f899dcbd23f93d118642
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681514"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792989"
 ---
-# <a name="add-custom-buttons-to-the-pos-header-bar"></a><span data-ttu-id="8b330-103">カスタム ボタンを POS ヘッダー バーに追加</span><span class="sxs-lookup"><span data-stu-id="8b330-103">Add custom buttons to the POS header bar</span></span>
+# <a name="add-custom-buttons-to-the-pos-header-bar"></a><span data-ttu-id="f4db3-103">カスタム ボタンを POS ヘッダー バーに追加</span><span class="sxs-lookup"><span data-stu-id="f4db3-103">Add custom buttons to the POS header bar</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8b330-104">このトピックでは、販売時点管理 (POS) ヘッダー バーに新しいカスタム ボタンを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8b330-104">This topic explains how to add a new custom button to the header bar in the point of sale (POS).</span></span> <span data-ttu-id="8b330-105">POS ヘッダー バー拡張機能は、Microsoft Dynamics 365 Commerce バージョン 10.0.14 以降でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="8b330-105">The POS header bar extension is supported by Microsoft Dynamics 365 Commerce version 10.0.14 and later.</span></span>
+<span data-ttu-id="f4db3-104">このトピックでは、販売時点管理 (POS) ヘッダー バーに新しいカスタム ボタンを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-104">This topic explains how to add a new custom button to the header bar in the point of sale (POS).</span></span> <span data-ttu-id="f4db3-105">POS ヘッダー バー拡張機能は、Microsoft Dynamics 365 Commerce バージョン 10.0.14 以降でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="f4db3-105">The POS header bar extension is supported by Microsoft Dynamics 365 Commerce version 10.0.14 and later.</span></span>
 
-<span data-ttu-id="8b330-106">カスタム ヘッダー ボタンには、コントロール ユーザー インターフェイス (UI)、スタイル、およびテーマを説明するカスケード スタイル シート (CSS) コードを含む HTML ファイルが含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b330-106">The custom header button must contain an HTML file that includes Cascading Style Sheets (CSS) code that describes the control user interface (UI), styles, and themes.</span></span> <span data-ttu-id="8b330-107">また、ロジックを指定する TypeScript ビュー モデル ファイルも含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b330-107">It must also contain a TypeScript view model file that specifies the logic.</span></span> <span data-ttu-id="8b330-108">ファイル ビュー モデル ファイル内のクラスは、ヘッダー ボタンのプロパティおよびイベントを継承するために、**CustomPackingItem** クラスを拡張する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b330-108">The class inside the file view model file must extend the **CustomPackingItem** class, so that it inherits the header button properties and events.</span></span> <span data-ttu-id="8b330-109">**cartChangedHandler** イベントは、カート内で何らかの変更があった場合に通知を行うために、ヘッダー ボタンで公開されています。</span><span class="sxs-lookup"><span data-stu-id="8b330-109">The **cartChangedHandler** event is exposed on the header button to provide notification if something changes in the cart.</span></span> <span data-ttu-id="8b330-110">拡張コードは、カート イベントに基づくカスタム ロジックを実行することも、カスタム ビジネス ロジックを実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="8b330-110">Your extension code can do custom logic that is based on cart events, or it can do custom business logic.</span></span>
+<span data-ttu-id="f4db3-106">カスタム ヘッダー ボタンには、コントロール ユーザー インターフェイス (UI)、スタイル、およびテーマを説明するカスケード スタイル シート (CSS) コードを含む HTML ファイルが含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4db3-106">The custom header button must contain an HTML file that includes Cascading Style Sheets (CSS) code that describes the control user interface (UI), styles, and themes.</span></span> <span data-ttu-id="f4db3-107">また、ロジックを指定する TypeScript ビュー モデル ファイルも含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4db3-107">It must also contain a TypeScript view model file that specifies the logic.</span></span> <span data-ttu-id="f4db3-108">ファイル ビュー モデル ファイル内のクラスは、ヘッダー ボタンのプロパティおよびイベントを継承するために、**CustomPackingItem** クラスを拡張する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4db3-108">The class inside the file view model file must extend the **CustomPackingItem** class, so that it inherits the header button properties and events.</span></span> <span data-ttu-id="f4db3-109">**cartChangedHandler** イベントは、カート内で何らかの変更があった場合に通知を行うために、ヘッダー ボタンで公開されています。</span><span class="sxs-lookup"><span data-stu-id="f4db3-109">The **cartChangedHandler** event is exposed on the header button to provide notification if something changes in the cart.</span></span> <span data-ttu-id="f4db3-110">拡張コードは、カート イベントに基づくカスタム ロジックを実行することも、カスタム ビジネス ロジックを実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-110">Your extension code can do custom logic that is based on cart events, or it can do custom business logic.</span></span>
 
-## <a name="custompackingitem-class"></a><span data-ttu-id="8b330-111">CustomPackingItem クラス</span><span class="sxs-lookup"><span data-stu-id="8b330-111">CustomPackingItem class</span></span>
+## <a name="custompackingitem-class"></a><span data-ttu-id="f4db3-111">CustomPackingItem クラス</span><span class="sxs-lookup"><span data-stu-id="f4db3-111">CustomPackingItem class</span></span>
 
-### <a name="properties"></a><span data-ttu-id="8b330-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b330-112">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="f4db3-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f4db3-112">Properties</span></span>
 
-| <span data-ttu-id="8b330-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b330-113">Property</span></span> | <span data-ttu-id="8b330-114">説明</span><span class="sxs-lookup"><span data-stu-id="8b330-114">Description</span></span> |
+| <span data-ttu-id="f4db3-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f4db3-113">Property</span></span> | <span data-ttu-id="f4db3-114">説明</span><span class="sxs-lookup"><span data-stu-id="f4db3-114">Description</span></span> |
 |----------|-------------|
-| <span data-ttu-id="8b330-115">CustomPackingItemPosition</span><span class="sxs-lookup"><span data-stu-id="8b330-115">CustomPackingItemPosition</span></span> | <span data-ttu-id="8b330-116">POS ヘッダー品目に対する品目の位置。</span><span class="sxs-lookup"><span data-stu-id="8b330-116">The item's position relative to the POS header items.</span></span> |
-| <span data-ttu-id="8b330-117">ICustomPackingItemContext</span><span class="sxs-lookup"><span data-stu-id="8b330-117">ICustomPackingItemContext</span></span> | <span data-ttu-id="8b330-118">カスタム ヘッダー梱包品目のコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="8b330-118">The context of the custom header packing item.</span></span> |
+| <span data-ttu-id="f4db3-115">CustomPackingItemPosition</span><span class="sxs-lookup"><span data-stu-id="f4db3-115">CustomPackingItemPosition</span></span> | <span data-ttu-id="f4db3-116">POS ヘッダー品目に対する品目の位置。</span><span class="sxs-lookup"><span data-stu-id="f4db3-116">The item's position relative to the POS header items.</span></span> |
+| <span data-ttu-id="f4db3-117">ICustomPackingItemContext</span><span class="sxs-lookup"><span data-stu-id="f4db3-117">ICustomPackingItemContext</span></span> | <span data-ttu-id="f4db3-118">カスタム ヘッダー梱包品目のコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="f4db3-118">The context of the custom header packing item.</span></span> |
 
-### <a name="events-and-methods"></a><span data-ttu-id="8b330-119">イベントおよびメソッド</span><span class="sxs-lookup"><span data-stu-id="8b330-119">Events and methods</span></span>
+### <a name="events-and-methods"></a><span data-ttu-id="f4db3-119">イベントおよびメソッド</span><span class="sxs-lookup"><span data-stu-id="f4db3-119">Events and methods</span></span>
 
-| <span data-ttu-id="8b330-120">イベントまたはメソッド</span><span class="sxs-lookup"><span data-stu-id="8b330-120">Event or method</span></span> | <span data-ttu-id="8b330-121">説明</span><span class="sxs-lookup"><span data-stu-id="8b330-121">Description</span></span> |
+| <span data-ttu-id="f4db3-120">イベントまたはメソッド</span><span class="sxs-lookup"><span data-stu-id="f4db3-120">Event or method</span></span> | <span data-ttu-id="f4db3-121">説明</span><span class="sxs-lookup"><span data-stu-id="f4db3-121">Description</span></span> |
 |-----------------|-------------|
-| <span data-ttu-id="8b330-122">cartChangedHandler</span><span class="sxs-lookup"><span data-stu-id="8b330-122">cartChangedHandler</span></span> | <span data-ttu-id="8b330-123">**CartUpdated** イベントのハンドラー。</span><span class="sxs-lookup"><span data-stu-id="8b330-123">The handler for the **CartUpdated** event.</span></span> |
-| <span data-ttu-id="8b330-124">コンストラクター (ID: 文字列、コンテキスト: ICustomPackingItemContext)</span><span class="sxs-lookup"><span data-stu-id="8b330-124">constructor(id: string, context: ICustomPackingItemContext)</span></span> | <span data-ttu-id="8b330-125">このメソッドは、**CustomHeaderPackingItem** クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b330-125">This method creates a new instance of the **CustomHeaderPackingItem** class.</span></span> |
-| <span data-ttu-id="8b330-126">ID()</span><span class="sxs-lookup"><span data-stu-id="8b330-126">id()</span></span> | <span data-ttu-id="8b330-127">このメソッドは、カスタム ヘッダー梱包品目の ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="8b330-127">This method gets the identifier of the custom header packing item.</span></span> |
-| <span data-ttu-id="8b330-128">表示の取得 (): ブール値</span><span class="sxs-lookup"><span data-stu-id="8b330-128">get visible(): boolean</span></span> | <span data-ttu-id="8b330-129">このメソッドは、表示される値を取得します。</span><span class="sxs-lookup"><span data-stu-id="8b330-129">This method gets the visible value.</span></span> |
-| <span data-ttu-id="8b330-130">表示設定 (isVisible: ブール値)</span><span class="sxs-lookup"><span data-stu-id="8b330-130">set visible(isVisible: boolean)</span></span> | <span data-ttu-id="8b330-131">このメソッドは、表示される値を設定します。</span><span class="sxs-lookup"><span data-stu-id="8b330-131">This method sets the visible value.</span></span> |
-| <span data-ttu-id="8b330-132">抽象 onReady (packedElement: HTMLElement、unpackedElement: HTMLElement): 無効</span><span class="sxs-lookup"><span data-stu-id="8b330-132">abstract onReady(packedElement: HTMLElement, unpackedElement: HTMLElement): void</span></span> | <span data-ttu-id="8b330-133">このメソッドは、コントロール要素の準備ができたら、呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="8b330-133">This method is called when the control element is ready.</span></span> |
-| <span data-ttu-id="8b330-134">処分 (): 無効</span><span class="sxs-lookup"><span data-stu-id="8b330-134">dispose(): void</span></span> | <span data-ttu-id="8b330-135">このメソッドは、コントロールを破棄してリソースを解放します。</span><span class="sxs-lookup"><span data-stu-id="8b330-135">This method disposes of the control and releases its resources.</span></span> |
-| <span data-ttu-id="8b330-136">保護された抽象 init (状態: ICustomPackingItemState): 無効</span><span class="sxs-lookup"><span data-stu-id="8b330-136">protected abstract init(state: ICustomPackingItemState): void</span></span> | <span data-ttu-id="8b330-137">このメソッドは、コントロールを初期化します。</span><span class="sxs-lookup"><span data-stu-id="8b330-137">This method initializes the control.</span></span> |
+| <span data-ttu-id="f4db3-122">cartChangedHandler</span><span class="sxs-lookup"><span data-stu-id="f4db3-122">cartChangedHandler</span></span> | <span data-ttu-id="f4db3-123">**CartUpdated** イベントのハンドラー。</span><span class="sxs-lookup"><span data-stu-id="f4db3-123">The handler for the **CartUpdated** event.</span></span> |
+| <span data-ttu-id="f4db3-124">コンストラクター (ID: 文字列、コンテキスト: ICustomPackingItemContext)</span><span class="sxs-lookup"><span data-stu-id="f4db3-124">constructor(id: string, context: ICustomPackingItemContext)</span></span> | <span data-ttu-id="f4db3-125">このメソッドは、**CustomHeaderPackingItem** クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-125">This method creates a new instance of the **CustomHeaderPackingItem** class.</span></span> |
+| <span data-ttu-id="f4db3-126">ID()</span><span class="sxs-lookup"><span data-stu-id="f4db3-126">id()</span></span> | <span data-ttu-id="f4db3-127">このメソッドは、カスタム ヘッダー梱包品目の ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-127">This method gets the identifier of the custom header packing item.</span></span> |
+| <span data-ttu-id="f4db3-128">表示の取得 (): ブール値</span><span class="sxs-lookup"><span data-stu-id="f4db3-128">get visible(): boolean</span></span> | <span data-ttu-id="f4db3-129">このメソッドは、表示される値を取得します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-129">This method gets the visible value.</span></span> |
+| <span data-ttu-id="f4db3-130">表示設定 (isVisible: ブール値)</span><span class="sxs-lookup"><span data-stu-id="f4db3-130">set visible(isVisible: boolean)</span></span> | <span data-ttu-id="f4db3-131">このメソッドは、表示される値を設定します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-131">This method sets the visible value.</span></span> |
+| <span data-ttu-id="f4db3-132">抽象 onReady (packedElement: HTMLElement、unpackedElement: HTMLElement): 無効</span><span class="sxs-lookup"><span data-stu-id="f4db3-132">abstract onReady(packedElement: HTMLElement, unpackedElement: HTMLElement): void</span></span> | <span data-ttu-id="f4db3-133">このメソッドは、コントロール要素の準備ができたら、呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-133">This method is called when the control element is ready.</span></span> |
+| <span data-ttu-id="f4db3-134">処分 (): 無効</span><span class="sxs-lookup"><span data-stu-id="f4db3-134">dispose(): void</span></span> | <span data-ttu-id="f4db3-135">このメソッドは、コントロールを破棄してリソースを解放します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-135">This method disposes of the control and releases its resources.</span></span> |
+| <span data-ttu-id="f4db3-136">保護された抽象 init (状態: ICustomPackingItemState): 無効</span><span class="sxs-lookup"><span data-stu-id="f4db3-136">protected abstract init(state: ICustomPackingItemState): void</span></span> | <span data-ttu-id="f4db3-137">このメソッドは、コントロールを初期化します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-137">This method initializes the control.</span></span> |
 
-<span data-ttu-id="8b330-138">次の例に示すように、**manifest.json** ファイルにヘッダー ボタン拡張機能のノードを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b330-138">You must add nodes for the header button extension in the **manifest.json** file, as shown in the following example.</span></span>
+<span data-ttu-id="f4db3-138">次の例に示すように、**manifest.json** ファイルにヘッダー ボタン拡張機能のノードを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4db3-138">You must add nodes for the header button extension in the **manifest.json** file, as shown in the following example.</span></span>
 
 ```typescript
 "header": {
@@ -68,15 +66,15 @@ ms.locfileid: "4681514"
 }
 ```
 
-## <a name="add-a-custom-button-to-the-pos-header-bar"></a><span data-ttu-id="8b330-139">カスタム ボタンを POS ヘッダー バーに追加</span><span class="sxs-lookup"><span data-stu-id="8b330-139">Add a custom button to the POS header bar</span></span>
+## <a name="add-a-custom-button-to-the-pos-header-bar"></a><span data-ttu-id="f4db3-139">カスタム ボタンを POS ヘッダー バーに追加</span><span class="sxs-lookup"><span data-stu-id="f4db3-139">Add a custom button to the POS header bar</span></span>
 
-<span data-ttu-id="8b330-140">次の手順に従って、ヘッダー バーにカスタム ボタンを追加し、請求額をカートから読み取って表示します。</span><span class="sxs-lookup"><span data-stu-id="8b330-140">Follow these steps to add a custom button to the header bar and show the amount due by reading it from the cart.</span></span>
+<span data-ttu-id="f4db3-140">次の手順に従って、ヘッダー バーにカスタム ボタンを追加し、請求額をカートから読み取って表示します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-140">Follow these steps to add a custom button to the header bar and show the amount due by reading it from the cart.</span></span>
 
-1. <span data-ttu-id="8b330-141">Visual Studio 2017 を開きます。</span><span class="sxs-lookup"><span data-stu-id="8b330-141">Open Visual Studio 2017.</span></span>
-2. <span data-ttu-id="8b330-142">**\\RetailSDK\\POS** から **ModernPOS/CloudPOS** ソリューションを開きます。</span><span class="sxs-lookup"><span data-stu-id="8b330-142">Open the **ModernPOS/CloudPOS** solution from **\\RetailSDK\\POS**.</span></span>
-3. <span data-ttu-id="8b330-143">**POS.Extensions** プロジェクトで、**HeaderExtensionSample** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b330-143">In the **POS.Extensions** project, create a folder that is named **HeaderExtensionSample**.</span></span>
-4. <span data-ttu-id="8b330-144">**HeaderExtensionSample** フォルダーで、**CartAmountDuePackingItem.html** という HTML ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b330-144">In the **HeaderExtensionSample** folder, create an HTML file that is named **CartAmountDuePackingItem.html**.</span></span>
-5. <span data-ttu-id="8b330-145">次のコードをコピーして、ファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="8b330-145">Copy the following code, and paste it into the file.</span></span>
+1. <span data-ttu-id="f4db3-141">Visual Studio 2017 を開きます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-141">Open Visual Studio 2017.</span></span>
+2. <span data-ttu-id="f4db3-142">**\\RetailSDK\\POS** から **ModernPOS/CloudPOS** ソリューションを開きます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-142">Open the **ModernPOS/CloudPOS** solution from **\\RetailSDK\\POS**.</span></span>
+3. <span data-ttu-id="f4db3-143">**POS.Extensions** プロジェクトで、**HeaderExtensionSample** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-143">In the **POS.Extensions** project, create a folder that is named **HeaderExtensionSample**.</span></span>
+4. <span data-ttu-id="f4db3-144">**HeaderExtensionSample** フォルダーで、**CartAmountDuePackingItem.html** という HTML ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-144">In the **HeaderExtensionSample** folder, create an HTML file that is named **CartAmountDuePackingItem.html**.</span></span>
+5. <span data-ttu-id="f4db3-145">次のコードをコピーして、ファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-145">Copy the following code, and paste it into the file.</span></span>
 
     ```html
     <!DOCTYPE html>
@@ -108,8 +106,8 @@ ms.locfileid: "4681514"
     </html>
     ```
 
-6. <span data-ttu-id="8b330-146">**HeaderExtensionSample** フォルダーで、**CartAmountDuePackingItem.ts** という TypeScript ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b330-146">In the **HeaderExtensionSample** folder, create a TypeScript file that is named **CartAmountDuePackingItem.ts**.</span></span>
-7. <span data-ttu-id="8b330-147">次のコードをコピーして、ファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="8b330-147">Copy the following code, and paste it into the file.</span></span>
+6. <span data-ttu-id="f4db3-146">**HeaderExtensionSample** フォルダーで、**CartAmountDuePackingItem.ts** という TypeScript ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-146">In the **HeaderExtensionSample** folder, create a TypeScript file that is named **CartAmountDuePackingItem.ts**.</span></span>
+7. <span data-ttu-id="f4db3-147">次のコードをコピーして、ファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-147">Copy the following code, and paste it into the file.</span></span>
 
     ```typescript
     import {
@@ -220,8 +218,8 @@ ms.locfileid: "4681514"
     }
     ```
 
-8. <span data-ttu-id="8b330-148">**HeaderExtensionSample** フォルダーで、**manifest.json** という JavaScript Object Notation (JSON) ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b330-148">In the **HeaderExtensionSample** folder, create a JavaScript Object Notation (JSON) file that is named **manifest.json**.</span></span>
-9. <span data-ttu-id="8b330-149">次のコードをコピーして、ファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="8b330-149">Copy the following code, and paste it into the file.</span></span>
+8. <span data-ttu-id="f4db3-148">**HeaderExtensionSample** フォルダーで、**manifest.json** という JavaScript Object Notation (JSON) ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-148">In the **HeaderExtensionSample** folder, create a JavaScript Object Notation (JSON) file that is named **manifest.json**.</span></span>
+9. <span data-ttu-id="f4db3-149">次のコードをコピーして、ファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-149">Copy the following code, and paste it into the file.</span></span>
 
     ```typescript
     {
@@ -247,8 +245,8 @@ ms.locfileid: "4681514"
     }
     ```
 
-10. <span data-ttu-id="8b330-150">**POS.Extensions** プロジェクトで、**extensions.json** ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="8b330-150">In the **POS.Extensions** project, open the **extensions.json** file.</span></span>
-11. <span data-ttu-id="8b330-151">**HeaderExtensionSample** パッケージの詳細を更新して、初回の読み込み時に POS がこの拡張機能パッケージを含めることができるようにします。</span><span class="sxs-lookup"><span data-stu-id="8b330-151">Update the details of the **HeaderExtensionSample** package, so that the POS can include this extension package during the initial load.</span></span>
+10. <span data-ttu-id="f4db3-150">**POS.Extensions** プロジェクトで、**extensions.json** ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-150">In the **POS.Extensions** project, open the **extensions.json** file.</span></span>
+11. <span data-ttu-id="f4db3-151">**HeaderExtensionSample** パッケージの詳細を更新して、初回の読み込み時に POS がこの拡張機能パッケージを含めることができるようにします。</span><span class="sxs-lookup"><span data-stu-id="f4db3-151">Update the details of the **HeaderExtensionSample** package, so that the POS can include this extension package during the initial load.</span></span>
 
     ```typescript
     {
@@ -260,13 +258,16 @@ ms.locfileid: "4681514"
     }
     ```
 
-12. <span data-ttu-id="8b330-152">プロジェクトを構築します。</span><span class="sxs-lookup"><span data-stu-id="8b330-152">Build the project.</span></span>
+12. <span data-ttu-id="f4db3-152">プロジェクトを構築します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-152">Build the project.</span></span>
 
-### <a name="validate-the-customization"></a><span data-ttu-id="8b330-153">カスタマイズの検証</span><span class="sxs-lookup"><span data-stu-id="8b330-153">Validate the customization</span></span>
+### <a name="validate-the-customization"></a><span data-ttu-id="f4db3-153">カスタマイズの検証</span><span class="sxs-lookup"><span data-stu-id="f4db3-153">Validate the customization</span></span>
 
-<span data-ttu-id="8b330-154">カスタマイズを検証するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="8b330-154">Follow these steps to validate the customization.</span></span>
+<span data-ttu-id="f4db3-154">カスタマイズを検証するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f4db3-154">Follow these steps to validate the customization.</span></span>
 
-1. <span data-ttu-id="8b330-155">オペレーター ID およびパスワードを入力して POS にサインインします。</span><span class="sxs-lookup"><span data-stu-id="8b330-155">Sign in to the POS by entering the operator ID and password.</span></span>
-2. <span data-ttu-id="8b330-156">ヘッダー バーを確認します。</span><span class="sxs-lookup"><span data-stu-id="8b330-156">Look at the header bar.</span></span> <span data-ttu-id="8b330-157">追加したカスタム ボタンが表示されます。</span><span class="sxs-lookup"><span data-stu-id="8b330-157">The custom button that you added should be visible.</span></span>
+1. <span data-ttu-id="f4db3-155">オペレーター ID およびパスワードを入力して POS にサインインします。</span><span class="sxs-lookup"><span data-stu-id="f4db3-155">Sign in to the POS by entering the operator ID and password.</span></span>
+2. <span data-ttu-id="f4db3-156">ヘッダー バーを確認します。</span><span class="sxs-lookup"><span data-stu-id="f4db3-156">Look at the header bar.</span></span> <span data-ttu-id="f4db3-157">追加したカスタム ボタンが表示されます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-157">The custom button that you added should be visible.</span></span>
 
-<span data-ttu-id="8b330-158">[POS 設定ページ](view-pos-extension-package-details.md) で、拡張機能パッケージの状態を表示できます。</span><span class="sxs-lookup"><span data-stu-id="8b330-158">You can view the status of the extension package on the [POS settings page](view-pos-extension-package-details.md).</span></span>
+<span data-ttu-id="f4db3-158">[POS 設定ページ](view-pos-extension-package-details.md) で、拡張機能パッケージの状態を表示できます。</span><span class="sxs-lookup"><span data-stu-id="f4db3-158">You can view the status of the extension package on the [POS settings page](view-pos-extension-package-details.md).</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

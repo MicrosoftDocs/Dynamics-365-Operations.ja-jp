@@ -2,11 +2,9 @@
 title: Application update 7.3 での ER フレームワーク API の変更
 description: このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告フレームワークの API における変更について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -14,57 +12,57 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 89a4c4479b9e1c655abb8a910d14adba805fc862
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: b8dbc790487c8cf8d7c60dc23a4447a606b10751
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093585"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751192"
 ---
-# <a name="er-framework-api-changes-for-application-update-73"></a><span data-ttu-id="5ddfb-103">Application update 7.3 での ER フレームワーク API の変更</span><span class="sxs-lookup"><span data-stu-id="5ddfb-103">ER framework API changes for Application update 7.3</span></span>
+# <a name="er-framework-api-changes-for-application-update-73"></a><span data-ttu-id="2cf01-103">Application update 7.3 での ER フレームワーク API の変更</span><span class="sxs-lookup"><span data-stu-id="2cf01-103">ER framework API changes for Application update 7.3</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5ddfb-104">このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告 (ER) フレームワークの API における変更について説明します。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-104">This topic describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 for Finance and Operations, Enterprise edition Application update 7.3.</span></span>
+<span data-ttu-id="2cf01-104">このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告 (ER) フレームワークの API における変更について説明します。</span><span class="sxs-lookup"><span data-stu-id="2cf01-104">This topic describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 for Finance and Operations, Enterprise edition Application update 7.3.</span></span>
 
-<span data-ttu-id="5ddfb-105">ER API には 2 つのタイプの変更があります。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-105">There are two types of changes to the ER APIs:</span></span>
+<span data-ttu-id="2cf01-105">ER API には 2 つのタイプの変更があります。</span><span class="sxs-lookup"><span data-stu-id="2cf01-105">There are two types of changes to the ER APIs:</span></span>
 
-- <span data-ttu-id="5ddfb-106">いくつかの X++ クラスが外部アセンブリに X++ から移行されました。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-106">Several X++ classes were moved from X++ to an external assembly.</span></span>
-- <span data-ttu-id="5ddfb-107">X++ クラスの残りの部分は、内部としてマークされています。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-107">The rest of X++ classes were marked as internal.</span></span>
+- <span data-ttu-id="2cf01-106">いくつかの X++ クラスが外部アセンブリに X++ から移行されました。</span><span class="sxs-lookup"><span data-stu-id="2cf01-106">Several X++ classes were moved from X++ to an external assembly.</span></span>
+- <span data-ttu-id="2cf01-107">X++ クラスの残りの部分は、内部としてマークされています。</span><span class="sxs-lookup"><span data-stu-id="2cf01-107">The rest of X++ classes were marked as internal.</span></span>
 
-## <a name="how-to-access-classes-that-were-moved-from-x-to-an-external-assembly"></a><span data-ttu-id="5ddfb-108">外部アセンブリに X++ から移行されたクラスへのアクセス方法</span><span class="sxs-lookup"><span data-stu-id="5ddfb-108">How to access classes that were moved from X++ to an external assembly</span></span>
+## <a name="how-to-access-classes-that-were-moved-from-x-to-an-external-assembly"></a><span data-ttu-id="2cf01-108">外部アセンブリに X++ から移行されたクラスへのアクセス方法</span><span class="sxs-lookup"><span data-stu-id="2cf01-108">How to access classes that were moved from X++ to an external assembly</span></span>
 
-<span data-ttu-id="5ddfb-109">外部クラスにアクセスするには、ファイルの先頭に **using** ディレクティブを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-109">To access external classes, you need to add the **using** directive to the beginning of your file.</span></span>
+<span data-ttu-id="2cf01-109">外部クラスにアクセスするには、ファイルの先頭に **using** ディレクティブを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2cf01-109">To access external classes, you need to add the **using** directive to the beginning of your file.</span></span>
 
 ```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 ```
 
-<span data-ttu-id="5ddfb-110">たとえば、追加の変更をせずに外部クラスにアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-110">You can then access an external class without any additional changes, for example.</span></span>
+<span data-ttu-id="2cf01-110">たとえば、追加の変更をせずに外部クラスにアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="2cf01-110">You can then access an external class without any additional changes, for example.</span></span>
 
 ```xpp
 var destination = new ERFileDestinationMemory();
 ```
 
-<span data-ttu-id="5ddfb-111">名前空間のエイリアスを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-111">You can also create an alias for your namespace.</span></span>
+<span data-ttu-id="2cf01-111">名前空間のエイリアスを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="2cf01-111">You can also create an alias for your namespace.</span></span>
 
 ```xpp
 using LF = Microsoft.Dynamics365.LocalizationFramework;
 ```
 
-<span data-ttu-id="5ddfb-112">作成した名前空間のエイリアスを使用して、外部のクラスを参照することができます。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-112">You can then refer to an external class by using the namespace alias that you created.</span></span>
+<span data-ttu-id="2cf01-112">作成した名前空間のエイリアスを使用して、外部のクラスを参照することができます。</span><span class="sxs-lookup"><span data-stu-id="2cf01-112">You can then refer to an external class by using the namespace alias that you created.</span></span>
 
 ```xpp
 var destination = new LF.ERFileDestinationMemory();
 ```
 
-## <a name="how-to-access-internal-x-objects-by-using-erobjectsfactory"></a><span data-ttu-id="5ddfb-113">ERObjectsFactory を使用して内部 X++ オブジェクトにアクセスする方法</span><span class="sxs-lookup"><span data-stu-id="5ddfb-113">How to access internal X++ objects by using ERObjectsFactory</span></span>
+## <a name="how-to-access-internal-x-objects-by-using-erobjectsfactory"></a><span data-ttu-id="2cf01-113">ERObjectsFactory を使用して内部 X++ オブジェクトにアクセスする方法</span><span class="sxs-lookup"><span data-stu-id="2cf01-113">How to access internal X++ objects by using ERObjectsFactory</span></span>
 
-<span data-ttu-id="5ddfb-114">アプリケーションの更新プログラム 7.3 以降では、呼び出し元のコードは **ERObjectsFactory** クラスのメソッドを使用して ER オブジェクトにアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-114">In Application update 7.3 and later updates, the calling code must access the ER objects by using the methods of the **ERObjectsFactory** class.</span></span> <span data-ttu-id="5ddfb-115">これらの変更の例をいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="5ddfb-115">Several examples of these changes are shown.</span></span>
+<span data-ttu-id="2cf01-114">アプリケーションの更新プログラム 7.3 以降では、呼び出し元のコードは **ERObjectsFactory** クラスのメソッドを使用して ER オブジェクトにアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2cf01-114">In Application update 7.3 and later updates, the calling code must access the ER objects by using the methods of the **ERObjectsFactory** class.</span></span> <span data-ttu-id="2cf01-115">これらの変更の例をいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="2cf01-115">Several examples of these changes are shown.</span></span>
 
-### <a name="code-to-display-a-format-mapping-lookup"></a><span data-ttu-id="5ddfb-116">フォーマット マッピング ルックアップを表示するコード</span><span class="sxs-lookup"><span data-stu-id="5ddfb-116">Code to display a format mapping lookup</span></span>
+### <a name="code-to-display-a-format-mapping-lookup"></a><span data-ttu-id="2cf01-116">フォーマット マッピング ルックアップを表示するコード</span><span class="sxs-lookup"><span data-stu-id="2cf01-116">Code to display a format mapping lookup</span></span>
 
-<span data-ttu-id="5ddfb-117">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="5ddfb-117">Before Application update 7.3</span></span>
+<span data-ttu-id="2cf01-117">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="2cf01-117">Before Application update 7.3</span></span>
 
 ```xpp
 // pattern
@@ -73,7 +71,7 @@ ERFormatMappingTableLookup::lookupFormatMapping(<form control>, <model name>[, <
 ERFormatMappingTableLookup::lookupFormatMapping(_referenceGroupControl, bankLCMiscChargeReportERModelName);
 ```
 
-<span data-ttu-id="5ddfb-118">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="5ddfb-118">Application update 7.3 and later</span></span>
+<span data-ttu-id="2cf01-118">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="2cf01-118">Application update 7.3 and later</span></span>
 
 ```xpp
 // pattern
@@ -82,9 +80,9 @@ ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(<form control
 ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(_referenceGroupControl, bankLCMiscChargeReportERModelName).performFormLookup();
 ```
 
-### <a name="code-to-run-a-format-mapping-for-data-export"></a><span data-ttu-id="5ddfb-119">データ エクスポート用のフォーマット マッピングを実行するためのコード</span><span class="sxs-lookup"><span data-stu-id="5ddfb-119">Code to run a format mapping for data export</span></span>
+### <a name="code-to-run-a-format-mapping-for-data-export"></a><span data-ttu-id="2cf01-119">データ エクスポート用のフォーマット マッピングを実行するためのコード</span><span class="sxs-lookup"><span data-stu-id="2cf01-119">Code to run a format mapping for data export</span></span>
 
-<span data-ttu-id="5ddfb-120">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="5ddfb-120">Before Application update 7.3</span></span>
+<span data-ttu-id="2cf01-120">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="2cf01-120">Before Application update 7.3</span></span>
 
 ```xpp
 // pattern
@@ -93,7 +91,7 @@ ERFormatMappingRun::constructByFormatMappingId(<format mapping id>, <file name>,
 ERFormatMappingRun::constructByFormatMappingId(erBinding, '', true).run();
 ```
 
-<span data-ttu-id="5ddfb-121">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="5ddfb-121">Application update 7.3 and later</span></span>
+<span data-ttu-id="2cf01-121">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="2cf01-121">Application update 7.3 and later</span></span>
 
 ```xpp
 // pattern
@@ -102,9 +100,9 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(<format mapping id>, <
 ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).run();
 ```
 
-### <a name="code-to-run-a-format-mapping-for-data-import"></a><span data-ttu-id="5ddfb-122">データ インポート用の形式マッピングを実行するためのコード</span><span class="sxs-lookup"><span data-stu-id="5ddfb-122">Code to run a format mapping for data import</span></span>
+### <a name="code-to-run-a-format-mapping-for-data-import"></a><span data-ttu-id="2cf01-122">データ インポート用の形式マッピングを実行するためのコード</span><span class="sxs-lookup"><span data-stu-id="2cf01-122">Code to run a format mapping for data import</span></span>
 
-<span data-ttu-id="5ddfb-123">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="5ddfb-123">Before Application update 7.3</span></span>
+<span data-ttu-id="2cf01-123">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="2cf01-123">Before Application update 7.3</span></span>
 
 ```xpp
 // pattern
@@ -113,7 +111,7 @@ ERModelMappingDestinationRun::constructByImportFormatMappingId(<mapping id>, <in
 ERModelMappingDestinationRun::constructByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
 ```
 
-<span data-ttu-id="5ddfb-124">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="5ddfb-124">Application update 7.3 and later</span></span>
+<span data-ttu-id="2cf01-124">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="2cf01-124">Application update 7.3 and later</span></span>
 
 ```xpp
 // pattern
@@ -122,25 +120,25 @@ ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(<mapping id
 ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
 ```
 
-### <a name="code-to-create-a-browser-file-destination"></a><span data-ttu-id="5ddfb-125">ブラウザー ファイルの宛先を作成するためのコード</span><span class="sxs-lookup"><span data-stu-id="5ddfb-125">Code to create a browser file destination</span></span>
+### <a name="code-to-create-a-browser-file-destination"></a><span data-ttu-id="2cf01-125">ブラウザー ファイルの宛先を作成するためのコード</span><span class="sxs-lookup"><span data-stu-id="2cf01-125">Code to create a browser file destination</span></span>
 
-<span data-ttu-id="5ddfb-126">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="5ddfb-126">Before Application update 7.3</span></span>
+<span data-ttu-id="2cf01-126">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="2cf01-126">Before Application update 7.3</span></span>
 
 ```xpp
 // sample code
 new ERFileDestinationBrowser();
 ```
 
-<span data-ttu-id="5ddfb-127">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="5ddfb-127">Application update 7.3 and later</span></span>
+<span data-ttu-id="2cf01-127">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="2cf01-127">Application update 7.3 and later</span></span>
 
 ```xpp
 // sample code
 ERObjectsFactory::createFileDestinationBrowser();
 ```
 
-### <a name="code-to-create-an-attachment-file-destination"></a><span data-ttu-id="5ddfb-128">添付ファイルの宛先を作成するためのコード</span><span class="sxs-lookup"><span data-stu-id="5ddfb-128">Code to create an attachment file destination</span></span>
+### <a name="code-to-create-an-attachment-file-destination"></a><span data-ttu-id="2cf01-128">添付ファイルの宛先を作成するためのコード</span><span class="sxs-lookup"><span data-stu-id="2cf01-128">Code to create an attachment file destination</span></span>
 
-<span data-ttu-id="5ddfb-129">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="5ddfb-129">Before Application update 7.3</span></span>
+<span data-ttu-id="2cf01-129">アプリケーション 更新 7.3 より前</span><span class="sxs-lookup"><span data-stu-id="2cf01-129">Before Application update 7.3</span></span>
 
 ```xpp
 // pattern
@@ -149,7 +147,7 @@ ERFileDestinationAttachment::construct(<record>, ERDocuManagement::instance().ot
 ERFileDestinationAttachment::construct(_cashRegisterFiscalTrans_W, ERDocuManagement::instance().otherDocuType());
 ```
 
-<span data-ttu-id="5ddfb-130">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="5ddfb-130">Application update 7.3 and later</span></span>
+<span data-ttu-id="2cf01-130">アプリケーション更新プログラム 7.3 以降</span><span class="sxs-lookup"><span data-stu-id="2cf01-130">Application update 7.3 and later</span></span>
 
 ```xpp
 // pattern
@@ -157,3 +155,6 @@ ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
 // sample code
 ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
