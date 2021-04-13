@@ -2,11 +2,9 @@
 title: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 description: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 author: ChrisGarty
-manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BatchJob
 audience: IT Pro
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-05-19
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: 2ba107da07d56372e9397bd79524adfd13b3a55d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 7794ac60f967d022f8d68518eb9d5e9652702ab7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797590"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747165"
 ---
 # <a name="configure-the-workflow-message-processing-batch-job-as-critical"></a>ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 

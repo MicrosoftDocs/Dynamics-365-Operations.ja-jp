@@ -2,11 +2,9 @@
 title: 有効なバッチ期間
 description: このトピックでは、有効なバッチ期間のセットアップおよび作業に関する情報を説明します。
 author: hasaid
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: c75e026cf39b83bc3f93b533f2c884728ea9cb5c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fe58fb5b0701e61a74863669d47cb9a52d92151b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688189"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751340"
 ---
 # <a name="active-batch-periods"></a>有効なバッチ期間
 

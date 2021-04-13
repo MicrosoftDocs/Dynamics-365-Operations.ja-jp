@@ -2,11 +2,9 @@
 title: アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ
 description: このトピックでは、アプリケーション オブジェクト ツリー (AOT) におけるテーブル要素の プロパティ ウィンドウにあるプロパティについて説明します。
 author: kfend
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 04d49efa77372fc8f5f4110f5af5aaaaef838884
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 5f9deb0eb15d1f735fd7d736b7853ac38d3b12db
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126727"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744761"
 ---
 # <a name="table-properties-in-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ
 

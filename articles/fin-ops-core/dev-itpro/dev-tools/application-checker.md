@@ -2,11 +2,9 @@
 title: アプリケーション チェッカー
 description: このトピックでは、Application チェッカー ツールについて説明します。
 author: AndreasHassing
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 1163a4e0601466a2bbedda9a48134e35c54e6c20
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c5ed2466f483a1089b873e49a2c9a3141a24999e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409195"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750946"
 ---
 # <a name="application-checker"></a>アプリケーション チェッカー
 

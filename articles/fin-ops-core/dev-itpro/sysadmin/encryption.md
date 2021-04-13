@@ -2,11 +2,9 @@
 title: Finance and Operations アプリにおける暗号化処理
 description: このトピックでは、環境の SQL Server データベースと Azure ストレージに格納されている、休眠している顧客データの保護に使用される暗号化技術について説明します。
 author: nedb
-manager: ''
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3337bd40ee00c3f0d296928d32d88ea7460a1fd7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c662c8975ed0589047e82cad4e843f83971037e8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679908"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745985"
 ---
 # <a name="encryption-in-finance-and-operations-apps"></a>Finance and Operations アプリにおける暗号化処理
 

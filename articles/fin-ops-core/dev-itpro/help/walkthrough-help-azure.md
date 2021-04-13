@@ -2,11 +2,9 @@
 title: Azure にカスタム ヘルプを展開
 description: このトピックでは、Microsoft Dynamics 365 ヘルプ コンテンツを Azure Web アプリに展開する方法を示す例を紹介します。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 9df8cb3f6f4919bdac985c49e9f1a65895eef5dc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 81a1d9a7a8d7fab55ca9131d390f9cb27721d2e3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685081"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748773"
 ---
 # <a name="deploy-custom-help-to-azure"></a>Azure にカスタム ヘルプを展開
 

@@ -2,11 +2,9 @@
 title: エンティティ格納と Power BI の統合
 description: このトピックでは、エンティティストアが Power BI 統合を有効にする方法について説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 54cbfc0aac365256e0174bedcff73ee94e697566
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: b0b5784ad107cc013fce3c22a09d8f65046b1f2f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092472"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753106"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 

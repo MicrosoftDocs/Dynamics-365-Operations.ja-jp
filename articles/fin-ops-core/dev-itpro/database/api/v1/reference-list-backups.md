@@ -2,11 +2,9 @@
 title: データベース移動 API - 参照 - v1 - データベースのバックアップのリスト
 description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
-manager: AnnBe
 ms.date: 09/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: c79c86784fc48e7df68f39e7833e1b293c8ed914
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fe4ea63bbcf87a5a212d0c3832b3a5edc659dc63
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681106"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744545"
 ---
 # <a name="list-database-backups"></a>データベースのバックアップのリスト
 

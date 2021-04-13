@@ -2,11 +2,9 @@
 title: Commerce runtime (CRT) の拡張機能
 description: このトピックでは、Commerce Runtime (CRT) と Retail サーバーを拡張するさまざまな方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1c6ea1ea65e9ff249ce3762b89da4dabb3c9d388
-ms.sourcegitcommit: 14785208d84b2c1efd30f140c52df35a2ccd1577
+ms.openlocfilehash: d960f666247c069ed4864d7cabc44a253c4822ad
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "5070204"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793023"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 
@@ -65,10 +63,27 @@ CRT 拡張パターンについて学習する前に、CRT 拡張の作成方法
 
 完全に既存の機能をオーバーライドしたり、ビジネス フローに従ってカスタマイズできます。 次にいくつか例を挙げます。
 
-+ POS 検索機能を上書きして、ローカル データベースまたは Commerce 本社で検索するのではなく、外部システムから検索する必要があります。 または、上書き、標準機能の呼び出しおよびいくつか追加カスタム ロジックの実行が可能です。
-+ ローカル データベースまたは Commerce 本社を検索し、外部システムを検索した後、結果をマージまたは変更します。
++ 検索機能を上書きして、すぐに使用できる検索機能の代わりに、外部システムから検索する必要があります。
 
-ハンドラーの上書きは避けてください。 プレ トリガーまたはポスト トリガーを使用すると、CRT の拡張機能のシナリオのほとんどを実装できます。 上書きが必要なのは、既存の機能を完全に置換する場合だけです。
+必要な場合に限り、ハンドラーを上書きする必要はありません。 代わりに、プレトリガーまたはポストトリガーを使用して、CRT の拡張機能のシナリオを実装します。 
+
+### <a name="executing-the-next-crt-handler---chain-of-handlers"></a>次の CRT ハンドラの実行 - ハンドラーのチェーン
+
+プラットフォーム更新プログラムのバージョン 10.0.19 以降を使用して、CRT フレームワークは **ExecuteNextAsync** および **GetNextAsyncRequestHandler** をサポートします。 これらのメソッドを使用して、上書きされた拡張機能コードで基本要求およびハンドラーを実行します。 **CommerceRuntime.Ext.config** ファイルに一覧表示された注文に基づいて、CRT フレームワークも同じハンドラを複数回実行することができます。
+
+#### <a name="executenextasync"></a>ExecuteNextAsync
+
+**ExecuteNextAsync** メソッドを使用して、要求を上書きし、基本要求を上書きします。 上書きでは、たとえば拡張子プロパティを設定するなど、カスタム ロジックを追加できます。 たとえば、**顧客** の保存要求を上書きし、**ExecuteNextAsync** を使用して最初に基本顧客要求に電話をし、次に追加ロジックを追加して顧客拡張機能のプロパティを保存します。
+
+#### <a name="getnextasyncrequesthandler"></a>GetNextAsyncRequestHandler
+
+ハンドラを上書きし、基本ハンドラを呼び出してすぐに使えるロジックを実行してカスタム ロジックを使い基本ハンドラの結果を変更する場合は、**GetNextAsyncRequestHandler** を使用します。 
+
+たとえば、すぐに使える Azure Search ハンドラーを使用して **製品** を検索し、さらにロジックを追加し在庫に基づいて結果を変更できます。 カスタム検索結果を含めるか、結果をフィルタ処理することができます。
+
+### <a name="nothandledresponse"></a>NotHandledResponse
+
+上書きされたハンドラーで、基本ハンドラーを実行し、カスタム ロジックの代わりに基本応答を返す場合は、**Not DragdResponse()** を返します。 **Not HandlerdResponse** が返された場合、CRT フレームワークはすぐに使えるハンドラーを実行します。 **NotHandlerdResponse** は、特定の条件でのみカスタム ロジックを実行するシナリオで使用できます (そうではない場合は、基本ハンドラー ロジックを実行します)。
 
 ### <a name="crt-data-service-and-data-service-with-entities"></a>CRT データ サービス、およびエンティティ付きデータ サービス
 
@@ -418,11 +433,91 @@ namespace Contoso
 
 ## <a name="run-the-base-handler-in-the-extension"></a>拡張機能で基本ハンドラーを実行する
 
+### <a name="executing-the-next-crt-handler---chain-of-handlers"></a>次の CRT ハンドラの実行 - ハンドラーのチェーン
+
+#### <a name="executenextasync"></a>ExecuteNextAsync
+
+**ExecuteNextAsync** メソッドを使用して、要求を上書きし基本要求を呼び出し、そしてカスタム ロジックを追加して拡張機能プロパティを設定できます。 たとえば、**顧客** の保存要求を上書きし、**ExecuteNextAsync** を使用して最初に基本顧客要求に電話をし、次に追加ロジックを追加して顧客拡張機能のプロパティを保存できます。
+
+```csharp
+/// <summary>
+/// Create or update customer data request handler.
+/// </summary>
+public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncRequestHandler<CreateOrUpdateCustomerDataRequest>
+{
+    /// <summary>
+    /// Executes the workflow to create or update a customer.
+    /// </summary>
+    /// <param name="request">The request.</param>
+    /// <returns>The response.</returns>
+    protected override async Task<Response> Process(CreateOrUpdateCustomerDataRequest request)
+    {
+        ThrowIf.Null(request, "request");
+
+        using (var databaseContext = new DatabaseContext(request.RequestContext))
+        using (var transactionScope = new TransactionScope())
+        {
+            // Execute original functionality to save the customer.
+            var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
+
+            // Execute additional functionality to save the customer's extension properties.
+            if (!request.Customer.ExtensionProperties.IsNullOrEmpty())
+            {
+                // The stored procedure will determine which extension properties are saved to which tables.
+                ParameterSet parameters = new ParameterSet();
+                parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
+                await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
+            }
+
+            transactionScope.Complete();
+
+            return response;
+        }
+    }
+}
+```
+
+#### <a name="getnextasyncrequesthandler"></a>GetNextAsyncRequestHandler
+
+ハンドラを上書きし、基本ハンドラを呼び出して OOB ロジックを実行してカスタム ロジックを使い基本ハンドラの結果を変更する場合は、**GetNextAsyncRequestHandler** を使用します。 たとえば、すぐに使える Azure Search ハンドラーを使用して製品を検索し、顧客検索結果まを含めるか結果をフィルターするかで、さらにロジックを追加し在庫に基づいて結果を変更できます。
+
+```csharp
+
+protected override async Task<Response> Process(SaveSalesTransactionDataRequest request)
+{
+    ThrowIf.Null(request, "request");
+
+    // The extension should do nothing If fiscal registration is enabled and legacy extension were used to run registration process.
+    if (!string.IsNullOrEmpty(request.RequestContext.GetChannelConfiguration().FiscalRegistrationProcessId))
+    {
+        return new NotHandledResponse();
+    }
+
+    NullResponse response;
+
+    using (var databaseContext = new DatabaseContext(request.RequestContext))
+    using (var transactionScope = CreateReadCommittedTransactionScope())
+    {
+        // Execute original logic.
+        var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
+        response = await request.RequestContext.Runtime.ExecuteAsync<NullResponse>(request, request.RequestContext, requestHandler, false).ConfigureAwait(false);
+
+        // Extension logic.
+        if (request.RequestContext.GetChannelConfiguration().CountryRegionISOCode == CountryRegionISOCode.FR)
+        {
+            response = await SaveSalesTransactionExtAsync(request).ConfigureAwait(false);
+        }
+
+        transactionScope.Complete();
+    }
+
+    return response;
+}
+```
+
 ### <a name="nothandledresponse"></a>NotHandledResponse
 
 一部のシナリオでは、オーバーライドされたロジックで基本ハンドラーを実行する場合、**new NotHandledResponse()** を返すことによって基本ハンドラーを実行できます。 **NotHandledResponse** が返された場合、CRT フレームワークは、基本または帯域外ロジックの実行を要求する拡張機能を使用するため、 帯域外ハンドラーを実行します。
-
-**NotHandledResponse** は、拡張機能によって基本ハンドラー ロジックが実行される場合に使用できます。 たとえば、オーバーライドされた要求が基本ハンドラー ロジックを実行する場合、実行する基本ハンドラーに **NotHandledResponse** を返すことができます。 または、拡張機能によってカスタム ロジックと基本ロジックが実行される場合は、カスタム ロジックを実行した後で **NotHandledResponse** を返すことができます。
 
 ```csharp
 private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)

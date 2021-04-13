@@ -1,12 +1,10 @@
 ---
 title: アプリケーション コネクタ
-description: このトピックでは、Microsoft Power Automate および Logic Apps のアプリケーション コネクタに関する情報を提供します。
+description: このトピックでは、Microsoft Power Automate およびロジック アプリのアプリケーション コネクタに関する情報を提供します。
 author: Sunil-Garg
-manager: AnnBe
-ms.date: 01/09/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,18 +12,18 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 8f5202dcaca712120742e75d8bf94b588479f352
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9fb6a0cc4cbf8a6d837cc45579b05f496a5313f1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688067"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750552"
 ---
 # <a name="application-connector"></a>アプリケーション コネクタ
 
 [!include[banner](../includes/banner.md)]
 
-アプリケーション コネクタを使用して Microsoft Power Automate、 Power Apps、データ インテグレーター、および Logic Apps を Finance and Operations と統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、それらと統合することできます。
+アプリケーション コネクタを使用して Microsoft Power Automate、Power Apps、データ インテグレーター、および Logic Apps を Finance and Operations と統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、それらと統合することできます。
 
 > [!IMPORTANT]
 > アプリケーション の コネクタ は Dynamics 365 Finance + Operations (オンプレミス) インスタンス との統合には使用できません。
@@ -39,7 +37,7 @@ ms.locfileid: "4688067"
 - [定期統合](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
 ## <a name="triggers"></a>トリガー
-ビジネス イベントは、*ビジネス イベントが発生した場合* にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、 [Microsoft Power Automate のビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) および [ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page) を参照してください。
+ビジネス イベントは、*ビジネス イベントが発生した場合* にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、[Microsoft Power Automate](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) のビジネス イベントおよび[ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page)を参照してください。
 
 ## <a name="actions"></a>アクション
 
@@ -86,6 +84,11 @@ ms.locfileid: "4688067"
 このアクションを使用してエンティティの一覧を取得し、開発中のアプリで使用することができます。
 
 *インスタンス* は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+
+**テーブルに存在するリスト項目**
+
+このアクションは、エンティティからレコードの一覧を取得するために使用できます。 このアクションは、会社間でのデータの読み取りをサポートします。
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

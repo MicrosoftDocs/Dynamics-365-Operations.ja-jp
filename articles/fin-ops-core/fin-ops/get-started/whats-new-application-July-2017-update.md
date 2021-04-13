@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月) の新機能と変更点
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。
 author: tonyafehr
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c9c0615832fa61f6ce2b3ca96c78ced17ae8014f
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: be2db55ad893729baad69d2c0a382e5e58be9053
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797247"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754642"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月) の新機能と変更点
 

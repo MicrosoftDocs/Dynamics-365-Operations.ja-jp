@@ -2,11 +2,9 @@
 title: Azure Data Lake の Finance and Operations アプリ データ
 description: このトピックでは、Data Lakeを実装した Finance and Operations アプリ環境の設定方法を説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: d654fda361b837df698a72163933c3e2d7455192
-ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
+ms.openlocfilehash: f15bb506aa3d1c71da5e4b3a7be7cd78221aa835
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "4826434"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750550"
 ---
 # <a name="finance-and-operations-apps-data-in-azure-data-lake"></a>Azure Data Lake の Finance and Operations アプリ データ
 

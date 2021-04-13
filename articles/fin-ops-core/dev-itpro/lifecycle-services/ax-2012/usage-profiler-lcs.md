@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) の使用状況プロファイル
 description: このトピックでは、使用状況プロファイラーによって収集されるデータに関する情報を提供します。
 author: kfend
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: ef8ff7c97f55b042f922d2a6d92b4c6b287929d6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 86e84af2cf62e4690e24f23008b4274900d1bb0d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680020"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749898"
 ---
 # <a name="usage-profiler-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の使用状況プロファイル
 

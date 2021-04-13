@@ -2,11 +2,9 @@
 title: セキュリティ アークテクチャ
 description: このトピックでは、Finance and Operations のセキュリティ アーキテクチャの概要を提供します。
 author: Peakerbl
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34997cf31ca2d0b4b628d71e3960bd3511246a65
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a23884aad5225d524844a1fa8339feb90552eb88
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686307"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745909"
 ---
 # <a name="security-architecture"></a>セキュリティ アーキテクチャ
 [!include [banner](../includes/banner.md)]

@@ -2,11 +2,9 @@
 title: オンプレミス環境でのプロキシのコンフィギュレーション
 description: このトピックでは、プロキシ環境下にあるオンプレミス環境を保護する方法について説明します。
 author: faix
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f2f1631314941c96b2ab99f04fe6ef8ac7934f4f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d14d355dc3b0d0a475d74a70a431693b523adc59
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680034"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749289"
 ---
 # <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境でのプロキシのコンフィギュレーション
 

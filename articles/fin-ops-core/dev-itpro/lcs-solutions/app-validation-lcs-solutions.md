@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのアプリケーションの検証
 description: このトピックでは、カスタム コードが Microsoft のガイドラインを満たしていることを確認するために使用する要件の情報を提供します。
 author: kfend
-manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 999cf1a99dc3563e0136b8a1e637d12f2e6e9d3f
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 5c87015ddc60e49e60135bd6dba224577e1f5394
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129139"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752276"
 ---
 # <a name="validate-applications-for-finance-and-operations-apps"></a>Finance and Operations アプリのアプリケーションの検証
 

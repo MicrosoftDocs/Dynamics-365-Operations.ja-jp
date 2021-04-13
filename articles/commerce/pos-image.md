@@ -2,11 +2,9 @@
 title: POS のクライアント イメージ
 description: このトピックは、小売環境で POS クライアント イメージ管理に関連する機能を実装するユーザーを対象としています。 実装の計画時に考慮すべき実装のヒントとガイダンスについて説明します。
 author: josaw1
-manager: annbe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: cbittner
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8e9d45dd1d128c9e6cebf4952324a7f2ecb528b0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b9d241752b5e25e6c6612a8a8e49ef6cd32700e0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000624"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804345"
 ---
 # <a name="client-images-in-pos"></a>POS のクライアント イメージ
 

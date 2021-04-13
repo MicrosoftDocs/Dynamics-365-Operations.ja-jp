@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.11 の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: f441d8304e55720f5ab0d6c0f14a5a0bde14828e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 329dad8b4aadbbd07e76f139b73811b78515422a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012487"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797148"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10011-july-2020"></a>Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の新機能または変更された機能
 

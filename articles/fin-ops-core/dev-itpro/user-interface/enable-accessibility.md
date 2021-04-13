@@ -2,11 +2,9 @@
 title: フォーム、製品、およびコントロールのユーザー補助機能
 description: このトピックは、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。
 author: RobinARH
-manager: AnnBe
 ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 15d0eb32fb6588d82f2c3bd0cb3c3c97c47ab1e2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ac01e97396f4ab070b22ba1ce56fb6210d542316
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686608"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754848"
 ---
 # <a name="accessibility-in-forms-products-and-controls"></a>フォーム、製品、およびコントロールのユーザー補助機能
 

@@ -2,11 +2,9 @@
 title: Finance and Operations アプリの開発と管理
 description: このページは、開発者と IT プロが Finance and Operations の使用を開始するのに役に立ちます。
 author: robinarh
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0251b6fffe4cdae8682f2d919fdf94da9f69d661
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: b55e8a83fe7dd2e1d7978d2170ede47fe2162d97
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744651"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748125"
 ---
 # <a name="development-and-administration-for-finance-and-operations-apps"></a>Finance and Operations アプリの開発と管理
 

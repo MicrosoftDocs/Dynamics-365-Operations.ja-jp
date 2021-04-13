@@ -2,11 +2,9 @@
 title: 財務分析コードの有効化
 description: このトピックには、財務分析コード プロセスの有効化に関する情報が含まれています。
 author: aprilolson
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97a65f916f6e037a9e1459324e36d197f3b94022
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 76cf27af69cf0028981b5d0e34f7d1381cc038c1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680524"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748151"
 ---
 # <a name="financial-dimension-activation"></a>財務分析コードの有効化
 

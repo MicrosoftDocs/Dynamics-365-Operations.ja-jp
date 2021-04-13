@@ -2,11 +2,9 @@
 title: Visual Studio のプロジェクトのテスト
 description: このトピックでは、Visual Studio でテストするためのオプションについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 617472641ed643edbff382f4519efe7c7a17c54f
-ms.sourcegitcommit: 0653a89b9f675df52882103934a6dd6b0557cc5f
+ms.openlocfilehash: 949980fbe2af285364a6e7e2f1e52adbc290e78c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "4842900"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745145"
 ---
 # <a name="test-projects-in-visual-studio"></a>Visual Studio のプロジェクトのテスト
 

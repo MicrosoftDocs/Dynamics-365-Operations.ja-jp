@@ -2,11 +2,9 @@
 title: Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換する
 description: このトピックでは、Microsoft Dynamics AX のコンテンツを Dynamics 365 ソリューションで再利用する方法について説明します。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: c083ce69881e26d4ef944eb1cc6b23b06cb28f0d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 008375462939122a235a2bd252799ba6aa7b3c89
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685079"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748777"
 ---
 # <a name="convert-dynamics-ax-custom-help-for-use-in-dynamics-365"></a>Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換する
 

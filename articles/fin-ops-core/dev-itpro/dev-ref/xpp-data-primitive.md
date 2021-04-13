@@ -2,11 +2,9 @@
 title: X++ プリミティブ データ型
 description: このトピックでは、X++のプリミティブ データ型について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167efe21c8ea8a6175a665c0ab8e13c0080776b4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1f1955893b50940c76f6642f56ca4d0caa96b14b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408741"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753020"
 ---
 # <a name="x-primitive-data-types"></a>X++ プリミティブ データ型
 

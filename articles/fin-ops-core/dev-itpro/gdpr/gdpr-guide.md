@@ -2,11 +2,9 @@
 title: 一般データ保護規則の概要
 description: このトピックでは、Finance and Operations でのユーザー ログの機能に関する情報を提供します。
 author: ToddLefor
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1cdfcce85140c827f03d0b1a6a4adf6b979ed4e
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: faa5195820fa97f98317b401c164d9a79a47af5b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154133"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750300"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 

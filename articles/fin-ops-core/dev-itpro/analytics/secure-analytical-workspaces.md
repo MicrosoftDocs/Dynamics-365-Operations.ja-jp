@@ -1,27 +1,25 @@
 ---
 title: Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 description: このトピックでは、Power BI Embedded を使用して提供されるレポートとデータ セットの両方へのアクセスを保護するための推奨方法について説明します。
-author: robinarh
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.custom: 21551
 ms.assetid: ''
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f046bfebbc849d410a02fa271ab26ea637e2810a
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 47d157b5034fee499e1c92b31b129c6ee8deb704
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094280"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754280"
 ---
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 
@@ -35,12 +33,12 @@ ms.locfileid: "5094280"
 
 ## <a name="prerequisites"></a>必要条件
 + プラットフォーム更新プログラム 8 以降を実行する開発環境へのアクセス
-+ Microsoft Power BI Desktop を使用して作成され、エンティティ格納 データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル) です。
++ Microsoft Power BI Desktop を使用して作成され、エンティティ格納データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル)
 
 ## <a name="overview"></a>概要
 既存のアプリケーション ワークスペースを拡張する場合でも、自身のワークスペースを追加する場合でも、埋め込み分析ビューを使用して、ビジネス データの洞察的でインタラクティブなビューを提供できます。 新しい分析ワークスペースおよびレポートを追加する前に、コンテンツを保護するための戦略を確立することは重要です。
 
-Power BI Embedded を使用して分析ソリューションを開発する際には、いくつか注意すべき点があります。 分析レポートはメニュー項目を使用して保護されます。 レポートにアクセスすると、すべての閲覧者はレポートに定義されている基礎データ モデルにアクセスできます。 サービス オプションはレポート データ セットを戻しフィールドを自動的に非表示にすることが可能ですが、レポートのすべての閲覧者はデータ モデル内のフィールドに有効的にアクセスできます。 また、レポートがクライアントに表示される方法に影響を与える X++ 拡張機能が使用できます。 **フィルター** ウィンドウと **レポート** タブの両方を非表示にすることができます。 ただし、Microsoft Power BI フィルターは、クライアント側スクリプト インジェクションを使用して変更できます。
+Power BI Embedded を使用して分析ソリューションを開発する際には、いくつか注意すべき点があります。 分析レポートはメニュー項目を使用して保護されます。 レポートにアクセスすると、すべての閲覧者はレポートに定義されている基礎データ モデルにアクセスできます。 サービス オプションはレポート データ セットを戻しフィールドを自動的に非表示にすることが可能ですが、レポートのすべての閲覧者はデータ モデル内のフィールドに有効的にアクセスできます。 また、レポートがクライアントに表示される方法に影響を与える X++ 拡張機能が使用できます。 **フィルター** ウィンドウと **レポート** タブの両方を非表示にすることができます。 ただし、Microsoft Power BI フィルターは、クライアント側のスクリプト インジェクションを使用して変更できます。
 
 ### <a name="recommendation"></a>推奨事項
 シナリオ固有の .pbix ファイルを作成して分析ビューを作成する:

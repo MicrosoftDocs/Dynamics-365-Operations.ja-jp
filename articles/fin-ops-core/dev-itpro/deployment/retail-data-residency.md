@@ -2,11 +2,9 @@
 title: Commerce データ所在地
 description: このトピックでは Commerce Scale Unit (クラウド) を配置するときのデータ所在地に関する考慮事項を説明します。
 author: AamirAllaq
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 8f54caeec9c71c4a1d1c7fa28f88da73c4bbc924
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 29ca35b0bb44a3d17ef512ef128eedc6c253919d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683969"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745317"
 ---
 # <a name="commerce-data-residency"></a>Commerce データ所在地
 

@@ -2,11 +2,9 @@
 title: 入力、テーブル、およびグリッド コントロール用のフォントと背景
 description: このトピックでは、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 659b38d5861a60618a359fcccf5799c79300a76f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d8bfe4b93ec81b1394832b60f688117820888a3c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688549"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744183"
 ---
 # <a name="font-and-background-colors-for-input-table-and-grid-controls"></a>入力、テーブル、およびグリッド コントロール用のフォントと背景
 

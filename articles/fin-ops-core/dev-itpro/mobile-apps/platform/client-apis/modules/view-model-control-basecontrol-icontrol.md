@@ -2,11 +2,9 @@
 title: 管理モジュール
 description: コントロールは、ページのコンテンツを構成するものです。
 author: robinarh
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7307471e3023f7db51d0ceccca8ecffc1a5373d0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 778ca41d66e0d3ea70cb9c1ad678eba8d0c60486
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687856"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748079"
 ---
 # <a name="control-module"></a>管理モジュール
 

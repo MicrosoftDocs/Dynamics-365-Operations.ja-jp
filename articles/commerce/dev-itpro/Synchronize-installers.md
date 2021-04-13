@@ -1,12 +1,10 @@
 ---
 title: Dynamics 365 Commerce のセルフサービス インストーラーの同期
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Headquarters でアセット ライブラリと共用資産ライブラリを使用して、セルフサービス インストーラーをアップロードおよび同期し、標準セルフサービス ダウンロード メカニズムで使用できるようにする方法について説明します。
+description: このトピックでは、標準のセルフサービス ダウンロード メカニズムで使用できるように、セルフサービス インストーラーをアップロードおよび同期する方法について説明します。
 author: jashanno
-manager: AnnBe
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: Dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 29e643879312673c9e9bd105e5640a1202a1d230
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3dc03056eaa8c9a179b2bf4ed0701603bd8db73f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680398"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793037"
 ---
 # <a name="synchronize-self-service-installers-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のセルフサービス インストーラーの同期
 
@@ -58,8 +56,8 @@ ms.locfileid: "4680398"
     >
     > このトピックの冒頭で説明したように、以前のセルフサービス パッケージのアップロード方法は廃止されましたが、今後削除されるまで引き続きサポートされます。
 
-4. 同じページで、関連する場所 (**デバイス**、**すべての店舗**、および **チャネル データベース**) の Headquarters 全体で使用される既定のパッケージを選択できます。
-5. 次のテーブルのリンクを使用して、Modern POS、ハードウェア ステーション、または Commerce Scale Unit の標準コンフィギュレーション フローとインストール フローを実行します。
+3. 同じページで、関連する場所 (**デバイス**、**すべての店舗**、および **チャネル データベース**) の Headquarters 全体で使用される既定のパッケージを選択できます。
+4. 次のテーブルのリンクを使用して、Modern POS、ハードウェア ステーション、または Commerce Scale Unit の標準コンフィギュレーション フローとインストール フローを実行します。
 
 > [!NOTE]
 > いくつかのインストーラーがあります。  Modern POS (オフラインでの Modern POS)、Commerce Scale Unit (自己ホスト、以前は *Retail Store Scale Unit* と呼ばれる)、ハードウェア ステーション、および頻繁には使用されないインストーラー (AX 2012 R3 サポート インストーラーと周辺機器シミュレーター)。

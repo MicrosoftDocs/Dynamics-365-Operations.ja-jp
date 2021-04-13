@@ -2,11 +2,9 @@
 title: 入れ子になった簡易リストおよび簡易詳細のサブパターン
 description: このトピックでは、子エンティティまたは子エンティティに関する情報を表示するために使用される入れ子になった簡易リストおよび詳細 (NSL+D) サブパターンに関する情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d17c116dfb911c5e701363c0540110b7760e6512
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: bdc156006b1a1c758fc3bc1c6931513967030155
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092382"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745103"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 

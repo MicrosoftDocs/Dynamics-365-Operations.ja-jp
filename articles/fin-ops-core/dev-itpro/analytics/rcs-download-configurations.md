@@ -2,11 +2,9 @@
 title: 規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 description: このトピックは、規制コンフィギュレーション サービスから電子申告 (ER) コンフィギュレーションをインポートする方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 11/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionRepositoryTable
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7f49fe0244b6e48546a2de96f0f261b50af3683e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 377bce7e6fb8fa430e1988f6f87a5427af81ba4c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680576"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749355"
 ---
 # <a name="import-electronic-reporting-er-configurations-from-regulatory-configuration-services-rcs"></a>規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 

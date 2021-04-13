@@ -2,11 +2,9 @@
 title: Visual Studio の開発ツール
 description: Visual Studio は、開発用の単一統合開発環境 (IDE) です。
 author: jorisdg
-manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d23da9e98d68fe5d901fabc530f3647a078d789
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 56dba125aeba7092883efde147099029bfa985ca
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644851"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750310"
 ---
 # <a name="development-tools-in-visual-studio"></a>Visual Studio の開発ツール
 

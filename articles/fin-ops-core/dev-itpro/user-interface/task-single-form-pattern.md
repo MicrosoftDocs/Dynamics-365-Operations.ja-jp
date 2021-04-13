@@ -2,11 +2,9 @@
 title: タスク シングルのフォーム パターン
 description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c1038e9ba27af93087d3fee8feaa764e08c8bcf
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 8d090858c8cbbaa3a1ba594b191133848ba08a16
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094193"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744151"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 

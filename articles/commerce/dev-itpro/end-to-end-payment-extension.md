@@ -2,11 +2,9 @@
 title: 支払端末のエンド・ツー・エンド支払統合を作成する
 description: このトピックでは、支払端末のエンド・ツー・エンド支払統合を作成する方法について説明します。
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 74bbaf9dd2e15cb489eda0ef59a32f4b8224e950
-ms.sourcegitcommit: 3d37d4f509a185f941ee77dc156728378c8a341b
+ms.openlocfilehash: f233dfea619ffa6734824ea521135293fea9894a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "4801433"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793007"
 ---
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 

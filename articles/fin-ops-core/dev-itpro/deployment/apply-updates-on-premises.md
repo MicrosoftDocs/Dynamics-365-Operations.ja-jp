@@ -2,26 +2,24 @@
 title: オンプレミス配置への更新プログラムの適用
 description: このトピックは、Dynamics 365 Finance + Operations (オンプレミス) 用にサポートされる更新を適用する方法を説明します。
 author: PeterRFriis
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: b419fbcea47a68a2e71c00939f883a083d573273
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7c2394bfe6a673c15aab8122b5a5a1d7f75f6f53
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680549"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748807"
 ---
 # <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置への更新プログラムの適用
 

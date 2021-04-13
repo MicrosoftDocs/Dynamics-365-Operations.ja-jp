@@ -2,11 +2,9 @@
 title: ブローカー契約管理
 description: このトピックでは、構成する管理タスクを自動化することによるブローカー契約管理について説明します。
 author: t-benebo
-manager: AnnBe
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHierarchy, PdsRebateAgreementLineInfoPart, MCRRoyaltyTable
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4ad23b2a63642696fc594db959ad51406c293e4e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6074a615627aa25643ad9a4e3eedaaee5877a61b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995678"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820799"
 ---
 # <a name="broker-contract-management"></a>ブローカー契約管理
 

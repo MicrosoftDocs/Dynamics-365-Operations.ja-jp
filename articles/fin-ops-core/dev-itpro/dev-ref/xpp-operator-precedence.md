@@ -2,11 +2,9 @@
 title: 演算子の優先順位
 description: このトピックでは、演算子の優先順位について説明します。
 author: pvillads
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e3dac0a00a88c7460f821600840e29596f74ba4
-ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
+ms.openlocfilehash: 85141759b9a0ad634c4cc5b5d09324f13c82b10b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409591"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749928"
 ---
 # <a name="operator-precedence"></a>演算子の優先順位
 

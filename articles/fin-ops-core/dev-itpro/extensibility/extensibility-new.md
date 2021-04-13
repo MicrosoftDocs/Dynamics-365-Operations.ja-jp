@@ -2,11 +2,9 @@
 title: 拡張性の新機能および変更された機能
 description: このトピックでは、拡張性の更新に関するトピックへのリンクを提供します。
 author: RobinARH
-manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 29e39728c431a957e7a64166e00d7d191564a8a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c72abb534d9217fefff6558d394389b1d46af7cd
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409333"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749614"
 ---
 # <a name="whats-new-or-changed-for-extensibility"></a>拡張性の新機能および変更された機能
 

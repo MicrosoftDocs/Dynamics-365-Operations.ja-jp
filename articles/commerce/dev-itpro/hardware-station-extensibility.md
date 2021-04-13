@@ -2,11 +2,9 @@
 title: Hardware Station 拡張性
 description: このトピックでは、新規デバイスと既存デバイスの新規デバイス タイプのサポートを追加するために、Hardware Station を拡張する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 76a8d88337ca97e0310e18cf2ac8e38b1dc588aa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5f14a22624295fd9f8eae1996effc7f714ba2279
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685407"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797217"
 ---
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 

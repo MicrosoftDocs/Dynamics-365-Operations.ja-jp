@@ -2,11 +2,9 @@
 title: ビジネス プロセス モデラー (BPM) のフローチャート
 description: このトピックでは、接続フローチャートを変更し、タスク レコーダーからのフローチャートを作成してアップロードし、ビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
 author: AngelMarshall
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: 2727c94b0ee2369595a39bc9bd47dea8af28ba81
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 6c487064e65d4d1c0b4607853e14a84957f7c0d4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129963"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744753"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 

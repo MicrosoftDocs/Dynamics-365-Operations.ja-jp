@@ -2,11 +2,9 @@
 title: PageOptions タイプ
 description: PageOptions タイプ
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba5e81e62b5f0fe2e34d1bc2066eb6122e6be33f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 37cb11cf519059b39e1673067750af923cbee807
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688197"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748173"
 ---
 # <a name="pageoptions-type"></a>PageOptions タイプ
 

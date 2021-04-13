@@ -2,11 +2,9 @@
 title: AX 2009 の移行 － マップの生成
 description: このトピックは、データ マップを生成し、Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行する方法を説明します。
 author: kfend
-manager: AnnBe
 ms.date: 06/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 63a299be670fa31d6a40d5b1ed990e429d991eda
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ab8dca90c45bf555a7f316b20ea25200bdfcde1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679938"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751348"
 ---
 # <a name="ax-2009-migration--generate-maps"></a>AX 2009 の移行 － マップの生成
 

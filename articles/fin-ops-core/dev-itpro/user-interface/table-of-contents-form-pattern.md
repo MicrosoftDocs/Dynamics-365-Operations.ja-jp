@@ -2,11 +2,9 @@
 title: 目次のフォーム パターン
 description: この記事では、設定コンフィギュレーションに複数の関連フォームが必要な場合に使用される目次のフォーム パターンに関する情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0d28d234afcf789089c4f54ecbe5aab2a317383
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 64b5cf60299d008314af48c7dc583917a1a16486
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093043"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749592"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 

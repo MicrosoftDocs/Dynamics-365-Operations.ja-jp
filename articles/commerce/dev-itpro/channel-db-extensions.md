@@ -2,11 +2,9 @@
 title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 350897f8f2e7a4953eaf84bbc3cd8fc6290ab42d
-ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
+ms.openlocfilehash: 3b83f6a4cd60cbd960e90ac38ee5ac7a6da02b42
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4712676"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791221"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -35,8 +33,8 @@ ms.locfileid: "4712676"
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
-- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 はすぐに入手できるようになります。
-- Microsoft Dynamics 365 Retail 7.3 はアプリケーション更新プログラム 5 を含みます。
+- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 (まもなく利用できます)
+- Microsoft Dynamics 365 Retail 7.3 (アプリケーション更新プログラム 5 を含みます)
 - Microsoft Dynamics 365 for Finance and Operations 7.3 (アプリケーション更新プログラム 5 を含みます)
 
 ## <a name="ext-schema"></a>Ext スキーマ
@@ -227,6 +225,10 @@ GO
 ## <a name="deployment-checks"></a>配置のチェック
 
 配置プロセスは、データベースのコンポーネントに変更があるかどうかを判断します。 CRT、AX、または DBO スキーマ オブジェクトを変更しようとした場合、またはどのシナリオの場合でも SQL でそれらに直接アクセスすると、展開は失敗します。
+
+## <a name="deployment-timeout"></a>配置のタイムアウト
+
+配置スクリプトを 30 分以上実行すると、SQL Server はタイム アウトになります。 タイムアウトと配置に失敗しないように、実行時間の長いスクリプトを複数の小さなスクリプトに分割し、30 分未満で実行します。
 
 ## <a name="extension-scripts-and-deployment"></a>拡張スクリプトおよび展開
 

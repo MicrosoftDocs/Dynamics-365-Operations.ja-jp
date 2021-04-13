@@ -2,11 +2,9 @@
 title: 拡張可能なメソッドの書き込み
 description: このトピックでは、拡張可能メソッドを書き込む方法について説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 462bbce4b7db57230e39d4e443fd76ec6a6f6250
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32d6e3cf825a58c95e16fc0633cbb94d4571fa84
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408846"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753000"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 

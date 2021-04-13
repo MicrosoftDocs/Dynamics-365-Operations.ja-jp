@@ -2,11 +2,9 @@
 title: PageData タイプ
 description: ページに読み込まれたデータを表します。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e88bf49b7f759191d3a74bb1623ff86a1408a4e2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0d9752b3b9f5ec77a194ad73caab9c5fb814f7fa
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687314"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749259"
 ---
 # <a name="pagedata-type"></a>PageData タイプ
 

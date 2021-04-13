@@ -2,11 +2,9 @@
 title: 削除およびアーカイブ ジョブの表示
 description: このトピックでは、インテリジェント データ管理フレームワーク (IDMF) を使用して、パージ ジョブとアーカイブ ジョブを表示する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: a8447a12664808da74e2bf78e20fae630ce73320
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: db4ec8d7830fb9b2afcb8b29b62481a9fa16e133
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680018"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744515"
 ---
 # <a name="view-purge-and-archive-jobs"></a>削除およびアーカイブ ジョブの表示
 

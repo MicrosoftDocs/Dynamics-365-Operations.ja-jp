@@ -2,11 +2,9 @@
 title: セルフサービス配置の概要
 description: このトピックでは、セルフサービス配置の概要を示します。
 author: rashmansur
-manager: AnnBe
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: ef720d78b5d3be5056fd60dc79a8931f53afec8d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 71c7b63cf246ae07984d4a6a6508728871da5430
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681625"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749968"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 

@@ -1,26 +1,24 @@
 ---
 title: 派生テスト ケース
 description: このトピックでは、Regression Suite Automation Tool を使用して、複数のコンフィギュレーションで同じテスト ケースを実行する方法について説明します。
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bbb7911fcb79202790ec2c56ce5b2f1de3dd093
-ms.sourcegitcommit: b337b647a1be4908fc361fb6d962e96a69f301a9
+ms.openlocfilehash: 396b8c769a7efb476354d25670e03247d2d1d5a7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5036600"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750342"
 ---
 # <a name="derived-test-cases"></a>派生テスト ケース
 

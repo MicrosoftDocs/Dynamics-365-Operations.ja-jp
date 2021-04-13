@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのメッセージング システム
 description: このトピックでは、Finance and Operations アプリの豊富で強力なメッセージング システムについて説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e81d0f4aeb6105bca60a4a8fa7e6985fa074aed1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 63cafd8becfe048a64546ca2a24c2f1b5779970e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683947"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745708"
 ---
 # <a name="messaging-system-for-finance-and-operations-apps"></a>Finance and Operations アプリのメッセージング システム
 
@@ -153,7 +151,7 @@ UI からメッセージを削除する際に、開発者が詳細な制御を�
 *多くの場合、変更は必要ありません。* メッセージング フレームワークは、多くの一般的なシナリオの下位互換性を革新し維持するように設計されています。 場合によっては、プログラムがメッセージの内容を改善させることがあります。 または、使用法のガイダンスに合わせるために **警告()** の代わりに **エラー()**、または **エラー()** の代わりに **警告()** を使用するかもしれません (警告は無効なデータ、エラーは失敗したアクションのためのものです)。 それ以外の場合、スライダーのダイアログに表示されるメッセージが親ページに適していると判断できる場合があります。
 
 ## <a name="how-to-create-a-collection-of-related-messages"></a>関連メッセージのコレクションの作成方法  
-**SetPrefix()** を使用して関連メッセージのコレクションを作成します。**SetPrefix()** の詳細については、[[メッセージング API](messaging-api-center-bar-details.md) を参照してください。 この API は主に下位互換性がありますが、中断のない方法で表示されます。 結果ウィンドウを直接開くことはできません。代わりに、ユーザーは、結果メッセージをコレクションにグループ化するために **setprefix ()** APIを使用したタスクを開始したアクション センターメッセージまたはページ上のメッセージバーによって、受動的に通知を受け取ります。 ユーザーに対して表示されるメッセージの重大度は、コレクション内の最も重要なメッセージの重大度レベルを反映しています。 たとえば、コレクションにエラーまたは警告が含まれていない場合、メッセージ バーは **情報** タイプです。 
+**SetPrefix()** を使用して関連するメッセージのコレクションを作成するための詳細は、[メッセージング API](messaging-api-center-bar-details.md) を **Setprefix ()** ご覧ください。 この API は主に下位互換性がありますが、中断のない方法で表示されます。 結果ウィンドウを直接開くことはできません。代わりに、ユーザーは、結果メッセージをコレクションにグループ化するために **setprefix ()** APIを使用したタスクを開始したアクション センターメッセージまたはページ上のメッセージバーによって、受動的に通知を受け取ります。 ユーザーに対して表示されるメッセージの重大度は、コレクション内の最も重要なメッセージの重大度レベルを反映しています。 たとえば、コレクションにエラーまたは警告が含まれていない場合、メッセージ バーは **情報** タイプです。 
 
 ![情報タイプ メッセージ バーの例](./media/messaging_messagedetailsmessagebar.jpg) 
 

@@ -2,11 +2,9 @@
 title: AX 2012 から Finance and Operations へのアップグレード
 description: このトピックでは、現在 Microsoft Dynamics AX 2012 を実行している顧客が、データとコードを Finance and Operations に移動するために使用できるプロセスについて説明します。
 author: LaneSwenka
-manager: AnnBe
-ms.date: 12/16/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1696fddaae0ddcb61f605181c1d760b51cfcf7da
-ms.sourcegitcommit: de4dbef4ed7704597a22c15acf58bb4b1d872c2a
+ms.openlocfilehash: 3c8461f4530a39bcda56717d29ec1a3da0d3188f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "4743455"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749896"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
@@ -45,6 +43,8 @@ Finance and Operations は、Platform update 8 および 2017 年 7 月のアプ
 次の図は、エンド ツー エンドのアップグレード プロセス、および各フェーズの一部とみなす活動を示します。 
 
 ![アップグレード プロセス](./media/upgrade-process.png)
+
+Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについては、[Dynamics AX 2012 を Finance and Operations アプリにアップグレードする](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) を参照してください。
 
 ## <a name="analyze"></a>分析
 

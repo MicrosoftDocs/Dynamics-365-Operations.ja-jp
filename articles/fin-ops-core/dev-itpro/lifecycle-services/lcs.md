@@ -2,11 +2,9 @@
 title: Lifecycle Services のリソース
 description: Microsoft Dynamics 用 Lifecycle Services (LCS) は、アプリケーションのライフサイクルの管理に役立つ環境およびサービスを提供します。
 author: kfend
-manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83b1d5c7524aa50324f4c7781f4091b3eaaba04c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: a134edd97e261222daab0acd764ba8c414a02a48
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129357"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752728"
 ---
 # <a name="lifecycle-services-resources"></a>Lifecycle Services のリソース
 

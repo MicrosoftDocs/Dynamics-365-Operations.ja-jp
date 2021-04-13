@@ -2,11 +2,9 @@
 title: AxErd ページは破棄されました
 description: AxErd ページを破棄する必要がありました。 プロジェクトのソース コード、および GitHub リポジトリの Web ページに対する HTML ファイルの両方を転記することができました。
 author: margoc
-manager: AnnBe
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 4b7aec4cd8d655f9d1a99c859d84c9ffe3333f26
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c9f2f7c32189920aeefca69c9c413fbcf2e9ff4e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798529"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754814"
 ---
 # <a name="axerd-page-has-been-retired"></a>AxErd ページは破棄されました
 

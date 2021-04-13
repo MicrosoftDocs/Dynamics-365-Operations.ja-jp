@@ -2,11 +2,9 @@
 title: Finance and Operations、Enterprise edition (2017 年 7 月) の拡張機能の変更
 description: これは、(2017 年 7 月) に実装された拡張機能の一覧です。
 author: FrankDahl
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: f44ee8f345b5d0a494799bbf7b04ffda9f2c8a02
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 03105f0ea2c1f23e9579aca293e24a432d508ac0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409269"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748787"
 ---
 # <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-july-2017"></a>Finance and Operations、Enterprise edition (2017 年 7 月) の拡張機能の変更
 

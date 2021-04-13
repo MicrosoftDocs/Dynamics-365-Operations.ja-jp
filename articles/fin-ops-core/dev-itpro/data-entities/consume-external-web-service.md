@@ -2,11 +2,9 @@
 title: 外部 Web サービスの消費
 description: このトピックでは、Microsoft Dynamics 365 Finance and Operations アプリで外部 Web サービスを使用する方法について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e07fde7d72922b91a83ac78ee0906a073f0e56db
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 064708f33aa410986b5398c31e54a927dceb4def
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679366"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752316"
 ---
 # <a name="consume-external-web-services"></a>外部 Web サービスの消費
 

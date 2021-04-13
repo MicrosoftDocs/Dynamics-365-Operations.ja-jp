@@ -2,11 +2,9 @@
 title: セキュリティ開発ツール
 description: このトピックでは、セキュリティ開発ツールのユーザー インターフェイスについて説明します。
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: eca451bea1c460d672fd8a77f6955af11f62d0b7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 18f737ef902c5b27ca58c67532f551ebd7fcf8ea
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686630"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753900"
 ---
 # <a name="security-development-tool"></a>セキュリティ開発ツール
 

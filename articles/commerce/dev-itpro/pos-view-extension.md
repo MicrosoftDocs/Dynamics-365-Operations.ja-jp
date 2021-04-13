@@ -2,11 +2,9 @@
 title: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 47db8718e7223d8a6a78068538c39afa9b0ca193
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 41b91f2dda05a0dfe499e7ef639024756b1a35c8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681504"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794335"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -60,16 +58,15 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | SearchOrdersView                | いいえ                            | はい                          | いいえ                                   |
 | SearchPickingAndReceivingView   | 無                            | 有                          | 有                                   |
 | CustomerOrderHistoryView        | 無                            | 有                          | 無                                   |
-| SearchStockCountView            | 無                            | はい                          | いいえ                                   |
-| StockCountDetailsView           | いいえ                            | はい                          | いいえ                                   |
-| ResumeCartView                  | いいえ                            | はい                          | はい                                    |
-| InventoryLookupMatrixView       | いいえ                            | いいえ                           | はい                                   |
+| SearchStockCountView            | なし                            | あり                          | なし                                   |
+| StockCountDetailsView           | なし                            | あり                          | あり                                   |
+| ResumeCartView                  | なし                            | あり                          | あり                                    |
+| InventoryLookupMatrixView       | なし                            | なし                           | はい                                   |
 | SuspendTransactionView          | 無                            | 有                          | 無                               |   
-| ManageShiftView                 | 無                            | 無                           | 有                               |  
-| ReportDetailsView               | 無                            | 無                           | 有                               |
-| SearchReceiptsView              | 無                            | 無                           | 有                               |
-| StockCountDetailsView           | いいえ                            | いいえ                           | はい                               |
-| TransferOrderDetailsView        | いいえ                            | いいえ                           | はい                               |
+| ManageShiftView                 | 無                            | 無                           | あり                               |  
+| ReportDetailsView               | なし                            | なし                           | あり                               |
+| SearchReceiptsView              | なし                            | なし                           | あり                               |
+| TransferOrderDetailsView        | なし                            | なし                           | あり                               |
 | FulfillmentLineView             | いいえ                            | はい                          | はい                               |
 | ReturnTransactionView           | いいえ                            | はい                          | はい                               |
 | PickingAndReceivingDetailsView  | いいえ                            | はい                          | はい                    |

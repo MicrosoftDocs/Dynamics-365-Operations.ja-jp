@@ -2,11 +2,9 @@
 title: 詳細トランザクション フォーム パターン
 description: このトピックでは、詳細トランザクション フォームのパターンについて説明します。 このパターンを使用すると、ユーザーはヘッダーの表示と明細行の表示間で切り替えができます。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7e7ed419382420912ba0dd17517c9957e91a6a1
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 8e9013018f2a4446f30600c741f219e260fb0518
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092318"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752626"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 

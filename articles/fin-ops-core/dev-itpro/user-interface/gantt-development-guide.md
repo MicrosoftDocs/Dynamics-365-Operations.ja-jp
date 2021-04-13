@@ -2,11 +2,9 @@
 title: ガント管理作成ガイド
 description: このトピックでは、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 680c271a12ffbaccb6620573e417f19315c2911d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5a5ebfb4b835e4220fed174d7b022490f942fdd1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686586"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748759"
 ---
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 

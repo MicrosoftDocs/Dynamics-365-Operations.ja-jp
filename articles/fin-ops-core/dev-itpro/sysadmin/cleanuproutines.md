@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance と Dynamics 365 Supply Chain Management のクリーンアップ ルーチン
 description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management のクリーンアップ ルーチンの概要を提供します。
 author: dvliegen
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: dvliegen
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7f9619d4453507e0a820a9eb8e99209ffcd2a66e
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: 450c56acba792c5b5a4d1bacbcb6542c3586eecf
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4821176"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746019"
 ---
 # <a name="cleanup-routines-in-dynamics-365-finance-and-dynamics-365-supply-chain-management"></a>Dynamics 365 Finance と Dynamics 365 Supply Chain Management のクリーンアップ ルーチン
 

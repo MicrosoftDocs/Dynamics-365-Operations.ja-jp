@@ -1,12 +1,10 @@
 ---
 title: 現代レポートのデザイン テンプレートのインストール
 description: このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PrintMgmtSetupUIMain
 audience: Developer, IT Pro
@@ -14,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 82783
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7662a4fb929e01757de775b8d8621ebd51b7c25d
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 7bcc84221e53ff7a91918babad8683f0c8e83e7e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094199"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744279"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 

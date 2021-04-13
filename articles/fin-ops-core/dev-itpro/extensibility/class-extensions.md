@@ -2,11 +2,9 @@
 title: X++ の拡張モデルのクラス
 description: この記事では、X++ で新しいクラス拡張モデルについて説明します。
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7f17f975381e661c24c6f20a071ec19a6d530207
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 19ed8c4b5146950e006c193b39a933f0f25e579d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409268"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748483"
 ---
 # <a name="class-extension-model-in-x"></a>X++ の拡張モデルのクラス
 

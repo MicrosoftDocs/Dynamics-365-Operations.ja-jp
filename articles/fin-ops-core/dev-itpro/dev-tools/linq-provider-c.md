@@ -2,11 +2,9 @@
 title: C# の統合言語クエリ (LINQ) プロバイダー
 description: このトピックでは、LINQ プロバイダーについて説明します。
 author: pvillads
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d1278ee607dda2b7af32eee6489cd11e8fb6f98
-ms.sourcegitcommit: 2186155e4662ae5010a190c0ede458ef6cf91f24
+ms.openlocfilehash: c6060aeddb396430a9e06838241f3db8d7eb3c06
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4409523"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748249"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C\# の統合言語クエリ (LINQ) プロバイダー
 

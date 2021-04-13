@@ -2,11 +2,9 @@
 title: ホームページの開発とカスタマイズ
 description: このトピックでは、開発に関するトピックへのリンクを提供します。
 author: RobinARH
-manager: AnnBe
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d0d2ecd3644c31e5c4ed3f896f10a248c058134
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: d1ae81c9fb1fadae0974a9479127df0b130a73ae
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130771"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745303"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -94,6 +92,7 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 - [Azure Pipelines を使用した資産のアップロード](pipeline-asset-upload.md)
 - [Azure Pipelines を使用した資産のデプロイ](pipeline-deploy-asset.md)
 - [Azure Pipelines での Lifecycle Services (LCS) 接続の作成](pipeline-lcs-connection.md)
+- [新しい NuGet パッケージ用にホストされる Azure Pipeline の更新](pipeline-nuget-split.md)
 - [Azure Pipelines でのレガシ パイプラインの更新](pipeline-msbuild-update.md)
 
 ## <a name="x-programming-language"></a>X++ プログラミング言語

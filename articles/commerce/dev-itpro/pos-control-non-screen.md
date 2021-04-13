@@ -2,11 +2,9 @@
 title: 非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
 description: このトピックでは、非画面レイアウト デザイナー ベース ビューにカスタム コントロールを追加する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 6745f9bda9bab80e58783077508e84b145f09a4f
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 104ce78877a322a8ec354d43cc646ed238cf2974
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129141"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791149"
 ---
 # <a name="add-custom-controls-to-non-screen-designer-based-pos-views"></a>非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
 

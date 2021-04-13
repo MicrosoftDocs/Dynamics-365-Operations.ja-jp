@@ -2,11 +2,9 @@
 title: データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする
 description: このトピックでは、データ管理フレームワークを使用して、カスタマイズしたセキュリティ コンフィギュレーションを環境間でエクスポートおよびインポートする方法について説明します。
 author: tonyafehr
-manager: Peakerbl
 ms.date: 07/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: cbf8f3b83747a0e60e28597d9db2e463d1a03da1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8f3d81526cee4371a59b9bbf6ef70a43547abaed
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686316"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745977"
 ---
 # <a name="import-or-export-a-customized-security-configuration-by-using-data-management"></a>データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする 
 

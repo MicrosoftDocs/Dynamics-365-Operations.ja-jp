@@ -2,11 +2,9 @@
 title: データベース移動ツールキット
 description: このトピックでは、データベース移動ツールキットをダウンロードして使用する方法について説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: d818b9690ade862756c8b25e95b892662c7c0314
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 3f801176c277a815cabfea28816e0640397f5fda
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126991"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754878"
 ---
 # <a name="database-movement-toolkit"></a>データベース移動ツールキット
 

@@ -2,11 +2,9 @@
 title: ビジネス イベントとしての警告
 description: このトピックでは、ビジネス イベントとしての警告について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 25
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: f52b9f823c269e6e94fadf2de6a3ba3144ffaa6d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2f7e4c837e06d98fd79edd779bd2483c2996a95d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687365"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754132"
 ---
 # <a name="alerts-as-business-events"></a>ビジネス イベントとしての警告
 

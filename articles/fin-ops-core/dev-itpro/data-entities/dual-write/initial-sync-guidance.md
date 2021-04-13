@@ -2,11 +2,9 @@
 title: 初期同期に関する考慮事項
 description: このトピックでは、制約、既知の問題、およびデュアル書き込みの初期同期に関するガイダンスについて説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 770c1cac9ff9b4ca4246b3272f35323ce204c33d
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: aee2a3c1acbbd5220866f21fe87169057fbcb775
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744867"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748581"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 

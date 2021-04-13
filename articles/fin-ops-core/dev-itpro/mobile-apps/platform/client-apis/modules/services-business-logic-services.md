@@ -2,11 +2,9 @@
 title: サービス モジュール
 description: クライアントの実行時に、アプリケーションで使用できるさまざまなサービス。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dc46ff863d03275f4311cc0e547ab34611675d12
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 187a4dfc0e24464bac4fefb5dcc742b7b7af1fd5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687858"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750530"
 ---
 # <a name="services-module"></a>サービス モジュール
 

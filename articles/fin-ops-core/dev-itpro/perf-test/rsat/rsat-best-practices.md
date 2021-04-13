@@ -1,26 +1,24 @@
 ---
 title: Regression Suite Automation Tool ベスト プラクティス
 description: このトピックでは、Regression Suite Automation Tool (RSAT)/タスクレコーダーを使用して、クライアントの機能を記録する方法について説明します。
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 08/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17a68e276eee83524311742a201b68c6428bf321
-ms.sourcegitcommit: b337b647a1be4908fc361fb6d962e96a69f301a9
+ms.openlocfilehash: c7b65c0c10b706839b25493680baad8d0c8cdf09
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5036645"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752684"
 ---
 # <a name="regression-suite-automation-tool-best-practices"></a>Regression Suite Automation Tool ベスト プラクティス
 

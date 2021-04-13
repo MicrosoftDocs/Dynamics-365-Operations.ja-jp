@@ -2,22 +2,20 @@
 title: カスタム ヘルプ ツールキット - HtmlFromRepoGenerator ツール
 description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットに含まれている HtmlFromRepoGenerator ツールについて説明し ます。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 30f7703e2f7c46ae49daf3bc0f8a7e7079624686
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 64a1eac56e862b28bb7afad1a3a1993e50621c5a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685091"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752754"
 ---
 # <a name="custom-help-toolkit-the-htmlfromrepogenerator-tool"></a>カスタム ヘルプ ツールキット: HtmlFromRepoGenerator ツール
 

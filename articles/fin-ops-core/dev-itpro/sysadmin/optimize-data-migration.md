@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのデータ移行の最適化
 description: このトピックでは、Finance and Operations アプリのデータ移行を最適化するために使用できる手順とアクションの概要を示します。
 author: skaue-ms
-manager: AnnBe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: toskaue
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f7e0677324c96d1b0189fa372b254e6e3d90d449
-ms.sourcegitcommit: 284265c3252d05a9c95f05bedc3520c6fbef65a6
+ms.openlocfilehash: 80ff2e6a1ceb0f5df23281c1a935ce2600d0f1ea
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118275"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745943"
 ---
 # <a name="optimize-data-migration-for-finance-and-operations-apps"></a>Finance and Operations アプリのデータ移行の最適化
 

@@ -2,11 +2,9 @@
 title: Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 description: このトピックでは Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 24 (2019 年 3 月) でプレビューできる機能について説明します。
 author: tonyafehr
-manager: AnnBe
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: d50c3b8f3652f7adabf796c2a8c9b9663c7265ca
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 3b63bb0aad55fc38953783d22b9cbd2a58e64bb7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797851"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752216"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 
@@ -97,7 +95,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 -   高度な統合シナリオのための Azure イベント グリッドおよび Azure Service Bus ですぐに使える統合。
 
--   Microsoft Power Automateでビジネス イベントを「トリガー」として公開する。
+-   Microsoft Power Automate でビジネス イベントを「トリガー」として公開する。
 
 詳細については、[ビジネス イベントの概要](../../dev-itpro/business-events/home-page.md)を参照してください。
 

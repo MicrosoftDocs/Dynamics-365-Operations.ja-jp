@@ -2,11 +2,9 @@
 title: X++ トランザクションの整合性
 description: このトピックでは、X++ 言語でのトランザクションの整合性について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 01f81018d4ef484193cc403536ae899810fb1e93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d43508169142c7efaa1a6c4894d8ce76068a2bc6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408734"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749954"
 ---
 # <a name="x-transactional-integrity"></a>X++ トランザクションの整合性
 

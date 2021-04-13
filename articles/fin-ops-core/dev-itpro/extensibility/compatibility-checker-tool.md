@@ -2,11 +2,9 @@
 title: 互換性チェック ツール
 description: このトピックでは、メタデータの互換性を破る変更を検索して報告する互換性チェックツールについて説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 38bad607ce8a5241b2cfb89f1fd53c803eae6707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 758b24c645329a78716167dbe1479689922c508f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409266"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744221"
 ---
 # <a name="compatibility-checker-tool"></a>互換性チェック ツール
 

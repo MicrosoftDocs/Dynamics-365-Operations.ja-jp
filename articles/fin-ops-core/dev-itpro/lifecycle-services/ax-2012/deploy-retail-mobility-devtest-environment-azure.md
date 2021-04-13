@@ -2,11 +2,9 @@
 title: Azure での Retail Mobility 開発/テスト環境の配置
 description: このトピックでは、クラウド ホスト環境ツールを使用して、Microsoft Azure の Retail Mobility 開発/テスト環境を配置する方法について説明します。
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d4823200623aaca85fe5d36dbd0df01479f0a5b9
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 80e491bab021a57fe744058dd30d759c02319e06
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130470"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750254"
 ---
 # <a name="deploy-retail-mobility-devtest-environments-on-azure"></a>Azure での Retail Mobility 開発/テスト環境の配置
 

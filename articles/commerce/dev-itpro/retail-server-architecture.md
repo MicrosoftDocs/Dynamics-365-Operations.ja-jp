@@ -1,12 +1,10 @@
 ---
 title: Commerce Scale Unit アーキテクチャ
-description: この記事では、Commerce Scale Unit のアーキテクチャについて説明します。 Commerce Scale Unit は、Modern 販売時点管理 (POS) および E コマース クライアントのステートレス サービスとビジネス ロジックを提供します。
+description: Commerce Scale Unit は、Modern 販売時点管理 (POS) および E コマース クライアントのステートレス サービスとビジネス ロジックを提供します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0a32c63a3db17f3b780aff49c73b01f9fb440f48
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3797f616137b7817cce019dca5e4888d898a076d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683179"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792981"
 ---
 # <a name="commerce-scale-unit-architecture"></a>Commerce Scale Unit アーキテクチャ
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Commerce Scale Unit のアーキテクチャについて説明します。 Commerce Scale Unit は、Modern 販売時点管理 (MPOS) および E コマース クライアントのステートレス サービスとビジネス ロジックを提供します。
-
-<a name="commerce-scale-unit-architecture"></a>Commerce Scale Unit アーキテクチャ
---------------------------
 
 Commerce Runtime は Commerce Scale Unit レイヤーにラップされます。 Commerce Scale Unit は、タブレットや電話で店舗とオンラインの両方のシン クライアントをサポートするために、Web API および OData を使用します。 Commerce Runtime は、Commerce Data Exchange サービスを通じて Headquarters と通信します。 次の図は、Commerce Scale Unit のアーキテクチャを示しています。 
 

@@ -1,12 +1,10 @@
 ---
 title: コマース プロジェクトのコードと環境の更新
-description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトの更新コード、および環境の推奨事項について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce の更新コード、および環境の推奨事項について説明します。
 author: andreashofmann1
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -16,14 +14,14 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: c68d487ba3994e84e2ad2ac882e9900cc7e85e3d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0368f30a36f46488c8657dbd44fc5e6e8383899e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687497"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792911"
 ---
-# <a name="update-code-and-environments-for-commerce-projects"></a>コマース プロジェクトのコードと環境の更新
+# <a name="update-code-and-environments-for-commerce-projects"></a>Commerce プロジェクトのコードと環境の更新
 
 [!include [banner](../../includes/banner.md)]
 

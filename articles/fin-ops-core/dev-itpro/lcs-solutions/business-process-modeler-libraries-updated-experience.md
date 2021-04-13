@@ -2,11 +2,9 @@
 title: ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )
 description: このトピックでは、更新されたビジネス プロセス モデラー (BPM) ライブラリ エクスペリエンスを作成して使用する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 06/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 196953
 ms.assetid: 6e7h6896-edef-4739-98ad-c9ea12880972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: f9a2d47f55c6d556ec12c14f9a2803ef1afe72df
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d7105bc2db0dd8c1be10269f7ea41f9e3307e8f5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685073"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749279"
 ---
 # <a name="business-process-modeler-library-updated-bpm-experience"></a>ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )
 

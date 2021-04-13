@@ -2,11 +2,9 @@
 title: セッション非活動タイムアウトの設定
 description: このトピックでは、セッション非活動タイムアウトを設定する方法について説明します。
 author: paulliew
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: paulliew
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: 1669eaa11c7b134ada09d8e2804df8ef9bae5a40
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: 872c23448da3101c88d2e120f137256e4732dfa1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690114"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745906"
 ---
 # <a name="set-the-session-inactivity-timeout"></a>セッション非活動タイムアウトの設定
 

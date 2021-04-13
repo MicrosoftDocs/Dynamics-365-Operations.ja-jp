@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのサポート エクスペリエンスを管理する
 description: このトピックでは、Microsoft Dynamics Lifecycle Services のサポート ツールを使用して、サポート インシデントを管理する方法について説明します。
 author: kfend
-manager: AnnBe
-ms.date: 10/13/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fa292aa38c21f58630adf4aa57502246d012e56
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 14ae7935dd9f08a9fb0ed25e140bf27e2d25c3af
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154321"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748243"
 ---
 # <a name="manage-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する
 [!include [banner](../includes/banner.md)]
@@ -135,10 +133,8 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 プロダクション環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [稼働停止をレポート](report-production-outage.md) をご確認ください。
 
 ## <a name="phone-support"></a>電話サポート
-[新しいインシデントを開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident) の手順に従ってサポートに連絡することをお勧めします。 LCS で新しいインシデントを開けない場合は、次のいずれかのオプションで電話サポートを受けることができます:
+[新しいインシデントを開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident) の手順に従ってサポートに連絡することをお勧めします。 LCS で新しいインシデントを開けない場合は、[プレミア電話サポート](https://support.microsoft.com/premier/contacts) 使い☎サポートを受けることができます。
 
-- [プレミア電話サポート](https://support.microsoft.com/premier/contacts)
-- [広範な商業電話サポート](https://docs.microsoft.com/dynamics/s-e/)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

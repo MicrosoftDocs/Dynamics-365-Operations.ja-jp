@@ -2,11 +2,9 @@
 title: 機能のコールアウト
 description: 機能のコールアウトをトリガーして、ユーザーに新しい機能を認識してもらいましょう。
 author: jasongre
-manager: AnnBe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 2749ff37b91db0d7827f559c54be8cba348ab469
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7161ebb00c733db11ac3fc92e6a18ce5bcf105c8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686600"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748765"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 

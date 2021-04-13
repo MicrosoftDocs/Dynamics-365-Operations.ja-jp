@@ -2,11 +2,9 @@
 title: プレビュー サブスクリプションのサインアップ
 description: このトピックでは、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b078b34e7be39f2150e98774c9dc148a84731327
-ms.sourcegitcommit: de4dbef4ed7704597a22c15acf58bb4b1d872c2a
+ms.openlocfilehash: d7feabe6956bbdb12a6e9238159b643d9ce9415e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "4743453"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753010"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
@@ -82,7 +80,7 @@ LCS を使用して環境を管理するには、新しいプロジェクトを�
 5. プロジェクト タイプを選択します。
 6. プロジェクト情報を入力し、**作成** を選択します。
 
-    コマースを評価する予定がある場合は、**製品名** フィールドで **Microsoft Dynamics 365 Commerce** を必ず選択します。
+    Commerce を評価する予定がある場合は、**製品名** フィールドで **Microsoft Dynamics 365 Commerce** を必ず選択します。
 
     インスタンスを管理するための新しいプロジェクトが作成されます。
 

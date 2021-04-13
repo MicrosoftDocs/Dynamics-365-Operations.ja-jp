@@ -2,11 +2,9 @@
 title: 二重書き込みのシステム要件
 description: このトピックでは、デュアル書き込みの接続設定についてのシステム要件について説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34472c31d54cd14639bfc80ecbb0dce8ca3ecd86
-ms.sourcegitcommit: 5264aaec3723c40a219e4d2867afe1ba9cc5f2a2
+ms.openlocfilehash: 4de3cb867b91bb93575673824a25cd0aa262a428
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5153627"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754076"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 

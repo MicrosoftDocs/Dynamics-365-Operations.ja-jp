@@ -2,11 +2,9 @@
 title: パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
 description: このトピックでは、パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザーのテスト中に発生する一般的な問題のトラブルシューティングについて説明します。
 author: hasaid
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58698a48f7787c2bac49b8e1217a20f03e8ead65
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 3d7a5164e1a85d1c4e7faa9e81b0f32f0094a09d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126709"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745137"
 ---
 # <a name="troubleshooting-guide-for-testing-with-the-performance-sdk"></a>パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
 

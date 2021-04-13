@@ -2,11 +2,9 @@
 title: 構成マネージャーを使用して構成をコピーする
 description: 構成マネージャー (ベータ) 機能を使用すると、Microsoft Dynamics AX 2012 R3 の 1 つのインスタンスから他のインスタンスに構成をコピーすることができます。
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 5e99a08413462b3c2459d0be685e4c180ee42bd7
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: cb0cc2f8d3fab988f8661d4bbcbaa549bd6e5948
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128865"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752732"
 ---
 # <a name="copy-configurations-by-using-configuration-manager"></a>構成マネージャーを使用して構成をコピーする
 

@@ -2,11 +2,9 @@
 title: スーパー タイプおよびサブ タイプ
 description: データ エンティティの継承パターンのサポートについて説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e94d81a1a73e71ac4789d5de75767303610bc993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 01bae17883fa103195a8ffacbd050e431aac09b8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685233"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753978"
 ---
 # <a name="super-types-and-sub-types"></a>スーパー タイプおよびサブ タイプ
 

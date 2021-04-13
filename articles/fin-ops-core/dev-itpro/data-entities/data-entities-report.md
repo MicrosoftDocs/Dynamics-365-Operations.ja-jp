@@ -2,11 +2,9 @@
 title: 標準データ エンティティに関する情報を検索します。
 description: このトピックでは、使用可能な標準データ エンティティに関する情報を取得する方法、およびレポートを実行するスクリプトをダウンロードする方法について説明します。
 author: robinarh
-manager: AnnBe
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 387179b0d422ae9108e7af03963a696db54796bb
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 14b90e87c8c3e38e8be96c880e0c982f6457f919
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154101"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751016"
 ---
 # <a name="find-information-about-standard-data-entities"></a>標準データ エンティティに関する情報の検索
 
@@ -35,7 +33,7 @@ Microsoft Dynamics Lifecycle Services (LCS) のコンフィギュレーション
 
 ## <a name="reports"></a>レポート
 
-Microsoft は、データ エンティティの次のレポートを提供しており、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/)からダウンロードできます。
+Microsoft は、データ エンティティの次のレポートを提供しており、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61)からダウンロードできます。
 
 - データ エンティティの集計: 集計するデータ エンティティと、それぞれに含まれるフィールドを一覧表示します。
 - メジャーの集計: 集計するメジャーを一覧表示します。

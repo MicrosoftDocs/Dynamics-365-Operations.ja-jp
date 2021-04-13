@@ -2,11 +2,9 @@
 title: アプリケーション ライフサイクル管理
 description: このトピックでは、二重書き込みソリューションに対応することの利点について説明します。
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a86c8966bd43f7815289e84f9aae6c6f4d307b5a
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: c3eec2af275018f4f412329695a536428372c283
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744653"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751450"
 ---
 # <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
 

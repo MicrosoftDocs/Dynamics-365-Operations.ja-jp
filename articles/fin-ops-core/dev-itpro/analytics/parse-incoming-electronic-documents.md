@@ -2,11 +2,9 @@
 title: アプリケーションのデータを更新するために受信したドキュメントを解析する
 description: このトピックでは、受信したドキュメントを解析することができる電子報告 (ER) 形式を設定する方法について説明します。
 author: nickselin
-manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ca810f35642e06d9a8a56d854597ad2fa475060f
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a7c37c9508055bbfdc76173cdf6efa0ccf4c5b1c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092410"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755168"
 ---
 # <a name="parse-incoming-documents-to-update-application-data"></a>アプリケーション データを更新するために受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]

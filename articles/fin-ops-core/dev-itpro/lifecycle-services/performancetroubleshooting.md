@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) がパフォーマンスの問題を診断および軽減するために提供するツールについて説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 10/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2b9fb1e0f1053a5565dd2d463d9d1734d77443ea
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 33ac93cd4e6de3b25cd4fe91ddb13719a55e71e1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130073"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749265"
 ---
 # <a name="performance-troubleshooting-using-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング
 

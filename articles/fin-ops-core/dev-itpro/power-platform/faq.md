@@ -2,11 +2,9 @@
 title: Finance and Operations 仮想エンティティに関するよく寄せられる質問
 description: このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: Sunil-Garg
-manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 1912757eba69a8dd798d52f947d688423ad7cb6a
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 49df3087d3d99c4dba7392a82a52b9139301bb17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744447"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835498"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
@@ -50,7 +48,9 @@ ms.locfileid: "4744447"
 
 ### <a name="do-all-microsoft-power-platform-users-have-to-be-users-in-finance-and-operations"></a>すべての Microsoft Power Platform ユーザーが Finance and Operations のユーザーである必要がありますか。
 
-仮想エンティティを介して Finance and Operations データにアクセスしようとする Microsoft Power Platform のユーザーはすべて、Finance and Operations でユーザーとして存在している必要があります。 したがって、*すべて* のユーザーが Finance and Operations のユーザーであるとは限りません。 仮想エンティティを介して Finance and Operations データにアクセスするユーザーのみが Finance and Operations のユーザーである必要があります。
+仮想エンティティを介して Finance and Operations データにアクセスしようとする Microsoft Power Platform の **対話型ユーザー** はすべて、Finance and Operations でユーザーとして存在している必要があります。 したがって、*すべて* のユーザーが Finance and Operations のユーザーであるとは限りません。 仮想エンティティを介して Finance and Operations データにアクセスするユーザーのみが Finance and Operations のユーザーである必要があります。
+
+**S2S アプリケーション ユーザー** は、仮想エンティティへの呼び出しにも使用できます。 この種類の統合を行う場合は、**システム管理 > 設定 > Azure Active Directory アプリケーションの構成** でアプリケーション ユーザーを設定する必要があります。 これにより、アプリケーションは仮想エンティティを使用して Finance and Operations と統合できます。
 
 ### <a name="where-do-i-find-the-catalog-entity"></a>カタログ エンティティはどこにありますか。
 
@@ -105,9 +105,9 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 
 理論的には、エンティティの一覧を更新する必要はありません。 通常は、Application Object Server (AOS) の実行場所に応じて、インターネット インフォメーション サービス (IIS) をリセットするか、IIS Express を再起動するだけでかまいません。 エンティティの一覧は、プロセスごとのキャッシュである SysGlobalObjectCache にキャッシュされるということになります。 このキャッシュにリストが正確であると示されていない場合は、リストが再構築されます。 リビルド プロセスには約 5 秒かかります。 したがって、AOS プロセス (w3wp.exe または iisexpress.exe) を再起動すると、リストは次に Dataverse から照会されるときに正確になります。 また、リコンパイルは SysGlobalObjectCache キャッシュをフラッシュする *必要があります* が、そうでない場合もあります。 この場合、AOS を再起動すると、それがフラッシュされます。
 
-### <a name="do-you-have-guidance-on-when-to-use-a-virtual-entity-and-when-to-use-dual-write"></a>いつ仮想エンティティを使用するか、いつ二重書き込みを使用するかについてのガイダンスはありますか?
+### <a name="is-there-guidance-on-when-to-use-a-virtual-entity-and-when-to-use-dual-write"></a>いつ仮想エンティティを使用するか、いつ二重書き込みを使用するかについてのガイダンスはありますか?
 
-二重書き込みは、データが Dataverse にネイティブに存在する必要があるいくつかの主要なデータエンティティに対してのみ提供されます。 これらのデータ エンティティは、仮想エンティティとしては使用できません。
+仮想エンティティおよび二重書き込みを使用する場合のガイダンスについては、「[データ統合戦略の選択](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview)」で説明されいています。
 
 ### <a name="when-adding-records-using-virtual-entities-is-there-any-way-to-use-number-sequences"></a>仮想エンティティを使用してレコードを追加する場合、番号順序を使用する方法はありますか?
 はい、Finance and Operations エンティティで番号順序が自動生成される場合は、仮想エンティティからも同じように機能します。
@@ -115,7 +115,10 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 ### <a name="why-does-search-view-not-work-in-power-apps"></a>Power Apps で「検索ビュー」が機能しないのはなぜですか?
 エンティティの簡易検索ビューにフィールドが追加されていない場合、検索ボックスは使用できません。 回避策として、エンティティのフィールドを 1 つ以上、簡易検索ビューに追加することができます。
 
+### <a name="the-virtual-entity-performance-is-slow-when-a-virtual-entity-has-relationships-to-other-entities-is-there-guidance-on-how-to-avoid-these-issues"></a>仮想エンティティに他のエンティティとのリレーションシップがある場合、仮想エンティティのパフォーマンスが低下します。 これらの問題を回避する方法のガイダンスはありますか?
+仮想エンティティに他のエンティティとのリレーションシップがある場合に、仮想エンティティのパフォーマンスが低下する理由はいくつかあります。 新しいパターンが特定されると、このセクションが更新されます。 現在、次のパターンが知られています。このパターンは、ガイダンスとして使用できます。
 
+仮想エンティティに他のエンティティとのリレーションシップがある場合は、フィールドの選択リストに関連エンティティの外部キー値が含まれる場合、仮想エンティティ フレームワークは、関連するエンティティをクエリする必要があります。 既定では、エンティティに対するクエリは、呼び出し元が特定のフィールド セットを要求しない限り、すべてのフィールドを返します。 ベスト プラクティスは、絞り込み選択リストを指定します。 これは、パフォーマンスの低下を防ぐのに役立ちます。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

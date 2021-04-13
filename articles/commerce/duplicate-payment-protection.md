@@ -2,11 +2,9 @@
 title: 重複支払の防止
 description: このトピックでは、Modern POS で Dynamics 365 Commerce が支払いの重複を防ぐ方法について説明します。
 author: rubendel
-manager: AnnBe
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8e2beeeb72200c533d672d653a4d9b03539f6b13
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9d19dd65f92030667e8f6bcf731027f2754cf9d4
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010234"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792763"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 

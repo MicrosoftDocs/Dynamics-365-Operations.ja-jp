@@ -2,11 +2,9 @@
 title: 製品に対する複数の小売割引の適用
 description: このトピックでは、製品に複数の割引を適用できる場合に考慮されるすべての要素を確認します。
 author: shajain
-manager: AnnBe
 ms.date: 12/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 6c0b02fc3b33959709ddda910a781a11642ef3cd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5cf03724ec13da89711f853bd77b7a538459867c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970143"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796526"
 ---
 # <a name="apply-multiple-retail-discounts-to-a-product"></a>製品に対する複数の小売割引の適用
 

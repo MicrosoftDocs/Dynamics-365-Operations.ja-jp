@@ -2,11 +2,9 @@
 title: X++ ランタイム関数リソース
 description: このトピックでは、X++ のランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a9447decf2720ca4a624c5113430555c10e7589
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 60b93962adff7348dcae2efe0ea5a6edb54883c3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4409507"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749922"
 ---
 # <a name="x-runtime-function-resources"></a>X++ ランタイム関数リソース
 

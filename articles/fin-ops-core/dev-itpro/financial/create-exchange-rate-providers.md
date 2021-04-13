@@ -2,11 +2,9 @@
 title: 為替レート プロバイダーの作成
 description: このトピックでは、為替レート プロバイダーの設定方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 794c2f150d64d7402f254140158586e39b9cf2bb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9893b04d43e9ebfecbe3f34163999628a43f362f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680522"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753920"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 

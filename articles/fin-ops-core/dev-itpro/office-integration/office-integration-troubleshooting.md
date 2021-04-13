@@ -2,11 +2,9 @@
 title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。
 author: jasongre
-manager: AnnBe
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: OfficeAppParameters, SysEmailParameters
 audience: Developer, IT Pro
@@ -17,14 +15,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04f2d1f5b9565e070ce638063e51c303c53254bc
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: a0ff0fdd9826d1646d27d96c88b7527e18f360ee
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141928"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752984"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
+
+[!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -140,7 +140,7 @@ Excelアドイン、データ管理 フレームワーク、 Power BI レポー�
 
 **問題:** Excel アドインへのサインイン中に、次のエラー メッセージが表示されます。「AADSTS65001: ユーザーまたは管理者が ID XYZ でアプリケーションを使用することに同意しませんでした」。
 
-**説明:** 通常、この問題は、Microsoft Azure Active Directory (Azure AD) が Excel アドインを表す Azure AD アプリケーションを検出できないために発生します。 その問題は、「[Microsoft Power BI のコンフィギュレーション](../analytics/configure-power-bi-integration.md)」中、アプリケーション ID URI が環境 URL に設定された Azure AD アプリケーションが追加されたために発生します。 
+**説明:** 通常、この問題は、Microsoft Azure Active Directory (Azure AD) が Excel アドインを表す Azure AD アプリケーションを検出できないために発生します。 この問題は、[Microsoft Power BI のコンフィギュレーション](../analytics/configure-power-bi-integration.md)中に、アプリ ID URI が環境 URL に設定された Azure AD アプリケーションが追加されたために発生します。 
 
 **修正**: Azure AD アプリケーションのアプリケーション ID URI が環境 URL に設定されていないことを確認します。 アプリ ID URI は、`https://contosoAXPowerBI` などの固有の URI で作成する必要があります。
 

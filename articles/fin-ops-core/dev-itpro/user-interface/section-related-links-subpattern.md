@@ -2,11 +2,9 @@
 title: セクション関連リンクのサブパターン
 description: この記事では、関連リンクのサブパターンに関する情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a61febe140bb953ee0de39ac29b699ce03c02f8c
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: f36c2930d090b9c5bfe9b7aaf68436fe640f3fd2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092370"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754844"
 ---
 # <a name="section-related-links-subpattern"></a>セクション関連リンクのサブパターン
 

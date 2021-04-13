@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) の AX 2012 R3 用の更新プログラム
 description: このトピックでは、更新ページについて説明します。 これは、Microsoft Dynamics AX 2012 R3 の累積的な更新プログラムに使用される更新プログラム インストーラーをホストします。
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d412a5410761306da03d6fe16a9b794fd73beeff
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f0576da3fbe09233399ba9b7feb7a4a089fe27ce
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128869"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744517"
 ---
 # <a name="updates-for-ax-2012-r3-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の AX 2012 R3 用の更新プログラム
 

@@ -1,12 +1,10 @@
 ---
 title: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 description: このトピックでは、Microsoft Dynamics 365 Finance の配置用にドキュメント回覧エージェントをインストールして構成する方法について説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
@@ -14,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85d5ffb2d5f56b2b8edc42c8f274a1834ddbe202
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 77159f9dd18f9295a9f7b6cee262bc2bbb34332e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687441"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744281"
 ---
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 

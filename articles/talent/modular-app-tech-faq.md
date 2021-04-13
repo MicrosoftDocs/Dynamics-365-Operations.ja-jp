@@ -2,11 +2,9 @@
 title: オンボード プロビジョニング
 description: このトピックでは、スタンドアロン Dynamics 365 Talent - Onboard アプリをプロビジョニングする方法について説明します。
 author: andreabichsel
-manager: tfehr
 ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.openlocfilehash: 0c0c04ba1fa4311b23bae022059b4b2d09169d5a
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 901774ac9ccdb113e593cc66f042b5a2dfcb4e41
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126855"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803237"
 ---
 #  <a name="provision-onboard"></a>オンボード プロビジョニング
 

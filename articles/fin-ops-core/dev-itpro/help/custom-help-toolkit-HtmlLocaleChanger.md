@@ -2,22 +2,20 @@
 title: カスタム ヘルプ ツールキット - HtmlLocaleChanger ツール
 description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットに含まれている HtmlLocaleChanger ツールについて説明します。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: b3b69553d2ea4432e78426211a2f1d8d1b40d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f01e86e1c3713e4b3f737bbf2e3737de6ec176d6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685087"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752752"
 ---
 # <a name="custom-help-toolkit-the-htmllocalechanger-tool"></a>カスタム ヘルプ ツールキット: HtmlLocaleChanger ツール
 

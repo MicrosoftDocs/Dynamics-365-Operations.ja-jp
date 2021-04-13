@@ -2,11 +2,9 @@
 title: X++ およびデバッガーの機能
 description: このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。
 author: pvillads
-manager: AnnBe
 ms.date: 11/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7acacf1e475d15d54381948b467e7056c368e048
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 31120328aa5668599ace07860b1025d2ecfe0b73
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093457"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751368"
 ---
 # <a name="x-and-debugger-features"></a>X++ およびデバッガーの機能
 

@@ -2,11 +2,9 @@
 title: 拡張機能の名前付けのガイドライン
 description: このトピックでは、拡張機能の名前付けガイドラインについて説明します。 アーティファクトは、インストール時にすべてのモデルで一意の名前が必要です。
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: c38e1cec0945c67745eae32bf48a675503614c23
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 1d088d3b1fc1794ccb8878586e9ffecc0695cc7a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128375"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749908"
 ---
 # <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けガイドライン
 

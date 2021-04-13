@@ -2,11 +2,9 @@
 title: 二重書き込みウィザードを使用して環境をリンクする
 description: このトピックでは、二重書き込みウィザードを使用して、Finance and Operations アプリ環境を Dataverse 環境にリンクする方法について説明します。
 author: sabinn-msft
-manager: AnnBe
 ms.date: 05/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a8ebe8f06d94452e5d967db9907977b8eece420
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: 0ff39ebbf94bf81a8cab7774ab76608a537c9aa5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4822177"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748505"
 ---
 # <a name="use-the-dual-write-wizard-to-link-your-environments"></a>二重書き込みウィザードを使用して環境をリンクする
 

@@ -2,11 +2,9 @@
 title: ユーザー サインインの追跡
 description: このトピックでは、Microsoft Dynamics 365 Finance and Operations アプリにサインインして使用するユーザーの監査ログを作成する方法について説明します。
 author: manalidongre
-manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 24818a505772fd4c79f3cd338866cee3252f9ac8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f7ddf99ae90fea7e320608108e2a63ad8b88f4a7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681044"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750534"
 ---
 # <a name="track-user-sign-ins"></a>ユーザー サインインの追跡 
  

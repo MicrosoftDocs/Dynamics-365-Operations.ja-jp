@@ -2,11 +2,9 @@
 title: 拡張可能なデータ セキュリティ ポリシー
 description: このトピックでは、Finance and Operations アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。
 author: Peakerbl
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 639b0dbe4c1328fbf22628b50b2630651be7c7e2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 21568cddee3f856f170ce0ad2bf1db729c5407ca
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686325"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745981"
 ---
 # <a name="extensible-data-security-policies"></a>拡張可能なデータ セキュリティ ポリシー 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +30,7 @@ ms.locfileid: "4686325"
 
 -   **制約付きテーブル**: データがフィルタ処理またはセキュリティ保護されているテーブル。 たとえば、顧客グループに基づく顧客へのアクセスを保護するポリシーでは、**CustTable** は制約されたテーブルになります。
 
--   **プライマリ テーブル**: 関連する制約付きテーブルの内容を保護するために使用されます。 上の例では、 **CustGroup** テーブルがプライマリ テーブルになります。
+-   **プライマリ テーブル**: 関連する制約付きテーブルの内容を保護するために使用されます。 上の例では、**CustGroup** テーブルがプライマリ テーブルになります。
     プライマリ テーブルには、制約されたテーブルと明示的な関係である必要があります。
 
 -   **ポリシー クエリ**: プライマリ テーブルの内容に対する範囲条件を使用して、制約を適用するテーブル コンテンツを保護するために使用されます。 範囲に含まれるレコードのみがアクセス可能になります。 この範囲は、顧客グループの特定の値に基づいている場合などに使用できます。
@@ -54,7 +52,7 @@ ms.locfileid: "4686325"
 
 ## <a name="important-considerations"></a>重要な考慮事項
 
-ポリシー クエリは、指定された制約付きテーブルを含む選択、更新、削除、および挿入の各操作において WHERE 句または ON 句に追加されます。 入念に設計され、テストされていない限り、ポリシー クエリはパフォーマンスに重要な影響を与える可能性があります。 したがって、拡張可能なデータ セキュリティ ポリシーを開発する場合は、必ず単純ですが、重要なガイドラインに従ってください。 詳細については、[拡張可能なデータ セキュリティ ポリシーの開発 (ホワイト ペーパー) [AX 2012]](https://technet.microsoft.com/library/hh272862.aspx) の「拡張可能なデータ セキュリティ ポリシーの開発」セクションを参照してください。
+ポリシー クエリは、指定された制約付きテーブルを含む選択、更新、削除、および挿入の各操作において WHERE 句または ON 句に追加されます。 入念に設計され、テストされていない限り、ポリシー クエリはパフォーマンスに重要な影響を与える可能性があります。 したがって、拡張可能なデータ セキュリティ ポリシーを開発する場合は、必ず単純ですが、重要なガイドラインに従ってください。 詳細については、[拡張可能なデータ セキュリティ ポリシーの開発 (ホワイト ペーパー) [AX 2012]](https://technet.microsoft.com/library/hh272862.aspx) の「拡張可能なデータ セキュリティ ポリシーの開発」を参照してください。
 
 2 つ以上のセキュリティ ポリシーが適用されている場合は、各ポリシーに含まれるレコードの交差 (和集合ではない) のみが、アクセス可能なレコードとなります。 つまり、レコードへのアクセスを許可する前に、レコードが適用可能なすべてのセキュリティ ポリシーを満たす必要があります。
 
@@ -66,11 +64,11 @@ ms.locfileid: "4686325"
 
 - [拡張可能なデータ セキュリティ ポリシーの開発 (ホワイト ペーパー) [AX 2012]](https://technet.microsoft.com/library/hh272862.aspx)
 
-- [拡張可能なデータ セキュリティを使用した分析コード値ごとのデータの保護 (ホワイト ペーパー) [AX 2012]](https://technet.microsoft.com/library/hh335188.aspx)
+- [拡張可能なデータ セキュリティを使用して分析コード値ごとのデータの保護 (ホワイト ペーパー) [AX 2012]](https://technet.microsoft.com/library/hh335188.aspx)
 
 - [拡張可能なデータ セキュリティの例 – Andre Arnaud De Calavon [ブログ]](https://dynamicspedia.com/tag/xds/)
 
-- [D365FO での拡張可能なデータ セキュリティ (XDS) フレームワーク - Alex Meyer [ブログ]](https://alexdmeyer.com/2019/02/20/extensible-data-security-xds-framework-in-d365fo/)
+- [D365FO - Alex Meyer [ブログ]での拡張可能なデータ セキュリティ (XDS) フレームワーク](https://alexdmeyer.com/2019/02/20/extensible-data-security-xds-framework-in-d365fo/)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

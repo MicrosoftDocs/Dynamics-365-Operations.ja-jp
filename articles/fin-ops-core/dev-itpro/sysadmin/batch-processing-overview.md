@@ -2,11 +2,9 @@
 title: バッチ処理の概要
 description: このトピックでは、バッチ処理の概要を示します。
 author: Peakerbl
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2f0fb4a5967d6f078b82cb792e07f98cbfa96da
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 10b741525dfc2b2e5f4fe19cd95876279424fd6a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687595"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746023"
 ---
 # <a name="batch-processing-overview"></a>バッチ処理の概要
 

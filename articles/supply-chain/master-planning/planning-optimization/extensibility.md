@@ -2,11 +2,9 @@
 title: 計画最適化の拡張機能
 description: このトピックでは、計画の最適化でサポートされている機能性のシナリオについて説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Developer
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: aaa7d6c4411da04fa9191f96a102c07a2bf90440
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cbc8d3761ee13906eca57fc06b1e6a8174205ced
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983531"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839211"
 ---
 # <a name="planning-optimization-extensibility"></a>計画最適化の拡張機能
 

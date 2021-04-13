@@ -2,11 +2,9 @@
 title: 環境サービスの再開
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を通じて展開される環境で個々のサービスを再起動する方法について説明します。こ
 author: laneswenka
-manager: AnnBe
 ms.date: 03/26/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-03-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 01255628bddd145bfc61702e904596dab797fd4e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bed99c3e8283275f2e0bc53cb384e8ce736e317c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681064"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748427"
 ---
 # <a name="restart-environment-services"></a>環境サービスの再開
 

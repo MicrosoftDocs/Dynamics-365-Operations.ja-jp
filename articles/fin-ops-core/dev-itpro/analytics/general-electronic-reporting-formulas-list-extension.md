@@ -2,11 +2,9 @@
 title: 電子申告 (ER) 機能の一覧の拡張
 description: この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERExpressionDesignerFormula
 audience: Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83bf426d614b383c35f9ee8b6d993ce0086128cd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 4ad8d29dd5a59bb6be0a6b57b08452aaaf322439
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093889"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750120"
 ---
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 

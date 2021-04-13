@@ -2,11 +2,9 @@
 title: 顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 description: このトピックでは、決済処理業者からのクレジットカードの領収書を顧客の項目別取引レシートに埋め込む方法について説明します。
 author: rubendel
-manager: annbe
 ms.date: 04/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ecd88fbb7a4bf9786c000f07b94d96434d3b6ca8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ec874531288187ccd95f9c2a1e08dd8ed738b542
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684971"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793009"
 ---
 # <a name="embed-processor-credit-card-receipts-in-customer-receipts"></a>顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 
@@ -32,7 +30,7 @@ ms.locfileid: "4684971"
 
 ## <a name="key-terms"></a>重要な用語
 
-| 期間 | 説明 |
+| 相談 | 説明 |
 |---|---|
 | 顧客のレシート | 販売時点管理 (Point of Sale) でのキャッシュ アンド キャリー取引の際に発生するレシート。 |
 | 顧客のクレジット カード レシート | クレジットカードの支払またはトランザクションで使用されるその他の電子支払のレコードとして印刷されるクレジットカード レシート。 |

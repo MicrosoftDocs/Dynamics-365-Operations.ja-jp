@@ -2,11 +2,9 @@
 title: 拡張可能なコントロールのプログラミング リファレンス
 description: このトピックでは、拡張可能なコントロール プログラミングの参考資料を提供します。
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3abaf0e94ebf1413dfe323d058a6750b834672d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 959edbff3a1b2e57e21d758d4484e754567d72ab
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686610"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801349"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
@@ -837,7 +835,7 @@ $dyn.observe(observable, observer, [context], [disposableObserver])
 
 ###### <a name="context-options-optional"></a>コンテキスト (選択可、オプション)
 
-オブザーバーに渡すコンテキスト。 コンテキストは、オブザーバー内の **_this_* _ 変数になります。
+オブザーバーに渡すコンテキスト。 コンテキストは、オブザーバーの内部で ***this*** 変数になります。
 
 ###### <a name="disposableobserver-options-optional"></a>DisposableObserver (選択可、オプション)
 
@@ -920,7 +918,7 @@ var greeting = $dyn.observable("Hello");
 
 ##### <a name="usage"></a>用途
 
-監視可能な変数の値にアクセス。 オブサーバー関数 (バインディング ハンドラーへ渡されるバインディング式だけでなく、**$dyn.observe** または **$dyn.computed** に渡されるオブザーバーなど) の内部から _ *$dyn.value** が呼び出されると、観測可能なオブジェクトへの依存関係が作成されます。 これにより、オブザーバブルの値が変更されるたびにバインディング ハンドラーまたはコールバックが再実行されます。 この依存関係は **$dyn.value** を使用すると自動的に作成されるため、このような依存関係を意図的に作成する場合は **$dyn.value** のみを使用することが重要です。 依存関係を作成せずに observable の値にアクセスするには、$dyn.peek を使用する必要があります。
+監視可能な変数の値にアクセス。 オブサーバー関数 (バインディング ハンドラーへ渡されるバインディング式だけでなく、**$dyn.observe** または **$dyn.computed** に渡されるオブザーバーなど) の内部から **$dyn.value** が呼び出されると、 観測可能なオブジェクトへの依存関係が作成されます。 これにより、オブザーバブルの値が変更されるたびにバインディング ハンドラーまたはコールバックが再実行されます。 この依存関係は **$dyn.value** を使用すると自動的に作成されるため、このような依存関係を意図的に作成する場合は **$dyn.value** のみを使用することが重要です。 依存関係を作成せずに observable の値にアクセスするには、$dyn.peek を使用する必要があります。
 
 ```xpp
 $dyn.value(observable)

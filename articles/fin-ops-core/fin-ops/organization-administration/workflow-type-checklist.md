@@ -2,11 +2,9 @@
 title: ワークフロー タイプ チェックリスト
 description: このトピックでは、新しいワークフロー タイプを作成するために必要な手順について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: d2b95d17a80224adadac5f8e833a7023169ba087
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 44158b4026760a86916074ed402a5574fdd7da72
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798761"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747133"
 ---
 # <a name="workflow-type-checklist"></a>ワークフロー タイプ チェックリスト
 

@@ -2,11 +2,9 @@
 title: Finance and Operations と Microsoft Power Platform の統合
 description: このトピックでは、Dataverse における Finance and Operations の仮想エンティティについて説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 12f6458e3be6b5e8642acc35c05984d7b6ab6158
-ms.sourcegitcommit: fd62ab3d399b0d6ea0d362f1d403a300e84a576d
+ms.openlocfilehash: 27f9c90e46a27a5f734c0dbb1347dff09b4d1913
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "5067610"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745125"
 ---
 # <a name="microsoft-power-platform-integration-with-finance-and-operations"></a>Finance and Operations と Microsoft Power Platform の統合
 

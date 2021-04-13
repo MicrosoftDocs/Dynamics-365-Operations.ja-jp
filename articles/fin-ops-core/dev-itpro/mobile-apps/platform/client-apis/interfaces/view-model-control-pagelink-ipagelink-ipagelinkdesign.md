@@ -2,11 +2,9 @@
 title: PageLinkDesign タイプ
 description: Pagelink デザイン オブジェクトの種類。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d35d2c70eac8c68ac410698592921dc4eb3afa0b
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 989d469dbbcc052346e758d25f8af9238fcf9249
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154423"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744721"
 ---
 # <a name="pagelinkdesign-type"></a>PageLinkDesign タイプ
 

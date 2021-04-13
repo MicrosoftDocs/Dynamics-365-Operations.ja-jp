@@ -2,11 +2,9 @@
 title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 Finance のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
-manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 401d828a1859d5d1629d2bd613aec30bfad0421f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fd9259d3a98dc9e37efc791627726f82e73e79a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681096"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800371"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -30,6 +28,8 @@ ms.locfileid: "4681096"
 サンドボックス ユーザー受け入れテスト (UAT) 環境に対するデータベースの更新の実行に、Microsoft Dynamics Lifecycle Services (LCS) を使用することができます。 データベースの更新対象となるサンド ボックス UAT 環境に、本番環境のトランザクションおよび財務報告データベースをコピーできます。 別のサンドボックス環境を使用する場合は、その環境から対象のサンドボックス UAT 環境にデータベースをコピーすることもできます。
 
 > [!IMPORTANT]
+> 営業時間中またはピーク時に生産データをコピーすると、生産システムに影響を与える可能性があります。 データベースの更新は、オフピーク時に行い、一度に 1 つの更新操作のみを制限することを強くお勧めします。
+
 > 生産報告を目的としてサンドボックス環境に生産のデータをコピーすることはできません。
 
 ## <a name="self-service-database-refresh"></a>データベースのセルフ サービスエ更新
@@ -56,7 +56,7 @@ ms.locfileid: "4681096"
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 
 #### <a name="when-refreshing-from-sandbox-environment-to-production-environment"></a>サンドボックス環境から実稼働環境に更新する場合
-これは、[ゴールデン構成プロモーション](/dbmovement-scenario-goldenconfig.md) とも呼ばれます。
+これは、[ゴールデン構成プロモーション](dbmovement-scenario-goldenconfig.md) とも呼ばれます。
 * バッチ ジョブ履歴は、BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルに格納されています。
 
 #### <a name="these-elements-are-removed-for-all-database-refresh-operations"></a>これらの要素は、すべてのデータベースの更新操作で削除されます

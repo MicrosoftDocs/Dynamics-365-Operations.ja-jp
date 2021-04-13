@@ -2,11 +2,9 @@
 title: 開発マシンでの新しいユーザーの作成
 description: 環境が最初に配置されるとき、1 つのユーザー アカウントのみが開発者として有効になります。 この記事では、別のユーザー アカウントを有効にする方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b3fd52787c9e0b0baf1416a02173f566e3ac55a
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a1cb2c8ef523940aca7a5344a3ac6d013771fca3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092884"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745299"
 ---
 # <a name="create-new-users-on-development-machines"></a>開発マシンでの新しいユーザーの作成
 

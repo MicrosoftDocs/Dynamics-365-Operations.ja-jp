@@ -2,11 +2,9 @@
 title: Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-manager: AnnBe
-ms.date: 02/04/2021
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3ce90bff8e503f13b9c9a177fc58bc0003bbb655
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: 3582518ab98c80044c9b8e369db2211e805f4e06
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118695"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752764"
 ---
 # <a name="platform-updates-for-version-10017-of-finance-and-operations-apps-april-2021"></a>Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.5934 で、次のスケジュールで使用できます。
 
@@ -42,8 +39,6 @@ ms.locfileid: "5118695"
 
 -  [(プレビュー) 組織ビューの翻訳サポート](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/translation-support-organizational-saved-views)<br>- 詳細については、[保存されているビュー](../../fin-ops/get-started/saved-views.md) を参照してください。
 
--  [Excel アドインの公開バッチサイズのコンフィギュレーションを許可する](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- 詳細については、[Excel を使用したエンティティ データの表示と更新](../office-integration/use-excel-add-in.md)を参照してください。
-
 -  [React 17 にアップグレードする](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/upgrade-react-17)
 
 -  [グリッド内の列の固定](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/freeze-columns-grids)<br>- 詳細については、[グリッド機能](../../fin-ops/get-started/grid-capabilities.md) を参照してください。
@@ -51,6 +46,10 @@ ms.locfileid: "5118695"
 -  [クライアント機能の状態の更新](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states)<br>- このリリースで既定でオンになっていた、または必須になったクライアント機能の詳細については、リリース プランを参照してください。 
 
 -  独立系ソフトウェア ベンダー (ISV) のライセンス ステータスの表示<br>- ISV ライセンスのステータスおよび有効期限を表示できるようになりました。 詳細については、[独立系ソフトウェア ベンダーのライセンス ステータスの表示](../sysadmin/view-isv-license-status.md)を参照してください。
+
+- [executeQueryWithParameters](../dev-ref/query-with-parameters.md) メソッド<br>- このメソッドは、SQL インジェクション攻撃を軽減するのに役立つステートメント パラメーターを使用して SQL クエリを実行します。
+
+- [バッチの通知](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/batch-notifications)<br>- 詳細については、[バッチ ビジネス イベント](../business-events/system-business-events.md) を参照してください。
 
 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 

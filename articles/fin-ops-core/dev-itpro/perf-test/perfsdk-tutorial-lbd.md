@@ -2,11 +2,9 @@
 title: オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 description: このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
 author: hasaid
-manager: AnnBe
 ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: e8d19c22e3bb765ff97a69a862d46a020cec2564
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cc47b981e97602b1f989ecc4ddd33f1b7b1f328c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679234"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746025"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
@@ -46,7 +44,7 @@ ms.locfileid: "4679234"
 
     - Microsoft Visual Studio Enterprise またはそれ以降のバージョンがインストールされています。
     - パフォーマンス SDK をインストールします。 (SDK は K:\\PerfSDK\\PerfSDKLocalDirectory にある可能性があります。 ただし、環境によっては C:\\PerfSDK のような別の場所にある可能性があります。)
-    - オンプレミス環境は、Web ブラウザーでアクセスできます。 (オンプレミス環境と同じドメインに開発仮想マシン [VM] が、またはオンプレミス環境にパブリックに登録済みのドメイン名がある可能性があります。)
+    - オンプレミス環境は、Web ブラウザーでアクセスできます。 (オンプレミス環境と同じドメインに開発仮想マシン [VM]が、またはオンプレミス環境には、パブリックに登録済みのドメイン名がある場合があります。)
 
 ## <a name="create-a-single-user-c-test-from-an-xml-recording"></a>XML 記録からシングル ユーザー C# テストを作成する
 

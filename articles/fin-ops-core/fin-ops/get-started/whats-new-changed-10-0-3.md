@@ -2,11 +2,9 @@
 title: Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能または変更された機能について説明します。 このバージョンは 6 月にリリースされます。
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.3
-ms.openlocfilehash: 8ecc636ac5f82d9e692151c630b3b346d22ce367
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: dc4675441fbeb87050800b21b77713107bd4d556
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797241"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754640"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1003-june-2019"></a>Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更された機能
 

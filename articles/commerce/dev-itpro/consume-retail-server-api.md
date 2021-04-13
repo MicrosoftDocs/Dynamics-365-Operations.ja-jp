@@ -2,11 +2,9 @@
 title: 外部アプリケーションでの Retail Server API の使用
 description: このトピックでは、外部アプリケーションで Retail Server API を使用する方法について説明します。
 author: mugunthanm
-manager: AnnBe
-ms.date: 09/25/2020
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 762776d518c0f6f1936ccde165fc63a037e643ee
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f12f18728e232940c077c3c2a04cbdd692458c73
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683356"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791191"
 ---
 # <a name="consume-retail-server-apis-in-external-applications"></a>外部アプリケーションでの Retail Server API の使用
 
@@ -64,6 +62,8 @@ https://RS-URL/Commerce/$metadata
 
 ## <a name="register-the-application-in-azure-app-registration"></a>Azure アプリ登録で、アプリケーションを登録する
 
+### <a name="app-registration-for-the-retail-server"></a>Retail Server のアプリ登録
+
 アプリケーションの登録は、アプリと Microsoft ID プラットフォームとの間に信頼関係を確立します。 信頼は単一方向で、アプリケーションは Microsoft ID プラットフォームを信頼しますが、逆向きでは信頼されません。 アプリの登録を作成するには、次の手順に従います。
 
 1. [Azure ポータル](https://portal.azure.com/)にサインインします。
@@ -74,6 +74,18 @@ https://RS-URL/Commerce/$metadata
 6. **この組織ディレクトリのアカウントのみ (Microsoft のみ、単一テナント)** としてこのアプリケーションを使用できるユーザーを指定します。
 7. **URI のリダイレクト** フィールドは既定値のままにします。 何も変更しないでください。
 8. **登録** を選択して、最初のアプリ登録を行います。
+9. **API の公開** を選択し、**スコープの追加** を選択します。 **スコープ** 名を作成し、**同意** で、**管理者とユーザー** を選び **管理者の同意表示** 名と説明を入力します。
+10. **状態** を **有効にする** に設定します。
+11. **スコープの追加** を選択し、スコープ登録を完了します。 
+12. スコープが作成された後、"api://.." で始まる Application ID URI を クリップボードにコピーします。 これは、後で使用される Server Resource ID です。
+
+### <a name="create-the-app-registration-for-the-client"></a>クライアント用アプリケーション登録の作成
+
+13. 上記の手順 2-8 に従い、アプリケーション登録に必ず別の名前を指定してください。
+14. **API 許可** を選択します。
+15. **API アクセス許可の要求** ページで、**組織で使用する API** を選択し、手順 2-8 で作成したアプリを検索します。
+16. API を選択し、アクセス許可を確認します。 新しいウィンドウで開き、**アクセス許可の追加** を選択
+
 
 登録が完了すると、Azure ポータルに、アプリ登録の **概要** ウィンドウが表示されます。 このウィンドウには、**アプリケーション (クライアント) ID** フィールドが表示されます。 このフィールドの値は、*アプリケーション ID* または *クライアント ID* と呼ばれます。 Microsoft ID プラットフォームでアプリケーションを一意に識別します。
 
@@ -81,7 +93,7 @@ https://RS-URL/Commerce/$metadata
 
 クライアント シークレットは、*アプリケーション パスワード* と呼ばれることもあります。 これは、アプリが、自身の ID に対する証明書の代わりとして使用できる文字列値です。
 
-1. Azure ポータルの **アプリの登録** で、アプリケーションを選択します。
+1. Azure ポータルの **アプリ登録** で、使用しているアプリケーションを選択します (小売サーバー に登録されたアプリ)。
 2. **証明書とシークレット** &gt; **新しいクライアント シークレット** を選択します。
 3. クライアント シークレットの説明を入力します。
 4. 期間を選択します。
@@ -92,9 +104,9 @@ https://RS-URL/Commerce/$metadata
 
 1. Commerce Headquarters で、**Retail と Commerce** &gt; **本社の設定** &gt; **パラメーター** &gt; **Commerce 共有パラメーター** の順に移動します。
 2. **ID プロバイダー** クイック タブで、`HTTPS://sts.windows.net/` で始まるプロバイダーを選択します。 選択に基づいて、**依存する関係者** クイック タブの値が設定されます。
-3. **依存する関係者** クイック タブで、**追加** を選択します。 Azure でアプリの登録時に生成されたクライアント ID を入力します。 **Type** フィールドを **機密情報** に、**UserType** フィールドを **アプリケーション** に設定します。
+3. **依存する関係者** クイック タブで、**追加** を選択します。 Azure で小売サーバー アプリの登録時に生成されたクライアント ID を入力します。 **Type** フィールドを **機密情報** に、**UserType** フィールドを **アプリケーション** に設定します。
 4. アクション ウィンドウで、**保存** を選択します。
-5. 新しい依存する関係者を選択し、**サーバー リソース ID** クイック タブで **追加** を選択します。 **サーバー リソース ID** 列に、Retail Server の URL を入力します。
+5. 新しい依存する関係者を選択し、**サーバー リソース ID** クイック タブで **追加** を選択します。 **サーバー リソース ID** 列に、アプリ ID URI を入力します (手順 12 で生成された API URI です)。
 6. アクション ウィンドウで、**保存** を選択します。
 7. **Retail と Commerce** &gt; **Retail および Commerce IT** &gt; **配送スケジュール** の順に移動し、Commerce Data Exchange (CDX) ジョブ **1110** を実行します。
 
@@ -126,9 +138,9 @@ API にアクセスするには、最初に認証トークンを生成します�
     | キー            | 先頭値                                                              |
     |----------------|--------------------------------------------------------------------|
     | grant\_type    | **client\_credentials**                                            |
-    | client\_id     | Azure アプリの登録時に生成されたクライアント ID     |
-    | client\_secret | Azure アプリの登録時に生成されたクライアント シークレット |
-    | リソース       | Retail Server の URL                                              |
+    | client\_id     | Azure アプリの登録時に生成されたクライアント ID。     |
+    | client\_secret | Azure アプリの登録時に生成されたクライアント シークレット。 |
+    | リソース       | アプリケーション ID URI を入力します (これは手順 12 で生成された API URI です)。       |
 
 2. 要求が実行を完了すると、応答本文に **access\_token** の値が生成されます。 このトークンの値をコピーします。 Retail Server に接続するためにこれを使用します。
 
@@ -171,11 +183,11 @@ API にアクセスするには、最初に認証トークンを生成します�
 
     ```xml
     <appSettings>
-        <add key="aadClientId" value="client id generated during app registration in Azure" />
-        <add key="aadClientSecret" value="client secret generated during app registration in Azure" />
+        <add key="aadClientId" value="client id generated during Retail server app registration in Azure" />
+        <add key="aadClientSecret" value="client secret generated during Retail server app registration in Azure" />
         <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
-        <add key="retailServerUrl" value="https://RetailserverURL/Commerce" />
-        <add key="resource" value="https://REtailServerURL" />
+        <add key="retailServerUrl" value="https://RetailserverURL/Commerce" /> 
+        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI -->
         <add key="operatingUnitNumber" value="OUN value" />
     </appSettings>
     ```

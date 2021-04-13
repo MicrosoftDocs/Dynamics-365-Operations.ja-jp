@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) によるサービスの更新の一時停止
 description: このトピックは環境に応じてサービスの更新を一時停止する方法を説明します。
 author: angelmarshall
-manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 722b8ae7881fa9cf41aa49d3666998cce07edc77
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 749b8341723a4eb7818a0c6902c240a434e8876f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687902"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745277"
 ---
 # <a name="pause-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の一時停止
 

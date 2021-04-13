@@ -1,27 +1,25 @@
 ---
 title: 方法の作成または更新
 description: Lifecycle Services は、より反復可能で予測可能な実装プロジェクト体験を保証するために使用できる方法を提供します。
-author: meeramahabala
-manager: AnnBe
+author: angelmarshall
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 266824
 ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
 ms.search.region: Global
-ms.author: meeram
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cba5fc667a0b58a91ed6ed1cf20d6b6c64daf984
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: ece007d2fb5d00a398e7b059689669e7da7799d7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128863"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752730"
 ---
 # <a name="create-or-update-methodologies"></a>方法の作成または更新
 

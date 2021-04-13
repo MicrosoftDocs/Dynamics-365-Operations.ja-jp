@@ -1,12 +1,10 @@
 ---
 title: プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
-description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトの新しい環境、Microsoft Azure DevOps、およびのブランチ設定の推奨事項について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce 計画の新しい環境、Microsoft Azure DevOps、およびブランチを設定するための推奨事項について説明します。
 author: andreashofmann1
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -16,24 +14,24 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 7293bdabd1e0f1c736d19d6791d40521efeae389
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: d691b8873eafbc0e129c4ac2308a36703b702802
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127193"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795669"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-projects"></a>プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境がクラウドでホストされます。 それら環境は Microsoft サブスクリプション または、クラウド ホストの顧客サブスクリプションで 提供されています。 既定では、環境は、Microsoft によってホストされます。 クラウド ホスト環境は、開発環境またはビルド環境を詳細に制御するために使用されます。 詳細については、 [Lifecycle Services (LCS) ユーザー ガイド](../../dev-itpro/lifecycle-services/lcs-user-guide.md) をご覧ください。
+Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境がクラウドでホストされます。 それら環境は Microsoft サブスクリプション または、クラウド ホストの顧客サブスクリプションで 提供されています。 既定では、環境は、Microsoft によってホストされます。 クラウド ホスト環境は、開発環境またはビルド環境を詳細に制御するために使用されます。 詳細については、[Lifecycle Services (LCS) ユーザー ガイド](../../dev-itpro/lifecycle-services/lcs-user-guide.md)を参照してください。
 
 ## <a name="development-tier-1-environments"></a>第 1 層環境の開発
 
 開発環境は、第1層環境と呼ばれます。 開発環境を提供するにあたって、次の3 つのオプションがあります。
 
-+ コマース アプリには、1 つのサンドボックス第 1 層環境が用意されています。 (詳細については [Microsoft Dynamics 365, Enterprise Edition, ライセンスガイド](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI)を参照してください。)
++ コマース アプリには、1 つのサンドボックス第 1 層環境が用意されています。 (詳細については、[Microsoft Dynamics 365、Enterprise Edition、ライセンス ガイド](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI)を参照してください。)
 + Microsoft Azure のサブスクリプションで動作するクラウドホスト環境。 このタイプの環境は Microsoft Dynamics Lifecycle Services (LCS) にて "クラウド ホスト環境" と呼ばれています。
 + 任意の場所でホストする、ダウンロードされた仮想マシン (VM)。
 
@@ -110,7 +108,7 @@ Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境
 
 小規模な売プロジェクトでは、分岐が 2 つしかなくても構いません (メイン = 開発分岐)。 ただし、コード送信はテスト ビルドの品質に即座に影響を与える可能性があるため、開発者は規範を守らなければなりません。 
 
-複数のブランチから配置可能なパッケージを作成することができます。 この場合、ビルド可能な各分岐に対して 1 つのビルド定義を持つ必要があります。 ビルド環境が配置される際、初期のビルド定義が自動的に作成されます (Main ブランチ)。 他のブランチのビルドのコピーを作成することができます。 コマース コードを組み込むには、小規模な追加を行う必要があることに注意してください。
+複数のブランチから配置可能なパッケージを作成することができます。 この場合、ビルド可能な各分岐に対して 1 つのビルド定義を持つ必要があります。 ビルド環境が配置される際、初期のビルド定義が自動的に作成されます (Main ブランチ)。 他のブランチのビルドのコピーを作成することができます。 コマース コードを組み込むには、小規模な追加を行う必要があります。
 
 次の高レベルの手順を使用して、開発作業を開始できるように環境を設定します。 カッコ内の数字の詳細については、前述の図と関連情報を参照してください。
 

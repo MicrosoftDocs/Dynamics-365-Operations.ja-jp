@@ -2,11 +2,9 @@
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス
 description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 05/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ad0724fdf6009b95daaac60483e464a42e44b9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9841a77562e74f55f501ab55478540fe51e48c10
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408849"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753016"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -165,14 +163,15 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     | --metadatadir                 | メタデータ ディレクトリ を指定するには、このパラメーターを使用します。 既定のパッケージ ディレクトリを使用する必要があります。   |
     | --bindir                      | バイナリ ディレクトリ を指定するには、このパラメーターを使用します。 既定のパッケージ ディレクトリを使用する必要があります。   |
     | --sqlserver                   | このパラメーターを使用して Microsoft SQL Server を指定します。 1 ボックス環境では、ピリオド (**.**) を使用します。 |
-    | --sqluser                     | SQL Server のユーザーを指定するには、このパラメーターを使用します。 **AOSUser** に渡す必要があります。                     |
+    | --sqldatabase                 | SQL Server データベースを指定するには、このパラメーターを使用します。 1 ボックス環境では、**AXDB** を使用します。     |
+    | --sqluser                     | SQL Server のユーザーを指定するには、このパラメーターを使用します。 **axdbadminr** を使用する必要があります。                  |
     | --sqlpwd                      | SQL Server のパスワードを指定するには、このパラメーターを使用します。                                                 |
     | --licensefilename             | 読み込むライセンス ファイルを指定するには、このパラメーターを使用します。                                    |
 
     次に例を示します。
 
     ```Console
-    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ******** --licensefilename c:\templicense.txt
     ```
 
 4.  対応するコンフィギュレーション キーは、**ライセンス コンフィギュレーション** ページで使用可能になり、有効になります。 既定では、コンフィギュレーションが有効です。 たとえば、次のスクリーンショットで **ISVConfigurationKey1** コンフィギュレーション キーを参照してください。 

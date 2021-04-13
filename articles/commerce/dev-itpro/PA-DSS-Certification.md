@@ -2,11 +2,9 @@
 title: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 description: このトピックでは、PA-DSS 認証の過去、現在、および保留中の一覧について説明します。
 author: rapraj
-manager: AnnBe
-ms.date: 02/08/2021
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2016-01-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 791f3de8b7266a25dfcdeaa9f40f37a73f50e8cf
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 9edb22e060257f9b9e797f2b63e953b02d9d5431
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154215"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793043"
 ---
 # <a name="payment-application-data-security-standards-pa-dss-certification"></a>支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 
@@ -40,12 +38,10 @@ ms.locfileid: "5154215"
 | ----------------------|-------- | ----------- |
 | Microsoft Dynamics AX | 2012 R3  | 6.3 |
 | Microsoft Dynamics AX | 7        | 7.0  |
-| Microsoft Dynamics 365 for Operations | [1611](https://docs.microsoft.com/dynamics/s-e/) | 7.1  |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [2017 年 7 月 *](https://docs.microsoft.com/dynamics/s-e/)  | 7.2 |
-| Microsoft Dynamics 365 for Retail | [2017 年 7 月](https://docs.microsoft.com/dynamics/s-e/) | 7.2  |
-| Microsoft Dynamics 365 for Finance and Operations | [10.0](https://www.microsoft.com/download/details.aspx?id=101059) | 10.0 |
-
-\*このリンクの PDF ドキュメントは、Dynamics 365 for Retail (記載されている通り) *および* Dynamics 365 for Finance and Operations、Enterprise edition の両方に適用されます。
+| Microsoft Dynamics 365 for Operations | 1611 | 7.1  |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 2017 年 7 月  | 7.2 |
+| Microsoft Dynamics 365 for Retail | 2017 年 7 月 | 7.2  |
+| Microsoft Dynamics 365 for Finance and Operations | 10.0 | 10.0 |
 
 ## <a name="current-certification"></a>現在の証明
 

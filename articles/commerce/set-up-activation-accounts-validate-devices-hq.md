@@ -2,11 +2,9 @@
 title: アクティベーション アカウントの管理とデバイスの検証
 description: このトピックでは、作業者が Modern POS デバイスまたはクラウド POS デバイスを有効にするためにコマース アクティベーション アカウント を IT Pro で設定する方法について説明します。
 author: athinesh99
-manager: AnnBe
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
 audience: IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 40dd87c617cd6156577e1f312116f4a56a32226d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 217c87317094d1210a8a048469eba5daa3d21a44
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993331"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793983"
 ---
 # <a name="manage-activation-accounts-and-validate-devices"></a>アクティベーション アカウントの管理とデバイスの検証
 

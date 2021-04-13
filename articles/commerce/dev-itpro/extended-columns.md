@@ -2,11 +2,9 @@
 title: チャネル データベースの事前拡張された列
 description: このトピックでは、チャネル データベース内の事前拡張された列がどのように拡張に使用されるかについて説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: b5af2ec35e8f359169e100547556f74454fe73ac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: aa66ce61792508924554ad7f661da7abf5463555
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681572"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793001"
 ---
 # <a name="pre-extended-columns-in-the-channel-database"></a>チャネル データベースの事前拡張された列
 
 [!include [banner](../../includes/banner.md)]
 
-チャネル データベース内の一部の列は、*事前拡張* されています。 つまり、チャンネルデータベースの列の長さが Microsoft Dynamics 365 Commerce 本体が規定する列の長さを超えています。 たとえば、**INVENTSERIALID** フィールドの長さは、Commerce 本体のデータベースでは 20 文字、チャネル データベースでは 50 文字です。
+チャネル データベース内の一部の列は、*事前拡張* されています。 つまり、チャネル データベースの列の長さが Microsoft Dynamics 365 Commerce 本体が規定する列の長さを超えています。 たとえば、**INVENTSERIALID** フィールドの長さは、Commerce 本体のデータベースでは 20 文字、チャネル データベースでは 50 文字です。
 
 チャネル データベースのフィールドは拡張されることは多いですが、フィールドの列の長さは拡張に対応していません。 したがって、拡張が必要となった場合にも対応できるよう、標準で列の長さが増設されています。
 
@@ -155,10 +153,15 @@ namespace Contoso
 | LOGISTICSPOSTALADDRESS        | STREET                                                                        | Nvarchar (400) | ValidateAddressLength |                                     |
 | LOGISTICSPOSTALADDRESS        | COUNTY                                                                        | Nvarchar (60)  | ValidateAddressLength |                                     |
 | LOGISTICSADDRESSCITY          | COUNTYID                                                                      | Nvarchar (60)  |                       |                                     |
+| LOGISTICSADDRESSCITY          | STATEID                                                                      | Nvarchar (60)  |                       |                                     |
 | LOGISTICSADDRESSCOUNTY        | COUNTYID                                                                      | Nvarchar (60)  |                       |                                     |
 | LOGISTICSADDRESSDISTRICT      | COUNTYID\_RU                                                                  | Nvarchar (60)  |                       |                                     |
+| LOGISTICSADDRESSDISTRICT      | STATEID\_RU                                                                  | Nvarchar (60)  |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | STREETNAME                                                                    | Nvarchar (400) |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | COUNTY                                                                        | Nvarchar (60)  |                       |                                     |
+| LOGISTICSADDRESSZIPCODE       | STATE                                                                        | Nvarchar (60)  |                       |                                     |
+| LOGISTICSADDRESSZIPCODE       | ZIPCODE                                                                        | Nvarchar (60)  |                       |                                     |
+| LOGISTICSADDRESSSTATE        | STATEID                                                                        | Nvarchar (60)  |                       |                                     |
 | RETAILASYNCADDRESS            | STREET                                                                        | Nvarchar (400) |                       |                                     |
 | RETAILASYNCADDRESS            | COUNTY                                                                        | Nvarchar (60)  |                       |                                     |
 | RETAILASYNCCUSTOMER           | STREET                                                                        | Nvarchar (400) |                       |                                     |
@@ -171,6 +174,7 @@ namespace Contoso
 | RETAILTRANSACTIONSALESTRANS   | INVENTBATCHID                                                                 | Nvarchar (50)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | INVENTSERIALID                                                                | Nvarchar (50)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | WAREHOUSELOCATION                                                             | Nvarchar (60)  |                       |                                     |
+| RETAILDLVMODEADDRESSEXPLODED   | STATE                                                                        | Nvarchar (60)  |                       |                                     |
 | INVENTDIM                     | INVENTBATCHID                                                                 | Nvarchar (50)  |                       |                                     |
 | INVENTDIM                     | INVENTSERIALID                                                                | Nvarchar (50)  |                       |                                     |
 | INVENTDIM                     | CONFIGID                                                                      | Nvarchar (60)  |                       |                                     |

@@ -2,11 +2,9 @@
 title: ユーザー インターフェイス ファイルを翻訳します
 description: このトピックでは、Microsoft Dynamics 365 製品における UI Translation service の使用方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ad122ac1b69dfdaeee0e8512c2fbfffae7ddaec
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 519c8a29d4418ac37bbc54e76eb0947a7b219989
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681046"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750536"
 ---
 # <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 

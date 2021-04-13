@@ -2,11 +2,9 @@
 title: RunBase クラスの拡張
 description: このトピックには、RunBase クラスを拡張できる方法を示した例が徹底的に含まれています。
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: c11c1cef36097ae33ad6783a35afc9301e6a250d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e1803d9f7113dd5085c704db44c3f0ceaf47815
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409349"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749648"
 ---
 # <a name="extend-the-runbase-class"></a>RunBase クラスの拡張
 

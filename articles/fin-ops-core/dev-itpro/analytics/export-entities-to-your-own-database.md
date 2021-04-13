@@ -2,11 +2,9 @@
 title: 自分のデータベースの持ち込み (BYOD)
 description: このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 3feaf73644ed4f5ee6409f047016bbaaf72b34d6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8e53c152aada0fe208a1e73b3d6aab88fc5fd1cf
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682785"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743495"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
@@ -36,7 +34,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 
 ## <a name="entity-store-or-byod"></a>エンティティ格納または BYOD か
 
-[Microsoft Power BI 統合についてのブログ投稿](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)のシリーズに従った場合、エンティティ格納に精通できます。 エンティティ格納は運用データ ウェアハウスです。 エンティティ格納では、Power BI の実稼働レポートの組み込み統合を提供します。 既製のレポートと分析ワークスペースでエンティティ格納を使用します。 アプリケーションの環境のデータを使用して Power BI レポートを作成する場合は、エンティティ格納を使用する必要があります。
+[Microsoft Power BI 統合についてのブログ記事](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) のシリーズに従った場合、エンティティ格納に精通できます。 エンティティ格納は運用データ ウェアハウスです。 エンティティ格納では、Power BI の実稼働レポートの組み込み統合を提供します。 既製のレポートと分析ワークスペースでエンティティ格納を使用します。 アプリケーションの環境のデータを使用して Power BI レポートを作成する場合は、エンティティ格納を使用する必要があります。
 
 ただし、次のシナリオでは BYOD 機能をお勧めします。
 
@@ -184,7 +182,7 @@ BYOD は独自のデータベースであるため、データが同期されて
 
 #### <a name="you-cant-export-composite-entities-into-your-own-database"></a>独自のデータベースに複合エンティティをエクスポートすることはできません。
 
-現在、複合エンティティがサポートされていません。 複合エンティティを構成する個々 のエンティティをエクスポートする必要があります。 ただし、同じデータ プロジェクト内の両方のエンティティをエクスポートすることができます。
+現在、複合エンティティがサポートされていません。 複合エンティティを構成する個々のエンティティをエクスポートする必要がありますが、これは同じデータプロジェクト内で行うことができます。
 
 #### <a name="entities-that-dont-have-unique-keys-cant-be-exported-by-using-incremental-push"></a>固有キーを持たないエンティティは、増分プッシュを使用してエクスポートすることは不可能
 

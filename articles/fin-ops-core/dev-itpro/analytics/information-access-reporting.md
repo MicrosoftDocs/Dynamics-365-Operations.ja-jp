@@ -1,27 +1,25 @@
 ---
 title: 情報へのアクセスとレポート
 description: このトピックでは、プラットフォームの一部として利用可能なさまざまなレポート オプションについて説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.custom: 266104
 ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 2eca561a77327c82d498eb1cb3dec307b24cd8e0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d90163a71216d6b107f1342d531694dc33f62c59
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685291"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744283"
 ---
 # <a name="information-access-and-reporting"></a>情報へのアクセスとレポート
 

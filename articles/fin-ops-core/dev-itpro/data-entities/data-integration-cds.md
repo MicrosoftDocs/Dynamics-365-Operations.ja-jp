@@ -2,11 +2,9 @@
 title: Dataverse を使用したデータの統合の概要
 description: このトピックでは、同期と非同期の統合の仕組みについて簡単に説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ed3a1e5a76d6b604f562b0f3bbfab7ebe447e3f
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 8a93aade3027da49907e64e7b5af19744c5e6530
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744389"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750988"
 ---
 # <a name="data-integration-using-dataverse-overview"></a>Dataverse を使用したデータ統合の概要
 

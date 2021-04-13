@@ -2,11 +2,9 @@
 title: X++ と C# の比較
 description: このトピックでは、X++ と C# の構文とプログラミングを比較します。
 author: RobinARH
-manager: AnnBe
 ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 249a7f8696149a3e995ed210d16b67c01f686cc5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b7b04ec44037a9479d831fbb67757cdb5e4e7941
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408746"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753030"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 

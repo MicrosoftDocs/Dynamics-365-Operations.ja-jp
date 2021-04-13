@@ -2,11 +2,9 @@
 title: '[Excel で開く] エクスペリエンスの作成'
 description: Excel と Word を Office エクスペリエンスで開く機能について学んで作成します。
 author: jasongre
-manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,14 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 259c601bc24d2fe82328b67ce5b75dd1fa331a75
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 29b6e93f30d6d0aa16e365f0b24887cec90e0636
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141930"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752986"
 ---
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
+
+[!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 

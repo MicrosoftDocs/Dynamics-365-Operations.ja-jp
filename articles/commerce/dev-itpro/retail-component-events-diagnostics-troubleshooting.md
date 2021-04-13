@@ -2,11 +2,9 @@
 title: 診断とトラブルシューティングの Commerce コンポーネント イベント
 description: このトピックでは、Commerce 固有のコンポーネントからイベントを検索する場所について説明します。
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8b0fa7ecdac10f54dc04020e421e73947d903d03
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0065e8a98e732eec864dbcb56e00ae4b38fa5059
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681502"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797211"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
@@ -233,8 +231,8 @@ IPageViewInfo = {
 **カート** イベントのスキーマは次のとおりです。
 
 ```json
-/**_
- _ Defines the telemetry properties to track for a Cart object
+/***
+ * Defines the telemetry properties to track for a Cart object
  * @property products       {IProductInfo[]}    - Array of product information
  * @property orderId        {string}            - ID for the order
  * @property cartId         {string}            - ID for the current cart object
@@ -253,8 +251,8 @@ export interface ICartInfo {
 注文が送信されると、購入イベントがログに記録されます。 **購買** イベントのスキーマは次のとおりです。
 
 ```json
-/**_
- _ Defines the telemetry properties to track for a Purchase event
+/***
+ * Defines the telemetry properties to track for a Purchase event
  * @property id            {string}         - Transaction ID
  * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
  * @property revenue       {number}         - Revenue from this transaction
@@ -277,8 +275,8 @@ export interface IProductTransaction {
 製品の詳細は、**カート** および **購買** 操作に記録されます。 **製品** の詳細に関するスキーマは次のとおりです。
 
 ```json
-/**_
- _ Defines the telemetry properties to track for a Product object
+/***
+ * Defines the telemetry properties to track for a Product object
  * @property productChannelId       {string}   - Product channel ID
  * @property productChannelName     {string}   - Product channel name
  * @property productCategoryId      {string}   - Product category ID

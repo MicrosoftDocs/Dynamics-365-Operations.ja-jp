@@ -2,11 +2,9 @@
 title: ユーザー セッション管理
 description: ユーザー セッション設定は、ユーザーのセッションが期限切れになるまでにユーザーがサインインできる時間を表します。
 author: paulliew
-manager: AnnBe
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: paulliew
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 99fb44e5ff205088c3975848e9f8bff8c0337405
-ms.sourcegitcommit: 35cb173f0d356f00e2f50464ab77c3802ad28fbf
+ms.openlocfilehash: bcaae66509b7126d744416fc9e1c0d714b62a5b3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5033837"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745729"
 ---
 # <a name="user-session-management"></a>ユーザー セッション管理
 

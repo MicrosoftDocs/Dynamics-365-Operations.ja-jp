@@ -2,11 +2,9 @@
 title: ベスト プラクティス ルールを記述する
 description: このトピックでは、メタデータと X++ コードの両方について、C# でベスト プラクティス ルールを作成する方法について説明します。
 author: pvillads
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31b8100b5fc70fcda30be89fa5c924a48eab6260
-ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
+ms.openlocfilehash: 4bb7c00071099d03a8d5554de5690caec4d559e8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409601"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750368"
 ---
 # <a name="write-best-practice-rules"></a>ベスト プラクティス ルールを記述する
 
@@ -157,7 +155,7 @@ public class ParameterCounter : AstSweeper<object, object>
 
 ビジネス ルールを作成するには :
 
-1. AST のプロパティに関して診断したい状況を定義します。 解析を実行できる **Visit\** _ メソッドを記述できます。
+1. AST のプロパティに関して診断したい状況を定義します。 解析を実行できる **Visit\*** メソッドを記述できます。
 2. エラー状態が検出されたとき、診断メッセージを生成する必要があります。 この目的のために使用される API があります。基本的には、各診断メッセージの定型コードを書く必要があります。
 3. ユーザーが作業にルールを含めるかどうか、またそう指定された場合に実行するかどうかを決められるように、新しいベスト プラクティス ルールを残りのフレームワークにフックする必要があります。
 
@@ -250,7 +248,7 @@ public class AuthorListRule : BestPracticeAstChecker<BestPracticeCheckerPayload>
 
 ### <a name="add-a-class-for-the-diagnostic-message"></a>診断メッセージのクラスの追加
 
-プロジェクトにはすでにエラー メッセージの定型コードが含まれているため、ルールに違反した場合に返される診断メッセージを作成するための出発点として使用します。 各メッセージは、独自のクラスとして実装されます。 各エラー メッセージは、コード化された文脈情報を任意の量で有することができます。 この場合、コンテキスト情報は一覧にない作成者の名前です。 「プロジェクトでそのファイルを開き、文字列を追加します」というメッセージをメッセージ リソース ファイルに追加することから開始します。 AuthorNotCurrent という名前 (エラー モニカーとも呼ばれます) を使用します。 ‘{0}’ 文字列はコンテキスト情報のプレースホルダで、この場合、リストに含まれていない作成者の名前です。 エラー メッセージに表示される実際のテキストに加えて、ルールの説明を含む文字列もあります。 この情報は、Visual Studio 内でベスト プラクティス ダイアログに表示され、ユーザーがシステムで有効にできるルールを決定できるように設計されています。 診断メッセージのクラスを作成し、_*AuthorNotCurrentDiagnosticItem.cs** という名前を付けます。 Add the following code inspired from the **NotAllowedWordDiagnosticItem** クラスから基づいた次のコードを追加します。
+プロジェクトにはすでにエラー メッセージの定型コードが含まれているため、ルールに違反した場合に返される診断メッセージを作成するための出発点として使用します。 各メッセージは、独自のクラスとして実装されます。 各エラー メッセージは、コード化された文脈情報を任意の量で有することができます。 この場合、コンテキスト情報は一覧にない作成者の名前です。 「プロジェクトでそのファイルを開き、文字列を追加します」というメッセージをメッセージ リソース ファイルに追加することから開始します。 AuthorNotCurrent という名前 (エラー モニカーとも呼ばれます) を使用します。 ‘{0}’ 文字列はコンテキスト情報のプレースホルダで、この場合、リストに含まれていない作成者の名前です。 エラー メッセージに表示される実際のテキストに加えて、ルールの説明を含む文字列もあります。 この情報は、Visual Studio 内でベスト プラクティス ダイアログに表示され、ユーザーがシステムで有効にできるルールを決定できるように設計されています。 診断メッセージのクラスを作成し、**AuthorNotCurrentDiagnosticItem.cs** という名前を付けます。 Add the following code inspired from the **NotAllowedWordDiagnosticItem** クラスから基づいた次のコードを追加します。
 
 ```xpp
 namespace CompareAuthorsToList

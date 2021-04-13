@@ -2,11 +2,9 @@
 title: アプリケーション スタックおよびサーバーのアーキテクチャ
 description: アプリケーション スタックはいくつかのモデルに分けられます - アプリケーション プラットフォーム、アプリケーション基準、Test Essentials、そしてアプリケーション スイート。
 author: RobinARH
-manager: AnnBe
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bce5669a923833d28282684e49707969338f1941
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: ce210e4c36c4a2e4b0ee900a38b03c25252d46a4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644853"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743441"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 

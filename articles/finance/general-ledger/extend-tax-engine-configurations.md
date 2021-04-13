@@ -2,11 +2,9 @@
 title: 税エンジン コンフィギュレーションの拡張
 description: このトピックでは、税エンジンのコンフィギュレーションの拡張について説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22089dda3788a92fccd5d46213adc3ece9bdf616
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 38bae2d28756aaa41914426b15f80afa85117a09
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975803"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811375"
 ---
 # <a name="extend-tax-engine-configurations"></a>税エンジン コンフィギュレーションの拡張 
 

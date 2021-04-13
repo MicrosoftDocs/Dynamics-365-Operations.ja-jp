@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能または変更された機能について説明します。 このバージョンは 2017 年 12 月にリリースされました。
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 053b49baf451e2c538772883b2b92902d2785daf
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: aaab2335bb39c3c2f9b552e185123c23b0dd050d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797861"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754644"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
 

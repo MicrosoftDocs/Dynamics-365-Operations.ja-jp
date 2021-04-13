@@ -2,11 +2,9 @@
 title: ContainerControlMetadata タイプ
 description: コンテナー コントロール メタデータ タイプ。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 60c129e807c132e923d4ba5a1817cf305ec7e360
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 328d6aaa90ce3b4da4326ea1a8b8ef5b760cf663
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682573"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752694"
 ---
 # <a name="containercontrolmetadata-type"></a>ContainerControlMetadata タイプ
 

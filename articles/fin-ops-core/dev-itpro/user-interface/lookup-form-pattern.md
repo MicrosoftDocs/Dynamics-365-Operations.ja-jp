@@ -2,11 +2,9 @@
 title: ルックアップのフォーム パターン
 description: このトピックでは、ルックアップ フォームのパターンについて説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c617643a4219da7d8c57725d975e94a2abb6f86d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 91ae7a4878d5e1711998c7619ade909a85c5de1f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681580"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751334"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 

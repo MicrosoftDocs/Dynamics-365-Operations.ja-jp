@@ -2,11 +2,9 @@
 title: アプリケーション タイプ
 description: アプリケーションの実行時のインスタンスを表します。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1066ae3b0689169cfb2836cecfb145e99f83174a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fa355bf2d7aaef6a4f9e71f29c8fafd422ed7302
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685427"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744209"
 ---
 # <a name="application-type"></a>アプリケーション タイプ
 

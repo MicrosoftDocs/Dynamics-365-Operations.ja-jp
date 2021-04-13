@@ -2,11 +2,9 @@
 title: X++ 文字列ランタイム関数
 description: このトピックでは、文字列ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84429681d1d765f8aa6d7bc5f9711f0aaf295f8d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bf4b5e922d5f081f51df3b17fad3bf2345240295
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408978"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749916"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 
@@ -103,7 +101,7 @@ int match(str pattern, str text)
     + **照合 ("ab: cd","ab\tcd");** は、**1** を返します。 
     + **照合 ("ab: cd","ab&nbsp;&nbsp;cd");** は、**0** を返します。 最初のスペースのみ一致します。 
 
-+ **\***: アスタリスク ("\*") の後に続く式には、前の式に 0、1、またはそれ以上の一致が必要です。 例
++ **\** _: アスタリスク (「\_」) の後に続く式には、前の式に 0、1、またはそれ以上の一致が必要です。 例
 
     + **照合 ("abc\*d","abd");**  は、**1** を返します。 
     + **照合 ("abc\*d","abcd");** は、**1** を返します。 
@@ -124,7 +122,7 @@ int match(str pattern, str text)
 
 + **[]**: かっこで囲まれた任意の文字と 1 つの文字を照合します。 文字の範囲は、マイナス記号 (**-**) で区切られた 2 つの文字で指定することができます。 たとえば、**[a-z]** は a ～ z のすべての文字に一致し、**[0-9]** は数字と一致し、さらに **[0-9a-f]** は 16 進数に一致します。 例
 
-    + **照合 ("[abc]","apple");** は、"apple" の a が一致するので **1** を返します。 
+    + **照合 ("[abc]","apple");** は、"apple." の a が一致するので **1** を返します。 
     + **照合 ("[abc]","kiwi");** は、"kiwi" に a、b、または c が含まれていないため、**0** を返します。 
     + **照合 ("gr[ae]y","grey");** は、1 を返します。 この式は、”gray.” と一致します 
     + **照合 ("gr[ae]y","graey");** は、 "gr" and "y" の間で、1 つの文字だけが一致したため、**0** を返します。 
@@ -283,7 +281,7 @@ int strFind(str _text, str _characters, int _position, int _number)
 
 ### <a name="return-value"></a>戻り値
 
-指定された文字の 1 つが最初に現れる位置の値。
+指定された文字の 1 つが最初に現れる位置の値、また見つからない場合は 0。
 
 ### <a name="remarks"></a>備考
 
@@ -534,7 +532,7 @@ int strNFind(str _text, str _characters, int _position, int _number)
 
 ### <a name="return-value"></a>戻り値
 
-*\_characters* パラメーターによって指定されていない文字の 1 番目の位置。
+*\_characters* パラメーターによって指定されていない文字の 1 番目の位置、また見つからない場合は 0。
 
 ### <a name="remarks"></a>備考
 

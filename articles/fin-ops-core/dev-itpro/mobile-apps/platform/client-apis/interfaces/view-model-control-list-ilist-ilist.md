@@ -2,11 +2,9 @@
 title: リスト タイプ
 description: リスト コントロール タイプ。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3031fd7bf42c14315fcc69e1782524f122ad7f59
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: dd55cea676065165f55ea3cda24a42aee98896ee
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687299"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749253"
 ---
 # <a name="list-type"></a>リスト タイプ
 
@@ -340,7 +338,7 @@ getControlMetadataById(id: string): [Control](view-model-control-basecontrol-ico
 
 | 氏名 | 種類 | 説明 |
 | ---- | ---- | ----------- |
-| id|文字列||
+| id|string||
 
 #### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 

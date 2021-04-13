@@ -2,11 +2,9 @@
 title: ページ上またはグリッド内の画像
 description: このトピックでは、画像をページまたはグリッドに表示する手順について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8a37c960b1e126bcbb97c2bc388698374be372
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: af470497bc8d533d70f06e891c4518f1bede2a74
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093516"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750932"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページまたはグリッドの画像
 

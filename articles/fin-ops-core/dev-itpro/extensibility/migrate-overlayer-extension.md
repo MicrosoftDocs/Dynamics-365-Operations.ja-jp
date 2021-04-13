@@ -2,11 +2,9 @@
 title: オーバーレイから拡張機能への移行
 description: このトピックでは、拡張機能の基準となるカスタマイズoverlayeredコードに基づいていますカスタマイズからの移行について説明します。
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: cec2405121772b5698b13b54a1fdbbb1e8f0aa32
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 13dc016513edbb2e9135859bc6d86e050c6d1042
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409493"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748481"
 ---
 # <a name="migrate-from-overlayering-to-extensions"></a>オーバーレイから拡張機能への移行
 

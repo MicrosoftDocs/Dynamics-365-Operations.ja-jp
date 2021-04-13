@@ -2,11 +2,9 @@
 title: オブジェクトの削除とアーカイブを使用する
 description: このトピックでは、インテリジェント データ管理フレームワーク (IDMF) のパージ オブジェクトとアーカイブ オブジェクトについて説明します。
 author: kfend
-manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7dc28801774bcc7f8eedd94a972cf62c44b48e07
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6fcf9f5877f14f4c916fcc380f4f2fa664d49849
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685441"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752746"
 ---
 # <a name="work-with-purge-and-archive-objects"></a>オブジェクトの削除とアーカイブを使用する
 

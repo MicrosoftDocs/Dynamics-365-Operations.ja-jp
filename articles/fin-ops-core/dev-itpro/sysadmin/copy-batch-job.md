@@ -2,11 +2,9 @@
 title: バッチ ジョブのコピー
 description: このトピックでは、バッチ ジョブとバッチ タスクのコピーに関する情報を提供します。
 author: Peakerbl
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 9bbd8c6fc3c8870fa0a7677efb1bdee6de097c8d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fc952d18cea18119d64ac931ed7159834b04c6fb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687593"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746015"
 ---
 # <a name="copy-a-batch-job"></a>バッチ ジョブのコピー
 

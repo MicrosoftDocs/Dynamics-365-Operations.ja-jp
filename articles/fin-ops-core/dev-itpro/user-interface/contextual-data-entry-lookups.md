@@ -2,11 +2,9 @@
 title: ルックアップのコンテキスト データ入力
 description: このトピックでは、コンテキスト データ入力の仕組みについて説明し、ルックアップにこの動作が必要な開発者向けの実装の詳細とヒントを提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cabb492579fb0ea2e02eef4039644a8b314297ff
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 1a5b34c54f2d8a2eca571d9855a24a60831a022a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092346"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752666"
 ---
 # <a name="contextual-data-entry-for-lookups"></a>ルックアップのコンテキスト データ入力
 
@@ -64,7 +62,7 @@ NAME が入力された場合は、次のルックアップが表示されます
 機能の正確性と適切なパフォーマンスを管理するために、前のセクションで説明した動作の適用に以下の制約が追加されました。
 
 1. **タイトル フィールド 2** が名前フィールドです**。
-2. NAME フィールドは、インデックスがカバーするか、**_または_* _キャッシュ ルックアップ* プロパティが *EntireTable* に設定されているテーブルに属する必要があります。 すべてのコンテキスト ルックアップ動作がパフォーマンス上の理由でこの要件に満たされていない場合は無効になります。 **注: インデックスの保守コストのために、NON TRANSACTIONAL テーブルに対してのみインデックスを追加する必要があります。** また **このインデックスを一意ではないとマークする可能性が高い** (重複を許可 = はい) に注意してください。
+2. NAME フィールドは、インデックスでカバーされているか***または** Cache Lookup* プロパティが *EntireTable* に設定されているテーブルに属している必要があります。 すべてのコンテキスト ルックアップ動作がパフォーマンス上の理由でこの要件に満たされていない場合は無効になります。 **注: インデックスの保守コストのために、NON TRANSACTIONAL テーブルに対してのみインデックスを追加する必要があります。** また **このインデックスを一意ではないとマークする可能性が高い** (重複を許可 = はい) に注意してください。
 3. コントロールでカスタム検索フォーム (EDT 上の SysTableLookup; FormHelp など) が使用されている場合、前述の曖昧さ回避の動作は既定でオンになりません。 これは、これらのカスタム ルックアップ フォーム (および周囲の修正メソッドやルックアップ メソッドのオーバーライドさえも) は、コンテキストのルックアップのコンテキストでは望ましくないダイアログを提示するなどの高度な処理を行うことができるためです。
 
 カスタム ルックアップ フォームの処理には追加の情報が必要で、独自のセクションで対象となります。

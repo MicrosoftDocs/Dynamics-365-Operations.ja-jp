@@ -2,11 +2,9 @@
 title: 'AX 2012 からのアップグレード: 分析のためのデモ環境の展開'
 description: このトピックでは、Microsoft Dynamics AX 2012 から Finance and Operations にアップグレードする分析フェーズ中に、デモ環境を配置する方法について説明します。
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 80be7a09e312454b56093bb2c8aa3fe163a28a4b
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 2b150363b459254fe1d8a2bdf89fecb6d718f4ea
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129215"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749263"
 ---
 # <a name="upgrade-from-ax-2012---deploy-a-demo-environment-for-analysis"></a>AX 2012 からのアップグレード: 分析のためのデモ環境の展開
 

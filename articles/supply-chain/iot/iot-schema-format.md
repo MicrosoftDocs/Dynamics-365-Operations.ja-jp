@@ -2,11 +2,9 @@
 title: IoT ハブ メッセージのスキーマ形式
 description: このトピックでは、IoT インテリジェンスで使用できるメッセージ スキーマをデザインする方法について説明します。
 author: robinarh
-manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 898feb5aca81729328bdbd11f0c10960946a1451
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9ddd97b864e0bb361dc9ec26de4825f0de3352a1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983636"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841973"
 ---
 # <a name="schema-formats-for-iot-hub-messages"></a>IoT ハブ メッセージのスキーマ形式
 

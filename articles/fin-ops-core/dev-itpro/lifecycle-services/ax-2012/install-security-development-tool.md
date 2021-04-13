@@ -2,11 +2,9 @@
 title: セキュリティ開発ツールをインストールする
 description: このトピックでは、セキュリティ開発ツールのインストール方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 07/26/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3f1dd62244d7c360cb38c64e44c397f00a72ea37
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a1a43147030af2ff531219d588f64b793b106d17
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688209"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750252"
 ---
 # <a name="install-the-security-development-tool"></a>セキュリティ開発ツールをインストールする
 
@@ -47,8 +45,8 @@ ms.locfileid: "4688209"
 2.  **SecurityDevelopmentTool.msi** を実行して **インストール ウィザード** を開きます。
 3.  Microsoft ソフトウェア ライセンス条件に同意し、**インストール** をクリックします。
 4.  ツールが正常にインストールされたことを示すメッセージが表示されたら、**完了** をクリックします。 **インストール** **ウィザード** の実行が完了すると、ファイルは次の場所で使用できます。
-    -   64 ビット システム用: %ProgramFiles (x86)%Microsoft%Security 開発ツール
-    -   32 ビット システム用: %ProgramFiles%Microsoft%Security 開発ツール
+    -   64 ビット システム用: %ProgramFiles (x86)%Microsoft%Security Development Tool
+    -   32 ビット システム用: %ProgramFiles%Microsoft%Security Development Tool
 
 ### <a name="import-and-compile-the-tool"></a>ツールのインポートおよびコンパイル
 

@@ -1,26 +1,24 @@
 ---
 title: Regression Suite Automation Tool (RSAT) を使用したテスト ケースの実行
 description: このトピックでは、Azure DevOps からのテスト ケースの読み込み、テストの実行、および作業内容を Azure DevOps に保存する方法について説明します。
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37ad054e862a9a3cf22a4d636d38bbaba14d0d8e
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 6a1dcd380d73ba383348d204f9e533284050cef7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092361"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745181"
 ---
 # <a name="use-the-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) の使用
 

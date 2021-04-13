@@ -1,26 +1,24 @@
 ---
 title: オンプレミス配置でのドキュメントの生成、発行、および印刷
 description: このトピックでは、オンプレミス展開でのドキュメントの生成、公開、印刷の機能について説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7eb0f5b5fa95acb7843037abafff40aa563a4e35
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 52c40d511bc75f439cf341a252e7a1fc06629ac8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686700"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749357"
 ---
 # <a name="document-generation-publishing-and-printing-in-on-premises-deployments"></a>オンプレミス配置でのドキュメントの生成、発行、および印刷
 

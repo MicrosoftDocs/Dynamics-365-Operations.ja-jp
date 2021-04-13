@@ -2,11 +2,9 @@
 title: 使用可能な SQL Server Reporting Services (SSRS) レポート
 description: このトピックでは、使用できる SQL Server Reporting Services (SSRS) レポートを一覧表示するレポートを示します。
 author: sericks007
-manager: AnnBe
-ms.date: 01/25/2018
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e45a5ac8d31eb223187a1f4f2f481a2009c24e45
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 1c79fc8167d5227c261a5ae1ec23ccbc618e379a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154267"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754612"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 
@@ -38,7 +36,7 @@ ms.locfileid: "5154267"
 詳細については、[レポート ソリューションの作成](create-nextgen-reporting-solutions.md) を参照してください。
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
-[SQL Server Reporting Services レポート](https://docs.microsoft.com/dynamics/s-e/)には、利用可能な各レポートがリストされています。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
+[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61) により含められる **SQL Server Reporting Services レポート** は、使用可能な SSRS レポートを一覧表示します。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

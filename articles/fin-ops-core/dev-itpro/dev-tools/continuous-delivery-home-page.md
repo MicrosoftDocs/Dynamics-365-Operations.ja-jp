@@ -2,11 +2,9 @@
 title: 継続的な配信ホーム ページ
 description: 以下のトピックでは、ソリューションのアプリケーション ライフサイクル管理と継続的な配信に関連するツールとガイドラインについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 10/16/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7c23d5c9c5b0c4e2f1030a7b9e0b9e3f24427c8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 706a4c7730bfb68e5a76b407a62ee08c06ac37df
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409148"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750544"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 

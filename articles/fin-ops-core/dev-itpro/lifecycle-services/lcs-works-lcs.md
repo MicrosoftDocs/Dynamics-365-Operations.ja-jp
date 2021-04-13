@@ -2,11 +2,9 @@
 title: Finance and Operations アプリの顧客用 Lifecycle Services (LCS)
 description: このトピックでは、Finance and Operations アプリの顧客用 Lifecycle Services (LCS) について説明します。
 author: angelmarshall
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6998e14ae17ac85e0690f4877bd11ea38a472b52
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 8051213fbe0e7450c091479a9a7cbc5d9826241a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129359"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750248"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-customers"></a>Finance and Operations アプリの顧客用 Lifecycle Services (LCS)
 

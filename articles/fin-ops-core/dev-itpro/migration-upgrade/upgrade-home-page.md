@@ -2,11 +2,9 @@
 title: アップグレード、更新プログラム、および修正プログラムのリソース
 description: このトピックでは、Finance and Operations 環境およびデータに対する修正プログラムのアップグレード、更新、および適用に関する情報の参照先を示します。
 author: margoc
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0c312bfd854ca4c7e4c0d38f4d4799ee00836cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bc1276d35d60d0b5783cb6cf875ca7b2de4b34dc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681616"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743899"
 ---
 # <a name="upgrades-updates-and-hotfixes-resources"></a>アップグレード、更新プログラム、修正プログラム
 

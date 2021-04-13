@@ -2,11 +2,9 @@
 title: クレジット カード トランザクション データのアーカイブ
 description: このトピックでは、クレジット カード トランザクションをアーカイブに保存することでデータベースの領域を解放できる、Microsoft Dynamics 365 Commerce のアーカイブ ジョブについて説明します。
 author: rubendel
-manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: v-chgri
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a36a61ab0fce83b15f22cfec69dc7b93443b5047
-ms.sourcegitcommit: 245241ba80705a9c4738dba3ed812e844e81728c
+ms.openlocfilehash: 398dbb578fad1770260af6e4822bec974cb258f0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2021
-ms.locfileid: "5131503"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791229"
 ---
 # <a name="archive-credit-card-transaction-data"></a>クレジット カード トランザクション データのアーカイブ
 

@@ -2,11 +2,9 @@
 title: Commerce Scale Unit (自己ホスト)
 description: このトピックでは、Commerce Scale Unit (自己ホスト) と、どんなときにそれを使用するかについて説明します。
 author: athinesh99
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 483cbc106ecd0798a896a9677843a49509a93319
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 543fb13bf9f043d7ffbdf918507ea8552428e28d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687553"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792971"
 ---
 # <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 

@@ -2,11 +2,9 @@
 title: ワークフロー カテゴリの作成
 description: このトピックでは、ワークフロー カテゴリの作成方法を説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 6ed544a67d22c7eab674df60581eeec32ec22721
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 84d8780261e5dde83582f46c148365dd5ff19604
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798791"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747135"
 ---
 # <a name="create-a-workflow-category"></a>ワークフロー カテゴリの作成
 

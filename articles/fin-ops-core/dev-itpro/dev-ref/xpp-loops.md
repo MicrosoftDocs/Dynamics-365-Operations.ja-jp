@@ -2,11 +2,9 @@
 title: X++ ループ ステートメント
 description: このトピックでは、X++のループ ステートメントについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.devlang: xpp
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a1114b0eb47ea6dd8386372295f4f001ab42d54
-ms.sourcegitcommit: 71a19a55ae84df917c19a11c065d0d8a6140e669
+ms.openlocfilehash: 1802bb7099b61cc1f6adf49a5c5ccd273d38bcda
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "4409580"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749934"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 

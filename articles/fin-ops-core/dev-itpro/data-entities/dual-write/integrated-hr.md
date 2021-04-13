@@ -2,11 +2,9 @@
 title: 統合された作業者、職務、職位
 description: このトピックでは、Microsoft Dynamics 365 アプリの統合された作業者データに関する情報を提供します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,14 +14,14 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8192f6d0b40204ca09a937509006725b4b6c226f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0d15b15643b7c9dcedcc6d0bc93d346b8127283e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683515"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748579"
 ---
-# <a name="integrated-worker-job-and-position"></a>統合された作業者、職務、職位
+# <a name="integrated-worker-job-and-position"></a>作業者、職務、および職位の統合
 
 [!include [banner](../../includes/banner.md)]
 
@@ -31,9 +29,9 @@ ms.locfileid: "4683515"
 
 
 
-作業者データは、複数の Microsoft Dynamics 365 アプリでマスターできます。 たとえば、人事管理 (HR) データは、Dynamics 365 Human Resources、Dynamics 365 Commerce、Dynamics 365 Supply Chain Management で管理できます。 データの出所に関係なく、バックグラウンドで統合されます。 作業者に関するデータを統合する機能により、あらゆる Dynamics 365 アプリで作業者データを柔軟にマスターできます。 また、Dynamics 365 アプリの情報を包括的に把握することもできます。
+1 つのアプリでのみマスターされている間は、作業者データは複数の Dynamics 365 アプリ間で同期できます。 たとえば、人事管理 (HR) データは Dynamics 365 Human Resources でマスターし、Dynamics 365 Commerce、Dynamics 365 Finance、および Dynamics 365 Supply Chain Management と同期することができます。 データは、バックグラウンドでシームレスに統合されます。 作業者に関するデータを統合する機能により、すべての Dynamics 365 アプリで同じデータを操作して、情報を包括的に把握することができます。
 
-## <a name="human-resources"></a>人事管理
+## <a name="human-resources"></a>Human Resources
 
 HR データの統合には、Dynamics 365 の Finance and Operations アプリとモデル駆動型アプリ間での HR データのマッピングが含まれます。
 

@@ -2,11 +2,9 @@
 title: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 description: このトピックでは、Finance and Operations のデータベース エクスポート シナリオについて説明します。
 author: LaneSwenka
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 62e41ad32579ea295a9f40bfe339f4324d733bfb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 49a16c41726824572faa51899c9388406339c4c6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681088"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749319"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -143,6 +141,23 @@ END CATCH
 CLOSE retail_ftx; 
 DEALLOCATE retail_ftx; 
 -- End Refresh Retail FullText Catalogs
+
+--Begin create retail channel database record--
+declare @ExpectedDatabaseName nvarchar(64) = 'Default';
+declare @DefaultDataGroupRecId BIGINT;
+declare @ExpectedDatabaseRecId BIGINT; 
+IF NOT EXISTS (select 1 from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName)
+BEGIN 
+    select @DefaultDataGroupRecId = RECID from RETAILCDXDATAGROUP where NAME = 'Default'; 
+    insert into RETAILCONNDATABASEPROFILE (DATAGROUP, NAME, CONNECTIONSTRING, DATASTORETYPE)
+    values (@DefaultDataGroupRecId, @ExpectedDatabaseName, NULL, 0); 
+    select @ExpectedDatabaseRecId = RECID from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName; 
+    insert into RETAILCDXDATASTORECHANNEL (CHANNEL, DATABASEPROFILE)
+    select RCT.RECID, @ExpectedDatabaseRecId from RETAILCHANNELTABLE RCT
+    inner join RETAILCHANNELTABLEEXT RCTEX on RCTEX.CHANNEL = RCT.RECID
+        update RETAILCHANNELTABLEEXT set LIVECHANNELDATABASE = @ExpectedDatabaseRecId where LIVECHANNELDATABASE = 0
+END; 
+--End create retail channel database record
 ```
 
 ### <a name="turn-on-change-tracking"></a>変更追跡を有効にする

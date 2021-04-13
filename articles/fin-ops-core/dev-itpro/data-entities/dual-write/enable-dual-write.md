@@ -2,11 +2,9 @@
 title: 既存の Finance and Operations アプリの二重書き込みの有効化
 description: Finance and Operations アプリの既存インスタンスと、新規または既存の Dataverse 環境で二重書き込みを有効にする方法について説明します。
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 138c46e9ea17d874e5a6e93301be8f24a98c6e34
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f017e2b215e43149713eabeb05753775d8767aa6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688217"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748813"
 ---
 # <a name="enable-dual-write-for-existing-finance-and-operations-apps"></a>既存の Finance and Operations アプリの二重書き込みの有効化
 

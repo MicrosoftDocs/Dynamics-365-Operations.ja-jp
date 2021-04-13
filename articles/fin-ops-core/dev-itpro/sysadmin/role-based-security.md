@@ -2,11 +2,9 @@
 title: ロールベース セキュリティ
 description: このトピックでは、ロールベースのセキュリティの要素の概要を提供します。
 author: peakerbl
-manager: AnnBe
 ms.date: 01/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 207d52f42cb99ae69d2df74e35529a52e602a266
-ms.sourcegitcommit: 053f4cda6862fbcd9e3aa6e9cb009e7de833beac
+ms.openlocfilehash: c2fa57aff97e1938796fb52e8b94dac0eb81ff71
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5075753"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745913"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 

@@ -2,11 +2,9 @@
 title: クラウド環境へ更新プログラムを適用
 description: このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 11/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 1c35dea8a3740ec12d2bdc4dc95b218c014a37ad
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 63187c6daec191cc65a76b8d373f2c8de5dd0e3c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680548"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745335"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
@@ -39,7 +37,7 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 
 他の環境 (以下の一覧) については、リモート デスクトップ プロトコル (RDP) を使用して環境に接続し、コマンドラインからインストールする必要があります。 手動のパッケージ配置の詳細については、[コマンド ラインからの配置可能パッケージのインストール](install-deployable-package.md) を参照してください。
 
-- ローカルの開発環境 (バーチャル ハード ディスク [VHD] からダウンロード可能)
+- ローカルの開発環境 (仮想ハード ディスク [VHD] からダウンロード可能)
 - Microsoft Azure (パートナーおよび試用プロジェクト) でのマルチボックス開発/テスト環境
 
 ## <a name="key-concepts"></a>重要な概念

@@ -2,11 +2,9 @@
 title: AX 2009 の移行 － データ移行ツールのインストール
 description: このトピックでは、Microsoft Dynamics AX 2009 からデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: de3268cd32cf2a3b7539c7862e83f41dc2c6791f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e3786e87c21179306c8f94ecc96d94f2d1471f3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679934"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745637"
 ---
 # <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 
@@ -98,7 +96,7 @@ ZIP ファイルを展開した場所に移動し、**defaultvalue.xlsx** を検
     - **DIXF サービス ホスト**: DIXF サービスのインストールのホスト名を入力します。
     - **テナント URL** – アプリケーション テナントの URL を入力します。 テナントが不明な場合は、Finance and Operations アプリケーションの web.config ファイルを参照してください。
 
-    > [!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成する際に、2 つのオプションから選択できます。 **Web API** と **ネイティブ**。 このインスタンスでは、**ネイティブ** を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。
+    > [!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成するときは、2 つのオプションから選択できます。 **Web API** と **ネイティブ**。 このインスタンスでは、**ネイティブ** を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。
 
 ## <a name="multi-box-setup"></a>マルチボックスの設定
 マルチボックスの設定の場合、次のコンピューターが必要です。

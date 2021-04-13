@@ -2,11 +2,9 @@
 title: POS ビューへのカスタム コントロールの追加
 description: このトピックでは、カスタム コントロールを追加することで、Dynamics 365 Commerce の POS ビューに表示される情報を改善する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 8922a256989151623e77a38b86dfdaf448a130d0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e25e4fa4c5c187081e1eda1bcfc1cb88b07f2395
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681530"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791147"
 ---
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 

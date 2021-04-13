@@ -2,11 +2,9 @@
 title: エントリ ポイントのアクセス許可の定義または編集
 description: このトピックでは、Dynamics AX でエントリ ポイントのアクセス許可を作成または変更する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d9c1c3b0c496c42bc2d837d84e36d6ade0d5b8f8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 65f4cc9c1301e908b3e934bb0fde3fefa2b19ac0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679266"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744805"
 ---
 # <a name="define-or-edit-entry-point-permissions"></a>エントリ ポイントのアクセス許可の定義または編集
 

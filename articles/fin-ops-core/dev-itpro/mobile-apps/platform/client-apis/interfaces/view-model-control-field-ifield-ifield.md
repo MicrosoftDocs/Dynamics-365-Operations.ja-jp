@@ -2,11 +2,9 @@
 title: フィールド タイプ
 description: フィールド コントロール タイプ。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c26d1a79e1219cf57aa27e65cc2f7249c8553cd6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 49498735f650fcac52bcb9a52d7db79cd8c6eead
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682574"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749255"
 ---
 # <a name="field-type"></a>フィールド タイプ
 

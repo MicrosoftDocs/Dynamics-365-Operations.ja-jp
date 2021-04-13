@@ -2,11 +2,9 @@
 title: Analysis Services キューブから集計モデルへの移行
 description: ことトピックでは、どのように、メモリ内、リアルタイム集計モデルが解析に使われ、なぜ Server Analysis Services (SSAS) キューブの使用から移行したのかを説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 230dec1d010806a534b82f9af1640a79079e6dfc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9a4108d3e2eee4b2c7035bbbe8082b96176ceccc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679936"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750532"
 ---
 # <a name="transition-from-analysis-services-cubes-to-aggregate-models"></a>Analysis Services キューブから集計モデルへの移行
 

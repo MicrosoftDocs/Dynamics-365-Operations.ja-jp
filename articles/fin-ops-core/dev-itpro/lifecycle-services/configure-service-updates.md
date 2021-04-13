@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) によるサービスの更新の構成
 description: このトピックでは、環境の最新のサービスを受け取る方法とタイミングを指定する方法について説明します。
 author: angelmarshall
-manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 51e44f62658f27740e44fe2c3a93f261f3518e76
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6f4655a1219fed878e7303a817e1def221ce4b4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679252"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752734"
 ---
 # <a name="configure-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の構成
 

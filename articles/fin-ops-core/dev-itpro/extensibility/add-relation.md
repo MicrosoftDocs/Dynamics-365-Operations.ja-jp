@@ -2,11 +2,9 @@
 title: 拡張機能を使用してテーブルに関係を追加
 description: このトピックでは、テーブルにリレーションを追加する方法について説明します。
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 3a5e3bb1b8af306b1aa852c07873d1675dcc3a8c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 492ccd1aaf51b7c2c9b5e0bb92c6c1606b04c1f3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409270"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748491"
 ---
 # <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 

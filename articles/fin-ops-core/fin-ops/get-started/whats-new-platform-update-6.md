@@ -2,11 +2,9 @@
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 6 の新機能または変更された機能について説明します。 このバージョンは 2017 年 4 月にリリースされ、ビルド番号は 7.0.4509.16180 です。
 author: tonyafehr
-manager: AnnBe
 ms.date: 04/21/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: 06baf4e0ec296d98c65e9bd2599973c3c31e028c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 76a5ed872d9e4efd98ce002c8dd0f7c2552e215e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797833"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752200"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-6-april-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 

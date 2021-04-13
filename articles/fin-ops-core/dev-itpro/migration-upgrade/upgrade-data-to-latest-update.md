@@ -2,11 +2,9 @@
 title: 開発環境またはデモ環境でデータをアップグレードする
 description: このトピックでは、Finance and Operations アプリケーション リリースのアップグレードについて説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: c2212bd6bc78e44fa44f7eaf947525309c58e8e7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c80b88b82888f559a6aa8c12653c716afe932ac3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681622"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752722"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 

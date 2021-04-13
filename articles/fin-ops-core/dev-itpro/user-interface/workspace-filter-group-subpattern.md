@@ -2,11 +2,9 @@
 title: ワークスペース ページ フィルター グループのサブパターン
 description: この記事では、ワークスペース ページ フィルター グループのサブパターンについて説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de0acc19f2b50cce826a49375f111dacebfe45bb
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 1631584fd1be4f95f2b8e72feb17c6882ed80c89
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094178"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744143"
 ---
 # <a name="workspace-page-filter-group-subpattern"></a>ワークスペース ページ フィルター グループのサブパターン
 

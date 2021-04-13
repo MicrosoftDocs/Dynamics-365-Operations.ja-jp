@@ -2,11 +2,9 @@
 title: X++ でのマクロ
 description: このトピックでは、X++ でマクロを作成および使用する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8047a9e994d8774fa9cd9df13875e1d82a2256
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 951842f749bd4a21e5edca1634fc7eac8bf33826
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408660"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749932"
 ---
 # <a name="macros-in-x"></a>X++ でのマクロ
 

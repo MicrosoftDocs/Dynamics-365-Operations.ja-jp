@@ -2,11 +2,9 @@
 title: Intelligent Data Management Framework のアーカイブ オブジェクトの作成
 description: このトピックでは、アーカイブ オブジェクトの使用方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 5ebf7c04d0fe9d670f96686651367c811fd19a27
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a4ee4fca91ed850641864ab09245f7d1f4ccd5ab
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681628"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743957"
 ---
 # <a name="create-archive-objects-for-the-intelligent-data-management-framework"></a>Intelligent Data Management Framework のアーカイブ オブジェクトの作成
 

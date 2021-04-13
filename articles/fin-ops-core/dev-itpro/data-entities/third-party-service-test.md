@@ -2,11 +2,9 @@
 title: サード パーティ ユーティリティを使用したテスト サービス
 description: このトピックでは、サービスをテストするサード パーティのユーティリティを設定する方法について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6b7448471bf8f4b0be546f1def6ecb584bba5ef
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eae673ad67dd9df42be637d3b52aab43d36dfb4a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687684"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749684"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 

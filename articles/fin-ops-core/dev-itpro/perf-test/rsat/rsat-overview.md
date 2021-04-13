@@ -1,26 +1,24 @@
 ---
 title: Regression Suite Automation Tool
 description: Regression Suite Automation Tool により、タスク レコーダーを使用して業務タスクを記録し、コードを記述することなく自動テストに変換することができます。
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a74807f1c813982482fc0752dba96ab0f2259537
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: c3d0210aa563a04d56849d257aad9fef41c80a85
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092364"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745183"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -35,9 +33,10 @@ RSAT の使用についての定義。
 + [Regression Suite Automation Tool (このトピック)](rsat-overview.md)
 + [Regression Suite Automation Tool インストールおよび構成](rsat-install-configure.md)
 + [Regression Suite Automation Tool テスト ケースの実行](rsat-run.md)
-+ [予測値を検証する](rsat-validate-expected.md)
-+ [テスト ケースのチェーン](rsat-chain-test-cases.md)
++ [予測値の検証](rsat-validate-expected.md)
++ [チェーン テスト ケース](rsat-chain-test-cases.md)
 + [派生テスト ケース](rsat-derived-test-cases.md)
++ [管理者以外のユーザーが RSAT を使用するように構成する](rsat-configure-nonadmin.md)
 + [Regression Suite Automation Tool ベスト プラクティス](rsat-best-practices.md)
 + [Regression Suite Automation Tool のトラブルシューティング](rsat-troubleshooting.md)
 

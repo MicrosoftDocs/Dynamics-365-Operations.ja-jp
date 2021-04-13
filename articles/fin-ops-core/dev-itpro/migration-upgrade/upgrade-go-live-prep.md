@@ -2,11 +2,9 @@
 title: AX 2012 からのアップグレード - 稼働の準備
 description: このトピックでは、ソース Dynamics AX 2012 システムとアップグレード プロセスが安定した状態を保ち、運用の一貫性があることを保証する方法について説明します。
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d7cc03c878414b9fc0a1440bbbb48535ea39555b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3fb892bbfb0b349af5c9c947e8afea444593bccd
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681618"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743901"
 ---
 # <a name="upgrade-from-ax-2012---prepare-for-go-live"></a>AX 2012 からのアップグレード - 稼働の準備
 

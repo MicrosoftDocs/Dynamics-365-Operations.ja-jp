@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのデータベースのバックアップ
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケージに必要なデータベースのバックアップに関する情報を提供します。
 author: kfend
-manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 196833
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 4fb896630ef84fdc99d03e10bc72bf5e3339649d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b7edc94ea71c2a72a064c100db2590b23df20f8e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685041"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750354"
 ---
 # <a name="back-up-the-databases-for-finance-and-operations-apps"></a>Finance and Operations アプリのデータベースのバックアップ
 

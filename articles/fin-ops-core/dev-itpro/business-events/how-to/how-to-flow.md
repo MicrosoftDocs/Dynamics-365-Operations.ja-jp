@@ -1,12 +1,10 @@
 ---
-title: ビジネス イベントと Microsoft Power Automate
+title: ビジネス イベントおよび Microsoft Power Automate
 description: このトピックでは、コネクタを使い Microsoft Power Automate で使用可能なビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,14 +12,14 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 27d935ecd9e676a19a3bce2470878ad2b435b8ee
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9c1ad1c738e60592f7ab40316d0ed830710b3b11
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688107"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745359"
 ---
-# <a name="business-events-and-microsoft-power-automate"></a>ビジネス イベントと Microsoft Power Automate
+# <a name="business-events-and-microsoft-power-automate"></a>ビジネス イベントおよび Microsoft Power Automate
 
 [!include[banner](../../includes/banner.md)]
 

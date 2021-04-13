@@ -2,11 +2,9 @@
 title: 国または地域固有の規制機能に関わる通知を送信
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Localization および Translation service を通じて警告を送信する方法について説明します。
 author: ShylaThompson
-manager: AnnBe
-ms.date: 12/07/2017
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7fe65ba6120213d3b1fd0f3c9b579158c0aee7e
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: e17684a686b99187c32aeb9ec7b4beb855b1a528
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154317"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745293"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 
@@ -107,7 +105,7 @@ Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側�
                 <p>機能リファレンス</p>
                 </td>
                 <td>
-                <p>分かっている場合は、機能リファレンスを入力します。 特定の国の機能一覧は、ローカライズ ポータルで確認できます: <a href="https://docs.microsoft.com/dynamics/s-e/" data-raw-source="https://docs.microsoft.com/dynamics/s-e/">https://docs.microsoft.com/dynamics/s-e/</a>。 </p>
+                <p>分かっている場合は、機能リファレンスを入力します。</p>
                 </td>
             </tr>
             <tr>

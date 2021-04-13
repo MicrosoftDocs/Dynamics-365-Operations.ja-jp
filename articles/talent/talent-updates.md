@@ -2,11 +2,9 @@
 title: 人材の更新
 description: この記事は、Microsoft Dynamics 365 Talent に関するプロセスと頻度についての情報を提供します。
 author: andreabichsel
-manager: tfehr
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: a94899a5c209f3051b6ae3bd97ce26cdd5c98f70
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: d29d7721f212aa311e78a9d9f3766b897795abbe
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130569"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802155"
 ---
 # <a name="talent-updates"></a>人材の更新
 

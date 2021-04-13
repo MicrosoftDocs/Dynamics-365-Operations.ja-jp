@@ -2,22 +2,20 @@
 title: カスタム ヘルプ ツールキット
 description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットのコンポーネントについて説明します。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 4216965e4f5dce36f6250b5cffc3982b8207cf48
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c90ff1b9ac58573588d309a472e9ed5e2c0411ec
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685092"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743959"
 ---
 # <a name="custom-help-toolkit"></a>カスタム ヘルプ ツールキット
 

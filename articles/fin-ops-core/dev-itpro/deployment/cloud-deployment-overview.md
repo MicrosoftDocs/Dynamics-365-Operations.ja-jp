@@ -2,11 +2,9 @@
 title: クラウド展開の概要
 description: このトピックでは、クラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および管理する必要があるデータとカスタマイズについて説明します。
 author: LaneSwenka
-manager: AnnBe
-ms.date: 01/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 030020d0ed2127c3bbc24a78cf26ebd48214d7fe
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: ab923196d8129392b9616b322e6021534ba34c37
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130773"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748797"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -203,10 +201,8 @@ Microsoft が管理するレベル 1 から レベル 5 のサンドボックス
 - 米国東部
 - 米国西部
 - 米国中部
-
-### <a name="my-environments-are-currently-in-the-regions-that-will-be-deprecated-how-will-this-change-affect-me"></a>使用している環境は、現在の地域では非推奨です。 この変更にどのような影響がありますか?
-2020 年 8 月 1 日以降に、オンボードされる新しいプロジェクトに対してのみ、次の地域のサポートを廃止します。
-
+ > [!IMPORTANT]
+ > 米国中部は、2021 年 4 月 1 日から始まるセルフサービス移行のオプションではなくなりました。
 -   米国東部 2
 -   米国西部 2
 -   西中央アメリカ

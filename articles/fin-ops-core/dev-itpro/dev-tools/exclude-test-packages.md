@@ -2,11 +2,9 @@
 title: ビルド出力からのテスト パッケージの除外
 description: このトピックでは、自動ビルド プロセスが生成するビルド出力で、特定のパッケージがパッケージに含まれないようにする方法について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 05/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a144261100c3dcf34c2eb6402e7ed3c578b596e
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: b35c414b8b0c2b351742e4332338ed9dfecae474
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092137"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750356"
 ---
 # <a name="exclude-test-packages-from-build-output"></a>ビルド出力からテスト パッケージを除外
 

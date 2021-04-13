@@ -2,11 +2,9 @@
 title: MICROSOFT プレビュー ソフトウェア ライセンス条件
 description: 検索結果に表示される完全な説明です。 多くの場合、トピックの最初の段落になります。
 author: ShellyBakke
-manager: AnnBe
 ms.date: 04/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ROBOTS: NOINDEX, NOFOLLOW
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f9fc0f8e73bc3e6ee4be994923a602c960b8a750
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0dfd6ade87ce523da414afaf83439ee67625587d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409252"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744139"
 ---
 # <a name="microsoft-preview-software-license-terms"></a>MICROSOFT プレビュー ソフトウェア ライセンス条件
 [!include [banner](../includes/banner.md)] 

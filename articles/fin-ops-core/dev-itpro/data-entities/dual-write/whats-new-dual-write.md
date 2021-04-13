@@ -2,7 +2,6 @@
 title: 二重書き込みの新機能および変更された機能
 description: このトピックでは、リリース計画、主要な発表、二重書き込みのドキュメントなどへのリンクを提供します。
 author: robinarh
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a3d2a88ba521fb1b78919db9f2acb1609289506d
-ms.sourcegitcommit: 48cbc5b0dbbc8aaddd19ee36fb04834540c4781a
+ms.openlocfilehash: a04f6076ad3a7375910744033af48d31e57c62a9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5107819"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750582"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -35,9 +34,20 @@ ms.locfileid: "5107819"
 + [Dataverse のデータ - フェーズ 1 と 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Dataverse の Finance and Operations データ – フェーズ 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
+## <a name="february-2021-release"></a>2021 年 2 月リリース
+
+2021 年 2 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション 2.2.2.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) およびバージョン 10.0.16 (10.0.689.10004) または新しいバージョンの Finance and Operations アプリおよびバージョン 9.1.0000.11732 または新しいバージョンの Dataverse に基づいています。
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| [販売見積のコマース価格エンジン](commerce-pricing.md) | コマース価格エンジンを使用した販売見積の価格を取得します。 | 一般提供 |
+| [メモの統合](notes-integration.md) | メモは、Customer Engagement アプリと、顧客、仕入先、販売注文、および発注書用の Finance and Operations アプリケーション間で統合されます。  | 一般提供 |
+
 ## <a name="january-2021-release"></a>2021 年 1 月リリース
 
-2021 年 1 月リリースの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.1.30](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service)は、[二重書き込みコア ソリューション バージョン 10.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) および Finance and Operations アプリのバージョン 10.0.14 に基づいています。  
+2021 年 1 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.1.30](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) および Finance and Operations アプリのバージョン 10.0.14 に基づいています。  
 
 このリリースには、次の表に記載されている機能とバグ修正が含まれています。
 
@@ -46,7 +56,7 @@ ms.locfileid: "5107819"
 | バグ修正 | ユーザー インターフェイスのフランス語にローカライズされた文字列が、上限の 100 文字を超えました。 | 一般提供 |
 | バグ修正 | Dataverse リリース済の特徴的製品のマップ起動中にエラーが発生しました。 | 一般提供 |
 
-2021 年 1 月リリースの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.1.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service)は、[二重書き込みコア ソリューション バージョン 10.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) および Finance and Operations アプリのバージョン 10.0.14 に基づいています。  
+2021 年 1 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.1.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) および Finance and Operations アプリのバージョン 10.0.14 に基づいています。  
 
 このリリースには、次の表に記載されている機能とバグ修正が含まれています。
 
@@ -58,7 +68,7 @@ ms.locfileid: "5107819"
 
 ## <a name="december-2020-release"></a>2020 年 12 月リリース
 
-2020 年 12 月リリースの二重書き込みコア ソリューション (10.0.24) には、次のテーブルに示す機能とバグ修正が含まれています。
+2020 年 12 月リリースの二重書き込みコア ソリューション (1.0.24) には、次のテーブルに示す機能とバグ修正が含まれています。
 
 | 機能 | 説明 |状態 |
 |------|---------|-------|
@@ -66,7 +76,7 @@ ms.locfileid: "5107819"
 
 ## <a name="november-2020-release"></a>2020 年 11 月リリース
 
-2020 年 11 月リリースの二重書き込みコア ソリューション (10.0.23) には、次のテーブルに示す機能とバグ修正が含まれています。
+2020 年 11 月リリースの二重書き込みコア ソリューション (1.0.23) には、次のテーブルに示す機能とバグ修正が含まれています。
 
 | 機能 | 説明 |状態 |
 |------|---------|-------|
@@ -84,7 +94,7 @@ ms.locfileid: "5107819"
 
 ## <a name="september-2020-release"></a>2020 年 9 月リリース
 
-2020 年 9 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 10.0.21 ](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+2020 年 9 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.21](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
 
 2020 年 9 月のリリースには、次の表に記載されている機能とバグ修正が含まれています。
 

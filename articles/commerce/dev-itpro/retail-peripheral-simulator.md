@@ -2,11 +2,9 @@
 title: コマースの周辺機器シミュレーター
 description: このトピックでは、Dynamics 365 Commerce で提供される周辺機器シミュレーター ツールについて説明します。
 author: rubencdelgado
-manager: AnnBe
 ms.date: 03/22/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
 audience: IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: dbde30231ff06154f081e2955ed75c2637bc20fc
-ms.sourcegitcommit: 3d37d4f509a185f941ee77dc156728378c8a341b
+ms.openlocfilehash: 28c320ef1a46a81f7f64fe037176975b0cd930ec
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "4801437"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794325"
 ---
 # <a name="peripheral-simulator-for-commerce"></a>コマースの周辺機器シミュレーター
 

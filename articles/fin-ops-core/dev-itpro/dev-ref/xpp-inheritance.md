@@ -2,11 +2,9 @@
 title: X++ 継承
 description: このトピックでは、X++ の継承について説明します。
 author: robinarh
-manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba6fe9e7547c3f80041d97ad39f1adf005b3c15e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ea6872e3ace4f576c4a30fd2c49e30bf346646a7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408690"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749942"
 ---
 # <a name="x-inheritance"></a>X++ 継承
 

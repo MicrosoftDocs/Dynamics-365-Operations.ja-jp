@@ -2,11 +2,9 @@
 title: 支払コネクタの重複支払保護の有効化
 description: このトピックでは、指定された支払コネクタで重複支払保護を有効にする方法について説明します。
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c6e47a6ef0d1c8af20df3f3715ae668f3a399d8b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0fa3aad5e89cd4bf67b079262b22473b4d48b216
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684973"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793013"
 ---
 # <a name="enable-duplicate-payment-protection-for-payment-connector"></a>支払コネクタの重複支払保護の有効化
 

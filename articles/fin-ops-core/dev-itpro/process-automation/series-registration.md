@@ -2,11 +2,9 @@
 title: シリーズ登録
 description: このトピックでは、プロセス自動化フレームワークでシリーズを作成する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34c5b90c97959d090f30d757ffa98a033be3b305
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 15aab9e43ad74883ad9b4539fceef77f8b0b3dfb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679226"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751349"
 ---
 # <a name="series-registration"></a>シリーズ登録
 

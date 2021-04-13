@@ -2,11 +2,9 @@
 title: AX 2009 の移行 － パッケージのエクスポート
 description: このトピックは、Microsoft Dynamics AX 2009 から Finance and Operations に移行するためにデータ パッケージをエクスポートする方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: a98dd79aa69a64b628ab127eacd78de0b1b7b65c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3556224ca854f4593e204af3d63c2fd694bfb7d4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682571"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743943"
 ---
 # <a name="ax-2009-migration--export-packages"></a>AX 2009 の移行 - パッケージのエクスポート
 

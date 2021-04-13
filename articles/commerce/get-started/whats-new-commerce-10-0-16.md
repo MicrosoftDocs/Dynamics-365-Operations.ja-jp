@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 description: このトピックでは、Dynamics 365 Commerce 10.0.16 の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 731b69dcd0753cbaedf6e01ff5c2224e7b72b426
-ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
+ms.openlocfilehash: bd5a908f4450ca8a2cea8933841e0f3ca6544889
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "5053453"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797138"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10016-february-2021"></a>Dynamics 365 Commerce 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 

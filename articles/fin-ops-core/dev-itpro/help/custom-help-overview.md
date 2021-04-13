@@ -2,11 +2,9 @@
 title: カスタム ヘルプの概要
 description: このトピックでは、ソリューションを反映するために Microsoft ヘルプ システムを拡張し、コンテンツを [ヘルプ] ウィンドウに接続する方法について説明します。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: dfd5025d6af0657c752d8ad03ad6dcfff0bc74f5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a681307c00cf027e7633e16b12334688e15f3a8d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685095"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752758"
 ---
 # <a name="custom-help-overview"></a>カスタム ヘルプの概要
 

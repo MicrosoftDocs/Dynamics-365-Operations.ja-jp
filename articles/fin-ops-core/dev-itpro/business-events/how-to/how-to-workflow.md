@@ -1,12 +1,10 @@
 ---
 title: ビジネス イベントおよびワークフローの承認
-description: このトピックでは Microsoft Power Automate を使用して購買要求の承認のワークフロー ビジネス イベントを構成して使用する方法を説明します。
+description: このトピックでは Microsoft Power Automate を使用して購買申請を承認するワークフロー ビジネス イベントを構成して使用する方法を説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,17 +12,17 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 3e275bec932d726b22f55c3614a2cee2f0c87954
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 23f27def8a59a6aaaa6fb46eebb867235a656126
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688101"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745355"
 ---
 # <a name="business-events-and-workflow-approvals"></a>ビジネス イベントおよびワークフローの承認
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは Microsoft Power Automate を使用して購買要求の承認のワークフロー ビジネス イベントを構成して使用する方法を説明します。
+このトピックでは Microsoft Power Automate を使用して購買申請を承認するワークフロー ビジネス イベントを構成して使用する方法を説明します。
 
 このトピックを完了するには、プラットフォーム アップデート 26 以降で Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 (2019 年 5 月) を実行する必要があります。
 

@@ -2,11 +2,9 @@
 title: コンフィギュレーション済みのシステム アカウント
 description: このトピックでは、Finance and Operations 環境で事前設定されているシステム アカウントについて説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 55c6bc75d0f6f7c077cbff1d45ffbe2c629e54bc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c02a5b8e56c6afd1cca10a5d5aa2370bd5fdd48
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682525"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745941"
 ---
 # <a name="preconfigured-system-accounts"></a>コンフィギュレーション済みのシステム アカウント
 

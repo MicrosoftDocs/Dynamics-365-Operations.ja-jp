@@ -2,11 +2,9 @@
 title: Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加
 description: このトピックでは、画面レイアウト デザイナーを使用して トランザクション ページに新しいカスタム コントロールを追加する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 11/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 16074e5937294f948a4543c5a1c60d1baebc0b8a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d2ff1937101eaeb585b3e2606b847724ffed7a78
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681518"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795663"
 ---
 # <a name="add-custom-controls-to-modern-pos-mpos-transaction-pages"></a>Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加
 

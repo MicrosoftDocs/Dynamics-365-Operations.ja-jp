@@ -2,11 +2,9 @@
 title: 受信したドキュメントを解析する
 description: このトピックでは、受信したドキュメントを解析できる電子申告の形式を設定する方法について説明します。
 author: nickselin
-manager: AnnBe
-ms.date: 02/20/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1d3143df46e8de157c364ae3276dc0b9f458ec7d
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 72daa0182505cee2d707581ae41065730fcea8c4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093599"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743667"
 ---
 # <a name="parse-incoming-documents"></a>受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
@@ -48,12 +46,12 @@ ms.locfileid: "5093599"
 
 | コンテンツの説明           | ファイル                                                              |
 |-------------------------------|-------------------------------------------------------------------|
-| ER データ モデル構成   | [EFSTAmodel.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
-| ER フォーマット構成       | [EFSTAformat.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
-| Web サービス応答サンプル 1 | [Response1.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web サービス応答サンプル 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web サービス応答サンプル 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web サービス応答サンプル 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+| ER データ モデル構成   | [EFSTAmodel.xml](https://download.microsoft.com/download/9/d/9/9d9c8562-7281-4db9-8bb3-b9083c6e2b5d/EFSTAmodel.xml)  |
+| ER フォーマット構成       | [EFSTAformat.xml](https://download.microsoft.com/download/8/8/e/88e230cf-120f-4d58-93eb-779f2db1190f/EFSTAformat.xml) |
+| Web サービス応答サンプル 1 | [Response1.xml](https://download.microsoft.com/download/8/0/5/805cc4fc-c6d2-447f-90e8-67ca6e970f2d/Response1.xml)   |
+| Web サービス応答サンプル 2 | [Response2.xml](https://download.microsoft.com/download/e/0/a/e0a53eca-0d75-4958-8e3d-f9b1d91f1421/Response2.xml)   |
+| Web サービス応答サンプル 3 | [Response3.xml](https://download.microsoft.com/download/e/c/2/ec24dcfa-84cd-44b9-9398-ff90f9627986/Response3.xml)   |
+| Web サービス応答サンプル 4 | [Response4.xml](https://download.microsoft.com/download/6/6/b/66ba9a89-989a-454a-96c2-5e50b7e53fd7/Response4.xml)   |
 
 ## <a name="parse-incoming-documents-in-excel-format"></a>受信ドキュメントを Excel 形式で解析する
 
@@ -68,14 +66,14 @@ Microsoft Excel のブック (XLSX 形式のファイル) でデータを表す�
 
 | コンテンツの説明                         | ファイル                                                                       |
 |---------------------------------------------|----------------------------------------------------------------------------|
-| .XLSX 形式の受信ファイル - テンプレート    | [1099import template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
-| .XLSX 形式の受信ファイル - サンプル データ | [1099import data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
+| .XLSX 形式の受信ファイル - テンプレート    | [1099import template.xlsx](https://download.microsoft.com/download/b/8/b/b8ba3c9c-97c6-4fc2-898f-7701aac6035c/1099import-template.xlsx) |
+| .XLSX 形式の受信ファイル - サンプル データ | [1099import data.xlsx](https://download.microsoft.com/download/f/f/4/ff4dbce9-8364-4391-adee-877945ff01f7/1099import-data.xlsx)     |
 
 次のタスク ガイド [外部ファイルから電子申告にデータをインポートするのに必要なコンフィギュレーションの ER 作成](./tasks/er-required-configurations-import-data.md)を、現在の Finance and Operations アプリケーションで実行していない場合、次のファイルをダウンロードしてください。
 
 | コンテンツの説明    | ファイル                                                            |
 |------------------------|-----------------------------------------------------------------|
-| ER モデル構成 | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER モデル構成 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
 
 ##  <a name="parse-incoming-documents-in-csv-format"></a>CSV 形式で受信したドキュメントを解析する
 
@@ -113,14 +111,14 @@ Microsoft Excel のブック (XLSX 形式のファイル) でデータを表す�
 
 | 肩書き                                  | ファイル名                                                            |
 |----------------------------------------|----------------------------------------------------------------------|
-| ER フォーマット構成                | [1099formatcsv.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
-| .csv 形式の受信ファイルのサンプル | [1099entriescsv.csv](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER フォーマット構成                | [1099formatcsv.xml](https://download.microsoft.com/download/c/0/1/c014b0fa-d4ee-4de6-8f55-fa539df9ce83/1099formatcsv.xml)  |
+| .csv 形式の受信ファイルのサンプル | [1099entriescsv.csv](https://download.microsoft.com/download/0/0/c/00c7c78c-55d5-46ba-b6ac-971fb9646502/1099entriescsv.csv) |
 
 タスク ガイドを再生していない場合は、上記のタスク ガイドを完了するために必要な次のファイルをダウンロードしてください: 現在の Finance and Operations アプリケーションの **外部ファイルから電子申告にデータをインポートするのに必要なコンフィギュレーションの ER 作成**。
 
 | 肩書き                  | ファイル名                                                       |
 |------------------------|-----------------------------------------------------------------|
-| ER モデル構成 | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER モデル構成 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

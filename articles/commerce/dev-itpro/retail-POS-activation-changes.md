@@ -1,12 +1,10 @@
 ---
 title: カスタマイズされた Modern POS のデバイスの有効化
-description: このトピックでは、カスタマイズした Modern POS アプリケーションを使用する場合に、デバイスの有効化が正常に動作するように、Microsoft Dynamics 365 Commerce Headquarters を構成する方法について説明します。
+description: このトピックでは、カスタマイズされたアプリケーションを使用しているとき、Microsoft Dynamics 365 Commerce Headquarters を構成する方法について説明します。
 author: jashanno
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
@@ -14,20 +12,20 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: bbb3cf24211f8bdd70eaf1a246782947ce3f8316
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 2c7583d37c927ab05edf2db17d1545f318be752a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141864"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797213"
 ---
 # <a name="device-activation-of-a-customized-modern-pos"></a>カスタマイズされた Modern POS のデバイスの有効化
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-このトピックでは、カスタマイズした Modern POS アプリケーションを使用する場合に、デバイスの有効化が正常に動作するように、Microsoft Dynamics 365 Commerce Headquarters を構成する方法について説明します。 カスタマイズされた返信アドレスを取得し、Headquarters でその値を入力するために必要な手順を説明します。
+このトピックでは、カスタマイズした Modern POS アプリケーションを使用している場合に、デバイスの有効化が正常に動作するように、Microsoft Dynamics 365 Commerce Headquarters を構成する方法について説明します。 カスタマイズされた返信アドレスを取得し、Headquarters でその値を入力するために必要な手順を説明します。
 
-Modern POS は、Microsoft Dynamics 365 Commerce のクライアント側コンポーネントです。 POS を使用するには、デバイスの有効化を実行する必要があります。 デバイスの有効化は、ユーザーを認証する Azure Active Directory (Azure AD) を使用します。 この領域の拡張機能は、Web アカウント マネージャー サービスを活用するためにデバイスの有効化のフローを変更しました。 この拡張の一部として、認証承認プロセスのセキュリティが強化されました。 このセキュリティ強化では、コールバック URI に特定の一意の値が必要になるため、POS のカスタマイズ時に Headquarters で追加設定が必要です。 (コールバック URI は、リダイレクト URI とも呼ばれます。)
+Modern POS は、Microsoft Dynamics 365 Commerce のクライアント側のコンポーネントです。 POS を使用するには、デバイスの有効化を実行する必要があります。 デバイスの有効化は、ユーザーを認証する Azure Active Directory (Azure AD) を使用します。 この領域の拡張機能は、Web アカウント マネージャー サービスを活用するためにデバイスの有効化のフローを変更しました。 この拡張の一部として、認証承認プロセスのセキュリティが強化されました。 このセキュリティ強化では、コールバック URI に特定の一意の値が必要になるため、POS のカスタマイズ時に Headquarters で追加設定が必要です。 (コールバック URI は、リダイレクト URI とも呼ばれます。)
 
 既定では、Modern POS はこのコールバック URI に既に登録されています。 ただし、カスタマイズするとき、コールバック URI が変更されます。 したがって、再度動作するように正しく構成する必要があります。 このトピックでは、この構成を完了するために従う必要がある手順について説明します。 この構成が完了していない場合、カスタマイズされた POS アプリケーションでデバイスの有効化を実行しようとすると、エラー メッセージが表示されます。 このエラー メッセージは次のようになります。
 
@@ -39,9 +37,11 @@ Modern POS は、Microsoft Dynamics 365 Commerce のクライアント側コン�
 > Dynamics 365 Headquarters を構成する前に、カスタマイズされた Modern POS アプリケーションを 1 回使用することをお勧めします。 これにより、エラー メッセージがどのようなものかを確認し、カスタマイズされた返信アドレスをより簡単に取得できます。
 
 ## <a name="setup"></a>段取り
+
 次の手順は、カスタマイズされた Modern POS アプリケーションを使用する場合に、デバイスの有効化が正常に動作できるようにするために必要です。 2 つの Azure AD アプリケーションを作成します。1 つは Modern POS 用、1 つは Commerce Scale Unit 用です。 POS は Commerce Scale Unit を通じてリソースを使用するため、Commerce Scale Unit Azure AD アプリケーションが必要です。 したがって、POS が使用される場合は両方の Azure AD アプリケーションが使用されます。 このシナリオでは、Commerce Scale Unit は、POS が要求する保護されているリソースのエンドポイントとして機能します。
 
 ### <a name="create-the-commerce-scale-unit-azure-ad-application"></a>Commerce Scale Unit Azure AD アプリケーションの作成
+
 1. Web ブラウザーで、<https://portal.azure.com/>に移動します。
 2. Azure AD アプリケーションを作成するための十分なアクセス許可を持つ Azure AD 資格情報を使用してログインします。
 3. Azure サービスの一覧から **Azure Active Directory** を選択し、表示される左端のメニューから **アプリの登録** を選択します。
@@ -72,6 +72,7 @@ Modern POS は、Microsoft Dynamics 365 Commerce のクライアント側コン�
 > このトピックの後半で再び使用するため、Web ブラウザー ウィンドウを閉じないでください。
 
 ### <a name="update-the-modern-pos-configuration"></a>Modern POS 構成の更新
+
 1. ファイル エクスプローラーで、**C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker** に移動します。 (このパスは、コンピューターの Microsoft Windows オペレーティング システムが、x64 アーキテクチャ ベースであることを前提としています)。
 2. エクスプローラーで、**ファイル** \> **Windows PowerShell を開く** \> **管理者として Windows PowerShell を開く** を選択します。
 3. 表示された Microsoft Windows PowerShell ウィンドウで、**notepad DLLHost.exe.config** と入力して Enter キーを押します。 (Windows PowerShell ウィンドウは、現在のファイル ディレクトリを既にポイントしています。)
@@ -83,6 +84,7 @@ Modern POS は、Microsoft Dynamics 365 Commerce のクライアント側コン�
 > 上記の手順を実行する別の方法は、スクリプトまたはインストール後の手順のカスタマイズを使用することです。
 
 ### <a name="create-the-customized-modern-pos-azure-ad-application"></a>カスタマイズされた Modern POS Azure AD アプリケーションを作成する
+
 1. <https://portal.azure.com/> が開いている Web ブラウザー ウィンドウに戻り、「Commerce Scale Unit Azure AD アプリケーションを作成する」セクションの手順 3 から 5 を繰り返して、Retail Modern POS Azure AD アプリケーションを作成します。 ただし、今回は次の値を入力します。
 
     - **名前:** **カスタマイズされた Retail Modern POS** を入力します。 (他の固有の値を入力できますが、入力された名前を記録しておいてください。)
@@ -106,36 +108,38 @@ Modern POS は、Microsoft Dynamics 365 Commerce のクライアント側コン�
 9. スライダーの下部にある **アクセス許可の追加** を選択します。
 10. **\<your AAD name\> に対して管理者の同意の付与** を選択します。 **はい** を選択します。 これにより同意を付与することになり、**AccessRetailServer** 行の **状態** 列に表示される **許可済** によって確認することができます。
 
-        > [!NOTE]
-        > Granting consent is not required, but simplifies the process by consenting in advance for all users in your tenant (and you as the Admin). If this step is not completed, then each user will be asked for consent the first time that they try to activate Modern POS.
+    > [!NOTE]
+    > 同意の付与は必須ではありませんが、テナントのすべてのユーザー (管理者であるあなた) について事前に同意しておくことにより、プロセスを簡略化します。 このステップが完了していない場合、Modern POS を初めて有効化しようとするとき、各ユーザーは同意を求められます。
 
 ### <a name="configure-dynamics-365-headquarters"></a>Dynamics 365 Headquarters の構成
+
 前の手順は、Modern POS アプリケーションを認証できるようにするために必要でした。 ここでは、要求を承認できるように、次の手順を実行し、新しい Azure AD アプリケーションを Headquarters の安全なプログラムの一覧に追加する必要があります。 (安全なプログラムの一覧はセーフ リストと呼ばれることもあります)
 
 1. Web ブラウザーで、Headquarters URL に移動し、Azure AD 資格情報を使用してログインします。
 2. **Retail と Commerce** &gt; **Headquarters の設定** &gt; **パラメーター** &gt; **Commerce 共有パラメーター** の順に移動します。
 3. **ID プロバイダー** タブの **ID プロバイダー** セクションで、`HTTPS://sts.windows.net/` から始まるプロバイダーを選択します。 選択したプロバイダーに基づいて、**依存する関係者** セクションの値が更新されます。
-5. **依存する関係者** セクションで、**+ 追加** を選択し、次の値を入力します。
+4. **依存する関係者** セクションで、**+ 追加** を選択し、次の値を入力します。
 
     - **ClientId:** 前のセクションの手順 3 でコピーし、手順 13 で DLLHost.exe.config に貼り付けた値を入力します。
     - **タイプ:** **パブリック** を選択します。
     - **UserType:** **作業者** を選択します。
     - **名前:** このエントリが参照する、ユーザーがわかりやすい説明を入力します。
 
-6. アクション ウィンドウで、**保存** を選択します。 作成した依存する関係者は選択したままにしてください。
-7. **サーバー リソース ID** セクションで、**+ 追加** を選択し、次の値を入力します。
+5. アクション ウィンドウで、**保存** を選択します。 作成した依存する関係者は選択したままにしてください。
+6. **サーバー リソース ID** セクションで、**+ 追加** を選択し、次の値を入力します。
 
     - **サーバー リソース ID:** 「Modern POS 構成の更新」セクションの手順 4 でコピーした URL を入力します。 (最初は、「Commerce Scale Unit Azure AD アプリケーションを作成する」セクションの手順 4 でこの値を作成しました。)
     - **名前:** このエントリが参照する、ユーザーがわかりやすい説明を入力します。
 
-8. アクション ウィンドウで、**保存** を選択します。
-9. **Retail と Commerce** &gt; **Retail と CommerceIT** \> **配送スケジュール** の順に移動します。
-10. ジョブ **1110** (**グローバル構成**) を選択し、アクション ペインで **今すぐ実行** を選択します。 このジョブは、新しいデータを同期させます。 ただし、Commerce Scale Unit にはキャッシュがあり、数分は更新されません。 したがって、迅速な更新が必要な場合、Commerce Scale Unit アプリケーション プールを再利用する必要があります。
+7. アクション ウィンドウで、**保存** を選択します。
+8. **Retail と Commerce** &gt; **Retail と CommerceIT** \> **配送スケジュール** の順に移動します。
+9. ジョブ **1110** (**グローバル構成**) を選択し、アクション ペインで **今すぐ実行** を選択します。 このジョブは、新しいデータを同期させます。 ただし、Commerce Scale Unit にはキャッシュがあり、数分は更新されません。 したがって、迅速な更新が必要な場合、Commerce Scale Unit アプリケーション プールを再利用する必要があります。
 
     > [!NOTE]
     > 最適な結果を得るため、Modern POS が終了していることと、DLLHost.exe のインスタンスがタスク マネージャーに存在しないことを確認します。
 
 ### <a name="perform-modern-pos-device-activation"></a>Modern POS のデバイスの有効化の実行
+
 Modern POS デバイスを有効化してください。 依然として問題が発生する場合は、Windowsでイベント ビューアーを開き、Modern POS に対応するログを表示します。 前のセクションで見逃したステップを判断する際に役立つを警告やエラーを探します。
 
 

@@ -2,11 +2,9 @@
 title: NavigationArgs タイプ
 description: NavigationArgs タイプ
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0e49d8fbbed1c70ffe6754512bc1d81c125ee21e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ddaee0d95e3ae3b4dc0a900ac43adb51a08c203c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688493"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748179"
 ---
 # <a name="navigationargs-type"></a>NavigationArgs タイプ
 

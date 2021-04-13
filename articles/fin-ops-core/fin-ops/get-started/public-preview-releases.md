@@ -2,11 +2,9 @@
 title: サービス更新の可用性
 description: このトピックでは、異なるリリース オプションに関する情報を提供します。
 author: ShellyBakke
-manager: AnnBe
 ms.date: 11/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: be99375b3c7d007f1786f4be3d6dbc6fad4b132d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 891d223751f3d92266914beeb3bab21886eb9984
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798242"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744681"
 ---
 # <a name="service-update-availability"></a>サービス更新の可用性
 

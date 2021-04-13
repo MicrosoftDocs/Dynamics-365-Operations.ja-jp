@@ -2,11 +2,9 @@
 title: 拡張機能の要求
 description: このトピックでは、Finance and Operations の追加の拡張ポイントの要求を提出する方法について説明します。
 author: FrankDahl
-manager: AnnBe
 ms.date: 06/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: cf0c5fbe4bde5a64a6dc5d084c9c72362ce54fd9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 11b417bc0ffbc61be2a5bcd44a2f8547dcdc5e1a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409332"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749616"
 ---
 # <a name="extensibility-requests"></a>拡張性の要求
 
@@ -96,7 +94,7 @@ Microsoft に送信された要求は、Microsoft 追跡データベース内で
 任意の要求を記録する前に、プライバシーに関する声明を必ず読んでください。
 
 > [!NOTE]
-> 拡張性の要求を修正プログラムとしてリリースしません。  
+> 拡張性の要求を修正プログラムとしてリリースしません。  
 
 拡張機能の要求はアプリケーション専用です。 Dynamics AX 2012 またはそれ以前のリリースの拡張機能の要求に対応する計画はありません。
 

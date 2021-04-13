@@ -1,26 +1,24 @@
 ---
 title: Regression Suite Automation Tool のトラブルシューティング
 description: このトピックでは、Regression Suite Automation Tool (RSAT) のトラブルシューティング方法について説明します。
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd5ffc8fba45b15da31352145a55cb87d28ebf27
-ms.sourcegitcommit: b337b647a1be4908fc361fb6d962e96a69f301a9
+ms.openlocfilehash: 9a2e98a93478f4bad1179d192f4ac8b68c141b9b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5036609"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745179"
 ---
 # <a name="troubleshoot-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool のトラブルシューティング
 

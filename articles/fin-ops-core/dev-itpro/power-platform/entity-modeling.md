@@ -2,11 +2,9 @@
 title: エンティティ モデリング
 description: このトピックでは、Finance and Operations エンティティの仮想エンティティを使用したリレーショナル モデリングの概念について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 154979b1e68feba258126b3a42bdf259aa8b52b1
-ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
+ms.openlocfilehash: e397218df532a08c6091e42d772d874c1d975b87
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "5079626"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745131"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 

@@ -2,11 +2,9 @@
 title: 拡張機能を使用してテーブルにメソッドを追加
 description: このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: ac3d583c5f4cf32e121cf45fcd602d57d91da736
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ebb2cef712652652899f418262a686db61feda1f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409273"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748493"
 ---
 # <a name="add-methods-to-tables-through-extension"></a>拡張機能を使用してテーブルにメソッドを追加
 

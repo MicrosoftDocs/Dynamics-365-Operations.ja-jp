@@ -2,11 +2,9 @@
 title: デモ データの概要
 description: このトピックでは、デモ データの概要を示します。
 author: sericks007
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2873dddd16557bba26252c787db9a2d455228c25
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: f4569490b68507a64813c24500f08b1f6a5b4d6f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798391"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745703"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 

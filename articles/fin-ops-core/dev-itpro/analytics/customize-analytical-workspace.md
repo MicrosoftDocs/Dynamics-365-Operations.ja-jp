@@ -1,12 +1,10 @@
 ---
 title: 分析ワークスペースでの埋め込みレポートのカスタマイズ
 description: このトピックでは、分析ワークスペースに埋め込まれているアプリケーション レポートをパワー ユーザーがカスタマイズできるようにする方法について説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
@@ -14,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
-ms.author: milindav
+ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcd36106a9938a93f4a7a5b08af3ee7570d4fd52
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: deb3b3417abdcbbd3d79f413930a065e3ee0e28e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687493"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755458"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 
@@ -72,7 +70,7 @@ ms.locfileid: "4687493"
     デフォルトでは、アプリケーションと共にパッケージ化された標準分析ワークスペース ソリューションが表示されます。 このソリューションのレポートは、プロビジョニング プロセス中に環境に合わせて自動的に配置および設定されます。
 
     > [!NOTE]
-    > 分析ワークスペースには、Power BI専用の環境に対してのみ使用できるホストされたMicrosoftサービスが必要です。 詳細については、「[1 Box 環境での分析ワークスペースおよびレポートへのアクセス](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)」を参照してください。
+    > 分析ワークスペースには、専用の環境に対してのみ使用できるホストされた Microsoft Power BI サービスが必要です。 詳細については、「[1 Box 環境での分析ワークスペースおよびレポートへのアクセス](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)」を参照してください。
 
 3. アクション ペインの **オプション** タブの **Power BI** グループで **Edit Analytics** を選択してください。
 
@@ -100,11 +98,11 @@ ms.locfileid: "4687493"
 
 次の手順に従って、分析ワークスペースを使用しようとしたときに発生する一般的な問題に対処します。
 
-**エラー メッセージ:** **_リソースにアクセスするには、Power BI にログインしてください_* _
+**エラー メッセージ:** **_Power BI にログインし、リソースにアクセスしてください_**
 
 Power BI サービスでは、ホストされたコンテンツへのアクセスを許可するためにユーザーからの明示的なアクセス許可が必要です。 次の手順を使用して、現在のユーザーが PowerBI.com でホストされているレポートにアプリケーション スイートから接続できることを確認します。
 
-1. _*リンク** というタイトルのセクションを含むアプリケーション ワークスペースを開きます。 たとえば 「銀行管理」 です。
+1. **リンク** というタイトルのセクションを含むアプリケーション ワークスペースを開きます。 たとえば 「銀行管理」 です。
 2. **オプション** を選択し、左上にある **レポート カタログを開く** を選択します。
 3. ダイアログボックスの手順に従って、**Power BI に承認** して、現在のユーザーの Finance and Operations アプリにアクセスします。
 

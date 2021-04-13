@@ -2,11 +2,9 @@
 title: ローカリゼーション機能の分類
 description: このトピックでは、規制機能と競合機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 244581b0d4591eda408b494d6f43997343d1200d
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 7904f11cbd4a2578c1d4789b8efcb441376f7dd5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129969"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749277"
 ---
 # <a name="classification-of-localization-features"></a>ローカライズ機能の分類
 

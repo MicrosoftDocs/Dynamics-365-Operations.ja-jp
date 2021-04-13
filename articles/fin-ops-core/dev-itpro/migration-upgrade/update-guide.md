@@ -2,22 +2,20 @@
 title: Finance and Operations の更新とカスタム コード ライフサイクルの管理
 description: このトピックでは、Finance and Operations の更新とカスタム コード ライフサイクルを管理する方法について説明します。
 author: rbadawy
-manager: AnnBe
 ms.date: 10/22/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 0a8be97e6cbb77df2f80a5d6952ff7cc9d55aa42
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 15a54b0d5fa6ec2d19a70a361ba5580640d5af33
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130859"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743907"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>Finance and Operations の更新とカスタム コード ライフサイクルの管理
 

@@ -2,11 +2,9 @@
 title: Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化
 description: このトピックでは、Microsoft Azure DevOps でエージェントにおける X++ のビルド プロセスを自動化する方法について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5fd9d82e28f122bd9a761cbba6a4953244d250cc
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: f62a4a0f72ec5c867d0d8288357699283ac9b5ae
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4409497"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750308"
 ---
 # <a name="build-automation-that-uses-microsoft-hosted-agents-and-azure-pipelines"></a>Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化
 
@@ -66,16 +64,30 @@ X++ コードをビルドするには、X++ コンパイラ (xppc.exe) などの
 
 nuget.exe ファイルには、パッケージが格納されているソース フィードを持つ NuGet が含まれています。 packages.config ファイルでは、パッケージとそのバージョンが指定されています。 新しいバージョンに対してビルドする場合は、packages.config ファイルのバージョンを更新するだけで済みます。 サンプルの nuget.config ファイルを含む詳細については、[Azure Pipelines でのパッケージ管理 NuGet パッケージの復元](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore)を参照してください。
 
-次の例は、一般的な X++ ビルドに必要な 3 つの主要なパッケージのための、packages.config ファイルを示しています。
+次の例は、一般的な X++ ビルドに必要な 3 つの主要なパッケージのための、**packages.config** ファイルを示しています。 一覧のバージョンを実際のバージョンの NuGet パッケージに置き換える必要があります。
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<packages>
-    <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5644.16778" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.464.13" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5644.16778" targetFramework="net40" />
-</packages>
-```
++ バージョン 10.0.17 以前の場合は、次の packages.config レイアウトを使用します。
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <packages>
+        <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5644.16778" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.464.13" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5644.16778" targetFramework="net40" />
+    </packages>
+    ```
+
++ バージョン 10.0.18 以降の場合は、次の packages.config レイアウトを使用します。
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <packages>
+        <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5968.16973" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5968.16973" targetFramework="net40" />
+    </packages>
+    ```
 
 ## <a name="creating-the-pipeline"></a>パイプラインの作成
 
@@ -109,13 +121,25 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 
 次の MSBuild 引数の例では、NuGet パッケージが **$(Pipeline.Workspace)\\NuGets** にインストールされており、X++ のソース コードが **$(Build.SourcesDirectory)\\Metadata** 内にあり、コンパイラの出力を **$(Build.BinariesDirectory)** にする必要があることを前提としています。
 
-```plaintext
-/p:BuildTasksDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage\DevAlm"
-/p:MetadataDirectory="$(Build.SourcesDirectory)\Metadata"
-/p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
-/p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
-/p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
-```
++ バージョン 10.0.17 以前の場合は、次の引数を使用します。
+
+    ```dos
+    /p:BuildTasksDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage\DevAlm"
+    /p:MetadataDirectory="$(Build.SourcesDirectory)\Metadata"
+    /p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
+    /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
+    /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
+    ```
+    
++ バージョン 10.0.18 以降の場合は、次の引数を使用します。
+
+    ```dos
+    /p:BuildTasksDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage\DevAlm"
+    /p:MetadataDirectory="$(Build.SourcesDirectory)\Metadata"
+    /p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
+    /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
+    /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
+    ```
 
 パイプライン サンプルでは、NuGet パッケージ名とパスの変数を使用して、これらのコマンドを簡略化しています。
 

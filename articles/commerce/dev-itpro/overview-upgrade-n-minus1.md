@@ -1,12 +1,10 @@
 ---
 title: Commerce のアップグレードおよび N-1 のサポート
-description: Dynamics 365 Commerce のリリースで、アップグレードと N-1 サポートが有効になりました。 N-1 のサポートによって、AX 2012 R3 CU10 を実行する店舗を持つ顧客は、アップグレード後に Dynamics 365 Commerce headquarters で作業できます。
+description: Dynamics 365 Commerce のリリースで、アップグレードと N-1 サポートが有効になりました。
 author: athinesh99
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: ''
-ms.service: Dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9fa3b7258b0fb51d46ccf239f20f99d4ac124e78
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 649655bfec61b6051c6237fea5f2a0dc53949616
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681562"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795665"
 ---
 # <a name="upgrade-and-n-1-support-for-commerce"></a>Commerce のアップグレードおよび N-1 のサポート
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Retail の 2017年7月のリリースでは、アップグレードと N-1 の対応が有効となりました。 N-1 のサポートによって、Microsoft Dynamics AX 2012 R3 累積更新プログラム 10 (CU10) を実行する店舗を持つ顧客は、アップグレード後にバックオフィスで作業できます。 アップグレードと N-1 サポートの主な目的は、AX 2012 R3 の顧客がクラウドの利点を活用できるようにすることです。
+Microsoft Dynamics 365 Retail の 2017 年 7 月のリリースで、アップグレードと N-1 サポートが有効になりました。 N-1 のサポートによって、Microsoft Dynamics AX 2012 R3 累積更新プログラム 10 (CU10) を実行する店舗を持つ顧客は、アップグレード後にバックオフィスで作業できます。 アップグレードと N-1 サポートの主な目的は、AX 2012 R3 の顧客がクラウドの利点を活用できるようにすることです。
 
 次の機能を使用すると、顧客はシームレスにアップグレードできます。
 
@@ -41,14 +39,13 @@ Microsoft Dynamics 365 Retail の 2017年7月のリリースでは、アップ�
 計画的なダウンタイムが必要です。 アップグレード分析を最初に行います。 アップグレード分析は、Microsoft Dynamics AX 2012 データベースに対して実行され、Microsoft Dynamics Lifecycle Services (LCS) 診断サービスに基づいています。 このステップでは、アップグレードをより迅速かつ低コストで行うための作業を特定します。 また、必要な SQL 構成、データ バックオフィス クリーンアップ、推奨されない機能を識別します。
   
 その後、実際のデータ アップグレード プロセスが発生します。 AX 2012 データベースは、Microsoft Azure SQL データベースに移動され、データ アップグレード パッケージは runbook プロセスを通じて通常どおり実行されます。 アップグレードの検証が完了します。 検証ツールは、使用される前にアップグレードされた環境に対して実行されます。 このツールは自動スモーク テストを実行して、サービスが動作してアクセス可能なこと、行数の一致、財務と在庫の調整などを検証します。
- 
+
 チャネルのアップグレード後構成のほとんどにおいて、手動での手順をほぼ必要としません。 顧客はアップグレード前およびアップグレード後のチェックリストを使用して、完了する必要があるタスクについて知ることができます。 アップグレード後のタスクには、アップグレードされたデータベースから店舗への完全な同期の開始、アップグレードされたデータベースに対するチャンネル、レジスター、およびデバイスの検証、トランザクションの同期の検証、N-1サポートが実施されていることの検証が含まれます。
- 
+
 N-1 のサポートでは、顧客は Commerce 本部で N-1 パッケージをインストールする必要があります。 店舗では設定は必要ありません。 このインストールは、N-1 関連の構成の完了後、アップグレード ウィンドウで実行する必要があります。
 
 Commerce 本部のアップグレードと、N-1 の設定の完了後、N-1 店舗のコンポーネントが Commerce 本部と通信できるようになります。 N-1 のサポートのためにインストールが必要なチャネル側コンポーネントはありません。 ただし、N-1 店舗が Commerce 本部と通信できるようにするためには、レジ担当者が最初にサイン インした際にパスワードを変更する必要があります。
- 
-N-1インストールの手順については、 [段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド](n-1-installation-configuration.md) を参照してください。
 
+N-1インストールの手順については、 [段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド](n-1-installation-configuration.md) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

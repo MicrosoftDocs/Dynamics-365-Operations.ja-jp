@@ -2,11 +2,9 @@
 title: 拡張可能フォームの書き込み
 description: このトピックでは、拡張可能フォームを書き込む方法について説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 6f754e3cc005765127e6355bcf694f50dff76be9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4005153876e25d4b0e9482877a2157c3f2f17e56
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409193"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753002"
 ---
 # <a name="write-extensible-forms"></a>拡張可能フォームの書き込み
 

@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) のクラウド ホスト環境
 description: Microsoft Dynamics Lifecycle Services では、クラウド ホスト環境は、Microsoft Azure 上に Microsoft Dynamics AX 環境を配置するツールです。
 author: sericks007
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1f16cbe79bfa77c1786bebda251069ff710e7eaa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1a5ddd3bb15a4617c160371f0cb5693b8d136569
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685017"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749273"
 ---
 # <a name="cloud-hosted-environments-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のクラウド ホスト環境
 

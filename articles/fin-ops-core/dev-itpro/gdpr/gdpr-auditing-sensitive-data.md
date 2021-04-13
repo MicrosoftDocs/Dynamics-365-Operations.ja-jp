@@ -2,11 +2,9 @@
 title: 機密データへのアクセスを管理
 description: このトピックでは、ユーザー ログの機能に関する情報を提供します。
 author: ToddLefor
-manager: AnnBe
 ms.date: 12/31/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 809c92828425dec8a34299eb4cdc7145c6feed0c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ba8e0b1e987e2f7dd2c50a17dcde9cea6727512d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680466"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750936"
 ---
 # <a name="manage-access-to-sensitive-data"></a>機密データへのアクセスを管理
 

@@ -2,11 +2,9 @@
 title: Adyen コネクタでオンライン支払手段を保存する
 description: このトピックでは、電子商取引の Adyen コネクタを使用して支払手段を保存する方法を説明します。
 author: rubendel
-manager: AnnBe
 ms.date: 05/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 537c0c97dc176409bb4b8794e5cc0295663851a9
-ms.sourcegitcommit: 3d37d4f509a185f941ee77dc156728378c8a341b
+ms.openlocfilehash: 8cc1877733f4fbb1a11ba416b8951ba98a8b7b37
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "4801358"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791233"
 ---
 # <a name="saving-online-payment-instruments-with-the-adyen-connector"></a>オンライン支払手段を Adyen コネクタで保存
 

@@ -2,11 +2,9 @@
 title: 配置オプション
 description: Finance and Operations アプリは、クラウドまたはオンプレミスで実行することができます。 このトピックでは、各種の展開オプションについて説明します。
 author: kfend
-manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 62fad19cd0f63f88c2af0a3a1dd3ca55cb5c6166
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 518edf7c54cff11ea7cdbc071e9718a0b1c9090f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686341"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748801"
 ---
 # <a name="deployment-options"></a>配置オプション
 

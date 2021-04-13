@@ -2,11 +2,9 @@
 title: ビジネス プロセス モデラー ライブラリの設定
 description: このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 99e64da9a043f4ddce0307db7f822633093e5adb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1775dc83cb4492a504192d74865768972121c37d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685067"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750358"
 ---
 # <a name="set-up-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの設定
 

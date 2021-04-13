@@ -2,11 +2,9 @@
 title: Lifecycle Services の設定の概要
 description: 構成マネージャー (ベータ) 機能を使用すると、Microsoft Dynamics AX 2012 R3 の 1 つのインスタンスから他のインスタンスに構成をコピーすることができます。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c2736ccee71a635c4f0166d1672c368802daa12e
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 29cf560a4461c4b1355ce3ff98185850260d9c64
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128969"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748241"
 ---
 # <a name="configuration-in-lifecycle-services-overview"></a>Lifecycle Services の設定の概要
 

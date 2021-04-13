@@ -2,11 +2,9 @@
 title: 財務期間終了のビジネス イベント
 description: このトピックでは、財務期間終了の業務プロセスでビジネス イベントを使用して、情報を取得し、内部コントロールを提供する方法について説明します。
 author: suhasrao1985
-manager: AnnBe
 ms.date: 10/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 26
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: b8131e332dcaee11b4d36cbe0c2e3e60983ef007
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 917d18aed7cc379ec5f703c0f6c68b7cd7afc135
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688099"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745353"
 ---
 # <a name="business-events-in-financial-period-close"></a>財務期間終了のビジネス イベント
 [!include [banner](../../includes/banner.md)]
@@ -47,7 +45,7 @@ ms.locfileid: "4688099"
 
 <img alt="High-level design" src="../../media/Image1.PNG" width="70%">
 
-## <a name="managing-attachments-by-using-microsoft-power-automate-and-sharepoint-online"></a>Microsoft Power Automate および SharePoint オンライン を使用した添付ファイルの管理
+## <a name="managing-attachments-by-using-microsoft-power-automate-and-sharepoint-online"></a>Microsoft Power Automate および SharePoint Online を使用した添付ファイルの管理
 
 経理担当者は **財務期間終了** ワークスペースにタスクを表示して、作業を開始します。 SharePoint Online ドキュメント タイプを使用して、添付ファイルがタスクに追加されます。 Microsoft Power Automate の SharePoint トリガーは、次の図に示す Power Automate をトリガーするために使用されます。 この Power Automate は SharePoint メタデータを、 **財務期間終了** ワークスペースのタスクからのメタデータで更新します。 この目的のために、ドキュメント ライブラリに SharePoint 列が作成されました。 **財務期間終了** ワークスペースに追加されるすべての添付ファイルの添付ファイル メタデータを保持するために、個別の添付ファイル データ エンティティが作成されました。 カスタム エンティティのフィールドは、 Power Automate 内の SharePoint オンライン列にマップされました。 指定されたドキュメント タイプを使用するドキュメントが定義済みの SharePoint Online ライブラリに作成されると、Power Automate がトリガーされ、カスタム データ エンティティからメタデータを取得し、SharePoint Online のドキュメントのメタデータ列を更新します。
 

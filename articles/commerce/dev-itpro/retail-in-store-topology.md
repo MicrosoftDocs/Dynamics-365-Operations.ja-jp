@@ -2,11 +2,9 @@
 title: ストア内トポロジを選択します。
 description: このトピックでは、様々な Dynamics 365 Commerce の実店舗構成図を提供します。
 author: rassadi
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: Dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 8493b400b411e2365b757f3faad13086278bd3a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 11d138e8cb1d08c2506593c55e787f462ae1b2a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681494"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797207"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 

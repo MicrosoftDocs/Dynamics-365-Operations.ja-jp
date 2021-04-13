@@ -2,24 +2,22 @@
 title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
-manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 03/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 28d01e3e7a529391839995321b7ff03a33fecdf4
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: 23312d43ae482f685fc06c489163b2a4a07833a2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118697"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744541"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -253,6 +251,9 @@ ms.locfileid: "5118697"
     - クライアント証明書の拇印
     - サーバー証明書の拇印
     - テナント サービス プリンシパル証明書の拇印
+
+    > [!IMPORTANT]
+    > LCSで新しいコネクタを作成 **しない** でください。 既存のコネクタのコンフィギュレーションを更新し、設定を再度ダウンロードします。
 
 ## <a name="update-your-current-deployment-configuration"></a>現在の配置コンフィギュレーションを更新する
 

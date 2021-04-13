@@ -2,11 +2,9 @@
 title: クラスとメソッドの属性を使用した SysTest フィルタリング
 description: このトピックでは、テストのフィルター処理の目的で SysTest クラスおよびメソッドで使用できる属性について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-11-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02a8802c2c4b7944ddc2ba62879b89f4f959b016
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8e2acb8ca68b09b666f806312d9679855ff718d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680436"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745149"
 ---
 # <a name="systest-filtering-using-class-and-method-attributes"></a>クラスおよびメソッドの属性を使用した SysTest フィルター処理
 

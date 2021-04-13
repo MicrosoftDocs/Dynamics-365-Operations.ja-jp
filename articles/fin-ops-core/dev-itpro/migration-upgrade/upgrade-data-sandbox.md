@@ -2,11 +2,9 @@
 title: AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 description: このトピックでは、サンドボックス環境で Microsoft Dynamics AX 2012 から Finance and Operations にデータ アップグレードを実行する方法を説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 8d0a41e64f22953ac417616ed8c34e20dbe60540
-ms.sourcegitcommit: 5c2f4b715e3ee7ec869fb797d74c2c5e166d1583
+ms.openlocfilehash: 7a2d3330432bafad89d168a7d054f2ffa7809cab
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "4930641"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752266"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 

@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 の拡張機能の変更
 description: このトピックは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
-manager: AnnBe
 ms.date: 08/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-08-31
 ms.dyn365.ops.version: App 8.0.3
-ms.openlocfilehash: ebd582094898347d5847fe2cf1d7e695f207d1bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2843246e46b3c255b5ce7bd50251e34b4a6e6d1c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409340"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749630"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-update-803"></a>Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 の拡張機能の変更
 

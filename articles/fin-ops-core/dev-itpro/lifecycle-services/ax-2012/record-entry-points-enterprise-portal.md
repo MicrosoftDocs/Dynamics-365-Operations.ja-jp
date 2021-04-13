@@ -2,11 +2,9 @@
 title: エンタープライズ ポータルのエントリ ポイントを記録
 description: イベント トレースを使用して、Microsoft Dynamics AX のエンタープライズ ポータルに業務プロセス フローを記録し、フローを表示することができます。
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.openlocfilehash: 4e77efbe092e2b2b79d4db22b7b7ef4e45176a2f
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: bcff88153cb77a652d4b9f3e33fe55be16788d26
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126985"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744773"
 ---
 # <a name="record-entry-points-in-enterprise-portal"></a>エンタープライズ ポータルのエントリ ポイントを記録
 

@@ -2,11 +2,9 @@
 title: 環境計画
 description: このトピックでは、プロジェクトの環境を計画するときに考慮する必要があるさまざまな側面の概要を示します。
 author: petryo
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: petryo
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 64117b0a9a51d6f3da34369edecac367d0a0750f
-ms.sourcegitcommit: cf0ddcaa3e13b088ba5f6cff5e21a1480e175803
+ms.openlocfilehash: fcbba1e1b2d013e1e6b6c792e5dcab88e4990dac
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097037"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751848"
 ---
 # <a name="environment-planning"></a>環境計画
 

@@ -2,11 +2,9 @@
 title: Azure Data Lake の概要
 description: このトピックでは、Microsoft Azure Data Lake の概要を説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: ddd82ddf2e494128c8db5ffcafed63f4c6746a61
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 85f1edc004184d0e203f251935b20b222aed3481
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128661"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745345"
 ---
 # <a name="azure-data-lake-overview"></a>Azure Data Lake の概要
 

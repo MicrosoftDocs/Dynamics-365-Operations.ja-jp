@@ -2,11 +2,9 @@
 title: アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 description: このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations アプリケーションのエンティティ格納に移行します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 77f633bf49e0b01f412c608e72e32a7308b9163c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 71f12da33a8fa76bdeb68efec1afeb1b60fbaa87
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687866"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744747"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
@@ -85,7 +83,7 @@ ms.locfileid: "4687866"
 5.  エンティティ ストア内の集計測定値をリフレッシュするためのバッチ ジョブが作成されます。
 
 ## <a name="authoring-a-report-on-sales-by-state-with-power-bi-desktop"></a>Power BI desktop を使用して都道府県別売上レポートの作成
-このステップでは、「[Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=45331)」からダウンロードできる Power BI デスクトップ ツールをインストールする必要があります。
+このステップでは、[Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=45331)からダウンロードできる Power BI Desktop ツールをインストールする必要があります。
 
 1.  Power BI デスクトップを起動します。 更新を適用することが必要な場合があります。 ウェルカム ページが表示されます。 **データの取得** をクリックします。
 2.  または、Power BI デスクトップが起動したとき、**ホーム** タブの **データの取得** &gt; **SQL Server** を選択します。

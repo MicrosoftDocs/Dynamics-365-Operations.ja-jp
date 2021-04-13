@@ -2,11 +2,9 @@
 title: アクション コントロール
 description: アクションは、エンタープライズ リソース プランニング (ERP) システムに不可欠なコンポーネントであり、マウスのクリック、キーボード、タッチによってトリガーされます。
 author: jasongre
-manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf4194b1b544c34617841e5f7627ac2dad96515b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d530de3e743352a415e7e1843bfe4ab3eb776624
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682469"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745725"
 ---
 # <a name="action-controls"></a>アクション コントロール
 

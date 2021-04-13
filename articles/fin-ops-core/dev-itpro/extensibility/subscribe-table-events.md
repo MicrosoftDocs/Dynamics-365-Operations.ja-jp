@@ -2,11 +2,9 @@
 title: テーブル レコードの有効期間中の業務処理の実行
 description: このトピックでは、テーブル レコードの有効期間中に実行できる業務処理に関する情報を提供します。
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 07/11/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 7a9c6633938704a4d98ca05cb9c61453bcb751c7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a71e833329544e40c86a9e144c162e1e8f3c89e5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409483"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744217"
 ---
 # <a name="perform-business-actions-throughout-the-lifecycle-of-table-records"></a>テーブル レコードの有効期間中の業務処理の実行
 

@@ -2,11 +2,9 @@
 title: 画像タイプ
 description: モバイル アプリ内のイメージを表すためのイメージ コントロール インターフェイス。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b77308dca5691fbd33d9dda7124549148915ed0
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 2fb5e558a5fa3014bcca77e3e02339879db86354
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129265"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754864"
 ---
 # <a name="image-type"></a>画像タイプ
 

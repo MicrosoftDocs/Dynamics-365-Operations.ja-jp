@@ -2,11 +2,9 @@
 title: 行タイプ
 description: 行コントロールは、一覧を構成しています。 リストには、任意の数の行のコントロールが含まれています。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: da0d72e256c47e3ffcee27bc8902b2549237dc10
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fc2e3fe98be75789a672eacd3167a28d7bf7d868
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688195"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749247"
 ---
 # <a name="row-type"></a>行タイプ
 
@@ -73,7 +71,7 @@ headerField: [Control](view-model-control-basecontrol-icontrol-icontrol.md)
 
 
 
-### <a name="hidden"></a>非表示
+### <a name="hidden"></a>hidden
 
 hidden: boolean
 
@@ -94,7 +92,7 @@ isSelected: boolean
 
 
 
-### <a name="item"></a>品目
+### <a name="item"></a>項目
 
 item: any
 

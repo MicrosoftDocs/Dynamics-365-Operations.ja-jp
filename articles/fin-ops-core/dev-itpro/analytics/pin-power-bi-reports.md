@@ -2,11 +2,9 @@
 title: Power BI コンテンツのピン留め
 description: このトピックでは、ワークスペースにページ全体の Power BI レポートを配置して、ユーザーにインタラクティブなデータ探索エクスペリンスを提供する方法について説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a85559c4a9ccc1c2a04ac3769ba55a71432bbd6a
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: ccd1f67fcc108a45f799b6c23f55cc96727bf571
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092503"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749692"
 ---
 # <a name="pin-power-bi-content"></a>Power BI コンテンツのピン留め
 

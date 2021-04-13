@@ -2,11 +2,9 @@
 title: テーブル マップの二重書き込みの有効化
 description: このトピックでは、テーブル マップが二重書き込みでどのように機能するかついて説明します。
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7df10e8b7eebad016a901bf9b3780220376c1d33
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: ededb77cdd0b58f0c073aebc61620beaf4fbd2b2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744709"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748811"
 ---
 # <a name="enable-table-maps-for-dual-write"></a>テーブル マップの二重書き込みの有効化
 

@@ -2,11 +2,9 @@
 title: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境をクラウドに移行する方法について説明します。
 author: MartinWalkerDynSA
-manager: AnnBe
 ms.date: 02/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: marwalke
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fe7ebf111e469c503bcd4a1452a803169e96518b
-ms.sourcegitcommit: 8657493a17790364dfcfd02eebea7f8739524e36
+ms.openlocfilehash: 67685abfe0d4fcdb44f6ef3de184910bc890e2a0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5109675"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749269"
 ---
 # <a name="move-lcs-implementation-projects-from-on-premises-to-the-cloud"></a>LCS 実装プロジェクトをオンプレミスからクラウドに移動する
 

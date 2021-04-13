@@ -2,11 +2,9 @@
 title: 要素デザイナー
 description: この記事では、要素デザイナーを確認し、それらを使用する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaf43b057c97d8cb8abec68e53945a1503401bd9
-ms.sourcegitcommit: 2186155e4662ae5010a190c0ede458ef6cf91f24
+ms.openlocfilehash: 5f4de829922b6f2e454c41fef8ed1a25afea8619
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4409514"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749285"
 ---
 # <a name="element-designers"></a>要素デザイナー
 

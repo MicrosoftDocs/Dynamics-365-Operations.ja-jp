@@ -2,11 +2,9 @@
 title: クックブックの照会
 description: このトピックでは、SQL インサイト タブのクエリについて、またパフォーマンスの問題のトラブルシューティングを行うときにそれらを使う方法について説明します。
 author: meeramahabala
-manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca1049f33421ff94b824ca09c9a8a4df2f0a71d5
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 4b1626a2ffad571fb2fc6747b592e723e4d6f690
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130047"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753866"
 ---
 # <a name="query-cookbook"></a>クックブックの照会 
 

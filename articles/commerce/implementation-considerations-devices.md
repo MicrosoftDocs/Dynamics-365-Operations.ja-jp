@@ -2,11 +2,9 @@
 title: デバイス管理実装ガイダンス
 description: このトピックは、コマース環境においてデバイス管理に関連する機能を実装するユーザーを対象としています。 実装を計画する際に考慮する必要がある実装上のヒントとガイダンスを示します。
 author: jashanno
-manager: AnnBe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: c0754a813b536bd332f2990a1c0175ff89187a15
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d393d8ad76df198600cbbe6c6c3ddd491e831c5b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012484"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797058"
 ---
 # <a name="device-management-implementation-guidance"></a>デバイス管理実装ガイダンス
 

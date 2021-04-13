@@ -2,11 +2,9 @@
 title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 67c896b3c47a34db6e2e170e53208d80d0f61929
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e869838e6470978d4d453f3e740a5b12ed919694
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687339"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748255"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
@@ -48,7 +46,7 @@ ms.locfileid: "4687339"
 
 ワークフロー ビジネス イベントには 5 つの異なるカテゴリがあります。 カテゴリが Microsoft Power Automate に表示され、イベントを選択できます。
 
-![Microsoft Power Automate のビジネス イベント カテゴリ](media/Business-event-category.png  "Microsoft Power Automateのビジネス イベント カテゴリ")
+![Microsoft Power Automate でのビジネス イベント カテゴリ](media/Business-event-category.png  "Microsoft Power Automate でのビジネス イベント カテゴリ")
 - **カテゴリ: ワークフロー タイプ** 
      - これらのイベントは、開始および完了などのワークフロー イベントで発生します。 すべてのワークフロー インスタンスはこのカテゴリに相当します。
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID、たとえば、"Workflow_BudgetPlanReview_000002"
@@ -82,7 +80,7 @@ ms.locfileid: "4687339"
 
 作業項目の外部完了を可能にするには、作業項目のアクション マネージャー クラスは、IValidateWorkflowWorkItemAction インターフェイスを実装する必要があります。 標準の WorkflowWorkItemActionManager クラスはこのインターフェイスを実装しています。 プラットフォーム更新 32 では、IValidateWorkflowWorkItemAction インターフェイスの実装をおこなうために TrvWorkflowWorkItemActionManager クラスが更新されます。 例として、既存の IValidateWorkflowWorkItemAction 実装を使用して、その他の WorkflowWorkItemActionManager クラスについての更新を通知します。
 
-Microsoft Power Automate で作業項目完了を設定する詳細なガイドは [ワークフロー承認ビジネス イベントを使用する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。
+Microsoft Power Automate で作業項目完了を設定する詳細なガイドは [ワークフロー承認ビジネス イベントを消費する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。
 
 ## <a name="templates-for-work-item-completion-in-power-automate"></a>Power Automate での作業項目完了のテンプレート
 

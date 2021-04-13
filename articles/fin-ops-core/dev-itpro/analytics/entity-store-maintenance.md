@@ -2,11 +2,9 @@
 title: エンティティ ストアのメンテナンス後に問題を解決
 description: このトピックでは、エンティティ ストアのメンテナンス後に完了する必要のある手順について説明します。
 author: sarvanisathish
-manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region:
 ms.author: sarvanis
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 6dd95f2a73829e3703722673d6c0113cb916ddf7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8bb1b47b6dd433a3dff0da6d95aa5ad3b320083a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687090"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751248"
 ---
 # <a name="resolve-issues-after-entity-store-maintenance"></a>エンティティ ストアのメンテナンス後に問題を解決
 
@@ -65,7 +63,7 @@ ms.locfileid: "4687090"
 エンティティ格納 (前述) を更新した後、**システム管理** \> **設定** \> **Power BI ファイルを配置** を選択して、**Power BI レポート ファイルを配置** のページを使用してレポートを再配置します。
 
 > [!NOTE]
-> 以前に PowerBI.com に展開されたレポートは、エラーを発生させることがあります。 これが発生した場合、保守活動が終了したあとにレポートを削除し再配置する必要がある場合があります。
+> 以前に PowerBI.com に展開されたレポートは、エラーを発生させることがあります。 これが発生した場合、保守活動が終了したあとに、レポートと関連するデータセットを削除し再配置する必要がある場合があります。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

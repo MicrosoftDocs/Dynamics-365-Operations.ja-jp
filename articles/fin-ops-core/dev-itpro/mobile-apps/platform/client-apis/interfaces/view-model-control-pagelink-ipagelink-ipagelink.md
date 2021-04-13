@@ -2,11 +2,9 @@
 title: PageLink タイプ
 description: Pagelink コントロール タイプ。 ページリンクは、別のページに移動するコントロールです。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b750ac72a13682f51a4696737c6ce3d55c963398
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92f691e076561b91f7b941a12df5358cac1e415f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685421"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744191"
 ---
 # <a name="pagelink-type"></a>PageLink タイプ
 

@@ -2,11 +2,9 @@
 title: パッケージ アプリケーションの問題のトラブルシューティング
 description: トピックでは、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ情報を提供します。
 author: laneswenka
-manager: AnnBe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 11027b82b14df1b81d1ca50f57a49493c93b95c6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 22e00dccb56ac24e582fe8d62221ef2a9e423f0f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680538"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744825"
 ---
 # <a name="troubleshoot-package-application-issues"></a>パッケージ アプリケーションの問題のトラブルシューティング
 
@@ -102,7 +100,7 @@ ms.locfileid: "4680538"
 - **HKLM:\\ソフトウェア\\Microsoft\\Dynamics\\展開** レジストリ キーで、以下のキーを作成して、クリーンアップを実行するときにカスタマイズできます。 自動クリーンアップ タスクでは、これらの値が考慮されます。
 
     - **CutoffDaysForCleanup** - 古いパッケージとログが保持される日数。 既定値は **30** です。
-    - **CutoffDiskSpaceLimitForPackages** - パッケージ フォルダーがあるサービス ボリューム ドライブ上の最小空きディスク容量 (ギガバイト単位 [GB])。 たとえば、ディスク領域が 200 GB の場合、クリーンアップ タスクは日数に基づいてパッケージを削除します。
+    - **CutoffDiskSpaceLimitForPackages** - パッケージ フォルダーがあるサービス ボリューム ドライブ上 (ギガバイト単位 [GB]) の最小空きディスク容量。 たとえば、ディスク領域が 200 GB の場合、クリーンアップ タスクは日数に基づいてパッケージを削除します。
     - **CutoffDiskSpaceLimitForLogs** - ログのフォルダーがあるシステム ドライブの最小空きディスク容量 (GB 単位)。 たとえば、ディスク領域が 100 GB の場合、クリーンアップ タスクは日数に基づいてサービス関連のログを削除します。
 
 ### <a name="issue-a-step-failed-with-errors"></a>問題: ステップがエラーで失敗しました

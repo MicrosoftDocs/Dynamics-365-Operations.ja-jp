@@ -2,11 +2,9 @@
 title: テスト データ転送ツール (ベータ)
 description: テスト データ転送ツールは、Microsoft Dynamics AX 2012 ビジネス データベース環境からデータをエクスポートするコマンド ライン ツールです。
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 6e5c2541ab7e64f217e7b6df667b2d4b942e52dd
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 3b81c345f757426c9fa530d2e24563d9d3e9cd06
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128871"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744757"
 ---
 # <a name="test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ)
 

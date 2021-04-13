@@ -1,12 +1,10 @@
 ---
 title: Commerce Scale Unit の顧客およびコンシューマー API
-description: このトピックでは、さまざまな役割で利用可能であり、さまざまなクライアントが使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
+description: このトピックでは、さまざまな役割で利用可能であり、さまざまなクライアントが使用できる API の概要について説明します
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45c8a0552fc09dc7d2be86c9771bac21a6ab503d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1e5b1c6f20217cab156263119fde6f637a5debd2
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687563"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792979"
 ---
 # <a name="commerce-scale-unit-customer-and-consumer-apis"></a>Commerce Scale Unit の顧客およびコンシューマー API
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、さまざまな役割で利用可能であり、さまざまなクライアントが使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
-
-<a name="overview"></a>概要
---------
 
 - Cloud Scale Unit のビジネス データと操作は、従業員 (販売時点管理) シナリオと顧客 (オンライン ストア) シナリオの両方で、OData Web API を通じてすべての接続デバイスで使用できます。
 - 埋め込み CRT は、統一されたオムニチャネル プラットフォームを可能にします。
@@ -40,6 +35,7 @@ ms.locfileid: "4687563"
 - API は、C\# を使用して .NET スタックに組み込まれています。
 
 ## <a name="roles"></a>ロール
+
 Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主にこれらの役割を果たします。
 
 - CommerceRole.Employee
@@ -51,7 +47,6 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 
 > [!NOTE]
 > 既定では、匿名アクセスは有効ではありません。 環境の匿名アクセスを有効にするには、[サポート](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)に問い合わせてください。
-
 
 ## <a name="customer-controller"></a>顧客のコントロール
 
@@ -82,7 +77,7 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 | GetOrderInvoices                                       | customerAccount string型, QueryResultSettings queryResultSettings                                                                                    | PageResult\<OrderInvoice\> | 従業員                 | 与えられた顧客IDに関連付けられている顧客に結びつく未処理の注文請求書を取得します。 |
 | GetInvoices                                            | InvoiceSearchCriteria invoiceSearchCriteria, QueryResultSettings queryResultSettings                                                               | PageResult\<OrderInvoice\> | 従業員                 | 検索条件に結びつく未処理の請求書を取得します。                                              |
 | GetInvoicedSalesLinesBy- SalesIds                        | IEnumerable\<string\> salesIds, QueryResultSettings queryResultSettings                                                                        | PageResult\<SalesLine\>    | 従業員                 | 販売注文IDごとの請求済販売明細行の一覧を取得します。                                        |
-| CreatePickingList [廃止 ("かわりに CreatePickingListForItems を使用")]  | salesId string型                                                                                                                                     | 無効                           | 従業員                 | 販売注文のピッキングリストを作成します。                                                                |
+| CreatePickingList [廃止(かわりにCreatePickingListForItemsを使用)]  | salesId string型                                                                                                                                     | 無効                           | 従業員                 | 販売注文のピッキングリストを作成します。                                                                |
 | CreatePickingListForItems                              | string salesId, IEnumerable- \<PickAndPackSalesLineParameter\> pickAndPackSalesLineParameters                                                    | 文字列                         | 従業員                 | 販売注文の選択された行のピッキング リストを作成する。                                               |
 | GetPickingLists                                        | salesId string型, QueryResultSettings queryResultSettings                                                                                            | PageResult\<PickingList\>  | 従業員                 | Headquarters からの受注のピッキング リストを取得します。                                           |
 | CreatePackingSlip                                      |                                                                                                                                                    | 無効                           | 従業員                 | パッキングスリップを作成する                                                                                  |
@@ -399,8 +394,6 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 | GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | 従業員、顧客、匿名、アプリケーション               | 検索基準に基づいて、製品の在庫状況を予測します。                                                                                               |
 | GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | 従業員、顧客、匿名、アプリケーション               | 特定の製品倉庫のペアに対して、予想される製品の在庫状況を取得します。                                                                                               |
 
-
-
 ## <a name="sales-orders-fulfillment-controller"></a>販売注文履行 コントロール
 
 | API                            | パラメーター                                                                                                                                  | 戻り値                       | 対応している商取引上の役割 | 説明                                                                |
@@ -454,7 +447,6 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 | API           | パラメーター                    | 戻り値                | 対応している商取引上の役割 | 説明          |
 |---------------|------------------------------|-----------------------------|--------------------------|----------------------|
 | GetStoreSafes | QueryResultSettings 設定 | PageResult\<StoreSafe\> | Employee                | 店舗の金庫リストを取得します。 |
-
 
 ## <a name="warehouse-controller"></a>ウェアハウスのコントロール
 
@@ -684,13 +676,11 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 | GetEntityByKey                     | 文字列 journalId                                                                                                  | StockCountJournal                              | 従業員                 | 仕訳帳エンティティを作成します。                                                                                   |
 | UpdateEntity                       | StockCountJournal エンティティ                                                                                          | StockCountJournal                              | 従業員                 | 仕訳帳エンティティを更新します。                                                                                   |
 | PatchEntity                        | StockCountJournal エンティティ                                                                                          | StockCountJournal                              | 従業員                 | 仕訳帳エンティティを部分的に更新します。                                                                         |
+
 ## <a name="scan-result-controller"></a>結果コントローラのスキャン
 
 | API            | パラメーター          | 戻り値 | 対応している商取引上の役割 | 説明                        |
 |----------------|--------------------|--------------|--------------------------|------------------------------------|
 | GetEntityByKey | 文字列 scannedText | ScanResult   | 従業員                 | キーにより ScanResult エンティティを取得します。 |
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

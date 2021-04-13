@@ -2,11 +2,9 @@
 title: AD FS Microsoft 365 の互換性
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) 環境と Microsoft 365 で Active Directory フェデレーション サービス (AD FS) の同じインスタンスを使用する方法について説明します。
 author: faix
-manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 0659b0be8799ac5f78d41440324a856e75d07e49
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1aed9f166feb2d8a1c01dfa2feb60da85fef4dd5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685459"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745331"
 ---
 # <a name="ad-fs-microsoft-365-compatibility"></a>AD FS Microsoft 365 の互換性
 

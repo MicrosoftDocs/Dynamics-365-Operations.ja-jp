@@ -2,11 +2,9 @@
 title: コードの移行とホーム ページのアップグレード
 description: このトピックでは、コードの移行に関するトピックへのリンクを提供します。
 author: RobinARH
-manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75ba6341b97d396f3452953b628c6397a9c80e42
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 228e6fd5595ab5d3778291e392235fdd96ec6122
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688511"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749608"
 ---
 # <a name="code-migration-and-upgrade-home-page"></a>コードの移行とホーム ページのアップグレード
 
@@ -38,6 +36,10 @@ Dynamics AX 2012 から Dynamics 365 Finance、Supply Chain Management、また�
 - [分割されたモデル](../dev-tools/model-split.md)
 - [Finance and Operations の削除済みまたは非推奨の機能](deprecated-features.md)
 - [非推奨 API](deprecated-apis.md)
+
+## <a name="learning-path"></a>ラーニング パス
+
+- [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/)
 
 ## <a name="additional-concepts"></a>追加コンセプト
 

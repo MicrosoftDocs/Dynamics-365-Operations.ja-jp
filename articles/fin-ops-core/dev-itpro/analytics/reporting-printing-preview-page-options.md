@@ -1,25 +1,23 @@
 ---
 title: ドキュメント レポートのプレビュー オプション
 description: このトピックでは、埋め込みドキュメント レポート プレビューアーで使用できるオプションについて説明します。
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2020-06-21
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: e7290bd1595a48555beb9c348fba7068b198a57d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5bf73f1c8a7cc3baa5746953c56f28fcc602937f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688301"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754336"
 ---
 # <a name="document-reporting-preview-options"></a>ドキュメント レポートのプレビュー オプション
 

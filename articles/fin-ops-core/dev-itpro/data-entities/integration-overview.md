@@ -2,11 +2,9 @@
 title: データ統合戦略の選択
 description: このトピックは、設計者と開発者が統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9b3a6bc91dc514c1b76e4c65cd998c33a97a86e
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: f7ab4cf42eed7890b79a9d237cffa75b76055570
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744657"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749973"
 ---
 # <a name="choose-a-data-integration-strategy"></a>データ統合戦略の選択
 

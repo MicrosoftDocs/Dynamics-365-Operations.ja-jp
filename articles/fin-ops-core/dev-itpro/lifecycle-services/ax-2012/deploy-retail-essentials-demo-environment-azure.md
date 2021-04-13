@@ -2,11 +2,9 @@
 title: Azure での Retail Essentials デモ環境の配置
 description: このトピックでは、Microsoft Azure にRetail essentials デモを配置する方法について説明します。
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 6e27c8cfe34643804d623aae8827022412e4deb1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 48641e33af10518644927b75c3a2c42db1a31285
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685445"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750259"
 ---
 # <a name="deploy-retail-essentials-demo-environments-on-azure"></a>Azure での Retail Essentials デモ環境の配置
 

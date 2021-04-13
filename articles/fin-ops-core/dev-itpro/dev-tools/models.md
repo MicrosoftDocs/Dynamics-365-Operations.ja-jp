@@ -2,11 +2,9 @@
 title: モデルとパッケージ
 description: このトピックでは、モデルとパッケージの概念について説明します。 新しいモデルの作成方法、パラメーターの更新方法、およびモデル間の依存関係を視覚化する方法について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65e514843b5594d26a793b9771ea9d3f9d9f2e6f
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: ca8e3309203b3f1750f3572424723d4f59b3cf6a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093460"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749281"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 

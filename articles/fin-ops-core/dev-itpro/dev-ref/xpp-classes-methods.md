@@ -2,11 +2,9 @@
 title: クラスおよびメソッド
 description: このトピックでは、X++ でクラスを作成および使用する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9bda142e2aaa48c84802f052f3c8cd3fa2e69c6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c5a62115cd4ed277890d4839db9c9d7c84abd79f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408750"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753038"
 ---
 # <a name="classes-and-methods"></a>クラスおよびメソッド
 

@@ -2,11 +2,9 @@
 title: コントロールのチェックリスト
 description: この記事では、コントロールのすべてのリリース条件を分類して説明しています。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 641b339c2ca67aa746fa956f2e2985c72333a5b0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1deb261f11f888df6b7fd7d7d149dd3e81802972
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681582"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749239"
 ---
 # <a name="control-checklist"></a>コントロールのチェックリスト
 

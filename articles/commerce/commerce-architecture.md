@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce アーキテクチャの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。
 author: samjarawan
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ed9117fa091b8fac687ca9f93f4152a023288d11
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3e1a9886fae3d6593fede0e718cbf6a162409c8c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993565"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796186"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
@@ -35,7 +33,7 @@ ms.locfileid: "4993565"
 
 次の図は、Dynamics 365 Commerce コンポーネントの概要を示します。
 
-<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerceコンポーネントの概要](./media/commerce-component-overview.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerceコンポーネントの概要](./media/commerce-component-overview.jpg)</a>
 
 ## <a name="architecture-benefits"></a>アーキテクチャのメリット
 
@@ -64,6 +62,10 @@ Data Lake Storage には、アクセス可能で、永続性があり、最新�
 #### <a name="dynamics-365"></a>Dynamics 365
 
 Dynamics 365は、中規模から大規模なビジネス向けの包括的で柔軟性のあるエンタープライズ リソース プランニング (ERP) ソリューションを提供するアプリケーションを集めたものです。 これにより、多数のパートナーを通じて顧客固有の要件に合った拡張可能なフレームワークとエコシステムが提供されます。 Dynamics 365 アプリケーションには、対象となる業務セグメントの機能を用意しています。 また、互いの強みを活かし、Microsoft の他のサービスや提供機能を活用して、顧客の複雑なビジネスの運営を支援するソリューションを提供しています。
+
+#### <a name="pos"></a>POS
+
+POS では、新たなチャンネルのオムニチャンネル ソルーションを提供することにより、小売業者の操作が簡略化されます。 これらのチャンネルは、現金売りトランザクション、現金/シフト管理、顧客契約、支援販売、クライアントリング、エンドレス アイル、注文処理/フルフィルメント、在庫管理、レポートなどの様々なコマース ビジネスを実行します。
 
 #### <a name="modern-pos"></a>Modern POS
 

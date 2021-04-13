@@ -2,11 +2,9 @@
 title: LookupMetadata タイプ
 description: ルックアップ メタデータの種類。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2fcb85781ff877ed5b714cf0ee54a029f59fe2f5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eaebde03b6780e9954ad07db716ebef2e4ba29ba
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688497"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745635"
 ---
 # <a name="lookupmetadata-type"></a>LookupMetadata タイプ
 

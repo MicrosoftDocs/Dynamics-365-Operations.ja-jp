@@ -2,11 +2,9 @@
 title: 提案依頼 (RFP) の応答
 description: RFP 応答ページには、提案依頼 (RFP) にあるよく寄せられる質問と、推奨される回答が含まれています。
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 4c6a0a664e4f77d6346543ae7fbc57415996d88e
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 20ba79e5a438d82e63121f5baed6451825dca537
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126959"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744775"
 ---
 # <a name="request-for-proposals-rfp-responses"></a>提案依頼 (RFP) の応答
 

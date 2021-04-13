@@ -2,11 +2,9 @@
 title: X++ クラス ライブラリ
 description: このトピックでは、X++ でのクラス ライブラリについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d20df2e349964a25ee2ae649cfddc14604d503db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 465588305f7b97bdb22a9dc1ba190178947e85c2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409394"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749936"
 ---
 # <a name="x-class-library"></a>X++ クラス ライブラリ
 

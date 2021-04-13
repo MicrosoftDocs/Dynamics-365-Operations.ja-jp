@@ -2,11 +2,9 @@
 title: プロセス パラメーター
 description: このトピックでは、プロセス自動化フレームワークでカスタム パラメーターを実装する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7ea87c9a44acacc5bed4ec097d62a5d225f749
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6ec9071a5c8b62249e5bcab78919967df9f30bc1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683963"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751344"
 ---
 # <a name="process-parameters"></a>プロセス パラメーター
 

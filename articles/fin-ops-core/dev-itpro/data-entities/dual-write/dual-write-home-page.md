@@ -2,11 +2,9 @@
 title: 二重書き込みホーム ページ
 description: このトピックでは、二重書き込みに関する情報へのリンクについて説明します。
 author: robinarh
-manager: AnnBe
 ms.date: 02/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26b8d91adaf561b04c5a2e2ddfe457b21045954b
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 2341fdeb15f32ec694801170f90960cb93835416
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5131259"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808714"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -88,17 +86,22 @@ ms.locfileid: "5131259"
     + [統合された元帳](ledger-mapping.md)
     + [統合された税マスター](tax-mapping.md)
 
-+ [Field Service および Supply Chain Management の調達の統合](scm-field-service-procurement.md)
 + [Supply Chain Management の価格エンジンとのオンデマンド同期](pricing-engine.md)
++ [コマース価格エンジンとのオンデマンド同期](commerce-pricing.md)
 + [二重書き込みでの見込顧客の現金化](dual-write-prospect-to-cash.md)
++ [Field Service および Supply Chain Management の調達の統合](scm-field-service-procurement.md)
 + [サービスのための社内資産](in-house-assets.md)
-+ [作業者、職務、および職位の統合](integrated-hr.md)
 + [手持在庫の可用性](inventory-availability.md)
++ [作業者、職務、および職位の統合](integrated-hr.md)
++ [関係者とグローバル アドレス帳](party-gab.md)
++ [Power Portal を関係者データ モデルで使用する](party-gab-portal.md)
++ [注記の統合](notes-integration.md)
++ [マッピング参照](mapping-reference.md)
 
 ## <a name="support"></a>サポート
 
-+ [Field Service と Project Service Automation ソリューションのサポート](field-service-project-service-automation.md)
-+ [データ統合から二重書き込みへの見込顧客の現金データへの移行](migrate-prospect-to-cash.md)
++ [Field Service ソリューションと Project Service Automation ソリューションのサポート](field-service-project-service-automation.md)
++ [見込顧客の現金化のデータをデータ インテグレーターから二重書き込みに移行](migrate-prospect-to-cash.md)
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

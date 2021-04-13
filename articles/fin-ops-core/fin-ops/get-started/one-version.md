@@ -1,12 +1,10 @@
 ---
 title: 1 つのバージョンのサービス更新に関するよく寄せられる質問
-description: このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。
+description: このトピックでは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールについて明確に説明します。
 author: ShellyBakke
-manager: AnnBe
-ms.date: 08/11/2020
+ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,18 +12,20 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 31b8fd6422890c7e8cced0447428eec8c0c6a612
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 288967df5d9509ae63de2798b316ad41c57769f3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796594"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749742"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
 [!include[banner](../includes/banner.md)]
 
 2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ [Dynamics 365 の更新の提供方法の変更](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/)を発表しました。  2019 年 6 月、顧客からのフィードバックに基づき、[利用可能な新しい柔軟なサービスの更新](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)を発表しました。 このよく寄せられる質問は、準備のために使用できるサービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。 必要に応じて、このトピックに追加情報を追加し続けします。
+
+1 つのバージョンのサービス更新の詳細については、[1 つのバージョンのサービス更新の概要](../../dev-itpro/lifecycle-services/oneversion-overview.md)を参照してください。
 
 
 ### <a name="can-the-update-be-delayed-what-is-the-policy"></a>更新を遅らせることができますか、ポリシーとは何ですか。

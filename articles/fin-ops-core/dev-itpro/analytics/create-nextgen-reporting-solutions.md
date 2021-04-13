@@ -1,27 +1,25 @@
 ---
 title: レポート ソリューションの作成
 description: このチュートリアルでは、レポートを作成する方法、定義済みのビューを展開する方法、グラフにナビゲーションを追加する方法、自由形式のレポート デザイナーを使用する方法、およびパラメーターをカスタマイズする方法について説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.custom: 21551
 ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 974cfc8058eb1bce7c638ddec2b245552015cb85
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 3e948840ff39978536c56a56a67d570e5cf5f2be
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093429"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755464"
 ---
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 

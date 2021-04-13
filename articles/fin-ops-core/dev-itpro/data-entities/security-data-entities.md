@@ -2,11 +2,9 @@
 title: セキュリティとデータ エンティティ
 description: このトピックでは、データ エンティティのセキュリティについて説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 222b18106e8af461f801097e49d8626c336dc01f
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: fcf99995d9334be1820444979431ea1924663115
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127661"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749688"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 

@@ -3,10 +3,8 @@ title: データ管理パッケージ REST API
 description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
 author: Sunil-Garg
 ms.date: 06/18/2020
-manager: AnnBe
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: 1a9da9e2af9bc71ddf16066ad6dadf2f2214a755
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 813da7d30fc744792a189431ea2b2ebc57e4cfe2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685689"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750984"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 

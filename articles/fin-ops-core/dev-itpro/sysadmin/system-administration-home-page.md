@@ -2,11 +2,9 @@
 title: システム管理ホーム ページ
 description: このトピックは、システム管理者が利用できるリソースを一覧表示します。
 author: sericks007
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f2c15e04c7b219546f15f1760ad9320617a470e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 290f04139acb984593d917df666ce6ea61ae5d1d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679902"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745899"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 

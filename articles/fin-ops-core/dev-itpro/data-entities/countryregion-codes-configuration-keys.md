@@ -2,11 +2,9 @@
 title: 国/地域コードとコンフィギュレーション キー
 description: この記事では、構成キーと国/地域の両方の実装の観点から適用できるシナリオを説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ecddca62a092729ce38947275e561d3679f59ba
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 757e472b23e82357ce3eccfece27ef3a2022db80
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679362"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752312"
 ---
 # <a name="countryregion-codes-and-configuration-keys"></a>国/地域コードとコンフィギュレーション キー
 

@@ -2,11 +2,9 @@
 title: セキュリティ アップグレード アドバイザー ツールのユーザー ガイド
 description: セキュリティ アップグレード アドバイザー ツール は、Microsoft Dynamics AX から Microsoft Dynamics AX 2012 へのセキュリティ設定のアップグレードを簡略化することを目的としています。
 author: kfend
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.openlocfilehash: 049c57298169522c21de34bfb2690435c707eba2
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: d0bf2c9f7153c6c2152f4395a18b399739bfbfc9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129965"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744765"
 ---
 # <a name="security-upgrade-advisor-tool-user-guide"></a>セキュリティ アップグレード アドバイザー ツールのユーザー ガイド
 

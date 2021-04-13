@@ -2,11 +2,9 @@
 title: Adyen 向け Dynamics 365 Payment Connector
 description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
-manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: cc5a6c43bb12ccbea9e65978660883e95f8e31cf
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: a68d9ccec841ea67a85815286000b5b9594cecbc
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115091"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791231"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -65,13 +63,6 @@ ms.locfileid: "5115091"
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
-
-# <a name="1007"></a>[10.0.7](#tab/10-0-7)
-### <a name="dynamics-365-retail-pos-version-1007"></a>Dynamics 365 Retail POS バージョン 10.0.7
-| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
-| --- | --- |
-| adyen_v1_38p5 | adyen_v1_45p3 |
-| | *注記: 検証テストは adyen_v1_56p5 で実行されています。詳細については、以下の注記を参照してください。* |
 
 # <a name="1008"></a>[10.0.8](#tab/10-0-8)
 ### <a name="dynamics-365-retail-pos-version-1008"></a>Dynamics 365 Retail POS バージョン 10.0.8
@@ -127,6 +118,12 @@ ms.locfileid: "5115091"
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_56p9 | adyen_v1_56p9 |
+
+# <a name="10017"></a>[10.0.17](#tab/10-0-17)
+### <a name="dynamics-365-retail-pos-version-10017"></a>Dynamics 365 Retail POS バージョン 10.0.17
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_59p7 | adyen_v1_59p7 |
 
 ---
 
@@ -335,11 +332,12 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | [SCA 支払リダイレクト](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(10.0.12 以降) |
 | [専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト](https://docs.microsoft.com/dynamics365/commerce/pos-multi-hws) | ✔<br>(10.0.12 以降) | |
 | [Adyen コネクタによる SDK レベルのチップ サポート](tipping.md) | ✔<br>(10.0.14 以降) | |
+| [注文請求の増分取得](incremental-capture.md) |  | ✔<br>(10.0.18 以降) |
 
 
 ## <a name="sign-up-with-adyen"></a>Adyen でサインアップ
 
-Adyen 向け Dynamics 365 Payment Connector を使用するには、Adyen を使用する別の契約を保有している必要があります。 Adyen のサービスの詳細について、またはテスト商業アカウントを作成するには、[Adyen Web サイト](https://www.adyen.com/partners)を参照してください。
+Adyen 向け Dynamics 365 Payment Connector を使用するには、Adyen を使用する別の契約を保有している必要があります。 Adyen のサービスの詳細について、またはテスト商業アカウントを作成するには、[Adyen Web サイト](https://www.adyen.com/signup)を参照してください。
 
 ## <a name="setup-and-configuration"></a>設定およびコンフィギュレーション
 
@@ -653,7 +651,6 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+[支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]

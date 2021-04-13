@@ -2,11 +2,9 @@
 title: 二重書き込み FAQ
 description: このトピックでは、二重書き込みについてよく寄せられる質問に回答します。
 author: robinarh
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3acfac5d953e773ed82a4894fcf956361d0b41b
-ms.sourcegitcommit: 48cbc5b0dbbc8aaddd19ee36fb04834540c4781a
+ms.openlocfilehash: a2727efab48bf6c29fb98c9d9ffc6175ec576f9b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5107822"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754128"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 

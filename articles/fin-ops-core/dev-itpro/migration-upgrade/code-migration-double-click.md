@@ -2,11 +2,9 @@
 title: コードの移行 - マウス ダブルクリック ロジック
 description: このトピックでは、mouseDblClick() オーバーライドが廃止され、このロジックを新しいコントロールに移動する方法について説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8845bc10c22fe9f51291c77a467716f6de23b144
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ac1c9c464a30c9d5f03e7184f1c232dd0f19bb81
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688513"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753860"
 ---
 # <a name="code-migration---mouse-double-click-logic"></a>コードの移行 - マウス ダブルクリック ロジック
 

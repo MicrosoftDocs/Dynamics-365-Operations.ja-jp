@@ -2,11 +2,9 @@
 title: Azure でのテスト環境の配置
 description: このトピックでは、Microsoft Azure でのテスト環境の配置方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c26c82b395b8979001c4d96c8a53aed65d6c775e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 750eb3f673b7aa5876ef63d623804527128adce5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688221"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745285"
 ---
 # <a name="deploy-test-environments-on-azure"></a>Azure でのテスト環境の配置
 

@@ -2,11 +2,9 @@
 title: Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 description: このトピックでは、Retail SDK バージョン 10.0.11 以降を使用して新しい Retail Server API を作成する方法について説明します。
 author: mugunthanm
-manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 9912b1f19469d6f8735abc308ccf3c58d4e25794
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 22fa9e482acfb0a843e7c80c2ad3e3b961308c4b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126680"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792975"
 ---
 # <a name="create-a-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 
@@ -210,6 +208,50 @@ public static class CommerceRoles
     public static readonly string[] All;
 }
  ```
+
+### <a name="support-paging-in-retail-server-apis"></a>Retail Server API のページングのサポート
+
+リリース 10.0.18 から、API にページングが必要な場合、API に **QueryResultSettings** を追加し、クライアントから値を渡すことができます。 **QueryResultSettings** には、**PagingInfo** およびレコードがフェッチまたはスキップするための他のパラメーターが含まれます。  
+
+拡張機能は、**QueryResultSettings** を CRT 要求に渡すことができ、データベース クエリがあるときに CRT 要求で使用することができます。
+
+Retail SDK では、完全なサンプル コードを使用することができます: RetailSDK\SampleExtensions\CommerceRuntime\Extensions.StoreHoursSample\StoreHoursDataService.cs RetailSDK\SampleExtensions\RetailServer\Extensions.StoreHoursSample\StoreHoursController.cs"
+
+```csharp
+
+    [HttpPost]
+        [Authorization(CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+        public async Task<PagedResult<SampleDataModel.StoreDayHours>> GetStoreDaysByStore(IEndpointContext context, string StoreNumber, QueryResultSettings queryResultSettings)
+        {
+            var request = new GetStoreHoursDataRequest(StoreNumber) { QueryResultSettings = queryResultSettings };
+            var hoursResponse = await context.ExecuteAsync<GetStoreHoursDataResponse>(request).ConfigureAwait(false);
+            return hoursResponse.DayHours;
+        }
+
+```
+
+```csharp
+
+private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+            {
+                ThrowIf.Null(request, "request");
+
+                using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+                {
+                    var query = new SqlPagedQuery(request.QueryResultSettings)
+                    {
+                        DatabaseSchema = "ext",
+                        Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+                        From = "CONTOSORETAILSTOREHOURSVIEW",
+                        Where = "STORENUMBER = @storeNumber",
+                    };
+
+                    query.Parameters["@storeNumber"] = request.StoreNumber;
+                    return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
+                }
+            }
+            
+  ```
 
 ### <a name="register-the-extension"></a>拡張機能の登録
 

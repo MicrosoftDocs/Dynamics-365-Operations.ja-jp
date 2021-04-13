@@ -2,11 +2,9 @@
 title: MultiLookup タイプ
 description: 複数ルックアップ コントロールの種類。 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1a9b2ef72ee0e7bc8c50791c1c0aed992ea8bc6a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d68a461f5a836745d0e6b68577499b6ce885c9a9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687627"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744193"
 ---
 # <a name="multilookup-type"></a>MultiLookup タイプ
 
@@ -93,7 +91,7 @@ getEntityRefs: function(): string [ ] &#124; number [ ]
 
 
 
-### <a name="hidden"></a>非表示
+### <a name="hidden"></a>hidden
 
 hidden: boolean
 
@@ -109,7 +107,7 @@ setEntityRefs: function(ids: string [ ] &#124; number [ ]): Promise &lt;any&gt;
 
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>方法
 
 ### <a name="applydesign"></a>applyDesign
 

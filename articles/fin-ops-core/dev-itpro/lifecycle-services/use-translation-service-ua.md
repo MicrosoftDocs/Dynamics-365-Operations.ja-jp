@@ -2,11 +2,9 @@
 title: ドキュメント ファイルを翻訳します
 description: このトピックでは、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 50edb1841f5bf9b8eeba6764fe872fc8fc4bb3b3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1acc6623fa59676429b506ec32d0dc97f99de3e4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680462"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748413"
 ---
 # <a name="translate-documentation-files"></a>ドキュメント ファイルの翻訳
 

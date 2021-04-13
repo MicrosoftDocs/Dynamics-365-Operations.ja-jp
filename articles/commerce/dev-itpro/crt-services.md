@@ -1,12 +1,10 @@
 ---
 title: Commerce Runtime (CRT) のサービス
-description: このトピックでは、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含むポータブル .NET ライブラリの集合である Commerce Runtime (CRT) サービスについて説明します。
+description: このトピックでは、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含むライブラリである Commerce Runtime (CRT) サービスについて説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-18
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: 725541ee90a3f20d1d0209379f2604c5f1441bb7
-ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
+ms.openlocfilehash: 246674b5ef823271ece1843867f4ed541441d0e5
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5031863"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795675"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
@@ -46,6 +44,7 @@ CRT には、次の 3 つの主要なレイヤーがあります。
 > CRT のすべてのクラスの詳細情報は、RetailSDK\Documents\CommerceRuntimeMessages.chm にある Retail SDK を参照してください。
 
 ## <a name="overall-flow"></a>全体的な流れ
+
 全体的なフローは次のようになります。
 
 CRT サービス要求 \< \> 0 以上のワークフロー要求 \< \> 0 以上のデータ アクセス要求

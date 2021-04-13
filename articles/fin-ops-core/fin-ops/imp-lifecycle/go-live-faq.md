@@ -2,11 +2,9 @@
 title: 実装プロジェクト FAQ の Go-live
 description: このトピックでは、実装プロジェクトの運用についてよく寄せられる質問を一覧表示します。
 author: sshashi7
-manager: AnnBe
 ms.date: 07/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 73fa4623eb0b3e31e8cf57518dd38c6faee56c53
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: e3182fe5c511e383d11b40d7516e3ba12570a70c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799046"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751846"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 

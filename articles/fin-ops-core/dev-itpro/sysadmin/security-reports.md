@@ -2,11 +2,9 @@
 title: 最初から用意されているセキュリティ レポート
 description: このトピックでは、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられているユーザーを理解するのに役立つセキュリティ レポートについて説明します。
 author: peakerbl
-manager: AnnBe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysSecConfiguration, SrsReportViewerForm
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b0c6e159f526c87ba751d72005bb090a6a7cd1ad
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 9c9d12c1b045c5447d559759efce1249b2c970a2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128224"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745905"
 ---
 # <a name="out-of-box-security-reports"></a>最初から用意されているセキュリティ レポート
 

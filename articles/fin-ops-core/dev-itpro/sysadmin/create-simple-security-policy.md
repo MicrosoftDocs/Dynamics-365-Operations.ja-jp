@@ -2,11 +2,9 @@
 title: セキュリティ ポリシーを作成する
 description: このトピックでは、顧客グループの範囲に基づいて、顧客および顧客グループへのアクセスを保護する単純なセキュリティ ポリシーを作成する方法について説明します。
 author: Peakerbl
-manager: AnnBe
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8e16634f15fb77011dc4842f679746cb0046f463
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9e33a16ffe865ecb3af14e28d2f221d7f23f76fa
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679912"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745989"
 ---
 # <a name="create-a-security-policy"></a>セキュリティ ポリシーを作成する
 [!include [banner](../includes/banner.md)]

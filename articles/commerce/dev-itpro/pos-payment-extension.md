@@ -1,12 +1,10 @@
 ---
 title: 販売時点管理 (POS) 支払拡張機能
-description: 支払いの拡張性をサポートするために POS で拡張点を使用すると、ハードウェア ステーション API を使用する支払デバイスまたは支払コネクタに主要な支払いロジックを実装することができます。
+description: このトピックでは、ハードウェア ステーション API を使用して、支払デバイスまたは支払コネクタに主要な支払いロジックを実装する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8eabce858f50369c791dbcf41ea538826bbf8f82
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b4322cdff4b5a416e76a11e88c89b8e65dc74184
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681510"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792987"
 ---
 # <a name="point-of-sale-pos-payment-extension"></a>販売時点管理 (POS) 支払拡張機能
 

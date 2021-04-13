@@ -2,11 +2,9 @@
 title: Retail ハードウェア ステーションのコンフィギュレーションとインストール
 description: このトピックでは、セルフサービスを使用して Retail ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。
 author: jashanno
-manager: AnnBe
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareStation
 audience: IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a9013b5943a135be8a446e0bd2b1d54d8345d7d8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 39a65a4d112e6c34f96339e074cfc6525ee307fb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979634"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792000"
 ---
 # <a name="configure-and-install-retail-hardware-station"></a>Retail ハードウェア ステーションのコンフィギュレーションとインストール
 

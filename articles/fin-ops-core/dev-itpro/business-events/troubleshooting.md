@@ -2,11 +2,9 @@
 title: ビジネス イベントのトラブルシューティング
 description: このトピックでは、ビジネス イベントのトラブルシューティングについて説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 5b45ed5e229603ace9303aa999f9aa01af42cc33
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5efa79aaef5da6449b4e84b89b71744c9efa6962
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688095"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745347"
 ---
 # <a name="troubleshoot-business-events"></a>ビジネス イベントのトラブルシューティング
 

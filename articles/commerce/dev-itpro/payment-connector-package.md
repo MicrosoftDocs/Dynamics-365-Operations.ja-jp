@@ -2,11 +2,9 @@
 title: Finance and Operations 配置用コマース支払パッケージの作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce の Finance and Operations 配置用に支払コネクタをパッケージ化する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,14 +14,14 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: efad7d429f8bd63751a21a2d9c95180b8cd7dd36
-ms.sourcegitcommit: cd0860e47dcc6666911ce8ca084dd717eca65979
+ms.openlocfilehash: abde2b773f88ae5ef8cdd55d326bd09f4adc44e2
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "4858156"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791183"
 ---
-# <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations 配置用コマース支払パッケージの作成
+# <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations のデプロイのための Commerce 支払パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 

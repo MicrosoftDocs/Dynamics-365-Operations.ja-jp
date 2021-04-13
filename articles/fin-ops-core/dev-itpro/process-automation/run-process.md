@@ -2,11 +2,9 @@
 title: プロセスの実行
 description: このトピックでは、プロセス自動化フレームワークでプロセスを実行する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eed4135c7aa9f4017a84725a1f0d25fb0fb88e39
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4a91cb3700fd3a52183fc506543191b2e7b525cb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679222"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745113"
 ---
 # <a name="run-processes"></a>プロセスの実行
 

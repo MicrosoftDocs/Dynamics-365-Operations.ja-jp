@@ -2,11 +2,9 @@
 title: 開発システム要件
 description: このトピックでは、開発のシステム要件を一覧表示します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 605240cec0e541656c811d23c006a638427b5af8
-ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
+ms.openlocfilehash: 6c5d280cc211eb1d482fb65fe922bed11f8d63dc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409599"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745297"
 ---
 # <a name="development-system-requirements"></a>開発システム要件
 

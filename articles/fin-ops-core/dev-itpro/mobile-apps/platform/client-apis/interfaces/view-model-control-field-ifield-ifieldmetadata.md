@@ -2,11 +2,9 @@
 title: FieldMetadata タイプ
 description: フィールド メタデータのインターフェイス。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2f5f18b9da77f42a1da60440c04e82f3267aa724
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7d42cc6853f1c6670917f374e821b7502ba81bef
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679238"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744199"
 ---
 # <a name="fieldmetadata-type"></a>FieldMetadata タイプ
 

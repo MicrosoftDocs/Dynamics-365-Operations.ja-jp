@@ -2,11 +2,9 @@
 title: ビルド操作
 description: このトピックでは、プロジェクトのビルド プロセスとモデル パッケージの完全なビルドについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af9eb8755c63c83e3c1eaa16226d5248666e0832
-ms.sourcegitcommit: 2186155e4662ae5010a190c0ede458ef6cf91f24
+ms.openlocfilehash: 6593665772a8aa6aa8bb449150f96847ba925fa7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4409524"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750364"
 ---
 # <a name="build-operations"></a>ビルド操作
 

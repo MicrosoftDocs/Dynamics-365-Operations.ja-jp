@@ -2,11 +2,9 @@
 title: Finance and Operations のワークフロー サブシステムのアップデート
 description: このトピックでは、Finance and Operations のワークフロー システムを確認します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b29f285a47e470f5d02243f664f9a0be43b2ff3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 89bb62a93579782ed2a6edbeb7bb9a3b46826566
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688193"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748235"
 ---
 # <a name="workflow-subsystem-updates-in-finance-and-operations"></a>Finance and Operations のワークフロー サブシステムのアップデート
 

@@ -2,11 +2,9 @@
 title: 翻訳メモリ ファイル
 description: このトピックでは、高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
 author: kfend
-manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: be259d51931842dd55df9c95f79482c32539202c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: ac02a159b65745fab0ac7d7f8b8a3bace72efe77
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130789"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748415"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 

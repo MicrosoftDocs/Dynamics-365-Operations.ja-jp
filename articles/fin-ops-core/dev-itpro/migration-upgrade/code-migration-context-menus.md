@@ -2,11 +2,9 @@
 title: コードの移行 - コンテキスト メニュー コード
 description: このトピックでは、コンテキスト メニュー ( ショートカット メニュー) に必要なプログラミング モデルの詳細情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6976bdc38c1595c805f624a50c2e136548ebd8ac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0aba0f05ac8d83e8eaefed4f257d7ec3f4e0a396
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688515"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748095"
 ---
 # <a name="code-migration---context-menu-code"></a>コードの移行 - コンテキスト メニュー コード
 

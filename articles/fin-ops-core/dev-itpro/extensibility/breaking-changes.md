@@ -2,11 +2,9 @@
 title: 変更の分割
 description: このトピックでは、分割変更について説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 34c5f8aa913596e0bbc797deefde46e7fa1359b6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 477f83d510a830c2a6d2199e57469aa5af7573a5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409272"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748487"
 ---
 # <a name="breaking-changes"></a>変更の分割
 

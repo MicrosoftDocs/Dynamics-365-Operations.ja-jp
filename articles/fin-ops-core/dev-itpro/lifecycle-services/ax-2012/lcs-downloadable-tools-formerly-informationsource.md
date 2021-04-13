@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) のダウンロード可能ツール
 description: このトピックでは、Lifecycle Services (LCS) からダウンロードできるツールについて説明します。
 author: kfend
-manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b99e3389c7eeb42c73ef20edbda9a398deb347e2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 83e06d48516ad22d330419daa6ca414784ca4de7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744523"
 ---
 # <a name="downloadable-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のダウンロード可能ツール
 

@@ -2,11 +2,9 @@
 title: セクション Power BI のサブパターン
 description: この記事では、セクション PowerBI サブパターンに関する情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1596cdeaa4fb56f287949952ed19068f36abc5b4
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: b682b4520943d933f7ee2a43d4ae9aa45b79d609
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092373"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750902"
 ---
 # <a name="section-power-bi-subpattern"></a>セクション Power BI のサブパターン
 

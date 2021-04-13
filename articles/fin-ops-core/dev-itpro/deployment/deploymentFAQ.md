@@ -2,11 +2,9 @@
 title: セルフサービス配置の FAQ
 description: このトピックでは、セルフサービス配置に関してよくある質問に対する回答を示します。
 author: rashmansur
-manager: AnnBe
-ms.date: 11/09/2020
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: c0db290d424203ccff3c152f15ca7601bf9b9f9c
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 9f258497eb34d4865f741304dcde5620c1d1f856
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077680"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744819"
 ---
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 
@@ -94,6 +92,36 @@ LCS を通じて環境で実行されるセルフサービス操作に関連す�
 
 重要なアクションのこのトピックの前方に掲載されていない場合、このトピックにコメントを追加するかドキュメンテーション バグを記録すると、Microsoft が要求に対応します。
 
+## <a name="what-regions-are-supported-on-self-service-in-north-america"></a>セルフサービスがサポートされている北米の地域はどこですか?
+現時点では、北米では次の地域のみサポートしています。
+
+- 米国東部
+- 米国西部
+- 米国中部
+  > [!NOTE]
+  > 2021 年 4 月 1 日以降、セルフサービス移行のオプションとして米国中部は提供されなくなりました。
+
+利用可能な地域の詳細については、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location) を参照してください。
+
+### <a name="my-environments-are-currently-in-the-regions-that-are-no-longer-supported-how-will-this-change-affect-me"></a>使用している環境は、サポートされなくなった地域にあります。 この変更にどのような影響がありますか?
+2020 年 8 月 1 日以降にオンボードされたプロジェクトは、次の地域ではサポートされなくなりました。
+
+-   米国東部 2
+-   米国西部 2
+-   西中央アメリカ
+-   米国中北部
+-   米国中南部
+
+> [!NOTE]
+> このことは、格納データが 2020 年 8 月以前に非推奨領域に保有されている環境には影響しません。 非推奨の地域の顧客を別の地域に移動するための移行計画があります。 サポートされている国と地域についての最新の一覧は、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location)を参照してください。
+
+- すべてのセルフサービス移行では、環境がホストされる地域の発信 IP アドレスを変更しています。 新しい発信 IP アドレスを使用できるので、今後のセルフサービス移行の前に追加する必要があります。 IP アドレスの詳細については、「[Microsoft が管理する環境では、外部コンポーネントが明示的な発信 IP セーフ リストに依存しています。セルフサービス導入への移行後に、サービスに影響がないことを確認するにはどうすればよいですか?](deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment)」を参照してください。
+- 待機時間が原因で発生する統合やその他の依存関係があり、地域の変更による影響について質問がある場合は、[Microsoft サポート](../lifecycle-services/lcs-support.md) にお問い合わせください。
+- 米国中部は、セルフサービス移行のオプションではなくなりました。 顧客が二重書き込み機能、仮想エンティティ、または Dataverse に依存する Finance and Operations アプリケーションのアドインを利用する予定の場合、Dataverse は米国中部ではサポートされていないことに注意してください。 当面、米国中部で Dataverse をサポートする計画はありません。 サポートされている地域の機能を引き続き使用するために、お使いの環境を中部米国ではなく東部米国または西部米国に移行する計画です。
+- 一部の環境でセルフサービス機能を使用しているプロジェクトが米国中部にあり、その他の環境では中北部、中南部、中西部にある場合でも、移行の一環として残りの IaaS 環境を米国東部または西部に移動できます。 Service Fabric 上および米国中部にすでに存在する環境については、Microsoft サポートに問い合わせて、必要に応じて米国東部/西部への移動を依頼してください。
+-   現在のリージョンのすべての Azure リソースを確認し、移行の一環として今後の変更に備えて、新しいリージョンと同じ場所に配置する必要があるかどうかを評価してください。
+- 地域間の移行に関連するデータ移動について質問がある場合は、[異なるインフラストラクチャ (Microsoft による管理対セルフ サービス) 上にあるソースおよびターゲット](../database/database-pitr-prod-sandbox.md#the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service) を参照してください。
+
 ## <a name="for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment"></a>Microsoft が管理する環境には、明示的な発信 IP セーフ リストに依存関係がある外部コンポーネントがあります。 セルフサービス配置への移行後にサービスが影響を受けないようにするにはどうすればよいですか?
 セルフサービス移行では、環境がホストされる地域の発信 IP アドレスを変更しています。 新しい発信 IP アドレスを使用して、今後のセルフサービス移行またはポスト移行の準備として追加することができます。
 
@@ -124,6 +152,11 @@ AOS への受信 IP アドレスが動的になります。 これにより、�
 | 東南アジア | 20.44.247.0/26
 | 東日本 | 20.48.77.192/26
 | 西日本 | 20.39.179.192/26
+| インド南部 | 20.40.5.0/26
+| インド中部 | 20.193.248.192/26
+
+## <a name="what-does-the-downtime-look-like-for-self-service-migrations"></a>セルフサービス移行の場合、ダウンタイムはどのようになりますか?
+セルフサービスによる移行では、どのような環境でも 3 時間の 100% ダウンタイムが発生しますが、移行前の 6 時間のウィンドウを経て、実際の移行時のダウンタイムは 3 時間となります。 この環境は、6 時間の移行前のウィンドウでは限られたサービス機能を使用できますが、3 時間の移行ウィンドウでは完全に使用できなくなります。 移行前のウィンドウでは、パッケージの展開などのサービスアクティビティをスケジュールしないことをお勧めします。これは、移行が妨げられ、移行のキャンセルが発生するためです。
 
 ## <a name="is-there-a-potential-impact-on-the-environments-certificates"></a>環境の証明書に影響が及ぶ可能性がありますか?
 

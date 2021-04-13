@@ -2,11 +2,9 @@
 title: アドインの概要
 description: このトピックでは、Finance and Operations アプリの機能を拡張するために使用できるアドインに関する情報を提供します。
 author: ankugo
-manager: AnnBe
-ms.date: 01/27/2021
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 311ca2df960559d22a7b2bd8e480d514aba0446f
-ms.sourcegitcommit: 053f4cda6862fbcd9e3aa6e9cb009e7de833beac
+ms.openlocfilehash: 807f56d6638e73cf3e5a49978ce7d61477570ba7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5075725"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745135"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 
@@ -46,7 +44,7 @@ ms.locfileid: "5075725"
     
         ![Power Platform の設定](media/PowerPlatformSettings.png)
     
-- **全員** に Power Platform 実稼働環境の作成を許可しない組織のために、Finance and Operations 環境管理者のアカウントを管理者として追加する必要があります。
+- 組織では、運用環境に対して **全ユーザー** を選択する必要があります。
     
     Finance and Operations 環境管理者は、次のいずれかのロールに追加する必要があります。 このアクションを実行するには、グローバル管理者が必要です。
     - Global 管理者

@@ -2,11 +2,9 @@
 title: 稼働停止のレポート
 description: このトピックでは、Lifecycle Services (LCS) を通じて生産停止を報告する方法について説明します。
 author: angelmarshall
-manager: AnnBe
 ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: fd33aabc91ffb73636f098035840a0d105ec114e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 46b489d3219eb3699ce38e8cb6c4c29c0e09b201
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681066"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749610"
 ---
 # <a name="report-a-production-outage"></a>稼働停止のレポート
 

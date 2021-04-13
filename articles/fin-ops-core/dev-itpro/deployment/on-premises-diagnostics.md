@@ -2,26 +2,24 @@
 title: オンプレミス診断
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) 配置の診断データを公開するための情報を提供します。
 author: PeterRFriis
-manager: AnnBe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: ee21526058eb72ef6fd32a7fc29070704a1a2d7f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f4850374ccc9dcc5ebd626d40eb98c980d6891cf
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685465"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749293"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 

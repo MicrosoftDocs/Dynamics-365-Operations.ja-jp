@@ -2,11 +2,9 @@
 title: プロセスの自動化のフレームワークの開発
 description: このトピックでは、プロセス自動化フレームワークを使用する開発の概要について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44f85c7805f4cc36067e184ff24de14dea7941b4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d555cb1d8daa5345b0cf8d7c87e3c35735b6ab96
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685415"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745119"
 ---
 # <a name="process-automation-framework-development"></a>プロセスの自動化のフレームワークの開発
 

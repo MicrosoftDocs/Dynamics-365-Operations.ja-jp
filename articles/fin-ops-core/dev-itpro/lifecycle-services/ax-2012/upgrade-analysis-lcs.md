@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) におけるアップグレード分析
 description: このトピックでは、Lifecycle Services (LCS) でアップグレード分析を使用する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: fff6887677fadbb8b93bc48cf72cf45626638b4a
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 226b6d3888914fbe32fe2fd4d60993e5ea3653df
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126710"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744519"
 ---
 # <a name="upgrade-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) におけるアップグレード分析
 

@@ -2,11 +2,9 @@
 title: 分割されたモデル
 description: このトピックでは、スタックの 3 つの主要モデル、つまりアプリケーション プラットフォーム、アプリケーション基盤、アプリケーション スイートへの分割について説明します。
 author: maertenm
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79fb6dfba946458475d0b74a1d6630a73b6da1f4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ce150d36548251007a6f41ab55d65c0196c17835
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408835"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744223"
 ---
 # <a name="model-split"></a>分割されたモデル
 
@@ -127,9 +125,6 @@ ms.locfileid: "4408835"
 </tr>
 </tbody>
 </table>
-
-
-
 
 
 

@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce 認証フロー
 description: このトピックでは、Microsoft Dynamics 365 Commerce のさまざまな認証フローの概要を示します。
 author: samjarawan
-manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: bf4c9f5ee742b9ba3bfbc10209126eb49d3749ab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c5cc59198eb33a00f6c3987f119e085d63b3779a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980040"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797345"
 ---
 # <a name="dynamics-365-commerce-authentication-flows"></a>Dynamics 365 Commerce 認証フロー
 

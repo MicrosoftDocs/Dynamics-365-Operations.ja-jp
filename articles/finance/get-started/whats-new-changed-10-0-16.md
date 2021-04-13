@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.16 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-11-20
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6a5419ac2eb47baeee7b48a13795c97ca95d4280
-ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
+ms.openlocfilehash: a7b9d2dc8e452c7caa42447a67600a52d6725227
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "5053452"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836889"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-finance-10016-february-2021"></a>Dynamics 365 Finance 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 

@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance 10.0.6 (2019 年 11 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Finance 10.0.6 の新機能または変更された機能について説明します。
 author: roschlom
-manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 0c555f0d6cb47e7bb8b8896a025feb7fa8e3bcae
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 66eee29b323025a12d97a6f8f3772e3e1e3f0e19
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988561"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836877"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-1006-november-2019"></a>Dynamics 365 Finance 10.0.6 (2019 年 11 月) の新機能および変更された機能
 

@@ -2,11 +2,9 @@
 title: Microsoft Dynamics Insider Program
 description: これらの補足プレビュー条件 (プレビュー条項) は、 Microsoft Dynamics 365 Insiderプログラム契約 ("プログラム合意" と、これらのプレビュー用語で補足するために本プログラムの参加者が同意した "契約" と呼ばれます) に加えて補足します。
 author: ShellyBakke
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ROBOTS: NOINDEX, NOFOLLOW
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-4-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 8271253f5c0032367e98528554eeb367f9cd4a8a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 4bcba8beb8ca54bdc25db0c214840743b126c10e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693004"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744711"
 ---
 # <a name="microsoft-dynamics-insider-program"></a>Microsoft Dynamics Insider Program
 [!include [banner](../includes/banner.md)] 

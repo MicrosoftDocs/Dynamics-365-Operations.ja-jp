@@ -2,11 +2,9 @@
 title: 優先順位に基づくバッチスケジューリング
 description: このトピックでは、優先順位に基づくバッチスケジューリングの機能について説明します。
 author: peakerbl
-manager: AnnBe
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Platform Update31
-ms.openlocfilehash: 1240bd7f953bdfab4c0e08655e28ddbecf289fb2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bf1a5532e46daec97280b8f4bef8d4b4076b6ef3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682523"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745939"
 ---
 # <a name="priority-based-batch-scheduling"></a>優先順位に基づくバッチスケジューリング 
 

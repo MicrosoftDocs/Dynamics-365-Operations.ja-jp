@@ -1,26 +1,24 @@
 ---
 title: 予測値を検証する
 description: このトピックでは、Regression Suite Automation を使用して予測値を検証する方法を示します。
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b3b70dde40090e92efc71894612537ee555e6c5
-ms.sourcegitcommit: b337b647a1be4908fc361fb6d962e96a69f301a9
+ms.openlocfilehash: b04eac616bcfb780ca9ff0b2943bc635da41fc77
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5036603"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745153"
 ---
 # <a name="validate-expected-values"></a>予測値を検証する
 

@@ -2,11 +2,9 @@
 title: 集計の測定への財務分析コードの追加
 description: このトピックでは、パワー ユーザーが既製の Power BI レポートに財務分析コードを組み込む方法について説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 for Finance and Operations
-ms.openlocfilehash: 57efd0a5c78dab2b41be8e4441e156b3e11d1c79
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8b34896224c47064c997ebe34ecc19be452512a0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683177"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754586"
 ---
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 

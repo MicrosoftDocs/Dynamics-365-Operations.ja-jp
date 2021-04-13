@@ -2,11 +2,9 @@
 title: カスタマイズをオフにして機能を廃止
 description: この記事では、モデルのカスタマイズを無効にするプロセスについて説明します。 このプロセスに従うことで、オーバーレイに対して不適格となります。
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: dde01d5d0468ac6dc64e08ab278de594826d68d4
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: b8d7b8422e1035440f4530f5f1e10821b0728b3e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092126"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753014"
 ---
 # <a name="turn-off-model-customization-and-deprecate-functionality"></a>カスタマイズをオフにして機能を廃止
 

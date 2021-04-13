@@ -2,11 +2,9 @@
 title: 優先順位に基づく調整に関する FAQ
 description: このトピックでは、OData およびカスタム サービス ベースの統合の優先順位に基づく調整に関するよく寄せられる質問 (FAQ) に対する回答を提供します。
 author: hasaid
-manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: b60d7a6ef02fb3141e49c12dde8ddf9df847f515
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: b986414a4b85a749786761d955a7886c8efa97b0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129613"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749658"
 ---
 # <a name="priority-based-throttling-faq"></a>優先順位に基づく調整に関する FAQ
 

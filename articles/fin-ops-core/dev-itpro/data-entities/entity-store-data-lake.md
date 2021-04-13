@@ -2,11 +2,9 @@
 title: エンティティ格納を Data Lake として使用可能にする
 description: このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: a60ec67f5bae5f961339fe6a5a32938de5040ebc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 41f3db7495693dd1b974b0632de4c67a09d6da58
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688093"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750578"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 
@@ -87,7 +85,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 1. Azure ポータルで、新しいストレージ アカウントを作成します。
 2. **ストレージ アカウントを作成** ダイアログ ボックスで、次のパラメーター フィールドの値を指定します。
 
-    - **場所:** 環境があるデータ センターを選択します。 選択したデータ センターが異なる Azure リージョンにある場合、追加のデータ移動コストが発生します。 Microsoft Power BI やデータ ウェアハウスが別の地域にある場合、地域間でストレージを移動するためにレプリケーションを使用することができます。
+    - **場所:** 環境があるデータ センターを選択します。 選択したデータ センターが異なる Azure リージョンにある場合、追加のデータ移動コストが発生します。 Microsoft Power BI やデータ ウェアハウスが別の地域にある場合は、地域間でのストレージ移動にはレプリケーションを使用することができます。
     - **パフォーマンス:** **標準** を選択することをお勧めします。
     - **アカウントの種類:** **StorageV2** を選択する必要があります。
 

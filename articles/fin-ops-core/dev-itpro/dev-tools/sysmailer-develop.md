@@ -2,11 +2,9 @@
 title: SysMailerフレームワークを使用して電子メール体験を開発する
 description: このトピックでは、SysMailer フレームワークを使用して、電子メールを送信する方法について説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 76997218b645a48cbb8a116ae05ab11c60d7376d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c15bd8f283dedc678dbf860ac843f277a8607fda
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408731"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753008"
 ---
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 

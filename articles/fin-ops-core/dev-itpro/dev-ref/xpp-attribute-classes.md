@@ -2,11 +2,9 @@
 title: X++ 属性クラス
 description: このトピックでは、X++ での属性の使用について説明します。
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 156ca965127399cd4f517434e26e051c7a914b82
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b067d6eac021b28e151799ff4e0ab2a484966039
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408752"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753042"
 ---
 # <a name="x-attribute-classes"></a>X++ 属性クラス
 

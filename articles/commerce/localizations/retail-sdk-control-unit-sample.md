@@ -2,11 +2,9 @@
 title: スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 description: このトピックは、スウェーデンの管理単位統合サンプルのビルドとインストールのガイドです。
 author: EvgenyPopovMBS
-manager: Annbe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: fbf7405d0aab666f9fff69822f7d6f39fb4e4a95
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7e5918955d25b6968d0ac9085034af5b853cbb9e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009708"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796984"
 ---
 # <a name="sample-for-pos-integration-with-control-units-for-sweden-legacy"></a>スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 

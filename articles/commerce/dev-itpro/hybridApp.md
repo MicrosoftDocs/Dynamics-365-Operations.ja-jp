@@ -2,11 +2,9 @@
 title: Android および iOS での POS ハイブリッド アプリのセットアップ
 description: このトピックでは、Android および iOS で POS ハイブリッド アプリをセットアップする方法を説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: ce758ea7bb43b5886303f8288058be40732ab360
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 69387676d19e158ce2b62cc8480dc96c0de36d5a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685404"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800435"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -53,6 +51,9 @@ Xamarin をインストールした後、最新の安定バージョンに更新
 -   **Mac**: Xamarin Studio で、**更新の確認** &gt; **チャネルを更新** をクリックします。 このステップの詳細については、[更新チャンネルの変更](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/) を参照してください。
 
 ### <a name="build-the-android-retail-hybrid-app"></a>Android Retail ハイブリッド アプリの構築
+
+> [!NOTE]
+> Visual Studio 2019 以降を使用して Android アプリを構築することをお勧めします。
 
 1. インストールが完了したら、Visual Studio を起動し、Microsoft アカウント (これは、Windows で使用するのと同じアカウント) を使用してサインインします。 **ツール > オプション > Xamarin** または **ツール > オプション > Xamarin > その他** をクリックして、Xamarin の更新をチェックします。 ここには、**いますぐ確認** リンクがあります。 Xamarin のオプションが **ツール > オプション** に表示されない場合、インストールを確認するか、Visual Studio を再起動してみてください。 **オプション** ダイアログ ボックスで Xamarin を検索することもできます。 必要な場合は、最新バージョンをダウンロードおよびインストールします。
       
@@ -96,7 +97,7 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 ## <a name="dedicated-hardware-station-support-for-the-hybrid-android-app"></a>ハイブリッド Android アプリケーションに対応した専用ハードウェアステーション
   
 リリース8.1.3以降、専用ハードウェアステーションがハイブリッド Android アプリケーションに対応していします。 Retail Modern POS が周辺機器へのビルトインサポートしているのと同様に、 Android アプリは 専用のハードウェアステーションを使用して、IISベースのハードウェアステーションの配置をせずとも周辺機器に接続することができます。
-初期状態では、ハイブリッド Android アプリでは、ネットワーク接続経由での支払ターミナルとレシートプリンターの使用に対応しています。 通常はネットワークを介したデバイスとの通信には、製造元によって指定された独自の通信プロトコルを順守する必要があります。 ハイブリッド Android アプリの場合、標準の組み込み機能として、Adyen と Epsonレシートプリンターに対応した Dynamics 365支払コネクタが用意されています。 
+初期状態では、ハイブリッド Android アプリでは、ネットワーク接続経由での支払ターミナルとレシートプリンターの使用に対応しています。 通常はネットワークを介したデバイスとの通信には、製造元によって指定された独自の通信プロトコルを順守する必要があります。 ハイブリッド Android アプリの場合、標準の組み込み機能として、Adyen と Epson レシート プリンターに対応した Dynamics 365 Payment Connector が用意されています。 
 
 ### <a name="out-of-the-box-supported-devices"></a>初期設定で対応しているデバイス
 

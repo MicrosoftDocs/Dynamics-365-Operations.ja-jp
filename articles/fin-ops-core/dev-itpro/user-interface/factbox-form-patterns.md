@@ -2,11 +2,9 @@
 title: 情報ボックスのフォーム パターン
 description: このトピックでは、FactBox フォームのパターンについて説明します。 情報ボックスはレコードに関連情報を指定するために使用されます。
 author: jasongre
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3900479ddbb3aa52582f0430d88815d9852ef80c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8a5c6303d6c5fa1c8e6c021dc813d1f67a25c8b9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686604"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745105"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
@@ -122,8 +120,8 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 [![フォーム パート情報ボックス カードの例](./media/factbox4.png)](./media/factbox4.png)
 
-## <a name="appendix"></a>付録
-### <a name="frequently-asked-questions"></a>よく寄せられる質問
+## <a name="appendix&quot;></a>付録
+### <a name=&quot;frequently-asked-questions&quot;></a>よく寄せられる質問
 
 このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。
 
@@ -131,7 +129,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   情報ボックスの下部にある **詳細** ボタンをクリックすると、関連するレコードの完全な一覧を含むバッキング フォームに移動します。 このボタンは、次の例のように **クリック済み** メソッドをオーバーライドする通常のボタン コントロールを使用して実装する必要があります。 グリッドのデータを提供するテーブルの **TableRef** および **ListPageRef** プロパティに必ず入力してください。
 
         ```xpp
-        [Control("Button")]
+        [Control(&quot;Button")]
         class More
         {
         public void clicked()

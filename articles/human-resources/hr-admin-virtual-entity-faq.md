@@ -2,11 +2,9 @@
 title: Human Resources 仮想テーブルに関するよく寄せられる質問
 description: このトピックでは、Human Resources 仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: jaredha
-manager: tfehr
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,14 +13,16 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7026e0888f935657463f5c7b05bfbfc0dc127315
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 82121bfb8dc882c64b892c3dc30851a97c7e2ed0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111208"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797973"
 ---
 # <a name="human-resources-virtual-tables-faq"></a>Human Resources 仮想テーブルに関するよく寄せられる質問
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、Dynamics 365 Human Resources の仮想テーブルに関してよく寄せられる質問のコレクションを示します。 
 
@@ -31,7 +31,7 @@ ms.locfileid: "5111208"
 
 ### <a name="can-a-solution-from-an-independent-software-vendor-isv-take-a-dependency-on-virtual-tables-what-does-the-application-lifecycle-management-alm-look-like"></a>独立系ソフトウェアベンダー (ISV) のソリューションは、仮想テーブルに依存できますか? アプリケーション ライフサイクル管理 (ALM) はどのような外観になりますか。
 
-はい。 仮想テーブルはすべて Dynamics 365 HR 仮想エンティティ ソリューションで生成され、API によって管理されます。 ソリューションの項目は、テーブルの表示または非表示に応じて変更されます。 ただし、ソリューションは引き続き依存できる管理ソリューションです。 各テーブルのスキーマおよび契約が維持されます。 標準 ALM フローでは、ISV ソリューションの **既存の追加** オプションを使用して、このソリューションから仮想テーブルに対する標準参照を取得するだけです。 ソリューションの依存関係の欠落が、ソリューションのインポート時にチェックされます。 インポート時に、特定の仮想テーブルがまだ存在しない場合は、仮想テーブルが自動的に表示されます。
+はい。 仮想テーブルはすべて Dynamics 365 HR Virtual Entities ソリューションで生成され、API によって管理されます。 ソリューションの項目は、テーブルの表示または非表示に応じて変更されます。 ただし、ソリューションは引き続き依存できる管理ソリューションです。 各テーブルのスキーマおよび契約が維持されます。 標準 ALM フローでは、ISV ソリューションの **既存の追加** オプションを使用して、このソリューションから仮想テーブルに対する標準参照を取得するだけです。 ソリューションの依存関係の欠落が、ソリューションのインポート時にチェックされます。 インポート時に、特定の仮想テーブルがまだ存在しない場合は、仮想テーブルが自動的に表示されます。
 
 ### <a name="which-tables-from-human-resources-do-users-see-in-the-catalog-in-dataverse"></a>Dataverse のカタログでユーザーに表示される Human Resources のテーブルは何ですか?
 
@@ -53,7 +53,7 @@ Dataverse Web API を介してテーブルにアクセスする場合、その�
 
 ### <a name="can-i-change-the-prefix-for-the-virtual-tables"></a>仮想テーブルの接頭語を変更することはできますか?
 
-No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR 仮想エンティティ ソリューションで生成され、"mshr\_" の接頭語が付く必要があります。 この接頭語は変更しないでください。 接頭語を変更する必要があると考えられる場合は、そのシナリオを Microsoft と共有する必要があります。
+No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual Entities ソリューションで生成され、"mshr\_" の接頭語が付く必要があります。 この接頭語は変更しないでください。 接頭語を変更する必要があると考えられる場合は、そのシナリオを Microsoft と共有する必要があります。
 
 ### <a name="how-can-i-filter-data-in-a-power-apps-app-based-on-the-current-user-or-any-other-dynamic-criteria-such-as-today-10"></a>Power Apps アプリのデータについては、現在のユーザーまたはその他の動的な基準 (10 日前など) に基づいてフィルター処理を行うことができますか?
 
@@ -83,5 +83,16 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR 仮想�
 
 テーブルの簡易検索ビューに列が追加されていない場合、検索ボックスは使用できません。 回避策として、テーブルの列を 1 つ以上、簡易検索ビューに追加することができます。
 
+### <a name="are-custom-fields-supported-on-virtual-tables"></a>カスタム フィールドは仮想テーブルでサポートされていますか?
+
+はい。カスタム フィールドは仮想テーブルでサポートされています。 最初に、仮想テーブルに関連付けられているデータ エンティティにカスタム フィールドを追加する必要があります。 その後、仮想テーブルを生成または更新して、カスタム フィールドをスキーマに含めます。 データ エンティティにカスタム フィールドを追加する方法の詳細については、「[データ エンティティのカスタム フィールドを公開](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields?toc=/dynamics365/human-resources/toc.json#exposing-custom-fields-on-data-entities)」を参照してください。
+
+### <a name="what-do-i-do-if-i-get-an-error-that-the-dynamics-365-for-talent-user-wasnt-found"></a>Dynamics 365 for Talent ユーザーが見つからないというエラーが発生した場合、どうしたらよいですか?
+
+**Microsoft Dataverse 統合** ページで仮想テーブルを設定すると、アクション センターに次のようなエラー メッセージが表示される場合があります。
+
+`User Dynamics365 for Talent was not found in Finance and Operations. Please ensure this user exists.`
+
+このメッセージは、仮想テーブル用に設定されたアプリに対して、Human Resources アプリケーションでアクセス許可が付与されていないことを示しています。 これを解決するには、[Human Resourcesでアプリのアクセス許可を付与する](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities#grant-app-permissions-in-human-resources) 手順を実行します。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

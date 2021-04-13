@@ -2,11 +2,9 @@
 title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: jasongre
-manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ad3887705f019a2f8c84b24060e044f2c3412bf6
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: e8aced43bfb7203eeaf8c2b3116ae8cbc68cc54d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141890"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841275"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -73,6 +71,7 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 - Microsoft 365 ライセンスが、ユーザーのアカウントに関連付けられています。
 - ユーザーは、外部ユーザーではなくテナントの一般的なユーザーです (別のテナントのユーザーなど)。
 - テナント用の SharePoint サイト (たとえば、Contoso.SharePoint.com など) が存在します。
+- SharePoint サイトでは、**このサイトが検索結果として表示されるのを許可** するように構成されています。
 - ユーザーは、ドキュメントが格納されているフォルダにアクセスできます。
 
 SharePoint に保存されているドキュメントが開かず、プレビューに表示されない場合は、次の手順に従って問題をトラブルシューティングします: 
@@ -114,7 +113,7 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 これらのオプションが使用されることはほとんどありませんが、考慮すべきその他のコンフィギュレーション オプションを次に示します。
 
 - **ドキュメント管理パラメーター** ページの、**一般** タブで、**ドキュメント テーブルの使用** オプションを使用して、**アクティブ ドキュメント テーブル** 許可リストを有効にすることができます。 このオプションを **はい** に設定すると、他のすべてのテーブルの添付ファイルが無効になります。 したがって、必要なときにのみこのオプションをオンにしてください。
-- **ドキュメント管理パラメーター** ページの、**全般** タブで、**最大ファイル サイズ(単位: メガバイト)** フィールドを使用して、添付ファイルの最大ファイル サイズを設定できます。 ユーザーがファイルを提供する機能は、構成ファイルで環境に対して設定されているファイル サイズ制限でも制限されることに注意してください。 これらの設定ファイルは、クライアント ページから変更することはできません。
+- **ドキュメント管理パラメーター** ページの、**全般** タブで、**最大ファイル サイズ(単位: メガバイト)** フィールドを使用して、添付ファイルの最大ファイル サイズを設定できます。 SharePoint がドキュメント タイプとして使用される場合、ユーザーは最大ファイル サイズが 262 メガバイトのドキュメントのみをアップロードできます。 
 - **オプション** ページ (**設定** \> **ユーザー オプション**) では、**基本設定** タブで、**ドキュメント処理の有効化** オプションを使用して、ドキュメント処理を無効にします (ドキュメント管理)。
 
 ## <a name="accessing-document-management-attachments"></a>ドキュメント管理添付ファイルへのアクセス 
@@ -240,9 +239,9 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 はい。 SharePoint 記憶域はネイティブでサポートされ、ドキュメント タイプの保管場所として選択できます。 さらに、任意の URL アドレス指定可能なファイルを **URL** ドキュメント タイプ経由で添付できます。
 
-### <a name="how-does-the-default-storage-location-for-document-management-change-in-finance--operations-environments"></a>ドキュメント管理の規定の保存スペース場所は、財務 + 運営環境ではどのように変わりますか？
+### <a name="what-is-the-default-storage-location-for-attachments-in-finance--operations-environments"></a>Finance + Operations 環境での添付ファイルの既定の保管場所はどこですか?
 
-Finance + Operations 環境の場合、添付ファイルの Azure Blob ストレージ プロバイダーはファイル フォルダー ストレージ プロバイダーに置き換えられ、添付ファイルはクラウドに格納される代わりにオンプレミスに保存されます。 したがって、添付ファイルの既定の保管場所はファイル フォルダとなります。
+既定では、添付ファイルは製品クラウド オファリングの一部として、自動的に Azure Blob 記憶域に保存されます。
 
 ### <a name="if-i-accidentally-delete-an-attachment-stored-in-azure-blob-storage-can-it-be-restored"></a>誤って Azure Blob Storage に格納されている添付ファイルを削除した場合、復元できますか。
 

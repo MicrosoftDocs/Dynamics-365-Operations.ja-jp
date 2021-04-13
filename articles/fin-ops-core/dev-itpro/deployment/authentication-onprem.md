@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance + Operations (on-premises) での認証
 description: このトピックでは、認証プロセスの仕組みに関する背景情報を提供して、問題が生じる場合に解決できるようにします。
 author: faix
-manager: AnnBe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a4e820afdc06450c265eec9c37c5408e4269780
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 2b87c69fe4b09d71ce4223239f1216cd792f1818
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796644"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748803"
 ---
 # <a name="authentication-in-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) での認証
 

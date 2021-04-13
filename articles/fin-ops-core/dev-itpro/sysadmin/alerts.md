@@ -2,11 +2,9 @@
 title: 警告の設定
 description: ここでは、バッチ ジョブの警告を設定する方法について説明します。
 author: hasaid
-manager: AnnBe
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 0e2d2ae4bb32e6f0a8d8ccabfbb816d4eb3ef2d3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c338e0d03bf848a19b17160c970b3f4f48bf86f2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688187"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745109"
 ---
 # <a name="set-up-alerts"></a>警告の設定
 

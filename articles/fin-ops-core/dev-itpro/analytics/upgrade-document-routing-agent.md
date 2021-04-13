@@ -1,25 +1,23 @@
 ---
 title: ドキュメント回覧エージェントの更新
 description: このトピックでは、ドキュメント回覧エージェントを更新する方法について説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4169f32fa30f9c4e32de546c5df5507553f56d0e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4b57ec42365074f30c4627e088ffa31b7ebc43e6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687415"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744227"
 ---
 # <a name="update-the-document-routing-agent"></a>ドキュメント回覧エージェントの更新
 

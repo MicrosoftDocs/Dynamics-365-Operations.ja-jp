@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance 10.0.12 (2020 年 8 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.12 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
-manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 95b77cbf52a70d81799e3550fd65459bb6ed7532
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b34781d8e7a00cc70a9972aa5d4aa60f3e26f519
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009152"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836897"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10012-august-2020"></a>Dynamics 365 Finance 10.0.12 (2020 年 8 月) の新機能または変更された機能
 

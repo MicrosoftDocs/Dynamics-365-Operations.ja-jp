@@ -2,11 +2,9 @@
 title: フィールドに数を表示
 description: このトピックでは、正確で、迅速に表示される数を計算する方法について説明します。
 author: robinarh
-manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: a0a77046fe6d02a5a30844887b4069c8e6189cda
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 742a8f88d6657a26a4bc866367587fa98348079d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687832"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750526"
 ---
 # <a name="show-counts-in-fields"></a>フィールドに数を表示
 

@@ -2,11 +2,9 @@
 title: Azure Data Lake へのエクスポートの構成
 description: このトピックでは、Azure Data Lake へのエクスポートの構成に関する情報を説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform Update 33
-ms.openlocfilehash: 1d5ba45c066676b38703536e395e0defb8b3f186
-ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
+ms.openlocfilehash: 8ec3f393f9d38943643e518eaa573f54d58f6cac
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "4826484"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752318"
 ---
 # <a name="configure-export-to-azure-data-lake"></a>Azure Data Lake へのエクスポートのコンフィギュレーション
 
@@ -207,12 +205,12 @@ Finance and Operations アプリから Data Lake にデータをエクスポー�
 
 1.  [LCS](https://lcs.dynamics.com) にログインし、ご利用の環境に移動します。
 2.  **環境** ページで、**環境アドイン** タブを選択します。**Data lakeの エクスポート** が一覧に表示される場合は、Data Lake アドインが既にインストールされているため、この手順の残りの部分は省略することができます。 これに該当しない場合は、残りの手順を実行してください。
-3.  **インストールするアドイン** を選択し、ダイアログ ボックスで、一覧から **Data lake にエクスポート** を選択します。 **Data lake にエクスポート** が表示されない場合は、この機能がご利用の環境で使用できない可能性があります。
-4.  **設定のアドイン** ダイアログ ボックスで、必要な情報を入力します。 質問に答えるには、既にストレージ アカウントが作成されている必要があります。 ストレージ アカウントをまだ持っていない場合は、作成するか、管理者にアカウントの作成代行を依頼してください。
-5.  チェック ボックスをオンにしてサービス条件を承認し、**インストール** を選択します。
+3.  この環境に初めてアドインをインストールする場合、この環境に対して **Power Platform 統合** を有効にする必要があるかもしれません。 これは、LCS 管理者が実行する 1 回限りの操作です。 詳細については、[Add-ins の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview) を参照してください。 一般的な問題については、トラブルシューティングを参照してください。
+4.  **インストールするアドイン** を選択し、ダイアログ ボックスで、**Data lake にエクスポート** を選択します。 **Data lake にエクスポート** が表示されない場合は、この機能がご利用の環境で使用できない可能性があります。
+5.  **設定のアドイン** ダイアログ ボックスで、必要な情報を入力します。 質問に答えるには、既にストレージ アカウントが作成されている必要があります。 ストレージ アカウントをまだ持っていない場合は、作成するか、管理者にアカウントの作成代行を依頼してください。
+6.  チェック ボックスをオンにしてサービス条件を承認し、**インストール** を選択します。
 
 システムが、ご利用の環境に Data Lake をインストールし構成します。 インストールと構成が完了すると、 **環境** のページに **Azure Data Lake** の一覧が表示されます。
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

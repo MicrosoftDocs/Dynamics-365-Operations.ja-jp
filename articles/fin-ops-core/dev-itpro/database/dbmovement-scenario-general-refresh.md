@@ -2,11 +2,9 @@
 title: トレーニング用の更新
 description: このトピックでは、Microsoft Dynamics 365 Finance の汎用データベースの更新シナリオについて説明します。
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 6fbf149814dd73681f2f601f18b6ca65c891326d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c5636aee5e88af732580a591388c18a3f51b80b6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681086"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745338"
 ---
 # <a name="refresh-for-training-purposes"></a>トレーニング用の更新
 
@@ -123,7 +121,7 @@ public class Program
 まず、環境にログインします。LCS の **環境の詳細** ページにある管理者アカウントを使用します。 再設定の標準的な領域を次に示します。 設定およびインストールされている独立系ソフトウェア ベンダー (ISV) ソリューションによっては、追加の再設定が必要です。
 
 * **システム管理**\>**設定**\>**バッチ グループ:** 必要なバッチ サーバー グループにさまざまなアプリケーション おぶじぇくと サーバー (AOS) インスタンスを追加します。
-* **システム管理**\>**設定**\>**エンティティ店舗:** Microsoft Power BI レポートに必要なさまざまなエンティティを更新します。
+* **システム管理** \> **設定** \> **エンティティ店舗:** Microsoft Power BI レポートに必要なさまざまなエンティティを更新します。
 * **システム管理**\>**設定**\>**システム パラメーター:** タスク ガイドの LCS ヘルプ コンフィギュレーションに環境を再接続します。
 * **システム管理**\>**設定**\>**電子メール**\>**パラメータを電子メールで送信:** UAT 環境内で電子メールを使用する場合は、簡易メール転送プロトコル (SMTP) の設定を入力します。
 * **システム管理**\>**照会**\>**バッチ ジョブ:** UAT 環境で実行するジョブを選択し、ステータスを **待機中** に更新します。

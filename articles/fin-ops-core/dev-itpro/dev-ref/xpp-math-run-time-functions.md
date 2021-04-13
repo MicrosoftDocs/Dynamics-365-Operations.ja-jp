@@ -2,11 +2,9 @@
 title: X++ 数学ランタイム関数
 description: このトピックでは、数学ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e10be9ba9c9ccb9437ffc3f4fbb721af50ccb72a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3d81c134e996a99ea9b6e97774ad3204906db99d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408824"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749930"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 

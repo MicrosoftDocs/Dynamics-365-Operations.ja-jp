@@ -2,11 +2,9 @@
 title: テストと検証
 description: このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dcd504935442efce408818f390cc13cbc9f34b9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: afe4f4323d1f90f5debebe36aa6ecda1df71f013
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680430"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745143"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 
@@ -109,7 +107,7 @@ ms.locfileid: "4680430"
             FMCarClass fmCar;
 
             fmCar.NumberOfDoors = -1;
-            this.assertFalse(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
+            this.assertFalse(fmCar.validateField(Fieldnum("FMCarClass&quot;, &quot;NumberOfDoors")));
 
             fmCar.NumberOfDoors = 4;
             this.assertTrue(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));

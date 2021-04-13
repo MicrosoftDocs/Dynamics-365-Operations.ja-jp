@@ -1,12 +1,10 @@
 ---
-title: 組織の Bing マップの管理
-description: アプリケーションの Bing マップを管理する方法について説明します。 ビング マップを有効にすると、ユーザーは、注文を作成するとき、店舗、倉庫、またはその他の場所のマップを表示できます。
+title: 組織の Bing 地図の管理
+description: このトピックでは、アプリケーションの Bing マップを管理する方法について説明します。
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailSharedParameters
 audience: IT Pro
@@ -16,14 +14,14 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 48038f158709df3738cee344af1ba83500bc73da
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f8e748ee88b858093eadfb49eaed74c32e9ad48d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685371"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800407"
 ---
-# <a name="manage-bing-maps-for-your-organization"></a>組織の Bing マップの管理
+# <a name="manage-bing-maps-for-your-organization"></a>組織の Bing 地図の管理
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,6 +44,5 @@ ms.locfileid: "4685371"
 Bing Map を有効にする場合、住所情報が自動的に Bing Map にインターネット経由で送信され、このアプリケーション内で住所のオンライン マップが表示されます。 このアプリケーション内で Bing マップをクリックすると、[www.bing.com/maps](https://www.bing.com/maps) にリダイレクトされます。 Bing マップの使用は、[Bing マップ エンドユーザーの使用条件](https://go.microsoft.com/?linkid=9710837)によっても支配されます。  
   
 管理者は、**コマース共有パラメーター** > **Bing マップ** の下で Bing マップ機能をオンまたはオフにすることができます。 Bing Maps アプリをオフにすると、このアプリケーションで機能を使用できなくなります。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

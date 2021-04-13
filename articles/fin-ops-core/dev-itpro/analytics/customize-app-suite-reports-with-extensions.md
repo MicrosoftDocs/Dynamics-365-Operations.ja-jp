@@ -1,27 +1,25 @@
 ---
 title: 拡張機能を使用してアプリ スイート レポートをカスタマイズする
 description: このトピックでは、App スイート レポートをカスタマイズするための一連のシナリオについて説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.custom: 266614
 ms.assetid: acf73781-08bb-4f59-9956-8f9f295ddd02
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 9aadba4f401c8af8878c241a42b2f10e3d9ffbea
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a025cee65dd34e7ee3be9b48898df17d9a861c89
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679740"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755460"
 ---
 # <a name="customize-app-suite-reports-by-using-extensions"></a>拡張機能を使用してアプリ スイート レポートをカスタマイズする
 

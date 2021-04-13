@@ -2,11 +2,9 @@
 title: ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ
 description: この記事では、ケースをコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34f0c3780b898e433226266ed9b084021c93f286
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: d0a2816e563c06d36a3103ba3eb6730831202bf4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796984"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747623"
 ---
 # <a name="plan-case-category-security-case-processes-and-case-categories"></a>ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ
 

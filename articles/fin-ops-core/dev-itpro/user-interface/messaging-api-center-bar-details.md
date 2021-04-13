@@ -2,11 +2,9 @@
 title: メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 description: このトピックでは、メッセージング システムについて説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11fb31d45d031552359447e67eaf58fe620bf483
-ms.sourcegitcommit: 35cb173f0d356f00e2f50464ab77c3802ad28fbf
+ms.openlocfilehash: a37a4792ed44420a5cf380c4343933385e3aa83b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5033865"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749602"
 ---
 # <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 

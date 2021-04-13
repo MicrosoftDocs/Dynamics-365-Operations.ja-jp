@@ -2,11 +2,9 @@
 title: 分析、集計の測定、および KPI モデリング
 description: このトピックでは、組込みビジネス インテリジェンス (BI)、集計測定値、分析コード、データ エンティティ、集計プログラミング モデルについて説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b2cc30b601376740a85435122a3b8a9f921e2af
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b9608824c4407a145b92b949e7c269421040cda4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683127"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754536"
 ---
 # <a name="analytics-aggregate-measurements-and-kpi-modeling"></a>分析、集計の測定、および KPI モデリング
 

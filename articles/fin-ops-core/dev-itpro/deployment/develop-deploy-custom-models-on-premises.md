@@ -2,11 +2,9 @@
 title: カスタム モデルの開発とオンプレミス環境への配置
 description: このトピックでは、カスタマイズと拡張機能を開発し、オンプレミス環境に展開するプロセスについて説明します。
 author: kfend
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7be773c8ee36e8fb82cce43524f017c10c142263
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9ea2533d8ec455bfa37455e59d2697dffa1e4795
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680534"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744817"
 ---
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 
@@ -39,7 +37,7 @@ ms.locfileid: "4680534"
 次のセクションでは、このプロセスの詳細について説明します。
 
 ## <a name="development-tools-and-platform"></a>開発ツールおよびプラットフォーム
-クラウド アプリケーションまたはオンプレミス アプリケーションを開発、拡張、カスタマイズするのかに関係なく、開発プラットフォーム、ツール、および環境 (仮想マシン [VM]) は同じです。 ターゲットのランタイム環境がクラウド環境またはオンプレミス環境にあるかどうかに関係なく、カスタム コードは同じ開発用 VM 上で開発されます。
+クラウド アプリケーションまたはオンプレミス アプリケーションの開発、拡張、またカスタマイズに関係なく、開発プラットフォーム、ツール、および環境 (仮想マシン [VM]) は同じです。 ターゲットのランタイム環境がクラウド環境またはオンプレミス環境にあるかどうかに関係なく、カスタム コードは同じ開発用 VM 上で開発されます。
 
 開発の詳細については、 [ホーム ページの開発とカスタマイズ](../dev-tools/developer-home-page.md) を参照してください。 拡張機能やカスタマイズの詳細については、[拡張機能のホーム ページ](../extensibility/extensibility-home-page.md) を参照してください。 構築、テスト、および継続的なデリバリーについての詳細については、 [継続的なデリバリーのホームページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 

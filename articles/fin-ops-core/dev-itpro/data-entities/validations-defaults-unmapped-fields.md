@@ -2,11 +2,9 @@
 title: 検証、既定値、およびマップされていないフィールド
 description: このトピックでは、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされていないフィールドを使用する方法について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9fcdae11a071e0e7babdf1cd02b00b44c2bd518
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: ea6e8b13fd2efb0c7ad807cf3537c1d3c3a47650
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129587"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752778"
 ---
 # <a name="validations-default-values-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
 
@@ -50,7 +48,7 @@ ms.locfileid: "5129587"
 
 ![redo2](./media/redo2-1024x636.png)
 
-データ エンティティのすべてのバックエンド テーブルに対して **validateWrite** をスキップするには、コンシューマーは **DataEntity.skipDataSourceValidateWrite(ブール値 \_skip)** を呼び出します。 このメソッドは、すべてのデータソースに対して **validateWrite** をオンまたはオフにします。 次の API を使用することによって、コンシューマーに関係なく、特定のフィールドの検証をスキップできます。
+データ エンティティのすべてのバックエンド テーブルに対して **validateWrite** をスキップするには、コンシューマーは **DataEntity.skipDataSourceValidateWrite(ブール値 \_skip)** を呼び出します。 このメソッドは、すべてのデータソースに対して **validateWrite** をオンまたはオフにします。 次の API を使用すると、コンシューマーに関係なく、特定のデータ ソースの検証をスキップできます。
 
 [![Over10](./media/over10.png)](./media/over10.png)
 

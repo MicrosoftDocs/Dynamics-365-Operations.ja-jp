@@ -2,11 +2,9 @@
 title: 生産データベースのコピーのデバッグ
 description: このトピックでは、Finance and Operations のデバッグや診断シナリオについて説明します。
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: e89dfaf7997379eb8419f0dd03ba21221e99a1f1
-ms.sourcegitcommit: 9f9045ad1fc4062a5d112cf312ba691c632aec96
+ms.openlocfilehash: 15d8662d946c0d029866ac7e166ea3ee285d91b7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "5068486"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749323"
 ---
 # <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
 

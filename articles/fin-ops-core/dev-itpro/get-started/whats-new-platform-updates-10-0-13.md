@@ -2,11 +2,9 @@
 title: Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3a39ab2e1ae42496fa91b0e3ac26ec19a972ac9e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f9f355bb2d1b12d020831cdac300dc885a38a70b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685107"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744211"
 ---
 # <a name="platform-updates-for-version-10013-of-finance-and-operations-apps-october-2020"></a>Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
 

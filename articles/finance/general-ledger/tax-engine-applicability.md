@@ -2,11 +2,9 @@
 title: 税エンジンの適用性
 description: このトピックでは、税エンジンの適用性について説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 25809059b55d43d23f1c1d27e33a6e56926f88a8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: abfd947e74e8e0cace290ccc6c6638178ff52cd5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988589"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838777"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
@@ -67,10 +65,10 @@ CGST、税コンポーネント CGST を選択し、鉛筆アイコンをクリ�
 次の条件は、*課税対象文書のタイプ* を「在庫転送オーダー受信」、「在庫転送オーダー出荷」、または「在庫転送オーダー」にすることはできないことを意味します。 つまり HSN コードまたは SAC のいずれかを指定する必要があります。
 
 ```sql
-AND(Header.'Taxable Document Type'<>"Invent transfer order receive",
-    Header.'Taxable Document Type'<>"Invent transfer order shipment",
-    Header.'Taxable Document Type'<>"Invent transfer order", 
-    OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
+AND(Header.'Taxable Document Type'<>"Invent transfer order receive&quot;,
+    Header.'Taxable Document Type'<>&quot;Invent transfer order shipment&quot;,
+    Header.'Taxable Document Type'<>&quot;Invent transfer order&quot;, 
+    OR(NOT(Header.Lines.'HSN Code'=&quot;"), NOT(Header.Lines.SAC=""))
    )
 ```
 
@@ -138,9 +136,9 @@ GST のルックアップを条件に変換する場合は次のように表示�
 ```Text 
 OR(
     AND(Exempt=Exempt.No,
-        AND('Tax Direction' = "Sales tax receivable",
+        AND('Tax Direction' = "Sales tax receivable&quot;,
             'GST Composition Scheme' = NoYes.No,
-            'Party GST Registration Number' <> ""
+            'Party GST Registration Number' <> &quot;"
         ),
         AND('Tax Direction' = "Sales tax payable",
             'Export Order' = NoYes.No,

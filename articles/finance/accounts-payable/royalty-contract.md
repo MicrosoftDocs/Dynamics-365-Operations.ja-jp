@@ -2,11 +2,9 @@
 title: ロイヤルティ契約管理
 description: このトピックでは、Microsoft Dynamics 365 Finance のロイヤルティ契約管理について説明します。
 author: t-benebo
-manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 271124420dab2456873f6253cfbf7016c6d449be
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 39ffe349239b232636a9362e18bcff4f324337a0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972033"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830750"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 

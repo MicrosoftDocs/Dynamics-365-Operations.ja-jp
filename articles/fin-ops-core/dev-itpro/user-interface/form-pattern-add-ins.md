@@ -2,11 +2,9 @@
 title: フォーム パターンをサポートしている Visual Studio アドイン
 description: Visual Studio のツールには、パターンの使用をサポートするいくつかのアドインが含まれています。
 author: jasongre
-manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 799a16c9383451be2dbf8b412905e3077dd4a5d2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b4adefb38ae515c64b8ed4920cd504ac589e06cf
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686588"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748155"
 ---
 # <a name="visual-studio-add-ins-that-support-form-patterns"></a>フォーム パターンをサポートしている Visual Studio アドイン
 

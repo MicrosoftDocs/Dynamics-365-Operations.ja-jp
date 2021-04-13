@@ -2,11 +2,9 @@
 title: Finance and Operations アプリケーション アーキテクチャ
 description: このトピックでは、Finance and Operations アプリケーションのアーキテクチャの概要を説明します。
 author: ClaudiaBetz-Haubold
-manager: AnnBe
 ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 452724b63378a41752d9be48dd91d40fbef7b1ed
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 34e950d338c15e6fa95de34faedd4cbcfc5132c0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796543"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751850"
 ---
 # <a name="finance-and-operations-application-architecture"></a>Finance and Operations アプリケーション アーキテクチャ
 

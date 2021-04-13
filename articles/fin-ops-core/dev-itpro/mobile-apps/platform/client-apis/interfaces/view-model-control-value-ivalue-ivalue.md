@@ -2,11 +2,9 @@
 title: 値の型
 description: 値コントロール型 これは、単一の値のコントロールの基本クラスです。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3094ac4265feb0e911f9f52555d6fd8ecc577776
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 55772fbf4be36413900914255841989d805a96b5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686616"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752692"
 ---
 # <a name="value-type"></a>値の型
 

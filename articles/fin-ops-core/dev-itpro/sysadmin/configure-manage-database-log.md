@@ -2,11 +2,9 @@
 title: データベース ログの構成
 description: このトピックでは、データベース ログの設定方法、セキュリティとパフォーマンスの管理方法、およびデータベース ログのクリーンアップ方法について説明します。
 author: hasaid
-manager: AnnBe
 ms.date: 03/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df1c7c0c8b9a09d75a7617967db1c7ab55253c18
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: c2b2cbb90198db45c842a8b41e86e8b7c18e3e89
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128553"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746017"
 ---
 # <a name="configure-database-logging"></a>データベース ログの構成
 

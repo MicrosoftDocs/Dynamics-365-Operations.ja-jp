@@ -2,11 +2,9 @@
 title: データ パッケージを使用してデモ データを生成します
 description: このトピックでは、デモ データ パッケージを使用して、システムのデータを生成する方法について説明します。
 author: panolte
-manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 4f61f4c25adc0a9d796422e48b2198afcbd5ec66
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a61a76e4a8c3bcda6146b5ae76ac0de1f76ff1d0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018665"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749972"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 

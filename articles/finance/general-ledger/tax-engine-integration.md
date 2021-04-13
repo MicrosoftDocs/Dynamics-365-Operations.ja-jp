@@ -2,11 +2,9 @@
 title: 税エンジンの統合
 description: このトピックでは、税エンジンの統合について説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 415836f64c1e9eca31f80872072a203a89195eef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f6e331bac0a48ba3e5a173b8f2183e34cd83b8aa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978573"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816969"
 ---
 # <a name="tax-engine-integration"></a>税エンジンの統合
 

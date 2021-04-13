@@ -2,11 +2,9 @@
 title: 拡張機能を通じて拡張データ型 (EDT) を変更する
 description: 拡張機能を使用して、拡張データ型 (EDT) で複数のプロパティをカスタマイズすることができます。
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 709f3c64d8a728817375d2cb5dc598933018e30e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 31140b688840e8d37e6c2f26279cc17369840404
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409492"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744807"
 ---
 # <a name="modify-extended-data-types-edts-through-extension"></a>拡張機能を通じて拡張データ型 (EDT) を変更する
 

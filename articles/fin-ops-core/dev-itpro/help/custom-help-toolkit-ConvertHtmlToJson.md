@@ -2,22 +2,20 @@
 title: カスタム ヘルプ ツールキット - ConvertHtmlToJson ツール
 description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットに含まれている ConvertHtmlToJson ツールについて説明し ます。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: f65545c6650ba7cc4e5e4676836bb48ece5a05e0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 79c4ea3258fd85f131d77f3c24625f5cb786fc5d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685088"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752756"
 ---
 # <a name="custom-help-toolkit-the-converthtmltojson-tool"></a>カスタム ヘルプ ツールキット: ConvertHtmlToJson ツール
 

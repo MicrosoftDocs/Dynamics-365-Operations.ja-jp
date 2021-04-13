@@ -2,11 +2,9 @@
 title: 小売顧客のギフト カードの残高を清算します。
 description: このトピックでは、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カード清算機能について説明します。
 author: rapraj
-manager: josaw1
 ms.date: 02/08/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.devlang: ''
@@ -18,12 +16,12 @@ ms.search.industry: retail
 ms.author: rapraj
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.openlocfilehash: 93ec6ee77fd076727dfae90b56ade3ed95d615e7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f81c3be5fa5b664c870e84ce7c5f862c06619411
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685411"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792995"
 ---
 # <a name="cash-out-gift-card-balance-for-a-retail-customer"></a>小売顧客のギフト カードの残高を清算します。
 

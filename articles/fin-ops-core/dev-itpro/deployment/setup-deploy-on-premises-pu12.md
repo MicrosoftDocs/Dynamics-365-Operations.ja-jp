@@ -1,33 +1,31 @@
 ---
-title: オンプレミス環境の設定と配置 (Platform update 12 以降)
-description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
+title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
+description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 から 40 を計画、設定、展開する方法について説明します。
 author: PeterRFriis
-manager: AnnBe
-ms.date: 02/01/2021
+ms.date: 03/18/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 39c5e0128db6778c93eebb28af487808fc624188
-ms.sourcegitcommit: 7cdec5469ff0da145ac4e01caf3287d0627ae2dc
+ms.openlocfilehash: 26111e5711e3ebfda83f40c708c69093a845de24
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5099914"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745327"
 ---
-# <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
+# <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
+このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 から 40 を計画、設定、展開する方法について説明します。
 
 [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) が利用可能です。 オンプレミス展開に関する質問またはフィードバックをそこに投稿することができます。
 
@@ -92,8 +90,8 @@ VMWare を使用している場合は、次の Web ページに記載されて�
 - [仮想マシンをハードウェア バージョン 11 にアップグレード後、ネットワーク依存ワークロードのパフォーマンスが低下する (2129176)](https://kb.vmware.com/s/article/2129176)
 - [vmxnet3 仮想アダプターのいくつかの問題](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
- > [!WARNING]
- > Dynamics 365 Finance + Operations (オンプレミス) は、Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。
+> [!IMPORTANT]
+> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
@@ -680,7 +678,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 2. ドメイン ユーザーまたはグループ管理サービス アカウントとして SQL サービスを実行します。
 3. Finance + Operations 向けに SQL Server を構成するために証明機関から SSL 証明書を取得します。 テストの目的で、自己署名証明書または AD CS 証明書を作成して使用することができます。 次の例にあるコンピューター名とドメイン名を置き換える必要があります。
 
-    **Always-On SQL インスタンスの自己署名証明書**
+    **Always-On SQL インスタンスの証明書**
 
     Always-On 用の証明書のテストを設定する場合は、次の **リモート処理** スクリプトを使用します。 これにより、次の **手動** スクリプトが実行され、手順 **a ～ e** が実行されます。
 

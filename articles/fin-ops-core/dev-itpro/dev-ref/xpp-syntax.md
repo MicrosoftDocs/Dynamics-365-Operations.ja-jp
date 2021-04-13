@@ -2,11 +2,9 @@
 title: X++ 構文
 description: このトピックには、X++ の構文リファレンスが含まれています。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6425813c83242cfd2179e8f8698e56fc572f2fa
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: f2fb739bcd23a64ab19acc40c785822e69a94477
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4409508"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749918"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
@@ -810,7 +808,7 @@ Extended Backus Naur Form (EBNF) は metalanguage あり、このガイドでは
 
 ### <a name="example"></a>例
 
-Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester この例は Work\_Team を `Manager` および一人またはそれ以上の `Employees` で構成されるように定義します。 `Employee` は、`Developer`、または `Tester` として定義されています。 この例で使用されているシンボルについては、次の表で説明します。
+Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester この例は Work\_Team を `Manager` および一人またはそれ以上の `Employees` で構成されるように定義します。 `Employee` は、`Developer`、または `Tester` として定義されています。 この例で使用されているシンボルについては、次の表で説明します。
 
 ### <a name="special-symbols-in-ebnf"></a>EBNF の特殊記号
 
@@ -821,7 +819,7 @@ Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester こ�
 | \[<em>式</em>\] |               オプション: \[ と \] の間の項目はオプションです。 すべてまたはいずれかの項目に括弧が含まれます。                |
 |      {Expression}       |                     繰り返し: { と } の間の項目はオプションですが、必要な回数繰り返し実行できます。                     |
 
-たとえば、自転車のために購入するアクセサリがサドル、飲料水ボトル ホルダー、ベル、およびクラクションから成る場合、ベルまたはクラクションのいずれか、および 0 個、1 個、または複数の飲料水ボトル ホルダー、さらにちょうど 1 つのサドルを持つことができ、この場合以下のように表されます: \_自転車アクセサリ = サドル\[ベル | クラクション\] {飲料水\_ボトル\_ホルダー} この文法は次の選択を定義します。`saddle`  `saddle bell`  `saddle horn`  サドル 飲料水\_ボトル\_ホルダー  サドル ベル 飲料水\_ボトル\_ホルダー  サドル ベル 飲料水\_ボトル\_ホルダー 飲料水\_ボトル\_ホルダーなど。
+たとえば、自転車のために購入するアクセサリがサドル、飲料水ボトル ホルダー、ベル、およびクラクションから成る場合、ベルまたはクラクションのいずれか、および 0 個、1 個、または複数の飲料水ボトル ホルダー、さらにちょうど 1 つのサドルを持つことができ、この場合以下のように表されます: 自転車\_アクセサリ = サドル \[ベル | クラクション\] {飲料水\_ボトル\_ホルダー} この文法は次の選択を定義します。`saddle`  `saddle bell`  `saddle horn` サドル 飲料水\_ボトル\_ホルダー サドル ベル 飲料水\_ボトル\_ホルダー サドル ベル飲料水\_ボトル\_ホルダー飲料水\_ボトル\_ホルダーなど。
 
 ## <a name="x-grammar"></a>X++ 文法
 このトピックでは、X++ 言語の正式な文法を示します。
@@ -1343,7 +1341,7 @@ X++ の文法の BNF で、ターミナルのほとんどに名前の接尾語�
     UNCHECKED_STMT ::= UNCHECKED_HEADER  STATEMENT
     UNCHECKED_HEADER ::= UNCHECKED_SYM  LEFT_PAR_SYM  IF_EXPR  RGHT_PAR_SYM
 ```
- 
+ 
 
 ## <a name="x-language-syntax-is-stricter-in-microsoft-dynamics-ax-2012"></a>X++ 言語の構文は Microsoft Dynamics AX 2012 では厳密です
 Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバージョンの製品より厳しくなっています。 このトピックでは、構文の変更について説明します。
@@ -1402,7 +1400,7 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 </tbody>
 </table></td>
 <td>単純な代入演算子である等号記号 (<code>=</code>) で派生オブジェクトに基本オブジェクトを代入することができました。 コンパイラはこれらの割り当てを受け入れましたが、実行時に不適切なダウンキャスト割り当てを誤って使用するとエラーが発生しました。</td>
-<td>現在は、ダウンキャストは明示的にできるようになりました。 これは、演算子と<strong>して</strong>新しく実行されます。 <strong>as</strong> キーワードによる明示的なダウンキャストは、<code>ThingClass</code> が <code>Object</code> で拡張する次のコード例で示されています。<code>ThingClass myThing = new ThingClass();</code>  <code>Object myObject = myThing;</code>  <code>myThing = myObject as ThingClass; // Explicit downcast, good.</code> 詳細については、式の演算子: 継承の Is および As を参照してください。</td>
+<td>現在は、ダウンキャストは明示的にできるようになりました。 これは、演算子と<strong>して</strong>新しく実行されます。 <strong>as</strong> キーワードによる明示的なダウンキャストは、<code>ThingClass</code> が <code>Object</code> で拡張する次のコード例で示されています。<code>ThingClass myThing = new ThingClass();</code>  <code>Object myObject = myThing;</code>  <code>myThing = myObject as ThingClass; // Explicit downcast, good.</code> 詳細については、式の演算子: 継承の Is および As を参照してください。</td>
 </tr>
 <tr class="odd">
 <td>継承</td>

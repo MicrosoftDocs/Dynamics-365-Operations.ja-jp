@@ -2,11 +2,9 @@
 title: モバイル ワークスペースの公開
 description: このトピックでは、システム管理者がモバイル ワークスペースを公開するために従わなければならない手順について説明します。
 author: sericks007
-manager: AnnBe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysAppDesignerPane
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 5d984a5338e69a4a48da8cfbfb6f46f8d40ec2e8
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: e65c7fe987a2c696007dac686dbea5610ce6c084
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127317"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745633"
 ---
 # <a name="publish-mobile-workspaces"></a>モバイル ワークスペースの公開
 

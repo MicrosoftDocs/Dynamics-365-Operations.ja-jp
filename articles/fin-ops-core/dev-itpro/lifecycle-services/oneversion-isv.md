@@ -2,11 +2,9 @@
 title: 1 つのバージョンを使用した ISV ソリューションの提供
 description: このトピックでは、独立系ソフトウェア ベンダー (ISV) が 1 つのバージョンを使用して、ソリューションを 渡す方法について説明します。
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 625c21d83ea7cb7fb5da3b2b767b8b5d110d6d07
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 72fa5e2e36894a1a1ef61fa63312ef5449f58523
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687908"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750540"
 ---
 # <a name="delivering-isv-solutions-using-one-version"></a>1 つのバージョンを使用した ISV ソリューションの提供
 

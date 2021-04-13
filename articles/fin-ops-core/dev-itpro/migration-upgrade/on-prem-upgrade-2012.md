@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 のデータ アップグレード プロセス
 description: このトピックでは、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance  + Operations (オンプレミス) 10.0.X にアップグレードするプロセスについて説明します。
 author: faix
-manager: AnnBe
 ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 77081f2e42097850309d4fcaab178465735eb04c
-ms.sourcegitcommit: de4dbef4ed7704597a22c15acf58bb4b1d872c2a
+ms.openlocfilehash: 667b632f14ea200d6f7a59cb72412824052e94da
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "4743553"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745249"
 ---
 # <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 のデータ アップグレード プロセス
 

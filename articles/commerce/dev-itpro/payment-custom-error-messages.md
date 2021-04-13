@@ -2,11 +2,9 @@
 title: 支払ターミナルの拡張機能のローカライズされたカスタム エラー メッセージを作成する
 description: このトピックでは、支払ターミナルの拡張機能のカスタム エラー メッセージを作成する方法について説明します。
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1a551c0127ca339e7e1273221730483600337f19
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 67864442ca606366edb00d340e31703a8180f249
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681560"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791181"
 ---
 # <a name="create-custom-localized-error-messages-for-payment-terminal-extensions"></a>支払ターミナルの拡張機能のローカライズされたカスタム エラー メッセージを作成する
 

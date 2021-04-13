@@ -2,11 +2,9 @@
 title: Azure での開発環境の配置
 description: このトピックでは、Microsoft Azure での開発環境の展開方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 4fc6e6095ce2f3366469d032c1bbab5eb026438b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 984a0aba3f77516d0814750b666b9810810684b9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679273"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752268"
 ---
 # <a name="deploy-development-environments-on-azure"></a>Azure での開発環境の配置
 

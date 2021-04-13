@@ -2,11 +2,9 @@
 title: オンプレミス環境の設定と配置ホーム ページ
 description: このトピックでは、オンプレミス環境の計画、設定、および展開方法に関するトピックへのリンクを提供します。
 author: sericks007
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.custom: NotInToc
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b9d438ca95c4d3701b4e4ee35fb82b12d34d0379
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d60c3e77505cdcb005b78e65d99a416b78d91d34
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683975"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745315"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-home-page"></a>オンプレミス環境の設定と配置ホーム ページ
 

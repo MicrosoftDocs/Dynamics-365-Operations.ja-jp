@@ -2,11 +2,9 @@
 title: Azure での高可用性環境の配置
 description: この記事では、Microsoft Azure に高可用性環境を展開する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 28f16a557c80e6ec41d4fa8b930d5b37909d014e
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 4d97ebde6acae0b0a8bf700af04b0ec7dc8306b7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126993"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744527"
 ---
 # <a name="deploy-high-availability-environments-on-azure"></a>Azure での高可用性環境の配置
 

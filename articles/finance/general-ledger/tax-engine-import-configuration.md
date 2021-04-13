@@ -2,11 +2,9 @@
 title: 税エンジン インポート コンフィギュレーション
 description: このトピックでは、輸入税エンジンのコンフィギュレーションについて説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8b2104e61a8d4d080181ed546106c4e881bfb4d3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 552f4ae7d31bcdea269f4a1cc60492491e26f153
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4984999"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811275"
 ---
 # <a name="tax-engine-import-configuration"></a>税エンジン インポート コンフィギュレーション
 

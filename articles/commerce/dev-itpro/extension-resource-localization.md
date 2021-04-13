@@ -2,11 +2,9 @@
 title: コマース拡張リソースおよびラベル ファイルのローカライズ
 description: このトピックでは、POS UI ラベル、POS メッセージ、入庫ラベル、および Commerce Scale Unit または CRT のエラー メッセージを変更する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 34b35df30e39497db6b0c9dfcb8760155a666954
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bd54276e6ed9136f94251d0dc2b379e4f296e9c6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681570"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792999"
 ---
 # <a name="localize-commerce-extension-resources-and-label-files"></a>コマース拡張リソースおよびラベル ファイルのローカライズ
 

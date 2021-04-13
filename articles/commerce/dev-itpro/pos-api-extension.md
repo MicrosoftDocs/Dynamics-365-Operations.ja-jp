@@ -2,11 +2,9 @@
 title: 販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 description: Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a4cc8cffddd0f86fa5eaad7b0b78edaf7cd91c6c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1b917b4d233b157c7d4cbc23093903ea9425f10d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681524"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791153"
 ---
 # <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 

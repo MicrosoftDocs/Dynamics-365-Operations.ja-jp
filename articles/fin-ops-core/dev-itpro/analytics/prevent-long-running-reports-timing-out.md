@@ -1,27 +1,25 @@
 ---
 title: 実行時間の長いレポートがタイムアウトしないようにする
 description: この記事では、長時間実行されるレポートがタイムアウトするのを防ぐのに役立つヒントを紹介します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.custom: 20521
 ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e966ed22aed2bab2cdbe6d9bdea44e0291775fac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 40d746208c2599c9d085a408bfcdaa668a873f65
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680134"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753078"
 ---
 # <a name="help-prevent-long-running-reports-from-timing-out"></a>実行時間の長いレポートがタイムアウトしないようにする
 

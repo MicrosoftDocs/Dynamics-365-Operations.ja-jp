@@ -2,11 +2,9 @@
 title: テキスト入力のサブパターン
 description: この記事では、テキスト入力のサブパターンについて説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e319dc13397e6adeb4cb83f2d3d148aee1513270
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 4c8794770aa5f119df7923bd3e40f867eccfa12c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092315"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748763"
 ---
 # <a name="fill-text-subpattern"></a>テキスト入力のサブパターン
 

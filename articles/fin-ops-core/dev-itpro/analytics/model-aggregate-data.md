@@ -2,11 +2,9 @@
 title: データの集計モデル
 description: このチュートリアルでは、集計データをモデリングするプロセスについて説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc9556b61a4a85aab7a6bffc2d0bfa7dc3d0c821
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6f19b6a36c02e651c44e7c3618b741f96ab3d2e0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682231"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748003"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 

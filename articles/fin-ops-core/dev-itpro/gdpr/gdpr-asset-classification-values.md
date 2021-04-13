@@ -2,11 +2,9 @@
 title: 資産分類
 description: Finance and Operations アプリは、各テーブルに格納されているデータの種類の既定の分類セットを提供します。
 author: ToddLefor
-manager: AnnBe
 ms.date: 12/31/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a90418d0b92a8485d705ca0dd389c82ac5d92d4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bc3a888c2fa8f90bfb311b383f6e6b5850d49293
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681070"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750542"
 ---
 # <a name="asset-classifications"></a>資産分類
 

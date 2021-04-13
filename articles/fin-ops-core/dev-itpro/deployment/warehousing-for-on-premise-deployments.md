@@ -2,11 +2,9 @@
 title: オンプレミス配置の倉庫管理アプリを構成
 description: このトピックでは、オンプレミス展開でのウェアハウス アプリの前提条件について説明します。
 author: MarkusFogelberg
-manager: AnnBe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 588166df82018d015a8f29a13383af244e5700c1
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: e4ac90c0b36ac7a34c0e6fffcbc82ee004c7bd1c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118669"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750974"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 

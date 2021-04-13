@@ -2,11 +2,9 @@
 title: 複数の環境への同じ AD FS インスタンスの再利用
 description: このトピックでは、複数の Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境で Active Directory フェデレーション サービス (AD FS) の同じインスタンスを使用する方法について説明します。
 author: faix
-manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9c1ec8e70dd6aa98ff9ce587ced6c2a51245013e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 183750e10c985e7e0c9206cc9c8586c2d0c43227
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686333"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745323"
 ---
 # <a name="reuse-the-same-ad-fs-instance-for-multiple-environments"></a>複数の環境への同じ AD FS インスタンスの再利用
 

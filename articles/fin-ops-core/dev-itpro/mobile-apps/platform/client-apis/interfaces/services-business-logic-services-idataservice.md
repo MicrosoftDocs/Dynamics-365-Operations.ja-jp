@@ -2,11 +2,9 @@
 title: DataService タイプ
 description: アプリケーション ワークスペースの下でデータ アクセス機能を提供します。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 10ef31bcff5eee93b3f0925ce3d8b34a999e275a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c004f816909d972f9756910fd5a8bee6499f9e90
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687853"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744509"
 ---
 # <a name="dataservice-type"></a>DataService タイプ
 

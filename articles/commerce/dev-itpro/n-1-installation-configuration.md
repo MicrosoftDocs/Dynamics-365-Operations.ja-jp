@@ -1,12 +1,10 @@
 ---
 title: 段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
-description: このトピックでは、Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Commerce バックオフィスを使用できるように、段階的なロールアウト (N-1) のコンポーネントを設定する方法について説明します。
+description: このトピックでは、チャネル コンポーネントが Microsoft Dynamics 365 Commerce バックオフィスと連携できるように、段階的なロールアウト (N-1) コンポーネントを設定する方法について説明します。
 author: jashanno
-manager: AnnBe
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: Dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
@@ -16,26 +14,28 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 1836fc44e16555465e3b0f3ba812add7d75399ee
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4d64cad5d5cb8c3c9c58a1f07741c5b8fa8cec80
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680986"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792997"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
 
 [!include [banner](../../includes/banner.md)]
 
-ここでは、Microsoft Dynamics AX for Retail Modern 販売時点管理 (MPOS) および Commerce Scale Unit、または Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS) などの Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Commerce バックオフィスを使用できるように、段階的ロールアウト (N-1) のコンポーネントを設定する方法について説明します。
+このトピックでは、Microsoft Dynamics AX for Retail Modern 販売時点管理 (MPOS) および Commerce Scale Unit、または Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS) などの Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Commerce バックオフィスを使用できるように、段階的ロールアウト (N-1) のコンポーネントを設定する方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語
+
 | 相談 | 説明 |
 |---|---|
 | N-1 非同期サーバー コネクタ サービス | バック オフィスと AX 2012 R3 チャネル コンポーネントの間でデータ パッケージを同期する場合に使用されるコンポーネント。 |
 | N-1 リアルタイム サービス | AX 2012 R3 チャネル コンポーネントからバックオフィスへのリアルタイムの呼び出しをサポートするコンポーネント。 |
 
 ## <a name="overview"></a>概要
+
 このトピックのセクションでは、N-1 コンポーネントを所持する環境の設定を行う必要がある以下の手順について説明します。 これらの手順では、バック オフィスが既に配置され、AX 2012 R3 環境が現在実行中であることを前提としています。
 
 - **[Azure AD アカウントを設定](#set-up-azure-ad-accounts)** – このセクションでは、バックオフィスに接続するために使用する N-1 コンポーネントの Microsoft Azure Active Directory (Azure AD) アカウントの設定方法について説明します。
@@ -46,11 +46,13 @@ ms.locfileid: "4680986"
 - **[N-1 に必要な KB](#required-kbs-for-n-1)** – このセクションでは、N-1 環境を設定するために必要な Microsoft サポート技術情報の記事番号 (KB) が一覧で表示されます。
 
 ### <a name="high-level-architecture"></a>高レベル アーキテクチャ
+
 次の図は、N-1 手順の高レベル概要を示しています。
 
 ![段階的なロールアウト (N-1) アーキテクチャ](media/CDX/N-1/Overview.jpg)
 
 ## <a name="verify-that-the-n-1-license-key-is-turned-on"></a>N-1 ライセンス キーが有効であることを確認します。
+
 コンフィギュレーションおよび N-1 コンポーネントのインストールを開始する前に、対応するライセンス キーが有効であることを確認してください。 このライセンス キーは、AX 2012 R3 から Microsoft Dynamics 365 Commerce へのアップグレード中に自動的にオンになります。 ただし、次の手順でこのキーが必要となるため、続行する前にオンになっていることを確認する必要があります。
 
 1. コマース バックオフィスにサインインし、**システム管理\>設定\>ライセンス コンフィギュレーション** に移動します。
@@ -60,6 +62,7 @@ ms.locfileid: "4680986"
     > キーがオンになっていない場合は、Microsoft サポートに問い合わせてオンにしてください。
 
 ## <a name="set-up-azure-ad-accounts"></a>Azure AD アカウントの設定
+
 > [!IMPORTANT]
 > 企業全体で高いレベルのセキュリティを維持するために、このインストールに新しいクライアント ID とシークレットを作成することを強くお勧めします。 このステップでは、新しい Web アプリが必要です。
 
@@ -67,9 +70,11 @@ ms.locfileid: "4680986"
 2. 顧客 ID およびシークレットの作成が終了したら、顧客 ID をコマースで承諾する必要があります。 **システム管理 \> 設定 \> Azure Active Directory アプリケーション** の順に移動します。 クライアント ID を **クライアント ID** 列に入力し、説明のテキストを **名** 列に入力、および **RetailServiceAccount** を **ユーザー ID** 列に入力します。
 
 ## <a name="configure-n-1-components"></a>N-1コンポーネントの構成
+
 バック オフィスで N-1 コンポーネントを構成するには、このセクションの手順に従います。
 
 ### <a name="connector-for-microsoft-dynamics-ax"></a>Connector for Microsoft Dynamics AX
+
 1. コマース バックオフィスにサインインし、**Retail とコマース \> バックオフィスの設定 \> コマース スケジューラ \> Microsoft Dynamics AX のコネクタ** に移動します。
 2. アクション ウィンドウで、**新規** を選択し、次のフィールドを設定します。
 
@@ -88,6 +93,7 @@ ms.locfileid: "4680986"
 3. 完了したら、**保存** を選択します。
 
 ### <a name="commerce-shared-parameters"></a>コマース共有パラメーター
+
 1. バックオフィスで、**Retail とコマース \> バックオフィスの設定 \> パラメーター \> コマースの共有パラメーター** の順に移動します。
 2. **セキュリティ** タブで、次のフィールドを設定します。
 
@@ -98,6 +104,7 @@ ms.locfileid: "4680986"
     | レガシ デバイス アルゴリズム | AX 2012 R3 デバイス アルゴリズムを入力します。 | AES |
 
 ### <a name="commerce-scheduler-parameters"></a>コマース スケジューラのパラメーター
+
 1. バックオフィスで、**Retail とコマース \> バックオフィスの設定 \> パラメーター \> コマース スケジューラ パラメーター** の順に移動します。
 2. **HQ メッセージ データベース** クイック タブで、次のフィールドを設定します。
 
@@ -107,9 +114,10 @@ ms.locfileid: "4680986"
     | サーバー名 | 既存の AX 2012 R3 HQ メッセージ データベースをホストするサーバーの名前を入力します。 | sampleserver |
     | データベース名 | AX 2012 R3 HQ メッセージ データベースの名前を入力します。 AX 2012 R3 では、既定の名前は **HQMessageDB** でした。 | HQMessageDB |
 
-2. 完了したら、**保存** を選択します。
+3. 完了したら、**保存** を選択します。
 
 ### <a name="working-folders"></a>作業フォルダー
+
 > [!NOTE]
 > ここに記載されているフィールドの値は、AX 2012 R3 から環境をアップグレードする際に、自動的に設定される既定値です。 ただし、それが正しいことを確認する必要があります。 AX 2012 R3 からアップグレードしていない環境で、これらの値を手動で入力する必要があります。
 
@@ -126,6 +134,7 @@ ms.locfileid: "4680986"
 3. 完了したら、**保存** を選択します。
 
 ### <a name="channel-database-group"></a>チャネル データベース グループ
+
 > [!NOTE]
 > ここに記載されているフィールドの値は、AX 2012 R3 から環境をアップグレードする際に、自動的に設定される既定値です。 ただし、それが正しいことを確認する必要があります。 AX 2012 R3 からアップグレードしていない環境で、これらの値を手動で入力する必要があります。
 
@@ -142,6 +151,7 @@ ms.locfileid: "4680986"
 3. 完了したら、**保存** を選択します。
 
 ### <a name="channel-database"></a>チャネル データベース
+
 > [!NOTE]
 > ここに記載されているフィールドの値は、AX 2012 R3 から環境をアップグレードする際に、自動的に設定される既定値です。 ただし、それが正しいことを確認する必要があります。 AX 2012 R3 からアップグレードしていない環境で、これらの値を手動で入力する必要があります。
 
@@ -163,6 +173,7 @@ ms.locfileid: "4680986"
 3. 完了したら、**保存** を選択します。
 
 ### <a name="channel-profiles"></a>チャネル プロファイル
+
 > [!IMPORTANT]
 > このセクションは、既存の AX 2012 R3 環境が、チャンネル データベースとやり取りするために Retail サーバーを使用する場合にのみ適用されます。 AX 2012 R3 MPOS からダイレクト チャネル データベースへのアクセスが有効な場合は、この手順を省略できます。
 
@@ -182,6 +193,7 @@ ms.locfileid: "4680986"
 3. 完了したら、**保存** を選択します。
 
 ### <a name="all-stores"></a>すべての店舗
+
 > [!NOTE]
 > バックオフィス環境が AX 2012 R3 バックオフィスから更新された場合、記載されているフィールド値は設定されます。
 
@@ -196,10 +208,12 @@ ms.locfileid: "4680986"
 3. 完了したら、**保存** を選択します。
 
 ### <a name="initialize-the-ax-2012-scheduler"></a>AX 2012 スケジューラの初期化
+
 1. バックオフィスにサインインし、**Retail とコマース \> バックオフィスの設定 \> コマース スケジューラ \> AX 2012 Retail スケジューラの初期化** の順に移動します。
 2. **OK** を選択します。
 
 ### <a name="distribution-schedule"></a>配送スケジュール
+
 > [!NOTE]
 > バックオフィス環境が AX 2012 R3 バックオフィスから更新された場合、記載されているフィールド値は設定されます。
 
@@ -207,6 +221,7 @@ ms.locfileid: "4680986"
 2. 左側のウィンドウで、接尾語 **AX63** のある配送スケジュールを選択します。 次に、**チャンネル データベース グループ** クイックタブで、先ほど作成したエントリが配送スケジュールにマップされているかどうかを確認します。
 
 ### <a name="workers"></a>作業者
+
 > [!NOTE]
 > バックオフィス環境が AX 2012 R3 バックオフィスから更新された場合、記載されているフィールド値は設定されます。
 
@@ -214,6 +229,7 @@ ms.locfileid: "4680986"
 2. AX 2012 R3 環境にサインインする各作業者の名前を選択します。 次に、作業者の詳細ページの、**コマース** タブの、**コマース** クイック タブで、**パスワード** フィールドを設定します。
 
 ## <a name="install-n-1-components"></a>N-1 コンポーネントのインストール
+
 Connector for Microsoft Dynamics AX インストーラーを実行する前に、次の要件が満たされていることを確認します。
 
 - インストーラーでは、Microsoft .NET Framework バージョン 4.5.1 がシステムにインストールされている必要があります。
@@ -225,6 +241,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
     - Microsoft Windows Server 2012 R2 または Microsoft Windows Server 2016。
 
 ### <a name="async-server-connector-service"></a>非同期サーバー コネクタ サービス
+
 インストーラーは、すべての前提条件が満たされていることを検証します。 これらの前提条件には、SQL Server のローカル インストールなどの SQL 前提条件、または SQL Command Line Utilities やその他の必要な SQL 接続インストールなどの別の前提条件が含まれています。
 
 前提条件を満たすためには、接続されている SQL Server で全文検索が必要であり、最低でもトランスポート層セキュリティ (TLS) 1.2 がサポートされている必要があります。 Microsoft SQL Server 2012 では、最低でも、Service Pack 3 がインストールされる必要があります。 Microsoft SQL Server 2014 では、Service Pack 2 がインストールされている必要があります。
@@ -254,10 +271,11 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 9. アクション ウィンドウで、**保存** を選択します。
 
 ### <a name="n-1-real-time-service"></a>N-1 リアルタイム サービス
+
 1. バックオフィスにサインインし、**Retail とコマース \> バックオフィスの設定 \> コマース スケジューラ \> Microsoft Dynamics AX のコネクタ** の順に移動します。
 2. 作成済みのコネクタを選択します。
 3. アクション ウィンドウの **ダウンロード** タブで、**Real-time service for Dynamics AX 2012 R3** を選択してインストーラー ファイルをダウンロードし、**Real-time service for Dynamics AX 2012 R3** の下の **構成ファイル** を選択して、対応する構成ファイルをダウンロードします。 構成ファイルが設定ファイルの横に保存されることを確認してください。
-3. インストーラーおよび構成ファイルをダウンロード後、インストーラー ファイルをダブルクリックし、次の手順に従います。
+4. インストーラーおよび構成ファイルをダウンロード後、インストーラー ファイルをダブルクリックし、次の手順に従います。
 
     1. AOS URL (バックオフィスへのアクセスに使用される URL) を確認し、**次へ** を選択します。
     2. HTTPS 通信に使用する有効な SSL 証明書を選択し、**次へ** を選択します。
@@ -267,16 +285,18 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
     3. 特定のユーザーが必要な場合は、アプリケーション プールを実行するために必要なユーザー名とパスワードを入力します。 既定では、インストーラーは自動的に使用するサービス アカウントを生成します。 この方法は、安全性が向上しお勧めしますが、データベースが別のコンピューターにある場合は使用できません。 **次へ** を選択して続行します。
     4. 使用する必要のある HTTPS ポートを確認し、コンピューターのホスト名が正しいことを確認します。 **次へ** を選択して続行します。
 
-        HTTPS ポートは、店舗システムのプロファイルに一覧表示されます。 店舗システム プロファイルにアクセスするには、**店舗詳細** ページの **店舗システム** クイック タブで、選択した店舗システムのプロファイル ID を選択します。 インストーラーは自動的にホスト名を入力します。 何らかの理由で、インストールのためにホスト名を変更する必要がある場合は、ここで変更します。 ホスト名はシステムの完全修飾ドメイン名 (FQDN) でなければなりません。また、このトピックの前半にある **Connector for Microsoft Dynamics AX** ページに入力した値と一致する必要があります。
+        HTTPS ポートは、店舗システムのプロファイルに一覧表示されます。 店舗システム プロファイルにアクセスするには、**店舗詳細** ページの **店舗システム** クイック タブで、選択した店舗システムのプロファイル ID を選択します。 インストーラーは自動的にホスト名を入力します。 インストールのためにホスト名を変更する必要がある場合は、ここで変更します。 ホスト名はシステムの完全修飾ドメイン名 (FQDN) でなければなりません。また、このトピックの前半にある **Connector for Microsoft Dynamics AX** ページに入力した値と一致する必要があります。
 
     5. アプリケーション ID (クライアント ID) および Connector for Microsoft Dynamics AX  インストールと関連するシークレットを入力します。 その後、**インストール** を選択します。
 
         このアプリケーション ID とシークレットは、Async Server Connector service のインストールで使用したのと同じアプリケーション ID とシークレットにできます。 クライアント ID およびシークレットを作成するため Azure Web アプリを正しく生成する方法の詳細については、「[Azure Active Directory アプリケーションを作成する](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)」で「Azure AD でアプリケーションを登録するための基本」セクションを参照してください。 Web アプリを作成するとき、最初の URI と URL は特定の値である必要はありません。 作成されるアプリケーション ID (クライアント ID) とシークレットのみ重要です。
 
 ## <a name="cutover-steps-to-switch-to-n-1"></a>N-1に切り替えるための切替手順
+
 このセクションでは、既存の AX 2012 R3 チャンネル環境を AX 2012 R3 バックオフィスからコマース バックオフィスに切り替えるための、推奨される詳細な手順を説明します。 これらの手順は一般的なものです。 特定のビジネスまたは技術面の要件に対応するためには、さまざまな実装がこれらの手順から逸脱する必要がある可能性があります。
 
 ### <a name="prerequisites"></a>前提条件
+
 切り替えの環境を準備するのにはこれらの手順に従います。
 
 | ステップ | 詳細情報 | タイムライン |
@@ -289,6 +309,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | 6. N-1 コンポーネントのインストール。 | [N-1 コンポーネントのインストール](#install-n-1-components) セクションの指示に従い、N-1 コンポーネントをインストールします。 N-1 Async Server Connector Service コンポーネントをインストールする必要がありますが、AX 2012 R3 と Dynamics 365 CDX パッケージが混在しないように、すぐに無効にする必要があることに注意してください。 | 切替前の数週間または数か月 |
 
 ### <a name="preparation"></a>準備
+
 切り替えがスケジュールされる数日前に、これらの手順に従って準備します。
 
 | ステップ | 詳細情報 | タイムライン | この手順を実行されたことを検証する方法 |
@@ -297,6 +318,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | 2. バックオフィスですべての **AX63** CDX ダウンロード ジョブを完全に同期させます。 | CXD ダウンロード ジョブを実行してパッケージが生成され、Azure Blob storage の Blob に削除されていることを確認し、N-1 非同期サーバー コネクタ サービスが切替中にそれらを使用できるようにします。 | 切替前に少なくとも数日間 | CDX ダウンロード ジョブは、バックオフィス内の **ダウンロード セッション** にて **利用可能** になります。 |
 
 ### <a name="cutover-steps"></a>切替手順
+
 切替プロセスを行うには、これらの手順に従います。
 
 | ステップ | 詳細情報 | タイムライン | この手順を実行されたことを検証する方法 |
@@ -314,12 +336,15 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 ![段階的なロールアウト (N-1) アーキテクチャの概要](media/CDX/N-1/Cutover.jpg)
 
 ## <a name="troubleshooting-steps"></a>トラブルシューティングの手順
+
 このセクションでは、発生する可能性があるいくつかの一般的な問題と、調査、または回復する手順について説明します。
 
 ### <a name="runtime"></a>ランタイム
+
 このセクションでは、アプリケーションの実行時に発生する可能性のあるエラーの、トラブルシューティングの手順について説明します。
 
 #### <a name="metadata-synchronization-fails"></a>メタデータ同期に失敗
+
 | フィールド | 先頭値 |
 |---|---|
 | イベント ログ | Microsoft-Dynamics-Commerce-AsyncServerConnectorService/操作 |
@@ -327,6 +352,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | これは、Synch サービスの web.config 接続文字列が TrustServerCertificate を false に設定しているために発生した可能性があります。 問題を解決するには、Sync サービスの Web サイトを参照して、web.config を開きます。ConnectionStrings セクションを検索して、TrustServerCertificate が false の場合は、true に更新します。 |
 
 #### <a name="metadata-synchronization-fails"></a>メタデータ同期に失敗
+
 | フィールド | 先頭値 |
 |---|---|
 | イベント ログ | Microsoft-Dynamics-Commerce-AsyncServerConnectorService/操作 |
@@ -334,6 +360,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | これは、非同期サーバー コネクタ サービスを実行するユーザーに HQ メッセージ データ ベースへのアクセス権がないために発生した可能性があります。 問題を解決するには、services.msc を実行して、非同期サーバー コネクタ サービスを実行しているユーザーを確認します。 SQL で HQ メッセージ データベースにこのユーザー アクセスを提供します。 |
 
 #### <a name="metadata-synchronization-fails-or-cdx-jobs-are-successfully-downloaded-but-arent-applied"></a>メタデータの同期が失敗した場合、または、CDX ジョブが正常にダウンロードされたが、適用されない場合
+
 | フィールド | 金額 |
 |---|---|
 | イベント ログ | Microsoft Dynamics AX Retail : Async Client SynchClientService |
@@ -341,6 +368,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | 次の理由で発生した可能性があります。<br><br>1) 非同期クライアントで提供するユーザー ID とパスワードが、AX で提供されているチャネル データベースのユーザー ID とパスワードと一致しません。<br><br>2) 非同期サービスのエンド ポイントに到達できません。 `https://localhost:44300/SynchService/DownloadService.svc`。 通常、ユーザーは **Contoso/Administrator** (ドメイン/ユーザー) の形式であることに注意してください。 次の手順では、ドメインが **AsyncClientConfigurationUtility** ユーティリティで使用されている場合に、エラー (通信または保存に失敗) が発生することがわかっています。 このユーティリティのユーザー ID には、サーバーのインストールと構成で使用されているドメイン接頭辞を含めることは推奨されません。<br><br>この問題を修正するには、次のようにします。<br><br>1) 非同期クライアントのインストール場所から、非同期のクライアント構成ユーティリティ (AsyncClientConfigurationUtility.exe) を起動します。 **Async Server 接続タブ > 認証情報 (大文字と小文字を区別)** で、AX の N-1 チャネル データベース (**Retail および Commerce > 本社の設定 > チャネル データベース**) の値に従って、チャネル データベース ID、ユーザー名、およびパスワードの各フィールドを更新します。<br><br>2) ユーティリティで **テスト接続** を選択します。 接続が成功した場合は、Async Client サービスを再起動します。 接続に失敗した場合は、AX で N-1 チャネル データベース (**Retail および Commerce > 本社のセットアップ > チャネル データベース**) に移動し、ユーザー名とパスワードを更新してから保存します。 AX で **小売用スケジューラ パラメーター** に移動し、**メタデータ同期のリセット** を選択します。 これにより、新しい値を使用して HQ メッセージ データベースが設定されます。 手順 1 をもう一度繰り返します。<br><br>3) 非同期サーバーのエンド ポイント (`https://localhost:44300/SynchService/DownloadService.svc`) に到達できない場合、サービスのバインディングをチェックし、関連する証明書があることを確認してください。 それでも問題が解決しない場合は、`AX2012R3` の 小売チャネル スキーマにリンクされたすべてのチャネル データベース グループに対して **作業フォルダー** が指定されていることを確認してください。 |
 
 #### <a name="cdx-jobs-are-successfully-downloaded-but-arent-applied"></a>CDX ジョブが正常にダウンロードされますが、適用されません。
+
 | フィールド | 金額 |
 |---|---|
 | イベント ログ | Microsoft Dynamics AX Retail : Async Client SynchClientService |
@@ -348,6 +376,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | これは、AX63 ストア接続コンポーネントが環境にインストールされていないために発生した可能性があります。 問題を解決するには、非同期のクライアント コンポーネントを実行している環境で AX63 ストア接続コンポーネントをインストールします。 |
 
 #### <a name="n-1-async-server-connector-service-communication-exception"></a>N-1 非同期サーバー コネクタ サービスの通信例外
+
 | フィールド | 金額 |
 |---|---|
 | イベント ログ | Microsoft Dynamics AX Retail : Async Client SynchClientService |
@@ -355,6 +384,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | HQ メッセージ DB にデータがあることを確認してください。 接続が成功したことを検証するために、asyncClient コンフィギュレーション ツールを使用します。 |
 
 #### <a name="ax-2012-r3-mpos-activation-fails-with-an-error-on-step-1"></a>AX 2012 R3 MPOS のライセンス認証は、ステップ 1 でエラーで失敗します。
+
 | フィールド | 金額 |
 |---|---|
 | イベント ログ | Microsoft Dynamics AX Retail : Retail サーバー RetailServer |
@@ -363,6 +393,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | CDX ダウンロード ジョブが正常に実行され、チャネルのデータベースにデータが含まれていることを確認してください。 |
 
 #### <a name="ax-2012-r3-mpos-activation-fails-with-an-error-on-step-2"></a>AX 2012 R3 MPOS のライセンス認証は、ステップ 2 でエラーで失敗します。
+
 | フィールド | 金額 |
 |---|---|
 | イベント ログ | Microsoft Dynamics Retail Modern POS |
@@ -371,13 +402,15 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | 有効化しようとしているデバイスは、既に有効になっています。 デバイスを無効にして、有効化を試みてください。 |
 
 #### <a name="ax-2012-r3-mpos-activation-fails-with-an-error-on-step-2"></a>AX 2012 R3 MPOS のライセンス認証は、ステップ 2 でエラーで失敗します。
+
 | フィールド | 先頭値 |
 |---|---|
-| サンプル イベント ログのエラー メッセージ | 例外が発生しました: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: ログオン時にエラーが発生しました。 ---\> Microsoft.Dynamics.Commerce.Runtime.StorageException: データベースからの読み取りに失敗しました。 詳細については、内部例外を参照してください。 DatabaseErrorCode: 0 ---\> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: 無効なオブジェクト名 'crt.EMPLOYEEPERMISSIONSVIEW' です。 ---\> System.Data.SqlClient.SqlException: 'crt.EMPLOYEEPERMISSIONSVIEW' は無効なオブジェクト名です。 at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
+| サンプル イベント ログのエラー メッセージ | 例外が発生しました: [2018/04/19 19 時 26 分 51 秒] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: ログオン時にエラーが発生しました。 ---\> Microsoft.Dynamics.Commerce.Runtime.StorageException: データベースからの読み取りに失敗しました。 詳細については、内部例外を参照してください。 DatabaseErrorCode: 0 ---\> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: 無効なオブジェクト名 'crt.EMPLOYEEPERMISSIONSVIEW' です。 ---\> System.Data.SqlClient.SqlException: 'crt.EMPLOYEEPERMISSIONSVIEW' は無効なオブジェクト名です。 at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
 | 有効化場面上での MPOS エラー | DZ1001 |
 | トラブルシューティングの手順 | 有効化しようとしているデバイスは、既に有効になっています。 デバイスを無効にして、有効化を試みてください。 |
 
 #### <a name="ax-2012-r3-mpos-activation-fails-with-an-error-on-step-9"></a>AX 2012 R3 MPOS のライセンス認証は、ステップ 9 でエラーで失敗します。
+
 | フィールド | 金額 |
 |---|---|
 | イベント ログ | Microsoft Dynamics Retail Modern POS |
@@ -386,9 +419,11 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | ストアの CDX 下位互換性セクションで、リアル タイム サービス プロファイル フィールドを確認してください。 これは、N-1 用に作成した RTS プロファイルに設定する必要があります。 |
 
 ## <a name="required-kbs-for-n-1"></a>N-1 に必要な KB
+
 次の図では、正常に動作するために N-1 を必要とする全ての KB を表しています。
 
 ### <a name="dynamics-365-retail--microsoft-dynamics-365-72-headquarters"></a>Dynamics 365 Retail – Microsoft Dynamics 365 7.2 バック オフィス
+
 | KB 番号 | 肩書き |
 |---|---|
 | 4095190 | 顧客が 6.3 から Dynamics 365 にデータを移動するための公式アップグレード プロセスに従わなかった場合に N-1 機能を有効化するのに必要なため、RetailSharedParameters フォームの RetailSharedParameter の TransactionServiceProfileID を公開します。 |
@@ -408,6 +443,5 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | 4133289 | 製品の N-1 version の実行 - 仕訳帳または既存のトランザクションからの払戻に失敗 |
 | 4161086 | CDX テーブル配布は、ルート テーブル ノードに追加された 'FieldValue' リンク タイプを無視するため、提供された条件 (x++ fix) を使用してテーブルをフィルター処理するためにその情報を使用しません |
 | 4161099 | CDX テーブル配布は、ルート テーブル ノードに追加された 'FieldValue' リンク タイプを無視するため、提供された条件 (バイナリ変更) を使用してテーブルをフィルター処理するためにその情報を使用しません |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

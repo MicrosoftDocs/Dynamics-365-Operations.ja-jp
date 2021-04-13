@@ -2,11 +2,9 @@
 title: 拡張機能を使用して列挙体に値を追加
 description: このトピックでは、列挙型を拡張することによって列挙型に新しい値を追加する方法について説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 062cd0ac9280d82656f3454027e07314d6bcd933
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eee91bdf349fc9e68e8f98ee8a8baef8fa1e8c92
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409275"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748497"
 ---
 # <a name="add-values-to-enums-through-extension"></a>拡張機能を使用して列挙体に値を追加
 

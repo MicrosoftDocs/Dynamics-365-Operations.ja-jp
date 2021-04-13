@@ -2,11 +2,9 @@
 title: Azure Pipelines で LCS 接続を作成する
 description: このトピックでは、Azure DevOps から Microsoft Dynamics Lifecycle Services (LCS) への接続を設定する方法について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10d8f69faf7a85d8695e0fc65a337c7290aecd1f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 65b0248add7ea7c5cf24f6aca90402b59a0f93e1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408988"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744813"
 ---
 # <a name="create-an-lcs-connection-in-azure-pipelines"></a>Azure Pipelines で LCS 接続を作成する
 

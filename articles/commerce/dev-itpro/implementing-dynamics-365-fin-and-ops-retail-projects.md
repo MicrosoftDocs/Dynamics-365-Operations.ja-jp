@@ -1,12 +1,10 @@
 ---
 title: コマース プロジェクトを実装する
-description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトのための推奨事項について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce実装プロジェクトのための推奨事項について説明します。
 author: andreashofmann1
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: bf64fb54435dbf0b8bc0c5e227157abc028b635b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7a0aa8bce972a931ff36c7d98425044e64a33a2b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685401"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791187"
 ---
 # <a name="implement-commerce-projects"></a>コマース プロジェクトを実装する
 

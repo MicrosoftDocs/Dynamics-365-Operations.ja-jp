@@ -2,11 +2,9 @@
 title: 非推奨 API
 description: このドキュメントでは、非推奨の API のリストと非推奨の API の移行ガイドを提供しています。
 author: aneesmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaafed277943724ae90b4630162ad1342b4102cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8090ac7f6b0870c1d1c85faee5355bb18bd90634
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679944"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748407"
 ---
 # <a name="deprecated-apis"></a>非推奨 API
 

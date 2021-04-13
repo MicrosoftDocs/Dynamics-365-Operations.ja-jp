@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) のプロジェクト
 description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトについて説明します。
 author: manalidongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0033c134907ea0b871d6727bb408d3d6bf7c8a2
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: c03bc864ca39a617768cad20f15edb3c9c152b09
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126987"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744801"
 ---
 # <a name="projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のプロジェクト
 

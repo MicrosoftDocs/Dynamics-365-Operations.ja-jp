@@ -1,12 +1,10 @@
 ---
 title: Commerce Data Exchange のベスト プラクティス
-description: このトピックは、Microsoft Dynamics 365 Commerce 環境に、データ同期、Commerce Data Exchange (CDX) に関連する機能を実装するユーザーを対象としています。
+description: このトピックでは、Microsoft Dynamics 365 Commerce 環境の Commerce Data Exchange (CDX) によるデータ同期について説明します。
 author: jashanno
-manager: AnnBe
-ms.date: 02/08/2021
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
@@ -18,14 +16,15 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 93275ea79f448ddd5911b44e498c1735382c608c
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 6be7947a38ee88f3c37f84ecded6e4ba132c2c76
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141926"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801937"
 ---
 # <a name="commerce-data-exchange-best-practices"></a>Commerce Data Exchange のベスト プラクティス
+
 [!include[banner](../includes/banner.md)]
 
 このトピックは、Microsoft Dynamics 365 Commerce 環境に、データ同期、Commerce Data Exchange (CDX) に関連する機能を実装するユーザーを対象としています。 実装にあたってのベスト プラクティスのアドバイスを提供します。
@@ -38,7 +37,20 @@ ms.locfileid: "5141926"
 
 このトピックの主な内容は以下の表にまとめました。最初の列にはタグの似た「関連する領域」のリストが含まれており、関心のある分野に関するベストプラクティスをすばやく見つけることができます。 新しい実装については、これらのテーブルをコピーし、さまざまなベスト プラクティスが完成したときにチェックできる場所にコピーしておくと役立つ場合があります。 このようにして、本番に移る前に可実装が準備されているかどうかを能な限り確認することができます。
 
+## <a name="recommended-configurations-with-up-to-date-maturity-information-to-denote-confidence-of-functionality"></a>推奨されるコンフィギュレーション (機能の信頼性を示す最新の満期情報を含む)
+
+次のコンフィギュレーションがリリースされましたが、一部の使用シナリオでは役に立たない可能性のあるロジックが変更されます。 これらの機能はテスト済ですが、完全に検証されていないシナリオもあります。 次の表では、機能の信頼性に関する情報を提供するために満期がリスト化されています。
+
+機能は月によって変化しますので、特定の機能の満期や新しい機能が追加されたかどうかに関して、もう一度確認する価値があります。 次の機能のいずれかを適用するには、**Retail と Commerce > 本社の設定 > パラメーター > コマース パラメーター** の順に移動します。  左端のメニューで、**コンフィギュレーション パラメーター** を選択します。  表示されるページで、**名前** フィールドにキー (下の表に示す) を入力し、既定値を (下の表の **説明** 列に示す) を **値** フィールドに入力します。
+
+| 機能 | キー | 説明 |  満期 |
+|------------------|---------------------|------------------------------|-----------------------------------|
+| 遅延ダウンロード セッションを作成 | CDX_ENABLE_DELAYED_OFFLINE_DOWNLOAD_SESSION_CREATION | このパラメータによって、ダウンロード セッションが作成されるのを、Modern POS デバイスが有効になるまで遅らせます。  この遅延により、長い期間使用されない可能性がある不必要なダウンロード セッションは作成されません。 既定値は、**0** で無効です。 機能を有効にするには、値を **1** に設定します。| 高<br><br>(機能はバージョン 10.0.15 にリリースされました) |
+| パッケージ注文の実施 | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | このパラメータによって、ダウンロード セッション アプリケーションが順番に適用されます。 ダウンロード セッション アプリケーションが失敗した場合 (既定の値は 3 に定義された **試行回数** 値で定義された試行回数の後に発生する場合)、そのセッションは **一時中断** としてマークされ、中断したセッションが再試行またはキャンセルされるまでセッション アプリケーションは続行されません。 このキーを使用して、以前に適用されたセッション (**利用可** または **一時中断** ではないセッション) を再実行することはできません。<br><br>この機能により、順不同でダウンロード セッションを適用した後に発生する固有のキー例外が原因で、ダウンロード セッションの失敗を防ぐことができます。 既定値は、**0** で無効です。 | 中程度<br><br>(機能はバージョン 10.0.18 にリリースされました) |
+| 失敗時のロール バック | CDX_ENABLE_ROLLBACK_ON_FAILURE | **このキーは既知問題のため、使用をお勧めしません。**  オフライン データベースからチャンネル データベースに (P ジョブ配送スケジュールに基づいて) トランザクションを同期する場合、通常、レコードがマージされます。 つまり、トランザクション ID が重複するレコードが上書きされます。 この機能を使用すると、オフライン同期によってレコードが挿入されます。 この挿入により、上書きとエラー修正が防止され、問題を調査できます。 この時点で、オフライン トランザクションの投稿同期の消去が失敗し、挿入エラーが発生してオフライン同期が停止する可能性があります。このため、現在は機能設定を無効にすることをお勧めします。 既定値は **1** で、既定により有効です。  この値を **0** に変更することを強くお勧めします。 | 既知の問題が原因で、低いです。<br><br>(機能はバージョン 10.0.13 にリリースされました) |
+
 ## <a name="updating-configurations"></a>コンフィギュレーションの更新
+
 次の手順は、更新するたびに Dynamics 365 環境に対して実行する必要があります。
 
 | 関連する領域 | ベスト プラクティス |
@@ -63,13 +75,12 @@ ms.locfileid: "5141926"
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [Commerce Data Exchange のトラブルシューティング](CDX-Troubleshooting.md) 
-- [Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md) 
-- [Dynamics 365 Commerce アーキテクチャの概要](../commerce-architecture.md) 
-- [ストア内トポロジの選択](retail-in-store-topology.md) 
-- [デバイス管理実装ガイダンス](../implementation-considerations-devices.md) 
-- [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md) 
-- [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md) 
-
+- [Commerce Data Exchange のトラブルシューティング](CDX-Troubleshooting.md)
+- [Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md)
+- [Dynamics 365 Commerce アーキテクチャの概要](../commerce-architecture.md)
+- [ストア内トポロジの選択](retail-in-store-topology.md)
+- [デバイス管理実装ガイダンス](../implementation-considerations-devices.md)
+- [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md)
+- [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

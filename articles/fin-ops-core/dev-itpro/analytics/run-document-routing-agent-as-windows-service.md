@@ -1,27 +1,25 @@
 ---
 title: ドキュメント回覧エージェントを Windows サービスとして実行する
 description: このトピックでは、ドキュメント回覧エージェントによって使用される実行モードの選択に役立つ情報を提供します。
-author: TJVass
-manager: AnnBe
-ms.date: 09/13/2017
+author: RichdiMSFT
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.custom: 191133
 ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 51ffd9fd0baa987b04fc182a7428dfa25dba90be
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: e195c2371430ff44aed23bd1e560a61d23cad151
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093578"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754282"
 ---
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 
@@ -78,7 +76,8 @@ ms.locfileid: "5093578"
 4. **ログオン** タブで、**この勘定** オプションを選択し、サービスを実行するために使用される AD DS 資格情報を入力します。
 
     > [!NOTE]
-    > 選択したアカウントが共有ネットワーク デバイスにアクセスできることを確認します。
+    > 選択したアカウントは共有ネットワーク デバイスにアクセスできる必要があります。
+    > Windows サービスを実行するのに使用する Windows ドメイン アカウント (またはローカル コンピューター アカウント) は、ドキュメント回覧エージェントのデスクトップ アプリケーションを開始するアカウントと同じである必要があります。
 
 5. **OK** を選択します。
 6. サービスを開始します。

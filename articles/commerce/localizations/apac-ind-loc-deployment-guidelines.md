@@ -2,11 +2,9 @@
 title: インドのキャッシュ レジスターの配置ガイドライン
 description: このトピックは、インドのローカライズ用配置ガイドです。
 author: AlexChern0v
-manager: annbe
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: jiaqia
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: fea0710e502cd57ebb9cd3f1817acaf2d00fb7a7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bedb748838ad8fed85e3f673328a690be3d5be65
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972771"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798849"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 

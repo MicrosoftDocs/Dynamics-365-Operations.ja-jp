@@ -2,11 +2,9 @@
 title: 優先順位に基づく調整
 description: このトピックでは、Odata およびカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
 author: hasaid
-manager: AnnBe
 ms.date: 09/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 1c9b1681f39867769a8ca443b77794f4db53972c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8dd76d82dfa62823b6c867fd825c01668feb575f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688057"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750380"
 ---
 # <a name="priority-based-throttling"></a>優先順位に基づく調整
 

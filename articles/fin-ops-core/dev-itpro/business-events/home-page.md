@@ -2,11 +2,9 @@
 title: ビジネス イベントの概要
 description: このトピックは、外部システムが Dynamics 365 Finance and Operations アプリから通知を受信できるようにする、ビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 8799b97c51f9cbdd6a20d0d5c4ebe783b97047ae
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 4851d5e34cf548cbe3d8ee6ccfb0762b53c7bc99
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128665"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752352"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 
@@ -33,7 +31,7 @@ ms.locfileid: "5128665"
 
 ## <a name="prerequisites"></a>必要条件
 
-ビジネス イベントは Microsoft Power Automate および Azure メッセージング サービスにて利用できます。 したがって、ビジネス イベントを使用する際には、顧客が該当するアセットのサブスクリプションを契約している必要があります。
+ビジネス イベントは Microsoft Power Automate およびAzureメッセージング サービスにて利用できます。 したがって、ビジネス イベントを使用する際には、顧客が該当するアセットのサブスクリプションを契約している必要があります。
 
 > [!IMPORTANT]
 > ビジネス イベントを、エクスポート用データのメカニズムと考えることはできません。 定義上は、ビジネス イベントは簡易で軽快であることになっています。 データ エクスポートのシナリオを実行するために大量のペイロードを搭載することは想定していません。

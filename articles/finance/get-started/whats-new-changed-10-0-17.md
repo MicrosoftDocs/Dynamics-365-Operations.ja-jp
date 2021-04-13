@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance 10.0.17 の新機能または変更された機能 (2021 年 4 月)
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.17 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
-manager: AnnBe
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
@@ -16,14 +14,14 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: bfa67411005afc632b8ad680a226b65258baf734
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: ea97fa7b7dd29f6af1591414616a73ea09faf71b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104453"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836887"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10017-april-2021"></a>Dynamics 365 Finance 10.0.17 の機能のプレビュー (2021 年 4 月)
+# <a name="whats-new-or-changed-in-dynamics-365-finance-10017-april-2021"></a>Dynamics 365 Finance 10.0.17 の新機能または変更された機能 (2021 年 4 月)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

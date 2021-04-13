@@ -2,11 +2,9 @@
 title: 選択したデータ型の小数点以下の精度の拡張
 description: このトピックでは、選択したデータ型の小数点以下の精度の拡張方法について説明します。
 author: LarsBlaaberg
-manager: ''
 ms.date: 09/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: 91ccc049fbef1018f3f763ae21fdd8e26bf19c80
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 986282f4fe21ddf56d30e473afa516dd98599017
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409351"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749652"
 ---
 # <a name="extending-decimal-point-precision-for-selected-data-types"></a>選択したデータ型の小数点以下の精度の拡張
 

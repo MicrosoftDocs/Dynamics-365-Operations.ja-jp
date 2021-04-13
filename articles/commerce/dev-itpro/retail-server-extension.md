@@ -2,11 +2,9 @@
 title: 新しい Retail Server 拡張機能の作成
 description: このトピックでは、新しい Commerce Scale Unit 拡張機能の作成方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d9cba70830f807077fa9e00c45622aa94435d7cd
-ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
+ms.openlocfilehash: 81011d2a21b6e0529f57976d29f550d6bf967be1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5031835"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792977"
 ---
 # <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10010-and-earlier"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.10 以前)
 

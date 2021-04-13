@@ -2,11 +2,9 @@
 title: カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
 description: このトピックでは、製品内の [ヘルプ] ウィンドウをカスタム ヘルプ コンテンツで拡張する方法について説明します。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 4a950e20c4c333acf58d8a16a817eb611177b791
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 19fa06b3223a4289aa65ff3dd0ebed0990619a1b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685099"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752760"
 ---
 # <a name="connect-a-custom-help-website-to-the-help-pane"></a>カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
 

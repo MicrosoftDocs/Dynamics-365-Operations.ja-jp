@@ -2,11 +2,9 @@
 title: PowerBI.comとオンプレミス環境との統合
 description: このトピックでは、 オンプレミス配置にてエンティティストアを有効にする方法を提供します。
 author: MilindaV
-manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EntityStoreOnPrem
 audience: IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a7fba42e55564c55fe9bd9f5d11ffce577223e3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b5dda687687e7adaf77726ab081c82fdc3bc553f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687088"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751246"
 ---
 # <a name="powerbicom-integration-with-on-premises-environments"></a>オンプレミス環境との PowerBI.com の統合
 
 [!include [banner](../includes/banner.md)]
 
-クラウド版では、Microsoft Power BI との緊密な統合を可能にするいくつかの機能が用意されています。 いくつかの機能は、オンプレミスの配置用にはまだ実装されていません。 ただし、オンプレミス配置でのエンティティ格納を利用することで、PowerBI.com を使って Finance and Operations のデータのレポートや分析ができるようになっています。 
+クラウド版では、Microsoft Power BI との緊密な統合を可能にするいくつかの機能が用意されています。 いくつかの機能は、オンプレミスの配置用にはまだ実装されていません。 ただし、オンプレミス配置でのエンティティ格納を利用することで、PowerBI.com を使ってデータのレポートや分析ができるようになっています。 
 
 このトピックでは、 Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム26 (2019 年 5 月)以降にて動作する、オンプレミス配置で使用できる分析機能について概説します。
 

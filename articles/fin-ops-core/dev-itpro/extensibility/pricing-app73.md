@@ -2,11 +2,9 @@
 title: 価格と割引の拡張性
 description: このトピックでは、価格設定機能を展開する方法を説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 373f1850ff27181cdcccf09dad7be5847c066200
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9887b9184cf930165c172a16bfcce59d93801786
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409488"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749906"
 ---
 # <a name="price-and-discount-extensibility"></a>価格と割引の拡張性
 

@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) ユーザー ガイド
 description: このトピックでは、Lifecycle Services で使用できるツールと、作業段階を進めていく際に使用するツールについて説明します。
 author: angelmarshall
-manager: AnnBe
 ms.date: 07/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd5ea3879e1be19b597d4d6b3b69b4ba3f00d10
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 2fcf0450f1eae3fe9f56098b913eed7e4b4178d4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129361"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744513"
 ---
 # <a name="lifecycle-services-lcs-user-guide"></a>Lifecycle Services (LCS) ユーザー ガイド
 

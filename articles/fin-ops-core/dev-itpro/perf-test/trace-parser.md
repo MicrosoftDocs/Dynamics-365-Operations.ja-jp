@@ -2,11 +2,9 @@
 title: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 description: このトピックでは、トレース パーサーを使用してトレースを操作し、展開におけるパフォーマンスを分析する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a991363847ab1996d07c0ab3c0f7aaf419a9bbf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ce740587d10d52f5ffd2c3b0c3aa2fc127d8cbb1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680428"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745141"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 
@@ -60,7 +58,7 @@ ms.locfileid: "4680428"
 
 **呼び出しツリーの表示** **呼び出しツリー** タブを選択すると、すべての X++ メソッドの呼び出しツリーが表示されます。 タブは、次に示します。 
 
-[呼び出しツリー タブ](./media/3_desktop.png)に表示される情報の例 (./media/3_desktop.png) 
+[呼び出しツリー タブに表示される情報の例](./media/3_desktop.png)](./media/3_desktop.png) 
 
 デスクトップ同様に、**X++** タブを表示し、すべての X++ メソッドの一覧を表示することができます。 包括的/排他的な期間、RPC、データベース呼び出しなどのフィールドでソートされます。 これらは Trace Parser の対応するタブに類似しており、同じ動作をすることに注意してください。
 

@@ -2,11 +2,9 @@
 title: ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 description: このトピックでは、BPM ライブラリでアクティビティ図を使用する方法について説明します。
 author: AngelMarshall
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 776ad8a4505d888286f1f9fbca6700d69b33df81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 24bed4ec28e34e17c2bbf5019cce7f29b5459394
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681042"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746035"
 ---
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 

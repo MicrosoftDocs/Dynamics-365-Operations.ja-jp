@@ -2,11 +2,9 @@
 title: カスタム サービスの開発
 description: このトピックでは、カスタム サービスの作成方法を説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a7405ccca0f728f7290d8a3a6590df574de3297
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 07f9adec9950bef698f081c8629d2dac712d1d6a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679358"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752308"
 ---
 # <a name="custom-service-development"></a>カスタム サービスの開発
 

@@ -2,26 +2,24 @@
 title: Azure ExpressRoute と Finance and Operations アプリ
 description: 顧客は、Microsoft Azure ExpressRoute を使用して、オンプレミス インフラストラクチャに接続できます。
 author: PeterRFriis
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.custom: 260954
 ms.assetid: 5dccb418-b489-4777-aa5e-2a0b03b4f2b0
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: da0af411f7770d523026a454c71930dbac974f9b
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 01afaf018fc91baec9a1a469d0d727ed64ca22c5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127664"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744821"
 ---
 # <a name="azure-expressroute-and-finance-and-operations-apps"></a>Azure ExpressRoute と Finance and Operations アプリ
 

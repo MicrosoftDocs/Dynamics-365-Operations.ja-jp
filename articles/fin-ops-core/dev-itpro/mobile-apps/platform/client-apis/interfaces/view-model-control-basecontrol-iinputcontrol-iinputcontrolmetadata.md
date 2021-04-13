@@ -2,11 +2,9 @@
 title: InputControlMetadata タイプ
 description: 入力コントロールのメタデータ。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7223beb99834f49ab3aca22cff7c141bfa17a28
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6ef58e4553e258b6861b7b43bb57a80f0ed41fc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688505"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744203"
 ---
 # <a name="inputcontrolmetadata-type"></a>InputControlMetadata タイプ
 

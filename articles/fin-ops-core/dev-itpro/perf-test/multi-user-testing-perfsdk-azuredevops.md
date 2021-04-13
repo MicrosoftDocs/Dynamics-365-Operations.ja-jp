@@ -2,11 +2,9 @@
 title: パフォーマンス SDK と Azure DevOps を使用したマルチユーザー テスト
 description: このトピックでは、Microsoft Azure DevOps、パフォーマンス SDK、およびタスク レコーダー パフォーマンス テスト スクリプトを使用してマルチユーザー テストを行う方法について説明します。
 author: hasaid
-manager: AnnBe
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 533fa89e21d66e0f6c1d815582b87394f6efbd5f
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: c1b7aaff1ea3b0378a895f65db0a3e9d1a9fab56
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092131"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749241"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-azure-devops"></a>パフォーマンス SDK および Azure DevOps を使用したマルチ ユーザー テスト
 

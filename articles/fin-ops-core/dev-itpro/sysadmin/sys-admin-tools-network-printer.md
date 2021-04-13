@@ -1,27 +1,25 @@
 ---
 title: 法人間でのネットワーク プリンターへのアクセスの管理
 description: このトピックでは、システム管理ユーティリティを使用してネットワーク プリンターを設定する方法に関する情報が提供されます。
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93ffc9b5db93c05ff9f9386fe4bbdb218a2961b3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7934a73b54a2a370e9cddbff7c7c363cce0a44aa
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681608"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745901"
 ---
 # <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 

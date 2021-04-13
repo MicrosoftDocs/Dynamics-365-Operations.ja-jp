@@ -2,11 +2,9 @@
 title: AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 description: このトピックでは、Finance and Operations へのデータ アップグレードに関連付けられている、Microsoft Dynamics AX 2012 チェックリストの各タスクについて説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 456e574bf5d19d356057b40316b8b7b5b2e7ad41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d23bf206018e9077d2f290af6d32901d60418161
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683967"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748093"
 ---
 # <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 

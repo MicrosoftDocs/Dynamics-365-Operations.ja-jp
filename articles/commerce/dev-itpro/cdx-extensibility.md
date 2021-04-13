@@ -2,11 +2,9 @@
 title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 description: このトピックでは、コマース 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 504058bb1aba63195a72f464a781bff33fca8236
-ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
+ms.openlocfilehash: a8696dd4934ed6f495c5add98b5b8070c56427ea
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4712682"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791223"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -233,7 +231,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 ## <a name="cdx-sample---pull-new-columns-to-an-existing-table"></a>CDX サンプル - 新しい列を既存のテーブルにプルする
 
-Microsoft Dynamics 365 Retail アプリ更新プログラム 5 では、**RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables** に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
+Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 では、**RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables** に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
 
 次のセクションでは、拡張テーブルを使用してトランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 他のセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルをコマースにアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
 

@@ -2,11 +2,9 @@
 title: 'Adyen コネクタを使用した強力な顧客認証 (Strong Customer Authentication: SCA)'
 description: このトピックでは、店舗内チェックアウトにおける強力な顧客認証 (SCA) について説明します。
 author: rubendel
-manager: annbe
 ms.date: 05/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1388ae62001f423474f677b71704b0d7924f3cdd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4045ea58844bc343ac594952fc77b1065bc7ab17
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980069"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797371"
 ---
 # <a name="strong-customer-authentication-sca-using-the-adyen-connector"></a>Adyen コネクタを使用した強力な顧客認証 (Strong Customer Authentication: SCA)
 

@@ -2,11 +2,9 @@
 title: プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクト オンボード ウィザードについて説明します。
 author: vetrivicky
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: vetric
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a168fbcda27c26cebbdea49500418a33d5b06aea
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 77e429a9170e6e21f3ecb4ab6d15e8b7e8477572
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687892"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748121"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 

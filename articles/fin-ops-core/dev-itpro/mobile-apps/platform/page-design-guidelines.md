@@ -2,11 +2,9 @@
 title: ページ デザインのガイドライン
 description: このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。
 author: robinarh
-manager: AnnBe
 ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 73633fd74c1d0149ad6b521e11093c51487e15b0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6848f8480ad6e68dbf0899c9fe4b581a62ecee10
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682555"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752688"
 ---
 # <a name="page-design-guidelines"></a>ページ デザインのガイドライン
 

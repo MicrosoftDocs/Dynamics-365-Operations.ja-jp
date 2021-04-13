@@ -1,25 +1,23 @@
 ---
 title: サポートされるフォント
 description: Finance and Operations アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、270 以上の標準のビジネス対応フォントへのアクセスが含まれます。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: af2484686aa6f589b7c714e3892d400da4ddb805
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 42f1e3bc0f836ae2954735e4c35caeed04644c24
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682281"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749353"
 ---
 # <a name="supported-fonts"></a>サポートされるフォント
 

@@ -2,11 +2,9 @@
 title: テスト データ転送ツールを使用した AX 2012 R3 のデモ データのインポート
 description: このチュートリアルでは、テスト データ転送ツール (ベータ) を使用して Microsoft Dynamics AX 2012 R3 のデモ データをインポートします。
 author: kfend
-manager: AnnBe
 ms.date: 01/02/2020
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 9596bd56de9f48984d2e5367f4a5bb61b1fbb056
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f77e1e570419e50933d42aee5539c7d9addd656c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679260"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745283"
 ---
 # <a name="import-demo-data-for-ax-2012-r3-by-using-the-test-data-transfer-tool"></a>テスト データ転送ツールを使用した AX 2012 R3 のデモ データのインポート
 

@@ -2,11 +2,9 @@
 title: パートナー向け Finance and Operations アプリの Lifecycle Services (LCS)
 description: この記事では、パートナーが Microsoft Dynamics Lifecycle Services (LCS) をどのように使い始めることができるかについて説明します。
 author: angelmarshall
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 528434724a4ab7379cb4d28bfacf3fea69cdfbef
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a1624933c6d29acd5af7129b0365f93c3e632d05
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680012"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750250"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>パートナー向け Finance and Operations アプリの Lifecycle Services (LCS)
 

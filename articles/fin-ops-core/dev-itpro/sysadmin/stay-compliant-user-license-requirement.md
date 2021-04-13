@@ -2,11 +2,9 @@
 title: ユーザー ライセンス要件への準拠の維持
 description: このトピックでは、Finance and Operations アプリのユーザー ライセンス要件を遵守する方法に関する情報を提供します。
 author: peakerbl
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 5b4e0994bdd6ad6ea09fa0662593554939c3dd96
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 300bae7debeb0af23ca3be165630c2a612c9699e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679904"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745903"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 

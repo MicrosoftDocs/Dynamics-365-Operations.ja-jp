@@ -1,25 +1,23 @@
 ---
 title: Finance + Operations (オンプレミス) の購入
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) を購入し、展開する方法を説明します。
-author: maertenm
-manager: AnnBe
-ms.date: 09/12/2019
+author: cabeln
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: cabeln
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3d6c181d0aec9758a96ae9a354ffb9aa876b8fb5
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: b32c4f13f8b0651e6445971e27dd22659f2a6d3d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798191"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744677"
 ---
 # <a name="buy-finance--operations-on-premises"></a>Finance + Operations (オンプレミス) の購入
 
@@ -58,12 +56,7 @@ Finance + Operations (オンプレミス) を購入するには、Microsoft Onli
 
 Microsoft Online Services ID は、Finance + Operations (オンプレミス) をエンティティが所有するハードウェアと環境にプロビジョニングして登録するために必要です。 プロビジョニングおよび登録プロセスを完了するには、プロビジョニング ガイド (下へのリンク) を参照してください。 Microsof tオンライン サービス ID が既に存在する場合は、グローバル管理者によって、プロセスを完了する必要があります。 Microsoft オンライン サービスの ID を最初に作成する場合は、プロセスを開始する担当者がグローバル管理者になります。
 
-既存の Microsoft オンライン サービス試用版または有料サブスクリプションがある場合は、サインアップ時に作成された Microsoft オンライン サービス ID が既にあります。 次のリンクをクリックするときは、オンプレミス環境にこの同じ Azure Active Directory (AAD) テナントを使用する場合に、このアカウントでログインを選択します。
-
-プロビジョニング ガイドへのアクセスについては、こちらを参照してください。
-
-- [CustomerSource のプロビジョニング ガイド](https://go.microsoft.com/fwlink/?linkid=852080)
-- [PartnerSource のプロビジョニング ガイド](https://mbs.microsoft.com/partnersource/global/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
+既存の Microsoft オンライン サービス試用版または有料サブスクリプションがある場合は、サインアップ時に作成された Microsoft オンライン サービス ID が既にあります。 オンプレミス環境にこの同じ Azure Active Directory (AAD) テナントを使用する場合、このアカウントでログインを選択します。 詳細については、[プロビジョニング ガイド](https://mbs2.microsoft.com/fileexchange/?fileID=b5aec84e-28e9-491f-ba91-9f662acd4e70) を参照してください。
 
 LCS にログインすると、プロジェクトが自動的にプロビジョニングします。 LCS プロジェクトでは、オンプレミス環境を配置できます。 LCS プロジェクトの使い方の詳細については、[Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
 

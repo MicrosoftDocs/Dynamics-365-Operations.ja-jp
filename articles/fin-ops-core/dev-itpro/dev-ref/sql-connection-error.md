@@ -2,11 +2,9 @@
 title: X++ の SQL 接続エラー例外
 description: このトピックでは、X++ での SQL 接続エラー例外のタイプについて説明します。
 author: yiqju
-manager: AnnBe
 ms.date: 09/27/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
-ms.openlocfilehash: 152c0798c57fd59bb49a6cd659c1b5be7dd01392
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 634c7440d037311574200d8b0c7f86f6d1a5bcb6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408754"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750966"
 ---
 # <a name="sql-connection-error-x-exception"></a>X++ の SQL 接続エラー例外
 

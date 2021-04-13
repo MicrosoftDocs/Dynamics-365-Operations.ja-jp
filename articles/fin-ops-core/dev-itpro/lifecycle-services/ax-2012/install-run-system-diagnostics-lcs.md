@@ -2,26 +2,24 @@
 title: システム診断のインストールと実行
 description: 環境を検出してデータを収集するサービスが使用できるようになる前にインストールする必要があるオンプレミス コンポーネントがシステム診断に含まれています。
 author: PeterRFriis
-manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 18861
 ms.assetid: 075b4e28-162f-47ae-8713-392d711bdaff
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7db6d8fcba7ff745ee39706115706a5d82f77ed2
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: c7b8e1488f8d236dd01c36ec21195e9336475596
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128739"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745279"
 ---
 # <a name="install-and-run-system-diagnostics"></a>システム診断のインストールと実行 
 

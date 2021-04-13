@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) から更新プログラムをダウンロード
 description: このトピックでは、期待される更新と、更新を Lifecycle Services (LCS) から取得する方法について説明します。
 author: AngelMarshall
-manager: AnnBe
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a8172ddfceb48dcf142a6e037b66b214f660d90
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 05efca0496c32da550ff9eebbbcffd189e21e6c5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679940"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750346"
 ---
 # <a name="download-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムをダウンロード
 

@@ -2,11 +2,9 @@
 title: データ エンティティの概要
 description: このトピックでは、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドについて説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e9d35524d67badd5d281f1888ec22e08971df9e
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 7a3c4351c94f2356339605ab59a6426331e86b06
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130019"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751020"
 ---
 # <a name="data-entities-overview"></a>データ エンティティの概要
 

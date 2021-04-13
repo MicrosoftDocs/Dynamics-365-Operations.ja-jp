@@ -2,11 +2,9 @@
 title: カスタム ボタンを POS ヘッダー バーに追加
 description: このトピックでは、POS ヘッダー バーに新しいカスタム ボタンを追加する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2020
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 0fe2461d886cf1e2e3775cda44fc6c73027fa367
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c68efaac430d937d0085f899dcbd23f93d118642
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681514"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792989"
 ---
 # <a name="add-custom-buttons-to-the-pos-header-bar"></a>カスタム ボタンを POS ヘッダー バーに追加
 

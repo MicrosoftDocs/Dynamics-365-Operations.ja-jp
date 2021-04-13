@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 33 の新機能または変更された機能について説明します。
 author: sericks007
-manager: AnnBe
 ms.date: 03/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 93f2ed89c9b27ae4209e3300a5a447d0fdad5b49
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ec3238b3fde432911de4241810ac6b9850ae6994
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685113"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743963"
 ---
 # <a name="whats-new-or-changed-in-platform-update-33-for-finance-and-operations-apps-april-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
 

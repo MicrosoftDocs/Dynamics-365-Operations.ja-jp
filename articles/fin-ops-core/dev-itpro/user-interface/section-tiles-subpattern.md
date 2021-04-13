@@ -2,11 +2,9 @@
 title: セクション タイルのサブパターン
 description: この記事では、セクション タイルのサブパターンに関する情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90443e71c1f1790cb6070347c401bf9939671544
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 269f70d9e0392491ed48a49f33508abc454cc3ae
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092441"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749235"
 ---
 # <a name="section-tiles-subpattern"></a>セクション タイルのサブパターン
 

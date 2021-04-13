@@ -2,11 +2,9 @@
 title: PageState 列挙
 description: ページを配置できるさまざまな高レベルの状態を表します。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cceb74591e4186ca7f3951f396d2c6f98d425ad5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 925b7a08a2cee3c4c291ddb72af9ecb5e7677e4b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687316"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748087"
 ---
 # <a name="pagestate-enumeration"></a>PageState 列挙
 

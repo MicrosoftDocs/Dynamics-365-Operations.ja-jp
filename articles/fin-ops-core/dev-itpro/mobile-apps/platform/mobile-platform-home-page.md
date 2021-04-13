@@ -2,11 +2,9 @@
 title: モバイル プラットフォームのリソース
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: robinarh
-manager: AnnBe
 ms.date: 10/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: d74c3877a69394b400c25f32e1eb128bf166a6f3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 24dd2cb7bcae547da4037e095d58d18f1bdcf574
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688203"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744717"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -148,7 +146,7 @@ ms.locfileid: "4688203"
 
 ## <a name="troubleshooting-the-app"></a>アプリ の トラブルシューティング
 
-### <a name="resolved---no-support-for-ios14-due-to-issues-with-date-and-time-controls"></a>**[解決済]** - 日付と時刻のコントロールに問題があるため、iOS14 はサポートされません
+### <a name="resolved---no-support-for-ios14-due-to-issues-with-date-and-time-controls"></a>**解決済** - 日付と時刻のコントロールに問題があるため、iOS14 はサポートされません
 Finance and Operations モバイル アプリのバージョン 2.2.8 は、iOS14 の日時のピッカーに関する既知の問題を修正します。 IOS14 上でアプリケーションを実行する際に問題が発生した場合は、最新バージョンのアプリを使用していることを確認してください。  
 
 ### <a name="the-mobile-client-app-is-not-working-on-particular-devices"></a>モバイル クライアント アプリ が 特定のデバイスで動作しない

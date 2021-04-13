@@ -2,11 +2,9 @@
 title: Go-Live の準備
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトにおける Go-Live の準備方法を説明します。
 author: ClaudiaBetz-Haubold
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 24dc9b0014621d673b5e7df5033ad2a6e0a73733
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 37ca03f004fdbf3faff53396047e96b7786161f7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799018"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751842"
 ---
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 

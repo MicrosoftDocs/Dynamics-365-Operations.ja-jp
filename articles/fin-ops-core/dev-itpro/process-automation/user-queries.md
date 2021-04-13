@@ -2,11 +2,9 @@
 title: 構成可能なユーザーのクエリ
 description: このトピックでは、構成可能なクエリを作成し、プロセス自動化フレームワークで使用する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4f0a6af33dcd0a90d0023f7e6b359226f132c76
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 690787be87c34bbb4e46375c17bad2bec0a60a0a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679216"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745111"
 ---
 # <a name="user-configurable-queries"></a>構成可能なユーザーのクエリ
 

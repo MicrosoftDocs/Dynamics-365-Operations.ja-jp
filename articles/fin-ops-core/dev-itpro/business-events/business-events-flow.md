@@ -1,12 +1,10 @@
 ---
-title: Microsoft Power Automate の ビジネス イベント
-description: このトピックでは、アプリケーション コネクタを介して Microsoft Power Automate で利用可能なビジネス イベントに関する情報を提供します。
+title: Microsoft Power Automate 内のビジネス イベント
+description: このトピックでは、アプリケーション コネクタを介して Microsoft Power Automate で使用可能となるビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,14 +12,14 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 5daf6bfd09a7124d240259a7153bf8b802f124d5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92e23fe504c013951e55c5060c52bb11ed064e53
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687336"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748257"
 ---
-# <a name="business-events-in-microsoft-power-automate"></a>Microsoft Power Automate の ビジネス イベント
+# <a name="business-events-in-microsoft-power-automate"></a>Microsoft Power Automate 内のビジネス イベント
 
 [!include[banner](../includes/banner.md)]
 
@@ -56,7 +54,7 @@ Microsoft Flow でビジネス イベントを使用する方法については 
 
 ## <a name="other-ways-to-consume-business-events-in-power-automate"></a>Power Automate 内のビジネス イベントを消費する他の方法
 
-前のセクションでは、コネクタ内でトリガーを使用することにより Power Automate から直接ビジネス イベントを購読する方法について説明しました。 ただし、 [Microsoft Power Automateのイベント グリッド コネクタ](https://docs.microsoft.com/connectors/azureeventgrid/) を使用して、 Microsoft Azure のイベント グリッド から Microsoft Power Automate のビジネス イベントを使用することもできます。
+前のセクションでは、コネクタ内でトリガーを使用することにより Power Automate から直接ビジネス イベントを購読する方法について説明しました。 ただし、[Microsoft Power Automate 用イベント グリッド コネクタ](https://docs.microsoft.com/connectors/azureeventgrid/) を使用することにより、Microsoft Azure Event Grid から Microsoft Power Automate 内のビジネス イベントを消費することもできます。
 
 実装内の他の統合で既に使用されている場合、イベント グリッドは Power Automate 内のビジネス イベントを消費するための実行可能なアプローチである可能性があります。 同じ法人内のビジネス イベントが複数のフローをトリガする必要がある場合、イベント グリッドからビジネス イベントを消費することを検討する必要があります。
 

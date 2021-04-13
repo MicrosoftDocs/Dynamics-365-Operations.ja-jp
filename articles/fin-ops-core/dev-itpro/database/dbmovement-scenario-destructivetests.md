@@ -2,11 +2,9 @@
 title: 破壊試験
 description: このトピックでは、Finance and Operations の破壊テスト シナリオについて説明します。
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 81ea7f372ce75afba2eb7e2f11b38bf3f4525322
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b17d761e9b9b21f06f1a73e87128ef370df050db
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681090"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749321"
 ---
 # <a name="destructive-testing"></a>破壊試験 
 

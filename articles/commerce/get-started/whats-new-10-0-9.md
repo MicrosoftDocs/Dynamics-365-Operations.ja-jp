@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce 10.0.9 の新機能と変更点 (2020 年 4 月)
 description: このトピックでは、Dynamics 365 Commerce 10.0.9 の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -16,19 +14,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 671ff67c5d696a6b00ef98a1f5bb6ca48b283fbc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8f835e5af2f1faa7dce62c318afd796a11d8fe01
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012493"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797152"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-1009-april-2020"></a>Dynamics 365 Commerce 10.0.9 の新機能と変更点 (2020 年 4 月)
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 Commerce 10.0.9 の新機能または変更された機能について説明します。 このバージョンには 10.0.383 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Commerce 10.0.9 の新機能または変更された機能について列挙します。 このバージョンには 10.0.383 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビューのリリース:** 2020 年 2 月
 - **一般提供 (自己更新):** 2020 年 3 月

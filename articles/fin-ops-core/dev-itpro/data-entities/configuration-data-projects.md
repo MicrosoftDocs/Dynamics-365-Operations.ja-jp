@@ -2,11 +2,9 @@
 title: コンフィギュレーション データ プロジェクト
 description: このトピックでは、コンフィギュレーション データ プロジェクトとコンフィギュレーション データ テンプレートについて説明します。
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/29/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: d513c71e5135804a42f68a5b73dabc070954230e
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 4a838afb925cdd2d13d4b1b44f26d89d876f75e4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129292"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752322"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 

@@ -2,11 +2,9 @@
 title: Finance and Operations アプリ ソリューションのコードの移行
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) で、コードをアップグレードおよび分析する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 06/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 13f50ec64dd68f48bcba6075f312b301c1c814ff
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b8bb61b959d25512ea066ed6ad3f6d4f793b740f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685039"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748479"
 ---
 # <a name="migrate-code-for-finance-and-operations-apps-solutions"></a>Finance and Operations アプリ ソリューションのコードの移行
 

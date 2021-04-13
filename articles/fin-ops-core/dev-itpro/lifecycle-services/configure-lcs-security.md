@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) のセキュリティの構成
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のセキュリティが、組織レベルとプロジェクト レベルの両方で制御される方法について説明します。
 author: AngelMarshall
-manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73c2fd242cbb9057b4a6f711b50d7cb9049b5fb3
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 3def5a59dc9c37802fcf486857b402bfce3b366c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154319"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752736"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -56,16 +54,6 @@ LCS へのプロジェクト レベル アクセスは、招待によって行�
 > [!NOTE]
 > 実装プロジェクトで、招待されたユーザーの実装ロールを選択できます。 **FastTrack からの連絡を許可する** を **はい** に設定した場合、Microsoft FastTrack チームは実装ロールと実装プロジェクトのステージに基づいてご連絡を差し上げる場合があります。   
 
-## <a name="working-with-customersource-and-partnersource"></a>CustomerSource および PartnerSource での作業
-このセクションの情報は、CustomerSource または PartnerSource へのアクセスを支援することを目的としています。
-
-### <a name="signing-in-to-customersource-or-partnersource"></a>CustomerSource または PartnerSource へのサインイン
-
-[CustomerSource サインイン ページ](https://docs.microsoft.com/dynamics/s-e/)に移動し、Microsoft アカウント (以前は Windows Live ID と呼ばれる) のユーザー名とパスワードを入力してサイトにアクセスします。 組織の CustomerSource 勘定へのアクセスがない場合、「[CustomerSource](https://docs.microsoft.com/dynamics/s-e/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) にログインする方法」ページに従います。
-
-### <a name="determining-the-administrator-for-your-organization-in-customersource-or-partnersource"></a>CustomerSource または PartnerSource で組織の管理者を決定する
-
-CustomerSource の管理者がわからない場合、または組織に CustomerSource 管理者がいない場合は、電子メールを [itmbssup@microsoft.com](mailto:itmbssup@microsoft.com) に送信してお問い合わせください。
 
 ## <a name="configuring-project-security"></a>プロジェクト セキュリティのコンフィギュレーション
 プロジェクトにユーザーとして参加するように、組織の内外からユーザーを招待することができます。 次のテーブルに、ユーザーが使用可能なロールを示します。

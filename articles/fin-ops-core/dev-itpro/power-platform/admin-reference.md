@@ -2,11 +2,9 @@
 title: Finance and Operations および Dataverse 管理リファレンス
 description: このトピックでは、Finance and Operations の仮想エンティティの設定およびコンフィギュレーションについて説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c39d18688128b999d689962b9b74e6f605f9412e
-ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
+ms.openlocfilehash: c35074deac52ae9d7e337f2fbdec0c75839f1dc4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "4839565"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745132"
 ---
 # <a name="finance-and-operations-and-dataverse-admin-reference"></a>Finance and Operations および Dataverse 管理リファレンス
 

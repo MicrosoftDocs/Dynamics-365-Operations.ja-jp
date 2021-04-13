@@ -2,11 +2,9 @@
 title: コンフィギュレーション データ パッケージ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。
 author: saraschi2
-manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3c8566bc8b77fc69590aa6563c76ac98dfd65f90
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d73a056f22aa1557d92b95ca4beed02e3fc69c4f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679397"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752324"
 ---
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 

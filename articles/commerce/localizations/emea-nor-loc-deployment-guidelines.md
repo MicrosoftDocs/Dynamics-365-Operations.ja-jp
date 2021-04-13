@@ -2,11 +2,9 @@
 title: ノルウェーのキャッシュ レジスタの配置ガイドライン
 description: このトピックは、ノルウェーのローカライズ用配置ガイドです。
 author: AlexChern0v
-manager: olegkl
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 5c08e88fe30d30ac25050294f08799368112b457
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 490a9bc63717082bbb62da820613c928914e49ab
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985941"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798803"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 

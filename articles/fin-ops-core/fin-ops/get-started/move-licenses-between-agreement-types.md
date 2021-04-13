@@ -2,11 +2,9 @@
 title: 契約タイプ間でライセンスを移動する
 description: このトピックでは、契約タイプの間のライセンスを移動する方法について説明します。
 author: ClaudiaBetz-Haubold
-manager: AnnBe
 ms.date: 01/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: bfc65ee5b9c1839b44fb61bfb47e75f976d11613
-ms.sourcegitcommit: d0219c8dd80ef4de82b64195bc087dca3d7f2ff5
+ms.openlocfilehash: d76e4c16e551830698f2775554d7c4e18524bec8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "5073582"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750242"
 ---
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 

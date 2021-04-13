@@ -2,11 +2,9 @@
 title: ページ モジュール
 description: IPage インターフェイスは、さまざまなプロパティ、ライフ サイクル、およびワークスペース内のページに関連付けられているイベント フックをカプセル化します。
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8fbb8d498b5f38150a96f2fb260940ffe8cd319d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 93ebc6c0e45084ac431a5fc586f764a51c4414a5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687836"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748165"
 ---
 # <a name="page-module"></a>ページ モジュール
 
@@ -110,7 +108,7 @@ CompleteEventArgs <br>
 | [枠線](../interfaces/view-model-ipage-idesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  |
 | [色](../interfaces/view-model-ipage-idesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  |
 | [flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  |
-| [flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。<br>  |
+| [flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズを拡大) [(サイズを縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。<br>  |
 | [fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (省略可)  <br>|比例テキスト サイズ<br>  |
 | [fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (省略可)  <br>|標準または太字のテキスト。<br>  |
 | [justifyItems](../interfaces/view-model-ipage-idesign.md#justifyitems) |justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (省略可)  <br>|このプロパティは CSS プロパティ「justify-content」のエイリアスです。<br>  |
@@ -149,7 +147,7 @@ CompleteEventArgs <br>
 
 | 氏名 | 署名 | 説明 |
 | ---- | --------- | ----------- |
-| [子](../interfaces/view-model-ipage-ipage.md#children) |子: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)[ ] <br>|ページのすべての直接の子コントロールの一覧。<br>  |
+| [子](../interfaces/view-model-ipage-ipage.md#children) |children: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) [ ] <br>|ページのすべての直接の子コントロールの一覧。<br>  |
 | [dataLoadedInitially](../interfaces/view-model-ipage-ipage.md#dataloadedinitially) |dataLoadedInitially: Promise &lt;void&gt; <br>|初めてデータが読み込まれたときに解決する約束。<br>  |
 | [初期化済み](../interfaces/view-model-ipage-ipage.md#initialized) |initialized: boolean <br>|ページ インスタンスが初期化されている場合は、true です。<br>  |
 | [メタデータ](../interfaces/view-model-ipage-ipage.md#metadata) |metadata: [PageMetadata](../interfaces/view-model-ipage-ipagemetadata.md) <br>|ページ メタデータ。<br>  |

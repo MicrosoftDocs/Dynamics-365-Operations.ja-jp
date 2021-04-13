@@ -2,11 +2,9 @@
 title: 結果とメッセージを記録する
 description: このトピックでは、プロセスの自動化から結果およびメッセージを記録する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc5aae5a4724380928def8bdc11460db06521a02
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2c3063e7c30cd15794134d149a8eede466fa2d46
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680410"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745121"
 ---
 # <a name="log-results-and-messages"></a>結果とメッセージを記録する
 

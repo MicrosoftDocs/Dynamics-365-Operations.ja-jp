@@ -2,11 +2,9 @@
 title: X++ 変数
 description: このトピックでは、X++の変数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19e6bcbf1898009eeafd8ec51746d908396d09e3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 41054621e57d1c66e278b5a1e3a7b5dc4bc145ec
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408804"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749910"
 ---
 # <a name="x-variables"></a>X++ 変数
 

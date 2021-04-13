@@ -2,11 +2,9 @@
 title: Azure Pipelines に配置可能なパッケージの作成
 description: このトピックでは、Microsoft Azure DevOps でビルドの自動化を実行するときに、ソフトウェア配置可能なパッケージを作成する方法について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 119185a6e80376cdf90d384a71c61fdf1e1d6d5e
-ms.sourcegitcommit: 2186155e4662ae5010a190c0ede458ef6cf91f24
+ms.openlocfilehash: 55f2a64f47d94f540ee772c3a3c53134d714b8b6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4409511"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751366"
 ---
 # <a name="create-deployable-packages-in-azure-pipelines"></a>Azure Pipelines に配置可能なパッケージの作成
 

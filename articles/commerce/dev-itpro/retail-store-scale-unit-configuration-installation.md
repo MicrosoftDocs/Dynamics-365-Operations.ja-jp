@@ -1,12 +1,10 @@
 ---
 title: Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
-description: このトピックでは、セルフ サービスを使用して、Commerce Headquarters で Commerce Scale Unit (自己ホスト) を構成し、ダウンロードして、従来型の店舗の 1 台以上のコンピューターにインストールする方法について説明します。
+description: このトピックでは、セルフサービスを使用して、従来型の店舗にあるコンピューターに Commerce Scale Unit (自己ホスト) を構成し、インストールする方法について説明します。
 author: jashanno
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
 audience: IT Pro
@@ -18,18 +16,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4be87d40daf5331be910fe9ce676a2161f9c9af3
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: ba252145e8d82a141e00bd5d06819008de526e69
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141918"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792973"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 Commerce バックオフィスで Commerce Scale Unit (自己ホスト。以前は Retail Store Scale Unit と呼ばれていました) を構成し、ダウンロードして、従来型の店舗の 1 台以上のコンピューターにインストールする方法について説明します。 Commerce Scale Unit は、コマース チャネル データベース、Commerce Async Client、Retail Server、およびクラウド販売時点管理 (POS) コンポーネントを組み合わせたものです。 コマース環境では、クラウドでこれらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストアまたはデータ センター内でローカルに動作するように構成できるようになりました。 このトピックは、Commerce Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
+このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 Commerce バックオフィスで Commerce Scale Unit (自己ホスト。以前は Retail Store Scale Unit と呼ばれていました) を構成し、ダウンロードして、従来型の店舗にある 1 台以上のコンピューターにインストールする方法について説明します。 Commerce Scale Unit は、コマース チャネル データベース、Commerce Async Client、Retail Server、およびクラウド販売時点管理 (POS) コンポーネントを組み合わせたものです。 コマース環境では、クラウドでこれらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストアまたはデータ センター内でローカルに動作するように構成できるようになりました。 このトピックは、Commerce Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
 
 > [!IMPORTANT]
 > 基本的な設計原則は、Commerce Scale Unit (クラウド) 上で要求された方法でカスタマイズできない場合は、CSU (自己ホスト) を使用してこの方法をカスタマイズしないことです。  直接データベース アクセスはサポートされていないため、この概念を使用するカスタマイズが容易に中断される可能性があることを理解しておくことが重要です。  CSU (自己ホスト) は、主にクロス ターミナル シナリオの有効化、WAN 接続の不良に備えた待機時間またはバックアップの短縮、および複数の CSU コンポーネント間での POS 端末の負荷を分散するためのスケールアウトの提供を行います。
@@ -41,7 +39,7 @@ ms.locfileid: "5141918"
 > [!IMPORTANT]
 > 会社全体で高いレベルのセキュリティを維持するために、作成する店舗ごとに新しいアプリケーション ID (クライアント ID) とキー (シークレット) を作成することを強くお勧めします。 このステップでは、新しい Web アプリが必要です。
 
-1. アプリケーション ID (クライアント ID) とキー (シークレット) を作成する Microsoft Azure Active Directory (Azure AD) アプリ登録を生成します。 手順については、[Azure Active Directory アプリケーションを作成する](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application) を参照してください。 このトピックでは、Azure ユーザーのアクセス許可と要件を確認し、アプリ登録を生成する方法について説明します。 
+1. アプリケーション ID (クライアント ID) とキー (シークレット) を作成する Microsoft Azure Active Directory (Azure AD) アプリ登録を生成します。 手順については、[Azure Active Directory アプリケーションを作成する](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application) を参照してください。 このトピックでは、Azure ユーザーのアクセス許可と要件を確認し、アプリ登録を生成する方法について説明します。
 
     > [!IMPORTANT]
     > Azure ではなく Active Directory Federation Services を使用するオンプレミス環境で使用する Commerce Scale Unit をインストールする場合は、オンプレミス環境の Commerce インストール ドキュメントの手順に従います。 詳細については、[オンプレミス環境での Commerce チャネル コンポーネントのインストール手順](../../dev-itpro/deployment/deploy-retail-onprem.md) を参照してください。
@@ -79,7 +77,7 @@ ms.locfileid: "5141918"
 7. **Commerce チャネル** クイック タブで、**追加** を選択し、**チャネル フィールド** で、適切な店舗のチャネルを選択します。 このデータベースを使用するすべてのチャンネルを追加するには、この手順を繰り返します。
 
     また、このデータベースを使用しないチャンネルを追加することもできます。 この方法で、Commerce Scale Unit のチャネル データベースのチャネルのデータを保持します。 このデータベースを頻繁に使用するチャネルは、ローカルでそのデータにアクセスできます。
-    
+
     > [!IMPORTANT]
     > オンプレミス配置では、アクション ウィンドウの **ダウンロード** ボタンを選択し、**Commerce Scale Unit パッケージ** を選択します。  これにより、既知のエラーが発生し、このドキュメントの次の手順を正しく完了できるように、アップロード ロジックが開始されます。 アップロード ロジックが完了するまで少なくとも 1 分以上待ってください。
 
@@ -97,20 +95,20 @@ ms.locfileid: "5141918"
 15. **プロパティ キー** フィールドで、**Retail Server URL** を選択します。
 16. **プロパティ値** フィールドに、インストールする Retail Server の URL を入力します。
 
-    Commerce Scale Unit の URL の標準形式は、**https://&lt;コンピューター名&gt;:&lt;ポート&gt;/RetailServer/Commerce** です。 この形式で、**&lt;コンピューター名&gt;** は Commerce Scale Unit がインストールされているコンピューター、またはドメイン、フル コンピューター名に結合されていないシステムの完全修飾ドメイン名 (FQDN) のどちらかです。 **&lt;ポート&gt;** はインストールに使用するポート番号です。 ポート番号は、 1 ～ 65535 の範囲の値である必要があります。 既定の HTTPS ポート (443) を使用している場合、ポート番号を指定する必要はありません。
+    Commerce Scale Unit の URL の標準形式は、`https://<Computer Name>:<Port>/RetailServer/Commerce` です。 この形式で、**&lt;コンピューター名&gt;** は Commerce Scale Unit がインストールされているコンピューター、またはドメイン、フル コンピューター名に結合されていないシステムの完全修飾ドメイン名 (FQDN) のどちらかです。 **&lt;ポート&gt;** はインストールに使用するポート番号です。 ポート番号は、 1 ～ 65535 の範囲の値である必要があります。 既定の HTTPS ポート (443) を使用している場合、ポート番号を指定する必要はありません。
 
 17. 新しいチャネル プロファイルの **プロファイルのプロパティ** クイック タブで、**追加** を選択します。
 18. **プロパティ キー** フィールドで、**クラウド POS URL** を選択します。
 19. **プロパティ値** フィールドに、Commerce Scale Unit にインストールする必要のあるクラウド POS インスタンスの URL を入力します。
 
-    クラウド POS の URL の標準形式は、**https://&lt;コンピューター名&gt;:&lt;ポート&gt;/POS** です。 この形式で、**&lt;コンピューター名&gt;** は Commerce Scale Unit がインストールされているコンピューター、またはドメイン、フル コンピューター名に結合されていないシステムの FQDN のどちらかです。 **&lt;ポート&gt;** はインストールに使用するポート番号です。 ポート番号は、 1 ～ 65535 の範囲の値である必要があります。 既定の HTTPS ポート (443) を使用している場合、ポート番号を指定する必要はありません。
+    Cloud POS の URL の標準形式は `https://<Computer Name>:<Port>/POS` です。 この形式で、**&lt;コンピューター名&gt;** は Commerce Scale Unit がインストールされているコンピューター、またはドメイン、フル コンピューター名に結合されていないシステムの FQDN のどちらかです。 **&lt;ポート&gt;** はインストールに使用するポート番号です。 ポート番号は、 1 ～ 65535 の範囲の値である必要があります。 既定の HTTPS ポート (443) を使用している場合、ポート番号を指定する必要はありません。
 
 20. アクション ウィンドウで、**保存** を選択します。
 
     > [!NOTE]
-    > メディアがよく使用される場合、プロファイルの **メディア サーバー ベース URL** を生成する必要があります。  テストとわかりやすくするために、**既定の** チャネル プロファイルに存在する URL を再利用できます。 
+    > メディアがよく使用される場合、プロファイルの **メディア サーバー ベース URL** を生成する必要があります。  テストとわかりやすくするために、**既定の** チャネル プロファイルに存在する URL を再利用できます。
     >
-    > オンプレミス配置では、**メディア サーバー ベースの URL** は、POS デバイスのすべてのメディアが格納されている場所になります。  
+    > オンプレミス配置では、**メディア サーバー ベースの URL** は、POS デバイスのすべてのメディアが格納されている場所になります。
 
 21. **Retail と Commerce** &gt; **チャネル** &gt; **店舗** &gt; **すべての店舗** の順に移動します。
 22. 新しいチャネル データベースを使用する店舗のチャネル ID を選択します。
@@ -120,7 +118,7 @@ ms.locfileid: "5141918"
 26. 店舗の **一般** クイック タブの、**チャネル プロファイル** フィールドで、手順 12 で作成したチャネル プロファイルを選択します。
 27. **Retail と Commerce** &gt; **Headquarters の設定** &gt; **Commerce スケジューラ** &gt; **チャネル データ グループ** の順に移動します。
 28. **既定** データ グループを選択した後、アクション ウィンドウで、**完全データ同期** を選択します。**配送スケジュールの選択** のフィールドで、ジョブ **9999** を選択し、**OK** を選択します。 表示されるダイアログ ボックスで、**OK** を選択して完全同期を確認します。 チャンネル データベース内のすべてのデータはダウンロードの準備をします。
-  
+
     > [!IMPORTANT]
     > オンプレミス配置の場合、 **既定** のチャンネルのデータ グループはありません。  新しいデータ グループを作成します (そしてそれをチャネル データベースとディストリビューション スケジュールジョブに関連付けます)。
 
@@ -132,7 +130,7 @@ ms.locfileid: "5141918"
 4. ドロップダウン メニューで、**コンフィギュレーション ファイル** を選択します。
 
     > [!NOTE]
-    > Commerce Scale Unit インストーラーが構成ファイル (XML ファイル) を正しく使用するためには、構成ファイルをインストーラーと同じ場所に保存する必要があります。 構成ファイルが、実行可能なインストーラーと同じファイル名でない場合は、コマンド ラインを使用して実行可能ファイルを実行して構成ファイルを指定するか、XML 構成ファイルの名前を実行可能ファイル名と同じベース名に変更する必要があります。   
+    > Commerce Scale Unit インストーラーが構成ファイル (XML ファイル) を正しく使用するためには、構成ファイルをインストーラーと同じ場所に保存する必要があります。 構成ファイルが、実行可能なインストーラーと同じファイル名でない場合は、コマンド ラインを使用して実行可能ファイルを実行して構成ファイルを指定するか、XML 構成ファイルの名前を実行可能ファイル名と同じベース名に変更する必要があります。
     >
     > オンプレミス配置では、構成ファイル (この時点で) を手動で編集する必要があります。
     > - StoreSystemAosUrl には、Headquarters (AX) へのアクセスに使用される値が必要です。  この URL の末尾にスラッシュを保持することが重要です (たとえば、`https://myContosoURL.com/namespaces/AXSF/`)。
@@ -158,7 +156,7 @@ ms.locfileid: "5141918"
 > Commerce Scale Unit (自己ホスト) インストーラーを実行する前に、インストーラーの実行可能ファイルと同じ名前の構成ファイルがあることを確認してください。 これは、**ExecutableInstallerName.xml** のように表示され、両方のファイルを同じフォルダに配置します。 別の方法として、構成ファイルを手動で指定するためのコマンド ライン区切り記号があります。
 > Retail Cloud POS をインストールして使用する場合は、次の手順に従って、インストーラーを初めて実行するときに構成を初期化する必要があります。
 
-Commerce Scale Unit インストーラーを実行する前に、すべての[システム要件](../../fin-and-ops/get-started/system-requirements.md) が満たされていることを確認してください。 
+Commerce Scale Unit インストーラーを実行する前に、すべての[システム要件](../../fin-and-ops/get-started/system-requirements.md) が満たされていることを確認してください。
 
 > [!IMPORTANT]
 > オンプレミス環境で使用する Commerce Scale Unit をインストールする場合は、次のように、管理者権限を使用して、コマンド ラインから起動する必要があります: StoreSystemSetup.exe -UseAdfsAuthentication
@@ -205,9 +203,9 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 
 8. アプリケーション ID (クライアント ID) およびこの Commerce Scale Unit インストールと関連するキー (シークレット) を入力します。 また、コンフィギュレーション ファイルから自動的に入力されるチャネル データベース ID を確認します。 その後、**インストール** を選択します。 Retail Cloud POS を使用する場合は、ページの下部にある **Retail Cloud POS のコンフィギュレーション** チェック ボックスが選択されていることを確認します。 この構成では Azure AD サインインが要求され、必要なすべての情報が Azure で自動的に生成され、Retail Cloud POS をオンプレミスで使用できるようになります。 オンプレミス環境で使用する Commerce Scale Unit をインストールする場合、このオプションをオフにする必要があります。
 
-    Azure で Web アプリケーションを作成する方法については、[Azure Active Directory アプリケーションを作成する](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application) を参照してください。 
-    
-    > [!IMPORTANT] 
+    Azure で Web アプリケーションを作成する方法については、[Azure Active Directory アプリケーションを作成する](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application) を参照してください。
+
+    > [!IMPORTANT]
     > - オンプレミス環境で使用する Commerce Scale Unit をインストールするとき、クラウド POS は Azure または AD FS アプリケーションの構成を要求しないため、**Retail クラウド POS の構成** のマークを解除することが重要です。
     > - オンプレミス環境で使用する Commerce Scale Unit をインストールするとき、使用されるクライアント ID (アプリケーション ID) およびシークレット (キー) は、[オンプレミス環境の Commerce チャネル コンポーネントのインストール手順](../../dev-itpro/deployment/deploy-retail-onprem.md) トピックの手順 6 ～ 8 で実行される構成手順で実行される PowerShell スクリプトによって生成される値になります。 (手順 6 ではクライアント ID を作成し、手順 8 ではコピーされるシークレットをリセットします)。
 
@@ -220,13 +218,13 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 
 最後のステップでは、Azure アプリケーション ID (クライアント ID) とキー (シークレット) が Headquarters で正しく受け入れられ、環境と新しい Commerce Scale Unit との接続が可能であることを検証し、確認する必要があります。
 
-1. Commerce Scale Unit にアプリケーション ID (クライアント ID) とキー (シークレット) が作成され、インストーラーに入力された後、Headquarters でアプリケーション ID (クライアント ID) を受け入れる必要があります。 
+1. Commerce Scale Unit にアプリケーション ID (クライアント ID) とキー (シークレット) が作成され、インストーラーに入力された後、Headquarters でアプリケーション ID (クライアント ID) を受け入れる必要があります。
 
     Headquarters で、**システム管理** &gt; **設定** &gt; **Azure Active Directory アプリケーション** の順に移動します。 アプリケーション ID (クライアントID) を **クライアント ID** 列に入力し、説明のテキストを **名** 列に入力および **RetailServiceAccount** を **ユーザー ID** 列に入力します。
 
 2. クラウド POS を使用するように構成されている場合、インストールの最後にクライアント ID が表示されます。 このクライアント ID を Commerce の **Commerce 共有パラメーター** ページに追加する必要があります。
 
-    > [!IMPORTANT] 
+    > [!IMPORTANT]
     > オンプレミス型環境では、このステップは必須ではありません。
 
     1. バックオフィスで、**Retail とコマース** &gt; **バックオフィスの設定** &gt; **パラメーター** &gt; **コマースの共有パラメーター** の順に移動します。
@@ -286,7 +284,7 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 
 最初のコンピューターで、このトピックで前述されているように、Commerce Scale Unit セルフ サービス インストーラーを実行しますが、次の変更を行います。
 
-1. インストールするコンポーネントとして Commerce チャネル データベースと Async Client のみを選択します。 その後 **次へ** を選択して、インストールを続行します。 
+1. インストールするコンポーネントとして Commerce チャネル データベースと Async Client のみを選択します。 その後 **次へ** を選択して、インストールを続行します。
 
     > [!NOTE]
     > Async Client はインストールされたコンピューターの外部からアクセスすることができないため、Async Client のために生成されたサービス アカウントを使用することができます。
@@ -317,7 +315,7 @@ SQL Server および Windows ファイアウォールに関する詳細につい
 
 2 台目のコンピューターで、このトピックで前述されているように、Commerce Scale Unit セルフ サービス インストーラーを実行しますが、次の変更を行います。
 
-1. インストールするコンポーネントとして Retail Server とクラウド POS のみを選択します。 Retail Server をインストールする必要がある場合は、クラウド POS を選択できません。 その後 **次へ** を選択して、インストールを続行します。
+1. インストールするコンポーネントとして Retail Server とクラウド POS のみを選択します。 Retail Server をインストールしている場合は、Cloud POS を選択できません。 その後 **次へ** を選択して、インストールを続行します。
 2. 最初のコンピュータで、SQL Server にアクセスする権限を持つドメイン ユーザーの資格情報 (ユーザー名およびパスワード) を入力します。 その後、**次へ** を選択します。
 
     > [!NOTE]
@@ -328,11 +326,11 @@ SQL Server および Windows ファイアウォールに関する詳細につい
     > [!IMPORTANT]
     > 前述のようにコマース バックオフィスにこのクライアント ID を追加することが重要です。
 
-4. **クラウド POS のコンフィギュレーション** を選択し、Azure Web アプリケーションを作成するための適切なアクセス許可を持つ Azure AD 資格情報を入力します。 
+4. **クラウド POS のコンフィギュレーション** を選択し、Azure Web アプリケーションを作成するための適切なアクセス許可を持つ Azure AD 資格情報を入力します。
 
     Azure Web アプリ、それを作成する方法、および新しいキー (シークレット) を生成する方法の詳細については、[リソースにアクセスできる Azure Active Directory アプリケーションおよびサービス プリンシパルを作成するポータルの使用](https://azure.microsoft.com/documentation/articles/resource-group-create-service-principal-portal/) を参照してください。 サインイン URL やアプリ ID URI は重要ではないことに注意してください。
 
-5. セットアップが正常に行われたときは、インストーラーを終了しません。 
+5. セットアップが正常に行われたときは、インストーラーを終了しません。
 
     > [!NOTE]
     > 最初は、データベースがまだ正しく設定されていないため、ヘルスチェック ping は成功しません。 この手順の残りのステップを完了した後は、再度稼働状況チェックをテストできます。

@@ -2,11 +2,9 @@
 title: Web クライアントのページ レイアウト
 description: このトピックでは、Web クライアントのレイアウトについて説明します。 レイアウトは、ページ上にコントロールを表示する方法を指定するデザイン プロセスです。
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6a2d52e66df2e6f54a6d722c380d91e19763a03
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 7b23a1d3a90c436d169f8adaa818b7d3baf8bd41
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077677"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745705"
 ---
 # <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 

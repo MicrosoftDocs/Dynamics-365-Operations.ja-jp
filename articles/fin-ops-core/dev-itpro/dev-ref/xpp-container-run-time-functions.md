@@ -2,11 +2,9 @@
 title: X++ コンテナー ランタイム関数
 description: このトピックでは、コンテナー ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0cd819ec87e989b6c1827c48956fd7728e4db69
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 028397990b257fa3fbfc54af829559f30b217136
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408745"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753032"
 ---
 # <a name="x-container-runtime-functions"></a>X++ コンテナー ランタイム関数
 

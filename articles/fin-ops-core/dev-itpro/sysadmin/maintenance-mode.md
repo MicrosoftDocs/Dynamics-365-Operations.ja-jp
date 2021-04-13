@@ -2,11 +2,9 @@
 title: メンテナンス モード
 description: このトピックでは、メンテナンス モードについて説明します。メンテナンス モードは、システム管理者がシステム機能に影響を与える可能性のあるシステム変更を行うためのシステム全体に適用される設定です。
 author: laneswenka
-manager: AnnBe
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysConfiguration
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9f6c521b58dee354deab370d60c6a1d2389383e
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: d2239911f9484c0cfa5a72457e86658de4b5609c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5126953"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745971"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 

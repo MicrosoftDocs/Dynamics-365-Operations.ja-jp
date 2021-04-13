@@ -1,12 +1,10 @@
 ---
 title: オムニチャネル Commerce 注文支払
-description: このトピックでは、Microsoft  Dynamics 365 Commerce オムニ チャンネル コマースの注文決済機能について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce オムニ チャンネル コマースの注文決済機能について説明します。
 author: rubendel
-manager: annbe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -17,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f567d4e3fab3b164f0f69ca7d1d6bc429af0da23
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f6713a6a8b4c1caa1f09136305b27bd49bebb651
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683372"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793027"
 ---
 # <a name="omni-channel-commerce-order-payments"></a>オムニチャネル Commerce 注文支払
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft  Dynamics 365 Commerce オムニ チャンネル コマースの注文決済機能について説明します。 この機能を使用すると、コマース本部から電子商取引や販売時点管理 (POS) と注文の決済を編集することができます。
+このトピックでは、Microsoft Dynamics 365 Commerce オムニ チャンネル コマースの注文決済機能について説明します。 この機能を使用すると、コマース本部から電子商取引や販売時点管理 (POS) と注文の決済を編集することができます。
 
 ## <a name="key-terms"></a>重要な用語
 

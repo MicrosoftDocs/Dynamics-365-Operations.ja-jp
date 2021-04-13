@@ -1,25 +1,23 @@
 ---
 title: Power BI から分析ワークスペースを選択する
 description: このトピックでは、Power BI でホストされているレポートを選択してアプリケーション ワークスペースで使用する方法について説明します。
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: a52177ed6edad441374c3722db2bbac91ca11322
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5d89311a93f56fad3f3ae99c801f1fa6cb26856e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682203"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754278"
 ---
 # <a name="select-analytical-workspaces-from-power-bi"></a>Power BI から分析ワークスペースを選択する
 
@@ -42,7 +40,7 @@ PowerBI.comが提供するワールドクラスのツールを使用すると、
 
 - PowerBI.com レポートは、外部データソースを使用し、アプリケーション外部からアクセスできるデータ マッシュ アップをサポートします。
 - レポートは、PowerBI.comでホストされ、ワン ボックス配置でアプリケーションに埋め込まれるカスタム ソリューションのデモンストレーションに適しています。
-- Microsoft Power BIプレミアムサービスを使用している組織では、標準レポートを強化したいと考えています。
+- Microsoft Power BI プレミアム サービスを使用している組織は、標準レポートを強化したいと考えています。
 
 ### <a name="embed-a-powerbicom-report-in-an-analytical-workspace"></a>分析ワークスペースへのPowerBI.comレポートの埋め込み
 

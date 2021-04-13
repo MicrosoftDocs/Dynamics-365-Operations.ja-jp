@@ -2,11 +2,9 @@
 title: 新しい環境の配置
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。
 author: rashmansur
-manager: AnnBe
 ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 70f57dac9ca13486fc307c8ded3ac001f6dc31f1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1d2fe3602369a198529fc7be4401012d6343caca
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680541"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744823"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 

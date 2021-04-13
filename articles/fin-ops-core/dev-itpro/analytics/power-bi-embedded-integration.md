@@ -1,27 +1,25 @@
 ---
 title: Power BI Embedded 統合
 description: このトピックでは、Power BI Embedded 統合を使用するための方法について説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 02/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.custom: 270754
 ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 2f968ea764cd6b654cba1659bb754c5a1715e623
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 2fbf80edd3acdf211eb98ff5554d95294b6070e8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092475"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753132"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 

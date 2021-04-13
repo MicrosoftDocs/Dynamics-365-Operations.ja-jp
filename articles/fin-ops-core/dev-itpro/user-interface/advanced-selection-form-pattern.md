@@ -2,11 +2,9 @@
 title: 高度な選択のフォーム パターン
 description: この記事では、高度な選択のフォーム パターンに関する情報を提供します。これにより、ユーザーが大規模で広範なリストから品目をフィルタ処理して選択できます。
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0982d9ae36574370e9d830325772bd7d7b0b442
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: ae0603ac60b6a06d9fa2574a2d3053d99990dde5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094175"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745719"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 

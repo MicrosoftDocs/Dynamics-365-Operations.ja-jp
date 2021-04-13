@@ -2,11 +2,9 @@
 title: データベース移動 API - 参照 - v1 - 環境の開始および停止
 description: このトピックでは、データベース移動 API のバージョン 1 の参照資料を提供します。
 author: laneswenka
-manager: AnnBe
-ms.date: 01/21/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: d1ba79f6dc8eec9ebab20cded084e6404ff47176
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: fe5bcdc3d74f442cb7a485f2ad14c9cb791445ec
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035828"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753052"
 ---
 # <a name="start-and-stop-environments"></a>環境の開始および停止
 
@@ -30,7 +28,8 @@ ms.locfileid: "5035828"
 LCS の詳細ページと同じ検証ルールが、API に適用されます。
 
 > [!NOTE]
-> - **顧客管理** 環境のみがサポートされます。 セルフサービス環境は、停止と開始の概念が同じではなく、この API ではサポートされていません。 これらの API は、操作をトリガーまたは呼び出し、成功した応答のみがトリガーが成功したことを示します。
+> - **顧客管理** 環境のみがサポートされます。 セルフサービス環境は、停止と開始の概念が同じではなく、この API ではサポートされていません。 Microsoft 管理環境はサポートされません。
+> - これらの API によって、操作をトリガー/呼び出します。 正常な応答は、トリガーが成功したことを示すだけです。
 > - **停止** については、環境がすでに別の操作を実行しているか、または環境がすでに停止されている場合に、成功しなかったと返されます。
 > - **開始** については、環境がすでに別の操作を実行している場合には成功しなかったと返されますが、環境がすでに開始されている場合は成功が返されます。
 
@@ -77,10 +76,12 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
 
 ## <a name="example"></a>例
 
+**環境の停止要求**
 ```http
 POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
 ```
 
+**正常な応答**
 ```json
 {
     "IsSuccess": true,

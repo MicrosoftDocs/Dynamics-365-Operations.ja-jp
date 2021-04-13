@@ -2,11 +2,9 @@
 title: PowerBI.com 統合の構成
 description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3bde334e3132468763cba66b9f161e321f26ba7
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: cad6bce43ecbb7fdffe146752279b82f4c94e60a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093401"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755538"
 ---
 # <a name="configure-powerbicom-integration"></a>PowerBI.com 統合のコンフィギュレーション
 
@@ -45,6 +43,7 @@ ms.locfileid: "5093401"
 - 自分の Power BI アカウントに、少なくとも 1 つのダッシュボードと 1 つのレポートがあることが必要です。 この構成ステップでは、ダッシュボードやレポートは必要ではありませんが、PowerBI.com アカウントにコンテンツが含まれていない場合コンフィギュレーションを検証することができないかもしれません。
 - Microsoft Azure Active Directory (Azure AD) アカウントの管理者である必要があります。 管理者ではない場合は、管理者ユーザーはこのコンフィギュレーションの手順をユーザーのために実行する必要があります。
 - 構成されている Azure AD ドメインは、自分の PowerBI.com アカウントに使用したドメインと同じである必要があります。 たとえば、Contoso.com ドメインでアプリケーションをプロビジョニングした場合、そのドメイン内に `Tim@ContosoAX7.onmicrosoft.com` などの Power BI アカウントを持っている必要があります。
+- これらの固定されたタイルに移動するユーザーには、有効な Power BI.com ライセンスが必要です。
 
 ## <a name="registration-process"></a>登録プロセス 
 
