@@ -2,7 +2,6 @@
 title: オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
 description: このトピックでは、オンプレミス配置の SQL Server Reporting Services (SSRS) のコンフィギュレーションに関する情報が提供されます。
 author: PeterRFriis
-manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: cc8bb6c3a993274f70316145f2ec8a6217e6886c
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 88e6d5470ff7808a9b6263b6426e19f6ea11493d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571707"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755527"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
 

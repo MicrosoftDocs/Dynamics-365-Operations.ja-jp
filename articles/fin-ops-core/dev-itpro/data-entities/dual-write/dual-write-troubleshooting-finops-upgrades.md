@@ -2,7 +2,6 @@
 title: Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング
 description: このトピックでは、Finance and Operations アプリの更新に関する問題の修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ae54ffc9f7a97793dfaddc29f5aae66e5b06c931
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 97509ac662fad6181cbd60e5e0a44f674410acb9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561205"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754041"
 ---
 # <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング
 

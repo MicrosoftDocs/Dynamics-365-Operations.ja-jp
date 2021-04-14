@@ -2,7 +2,6 @@
 title: 一般仕訳エンティティを使用した伝票のインポート
 description: このトピックでは、一般仕訳エンティティを使用して一般仕訳帳にデータをインポートするためのヒントを提供します。
 author: rcarlson
-manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adc5ad88b7b58c67154b340f4125b0b89a0cf4d6
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d9a8046cf59f47799627dc09e2b788ab7bdd727e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566900"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749673"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>一般仕訳エンティティを使用した伝票のインポート
 

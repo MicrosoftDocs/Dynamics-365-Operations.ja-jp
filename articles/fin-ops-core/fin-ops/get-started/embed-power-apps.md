@@ -2,7 +2,6 @@
 title: Power Apps からキャンバス アプリを埋め込む
 description: このトピックでは、Microsoft Power Apps のキャンバス アプリをクライアントに埋め込み、製品の機能を拡張する方法について説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: f8c7ad4322de594a06a09102c8eb7d09299d1d71
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 7b20d24f79bd84f516e005b9d4a0ecdf6ef848fc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564787"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752893"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Power Apps からキャンバス アプリを埋め込む
 

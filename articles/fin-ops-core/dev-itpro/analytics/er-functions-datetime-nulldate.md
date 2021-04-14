@@ -2,7 +2,6 @@
 title: NULLDATE ER 関数
 description: このトピックでは、NULLDATE 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79d37247653aa297fdee2c770180916b9a9a5fc5
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 6ac8da3f18c7793512685d52dd64a9bd55bfb8fc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563465"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746846"
 ---
 # <a name="nulldate-er-function"></a>NULLDATE ER 関数
 

@@ -2,11 +2,9 @@
 title: 電子商取引サイトの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce における eコマース サイトのサポートの概要について説明します。
 author: bicyclingfool
-manager: AnnBe
 ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 53bce671d6aca35335a3b3ef557a94fa60da1edc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b0c7aa3bc1d4eef7b557bd9b07b31196faab273d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251190"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791081"
 ---
 # <a name="e-commerce-site-overview"></a>eコマース サイトの概要
 

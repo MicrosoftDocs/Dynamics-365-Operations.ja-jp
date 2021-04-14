@@ -1,8 +1,7 @@
 ---
 title: グローバル アドレス帳およびその他のアドレス帳の設定
-description: このトピックでは、グローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。
+description: このトピックでは、計画プロセス中に決定する必要のある考慮事項について説明します。
 author: msftbrking
-manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a0613b944d0446e339480a71fa890702190ed53
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d1d3a476a183453f170dae9b812949822ea60edd
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559968"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747612"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>グローバル アドレス帳およびその他のアドレス帳の計画
 

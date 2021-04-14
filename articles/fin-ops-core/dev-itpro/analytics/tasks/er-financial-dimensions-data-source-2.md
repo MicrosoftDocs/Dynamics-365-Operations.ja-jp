@@ -2,7 +2,6 @@
 title: ER 財務分析コードをデータ ソースとして使用する (第 2 部 - モデル マッピング)
 description: このトピックでは、財務分析コードを ER レポートのデータ ソースとして使用するために、電子申告 (ER) モデルを構成する方法について説明します。 (第 2 部)
 author: NickSelin
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 59f65962ef8f6ae79190b6595a313831eca53830
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 1e6f5ffbebdfcd9f945e6237904d80e8734b0220
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570171"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752439"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER 財務分析コードをデータ ソースとして使用する (第 2 部 - モデル マッピング)
 

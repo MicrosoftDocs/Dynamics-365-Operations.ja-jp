@@ -2,11 +2,9 @@
 title: パフォーマンス管理
 description: 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。
 author: andreabichsel
-manager: tfehr
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6a32dc1c2e645be392db81c092534e8789aedd1
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d5051bbf9e550add6a0cfc5e23f3aeb7b379ef03
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465585"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5789639"
 ---
 # <a name="performance-management"></a>パフォーマンス管理
 

@@ -2,7 +2,6 @@
 title: 新規または更新されたタスク ガイド (2016 年 11 月)
 description: このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 11 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa9910ec65899926a57b974f7e9a3f1f2becc5d9
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0c97b0bb3f18408cb4defe0a7aa52a5a5a08ce04
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566531"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749781"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>新規または更新されたタスク ガイド (2016 年 11 月)
 

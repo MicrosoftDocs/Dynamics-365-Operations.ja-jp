@@ -2,11 +2,9 @@
 title: 大量雇用プロジェクト
 description: 大量雇用プロジェクトにより、人事管理の専門家が複数の職位を作成し、これらの職位に作業者を効率的に採用することができます。
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7810a3b679f4b2db33fbe2c4dc7bd46db91b4c1
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 10d27f301f1b8e709bb6c1a63406356baa01c9a1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465417"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791320"
 ---
 # <a name="mass-hire-projects"></a>大量雇用プロジェクト
 

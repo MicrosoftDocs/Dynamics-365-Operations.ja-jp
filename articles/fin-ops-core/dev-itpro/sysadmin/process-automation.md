@@ -2,7 +2,6 @@
 title: プロセスの自動化
 description: このトピックでは、プロセスの自動化を使用して、バッチ サーバーによって実行されるプロセスを簡単にスケジューリングする方法について詳しく説明します。
 author: RyanCCarlson2
-manager: tonyafehr
 ms.date: 08/12/2020
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e3babed18caefff16105f70a0b15b8b8cf0f08eb
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 509decec3c3d3b598a2457cddba4896730480ec6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568213"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745928"
 ---
 # <a name="process-automation"></a>プロセスの自動化
 

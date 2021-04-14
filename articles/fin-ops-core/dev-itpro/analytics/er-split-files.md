@@ -2,7 +2,6 @@
 title: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
 description: このトピックでは、ファイルのサイズおよびコンテンツの品目数量に基づいて生成されるファイルを分割する方法に関する情報を提供します。
 author: NickSelin
-manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: d347bd0decf3ab274157d75ec29b0c9dc376e96b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: f39cb93f4ba2d41b145ed7cfa52da287ccac3df5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570817"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743560"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
 

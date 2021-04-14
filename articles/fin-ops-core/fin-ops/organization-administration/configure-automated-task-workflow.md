@@ -2,7 +2,6 @@
 title: ワークフローでの自動化タスクのコンフィギュレーション
 description: このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b63a9a99c442b0fbe971bc2e8f05fc8c09ec3087
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 4f02b128036ebc0bd8789ecafd1e72e26fe31436
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567489"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747958"
 ---
 # <a name="configure-automated-tasks-in-a-workflow"></a>ワークフローでの自動化タスクのコンフィギュレーション
 

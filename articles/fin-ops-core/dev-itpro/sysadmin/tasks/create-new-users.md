@@ -2,7 +2,6 @@
 title: 新規ユーザーの作成
 description: ユーザーは、ジョブの実行のためにシステムへアクセスする必要がある、組織の内部従業員、または外部顧客や仕入先です。
 author: peakerbl
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f30f6292ed0a4de93ba75341bc917f9205c4e39c
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: b994473b4535c255f87551a6d97e197516fc2a9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571056"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745840"
 ---
 # <a name="create-new-users"></a>新規ユーザーの作成
 

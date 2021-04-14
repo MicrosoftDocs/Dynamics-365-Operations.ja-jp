@@ -2,7 +2,6 @@
 title: 統合された元帳
 description: このトピックでは、Dataverse を使用した Finance and Operations とその他の Dynamics 365 アプリケーション間の元帳データの統合について説明します。
 author: robinarh
-manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f8095b0a755e40e5665d951d33ea4ce60e749165
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 5fedcbcd8db2692214ea66b2fbab9f7381e0a622
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567699"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748520"
 ---
 # <a name="integrated-ledger"></a>統合された元帳
 

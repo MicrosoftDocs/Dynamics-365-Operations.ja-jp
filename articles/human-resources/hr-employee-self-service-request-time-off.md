@@ -2,11 +2,9 @@
 title: 休暇の申請
 description: Dynamics 365 Human Resources で休暇を申請します。
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 031dcfe6f2f88f65c9eeefe2b81171a8dfcb85d5
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 0159935e98e720d401923230dd7b69e22581df84
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466403"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790695"
 ---
 # <a name="request-time-off"></a>休暇の申請
 

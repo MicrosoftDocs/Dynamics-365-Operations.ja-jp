@@ -2,11 +2,9 @@
 title: 小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション
 description: この手順は、分析コード値を使用するコマース チャネルの財務分析コードの作成と店舗の財務分析コード値のコンフィギュレーションのステップについて説明します。
 author: jashanno
-manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5250e93757560f4a0f76897e3dd1374d14ff5e60
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0212d3bd808b2a46fa30e8b2bdaa3c0b52ca0dd6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264263"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790935"
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション
 
