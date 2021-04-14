@@ -2,7 +2,6 @@
 title: ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 2 部 - 形式の実行)
 description: このトピックでは、OPENXML ワークシート (Excel) ファイルとしてレポートを生成するように電子申告 (ER) 形式を構成する方法について説明します。 (第 2 部)
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,41 +13,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee0b8c997549bca2cae5500c926ccba916a473b5
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a62bad6ca241a2372a72e312ec5a707008a5fc09
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569536"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744990"
 ---
-# <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2---run-format"></a><span data-ttu-id="a0c89-104">ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 2 部 - 形式の実行)</span><span class="sxs-lookup"><span data-stu-id="a0c89-104">ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2 - Run format)</span></span>
+# <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2---run-format"></a><span data-ttu-id="73a78-104">ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 2 部 - 形式の実行)</span><span class="sxs-lookup"><span data-stu-id="73a78-104">ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2 - Run format)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a0c89-105">次の手順は、システム管理者または電子レポートのロールに割り当てられたユーザーが、 OPENXML ワークシート (Excel) ファイル（要求された列が水平に展開される範囲として動的に作成される）としてのレポートを生成する電子レポート（ER）フォーマットをどのように設定するのか説明します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-105">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges.</span></span> <span data-ttu-id="a0c89-106">これらのステップは DEMF 会社で実行できます。</span><span class="sxs-lookup"><span data-stu-id="a0c89-106">These steps can be performed in the DEMF company.</span></span>
+<span data-ttu-id="73a78-105">次の手順は、システム管理者または電子レポートのロールに割り当てられたユーザーが、 OPENXML ワークシート (Excel) ファイル（要求された列が水平に展開される範囲として動的に作成される）としてのレポートを生成する電子レポート（ER）フォーマットをどのように設定するのか説明します。</span><span class="sxs-lookup"><span data-stu-id="73a78-105">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges.</span></span> <span data-ttu-id="73a78-106">これらのステップは DEMF 会社で実行できます。</span><span class="sxs-lookup"><span data-stu-id="73a78-106">These steps can be performed in the DEMF company.</span></span>
 
-<span data-ttu-id="a0c89-107">これらの手順を完了するには、まず 「ER 水平方向に拡張可能な範囲を使用して、Excelレポートで列を動的に追加する（パート1：デザイン フォーマット）」に記載の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a0c89-107">To complete these steps, you must first complete the steps in the "ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)" procedure.</span></span>
+<span data-ttu-id="73a78-107">これらの手順を完了するには、まず 「ER 水平方向に拡張可能な範囲を使用して、Excelレポートで列を動的に追加する（パート1：デザイン フォーマット）」に記載の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="73a78-107">To complete these steps, you must first complete the steps in the "ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)" procedure.</span></span>
 
-<span data-ttu-id="a0c89-108">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="a0c89-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="73a78-108">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="73a78-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="find-created-format"></a><span data-ttu-id="a0c89-109">作成されたフォーマットを検索する</span><span class="sxs-lookup"><span data-stu-id="a0c89-109">Find created format</span></span>
-1. <span data-ttu-id="a0c89-110">[組織管理] > [電子申告] > [コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-2. <span data-ttu-id="a0c89-111">[ツリー] フィールドで、「Financial dimensions sample model」を展開します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-111">In the tree, expand 'Financial dimensions sample model'.</span></span>
-3. <span data-ttu-id="a0c89-112">ツリーで、「Financial dimensions sample model\Sample report with horizontally expandable ranges」を選択します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-112">In the tree, select 'Financial dimensions sample model\Sample report with horizontally expandable ranges'.</span></span>
+## <a name="find-created-format"></a><span data-ttu-id="73a78-109">作成されたフォーマットを検索する</span><span class="sxs-lookup"><span data-stu-id="73a78-109">Find created format</span></span>
+1. <span data-ttu-id="73a78-110">[組織管理] > [電子申告] > [コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="73a78-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="73a78-111">[ツリー] フィールドで、「Financial dimensions sample model」を展開します。</span><span class="sxs-lookup"><span data-stu-id="73a78-111">In the tree, expand 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="73a78-112">ツリーで、「Financial dimensions sample model\Sample report with horizontally expandable ranges」を選択します。</span><span class="sxs-lookup"><span data-stu-id="73a78-112">In the tree, select 'Financial dimensions sample model\Sample report with horizontally expandable ranges'.</span></span>
 
-## <a name="execute-format-to-create-excel-output"></a><span data-ttu-id="a0c89-113">フォーマットを実行してExcel出力を作成する</span><span class="sxs-lookup"><span data-stu-id="a0c89-113">Execute format to create Excel output</span></span>
-1. <span data-ttu-id="a0c89-114">[実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a0c89-114">Click Run.</span></span>
-2. <span data-ttu-id="a0c89-115">[分析コード名] フィールドに、「事業単位、コストセンター、部門」を入力します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-115">In the Dimension name field, type 'BusinessUnit;CostCenter;Department'.</span></span>
-    * <span data-ttu-id="a0c89-116">[分析コード名] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-116">In the Dimension name field, enter or select a value.</span></span>  <span data-ttu-id="a0c89-117">現在の会社のすべての分析コードを選択するには、次を入力します: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span><span class="sxs-lookup"><span data-stu-id="a0c89-117">To select all dimensions for the current company, enter the following:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span></span>  
-3. <span data-ttu-id="a0c89-118">[対象に含めるレコード] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-118">Expand the Records to include section.</span></span>
-4. <span data-ttu-id="a0c89-119">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a0c89-119">Click Filter.</span></span>
-5. <span data-ttu-id="a0c89-120">仕訳元帳表および仕訳バッチ番号フィールドの行を選択します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-120">Select the row for the Ledger journal table and the Journal batch number field.</span></span>
-6. <span data-ttu-id="a0c89-121">[基準] フィールドに、「00057..00058」と入力します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-121">In the Criteria field, type '00057..00058'.</span></span>
-    * <span data-ttu-id="a0c89-122">00057..00058</span><span class="sxs-lookup"><span data-stu-id="a0c89-122">00057..00058</span></span>  
-7. <span data-ttu-id="a0c89-123">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a0c89-123">Click OK.</span></span>
-8. <span data-ttu-id="a0c89-124">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a0c89-124">Click OK.</span></span>
-    * <span data-ttu-id="a0c89-125">生成された出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-125">Review the generated output.</span></span> <span data-ttu-id="a0c89-126">新しく作成したExcel ファイルには、財務分析コードに対して選択された同じ数の列が含まれることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a0c89-126">Note that the newly created Excel file contains the same number of columns that were selected for financial dimensions.</span></span> <span data-ttu-id="a0c89-127">これらの列のレポート ヘッダーは財務分析コードの名称を表します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-127">The report header in those columns represents financial dimensions' names.</span></span> <span data-ttu-id="a0c89-128">これらの列のトランザクションの明細行は財務分析コードを表します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-128">The transactions' lines in those columns represent financial dimensions.</span></span> <span data-ttu-id="a0c89-129">このレポートを実行して、レポートが選択した分析コード数またはインスタンスに構成した分析コード数に依存していないことを確認するために異なる分析コードを選択します。</span><span class="sxs-lookup"><span data-stu-id="a0c89-129">Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.</span></span>  
+## <a name="execute-format-to-create-excel-output"></a><span data-ttu-id="73a78-113">フォーマットを実行してExcel出力を作成する</span><span class="sxs-lookup"><span data-stu-id="73a78-113">Execute format to create Excel output</span></span>
+1. <span data-ttu-id="73a78-114">[実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73a78-114">Click Run.</span></span>
+2. <span data-ttu-id="73a78-115">[分析コード名] フィールドに、「事業単位、コストセンター、部門」を入力します。</span><span class="sxs-lookup"><span data-stu-id="73a78-115">In the Dimension name field, type 'BusinessUnit;CostCenter;Department'.</span></span>
+    * <span data-ttu-id="73a78-116">[分析コード名] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="73a78-116">In the Dimension name field, enter or select a value.</span></span>  <span data-ttu-id="73a78-117">現在の会社のすべての分析コードを選択するには、次を入力します: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span><span class="sxs-lookup"><span data-stu-id="73a78-117">To select all dimensions for the current company, enter the following:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span></span>  
+3. <span data-ttu-id="73a78-118">[対象に含めるレコード] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="73a78-118">Expand the Records to include section.</span></span>
+4. <span data-ttu-id="73a78-119">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73a78-119">Click Filter.</span></span>
+5. <span data-ttu-id="73a78-120">仕訳元帳表および仕訳バッチ番号フィールドの行を選択します。</span><span class="sxs-lookup"><span data-stu-id="73a78-120">Select the row for the Ledger journal table and the Journal batch number field.</span></span>
+6. <span data-ttu-id="73a78-121">[基準] フィールドに、「00057..00058」と入力します。</span><span class="sxs-lookup"><span data-stu-id="73a78-121">In the Criteria field, type '00057..00058'.</span></span>
+    * <span data-ttu-id="73a78-122">00057..00058</span><span class="sxs-lookup"><span data-stu-id="73a78-122">00057..00058</span></span>  
+7. <span data-ttu-id="73a78-123">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73a78-123">Click OK.</span></span>
+8. <span data-ttu-id="73a78-124">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73a78-124">Click OK.</span></span>
+    * <span data-ttu-id="73a78-125">生成された出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="73a78-125">Review the generated output.</span></span> <span data-ttu-id="73a78-126">新しく作成したExcel ファイルには、財務分析コードに対して選択された同じ数の列が含まれることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="73a78-126">Note that the newly created Excel file contains the same number of columns that were selected for financial dimensions.</span></span> <span data-ttu-id="73a78-127">これらの列のレポート ヘッダーは財務分析コードの名称を表します。</span><span class="sxs-lookup"><span data-stu-id="73a78-127">The report header in those columns represents financial dimensions' names.</span></span> <span data-ttu-id="73a78-128">これらの列のトランザクションの明細行は財務分析コードを表します。</span><span class="sxs-lookup"><span data-stu-id="73a78-128">The transactions' lines in those columns represent financial dimensions.</span></span> <span data-ttu-id="73a78-129">このレポートを実行して、レポートが選択した分析コード数またはインスタンスに構成した分析コード数に依存していないことを確認するために異なる分析コードを選択します。</span><span class="sxs-lookup"><span data-stu-id="73a78-129">Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.</span></span>  
 
 
 

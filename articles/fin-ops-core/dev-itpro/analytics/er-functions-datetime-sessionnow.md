@@ -2,7 +2,6 @@
 title: SESSIONNOW ER 関数
 description: このトピックでは、SESSIONNOW 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
@@ -16,38 +15,38 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a79e8055a4b5025e1b1c4ab91875cf165fa8b354
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 47b88a1ca0ea9fd09c2a82963901d9ace78891bb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563397"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746797"
 ---
-# <a name="sessionnow-er-function"></a><span data-ttu-id="6ba19-103">SESSIONNOW ER 関数</span><span class="sxs-lookup"><span data-stu-id="6ba19-103">SESSIONNOW ER function</span></span>
+# <a name="sessionnow-er-function"></a><span data-ttu-id="ae262-103">SESSIONNOW ER 関数</span><span class="sxs-lookup"><span data-stu-id="ae262-103">SESSIONNOW ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6ba19-104">`SESSIONNOW` 関数は、現在のアプリケーション セッションの日付と時刻を表す *DateTime* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="6ba19-104">The `SESSIONNOW` function returns a *DateTime* value that represents the current application session date and time.</span></span>
+<span data-ttu-id="ae262-104">`SESSIONNOW` 関数は、現在のアプリケーション セッションの日付と時刻を表す *DateTime* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="ae262-104">The `SESSIONNOW` function returns a *DateTime* value that represents the current application session date and time.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6ba19-105">構文</span><span class="sxs-lookup"><span data-stu-id="6ba19-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ae262-105">構文</span><span class="sxs-lookup"><span data-stu-id="ae262-105">Syntax</span></span>
 
 ```vb
 SESSIONNOW ()
 ```
 
-## <a name="return-values"></a><span data-ttu-id="6ba19-106">戻り値</span><span class="sxs-lookup"><span data-stu-id="6ba19-106">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="ae262-106">戻り値</span><span class="sxs-lookup"><span data-stu-id="ae262-106">Return values</span></span>
 
-<span data-ttu-id="6ba19-107">*日時*</span><span class="sxs-lookup"><span data-stu-id="6ba19-107">*DateTime*</span></span>
+<span data-ttu-id="ae262-107">*日時*</span><span class="sxs-lookup"><span data-stu-id="ae262-107">*DateTime*</span></span>
 
-<span data-ttu-id="6ba19-108">結果日時値。</span><span class="sxs-lookup"><span data-stu-id="6ba19-108">The resulting date/time value.</span></span>
+<span data-ttu-id="ae262-108">結果日時値。</span><span class="sxs-lookup"><span data-stu-id="ae262-108">The resulting date/time value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6ba19-109">例</span><span class="sxs-lookup"><span data-stu-id="6ba19-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ae262-109">例</span><span class="sxs-lookup"><span data-stu-id="ae262-109">Example</span></span>
 
-<span data-ttu-id="6ba19-110">`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` は、選択されたドイツのカルチャおよび指定された形式に基づいて、現在のアプリケーション セッションの日時値 2015 年 12 月 24 日を **"24.12.2015"** として返します。</span><span class="sxs-lookup"><span data-stu-id="6ba19-110">`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2015, as **"24.12.2015"**, based on the selected German culture and the specified format.</span></span>
+<span data-ttu-id="ae262-110">`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` は、選択されたドイツのカルチャおよび指定された形式に基づいて、現在のアプリケーション セッションの日時値 2015 年 12 月 24 日を **"24.12.2015"** として返します。</span><span class="sxs-lookup"><span data-stu-id="ae262-110">`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2015, as **"24.12.2015"**, based on the selected German culture and the specified format.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="6ba19-111">追加リソース</span><span class="sxs-lookup"><span data-stu-id="6ba19-111">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="ae262-111">追加リソース</span><span class="sxs-lookup"><span data-stu-id="ae262-111">Additional resources</span></span>
 
-[<span data-ttu-id="6ba19-112">日時の関数</span><span class="sxs-lookup"><span data-stu-id="6ba19-112">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="ae262-112">日時の関数</span><span class="sxs-lookup"><span data-stu-id="ae262-112">Date and time functions</span></span>](er-functions-category-datetime.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

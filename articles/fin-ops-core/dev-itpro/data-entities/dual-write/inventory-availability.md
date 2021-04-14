@@ -2,7 +2,6 @@
 title: 二重書き込みでの在庫状況
 description: このトピックでは、二重書き込みでの在庫状況の確認方法について説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
@@ -17,68 +16,68 @@ ms.search.industry: ''
 ms.author: riluan
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 48e54c043967ea5db15938857bd8f020dd4dfc64
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 9d9b7970720218fbcf2f512345ade672810440b4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566742"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748568"
 ---
-# <a name="inventory-availability-in-dual-write"></a><span data-ttu-id="965e6-103">二重書き込みでの在庫状況</span><span class="sxs-lookup"><span data-stu-id="965e6-103">Inventory availability in dual-write</span></span>
+# <a name="inventory-availability-in-dual-write"></a><span data-ttu-id="60306-103">二重書き込みでの在庫状況</span><span class="sxs-lookup"><span data-stu-id="60306-103">Inventory availability in dual-write</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="965e6-104">在庫状況を使用すると、Microsoft Dynamics 365 Sales の **見積**、**注文**、または **請求書** ページに製品を追加する前に、在庫を確認できます。</span><span class="sxs-lookup"><span data-stu-id="965e6-104">By using inventory availability, you can check your inventory before you add a product to the **Quotations**, **Orders**, or **Invoices** page in Microsoft Dynamics 365 Sales.</span></span> <span data-ttu-id="965e6-105">たとえば、[見込顧客から現金](dual-write-prospect-to-cash.md) の一つの重要なタスクとして在庫の確認と履行日の決定をおこないます。</span><span class="sxs-lookup"><span data-stu-id="965e6-105">For example, you check inventory and determine a fulfillment date as one key task in the [prospect-to-cash](dual-write-prospect-to-cash.md) process.</span></span>
+<span data-ttu-id="60306-104">在庫状況を使用すると、Microsoft Dynamics 365 Sales の **見積**、**注文**、または **請求書** ページに製品を追加する前に、在庫を確認できます。</span><span class="sxs-lookup"><span data-stu-id="60306-104">By using inventory availability, you can check your inventory before you add a product to the **Quotations**, **Orders**, or **Invoices** page in Microsoft Dynamics 365 Sales.</span></span> <span data-ttu-id="60306-105">たとえば、[見込顧客から現金](dual-write-prospect-to-cash.md) の一つの重要なタスクとして在庫の確認と履行日の決定をおこないます。</span><span class="sxs-lookup"><span data-stu-id="60306-105">For example, you check inventory and determine a fulfillment date as one key task in the [prospect-to-cash](dual-write-prospect-to-cash.md) process.</span></span>
 
-<span data-ttu-id="965e6-106">十分な在庫がない場合は、予想在庫の入庫および払出に基づいて出荷日を見積もることができます。</span><span class="sxs-lookup"><span data-stu-id="965e6-106">If you don't have enough inventory, you can estimate a delivery date, based on projected inventory receipts and issues.</span></span> <span data-ttu-id="965e6-107">また、製品の納期回答可能在庫 (ATP) 情報を確認して、事前に定義されたタイム フェンスで ATP 数量を検索することもできます。</span><span class="sxs-lookup"><span data-stu-id="965e6-107">You can also check the product's available-to-promise (ATP) information, where you can find the ATP quantity in the predefined time fence.</span></span>
+<span data-ttu-id="60306-106">十分な在庫がない場合は、予想在庫の入庫および払出に基づいて出荷日を見積もることができます。</span><span class="sxs-lookup"><span data-stu-id="60306-106">If you don't have enough inventory, you can estimate a delivery date, based on projected inventory receipts and issues.</span></span> <span data-ttu-id="60306-107">また、製品の納期回答可能在庫 (ATP) 情報を確認して、事前に定義されたタイム フェンスで ATP 数量を検索することもできます。</span><span class="sxs-lookup"><span data-stu-id="60306-107">You can also check the product's available-to-promise (ATP) information, where you can find the ATP quantity in the predefined time fence.</span></span>
 
-## <a name="on-hand-inventory"></a><span data-ttu-id="965e6-108">手持在庫</span><span class="sxs-lookup"><span data-stu-id="965e6-108">On-hand inventory</span></span>
+## <a name="on-hand-inventory"></a><span data-ttu-id="60306-108">手持在庫</span><span class="sxs-lookup"><span data-stu-id="60306-108">On-hand inventory</span></span>
 
-<span data-ttu-id="965e6-109">Dynamics 365 Sales で、**見積**、**注文**、**請求書** の各ページのヘッダーに、新規の **手持在庫** ボタンが追加されました。</span><span class="sxs-lookup"><span data-stu-id="965e6-109">In Dynamics 365 Sales, a new **On-hand Inventory** button has been added to the header of the **Quotes**, **Orders**, and **Invoices** pages.</span></span> <span data-ttu-id="965e6-110">このボタンをクリックすると、ダイアログ ボックスが表示され、手持在庫を確認する会社と製品を指定できます。</span><span class="sxs-lookup"><span data-stu-id="965e6-110">When you select this button, a dialog box appears, where you can specify the company and the product that you want to check the on-hand inventory for.</span></span> <span data-ttu-id="965e6-111">このダイアログボックスには、[手持在庫](../../../../supply-chain/inventory/tasks/check-availability-stock.md) と同じ情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="965e6-111">This dialog box shows the same information as [On-hand inventory](../../../../supply-chain/inventory/tasks/check-availability-stock.md).</span></span>
+<span data-ttu-id="60306-109">Dynamics 365 Sales で、**見積**、**注文**、**請求書** の各ページのヘッダーに、新規の **手持在庫** ボタンが追加されました。</span><span class="sxs-lookup"><span data-stu-id="60306-109">In Dynamics 365 Sales, a new **On-hand Inventory** button has been added to the header of the **Quotes**, **Orders**, and **Invoices** pages.</span></span> <span data-ttu-id="60306-110">このボタンをクリックすると、ダイアログ ボックスが表示され、手持在庫を確認する会社と製品を指定できます。</span><span class="sxs-lookup"><span data-stu-id="60306-110">When you select this button, a dialog box appears, where you can specify the company and the product that you want to check the on-hand inventory for.</span></span> <span data-ttu-id="60306-111">このダイアログボックスには、[手持在庫](../../../../supply-chain/inventory/tasks/check-availability-stock.md) と同じ情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="60306-111">This dialog box shows the same information as [On-hand inventory](../../../../supply-chain/inventory/tasks/check-availability-stock.md).</span></span>
 
-<span data-ttu-id="965e6-112">このダイアログ ボックスでは、Dynamics 365 Supply Chain Management からの在庫情報が返されます。</span><span class="sxs-lookup"><span data-stu-id="965e6-112">The dialog box returns the inventory information from Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="965e6-113">この情報には、次の数量が含まれています。</span><span class="sxs-lookup"><span data-stu-id="965e6-113">This information includes the following quantities:</span></span>
+<span data-ttu-id="60306-112">このダイアログ ボックスでは、Dynamics 365 Supply Chain Management からの在庫情報が返されます。</span><span class="sxs-lookup"><span data-stu-id="60306-112">The dialog box returns the inventory information from Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="60306-113">この情報には、次の数量が含まれています。</span><span class="sxs-lookup"><span data-stu-id="60306-113">This information includes the following quantities:</span></span>
 
-- <span data-ttu-id="965e6-114">手持在庫数量</span><span class="sxs-lookup"><span data-stu-id="965e6-114">On-hand quantity</span></span>
-- <span data-ttu-id="965e6-115">予約済み手持数量</span><span class="sxs-lookup"><span data-stu-id="965e6-115">Reserved on-hand quantity</span></span>
-- <span data-ttu-id="965e6-116">使用可能な手持数量</span><span class="sxs-lookup"><span data-stu-id="965e6-116">Available on-hand quantity</span></span>
-- <span data-ttu-id="965e6-117">注文済数量</span><span class="sxs-lookup"><span data-stu-id="965e6-117">Ordered quantity</span></span>
-- <span data-ttu-id="965e6-118">注文中数量</span><span class="sxs-lookup"><span data-stu-id="965e6-118">On-order quantity</span></span>
-- <span data-ttu-id="965e6-119">引当済の注文済数量</span><span class="sxs-lookup"><span data-stu-id="965e6-119">Reserved ordered quantity</span></span>
-- <span data-ttu-id="965e6-120">利用可能な合計数量</span><span class="sxs-lookup"><span data-stu-id="965e6-120">Total available quantity</span></span>
+- <span data-ttu-id="60306-114">手持在庫数量</span><span class="sxs-lookup"><span data-stu-id="60306-114">On-hand quantity</span></span>
+- <span data-ttu-id="60306-115">予約済み手持数量</span><span class="sxs-lookup"><span data-stu-id="60306-115">Reserved on-hand quantity</span></span>
+- <span data-ttu-id="60306-116">使用可能な手持数量</span><span class="sxs-lookup"><span data-stu-id="60306-116">Available on-hand quantity</span></span>
+- <span data-ttu-id="60306-117">注文済数量</span><span class="sxs-lookup"><span data-stu-id="60306-117">Ordered quantity</span></span>
+- <span data-ttu-id="60306-118">注文中数量</span><span class="sxs-lookup"><span data-stu-id="60306-118">On-order quantity</span></span>
+- <span data-ttu-id="60306-119">引当済の注文済数量</span><span class="sxs-lookup"><span data-stu-id="60306-119">Reserved ordered quantity</span></span>
+- <span data-ttu-id="60306-120">利用可能な合計数量</span><span class="sxs-lookup"><span data-stu-id="60306-120">Total available quantity</span></span>
 
-## <a name="atp-information"></a><span data-ttu-id="965e6-121">ATP 情報</span><span class="sxs-lookup"><span data-stu-id="965e6-121">ATP information</span></span>
+## <a name="atp-information"></a><span data-ttu-id="60306-121">ATP 情報</span><span class="sxs-lookup"><span data-stu-id="60306-121">ATP information</span></span>
 
-<span data-ttu-id="965e6-122">Sales では、**ATP情報** ボタンが **見積**、**注文**、**請求書** の各ページの品目に追加されました。</span><span class="sxs-lookup"><span data-stu-id="965e6-122">In Sales, a new **ATP Information** button has been added to line items on the **Quotes**, **Orders**, and **Invoices** pages.</span></span> <span data-ttu-id="965e6-123">このボタンを選択すると、ダイアログ ボックスが表示され、会社、製品、在庫サイト、在庫倉庫、注文数量を指定できます。</span><span class="sxs-lookup"><span data-stu-id="965e6-123">When you select this button, a dialog box appears, where you can specify the company, product, inventory site, inventory warehouse, and order quantity.</span></span> <span data-ttu-id="965e6-124">このダイアログボックスの設定は、[注文-受注](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations) に記述されている設定と同じです。</span><span class="sxs-lookup"><span data-stu-id="965e6-124">This dialog box has the same settings that are described in [Order promising](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations).</span></span>
+<span data-ttu-id="60306-122">Sales では、**ATP情報** ボタンが **見積**、**注文**、**請求書** の各ページの品目に追加されました。</span><span class="sxs-lookup"><span data-stu-id="60306-122">In Sales, a new **ATP Information** button has been added to line items on the **Quotes**, **Orders**, and **Invoices** pages.</span></span> <span data-ttu-id="60306-123">このボタンを選択すると、ダイアログ ボックスが表示され、会社、製品、在庫サイト、在庫倉庫、注文数量を指定できます。</span><span class="sxs-lookup"><span data-stu-id="60306-123">When you select this button, a dialog box appears, where you can specify the company, product, inventory site, inventory warehouse, and order quantity.</span></span> <span data-ttu-id="60306-124">このダイアログボックスの設定は、[注文-受注](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations) に記述されている設定と同じです。</span><span class="sxs-lookup"><span data-stu-id="60306-124">This dialog box has the same settings that are described in [Order promising](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations).</span></span>
 
-<span data-ttu-id="965e6-125">このダイアログ ボックスでは、Supply Chain Management からの ATP 情報が返されます。</span><span class="sxs-lookup"><span data-stu-id="965e6-125">The dialog box returns the ATP information from Supply Chain Management.</span></span> <span data-ttu-id="965e6-126">この情報には、次の数量が含まれています。</span><span class="sxs-lookup"><span data-stu-id="965e6-126">This information includes the following quantities:</span></span>
+<span data-ttu-id="60306-125">このダイアログ ボックスでは、Supply Chain Management からの ATP 情報が返されます。</span><span class="sxs-lookup"><span data-stu-id="60306-125">The dialog box returns the ATP information from Supply Chain Management.</span></span> <span data-ttu-id="60306-126">この情報には、次の数量が含まれています。</span><span class="sxs-lookup"><span data-stu-id="60306-126">This information includes the following quantities:</span></span>
 
-- <span data-ttu-id="965e6-127">ATP 数量</span><span class="sxs-lookup"><span data-stu-id="965e6-127">ATP quantity</span></span>
-- <span data-ttu-id="965e6-128">受入数量</span><span class="sxs-lookup"><span data-stu-id="965e6-128">Receipt quantity</span></span>
-- <span data-ttu-id="965e6-129">払出数量</span><span class="sxs-lookup"><span data-stu-id="965e6-129">Issue quantity</span></span>
-- <span data-ttu-id="965e6-130">手持在庫数量</span><span class="sxs-lookup"><span data-stu-id="965e6-130">On-hand quantity</span></span>
+- <span data-ttu-id="60306-127">ATP 数量</span><span class="sxs-lookup"><span data-stu-id="60306-127">ATP quantity</span></span>
+- <span data-ttu-id="60306-128">受入数量</span><span class="sxs-lookup"><span data-stu-id="60306-128">Receipt quantity</span></span>
+- <span data-ttu-id="60306-129">払出数量</span><span class="sxs-lookup"><span data-stu-id="60306-129">Issue quantity</span></span>
+- <span data-ttu-id="60306-130">手持在庫数量</span><span class="sxs-lookup"><span data-stu-id="60306-130">On-hand quantity</span></span>
 
-## <a name="how-it-works"></a><span data-ttu-id="965e6-131">この機能の動作</span><span class="sxs-lookup"><span data-stu-id="965e6-131">How it works</span></span>
+## <a name="how-it-works"></a><span data-ttu-id="60306-131">この機能の動作</span><span class="sxs-lookup"><span data-stu-id="60306-131">How it works</span></span>
 
-<span data-ttu-id="965e6-132">**見積書**、**注文**、または **請求書** ページの **手持在庫** ボタンを選択すると、デュアル書き込み呼び出しが **手持在庫** API につくられます。</span><span class="sxs-lookup"><span data-stu-id="965e6-132">When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, or **Invoices** page, a live dual-write call is made to the **Onhand inventory** API.</span></span> <span data-ttu-id="965e6-133">API によって、特定の製品の在庫が計算されます。</span><span class="sxs-lookup"><span data-stu-id="965e6-133">The API calculates the on-hand inventory for the given product.</span></span> <span data-ttu-id="965e6-134">この結果は、**InventCDSInventoryOnHandRequestEntity** と **InventCDSInventoryOnHandEntryEntity** テーブルに格納された後、デュアル書き込みによって Dataverse に書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="965e6-134">The result is stored in the **InventCDSInventoryOnHandRequestEntity** and **InventCDSInventoryOnHandEntryEntity** tables, and then is written to Dataverse by dual-write.</span></span> <span data-ttu-id="965e6-135">この機能を使用するには、次のデュアル 書き込みマップを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="965e6-135">To use this functionality, you need to run the following dual-write maps.</span></span> <span data-ttu-id="965e6-136">マップの実行時に初期同期をスキップします。</span><span class="sxs-lookup"><span data-stu-id="965e6-136">Skip initial synchronization when you run the maps.</span></span>
+<span data-ttu-id="60306-132">**見積書**、**注文**、または **請求書** ページの **手持在庫** ボタンを選択すると、デュアル書き込み呼び出しが **手持在庫** API につくられます。</span><span class="sxs-lookup"><span data-stu-id="60306-132">When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, or **Invoices** page, a live dual-write call is made to the **Onhand inventory** API.</span></span> <span data-ttu-id="60306-133">API によって、特定の製品の在庫が計算されます。</span><span class="sxs-lookup"><span data-stu-id="60306-133">The API calculates the on-hand inventory for the given product.</span></span> <span data-ttu-id="60306-134">この結果は、**InventCDSInventoryOnHandRequestEntity** と **InventCDSInventoryOnHandEntryEntity** テーブルに格納された後、デュアル書き込みによって Dataverse に書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="60306-134">The result is stored in the **InventCDSInventoryOnHandRequestEntity** and **InventCDSInventoryOnHandEntryEntity** tables, and then is written to Dataverse by dual-write.</span></span> <span data-ttu-id="60306-135">この機能を使用するには、次のデュアル 書き込みマップを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="60306-135">To use this functionality, you need to run the following dual-write maps.</span></span> <span data-ttu-id="60306-136">マップの実行時に初期同期をスキップします。</span><span class="sxs-lookup"><span data-stu-id="60306-136">Skip initial synchronization when you run the maps.</span></span>
 
-- <span data-ttu-id="965e6-137">CDS 在庫の手持在庫エントリー (msdyn_inventoryonhandentries)</span><span class="sxs-lookup"><span data-stu-id="965e6-137">CDS inventory on-hand entries (msdyn_inventoryonhandentries)</span></span>
-- <span data-ttu-id="965e6-138">CDS 在庫の手持在庫要求 (msdyn_inventoryonhandrequests)</span><span class="sxs-lookup"><span data-stu-id="965e6-138">CDS inventory on-hand requests (msdyn_inventoryonhandrequests)</span></span>
+- <span data-ttu-id="60306-137">CDS 在庫の手持在庫エントリー (msdyn_inventoryonhandentries)</span><span class="sxs-lookup"><span data-stu-id="60306-137">CDS inventory on-hand entries (msdyn_inventoryonhandentries)</span></span>
+- <span data-ttu-id="60306-138">CDS 在庫の手持在庫要求 (msdyn_inventoryonhandrequests)</span><span class="sxs-lookup"><span data-stu-id="60306-138">CDS inventory on-hand requests (msdyn_inventoryonhandrequests)</span></span>
 
-## <a name="templates"></a><span data-ttu-id="965e6-139">テンプレート</span><span class="sxs-lookup"><span data-stu-id="965e6-139">Templates</span></span>
-<span data-ttu-id="965e6-140">次のテンプレートを使用して、手持在庫の在庫データを公開します。</span><span class="sxs-lookup"><span data-stu-id="965e6-140">The following templates are available for the exposing the onhand inventory data.</span></span>
+## <a name="templates"></a><span data-ttu-id="60306-139">テンプレート</span><span class="sxs-lookup"><span data-stu-id="60306-139">Templates</span></span>
+<span data-ttu-id="60306-140">次のテンプレートを使用して、手持在庫の在庫データを公開します。</span><span class="sxs-lookup"><span data-stu-id="60306-140">The following templates are available for the exposing the onhand inventory data.</span></span>
 
-<span data-ttu-id="965e6-141">Finance and Operations アプリ</span><span class="sxs-lookup"><span data-stu-id="965e6-141">Finance and Operations apps</span></span> | <span data-ttu-id="965e6-142">Customer Engagement アプリ</span><span class="sxs-lookup"><span data-stu-id="965e6-142">Customer engagement app</span></span> | <span data-ttu-id="965e6-143">説明</span><span class="sxs-lookup"><span data-stu-id="965e6-143">Description</span></span> 
+<span data-ttu-id="60306-141">Finance and Operations アプリ</span><span class="sxs-lookup"><span data-stu-id="60306-141">Finance and Operations apps</span></span> | <span data-ttu-id="60306-142">Customer Engagement アプリ</span><span class="sxs-lookup"><span data-stu-id="60306-142">Customer engagement app</span></span> | <span data-ttu-id="60306-143">説明</span><span class="sxs-lookup"><span data-stu-id="60306-143">Description</span></span> 
 ---|---|---
-[<span data-ttu-id="965e6-144">CDS 手持在庫エントリ</span><span class="sxs-lookup"><span data-stu-id="965e6-144">CDS inventory on-hand entries</span></span>](#145) | <span data-ttu-id="965e6-145">msdyn_inventoryonhandentries</span><span class="sxs-lookup"><span data-stu-id="965e6-145">msdyn_inventoryonhandentries</span></span> |
-[<span data-ttu-id="965e6-146">CDS 手持在庫要求</span><span class="sxs-lookup"><span data-stu-id="965e6-146">CDS inventory on-hand requests</span></span>](#147) | <span data-ttu-id="965e6-147">msdyn_inventoryonhandrequests</span><span class="sxs-lookup"><span data-stu-id="965e6-147">msdyn_inventoryonhandrequests</span></span> |
+[<span data-ttu-id="60306-144">CDS 手持在庫エントリ</span><span class="sxs-lookup"><span data-stu-id="60306-144">CDS inventory on-hand entries</span></span>](#145) | <span data-ttu-id="60306-145">msdyn_inventoryonhandentries</span><span class="sxs-lookup"><span data-stu-id="60306-145">msdyn_inventoryonhandentries</span></span> |
+[<span data-ttu-id="60306-146">CDS 手持在庫要求</span><span class="sxs-lookup"><span data-stu-id="60306-146">CDS inventory on-hand requests</span></span>](#147) | <span data-ttu-id="60306-147">msdyn_inventoryonhandrequests</span><span class="sxs-lookup"><span data-stu-id="60306-147">msdyn_inventoryonhandrequests</span></span> |
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
-###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a><span data-ttu-id="965e6-148">CDS 在庫の手持在庫エントリー (msdyn_inventoryonhandentries)</span><span class="sxs-lookup"><span data-stu-id="965e6-148">CDS inventory on-hand entries (msdyn_inventoryonhandentries)</span></span>
+###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a><span data-ttu-id="60306-148">CDS 在庫の手持在庫エントリー (msdyn_inventoryonhandentries)</span><span class="sxs-lookup"><span data-stu-id="60306-148">CDS inventory on-hand entries (msdyn_inventoryonhandentries)</span></span>
 
-<span data-ttu-id="965e6-149">このテンプレートは、Finance and Operations アプリと Dataverse 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="965e6-149">This template synchronizes data between Finance and Operations apps and Dataverse.</span></span>
+<span data-ttu-id="60306-149">このテンプレートは、Finance and Operations アプリと Dataverse 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="60306-149">This template synchronizes data between Finance and Operations apps and Dataverse.</span></span>
 
-<span data-ttu-id="965e6-150">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="965e6-150">Finance and Operations field</span></span> | <span data-ttu-id="965e6-151">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="965e6-151">Map type</span></span> | <span data-ttu-id="965e6-152">Customer Engagement フィールド</span><span class="sxs-lookup"><span data-stu-id="965e6-152">Customer engagement field</span></span> | <span data-ttu-id="965e6-153">既定値</span><span class="sxs-lookup"><span data-stu-id="965e6-153">Default value</span></span>
+<span data-ttu-id="60306-150">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="60306-150">Finance and Operations field</span></span> | <span data-ttu-id="60306-151">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="60306-151">Map type</span></span> | <span data-ttu-id="60306-152">Customer Engagement フィールド</span><span class="sxs-lookup"><span data-stu-id="60306-152">Customer engagement field</span></span> | <span data-ttu-id="60306-153">既定値</span><span class="sxs-lookup"><span data-stu-id="60306-153">Default value</span></span>
 ---|---|---|---
 `REQUESTID` | = | `msdyn_request.msdyn_requestid` |
 `INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
@@ -99,11 +98,11 @@ ms.locfileid: "5566742"
 `ORDERQUANTITY` | > | `msdyn_orderquantity` |
 `UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
 
-###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a><span data-ttu-id="965e6-154">CDS 在庫の手持在庫要求 (msdyn_inventoryonhandrequests)</span><span class="sxs-lookup"><span data-stu-id="965e6-154">CDS inventory on-hand requests (msdyn_inventoryonhandrequests)</span></span>
+###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a><span data-ttu-id="60306-154">CDS 在庫の手持在庫要求 (msdyn_inventoryonhandrequests)</span><span class="sxs-lookup"><span data-stu-id="60306-154">CDS inventory on-hand requests (msdyn_inventoryonhandrequests)</span></span>
 
-<span data-ttu-id="965e6-155">このテンプレートは、Finance and Operations アプリと Dataverse 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="965e6-155">This template synchronizes data between Finance and Operations apps and Dataverse.</span></span>
+<span data-ttu-id="60306-155">このテンプレートは、Finance and Operations アプリと Dataverse 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="60306-155">This template synchronizes data between Finance and Operations apps and Dataverse.</span></span>
 
-<span data-ttu-id="965e6-156">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="965e6-156">Finance and Operations field</span></span> | <span data-ttu-id="965e6-157">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="965e6-157">Map type</span></span> | <span data-ttu-id="965e6-158">Customer Engagement フィールド</span><span class="sxs-lookup"><span data-stu-id="965e6-158">Customer engagement field</span></span> | <span data-ttu-id="965e6-159">既定値</span><span class="sxs-lookup"><span data-stu-id="965e6-159">Default value</span></span>
+<span data-ttu-id="60306-156">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="60306-156">Finance and Operations field</span></span> | <span data-ttu-id="60306-157">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="60306-157">Map type</span></span> | <span data-ttu-id="60306-158">Customer Engagement フィールド</span><span class="sxs-lookup"><span data-stu-id="60306-158">Customer engagement field</span></span> | <span data-ttu-id="60306-159">既定値</span><span class="sxs-lookup"><span data-stu-id="60306-159">Default value</span></span>
 ---|---|---|---
 `REQUESTID` | = | `msdyn_requestid` |
 `PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |

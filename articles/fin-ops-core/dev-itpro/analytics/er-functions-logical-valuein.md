@@ -2,7 +2,6 @@
 title: VALUEIN ER 関数
 description: このトピックでは、VALUEIN 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
@@ -16,81 +15,81 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5a0ac314a61abce610407550e65479cbf5a6b5b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 909aef5e52817a67e400f3132cb5d6ecc8a18906
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565835"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751753"
 ---
-# <a name="valuein-er-function"></a><span data-ttu-id="e15eb-103">VALUEIN ER 関数</span><span class="sxs-lookup"><span data-stu-id="e15eb-103">VALUEIN ER function</span></span>
+# <a name="valuein-er-function"></a><span data-ttu-id="5e3e2-103">VALUEIN ER 関数</span><span class="sxs-lookup"><span data-stu-id="5e3e2-103">VALUEIN ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e15eb-104">`VALUEIN` 関数は指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-104">The `VALUEIN` function determines whether the specified input matches any value of a specified item in the specified list.</span></span> <span data-ttu-id="e15eb-105">指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-105">It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list.</span></span> <span data-ttu-id="e15eb-106">それ以外の場合は、**FALSE** の *ブール* 値が返されます。</span><span class="sxs-lookup"><span data-stu-id="e15eb-106">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
+<span data-ttu-id="5e3e2-104">`VALUEIN` 関数は指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-104">The `VALUEIN` function determines whether the specified input matches any value of a specified item in the specified list.</span></span> <span data-ttu-id="5e3e2-105">指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-105">It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list.</span></span> <span data-ttu-id="5e3e2-106">それ以外の場合は、**FALSE** の *ブール* 値が返されます。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-106">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e15eb-107">構文</span><span class="sxs-lookup"><span data-stu-id="e15eb-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5e3e2-107">構文</span><span class="sxs-lookup"><span data-stu-id="5e3e2-107">Syntax</span></span>
 
 ```vb
 VALUEIN (input, list, list item expression)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="e15eb-108">引数</span><span class="sxs-lookup"><span data-stu-id="e15eb-108">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="5e3e2-108">引数</span><span class="sxs-lookup"><span data-stu-id="5e3e2-108">Arguments</span></span>
 
-<span data-ttu-id="e15eb-109">`input`: *フィールド*</span><span class="sxs-lookup"><span data-stu-id="e15eb-109">`input`: *Field*</span></span>
+<span data-ttu-id="5e3e2-109">`input`: *フィールド*</span><span class="sxs-lookup"><span data-stu-id="5e3e2-109">`input`: *Field*</span></span>
 
-<span data-ttu-id="e15eb-110">*レコード リスト* タイプのデータ ソースの項目の有効なパス。</span><span class="sxs-lookup"><span data-stu-id="e15eb-110">The valid path of an item of a data source of the *Record list* type.</span></span> <span data-ttu-id="e15eb-111">この項目の値は一致します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-111">The value of this item will be matched.</span></span>
+<span data-ttu-id="5e3e2-110">*レコード リスト* タイプのデータ ソースの項目の有効なパス。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-110">The valid path of an item of a data source of the *Record list* type.</span></span> <span data-ttu-id="5e3e2-111">この項目の値は一致します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-111">The value of this item will be matched.</span></span>
 
-<span data-ttu-id="e15eb-112">`list`: *レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="e15eb-112">`list`: *Record list*</span></span>
+<span data-ttu-id="5e3e2-112">`list`: *レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="5e3e2-112">`list`: *Record list*</span></span>
 
-<span data-ttu-id="e15eb-113">*レコード リスト* データ型のデータ ソースの項目の有効なパス。</span><span class="sxs-lookup"><span data-stu-id="e15eb-113">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="5e3e2-113">*レコード リスト* データ型のデータ ソースの項目の有効なパス。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-113">The valid path of a data source of the *Record list* data type.</span></span>
 
-<span data-ttu-id="e15eb-114">`list item expression`: *ブール値*</span><span class="sxs-lookup"><span data-stu-id="e15eb-114">`list item expression`: *Boolean*</span></span>
+<span data-ttu-id="5e3e2-114">`list item expression`: *ブール値*</span><span class="sxs-lookup"><span data-stu-id="5e3e2-114">`list item expression`: *Boolean*</span></span>
 
-<span data-ttu-id="e15eb-115">照合に使用される指定されたリストの単一のフィールドを指し示すか、そのフィールドを含む有効な条件式。</span><span class="sxs-lookup"><span data-stu-id="e15eb-115">A valid conditional expression that either points to or contains a single field of the specified list that should be used for the matching.</span></span>
+<span data-ttu-id="5e3e2-115">照合に使用される指定されたリストの単一のフィールドを指し示すか、そのフィールドを含む有効な条件式。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-115">A valid conditional expression that either points to or contains a single field of the specified list that should be used for the matching.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="e15eb-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="e15eb-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="5e3e2-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="5e3e2-116">Return values</span></span>
 
-<span data-ttu-id="e15eb-117">*ブール型*</span><span class="sxs-lookup"><span data-stu-id="e15eb-117">*Boolean*</span></span>
+<span data-ttu-id="5e3e2-117">*ブール型*</span><span class="sxs-lookup"><span data-stu-id="5e3e2-117">*Boolean*</span></span>
 
-<span data-ttu-id="e15eb-118">結果 *ブール* 値。</span><span class="sxs-lookup"><span data-stu-id="e15eb-118">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="5e3e2-118">結果 *ブール* 値。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-118">The resulting *Boolean* value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="e15eb-119">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="e15eb-119">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="5e3e2-119">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="5e3e2-119">Usage notes</span></span>
 
-<span data-ttu-id="e15eb-120">一般に、`VALUEIN` 関数は一連の **OR** 条件に変換されます。</span><span class="sxs-lookup"><span data-stu-id="e15eb-120">In general, the `VALUEIN` function is translated to a set of **OR** conditions.</span></span> <span data-ttu-id="e15eb-121">**OR** 条件の一覧が大きく、SQL ステートメントの最大長を超える場合は、[`VALUEINLARGE`](er-functions-logical-valueinlarge.md) 機能を使用することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="e15eb-121">If the list of **OR** conditions is large and the maximum total length of an SQL statement might be exceeded, consider using the [`VALUEINLARGE`](er-functions-logical-valueinlarge.md) function.</span></span>
+<span data-ttu-id="5e3e2-120">一般に、`VALUEIN` 関数は一連の **OR** 条件に変換されます。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-120">In general, the `VALUEIN` function is translated to a set of **OR** conditions.</span></span> <span data-ttu-id="5e3e2-121">**OR** 条件の一覧が大きく、SQL ステートメントの最大長を超える場合は、[`VALUEINLARGE`](er-functions-logical-valueinlarge.md) 機能を使用することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-121">If the list of **OR** conditions is large and the maximum total length of an SQL statement might be exceeded, consider using the [`VALUEINLARGE`](er-functions-logical-valueinlarge.md) function.</span></span>
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
 ```
 
-<span data-ttu-id="e15eb-122">場合によっては、`EXISTS JOIN` オペレーターを使用してデータベース SQL ステートメントに変換されます。</span><span class="sxs-lookup"><span data-stu-id="e15eb-122">In some cases, it can be translated to a database SQL statement by using the `EXISTS JOIN` operator.</span></span>
+<span data-ttu-id="5e3e2-122">場合によっては、`EXISTS JOIN` オペレーターを使用してデータベース SQL ステートメントに変換されます。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-122">In some cases, it can be translated to a database SQL statement by using the `EXISTS JOIN` operator.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="e15eb-123">例 1</span><span class="sxs-lookup"><span data-stu-id="e15eb-123">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="5e3e2-123">例 1</span><span class="sxs-lookup"><span data-stu-id="5e3e2-123">Example 1</span></span>
 
-<span data-ttu-id="e15eb-124">モデル マッピングで、*計算済フィールド* タイプの **リスト** データ ソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-124">In your model mapping, you define the **List** data source of the *Calculated field* type.</span></span> <span data-ttu-id="e15eb-125">このデータ ソースには、式 `SPLIT ("a,b,c", ",")` が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e15eb-125">This data source contains the expression `SPLIT ("a,b,c", ",")`.</span></span>
+<span data-ttu-id="5e3e2-124">モデル マッピングで、*計算済フィールド* タイプの **リスト** データ ソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-124">In your model mapping, you define the **List** data source of the *Calculated field* type.</span></span> <span data-ttu-id="5e3e2-125">このデータ ソースには、式 `SPLIT ("a,b,c", ",")` が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-125">This data source contains the expression `SPLIT ("a,b,c", ",")`.</span></span>
 
-<span data-ttu-id="e15eb-126">データ ソースが呼び出されると、`VALUEIN ("B", List, List.Value)` 式として構成されている場合は、**TRUE** を返します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-126">When a data source is called, if it has been configured as the `VALUEIN ("B", List, List.Value)` expression, it returns **TRUE**.</span></span> <span data-ttu-id="e15eb-127">この場合、`VALUEIN` 関数は次の一連の条件に変換されます。`("B" = "b")` が **TRUE** と等しい場合、`(("B" = "a") or ("B" = "b") or ("B" = "c"))`。</span><span class="sxs-lookup"><span data-stu-id="e15eb-127">In this case, the `VALUEIN` function is translated to the following set of conditions: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, where `("B" = "b")` equals **TRUE**.</span></span>
+<span data-ttu-id="5e3e2-126">データ ソースが呼び出されると、`VALUEIN ("B", List, List.Value)` 式として構成されている場合は、**TRUE** を返します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-126">When a data source is called, if it has been configured as the `VALUEIN ("B", List, List.Value)` expression, it returns **TRUE**.</span></span> <span data-ttu-id="5e3e2-127">この場合、`VALUEIN` 関数は次の一連の条件に変換されます。`("B" = "b")` が **TRUE** と等しい場合、`(("B" = "a") or ("B" = "b") or ("B" = "c"))`。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-127">In this case, the `VALUEIN` function is translated to the following set of conditions: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, where `("B" = "b")` equals **TRUE**.</span></span>
 
-<span data-ttu-id="e15eb-128">データ ソースが呼び出されると、`VALUEIN ("B", List, LEFT(List.Value, 0))` 式として構成されている場合は、**FALSE** を返します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-128">When a data source is called, if it has been configured as the `VALUEIN ("B", List, LEFT(List.Value, 0))` expression, it returns **FALSE**.</span></span> <span data-ttu-id="e15eb-129">この場合、`VALUEIN` 関数は次の一連の条件に変換されます。 **TRUE** と等しくない `("B" = "")`。</span><span class="sxs-lookup"><span data-stu-id="e15eb-129">In this case, the `VALUEIN` function is translated to the following condition: `("B" = "")`, which doesn't equal **TRUE**.</span></span>
+<span data-ttu-id="5e3e2-128">データ ソースが呼び出されると、`VALUEIN ("B", List, LEFT(List.Value, 0))` 式として構成されている場合は、**FALSE** を返します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-128">When a data source is called, if it has been configured as the `VALUEIN ("B", List, LEFT(List.Value, 0))` expression, it returns **FALSE**.</span></span> <span data-ttu-id="5e3e2-129">この場合、`VALUEIN` 関数は次の一連の条件に変換されます。 **TRUE** と等しくない `("B" = "")`。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-129">In this case, the `VALUEIN` function is translated to the following condition: `("B" = "")`, which doesn't equal **TRUE**.</span></span>
 
-<span data-ttu-id="e15eb-130">このような条件のテキストの文字数の上限は 32,768 文字です。</span><span class="sxs-lookup"><span data-stu-id="e15eb-130">The upper limit for the number of characters in the text of such a condition is 32,768 characters.</span></span> <span data-ttu-id="e15eb-131">したがって、実行時に制限を超える可能性があるデータ ソースを作成しないでください。</span><span class="sxs-lookup"><span data-stu-id="e15eb-131">Therefore, you should not create data sources that might exceed this limit at runtime.</span></span> <span data-ttu-id="e15eb-132">制限を超過した場合は、アプリケーションは実行を停止し、例外がスローされます。</span><span class="sxs-lookup"><span data-stu-id="e15eb-132">If the limit is exceeded, the application stops running, and an exception is thrown.</span></span> <span data-ttu-id="e15eb-133">たとえば、この状況は、データ ソースが `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)` として構成され、**List1** および **List2** リストに大量のレコードが含まれているときに生じます。</span><span class="sxs-lookup"><span data-stu-id="e15eb-133">For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.</span></span>
+<span data-ttu-id="5e3e2-130">このような条件のテキストの文字数の上限は 32,768 文字です。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-130">The upper limit for the number of characters in the text of such a condition is 32,768 characters.</span></span> <span data-ttu-id="5e3e2-131">したがって、実行時に制限を超える可能性があるデータ ソースを作成しないでください。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-131">Therefore, you should not create data sources that might exceed this limit at runtime.</span></span> <span data-ttu-id="5e3e2-132">制限を超過した場合は、アプリケーションは実行を停止し、例外がスローされます。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-132">If the limit is exceeded, the application stops running, and an exception is thrown.</span></span> <span data-ttu-id="5e3e2-133">たとえば、この状況は、データ ソースが `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)` として構成され、**List1** および **List2** リストに大量のレコードが含まれているときに生じます。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-133">For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.</span></span>
 
-<span data-ttu-id="e15eb-134">場合によっては、`VALUEIN` 関数は `EXISTS JOIN` オペレーターを使用することでデータベース ステートメントに変換されます。</span><span class="sxs-lookup"><span data-stu-id="e15eb-134">In some cases, the `VALUEIN` function is translated to a database statement by using the `EXISTS JOIN` operator.</span></span> <span data-ttu-id="e15eb-135">この動作は、[`FILTER`](er-functions-list-filter.md) 関数が使用され、次の条件が満たされているときに発生します:</span><span class="sxs-lookup"><span data-stu-id="e15eb-135">This behavior occurs when the [`FILTER`](er-functions-list-filter.md) function is used and the following conditions are met:</span></span>
+<span data-ttu-id="5e3e2-134">場合によっては、`VALUEIN` 関数は `EXISTS JOIN` オペレーターを使用することでデータベース ステートメントに変換されます。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-134">In some cases, the `VALUEIN` function is translated to a database statement by using the `EXISTS JOIN` operator.</span></span> <span data-ttu-id="5e3e2-135">この動作は、[`FILTER`](er-functions-list-filter.md) 関数が使用され、次の条件が満たされているときに発生します:</span><span class="sxs-lookup"><span data-stu-id="5e3e2-135">This behavior occurs when the [`FILTER`](er-functions-list-filter.md) function is used and the following conditions are met:</span></span>
 
-- <span data-ttu-id="e15eb-136">**ASK FOR QUERY** オプションは、レコードのリストを参照する `VALUEIN` 関数のデータ ソースに対してオフになっています。</span><span class="sxs-lookup"><span data-stu-id="e15eb-136">The **ASK FOR QUERY** option is turned off for the data source of the `VALUEIN` function that refers to the list of records.</span></span> <span data-ttu-id="e15eb-137">このデータ ソースには実行時に適用される追加の条件はありません。</span><span class="sxs-lookup"><span data-stu-id="e15eb-137">No additional conditions will be applied to this data source at runtime.</span></span>
-- <span data-ttu-id="e15eb-138">入れ子になった式は、レコードのリストを参照する `VALUEIN` 関数のデータ ソース用に構成されません。</span><span class="sxs-lookup"><span data-stu-id="e15eb-138">No nested expressions are configured for the data source of the `VALUEIN` function that refers to the list of records.</span></span>
-- <span data-ttu-id="e15eb-139">`VALUEIN` 関数のリスト項目は、指定されたデータ ソースの式またメソッドではなく、指定されたデータ ソースのフィールドを参照します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-139">A list item of the `VALUEIN` function refers to a field of the specified data source, not to an expression or method of that data source.</span></span>
+- <span data-ttu-id="5e3e2-136">**ASK FOR QUERY** オプションは、レコードのリストを参照する `VALUEIN` 関数のデータ ソースに対してオフになっています。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-136">The **ASK FOR QUERY** option is turned off for the data source of the `VALUEIN` function that refers to the list of records.</span></span> <span data-ttu-id="5e3e2-137">このデータ ソースには実行時に適用される追加の条件はありません。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-137">No additional conditions will be applied to this data source at runtime.</span></span>
+- <span data-ttu-id="5e3e2-138">入れ子になった式は、レコードのリストを参照する `VALUEIN` 関数のデータ ソース用に構成されません。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-138">No nested expressions are configured for the data source of the `VALUEIN` function that refers to the list of records.</span></span>
+- <span data-ttu-id="5e3e2-139">`VALUEIN` 関数のリスト項目は、指定されたデータ ソースの式またメソッドではなく、指定されたデータ ソースのフィールドを参照します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-139">A list item of the `VALUEIN` function refers to a field of the specified data source, not to an expression or method of that data source.</span></span>
 
-<span data-ttu-id="e15eb-140">この例の前半で説明した [`WHERE`](er-functions-list-where.md) 関数の代わりにこのオプションを使用することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="e15eb-140">Consider using this option instead of the [`WHERE`](er-functions-list-where.md) function that is described earlier in this example.</span></span>
+<span data-ttu-id="5e3e2-140">この例の前半で説明した [`WHERE`](er-functions-list-where.md) 関数の代わりにこのオプションを使用することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-140">Consider using this option instead of the [`WHERE`](er-functions-list-where.md) function that is described earlier in this example.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="e15eb-141">例 2</span><span class="sxs-lookup"><span data-stu-id="e15eb-141">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="5e3e2-141">例 2</span><span class="sxs-lookup"><span data-stu-id="5e3e2-141">Example 2</span></span>
 
-<span data-ttu-id="e15eb-142">モデル マッピングでは、次のデータ ソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-142">You define the following data sources in your model mapping:</span></span>
+<span data-ttu-id="5e3e2-142">モデル マッピングでは、次のデータ ソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-142">You define the following data sources in your model mapping:</span></span>
 
-- <span data-ttu-id="e15eb-143">*テーブル レコード* タイプの **In** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="e15eb-143">The **In** data source of the *Table records* type.</span></span> <span data-ttu-id="e15eb-144">このデータ ソースは、イントラスタット テーブルを参照します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-144">This data source refers to the Intrastat table.</span></span>
-- <span data-ttu-id="e15eb-145">*テーブル レコード* タイプの **ポート** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="e15eb-145">The **Port** data source of the *Table records* type.</span></span> <span data-ttu-id="e15eb-146">このデータ ソースは、IntrastatPort テーブルを参照します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-146">This data source refers to the IntrastatPort table.</span></span>
+- <span data-ttu-id="5e3e2-143">*テーブル レコード* タイプの **In** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-143">The **In** data source of the *Table records* type.</span></span> <span data-ttu-id="5e3e2-144">このデータ ソースは、イントラスタット テーブルを参照します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-144">This data source refers to the Intrastat table.</span></span>
+- <span data-ttu-id="5e3e2-145">*テーブル レコード* タイプの **ポート** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-145">The **Port** data source of the *Table records* type.</span></span> <span data-ttu-id="5e3e2-146">このデータ ソースは、IntrastatPort テーブルを参照します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-146">This data source refers to the IntrastatPort table.</span></span>
 
-<span data-ttu-id="e15eb-147">`FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` 式として構成されたデータ ソースが呼び出されると、次の SQL ステートメントが生成され、イントラスタット テーブルのフィルターされたレコードを返します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-147">When a data source is called that has been configured as the `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` expression, the following SQL statement is generated to return filtered records of the Intrastat table.</span></span>
+<span data-ttu-id="5e3e2-147">`FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` 式として構成されたデータ ソースが呼び出されると、次の SQL ステートメントが生成され、イントラスタット テーブルのフィルターされたレコードを返します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-147">When a data source is called that has been configured as the `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` expression, the following SQL statement is generated to return filtered records of the Intrastat table.</span></span>
 
 ```vb
 select … from Intrastat
@@ -98,26 +97,26 @@ exists join TableId from IntrastatPort
 where IntrastatPort.PortId = Intrastat.Port
 ```
 
-<span data-ttu-id="e15eb-148">**dataAreaId** フィールドの場合、`IN` 演算子を使用して最終的な SQL ステートメントが生成されます。</span><span class="sxs-lookup"><span data-stu-id="e15eb-148">For **dataAreaId** fields, the final SQL statement is generated by the using `IN` operator.</span></span>
+<span data-ttu-id="5e3e2-148">**dataAreaId** フィールドの場合、`IN` 演算子を使用して最終的な SQL ステートメントが生成されます。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-148">For **dataAreaId** fields, the final SQL statement is generated by the using `IN` operator.</span></span>
 
-## <a name="example-3"></a><span data-ttu-id="e15eb-149">例 3</span><span class="sxs-lookup"><span data-stu-id="e15eb-149">Example 3</span></span>
+## <a name="example-3"></a><span data-ttu-id="5e3e2-149">例 3</span><span class="sxs-lookup"><span data-stu-id="5e3e2-149">Example 3</span></span>
 
-<span data-ttu-id="e15eb-150">モデル マッピングでは、次のデータ ソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="e15eb-150">You define the following data sources in your model mapping:</span></span>
+<span data-ttu-id="5e3e2-150">モデル マッピングでは、次のデータ ソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-150">You define the following data sources in your model mapping:</span></span>
 
-- <span data-ttu-id="e15eb-151">*計算済フィールド* タイプの **Le** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="e15eb-151">The **Le** data source of the *Calculated field* type.</span></span> <span data-ttu-id="e15eb-152">このデータ ソースには、式 `SPLIT ("DEMF,GBSI,USMF", ",")` が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e15eb-152">This data source contains the expression `SPLIT ("DEMF,GBSI,USMF", ",")`.</span></span>
-- <span data-ttu-id="e15eb-153">*テーブル レコード* タイプの **In** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="e15eb-153">The **In** data source of the *Table records* type.</span></span> <span data-ttu-id="e15eb-154">このデータ ソースはイントラスタット テーブルを参照し、**会社間** オプションが有効になっています。</span><span class="sxs-lookup"><span data-stu-id="e15eb-154">This data source refers to the Intrastat table, and the **Cross-company** option is turned on for it.</span></span>
+- <span data-ttu-id="5e3e2-151">*計算済フィールド* タイプの **Le** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-151">The **Le** data source of the *Calculated field* type.</span></span> <span data-ttu-id="5e3e2-152">このデータ ソースには、式 `SPLIT ("DEMF,GBSI,USMF", ",")` が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-152">This data source contains the expression `SPLIT ("DEMF,GBSI,USMF", ",")`.</span></span>
+- <span data-ttu-id="5e3e2-153">*テーブル レコード* タイプの **In** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-153">The **In** data source of the *Table records* type.</span></span> <span data-ttu-id="5e3e2-154">このデータ ソースはイントラスタット テーブルを参照し、**会社間** オプションが有効になっています。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-154">This data source refers to the Intrastat table, and the **Cross-company** option is turned on for it.</span></span>
 
-<span data-ttu-id="e15eb-155">`FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` 式として構成されたデータ ソースが呼び出されると、最終的な SQL ステートメントには次の条件が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e15eb-155">When a data source is called that has been configured as the `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` expression, the final SQL statement contains the following condition.</span></span>
+<span data-ttu-id="5e3e2-155">`FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` 式として構成されたデータ ソースが呼び出されると、最終的な SQL ステートメントには次の条件が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5e3e2-155">When a data source is called that has been configured as the `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` expression, the final SQL statement contains the following condition.</span></span>
 
 ```vb
 Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ```
 
-## <a name="additional-resources"></a><span data-ttu-id="e15eb-156">追加リソース</span><span class="sxs-lookup"><span data-stu-id="e15eb-156">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="5e3e2-156">追加リソース</span><span class="sxs-lookup"><span data-stu-id="5e3e2-156">Additional resources</span></span>
 
-[<span data-ttu-id="e15eb-157">論理関数</span><span class="sxs-lookup"><span data-stu-id="e15eb-157">Logical functions</span></span>](er-functions-category-logical.md)
+[<span data-ttu-id="5e3e2-157">論理関数</span><span class="sxs-lookup"><span data-stu-id="5e3e2-157">Logical functions</span></span>](er-functions-category-logical.md)
 
-[<span data-ttu-id="e15eb-158">VALUEINLARGE 関数</span><span class="sxs-lookup"><span data-stu-id="e15eb-158">VALUEINLARGE functions</span></span>](er-functions-logical-valueinlarge.md)
+[<span data-ttu-id="5e3e2-158">VALUEINLARGE 関数</span><span class="sxs-lookup"><span data-stu-id="5e3e2-158">VALUEINLARGE functions</span></span>](er-functions-logical-valueinlarge.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
