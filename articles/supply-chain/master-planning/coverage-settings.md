@@ -2,11 +2,9 @@
 title: 補充設定
 description: このトピックでは、在庫品目要求の計算にマスター スケジューリングが使用する補充設定について説明します。
 author: roxanadiaconu
-manager: tfehr
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ab86db68ddfebe0ffdce26e062defc16c848a1d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 987d487622740eb5e8bcdda9056c43627006555a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240416"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816559"
 ---
 # <a name="coverage-settings"></a>補充設定
 

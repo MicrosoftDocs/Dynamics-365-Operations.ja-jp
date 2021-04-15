@@ -2,11 +2,9 @@
 title: 財務諸表の表示
 description: このトピックでは、Microsoft Dynamics 365 Finance での財務報告書を表示および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。
 author: kweekley
-manager: AnnBe
 ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d407eb33060c61a5899ba5cc021c8c1c6c77c9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6e744ade8b02b288821dd9142c85092d384db4b2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240619"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816958"
 ---
 # <a name="view-financial-reports"></a>財務諸表の表示
 

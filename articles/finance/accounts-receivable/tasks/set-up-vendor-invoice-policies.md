@@ -2,11 +2,9 @@
 title: 仕入先請求ポリシーの設定
 description: このトピックでは、仕入先請求ポリシーを設定する方法について説明します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 678ef8f0b7df00aec615af26cbcadec984331060
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c088f6e3fea7c218cfd2108d0f279bccf1292772
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220062"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816199"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>仕入先請求ポリシーの設定
 
