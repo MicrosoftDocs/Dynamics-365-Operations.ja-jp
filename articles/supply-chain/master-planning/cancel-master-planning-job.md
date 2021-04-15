@@ -2,11 +2,9 @@
 title: マスター プラン ジョブのキャンセル
 description: このトピックでは、組み込み計画機能を使用する有効な計画ジョブを取り消す方法について説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
 audience: Application User
@@ -18,40 +16,40 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3d5dad766f4c01e993dd77dd762595b29208c6cb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 513aee3b9475506e28db4bffe90df58567b6b281
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264749"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816607"
 ---
-# <a name="cancel-a-master-planning-job"></a><span data-ttu-id="1b01f-103">マスター プラン ジョブのキャンセル</span><span class="sxs-lookup"><span data-stu-id="1b01f-103">Cancel a master planning job</span></span>
+# <a name="cancel-a-master-planning-job"></a><span data-ttu-id="ba6e4-103">マスター プラン ジョブのキャンセル</span><span class="sxs-lookup"><span data-stu-id="ba6e4-103">Cancel a master planning job</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1b01f-104">Microsoft Dynamics 365 Supply Chain Management には、マスター プラン ジョブをキャンセルする複数のオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="1b01f-104">In Microsoft Dynamics 365 Supply Chain Management, there are multiple options for canceling a master planning job.</span></span> <span data-ttu-id="1b01f-105">たとえば、マスター プラン ジョブが誤って開始された、または予想よりも長い時間実行していて終了したい場合、キャンセルすることができます。</span><span class="sxs-lookup"><span data-stu-id="1b01f-105">For example, you may want to cancel a master planning job if it was started by mistake or is running longer than expected and you want to end it.</span></span> <span data-ttu-id="1b01f-106">計画ジョブをキャンセルする最善の方法は、**未完了の計画プロセス** ページからのキャンセルです。</span><span class="sxs-lookup"><span data-stu-id="1b01f-106">The best way to cancel a planning job is from  the **Unfinished planning processes** page.</span></span> <span data-ttu-id="1b01f-107">**バッチ ジョブ** および **バッチ ジョブ拡張** ページからの代替オプションは、**未完了の計画プロセス** ページからマスタープラン ジョブをキャンセルしても数分以内に完了しなかった場合にのみ使用してください。</span><span class="sxs-lookup"><span data-stu-id="1b01f-107">Alternative options from the **Batch jobs** and **Batch jobs enhanced** pages should only be used if canceling the master planning job from the **Unfinished planning processes** page did not complete within a few minutes.</span></span>
+<span data-ttu-id="ba6e4-104">Microsoft Dynamics 365 Supply Chain Management には、マスター プラン ジョブをキャンセルする複数のオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-104">In Microsoft Dynamics 365 Supply Chain Management, there are multiple options for canceling a master planning job.</span></span> <span data-ttu-id="ba6e4-105">たとえば、マスター プラン ジョブが誤って開始された、または予想よりも長い時間実行していて終了したい場合、キャンセルすることができます。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-105">For example, you may want to cancel a master planning job if it was started by mistake or is running longer than expected and you want to end it.</span></span> <span data-ttu-id="ba6e4-106">計画ジョブをキャンセルする最善の方法は、**未完了の計画プロセス** ページからのキャンセルです。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-106">The best way to cancel a planning job is from  the **Unfinished planning processes** page.</span></span> <span data-ttu-id="ba6e4-107">**バッチ ジョブ** および **バッチ ジョブ拡張** ページからの代替オプションは、**未完了の計画プロセス** ページからマスタープラン ジョブをキャンセルしても数分以内に完了しなかった場合にのみ使用してください。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-107">Alternative options from the **Batch jobs** and **Batch jobs enhanced** pages should only be used if canceling the master planning job from the **Unfinished planning processes** page did not complete within a few minutes.</span></span>
 
-## <a name="preferred-cancel-option"></a><span data-ttu-id="1b01f-108">優先するキャンセル オプション</span><span class="sxs-lookup"><span data-stu-id="1b01f-108">Preferred cancel option</span></span>
-### <a name="cancel-master-planning-job-from-unfinished-planning-processes-page"></a><span data-ttu-id="1b01f-109">**未完了の計画プロセス** ページからマスター プラン ジョブをキャンセルする</span><span class="sxs-lookup"><span data-stu-id="1b01f-109">Cancel master planning job from **Unfinished planning processes** page</span></span>
-1. <span data-ttu-id="1b01f-110">**マスター プラン > 照会およびレポート > マスター プラン > 未完了の計画プロセス** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1b01f-110">Go to **Master planning > Inquiries and reports > Master planning > Unfinished planning processes**.</span></span>
-2. <span data-ttu-id="1b01f-111">キャンセルする計画プロセスを含む行を選択します。</span><span class="sxs-lookup"><span data-stu-id="1b01f-111">Select the line with the planning process that you want to cancel.</span></span>
-3. <span data-ttu-id="1b01f-112">**キャンセル** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1b01f-112">Click **Cancel**.</span></span>
+## <a name="preferred-cancel-option"></a><span data-ttu-id="ba6e4-108">優先するキャンセル オプション</span><span class="sxs-lookup"><span data-stu-id="ba6e4-108">Preferred cancel option</span></span>
+### <a name="cancel-master-planning-job-from-unfinished-planning-processes-page"></a><span data-ttu-id="ba6e4-109">**未完了の計画プロセス** ページからマスター プラン ジョブをキャンセルする</span><span class="sxs-lookup"><span data-stu-id="ba6e4-109">Cancel master planning job from **Unfinished planning processes** page</span></span>
+1. <span data-ttu-id="ba6e4-110">**マスター プラン > 照会およびレポート > マスター プラン > 未完了の計画プロセス** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-110">Go to **Master planning > Inquiries and reports > Master planning > Unfinished planning processes**.</span></span>
+2. <span data-ttu-id="ba6e4-111">キャンセルする計画プロセスを含む行を選択します。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-111">Select the line with the planning process that you want to cancel.</span></span>
+3. <span data-ttu-id="ba6e4-112">**キャンセル** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-112">Click **Cancel**.</span></span>
 
-## <a name="additional-cancel-options"></a><span data-ttu-id="1b01f-113">追加のキャンセル オプション</span><span class="sxs-lookup"><span data-stu-id="1b01f-113">Additional cancel options</span></span>
-<span data-ttu-id="1b01f-114">これらは、**未完了の計画プロセス** ページからのマスター プラン ジョブをキャンセルしても数分以内に完了しなかった場合にのみ使用してください。</span><span class="sxs-lookup"><span data-stu-id="1b01f-114">These should only be used if canceling the master planning job from the **Unfinished planning processes** page did not complete within a few minutes.</span></span>
+## <a name="additional-cancel-options"></a><span data-ttu-id="ba6e4-113">追加のキャンセル オプション</span><span class="sxs-lookup"><span data-stu-id="ba6e4-113">Additional cancel options</span></span>
+<span data-ttu-id="ba6e4-114">これらは、**未完了の計画プロセス** ページからのマスター プラン ジョブをキャンセルしても数分以内に完了しなかった場合にのみ使用してください。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-114">These should only be used if canceling the master planning job from the **Unfinished planning processes** page did not complete within a few minutes.</span></span>
 
-### <a name="delete-master-planning-job-from-the-batch-jobs-page"></a><span data-ttu-id="1b01f-115">**バッチ ジョブ** ページからマスター プラン ジョブを削除する</span><span class="sxs-lookup"><span data-stu-id="1b01f-115">Delete master planning job from the **Batch jobs** page</span></span>
-1. <span data-ttu-id="1b01f-116">**システム管理 > 照会 > バッチ ジョブ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1b01f-116">Go to **System administration > Inquiries > Batch jobs**.</span></span>
-2. <span data-ttu-id="1b01f-117">削除する計画ジョブを含む行を選択します。</span><span class="sxs-lookup"><span data-stu-id="1b01f-117">Select the line with the planning job that you want to delete.</span></span>
-3. <span data-ttu-id="1b01f-118">**削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1b01f-118">Click **Delete**.</span></span>
+### <a name="delete-master-planning-job-from-the-batch-jobs-page"></a><span data-ttu-id="ba6e4-115">**バッチ ジョブ** ページからマスター プラン ジョブを削除する</span><span class="sxs-lookup"><span data-stu-id="ba6e4-115">Delete master planning job from the **Batch jobs** page</span></span>
+1. <span data-ttu-id="ba6e4-116">**システム管理 > 照会 > バッチ ジョブ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-116">Go to **System administration > Inquiries > Batch jobs**.</span></span>
+2. <span data-ttu-id="ba6e4-117">削除する計画ジョブを含む行を選択します。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-117">Select the line with the planning job that you want to delete.</span></span>
+3. <span data-ttu-id="ba6e4-118">**削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-118">Click **Delete**.</span></span>
 
-### <a name="abort-master-planning-job-task-from-the-batch-jobs-enhanced-page"></a><span data-ttu-id="1b01f-119">**バッチ ジョブ拡張** ページからのマスター プラン ジョブ タスクを中止する</span><span class="sxs-lookup"><span data-stu-id="1b01f-119">Abort master planning job task from the **Batch jobs enhanced** page</span></span>
-1. <span data-ttu-id="1b01f-120">**システム管理 > 照会 > バッチ ジョブ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1b01f-120">Go to **System administration > Inquiries > Batch jobs**.</span></span>
-2. <span data-ttu-id="1b01f-121">一覧にジョブ ID が表示されない場合、**拡張フォームに切り替える** をクリックします。それ以外の場合は次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="1b01f-121">If the job ID is not shown in the list, click **Switch to enhanced form**, otherwise proceed with the next step.</span></span>
-3. <span data-ttu-id="1b01f-122">バッチ ジョブを開きます。</span><span class="sxs-lookup"><span data-stu-id="1b01f-122">Open the batch job.</span></span> <span data-ttu-id="1b01f-123">終了するタスクを含むバッチ ジョブの **ジョブ ID** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1b01f-123">Click the **Job ID** for the batch job with tasks that you want to end.</span></span>
-4. <span data-ttu-id="1b01f-124">**バッチ タスク** で、終了するタスクを選択します。</span><span class="sxs-lookup"><span data-stu-id="1b01f-124">In **Batch tasks**, select the tasks to end.</span></span>
-5. <span data-ttu-id="1b01f-125">**ステータスの変更** をクリックし、**キャンセル**、続いて **OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1b01f-125">Click **Change status**, choose **Canceling** and click **OK**.</span></span>
-6. <span data-ttu-id="1b01f-126">**バッチ タスク** クイック タブで **中止** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1b01f-126">On the **Batch tasks** FastTab, click **Abort**.</span></span>
+### <a name="abort-master-planning-job-task-from-the-batch-jobs-enhanced-page"></a><span data-ttu-id="ba6e4-119">**バッチ ジョブ拡張** ページからのマスター プラン ジョブ タスクを中止する</span><span class="sxs-lookup"><span data-stu-id="ba6e4-119">Abort master planning job task from the **Batch jobs enhanced** page</span></span>
+1. <span data-ttu-id="ba6e4-120">**システム管理 > 照会 > バッチ ジョブ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-120">Go to **System administration > Inquiries > Batch jobs**.</span></span>
+2. <span data-ttu-id="ba6e4-121">一覧にジョブ ID が表示されない場合、**拡張フォームに切り替える** をクリックします。それ以外の場合は次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-121">If the job ID is not shown in the list, click **Switch to enhanced form**, otherwise proceed with the next step.</span></span>
+3. <span data-ttu-id="ba6e4-122">バッチ ジョブを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-122">Open the batch job.</span></span> <span data-ttu-id="ba6e4-123">終了するタスクを含むバッチ ジョブの **ジョブ ID** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-123">Click the **Job ID** for the batch job with tasks that you want to end.</span></span>
+4. <span data-ttu-id="ba6e4-124">**バッチ タスク** で、終了するタスクを選択します。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-124">In **Batch tasks**, select the tasks to end.</span></span>
+5. <span data-ttu-id="ba6e4-125">**ステータスの変更** をクリックし、**キャンセル**、続いて **OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-125">Click **Change status**, choose **Canceling** and click **OK**.</span></span>
+6. <span data-ttu-id="ba6e4-126">**バッチ タスク** クイック タブで **中止** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba6e4-126">On the **Batch tasks** FastTab, click **Abort**.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

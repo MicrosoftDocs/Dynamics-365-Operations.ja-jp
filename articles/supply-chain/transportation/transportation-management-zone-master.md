@@ -2,11 +2,9 @@
 title: 輸送管理ゾーン マスター
 description: このトピックでは、輸送管理を使用して地理的な場所をゾーンに分割する方法について説明します。
 author: Henrikan
-manager: ''
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSZoneMaster
 audience: Application User
@@ -17,24 +15,24 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 28c0724a20199595b0e2c19867ccaa4876d37980
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: aec1c17d32d1469f3a452084138404de3d498b71
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233322"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807587"
 ---
-# <a name="transportation-management-zone-master"></a><span data-ttu-id="d1d19-103">輸送管理ゾーン マスター</span><span class="sxs-lookup"><span data-stu-id="d1d19-103">Transportation management zone master</span></span>
+# <a name="transportation-management-zone-master"></a><span data-ttu-id="4bf70-103">輸送管理ゾーン マスター</span><span class="sxs-lookup"><span data-stu-id="4bf70-103">Transportation management zone master</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d1d19-104">輸送管理を使用すると、地理的な場所をゾーンに分割できます。</span><span class="sxs-lookup"><span data-stu-id="d1d19-104">Transport management lets you divide geographic locations into zones.</span></span> <span data-ttu-id="d1d19-105">場所をゾーンに分割すると、次のことができます。</span><span class="sxs-lookup"><span data-stu-id="d1d19-105">Dividing locations into zones can help to:</span></span>
+<span data-ttu-id="4bf70-104">輸送管理を使用すると、地理的な場所をゾーンに分割できます。</span><span class="sxs-lookup"><span data-stu-id="4bf70-104">Transport management lets you divide geographic locations into zones.</span></span> <span data-ttu-id="4bf70-105">場所をゾーンに分割すると、次のことができます。</span><span class="sxs-lookup"><span data-stu-id="4bf70-105">Dividing locations into zones can help to:</span></span>
 
-- <span data-ttu-id="d1d19-106">**輸送価格の合理化**: 特に輸送場所が散在している場合など、個々の場所に基づく価格設定よりも、ゾーンごとの価格設定の方が容易になります。</span><span class="sxs-lookup"><span data-stu-id="d1d19-106">**Simplify transportation pricing** – Zone-wise pricing can be simpler than individual location-based pricing, especially when transportation locations are scattered.</span></span>
-- <span data-ttu-id="d1d19-107">**積荷計画を最適化する**: ゾーンごとに積荷を統合します。</span><span class="sxs-lookup"><span data-stu-id="d1d19-107">**Optimize load planning** – By consolidating loads by zones.</span></span>
-- <span data-ttu-id="d1d19-108">**工順計画を最適化する**: 特定の工順計画を特定のゾーンに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="d1d19-108">**Optimize route planning** – By assigning specific route plans to specific zones.</span></span>
+- <span data-ttu-id="4bf70-106">**輸送価格の合理化**: 特に輸送場所が散在している場合など、個々の場所に基づく価格設定よりも、ゾーンごとの価格設定の方が容易になります。</span><span class="sxs-lookup"><span data-stu-id="4bf70-106">**Simplify transportation pricing** – Zone-wise pricing can be simpler than individual location-based pricing, especially when transportation locations are scattered.</span></span>
+- <span data-ttu-id="4bf70-107">**積荷計画を最適化する**: ゾーンごとに積荷を統合します。</span><span class="sxs-lookup"><span data-stu-id="4bf70-107">**Optimize load planning** – By consolidating loads by zones.</span></span>
+- <span data-ttu-id="4bf70-108">**工順計画を最適化する**: 特定の工順計画を特定のゾーンに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="4bf70-108">**Optimize route planning** – By assigning specific route plans to specific zones.</span></span>
 
-<span data-ttu-id="d1d19-109">ゾーンは、各ゾーンを修飾するメタデータ フィールドの値 (国、郵便番号の範囲、または配送業者のサービス) に基づいて定義します。</span><span class="sxs-lookup"><span data-stu-id="d1d19-109">You define zones based on the metadata field values (such as country, zip code range, or carrier service) that qualify each zone.</span></span> <span data-ttu-id="d1d19-110">輸送価格設定でゾーンの概念を採用していない場合は、ゾーン定義は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="d1d19-110">Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.</span></span>
+<span data-ttu-id="4bf70-109">ゾーンは、各ゾーンを修飾するメタデータ フィールドの値 (国、郵便番号の範囲、または配送業者のサービス) に基づいて定義します。</span><span class="sxs-lookup"><span data-stu-id="4bf70-109">You define zones based on the metadata field values (such as country, zip code range, or carrier service) that qualify each zone.</span></span> <span data-ttu-id="4bf70-110">輸送価格設定でゾーンの概念を採用していない場合は、ゾーン定義は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="4bf70-110">Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

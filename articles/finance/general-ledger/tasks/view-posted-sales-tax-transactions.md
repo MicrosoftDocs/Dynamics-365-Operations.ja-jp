@@ -2,11 +2,9 @@
 title: 転記された売上税トランザクションの表示
 description: このトピックでは、転記された売上税トランザクションを表示するいくつかの方法について説明します。
 author: twheeloc
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTrans, TaxPeriod, TaxTable
 audience: Application User
@@ -15,38 +13,38 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21ea65532186821dab4907c58bbfef7cc2c3e840
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 350f7ff79bf1612a2857c6b0600b7214a9e05c78
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246889"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817008"
 ---
-# <a name="view-posted-sales-tax-transactions"></a><span data-ttu-id="1634a-103">転記された売上税トランザクションの表示</span><span class="sxs-lookup"><span data-stu-id="1634a-103">View posted sales tax transactions</span></span>
+# <a name="view-posted-sales-tax-transactions"></a><span data-ttu-id="a3974-103">転記された売上税トランザクションの表示</span><span class="sxs-lookup"><span data-stu-id="a3974-103">View posted sales tax transactions</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="1634a-104">このトピックでは、転記された売上税トランザクションを表示するいくつかの方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="1634a-104">This topic describes some ways to view posted sales tax transactions.</span></span> <span data-ttu-id="1634a-105">必要な内容に応じて、さまざまなページから転記済売上税トランザクションを表示できます。</span><span class="sxs-lookup"><span data-stu-id="1634a-105">You can view posted sales tax transactions from various pages depending on what you need to view.</span></span> <span data-ttu-id="1634a-106">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="1634a-106">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="a3974-104">このトピックでは、転記された売上税トランザクションを表示するいくつかの方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a3974-104">This topic describes some ways to view posted sales tax transactions.</span></span> <span data-ttu-id="a3974-105">必要な内容に応じて、さまざまなページから転記済売上税トランザクションを表示できます。</span><span class="sxs-lookup"><span data-stu-id="a3974-105">You can view posted sales tax transactions from various pages depending on what you need to view.</span></span> <span data-ttu-id="a3974-106">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="a3974-106">This task uses the USMF demo company.</span></span>
 
-## <a name="posted-sales-tax-page"></a><span data-ttu-id="1634a-107">転記済売上税ページ</span><span class="sxs-lookup"><span data-stu-id="1634a-107">Posted sales tax page</span></span>
+## <a name="posted-sales-tax-page"></a><span data-ttu-id="a3974-107">転記済売上税ページ</span><span class="sxs-lookup"><span data-stu-id="a3974-107">Posted sales tax page</span></span>
 
-1. <span data-ttu-id="1634a-108">ナビゲーション ウィンドウで、**モジュール > 税 > 照会およびレポート > 売上税の照会 > 転記済売上税** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1634a-108">In the navigation pane, go to **Modules > Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax**.</span></span>
-2. <span data-ttu-id="1634a-109">ビューを特定のトランザクションに絞り込むには、**フィルターの表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1634a-109">Select **Show filters** to narrow the view to specific transactions.</span></span>
-3. <span data-ttu-id="1634a-110">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="1634a-110">Close the page.</span></span>
+1. <span data-ttu-id="a3974-108">ナビゲーション ウィンドウで、**モジュール > 税 > 照会およびレポート > 売上税の照会 > 転記済売上税** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a3974-108">In the navigation pane, go to **Modules > Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax**.</span></span>
+2. <span data-ttu-id="a3974-109">ビューを特定のトランザクションに絞り込むには、**フィルターの表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a3974-109">Select **Show filters** to narrow the view to specific transactions.</span></span>
+3. <span data-ttu-id="a3974-110">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a3974-110">Close the page.</span></span>
 
-## <a name="sales-tax-settlement-periods-page"></a><span data-ttu-id="1634a-111">売上税決済期間ページ</span><span class="sxs-lookup"><span data-stu-id="1634a-111">Sales tax settlement periods page</span></span>
+## <a name="sales-tax-settlement-periods-page"></a><span data-ttu-id="a3974-111">売上税決済期間ページ</span><span class="sxs-lookup"><span data-stu-id="a3974-111">Sales tax settlement periods page</span></span>
 
-1. <span data-ttu-id="1634a-112">ナビゲーション ウィンドウで、**モジュール > 税 > 間接税 > 売上税 > 売上税決済期間** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1634a-112">In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.</span></span>
-2. <span data-ttu-id="1634a-113">**間隔** セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="1634a-113">Expand the **Period intervals** section.</span></span>
-3. <span data-ttu-id="1634a-114">必要な間隔を選択します。</span><span class="sxs-lookup"><span data-stu-id="1634a-114">Select the interval you are interested in.</span></span>
-4. <span data-ttu-id="1634a-115">さらに、転記済売上税トランザクションの一覧をフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="1634a-115">You can further filter the list of posted sales tax transactions.</span></span>
-5. <span data-ttu-id="1634a-116">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="1634a-116">Close the page.</span></span>
+1. <span data-ttu-id="a3974-112">ナビゲーション ウィンドウで、**モジュール > 税 > 間接税 > 売上税 > 売上税決済期間** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a3974-112">In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.</span></span>
+2. <span data-ttu-id="a3974-113">**間隔** セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="a3974-113">Expand the **Period intervals** section.</span></span>
+3. <span data-ttu-id="a3974-114">必要な間隔を選択します。</span><span class="sxs-lookup"><span data-stu-id="a3974-114">Select the interval you are interested in.</span></span>
+4. <span data-ttu-id="a3974-115">さらに、転記済売上税トランザクションの一覧をフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="a3974-115">You can further filter the list of posted sales tax transactions.</span></span>
+5. <span data-ttu-id="a3974-116">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a3974-116">Close the page.</span></span>
 
-## <a name="sales-tax-codes-page"></a><span data-ttu-id="1634a-117">売上税コードのページ</span><span class="sxs-lookup"><span data-stu-id="1634a-117">Sales tax codes page</span></span>
+## <a name="sales-tax-codes-page"></a><span data-ttu-id="a3974-117">売上税コードのページ</span><span class="sxs-lookup"><span data-stu-id="a3974-117">Sales tax codes page</span></span>
 
-1. <span data-ttu-id="1634a-118">ナビゲーション ウィンドウで、**モジュール > 税 > 間接税 > 売上税 > 売上税コード** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1634a-118">In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax codes**.</span></span>
-2. <span data-ttu-id="1634a-119">アクション ウィンドウで、**売上税コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1634a-119">On the Action Pane, select **Sales tax code**.</span></span>
-3. <span data-ttu-id="1634a-120">**転記済売上税** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1634a-120">Select **Posted sales tax**.</span></span>
+1. <span data-ttu-id="a3974-118">ナビゲーション ウィンドウで、**モジュール > 税 > 間接税 > 売上税 > 売上税コード** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a3974-118">In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax codes**.</span></span>
+2. <span data-ttu-id="a3974-119">アクション ウィンドウで、**売上税コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a3974-119">On the Action Pane, select **Sales tax code**.</span></span>
+3. <span data-ttu-id="a3974-120">**転記済売上税** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a3974-120">Select **Posted sales tax**.</span></span>
 
 
 
