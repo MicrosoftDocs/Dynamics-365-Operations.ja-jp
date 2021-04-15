@@ -2,11 +2,9 @@
 title: 職位の報告関係の修正
 description: この手順は、従業員に対して報告関係を変更する方法を示します。
 author: andreabichsel
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPositionReportsToDialog, HcmPositionLookup, HcmPersonnelManagementWorkspace
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd884362393674a4f55ea0410548edbb72786fff
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: a4f54a162305a81b65f0657cd572df75a9dcbd38
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465393"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794448"
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>職位の報告関係の修正
 

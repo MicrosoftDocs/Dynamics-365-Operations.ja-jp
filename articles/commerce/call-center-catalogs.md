@@ -2,11 +2,9 @@
 title: コール センターのカタログ
 description: このトピックでは、Dynamics 365 Commerce でのカタログのコール センター固有の機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5a5f38cf0cd88c5a6ba04725c3bdf5b6a14cf15b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213965"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799654"
 ---
 # <a name="call-center-catalogs"></a>コール センターのカタログ
 

@@ -2,7 +2,6 @@
 title: ER モデルおよび形式のデータ バインディングにおける相対パスの使用
 description: 電子申告報告ツールは、ユーザーが電子フォーマット構造を定義できるようにし、データとアルゴリズムを使用してこれらの構造を入力する方法を説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 555e7c78dae85034bfcde417d8ac86bea5073d85
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 141d58c2183c386584b0b974f4997e7a81ef3109
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565763"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749989"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>ER モデルおよび形式のデータ バインディングにおける相対パスの使用
 

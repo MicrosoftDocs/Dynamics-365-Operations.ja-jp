@@ -2,8 +2,7 @@
 title: PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 description: このトピックでは、PDF テンプレートに入力する電子レポート (ER) 形式をデザインする方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 04/19/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: ac7f1c3fc0b03a42012ea14369eef554c6ea30f3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561785"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753291"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 
@@ -46,15 +45,15 @@ ms.locfileid: "5561785"
 
 また、[コンフィギュレーション プロバイダーを作成しアクティブとマーク](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順を完成する必要があります。
 
-最後に、[CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111) から次のファイルをダウンロードする必要があります。
+最後に、次のファイルをダウンロードします。
 
 | コンテンツの説明                       | ファイル名                                     |
 |-------------------------------------------|-----------------------------------------------|
-| レポートの最初のページをテンプレート | [IntrastatReportTemplate1.pdf](https://mbs.microsoft.com/Files/public/CS)                  |
-| レポートの他のページをテンプレート    | [IntrastatReportTemplate2.pdf](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatReportTemplate2.pdf)                  |
-| ER フォーマットのサンプル - PDF                          | [イントラスタット レポート (PDF). バージョン .1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatreportPDFversion11.xml)        |
-| ER フォーマットのサンプル - Excel                          | [イントラスタット (Excel からインポート). バージョン .1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatimportfromExcelversion11.xml) |
-| サンプル データセット                            | [イントラスタット サンプル データ .xlsx](https://mbs.microsoft.com/Files/public/CS/AX/Intrastatsampledata.xlsx)                    |
+| レポートの最初のページをテンプレート | [IntrastatReportTemplate1.pdf](https://download.microsoft.com/download/0/8/3/0832c82b-4448-4562-afbf-01e0efc8d999/IntrastatReportTemplate1.pdf)                  |
+| レポートの他のページをテンプレート    | [IntrastatReportTemplate2.pdf](https://download.microsoft.com/download/c/7/a/c7a8a806-2192-4034-9052-e8b84b527d5e/IntrastatReportTemplate2.pdf)                  |
+| ER フォーマットのサンプル - PDF                          | [イントラスタット レポート (PDF). バージョン .1.1.xml](https://download.microsoft.com/download/a/8/7/a87aea3e-3f60-404c-8899-c471d20e7ea9/IntrastatreportPDFversion1.1.xml)        |
+| ER フォーマットのサンプル - Excel                          | [イントラスタット (Excel からインポート). バージョン .1.1.xml](https://download.microsoft.com/download/a/2/c/a2c0c145-d989-4e55-9d47-9647c02e4ee4/IntrastatimportfromExcelversion1.1.xml) |
+| サンプル データセット                            | [イントラスタット サンプル データ .xlsx](https://download.microsoft.com/download/9/f/1/9f1c5b96-3800-475f-8cf6-1ddd42873758/Intrastatsampledata.xlsx)                    |
 
 ## <a name="design-the-format-configuration"></a>形式のコンフィギュレーションをデザイン
 

@@ -2,11 +2,9 @@
 title: 小売製品の設定
 description: この記事では、Dynamics 365 Commerce での製品の設定方法について説明します。
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 54551507b2f4ef2f60eecf9d9536a76f33ef4f16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5c8ae2f385e2e3a4d08412d9da4ab68d50496211
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264435"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795504"
 ---
 # <a name="set-up-retail-products"></a>小売製品の設定
 

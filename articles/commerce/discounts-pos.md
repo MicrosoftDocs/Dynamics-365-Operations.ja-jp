@@ -2,11 +2,9 @@
 title: POS での割引の表示
 description: このトピックでは、販売担当者がプロモーションについて学習するのに Microsoft Dynamics 365 Commerce がどのように役立つか、およびそれらをクロスセルとアップセルの活動に使用する方法について説明します。
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 3934390b86f821233c2620405e316cf732b3d7bf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230619"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792850"
 ---
 # <a name="show-discounts-in-pos"></a>POS に割引を表示
 

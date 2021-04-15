@@ -2,7 +2,6 @@
 title: 補償 Power BI コンテンツ
 description: このトピックでは、補償 Power BI コンテンツについて説明します。 レポートへのアクセス方法および使用されるデータ モデルに関する情報を提供します。
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d588f01abd239ae097064396801613c2e3bd7471
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 1a961e71f0fdb34416a2720a5d5012c895e8a68c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560168"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754459"
 ---
 # <a name="compensation-power-bi-content"></a>補償 Power BI コンテンツ
 

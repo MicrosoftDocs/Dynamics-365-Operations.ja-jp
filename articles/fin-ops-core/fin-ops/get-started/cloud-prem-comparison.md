@@ -2,7 +2,6 @@
 title: クラウドおよびオンプレミスの機能比較
 description: このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 52dfff77fa7d14e560ce20596a4d79edeadb5390
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566639"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744054"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドとオンプレミスの機能比較
 
@@ -43,9 +42,9 @@ ms.locfileid: "5566639"
 |---------------------|-----------------------------|-----------|-----------------|
 | コンプライアンスおよび証明書        |                                                                                           | はい       | はい             |
 |                                      | SOC 1 タイプ 1 証明書                                                                | はい       | いいえ              |
-| データの管理および統合      |                                                                                           | はい       | はい             
+| データの管理および統合      |                                                                                           | はい       | はい             |
 |                                      | 独自のデータ ウェアハウスへのデータのエクスポート                                                    | はい       | はい             |
-|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | はい       | はい              |
+|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | はい       | はい             |
 |                                      | データ統合                                                                         | はい       | はい             |
 | ドキュメント管理                  |                                                                                           | はい       | はい             |
 | 財務管理                 |                                                                                           | 有       | 有             |
@@ -62,8 +61,8 @@ ms.locfileid: "5566639"
 |                                      | 分析ワークスペース                                                                     | あり       | なし              |
 |                                      | インテリジェントなビジネス プロセス: Recommendations                                             | 有       | 無              |
 |                                      | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData の Power BI レポートの作成    | 有       | 無              |
-|                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | はい       | いいえ              |
-|                                      | テレメトリがクラウドへ転送されます                                                   | はい       | いいえ              |
+|                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | あり       | あり             |
+|                                      | テレメトリがクラウドへ転送されます                                                   | あり       | なし              |
 | Lifecycle サービス                   |                                                                                           | はい       | はい             |
 |                                      | コンフィギュレーション可能な業務プロセス                                                           | はい       | いいえ              |
 | ローカライズ                        |                                                                                           | はい       | はい             |
@@ -85,7 +84,7 @@ ms.locfileid: "5566639"
 
 | **エリア**                | **機能**             | **クラウド** | **オンプレミス** |
 |-------------------------|-------------------|-----------|-----------------|
-| 資産管理                     |                                                                                           | あり       | なし |
+| 資産管理                     |                                                                                           | あり       | なし              |
 | コンプライアンスおよび証明書        |                                                                                           | あり       | あり             |
 |                                      | SOC 1 タイプ 1 証明書                                                                | 有       | 無              |
 | 原価計算                      |                                                                                           | 有       | 有             |
@@ -96,7 +95,7 @@ ms.locfileid: "5566639"
 | データの管理および統合      |                                                                                           | 有       | 有             |
 |                                      | コンフィギュレーション駆動型の拡張機能                                                            | 有       | 無              |
 |                                      | 独自のデータ ウェアハウスへのデータのエクスポート                                                    | 有       | 有             |
-|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | 有       | 有              |
+|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | 有       | 有             |
 |                                      | データ統合                                                                         | 有       | 有             |
 | ドキュメント管理                  |                                                                                           | 有       | 有             |
 | ヘルプ                                 |                                                                                           | はい       | いいえ              |
@@ -111,8 +110,8 @@ ms.locfileid: "5566639"
 |                                      | 分析ワークスペース                                                                     | あり       | なし              |
 |                                      | インテリジェントなビジネス プロセス: Recommendations                                             | 有       | 無              |
 |                                      | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData の Power BI レポートの作成    | 有       | 無              |
-|                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | 有       | 無              |
-|                                      | テレメトリがクラウドへ転送されます                                                   | 有       | 無              |
+|                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | あり       | あり             |
+|                                      | テレメトリがクラウドへ転送されます                                                   | あり       | なし              |
 | 在庫管理                 |                                                                                           | 有       | 有             |
 | Lifecycle サービス                   |                                                                                           | 有       | 有             |
 |                                      | コンフィギュレーション可能な業務プロセス                                                           | 有       | 無              |

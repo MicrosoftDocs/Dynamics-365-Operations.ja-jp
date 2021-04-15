@@ -2,7 +2,6 @@
 title: CURCREDREF ER 関数
 description: このトピックでは、CURCREDREF 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5f126d71abdc9e3e488b4e8476850dc7763fe5a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 65f04e23000e4d2429574db71b18b6907403855e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567619"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744346"
 ---
 # <a name="curcredref-er-function"></a>CURCREDREF ER 関数
 

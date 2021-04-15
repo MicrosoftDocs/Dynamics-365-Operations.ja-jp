@@ -2,11 +2,9 @@
 title: 店舗または従業員へのタスク リストの割り当て
 description: このトピックでは、Microsoft Dynamics 365 Commerce の店舗または従業員にタスク リストを割り当てる方法について説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3d249809f15b50c59620d69a901a427dc3ecb2f0
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 0c4f028367c894c54392963ffc4f6a0f0c04c03a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477587"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795264"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>タスク リストを店舗または従業員に割り当てる
 

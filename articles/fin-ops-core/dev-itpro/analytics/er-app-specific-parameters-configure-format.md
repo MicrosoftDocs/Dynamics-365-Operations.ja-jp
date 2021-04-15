@@ -2,8 +2,7 @@
 title: 法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する
 description: このトピックでは、法人ごと指定されたパラメーターを使用して電子申告 (ER) 形式を構成する方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 9253191f9cd10e0b3c87d61991598f9b791c35d9
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 16eab3ffa7d4a780ec9709f5c8a5c263b1e75365
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570737"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751181"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する
 
@@ -48,14 +47,14 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 
 ## <a name="import-er-configurations-into-rcs"></a>ER 構成を RCS にインポートする
 
-[Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=851448) から、**CALCULATED FIELD タイプの ER データ ソースのパラメーター化された呼び出しをサポート** ZIP ファイルをダウンロードします。 この ZIP ファイルには、ローカルに抽出および保存する必要がある次の ER 構成が含まれています。
+次の ER コンフィギュレーションをダウンロードし、ローカルに保存します。
 
 | **コンテンツの説明**                        | **ファイル名**                                        |
 |------------------------------------------------|------------------------------------------------------|
-| **ER データ モデル** 構成ファイルのサンプル    | パラメーター化された呼び出し version.1.xml を知るためのモデル     |
-| **ER メタデータ** 構成ファイルのサンプル      | パラメーター化された呼び出し version.1.xml を知るためのメタデータ  |
-| **ER モデル マッピング** 構成ファイルのサンプル | パラメーター化された呼び出し version.1.1.xml を知るためのマッピング |
-| **ER 形式** 構成のサンプル             | パラメーター化された呼び出し version.1.1.xml を知るための形式  |
+| **ER データ モデル** 構成ファイルのサンプル    | [パラメーター化された呼び出し version.1.xml を知るためのモデル](https://download.microsoft.com/download/2/d/b/2db913a0-3622-494e-91a2-97fc494af9b9/Modeltolearnparameterizedcalls.version.1.xml)     |
+| **ER メタデータ** 構成ファイルのサンプル      | [パラメーター化された呼び出し version.1.xml を知るためのメタデータ](https://download.microsoft.com/download/1/b/3/1b343968-5a47-4000-b5a8-6487698ef4c0/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| **ER モデル マッピング** 構成ファイルのサンプル | [パラメーター化された呼び出し version.1.1.xml を知るためのマッピング](https://download.microsoft.com/download/8/6/6/866e0ab6-2e05-4d98-9d52-d2da2038f6e4/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| **ER 形式** 構成のサンプル             | [パラメーター化された呼び出し version.1.1.xml を知るための形式](https://download.microsoft.com/download/e/3/9/e392eadc-b9b4-4834-95c3-b8066dd00b9c/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 次に、RCS インスタンスにサインインします。
 
@@ -79,17 +78,17 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 
     **パラメーター化された呼び出しを学習するための形式** の ER 形式は、(標準、減額、なし) という複数の課税レベルを提供する XML 形式の税明細書を生成するように設計されています。 各レベルには異なる数の詳細情報があります。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![複数レベルの ER 形式、パラメーター化された呼び出しを学習する形式](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  **マッピング** タブで、**モデル**、**データ**、および **概要** 品目を展開します。
 
     **Model.Data.Summary** データ ソースは、税トランザクションの一覧を返します。 それらのトランザクションは税コードごとに集計されます。 このデータ ソースについて **Model.Data.Summary.Level** の計算フィールドが、集計された各レコードの課税レベルのコードを返すように構成されています。 実行時に **Model.Data.Summary** データ ソースから取得できる税コードの場合、計算済みフィールドは、課税レベル コード (**標準**、**減額**、**なし**、または **その他**) テキスト値として返します。 **Model.Data.Summary.Level** 計算済みフィールドは、**Model.Data.Summary** データ ソースのレコードをフィルター処理し、**Model.Data2.Level1**、**Model.Data2.Level2**、**Model.Data2.Level3** を使用して課税レベルを表す各 XML 要素にフィルター処理されたデータを入力するために使用されます。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![税トランザクションの Model.Data.Summary データ ソース](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     **Model.Data.Summary.Level** の計算済みフィールドは、ER 式を含むように構成されています。 税コード (**VAT19**、**InVAT19**、**VAT7**、**InVAT7**、**THIRD**、**InVAT0**) は、この構成にハードコードされていることに注意してください。 したがって、この ER 形式は、税コードが構成された法人に依存しています。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Model.Data.Summary.Level の計算済フィールド (ハードコードが設定された税コード付き)](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     法人ごとに異なる税コードのセットをサポートするには、次の手順を実行する必要があります。
 
@@ -129,7 +128,7 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 12. **追加** を再度選択します。
 13. **名前** フィールドに、**その他** と入力します。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![[形式列挙型] ページの新しいレコード](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     ビジネスユーザーは、異なる言語を使用して、法人に依存する税コードのセットを指定する場合があるため、この列挙型の値を、財務のユーザーの優先言語として構成された言語に翻訳することをお勧めします。
 
@@ -142,7 +141,7 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 20. **翻訳テキスト** フィールドで、**keine Besteuerung** と入力します。
 21. **翻訳** を選択します。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![テキスト翻訳のスライド アウト](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. **保存** を選択します。
 23. **形式列挙型** ページを閉じます。
@@ -169,13 +168,13 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 10. **Model.Data.Tax.Code** 項目を選択します。
 11. **追加** ボタン (右矢印) を選択します。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![列のスライド アウト](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     課税レベルの認識のためにこのデータ ソースで指定されている各ルールについて、ビジネス ユーザーが条件として税コードの 1 つを選択する必要があることを指定しました。 ビジネス ユーザーが選択できる税コードの一覧は、**Model.Data.Tax** データ ソースよって返されます。 このデータ ソースには **名前** フィールドが含まれているため、ビジネス ユーザーに対して表示されるルックアップの各税コード値について、税コードの名前が表示されます。
     
 12. **OK** を選択します。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![ルックアップ デザイナー ページ](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     ビジネス ユーザーは、このデータ ソースのレコードとして、複数のルールを追加することができます。 各レコードには、明細行コードで番号が付けられます。 ルールは行番号の昇順で評価されます。
 
@@ -189,13 +188,13 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 
     **文字列** データ型の **コード** パラメーターの引数としてデータ ソースに渡されたすべての税コードの **課税レベル リスト** の形式列挙型の値として、課税レベルを返す新しいデータ ソースを追加したことに注意してください。
     
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![新しいデータ ソースが表示されたで形式デザイナー ページ](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     構成されたルールの評価は、そのルールの条件を定義するために選択されたフィールドのデータ型に依存することに注意してください。 **数値** データ型または **日付** データ型のフィールドとして構成されているフィールドを選択した場合、基準は **文字列** データ型に対して既に説明した基準とは異なります。 **数値** フィールドおよび **日付** フィールドでは、ルールを値の範囲として指定する必要があります。 データ ソースに渡される値が構成された範囲内にある場合は、ルールの条件が満たされたと見なされます。
     
     次の図は、この種類の設定の例を示します。 **文字列** データ型の **Model.Data.Tax.Code** フィールドに加えて、**リアル** データ型の **Model.Tax.Summary.Base** フィールドを使用して、ルックアップ データ ソースの条件を指定します。
     
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![追加の列を含むルックアップ デザイナー ページ](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     このルックアップ データ ソースに対して **Model.Data.Tax.Code** フィールドおよび **Model.Tax.Summary.Base** が選択されます。このデータ ソースの各ルールは、次のように構成されます。
     
@@ -224,7 +223,7 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 9.  **翻訳** を選択します。
 10. **OK** を選択します。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![データ ソース プロパティのスライド アウト](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>新しいフィールドを追加して構成されたルックアップを使用する
 
@@ -237,16 +236,16 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 7.  **数式フィールド** に、**Model.Selector(Model.Data.Summary.Code)** と入力します。
 8.  **保存** を選択します。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![フォーミュラ デザイナー ページに Model.Selector(Model.Data.Summary.Code) を追加する](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  **式の編集** ページを閉じます。
 10. **OK** を選択します。
 
-    ![ER 操作デザイナーのページ](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![新しいフォーミュラが追加されたで形式デザイナー ページ](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     追加した **LevelByLookup** 計算フィールドを使用すると、集計された各税トランザクション レコードの **課税レベルの一覧** 形式の列挙型の値として、課税レベルが返されることに注意してください。 レコードの税コードは **Model.Selector** のルックアップ データ ソースに渡され、このデータ ソースのルールのセットを使用して正しい課税レベルが選択されます。
 
-### <a name="add-a-new-format-enumeration-based-data-source"></a>新しい形式列挙型ベースのデータ ソースを追加する
+### <a name="add-a-new-format-enumeration-based-data-source&quot;></a>新しい形式列挙型ベースのデータ ソースを追加する
 
 次に、前の手順で追加した形式列挙型を参照する新しいデータ ソースを追加します。 このデータ ソースの値は、後で ER 形式の式で使用されます。
 
@@ -256,7 +255,7 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 4.  **形式列挙型** フィールドで、**課税レベルの一覧** を選択します。
 5.  **保存** を選択します。
 
-### <a name="modify-an-existing-field-to-start-to-use-the-lookup"></a>ルックアップの使用を開始するために既存のフィールドを変更する
+### <a name=&quot;modify-an-existing-field-to-start-to-use-the-lookup&quot;></a>ルックアップの使用を開始するために既存のフィールドを変更する
 
 次に、既存の計算フィールドを変更して、構成されているルックアップ データ ソースを使用して、税コードに応じて正しい課税レベル値を取得するようにします。
 
@@ -266,7 +265,7 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 
     **Model.Data.Summary.Level** フィールドの現在の式には、次のハードコーディングされた税コードが含まれています。
     
-    CASE (@.Code、"VAT19"、"Regular"、"InVAT19"、"Regular"、"VAT7"、"Reduced"、"InVAT7"、"Reduced"、"THIRD"、"None"、"InVAT0"、"None"、"Other")
+    CASE (@.Code、&quot;VAT19&quot;、&quot;Regular&quot;、&quot;InVAT19&quot;、&quot;Regular&quot;、&quot;VAT7&quot;、&quot;Reduced&quot;、&quot;InVAT7&quot;、&quot;Reduced&quot;、&quot;THIRD&quot;、&quot;None&quot;、&quot;InVAT0&quot;、&quot;None&quot;、&quot;Other")
 
 4.  **式** フィールドに、**CASE(@.LevelByLookup、TaxationLevel.'Regular taxation'、"Regular"、TaxationLevel.'Reduced taxation'、"Reduced"、TaxationLevel.'No taxation'、None"、"Other")** と入力します。
 

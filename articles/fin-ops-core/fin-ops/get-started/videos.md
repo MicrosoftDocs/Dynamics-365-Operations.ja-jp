@@ -2,7 +2,6 @@
 title: ビデオ
 description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
 author: sericks007
-manager: AnnBe
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 70eddab17d94a7ff4a9f00117200a657ebfb24dd
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: eae8e95d39a5b9ade24e7fe9c9407d29e67a8727
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566225"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754707"
 ---
 # <a name="videos"></a>ビデオ 
 

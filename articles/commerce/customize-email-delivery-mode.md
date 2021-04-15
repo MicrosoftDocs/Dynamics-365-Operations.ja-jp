@@ -2,11 +2,9 @@
 title: 配信モードによるトランザクション メールのカスタマイズ
 description: このトピックでは、Microsoft Dynamics 365 Commerce で特定の通知タイプと配信のモードに対応したカスタム メール テンプレートを設定する方法について説明します。
 author: stuharg
-manager: annbe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: d0d96ddb20b2b09751d8c0c0bf8af713de35279a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 411e694b33e0443a336f6a8cdad78714630e4bf3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222636"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799376"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>配送モードによるトランザクション メールのカスタマイズ
 

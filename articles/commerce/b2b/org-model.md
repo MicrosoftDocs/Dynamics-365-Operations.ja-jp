@@ -2,11 +2,9 @@
 title: B2B 組織の組織モデリング階層の作成
 description: このトピックでは、企業間 (B2B) 組織の組織モデリング階層を作成する方法について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailOperations
 audience: Application User, IT Pro
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 91cb01637faa69bd3c7fefefae69c60cb948510e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 487af939f92ece8bc3e543b3beeffa239baa1863
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211228"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799832"
 ---
 # <a name="create-org-modeling-hierarchies-for-b2b-organizations"></a>B2B 組織の組織モデリング階層の作成
 

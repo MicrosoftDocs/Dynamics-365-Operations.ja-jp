@@ -2,7 +2,6 @@
 title: 生成されたドキュメント用にカスタマイズされた保存先を指定します
 description: このトピックでは、電子申告 (ER) 形式が生成するドキュメントの保存先のリストを拡張する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: b71ad5a9701922eb94b1d611e2d3f6a945ce6c06
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: dab70b213efc7e7a3537aa2b47b9edf38d492d34
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562241"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753723"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されたドキュメント用にカスタマイズされた保存先を指定します
 
