@@ -2,7 +2,6 @@
 title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f363b122e30990f5b36e69fd8fe271bdc15e2e79
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ac3b5274aaea2e267685e80d051c81489ece50eb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563997"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814323"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -37,7 +36,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="batch-job-to-handle-sql-index-defragmentation"></a>SQL インデックスの最適化を処理するためのバッチ ジョブ
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 顧客によるインデックス管理の運用、監視、および管理の間接費を削減するために、この機能は削除されました。 |
 | **別の機能で置き換えられているか?**   | 今後、インデックスのメンテナンスは Microsoft サービスによって実行されます。 これは、ユーザーのワークロードに影響を与えずに連続して発生します。 |
@@ -48,12 +47,10 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.17 に対する Platform update
 
-> [!IMPORTANT]
-> バージョン 10.0.17 は、プレビュー リリースの一部として使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[1 つのバージョンのサービス更新に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version)を参照してください。
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | Visual Studio の最新バージョンをサポートするためには、Visual Studio の X++ 拡張機能に変更を加える必要があります。 これらの変更は、Visual Studio 2015 と互換性がありません。 |
 | **別の機能で置き換えられているか?**   | Visual Studio 2017 は、配置および必要なバージョンとして Visual Studio 2015 を置き換えます。 |
@@ -63,7 +60,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="user-avatar"></a>ユーザー アバター 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | ナビゲーション バーの右側に表示されるユーザーの権限は、既に廃止されている、Dynamics 365 ヘッダー コントロールの API を使用して取得されました。 |
 | **別の機能で置き換えられているか?**   | ユーザーは、ナビゲーション バーのイニシャルを円の中に表示します。 これは、開発機械で現在使用されているビジュアルと同じです。 |
@@ -73,7 +70,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="enterprise-portal-ep-deprecation"></a>エンタープライズ ポータル (EP) の非推奨  
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | Dynamics AX 2012 エンタープライズ ポータル (EP) に関連付けられたメタデータ コンポーネントは、Finance and Operations アプリケーションでサポートされたことがないので廃止されました。 |
 | **別の機能で置き換えられているか?**   | なし |
@@ -85,7 +82,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 における Internet Explorer 11 のサポートの非推奨
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
@@ -96,7 +93,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>メタデータ修正プログラムを適用するための Visual Studio アドイン
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | メタデータ修正プログラムは、バージョン 8.1 で 2018 年 7 月に導入された [One Version](../../fin-ops/get-started/one-version.md) サービス更新プログラムではサポートされなくなりました。 |
 | **別の機能で置き換えられているか?**   | サポートされているバージョンでは、個別のメタデータ修正プログラムは使用できません。 代わりに、累積的な品質更新が適用されます。 |
@@ -109,7 +106,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="online-users-page"></a>オンライン ユーザー ページ 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | これは、以前のクライアント/サーバー アーキテクチャ用に構築されたレガシーページです。 このページの情報は常に正確であるとは限らず、混乱や誤解を招く可能性があります。 |
 | **別の機能で置き換えられているか?**   | 今後の更新プログラムで新しいページを提供する予定です。|
@@ -123,7 +120,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>SSRS レポート プロパティで定義されたカスタム コード 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 一般に、カスタム コードは限られたメリットしかなく、同時に重要なリソースと、サポートのためのコンピューティングが必要になります。 カスタム コードは、レポート作成者が主にカスタム コード アセンブリからパブリック メソッドを呼び出すために使用します。 ただし、クラウドにホストされるサービスは、SSRS レポートのカスタム アセンブリへの参照はサポートしていません。 |
 | **別の機能で置き換えられているか?**   | レポート作成者は、すべてのテキスト ボックス式での計算、変換、書式設定の処理に対して、パブリック .NET API を引き続き参照することを選択できます。 詳細については、[コードをレポート (SSRS) に追加する](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15) をご覧ください。  |
@@ -133,7 +130,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>3 つの jQuery コンポーネント ライブラリのアップグレード 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | セキュリティ修正プログラムと通貨を維持するために、3 つの jQuery コンポーネントライブラリが更新されています。   
 | **別の機能で置き換えられているか?**   | この問題は、jQuery (バージョン 2.1.4 からのバージョン 3.5.0)、jquery UI (バージョン 1.11.4 1.12.1 のバージョン 3.0.3)、jQuery qTip (バージョンから 2.2.1) に影響されます。 JQuery は移行ガイダンスをオンラインで提供しています。  |
@@ -143,7 +140,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="existing-grid-controlforcelegacygrid-api"></a>既存のグリッドコントロール/forceLegacyGrid () API
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 既存のグリッドコントロールは、新しいグリッドコントロールに置き換えられます。 |
 | **別の機能で置き換えられているか?**   | [新しいグリッド コントロール](../..//fin-ops/get-started/grid-capabilities.md) |
@@ -153,7 +150,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="personalization-without-saved-views"></a>保存されていないビューのないパーソナル化 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | パーソナル化サブシステムは、ビューの保存機能にオーバーホールされているので、パフォーマンスが向上し、追加機能を提供します。 |
 | **別の機能で置き換えられているか?**   | 保存されているビュー |
@@ -166,7 +163,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>無効なフィールド参照を含むグリッドまたはグループ コントロール フォームの拡張機能
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | グリッド コントロールまたはグループ コントロールのデータ グループ プロパティは、フィールド グループのすべてのフィールドを自動的に表示するために使用されます。 拡張機能によって追加されたグリッドまたはグループ コントロールには、そのフィールド グループで既に定義されていないフィールドが含まれているか、そのフィールド グループで定義されているフィールドが欠落している可能性があります。 これにより、ランタイムで動作が一貫しなくなる場合があります。 Finance and Operations アプリのバージョン 10.0.12 に対するプラットフォームのアップデートは、この問題をコンパイラ *警告* として分類できるようになりました。 この問題を解決するには、フォームの拡張機能を開いて保存します。
 | **別の機能で置き換えられているか?**   | このコンパイラの警告は、将来の更新でコンパイラ エラーに置換されます。 |
@@ -178,7 +175,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>セルフ サービス環境のための明示的なセーフ リスト
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | IP をセーフ リストに移動するプロセスが変更されました。 セルフサービスでは IP セーフ リストはもうサポートしていません。 |
 | **別の機能で置き換えられているか?**   | 詳細については、[Azure Active Directory の条件付きアクセスの構成](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access) をご覧ください。|
@@ -188,7 +185,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | Visual Studio の最新バージョンをサポートするためには、Visual Studio の X++ 拡張機能に変更を加える必要があります。 これらの変更は、Visual Studio 2015 と互換性がありません。 |
 | **別の機能で置き換えられているか?**   | Visual Studio 2017 は、配置および必要なバージョンとして Visual Studio 2015 を置き換えます。 |
@@ -198,7 +195,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="field-groups-containing-invalid-field-references"></a>無効なフィールド参照を含むフィールド グループ
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | テーブル メタデータ定義のフィールド グループには、無効なフィールド参照を含めることができます。 これらのフィールド グループを展開すると、Financial Reporting と Microsoft SQL Server Reporting Services (SSRS) でランタイム エラーが発生する可能性があります。 Platform update 23 では、このメタデータの問題に対応するコンパイラの *警告* が導入されました。 Finance and Operations アプリのバージョン 10.0.11 に対する Platform update は、この問題をコンパイラ *エラー* として分類します。<p>この問題を解決するには、次の手順に従います。</p><ol><li>テーブルのフィールド グループの定義から無効なフィールド参照を削除します。</li><li>再コンパイル。</li><li>すべてのエラーが対処されていることを確認します。</li></ol> |
 | **別の機能で置き換えられているか?**   | コンパイラ エラーは、コンパイラの警告を完全に置換します。  |
@@ -208,7 +205,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>SHA1 ハッシュ アルゴリズムを使用して作成された ISV ライセンス
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 独立系ソフトウェア ベンダー (ISV) ライセンスを作成するためのプロセスが変更されました。 詳細については、[独立系ソフトウェア ベンダー (ISV) ライセンス](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes) を参照してください。 |
 | **別の機能で置き換えられているか?**   | はい。 Windows PowerShell を使用してライセンスを作成します。 |
@@ -219,7 +216,8 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 ## <a name="platform-update-32"></a>プラットフォーム update 32
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>ワークフロー要求の変更ダイアログ ボックスにユーザー選択ドロップダウン リストは表示されなくなります
-|   |  |
+
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 変更要求が意図しないユーザーに送信される可能性があったため、これはセキュリティ上の問題でした。 また、これはワークフローの作成者が誰であるかをユーザーが決定し、手動で選択するよう促すものであったため、操作性の問題でもありました。  |
 | **別の機能で置き換えられているか?**   | いいえ |
@@ -228,7 +226,8 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **ステータス**                         | Platform update 32 の要求変更ダイアログ ボックスからユーザー選択ドロップダウン リストが削除されました。 変更要求は、作成者に対して意図したとおりに自動的に送信されます。 この機能の詳細については、[ワークフロー承認プロセスでのアクション](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change)を参照してください。 |
 
 ### <a name="embedded-drill-through-links-are-no-longer-supported-in-paginated-documents-rendered-by-the-cloud-hosted-service"></a>埋め込み型のドリルスルー リンクは、クラウドでホストされるサービスによって表示されるページ番号付きドキュメントではサポートされなくなりました 
-|   |  |
+
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | サービスによって表示されるドキュメントに埋め込まれたナビゲーション URL には、機密業務データが含まれる場合があります。 顧客データをさらに保護するセキュリティ上の事前措置として、ドキュメントでの埋め込み型のドリルスルー リンクのサポートを削除しています。 また、ユーザーは、この変更の結果として対話的にドキュメントを作成する際にパフォーマンスを向上させることもできます。  |
 | **別の機能で置き換えられているか?**   | 無 |

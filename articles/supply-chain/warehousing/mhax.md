@@ -2,7 +2,6 @@
 title: 材料取り扱い設備のインターフェイス (MHAX)
 description: このトピックでは、外部の材料取り扱い設備のインターフェイス (MH) システムに接続できるような材料取り扱い設備のインターフェイス (MHAX) を設定する方法について説明します。
 author: Mirzaab
-manager: tfehr
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ea021529d7417fb3170c859c7fffcb2cfd23a43f
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 9273e4a1f6b3f57086c921c4beb0530a67ccd976
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571845"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810513"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>材料取り扱い設備のインターフェイス (MHAX)
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 *材料取り扱い設備インターフェイス* (MHAX) を使用すると、外部の物理材料取り扱い (MH) システムを、Microsoft Dynamics 365 Supply Chain Management の高度な倉庫管理 (WMS) によって管理される倉庫に接続できます。 WMS と MH システム間のインターフェイスは、2 つのキューで構成されています: 1 つは発信イベント用 (WMS から MH)、もう 1 つは受信イベント用 (MH から WMS )です。 WMS システムは、さまざまな作業の作成および実行プロセス中に作成された作業明細行に基づいて発信イベントを生成します。 次に、MH システムは、新しいイベントについて定期的に WMS システムをポーリングして、応答を処理します。 MH システムは、作業指示に従ってイベントの処理を終了した後、作業明細行の完了やショート ピッキングなどの受信イベントを送信します。
 

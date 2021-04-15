@@ -2,11 +2,9 @@
 title: リースのパラメーターを構成する (プレビュー版)
 description: このトピックでは、セキュリティ情報やアカウンティング設定などの資産リースの構成方法について説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4bb8372c5e4a1d7183b5d793b142fed92e833d5a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c681f7d356752a2194a86bc7eaef6ceac1e0af6b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210436"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816103"
 ---
 # <a name="configure-lease-parameters"></a>リースのパラメーターを構成する
 

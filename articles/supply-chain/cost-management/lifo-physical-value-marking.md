@@ -2,11 +2,9 @@
 title: 現物価格とマーキングを使用した LIFO
 description: 後入れ先出し (LIFO) は、最後 (最新) の入庫が最初に払出される在庫モデルです。 在庫からの出庫は、在庫トランザクションの日付に基づいて在庫への最後の入庫を対象として決済されます。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f37bd17c151040254127ca29cf5b03336abe124
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243374"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809737"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>現物価格とマーキングを使用した LIFO
 

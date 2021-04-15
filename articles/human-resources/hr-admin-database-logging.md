@@ -2,11 +2,9 @@
 title: データベース ログの構成と管理
 description: データベース ログを使用すると、Dynamics 365 Human Resources のテーブルとフィールドに対する変更を追跡できます。
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467652"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801338"
 ---
 # <a name="configure-and-manage-database-logging"></a>データベース ログの構成と管理
 
@@ -68,7 +66,22 @@ ms.locfileid: "5467652"
 **ログ データベースの変更** ウィザードを使用して、データベースのログを設定できます。 ウィザードでは、テーブルやフィールドのログを柔軟に設定できます。
 
 1. **システム管理 > リンク > データベース > データベース ログの設定** に移動します。 **新規** を選択して、**ログ データベースの変更** ウィザードを開始します。
-2. ウィザードの操作を完了します。
+2. **次へ** を選択します。 
+3. ウィザードの **テーブルとフィールド** ページで、データベース ログを有効にするテーブルとフィールドを選択して、**次へ** を選択します。
+
+   > [!Note]
+   > データベース ログは、Human Resources データベースの全テーブルで使用できません。 一覧の下の **すべてのテーブルを表示** を選択すると、テーブルおよびフィールドの一覧が展開され、データベース ログが使用できるすべてのデータベース テーブルが表示されますが、これはデータベース テーブルの完全リストのサブセットになります。
+
+4. ウィザードの **変更のタイプ** ページで、各テーブルおよびフィールドの変更を追跡するデータ操作を選択し、**次へ** を選択します。 ログできるデータ操作の説明については、下の表を参照してください。
+5. **完了** ページで変更を確認し、**完了** を選択します。
+
+| 操作 | 説明 |
+| -- | -- |
+| 新しいトランザクションの追跡 | テーブルに作成される新しいレコードのログを作成します。 |
+| Update | テーブル レコードの更新またはテーブル内で個別に選択されたフィールドに対して、更新のログを作成します。 テーブルの更新のログを選択すると、テーブル上のすべてのレコードのフィールドが更新されるたびにログ レコードが作成されます。 特定のフィールドの更新をログする場合は、テーブル レコードのそれらのフィールドが更新された場合にのみログ レコードが作成されます。 |
+| 消去 | テーブルから削除されたレコードのログを作成します。 |
+| キーの名前変更 | テーブル キーの名前が変更された場合にログ レコードを作成します。 |
+
 
 ## <a name="clean-up-database-logs"></a>データベース ログのクリーン アップ
 

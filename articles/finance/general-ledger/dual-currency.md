@@ -2,11 +2,9 @@
 title: 二重通貨
 description: このトピックでは、レポート通貨が Microsoft Dynamics 365 Finance の 2 番目の会計通貨として使用されている二重通貨に関する情報を提供します。
 author: kweekley
-manager: AnnBe
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9202bc5009539e5f5b538b5625418ed227984462
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 53e90721854a9047804c52a5e6d77ebb638c0984
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212184"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814035"
 ---
 # <a name="dual-currency"></a>二重通貨
 

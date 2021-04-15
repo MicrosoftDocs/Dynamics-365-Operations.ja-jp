@@ -2,11 +2,9 @@
 title: 品目再配賦の未処理ピッキングの設定
 description: このトピックでは、指定された場所に在庫が不十分な場合に、倉庫作業者が他の倉庫を素早く見つけることができるようにする方法について説明します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/29/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ecd05add44bacae517109f8bab2cb43376fe07c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 90aeb860dc95a348b000a0f994fadc5cc9aea7e6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216814"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814419"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>品目再配賦の未処理ピッキングの設定
 

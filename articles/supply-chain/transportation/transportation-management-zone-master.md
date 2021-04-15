@@ -2,11 +2,9 @@
 title: 輸送管理ゾーン マスター
 description: このトピックでは、輸送管理を使用して地理的な場所をゾーンに分割する方法について説明します。
 author: Henrikan
-manager: ''
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSZoneMaster
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 28c0724a20199595b0e2c19867ccaa4876d37980
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: aec1c17d32d1469f3a452084138404de3d498b71
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233322"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807587"
 ---
 # <a name="transportation-management-zone-master"></a>輸送管理ゾーン マスター
 

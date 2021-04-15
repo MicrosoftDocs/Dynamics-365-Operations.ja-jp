@@ -2,11 +2,9 @@
 title: 職務のコンポーネントの設定
 description: この記事では、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0148518ca80832ecb7a26e28ec76c4b14bb1a194
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 1c481a468b2d624f029082fe27e7f14ecf7c068d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464865"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803492"
 ---
 # <a name="set-up-the-components-of-a-job"></a>職務のコンポーネントの設定
 

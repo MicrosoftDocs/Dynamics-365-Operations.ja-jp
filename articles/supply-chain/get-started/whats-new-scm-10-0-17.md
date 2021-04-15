@@ -1,12 +1,10 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.17 (2021 年 4 月) のプレビュー
+title: Dynamics 365 Supply Chain Management 10.0.17 の新機能または変更された機能 (2021 年 4 月)
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.17 の新機能または変更された機能について説明します。
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 985879ef765bf3074387a909d508f0f93a4771ed
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571815"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813174"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management 10.0.17 (2021 年 4 月) のプレビュー
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management 10.0.17 の新機能または変更された機能 (2021 年 4 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、バージョン 10.0.17 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.761 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.17 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.761 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 2 月
 - **リリースの一般提供 (自己更新):** 2021 年 3 月
@@ -36,9 +33,9 @@ ms.locfileid: "5571815"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。 [リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
+このリリースでは次の機能が含まれています。  [リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
 
-これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。 一覧表示された機能の一部はプレビューの場合もありますが、ほとんどの機能はすでに一般提供されています。
 
 ### <a name="asset-management"></a>資産管理
 
@@ -68,9 +65,13 @@ ms.locfileid: "5571815"
 
 - [倉庫管理モバイル アプリケーション](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - 詳細については、 [倉庫管理アプリをインストールして接続](../warehousing/install-configure-warehouse-management-app.md) および[モバイル デバイス ユーザー設定](../warehousing/mobile-device-user-settings.md) を参照してください。
 
+- ウェーブの実行通知<br> - 詳細については、[ウェーブ処理の通知](../warehousing/wave-execution-notifications.md) を参照してください
+
 ### <a name="manufacturing"></a>製造
 
-- [生産フロア実行インターフェイスの資産管理機能](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - 詳細情報については、[作業者が生産現場の実行インターフェースを使用する方法](../production-control/production-floor-execution-use.md) を参照してください。
+- [生産フロア実行インターフェイスの資産管理機能](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - 詳細情報については、[生産現場の実行インターフェースを構成する](../production-control/production-floor-execution-configure.md) を参照してください。
+
+- ジョブ ID の統合番号順序<br> - 詳細については、以下を参照してください。 
 
 - [生産材料の既定の予約原則の上書き](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - 詳細については、[生産材料の既定の予約原則の上書き](../production-control/override-default-reservation-principle.md) を参照してください。
 

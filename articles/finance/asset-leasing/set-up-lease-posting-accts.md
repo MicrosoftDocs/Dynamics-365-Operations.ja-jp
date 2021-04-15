@@ -2,11 +2,9 @@
 title: リース転記勘定の設定
 description: このトピックでは、資産リース トランザクションに必要な転記勘定の一覧を示し、[リース転記パラメーター] ページで転記勘定を定義する方法について説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 183560dca385d618eb11d1580b0f82dcaa50474e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0367cd5454178c9404942c9f2e8cfeeb326af700
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249608"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811464"
 ---
 # <a name="set-up-lease-posting-accounts"></a>リース転記勘定の設定
 

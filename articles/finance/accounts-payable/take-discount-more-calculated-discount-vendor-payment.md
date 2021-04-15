@@ -2,11 +2,9 @@
 title: 仕入先支払の計算済の割引よりも大幅な割引を行う
 description: この記事は、請求書で最初に使用できた割引を超えた金額の現金割引を行うシナリオについて説明します。 このシナリオは、組織が請求書の減額した金額を支払う契約を仕入先とした場合に発生することがあります。
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a56331f76867aeac0bad0912749d96f959513e0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 62f2088ff04a0ef5ffe6ffe47b85f47e6957264d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235888"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810249"
 ---
 # <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>仕入先支払の計算済の割引よりも大幅な割引を行う
 
@@ -38,7 +36,7 @@ ms.locfileid: "5235888"
 
 割引の情報は **トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 7/12/2015 |
 | 現金割引金額         | 60.00     |

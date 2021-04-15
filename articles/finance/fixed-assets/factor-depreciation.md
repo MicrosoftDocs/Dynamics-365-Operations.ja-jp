@@ -2,11 +2,9 @@
 title: 係数減価償却
 description: この記事は、係数償却方法の減価償却の概要を示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87cca8b3472f572cd1c4ba3d894269f7ba0f248a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8adfc91251ba1707c688fac6da04adaa9af1a47f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241077"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815695"
 ---
 # <a name="factor-depreciation"></a>係数減価償却
 

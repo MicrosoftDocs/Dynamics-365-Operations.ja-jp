@@ -2,11 +2,9 @@
 title: 元の予算を作成し、公的機関の暫定予算エントリをリバースします
 description: このトピックでは、予算モデルおよび暫定的な予算金額を持つ分析コード値を使用して、元の予算エントリを作成する方法、取り消す方法について説明します。
 author: twheeloc
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b11aeb377caf50808f661de25fcbbf90429d475
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: af037db40b0df3eeea163953d27c211e609cc02b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235068"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811242"
 ---
 # <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a>元の予算を作成し、公的機関の暫定予算エントリをリバースします
 

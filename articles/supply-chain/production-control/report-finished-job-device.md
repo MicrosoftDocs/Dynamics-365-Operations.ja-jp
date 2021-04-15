@@ -2,11 +2,9 @@
 title: ジョブ カード デバイスから完了として報告する
 description: このトピックでは、ジョブ カード デバイスのユーザーが製造オーダーから在庫に対して完成品を報告できるようにシステムを構成する方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7eabcb23681a9b2427fa1065b045e639cc98f9d7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd21bdf532e1e607e66bb8f5ef032f0855c99612
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262144"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811633"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>ジョブ カード デバイスから完了として報告する
 
@@ -64,7 +62,7 @@ ms.locfileid: "5262144"
 完了報告時にジョブ カード デバイスがバッチ番号を受け取ることができるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、次の機能を (この順序で) 有効にする必要があります。
 
 1. ジョブ カード デバイスの進捗状況のレポート ダイアログのユーザー エクスペリエンスの向上
-1. ジョブ カード デバイス (プレビュー) からの完了報告時に、バッチ番号とシリアル番号を入力できるようにする
+1. ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>バッチ番号の報告を必要とする製品をコンフィギュレーションする
 
@@ -142,7 +140,7 @@ ms.locfileid: "5262144"
 完了報告時にジョブ カード デバイスがシリアル番号を受け取ることができるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して、次の機能を (この順序で) 有効にする必要があります。
 
 1. ジョブ カード デバイスの進捗状況のレポート ダイアログのユーザー エクスペリエンスの向上
-1. ジョブ カード デバイス (プレビュー) からの完了報告時に、バッチ番号とシリアル番号を入力できるようにする
+1. ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>シリアル番号の報告を必要とする製品をコンフィギュレーションする
 

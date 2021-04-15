@@ -1,12 +1,10 @@
 ---
-title: 倉庫アプリのアプリ フィールド名のコンフィギュレーション
-description: このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。
+title: 倉庫管理モバイル アプリのフィールドを構成する
+description: このトピックでは、倉庫管理モバイル アプリのフィールド名と優先順位の定義および構成方法について説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -18,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c22a4314c36ba7112456ef264df500af98996f3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c6ed726536085b836f4014c59ea8df4755577ab5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232962"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808825"
 ---
-# <a name="configure-app-field-names-in-the-warehouse-app"></a>倉庫アプリのアプリ フィールド名のコンフィギュレーション
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリのフィールドを構成する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
+このトピックでは、倉庫管理モバイル アプリのフィールド名と優先順位の定義および構成方法について説明します。
 
 > [!NOTE]
-> このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Warehousing での使用方法について説明します。 FWarehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル [倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)を参照してください。
+> このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 倉庫管理モバイル アプリは、倉庫タスクの実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫管理モバイル アプリのフィールド名と優先順位の定義および構成方法と使用方法について説明します。
 
 ## <a name="configure-warehouse-app-field-names"></a>倉庫アプリ フィールド名のコンフィギュレーション
 
@@ -142,7 +140,7 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)
+[倉庫管理モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

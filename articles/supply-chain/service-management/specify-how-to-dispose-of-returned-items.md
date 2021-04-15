@@ -2,11 +2,9 @@
 title: 返品品目の廃棄方法の指定
 description: 返品品目の廃棄方法を指定します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQuarantineOrder
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 61bff50d55ed4c251918a327f2a033369e731bf0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3eaeb2589329809e57ac01aba85067e94c15477c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242376"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817488"
 ---
 # <a name="specify-how-to-dispose-of-returned-items"></a>返品品目の廃棄方法の指定 
 

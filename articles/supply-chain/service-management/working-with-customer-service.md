@@ -2,11 +2,9 @@
 title: 顧客サービスの処理の概要
 description: 顧客サービスは、専門的なサービスベースの企業および製造サービス組織をサポートします。
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 654c33c890197f458c0cfb32bedeaf2a24cd073a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1b83b36102cc1c0f8ed9c08920ac3817435a6b24
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239329"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807755"
 ---
 # <a name="work-with-customer-service-overview"></a>顧客サービスの処理の概要
 

@@ -2,11 +2,9 @@
 title: 分析コード階層
 description: このトピックでは、分析コード階層について説明します。 分析コード階層を使用して、原価会計のレポート構造、コスト ポリシー、およびセキュリティ設定を定義します。
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217389"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810177"
 ---
 # <a name="dimension-hierarchy"></a>分析コード階層
 
@@ -124,12 +122,13 @@ ms.locfileid: "5217389"
 
 レポートの分析コード階層は、以下のように設定できます。
 
-|                   | 分析コード メンバーの範囲   |                         |
+**分析コード メンバーの範囲**
+
+|   ノード           |   移動元分析コード メンバー   |   移動先分析コード メンバー   |
 |-------------------|---------------------------|-------------------------|
-| **ノード**         | **移動元分析コード メンバー** | **移動先分析コード メンバー** |
 | 組織      |                           |                         |
 | &nbsp;&nbsp;管理者         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;財務   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;財務   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
 | &nbsp;&nbsp;生産    |                           |                         |
@@ -146,12 +145,13 @@ ms.locfileid: "5217389"
 
 ポリシーの分析コード階層は、以下のように設定できます。
 
-|                   | 分析コード メンバーの範囲   |                         |
+**分析コード メンバーの範囲**
+
+|   ノード           |   移動元分析コード メンバー   |   移動先分析コード メンバー   |
 |-------------------|---------------------------|-------------------------|
-| **ノード**         | **移動元分析コード メンバー** | **移動先分析コード メンバー** |
 | 原価動作     |                           |                         |
 | &nbsp;&nbsp;固定費    | 10001                     | 10011                   |
-|&nbsp;&nbsp;変動費 | 40001                     | 40010                   |
+| &nbsp;&nbsp;変動費 | 40001                     | 40010                   |
 
 > [!NOTE]
 > **分析コード メンバーの範囲** で、ノードは 1:_n_ 分析コード メンバーの範囲を含めることができます。 分析コード メンバとしてまだ存在していない分析コード メンバー ID を挿入することができます。 この方法により、階層が今後弾力性のあるものになります。  
@@ -297,9 +297,10 @@ Excel または Power BI を使用してレポートを作成する場合は、�
 
 新しい **ユーザー** クイック タブは階層デザイナーで利用可能です。 ここでは、階層内の各ノードに 1 つまたは複数のユーザー ID を挿入できます。
 
-|                 | ユーザー            | 分析コード メンバーの範囲   |                         |
+**ユーザーおよびディメンション メンバー範囲**
+
+|   ノード         |   ユーザー ID        |   移動元分析コード メンバー   |   移動先分析コード メンバー   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **ノード**       | **ユーザー ID**      | **移動元分析コード メンバー** | **移動先分析コード メンバー** |
 | 組織    | ベンジャミン、クレア |                           |                         |
 | &nbsp;&nbsp;管理者         | 4 月            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;財務   | アリシア           | CC002                     | CC003                   |
