@@ -2,11 +2,9 @@
 title: サービス注文品目の要件
 description: サービス注文に特定の品目を引き当てる必要がある場合、その在庫品目要求を作成できます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjSalesItemReq
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a0ce40c26e3d3028064b73a80a247180d6a9009
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4bbd15ca83ab116286a3d681887f076896653c76
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226668"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810585"
 ---
 # <a name="service-order-item-requirements"></a>サービス注文品目の要件   
 

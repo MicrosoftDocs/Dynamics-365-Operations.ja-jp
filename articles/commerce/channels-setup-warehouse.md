@@ -2,11 +2,9 @@
 title: 倉庫の設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce で新しいチャネルと共に使用する倉庫の設定方法について説明します。
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 772c7584549b30a34e371a7911131edc01214ed8
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477637"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800498"
 ---
 # <a name="warehouse-set-up"></a>倉庫の設定
 
@@ -49,7 +47,7 @@ ms.locfileid: "5477637"
 
 ![倉庫サイトの例](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse"></a>倉庫の設定
+## <a name="set-up-a-warehouse&quot;></a>倉庫の設定
 
 倉庫を設定するには、次の手順に従います。
 
@@ -63,14 +61,14 @@ ms.locfileid: "5477637"
     - **トランジット倉庫** を設定する場合は、最初に次の手順に従って、**タイプ** が **トランジット** に設定されている追加の倉庫を作成する必要があります。
 1. アクション ウィンドウで、**保存** を選択します。
 
-## <a name="set-up-inventory-aisles"></a>通路を設定します
+## <a name=&quot;set-up-inventory-aisles&quot;></a>通路を設定します
 
 在庫通路を設定するには、次の手順に従います。
 
 1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 場所の設定 \> 在庫通路** の順に移動します。
 1. アクション ウィンドウで、**新規** を選択します。
 1. **倉庫** ドロップダウン リストで、以前に作成した倉庫を選択します。
-1. **通路** フィールドに、名前を入力します (例: "Def")。
+1. **通路** フィールドに、名前を入力します (例: &quot;Def")。
 1. **名前** フィールドに、名前を入力します (例: "既定の通路")。
 1. アクション ウィンドウで、**保存** を選択します。
 

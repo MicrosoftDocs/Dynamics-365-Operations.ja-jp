@@ -1,26 +1,24 @@
 ---
 title: RFQ のスコア方法の作成
 description: この手順では、スコア方法を作成する方法を示します。
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQScoringMethod
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba3f0b2be16c02129616025c0ee6258996189c6a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2b098975f5557e9b99e7a951c0f8035bbaea5210
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211817"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812089"
 ---
 # <a name="create-a-scoring-method-for-rfqs"></a>RFQ のスコア方法の作成
 

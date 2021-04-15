@@ -2,11 +2,9 @@
 title: 割引日よりも前に一部を決済し、割引日後に最終決済する
 description: この記事は、複数の一部支払が行われるうち、いくつかが現金割引期間内に、それ以外が現金割引期間外に行われるシナリオについて説明します。
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227331"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810345"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>割引日よりも前に一部を決済し、割引日後に最終決済する
 
@@ -48,7 +46,7 @@ Fabrikam は、仕入先 3057 からの商品を購入します。 Fabrikam は�
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 2015/7/9 |
 | 現金割引金額         | -10.00    |
@@ -73,7 +71,7 @@ Fabrikam は、仕入先 3057 からの商品を購入します。 Fabrikam は�
 
 割引の情報は **トランザクションの決済** ページの下部に表示されます。 エイプリルは、自分が既に 3.00 ドルの割引を受けたことを確認できます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 2015/7/9 |
 | 現金割引金額         | 0.00      |
@@ -99,7 +97,7 @@ April が割引日よりも後に支払う場合でも、仕入先が彼女に�
 
 割引の情報は **トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 2015/7/9 |
 | 現金割引金額         | 7.00      |

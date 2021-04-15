@@ -2,11 +2,9 @@
 title: 価格、割引、契約、リベートのトラブルシューティング
 description: このトピックでは、価格、割引、契約、およびリベートの処理中に発生する可能性がある問題を修正する方法について説明します。
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 5d17f2ec594901404fcd251e463f293258af051c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 12bc3cbccb1577c278489f640299510b3ced17e7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237158"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811089"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>価格、割引、契約、リベートのトラブルシューティング
 

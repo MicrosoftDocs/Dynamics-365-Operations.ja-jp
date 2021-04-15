@@ -2,11 +2,9 @@
 title: 製造実行での登録
 description: このトピックでは、製造実行を設定および使用する際に理解しておく必要がある重要な概念および用語について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19b1bf7055132c824bc4043c0bd1dbad3afce2a9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3f443aa7871b3494cf39798c3cb33c3c3bf2136
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209350"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814491"
 ---
 # <a name="registration-for-manufacturing-execution"></a>製造実行での登録
 

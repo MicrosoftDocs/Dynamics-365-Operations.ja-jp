@@ -2,11 +2,9 @@
 title: 生産現場の実行インターフェースを構成する
 description: このトピックでは、生産現場実行インターフェイスに 1 つ以上の構成を作成する方法について説明します。 生産現場実行インターフェイスを開くと、ブラウザーとデバイスに固有の選択した構成とジョブ フィルターが自動的に読み込まれます。 構成では、特定の用途に適用する必要があるポリシーを設定します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556317"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814733"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 作業現場の作業者は、生産現場実行インターフェイスを使用して、職務を開始するとき、職務に関するフィードバックを報告するとき、間接活動を登録するとき、休暇を報告するときなどの、日々の作業を登録します。 これらの登録は、製造オーダーの進捗状況とコストを追跡し、従業員の給与の基準を計算するための基礎となります。
 
@@ -67,6 +64,8 @@ ms.locfileid: "5556317"
 - 画面ジョブカード デバイスとジョブ カード端末を除菌できるようにロックする機能
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>生産現場の実行インターフェースの資産管理機能
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 この機能により、生産フロア実行インターフェイスに資産管理タブが追加されます。 作業者は、このタブを使用して、ジョブ リストの選択したフィルター内のマシン リソースに接続されている資産を選択できます。 選択したマシン資産に対して、作業者は、カウンタの値から資産の状態と状態を最大 4 つのカウンタで表示できます。 この機能を使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で、次の機能を有効にします。
 

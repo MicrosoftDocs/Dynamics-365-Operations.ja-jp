@@ -2,11 +2,9 @@
 title: 消費税コードを設定します
 description: このトピックでは、Dynamics 365 Finance で売上税コードを設定する方法について説明します。
 author: twheeloc
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 594e8f0595ecace748a70860c1ccacaf90b7d279
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6c7208fa65905fcc902d9c08b5b90178745e76d4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222194"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815047"
 ---
 # <a name="set-up-sales-tax-codes"></a>消費税コードを設定します
 

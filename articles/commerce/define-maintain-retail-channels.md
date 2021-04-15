@@ -2,11 +2,9 @@
 title: 小売チャンネルの定義と管理
 description: このトピックでは、Dynamics 365 Commerce では店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を提供します。 ここでは、店舗を設定する前と後に実施する必要のあるタスクについて説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a2ac4a4a42447e4ee57d24548a79f43b88b03927
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7a2db169adafa1b8a0113024f3f58522c2cee6d2
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213701"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802024"
 ---
 # <a name="define-and-maintain-retail-channels"></a>小売チャネルの定義と管理
 

@@ -2,11 +2,9 @@
 title: 重複割引の最適な組み合わせを決定する
 description: 割引が重複している場合は、最小トランザクションの合計または最上位の割引合計の重複割引の組み合わせを決定する必要があります。 一般的な「Buy 1、get X ％off」(BOGO) 小売割引のように、購入される製品の価格に応じて割引額が異なる場合、このプロセスは組合せ最適化の問題になります。
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fee9289820d3df821036412147994e227d68d1dc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3c7dafe55fc7072aa12b98ff42ed7d9e4719f4cd
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257174"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804700"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>重複割引の最適な組み合わせを決定する
 

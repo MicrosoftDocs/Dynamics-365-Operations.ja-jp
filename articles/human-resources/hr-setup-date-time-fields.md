@@ -2,11 +2,9 @@
 title: 日付と時刻のフィールドを理解する
 description: Microsoft Dynamics 365 Human Resources で日付と時刻フィールドを使用する際の予想事項を把握します。
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmPersonnelManagementWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 924d7369129d4115d45f23864e7b851d318c52a4
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: efda2b54f9228ac539e6ba2d18f85bf3ad15a6ff
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467364"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802434"
 ---
 # <a name="understand-date-and-time-fields"></a>日付と時刻のフィールドの理解
 

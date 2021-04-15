@@ -2,11 +2,9 @@
 title: 現金割引期間外の現金割引の適用
 description: この記事は、支払が現金割引期間外に作成されている場合でも現金割引を行う方法を示す 2 つのシナリオを提供します。
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df635e78fff1994b9a9e1abc99c67470852ad81
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 47acacf9b1e9667e86fcdd5ce1ed62e79d8afec3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235864"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810225"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>現金割引期間外の現金割引の適用
 
@@ -43,7 +41,7 @@ April は支払の請求書をマークします。 現金割引は、支払が�
 
 割引の情報は **トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 7/12/2015 |
 | 現金割引金額         | -20.00    |
@@ -61,7 +59,7 @@ April は支払の請求書をマークします。 現金割引は、支払が�
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。 決済する請求書の金額が既定金額 1,980.00 ドルであるため、割引金額は 20.00 ドルです。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 7/12/2015 |
 | 現金割引金額         | -20.00    |
@@ -78,7 +76,7 @@ April は **決済金額** フィールドの値を **500.00** に更新しま�
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。 **適用する現金割引金額** フィールドの値は、請求書の決済請求額を支払金額 500.00 に変更したため、**5.05** です。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 7/12/2015 |
 | 現金割引金額         | -20.00    |

@@ -2,11 +2,9 @@
 title: 請求書および買掛金勘定の重要データの監査
 description: このトピックでは、請求書と買掛金の主要データを監査する方法について説明します。
 author: saraschi2
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6188b10327e4827cf5752fa56c3d491ef315b955
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6ac1e9d8c5255b8347c9563ce9ea846933c0c9dd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204764"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815239"
 ---
 # <a name="audit-invoices-and-key-data-in-accounts-payable"></a>請求書および買掛金勘定の重要データの監査
 
