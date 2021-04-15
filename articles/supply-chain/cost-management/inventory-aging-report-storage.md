@@ -2,11 +2,9 @@
 title: 在庫エイジング レポート ストレージ
 description: このトピックでは、在庫エイジング レポートを実行し、その出力をフォームおよびグラフとして使用できるようにする機能について説明します。
 author: AndersGirke
-manager: tfehr
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 audience: Application User
@@ -18,44 +16,44 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2019-01-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 40b15448677f319c650c667cd7c4981c343f7a02
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17ca0a105521f3216dfefcc170d60c1eb7137bf6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205349"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809761"
 ---
-# <a name="inventory-aging-report-storage"></a><span data-ttu-id="9430a-103">在庫エイジング レポート ストレージ</span><span class="sxs-lookup"><span data-stu-id="9430a-103">Inventory aging report storage</span></span>
+# <a name="inventory-aging-report-storage"></a><span data-ttu-id="ec60e-103">在庫エイジング レポート ストレージ</span><span class="sxs-lookup"><span data-stu-id="ec60e-103">Inventory aging report storage</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="9430a-104">Microsoft Dynamics 365 Supply Chain Management では、**在庫のエイジング レポート ストレージ** を実行して、フォームとグラフとして出力できるようにします。</span><span class="sxs-lookup"><span data-stu-id="9430a-104">In Microsoft Dynamics 365 Supply Chain Management, you can run an **Inventory aging report storage** report and make the output available as a form and a chart.</span></span> <span data-ttu-id="9430a-105">フォームでは、コンフィギュレーションされているレイアウトに応じて、列と集計残高が動的に調整されます。</span><span class="sxs-lookup"><span data-stu-id="9430a-105">In the form, columns and aggregate balances are dynamically adjusted, depending on the layout that is configured.</span></span> <span data-ttu-id="9430a-106">チャートは、フィルター処理をサポートする視覚概要を提供します。詳細にドリルダウンすることができます。</span><span class="sxs-lookup"><span data-stu-id="9430a-106">The chart provides a visual overview that supports filtering and lets you drill down into details.</span></span> <span data-ttu-id="9430a-107">さらに、**在庫エイジング レポート** という名前のデータ エンティティを使用すると、実行された **在庫エイジング レポート ストレージ** レポートの結果を Microsoft Excel ファイルや PDF ファイルなどの形式でエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="9430a-107">Additionally, a data entity that is named **Inventory aging report** lets you export the results of an **Inventory aging report storage** report run to a format such as a Microsoft Excel file or a PDF file.</span></span>
+<span data-ttu-id="ec60e-104">Microsoft Dynamics 365 Supply Chain Management では、**在庫のエイジング レポート ストレージ** を実行して、フォームとグラフとして出力できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ec60e-104">In Microsoft Dynamics 365 Supply Chain Management, you can run an **Inventory aging report storage** report and make the output available as a form and a chart.</span></span> <span data-ttu-id="ec60e-105">フォームでは、コンフィギュレーションされているレイアウトに応じて、列と集計残高が動的に調整されます。</span><span class="sxs-lookup"><span data-stu-id="ec60e-105">In the form, columns and aggregate balances are dynamically adjusted, depending on the layout that is configured.</span></span> <span data-ttu-id="ec60e-106">チャートは、フィルター処理をサポートする視覚概要を提供します。詳細にドリルダウンすることができます。</span><span class="sxs-lookup"><span data-stu-id="ec60e-106">The chart provides a visual overview that supports filtering and lets you drill down into details.</span></span> <span data-ttu-id="ec60e-107">さらに、**在庫エイジング レポート** という名前のデータ エンティティを使用すると、実行された **在庫エイジング レポート ストレージ** レポートの結果を Microsoft Excel ファイルや PDF ファイルなどの形式でエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="ec60e-107">Additionally, a data entity that is named **Inventory aging report** lets you export the results of an **Inventory aging report storage** report run to a format such as a Microsoft Excel file or a PDF file.</span></span>
 
-<span data-ttu-id="9430a-108">**在庫エイジング レポート ストレージ** レポートを実行するこの方法は、出力に多数の行が含まれている場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="9430a-108">This method of running an **Inventory aging report storage** report is helpful in cases where the output contains many lines.</span></span> <span data-ttu-id="9430a-109">たとえば、倉庫として作成された 50,000 個の品目と 300 軒の店舗がある場合、出力には多くの明細行が含まれ、在庫エイジングは、品目、サイト、および倉庫ごとに要求します。</span><span class="sxs-lookup"><span data-stu-id="9430a-109">For example, the output will contain many lines if you have 50,000 items and 300 stores that are created as warehouses, and you request inventory aging by item, site, and warehouse.</span></span>
+<span data-ttu-id="ec60e-108">**在庫エイジング レポート ストレージ** レポートを実行するこの方法は、出力に多数の行が含まれている場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="ec60e-108">This method of running an **Inventory aging report storage** report is helpful in cases where the output contains many lines.</span></span> <span data-ttu-id="ec60e-109">たとえば、倉庫として作成された 50,000 個の品目と 300 軒の店舗がある場合、出力には多くの明細行が含まれ、在庫エイジングは、品目、サイト、および倉庫ごとに要求します。</span><span class="sxs-lookup"><span data-stu-id="ec60e-109">For example, the output will contain many lines if you have 50,000 items and 300 stores that are created as warehouses, and you request inventory aging by item, site, and warehouse.</span></span>
 
-## <a name="enable-the-inventory-value-storage-report-feature"></a><span data-ttu-id="9430a-110">在庫評価額ストレージ レポート機能を有効にします</span><span class="sxs-lookup"><span data-stu-id="9430a-110">Enable the Inventory value storage report feature</span></span>
+## <a name="enable-the-inventory-value-storage-report-feature"></a><span data-ttu-id="ec60e-110">在庫評価額ストレージ レポート機能を有効にします</span><span class="sxs-lookup"><span data-stu-id="ec60e-110">Enable the Inventory value storage report feature</span></span>
 
-<span data-ttu-id="9430a-111">この機能を使用するには、事前にシステム上で有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="9430a-111">Before you can use this feature, you must enable it on your system.</span></span> <span data-ttu-id="9430a-112">管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して機能状態を確認し、必要に応じてそれを有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="9430a-112">Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed.</span></span> <span data-ttu-id="9430a-113">この機能は次のように一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="9430a-113">Here, the feature is listed as:</span></span>
+<span data-ttu-id="ec60e-111">この機能を使用するには、事前にシステム上で有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ec60e-111">Before you can use this feature, you must enable it on your system.</span></span> <span data-ttu-id="ec60e-112">管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して機能状態を確認し、必要に応じてそれを有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="ec60e-112">Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed.</span></span> <span data-ttu-id="ec60e-113">この機能は次のように一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="ec60e-113">Here, the feature is listed as:</span></span>
 
-- <span data-ttu-id="9430a-114">**モジュール** - 原価管理</span><span class="sxs-lookup"><span data-stu-id="9430a-114">**Module** - Cost management</span></span>
-- <span data-ttu-id="9430a-115">**機能名称** - 在庫エイジング レポート ストレージ</span><span class="sxs-lookup"><span data-stu-id="9430a-115">**Feature name** - Inventory aging report storage</span></span>
+- <span data-ttu-id="ec60e-114">**モジュール** - 原価管理</span><span class="sxs-lookup"><span data-stu-id="ec60e-114">**Module** - Cost management</span></span>
+- <span data-ttu-id="ec60e-115">**機能名称** - 在庫エイジング レポート ストレージ</span><span class="sxs-lookup"><span data-stu-id="ec60e-115">**Feature name** - Inventory aging report storage</span></span>
 
-## <a name="run-an-inventory-aging-report-storage"></a><span data-ttu-id="9430a-116">在庫評価額レポート ストレージを実行する</span><span class="sxs-lookup"><span data-stu-id="9430a-116">Run an Inventory aging report storage</span></span>
+## <a name="run-an-inventory-aging-report-storage"></a><span data-ttu-id="ec60e-116">在庫評価額レポート ストレージを実行する</span><span class="sxs-lookup"><span data-stu-id="ec60e-116">Run an Inventory aging report storage</span></span>
 
-1. <span data-ttu-id="9430a-117">**原価管理 \> 照会およびレポート \> 在庫エイジング レポート ストレージ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="9430a-117">Go to **Cost management \> Inquiries and reports \> Inventory aging report storage**.</span></span>
-1. <span data-ttu-id="9430a-118">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9430a-118">Select **New**.</span></span>
-1. <span data-ttu-id="9430a-119">**プロセス ID – 名前** フィールドに、レポートの固有の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="9430a-119">In the **Process Identifier – Name** field, enter a unique name for the report.</span></span>
-1. <span data-ttu-id="9430a-120">**ID – ID** レポートを選択し、必要に応じてフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="9430a-120">Select the **Identification – ID** report, and filter it as you require.</span></span>
+1. <span data-ttu-id="ec60e-117">**原価管理 \> 照会およびレポート \> 在庫エイジング レポート ストレージ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ec60e-117">Go to **Cost management \> Inquiries and reports \> Inventory aging report storage**.</span></span>
+1. <span data-ttu-id="ec60e-118">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ec60e-118">Select **New**.</span></span>
+1. <span data-ttu-id="ec60e-119">**プロセス ID – 名前** フィールドに、レポートの固有の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="ec60e-119">In the **Process Identifier – Name** field, enter a unique name for the report.</span></span>
+1. <span data-ttu-id="ec60e-120">**ID – ID** レポートを選択し、必要に応じてフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="ec60e-120">Select the **Identification – ID** report, and filter it as you require.</span></span>
 
-    <span data-ttu-id="9430a-121">レポートの実行は、常にバッチ ジョブで行われます。</span><span class="sxs-lookup"><span data-stu-id="9430a-121">Report execution is always done in a batch job.</span></span>
+    <span data-ttu-id="ec60e-121">レポートの実行は、常にバッチ ジョブで行われます。</span><span class="sxs-lookup"><span data-stu-id="ec60e-121">Report execution is always done in a batch job.</span></span>
 
-1. <span data-ttu-id="9430a-122">バッチ ジョブが完了すると、出力は **在庫エイジング レポート ストレージ** ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="9430a-122">After the batch job is completed, the output is shown on the **Inventory aging report storage** page.</span></span>
-1. <span data-ttu-id="9430a-123">従来のグリッド レイアウトを持つフォームとして出力を表示するには、**詳細の表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9430a-123">To view the output as a form that has a traditional grid layout, select **View details**.</span></span> <span data-ttu-id="9430a-124">集計グラフとして出力を表示するには、**グラフの表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9430a-124">To view the output as an aggregated chart, select **View chart**.</span></span>
+1. <span data-ttu-id="ec60e-122">バッチ ジョブが完了すると、出力は **在庫エイジング レポート ストレージ** ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="ec60e-122">After the batch job is completed, the output is shown on the **Inventory aging report storage** page.</span></span>
+1. <span data-ttu-id="ec60e-123">従来のグリッド レイアウトを持つフォームとして出力を表示するには、**詳細の表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ec60e-123">To view the output as a form that has a traditional grid layout, select **View details**.</span></span> <span data-ttu-id="ec60e-124">集計グラフとして出力を表示するには、**グラフの表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ec60e-124">To view the output as an aggregated chart, select **View chart**.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="9430a-125">フォームには、レポート レイアウトで定義されている小計は含まれません。</span><span class="sxs-lookup"><span data-stu-id="9430a-125">The form won't include subtotals that are defined in the report layout.</span></span>
+    > <span data-ttu-id="ec60e-125">フォームには、レポート レイアウトで定義されている小計は含まれません。</span><span class="sxs-lookup"><span data-stu-id="ec60e-125">The form won't include subtotals that are defined in the report layout.</span></span>
 
-<span data-ttu-id="9430a-126">**在庫エイジング レポート** データ エンティティを使用すると、**プロセス ID – 名前** フィールドのフィルターを、データ管理がサポートする形式に適用することにより、**在庫エイジング レポート ストレージ** レポートをエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="9430a-126">The **Inventory aging report** data entity lets you export the output of an **Inventory aging report storage** report by applying a filter for the **Process Identifier – Name** field to any format that Data management supports.</span></span>
+<span data-ttu-id="ec60e-126">**在庫エイジング レポート** データ エンティティを使用すると、**プロセス ID – 名前** フィールドのフィルターを、データ管理がサポートする形式に適用することにより、**在庫エイジング レポート ストレージ** レポートをエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="ec60e-126">The **Inventory aging report** data entity lets you export the output of an **Inventory aging report storage** report by applying a filter for the **Process Identifier – Name** field to any format that Data management supports.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

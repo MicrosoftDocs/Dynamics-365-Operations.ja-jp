@@ -1,12 +1,10 @@
 ---
 title: メンテナンス予算の更新
 description: このトピックでは、資産管理でメンテナンス予算を更新する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,66 +12,66 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 21aba6224bba98eb9bbb423847e123616003b5d9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 01620e1cca17d3c2b08b3abcdf9a4482693f0409
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253473"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809833"
 ---
-# <a name="update-maintenance-budgets"></a><span data-ttu-id="6a1f1-103">メンテナンス予算の更新</span><span class="sxs-lookup"><span data-stu-id="6a1f1-103">Update maintenance budgets</span></span>
+# <a name="update-maintenance-budgets"></a><span data-ttu-id="e3152-103">メンテナンス予算の更新</span><span class="sxs-lookup"><span data-stu-id="e3152-103">Update maintenance budgets</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="6a1f1-104">**メンテナンス予算明細行** ページには、**メンテナンス予算** ページで選択した予算に対して作成されたすべての予算明細行が表示されます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-104">The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page.</span></span> <span data-ttu-id="6a1f1-105">詳細については、[メンテナンス予算の作成](create-maintenance-budget.md)を参照してください。メンテナンス予算が承認されるまで、メンテナンス予算明細行を再計算および調整できます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-105">(For more information, see [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved.</span></span> <span data-ttu-id="6a1f1-106">予算期間が過ぎ、原価が資産管理に転記された後は、実際原価で予算明細行を更新することもできます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-106">After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.</span></span>
+<span data-ttu-id="e3152-104">**メンテナンス予算明細行** ページには、**メンテナンス予算** ページで選択した予算に対して作成されたすべての予算明細行が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e3152-104">The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page.</span></span> <span data-ttu-id="e3152-105">詳細については、[メンテナンス予算の作成](create-maintenance-budget.md)を参照してください。メンテナンス予算が承認されるまで、メンテナンス予算明細行を再計算および調整できます。</span><span class="sxs-lookup"><span data-stu-id="e3152-105">(For more information, see [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved.</span></span> <span data-ttu-id="e3152-106">予算期間が過ぎ、原価が資産管理に転記された後は、実際原価で予算明細行を更新することもできます。</span><span class="sxs-lookup"><span data-stu-id="e3152-106">After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.</span></span>
 
-## <a name="recalculate-a-maintenance-budget"></a><span data-ttu-id="6a1f1-107">メンテナンス予算の再計算</span><span class="sxs-lookup"><span data-stu-id="6a1f1-107">Recalculate a maintenance budget</span></span>
+## <a name="recalculate-a-maintenance-budget"></a><span data-ttu-id="e3152-107">メンテナンス予算の再計算</span><span class="sxs-lookup"><span data-stu-id="e3152-107">Recalculate a maintenance budget</span></span>
 
-<span data-ttu-id="6a1f1-108">**メンテナンス予算明細行** ページで、メンテナンス予算を再計算できます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-108">You can recalculate a maintenance budget on the **Maintenance budget lines** page.</span></span> <span data-ttu-id="6a1f1-109">メンテナンス予算を再計算すると、既存の予算明細行が削除され、新しい計算が実行されます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-109">When you recalculate a maintenance budget, the existing budget lines are deleted, and a new calculation is done.</span></span>
+<span data-ttu-id="e3152-108">**メンテナンス予算明細行** ページで、メンテナンス予算を再計算できます。</span><span class="sxs-lookup"><span data-stu-id="e3152-108">You can recalculate a maintenance budget on the **Maintenance budget lines** page.</span></span> <span data-ttu-id="e3152-109">メンテナンス予算を再計算すると、既存の予算明細行が削除され、新しい計算が実行されます。</span><span class="sxs-lookup"><span data-stu-id="e3152-109">When you recalculate a maintenance budget, the existing budget lines are deleted, and a new calculation is done.</span></span>
 
-1. <span data-ttu-id="6a1f1-110">**メンテナンス予算明細行** ページで、**再計算** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-110">On the **Maintenance budget lines** page, select **Recalculate**.</span></span>
-2. <span data-ttu-id="6a1f1-111">**予算の再計算** ダイアログボックスで、新しい計算に必要な変更を行い、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-111">In the **Recalculate budget** dialog box, make the required changes for the new calculation, and then select **OK**.</span></span>
+1. <span data-ttu-id="e3152-110">**メンテナンス予算明細行** ページで、**再計算** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3152-110">On the **Maintenance budget lines** page, select **Recalculate**.</span></span>
+2. <span data-ttu-id="e3152-111">**予算の再計算** ダイアログボックスで、新しい計算に必要な変更を行い、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3152-111">In the **Recalculate budget** dialog box, make the required changes for the new calculation, and then select **OK**.</span></span>
 
-<span data-ttu-id="6a1f1-112">新しい予算明細行は、設定した値に従って作成されます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-112">New budget lines are created according to the values that you set.</span></span>
+<span data-ttu-id="e3152-112">新しい予算明細行は、設定した値に従って作成されます。</span><span class="sxs-lookup"><span data-stu-id="e3152-112">New budget lines are created according to the values that you set.</span></span>
 
-## <a name="adjust-budget-lines"></a><span data-ttu-id="6a1f1-113">予算明細行の調整</span><span class="sxs-lookup"><span data-stu-id="6a1f1-113">Adjust budget lines</span></span>
+## <a name="adjust-budget-lines"></a><span data-ttu-id="e3152-113">予算明細行の調整</span><span class="sxs-lookup"><span data-stu-id="e3152-113">Adjust budget lines</span></span>
 
-<span data-ttu-id="6a1f1-114">メンテナンス予算全体を再計算する代わりに、予算原価に関連する選択された明細行を調整できます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-114">Instead of recalculating the whole maintenance budget, you can adjust selected lines that are related to budget costs.</span></span>
+<span data-ttu-id="e3152-114">メンテナンス予算全体を再計算する代わりに、予算原価に関連する選択された明細行を調整できます。</span><span class="sxs-lookup"><span data-stu-id="e3152-114">Instead of recalculating the whole maintenance budget, you can adjust selected lines that are related to budget costs.</span></span>
 
-1. <span data-ttu-id="6a1f1-115">**メンテナンス予算明細行** ページで、予算原価を更新する明細行を選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-115">On the **Maintenance budget lines** page, select the lines to update the budget cost for.</span></span>
-2. <span data-ttu-id="6a1f1-116">**調整** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-116">Select **Adjust**.</span></span>
-3. <span data-ttu-id="6a1f1-117">選択した明細行に金額を追加するには、**原価の追加** チェック ボックスをオンにし、**値の追加** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-117">To add an amount to the selected lines, select the **Add cost** check box, and then enter the value in the **Add value** field.</span></span>
-4. <span data-ttu-id="6a1f1-118">選択した予算明細行のの予算原価に係数を乗算するには、**原価を乗算** チェック ボックスをオンにし、**乗算値** フィールドに係数を入力します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-118">To multiply the budget cost on the selected budget lines by a factor, select the **Multiply cost** check box, and enter the factor in the **Multiply value** field.</span></span>
+1. <span data-ttu-id="e3152-115">**メンテナンス予算明細行** ページで、予算原価を更新する明細行を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3152-115">On the **Maintenance budget lines** page, select the lines to update the budget cost for.</span></span>
+2. <span data-ttu-id="e3152-116">**調整** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3152-116">Select **Adjust**.</span></span>
+3. <span data-ttu-id="e3152-117">選択した明細行に金額を追加するには、**原価の追加** チェック ボックスをオンにし、**値の追加** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e3152-117">To add an amount to the selected lines, select the **Add cost** check box, and then enter the value in the **Add value** field.</span></span>
+4. <span data-ttu-id="e3152-118">選択した予算明細行のの予算原価に係数を乗算するには、**原価を乗算** チェック ボックスをオンにし、**乗算値** フィールドに係数を入力します。</span><span class="sxs-lookup"><span data-stu-id="e3152-118">To multiply the budget cost on the selected budget lines by a factor, select the **Multiply cost** check box, and enter the factor in the **Multiply value** field.</span></span>
 
-    <span data-ttu-id="6a1f1-119">たとえば、**乗算値** フィールドに **1.2** と入力すると、選択した明細行の予算原価が 20 パーセント増加します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-119">For example, if you enter **1.2** in the **Multiply value** field, you increase the budget cost on the selected lines by 20 percent.</span></span> <span data-ttu-id="6a1f1-120">**0.7** を入力すると、選択した明細行の予算原価が 30 パーセント減少します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-120">If you enter **0.7**, you reduce the budget cost on the selected lines by 30 percent.</span></span>
+    <span data-ttu-id="e3152-119">たとえば、**乗算値** フィールドに **1.2** と入力すると、選択した明細行の予算原価が 20 パーセント増加します。</span><span class="sxs-lookup"><span data-stu-id="e3152-119">For example, if you enter **1.2** in the **Multiply value** field, you increase the budget cost on the selected lines by 20 percent.</span></span> <span data-ttu-id="e3152-120">**0.7** を入力すると、選択した明細行の予算原価が 30 パーセント減少します。</span><span class="sxs-lookup"><span data-stu-id="e3152-120">If you enter **0.7**, you reduce the budget cost on the selected lines by 30 percent.</span></span>
 
-5. <span data-ttu-id="6a1f1-121">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-121">Select **OK**.</span></span>
+5. <span data-ttu-id="e3152-121">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3152-121">Select **OK**.</span></span>
 
-<span data-ttu-id="6a1f1-122">選択された予算明細行は、手順 3 または 4 で設定した値に従って更新されます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-122">The selected budget lines are updated according to the values that you set in step 3 or 4.</span></span>
+<span data-ttu-id="e3152-122">選択された予算明細行は、手順 3 または 4 で設定した値に従って更新されます。</span><span class="sxs-lookup"><span data-stu-id="e3152-122">The selected budget lines are updated according to the values that you set in step 3 or 4.</span></span>
 
-## <a name="update-actual-costs"></a><span data-ttu-id="6a1f1-123">実際原価の更新</span><span class="sxs-lookup"><span data-stu-id="6a1f1-123">Update actual costs</span></span>
+## <a name="update-actual-costs"></a><span data-ttu-id="e3152-123">実際原価の更新</span><span class="sxs-lookup"><span data-stu-id="e3152-123">Update actual costs</span></span>
 
-<span data-ttu-id="6a1f1-124">予算明細行の日付が過ぎ、実際原価が資産管理に転記された後は、メンテナンス予算で実際原価を更新することもできます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-124">After the dates on the budget lines have passed, and actual costs have been posted in Asset Management, you can update the actual costs on the maintenance budget.</span></span>
+<span data-ttu-id="e3152-124">予算明細行の日付が過ぎ、実際原価が資産管理に転記された後は、メンテナンス予算で実際原価を更新することもできます。</span><span class="sxs-lookup"><span data-stu-id="e3152-124">After the dates on the budget lines have passed, and actual costs have been posted in Asset Management, you can update the actual costs on the maintenance budget.</span></span>
 
-1. <span data-ttu-id="6a1f1-125">**メンテナンス予算明細行** ページで、**原価の更新** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-125">On the **Maintenance budget lines** page, select **Update cost**.</span></span>
-2. <span data-ttu-id="6a1f1-126">**実際原価の計算** ダイアログ ボックスで、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-126">In the **Calculate actual cost** dialog box, select **OK**.</span></span>
+1. <span data-ttu-id="e3152-125">**メンテナンス予算明細行** ページで、**原価の更新** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3152-125">On the **Maintenance budget lines** page, select **Update cost**.</span></span>
+2. <span data-ttu-id="e3152-126">**実際原価の計算** ダイアログ ボックスで、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3152-126">In the **Calculate actual cost** dialog box, select **OK**.</span></span>
 
-<span data-ttu-id="6a1f1-127">実際原価が転記されている場合は、予算明細行の **実際原価** フィールドが更新されます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-127">The **Actual cost** fields on the budget lines are updated if actual costs have been posted.</span></span> <span data-ttu-id="6a1f1-128">予算を作成してから新しい資産タイプが作成され、これらの資産タイプが、作業指示書が作成され関連原価が転記された資産で使用されている場合、新しい予算明細行が生成される場合があります。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-128">New budget lines might be generated if new asset types have been created since you created the budget, and if those asset types have been used on assets that work orders have been created for and related costs have been posted for.</span></span> <span data-ttu-id="6a1f1-129">予算原価が計算されないため、新しい予算明細行には実際原価のみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-129">New budget lines show only actual costs, because no budget costs were calculated for them.</span></span>
+<span data-ttu-id="e3152-127">実際原価が転記されている場合は、予算明細行の **実際原価** フィールドが更新されます。</span><span class="sxs-lookup"><span data-stu-id="e3152-127">The **Actual cost** fields on the budget lines are updated if actual costs have been posted.</span></span> <span data-ttu-id="e3152-128">予算を作成してから新しい資産タイプが作成され、これらの資産タイプが、作業指示書が作成され関連原価が転記された資産で使用されている場合、新しい予算明細行が生成される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e3152-128">New budget lines might be generated if new asset types have been created since you created the budget, and if those asset types have been used on assets that work orders have been created for and related costs have been posted for.</span></span> <span data-ttu-id="e3152-129">予算原価が計算されないため、新しい予算明細行には実際原価のみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e3152-129">New budget lines show only actual costs, because no budget costs were calculated for them.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="6a1f1-130">予防的コスト、修正コスト、および投資コストに分割された実際原価の概要を表示するには、**資産原価管理** ページで同じ期間に対して計算を実行します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-130">To see an overview of actual costs divided into preventive, corrective, and investment costs, you can do a calculation for the same period on the **Asset cost control** page.</span></span> 
+> <span data-ttu-id="e3152-130">予防的コスト、修正コスト、および投資コストに分割された実際原価の概要を表示するには、**資産原価管理** ページで同じ期間に対して計算を実行します。</span><span class="sxs-lookup"><span data-stu-id="e3152-130">To see an overview of actual costs divided into preventive, corrective, and investment costs, you can do a calculation for the same period on the **Asset cost control** page.</span></span> 
 
-## <a name="manually-add-budget-lines"></a><span data-ttu-id="6a1f1-131">手動で予算明細行を追加する</span><span class="sxs-lookup"><span data-stu-id="6a1f1-131">Manually add budget lines</span></span>
+## <a name="manually-add-budget-lines"></a><span data-ttu-id="e3152-131">手動で予算明細行を追加する</span><span class="sxs-lookup"><span data-stu-id="e3152-131">Manually add budget lines</span></span>
 
-<span data-ttu-id="6a1f1-132">**メンテナンス予算明細行** ページで **新規** を選択し、明細行で選択を行うことにより、新しい予算明細行を手動で追加できます。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-132">On the **Maintenance budget lines** page, you can manually add a new budget line by selecting **New** and then making selections on the line.</span></span> <span data-ttu-id="6a1f1-133">次の例では、このアプローチが役立つ状況の例を示します。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-133">Here are some examples of situations where this approach might be useful:</span></span>
+<span data-ttu-id="e3152-132">**メンテナンス予算明細行** ページで **新規** を選択し、明細行で選択を行うことにより、新しい予算明細行を手動で追加できます。</span><span class="sxs-lookup"><span data-stu-id="e3152-132">On the **Maintenance budget lines** page, you can manually add a new budget line by selecting **New** and then making selections on the line.</span></span> <span data-ttu-id="e3152-133">次の例では、このアプローチが役立つ状況の例を示します。</span><span class="sxs-lookup"><span data-stu-id="e3152-133">Here are some examples of situations where this approach might be useful:</span></span>
 
-- <span data-ttu-id="6a1f1-134">一部の資産の改修は現在計画段階にありますが、関連するジョブはまだ資産管理に作成されていないことがわかっています。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-134">You know that refurbishment of some assets is currently in the planning phase, but related jobs haven't yet been created in Asset Management.</span></span> <span data-ttu-id="6a1f1-135">ただし、これらのジョブの予算原価をメンテナンス予算に含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-135">However, you want budget costs for those jobs to be included in the maintenance budget.</span></span>
-- <span data-ttu-id="6a1f1-136">メンテナンス予算を作成してから新しい資産または資産タイプが作成されましたが、メンテナンス計画はそれらの資産または資産タイプに対してまだ設定されていません。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-136">New assets or asset types have been created since you made the maintenance budget, but maintenance plans haven't yet been set up on those assets or asset types.</span></span> <span data-ttu-id="6a1f1-137">ただし、これらの資産タイプの予算原価をメンテナンス予算に含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a1f1-137">However, you want budget costs for those asset types to be included in the maintenance budget.</span></span>
+- <span data-ttu-id="e3152-134">一部の資産の改修は現在計画段階にありますが、関連するジョブはまだ資産管理に作成されていないことがわかっています。</span><span class="sxs-lookup"><span data-stu-id="e3152-134">You know that refurbishment of some assets is currently in the planning phase, but related jobs haven't yet been created in Asset Management.</span></span> <span data-ttu-id="e3152-135">ただし、これらのジョブの予算原価をメンテナンス予算に含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3152-135">However, you want budget costs for those jobs to be included in the maintenance budget.</span></span>
+- <span data-ttu-id="e3152-136">メンテナンス予算を作成してから新しい資産または資産タイプが作成されましたが、メンテナンス計画はそれらの資産または資産タイプに対してまだ設定されていません。</span><span class="sxs-lookup"><span data-stu-id="e3152-136">New assets or asset types have been created since you made the maintenance budget, but maintenance plans haven't yet been set up on those assets or asset types.</span></span> <span data-ttu-id="e3152-137">ただし、これらの資産タイプの予算原価をメンテナンス予算に含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3152-137">However, you want budget costs for those asset types to be included in the maintenance budget.</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
