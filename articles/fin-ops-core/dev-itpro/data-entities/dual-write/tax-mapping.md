@@ -2,7 +2,6 @@
 title: 統合された税
 description: このトピックでは、Finance and Operations と Dataverse 間の税データの統合について説明します。
 author: robinarh
-manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
@@ -17,14 +16,14 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7501ef21492a96c81b971e1d9077beaba9be897b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a7992520b57b4c19b6dc8e13bd8e9ffc87b40f5a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560340"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750645"
 ---
-# <a name="integrated-tax"></a><span data-ttu-id="998b5-103">統合された税</span><span class="sxs-lookup"><span data-stu-id="998b5-103">Integrated tax</span></span>
+# <a name="integrated-tax"></a><span data-ttu-id="3d9d5-103">統合された税</span><span class="sxs-lookup"><span data-stu-id="3d9d5-103">Integrated tax</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
@@ -32,21 +31,21 @@ ms.locfileid: "5560340"
 
 
 
-<span data-ttu-id="998b5-104">税設定データでは、間接税 (VAT、GST、売上税) および源泉徴収税の両方の設定が定義されます。</span><span class="sxs-lookup"><span data-stu-id="998b5-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="998b5-105">税金計算ルール、税率、税務会計、決済、およびその他の概念について説明します。</span><span class="sxs-lookup"><span data-stu-id="998b5-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
+<span data-ttu-id="3d9d5-104">税設定データでは、間接税 (VAT、GST、売上税) および源泉徴収税の両方の設定が定義されます。</span><span class="sxs-lookup"><span data-stu-id="3d9d5-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="3d9d5-105">税金計算ルール、税率、税務会計、決済、およびその他の概念について説明します。</span><span class="sxs-lookup"><span data-stu-id="3d9d5-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
 
-## <a name="templates"></a><span data-ttu-id="998b5-106">テンプレート</span><span class="sxs-lookup"><span data-stu-id="998b5-106">Templates</span></span>
+## <a name="templates"></a><span data-ttu-id="3d9d5-106">テンプレート</span><span class="sxs-lookup"><span data-stu-id="3d9d5-106">Templates</span></span>
 
-<span data-ttu-id="998b5-107">次の表に示すように、税データには、データ操作中に連携して動作するテーブル マップのコレクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="998b5-107">Tax data includes a collection of table maps that work together during data interaction, as shown in the following table.</span></span>
+<span data-ttu-id="3d9d5-107">次の表に示すように、税データには、データ操作中に連携して動作するテーブル マップのコレクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="3d9d5-107">Tax data includes a collection of table maps that work together during data interaction, as shown in the following table.</span></span>
 
-<span data-ttu-id="998b5-108">Finance and Operations アプリ</span><span class="sxs-lookup"><span data-stu-id="998b5-108">Finance and Operations apps</span></span> | <span data-ttu-id="998b5-109">Dynamics 365 のモデル駆動型アプリ</span><span class="sxs-lookup"><span data-stu-id="998b5-109">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="998b5-110">説明</span><span class="sxs-lookup"><span data-stu-id="998b5-110">Description</span></span> |
+<span data-ttu-id="3d9d5-108">Finance and Operations アプリ</span><span class="sxs-lookup"><span data-stu-id="3d9d5-108">Finance and Operations apps</span></span> | <span data-ttu-id="3d9d5-109">Dynamics 365 のモデル駆動型アプリ</span><span class="sxs-lookup"><span data-stu-id="3d9d5-109">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="3d9d5-110">説明</span><span class="sxs-lookup"><span data-stu-id="3d9d5-110">Description</span></span> |
 -------------------------|---------------------------------|----|
-<span data-ttu-id="998b5-111">品目売上税グループ</span><span class="sxs-lookup"><span data-stu-id="998b5-111">Item sales tax group</span></span> | <span data-ttu-id="998b5-112">msdyn_taxitemgroups</span><span class="sxs-lookup"><span data-stu-id="998b5-112">msdyn_taxitemgroups</span></span> |
-<span data-ttu-id="998b5-113">消費税所轄官庁</span><span class="sxs-lookup"><span data-stu-id="998b5-113">Sales tax authorities</span></span> | <span data-ttu-id="998b5-114">msdyn_taxauthorities</span><span class="sxs-lookup"><span data-stu-id="998b5-114">msdyn_taxauthorities</span></span> |
-<span data-ttu-id="998b5-115">消費税非課税コード エンティティ CDS</span><span class="sxs-lookup"><span data-stu-id="998b5-115">Sales tax exempt code entity CDS</span></span> | <span data-ttu-id="998b5-116">msdyn_taxexemptcodes</span><span class="sxs-lookup"><span data-stu-id="998b5-116">msdyn_taxexemptcodes</span></span> |
-<span data-ttu-id="998b5-117">消費税グループ</span><span class="sxs-lookup"><span data-stu-id="998b5-117">Sales tax groups</span></span> | <span data-ttu-id="998b5-118">msdyn_taxgroups</span><span class="sxs-lookup"><span data-stu-id="998b5-118">msdyn_taxgroups</span></span> |
-<span data-ttu-id="998b5-119">消費税元帳転記グループ V2</span><span class="sxs-lookup"><span data-stu-id="998b5-119">Sales tax ledger posting groups V2</span></span> | <span data-ttu-id="998b5-120">msdyn_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="998b5-120">msdyn_taxpostinggroups</span></span> |
-<span data-ttu-id="998b5-121">源泉徴収税コード</span><span class="sxs-lookup"><span data-stu-id="998b5-121">Withholding tax codes</span></span> | <span data-ttu-id="998b5-122">msdyn_withholdingtaxcodes</span><span class="sxs-lookup"><span data-stu-id="998b5-122">msdyn_withholdingtaxcodes</span></span> |
-<span data-ttu-id="998b5-123">源泉徴収税グループ</span><span class="sxs-lookup"><span data-stu-id="998b5-123">Withholding tax groups</span></span> | <span data-ttu-id="998b5-124">msdyn_withholdingtaxgroups</span><span class="sxs-lookup"><span data-stu-id="998b5-124">msdyn_withholdingtaxgroups</span></span> | 
+<span data-ttu-id="3d9d5-111">品目売上税グループ</span><span class="sxs-lookup"><span data-stu-id="3d9d5-111">Item sales tax group</span></span> | <span data-ttu-id="3d9d5-112">msdyn_taxitemgroups</span><span class="sxs-lookup"><span data-stu-id="3d9d5-112">msdyn_taxitemgroups</span></span> |
+<span data-ttu-id="3d9d5-113">消費税所轄官庁</span><span class="sxs-lookup"><span data-stu-id="3d9d5-113">Sales tax authorities</span></span> | <span data-ttu-id="3d9d5-114">msdyn_taxauthorities</span><span class="sxs-lookup"><span data-stu-id="3d9d5-114">msdyn_taxauthorities</span></span> |
+<span data-ttu-id="3d9d5-115">消費税非課税コード エンティティ CDS</span><span class="sxs-lookup"><span data-stu-id="3d9d5-115">Sales tax exempt code entity CDS</span></span> | <span data-ttu-id="3d9d5-116">msdyn_taxexemptcodes</span><span class="sxs-lookup"><span data-stu-id="3d9d5-116">msdyn_taxexemptcodes</span></span> |
+<span data-ttu-id="3d9d5-117">消費税グループ</span><span class="sxs-lookup"><span data-stu-id="3d9d5-117">Sales tax groups</span></span> | <span data-ttu-id="3d9d5-118">msdyn_taxgroups</span><span class="sxs-lookup"><span data-stu-id="3d9d5-118">msdyn_taxgroups</span></span> |
+<span data-ttu-id="3d9d5-119">消費税元帳転記グループ V2</span><span class="sxs-lookup"><span data-stu-id="3d9d5-119">Sales tax ledger posting groups V2</span></span> | <span data-ttu-id="3d9d5-120">msdyn_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="3d9d5-120">msdyn_taxpostinggroups</span></span> |
+<span data-ttu-id="3d9d5-121">源泉徴収税コード</span><span class="sxs-lookup"><span data-stu-id="3d9d5-121">Withholding tax codes</span></span> | <span data-ttu-id="3d9d5-122">msdyn_withholdingtaxcodes</span><span class="sxs-lookup"><span data-stu-id="3d9d5-122">msdyn_withholdingtaxcodes</span></span> |
+<span data-ttu-id="3d9d5-123">源泉徴収税グループ</span><span class="sxs-lookup"><span data-stu-id="3d9d5-123">Withholding tax groups</span></span> | <span data-ttu-id="3d9d5-124">msdyn_withholdingtaxgroups</span><span class="sxs-lookup"><span data-stu-id="3d9d5-124">msdyn_withholdingtaxgroups</span></span> | 
 
 
 [!include [banner](../../includes/dual-write-symbols.md)]
