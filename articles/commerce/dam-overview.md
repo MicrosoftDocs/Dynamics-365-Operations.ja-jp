@@ -2,11 +2,9 @@
 title: デジタル資産管理の概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのデジタル資産管理の概要を示します。
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5e134c70ad81876beacd38eb58442d3784d57d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 46a61db1add12bb90f3915cf0390dc78c8dce033
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222513"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799280"
 ---
 # <a name="digital-asset-management-overview"></a>デジタル資産管理の概要
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのデジタル資産管理の概要を示します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce サイト ビルダーのメディア ライブラリー機能には、次のようなリッチデジタル資産管理機能が含まれています。
 - 画像資産

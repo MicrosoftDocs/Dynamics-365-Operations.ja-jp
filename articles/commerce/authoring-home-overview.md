@@ -2,11 +2,9 @@
 title: 作成ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
 author: brendans
-manager: annbe
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 030fa93e938df0ab22dd3e85c2d48d149ac239df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b5e1e7dd669a9608d385086cf24d388b065c9ca6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211300"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799880"
 ---
 # <a name="authoring-page-overview"></a>作成ページの概要
 
@@ -29,8 +27,6 @@ ms.locfileid: "5211300"
  [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
-
-## <a name="overview"></a>概要
 
 さまざまなビジネスのニーズをサポートする Web サイトを作成することができます。 これらは、業務全体を代表して、ビジネスの単一チャネルを提供したり、特定の対象者または対象者のセグメントをターゲットにすることができます。 たとえば、衣料品メーカーは、所有するすべてのブランドを紹介する Web サイトを持っている場合があります。 同じ衣料品メーカーは、これらのブランドごとに個別の Web サイトを持ち、高級ファッション、アウトドアファッション、子供用ファッションを特徴とする一連の Web サイトを持っている場合があります。
 

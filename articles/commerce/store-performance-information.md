@@ -2,11 +2,9 @@
 title: 店舗パフォーマンスの分析
 description: この記事では、アクセスしたり、参照したり、Dynamics 365 Commerce データに基づいて、店舗パフォーマンスについての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
 author: ashishmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailChannelReport, RetailChannelManagementWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aced862e279135e25ca7380b746ae19b97227d10
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4d70012051ebd78913be17ad359714f81fa137b7
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234248"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795288"
 ---
 # <a name="analyze-store-performance"></a>店舗のパフォーマンスの分析
 

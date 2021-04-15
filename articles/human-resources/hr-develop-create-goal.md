@@ -2,11 +2,9 @@
 title: 目標の作成
 description: 目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。
 author: andreabichsel
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings, HcmEmployeeDevelopmentWorkspace
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9d2a8b50f88e1f321e376923ba1da8497cedc89f
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 82104e401f21c459081f48a5d1f9a0a264288106
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465033"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794832"
 ---
 # <a name="create-a-goal"></a>目標の作成
 

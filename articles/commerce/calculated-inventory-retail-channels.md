@@ -2,11 +2,9 @@
 title: 小売チャネルの引当可能在庫数量の計算
 description: このトピックでは、店舗およびオンライン チャネルの手持在庫を表示するために使用できるオプションについて説明します。
 author: hhainesms
-manager: annbe
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: ff60ef23c7e19e3f2f97d56fd416e0018a0c324d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 29efccab017d9dff98872871bfe953fba19d2c30
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213261"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799688"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>小売チャンネルの引当可能在庫数量の計算
 

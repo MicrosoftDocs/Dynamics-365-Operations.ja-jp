@@ -2,11 +2,9 @@
 title: クイック ビュー モジュール
 description: このトピックでは、クイック ビュー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 07fbf8d4115561808b7c61489b343e1c72dd1b6d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d7e88163fd9b8dc4f5636ed29e2c4248aece52bf
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243796"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792174"
 ---
 # <a name="quick-view-module"></a>クイック ビュー モジュール
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、クイック ビュー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 

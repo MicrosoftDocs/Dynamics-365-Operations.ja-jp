@@ -2,7 +2,6 @@
 title: 国コンテキスト依存の ER モデル マッピングのコンフィギュレーション
 description: このトピックでは、使用を制御する法人の国/地域コンテキストによって異なる、ER モデル マッピングを設定する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 48d2e3c81d038cc55f6f100f3081561506946199
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 83cd99350f58a56d121d694393edc4eb98af728a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562289"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753771"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>国コンテキスト依存の ER モデル マッピングのコンフィギュレーション
 

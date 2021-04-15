@@ -2,11 +2,9 @@
 title: 販売担当者の機能プロファイルのコンフィギュレーション
 description: この手順は、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。
 author: jblucher
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 920e092593bffff77123670089ebe992796b5fc4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 49a4e0eb78806eded68f1dd1742000c869fe118d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257000"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796853"
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a>販売担当者の機能プロファイルのコンフィギュレーション
 

@@ -2,8 +2,7 @@
 title: SPLITLIST ER 関数
 description: このトピックでは、SPLITLIST 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af8c413726ca8d9f92eff18807e7fa9002fc9d37
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 99e199e238b3132622a8b305895637b430e8f6d2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559141"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745572"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST ER 関数
 
@@ -29,10 +28,16 @@ ms.locfileid: "5559141"
 
 `SPLITLIST` 関数は、指定されたリストをサブリスト (またはバッチ) に分割します。各サブリストには指定されたレコード数が含まれます。 その後、結果をバッチで構成された新しい *レコード リスト* 値として返します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax-1"></a>構文 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## <a name="syntax-2"></a>構文 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>引数
@@ -44,6 +49,10 @@ SPLITLIST (list, number)
 `number`: *整数*
 
 バッチごとのレコードの最大数
+
+`on-demand reading flag`: *ブール値*
+
+サブリストの要素をオンデマンドで生成すべきかどうかを指定する *ブール* 値。
 
 ## <a name="return-values"></a>戻り値
 
@@ -62,6 +71,8 @@ SPLITLIST (list, number)
 - **Batchnumber:** *整数*
 
     返されたリスト内の現在のバッチ数。
+
+需要の読み取りフラグが **True** に設定されている場合、サブリストは要求時に生成され、メモリ消費の減少が可能になりますが、要素が順番に使用されていないと、パフォーマンスが低下する可能性があります。
 
 ## <a name="example"></a>例
 

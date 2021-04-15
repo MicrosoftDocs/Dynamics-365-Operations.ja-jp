@@ -2,11 +2,9 @@
 title: 数時間後にバッチ ジョブのスケジュールを設定して、パフォーマンスを最適化する
 description: このトピックでは、数時間後の実行時間が長いバッチ ジョブのスケジュールを設定して、Microsoft Dynamics 365 Human Resources でのパフォーマンスに関する問題を解決する方法について説明します。
 author: andreabichsel
-manager: tfehr
 ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 0b13853598bbdec239bce98029e534991a53876b
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 92dd281ed718be5c7ebd843d015c108ee121f30a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467220"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794928"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>数時間後にバッチ ジョブのスケジュールを設定して、パフォーマンスを最適化する
 

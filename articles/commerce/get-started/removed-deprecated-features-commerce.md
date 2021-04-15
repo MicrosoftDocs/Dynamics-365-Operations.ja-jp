@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
-manager: AnnBe
 ms.date: 01/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 357f4673d77ee990c4e1b0ce84a704fd4d778402
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ccfbab6055b8b64ce0926cda04090583e0d7a6ae
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240222"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797183"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -36,9 +34,6 @@ ms.locfileid: "5240222"
 > Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Commerce 10.0.17 リリースの削除済みまたは非推奨の機能
-
-> [!Important]
-> バージョン 10.0.17 は、プレビュー リリースの一部として使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[1 つのバージョンのサービス更新に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version)を参照してください。
 
 ### <a name="full-dataset-generation-interval-is-deprecated"></a>完全なデータセットの生成間隔は削除されます
 

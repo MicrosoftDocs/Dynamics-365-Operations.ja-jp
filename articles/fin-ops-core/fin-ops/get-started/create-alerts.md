@@ -1,8 +1,7 @@
 ---
 title: 警告ルールの作成
-description: このトピックでは、警告に関する情報を提供し、警告ルールを作成して到着日や発生する特定の変更などのイベントについて通知する方法について説明します。
-author: tjvass
-manager: AnnBe
+description: このトピックでは、警告に関する情報を提供し、警告ルールの作成方法を説明します。
+author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +10,15 @@ ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: b0c37c1f948b072c64c54308cb85c90cfa248700
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: fb1e64b6a48367557c1d009d0e1c48f096c32abf
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559411"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749200"
 ---
 # <a name="create-alert-rules"></a>警告ルールの作成
 

@@ -2,11 +2,9 @@
 title: 人物のスキル
 description: このトピックでは、Dynamics 365 Human Resources の人物のスキル エンティティについて説明します。
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65d5492ed988c51efe9e1629fa13225f1b4a3c15
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: be2d024de22c4e255cf9163010149818256a3427
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464205"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798012"
 ---
 # <a name="person-skill"></a>人物のスキル
 

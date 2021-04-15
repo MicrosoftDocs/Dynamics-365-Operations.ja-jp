@@ -2,7 +2,6 @@
 title: 統合されたサイトおよび倉庫
 description: このトピックでは、Finance and Operations と Dataverse 間のサイトおよび倉庫データの統合について説明します。
 author: t-benebo
-manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: b93e5f15e281c20f8688d496fc78f8b46b8aa996
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 533635ece005636dcee4e24d1d132111e1e2b370
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560364"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750669"
 ---
 # <a name="integrated-sites-and-warehouses"></a>統合されたサイトおよび倉庫
 

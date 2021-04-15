@@ -2,7 +2,6 @@
 title: Finance and Operations アプリ ホーム ページの新機能および変更された機能
 description: このページでは、最新の Finance and Operations アプリケーションの新しい機能について学ぶ役立つトピックを示します。
 author: josaw1
-manager: AnnBe
 ms.date: 02/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: e42ecd26cf17da5958255c2015da16d9ec44e388
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 67bac122593f53b1c43fcad74c39c2f40d091791
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566864"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750513"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Finance and Operations アプリ ホーム ページの新機能および変更された機能
 

@@ -2,11 +2,9 @@
 title: 小売価格レポート
 description: このトピックでは、さまざまな製品の今後の価格変更を表示するために使用できる価格レポート機能の概要を提供します。
 author: shajain
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: f317b22f2794dc71093068a51c8e9d4e6d7d55ac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3e57fd78b3476096100628fe3951f8f9f4e3ac54
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231155"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794142"
 ---
 # <a name="retail-price-reports"></a>小売価格レポート
 

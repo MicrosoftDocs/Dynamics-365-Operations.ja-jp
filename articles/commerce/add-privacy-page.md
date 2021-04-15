@@ -2,11 +2,9 @@
 title: プライバシー ポリシー ページの追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce のサイトにプライバシー ポリシー ページを追加する方法について説明します。
 author: v-chgri
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07a806ac040df9dee284e2466629221fbc3403a4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 12cd0358279684ce1d3050348c37209ba3d29140
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209278"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797530"
 ---
 # <a name="add-a-privacy-policy-page"></a>プライバシー ポリシー ページの追加
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce のサイトにプライバシー ポリシー ページを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 プライバシー コンプライアンスには、データの収集および処理方法をサイト ユーザーに通知する組織的手段が含まれます。 その後ユーザーは、個人データの処理方法を決定し、適切なアクションを実行できます。
 

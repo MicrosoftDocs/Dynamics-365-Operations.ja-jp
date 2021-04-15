@@ -2,7 +2,6 @@
 title: レコード テンプレートの概要
 description: この記事は、レコード テンプレートの概念を紹介し、情報を共有するレコードを作成して使用する方法を説明します。
 author: pvillads
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a37b4875fd2bf6e981cbe6ee2cc7e999be7b5f36
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d802d8bb86313dba512f52ec977b4dd18aa25c61
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559896"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747540"
 ---
 # <a name="record-templates-overview"></a>レコード テンプレートの概要
 
