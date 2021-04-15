@@ -2,11 +2,9 @@
 title: MPOS およびクラウド POS の拡張ログオン機能の設定
 description: このトピックでは、Cloud POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,54 +16,54 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ecb6f56f26133e7c46805500914e906b74e64df8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bb0e646cc4be5fa7fbb8a0ef47b524612a6f9a46
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209104"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792491"
 ---
-# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a><span data-ttu-id="f5254-103">MPOS および Cloud POS の拡張ログオン機能の設定</span><span class="sxs-lookup"><span data-stu-id="f5254-103">Set up extended logon functionality for MPOS and Cloud POS</span></span>
+# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a><span data-ttu-id="2f73d-103">MPOS および Cloud POS の拡張ログオン機能の設定</span><span class="sxs-lookup"><span data-stu-id="2f73d-103">Set up extended logon functionality for MPOS and Cloud POS</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="f5254-104">このトピックでは、Cloud POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="f5254-104">This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).</span></span>
+<span data-ttu-id="2f73d-104">このトピックでは、Cloud POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="2f73d-104">This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).</span></span>
 
-## <a name="setting-up-extended-logon"></a><span data-ttu-id="f5254-105">拡張ログオンの設定</span><span class="sxs-lookup"><span data-stu-id="f5254-105">Setting up extended logon</span></span>
+## <a name="setting-up-extended-logon"></a><span data-ttu-id="2f73d-105">拡張ログオンの設定</span><span class="sxs-lookup"><span data-stu-id="2f73d-105">Setting up extended logon</span></span>
 
-<span data-ttu-id="f5254-106">バーコード マスクの設定は、**小売とコマース** &gt; **チャンネル設定** &gt; **POS 設定** &gt; **POS プロファイル** &gt; **機能プロファイル** にあります。</span><span class="sxs-lookup"><span data-stu-id="f5254-106">You can find the setup for bar code masks at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**.</span></span> <span data-ttu-id="f5254-107">**機能** クイック タブには、拡張ログオンに関連付けられる次のオプションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f5254-107">The **Functions** FastTab includes the following options that are related to extended logon.</span></span>
+<span data-ttu-id="2f73d-106">バーコード マスクの設定は、**小売とコマース** &gt; **チャンネル設定** &gt; **POS 設定** &gt; **POS プロファイル** &gt; **機能プロファイル** にあります。</span><span class="sxs-lookup"><span data-stu-id="2f73d-106">You can find the setup for bar code masks at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**.</span></span> <span data-ttu-id="2f73d-107">**機能** クイック タブには、拡張ログオンに関連付けられる次のオプションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="2f73d-107">The **Functions** FastTab includes the following options that are related to extended logon.</span></span>
 
-### <a name="staff-bar-code-logon"></a><span data-ttu-id="f5254-108">スタッフ バーコード ログオン</span><span class="sxs-lookup"><span data-stu-id="f5254-108">Staff bar code logon</span></span>
+### <a name="staff-bar-code-logon"></a><span data-ttu-id="2f73d-108">スタッフ バーコード ログオン</span><span class="sxs-lookup"><span data-stu-id="2f73d-108">Staff bar code logon</span></span>
 
-<span data-ttu-id="f5254-109">**スタッフ バーコード ログオン** オプションが有効な場合、POS 資格情報に割り当てられた拡張ログオンを持っている作業者は、バーコードを使用してログオンできます。</span><span class="sxs-lookup"><span data-stu-id="f5254-109">When the **Staff bar code logon** option is enabled, workers who have an extended logon assigned to their point of sale (POS) credentials can log on by using a bar code.</span></span>
+<span data-ttu-id="2f73d-109">**スタッフ バーコード ログオン** オプションが有効な場合、POS 資格情報に割り当てられた拡張ログオンを持っている作業者は、バーコードを使用してログオンできます。</span><span class="sxs-lookup"><span data-stu-id="2f73d-109">When the **Staff bar code logon** option is enabled, workers who have an extended logon assigned to their point of sale (POS) credentials can log on by using a bar code.</span></span>
 
-### <a name="staff-bar-code-logon-requires-password"></a><span data-ttu-id="f5254-110">スタッフ バーコード ログオンにパスワードが必要</span><span class="sxs-lookup"><span data-stu-id="f5254-110">Staff bar code logon requires password</span></span>
+### <a name="staff-bar-code-logon-requires-password"></a><span data-ttu-id="2f73d-110">スタッフ バーコード ログオンにパスワードが必要</span><span class="sxs-lookup"><span data-stu-id="2f73d-110">Staff bar code logon requires password</span></span>
 
-<span data-ttu-id="f5254-111">パスワードが必要となる **スタッフ バーコード ログオン** オプションが有効な場合は、スタッフ バーコード ログオンは表示された拡張ログオンに割り当てられている作業者のみが選択されます。</span><span class="sxs-lookup"><span data-stu-id="f5254-111">When the **Staff bar code logon requires password** option is enabled, the staff bar code logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="f5254-112">このオプションを有効にする場合、作業者はパスワードを入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5254-112">Workers must still enter their password when this option is enabled.</span></span>
+<span data-ttu-id="2f73d-111">パスワードが必要となる **スタッフ バーコード ログオン** オプションが有効な場合は、スタッフ バーコード ログオンは表示された拡張ログオンに割り当てられている作業者のみが選択されます。</span><span class="sxs-lookup"><span data-stu-id="2f73d-111">When the **Staff bar code logon requires password** option is enabled, the staff bar code logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="2f73d-112">このオプションを有効にする場合、作業者はパスワードを入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f73d-112">Workers must still enter their password when this option is enabled.</span></span>
 
-### <a name="staff-card-logon"></a><span data-ttu-id="f5254-113">スタッフ カード ログオン</span><span class="sxs-lookup"><span data-stu-id="f5254-113">Staff card logon</span></span>
+### <a name="staff-card-logon"></a><span data-ttu-id="2f73d-113">スタッフ カード ログオン</span><span class="sxs-lookup"><span data-stu-id="2f73d-113">Staff card logon</span></span>
 
-<span data-ttu-id="f5254-114">**スタッフ カード ログオン** オプションが有効な場合、POS 資格情報に割り当てられた拡張ログオンを持っている作業者は、磁気ストライプを使用してログオンできます。</span><span class="sxs-lookup"><span data-stu-id="f5254-114">When the **Staff card logon** option is enabled, workers who have an extended logon assigned to their POS credentials can log on by using a magnetic stripe.</span></span>
+<span data-ttu-id="2f73d-114">**スタッフ カード ログオン** オプションが有効な場合、POS 資格情報に割り当てられた拡張ログオンを持っている作業者は、磁気ストライプを使用してログオンできます。</span><span class="sxs-lookup"><span data-stu-id="2f73d-114">When the **Staff card logon** option is enabled, workers who have an extended logon assigned to their POS credentials can log on by using a magnetic stripe.</span></span>
 
-### <a name="staff-card-logon-requires-password"></a><span data-ttu-id="f5254-115">スタッフ カード ログオンにパスワードが必要</span><span class="sxs-lookup"><span data-stu-id="f5254-115">Staff card logon requires password</span></span>
+### <a name="staff-card-logon-requires-password"></a><span data-ttu-id="2f73d-115">スタッフ カード ログオンにパスワードが必要</span><span class="sxs-lookup"><span data-stu-id="2f73d-115">Staff card logon requires password</span></span>
 
-<span data-ttu-id="f5254-116">パスワードが必要となる **スタッフ カード ログオン** オプションが有効な場合は、スタッフ カード ログオンは表示された拡張ログオンに割り当てられている作業者のみが選択されます。</span><span class="sxs-lookup"><span data-stu-id="f5254-116">When the **Staff card logon requires password** option is enabled, the staff card logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="f5254-117">このオプションを有効にする場合、作業者はパスワードを入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5254-117">Workers must still enter their password when this option is enabled.</span></span>
+<span data-ttu-id="2f73d-116">パスワードが必要となる **スタッフ カード ログオン** オプションが有効な場合は、スタッフ カード ログオンは表示された拡張ログオンに割り当てられている作業者のみが選択されます。</span><span class="sxs-lookup"><span data-stu-id="2f73d-116">When the **Staff card logon requires password** option is enabled, the staff card logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="2f73d-117">このオプションを有効にする場合、作業者はパスワードを入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f73d-117">Workers must still enter their password when this option is enabled.</span></span>
 
-## <a name="assigning-an-extended-logon"></a><span data-ttu-id="f5254-118">拡張ログオンの割り当て</span><span class="sxs-lookup"><span data-stu-id="f5254-118">Assigning an extended logon</span></span>
+## <a name="assigning-an-extended-logon"></a><span data-ttu-id="2f73d-118">拡張ログオンの割り当て</span><span class="sxs-lookup"><span data-stu-id="2f73d-118">Assigning an extended logon</span></span>
 
-<span data-ttu-id="f5254-119">既定では、マネージャのみが作業者に拡張ログオンを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="f5254-119">By default, only managers can assign extended logon to workers.</span></span> <span data-ttu-id="f5254-120">拡張ログオンを割り当てるには、POS で **拡張ログオン** に移動します。</span><span class="sxs-lookup"><span data-stu-id="f5254-120">To assign extended logon, go to **Extended log on** in POS.</span></span> <span data-ttu-id="f5254-121">検索フィールドに、オペレーター ID を入力して、作業者を検索します。</span><span class="sxs-lookup"><span data-stu-id="f5254-121">Then search for a worker by entering his or her operator ID in the search field.</span></span> <span data-ttu-id="f5254-122">作業者を選択し、**割り当て** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5254-122">Select the worker, and then click **Assign**.</span></span> <span data-ttu-id="f5254-123">次のページで、作業者に割り当てる拡張ログオンを機械に通すかスキャンします。</span><span class="sxs-lookup"><span data-stu-id="f5254-123">On the next page, swipe or scan the extended logon to assign to the worker.</span></span> <span data-ttu-id="f5254-124">読み取りまたはスキャンが正常に読み取られた場合、**OK** ボタンが使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="f5254-124">If the swipe or scan is successfully read, the **OK** button becomes available.</span></span> <span data-ttu-id="f5254-125">その作業者の拡張ログオンを保存する場合、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5254-125">Click **OK** to save the extended logon for that worker.</span></span>
+<span data-ttu-id="2f73d-119">既定では、マネージャのみが作業者に拡張ログオンを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="2f73d-119">By default, only managers can assign extended logon to workers.</span></span> <span data-ttu-id="2f73d-120">拡張ログオンを割り当てるには、POS で **拡張ログオン** に移動します。</span><span class="sxs-lookup"><span data-stu-id="2f73d-120">To assign extended logon, go to **Extended log on** in POS.</span></span> <span data-ttu-id="2f73d-121">検索フィールドに、オペレーター ID を入力して、作業者を検索します。</span><span class="sxs-lookup"><span data-stu-id="2f73d-121">Then search for a worker by entering his or her operator ID in the search field.</span></span> <span data-ttu-id="2f73d-122">作業者を選択し、**割り当て** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2f73d-122">Select the worker, and then click **Assign**.</span></span> <span data-ttu-id="2f73d-123">次のページで、作業者に割り当てる拡張ログオンを機械に通すかスキャンします。</span><span class="sxs-lookup"><span data-stu-id="2f73d-123">On the next page, swipe or scan the extended logon to assign to the worker.</span></span> <span data-ttu-id="2f73d-124">読み取りまたはスキャンが正常に読み取られた場合、**OK** ボタンが使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="2f73d-124">If the swipe or scan is successfully read, the **OK** button becomes available.</span></span> <span data-ttu-id="2f73d-125">その作業者の拡張ログオンを保存する場合、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2f73d-125">Click **OK** to save the extended logon for that worker.</span></span>
 
-## <a name="deleting-an-extended-logon"></a><span data-ttu-id="f5254-126">拡張ログオンの削除</span><span class="sxs-lookup"><span data-stu-id="f5254-126">Deleting an extended logon</span></span>
+## <a name="deleting-an-extended-logon"></a><span data-ttu-id="2f73d-126">拡張ログオンの削除</span><span class="sxs-lookup"><span data-stu-id="2f73d-126">Deleting an extended logon</span></span>
 
-<span data-ttu-id="f5254-127">作業者に割り当てられている拡張ログオンを削除するには、**拡張ログオン** 操作にて作業者を検索します。</span><span class="sxs-lookup"><span data-stu-id="f5254-127">To delete the extended logon that is assigned to a worker, search for the worker by using the **Extended log on** operation.</span></span> <span data-ttu-id="f5254-128">作業者を選択し、**割り当て解除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5254-128">Select the worker, and then click **Unassign**.</span></span> <span data-ttu-id="f5254-129">その作業者と関連付けられるすべての拡張ログオン資格情報が削除されます。</span><span class="sxs-lookup"><span data-stu-id="f5254-129">All extended logon credentials that are associated with that worker are removed.</span></span>
+<span data-ttu-id="2f73d-127">作業者に割り当てられている拡張ログオンを削除するには、**拡張ログオン** 操作にて作業者を検索します。</span><span class="sxs-lookup"><span data-stu-id="2f73d-127">To delete the extended logon that is assigned to a worker, search for the worker by using the **Extended log on** operation.</span></span> <span data-ttu-id="2f73d-128">作業者を選択し、**割り当て解除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2f73d-128">Select the worker, and then click **Unassign**.</span></span> <span data-ttu-id="2f73d-129">その作業者と関連付けられるすべての拡張ログオン資格情報が削除されます。</span><span class="sxs-lookup"><span data-stu-id="2f73d-129">All extended logon credentials that are associated with that worker are removed.</span></span>
 
-## <a name="extending-extended-logon"></a><span data-ttu-id="f5254-130">拡張ログオンの拡張</span><span class="sxs-lookup"><span data-stu-id="f5254-130">Extending extended logon</span></span>
+## <a name="extending-extended-logon"></a><span data-ttu-id="2f73d-130">拡張ログオンの拡張</span><span class="sxs-lookup"><span data-stu-id="2f73d-130">Extending extended logon</span></span>
 
-<span data-ttu-id="f5254-131">ログオン サービスはパーム スキャナーなどの追加ログオン デバイスをサポートするために、拡張できます。</span><span class="sxs-lookup"><span data-stu-id="f5254-131">The logon service can be extended to support additional extended logon devices, such as palm scanners.</span></span> <span data-ttu-id="f5254-132">詳細については、POS 拡張ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f5254-132">For more information, see the POS extensibility documentation.</span></span>
+<span data-ttu-id="2f73d-131">ログオン サービスはパーム スキャナーなどの追加ログオン デバイスをサポートするために、拡張できます。</span><span class="sxs-lookup"><span data-stu-id="2f73d-131">The logon service can be extended to support additional extended logon devices, such as palm scanners.</span></span> <span data-ttu-id="2f73d-132">詳細については、POS 拡張ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f73d-132">For more information, see the POS extensibility documentation.</span></span>
 
-## <a name="using-extended-logon"></a><span data-ttu-id="f5254-133">拡張ログオンの使用</span><span class="sxs-lookup"><span data-stu-id="f5254-133">Using extended logon</span></span>
+## <a name="using-extended-logon"></a><span data-ttu-id="2f73d-133">拡張ログオンの使用</span><span class="sxs-lookup"><span data-stu-id="2f73d-133">Using extended logon</span></span>
 
-<span data-ttu-id="f5254-134">拡張ログオンを構成すると、作業者にバーコードまたは磁気ストライプが割り当てられ、作業者は POS ログオン ページが表示されている間に、自分のカードを読み取るか、またはスキャンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5254-134">When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed.</span></span> <span data-ttu-id="f5254-135">ログオンを続行する前にパスワードが必要な場合、作業者は自分のパスワードを入力するように要求されます。</span><span class="sxs-lookup"><span data-stu-id="f5254-135">If a password is also required before logon can proceed, the worker is prompted to enter his or her password.</span></span>
+<span data-ttu-id="2f73d-134">拡張ログオンを構成すると、作業者にバーコードまたは磁気ストライプが割り当てられ、作業者は POS ログオン ページが表示されている間に、自分のカードを読み取るか、またはスキャンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f73d-134">When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed.</span></span> <span data-ttu-id="2f73d-135">ログオンを続行する前にパスワードが必要な場合、作業者は自分のパスワードを入力するように要求されます。</span><span class="sxs-lookup"><span data-stu-id="2f73d-135">If a password is also required before logon can proceed, the worker is prompted to enter his or her password.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
