@@ -2,11 +2,9 @@
 title: 製品準備完了
 description: このトピックでは、準備完了チェックを使用して、必要なマスター データがトランザクションで使用される前にその製品に対して完了していることを確認する方法について説明します。
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38ceef3d03fae83f7ac509fb05a4cd9603af2465
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 23ee82922a2103d02a4c1fe0c364fa381c4984c3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5266154"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842013"
 ---
 # <a name="product-readiness"></a>製品準備完了
 

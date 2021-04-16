@@ -2,11 +2,9 @@
 title: 割引日よりも前に一部支払を決済し割引日後に最終決済する
 description: この記事は、顧客の請求書に支払を決済する影響について説明します。 このシナリオは総勘定元帳ではなく、補助元帳の影響を対象としています。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87408e864ab8e6101fc908e744231f10d0d2e664
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250557"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835150"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>割引日よりも前に一部支払を決済し割引日後に最終決済する
 
@@ -48,7 +46,7 @@ Fabrikam は顧客 4027 に商品を販売します。 Fabrikam は、請求書�
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。 **決済金額** の値を 297.00 に変更しないと、表示される **現金割引金額** の値が異なります。 ただし、決済が **決済金額**の値を自動的に調整するため 3.00 ドルは現金割引として支払の転記時に取得されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 2015/7/9 |
 | 現金割引金額         | 10.00     |
@@ -73,7 +71,7 @@ Fabrikam は顧客 4027 に商品を販売します。 Fabrikam は、請求書�
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 2015/7/9 |
 | 現金割引金額         | 0.00      |
@@ -89,7 +87,7 @@ Fabrikam は顧客 4027 に商品を販売します。 Fabrikam は、請求書�
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 2015/7/9 |
 | 現金割引金額         | 7.00      |
