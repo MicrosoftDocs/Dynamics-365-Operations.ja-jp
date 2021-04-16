@@ -2,7 +2,6 @@
 title: 統合済み顧客マスター
 description: このトピックでは、Finance and Operations と Dataverse 間の顧客データの統合について説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 07/15/2019
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 402342b459c366d0e198e3d0e946deb1f9e81739
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0015ca2ccbb0098a5a96bf56ff355fb2f9f8f626
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568129"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748926"
 ---
 # <a name="integrated-customer-master"></a>統合された顧客マスター
 

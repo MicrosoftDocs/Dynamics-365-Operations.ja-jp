@@ -2,7 +2,6 @@
 title: 財務および税参照データへのアクセス
 description: このトピックでは、財務および税参照データへのアクセスに関する情報を提供します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: a9c4caf53c1968232d31bb17054d63733d0bf484
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e704e093181ee9b8e712f33746b5434b5ea5dc4e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568057"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748620"
 ---
 # <a name="access-to-finance-and-tax-reference-data"></a>財務および税参照データへのアクセス
 

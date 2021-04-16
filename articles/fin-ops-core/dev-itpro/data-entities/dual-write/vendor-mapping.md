@@ -2,7 +2,6 @@
 title: 統合された仕入先マスター
 description: このトピックでは、Finance and Operations アプリと Dataverse 間の仕入先データの統合について説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 07/15/2019
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 272962b58d8d654c2640a51ef2dbdcd1b05cf8c9
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: f57a20ed56a761894b2cedf8835310dac098b098
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560316"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750621"
 ---
 # <a name="integrated-vendor-master"></a>統合された仕入先マスター
 

@@ -2,7 +2,6 @@
 title: 構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 description: このトピックでは、構成済み電子レポート (ER) コンポーネントを検査して、発生する可能性のあるランタイムの問題を回避する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574128"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753843"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 
@@ -666,19 +665,19 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 
 ![形式デザイナー ページで形式マッピングの実行中に発生するランタイム エラー](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution"></a>自動解決
+### <a name="automatic-resolution&quot;></a>自動解決
 
 この問題を自動的に修正するオプションはありません。
 
-### <a name="manual-resolution"></a>手動解決
+### <a name=&quot;manual-resolution&quot;></a>手動解決
 
-#### <a name="option-1"></a>オプション 1
+#### <a name=&quot;option-1&quot;></a>オプション 1
 
 **Vendor** データ ソースから **キャッシュ** フラグを削除します。 その後、**FilteredVendor** データ ソースは実行可能になりますが、VendTable テーブルで参照される **Vendor** データ ソースは、**FilteredVendor** データ ソースが呼び出されるたびにアクセスされます。
 
-#### <a name="option-2"></a>オプション 2
+#### <a name=&quot;option-2&quot;></a>オプション 2
 
-**FilteredVendor** データ ソースの式を `FILTER(Vendor, Vendor.AccountNum="US-101")` から `WHERE(Vendor, Vendor.AccountNum="US-101")` に変更します。 この場合、VendTable テーブルで参照される **Vendor** データ ソースは、**Vendor** データ ソースの最初の呼び出し中にのみアクセスされます。 ただし、レコードの選択はメモリ内で行われます。 したがって、この方法ではパフォーマンスが低下する可能性があります。
+**FilteredVendor** データ ソースの式を `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` から `WHERE(Vendor, Vendor.AccountNum="US-101")` に変更します。 この場合、VendTable テーブルで参照される **Vendor** データ ソースは、**Vendor** データ ソースの最初の呼び出し中にのみアクセスされます。 ただし、レコードの選択はメモリ内で行われます。 したがって、この方法ではパフォーマンスが低下する可能性があります。
 
 ## <a name="missing-binding"></a><a id="i11"></a>バインドの欠落
 

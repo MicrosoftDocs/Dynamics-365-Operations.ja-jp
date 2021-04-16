@@ -2,7 +2,6 @@
 title: ワークフロー内の並列分岐のコンフィギュレーション
 description: 並列分岐をコンフィギュレーションするには、ワークフロー エディターで次の手順を実行します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c177e8c4c4e40bd81287430d9ee7598cf917d8
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 7b5270660f0dbe4351f0088787468a563d2f36cf
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566994"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747810"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>ワークフロー内の並列分岐のコンフィギュレーション
 

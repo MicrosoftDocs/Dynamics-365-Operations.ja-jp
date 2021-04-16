@@ -2,7 +2,6 @@
 title: CONTAINS ER 関数
 description: このトピックでは、CONTAINS 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 81964681688cebf870bc9b6c59aff0b7fdd82449
-ms.sourcegitcommit: 08ac570bece3e4ee4a0f632f51623e328536dfcf
+ms.openlocfilehash: c1d2d761a38d0edfb9abd439e0f710b336f54927
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5557533"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745428"
 ---
 # <a name="contains-er-function"></a>CONTAINS ER 関数
 

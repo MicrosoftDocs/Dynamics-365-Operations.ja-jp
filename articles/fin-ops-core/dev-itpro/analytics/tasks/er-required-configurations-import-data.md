@@ -2,8 +2,7 @@
 title: ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
 description: このトピックでは、外部ファイルから Microsoft Dynamics 365 Finance アプリにデータをインポートできるように電子申告コンフィギュレーションを設計します。
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b8a94173c7c5367b79bfcb354f0397515d94445
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 2194bdc918035bf3aebe9b90ddc8a30f9937bb0c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564293"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751465"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
 
 [!include [banner](../../includes/banner.md)]
 
-次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) コンフィギュレーションを設計して、外部ファイルからアプリケーションにデータをインポートする方法を説明します。 この例では、サンプル会社 Litware, Inc. に必要となる ER 構成を作成します。これらのステップを完了するには、まずタスク ガイド「ER 構成プロバイダを作成し、アクティブとしてマークする」 に記載の手順を完了する必要があります。 これらのステップは、USMF データ セットを使用して完了することができます。 また、電子レポートの概要トピックからのリンク (https://go.microsoft.com/fwlink/?linkid=852550): を使用して、1099model.xml、1099format.xml、1099entries.xml、1099entries.xlsx のファイルをローカルにダウンロードして保存する必要があります。
+次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) コンフィギュレーションを設計して、外部ファイルからアプリケーションにデータをインポートする方法を説明します。 この例では、サンプル会社 Litware, Inc. に必要となる ER 構成を作成します。これらのステップを完了するには、まずタスク ガイド「ER 構成プロバイダを作成し、アクティブとしてマークする」 に記載の手順を完了する必要があります。 これらのステップは、USMF データ セットを使用して完了することができます。 次のファイルをダウンロードしてローカルに保存する必要もあります。 
+
+| コンテンツの説明                       | ファイル名                                     |
+|-------------------------------------------|-----------------------------------------------|
+| ER データ モデル構成 - 1099 | [1099model,xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| ER フォーマット構成 - 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| XML 形式の受信ドキュメントのサンプル                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| 受信ドキュメントのデータを管理するブックのサンプル                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 ER は、ビジネス ユーザーに対し、外部データ ファイルを、.XML または .TXT 形式でインポートするプロセスを構成するための機能を提供します。 最初に、インポートするデータを表す、抽象データ モデルと ER データ モデルのコンフィギュレーションを設計する必要があります。 次に、インポートするファイルの構造を定義、およびデータをファイルから抽象データ モデルにポートするために使用する方法を定義する必要があります。 その抽象データ モデルのために、設計されたデータ モデルに配置される ER 形式のコンフィギュレーションを作成する必要があります。 次に、インポート データが抽象データ モデル データとして存在する方法、およびテーブルを更新するための使用方法を説明するマッピングで、データ モデルのコンフィギュレーションを拡張する必要があります。  ER データ モデルの構成には、アプリケーションの送信先に対するデータ モデルのバインドを記述する新しいモデル マッピングを追加する必要があります。  
 

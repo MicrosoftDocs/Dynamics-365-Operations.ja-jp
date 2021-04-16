@@ -2,7 +2,6 @@
 title: Word 形式でレポートを生成するための新しい ER 構成を設計する
 description: このトピックでは、ユーザーが新しい電子申告 (ER) 形式を構成して、レポートを Microsoft Word ドキュメントとして生成する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 563807599d3604079ea08d2b27e354f60e7eaa8a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 4885caf017fa0f9d36d293fa32aad53c21d3f162
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562097"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753579"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための新しい ER 構成を設計する
 

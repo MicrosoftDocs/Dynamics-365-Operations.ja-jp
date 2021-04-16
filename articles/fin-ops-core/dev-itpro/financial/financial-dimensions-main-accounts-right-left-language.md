@@ -2,7 +2,6 @@
 title: 右から左へ読み書きする言語の財務分析コードと主勘定
 description: このトピックでは、右から左へ読み書きする言語を使用する際に考慮する必要がある決定について説明し、財務分析コードと主勘定を設定する必要があります。
 author: aprilolson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 496869bd3e7a372a5ec791df66fb7a8c43ccad13
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 508f4ed4de367770acddc77a6ff5e7e36fd20729
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561003"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748140"
 ---
 # <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>右から左へ読み書きする言語での財務分析コードと主勘定
 

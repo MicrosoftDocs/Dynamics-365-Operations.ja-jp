@@ -2,7 +2,6 @@
 title: REVERSE ER 関数
 description: このトピックでは、REVERSE 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f76582bc8b752fe0322bee8917d8649ed1c024ba
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 746a736c8797c1c1c5bd71d7d803be4212984595
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567369"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755207"
 ---
 # <a name="reverse-er-function"></a>REVERSE ER 関数
 

@@ -2,7 +2,6 @@
 title: 財務諸表の表示およびデザイン
 description: この記事では、Microsoft Dynamics 365 Finance の財務諸表の表示および作成の練習を提供します。
 author: jcart1106
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97ecc4daa05f4cbc10266d00366bf69e063af2ff
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 96c1cccccd2b20626dba14d9b0cb97bef10732fd
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564869"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749707"
 ---
 # <a name="view-and-design-financial-reports"></a>財務諸表の表示およびデザイン
 

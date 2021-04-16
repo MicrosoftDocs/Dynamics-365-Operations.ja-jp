@@ -2,7 +2,6 @@
 title: ワークフローの承認プロセスでのアクション
 description: この記事は、ワークフローの承認プロセスで各参加者が実行できるアクションを説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e6331746d2634a3686b0a7368d060d94567c4ff
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: df08bdffb2bda67269eec9f1572bd76af9ae1e11
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567959"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747180"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>ワークフローの承認プロセスでのアクション
 

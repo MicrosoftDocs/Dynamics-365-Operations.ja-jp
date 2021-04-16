@@ -2,11 +2,9 @@
 title: オンライン チャネル レポートの生成
 description: このトピックでは、Microsoft Dynamics 365 Commerce でオンライン チャネルのレポートを生成する方法について説明します。
 author: psimolin
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ec93bd8ef8dea6ca979dee1819a9c9abcc38a2e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f70f42f2650a439c7131f228588c11124d326aec
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251484"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792370"
 ---
 # <a name="generate-online-channel-reports"></a>オンライン チャネル レポートの生成
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でオンライン チャネルのレポートを生成する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Commerce では、複数のレポートを生成および表示して、オンライン チャネルの実行状況を確認できます。
 

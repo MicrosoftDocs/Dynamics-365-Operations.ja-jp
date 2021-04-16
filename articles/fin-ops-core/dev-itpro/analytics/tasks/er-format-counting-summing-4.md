@@ -2,7 +2,6 @@
 title: ER 棚卸および集計を行うための形式のコンフィギュレーション (第 4 部 - 形式の実行)
 description: このトピックでは、既に生成されたテキスト出力のデータに基づいて棚卸および集計を行うために電子レポート形式を構成する方法について説明します。 (第 4 部)
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ca8449581edc06016b6e387880aad91087b67f1
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 5792505de78aad458bd8745630915cf58f05f73f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565420"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748976"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-4---run-format"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (第 4 部 - 形式の実行)
 
