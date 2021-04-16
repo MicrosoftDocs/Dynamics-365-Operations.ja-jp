@@ -2,11 +2,9 @@
 title: Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 description: このトピックでは、Field Service の作業オーダーを Supply Chain Management の販売注文に同期するために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3453d0f6e6217ab63047410c459dc65d8cc4df5c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15a61b1fe4a267552708fa02fe482f7702668e06
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235439"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824969"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 

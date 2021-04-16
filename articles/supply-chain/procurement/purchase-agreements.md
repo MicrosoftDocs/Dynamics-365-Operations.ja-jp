@@ -1,12 +1,10 @@
 ---
 title: 購買契約
 description: この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9d97461efb39154e1e9b63c20669985aad349d0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 972762522b4f7627648f1e1eec9dad73fe503710
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247769"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825449"
 ---
 # <a name="purchase-agreements"></a>購買契約
 

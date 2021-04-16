@@ -2,10 +2,8 @@
 title: ウェーブ ラベルの再印刷と無効化
 description: このトピックでは、既存のウェーブ ラベルを無効にして再印刷する方法について説明します。
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228372"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817368"
 ---
 # <a name="reprint-and-void-wave-labels"></a>ウェーブ ラベルの再印刷と無効化
 
@@ -218,5 +216,8 @@ Web クライアントからウェーブ ラベルを再印刷するには、次
 1. このシナリオに対して作成した作業例外コードを選択します。
 1. 正しい例外を選択した場合は、**無効にして再印刷** チェック ボックスが使用可能になります。 このボックスを選択にして確定します。 確定すると、**ラベル ビルド ID** フィールドで識別されるラベル ロール シーケンス は、変更された作業明細行の数量に基づいて再計算されます。 その後、指定されたプリンターで再印刷されます。
 
+## <a name="additional-resources"></a>追加リソース
+
+- [サイクル ラベル印刷](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
