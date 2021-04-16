@@ -2,11 +2,9 @@
 title: 割増償却を使用する固定資産の作成
 description: 日本では、固定資産は特定の条件下で増加償却額を転記することができます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
@@ -15,43 +13,43 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b79aeb8bfa8c59c80f2c0d7b3721c95d0960276b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b6d57050e461761724a24072b71326c2b1160503
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260168"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823599"
 ---
-# <a name="create-a-fixed-asset-with-additional-depreciation"></a><span data-ttu-id="82099-103">割増償却を使用する固定資産の作成</span><span class="sxs-lookup"><span data-stu-id="82099-103">Create a fixed asset with additional depreciation</span></span>
+# <a name="create-a-fixed-asset-with-additional-depreciation"></a><span data-ttu-id="23aef-103">割増償却を使用する固定資産の作成</span><span class="sxs-lookup"><span data-stu-id="23aef-103">Create a fixed asset with additional depreciation</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="82099-104">日本では、固定資産は特定の条件下で増加償却額を転記することができます。</span><span class="sxs-lookup"><span data-stu-id="82099-104">In Japan, a fixed asset is permitted to post an additional depreciation amount, under certain conditions.</span></span> 
+<span data-ttu-id="23aef-104">日本では、固定資産は特定の条件下で増加償却額を転記することができます。</span><span class="sxs-lookup"><span data-stu-id="23aef-104">In Japan, a fixed asset is permitted to post an additional depreciation amount, under certain conditions.</span></span> 
 
 
 
-<span data-ttu-id="82099-105">この手順を使用して、割増減価償却プロファイルのある固定資産の作成方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="82099-105">Use this procedure to learn how to create a fixed asset with additional depreciation profile.</span></span>
+<span data-ttu-id="23aef-105">この手順を使用して、割増減価償却プロファイルのある固定資産の作成方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="23aef-105">Use this procedure to learn how to create a fixed asset with additional depreciation profile.</span></span>
 
 
 
-<span data-ttu-id="82099-106">この手順を完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="82099-106">In order to complete this procedure, the Fixed Assets configuration key must be selected.</span></span>
+<span data-ttu-id="23aef-106">この手順を完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="23aef-106">In order to complete this procedure, the Fixed Assets configuration key must be selected.</span></span>
 
 
 
-<span data-ttu-id="82099-107">これはデモ データ会社 JPMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="82099-107">This was created using the demo data company JPMF.</span></span>
+<span data-ttu-id="23aef-107">これはデモ データ会社 JPMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="23aef-107">This was created using the demo data company JPMF.</span></span>
 
 
-## <a name="create-a-fixed-assset-and-assign-an-additional-depreciation-profile-to-it"></a><span data-ttu-id="82099-108">固定資産の作成および割増減価償却プロファイルの割り当て</span><span class="sxs-lookup"><span data-stu-id="82099-108">Create a fixed assset and assign an additional depreciation profile to it</span></span>
-1. <span data-ttu-id="82099-109">[固定資産] > [固定資産] > [固定資産] に移動します。</span><span class="sxs-lookup"><span data-stu-id="82099-109">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
-2. <span data-ttu-id="82099-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82099-110">Click New.</span></span>
-3. <span data-ttu-id="82099-111">[固定資産グループ] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="82099-111">In the Fixed asset group field, select a value.</span></span>
-4. <span data-ttu-id="82099-112">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="82099-112">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="82099-113">[帳簿] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82099-113">Click Books.</span></span>
-6. <span data-ttu-id="82099-114">[減価償却] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="82099-114">Expand the Depreciation section.</span></span>
-7. <span data-ttu-id="82099-115">[特別減価償却プロファイル] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82099-115">In the Extraordinary depreciation profile field, enter or select a value.</span></span>
-8. <span data-ttu-id="82099-116">[特別減価償却] フィールド グループ下で、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="82099-116">under the Extraordinary depreciation field group, enter a date</span></span>
-    * <span data-ttu-id="82099-117">割増償却は、この日の翌日から開始します。</span><span class="sxs-lookup"><span data-stu-id="82099-117">The additional depreciation will start from the next day of this date.</span></span>  
-9. <span data-ttu-id="82099-118">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82099-118">Click Save.</span></span>
+## <a name="create-a-fixed-assset-and-assign-an-additional-depreciation-profile-to-it"></a><span data-ttu-id="23aef-108">固定資産の作成および割増減価償却プロファイルの割り当て</span><span class="sxs-lookup"><span data-stu-id="23aef-108">Create a fixed assset and assign an additional depreciation profile to it</span></span>
+1. <span data-ttu-id="23aef-109">[固定資産] > [固定資産] > [固定資産] に移動します。</span><span class="sxs-lookup"><span data-stu-id="23aef-109">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="23aef-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="23aef-110">Click New.</span></span>
+3. <span data-ttu-id="23aef-111">[固定資産グループ] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="23aef-111">In the Fixed asset group field, select a value.</span></span>
+4. <span data-ttu-id="23aef-112">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="23aef-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="23aef-113">[帳簿] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="23aef-113">Click Books.</span></span>
+6. <span data-ttu-id="23aef-114">[減価償却] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="23aef-114">Expand the Depreciation section.</span></span>
+7. <span data-ttu-id="23aef-115">[特別減価償却プロファイル] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="23aef-115">In the Extraordinary depreciation profile field, enter or select a value.</span></span>
+8. <span data-ttu-id="23aef-116">[特別減価償却] フィールド グループ下で、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="23aef-116">under the Extraordinary depreciation field group, enter a date</span></span>
+    * <span data-ttu-id="23aef-117">割増償却は、この日の翌日から開始します。</span><span class="sxs-lookup"><span data-stu-id="23aef-117">The additional depreciation will start from the next day of this date.</span></span>  
+9. <span data-ttu-id="23aef-118">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="23aef-118">Click Save.</span></span>
 
 
 

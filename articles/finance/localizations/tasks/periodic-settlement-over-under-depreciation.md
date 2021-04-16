@@ -2,11 +2,9 @@
 title: 償却超過額/償却不足額の定期決済
 description: このタスクでは、損金の減価償却費を計算および記録する方法を説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm, AssetDepPreTaxDedProcess_JP, AssetDepPreTaxDedProcessDetail_JP
 audience: Application User
@@ -15,64 +13,64 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d189e2b97e675fdf1b1ecf7e14a55893c45caa81
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56bdb9477270ae9e91ed8f33bf5dcfe34ec60e00
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217338"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830407"
 ---
-# <a name="periodic-settlement-of-over-and-under-depreciation"></a><span data-ttu-id="99b28-103">償却超過額/償却不足額の定期決済</span><span class="sxs-lookup"><span data-stu-id="99b28-103">Periodic settlement of over and under depreciation</span></span>
+# <a name="periodic-settlement-of-over-and-under-depreciation"></a><span data-ttu-id="b311f-103">償却超過額/償却不足額の定期決済</span><span class="sxs-lookup"><span data-stu-id="b311f-103">Periodic settlement of over and under depreciation</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="99b28-104">このタスクでは、損金の減価償却費を計算および記録する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="99b28-104">Use this task to learn how to calculate and record depreciation expense for deductible expense.</span></span>
+<span data-ttu-id="b311f-104">このタスクでは、損金の減価償却費を計算および記録する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="b311f-104">Use this task to learn how to calculate and record depreciation expense for deductible expense.</span></span>
 
 
 
-<span data-ttu-id="99b28-105">この手順では、JPMF デモ会社のデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="99b28-105">This task uses the JPMF demo company data.</span></span>
+<span data-ttu-id="b311f-105">この手順では、JPMF デモ会社のデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="b311f-105">This task uses the JPMF demo company data.</span></span>
 
 
 
 
-## <a name="fixed-asset-depreciation"></a><span data-ttu-id="99b28-106">固定資産の減価償却</span><span class="sxs-lookup"><span data-stu-id="99b28-106">Fixed asset depreciation</span></span>
-1. <span data-ttu-id="99b28-107">次の順に移動します: [固定資産] ></span><span class="sxs-lookup"><span data-stu-id="99b28-107">Go to Fixed assets > ..</span></span> <span data-ttu-id="99b28-108">> [固定資産仕訳帳]。</span><span class="sxs-lookup"><span data-stu-id="99b28-108">> Fixed assets journal.</span></span>
-2. <span data-ttu-id="99b28-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-109">Click New.</span></span>
-3. <span data-ttu-id="99b28-110">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="99b28-110">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="99b28-111">例: FAD</span><span class="sxs-lookup"><span data-stu-id="99b28-111">Example: FAD</span></span>  
-4. <span data-ttu-id="99b28-112">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-112">Click Lines.</span></span>
-5. <span data-ttu-id="99b28-113">[提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-113">Click Proposals.</span></span>
-6. <span data-ttu-id="99b28-114">[償却提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-114">Click Depreciation proposal.</span></span>
-7. <span data-ttu-id="99b28-115">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="99b28-115">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="99b28-116">例: 3/31/ 2016</span><span class="sxs-lookup"><span data-stu-id="99b28-116">Example: 3/31/2016</span></span>  
-8. <span data-ttu-id="99b28-117">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-117">Click Filter.</span></span>
-9. <span data-ttu-id="99b28-118">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="99b28-118">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="99b28-119">たとえば、固定資産番号 = BUILM-000005 に設定します。</span><span class="sxs-lookup"><span data-stu-id="99b28-119">For example, set Fixed asset number = BUILM-000005</span></span>  
-10. <span data-ttu-id="99b28-120">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-120">Click OK.</span></span>
-11. <span data-ttu-id="99b28-121">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-121">Click OK.</span></span>
-    * <span data-ttu-id="99b28-122">原価償却仕訳帳が作成されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="99b28-122">Verify that the depreciation journal  was created.</span></span>  
-12. <span data-ttu-id="99b28-123">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-123">Click Post.</span></span>
+## <a name="fixed-asset-depreciation"></a><span data-ttu-id="b311f-106">固定資産の減価償却</span><span class="sxs-lookup"><span data-stu-id="b311f-106">Fixed asset depreciation</span></span>
+1. <span data-ttu-id="b311f-107">次の順に移動します: [固定資産] ></span><span class="sxs-lookup"><span data-stu-id="b311f-107">Go to Fixed assets > ..</span></span> <span data-ttu-id="b311f-108">> [固定資産仕訳帳]。</span><span class="sxs-lookup"><span data-stu-id="b311f-108">> Fixed assets journal.</span></span>
+2. <span data-ttu-id="b311f-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-109">Click New.</span></span>
+3. <span data-ttu-id="b311f-110">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b311f-110">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="b311f-111">例: FAD</span><span class="sxs-lookup"><span data-stu-id="b311f-111">Example: FAD</span></span>  
+4. <span data-ttu-id="b311f-112">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-112">Click Lines.</span></span>
+5. <span data-ttu-id="b311f-113">[提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-113">Click Proposals.</span></span>
+6. <span data-ttu-id="b311f-114">[償却提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-114">Click Depreciation proposal.</span></span>
+7. <span data-ttu-id="b311f-115">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="b311f-115">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="b311f-116">例: 3/31/ 2016</span><span class="sxs-lookup"><span data-stu-id="b311f-116">Example: 3/31/2016</span></span>  
+8. <span data-ttu-id="b311f-117">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-117">Click Filter.</span></span>
+9. <span data-ttu-id="b311f-118">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b311f-118">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="b311f-119">たとえば、固定資産番号 = BUILM-000005 に設定します。</span><span class="sxs-lookup"><span data-stu-id="b311f-119">For example, set Fixed asset number = BUILM-000005</span></span>  
+10. <span data-ttu-id="b311f-120">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-120">Click OK.</span></span>
+11. <span data-ttu-id="b311f-121">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-121">Click OK.</span></span>
+    * <span data-ttu-id="b311f-122">原価償却仕訳帳が作成されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b311f-122">Verify that the depreciation journal  was created.</span></span>  
+12. <span data-ttu-id="b311f-123">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-123">Click Post.</span></span>
 
-## <a name="over-and-under-depr-settlements"></a><span data-ttu-id="99b28-124">償却超過/償却不足決済</span><span class="sxs-lookup"><span data-stu-id="99b28-124">Over and under depr settlements</span></span>
-1. <span data-ttu-id="99b28-125">[固定資産] > [定期処理のタスク] > [償却超過/償却不足額の決済] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="99b28-125">Go to Fixed assets > Periodic tasks > Settlement of over depreciation or under depreciation amount.</span></span>
-2. <span data-ttu-id="99b28-126">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-126">Click New.</span></span>
-3. <span data-ttu-id="99b28-127">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="99b28-127">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="99b28-128">例: 03/31/2016</span><span class="sxs-lookup"><span data-stu-id="99b28-128">Example: 03/31/2016</span></span>  
-4. <span data-ttu-id="99b28-129">[仕訳帳名] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="99b28-129">In the Journal name field, type a value.</span></span>
-    * <span data-ttu-id="99b28-130">例: FAD_TAX</span><span class="sxs-lookup"><span data-stu-id="99b28-130">Example: FAD_TAX</span></span>  
-5. <span data-ttu-id="99b28-131">[対象に含めるレコード] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="99b28-131">Expand the Records to include section.</span></span>
-6. <span data-ttu-id="99b28-132">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-132">Click Filter.</span></span>
-7. <span data-ttu-id="99b28-133">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="99b28-133">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="99b28-134">たとえば、固定資産番号 = BUILM-000005 に設定します。</span><span class="sxs-lookup"><span data-stu-id="99b28-134">For example, set the Fixed asset number = BUILM-000005</span></span>  
-8. <span data-ttu-id="99b28-135">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-135">Click OK.</span></span>
-9. <span data-ttu-id="99b28-136">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-136">Click OK.</span></span>
-10. <span data-ttu-id="99b28-137">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="99b28-137">Refresh the page.</span></span>
-    * <span data-ttu-id="99b28-138">結果はすぐに表示されないことがあります。</span><span class="sxs-lookup"><span data-stu-id="99b28-138">The results may not appear instantly.</span></span> <span data-ttu-id="99b28-139">更新をクリックして、結果が作成されたか表示します。</span><span class="sxs-lookup"><span data-stu-id="99b28-139">Click refresh to see if the result is created.</span></span>  
-11. <span data-ttu-id="99b28-140">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="99b28-140">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="99b28-141">[ステータス] = [ドラフト] である新しい結果をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-141">Click the new result with Status = Draft.</span></span>  
-12. <span data-ttu-id="99b28-142">[決済結果の表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-142">Click View settlement results.</span></span>
-    * <span data-ttu-id="99b28-143">正しい結果が作成されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="99b28-143">Verify that the correct result is created.</span></span>  
-13. <span data-ttu-id="99b28-144">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99b28-144">Click Post.</span></span>
+## <a name="over-and-under-depr-settlements"></a><span data-ttu-id="b311f-124">償却超過/償却不足決済</span><span class="sxs-lookup"><span data-stu-id="b311f-124">Over and under depr settlements</span></span>
+1. <span data-ttu-id="b311f-125">[固定資産] > [定期処理のタスク] > [償却超過/償却不足額の決済] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b311f-125">Go to Fixed assets > Periodic tasks > Settlement of over depreciation or under depreciation amount.</span></span>
+2. <span data-ttu-id="b311f-126">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-126">Click New.</span></span>
+3. <span data-ttu-id="b311f-127">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="b311f-127">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="b311f-128">例: 03/31/2016</span><span class="sxs-lookup"><span data-stu-id="b311f-128">Example: 03/31/2016</span></span>  
+4. <span data-ttu-id="b311f-129">[仕訳帳名] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b311f-129">In the Journal name field, type a value.</span></span>
+    * <span data-ttu-id="b311f-130">例: FAD_TAX</span><span class="sxs-lookup"><span data-stu-id="b311f-130">Example: FAD_TAX</span></span>  
+5. <span data-ttu-id="b311f-131">[対象に含めるレコード] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="b311f-131">Expand the Records to include section.</span></span>
+6. <span data-ttu-id="b311f-132">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-132">Click Filter.</span></span>
+7. <span data-ttu-id="b311f-133">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b311f-133">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="b311f-134">たとえば、固定資産番号 = BUILM-000005 に設定します。</span><span class="sxs-lookup"><span data-stu-id="b311f-134">For example, set the Fixed asset number = BUILM-000005</span></span>  
+8. <span data-ttu-id="b311f-135">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-135">Click OK.</span></span>
+9. <span data-ttu-id="b311f-136">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-136">Click OK.</span></span>
+10. <span data-ttu-id="b311f-137">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="b311f-137">Refresh the page.</span></span>
+    * <span data-ttu-id="b311f-138">結果はすぐに表示されないことがあります。</span><span class="sxs-lookup"><span data-stu-id="b311f-138">The results may not appear instantly.</span></span> <span data-ttu-id="b311f-139">更新をクリックして、結果が作成されたか表示します。</span><span class="sxs-lookup"><span data-stu-id="b311f-139">Click refresh to see if the result is created.</span></span>  
+11. <span data-ttu-id="b311f-140">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="b311f-140">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="b311f-141">[ステータス] = [ドラフト] である新しい結果をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-141">Click the new result with Status = Draft.</span></span>  
+12. <span data-ttu-id="b311f-142">[決済結果の表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-142">Click View settlement results.</span></span>
+    * <span data-ttu-id="b311f-143">正しい結果が作成されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b311f-143">Verify that the correct result is created.</span></span>  
+13. <span data-ttu-id="b311f-144">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b311f-144">Click Post.</span></span>
 
 
 
