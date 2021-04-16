@@ -2,11 +2,9 @@
 title: 場所の製品分析コードの混在
 description: このトピックでは、場所の製品分析コードの混在に関する情報を提供します。 この場所プロファイルの機能は、ファッション業界などで、製品バリアントまたは分析コードを持つ製品を使用した場合に、場所の管理を改善するのに役立ちます。 特定の場所のプロファイルに対して、構成、色、スタイル、およびサイズを混在させることができるかどうか、またはこれらの分析コードのいずれかまたはそれらの組み合わせを同じ場所に配置できるかどうかを決定できます。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b0309c7a7240d7cac9e5b5724a028f2dc70199e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217032"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831293"
 ---
 # <a name="location-product-dimension-mixing"></a>場所の製品分析コードの混在
 
@@ -206,9 +204,9 @@ ms.locfileid: "5217032"
 
 1. **保存** を選択します。
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>倉庫アプリでの発注書明細行の受取
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリで発注書明細行を受領する
 
-1. 倉庫 *24* を有効にしたユーザーとして、倉庫アプリにログインします。
+1. 倉庫 *24* を有効にしたユーザーとして、倉庫管理モバイル アプリにログインします。
 1. **入庫** メニューを選択します。
 1. **発注書明細行受取** を選択します。
 1. **PONUM** フィールドを選択してから、発注書番号を入力します。

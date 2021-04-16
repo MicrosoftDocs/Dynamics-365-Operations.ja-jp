@@ -2,11 +2,9 @@
 title: 顧客支払予測の使用 (プレビュー)
 description: このトピックでは、Finance 分析情報の試用版を使用するために必要な前提条件と手順について説明します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 6cf0db49c7fe5ff54ae2a999e0829913b4d954c4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 51cd69563a7a5b30e932f1aad828d095cc55b075
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219942"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827221"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>顧客支払予測の使用 (プレビュー)
 

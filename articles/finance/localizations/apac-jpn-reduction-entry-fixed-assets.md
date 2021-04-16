@@ -2,11 +2,9 @@
 title: 固定資産の圧縮記帳の設定
 description: この記事は、固定資産の圧縮記帳に関する情報、および固定資産の圧縮記帳を Microsoft Dynamics 365 Finance で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。
 author: yijialuan
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a466608cdced00a8889dff43c601c6c5bae2ebc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8da60cf9b2ee64b0ef63d4e8c8c8f4806eb1d4bb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253897"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823654"
 ---
 # <a name="set-up-reduction-entries-for-fixed-assets"></a>固定資産の圧縮記帳の設定
 

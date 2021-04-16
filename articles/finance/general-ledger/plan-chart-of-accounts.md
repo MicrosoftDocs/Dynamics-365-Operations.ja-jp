@@ -2,11 +2,9 @@
 title: 勘定科目表の計画
 description: このトピックでは、組織の勘定科目表を計画する際に役立つ情報を提供します。
 author: aprilolson
-manager: AnnBe
 ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29e5328043a4259b464b272983e11061ade1724c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8650b24ac8e1c7feab2a9e5c4c4f98f7f573f340
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230373"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815527"
 ---
 # <a name="plan-your-chart-of-accounts"></a>勘定科目表の計画
 

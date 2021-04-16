@@ -2,11 +2,9 @@
 title: 日本のキャッシュ生成単位の固定資産減損会計
 description: このトピックでは、日本の減損会計の概念モデルの概要を説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_JP, AssetCashGeneratingUnitGroup_JP, AssetImpairmentRecognitionMethod1_JP, AssetImpairmentRecognitionMethod2_JP
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dbc0e597a0f498771a3212fe014089198690e23
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bf79b1536ef73a33f4eab5543ac0e6dde8a9720b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258184"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815029"
 ---
 # <a name="fixed-asset-impairment-accounting-on-cash-generating-units-for-japan"></a>日本のキャッシュ生成単位の固定資産減損会計
 

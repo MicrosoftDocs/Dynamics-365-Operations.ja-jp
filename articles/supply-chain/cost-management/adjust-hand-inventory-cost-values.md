@@ -2,11 +2,9 @@
 title: 手持在庫原価価値の調整
 description: '[手持在庫の調整] ページを使用して、在庫決算プロセスの実行後に、手持在庫数量の原価価格を調整します。'
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAdjInventOnHand
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66323e99c04a141aa5dc5ab828e0e261c61b83ce
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9ddb2962926e78fda80a9db7b9e5915550bc5965
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254338"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842204"
 ---
 # <a name="adjust-on-hand-inventory-cost-values"></a>手持在庫原価価値の調整
 

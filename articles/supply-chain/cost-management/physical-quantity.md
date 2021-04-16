@@ -2,11 +2,9 @@
 title: 在庫オブジェクトの値
 description: この記事は、在庫オブジェクトの値の計算方法についての情報を提供します。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f14248ffa8f9f5a460b090ca5754442cd50bf45a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 52f39c18888b94b533743f546554d5cd1b2d56df
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263545"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832253"
 ---
 # <a name="inventory-object-values"></a>在庫オブジェクトの値
 

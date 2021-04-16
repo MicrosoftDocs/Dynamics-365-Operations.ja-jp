@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Supply Chain Management から削除された、または削除される予定の機能について説明します。
 author: kamaybac
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9c91ffcb03793db2f2ef3a9631ab549ace3f735d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2e41510f1f5810dde9683235384f89008f888471
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259094"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821276"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 
@@ -34,6 +32,18 @@ ms.locfileid: "5259094"
 
 > [!NOTE]
 > Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Supply Chain Management 10.0.18 リリースの削除済みまたは非推奨の機能
+
+### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations- 倉庫管理 (倉庫アプリ)
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 2021 年 4 月付で、*Dynamics 365 for Finance and Operations - 倉庫管理* (倉庫アプリ) は廃止され、2022 年 4 月以降はサポートされません。 これで、Supply Chain Management のバージョン 10.0.17 にリリースされた *Warehouse Mobile モバイル アプリ* によって置き換えられたのです。 この新しいアプリは完全に交換するものですが、移行を容易にする基になる同じフレームワークを使用します。 必要に応じて、2 つのアプリケーションを並べて、新しいアプリの使い方をユーザーが徐々に調整できるよう支援することができます。<br><br>新しい Warehouse Management モバイル アプリについての詳細は、[Warehouse Management モバイル アプリケーション](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) と [Warehouse Management モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md) をご覧ください。 |
+| **別の機能で置き換えられているか?**   | はい、新しい Warehouse Mobile モバイル アプリによって置き換えられる必要があります。 |
+| **影響を受ける製品領域**         | Supply Chain Management - 倉庫アプリ |
+| **配置オプション**              | クラウドとオンプレミス |
+| **状態**                         | 非推奨。 倉庫アプリではセキュリティとセキュリティ面の修正がサポートされますが、機能拡張は提供されなくなりました。 2022 年 4 月以降、古い倉庫アプリはサポートされなくなりました。顧客は、新しい Supply Chain Managementモバイル アプリに移動する必要があります。 古い倉庫アプリは、Microsoft Store と Google Play ストアから削除されます。  |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10015-release"></a>Supply Chain Management 10.0.15 リリースの削除済みまたは非推奨の機能
 

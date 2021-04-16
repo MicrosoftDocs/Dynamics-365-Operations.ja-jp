@@ -2,11 +2,9 @@
 title: 場所の能力を超える補充
 description: このトピックでは、場所の能力を超える補充機能に関する情報を提供します。 この機能によって、その日の作成に必要な補充作業がすべて有効になり、ピッキング場所の在庫がなくなったり、容量を超えたりしないことを保証するためにその補充作業の利用可能性を管理できるようになります。
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228396"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823242"
 ---
 # <a name="replenishment-over-location-capacity"></a>場所の能力を超える補充
 
@@ -241,7 +239,7 @@ ms.locfileid: "5228396"
 
 #### <a name="on-hand-inventory-license-plate-id"></a>手持在庫のライセンス プレート ID
 
-このシナリオの後半で、倉庫アプリ (またはエミュレーター) を使用して、ピッキングおよび補充のシナリオを完了するためのライセンス プレートを指定する必要があります。
+このシナリオの後半で、Warehouse Management モバイル アプリ (またはエミュレーター) を使用して、ピッキングや補充のシナリオを完了するためのライセンス プレートを指定する必要があります。
 
 後で必要になるライセンス版 ID を検索するには、次の手順に従います。
 
@@ -266,7 +264,7 @@ ms.locfileid: "5228396"
 
 #### <a name="replenishment"></a>補充
 
-1. 倉庫 *61* でユーザーとして倉庫アプリにサインインします。 (ユーザー ID として *61* を、パスワードとして *1* を入力します。)
+1. 倉庫 *61* のユーザーとして、Warehouse Management モバイル アプリにログインします。 (ユーザー ID として *61* を、パスワードとして *1* を入力します。)
 1. **在庫 \> 補充** に移動します。
 
     最初の補充作業を完了するように求めるメッセージが表示されます。 品目番号、数量、ピッキング元の場所が表示されます。
@@ -296,7 +294,7 @@ ms.locfileid: "5228396"
 
 残りの補充作業タスクを完了する前に、ピッキング場所の在庫を消費して、残りの補充作業のブロックを解除できるレベルにする必要があります。 つまり、保管場所の手持在庫の数量と補充数量の合計が、**オーバーフロー数量** 値を超えることはできません。 この合計がオーバーフロー数量を下回ると、残りの補充作業のブロックが解除されます。
 
-1. 倉庫 *61* でユーザーとして倉庫アプリにサインインします。 (ユーザー ID として *61* を、パスワードとして *1* を入力します。)
+1. 倉庫 *61* のユーザーとして、Warehouse Management モバイル アプリにログインします。 (ユーザー ID として *61* を、パスワードとして *1* を入力します。)
 1. **出荷 \> 販売ピッキング** に移動します。
 1. 販売注文 1 の最初の作業 ID を入力します。
 

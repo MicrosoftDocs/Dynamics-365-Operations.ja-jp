@@ -2,11 +2,9 @@
 title: 買掛金勘定の集中支払
 description: 複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
 author: abruer
-manager: AnnBe
 ms.date: 02/12/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f63d38464a78091a32777707c0df76d05cfd190a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a7162545d07cdc249a4f785606957076de1676d5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213021"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820788"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>買掛金勘定の集中支払
 

@@ -2,11 +2,9 @@
 title: 製造オーダーから出荷ドックへのクロスドッキング
 description: このトピックでは、生産ラインから出荷輸送ドックまでの完了レポートがされているクロスドッキング材料のプロセスを管理する方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d2f264564f627889d89444a7423179de0c6d4d0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 231c59cea2ca0bcb139079209d2e846e67eb7fed
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246288"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839152"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>製造オーダーから出荷ドックへのクロスドッキング
 

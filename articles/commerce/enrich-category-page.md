@@ -2,11 +2,9 @@
 title: カテゴリ ランディング ページの拡充
 description: このトピックでは、Dynamics 365 Commerce のカテゴリ ページの拡充について説明します。
 author: v-chgri
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fbcf6ec60723b726e022b4e17bbde4c903e5cb57
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5e18439fc0e91619cade33b83b87be0d5c4d1040
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238783"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799014"
 ---
 # <a name="enrich-a-category-landing-page"></a>カテゴリ ランディング ページの拡充
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Dynamics 365 Commerce のカテゴリ ページの拡充について説明します。
-
-## <a name="overview"></a>概要
 
 コマースは、カテゴリ データを表示するときに使用される既定のカテゴリのランディング ページを提供します。 既定のカテゴリ ページには、絞り込み条件、分類された製品の配置、並べ替えオプション、選択の概要、ページネーション コントロールなどの必須要素が含まれています。 
 

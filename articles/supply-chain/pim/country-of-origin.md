@@ -2,11 +2,9 @@
 title: 原産国
 description: 多くの組織では、仕入先に証明書を発行して、製品が特定の認証基準を満たしていることを確認しています。 多くの場合、これら証明書は原産国によって異なります。 このトピックでは、原産国機能に関する情報を提供します。これにより、製品を原産国にリンクさせ、製品の認証を追跡することができます。
 author: dasani-madipalli
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COOVendorCerts
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: bb35770f32c21a685b21a41dc7c369ee01fe3891
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b07747752dd09f39c3a7a9a647cc3d10cc4b5cc7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243300"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829549"
 ---
 # <a name="country-of-origin"></a>原産国
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 多くの組織では、仕入先に証明書を発行して、製品が特定の認証基準を満たしていることを確認しています。 多くの場合、これら証明書は原産国によって異なります。 原産国機能を使用すると、製品を原産国にリンクさせ、製品の認証を追跡することができます。
 
