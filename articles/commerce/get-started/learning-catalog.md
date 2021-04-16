@@ -6,23 +6,22 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a6d09127b13eee64a24837d5462612961ef0e347
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 605792bdc82a311fff9f7f4b8945ca5dde172c54
+ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240246"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5642168"
 ---
-# <a name="dynamics-365-commerce-learning-catalog"></a><span data-ttu-id="5f7ad-103">Dynamics 365 Commerce ラーニング カタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-103">Dynamics 365 Commerce Learning catalog</span></span> 
+# <a name="dynamics-365-commerce-learning-catalog"></a><span data-ttu-id="88419-103">Dynamics 365 Commerce ラーニング カタログ</span><span class="sxs-lookup"><span data-stu-id="88419-103">Dynamics 365 Commerce Learning catalog</span></span> 
 
-<span data-ttu-id="5f7ad-104">Dynamics 365 Commerce アプリケーションのユーザーとして、ロールに適したオンライン トレーニング、個人ワークショップ、イベントを見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-104">Find the right online training, in person workshops, and events for your role as a user of Dynamics 365 Commerce applications.</span></span>
+<span data-ttu-id="88419-104">Dynamics 365 Commerce アプリケーションのユーザーとして、ロールに適したオンライン トレーニング、個人ワークショップ、イベントを見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="88419-104">Find the right online training, in person workshops, and events for your role as a user of Dynamics 365 Commerce applications.</span></span>
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
@@ -30,113 +29,113 @@ ms.locfileid: "5240246"
     :::column:::
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
-    ### <a name="business-and-technical-decision-makers"></a><span data-ttu-id="5f7ad-105">業務および技術的な意思決定者</span><span class="sxs-lookup"><span data-stu-id="5f7ad-105">Business and Technical Decision Makers</span></span>
+    ### <a name="business-and-technical-decision-makers"></a><span data-ttu-id="88419-105">業務および技術的な意思決定者</span><span class="sxs-lookup"><span data-stu-id="88419-105">Business and Technical Decision Makers</span></span>
 
-    <span data-ttu-id="5f7ad-106">新しい技術に投資するかどうかを決定しますか。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-106">Do you decide whether to invest in new technologies?</span></span> 
+    <span data-ttu-id="88419-106">新しい技術に投資するかどうかを決定しますか。</span><span class="sxs-lookup"><span data-stu-id="88419-106">Do you decide whether to invest in new technologies?</span></span> 
 
-    [<span data-ttu-id="5f7ad-107">業務および技術的な意思決定者の学習グカタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-107">Business and Technical Decision Makers Learning Catalog</span></span>](learning-catalog-bdm.md#)
+    [<span data-ttu-id="88419-107">業務および技術的な意思決定者の学習グカタログ</span><span class="sxs-lookup"><span data-stu-id="88419-107">Business and Technical Decision Makers Learning Catalog</span></span>](learning-catalog-bdm.md#)
 
-    [<span data-ttu-id="5f7ad-108">はじめに</span><span class="sxs-lookup"><span data-stu-id="5f7ad-108">Get started</span></span>](learning-catalog-bdm.md#get-started)
+    [<span data-ttu-id="88419-108">はじめに</span><span class="sxs-lookup"><span data-stu-id="88419-108">Get started</span></span>](learning-catalog-bdm.md#get-started)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="business-users"></a><span data-ttu-id="5f7ad-109">ビジネス ユーザー</span><span class="sxs-lookup"><span data-stu-id="5f7ad-109">Business users</span></span>
+    ### <a name="business-users"></a><span data-ttu-id="88419-109">ビジネス ユーザー</span><span class="sxs-lookup"><span data-stu-id="88419-109">Business users</span></span>
 
-    <span data-ttu-id="5f7ad-110">使用する新しいアプリケーションを取得しましたか。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-110">Did you just get a new application to use?</span></span> 
+    <span data-ttu-id="88419-110">使用する新しいアプリケーションを取得しましたか。</span><span class="sxs-lookup"><span data-stu-id="88419-110">Did you just get a new application to use?</span></span> 
 
-    [<span data-ttu-id="5f7ad-111">業務ユーザー学習カタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-111">Business Users Learning Catalog</span></span>](learning-catalog-business-user.md)
+    [<span data-ttu-id="88419-111">業務ユーザー学習カタログ</span><span class="sxs-lookup"><span data-stu-id="88419-111">Business Users Learning Catalog</span></span>](learning-catalog-business-user.md)
 
-    [<span data-ttu-id="5f7ad-112">開始</span><span class="sxs-lookup"><span data-stu-id="5f7ad-112">Get Started</span></span>](learning-catalog-business-user.md#get-started)
+    [<span data-ttu-id="88419-112">開始</span><span class="sxs-lookup"><span data-stu-id="88419-112">Get Started</span></span>](learning-catalog-business-user.md#get-started)
 
-    [<span data-ttu-id="5f7ad-113">Commerce</span><span class="sxs-lookup"><span data-stu-id="5f7ad-113">Commerce</span></span>](learning-catalog-business-user.md#commerce)
+    [<span data-ttu-id="88419-113">Commerce</span><span class="sxs-lookup"><span data-stu-id="88419-113">Commerce</span></span>](learning-catalog-business-user.md#commerce)
 
-    [<span data-ttu-id="5f7ad-114">E コマース</span><span class="sxs-lookup"><span data-stu-id="5f7ad-114">e-Commerce</span></span>](learning-catalog-business-user.md#e-commerce)
+    [<span data-ttu-id="88419-114">E コマース</span><span class="sxs-lookup"><span data-stu-id="88419-114">e-Commerce</span></span>](learning-catalog-business-user.md#e-commerce)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="implementation-project-managers"></a><span data-ttu-id="5f7ad-115">実装プロジェクト マネージャー</span><span class="sxs-lookup"><span data-stu-id="5f7ad-115">Implementation Project Managers</span></span>
+    ### <a name="implementation-project-managers"></a><span data-ttu-id="88419-115">実装プロジェクト マネージャー</span><span class="sxs-lookup"><span data-stu-id="88419-115">Implementation Project Managers</span></span>
 
-    <span data-ttu-id="5f7ad-116">会社の実装がスムースに進行するよう確認する担当者ですか。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-116">Are you in charge of making sure your company’s implementation goes smoothly?</span></span>
+    <span data-ttu-id="88419-116">会社の実装がスムースに進行するよう確認する担当者ですか。</span><span class="sxs-lookup"><span data-stu-id="88419-116">Are you in charge of making sure your company’s implementation goes smoothly?</span></span>
 
-    [<span data-ttu-id="5f7ad-117">実装プロジェクト マネージャー学習カタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-117">Implementation Project Manager Learning Catalog</span></span>](learning-catalog-project-manager.md)
+    [<span data-ttu-id="88419-117">実装プロジェクト マネージャー学習カタログ</span><span class="sxs-lookup"><span data-stu-id="88419-117">Implementation Project Manager Learning Catalog</span></span>](learning-catalog-project-manager.md)
 
-    [<span data-ttu-id="5f7ad-118">はじめに</span><span class="sxs-lookup"><span data-stu-id="5f7ad-118">Get started</span></span>](learning-catalog-project-manager.md#get-started)
+    [<span data-ttu-id="88419-118">はじめに</span><span class="sxs-lookup"><span data-stu-id="88419-118">Get started</span></span>](learning-catalog-project-manager.md#get-started)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="administrators"></a><span data-ttu-id="5f7ad-119">管理者</span><span class="sxs-lookup"><span data-stu-id="5f7ad-119">Administrators</span></span>
+    ### <a name="administrators"></a><span data-ttu-id="88419-119">管理者</span><span class="sxs-lookup"><span data-stu-id="88419-119">Administrators</span></span>
 
-    <span data-ttu-id="5f7ad-120">システムとデータのフロー、プロビジョニング、およびセキュリティを 24 時間維持する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-120">Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?</span></span>
+    <span data-ttu-id="88419-120">システムとデータのフロー、プロビジョニング、およびセキュリティを 24 時間維持する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="88419-120">Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?</span></span>
 
-    [<span data-ttu-id="5f7ad-121">管理者学習カタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-121">Administrators Learning Catalog</span></span>](learning-catalog-administrator.md)
+    [<span data-ttu-id="88419-121">管理者学習カタログ</span><span class="sxs-lookup"><span data-stu-id="88419-121">Administrators Learning Catalog</span></span>](learning-catalog-administrator.md)
 
-    [<span data-ttu-id="5f7ad-122">はじめに</span><span class="sxs-lookup"><span data-stu-id="5f7ad-122">Get started</span></span>](learning-catalog-administrator.md#get-started)
+    [<span data-ttu-id="88419-122">はじめに</span><span class="sxs-lookup"><span data-stu-id="88419-122">Get started</span></span>](learning-catalog-administrator.md#get-started)
 
-    [<span data-ttu-id="5f7ad-123">Commerce</span><span class="sxs-lookup"><span data-stu-id="5f7ad-123">Commerce</span></span>](learning-catalog-administrator.md#commerce)
+    [<span data-ttu-id="88419-123">Commerce</span><span class="sxs-lookup"><span data-stu-id="88419-123">Commerce</span></span>](learning-catalog-administrator.md#commerce)
 
-    [<span data-ttu-id="5f7ad-124">E コマース</span><span class="sxs-lookup"><span data-stu-id="5f7ad-124">e-Commerce</span></span>](learning-catalog-administrator.md#e-commerce)
+    [<span data-ttu-id="88419-124">E コマース</span><span class="sxs-lookup"><span data-stu-id="88419-124">e-Commerce</span></span>](learning-catalog-administrator.md#e-commerce)
 
   :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="developers"></a><span data-ttu-id="5f7ad-125">開発者</span><span class="sxs-lookup"><span data-stu-id="5f7ad-125">Developers</span></span>
+    ### <a name="developers"></a><span data-ttu-id="88419-125">開発者</span><span class="sxs-lookup"><span data-stu-id="88419-125">Developers</span></span>
 
-    <span data-ttu-id="5f7ad-126">他のデータ ソースと統合したり、コア システム機能を拡張したり、複雑なアプリケーションを構築したりするためのコードを記述する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-126">Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?</span></span>
+    <span data-ttu-id="88419-126">他のデータ ソースと統合したり、コア システム機能を拡張したり、複雑なアプリケーションを構築したりするためのコードを記述する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="88419-126">Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?</span></span>
 
-    [<span data-ttu-id="5f7ad-127">開発者学習カタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-127">Developer Learning Catalog</span></span>](learning-catalog-developer.md)
+    [<span data-ttu-id="88419-127">開発者学習カタログ</span><span class="sxs-lookup"><span data-stu-id="88419-127">Developer Learning Catalog</span></span>](learning-catalog-developer.md)
 
-    [<span data-ttu-id="5f7ad-128">はじめに</span><span class="sxs-lookup"><span data-stu-id="5f7ad-128">Get started</span></span>](learning-catalog-developer.md#get-started)
+    [<span data-ttu-id="88419-128">はじめに</span><span class="sxs-lookup"><span data-stu-id="88419-128">Get started</span></span>](learning-catalog-developer.md#get-started)
 
-    [<span data-ttu-id="5f7ad-129">Commerce</span><span class="sxs-lookup"><span data-stu-id="5f7ad-129">Commerce</span></span>](learning-catalog-developer.md#commerce)
+    [<span data-ttu-id="88419-129">Commerce</span><span class="sxs-lookup"><span data-stu-id="88419-129">Commerce</span></span>](learning-catalog-developer.md#commerce)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="functional-consultants"></a><span data-ttu-id="5f7ad-130">機能コンサルタント</span><span class="sxs-lookup"><span data-stu-id="5f7ad-130">Functional consultants</span></span>
+    ### <a name="functional-consultants"></a><span data-ttu-id="88419-130">機能コンサルタント</span><span class="sxs-lookup"><span data-stu-id="88419-130">Functional consultants</span></span>
 
-    <span data-ttu-id="5f7ad-131">ビジネス ドメインの実装専門家ですか。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-131">Are you an implementation expert for a business domain?</span></span> 
+    <span data-ttu-id="88419-131">ビジネス ドメインの実装専門家ですか。</span><span class="sxs-lookup"><span data-stu-id="88419-131">Are you an implementation expert for a business domain?</span></span> 
 
-    [<span data-ttu-id="5f7ad-132">機能アプリケーション コンサルタント学習カタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-132">Functional Application Consultant Learning Catalog</span></span>](learning-catalog-functional-consultant.md)
+    [<span data-ttu-id="88419-132">機能アプリケーション コンサルタント学習カタログ</span><span class="sxs-lookup"><span data-stu-id="88419-132">Functional Application Consultant Learning Catalog</span></span>](learning-catalog-functional-consultant.md)
 
-    [<span data-ttu-id="5f7ad-133">はじめに</span><span class="sxs-lookup"><span data-stu-id="5f7ad-133">Get started</span></span>](learning-catalog-functional-consultant.md#get-started)
+    [<span data-ttu-id="88419-133">はじめに</span><span class="sxs-lookup"><span data-stu-id="88419-133">Get started</span></span>](learning-catalog-functional-consultant.md#get-started)
 
-    [<span data-ttu-id="5f7ad-134">Commerce</span><span class="sxs-lookup"><span data-stu-id="5f7ad-134">Commerce</span></span>](learning-catalog-functional-consultant.md#commerce)
+    [<span data-ttu-id="88419-134">Commerce</span><span class="sxs-lookup"><span data-stu-id="88419-134">Commerce</span></span>](learning-catalog-functional-consultant.md#commerce)
 
-    [<span data-ttu-id="5f7ad-135">E コマース</span><span class="sxs-lookup"><span data-stu-id="5f7ad-135">e-Commerce</span></span>](learning-catalog-functional-consultant.md#e-commerce)
+    [<span data-ttu-id="88419-135">E コマース</span><span class="sxs-lookup"><span data-stu-id="88419-135">e-Commerce</span></span>](learning-catalog-functional-consultant.md#e-commerce)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="partner-sales-and-marketing"></a><span data-ttu-id="5f7ad-136">パートナー販売とマーケティング</span><span class="sxs-lookup"><span data-stu-id="5f7ad-136">Partner Sales and Marketing</span></span>
+    ### <a name="partner-sales-and-marketing"></a><span data-ttu-id="88419-136">パートナー販売とマーケティング</span><span class="sxs-lookup"><span data-stu-id="88419-136">Partner Sales and Marketing</span></span>
 
-    <span data-ttu-id="5f7ad-137">顧客が適切なソリューションを購入できるよう支援する責任がありますか。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-137">Are you responsible for helping your customers buy the right solution?</span></span> 
+    <span data-ttu-id="88419-137">顧客が適切なソリューションを購入できるよう支援する責任がありますか。</span><span class="sxs-lookup"><span data-stu-id="88419-137">Are you responsible for helping your customers buy the right solution?</span></span> 
 
-    [<span data-ttu-id="5f7ad-138">Microsoft パートナーの販売およびマーケティング学習カタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-138">Microsoft Partner Sales and Marketing Learning Catalog</span></span>](learning-catalog-partner-sales.md)
+    [<span data-ttu-id="88419-138">Microsoft パートナーの販売およびマーケティング学習カタログ</span><span class="sxs-lookup"><span data-stu-id="88419-138">Microsoft Partner Sales and Marketing Learning Catalog</span></span>](learning-catalog-partner-sales.md)
 
-    [<span data-ttu-id="5f7ad-139">使用開始</span><span class="sxs-lookup"><span data-stu-id="5f7ad-139">Get started</span></span>](learning-catalog-partner-sales.md#get-started)
+    [<span data-ttu-id="88419-139">使用開始</span><span class="sxs-lookup"><span data-stu-id="88419-139">Get started</span></span>](learning-catalog-partner-sales.md#get-started)
 
     :::column-end:::
 
     :::column:::
 
-    ### <a name="solution-architects"></a><span data-ttu-id="5f7ad-140">ソリューション アーキテクト</span><span class="sxs-lookup"><span data-stu-id="5f7ad-140">Solution architects</span></span>
+    ### <a name="solution-architects"></a><span data-ttu-id="88419-140">ソリューション アーキテクト</span><span class="sxs-lookup"><span data-stu-id="88419-140">Solution architects</span></span>
 
-    <span data-ttu-id="5f7ad-141">顧客のニーズと予算を満たすソリューションをデザインしていますか。</span><span class="sxs-lookup"><span data-stu-id="5f7ad-141">Do you design solutions that meet your customers' needs and budgets?</span></span>
+    <span data-ttu-id="88419-141">顧客のニーズと予算を満たすソリューションをデザインしていますか。</span><span class="sxs-lookup"><span data-stu-id="88419-141">Do you design solutions that meet your customers' needs and budgets?</span></span>
 
-    [<span data-ttu-id="5f7ad-142">ソリューション設計者の学習カタログ</span><span class="sxs-lookup"><span data-stu-id="5f7ad-142">Solution Architects Learning Catalog</span></span>](learning-catalog-solution-architect.md)
+    [<span data-ttu-id="88419-142">ソリューション設計者の学習カタログ</span><span class="sxs-lookup"><span data-stu-id="88419-142">Solution Architects Learning Catalog</span></span>](learning-catalog-solution-architect.md)
 
-    [<span data-ttu-id="5f7ad-143">はじめに</span><span class="sxs-lookup"><span data-stu-id="5f7ad-143">Get started</span></span>](learning-catalog-solution-architect.md#get-started)
+    [<span data-ttu-id="88419-143">はじめに</span><span class="sxs-lookup"><span data-stu-id="88419-143">Get started</span></span>](learning-catalog-solution-architect.md#get-started)
 
-    [<span data-ttu-id="5f7ad-144">Commerce</span><span class="sxs-lookup"><span data-stu-id="5f7ad-144">Commerce</span></span>](learning-catalog-solution-architect.md#commerce)
+    [<span data-ttu-id="88419-144">Commerce</span><span class="sxs-lookup"><span data-stu-id="88419-144">Commerce</span></span>](learning-catalog-solution-architect.md#commerce)
 
     :::column-end:::
 :::row-end:::
