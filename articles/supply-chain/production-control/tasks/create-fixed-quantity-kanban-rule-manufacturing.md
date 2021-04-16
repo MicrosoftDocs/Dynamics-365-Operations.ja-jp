@@ -2,11 +2,9 @@
 title: 製造のための固定数量かんばんルールの作成
 description: この手順は、リーン環境の作業セルで、変換する活動をトリガーする固定の製造かんばんルールを作成するのに必要な設定を対象としています。
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
@@ -16,62 +14,62 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 540df772f132f60c9d8e7e937e72d3f51f6759ab
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ece72971d2bc67482cbdda4fb0d1b3176a3f3071
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255256"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829189"
 ---
-# <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a><span data-ttu-id="0a200-103">製造のための固定数量かんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="0a200-103">Create a fixed quantity kanban rule for manufacturing</span></span>
+# <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a><span data-ttu-id="60473-103">製造のための固定数量かんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="60473-103">Create a fixed quantity kanban rule for manufacturing</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0a200-104">この手順は、リーン環境の作業セルで、変換する活動をトリガーする固定の製造かんばんルールを作成するのに必要な設定を対象としています。</span><span class="sxs-lookup"><span data-stu-id="0a200-104">This procedure focuses on the setup needed to create a fixed manufacturing kanban rule for triggering transforming activities, at a work cell, in a lean environment.</span></span> <span data-ttu-id="0a200-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="0a200-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="0a200-106">この手順は、新しい製品または変更された製品の生産を準備している、プロセス エンジニアまたはバリュー ストリームのマネージャーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="0a200-106">This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare production of a new or modified product.</span></span>
+<span data-ttu-id="60473-104">この手順は、リーン環境の作業セルで、変換する活動をトリガーする固定の製造かんばんルールを作成するのに必要な設定を対象としています。</span><span class="sxs-lookup"><span data-stu-id="60473-104">This procedure focuses on the setup needed to create a fixed manufacturing kanban rule for triggering transforming activities, at a work cell, in a lean environment.</span></span> <span data-ttu-id="60473-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="60473-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="60473-106">この手順は、新しい製品または変更された製品の生産を準備している、プロセス エンジニアまたはバリュー ストリームのマネージャーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="60473-106">This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare production of a new or modified product.</span></span>
 
 
-## <a name="create-new-kanban-rule"></a><span data-ttu-id="0a200-107">新しいかんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="0a200-107">Create new kanban rule</span></span>
-1. <span data-ttu-id="0a200-108">[かんばんルール] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0a200-108">Go to Kanban rules.</span></span>
-2. <span data-ttu-id="0a200-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0a200-109">Click New.</span></span>
-    * <span data-ttu-id="0a200-110">既定のタイプが製造、また補充方法が固定になっていることに注目してください。</span><span class="sxs-lookup"><span data-stu-id="0a200-110">Notice that the default Type is Manufacturing and Replenishment strategy is Fixed.</span></span> <span data-ttu-id="0a200-111">これらのパラメーターを変更する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="0a200-111">You do not have to change these parameters.</span></span>  
-3. <span data-ttu-id="0a200-112">[最初の計画活動] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="0a200-112">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="0a200-113">これはこのかんばんルールに基づいて作成されたかんばんに対して実行される活動です。</span><span class="sxs-lookup"><span data-stu-id="0a200-113">This is the activity that will be performed for kanbans created based on this kanban rule.</span></span>  <span data-ttu-id="0a200-114">「SpeakerTestAndPackaging」を選択します。</span><span class="sxs-lookup"><span data-stu-id="0a200-114">Select 'SpeakerTestAndPackaging'.</span></span>  
-4. <span data-ttu-id="0a200-115">[詳細] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="0a200-115">Expand the Details section.</span></span>
-5. <span data-ttu-id="0a200-116">[製品] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="0a200-116">In the Product field, enter or select a value.</span></span>
-    * <span data-ttu-id="0a200-117">[L0050] を選択します。</span><span class="sxs-lookup"><span data-stu-id="0a200-117">Select L0050.</span></span>  
-6. <span data-ttu-id="0a200-118">[計量単位] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="0a200-118">In the Unit of measure field, enter or select a value.</span></span>
-    * <span data-ttu-id="0a200-119">分を選択します。</span><span class="sxs-lookup"><span data-stu-id="0a200-119">Select minutes.</span></span>  
-7. <span data-ttu-id="0a200-120">[リード タイム] フィールドで、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="0a200-120">In the Lead time field, enter a number.</span></span>
-    * <span data-ttu-id="0a200-121">5 を入力します。</span><span class="sxs-lookup"><span data-stu-id="0a200-121">Enter 5.</span></span>  
+## <a name="create-new-kanban-rule"></a><span data-ttu-id="60473-107">新しいかんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="60473-107">Create new kanban rule</span></span>
+1. <span data-ttu-id="60473-108">[かんばんルール] に移動します。</span><span class="sxs-lookup"><span data-stu-id="60473-108">Go to Kanban rules.</span></span>
+2. <span data-ttu-id="60473-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="60473-109">Click New.</span></span>
+    * <span data-ttu-id="60473-110">既定のタイプが製造、また補充方法が固定になっていることに注目してください。</span><span class="sxs-lookup"><span data-stu-id="60473-110">Notice that the default Type is Manufacturing and Replenishment strategy is Fixed.</span></span> <span data-ttu-id="60473-111">これらのパラメーターを変更する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="60473-111">You do not have to change these parameters.</span></span>  
+3. <span data-ttu-id="60473-112">[最初の計画活動] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="60473-112">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="60473-113">これはこのかんばんルールに基づいて作成されたかんばんに対して実行される活動です。</span><span class="sxs-lookup"><span data-stu-id="60473-113">This is the activity that will be performed for kanbans created based on this kanban rule.</span></span>  <span data-ttu-id="60473-114">「SpeakerTestAndPackaging」を選択します。</span><span class="sxs-lookup"><span data-stu-id="60473-114">Select 'SpeakerTestAndPackaging'.</span></span>  
+4. <span data-ttu-id="60473-115">[詳細] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="60473-115">Expand the Details section.</span></span>
+5. <span data-ttu-id="60473-116">[製品] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="60473-116">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="60473-117">[L0050] を選択します。</span><span class="sxs-lookup"><span data-stu-id="60473-117">Select L0050.</span></span>  
+6. <span data-ttu-id="60473-118">[計量単位] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="60473-118">In the Unit of measure field, enter or select a value.</span></span>
+    * <span data-ttu-id="60473-119">分を選択します。</span><span class="sxs-lookup"><span data-stu-id="60473-119">Select minutes.</span></span>  
+7. <span data-ttu-id="60473-120">[リード タイム] フィールドで、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="60473-120">In the Lead time field, enter a number.</span></span>
+    * <span data-ttu-id="60473-121">5 を入力します。</span><span class="sxs-lookup"><span data-stu-id="60473-121">Enter 5.</span></span>  
 
-## <a name="set-quantities"></a><span data-ttu-id="0a200-122">数量の設定</span><span class="sxs-lookup"><span data-stu-id="0a200-122">Set quantities</span></span>
-1. <span data-ttu-id="0a200-123">[数量] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="0a200-123">Expand the Quantities section.</span></span>
-2. <span data-ttu-id="0a200-124">[既定の数量] を「10」に設定します。</span><span class="sxs-lookup"><span data-stu-id="0a200-124">Set Default quantity to '10'.</span></span>
-    * <span data-ttu-id="0a200-125">これは、かんばんごとに転送される数量です。</span><span class="sxs-lookup"><span data-stu-id="0a200-125">This is the quantity that will be transferred for each kanban.</span></span>  
-3. <span data-ttu-id="0a200-126">[製品数量の差異] チェック ボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="0a200-126">Select the Product quantity variance check box.</span></span>
-    * <span data-ttu-id="0a200-127">これを使用すると、選択されたかんばんが既定の数量との差異で完了できます。</span><span class="sxs-lookup"><span data-stu-id="0a200-127">With this, selected kanbans can be completed with a variance from the default quantity.</span></span>  <span data-ttu-id="0a200-128">かんばんが 8 から 12 の数量で完了するようにするには、両方の差異を 2 に設定します。</span><span class="sxs-lookup"><span data-stu-id="0a200-128">To allow kanbans to be completed with a quantity from 8 to 12, set both variances to 2.</span></span>  
-4. <span data-ttu-id="0a200-129">[差異の上限] を「2」に設定します。</span><span class="sxs-lookup"><span data-stu-id="0a200-129">Set Variance below to '2'.</span></span>
-    * <span data-ttu-id="0a200-130">これにより、数量が減って 10 - 2 = 8 完了することになります。</span><span class="sxs-lookup"><span data-stu-id="0a200-130">This will allow completing down to 10 - 2 = 8</span></span>  
-5. <span data-ttu-id="0a200-131">[差異の下限] を「2」に設定します。</span><span class="sxs-lookup"><span data-stu-id="0a200-131">Set Variance above to '2'.</span></span>
-    * <span data-ttu-id="0a200-132">これにより、数量が増えて 10 + 2 = 12 完了することになります。</span><span class="sxs-lookup"><span data-stu-id="0a200-132">This will allow completing up to 10 + 2 = 12</span></span>  
-6. <span data-ttu-id="0a200-133">[固定かんばん数量] フィールドで、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="0a200-133">In the Fixed kanban quantity field, enter a number.</span></span>
-    * <span data-ttu-id="0a200-134">これは有効にするかんばんの量です。</span><span class="sxs-lookup"><span data-stu-id="0a200-134">This is the amount of kanbans that should be active.</span></span> <span data-ttu-id="0a200-135">この場合、5 つのかんばんが 、それぞれ 10 処理します。</span><span class="sxs-lookup"><span data-stu-id="0a200-135">In this case, 5 kanbans processing 10 each.</span></span>  
-7. <span data-ttu-id="0a200-136">[下限値に対する警告] フィールドで、「2」を入力します。</span><span class="sxs-lookup"><span data-stu-id="0a200-136">In the Alert boundary minimum field, enter '2'.</span></span>
-    * <span data-ttu-id="0a200-137">出荷先にあるべきすべてのかんばんの最小数量を追跡するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="0a200-137">Used to keep track of the minimum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="0a200-138">たとえば、これはかんばんの数量の概要に使用されます。</span><span class="sxs-lookup"><span data-stu-id="0a200-138">For example, this is used on the kanban quantity overview.</span></span>  
-8. <span data-ttu-id="0a200-139">[上限値に対する警告] フィールドで、「4」を入力します。</span><span class="sxs-lookup"><span data-stu-id="0a200-139">In the Alert boundary maximum field, enter '4'.</span></span>
-    * <span data-ttu-id="0a200-140">出荷先にあるべきすべてのかんばんの最大数量を追跡するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="0a200-140">Used to keep track of the maximum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="0a200-141">たとえば、これはかんばんの数量の概要に使用されます。</span><span class="sxs-lookup"><span data-stu-id="0a200-141">For example, this is used on the kanban quantity overview.</span></span>  
-9. <span data-ttu-id="0a200-142">[自動計画数量] フィールドで、「1」を入力します。</span><span class="sxs-lookup"><span data-stu-id="0a200-142">In the Automatic planning quantity field, enter '1'.</span></span>
-    * <span data-ttu-id="0a200-143">これを 1 に設定すると、すべてのかんばんが自動的に計画されることになります。</span><span class="sxs-lookup"><span data-stu-id="0a200-143">Setting this to 1 means that every kanban will be automatically planned.</span></span>   <span data-ttu-id="0a200-144">3 を入力してしまうと、3 つの空のかんばんに計画の準備が整うまで、そのかんばんは計画されないことになります。</span><span class="sxs-lookup"><span data-stu-id="0a200-144">If we entered 3, the kanbans would not be planned until 3 empty kanbans are ready for planning.</span></span> <span data-ttu-id="0a200-145">これは、作業をグループ化し、余計な設定を回避するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="0a200-145">This is useful for grouping work and avoiding too much setup.</span></span>  
+## <a name="set-quantities"></a><span data-ttu-id="60473-122">数量の設定</span><span class="sxs-lookup"><span data-stu-id="60473-122">Set quantities</span></span>
+1. <span data-ttu-id="60473-123">[数量] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="60473-123">Expand the Quantities section.</span></span>
+2. <span data-ttu-id="60473-124">[既定の数量] を「10」に設定します。</span><span class="sxs-lookup"><span data-stu-id="60473-124">Set Default quantity to '10'.</span></span>
+    * <span data-ttu-id="60473-125">これは、かんばんごとに転送される数量です。</span><span class="sxs-lookup"><span data-stu-id="60473-125">This is the quantity that will be transferred for each kanban.</span></span>  
+3. <span data-ttu-id="60473-126">[製品数量の差異] チェック ボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="60473-126">Select the Product quantity variance check box.</span></span>
+    * <span data-ttu-id="60473-127">これを使用すると、選択されたかんばんが既定の数量との差異で完了できます。</span><span class="sxs-lookup"><span data-stu-id="60473-127">With this, selected kanbans can be completed with a variance from the default quantity.</span></span>  <span data-ttu-id="60473-128">かんばんが 8 から 12 の数量で完了するようにするには、両方の差異を 2 に設定します。</span><span class="sxs-lookup"><span data-stu-id="60473-128">To allow kanbans to be completed with a quantity from 8 to 12, set both variances to 2.</span></span>  
+4. <span data-ttu-id="60473-129">[差異の上限] を「2」に設定します。</span><span class="sxs-lookup"><span data-stu-id="60473-129">Set Variance below to '2'.</span></span>
+    * <span data-ttu-id="60473-130">これにより、数量が減って 10 - 2 = 8 完了することになります。</span><span class="sxs-lookup"><span data-stu-id="60473-130">This will allow completing down to 10 - 2 = 8</span></span>  
+5. <span data-ttu-id="60473-131">[差異の下限] を「2」に設定します。</span><span class="sxs-lookup"><span data-stu-id="60473-131">Set Variance above to '2'.</span></span>
+    * <span data-ttu-id="60473-132">これにより、数量が増えて 10 + 2 = 12 完了することになります。</span><span class="sxs-lookup"><span data-stu-id="60473-132">This will allow completing up to 10 + 2 = 12</span></span>  
+6. <span data-ttu-id="60473-133">[固定かんばん数量] フィールドで、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="60473-133">In the Fixed kanban quantity field, enter a number.</span></span>
+    * <span data-ttu-id="60473-134">これは有効にするかんばんの量です。</span><span class="sxs-lookup"><span data-stu-id="60473-134">This is the amount of kanbans that should be active.</span></span> <span data-ttu-id="60473-135">この場合、5 つのかんばんが 、それぞれ 10 処理します。</span><span class="sxs-lookup"><span data-stu-id="60473-135">In this case, 5 kanbans processing 10 each.</span></span>  
+7. <span data-ttu-id="60473-136">[下限値に対する警告] フィールドで、「2」を入力します。</span><span class="sxs-lookup"><span data-stu-id="60473-136">In the Alert boundary minimum field, enter '2'.</span></span>
+    * <span data-ttu-id="60473-137">出荷先にあるべきすべてのかんばんの最小数量を追跡するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="60473-137">Used to keep track of the minimum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="60473-138">たとえば、これはかんばんの数量の概要に使用されます。</span><span class="sxs-lookup"><span data-stu-id="60473-138">For example, this is used on the kanban quantity overview.</span></span>  
+8. <span data-ttu-id="60473-139">[上限値に対する警告] フィールドで、「4」を入力します。</span><span class="sxs-lookup"><span data-stu-id="60473-139">In the Alert boundary maximum field, enter '4'.</span></span>
+    * <span data-ttu-id="60473-140">出荷先にあるべきすべてのかんばんの最大数量を追跡するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="60473-140">Used to keep track of the maximum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="60473-141">たとえば、これはかんばんの数量の概要に使用されます。</span><span class="sxs-lookup"><span data-stu-id="60473-141">For example, this is used on the kanban quantity overview.</span></span>  
+9. <span data-ttu-id="60473-142">[自動計画数量] フィールドで、「1」を入力します。</span><span class="sxs-lookup"><span data-stu-id="60473-142">In the Automatic planning quantity field, enter '1'.</span></span>
+    * <span data-ttu-id="60473-143">これを 1 に設定すると、すべてのかんばんが自動的に計画されることになります。</span><span class="sxs-lookup"><span data-stu-id="60473-143">Setting this to 1 means that every kanban will be automatically planned.</span></span>   <span data-ttu-id="60473-144">3 を入力してしまうと、3 つの空のかんばんに計画の準備が整うまで、そのかんばんは計画されないことになります。</span><span class="sxs-lookup"><span data-stu-id="60473-144">If we entered 3, the kanbans would not be planned until 3 empty kanbans are ready for planning.</span></span> <span data-ttu-id="60473-145">これは、作業をグループ化し、余計な設定を回避するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="60473-145">This is useful for grouping work and avoiding too much setup.</span></span>  
 
-## <a name="create-kanbans"></a><span data-ttu-id="0a200-146">かんばんの作成</span><span class="sxs-lookup"><span data-stu-id="0a200-146">Create Kanbans</span></span>
-1. <span data-ttu-id="0a200-147">[かんばん] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="0a200-147">Expand the Kanbans section.</span></span>
-2. <span data-ttu-id="0a200-148">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0a200-148">Click Save.</span></span>
-    * <span data-ttu-id="0a200-149">かんばんルールは、かんばんを作成する前に保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a200-149">The kanban rule needs to be saved before kanbans can be created.</span></span>  
-3. <span data-ttu-id="0a200-150">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0a200-150">Click Add.</span></span>
-    * <span data-ttu-id="0a200-151">この提案されている [新しいかんばんの数] が 5 であるため、有効なかんばんが存在しないことに注意してください。。</span><span class="sxs-lookup"><span data-stu-id="0a200-151">Note that there are no active kanbans, due to this the suggested 'Number of new kanbans' are 5.</span></span> <span data-ttu-id="0a200-152">これは、[固定かんばん数量] と等しくなります。</span><span class="sxs-lookup"><span data-stu-id="0a200-152">This is equal to the 'Fixed kanban quantity'.</span></span>  
-4. <span data-ttu-id="0a200-153">[作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0a200-153">Click Create.</span></span>
-    * <span data-ttu-id="0a200-154">これは、5 つのかんばんを作成します。</span><span class="sxs-lookup"><span data-stu-id="0a200-154">This will create 5 kanbans.</span></span>  
-    * <span data-ttu-id="0a200-155">この製造かんばんルールのために、10 それぞれに対して 5 のかんばんが作成されたことに注目してください。</span><span class="sxs-lookup"><span data-stu-id="0a200-155">Note that 5 kanbans, for 10 each, was created for this manufacturing kanban rule.</span></span> <span data-ttu-id="0a200-156">これは、この手順の最後のステップです。</span><span class="sxs-lookup"><span data-stu-id="0a200-156">This is the last step in this procedure.</span></span>  
+## <a name="create-kanbans"></a><span data-ttu-id="60473-146">かんばんの作成</span><span class="sxs-lookup"><span data-stu-id="60473-146">Create Kanbans</span></span>
+1. <span data-ttu-id="60473-147">[かんばん] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="60473-147">Expand the Kanbans section.</span></span>
+2. <span data-ttu-id="60473-148">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="60473-148">Click Save.</span></span>
+    * <span data-ttu-id="60473-149">かんばんルールは、かんばんを作成する前に保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="60473-149">The kanban rule needs to be saved before kanbans can be created.</span></span>  
+3. <span data-ttu-id="60473-150">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="60473-150">Click Add.</span></span>
+    * <span data-ttu-id="60473-151">この提案されている [新しいかんばんの数] が 5 であるため、有効なかんばんが存在しないことに注意してください。。</span><span class="sxs-lookup"><span data-stu-id="60473-151">Note that there are no active kanbans, due to this the suggested 'Number of new kanbans' are 5.</span></span> <span data-ttu-id="60473-152">これは、[固定かんばん数量] と等しくなります。</span><span class="sxs-lookup"><span data-stu-id="60473-152">This is equal to the 'Fixed kanban quantity'.</span></span>  
+4. <span data-ttu-id="60473-153">[作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="60473-153">Click Create.</span></span>
+    * <span data-ttu-id="60473-154">これは、5 つのかんばんを作成します。</span><span class="sxs-lookup"><span data-stu-id="60473-154">This will create 5 kanbans.</span></span>  
+    * <span data-ttu-id="60473-155">この製造かんばんルールのために、10 それぞれに対して 5 のかんばんが作成されたことに注目してください。</span><span class="sxs-lookup"><span data-stu-id="60473-155">Note that 5 kanbans, for 10 each, was created for this manufacturing kanban rule.</span></span> <span data-ttu-id="60473-156">これは、この手順の最後のステップです。</span><span class="sxs-lookup"><span data-stu-id="60473-156">This is the last step in this procedure.</span></span>  
 
 
 
