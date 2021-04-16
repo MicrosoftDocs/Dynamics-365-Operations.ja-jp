@@ -2,11 +2,9 @@
 title: 損金の照会
 description: このタスクでは、損金のクエリを実行する方法について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetDepPreTaxDeductionDetails_JP
 audience: Application User
@@ -15,32 +13,32 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 94b3270fb36175d37e6cd97b9cb442f9fe665527
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b5ae96d281274140b9cf864d4ef64a325eae396b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205484"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823586"
 ---
-# <a name="inquiry-on-deductible-expenses"></a><span data-ttu-id="7b27a-103">損金の照会</span><span class="sxs-lookup"><span data-stu-id="7b27a-103">Inquiry on deductible expenses</span></span>
+# <a name="inquiry-on-deductible-expenses"></a><span data-ttu-id="9332e-103">損金の照会</span><span class="sxs-lookup"><span data-stu-id="9332e-103">Inquiry on deductible expenses</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="7b27a-104">このタスクでは、損金のクエリを実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7b27a-104">This task walks you through running a query on deductible expenses.</span></span>
+<span data-ttu-id="9332e-104">このタスクでは、損金のクエリを実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9332e-104">This task walks you through running a query on deductible expenses.</span></span>
 
 
 
-<span data-ttu-id="7b27a-105">このタスクは デモ データ会社 JPMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="7b27a-105">This task was created using the demo data company JPMF.</span></span>
+<span data-ttu-id="9332e-105">このタスクは デモ データ会社 JPMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="9332e-105">This task was created using the demo data company JPMF.</span></span>
 
 
 
-1. <span data-ttu-id="7b27a-106">[固定資産] > [固定資産] > [固定資産] に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b27a-106">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
-2. <span data-ttu-id="7b27a-107">クイック フィルターを使用して、レコードを見つけます。</span><span class="sxs-lookup"><span data-stu-id="7b27a-107">Use the Quick Filter to find records.</span></span> <span data-ttu-id="7b27a-108">たとえば、[固定資産番号] フィールドを「BUILM-000005」の値でフィルタリングします。</span><span class="sxs-lookup"><span data-stu-id="7b27a-108">For example, filter on the Fixed asset number field with a value of 'BUILM-000005'.</span></span>
-3. <span data-ttu-id="7b27a-109">[価値モデル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b27a-109">Click Value models.</span></span>
-4. <span data-ttu-id="7b27a-110">[照会] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b27a-110">Click Inquiry.</span></span>
-5. <span data-ttu-id="7b27a-111">[減価償却費の差額] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b27a-111">Click Depreciation difference.</span></span>
-6. <span data-ttu-id="7b27a-112">[報告日] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="7b27a-112">In the Report date field, enter a date.</span></span>
-    * <span data-ttu-id="7b27a-113">日付を変更して、他の会計年度を表示します。</span><span class="sxs-lookup"><span data-stu-id="7b27a-113">Change the date to see other fiscal years.</span></span>  
+1. <span data-ttu-id="9332e-106">[固定資産] > [固定資産] > [固定資産] に移動します。</span><span class="sxs-lookup"><span data-stu-id="9332e-106">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="9332e-107">クイック フィルターを使用して、レコードを見つけます。</span><span class="sxs-lookup"><span data-stu-id="9332e-107">Use the Quick Filter to find records.</span></span> <span data-ttu-id="9332e-108">たとえば、[固定資産番号] フィールドを「BUILM-000005」の値でフィルタリングします。</span><span class="sxs-lookup"><span data-stu-id="9332e-108">For example, filter on the Fixed asset number field with a value of 'BUILM-000005'.</span></span>
+3. <span data-ttu-id="9332e-109">[価値モデル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9332e-109">Click Value models.</span></span>
+4. <span data-ttu-id="9332e-110">[照会] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9332e-110">Click Inquiry.</span></span>
+5. <span data-ttu-id="9332e-111">[減価償却費の差額] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9332e-111">Click Depreciation difference.</span></span>
+6. <span data-ttu-id="9332e-112">[報告日] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="9332e-112">In the Report date field, enter a date.</span></span>
+    * <span data-ttu-id="9332e-113">日付を変更して、他の会計年度を表示します。</span><span class="sxs-lookup"><span data-stu-id="9332e-113">Change the date to see other fiscal years.</span></span>  
 
 
 

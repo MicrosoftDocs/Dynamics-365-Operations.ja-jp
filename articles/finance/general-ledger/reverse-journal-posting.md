@@ -2,11 +2,9 @@
 title: 仕訳帳の転記の取消
 description: このトピックでは、伝票トランザクション リストまたは財務仕訳帳から伝票を取り消けせるようにする能力について説明します。
 author: MikeFalkner
-manager: AnnBe
 ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
 audience: Application User
@@ -17,57 +15,57 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19f7ea540035a3bc9eba445c508cb6f29e4bd20f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 586c0f807cf45908bacd88ff4e4d5793db054e4d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205005"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815407"
 ---
-# <a name="reverse-journal-posting"></a><span data-ttu-id="88a31-103">仕訳帳の転記の取消</span><span class="sxs-lookup"><span data-stu-id="88a31-103">Reverse journal posting</span></span>
+# <a name="reverse-journal-posting"></a><span data-ttu-id="5156f-103">仕訳帳の転記の取消</span><span class="sxs-lookup"><span data-stu-id="5156f-103">Reverse journal posting</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="88a31-104">このトピックでは、仕訳帳全体、またはその発生元に関係なく伝票トランザクション リストから 1 つ以上の伝票を取り消すことができるようにする Microsoft Dynamics 365 Finance の機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="88a31-104">This topic describes capabilities Microsoft Dynamics 365 Finance that allows you to reverse an entire journal, or reverse one or more vouchers from the voucher transaction list, regardless of their origin.</span></span> 
+<span data-ttu-id="5156f-104">このトピックでは、仕訳帳全体、またはその発生元に関係なく伝票トランザクション リストから 1 つ以上の伝票を取り消すことができるようにする Microsoft Dynamics 365 Finance の機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="5156f-104">This topic describes capabilities Microsoft Dynamics 365 Finance that allows you to reverse an entire journal, or reverse one or more vouchers from the voucher transaction list, regardless of their origin.</span></span> 
 
-## <a name="reversing-journals"></a><span data-ttu-id="88a31-105">仕訳帳の取り消し</span><span class="sxs-lookup"><span data-stu-id="88a31-105">Reversing journals</span></span>
+## <a name="reversing-journals"></a><span data-ttu-id="5156f-105">仕訳帳の取り消し</span><span class="sxs-lookup"><span data-stu-id="5156f-105">Reversing journals</span></span>
 
-<span data-ttu-id="88a31-106">仕訳帳明細行は個別に取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="88a31-106">You can reverse journal lines individually.</span></span> <span data-ttu-id="88a31-107">仕訳帳転記の取消により、財務仕訳帳全体を取り消すこともできます。</span><span class="sxs-lookup"><span data-stu-id="88a31-107">With reverse journal posting, you can also reverse an entire financial journal.</span></span> <span data-ttu-id="88a31-108">仕訳帳を取り消すには:</span><span class="sxs-lookup"><span data-stu-id="88a31-108">To reverse a journal:</span></span> 
+<span data-ttu-id="5156f-106">仕訳帳明細行は個別に取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="5156f-106">You can reverse journal lines individually.</span></span> <span data-ttu-id="5156f-107">仕訳帳転記の取消により、財務仕訳帳全体を取り消すこともできます。</span><span class="sxs-lookup"><span data-stu-id="5156f-107">With reverse journal posting, you can also reverse an entire financial journal.</span></span> <span data-ttu-id="5156f-108">仕訳帳を取り消すには:</span><span class="sxs-lookup"><span data-stu-id="5156f-108">To reverse a journal:</span></span> 
 
-- <span data-ttu-id="88a31-109">財務仕訳帳を開き、転記された仕訳帳のフィルター処理を行います。</span><span class="sxs-lookup"><span data-stu-id="88a31-109">Open the financial journal and filter on posted journals.</span></span>
-- <span data-ttu-id="88a31-110">ページ上部の **取消** メニューを選択します。</span><span class="sxs-lookup"><span data-stu-id="88a31-110">Select the **Reverse** menu at the top of the page.</span></span>
-- <span data-ttu-id="88a31-111">伝票および伝票明細行の合計数が、取り消される明細行の合計金額と共に表示されます</span><span class="sxs-lookup"><span data-stu-id="88a31-111">You will see the total number of vouchers and voucher lines as well as the total amount of the lines being reversed</span></span>
-- <span data-ttu-id="88a31-112">既存のトランザクションの日付を使用する場合は **はい** を選択し、新しく入力する場合は **いいえ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="88a31-112">Select **Yes** to use the existing transaction dates or **No** to enter a new one.</span></span> <span data-ttu-id="88a31-113">場合によっては、元のトランザクションの期間が終了していることがあり、取消のために新しいトランザクション日付を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88a31-113">In some cases, the period of the original transaction may be closed and you must enter a new transaction date for the reversal.</span></span>
-- <span data-ttu-id="88a31-114">**いいえ** を選択した場合、取消のためにトランザクションの日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="88a31-114">If you select **No**, enter a transaction date for the reversal.</span></span> 
-- <span data-ttu-id="88a31-115">取消トランザクションに追加するコメントを入力します。</span><span class="sxs-lookup"><span data-stu-id="88a31-115">Enter a comment that you want added to the reversal transaction.</span></span>
-- <span data-ttu-id="88a31-116">**取消** ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="88a31-116">Select the **Reverse** button.</span></span>
+- <span data-ttu-id="5156f-109">財務仕訳帳を開き、転記された仕訳帳のフィルター処理を行います。</span><span class="sxs-lookup"><span data-stu-id="5156f-109">Open the financial journal and filter on posted journals.</span></span>
+- <span data-ttu-id="5156f-110">ページ上部の **取消** メニューを選択します。</span><span class="sxs-lookup"><span data-stu-id="5156f-110">Select the **Reverse** menu at the top of the page.</span></span>
+- <span data-ttu-id="5156f-111">伝票および伝票明細行の合計数が、取り消される明細行の合計金額と共に表示されます</span><span class="sxs-lookup"><span data-stu-id="5156f-111">You will see the total number of vouchers and voucher lines as well as the total amount of the lines being reversed</span></span>
+- <span data-ttu-id="5156f-112">既存のトランザクションの日付を使用する場合は **はい** を選択し、新しく入力する場合は **いいえ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5156f-112">Select **Yes** to use the existing transaction dates or **No** to enter a new one.</span></span> <span data-ttu-id="5156f-113">場合によっては、元のトランザクションの期間が終了していることがあり、取消のために新しいトランザクション日付を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5156f-113">In some cases, the period of the original transaction may be closed and you must enter a new transaction date for the reversal.</span></span>
+- <span data-ttu-id="5156f-114">**いいえ** を選択した場合、取消のためにトランザクションの日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="5156f-114">If you select **No**, enter a transaction date for the reversal.</span></span> 
+- <span data-ttu-id="5156f-115">取消トランザクションに追加するコメントを入力します。</span><span class="sxs-lookup"><span data-stu-id="5156f-115">Enter a comment that you want added to the reversal transaction.</span></span>
+- <span data-ttu-id="5156f-116">**取消** ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="5156f-116">Select the **Reverse** button.</span></span>
 
-<span data-ttu-id="88a31-117">トランザクションは取り消されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-117">The transactions will be reversed.</span></span> 
+<span data-ttu-id="5156f-117">トランザクションは取り消されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-117">The transactions will be reversed.</span></span> 
 
-<span data-ttu-id="88a31-118">伝票に 100 行を超える明細行がある場合、バッチ処理を使用して取消プロセスを実行します。</span><span class="sxs-lookup"><span data-stu-id="88a31-118">If the voucher contains more than 100 lines, the reversal process will run using the batch process.</span></span> <span data-ttu-id="88a31-119">バッチ ジョブのコメントを表示することにより、結果を確認することができます。</span><span class="sxs-lookup"><span data-stu-id="88a31-119">You can review the results by viewing the comments in the batch job.</span></span> <span data-ttu-id="88a31-120">取消が行われなかったトランザクションはすべて、バッチ ジョブの履歴に一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-120">Any transactions that couldn't be reversed will be listed in the batch job history.</span></span>
+<span data-ttu-id="5156f-118">伝票に 100 行を超える明細行がある場合、バッチ処理を使用して取消プロセスを実行します。</span><span class="sxs-lookup"><span data-stu-id="5156f-118">If the voucher contains more than 100 lines, the reversal process will run using the batch process.</span></span> <span data-ttu-id="5156f-119">バッチ ジョブのコメントを表示することにより、結果を確認することができます。</span><span class="sxs-lookup"><span data-stu-id="5156f-119">You can review the results by viewing the comments in the batch job.</span></span> <span data-ttu-id="5156f-120">取消が行われなかったトランザクションはすべて、バッチ ジョブの履歴に一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-120">Any transactions that couldn't be reversed will be listed in the batch job history.</span></span>
 
-<span data-ttu-id="88a31-121">伝票に 100 行以下の明細行がある場合、取消プロセスがすぐに実行されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-121">If the voucher contains 100 lines or fewer, the reversal process will run immediately.</span></span> <span data-ttu-id="88a31-122">結果は、取消ができなかった理由にしたがって、取消ができなかったすべての伝票を表示するダイアログ ボックス内に表示されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-122">The results will be presented in a dialog box that shows any voucher that could not be reversed, along with the reason why it could not be reversed.</span></span> <span data-ttu-id="88a31-123">**OK** を選択してダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="88a31-123">Select **OK** to close the dialog box.</span></span>
+<span data-ttu-id="5156f-121">伝票に 100 行以下の明細行がある場合、取消プロセスがすぐに実行されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-121">If the voucher contains 100 lines or fewer, the reversal process will run immediately.</span></span> <span data-ttu-id="5156f-122">結果は、取消ができなかった理由にしたがって、取消ができなかったすべての伝票を表示するダイアログ ボックス内に表示されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-122">The results will be presented in a dialog box that shows any voucher that could not be reversed, along with the reason why it could not be reversed.</span></span> <span data-ttu-id="5156f-123">**OK** を選択してダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5156f-123">Select **OK** to close the dialog box.</span></span>
 
-## <a name="reversing-vouchers-from-the-voucher-transaction-list"></a><span data-ttu-id="88a31-124">伝票トランザクション リストから伝票を取り消します。</span><span class="sxs-lookup"><span data-stu-id="88a31-124">Reversing vouchers from the voucher transaction list.</span></span> 
+## <a name="reversing-vouchers-from-the-voucher-transaction-list"></a><span data-ttu-id="5156f-124">伝票トランザクション リストから伝票を取り消します。</span><span class="sxs-lookup"><span data-stu-id="5156f-124">Reversing vouchers from the voucher transaction list.</span></span> 
 
-<span data-ttu-id="88a31-125">また、すべての補助元帳間で **伝票のトランザクション リスト** から伝票を取り消すこともできます。</span><span class="sxs-lookup"><span data-stu-id="88a31-125">You can also reverse vouchers from the **Voucher transaction list** across all subledgers.</span></span> <span data-ttu-id="88a31-126">さらに、一度に複数の伝票を取り消すこともできます。</span><span class="sxs-lookup"><span data-stu-id="88a31-126">In addition, you can reverse more than one voucher at a time.</span></span> 
+<span data-ttu-id="5156f-125">また、すべての補助元帳間で **伝票のトランザクション リスト** から伝票を取り消すこともできます。</span><span class="sxs-lookup"><span data-stu-id="5156f-125">You can also reverse vouchers from the **Voucher transaction list** across all subledgers.</span></span> <span data-ttu-id="5156f-126">さらに、一度に複数の伝票を取り消すこともできます。</span><span class="sxs-lookup"><span data-stu-id="5156f-126">In addition, you can reverse more than one voucher at a time.</span></span> 
 
-<span data-ttu-id="88a31-127">複数の伝票を取り消すには:</span><span class="sxs-lookup"><span data-stu-id="88a31-127">To reverse one or more vouchers:</span></span> 
+<span data-ttu-id="5156f-127">複数の伝票を取り消すには:</span><span class="sxs-lookup"><span data-stu-id="5156f-127">To reverse one or more vouchers:</span></span> 
 
-- <span data-ttu-id="88a31-128">ページ上部の **取消** メニューを選択します。</span><span class="sxs-lookup"><span data-stu-id="88a31-128">Select the **Reverse** menu at the top of the page</span></span>
-- <span data-ttu-id="88a31-129">伝票および伝票明細行の合計数が、取り消される明細行の合計金額と共に表示されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-129">You will see the total number of vouchers and voucher lines as well as the total amount of the lines being reversed.</span></span>
-- <span data-ttu-id="88a31-130">既存のトランザクションの日付を使用する場合は **はい** を選択し、新しく入力する場合は **いいえ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="88a31-130">Select **Yes** to use the existing transaction dates or **No** to enter a new one.</span></span> <span data-ttu-id="88a31-131">場合によっては、元のトランザクションの期間が終了していることがあり、取消を行うために新しいトランザクション日付を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88a31-131">In some cases, the period of the original transaction may be closed and you must enter a new transaction date to reverse it.</span></span>
-- <span data-ttu-id="88a31-132">**いいえ** を選択した場合、取消のためにトランザクションの日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="88a31-132">If you select **No**, enter a transaction date for the reversal.</span></span> 
-- <span data-ttu-id="88a31-133">取消トランザクションについて説明するコメントを入力します。</span><span class="sxs-lookup"><span data-stu-id="88a31-133">Enter a comment to describe the reversal transaction.</span></span>
-- <span data-ttu-id="88a31-134">**取消** ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="88a31-134">Select the **Reverse** button.</span></span>
+- <span data-ttu-id="5156f-128">ページ上部の **取消** メニューを選択します。</span><span class="sxs-lookup"><span data-stu-id="5156f-128">Select the **Reverse** menu at the top of the page</span></span>
+- <span data-ttu-id="5156f-129">伝票および伝票明細行の合計数が、取り消される明細行の合計金額と共に表示されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-129">You will see the total number of vouchers and voucher lines as well as the total amount of the lines being reversed.</span></span>
+- <span data-ttu-id="5156f-130">既存のトランザクションの日付を使用する場合は **はい** を選択し、新しく入力する場合は **いいえ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5156f-130">Select **Yes** to use the existing transaction dates or **No** to enter a new one.</span></span> <span data-ttu-id="5156f-131">場合によっては、元のトランザクションの期間が終了していることがあり、取消を行うために新しいトランザクション日付を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5156f-131">In some cases, the period of the original transaction may be closed and you must enter a new transaction date to reverse it.</span></span>
+- <span data-ttu-id="5156f-132">**いいえ** を選択した場合、取消のためにトランザクションの日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="5156f-132">If you select **No**, enter a transaction date for the reversal.</span></span> 
+- <span data-ttu-id="5156f-133">取消トランザクションについて説明するコメントを入力します。</span><span class="sxs-lookup"><span data-stu-id="5156f-133">Enter a comment to describe the reversal transaction.</span></span>
+- <span data-ttu-id="5156f-134">**取消** ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="5156f-134">Select the **Reverse** button.</span></span>
 
-<span data-ttu-id="88a31-135">トランザクションは取り消されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-135">The transactions will be reversed.</span></span> 
+<span data-ttu-id="5156f-135">トランザクションは取り消されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-135">The transactions will be reversed.</span></span> 
 
-<span data-ttu-id="88a31-136">100 行を超える伝票明細行がある場合、バッチ処理を使用して取消プロセスを実行します。</span><span class="sxs-lookup"><span data-stu-id="88a31-136">If there are more than 100 voucher lines, the reversal process will run using the batch process.</span></span> <span data-ttu-id="88a31-137">バッチ ジョブのコメントを表示することにより、結果を確認することができます。</span><span class="sxs-lookup"><span data-stu-id="88a31-137">You can review the results by viewing the comments in the batch job.</span></span> <span data-ttu-id="88a31-138">取消が行われなかったトランザクションはすべて、バッチ ジョブの履歴に記録されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-138">Any transactions that couldn't be reversed will be noted in the batch job history.</span></span>
+<span data-ttu-id="5156f-136">100 行を超える伝票明細行がある場合、バッチ処理を使用して取消プロセスを実行します。</span><span class="sxs-lookup"><span data-stu-id="5156f-136">If there are more than 100 voucher lines, the reversal process will run using the batch process.</span></span> <span data-ttu-id="5156f-137">バッチ ジョブのコメントを表示することにより、結果を確認することができます。</span><span class="sxs-lookup"><span data-stu-id="5156f-137">You can review the results by viewing the comments in the batch job.</span></span> <span data-ttu-id="5156f-138">取消が行われなかったトランザクションはすべて、バッチ ジョブの履歴に記録されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-138">Any transactions that couldn't be reversed will be noted in the batch job history.</span></span>
 
-<span data-ttu-id="88a31-139">伝票明細行の数が 100 行以下である場合、取消プロセスがすぐに実行されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-139">If the number of voucher lines is 100 lines or fewer, the reversal process will run immediately.</span></span> <span data-ttu-id="88a31-140">結果は、取消ができなかった理由にしたがって、取消ができなかったすべての伝票を表示するダイアログ ボックス内に表示されます。</span><span class="sxs-lookup"><span data-stu-id="88a31-140">The results will display in a dialog box that shows any voucher that couldn't be reversed, along with the reason why.</span></span> <span data-ttu-id="88a31-141">**OK** を選択してダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="88a31-141">Select **OK** to close the dialog box.</span></span>
+<span data-ttu-id="5156f-139">伝票明細行の数が 100 行以下である場合、取消プロセスがすぐに実行されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-139">If the number of voucher lines is 100 lines or fewer, the reversal process will run immediately.</span></span> <span data-ttu-id="5156f-140">結果は、取消ができなかった理由にしたがって、取消ができなかったすべての伝票を表示するダイアログ ボックス内に表示されます。</span><span class="sxs-lookup"><span data-stu-id="5156f-140">The results will display in a dialog box that shows any voucher that couldn't be reversed, along with the reason why.</span></span> <span data-ttu-id="5156f-141">**OK** を選択してダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5156f-141">Select **OK** to close the dialog box.</span></span>
 
-<span data-ttu-id="88a31-142">トランザクションを取り消すことができるのは、取消のためのビジネス ルールに合致している場合だけです。</span><span class="sxs-lookup"><span data-stu-id="88a31-142">Transactions can be reversed only if they meet the business rules for reversing them.</span></span> <span data-ttu-id="88a31-143">このトピックで説明されている機能を使用して仕入先支払を取り消すことはできません。</span><span class="sxs-lookup"><span data-stu-id="88a31-143">Vendor payments cannot be reversed using the capability described in this topic.</span></span> <span data-ttu-id="88a31-144">仕入先支払は、[仕入先支払の取消](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) に一覧表示されている手順に従って取り消す必要があります。</span><span class="sxs-lookup"><span data-stu-id="88a31-144">Vendor payments must be reversed by following the steps listed in [Reverse a vendor payment](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).</span></span>
+<span data-ttu-id="5156f-142">トランザクションを取り消すことができるのは、取消のためのビジネス ルールに合致している場合だけです。</span><span class="sxs-lookup"><span data-stu-id="5156f-142">Transactions can be reversed only if they meet the business rules for reversing them.</span></span> <span data-ttu-id="5156f-143">このトピックで説明されている機能を使用して仕入先支払を取り消すことはできません。</span><span class="sxs-lookup"><span data-stu-id="5156f-143">Vendor payments cannot be reversed using the capability described in this topic.</span></span> <span data-ttu-id="5156f-144">仕入先支払は、[仕入先支払の取消](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) に一覧表示されている手順に従って取り消す必要があります。</span><span class="sxs-lookup"><span data-stu-id="5156f-144">Vendor payments must be reversed by following the steps listed in [Reverse a vendor payment](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).</span></span>
 
 
 
