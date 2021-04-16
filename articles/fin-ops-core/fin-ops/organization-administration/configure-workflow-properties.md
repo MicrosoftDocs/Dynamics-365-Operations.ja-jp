@@ -2,7 +2,6 @@
 title: ワークフロー プロパティのコンフィギュレーション
 description: このトピックでは、ワークフローの各種プロパティをコンフィギュレーションする方法について説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40118f329a676ffb30870eb882d127e3eb258599
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 8d55665df9efdc87f8a7c42a132bad11b4c4426e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566970"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747786"
 ---
 # <a name="configure-workflow-properties"></a>ワークフロー プロパティのコンフィギュレーション
 

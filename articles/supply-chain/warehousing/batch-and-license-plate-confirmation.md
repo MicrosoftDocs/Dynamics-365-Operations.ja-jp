@@ -2,11 +2,9 @@
 title: バッチおよびライセンス プレートの確認
 description: このトピックでは、モバイル デバイスからバッチおよびライセンス プレートの確認を設定して適用する方法について説明します。
 author: Mirzaab
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm
 audience: Application User
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c309061b31f10209c22cb90cc08c971b697f6dc9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c588e6ed11d275b75133e2824f3d385048050426
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233130"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837540"
 ---
 # <a name="batch-and-license-plate-confirmation"></a>バッチおよびライセンス プレートの確認
 
 [!include [banner](../includes/banner.md)]
 
-バッチの確認では、適切なバッチがピッキングされていることをモバイル デバイスから確認することができます。 上の品目のみのバッチ作業の最初のピッキング時、上のバッチの表示は、検索階層内のバッチ範囲の場所を超えることを示し、ピッキングされているバッチが作業明細行のバッチと一致していることを確認する必要があります。
+バッチの確認では、適切なバッチがピッキングされていることをモバイル デバイスから確認することができます。 *上記バッチ\[ロケーション\]* のみのバッチ作業の最初のピッキング時、上のバッチの表示は、検索階層内のバッチ範囲の場所を超えることを示し、ピッキングされているバッチが作業明細行のバッチと一致していることを確認する必要があります。
 
 ライセンス プレートの確認では、適切なライセンス プレートがピッキングされていることをモバイル デバイスから確認することができます。 ステージの場所からのピッキング作業時に、ピッキングされるライセンス プレートが作業に関連付けられているライセンス プレートと一致していることを確認する必要があります。 ライセンス プレートをスキャンして作業を起動する場合、この確認手順はスキップされます。
 

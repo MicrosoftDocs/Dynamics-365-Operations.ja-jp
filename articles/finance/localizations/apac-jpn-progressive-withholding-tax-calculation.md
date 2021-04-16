@@ -2,11 +2,9 @@
 title: 日本の累進的源泉徴収税
 description: このトピックでは、日本の累進的源泉徴収税に関する情報を提供します。
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6ccdd0450a484b3976c135bce619c7688d7e0ab8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fec1e2e278c45cd8ee85bd64e67dd4bde81b41a7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253899"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823656"
 ---
 # <a name="progressive-withholding-tax-for-japan"></a>日本の累進的源泉徴収税
 

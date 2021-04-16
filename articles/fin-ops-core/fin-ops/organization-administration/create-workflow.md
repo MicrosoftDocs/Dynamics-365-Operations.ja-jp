@@ -2,7 +2,6 @@
 title: ワークフローの作成の概要
 description: このトピックでは、ワークフローの作成方法を説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: a64329780b96ca1e1675ced103c86c7cf0bc3754
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 1e1c86e828eef39a6895416f4825c2853e23c826
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567393"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747762"
 ---
 # <a name="create-workflows-overview"></a>ワークフローの作成の概要
 

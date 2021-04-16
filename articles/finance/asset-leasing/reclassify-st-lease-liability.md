@@ -2,11 +2,9 @@
 title: リース負債の短期部分の再分類
 description: このトピックでは、一部のリース負債を短期として再分類するための月次仕訳入力の作成方法について説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9189033987a3072c7122e1a198768d9de6aa2a52
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7d98d66b5fe9d32a86eb75d937fedfdca6773ac4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254086"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823098"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>リース負債の短期部分の再分類
 
@@ -38,8 +36,7 @@ ms.locfileid: "5254086"
 2. **バッチ仕訳作成** ダイアログ ボックスの **スケジュールの選択** フィールドで、**短期リース負債の再分類** を選択します。
 3. **リース グループ゜** フィールドで、リース グループを選択します。 または、**帳簿 ID** フィールドで、帳簿 ID を選択します。
 4. **転記** パラメータをオンにします。 または、エントリを作成するが転記されない場合は、このパラメータをオフのままにしておきます。
-5. 転記の前に **転記の前にプレビュー** パラメータをオンにして、このエントリを表示します。
-6. **OK** を選択します。
+5. **OK** を選択します。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

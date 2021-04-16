@@ -2,11 +2,9 @@
 title: 画像の焦点のカスタマイズ
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像焦点のカスタマイズについて説明します。
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fca209c9827192f50c2f1a5bd9e78146214e1e0e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 962caff0e8e41487231c6075fa7b2df2a59dca48
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222564"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799304"
 ---
 # <a name="customize-image-focal-points"></a>画像の中心のカスタマイズ
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像焦点のカスタマイズについて説明します。
-
-## <a name="overview"></a>概要
 
 画像が Commerce サイト ビルダーのメディア ライブラリーにアップロードされると、システムによって画像の焦点が決定されます。 たとえば、画像に人物が含まれている場合、既定では、システムによって焦点が人物の顔に設定されます。 ほとんどの場合、自動的に設定される焦点ポイントはすべてのビューポートに対して有効ですが、場合によっては、画像の特定の部分が常に表示されるように焦点を調整することをお勧めします。
 

@@ -2,11 +2,9 @@
 title: 分割後の逓減残高による減価償却
 description: このトピックでは、定率法を使用して資産を分割した後に減価償却を計算する方法 (固定資産で使用) について説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f276f49e5b1bc2814dc851f1ad4204a151d86c43
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 056808b7d4d490bc4d60aa058108d159c1d4867c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222386"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826254"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>分割後の逓減残高による減価償却
 

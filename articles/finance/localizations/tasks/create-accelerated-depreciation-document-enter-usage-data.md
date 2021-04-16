@@ -2,11 +2,9 @@
 title: 増加償却ドキュメントの作成および使用状況データの入力
 description: 日本では、加速償却は、原則ドキュメントごとに申告されます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, AssetAcceleratedDepDocument_JP, SysQueryForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9306553586d3e9f59aa8f519066fc63899cbb5bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e88c2ecea0be522bf87f2dbc3433778e8063054c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236662"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820501"
 ---
 # <a name="create-an-accelerated-depreciation-document-and-enter-usage-data"></a>増加償却ドキュメントの作成および使用状況データの入力
 

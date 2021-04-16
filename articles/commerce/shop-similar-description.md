@@ -2,11 +2,9 @@
 title: "\"同じような説明を探す\" 推奨事項の有効化"
 description: このトピックでは、Microsoft Dynamics 365 Commerce で、"同じような説明を探す" 製品推奨事項を有効にする方法について説明します。
 author: bsokolov
-manager: AnnBe
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b6b397b1f21e3dfcdb4a2b7fe67ddb541d090a97
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce01ef1d4b916d955685b4d01dafd3d54d6fcebd
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234392"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795408"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>"同じような説明を探す" 推奨事項の有効化
 

@@ -2,11 +2,9 @@
 title: 請求合計の照合における差異の解決の概要
 description: 合計請求書の照合により、合計請求書金額が、許容差を超えて予測金額から逸脱していないことを確認できます。
 author: abruer
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTotalPriceTolerance
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0635f388dba16a1e4374f0915fbab5b88c3b76ab
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 804800cccdfd0473c9e3514f6c17405eb2ec8335
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227453"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827917"
 ---
 # <a name="resolve-discrepancies-during-invoice-totals-matching-overview"></a>請求合計の照合における差異の解決の概要
 

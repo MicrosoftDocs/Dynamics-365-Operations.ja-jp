@@ -2,11 +2,9 @@
 title: POS で顧客注文集荷を処理する
 description: このトピックでは、顧客注文の集荷を処理するための POS アプリケーションで使用できる機能について説明します。
 author: Hhainesms
-manager: annbe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 2e7df580557486c67fc82af19f742bc8002cb881
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b5c17a65a54ae88118bc5ecaa25cdadb67861129
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231083"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802770"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>POS で顧客注文集荷を処理する
 

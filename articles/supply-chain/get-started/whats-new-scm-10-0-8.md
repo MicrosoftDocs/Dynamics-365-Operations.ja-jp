@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Management 10.0.8 の新機能および変更された機能 (2020 年 2 月)
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.8 の新機能または変更された機能について説明します。
 author: kamaybac
-manager: tfehr
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 25dfcfffe3fc551f2b45dfe152b72e2d65061d8f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1762425642ee976b32c9daf3fbb90961fa983d19
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207114"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819403"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Dynamics 365 Supply Chain Management 10.0.8 の新機能および変更された機能 (2020 年 2 月)
 

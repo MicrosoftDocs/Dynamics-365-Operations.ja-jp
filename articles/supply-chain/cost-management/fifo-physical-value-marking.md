@@ -2,11 +2,9 @@
 title: 現物価格とマーキングを使用した FIFO
 description: 先入れ先出し (FIFO) は、最初に入庫したものを最初に出庫する在庫モデルです。 卸売資産から財務更新された払出は、在庫トランザクションの財務日付に基づいて最初に財務更新された受入に対して決済されます。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e01300a4932cb6797905072b913b70db3700184
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205431"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821612"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>現物価格とマーキングを使用した FIFO
 

@@ -2,11 +2,9 @@
 title: 損金の固定資産マスター データ ファイルの管理
 description: このタスクでは、損金の固定資産マスター データの保守を行います。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetGroup, AssetGroupBookSetup,  AssetTable, AssetBook
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47e84803714b5e180d54e0ae3060a3b2a7e7a50d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df1e5dd0d4dd8b3a3c3d705af8c8438096074593
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223834"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819540"
 ---
 # <a name="maintain-fixed-asset-master-data-files-for-deductible-expenses"></a>損金の固定資産マスター データ ファイルの管理
 
