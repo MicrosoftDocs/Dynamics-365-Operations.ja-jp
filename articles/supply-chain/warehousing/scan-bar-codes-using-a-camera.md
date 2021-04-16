@@ -1,12 +1,10 @@
 ---
-title: 倉庫アプリでのカメラを使用したバーコードのスキャン
-description: このトピックでは、倉庫アプリを設定して、モバイル デバイスでカメラを使用してバーコードをスキャンする方法について説明します。
+title: Warehouse Management モバイル アプリでカメラを使用してバーコードをスキャンする
+description: このトピックでは、Warehouse Management モバイル アプリを設定して、モバイル デバイスでカメラを使用してバーコードをスキャンする方法について説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 01/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField
 audience: Application User
@@ -16,43 +14,40 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 28a49736f43bd2d3bfd4c6856f2f87079a005ba2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2f61f9c45b95b730a7f1743963658ec00abfbb56
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239305"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831221"
 ---
-# <a name="scan-bar-codes-using-a-camera-in-the-warehouse-app"></a><span data-ttu-id="a70a7-103">倉庫アプリでのカメラを使用したバーコードのスキャン</span><span class="sxs-lookup"><span data-stu-id="a70a7-103">Scan bar codes using a camera in the warehouse app</span></span>
+# <a name="scan-bar-codes-using-a-camera-in-the-warehouse-management-mobile-app"></a><span data-ttu-id="d05eb-103">Warehouse Management モバイル アプリでカメラを使用してバーコードをスキャンする</span><span class="sxs-lookup"><span data-stu-id="d05eb-103">Scan bar codes using a camera in the Warehouse Management mobile app</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a70a7-104">このトピックでは、倉庫アプリを設定して、モバイル デバイスでカメラを使用してバーコードをスキャンする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a70a7-104">This topic explains how to set up the warehouse app to scan bar codes using a camera on a mobile device.</span></span> 
+<span data-ttu-id="d05eb-104">このトピックでは、Warehouse Management モバイル アプリを設定して、モバイル デバイスでカメラを使用してバーコードをスキャンする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d05eb-104">This topic explains how to set up the Warehouse Management mobile app to scan bar codes using a camera on a mobile device.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a70a7-105">必要条件</span><span class="sxs-lookup"><span data-stu-id="a70a7-105">Prerequisites</span></span>
-<span data-ttu-id="a70a7-106">この機能を使用するには、インストールされている倉庫アプリのバージョン 1.2.0.0 が必要であり、デバイスにはカメラが必要です。</span><span class="sxs-lookup"><span data-stu-id="a70a7-106">To use this feature, you need to have version 1.2.0.0 of the warehouse app installed, and your device must have a camera.</span></span> <span data-ttu-id="a70a7-107">更新した後にアプリを開く際に、カメラを使用するアプリを許可するように求められます。</span><span class="sxs-lookup"><span data-stu-id="a70a7-107">When you open the app after updating, you will be prompted to allow the app to use the camera.</span></span> <span data-ttu-id="a70a7-108">デバイスにカメラがない場合、プロンプトは表示されず、カメラをスキャナーとして使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="a70a7-108">If your device doesn’t have a camera, no prompt will be shown, and you will not be able to use a camera as a scanner.</span></span> 
+## <a name="setup"></a><span data-ttu-id="d05eb-105">段取り</span><span class="sxs-lookup"><span data-stu-id="d05eb-105">Setup</span></span>
 
-## <a name="setup"></a><span data-ttu-id="a70a7-109">セットアップ</span><span class="sxs-lookup"><span data-stu-id="a70a7-109">Setup</span></span>
-<span data-ttu-id="a70a7-110">倉庫アプリケーションの表示設定では、バーコードのスキャンにカメラを使用すべきかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="a70a7-110">In the Display settings of the warehouse application, you can select if the camera should be used for bar code scanning.</span></span> <span data-ttu-id="a70a7-111">**スキャナーとしてカメラを使用** を有効にした場合、優先入力モードを **スキャン** に設定した各入力フィールドでカメラを使用できます。</span><span class="sxs-lookup"><span data-stu-id="a70a7-111">If you enable **Use the camera as scanner**, you can use the camera on every input field that has the preferred input mode set to **Scanning**.</span></span> 
+<span data-ttu-id="d05eb-106">Warehouse Management モバイル アプリの表示設定では、バーコードのスキャンにカメラを使用すべきかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d05eb-106">In the display settings of the Warehouse Management mobile app, you can select if the camera should be used for bar code scanning.</span></span> <span data-ttu-id="d05eb-107">**スキャナーとしてカメラを使用** を有効にした場合、優先入力モードを **スキャン** に設定した各入力フィールドでカメラを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d05eb-107">If you enable **Use the camera as scanner**, you can use the camera on every input field that has the preferred input mode set to **Scanning**.</span></span>
 
-<span data-ttu-id="a70a7-112">入力フィールドをスキャン可能にする必要があるかどうかをコントロールするには、**倉庫保管アプリ フィールド名** ページで、**優先入力モード** を **スキャン** に設定します。</span><span class="sxs-lookup"><span data-stu-id="a70a7-112">To control whether an input field should be scannable, on the **Warehouse app field names** page, set **Preferred input mode** to **Scanning**.</span></span> <span data-ttu-id="a70a7-113">このオプションが選択されている場合、倉庫アプリでのスキャンにカメラを使用できます。</span><span class="sxs-lookup"><span data-stu-id="a70a7-113">When this option is selected, a camera can be used for scanning in the warehouse app.</span></span> <span data-ttu-id="a70a7-114">倉庫管理でアプリ フィールド名を構成する方法については、[倉庫アプリでアプリ フィールド名を構成する](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a70a7-114">For information about how to configure app field names in Warehousing, see [Configure app field names in warehouse app](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).</span></span>
+<span data-ttu-id="d05eb-108">入力フィールドをスキャン可能にする必要があるかどうかをコントロールするには、**倉庫保管アプリ フィールド名** ページで、**優先入力モード** を **スキャン** に設定します。</span><span class="sxs-lookup"><span data-stu-id="d05eb-108">To control whether an input field should be scannable, on the **Warehouse app field names** page, set **Preferred input mode** to **Scanning**.</span></span> <span data-ttu-id="d05eb-109">このオプションが選択されている場合、Warehouse Management モバイル アプリでのスキャンにカメラを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d05eb-109">When this option is selected, a camera can be used for scanning in the Warehouse Management mobile app.</span></span> <span data-ttu-id="d05eb-110">詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d05eb-110">For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).</span></span>
 
-## <a name="supported-bar-code-formats"></a><span data-ttu-id="a70a7-115">サポートされているバーコード形式</span><span class="sxs-lookup"><span data-stu-id="a70a7-115">Supported bar code formats</span></span>
-<span data-ttu-id="a70a7-116">サポートされている最も一般的なバーコード形式には、コード 128、コード 39、コード 93、EAN-8、EAN-13、UPC-E、UPC-A、および QR コードが含まれます。</span><span class="sxs-lookup"><span data-stu-id="a70a7-116">The most common bar code formats are supported, including Code 128, Code 39, Code 93, EAN-8, EAN-13, UPC-E, UPC-A, and QR codes.</span></span> 
+## <a name="supported-bar-code-formats"></a><span data-ttu-id="d05eb-111">サポートされているバーコード形式</span><span class="sxs-lookup"><span data-stu-id="d05eb-111">Supported bar code formats</span></span>
 
-## <a name="navigation"></a><span data-ttu-id="a70a7-117">ナビゲーション</span><span class="sxs-lookup"><span data-stu-id="a70a7-117">Navigation</span></span>
-<span data-ttu-id="a70a7-118">カメラ ページは、優先入力モードをスキャンに設定した入力フィールドの各ページで開始されます。カメラ ページに来ると次のオプションを使用して移動します。</span><span class="sxs-lookup"><span data-stu-id="a70a7-118">The camera page will be initiated on each page where the input field has the preferred input mode set to Scanning, when you are on the Camera page use the following options to navigate:</span></span>
-- <span data-ttu-id="a70a7-119">[タスクと詳細] ページに戻るには [戻る] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a70a7-119">Click the back button to go back to the Task and details page.</span></span> 
-- <span data-ttu-id="a70a7-120">手動で入力するためのページに移動するには [タスクと詳細] ページにある鉛筆をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a70a7-120">Click the pencil on the Task and details page to go to the page where you can type input manually.</span></span>
-- <span data-ttu-id="a70a7-121">[カメラ] ページに戻るには [タスクと詳細] ページでカメラをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a70a7-121">Click the camera on the Task and details page to go back to the Camera page.</span></span> 
+<span data-ttu-id="d05eb-112">サポートされている最も一般的なバーコード形式には、コード 128、コード 39、コード 93、EAN-8、EAN-13、UPC-E、UPC-A、および QR コードが含まれます。</span><span class="sxs-lookup"><span data-stu-id="d05eb-112">The most common bar code formats are supported, including Code 128, Code 39, Code 93, EAN-8, EAN-13, UPC-E, UPC-A, and QR codes.</span></span>
 
-| <span data-ttu-id="a70a7-122">[タスクと詳細] ページ</span><span class="sxs-lookup"><span data-stu-id="a70a7-122">Task and details page</span></span> | <span data-ttu-id="a70a7-123">[カメラ] ページ</span><span class="sxs-lookup"><span data-stu-id="a70a7-123">Camera page</span></span> | 
-| :---------------------: | :--------------------: |
-| ![カメラ スキャンのタスク例の詳細ページ](./media/camera-scanning-example-task-detail-page50.png)          | ![カメラ スキャン例のカメラ ページをもっと小さくする](./media/camera-scanning-example-camera-page50.png)          |
+## <a name="navigation"></a><span data-ttu-id="d05eb-113">ナビゲーション</span><span class="sxs-lookup"><span data-stu-id="d05eb-113">Navigation</span></span>
 
-<span data-ttu-id="a70a7-126">[カメラ] ページで、[カメラ] ボタンをクリックすると、バー コードを識別しようとしているときにグレー表示になります。</span><span class="sxs-lookup"><span data-stu-id="a70a7-126">On the camera page, when you click the Camera button, it will appear dimmed while trying to identify a bar code.</span></span> <span data-ttu-id="a70a7-127">バーコードが 5 秒以内で識別されない場合は、プロセスがタイムアウトになり、[カメラ] ボタンがもう一度利用可能になります。</span><span class="sxs-lookup"><span data-stu-id="a70a7-127">If a bar code is not identified within 5 seconds, the process will time out and the Camera button will become available again.</span></span> <span data-ttu-id="a70a7-128">それからもう一度バーコードをスキャンすることができます。</span><span class="sxs-lookup"><span data-stu-id="a70a7-128">You will then be able to try to scan a bar code again.</span></span>
+<span data-ttu-id="d05eb-114">カメラ ページは、**優先入力モード** を *スキャン* に設定した入力フィールドの各ページで開始されます。カメラ ページに来ると次のオプションを使用して移動します。</span><span class="sxs-lookup"><span data-stu-id="d05eb-114">The camera page will be initiated on each page where the input field has its **Preferred input mode** set to *Scanning*, when you are on the camera page use the following options to navigate:</span></span>
 
-<span data-ttu-id="a70a7-129">バーコードにカメラの視点を定めると、最適な結果で、バーコードはかっこ内に合わせられた状態になります。</span><span class="sxs-lookup"><span data-stu-id="a70a7-129">When you aim the camera at a bar code, keep the bar code aligned within the brackets for best result.</span></span> <span data-ttu-id="a70a7-130">バーコードが正常にスキャンされると、結果が処理され、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="a70a7-130">When a bar code is scanned successfully, the result will be processed, and you will be taken to the next step.</span></span> <span data-ttu-id="a70a7-131">次の手順で優先入力モードが [スキャン] に設定された別の入力フィールドを含む場合、[カメラ] ページが再び開始します。</span><span class="sxs-lookup"><span data-stu-id="a70a7-131">If the next step contains another input field with the preferred input mode set to Scanning, the camera page will start again.</span></span> <span data-ttu-id="a70a7-132">次の手順が [スキャン] フィールドでない場合、[カメラ] ページは開始しません。</span><span class="sxs-lookup"><span data-stu-id="a70a7-132">If the next step is not a scanning field, then the camera page will not be initiated.</span></span>
+- <span data-ttu-id="d05eb-115">**タスクと詳細** ページに戻るには [戻る] ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="d05eb-115">Select the back button to go back to the **Task and details** page.</span></span>
+- <span data-ttu-id="d05eb-116">手動で入力するためのページに移動するには **タスクと詳細** ページにある鉛筆を選択します。</span><span class="sxs-lookup"><span data-stu-id="d05eb-116">Select the pencil on the **Task and details** page to go to the page where you can type input manually.</span></span>
+- <span data-ttu-id="d05eb-117">[カメラ] ページに戻るには **タスクと詳細** ページでカメラを選択します。</span><span class="sxs-lookup"><span data-stu-id="d05eb-117">Select the camera on the **Task and details** page to go back to the camera page.</span></span>
+
+<span data-ttu-id="d05eb-118">[カメラ] ページで、[カメラ] ボタンを選択すると、バー コードを識別しようとしているときにグレー表示になります。</span><span class="sxs-lookup"><span data-stu-id="d05eb-118">On the camera page, when you select the camera button, it will appear dimmed while trying to identify a bar code.</span></span> <span data-ttu-id="d05eb-119">バーコードが 5 秒以内で識別されない場合は、プロセスがタイムアウトになり、[カメラ] ボタンがもう一度利用可能になります。</span><span class="sxs-lookup"><span data-stu-id="d05eb-119">If a bar code is not identified within 5 seconds, the process will time out and the camera button will become available again.</span></span> <span data-ttu-id="d05eb-120">それからもう一度バーコードをスキャンすることができます。</span><span class="sxs-lookup"><span data-stu-id="d05eb-120">You will then be able to try to scan a bar code again.</span></span>
+
+<span data-ttu-id="d05eb-121">バーコードにカメラの視点を定めると、最適な結果で、バーコードはかっこ内に合わせられた状態になります。</span><span class="sxs-lookup"><span data-stu-id="d05eb-121">When you aim the camera at a bar code, keep the bar code aligned within the brackets for best result.</span></span> <span data-ttu-id="d05eb-122">バーコードが正常にスキャンされると、結果が処理され、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="d05eb-122">When a bar code is scanned successfully, the result will be processed, and you will be taken to the next step.</span></span> <span data-ttu-id="d05eb-123">次の手順で優先入力モードが [スキャン] に設定された別の入力フィールドを含む場合、[カメラ] ページが再び開始します。</span><span class="sxs-lookup"><span data-stu-id="d05eb-123">If the next step contains another input field with the preferred input mode set to Scanning, the camera page will start again.</span></span> <span data-ttu-id="d05eb-124">次の手順が [スキャン] フィールドでない場合、[カメラ] ページは開始しません。</span><span class="sxs-lookup"><span data-stu-id="d05eb-124">If the next step is not a scanning field, then the camera page will not be initiated.</span></span>
 
 
 
