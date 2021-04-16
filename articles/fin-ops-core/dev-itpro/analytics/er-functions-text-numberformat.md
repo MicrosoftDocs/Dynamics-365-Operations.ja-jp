@@ -2,7 +2,6 @@
 title: NUMBERFORMAT ER 関数
 description: このトピックでは、NUMBERFORMAT 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: ''
@@ -16,66 +15,66 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a05a1e1c4cdb050bff30ea4710da927a537da14c
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 8de57d8b0a45b8b58849a24f2d8f0cde41e0ea3a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562712"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746220"
 ---
-# <a name="numberformat-er-function"></a><span data-ttu-id="90b67-103">NUMBERFORMAT ER 関数</span><span class="sxs-lookup"><span data-stu-id="90b67-103">NUMBERFORMAT ER function</span></span>
+# <a name="numberformat-er-function"></a><span data-ttu-id="59381-103">NUMBERFORMAT ER 関数</span><span class="sxs-lookup"><span data-stu-id="59381-103">NUMBERFORMAT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="90b67-104">`NUMBERFORMAT` 関数は、指定された形式およびオプションで指定された [カルチャ](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) で、指定された数を表す *文字列* の値を返します。</span><span class="sxs-lookup"><span data-stu-id="90b67-104">The `NUMBERFORMAT` function returns a *String* value that presents the specified number in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).</span></span> <span data-ttu-id="90b67-105">サポートされている形式の詳細については、[標準](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) と [カスタム](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90b67-105">For information about the supported formats, see [standard](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx).</span></span>
+<span data-ttu-id="59381-104">`NUMBERFORMAT` 関数は、指定された形式およびオプションで指定された [カルチャ](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) で、指定された数を表す *文字列* の値を返します。</span><span class="sxs-lookup"><span data-stu-id="59381-104">The `NUMBERFORMAT` function returns a *String* value that presents the specified number in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).</span></span> <span data-ttu-id="59381-105">サポートされている形式の詳細については、[標準](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) と [カスタム](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="59381-105">For information about the supported formats, see [standard](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx).</span></span>
 
-## <a name="syntax-1"></a><span data-ttu-id="90b67-106">構文 1</span><span class="sxs-lookup"><span data-stu-id="90b67-106">Syntax 1</span></span>
+## <a name="syntax-1"></a><span data-ttu-id="59381-106">構文 1</span><span class="sxs-lookup"><span data-stu-id="59381-106">Syntax 1</span></span>
 
 ```vb
 NUMBERFORMAT (number, format)
 ```
 
-## <a name="syntax-2"></a><span data-ttu-id="90b67-107">構文 2</span><span class="sxs-lookup"><span data-stu-id="90b67-107">Syntax 2</span></span>
+## <a name="syntax-2"></a><span data-ttu-id="59381-107">構文 2</span><span class="sxs-lookup"><span data-stu-id="59381-107">Syntax 2</span></span>
 
 ```vb
 NUMBERFORMAT (number, format, culture)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="90b67-108">引数</span><span class="sxs-lookup"><span data-stu-id="90b67-108">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="59381-108">引数</span><span class="sxs-lookup"><span data-stu-id="59381-108">Arguments</span></span>
 
-<span data-ttu-id="90b67-109">`number`: *整数* または *実数*</span><span class="sxs-lookup"><span data-stu-id="90b67-109">`number`: *Integer* or *Real*</span></span>
+<span data-ttu-id="59381-109">`number`: *整数* または *実数*</span><span class="sxs-lookup"><span data-stu-id="59381-109">`number`: *Integer* or *Real*</span></span>
 
-<span data-ttu-id="90b67-110">書式設定する必要がある数値を指定する数値。</span><span class="sxs-lookup"><span data-stu-id="90b67-110">A numeric value that specifies the number that must be formatted.</span></span>
+<span data-ttu-id="59381-110">書式設定する必要がある数値を指定する数値。</span><span class="sxs-lookup"><span data-stu-id="59381-110">A numeric value that specifies the number that must be formatted.</span></span>
 
-<span data-ttu-id="90b67-111">`format` : *文字列*</span><span class="sxs-lookup"><span data-stu-id="90b67-111">`format` : *String*</span></span>
+<span data-ttu-id="59381-111">`format` : *文字列*</span><span class="sxs-lookup"><span data-stu-id="59381-111">`format` : *String*</span></span>
 
-<span data-ttu-id="90b67-112">形式を表す *文字列* 値。</span><span class="sxs-lookup"><span data-stu-id="90b67-112">A *String* value that represents the format.</span></span>
+<span data-ttu-id="59381-112">形式を表す *文字列* 値。</span><span class="sxs-lookup"><span data-stu-id="59381-112">A *String* value that represents the format.</span></span>
 
-<span data-ttu-id="90b67-113">`culture`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="90b67-113">`culture`: *String*</span></span>
+<span data-ttu-id="59381-113">`culture`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="59381-113">`culture`: *String*</span></span>
 
-<span data-ttu-id="90b67-114">書式設定に使用するカルチャを表す *文字列* 値。</span><span class="sxs-lookup"><span data-stu-id="90b67-114">A *String* value that represents the culture to use for formatting.</span></span>
+<span data-ttu-id="59381-114">書式設定に使用するカルチャを表す *文字列* 値。</span><span class="sxs-lookup"><span data-stu-id="59381-114">A *String* value that represents the culture to use for formatting.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="90b67-115">戻り値</span><span class="sxs-lookup"><span data-stu-id="90b67-115">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="59381-115">戻り値</span><span class="sxs-lookup"><span data-stu-id="59381-115">Return values</span></span>
 
-<span data-ttu-id="90b67-116">*文字列*</span><span class="sxs-lookup"><span data-stu-id="90b67-116">*String*</span></span>
+<span data-ttu-id="59381-116">*文字列*</span><span class="sxs-lookup"><span data-stu-id="59381-116">*String*</span></span>
 
-<span data-ttu-id="90b67-117">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="90b67-117">The resulting text value.</span></span>
+<span data-ttu-id="59381-117">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="59381-117">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="90b67-118">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="90b67-118">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="59381-118">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="59381-118">Usage notes</span></span>
 
-<span data-ttu-id="90b67-119">カルチャが呼び出された関数の引数として定義されていない場合は、この関数が実行されるコンテキストによって、数値の書式設定に使用されるカルチャが決まります。</span><span class="sxs-lookup"><span data-stu-id="90b67-119">If the culture isn't defined as an argument of the called function, the context that this function is run in determines the culture that is used to format numbers.</span></span>
+<span data-ttu-id="59381-119">カルチャが呼び出された関数の引数として定義されていない場合は、この関数が実行されるコンテキストによって、数値の書式設定に使用されるカルチャが決まります。</span><span class="sxs-lookup"><span data-stu-id="59381-119">If the culture isn't defined as an argument of the called function, the context that this function is run in determines the culture that is used to format numbers.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="90b67-120">例 1</span><span class="sxs-lookup"><span data-stu-id="90b67-120">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="59381-120">例 1</span><span class="sxs-lookup"><span data-stu-id="59381-120">Example 1</span></span>
 
-<span data-ttu-id="90b67-121">**EN-US** カルチャの場合、`NUMBERFORMAT (0.45, "p")` は **"45.00 %"** を返し、`NUMBERFORMAT (10.45, "#")` は **"10"** を返します。</span><span class="sxs-lookup"><span data-stu-id="90b67-121">For the **EN-US** culture, `NUMBERFORMAT (0.45, "p")` returns **"45.00 %"**, and `NUMBERFORMAT (10.45, "#")` returns **"10"**.</span></span>
+<span data-ttu-id="59381-121">**EN-US** カルチャの場合、`NUMBERFORMAT (0.45, "p")` は **"45.00 %"** を返し、`NUMBERFORMAT (10.45, "#")` は **"10"** を返します。</span><span class="sxs-lookup"><span data-stu-id="59381-121">For the **EN-US** culture, `NUMBERFORMAT (0.45, "p")` returns **"45.00 %"**, and `NUMBERFORMAT (10.45, "#")` returns **"10"**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="90b67-122">例 2</span><span class="sxs-lookup"><span data-stu-id="90b67-122">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="59381-122">例 2</span><span class="sxs-lookup"><span data-stu-id="59381-122">Example 2</span></span>
 
-<span data-ttu-id="90b67-123">`NUMBERFORMAT (10/3, "F2", "de")` は **3,33** 返すが、一方では、`NUMBERFORMAT (10/3, "F2", "en-us")` は **3.33** を返します。</span><span class="sxs-lookup"><span data-stu-id="90b67-123">`NUMBERFORMAT (10/3, "F2", "de")` returns **3,33**, whereas `NUMBERFORMAT (10/3, "F2", "en-us")` returns **3.33**.</span></span>
+<span data-ttu-id="59381-123">`NUMBERFORMAT (10/3, "F2", "de")` は **3,33** 返すが、一方では、`NUMBERFORMAT (10/3, "F2", "en-us")` は **3.33** を返します。</span><span class="sxs-lookup"><span data-stu-id="59381-123">`NUMBERFORMAT (10/3, "F2", "de")` returns **3,33**, whereas `NUMBERFORMAT (10/3, "F2", "en-us")` returns **3.33**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="90b67-124">追加リソース</span><span class="sxs-lookup"><span data-stu-id="90b67-124">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="59381-124">追加リソース</span><span class="sxs-lookup"><span data-stu-id="59381-124">Additional resources</span></span>
 
-[<span data-ttu-id="90b67-125">テキスト関数</span><span class="sxs-lookup"><span data-stu-id="90b67-125">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="59381-125">テキスト関数</span><span class="sxs-lookup"><span data-stu-id="59381-125">Text functions</span></span>](er-functions-category-text.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

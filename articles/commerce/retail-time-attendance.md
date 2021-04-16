@@ -2,11 +2,9 @@
 title: Retail での時間と出勤管理
 description: このトピックでは、Dynamics 365 Commerce の時間と出勤管理でサポートされているシナリオについて説明します。
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
@@ -18,126 +16,126 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 28f4f72cd1272bd4562a58e343e50157143fac2c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9bec213cd4954f69605387ae2801d8af98a8111c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254916"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791898"
 ---
-# <a name="time-and-attendance-management-in-retail"></a><span data-ttu-id="b77bc-103">Retail での時間と出勤管理</span><span class="sxs-lookup"><span data-stu-id="b77bc-103">Time and attendance management in Retail</span></span>
+# <a name="time-and-attendance-management-in-retail"></a><span data-ttu-id="73637-103">Retail での時間と出勤管理</span><span class="sxs-lookup"><span data-stu-id="73637-103">Time and attendance management in Retail</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="b77bc-104">このトピックでは、Dynamics 365 Commerce の時間と出勤管理でサポートされているシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-104">This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="73637-104">このトピックでは、Dynamics 365 Commerce の時間と出勤管理でサポートされているシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="73637-104">This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Commerce.</span></span>
 
-## <a name="manage-worker-setup-and-scheduling"></a><span data-ttu-id="b77bc-105">作業者設定およびスケジュールの管理</span><span class="sxs-lookup"><span data-stu-id="b77bc-105">Manage worker setup and scheduling</span></span>
+## <a name="manage-worker-setup-and-scheduling"></a><span data-ttu-id="73637-105">作業者設定およびスケジュールの管理</span><span class="sxs-lookup"><span data-stu-id="73637-105">Manage worker setup and scheduling</span></span>
 
-### <a name="initial-configuration"></a><span data-ttu-id="b77bc-106">初期コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b77bc-106">Initial configuration</span></span>
+### <a name="initial-configuration"></a><span data-ttu-id="73637-106">初期コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="73637-106">Initial configuration</span></span>
 
-- <span data-ttu-id="b77bc-107">コンフィギュレーション ウィザードを実行します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-107">Run the configuration wizard.</span></span>
-- <span data-ttu-id="b77bc-108">時間登録作業者としての作業者を登録します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-108">Register workers as time registration workers.</span></span>
+- <span data-ttu-id="73637-107">コンフィギュレーション ウィザードを実行します。</span><span class="sxs-lookup"><span data-stu-id="73637-107">Run the configuration wizard.</span></span>
+- <span data-ttu-id="73637-108">時間登録作業者としての作業者を登録します。</span><span class="sxs-lookup"><span data-stu-id="73637-108">Register workers as time registration workers.</span></span>
 
-### <a name="plan-worker-schedules"></a><span data-ttu-id="b77bc-109">作業者のスケジュールを計画する</span><span class="sxs-lookup"><span data-stu-id="b77bc-109">Plan worker schedules</span></span>
+### <a name="plan-worker-schedules"></a><span data-ttu-id="73637-109">作業者のスケジュールを計画する</span><span class="sxs-lookup"><span data-stu-id="73637-109">Plan worker schedules</span></span>
 
-- <span data-ttu-id="b77bc-110">ワーク プランナーを使用したプロファイルを適用します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-110">Apply profiles by using the work planner.</span></span> <span data-ttu-id="b77bc-111">詳細については、 [ワーク プランナーを使用したプロファイルの適用](https://technet.microsoft.com/library/aa551234.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b77bc-111">For more information, see [Apply profiles using work planner](https://technet.microsoft.com/library/aa551234.aspx).</span></span>
+- <span data-ttu-id="73637-110">ワーク プランナーを使用したプロファイルを適用します。</span><span class="sxs-lookup"><span data-stu-id="73637-110">Apply profiles by using the work planner.</span></span> <span data-ttu-id="73637-111">詳細については、 [ワーク プランナーを使用したプロファイルの適用](https://technet.microsoft.com/library/aa551234.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="73637-111">For more information, see [Apply profiles using work planner](https://technet.microsoft.com/library/aa551234.aspx).</span></span>
 
-<span data-ttu-id="b77bc-112">コンフィギュレーションの手順については、[時刻と出勤の設定](https://technet.microsoft.com/library/aa496971.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b77bc-112">For information about the configuration steps, see [Setting up time and attendance](https://technet.microsoft.com/library/aa496971.aspx).</span></span>
+<span data-ttu-id="73637-112">コンフィギュレーションの手順については、[時刻と出勤の設定](https://technet.microsoft.com/library/aa496971.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="73637-112">For information about the configuration steps, see [Setting up time and attendance](https://technet.microsoft.com/library/aa496971.aspx).</span></span>
 
-### <a name="commerce-specific-configuration"></a><span data-ttu-id="b77bc-113">コマース固有のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b77bc-113">Commerce-specific configuration</span></span>
+### <a name="commerce-specific-configuration"></a><span data-ttu-id="73637-113">コマース固有のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="73637-113">Commerce-specific configuration</span></span>
 
-- <span data-ttu-id="b77bc-114">時間登録を有効にする作業者のタイム レコーダーの機能プロファイルを有効にします。</span><span class="sxs-lookup"><span data-stu-id="b77bc-114">Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for.</span></span> <span data-ttu-id="b77bc-115">**POS機能プロファイル** &gt; **機能** &gt; **POS 時間登録** &gt; **時間登録の有効化** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b77bc-115">Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.</span></span>
-- <span data-ttu-id="b77bc-116">販売時点管理 (POS) のアクセス許可グループをコンフィギュレーションして、[タイム レコーダー エントリの表示] のアクセス許可を有効にします。</span><span class="sxs-lookup"><span data-stu-id="b77bc-116">Configure point of sale (POS) permissions groups to enable the View timeclock entries permission.</span></span> <span data-ttu-id="b77bc-117">このアクセス許可により、ユーザーが、その店舗 (およびアドレス帳を介してユーザーが関連付けられている他のすべての店舗から) の他の作業者のタイム レコーダー登録を表示できるようにします。</span><span class="sxs-lookup"><span data-stu-id="b77bc-117">This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book).</span></span> <span data-ttu-id="b77bc-118">レジ担当者ロールではなくマネージャー ロールに対してこのアクセス許可を有効にする場合があります。</span><span class="sxs-lookup"><span data-stu-id="b77bc-118">You might want to enable this permission for a manager role but not for a cashier role.</span></span> <span data-ttu-id="b77bc-119">**POS アクセス許可グループ** &gt; **タイム レコーダー エントリの表示** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b77bc-119">Click **POS permission groups** &gt; **View time clock entries**.</span></span>
+- <span data-ttu-id="73637-114">時間登録を有効にする作業者のタイム レコーダーの機能プロファイルを有効にします。</span><span class="sxs-lookup"><span data-stu-id="73637-114">Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for.</span></span> <span data-ttu-id="73637-115">**POS機能プロファイル** &gt; **機能** &gt; **POS 時間登録** &gt; **時間登録の有効化** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73637-115">Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.</span></span>
+- <span data-ttu-id="73637-116">販売時点管理 (POS) のアクセス許可グループをコンフィギュレーションして、[タイム レコーダー エントリの表示] のアクセス許可を有効にします。</span><span class="sxs-lookup"><span data-stu-id="73637-116">Configure point of sale (POS) permissions groups to enable the View timeclock entries permission.</span></span> <span data-ttu-id="73637-117">このアクセス許可により、ユーザーが、その店舗 (およびアドレス帳を介してユーザーが関連付けられている他のすべての店舗から) の他の作業者のタイム レコーダー登録を表示できるようにします。</span><span class="sxs-lookup"><span data-stu-id="73637-117">This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book).</span></span> <span data-ttu-id="73637-118">レジ担当者ロールではなくマネージャー ロールに対してこのアクセス許可を有効にする場合があります。</span><span class="sxs-lookup"><span data-stu-id="73637-118">You might want to enable this permission for a manager role but not for a cashier role.</span></span> <span data-ttu-id="73637-119">**POS アクセス許可グループ** &gt; **タイム レコーダー エントリの表示** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="73637-119">Click **POS permission groups** &gt; **View time clock entries**.</span></span>
 
-## <a name="register-time"></a><span data-ttu-id="b77bc-120">時刻の登録</span><span class="sxs-lookup"><span data-stu-id="b77bc-120">Register time</span></span>
+## <a name="register-time"></a><span data-ttu-id="73637-120">時刻の登録</span><span class="sxs-lookup"><span data-stu-id="73637-120">Register time</span></span>
 
-### <a name="cashier-and-non-cashier-time-registrations"></a><span data-ttu-id="b77bc-121">レジ担当者と非レジ担当者の時間登録</span><span class="sxs-lookup"><span data-stu-id="b77bc-121">Cashier and non-cashier time registrations</span></span>
+### <a name="cashier-and-non-cashier-time-registrations"></a><span data-ttu-id="73637-121">レジ担当者と非レジ担当者の時間登録</span><span class="sxs-lookup"><span data-stu-id="73637-121">Cashier and non-cashier time registrations</span></span>
 
-- <span data-ttu-id="b77bc-122">POS で:</span><span class="sxs-lookup"><span data-stu-id="b77bc-122">On POS:</span></span>
+- <span data-ttu-id="73637-122">POS で:</span><span class="sxs-lookup"><span data-stu-id="73637-122">On POS:</span></span>
 
-    - <span data-ttu-id="b77bc-123">出勤操作:</span><span class="sxs-lookup"><span data-stu-id="b77bc-123">Clock-in operations:</span></span>
+    - <span data-ttu-id="73637-123">出勤操作:</span><span class="sxs-lookup"><span data-stu-id="73637-123">Clock-in operations:</span></span>
 
-        - <span data-ttu-id="b77bc-124">非ドロワー操作または新しいシフトにログオンします。</span><span class="sxs-lookup"><span data-stu-id="b77bc-124">Log on with a non-drawer operation or New shift.</span></span>
-        - <span data-ttu-id="b77bc-125">タイム レコーダーの操作を選択します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-125">Select a Time Clock operation.</span></span>
-        - <span data-ttu-id="b77bc-126">必要な操作を選択します:</span><span class="sxs-lookup"><span data-stu-id="b77bc-126">Select a desired operation:</span></span>
+        - <span data-ttu-id="73637-124">非ドロワー操作または新しいシフトにログオンします。</span><span class="sxs-lookup"><span data-stu-id="73637-124">Log on with a non-drawer operation or New shift.</span></span>
+        - <span data-ttu-id="73637-125">タイム レコーダーの操作を選択します。</span><span class="sxs-lookup"><span data-stu-id="73637-125">Select a Time Clock operation.</span></span>
+        - <span data-ttu-id="73637-126">必要な操作を選択します:</span><span class="sxs-lookup"><span data-stu-id="73637-126">Select a desired operation:</span></span>
 
-            - <span data-ttu-id="b77bc-127">出勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-127">Clock-in</span></span>
-            - <span data-ttu-id="b77bc-128">休憩</span><span class="sxs-lookup"><span data-stu-id="b77bc-128">Break for Work</span></span>
-            - <span data-ttu-id="b77bc-129">昼休み</span><span class="sxs-lookup"><span data-stu-id="b77bc-129">Break for Lunch</span></span>
-            - <span data-ttu-id="b77bc-130">退勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-130">Clock-out</span></span>
+            - <span data-ttu-id="73637-127">出勤</span><span class="sxs-lookup"><span data-stu-id="73637-127">Clock-in</span></span>
+            - <span data-ttu-id="73637-128">休憩</span><span class="sxs-lookup"><span data-stu-id="73637-128">Break for Work</span></span>
+            - <span data-ttu-id="73637-129">昼休み</span><span class="sxs-lookup"><span data-stu-id="73637-129">Break for Lunch</span></span>
+            - <span data-ttu-id="73637-130">退勤</span><span class="sxs-lookup"><span data-stu-id="73637-130">Clock-out</span></span>
 
         <table>
         <thead>
         <tr>
-        <th><span data-ttu-id="b77bc-131">現在の状態</span><span class="sxs-lookup"><span data-stu-id="b77bc-131">Current state</span></span></th>
-        <th><span data-ttu-id="b77bc-132">使用可能な操作</span><span class="sxs-lookup"><span data-stu-id="b77bc-132">Available operations</span></span></th>
+        <th><span data-ttu-id="73637-131">現在の状態</span><span class="sxs-lookup"><span data-stu-id="73637-131">Current state</span></span></th>
+        <th><span data-ttu-id="73637-132">使用可能な操作</span><span class="sxs-lookup"><span data-stu-id="73637-132">Available operations</span></span></th>
         </tr>
         </thead>
         <tbody>
         <tr>
-        <td><span data-ttu-id="b77bc-133">出勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-133">Clock-in</span></span></td>
+        <td><span data-ttu-id="73637-133">出勤</span><span class="sxs-lookup"><span data-stu-id="73637-133">Clock-in</span></span></td>
         <td>
         <ul>
-        <li><span data-ttu-id="b77bc-134">休憩</span><span class="sxs-lookup"><span data-stu-id="b77bc-134">Break for Work</span></span></li>
-        <li><span data-ttu-id="b77bc-135">昼休み</span><span class="sxs-lookup"><span data-stu-id="b77bc-135">Break for Lunch</span></span></li>
-        <li><span data-ttu-id="b77bc-136">退勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-136">Clock-out</span></span></li>
+        <li><span data-ttu-id="73637-134">休憩</span><span class="sxs-lookup"><span data-stu-id="73637-134">Break for Work</span></span></li>
+        <li><span data-ttu-id="73637-135">昼休み</span><span class="sxs-lookup"><span data-stu-id="73637-135">Break for Lunch</span></span></li>
+        <li><span data-ttu-id="73637-136">退勤</span><span class="sxs-lookup"><span data-stu-id="73637-136">Clock-out</span></span></li>
         </ul>
         </td>
         </tr>
         <tr>
-        <td><span data-ttu-id="b77bc-137">休憩</span><span class="sxs-lookup"><span data-stu-id="b77bc-137">Break for Work</span></span></td>
-        <td><span data-ttu-id="b77bc-138">出勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-138">Clock-in</span></span></td>
+        <td><span data-ttu-id="73637-137">休憩</span><span class="sxs-lookup"><span data-stu-id="73637-137">Break for Work</span></span></td>
+        <td><span data-ttu-id="73637-138">出勤</span><span class="sxs-lookup"><span data-stu-id="73637-138">Clock-in</span></span></td>
         </tr>
         <tr>
-        <td><span data-ttu-id="b77bc-139">昼休み</span><span class="sxs-lookup"><span data-stu-id="b77bc-139">Break for Lunch</span></span></td>
-        <td><span data-ttu-id="b77bc-140">出勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-140">Clock-in</span></span></td>
+        <td><span data-ttu-id="73637-139">昼休み</span><span class="sxs-lookup"><span data-stu-id="73637-139">Break for Lunch</span></span></td>
+        <td><span data-ttu-id="73637-140">出勤</span><span class="sxs-lookup"><span data-stu-id="73637-140">Clock-in</span></span></td>
         </tr>
         <tr>
-        <td><span data-ttu-id="b77bc-141">退勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-141">Clock-out</span></span></td>
-        <td><span data-ttu-id="b77bc-142">出勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-142">Clock-in</span></span></td>
+        <td><span data-ttu-id="73637-141">退勤</span><span class="sxs-lookup"><span data-stu-id="73637-141">Clock-out</span></span></td>
+        <td><span data-ttu-id="73637-142">出勤</span><span class="sxs-lookup"><span data-stu-id="73637-142">Clock-in</span></span></td>
         </tr>
         </tbody>
         </table>
 
-        <span data-ttu-id="b77bc-143">[![タイム レコーダーの状態](./media/timeclockstates.png)](./media/timeclockstates.png)</span><span class="sxs-lookup"><span data-stu-id="b77bc-143">[![Time Clock States](./media/timeclockstates.png)](./media/timeclockstates.png)</span></span>
+        <span data-ttu-id="73637-143">[![タイム レコーダーの状態](./media/timeclockstates.png)](./media/timeclockstates.png)</span><span class="sxs-lookup"><span data-stu-id="73637-143">[![Time Clock States](./media/timeclockstates.png)](./media/timeclockstates.png)</span></span>
 
-- <span data-ttu-id="b77bc-144">確認メッセージを表示して、現在の活動時間が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-144">View the confirmation message, and validate that the current activity time is correct.</span></span>
-- <span data-ttu-id="b77bc-145">ログ帳:</span><span class="sxs-lookup"><span data-stu-id="b77bc-145">Logbook:</span></span>
+- <span data-ttu-id="73637-144">確認メッセージを表示して、現在の活動時間が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="73637-144">View the confirmation message, and validate that the current activity time is correct.</span></span>
+- <span data-ttu-id="73637-145">ログ帳:</span><span class="sxs-lookup"><span data-stu-id="73637-145">Logbook:</span></span>
 
-    - <span data-ttu-id="b77bc-146">**ログ帳** をクリックして、タイム レコーダーの活動を表示します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-146">Click **Logbook** to view time clock activity.</span></span>
-    - <span data-ttu-id="b77bc-147">タイム フィルターを使用して、異なる時間枠を選択します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-147">Use time filters to select different time windows.</span></span>
-    - <span data-ttu-id="b77bc-148">複数の店舗の場所で作業する場合、時間を記録したすべての店舗からの時間登録が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b77bc-148">If you work at multiple store locations, you see your time registrations from all the stores where you recorded time.</span></span> <span data-ttu-id="b77bc-149">店舗フィルターを使用して、選択した店舗からの時間登録を表示できます。</span><span class="sxs-lookup"><span data-stu-id="b77bc-149">You can use the store filter to view time registrations from a selected store.</span></span>
+    - <span data-ttu-id="73637-146">**ログ帳** をクリックして、タイム レコーダーの活動を表示します。</span><span class="sxs-lookup"><span data-stu-id="73637-146">Click **Logbook** to view time clock activity.</span></span>
+    - <span data-ttu-id="73637-147">タイム フィルターを使用して、異なる時間枠を選択します。</span><span class="sxs-lookup"><span data-stu-id="73637-147">Use time filters to select different time windows.</span></span>
+    - <span data-ttu-id="73637-148">複数の店舗の場所で作業する場合、時間を記録したすべての店舗からの時間登録が表示されます。</span><span class="sxs-lookup"><span data-stu-id="73637-148">If you work at multiple store locations, you see your time registrations from all the stores where you recorded time.</span></span> <span data-ttu-id="73637-149">店舗フィルターを使用して、選択した店舗からの時間登録を表示できます。</span><span class="sxs-lookup"><span data-stu-id="73637-149">You can use the store filter to view time registrations from a selected store.</span></span>
 
-- <span data-ttu-id="b77bc-150">異なるタイム ゾーン:</span><span class="sxs-lookup"><span data-stu-id="b77bc-150">Different time zones:</span></span>
+- <span data-ttu-id="73637-150">異なるタイム ゾーン:</span><span class="sxs-lookup"><span data-stu-id="73637-150">Different time zones:</span></span>
 
-    - <span data-ttu-id="b77bc-151">別の場所からの時間を表示する場合で (レジ担当者ログ帳に対して、またはマネージャーのシナリオの **タイム レコーダー エントリの表示** を使用して)、その場所が別のタイム ゾーンである場合、表示される時刻記録はローカル タイム ゾーンに変換されます。</span><span class="sxs-lookup"><span data-stu-id="b77bc-151">If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone.</span></span> <span data-ttu-id="b77bc-152">たとえば、アリゾナとネバダの 2 つの店舗のマネージャだと仮定します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-152">For example, you are a manager for two stores, one in Arizona and the other in Nevada.</span></span> <span data-ttu-id="b77bc-153">レジ担当者は午前 9 時に</span><span class="sxs-lookup"><span data-stu-id="b77bc-153">A cashier registers a clock-in at 9:00 A.M.</span></span> <span data-ttu-id="b77bc-154">アリゾナで出勤を登録します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-154">in Arizona.</span></span> <span data-ttu-id="b77bc-155">その時点で、ネバダの時刻は午前 8 時です。</span><span class="sxs-lookup"><span data-stu-id="b77bc-155">At that moment, the time in Nevada is 8:00 A.M.</span></span> <span data-ttu-id="b77bc-156">したがって、ネバダの店舗にいて時間登録のレコードを見ている場合、時間登録は 8 A.M としてマークされます。</span><span class="sxs-lookup"><span data-stu-id="b77bc-156">Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.</span></span>
+    - <span data-ttu-id="73637-151">別の場所からの時間を表示する場合で (レジ担当者ログ帳に対して、またはマネージャーのシナリオの **タイム レコーダー エントリの表示** を使用して)、その場所が別のタイム ゾーンである場合、表示される時刻記録はローカル タイム ゾーンに変換されます。</span><span class="sxs-lookup"><span data-stu-id="73637-151">If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone.</span></span> <span data-ttu-id="73637-152">たとえば、アリゾナとネバダの 2 つの店舗のマネージャだと仮定します。</span><span class="sxs-lookup"><span data-stu-id="73637-152">For example, you are a manager for two stores, one in Arizona and the other in Nevada.</span></span> <span data-ttu-id="73637-153">レジ担当者は午前 9 時に</span><span class="sxs-lookup"><span data-stu-id="73637-153">A cashier registers a clock-in at 9:00 A.M.</span></span> <span data-ttu-id="73637-154">アリゾナで出勤を登録します。</span><span class="sxs-lookup"><span data-stu-id="73637-154">in Arizona.</span></span> <span data-ttu-id="73637-155">その時点で、ネバダの時刻は午前 8 時です。</span><span class="sxs-lookup"><span data-stu-id="73637-155">At that moment, the time in Nevada is 8:00 A.M.</span></span> <span data-ttu-id="73637-156">したがって、ネバダの店舗にいて時間登録のレコードを見ている場合、時間登録は 8 A.M としてマークされます。</span><span class="sxs-lookup"><span data-stu-id="73637-156">Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.</span></span>
 
-## <a name="view-worker-time-registrations"></a><span data-ttu-id="b77bc-157">作業者の時間登録の表示</span><span class="sxs-lookup"><span data-stu-id="b77bc-157">View worker time registrations</span></span>
+## <a name="view-worker-time-registrations"></a><span data-ttu-id="73637-157">作業者の時間登録の表示</span><span class="sxs-lookup"><span data-stu-id="73637-157">View worker time registrations</span></span>
 
-### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a><span data-ttu-id="b77bc-158">作業者の時間登録を表示して、店舗または活動のタイプごとにフィルター処理をする</span><span class="sxs-lookup"><span data-stu-id="b77bc-158">View worker time registrations, and filter by store or activity type</span></span>
+### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a><span data-ttu-id="73637-158">作業者の時間登録を表示して、店舗または活動のタイプごとにフィルター処理をする</span><span class="sxs-lookup"><span data-stu-id="73637-158">View worker time registrations, and filter by store or activity type</span></span>
 
-<span data-ttu-id="b77bc-159">POS で:</span><span class="sxs-lookup"><span data-stu-id="b77bc-159">On POS:</span></span>
+<span data-ttu-id="73637-159">POS で:</span><span class="sxs-lookup"><span data-stu-id="73637-159">On POS:</span></span>
 
-- <span data-ttu-id="b77bc-160">**タイム レコーダー エントリの表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b77bc-160">Select **View timeclock entries**.</span></span>
-- <span data-ttu-id="b77bc-161">あなたが割り当てられている同じ店舗に割り当てられているすべての作業者のタイム レコーダーの登録活動が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b77bc-161">You see time clock registration activities from all workers that are assigned to the same stores that you're assigned to.</span></span>
-- <span data-ttu-id="b77bc-162">活動タイプを使用して、時間登録をフィルター処理するフィルターを保存できます。</span><span class="sxs-lookup"><span data-stu-id="b77bc-162">You can use the activity type and store filters to filter on time registrations.</span></span>
+- <span data-ttu-id="73637-160">**タイム レコーダー エントリの表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="73637-160">Select **View timeclock entries**.</span></span>
+- <span data-ttu-id="73637-161">あなたが割り当てられている同じ店舗に割り当てられているすべての作業者のタイム レコーダーの登録活動が表示されます。</span><span class="sxs-lookup"><span data-stu-id="73637-161">You see time clock registration activities from all workers that are assigned to the same stores that you're assigned to.</span></span>
+- <span data-ttu-id="73637-162">活動タイプを使用して、時間登録をフィルター処理するフィルターを保存できます。</span><span class="sxs-lookup"><span data-stu-id="73637-162">You can use the activity type and store filters to filter on time registrations.</span></span>
 
-## <a name="process-and-manage-time-registrations"></a><span data-ttu-id="b77bc-163">時間登録の処理と管理</span><span class="sxs-lookup"><span data-stu-id="b77bc-163">Process and manage time registrations</span></span>
+## <a name="process-and-manage-time-registrations"></a><span data-ttu-id="73637-163">時間登録の処理と管理</span><span class="sxs-lookup"><span data-stu-id="73637-163">Process and manage time registrations</span></span>
 
-<span data-ttu-id="b77bc-164">コマース ユーザーは、計算、承認および給与への時間登録の転送のためのワークフローに従います。</span><span class="sxs-lookup"><span data-stu-id="b77bc-164">A Commerce user follows the workflow to calculate, approve, and transfer time registrations to payroll.</span></span>
+<span data-ttu-id="73637-164">コマース ユーザーは、計算、承認および給与への時間登録の転送のためのワークフローに従います。</span><span class="sxs-lookup"><span data-stu-id="73637-164">A Commerce user follows the workflow to calculate, approve, and transfer time registrations to payroll.</span></span>
 
-### <a name="primary-operations"></a><span data-ttu-id="b77bc-165">基本工程</span><span class="sxs-lookup"><span data-stu-id="b77bc-165">Primary operations</span></span>
+### <a name="primary-operations"></a><span data-ttu-id="73637-165">基本工程</span><span class="sxs-lookup"><span data-stu-id="73637-165">Primary operations</span></span>
 
-- <span data-ttu-id="b77bc-166">計算</span><span class="sxs-lookup"><span data-stu-id="b77bc-166">Calculate</span></span>
-- <span data-ttu-id="b77bc-167">承認</span><span class="sxs-lookup"><span data-stu-id="b77bc-167">Approve</span></span>
-- <span data-ttu-id="b77bc-168">給与に送信</span><span class="sxs-lookup"><span data-stu-id="b77bc-168">Submit to payroll</span></span>
+- <span data-ttu-id="73637-166">計算</span><span class="sxs-lookup"><span data-stu-id="73637-166">Calculate</span></span>
+- <span data-ttu-id="73637-167">承認</span><span class="sxs-lookup"><span data-stu-id="73637-167">Approve</span></span>
+- <span data-ttu-id="73637-168">給与に送信</span><span class="sxs-lookup"><span data-stu-id="73637-168">Submit to payroll</span></span>
 
-### <a name="other-common-operations"></a><span data-ttu-id="b77bc-169">他の共通の操作</span><span class="sxs-lookup"><span data-stu-id="b77bc-169">Other common operations</span></span>
+### <a name="other-common-operations"></a><span data-ttu-id="73637-169">他の共通の操作</span><span class="sxs-lookup"><span data-stu-id="73637-169">Other common operations</span></span>
 
-- <span data-ttu-id="b77bc-170">一括退勤</span><span class="sxs-lookup"><span data-stu-id="b77bc-170">Bulk Clock-out</span></span>
-- <span data-ttu-id="b77bc-171">休暇の登録</span><span class="sxs-lookup"><span data-stu-id="b77bc-171">Register Absence</span></span>
+- <span data-ttu-id="73637-170">一括退勤</span><span class="sxs-lookup"><span data-stu-id="73637-170">Bulk Clock-out</span></span>
+- <span data-ttu-id="73637-171">休暇の登録</span><span class="sxs-lookup"><span data-stu-id="73637-171">Register Absence</span></span>
 
-<span data-ttu-id="b77bc-172">時刻と出勤の登録の処理方法については、[時刻と出勤の登録を処理](https://technet.microsoft.com/library/aa573180.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b77bc-172">For more information about how to process time and attendance registrations, see [Process time and attendance registrations](https://technet.microsoft.com/library/aa573180.aspx).</span></span>
+<span data-ttu-id="73637-172">時刻と出勤の登録の処理方法については、[時刻と出勤の登録を処理](https://technet.microsoft.com/library/aa573180.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="73637-172">For more information about how to process time and attendance registrations, see [Process time and attendance registrations](https://technet.microsoft.com/library/aa573180.aspx).</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

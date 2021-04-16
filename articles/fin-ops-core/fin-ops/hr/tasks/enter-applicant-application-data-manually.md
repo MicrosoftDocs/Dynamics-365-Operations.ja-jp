@@ -2,7 +2,6 @@
 title: 申請者およびアプリケーション データの手動入力
 description: この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,51 +13,51 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 786db0191bd1beb1dd21acc748ba7beaaa89b29c
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 08104729f5be15ef7e727102e7be731bdda1a38c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566587"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751985"
 ---
-# <a name="enter-applicant-and-application-data-manually"></a><span data-ttu-id="2ba41-103">申請者およびアプリケーション データの手動入力</span><span class="sxs-lookup"><span data-stu-id="2ba41-103">Enter applicant and application data manually</span></span>
+# <a name="enter-applicant-and-application-data-manually"></a><span data-ttu-id="2d163-103">申請者およびアプリケーション データの手動入力</span><span class="sxs-lookup"><span data-stu-id="2d163-103">Enter applicant and application data manually</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2ba41-104">この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-104">This procedure shows how to manually maintain information about applicants and their application.</span></span>   <span data-ttu-id="2ba41-105">申請者についての個人情報、面接の日時、能力、宿舎施設のリクエストを入力および管理できます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-105">You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants.</span></span> <span data-ttu-id="2ba41-106">また、雇用申請者の申請状態を更新し、申請者とやり取りを行う書状または電子メールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-106">You can also update the status of applicants' applications for employment and create letters or email messages to communicate with applicants.</span></span> <span data-ttu-id="2ba41-107">申請者レコードを作成すると、その申請者の人物のレコードはグローバル アドレス帳で作成されます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-107">When you create an applicant record, a person record for that applicant is created in the global address book.</span></span>       <span data-ttu-id="2ba41-108">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="2ba41-108">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="2d163-104">この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2d163-104">This procedure shows how to manually maintain information about applicants and their application.</span></span>   <span data-ttu-id="2d163-105">申請者についての個人情報、面接の日時、能力、宿舎施設のリクエストを入力および管理できます。</span><span class="sxs-lookup"><span data-stu-id="2d163-105">You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants.</span></span> <span data-ttu-id="2d163-106">また、雇用申請者の申請状態を更新し、申請者とやり取りを行う書状または電子メールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="2d163-106">You can also update the status of applicants' applications for employment and create letters or email messages to communicate with applicants.</span></span> <span data-ttu-id="2d163-107">申請者レコードを作成すると、その申請者の人物のレコードはグローバル アドレス帳で作成されます。</span><span class="sxs-lookup"><span data-stu-id="2d163-107">When you create an applicant record, a person record for that applicant is created in the global address book.</span></span>       <span data-ttu-id="2d163-108">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="2d163-108">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-new-applicant-record"></a><span data-ttu-id="2ba41-109">新しいレコードの作成</span><span class="sxs-lookup"><span data-stu-id="2ba41-109">Create a new applicant record</span></span>
-1. <span data-ttu-id="2ba41-110">[人事管理] > [採用] > [申請者] > [申請者] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-110">Go to Human resources > Recruitment > Applicants > Applicants.</span></span>
-2. <span data-ttu-id="2ba41-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ba41-111">Click New.</span></span>
-3. <span data-ttu-id="2ba41-112">[名] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-112">In the First name field, type a value.</span></span>
-4. <span data-ttu-id="2ba41-113">[姓] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-113">In the Last name field, type a value.</span></span>
-    * <span data-ttu-id="2ba41-114">可能な場合、追加の申請者情報を入力できます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-114">You can enter additional applicant information if it's available.</span></span> <span data-ttu-id="2ba41-115">たとえば、申請者の最高学位、現在の職位、または以前の雇用者を申請者の情報として含めることができます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-115">For example, information can include the applicant's highest degree, current job title, or previous employer.</span></span>  
-5. <span data-ttu-id="2ba41-116">[連絡先情報] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-116">Toggle the expansion of the Contact information section.</span></span>
-6. <span data-ttu-id="2ba41-117">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ba41-117">Click Add.</span></span>
-7. <span data-ttu-id="2ba41-118">[説明] フィールドに、[電子メール通知] を入力します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-118">In the Description field, type 'Communications email'.</span></span>
-8. <span data-ttu-id="2ba41-119">[タイプ] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-119">In the Type field, select an option.</span></span>
-9. <span data-ttu-id="2ba41-120">[連絡先の電話番号/住所] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-120">In the Contact number/address field, type a value.</span></span>
-    * <span data-ttu-id="2ba41-121">この電子メール アドレスは申請者との電子メール通信を生成するのに使用されるようになります。</span><span class="sxs-lookup"><span data-stu-id="2ba41-121">This email address will be used to generate email communication with the applicant.</span></span>  
-10. <span data-ttu-id="2ba41-122">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ba41-122">Click Add.</span></span>
-11. <span data-ttu-id="2ba41-123">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-123">In the Description field, type a value.</span></span>
-12. <span data-ttu-id="2ba41-124">[連絡先の電話番号/住所] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-124">In the Contact number/address field, type a value.</span></span>
-    * <span data-ttu-id="2ba41-125">申請者の個人情報を編集します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-125">Applicant personal information.</span></span>  
-    * <span data-ttu-id="2ba41-126">必要に応じて、申請者の追加個人情報を入力できます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-126">You can enter additional personal information for the applicant, if needed.</span></span> <span data-ttu-id="2ba41-127">たとえば、生年月日、出身民族、性別、または配偶者の有無を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-127">For example, this can include birth date, ethnic origin, gender, or marital status.</span></span>  
-13. <span data-ttu-id="2ba41-128">[アクション] ウィンドウで、[コンピテンシー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ba41-128">On the Action Pane, click Competencies.</span></span>
-    * <span data-ttu-id="2ba41-129">スキル、職務経験、教育、テスト、または資格証明書を含む申請者の能力プロファイルを入力できます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-129">You can enter the applicant's competency profile, including their skills, professional experiences, education, tests, or certificates.</span></span>  
-    * <span data-ttu-id="2ba41-130">この情報は、会社のデータで定義されているジョブと関連付けられるスキルを申請者のスキルとマップするのに使用できます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-130">This information can be used to map the applicant's skills to the skills associated with the jobs defined in your company's data.</span></span>   
+## <a name="create-a-new-applicant-record"></a><span data-ttu-id="2d163-109">新しいレコードの作成</span><span class="sxs-lookup"><span data-stu-id="2d163-109">Create a new applicant record</span></span>
+1. <span data-ttu-id="2d163-110">[人事管理] > [採用] > [申請者] > [申請者] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="2d163-110">Go to Human resources > Recruitment > Applicants > Applicants.</span></span>
+2. <span data-ttu-id="2d163-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d163-111">Click New.</span></span>
+3. <span data-ttu-id="2d163-112">[名] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2d163-112">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="2d163-113">[姓] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2d163-113">In the Last name field, type a value.</span></span>
+    * <span data-ttu-id="2d163-114">可能な場合、追加の申請者情報を入力できます。</span><span class="sxs-lookup"><span data-stu-id="2d163-114">You can enter additional applicant information if it's available.</span></span> <span data-ttu-id="2d163-115">たとえば、申請者の最高学位、現在の職位、または以前の雇用者を申請者の情報として含めることができます。</span><span class="sxs-lookup"><span data-stu-id="2d163-115">For example, information can include the applicant's highest degree, current job title, or previous employer.</span></span>  
+5. <span data-ttu-id="2d163-116">[連絡先情報] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="2d163-116">Toggle the expansion of the Contact information section.</span></span>
+6. <span data-ttu-id="2d163-117">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d163-117">Click Add.</span></span>
+7. <span data-ttu-id="2d163-118">[説明] フィールドに、[電子メール通知] を入力します。</span><span class="sxs-lookup"><span data-stu-id="2d163-118">In the Description field, type 'Communications email'.</span></span>
+8. <span data-ttu-id="2d163-119">[タイプ] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="2d163-119">In the Type field, select an option.</span></span>
+9. <span data-ttu-id="2d163-120">[連絡先の電話番号/住所] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2d163-120">In the Contact number/address field, type a value.</span></span>
+    * <span data-ttu-id="2d163-121">この電子メール アドレスは申請者との電子メール通信を生成するのに使用されるようになります。</span><span class="sxs-lookup"><span data-stu-id="2d163-121">This email address will be used to generate email communication with the applicant.</span></span>  
+10. <span data-ttu-id="2d163-122">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d163-122">Click Add.</span></span>
+11. <span data-ttu-id="2d163-123">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2d163-123">In the Description field, type a value.</span></span>
+12. <span data-ttu-id="2d163-124">[連絡先の電話番号/住所] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2d163-124">In the Contact number/address field, type a value.</span></span>
+    * <span data-ttu-id="2d163-125">申請者の個人情報を編集します。</span><span class="sxs-lookup"><span data-stu-id="2d163-125">Applicant personal information.</span></span>  
+    * <span data-ttu-id="2d163-126">必要に応じて、申請者の追加個人情報を入力できます。</span><span class="sxs-lookup"><span data-stu-id="2d163-126">You can enter additional personal information for the applicant, if needed.</span></span> <span data-ttu-id="2d163-127">たとえば、生年月日、出身民族、性別、または配偶者の有無を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="2d163-127">For example, this can include birth date, ethnic origin, gender, or marital status.</span></span>  
+13. <span data-ttu-id="2d163-128">[アクション] ウィンドウで、[コンピテンシー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d163-128">On the Action Pane, click Competencies.</span></span>
+    * <span data-ttu-id="2d163-129">スキル、職務経験、教育、テスト、または資格証明書を含む申請者の能力プロファイルを入力できます。</span><span class="sxs-lookup"><span data-stu-id="2d163-129">You can enter the applicant's competency profile, including their skills, professional experiences, education, tests, or certificates.</span></span>  
+    * <span data-ttu-id="2d163-130">この情報は、会社のデータで定義されているジョブと関連付けられるスキルを申請者のスキルとマップするのに使用できます。</span><span class="sxs-lookup"><span data-stu-id="2d163-130">This information can be used to map the applicant's skills to the skills associated with the jobs defined in your company's data.</span></span>   
 
-## <a name="create-an-application-for-the-applicant"></a><span data-ttu-id="2ba41-131">申請者のアプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="2ba41-131">Create an application for the applicant</span></span>
-1. <span data-ttu-id="2ba41-132">[アプリケーション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ba41-132">Click Applications.</span></span>
-2. <span data-ttu-id="2ba41-133">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ba41-133">Click New.</span></span>
-3. <span data-ttu-id="2ba41-134">[採用プロジェクト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-134">In the Recruitment project field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="2ba41-135">採用プロジェクトを選択することによって、申請者は、その採用プロジェクトに含まれている特定の空きと関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-135">By selecting a recruitment project, the applicant will be associated with a specific opening included in that recruitment project.</span></span>  
-4. <span data-ttu-id="2ba41-136">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="2ba41-136">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="2ba41-137">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ba41-137">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="2ba41-138">既定では、ジョブと部門は選択した採用プロジェクトに基づいています。</span><span class="sxs-lookup"><span data-stu-id="2ba41-138">By default, the job and department are based on the selected recruitment project.</span></span>  
-6. <span data-ttu-id="2ba41-139">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2ba41-139">Click Save.</span></span>
-    * <span data-ttu-id="2ba41-140">申請を保存した後、申請者の経験、報奨と送付状を含むドキュメントを添付できます。</span><span class="sxs-lookup"><span data-stu-id="2ba41-140">After saving the application, you can attach documents to it, including the applicant's experience, awards, and cover letter.</span></span>  
+## <a name="create-an-application-for-the-applicant"></a><span data-ttu-id="2d163-131">申請者のアプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="2d163-131">Create an application for the applicant</span></span>
+1. <span data-ttu-id="2d163-132">[アプリケーション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d163-132">Click Applications.</span></span>
+2. <span data-ttu-id="2d163-133">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d163-133">Click New.</span></span>
+3. <span data-ttu-id="2d163-134">[採用プロジェクト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="2d163-134">In the Recruitment project field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="2d163-135">採用プロジェクトを選択することによって、申請者は、その採用プロジェクトに含まれている特定の空きと関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="2d163-135">By selecting a recruitment project, the applicant will be associated with a specific opening included in that recruitment project.</span></span>  
+4. <span data-ttu-id="2d163-136">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="2d163-136">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="2d163-137">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d163-137">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="2d163-138">既定では、ジョブと部門は選択した採用プロジェクトに基づいています。</span><span class="sxs-lookup"><span data-stu-id="2d163-138">By default, the job and department are based on the selected recruitment project.</span></span>  
+6. <span data-ttu-id="2d163-139">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2d163-139">Click Save.</span></span>
+    * <span data-ttu-id="2d163-140">申請を保存した後、申請者の経験、報奨と送付状を含むドキュメントを添付できます。</span><span class="sxs-lookup"><span data-stu-id="2d163-140">After saving the application, you can attach documents to it, including the applicant's experience, awards, and cover letter.</span></span>  
 
 
 
