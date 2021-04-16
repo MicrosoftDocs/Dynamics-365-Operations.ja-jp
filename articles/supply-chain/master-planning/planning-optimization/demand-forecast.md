@@ -2,11 +2,9 @@
 title: 需要予測を伴うマスター プラン
 description: このトピックでは、計画の最適化を使用したマスター プラン中の需要予測を含める方法について説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 88e93e7a363bf5db3d25d7fe6a0ab390f79912b0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501129"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833308"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>需要予測を伴うマスター プラン
 

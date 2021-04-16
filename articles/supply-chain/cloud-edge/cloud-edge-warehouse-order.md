@@ -2,11 +2,9 @@
 title: クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
 description: このトピックでは、倉庫のスケール ユニット ワークロードの一部として使用される倉庫オーダー機能について説明します。
 author: perlynne
-manager: tfeyr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
@@ -19,12 +17,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556365"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836689"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
 
@@ -38,7 +36,7 @@ ms.locfileid: "5556365"
 
 *倉庫オーダー* は、ハブやスケール ユニットの倉庫展開をサポートするために作成されたオーダーの一種です。 これにより、スケール ユニットで倉庫ワークロードを実行しているときに、在庫を受け入れできます。 現在は、発注書でのみ使用されています。
 
-倉庫オーダーは、入庫発注書の処理時に倉庫アプリを使用して現物手持在庫を登録する場合など、倉庫管理処理の一部として使用されます。 倉庫オーダーは、スケール ユニットの倉庫と倉庫管理プロセスの使用が可能な品目を指定する、発注書に使用できる *倉庫へのリリース* プロセスの一部として作成されます。
+倉庫オーダーは、入庫発注書の処理時に倉庫管理モバイルアプリを使用して現物手持在庫を登録する場合など、倉庫管理処理の一部として使用されます。 倉庫オーダーは、スケール ユニットの倉庫と倉庫管理プロセスの使用が可能な品目を指定する、発注書に使用できる *倉庫へのリリース* プロセスの一部として作成されます。
 
 > [!IMPORTANT]
 > 倉庫オーダーは、[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](cloud-edge-workload-warehousing.md) を使用する展開でのみ使用できます。
@@ -70,7 +68,7 @@ ms.locfileid: "5556365"
 
 ## <a name="monitor-a-warehouse-order"></a>倉庫オーダーの監視
 
-**倉庫注文明細行** ビューで、**入庫残数量** 列の値を確認することで、入庫受入の進捗状況を監視できます。 倉庫アプリを使用して行われた作業に関連する詳細を表示するには、次のいずれかの手順に従います。
+**倉庫注文明細行** ビューで、**入庫残数量** 列の値を確認することで、入庫受入の進捗状況を監視できます。 倉庫管理モバイルアプリを使用して行われた作業に関連する詳細を表示するには、次のいずれかの手順に従います。
 
 - **倉庫管理 \> 照会およびレポート \> 倉庫注文明細行** に移動して、フィルターを使用し、探している明細行を検索します。
 - **調達 \> 発注書 \> すべての発注書** の順に移動し、関連する発注書を開きます。 **発注書明細行** セクションで、1 つ以上の明細行を選択し、ツール バーで **倉庫 \> 入庫エントリ** を選択します。

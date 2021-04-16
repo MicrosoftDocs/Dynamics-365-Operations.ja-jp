@@ -2,11 +2,9 @@
 title: 在庫タグ棚卸
 description: このトピックでは、倉庫の実際の内容と手持在庫の比較に使用する、タグ棚卸に関する情報を提供します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCountTag
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78402840ad86a0f43d30b3c80307b4646fffbaeb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1df4a97dee3dc24856a1b40f3dc8dd095338b614
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216132"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825966"
 ---
 # <a name="inventory-tag-counting"></a>在庫タグ棚卸
 

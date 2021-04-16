@@ -2,11 +2,9 @@
 title: 元帳を構成する
 description: このトピックでは、各法人に対して元帳を構成する方法について説明します。 ここでは、通貨の選び方、会計カレンダー、勘定科目表、各法人で使用すべき勘定科目構成などの情報を掲載しています。
 author: kweekley
-manager: ''
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d2d0bebbdde96e6751f749dfbc0d4cdedd4036a0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: aad10770750d2614da804380a7bba03d348e8c9a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212328"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826206"
 ---
 # <a name="configure-ledgers"></a>元帳を構成する
 

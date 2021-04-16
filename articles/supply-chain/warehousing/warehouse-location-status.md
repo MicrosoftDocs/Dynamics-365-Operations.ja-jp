@@ -2,11 +2,9 @@
 title: 倉庫の場所の状態
 description: このトピックでは、倉庫の場所のステータス機能の概要を示します。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: e343fbd33ca616b0e20efb1f1fd66ed4863a72dd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4f31fd424760aa677df9235e53dc4af20cc2ea94
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248622"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837348"
 ---
 # <a name="warehouse-location-status"></a>倉庫の場所の状態
 
@@ -53,7 +51,7 @@ Microsoft Dynamics 365 Supply Chain Management には、場所を操作したり
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-example-scenario"></a>シナリオ例に必要なサンプルデータを用意します
 
-シナリオの作業を開始する前に、サンプル データを有効にして、このセクションの説明に従って機能を設定する必要があります。 シナリオ例を完了するには、ウェアハウス アプリまたはブラウザベースのエミュレーターのいずれかを使用する必要があります。 ここで提供される手順では、ウェアハウス アプリを使用します。 ブラウザベースのエミュレーターの手順も同様です。
+シナリオの作業を開始する前に、サンプル データを有効にして、このセクションの説明に従って機能を設定する必要があります。 シナリオ例を完了するには、倉庫管理モバイル アプリまたはブラウザベースのエミュレーターのいずれかを使用する必要があります。 ここで提供される手順では、倉庫管理モバイル アプリを使用します。 ブラウザベースのエミュレーターの手順も同様です。
 
 #### <a name="use-the-usmf-legal-entity"></a>USMF 法人を使用します
 

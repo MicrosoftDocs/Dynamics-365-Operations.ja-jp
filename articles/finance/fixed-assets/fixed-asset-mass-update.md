@@ -2,11 +2,9 @@
 title: 固定資産の一括更新
 description: 帳簿を使用した場合、同じ減価償却簿の一部である資産グループの減価償却方法を変更できます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc2f311e2463d68b9a8f8edb3afb82bef0934540
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 03f835bcbb0c9916297082198344320bd3795213
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212448"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826789"
 ---
 # <a name="fixed-asset-mass-update"></a>固定資産の一括更新
 

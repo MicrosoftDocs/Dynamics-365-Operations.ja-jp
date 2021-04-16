@@ -2,11 +2,9 @@
 title: プットアウェイ クラスター
 description: プットアウェイ クラスターには、複数のライセンス プレートを同時に選択し、異なる場所にある複数のライセンス プレートを使用する方法が用意されています。 プットアウェイ クラスターは、ライセンス プレートが在庫のパレット数が少ない小売業の場合に非常に役立ちます。
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228444"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840368"
 ---
 # <a name="putaway-clusters"></a>プットアウェイ クラスター
 
@@ -230,7 +228,7 @@ ms.locfileid: "5228444"
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>クラスターへの在庫の入庫と並べ替え
 
-1. 倉庫 *61* を設定したユーザーとして、倉庫アプリにログインします。
+1. 倉庫 *61* が設定されたユーザーとして、倉庫管理モバイル アプリにログインします。
 1. メイン メニューで、**入庫** を選択します。
 1. **入庫** メニューで、**クラスターの入庫と並べ替え** を選択します。
 1. **Ponum** フィールドに発注書番号を入力します。
@@ -272,7 +270,7 @@ ms.locfileid: "5228444"
 
 #### <a name="put-the-cluster-away"></a>クラスター プットアウェイ
 
-1. 倉庫 *61* を設定したユーザーとして、倉庫アプリにログインします。
+1. 倉庫 *61* が設定されたユーザーとして、倉庫管理モバイル アプリにログインします。
 1. メイン メニューで、**入庫** を選択します。
 1. **入庫** メニューで、**クラスター プットアウェイ** を選択します。
 1. **クラスター ID** を選択し、以前にクローズしたクラスターに対して入力したクラスター ID を入力します。

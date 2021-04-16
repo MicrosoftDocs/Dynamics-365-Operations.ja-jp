@@ -2,11 +2,9 @@
 title: 顧客からの返品の概要
 description: 製品の返品プロセスをサポートするために、返品理由コードと廃棄コードを作成できます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c352c91ee9a6ae97d8cab12abb8a91e77a3d2b3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a0f4d8825a4218b440affee3aad3d52902aef89f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247385"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824537"
 ---
 # <a name="customer-returns-overview"></a>顧客からの返品の概要
 

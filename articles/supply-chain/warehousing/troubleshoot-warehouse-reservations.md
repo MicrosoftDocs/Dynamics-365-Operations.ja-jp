@@ -2,11 +2,9 @@
 title: 倉庫管理での引当のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management での倉庫引当の処理中に発生する可能性がある問題を修正する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248718"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828109"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>倉庫管理での引当のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management での倉庫引当の処理中に発生する可能性がある問題を修正する方法について説明します。
+
+バッチ番号とシリアル番号の登録に関連するトピックについては、[倉庫バッチおよびシリアル予約階層に関するトラブルシューティング](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) を参照してください。
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>"予約に依存する作業が作成されているため、"引当を削除できません" というエラー メッセージを受信します。
 
@@ -63,20 +63,6 @@ ms.locfileid: "5248718"
 ### <a name="issue-resolution"></a>問題の解決
 
 この問題は、未処理の作業が原因で発生している可能性があります。 作業を完了するか、作業の作成を行わずに入庫します。 在庫トランザクションで、数量が物理的に引当されていないことを確認してください。 たとえば、品質指示、在庫ブロック レコード、または出荷注文が、これらのトランザクションによって開かれている場合があります。
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>エラー メッセージ "ウェーブに割り当てるには、積荷明細行は、その場所より上の分析コードを指定する必要があります。 これらの分析コードを割り当てるには、積荷明細行を準備して再作成します" が表示されます。
-
-### <a name="issue-description"></a>問題の説明
-
-"上のバッチ" 引当階層を持つ品目 (**場所** 分析コードの *上* に **バッチ番号** 分析コードが配置されている) を使用すると、部分数量に対する **積荷計画ワークベンチ** ページの **倉庫にリリース** コマンドが機能しません。 このエラー メッセージが表示され、部分数量に対して作業が作成されません。
-
-ただし、"下のバッチ" 引当階層を持つ品目 (**場所** 分析コードの *下* に **バッチ番号** 分析コードが配置されている) を使用した場合、部分数量に対する **積荷計画ワークベンチ** ページから積荷をリリースできます。
-
-### <a name="issue-resolution"></a>問題の解決
-
-この動作は仕様です。 引当階層で **場所** 分析コードの上に分析コードを配置する場合は、倉庫へのリリース前に指定する必要があります。 Microsoft は、この問題を評価し、積荷計画ワークベンチから倉庫に対するリリースにおける制限事項であると判断しました。 **場所** の上に 1 つ以上の分析コードが指定されていない場合、部分的な数量をリリースすることはできません。
-
-詳細については、[柔軟な倉庫レベル分析コードの引当ポリシー](flexible-warehouse-level-dimension-reservation.md)を参照してください。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

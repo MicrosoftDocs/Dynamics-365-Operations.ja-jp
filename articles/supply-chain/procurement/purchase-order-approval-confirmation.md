@@ -1,12 +1,10 @@
 ---
 title: 発注書の承認と確認
 description: このトピックでは、発注書が作成された後の一連の状態と、PO で変更管理を有効にした場合の影響について説明します。
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f356e02bea0f37686a75b85b059c643af92bb1c0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 95f1f6971e645a0aae8679c94a4bbd4cba946dc3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257434"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825425"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>発注書の承認と確認
 

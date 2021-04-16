@@ -2,11 +2,9 @@
 title: 既存の製品の変更管理の有効化
 description: このトピックでは、既存の製品の変更管理を有効にする方法を説明します。 また、変更管理を有効にできる機能が制限されるケースについて説明します。
 author: t-benebo
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 8b9f34f5980937da62610d9668a95816ba6054ef
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: be7b17c1049f60379764c5424422ff1ac6ee1770
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500865"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830103"
 ---
 # <a name="enable-change-management-on-existing-products"></a>既存の製品の変更管理の有効化
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、既存の製品の変更管理を有効にする方法を説明します。 また、変更管理を有効にできる機能が制限されるケースについて説明します。
 

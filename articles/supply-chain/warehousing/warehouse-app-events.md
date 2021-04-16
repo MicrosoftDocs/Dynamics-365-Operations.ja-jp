@@ -2,11 +2,9 @@
 title: 倉庫アプリ イベント
 description: このトピックでは、倉庫アプリ イベントのメッセージをバッチ ジョブの一部として処理するために使用される、倉庫アプリのイベント処理について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0bafcbd5306860cb80d6e813aabf83853a9011c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d63cdea8917bed762bf8d970a408e5931aec48b7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248646"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837396"
 ---
 # <a name="warehouse-app-event-processing"></a>倉庫アプリのイベント処理
 
 [!include [banner](../includes/banner.md)]
 
-Supply Chain Management で実行されるバッチ ジョブでは、キューのデータを使用して、倉庫アプリによって発行されたイベントを処理し、必要に応じて通知されたイベントに対応することができます。 この機能は、アプリを使用しているユーザーが実行する特定のタイプのアクションに応じて、関連するイベントをキューに追加します。 たとえば、**倉庫アプリから作成および処理される移動オーダー** 機能を使用する場合は、システムで **倉庫アプリのイベント処理** バッチ ジョブを実行しているときに、移動オーダー ヘッダーと明細行がバック エンドで作成および更新されます。
+Supply Chain Management で実行されるバッチ ジョブでは、キューのデータを使用して、倉庫管理モバイル アプリによって発行されたイベントを処理し、必要に応じて通知されたイベントに対応することができます。 この機能は、アプリを使用しているユーザーが実行する特定のタイプのアクションに応じて、関連するイベントをキューに追加します。 たとえば、*倉庫アプリから作成および処理される移動オーダー* 機能を使用する場合は、システムで **倉庫アプリのイベント処理** バッチ ジョブを実行しているときに、移動オーダー ヘッダーと明細行がバック エンドで作成および更新されます。
 
 ## <a name="enable-the-process-warehouse-app-events-feature"></a>倉庫アプリのイベント処理機能を有効にする
 
@@ -50,7 +48,7 @@ Supply Chain Management で実行されるバッチ ジョブでは、キュー�
 
 ## <a name="query-warehouse-app-events"></a>倉庫アプリ イベントのクエリ
 
-倉庫アプリによって生成されたイベント キューとイベント メッセージを表示するには、**倉庫管理 \> 照会およびレポート \> モバイル デバイスのログ \> 倉庫アプリのイベント** の順に移動します。
+倉庫管理アプリによって生成されたイベント キューとイベント メッセージを表示するには、**倉庫管理 \> 照会およびレポート \> モバイル デバイスのログ \> 倉庫アプリのイベント** の順に移動します。
 
 ## <a name="the-standard-event-queue-process"></a>標準のイベント キュー プロセス
 

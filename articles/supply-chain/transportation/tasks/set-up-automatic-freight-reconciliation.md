@@ -2,11 +2,9 @@
 title: 自動運賃調整の設定
 description: この手順では、自動運賃調整のデータ設定方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ac1b73adffd155ca51130e834212c9472d92f94
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4bc3998dea2e953191151f8e54345ec648ff33e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233706"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837612"
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>自動運賃調整の設定
 

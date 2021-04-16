@@ -2,11 +2,9 @@
 title: 入庫倉庫操作のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management での入庫倉庫操作の処理中に発生する可能性がある問題を修正する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250885"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828229"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>入庫倉庫操作のトラブルシューティング
 
@@ -65,5 +63,22 @@ Microsoft は、この問題を評価し、それが機能上の制限である�
 
 詳細については、[発注書に対する登録済製品の数量の転記](inbound-load-handling.md#post-registered-quantities)を参照してください。
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>入庫注文を登録すると、"数量が有効ではありません" というエラー メッセージが表示されます。
+
+### <a name="issue-description"></a>問題の説明
+
+**ライセンス ユーザー グループ化ポリシー** フィールドが、着信注文の登録に使用されるモバイル デバイス メニュー項目に対して *ユーザー定義* に設定されている場合は、エラー メッセージ ("数量が有効ではありません") が表示され、登録を完了できません。
+
+### <a name="issue-cause"></a>問題の原因
+
+*ユーザー定義* がライセンス プレートのグループ化ポリシーとして使用されている場合、単位シーケンス グループによって示される別のライセンス 契約で、受信する在庫が別のライセンス 契約に 分割されます。 受け取る品目を追跡するためにバッチ番号またはシリアル番号を使用する場合は、登録されたライセンス プレートごとに、各バッチまたはシリアルの数量を指定する必要があります。 ライセンス プレートで指定された数量が、現在の分析コードに対してまだ受け取る必要がある数量を超えている場合は、エラー メッセージが表示されます。
+
+### <a name="issue-resolution"></a>問題の解決
+
+モバイル デバイス メニュー項目を使用して品目を登録する場合、**ライセンス プレートのグループ化ポリシー** フィールドが *ユーザー定義* に設定されている場合は、ライセンスの承認番号、バッチ番号、またはシリアル番号の確認または入力をシステムで要求する場合があります。
+
+ライセンス契約の確認ページには、現在のライセンス 契約に割り当てられている数量が表示されます。 バッチまたはシリアルの確認ページには、現在のライセンス 契約で引き続き受け取る必要がある数量が表示されます。 ライセンスプレートとバッチまたはシリアル番号の組み合わせに対して登録する数量を入力できるフィールドも含まれます。 この場合、ライセンスプレートに登録されている数量が、まだ受け取る必要がある数量を超えないようにしてください。
+
+また、受信注文の登録でライセンスが多数生成されている場合は、**ライセンス プレートのグループ化ポリシー** フィールドの値を *ライセンス プレートのグループ化* に変更したり、品目に新しい単位シーケンス グループを割り当てたり、単位シーケンスグループの **ライセンス プレートのグループ化** オプションを無効にすることもできます。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

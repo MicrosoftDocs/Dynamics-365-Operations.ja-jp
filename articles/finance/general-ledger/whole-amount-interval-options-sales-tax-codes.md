@@ -2,11 +2,9 @@
 title: 売上税コードの合計額と間隔計算オプション
 description: この記事は、売上税コードの [計算方法] フィールドのオプションと、範囲金額および合計額の売上税計算方法を説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0414f835b7797d2ed554f8d9dbd95b2ad47bba43
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 48569da2d504e4c380ca89bfec4450ad1b9888e5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234120"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842371"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>売上税コードの合計額と間隔計算オプション
 
@@ -46,9 +44,8 @@ ms.locfileid: "5234120"
 ## <a name="example-whole-amount-method-of-calculation"></a>例: 合計額による計算方法
 [売上税コード値] ページで、売上税率が次の間隔で設定されています。
 
-|                   |                   |              |
+| 最小値     | 上限     | 税率     |
 |-------------------|-------------------|--------------|
-| **最小値** | **上限** | **税率** |
 | 0.00              | 50.00             | 30%          |
 | 50.00             | 100.00            | 20%          |
 | 100.00            | 0.00              | 10%          |
@@ -65,9 +62,8 @@ ms.locfileid: "5234120"
 ## <a name="example-interval-method-of-calculation"></a>例: 範囲間隔による計算方法
 [値] ページで、売上税率を以下の間隔の範囲で設定します。
 
-|                   |                   |              |
+| 最小値     | 上限     | 税率     |
 |-------------------|-------------------|--------------|
-| **最小値** | **上限** | **税率** |
 | 0.00              | 50.00             | 30%          |
 | 50.00             | 100.00            | 20%          |
 | 100.00            | 0.00              | 10%          |

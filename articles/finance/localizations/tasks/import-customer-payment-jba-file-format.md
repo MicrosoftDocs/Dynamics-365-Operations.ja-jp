@@ -2,11 +2,9 @@
 title: JBA のファイル形式の顧客支払のインポート
 description: 日本では一般的に、銀行間の電子資金決済 (EFT) には全国銀行協会 (JBA) のファイル形式が使用されています。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, SrsReportViewerForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b18f008b056e192f1cd6b37527da8cb38f7e4640
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 554f18fb2952085a89e2c8169d1dadbaf0509030
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264973"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823594"
 ---
 # <a name="import-customer-payment-with-jba-file-format"></a>JBA のファイル形式の顧客支払のインポート
 

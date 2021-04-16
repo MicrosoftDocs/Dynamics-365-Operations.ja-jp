@@ -2,11 +2,9 @@
 title: 原価見積を行う製造オーダー。
 description: この記事は、生産原価見積に関する情報を提供します。 生産原価見積では、計画製造オーダー数量で品目を製造する場合の予測される材料消費および能力消費の原価が示されます。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcTrans, InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 881ba7058a22a98d85730fa1f0aa6c38af7d248c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 59b93b41b74bd3f4cc480c8e60e8c69b25e40e51
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208162"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830248"
 ---
 # <a name="production-order-cost-estimation"></a>原価見積を行う製造オーダー。
 

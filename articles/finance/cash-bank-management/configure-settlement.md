@@ -2,11 +2,9 @@
 title: 決済のコンフィギュレーション
 description: トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 このトピックでは、買掛金勘定と売掛金勘定の両方の決済に使用するパラメーターについて説明します。
 author: kweekley
-manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee37bc38c1027e2b52e25b331f65be6f2f5edd98
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2acfe35363558398d873c7fd3a377d6db7785f19
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254062"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830451"
 ---
 # <a name="configure-settlement"></a>決済のコンフィギュレーション
 

@@ -2,7 +2,6 @@
 title: フォリオの管理
 description: このトピックでは、フォリオの使用方法について説明します。 通常、フォリオは、出荷ごとの 1 つのエンティティまたは会社に対する 1 つの仕入先の商品で構成されます。 1 つのフォリオにある商品は、1 つのコンテナに入るか、または複数のコンテナに分散されることがあります。
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2205ad8da1987130e97054b3f20749bce61198dd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 99159d2197648b8f17a719b74c8cd6ea4bffe550
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500841"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833836"
 ---
 # <a name="manage-folios"></a>フォリオの管理
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 多くの場合、フォリオは税関の法規によって決定されます。 出荷ごとの 1 つのエンティティまたは会社に対する 1 つの仕入先の商品により構成されます。 1 つのフォリオにある商品は、1 つのコンテナに入るか、または複数のコンテナに分散されることがあります。
 

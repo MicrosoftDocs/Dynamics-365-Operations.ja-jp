@@ -2,11 +2,9 @@
 title: 外注
 description: このトピックは、Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255544"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825185"
 ---
 # <a name="subcontracting"></a>外注
 
@@ -210,7 +208,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 
     ![作業ページの原材料ピッキングに対する 2 つの作業セット](./media/subcontract22_work-page.png)
 
-26. 工程 10 の倉庫作業を処理する倉庫アプリを開始します。
+26. 工程 10 の倉庫作業を処理する Warehouse Management モバイル アプリを開始します。
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
     - **開始工程番号** フィールドで、**10** を選択します。
     - **終了工程番号** フィールドで、**10** を選択します。
 
-    ![一般タブで設定されている値](./media/subcontract23_start-dialog.png)
+    ![一般タブ 1 で設定されている値](./media/subcontract23_start-dialog.png)
 
 31. **OK** を選択して、**開始** ダイアログ ボックスを閉じ、**すべての製造オーダー** ページに戻ります。
 
     製造オーダーのステータスが **開始済** であることに注意してください。 工程 10 の材料は、ピッキング リスト仕訳帳の自動転記で消費されます。 工程 10 の時間消費量は、工順カード仕訳帳の自動転記で扱われます。
 
-32. 工程 20 の倉庫作業を処理する倉庫アプリを開始します。
+32. 工程 20 の倉庫作業を処理する Warehouse Management モバイル アプリを開始します。
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
     - **数量** フィールドに **10** と入力します。
     - **ピッキング リスト転記** オプションを **いいえ** に設定します。
 
-    ![一般タブで設定されている値](./media/subcontract24_general-tab.png)
+    ![一般タブ 2 で設定されている値](./media/subcontract24_general-tab.png)
 
 35. **OK** を選択して、**開始** ダイアログ ボックスを閉じ、**すべての製造オーダー** ページに戻ります。
 

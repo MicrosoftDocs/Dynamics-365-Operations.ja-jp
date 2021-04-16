@@ -2,11 +2,9 @@
 title: 小型パーセルの出荷
 description: このトピックでは、小型パーセルの出荷 (SPS) 機能に関する情報を提供します。 この機能は、Microsoft Dynamics 365 Supply Chain Management を有効にして、梱包コンテナに関する詳細を配送業者に送信した後、配送業者から出荷ラベル、出荷レート、追跡番号を受け取ります。
 author: Mirzaab
-manager: tfehr
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 37f07139853c30da25c067a3d736b4b9bf4eb361
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3969ee6b46f38fe2650881fb0183c60aadce6c8a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501177"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831173"
 ---
 # <a name="small-parcel-shipping"></a>小型パーセルの出荷
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 小型パーセルの出荷 (SPS) 機能により、Microsoft Dynamics 365 Supply Chain Management は配送業者 API を介した通信のフレームワークを提供することにより、出荷の配送業者と直接やり取りできます。 この機能は、コンテナの出荷かトラックより少ない (LTL) 出荷を使用する代わりに、個々の販売注文を業務用の配送業者経由で出荷する場合に役立ちます。
 

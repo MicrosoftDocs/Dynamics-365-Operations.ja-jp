@@ -2,11 +2,9 @@
 title: リースの調整
 description: このトピックでは、リースを調整する方法について説明します。 リースの条件が変更された場合、リースが拡張された場合、またはその他の状況が変化した場合は、調整が必要になることがあります。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1dce99e9fb553cce8de9cefc7e01c8755e9d2090
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219990"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825774"
 ---
 # <a name="adjust-leases"></a>リースの調整
 

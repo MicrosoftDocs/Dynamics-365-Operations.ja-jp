@@ -2,11 +2,9 @@
 title: 積荷計画ワークベンチから倉庫へのリリースを使用して出荷を連結する
 description: このトピックでは、複数の注文が同一の積荷で倉庫にリリースされ、自動的に出荷に連結されるシナリオを示します。
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 2fd13c2ceb8843b79b9dbc87acf77f219f0244f5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 58a1f6237e37815dd0b4ae3d7a0d46157db5a808
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242256"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831341"
 ---
 # <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a>積荷計画ワークベンチから倉庫へのリリースを使用して出荷を連結する
 

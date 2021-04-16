@@ -2,11 +2,9 @@
 title: 製造環境での標準原価を更新
 description: この記事は、製造環境での標準原価の更新方法についてのガイダンスを提供します。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 726eccdc8a9350a292ba719784b5db99afdfad4f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 66d08888e426c55fc775a1f2505772bca45e7802
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262432"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842132"
 ---
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>製造環境での標準原価を更新
 
