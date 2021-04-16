@@ -2,11 +2,9 @@
 title: リソース能力の定義
 description: リソースの能力は、リソースがどのような工程を行えるかを示します。
 author: sorenva
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WrkCtrCapability
 audience: Application User
@@ -16,37 +14,37 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c78db0d849c08622d9a2dffc109b439b4c584748
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 072991e7b3844ad3583b7d0c575d426299f74e9f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240368"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828709"
 ---
-# <a name="define-resource-capabilities"></a><span data-ttu-id="3beea-103">リソース能力の定義</span><span class="sxs-lookup"><span data-stu-id="3beea-103">Define resource capabilities</span></span>
+# <a name="define-resource-capabilities"></a><span data-ttu-id="7a4b1-103">リソース能力の定義</span><span class="sxs-lookup"><span data-stu-id="7a4b1-103">Define resource capabilities</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3beea-104">リソースの能力は、リソースがどのような工程を行えるかを示します。</span><span class="sxs-lookup"><span data-stu-id="3beea-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="3beea-105">スケジューリング中に、それぞれの職務や工程の要件と、利用可能なリソースの能力とを照合します。</span><span class="sxs-lookup"><span data-stu-id="3beea-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="3beea-106">このタスク ガイドでは、能力の作成、およびリソースへの割り当て方法を確認できます。</span><span class="sxs-lookup"><span data-stu-id="3beea-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="3beea-107">このタスクの作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="3beea-107">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="7a4b1-104">リソースの能力は、リソースがどのような工程を行えるかを示します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="7a4b1-105">スケジューリング中に、それぞれの職務や工程の要件と、利用可能なリソースの能力とを照合します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="7a4b1-106">このタスク ガイドでは、能力の作成、およびリソースへの割り当て方法を確認できます。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="7a4b1-107">このタスクの作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-107">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-a-resource-capability"></a><span data-ttu-id="3beea-108">リソース能力の作成</span><span class="sxs-lookup"><span data-stu-id="3beea-108">Create a resource capability</span></span>
-1. <span data-ttu-id="3beea-109">[リソース能力] に移動します。</span><span class="sxs-lookup"><span data-stu-id="3beea-109">Go to Resource capabilities.</span></span>
-2. <span data-ttu-id="3beea-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3beea-110">Click New.</span></span>
-3. <span data-ttu-id="3beea-111">[能力] フィールドで、リソース能力の ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="3beea-111">In the Capability field, type the ID of the resource capability.</span></span>
-    * <span data-ttu-id="3beea-112">ある工程について、能力 ID を使用すると、工程の実行にその能力を持つリソースが必要であることを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="3beea-112">For a given operation, you use the capability ID to specify that resources must have this capability to perform the operation.</span></span>  
-4. <span data-ttu-id="3beea-113">[説明] フィールドに、能力の説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="3beea-113">In the Description field, enter a description of the capability.</span></span>
+## <a name="create-a-resource-capability"></a><span data-ttu-id="7a4b1-108">リソース能力の作成</span><span class="sxs-lookup"><span data-stu-id="7a4b1-108">Create a resource capability</span></span>
+1. <span data-ttu-id="7a4b1-109">[リソース能力] に移動します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-109">Go to Resource capabilities.</span></span>
+2. <span data-ttu-id="7a4b1-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-110">Click New.</span></span>
+3. <span data-ttu-id="7a4b1-111">[能力] フィールドで、リソース能力の ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-111">In the Capability field, type the ID of the resource capability.</span></span>
+    * <span data-ttu-id="7a4b1-112">ある工程について、能力 ID を使用すると、工程の実行にその能力を持つリソースが必要であることを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-112">For a given operation, you use the capability ID to specify that resources must have this capability to perform the operation.</span></span>  
+4. <span data-ttu-id="7a4b1-113">[説明] フィールドに、能力の説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-113">In the Description field, enter a description of the capability.</span></span>
 
-## <a name="assign-capability-to-a-resource"></a><span data-ttu-id="3beea-114">リソースへの能力の割り当て</span><span class="sxs-lookup"><span data-stu-id="3beea-114">Assign capability to a resource</span></span>
-1. <span data-ttu-id="3beea-115">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3beea-115">Click Add.</span></span>
-2. <span data-ttu-id="3beea-116">[リソース] フィールドで、リソースの ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="3beea-116">In the Resource field, type the ID of the resource.</span></span>
-    * <span data-ttu-id="3beea-117">リソースの能力は、1 つ以上のリソースに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="3beea-117">A resource capability can be assigned to one or more resources.</span></span>  
-3. <span data-ttu-id="3beea-118">[有効期限] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="3beea-118">In the Expiration field, enter a date.</span></span>
-    * <span data-ttu-id="3beea-119">限られた期間だけリソースに能力があることを指定する場合にも、このフィールドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="3beea-119">You can use this field to specify that a resource has the capability for only a limited time.</span></span>  
-4. <span data-ttu-id="3beea-120">[優先順位] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3beea-120">In the Priority field, enter a number.</span></span>
-    * <span data-ttu-id="3beea-121">職務および工程をスケジュールするとき、優先順位によってリソースを選択するかどうかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="3beea-121">When you schedule jobs and operations, you can specify whether to select resources by priority.</span></span> <span data-ttu-id="3beea-122">これを選択し、かつ 2 つ以上のリソースが期日までに職務や工程を行うことができる場合、要求能力に応じて優先順位の最も低いリソースが選択されます。</span><span class="sxs-lookup"><span data-stu-id="3beea-122">If you choose to do this, and more than one resource can perform the job or operation by the requested date, the resource that has the lowest priority with respect to the required capability is selected.</span></span>  
-5. <span data-ttu-id="3beea-123">[レベル] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3beea-123">In the Level field, enter a number.</span></span>
-    * <span data-ttu-id="3beea-124">ジョブや工程が特定の機能を要求することを指定する場合は、必要な最低レベルを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="3beea-124">When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required.</span></span> <span data-ttu-id="3beea-125">能力レベルを使用すると、同じ職務を遂行することができるリソースについて、速度、強み、サイズなどの違いによる区別を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="3beea-125">Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.</span></span>  
+## <a name="assign-capability-to-a-resource"></a><span data-ttu-id="7a4b1-114">リソースへの能力の割り当て</span><span class="sxs-lookup"><span data-stu-id="7a4b1-114">Assign capability to a resource</span></span>
+1. <span data-ttu-id="7a4b1-115">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-115">Click Add.</span></span>
+2. <span data-ttu-id="7a4b1-116">[リソース] フィールドで、リソースの ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-116">In the Resource field, type the ID of the resource.</span></span>
+    * <span data-ttu-id="7a4b1-117">リソースの能力は、1 つ以上のリソースに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-117">A resource capability can be assigned to one or more resources.</span></span>  
+3. <span data-ttu-id="7a4b1-118">[有効期限] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-118">In the Expiration field, enter a date.</span></span>
+    * <span data-ttu-id="7a4b1-119">限られた期間だけリソースに能力があることを指定する場合にも、このフィールドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-119">You can use this field to specify that a resource has the capability for only a limited time.</span></span>  
+4. <span data-ttu-id="7a4b1-120">[優先順位] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-120">In the Priority field, enter a number.</span></span>
+    * <span data-ttu-id="7a4b1-121">職務および工程をスケジュールするとき、優先順位によってリソースを選択するかどうかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-121">When you schedule jobs and operations, you can specify whether to select resources by priority.</span></span> <span data-ttu-id="7a4b1-122">これを選択し、かつ 2 つ以上のリソースが期日までに職務や工程を行うことができる場合、要求能力に応じて優先順位の最も低いリソースが選択されます。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-122">If you choose to do this, and more than one resource can perform the job or operation by the requested date, the resource that has the lowest priority with respect to the required capability is selected.</span></span>  
+5. <span data-ttu-id="7a4b1-123">[レベル] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-123">In the Level field, enter a number.</span></span>
+    * <span data-ttu-id="7a4b1-124">ジョブや工程が特定の機能を要求することを指定する場合は、必要な最低レベルを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-124">When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required.</span></span> <span data-ttu-id="7a4b1-125">能力レベルを使用すると、同じ職務を遂行することができるリソースについて、速度、強み、サイズなどの違いによる区別を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="7a4b1-125">Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.</span></span>  
 
 
 
