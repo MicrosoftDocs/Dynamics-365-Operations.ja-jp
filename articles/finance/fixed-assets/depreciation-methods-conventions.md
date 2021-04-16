@@ -2,11 +2,9 @@
 title: 減価償却方法
 description: この記事は、Microsoft Dynamics 365 Finance でサポートされている減価償却方法および減価償却方式の概要を提供します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1aacc57051f21b992d9f7feb44c99511fc2a65bb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: afd771f3f2f0434aa3663a9f99512f0c31adbb78
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241293"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826933"
 ---
 # <a name="depreciation-methods-and-conventions"></a>減価償却方法
 

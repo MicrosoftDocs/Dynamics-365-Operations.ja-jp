@@ -2,11 +2,9 @@
 title: 作業の分割
 description: このトピックでは、作業分割機能に関する情報を提供します。 この機能を使用すると、複数の作業オーダーをいくつかの小さな作業オーダーに分割し、その後で複数の倉庫作業者に割り当てることができます。 これにより、複数の倉庫作業者が同じ作業を同時に選択できるようになります。
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6dbf0f6dd0c691db74eaad2174d8f9849b4cb26a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245085"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830765"
 ---
 # <a name="work-split"></a>作業の分割
 
@@ -69,7 +67,7 @@ ms.locfileid: "5245085"
 >
 > - 作業が現在別のユーザーによって分割されている。 別のユーザーによって既に分割されている作業の分割ページを開こうとすると、エラー メッセージ "ID \#\#\#\# の作業は現在分割中です。 数分後に再試行してください。 このメッセージが引き続き表示される場合は、スーパーバイザーに連絡してください" が表示されます。
 
-新しい作業ブロックの理由 *分割作業* は、作業 ID が分割処理中であることを示します。 ユーザーが作業を実行しようとした場合、**分割作業** ページとウェアハウス アプリの両方に表示されます。 ブロックの理由を使用する場合、作業 ID の **ブロックされたウェーブ** フィールドの名前が **ブロック** に変わります。
+新しい作業ブロックの理由 *分割作業* は、作業 ID が分割処理中であることを示します。 ユーザーが作業を実行しようとした場合、**分割作業** ページと倉庫管理モバイル アプリの両方に表示されます。 ブロックの理由を使用する場合、作業 ID の **ブロックされたウェーブ** フィールドの名前が **ブロック** に変わります。
 
 ## <a name="initiate-a-work-split"></a>作業分割の開始
 
@@ -147,9 +145,9 @@ ms.locfileid: "5245085"
 
 *作業分割* ブロック理由が削除されると、モバイル デバイスで作業を実行できるようになります。ただし、**ブロック** 状態が作業 ID で *いいえ* に設定されている場合に限ります。
 
-## <a name="user-blocking-on-the-warehouse-app"></a>ウェアハウス アプリでのユーザーのブロック
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリでのユーザー ブロック
 
-分割された作業 ID に対して、ウェアハウス アプリを使用してピッキング作業を実行しようとすると、"ID \#\#\#\# の作業は現在分割されています" というエラー メッセージが表示されます。 このメッセージが表示された場合は、**キャンセル** を選択します。 その後、他の作業の処理を続行できます。
+分割された作業 ID に対して、倉庫管理モバイル アプリを使用してピッキング作業を実行しようとすると、"ID \#\#\#\# の作業は現在分割されています" というエラー メッセージが表示されます。 このメッセージが表示された場合は、**キャンセル** を選択します。 その後、他の作業の処理を続行できます。
 
 ## <a name="other-blocked-operations"></a>他のブロックされた操作
 

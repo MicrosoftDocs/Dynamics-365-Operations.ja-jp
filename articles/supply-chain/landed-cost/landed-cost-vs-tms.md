@@ -2,7 +2,6 @@
 title: 陸揚原価と輸送管理
 description: Microsoft Dynamics 365 Supply Chain Management により、輸送、輸送管理 (TMS) および陸揚原価を操作する 2 つの異なるモジュールが提供されます。 このトピックでは、2 つのモジュールで共通する機能をまとめ、その違いについて説明します。
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500721"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833860"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>陸揚原価と輸送管理
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management により、輸送: **輸送管理** (TMS) および **陸揚原価** を操作する 2 つの異なるモジュールが提供されます。 このトピックでは、2 つのモジュールで共通する機能をまとめ、その違いについて説明します。 この情報を使用して、業務内容に最適なモジュールを決定することができます。 一部の業務内容は TMS の使用により向上し、その他は荷揚原価により向上することがあります。 業務要件によって、専ら 1 つのモジュールを使用するか、または 2 つのモジュールを組み合わせて使用するか選択することができます。
 
@@ -158,15 +156,15 @@ TMS および荷揚原価の両方が、コンテナーの商品の受け取り�
 
 ### <a name="tms-receiving-by-container-features"></a>TMS のコンテナーによる入荷機能
 
-TMS は、入庫 ASN、倉庫アプリを通したすべてのバリアントの入庫、および Supply Chain Management クライアントを通じてのすべての受領方法をサポートしています。
+TMS は、入庫 ASN、倉庫管理モバイル アプリを通したすべてのバリアントの入庫、および Supply Chain Management クライアントを通じてのすべての受領方法をサポートしています。
 
 ### <a name="landed-cost-receiving-by-container-features"></a>荷揚原価のコンテナーによる受領機能
 
 コンテナーによる受け取りをサポートするために、荷揚原価は出荷コンテナー レコードを作成し、コンテナー ID を使用して発注書と特定の出荷コンテナーを関連付けます。 間接費はその出荷コンテナーに適用され、細分されることにより、関連する発注書に関連付けることができます。
 
-荷揚原価のコンテナーは、*輸送中の商品の入庫* として知られている新しいタイプの入庫、着荷仕訳帳、またモバイル デバイスの受領を通して受領することができます。 着荷仕訳帳を使用する場合、輸送中の商品注文またはコンテナー内の元の発注書明細行から数量を初期化できます。 荷揚原価は、倉庫アプリを通じて 2 つの受領作業タイプを提供します。
+荷揚原価のコンテナーは、*輸送中の商品の入庫* として知られている新しいタイプの入庫、着荷仕訳帳、またモバイル デバイスの受領を通して受領することができます。 着荷仕訳帳を使用する場合、輸送中の商品注文またはコンテナー内の元の発注書明細行から数量を初期化できます。 荷揚原価は、倉庫管理モバイル アプリを通じて 2 つの受領作業タイプを提供します。
 
-荷揚原価は、商品の電子レシート用の ASN を提供しません。 また、積荷の受領、プレート受取、または混合ライセンス プレートの受取を処理する倉庫アプリ フローはサポートしません。
+荷揚原価は、商品の電子レシート用の ASN を提供しません。 また、積荷の受領、プレート受取、または混合ライセンス プレートの受取を処理する倉庫管理モバイル アプリのフローはサポートしません。
 
 ## <a name="rate-shopping-by-vendor"></a>仕入先別のレート ショッピング
 

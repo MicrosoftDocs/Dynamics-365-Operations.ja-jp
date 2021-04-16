@@ -2,11 +2,9 @@
 title: モバイル デバイスのユーザー設定
 description: このトピックでは、倉庫作業者用のモバイル デバイス ユーザー設定を管理する方法について説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings
 audience: Application User
@@ -17,17 +15,16 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8090305c1b296d8a8a64df444abb1d1f2235aeee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 080b84d712a9c634611090f71b9ecca75e13cdcb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501201"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837468"
 ---
 # <a name="mobile-device-user-settings"></a>モバイル デバイスのユーザー設定
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 新しい倉庫管理モバイル アプリケーションには、ユーザー エクスペリエンスのカスタマイズに役立つ一連のアプリケーション固有の設定があります。 このアプリケーションは、さまざまな画面サイズおよび構成 (タブレット、電話、アーム持ちなど) のデバイスで使用できます。そのため、Microsoft Dynamics 365 Supply Chain Management からこれらの設定を一元管理するのに役立ちます。
 
