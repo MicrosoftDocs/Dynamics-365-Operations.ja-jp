@@ -2,11 +2,9 @@
 title: 製品ライフサイクルの状態をリリース済製品マスターに割り当て
 description: ここでは、リリースされた製品およびそのバリアントに、製品ライフサイクルの状態を割り当てる手順を説明します。
 author: cvocph
-manager: tfehr
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a5d7f6532e3c0b61fcc5758f383257d4a9a09b5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 66859c7f7f5be6eaadd9470fd9b792daa28ce33d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226740"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807891"
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product-master"></a>製品ライフサイクルの状態をリリース済製品マスターに割り当て
 

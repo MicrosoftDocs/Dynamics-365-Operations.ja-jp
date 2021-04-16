@@ -2,11 +2,9 @@
 title: 工程とジョブのスケジューリングによる製造オーダーのスケジュール
 description: このトピックでは、工程のスケジューリングとジョブのスケジューリングで製造オーダーのスケジューリングを行うことに焦点を当てています。
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdSchedule, ProdTable, ProdRouteJob
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 32ace204f1ec79cc8f9ce10ebfdc3606879e40d4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 883a68af78a9d91df089d30d8f1b3d7ba498d577
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215844"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841386"
 ---
 # <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>工程とジョブのスケジューリングによる製造オーダーのスケジュール
 

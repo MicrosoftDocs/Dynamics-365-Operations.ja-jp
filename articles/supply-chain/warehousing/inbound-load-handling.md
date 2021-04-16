@@ -2,11 +2,9 @@
 title: 発注書に対する入庫積荷の倉庫処理
 description: このトピックでは、発注書に対する入庫積荷の倉庫処理プロセスについて説明します。
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235343"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835633"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
@@ -66,7 +64,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 - **積荷入庫をサポートするようにコンフィギュレーションされたモバイル デバイス メニュー**
 
-    モバイル デバイス用の[倉庫アプリ](install-configure-warehousing-app.md) は、次の作業作成プロセスをサポートします。
+    モバイル デバイス用の[倉庫管理モバイル アプリ](../warehousing/install-configure-warehouse-management-app.md) は、次の作業作成プロセスをサポートします :
 
     - 積荷品目入庫
     - 積荷品目入庫とプット アウェイ
@@ -285,7 +283,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 倉庫の入庫係がモバイル デバイスを使用して、積荷にリンクされている入庫在庫を登録する前に、その目的でモバイル デバイス メニュー項目を作成する必要があります。
 
-このセクションでは、モバイル デバイスのメニュー項目を作成し、既存のメニューに追加します。 倉庫作業者は、メニュー項目を倉庫アプリで選択できるようになります。
+このセクションでは、モバイル デバイスのメニュー項目を作成し、既存のメニューに追加します。 倉庫作業者は、メニュー項目を倉庫管理モバイル アプリで選択できるようになります。
 
 1. **倉庫管理 \> 設定 \> モバイル デバイス \> モバイル デバイスのメニュー項目** に移動し、モバイル デバイス メニューに次の設定のメニュー項目が含まれていることを確認します:
 

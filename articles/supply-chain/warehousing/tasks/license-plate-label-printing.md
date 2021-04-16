@@ -2,11 +2,9 @@
 title: ライセンス プレート ラベル印刷の有効化
 description: このトピックでは、販売ピッキングの作業プロセスで最後の品目が在庫からピッキングされたあとに、出荷コンテナ シリアル コード (SSCC) ラベルを自動で印刷する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f62e1587135591079b50d52f87d0a1b0ce7d0806
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0a608e9a2356f9dd49bbec1bcbe5489af5931d44
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238921"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830885"
 ---
 # <a name="enable-license-plate-label-printing"></a>ライセンス プレート ラベル印刷の有効化
 

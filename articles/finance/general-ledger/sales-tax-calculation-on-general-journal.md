@@ -2,11 +2,9 @@
 title: 一般仕訳帳明細行での消費税計算
 description: このトピックでは、一般仕訳帳明細行のさまざまなタイプの勘定 (仕入先、顧客、元帳、およびプロジェクト) に対する消費税がどのように計算されるかについて説明します。
 author: EricWang
-manager: Ann Beebe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 25eb8dd6965f659f0febe53a6340cb1381c5664f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204909"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815335"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>一般仕訳帳明細行での消費税計算
 [!include [banner](../includes/banner.md)]

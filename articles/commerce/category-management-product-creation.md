@@ -2,11 +2,9 @@
 title: 製品カテゴリおよび製品の管理
 description: このトピックでは、販売促進マネージャーが製品カテゴリを使用して、Commerce 製品階層とリリースされた製品の詳細な関係を管理する方法について説明します。
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 95a4bac6beeaf5fad449027d93132fc1499288a0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 678561856fbb5514ff954363a767091edac6dee2
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215489"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794376"
 ---
 # <a name="manage-product-categories-and-products"></a>製品カテゴリおよび製品の管理
 

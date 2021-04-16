@@ -2,7 +2,6 @@
 title: INTVALUE ER 関数
 description: このトピックでは、INTVALUE 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64f43ad29d59ade1e124b6800734b003f6ca07df
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 71eedde5a22f36a8a827824087633de32c00cc7d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561473"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755375"
 ---
 # <a name="intvalue-er-function"></a>INTVALUE ER 関数
 

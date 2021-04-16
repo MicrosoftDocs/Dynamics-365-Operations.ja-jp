@@ -2,11 +2,9 @@
 title: 購買売買契約を使用したマスター プラン
 description: このトピックでは、計画の最適化で計画オーダーの仕入先やリードタイムを、購買契約書に記載されている最高価格またはリードタイムに基づいて検出する方法について説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d8d5b8c7ac5da9c68926d7fbb4f37b81b56665cb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 138bf58e07d4d6df3c2106e4176e02fcdb0a6dba
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264725"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820421"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>購買売買契約を使用したマスター プラン
 

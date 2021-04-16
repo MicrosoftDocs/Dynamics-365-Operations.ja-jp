@@ -2,11 +2,9 @@
 title: 複数の割引期間を持つ一部の顧客支払を決済する
 description: この記事は、複数の割引期間がある場合に一部顧客支払が決済される方法を示します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5047debd0f3d035ec5fc8bc24745183b28e9f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241717"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835103"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>複数の割引期間を持つ一部の顧客支払を決済する
 
@@ -56,7 +54,7 @@ Fabrikam は、顧客 4031 に 2 つの現金割引期間を提示します。 �
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。 **決済金額** の値を **294.00** に変更しないと、表示される **現金割引金額** の値が異なります。 ただし、決済が **決済金額** の値を自動的に調整するため 6.00 ドルは現金割引として支払の転記時に取得されます。
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | 現金割引日           | 2015 年 6 月 30 日　 |
 | 現金割引金額         | 20.00     |
@@ -75,7 +73,7 @@ Fabrikam は、顧客 4031 に 2 つの現金割引期間を提示します。 �
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | 現金割引日           | 2015/7/9 |
 | 現金割引金額         | 30.00     |

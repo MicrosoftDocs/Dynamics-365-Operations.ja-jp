@@ -2,11 +2,9 @@
 title: 販売トランザクションの源泉徴収税
 description: このトピックでは、選択した顧客に対する源泉徴収税の計算を回避する手順を示します。 支払で源泉徴収税を指定する顧客については、既定の源泉徴収税グループを割り当てる必要があります。
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: c839df1b54cdb60beefa6dc6c3fc6e945a6eac85
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8e11ce10faa9b450b6f36a856b34b06b4ee1838d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256646"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842347"
 ---
 # <a name="withholding-tax-in-sales-transactions"></a>販売トランザクションの源泉徴収税
 

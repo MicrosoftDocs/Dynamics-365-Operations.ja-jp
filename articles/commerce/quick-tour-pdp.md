@@ -2,11 +2,9 @@
 title: 製品詳細ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce の製品詳細ページ (PDP) の概要を示します。
 author: anupamar-ms
-manager: annbe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 020c2a72515eb112adb33c6b58e3a5084339d040
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4a61383c790b63aa1c07f7004f264495171441a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243840"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792222"
 ---
 # <a name="product-details-pages-overview"></a>製品詳細ページの概要
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の製品詳細ページ (PDP) の概要を示します。
-
-## <a name="overview"></a>概要
 
 PDP は、製品に関する詳細情報を提供し、顧客がサイズ、スタイル、および色などの製品オプションを選択できるようにします。 PDP は顧客が購入決定をするために必要なすべての製品情報を表示する必要があります。
 

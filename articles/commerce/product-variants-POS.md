@@ -2,11 +2,9 @@
 title: 販売時点管理 (POS) の在庫検索
 description: このトピックでは、販売時点管理 (POS) での在庫情報を表示するために使用できるオプションについて説明します。
 author: ashishmsft
-manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 26bbbeee7ed6c228b3c84dc07576bccb8e1aebd8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a5f0d28e323177e46f3f686a4dea3b168863a227
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231011"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795576"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>販売時点管理 (POS) の在庫検索
 

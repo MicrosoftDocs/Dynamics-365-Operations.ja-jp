@@ -2,11 +2,9 @@
 title: クラウドを利用した検索の概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce でのクラウドを利用した検索の概要を示します。
 author: ashishmsft
-manager: annbe
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e94338cb55f3298d0a33d7b086480f16e83f271
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b5182df9d45a3b5d2572a5b6b391c924ef23bf9a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220659"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800424"
 ---
 # <a name="cloud-powered-search-overview"></a>クラウドを利用した検索の概要
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でのクラウドを利用した検索の概要を示します。
-
-## <a name="overview"></a>概要
 
 製品の発見可能性は、カテゴリの閲覧、検索、およびフィルタリングにより、顧客が迅速かつ簡単に製品を見つけられることを保証するのに役立ちます。 小売業者は、製品の検出を、すべてのチャネルでの顧客とのやり取りにおける主要なツールと考えています。
 

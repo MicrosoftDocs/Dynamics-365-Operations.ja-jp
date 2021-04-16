@@ -2,11 +2,9 @@
 title: 利息計算期間機能
 description: このトピックでは、利息計算期間の選択にあたり、月単位、四半期単位、半年単位、年間のどれを選択すれば良いかを判断する際に役立つ情報を提供します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 689165314f664f514c1bef98e74e823cf48286c9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c61bc43de1c81a474ffa681b1936d73380901d2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225565"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816127"
 ---
 # <a name="compounding-interval-functionality"></a>利息計算期間機能
 

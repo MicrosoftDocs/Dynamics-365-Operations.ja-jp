@@ -2,11 +2,9 @@
 title: 生産計画
 description: このトピックでは、生産の計画について説明し、計画の最適化を使用して計画製造オーダーを変更する方法について説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,18 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f9b5e4122fbd83ff76e0605b2f0816e10d2d9aab
-ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
+ms.openlocfilehash: 22b78f44940f71097ca8b1cdb74edb06274bba75
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470836"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839226"
 ---
 # <a name="production-planning"></a>生産計画
 
 計画の最適化では、複数の生産シナリオがサポートされます。 組み込みの既存のマスター プラン エンジンから移行する場合は、動作の変更を確認することが重要です。
 
 次のビデオでは、このトピックで説明されている概念のいくつかを簡単に紹介しています: [Dynamics 365 Supply Chain Management: 計画最適化の機能拡張](https://youtu.be/u1pcmZuZBTw)。
+
+## <a name="turn-on-this-feature-for-your-system"></a>システムでこの機能を有効化する
+
+このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*計画最適化に使用する計画製造オーダー* 機能を有効にします。
 
 ## <a name="planned-production-orders"></a>計画製造オーダー
 

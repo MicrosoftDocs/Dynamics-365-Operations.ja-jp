@@ -2,11 +2,9 @@
 title: リリース済み製品マスターの基本設定の完了
 description: このトピックは、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8c6de9fa9dd49cc32f87a6041a3639198db9f182
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c41e9e3267f72a2452eddfeb15f8f5cba79b0b98
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218612"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820157"
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>リリース済み製品マスターの基本設定の完了
 

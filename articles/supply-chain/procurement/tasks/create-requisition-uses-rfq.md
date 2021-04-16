@@ -1,26 +1,24 @@
 ---
 title: RFQ を使用する要求の作成
 description: このトピックでは、価格および仕入先情報を RFQ プロセスから購買要求へ追加する方法について説明します。
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqLineRelatedDocuments, EcoResCategorySingleLookup, PurchReqWorkflowDropDialog, WorkflowSubmitDialog, WorkflowStatus, WorkflowWorkItemActionDialog, WorkflowUserListLookup, PurchReqCopyRFQ, SysDataAreaSelectLookup, PurchRFQCaseTable, PurchRFQEditLines, PurchRFQReplyTable, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e67dafd02a3b2a38832d8a4f0e9809adffcbb80
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6083afe0e2bfafd337d572863a198330e8cb6cc8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211841"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812137"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>RFQ を使用する要求の作成
 

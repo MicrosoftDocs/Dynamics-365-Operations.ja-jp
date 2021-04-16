@@ -2,11 +2,9 @@
 title: 最初から用意されているレポートを生成および実行
 description: このタスク ガイドを使用して、異なるワークスペースからバックオフィスの最初から用意されているレポート、およびコマースの照会 & 販売レポートを実行します。
 author: ashishmsft
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d3dd941eb4e682e61c8b3d10ef0ccd14239f090c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: db75b09f1ae1f83a88a5e5eaef0c8c1b8eab5901
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232716"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804140"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>最初から用意されているレポートを生成および実行
 

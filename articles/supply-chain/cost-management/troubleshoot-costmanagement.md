@@ -1,12 +1,10 @@
 ---
 title: コスト管理のトラブルシューティング
 description: このトピックでは、コスト管理を実行する際に発生する可能性がある問題の修正方法について説明します。
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc6a48a44a529c82c2a9ee818af95569d9bcb249
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262456"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834292"
 ---
 # <a name="troubleshoot-cost-management"></a>コスト管理のトラブルシューティング
 
@@ -37,7 +35,7 @@ ms.locfileid: "5262456"
 
 小計は、特にレコード シーケンスが変更された場合、結果がエクスポートされるときに問題が発生することがあります。
 
-小計をチェックするには、結果を Microsoft Excel にエクスポートします。 または、Supply Chain Management の中で小計をチェックする場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して、*新しいグリッド コントロール* と *(プレビュー) グリッド内でのグループ化* 機能を有効にします。これにより、グループの小計を、はるかに柔軟な方法で列ごとに表示できます。 詳細については、[グリッド機能](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md) を参照してください。
+小計をチェックするには、結果を Microsoft Excel にエクスポートします。 または、Supply Chain Management の中で小計をチェックする場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、*新しいグリッド コントロール* と *グリッド内でのグループ化* 機能を有効にします。これにより、グループの小計をはるかに柔軟な方法で列ごとに表示できます。 詳細については、[グリッド機能](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md) を参照してください。
 
 ### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>在庫金額ストレージ レポートでは、勘定科目情報はサポートされない
 

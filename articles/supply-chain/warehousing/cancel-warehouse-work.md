@@ -2,11 +2,9 @@
 title: 例外処理の倉庫作業をキャンセルする
 description: このトピックでは、倉庫の監督がブロックされた作業を処理できるようにする、キャンセル作業機能について説明します。
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 21cfa03ed52ffce32267ec0497ae3443937c1018
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 552c83be411ed0be83b15d2541493ff0213fbe58
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233106"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831413"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>例外処理の倉庫作業をキャンセルする
 

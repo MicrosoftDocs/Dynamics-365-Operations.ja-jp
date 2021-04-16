@@ -2,11 +2,9 @@
 title: 積荷の予定の設定
 description: この手順では、積荷に対してドッキング予定を設定し、計画する方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14f3a0ebd82805761db997631b95f1423dc3fea0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 356a939739642dde94adca788020b7decc5345ff
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233730"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809017"
 ---
 # <a name="set-up-an-appointment-for-a-load"></a>積荷の予定の設定
 

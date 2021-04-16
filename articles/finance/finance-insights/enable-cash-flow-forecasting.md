@@ -2,11 +2,9 @@
 title: キャッシュ フロー予測の有効化 (プレビュー)
 description: このトピックでは、財務インサイトでキャッシュ フロー予測機能を有効にする方法について説明します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2de75962f5b8a71c8f7138289078b5c669ae1daa
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f7c06eaeb79c1a2aa319cfa3d2ad8255bf716cd0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250581"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818731"
 ---
 # <a name="enable-cash-flow-forecasting-preview"></a>キャッシュ フロー予測の有効化 (プレビュー)
 
