@@ -2,11 +2,9 @@
 title: かんばん作業と材料の転送
 description: この手順では、かんばん回収作業を実行し、材料を転送することに焦点をあてます。
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
@@ -16,54 +14,54 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df65ea59be29dbe4eaad30558fcff4394737158f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 46009f09f6e843c45f50351963ad01419e24a878
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224933"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831845"
 ---
-# <a name="transfer-materials-with-kanban-jobs"></a><span data-ttu-id="d5ddf-103">かんばん作業と材料の転送</span><span class="sxs-lookup"><span data-stu-id="d5ddf-103">Transfer materials with kanban jobs</span></span>
+# <a name="transfer-materials-with-kanban-jobs"></a><span data-ttu-id="63e13-103">かんばん作業と材料の転送</span><span class="sxs-lookup"><span data-stu-id="63e13-103">Transfer materials with kanban jobs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d5ddf-104">この手順では、かんばん回収作業を実行し、材料を転送することに焦点をあてます。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-104">This procedure focuses on executing a withdrawal kanban job to transfer materials.</span></span> <span data-ttu-id="d5ddf-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="d5ddf-106">この手順は、倉庫作業者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-106">This procedure is intended for the warehouse worker.</span></span>
+<span data-ttu-id="63e13-104">この手順では、かんばん回収作業を実行し、材料を転送することに焦点をあてます。</span><span class="sxs-lookup"><span data-stu-id="63e13-104">This procedure focuses on executing a withdrawal kanban job to transfer materials.</span></span> <span data-ttu-id="63e13-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="63e13-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="63e13-106">この手順は、倉庫作業者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="63e13-106">This procedure is intended for the warehouse worker.</span></span>
 
 
-## <a name="display-transfer-jobs"></a><span data-ttu-id="d5ddf-107">転送ジョブの表示</span><span class="sxs-lookup"><span data-stu-id="d5ddf-107">Display transfer jobs</span></span>
-1. <span data-ttu-id="d5ddf-108">[生産管理] > [かんばん] > [転送ジョブのかんばんボード] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-108">Go to Production control > Kanban > Kanban board for transfer jobs.</span></span>
-2. <span data-ttu-id="d5ddf-109">[フィルター] セクションを展開または折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-109">Expand or collapse the Filters section.</span></span>
-    * <span data-ttu-id="d5ddf-110">[フィルター] セクションで、[生産フロー]、[活動名]、[移動元倉庫と移動元場所]、[移動先倉庫と移動先場所] にフィルターを使用すると、表示するジョブを指定できます。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-110">In the Filters section, you can specify what jobs you want to see by filtering on Production flow, Activity name, From warehouse and location, and To warehouse and location.</span></span>  
-3. <span data-ttu-id="d5ddf-111">[元倉庫] フィールドに、「11」と入力します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-111">In the From warehouse field, type '11'.</span></span>
-4. <span data-ttu-id="d5ddf-112">[移動先場所] フィールドに、「12」と入力します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-112">In the To location field, type '12'.</span></span>
+## <a name="display-transfer-jobs"></a><span data-ttu-id="63e13-107">転送ジョブの表示</span><span class="sxs-lookup"><span data-stu-id="63e13-107">Display transfer jobs</span></span>
+1. <span data-ttu-id="63e13-108">[生産管理] > [かんばん] > [転送ジョブのかんばんボード] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="63e13-108">Go to Production control > Kanban > Kanban board for transfer jobs.</span></span>
+2. <span data-ttu-id="63e13-109">[フィルター] セクションを展開または折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="63e13-109">Expand or collapse the Filters section.</span></span>
+    * <span data-ttu-id="63e13-110">[フィルター] セクションで、[生産フロー]、[活動名]、[移動元倉庫と移動元場所]、[移動先倉庫と移動先場所] にフィルターを使用すると、表示するジョブを指定できます。</span><span class="sxs-lookup"><span data-stu-id="63e13-110">In the Filters section, you can specify what jobs you want to see by filtering on Production flow, Activity name, From warehouse and location, and To warehouse and location.</span></span>  
+3. <span data-ttu-id="63e13-111">[元倉庫] フィールドに、「11」と入力します。</span><span class="sxs-lookup"><span data-stu-id="63e13-111">In the From warehouse field, type '11'.</span></span>
+4. <span data-ttu-id="63e13-112">[移動先場所] フィールドに、「12」と入力します。</span><span class="sxs-lookup"><span data-stu-id="63e13-112">In the To location field, type '12'.</span></span>
 
-## <a name="start-a-transfer-job"></a><span data-ttu-id="d5ddf-113">転送ジョブの開始</span><span class="sxs-lookup"><span data-stu-id="d5ddf-113">Start a transfer job</span></span>
-1. <span data-ttu-id="d5ddf-114">一覧で、選択された行 (ある場合) を選択解除します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-114">In the list, deselect the selected row - if any.</span></span>
-2. <span data-ttu-id="d5ddf-115">一覧で行 4 を選択します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-115">In the list, select row 4.</span></span>
-    * <span data-ttu-id="d5ddf-116">ステータスが [未定] である最初のジョブを選択します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-116">Select the first job with status Not planned.</span></span> <span data-ttu-id="d5ddf-117">これが選択した唯一のジョブであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-117">Make sure this is the only job selected.</span></span>  
-3. <span data-ttu-id="d5ddf-118">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-118">Click Start.</span></span>
-    * <span data-ttu-id="d5ddf-119">アイコンはジョブが開始されることを示します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-119">Notice that an icon indicates that the job is started.</span></span>  
+## <a name="start-a-transfer-job"></a><span data-ttu-id="63e13-113">転送ジョブの開始</span><span class="sxs-lookup"><span data-stu-id="63e13-113">Start a transfer job</span></span>
+1. <span data-ttu-id="63e13-114">一覧で、選択された行 (ある場合) を選択解除します。</span><span class="sxs-lookup"><span data-stu-id="63e13-114">In the list, deselect the selected row - if any.</span></span>
+2. <span data-ttu-id="63e13-115">一覧で行 4 を選択します。</span><span class="sxs-lookup"><span data-stu-id="63e13-115">In the list, select row 4.</span></span>
+    * <span data-ttu-id="63e13-116">ステータスが [未定] である最初のジョブを選択します。</span><span class="sxs-lookup"><span data-stu-id="63e13-116">Select the first job with status Not planned.</span></span> <span data-ttu-id="63e13-117">これが選択した唯一のジョブであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="63e13-117">Make sure this is the only job selected.</span></span>  
+3. <span data-ttu-id="63e13-118">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e13-118">Click Start.</span></span>
+    * <span data-ttu-id="63e13-119">アイコンはジョブが開始されることを示します。</span><span class="sxs-lookup"><span data-stu-id="63e13-119">Notice that an icon indicates that the job is started.</span></span>  
 
-## <a name="select-a-second-transfer-job-and-change-quantity"></a><span data-ttu-id="d5ddf-120">2 番目の配送ジョブを選択して数量を変更する</span><span class="sxs-lookup"><span data-stu-id="d5ddf-120">Select a second transfer job and change quantity</span></span>
-1. <span data-ttu-id="d5ddf-121">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-121">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d5ddf-122">複数のジョブを選択できますが、とりあえず 5 行目を選択します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-122">You can have multiple jobs selected, but for now select row 5.</span></span>  
-2. <span data-ttu-id="d5ddf-123">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-123">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d5ddf-124">以前の手順でジョブ 1 つのみが選択されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-124">Make sure the job in the previous step is the only one selected.</span></span> <span data-ttu-id="d5ddf-125">他のすべてのジョブを選択解除します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-125">Deselect all other jobs.</span></span>  
-3. <span data-ttu-id="d5ddf-126">後で参照するために、ジョブ数量フィールドの値をメモする</span><span class="sxs-lookup"><span data-stu-id="d5ddf-126">Note the value in the Job quantity field to reference later</span></span>
-4. <span data-ttu-id="d5ddf-127">[ジョブ数量] を「30」に設定します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-127">Set Job quantity to '30'.</span></span>
-    * <span data-ttu-id="d5ddf-128">警告です!</span><span class="sxs-lookup"><span data-stu-id="d5ddf-128">Notice the warning!</span></span> <span data-ttu-id="d5ddf-129">30 を転送することはできません。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-129">You are not allowed to transfer 30.</span></span> <span data-ttu-id="d5ddf-130">かんばんルールの設定に従って、元の数量のみを転送できます。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-130">According to the setup of the kanban rule, you can only transfer the original quantity.</span></span>  
-5. <span data-ttu-id="d5ddf-131">ジョブ数量フィールドに以前にメモした値を使用する</span><span class="sxs-lookup"><span data-stu-id="d5ddf-131">Use the value noted previously in the Job quantity field</span></span>
-    * <span data-ttu-id="d5ddf-132">以前の値にジョブ数量を設定します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-132">Set the Job quantity to the previous value.</span></span>  
+## <a name="select-a-second-transfer-job-and-change-quantity"></a><span data-ttu-id="63e13-120">2 番目の配送ジョブを選択して数量を変更する</span><span class="sxs-lookup"><span data-stu-id="63e13-120">Select a second transfer job and change quantity</span></span>
+1. <span data-ttu-id="63e13-121">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="63e13-121">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="63e13-122">複数のジョブを選択できますが、とりあえず 5 行目を選択します。</span><span class="sxs-lookup"><span data-stu-id="63e13-122">You can have multiple jobs selected, but for now select row 5.</span></span>  
+2. <span data-ttu-id="63e13-123">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="63e13-123">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="63e13-124">以前の手順でジョブ 1 つのみが選択されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="63e13-124">Make sure the job in the previous step is the only one selected.</span></span> <span data-ttu-id="63e13-125">他のすべてのジョブを選択解除します。</span><span class="sxs-lookup"><span data-stu-id="63e13-125">Deselect all other jobs.</span></span>  
+3. <span data-ttu-id="63e13-126">後で参照するために、ジョブ数量フィールドの値をメモする</span><span class="sxs-lookup"><span data-stu-id="63e13-126">Note the value in the Job quantity field to reference later</span></span>
+4. <span data-ttu-id="63e13-127">[ジョブ数量] を「30」に設定します。</span><span class="sxs-lookup"><span data-stu-id="63e13-127">Set Job quantity to '30'.</span></span>
+    * <span data-ttu-id="63e13-128">警告です!</span><span class="sxs-lookup"><span data-stu-id="63e13-128">Notice the warning!</span></span> <span data-ttu-id="63e13-129">30 を転送することはできません。</span><span class="sxs-lookup"><span data-stu-id="63e13-129">You are not allowed to transfer 30.</span></span> <span data-ttu-id="63e13-130">かんばんルールの設定に従って、元の数量のみを転送できます。</span><span class="sxs-lookup"><span data-stu-id="63e13-130">According to the setup of the kanban rule, you can only transfer the original quantity.</span></span>  
+5. <span data-ttu-id="63e13-131">ジョブ数量フィールドに以前にメモした値を使用する</span><span class="sxs-lookup"><span data-stu-id="63e13-131">Use the value noted previously in the Job quantity field</span></span>
+    * <span data-ttu-id="63e13-132">以前の値にジョブ数量を設定します。</span><span class="sxs-lookup"><span data-stu-id="63e13-132">Set the Job quantity to the previous value.</span></span>  
 
-## <a name="start-the-second-transfer-job"></a><span data-ttu-id="d5ddf-133">2 番目の配送ジョブの開始</span><span class="sxs-lookup"><span data-stu-id="d5ddf-133">Start the second transfer job</span></span>
-1. <span data-ttu-id="d5ddf-134">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-134">Click Start.</span></span>
-    * <span data-ttu-id="d5ddf-135">これにより、5 行目のジョブの転送が開始されます。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-135">This will start the transfer of the job in row 5.</span></span>  
+## <a name="start-the-second-transfer-job"></a><span data-ttu-id="63e13-133">2 番目の配送ジョブの開始</span><span class="sxs-lookup"><span data-stu-id="63e13-133">Start the second transfer job</span></span>
+1. <span data-ttu-id="63e13-134">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e13-134">Click Start.</span></span>
+    * <span data-ttu-id="63e13-135">これにより、5 行目のジョブの転送が開始されます。</span><span class="sxs-lookup"><span data-stu-id="63e13-135">This will start the transfer of the job in row 5.</span></span>  
 
-## <a name="complete-both-transfer-jobs"></a><span data-ttu-id="d5ddf-136">両方の転送ジョブの完了</span><span class="sxs-lookup"><span data-stu-id="d5ddf-136">Complete both transfer jobs</span></span>
-1. <span data-ttu-id="d5ddf-137">一覧で行 4 を選択します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-137">In the list, select row 4.</span></span>
-    * <span data-ttu-id="d5ddf-138">2 つの転送ジョブが 4 行目、5 行目で選択されました。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-138">Now two transfer jobs are selected on row 4 and row 5.</span></span>  
-2. <span data-ttu-id="d5ddf-139">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-139">Click Complete.</span></span>
-    * <span data-ttu-id="d5ddf-140">これで、両方のジョブの転送が完了します。</span><span class="sxs-lookup"><span data-stu-id="d5ddf-140">This will complete the transfer of both jobs.</span></span>  
+## <a name="complete-both-transfer-jobs"></a><span data-ttu-id="63e13-136">両方の転送ジョブの完了</span><span class="sxs-lookup"><span data-stu-id="63e13-136">Complete both transfer jobs</span></span>
+1. <span data-ttu-id="63e13-137">一覧で行 4 を選択します。</span><span class="sxs-lookup"><span data-stu-id="63e13-137">In the list, select row 4.</span></span>
+    * <span data-ttu-id="63e13-138">2 つの転送ジョブが 4 行目、5 行目で選択されました。</span><span class="sxs-lookup"><span data-stu-id="63e13-138">Now two transfer jobs are selected on row 4 and row 5.</span></span>  
+2. <span data-ttu-id="63e13-139">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e13-139">Click Complete.</span></span>
+    * <span data-ttu-id="63e13-140">これで、両方のジョブの転送が完了します。</span><span class="sxs-lookup"><span data-stu-id="63e13-140">This will complete the transfer of both jobs.</span></span>  
 
 
 

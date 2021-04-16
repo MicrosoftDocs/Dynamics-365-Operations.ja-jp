@@ -2,11 +2,9 @@
 title: 倉庫の在庫レベルの調整 (基本倉庫)
 description: この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLookup
 audience: Application User
@@ -16,48 +14,48 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d91c8901a4ff7df8ae6c3d9b98024db57e29f15b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0bba1df70cd23a29ddffad96a4a581154619dc74
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209542"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834148"
 ---
-# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a><span data-ttu-id="f682d-103">倉庫の在庫レベルの調整 (基本倉庫)</span><span class="sxs-lookup"><span data-stu-id="f682d-103">Adjust stock levels in the warehouse (basic warehousing)</span></span>
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a><span data-ttu-id="34e66-103">倉庫の在庫レベルの調整 (基本倉庫)</span><span class="sxs-lookup"><span data-stu-id="34e66-103">Adjust stock levels in the warehouse (basic warehousing)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f682d-104">この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="f682d-104">This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse.</span></span> <span data-ttu-id="f682d-105">これを開始する前に、在庫調整用の在庫仕訳帳名を設定してある必要があります。</span><span class="sxs-lookup"><span data-stu-id="f682d-105">You need to have an inventory journal name set up for inventory adjustments before you start this.</span></span> <span data-ttu-id="f682d-106">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="f682d-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="f682d-107">通常、これらのタスクを実施するのは、倉庫の従業員です。</span><span class="sxs-lookup"><span data-stu-id="f682d-107">These tasks would normally be carried out by a warehouse employee.</span></span>
+<span data-ttu-id="34e66-104">この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="34e66-104">This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse.</span></span> <span data-ttu-id="34e66-105">これを開始する前に、在庫調整用の在庫仕訳帳名を設定してある必要があります。</span><span class="sxs-lookup"><span data-stu-id="34e66-105">You need to have an inventory journal name set up for inventory adjustments before you start this.</span></span> <span data-ttu-id="34e66-106">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="34e66-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="34e66-107">通常、これらのタスクを実施するのは、倉庫の従業員です。</span><span class="sxs-lookup"><span data-stu-id="34e66-107">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-adjustment-journal"></a><span data-ttu-id="f682d-108">在庫調整仕訳帳の作成</span><span class="sxs-lookup"><span data-stu-id="f682d-108">Create an inventory adjustment journal</span></span>
-1. <span data-ttu-id="f682d-109">[在庫管理] > [仕訳入力] > [品目] > [在庫調整] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f682d-109">Go to Inventory management > Journal entries > Items > Inventory adjustment.</span></span>
-2. <span data-ttu-id="f682d-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f682d-110">Click New.</span></span>
-3. <span data-ttu-id="f682d-111">[名前] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f682d-111">In the Name field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="f682d-112">一覧で、使用する在庫調整仕訳帳の名前をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f682d-112">In the list, click on the inventory adjustment journal name you want to use.</span></span>
-    * <span data-ttu-id="f682d-113">他の一部のフィールドは、選択した在庫調整仕訳帳の名前の設定に基づいて設定されます。</span><span class="sxs-lookup"><span data-stu-id="f682d-113">Some other fields will be populated based on the setup of the inventory adjustment journal name you select.</span></span>  
-5. <span data-ttu-id="f682d-114">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f682d-114">Click OK.</span></span>
+## <a name="create-an-inventory-adjustment-journal"></a><span data-ttu-id="34e66-108">在庫調整仕訳帳の作成</span><span class="sxs-lookup"><span data-stu-id="34e66-108">Create an inventory adjustment journal</span></span>
+1. <span data-ttu-id="34e66-109">[在庫管理] > [仕訳入力] > [品目] > [在庫調整] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="34e66-109">Go to Inventory management > Journal entries > Items > Inventory adjustment.</span></span>
+2. <span data-ttu-id="34e66-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e66-110">Click New.</span></span>
+3. <span data-ttu-id="34e66-111">[名前] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="34e66-111">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="34e66-112">一覧で、使用する在庫調整仕訳帳の名前をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e66-112">In the list, click on the inventory adjustment journal name you want to use.</span></span>
+    * <span data-ttu-id="34e66-113">他の一部のフィールドは、選択した在庫調整仕訳帳の名前の設定に基づいて設定されます。</span><span class="sxs-lookup"><span data-stu-id="34e66-113">Some other fields will be populated based on the setup of the inventory adjustment journal name you select.</span></span>  
+5. <span data-ttu-id="34e66-114">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e66-114">Click OK.</span></span>
 
-## <a name="create-journal-lines"></a><span data-ttu-id="f682d-115">仕訳帳明細行の作成</span><span class="sxs-lookup"><span data-stu-id="f682d-115">Create journal lines</span></span>
-1. <span data-ttu-id="f682d-116">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f682d-116">Click New.</span></span>
-2. <span data-ttu-id="f682d-117">一覧で、品目番号フィールドをマークします。</span><span class="sxs-lookup"><span data-stu-id="f682d-117">In the list, mark the item number field.</span></span>
-3. <span data-ttu-id="f682d-118">[品目番号] フィールドで、品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="f682d-118">In the Item number field, Select an item.</span></span> <span data-ttu-id="f682d-119">デモ データの会社 USMF を使用する場合は、「D0001」を入力します。</span><span class="sxs-lookup"><span data-stu-id="f682d-119">If you are using demo data company USMF, type 'D0001'.</span></span>
-4. <span data-ttu-id="f682d-120">[サイト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f682d-120">In the Site field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="f682d-121">一覧でサイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="f682d-121">In the list, select a site.</span></span>
-6. <span data-ttu-id="f682d-122">[倉庫] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f682d-122">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="f682d-123">一覧で倉庫を選択します。</span><span class="sxs-lookup"><span data-stu-id="f682d-123">In the list, select a warehouse.</span></span>
-    * <span data-ttu-id="f682d-124">必須分析コードとして場所を持つ品目を選択した場合は、ここで場所を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f682d-124">If you have selected an item with Location as a mandatory dimension, you would have to specify the location here.</span></span>  
-8. <span data-ttu-id="f682d-125">[数量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f682d-125">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="f682d-126">原価価格のフィールドには、在庫入庫用に単位あたりの原価を指定します。</span><span class="sxs-lookup"><span data-stu-id="f682d-126">The cost price field specifies the cost per unit for inventory receipts.</span></span> <span data-ttu-id="f682d-127">品目番号に対して原価が指定されていない場合、または原価を手動で変更する場合は、ここでそれを行います。</span><span class="sxs-lookup"><span data-stu-id="f682d-127">If the cost is not specified for the item number or if you wanted to change it manually, you would do this here.</span></span>  
+## <a name="create-journal-lines"></a><span data-ttu-id="34e66-115">仕訳帳明細行の作成</span><span class="sxs-lookup"><span data-stu-id="34e66-115">Create journal lines</span></span>
+1. <span data-ttu-id="34e66-116">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e66-116">Click New.</span></span>
+2. <span data-ttu-id="34e66-117">一覧で、品目番号フィールドをマークします。</span><span class="sxs-lookup"><span data-stu-id="34e66-117">In the list, mark the item number field.</span></span>
+3. <span data-ttu-id="34e66-118">[品目番号] フィールドで、品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="34e66-118">In the Item number field, Select an item.</span></span> <span data-ttu-id="34e66-119">デモ データの会社 USMF を使用する場合は、「D0001」を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e66-119">If you are using demo data company USMF, type 'D0001'.</span></span>
+4. <span data-ttu-id="34e66-120">[サイト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="34e66-120">In the Site field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="34e66-121">一覧でサイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="34e66-121">In the list, select a site.</span></span>
+6. <span data-ttu-id="34e66-122">[倉庫] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="34e66-122">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="34e66-123">一覧で倉庫を選択します。</span><span class="sxs-lookup"><span data-stu-id="34e66-123">In the list, select a warehouse.</span></span>
+    * <span data-ttu-id="34e66-124">必須分析コードとして場所を持つ品目を選択した場合は、ここで場所を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="34e66-124">If you have selected an item with Location as a mandatory dimension, you would have to specify the location here.</span></span>  
+8. <span data-ttu-id="34e66-125">[数量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e66-125">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="34e66-126">原価価格のフィールドには、在庫入庫用に単位あたりの原価を指定します。</span><span class="sxs-lookup"><span data-stu-id="34e66-126">The cost price field specifies the cost per unit for inventory receipts.</span></span> <span data-ttu-id="34e66-127">品目番号に対して原価が指定されていない場合、または原価を手動で変更する場合は、ここでそれを行います。</span><span class="sxs-lookup"><span data-stu-id="34e66-127">If the cost is not specified for the item number or if you wanted to change it manually, you would do this here.</span></span>  
 
-## <a name="validate-and-post-the-inventory-adjustment-journal"></a><span data-ttu-id="f682d-128">在庫調整仕訳帳の検証および転記</span><span class="sxs-lookup"><span data-stu-id="f682d-128">Validate and post the inventory adjustment journal</span></span>
-1. <span data-ttu-id="f682d-129">[検証] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f682d-129">Click Validate.</span></span>
-2. <span data-ttu-id="f682d-130">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f682d-130">Click OK.</span></span>
-3. <span data-ttu-id="f682d-131">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f682d-131">Click Post.</span></span>
-    * <span data-ttu-id="f682d-132">この種の仕訳帳を転記すると、在庫入庫または在庫出庫が転記され、在庫レベルおよび値が変更され、元帳トランザクションが生成されます。</span><span class="sxs-lookup"><span data-stu-id="f682d-132">When you post this kind of journal, an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.</span></span>  
-4. <span data-ttu-id="f682d-133">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f682d-133">Click OK.</span></span>
-5. <span data-ttu-id="f682d-134">フォームを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f682d-134">Close the form.</span></span>
-6. <span data-ttu-id="f682d-135">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f682d-135">Close the page.</span></span>
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a><span data-ttu-id="34e66-128">在庫調整仕訳帳の検証および転記</span><span class="sxs-lookup"><span data-stu-id="34e66-128">Validate and post the inventory adjustment journal</span></span>
+1. <span data-ttu-id="34e66-129">[検証] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e66-129">Click Validate.</span></span>
+2. <span data-ttu-id="34e66-130">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e66-130">Click OK.</span></span>
+3. <span data-ttu-id="34e66-131">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e66-131">Click Post.</span></span>
+    * <span data-ttu-id="34e66-132">この種の仕訳帳を転記すると、在庫入庫または在庫出庫が転記され、在庫レベルおよび値が変更され、元帳トランザクションが生成されます。</span><span class="sxs-lookup"><span data-stu-id="34e66-132">When you post this kind of journal, an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.</span></span>  
+4. <span data-ttu-id="34e66-133">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e66-133">Click OK.</span></span>
+5. <span data-ttu-id="34e66-134">フォームを閉じます。</span><span class="sxs-lookup"><span data-stu-id="34e66-134">Close the form.</span></span>
+6. <span data-ttu-id="34e66-135">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="34e66-135">Close the page.</span></span>
 
 
 
