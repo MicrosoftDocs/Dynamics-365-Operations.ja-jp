@@ -2,11 +2,9 @@
 title: 販売注文の Sales と Supply Chain Management の間の直接同期
 description: このトピックでは、Dynamics 365 Sales と Dynamics 365 Supply Chain Management の間での販売注文の直接同期の実行に使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d30ead63bfba5dc198bd46dfaffe444dde723baa
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0e26c63635179dc4c145f8d08e85fd110d9caac
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5261024"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817776"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>販売注文の Sales と Supply Chain Management の間の直接同期
 

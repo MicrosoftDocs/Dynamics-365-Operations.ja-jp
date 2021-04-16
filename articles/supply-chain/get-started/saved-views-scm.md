@@ -2,11 +2,9 @@
 title: Supply Chain Management の標準保存済みビュー
 description: このトピックでは、使用できる標準の保存済みビューと、それらを有効にしてカスタマイズする方法について説明します。
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500697"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821252"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Management の標準保存済みビュー
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management には、必要に応じて有効および使用できる保存済みビューがいくつか含まれています。 一部の標準保存済みビューの中には、特定のロールやタスク ("品質管理" や "受信" など) に対して最適化された名前が付けられたものがあります。 その他は、Microsoft の使用状況統計によって最も頻繁に使用されるフィールドと設定のみを含む最適化も行っています。 一般に、これらの保存済みビューは *簡略化* ビューと呼ばれます。 このトピックでは、使用できる標準の保存済みビューと、それらを有効にしてカスタマイズする方法について説明します。
 
@@ -82,14 +79,16 @@ Microsoft Dynamics 365 Supply Chain Management には、必要に応じて有効
 
 ## <a name="saved-views-for-the-production-control-module"></a>調達制御モジュールに保存されるビュー
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 次の表では、調達制御モジュールで使用できる保存済みビューについて説明します。
 
 | ページ | ビュー名 | 説明の表示 | 機能名 |
 |---|---|---|---|
-| 調達オーダー BOM ページ | 簡易 | この簡略化ビューには、最も頻繁に使用されるフィールドだけが含まれます。 これにより、より簡単な概要と合理化された作業プロセスを提供できます。 | 製造制御の保存済みビュー |
-| 製造オーダーの詳細ページ | 簡易 | この簡略化ビューには、最も頻繁に使用されるフィールドだけが含まれます。 これにより、より簡単な概要と合理化された作業プロセスを提供できます。 | 製造制御の保存済みビュー |
-| 製造オーダー ピッキング リスト ページ | 簡易 | この簡略化ビューには、最も頻繁に使用されるフィールドだけが含まれます。 これにより、より簡単な概要と合理化された作業プロセスを提供できます。 | 製造制御の保存済みビュー |
-| 製造オーダーのリスト ページ | 簡易 | この簡略化ビューには、最も頻繁に使用されるフィールドだけが含まれます。 これにより、より簡単な概要と合理化された作業プロセスを提供できます。 | 製造制御の保存済みビュー |
+| 調達オーダー BOM ページ | 簡易 | この簡略化ビューには、最も頻繁に使用されるフィールドだけが含まれます。 これにより、より簡単な概要と合理化された作業プロセスを提供できます。 | (プレビュー) 生産管理用に保存されているビュー |
+| 製造オーダーの詳細ページ | 簡易 | この簡略化ビューには、最も頻繁に使用されるフィールドだけが含まれます。 これにより、より簡単な概要と合理化された作業プロセスを提供できます。 | (プレビュー) 生産管理用に保存されているビュー |
+| 製造オーダー ピッキング リスト ページ | 簡易 | この簡略化ビューには、最も頻繁に使用されるフィールドだけが含まれます。 これにより、より簡単な概要と合理化された作業プロセスを提供できます。 | (プレビュー) 生産管理用に保存されているビュー |
+| 製造オーダーのリスト ページ | 簡易 | この簡略化ビューには、最も頻繁に使用されるフィールドだけが含まれます。 これにより、より簡単な概要と合理化された作業プロセスを提供できます。 | (プレビュー) 生産管理用に保存されているビュー |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Sales およびソーシング モジュール用に保存済みビュー
 

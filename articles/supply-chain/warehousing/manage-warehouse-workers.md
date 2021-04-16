@@ -1,12 +1,10 @@
 ---
 title: 倉庫作業者の管理
-description: この記事では、倉庫の従業員によって実行される作業の管理と監視に、倉庫アプリを使用する方法について説明します。
+description: この記事では、倉庫管理モバイル アプリを使用して、倉庫で働く従業員の作業を管理・監視する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18dbcf32f85bca51bf48e5ed8c64fedc99f66082
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f5676879f631fce9c9c674250a07723131906fa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216838"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818971"
 ---
 # <a name="manage-warehouse-workers"></a>倉庫作業者の管理
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、倉庫の従業員によって実行される作業の管理と監視に、倉庫アプリを使用する方法について説明します。
+この記事では、倉庫管理モバイル アプリを使用して、倉庫で働く従業員の作業を管理・監視する方法について説明します。
 
 倉庫管理で機能を使用すると、すべての倉庫作業員の工程は *作業* 呼ばれます。 ピッキング、移動、および手持在庫の棚卸などの作業は、モバイル デバイスを使用して記録されます。 倉庫作業者が作業を実行する前に、作業者は人事管理の作業者と関連付けられる必要があります。 各 **作業者** のアカウントは、関連付けられる複数の倉庫のユーザーが使用できます。 これらの作業ユーザーは異なる倉庫で、異なるレベルのさまざまなモバイル デバイス メニューへのアクセスを使用できます。 倉庫の作業ユーザーを、選択した作業者に対しての複数のログオンとして考えることができます。 各作業ユーザーには既定の倉庫があり、作業ユーザーに利用可能なメニュー項目によって特定のワークフローが公開されます。 
 

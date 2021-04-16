@@ -2,11 +2,9 @@
 title: 一般会計への補助元帳の転送
 description: このトピックでは、一般会計の補助元帳の転送プロセスに関する Microsoft Dynamics 365 Finance での機能について説明します。
 author: roschlom
-manager: AnnBe
 ms.date: 09/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: aec68b9389ee2ef28e8119087392ac5f18ec5dd2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d43b96176c51d12c35383da75bf65a1ad92f84c6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204788"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815287"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>一般会計への補助元帳の転送
 

@@ -2,11 +2,9 @@
 title: 勘定構造のコンフィギュレーション
 description: このトピックでは、勘定構造と財務分析コードについて説明します。
 author: aprilolson
-manager: AnnBe
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9c7fd8fcad7de3ec8b4b23d5c5e6456ae3ef372
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7565dac61546ba87f5bf4605d3c6beceef7ac980
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212352"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821892"
 ---
 # <a name="configure-account-structures"></a>勘定構造のコンフィギュレーション
 

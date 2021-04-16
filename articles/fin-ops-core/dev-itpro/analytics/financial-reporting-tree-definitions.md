@@ -1,27 +1,26 @@
 ---
 title: 財務諸表のレポート ツリー定義
 description: この記事では、レポート ツリー定義について説明します。 レポート ツリー定義は、組織の構造を定義するレポート コンポーネントです。
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 367df467d20fb7c60821c9de1f86758196f4faf3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568778"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819941"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>財務諸表のレポート ツリー定義
 
@@ -74,7 +73,7 @@ ms.locfileid: "5568778"
     | [含む / 文字の位置]       | このセクションでは、財務データで定義された分析コードを一覧表示し、各分析コードに対して、最も長い定義済の値の文字数を表示します。 レポート ツリー階層に分析コードを含める場合は、その分析コードのチェック ボックスをオンにします。 |
     | 区分階層および範囲     | このセクションでは、分析コード階層を表示します。 リストの分析コードを移動して、レポートの順序を変更できます。 **移動元分析コード** と **移動先分析コード** フィールドで各分析コード内の値の範囲を指定できます。 範囲を指定しない場合、すべての分析コード値がレポート ツリーに挿入されます。<blockquote>[!NOTE] 複数の分析コードを使用している場合、転記された分析コードの組み合わせのみが結果で返されます。</blockquote> |
 
-    **分析コードからレポート単位の挿入** ダイアログ ボックスの例を示すスクリーン ショットについては、この記事で後述する "分析コードからレポート単位を挿入ダイアログ ボックスの例" セクションを参照してください。
+    **分析コードからレポート単位の挿入** ダイアログ ボックスの例を示す図については、この記事で後述する "分析コードからレポート単位を挿入ダイアログ ボックスの例" セクションを参照してください。
 
 5. (たとえば、1 つの区分を 2 つの短い区分に分けるなど) 追加の区分を作成するには、**文字の位置** フィールドで正しい場所をクリックし、**区分を分割** をクリックします。
 6. 2 つの区分を 1 つの区分に結合するには、区分ボックスのどちらかをクリックして結合させ、**区分の結合** をクリックします。
@@ -186,23 +185,23 @@ ms.locfileid: "5568778"
 - 最下位レベルの詳細レポート単位 (国内販売、自動販売、クライアント サービス、および工程) は、財務データの部門を表します。 これらのレポート単位は、ダイアグラムの影付き領域にあります。
 - 上位レベルの集計単位は、詳細単位から情報を集計します。
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso 集計レポート構造 - 例 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>[レポート単位の構造 – 例 2]
 
 次の図では、レポート ツリーに業務機能で分割された組織構造が含まれています。
 
-[![contoso 全単位の集計](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso 集計レポート構造 - 例 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>[分析コードからレポート単位を挿入] ダイアログ ボックスの例
 
 次の図は、**分析コードからレポート単位を挿入** ダイアログ ボックスの例を示しています。 この例では、事業単位、原価部門、および部門の組み合わせの結果を返します。
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![レポート ユニットの挿入](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 最終的なレポート ツリー定義は事業単位、原価部門、部門別に並べ替えられます。 5 番目のレポート単位の分析コードは、**事業単位 = \[001\]、原価部門 =\[\]、部門 = \[022\]** で、事業単位 001 と部門 022 に対して固有のアカウントのレポート単位を識別します。
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![レポート ツリーの図](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>データ ロールアップの例
 
@@ -210,15 +209,15 @@ ms.locfileid: "5568778"
 
 #### <a name="example-1"></a>例 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![複数会社のロールアップ](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>例 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![会社間部署ロールアップ](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[財務報告](financial-reporting-intro.md)
+[財務諸表](financial-reporting-intro.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

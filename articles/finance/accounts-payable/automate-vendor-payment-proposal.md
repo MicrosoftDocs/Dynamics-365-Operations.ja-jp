@@ -2,11 +2,9 @@
 title: 仕入先の支払提案を自動化する
 description: このトピックでは、定期的なスケジュールで仕入先に支払いを行っている組織が、仕入先の支払い提案を作成するプロセスを自動化する方法について説明します。
 author: kweekley
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: d6a53b2cb48856083f3b2e40fca8adb92f4e5113
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250653"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820814"
 ---
 # <a name="automate-vendor-payment-proposals"></a>仕入先の支払提案を自動化する
 

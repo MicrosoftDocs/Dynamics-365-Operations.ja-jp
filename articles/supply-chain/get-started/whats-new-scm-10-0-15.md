@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Management 10.0.15 (2021 年 1 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.15 の新機能または変更された機能について説明します。
 author: kamaybac
-manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1d2aa12e77080b530847bfdbde4dbe3a67431c3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e550f310fe3ec0aaee9c16f3edccd775921a64be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258902"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821156"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Dynamics 365 Supply Chain Management 10.0.15 (2021 年 1 月) の新機能および変更された機能
 
@@ -35,7 +33,7 @@ ms.locfileid: "5258902"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。 [リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
+このリリースでは次の機能が含まれています。 [リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
 
 - 製造と倉庫の実行ワークロードを使用したクラウドおよびエッジ スケールのユニット管理<br> - 詳細については、[製造および倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット](../cloud-edge/cloud-edge-landing-page.md)を参照してください。
 

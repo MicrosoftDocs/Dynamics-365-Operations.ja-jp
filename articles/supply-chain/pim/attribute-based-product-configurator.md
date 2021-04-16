@@ -2,11 +2,9 @@
 title: 制約ベースの製品コンフィギュレーションの属性ベースの販売価格
 description: このトピックでは、物理的な部品表と工順ではなく、コンポーネントと属性に基づく販売価格の販売価格モデルを作成する方法について説明します。
 author: sorenva
-manager: tfehr
 ms.date: 10/2/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 65ab96c71fa44d6acad0bcb5cd7a65321109b93d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c42a11055e98da59e0428a156ca127529589abab
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5221970"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812933"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>制約ベースの製品コンフィギュレーションの属性ベースの販売価格
 

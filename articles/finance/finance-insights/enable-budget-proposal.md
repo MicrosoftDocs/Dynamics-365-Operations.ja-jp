@@ -2,11 +2,9 @@
 title: 予算案の有効化 (プレビュー)
 description: このトピックでは、財務インサイトの予算案機能を有効にする方法について説明します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a2060d082ed55e3b6fac506898916942ccc9db7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7e90a1a2f2a8e7808f03ce9a6ee58c027bd48d8d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208488"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818707"
 ---
 # <a name="enable-budget-proposals-preview"></a>予算案の有効化 (プレビュー)
 

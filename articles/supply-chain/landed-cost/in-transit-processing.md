@@ -2,7 +2,6 @@
 title: 輸送中の商品の処理
 description: このトピックでは、輸送中の商品注文の使用方法について説明します。 輸送中の商品処理を使用するよう注文または航海が設定されている場合、商品は倉庫で入庫して消費される前に請求できます。
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500407"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823412"
 ---
 # <a name="goods-in-transit-processing"></a>輸送中の商品の処理
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、輸送中の商品注文の使用方法について説明します。 このタイプの注文は、**陸揚原価** モジュールによってのみ使用されます。 輸送中の商品処理を使用するよう注文または航海が設定されている場合、商品が倉庫に入庫されるまで待ってから請求する必要はありません。 代わりに、商品が仕入先の倉庫または出港地から出る際に請求書が作られ、航海が開始すると財務費用が認識されます。 この機能により、商品は出荷港から離れるときに組織の資産になる場合が多いため、在庫の所有権を正しく行使できます。
 
@@ -135,7 +133,7 @@ ms.locfileid: "5500407"
 
 これらのプロセスの構成設定は、[発注書の受領およびプットアウェイ作業作成プロセス](https://technet.microsoft.com/library/dn553216.aspx)の設定に似ています。 ただし、 *輸送中の商品品目の入庫およびプットアウェイ* プロセスでは、次のフィールドも追加されます。
 
-- **出荷コンテナー完了の有効化** – このオプションが *はい* に設定されている場合、プットアウェイ作業が完了すると、倉庫アプリに **出荷コンテナー完了** という名前の追加オプションが提供されます 。 このオプションを選択すると、作業者はコンテナーが完成したことを確認するように求められます。 その時点で、すべての短期入庫は取引中として処理されます。
+- **出荷コンテナー完了の有効化** – このオプションが *はい* に設定されている場合、プットアウェイ作業が完了すると、倉庫管理モバイル アプリに **出荷コンテナー完了** という名前の追加オプションが提供されます 。 このオプションを選択すると、作業者はコンテナーが完成したことを確認するように求められます。 その時点で、すべての短期入庫は取引中として処理されます。
 
 ### <a name="location-directives"></a>場所のディレクティブ
 

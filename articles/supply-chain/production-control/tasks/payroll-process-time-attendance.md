@@ -2,11 +2,9 @@
 title: 時刻と出勤の給与プロセスの有効化
 description: この手順は、時刻と出勤の給与プロセスを有効にする方法を示します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLine, HcmWorker
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72b925feb8f784c257656dd93b48c9c0cc66da5e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 411b5c3f1a486a30ec7d8d2c3896dacbf97b39ed
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214917"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821035"
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>時刻と出勤の給与プロセスの有効化
 

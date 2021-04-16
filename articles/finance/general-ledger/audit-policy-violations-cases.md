@@ -2,11 +2,9 @@
 title: 監査ポリシー違反およびケース
 description: 記事は、監査ポリシー ルール違反からどのように監査ケースが生成されるかを説明します。 また、監査ポリシーがドキュメントの選択の日付範囲を使用する、さまざまな方法に関する情報が含まれます。
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 170a27c55f808e11fba047186209a2b126b6a87a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b4c7b9426cc98f62cd7a62b841c0f90c7c57889d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228842"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821964"
 ---
 # <a name="audit-policy-violations-and-cases"></a>監査ポリシー違反およびケース
 

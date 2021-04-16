@@ -2,11 +2,9 @@
 title: 機械学習モデルの結果 (プレビュー版)
 description: このトピックでは、機械学習 (ML) モデルの混乱マトリックス、分類に関する問題、および正確性について説明します。 ML の予測結果の正確性について理解を深めることを目的としています。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 06/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: dcdc6d501f09b639eb0d7504e0f760a66bb3dbc7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208536"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818755"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>機械学習モデルの結果 (プレビュー版)
 

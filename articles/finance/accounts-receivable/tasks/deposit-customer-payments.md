@@ -2,11 +2,9 @@
 title: 顧客支払の預金
 description: 顧客支払を預金します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7357683e46df04c3dedd7e22607748512c9de94a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7bf44570a0eaceab94765b100bdd8b4d507a0f54
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220254"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822374"
 ---
 # <a name="deposit-customer-payments"></a>顧客支払の預金
 

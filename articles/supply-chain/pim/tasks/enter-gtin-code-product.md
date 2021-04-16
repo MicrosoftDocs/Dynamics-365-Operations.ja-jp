@@ -2,11 +2,9 @@
 title: 製品の GTIN コードの入力
 description: GTIN コードは、GS1 組織によって割り当てられます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemGTIN, UnitOfMeasureLookup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0fc95d34125f3e1d9b07339d4134a4a974b3fcbf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 18df36fe2d147ce395c113eacaf69d8016b38303
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216036"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818064"
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>製品の GTIN コードの入力
 

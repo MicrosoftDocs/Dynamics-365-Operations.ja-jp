@@ -2,11 +2,9 @@
 title: 損金の照会
 description: このタスクでは、損金のクエリを実行する方法について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetDepPreTaxDeductionDetails_JP
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 94b3270fb36175d37e6cd97b9cb442f9fe665527
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b5ae96d281274140b9cf864d4ef64a325eae396b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205484"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823586"
 ---
 # <a name="inquiry-on-deductible-expenses"></a>損金の照会
 

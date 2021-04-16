@@ -2,11 +2,9 @@
 title: 生産現場の実行インターフェースを実行するデバイスを設定する
 description: 生産現場の実行インターフェイスは、生産現場のすべてのデバイスに対して設定されます。 通常、会社では、デバイスのサービスの目的に応じて、各デバイスの設定を変えることができます。 たとえば、ある会社では、作業者が出勤時間および退勤時間を記録する受付エリアに 1 台のデバイスがあり、作業者が作業を管理する作業現場に別のデバイスがあるとします。
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 641273dd3ae189853326bf7af7ceb06d48465b5c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3ee7f0af9f390e1dceac9dc49ae2b7f5fa7fbea8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500553"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814709"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを実行するデバイスを設定する
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 生産現場の実行インターフェイスは、生産現場のすべてのデバイスに対して設定されます。 通常、会社では、デバイスのサービスの目的に応じて、各デバイスの設定を変えることができます。 たとえば、ある会社では、作業者が出勤時間および退勤時間を記録する受付エリアに 1 台のデバイスがあり、作業者が作業を管理する作業現場に別のデバイスがあるとします。
 

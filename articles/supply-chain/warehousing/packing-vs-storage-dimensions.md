@@ -2,11 +2,9 @@
 title: 梱包とストレージへのさまざまな分析コードの設定
 description: このトピックでは、指定した各分析コードを使用するプロセス (梱包、ストレージ、または入れ子になった梱包) を指定する方法を示します。
 author: mirzaab
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: e997f8bccde7856303d8b3c6407143598ccc6030
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501297"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818923"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>梱包とストレージへのさまざまな分析コードの設定
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 一部の品目は、複数の異なるプロセスで物理的な分析コードをそれぞれ異なる方法で追跡する必要があるなどの方法で梱包または格納されます。 *梱包製品分析コード* 機能を使用すると、製品ごとに 1 つ以上のタイプの分析コードを設定できます。 各分析コード タイプは、一連の物理的測定 (重量、幅、奥行、高さ) を提供し、これらの物理的測定値が適用されるプロセスを設定します。 この機能が有効な場合、システムは次のタイプの分析コードをサポートします。
 

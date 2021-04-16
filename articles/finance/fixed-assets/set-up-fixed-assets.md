@@ -2,11 +2,9 @@
 title: 固定資産の設定
 description: このトピックは、固定資産モジュールの設定の概要を示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc50eac6a6210bd0af55b0dfd3c8ae22ac583619
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ff025984307f979ce98947f2225971041ebbdbae
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210122"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818539"
 ---
 # <a name="set-up-fixed-assets"></a>固定資産の設定
 
