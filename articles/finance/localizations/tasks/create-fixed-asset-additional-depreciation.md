@@ -2,11 +2,9 @@
 title: 割増償却を使用する固定資産の作成
 description: 日本では、固定資産は特定の条件下で増加償却額を転記することができます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b79aeb8bfa8c59c80f2c0d7b3721c95d0960276b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b6d57050e461761724a24072b71326c2b1160503
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260168"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823599"
 ---
 # <a name="create-a-fixed-asset-with-additional-depreciation"></a>割増償却を使用する固定資産の作成
 

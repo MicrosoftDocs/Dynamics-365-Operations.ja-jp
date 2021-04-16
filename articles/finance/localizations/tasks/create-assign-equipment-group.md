@@ -2,11 +2,9 @@
 title: 設備グループの作成および割り当て
 description: この手順では、設備のグループの作成方法と設備グループの固定資産へのコンフィギュレーション方法について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetAcceleratedDepEquipmentGroup_JP, AssetTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e3eeb51cd27568a46c51760c7333d6dcf422547f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2753b3d8e5c7861b16aaea73f541e56a250eb998
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224616"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821853"
 ---
 # <a name="create-and-assign-an-equipment-group"></a>設備グループの作成および割り当て
 

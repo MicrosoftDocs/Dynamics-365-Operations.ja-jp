@@ -2,11 +2,9 @@
 title: 元帳決済
 description: このトピックでは、元帳決済 ページを使用して元帳トランザクションを決済する、および決済を取り消す方法について説明します。
 author: mikefalkner
-manager: aolson
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 7704c38f878784647b44e81922b7679c0fedfbb2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b9279c264294d95c2a06f9614189b26ce8f78566
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248882"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826525"
 ---
 # <a name="ledger-settlements"></a>元帳決済
 

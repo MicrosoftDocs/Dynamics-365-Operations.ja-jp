@@ -2,11 +2,9 @@
 title: 償却率表の入力および減価償却プロファイルへの関連付け
 description: 日本では、固定資産減価償却率は政府機関によって発表されます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepRate_JP, AssetDepreciationProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 513776560037851922e4179be4092ee7cadc0349
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8518e11a8be809fc58a5c79c47e6ce8c64b32c7b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228021"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822613"
 ---
 # <a name="enter-depreciation-rate-schedule-and-associate-to-depreciation-profile"></a>償却率表の入力および減価償却プロファイルへの関連付け
 

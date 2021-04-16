@@ -2,11 +2,9 @@
 title: 測定単位の管理
 description: この手順は、測定単位の定義方法、単位の翻訳の提供方法とその説明、および関連する単位の変換ルールの定義方法を示します。
 author: sorenva
-manager: tfehr
 ms.date: 07/08/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea89c00bc201f721617fe4f904b660da29e97fc2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 966e189e7395bec15d2c62735c6df3df2ab34b8a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260578"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817968"
 ---
 # <a name="manage-unit-of-measure"></a>測定単位の管理
 

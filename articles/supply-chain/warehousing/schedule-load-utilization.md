@@ -2,11 +2,9 @@
 title: 貨物使用率のスケジュール設定
 description: このトピックでは、倉庫の負荷を設定およびスケジュールする方法について説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSSpaceUtilSetup
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f88dc44b036f6d5535f7e83693a387149f94f37d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f4d259fd6c27ac96475c49c431e347ca0c03a9e7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239257"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817320"
 ---
 # <a name="schedule-load-utilization"></a>貨物使用率のスケジュール設定
 

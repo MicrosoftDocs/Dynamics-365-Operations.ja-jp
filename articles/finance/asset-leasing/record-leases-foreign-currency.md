@@ -2,11 +2,9 @@
 title: 外貨でのリースの記録
 description: このトピックでは、会計またはレポート通貨以外の通貨でのリースの記録方法について説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd4d04ae7e89b8ce41ed745c643b8e736484789d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7f1f9153d627eba4c3c79a764cffec6a2f008818
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241493"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819749"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>外貨でのリースの記録
 

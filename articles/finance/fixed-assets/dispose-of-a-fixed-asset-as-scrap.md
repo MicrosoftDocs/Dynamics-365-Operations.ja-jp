@@ -2,11 +2,9 @@
 title: 固定資産の仕損としての処分
 description: このトピックでは、仕損として処分された固定資産のトランザクションを除去するプロセスについて説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 20f5fe0f8f2654df5027c363ebf5922f8344d928
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 413847d350ca6b2bdd6153a598ea5b3f34a33818
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241125"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826278"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>固定資産の仕損としての処分
 

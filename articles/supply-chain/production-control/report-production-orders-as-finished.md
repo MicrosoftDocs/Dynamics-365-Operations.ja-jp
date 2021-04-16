@@ -2,11 +2,9 @@
 title: 製造オーダーの完了済としての報告
 description: 完了レポートは生産ステージです。 この段階では、完成品は製造オーダーから在庫へ報告され、移動されます。
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute, ProdParmReportFinished, ProdRouteOprOverview
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40b2856e2495d2139664b75f747f023334a80d8c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 533e3e5b3187f45a5f873bd6951dd0df89a88210
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235463"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819355"
 ---
 # <a name="report-production-orders-as-finished"></a>製造オーダーの完了済としての報告
 

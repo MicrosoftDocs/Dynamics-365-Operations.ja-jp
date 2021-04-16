@@ -2,7 +2,6 @@
 title: 印刷された顧客請求書にハッシュ番号を付けてアーカイブする
 description: このトピックでは、ハッシュ番号付きの印刷された顧客請求書を保存するアーカイブを有効にする方法について説明します。
 author: ilyako
-manager: AnnBe
 ms.date: 03/05/2021
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-05
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d502ec5d286573c72e207419b66f283183009c09
-ms.sourcegitcommit: 08ac570bece3e4ee4a0f632f51623e328536dfcf
+ms.openlocfilehash: 5b0305381ee709ce52b18d171a1ea274e2126cce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5557483"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827701"
 ---
 # <a name="archive-printed-customer-invoices-with-hash-numbers"></a>印刷された顧客請求書にハッシュ番号を付けてアーカイブする
 

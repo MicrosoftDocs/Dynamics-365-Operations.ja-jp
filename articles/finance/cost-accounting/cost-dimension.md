@@ -2,11 +2,9 @@
 title: 分析コードの作成と分析コード メンバーのインポート
 description: 原価会計は、他のモジュールからのマスター データを必要とする独立モジュールです。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3eedce9cd092f9c299a2381a28a801351f15c4cc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a9634612bcffbcf71b77dbb184e71367c67bac10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226392"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822930"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>分析コードの作成と分析コード メンバーのインポート
 

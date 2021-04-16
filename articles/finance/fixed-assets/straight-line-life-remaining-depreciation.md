@@ -2,11 +2,9 @@
 title: 耐用年数残減価償却について
 description: この記事は、減価償却の定額法残余耐用年数の概要を示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 823b2569670adfbf04038abca656e34f0199fce1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd7bc6d773d85a1ba02151b96bf80f970845d4a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210098"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818515"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>耐用年数残減価償却について
 
@@ -57,9 +55,9 @@ ms.locfileid: "5210098"
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>変更されない固定資産の定額減価償却例
 固定資産には次の特徴があります。
 
-|                     |        |
+| フィールド               | 先頭値  |
 |---------------------|--------|
-| 取得費用    | 11,000 |
+| 取得価額    | 11,000 |
 | 救済価格       | 1.000  |
 | 償却基礎額   | 10,000 |
 | 耐用年数  | 5      |

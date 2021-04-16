@@ -2,11 +2,9 @@
 title: 在庫原価計算
 description: 受入トランザクションと払出トランザクションを決済するプロセスの一環で、行った調整を総勘定元帳に反映して更新するように選択することもできます。
 author: AndersGirke
-manager: tfehr
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fc06806c14539de913f2336f2adb7462f303f37
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d55ee9a851e2a7bfbba7d60b0b1fc774c4f6c170
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220875"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830319"
 ---
 # <a name="inventory-close"></a>在庫原価計算
 

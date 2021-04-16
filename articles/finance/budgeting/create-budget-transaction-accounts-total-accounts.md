@@ -2,11 +2,9 @@
 title: トランザクション勘定と合計勘定からの予算作成
 description: この記事は、勘定合計に基づいて予算を作成するプロセスの概要を提供します。 予算管理が必要な場合に、勘定合計の予算管理を有効にする方法を説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetControlConfiguration, BudgetPlanGenerate
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 085bc12433616d2da2bda40a8412fb88e40db3b9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e296118b3b806a5267e29c2b2d4d859c1aea1977
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210196"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827389"
 ---
 # <a name="create-a-budget-from-transaction-accounts-and-total-accounts"></a>トランザクション勘定と合計勘定からの予算作成
 

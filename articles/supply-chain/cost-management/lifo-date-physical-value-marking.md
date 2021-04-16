@@ -2,11 +2,9 @@
 title: 現物価格とマーキングを使用した LIFO 日付
 description: 後入れ先出し日付 (LIFO 日付) は、LIFO 原則に基づく在庫モデルです。 在庫からの出庫は、在庫トランザクションの日付に基づいて在庫への最後の入庫を対象として決済されます。 払出より前の入庫が存在しない場合、LIFO 日付を使用することで、払出の日付より後に発生する入庫を対象に払出が決済されます。 同じ日付の複数の払出は、最終払出、最後の受入の順に決済される場合があります。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e88ae89ec10a03cfb7bd057bc5f2c33071b55b4a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233826"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821540"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>現物価格とマーキングを使用した LIFO 日付
 

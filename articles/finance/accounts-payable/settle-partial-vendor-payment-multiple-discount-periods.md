@@ -2,11 +2,9 @@
 title: 複数の割引期間を持つ一部の仕入先支払を決済する
 description: この記事は、複数の現金割引を提供する仕入先に対して複数の一部支払が作成されるシナリオについて説明します。
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbcaca97203c47bf7eac02ba410763a4e1a7b34a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56e2b3a8dadd824fa0170a1db19fffeaecb47775
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227283"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827869"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>複数の割引期間を持つ一部の仕入先支払を決済する
 
@@ -56,7 +54,7 @@ April は 7 月 2 日にこの請求書に対して 300.00 を支払うとしま
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 2015 年 7 月 2 日 |
 | 現金割引金額         | -20.00    |
@@ -72,7 +70,7 @@ April は 7 月 2 日にこの請求書に対して 300.00 を支払うとしま
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
 | 現金割引日           | 2015 年 7 月 2 日 |
 | 現金割引金額         | -20.00    |
@@ -105,9 +103,9 @@ Aprilはこの支払を転記します。 彼女はこのトランザクショ�
 
 割引の情報は **未処理トランザクションの決済** ページの下部に表示されます。
 
-|                              |           |
+| フィールド                        | 先頭値     |
 |------------------------------|-----------|
-| 現金割引日           | 2015 年 7 月 12 日 |
+| 現金割引日           | 7/12/2015 |
 | 現金割引金額         | -10.00    |
 | 現金割引の使用            | 標準    |
 | 適用される現金割引          | -6.00     |

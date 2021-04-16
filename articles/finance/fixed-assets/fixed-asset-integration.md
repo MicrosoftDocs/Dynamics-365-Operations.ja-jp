@@ -2,11 +2,9 @@
 title: 固定資産の統合
 description: 固定資産は、一般会計、在庫管理、売掛金勘定、および買掛金勘定と統合できます。 また、固定資産を発注書と統合するように設定することもできます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba1fad55082abaaeaf1874698d7475597f23904f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240917"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826837"
 ---
 # <a name="fixed-assets-integration"></a>固定資産の統合
 

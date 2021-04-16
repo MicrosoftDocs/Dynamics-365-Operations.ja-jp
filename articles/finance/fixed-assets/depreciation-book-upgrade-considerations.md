@@ -2,11 +2,9 @@
 title: 減価償却簿のアップグレードの概要
 description: 以前のリリースでは、固定資産には、価値モデルおよび減価償却簿という 2 つの評価概念がありました。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 016787fa0636b0a3c0d17d2e4fd890cf56d8f519
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d42936a94e0f4d50ae227d760d5bee6e1e3a12e6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241237"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826981"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>減価償却簿のアップグレードの概要
 

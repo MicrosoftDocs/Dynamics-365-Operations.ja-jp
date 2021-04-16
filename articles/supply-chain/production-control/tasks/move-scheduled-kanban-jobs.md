@@ -2,11 +2,9 @@
 title: スケジュール済みかんばん作業の移動
 description: この手順は、計画済のプロセスかんばんジョブを別の期間に移動することに焦点をあてます。
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/07/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b945cdfa3e013c213e718962499831df126f09b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9d58ee740824809f15da68db66616bb01d5dbfab
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259749"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825017"
 ---
 # <a name="move-scheduled-kanban-jobs"></a>スケジュール済みかんばん作業の移動
 

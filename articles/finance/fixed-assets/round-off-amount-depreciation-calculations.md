@@ -2,11 +2,9 @@
 title: 減価償却計算の丸め金額
 description: この記事は、帳簿設定ページの [減価償却の丸め] フィールドについて説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable, AssetDepBookTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 378fa9498018f9ca0e99e04d04cbf6a28620e308
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0bf7cf68c98b14fb6c206c99673168153b32a449
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210146"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830426"
 ---
 # <a name="round-off-amount-for-depreciation-calculations"></a>減価償却計算の丸め金額
 

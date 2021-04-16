@@ -2,11 +2,9 @@
 title: 買掛金勘定の請求書照合の概要
 description: 買掛金勘定の請求書照合は、仕入先請求書、発注書、および製品受領情報を照合するプロセスです。
 author: abruer
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ecbfdd157985899da04aa6b41d9a96cdf2fa6bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 86fe870c43721ac737a7bd34cc3c985e61911dc1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213047"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820910"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>買掛金勘定の請求書照合の概要
 
@@ -48,7 +46,7 @@ ms.locfileid: "5213047"
 
 ツーウェイ マッチングとスリーウェイ マッチングでは、必ず単価で価格照合を行います。 また、これらの照合ポリシーは、合計価格別に価格情報を照合する構成にできます。
 -   正味単価の照合 – 請求書の各明細行の正味単価を、発注書で対応する正味単価と比較して、ツーウェイ マッチングまたはスリーウェイ マッチングの価格情報を照合します。 この正味単価は、明細行の正味金額/数量という式で計算します。
--   合計価格の照合 – 請求書の各明細行の正味金額 (合計価格) を、発注書で対応する正味金額 (合計価格) と比較して、ツーウェイ マッチングまたはスリーウェイ マッチングの価格情報を照合します。 この正味金額は次の式で計算します: *(単価 \* 行数) + 行請求金額 - 行割引*。 価格合計をパーセントで照合する場合、取引通貨を使用して値が比較されます。 価格合計を量で照合する場合、会計通貨を使用して値が比較されます。
+-   合計価格の照合 – 請求書の各明細行の正味金額 (合計価格) を、発注書で対応する正味金額 (合計価格) と比較して、ツーウェイ マッチングまたはスリーウェイ マッチングの価格情報を照合します。 この正味金額は次の式で計算します: *(単価 \* 行数) + 行請求金額 - 行割引*。 価格合計をパーセントで照合する場合、取引通貨を使用して値が比較されます。 価格合計を量で照合する場合、会計通貨を使用して値が比較されます。 購入行の一部を請求すると、その行の最後の請求書で価格合計一致の検証が発生します。 
 
 通常、請求書照合の計算は、仕入先請求書ページで仕入先請求書を編集すると自動的に実行されます。 または、必要に応じて請求書照合を実行できます。 必要に応じた請求書照合は、[請求書検証] タブの買掛金管理パラメーター ページにある [請求書ヘッダーの状態を自動的に更新] で法人に対して制御されます。請求書照合は、請求書の確認プロセスの一部でも実行できます。 請求書照合の結果は、仕入先請求書ページと関連する請求書照合ページで確認できます。
 

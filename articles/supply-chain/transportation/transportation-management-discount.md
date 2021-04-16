@@ -2,11 +2,9 @@
 title: 輸送管理の割引
 description: このトピックでは、配送料の割引を設定するためのオプションについて説明します。
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: fdee8315573faa09c502fa7792215a047d0e3c88
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a44907442241ed231d9a9919c030d46cf57a8850
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233490"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828350"
 ---
 # <a name="transportation-management-discounts"></a>輸送管理の割引
 
