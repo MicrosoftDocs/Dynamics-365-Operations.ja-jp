@@ -2,11 +2,9 @@
 title: Web アクティビティ イベント コレクションのオプトアウト
 description: このトピックでは、web サイトへの訪問者に対して、Microsoft Dynamics 365 Commerce の Web アクティビティ イベント コレクションをオプトアウトする方法について説明します。
 author: aamiral
-manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,19 +14,17 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 244d612fa01529df4fff250df50a06526632fcf1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 86f475cc0b78c620309301516b6c3b525b640637
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210926"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791560"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Web アクティビティ イベント コレクションのオプトアウト
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で Web アクティビティ イベント コレクションを顧客にオプトアウトさせる方法について説明します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce では、サイト管理者が自社の e コマース サイトのユーザーのウェブ アクティビティ の分析をすることが可能となります。 そうすることで、自身のサイトがどのように使われているかをより理解することができ、ユーザー エクスペリエンスを向上させ、ビジネスの目標を達成するためにサイトを最適化することができるようになります。
 

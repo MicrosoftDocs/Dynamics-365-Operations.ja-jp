@@ -2,11 +2,9 @@
 title: サイトにおける検索エンジン最適化 (SEO) の考慮事項
 description: このトピックでは、サイトの開発から運用における、検索エンジンの最適化 (SEO) の考慮事項について説明します。
 author: psimolin
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c4d1a4a1b14f7af1db1c53bd9ee1993cc9187609
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 52a10c754315bfef2a01c593f5fa5366e9054982
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254796"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791802"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>サイトにおける検索エンジン最適化 (SEO) の考慮事項
 

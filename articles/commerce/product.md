@@ -2,11 +2,9 @@
 title: POS で製品推奨事項を追加する
 description: このトピックでは、POS (販売時点管理) デバイスでの製品推奨事項の使用について説明します。
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 437913343d16490fd49a458b5c7a17132be293c6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a1a25e3d5bc1cc5c1c7509186451fdfef50dd6cf
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230939"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792342"
 ---
 # <a name="add-product-recommendations-on-pos"></a>POS で製品推奨事項を追加する
 

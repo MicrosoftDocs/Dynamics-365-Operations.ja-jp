@@ -2,7 +2,6 @@
 title: 計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 description: このトピックでは、ER データ ソースに対して計算済みフィールド タイプを使用する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c2c13cd3f165826e0d5b5ac901ffa61895301e7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569204"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749492"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 
@@ -194,7 +193,7 @@ ms.locfileid: "5569204"
 
 ![計算済みフィールド レベルの展開されたリスト](media/er-calculated-field-type-08.png)
 
-### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>バインディング フォーマット要素のため、コンフィギュレーションされた計算済みフィールドを使用する
+### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>バインディング フォーマット要素のため、コンフィギュレーションされた計算済みフィールドを使用する
 
 1. **モデル.データ 2.レベル** を選択し、コンフィギュレーションされた計算済みフィールドを選択します。
 2. **明細書.課税.標準** 形式要素を選択します。
@@ -215,7 +214,7 @@ ms.locfileid: "5569204"
 9. **バインド** を選択します。
 10. **はい** を選択し、選択された形式要素の下にあるすべての入れ子になった形式内で、新しいデータ ソース **レベル** によって、現在使用されているデータ ソース **レベル 3** が置き換えられることを確認します。
 
-   課税レベル (たとえば **モデル.データ 2.レベル ("減額")** テキスト値として) を表す XML 要素に対するパラメーター化された計算済みフィールドの引数を指定する場合、入れ子にされた XML 属性に対して同じ操作をする必要はありません。それらのバインドは、親レベル (**モデル.データ 2.レベル.集計された.ベース**、**モデル.データ 2.レベル ("減額")** 集計された.ベースではない) で定義されている引数の値を自動的に継承します。
+   課税レベル (たとえば **モデル.データ 2.レベル (&quot;減額")** テキスト値として) を表す XML 要素に対するパラメーター化された計算済みフィールドの引数を指定する場合、入れ子にされた XML 属性に対して同じ操作をする必要はありません。それらのバインドは、親レベル (**モデル.データ 2.レベル.集計された.ベース**、**モデル.データ 2.レベル ("減額")** 集計された.ベースではない) で定義されている引数の値を自動的に継承します。
 
 どのパラメーター化された計算済みフィールドの繰り返し呼び出しも、サポートされません。
 

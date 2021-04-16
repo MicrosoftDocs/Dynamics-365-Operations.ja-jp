@@ -2,7 +2,6 @@
 title: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
 description: このトピックでは、パフォーマンス上の問題をトラブルシューティングするために電子申告 (ER) のパフォーマンス追跡機能を使用する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a1a6b3711e58964ff266d84c75e79f741218ee23
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561151"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754219"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>パフォーマンス上の問題をトラブルシューティングするため ER 形式の実行を追跡します
 

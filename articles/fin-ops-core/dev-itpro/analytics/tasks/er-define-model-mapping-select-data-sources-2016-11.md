@@ -2,7 +2,6 @@
 title: ER モデル マッピングの定義およびそのデータ ソースの選択
 description: このトピックでは、システム管理者または電子申告開発者が電子申告データ モデルのデータ ソースを選択する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7b5f291372bc459bc1979dca4a95cfafb39e2ad9
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 7d88aaa24d61d6768801a84c81002d7a6ab2f316
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567297"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755085"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>ER モデル マッピングの定義およびそのデータ ソースの選択
 

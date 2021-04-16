@@ -2,7 +2,6 @@
 title: DATEVALUE ER 関数
 description: このトピックでは、DATEVALUE 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82feb8284f4b6116a53d174dcdd9b8c09c4fa63a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d760c3f874bfebad11b9497b136cb67df4e9ea61
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563561"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746942"
 ---
 # <a name="datevalue-er-function"></a>DATEVALUE ER 関数
 
