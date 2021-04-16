@@ -2,11 +2,9 @@
 title: 特別償却
 description: この記事は、特別償却機能の概要を示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1500eb6dd74576e21708907229d60362a6534077
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f811b913f751a860c21fc120b15bac406281d7f8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257588"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827029"
 ---
 # <a name="bonus-depreciation"></a>特別償却
 

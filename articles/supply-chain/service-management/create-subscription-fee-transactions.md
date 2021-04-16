@@ -2,11 +2,9 @@
 title: 定期売買手数料トランザクションの作成
 description: このトピックでは、定期売買手数料トランザクションを作成する方法について説明します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionCreateDialog
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9286be7364570666e19354e2e9576efeb57e478b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 49fd0be39c2271f21fcff33c9e53df4b29a6cb1d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247601"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836329"
 ---
 # <a name="create-subscription-fee-transactions"></a>定期売買手数料トランザクションの作成 
 

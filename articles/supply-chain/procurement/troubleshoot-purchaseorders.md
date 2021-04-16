@@ -2,11 +2,9 @@
 title: 発注書のトラブルシューティング
 description: このトピックでは、発注書と作業する際に発生する可能性がある問題の修正方法について説明します。
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 5959b098082ac1a0c8ea768795fa63b13950a9c7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 964f31c21faae6a947174f637624aca917881297
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242520"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841458"
 ---
 # <a name="troubleshoot-purchase-orders"></a>発注書のトラブルシューティング
 

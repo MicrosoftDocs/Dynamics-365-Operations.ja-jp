@@ -2,13 +2,11 @@
 title: 材料の例外の把握
 description: このトピックでは、製造オーダーおよびバッチ オーダーの原材料の例外をより詳細に把握する方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 1705903
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 87f82733388501f2f902e7ebba8b547d9ae5ed16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246168"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831989"
 ---
 # <a name="visibility-into-material-exceptions"></a>材料の例外の把握
 
@@ -59,7 +57,11 @@ BOM またはフォーミュラ明細行がリリースされていないか、�
 
 BOM またはフォーミュラ明細行がリリースされると、生産ウェーブ テンプレートの構成に応じて、新しい生産ウェーブまたは既存のオープン ウェーブのいずれかに追加されます。 ウェーブ テンプレートの構成により、BOM またはフォーミュラ明細行が解放されたときに自動的に処理されるよう、ウェーブを設定することもできます。 ウェーブが処理されるときは、原材料ピッキング用の倉庫作業が生成されます。 ウェーブ テンプレートがリリース時に処理されないように設定されている場合、ウェーブは未処理の状態のままです。 **注意が必要な未処理のウェーブ** タイルは、未処理のウェーブの倉庫にリリースされ、ワークスペース日付より早い、または同じ原材料日付を持つ BOM およびフォーミュラ明細行の数を表示します。 明細行は、ワークスぺースのフィルターに適用される運営リソースによっても消費されなければなりません。
 
-タイルが選択されている場合、**すべての生産ウェーブ** ページが開かれます。 このページは、リリースされた BOM からのウェーブ明細行およびタイルの条件を満たすフォーミュラ明細行を含むオープンウェーブの数によってフィルター処理されます。 **すべての生産ウェーブ** ページから、手動でウェーブを処理できます。
+タイルが選択されている場合、**すべての本番環境ウェーブ** ページが開きます。 このページは、リリースされた BOM からのウェーブ明細行およびタイルの条件を満たすフォーミュラ明細行を含むオープンウェーブの数によってフィルター処理されます。
+
+### <a name="manually-maintain-production-waves"></a>本番環境のウェーブを手動で管理する
+
+**すべての本番環境ウェーブ** ページで、アクションペインの **ウェーブ** タブにあるボタンを使って、手動でウェーブの **処理** と **リリース** を行うことができます。 **本番環境の管理** オプションを使用して、 ウェーブ プロセスの処理に使用される **本稼働 BOM プール** データの表示と管理ができます。
 
 ## <a name="open-warehouse-work-needing-attention"></a>注意が必要な未処理の倉庫作業
 

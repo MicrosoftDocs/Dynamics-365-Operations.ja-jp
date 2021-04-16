@@ -2,11 +2,9 @@
 title: 品質チェック
 description: このトピックでは、品質確認機能に関して説明します。 この機能により、倉庫の作業者は入庫ドック エリアに品目を受領する間に、品質を確認することができます。
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 31afcfcb9d8dbb91f4ea4e3e7a7282c2a87328d4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228468"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838229"
 ---
 # <a name="quality-check"></a>品質チェック
 
@@ -301,7 +299,7 @@ ms.locfileid: "5228468"
 
 #### <a name="receive-pallet-1"></a>受領パレット 1
 
-1. 倉庫 *51* のユーザーとして倉庫アプリにサインインします。 (ユーザー ID として *51* を、パスワードとして *1* を入力します。)
+1. 倉庫 *51* のユーザーとして、倉庫管理モバイル アプリにログインします。 (ユーザー ID として *51* を、パスワードとして *1* を入力します。)
 1. **入庫 \> 発注書明細行の入荷** に移動します。
 1. **PONUM** フィールドに発注書番号を入力します。
 1. 発注書番号を確認します。

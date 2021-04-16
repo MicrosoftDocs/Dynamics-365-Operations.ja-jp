@@ -2,11 +2,9 @@
 title: 仕入先請求書入力ワークスペース
 description: このトピックでは、仕入先請求書に関連するワークスペースの設定方法について説明し、Microsoft Power BI によって提供される情報を示します。
 author: abruer
-manager: AnnBe
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0a32fc46fe6ac33abe5fcebb2ee5e2c92f468f84
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254128"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837261"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>仕入先請求書入力ワークスペース
 

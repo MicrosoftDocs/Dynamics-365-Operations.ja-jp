@@ -2,11 +2,9 @@
 title: 場所のディレクティブ在庫ピッキング エイジング
 description: このトピックでは、ピッキング中の先入れ先出し (FIFO) と後入れ先出し (LIFO) の場所ディレクティブ戦略の使用方法について説明します。
 author: mirzaab
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9107a14a79883dc0e33de311baeec5fd6d692a35
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 937af7e24fc72b5b8bc741857913899a239a64d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500505"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835537"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>場所のディレクティブ在庫ピッキング エイジング
 

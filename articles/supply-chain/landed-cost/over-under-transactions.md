@@ -2,7 +2,6 @@
 title: 過剰/過少トランザクション
 description: このトピックでは、過剰/過少トランザクションのポリシーの詳細を設定するのに役立つ情報を提供します。これにより、システムは、入庫時に商品の過剰処理と過少処理を管理する方法を決定できます。
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500985"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833740"
 ---
 # <a name="overunder-transactions"></a>過剰/過少トランザクション
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 航海中の注文が処理されると、システムは、消費のために最終出荷先倉庫で受け取られた品目数量が、航海に関連付けられた発注書明細行で指定された数量と一致することを想定します。 ただし、発注書明細行の正確な数量が倉庫で常に受け取られるとは限らないため、**陸揚原価** モジュールは、商品の過剰受け取りと過少受け取りを処理するために使用される一連のルールを定義します。 元の発注書は請求されており、変更できないため、これらのルールは特に重要です。 過剰/過少トランザクション ポリシーの詳細を設定することにより、システムが入庫時に商品の過剰処理と過少処理を管理する方法を決定できるようになります。 **過剰/過小トランザクション** ページを使用して、在庫の過剰および過小を手動で管理することもできます。
 

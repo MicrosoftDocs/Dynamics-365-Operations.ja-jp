@@ -2,11 +2,9 @@
 title: 在庫棚卸プロセスの定義
 description: このトピックでは、棚卸グループおよび棚卸仕訳帳を作成することによって、基本的な在庫棚卸処理のコンフィギュレーションについて説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e54dfae274b201949d943b3e3e06b0c5b2c61ba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4166ffd043db24e814bcb85df07f0b940d5328d9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244504"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833884"
 ---
 # <a name="define-inventory-counting-processes"></a>在庫棚卸プロセスの定義
 

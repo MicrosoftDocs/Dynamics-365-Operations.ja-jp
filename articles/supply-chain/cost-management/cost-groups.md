@@ -2,11 +2,9 @@
 title: 原価グループ
 description: 原価グループは、原材料、労務、および間接費に対する原価貢献度などのように、製品の計算された原価での原価貢献度を区分および分析するための基礎を提供します。 原価内訳、原価分解、原価分類など、製造環境には原価グループ区分の同義語がいくつかあります。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCostGroup
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cd7f9b8e7a1b15dd94ee8ebe5b6c70b0d85495a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6ec09fe3611542c9f4c4c65628a15cc690a3b437
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251005"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839394"
 ---
 # <a name="cost-groups"></a>原価グループ
 

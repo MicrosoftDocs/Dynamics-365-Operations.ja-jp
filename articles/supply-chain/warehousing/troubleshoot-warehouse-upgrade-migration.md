@@ -2,11 +2,9 @@
 title: 高度な倉庫管理へのアップグレードおよび移行のトラブルシューティング
 description: このトピックでは、高度な倉庫管理へのアップグレードおよび移行中に発生する可能性がある問題を修正する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208090"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826398"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>高度な倉庫管理へのアップグレードおよび移行のトラブルシューティング
 
@@ -34,11 +32,11 @@ ms.locfileid: "5208090"
 
 ### <a name="issue-description"></a>問題の説明
 
-オンプレミス環境の Android 8 以上で自己署名証明書が信頼されていない場合に、このエラー メッセージが倉庫アプリに表示されます。
+オンプレミス環境の Android 8 以上で自己署名証明書が信頼されていない場合に、倉庫管理モバイル アプリにこのエラー メッセージが表示されます。
 
 ### <a name="issue-resolution"></a>問題の解決
 
-外部 (パブリック) 証明機関 (CA) を使用します。 この問題の修正プログラムは、ウェアハウス アプリのバージョン 1.9.0.0 で入手できます。 この問題と修正方法の詳細については、[ウェアハウス アプリの接続の問題のトラブルシューティング](troubleshoot-warehouse-app-connection.md)を参照してください。
+外部 (パブリック) 証明機関 (CA) を使用します。 この問題の修正プログラムは、ウェアハウス アプリのバージョン 1.9.0.0 で入手できます。 この問題と修正方法の詳細については、[倉庫管理モバイル アプリの接続の問題のトラブルシューティング](troubleshoot-warehouse-app-connection.md) を参照してください。
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>基本倉庫管理から高度な倉庫管理に移行するために承認されたプロセスは何ですか。
 

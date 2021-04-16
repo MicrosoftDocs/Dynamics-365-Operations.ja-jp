@@ -2,11 +2,9 @@
 title: 販売返品
 description: このトピックでは、返品注文のプロセスについての情報を提供します。 これは顧客の返品に関する情報、および返品による原価計算と手持在庫数量への影響に関する情報が含まれます。
 author: omulvad
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c01a945735f6340a0efd3d9c5ff74dd8cebd9ab7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d460cab24ca73d43a0f055c5f65791968841e472
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263327"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835513"
 ---
 # <a name="sales-returns"></a>販売返品
 
