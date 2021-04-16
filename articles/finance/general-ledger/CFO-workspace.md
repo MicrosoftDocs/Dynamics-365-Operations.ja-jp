@@ -2,11 +2,9 @@
 title: CFO ワークスペースへの財務分析コードの追加
 description: このトピックでは、CFO ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。
 author: aprilolson
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,44 +15,44 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 30506b17331d15e1164f513b34ff71f612828f8b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256694"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823839"
 ---
-# <a name="add-financial-dimensions-to-the-cfo-workspace"></a><span data-ttu-id="b6566-103">CFO ワークスペースへの財務分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="b6566-103">Add financial dimensions to the CFO workspace</span></span>
+# <a name="add-financial-dimensions-to-the-cfo-workspace"></a><span data-ttu-id="9f46b-103">CFO ワークスペースへの財務分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="9f46b-103">Add financial dimensions to the CFO workspace</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b6566-104">このトピックでは、最高財務責任者 (CFO) ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="b6566-104">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports.</span></span> <span data-ttu-id="b6566-105">CFO ワークスペースには、**概要** タブと **財務** タブがあります。これら 2 つのタブ上のレポートは、LedgerActivityMeasure および BudgetActivityMeasure という 2 つの措置によってサポートされています。</span><span class="sxs-lookup"><span data-stu-id="b6566-105">The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure.</span></span> <span data-ttu-id="b6566-106">これら 2 つの措置と DimensionCombinationEntity エンティティの間に関係があります。</span><span class="sxs-lookup"><span data-stu-id="b6566-106">There is a relation between those two measures and the DimensionCombinationEntity entity.</span></span> <span data-ttu-id="b6566-107">したがって、分析コードを選択できます。</span><span class="sxs-lookup"><span data-stu-id="b6566-107">Therefore, you can select dimensions.</span></span>
+<span data-ttu-id="9f46b-104">このトピックでは、最高財務責任者 (CFO) ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-104">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports.</span></span> <span data-ttu-id="9f46b-105">CFO ワークスペースには、**概要** タブと **財務** タブがあります。これら 2 つのタブ上のレポートは、LedgerActivityMeasure および BudgetActivityMeasure という 2 つの措置によってサポートされています。</span><span class="sxs-lookup"><span data-stu-id="9f46b-105">The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure.</span></span> <span data-ttu-id="9f46b-106">これら 2 つの措置と DimensionCombinationEntity エンティティの間に関係があります。</span><span class="sxs-lookup"><span data-stu-id="9f46b-106">There is a relation between those two measures and the DimensionCombinationEntity entity.</span></span> <span data-ttu-id="9f46b-107">したがって、分析コードを選択できます。</span><span class="sxs-lookup"><span data-stu-id="9f46b-107">Therefore, you can select dimensions.</span></span>
 
-1. <span data-ttu-id="b6566-108">Finance の **エンティティ格納** ページで、**LedgerActivityMeasure** および **BudgetActivityMeasure** 措置を更新します。</span><span class="sxs-lookup"><span data-stu-id="b6566-108">In Finance, on the **Entity Store** page, update the **LedgerActivityMeasure** and the **BudgetActivityMeasure** measures.</span></span>
-2. <span data-ttu-id="b6566-109">Microsoft Visual Studio で、アプリケーション エクスプローラーを開き、**LedgerCFO** を検索します。</span><span class="sxs-lookup"><span data-stu-id="b6566-109">In Microsoft Visual Studio, open Application Explorer, and search for **LedgerCFO**.</span></span>
-3. <span data-ttu-id="b6566-110">**リソース** で、**LedgerCFOWorkspacePBIX** を開きます。</span><span class="sxs-lookup"><span data-stu-id="b6566-110">Under **Resources**, open **LedgerCFOWorkspacePBIX**.</span></span>
-4. <span data-ttu-id="b6566-111">Microsoft Power BI Desktop でリソースを開く場合、**データの取得** を選択し、**SQL Server データベース** を選択し、**接続** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-111">When the resource opens in Microsoft Power BI desktop, select **Get Data**, select **SQL Server database**, and then select **Connect**.</span></span>
-5. <span data-ttu-id="b6566-112">サーバー名を入力し、**AxDW** をデータベースとして入力します。</span><span class="sxs-lookup"><span data-stu-id="b6566-112">Enter the server name, and enter **AxDW** as the database.</span></span> <span data-ttu-id="b6566-113">**DirectQuery** を選択し **OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-113">Select **DirectQuery**, and then select **OK**.</span></span>
-6. <span data-ttu-id="b6566-114">**LedgerActivityMeasure\_DimensionCombination** を検索して選択し、**読み込み** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-114">Search for and select **LedgerActivityMeasure\_DimensionCombination**, and then select **Load**.</span></span>
+1. <span data-ttu-id="9f46b-108">Finance の **エンティティ格納** ページで、**LedgerActivityMeasure** および **BudgetActivityMeasure** 措置を更新します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-108">In Finance, on the **Entity Store** page, update the **LedgerActivityMeasure** and the **BudgetActivityMeasure** measures.</span></span>
+2. <span data-ttu-id="9f46b-109">Microsoft Visual Studio で、アプリケーション エクスプローラーを開き、**LedgerCFO** を検索します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-109">In Microsoft Visual Studio, open Application Explorer, and search for **LedgerCFO**.</span></span>
+3. <span data-ttu-id="9f46b-110">**リソース** で、**LedgerCFOWorkspacePBIX** を開きます。</span><span class="sxs-lookup"><span data-stu-id="9f46b-110">Under **Resources**, open **LedgerCFOWorkspacePBIX**.</span></span>
+4. <span data-ttu-id="9f46b-111">Microsoft Power BI Desktop でリソースを開く場合、**データの取得** を選択し、**SQL Server データベース** を選択し、**接続** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-111">When the resource opens in Microsoft Power BI desktop, select **Get Data**, select **SQL Server database**, and then select **Connect**.</span></span>
+5. <span data-ttu-id="9f46b-112">サーバー名を入力し、**AxDW** をデータベースとして入力します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-112">Enter the server name, and enter **AxDW** as the database.</span></span> <span data-ttu-id="9f46b-113">**DirectQuery** を選択し **OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-113">Select **DirectQuery**, and then select **OK**.</span></span>
+6. <span data-ttu-id="9f46b-114">**LedgerActivityMeasure\_DimensionCombination** を検索して選択し、**読み込み** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-114">Search for and select **LedgerActivityMeasure\_DimensionCombination**, and then select **Load**.</span></span>
 
     > [!TIP]
-    > <span data-ttu-id="b6566-115">**フィールド** 一覧で、**財務分析コード** の表の名前を変更し、簡単に識別できるようにします。</span><span class="sxs-lookup"><span data-stu-id="b6566-115">In the **Fields** list, rename the table **Financial dimensions**, so that it's easy to identify.</span></span>
+    > <span data-ttu-id="9f46b-115">**フィールド** 一覧で、**財務分析コード** の表の名前を変更し、簡単に識別できるようにします。</span><span class="sxs-lookup"><span data-stu-id="9f46b-115">In the **Fields** list, rename the table **Financial dimensions**, so that it's easy to identify.</span></span>
 
-7. <span data-ttu-id="b6566-116">**関係の管理** を選択し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-116">Select **Manage Relationships**, and then select **New**.</span></span>
-8. <span data-ttu-id="b6566-117">最初のフィールドで、**総勘定元帳活動** を選択し、次に **LedgerDimension** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-117">In the first field, select **General Ledger Activities**, and then select **LedgerDimension**.</span></span>
-9. <span data-ttu-id="b6566-118">2 番目のフィールドで、**LedgerActivityMeasure\_DimensionCombination** (または表の名前を変更した場合、**財務分析コード**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-118">In the second field, select **LedgerActivityMeasure\_DimensionCombination** (or **Financial dimensions** if you renamed the table).</span></span> <span data-ttu-id="b6566-119">**DimensionCombinationRECID** ヘッダーを選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-119">Select the  **DimensionCombinationRECID** header.</span></span>
-10. <span data-ttu-id="b6566-120">**基数** フィールドで、**多対一** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-120">In the **Cardinality** field, select **Many to One**.</span></span>
-11. <span data-ttu-id="b6566-121">**クロス フィルター方向** 値を **単一** に変更します。</span><span class="sxs-lookup"><span data-stu-id="b6566-121">Change the **Cross filter direction** value to **Single**.</span></span>
-12. <span data-ttu-id="b6566-122">**この関係を有効にする** および **参照整合性を仮定する** の両方を選択し、**OK** を選択し、次に **閉じる** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-122">Select both **Make this relationship active** and **Assume referential integrity**, select **OK**, and then select **Close**.</span></span>
+7. <span data-ttu-id="9f46b-116">**関係の管理** を選択し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-116">Select **Manage Relationships**, and then select **New**.</span></span>
+8. <span data-ttu-id="9f46b-117">最初のフィールドで、**総勘定元帳活動** を選択し、次に **LedgerDimension** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-117">In the first field, select **General Ledger Activities**, and then select **LedgerDimension**.</span></span>
+9. <span data-ttu-id="9f46b-118">2 番目のフィールドで、**LedgerActivityMeasure\_DimensionCombination** (または表の名前を変更した場合、**財務分析コード**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-118">In the second field, select **LedgerActivityMeasure\_DimensionCombination** (or **Financial dimensions** if you renamed the table).</span></span> <span data-ttu-id="9f46b-119">**DimensionCombinationRECID** ヘッダーを選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-119">Select the  **DimensionCombinationRECID** header.</span></span>
+10. <span data-ttu-id="9f46b-120">**基数** フィールドで、**多対一** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-120">In the **Cardinality** field, select **Many to One**.</span></span>
+11. <span data-ttu-id="9f46b-121">**クロス フィルター方向** 値を **単一** に変更します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-121">Change the **Cross filter direction** value to **Single**.</span></span>
+12. <span data-ttu-id="9f46b-122">**この関係を有効にする** および **参照整合性を仮定する** の両方を選択し、**OK** を選択し、次に **閉じる** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-122">Select both **Make this relationship active** and **Assume referential integrity**, select **OK**, and then select **Close**.</span></span>
 
-    <span data-ttu-id="b6566-123">[![リレーションシップを作成](./media/Create-relationship.png)](./media/Create-relationship.png)</span><span class="sxs-lookup"><span data-stu-id="b6566-123">[![Create a relationship](./media/Create-relationship.png)](./media/Create-relationship.png)</span></span>
+    <span data-ttu-id="9f46b-123">[![リレーションシップを作成](./media/Create-relationship.png)](./media/Create-relationship.png)</span><span class="sxs-lookup"><span data-stu-id="9f46b-123">[![Create a relationship](./media/Create-relationship.png)](./media/Create-relationship.png)</span></span>
 
-13. <span data-ttu-id="b6566-124">**フィールド** 一覧で、表および使用可能な財務分析コードが表示されるべきです。</span><span class="sxs-lookup"><span data-stu-id="b6566-124">In the **Fields** list, you should see the table and the available financial dimensions.</span></span> <span data-ttu-id="b6566-125">レポート レベルのフィルターに、使用する財務分析コードをドラッグします。</span><span class="sxs-lookup"><span data-stu-id="b6566-125">Drag the financial dimensions that you want to the report-level filters.</span></span>
-14. <span data-ttu-id="b6566-126">変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="b6566-126">Save your changes.</span></span>
-15. <span data-ttu-id="b6566-127">アプリケーション オブジェクト ツリー (AOT) で、プロジェクトを右クリックし、**同期** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b6566-127">In the Application Object Tree (AOT), right-click your project, and then select **Synchronize**.</span></span>
-16. <span data-ttu-id="b6566-128">プロジェクトを構築して、結果を表示するアプリケーションを開きます。</span><span class="sxs-lookup"><span data-stu-id="b6566-128">Build your project, and then open the application to view the results.</span></span>
+13. <span data-ttu-id="9f46b-124">**フィールド** 一覧で、表および使用可能な財務分析コードが表示されるべきです。</span><span class="sxs-lookup"><span data-stu-id="9f46b-124">In the **Fields** list, you should see the table and the available financial dimensions.</span></span> <span data-ttu-id="9f46b-125">レポート レベルのフィルターに、使用する財務分析コードをドラッグします。</span><span class="sxs-lookup"><span data-stu-id="9f46b-125">Drag the financial dimensions that you want to the report-level filters.</span></span>
+14. <span data-ttu-id="9f46b-126">変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-126">Save your changes.</span></span>
+15. <span data-ttu-id="9f46b-127">アプリケーション オブジェクト ツリー (AOT) で、プロジェクトを右クリックし、**同期** を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f46b-127">In the Application Object Tree (AOT), right-click your project, and then select **Synchronize**.</span></span>
+16. <span data-ttu-id="9f46b-128">プロジェクトを構築して、結果を表示するアプリケーションを開きます。</span><span class="sxs-lookup"><span data-stu-id="9f46b-128">Build your project, and then open the application to view the results.</span></span>
 
-    <span data-ttu-id="b6566-129">[![完了済ワークスペース](./media/workspace.png)](./media/workspace.png)</span><span class="sxs-lookup"><span data-stu-id="b6566-129">[![Completed workspace](./media/workspace.png)](./media/workspace.png)</span></span>
+    <span data-ttu-id="9f46b-129">[![完了済ワークスペース](./media/workspace.png)](./media/workspace.png)</span><span class="sxs-lookup"><span data-stu-id="9f46b-129">[![Completed workspace](./media/workspace.png)](./media/workspace.png)</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
