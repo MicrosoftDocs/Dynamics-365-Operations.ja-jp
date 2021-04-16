@@ -1,27 +1,25 @@
 ---
 title: 仕入先コラボレーションを使用した委託販売在庫の監視
 description: この手順は、顧客との委託販売で置いた製品の在庫レベルに関する情報を表示する際の仕入先との連携方法を示します。
-author: RichardLuan
-manager: tfehr
+author: sherry-zheng
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e1c75db4ef5d07e4ae396401a851389b7ecb9242
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 92e397c12b9f605d1c864ce053477090ed8c1700
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244378"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839274"
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>仕入先コラボレーションを使用した委託販売在庫の監視
 

@@ -2,11 +2,9 @@
 title: 日本の固定資産の資産償却責務を設定します。
 description: この記事は、ARO の負債がどのように認識、償却、および未払となるか、および固定資産と ARO の負債が日本で除去される方法について説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac1657f920424ad3b9f00d4d65d0739551af7e55
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 84484ec8317ab19f62fc0997d1e9874f789ab853
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258196"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834374"
 ---
 # <a name="set-up-asset-retirement-obligation-for-fixed-assets-for-japan"></a>日本の固定資産の資産償却責務を設定します。
 

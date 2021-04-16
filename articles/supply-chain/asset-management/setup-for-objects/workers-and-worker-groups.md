@@ -1,12 +1,10 @@
 ---
 title: メンテナンス作業者および作業者グループ
 description: このトピックでは、資産管理のメンテナンス作業者および作業者グループについて説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ada9e43ae08e1757de618bd2d63dc147beeca0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 553dce8df5e91cce58b64e340d8ff72586d8d46d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226836"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838565"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>メンテナンス作業者および作業者グループ
 

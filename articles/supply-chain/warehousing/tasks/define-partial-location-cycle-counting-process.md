@@ -2,11 +2,9 @@
 title: 部分的な場所の循環棚卸プロセスの定義
 description: 循環棚卸作業を使用して棚卸作業を作成する場合は、その場所において手持在庫の代わりに、特定の製品および製品バリアントのみがカウントされるよう要求することによって、実際の棚卸操作を指示できます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfea71459b80712c924912d909a0fdfa5fad09ad
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fcda301934c6ccc06f17ed8ae13c52754336d2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238945"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830909"
 ---
 # <a name="define-partial-location-cycle-counting-process"></a>部分的な場所の循環棚卸プロセスの定義 
 

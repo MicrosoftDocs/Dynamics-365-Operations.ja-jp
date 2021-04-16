@@ -2,11 +2,9 @@
 title: 仕入先請求書の自動化の結果を表示する (プレビュー)
 description: このトピックでは、自動化されたワークフローへの送信プロセスにある仕入先請求書の状態を表示する方法について説明します。
 author: abruer
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b87af4c64f8021a1b23cca5d8f38ac21c8efbd4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 872ec404da0cce41c4ea0f882a3fa8af56316ce3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248095"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837228"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>仕入先請求書の自動化の結果を表示
 

@@ -2,11 +2,9 @@
 title: 仕入先請求書の概要
 description: このトピックでは、仕入先請求書に関する一般情報を示します。
 author: abruer
-manager: AnnBe
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1799fb18a1dd4b7c532259ab198e1ba30a89c09d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bf3b842f018b4386d5ab4769143d4f7f0907873e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264134"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841264"
 ---
 # <a name="vendor-invoices-overview"></a>仕入先請求書の概要
 

@@ -2,11 +2,9 @@
 title: マスター プラン - サイトの補充、倉庫は必須
 description: このトピックでは、補充分析コードとしてサイトを持つ品目の計画方法について説明します。 倉庫は必須の分析コードです。
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3abe48ca9ab4fe8f905efa9c7186ace697c17891
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eaac165865b04a7c4ad2f08ca758b07fd41eaaa0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220803"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833548"
 ---
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>マスター プラン - サイトの補充、倉庫は必須
 

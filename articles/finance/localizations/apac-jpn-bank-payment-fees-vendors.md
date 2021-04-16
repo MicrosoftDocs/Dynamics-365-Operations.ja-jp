@@ -2,11 +2,9 @@
 title: 仕入先負担の銀行支払手数料 (日本)
 description: このトピックでは、日本の仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8257d4c853ebb479472aee3ff9d33b9b9a0508bf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8ae0e45d76805bc4976a228e32297d836ae1d085
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258192"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834370"
 ---
 # <a name="bank-payment-fees-covered-by-vendors-in-japan"></a>仕入先負担の銀行支払手数料 (日本)
 

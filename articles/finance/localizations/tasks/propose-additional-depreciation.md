@@ -2,11 +2,9 @@
 title: 割増償却の提案
 description: 日本では、特定の条件下で割増償却が許可されています。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d82a6fcd51ce5c955e9fe5fd720d9b8516a1dc88
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 218f67fb6cba3c183dae271e014194c9ab6bbe52
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222959"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830405"
 ---
 # <a name="propose-additional-depreciation"></a>割増償却の提案
 

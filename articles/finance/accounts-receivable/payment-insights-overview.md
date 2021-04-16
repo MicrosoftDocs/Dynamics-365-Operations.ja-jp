@@ -2,11 +2,9 @@
 title: 顧客支払に関するインサイト (プレビュー)
 description: このトピックでは、個々の顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、他の方法よりも早くコレクション プロセスを開始することを正当化する状況を特定するのに役立ちます。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 11/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 21516cb7ef6e95dcef27638ddb72520f492958a5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a1b3b6540a03dc85d5dcd813e8c41ac49ab36728
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207330"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822398"
 ---
 # <a name="customer-payment-insights-preview"></a>顧客支払に関するインサイト (プレビュー)
 

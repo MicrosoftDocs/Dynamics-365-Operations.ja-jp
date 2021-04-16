@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
 author: roschlom
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
-ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
+ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5474066"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836916"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは推奨されない機能
 
@@ -39,7 +37,7 @@ ms.locfileid: "5474066"
 
 ### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>電子申告コンフィギュレーションのストレージ オプションとしての LCS リポジトリ
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 新しい Regulatory Configuration Service (RCS) のグローバル リポジトリに置き換えられます |
 | **別の機能で置き換えられているか?**   | あり |
@@ -51,7 +49,7 @@ ms.locfileid: "5474066"
 
 ### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>チェコ共和国向け「VAT申告 (CZ)」、および 「管理ステートメントのエクスポート ( CZ)」 電子レポート形式
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 新しい形式に置き換えられます |
 | **別の機能で置き換えられているか?**   | あり |
@@ -61,7 +59,7 @@ ms.locfileid: "5474066"
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>"元帳トランザクションのエクスポート形式 (BE)" 電子レポート形式と、個別の "元帳トランザクション エクスポート (BE)" モデル (ベルギー)
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | "標準監査ファイル (SAF)" モデルの下にある新しい ER 形式で置き換えました。  |
 | **別の機能で置き換えられているか?**   | あり |
@@ -71,7 +69,7 @@ ms.locfileid: "5474066"
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>SSRS 形式の英国用 "VAT 100" レポート
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | "税申告モデル" で、新しい ER 形式である "VAT 申告 Excel (UK)" 形式と置き換えました。  |
 | **別の機能で置き換えられているか?**   | あり |
@@ -83,7 +81,7 @@ ms.locfileid: "5474066"
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 における Internet Explorer 11 のサポートの非推奨
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
@@ -95,7 +93,7 @@ ms.locfileid: "5474066"
 
 ### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>ポーランド SSRS レポート: 仮受 VAT 登録、購買 VAT 登録、EU 集計 VAT 登録 – 機能参照 PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 法的に必須ではありません。  |
 | **別の機能で置き換えられているか?**   | はい (VAT 申告を含む標準監査ファイル用の Excel 形式 - JPK_VDEK) |
@@ -107,7 +105,7 @@ ms.locfileid: "5474066"
 
 ### <a name="norwegian-standard-main-accounts"></a>ノルウェー標準主勘定
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 再設計  |
 | **別の機能で置き換えられているか?**   | はい (ER 形式のアプリケーション固有パラメータに置き換えられます) |
@@ -118,7 +116,8 @@ ms.locfileid: "5474066"
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Finance 10.0.7 リリースの削除済みまたは非推奨の機能
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>ワークフロー要求の変更ダイアログ ボックスにユーザー選択ドロップダウン リストは表示されなくなります
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 勘定グループを選択する機能に変更されました。  |
 | **別の機能で置き換えられているか?**   | 有 |

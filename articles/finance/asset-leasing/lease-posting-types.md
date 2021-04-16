@@ -2,11 +2,9 @@
 title: リース転記タイプ
 description: このトピックでは、資産のリース契約トランザクションに使用される転記タイプについて説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229505"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841144"
 ---
 # <a name="lease-posting-types"></a>リース転記タイプ
 
@@ -90,15 +88,6 @@ ms.locfileid: "5229505"
 **仕訳入力の例:** 未収減価償却<br>
 **借方:** 減価償却経費 XXX<br>
 **貸方:** 減価償却累計額 XXX
-
-## <a name="retained-earnings"></a>利益剰余金
-
-この感情は留保利益に関連付けられています。 この勘定は、完全な振り返りメソッドを使用するか、または類型キャッチアップ オプション A メソッドを使用して、切り替え調整仕訳入力で借方または貸方に転記することができます。 初期使用権資産とリース負債の差額が、留保収益に記帳されます。 まれな場合ですが、リースの変更によって、使用権資産がリース負債に等しくなるように、財務に対するリースの分類が財務上から工程に変更される場合は、その利益がリースの変更によって影響を受けることがあります。
-
-**仕訳入力の例:** 切り替えの調整 (完全な振り返りまたは累積キャッチアップ オプション A メソッド)<br>
-**借方:** リース負債 XXX<br>
-**貸方:** リース資産 XXX<br>
-**貸方:** 留保利益 XXX
 
 ## <a name="variable-payment"></a>変動支払
 

@@ -2,11 +2,9 @@
 title: 在庫操作のトラブルシューティング
 description: このトピックでは、在庫操作で作業をする際に発生する可能性がある問題の修正方法について説明します。
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: ee1bfbf1b5aa736e1ee5bd38403b6c94c2bd036b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 24e41e35b3e810c509a16b91fffd1e796ab9d134
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225005"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832061"
 ---
 # <a name="troubleshoot-inventory-operations"></a>在庫操作のトラブルシューティング
 

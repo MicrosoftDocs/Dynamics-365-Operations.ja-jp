@@ -2,11 +2,9 @@
 title: 資産グループへの共有資産とのれんの帳簿価額の配賦
 description: この手順では、各資産グループへの共有資産と営業権の帳簿価額の配賦について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetImpairmentSharedAssetAlloc_JP, AssetImpairmentPopulateAllocation_JP
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e4d43b42f30cd91dd4654ce0403a839fc6ec4cff
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 76b3e4afba8c72c736b70907d7f57f71ad5e94b2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253877"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832532"
 ---
 # <a name="allocate-carrying-amount-of-shared-asset-and-goodwill-to-cash-generating-units"></a>資産グループへの共有資産とのれんの帳簿価額の配賦
 

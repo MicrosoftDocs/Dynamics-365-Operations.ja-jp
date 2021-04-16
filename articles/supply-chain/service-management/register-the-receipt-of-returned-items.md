@@ -2,11 +2,9 @@
 title: 返品品目の受取の登録
 description: 着荷の概要フォームまたは登録フォームを使用して、返品品目の受取を登録することができます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview, InventTransRegister
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e1da5fee9607bf9f38c90d3db891ffa212ab01f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 96532173c003621271f768dcdc64d67b6948ab6c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219296"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836041"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>返品品目の受取の登録 
 

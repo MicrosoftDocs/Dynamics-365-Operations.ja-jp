@@ -2,11 +2,9 @@
 title: 製品、注文、出荷、積荷の危険物
 description: このトピックでは、リリースされた製品に対する有害な材料のプロパティを設定する方法、危険品目に対する在庫制限の追加方法、および販売注文、出荷、または負荷に対する危険物質の追加方法について説明します。
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 7e0564802bc53ce21236ffc6ed065bf6abac7c78
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b0fb2f77b4e95c90e3eb8a4c74929deead34de5c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243156"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829405"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>製品、注文、出荷、積荷の危険物
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、リリースされた製品に対する有害な材料のプロパティを設定する方法、危険品目に対する在庫制限の追加方法、および販売注文、出荷、または負荷に対する危険物質の追加方法について説明します。
 

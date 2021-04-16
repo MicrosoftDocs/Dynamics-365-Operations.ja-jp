@@ -2,11 +2,9 @@
 title: サービス期間の設定
 description: サービス間隔は、サービス注文を作成する場合に、サービス契約項目に対してサービス注文明細行が作成される頻度を表します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementinterval
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aee440226c4bda40f9f14b3b6b1edc2cc495574d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5cf6c766eefc51155594545e640c96d789621c29
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242472"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841290"
 ---
 # <a name="set-up-service-intervals"></a>サービス期間の設定  
 

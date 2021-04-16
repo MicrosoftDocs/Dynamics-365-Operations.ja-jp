@@ -2,11 +2,9 @@
 title: 需要予測の手動変更
 description: この手順では、品目の予測を変更する方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 31c057d686edc97a11027f156b9c14ff453294ec
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 518a49441a9d73d9da5ab90400e0b7482692d374
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240392"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829669"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>需要予測の手動変更
 

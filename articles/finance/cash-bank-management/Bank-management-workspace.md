@@ -2,11 +2,9 @@
 title: 銀行管理ワークスペース
 description: このトピックでは、銀行管理ワークスペースに関する情報を示します。 このワークスペースは、会社の銀行口座に関連する情報を表示し、概要ビューと分析ページが含まれます。 概要ビューでは、概要タイル、銀行口座情報、残高チャート、および関連情報を表示します。 分析ページは、Microsoft Power BI の機能を使用して、銀行口座残高に関連付けられているビジュアルを表示します。
 author: saraschi2
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3c5d248c5431b7a54835c699618a0a27ab760754
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 262b871a7c35d01283386af6454bb2852197e3b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260210"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818827"
 ---
 # <a name="bank-management-workspace"></a>銀行管理ワークスペース
 

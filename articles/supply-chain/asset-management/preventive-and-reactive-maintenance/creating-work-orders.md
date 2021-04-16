@@ -2,11 +2,9 @@
 title: 作業指示書の作成
 description: このトピックでは、資産管理で作業指示書を作成する方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500577"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836737"
 ---
 # <a name="creating-work-orders"></a>作業指示書の作成
 
@@ -62,8 +60,6 @@ ms.locfileid: "5500577"
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>メンテナンス計画の実行中に自動的に作成される作業指示書明細行のグループ化
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 この機能を使用すると、システムがメンテナンス計画に基づいて作業指示書が自動的に生成されるように設定されている場合に、1 つの作業指示書に作業指示書明細行をグループ化するためのルールを定義できます。 以前は、自動生成された作業指示書には、1 行しか含めることができませんでした。 ただし、作業指示書を資産、資産タイプ、または機能の場所などによってグループ化できるようになりました。 (このトピックの前のセクションで説明したように、手動生成された作業指示書は、この方法で既にグループ化されている場合があります。)
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>自動生成された作業指示書のグループ化の有効化
@@ -71,7 +67,7 @@ ms.locfileid: "5500577"
 この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール:** *資産管理*
-- **機能名:** *(プレビュー) メンテナンス計画の実行中に作業指示書をグループ化するルールの適用*
+- **機能名 :** *メンテナンス計画の実行中に作業指示書をグループ化するルールの適用*
 
 ### <a name="set-up-grouping-for-automatically-generated-work-orders"></a>自動生成された作業指示書のグループ化の設定
 

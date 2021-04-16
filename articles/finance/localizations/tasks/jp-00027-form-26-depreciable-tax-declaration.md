@@ -2,11 +2,9 @@
 title: JP-00027 減価償却税申告のフォーム 26
 description: このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, LogisticsPostalAddress, SysLookupMultiSelectGrid, LogisticsAddressCityLookup, AssetLocation, AssetLocationEdit_JP, AssetGroup, AssetTable, LedgerJournalTable, LedgerJournalTransAsset, DefaultDashboard
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 746a590dd9fd6cffd2c26ccb49c8fad9769bd6d0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bbc7e74b66156a2bf6aed2a863667376a679f24d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223836"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823578"
 ---
 # <a name="jp-00027-form-26-for-depreciable-tax-declaration"></a>JP-00027 減価償却税申告のフォーム 26
 

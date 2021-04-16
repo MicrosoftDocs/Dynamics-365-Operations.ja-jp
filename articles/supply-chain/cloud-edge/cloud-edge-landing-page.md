@@ -2,11 +2,9 @@
 title: 製造と倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
 description: このトピックでは、製造および倉庫管理のワークロードのクラウドおよびエッジのスケール ユニットに関する情報を提供します。
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fb0d8e0226b11e93503979c202da917de1df6319
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3eacc9d0cf53fa8af3ff166006cb8fab32445331
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240440"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836713"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>製造と倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
 
@@ -124,10 +122,10 @@ Microsoft にとってお客様のプライバシーは重要です。 詳細に
 倉庫管理については、エッジ ユニットがクラウドに接続されていない場合でも、クラウドおよびエッジのスケール ユニットには次の機能があります。
 
 - 選択されたウェーブ メソッドの処理は、販売注文と需要補充に対して有効化されています。
-- 倉庫の作業者は、倉庫アプリを使用して販売と需要の補充倉庫作業を実行できます。
-- 倉庫の作業者は、倉庫アプリを使用して手持在庫を照会できます。
-- 倉庫の作業者は、倉庫アプリを使用して手持在庫の移動を作成および実行できます。
-- 倉庫作業者は、倉庫アプリを使用した発注書の登録と、プットアウェイの実行をできます。
+- 倉庫の作業者は、倉庫管理モバイル アプリを使用して販売と需要の補充倉庫作業を実行できます。
+- 倉庫の作業者は、倉庫管理モバイル アプリを使用して手持在庫を照会できます。
+- 倉庫の作業者は、倉庫管理アプリを使用して手持在庫の移動を作成・実行できます。
+- 倉庫作業者は、倉庫管理モバイルアプリを使用した発注書の登録と、プットアウェイを実行できます。
 
 詳細については、[倉庫スケール ユニットのワークロードの詳細](cloud-edge-workload-warehousing.md) を参照してください。
 

@@ -2,11 +2,9 @@
 title: 倉庫管理モバイル アプリケーションのインストールと接続
 description: このトピックでは、各モバイル デバイスに倉庫管理モバイル アプリをインストールして、Microsoft Dynamics 365 Supply Chain Management 環境に接続するように構成する方法について説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,20 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487028"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835609"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションのインストールと接続
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> このトピックでは、新しい倉庫管理モバイル アプリの構成方法について説明します。 古い倉庫アプリケーションを構成する方法の詳細については、[倉庫アプリをインストールして接続する」](../../supply-chain/warehousing/install-configure-warehousing-app.md) を参照してください。
+> このトピックでは、新しい倉庫管理モバイル アプリの構成方法について説明します。 古い倉庫アプリ (現在非推奨) を構成する方法の詳細については、[倉庫アプリをインストールして接続する](../../supply-chain/warehousing/install-configure-warehousing-app.md) を参照してください。
 
 このトピックでは、各モバイル デバイスに倉庫管理モバイル アプリをダウンロードおよびインストールして、Supply Chain Management 環境へ接続するようアプリを構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
 

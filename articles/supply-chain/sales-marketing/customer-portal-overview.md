@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Management の顧客ポータルの概要
 description: このトピックでは、顧客ポータルの概要とその使用方法および機能について説明します。
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 531c8c9ae8638096ffc23e736790a2d43fd3764a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 50c9ac9106487fe04ccf704907c59b9a414b6cc8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215772"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840752"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Dynamics 365 Supply Chain Management の顧客ポータルの概要
 

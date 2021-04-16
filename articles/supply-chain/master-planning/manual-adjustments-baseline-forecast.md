@@ -2,11 +2,9 @@
 title: ベースライン予測に対して手動調整を行う
 description: このトピックでは、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。
 author: roxanadiaconu
-manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90d19e9465abc71125931a7946febe2d633c3181
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56069b1d2cf72eb29737b0aa7d066c998c0c423c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251964"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833644"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 

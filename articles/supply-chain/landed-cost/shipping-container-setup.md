@@ -2,7 +2,6 @@
 title: 出荷コンテナー
 description: このトピックでは、陸揚原価モジュールの出荷コンテナーを設定する方法について説明します。
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ca712aa7f07792861d5ba36afd8d7b63cc9ce8fb
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 2f7e9435aa3d0d06e1cc51457a6343b807d76dc7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500961"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833716"
 ---
 # <a name="shipping-container-setup"></a>出荷コンテナーの設定
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、**陸揚原価** モジュールの出荷コンテナーを設定する方法について説明します。
 

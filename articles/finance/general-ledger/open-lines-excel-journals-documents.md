@@ -2,11 +2,9 @@
 title: Excel から仕訳帳明細行とドキュメントを発行する
 description: このトピックでは、Microsoft Excel の一般仕訳帳の明細行入力および発行方法について説明します。 ここには、入力するトランザクションのタイプに応じて、使用できるさまざまなテンプレートに関する情報が含まれています。
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f87ce1dcbae779f875abcbffd1781bbf076b1b7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2211f666b2b1dc7600639007794ab8133b58b2cb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230253"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834479"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Excel から仕訳帳明細行とドキュメントを発行する
 
@@ -32,9 +30,8 @@ ms.locfileid: "5230253"
 
 ユーザーは、Microsoft Excel から財務仕訳帳の明細行を入力および発行することができます。 ユーザーが仕訳帳を作成した後、**Excel で明細行を開く** ボタンは使用できるテンプレートを表示します。 テンプレートは特定のシナリオをサポートするように設計されていますが、勘定タイプのすべての組み合わせが仕訳帳でサポートされるわけではありません。 次の表は、利用可能なテンプレートとそれらがサポートする勘定タイプを示しています。
 
-|                          |                                                                                                                         |                                                                                         |
+| テンプレート             | サポートされる勘定タイプ | テンプレートへのアクセス方法                                                          |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **テンプレート**             | **サポートされる勘定タイプ**                                                                                             | **テンプレートへのアクセス方法**                                                          |
 | 仕訳元帳明細行     | 勘定: 元帳、顧客、仕入先、銀行の相手勘定: 元帳、顧客、仕入先、銀行間でサポートされています。       | 一般仕訳帳                                                                         |
 | 仕入帳         | 勘定: 仕入先の相手勘定: 会社間元帳ではサポートされていません。                                                    | AP 仕入帳                                                                     |
 | 請求仕訳帳          | 勘定: 仕入先の相手勘定: 会社間元帳でサポートされています。                                                      | AP 請求仕訳帳                                                                      |
