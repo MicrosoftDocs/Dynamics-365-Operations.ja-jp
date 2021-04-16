@@ -2,11 +2,9 @@
 title: バッチ ジョブからの出荷の確認
 description: このトピックでは、出荷準備が完了した転送注文を自動的に確認するバッチ ジョブの設定方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f4c4fd5e8cdea9a7fc05ec9cbc7866c44c6f78b2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 69e61e1c04dd72efbe1d2f028c078100e07176f6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243970"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838445"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>バッチ ジョブからの出荷の確認
 

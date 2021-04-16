@@ -2,11 +2,9 @@
 title: 循環棚卸
 description: この記事は、倉庫管理で使用できる倉庫ソリューションで、循環棚卸を使用する方法について説明します。 この記事は、在庫管理で使用できる倉庫ソリューションには適用されません。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6052c79a09a8d2d80a5ecaa734345ad6da969ca9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e84a8c3f69bb1a429c6fd9679ba671a185cf6378
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214085"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838349"
 ---
 # <a name="cycle-counting"></a>循環棚卸
 

@@ -2,11 +2,9 @@
 title: Azure ストレージ アカウントとキー コンテナーの作成
 description: このトピックでは、Azure ストレージ アカウントとキー コンテナーを作成する方法について説明します。
 author: gionoder
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
-ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
+ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2021
-ms.locfileid: "5479348"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840223"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure ストレージ アカウントとキー コンテナーの作成
 
@@ -44,7 +42,7 @@ ms.locfileid: "5479348"
 
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Azure のストレージ アカウントを設定してストレージ アカウントの URI を取得する
 
-1. 電子請求のアドオンで使用するストレージ アカウントを開きます。
+1. 電子請求に使用する予定のストレージ アカウントを開きます。
 2. **Blob サービス** \> **コンテナー** に移動 し、新しいコンテナーを作成します。
 3. コンテナーの名前を入力し、**パブリック アクセス レベル** フィールドを **プライベート (匿名アクセスなし)** に設定し ます。
 4. コンテナーを開き、 **設定 \> アクセス ポリシー** に移動します。
@@ -63,12 +61,12 @@ ms.locfileid: "5479348"
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>キー コンテナーを設定し、ストレージ アカウントの URI を格納する
 
-1. 電子請求書作成アドオンで使用するキー コンテナーを開きます。
+1. 電子請求に使用する Key Vault を開きます。
 2. **設定** \> **秘密** に移動し、**生成/インポート** を選択して 新しい秘密を作成します。
 3. **シークレットを作成** ページの **アップロード オプション** フィールドで、**手動** を選択します。
 4. 秘密の名称を入力します。 この名前は、Regulatory Configuration Services (RCS) のサービス設定時に使用され、*キー コンテナーの秘密名称* と呼ばれます。
 5. **値** フィールドで、**共有アクセス署名 URI** を選択し、**作成** を選択します。
-6. アクセス ポリシーを設定して、電子請求書発行アドオンに自分が作成した秘密への適切なレベルの安全なアクセス権を付与します。 **設定 \>アクセス ポリシー** に移動し 、**アクセス ポリシーの追加** を選択します。
+6. アクセス ポリシーを設定して、作成したシークレットへの正しいレベルのセキュアなアクセスを電子請求に付与します。 **設定 \>アクセス ポリシー** に移動し 、**アクセス ポリシーの追加** を選択します。
 7. **取得** と **一覧** の操作に、秘密のアクセス許可を設定します。
 
     ![サービス アクセスの付与](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)

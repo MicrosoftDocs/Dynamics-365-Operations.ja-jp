@@ -2,11 +2,9 @@
 title: cXML 拡張機能の購入
 description: 購買 cXML 拡張機能は、購買要求に対して使用される既存の外部カタログ機能である PunchOut に基づいています。
 author: dasani-madipalli
-manager: tfehr
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d167666e20ef7e1e0fbdb9c11b6e0b1d0b15ebbf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f3bc63fd4b1017a5c96116ff6c9bbcc387869927
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237403"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825281"
 ---
 # <a name="purchasing-cxml-enhancements"></a>cXML 拡張機能の購入
 

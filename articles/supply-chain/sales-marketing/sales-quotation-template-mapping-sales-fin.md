@@ -2,11 +2,9 @@
 title: 販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 description: このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: a1cf4072cb873ebbf4e0e46f16771458e436bcac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 848464cbc62623502b9b87b9b41dcc17150e85ba
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243108"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839008"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 

@@ -2,11 +2,9 @@
 title: 社内サプライ チェーンの顧客との共同作業
 description: この手順では、会社間仕入先によって達成されるすべての計画オーダーを表示する方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6fd306d21097cdc850b7e9ae14f9a292fe0d4db
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7e663be2a24df8b208bd3902933259ac281db9f9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246744"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841746"
 ---
 # <a name="collaborate-with-internal-supply-chain-customers"></a>社内サプライ チェーンの顧客との共同作業
 

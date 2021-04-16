@@ -2,11 +2,9 @@
 title: 原価会計サービスのホームページ (プライベート プレビュー)
 description: このトピックでは、原価会計サービスのホームページについて解説します。
 author: AndersGirke
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: ab4b76ac2bd8ff26a9c8d9ae0b18b315f478c634
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7a1865115882d8b9e2beed7bdbc70be3d5118db8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228686"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839514"
 ---
 # <a name="cost-accounting-service-home-page-private-preview"></a>原価会計サービスのホームページ (プライベート プレビュー)
 

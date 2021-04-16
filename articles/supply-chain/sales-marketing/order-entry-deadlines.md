@@ -2,11 +2,9 @@
 title: 注文入力期限
 description: この記事は、注文入力期日に関する情報を提供します。 注文入力期日は、顧客注文を当日または翌日に受信されたかのように処理 (および履行) するかどうかを決定する締切り時間です。
 author: omulvad
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameters, InventOrderEntryDeadlineTable, MCRAutoTaxRules
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81546f4e260d8632fd85dbc3765091628588988d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf2780edc75891d565a184135d6a915a0e6f8504
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205253"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839080"
 ---
 # <a name="order-entry-deadlines"></a>注文入力期限
 

@@ -2,11 +2,9 @@
 title: 適用できる価格および割引の検索
 description: この手順は、特定の顧客に対して現在有効な製品の価格や割引を、販売注文を作成せずに検索する方法を示します。
 author: omulvad
-manager: tfehr
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37893b914f02f34071e1d8951a5df993e053f1b1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 50d7cf7b765c27db5aa9ea50c8593132c68c850a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255016"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824849"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>適用できる価格および割引の検索
 

@@ -2,11 +2,9 @@
 title: 集中支払の決済の概要
 description: このトピックでは、Microsoft Dynamics 365 Finance の集中支払の決済について説明します。
 author: abruer
-manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 682df83e2685e82b68ae5aa4fcaa7997ee942dca
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: febe29500714e5cbe9e364a79f128a55b23defa8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241397"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834887"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>集中支払の決済の概要
 

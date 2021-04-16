@@ -2,11 +2,9 @@
 title: システム主導の作業優先順位
 description: このトピックでは、システム主導の作業優先順位について説明します。 この機能により、システムが実行のためにユーザーに提示する作業指示書の並べ替えとフィルター処理を行うことができます。 これは、倉庫ピッキング プロセスを促進するための追加の基準が必要なシナリオで役立ちます。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 7db884a5cd62e1f44a2a86316fde6bf2d11a3376
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5387aaf5a5e0d20ac22595fbea86a25fdf38a771
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239137"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831125"
 ---
 # <a name="system-directed-work-sequencing"></a>システム主導の作業優先順位
 

@@ -2,11 +2,9 @@
 title: 作業テンプレートと場所ディレクティブを使用した倉庫作業の制御
 description: このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
 author: perlynne
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f51d30a63cba9e9fa5c8319c8b7d713acea5f19c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 91c8df8a111132d75ec02b79912c66e02aef4ea6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214181"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831317"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>作業テンプレートと場所ディレクティブを使用した倉庫作業の制御
 

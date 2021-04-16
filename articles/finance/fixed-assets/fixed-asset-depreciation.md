@@ -2,11 +2,9 @@
 title: 固定資産の減価償却
 description: このトピックは、固定資産の償却の概要を示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87317eedad06e93625212df3cc6e017b9475c932
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1ec8544b885485781b0b9c0a59ec47f90fdceb6b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240997"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826885"
 ---
 # <a name="fixed-asset-depreciation"></a>固定資産の減価償却
 
