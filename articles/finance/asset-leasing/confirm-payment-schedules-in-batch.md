@@ -2,11 +2,9 @@
 title: 資産リースの支払いスケジュールをバッチで確認する
 description: このトピックでは、複数の支払スケジュールをバッチで確認する方法について説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,30 +15,30 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0275fda306a58159a982b342622b9b6a18fa5b71
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9a3bd7293fed4b8df5d7bd76edacbcae253aa1f5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225517"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816079"
 ---
-# <a name="confirm-asset-leasing-payment-schedules-in-a-batch"></a><span data-ttu-id="0d7c8-103">資産リースの支払いスケジュールをバッチで確認する</span><span class="sxs-lookup"><span data-stu-id="0d7c8-103">Confirm Asset leasing payment schedules in a batch</span></span>
+# <a name="confirm-asset-leasing-payment-schedules-in-a-batch"></a><span data-ttu-id="7a4dc-103">資産リースの支払いスケジュールをバッチで確認する</span><span class="sxs-lookup"><span data-stu-id="7a4dc-103">Confirm Asset leasing payment schedules in a batch</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0d7c8-104">このトピックでは、複数の支払スケジュールをバッチで確認する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-104">This topic explains how to confirm multiple payment schedules in a batch.</span></span> <span data-ttu-id="0d7c8-105">支払スケジュールを、リース期間や確認バッチプロセスで確認します。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-105">Payment schedules are confirmed either on a lease-to-lease basis or through the confirmation batch process.</span></span> <span data-ttu-id="0d7c8-106">仕訳入力は、確認済の支払スケジュールが設定されたリースのみを転記できます。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-106">A journal entry can be posted only against a lease that has a confirmed payment schedule.</span></span> <span data-ttu-id="0d7c8-107">支払スケジュールの確認は、そのリースの財務情報の最終承認として機能します。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-107">Confirmation of the payment schedule serves as a final approval of the financial information for the lease.</span></span> <span data-ttu-id="0d7c8-108">支払リース料やリース期間など、リースに関する財務情報の将来的な変更はすべてリースの調整に該当し、その方法で処理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-108">All future changes to the financial information for the lease, such as payments and the lease term, constitute a lease adjustment and should be processed in that way.</span></span>
+<span data-ttu-id="7a4dc-104">このトピックでは、複数の支払スケジュールをバッチで確認する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-104">This topic explains how to confirm multiple payment schedules in a batch.</span></span> <span data-ttu-id="7a4dc-105">支払スケジュールを、リース期間や確認バッチプロセスで確認します。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-105">Payment schedules are confirmed either on a lease-to-lease basis or through the confirmation batch process.</span></span> <span data-ttu-id="7a4dc-106">仕訳入力は、確認済の支払スケジュールが設定されたリースのみを転記できます。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-106">A journal entry can be posted only against a lease that has a confirmed payment schedule.</span></span> <span data-ttu-id="7a4dc-107">支払スケジュールの確認は、そのリースの財務情報の最終承認として機能します。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-107">Confirmation of the payment schedule serves as a final approval of the financial information for the lease.</span></span> <span data-ttu-id="7a4dc-108">支払リース料やリース期間など、リースに関する財務情報の将来的な変更はすべてリースの調整に該当し、その方法で処理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-108">All future changes to the financial information for the lease, such as payments and the lease term, constitute a lease adjustment and should be processed in that way.</span></span>
 
-<span data-ttu-id="0d7c8-109">複数の支払スケジュールを確認するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-109">To confirm multiple payment schedules, follow these steps.</span></span>
+<span data-ttu-id="7a4dc-109">複数の支払スケジュールを確認するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-109">To confirm multiple payment schedules, follow these steps.</span></span>
 
-1. <span data-ttu-id="0d7c8-110">**資産リース \> 定期 \> 確認バッチ** に移動します。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-110">Go to **Asset leasing \> Periodic \> Confirmation batch**.</span></span>
-2. <span data-ttu-id="0d7c8-111">**確認バッチ** ページで、**確認バッチ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-111">On the **Confirmation batch** page, select **Confirmation batch**.</span></span>
-3. <span data-ttu-id="0d7c8-112">表示されるダイアログ ボックスで、確認する帳簿をフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-112">In the dialog box that appears, filter for the books that you want to confirm.</span></span>
+1. <span data-ttu-id="7a4dc-110">**資産リース \> 定期 \> 確認バッチ** に移動します。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-110">Go to **Asset leasing \> Periodic \> Confirmation batch**.</span></span>
+2. <span data-ttu-id="7a4dc-111">**確認バッチ** ページで、**確認バッチ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-111">On the **Confirmation batch** page, select **Confirmation batch**.</span></span>
+3. <span data-ttu-id="7a4dc-112">表示されるダイアログ ボックスで、確認する帳簿をフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-112">In the dialog box that appears, filter for the books that you want to confirm.</span></span>
 
-    - <span data-ttu-id="0d7c8-113">特定のリース グループに含まれるすべての帳簿を確認するには、**リース グループ** フィールドでグループを選択します。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-113">To confirm all the books in a specific lease group, select the group in the **Lease group** field.</span></span>
-    - <span data-ttu-id="0d7c8-114">特定の帳簿を確認するには、**帳簿 ID** フィールドで帳簿を選択します。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-114">To confirm specific books, select the books in the **Book ID** field.</span></span>
-    - <span data-ttu-id="0d7c8-115">すべての帳簿を確認するには、**すべての帳簿** パラメーターをオンにします。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-115">To confirm all books, turn on the **For all books** parameter.</span></span>
+    - <span data-ttu-id="7a4dc-113">特定のリース グループに含まれるすべての帳簿を確認するには、**リース グループ** フィールドでグループを選択します。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-113">To confirm all the books in a specific lease group, select the group in the **Lease group** field.</span></span>
+    - <span data-ttu-id="7a4dc-114">特定の帳簿を確認するには、**帳簿 ID** フィールドで帳簿を選択します。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-114">To confirm specific books, select the books in the **Book ID** field.</span></span>
+    - <span data-ttu-id="7a4dc-115">すべての帳簿を確認するには、**すべての帳簿** パラメーターをオンにします。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-115">To confirm all books, turn on the **For all books** parameter.</span></span>
 
-<span data-ttu-id="0d7c8-116">新しく確認した帳簿の情報は、**確認済の帳簿** ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-116">Information for the newly confirmed books is shown on the **Confirmed books** page.</span></span> <span data-ttu-id="0d7c8-117">支払スケジュールを確認した後、リースに対して当初認識の仕訳入力を転記できます。</span><span class="sxs-lookup"><span data-stu-id="0d7c8-117">After the payment schedules are confirmed, the initial recognition journal entries can be posted against the leases.</span></span>
+<span data-ttu-id="7a4dc-116">新しく確認した帳簿の情報は、**確認済の帳簿** ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-116">Information for the newly confirmed books is shown on the **Confirmed books** page.</span></span> <span data-ttu-id="7a4dc-117">支払スケジュールを確認した後、リースに対して当初認識の仕訳入力を転記できます。</span><span class="sxs-lookup"><span data-stu-id="7a4dc-117">After the payment schedules are confirmed, the initial recognition journal entries can be posted against the leases.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

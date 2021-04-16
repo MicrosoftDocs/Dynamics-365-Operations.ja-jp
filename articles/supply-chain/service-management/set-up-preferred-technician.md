@@ -2,11 +2,9 @@
 title: 優先技術者の設定
 description: 作業者をサービス合意またはサービス注文の優先技術者として選択できます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable, SMADispatchBoard
 audience: Application User
@@ -17,53 +15,53 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b2554197c1963cdd7ba0871edb532661d10945
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a517c54214476aed438846c57fe58eb5ec9ef8d1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256066"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835729"
 ---
-# <a name="set-up-a-preferred-technician"></a><span data-ttu-id="4d019-103">優先技術者の設定</span><span class="sxs-lookup"><span data-stu-id="4d019-103">Set up a preferred technician</span></span> 
+# <a name="set-up-a-preferred-technician"></a><span data-ttu-id="82cdc-103">優先技術者の設定</span><span class="sxs-lookup"><span data-stu-id="82cdc-103">Set up a preferred technician</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="4d019-104">作業者をサービス合意またはサービス注文の優先技術者として選択できます。</span><span class="sxs-lookup"><span data-stu-id="4d019-104">You can select any worker as a preferred technician for a service agreement or service order.</span></span> <span data-ttu-id="4d019-105">ただし、作業者が **派遣表** に含まれるように、作業者を適切な派遣チームに追加することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="4d019-105">However, it is a good idea to add the worker to the appropriate dispatch team so that the worker is included on the **Dispatch board**.</span></span>
+<span data-ttu-id="82cdc-104">作業者をサービス合意またはサービス注文の優先技術者として選択できます。</span><span class="sxs-lookup"><span data-stu-id="82cdc-104">You can select any worker as a preferred technician for a service agreement or service order.</span></span> <span data-ttu-id="82cdc-105">ただし、作業者が **派遣表** に含まれるように、作業者を適切な派遣チームに追加することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="82cdc-105">However, it is a good idea to add the worker to the appropriate dispatch team so that the worker is included on the **Dispatch board**.</span></span>
 
-## <a name="assign-employee-to-a-dispatch-team"></a><span data-ttu-id="4d019-106">派遣チームへの従業員の割り当て</span><span class="sxs-lookup"><span data-stu-id="4d019-106">Assign employee to a dispatch team</span></span>
+## <a name="assign-employee-to-a-dispatch-team"></a><span data-ttu-id="82cdc-106">派遣チームへの従業員の割り当て</span><span class="sxs-lookup"><span data-stu-id="82cdc-106">Assign employee to a dispatch team</span></span>
 
-1.  <span data-ttu-id="4d019-107">**人事管理** \> **共通** \> **作業者** \> **作業者** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d019-107">Click **Human resources** \> **Common** \> **Workers** \> **Workers**.</span></span> <span data-ttu-id="4d019-108">作業者の詳細ページを開くには、作業者をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d019-108">Double-click a worker to open the worker details page.</span></span> <span data-ttu-id="4d019-109">**アクション ウィンドウ** で、**設定**\>**派遣チーム** をクリックして、**出荷作業者** フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="4d019-109">On the **Action Pane**, click **Setup** \>**Dispatch team** to open the **Dispatch workers** form.</span></span>
+1.  <span data-ttu-id="82cdc-107">**人事管理** \> **共通** \> **作業者** \> **作業者** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="82cdc-107">Click **Human resources** \> **Common** \> **Workers** \> **Workers**.</span></span> <span data-ttu-id="82cdc-108">作業者の詳細ページを開くには、作業者をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="82cdc-108">Double-click a worker to open the worker details page.</span></span> <span data-ttu-id="82cdc-109">**アクション ウィンドウ** で、**設定**\>**派遣チーム** をクリックして、**出荷作業者** フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="82cdc-109">On the **Action Pane**, click **Setup** \>**Dispatch team** to open the **Dispatch workers** form.</span></span>
 
-2.  <span data-ttu-id="4d019-110">**派遣チーム** フィールドで、作業者を割り当てるチームを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d019-110">In the **Dispatch team** field, select the team to assign the worker to.</span></span>
+2.  <span data-ttu-id="82cdc-110">**派遣チーム** フィールドで、作業者を割り当てるチームを選択します。</span><span class="sxs-lookup"><span data-stu-id="82cdc-110">In the **Dispatch team** field, select the team to assign the worker to.</span></span>
 
-## <a name="assign-a-preferred-technician-to-a-service-agreement"></a><span data-ttu-id="4d019-111">サービス合意への優先技術者の割り当て</span><span class="sxs-lookup"><span data-stu-id="4d019-111">Assign a preferred technician to a service agreement</span></span>
+## <a name="assign-a-preferred-technician-to-a-service-agreement"></a><span data-ttu-id="82cdc-111">サービス合意への優先技術者の割り当て</span><span class="sxs-lookup"><span data-stu-id="82cdc-111">Assign a preferred technician to a service agreement</span></span>
 
-1.  <span data-ttu-id="4d019-112">**サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d019-112">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="4d019-113">詳細フォームを開くには、サービス合意をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d019-113">Double-click a service agreement to open the details form.</span></span>
+1.  <span data-ttu-id="82cdc-112">**サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="82cdc-112">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="82cdc-113">詳細フォームを開くには、サービス合意をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="82cdc-113">Double-click a service agreement to open the details form.</span></span>
 
-2.  <span data-ttu-id="4d019-114">**一般** タブで、**優先技術者** フィールドを選択し、適切な派遣チームのメンバをサービス合意の優先技術者として割り当てます。</span><span class="sxs-lookup"><span data-stu-id="4d019-114">On the **General** tab, select the **Preferred technician** field, and then select a member of the appropriate dispatch team as the preferred technician for the service agreement.</span></span>
+2.  <span data-ttu-id="82cdc-114">**一般** タブで、**優先技術者** フィールドを選択し、適切な派遣チームのメンバをサービス合意の優先技術者として割り当てます。</span><span class="sxs-lookup"><span data-stu-id="82cdc-114">On the **General** tab, select the **Preferred technician** field, and then select a member of the appropriate dispatch team as the preferred technician for the service agreement.</span></span>
 
-## <a name="assign-a-preferred-technician-to-a-service-order"></a><span data-ttu-id="4d019-115">サービス注文への優先技術者の割り当て</span><span class="sxs-lookup"><span data-stu-id="4d019-115">Assign a preferred technician to a service order</span></span>
+## <a name="assign-a-preferred-technician-to-a-service-order"></a><span data-ttu-id="82cdc-115">サービス注文への優先技術者の割り当て</span><span class="sxs-lookup"><span data-stu-id="82cdc-115">Assign a preferred technician to a service order</span></span>
 
-1.  <span data-ttu-id="4d019-116">**サービス管理** \> **定期処理** \> **派遣表** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d019-116">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="82cdc-116">**サービス管理** \> **定期処理** \> **派遣表** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="82cdc-116">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
     
 
     > [!NOTE]
-    > <P><span data-ttu-id="4d019-117"><STRONG>派遣表</STRONG>フォームで、表示する派遣活動の日付範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="4d019-117">In the <STRONG>Dispatch board</STRONG> form, specify a date range for dispatch activities to view.</span></span> <span data-ttu-id="4d019-118">さらに、終了した活動を表示するかどうか、および派遣活動リストを自分が所属するチームまたは監視する権限があるチームに制限するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4d019-118">Also, specify whether to display closed activities and whether to limit the dispatch activity list to teams that you belong to or are authorized to monitor.</span></span> <span data-ttu-id="4d019-119"><STRONG>OK</STRONG>をクリックして<STRONG>派遣表</STRONG>フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="4d019-119">Click <STRONG>OK</STRONG> to open the <STRONG>Dispatch board</STRONG>.</span></span></P>
+    > <P><span data-ttu-id="82cdc-117"><STRONG>派遣表</STRONG>フォームで、表示する派遣活動の日付範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="82cdc-117">In the <STRONG>Dispatch board</STRONG> form, specify a date range for dispatch activities to view.</span></span> <span data-ttu-id="82cdc-118">さらに、終了した活動を表示するかどうか、および派遣活動リストを自分が所属するチームまたは監視する権限があるチームに制限するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="82cdc-118">Also, specify whether to display closed activities and whether to limit the dispatch activity list to teams that you belong to or are authorized to monitor.</span></span> <span data-ttu-id="82cdc-119"><STRONG>OK</STRONG>をクリックして<STRONG>派遣表</STRONG>フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="82cdc-119">Click <STRONG>OK</STRONG> to open the <STRONG>Dispatch board</STRONG>.</span></span></P>
 
 
 
-2.  <span data-ttu-id="4d019-120">変更するサービス活動の明細行を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d019-120">Select the line of the service activity to modify.</span></span>
+2.  <span data-ttu-id="82cdc-120">変更するサービス活動の明細行を選択します。</span><span class="sxs-lookup"><span data-stu-id="82cdc-120">Select the line of the service activity to modify.</span></span>
 
-3.  <span data-ttu-id="4d019-121">**関連** タブで、**作業者** リストを使用して、適切な派遣チームのメンバをサービス コールの優先技術者として割り当てます。</span><span class="sxs-lookup"><span data-stu-id="4d019-121">On the **Related** tab, use the **Worker** list to assign a member of the appropriate dispatch team as the preferred technician for the service call.</span></span>
+3.  <span data-ttu-id="82cdc-121">**関連** タブで、**作業者** リストを使用して、適切な派遣チームのメンバをサービス コールの優先技術者として割り当てます。</span><span class="sxs-lookup"><span data-stu-id="82cdc-121">On the **Related** tab, use the **Worker** list to assign a member of the appropriate dispatch team as the preferred technician for the service call.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4d019-122">参照</span><span class="sxs-lookup"><span data-stu-id="4d019-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="82cdc-122">参照</span><span class="sxs-lookup"><span data-stu-id="82cdc-122">See also</span></span>
 
-[<span data-ttu-id="4d019-123">サービス契約の作成および締結の概要</span><span class="sxs-lookup"><span data-stu-id="4d019-123">Develop and establish service agreements overview</span></span>](service-agreements.md)
+[<span data-ttu-id="82cdc-123">サービス契約の作成および締結の概要</span><span class="sxs-lookup"><span data-stu-id="82cdc-123">Develop and establish service agreements overview</span></span>](service-agreements.md)
 
-[<span data-ttu-id="4d019-124">サービス注文の手動作成</span><span class="sxs-lookup"><span data-stu-id="4d019-124">Create service orders manually</span></span>](create-service-orders-manually.md)
+[<span data-ttu-id="82cdc-124">サービス注文の手動作成</span><span class="sxs-lookup"><span data-stu-id="82cdc-124">Create service orders manually</span></span>](create-service-orders-manually.md)
 
-<span data-ttu-id="4d019-125">[サービス契約 (フォーム)](https://technet.microsoft.com/library/aa617823\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="4d019-125">[Service agreements (form)](https://technet.microsoft.com/library/aa617823\(v=ax.60\))</span></span>
+<span data-ttu-id="82cdc-125">[サービス契約 (フォーム)](https://technet.microsoft.com/library/aa617823\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="82cdc-125">[Service agreements (form)](https://technet.microsoft.com/library/aa617823\(v=ax.60\))</span></span>
   
 
 
