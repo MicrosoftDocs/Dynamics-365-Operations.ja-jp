@@ -2,11 +2,9 @@
 title: 作業者が生産現場の実行インターフェイスを使用する方法
 description: このトピックでは、作業者の視点から生産現場の実行インターフェイスを使用する方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500793"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814659"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>作業者が生産現場の実行インターフェイスを使用する方法
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 生産現場の実行インターフェイスはタッチ操作に最適化されています。 この設計は、作業現場環境のアクセシビリティ要件を満たすビジュアル コントラストを提供します。 これはジョブ カード デバイスと同じ機能をすべて備えています。 ただし、ジョブ リストから複数のジョブを並行して開始することもできます。 (この機能は、*ジョブ バンドル* と呼ばれることもあります)。さらに、作業者は Microsoft Dynamics 365 ガイドで作成されたガイドをジョブ リストから開くことができます。 このようにして、これらのユーザーは HoloLens で視覚的な指示を得ることができます。
 
@@ -90,7 +87,7 @@ ms.locfileid: "5500793"
 
 1. **設定** - ギア アイコンを選択して、選択したマシン資産に対して表示するカウンタを選択できるダイアログボックスを開きます。 これらのカウンタの値は、**資産管理** タブの上部 に表示されます。次のスクリーン ショットで示す **設定** メニューでは、最大 4 つのカウンターを有効にできます。 有効にするカウンターごとに、上部にあるルックアップ フィールドを使用してカウンターを選択します。 ルックアップ フィールドには、**資産管理** ページの最上部で選択された資産に関連付けられているカウンターすべてが 一覧表示されます。 各カウンターを設定して、カウンターの **集計** 値または 最新の **実際** 値を監視します。 たとえば、コンピュータの実行時間を追跡するカウンターを設定する場合は、それを **集計** に設定する必要があります。 最新の更新された温度または温度を測定するためにカウンターを設定する場合は、**実際** に設定する必要があります。 **OK** を選択して設定を保存し、ダイアログ ボックスを閉じます。
 
-    ![マイ マシン タブ](media/pfei-my-machine-tab-settings.png "マイ マシン タブ")
+    ![マイ マシン タブの設定](media/pfei-my-machine-tab-settings.png "マイ マシン タブの設定")
 
 1. **メンテナンスの要求** - このボタンをクリックすると、メンテナンス要求を作成するダイアログ ボックスが開きます。 説明とメモを入力できます。 この要求は Supply Chain Management のユーザーの注意を引き、その後メンテナンス要求をメンテナンス作業オーダーに変換することができます。
 1. **ダウンタイムの登録** - マシンのダウンタイムを登録するダイアログ ボックスを開く場合は、このボタンを選択します。 理由コードを選択し、ダウンタイムの日付/期間を入力できます。 マシンのダウンタイムの登録は、マシン資産の効率計算に使用されます。

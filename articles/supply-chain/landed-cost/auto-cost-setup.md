@@ -2,7 +2,6 @@
 title: 自動原価の設定
 description: このトピックでは、さまざまな帰航レベルに対して原価ルールを設定する方法について説明します。 これらのルールに基づいて、原価が計算され、自動的に追加されます。 したがって、原価を手動で追加する必要はありません。
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 86dcbfbe6e00e7324e29541da6d682794e7487b3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 2e9135019323db74a4dca9343d315cbbf9683e32
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501153"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841962"
 ---
 # <a name="auto-costs-setup"></a>自動原価の設定
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 **自動原価** ページを使用すると、さまざまな原価領域 (航海、出荷コンテナー、フォリオ、発注書、品目、移動オーダー明細行など) の原価ルールを設定できます。 ルールと、ユーザーが 1 つの原価領域のレコードを作成するときに選択するフィールドに基づいて、原価が計算され、自動的に追加されます。 したがって、原価を手動で追加する必要はありません。
 

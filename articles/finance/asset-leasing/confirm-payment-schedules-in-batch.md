@@ -2,11 +2,9 @@
 title: 資産リースの支払いスケジュールをバッチで確認する
 description: このトピックでは、複数の支払スケジュールをバッチで確認する方法について説明します。
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0275fda306a58159a982b342622b9b6a18fa5b71
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9a3bd7293fed4b8df5d7bd76edacbcae253aa1f5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225517"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816079"
 ---
 # <a name="confirm-asset-leasing-payment-schedules-in-a-batch"></a>資産リースの支払いスケジュールをバッチで確認する
 

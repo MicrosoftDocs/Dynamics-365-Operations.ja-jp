@@ -2,11 +2,9 @@
 title: 資産除去責務がある固定資産の取得
 description: 日本では、資産除去責務 (ARO) は現在の値に割引され、固定資産の取得原価に追加されます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 97c6959548be947cbecc8b9675a1d632f131b715
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b2a5ca5c65d8a3d406b79429a23a38b1dbb5e9d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228050"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832547"
 ---
 # <a name="acquire-a-fixed-asset-with-asset-retirement-obligations"></a>資産除去責務がある固定資産の取得
 

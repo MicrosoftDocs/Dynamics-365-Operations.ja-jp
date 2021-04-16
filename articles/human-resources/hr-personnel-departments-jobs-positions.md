@@ -2,11 +2,9 @@
 title: 部門、職務、職位を使用した従業員の編成
 description: 部門、職務、および職位は、人事管理で管理される組織の要素です。 この記事では、これらの要素についての概念に関する情報を説明します。
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: eb0c50d9030be75947c65e921b3c6d3ba729a0d2
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 48427bb52d4e398edba152ff25e28c3625b6a5d3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464479"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803588"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>部門、職務、職位を使用した従業員の編成
 

@@ -2,11 +2,9 @@
 title: 訂正票で割引がある一部の顧客支払の決済
 description: この記事は、貸方票に現金割引が適用され、元の請求書にも現金割引がある場合のシナリオについて説明します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22354efbf75710bbc34f2b701f68be2083d91bac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e785d591c25669d90c91ca1b676388522da3da36
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5221012"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835175"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>訂正票で割引がある一部の顧客支払の決済
 

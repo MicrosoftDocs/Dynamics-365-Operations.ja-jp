@@ -2,11 +2,9 @@
 title: 福利厚生管理でアフォーダブル ケア法のレポートを生成する
 description: このトピックでは、福利厚生管理を使用して、Form1095-B および Form 1095-C でアフォーダブル ケア法 (ACA) の雇用主の命令に関して報告された情報を追跡する方法について説明します。
 author: andreabichsel
-manager: tfehr
 ms.date: 12/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 24df18f428e4ca14859bc34048a6bda5e03d1b2f
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: a41195ea3b52a707ce9deae38f12eb90de2ff5aa
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464377"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805805"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>福利厚生管理で ACA レポートを生成する
 

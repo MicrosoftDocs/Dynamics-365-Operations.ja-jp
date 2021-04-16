@@ -1,12 +1,10 @@
 ---
-title: イタリア向け電子請求書のアドオンの使用を開始する
-description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management におけるイタリアの電子請求アドオンで使用する電子請求アドオンを使い始める際に有用な情報を提供します。
+title: イタリア用電子請求の使用を開始する
+description: このトピックでは、イタリア向けの電子請求の使用を開始するにあたっての情報を提供します。
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,26 +15,26 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9c50000c98bdde2c9da43b3110686aa5d01e8081
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259223"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840103"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>イタリア向け電子請求書のアドオンの使用を開始する
+# <a name="get-started-with-electronic-invoicing-for-italy"></a>イタリア用電子請求の使用を開始する
 
 [!include [banner](../includes/banner.md)]
 
 
 > [!IMPORTANT]
-> イタリア向けの電子請求書アドオンは、現時点では Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management の電子請求書で利用できるすべての機能に対応していない可能性があります。 
+> イタリア向けの電子請求は、現時点では Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management の電子請求書で利用できるすべての機能に対応していない可能性があります。 
 
-このトピックでは、イタリア向けの電子請求書作成アドオンの使用を開始するにあたっての情報を提供します。 このガイドでは、Regulatory Configuration Services (RCS) 、財務における、国ごとに異なる構成手順について説明します。 また、サービスを介してイタリア固有の **FatturaPA** 形式で生成された電子請求書を送信するための手順、および処理の結果を確認する方法についても説明します。
+このトピックでは、イタリア向けの電子請求の使用を開始するにあたっての情報を提供します。 このガイドでは、Regulatory Configuration Services (RCS) 、財務における、国ごとに異なる構成手順について説明します。 また、サービスを介してイタリア固有の **FatturaPA** 形式で生成された電子請求書を送信するための手順、および処理の結果を確認する方法についても説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
-このトピックの手順を実行する前に、 [電子請求アドオンを使用する](e-invoicing-get-started.md)に記載の手順を完了する必要があります。
+このトピックの手順を実行する前に、 [電子請求の使用を開始する](e-invoicing-get-started.md)に記載の手順を完了する必要があります。
 
 ## <a name="rcs-setup"></a>RCS の設定
 
@@ -48,7 +46,7 @@ RCS の設定を行う際には、次の作業を実行します :
 4. 電子請求書機能を公開する。
 
 > [!NOTE]
-> "電子請求のアドオン機能" は、電子請求書のアドオン サーバーを使用するように構成および公開されたリソースの総称です。 この場合は、顧客の電子請求書のエクスポートは、これから設定を行う電子請求書の機能となります。
+> "電子請求機能" は、電子請求書のアドオン サーバーを使用するように構成および公開されたリソースの総称です。 この場合は、顧客の電子請求書のエクスポートは、これから設定を行う電子請求書の機能となります。
 
 ## <a name="import-the-e-invoicing-feature"></a>電子請求書機能をインポートする
 
@@ -153,7 +151,7 @@ RCS の設定を行う際には、次の作業を実行します :
 
 ![電子請求書機能の状態を変更する](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance"></a>財務における電子請求書のアドオン統合を設定する
+## <a name="set-up-electronic-invoicing-integration-in-finance"></a>財務における電子請求統合を設定する
 
 財務の設定を行う際には、次の作業を実行します :
 
@@ -193,17 +191,17 @@ RCS の設定を行う際には、次の作業を実行します :
 
 財務の処置を行う際には、次の作業を実行します :
 
-1. 電子請求書のアドオンを介してイタリア向けの電子請求書を生成する
+1. 電子請求を介してイタリア向けの電子請求書を生成する
 2. 実行ログを表示し、処理結果を確認する
 
 ### <a name="generate-electronic-invoices"></a>一般的な電子請求書
 
-**構成可能な電子請求のアドオン統合** 機能を有効にして、**IT00036** 機能を有効にすると、イタリア向けの電子請求書を生成する従来の財務プロセスは使用できなくなります。 これは、**電子ドキュメントの送信** という名前の新しいプロセスによって置き換えられ ます。
+**構成可能な電子請求の統合** 機能を有効にして、**IT00036** 機能を有効にすると、イタリア向けの電子請求書を生成する従来の財務プロセスは使用できなくなります。 これは、**電子ドキュメントの送信** という名前の新しいプロセスによって置き換えられ ます。
 
 電子請求書ドキュメントの要求に基づいてドキュメントを手動で送信することができます。
 
 > [!NOTE]
-> 続行する前に、イタリア向けの電子請求書に必要な設定が完了していることを確認してください。 詳細については、[顧客の電子請求書の作成](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices)を参照してください。 電子請求書のアドオンを有効化することで、そのトピックで説明されている一部の設定手順が使用できなくなる可能性があることに注意してください。
+> 続行する前に、イタリア向けの電子請求書に必要な設定が完了していることを確認してください。 詳細については、[顧客の電子請求書の作成](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices)を参照してください。 電子請求を有効化することで、そのトピックで説明されている一部の設定手順が使用できなくなる可能性があることに注意してください。
 
 1. **組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの送信** に移動します。
 2. ドキュメントを初めて送信する場合は、**ドキュメントの再送信** オプションを **いいえ** に設定します。 サービスを使用してドキュメントを再送信する必要がある場合は、このオプションを **はい** に設定します。
@@ -220,7 +218,7 @@ RCS の設定を行う際には、次の作業を実行します :
 2. **OK** を選択して **照会** ダイアログ ボックスを閉じます。
 3. **OK** を選択し、選択したドキュメントを送信します。
 
-> 注意 : このサービスを利用して初めて書類を提出する際は、電子請求書アドオンとの接続を確認するように促されます。 **ここをクリックして電子ドキュメント送信サービスに接続する** を選択します。
+> ![注記] このサービスを利用して初めて書類を提出する際は、電子請求との接続を確認するように促されます。 **ここをクリックして電子ドキュメント送信サービスに接続する** を選択します。
 
 #### <a name="view-submission-logs"></a>送信ログの表示
 
@@ -242,9 +240,9 @@ RCS の設定を行う際には、次の作業を実行します :
 
 ## <a name="related-topics"></a>関連トピック
 
-- [電子請求書アドオン機能の概要](e-invoicing-service-overview.md)
-- [電子請求書のアドオンの使用を開始する](e-invoicing-get-started.md)
-- [電子請求のアドオン設定](e-invoicing-setup.md)
+- [電子請求の概要](e-invoicing-service-overview.md)
+- [電子請求の使用を開始する](e-invoicing-get-started.md)
+- [電子請求の設定](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

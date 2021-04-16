@@ -1,12 +1,10 @@
 ---
 title: メンテナンス計画
 description: このトピックでは、資産管理におけるメンテナンス計画について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500817"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839610"
 ---
 # <a name="maintenance-plans"></a>メンテナンス計画
 
@@ -195,8 +193,6 @@ ms.locfileid: "5500817"
 
 ## <a name="counter-based-maintenance-enhancements"></a>カウンター ベースのメンテナンス強化
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 *カウンター ベースのメンテナンス拡張* 機能では、次の機能が導入されています。
 
 - 資産の作成時に、値が *0* (ゼロ) のカウンターを自動的に挿入するオプション。 このオプションは、カウンターに基づく先行メンテナンスを使用する場合に便利です。 *カウンター ベースの保守拡張* 機能を使用しない場合、値が *0 (ゼロ)* のカウンターを手動で挿入する必要があります。
@@ -209,7 +205,7 @@ ms.locfileid: "5500817"
 この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール:** *資産管理*
-- **機能名:** *(プレビュー) カウンター ベースのメンテナンス拡張機能*
+- **機能名 :** *カウンター ベースのメンテナンス拡張機能*
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>資産の作成時にカウンターを作成および初期化する
 

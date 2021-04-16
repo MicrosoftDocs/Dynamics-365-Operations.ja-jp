@@ -2,7 +2,6 @@
 title: レべル 1 Retail Server 仮想マシンに対してデバッグする eコマースの開発環境の設定
 description: このトピックでは、レべル 1 Retail Server 仮想マシン (VM) に対してデバッグする eコマースの開発環境を設定する方法について説明します。
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 35380a559a4f1b22bdf04ff25cb2bbfc51aff45b
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 5ef286aa28ff459befb72b0178f308e5fb85ec44
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585402"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801486"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>レべル 1 Retail Server 仮想マシンに対してデバッグする eコマースの開発環境の設定
 

@@ -2,11 +2,9 @@
 title: 控除のコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resources の控除を使用して、各給付金について従業員の給与から控除する金額 (必要な場合) を決定します。
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8cbe4de18334872e5a4c691864d703c95bd35559
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 4a916ca2d0d47407ff0d8cc2cc7ca179ecb59bae
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466161"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803660"
 ---
 # <a name="configure-deductions"></a>控除のコンフィギュレーション
 

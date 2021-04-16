@@ -2,11 +2,9 @@
 title: ウェーブ テンプレートのグループ化
 description: ウェーブ テンプレートのグループ化を使用すると、システムはウェーブ テンプレートの設定を使用して、定義した基準に基づいて、リリース済み明細行を分割して新規または既存のウェーブに割り当てる方法を決定することができます。 この機能は、特定の基準に基づいてウェーブが作成される倉庫で役立ちますが、マネージャーは手動ではなく自動的にウェーブを作成するすることもできます。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 520338683443105ffd1df7fc2569cd95a5f50879
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a591624f6611148abe4888e67d8d3a9bbea9cd27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245133"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838037"
 ---
 # <a name="wave-template-grouping"></a>ウェーブ テンプレートのグループ化
 

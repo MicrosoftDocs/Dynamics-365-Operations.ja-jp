@@ -2,11 +2,9 @@
 title: 初期の顧客支払予測モデルを評価する (プレビュー)
 description: このトピックでは、顧客支払予測モデルを理解し、その有効性を評価するために実行できる手順について説明します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 9cbe0308902071c066d18ce71e6e33422207e8ba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245595"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818628"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>初期の顧客支払予測モデルを評価する (プレビュー)
 
@@ -68,7 +66,7 @@ Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** 
 
 このデータは、次の方法で拡張できます。
 
-|                          | 予測期限内 | 予測遅延 | 予測かなりの遅延 |
+| &nbsp;                   | 予測期限内 | 予測遅延 | 予測かなりの遅延 |
 |--------------------------|-------------------|----------------|---------------------|
 | 実際の期限内の支払   | **71**            | 0              | 21                  |
 | 実際の遅延支払      | 5                 | **0**          | 27                  |

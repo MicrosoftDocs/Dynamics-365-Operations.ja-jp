@@ -2,11 +2,9 @@
 title: 複数の転記階層の損金算入額のマスター データの設定
 description: この手順では、固定資産ルールと、複数の転記階層の損金算入額に必要なマスター データの作成について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetAdvancedRule_JP, AssetAdvancedRuleCreateEdit_JP,  AssetBookTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99809192892af64d27a2d0dc4dcd5c194e031449
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bc323b1df0152067a1e5dfa9f6e3ca28de30c9cd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258164"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832460"
 ---
 # <a name="set-up-master-data-for-inclusion-of-deductible-expenses-for-multiple-posting-layers"></a>複数の転記階層の損金算入額のマスター データの設定
 

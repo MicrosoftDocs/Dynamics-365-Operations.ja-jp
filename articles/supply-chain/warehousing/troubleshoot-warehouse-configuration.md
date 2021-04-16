@@ -2,11 +2,9 @@
 title: 倉庫コンフィギュレーションのトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management を構成する際に発生する可能性がある一般的な問題の修正方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 1dbd947f0740d22e0f79e6d5c272beb64715c8a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487100"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814395"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>倉庫コンフィギュレーションのトラブルシューティング
 
@@ -38,7 +36,7 @@ ms.locfileid: "5487100"
 
 ### <a name="issue-resolution"></a>問題の解決
 
-ライセンス プレート ID が別のものによって予約されていないことを確認してください。 この問題は、ウェアハウス アプリでユーザーがスキャンした値が有効な場所と有効なライセンス プレート ID の両方である場合に発生します。 ただし、この問題はバージョン 10.0.11 で解決されました。
+ライセンス プレート ID が別のものによって予約されていないことを確認してください。 この問題は、倉庫管理モバイル アプリでユーザーがスキャンした値が有効な場所と有効なライセンス プレート ID の両方である場合に発生します。 ただし、この問題はバージョン 10.0.11 で解決されました。
 
 ## <a name="i-receive-the-following-error-message-license-plate-must-be-specified-for-this-location"></a>"この場所にはライセンス プレートを指定する必要があります" というエラー メッセージが表示されます。
 
@@ -82,7 +80,7 @@ ms.locfileid: "5487100"
 
 バージョン 10.0.15 では、新しい機能 *複数の SKU の場所ディレクティブのすべてのアクションを評価する* が追加されています ([KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091) を参照)。 この機能は、複数 SKU の場所ディレクティブのすべてのアクションを評価します。 この機能が必要な場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用してオンにします。
 
-## <a name="i-cant-use-the-warehouse-app-to-do-partial-picking"></a>倉庫アプリを使用して部分的なピッキングを実行できません。
+## <a name="i-cant-use-the-warehouse-management-mobile-app-to-do-partial-picking"></a>倉庫管理モバイル アプリを使用して部分的なピッキングを実行できません。
 
 ### <a name="issue-description"></a>問題の説明
 
@@ -100,7 +98,7 @@ ms.locfileid: "5487100"
 
 ### <a name="issue-resolution"></a>問題の解決
 
-作業者がこの変更を行うことができるようにするには、ウェアハウス アプリのメニュー項目を作成します。 **モバイル デバイスのメニュー項目** ページで、次の設定を持つメニュー項目を作成 (または編集) します。
+作業者がこの変更を行うことができるようにするには、倉庫管理モバイル アプリのメニュー項目を作成します。 **モバイル デバイスのメニュー項目** ページで、次の設定を持つメニュー項目を作成 (または編集) します。
 
 - **モード:** *作業*
 - **既存の作業を使用する :** *いいえ*
