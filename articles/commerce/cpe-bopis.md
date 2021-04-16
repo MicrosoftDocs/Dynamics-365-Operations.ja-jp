@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce の評価環境で BOPIS を構成する
 description: このトピックでは、プロビジョニング後の Microsoft Dynamics 365 Commerce 環境評価におけるオンライン購入、店舗での受け取り (BOPIS) の構成方法について説明します。
 author: rubendel
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71f2fb3882b51cdaed9b231cd605949195deca17
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 219504da62fd4637ed01f9acbab32f873cef81b0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213869"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795958"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境での BOPIS のコンフィギュレーション
 

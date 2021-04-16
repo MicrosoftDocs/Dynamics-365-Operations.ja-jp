@@ -2,11 +2,9 @@
 title: 自動クリーンアップ タスクを使用したパフォーマンスの最適化
 description: この記事では、バッチジョブ履歴をクリーンアップすることにより、Microsoft Dynamics 365 Human Resources での一部のパフォーマンスに関する問題を解決する方法について説明します。
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 8fef2152f7c65a6678e6cb94da8ea2bbe99ea51d
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 0372833c11e0919fa03d57ea258e81a89ab9ff31
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466691"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803948"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>自動クリーンアップ タスクを使用したパフォーマンスの最適化
 

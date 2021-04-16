@@ -2,11 +2,9 @@
 title: お気に入りの追加
 description: このトピックでは、サイトにお気に入りを追加する方法について説明します。
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 786ba02c312b7cdb3cf7f0689737084887d536bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9268bc74a4131256f5a2e88df833104db271b56a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206346"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797722"
 ---
-# <a name="add-a-favicon"></a>お気に入りの追加
+# <a name="add-a-favicon"></a>ファビコンの追加
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、サイトにお気に入りを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 お気に入りは小さなグラフィック ファイルで、Web ブラウザー タブ、アドレス バー、閲覧の履歴、およびブックマークやお気に入りなど、その他の場所内に表示されます。 サイトにお気に入りを追加することをお勧めします。それによりブランドを代表して強化し、顧客が閲覧する他のサイトと区別するのに役立ちます。
 

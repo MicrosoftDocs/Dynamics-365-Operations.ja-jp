@@ -2,11 +2,9 @@
 title: CSS 上書きファイルの作業
 description: このトピックでは、Microsoft Dynamics 365 Commerce のカスケード スタイル シート (CSS) 上書きファイルを使用する理由、タイミング、および方法について説明します。
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 41fb0be51f7af25faba1b860319aea84ae7a8b56
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ef96070fe77b46622667301c7c7c402909ee7dfc
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207802"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799496"
 ---
 # <a name="work-with-css-override-files"></a>CSS 上書きファイルの作業
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce のカスケード スタイル シート (CSS) 上書きファイルを使用する理由、タイミング、および方法について説明します。
-
-## <a name="overview"></a>概要
 
 通常、永続的なサイト スタイルは、サイトのテーマを通じて処理される必要があります。 テーマでは、サイトの任意のページにあるモジュールの基本的な CSS およびスタイル設定を提供します。 テーマは Dynamics 365 Commerce オンライン ソフトウェア開発キット (SDK) を使用して作成され、Microsoft Dynamics Lifecycle Services (LCS) を通じて Web サイトに配置されます。 SDK のテーマ デバッグ機能およびモジュール インターフェイス コンフィギュレーションは、サイト開発者がカスタマイズ可能でまとまりのあるサイト デザイン パッケージを作成するのに役立ちます。 これらのデザイン パッケージをサイトに配置すると、サイト作成者はサイト開発の代わりにコンテンツの作成、編集、公開に焦点を合わせることができます。
 

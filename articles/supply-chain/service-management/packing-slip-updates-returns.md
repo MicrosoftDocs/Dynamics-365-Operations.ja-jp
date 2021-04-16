@@ -2,11 +2,9 @@
 title: 返品による梱包明細票の更新
 description: 返品品目を在庫に入庫する前に、それらの品目が属する注文の梱包明細を更新する必要があります。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPackingSlipJournalHistory, SalesParmPackingSlipTrackingInformation
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87dfad2247c84f8e85074739cfff4a2d1b9f8567
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a9b5c7e5726c36aa963e5750c63df20c1e2e6c35
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259701"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810705"
 ---
 # <a name="packing-slip-updates-for-returns"></a>返品による梱包明細票の更新  
 

@@ -2,11 +2,9 @@
 title: 画像のアップロード
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像アップロードの方法について説明します。
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 51571ce221714598b2e2d39c76cb69dcb57cc52b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2a0a2fdb275cbeb65c06c01128e90ba660f98c9b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213797"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799232"
 ---
 # <a name="upload-images"></a>画像のアップロード
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像アップロードの方法について説明します。
-
-## <a name="overview"></a>概要
 
 コマース サイト ビルダーのメディア ライブラリーを使用すると、フォルダーを使用してイメージを単独または一括でアップロードできます。 イメージの変更コンポーネントを使用すると、さまざまなビューポートとそのブレークポイントに対する画像が自動的に最適化されるので、最大解像度と品質で画像のバージョンをアップロードする必要があります。
 
@@ -58,7 +54,8 @@ ms.locfileid: "5213797"
 - 従業員の画像は、"**/作業者/\{WorkerNumber\}.jpg**" という名前にする必要があります
 - 製品画像は、"**/製品/\{ProductNumber\}_000_001.png**" という名前にする必要があります
     - 001 は画像の順序で、001、002、003、004、または 005 とすることができます
-- 製品バリアントの画像は、"**/製品/\{ProductNumber\}\_\{サイズ\}\_\{色\}\_\{スタイル\}\_000_001.png**" という名前にする必要があります
+- 製品バリアントの画像は、"**/製品/\{ProductNumber\} \^ \{スタイル\} \^ \{サイズ\} \^ \{色\} \^\_000_001.png**" という名前にする必要があります
+    - 例 : 93039 \^ \^ 2 \^ Black \^_000_001.png
 
 ## <a name="upload-an-image"></a>画像のアップロード
 

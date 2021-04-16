@@ -2,11 +2,9 @@
 title: コンテンツを追加する方法
 description: このトピックでは、Microsoft Dynamics 365 Commerceサイト ビルダーの Web 作成ツール セットを使用してコンテンツを管理するための場所と方法の概要と選択リンクを示します。
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e6794e528d9fa6066d7246e99a3307bb1bdc9c78
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208066"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797578"
 ---
 # <a name="ways-to-add-content"></a>コンテンツを追加する方法
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの Web 作成ツールセットを使用してコンテンツを管理する方法に関する概要とドキュメントのリンクを示します。
-
-## <a name="overview"></a>概要
 
 サイトの概観、およびコンテンツを変更するには、さまざまな方法があります。 必要なカスタマイズ レベルによっては、これらの変更の多くを、Dynamics 365 Commerce に含まれている Web 作成ツールセットであるサイト ビルダー内の開発者以外のユーザーが実装することができます。 サイト ビルダーを使用すると、テンプレートの作成、テーマの選択、コードを記述せずにモジュールの選択やコンフィギュレーションを行うことができます。 これに対して、E コマース ソフトウェア開発キット (SDK) および Microsoft Dynamics Lifecycle Services (LCS) の配置ワークフローを使用する必要があるため、新しいテーマまたはモジュールを作成するには開発スキルが必要です。
 

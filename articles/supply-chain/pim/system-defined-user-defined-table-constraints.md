@@ -2,11 +2,9 @@
 title: システム定義およびユーザー定義のテーブル制約
 description: この記事では、製品コンフィギュレーション モデルのコンポーネントの 2 つのタイプのテーブル制約について説明します。ユーザー定義とシステム定義です。 テーブルの制約は、テーブルの各行が設定可能な各属性値の定義を表す許可された属性の組み合わせのマトリックスを表します。
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e922e7961cad5880e45cb2e86e3c084a52cd6b7c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7ddc7b9f0ccaa787b2297a253a7fdd9de11e9eee
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237451"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812687"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>システム定義およびユーザー定義のテーブル制約
 

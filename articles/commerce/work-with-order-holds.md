@@ -2,11 +2,9 @@
 title: コールセンターの注文保留のコンフィギュレーションと作業
 description: このトピックでは、Dynamics 365 Commerce を使用して注文を保留する方法について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cd7ad1bdb9d2421a4b5ad96755867d2a389464a6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 61a73f10c8a8b3386826f08184028d8d5e6508a4
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210854"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800386"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>コール センターの注文保留のコンフィギュレーションおよび作業
 

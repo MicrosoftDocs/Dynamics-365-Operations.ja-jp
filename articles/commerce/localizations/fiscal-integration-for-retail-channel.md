@@ -2,11 +2,9 @@
 title: コマース チャネルの会計統合の概要
 description: このトピックでは、Dynamics 365 Commerce で使用できる会計統合の機能の概要を提供します。
 author: josaw
-manager: annbe
 ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d766515d82e021f41e0cc0a9a877f25551817ad5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 155056eb3a2acd0d66e0ace8d5558929678cb8e3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250833"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798784"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>コマース チャネルの会計統合の概要
 

@@ -2,11 +2,9 @@
 title: 在庫設定を適用する
 description: このトピックでは在庫設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5d3737ee1534dd973a35e2ef64f1d58d5a74d5b3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b2c44eb5ece74de15e22180abc6d9d0448ab401b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211352"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798892"
 ---
 # <a name="apply-inventory-settings"></a>在庫設定の適用
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは在庫設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
-
-## <a name="overview"></a>概要
 
 在庫設定では、製品をカートに追加する前に在庫を確認するかどうかを指定します。 また、"在庫あり" や "残りわずか" などの在庫関連の販売促進メッセージも定義します。 これらの設定により、在庫切れの製品は購入できなくなります。
 

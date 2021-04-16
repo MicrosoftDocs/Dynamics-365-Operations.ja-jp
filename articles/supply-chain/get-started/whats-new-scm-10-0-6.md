@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Management 10.0.6 (2019 年 11 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.6 の新機能または変更された機能について説明します。
 author: josaw1
-manager: tfehr
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 77fdc3ae092fc8f214ae3ba68866244385e32b74
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2ea4da7a656a6696f41848575e37d2381fd3d3f1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263425"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809617"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1006-november-2019"></a>Dynamics 365 Supply Chain Management 10.0.6 (2019 年 11 月) の新機能および変更された機能
 

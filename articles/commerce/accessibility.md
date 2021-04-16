@@ -2,11 +2,9 @@
 title: ユーザー補助機能
 description: このトピックでは、Microsoft Dynamics 365 Commerce のユーザー補助機能について説明します。
 author: BrianShook
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 094ad8d34e13051ce7596be462070ead4cbc4f14
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 13f035a080eb41b4a69cc31b7275d87a5836c686
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206658"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796321"
 ---
 # <a name="accessibility-features-and-capabilities"></a>ユーザー補助機能
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce のユーザー補助機能について説明します。
-
-## <a name="overview"></a>概要
 
 ユーザー補助機能は、すべてのユーザーがアクセスしてアクションを実行して目標を達成できるようにする機能的手段を提供します。 この広範囲のユーザーには、聴覚、視覚、可動性、または神経多様性用の支援ツールが必要になる場合があります。
 

@@ -2,11 +2,9 @@
 title: テンプレートとレイアウトの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce のテンプレートとレイアウトについて説明します。
 author: phinneyridge
-manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 319e60f34c7e94cc56386b0f86ac83360f7b0456
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39fae603a8ae34a7500ead1d2d1cecff6dc65f1e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232594"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804044"
 ---
 # <a name="templates-and-layouts-overview"></a>テンプレートとレイアウトの概要
 

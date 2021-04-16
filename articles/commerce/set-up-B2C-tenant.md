@@ -2,11 +2,9 @@
 title: B2C テナントを Commerce に 設定
 description: このトピックでは、Dynamics 365 Commerce のユーザーサイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
 author: BrianShook
-manager: annbe
-ms.date: 06/22/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ee667bb49e70e0c881a2db1248b3f0c7fc017ce
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: f062f40c9eb883d02c4a0ee06c797ed1b0b22665
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478143"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793998"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
@@ -30,6 +28,12 @@ ms.locfileid: "5478143"
 このトピックでは、Dynamics 365 Commerce のユーザーサイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
 
 Dynamics 365 Commerce は Azure AD B2C を使用して、ユーザーの資格情報と認証フローをサポートします。 ユーザーは、これらのフローを使用して、登録、サインイン、およびパスワードのリセットを行うことができます。 Azure AD B2C では、ユーザー名やパスワードなどの機密性の高いユーザー認証情報を保存します。 B2C テナントのユーザー レコードには、B2C ローカル アカウント レコードまたは B2C ソーシャル ID プロバイダー レコードのいずれかが保存されます。 これらの B2C レコードは、Commerce 環境内の顧客レコードにリンクされます。
+
+> [!WARNING] 
+> Azure AD B2C は、2021 年 8 月 1 日までに古い (レガシ) ユーザー フローを破棄します。 したがって、ユーザー フローを新しい推奨バージョンに移行する必要があります。 新しいバージョンでは、機能パリティと新しい機能が提供されます。 推奨される B2C ユーザー フローには、Commerce のバージョン 10.0.15 以上のモジュール ライブラリを使用する必要があります。 詳細については、[Azure Active Directory B2C のユーザー フロー](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview) を参照してください。
+ 
+ > [!NOTE]
+ > Commerce 評価環境には、デモ用に Azure AD B2C テナントがプリロードされています。 評価環境では、次の手順を使用して独自の Azure AD B2C テナントを読み込む必要はありません。
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Azure ポータルでの既存の AAD B2C テナントの作成またはリンク
 
@@ -70,17 +74,21 @@ Dynamics 365 Commerce は Azure AD B2C を使用して、ユーザーの資格�
 
 ## <a name="create-the-b2c-application"></a>B2C アプリケーションを作成する
 
-B2C テナントが作成されたら、そのテナント内に B2C アプリケーションを作成して、コマース アクションを操作します。
+B2C テナントが作成されたら、自分の新しい Azure AD B2C テナント内に B2C アプリケーションを作成して、Commerce アクションを操作します。
 
 B2C アプリケーションを作成するには、次の手順に従います。
 
-1. Azure ポータルで、**アプリケーション (レガシ)** を選択し、**追加** を選択します。
-1. **名前** に、目的の AAD B2C アプリケーションの名前を入力します。
-1. **Web アプリ/Web API** で、**Web アプリ/Web API を含める** を **はい** と選択します。
-1. **暗黙的なフローを許可する** では、**はい** (既定値) を選択します。
-1. **返信 URL** で、専用の返信 URL を入力します。 返信 URL およびここでのフォーマットについては、[返信 URL](#reply-urls) を参照してください。
-1. **ネイティブ クライアントを含める** では、**いいえ** を選択します (既定値)。
-1. **作成** を選択します。
+1. Azure ポータルで、**アプリの登録** を選択し、**新規登録** を選択します。
+1. **名前** で、この Azure AD B2C 申請に使用する名前を入力します。
+1. **サポートされているアカウント タイプ** で、**任意の ID プロバイダまたは組織ディレクトリで [アカウント] を選択します (ユーザー フローによるユーザーの認証用)**。
+1. **リダイレクト URI** の場合は、専用の返信の URL を **Web** タイプとして入力します。 返信 URL およびここでのフォーマットについては、下記の [返信 URL](#reply-urls) を参照してください。
+1. **アクセス許可** については、**OpenID やオフラインアクセス権限をするための管理者の同意を得る** を選択します。
+1. **登録** を選択します。
+1. 新しく作成したアプリケーションを選択し、**認証** メニュー に移動 します。 ここでは、必要に応じてその他の **リダイレクト URL** を追加できます。 現在必要とされていない場合は次の手順に進みます。
+1. **暗黙的な付与** で、**アクセス トークン** と **IDトークン** の両方を選択してアプリケーションで有効にします。 **保存** を選択します。
+1. Azure ポータルの **概要** メニューに移動し、**アプリケーション (クライアント) ID** をコピーします。 この ID は、後の設定手順 (後で **クライアント GUID** として参照) に使用します 。
+
+Azure AD B2C のアプリの登録の追加情報については、[Azure Active Directory B2C の新しいアプリケーション登録 エクスペリエンス](https://docs.microsoft.com/azure/active-directory-b2c/app-registrations-training-guide) を参照してください。
 
 ### <a name="reply-urls"></a>返信 URL
 
@@ -102,7 +110,7 @@ Azure AD B2Cでは、次の 3 つの基本的なユーザー フロー タイプ
 
 Azure AD が提供する既定のユーザー フローを使用するように選択できます。これにより、AAD B2Cでホストされるページが表示されます。 また、HTML ページを作成して、これらのユーザー フローのエクスペリエンスの外観をコントロールすることもできます。 
 
-Dynamics 365 Commerce のユーザー ポリシー ページをカスタマイズするには、[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)を参照してください。 詳細については[Azure Active Directory B2C のユーザーエクスペリエンスのインターフェイスをカスタマイズする](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui)を参照してください。
+Dynamics 365 Commerce に組み込まれたページでユーザー ポリシー ページをカスタマイズするには、[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md) を参照してください。 詳細については[Azure Active Directory B2C のユーザーエクスペリエンスのインターフェイスをカスタマイズする](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui)を参照してください。
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>登録を作成し、ユーザー フロー ポリシーにサインインする
 
@@ -110,7 +118,7 @@ Dynamics 365 Commerce のユーザー ポリシー ページをカスタマイ�
 
 1. Azure ポータルで、左のナビゲーション ウィンドウの **ユーザー フロー (ポリシー)** を選択します。
 1. **Azure AD B2C – ユーザー フロー (ポリシー)** ページで、**新しいユーザー フロー** を選択します。
-1. **推奨** タブで、**登録してサインイン** を選択します。
+1. **サインアップとサインイン** ポリシーを選択して、**推奨** バージョンを選択します。
 1. **名前** に、ポリシー名を入力します。 この名前は、後でポータルによって割り当てられる接頭語 (「B2C_1_」など) で表示されます。
 1. **ID プロバイダー** の下で、適切なチェック ボックスをオンにします。
 1. **マルチファクター認証** で、会社に適した選択肢を選択します。 
@@ -140,9 +148,9 @@ Dynamics 365 Commerce のユーザー ポリシー ページをカスタマイ�
 
 1. Azure ポータルで、左のナビゲーション ウィンドウの **ユーザー フロー (ポリシー)** を選択します。
 1. **Azure AD B2C – ユーザー フロー (ポリシー)** ページで、**新しいユーザー フロー** を選択します。
-1. **推奨** タブで、**プロファイルの編集** を選択します。
+1. **プロファイルの編集** を選択し、**推奨** バージョン を選択します。
 1. **名前** で、プロファイル編集ユーザー フローを入力します。 この名前は、後でポータルによって割り当てられる接頭語 (「B2C_1_」など) で表示されます。
-1. **ID プロバイダー** で、**ローカル アカウント サインイン** を選択します。
+1. **ID プロバイダー** で、**メール サインイン** を選択します。
 1. **ユーザー属性** で、次のチェック ボックスを選択します。
     - **電子メール アドレス** (**返品クレーム** のみ)
     - **指定された名前** (**収集属性** および **返品クレーム**)
@@ -161,7 +169,7 @@ Dynamics 365 Commerce のユーザー ポリシー ページをカスタマイ�
 
 1. Azure ポータルで、左のナビゲーション ウィンドウの **ユーザー フロー (ポリシー)** を選択します。
 1. **Azure AD B2C – ユーザー フロー (ポリシー)** ページで、**新しいユーザー フロー** を選択します。
-1. **推奨** タブで、**パスワードのリセット** を選択します。
+1. **パスワードのリセット** を選択し、**推奨** バージョン を選択します。
 1. **名前** に、パスワード リセット ユーザー フローの名前を入力します。
 1. **ID プロバイダー** で、**電子メール アドレスを使用したパスワードのリセット** を選択します。
 1. **作成** を選択します。
@@ -225,6 +233,9 @@ Dynamics 365 Commerce のユーザー ポリシー ページをカスタマイ�
 
 次の図は、ソーシャル ID プロバイダーのサインイン ボタンが表示された既定のサインイン画面の例を示しています。
 
+> [!NOTE]
+> ユーザー フローに対して Commerce に組み込みのカスタム ページを使用する場合は、Commerce モジュール ライブラリの機能拡張機能を使用して、ソーシャル ID プロバイダ用のボタンを追加する必要があります。 また、特定のソーシャル ID プロバイダを使用してアプリケーションを設定する際に、URL や構成文字列で大文字と小文字が区別される場合があります。 詳細については、ソーシャル ID プロバイダの接続手順を参照してください。
+ 
 ![ソーシャル ID プロバイダーのサインイン ボタンが表示された既定のログイン画面の例](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>新しい Azure AD B2C 情報でコマース本社を更新する
@@ -250,12 +261,19 @@ Dynamics 365 Commerce のユーザー ポリシー ページをカスタマイ�
 ### <a name="obtain-issuer-url"></a>発行者 URL の取得
 
 ID プロバイダー発行者 URL を取得するには、次の手順を実行します。
+1. Azure portal の Azure AD B2C ページで、**新規登録とログイン** ユーザー フローに移動します。
+1. 左ナビゲーション メニューの **ページ レイアウト** を選択し、**レイアウト名** で **統合された新規登録またはログイン ページ** を選択し、**ユーザー フローの実行** を 選択します 。
+1. アプリケーションが上で作成された目的の Azure AD B2C アプリケーションに設定されていないことを確認し、``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>`` を含む **ユーザー フローの実行** ヘッダーの下のリンク を選択します 。
+1. メタデータ ページがブラウザのタブに表示されます。ID プロバイダの発行者 URL (**発行者** の値) をコピーします 。
+   - 例: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``。
+ 
+**OR**: 同じメタデータ URL を手動で作成するには、次の手順を実行します。
 
 1. B2C テナントとポリシーを使用して、次の形式でメタデータ アドレスの URL を作成します。``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
     - 例: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``。
 1. メタデータ アドレス URL をブラウザーのアドレス バーに入力します。
 1. メタデータで、ID プロバイダー発行者 URL (**発行者** の値) をコピーします。
-    - 例: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``。
+    - 例: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``。
 
 ## <a name="configure-your-b2c-tenant-in-commerce-site-builder"></a>コマース サイト ビルダーでの B2C テナントのコンフィギュレーション
 
@@ -350,7 +368,7 @@ B2C テナントの **ユーザー** セクションには、オプションで�
 
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 
-[URL リダイレクトの一括アップロード](upload-bulk-redirects.md)Dynamics 365 Commerce サイトとオンライン チャネルの関連付け
+[URL リダイレクトの一括アップロード](upload-bulk-redirects.md)
 
 [ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
 

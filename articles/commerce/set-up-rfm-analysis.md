@@ -2,11 +2,9 @@
 title: Recency、頻度、および金融 (RFM) 分析の設定
 description: このトピックでは、顧客の Recency、頻度、および金融 (RFM) 分析の設定方法について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6a5f87d005b41bb7f3910661e67a69e28685acb4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0eece0678335caa789f0b2c4a324deab6832b53c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234440"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795480"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency、頻度、および金融 (RFM) 分析の設定
 

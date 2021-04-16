@@ -2,11 +2,9 @@
 title: 標準原価の前提条件概要
 description: このトピックでは、標準原価を使用するための基本的な手順について説明します。
 author: AndersGirke
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv, CostingVersion
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee676afbde465c1abb4fe4ae94e9f162f695d994
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 92f80ecc611e68210e24e59b696724e1bc9c3a06
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263473"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809665"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>標準原価の前提条件概要
 

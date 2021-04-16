@@ -2,11 +2,9 @@
 title: LinkedIn タレント ハブとの統合
 description: このトピックでは、Microsoft Dynamics 365 Human Resources と LinkedIn タレント ハブ間の統合を設定する方法について説明します。
 author: jaredha
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2a017d67177bcbee86abf920cf8d83f37312c5eb
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: efcac2bd82956015eb822c6a493b8625a35cd194
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465201"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805061"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn タレント ハブとの統合
 

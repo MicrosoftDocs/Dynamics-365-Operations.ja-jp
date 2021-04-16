@@ -2,11 +2,9 @@
 title: マスター プランのトラブルシューティング
 description: このトピックでは、マスター プランを操作する際に発生する可能性がある問題の修正方法について説明します。
 author: SmithaNataraj
-manager: tfehr
 ms.date: 11/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: db336946873fa1b5cc3f669823541af8cab4115b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8e78634c0efb1c401297559ce40b2ca30519f3bf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216108"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809473"
 ---
 # <a name="troubleshoot-master-planning"></a>マスター プランのトラブルシューティング
 

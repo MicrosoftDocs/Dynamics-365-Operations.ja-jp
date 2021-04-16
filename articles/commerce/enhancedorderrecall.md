@@ -2,11 +2,9 @@
 title: POS での注文の取り消し操作
 description: このトピックでは、POS の注文の取り消しページを改善するために使用できる機能について説明します。
 author: hhainesms
-manager: annbe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 174821fce4baf81e4298da4b066f855bfec98ca5
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 2f7ad4f53917bb607afe84a2c457518c3f8f7a08
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585133"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799109"
 ---
 # <a name="recall-order-operation-in-pos"></a>POS での注文の取り消し操作
 

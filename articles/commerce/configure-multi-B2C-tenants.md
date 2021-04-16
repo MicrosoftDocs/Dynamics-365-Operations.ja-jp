@@ -2,11 +2,9 @@
 title: Commerce 環境での複数の B2C テナントのコンフィギュレーション
 description: このトピックでは、専用の Dynamics 365 Commerce 環境で、複数のチャネルごとの Microsoft Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントの設定時期と方法について説明します。
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ddc8cea42ab0b5a319d4725ce8c75e57529cc63
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477759"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796102"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Commerce 環境での複数の B2C テナントのコンフィギュレーション
 
@@ -55,10 +53,6 @@ Dynamics 365 Commerce では Azure AD B2C クラウド ID サービスを使用�
 
 同じ Commerce 環境にあるチャネルごとに個別の B2C テナントが必要であると判断した場合は、次のセクションの手順を実行し、この機能を要求します。
 
-## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>お客様の環境でチャネルごとの B2C を有効にすることを要求
-
-現在、チャネルごとに個別の B2C テナントを同じ Commerce 環境で使用できるようにするには、Dynamics 365 Commerce に要求を提出する必要があります。 詳細については、[Lifecycle Services (LCS) のサポートを受ける](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照するか、または Commerce ソリューションへ連絡し相談してください。
-
 ## <a name="configure-b2c-tenants-in-your-environment"></a>お客様の環境での B2C テナントのコンフィギュレーション
 
 使用している環境で B2C テナントをコンフィギュレーションするには、このセクションの該当する手順を実行します。
@@ -79,11 +73,11 @@ Azure AD B2C テナントをお客様の環境に追加するには、次の手�
     - **クライアント GUID**: Azure ポータルに表示されるとおりに Azure AD B2C テナント ID (B2C テナントのアプリケーション ID ではない) を入力します。
     - **Profile Policy ID を編集**: ポリシー ID (Azure ポータルのポリシーの名前) を入力します。
 
-1. 情報の入力が完了したら、**承認** を選択して変更を保存します。
+1. 情報の入力が完了したら、**承認** を選択して変更を保存します。 新しい Azure AD B2C テナントが、**B2C Applications の管理** 下の一覧に表示されるようになります。
 
 > [!NOTE]
 > Dynamics 365 Commerce チームがそれらを設定するよう指示しない限り、**スコープ**、**Non Interactive Policy ID**、**Non Interactive Client ID**、**Custom Domain をログイン** および **Policy ID をサインアップ** ブランクなどのフィールドを残す必要があります。
-新しい Azure AD B2C テナントが、**B2C Applications の管理** 下の一覧に表示されるようになります。
+
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Azure AD B2C テナントの管理または削除
 
@@ -97,6 +91,7 @@ Azure AD B2C テナントをお客様の環境に追加するには、次の手�
 > ライブまたは公開サイトに対して B2C テナントをコンフィギュレーションすると、ユーザーはテナントに存在するアカウントを使用してサインアップした可能性があります。 **テナントの設定 \> B2C テナント** メニュー上でコンフィギュレーションされたテナントを削除する場合、テナントのチャネルに関連付けられているサイトから B2C テナントのアソシエーションを削除することになります。 この場合、ユーザーは自分のアカウントにログインできなくなる場合があります。 したがって、コンフィギュレーション済のテナントを削除する場合は細心の注意を払ってください。
 >
 > コンフィギュレーションされたテナントを削除すると、B2C テナントとレコードが引き続き維持されますが、そのテナントの Commerce システム コンフィギュレーションは変更または削除されます。 サイトへサイン アップまたはサイト インを試みるユーザーは、サイトのチャネルに対してコンフィギュレーションされた既定または新しく関連付けられた B2C テナントに新しいアカウント レコードが作成されます。
+
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>B2C テナントでのチャネルのコンフィギュレーション
 
 1. システム管理者として使用環境の Commerce サイト ビルダーにログインします。Azure AD B2C テナントをコンフィギュレーションするには、Commerce 環境のシステム管理者である必要があります。

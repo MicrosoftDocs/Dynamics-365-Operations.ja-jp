@@ -2,11 +2,9 @@
 title: コンテンツ配信ネットワーク (CDN) のサポートの追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce 環境にコンテンツ配信ネットワーク (CDN) を追加する方法について説明します。
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
-ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5582722"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797842"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>コンテンツ配信ネットワーク (CDN) のサポートの追加
 
@@ -39,13 +37,9 @@ Dynamics 365 Commerce の E コマース環境を設定すると、CDN サービ
 
 さらに、コマースからの *静的* (JavaScript または カスケード スタイル シート \[CSS\] ファイル) は、コマースが生成したエンドポイント (\*.commerce.dynamics.com) から提供されます。 静的は、コマースが生成したホスト名またはエンドポイントが CDN の後に配置される場合にのみキャッシュできます。
 
-## <a name="set-up-ssl"></a>SSL のセットアップ
+## <a name="set-up-ssl"></a>SSL を設定する
 
-SSL が設定され、その静的が確実にキャッシュされるようにするには、環境に対してコマースが生成したホスト名に関連付けられるよう CDN をコンフィギュレーションする必要があります。 また、次のパターンを静的に対してのみキャッシュする必要があります。 
-
-/\_msdyn365/\_scnr/\*
-
-指定されたカスタム ドメインを使用してコマース環境をプロビジョニングした後、またはサービス要求を使用して環境のカスタム ドメインを指定した後、カスタム ドメインをコマースが生成したホスト名またはエンドポイントに向けます。
+指定されたカスタム ドメインを使用してコマース環境をプロビジョニングした後、またはサービス要求を使用して環境のカスタム ドメインを指定した後は、コマースのオンボーディング チームと協力してDNS の変更を計画する必要があります。
 
 前述のように、生成したホスト名またはエンドポイントは、\*.commerce.dynamics.com に対してのみ SSL 証明書をサポートします。 カスタム ドメインに対する SSL はサポートしません。
 
@@ -62,7 +56,7 @@ CDN の設定プロセスは、次の一般的な手順で構成されていま�
 
 1. フロント エンド ホストを追加します。
 1. バック エンド プールを構成します。
-1. ルート指定とキャッシュのルールを設定します。
+1. ルーティング規則を設定する。
 
 ### <a name="add-a-front-end-host"></a>フロント エンド ホストを追加する
 
@@ -74,8 +68,9 @@ Azure Front Door Service の設定方法の詳細については、[クイック
 
 Azure Front Door Service のバック エンド プールを構成するには、次の手順を実行してください。
 
-1. **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** を、空のバック エンド ホスト ヘッダーを持つカスタム ホストとして、バック エンド プールに追加します。
+1. **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** と同じバックエンドホスト ヘッダを持つカスタムホストとして、**&lt;ecom-tenant-name&gt;.commerce.dynamics.com** をバックエンドプールに追加します。
 1. **負荷分散** では、既定値のままにします。
+1. バックエンド プールの正常性チェックを無効にします。
 
 次の図は、バック エンド ホスト名が入力された Azure Front Door Service の **バックエンドの追加** ダイアログ ボックスを示します。
 
@@ -84,6 +79,10 @@ Azure Front Door Service のバック エンド プールを構成するには�
 次の図は、既定の負荷分散値が入力された Azure Front Door Service の **バックエンド プール の追加** ダイアログ ボックスを示します。
 
 ![バックエンド プールのダイアログ ボックスを継続して追加する](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Commerce に対して独自の Azure Front Door Service サービスを設定する際は、 **正常性の検査** を無効にしてください。
+
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Azure Front Door Service でルールを設定する
 
@@ -100,24 +99,6 @@ Azure Front Door Service でルート指定ルールを設定するには、次�
 1. **URL Rewrite** オプションを **無効** に設定します。
 1. **キャッシュ** オプションを **無効** に設定します。
 
-Azure Front Door Service でキャッシュ ルールを設定するには、次の手順を実行します。
-
-1. キャッシュ ルールを追加します。
-1. **名前** フィールドに、**静的** と入力します。
-1. **承認済プロトコル** フィールドで、**HTTP と HTTPS** を選択します。
-1. **フロントエンド ホスト** フィールドで、**dynamics-ecom-tenant-name.azurefd.net** を入力します。
-1. **照合するパターン** の、上のフィールドで、**/\_msdyn365/\_scnr/\*** と入力します。
-1. **工順の詳細** で、**工順タイプ** オプションを **転送** に設定します。
-1. **バックエンド プール** フィールドで、**ecom-backend** を選択します。
-1. **転送プロトコル** フィールド グループで、**照合要求** オプションを選択します。
-1. **URL Rewrite** オプションを **無効** に設定します。
-1. **キャッシュ** オプションを **無効** に設定します。
-1. **クエリ文字列のキャッシュ動作** フィールドで、**一意の URL ごとキャッシュする** を選択します。
-1. **動的な圧縮** フィールド グループで、**有効化** オプションを選択します。
-
-次の図は、Azure Front Door Service の **ルールの追加** ダイアログ ボックスを示します。
-
-![ルールの追加ダイアログ ボックス](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > 使用するドメインが既に有効化されている場合は、[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) の **サポート** タイルからサポートチケットを作成して、次の手順についてのサポートを受けてください。 詳細については、[Finance and Operations アプまたは Lifecycle Services (LCS) のサポートを得る](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
