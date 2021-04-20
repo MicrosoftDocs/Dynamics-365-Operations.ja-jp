@@ -228,6 +228,8 @@
                               href: data-entities/dual-write/party-gab.md
                             - name: Power Portal を当事者のデータ モデルで使用する
                               href: data-entities/dual-write/party-gab-portal.md
+                            - name: 当事者およびグローバル アドレス帳モデルへのアップグレード
+                              href: data-entities/dual-write/upgrade-party-gab.md
                             - name: 注記の統合
                               href: data-entities/dual-write/notes-integration.md
                             - name: マッピング参照
@@ -714,6 +716,8 @@
               items:
                 - name: X++ およびデバッガーの機能
                   href: dev-tools/new-x-debugger-features.md
+                - name: X++ の Visual Studio 2017 の要件
+                  href: dev-tools/developer-tools-vs2017.md
                 - name: X++ コードのデバッグ
                   href: dev-tools/debug-xpp.md
                 - name: 要求または応答シナリオの EventHandlerResult クラス
@@ -1026,10 +1030,14 @@
                       href: perf-test/atl-faq.md
             - name: 日付の有効期間
               href: dev-tools/date-effectivity.md
-            - name: ISV ライセンス
-              href: dev-tools/isv-licensing.md
-            - name: オンプレミスの ISV ライセンス
-              href: dev-tools/isv-licensing-on-prem.md
+            - name: 独立系ソフトウェア ベンダーのための開発
+              items:
+                - name: ISV Studio を使用した X++ モジュールのパッケージへのリンク
+                  href: dev-tools/isv-studio-solutions.md
+                - name: ISV ライセンス
+                  href: dev-tools/isv-licensing.md
+                - name: オンプレミスの ISV ライセンス
+                  href: dev-tools/isv-licensing-on-prem.md
         - name: 一般データ保護規則 (GDPR)
           items:
             - name: 一般データ保護規則の概要
@@ -1142,10 +1150,10 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform 統合
           items:
+            - name: Finance and Operations と Microsoft Power Platform の統合
+              href: power-platform/overview.md
             - name: 仮想エンティティ
               items:
-                - name: Finance and Operations と Microsoft Power Platform の統合
-                  href: power-platform/overview.md
                 - name: エンティティ モデリング
                   href: power-platform/entity-modeling.md
                 - name: アプリケーション ライフサイクル管理
@@ -1444,16 +1452,18 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: サポート
           items:
-            - name: Finance and Operations および Lifecycle Services のサポートの利用
+            - name: Finance and Operations および Lifecycle Services のサポートの取得
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 のサポートの概要
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: 中国の 21Vianet で運用されている Finance and Operations のサポートを受ける
+            - name: 中国で 21Vianet が運用する Finance and Operations のサポートを受ける
               href: lifecycle-services/21vianet-support.md
             - name: Finance and Operations アプリのテクニカル サポートを設定する
               href: lifecycle-services/support-experience.md
             - name: Finance and Operations アプリのサポート エクスペリエンスを管理する
               href: lifecycle-services/cloud-powered-support-lcs.md
+            - name: 運用サポートと監視
+              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: システム管理
           items:
             - name: システム管理ホーム ページ
