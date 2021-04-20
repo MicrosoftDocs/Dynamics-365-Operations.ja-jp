@@ -37,9 +37,9 @@ ms.locfileid: "5830343"
 
 主なオブジェクトの一覧を次に示します。
 
-* AxClass/TaxIntegration **Document** オブジェクト
-* AxClass/TaxIntegration **Line** オブジェクト
-* AxClass/TaxIntegration **TaxLine** オブジェクト
+* AxClass/TaxIntegration **Document** Object
+* AxClass/TaxIntegration **Line** Object
+* AxClass/TaxIntegration **TaxLine** Object
 
 次の図に、これらのオブジェクトを関連付ける方法を示します。
 
