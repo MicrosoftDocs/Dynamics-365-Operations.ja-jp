@@ -15,83 +15,83 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753819"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894175"
 ---
-# <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a><span data-ttu-id="a69e3-103">電子申告で生成される大きなドキュメントを圧縮する</span><span class="sxs-lookup"><span data-stu-id="a69e3-103">Compress large documents that are generated in Electronic reporting</span></span> 
+# <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a><span data-ttu-id="0881a-103">電子申告で生成される大きなドキュメントを圧縮する</span><span class="sxs-lookup"><span data-stu-id="0881a-103">Compress large documents that are generated in Electronic reporting</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a69e3-104">[電子報告 (ER) フレームワーク](general-electronic-reporting.md) を使用すると、トランザクション データをフェッチして、送信ドキュメントを生成するソリューションを構成できます。</span><span class="sxs-lookup"><span data-stu-id="a69e3-104">You can use the [Electronic reporting (ER) framework](general-electronic-reporting.md) to configure a solution that fetches transactional data to generate an outbound document.</span></span> <span data-ttu-id="a69e3-105">この生成されたドキュメントは非常に大きい場合があります。</span><span class="sxs-lookup"><span data-stu-id="a69e3-105">This generated document might be quite large.</span></span> <span data-ttu-id="a69e3-106">このタイプのドキュメントが生成されると、[Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) メモリを使用して保持されます。</span><span class="sxs-lookup"><span data-stu-id="a69e3-106">When this type of document is generated, the [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) memory is used to hold it.</span></span> <span data-ttu-id="a69e3-107">ある時点で、ドキュメントを Microsoft Dynamics 365 Finance アプリケーションからダウンロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a69e3-107">At some point, the document must then be downloaded from your Microsoft Dynamics 365 Finance application.</span></span> <span data-ttu-id="a69e3-108">現在、ER で生成される 1 つのドキュメントの最大サイズは 2 ギガバイト (GB) に制限されています。</span><span class="sxs-lookup"><span data-stu-id="a69e3-108">Currently, the maximum size of a single document that is generated in ER is limited to 2 gigabytes (GB).</span></span> <span data-ttu-id="a69e3-109">また、Finance では現在、ダウンロード ファイルのサイズを 1 GB に [制限](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) しています。</span><span class="sxs-lookup"><span data-stu-id="a69e3-109">Additionally, Finance currently [limits](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) the size of a downloaded file to 1 GB.</span></span> <span data-ttu-id="a69e3-110">したがって、これらの制限を超えて、**ストリームが長すぎる** または **算術演算におけるオーバーフローまたはアンダーフロー** 例外を受け取る可能性を低くする、ER ソリューションを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a69e3-110">Therefore, you must configure an ER solution that reduces the likelihood that these limitations will be exceeded, and that you will receive a **Stream was too long** or **Overflow or underflow in the arithmetic operation** exception.</span></span>
+<span data-ttu-id="0881a-104">[電子報告 (ER) フレームワーク](general-electronic-reporting.md) を使用すると、トランザクション データをフェッチして、送信ドキュメントを生成するソリューションを構成できます。</span><span class="sxs-lookup"><span data-stu-id="0881a-104">You can use the [Electronic reporting (ER) framework](general-electronic-reporting.md) to configure a solution that fetches transactional data to generate an outbound document.</span></span> <span data-ttu-id="0881a-105">この生成されたドキュメントは非常に大きい場合があります。</span><span class="sxs-lookup"><span data-stu-id="0881a-105">This generated document might be quite large.</span></span> <span data-ttu-id="0881a-106">このタイプのドキュメントが生成されると、[Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) メモリを使用して保持されます。</span><span class="sxs-lookup"><span data-stu-id="0881a-106">When this type of document is generated, the [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) memory is used to hold it.</span></span> <span data-ttu-id="0881a-107">ある時点で、ドキュメントを Microsoft Dynamics 365 Finance アプリケーションからダウンロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0881a-107">At some point, the document must then be downloaded from your Microsoft Dynamics 365 Finance application.</span></span> <span data-ttu-id="0881a-108">現在、ER で生成される 1 つのドキュメントの最大サイズは 2 ギガバイト (GB) に制限されています。</span><span class="sxs-lookup"><span data-stu-id="0881a-108">Currently, the maximum size of a single document that is generated in ER is limited to 2 gigabytes (GB).</span></span> <span data-ttu-id="0881a-109">また、Finance では現在、ダウンロード ファイルのサイズを 1 GB に [制限](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) しています。</span><span class="sxs-lookup"><span data-stu-id="0881a-109">Additionally, Finance currently [limits](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) the size of a downloaded file to 1 GB.</span></span> <span data-ttu-id="0881a-110">したがって、これらの制限を超えて、**ストリームが長すぎる** または **算術演算におけるオーバーフローまたはアンダーフロー** 例外を受け取る可能性を低くする、ER ソリューションを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0881a-110">Therefore, you must configure an ER solution that reduces the likelihood that these limitations will be exceeded, and that you will receive a **Stream was too long** or **Overflow or underflow in the arithmetic operation** exception.</span></span>
 
-<span data-ttu-id="a69e3-111">ソリューションを構成するときに、**フォルダー** タイプのルート要素を追加して、入れ子になった要素によって生成されるコンテンツを圧縮することによって、オペレーション デザイナーで ER 形式を調整できます。</span><span class="sxs-lookup"><span data-stu-id="a69e3-111">When you configure a solution, you can adjust your ER format in the Operations designer by adding a root element of the **Folder** type to compress the content that is generated by any of its nested elements.</span></span> <span data-ttu-id="a69e3-112">圧縮は、"ジャスト イン タイム" で機能するため、ピーク時のメモリ使用量とダウンロードされるファイルのサイズを減らすことができます。</span><span class="sxs-lookup"><span data-stu-id="a69e3-112">Compression works "just in time," so that peak memory usage and the size of the file that will be downloaded can be reduced.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="a69e3-113">ファイルの圧縮には、CPU 使用率の追加割合がかかります。</span><span class="sxs-lookup"><span data-stu-id="a69e3-113">File compression takes an additional percentage of CPU usage.</span></span>
-
-<span data-ttu-id="a69e3-114">このアプローチの詳細については、このトピックの例を完了してください。</span><span class="sxs-lookup"><span data-stu-id="a69e3-114">For more information about this approach, complete the example in this topic.</span></span>
-
-## <a name="example-compress-an-outbound-document"></a><span data-ttu-id="a69e3-115">例: 送信ドキュメントの圧縮</span><span class="sxs-lookup"><span data-stu-id="a69e3-115">Example: Compress an outbound document</span></span>
-
-<span data-ttu-id="a69e3-116">この例では、**システム管理者** または **電子申告機能コンサルタント** のロールに割り当てられたユーザーが、ER 形式を構成して、生成されたドキュメントを圧縮できるようにする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-116">This example shows how a user who is assigned to the **System administrator** or **Electronic reporting functional consultant** role can configure an ER format to compress a generated document.</span></span>
-
-### <a name="prerequisites"></a><span data-ttu-id="a69e3-117">必要条件</span><span class="sxs-lookup"><span data-stu-id="a69e3-117">Prerequisites</span></span>
-
-<span data-ttu-id="a69e3-118">このトピックの手順を完了する前に、次の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a69e3-118">Before you complete the procedures in this topic, the following steps must be completed.</span></span>
-
-1. <span data-ttu-id="a69e3-119">[構成プロバイダーをアクティブにします](er-defer-xml-element.md#activate-a-configuration-provider)。</span><span class="sxs-lookup"><span data-stu-id="a69e3-119">[Activate a configuration provider](er-defer-xml-element.md#activate-a-configuration-provider).</span></span>
-2. <span data-ttu-id="a69e3-120">[サンプル ER のコンフィギュレーションのインポート](er-defer-xml-element.md#import-the-sample-er-configurations)。</span><span class="sxs-lookup"><span data-stu-id="a69e3-120">[Import the sample ER configurations](er-defer-xml-element.md#import-the-sample-er-configurations).</span></span>
-3. <span data-ttu-id="a69e3-121">[インポートされた形式を確認する](er-defer-xml-element.md#review-the-imported-format)。</span><span class="sxs-lookup"><span data-stu-id="a69e3-121">[Review the imported format](er-defer-xml-element.md#review-the-imported-format).</span></span>
+<span data-ttu-id="0881a-111">ソリューションを構成するときに、**フォルダー** タイプのルート要素を追加して、入れ子になった要素によって生成されるコンテンツを圧縮することによって、オペレーション デザイナーで ER 形式を調整できます。</span><span class="sxs-lookup"><span data-stu-id="0881a-111">When you configure a solution, you can adjust your ER format in the Operations designer by adding a root element of the **Folder** type to compress the content that is generated by any of its nested elements.</span></span> <span data-ttu-id="0881a-112">圧縮は、"ジャスト イン タイム" で機能するため、ピーク時のメモリ使用量とダウンロードされるファイルのサイズを減らすことができます。</span><span class="sxs-lookup"><span data-stu-id="0881a-112">Compression works "just in time," so that peak memory usage and the size of the file that will be downloaded can be reduced.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a69e3-122">現在、形式構造は、**ファイル** タイプの **レポート** 要素から始まり、XML 要素を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="a69e3-122">Currently, the format structure starts from the **Report** element of the **File** type and contains XML elements.</span></span> <span data-ttu-id="a69e3-123">したがって、送信ドキュメントは XML 形式で生成され、圧縮は使用されません。</span><span class="sxs-lookup"><span data-stu-id="a69e3-123">Therefore, an outbound document will be generated in XML format, and no compression will be used.</span></span>
+> <span data-ttu-id="0881a-113">ファイルの圧縮には、CPU 使用率の追加割合がかかります。</span><span class="sxs-lookup"><span data-stu-id="0881a-113">File compression takes an additional percentage of CPU usage.</span></span>
 
-### <a name="generate-an-er-format-to-get-an-uncompressed-document"></a><span data-ttu-id="a69e3-124">非圧縮ドキュメントを取得するための ER 形式の生成</span><span class="sxs-lookup"><span data-stu-id="a69e3-124">Generate an ER format to get an uncompressed document</span></span>
+<span data-ttu-id="0881a-114">このアプローチの詳細については、このトピックの例を完了してください。</span><span class="sxs-lookup"><span data-stu-id="0881a-114">For more information about this approach, complete the example in this topic.</span></span>
 
-1. <span data-ttu-id="a69e3-125">[インポートされた形式の実行](er-defer-xml-element.md#run-the-imported-format)。</span><span class="sxs-lookup"><span data-stu-id="a69e3-125">[Run the imported format](er-defer-xml-element.md#run-the-imported-format).</span></span>
-2. <span data-ttu-id="a69e3-126">XML 形式で生成されたドキュメントのサイズが 3 キロバイト (KB) であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a69e3-126">Notice that the size of the generated document in XML format is 3 kilobytes (KB).</span></span>
+## <a name="example-compress-an-outbound-document"></a><span data-ttu-id="0881a-115">例: 送信ドキュメントの圧縮</span><span class="sxs-lookup"><span data-stu-id="0881a-115">Example: Compress an outbound document</span></span>
+
+<span data-ttu-id="0881a-116">この例では、**システム管理者** または **電子申告機能コンサルタント** のロールに割り当てられたユーザーが、ER 形式を構成して、生成されたドキュメントを圧縮できるようにする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0881a-116">This example shows how a user who is assigned to the **System administrator** or **Electronic reporting functional consultant** role can configure an ER format to compress a generated document.</span></span>
+
+### <a name="prerequisites"></a><span data-ttu-id="0881a-117">必要条件</span><span class="sxs-lookup"><span data-stu-id="0881a-117">Prerequisites</span></span>
+
+<span data-ttu-id="0881a-118">このトピックの手順を完了する前に、次の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0881a-118">Before you complete the procedures in this topic, the following steps must be completed.</span></span>
+
+1. <span data-ttu-id="0881a-119">[構成プロバイダーをアクティブにします](er-defer-xml-element.md#activate-a-configuration-provider)。</span><span class="sxs-lookup"><span data-stu-id="0881a-119">[Activate a configuration provider](er-defer-xml-element.md#activate-a-configuration-provider).</span></span>
+2. <span data-ttu-id="0881a-120">[サンプル ER のコンフィギュレーションのインポート](er-defer-xml-element.md#import-the-sample-er-configurations)。</span><span class="sxs-lookup"><span data-stu-id="0881a-120">[Import the sample ER configurations](er-defer-xml-element.md#import-the-sample-er-configurations).</span></span>
+3. <span data-ttu-id="0881a-121">[インポートされた形式を確認する](er-defer-xml-element.md#review-the-imported-format)。</span><span class="sxs-lookup"><span data-stu-id="0881a-121">[Review the imported format](er-defer-xml-element.md#review-the-imported-format).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="0881a-122">現在、形式構造は、**ファイル** タイプの **レポート** 要素から始まり、XML 要素を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="0881a-122">Currently, the format structure starts from the **Report** element of the **File** type and contains XML elements.</span></span> <span data-ttu-id="0881a-123">したがって、送信ドキュメントは XML 形式で生成され、圧縮は使用されません。</span><span class="sxs-lookup"><span data-stu-id="0881a-123">Therefore, an outbound document will be generated in XML format, and no compression will be used.</span></span>
+
+### <a name="generate-an-er-format-to-get-an-uncompressed-document"></a><span data-ttu-id="0881a-124">非圧縮ドキュメントを取得するための ER 形式の生成</span><span class="sxs-lookup"><span data-stu-id="0881a-124">Generate an ER format to get an uncompressed document</span></span>
+
+1. <span data-ttu-id="0881a-125">[インポートされた形式の実行](er-defer-xml-element.md#run-the-imported-format)。</span><span class="sxs-lookup"><span data-stu-id="0881a-125">[Run the imported format](er-defer-xml-element.md#run-the-imported-format).</span></span>
+2. <span data-ttu-id="0881a-126">XML 形式で生成されたドキュメントのサイズが 3 キロバイト (KB) であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="0881a-126">Notice that the size of the generated document in XML format is 3 kilobytes (KB).</span></span>
 
     ![非圧縮送信ドキュメントのプレビュー](./media/er-compress-outbound-files1.png)
 
-### <a name="modify-the-format-to-compress-the-generated-output"></a><span data-ttu-id="a69e3-128">生成された出力を圧縮するように形式を変更する</span><span class="sxs-lookup"><span data-stu-id="a69e3-128">Modify the format to compress the generated output</span></span>
+### <a name="modify-the-format-to-compress-the-generated-output"></a><span data-ttu-id="0881a-128">生成された出力を圧縮するように形式を変更する</span><span class="sxs-lookup"><span data-stu-id="0881a-128">Modify the format to compress the generated output</span></span>
 
-1. <span data-ttu-id="a69e3-129">**組織管理** \> **電子申告** \> **構成** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-129">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
-2. <span data-ttu-id="a69e3-130">**コンフィギュレーション** ページのコンフィギュレーション ツリーで、**遅延要素を知るためのモデル** を展開します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-130">On the **Configurations** page, in the configuration tree, expand **Model to learn deferred elements**.</span></span>
-3. <span data-ttu-id="a69e3-131">**遅延 XML 要素を知るための形式** コンフィギュレーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-131">Select the **Format to learn deferred XML elements** configuration.</span></span>
-4. <span data-ttu-id="a69e3-132">**デザイナー** を選択して、形式構造を変更します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-132">Select **Designer** to modify the format structure.</span></span>
-5. <span data-ttu-id="a69e3-133">**形式デザイナー** ページの **形式** タブで **ルートの追加** を選択し、ルート形式要素を追加します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-133">On the **Format designer** page, on the **Format** tab, select **Add root** to add a root format element.</span></span>
-6. <span data-ttu-id="a69e3-134">**追加** ダイアログ ボックスで、**Common\\Folder** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-134">In the **Add** dialog box, select **Common\\Folder**.</span></span>
-7. <span data-ttu-id="a69e3-135">**OK** を選択して、新しいルート要素の追加を確認します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-135">Select **OK** to confirm the addition of the new root element.</span></span>
-8. <span data-ttu-id="a69e3-136">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-136">Select **Save**.</span></span>
+1. <span data-ttu-id="0881a-129">**組織管理** \> **電子申告** \> **構成** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="0881a-129">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="0881a-130">**コンフィギュレーション** ページのコンフィギュレーション ツリーで、**遅延要素を知るためのモデル** を展開します。</span><span class="sxs-lookup"><span data-stu-id="0881a-130">On the **Configurations** page, in the configuration tree, expand **Model to learn deferred elements**.</span></span>
+3. <span data-ttu-id="0881a-131">**遅延 XML 要素を知るための形式** コンフィギュレーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="0881a-131">Select the **Format to learn deferred XML elements** configuration.</span></span>
+4. <span data-ttu-id="0881a-132">**デザイナー** を選択して、形式構造を変更します。</span><span class="sxs-lookup"><span data-stu-id="0881a-132">Select **Designer** to modify the format structure.</span></span>
+5. <span data-ttu-id="0881a-133">**形式デザイナー** ページの **形式** タブで **ルートの追加** を選択し、ルート形式要素を追加します。</span><span class="sxs-lookup"><span data-stu-id="0881a-133">On the **Format designer** page, on the **Format** tab, select **Add root** to add a root format element.</span></span>
+6. <span data-ttu-id="0881a-134">**追加** ダイアログ ボックスで、**Common\\Folder** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0881a-134">In the **Add** dialog box, select **Common\\Folder**.</span></span>
+7. <span data-ttu-id="0881a-135">**OK** を選択して、新しいルート要素の追加を確認します。</span><span class="sxs-lookup"><span data-stu-id="0881a-135">Select **OK** to confirm the addition of the new root element.</span></span>
+8. <span data-ttu-id="0881a-136">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0881a-136">Select **Save**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a69e3-137">形式構造は、**フォルダー** タイプの要素から始まります。</span><span class="sxs-lookup"><span data-stu-id="a69e3-137">The format structure starts from the element of the **Folder** type.</span></span> <span data-ttu-id="a69e3-138">この要素は、出力を圧縮 (zip) ファイルとして生成します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-138">This element will generate output as a compressed (zip) file.</span></span> <span data-ttu-id="a69e3-139">**レポート** 要素によって生成されたドキュメントが送信 ZIP ファイルに配置されると、送信ファイルのサイズを縮小するためにそのコンテンツが圧縮されます。</span><span class="sxs-lookup"><span data-stu-id="a69e3-139">When a document that is generated by the **Report** element is put in an outbound zip file, its content will be compressed to reduce the size of the outbound file.</span></span>
+> <span data-ttu-id="0881a-137">形式構造は、**フォルダー** タイプの要素から始まります。</span><span class="sxs-lookup"><span data-stu-id="0881a-137">The format structure starts from the element of the **Folder** type.</span></span> <span data-ttu-id="0881a-138">この要素は、出力を圧縮 (zip) ファイルとして生成します。</span><span class="sxs-lookup"><span data-stu-id="0881a-138">This element will generate output as a compressed (zip) file.</span></span> <span data-ttu-id="0881a-139">**レポート** 要素によって生成されたドキュメントが送信 ZIP ファイルに配置されると、送信ファイルのサイズを縮小するためにそのコンテンツが圧縮されます。</span><span class="sxs-lookup"><span data-stu-id="0881a-139">When a document that is generated by the **Report** element is put in an outbound zip file, its content will be compressed to reduce the size of the outbound file.</span></span>
 
-### <a name="generate-an-er-format-to-get-a-compressed-document"></a><span data-ttu-id="a69e3-140">圧縮ドキュメントを取得するための ER 形式の生成</span><span class="sxs-lookup"><span data-stu-id="a69e3-140">Generate an ER format to get a compressed document</span></span>
+### <a name="generate-an-er-format-to-get-a-compressed-document"></a><span data-ttu-id="0881a-140">圧縮ドキュメントを取得するための ER 形式の生成</span><span class="sxs-lookup"><span data-stu-id="0881a-140">Generate an ER format to get a compressed document</span></span>
 
-1. <span data-ttu-id="a69e3-141">**フォーマット デザイナー** ページで、**実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a69e3-141">On the **Format designer** page, select **Run**.</span></span>
-2. <span data-ttu-id="a69e3-142">Web ブラウザーが提供する ZIP ファイルをダウンロードし、レビュー用に開きます。</span><span class="sxs-lookup"><span data-stu-id="a69e3-142">Download the zip file that the web browser offers, and open it for review.</span></span>
-3. <span data-ttu-id="a69e3-143">ZIP 形式で生成されたドキュメントのサイズが 1 KB であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a69e3-143">Notice that the size of the generated document in ZIP format is 1 KB.</span></span>
+1. <span data-ttu-id="0881a-141">**フォーマット デザイナー** ページで、**実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0881a-141">On the **Format designer** page, select **Run**.</span></span>
+2. <span data-ttu-id="0881a-142">Web ブラウザーが提供する ZIP ファイルをダウンロードし、レビュー用に開きます。</span><span class="sxs-lookup"><span data-stu-id="0881a-142">Download the zip file that the web browser offers, and open it for review.</span></span>
+3. <span data-ttu-id="0881a-143">ZIP 形式で生成されたドキュメントのサイズが 1 KB であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="0881a-143">Notice that the size of the generated document in ZIP format is 1 KB.</span></span>
 
     > [!NOTE] 
-    > <span data-ttu-id="a69e3-144">この ZIP ファイルが保持する XML ファイルの圧縮率は 87% です。</span><span class="sxs-lookup"><span data-stu-id="a69e3-144">The compression ratio of the XML file that this zip file holds is 87 percent.</span></span> <span data-ttu-id="a69e3-145">圧縮率は、圧縮するデータによって異なります。</span><span class="sxs-lookup"><span data-stu-id="a69e3-145">The compression ratio depends on the data that is being compressed.</span></span>
+    > <span data-ttu-id="0881a-144">この ZIP ファイルが保持する XML ファイルの圧縮率は 87% です。</span><span class="sxs-lookup"><span data-stu-id="0881a-144">The compression ratio of the XML file that this zip file holds is 87 percent.</span></span> <span data-ttu-id="0881a-145">圧縮率は、圧縮するデータによって異なります。</span><span class="sxs-lookup"><span data-stu-id="0881a-145">The compression ratio depends on the data that is being compressed.</span></span>
 
     ![圧縮送信ドキュメントのプレビュー](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
-> <span data-ttu-id="a69e3-147">出力を生成する形式要素 (この例では **レポート** 要素) に ER [出力先](electronic-reporting-destinations.md) が構成されている場合、出力の圧縮がバイパスされます。</span><span class="sxs-lookup"><span data-stu-id="a69e3-147">If the ER [destination](electronic-reporting-destinations.md) is configured for the format element that generates output (the **Report** element in this example), compression of the output will be bypassed.</span></span>
+> <span data-ttu-id="0881a-147">出力を生成する形式要素 (この例では **レポート** 要素) に ER [出力先](electronic-reporting-destinations.md) が構成されている場合、出力の圧縮がバイパスされます。</span><span class="sxs-lookup"><span data-stu-id="0881a-147">If the ER [destination](electronic-reporting-destinations.md) is configured for the format element that generates output (the **Report** element in this example), compression of the output will be bypassed.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="a69e3-148">追加リソース</span><span class="sxs-lookup"><span data-stu-id="a69e3-148">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="0881a-148">追加リソース</span><span class="sxs-lookup"><span data-stu-id="0881a-148">Additional resources</span></span>
 
-[<span data-ttu-id="a69e3-149">電子申告 (ER) の概要</span><span class="sxs-lookup"><span data-stu-id="a69e3-149">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
+[<span data-ttu-id="0881a-149">電子申告 (ER) の概要</span><span class="sxs-lookup"><span data-stu-id="0881a-149">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
 
-[<span data-ttu-id="a69e3-150">電子申告 (ER) の送信先</span><span class="sxs-lookup"><span data-stu-id="a69e3-150">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
+[<span data-ttu-id="0881a-150">電子申告 (ER) の送信先</span><span class="sxs-lookup"><span data-stu-id="0881a-150">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
 
-[<span data-ttu-id="a69e3-151">電子申告形式における XML 要素の実行の延期</span><span class="sxs-lookup"><span data-stu-id="a69e3-151">Defer the execution of XML elements in ER formats</span></span>](er-defer-xml-element.md)
+[<span data-ttu-id="0881a-151">電子申告形式における XML 要素の実行の延期</span><span class="sxs-lookup"><span data-stu-id="0881a-151">Defer the execution of XML elements in ER formats</span></span>](er-defer-xml-element.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
