@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: dee77f6967cc72fdcc81d5cff9a39d13248af588
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811041"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907942"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>仕入先コラボレーションのモバイル ワークスペース
 
@@ -57,7 +57,7 @@ Web クライアントの仕入先コラボレーション Web インターフ�
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Management を使用する場合の前提条件
-Supply Chain Management が組織に配置されている場合、システム管理者は **仕入先コラボレーション** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+Supply Chain Management が組織に配置されている場合、システム管理者は **仕入先コラボレーション** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
 Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
@@ -77,7 +77,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <td>プラットフォーム更新プログラム 3 を使用している場合、KB 3216943 はバイナリ更新プログラムです。 この KB を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
 <li>Microsoft Dynamics Lifecycle Services (LCS) からの KB 3216943 のダウンロード</li>
-<li>配置可能パッケージとして配信される、バイナリ更新プログラムをインストールします。 配置可能パッケージを適用する方法についての詳しい情報は、<a href="../../dev-itpro/deployment/apply-deployable-package-system.md">適用可能パッケージ</a>を参照してください。</li>
+<li>配置可能パッケージとして配信される、バイナリ更新プログラムをインストールします。 配置可能パッケージを適用する方法についての詳しい情報は、<a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">適用可能パッケージ</a>を参照してください。</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +85,14 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <td>システム管理者</td>
 <td>KB 4013633 は、<strong>手持ち在庫</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">LCS からメタデータ修正プログラムのダウンロード</a>。</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></li><li><strong>SCMMobile</strong> モデルを含む<a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">LCS からメタデータ修正プログラムのダウンロード</a>。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li><li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用します</a>。</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td><strong>仕入先コラボレーション</strong> モバイル ワークスペースを公開する必要があります。</td><td>システム管理者</td>
-<td>「<a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">モバイル ワークスペースの公開</a>」を参照してください。</td>
+<td>「<a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">モバイル ワークスペースの公開</a>」を参照してください。</td>
 </tr>
 <tr class="even">
 <td>仕入先のユーザーは、Web クライアントで仕入先コラボレーション Web インターフェイスにアクセスし、仕入先コラボレーション ユーザーを設定する必要があります。</td><td>購買担当者およびシステム管理者</td>

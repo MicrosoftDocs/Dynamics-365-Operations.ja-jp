@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840223"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893805"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure ストレージ アカウントとキー コンテナーの作成
 
@@ -30,8 +30,8 @@ ms.locfileid: "5840223"
 
 このトピックのタスクを完了する前に、以下の前提条件を完了していることを確認してください :
 
-- Azure でのキー コンテナーのリソースの作成。 詳細については、[Azure のキー コンテナー](https://docs.microsoft.com/azure/key-vault/general/overview)を参照してください。
-- Azure ストレージ アカウント (Blob ストレージ) の作成。 詳細については、[Azure ストレージ アカウントを管理する](https://docs.microsoft.com/azure/storage/blobs/) を参照してください。
+- Azure でのキー コンテナーのリソースの作成。 詳細については、[Azure のキー コンテナー](/azure/key-vault/general/overview)を参照してください。
+- Azure ストレージ アカウント (Blob ストレージ) の作成。 詳細については、[Azure ストレージ アカウントを管理する](/azure/storage/blobs/) を参照してください。
 
 ## <a name="overview"></a>概要
 
@@ -83,4 +83,3 @@ ms.locfileid: "5840223"
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

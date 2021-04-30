@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45c8b1d0ea12c8e42f3a4383f16105b0b0cfb5c6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b173f856c79973eec6ce884e7b8e44420c93fc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825329"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909134"
 ---
 # <a name="purchase-order-overview"></a>発注書の概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "5825329"
 -   [発注書の作成](purchase-order-creation.md)
 -   [発注書の承認と確認](purchase-order-approval-confirmation.md)
 -   [発注書に対する製品受領書](product-receipt-against-purchase-orders.md)
--   [仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [仕入先請求書の概要](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>発注書のタイプ
 PO には次の 3 つのタイプがあります。 注文書を作成すると、タイプを指定する必要があります。 **調達パラメーター** ページで、新しい注文の既定の注文のタイプを設定できます。
@@ -85,7 +85,7 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 
 [発注書に対する製品受領書](product-receipt-against-purchase-orders.md)
 
-[仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
+[仕入先請求書の概要](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

@@ -12,14 +12,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82afad71340e97ef1f86159d013e842d456b2a46
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829983"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909922"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Management 10.0.16 の新機能および変更された機能 (2021 年 2 月)
 
@@ -33,17 +33,17 @@ ms.locfileid: "5829983"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 [リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
+このリリースでは次の機能が含まれています。 [リリース計画](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
 
-- [カスタマイズ可能な作業現場の実行インターフェイス](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - 詳細については、[生産現場の実行インターフェースを実行するデバイスを設定する](../production-control/production-floor-execution-setup.md)を参照してください。
+- [カスタマイズ可能な作業現場の実行インターフェイス](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - 詳細については、[生産現場の実行インターフェースを実行するデバイスを設定する](../production-control/production-floor-execution-setup.md)を参照してください。
 
-- [Dynamics 365 Supply Chain Management の在庫の視覚化アドイン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - 詳細については、[在庫の視覚化アドイン](../inventory/inventory-visibility.md)を参照してください。
+- [Dynamics 365 Supply Chain Management の在庫の視覚化アドイン](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - 詳細については、[在庫の視覚化アドイン](../inventory/inventory-visibility.md)を参照してください。
 
 - ジョブ ID の統合番号順序<br> - 詳細については、[ジョブ ID の統合番号順序](../production-control/unified-job-ids.md)を参照してください。
 
-- [元伝票明細行のライセンス プレートの検証](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - 詳細については、[倉庫のコンフィギュレーションの概要](../warehousing/warehouse-configuration.md)を参照してください。
+- [元伝票明細行のライセンス プレートの検証](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - 詳細については、[倉庫のコンフィギュレーションの概要](../warehousing/warehouse-configuration.md)を参照してください。
 
-- [倉庫管理の出庫ワークロードのビジュアル化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - 詳細については、[出庫ワークロードの視覚化](../warehousing/outbound-workload-visualization.md)を参照してください。
+- [倉庫管理の出庫ワークロードのビジュアル化](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - 詳細については、[出庫ワークロードの視覚化](../warehousing/outbound-workload-visualization.md)を参照してください。
 
 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
@@ -99,7 +99,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.16 には、Platform updates
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 

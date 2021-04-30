@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 84c8c782b917850267c34696f3b2afa607118d84
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753626"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894055"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>ER 形式における XML 要素の実行の延期
 
@@ -44,7 +44,7 @@ ms.locfileid: "5753626"
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>例: ER 形式の XML 要素の実行の延期
 
-次のステップは、システム管理者または電子申告機能コンサルタント [ロール](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) のユーザーが、実行順序が形式階層の順序とは異なる XML 要素を含む ER 形式をコンフィギュレーションする方法を説明します。
+次のステップは、システム管理者または電子申告機能コンサルタント [ロール](../sysadmin/tasks/assign-users-security-roles.md) のユーザーが、実行順序が形式階層の順序とは異なる XML 要素を含む ER 形式をコンフィギュレーションする方法を説明します。
 
 これらのステップは、Microsoft Dynamics 365 Finance の **USMF** 会社で実行できます。
 

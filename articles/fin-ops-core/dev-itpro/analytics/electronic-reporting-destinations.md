@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03dd6f81185e8944019eaadbb77690e4cd9ba9a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751319"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893607"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -57,7 +57,7 @@ ER フォーマット構成の既定の動作は、ERフォーマットの開始
 
 **イントラスタット レポート** ダイアログ ボックスの **バックグラウンドで実行する** クイックタブで、**バッチ処理** オプションを **いいえ** に設定した場合は、ER フォーマットがインタラクティブ モードで直ちに実行されます。 この実行が正常に完了すると、生成された送信ドキュメントがダウンロード可能になります。
 
-**バッチ処理** オプションを **はい** に設定した場合 、ER フォーマットは [バッチ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) モードで実行されます。 **ERパラメータ** ダイアログボックスの **バックグラウンドで実行する** タブで、実行時に指定されたパラメータに基づいて、適切なバッチジョブが作成されます。
+**バッチ処理** オプションを **はい** に設定した場合 、ER フォーマットは [バッチ](../sysadmin/batch-processing-overview.md) モードで実行されます。 **ERパラメータ** ダイアログボックスの **バックグラウンドで実行する** タブで、実行時に指定されたパラメータに基づいて、適切なバッチジョブが作成されます。
 
 > [!NOTE]
 > ジョブ記述は、ER 形式マッピングの実行について通知します。 また、実行される ER コンポーネントの名前も含まれています。
@@ -70,7 +70,7 @@ ER フォーマット構成の既定の動作は、ERフォーマットの開始
 - **組織管理** \> **電子レポート** \> **電子レポートジョブ** に移動し、スケジュールされたジョブの状態と完了したジョブの実行結果を確認します。 ジョブの実行が正常に完了したら、**電子レポートジョブ**  ページの **ファイルの表示** を選択して、生成された送信ドキュメントを取得します。
 
     > [!NOTE]
-    > このドキュメントは、現在のジョブ レコードの添付ファイルとして保存され、[ドキュメント管理](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) フレームワークによって制御されます。 このタイプの ER 成果物の格納に使用される [文書タイプ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) は、[ER パラメータ](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents)で構成されています。
+    > このドキュメントは、現在のジョブ レコードの添付ファイルとして保存され、[ドキュメント管理](../../fin-ops/organization-administration/configure-document-management.md) フレームワークによって制御されます。 このタイプの ER 成果物の格納に使用される [文書タイプ](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) は、[ER パラメータ](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents)で構成されています。
 
 - **電子レポート ジョブ** ページで、**ファイルの表示** を選択し、ジョブの実行中に生成されたエラーと警告の一覧を表示します。
 

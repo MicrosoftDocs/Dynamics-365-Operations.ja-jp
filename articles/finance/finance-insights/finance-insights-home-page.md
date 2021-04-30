@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 502205f76f1519153caf6e976ffbb5eb9412c4ea
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818563"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898063"
 ---
 # <a name="finance-insights-home-page-preview"></a>Finance 分析情報のホーム ページ (プレビュー)
 
@@ -31,7 +31,7 @@ Finance 分析情報には構成可能かつ拡張可能なモデルが用意さ
 
 Finance 分析情報のプレビューは、米国、ヨーロッパ、および英国での試用版の配置に使用できます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
 
-プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および人工知能 (AI) モデルは、運用環境に移行できません。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.) を参照してください。
+プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および人工知能 (AI) モデルは、運用環境に移行できません。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.) を参照してください。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -43,7 +43,7 @@ Finance 分析情報のプレビューは、米国、ヨーロッパ、および
 
 ### <a name="system-requirements"></a>システム要件
 
-Finance 分析情報をプレビューするには、Tier 2 サンドボックス環境 (複数のボックス) が必要です。 環境に関するバックグラウンド情報については、[環境計画](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning) を参照してください。
+Finance 分析情報をプレビューするには、Tier 2 サンドボックス環境 (複数のボックス) が必要です。 環境に関するバックグラウンド情報については、[環境計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md) を参照してください。
 
 ### <a name="version-requirements"></a>バージョン要件
 
@@ -79,7 +79,7 @@ Finance 分析情報を使用する前に、いくつかのコンフィギュレ
 コンフィギュレーション ステップを完了し、デモ データを設定したら、使用する各機能 (顧客支払予測、キャッシュフロー予測、および予算提案) を有効にして設定する必要があります。
 
 ### <a name="enable-customer-payment-predictions"></a>顧客支払予測の有効化
-デモ データを使用して顧客支払予測をテストする場合、追加のデモ データをインポートして AI モデルを正しく作成する必要があります。 デモ データをインポートするための特定のステップについては、[支払予測のデモ データの設定](set-up-demo-data.md) を参照してください。
+デモ データを使用して顧客支払予測をテストする場合、追加のデモ データをインポートして AI モデルを正しく作成する必要があります。 
 
 顧客支払予測を有効にするには、一連のステップを実行して、顧客が未払の請求書の支払を行う可能性がある場合や、特定の請求書の支払が見込まれる時期についての予測を生成する、組織のデータを使用する機械学習モデルを構築する必要があります。 詳細と完了する特定のステップについては、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md) を参照してください。 
 

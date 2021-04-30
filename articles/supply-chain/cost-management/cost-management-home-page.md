@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1594babd6f27a6af867267d2ae745549355d3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a42709621c692bb9a20ade0d1835893f534ec4e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839370"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908785"
 ---
 # <a name="cost-management-home-page"></a>原価管理ホーム ページ
 
@@ -43,7 +43,7 @@ ms.locfileid: "5839370"
 
 製造の会計では、製造オーダーおよびバッチ オーダーで [作業オーダー原価計算](production-order-cost-analysis.md)、さらにリーン生産で [一括引き落とし原価計算](backflush-costing.md) の処理ができます。
 
-[原価管理 Power BI コンテンツ](../../dev-itpro/analytics/cost-management-content-pack.md) では、在庫および仕掛品 (WIP) 在庫の管理上の情報、および時間経過に伴ってカテゴリごとに原価がどのように流れているかを示します。 この情報は、財務諸表の詳細な補足情報として使用できます。
+[原価管理 Power BI コンテンツ](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) では、在庫および仕掛品 (WIP) 在庫の管理上の情報、および時間経過に伴ってカテゴリごとに原価がどのように流れているかを示します。 この情報は、財務諸表の詳細な補足情報として使用できます。
 
 ### <a name="additional-resources"></a>追加リソース
 
@@ -57,7 +57,7 @@ ms.locfileid: "5839370"
 
 #### <a name="blogs"></a>ブログ
 
-[Dynamics AX 製造研究開発チーム ブログ](https://blogs.msdn.microsoft.com/axmfg) および [Dynamics AX の Supply Chain Management の研究開発チーム ブログ](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、原価管理に関する意見、ニュース、その他の情報を見つけることができます。 これらの投稿の一部は原価管理の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
+[Dynamics AX 製造研究開発チーム ブログ](/archive/blogs/axmfg/) および [Dynamics AX の Supply Chain Management の研究開発チーム ブログ](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、原価管理に関する意見、ニュース、その他の情報を見つけることができます。 これらの投稿の一部は原価管理の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
 #### <a name="task-guides"></a>タスク ガイド
 

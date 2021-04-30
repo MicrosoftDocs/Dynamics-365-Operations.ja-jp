@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753819"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894175"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>電子申告で生成される大きなドキュメントを圧縮する 
 
 [!include [banner](../includes/banner.md)]
 
-[電子報告 (ER) フレームワーク](general-electronic-reporting.md) を使用すると、トランザクション データをフェッチして、送信ドキュメントを生成するソリューションを構成できます。 この生成されたドキュメントは非常に大きい場合があります。 このタイプのドキュメントが生成されると、[Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) メモリを使用して保持されます。 ある時点で、ドキュメントを Microsoft Dynamics 365 Finance アプリケーションからダウンロードする必要があります。 現在、ER で生成される 1 つのドキュメントの最大サイズは 2 ギガバイト (GB) に制限されています。 また、Finance では現在、ダウンロード ファイルのサイズを 1 GB に [制限](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) しています。 したがって、これらの制限を超えて、**ストリームが長すぎる** または **算術演算におけるオーバーフローまたはアンダーフロー** 例外を受け取る可能性を低くする、ER ソリューションを構成する必要があります。
+[電子報告 (ER) フレームワーク](general-electronic-reporting.md) を使用すると、トランザクション データをフェッチして、送信ドキュメントを生成するソリューションを構成できます。 この生成されたドキュメントは非常に大きい場合があります。 このタイプのドキュメントが生成されると、[Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) メモリを使用して保持されます。 ある時点で、ドキュメントを Microsoft Dynamics 365 Finance アプリケーションからダウンロードする必要があります。 現在、ER で生成される 1 つのドキュメントの最大サイズは 2 ギガバイト (GB) に制限されています。 また、Finance では現在、ダウンロード ファイルのサイズを 1 GB に [制限](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) しています。 したがって、これらの制限を超えて、**ストリームが長すぎる** または **算術演算におけるオーバーフローまたはアンダーフロー** 例外を受け取る可能性を低くする、ER ソリューションを構成する必要があります。
 
 ソリューションを構成するときに、**フォルダー** タイプのルート要素を追加して、入れ子になった要素によって生成されるコンテンツを圧縮することによって、オペレーション デザイナーで ER 形式を調整できます。 圧縮は、"ジャスト イン タイム" で機能するため、ピーク時のメモリ使用量とダウンロードされるファイルのサイズを減らすことができます。
 

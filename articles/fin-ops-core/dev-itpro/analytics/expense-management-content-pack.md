@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aadf43d478eb4bf5af20df02dcc6399a7a2e71a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e95fa06745840a6ba1782f135af0e7625c934aa
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743510"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893255"
 ---
 # <a name="expense-management-power-bi-content"></a>経費管理 Power BI コンテンツ
 
@@ -41,7 +41,7 @@ ms.locfileid: "5743510"
 金額はすべて会社通貨で表示されます。 すべての会社のデータが表示されますが、必要に応じて会社のフィルターを追加できます。 
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-Expense Admin Dashboard.pbix および Expense Personal Dashboard.pbix Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/) を参照してください。
+Expense Admin Dashboard.pbix および Expense Personal Dashboard.pbix Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners) を参照してください。
 コンテンツは、経費管理ワークスペースから埋め込み Power Bi コンテンツとして入手できます。 経費の所有者は、誰でも自分の経費にアクセスすることができますが、すべてのユーザーの経費データに関しては、買掛金担当者と管理者のみが管理者コンテンツにアクセスすることができます。
 
 ## <a name="refreshing-the-power-bi-content"></a>Power BI コンテンツの更新

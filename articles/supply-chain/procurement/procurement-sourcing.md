@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96e112432ba79d2657a8d440e8e040fca45392a2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d94426580d65dc1639de4b2dd1b3f283724a1a9e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825521"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909207"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>調達ホーム ページ
 
@@ -83,12 +83,12 @@ ms.locfileid: "5825521"
 ## <a name="prices-and-discounts"></a>価格と割引
 -   [購買契約](purchase-agreements.md)
 -   [購買契約書の作成](tasks/create-purchase-agreement.md)
--   [仕入リベート](https://docs.microsoft.com/dynamics/s-e/) (ホワイト ペーパー)
+-   [仕入リベート](/dynamics/s-e/) (ホワイト ペーパー)
 
 ## <a name="product-receipt-and-invoicing"></a>製品受領書と請求書
 -   [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
--   [仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [仕入先転記プロファイル](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [仕入先請求書の概要](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [仕入先転記プロファイル](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>調達ワークフロー
 -   [調達の概要](procurement-sourcing-overview.md)

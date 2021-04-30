@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80799b770f0ede9ca1175a44dd738ae635d012c2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 038e741978bce033621bad428321a4b14ac90650
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793828"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889839"
 ---
 # <a name="manage-features-in-human-resources"></a>Human Resources の機能を管理する
 
@@ -29,9 +29,9 @@ ms.locfileid: "5793828"
 
 Microsoft Dynamics 365 Human Resources の新機能の継続的なロールアウトの一環として、お客様にできるだけ早く新しい機能を体験していただきたいと思います。 一般公開される準備がほぼ整っており、広範なテストを経たプレビュー機能を提供します。 一般提供にリリースする前に、顧客フィードバックおよび検証の最終ラウンドを探しています。
 
-Human Resources の新機能に関する詳細は、[Human Resources の新機能](hr-admin-whats-new.md) および [Dynamics 365 と Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1) を参照してください。
+Human Resources の新機能に関する詳細は、[Human Resources の新機能](hr-admin-whats-new.md) および [Dynamics 365 と Power Platform リリース プラン](/dynamics365/release-plans/?panel=products1#pivot=products) を参照してください。
 
-**機能管理** ワークスペースでは、各リリースで可能になる機能の一覧を表示できます。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
+**機能管理** ワークスペースでは、各リリースで可能になる機能の一覧を表示できます。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 機能管理の詳細については [機能管理の概要](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 
 すべての新機能は少なくとも 30 日間、通常は 30-60 日間、プレビューのままになります。 主な機能は、通常、プレビュー期間に従って毎年 10 月と 4 月に使用可能です。 **機能管理** ワークスペースに新しい機能が表示されたら、すぐにそれらをオンにすることができます。 一部の機能は既定でオンになっている場合があります。
 
@@ -93,6 +93,6 @@ Human Resources の新機能に関する詳細は、[Human Resources の新機�
 ## <a name="see-also"></a>参照
 
 - [Human Resources の新機能](hr-admin-whats-new.md)
-- [Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Dynamics 365 および Power Platform リリース プラン](/dynamics365/release-plans/?panel=products1#pivot=products)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

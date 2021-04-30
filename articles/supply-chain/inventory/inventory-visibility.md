@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e294ada8dd3e764987aa363adb2614416986575b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821132"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910428"
 ---
 # <a name="inventory-visibility-add-in"></a>在庫の視覚化アドイン
 
@@ -39,7 +39,7 @@ Inventory Visibility には、複数のサードパーティ システムと統�
 
 Microsoft Dynamics Lifecycle Services (LCS) を使用して、 Inventory Visibility Add-in をインストールする必要があります。 LCS が提供する環境や定期的に更新されるサービスにより、Dynamics 365 Finance and Operations アプリのアプリケーション ライフサイクルを管理するのが楽になります。
 
-詳細については、 [Lifecycle Services のリソース](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs) を参照してください。
+詳細については、 [Lifecycle Services のリソース](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md) を参照してください。
 
 ### <a name="prerequisites"></a>必要条件
 
@@ -48,10 +48,13 @@ Inventory Visibility Add-in をインストールする前に、以下を実行�
 - 少なくとも 1 つの環境が配置されている LCS 実装プロジェクトを取得する。
 - [アドインの概要](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md)で提供されるアドインを設定するための前提条件が完了したことを確認します。 在庫の視覚化にデュアル書き込みリンクは必要ありません。
 - [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) から在庫の視覚化チームに連絡して、次の 3 つの必要なファイルを入手してください。
-
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (実行している Supply Chain Management がバージョン 10.0.18 より以前のバージョンの場合)
+- [クイック スタート: Microsoft ID プラットフォームにアプリケーションを登録](/azure/active-directory/develop/quickstart-register-app) の指示に従って、アプリケーションを登録し、Azure サブスクリプションで AAD にクライアント シークレットを起動します。
+    - [アプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)
+    - [クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+    - **アプリケーション (クライアント) ID**、**クライアント シークレット** と **テナント ID** は次の手順でを使用されます。
 
 > [!NOTE]
 > 現在サポートされている国や地域には、カナダ、米国、欧州連合 (EU) が含まれます。
@@ -64,7 +67,7 @@ Dataverse を設定するには、次の手順に従います。
 
 1. テナントにサービス プリンシパルを追加します。
 
-    1. [Graph 用 Azure Active Directory  PowerShell をインストールする](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)に記載の手順に従って Azure AD PowerShell モジュール v2 をインストールします。
+    1. [Graph 用 Azure Active Directory  PowerShell をインストールする](/powershell/azure/active-directory/install-adv2)に記載の手順に従って Azure AD PowerShell モジュール v2 をインストールします。
     1. 次の PowerShell コマンドを実行します。
 
         ```powershell
@@ -80,7 +83,12 @@ Dataverse を設定するには、次の手順に従います。
     1. **新規** を選択します。 アプリケーション ID を *3022308a-b9bd-4a18-b8ac-2ddedb2075e1* に設定します。 (変更を保存すると、オブジェクト ID が自動的に読み込まれます。) 名前はカスタマイズできます。 たとえば、*在庫の視覚化* に変更できます。 完了したら、**保存** を選択します。
     1. **ロールの割り当て** を選択してから、**システム管理者** を選択します。 **Common Data Service ユーザー** という名前のロールがある場合は、それも選択します。
 
-    詳細については、「[アプリケーション ユーザーの作成](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user)」を参照してください。
+    詳細については、「[アプリケーション ユーザーの作成](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user)」を参照してください。
+
+1. Dataverse の既定の言語が **英語** ではない場合:
+
+    1. **詳細設定 \> 管理 \> 言語** に移動します、
+    1. **英語 (LanguageCode=1033)** を選択し、**適用** を選択します。
 
 1. Dataverse 構成関連エンティティと Power Apps を含む `Inventory Visibility Dataverse Solution.zip` ファイルをインポートします。
 
@@ -158,12 +166,12 @@ Supply Chain Management 環境で次の機能が有効になっていること�
 
     LCS 環境の Azure リージョンを検索してから、URL を入力します。 URL には次のフォームがあります。
 
-    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com`
 
     たとえば、ヨーロッパにいる場合、環境には次のいずれかの URL が表示されます。
 
-    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
-    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com`
 
     現在、以下のリージョンが利用可能です。
 
@@ -212,13 +220,13 @@ Supply Chain Management 環境で次の機能が有効になっていること�
 
     ```json
     {
-    "token_type": "Bearer",
-    "expires_in": "3599",
-    "ext_expires_in": "3599",
-    "expires_on": "1610466645",
-    "not_before": "1610462745",
-    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-    "access_token": "eyJ0eX...8WQ"
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "expires_on": "1610466645",
+        "not_before": "1610462745",
+        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+        "access_token": "eyJ0eX...8WQ"
     }
     ```
 
@@ -255,6 +263,43 @@ Supply Chain Management 環境で次の機能が有効になっていること�
         "expires_in": 1200
     }
     ```
+
+### <a name="sample-request"></a><a name="inventory-visibility-sample-request"></a> サンプル要求
+
+参考までに、ここにサンプルの http リクエストがあります。``Postman`` など、任意のツールまたはコーディング言語を使用してこの要求を送信できます。
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# replace {access_token} with the one get from security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "quantities": {
+        "pos": {
+            "inbound": 5
+        }  
+    },
+    "dimensions": {
+        "SizeId": "Small",
+        "ColorId": "Red",
+        "SiteId": "1",
+        "LocationId": "11"
+    }
+}
+```
 
 ### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Inventory Visibility API の構成
 
@@ -338,7 +383,7 @@ Inventory Visibility を使用すると、分析コードまたは分析コー�
 {
     "filters": {
         "OrganizationId": ["usmf"],
-        "ProductId": ["MyProduct"],
+        "ProductId": ["MyProduct1", "MyProduct2"],
         "LocationId": ["21"],
         "SiteId": ["2"],
         "ColorId": ["Red"]
@@ -350,6 +395,8 @@ Inventory Visibility を使用すると、分析コードまたは分析コー�
     "returnNegative": true
 }
 ```
+
+`filters` フィールドの場合、現在、`ProductId` のみが複数の値をサポートしています。 `ProductId` が空の配列の場合、すべての製品が照会されます。
 
 #### <a name="custom-measurement"></a>カスタム測定
 

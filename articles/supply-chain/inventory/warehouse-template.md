@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c4b5b6db9126f9b520945f63b24db26fdbdccf8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2bc35794a83365205ebc0907419d3f0801713580
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816631"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908446"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。 使用できる事前定義されたコンフィギュレーション テンプレートが複数あります。 これらのテンプレートを使用する方法の詳細については、[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md) を参照してください。
+このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。 使用できる事前定義されたコンフィギュレーション テンプレートが複数あります。 これらのテンプレートを使用する方法の詳細については、[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md) を参照してください。
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>コンフィギュレーション テンプレートが役に立つ際のシナリオ
 
@@ -88,13 +88,13 @@ ms.locfileid: "5816631"
 4. **+ ファイルの追加** を選択し、データ パッケージの zip ファイルをアップロードします。
 5. **インポート** を選択します。 **拡張** 表示で、**フィルター** オプションを使用して、インポート中に発生する可能性のある問題の概要をすばやく取得します。
 
-**実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
+**実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
 
 同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、[Finance and Operations で倉庫テンプレートを使用してコンフィギュレーションをコピーする方法](https://www.youtube.com/watch?v=K2WIfFlqJYs) について YouTube でこの 3 分間のビデオを参照してください。
 
 ## <a name="related-topic"></a>関連するトピック
 
-[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)
+[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832397"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899170"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832397"
 
 ## <a name="warehouse-execution-on-scale-units"></a>スケール ユニットでの倉庫の実行
 
-この機能により、スケール ユニットで、倉庫管理機能から選択したプロセスを実行できるようになります。 クラウドのスケール ユニットでは、選択した Microsoft Azure リージョンで専用の処理能力を使用して、クラウド内の負荷を実行します。 エッジのスケール ユニットでは、スケール ユニットが一時的にクラウドから切断されている場合でも、いくつかのワークロードを個別に実行できます。
+この機能により、スケール ユニットで、倉庫管理機能から選択したプロセスを実行できるようになります。
 
 このトピックでは、スケール単位として定義されている倉庫での倉庫管理の実行は、*倉庫実行システム* (*WES*) と呼ばれます。
 
 ## <a name="prerequisites"></a>必要条件
 
-倉庫管理ワークロードと共に配置された Dynamics 365 Supply Chain Management ハブとスケール ユニットが必要です。 アーキテクチャと配置プロセスの詳細については、[製造と倉庫の管理ワークロードのためのクラウドとエッジのスケール ユニット](cloud-edge-landing-page.md) を参照してください。
+倉庫管理ワークロードと共に配置された Dynamics 365 Supply Chain Management ハブとスケール ユニットが必要です。 アーキテクチャと配置プロセスの詳細については、[スケール ユニットを使用して、Supply Chain Management のワークロードの弾力性向上させる](cloud-edge-landing-page.md) を参照してください。
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>スケール ユニット上で WES ワークロードが動作する方法
 
@@ -297,6 +297,8 @@ ms.locfileid: "5832397"
 - ウェーブ テーブル レコードを処理する
 - 倉庫ハブからスケール ユニットへのメッセージ プロセッサ
 - 倉庫注文明細行に対する数量更新要求の処理
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

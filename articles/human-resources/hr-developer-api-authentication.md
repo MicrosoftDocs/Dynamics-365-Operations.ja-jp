@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3dffe1db98ba39fde2229e69bc70bdbf113ff6ad
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94d76a9f6d4a3d7afcb9b85d961899880ca9fc75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793684"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893451"
 ---
 # <a name="authentication"></a>認証
 
@@ -82,7 +82,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Web アプリに関しては、アプリのベース URL を指定します。 たとえば、`http://localhost:31544` はローカル コンピューターで実行する Web アプリの URL である可能性があります。 ユーザーは、この URL を使用して Web クライアント アプリにサインインします。
         - パブリック クライアント アプリに関しては、Azure AD を使用してトークン応答を返すための URI を指定します。 `myapp://auth` などの、アプリに固有の値を入力します。
 
-        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Microsoft ID プラットフォーム (旧「開発者向けAzure Active Directory」)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts)のクイックスタートを参照してください。
+        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Microsoft ID プラットフォーム (旧「開発者向けAzure Active Directory」)](/azure/active-directory/develop/#quickstarts)のクイックスタートを参照してください。
 
 5. **API アクセス許可** で、**アクセス許可の追加** を選択します。 次に、**自分の組織が使用する API** タブで **Dynamics 365 Human Resources** サービスを検索し、アプリに **user\_impersonation** のアクセス許可を追加します。 人事管理のアプリケーション ID は f9be0c49-aa22-4ec6-911a-c5da515226ff です。 この ID を使用して、正しいアプリケーションが選択されていることを確認します。
 

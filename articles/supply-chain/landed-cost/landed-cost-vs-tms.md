@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 244d378316caf639c3520a1179dd82955d94220a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833860"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909478"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>陸揚原価と輸送管理
 
@@ -51,8 +51,8 @@ TMS および荷揚原価は、原価設定、行程、およびレッグなど�
 
 次のレポートは、荷揚原価が提供する輸送中の商品機能と組み合わせては動作しません。
 
-- [会社間輸送中の商品の合計レポート](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [会社間輸送中の商品の合計レポート](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [会社間輸送中の商品の合計レポート](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [会社間輸送中の商品の合計レポート](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 これらのレポートは、商品が販売梱包明細が発行されるとすぐに輸送され、輸送から受領へと在庫に移されることを前提としています。 ただし、輸送中の商品は、この方法では処理されません。 したがって、輸送中の商品と会社間機能を併せて使用すると、これら両方のレポートの結果は正しく表示されません。
 

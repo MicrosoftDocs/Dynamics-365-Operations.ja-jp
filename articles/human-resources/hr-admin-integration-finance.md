@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a81e5c56e219ec9d7fb95ac6cc053fb13601f0f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac4c15b4dbf60f378ba325adedb377e12585481a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801170"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889959"
 ---
 # <a name="configure-integration-with-finance"></a>Finance との統合のコンフィギュレーション
 
@@ -29,7 +29,7 @@ ms.locfileid: "5801170"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Human Resources と Dynamics 365 Finance を統合するには、[データ インテグレーター](https://docs.microsoft.com/powerapps/administrator/data-integrator)の 「Human Resources から Finance へ」 のテンプレートを使用します。 「Human Resources から Finance へ」 のテンプレートでは、職務、職位、および作業者のデータフローを使用できます。 このテンプレートを使用すると、データを Human Resources から Finance に転送できますが、Finance から Human Resources にデータを渡すことはできません。
+Dynamics 365 Human Resources と Dynamics 365 Finance を統合するには、[データ インテグレーター](/powerapps/administrator/data-integrator)の 「Human Resources から Finance へ」 のテンプレートを使用します。 「Human Resources から Finance へ」 のテンプレートでは、職務、職位、および作業者のデータフローを使用できます。 このテンプレートを使用すると、データを Human Resources から Finance に転送できますが、Finance から Human Resources にデータを渡すことはできません。
 
 ![Human Resources から Finance への統合フロー](./media/hr-admin-integration-finance-flow.png)
 
@@ -248,7 +248,7 @@ Human Resources から Finance にデータを統合する場合は、ID に基�
 
 これが発生する領域は、 **従業員番号** を使用した一致が実行される **作業者** と、**職位** です。 職務には、番号シーケンスは使用されません。 その結果、同一の職務ジョブ ID が Human Resources と Finance の両方に存在する場合は、Human Resources の情報で Dynamics 365 Finance の情報が上書きされます。 
 
-重複する ID の問題を防ぐには、[番号順序](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json)に接頭語を追加するか、その他のシステムの範囲を超えている番号順序の開始番号を設定します。 
+重複する ID の問題を防ぐには、[番号順序](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)に接頭語を追加するか、その他のシステムの範囲を超えている番号順序の開始番号を設定します。 
 
 番号順序に含まれていない作業者住所に使用される場所 ID。 Human Resources から Finance に作業者住所を統合するとき、Finance に作業者の住所が既に存在する場合は、重複する住所レコードが作成される場合があります。 
 

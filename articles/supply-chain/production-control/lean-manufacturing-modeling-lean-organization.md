@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfc0497286ae0286cde05412c82fcaac76f4042a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 476dfd6be55ce484cb9bc101ac27dc6181f3c010
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837636"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910380"
 ---
 # <a name="modeling-a-lean-organization"></a>リーン組織のモデリング
 
@@ -51,7 +51,7 @@ ms.locfileid: "5837636"
 
 バリュー ストリーム自体は、作業単位としてモデル化されます。 したがって、バリュー ストリームは財務分析コードとして使用できます。
 
-作業単位の詳細については、[作業単位を作成する](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md) を参照してください。
+作業単位の詳細については、[作業単位を作成する](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md) を参照してください。
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>生産フローに基づいたリーン生産の原価計算
 生産フローの原価の定期的な連結により、関連する仕掛品勘定を修正し、生産フローによって供給される製品 の差異を決定できます。

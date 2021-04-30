@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 728984678d78cf626e2b30222f1d1e603e05d117
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ab4cd4a390782936a74977ac2aef3790aa8ac1af
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755061"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891698"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成
 
@@ -90,7 +90,7 @@ GBSI 社を例に使用して、これらの手順について解説します。
 
 **レポート** カスタム XML パーツの要素を Word ドキュメントのコンテンツ コントロールにマップできるようになりました。
 
-[カスタム XML パーツ](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) の要素にマップされた [コンテンツ コントロール](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) を含む形式として Word ドキュメントを設計するプロセスに精通している場合は、次の手順にあるすべてのステップを実行して、ドキュメントを作成します。 詳細については、[ユーザーが入力または印刷するフォームを Word で作成](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b) を参照してください。 それ以外の場合、次の手順をスキップします。
+[カスタム XML パーツ](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) の要素にマップされた [コンテンツ コントロール](/office/client-developer/word/content-controls-in-word) を含む形式として Word ドキュメントを設計するプロセスに精通している場合は、次の手順にあるすべてのステップを実行して、ドキュメントを作成します。 詳細については、[ユーザーが入力または印刷するフォームを Word で作成](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b) を参照してください。 それ以外の場合、次の手順をスキップします。
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>カスタム XML パーツを含む Word ドキュメントの取得とデータ マッピングの実行
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 080f66e4e13df44a77f0499c6d69686f0e3d7021
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bf406a954f5bb8b49627b58a901d0721cdad407b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801194"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890031"
 ---
 # <a name="configure-dataverse-integration"></a>Dataverse 統合のコンフィギュレーション
 
@@ -30,7 +30,7 @@ ms.locfileid: "5801194"
 Microsoft Dataverse と Dynamics 365 Human Resources の統合を有効化また無効化にできます。 また、同期の詳細を表示し、追跡データをクリアし、テーブルを再同期して、2 つの環境間のデータ問題のトラブルシューティングに役立てることもできます。
 
 > [!NOTE]
-> Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)を参照してください
+> Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](/powerapps/maker/data-platform/data-platform-intro)を参照してください
 
 統合をオフにすると、ユーザーは Human Resources または Dataverse に変更を加えることができますが、これらの変更は 2 つの環境間で同期されません。
 
@@ -124,8 +124,8 @@ Human Resources と Dataverse の間のテーブルで完全同期を実行す�
 [Dataverse テーブル](hr-developer-entities.md)<br>
 [構成 Dataverse 仮想テーブル](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Human Resources 仮想テーブルに関するよく寄せられる質問](hr-admin-virtual-entity-faq.md)<br>
-[Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[用語の更新](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[Microsoft Dataverse とは](/powerapps/maker/data-platform/data-platform-intro)<br>
+[用語の更新](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

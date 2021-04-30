@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b994473b4535c255f87551a6d97e197516fc2a9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88d3f1fba05d944e78e4595018d190c3dc41e076
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745840"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907914"
 ---
 # <a name="create-new-users"></a>新規ユーザーの作成
 
@@ -29,10 +29,10 @@ Finance and Operations アプリにアクセスするには、まず **ユーザ
 Finance and Operations アプリの購入方法とライセンスの取得方法については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
 
 ## <a name="assign-a-license-to-a-user"></a>ライセンスのユーザーへの割り当て
-システム管理者は、[Microsoft 365 管理者センター](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide)で、[ユーザーにライセンスを割り当てる](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)ことができます。
+システム管理者は、[Microsoft 365 管理者センター](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide)で、[ユーザーにライセンスを割り当てる](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)ことができます。
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Azure AD への外部ユーザーの追加とライセンスの割り当て 
-外部ユーザーがライセンスを割り当てできるよう、テナント ディレクトリ (Azure Active Directory (Azure AD)) に表示される必要があります。 それら外部ユーザーは、ゲスト ユーザーとして Azure AD のテナントに追加した後、適切なライセンスを割り当てる必要があります。 Finance and Operations アプリの要件は、ゲスト ユーザーの会社が Azure AD を使用することです。 詳細については、[Azure ポータルで Azure Active Directory B2B コラボレーション ユーザーを追加する](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator) を参照してください。
+外部ユーザーがライセンスを割り当てできるよう、テナント ディレクトリ (Azure Active Directory (Azure AD)) に表示される必要があります。 それら外部ユーザーは、ゲスト ユーザーとして Azure AD のテナントに追加した後、適切なライセンスを割り当てる必要があります。 Finance and Operations アプリの要件は、ゲスト ユーザーの会社が Azure AD を使用することです。 詳細については、[Azure ポータルで Azure Active Directory B2B コラボレーション ユーザーを追加する](/azure/active-directory/b2b/add-users-administrator) を参照してください。
 
 ## <a name="import-new-users-from-azure-ad"></a>Azure AD からの新規ユーザーのインポート 
 1. **システム管理** \> **ユーザー** \> **ユーザー** の順に移動します。
@@ -57,7 +57,7 @@ Finance and Operations アプリの購入方法とライセンスの取得方法
 7. **会社** フィールドで、ユーザーの既定の起動時に開く会社を選択します。 
 8. **保存** を選択します。
 
-ユーザー レコードを保存すると、ID プロバイダーとテレメトリ ID の値が [Microsoft Graph](https://docs.microsoft.com/graph/overview) 呼び出しに基づいて更新されます。 テレメトリ ID は、Azure AD のオブジェクト ID/セキュリティ識別子 (SID) に基づきます。
+ユーザー レコードを保存すると、ID プロバイダーとテレメトリ ID の値が [Microsoft Graph](/graph/overview) 呼び出しに基づいて更新されます。 テレメトリ ID は、Azure AD のオブジェクト ID/セキュリティ識別子 (SID) に基づきます。
 
 > [!NOTE]
 > ユーザーを追加した後で、必要に応じロールと組織を割り当てる必要があります。 詳細については、[ユーザーのセキュリティ ロールへの割り当て](assign-users-security-roles.md) を参照してください。 条件付きで、ユーザーを **個人** に関連付けたり、言語などの **ユーザー オプション** を更新したりする必要がある場合もあります。

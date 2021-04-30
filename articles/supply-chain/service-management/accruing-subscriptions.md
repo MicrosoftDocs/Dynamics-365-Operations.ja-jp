@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d6f2f69b7093e5408b016f4a69792b28c70f57f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6a2b581c8ae52f4c379e8e511dc898a8d106d149
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824681"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908063"
 ---
 # <a name="accruing-subscriptions"></a>定期売買の発生 
 
@@ -41,7 +41,7 @@ ms.locfileid: "5824681"
 
   - 訂正票が転記された日または見越計上の元の転記日に未収金額を取り消すことができます。
 
-詳細については、[定期売買パラメータ (フォーム)](https://technet.microsoft.com/library/aa619615.aspx) を参照してください。
+詳細については、[定期売買パラメータ (フォーム)](/dynamicsax-2012//subscription-parameters-form) を参照してください。
 
 ## <a name="setup-requirements"></a>要件の設定
 

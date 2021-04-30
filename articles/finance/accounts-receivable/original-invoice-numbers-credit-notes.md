@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ce06a0ce4f2a308e1917ac2c7cbc66f0494a2ec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811513"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897335"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>貸方票での元の請求書への参照
 
@@ -30,7 +30,7 @@ ms.locfileid: "5811513"
 
 ## <a name="prerequisites"></a>必要条件
 
-- **機能管理** ワークスペースで、**販売およびプロジェクト請求レポートの請求の貸方転記レイアウト** 機能を有効 にします。 詳細については [機能管理の概要](../../fin-and-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+- **機能管理** ワークスペースで、**販売およびプロジェクト請求レポートの請求の貸方転記レイアウト** 機能を有効 にします。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 - 必要なドキュメントの印刷可能な形式については、印刷管理で構成する必要があります。
 
 このトピックで説明する機能は、以下のドキュメントに適用されます:

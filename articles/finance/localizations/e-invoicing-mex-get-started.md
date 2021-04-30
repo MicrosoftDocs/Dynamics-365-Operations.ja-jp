@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840055"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894886"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>メキシコ用電子請求の使用を開始する
 
@@ -86,7 +86,7 @@ RCS の設定を行う際には、次の作業を実行します :
 
     ![形式デザイナー ページを開く](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. **形式デザイナー** ページを使用して、ER 形式ファイルの構成を編集、確認します。 詳細については、[電子ドキュメントのコンフィギュレーションの作成](../../dev-itpro/analytics/electronic-reporting-configuration.md) を参照してください。
+3. **形式デザイナー** ページを使用して、ER 形式ファイルの構成を編集、確認します。 詳細については、[電子ドキュメントのコンフィギュレーションの作成](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md) を参照してください。
 
     ![形式デザイナーのページ](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
@@ -161,7 +161,7 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>ER データ モデル、ERデータ モデル マッピング、CFDI 請求書で使用するコンテキスト構成をインポートする
 
 1. 財務にログインします。
-2. **電子レポート** ワークスペースの、**構成プロバイダー** セクションで、**Microsoft** タイトルを選択します。 この構成プロバイダーが **有効** に設定されていることを確認してください。 プロバイダーを **有効化** を設定する方法については、[構成プロバイダーを作成して有効化としてマークする](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11)を参照してください。
+2. **電子レポート** ワークスペースの、**構成プロバイダー** セクションで、**Microsoft** タイトルを選択します。 この構成プロバイダーが **有効** に設定されていることを確認してください。 プロバイダーを **有効化** を設定する方法については、[構成プロバイダーを作成して有効化としてマークする](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md)を参照してください。
 3. **リポジトリ** を選択します。
 4. **グローバル リソース \>  開く** を選択します。
 5. **請求書モデル**、**請求書モデル マッピング**、**CFDI 請求書形式 (MX)**、**CFDI 請求書の取消申請の形式 (MX)**、**CFDI 請求書の取消形式 (MX)** をインポートします。
@@ -215,7 +215,7 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 **構成可能な電子請求の統合** 機能を有効化すると、CFDI 請求書の提出に使用する **電子請求書のエクスポート/インポート** 処理 (**売掛金勘定 \> 請求書 \> 電子請求書**) は使用できなくなります。 これは、**電子ドキュメントの送信** という名前の新しいプロセスによって置き換えられ ます。
 
 > [!NOTE]
-> 新しい **電子ドキュメントの送信** プロセスを使用する前に、メキシコ向けの電子請求書に必要な設定が完了していることを確認してください。 詳細については、[CFDI レイアウト バージョン 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3) を参照してください。
+> 新しい **電子ドキュメントの送信** プロセスを使用する前に、メキシコ向けの電子請求書に必要な設定が完了していることを確認してください。 詳細については、[CFDI レイアウト バージョン 3.3](./latam-mex-cfdi-3-3.md) を参照してください。
 
 1. **組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの送信** に移動します。
 2. ドキュメントを初めて送信する場合は、必ず **ドキュメントの再送信** オプションを **いいえ** に設定してください。 サービスを使用してドキュメントを再送信する必要がある場合は、このオプションを **はい** に設定します。

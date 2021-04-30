@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2335721cfe8fd7ff3f76e3c7ca2560a56d45d583
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
+ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818683"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5867450"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>データ インテグレーター プロジェクトの作成 (プレビュー版)
 
@@ -59,6 +59,7 @@ ms.locfileid: "5818683"
     1. 作成した接続セットを使用して、次のテンプレートのデータ統合プロジェクトを作成します。
 
         - 顧客支払分析情報の結果 (CD から Fin と Ops)
+            - バージョン 10.0.17 以降を使用している場合、顧客支払分析情報の結果 (CDS から Finance and Operations 10.0.17+) という名前のテンプレートを使用する必要があります。
         - キャッシュ フロー時系列の結果 (CD から Fin と Ops)
         - 予算時系列の結果 (CD から Fin と Ops)
 

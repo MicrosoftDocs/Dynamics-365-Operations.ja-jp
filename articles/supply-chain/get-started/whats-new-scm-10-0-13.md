@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f405fba2b28ccae6b3aadbcf683d050040587cde
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f491cebacad1e289e6b004d573916eaf8ec0e110
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832181"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909552"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Dynamics 365 Supply Chain Management 10.0.13 (2020 年 10 月) の新機能または変更された機能
 
@@ -33,23 +33,23 @@ ms.locfileid: "5832181"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-- [用語 "在庫原価計算のキャンセル" を "在庫決算の取り消し" に変更](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - 詳細については、[在庫決算](../cost-management/inventory-close.md)を参照してください。
+- [用語 "在庫原価計算のキャンセル" を "在庫決算の取り消し" に変更](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - 詳細については、[在庫決算](../cost-management/inventory-close.md)を参照してください。
 
-- [バッチ ジョブからの出荷の確認](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - 詳細については、[バッチ ジョブからの出荷の確認](../warehousing/confirm-outbound-shipments-from-batch-jobs.md)を参照してください。
+- [バッチ ジョブからの出荷の確認](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - 詳細については、[バッチ ジョブからの出荷の確認](../warehousing/confirm-outbound-shipments-from-batch-jobs.md)を参照してください。
 
-- [複数の購入作業項目の委任](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - 詳細については、[ワークフローでの作業項目の委任](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md)を参照してください。
+- [複数の購入作業項目の委任](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - 詳細については、[ワークフローでの作業項目の委任](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md)を参照してください。
 
-- [ジョブ カード デバイスからの完了報告時にシリアル番号を入力](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - 詳細については、[ジョブ カード デバイスからの完了レポート](../production-control/report-finished-job-device.md)を参照してください。
+- [ジョブ カード デバイスからの完了報告時にシリアル番号を入力](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - 詳細については、[ジョブ カード デバイスからの完了レポート](../production-control/report-finished-job-device.md)を参照してください。
 
-- [製品バージョン追跡と拡張機能の新しい在庫分析コード](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - 詳細については、[製品分析コード](../pim/product-dimensions.md)を参照してください。
+- [製品バージョン追跡と拡張機能の新しい在庫分析コード](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - 詳細については、[製品分析コード](../pim/product-dimensions.md)を参照してください。
 
-- [ライセンス プレートに基づく注文が確定した引当](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - 詳細については、[柔軟なライセンス プレートの引当](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation)を参照してください。
+- [ライセンス プレートに基づく注文が確定した引当](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - 詳細については、[柔軟なライセンス プレートの引当](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation)を参照してください。
 
-- [作業集荷明細行の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
+- [作業集荷明細行の概要](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
-- [入庫作業の作業ポリシー拡張機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - 詳細については、[倉庫ポリシー](../warehousing/warehouse-work-policies.md)を参照してください。
+- [入庫作業の作業ポリシー拡張機能](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - 詳細については、[倉庫ポリシー](../warehousing/warehouse-work-policies.md)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -65,7 +65,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.13 には、Platform updates
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bf0e2d90b07cb488429311d04dfbc4d1d3520842
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b07bfb27bbe5e546dac9d72666b3225cc202670
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800096"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890702"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 9 月 16 日)
 
@@ -33,7 +33,7 @@ ms.locfileid: "5800096"
 
 ## <a name="included-in-this-release"></a>このリリースに含まれる
 
--  [保存されているビュー - 一般提供](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- 詳細については、[保存されているビュー](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views) を参照してください。 
+-  [保存されているビュー - 一般提供](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- 詳細については、[保存されているビュー](../fin-ops-core/fin-ops/get-started/saved-views.md) を参照してください。 
 
 - **職位アクション** フォームには、更新された分析コード グリッドと新しいダイアログがあります (469495)。
 
@@ -76,21 +76,21 @@ ms.locfileid: "5800096"
 
 従業員は、Microsoft Teams 内で休暇の表示および申請ができます。 ボットと対話して、休暇申請を作成できます。 詳細については、以下を参照してください。
 
-- Dynamics 365 2020 リリース ウェーブ 1 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams)
-- Human Resources ドキュメントの [Teams の Human Resources アプリ](https://go.microsoft.com/fwlink/?linkid=2127841)
+- Dynamics 365 2020 リリース ウェーブ 1 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams)
+- Human Resources ドキュメントの [Teams の Human Resources アプリ](./hr-admin-teams-leave-app.md)
 
 ### <a name="human-resources-app-in-teams-preview-features"></a>Teams の Human Resources アプリにおけるプレビュー機能
  
 -  **通知** : 休暇申請の提出者と承認者は、Teams の人事アプリで通知されます。 承認者は、休暇申請を承認または拒否できます。 申請が承認または拒否された場合は、送信者に通知されます。 詳細については、以下を参照してください。
-   - Dynamics 365 2020 リリース ウェーブ 2 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams)
-   - Human Resources ドキュメントの [Teams の Human Resources アプリの通知を有効にする](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams)
-   - Human Resources ドキュメントの [個々のユーザーの Teams の通知をオンまたはオフにする](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users)
-   - Human Resources ドキュメントの [Teams の通知](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications)
-   - Human Resources ドキュメントの [チームの休暇カレンダーの表示](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar)
+   - Dynamics 365 2020 リリース ウェーブ 2 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams)
+   - Human Resources ドキュメントの [Teams の Human Resources アプリの通知を有効にする](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams)
+   - Human Resources ドキュメントの [個々のユーザーの Teams の通知をオンまたはオフにする](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users)
+   - Human Resources ドキュメントの [Teams の通知](./hr-teams-leave-app.md#respond-to-teams-notifications)
+   - Human Resources ドキュメントの [チームの休暇カレンダーの表示](./hr-teams-leave-app.md#view-your-teams-leave-calendar)
  
 - **マネージャーの休暇カレンダー**: マネージャーは、直属の部下の承認済みおよび保留中の休暇をカレンダー表示で確認できます。 このビューを使用すると、チームのメンバーの休暇を簡単に把握することができます。 詳細については、以下を参照してください。
-   - Dynamics 365 2020 リリース ウェーブ 2 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams)
-   - Human Resources ドキュメントの [チームの休暇カレンダーの表示](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar)
+   - Dynamics 365 2020 リリース ウェーブ 2 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams)
+   - Human Resources ドキュメントの [チームの休暇カレンダーの表示](./hr-teams-leave-app.md#view-your-teams-leave-calendar)
 
 ### <a name="configuration-option-to-position-work-items-assigned-to-me-list-477004"></a>自分のリストに割り当てられた作業項目を配置するコンフィギュレーション オプション (477004)
 
@@ -98,7 +98,7 @@ ms.locfileid: "5800096"
 
 この機能は、人事アクション フォームに表示されるワークフロー オプションも促進します。 すばやくアクセスできるように、アクション クイック タブ上にも、ワークフロー オプションは表示されます。 詳細については、以下を参照してください。 
 
-- Dynamics 365 2020 のリリース ウェーブ 2 プランの [組織および人事管理ワークフロー エクスペリエンスの機能強化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements)
+- Dynamics 365 2020 のリリース ウェーブ 2 プランの [組織および人事管理ワークフロー エクスペリエンスの機能強化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements)
 
 ![自分自身に割り当てられた作業項目](./media/hr-workflow-work-items-assigned-to-me.png)
 
@@ -106,7 +106,7 @@ ms.locfileid: "5800096"
 
 ### <a name="leave-and-absence-calendar"></a>休暇および欠勤カレンダー
 
-このリリースには、休暇および欠勤カレンダーの追加カレンダー オプションが含まれています。 詳細については、[チームおよび会社カレンダーの表示](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-calendar) を参照してください。
+このリリースには、休暇および欠勤カレンダーの追加カレンダー オプションが含まれています。 詳細については、[チームおよび会社カレンダーの表示](./hr-employee-self-service-calendar.md) を参照してください。
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -121,7 +121,7 @@ ms.locfileid: "5800096"
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
 

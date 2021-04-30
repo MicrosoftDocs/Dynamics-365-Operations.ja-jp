@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dad97e13624449d287ded74e7e25f94eb0dbde3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f571f80330d2cc7858ef11271b0466d71aa9709c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838325"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908014"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>倉庫作業の繰延処理
 
@@ -28,7 +28,7 @@ ms.locfileid: "5838325"
 
 繰延処理機能では、プット工程がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理では、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーの処理時間がアドホックまたは予定外で増加する場合、さらに増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
 
-バックグラウンド処理は、SysOperation フレームワークを使用して行われます。 詳細については、[SysOperation フレームワークの概要](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview) を参照してください。
+バックグラウンド処理は、SysOperation フレームワークを使用して行われます。 詳細については、[SysOperation フレームワークの概要](/dynamicsax-2012/developer/sysoperation-framework-overview) を参照してください。
 
 ## <a name="configuring-the-work-processing-policies"></a>作業処理ポリシーの構成
 

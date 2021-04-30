@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f6dbcbd92a99699ce8d7e91c1a7e89a6063035f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795144"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892756"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Human Resources - Go Live の準備
 
@@ -43,7 +43,7 @@ ms.locfileid: "5795144"
 | 2 | チェックリストの完了および送信 | ユーザー受け入れテスト (UAT) が完了した後 | パートナー/顧客 | [FastTrack Go-live アセスメントの](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment)に記載の指示に従います。 |
 | 3 | プロジェクト評価 (FastTrack) | FastTrack アーキテクト* | アーキテクトは、チェックリストを受け取った後に評価を提供し、質問が明確化および軽減されるまでレビューを続行します。 |
 | 4 | プロジェクト ワークショップ (FastTrack) | FastTrack アーキテクト* | |
-| 5 | データ パッケージのインポート | プロジェクトによって異なります | パートナー/顧客 | [データ管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)の指示に従います。|
+| 5 | データ パッケージのインポート | プロジェクトによって異なります | パートナー/顧客 | [データ管理の概要](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)の指示に従います。|
 | 6 | 生産準備完了 | 前の手順すべてが完了した後 | パートナー/顧客 | 顧客/パートナーが引用環境を制御することができます。|
 | 7 | 切替活動 | プロジェクトによって異なります | パートナー/顧客 | |
 | 8 | Go live | プロジェクトによって異なります | 顧客 | |
@@ -66,7 +66,7 @@ UAT のフェーズでは、実装プロジェクトのサンドボックス環�
 
 - UAT のプロセスは、このプロセスを開始する前に、GOLD 構成からのデータを環境にコピーした新しい環境で開始することをお勧めします。 環境が本番稼働するまでは、運用環境をGOLD環境として利用することをお勧めします。
 - テスト ケースは、要件の範囲全体をカバーします。 
-- 移行したデータを使用してテストします。 このデータには、作業者、職務、職位などのマスター データを含める必要があります。 また、休暇および休暇の見越計上と同様に、期首残高も含めます。 最後に、現在の福利厚生の登録など、未処理のトランザクションを含めます。 データセットが確定していない場合でも、すべてのタイプのデータで完全なテストを行うことができます。 
+- 移行したデータを使用してテストします。 これには、作業者、職務、職位などのデータを含める必要があります。 また、休暇および休暇の見越計上と同様に、期首残高も含めます。 最後に、現在の福利厚生の登録など、未処理のトランザクションを含めます。 データセットが確定していない場合でも、すべてのタイプのデータで完全なテストを行うことができます。 
 - ユーザーに割り当てられている適切なセキュリティ ロール (既定のロールおよびカスタム ロール) を使用してテストします。 
 - ソリューションが会社や業界別の規制要件に準拠していることを確認します。 
 - すべての機能を文書化し、顧客の承認とサインオフを取得します。 
@@ -86,7 +86,7 @@ UAT のフェーズでは、実装プロジェクトのサンドボックス環�
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack Go-live アセスメント
 
-FastTrack の対象となっていて、FastTrack ソリューションアーキテクトと契約しているお客様は、Microsoft FastTrack を使用した Go-live レビューを完了します。 詳細については、  [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview) を参照してください。 
+FastTrack の対象となっていて、FastTrack ソリューションアーキテクトと契約しているお客様は、Microsoft FastTrack を使用した Go-live レビューを完了します。 詳細については、  [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。 
 
 Go-Live の約 8 週間前に、FastTrack チームが [Go-Live チェックリスト](https://go.microsoft.com/fwlink/?linkid=2146013)への記入を依頼します。
 

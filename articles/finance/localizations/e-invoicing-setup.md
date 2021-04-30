@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fd0dda0adb292c10eea0a770ae0eae33d5f91f17
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840007"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890834"
 ---
 # <a name="set-up-electronic-invoicing"></a>電子請求の設定
 
@@ -75,7 +75,7 @@ ms.locfileid: "5840007"
     > [!NOTE]
     > 形式を編集している間、コンフィギュレーション バージョンのステータスは **ドラフト** に設定されます。
 
-3. ファイル形式のコンフィギュレーションを変更するには、**形式デザイナー** ページを使用します。 詳細については、[電子ドキュメントのコンフィギュレーションの作成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration) を参照してください。
+3. ファイル形式のコンフィギュレーションを変更するには、**形式デザイナー** ページを使用します。 詳細については、[電子ドキュメントのコンフィギュレーションの作成](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md) を参照してください。
 
     ![形式デザイナーのページ](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 

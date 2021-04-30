@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a48a20939b346b2d8536128107a730761b13f71c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a405fee368bb1789addbdf4316a007e85616d98d
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820716"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897091"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>電子レポートのサンプル仕入先小切手
 
@@ -34,13 +34,13 @@ Microsoft Dynamics 365 Finance には、小切手が一番上にあり、その�
 
 ## <a name="what-do-i-have-to-set-up"></a>何を設定する必要がありますか。
 
-- ER を使用して小切手を印刷するには、少なくとも 1 つの有効な小切手コンフィギュレーションを ER コンフィギュレーションにインポートしておく必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)を参照してください。
+- ER を使用して小切手を印刷するには、少なくとも 1 つの有効な小切手コンフィギュレーションを ER コンフィギュレーションにインポートしておく必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)を参照してください。
 - 銀行口座に現金および銀行管理小切手をコンフィギュレーションする時は、**一般的な電子エクスポート形式** チェック ボックスを選択してから、適切な小切手フォーマットをエクスポート形式コンフィギュレーションとして選択します。
 - 送金に印刷される伝票の明細行の数を指定する必要もあります。 この数を計算する際は確実にヘッダー行も含めるようにします。 2 つのサンプル小切手フォーマットについては、推奨される明細行の数は 17 です。 ただし、小切手ストックおよびプリンター ドライバーによってこの番号は異なります。
 - テスト用小切手を印刷して小切手のレイアウトを検証することをお勧めします。 テスト用小切手を印刷するには、**印刷テスト** オプションを選択します。 サンプル小切手フォーマットは、Microsoft Excel の詳細なプリンターのプロパティで **余白** を **なし** に設定すると最適に機能します。 テスト用小切手が生成されてから、Excel 出力の編集機能を有効にし、すべての余白が **0** (ゼロ) に設定されるようにページ レイアウトを構成します。 小切手のテスト コピーを小切手ストックと比較し、配置に問題がなくなるまで設定を調整します。
 - 支払仕訳でコンフィギュレーションしてある銀行口座に対する支払を生成する時、小切手は指定されたフォーマットを使用して印刷されます。
 
-詳細については、「[電子レポートのフォーマットを修正する](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md)」を参照してください。
+詳細については、「[電子レポートのフォーマットを修正する](../../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md)」を参照してください。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

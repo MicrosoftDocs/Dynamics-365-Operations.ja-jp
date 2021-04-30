@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 41cddcdad5043ec314a94dda67f4f2e9de406cac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ba1a6c5542c10306d4b7494d33e7ff04504fa95
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840175"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893781"
 ---
 # <a name="electronic-invoicing-faq"></a>電子請求に関する FAQ
 
@@ -55,7 +55,7 @@ ms.locfileid: "5840175"
 
 ## <a name="does-electronic-invoicing-interface-with-the-vendor-import-automation-feature"></a>電子請求は、ベンダー インポート オートメーション機能とインターフェイスを取っていますか?
 
-いいえ。 このインターフェイスについては予定がありますが、計画されたタイムラインはありません。 予定されたら、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)で日付が発表されます。
+いいえ。 このインターフェイスについては予定がありますが、計画されたタイムラインはありません。 予定されたら、[リリース計画](/dynamics365/release-plans/)で日付が発表されます。
 
 ## <a name="how-does-electronic-invoicing-handle-file-attachments-into-the-electronic-invoice-is-a-sharepoint-server-needed-when-embedding-pdf-files-into-the-xml-file"></a>電子請求では、電子請求書へのファイル添付をどのように処理しますか? PDF ファイルを XML ファイル埋め込む際に、SharePoint サーバーは必要ですか?
 

@@ -2,11 +2,11 @@
 title: 資産リースのホームページ
 description: このトピックでは、資産リースのドキュメントの概要と、特定のトピックへのリンクを示します。
 author: moaamer
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 532601d08d52e9edaf97253df4efd2fc10985dc0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 202a353929fbcd8d81593db155d7bfeebb8f3021
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816151"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898113"
 ---
 # <a name="asset-leasing-home-page"></a>資産リースのホームページ
 
@@ -28,7 +28,9 @@ ms.locfileid: "5816151"
 
 このトピックでは、アセットリースで利用可能なヘルプトピックを一覧表示し、特定のトピックへのリンクを掲載しています。 
 
-資産リースは、Microsoft Dynamics 365 Finance でリースされた資産の財務トランザクションを管理、追跡、自動化するための高度な機能です。 資産リースは、国際会計基準 (IFRS 第 16 号) と米国会計基準 (ASC 第 842 号) に準拠しています。 資産リースは、リース情報を取得して処理し、初期認識、月次仕訳入力からリースの減損や終了まで、リースのライフサイクル全体の仕訳入力を生成するのに役立ちます。  
+資産リースは、Microsoft Dynamics 365 Finance でリースされた資産の財務トランザクションを管理、追跡、自動化するための高度な機能です。 資産リースは、国際会計基準 (IFRS 第 16 号) と米国会計基準 (ASC 第 842 号) に準拠しています。 資産リースは、リース情報を取得して処理し、初期認識、月次仕訳入力からリースの減損や終了まで、リースのライフサイクル全体の仕訳入力を生成するのに役立ちます。
+
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、**機能の管理** ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **管理機能** ワークスペースで、**資産リース** を探して選択し、**今すぐ有効にする** ボタンをクリックします。
 
 ## <a name="asset-leasing-topics"></a>資産リースのトピック
 次のトピックでは、資産リースの構成と使用について説明します。 
@@ -82,7 +84,7 @@ ms.locfileid: "5816151"
 
 ### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
+予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](/dynamics365/release-plans/) を参照してください。 
 
 ### <a name="blogs"></a>ブログ
 

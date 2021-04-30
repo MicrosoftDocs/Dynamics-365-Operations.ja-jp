@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2443bb057a8b7fe280ed26ecae4e50f671b5e082
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818803"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908833"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Finance Insights の構成 (プレビュー版)
 
@@ -38,7 +38,7 @@ Finance insights では、Microsoft Dataverse を使用した Microsoft Dynamics
 
 1. Microsoft Dynamics Lifecycle Services (LCS) で、Dynamics 365 Finance 環境を作成または更新します。 この環境では、アプリ バージョン10.0.11/プラットフォーム更新プログラム 35またはそれ以降が必要となります。
 2. この環境は、サンドボックスの高可用性 (HA) 環境である必要があります。 (このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
-3. Contoso のデモデータを使用している場合は、顧客支払予測、キャッシュフロー予測、予算予測機能の使用にあたり、追加のサンプルデータが必要になります。 
+3. Contoso のデモ データを使用している場合は、顧客支払予測、キャッシュ フロー予測、予算予測機能の使用にあたり、追加のサンプル データが必要になります。 
 
 ## <a name="configure-dataverse"></a>Dataverse のコンフィギュレーション
 
@@ -69,7 +69,7 @@ Finance insights では、Microsoft Dataverse を使用した Microsoft Dynamics
     13. **リソース \> すべてのレガシー設定** を選択します。
     14. トップ ナビゲーションバーで、**設定** を選択し、**カスタマイズ** を選択します。
     15. **開発者リソース** を選択します。
-    16. **インスタンス参照情報の ID** フィールドを、前述の手順でメモした  Dataverse 組織 ID の値に設定します。
+    16. **Dataverse 組織 ID** の値をコピーします。
     17. ブラウザーのアドレスバーで、Dataverse 組織の URL をメモします。 URL は次のようなものになるでしょう: [`https://org42b2b3d3.crm.dynamics.com`]。
 
 2. キャッシュフロー予測機能や予算予測機能を使用する場合は、次の手順に従って、注釈の制限を少なくとも 50 メガバイト (MB) に更新してください。
@@ -286,12 +286,12 @@ catch {
 
 # <a name="use-a-windows-powershell-script"></a>[Windows PowerShell スクリプトを使用する](#tab/use-a-powershell-script)
 
-Windows PowerShell スクリプトが指定されているため、[Azure Data Lakeへのエクスポートの構成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)で説明されているように Azure リソースを簡単に設定できます。 手動による設定を行う場合は、この手順を省略して、[手動設定](#manual-setup)の手順に進みます。
+Windows PowerShell スクリプトが指定されているため、[Azure Data Lakeへのエクスポートの構成](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md)で説明されているように Azure リソースを簡単に設定できます。 手動による設定を行う場合は、この手順を省略して、[手動設定](#manual-setup)の手順に進みます。
 
 > [!NOTE]
 > PowerShell スクリプトを実行するには、次の手順を実行します。 Azure CLI の "Try it" オプション、または PC 上でのスクリプト実行ができない場合があります。
 
-Windows PowerShell スクリプトを使用して Azure をコ構成するには、次の手順に従います。 Azure リソース グループ、Azure リソース、 Azure AD アプリケーションを作成する権限を持っている必要があります。 必要なアクセス許可については、[Azure AD のアクセス許可の確認](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app)を参照してください。
+Windows PowerShell スクリプトを使用して Azure をコ構成するには、次の手順に従います。 Azure リソース グループ、Azure リソース、 Azure AD アプリケーションを作成する権限を持っている必要があります。 必要なアクセス許可については、[Azure AD のアクセス許可の確認](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app)を参照してください。
 
 1. [Azure portal](https://portal.azure.com)で、対象の Azure サブスクリプションにアクセスします。 **検索** フィールドの右側にある **Cloud Shell** ボタンを選択します。
 2. **PowerShell** を選択します。
@@ -943,18 +943,7 @@ finally {
 ```
 ---
 
-## <a name="configure-the-entity-store"></a>エンティティの保存を構成する
 
-Finance 環境でエンティティの保存を設定するには、次の手順に従います。
-
-1. **システム管理 \> 設定 \> システム パラメーター \> データ接続** に移動します。
-2. **Data Lake 統合の有効化** オプションを **はい** に設定します。
-3. 次のキー コンテナー フィールドを設定します。
-
-    - **アプリケーション (クライアント) ID**: 以前に作成したアプリケーションクライアント ID を入力します。
-    - **アプリケーションのシークレット** - 以前に作成したアプリケーションで使用する保存済みのシークレットを入力します。
-    - **DNS 名** - ドメイン ネーム システム (DNS) 名は、前述の手順で作成したアプリケーションの [アプリケーションの詳細] ページで確認できます。
-    - **シークレット名** - **ストレージ アカウントの接続文字列** を入力します。
 
 ## <a name="configure-the-data-lake"></a>Data Lake を構成する
 
@@ -991,6 +980,19 @@ LCS を使用して Azure Data Lake アドインを環境に追加するには�
     | CDS テナント ID (AAD のディレクトリ ID)               | Dataverse インスタンスのテナント ID です。 この値を検索するには、[Azure portal](https://portal.azure.com) を開き、**Azure Active Directory** に移動し、**テナント ID** の値をコピーします。 |
     | システム管理者ロールを持つユーザー オブジェクトの ID を指定します | Azure AD のユーザーの Dataverse ユーザーのオブジェクト ID です。 このユーザーは、Dataverse インスタンスのシステム管理者である必要があります。 この値を検索するには、[Azure portal](https://portal.azure.com)を開き、**Azure Active Directory\>** ユーザーに移動し、ユーザーを選択して、**ID** セクションで **オブジェクト ID** 値をコピーします。 |
     | これはテナントの既定の CD 環境ですか？      | Dataverse インスタンスが最初に作成された運用インスタンスの場合は、このチェックボックスを選択します。 Dataverse インスタンスが手動で作成された場合は、このチェックボックスをオフにします。 |
+
+## <a name="configure-the-entity-store"></a>エンティティの保存を構成する
+
+Finance 環境でエンティティの保存を設定するには、次の手順に従います。
+
+1. **システム管理 \> 設定 \> システム パラメーター \> データ接続** に移動します。
+2. **Data Lake 統合の有効化** オプションを **はい** に設定します。
+3. 次のキー コンテナー フィールドを設定します。
+
+    - **アプリケーション (クライアント) ID**: 以前に作成したアプリケーションクライアント ID を入力します。
+    - **アプリケーションのシークレット** - 以前に作成したアプリケーションで使用する保存済みのシークレットを入力します。
+    - **DNS 名** - ドメイン ネーム システム (DNS) 名は、前述の手順で作成したアプリケーションの [アプリケーションの詳細] ページで確認できます。
+    - **シークレット名** - **ストレージ アカウントの接続文字列** を入力します。
 
 ## <a name="feedback-and-support"></a>フィードバックとサポート
 

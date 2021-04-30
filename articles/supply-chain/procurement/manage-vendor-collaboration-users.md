@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22a372ad4bfcae4a1d66635921a680cdb04cc2f0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1231c942e2ab3dd6b48655ac8c6e24c87165c009
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840849"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908546"
 ---
 # <a name="manage-vendor-collaboration-users"></a>仕入先コラボレーション ユーザーの管理
 
@@ -62,7 +62,7 @@ Dynamics 365 Supply Chain Management の仕入先コラボレーション イン
 4. **ユーザー ロールの割り当て** セクションで、新しいユーザーが持つ必要のあるセキュリティ ロールの **割り当て** チェック ボックスを選択します。
 5. **送信** をクリックします。
 
-仕入先ユーザーが送信を要求する場合、**仕入先コラボレーションへのアクセスの許可** フィールドは、選択された仕入先アカウントのために **はい** に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは作成され、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Supply Chain Management ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
+仕入先ユーザーが送信を要求する場合、**仕入先コラボレーションへのアクセスの許可** フィールドは、選択された仕入先アカウントのために **はい** に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは作成され、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Supply Chain Management ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
 
 ### <a name="inactivate-a-user"></a>ユーザーの無効化
 

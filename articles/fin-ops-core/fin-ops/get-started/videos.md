@@ -2,7 +2,7 @@
 title: ビデオ
 description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
 author: sericks007
-ms.date: 02/11/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: eae8e95d39a5b9ade24e7fe9c9407d29e67a8727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fc34f1691447b9c34e1572229f9c545913039626
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754707"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881739"
 ---
 # <a name="videos"></a>ビデオ 
 
@@ -84,6 +84,9 @@ ms.locfileid: "5754707"
 
 ## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Finance に関するビデオ
 
+### <a name="business-document-management"></a>ビジネス ドキュメントの管理
+- [ビジネス ドキュメントの管理を使用して新しいビジネス ドキュメントを作成する](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### <a name="customize-the-app"></a>アプリのカスタマイズ
 - [カスタム フィールドを追加する](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [埋め込み Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
@@ -112,6 +115,9 @@ ms.locfileid: "5754707"
 
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management に関するビデオ
+
+### <a name="business-document-management"></a>ビジネス ドキュメントの管理
+- [ビジネス ドキュメントの管理を使用して新しいビジネス ドキュメントを作成する](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### <a name="costs"></a>原価
 - [Cost control mobile workspace (原価管理モバイル ワークスペース)](https://youtu.be/imsuTg8rUVk)

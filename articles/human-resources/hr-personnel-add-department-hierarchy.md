@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 3c4382336e53bc09c51dd845446af9a20a2ba8af
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c43b45c7919be4673224b0f83606c390d0bb6265
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794472"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891081"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>部門の作成および部門階層への追加
 
@@ -53,7 +53,7 @@ ms.locfileid: "5794472"
 6.  準備が整ったら、階層デザイナーで **公開** をクリックします。 階層をいつ公開する必要があるかを示す有効日を入力できます。 たとえば、次の暦年の期首に新しい部門を追加する場合、新しい暦年の 1 月 1 日に有効日を設定します。 階層を変更すると、その日付に対して有効になります。
 
 ## <a name="steps-for-creating-a-department"></a>部門を作成する手順
-新しい部門を作成するためのステップ バイ ステップの手順については次の記事 [新しい部門の定義](../fin-and-ops/hr/tasks/define-new-departments.md) を参照してください。 
+新しい部門を作成するためのステップ バイ ステップの手順については次の記事 [新しい部門の定義](./hr-personnel-define-departments.md) を参照してください。 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

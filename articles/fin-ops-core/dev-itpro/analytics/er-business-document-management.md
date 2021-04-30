@@ -2,7 +2,7 @@
 title: ビジネス ドキュメント管理の概要
 description: このトピックでは、ER フレームワークのビジネス ドキュメント管理機能を使用する方法について説明します。
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749540"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891308"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
 
@@ -45,9 +45,9 @@ Microsoft 365 アプリケーションを使用して、Excel または Word 形
 
 ## <a name="business-document-availability"></a>ビジネス ドキュメントの使用可能性
 
-2019 年 10 月のリリースで予定されているすべてのレポートの全一覧については、[Word および Excel のコンフィギュレーション可能なビジネス ドキュメント レポート](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) を参照してください。
+2019 年 10 月のリリースで予定されているすべてのレポートの全一覧については、[Word および Excel のコンフィギュレーション可能なビジネス ドキュメント レポート](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) を参照してください。
 
-2020 年 10 月のリリースで予定されているすべてのレポートの全一覧については、[コンフィギュレーション可能なビジネス ドキュメント – Word テンプレート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates) を参照してください。
+2020 年 10 月のリリースで予定されているすべてのレポートの全一覧については、[コンフィギュレーション可能なビジネス ドキュメント – Word テンプレート](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates) を参照してください。
 
 さらに多くのレポートが、今後のリリースで使用可能になる予定です。 追加のレポートに関する特別な通知は、個別に送信されます。 現在使用可能なレポートの一覧を確認する方法については、以下の [コンフィギュレーション可能なビジネス ドキュメントをサポートする Finance でリリースされた ER コンフィギュレーションの一覧](#list-of-configurations-cbd) セクションを参照してください。
 
@@ -272,7 +272,23 @@ ER コンフィギュレーションのインポートの詳細については�
 
 ![新規テンプレートを作成するための編集プロセスの開始を確認する](./media/BDM-Overview-EditingTemplate4.png)
 
+プロバイダーがない場合は、作成することができます。 有効なプロバイダーがない場合は、有効化を選択することができます。
+
+プロバイダーを作成するには、**名前** フィールドでプロバイダーの名前を変更し、**インターネット アドレス** フィールドで新しいプロバイダーのインターネット アドレスを更新した後、**OK** を選択して確認します。
+
+   ![BDM で新しいプロバイダーを作成する](./media/bdm_create_provider.png)
+
+既存のプロバイダーを有効にするには、**構成プロバイダー** フィールドでプロバイダーの名前を選択して **OK** を選択し、プロバイダーを有効に設定します。
+
+   ![BDM でプロバイダーを有効化する](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> 各 BDM テンプレートは、コンフィギュレーションの作成者としてプロバイダーを参照します。 そのため、テンプレートには有効なプロバイダーが必要です。
+
+
 **新規ドキュメント** オプションは、リビジョンのない現在の、および別のプロバイダー (この例では Microsoft) によって提供されている ER フォーマット コンフィギュレーションのテンプレートに対して、常に使用できます。 編集したテンプレートは、自動的に生成される新規 ER 形式コンフィギュレーションで保存されます。
+
+
 
 ### <a name="start-editing-a-template"></a>テンプレートの編集開始
 
@@ -419,7 +435,7 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>コンフィギュレーション可能なビジネス ドキュメントをサポートするために Finance でリリースされた ER コンフィギュレーションの一覧
 
-Finance の ERコンフィギュレーションの [一覧](general-electronic-reporting.md#list-of-configurations) は常に更新されます。 [グローバル リポジトリ](er-download-configurations-global-repo.md) を開き、現在サポートされている ER コンフィギュレーションの一覧を確認します。 グローバル リポジトリを [フィルター処理](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) して、コンフィギュレーション可能なビジネス ドキュメントをサポートするために使用される ER コンフィギュレーションの一覧を確認できます。
+Finance の ERコンフィギュレーションの [一覧](general-electronic-reporting.md#list-of-configurations) は常に更新されます。 [グローバル リポジトリ](er-download-configurations-global-repo.md) を開き、現在サポートされている ER コンフィギュレーションの一覧を確認します。 グローバル リポジトリを [フィルター処理](../../../finance/localizations/enhanced-filtering-global-repo.md) して、コンフィギュレーション可能なビジネス ドキュメントをサポートするために使用される ER コンフィギュレーションの一覧を確認できます。
 
 ![コンフィギュレーション リポジトリ ページでグローバル リポジトリのコンテンツをフィルター処理](./media/bdm-overview-filterglobalrepo.gif)
 

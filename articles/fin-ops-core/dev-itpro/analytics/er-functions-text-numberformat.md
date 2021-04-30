@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8de57d8b0a45b8b58849a24f2d8f0cde41e0ea3a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4a383b3f7c0ca7c4e5afc609cc8a7b1b07021b02
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746220"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890386"
 ---
 # <a name="numberformat-er-function"></a>NUMBERFORMAT ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`NUMBERFORMAT` 関数は、指定された形式およびオプションで指定された [カルチャ](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) で、指定された数を表す *文字列* の値を返します。 サポートされている形式の詳細については、[標準](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) と [カスタム](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx) を参照してください。
+`NUMBERFORMAT` 関数は、指定された形式およびオプションで指定された [カルチャ](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) で、指定された数を表す *文字列* の値を返します。 サポートされている形式の詳細については、[標準](/dotnet/standard/base-types/standard-numeric-format-strings) と [カスタム](/dotnet/standard/base-types/custom-numeric-format-strings) を参照してください。
 
 ## <a name="syntax-1"></a>構文 1
 

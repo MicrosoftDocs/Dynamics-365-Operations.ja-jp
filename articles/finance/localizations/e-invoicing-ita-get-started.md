@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840103"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894780"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>イタリア用電子請求の使用を開始する
 
@@ -201,7 +201,7 @@ RCS の設定を行う際には、次の作業を実行します :
 電子請求書ドキュメントの要求に基づいてドキュメントを手動で送信することができます。
 
 > [!NOTE]
-> 続行する前に、イタリア向けの電子請求書に必要な設定が完了していることを確認してください。 詳細については、[顧客の電子請求書の作成](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices)を参照してください。 電子請求を有効化することで、そのトピックで説明されている一部の設定手順が使用できなくなる可能性があることに注意してください。
+> 続行する前に、イタリア向けの電子請求書に必要な設定が完了していることを確認してください。 詳細については、[顧客の電子請求書の作成](./emea-ita-e-invoices.md)を参照してください。 電子請求を有効化することで、そのトピックで説明されている一部の設定手順が使用できなくなる可能性があることに注意してください。
 
 1. **組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの送信** に移動します。
 2. ドキュメントを初めて送信する場合は、**ドキュメントの再送信** オプションを **いいえ** に設定します。 サービスを使用してドキュメントを再送信する必要がある場合は、このオプションを **はい** に設定します。

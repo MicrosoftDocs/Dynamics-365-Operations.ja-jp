@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: efcac2bd82956015eb822c6a493b8625a35cd194
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 208998b5c09416407612352da7a8ef5dd9491914
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805061"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889983"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn タレント ハブとの統合
 
@@ -130,7 +130,7 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 ### <a name="create-the-table-in-dataverse"></a>Dataverse でのテーブルの作成
 
 > [!IMPORTANT]
-> LinkedIn タレント ハブは、Dataverse for Human Resources の仮想テーブルに依存します。 設定でのこの手順の前提条件として、仮想テーブルを構成する必要があります。 仮想テーブルの構成方法については、[Dataverse 仮想テーブルの構成](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities) を参照してください。
+> LinkedIn タレント ハブは、Dataverse for Human Resources の仮想テーブルに依存します。 設定でのこの手順の前提条件として、仮想テーブルを構成する必要があります。 仮想テーブルの構成方法については、[Dataverse 仮想テーブルの構成](./hr-admin-integration-common-data-service-virtual-entities.md) を参照してください。
 
 1. Human Resources で、**Dataverse の統合** ページを開きます。
 
@@ -189,7 +189,7 @@ LinkedIn タレント ハブから Human Resources にエクスポートされ�
 ## <a name="see-also"></a>参照
 
 [構成 Dataverse 仮想テーブル](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+[Microsoft Dataverse とは](/powerapps/maker/common-data-service/data-platform-intro)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

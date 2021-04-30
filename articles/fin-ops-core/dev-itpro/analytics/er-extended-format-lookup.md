@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753339"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893935"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>ユーザーがグローバル リポジトリから形式を照会する ER 形式の参照を設定できるようにする
 
@@ -30,7 +30,7 @@ ms.locfileid: "5753339"
 
 通常、特定のビジネス プロセスで使用する必要がある ER 形式を指定する必要があります。 この操作を行うには、ビジネス プロセス固有のパラメーターの一部としてコンフィギュレーションされているルックアップ フィールドで 1 つの ER 形式を選択します。 通常、これらのルックアップ フィールドは ER フレームワークの適切な API を使用することにより実装されます。 詳細については、[ER フレームワーク API - 形式マッピングのルックアップを表示するコード](er-apis-app73.md#code-to-display-a-format-mapping-lookup) を参照してください。
 
-たとえば、[対外貿易パラメーター](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters) をコンフィギュレーションする場合、イントラスタット申告およびイントラスタット申告理レポートの生成に使用される個別の ER 形式への参照を設定する必要があります。 下のスクリーンショットは、**対外貿易パラメーター** のページの ER 形式のルックアップ フィールドの外観を示しています。
+たとえば、[対外貿易パラメーター](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters) をコンフィギュレーションする場合、イントラスタット申告およびイントラスタット申告理レポートの生成に使用される個別の ER 形式への参照を設定する必要があります。 下のスクリーンショットは、**対外貿易パラメーター** のページの ER 形式のルックアップ フィールドの外観を示しています。
 
 現在の Finance インスタンスにイントラスタット業務プロセスに関連する ER 形式が含まれていない場合、このルックアップ フィールドは空になります。
 

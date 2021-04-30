@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841770"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908374"
 ---
 # <a name="calendars-and-master-planning"></a>カレンダーおよびマスター プラン
 
@@ -90,7 +90,7 @@ ms.locfileid: "5841770"
 
 顧客ごとに 1 つのカレンダーを含めることしかできないことに注意してください。 顧客の異なるアドレスごとにカレンダーを含める必要がある場合は、住所ごとに 1 人の顧客を作成し、対応するカレンダーを割り当てることができます。 
 
-顧客カレンダーや配送日の管理方法によって、販売注文明細行の入荷希望日が影響を受けます。 最短配送日の計算方法の詳細については、「[注文納期日。](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations)」をご覧ください。
+顧客カレンダーや配送日の管理方法によって、販売注文明細行の入荷希望日が影響を受けます。 最短配送日の計算方法の詳細については、「[注文納期日。](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations)」をご覧ください。
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>法人の出荷カレンダー
 法人が商品を出荷できる日付を示すには、**組織管理 > 組織 > 法人** で出荷カレンダーを設定できます。 法人を選択し、**対外貿易およびロジスティクス** タブの **出荷カレンダー** フィールドでカレンダーを追加します。 出荷カレンダーは、法人のすべての倉庫カレンダーに対する既定値のソースとして機能します。 

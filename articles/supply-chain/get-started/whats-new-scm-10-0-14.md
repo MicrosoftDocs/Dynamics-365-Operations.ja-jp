@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f67bb8e218c98c6f227f5e1f05f9ba7b35da37c7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 356cdf0fc6bc2dbc086ff186805a97755d98e49e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832157"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909528"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Dynamics 365 Supply Chain Management 10.0.14 (2020 年 11 月) の新機能および変更された機能
 
@@ -33,7 +33,7 @@ ms.locfileid: "5832157"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースには、更新されたプラットフォームと全般的な改善点が含まれていますが、Supply Chain Management 固有の新機能は含まれていません。 今後の機能の詳細については、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/) サイトを参照してください。
+このリリースには、更新されたプラットフォームと全般的な改善点が含まれていますが、Supply Chain Management 固有の新機能は含まれていません。 今後の機能の詳細については、[リリース計画](/dynamics365/release-plans/) サイトを参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -49,7 +49,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.14 には、Platform updates
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 

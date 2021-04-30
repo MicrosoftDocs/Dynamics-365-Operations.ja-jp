@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d5051bbf9e550add6a0cfc5e23f3aeb7b379ef03
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9a285e3c60df713ceaee1fae72b2a1d54fa5c431
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789639"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890750"
 ---
 # <a name="performance-management"></a>パフォーマンス管理
 
@@ -93,7 +93,7 @@ ms.locfileid: "5789639"
 
 作成したテンプレートに基づく新しい確認を作成できます。 たとえば、1 対 1、開発計画、定期的な確認のためのテンプレートを作成できます。 新しい確認を作成するときにテンプレートを選択できます。
 
-レビューを印刷するには、**レビューを印刷** ボタンを選択します。 **レビュー** ページにボタンが表示されない場合は、**機能管理** ワークスペースでその機能が有効になっていることを確認してください。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
+レビューを印刷するには、**レビューを印刷** ボタンを選択します。 **レビュー** ページにボタンが表示されない場合は、**機能管理** ワークスペースでその機能が有効になっていることを確認してください。 機能管理の詳細については [機能管理の概要](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 
 > [!NOTE]
 > 業績評価の印刷機能は、人事でのみ使用できます。 Dynamics 365 Finance では使用できません。

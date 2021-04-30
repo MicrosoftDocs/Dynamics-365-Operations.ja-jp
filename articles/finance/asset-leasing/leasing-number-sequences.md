@@ -2,11 +2,11 @@
 title: 番号順序の割り当て
 description: このトピックでは、リース ID の番号順序を作成する方法について説明します。 また、インデックスの再評価プロセスで使用される固有 ID の作成方法についても説明します。
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeasePostingAccounts
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0b5d622df1e5dcdf7f1322328bce7e185f8edb8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 331542811b2ba9399185478b6d25d1a57fce3a05
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819821"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881087"
 ---
 # <a name="assign-number-sequences"></a>番号順序の割り当て
 

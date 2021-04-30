@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: f21e9b94b5aa30b2cdb18692e8cc9c8d00f758d6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805037"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890079"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>BYOD でスケジュール設定されたバッチ ジョブを最適化する
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、データベースの持ち込み (BYOD) 機能を使用している場合のパフォーマンスの最適化方法について説明します。 詳細については、[自分のデータベースの持ち込み (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)を参照してください。
+このトピックでは、データベースの持ち込み (BYOD) 機能を使用している場合のパフォーマンスの最適化方法について説明します。 詳細については、[自分のデータベースの持ち込み (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
 
 ## <a name="performance-considerations-for-data-export"></a>データ エクスポートのパフォーマンスに関する考慮事項
 
-エンティティが宛先データベースに公開された後、**データ管理** ワークスペースのエクスポート機能を使用してデータを移動することができます。 エクスポート関数を使用すると、1 つまたは複数のエンティティが含まれるデータ移動ジョブを定義できます。 データのエクスポートについての詳細情報は、[データのインポート ジョブとエクスポート ジョブの概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json) を参照してください。
+エンティティが宛先データベースに公開された後、**データ管理** ワークスペースのエクスポート機能を使用してデータを移動することができます。 エクスポート関数を使用すると、1 つまたは複数のエンティティが含まれるデータ移動ジョブを定義できます。 データのエクスポートについての詳細情報は、[データのインポート ジョブとエクスポート ジョブの概要](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json) を参照してください。
 
 **エクスポート** ページを使用すると、データをコンマ区切り値 (CSV) ファイルなどの様々なターゲットのデータ書式にエクスポートすることができます。 このページは、別の宛先として SQL データベースもサポートしています。
 
@@ -61,7 +61,7 @@ Microsoft Dynamics 365 Human Resources のユーザーへの影響を軽減す�
 
 データ エクスポートにエンティティを追加する場合は、増分プッシュ (エクスポート) またはフル プッシュのいずれかを行うことができます。 フル プッシュは、BYOD データベースのエンティティから既存のレコードをすべて削除します。 続いて、Human Resources エンティティから現在のレコードセットを挿入します。
 
-増分プッシュを実行するには、**エンティティ** ページで各エンティティの変更の追跡を有効にする必要があります。 詳細については、 [エンティティへの変更の追跡を有効化する](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)を参照してください。
+増分プッシュを実行するには、**エンティティ** ページで各エンティティの変更の追跡を有効にする必要があります。 詳細については、 [エンティティへの変更の追跡を有効化する](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
 
 増分プッシュを選択した場合、最初のプッシュは常に完全なプッシュになります。 SQL は、この最初の完全プッシュからの変更を追跡します。 新しいレコードが挿入される、またはレコードが追加または削除されるたびに、これら変更が宛先エンティティに反映されます。
 
@@ -88,14 +88,14 @@ BYOD 機能には、次の制限があります :
 
 **問題 :** あるエンティティに対してフルプッシュが実行された場合、**セレクト** 文を使用すると BYOD で大量のレコードセットが表示されます。 しかし、増分プッシュを行うと、BYOD では数件のレコードしか表示されません。 増分プッシュですべてのレコードが削除され、BYOD で変更したレコードだけが追加されたように見えます。
 
-**解決策 :** SQLの変更追跡テーブルがしかるべき状態になっていない可能性があります。 このような場合は、エンティティの変更の追跡をオフにしてからオンに戻すことをお勧めします。 詳細については、 [エンティティへの変更の追跡を有効化する](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)を参照してください。
+**解決策 :** SQLの変更追跡テーブルがしかるべき状態になっていない可能性があります。 このような場合は、エンティティの変更の追跡をオフにしてからオンに戻すことをお勧めします。 詳細については、 [エンティティへの変更の追跡を有効化する](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
 
 ## <a name="see-also"></a>参照
 
-[データ管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
-[自分のデータベースの持ち込み (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
-[データ インポート/エクスポート ジョブの概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
-[エンティティの変更追跡の有効化](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
+[データ管理の概要](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[自分のデータベースの持ち込み (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[データ インポート/エクスポート ジョブの概要](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[エンティティの変更追跡の有効化](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

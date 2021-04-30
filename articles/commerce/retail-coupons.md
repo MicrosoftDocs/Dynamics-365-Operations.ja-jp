@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a4de42c23bf96591d1ac99ed32438fe34a485998
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792028"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906652"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>小売販売のクーポンの設定
 
@@ -38,6 +38,8 @@ ms.locfileid: "5792028"
 
 > [!NOTE]
 > クーポンが割引にリンクされると、コマースの割引ページのいくつかのフィールドは、クーポンの設定で管理されているため読み取り専用になります。 これらのフィールドには、ステータスと標準の日付範囲のフィールドが含まれます。
+> 
+> コール センター チャネルでクーポンを使用しているときに、クーポンに関連付けられた割引を適用するには、**再計算** ボタン **(販売タブ > 計算 > 再計算)** を選択する必要があります。 この追加手順は、将来のリリースで削除されます。
 
 ### <a name="limited-use-coupons"></a>専用クーポン
 

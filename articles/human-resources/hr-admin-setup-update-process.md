@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ca8868069fca4453efbb76694702a554da6d7aa6
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791536"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892278"
 ---
 # <a name="update-process"></a>更新プロセス
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 人事管理の更新は、すべての環境に自動的に適用されます。 人事管理には次の 2 つの種類のリリースがあります:
 
-- **サービスの更新**: バグ修正および新機能を含む、隔週でリリースされる更新プログラム。 サービス更新には、リリース時に該当するプラットの更新も含まれます。 プラットフォーム更新がリリースされた時期を把握するには、[表 3: Platform リリース](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases) を参照してください。 隔週の更新では、地域全体に段階的に展開されます。 隔週の更新についての詳細は、[Dynamics 365 Human Resources の新機能および変更された機能](hr-admin-whats-new.md) を参照してください。
+- **サービスの更新**: バグ修正および新機能を含む、隔週でリリースされる更新プログラム。 サービス更新には、リリース時に該当するプラットの更新も含まれます。 プラットフォーム更新がリリースされた時期を把握するには、[表 3: Platform リリース](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases) を参照してください。 隔週の更新では、地域全体に段階的に展開されます。 隔週の更新についての詳細は、[Dynamics 365 Human Resources の新機能および変更された機能](hr-admin-whats-new.md) を参照してください。
 
     特に断りのない限り、サポートされているすべてのデータ センターが隔週で更新されます。 米国、オーストラリア、ヨーロッパ、英国、アジア、カナダが隔週の更新プログラムに含まれています。 
 
@@ -71,11 +71,11 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 - [Dynamics 365 Human Resources ロードマップ](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Dynamics 365 リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/)
+- [Dynamics 365 リリース プラン](/dynamics365/release-plans/)
 
 - [Dynamics 365 Human Resources での新機能と変更](hr-admin-whats-new.md)
 
-- [Lifecycle Services (LCS) での問題検索](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (プラットフォームに関連するバグのみ)
+- [Lifecycle Services (LCS) での問題検索](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (プラットフォームに関連するバグのみ)
 
 - [人事管理のブログ](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -83,7 +83,7 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>サンドボックス環境におけるプレビュー機能
 
-サンドボックス環境でプレビュー機能を検証してから、実働環境で有効にすることができます。 機能の有効化についての詳細は、[機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
+サンドボックス環境でプレビュー機能を検証してから、実働環境で有効にすることができます。 機能の有効化についての詳細は、[機能管理の概要](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 
 すべての新機能は少なくとも 30 日間、通常は30-60日間、プレビューのままになります。 主な機能は、通常、プレビュー期間に従って毎年 10 月と 4 月に使用可能です。 機能管理ワークスペースに新しい機能が表示されたら、すぐにそれらをオンにすることができます。 一部の機能は既定でオンになっている場合があります。
 
@@ -101,9 +101,9 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 ## <a name="see-also"></a>参照
 
-[Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Dynamics 365 および Power Platform リリース プラン](/dynamics365/release-plans)</br>
 [Dynamics 365 人事管理の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[ソフトウェアのライフサイクル ポリシー](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[ソフトウェアのライフサイクル ポリシー](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
 
 
 

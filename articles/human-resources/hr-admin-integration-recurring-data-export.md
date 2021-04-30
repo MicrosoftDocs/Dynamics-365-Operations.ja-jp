@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d7fc01906a017d4214d4794097a11b4a3416b95
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b117f408b8ac8baabf7e8af3b383526f404441a4
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801122"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889863"
 ---
 # <a name="create-a-recurring-data-export-app"></a>定期的なデータ エクスポートのアプリの作成
 
@@ -43,12 +43,12 @@ Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリ�
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – エクスポートされる作業者のマスター データ ソース。
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
 
-    - **[コネクタ](https://docs.microsoft.com/azure/connectors/apis-list)** – ロジック アプリを必要なエンドポイントに接続するために使用されるテクノロジ。
+    - **[コネクタ](/azure/connectors/apis-list)** – ロジック アプリを必要なエンドポイントに接続するために使用されるテクノロジ。
 
-        - [Azure AD の HTTP](https://docs.microsoft.com/connectors/webcontents/) コネクタ
-        - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) コネクタ
+        - [Azure AD の HTTP](/connectors/webcontents/) コネクタ
+        - [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) コネクタ
 
-- **[DMF パッケージ REST API](../dev-itpro/data-entities/data-management-api.md)**  – エクスポートをトリガーし、その進捗を監視するために使用されるテクノロジ。
+- **[DMF パッケージ REST API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)**  – エクスポートをトリガーし、その進捗を監視するために使用されるテクノロジ。
 - **[OneDrive for Business](https://onedrive.live.com/about/business/)** – エクスポートされた作業者の宛先。
 
 ## <a name="prerequisites"></a>必要条件
@@ -84,11 +84,11 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
     ![ロジック アプリ作成ページ](media/integration-logic-app-creation-1.png)
 
 2. Logic Apps Designer で、空白のロジック アプリから始めます。
-3. 24 時間ごとに (または選択したスケジュールに従って) ロジック アプリを実行するために [定期スケジュール トリガー](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) を追加します。
+3. 24 時間ごとに (または選択したスケジュールに従って) ロジック アプリを実行するために [定期スケジュール トリガー](/azure/connectors/connectors-native-recurrence) を追加します。
 
     ![定期ダイアログ ボックス](media/integration-logic-app-recurrence-step.png)
 
-4. [ExportToPackage DMF](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API を呼び出して、データ パッケージのエクスポートをスケジュールします。
+4. [ExportToPackage DMF](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API を呼び出して、データ パッケージのエクスポートをスケジュールします。
 
     1. Azure AD コネクタで HTTP から **HTTP 要求を呼び出す** アクションを使用します。
 
@@ -122,13 +122,13 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
     > [!TIP]
     > 既定の名前より意味があるように各ステップの名前を変更したい場合は、**HTTP 要求を呼び出します**。 たとえば、このステップの名前を **ExportToPackage** に変更できます。
 
-5. [変数を初期化](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) して **ExportToPackage** 要求の実行状態を格納します。
+5. [変数を初期化](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) して **ExportToPackage** 要求の実行状態を格納します。
 
     ![変数のアクションを初期化](media/integration-logic-app-initialize-variable-step.png)
 
 6. データ エクスポートの実行状態が **成功** になるまで待ちます。
 
-    1. **ExecutionStatus** 変数が **成功** になるまで繰り返す [Until ループ](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) を追加します。
+    1. **ExecutionStatus** 変数が **成功** になるまで繰り返す [Until ループ](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) を追加します。
     2. エクスポートの現在の実行状態のポーリング前に 5 秒間待機する **遅延** アクションを追加します。
 
         ![Until ループ コンテナー](media/integration-logic-app-until-loop-step.png)
@@ -136,9 +136,9 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
         > [!NOTE]
         > エクスポートが完了するまで最大 75 秒 (15 イテレーション × 5 秒) 待つには、制限カウントを **15** に設定します。 さらにエクスポートに時間がかかる場合は、必要に応じて制限カウントを調整してください。        
 
-    3. **IHTTP 要求の呼び出し**  アクションを追加して [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF  REST API を呼び出し、**ExecutionStatus** 変数を **GetExecutionSummaryStatus** 応答の結果に設定します。
+    3. **IHTTP 要求の呼び出し**  アクションを追加して [GetExecutionSummaryStatus](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF  REST API を呼び出し、**ExecutionStatus** 変数を **GetExecutionSummaryStatus** 応答の結果に設定します。
 
-        > このサンプルはエラー チェックを実行しません。 **GetExecutionSummaryStatus** API は成功しなかった端末状態 (つまり、**"成功"** 以外の状態) を返す可能性があります。 詳細については [API のドキュメント](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) を参照してください。
+        > このサンプルはエラー チェックを実行しません。 **GetExecutionSummaryStatus** API は成功しなかった端末状態 (つまり、**"成功"** 以外の状態) を返す可能性があります。 詳細については [API のドキュメント](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) を参照してください。
 
         - **メソッド:** POST
         - **要求の URL:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -156,7 +156,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 
 7. エクスポートしたパッケージのダウンロード URL を取得します。
 
-    - **HTTP 要求の呼び出し アクション** を追加して  [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST AP を呼び出します。
+    - **HTTP 要求の呼び出し アクション** を追加して  [GetExportedPackageUrl](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST AP を呼び出します。
 
         - **メソッド:** POST
         - **要求の URL:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
@@ -166,7 +166,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 
 8. エクスポートしたパッケージのダウンロード
 
-    - 前のステップで返された URL からパッケージをダウンロードするための HTTP **GET** 要求 (組み込み [HTTP コネクタ アクション](https://docs.microsoft.com/azure/connectors/connectors-native-http)) を追加します。
+    - 前のステップで返された URL からパッケージをダウンロードするための HTTP **GET** 要求 (組み込み [HTTP コネクタ アクション](/azure/connectors/connectors-native-http)) を追加します。
 
         - **メソッド:** GET
         - **URI:** body('Invoke\_an\_HTTP\_request\_3').value
@@ -179,9 +179,9 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
         > [!NOTE]
         > **GetExportedPackageUrl** API が返す URL には、ファイルをダウンロードするアクセスを許可する共有アクセス署名トークンが含まれているため、この要求は追加の認証を必要としません。
 
-9. [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) コネクタを使用してダウンロードしたパッケージを保存する。
+9. [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) コネクタを使用してダウンロードしたパッケージを保存する。
 
-    - OneDrive for Business の [ファイルの作成](https://docs.microsoft.com/connectors/onedriveforbusinessconnector/#create-file) アクションを追加します。
+    - OneDrive for Business の [ファイルの作成](/connectors/onedriveforbusinessconnector/#create-file) アクションを追加します。
     - 必要に応じて OneDrive for Business アカウントを接続します。
 
         - **フォルダーのパス:** 選択したフォルダー

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3eaeb2589329809e57ac01aba85067e94c15477c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c827df81621346733953dc77e16e269f8c3767a8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817488"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910116"
 ---
 # <a name="specify-how-to-dispose-of-returned-items"></a>返品品目の廃棄方法の指定 
 
@@ -173,7 +173,7 @@ ms.locfileid: "5817488"
 
 ## <a name="see-also"></a>参照
 
-[検査指示 (フォーム)](https://technet.microsoft.com/library/aa554073(v=ax.60))
+[検査指示 (フォーム)](/dynamicsax-2012//quarantine-order-form)
 
 [廃棄コード (フォーム)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 193812f97a1d43b30b0ce545501aac6949088ebd
-ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
+ms.openlocfilehash: c3c69781aa7a67d22fe7d0fc70b1349673c5867c
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "5620784"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897263"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Dynamics 365 Finance 管理者向けラーニング カタログ
 
@@ -29,23 +29,23 @@ ms.locfileid: "5620784"
 
 | コンテンツ   | 説明  | 書式設定  | 期間    |
 |-----------|--------------|---------|-----------|
-| [Dynamics 365 および Power Platform の基本](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間 |
-| [Finance and Operations アプリの使用を開始する](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。 Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
-| [Dynamics 365 Finance の使用を開始する](https://docs.microsoft.com/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance は、変化の激しいビジネス環境に適応できるようにビジネス ユーザーを支援します。 企業が財務を管理し、資金を管理するために必要なすべてのものを、財務計画と予測のための正確な情報とともに提供し、分析ツールを使用して最新の状態に保つことができます。 財務はあらゆる業務の中心であるため、Dynamics 365 Finance の機能に精通することが重要です。 | 無料の自習型オンライン学習モジュール | 1 時間 |
+| [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間 |
+| [Finance and Operations アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。 Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
+| [Dynamics 365 Finance の使用を開始する](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance は、変化の激しいビジネス環境に適応できるようにビジネス ユーザーを支援します。 企業が財務を管理し、資金を管理するために必要なすべてのものを、財務計画と予測のための正確な情報とともに提供し、分析ツールを使用して最新の状態に保つことができます。 財務はあらゆる業務の中心であるため、Dynamics 365 Finance の機能に精通することが重要です。 | 無料の自習型オンライン学習モジュール | 1 時間 |
 | [コース MB-900T01-A: Dynamics 365 の基本](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | このコースでは、Dynamics 365の機能と事業価値について理解します。 このコースでは、Dynamics 365 アプリケーション、Power Platform、クラウドの概念、セキュリティ モデル、およびライセンスに関する考慮事項について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
-| [Dynamics 365 Project Operations で 経費管理の使用を開始する](https://docs.microsoft.com/learn/modules/get-started-expense-management/) | Dynamics 365 Project Operations の経費管理モジュールは、組織が従業員の経費を追跡し、管理することができます。 経費管理を使用すると、支払情報の保存、クレジット カード トランザクションのインポート、および従業員が組織の経費を負担した場合に使う金額を追跡できます。 また、経費ポリシーの設定、承認の自動化、Project Operations を使用することで合理化されたビジネス プロセスを提供することもできます。 | 無料の自習型オンライン学習パス | 1 時間 |
-| [Dynamics 365 の基本](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Microsoft Dynamics 365、Power Platform、クラウドの概念、ライセンス オプション、および配置とリリースのオプションを理解していることを証明します。 | 試験、費用は地域によって異なる | |
+| [Dynamics 365 Project Operations で 経費管理の使用を開始する](/learn/modules/get-started-expense-management/) | Dynamics 365 Project Operations の経費管理モジュールは、組織が従業員の経費を追跡し、管理することができます。 経費管理を使用すると、支払情報の保存、クレジット カード トランザクションのインポート、および従業員が組織の経費を負担した場合に使う金額を追跡できます。 また、経費ポリシーの設定、承認の自動化、Project Operations を使用することで合理化されたビジネス プロセスを提供することもできます。 | 無料の自習型オンライン学習パス | 1 時間 |
+| [Dynamics 365 の基本](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Microsoft Dynamics 365、Power Platform、クラウドの概念、ライセンス オプション、および配置とリリースのオプションを理解していることを証明します。 | 試験、費用は地域によって異なる | |
 
 ## <a name="core-platform-knowledge"></a>コア プラットフォームの知識<a name="core-platform-knowledge"></a>
 
 | コンテンツ  | 説明  | 書式設定  | 期間    |
 |----------|--------------|---------|-----------|
-| [Lifecycle Services を使用して、 Finance and Operations アプリの実装を設計、計画する](https://docs.microsoft.com/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) は、顧客とそのパートナーが、Finance and Operations アプリのプロジェクトを販売前から実装フェーズ、そして最終的に実稼働環境 (クラウドまたはオンプレミス) まで管理するために使用するコラボレーション ワークスペースです。 プロジェクトの管理に役立つチェックリストとツールが用意されており、実装や定期的に更新されるサービスに役立つ事前ビルドの方法も含まれています。 | 無料の自習型オンライン学習パス | 2 時間 |
-| [Finance and Operations アプリで組織を構成する](https://docs.microsoft.com/learn/paths/configure-your-organization-finance-ops/) | Finance and Operations アプリを使用する機能コンサルタントは、顧客向けに組織を設定する方法を理解しておく必要があります。 この学習パスでは、その他のタスクの中でも特に、法人の設定、セキュリティ設定の実装、ユーザー向けのユーザー インターフェイスのパーソナライズ、モバイル アプリの設計と構築、および共通の統合の実装の方法を示します。 | 無料の自習型オンライン学習パス | 12 時間 |
-| [データを移行して、Finance and Operations アプリの運用を開始する](https://docs.microsoft.com/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントおよび開発者として、顧客のデータを移行用に準備し、データ管理を操作し、ユーザー受け入れテストを実行して、Finance and Operations アプリで運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
-| [Finance and Operation での分析とレポートに関する作業](https://docs.microsoft.com/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | ビジネス リーダーは、基礎となる財務データや運用データを正確に把握しているなら、会社で重要な決定を下すことができます。 データの可視性がなければ、ビジネス リーダーは、ほとんど不可能な作業を迫られることになります。 Finance and Operations アプリの分析とレポートを使用することにより、セキュリティ権限に応じて、すべてのビジネス ユーザーが重要な選択を行うために必要な洞察を得られるようにすることができます。 | 無料の自習型オンライン学習パス | 1.5 時間 |
-| [Finance and Operationsの実装プロジェクト マネージャー](https://docs.microsoft.com/learn/paths/implement-finance-operations/) | Finance and Operations の導入プロジェクトを成功させるために最も重要な要素とベストプラクティスを身につけましょう。 プロジェクトの方法論を計画、設計する最初のステップから、FastTrack サービスの利用、開発戦略、データ管理など、稼働開始後の運用を維持、監視するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 11.5 時間 |
-| [システム管理ホーム ページ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | このトピックでは、Microsoft Dynamics 365 for Finance and Operations のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。 | ドキュメント | |
+| [Lifecycle Services を使用して、 Finance and Operations アプリの実装を設計、計画する](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) は、顧客とそのパートナーが、Finance and Operations アプリのプロジェクトを販売前から実装フェーズ、そして最終的に実稼働環境 (クラウドまたはオンプレミス) まで管理するために使用するコラボレーション ワークスペースです。 プロジェクトの管理に役立つチェックリストとツールが用意されており、実装や定期的に更新されるサービスに役立つ事前ビルドの方法も含まれています。 | 無料の自習型オンライン学習パス | 2 時間 |
+| [Finance and Operations アプリで組織を構成する](/learn/paths/configure-your-organization-finance-ops/) | Finance and Operations アプリを使用する機能コンサルタントは、顧客向けに組織を設定する方法を理解しておく必要があります。 この学習パスでは、その他のタスクの中でも特に、法人の設定、セキュリティ設定の実装、ユーザー向けのユーザー インターフェイスのパーソナライズ、モバイル アプリの設計と構築、および共通の統合の実装の方法を示します。 | 無料の自習型オンライン学習パス | 12 時間 |
+| [データを移行して、Finance and Operations アプリの運用を開始する](/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントおよび開発者として、顧客のデータを移行用に準備し、データ管理を操作し、ユーザー受け入れテストを実行して、Finance and Operations アプリで運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
+| [Finance and Operation での分析とレポートに関する作業](/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | ビジネス リーダーは、基礎となる財務データや運用データを正確に把握しているなら、会社で重要な決定を下すことができます。 データの可視性がなければ、ビジネス リーダーは、ほとんど不可能な作業を迫られることになります。 Finance and Operations アプリの分析とレポートを使用することにより、セキュリティ権限に応じて、すべてのビジネス ユーザーが重要な選択を行うために必要な洞察を得られるようにすることができます。 | 無料の自習型オンライン学習パス | 1.5 時間 |
+| [Finance and Operationsの実装プロジェクト マネージャー](/learn/paths/implement-finance-operations/) | Finance and Operations の導入プロジェクトを成功させるために最も重要な要素とベストプラクティスを身につけましょう。 プロジェクトの方法論を計画、設計する最初のステップから、FastTrack サービスの利用、開発戦略、データ管理など、稼働開始後の運用を維持、監視するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 11.5 時間 |
+| [システム管理ホーム ページ](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | このトピックでは、Microsoft Dynamics 365 for Finance and Operations のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。 | ドキュメント | |
 | [Finance and Operations Dynamics 365 の研修 (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack では、すべての Dynamics 365 for Finance and Operations のプロジェクトに対してオンボード サービスが提供されます。 この TechTalk では、オンボード プロセスについて説明し、オンボード セッションの内容について説明します。また、近い将来、オンボードをより効率的かつ便利にする方法を明らかにします。 このセッションは、ライセンスの締結から実装プロジェクトの開始まで、プロジェクトの初期段階で顧客と関わるすべての人に特に関係があります。 | Web カンファレンスの無料録画 | 62 分 |
 | [オンプレミス (ローカル ビジネス データ) 配置 (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dynamics 365 for Finance and Operations Enterprise Edition のオンプレミス配置オプションの概要については、この Tech Talk に参加してください。 このセッションでは、オンプレミス配置のソリューション アーキテクチャ、ALM の側面、システム要件、および Life Cycle Services プロジェクトをプロビジョニングする方法について説明します。 | Web カンファレンスの無料録画 | 48 分 |
 | [法人へのコピー (DYN383PAL) ](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | このセッションでは、データ管理フレームワークの新機能である、法人へのコピーについて説明します。 まず、ワークスペース、テンプレート、およびデータ プロジェクト用にプラットフォーム 8 のデータ管理フレームワークに追加された新機能を簡単に確認し、次に法人へのコピーに追加された追加機能について説明します。 | Web カンファレンスの無料録画 | 54 分 |

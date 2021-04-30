@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 4885caf017fa0f9d36d293fa32aad53c21d3f162
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753579"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894079"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための新しい ER 構成を設計する
 
@@ -38,7 +38,7 @@ Word ドキュメントを Word 形式のレポートのテンプレートとし
 ソリューションの ER 形式コンポーネントには **Excel\\File** 形式要素を含む必要があり、その形式要素は、実行時に生成されるレポートのテンプレートとして使用される Word ドキュメントにリンクされている必要があります。 ER 形式コンポーネントを構成するには、ER 形式デザイナーで作成された ER 構成の [ドラフト](general-electronic-reporting.md#component-versioning) バージョンを開く必要があります。 その後、**Excel\\File** 要素を追加し、編集可能な ER 形式に Word テンプレートを添付し、そのテンプレートを追加した **Excel\\File** 要素にリンクします。
 
 > [!NOTE]
-> テンプレートを添付する場合、ER パラメーターで事前に [構成](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) されている [ドキュメント タイプ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) を使用して、ER 形式のテンプレートを保存する必要があります。
+> テンプレートを添付する場合、ER パラメーターで事前に [構成](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) されている [ドキュメント タイプ](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) を使用して、ER 形式のテンプレートを保存する必要があります。
 
 ![形式デザイナー ページでテンプレートを添付](./media/er-design-configuration-word-image3.gif)
 
@@ -46,11 +46,11 @@ Word ドキュメントを Word 形式のレポートのテンプレートとし
 
 ![形式デザイナー ページで入れ子になった要素を追加](./media/er-design-configuration-word-image4.gif)
 
-ER 形式への変更をデザイン時に保存すると、階層形式の構造は、添付された Word テンプレートに、**レポート** という名前の [カスタム XML パーツ](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) として保存されます。 変更したテンプレートにアクセスし、Finance からダウンロードして、ローカルに保存して、Word デスクトップ アプリケーションで開く必要があります。 次の図は、**レポート** カスタム XML パーツを含む管理レポートのローカルに保存されているサンプル テンプレートを示します。
+ER 形式への変更をデザイン時に保存すると、階層形式の構造は、添付された Word テンプレートに、**レポート** という名前の [カスタム XML パーツ](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) として保存されます。 変更したテンプレートにアクセスし、Finance からダウンロードして、ローカルに保存して、Word デスクトップ アプリケーションで開く必要があります。 次の図は、**レポート** カスタム XML パーツを含む管理レポートのローカルに保存されているサンプル テンプレートを示します。
 
 ![Word デスクトップ アプリケーションでサンプル レポート テンプレートをプレビュー](./media/er-design-configuration-word-image5.gif)
 
-**Excel\\Range** と **Excel\\Cell** 形式要素のバインドが実行時に実行される場合、すべてのバインドによって提供されるデータは、**レポート** のカスタム XML パーツの個別のフィールドとして、生成された Word ドキュメントに取り込まれます。 生成されるドキュメントでカスタム XML パーツのフィールドから値を入力するには、実行時に入力されるデータのプレースホルダーとして機能させるために、適切な Word [コンテンツ コントロール](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) を Word テンプレートに追加する必要があります。 コンテンツ コントロールの入力方法を指定するには、すべてのコンテンツ コントロールを **レポート** カスタム XML パーツの適切なフィールドにマップします。
+**Excel\\Range** と **Excel\\Cell** 形式要素のバインドが実行時に実行される場合、すべてのバインドによって提供されるデータは、**レポート** のカスタム XML パーツの個別のフィールドとして、生成された Word ドキュメントに取り込まれます。 生成されるドキュメントでカスタム XML パーツのフィールドから値を入力するには、実行時に入力されるデータのプレースホルダーとして機能させるために、適切な Word [コンテンツ コントロール](/office/client-developer/word/content-controls-in-word) を Word テンプレートに追加する必要があります。 コンテンツ コントロールの入力方法を指定するには、すべてのコンテンツ コントロールを **レポート** カスタム XML パーツの適切なフィールドにマップします。
 
 ![Word デスクトップ アプリケーションでコンテンツ コントロールを追加およびマッピング](./media/er-design-configuration-word-image6.gif)
 

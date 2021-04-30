@@ -2,7 +2,7 @@
 title: 仕訳帳ごとの帳簿数
 description: このトピックでは、バッチ ジョブを使用して固定資産の取得または償却提案を作成するときの仕訳帳と資産帳簿のリレーションシップについて説明します。 各取得および減価償却に含まれる帳簿の最大数を定義できます。
 author: moaamer
-ms.date: 11/19/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e948b4353d0216f1e09019a98319e343bd535861
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb2a25d9e2ffc26f0a37a09cdf3e28a7ca4b84bc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822036"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892410"
 ---
 # <a name="number-of-books-per-journal"></a>仕訳帳ごとの帳簿数
 

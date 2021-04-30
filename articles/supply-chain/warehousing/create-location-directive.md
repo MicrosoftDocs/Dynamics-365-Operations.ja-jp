@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838397"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911299"
 ---
 # <a name="work-with-location-directives"></a>場所のディレクティブを使って作業する
 
@@ -44,8 +44,8 @@ ms.locfileid: "5838397"
 1. **倉庫管理 \> 設定 \> 倉庫 \> 倉庫** の順に移動します。
 1. 倉庫を作成します。
 1. **倉庫** クイック タブで、**倉庫管理プロセスの使用** オプションを *はい* に設定します。
-1. 場所、場所のタイプ、場所のプロファイル、場所の形式を作成します。 詳細については、[倉庫管理システムに対応した倉庫の場所のコンフィギュレーション](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse) を参照してください。
-1. サイト、ゾーン、ゾーン グループを作成します。 詳細については、[倉庫の設定](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) と [倉庫管理システムに対応した倉庫の場所のコンフィギュレーション](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse) を参照してください。
+1. 場所、場所のタイプ、場所のプロファイル、場所の形式を作成します。 詳細については、[倉庫管理システムに対応した倉庫の場所のコンフィギュレーション](./tasks/configure-locations-wms-enabled-warehouse.md) を参照してください。
+1. サイト、ゾーン、ゾーン グループを作成します。 詳細については、[倉庫の設定](../../commerce/channels-setup-warehouse.md) と [倉庫管理システムに対応した倉庫の場所のコンフィギュレーション](./tasks/configure-locations-wms-enabled-warehouse.md) を参照してください。
 
 ## <a name="work-order-types-for-location-directives"></a>場所のディレクティブの作業指示書
 
@@ -143,7 +143,7 @@ ms.locfileid: "5838397"
 - **ディレクティブ コード** – 作業テンプレートまたは補充テンプレートに関連付ける、ディレクティブ コードを選択します。 **ディレクティブ コード** ページで、作業テンプレートや補充テンプレートを場所のディレクティブに接続するために使用できる新しいコードを作成できます。 ディレクティブ コードは、作業テンプレート明細行と場所のディレクティブ (ベイ ドアやステージの場所など) 間のリンクを確立するために使用することもできます 。
 
     > [!TIP]
-    > ディレクティブ コードが設定されている場合、作業を生成する必要がある場合、システムはシーケンス番号で場所のディレクティブを検索しません。 代わりに、ディレクティブ コードで検索を行います。 このようにして、材料をステージングする手順などの、作業テンプレートの特定の手順に使用される場所テンプレートを、より明確にすることができます。
+    > ディレクティブ コードが設定されている場合、作業を生成する必要がある場合、システムはシーケンス番号で場所のディレクティブを検索しません。 代わりに、ディレクティブ コードで検索を行います。 このようにして、材料をステージングする手順などの、作業テンプレートの特定の手順に使用される場所のディレクティブを、より明確にすることができます。
 
 - **複数の SKU** – このオプションを *はい* に設定すると、複数の在庫管理単位 (SKU) を場所で使用できるようにできます。 たとえば、ベイ ドアの場所に対して複数の SKU が有効になっている必要があります。 複数のSkuを有効にした場合は、必要に応じて作業用の配置場所が指定されます。 ただし、(作業がピッキングしてプットされる必要がある異なる SKU を含む場合)、プット場合は、複数品目のプットのみを含めることができます。 これは単一の SKU のプットを処理できません。 このオプションを *いいえ* に設定した場合、プットの場所は SKU の種類が 1 つだけの場合にのみ指定されます。
 
@@ -249,7 +249,7 @@ ms.locfileid: "5838397"
 
 ## <a name="next-step"></a>次のステップ
 
-場所ディレクティブを作成した後、各ディレクティブ コードを、作業作成のための作業テンプレート コードと関連付けることができます。 詳細については、[作業テンプレートと場所ディレクティブを使用した倉庫作業の制御](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives) を参照してください。
+場所ディレクティブを作成した後、各ディレクティブ コードを、作業作成のための作業テンプレート コードと関連付けることができます。 詳細については、[作業テンプレートと場所ディレクティブを使用した倉庫作業の制御](./control-warehouse-location-directives.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

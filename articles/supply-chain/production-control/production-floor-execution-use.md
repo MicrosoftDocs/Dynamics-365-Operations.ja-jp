@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814659"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907720"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>作業者が生産現場の実行インターフェイスを使用する方法
 
@@ -136,7 +136,7 @@ ms.locfileid: "5814659"
 
 ## <a name="working-on-indirect-activities"></a>間接活動で作業する
 
-間接活動は、製造オーダーに直接関連付けられていない活動です。 [時間と出勤の間接活動の設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance) に説明されているように、間接活動を柔軟に定義できます。
+間接活動は、製造オーダーに直接関連付けられていない活動です。 [時間と出勤の間接活動の設定](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance) に説明されているように、間接活動を柔軟に定義できます。
 
 たとえば、Contoso の現場作業者のシャノンは、会社の会議に参加することを望み、会議は間接活動と見なされています。 次の 2 つのシナリオのいずれかが適用されます。
 

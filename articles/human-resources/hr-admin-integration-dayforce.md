@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcb57082a49fc07a4139aa37f9507890ca7ed620
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1647b7fbf84a78051e745e918954df32a2e7e1dd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805085"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890007"
 ---
 # <a name="configure-integration-with-dayforce"></a>Dayforce との統合を構成する
 
@@ -53,8 +53,8 @@ Human Resources 内で統合を有効にするには、次の手順に従いま�
 
 Azure Storage アカウント および Azure Storage の接続文字列の詳細については、次の Azure の記事を参照してください。
 
-- [Azure ストレージ アカウントについて](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Azure ストレージの接続文字列のコンフィギュレーション](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Azure ストレージ アカウントについて](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Azure ストレージの接続文字列のコンフィギュレーション](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>給与統合が有効になっている場合の技術詳細
 
@@ -65,6 +65,7 @@ Azure Storage アカウント および Azure Storage の接続文字列の詳�
 
 > [!NOTE]
 > SFTP エンドポイントに転送されるデータ パッケージは、そのパッケージに固有のキーを使用して暗号化されます。 キーは、Ceridian によってのみアクセス可能な Azure Key Vault にあります。 データ パッケージの内容を復号化して確認することはできません。 データ パッケージの内容を確認する必要がある場合は、"給与統合エクスポート" データ プロジェクトを手動でエクスポートし、ダウンロードしてから、それを開く必要があります。 手動エクスポートでは、暗号化が適用されないか、またはパッケージが転送されません。
+> 統合ファイルが Dynamics 365 Human Resources UAT またはサンドボックス環境から Ceridian Dayforce Test 環境に送信される場合は、次のキー コンテナー URL を使用できます: https://payrollintegrationprod.vault.azure.net。
 
 ## <a name="configure-your-data"></a>データのコンフィギュレーション 
 
@@ -124,10 +125,10 @@ Dayforce は、給付金の計画で定義される給与影響に基づいて�
 
 給付金プログラムを定義し、管理する方法の詳細については、次の記事を参照してください。
 
-- [従業員手当プログラムの提供](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [新しい給付金の作成](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [給付金の適格性ルールおよびポリシーの定義](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [作業者の福利厚生の登録および削除](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [従業員手当プログラムの提供](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [新しい給付金の作成](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [給付金の適格性ルールおよびポリシーの定義](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [作業者の福利厚生の登録および削除](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>報酬 
 
@@ -137,20 +138,20 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 
 報酬プランの詳細については、次の記事を参照してください。
 
-- [固定報酬プランの作成](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [変動報酬プランの作成](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [給与/報酬構造および計画の作成](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [報酬の処理](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [報酬プロセスの定義と結果の計算](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [固定報酬プランへの従業員の登録](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [変動報酬プランへの従業員の登録](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [固定報酬プランの作成](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [変動報酬プランの作成](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [給与/報酬構造および計画の作成](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [報酬の処理](/dynamics365/unified-operations/talent/process-compensation)
+- [報酬プロセスの定義と結果の計算](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [固定報酬プランへの従業員の登録](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [変動報酬プランへの従業員の登録](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>職務 
 
 職務とは、職務を遂行する担当者に必要なタスクと職責の集合です。 詳細については、次の記事を参照してください。
 
-- [職務のコンポーネントの設定](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [新しい職務の定義](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [職務のコンポーネントの設定](/dynamics365/unified-operations/talent/create-job)
+- [新しい職務の定義](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>職位
 
@@ -174,8 +175,8 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 
 詳細については、次の記事を参照してください。
 
-- [部門、職務、職位を使用した従業員の編成](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [職位の設定](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [部門、職務、職位を使用した従業員の編成](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [職位の設定](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>部門
 
@@ -183,8 +184,8 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 
 詳細については、次の記事を参照してください。
 
-- [部門の作成と部門階層への関連付け](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [新しい部門の定義](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [部門の作成と部門階層への関連付け](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [新しい部門の定義](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>支払サイクルと支払期間
 

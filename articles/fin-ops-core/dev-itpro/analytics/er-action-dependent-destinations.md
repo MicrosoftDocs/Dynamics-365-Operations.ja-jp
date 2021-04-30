@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac0efbbe645969cdf0419bf533d34e38b76fb67a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751235"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893581"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>アクション依存の ER 送信先を構成する
 
@@ -60,7 +60,7 @@ Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その
     - **送信** アクションを実行時に指定すると、**メール** ER 送信先が適用されます。
     - **印刷** アクションを実行時に指定すると、**プリンター** ER 送信先が適用されます。
 
-たとえば、**自由書式の請求書 (Excel)** ER 形式を使用して、転記時に [自由書式の請求書](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) を印刷できます。 生成されたドキュメントを転送するには、この ER 形式用に ER 送信先を構成する必要があります。 たとえば、生成されたドキュメントで次の処理を実行するには、これらの ER 送信先を構成する必要があります:
+たとえば、**自由書式の請求書 (Excel)** ER 形式を使用して、転記時に [自由書式の請求書](../../../finance/accounts-receivable/create-free-text-invoice-new.md) を印刷できます。 生成されたドキュメントを転送するには、この ER 形式用に ER 送信先を構成する必要があります。 たとえば、生成されたドキュメントで次の処理を実行するには、これらの ER 送信先を構成する必要があります:
 
 - ER 形式が実行されているが、アクション コードが指定されていない場合 (例えば、ドキュメントが電子的に送信される場合など) は、ドキュメントをアーカイブします。
 - ユーザーが **表示** アクションを実行すると、Web ブラウザーでドキュメントをプレビューします。
@@ -82,7 +82,7 @@ Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その
 
 ER 形式を実行するときに、構成済の送信先設定を実行時に変更するための適切な [アクセス許可](electronic-reporting-destinations.md#security-considerations) を持つユーザが、ユーザー アクションをプロビジョニングした場合は、構成した送信先設定を変更するためのオプションを示すダイアログ ボックスが表示されます。 このダイアログ ボックスはオプションであり、その外観は、ER フレームワークが ER 形式を実行するために呼び出しがどのように実装されたかによって異なります。 このダイアログ ボックスが表示される場合、指定したユーザー アクションに従って、ボックス内の ER 送信先が有効になります。
 
-次の図では、このトピックで前述したように、**プリンター** アクションがプロビジョニングされ、ER 送信先がこの形式に対して構成されている場合に、自由書式の請求書が [転記](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) され、**自由書式の請求書 (Excel)** ER 形式が実行されて、このドキュメントが生成されるときに表示される **電子申告形式の送信先** ダイアログ ボックスの例を示しています。
+次の図では、このトピックで前述したように、**プリンター** アクションがプロビジョニングされ、ER 送信先がこの形式に対して構成されている場合に、自由書式の請求書が [転記](../../../finance/accounts-receivable/create-free-text-invoice-new.md) され、**自由書式の請求書 (Excel)** ER 形式が実行されて、このドキュメントが生成されるときに表示される **電子申告形式の送信先** ダイアログ ボックスの例を示しています。
 
 ![実行中の ER 形式に対して初期構成された ER 送信先を変更するオプションを表示するダイアログ ボックス](./media/er-destination-action-dependent-02.gif)
 

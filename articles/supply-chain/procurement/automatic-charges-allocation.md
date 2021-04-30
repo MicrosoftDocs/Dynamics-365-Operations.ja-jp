@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a167e6ba4a3b4161e964e5018944af0901000b01
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e8d65cc1f946f921523607eff850b29f9ff9bf1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841482"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910164"
 ---
 # <a name="automatic-allocation-of-charges"></a>請求金額の自動配賦
 
@@ -144,7 +144,7 @@ ms.locfileid: "5841482"
     - **サイト** と **倉庫** – 特定のサイトと倉庫に対してのみに請求金額を適用する場合は、サイトと倉庫を指定します。
     - **保存** – チェック ボックスをオンにして請求完了後に請求トランザクションを保存すると、選択した顧客 ID に対して新しい請求書を作成するたびに請求が適用されるようになります。
 
-1. **販売注文の場合のみ:** 階層化された請求金額を計算する場合は、[販売注文の階層化された請求金額](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) を参照してください。
+1. **販売注文の場合のみ:** 階層化された請求金額を計算する場合は、[販売注文の階層化された請求金額](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) を参照してください。
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>ヘッダーから明細行に諸費用を配賦
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2211f666b2b1dc7600639007794ab8133b58b2cb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d95584ff02eac7353b01c2159be02e694b4c83fe
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834479"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897747"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Excel から仕訳帳明細行とドキュメントを発行する
 
@@ -45,7 +45,7 @@ ms.locfileid: "5834479"
 
 行が公開されると、それらの行が財務仕訳帳に設定されているルールに準拠していることが確認されます。 明細行が公開されると、ユーザーは Dynamics 365 Finance から伝票を編集または投稿することができます。 
 
-テンプレートに財務分析コードを追加するには、追加の変更が必要です。 詳細については、[Microsoft Excel テンプレートに分析コードを追加する](../../dev-itpro/financial/add-dimensions-excel-templates.md)を参照してください。 エンティティに分析コードを追加した後は、Excel デザイナーで使用でき、テンプレートに追加することができます。
+テンプレートに財務分析コードを追加するには、追加の変更が必要です。 詳細については、[Microsoft Excel テンプレートに分析コードを追加する](../../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md)を参照してください。 エンティティに分析コードを追加した後は、Excel デザイナーで使用でき、テンプレートに追加することができます。
 
 
 
