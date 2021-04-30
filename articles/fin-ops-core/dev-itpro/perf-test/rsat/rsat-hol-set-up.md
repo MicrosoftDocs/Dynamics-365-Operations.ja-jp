@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 725bce4b3aa7feb61bd7d7ded1be07f803424e57
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7c6e4dcbd854cfadbc34f0040dcffd277d32a8d9
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745200"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909037"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool の設定およびインストール チュートリアル
 
@@ -54,7 +54,7 @@ ms.locfileid: "5745200"
 
 ### <a name="user-eligibility"></a>ユーザーの適格性
 
-ユーザーが Azure DevOps に作成されていること、および Azure テスト計画へのアクセスを提供するサブスクリプション レベルを持っていることを確認します。 Azure DevOps テスト計画ライセンスは、ユーザーがテスト ケースを作成および管理する場合にのみ必要です (つまり、すべての RSAT ユーザーがこのライセンスを必要とするわけではありません)。 ライセンスの要件については、[ライセンス要件](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements) を参照してください。
+ユーザーが Azure DevOps に作成されていること、および Azure テスト計画へのアクセスを提供するサブスクリプション レベルを持っていることを確認します。 Azure DevOps テスト計画ライセンスは、ユーザーがテスト ケースを作成および管理する場合にのみ必要です (つまり、すべての RSAT ユーザーがこのライセンスを必要とするわけではありません)。 ライセンスの要件については、[ライセンス要件](/azure/devops/test/manual-test-permissions#license-requirements) を参照してください。
 
 ### <a name="create-a-new-azure-devops-project"></a>新しい Azure DevOps プロジェクトの作成
 

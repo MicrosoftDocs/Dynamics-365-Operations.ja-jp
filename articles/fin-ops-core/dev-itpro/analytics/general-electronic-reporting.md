@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750061"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893180"
 ---
 # <a name="electronic-reporting-er-overview"></a>電子申告 (ER) の概要
 
@@ -183,11 +183,11 @@ ER レポジトリは ER コンフィギュレーションを格納します。 
 
 詳細については、[電子申告 (ER) コンフィギュレーションのインポート](./electronic-reporting-import-ger-configurations.md) を参照してください。
 
-**RCS** リポジトリは、リポジトリの登録段階で選択された [コンフィギュレーション サービス (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) の特定インスタンスのコンフィギュレーション一覧へのアクセス許可を提供します。 ER を使用すると、選択した RCS インスタンスから完了または共有コンフィギュレーションを現在のインスタンスにインポートできるため、電子申告に使用できます。
+**RCS** リポジトリは、リポジトリの登録段階で選択された [コンフィギュレーション サービス (RCS)](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) の特定インスタンスのコンフィギュレーション一覧へのアクセス許可を提供します。 ER を使用すると、選択した RCS インスタンスから完了または共有コンフィギュレーションを現在のインスタンスにインポートできるため、電子申告に使用できます。
 
 詳細については、[RCS からの電子申告 (ER) コンフィギュレーションのインポート](./rcs-download-configurations.md) を参照してください。
 
-**グローバル リポジトリ** リポジトリは、[コンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) のグローバル リポジトリ内のコンフィギュレーション リストへのアクセスを提供します。 この ERリポジトリのタイプは、Microsoft プロバイダーに対してのみ登録できます。 グローバル リポジトリから、ER コンフィギュレーションの最新バージョンを現在のインスタンスにインポートできます。
+**グローバル リポジトリ** リポジトリは、[コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) のグローバル リポジトリ内のコンフィギュレーション リストへのアクセスを提供します。 この ERリポジトリのタイプは、Microsoft プロバイダーに対してのみ登録できます。 グローバル リポジトリから、ER コンフィギュレーションの最新バージョンを現在のインスタンスにインポートできます。
 
 詳細については、[コンフィギュレーション サービスのグローバル リポジトリから電子申告 (ER) コンフィギュレーションのインポート](./er-download-configurations-global-repo.md) を参照してください。
 

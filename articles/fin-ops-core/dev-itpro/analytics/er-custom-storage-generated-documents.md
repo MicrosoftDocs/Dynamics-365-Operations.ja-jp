@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dab70b213efc7e7a3537aa2b47b9edf38d492d34
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753723"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894127"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されたドキュメント用にカスタマイズされた保存先を指定します
 
@@ -27,7 +27,7 @@ ms.locfileid: "5753723"
 
 ## <a name="prerequisites"></a>必要条件
 
-継続的ビルドをサポートするトポロジを配置する必要があります。 (詳細については、[継続的ビルドとテストの自動化をサポートするトポロジの配置](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation) を参照してください。) 次のロールの 1 つに対してこのトポロジにアクセスできる必要があります。
+継続的ビルドをサポートするトポロジを配置する必要があります。 (詳細については、[継続的ビルドとテストの自動化をサポートするトポロジの配置](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation) を参照してください。) 次のロールの 1 つに対してこのトポロジにアクセスできる必要があります。
 
 - 電子申告開発者
 - 電子申告機能コンサルタント
@@ -53,7 +53,7 @@ ms.locfileid: "5753723"
 
 ER フォーマットが生成するドキュメントのルーティング方法を指定するには、[電子申告 (ER) の送信先](electronic-reporting-destinations.md) を構成する必要があります。 生成するドキュメントをファイルとして保存するように構成する各 ER の送信先では、ドキュメントのドキュメント タイプを指定する必要があります。 異なる ER フォーマットが生成するドキュメントをルーティングするには、異なるドキュメント タイプが使用できます。
 
-1. 前に作成またはインポートした ER フォーマット用に、新しい [ドキュメント タイプ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) を追加します。 次の図では、ドキュメント タイプは **FileX** です。
+1. 前に作成またはインポートした ER フォーマット用に、新しい [ドキュメント タイプ](../../fin-ops/organization-administration/configure-document-management.md) を追加します。 次の図では、ドキュメント タイプは **FileX** です。
 2. このドキュメント タイプをその他のドキュメント タイプから区別するには、名前に特定のキーワードを含めます。 たとえば、次の図では、名前は **(ローカル) フォルダー** です。
 3. **クラス** フィールドには、**ファイルの添付** を指定します。
 4. **グループ** フィールドには、**ファイル** を指定します。
@@ -117,14 +117,14 @@ public DocuRef insertFile(
 
 ## <a name="configure-an-er-destination"></a>ER 送信先の構成
 
-1. 作成またはインポートした ER フォーマットについて、前述の要素 (ファイル、フォルダー、マージ、または添付ファイル) の 1 つに対してアーカイブされた送信先を構成します。 ガイダンスについては、[ER コンフィギュレーション先](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11) を参照してください。
+1. 作成またはインポートした ER フォーマットについて、前述の要素 (ファイル、フォルダー、マージ、または添付ファイル) の 1 つに対してアーカイブされた送信先を構成します。 ガイダンスについては、[ER コンフィギュレーション先](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11) を参照してください。
 2. 構成された送信先用にすでに追加したドキュメント タイプを使用します。 (このトピックの例では、ドキュメント タイプは **FileX** です。)
 
 ![送信先設定ダイアログ ボックス](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>ソース コードの修正
 
-1. Microsoft Visual Studio プロジェクトに新しいクラスを追加し、前述した **AttachingFile()** イベントをサブスクライブするためのコードを記述します。 (使用される拡張性パターンの詳細については、[EventHandlerResult を使用した応答](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result) を参照してください。) たとえば、新しいクラスで、次のアクションを実行するコードを記述します。
+1. Microsoft Visual Studio プロジェクトに新しいクラスを追加し、前述した **AttachingFile()** イベントをサブスクライブするためのコードを記述します。 (使用される拡張性パターンの詳細については、[EventHandlerResult を使用した応答](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result) を参照してください。) たとえば、新しいクラスで、次のアクションを実行するコードを記述します。
 
     1. Application Object Server (AOS) サービスを実行するサーバーのローカル ファイル システムのフォルダに、生成したファイルを保存します。
     2. 新しいドキュメント タイプ (たとえば、名前に "(ローカル)" キーワードが含まれている **FileX** タイプ) が ER 実行ジョブ ログのレコードにファイルが関連付けられている時に使用される場合にのみ、これら生成されたファイルは保存されます。

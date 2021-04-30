@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822134"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898213"
 ---
 # <a name="budget-planning-overview"></a>予算計画の概要
 
@@ -75,7 +75,7 @@ Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) で導入された�
 
 **組織階層** ページで、各予算計画プロセスの予算計画の階層として組織階層を指定できます。 予算計画の階層は、他の目的に使用される標準的な組織階層と一致させる必要はありません。 この階層は、データの集計および配布に使用されるため、別の構造にすることもできます。 例のスキーマでは、販売部門は予算と財務部門を含む本社より下のレベルです。 この構造は販売部門の工程を管理するために使用される構造とは異なる可能性があります。 1 つの組織階層のみを各予算計画プロセスに割り当てることができます。
 
-詳細については、「[組織と組織階層](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md)」を参照してください。
+詳細については、「[組織と組織階層](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md)」を参照してください。
 
 ### <a name="user-security"></a>ユーザーのセキュリティ
 
@@ -163,7 +163,7 @@ Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) で導入された�
 
 スキーマの例では、「PY の販売」、「契約」、および「予測」の各シナリオ用の列を作成できます。 (次の図ではスキーマに関連するセクションを示します。) 次に、会計年度期間の各四半期ごとにこれらのシナリオの 1 つまたはすべてを細分化します。これにより販売部門のマネージャーは各期間の正確な予測金額を入力できます。
 
-[![列](./media/columns.png)](./media/columns.png)
+[![列を追加するためのスキーマのセクションの図](./media/columns.png)](./media/columns.png)
 
 各レイアウト要素 (列) が編集可能で、そのレイアウトに作成されたワークシート テンプレートすべてを使用可能にするかどうかも指定します。 「見積」のステージで使用されるレイアウトの例のスキーマでは、「予測」の列は編集可能ですが、「PY の販売」、および「契約」の列は読み取り専用です。
 

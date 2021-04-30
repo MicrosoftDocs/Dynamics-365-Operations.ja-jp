@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df430dada52ac1aa910a3d2007aacf65d8032383
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 48830c975f1bdfd953f57e7c0b6601a78e3a521b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812550"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910042"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>見積依頼 (RFQ) の概要
 
@@ -43,7 +43,7 @@ RFQ プロセスは次のタスクで構成されています。
 
 RFQケースを準備し、仕入先を追加したら、RFQ ケース上の **送信** (**送信および公開** 公的機関向け) を選択します。 RFQ 仕訳は、RFQ を送った各仕入先ごとに生成されます。 各仕入先のレポートをアーカイブに印刷するか、または各仕入先の電子メール アドレスにレポートを送信するように、送信アクションの印刷オプションを構成できます。 さらに、各仕入先の RFQ 仕訳帳を、後でその仕入先に送信または再送信するレポートを生成することにも使用できます。 また、仕入先で入力できる返信シートを生成するように、送信アクションを構成することもできます。
 
-このトピックでは、仕入先コラボレーションが使用されていない際の RFQs を処理するプロセスを説明します。 システムが仕入先コレボレーションに設定される場合、仕入先は直接 Supply Chain Management に入札できます。 詳細は、[顧客と仕入先の協力](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) および [外部仕入先と仕入先の協力](vendor-collaboration-work-external-vendors.md) をご覧ください。
+このトピックでは、仕入先コラボレーションが使用されていない際の RFQs を処理するプロセスを説明します。 システムが仕入先コレボレーションに設定される場合、仕入先は直接 Supply Chain Management に入札できます。 詳細は、[顧客と仕入先の協力](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) および [外部仕入先と仕入先の協力](vendor-collaboration-work-external-vendors.md) をご覧ください。
 
 送信後に RFQ を修正する必要がある場合は、作成と確定の 2 つの修正アクションを使い、終了した時に RFQ を仕入先へ再送品することができます。
 
@@ -165,7 +165,7 @@ RFQ を仕入先に送信する時、**見積依頼の送信** ページで **�
 
 制限が緩い変更プロセスを構成する場合は、既に送信した RFQ ケースでのフィールドを修正する前に、**作成** を選択する必要はありません。 ただし、RFQ への変更点の記載は手動で行い、そのケースをもう一度送る必要があります。 この方法は、編集した全ての返信 (入札) が無い場合にのみ使用できることを注意してください。 返信が入力されている場合で **受入済** 状態の場合、**送信** ボタンは使用できません。 この場合は、より厳しいプロセスで行う必要があるため、**作成** そして、**確定** を選択しなければなりません。 その後、返信は RFQ ケースへの変更を反映するようにリセットされます。
 
-仕入先が、入札するため仕入先コラボレーション インターフェイスを使用する場合、RFQ ケースへの変更について仕入先に通知するために、修正プロセスを必ず使用する必要があります。 このプロセスは、入札の実行中に仕入先が期限切れ RFQ ケースに入札する場所の状況を回避するのに役立ちます。 仕入先コラボレーションについての詳細は、[外部仕入先との仕入先コラボレーション](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors) を参照してください。
+仕入先が、入札するため仕入先コラボレーション インターフェイスを使用する場合、RFQ ケースへの変更について仕入先に通知するために、修正プロセスを必ず使用する必要があります。 このプロセスは、入札の実行中に仕入先が期限切れ RFQ ケースに入札する場所の状況を回避するのに役立ちます。 仕入先コラボレーションについての詳細は、[外部仕入先との仕入先コラボレーション](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors) を参照してください。
 
 入札する追加仕入先を招待したい場合は、RFQ ケースに変更が無いなら、**送信** ボタンを使用します。 追加した仕入先は **送信** ページに表示され、招待メールが届きます。
 

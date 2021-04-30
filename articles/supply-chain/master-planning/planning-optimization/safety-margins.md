@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7b66951b9c742af4aa11f681af8f9583a2d97d8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841866"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908296"
 ---
 # <a name="safety-margins"></a>安全マージン
 
@@ -87,7 +87,7 @@ ms.locfileid: "5841866"
 
 ### <a name="turn-on-safety-margins-in-feature-management"></a>機能管理で安全マージンをオンにする
 
-計画の最適化でこの機能を使用する前に、システム上でこれを有効にする必要があります。 管理者は、[機能の管理](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
+計画の最適化でこの機能を使用する前に、システム上でこれを有効にする必要があります。 管理者は、[機能の管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
 
 - **モジュール:** _マスター プラン_
 - **機能名:** _計画の最適化のためのマージン_

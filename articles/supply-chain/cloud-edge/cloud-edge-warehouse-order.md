@@ -2,27 +2,21 @@
 title: クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
 description: このトピックでは、倉庫のスケール ユニット ワークロードの一部として使用される倉庫オーダー機能について説明します。
 author: perlynne
-ms.date: 01/14/2021
+ms.date: 04/13/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: SCM
+ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2021-01-14
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.search.validFrom: 2021-04-13
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: c24c08771c83453bb65312700cf994c7a800b7fd
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836689"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899122"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
 
@@ -72,6 +66,8 @@ ms.locfileid: "5836689"
 
 - **倉庫管理 \> 照会およびレポート \> 倉庫注文明細行** に移動して、フィルターを使用し、探している明細行を検索します。
 - **調達 \> 発注書 \> すべての発注書** の順に移動し、関連する発注書を開きます。 **発注書明細行** セクションで、1 つ以上の明細行を選択し、ツール バーで **倉庫 \> 入庫エントリ** を選択します。
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

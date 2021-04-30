@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 263650cae4b8408f1f7a4a27c43294d2f51c1444
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: edbfad387496cb3381c6298b9141129c6a878335
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800144"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891844"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 8 月 6 日)
 
@@ -33,23 +33,23 @@ ms.locfileid: "5800144"
 
 ## <a name="platform-update-1001236-is-now-available"></a>プラットフォーム更新プログラム 10.0.12(36) が使用できるようになりました。
 
-詳細については、[Finance and Operations アプリのバージョン 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12) を参照してください。
+詳細については、[Finance and Operations アプリのバージョン 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md) を参照してください。
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>福利厚生管理のためのデータ管理フレームワーク (DMF) エンティティ
  
 福利厚生管理エンティティはリリースされてます。 DMF エンティティを使用すると、データをインポートおよびエクスポートして、福利厚生管理を簡単に構成できます。 福利厚生管理テンプレートは、データの移動に使用できます。 テンプレートは、データの依存関係を考慮してデータを順次エクスポートおよびインポートします。 詳細については、以下を参照してください。
 
-- Dynamics 365 2020 リリース ウェーブ 1 プランでの [DMF エンティティのサポート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support)
-- [データ管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
+- Dynamics 365 2020 リリース ウェーブ 1 プランでの [DMF エンティティのサポート](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support)
+- [データ管理の概要](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
 
 
 ## <a name="claire-creates-a-workflow-for-buying-and-selling-leave-requests-446557"></a>Claire は、休暇要求を購入および販売するためのワークフローを作成します (446557)
 
 詳細については、以下を参照してください。
 
-- [従業員が ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave)Dynamics 365 2020 リリースウェーブ 2 プランを購入および販売することを許可します。
-- [休暇の売買ポリシーの管理](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [休暇の売買](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [従業員が ](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave)Dynamics 365 2020 リリースウェーブ 2 プランを購入および販売することを許可します。
+- [休暇の売買ポリシーの管理](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [休暇の売買](./hr-employee-self-service-buy-sell-leave.md)
 
 
 ## <a name="worker-postal-addresses-v2-entity-has-access-across-legal-entities-with-restricted-access-459126"></a>アクセスが制限されている作業者の郵便番号 V2 エンティティ (459126)
@@ -62,7 +62,7 @@ ms.locfileid: "5800144"
 
 ## <a name="new-entities-for-buying-and-selling-leave-473180"></a>休暇要求の購買や販売のための新規エンティティ (473180)
 
-これで、データ管理フレームワーク エンティティは、休暇を購入して販売するために使用できるようになります。 詳細については、 [データ管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages) を参照してください。
+これで、データ管理フレームワーク エンティティは、休暇を購入して販売するために使用できるようになります。 詳細については、 [データ管理の概要](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。
 
 ## <a name="when-viewing-record-information-and-using-advanced-filters-a-user-could-gain-access-to-other-employees-records-472490"></a>レコード情報を表示したり、高度なフィルタを使用したりすると、ユーザーが他の従業員のレコード (472490) にアクセスできるようになります。
 
@@ -96,9 +96,9 @@ ms.locfileid: "5800144"
 
 一部の組織では、従業員が休暇を購入または売却できるという利点があります。 このプロセスは、多くの場合、手動で管理します。 この機能により、人事部門のポリシーと申請の管理を自動化します。 休暇管理プロセスを合理化し、ミスをなくすことができます。 詳細については、以下を参照してください。
 
-- [従業員が ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave)Dynamics 365 2020 リリースウェーブ 2 プランを購入および販売することを許可します。
-- [休暇の売買ポリシーの管理](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [休暇の売買](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [従業員が ](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave)Dynamics 365 2020 リリースウェーブ 2 プランを購入および販売することを許可します。
+- [休暇の売買ポリシーの管理](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [休暇の売買](./hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>1 社または 1 プランの有給休暇
 
@@ -126,15 +126,15 @@ ms.locfileid: "5800144"
 
 人事管理のパーソナル化機能を使用することにより、フィールドを必須にすることができます。 この機能には **保存されたビュー** が必要です。 保存されたビューに関する詳細については、次を参照してください。
 
-- [保存ビュー - Dynamics 365 2020 リリース ウェーブ 2 プランの一般提供](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) 
-- [保存されたビューを十分に活用するフォームの作成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [保存ビュー - Dynamics 365 2020 リリース ウェーブ 2 プランの一般提供](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) 
+- [保存されたビューを十分に活用するフォームの作成](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Teams の Human Resources アプリケーション
 
 従業員は、Microsoft Teams 内で休暇の表示および申請ができます。 ボットと対話して、休暇申請を作成できます。 詳細については、以下を参照してください。
 
-- Dynamics 365 2020 リリース ウェーブ 1 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams)
-- [Teams の Human Resources アプリ](https://go.microsoft.com/fwlink/?linkid=2127841)
+- Dynamics 365 2020 リリース ウェーブ 1 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams)
+- [Teams の Human Resources アプリ](./hr-admin-teams-leave-app.md)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>DMF エンティティで休暇付与の一時停止が可能
 
@@ -172,7 +172,7 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
 

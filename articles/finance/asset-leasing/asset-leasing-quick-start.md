@@ -2,11 +2,11 @@
 title: 資産リースを開始する
 description: このトピックでは、資産リース機能について説明し、資産リースを作成する手順と、それらのリースの情報を表示する手順について示します。
 author: moaamer
-ms.date: 10/16/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814131"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892436"
 ---
 # <a name="asset-leasing-get-started"></a>資産リースを開始する
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、資産リース機能について説明し、資産リースを作成する手順と、それらのリースの情報を表示する手順について示します。 このトピックでは、ユーザー インターフェイスおよびドキュメントで使用される用語も定義します。 資産リースは、Microsoft Dynamics 365 Finance でリースされた資産の財務トランザクションを管理、追跡、自動化するための高度な機能です。 資産リースは、国際会計基準 (IFRS 第 16 号) と米国会計基準 (ASC 第 842 号) に準拠しています。 資産リースは、リース情報を取得して処理し、初期認識、月次仕訳入力からリースの減損や終了まで、リースのライフサイクル全体の仕訳入力を生成するのに役立ちます。 資産リースは、固定資産、買掛金勘定、一般会計を含む、Dynamics 365 Finance の他のコンポーネントとシームレスに統合しています。
+
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、**機能の管理** ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **管理機能** ワークスペースで、**資産リース** を探して選択し、**今すぐ有効にする** ボタンをクリックします。
 
 会計基準の詳細については、IFRS 第 16 号と米国会計基準 ASC 第 842 号の標準ドキュメントを参照してください。
 

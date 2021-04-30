@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a621328817171be7df0622507c84f5c6f6fe90a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f83dfe19e442b9e81d63a2b1dd3dd44aa2f594bc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746438"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891186"
 ---
 # <a name="char-er-function"></a>CHAR ER 関数
 
@@ -48,7 +48,7 @@ CHAR (number)
 
 ## <a name="usage-notes"></a>使用上の注意
 
-この機能を返す文字列は、親 **FILE** 形式の要素で選択したエンコードによって異なります。 サポートされているエンコードの一覧については、[エンコーディング クラス](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx) で参照できます。
+この機能を返す文字列は、親 **FILE** 形式の要素で選択したエンコードによって異なります。 サポートされているエンコードの一覧については、[エンコーディング クラス](/dotnet/api/system.text.encoding) で参照できます。
 
 ## <a name="example"></a>例
 

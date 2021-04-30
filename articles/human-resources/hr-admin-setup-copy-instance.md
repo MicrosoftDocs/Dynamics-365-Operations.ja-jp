@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6cb8050980b9b54480d09a59379430cd229ff141
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44df05083cd3c91e5dcbdb3062665c2145d92a7e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801098"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889815"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
 
@@ -39,7 +39,7 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics
 
 - 対象の環境の管理者である必要があります。そうすることでコピー後のインスタンスにサイン インすることができます。
 
-- Human Resources データベースをコピーする際は、 Microsoft Power Apps 環境に含まれる要素 (アプリやデータ) のコピーをしないでください。 Power Apps 環境の各要素のコピー方法については、 [環境をコピーする](https://docs.microsoft.com/power-platform/admin/copy-environment) を参照してください。 上書きを行う Power Apps 環境 は、サンドボックス環境である必要があります。 Power Apps の運用環境をサンドボックス環境に変更するには、グローバル テナントの管理者である必要があります。 Power Apps 環境の変更に関する詳細については、 [インスタンスを切り替える](https://docs.microsoft.com/dynamics365/admin/switch-instance) を参照してください。
+- Human Resources データベースをコピーする際は、 Microsoft Power Apps 環境に含まれる要素 (アプリやデータ) のコピーをしないでください。 Power Apps 環境の各要素のコピー方法については、 [環境をコピーする](/power-platform/admin/copy-environment) を参照してください。 上書きを行う Power Apps 環境 は、サンドボックス環境である必要があります。 Power Apps の運用環境をサンドボックス環境に変更するには、グローバル テナントの管理者である必要があります。 Power Apps 環境の変更に関する詳細については、 [インスタンスを切り替える](/dynamics365/admin/switch-instance) を参照してください。
 
 - サンドボックス環境にインスタンスをコピーしてサンドボックス環境を Dataverse と統合する場合は、ユーザー設定フィールドを Dataverse テーブルに再適用する必要があります。 [カスタムフィールドを Dataverse に適用する](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service)を参照してください 。
 
@@ -80,7 +80,7 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 6. コピーをするPower Apps 環境 を選択して、 **コピー** を選択します。
 
-7. コピー処理の完了後、対象のインスタンスにサインインし、 Dataverse 統合を有効化します。 詳細情報と解説については、 [Dataverse の統合を構成する](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration) を参照してください。
+7. コピー処理の完了後、対象のインスタンスにサインインし、 Dataverse 統合を有効化します。 詳細情報と解説については、 [Dataverse の統合を構成する](./hr-admin-integration-common-data-service.md) を参照してください。
 
 ## <a name="data-elements-and-statuses"></a>データの属性と状態
 
@@ -142,7 +142,7 @@ Dataverse テーブルに表示されるユーザー設定フィールドごと�
 
 選択解除、変更の適用、再選択、変更の再適用を行うプロセスでは、カスタム フィールドを含むように Dataverse でスキーマを更新するように促されます。
 
-カスタム フィールドについての詳細については、[カスタム フィールドの作成と操作](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields) を参照してください。
+カスタム フィールドについての詳細については、[カスタム フィールドの作成と操作](../fin-ops-core/fin-ops/get-started/user-defined-fields.md) を参照してください。
 
 ## <a name="see-also"></a>参照
 

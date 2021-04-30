@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b4503b0fea259d30e32dffe636bc0a7ac5528033
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f302f780fa8ba3d387a71770024a1bf7ad42c4ef
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807779"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910261"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service への倉庫の同期
 
@@ -58,7 +58,7 @@ Field Service および Supply Chain Management の統合をサポートする�
 **外部で管理** 列は、在庫レベル、調整、移動、ワーク オーダーの使用状況の同期を制御します。 **外部で管理** が **はい** に設定された倉庫のみ、その他のシステムの同じ倉庫に直接同期するのに使用されます。 
 
 > [!NOTE]
-> Field Service で複数の倉庫を作成し (**外部で管理** = いいえ)、高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Supply Chain Management に更新を送信するだけの場合に使用されます。 この場合、Field service では、Supply Chain Management からの在庫レベルの更新は受信しません。 追加情報については、[Field Service から Finance and Operations への在庫調整の同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) および [Field Service でのワーク オーダーを Finance and Operations のプロジェクトにリンクされている販売注文に同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
+> Field Service で複数の倉庫を作成し (**外部で管理** = いいえ)、高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Supply Chain Management に更新を送信するだけの場合に使用されます。 この場合、Field service では、Supply Chain Management からの在庫レベルの更新は受信しません。 追加情報については、[Field Service から Finance and Operations への在庫調整の同期](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) および [Field Service でのワーク オーダーを Finance and Operations のプロジェクトにリンクされている販売注文に同期](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 ### <a name="data-integration-project"></a>データ統合プロジェクト

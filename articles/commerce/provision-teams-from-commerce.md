@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 96382c072e03506294d72899072a358091bda8ab
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba7c74942735b723d1015dc4da0068fbb631bc6b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842701"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908907"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Dynamics 365 Commerce から Microsoft Teams へのプロビジョニング
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 ここでは、Microsoft Teams の組織データを利用して Dynamics 365 Commerce のプロビジョニングを行う方法について説明します。
 

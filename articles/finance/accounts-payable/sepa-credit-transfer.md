@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 760763078d10c56c8bc485601a2f14979d28ac11
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830739"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897165"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA 口座振替の概要
 
@@ -54,7 +54,7 @@ SEPA 口座振替は、個人または 1 つの会社から別の会社または
 必要に応じていつでも Microsoft Dynamics Lifecycle services (LCS) の共有アセット ライブラリに移動して、**GER コンフィギュレーション** 資産タイプのある利用可能なファイルで最新の一覧を表示する必要があります。 次のセクション、"何を設定する必要がありますか。"では、利用可能なコンフィギュレーションおよびインポート選択されているコンフィギュレーションを表示するための LCS リポジトリの作成方法について説明するトピックへのリンクを提供します。
 
 ## <a name="what-do-i-have-to-set-up"></a>何を設定する必要がありますか。
--   口座振替ファイルを作成する前に、少なくとも 1 つの有効な口座振替コンフィギュレーションを、ER コンフィギュレーションにインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)を参照してください。
+-   口座振替ファイルを作成する前に、少なくとも 1 つの有効な口座振替コンフィギュレーションを、ER コンフィギュレーションにインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)を参照してください。
 -   支払の買掛金勘定の方法をコンフィギュレーションするときに、**一般的な電子申告** チェック ボックスをオンにし、エクスポート形式のコンフィギュレーションとして適切な口座振替形式 (たとえば、**ISO 20022 口座振替 (AT)**) を選択します。
 -   法人および銀行口座情報を設定する必要があります。
 -   銀行口座番号、IBAN、および時にはSWIFT コード (BICs) または他の ID が、有効な口座振替の支払を作成するため必要になります。 したがって、仕入先の銀行口座および振込を要求する組織の銀行口座用にそれらを設定する必要があります。

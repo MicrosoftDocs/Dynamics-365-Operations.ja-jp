@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: dcb952ccc68f5f19119f8b72285667e259b00429
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c4cad305e3d130b3283ca3424c84f60e2d13307
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840728"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907818"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>顧客ポータルのインストール、設定、更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "5840728"
 
 顧客ポータルの実装には、次のライセンスを所有している必要があります :
 
-- **Power Apps ポータル** - このライセンスは、顧客ポータルのホストに必要です。 ポータルは、使用率に基づいてライセンス供与されます。 詳細については、[Power Apps ポータルのライセンス要件](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals) を参照してください。
+- **Power Apps ポータル** - このライセンスは、顧客ポータルのホストに必要です。 ポータルは、使用率に基づいてライセンス供与されます。 詳細については、[Power Apps ポータルのライセンス要件](/power-platform/admin/powerapps-flow-licensing-faq#portals) を参照してください。
 - **デュアル書き込み** - Supply Chain Management のテーブルにデュアル書き込みを有効にするには、必要なライセンスを所有している必要があります。 詳細については、[デュアル書き込みのシステム要件](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md) を参照してください。
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>デュアル書き込みと、Power Apps ポータルの依存関係
@@ -40,7 +40,7 @@ Supply Chain Management の他の機能とは異なり、顧客ポータルの�
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>顧客ポータルを有効化する設定が必要です
 
-必要なライセンスを確認した後は、デュアル書き込みを設定し、[デュアル書き込みの初回同期](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md)に記載の指示に従って設定することができます。
+必要なライセンスを確認した後は、デュアル書き込みを設定し、[デュアル書き込みの初回同期](/dynamics365/supply-chain/sales-marketing/enable-entity-map)に記載の指示に従って設定することができます。
 
 デュアル書き込みでは、以下のテーブル マッピングを有効化してください:
 
@@ -74,14 +74,14 @@ Supply Chain Management の他の機能とは異なり、顧客ポータルの�
 
 顧客ポータルを設定してカスタマイズする方法の詳細については、次のドキュメントを参照して基礎となるテクノロジーについて確認してください :
 
-- [Power Apps ポータル ドキュメント](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Power Apps ポータル ドキュメント](/powerapps/maker/portals/overview)
 - [デュアル書き込みのドキュメント](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
 ポータルを効果的に管理するには、Power Appsポータルと Microsoft Dataverse のライフサイクルを理解しておく必要があります。 詳細については、次のリソースを参照してください :
 
-- [ポータルのライフ サイクルについて](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [ポータルのアップグレード](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [ポータルの構成の移行](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [ポータルのライフ サイクルについて](/powerapps/maker/portals/admin/portal-lifecycle)
+- [ポータルのアップグレード](/powerapps/maker/portals/admin/upgrade-portal)
+- [ポータルの構成の移行](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [ソリューションのライフサイクル管理 : Dynamics 365 for Customer Engagement アプリ](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4a06da220fd90de91fb9091c41f35a1fb95442c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e1b4b336953ef6bd74da009b3bb44fbcf2eab5a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804020"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892326"
 ---
 # <a name="go-live-faq"></a>Go-Live に関するよく寄せられる質問 
 
@@ -48,7 +48,7 @@ ms.locfileid: "5804020"
 
 ## <a name="what-is-a-go-live-assessment"></a>運用運用に関する評価について  
 
-Go-live 評価/レビューは、 [Microsoft FastTrack プログラム](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview)の一部です。 レビュー中に、ソリューション アーキテクトは、実装プロジェクトが成功した切替および Go-live の準備が整っているかどうかを評価します。 このレビューは、実稼働環境で準備を開始する前に、すべての実装プロジェクトで必須です。 
+Go-live 評価/レビューは、 [Microsoft FastTrack プログラム](/dynamics365/fasttrack/)の一部です。 レビュー中に、ソリューション アーキテクトは、実装プロジェクトが成功した切替および Go-live の準備が整っているかどうかを評価します。 このレビューは、実稼働環境で準備を開始する前に、すべての実装プロジェクトで必須です。 
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>当社のサンドボックス環境は、米国中部のデータセンターに配置されています。 運用環境を米国西部のデータセンターに展開したいと考えています。 運用環境の構成で、データ センターに米国西部を選択できますか？ 
 
@@ -56,7 +56,7 @@ LCS は、人事環境を導入する際に異なるデータセンターを選�
 
 運用環境を米国西部のデータセンターに配置するには、まずサンドボックス環境を米国西部のデータセンターに再展開してテストし、サインオフする必要があります。 
 
-適切なデータセンターを選択する方法については、[ネットワーク要件](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements#network-requirements)を参照してください。 
+適切なデータセンターを選択する方法については、[ネットワーク要件](../fin-ops-core/fin-ops/get-started/system-requirements.md#network-requirements)を参照してください。 
 
 ## <a name="what-level-of-access-do-i-have-to-the-azure-resources-for-my-human-resources-environments"></a>人事環境では、Azureリソースに対してどのレベルのアクセス許可が必要ですか？  
 
@@ -64,7 +64,7 @@ LCS は、人事環境を導入する際に異なるデータセンターを選�
 
 Azureリソースや Dynamics 365 Human Resources 環境に直接アクセスすることはできませんが 、データへのアクセスに使用できる追加機能があります。
 
-- Azure SQL データベースを独自の Azure テナントに展開し、BYOD (Bring Your Own Device) 機能を使用してデータを同期させることができます。 詳細については、[独自のデータベースを導入する (byod)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database)を参照してください。
+- Azure SQL データベースを独自の Azure テナントに展開し、BYOD (Bring Your Own Device) 機能を使用してデータを同期させることができます。 詳細については、[独自のデータベースを導入する (byod)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md)を参照してください。
 
 - Dataverse の統合を使用して、選択したエンティティを Dataverse データベースに同期することができます。 詳細については、[Dataverse の表](hr-developer-entities.md)を参照してください。 
 
@@ -80,11 +80,11 @@ Azureリソースや Dynamics 365 Human Resources 環境に直接アクセスす
 
 マイクロソフトでは、過去 14 日間において、ポイントインタイム リストア (PITR) を可能にする十分なバックアップが保持されています。 
 
-詳細については、 [SQL Database の自動バックアップについて](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database) を参照してください。 
+詳細については、 [SQL Database の自動バックアップについて](/azure/azure-sql/database/automated-backups-overview?tabs=single-database) を参照してください。 
 
 ## <a name="can-i-request-a-copy-of-the-backup-of-my-production-database"></a>生産データベースのバックアップのコピーを要求できますか。 
 
-No. ただし、運用環境をサンドボックス環境にコピーするデータベースの更新サービス リクエストを送信することはできます。 Azure SQL データベースを独自の Azure テナントに展開し、BYOD 機能を使用して運用環境からデータを同期させることができます。 詳細については、[独自のデータベースを導入する (byod)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database)を参照してください。 
+No. ただし、運用環境をサンドボックス環境にコピーするデータベースの更新サービス リクエストを送信することはできます。 Azure SQL データベースを独自の Azure テナントに展開し、BYOD 機能を使用して運用環境からデータを同期させることができます。 詳細については、[独自のデータベースを導入する (byod)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md)を参照してください。 
 
 ## <a name="how-do-i-move-my-sandbox-environment-to-production-for-go-live"></a>サンドボックス環境を運用稼働環境に移行する方法について 
 
@@ -94,7 +94,7 @@ No. ただし、運用環境をサンドボックス環境にコピーするデ�
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>運用環境がダウンした場合の対応について 
 
-運用環境の稼働不能状態を報告するには、  [稼働停止のレポート](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) で説明されているプロセスに従います。 
+運用環境の稼働不能状態を報告するには、  [稼働停止のレポート](../fin-ops-core/dev-itpro/lifecycle-services/report-production-outage.md) で説明されているプロセスに従います。 
 
  ## <a name="see-also"></a>参照
 

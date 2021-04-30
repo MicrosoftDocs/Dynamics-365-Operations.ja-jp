@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 44a1332a7c2cb30724198d61190cb6dc207ad2d0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a4266ee942f504ffa2f355959af8e3076984d83
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795000"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892302"
 ---
 # <a name="system-requirements"></a>システム要件
 
@@ -53,17 +53,17 @@ ms.locfileid: "5795000"
 
 ## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 
-* Microsoft Excel と Word のアドインを実行するには、Windows または Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要件の詳細については、[Office 統合トラブルシューティング](../dev-itpro/office-integration/office-integration-troubleshooting.md "Office 統合のトラブルシューティング") を参照してください。
+* Microsoft Excel と Word のアドインを実行するには、Windows または Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要件の詳細については、[Office 統合トラブルシューティング](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md "Office 統合のトラブルシューティング") を参照してください。
 * Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
 ## <a name="regional-availability-languages-and-localization"></a>地域の使用可用性、言語、およびローカライズ
 
-人事管理がサポートする国、地域、および言語に関する PDF ファイルを [Microsoft Dynamics 365 の国際可用性ガイド](https://docs.microsoft.com/dynamics365/get-started/availability) からダウンロードすることができます。 
+人事管理がサポートする国、地域、および言語に関する PDF ファイルを [Microsoft Dynamics 365 の国際可用性ガイド](/dynamics365/get-started/availability) からダウンロードすることができます。 
 
 > [!NOTE]
 > ユーザー インターフェイスは他の言語にローカライズされますが、ユーザーデータすべては入力された言語で保存されます。 電子メールおよびテンプレートは他の言語で作成できますが、スケジューリング情報などのデータは、現時点では英語でのみ使用可能です。
 
-国や地域固有のカスタマイズの作成、または現在 Microsoft にサポートされていない国や地域用のソリューションの作成に関心のある開発者は、[グローバリゼーション](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region) を参照してください。
+国や地域固有のカスタマイズの作成、または現在 Microsoft にサポートされていない国や地域用のソリューションの作成に関心のある開発者は、[グローバリゼーション](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region) を参照してください。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819283"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908931"
 ---
 # <a name="routes-and-operations"></a>工順と工程
 
@@ -79,7 +79,7 @@ ms.locfileid: "5819283"
 
 各工順は、個別に承認または未承認にすることができます。 ただし、工順が承認されない場合は、すべての関連する工順バージョンも承認されないことに注意してください。 生産管理パラメーターでは、工順の承認を取り消すどうか、および承認された工順を変更するどうかを指定できます。  
 
-誰が各工順を承認したか記録したログを保存する必要がある場合は、工順の承認に電子署名を要求できます。 ユーザーは、[電子署名](../../fin-and-ops/organization-administration/electronic-signature-overview.md) を使用して身分証明の確認をすることが必要になります。
+誰が各工順を承認したか記録したログを保存する必要がある場合は、工順の承認に電子署名を要求できます。 ユーザーは、[電子署名](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) を使用して身分証明の確認をすることが必要になります。
 
 ## <a name="operations"></a>Operations
 工程とは、生産プロセス内の手順です。 各工程には ID と簡単な説明があります。 次の表に、機械工場の工程の一般的な例を示します。
@@ -185,7 +185,7 @@ Supply Chain Management がリリース済製品に最も関連する関連工�
 
 ### <a name="electronic-signatures"></a>電子署名
 
-誰が各工順バージョンを承認し有効化したかを記録したログを保存する必要がある場合は、これらの作業に電子署名を要求できます。 工順バージョンを承認し有効化したユーザーは、[電子署名](../../fin-and-ops/organization-administration/electronic-signature-overview.md) を使用して身分証明の確認をすることが必要になります。
+誰が各工順バージョンを承認し有効化したかを記録したログを保存する必要がある場合は、これらの作業に電子署名を要求できます。 工順バージョンを承認し有効化したユーザーは、[電子署名](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) を使用して身分証明の確認をすることが必要になります。
 
 ### <a name="product-change-that-uses-case-management"></a>ケース管理を使用した製品変更
 
@@ -253,7 +253,7 @@ Supply Chain Management がリリース済製品に最も関連する関連工�
 
 - [リソースの能力](resource-capabilities.md)
 
-- [電子署名の概要](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [電子署名の概要](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

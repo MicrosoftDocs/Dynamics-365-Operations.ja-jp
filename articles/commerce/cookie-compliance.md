@@ -2,7 +2,7 @@
 title: Cookie のコンプライアンス
 description: このトピックでは、Cookie のコンプライアンスおよび Microsoft Dynamics 365 Commerce に含まれる既定のポリシーに関する考慮事項について説明します。
 author: BrianShook
-ms.date: 08/31/2020
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2cc2089bc3052c0c59cb0414f8301123a9a30df2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796030"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908187"
 ---
 # <a name="cookie-compliance"></a>Cookie のコンプライアンス
 
@@ -50,6 +50,57 @@ Microsoft が Cookie のコンプライアンスに使用する基本原則の�
 | x-ms-cpim-slice                             | 適切なプロダクション認証サーバー インスタンスに要求を転送するために使用されます。 |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | SSO セッションを維持するために使用されます。                        |
 | x-ms-cpim-trans                             | 現在のトランザクションなど、トランザクションを追跡するために使用されます (企業からコンシューマー (B2C) サイトに対して認証されている開いたタブの数)。 |
+| \_msdyn365___muid_                            | 環境で実験が有効になっている場合に使用され、実験のための userId として利用されます。 |
+| \_msdyn365___exp_                             | 環境で実験が有効になっている場合に使用され、パフォーマンスの負荷分散を測定するために使用されます。         |
+
+
+
+サイト ユーザーがサイト内のソーシャル メディア リンクを選択した場合、次の表の Cookie もユーザーのブラウザーで追跡されます。
+
+
+| ドメイン                      | Cookie               | 説明                                                  | 配賦元                                          |
+| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| .linkedin.com                | UserMatchHistory         | LinkedIn 広告 ID の同期                                      | LinkedIn フィードと分析情報タグ                                |
+| .linkedin.com               | li_sugr                  | ブラウザーの識別子                                           | 指定した国に IP アドレスがない場合の LinkedIn 分析情報タグ |
+| .linkedin.com               | BizographicsOptOut       | サード パーティの追跡のオプトアウト ステータスを決定します。              | LinkedIn ゲスト コントロールと業界のオプトアウト ページ           |
+| .linkedin.com               | \_guid                    | Google 広告のブラウザーの識別子。                            | LinkedIn フィード                                                |
+| .linkedin.com               | li_oatml                 | 変換の追跡、リターゲット、および分析のメンバーの間接識別子。 | LinkedIn 広告と分析情報タグ                                |
+| 各種ファースト パーティのドメイン | li_fat_id                | 変換の追跡、リターゲット、および分析のメンバーの間接識別子。 | LinkedIn 広告と分析情報タグ                                |
+| .adsymptotic.com            | U                        | ブラウザーの識別子                                           | 指定した国に IP アドレスがない場合の LinkedIn 分析情報タグ |
+| .linkedin.com                | bcookie                  | ブラウザ ID Cookie                                            | LinkedIn への要求                                         |
+| .linkedin.com                | bscookie                 | セキュア ブラウザ Cookie                                        | LinkedIn への要求                                         |
+| .linkedin.com               | lang                     | 既定のロケールと言語を設定します。                                 | LinkedIn への要求                                         |
+| .linkedin.com                | lidc                     | ルート指定に使用されます。                                             | LinkedIn への要求                                         |
+| .linkedin.com               | aam_uuid                 | Adobe オーディエンス マネージャー Cookie                                                     | ID 同期の設定                                              |
+| .linkedin.com               | \_ga                      | Google アナリティクス Cookie                                            | Google アナリティクス                                             |
+| .linkedin.com               | \_gat                     | Google アナリティクス Cookie                                             | Google アナリティクス                                             |
+| .linkedin.com               | liap                     | Google アナリティクス Cookie                                             | Google アナリティクス                                             |
+| .linkedin.com               | lissc                    |                                                              |                                                              |
+| .facebook.com               | c_user                   | Cookie には、現在サインインしているユーザーのユーザー ID が含まれます。  |   Facebook                                                           |
+| .facebook.com               | datr                     | サインインしたユーザーとは別に、Facebook への接続に使用された Web ブラウザーを識別するために使用されます。 | Facebook                                                             |
+| .facebook.com               | wd                       | ブラウザーのウィンドウ分析コードを保存し、Facebook がページのレンダリングを最適化するために使用されます。 | Facebook                                                             |
+| .facebook.com               | xs                       | セッション番号を表す 2 桁の番号。 値の 2 番目の部分は、セッション シークレットです。 |  Facebook                                                            |
+| .facebook.com               | fr                       | 固有のブラウザーおよびユーザー ID を含み、ターゲット広告に使用されます。 |  Facebook                                                            |
+| .facebook.com               | sb                       | Facebook の友達提案を改善するために使用されます。                                |  Facebook                                                            |
+| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
+| .twitter.com                | guest_id                 |                                                              |  Twitter                                                            |
+| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
+| .twitter.com                | personalization_id       | Cookie には、現在サインインしているユーザーのユーザー ID が含まれます。  |  Twitter                                                             |
+| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
+| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
+| .pinterest.com              | \_auth                    | Cookie には、現在サインインしているユーザーのユーザー ID が含まれます。  |   Pinterest                                                           |
+| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
+| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_referrer      | Cookie には、ユーザーが Pinterest ボタンを選択した場合のページが含まれます。      |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_sess          | Cookie には、ユーザーが Pinterest ボタンを選択した場合のページが含まれます。      |  Pinterest                                                            |
+| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
+| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
+| .pinterest.com              | cm_sub                   | ユーザー ID と、Cookie が作成されたタイムスタンプが含まれます。 |  Pinterest                                                            |
+| .pinterest.com              | csrftoken                | Cookie には、ユーザーが Pinterest ボタンを選択した場合のページが含まれます。      | Pinterest                                                             |
+| .pinterest.com              | sessionFunnelEventLogged | Cookie には、ユーザーが Pinterest ボタンを選択した場合のページが含まれます。      | Pinterest                                                             |
+| .pinterest.com              | ローカル ストレージ            |                                                              |  Pinterest                                                            |
+| .pinterest.com              | サービス作業員          |                                                              |  Pinterest                                                            |
+
 
 ## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>電子商取引サイトにおけるサイト利用者向け cookie の同意 
 

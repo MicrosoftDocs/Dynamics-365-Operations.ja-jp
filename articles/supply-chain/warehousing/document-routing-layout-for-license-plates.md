@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838277"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907990"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>ライセンス プレート ラベルのドキュメント ルーティング レイアウト
 
@@ -73,7 +73,7 @@ $FieldName:FormatString$
 - (プレースホルダーとしてゼロを使用して) 常に 4 桁を表示するには、`$Qty:0000$` を使用します。 たとえば、数量が 10 の場合、ラベルは "0010" と表示されます。
 - 常に小数点以下 2 桁を表示するには、`$Qty:0.00$` を使用します。 たとえば、数量が 10 の場合、ラベルは "10.00" と表示されます。
 
-使用可能な数値形式文字列の完全な一覧については、[カスタム数値形式文字列](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings) を参照してください。
+使用可能な数値形式文字列の完全な一覧については、[カスタム数値形式文字列](/dotnet/standard/base-types/custom-numeric-format-strings) を参照してください。
 
 ## <a name="custom-string-formats"></a>カスタム文字列形式
 
@@ -95,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 この例では、日付 2020 年 4 月 30 日は "30-04-2020" として印刷されます。
 
-使用可能な日付/時刻形式の完全な一覧については、[カスタム日付と時刻の形式文字列](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) を参照してください。
+使用可能な日付/時刻形式の完全な一覧については、[カスタム日付と時刻の形式文字列](/dotnet/standard/base-types/custom-date-and-time-format-strings) を参照してください。
 
 ## <a name="print-individual-lines-from-multiline-data"></a>複数行データから個々の行を印刷する
 

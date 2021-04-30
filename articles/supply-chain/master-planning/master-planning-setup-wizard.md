@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 770800e63de73c60e0e811734d4273ff2392620f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c55c36358b8acf93ab25a358d4d7cd6a4212c2b2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829693"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909430"
 ---
 # <a name="master-planning-setup-wizard"></a>マスター プランのセットアップ ウィザード
 
@@ -45,13 +45,13 @@ ms.locfileid: "5829693"
 
 計算されるスレッド数が使用可能なスレッド数の 75% を超える場合、各顧客が使用可能なスレッド数の 75% に制限されます。 (使用可能なスレッド数は、各顧客ごとに決定されます。)
 
-詳細については、[スレッド数](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) を参照してください。
+詳細については、[スレッド数](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) を参照してください。
 
 ### <a name="bundle-size"></a>バンドル サイズ
 
 バンドル サイズは **1** に設定されます。 この値は、マスター プランのパフォーマンスを改善するのに役立つため、多くの場合、最適な値です。
 
-詳細については、[ヘルパー タスク バンドル内のタスク数](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle) を参照してください。
+詳細については、[ヘルパー タスク バンドル内のタスク数](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle) を参照してください。
 
 ### <a name="firming-bundle-size"></a>バンドル サイズを確定する
 
@@ -64,7 +64,7 @@ ms.locfileid: "5829693"
 
 キャッシュ サイズは、**最大** に設定されます。 この値は、マスター プランのパフォーマンスを改善するのに役立つため、多くの場合、最適な値です。
 
-詳細については、[ジョブ バンドル内のジョブへの時間割り当て](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle) を参照してください。
+詳細については、[ジョブ バンドル内のジョブへの時間割り当て](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle) を参照してください。
 
 ### <a name="manufacturing-setup"></a>製造の設定
 
@@ -88,7 +88,7 @@ ms.locfileid: "5829693"
 - **はい、このマスター プランで定義されています** – **予測計画 (タイム フェンス)** オプションは **はい** に設定されます。 入力した日数が使用され、補充グループで設定された値は上書きされます。
 - **はい、補充グループで定義されています** – **予測計画 (タイム フェンス)** オプションは **いいえ** に設定されます。
 
-詳細については、[ジョブのスケジューリング](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
+詳細については、[ジョブのスケジューリング](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
 
 ## <a name="scheduling-options"></a>スケジューリング オプション
 
@@ -99,7 +99,7 @@ ms.locfileid: "5829693"
 - **はい** – ジョブのスケジューリングが使用されます。
 - **いいえ** – 工程のスケジューリングが使用されます。
 
-詳細については、[工程のスケジューリング](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) および [ジョブのスケジューリング](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
+詳細については、[工程のスケジューリング](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) および [ジョブのスケジューリング](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
 
 ## <a name="updates-of-demand-and-supply"></a>需要と供給の更新
 
@@ -125,9 +125,9 @@ ms.locfileid: "5829693"
 
 このセクションでは、各業務のニーズにしたがって設定がどのように変化するかを示すために、2 つの架空の会社の設定について説明します。
 
-### <a name="example-1-contoso-manufacturer"></a>例 1: コントソ マニュファクチャー
+### <a name="example-1-contoso-manufacturer"></a>例 1: Contoso マニュファクチャー
 
-コントソ マニュファクチャーはスピーカーを生産する製造会社です。 様々な仕入先から最終的にスピーカーに使用される様々な原材料やコンポーネントを購買します。 供給と製造の特性を次に示します。
+Contoso マニュファクチャーはスピーカーを生産する製造会社です。 様々な仕入先から最終的にスピーカーに使用される様々な原材料やコンポーネントを購買します。 供給と製造の特性を次に示します。
 
 - 会社が製造する最終品目には、部品表 (BOM) 構造があります。
 - すべての最終品目とコンポーネントは、マスター プランによって計画されます。 手動計画は行われていません。
@@ -135,14 +135,14 @@ ms.locfileid: "5829693"
 - 製造工場が最終品目を生産します。 コンポーネントを処理するために使用されるフライス加工および穴あけ機械の数は定義されています。 様々なコンポーネントは、これらの機械によって処理される必要があります。
 - 多くの仕入先があります。 品目ごとの平均リード タイムは 1 週間です。 同じ仕入先の品目グループのリード タイムは 7 週間です。
 
-ウィザードでは、次の値がコントソ マニュファクチャーに入力されます。
+ウィザードでは、次の値が Contoso マニュファクチャーに入力されます。
 
 - **補充:**
 
     - **質問:** 「計画期間の日数を指定しますか?」
     - **回答:** 「はい、補充グループで定義されています。」
 
-    品目のリード タイムはまったく異なるため、コントソはすべての品目を将来の同じ期間に対して計画する必要はありません。 品目の補充グループが作成されます。 リード タイムが類似している品目は、同じ補充グループに割り当てられます。 各補充グループの計画期間 (つまり、補充タイム フェンス) は、およそリード タイムに 1 週間のマージンを加えた長さです。 次に、マスター プランは、リード タイムに基づいて品目が事前に計画されていることを確認します。
+    品目のリード タイムはまったく異なるため、Contoso はすべての品目を将来の同じ期間に対して計画する必要はありません。 品目の補充グループが作成されます。 リード タイムが類似している品目は、同じ補充グループに割り当てられます。 各補充グループの計画期間 (つまり、補充タイム フェンス) は、およそリード タイムに 1 週間のマージンを加えた長さです。 次に、マスター プランは、リード タイムに基づいて品目が事前に計画されていることを確認します。
 
     そのため、この例に対して 2 つの補充グループが作成されます。 1 つの補充グループには 2 週間の補充タイム フェンスがあり、もう 1 つは 8 週間の補充タイム フェンスがあります。
 
@@ -153,7 +153,7 @@ ms.locfileid: "5829693"
     - **質問:** 「個別のジョブに分割された工程をスケジュールする必要がありますか?」
     - **回答:** 「はい。」
 
-    コントソ マニュファクチャーは、作業現場で実行される個別のジョブの計画およびスケジュールをする必要があります。 したがって、ジョブのスケジューリングを使用します。
+    Contoso マニュファクチャーは、作業現場で実行される個別のジョブの計画およびスケジュールをする必要があります。 したがって、ジョブのスケジューリングを使用します。
 
 - **能力:**
 
@@ -176,29 +176,29 @@ ms.locfileid: "5829693"
 
     生産に使用するすべての品目を計画する必要があります。 品目のリード タイムはまったく異なるため、補充グループを使用する場合は、マスター プランのパフォーマンスが向上します。 再度、1 週間のマージンを入力し、補充と同じ時間で展開を行うことができます。
 
-### <a name="example-2-contoso-retailer"></a>例 2: コントソ リテーラー
+### <a name="example-2-contoso-retailer"></a>例 2: Contoso リテーラー
 
-コントソ リテーラーは、ファッション産業の流通会社です。 売上予測に基づいて発注書を発行する必要がある場合、マスター プランを使用して計算します。 次にその特性の一部を説明します。
+Contoso リテーラーは、ファッション産業の流通会社です。 売上予測に基づいて発注書を発行する必要がある場合、マスター プランを使用して計算します。 次にその特性の一部を説明します。
 
-- コントソ リテーラーは、需要予測を使用して売上を予測します。 発注書は予測に従って計画されます。
+- Contoso リテーラーは、需要予測を使用して売上を予測します。 発注書は予測に従って計画されます。
 - 店舗では、補充に要求を使用します。
 - 主要倉庫から各店舗までのリード タイムは、すべての商品について、約 2 週間です。
 
-ウィザードでは、次の値がコントソ リテーラーに入力されます。
+ウィザードでは、次の値が Contoso リテーラーに入力されます。
 
 - **需要の予測:**
 
     - **質問:** 「予測された需要を満たすための計画オーダーが提案されるように、マスター プランで予測計画を使用しますか ?」
     - **回答:** 「はい、このマスター プランで定義されています。」
 
-    コントソは売上を予測する需要予測が含んでいます。 そのため、マスター プランは、予測を満たすための計画オーダーを推奨する必要があります。
+    Contoso は売上を予測する需要予測が含んでいます。 そのため、マスター プランは、予測を満たすための計画オーダーを推奨する必要があります。
 
 - **確定:**
 
     - **質問:** 「生産や発注書などについて、マスター プランにより計画オーダーを発注書ドキュメントに自動的に確定させますか?」
     - **回答:** 「はい、このマスター プランで定義されています。」 **1 日** が入力されます。
 
-    コントソ リテーラーは計画発注書から発注書を直接作成するため、計画発注書が自動的に確定されるなら便利です。 会社はマスター プランを毎日実行しているので、1 日の確定タイム フェンスにより、翌日に必要なすべての注文が自動的に確定されます。
+    Contoso リテーラーは計画発注書から発注書を直接作成するため、計画発注書が自動的に確定されるなら便利です。 会社はマスター プランを毎日実行しているので、1 日の確定タイム フェンスにより、翌日に必要なすべての注文が自動的に確定されます。
 
 - **承認された要求:**
 

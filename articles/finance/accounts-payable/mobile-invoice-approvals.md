@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828037"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897699"
 ---
 # <a name="mobile-invoice-approvals"></a>モバイルによる請求書承認
 
@@ -32,7 +32,7 @@ ms.locfileid: "5828037"
 
 | 前提条件                                                                                            | 説明                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| モバイル ハンドブックの先行読取                                                                                |[モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| モバイル ハンドブックの先行読取                                                                                |[モバイル プラットフォーム](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | バージョン 1611 およびプラットフォーム更新プログラム 3 (2016 年 11 月) がある環境                   |
 | 更新プログラム KB 3204341 をインストールします。                                                                              | タスク レコーダーは誤って 2 つのドロップダウン ダイアログの Close コマンドを記録できます。これはプラットフォーム更新プログラム 3 (2016 年 11 月の更新プログラム) に含まれています。 |
 | 更新プログラム KB 3207800 をインストールします。                                                                              | この修正プログラムは、モバイル クライアント上で表示される添付ファイルを有効にします。これはプラットフォーム更新プログラム 3 (2016 年 11 月の更新プログラム) に含まれています。           |
@@ -213,7 +213,7 @@ ms.locfileid: "5828037"
 
 11. 前の 2 つの手順のすべてのフィールドが追加されたら、**完了** をクリックします。 ページは次の図のようにする必要があります。
     
-    [![フィールドの後ページが表示される](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![追加されたフィールドを示す図](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. **完了** をクリックして、編集モードを終了します。
 

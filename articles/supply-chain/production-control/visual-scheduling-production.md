@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce2c20874b0dc901ff8684da2881c7f16ce622c9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 143aa5c3ba4d6064cde63f8e7ebeac0977b1325c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836545"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908709"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>ジョブ スケジュールのガント チャート
 
@@ -155,7 +155,7 @@ ms.locfileid: "5836545"
 ## <a name="additional-resources"></a>その他のリソース  
 [Visual scheduling with Gantt chart for production and batch orders (ビデオ)](https://youtu.be/BtbuShkGj4I)
 
-[生産 (デモ スクリプト) の視覚的スケジューリング](https://docs.microsoft.com/dynamics/s-e/)
+[生産 (デモ スクリプト) の視覚的スケジューリング](/dynamics/s-e/)
 
 
 

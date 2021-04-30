@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835633"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910018"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
 このトピックでは、発注書に対する入庫積荷の倉庫処理プロセスについて説明します。
 
-入庫積荷ごとに、システムには既に関連する販売注文が含まれている必要があり、関連する積荷の仕様や輸送計画、またはその両方が含まれている場合もあります。 入庫積荷の作成および管理方法の詳細については、[業務プロセス: 入庫積荷の配送計画](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads) を参照してください。
+入庫積荷ごとに、システムには既に関連する販売注文が含まれている必要があり、関連する積荷の仕様や輸送計画、またはその両方が含まれている場合もあります。 入庫積荷の作成および管理方法の詳細については、[業務プロセス: 入庫積荷の配送計画](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads) を参照してください。
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>概要: 入庫積荷の作成、登録、および受信方法
 
@@ -38,11 +38,11 @@ ms.locfileid: "5835633"
 
 1. **着荷とその内容を計画するために、入庫積荷レコードが作成されます。**
 
-    入庫積荷レコードは、1 つ以上の発注書の仕入先出荷を表します。 積荷は、1 つの物理的な輸送単位 (トラックなど) として倉庫に到着すると予想されます。 入庫積荷レコードは計画目的で使用され、物流コーディネーターは仕入先から積荷の進捗状況を追跡できます。 また、注文明細行の数量を登録したり、到着作業や棚入作業など倉庫業務の進捗を管理するためにも使用されます。 積荷は、自動または手動で作成でき、仕入先からの発注書または事前出荷通知 (ASN) のいずれかに基づいて作成できます。 詳細については、[入庫積荷を作成または変更する](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load) を参照してください。
+    入庫積荷レコードは、1 つ以上の発注書の仕入先出荷を表します。 積荷は、1 つの物理的な輸送単位 (トラックなど) として倉庫に到着すると予想されます。 入庫積荷レコードは計画目的で使用され、物流コーディネーターは仕入先から積荷の進捗状況を追跡できます。 また、注文明細行の数量を登録したり、到着作業や棚入作業など倉庫業務の進捗を管理するためにも使用されます。 積荷は、自動または手動で作成でき、仕入先からの発注書または事前出荷通知 (ASN) のいずれかに基づいて作成できます。 詳細については、[入庫積荷を作成または変更する](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load) を参照してください。
 
 1. **仕入先は、積荷の発送を確認します。**
 
-    仕入先が積荷を発送すると、受入倉庫の物流コーディネーターは、積荷の出荷を確認します。 受入会社が **輸送管理** モジュールを使用している場合、インバウンド出荷の確認により、入庫積荷に関連付けられたその他の積荷管理プロセスが開始されます。 詳細については、[出荷用の積荷を確認する](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping) を参照してください。
+    仕入先が積荷を発送すると、受入倉庫の物流コーディネーターは、積荷の出荷を確認します。 受入会社が **輸送管理** モジュールを使用している場合、インバウンド出荷の確認により、入庫積荷に関連付けられたその他の積荷管理プロセスが開始されます。 詳細については、[出荷用の積荷を確認する](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping) を参照してください。
 
 1. **積荷が倉庫に到着し、作業者が数量を登録します。**
 

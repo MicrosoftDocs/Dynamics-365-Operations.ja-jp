@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9bb3c178a698bdcd46e7c596247360ba9233b398
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816487"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908883"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>需要予測の履歴データのインポート
 
@@ -41,7 +41,7 @@ ms.locfileid: "5816487"
 
 ## <a name="example"></a>例
 
-次のファイルを例として使用できます。 [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/) をダウンロードします。 このファイルには、品目 D0001 の需要履歴データが含まれています。 また、次の必須フィールドのみが含まれています: サイト、数量、および需要の日付。
+次のファイルを例として使用できます。 [HistoricalDemandData](/dynamics/s-e/) をダウンロードします。 このファイルには、品目 D0001 の需要履歴データが含まれています。 また、次の必須フィールドのみが含まれています: サイト、数量、および需要の日付。
 
 1. 履歴需要データをインポートする会社を選択します。
 2. **データ管理** ワークスペースを開きます。

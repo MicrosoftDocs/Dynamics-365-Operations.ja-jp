@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 01f9ef1bcf520ba5dd44c3a1e79cf0ea6c777eef
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a062235bfce6ccb8ad62c8c299418e933d3d42f9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818327"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894701"
 ---
 # <a name="registration-ids"></a>登録 ID
 
@@ -55,7 +55,7 @@ ms.locfileid: "5818327"
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>グローバル アドレス帳レコードの登録 ID を入力します。
 
-グローバル アドレス帳 (GAB) には、顧客、仕入先、連絡先、取引関係、法人の連結された住所情報が含まれます。 詳細については、「[グローバル アドレス帳の概要](../../fin-and-ops/organization-administration/overview-global-address-book.md)」を参照してください。 グローバル アドレス帳に格納されている関係者レコードは、1 つ以上の住所レコードを格納できます。 これらの住所は、請求または配送など、さまざまな目的で使用されます。 顧客、仕入先、作業者、法人の住所情報に対する登録 ID を設定できます。 登録 ID を入力する関係者 (法人、仕入先、顧客、作業者) レコードを検索し、関係者、法人、仕入先、顧客、作業者に関連するフォームでの **登録 ID** をクリックして、**アドレスの管理** ページを開きます。 **税登録** タブで、**追加** をクリックし、登録 ID に関する次の情報を入力します。
+グローバル アドレス帳 (GAB) には、顧客、仕入先、連絡先、取引関係、法人の連結された住所情報が含まれます。 詳細については、「[グローバル アドレス帳の概要](../../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md)」を参照してください。 グローバル アドレス帳に格納されている関係者レコードは、1 つ以上の住所レコードを格納できます。 これらの住所は、請求または配送など、さまざまな目的で使用されます。 顧客、仕入先、作業者、法人の住所情報に対する登録 ID を設定できます。 登録 ID を入力する関係者 (法人、仕入先、顧客、作業者) レコードを検索し、関係者、法人、仕入先、顧客、作業者に関連するフォームでの **登録 ID** をクリックして、**アドレスの管理** ページを開きます。 **税登録** タブで、**追加** をクリックし、登録 ID に関する次の情報を入力します。
 
 
 |フィールド                |説明                                                |

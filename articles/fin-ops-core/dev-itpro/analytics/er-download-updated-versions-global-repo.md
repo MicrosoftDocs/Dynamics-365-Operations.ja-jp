@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1e021105c19273db5ded7cb0902eca1d502ced8e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753363"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893959"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>ER コンフィギュレーションの更新バージョンのインポート
 
@@ -28,7 +28,7 @@ ms.locfileid: "5753363"
 
 電子レポート (ER) [リポジトリ](general-electronic-reporting.md#Repository) は、[ER コンフィギュレーション](general-electronic-reporting.md#Configuration) を共有するために使用されます。 異なるリポジトリから Microsoft Dynamics 365 Finance のインスタンスに ER コンフィギュレーションを[インポート](download-electronic-reporting-configuration-lcs.md) できます。 ER コンフィギュレーションをインポートする場合、[コンフィギュレーション プロバイダー](general-electronic-reporting.md#Provider) は、新しい[バージョン](general-electronic-reporting.md#component-versioning) のリポジトリを公開して共有できるようになります。
 
-このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから ER コンフィギュレーションの更新済バージョンをインポートする方法について説明します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations - Regulatory services、コンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) を参照してください。
+このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから ER コンフィギュレーションの更新済バージョンをインポートする方法について説明します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations - Regulatory services、コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) を参照してください。
 
 ## <a name="review-the-available-updated-versions"></a>利用可能な更新済バージョンを確認する
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 497061500660e41c8f82c73e5dd6c085810c9209
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744054"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910452"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドとオンプレミスの機能比較
 
@@ -84,7 +84,7 @@ ms.locfileid: "5744054"
 
 | **エリア**                | **機能**             | **クラウド** | **オンプレミス** |
 |-------------------------|-------------------|-----------|-----------------|
-| 資産管理                     |                                                                                           | あり       | なし              |
+| 資産管理                     |                                                                                           | あり       | あり             |
 | コンプライアンスおよび証明書        |                                                                                           | あり       | あり             |
 |                                      | SOC 1 タイプ 1 証明書                                                                | 有       | 無              |
 | 原価計算                      |                                                                                           | 有       | 有             |
@@ -147,7 +147,7 @@ ms.locfileid: "5744054"
 
 ## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-オンプレミス展開で利用可能な機能の一覧を表示するには、[オンプレミス展開で利用可能なコマース機能](../../../retail/retail-onprem.md) を参照してください。
+オンプレミス展開で利用可能な機能の一覧を表示するには、[オンプレミス展開で利用可能なコマース機能](../../../commerce/retail-onprem.md) を参照してください。
 
 ## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 

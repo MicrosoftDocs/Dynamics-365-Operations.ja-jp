@@ -12,12 +12,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2859110819957f0885543dedbe389c9cd514fbaf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 042f1c8678b2c524bcb843a12c94878361b7191f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834362"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893035"
 ---
 # <a name="japan-overview"></a>日本の概要
 
@@ -122,8 +122,8 @@ ms.locfileid: "5834362"
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [電子申告の概要](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics のローカライズのポータル: オーストラリアのレポート (CustomerSource アカウントが必要です)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/japan.html)
 
 
