@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 69304cbffafa4c20dbbbb31d5c19920f669761b9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 95ffe90795b9781408607257f3f63bf68c489b56
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800168"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891820"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Dynamics 365 Human Resources の新機能、または変更された機能 (2020 年 8 月 20 日)
 
@@ -65,15 +65,15 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 
 人事管理のパーソナル化機能を使用することにより、フィールドを必須にすることができます。 この機能には **保存されたビュー** が必要です。 保存されたビューに関する詳細については、次を参照してください。
 
-- [保存ビュー - Dynamics 365 2020 リリース ウェーブ 2 プランの一般提供](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) 
-- [保存されたビューを十分に活用するフォームの作成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [保存ビュー - Dynamics 365 2020 リリース ウェーブ 2 プランの一般提供](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) 
+- [保存されたビューを十分に活用するフォームの作成](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Teams の Human Resources アプリケーション
 
 従業員は、Microsoft Teams 内で休暇の表示および申請ができます。 ボットと対話して、休暇申請を作成できます。 詳細については、以下を参照してください。
 
-- Dynamics 365 2020 リリース ウェーブ 1 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams)
-- [Teams の Human Resources アプリ](https://go.microsoft.com/fwlink/?linkid=2127841)
+- Dynamics 365 2020 リリース ウェーブ 1 プランでの [Microsoft Teams の従業員の休暇および欠勤体験](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams)
+- [Teams の Human Resources アプリ](./hr-admin-teams-leave-app.md)
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -117,7 +117,7 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
 

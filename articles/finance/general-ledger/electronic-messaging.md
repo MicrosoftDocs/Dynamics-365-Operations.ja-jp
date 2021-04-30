@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dd49edeb92e6a23723b1b6b6ea7800b69a81bd0f
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823791"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897603"
 ---
 # <a name="electronic-messaging"></a>電子メッセージ
 
@@ -29,7 +29,7 @@ ms.locfileid: "5823791"
 
 Finance の電子メッセージ機能は、Finance と、政府および立法当局が提供する公式情報の報告、送信および受信のために提供するシステムの間の様々な電子相互運用をサポートします。
 
-電子メール機能は、**電子申告** (ER) モジュールと統合されています。 そのため、電子メッセージの ER 形式を設定することができます。 詳細については、[電子申告 (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)を参照してください。
+電子メール機能は、**電子申告** (ER) モジュールと統合されています。 そのため、電子メッセージの ER 形式を設定することができます。 詳細については、[電子申告 (ER)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)を参照してください。
 
 電子メッセージは、次のエンティティに基づいています。
 
@@ -56,7 +56,7 @@ Finance の電子メッセージ機能は、Finance と、政府および立法�
 
 ## <a name="set-up-electronic-messaging"></a>電子メッセージの設定
 
-電子メッセージは、さまざまなドキュメント タイプに対してさまざまな電子レポート処理を維持するのに役立ちます。 いくつかの複雑なシナリオでは、電子メッセージは、多くのメッセージの状態、メッセージ項目の状態、アクション、追加フィールド、および実行可能なクラスの組み合わせを持つように設定されています。 このようなシナリオでは、データ エンティティのパッケージをインポートすることができます。 これらのデータ エンティティのパッケージを使用する場合は、データ管理ツールを使用して法人にそれらをインポートする必要があります。 データ管理ツールの使用方法の詳細については、[データ管理](../../dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。
+電子メッセージは、さまざまなドキュメント タイプに対してさまざまな電子レポート処理を維持するのに役立ちます。 いくつかの複雑なシナリオでは、電子メッセージは、多くのメッセージの状態、メッセージ項目の状態、アクション、追加フィールド、および実行可能なクラスの組み合わせを持つように設定されています。 このようなシナリオでは、データ エンティティのパッケージをインポートすることができます。 これらのデータ エンティティのパッケージを使用する場合は、データ管理ツールを使用して法人にそれらをインポートする必要があります。 データ管理ツールの使用方法の詳細については、[データ管理](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。
 
 データ エンティティのパッケージをインポートしない場合は、電子メッセージ機能を手動で設定することができます。 この場合は、次の要素を設定する必要があります。
 

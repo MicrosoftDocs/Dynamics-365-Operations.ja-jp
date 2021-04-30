@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818628"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897915"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>初期の顧客支払予測モデルを評価する (プレビュー)
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** 
 
 開いたページには、次の情報が表示されます:
 
-- **パフォーマンス** セクションでは、モデル パフォーマンスの等級は、モデルの品質に関する分析視点を提供します。 この等級の詳細については、AI Builder ドキュメントの [予測モデルのパフォーマンス](https://docs.microsoft.com/ai-builder/prediction-performance) を参照してください。
+- **パフォーマンス** セクションでは、モデル パフォーマンスの等級は、モデルの品質に関する分析視点を提供します。 この等級の詳細については、AI Builder ドキュメントの [予測モデルのパフォーマンス](/ai-builder/prediction-performance) を参照してください。
 - **最も影響力のあるデータ** セクションでは、モデルに対して異なる入力タイプのデータの重要性を示します。 このリストと対応する割合を評価して、情報がビジネスと市場に関する知識と一致しているかどうかを判断できます。
 
     [![予測モデルのパフォーマンスと最も影響力のあるデータセクション](./media/models.png)](./media/models.png)

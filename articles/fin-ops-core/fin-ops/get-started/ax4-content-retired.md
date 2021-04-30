@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2018-04-10
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 7f6098fd7231921fe8702f7928dc0b35d32b5647
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0758997163e0bba6b81193ffade23e16a375a55d
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744078"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909890"
 ---
 # <a name="ax-40-content-that-has-been-retired"></a>破棄された AX 4.0 コンテンツ
 
@@ -28,7 +28,7 @@ ms.locfileid: "5744078"
 Microsoft Dynamics AX 4.0 コンテンツは TechNet および MSDN から破棄されました。 詳細については、以下を参照してください。
 
 - [Microsoft ライフサイクル ポリシー](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
-- [Dynamics AX 2012 にサポートされるアップグレード パス](https://technet.microsoft.com/library/dd362093.aspx)
+- [Dynamics AX 2012 にサポートされるアップグレード パス](/dynamicsax-2012/appuser-itpro/supported-upgrade-paths)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

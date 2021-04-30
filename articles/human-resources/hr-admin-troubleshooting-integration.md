@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d2d590c95aa4069a1bed306910486c47200cdfd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5befac6c72153332319eefc1aaeab30c33f4c69
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794856"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892254"
 ---
 # <a name="integration-with-finance-faq"></a>Finance FAQ との統合
 
@@ -50,7 +50,7 @@ No. Human Resources アプリケーションのユーザーを編集すると、
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>テンプレートを使用せずに新しいマップを作成できますか。
 
-テンプレートは、開始点です。 独自のテンプレートを作成できますが、テンプレートは統合プロジェクトを作成する際に常に必要です。 データ統合 (DI)、テンプレート、およびプロジェクトの詳細については、「[Microsoft Dataverse へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator)」を参照してください。
+テンプレートは、開始点です。 独自のテンプレートを作成できますが、テンプレートは統合プロジェクトを作成する際に常に必要です。 データ統合 (DI)、テンプレート、およびプロジェクトの詳細については、「[Microsoft Dataverse へデータを統合](/powerapps/administrator/data-integrator)」を参照してください。
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>人事管理および Finance 間で転送する財務分析コードをマップできますか?
 
@@ -145,7 +145,7 @@ Finance への統合には 2 つのステップがあります。 まず、人�
 
 Dataverse で予定どおりにデータが表示されない場合は、エンティティが統合でサポートされていることを確認します。 Dataverse に追加データを含めるには、Microsoft 側で変更が必要です。
 
-エンティティがサポートされデータが Dataverse で使用できる場合は、データ統合でマッピングが正しいことを確認します。 インテグレーター マッピングが正常に見える場合、データ管理ジョブが正常に実行されたことを確認します。 バッチ ジョブの実行中にエラーが発生する可能性があります。 データ管理の詳細については、「[データ管理](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)」を参照してください。
+エンティティがサポートされデータが Dataverse で使用できる場合は、データ統合でマッピングが正しいことを確認します。 インテグレーター マッピングが正常に見える場合、データ管理ジョブが正常に実行されたことを確認します。 バッチ ジョブの実行中にエラーが発生する可能性があります。 データ管理の詳細については、「[データ管理](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)」を参照してください。
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Finance にインポートした後、従業員の住所が正しくありません。 何をする必要がありますか。
 
@@ -172,15 +172,15 @@ Dataverse で予定どおりにデータが表示されない場合は、エン�
 
 - データ統合 (DI): 
 
-  - [データを Microsoft Dataverse に統合](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [データを Microsoft Dataverse に統合](/powerapps/administrator/data-integrator)
 
-  - [データ統合エラーの管理とトラブルシューティング](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [データ統合エラーの管理とトラブルシューティング](/powerapps/administrator/data-integrator-error-management)
 
-  - [Power Apps、Microsoft Power Automate、および Dataverse でシステムにより生成されたログの DSR 要求への応答](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Power Apps、Microsoft Power Automate、および Dataverse でシステムにより生成されたログの DSR 要求への応答](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - データ管理:
 
-  - [データ管理](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [データ管理](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

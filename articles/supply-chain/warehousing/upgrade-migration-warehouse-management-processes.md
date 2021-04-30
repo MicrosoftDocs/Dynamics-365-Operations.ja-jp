@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8969345b8499bacfeecb0a1535174ce988eabc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 31bfc203e9db28acee4b5b52b36f64d90dc4f714
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837420"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909258"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>倉庫管理を Microsoft Dynamics AX 2012 から Supply Chain Management にアップグレードする 
 
@@ -66,7 +66,7 @@ Supply Chain Management では、品目の追跡が倉庫管理プロセスに�
 1.  少なくとも 1 つの新しい場所プロファイルを作成します。
 2.  **倉庫管理**&gt;**設定**&gt;**倉庫管理プロセスの有効化**&gt;**倉庫設定の有効化** をクリックします。
 3.  **倉庫設定の有効化** ページで、有効にする必要がある倉庫を追加します。 ページ上に直接、または Microsoft Office 統合のどちらかを使用して、このステップを完了できます。
-4.  すべての場所に場所プロファイルを割り当てます。 この手順は、ページから直接 Microsoft Office 統合を使用して簡単に実行することができます。 データのエクスポートとインポートまたは、[データ管理](../../dev-itpro/data-entities/data-entities.md) でデータ エンティティプロセスのいずれかを行うことができます。
+4.  すべての場所に場所プロファイルを割り当てます。 この手順は、ページから直接 Microsoft Office 統合を使用して簡単に実行することができます。 データのエクスポートとインポートまたは、[データ管理](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) でデータ エンティティプロセスのいずれかを行うことができます。
 5.  変更の検証。 検証プロセスの一部として、データの整合性のさまざまな検証が実行されます。 より大きなアップグレード プロセスの一部として、発生した問題をソースの実装上で調整する必要があるかもしれません。 この場合は、追加のデータ アップグレードが必要になります。
 6.  変更の処理。
 
@@ -77,7 +77,7 @@ Supply Chain Management では、品目の追跡が倉庫管理プロセスに�
 3.  **引当階層** ページで、品目の保管および追跡用分析コード グループに沿って、新しい引当階層を定義します。
 4.  少なくとも品目の在庫単位に使用されている同じ単位が含まれる、1 つまたはそれ以上の単位順序グループを作成します。
 5.  **倉庫管理**&gt;、**設定**&gt;、**倉庫管理プロセスの有効化**&gt;、**品目の保管分析コード グループの変更** の順にクリックします。
-6.  **品目の保管分析コード グループの変更** ページで、品目番号、保管分析コード グループ、および単位順序グループを追加します。 ページ上に直接、Microsoft Office 統合の使用、または [データ管理](../../dev-itpro/data-entities/data-entities.md) にあるデータ エンティティ プロセスを使用してこのステップを完了できます。
+6.  **品目の保管分析コード グループの変更** ページで、品目番号、保管分析コード グループ、および単位順序グループを追加します。 ページ上に直接、Microsoft Office 統合の使用、または [データ管理](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) にあるデータ エンティティ プロセスを使用してこのステップを完了できます。
 7.  変更の検証。 検証プロセスの一部として、データの整合性のさまざまな検証が実行されます。 より大きなアップグレード プロセスの一部として、発生した問題をソースの実装上で調整する必要があるかもしれません。 この場合は、追加のデータ アップグレードが必要になります。
 8.  変更の処理。 すべての在庫分析コードの更新にはしばらく時間がかかる場合があります。 バッチ ジョブタスクを使用して、進捗状況を監視することができます。
 

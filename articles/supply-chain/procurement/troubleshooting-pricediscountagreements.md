@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 12bc3cbccb1577c278489f640299510b3ced17e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ccc1d52b83f9319af1c6336c1876c795c70028a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811089"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908522"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>価格、割引、契約、リベートのトラブルシューティング
 
@@ -37,7 +37,7 @@ ms.locfileid: "5811089"
 
 このメッセージは、日付またはその他のパラメーターが変更されるたびに発生します。 メッセージの目的は、これらの変更によって発生する可能性がある価格の変更を確実に把握することです。
 
-メッセージは、売買契約評価 (TAE) プロンプトです。 詳細な詳細については、[売買契約評価ポリシー](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) を参照してください。
+メッセージは、売買契約評価 (TAE) プロンプトです。 詳細な詳細については、[売買契約評価ポリシー](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) を参照してください。
 
 ## <a name="a-purchase-order-receipt-doesnt-include-all-charges"></a>発注受入には、すべての費用は含まれません。
 

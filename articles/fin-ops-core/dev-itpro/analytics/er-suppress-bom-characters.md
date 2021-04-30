@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fabc308b1b0682c6fdce3e81e7335417846bebd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743536"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893279"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>生成されたファイルの BOM 文字を非表示にする ER 構成の設計
 
 [!include [banner](../includes/banner.md)]
 
-送信ドキュメントを生成するための [電子申告 (ER)](general-electronic-reporting.md) [ソリューション](er-quick-start1-new-solution.md) をデザインできます。 ドキュメントをテキスト ファイルまたは XML ファイルとして生成するには、ER [形式](general-electronic-reporting.md#FormatComponentOutbound) コンポーネントを含む ER [構成](general-electronic-reporting.md#Configuration) をソリューションに含める必要があります。 生成されたファイル内の文字セットを表す [文字エンコード](https://docs.microsoft.com/windows/win32/intl/character-sets) を指定するには、ER 形式に **Common\\File** 形式要素を含む必要があります。 ER 形式コンポーネントを構成するには、ER 形式デザイナーで ER 構成の [下書き](general-electronic-reporting.md#component-versioning) バージョンを開き、**Common\\File** 要素を追加します。 **エンコード** フィールドで、このコンポーネントを使用して実行時に生成される送信ファイルのエンコードを指定します。
+送信ドキュメントを生成するための [電子申告 (ER)](general-electronic-reporting.md) [ソリューション](er-quick-start1-new-solution.md) をデザインできます。 ドキュメントをテキスト ファイルまたは XML ファイルとして生成するには、ER [形式](general-electronic-reporting.md#FormatComponentOutbound) コンポーネントを含む ER [構成](general-electronic-reporting.md#Configuration) をソリューションに含める必要があります。 生成されたファイル内の文字セットを表す [文字エンコード](/windows/win32/intl/character-sets) を指定するには、ER 形式に **Common\\File** 形式要素を含む必要があります。 ER 形式コンポーネントを構成するには、ER 形式デザイナーで ER 構成の [下書き](general-electronic-reporting.md#component-versioning) バージョンを開き、**Common\\File** 要素を追加します。 **エンコード** フィールドで、このコンポーネントを使用して実行時に生成される送信ファイルのエンコードを指定します。
 
 > [!NOTE]
 > 形式に誤ったエンコード名が含まれている場合、形式の設定に対する変更を保存すると、エラーがスローされます。
 
 ![形式デザイナー ページでルート要素を追加する](./media/er-suppress-bom-characters-image1.gif)
 
-エンコードとして **UTF-8**、**UTF-16**、または **UTF-32** を指定すると、**BOM 文字の非表示** オプションが使用可能になります。 このオプションを **はい** に設定して、編集可能な ER 形式の実行時に、実行時に生成される発信ファイルで [バイト オーダー マーク (BOM) 文字](https://docs.microsoft.com/globalization/encoding/byte-order-mark) を非表示にします。
+エンコードとして **UTF-8**、**UTF-16**、または **UTF-32** を指定すると、**BOM 文字の非表示** オプションが使用可能になります。 このオプションを **はい** に設定して、編集可能な ER 形式の実行時に、実行時に生成される発信ファイルで [バイト オーダー マーク (BOM) 文字](/globalization/encoding/byte-order-mark) を非表示にします。
 
 > [!NOTE]
 > **エンコード** フィールドを空白のままにすると、既定の **UTF-8** エンコードが使用されます。

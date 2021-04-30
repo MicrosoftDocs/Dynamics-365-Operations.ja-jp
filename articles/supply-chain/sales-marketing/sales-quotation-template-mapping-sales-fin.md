@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 848464cbc62623502b9b87b9b41dcc17150e85ba
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bdca4d63fbe04a01cf1bbf2ccd7b095d4718a115
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839008"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910308"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 
@@ -32,7 +32,7 @@ ms.locfileid: "5839008"
 このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
 > [!NOTE]
-> 見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
+> 見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 

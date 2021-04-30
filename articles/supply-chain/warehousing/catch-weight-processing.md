@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 3882e40b4083f9246a03db3078cae8e18bec3c1e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c263fdcf7fdf2888e1c66e7e2b67d8b26729128c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808921"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907622"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
 
@@ -40,7 +40,7 @@ CW 製品を処理する倉庫管理を使用するには、ライセンス コ�
 - CW 単位が最小在庫単位 (SKU) として定義されている順序グループの単位を設定します。
 - CW 品目の取り扱いに関するポリシーを設定します。
 
-詳細については、[設定および CW 品目の管理](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items) を参照してください。
+詳細については、[設定および CW 品目の管理](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items) を参照してください。
 
 ## <a name="transaction-adjustments"></a>取引の調整
 

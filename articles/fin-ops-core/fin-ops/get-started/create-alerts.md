@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: fb1e64b6a48367557c1d009d0e1c48f096c32abf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 869a2f83360c1d6515bbe2868f1450f76ff3a13f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749200"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909842"
 ---
 # <a name="create-alert-rules"></a>警告ルールの作成
 
@@ -101,7 +101,7 @@ ms.locfileid: "5749200"
 2. SysTableBrowser フォームから警告を作成します。
 
 ### <a name="change-based-alerts-do-not-work-for-batch-status-changes"></a>変更に基づく警告がバッチ ステータスの変更に対して機能しない
-変更に基づく警告は、パフォーマンス上の理由からオフになっているため、バッチ ステータスの変更に対して機能しません。 代わりに、**バッチ警告** を設定する必要があります。 詳細については、[拡張バッチ フォームに対する警告を設定](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/alerts#set-up-alerts-for-batch-enhanced-forms)を参照してください。
+変更に基づく警告は、パフォーマンス上の理由からオフになっているため、バッチ ステータスの変更に対して機能しません。 代わりに、**バッチ警告** を設定する必要があります。 詳細については、[拡張バッチ フォームに対する警告を設定](../../dev-itpro/sysadmin/alerts.md#set-up-alerts-for-batch-enhanced-forms)を参照してください。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

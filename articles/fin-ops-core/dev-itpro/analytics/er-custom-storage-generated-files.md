@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 25719de3d86785442e00f7375de525b95bdb094d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753699"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894151"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>生成されるドキュメントに対するカスタム ストレージの場所を指定する
 
@@ -27,7 +27,7 @@ ms.locfileid: "5753699"
 
 ## <a name="prerequisites"></a>必要条件
 
-継続的ビルドをサポートするトポロジを配置します。 詳細については、[継続的ビルドとテストの自動化をサポートするトポロジの配置](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation)を参照してください。 次のいずれかのロールに対応するこのトポロジにアクセスできる必要があります:
+継続的ビルドをサポートするトポロジを配置します。 詳細については、[継続的ビルドとテストの自動化をサポートするトポロジの配置](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation)を参照してください。 次のいずれかのロールに対応するこのトポロジにアクセスできる必要があります:
 
 - 電子申告開発者
 - 電子申告機能コンサルタント
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. 既存の `AssetRollForwardService` クラスを変更し、レポート ランナーのカスタム送信先ファクトリを設定するコードを記述します。 カスタムの送信先ファクトリが構築されるときに、ターゲット フォルダーを指定するアプリケーション駆動型のパラメーターが渡されることに注意してください。 これにより、そのターゲット フォルダーは、生成されたファイルを保存するために使用されます。
 
     > [!NOTE] 
-    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したフォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) 例外が実行時にスローされます。
+    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したフォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) 例外が実行時にスローされます。
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

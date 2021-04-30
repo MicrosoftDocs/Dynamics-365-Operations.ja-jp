@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37af06a33667f7cfe5df182d5197dee5edc912b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811291"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897039"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting の使用を開始する 
 
@@ -148,7 +148,7 @@ ms.locfileid: "5811291"
 * Internet Explorer で、**設定** を選択し、**インターネット オプション** を選択します。 **セキュリティ** タブを選択し、信頼済みサイトを選択します。 [このゾーンのセキュリティ レベル] というラベルの付いた領域で、オプションを **中低** に変更します。
 * ブラウザーでポップアップ ブロッカーを無効にします。
 * ワークステーションには、Microsoft .NET Framework 4.6.2 以降をインストールする必要があります。 このバージョンの Microsoft .NET Framework は、[Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=53345) からダウンロードしてインストールできます。
-* Chrome ブラウザを使用している場合、レポート デザイナー クライアントをダウンロードするには、ClickOnce 拡張機能をインストールする必要があります。 Chrome を匿名モードで起動している場合、ClickOnce の拡張機能が匿名モードに対して有効化されていることを確認します。 Chrome ClickOnce 拡張子に関する詳細については、[クラウド配置のシステム要件](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements) を参照してください。
+* Chrome ブラウザを使用している場合、レポート デザイナー クライアントをダウンロードするには、ClickOnce 拡張機能をインストールする必要があります。 Chrome を匿名モードで起動している場合、ClickOnce の拡張機能が匿名モードに対して有効化されていることを確認します。 Chrome ClickOnce 拡張子に関する詳細については、[クラウド配置のシステム要件](../../fin-ops-core/fin-ops/get-started/system-requirements.md) を参照してください。
 * Chrome ブラウザーで Microsoft Edge を使用している場合は、Microsoft Edge Chromium の ClickOnce 拡張機能をインストールする必要はありません。 ただし、レポート デザイナー クライアントをダウンロードするには、ClickOnce オプションを有効にする必要があります。 シークレットモードで起動している場合、ClickOnce の拡張機能がシークレットモードで有効化されていることを確認してください。
      1. Microsoft Edge で新しいブラウザーを開きます。
      2. **edge://flags** と入力し、**入力** を選択します。

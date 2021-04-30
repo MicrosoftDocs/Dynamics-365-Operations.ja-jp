@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7029f1dab1f10c2b237fafb7b5d8eeff9fa7a543
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 890d7a2e671d6365cd1f6e23e399166541c04496
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790287"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890630"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-08-2021"></a>Dynamics 365 Human Resources (2021 年 3 月 8 日) の新機能および変更された機能
 
@@ -32,7 +32,7 @@ ms.locfileid: "5790287"
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
-新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2021 リリース ウェーブ 1 の概要](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
+新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2021 リリース ウェーブ 1 の概要](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
 
 ## <a name="in-this-release"></a>今回のリリース
 
@@ -44,7 +44,7 @@ ms.locfileid: "5790287"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| マネージャーの休暇を会社間で表示 | [マネージャーの従業員休暇を会社間で表示](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [休暇と欠勤のパラメータのコンフィギュレーション](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
+| マネージャーの休暇を会社間で表示 | [マネージャーの従業員休暇を会社間で表示](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [休暇と欠勤のパラメータのコンフィギュレーション](./hr-leave-and-absence-parameters.md) |
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -69,8 +69,8 @@ ms.locfileid: "5790287"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| 給付金管理ワークスペース | [給付金管理ワークスペース (プレビュー)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [給付金管理ワークスペース](hr-benefits-management-workspace.md) |
-| 従業員がビジネスの連絡先情報を編集するのを制限する | [従業員がビジネスの連絡先情報を編集するのを制限する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [個人情報の編集の制限](hr-employee-self-service-restrict-editing.md)|
+| 給付金管理ワークスペース | [給付金管理ワークスペース (プレビュー)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [給付金管理ワークスペース](hr-benefits-management-workspace.md) |
+| 従業員がビジネスの連絡先情報を編集するのを制限する | [従業員がビジネスの連絡先情報を編集するのを制限する](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [個人情報の編集の制限](hr-employee-self-service-restrict-editing.md)|
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -78,12 +78,12 @@ ms.locfileid: "5790287"
 | --- | --- |
 | マネージャーが従業員に対して入力したスキルは、ワークフローで自動承認できます | 間もなく公開予定。 |
 
-予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
+予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
 
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
 

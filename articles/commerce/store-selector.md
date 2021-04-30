@@ -2,7 +2,8 @@
 title: 店舗セレクター モジュール
 description: このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798636"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853420"
 ---
 # <a name="store-selector-module"></a>店舗セレクター モジュール
 
@@ -32,11 +33,32 @@ ms.locfileid: "5798636"
 
 店舗セレクター モジュールを使用すると、場所 (市町村、都道府県、住所など) を入力して検索半径内の店舗を検索できます。 モジュールが最初に開かれたとき、顧客のブラウザーの場所を使用して、店舗が検索されます (同意を得ている場合)。
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>E-コマースの店舗セレクター モジュールの使用方法
+## <a name="store-selector-module-usage"></a>店舗セレクター モジュールの使用
 
 - 製品の詳細ページ (PDP) では、店舗セレクター モジュールを使用して受け取りのための店舗を選択できます。
 - 買い物カゴ ページでは、店舗セレクター モジュールを使用して受け取りのための店舗を選択できます。
 - 店舗セレクター モジュールは、使用可能なすべての店舗を表示するスタンドアロン ページで使用できます。
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Commerce 本社でのフルフィルメント グループの設定
+
+店舗セレクターで利用可能な店舗を表示するには、Commerce 本社でフルフィルメント グループを設定する必要があります。 詳細については、[フルフィルメント グループの設定](customer-orders-overview.md#set-up-fulfillment-groups)を参照してください。
+
+さらに、フルフィルメント グループ内の各店舗に関しては、店舗の場所の緯度と経度を本社に定義する必要があります。
+
+Commerce 本社の店舗の場所の経度と緯度値を入力するには次の手順に従います。
+
+1. **在庫管理 \> 設定 \> 在庫詳細** の順に移動します。
+1. 左ウィンドウで、倉庫の場所を選択します。
+1. **住所** クイックタブで、**詳細** を選択します。
+
+    ![本社の店舗詳細の例](./media/Store-address.png)
+
+1. アクション ウィンドウで、**編集** を選択します。
+1. **一般** クイックタブで、**緯度** および **軽度** の値を入力します。
+
+    ![本社の店舗に対する緯度と経度設定の例](./media/Store-latitude-longitude.png)
+
+1. アクション ウィンドウで、**保存** を選択します。 
 
 ## <a name="bing-maps-integration"></a>Bing Maps の統合
 
@@ -48,6 +70,7 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 - **img-src** ディレクティブに **&#42;.virtualearth.net** を追加します。
 - **script-src** ディレクティブに、**&#42;.bing.com, &#42;.virtualearth.net** を追加します。
 - **script style-src** ディレクティブに、**&#42;.bing.com** を追加します。
+
  
 ## <a name="pickup-in-store-mode"></a>店舗で受け取りモード
 

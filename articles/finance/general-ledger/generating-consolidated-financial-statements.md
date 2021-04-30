@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2db444d4a5e40c1bbfdab9e044aff43031b6e9f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826693"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897867"
 ---
 # <a name="generate-consolidated-financial-statements"></a>連結財務諸表の生成
 
@@ -34,7 +34,7 @@ ms.locfileid: "5826693"
 3. 連結レポートで使用する各会社のレポート ノードを含むレポート ツリーを作成します。
 
 > [!TIP]
-> レポート ツリー、列定義、行定義の作成および管理する方法の詳細については、[財務諸表コンポーネント](../../dev-itpro/analytics/financial-report-components.md)を参照してください。
+> レポート ツリー、列定義、行定義の作成および管理する方法の詳細については、[財務諸表コンポーネント](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md)を参照してください。
 
 次の図は、連結する各会社を識別するために、財務諸表でレポート ツリー定義を使用する方法を示します。
 

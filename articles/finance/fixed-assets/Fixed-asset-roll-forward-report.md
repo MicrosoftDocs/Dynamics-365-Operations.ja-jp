@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a4a2cfb7754a0074e37f1a5b4b99594b2b0861d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1693df7d535a340306d2b817ce008c292bad521
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827100"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897675"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>固定資産ロール フォワード レポート
 
@@ -28,7 +28,7 @@ ms.locfileid: "5827100"
 
 **固定資産ロール フォワード** レポートは、分かりやすい Microsoft Excel 形式で、ユーザーが必要とする期間決算、財務諸表、および税レポートの詳細な固定資産データを提供します。 レポートには、期間中の評価移動と共に、固定資産の開始および終了時の残高、および期間中に発生した任意の新しい資産の取得と処分が含まれます。 個々の固定資産ごとにデータが報告され、値は固定資産グループおよび法人に対しても集計されます。
 
-**固定資産ロール フォワード** レポートは、電子申告 (ER) フレームワークを使用します。 レポートを実行する前に、固定資産モデルと固定資産ロール フォワード コンフィギュレーションを Microsoft Dynamics Lifecycle Services (LCS) からインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
+**固定資産ロール フォワード** レポートは、電子申告 (ER) フレームワークを使用します。 レポートを実行する前に、固定資産モデルと固定資産ロール フォワード コンフィギュレーションを Microsoft Dynamics Lifecycle Services (LCS) からインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
 
 このレポートは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3、または Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (2017年7月) の修正プログラムとして利用可能です。 2017 年 7 月リリースのある環境には、3 つの修正プログラムを適用する必要があります。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9253537b7d306384747ca1e492def13c48aa678
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 424135233ffdc73d17336ec4e3e97ccd52dab1ff
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755503"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893333"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>原価会計分析 Power BI コンテンツ
 
@@ -40,7 +40,7 @@ ms.locfileid: "5755503"
 原価会計のアクセス レベルのセキュリティを定義して、Power BI で行レベルのセキュリティと組み合わせることにより、すべての原価オブジェクトの所有者に **原価会計分析** Power BI コンテンツにアクセス権を付与できます。 表示されるすべてのデータは、原価会計で操作するアクセス レベルに基づいてフィルター処理されます。 アクセス レベルのセキュリティおよび行レベルのセキュリティの詳細については、[原価会計 Power BI コンテンツ向けセキュリティの設定](setup-security-cost-accounting-content-pack.md)を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/) を参照してください。
+**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners) を参照してください。
 
 ご使用のバージョンの Microsoft Dynamics 365 に適用される **原価会計分析** コンテンツをダウンロードしてください。
 

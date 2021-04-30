@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 13b81459fe3449a90839dac7637118f09afe2e55
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835681"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910236"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>柔軟な倉庫レベル分析コードの引当ポリシー
 
@@ -854,7 +854,7 @@ ms.locfileid: "5835681"
 
 ## <a name="see-also"></a>参照
 
-- [倉庫管理のバッチ番号](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [倉庫管理のバッチ番号](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
 - [販売注文に対する同じバッチの引当](../sales-marketing/reserve-same-batch-sales-order.md)
 - [モバイル デバイスで最も古いバッチをピッキング](pick-oldest-batch.md)
 - [バッチおよびライセンス プレートの確認](batch-and-license-plate-confirmation.md)

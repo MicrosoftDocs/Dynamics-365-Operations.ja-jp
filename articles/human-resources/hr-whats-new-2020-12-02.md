@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7d9ecea08f5095e7fa8501d690bbabbd54e6501
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d95c92fe15f4dfe77d2bc8a153f86165c17edb4e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802242"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892636"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Dynamics 365 Human Resources (2020 年 12 月 2 日) の新機能および変更された機能
 
@@ -30,7 +30,7 @@ ms.locfileid: "5802242"
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
-新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
+新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
 
 ## <a name="in-this-release"></a>今回のリリース
 
@@ -42,10 +42,10 @@ ms.locfileid: "5802242"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| マネージャーは職位の採用要求を送信できます | [マネージャーは空いている職位の採用要求を送信できます](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [採用要求の追加](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| 人材管理で改善された候補者のプロファイル | [人材管理で改善された候補者のプロファイル](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [候補者プロファイルの追加または編集](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| 簡素化された採用プロバイダーとの統合を有効化 | [簡素化された採用プロバイダーとの統合を有効化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [職務候補者の採用](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
-| マネージャー セルフサービスのカスタム リンク | [マネージャー セルフサービスのカスタム リンク](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [マネージャー セルフサービスのカスタム リンク](https://aka.ms/MSSCustomLinks) |
+| マネージャーは職位の採用要求を送信できます | [マネージャーは空いている職位の採用要求を送信できます](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [採用要求の追加](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| 人材管理で改善された候補者のプロファイル | [人材管理で改善された候補者のプロファイル](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [候補者プロファイルの追加または編集](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| 簡素化された採用プロバイダーとの統合を有効化 | [簡素化された採用プロバイダーとの統合を有効化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [職務候補者の採用](./hr-personnel-recruit.md) |
+| マネージャー セルフサービスのカスタム リンク | [マネージャー セルフサービスのカスタム リンク](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [マネージャー セルフサービスのカスタム リンク](./hr-employee-manager-self-service-custom-links.md) |
 
 
 ### <a name="bug-fixes"></a>バグ修正
@@ -72,23 +72,23 @@ ms.locfileid: "5802242"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| Microsoft Teams の Human Resources アプリ | [Microsoft Teams の従業員の休暇および欠勤体験](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teams の Human Resources アプリ](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Teams での休暇要求の管理](hr-teams-leave-app.md) |
-| ワークフローの申請と承認の強化 | [組織および人事管理ワークフロー エクスペリエンスの強化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [自分のリストに割り当てられた作業項目を配置するコンフィギュレーション オプション](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| LinkedIn タレント ハブとの統合 | [LinkedIn タレント ハブとの統合](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [LinkedIn Talent Hub との統合](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
-|マネージャーの休暇を会社間で表示 | [マネージャーの従業員休暇を会社間で表示](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [休暇と欠勤のパラメータのコンフィギュレーション](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-|休暇残高に追加の分析情報を提供する| [休暇残高に追加の分析情報を提供する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [従業員の休暇の管理](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-employee-leave) |
-| マネージャーは職位の採用要求を送信できます | [マネージャーは空いている職位の採用要求を送信できます](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [採用要求の追加](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| 人材管理で改善された候補者のプロファイル | [人材管理で改善された候補者のプロファイル](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [候補者プロファイルの追加または編集](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| 簡素化された採用プロバイダーとの統合を有効化 | [簡素化された採用プロバイダーとの統合を有効化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [職務候補者の採用](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
+| Microsoft Teams の Human Resources アプリ | [Microsoft Teams の従業員の休暇および欠勤体験](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teams の Human Resources アプリ](./hr-admin-teams-leave-app.md)<br>[Teams での休暇要求の管理](hr-teams-leave-app.md) |
+| ワークフローの申請と承認の強化 | [組織および人事管理ワークフロー エクスペリエンスの強化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [自分のリストに割り当てられた作業項目を配置するコンフィギュレーション オプション](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| LinkedIn タレント ハブとの統合 | [LinkedIn タレント ハブとの統合](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [LinkedIn Talent Hub との統合](./hr-admin-integration-linkedin.md) |
+|マネージャーの休暇を会社間で表示 | [マネージャーの従業員休暇を会社間で表示](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [休暇と欠勤のパラメータのコンフィギュレーション](./hr-leave-and-absence-parameters.md) |
+|休暇残高に追加の分析情報を提供する| [休暇残高に追加の分析情報を提供する](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [従業員の休暇の管理](./hr-leave-and-absence-manage-employee-leave.md) |
+| マネージャーは職位の採用要求を送信できます | [マネージャーは空いている職位の採用要求を送信できます](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [採用要求の追加](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| 人材管理で改善された候補者のプロファイル | [人材管理で改善された候補者のプロファイル](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [候補者プロファイルの追加または編集](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| 簡素化された採用プロバイダーとの統合を有効化 | [簡素化された採用プロバイダーとの統合を有効化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [職務候補者の採用](./hr-personnel-recruit.md) |
 
 ## <a name="coming-soon"></a>間もなく公開
 
-予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
+予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
 
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
 

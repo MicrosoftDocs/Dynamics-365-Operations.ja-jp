@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 599f9728019cd6bc59c59a4f08df06c6c9c9ac31
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f70e377d6844b5c4f9201f0a561ad9cfcab2eda1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798421"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890128"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>申請者追跡システム統合APIの概要
 
@@ -45,21 +45,21 @@ Human Resources では、統合を有効にするあたり、次のコンポー�
 
 Microsoft Dataverse Web API の詳細については、次を参照してください :
 
-- [Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
-- [Microsoft Dataverse Web API を使用する](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
-- [Microsoft Dataverse 開発者ガイド](https://docs.microsoft.com/powerapps/developer/data-platform)
+- [Microsoft Dataverse とは](/powerapps/maker/data-platform/data-platform-intro)
+- [Microsoft Dataverse Web API を使用する](/powerapps/developer/data-platform/webapi/overview)
+- [Microsoft Dataverse 開発者ガイド](/powerapps/developer/data-platform)
 
-上記のドキュメントでは、[認証の管理](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api)、[操作の実行](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api)、[API での Postman の使用](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api)、APIによる[変更追跡トークンまたはデルタ トークンの使用](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)などの、Dataverse Web API の使用に関する詳細なガイドと開発者ガイドが含まれています。
+上記のドキュメントでは、[認証の管理](/powerapps/developer/data-platform/webapi/authenticate-web-api)、[操作の実行](/powerapps/developer/data-platform/webapi/perform-operations-web-api)、[API での Postman の使用](/powerapps/developer/data-platform/webapi/use-postman-web-api)、APIによる[変更追跡トークンまたはデルタ トークンの使用](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)などの、Dataverse Web API の使用に関する詳細なガイドと開発者ガイドが含まれています。
 
 ### <a name="option-sets"></a>オプション セット
 
-このドキュメントで説明する ATS 統合 API のデータ モデルには、エンティティ プロパティに関連付けられた列挙値を提供するオプション セットが含まれています。 Dataverse Web API でのオプション セットの操作の詳細については、[Web APIを使用したオプション セットの作成と更新](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)を参照してください。 オプション セットは各 Dataverse 環境ごとに定義されます。
+このドキュメントで説明する ATS 統合 API のデータ モデルには、エンティティ プロパティに関連付けられた列挙値を提供するオプション セットが含まれています。 Dataverse Web API でのオプション セットの操作の詳細については、[Web APIを使用したオプション セットの作成と更新](/powerapps/developer/data-platform/webapi/create-update-optionsets)を参照してください。 オプション セットは各 Dataverse 環境ごとに定義されます。
 
 ### <a name="virtual-tables-for-human-resources-in-dataverse"></a>Dataverse における Human Resources の仮想テーブル
 
 ATS 統合 API のエンドポイントは、Microsoft Dataverse の仮想テーブルプラットフォーム機能を使用します。 既定では、仮想テーブルと関連する API エンドポイントは人事環境には配置されていないため、組織は環境で公開される OData エンドポイントを決定することができます。 このAPIを使用するには、その環境に対して Human Resources エンティティの仮想テーブルを生成する必要があります。 
 
-API 用の仮想テーブルの生成の詳細については、[Dataverse 仮想テーブルの構成](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities)を参照してください。
+API 用の仮想テーブルの生成の詳細については、[Dataverse 仮想テーブルの構成](./hr-admin-integration-common-data-service-virtual-entities.md)を参照してください。
 
 ## <a name="data-model"></a>データ モデル
 
@@ -134,8 +134,8 @@ API 用の仮想テーブルの生成の詳細については、[Dataverse 仮�
 ## <a name="see-also"></a>参照
 
 [職務候補者の採用](hr-personnel-recruit.md)<br>
-[Microsoft Dataverse とは](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Microsoft Dataverse Web API を使用する](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
-[Web API を使用したオプション セットの作成と更新](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+[Microsoft Dataverse とは](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Microsoft Dataverse Web API を使用する](/powerapps/developer/data-platform/webapi/overview)<br>
+[Web API を使用したオプション セットの作成と更新](/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

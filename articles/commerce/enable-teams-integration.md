@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c0dbf7a3c7fa3532e35cac240c1abb8adbdbe489
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c4d596f27ffe15a97dc04e2ce7e85d21f8e7161f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842696"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908398"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Dynamics 365 Commerce と Microsoft Teams の統合を有効化する
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce と Microsoft Teams の統合を有効化する方法について説明します。
 

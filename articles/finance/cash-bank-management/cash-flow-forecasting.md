@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7642b26be08427ccbef3929f2a2e083ce43d4e75
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819653"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897407"
 ---
 # <a name="cash-flow-forecasting"></a>キャッシュ フロー予測
 
@@ -144,7 +144,7 @@ ms.locfileid: "5819653"
 
 **現金の概要 – 現在の会社** ワークスペースには、会社が定義した会計通貨でキャッシュ フロー予測分析が表示されます。 分析に使用される会計通貨は、**元帳** ページで定義されます。 このワークスペースには、キャッシュ フロー予測の概要および現在の会社の銀行口座の残高が表示されます。 現金収支のチャートは、予測トランザクションに関する詳細情報と共に、会計通貨での将来の現金移動および残高の概要が表示されます。 予測される通貨残高を表示することもできます。
 
-キャッシュ フローの予測分析については、[キャッシュの概要 Power BI コンテンツ](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) のトピックを参照してください。
+キャッシュ フローの予測分析については、[キャッシュの概要 Power BI コンテンツ](./cash-overview-power-bi-content.md) のトピックを参照してください。
 
 また次のページで、特定の勘定、注文、および品目についてのキャッシュ フロー予測データを表示できます。
 

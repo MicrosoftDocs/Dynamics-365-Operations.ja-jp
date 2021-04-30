@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4d6d88f69f9b958c9e8f49695d07d0b593da2258
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840704"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907768"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>顧客ポータルのユーザーの作成と管理
 
@@ -44,26 +44,26 @@ Power Apps ポータルの担当者は、Microsoft Dataverse の **担当者** �
 
 ## <a name="the-invitation-process"></a>招待の処理
 
-顧客ポータルに既に存在する担当者を招待するには、Power Apps ポータル ドキュメントにおける [ポータルへの担当者への招待](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) に記載の手順に従ってください。
+顧客ポータルに既に存在する担当者を招待するには、Power Apps ポータル ドキュメントにおける [ポータルへの担当者への招待](/powerapps/maker/portals/configure/invite-contacts) に記載の手順に従ってください。
 
-顧客を顧客ポータルに招待する前に、顧客の [担当者レコード ](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) が有効なものであり、次のように設定されていることを確認してください :
+顧客を顧客ポータルに招待する前に、顧客の [担当者レコード ](/powerapps/maker/portals/configure/configure-contacts) が有効なものであり、次のように設定されていることを確認してください :
 
 1. **会社** フィールドを、Supply Chain Management にて顧客を所属させる法人に設定します。
 2. **顧客番号** フィールドを、Supply Chain Management にて顧客に設定する顧客アカウントの番号に設定します。
 
 担当者の作成後は、Supply Chain Management でその担当者を表示できるようになります。
 
-詳細については、Power Apps ポータル ドキュメントの [ポータルで使用する担当者の構成](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) を参照してください。
+詳細については、Power Apps ポータル ドキュメントの [ポータルで使用する担当者の構成](/powerapps/maker/portals/configure/configure-contacts) を参照してください。
 
 ## <a name="out-of-box-web-roles-and-table-permissions"></a>既成の Web ロールとテーブルのアクセス許可
 
-Power Apps ポータルのユーザー ロールは、[Web ロール](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) と [テーブルのアクセス許可](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) によって定義されます。 既定では、顧客ポータルには少数のロールのみが定義されています。 新たなロールの作成、既存のロールの変更または削除が可能です。
+Power Apps ポータルのユーザー ロールは、[Web ロール](/powerapps/maker/portals/configure/create-web-roles) と [テーブルのアクセス許可](/powerapps/maker/portals/configure/assign-entity-permissions) によって定義されます。 既定では、顧客ポータルには少数のロールのみが定義されています。 新たなロールの作成、既存のロールの変更または削除が可能です。
 
 ### <a name="out-of-box-web-roles"></a>既成の Web ロール
 
 このセクションでは、顧客ポータルと共に提供される既成の Web ロールについて説明します。
 
-既成のユーザー ロールの変更方法の詳細については、Power Apps ポータル ドキュメントに記載の [ポータルで使用する Web ロールの作成](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) と [ポータルのテーブル権限を使用してレコードに基づくセキュリティを追加する](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) を参照してください。
+既成のユーザー ロールの変更方法の詳細については、Power Apps ポータル ドキュメントに記載の [ポータルで使用する Web ロールの作成](/powerapps/maker/portals/configure/create-web-roles) と [ポータルのテーブル権限を使用してレコードに基づくセキュリティを追加する](/powerapps/maker/portals/configure/assign-entity-permissions) を参照してください。
 
 #### <a name="administrator"></a>管理者
 

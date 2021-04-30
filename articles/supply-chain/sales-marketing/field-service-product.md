@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 9cc8e93259119236093e02924d29df64dcc876bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45a989604d829db715756b6cd206a5675a18acf2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810897"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909994"
 ---
 # <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Supply Chain Management の製品と Field Service の製品との同期
 
@@ -29,7 +29,7 @@ ms.locfileid: "5810897"
 
 このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-使用されている **Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、見込顧客を現金化の **製品 (Supply Chain Management から Sales) – 直接** テンプレートに基づきます。 詳細については、[製品 (Supply Chain Management から Sales) - 直接](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct) を参照してください。
+使用されている **Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、見込顧客を現金化の **製品 (Supply Chain Management から Sales) – 直接** テンプレートに基づきます。 詳細については、[製品 (Supply Chain Management から Sales) - 直接](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct) を参照してください。
 
 このトピックでは、**Field Service 製品 (Supply Chain Management から Field Service)** および **製品 (Supply Chain Management から Sales) – 直接** テンプレートの間の違いのみを説明します。
 

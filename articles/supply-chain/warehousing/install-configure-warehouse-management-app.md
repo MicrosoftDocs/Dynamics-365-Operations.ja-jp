@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835609"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908955"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションのインストールと接続
 
@@ -50,7 +50,7 @@ ms.locfileid: "5835609"
 
 小規模な配置の場合は、通常、該当のストアから各デバイスにアプリをインストールし、使用している環境への接続を手動で構成します。
 
-大規模な配置の場合は、アプリ配置またはコンフィギュレーションを自動化でき、多くのデバイスを管理するのに便利です。 たとえば、[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) などモバイル デバイス管理やモバイル アプリケーション管理ソリューションを使用する場合があります。 Intune を使用してアプリを追加する方法については、[Microsoft Intune にアプリを追加する](https://docs.microsoft.com/mem/intune/apps/apps-add) を参照してください。
+大規模な配置の場合は、アプリ配置またはコンフィギュレーションを自動化でき、多くのデバイスを管理するのに便利です。 たとえば、[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) などモバイル デバイス管理やモバイル アプリケーション管理ソリューションを使用する場合があります。 Intune を使用してアプリを追加する方法については、[Microsoft Intune にアプリを追加する](/mem/intune/apps/apps-add) を参照してください。
 
 ### <a name="install-the-app-from-an-app-store"></a>アプリ ストアからのアプリのインストール
 
@@ -65,10 +65,10 @@ ms.locfileid: "5835609"
 アプリ ストアからインストールする代わりに、Microsoft アプリ センターからアプリをダウンロードすることもできます。 アプリ センターには、サイドロードできるインストール可能なパッケージが提供されています。 アプリ センターでは、現在のバージョンに加えて、以前のバージョンをダウンロードしたり、試せる今後の機能を備えたプレビュー バージョンが提供されている場合もあります。Microsoft アプリ センターから倉庫管理モバイル アプリの最新バージョン、以前のバージョン、またはプレビュー バージョンをダウンロードするには、次のいずれかのリンクを使用します。
 
 - **Windows (UWP):** [倉庫管理 (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    Windows デバイスにダウンロードしたパッケージをインストールし、必要な証明書を設定する方法の手順については、[アプリ センターからのビルドのインストール](https://docs.microsoft.com/appcenter/distribution/installation)を参照してください。
+    Windows デバイスにダウンロードしたパッケージをインストールし、必要な証明書を設定する方法の手順については、[アプリ センターからのビルドのインストール](/appcenter/distribution/installation)を参照してください。
 
 - **Android:** [倉庫管理 (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    プレビュー バージョンをダウンロードする場合、インストールするにはいくつかの追加手順が必要です。 詳細については、[Android アプリをテストする](https://docs.microsoft.com/appcenter/distribution/testers/testing-android) を参照してください。
+    プレビュー バージョンをダウンロードする場合、インストールするにはいくつかの追加手順が必要です。 詳細については、[Android アプリをテストする](/appcenter/distribution/testers/testing-android) を参照してください。
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Azure Active Directoryで Web サービス アプリケーションを作成する
 
@@ -103,11 +103,11 @@ ms.locfileid: "5835609"
 
 Azure ADでの web サービス アプリケーションの設定方法の詳細については、次のリソースを参照してください:
 
-- Azure AD で、Windows PowerShell を使用した web サービス アプリケーションの設定方法については、[Azure PowerShell を使用して、証明書でサービス プリンシパルを作成する方法](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell)を参照してください。
+- Azure AD で、Windows PowerShell を使用した web サービス アプリケーションの設定方法については、[Azure PowerShell を使用して、証明書でサービス プリンシパルを作成する方法](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)を参照してください。
 - Azure AD にて web サービス アプリケーションを手動で作成する方法の詳細については 、次のトピックを参照してください:
 
-    - [クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [ポータルを使用して、リソースにアクセスできる Azure AD アプリケーションとサービス プリンシパルを作成する](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)
+    - [ポータルを使用して、リソースにアクセスできる Azure AD アプリケーションとサービス プリンシパルを作成する](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Supply Chain Management でユーザー アカウントを作成および設定する
 
@@ -135,7 +135,7 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 
 証明書は、トークンを要求された際に、アプリケーションの ID を証明する秘密として使用することができます。 証明書の公開部分は Azure portal のアプリ登録にアップロードされますが、完全な証明書は倉庫管理モバイル アプリがインストールされている各デバイスに配置する必要があります。 組織では、ローテーションなどの観点から証明書を管理する責任があります。 自己署名付き証明書を使用することはできますが、常にエクスポートされていない証明書を使用する必要があります。
 
-倉庫管理モバイル アプリを実行する各デバイスで、証明書をローカルで使用できるようにする必要があります。 Intune を使用している場合に、Intune 管理デバイスの証明書を管理する方法については、[Microsoft intune での認証に証明書を使用する](https://docs.microsoft.com/mem/intune/protect/certificates-configure)を参照してください。
+倉庫管理モバイル アプリを実行する各デバイスで、証明書をローカルで使用できるようにする必要があります。 Intune を使用している場合に、Intune 管理デバイスの証明書を管理する方法については、[Microsoft intune での認証に証明書を使用する](/mem/intune/protect/certificates-configure)を参照してください。
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>接続設定をインポートしてアプリケーションを構成する
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d8d2b1f98803bc159d3164d4a7c883e088ca7e56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f0ed7d3344b43c477923ebd8c69acfb6630e6f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837660"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910404"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>外部仕入先との仕入先コラボレーション
 
@@ -33,7 +33,7 @@ ms.locfileid: "5837660"
 > [!NOTE]
 > このトピックで仕入先コラボレーションへの適用に関する情報は、Supply Chain Management の現在のバージョンにのみ適用されます。 Microsoft Dynamics AX 7.0 (2016 年 2 月) および Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) で、**仕入先ポータル** モジュールを使用して仕入先との共同作業を行います。 **仕入先ポータル** モジュールについては、「[仕入先ポータルを使用して別の仕入先とのコラボレーション](collaborate-vendors-vendor-portal.md)」を参照してください。
 
-仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)」を参照してください。 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
+仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)」を参照してください。 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>発注書に応答したときに仕入先に表示される情報を定義します
 

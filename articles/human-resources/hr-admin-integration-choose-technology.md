@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f0e50cc1e18400258a4ad5da008e1719d39bd1da
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0d2978d680efa59b1ba9cfcd7f58655da0ff4107
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801218"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890103"
 ---
 # <a name="choose-a-data-integration-technology"></a>データ統合テクノロジの選択
 
@@ -36,7 +36,7 @@ ms.locfileid: "5801218"
 業務データは、会社を比類ないものにする重要な資産です。 業務データは非常に重要です。 業務全体で収集されたデータ間の関係を使用して、組織全体の業務プロセスやビジネス インテリジェンスを向上させることができます。 どのようなシステムからの業務データにも、簡単、安全、安定したアクセスを提供するよう努めています。
 
 これまで、複数のシステム間のデータの統合は困難でした。
-Microsoft はデータ統合を容易にするための措置を講じており、その目標に向けた大きな一歩は [Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) によって実現されます。
+Microsoft はデータ統合を容易にするための措置を講じており、その目標に向けた大きな一歩は [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) によって実現されます。
 
 Human Resources では、Dataverse が Human Resources データの推奨パブリック インターフェイスになります。 時間の経過とともに、Human Resources によって管理されるもっとも重要なすべてのデータが Dataverse で公開される予定です。 ほとんどの統合アプリケーションにとって最適な技術として、Dataverse をお勧めします。
 
@@ -48,21 +48,21 @@ Dataverse には、アプリケーションが必要とするすべてのデー�
 
 ### <a name="dataverse-tables"></a>Dataverse テーブル
 
-Dataverse は、Human Resources の推奨のパブリック データ インターフェイスです。 [Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement) ソリューションで使用される Dynamics 365 XRM プラットフォームから生まれました。
+Dataverse は、Human Resources の推奨のパブリック データ インターフェイスです。 [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps) ソリューションで使用される Dynamics 365 XRM プラットフォームから生まれました。
 
 Dataverseは、データ テーブル用のプラットフォームと API を提供します。 Human Resources を展開すると、Dataverse インスタンスに接続されます。 Human Resources データのエンティティは、その Dataverse インスタンスに展開されます。 テーブルとそのデータは、Dataverse インスタンスに接続できるすべてのアプリケーションで使用できます。 Human Resources では、Dataverse テーブルとの間でデータを同期します。
 
 > [!NOTE]
-> Human Resources エンティティは Dataverse テーブルに対応します。 Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)を参照してください
+> Human Resources エンティティは Dataverse テーブルに対応します。 Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](/powerapps/maker/data-platform/data-platform-intro)を参照してください
 
-統合アプリで必要なデータ テーブルが Dataverse にある場合は、[Dataverse とそれがサポートする API](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer) を完全に使用できます。 サポートされる API の 1 つに [Dynamics 365 Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api) があります。この API は、Dataverse データにアクセスするための OData 実装を提供します。
+統合アプリで必要なデータ テーブルが Dataverse にある場合は、[Dataverse とそれがサポートする API](/powerapps/?panel=developer#pivot=home) を完全に使用できます。 サポートされる API の 1 つに [Dynamics 365 Web API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api) があります。この API は、Dataverse データにアクセスするための OData 実装を提供します。
 
 Dataverse テーブルおよび関連付けられている API は、Web アプリケーション、Web サービス/API から、また OData フィードに接続するその他のアプリケーションから、Human Resources データにアクセスするための最良のオプションです。
 
 > [!NOTE]
 > Dataverse を Human Resources の優先データ インターフェイスにするという決定は比較的最近のことなので、統合に必要な Human Resources データ エンティティが Dataverse でまだ使用できない場合があります。
 > </br>
-> Dataverse で利用できる Human Resources エンティティの一覧については、[Human Resources および Dataverse](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities) を参照してください。
+> Dataverse で利用できる Human Resources エンティティの一覧については、[Human Resources および Dataverse](/dynamics365/unified-operations/talent/corehrentities) を参照してください。
 > </br>
 > 統合に必要な Human Resources エンティティがまだ使用できない場合は、データ エンティティが利用できるまで待つか、または以下に示すその他の統合テクノロジのいずれかを使用する必要があります。
 > </br>
@@ -70,14 +70,14 @@ Dataverse テーブルおよび関連付けられている API は、Web アプ�
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF エンティティ
 
-Finance and Operations アプリケーションと同じプラットフォームで主に構築された Human Resources は、[データ管理フレームワーク (DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)　を提供します。 DMF は、データ インポート エクスポート フレームワーク (DIXF) とも呼ばれます。 Human Resources には、Human Resources データのインポートとエクスポートに使用できる一連のデータ エンティティが用意されています。 Dataverse テーブルは Human Resources の優先データ統合インターフェイスですが、DMF エンティティは次のような環境でも有用です:
+Finance and Operations アプリケーションと同じプラットフォームで主に構築された Human Resources は、[データ管理フレームワーク (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)　を提供します。 DMF は、データ インポート エクスポート フレームワーク (DIXF) とも呼ばれます。 Human Resources には、Human Resources データのインポートとエクスポートに使用できる一連のデータ エンティティが用意されています。 Dataverse テーブルは Human Resources の優先データ統合インターフェイスですが、DMF エンティティは次のような環境でも有用です:
 
 - Dataverse テーブルをまだ利用できません。
 
 - 統合に、高性能なバルク データ インポート/エクスポート機能が必要である。
 
 > [!NOTE]
-> Human Resources エンティティは Dataverse テーブルに対応します。 Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)を参照してください
+> Human Resources エンティティは Dataverse テーブルに対応します。 Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](/powerapps/maker/data-platform/data-platform-intro)を参照してください
 
 現時点で、DMF エンティティは、Human Resources データに対してもっとも完全なデータ カバレージを提供しています。
 
@@ -90,7 +90,7 @@ DMF は、高スループット (夜間にスケジュールされている数�
 
 ### <a name="dmf-package-rest-api"></a>DMF パッケージ REST API
 
-DMF には、データ パッケージの操作のために [REST API](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api) が用意されています。 この API を使用して、プログラムで DMF と対話することで、次のような操作が可能になります。
+DMF には、データ パッケージの操作のために [REST API](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api) が用意されています。 この API を使用して、プログラムで DMF と対話することで、次のような操作が可能になります。
 
 - データ パッケージのインポート
 
@@ -102,36 +102,36 @@ DMF パッケージ REST API は Human Resources で完全にサポートされ�
 
 ### <a name="azure-sql-db-byod"></a>Azure SQL DB (BYOD)
 
-DMF はさらに、Human Resources がユーザー独自の Microsoft Azure SQL データベースにデータをエクスポートできる強力な機能 ([自分のデータベースの持ち込み](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database)、または BYOD と呼ばれる) を提供します。 この機能は、非常に高い柔軟性を提供します。 データがユーザー独自の SQL データベースに存在する場合は、SQL データ ストアに接続できるアプリケーションやミドルウェアを利用できます。
+DMF はさらに、Human Resources がユーザー独自の Microsoft Azure SQL データベースにデータをエクスポートできる強力な機能 ([自分のデータベースの持ち込み](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database)、または BYOD と呼ばれる) を提供します。 この機能は、非常に高い柔軟性を提供します。 データがユーザー独自の SQL データベースに存在する場合は、SQL データ ストアに接続できるアプリケーションやミドルウェアを利用できます。
 
 BYOD は、主に読み取り専用ソリューションです。 必要なデータを操作して Azure SQL データベース (データ マッシュ アップなど) に格納することができますが、Azure SQL データベースに格納されたデータは Human Resources に同期されません。
 
-BYOD は、[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/) パイプラインのデータ ソースとして、ソリューション、データ統合、データ マッシュ アップを報告するために適しています。
+BYOD は、[Azure Data Factory](/azure/data-factory/) パイプラインのデータ ソースとして、ソリューション、データ統合、データ マッシュ アップを報告するために適しています。
 
 > [!NOTE]
 > BYOD は、Attract および Onboard には使用できません。
 
 ### <a name="odata-enabled-entities"></a>OData 対応エンティティ
 
-ほとんどの DMF エンティティは、Human Resources データ サービス (OData) を使用したアクセスにも有効です。 [Finance and Operations OData サービス](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata) に提供されるドキュメントは、独自の OData 公開エンティティを作成する場合を除き、Human Resources に適用されます。
+ほとんどの DMF エンティティは、Human Resources データ サービス (OData) を使用したアクセスにも有効です。 [Finance and Operations OData サービス](/dynamics365/unified-operations/dev-itpro/data-entities/odata) に提供されるドキュメントは、独自の OData 公開エンティティを作成する場合を除き、Human Resources に適用されます。
 
-Dataverse および Dataverse によって ([Dynamics 365 Web API](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)) を通じて) 用意されている OData 実装は、Human Resources データ サービスよりも優先されますが、現在のところ、Human Resources データ サービスは、Human Resources データに対してより完全なエンティティ カバレージを提供します。
+Dataverse および Dataverse によって ([Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)) を通じて) 用意されている OData 実装は、Human Resources データ サービスよりも優先されますが、現在のところ、Human Resources データ サービスは、Human Resources データに対してより完全なエンティティ カバレージを提供します。
 
 ### <a name="excel-add-in"></a>Excel アドイン
 
-[Excel アドイン](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/talent/toc.json) は、内部にある OData 対応エンティティを利用します。 このアドインは、エンド ユーザーが使い慣れた Excel UI を使用して Human Resources データを取得および変更するために便利な方法を説明します。
+[Excel アドイン](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) は、内部にある OData 対応エンティティを利用します。 このアドインは、エンド ユーザーが使い慣れた Excel UI を使用して Human Resources データを取得および変更するために便利な方法を説明します。
 
 Excel アドインは、ビジネス ドメインの専門家による一時的なデータのインポート/エクスポートに適しています。 プログラムによる自動化を必要とする繰り返して発生するデータ統合の場合は、別の統合テクノロジがより適切です。
 
 ### <a name="data-integrator"></a>データ インテグレーター
 
-[データ インテグレーター サービス](https://docs.microsoft.com/powerapps/administrator/data-integrator) を使用して、Dataverse との間でデータを統合できます。 データ インテグレーターを使用すると、多くの場合、アプリケーション開発者が特定の統合に合せて調整した定義済みのテンプレートに基づく統合プロジェクトを定義することができます。 統合プロジェクトを定期的なスケジュールで自動的に実行するようにスケジュールしたり、手動で実行したりできます。
+[データ インテグレーター サービス](/powerapps/administrator/data-integrator) を使用して、Dataverse との間でデータを統合できます。 データ インテグレーターを使用すると、多くの場合、アプリケーション開発者が特定の統合に合せて調整した定義済みのテンプレートに基づく統合プロジェクトを定義することができます。 統合プロジェクトを定期的なスケジュールで自動的に実行するようにスケジュールしたり、手動で実行したりできます。
 
 データ インテグレータ プロジェクトは、Dataverse バッチ統合に適しています。 これらは、Dynamics 365 ファミリのアプリケーション間の統合に最適です。 たとえば、Microsoft は、Human Resources からのデータを Dynamics 365 Finance に統合するためのデータ インテグレーター テンプレートを提供します。 テンプレートの詳細については、[Dynamics 365 Human Resources から Dynamics 365 Finance への統合](hr-admin-integration-finance.md) を参照してください。
 
 ### <a name="power-query"></a>Power Query
 
-データ インテグレーターは、[高度なクエリ機能](https://docs.microsoft.com/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering) を通じて [Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query) をサポートしています。 Power Query は、豊富な M 数式言語を含む、強力で柔軟なデータ フィルター処理と変換を提供します。 Power Query は、Power BI レポートを作成したことがあれば、親しみやすいでしょう。
+データ インテグレーターは、[高度なクエリ機能](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering) を通じて [Power Query](/power-query/power-query-what-is-power-query) をサポートしています。 Power Query は、豊富な M 数式言語を含む、強力で柔軟なデータ フィルター処理と変換を提供します。 Power Query は、Power BI レポートを作成したことがあれば、親しみやすいでしょう。
 
 ## <a name="deciding-on-an-integration-technology"></a>統合テクノロジの決定
 

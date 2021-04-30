@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e70d8fc62150d68503552754e94c7130d8960c76
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f8244d512c9e1236fc52cd4a91cdc78cc2b9b984
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802362"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893104"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Dynamics 365 Human Resources (2020年5月14日) の新機能と変更された機能
 
@@ -33,7 +33,7 @@ ms.locfileid: "5802362"
 
 ## <a name="platform-changes"></a>プラットフォームの変更
 
-プラットフォームの変更は今週のリリースに含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.10 のプラットフォーム更新プログラム (2020年5月) ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34) を参照してください。 このリリースには、バグ修正や保存されたビューへの変更が含まれています。
+プラットフォームの変更は今週のリリースに含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.10 のプラットフォーム更新プログラム (2020年5月) ](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md) を参照してください。 このリリースには、バグ修正や保存されたビューへの変更が含まれています。
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Dataverse の候補リストがすべての列挙と一致することを保証する (436343)
 
@@ -116,7 +116,7 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
 

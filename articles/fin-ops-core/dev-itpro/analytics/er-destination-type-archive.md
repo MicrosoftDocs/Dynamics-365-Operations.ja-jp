@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 18c662fee0cedaa55f63ffeb25b0d61ee7baffda
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 079eda04fcc41fc637419a83452db10b89ed1ab9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753531"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894031"
 ---
 # <a name="archive-er-destination-type"></a>ER アーカイブ送信先のタイプ
 
@@ -28,7 +28,7 @@ ms.locfileid: "5753531"
 
 送信ドキュメントを生成するようにコンフィギュレーションされている電子申告 (ER) 形式の各 **フォルダー** または **ファイル** コンポーネントに対して、アーカイブ送信先をコンフィギュレーションできます。 送信先の設定に基づいて、生成されたドキュメントは ER ジョブ リストのレコードの添付ファイルとして保存されます。 結果を表示するには、**組織管理** \> **電子申告** \> **電子申告ジョブ** に移動します。
 
-このオプションを使用して、生成したドキュメントを Microsoft SharePoint フォルダーまたは Microsoft Azure ストレージに送信することができます。 **有効** を **はい** に設定し、選択したドキュメント タイプで定義されている変換先に出力を送信します。 グループが **ファイル** に設定されているドキュメントタイプのみ選択できます。 **組織管理** \> **ドキュメント管理** \> **ドキュメント タイプ** で、ドキュメント [タイプ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) を定義します。 電子申告の送信先への構成は、ドキュメント管理システムの構成と同じです。
+このオプションを使用して、生成したドキュメントを Microsoft SharePoint フォルダーまたは Microsoft Azure ストレージに送信することができます。 **有効** を **はい** に設定し、選択したドキュメント タイプで定義されている変換先に出力を送信します。 グループが **ファイル** に設定されているドキュメントタイプのみ選択できます。 **組織管理** \> **ドキュメント管理** \> **ドキュメント タイプ** で、ドキュメント [タイプ](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) を定義します。 電子申告の送信先への構成は、ドキュメント管理システムの構成と同じです。
 
 [![ドキュメント タイプ ページ](./media/ER_Destinations-SharePointDocuType.png)](./media/ER_Destinations-SharePointDocuType.png)
 
