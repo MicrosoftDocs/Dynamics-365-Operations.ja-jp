@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2727efab48bf6c29fb98c9d9ffc6175ec576f9b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 84955755311a81c7dee76956d14c500a165782a3
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754128"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941125"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 
@@ -55,7 +55,7 @@ Dataverse 環境がリンクされているなら、リーガル テーブル �
 
 ### <a name="if-dual-write-solutions-are-installed-in-dataverse-can-i-uninstall-them"></a>Dataverse に二重書き込みソリューションがインストールされている場合、アンインストールすることはできますか?
 
-二重書き込みソリューションは、アンインストール可能なマネージド ソリューションです。 ただし、マネージド ソリューションをアンインストールすると、ソリューション内のすべてのコンポーネントが削除されます。 コンポーネントに格納されているデータも削除されます。 詳細については、[管理ソリューションの保守](https://docs.microsoft.com/powerapps/developer/common-data-service/maintain-managed-solutions) を参照してください。
+二重書き込みソリューションは、アンインストール可能なマネージド ソリューションです。 ただし、マネージド ソリューションをアンインストールすると、ソリューション内のすべてのコンポーネントが削除されます。 コンポーネントに格納されているデータも削除されます。 詳細については、[管理ソリューションの保守](/powerapps/developer/common-data-service/maintain-managed-solutions) を参照してください。
 
 ### <a name="i-have-data-in-both-a-customer-engagement-app-and-a-finance-and-operations-app-and-i-bootstrap-my-existing-data-in-the-customer-engagement-app-if-my-data-isnt-currently-aligned-can-i-specify-a-master-source-for-the-initialization-run-so-that-all-differences-are-applied-to-the-target"></a>Customer Engagement アプリと Finance and Operations アプリの両方にデータを保持しており、Customer Engagement アプリで既存のデータをブートストラップしています。 現在データが配置されていない場合は、初期化実行でマスタ ソースを指定して、すべての差異がターゲットに適用されるようにすることができますか?
 
@@ -67,7 +67,7 @@ Dataverse 環境がリンクされているなら、リーガル テーブル �
 
 統合キーは、行を一意に識別するナチュラル キーです。 統合キーは、Dataverse テーブルに対してのみ必要です。 二重書き込みで統合キーを手動作成できます。 テーブルに対して代替キーが既に提供されている場合は、テーブルの代替キーから自動的に統合キーを作成することもできます。 統合キーは、代替キーと同じ目的で使用されます。これにより、データを外部システムと統合するための効率的かつ正確な方法が提供されます。 統合キーは、Dataverse の行を一意に識別するグローバル一意識別子 (GUID) が外部システムに格納されていない場合に必須です。
 
-二重書き込みでは、統合キーを使用して、固有の組み合わせを表す 1 つ以上のテーブル列の値を使用して、行を一意に識別します。 たとえば、統合キーを使用して勘定行を識別するには、勘定番号列を使用できます。 別の方法として、勘定番号列を、変更すべきではない値を持つ他の列と共に使用することもできます。 詳細については、[Power Apps ポータルを使用した代替キーの定義](https://docs.microsoft.com/powerapps/maker/common-data-service/define-alternate-keys-portal) を参照してください。
+二重書き込みでは、統合キーを使用して、固有の組み合わせを表す 1 つ以上のテーブル列の値を使用して、行を一意に識別します。 たとえば、統合キーを使用して勘定行を識別するには、勘定番号列を使用できます。 別の方法として、勘定番号列を、変更すべきではない値を持つ他の列と共に使用することもできます。 詳細については、[Power Apps ポータルを使用した代替キーの定義](/powerapps/maker/common-data-service/define-alternate-keys-portal) を参照してください。
 
 キーが Finance and Operations 環境と Dataverse 環境との間で一致していることは重要です。 そうでない場合、初期同期フェーズで問題が発生する可能性があります。
 
@@ -79,9 +79,9 @@ Dataverse 環境がリンクされているなら、リーガル テーブル �
 
 基本的なフィルタ処理の例については、[データのフィルター処理](customizing-mappings.md#filter-your-data) を参照してください。
 
-Dataverse での詳細な例については、[結果のフィルター](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) を参照してください。 二重書き込みソースフィルターでは、ネストしたルックアップはサポートされません。 テーブル列に対して直接、[標準のフィルタ演算子](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators)のみがサポートされています。
+Dataverse での詳細な例については、[結果のフィルター](/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) を参照してください。 二重書き込みソースフィルターでは、ネストしたルックアップはサポートされません。 テーブル列に対して直接、[標準のフィルタ演算子](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators)のみがサポートされています。
 
-Finance and Operations のフィルターの詳細については、[クエリ範囲での式の使用](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges)、および[高度なフィルター処理とクエリ構文](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options) を参照してください。
+Finance and Operations のフィルターの詳細については、[クエリ範囲での式の使用](/dynamicsax-2012/developer/using-expressions-in-query-ranges)、および[高度なフィルター処理とクエリ構文](../../../fin-ops/get-started/advanced-filtering-query-options.md) を参照してください。
 
 ### <a name="dual-write-live-synchronization-introduces-tight-coupling-across-applications-what-happens-if-one-side-fails-will-the-other-side-fail-too"></a>二重書き込みライブ同期では、アプリケーション間に緊密な結合が導入されます。 1 つの側に障害が発生した場合はどうなりますか? 他方の側でも障害が発生するでしょうか?
 
@@ -114,7 +114,7 @@ Prospect to Cash を二重書き込みに移行する方法の詳細について
 
 ### <a name="when-i-use-the-dataverse-offline-app-what-happens-if-i-cant-sync-the-data-after-reconnection-does-this-situation-cause-an-inconsistent-state-between-the-dataverse-environment-and-the-finance-and-operations-environment"></a>Dataverse オフライン アプリを使用して、再接続後にデータを同期できない場合はどうなりますか? この状況により、Dataverse 環境と Finance and Operations 環境との間で状態が矛盾することになりますか?
 
-[電話用 Dynamics 365 アプリ](https://docs.microsoft.com/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)、または [Field Service Mobile アプリ](https://docs.microsoft.com/dynamics365/field-service/field-service-mobile-overview) をオフライン モードで使用すると、Dataverse データをオフラインで操作できます。 両方のアプリで、データはオフラインで保存され、お客様の裁量で、サーバーとの同期を行うことができます。 オフライン データとサーバーの同期中にエラーが発生し、他の環境が失敗しているために更新ができない場合、データ同期は失敗し、Dataverse は更新されません。 統合が一時停止したときに、同期を再度実行して、サーバーに更新データを保存することができます。 これらの変更はステージングされ、マッピングが再度実行されるときに Finance and Operations 環境に同期されます。 詳細については、[Power Apps Mobile でモデル駆動型アプリおよびキャンバス アプリを実行する](https://docs.microsoft.com/powerapps/mobile/run-powerapps-on-mobile)を参照してください。
+[電話用 Dynamics 365 アプリ](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)、または [Field Service Mobile アプリ](/dynamics365/field-service/field-service-mobile-overview) をオフライン モードで使用すると、Dataverse データをオフラインで操作できます。 両方のアプリで、データはオフラインで保存され、お客様の裁量で、サーバーとの同期を行うことができます。 オフライン データとサーバーの同期中にエラーが発生し、他の環境が失敗しているために更新ができない場合、データ同期は失敗し、Dataverse は更新されません。 統合が一時停止したときに、同期を再度実行して、サーバーに更新データを保存することができます。 これらの変更はステージングされ、マッピングが再度実行されるときに Finance and Operations 環境に同期されます。 詳細については、[Power Apps Mobile でモデル駆動型アプリおよびキャンバス アプリを実行する](/powerapps/mobile/run-powerapps-on-mobile)を参照してください。
 
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング
 
@@ -125,7 +125,7 @@ Finance and Operations アプリと Customer Engagement アプリの番号順序
 + Finance and Operationsアプリでは、**F0001、F0002、F0003** を使用します。 Customer Engagement アプリでは、**C0001、C0002、C0003** を使用します。
 + Finance and Operations アプリでは、**US0001 から US4999 まで** を使用します。 Customer Engagement アプリでは、**US5000 から US9999 まで** を使用します。
 
-テーブルが単一のシステムで作成された場合は、ソース アプリに対してのみ番号順序を設定します。 詳細については、[自動付番列](https://docs.microsoft.com/powerapps/maker/common-data-service/autonumber-columns)を参照してください。
+テーブルが単一のシステムで作成された場合は、ソース アプリに対してのみ番号順序を設定します。 詳細については、[自動付番列](/powerapps/maker/common-data-service/autonumber-columns)を参照してください。
 
 ### <a name="can-i-map-a-company-specific-table-in-a-customer-engagement-app-with-a-global-table-in-a-finance-and-operations-app-or-a-global-table-in-a-customer-engagement-app-with-a-company-specific-table-in-a-finance-and-operations-app"></a>Customer Engagement アプリの会社固有のテーブルを Finance and Operations アプリのグローバル テーブルに、または Customer Engagement アプリのグローバル テーブルを Finance and Operations アプリの会社固有のテーブルにマップすることはできますか?
 
@@ -139,7 +139,7 @@ Dataverse の会社固有のカスタム テーブルを作成するには、カ
 
 ### <a name="is-there-a-document-about-best-practices-for-table-usage-should-i-use-customers-v2-customers-v3-or-customer-details-what-is-the-difference-between-these-tables-and-what-is-the-use-case-for-each"></a>テーブルの使用方法に関するベスト プラクティスについてのドキュメントがありますか? 顧客 V2、顧客 V3、または顧客の詳細を使用する必要がありますか? これらのテーブルの違いは何ですか、またそれぞれのユース ケースはどのようなものですか?
 
-可能であれば、顧客や仕入先の統合などの一般的なシナリオをカバーしている[標準のシナリオ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping)を使用してください。
+可能であれば、顧客や仕入先の統合などの一般的なシナリオをカバーしている[標準のシナリオ](./customer-mapping.md)を使用してください。
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

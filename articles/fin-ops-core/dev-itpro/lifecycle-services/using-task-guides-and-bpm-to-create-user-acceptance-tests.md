@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3ca3fe21da39104ac11dd8bbae896d36af9b4339
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a08117f5dcf1b53fa519a0b16d8fb58b7a8a01c9
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748771"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921409"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -27,7 +27,7 @@ ms.locfileid: "5748771"
 
 タスク レコーダーおよびビジネス プロセス モデラー (BPM) を使用して、ユーザー承認テスト ライブラリを作成することができます。 タスク レコーダーは、テスト ケースを記録し、BPM を使用して業務プロセス別に整理する強力なツールです。 Microsoft パートナーは、BPM を使用して LCS および LCS ソリューション経由で顧客にテスト ライブラリを配布することができます。 顧客の場合、BPM を使用し、さまざまなプロジェクトおよびチーム間でテスト ライブラリを作成して配布します。
 
-BPM は Azure DevOps (旧 Visual Studio Team Services) と同期することができるので、Azure DevOps プロジェクトでテスト ケース (テスト ステップを含む) を自動的に作成できます。 その後、Azure DevOps は、対象となるテスト計画およびテスト スイートを作成して、テストの実行を管理し、結果を調査できるテスト構成およびテスト管理ツールとして動作できます。 Azure DevOps を使用したテストの詳細については、[テスト計画、テスト スイート、テスト ケースとは?](https://docs.microsoft.com/azure/devops/test/create-a-test-plan?view=azure-devops#what-are-test-plans-test-suites-and-test-cases) を参照してください
+BPM は Azure DevOps (旧 Visual Studio Team Services) と同期することができるので、Azure DevOps プロジェクトでテスト ケース (テスト ステップを含む) を自動的に作成できます。 その後、Azure DevOps は、対象となるテスト計画およびテスト スイートを作成して、テストの実行を管理し、結果を調査できるテスト構成およびテスト管理ツールとして動作できます。 Azure DevOps を使用したテストの詳細については、[テスト計画、テスト スイート、テスト ケースとは?](/azure/devops/test/create-a-test-plan?view=azure-devops#what-are-test-plans-test-suites-and-test-cases) を参照してください
 
 このトピックでは、手動テストまたは自動テストに使用する承認テスト スイートを作成および実行するプロセスについて説明します。
 
@@ -152,7 +152,7 @@ Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳�
 
 ![マーク済み VSTS テスト](./media/vsts_test_marked.png "マーク済み VSTS テスト")
 
-Azure DevOps は、**テスト ランナー** というツールを提供して、手動テスト ケースの実行も管理します。 テスト ランナーの使用の詳細については、[手動テストの実行](https://docs.microsoft.com/vsts/manual-test/getting-started/run-manual-tests) を参照してください。
+Azure DevOps は、**テスト ランナー** というツールを提供して、手動テスト ケースの実行も管理します。 テスト ランナーの使用の詳細については、[手動テストの実行](/vsts/manual-test/getting-started/run-manual-tests) を参照してください。
 
 Azure DevOps はテストだけでなく、結果の管理と軽減策のための豊富な管理機能セットを提供するので、VSTS の活用をお勧めします。
 
@@ -166,7 +166,7 @@ Finance and Operations のプラットフォームは、タスク記録に基づ
 
 #### <a name="investigate-test-runs"></a>テストの実行を調査します
 自動実行が完了したら、Azure DevOps ツール バーで **テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。
-Azure DevOps のテストおよびテスト管理の詳細については、[Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops)を参照してください。
+Azure DevOps のテストおよびテスト管理の詳細については、[Azure DevOps ドキュメント](/azure/devops)を参照してください。
 
 
 

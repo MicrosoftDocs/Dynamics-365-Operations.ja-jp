@@ -4,8 +4,6 @@ description: このトピックでは、X++ 言語での delete および doDele
 author: RobinARH
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150273
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 7c4b4fcfbfcfec1efb8d57212af161a1e1d3455d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 55ac358b36f98afeed9c7d69dbf189b98eb2b711
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749964"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865971"
 ---
 # <a name="delete-data"></a>データの削除
 

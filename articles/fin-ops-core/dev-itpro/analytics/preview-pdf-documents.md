@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 5027e01834fae3ad313a8e2a2156469b30a0b157
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6de5dd4cce65a328dfbd5390ac709bcf66dbac9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745049"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892475"
 ---
 # <a name="preview-pdf-documents-using-a-pdf-viewer"></a>PDF ビューアを使用した PDF ドキュメントのプレビュー
 
@@ -38,7 +38,7 @@ ms.locfileid: "5745049"
 - 組み込みツールによって、ビジネスドキュメントの内容をすばやく閲覧することができます。
 
 ## <a name="accessing-the-pdf-preview-experience-platform-update-36-or-later"></a>PDF プレビュー機能へのアクセス (プラットフォーム更新プログラム 36 以降)
-PDF プレビュー エクスペリエンスは、既定では [セルフサービス配置](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack) およびプラットフォーム更新プログラム 39 またはそれ以降でホストされている環境で有効化されます。 プラットフォーム更新プログラム 36 から 38 を実行していて、クラウドでホストされている環境および Microsoft が管理する環境で PDF プレビュー エクスペリエンスを使用するには、機能管理を使用して **レポート PDF ビューアー** 機能を有効にします。
+PDF プレビュー エクスペリエンスは、既定では [セルフサービス配置](../deployment/infrastructure-stack.md) およびプラットフォーム更新プログラム 39 またはそれ以降でホストされている環境で有効化されます。 プラットフォーム更新プログラム 36 から 38 を実行していて、クラウドでホストされている環境および Microsoft が管理する環境で PDF プレビュー エクスペリエンスを使用するには、機能管理を使用して **レポート PDF ビューアー** 機能を有効にします。
 
 ## <a name="additional-feature-information"></a>追加の機能
 - 既定では、展開/折りたたみが可能なセクションが用意されています。 これらのインタラクティブな操作は、PDFドキュメントが作成された後には機能しなくなります。

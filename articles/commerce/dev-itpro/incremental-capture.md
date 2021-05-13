@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 94c3f2ee8487c6832121c5269a83d4611f353ca0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 56a60e88293d1c75ceb04b435c3395b23f91eb81
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800409"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937080"
 ---
 # <a name="incremental-capture-for-order-invoicing"></a>注文請求の増分取得
 
@@ -150,7 +150,7 @@ public static string SupportsMultipleCaptures
 
 ## <a name="additional-resources"></a>追加リソース
 
-[支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+[支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [Adyen 向け Dynamics 365 Payment Connector](adyen-connector.md?tabs=8-1-3)
 

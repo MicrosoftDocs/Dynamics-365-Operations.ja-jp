@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 85f1edc004184d0e203f251935b20b222aed3481
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0d3d31ade617f45d0a890e9eaf9a7a3fca292aff
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745345"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940906"
 ---
 # <a name="azure-data-lake-overview"></a>Azure Data Lake の概要
 
@@ -31,7 +31,7 @@ Microsoft Azure Data Lake は、Azure cloud で大きなデータの分析およ
 
 Data Lakes が提供するクラウドストレージは、リレーショナルデータベースが提供するものよりも安価です。 そのため、大量のデータをクラウドに格納できます。 このデータには、従来、業務システムとデータ ウェアハウス、デバイス、センサーのデータに格納されている、デバイスからの信号などの業務データが含まれます。 さらに、Data Lakeは、大量のデータの報告、照会、変換を実現する広範なツールとプログラミング言語に対応しています。
 
-Data Lake ストレージ Gen2 の概要については、[Azure Data Lake Storage Gen2 入門](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)を参照してください。
+Data Lake ストレージ Gen2 の概要については、[Azure Data Lake Storage Gen2 入門](/azure/storage/blobs/data-lake-storage-introduction)を参照してください。
 
 Finance and Operationsアプリケーションなど Dynamics 365 製品では、Data Lake の AI や分析のシナリオを行うことができます。 お客様はこのテクノロジーが提供する強みとコストの進歩を活用することができます。 次の表では、シナリオの概要を示しています。
 
@@ -46,13 +46,13 @@ Finance and Operationsアプリケーションなど Dynamics 365 製品では�
 - 既製の分析ワークスペースを使用、拡張することで、ワークスペースを新たに作成する必要がなくなります。
 - Power BIをベースにした独自の分析レポートを作成します。
 
-詳細については、[ワークスペースに組み込まれている Power BI ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/finance/toc.json) を参照してください。
+詳細については、[ワークスペースに組み込まれている Power BI ](../analytics/embed-power-bi-workspaces.md) を参照してください。
 
 ## <a name="byod"></a>BYOD
 
 独自のデータベースを導入する (BYOD) は、顧客が Finance and Operations アプリからデータを独自のデータ ウェアハウスに抽出できるサービスです。 Finance and Operations アプリのデータを他のシステムと組み合わせる必要がある場合や、以前のデータを利用したレポートと組み合わせなければならない場合は、BYOD を利用することを推奨します。
 
-詳細については、[独自のデータベースを導入する (byod)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database)を参照してください。
+詳細については、[独自のデータベースを導入する (byod)](../analytics/export-entities-to-your-own-database.md)を参照してください。
 
 ## <a name="data-lake-combines-byod-and-entity-store"></a>BYODとエンティティー ストアの組み合わせによる Data Lake
 
@@ -93,7 +93,7 @@ Finance and Operationsアプリケーションなど Dynamics 365 製品では�
 
 ![Finance and Operations における共通データモデルのフォルダ構造](./media/FnO-CDM-Folder-Structure.png)
 
-Data Lake の共通データモデルに関する詳細については、 [共通データモデルを使用して Azure Data Lake Storage Gen2 を最適化する](https://docs.microsoft.com/common-data-model/data-lake) を参照してください。
+Data Lake の共通データモデルに関する詳細については、 [共通データモデルを使用して Azure Data Lake Storage Gen2 を最適化する](/common-data-model/data-lake) を参照してください。
 
 次に例を示します。
 
@@ -103,7 +103,7 @@ Data Lake の共通データモデルに関する詳細については、 [共�
 Finance and Operations アプリと同様に、他のサービス（Dataverse を含む）、Azure IoT、多くのサードパーティ製ツールやサービスは、共通データモデルフォルダ内のデータを理解して作業することができます。 サービスの一覧は増えています。 次にいくつか例を挙げます。
 
 - Dataverse データを自分の Data Lake にエクスポートできます。 詳細については、[Dataverse データを Azure Data Lake にエクスポートすることは一般的に利用可能です](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) を参照してください。
-- パワーユーザーは、Dataverse データフローを使用して Data Lake のデータを変換できます。 詳細については、[共通データモデルを使用して Azure Data Lake Storage Gen2 を最適化する](https://docs.microsoft.com/common-data-model/data-lake)を参照してください。
+- パワーユーザーは、Dataverse データフローを使用して Data Lake のデータを変換できます。 詳細については、[共通データモデルを使用して Azure Data Lake Storage Gen2 を最適化する](/common-data-model/data-lake)を参照してください。
 
 ## <a name="how-you-can-use-data-lake-later-if-youre-currently-using-byod"></a>現在 BYOD を使用している場合に、後から Data Lake を使用する方法
 

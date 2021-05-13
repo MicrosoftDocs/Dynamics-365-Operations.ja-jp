@@ -4,8 +4,6 @@ description: このトピックでは、デリゲート メソッドで EventHan
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.assetid: 3b2a9b85-f779-4358-b347-7b11a8e7960c
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ffae81eeb660054b181669e318c3b79a046d84bf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 56e972d67e8056b9b2a41de2419f882bb7604689
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745645"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866340"
 ---
 # <a name="eventhandlerresult-classes-in-request-or-response-scenarios"></a>要求または応答シナリオの EventHandlerResult クラス
 

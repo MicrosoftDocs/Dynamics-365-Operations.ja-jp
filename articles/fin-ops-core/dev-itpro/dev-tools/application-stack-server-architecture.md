@@ -4,8 +4,6 @@ description: アプリケーション スタックはいくつかのモデルに
 author: RobinARH
 ms.date: 04/30/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31751
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce210e4c36c4a2e4b0ee900a38b03c25252d46a4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b56808c0ea8c2634551c15006eb7db004d3ff6f2
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743441"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865954"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 

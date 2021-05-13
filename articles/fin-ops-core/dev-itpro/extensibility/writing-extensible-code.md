@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: adfd27d038ae1c07d3c56e079f421fdd1e9cc31f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b75b10a2618ee9de737d6a1700ea4e06365427e1
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744215"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866244"
 ---
 # <a name="write-extensible-code"></a>拡張可能なコードの書き込み
 

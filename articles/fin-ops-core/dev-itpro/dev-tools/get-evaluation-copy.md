@@ -4,8 +4,6 @@ description: パブリック プレビューを使用できます。
 author: RobinARH
 ms.date: 11/02/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
 ms.custom: 85243
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36d92e9742d04ca010d5c9fb4737b16bd4d7ecf4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d4324ccac01bcfa5a4d1afa89882dcf7eb363137
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750312"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866334"
 ---
 # <a name="get-evaluation-copies"></a>ベータ評価版の入手
 

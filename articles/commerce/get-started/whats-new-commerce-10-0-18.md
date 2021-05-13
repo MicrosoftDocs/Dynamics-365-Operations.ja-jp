@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce 10.0.18 の機能のプレビュー (2021 年 5 月)
+title: Dynamics 365 Commerce 10.0.18 (2021 年 5 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.18 の新機能または変更された機能について説明します。
 author: josaw1
 ms.date: 03/04/2021
@@ -15,16 +15,15 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 19da3c736668e9ed16714f430fda11bda8f8de72
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e5ba227ff1c762cc08bd362c2b6588ecff72b233
+ms.sourcegitcommit: dcc6a5dcb6595e421eec5d6c4dbb2bad6de7de40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797134"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5916193"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10018-may-2021"></a>Dynamics 365 Commerce 10.0.18 の機能のプレビュー (2021 年 5 月)
+# <a name="whats-new-and-changed-in-dynamics-365-commerce-10018-may-2021"></a>Dynamics 365 Commerce 10.0.18 (2021 年 5 月) の新機能と変更された機能
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 

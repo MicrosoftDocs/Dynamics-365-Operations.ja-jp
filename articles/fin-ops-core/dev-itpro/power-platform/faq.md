@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 49df3087d3d99c4dba7392a82a52b9139301bb17
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2861022febf1b9c08b47ae7b5e3c410593a5beeb
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835498"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908690"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
@@ -26,7 +26,7 @@ ms.locfileid: "5835498"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問のコレクションを示します。 
 
@@ -107,7 +107,7 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 
 ### <a name="is-there-guidance-on-when-to-use-a-virtual-entity-and-when-to-use-dual-write"></a>いつ仮想エンティティを使用するか、いつ二重書き込みを使用するかについてのガイダンスはありますか?
 
-仮想エンティティおよび二重書き込みを使用する場合のガイダンスについては、「[データ統合戦略の選択](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview)」で説明されいています。
+仮想エンティティおよび二重書き込みを使用する場合のガイダンスについては、「[データ統合戦略の選択](../data-entities/integration-overview.md)」で説明されいています。
 
 ### <a name="when-adding-records-using-virtual-entities-is-there-any-way-to-use-number-sequences"></a>仮想エンティティを使用してレコードを追加する場合、番号順序を使用する方法はありますか?
 はい、Finance and Operations エンティティで番号順序が自動生成される場合は、仮想エンティティからも同じように機能します。
@@ -120,5 +120,6 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 
 仮想エンティティに他のエンティティとのリレーションシップがある場合は、フィールドの選択リストに関連エンティティの外部キー値が含まれる場合、仮想エンティティ フレームワークは、関連するエンティティをクエリする必要があります。 既定では、エンティティに対するクエリは、呼び出し元が特定のフィールド セットを要求しない限り、すべてのフィールドを返します。 ベスト プラクティスは、絞り込み選択リストを指定します。 これは、パフォーマンスの低下を防ぐのに役立ちます。
 
+この問題の例については、[仮想テーブル クエリの Dataverse 最適化](../../../human-resources/hr-developer-optimize-virtual-table-queries.md) で説明します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

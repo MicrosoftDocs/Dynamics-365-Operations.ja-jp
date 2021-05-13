@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0318814f421ab862559965bb4b003308d6279812
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799448"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936783"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>ユーザーのサインインに対するカスタム ページの設定
 
@@ -32,7 +32,7 @@ Dynamics 365 Commerce で作成されたカスタム ページを利用してユ
 カスタム Commerce ページは、サインイン、登録、アカウント プロファイル編集、パスワード リセット、汎用の AAD モジュールを使用して構築できます。 これらのカスタム ページ用に公開されたページ URL は、Azure ポータルの Azure AD B2C ポリシー コンフィギュレーションで参照する必要があります。
 
 > [!WARNING] 
-> Azure AD B2C は、2021 年 8 月 1 日までに古い (レガシ) ユーザー フローを破棄します。 したがって、ユーザー フローを新しい推奨バージョンに移行する必要があります。 新しいバージョンでは、機能パリティと新しい機能が提供されます。 詳細については、[Azure Active Directory B2C のユーザー フロー](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview) を参照してください。
+> Azure AD B2C は、2021 年 8 月 1 日までに古い (レガシ) ユーザー フローを破棄します。 したがって、ユーザー フローを新しい推奨バージョンに移行する必要があります。 新しいバージョンでは、機能パリティと新しい機能が提供されます。 詳細については、[Azure Active Directory B2C のユーザー フロー](/azure/active-directory-b2c/user-flow-overview) を参照してください。
 
 >推奨される B2C ユーザー フローには、Commerce のバージョン 10.0.15 以上のモジュール ライブラリを使用する必要があります。 また、Azure AD B2C で提供されている既定のユーザー ポリシー ページを使用して、企業のブランディングに合わせて背景画像やロゴ、背景色を変更することができます。 デザインの機能については制限がありますが、既定のユーザー ポリシー ページは、専用のカスタム ページを作成・設定しなくても、Azure AD の B2C ポリシーの機能を提供します。 
 

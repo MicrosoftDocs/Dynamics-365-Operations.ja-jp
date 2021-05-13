@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 28761664196d325689d11eb30efa019691b0056a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d66c75039ec6d1f1fc1b55b52396874887c601a5
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752264"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921203"
 ---
 # <a name="subscription-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のサブスクリプション試算
 
@@ -61,7 +61,7 @@ ms.locfileid: "5752264"
 
 ### <a name="how-can-i-update-my-subscription-if-my-production-environment-is-deployed"></a>実稼動環境が配置されている場合、どのようにサブスクリプションを更新ことができますか?
 
-[サブスクリプション見積](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) は、実働の要求をする前に必要なステップです。 複数の見積を使用できますが、1 つは **アクティブ** とマークする必要があります。 有効なサブスクリプション見積を使用して、実稼働環境のサイズを変更することができます。 実稼動環境が配置された後、または環境の配置がサインオフされた後、アクティブな見積もりはロックされます。 別の見積もりを有効見積もりとしてマークするには、LCS のサポート ポータルを使用してサポート要求を作成します。 プロジェクトのライセンス量が増加した場合、新しいサブスクリプション見積を作成し、サポート リクエストを記録して、有効としてマークする必要があります。 サイズ変更をする場合、新しいサブスクリプション見積に基づいて適用されることがあります。
+[サブスクリプション見積](subscription-estimator.md) は、実働の要求をする前に必要なステップです。 複数の見積を使用できますが、1 つは **アクティブ** とマークする必要があります。 有効なサブスクリプション見積を使用して、実稼働環境のサイズを変更することができます。 実稼動環境が配置された後、または環境の配置がサインオフされた後、アクティブな見積もりはロックされます。 別の見積もりを有効見積もりとしてマークするには、LCS のサポート ポータルを使用してサポート要求を作成します。 プロジェクトのライセンス量が増加した場合、新しいサブスクリプション見積を作成し、サポート リクエストを記録して、有効としてマークする必要があります。 サイズ変更をする場合、新しいサブスクリプション見積に基づいて適用されることがあります。
 
 ### <a name="what-should-i-do-to-activate-my-subscription-estimate-if-i-have-multiple-projects-in-the-same-tenant"></a>同じテナントに複数のプロジェクトがある場合、サブスクリプション見積を有効にするには何をする必要がありますか?
 
@@ -75,7 +75,7 @@ ms.locfileid: "5752264"
 その他のエラー メッセージが表示されたり、その他の問題が発生した場合は、サポート チームがその問題に対処できるようにサポート リクエストを作成し、アクティブな見積を添付します。
  
  ## <a name="additional-resources"></a>追加リソース
- [サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview)
+ [サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問](../../fin-ops/get-started/subscription-overview.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

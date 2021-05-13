@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 44158b4026760a86916074ed402a5574fdd7da72
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9361fb4a784decd3fa4293482826496fa027506b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747133"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890846"
 ---
 # <a name="workflow-type-checklist"></a>ワークフロー タイプ チェックリスト
 
@@ -37,7 +37,7 @@ ms.locfileid: "5747133"
 
 1. ワークフロー ドキュメント クラスを作成し、ワークフローに使用するクエリをクラスにバインドします。 詳細については、 [新しいワークフロー ドキュメント クラスの作成](workflow-type-document-create.md) を参照してください。
 2. ワークフロー ドキュメント クラスをワークフロー タイプにバインドします。 詳細については、 [ワークフロー ドキュメント クラスとワークフロー タイプの関連付け](workflow-type-associate-document.md) を参照してください。
-3. 開始、完了、コンフィギュレーションの変更、およびキャンセルされたイベントのワークフロー イベント ハンドラーを作成し、イベント ハンドラーをワークフロー タイプにバインドします。 詳細については、 [新しいワークフロー イベント ハンドラーの作成](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler) を参照してください。
+3. 開始、完了、コンフィギュレーションの変更、およびキャンセルされたイベントのワークフロー イベント ハンドラーを作成し、イベント ハンドラーをワークフロー タイプにバインドします。 詳細については、 [新しいワークフロー イベント ハンドラーの作成](/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler) を参照してください。
 4. **SubmitToWorkflowMenuItem** のクラスを作成します。 必要に応じて、 **CancelMenuItem** のクラスを作成します。 次のステップで作成するアクション メニュー項目にクラスをバインドします。 詳細については、[クラスおよびメソッド](../../dev-itpro/dev-ref/xpp-classes-methods.md) を参照してください。
 5. **SubmitToWorkflowMenuItem** ワークフロー プロパティのアクション メニュー項目を作成します。 必要に応じて、 **CancelMenuItem** プロパティのアクション メニュー項目を作成します。 アクションをワークフロー タイプにバインドします。 詳細については、 [新しいワークフロー タイプの作成](workflow-type-create-new.md) を参照してください。
 

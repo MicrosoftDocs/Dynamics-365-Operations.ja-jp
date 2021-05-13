@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: c0f9e9e9fc89044b028023102ddca7d59ba5259e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6bb549a0bcb705dd56f89bb6a705bf9c8d1ae56b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749267"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921411"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
@@ -48,7 +48,7 @@ ms.locfileid: "5749267"
 
 ## <a name="notice"></a>通知
 
-[リリース プラン](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) は、事前に計画を立て、変更点を理解するのに役立ちます。 最大で 3 か月前から次の新機能について学ぶことができます。 [新機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) のトピックでは特定の月の更新プログラムに関する詳細を提供します。
+[リリース プラン](/business-applications-release-notes/april19/dynamics365-finance-operations/) は、事前に計画を立て、変更点を理解するのに役立ちます。 最大で 3 か月前から次の新機能について学ぶことができます。 [新機能](../../fin-ops/get-started/whats-new-changed.md) のトピックでは特定の月の更新プログラムに関する詳細を提供します。
 
 さらに、通知電子メールが 5 日前に送信され、次の図に示すように更新の直前に通知が LCS に表示されます。
 

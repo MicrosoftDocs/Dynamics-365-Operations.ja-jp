@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 3fd347607f5d64d54d3058f4ef1b0ed60ca54e66
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e226fa2189ff5ddd04dbd0af27f343451dc6379
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831677"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919896"
 ---
 # <a name="rebate-statuses"></a>リベートの状態
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 リベートの状態を使用すると、各リベート管理取引の状態を追跡できます。 レポートや照会の目的でも使用できます。 業務プロセスをサポートするために必要な数のリベート状態の値を設定および名前を付けできます。 
 

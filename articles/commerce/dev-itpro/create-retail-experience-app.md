@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6b9f859bd4f614f907fb3ec8435fcc1a019b1c80
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2e6e7436e9d93bfe26b210185ea9a82b6b1fadef
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791189"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937108"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 
@@ -35,7 +35,7 @@ Retail Experience アプリは、Android および iOS スマートフォン プ
 
 Xamarin は [Xamarin 用の Visual Studio Tools](https://www.xamarin.com/download) からダウンロードできます。 
 
-Windows に Xamarin をインストールする方法を示すチュートリアルについては 「[Xamarin のリソース](https://docs.microsoft.com/xamarin/get-started/installation/index?pivots=windows)」 を参照してください。
+Windows に Xamarin をインストールする方法を示すチュートリアルについては 「[Xamarin のリソース](/xamarin/get-started/installation/index?pivots=windows)」 を参照してください。
 
 ### <a name="update-xamarin"></a>Xamarin の更新
 

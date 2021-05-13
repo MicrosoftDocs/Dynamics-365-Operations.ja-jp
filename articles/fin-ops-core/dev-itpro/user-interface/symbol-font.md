@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: bensm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2fc7868cb6e77cf3f37edc2d6ecfc314fe04ebf6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3535af87fa39a7a4bc91fd12ebd1eda4fc61a200
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749590"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909367"
 ---
 # <a name="dynamics-symbol-font"></a>Dynamics Symbol フォント
 
@@ -27,6 +27,6 @@ ms.locfileid: "5749590"
 
 Dynamics Symbol フォントは、製品で使用できる標準の記号のセットを定義します。 これらの記号は、主にボタン、タイル、画像の各コントロールに使用されます。 すべてのリリースで、このフォントに更新が発生する可能性があります。 たとえば、記号が追加または削除される可能性があります。
 
-シンンボル フォントが更新されたすべてのリリースで使用可能なシンンボル (名前およびイメージ) の一覧にアクセスするには、[[Dynamics Symbol Font](https://docs.microsoft.com/dynamics/s-e/ax/axsymbolfont_60)] ページをアクセスしてください。 製品で、記号が使用されているさまざまな場所の説明と、場所ごとの使用方法のガイドラインも含まれています。
+シンンボル フォントが更新されたすべてのリリースで使用可能なシンンボル (名前およびイメージ) の一覧にアクセスするには、[[Dynamics Symbol Font](/dynamics/s-e/ax/axsymbolfont_60)] ページをアクセスしてください。 製品で、記号が使用されているさまざまな場所の説明と、場所ごとの使用方法のガイドラインも含まれています。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

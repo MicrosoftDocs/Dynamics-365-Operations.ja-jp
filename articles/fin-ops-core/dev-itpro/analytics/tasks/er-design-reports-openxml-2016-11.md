@@ -2,7 +2,7 @@
 title: OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)
 description: このトピックでは、OPENXML 形式で電子ドキュメントを生成するためのテンプレートを含む新しい電子申告 (ER) コンフィギュレーションを作成する方法について説明します。
 author: NickSelin
-ms.date: 08/12/2019
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2f84621028c36cf79d6fb9ab07707bdb970d97e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0f23748f6f1d2c3045b1dc69d8e46821f67da593
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754989"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944271"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)
 
@@ -28,7 +28,7 @@ ms.locfileid: "5754989"
 
 この例では、サンプル会社 Litware, Inc. のコンフィギュレーションを作成します。これらの手順は GBSI 会社で実行されます。
 
-この手順を完了するには、まず 「構成プロバイダーを作成し、有効としてマークする」 に記載の手順を完了する必要があります。 テンプレートを作成するときにインポートされる Excel ファイルも必要です。 このファイルは[支払レポートのテンプレート](https://go.microsoft.com/fwlink/?linkid=862266) からアクセスできます。
+この手順を完了するには、まず 「構成プロバイダーを作成し、有効としてマークする」 に記載の手順を完了する必要があります。 テンプレートを作成するときにインポートされる Excel ファイルも必要です。 このファイルは[支払レポートのテンプレート](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) からアクセスできます。
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>支払データ モデルのコンフィギュレーションをアップロードします。

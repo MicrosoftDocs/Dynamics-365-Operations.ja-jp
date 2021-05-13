@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce740587d10d52f5ffd2c3b0c3aa2fc127d8cbb1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7ec73ff786f190811abb95729a1b8b5834f4fdfd
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745141"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909020"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 
@@ -28,7 +28,7 @@ ms.locfileid: "5745141"
 このトピックでは、トレース パーサーを使用してトレースを操作し、展開におけるパフォーマンスを分析する方法について説明します。 Trace Parser を使用すると、さまざまな種類のエラーを見つけて診断することができます。 また、ツールを使用して X++ メソッドの実行、および実行コール ツリーを視覚化することができます。
 
 > [!NOTE]
-> Trace parser には Microsoft Dynamics AX 2012 と類似する機能が多数あります。 詳細については、 [Dynamics Ax Performance チーム ブログ](https://blogs.msdn.com/axperf) を参照してください。
+> Trace parser には Microsoft Dynamics AX 2012 と類似する機能が多数あります。 詳細については、 [Dynamics Ax Performance チーム ブログ](/archive/blogs/axperf/) を参照してください。
 
 ## <a name="finding-the-trace-parser"></a>Trace Parser の検索
 トレース パーサーには、開発者展開または VHD があらかじめインストールされている必要があります。 インストール場所は **C:\\Program Files (x86)\\Microsoft Dynamics Trace Parser** です。 インストールされていない場合は、インストーラーを **C:\\PerfSDK\\PerfTools\\traceparser.msi** から実行することができます。
@@ -58,7 +58,7 @@ ms.locfileid: "5745141"
 
 **呼び出しツリーの表示** **呼び出しツリー** タブを選択すると、すべての X++ メソッドの呼び出しツリーが表示されます。 タブは、次に示します。 
 
-[呼び出しツリー タブに表示される情報の例](./media/3_desktop.png)](./media/3_desktop.png) 
+[呼び出しツリー タブに表示される情報の例](./media/3_desktop.png)] (./media/3_desktop.png) 
 
 デスクトップ同様に、**X++** タブを表示し、すべての X++ メソッドの一覧を表示することができます。 包括的/排他的な期間、RPC、データベース呼び出しなどのフィールドでソートされます。 これらは Trace Parser の対応するタブに類似しており、同じ動作をすることに注意してください。
 

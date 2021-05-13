@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 08190b3094ea4e4beffb46ac875c2c599556e319
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f4f23b78596a4f3b6b57af3d4cdf2b2bf513f092
+ms.sourcegitcommit: d02ab79c18200cbccbab6c57aad396ef0b3838d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804467"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857958"
 ---
 # <a name="dynamics-365-payment-connector-for-paypal"></a>PayPal 向け Dynamics 365 Payment Connector
 
@@ -104,6 +104,9 @@ PayPal 支払コネクタをテストするには、最初に PayPal 開発者�
 6. **PayPal** などの **ID** を指定します。 **PayPal** などの **電子支払名** を設定します。 **種類** に **ウォレット** を設定し、**発行者** に **PayPal** などの名前を指定します。 **保存** を選択します。
 7. 以前に作成したエントリを選択し、**プロセッサ マッピング** を選択します。
 8. **プロセッサ支払方法のマッピング** ページで、以前に作成した **PayPal** のカード タイプを選択します。 中央の列で、**PayPal 向け Dynamics 365 Payment Connector** を選択し、**追加** を選択します。 
+
+> [!NOTE]
+> **プロセッサの支払方法のマッピング** 機能により、チャネル データベースに同期する必要がある新しいテーブルを追加します。 このデータを Commerce スケジューラに追加するには、Commerceスケジューラを初期化する必要があります。 詳細については、[commerce スケジューラのコンフィギュレーションの更新](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/cdx-best-practices#updating-configurations) に関連するドキュメントを参照してください。 
 
 ### <a name="set-up-the-paypal-payment-connector-in-payment-services"></a>支払サービスで PayPal 支払コネクタを設定する
 

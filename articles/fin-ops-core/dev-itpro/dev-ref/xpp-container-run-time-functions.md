@@ -4,22 +4,19 @@ description: このトピックでは、コンテナー ランタイム関数に
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31301
-ms.assetid: 5b4741a5-dec1-4a3b-b739-6c12142ac668
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 028397990b257fa3fbfc54af829559f30b217136
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fb98b9ce402924369d9d6f7696930cce073a6772
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753032"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865876"
 ---
 # <a name="x-container-runtime-functions"></a>X++ コンテナー ランタイム関数
 

@@ -4,8 +4,6 @@ description: このトピックでは、X++ 言語での update および doUpda
 author: RobinARH
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150273
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: d1354cf2663a80d971f03841ae14b4fc2485742e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01ec063c975d3af53cf7e09b1ec9b77454f97ec6
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749952"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865906"
 ---
 # <a name="update-data"></a>データの更新
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797842"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936833"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>コンテンツ配信ネットワーク (CDN) のサポートの追加
 
@@ -47,7 +47,7 @@ Dynamics 365 Commerce の E コマース環境を設定すると、CDN サービ
 
 任意の CDN サービスは、コマース環境で使用できます。 次に 2 つの例を挙げます。
 
-- **Microsoft Azure Front Door Service** – Azure CDN ソリューション。 Azure Front Door Service の詳細については、[Azure Front Door Service のドキュメント](https://docs.microsoft.com/azure/frontdoor/) を参照してください。
+- **Microsoft Azure Front Door Service** – Azure CDN ソリューション。 Azure Front Door Service の詳細については、[Azure Front Door Service のドキュメント](/azure/frontdoor/) を参照してください。
 - **Akamai 動的サイト アクセラレータ** – 詳細については、[動的サイト アクセラレータ](https://www.akamai.com/us/en/products/performance/dynamic-site-accelerator.jsp) を参照してください。
 
 ## <a name="cdn-setup"></a>CDN の設定
@@ -62,7 +62,7 @@ CDN の設定プロセスは、次の一般的な手順で構成されていま�
 
 任意の CDN サービスを使用できますが、このトピックの例では、 Azure Front Door Service を使用します。 
 
-Azure Front Door Service の設定方法の詳細については、[クイックスタート: 高可用性グローバル Web アプリケーションに対する Front Door を作成する](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door) を参照してください。
+Azure Front Door Service の設定方法の詳細については、[クイックスタート: 高可用性グローバル Web アプリケーションに対する Front Door を作成する](/azure/frontdoor/quickstart-create-front-door) を参照してください。
 
 ### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Azure Front Door Service のバック エンド プールを構成する
 
@@ -115,7 +115,7 @@ Azure Front Door Service を使用して証明書を管理したり、カスタ�
 
 ![カスタム ドメイン HTTPS ダイアログ ボックス](./media/Custom_Domain_HTTPS.png)
 
-Azure Front Door にカスタムドメインを追加する方法の詳細については、[フロント ドアにカスタム ドメインを追加する](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain)を参照してください。
+Azure Front Door にカスタムドメインを追加する方法の詳細については、[フロント ドアにカスタム ドメインを追加する](/azure/frontdoor/front-door-custom-domain)を参照してください。
 
 これにより、CDN を正しくコンフィギュレーションして、コマース サイトで使用できるようになります。
 

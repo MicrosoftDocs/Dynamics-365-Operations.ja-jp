@@ -2,7 +2,7 @@
 title: 規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 description: このトピックは、規制コンフィギュレーション サービスから電子申告 (ER) コンフィギュレーションをインポートする方法について説明します。
 author: NickSelin
-ms.date: 11/07/2018
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 377bce7e6fb8fa430e1988f6f87a5427af81ba4c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c917aca66b7c1eec6e927f0991d72b1f766bfdf5
+ms.sourcegitcommit: efde05c758b2e02960760d875569d780d77d5550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749355"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5962778"
 ---
 # <a name="import-electronic-reporting-er-configurations-from-regulatory-configuration-services-rcs"></a>規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 
@@ -26,7 +26,7 @@ ms.locfileid: "5749355"
 
 規制コンフィギュレーション サービス (RCS) を使用すると電子申告 (ER) 構成をインポートできます。 ER ツールは、1 つの会社用にプロビジョニングされた RCS の各インスタンスで構成されているコンフィギュレーションの一覧へのアクセスを提供します。 この機能を使用して、現在のインスタンスに、RCS インスタンスで構成した構成をインポートできます。 コンフィギュレーションをインポートした後、受信ドキュメントの処理や、送信電子ドキュメントの生成に使用できます。
 
-この機能の詳細を知るには、このトピックの例を実行します。 または、7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部である **RCS からの ER インポート構成** タスク ガイドを再生します。 このタスク ガイドは [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=2082739)からダウンロードできます。 RCS インスタンスから現在のインスタンスに ER コンフィギュレーションをインポートするプロセスを示します。
+この機能の詳細を知るには、このトピックの例を実行します。 または、7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部である **RCS からの ER インポート構成** タスク ガイドを再生します。 このタスク ガイドは [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684)からダウンロードできます。 RCS インスタンスから現在のインスタンスに ER コンフィギュレーションをインポートするプロセスを示します。
 
 ## <a name="example-import-an-er-configuration-from-rcs"></a>例: RCS からの ER コンフィギュレーションのインポート
 

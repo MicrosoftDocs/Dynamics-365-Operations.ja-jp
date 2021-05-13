@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 6ba1b361c2cd16b95f28e2438fdeb370b7c15601
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13133215c07d0d8aa14a8e98dbd3195bdb0750ae
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748239"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908256"
 ---
 # <a name="software-lifecycle-policy-for-microsoft-dynamics-365-finance--operations-on-premises"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) のソフトウェアのライフサイクル ポリシー
 
@@ -61,19 +61,19 @@ Microsoft は、このポリシーに従って配置されたソフトウェア�
 
 #### <a name="continuous-combined-releases-application-and-platform"></a>継続的な複合リリース (アプリケーションおよびプラットフォーム)
 
-[継続的なサービスの更新](on-prem-version-update-policy.md#continuous-service-updates)により、アプリケーションとプラットフォームが共にリリースされます。 [1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)は、早期アクセス、公開リリース、およびリリースの有効期限の日付を指定します。
+[継続的なサービスの更新](on-prem-version-update-policy.md#continuous-service-updates)により、アプリケーションとプラットフォームが共にリリースされます。 [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)は、早期アクセス、公開リリース、およびリリースの有効期限の日付を指定します。
 
 | 品目 | 配置オプション | 申請バージョン | プラットフォームのリリース | リリース日または有効期限|
 |--------|--------|----|----|--------|
 | ... |
-| Finance + Operations | 基本配置 + サービス更新 | 10.0.20 | PU44 | [1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | サービスの更新 | 10.0.19 | PU43 | [1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | サービスの更新 | 10.0.18 | PU42 | [1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | 基本配置 + サービス更新 | 10.0.17 | PU41 | [1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | サービスの更新 | 10.0.16 | PU40 | [1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | サービスの更新 | 10.0.15 | PU39 | [1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | 基本配置 + サービス更新 | 10.0.14* |  PU38 | [1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | サービスの更新 | 10.0.13* | PU37 |[1 つのバージョンのスケジュール](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | 基本配置 + サービス更新 | 10.0.20 | PU44 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | サービスの更新 | 10.0.19 | PU43 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | サービスの更新 | 10.0.18 | PU42 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | 基本配置 + サービス更新 | 10.0.17 | PU41 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | サービスの更新 | 10.0.16 | PU40 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | サービスの更新 | 10.0.15 | PU39 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | 基本配置 + サービス更新 | 10.0.14* |  PU38 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | サービスの更新 | 10.0.13* | PU37 |[1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 
 \* 期限切れのバージョン。 すべての顧客は、[Modern Lifecycle ポリシー](https://support.microsoft.com/help/30881/modern-lifecycle-policy)に従って、最新バージョンの Finance + Operations を使用している必要があります。
 
@@ -109,4 +109,3 @@ Microsoft は、このポリシーに従って配置されたソフトウェア�
 |  プラットフォーム update 8 | 7.0.4565.1612 | 2017 年 7 月 | 2018 年 4 月 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f12f18728e232940c077c3c2a04cbdd692458c73
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5b9cef44b977a0d7e524d0c52f37bc8bfc1a3254
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791191"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853457"
 ---
 # <a name="consume-retail-server-apis-in-external-applications"></a>外部アプリケーションでの Retail Server API の使用
 
@@ -106,7 +106,7 @@ https://RS-URL/Commerce/$metadata
 2. **ID プロバイダー** クイック タブで、`HTTPS://sts.windows.net/` で始まるプロバイダーを選択します。 選択に基づいて、**依存する関係者** クイック タブの値が設定されます。
 3. **依存する関係者** クイック タブで、**追加** を選択します。 Azure で小売サーバー アプリの登録時に生成されたクライアント ID を入力します。 **Type** フィールドを **機密情報** に、**UserType** フィールドを **アプリケーション** に設定します。
 4. アクション ウィンドウで、**保存** を選択します。
-5. 新しい依存する関係者を選択し、**サーバー リソース ID** クイック タブで **追加** を選択します。 **サーバー リソース ID** 列に、アプリ ID URI を入力します (手順 12 で生成された API URI です)。
+5. 新しい依存する関係者を選択し、**サーバー リソース ID** クイック タブで **追加** を選択します。 **サーバー リソース ID** 列にアプリケーション ID URI を入力します (これは、Retail Server アプリ登録時に生成される API URI です)。
 6. アクション ウィンドウで、**保存** を選択します。
 7. **Retail と Commerce** &gt; **Retail および Commerce IT** &gt; **配送スケジュール** の順に移動し、Commerce Data Exchange (CDX) ジョブ **1110** を実行します。
 
@@ -138,9 +138,9 @@ API にアクセスするには、最初に認証トークンを生成します�
     | キー            | 先頭値                                                              |
     |----------------|--------------------------------------------------------------------|
     | grant\_type    | **client\_credentials**                                            |
-    | client\_id     | Azure アプリの登録時に生成されたクライアント ID。     |
-    | client\_secret | Azure アプリの登録時に生成されたクライアント シークレット。 |
-    | リソース       | アプリケーション ID URI を入力します (これは手順 12 で生成された API URI です)。       |
+    | client\_id     | Azure Retail Server アプリの登録時に生成されたクライアント ID。     |
+    | client\_secret | Azure Retail Server アプリの登録時に生成されたクライアント シークレット。 |
+    | リソース       | アプリケーション ID URI を入力します (Retail Server アプリ登録時に生成された API URI です)。       |
 
 2. 要求が実行を完了すると、応答本文に **access\_token** の値が生成されます。 このトークンの値をコピーします。 Retail Server に接続するためにこれを使用します。
 
@@ -187,7 +187,7 @@ API にアクセスするには、最初に認証トークンを生成します�
         <add key="aadClientSecret" value="client secret generated during Retail server app registration in Azure" />
         <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
         <add key="retailServerUrl" value="https://RetailserverURL/Commerce" /> 
-        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI -->
+        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the Retail Server app registration -->
         <add key="operatingUnitNumber" value="OUN value" />
     </appSettings>
     ```
@@ -238,7 +238,7 @@ API にアクセスするには、最初に認証トークンを生成します�
         ClientCredentialsToken clientCredentialsToken = new ClientCredentialsToken(authResult.AccessToken);
         RetailServerContext retailServerContext = RetailServerContext.Create(retailServerUrl, operatingUnitNumber, clientCredentialsToken);
         ManagerFactory factory = ManagerFactory.Create(retailServerContext);
-        return factory;
+        return  factory;
     }
     ```
 
@@ -265,7 +265,7 @@ API にアクセスするには、最初に認証トークンを生成します�
     {
         GetConfiguration();
         Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder> orderHistory = Task.Run(async () => await GetOrderHistory("2001")).Result;
-        Console.WriteLine(orderHistory.FirstOrDefault<SalesOrder>().Id);
+        Console.WriteLine(orderHistory.Results.GetEnumerator().Current.Id);
     }
     ```
 

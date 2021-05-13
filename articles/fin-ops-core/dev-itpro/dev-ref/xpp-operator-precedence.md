@@ -4,22 +4,19 @@ description: このトピックでは、演算子の優先順位について説�
 author: pvillads
 ms.date: 07/01/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 6174
-ms.assetid: dd4a4971-c35a-466d-9c24-244cd75f9020
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85141759b9a0ad634c4cc5b5d09324f13c82b10b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 448faf36f1735d67dfb9225ef771c037c0046eca
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749928"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865851"
 ---
 # <a name="operator-precedence"></a>演算子の優先順位
 

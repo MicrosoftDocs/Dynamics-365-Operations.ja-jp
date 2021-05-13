@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dea27a92eccc26f4bf9f4c168d4aed9bed4eafbd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5526b9e049d9f2981648790373ebe39b0703fe79
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791179"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937136"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
@@ -42,8 +42,8 @@ ms.locfileid: "5791179"
 
 ## <a name="which-payment-providers-are-supported-and-in-what-regions"></a>どの支払プロバイダーがどの地域でサポートされていますか。
 
-- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
-- PayPal はオンライン購買でサポートされます。 対応している地域の一覧については、[PayPal 向け Dynamics 365 Payment Connector の概要ページ](https://docs.microsoft.com/dynamics365/commerce/paypal) を参照してください。
+- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要ページ](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
+- PayPal はオンライン購買でサポートされます。 対応している地域の一覧については、[PayPal 向け Dynamics 365 Payment Connector の概要ページ](../paypal.md) を参照してください。
 - **TestConnector** は、ユーザー受け入れテスト (UAT) または運用 (prod) ではサポートされていません。 **TestConnector** は、サンドボックスおよび開発のみで使用することができ、サンプル専用です。 
 - Mastercard Simplify は新しい顧客に対しては対応していません。
 
@@ -59,7 +59,7 @@ Adyen などの Microsoft によって指定されたコネクタを使用する
 
 ## <a name="what-is-the-service-level-agreement-sla-for-out-of-box-payment-connectors-like-adyen"></a>Adyen などの革新的な支払いコネクタ の サービス レベル アグリーメント (SLA) はどうなっているか ?
 
-Adyen コネクタに関して、設定に関する問題の場合は Adyenコネクタの [概要ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 コネクタに関するその他の設定、または機能の問題については、Microsoftへのサポートリクエストを作成してください。 問題がデバイス本体、またはAdyenの処理サービスに起因する場合は、support-dynamics365@adyen.com Adyenのサポートに連絡してください。
+Adyen コネクタに関して、設定に関する問題の場合は Adyenコネクタの [概要ページ](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 コネクタに関するその他の設定、または機能の問題については、Microsoftへのサポートリクエストを作成してください。 問題がデバイス本体、またはAdyenの処理サービスに起因する場合は、support-dynamics365@adyen.com Adyenのサポートに連絡してください。
 
 ## <a name="if-a-supported-payment-provider-issues-an-update-will-microsoft-automatically-update-the-payment-connector-or-do-i-need-to-work-with-the-payment-provider-to-get-the-updated-payment-connector"></a>サポートされている支払プロバイダーが更新プログラムを発行した場合は、Microsoft は自動的に支払コネクタを更新してくれますか? または更新された支払コネクタを取得するために支払プロバイダーと連携する必要がありますか。
 

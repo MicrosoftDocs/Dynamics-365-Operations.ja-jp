@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vetric
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 77e429a9170e6e21f3ecb4ab6d15e8b7e8477572
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 92be7663e0ffd625adb55a8e5c0c4e09ff15b0fb
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748121"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920969"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 
@@ -34,7 +34,7 @@ Microsoft では、お客様から提供された情報を必要としていま�
 > プロジェクトのオンボードは、実装プロジェクトで使用できます。また、Microsoft が管理する環境を配置する前に完了する必要があります。 実装プロジェクトに関する詳細情報については、[Finance and Operations アプリの顧客に向けた Lifecycle Services (LCS)](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps) を参照してください。
 
 
-このオンボード プロセスの詳細については、[実装プロジェクトのオンボード](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/onboard#lcs-implementation-project-workspace)を参照してください。また、[Finance and Operations: Dynamics 365 へのオンボード](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk もご覧ください。
+このオンボード プロセスの詳細については、[実装プロジェクトのオンボード](../../fin-ops/imp-lifecycle/onboard.md#lcs-implementation-project-workspace)を参照してください。また、[Finance and Operations: Dynamics 365 へのオンボード](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk もご覧ください。
 
 
 ## <a name="onboarding-steps"></a>オンボード ステップ
@@ -51,7 +51,7 @@ Microsoft では、お客様から提供された情報を必要としていま�
 
 - 実装プロジェクトの概要情報を提供します。
 - プロジェクトのビジョンと目標をいくつかの文で説明します。 この情報は、達成する目標とプロジェクトの成功を定義する方法を Microsoft が理解するのに役立ちます。
-- パートナー MPN ID を指定します。この ID は、実装パートナー チームから取得できます。 パートナーが関係していない場合、またはまだ特定されていない場合は、実装パートナーのドロップダウン リストから適切なオプションを選択します。 正確なパートナー データを提供することは、[FastTrack プログラム](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/commerce/toc.json) の割り当ての前提条件であることに注意してください。 パートナーに関する適切な情報が提供されていない場合は、重要なサービスの機会を逃してしまう可能性があります。 パートナーを特定したら、MPN ID を更新する必要があります。
+- パートナー MPN ID を指定します。この ID は、実装パートナー チームから取得できます。 パートナーが関係していない場合、またはまだ特定されていない場合は、実装パートナーのドロップダウン リストから適切なオプションを選択します。 正確なパートナー データを提供することは、[FastTrack プログラム](/dynamics365/fasttrack/?toc=%2fdynamics365%2fcommerce%2ftoc.json) の割り当ての前提条件であることに注意してください。 パートナーに関する適切な情報が提供されていない場合は、重要なサービスの機会を逃してしまう可能性があります。 パートナーを特定したら、MPN ID を更新する必要があります。
 - 現在のライセンスを含めた完全ロールアウト後のユーザー ライセンスの予測される数量を指定します。 この番号は、現在のライセンス購入時とは異なる場合があります。 変更が予定されていない場合は、現在のユーザー ライセンス数を入力します。 ライセンス タイプが該当しない場合は、**0** (ゼロ) を入力します。
 - インプリメンテーション プロジェクトがデモ プロジェクトの場合、または別のテナントから移動する場合は、詳細を入力します。
 
@@ -66,7 +66,7 @@ Microsoft では、お客様から提供された情報を必要としていま�
 - ユーザー リストに有効な電子メール アドレスがある少なくとも 2 人のユーザーに対して、**FastTrack の基本連絡先** オプションを **はい** に設定します。 どのチーム メンバーに対してもこのオプションが **はい** に設定されていない場合は、FastTrack が実装時に実装ガイドのためにすべてのチーム メンバーに連絡します。 必要に応じて、FastTrack から連絡を受ける少なくとも 1 人の顧客と 1 人のパートナー チーム メンバーを指名する必要があります。
 - 各チーム メンバーには、プロジェクト セキュリティ ロールおよび実装ロールが割り当てられます。 プロジェクト セキュリティ ロールは LCS プロジェクト ワークスペースへのアクセスに関連しており、実装ロールは、実装チームにおける個々のチーム メンバーのロールに関連しています。 監視対象の電子メール アドレスを持つプロジェクト チーム メンバーの間に、顧客の代表者を含めることを強くお勧めします。
 
-詳細については、[プロジェクト セキュリティのコンフィギュレーション](configure-lcs-security.md#configuring-project-security) および [Dynamics 365 実装のロール](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
+詳細については、[プロジェクト セキュリティのコンフィギュレーション](configure-lcs-security.md#configuring-project-security) および [Dynamics 365 実装のロール](/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
 
 ## <a name="define-milestone-dates"></a>マイルストーン日付の定義
 

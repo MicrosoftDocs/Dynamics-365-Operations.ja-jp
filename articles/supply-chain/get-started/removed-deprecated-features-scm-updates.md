@@ -2,7 +2,7 @@
 title: Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Supply Chain Management から削除された、または削除される予定の機能について説明します。
 author: kamaybac
-ms.date: 12/07/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 785f9055c44110d88b9494b5066647511840b646
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909650"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947547"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 
@@ -32,6 +32,19 @@ ms.locfileid: "5909650"
 
 > [!NOTE]
 > Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Supply Chain Management 10.0.19 リリースの削除済みまたは非推奨の機能
+
+### <a name="job-card-device"></a>ジョブ カード デバイス
+
+|   |   |
+|---|---|
+| **廃止 / 削除の理由** | [ジョブ カード デバイス](../production-control/config-job-card-device.md) が、新しい [生産現場の実行インターフェイス](../production-control/production-floor-execution-configure.md) により置き換えられています。 |
+| **別の機能で置き換えられているか?**   | はい、[ジョブ カード デバイス](../production-control/config-job-card-device.md) が、新しい [生産現場の実行インターフェイス](../production-control/production-floor-execution-configure.md) により置き換えられます。 |
+| **影響を受ける製品領域** | Supply Chain Management - 製造制御 |
+| **配置オプション** | クラウドとオンプレミス |
+| **状態** | 非推奨。 ジョブ カード デバイスではバグとセキュリティの修正がサポートされますが、機能拡張は提供されなくなります。 2022 年 4 月以降、ジョブ カード デバイスはサポートされなくなりました。顧客は、新しい生産現場の実行インターフェイスに移動する必要があります。 |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Supply Chain Management 10.0.18 リリースの削除済みまたは非推奨の機能
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d960f666247c069ed4864d7cabc44a253c4822ad
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 647f1edc8a9ebdeeffdfbaad337cd10da84a9d30
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793023"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935899"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 
@@ -130,6 +130,14 @@ Commerce Data Exchange - リアル タイム サービスを拡張する方法�
 
 新しい Retail Server API を作成する方法については、[新しい Retail Server 拡張 API の作成](retail-server-icontroller-extension.md) を参照してください。
 
+## <a name="exception-handling"></a>例外処理
+
+拡張子コードに `try...catch` ステートメントを追加して例外を処理し、それを Application Insights に記録するかクライアント アプリケーションに反映することができます。 エラー メッセージをクライアントに反映する場合は、CRT または Retail Server から集計された例外を返したりしません。 代わりに、個々のタスク レベルで例外を受け取り、再実行します。 詳細については、以下のトピックを参照してください:
+
++ [例外処理 (タスク並列ライブラリ)](https://docs.microsoft.com/dotnet/standard/parallel-programming/exception-handling-task-parallel-library)。
++ [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
++ [Commerce の拡張リソースおよびラベル ファイルをローカライズ](extension-resource-localization.md) して、クライアント アプリケーション で CRT 例外を記録および表示します。
+
 ## <a name="register-the-crt-extension"></a>CRT 拡張機能の登録
 
 ### <a name="online"></a>オンライン
@@ -140,7 +148,7 @@ Commerce Data Exchange - リアル タイム サービスを拡張する方法�
 <add source="assembly" value="your custom library name" />
 ```
 
-たとえば、カスタム ライブラリの名前が **Contoso.Commerce.Runtime.CustomerSearchSample** の場合、**構成** セクションに次の行を追加します。
+たとえば、カスタム ライブラリの名前が **Contoso.Commerce.Runtime.CustomerSearchSample** の場合、**合成** セクションに次の行を追加します。
 
 ```xml
 <add source="assembly" value="Contoso.Commerce.Runtime.CustomerSearchSample" />

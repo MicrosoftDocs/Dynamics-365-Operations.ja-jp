@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: ab923196d8129392b9616b322e6021534ba34c37
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f6073703ca64052d23403718c51a6cd1352a0ae4
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748797"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941005"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
 [!include [banner](../includes/banner.md)]
  
-Finance and Operations アプリをクラウドに展開するにあたって、Microsoft と作業をするには、展開先の環境とサブスクリプションについての理解と、タスクの可能が実行な担当者と、管理の必要があるデータとカスタマイズについて理解している必要があります。 配置と実装の高速化に役立つ Full Microsoft FastTrack for Dynamics 365 に登録することをお勧めします。このプログラムは、より迅速なビジネス価値の実現を支援するトレーニングとコンサルティングを提供します。 詳細については、 [Microsoft FastTrack](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) を参照してください。 代わりに Essentials FastTrack プログラムの使用を選択すると、実装プロジェクトの管理に役立つ Lifecycle Services (LCS) の実装プロジェクト方法を使用します。 
+Finance and Operations アプリをクラウドに展開するにあたって、Microsoft と作業をするには、展開先の環境とサブスクリプションについての理解と、タスクの可能が実行な担当者と、管理の必要があるデータとカスタマイズについて理解している必要があります。 配置と実装の高速化に役立つ Full Microsoft FastTrack for Dynamics 365 に登録することをお勧めします。このプログラムは、より迅速なビジネス価値の実現を支援するトレーニングとコンサルティングを提供します。 詳細については、 [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。 代わりに Essentials FastTrack プログラムの使用を選択すると、実装プロジェクトの管理に役立つ Lifecycle Services (LCS) の実装プロジェクト方法を使用します。 
 
 ## <a name="customer-lifecycle-subscriptions-and-environment-types"></a>顧客のライフ サイクル、サブスクリプション、デプロイのトポロジ
 Microsoft は、すべての顧客がすべてのクラウド配置に対して次と類似するライフサイクルに従うため、各フェーズで別の環境トポロジが必要になると想定しています。 
@@ -96,7 +96,7 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > [!WARNING]
 > Microsoft は、顧客およびパートナーがリモート デスクトップを使用できないようにします。  各環境では、最初に管理者アクセス権が削除されますが、仮想マシンへの管理者以外のアクセスは許可されています。 その後は、すべてのアクセスが削除されます。 この段階的な削除の各手順では、各環境で設定された通知リストにメールが送信されます。 リモート デスクトップ アクセスは、2020 年の 11 月までに削除されます。
 
-顧客は、Microsoft リモート デスクトップ (RDP) を介して、仮想マシン (VM) に接続するための追加設定を完了する必要があります。 この追加の設定は、 レベル 1 〜 レベル 5 のサンドボックスとアドオンを含む、Microsoft が管理するすべての環境に適用されます。 レベル 1 からレベル 5 のサンドボックス環境に接続するには、明示的に組織の IP アドレス空間からのアクセスを有効 (セーフ リスト化) にする必要があります。 これは、リモート デスクトップを介して仮想マシンに接続するために使用される IP アドレス スペースを入力できる **環境ページ** (**Maintain** > **Enable Access**) にアクセスできる Lifecycle Services (LCS) ユーザーによって実行できます。 アクセス ルールは、単一の IP アドレス (例: 10.10.10.10) または IP アドレスの範囲 (例: 192.168.1.0/24) です。 セミコロン (;) で区切られたリスト (例: 10.10.10.10;20.20.20.20;192.168.1.0/24) として複数のエントリを一度に追加する場合があります。 これらのエントリは、環境の仮想ネットワークに関連付けられている Azure ネットワーク セキュリティ グループの設定に使用されます。 詳細については、[セキュリティ ポリシー](https://docs.microsoft.com/azure/virtual-network/security-overview#security-rules)を参照してください。
+顧客は、Microsoft リモート デスクトップ (RDP) を介して、仮想マシン (VM) に接続するための追加設定を完了する必要があります。 この追加の設定は、 レベル 1 〜 レベル 5 のサンドボックスとアドオンを含む、Microsoft が管理するすべての環境に適用されます。 レベル 1 からレベル 5 のサンドボックス環境に接続するには、明示的に組織の IP アドレス空間からのアクセスを有効 (セーフ リスト化) にする必要があります。 これは、リモート デスクトップを介して仮想マシンに接続するために使用される IP アドレス スペースを入力できる **環境ページ** (**Maintain** > **Enable Access**) にアクセスできる Lifecycle Services (LCS) ユーザーによって実行できます。 アクセス ルールは、単一の IP アドレス (例: 10.10.10.10) または IP アドレスの範囲 (例: 192.168.1.0/24) です。 セミコロン (;) で区切られたリスト (例: 10.10.10.10;20.20.20.20;192.168.1.0/24) として複数のエントリを一度に追加する場合があります。 これらのエントリは、環境の仮想ネットワークに関連付けられている Azure ネットワーク セキュリティ グループの設定に使用されます。 詳細については、[セキュリティ ポリシー](/azure/virtual-network/security-overview#security-rules)を参照してください。
 
 > [!IMPORTANT]
 > 顧客は、上記の明示的な IP セーフ リストのルールを通じて RDP エンドポイントを確実に保護する必要があります。 IP セーフ リストのルールは、次の条件に準拠する必要があります。
@@ -124,13 +124,13 @@ Windows Remoting (WinRM) はすべての環境で無効です。 Azure ポータ
 Finance and Operations アプリの保証稼働時間は 99.9% です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 詳細については、[Finance and Operations アプまたは Lifecycle Services (LCS) のサポートを得る](../lifecycle-services/lcs-support.md) を参照してください。
 
 ### <a name="high-availability-features"></a>高可用性機能
-サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 単一障害点イベントを防止するために、Azure 使用可能性セットが使用されます。 Azure の可用性セットの詳細については、[可用性ゾーンを使用してデータセンター レベルの障害から保護する](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures)を参照してください。
-データベースの高可用性は Azure SQL を通してサポートされます。 詳細については、[Azure SQL データベースの事業継続性の概要](https://docs.microsoft.com/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview) を参照してください。
+サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 単一障害点イベントを防止するために、Azure 使用可能性セットが使用されます。 Azure の可用性セットの詳細については、[可用性ゾーンを使用してデータセンター レベルの障害から保護する](/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures)を参照してください。
+データベースの高可用性は Azure SQL を通してサポートされます。 詳細については、[Azure SQL データベースの事業継続性の概要](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview) を参照してください。
 
 ### <a name="disaster-recovery-features"></a>障害復旧の機能
 実稼動環境は、以下のものを含む Azure 障害復旧サポートで構成されます。
-- Azure SQL のアクティブ geo レプリケーションは、実稼働環境の Finance and Operations データベースに対して構成されています。 SQL レプリケーションの詳細については、[geo レプリケーションとフェールオーバー グループの比較](https://docs.microsoft.com/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups) を参照してください。 
-- 他の Azure リージョンでの Azure blob storage (ドキュメントの添付ファイルを含む) のジオ重複コピー。 詳細については、[Azure 冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy) を参照してください。
+- Azure SQL のアクティブ geo レプリケーションは、実稼働環境の Finance and Operations データベースに対して構成されています。 SQL レプリケーションの詳細については、[geo レプリケーションとフェールオーバー グループの比較](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups) を参照してください。 
+- 他の Azure リージョンでの Azure blob storage (ドキュメントの添付ファイルを含む) のジオ重複コピー。 詳細については、[Azure 冗長性](/azure/storage/common/storage-redundancy) を参照してください。
 - Azure SQL および Azure ブログ記憶域レプリケーションの同じセカンダリ地域。  
 
 プライマリのデータ格納場所のみレプリケーションがサポートされます。 Financial Reporting サービスおよびエンティティ格納データベースは、プライマリ データベースから変換されたデータを使用し、リカバリ サイトの設定および Finance and Operations サービスの開始後に生成する必要があります。 
@@ -212,7 +212,7 @@ Microsoft が管理するレベル 1 から レベル 5 のサンドボックス
 このことは、格納データが 2020 年 8 月以前に非推奨領域に保有されている環境には影響しません。 近い将来、非推奨の地域の顧客を削減した領域に移動するための移行計画があります。
 
 ### <a name="im-unable-to-redeploy-an-environment-after-deleting-it-the-environment-slot-is-missing"></a>環境を削除すると再配置ができません、環境スロットが欠落しています。 
-これは、ライセンスが期限切れになったためです。つまり、環境スロットを取得するために必要な最低限のライセンスが不要になったことを意味します。  [サブスクリプションのステータス](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview#how-can-i-find-the-subscription-status) を確認し、有効期限が切れたライセンスを再開してから、再配置を有効にしてください。
+これは、ライセンスが期限切れになったためです。つまり、環境スロットを取得するために必要な最低限のライセンスが不要になったことを意味します。  [サブスクリプションのステータス](../../fin-ops/get-started/subscription-overview.md#how-can-i-find-the-subscription-status) を確認し、有効期限が切れたライセンスを再開してから、再配置を有効にしてください。
 
 
 

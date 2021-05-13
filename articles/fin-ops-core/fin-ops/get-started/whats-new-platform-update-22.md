@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
-ms.openlocfilehash: 576c3e2d6f713f8a93bb8ca575a25b7901f8df6c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: be68e47186b4fdb2750a5083c1f27ad7fd7affe4
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752222"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923327"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-22-december-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
 
@@ -32,7 +32,7 @@ ms.locfileid: "5752222"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2018 年 10 月リリース ノートを確認](https://go.microsoft.com/fwlink/?linkid=870424). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2018 年 10 月リリース ノートを確認](/dynamics365/release-plans/). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="platform-update-22-bug-fixes"></a>プラットフォーム アップデート 22 のバグ修正プログラム
 
@@ -40,7 +40,7 @@ ms.locfileid: "5752222"
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-プラットフォーム更新 22 では、プラットフォーム拡張機能の 3 番目の波を使用できます。 詳細については、[プラットフォーム拡張機能の波 3](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3) を参照してください。
+プラットフォーム更新 22 では、プラットフォーム拡張機能の 3 番目の波を使用できます。 詳細については、[プラットフォーム拡張機能の波 3](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3) を参照してください。
 
 ## <a name="export-up-to-1-million-rows-to-excel"></a>最大 100 万行を Excel にエクスポート
 
@@ -48,7 +48,7 @@ Excel へのエクスポート機能は、Finance and Operations のグリッド
 
 ## <a name="improved-usability-of-the-navigation-pane"></a>ナビゲーション ウィンドウの使いやすさの向上
 
-ナビゲーション ウィンドウは、お気に入り、最近開いたページ、ワークスペース、特にメイン メニューへのアクセスを提供する Finance and Operations で使用頻度の高いナビゲーション メカニズムです。 その使用率の高さのため、使い勝手を向上させるために、いくつかの方法でナビゲーション ウィンドウが強化されました。 これらの変更は、プラットフォーム Update 22 以降で使用できます。 詳細については、[ナビゲーション ウィンドウの使いやすさが向上](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane)を参照してください。
+ナビゲーション ウィンドウは、お気に入り、最近開いたページ、ワークスペース、特にメイン メニューへのアクセスを提供する Finance and Operations で使用頻度の高いナビゲーション メカニズムです。 その使用率の高さのため、使い勝手を向上させるために、いくつかの方法でナビゲーション ウィンドウが強化されました。 これらの変更は、プラットフォーム Update 22 以降で使用できます。 詳細については、[ナビゲーション ウィンドウの使いやすさが向上](/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane)を参照してください。
 
 ## <a name="restyled-personalization-toolbar"></a>個人用設定ツールバーの再編成
 
@@ -68,13 +68,13 @@ Excel へのエクスポート機能は、Finance and Operations のグリッド
 
 ## <a name="optimized-is-one-of-filtering-experience"></a>最適化された "次の値のいずれか" のフィルタリング結果
 
-「次の値のいずれか」フィルター演算子は、フィルター ウィンドウおよびグリッド ヘッダーのドロップダウン リストを使用する場合にほとんどのフィールドで使用できます。 この演算子により、複数の異なる値に基づいてフィールドをフィルター処理できます。 「次の値のいずれか」演算子の新機能と向上したエクスペリエンスはプラットフォーム更新 22 で利用可能です。 詳しくは、[「次の値のいずれか」のフィルタリング結果の最適化](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)をご覧ください。
+「次の値のいずれか」フィルター演算子は、フィルター ウィンドウおよびグリッド ヘッダーのドロップダウン リストを使用する場合にほとんどのフィールドで使用できます。 この演算子により、複数の異なる値に基づいてフィールドをフィルター処理できます。 「次の値のいずれか」演算子の新機能と向上したエクスペリエンスはプラットフォーム更新 22 で利用可能です。 詳しくは、[「次の値のいずれか」のフィルタリング結果の最適化](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)をご覧ください。
 
 ## <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>"次の値のいずれか" 演算子を使って Excel からフィルター フィールドにリストを貼り付け
 
 一部のタスクでは、Finance and Operations でデータのフィルター処理に使用する値の一覧が Excel に表示されることがあります。 たとえば、財務ユーザーは、システムで追加の調査を必要とする伝票のセットをレポートから特定している可能性があり、このユーザーが Excel から Finance and Operations のフィルター フィールドに直接リストをコピーできると最適な場合があります。
 
-プラットフォーム更新 22 以降では、フィルター ウィンドウおよびグリッド列フィルターの「次の値のいずれか」演算子が、フィルター フィールドに直接貼り付けることができるように、Excel からコピーされたリストを認識するようになりました。 これには、Excel のさまざまな行と列からコピーされた値のコレクションが含まれます。 この機能の詳細については、["次の値のいずれか" 演算子を使用して Excel からフィルター フィールドに一覧を貼り付ける](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel)を参照してください。
+プラットフォーム更新 22 以降では、フィルター ウィンドウおよびグリッド列フィルターの「次の値のいずれか」演算子が、フィルター フィールドに直接貼り付けることができるように、Excel からコピーされたリストを認識するようになりました。 これには、Excel のさまざまな行と列からコピーされた値のコレクションが含まれます。 この機能の詳細については、["次の値のいずれか" 演算子を使用して Excel からフィルター フィールドに一覧を貼り付ける](/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel)を参照してください。
 
 ## <a name="batch-job-to-handle-sql-index-defragmentation"></a>SQL インデックスの最適化を処理するバッチ ジョブ
 プラットフォーム更新プログラム 22 では、断片化したインデックスを再構築する新しいシステム バッチ ジョブが導入されました。 インデックスの断片化により、固有のシナリオでパフォーマンスが著しく低下します。 断片化の問題に対処し、データベースを最高のパフォーマンス状態に維持するため、このバッチ ジョブはスケジュールされた時間に定期的に激しく断片化したインデックスを再構築します。 既定では、そのジョブは毎日現地時間の午前 3:00 に最大 2 時間実行されるようにスケジュールされます。 再構築する必要がある断片化されたインデックスが多くないとバッチ ジョブが判断した場合は早期に完了します。  

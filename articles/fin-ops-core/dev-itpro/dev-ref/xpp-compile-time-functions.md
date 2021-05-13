@@ -4,22 +4,19 @@ description: このトピックでは、コンパイル時関数の一覧を示�
 author: RobinARH
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 29581
-ms.assetid: fa6613a4-7d0b-40d3-be29-9d14c22c7d5b
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d93973477fb09222f831378a800396b99976bec
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 10d6b3e685b3d60e2d7fa1c10feb6df6c07c38a0
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753036"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866025"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 

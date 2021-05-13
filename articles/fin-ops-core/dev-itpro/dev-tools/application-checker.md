@@ -4,20 +4,18 @@ description: このトピックでは、Application チェッカー ツールに
 author: AndreasHassing
 ms.date: 09/22/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: c5ed2466f483a1089b873e49a2c9a3141a24999e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3bdaadc43261ec9d989040522b0718ea760950ca
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750946"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865872"
 ---
 # <a name="application-checker"></a>アプリケーション チェッカー
 

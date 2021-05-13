@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07f9adec9950bef698f081c8629d2dac712d1d6a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bc427694d5ae4d768cfd8b65898e2bc70e1c8419
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752308"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940900"
 ---
 # <a name="custom-service-development"></a>カスタム サービスの開発
 
@@ -51,8 +51,8 @@ SOAP を使用したカスタム サービスを使用するためのコード�
 
 カスタム サービスの詳細については、次を参照してください。
 
-- [カスタム サービスを使用する \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
-- [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
+- [カスタム サービスを使用する \[AX 2012\] (TechNet)](/dynamicsax-2012/appuser-itpro/using-custom-services)
+- [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](/dynamicsax-2012/appuser-itpro/walkthrough-exposing-an-x-class-as-a-data-contract)
 
 ### <a name="json-based-custom-service"></a>JSON ベース カスタム サービス
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 23312d43ae482f685fc06c489163b2a4a07833a2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ec6bbd0ba6cbdf30c56cb89b235f6abd983830c1
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744541"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941007"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -96,7 +96,7 @@ ms.locfileid: "5744541"
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. Axdataenciphermentcert 証明書がローテーションされている場合は、資格情報の .json ファイルを再生成する必要があります。 詳細については、「[資格情報の暗号化](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred)」を参照してください。
+6. Axdataenciphermentcert 証明書がローテーションされている場合は、資格情報の .json ファイルを再生成する必要があります。 詳細については、「[資格情報の暗号化](setup-deploy-on-premises-pu12.md#encryptcred)」を参照してください。
 
 7. 後で LCS で使用できる値を保持するには、次の PowerShell コマンドを実行します。 詳細については、[LCS からのオンプレミス環境の配置](setup-deploy-on-premises-pu12.md#deploy) を参照してください。
 
@@ -337,7 +337,7 @@ ms.locfileid: "5744541"
 
 ## <a name="update-other-certificates-as-needed"></a>必要に応じて他の証明書を更新する
 
-1. SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。 詳細については、「[SQL Server の設定](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql)」を参照してください。
+1. SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。 詳細については、「[SQL Server の設定](setup-deploy-on-premises-pu12.md#setupsql)」を参照してください。
 
 2. Active Directory フェデレーション サービス (ADFS) 証明書の有効期限が切れていないことを確認します。
 

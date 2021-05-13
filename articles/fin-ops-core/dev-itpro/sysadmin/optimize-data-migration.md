@@ -2,7 +2,7 @@
 title: Finance and Operations アプリのデータ移行の最適化
 description: このトピックでは、Finance and Operations アプリのデータ移行を最適化するために使用できる手順とアクションの概要を示します。
 author: skaue-ms
-ms.date: 02/03/2021
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: toskaue
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 80ff2e6a1ceb0f5df23281c1a935ce2600d0f1ea
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 24e40139b65e0a10bee41fe405880ee750aaad72
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745943"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937520"
 ---
 # <a name="optimize-data-migration-for-finance-and-operations-apps"></a>Finance and Operations アプリのデータ移行の最適化
 
@@ -83,7 +83,7 @@ ms.locfileid: "5745943"
 
 ## <a name="clean-staging-tables"></a>ステージング テーブルのクリーンアップ
 
-ステージング テーブルをクリーンアップすることをお勧めします。 プラットフォーム更新プログラム 29 以降では、[ジョブ履歴のクリーンアップ ジョブ](../data-entities/data-import-export-job.md#job-history-clean-up-available-in-platform-update-29-and-later) をスケジュールすることでこの最適化を実現できます。 このジョブをスケジュールするには、**データ管理** ワークスペースの **ジョブ履歴クリーンアップ** タスクを選択します。
+ステージング テーブルをクリーンアップすることをお勧めします。 [ジョブ履歴のクリーンアップ ジョブ](../data-entities/data-import-export-job.md#job-history-clean-up) をスケジュールすることでこの最適化を実現できます。 このジョブをスケジュールするには、**データ管理** ワークスペースの **ジョブ履歴クリーンアップ** タスクを選択します。
 
 > [!NOTE]
 > 最初に **機能管理** ワークスペースの **実行履歴のクリーンアップ** 機能を有効にする必要があります。

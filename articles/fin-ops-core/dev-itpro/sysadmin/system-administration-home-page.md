@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 290f04139acb984593d917df666ce6ea61ae5d1d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0c30704ae5ae1aa23bf212c5efbe20587786082a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745899"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907925"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
@@ -44,7 +44,7 @@ Microsoft Dynamics Lifecycle Services (LCS) は、Finance and Operations 実装�
 
 実装のライフサイクルは、複数回、反復展開しながら、販売前から分析、設計と開発、テスト、配置、運用までのさまざまな段階に及んでいます。 管理されたクラウドまたはオンプレミスなど、プロジェクトおよび選択された配置モデルの範囲と複雑さに基づいて、数か月から数年にわたって継続できます。 
 
-実装の管理には、顧客およびパートナー組織、特にマイクロソフトのクラウド ホスト型配置モデルのさまざまなステークホルダーが関係します。 この実装は、LCS 上で提供されるツールと、[Microsoft FastTrac](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) 内で定義されたプロセスとパートナーの実装方法を通じてサポートされます。 
+実装の管理には、顧客およびパートナー組織、特にマイクロソフトのクラウド ホスト型配置モデルのさまざまなステークホルダーが関係します。 この実装は、LCS 上で提供されるツールと、[Microsoft FastTrac](/dynamics365/fasttrack/) 内で定義されたプロセスとパートナーの実装方法を通じてサポートされます。 
 
 - [Lifecycle Services のリソース](../lifecycle-services/lcs.md)
 - [Lifecycle Services (LCS) ユーザー ガイド](../lifecycle-services/lcs-user-guide.md)

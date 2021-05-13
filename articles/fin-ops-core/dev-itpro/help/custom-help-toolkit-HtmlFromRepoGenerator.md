@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 64a1eac56e862b28bb7afad1a3a1993e50621c5a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3e55b19bf0b27d7a5de1559d3cffd9c1897484e9
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752754"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897950"
 ---
 # <a name="custom-help-toolkit-the-htmlfromrepogenerator-tool"></a>カスタム ヘルプ ツールキット: HtmlFromRepoGenerator ツール
 
@@ -40,7 +40,8 @@ ms.locfileid: "5752754"
 
 - ローカライズされた Microsoft リポジトリと en-US リポジトリを比較して、相違点を特定し、それに応じてリンクを更新します。
 
-カスタム ヘルプ ツールキットの最初のバージョンでは、このツールの名前は ConsoleApp でした。
+> [!NOTE]
+> カスタム ヘルプ ツールキットの最初のバージョンでは、このツールの名前は ConsoleApp でした。 このツールの名前が変更され、2020 年に更新されました。
 
 ### <a name="syntax"></a>構文
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 226f39fe78d8588a6782f2a949508807235dee33
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c9e610f203c120f841b5929c28c3e1def6381a85
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750548"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940896"
 ---
 # <a name="database-movement-api---authentication"></a>データベース移動 API - 認証
 
@@ -69,7 +69,7 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
         - Web アプリに関しては、アプリのベース URL を指定します。 たとえば、`http://localhost:31544` はローカル コンピューターで実行する Web アプリの URL である可能性があります。 ユーザーは、この URL を使用して Web クライアント アプリにサインインします。
         - パブリック クライアント アプリに関しては、Azure AD を使用してトークン応答を返すための URI を指定します。 `myapp://auth` などの、アプリに固有の値を入力します。
 
-        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Azure AD からのクイック スタート ガイド](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts) を参照してください。
+        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Azure AD からのクイック スタート ガイド](/azure/active-directory/develop/#quickstarts) を参照してください。
 
 5. **API アクセス許可** で、**アクセス許可の追加** を選択します。 次に、**自分の組織が使用する API** タブで、**Dynamics Lifecycle services** サービスを検索し、アプリに **ユーザー\_偽装** のアクセス許可を追加します。
 6. **登録** を選択します。

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2b949488bcbe655d0f4bd15f8c6f21bf58e53544
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 633e4e4d934c0915064059c16e6ae5c3d434e39f
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793015"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5959983"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -33,11 +33,11 @@ ms.locfileid: "5793015"
 
 ## <a name="components-and-architecture"></a>コンポーネントとアーキテクチャ
 
-- [Commerce コンポーネント](../retail-components.md)
+- [Commerce コンポーネント](/dynamics365/commerce/dev-itpro/commerce-architecture)
 - [Modern POS (MPOS) アーキテクチャ](retail-modern-pos-architecture.md)
 - [コマース スケール ユニット アーキテクチャ](retail-server-architecture.md)
 - [オンライン ストア発行アーキテクチャ](retail-online-store-publishing-architecture.md)
-- [小売チャネルの実績 PowerBI.com ソリューション](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+- [小売チャネルの実績 PowerBI.com ソリューション](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## <a name="deployment"></a>配置
 
@@ -48,7 +48,7 @@ ms.locfileid: "5793015"
 - [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md)
 - [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
 - [診断とトラブルシューティングの Retail コンポーネント イベント](retail-component-events-diagnostics-troubleshooting.md)
-- [アクセス インスタンス](../../dev-itpro/dev-tools/access-instances.md)
+- [アクセス インスタンス](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md)
 
 ## <a name="point-of-sale-pos"></a>販売時点管理 (POS)
 
@@ -62,7 +62,7 @@ ms.locfileid: "5793015"
 
 - [販売時点管理 (POS) の画面レイアウト](../pos-screen-layouts.md)
 - [POS のレイアウト デザイナーのインストール](../install-pos-layout-designer.md)
-- [Modern POS (MPOS) のトリガーと印刷](modern-pos-trigger-extensibility.md)
+- [Modern POS (MPOS) のトリガーと印刷](./pos-trigger-printing.md)
 - [トリガーを使用してトランザクションをブロックする](trigger-example-blocking-transaction.md)
 - [POS ビューへのカスタム コントロールの追加](pos-custom-control.md)
 - [販売時点管理 (POS) 支払拡張機能](pos-payment-extension.md)
@@ -78,6 +78,14 @@ ms.locfileid: "5793015"
 - [Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](pos-rsat.md)
 - [POS カート ビューのイベントおよびハンドラー](cart-view-handlers.md)
 - [カスタム ボタンを POS ヘッダー バーに追加](pos-header-bar.md)
+
+## <a name="pos-independent-packaging-sdk"></a>POS 独立 - パッケージ SDK
+
+- [POS 拡張機能の概要](pos-extension/pos-extension-overview.md)
+- [POS 拡張機能を開始する ](pos-extension/pos-extension-getting-started.md)
+- [POS 拡張機能パッケージ プロジェクトの作成](pos-extension/create-pos-extension-package.md)
+- [Modern POS 拡張 appx ファイルの作成](pos-extension/create-pos-extension-appx.md)
+- [POS 拡張機能のデバッグ](pos-extension/debug-pos-extension.md)
 
 ## <a name="integrating-commerce"></a>コマースの統合
 

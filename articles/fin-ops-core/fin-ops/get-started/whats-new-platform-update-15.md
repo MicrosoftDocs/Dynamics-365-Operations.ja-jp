@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.openlocfilehash: 81d58e46696607c7d6a9669eb030636664b9de5d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bf418276105f159e32e7898bf8c42352e4cb094e
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752618"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923422"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 
@@ -62,7 +62,7 @@ Dynamics 365 for Finance and Operations の重大なイベントの通知シス�
 
 ## <a name="embed-power-apps"></a>埋め込み Power Apps
 
-Microsoft Power Appsは、開発者や技術者以外のユーザーがコードを記述することなくカスタム ビジネス アプリを構築できるようにするサービスで、現在サポートされています。 埋め込み PowerApp はページに追加できるだけでなく、編集、削除、または共有することができます。 また、Finance and Operations からのデータを活用する PowerApp を構築することができます。 詳細については、[埋め込み Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps) を参照してください。
+Microsoft Power Appsは、開発者や技術者以外のユーザーがコードを記述することなくカスタム ビジネス アプリを構築できるようにするサービスで、現在サポートされています。 埋め込み PowerApp はページに追加できるだけでなく、編集、削除、または共有することができます。 また、Finance and Operations からのデータを活用する PowerApp を構築することができます。 詳細については、[埋め込み Power Apps](embed-power-apps.md) を参照してください。
 
 ## <a name="extension-and-overlayering-options-in-visual-studio"></a>Visual Studio の拡張子およびオーバーレイヤ オプション
 
@@ -83,7 +83,7 @@ Microsoft Power Appsは、開発者や技術者以外のユーザーがコード
 
 Dynamics 365 Talent では、「はじめに」のワークブックが提供され、ユーザーが Excel を使用して対話形式でデータを表示、編集、作成できます。 Excel アドインを使用するこれらのワークブックは、生産的な環境設定操作を実現します。 この拡張機能では、ある環境から Excel にデータを読み込み、環境アドレスを変更してから、そのデータを新しい環境に公開することにより、データをある環境から別の環境に移動することができます。
 
-詳細については、「[環境データのコピー](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#copy-environment-data)」を参照してください。
+詳細については、「[環境データのコピー](/../../dev-itpro/office-integration/use-excel-add-in.md#copy-environment-data)」を参照してください。
 
 ## <a name="power-users-can-add-custom-fields-to-forms-without-developer-customization"></a>Power User は、開発者カスタマイズなしのフォームにカスタム フィールドを追加することができます。
 

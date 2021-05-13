@@ -4,22 +4,19 @@ description: このトピックでは、X++ のランタイム関数について
 author: RobinARH
 ms.date: 07/23/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31461
-ms.assetid: 9cf83640-536c-4a99-8e0d-7a4e97d3c91f
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60b93962adff7348dcae2efe0ea5a6edb54883c3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c5e6542d75f35a5da8b6ab4a95a72baa5b3378f3
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749922"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866106"
 ---
 # <a name="x-runtime-function-resources"></a>X++ ランタイム関数リソース
 

@@ -4,22 +4,19 @@ description: このトピックでは、数学ランタイム関数について�
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31361
-ms.assetid: 8982f158-f638-46d7-b3f7-ba8cfd356d57
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d81c134e996a99ea9b6e97774ad3204906db99d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 584d5ec093650097ecde6efda436ec1fa4a2aded
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749930"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923243"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 
@@ -586,7 +583,7 @@ real round(real _arg, real _decimals)
 
 ### <a name="remarks"></a>備考
 
-指定した小数点以下の桁数に実数を丸めるには、[decround 関数](https://msdn.microsoft.com/library/03bd2ea2-414e-43e0-ba05-f5db1a943b91(AX.60).aspx)を使用します。
+指定した小数点以下の桁数に実数を丸めるには、[decround 関数](/previous-versions/dynamics/ax-2012/reference/aa499511(v=ax.60))を使用します。
 
 ### <a name="remarks"></a>備考
 

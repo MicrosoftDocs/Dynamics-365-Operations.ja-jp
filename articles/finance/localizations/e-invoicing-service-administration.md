@@ -2,7 +2,7 @@
 title: 電子請求管理コンポーネント
 description: このトピックでは、電子請求の管理に関連するコンポーネントについて説明します。
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840031"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963194"
 ---
 # <a name="electronic-invoicing-administration-components"></a>電子請求管理コンポーネント
 
@@ -31,7 +31,7 @@ ms.locfileid: "5840031"
 
 ## <a name="azure"></a>Azure
 
-Microsoft Azure を使用して、key vault およびストレージ アカウントのシークレットを作成します。 このシークレットを、電子請求の構成で使用します。
+Microsoft Azure を使用して、Key Vault およびストレージ アカウントのシークレットを作成します。 このシークレットを、電子請求の構成で使用します。
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
@@ -85,12 +85,14 @@ RCS を使用して電子請求書を構成するには、電子請求との通�
 電子請求サービスは、企業が所有する Azure リソースにすべてのビジネス データを保存する役割を果たします。 サービスが正常に動作し、電子請求で必要とされ生成されるすべてのビジネス データに適切にアクセスできるようにするためには、2 つの主要な Azure リソースを作成する必要があります。
 
 - 電子請求書を格納する Azure ストレージ アカウント (Blob ストレージ)
-- 証明書とストレージ アカウントの Uniform Resource Identifier (URI) を格納する Azure key vault
+- 証明書とストレージ アカウントの Uniform Resource Identifier (URI) を格納する Azure Key Vault
 
-> [!NOTE]
-> 電子請求で使用するには、専用の Key Vault のリソースと顧客の Blob ストレージを特別に割り当てる必要があります。
 
-詳細については、[Azure ストレージ アカウント Key Vault リソースの作成](e-invoicing-create-azure-storage-account-key-vault.md) を参照してください。
+電子請求で使用するには、専用の Key Vault のリソースと顧客のストレージ アカウントを特別に割り当てる必要があります。 詳細については、[Azure ストレージ アカウント と Key Vault の作成](e-invoicing-create-azure-storage-account-key-vault.md) を参照してください。
+
+Key Vault の正常性を監視し、警告を受信するには、Key Vault の Azure Monitor を構成します。 Key Vault ログを有効にすると、Key Vault がどのように、また、いつ、だれにアクセスされたかを監視することができます。 詳細については、[Azure Key Vault の監視と警告](/azure/key-vault/general/alert)および [Key Vault ログを有効にする方法](/azure/key-vault/general/howto-logging?tabs=azure-cli) を参照してください。
+
+ベスト プラクティスとして、定期的にシークレットのローテーションを行います。 詳細については、[シークレット ドキュメント](/azure/key-vault/secrets/) を参照してください。
 
 #### <a name="users"></a>ユーザー
 

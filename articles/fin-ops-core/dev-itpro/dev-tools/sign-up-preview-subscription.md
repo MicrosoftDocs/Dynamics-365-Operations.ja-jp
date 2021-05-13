@@ -4,8 +4,6 @@ description: このトピックでは、プレビュー/パートナー オフ�
 author: RobinARH
 ms.date: 12/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
 ms.custom: 13211
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7feabe6956bbdb12a6e9238159b643d9ce9415e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: da1f7f2005c8a9ea55682570691bfad56a514fca
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753010"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866326"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 

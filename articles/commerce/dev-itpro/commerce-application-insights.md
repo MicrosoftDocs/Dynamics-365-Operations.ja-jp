@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 046288851361526861b46280222f5a3cd2f87717
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59aa15b4a35a8e573d8dc9c55bf0f500719b1cad
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793029"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936998"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce Runtime (CRT) POS 拡張機能から[顧客の Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) にイベントを記録する方法について説明します。
+このトピックでは、Commerce Runtime (CRT) POS 拡張機能から[顧客の Application Insights](/azure/azure-monitor/app/app-insights-overview) にイベントを記録する方法について説明します。
 
 ## <a name="log-an-event-to-application-insights"></a>イベントを Application Insights に記録します
 
@@ -72,7 +72,7 @@ ms.locfileid: "5793029"
 
 ## <a name="extend-the-crt-extension-project-to-log-events-to-application-insights"></a>CRT 拡張プロジェクトを拡張して、イベントを Application Insights に記録します。
 
-1. 新しい C\# クラス ライブラリ プロジェクトを作成し、 **Contoso.Diagnostic** という名前を付けます。
+1. 新しい C\# クラス ライブラリ プロジェクトを作成し、**Contoso.Diagnostic** という名前を付けます。
 
     > [!div class="mx-imgBorder"]
     > ![新規 Contoso.Diagnostic プロジェクト](media/VSProject.png)
@@ -166,7 +166,7 @@ ms.locfileid: "5793029"
 
 配置可能パッケージの作成方法の詳細については、 [配置可能なパッケージを作成する](retail-sdk/retail-sdk-packaging.md) を参照してください。
 
-1. **Contoso.Diagnostic** と **Microsoft.ApplicationInsights** のアセンブリを **\\RetailSDK\\参照** フォルダーにコピーします。
+1. **Contoso.Diagnostic** と **Microsoft.ApplicationInsights** のアセンブリを **\\RetailSDK\\ 参照** フォルダーにコピーします。
 2. **BuildTools\\Customization.settings** ファイルを更新し、**\<ItemGroup\>** セクションに次のエントリを追加します。
 
     ```xml

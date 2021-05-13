@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7ab4cf42eed7890b79a9d237cffa75b76055570
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d8097b8d3601b182059022b22d9459d0064fd12e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749973"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941182"
 ---
 # <a name="choose-a-data-integration-strategy"></a>データ統合戦略の選択
 
@@ -86,7 +86,7 @@ Finance and Operations は、Dataverse の仮想データ ソースであり、D
 | OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
 | カスタム サービス | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
-| バッチ データ API | ImportFromPackage                   | [BeginInvoke](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
+| バッチ データ API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
 これらの API が呼び出されると、すぐにビジネス ロジックが実行されるため、OData とカスタム サービスの両方は同期統合パターンです。 次にいくつか例を挙げます。
 

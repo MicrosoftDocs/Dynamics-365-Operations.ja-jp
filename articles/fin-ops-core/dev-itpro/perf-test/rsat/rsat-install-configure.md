@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7379dc84de52942b4882f56af1a44d9549cc5f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 640e110478a7abfc349953ccbf4ee200cd2664b7
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745185"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866176"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -146,7 +146,7 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 + **クラウド プロバイダー** – テスト環境のクラウド テナントのプロバイダーを選択します。 サポートされているプロバイダーは、**グローバル** (パブリッククラウド) および **中国** (主権クラウド) です。
 
     > [!IMPORTANT]
-    > Finance and Operations アプリが 21Vianet に配置されている場合、**クラウド プロバイダー** の設定が必要となり、選択された値は **中国** である必要があります。
+    > Finance and Operations アプリが 21Vianet に配置されている場合、**クラウド プロバイダー** の設定が必要となり、選択された値が **中国** でなければなりません。
 
 ### <a name="configure-the-test-environment-to-trust-the-connection"></a>接続を信頼するようにテスト環境を構成する
 

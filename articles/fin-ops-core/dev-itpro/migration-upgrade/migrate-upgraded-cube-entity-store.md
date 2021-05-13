@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 71f12da33a8fa76bdeb68efec1afeb1b60fbaa87
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 135a2c747ebdb9e9ef59bb5dc4d6968e355402f7
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744747"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921405"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
@@ -27,7 +27,7 @@ ms.locfileid: "5744747"
 
 このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations アプリケーションのエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
 
-エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。 エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)」を参照してください。 [![Power BI アークテクチャ ダイアグラム](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
+エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。 エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update)」を参照してください。 [![Power BI アークテクチャ ダイアグラム](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
 ## <a name="new-power-bi-features-included-in-the-may-2016-and-november-2016-updates"></a>2016 年 5 月および 2016 年 11 月の更新プログラムに含まれる Power BI の新機能
 このチュートリアルでは、Dynamics 365 for Operations の 2016 年 5 月以降の更新プログラムが必要です。 このチュートリアルでは、次の新しい機能を使用します。

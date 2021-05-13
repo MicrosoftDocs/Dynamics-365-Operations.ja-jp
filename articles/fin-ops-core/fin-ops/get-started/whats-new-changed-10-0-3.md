@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.3
-ms.openlocfilehash: dc4675441fbeb87050800b21b77713107bd4d556
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: caca5c29448b34cb227e1045ea55db9071785c87
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754640"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923432"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1003-june-2019"></a>Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更された機能
 
@@ -29,23 +29,23 @@ ms.locfileid: "5754640"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能または変更された機能について説明します。 このバージョンは 6 月にリリースされ、ビルド番号は 10.0.107 です。 バージョン 10.0.3 の詳細については [追加リソース](whats-new-changed-10-0-3.md#additional-resources) を参照してください。
 
-Retail の最新のリリースの新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.3 の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3) を参照してください。
+Retail の最新のリリースの新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.3 の新機能と変更](../../../commerce/get-started/whats-new-10-0-3.md) を参照してください。
 
 ## <a name="feature-management"></a>機能管理
 
 **機能管理** エクスペリエンスは、各リリースで提供されている機能のリストを表示できるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。
 
-詳細については [機能管理](https://go.microsoft.com/fwlink/?linkid=2080380) を参照してください。
+詳細については [機能管理](./feature-management/feature-management-overview.md) を参照してください。
 
 ## <a name="enable-bank-foreign-currency-revaluation-without-a-parameter"></a>パラメーターなしで銀行の外貨再評価を有効にする
 銀行の外貨再評価はバージョン 10.0.2 でリリースされ、それを有効にするために現金と銀行のパラメータを含めました。 機能管理を使用して利用可能なすべての法人に対して、銀行の外貨再評価を有効化できるようになりました。 
 
-詳細については [銀行の外貨再評価](https://go.microsoft.com/fwlink/?linkid=2079802) を参照してください。
+詳細については [銀行の外貨再評価](../../../finance/cash-bank-management/bank-revaluation.md#enable-foreign-currency-revaluation) を参照してください。
 
 ## <a name="expense-reports-re-imagined"></a>経費レポートの再設計
 経費精算書エントリは、経費精算書の完成にかかる時間を節約し、単純化するために再設計されています。 機能管理でこの機能を有効にして、経費レポートを入力するため必要なデータ、オプションのデータ、有効になっていないデータを判断するための経費フィールドの表示を設定する、新しい設定フォームを追加できます。 新しい経費ワークスペースはこの機能で有効化され、以前の経費ワークスペースと置き換えられる、入力体験を向上させるランディング ページです。 
 
-詳細は [経費レポートの再設計](https://go.microsoft.com/fwlink/?linkid=2087165) を参照してください。
+詳細は [経費レポートの再設計](/dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew) を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
@@ -74,7 +74,7 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 には�
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。

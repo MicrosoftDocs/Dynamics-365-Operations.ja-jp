@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f9f355bb2d1b12d020831cdac300dc885a38a70b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5346513b374b5eb6210d6beb0298b81d1c0c96ff
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744211"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923405"
 ---
 # <a name="platform-updates-for-version-10013-of-finance-and-operations-apps-october-2020"></a>Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
 
@@ -37,13 +37,13 @@ ms.locfileid: "5744211"
 
 -  優先順位に基づく調整<br>- 詳細については、[優先順位に基づく調整](../data-entities/priority-based-throttling.md) を参照してください。 
 
--  [保存されているビュー - 一般提供](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- 詳細については、[保存されているビュー](../../fin-ops/get-started/saved-views.md) を参照してください。 
+-  [保存されているビュー - 一般提供](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- 詳細については、[保存されているビュー](../../fin-ops/get-started/saved-views.md) を参照してください。 
 
--  [新しいグリッド コントロール - 一般提供](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-grid-control--general-availability)<br>- 詳細については、[グリッド機能](../../fin-ops/get-started/grid-capabilities.md) を参照してください。 
+-  [新しいグリッド コントロール - 一般提供](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-grid-control--general-availability)<br>- 詳細については、[グリッド機能](../../fin-ops/get-started/grid-capabilities.md) を参照してください。 
 
--  [3 つの jQuery コンポーネント ライブラリのアップグレード](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/upgrade-three-jquery-components-libraries)
+-  [3 つの jQuery コンポーネント ライブラリのアップグレード](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/upgrade-three-jquery-components-libraries)
 
--  [タスク記録でコントロール状態の検証を許可する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- 詳細については、[タスク レコーダー リソース](../user-interface/task-recorder.md#validate) の「検証」セクションを参照してください。 この機能を Regression Suite Automation Tool (RSAT) と組み合わせて使用するには、[RSAT 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=57357) に更新する必要があります。  
+-  [タスク記録でコントロール状態の検証を許可する](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- 詳細については、[タスク レコーダー リソース](../user-interface/task-recorder.md#validate) の「検証」セクションを参照してください。 この機能を Regression Suite Automation Tool (RSAT) と組み合わせて使用するには、[RSAT 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=57357) に更新する必要があります。  
 
 
 ## <a name="additional-resources"></a>追加リソース
@@ -56,7 +56,7 @@ ms.locfileid: "5744211"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 

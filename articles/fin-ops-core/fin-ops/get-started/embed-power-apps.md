@@ -2,7 +2,7 @@
 title: Power Apps からキャンバス アプリを埋め込む
 description: このトピックでは、Microsoft Power Apps のキャンバス アプリをクライアントに埋め込み、製品の機能を拡張する方法について説明します。
 author: jasongre
-ms.date: 11/03/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,33 +13,34 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 7b20d24f79bd84f516e005b9d4a0ecdf6ef848fc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 18146ce5ab081b3a6376bf412805016b04da6a11
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752893"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944682"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Power Apps からキャンバス アプリを埋め込む
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps は開発者と技術者以外のユーザーがコードを記述せずにモバイル デバイス、タブレット、および Web 用のカスタム ビジネス アプリを構築できるようにするサービスです。 Finance and Operations アプリは Power Apps との統合をサポートします。 ユーザー、組織、またはより幅広いエコシステムが開発するキャンバス アプリは、製品の機能を拡張するために Finance and Operations アプリに組み込むことができます。 たとえば、別のシステムから取得した情報で Finance and Operations アプリを補完するために、Power Apps からキャンバス アプリを構築できます。
 
-Power Apps の埋め込みに関する詳細については、短い [Power Apps を組み込む方法](https://www.youtube.com/watch?v=x3qyA1bH-NY) ビデオを確認してください。
+キャンバス アプリの埋め込みに関する詳細については、[キャンバス アプリを組み込む方法](https://www.youtube.com/watch?v=x3qyA1bH-NY) のショート ビデオをご覧ください。
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>埋め込みキャンバス アプリを Power Apps からページに追加する
 
 ### <a name="overview"></a>概要
 
-Power Apps からクライアントにキャンバス アプリを埋め込む前に、目的のビジュアルまたは機能を備えたアプリを見つけるか構築する必要があります。 このトピックには、アプリを構築するプロセスの詳細な説明は含まれていません。 初めて Power Apps を使用する場合は、[Power Apps ドキュメント](https://docs.microsoft.com/powerapps/) を参照してください。
+Power Apps からクライアントにキャンバス アプリを埋め込む前に、目的のビジュアルまたは機能を備えたアプリを見つけるか構築する必要があります。 このトピックには、アプリを構築するプロセスの詳細な説明は含まれていません。 初めて Power Apps を使用する場合は、[Power Apps ドキュメント](/powerapps/) を参照してください。
 
 アプリを埋め込む準備ができたときにページ上の特定のキャンバス アプリにアクセスするには、2 つの方法があります。 シナリオに適したアプローチを選択できます。 最初のアプローチでは、標準のアクション ペインに追加された **Power Apps** ボタンを使用します。 このアプローチを使用して追加したアプリは、**Power Apps** メニュー ボタン上に項目として表示されます。 これらの項目の 1 つを選択すると、埋め込みアプリを含むサイド ペインが表示されます。 または、アプリを新しいタブ、クイック タブ、あるいはブレードとして、またはワークスペースの新しいセクションとしてページに直接埋め込むこともできます。
 
 埋め込みキャンバス アプリを構成するときに、アプリへのコンテキストとして送信する単一のフィールドを選択できます。 この手順により、現在表示しているデータに基づいてアプリが応答できるようになります。
 
 > [!NOTE]
-> 現在、このメカニズムを使用して、モデル化されたアプリを埋め込むことはできません。  
+> 現在、このメカニズムを使用して、モデル駆動型アプリを埋め込むことはできません。  
 
 ### <a name="details"></a>細目
 
@@ -55,7 +56,8 @@ Power Apps からクライアントにキャンバス アプリを埋め込む�
 
     - **名前** フィールドは、埋め込まれたアプリを含むボタンまたはタブのテキストを示します。 多くの場合、このフィールドでアプリの名前を繰り返すことができます。
     - **アプリ ID** フィールドは、埋め込むキャンバス アプリのグローバル一意識別子 (GUID) を示します。 この値を取得するには、[make.powerapps.com](https://make.powerapps.com) でアプリを検索し、**詳細** の **アプリ ID** フィールドを確認します。
-    - **アプリのコンテキストを入力する** では、必要に応じて、アプリに入力として渡すデータが含まれているフィールドを選択することができます。 アプリが Finance and Operations アプリから送信されるデータにアクセスする方法の詳細に関しては、このトピックの後の [Finance and Operations アプリから送信されるデータを活用するアプリの構築](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) セクションを参照してください。
+    - **アプリのコンテキストを入力する** では、必要に応じて、アプリに入力として渡すデータが含まれているフィールドを選択することができます。 アプリが Finance and Operations アプリから送信されるデータにアクセスする方法の詳細については、このトピックの後半の [Finance and Operations アプリから送信されたデータを活用するアプリの構築](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) というタイトルのセクションを参照してください。 
+        - バージョン 10.0.19 以降、現在の法人も **cmp** URL パラメーターを介してコンテキストとしてキャンバス アプリに渡されます。 ターゲットのキャンバス アプリはこの情報を利用するまで、影響を受けることはありません。 
     - 埋め込むアプリのタイプに一致する **アプリケーション サイズ** を選択します。 モバイル デバイス用に作成されたアプリに対しては **シン** を選択し、タブレット用に作成されたアプリに対しては **ワイド** を選択します。 これにより、埋め込みアプリに十分な容量を確保できます。
     - **法人** クイック タブには、アプリが利用できる法人を選択する機能があります。 既定では、アプリをすべての法人に対してアクセス可能にします。 このオプションは、[保存されたビュー](saved-views.md) が無効になっている場合にのみ使用可能です。 
 
@@ -65,7 +67,7 @@ Power Apps からクライアントにキャンバス アプリを埋め込む�
 
 ページにキャンバス アプリを埋め込み、そのページから渡されたデータ コンテキストで正しく動作することを確認したら、システム内の他のユーザーとアプリを共有できます。 埋め込みキャンバス アプリを共有するには、次の手順を実行します。
 
-1. 適切なユーザーと [キャンバス アプリを共有](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) して、Power Apps でアプリにアクセスできるようにします。 
+1. 適切なユーザーと [キャンバス アプリを共有](/powerapps/maker/canvas-apps/share-app) して、Power Apps でアプリにアクセスできるようにします。 
 
 2. 対象とするユーザーが適切な個人用設定を持っていることを確認して、ユーザーがページを表示したときに埋め込みアプリが表示されるようにします。 次のアプローチのいずれかを使用できます:
 
@@ -79,12 +81,14 @@ Power Apps からクライアントにキャンバス アプリを埋め込む�
 
 ## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Finance and Operations アプリから送信されるデータを使用するキャンバス アプリの構築
 
-Finance and Operations アプリに埋め込まれるキャンバス アプリを構築する場合、プロセスの重要な部分の 1 つは、Finance and Operations アプリからの入力データを使用することです。 Power Apps 開発経験から、Finance and Operations アプリから渡される入力データには、**Param("EntityId")** 変数を使用してアクセスできます。
+Finance and Operations アプリに埋め込まれるキャンバス アプリを構築する場合、プロセスの重要な部分の 1 つは、Finance and Operations アプリからの入力データを使用することです。 Power Apps 開発経験から、Finance and Operations アプリから渡される入力データには、**Param("EntityId")** 変数を使用してアクセスできます。 また、バージョン 10.0.19 以降、現在の法人も **Param("cmp")** 変数を介してコンテキストとしてキャンバス アプリに渡されます。 
 
 たとえば、アプリの OnStart 機能では、Finance and Operations アプリから次のような変数に入力データを設定することができます。
 
-```powerapps
+``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
+
+If(!IsBlank(Param("cmp")), Set(FinOpsInput, Param("cmp")), Set(FinOpsLegalEntity, ""));
 ```
 
 ## <a name="viewing-a-canvas-app"></a>キャンバス アプリの表示
@@ -112,6 +116,11 @@ Finance and Operations アプリのページに埋め込みキャンバス ア�
 - 埋め込まれたアプリは、個人用設定データとして保存されるため、ページの個人用設定をクリアすると、そのページの埋め込まれたアプリも削除されます。 ページの個人用設定をクリアするのは、永久的なもので元に戻すことはできないことに注意してください。 ページの個人用設定を削除するには、**オプション** を選択して **このページのパーソナライズ**、最後に **クリア** ボタンをクリックします。 ブラウザを更新した後、このページの以前のすべての個人用設定は、削除されます。 個人用設定を使用してページを最適化する方法の詳細については、[ユーザー エクスペリエンスのパーソナライズ](personalize-user-experience.md)を参照してください。
 
 ## <a name="appendix"></a>付録
+
+### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[開発者] フォーム上のアプリをモデル化する
+
+このトピックでは、個人用設定を通じてキャンバス アプリを埋め込む方法に焦点を当てていますが、開発者は Visual Studio 開発エクスペリエンスを使用して、フォームにキャンバス アプリを追加することもできます。 これを行うには、PowerAppsHostControl をフォームに追加します。 コントロールで使用できるメタデータ プロパティは、個人用設定のエクスペリエンスと同じ機能を提供します。
+
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[開発者] アプリの埋め込み先の指定
 

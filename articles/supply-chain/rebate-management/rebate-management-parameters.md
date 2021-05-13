@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: a0a3bad751aba4f138db7fdae069a67a4faed4a6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: be98f3fada7491382946b40615fab5a58c2861d7
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839104"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920016"
 ---
 # <a name="rebate-management-parameters"></a>リベート管理パラメーター
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 **リベート管理パラメータ** ページは、**リベート管理** モジュール全体に適用される設定を定義するために使用 します。 これらの設定は、転記、ステータスの更新、番号順序、その他の動作に影響します。 この設定は、法人間で共有され、適切なセキュリティ アクセス許可を持つユーザーによって変更できます。
 

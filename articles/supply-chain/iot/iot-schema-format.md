@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ddd97b864e0bb361dc9ec26de4825f0de3352a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f7f07f53d6eeb5966bc75b7bffc1f1eb47435cc5
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841973"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909489"
 ---
 # <a name="schema-formats-for-iot-hub-messages"></a>IoT ハブ メッセージのスキーマ形式
 
@@ -101,7 +101,7 @@ ID と値のペアは、IoT インテリジェンス メッセージ スキー�
 
 上記の 2 つのメッセージには **ID** と **値** プロパティが含まれます。 **id** 値は、シナリオ設定時に **シグナル データ値** テーブルにマップできます。 **装置のダウンタイム** シナリオでは、**IoTInt.Machine1225.PartOut** 値をマップします。 **製品品質** シナリオでは、**IoTInt.Machine1225.Temperature** 値をマップします。
 
-詳細については、[Azure IoT Hub ドキュメント](https://docs.microsoft.com/azure/iot-hub/) を参照してください。
+詳細については、[Azure IoT Hub ドキュメント](/azure/iot-hub/) を参照してください。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

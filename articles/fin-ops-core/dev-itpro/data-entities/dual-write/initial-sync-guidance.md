@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aee2a3c1acbbd5220866f21fe87169057fbcb775
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0d0272e1d895c5b1abee6add1bda2f89d97db4aa
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748581"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941210"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 
@@ -45,7 +45,7 @@ ms.locfileid: "5748581"
 
 ### <a name="limit-of-500000-rows-per-run"></a>実行ごとに 500,000 の行制限
 
-初期同期によって許可される行の最大数は、1 回の実行ごとに 500,000 です。 各リーガル テーブルが個別に実行するため、各リーガル テーブルに 500,000 の行制限が適用されます。 詳細については、[Dataverse へデータを統合](https://docs.microsoft.com/power-platform/admin/data-integrator) を参照してください。 特に、「パフォーマンスを最適化し、アプリケーションに過負荷をかけないために、現在プロジェクトの実行数を 500K 行に制限しています」という通知に注意してください。
+初期同期によって許可される行の最大数は、1 回の実行ごとに 500,000 です。 各リーガル テーブルが個別に実行するため、各リーガル テーブルに 500,000 の行制限が適用されます。 詳細については、[Dataverse へデータを統合](/power-platform/admin/data-integrator) を参照してください。 特に、「パフォーマンスを最適化し、アプリケーションに過負荷をかけないために、現在プロジェクトの実行数を 500K 行に制限しています」という通知に注意してください。
 
 初期同期時に、1 回の実行に 500,000 行以上の行が存在する場合は、データを Finance and Operations アプリと Dataverse に個別に移行し、初期同期をスキップすることをお勧めします。
 

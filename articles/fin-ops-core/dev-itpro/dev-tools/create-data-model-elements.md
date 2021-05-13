@@ -4,8 +4,6 @@ description: このチュートリアルでは、Visual Studio の Dynamics 365 
 author: RobinARH
 ms.date: 07/23/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 23421
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d74e11e935ea2ee2d8d6ae0ab4983400c70850f5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8c5b63d0cd0c995e06f42ce998893ad8f38ab61e
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745313"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866005"
 ---
 # <a name="create-models-and-data-model-elements-overview"></a>モデルとデータ モデル要素の作成の概要
 

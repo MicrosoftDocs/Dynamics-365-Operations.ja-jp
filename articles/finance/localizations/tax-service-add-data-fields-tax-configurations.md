@@ -2,7 +2,7 @@
 title: 税コンフィギュレーションにデータ フィールドを追加する
 description: このトピックでは、データ フィールドを追加して税コンフィギュレーションをカスタマイズする方法について説明します。
 author: kailiang
-ms.date: 03/25/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b9d9fce81151ad70d57c69e389e238a6f9137d56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 197a2d1605dd39188841aba02a71d228c7138c54
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819427"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921192"
 ---
 # <a name="add-data-fields-in-tax-configurations"></a>税コンフィギュレーションにデータ フィールドを追加する
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、[税統合で追加されたデータ フィールド](tax-service-add-data-fields-tax-integration-by-extension.md)を使用して、税コンフィギュレーション をカスタマイズする方法について説明します。
 

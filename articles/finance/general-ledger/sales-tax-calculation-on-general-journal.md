@@ -2,25 +2,25 @@
 title: 一般仕訳帳明細行での消費税計算
 description: このトピックでは、一般仕訳帳明細行のさまざまなタイプの勘定 (仕入先、顧客、元帳、およびプロジェクト) に対する消費税がどのように計算されるかについて説明します。
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815335"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937309"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>一般仕訳帳明細行での消費税計算
 [!include [banner](../includes/banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "5815335"
 
 ![消費税トランザクション ページ](media/sales-tax-amount-sign.jpg)
 
-次の表では、一時的な消費税テーブルで消費税金額の符号を決定する一般的なルールを示します。
+次の表では、一時的な消費税テーブルで消費税提示方法および消費税金額の符号を決定する一般的なルールを示します。
 
 | 仕訳帳明細行の金額 | 消費税提示方法  | 消費税金額の符号 |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +126,7 @@ ms.locfileid: "5815335"
 | 負            | 消費税収入 | 負              |
 | 負            | 消費税支払    | 正              |
 
-**元帳** 明細行で消費税グループまたは品目消費税グループが選択されている場合、**プロジェクト** または **元帳** 明細行のみを持つ伝票に対して特別なルールがあります。 このルールは、一般仕訳帳の独立した消費税計算機能を有効にすることにより制御されます。 この機能をオフにすると、**元帳** 明細行の税金額は、**プロジェクト** 明細行の借方/貸方の方向を使用します。 機能をオンにすると、**元帳** 明細行の税金額はそれ自体の借方/貸方の方向を使用します。 次の表では、各シナリオのルールを示します。 
+**元帳** 明細行で消費税グループまたは品目消費税グループが選択されている場合、**プロジェクト** または **元帳** 明細行のみを持つ伝票に対して特別なルールがあります。 このルールは、**一般仕訳帳の独立した消費税計算機能を有効にする** 機能により制御されます。 この機能をオフにすると、**元帳** 明細行の税金額は、**プロジェクト** 明細行の借方/貸方の方向を使用します。 機能をオンにすると、**元帳** 明細行の税金額はそれ自体の借方/貸方の方向を使用します。 次の表では、各シナリオのルールを示します。 
 
 **機能がオンになっている場合のルール**
 

@@ -4,8 +4,6 @@ description: このトピックでは、開発インスタンスへのアクセ�
 author: laneswenka
 ms.date: 09/22/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 10031
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4170bcb8ae4d8d460c6fe66de2725603f6c2171
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 03c958302e654ef908381d38e4fec7992e57622c
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750950"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923239"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -37,9 +35,7 @@ ms.locfileid: "5750950"
 
 ## <a name="deploying-cloud-development-environments"></a>クラウド開発環境の配置
 
-クラウド ホスト環境を展開するプロセスは、Lifecycle Services (LCS) トライアルまたはパートナー プロジェクトと、LCS 顧客実装プロジェクトで異なります。
-
-**試用版** または **パートナー** プロジェクト用:
+LCS プロジェクトにクラウドの開発環境を配置する:
 
 1. LCS プロジェクトと Azure サブスクリプションの間に接続を作成します。 Azure サブスクリプション ID が必要であり、サブスクリプションの使用を承認します。
 2. 配置する **環境** の下で **+** を選択します。
@@ -53,23 +49,6 @@ ms.locfileid: "5750950"
 
     ![環境の配置](media/access-instances-3.jpeg)
     
-6. クラウド ホスト環境を選択しなかった場合は、ダウンロードする VHD を選択します。
-
-**顧客実装** プロジェクト用:
-1. LCS 実装プロジェクトにサインインします。
-2. **構成** を選択して配置します。
-
-    ![開発、テスト、およびコンフィギュレーション](media/access-instances-6.jpeg)
-    
-3. アプリケーションとプラットフォーム バージョンを選択します。
-4. 設定を指定し、**保存** を選択します。
-
-    ![配置設定](media/access-instances-7.jpeg)
-
-顧客には、Microsoft の Azure サブスクリプションでホストされている無料の「開発とテスト」環境が 1 つ提供されます。 「開発およびテスト」には、**開発** と **ビルドおよびテスト** の 2 種類の環境があります。 開発およびカスタマイズ活動については、**開発** 環境をコンフィギュレーションします。 **ビルドおよびテスト** 標準的な開発活動では環境はサポートされていません。 代わりに、日単位ビルドおよびテストの自動化に使用されます。 詳細については、[継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md) を参照してください。  
-
-追加の開発とビルド環境は、ユーザー自身の Azure サブスクリプションで購入またはホストすることができます。 独自のサブスクリプションに環境を展開するには、**クラウド ホスト環境** ページに移動します。
-
 ![クラウド ホスト インスタンス](media/CloudHostedPicture.jpg)
 
 ## <a name="cloud-environment-that-is-provisioned-through-lcs"></a>LCS を通じてプロビジョニングされるクラウド環境
@@ -98,7 +77,7 @@ ms.locfileid: "5750950"
 1.  VM 名をクリックします。
 2.  表示されているローカル管理者のユーザー名とパスワードを使用して、リモート デスクトップ経由でクラウド VM に接続します。 パスワードの表示アイコンを選択してパスワードを表示することができます。
 
-配置された **プラットフォーム更新プログラム 12 以降** の任意の環境については、特徴的アカウント、開発者アカウントおよび管理者アカウントがあります。 顧客が、Microsoft サブスクリプションで実行されている開発環境またはビルド環境の仮想マシン管理者アカウントにアクセスすることはできません。 したがって、環境が Azure サブスクリプションで実行されていない限り、管理者アカウントは非表示になります。 詳細については、[管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問](../sysadmin/VMs-no-admin-access.md)を参照してください。 
+配置された **プラットフォーム更新プログラム 12 以降** の任意の環境については、特徴的アカウント、開発者アカウントおよび管理者アカウントがあります。 
 
 リモート デスクトップを通じて環境にサインインした後、ブラウザーからローカル アプリケーションにアクセスできるようにする場合、リモート コンピューターからアプリケーションにアクセスするために使用するのと同じベース URL を使用します。 上記のセクションは、このベース URL を LCS から取得する方法について説明します。
 
@@ -118,7 +97,7 @@ ms.locfileid: "5750950"
 
 ダウンロード可能な VHD を POS のカスタマイズに使用するには、次の手順も実行する必要があります。
 
--   ホスト コンピューターで、入れ子になった VM サポートを有効にします。 詳細については、[入れ子仮想化の仮想マシンで Hyper-v を実行](https://msdn.microsoft.com/virtualization/hyperv_on_windows/user_guide/nesting) を参照してください。
+-   ホスト コンピューターで、入れ子になった VM サポートを有効にします。 詳細については、[入れ子仮想化の仮想マシンで Hyper-v を実行](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) を参照してください。
 
 ### <a name="running-the-virtual-machine-locally"></a>仮想マシンをローカルで実行
 
@@ -148,7 +127,7 @@ Hyper-V マネージャーから VM を実行するには、これらの手順�
 POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要があります。
 
 1.  [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/download/details.aspx?id=53424) をダウンロードしてインストールします。
-2.  Hyper-V ホスト サービスを起動します。 詳細については、[Hyper-V: Hyper-V 仮想マシン管理サービスを実行している必要があります](https://technet.microsoft.com/library/ee956894(v=ws.10).aspx) を参照してください。 起動中にエラーが発生した場合は、ゲスト VM で Hyper-V ロールをアンインストールし、再インストールすることもできます。
+2.  Hyper-V ホスト サービスを起動します。 詳細については、[Hyper-V: Hyper-V 仮想マシン管理サービスを実行している必要があります](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee956894(v=ws.10)) を参照してください。 起動中にエラーが発生した場合は、ゲスト VM で Hyper-V ロールをアンインストールし、再インストールすることもできます。
 
 ### <a name="provisioning-the-administrator-user"></a>管理者ユーザーを準備
 
@@ -172,7 +151,7 @@ POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要
 #### <a name="for-dynamics-365-for-operations-70"></a>Dynamics 365 for Operations 7.0 の場合
 
 1.  [IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW](https://go.microsoft.com/fwlink/?LinkID=286152) をインストールします。
-2.  [Windows PowerShell (64-ビット バージョン) 用 Azure Active Directory モジュール](https://go.microsoft.com/fwlink/p/?linkid=236297) をインストールします。
+2.  [Windows PowerShell (64-ビット バージョン) 用 Azure Active Directory モジュール](/collaborate/connect-redirect?DownloadID=59185) をインストールします。
 3.  テナントとユーザー ID の Azure AD を照会します。 Windows PowerShell 統合スクリプト環境 (ISE) ウィンドウを管理者権限で開き、次のコマンドを実行します。 Azure AD 資格情報を求められます。 以前に管理者プロビジョニング ツールで使用したのと同じユーザー アカウントを使用します。
 
     ```powershell
@@ -251,8 +230,8 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 ### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
 ソフトウェア開発キット (SDK) は、C:\RetailSDK にあります。 アプリケーションの使用およびカスタマイズ方法の詳細については、次のトピックを参照してください。
--   [Retail ソフトウェア開発キット (SDK) アーキテクチャ](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
--   [販売時点管理 (POS) デバイスのライセンス認証](../../../retail/dev-itpro/retail-device-activation.md)
+-   [Retail ソフトウェア開発キット (SDK) アーキテクチャ](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
+-   [販売時点管理 (POS) デバイスのライセンス認証](../../../commerce/dev-itpro/retail-device-activation.md)
 
 ## <a name="redeploying-or-restarting-the-runtime-on-the-vm"></a>VM でのランタイムの再配置または再起動
 ローカルのランタイムを再起動して、すべてのパッケージを再配置するには、次の手順を実行します。

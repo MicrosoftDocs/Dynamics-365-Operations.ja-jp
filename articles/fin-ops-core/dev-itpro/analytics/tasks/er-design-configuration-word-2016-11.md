@@ -2,7 +2,7 @@
 title: Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成
 description: このトピックでは、Excel ブックとしてレポートを生成するように設計されたレポート形式で、Word ドキュメントとしてレポートを生成するように構成する方法について説明します。
 author: NickSelin
-ms.date: 01/11/2021
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab4cd4a390782936a74977ac2aef3790aa8ac1af
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891698"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944295"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成
 
@@ -36,8 +36,8 @@ GBSI 社を例に使用して、これらの手順について解説します。
 
 また、サンプル レポート用に次のテンプレートをダウンロードしてローカルに保存する必要があります。
 
-- [支払レポート (SampleVendPaymDocReport.docx) のテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
-- [支払レポート (SampleVendPaymDocReportBounded.docx) のバインドされたテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
+- [支払レポート (SampleVendPaymDocReport.docx) のテンプレート](https://download.microsoft.com/download/0/d/e/0de5a87c-95fc-4dfa-958f-285cb28b5b2b/SampleVendPaymDocReport.docx)
+- [支払レポート (SampleVendPaymDocReportBounded.docx) のバインドされたテンプレート](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded.docx)
 
 これらの手順は、Dynamics 365 for Operations バージョン 1611 (2016年11月) で追加された機能に関するものです。
 

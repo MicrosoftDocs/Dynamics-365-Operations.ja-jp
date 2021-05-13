@@ -2,7 +2,7 @@
 title: マスター データ検索用の環境の設定
 description: このトピックでは、税計算マスター データ検索機能を使用するための環境の設定方法について説明します。
 author: kai-cloud
-ms.date: 03/31/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,43 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eda093a75898bace2f3c7968933b83ccafa7fabb
-ms.sourcegitcommit: 66095f1b7e0fd2756aa29fd7deb9ce5392b7e0b2
+ms.openlocfilehash: 9f9b385df1db60b27698d90281c43fabb574af49
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "5869079"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924157"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>マスター データ検索用の環境の設定
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 このトピックでは、税計算マスター データ検索機能を使用するための環境の設定方法について説明します。
 
 1. Lifecycle Services (LCS) の Power Platform 統合を設定します。 詳細については、[Microsoft Power Platform 統合 - アドインの概要](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md)を参照してください。
 2. Dynamics 365 Finance および Microsoft Dataverse を設定します。 詳細については、[ソリューションの入手](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution)および[認証と承認](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization)を参照してください。
-3. [税サービス仮想エンティティ](https://go.microsoft.com/fwlink/?linkid=2158160)から *前提条件の税サービス仮想エンティティ ソリューション* をインポートします。
+3. 次のエンティティを設定します。 詳細については、[仮想エンティティの有効化](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities) を参照してください。
+      - CompanyInfoEntity
+      - CurrencyEntity
+      - CustCustomerV3Entity
+      - DeliveryTermsEntity
+      - EcoResProductCategoryEntity
+      - EcoResReleasedProductV2Entity
+      - LogisticsAddressCityEntity
+      - LogisticsAddressCountryRegionTranslationEntity
+      - LogisticsAddressStateEntity
+      - PurchProcurementChargeCDSEntity
+      - SalesChargeCDSEntity
+      - TaxGroupEntity
+      - TaxItemGroupHeadingEntity
+      - VendVendorV2Entity
 4. Dynamics 365 Regulatory Configuration Service (RCS) を設定します。 
 5. Microsoft に対するサービス要求を作成して、次の機能のフライティングを有効にします:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
 
-6. Finance で、**機能の管理** ワークスペースに移動し、次の機能を有効にします:
+6. **機能管理** ワークスペースに移動し、次の機能を有効にします。
 
       - (プレビュー) 電子申告 Dataverse データ ソース サポート
       - (プレビュー) 税サービス Dataverse のデータソース サポート

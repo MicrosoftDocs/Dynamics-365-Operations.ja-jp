@@ -4,23 +4,20 @@ description: このトピックでは、X++のループ ステートメントに
 author: RobinARH
 ms.date: 06/17/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.devlang: xpp
 ms.reviewer: rhaertle
 ms.custom: 150213
-ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1802bb7099b61cc1f6adf49a5c5ccd273d38bcda
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f38914d926af5a60ff20cd159f73395a83920809
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749934"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865863"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 807f56d6638e73cf3e5a49978ce7d61477570ba7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 52dcf72609d29d62c3e044277b637526ead88039
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745135"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909018"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 
@@ -25,10 +25,10 @@ ms.locfileid: "5745135"
 
 アドインを使用すると、Finance and Operations アプリの機能を拡張できます。 次のトピックでは、アドインの例を示します:
 
-- [計画最適化の概要](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
-- [在庫の視覚化アドイン](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
-- [Azure Data Lake へのエクスポートのコンフィギュレーション](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
-- [IoT インテリジェンスのホーム ページ](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
+- [計画最適化の概要](../../../supply-chain/master-planning/planning-optimization/planning-optimization-overview.md)
+- [在庫の視覚化アドイン](../../../supply-chain/inventory/inventory-visibility.md)
+- [Azure Data Lake へのエクスポートのコンフィギュレーション](../data-entities/configure-export-data-lake.md)
+- [IoT インテリジェンスのホーム ページ](../../../supply-chain/iot/iot-intelligence-home-page.md)
 
 ## <a name="prerequisites-for-setting-up-add-ins"></a>アドインを設定するための前提条件
 
@@ -51,7 +51,7 @@ ms.locfileid: "5745135"
     - Dynamics 365 管理者
     - Power Platform 管理者
     
-    詳細については、[サービス管理者ロールを使用したテナントの管理](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant) を参照してください。
+    詳細については、[サービス管理者ロールを使用したテナントの管理](/power-platform/admin/use-service-admin-role-manage-tenant) を参照してください。
 
 ## <a name="set-up-add-ins"></a>アドインの設定
 

@@ -2,7 +2,7 @@
 title: Azure Data Lake へのエクスポートの構成
 description: このトピックでは、Azure Data Lake へのエクスポートの構成に関する情報を説明します。
 author: MilindaV2
-ms.date: 01/04/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform Update 33
-ms.openlocfilehash: 8ec3f393f9d38943643e518eaa573f54d58f6cac
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ef6bbccc4161812344b6055999941ac28e7271ee
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752318"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940908"
 ---
 # <a name="configure-export-to-azure-data-lake"></a>Azure Data Lake へのエクスポートのコンフィギュレーション
 
@@ -76,12 +76,14 @@ Azure portal で行われる手順は次のとおりです。
 > [!NOTE]
 > Azure portal で作業する場合は、後続の手順に対して複数の値を保存するように指示されます。 また、これらの値の一部は、Lifecycle Services (LCS) を使用して Finance and Operations アプリに提供されます。 これを行うには、LCS への管理者アクセス権が必要です。
 1. [Azure Active Directory でアプリケーションを作成する](#createapplication)
-2. [アプリケーションにアクセス制御ロールを付与する](#grantaccess)
-3. [サブスクリプションに Data Lake ストレージ (Gen2 アカウント) を作成します](#createsubscription)
+2. [サブスクリプションに Data Lake ストレージ (Gen2 アカウント) を作成します](#createsubscription)
+3. [アプリケーションにアクセス制御ロールを付与する](#grantaccess)
 4. [キー コンテナーの作成](#createkeyvault)
 5. [キー コンテナーにシークレットを追加する](#addsecrets)
 6. [キー コンテナーのシークレットを読み取るためにアプリケーションを許可する](#authorize)
-7. [LCS の Data Lake アドインへのエクスポートのインストール](#installaddin)
+7. [Power Platform 統合](#powerplatformintegration)
+8. [LCS の Data Lake アドインへのエクスポートのインストール](#installaddin)
+
 
 ## <a name="create-an-application-in-azure-active-directory"></a><a name="createapplication"></a>Azure Active Directory でアプリケーションを作成する
 
@@ -123,19 +125,20 @@ Data Lake ストレージ アカウントは、Finance and Operations アプリ�
 2. 左側のナビゲーション ウィンドウで、**アクセス制御 (IAM)** を選択します。 
 3. **アクセス制御** ページで、**ロールの割り当て** タブを選択します。
 4. ページの上部の **追加** を選択し、**ロール割り当ての追加** を選択します。
-5. **ロール割り当ての追加** ダイアログで、**ロール** フィールドを選択し、**所有者** を選択します。
+5. **ロール割り当ての追加** ダイアログ ボックスで、**ロール** フィールドを選択し、**ストレージ BLOB データの共同作成者** を選択します。
+6. **選択** フィールドで、前述の手順で登録したアプリケーションを選択します。
 
 > [!NOTE]
 > フィールド対する変更、**Azure AD ユーザー、グループ、サービス プリンシパル** への **アクセス権の割り当て** は行わないでください。
 
-6. **選択** フィールドで、前述の手順で登録したアプリケーションを選択します。
 7. **保存** を選択します。
-8. 手順 4-7 を繰り返して、以下の表に記載した残りのロールを追加します。
+8. 手順 4 ~ 7 を繰り返して、次に示すように **ストレージ BLOB データの読み取り** ロールを追加します。
+9. 先ほど作成した[アプリケーション](#appid) のストレージ アカウント ロール の割り当てを検証します。 
 
-|   選択するアプリケーション     |     割り当てられるロール     |
-|----------------------------------|-----------------------------|
-| 既に作成した[アプリケーション](#appid) | ストレージ BLOB データの共同作成者 |
-| 既に作成した[アプリケーション](#appid) | ストレージ BLOB データの読み取り権限を持つユーザー     |
+     |   申請書     |     役割     |
+     |----------------------------------|-----------------------------|
+     | 既に作成した[アプリケーション](#appid) | ストレージ BLOB データの共同作成者 |
+     | 既に作成した[アプリケーション](#appid) | ストレージ BLOB データの読み取り権限を持つユーザー     |
 
 ## <a name="create-a-key-vault"></a><a name="createkeyvault"></a> キー コンテナーの作成
 
@@ -150,7 +153,7 @@ Data Lake ストレージ アカウントは、Finance and Operations アプリ�
 
 キーコンテナーに3つのシークレットを作成し、前述の手順で保存した値を追加します。 それぞれのシークレットに対して、前述の手順で保存したシークレット名を入力し、値を入力する必要があります。
 
-| <a name="suggest"></a>**推奨されるシークレット名** | **前述の手順で保存したシークレット値**  | **例** |
+| <a name="suggest"></a>**推奨されるシークレット名** | **前述の手順で保存したシークレット値**  | **シークレット値の例** |
 |---------------------------|------------------------------------------------------------------|-------------|
 | アプリ ID                    | [作成済みの](#appid)アプリケーション オブジェクトの ID。             |8936e905-197b-xxx-xxxx-xxxxxxxxx|
 | アプリのシークレット                | 前述の手順で入力した[クライアント シークレット](#secret)です。                  |NaeIxxxxxxx---xxxx7eixxx ~ 1g-|
@@ -187,7 +190,21 @@ Data Lake ストレージ アカウントは、Finance and Operations アプリ�
 
 7.  **保存** を選択します。
 
+## <a name="power-platform-integration"></a><a name="powerplatformintegration"></a>Power Platform 統合 
+この環境に初めてアドインをインストールする場合、この環境に対して **Power Platform 統合** を有効にする必要があるかもしれません。 Finance and Operations アプリケーション環境で Power Platform 統合を設定するには 2 つのオプションがあります。
 
+### <a name="option-1-set-up-power-platform-integration-using-lcs"></a>オプション 1: LCS を使用して Power Platform 統合の設定
+
+LCS から Power Platform 統合を設定するには、[アドインの概要](../power-platform/add-ins-overview.md) を参照してください。
+
+### <a name="option-2-set-up-power-platform-integration-using-the-dual-write-wizard"></a>オプション 2: 二重書き込みウィザードを使用して Power Platform 統合の設定
+
+**Power Platform 統合** を設定するもう 1 つの方法は、データベースで Power Platform 環境を作成し、二重書き込みの設定を使用します。 次の手順を実行して、Power Platform 環境を作成し、統合を完了します。 
+
+1. [データベースを使用して環境を作成します](/power-platform/admin/create-environment#create-an-environment-with-a-database.md)。
+2. [要件と前提条件を完了します](dual-write/requirements-and-prerequisites.md)。  
+3. [二重書き込みウィザードを使用して環境をリンクする](dual-write/link-your-environment.md) を使用します。
+4. Power Platform 統合が設定され、LCS 環境ページに追加されていることを確認します。  
 
 ## <a name="install-the-export-to-data-lake-add-in-in-lcs"></a><a name="installaddin"></a>LCS の Data Lake アドインへにエクスポート機能をインストールする 
 
@@ -205,12 +222,20 @@ Finance and Operations アプリから Data Lake にデータをエクスポー�
 
 1.  [LCS](https://lcs.dynamics.com) にログインし、ご利用の環境に移動します。
 2.  **環境** ページで、**環境アドイン** タブを選択します。**Data lakeの エクスポート** が一覧に表示される場合は、Data Lake アドインが既にインストールされているため、この手順の残りの部分は省略することができます。 これに該当しない場合は、残りの手順を実行してください。
-3.  この環境に初めてアドインをインストールする場合、この環境に対して **Power Platform 統合** を有効にする必要があるかもしれません。 これは、LCS 管理者が実行する 1 回限りの操作です。 詳細については、[Add-ins の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview) を参照してください。 一般的な問題については、トラブルシューティングを参照してください。
-4.  **インストールするアドイン** を選択し、ダイアログ ボックスで、**Data lake にエクスポート** を選択します。 **Data lake にエクスポート** が表示されない場合は、この機能がご利用の環境で使用できない可能性があります。
-5.  **設定のアドイン** ダイアログ ボックスで、必要な情報を入力します。 質問に答えるには、既にストレージ アカウントが作成されている必要があります。 ストレージ アカウントをまだ持っていない場合は、作成するか、管理者にアカウントの作成代行を依頼してください。
-6.  チェック ボックスをオンにしてサービス条件を承認し、**インストール** を選択します。
+3.  **インストールするアドイン** を選択し、ダイアログ ボックスで、**Data lake にエクスポート** を選択します。 **Data lake にエクスポート** が表示されない場合は、この機能がご利用の環境で使用できない可能性があります。
+4.  **設定のアドイン** ダイアログ ボックスで、必要な情報を入力します。 質問に答えるには、既にストレージ アカウントが作成されている必要があります。 ストレージ アカウントをまだ持っていない場合は、作成するか、管理者にアカウントの作成代行を依頼してください。
+5.  チェック ボックスをオンにしてサービス条件を承認し、**インストール** を選択します。
 
 システムが、ご利用の環境に Data Lake をインストールし構成します。 インストールと構成が完了すると、 **環境** のページに **Azure Data Lake** の一覧が表示されます。
+
+## <a name="troubleshooting"></a><a name="troubleshooting"></a> トラブルシューティング
+
+### <a name="error-unabletoinitializelakeduetousererror"></a>エラー UnableToInitializeLakeDueToUserError
+
+エラー **UnableToInitializeLakeDueToUserError** は、**Data Lake にエクスポート** サービスがストレージ アカウントに接続できないか、[アプリケーション](#appid) にストレージ アカウントへの必要なアクセス権がないことを示します。 この問題を解決するには、次のを試してください。
+
+- キー コンテナーに保存されているシークレット値が有効で正しいことを検証します。 詳細については、[キー コンテナーにシークレットを追加する](#addsecrets) を参照してください。   
+- ストレージ アカウントへのアクセスが必要な Azure Active Directory (Azure AD) アプリを確認します。 詳細については、[アプリケーションへのアクセス制御ロールを付与](#grantaccess) を参照してください。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

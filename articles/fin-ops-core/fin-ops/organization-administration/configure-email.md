@@ -2,7 +2,7 @@
 title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: jasongre
-ms.date: 11/17/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eac07d3b30fc9a84025721a6171169232080462e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5fae154b736cc3973a90edfe89926aa920103a64
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747893"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935769"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -42,41 +42,64 @@ ms.locfileid: "5747893"
 
 プラットフォーム更新 32 では、**メール履歴** ページが追加されており、送信を防ぐことができたかもしれないメールのエラーなど、管理者がすべての送信済みメールを確認することができます。 既定では、メール履歴は過去 30 日間保持されます。 これは、 **メール履歴の保持日数** をゼロ以外の値に変更することで構成できます。 ゼロは規定の値と動作を提供します。
 
-バージョン 10.0.16/プラットフォーム 40 では、環境で機能管理の **電子メール調整** 機能が有効になっている場合、**電子メール調整** セクションが表示されます。 この機能により非対話型の電子メール プロバイダー (バッチ電子メール プロバイダーなど) は 1 分あたりの送信制限に従うことができます。 これにより、システムからプロバイダーが許可する数を超える電子メールを送信しようとするエラーを防ぐことができます。 Microsoft 365 電子メール プロバイダーの送信制限は、[Exchange Online 送信制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits?sending-limits#sending-limits) に応じて自動的に設定されます。 他のすべての電子メール プロバイダーについては、手動での構成が必要です。 1 分あたりの送信制限は、**1 分あたりの電子メール送信制限** フィールドを 0 にリセットすることによってプロバイダーから削除できます。
+バージョン 10.0.16/プラットフォーム 40 では、環境で機能管理の **電子メール調整** 機能が有効になっている場合、**電子メール調整** セクションが表示されます。 この機能により非対話型の電子メール プロバイダー (バッチ電子メール プロバイダーなど) は 1 分あたりの送信制限に従うことができます。 これにより、システムからプロバイダーが許可する数を超える電子メールを送信しようとするエラーを防ぐことができます。 Microsoft 365 電子メール プロバイダーの送信制限は、[Exchange Online 送信制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits) に応じて自動的に設定されます。 他のすべての電子メール プロバイダーについては、手動での構成が必要です。 1 分あたりの送信制限は、**1 分あたりの電子メール送信制限** フィールドを 0 にリセットすることによってプロバイダーから削除できます。
 
 ### <a name="smtp-settings-tab"></a>SMTP 設定タブ
 **電子メール パラメーター** ページの、**SMTP 設定** タブで、次の設定に注意してください。
 
+#### <a name="server-information"></a>サーバー情報
 <table>
-<thead>
+<thead>  
 <tr>
 <th>フィールド</th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>送信メール サーバー</td>
-<td>目的の SMTP サーバーのホスト名。
-<ul>
-<li><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 製品</a> (*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
-<li>Outlook/Hotmail で smtp-mail.outlook.com を使用します。</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>SMTP ポート番号</td>
-<td>通常、セキュリティで保護して送信するためにポート番号は 587 に設定する必要があります。</td>
-</tr>
-<tr>
-<td><strong>ユーザー名</strong>と<strong>パスワード</strong></td>
-<td>必要に応じて、適切なメール アカウントを使用して電子メールの送信を指定します。 すべてのユーザーは SMTP アカウントを指定し <strong>送信者</strong>および <strong>代理送信</strong>許可をし、Simple Mail Transfer Protocol (SMTP) で送信する機能を有効にします。 [送信者] 権限は、Microsoft 365 管理センター (portal.office.com/Admin) にて、<strong>ユーザー</strong> &gt; <strong>有効なユーザー</strong> &gt; <strong>ユーザー</strong> &gt; <strong>メールボックスのアクセス許可を編集</strong> &gt; <strong>このメールボックスから電子メールを送信する</strong> で構成することができます。 詳細については、<a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする</a> を参照してください。</td>
-</tr>
-<tr>
-<td>SSL が必須かどうかを指定します</td>
-<td>安全なトランスポートをを使用するかを決定します。 これは通常、内部またはトラブルシューティングのシナリオを除き、<strong>はい</strong> です。</td>
-</tr>
+  <tr>
+    <td>送信メール サーバー</td>
+    <td>目的の Simple Mail Transfer Protocol (SMTP) サーバーのホスト名。
+      <ul>
+        <li><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 製品</a> (*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
+        <li>Outlook/Hotmail で smtp-mail.outlook.com を使用します。</li>
+      </ul>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>SMTP ポート番号</td>
+    <td>通常、セキュリティで保護して送信するためにポート番号は 587 に設定する必要があります。</td>
+  </tr>
+
+  <tr>
+    <td>SSL が必要です</td>
+    <td>安全なトランスポートをを使用するかを決定します。 これは通常、内部またはトラブルシューティングのシナリオを除き、<strong>はい</strong> です。</td>
+  </tr>
 </tbody>
+</table>  
+  
+#### <a name="authentication"></a>認証
+<table>
+<thead>  
+<tr>
+<th>フィールド</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>認証が必要です</td>
+    <td>電子メールの送信にユーザー名とパスワードが必要かどうかを指定します。 </td>
+  </tr>
+
+  <tr>
+    <td><strong>ユーザー名</strong>と<strong>パスワード</strong></td>
+    <td>認証が必要な場合は、電子メールを送信する適切なメール アカウントを指定します。 すべてのユーザーは SMTP アカウントを指定し <strong> 送信者 </strong> および <strong> 代理送信 </strong> 許可をし、SMTP で送信する機能を有効にします。 [送信者] 権限は、Microsoft 365 管理センター (portal.office.com/Admin) にて、<strong> ユーザー </strong> &gt; <strong> 有効なユーザー </strong> &gt; <strong> ユーザー </strong> &gt; <strong> メールボックスのアクセス許可を編集 </strong> &gt; <strong> このメールボックスから電子メールを送信する </strong> で構成することができます。 詳細については、<a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする</a> を参照してください。
+    </td>
+  </tr>
+      
+</tbody>
+
 </table>
 
 ## <a name="administrator-email-distributor-batch-process"></a>[管理者] 電子メール配布バッチ処理
@@ -279,7 +302,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 ## <a name="other-notes"></a>その他のメモ
 
-システムは Exchange や一般的な電子メール クライアントのような SMTP サーバーと通信するため、標準の動作と制限が適用されます。 たとえば、標準の [Exchange Online 送受信制限](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits)が適用されます。
+システムは Exchange や一般的な電子メール クライアントのような SMTP サーバーと通信するため、標準の動作と制限が適用されます。 たとえば、標準の [Exchange Online 送受信制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)が適用されます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -293,7 +316,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 [Office 統合のチュートリアル](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
-[Microsoft Dynamics AX での電子メール機能のコンフィギュレーション [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)
+[Microsoft Dynamics AX での電子メール機能のコンフィギュレーション [AX 2012]](/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

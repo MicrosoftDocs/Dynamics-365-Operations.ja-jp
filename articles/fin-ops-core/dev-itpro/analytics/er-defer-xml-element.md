@@ -2,7 +2,7 @@
 title: ER 形式における XML 要素の実行の延期
 description: このトピックは、電子申告 (ER) 形式の XML 要素の実行を延期する方法について説明します。
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894055"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944488"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>ER 形式における XML 要素の実行の延期
 
@@ -59,14 +59,14 @@ ms.locfileid: "5894055"
 
 | コンテンツの説明            | ファイル名 |
 |--------------------------------|-----------|
-| ER データ モデル構成    | [遅延 elements.version.1.xml を知るためのモデル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER モデル マッピング コンフィギュレーション | [遅延 element.version.1.1.xml を知るためのマッピング](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER データ モデル構成    | [遅延 elements.version.1.xml を知るためのモデル](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER モデル マッピング コンフィギュレーション | [遅延 element.version.1.1.xml を知るためのマッピング](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 開始する前に、サンプル ER ソリューションの次のコンフィギュレーションをローカル コンピューターにダウンロードして保存する必要もあります。
 
 | コンテンツの説明     | ファイル名 |
 |-------------------------|-----------|
-| ER フォーマット構成 | [遅延 XML elements.version.1.1.xml を知るための形式](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER フォーマット構成 | [遅延 XML elements.version.1.1.xml を知るための形式](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>サンプル ER のコンフィギュレーションのインポート
 
@@ -164,7 +164,7 @@ ms.locfileid: "5894055"
 1. **フォーマット デザイナー** ページで、**実行** を選択します。
 2. Web ブラウザーからファイルをダウンロードし、確認のために開きます。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run.png)
+    ![インポートされた形式のダウンロード済ファイル](./media/ER-DeferredXml-Run.png)
 
 集計ノードには、処理されたトランザクションの税額の合計が示されます。 形式は、合計を返すようバインドされている **model.Data.Summary.Total** を使用するようにコンフィギュレーションされていて、合計はモデル マッピング内の *GroupBy* タイプで **グループ化** されたデータ ソースの **TotalSum** の集計を呼び出して計算されます。 この集計を計算するために、モデル マッピングは、**フィルター処理** されるデータ ソースで選択されたすべてのトランザクションを反復処理します。 集計ノードと最後のレコード ノードの実行時間を比較することにより、合計の計算に 12 ミリ秒 (ms) かかったことを特定できます。 最初と最後のレコード ノードの実行時間を比較することにより、すべてのレコード ノードの生成に 9 ミリ秒 (ms) かかったことを特定できます。 したがって、合計 21 ミリ秒必要でした。
 
@@ -196,7 +196,7 @@ ms.locfileid: "5894055"
 11. **保存** を選択して、**実行** を選択します。
 12. Web ブラウザーからファイルをダウンロードし、確認します。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run1.png)
+    ![累計で生成された税額のリスト](./media/ER-DeferredXml-Run1.png)
 
     最後のレコード ノードには、生成された出力をデータ ソースとして使用することにより、処理されたすべてのトランザクションに対して計算される税額の累計が含まれます。 このデータ ソースは、レポートの先頭から開始し、最後の税トランザクションまで続行します。 集計ノードには、モデル マッピングにおいて *GroupBy* タイプのデータ ソースを使用して計算され、処理されたすべてのトランザクションの税額の合計が含まれています。 これらの値は等しくなります。 したがって、**GroupBy** の代わりに出力ベースの合計を使用できます。 最初のノードと集計ノードの実行時間を比較することにより、すべてのレコード ノードの生成および合計に 11 ミリ秒 (ms) かかったことを特定できます。 したがって、レコード ノードおよび税額の合計の生成が懸念されるかぎり、変更された形式は元の形式よりも約 2 倍速くなります。
 
@@ -205,7 +205,7 @@ ms.locfileid: "5894055"
 15. **保存** を選択して、**実行** を選択します。
 16. Web ブラウザーからファイルをダウンロードし、確認します。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run2.png)
+    ![編集されたフォーミュラを使用して生成された税額のリスト](./media/ER-DeferredXml-Run2.png)
 
     最後のレコード ノードの税額累計は、集計ノードの合計値と等しくなるようになりました。
 
@@ -218,7 +218,7 @@ ms.locfileid: "5894055"
 3. **保存** を選択して、**実行** を選択します。
 4. Web ブラウザーからファイルをダウンロードし、確認します。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run3.png)
+    ![レポート ヘッダーの税額のダウンロード済ファイル](./media/ER-DeferredXml-Run3.png)
 
     この合計が生成された出力に基づいて計算されるようになったので、集計ノードの税額の合計は 0 (ゼロ) と等しくなるようになりました。 最初のレコード ノードが生成される時、生成された出力にはまだトランザクションの詳細のあるレコード ノードは含まれていません。 この形式をコンフィギュレーションして、すべての税トランザクションに対して **レポート\\メッセージ\\レコード** の要素が実行されるまで、**レポート\\メッセージ\\集計** の要素の実行を延期させることができます。
 
@@ -232,7 +232,7 @@ ms.locfileid: "5894055"
 3. **保存** を選択して、**実行** を選択します。
 4. Web ブラウザーからファイルをダウンロードし、確認します。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run4.png)
+    ![遅延実行のダウンロード済ファイル](./media/ER-DeferredXml-Run4.png)
 
     **レポート\\メッセージ\\集計** の要素は、その親要素である **レポート\\メッセージ** の下に入れ子になっている他のすべての品目が実行された後に実行されるようになりました。 したがって、**レポート\\メッセージ\\レコード** の要素が **model.Data.List** データ ソースのすべての税トランザクションに実行された後に実行されます。 最初と最後のレコード ノードの実行時間、およびヘッダーと集計ノードの実行時間は、この事実を示しています。
 

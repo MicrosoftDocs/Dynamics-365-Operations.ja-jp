@@ -4,8 +4,6 @@ description: このトピックでは、select ステートメントを式とし
 author: robinarh
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: ''
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 6da4f147ae8ce0928849add89f4207722c385163
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9daf5040e415576e5c415a8e748274c85770fab3
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749960"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865965"
 ---
 # <a name="write-select-statements-as-expressions"></a>select ステートメントを式として記述
 

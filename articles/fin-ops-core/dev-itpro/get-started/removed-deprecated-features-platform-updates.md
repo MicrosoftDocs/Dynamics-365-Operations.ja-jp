@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ac3b5274aaea2e267685e80d051c81489ece50eb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814323"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923541"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -30,7 +30,7 @@ ms.locfileid: "5814323"
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="feature-removed-effective-january-28-2021"></a>機能が 2021 年 1 月 28 日に削除済み
 
@@ -123,7 +123,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 一般に、カスタム コードは限られたメリットしかなく、同時に重要なリソースと、サポートのためのコンピューティングが必要になります。 カスタム コードは、レポート作成者が主にカスタム コード アセンブリからパブリック メソッドを呼び出すために使用します。 ただし、クラウドにホストされるサービスは、SSRS レポートのカスタム アセンブリへの参照はサポートしていません。 |
-| **別の機能で置き換えられているか?**   | レポート作成者は、すべてのテキスト ボックス式での計算、変換、書式設定の処理に対して、パブリック .NET API を引き続き参照することを選択できます。 詳細については、[コードをレポート (SSRS) に追加する](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15) をご覧ください。  |
+| **別の機能で置き換えられているか?**   | レポート作成者は、すべてのテキスト ボックス式での計算、変換、書式設定の処理に対して、パブリック .NET API を引き続き参照することを選択できます。 詳細については、[コードをレポート (SSRS) に追加する](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15) をご覧ください。  |
 | **影響を受ける製品領域**         | カスタム コードを含む RDL で定義されているアプリケーション レポート デザインのサブセット。 |
 | **配置オプション**              | All |
 | **ステータス**                         | バージョン 10.0.13 を使用した場合、コンパイラは、SSRS レポート定義でカスタム コードが検出された場合に警告を発行します。 この問題を修正するには、レポート デザイン定義を開き、すべてのカスタム コードの成果物を削除します。 この警告は、将来の更新でコンパイラ エラーに置換されます。   |
@@ -178,7 +178,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | IP をセーフ リストに移動するプロセスが変更されました。 セルフサービスでは IP セーフ リストはもうサポートしていません。 |
-| **別の機能で置き換えられているか?**   | 詳細については、[Azure Active Directory の条件付きアクセスの構成](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access) をご覧ください。|
+| **別の機能で置き換えられているか?**   | 詳細については、[Azure Active Directory の条件付きアクセスの構成](/appcenter/general/configuring-aad-conditional-access) をご覧ください。|
 | **影響を受ける製品領域**         | セキュリティ |
 | **配置オプション**              | クラウド |
 | **ステータス**                         | **非推奨:** この機能は、セルフサービス配置に対して完全に廃止されました。 |
@@ -223,7 +223,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | いいえ |
 | **影響を受ける製品領域**         | ワークフロー |
 | **配置オプション**              | すべて |
-| **ステータス**                         | Platform update 32 の要求変更ダイアログ ボックスからユーザー選択ドロップダウン リストが削除されました。 変更要求は、作成者に対して意図したとおりに自動的に送信されます。 この機能の詳細については、[ワークフロー承認プロセスでのアクション](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change)を参照してください。 |
+| **ステータス**                         | Platform update 32 の要求変更ダイアログ ボックスからユーザー選択ドロップダウン リストが削除されました。 変更要求は、作成者に対して意図したとおりに自動的に送信されます。 この機能の詳細については、[ワークフロー承認プロセスでのアクション](../../fin-ops/organization-administration/workflow-actions.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#request-change)を参照してください。 |
 
 ### <a name="embedded-drill-through-links-are-no-longer-supported-in-paginated-documents-rendered-by-the-cloud-hosted-service"></a>埋め込み型のドリルスルー リンクは、クラウドでホストされるサービスによって表示されるページ番号付きドキュメントではサポートされなくなりました 
 
@@ -233,7 +233,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | 無 |
 | **影響を受ける製品領域**         | レポート |
 | **配置オプション**              | すべて |
-| **ステータス**                         | この機能は、サービスからアクティブに削除されています。<br><br>最新のクライアントには、アプリケーションのナビゲーションを支援する自動生成リンクを含むさまざまなオプションが用意されています。 サービスによって表示されるページ番号付きドキュメントは、受信者向けに電子メールで送信、アーカイブ、印刷される外部通信に推奨されます。 ドキュメントを直接ブラウザーでプレビューするエクスペリエンスが改善され、ローカル プリンターに直接アクセスできるようになりました。 詳細については、[埋め込みビュアーを使用してPDFドキュメントのプレビューをする](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents) を参照してください。 |
+| **ステータス**                         | この機能は、サービスからアクティブに削除されています。<br><br>最新のクライアントには、アプリケーションのナビゲーションを支援する自動生成リンクを含むさまざまなオプションが用意されています。 サービスによって表示されるページ番号付きドキュメントは、受信者向けに電子メールで送信、アーカイブ、印刷される外部通信に推奨されます。 ドキュメントを直接ブラウザーでプレビューするエクスペリエンスが改善され、ローカル プリンターに直接アクセスできるようになりました。 詳細については、[埋め込みビュアーを使用してPDFドキュメントのプレビューをする](../analytics/preview-pdf-documents.md) を参照してください。 |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>削除済みまたは非推奨の機能に関する以前の発表
 以前のリリースで削除または非推奨になった機能の詳細については、[以前のリリースで削除または非推奨になった機能](../migration-upgrade/deprecated-features.md)を参照してください。

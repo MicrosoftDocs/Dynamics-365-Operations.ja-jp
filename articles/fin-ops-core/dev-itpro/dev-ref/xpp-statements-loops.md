@@ -4,23 +4,20 @@ description: このトピックでは、X++のステートメントについて�
 author: robinarh
 ms.date: 12/02/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.devlang: xpp
 ms.reviewer: rhaertle
 ms.custom: 150213
-ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18f45a1bc88f206588768c16b34fe14e8ff46316
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2d55e39421e4173d0330f38e70c255df4a9407ae
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749914"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866102"
 ---
 # <a name="comments-using-and-print-statements"></a>コメント、使用、および印刷ステートメント
 

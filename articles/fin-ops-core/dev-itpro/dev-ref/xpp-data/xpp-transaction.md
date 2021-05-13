@@ -4,22 +4,19 @@ description: このトピックでは、X++ 言語でのトランザクション
 author: RobinARH
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.custom: 150273
-ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: d43508169142c7efaa1a6c4894d8ce76068a2bc6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 051d9c0724a0f0ccdca25cd4bab304d02c239618
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749954"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865910"
 ---
 # <a name="x-transactional-integrity"></a>X++ トランザクションの整合性
 

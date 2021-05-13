@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b4c074e5b8884c65f03558814c35dcaf8adfa5ae
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2dc324879b947af52e813d70a5ffd71f43e531fb
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409100"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923279"
 ---
 ## <a name="mapping-tables"></a>テーブルのマッピング
 
@@ -26,4 +26,4 @@ ms.locfileid: "4409100"
 
 ### <a name="default-values"></a>既定値
 
-同期されたフィールドが Finance and Operations テーブルやその他の Dynamics 365 テーブルのいずれかに存在しない場合は、同期されたテーブルに既定の値が割り当てられます。 場合によっては、デフォルト値は、共通データモデル内の属性値へのルックアップである整数となります。 たとえば、共通データモデル の 取引先担当者 テーブルでは、 [**address1_addresstypecode**](../data-entities/dual-write/customer-mapping.md#customers-v3-to-contacts) の既定値は **3** です。 共通データモデルでは、 [address1AddressTypeCode](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/contact#address1AddressTypeCode) に対する **3** の値は **プライマリー アドレス** です。 
+同期されたフィールドが Finance and Operations テーブルやその他の Dynamics 365 テーブルのいずれかに存在しない場合は、同期されたテーブルに既定の値が割り当てられます。 場合によっては、デフォルト値は、共通データモデル内の属性値へのルックアップである整数となります。 たとえば、共通データモデル の 取引先担当者 テーブルでは、 [**address1_addresstypecode**](../data-entities/dual-write/customer-mapping.md#customers-v3-to-contacts) の既定値は **3** です。 共通データモデルでは、 [address1AddressTypeCode](/common-data-model/schema/core/applicationcommon/foundationcommon/contact#address1AddressTypeCode) に対する **3** の値は **プライマリー アドレス** です。

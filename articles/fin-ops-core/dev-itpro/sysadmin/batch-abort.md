@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kaelazzo
 ms.search.validFrom: 2019-05-08
 ms.dyn365.ops.version: Platform update 27
-ms.openlocfilehash: 5626383f3cb47a89a62e79665c0d43e8fb6ccb3f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 423f56940db8ee2f27687f44a5d78515c2f7b285
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751338"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908680"
 ---
 # <a name="cancel-an-executing-batch-job"></a><a id="legacy-abort"></a>実行中のバッチ ジョブのキャンセル
 [!include [banner](../includes/banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "5751338"
 新しい機能を使用するには、次の手順を参照してください。
 
 1. バージョン 10.0.16 以降を実行するか、または必要な品質パッケージをインストールしてください。
-2. [機能管理](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) ワークスペースの **バッチ中止の強化** 機能を有効にします。
+2. [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースの **バッチ中止の強化** 機能を有効にします。
 3. 同じ指示に従い、[実行しているバッチ ジョブをキャンセル](#legacy-abort) を実行します。
  
 キャンセル タスクを実行しているバッチ サーバーを再起動するように求めるメッセージが表示されます。 これにより、他のバッチ ジョブの一覧が混乱する可能性があります。 キャンセル タスクを終了するには、次の手順に進む必要があります。

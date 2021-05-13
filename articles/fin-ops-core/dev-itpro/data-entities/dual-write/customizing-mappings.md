@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1aa5f3a5bea629d0cf994cba9704c50dd92740e1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fdf20030fe904c81b2653030ef34601514049bfd
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748911"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941097"
 ---
 # <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 
@@ -94,9 +94,9 @@ ms.locfileid: "5748911"
     | Accounttype eq '3' | (accounttype == '3') |
     | numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
-    クエリ範囲で式を使用する方法の例については、[クエリ範囲での式の使用](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges) を参照してください。
+    クエリ範囲で式を使用する方法の例については、[クエリ範囲での式の使用](/dynamicsax-2012/developer/using-expressions-in-query-ranges) を参照してください。
     
-    現時点では、二重書き込みソース フィルターでのネストされたルックアップはサポートされていません。 テーブル列に対して直接、標準のフィルタ演算子のみがサポートされています。 例については、[標準フィルタ演算子](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) を参照してください。
+    現時点では、二重書き込みソース フィルターでのネストされたルックアップはサポートされていません。 テーブル列に対して直接、標準のフィルタ演算子のみがサポートされています。 例については、[標準フィルタ演算子](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) を参照してください。
     
 ## <a name="add-new-table-maps"></a>新しいテーブル マップの追加
 

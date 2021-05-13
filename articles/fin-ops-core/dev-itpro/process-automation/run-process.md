@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a91cb3700fd3a52183fc506543191b2e7b525cb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dc6c4e8e3456af47997db505ff5fdbe6a37ccf03
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745113"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908684"
 ---
 # <a name="run-processes"></a>プロセスの実行
 
@@ -32,7 +32,7 @@ ms.locfileid: "5745113"
 
 プロセス自動化フレームワークでは、並列処理を実行し、複数のバッチ タスクを必要とするプロセスの一覧をサポートしています。 実行中のプロセスが **RunBaseBatch** を実装する古いプロセスである場合は、リストから返されることはありません。 この場合、2 つのオプションがあります。
 
-- プロセスを **SysOperationServiceController** に変換します。 詳細については、[SysOperations フレームワーク](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview)を参照してください。 該当する場合は、このオプションを使用することをお勧めします。
+- プロセスを **SysOperationServiceController** に変換します。 詳細については、[SysOperations フレームワーク](/dynamicsax-2012/developer/sysoperation-framework-overview)を参照してください。 該当する場合は、このオプションを使用することをお勧めします。
 - **SysOperationServiceController** から継承された新しいクラスを使用して、レガシ **RunBaseBatch** クラスをラップします。 例については、アプリケーション オブジェクト ツリー (AOT) の **LedgerCovTotalProcessAutomationProcessor** を参照してください。
 
 次の例は、**ProcessAutomationTask** インターフェイスの実装を示しています。

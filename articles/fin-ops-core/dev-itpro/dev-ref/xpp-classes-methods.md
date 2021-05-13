@@ -4,22 +4,19 @@ description: このトピックでは、X++ でクラスを作成および使用
 author: RobinARH
 ms.date: 06/17/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150303
-ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a62115cd4ed277890d4839db9c9d7c84abd79f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 671267558606d4aa5f81b76293919dc93f92e011
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753038"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866029"
 ---
 # <a name="classes-and-methods"></a>クラスおよびメソッド
 

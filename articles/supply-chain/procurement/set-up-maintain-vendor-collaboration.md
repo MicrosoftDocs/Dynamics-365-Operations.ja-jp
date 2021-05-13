@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 12c547372cc1f058470e6cbb19ddf15ca289b2c4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9a2e32e326cfd9c2aaf385466cd936117030a3
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812508"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910053"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
@@ -115,7 +115,7 @@ Supply Chain Management で提供されている **仕入先見込顧客 (外部
 #### <a name="branch-to-provision-new-users"></a>新しいユーザーをプロビジョニングするための分岐
 
 1. 新しいユーザーに仕入先コラボレーション情報へのアクセスを許可することを承諾する担当者に、承認タスクを割り当てます。
-2. Azure ポータルで新しい Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを要求する担当者にタスクを割り当てます。 この手順では、事前に定義された **Azure B2B ユーザー招待状の送信** タスクを使用します。 B2B ユーザーは、Azure AD に自動的にエクスポートできます。 定義済みの **Azure AD B2B ユーザーのプロビジョニング** を使用します。 詳細については、[Azure AD に B2B ユーザーをエクスポート](../../dev-itpro/sysadmin/implement-b2b.md)を参照してください。
+2. Azure ポータルで新しい Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを要求する担当者にタスクを割り当てます。 この手順では、事前に定義された **Azure B2B ユーザー招待状の送信** タスクを使用します。 B2B ユーザーは、Azure AD に自動的にエクスポートできます。 定義済みの **Azure AD B2B ユーザーのプロビジョニング** を使用します。 詳細については、[Azure AD に B2B ユーザーをエクスポート](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md)を参照してください。
 3. 承認タスクを Azure にアップロードするユーザーに割り当てます。 勘定が正常に作成されていない場合、このユーザーはタスクを却下し、ワークフローを終了します。 この承認タスクは、B2B アプリケーション プログラミング インターフェイス (API) を使用して Azure に新しいユーザー アカウントを自動的にエクスポートするステップを含めるとスキップできます。
 4. 新しいユーザーを準備する自動化タスクを追加します。 この手順では、事前に定義された **ユーザーの自動プロビジョニング** タスクを使用します。
 5. 新しいユーザーに通知するタスクを追加します。 Supply Chain Management の URL を含むようこそ電子メールを新しいユーザーに送信する可能性があります。 このメールでは、**電子メール メッセージ** ページで作成したテンプレートを使用して、**ユーザー ワークフロー パラメーター** ページを選択できます。 テンプレートには、**%portal URL%** タグを含めることができます。 ようこそ電子メールが生成されると、このタグは Supply Chain Management テナントの URL に置き換わります。
@@ -152,7 +152,7 @@ Supply Chain Management で提供されている **仕入先見込顧客 (外部
 
 新しいベンダー コラボレーション ユーザーの電子メール アドレスが、テナントとして Azure に登録されているドメインに属している場合 (つまり、管理対象ドメイン アカウントの場合)、電子メール アドレスは既存の Azure AD アカウントである必要があります。 それ以外の場合、プロビジョニング プロセスを実行することはできません。
 
-Azure AD アカウント管理のワークフローでの **Azure B2B ユーザー招待の送信** タスクで使用されるプロセスの詳細については、[Azure Active Directory B2B コラボレーション](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/) を参照してください。
+Azure AD アカウント管理のワークフローでの **Azure B2B ユーザー招待の送信** タスクで使用されるプロセスの詳細については、[Azure Active Directory B2B コラボレーション](/azure/active-directory/external-identities/what-is-b2b) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -4,8 +4,6 @@ description: このチュートリアルでは、C# と X++ 間での相互運�
 author: pvillads
 ms.date: 02/07/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 26821
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 111199811ed4902a8f3abd53159d981aa6940096
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d8e26e995e0c17cf4f3e01140b926fdd931c80a7
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748503"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866228"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 

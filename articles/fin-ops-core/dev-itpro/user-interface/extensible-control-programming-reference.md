@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 959edbff3a1b2e57e21d758d4484e754567d72ab
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 48ec8e1c553e649b37b503c243bfbc483e3e6ab3
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801349"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909048"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
@@ -93,9 +93,9 @@ private void setText(str value)
 ## <a name="runtime-formpropertyattribute"></a>ランタイム: FormPropertyAttribute
 **FormPropertyAttribute** は、コントロール クラスのメソッドに適用されるため、X++ メソッドをコントロールの JavaScript クラスから **FormProperty** ゲッター/セッターとして呼び出すことができます。 この属性を適用したメソッドは **プロパティ** と呼ばれます。 コントロールの JavaScript クラスから直接アクセスする必要がある X++ メソッドの **FormPropertyAttribute** のみ使用します。 **FormPropertyAttribute** は、X++ 内からメソッドが使用される場合、X++ メソッドの動作に影響を与えません。 すべてのプロパティは、ブラウザーにエンドポイントを公開します。 したがって、すべてのプロパティは脅威モデル化およびエクスプロイトのためにテストされる必要があります。 基礎となる X++ メソッドは、他の X++ コードからアクセスできないようにプライベート宣言する必要があります。 別の X++ コードがプロパティにアクセスする必要がある場合、別のパブリック X++ メソッドを **FormPropertyAttibute** なしで宣言し、このメソッドに共有プロパティ ロジックを移動します。 次に、このメソッドを **FormPropertyAttribute を持つプライベート X++ メソッドから呼び出します。この方法により、コア共有 X++ ロジックを実行する前に、JavaScript からの呼び出しに固有のロジック (引数の型の逆シリアル化、引数の検証、セキュリティの検証など) をプロパティで実行できます。** 基本となる X++ メソッドは、必要なタイプのプロパティを受け入れて返す必要があります。 目的の型が EDT である場合は、プロパティは、EDT の基本データ型を受け入れ、返す必要があります。 サポートされているプロパティの種類は次のとおりです。
 
--   [X++ プリミティブ型](https://msdn.microsoft.com/library/aa602290.aspx)
--   [X++ データ契約](https://msdn.microsoft.com/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx) (そのメンバーもサポートされているタイプ)
--   [X++ リスト](https://msdn.microsoft.com/library/list.aspx) (その項目もサポートされているタイプ)
+-   [X++ プリミティブ型](/dynamicsax-2012/developer/primitive-data-types)
+-   [X++ データ契約](/dotnet/api/system.runtime.serialization.datacontractattribute) (そのメンバーもサポートされているタイプ)
+-   [X++ リスト](/previous-versions/dynamics/ax-2012/system-classes/gg921795(v=ax.60)) (その項目もサポートされているタイプ)
 
 次の引数を **FormPropertyAttribute** コンストラクターに指定します。
 
@@ -123,7 +123,7 @@ private str parmText(str _value = textProperty.parmValue())
 ## <a name="runtime-formproperty"></a>ランタイム: FormProperty
 ##### <a name="behavior"></a>動作
 
-**FormProperty** は X++ と JavaScript の間のプロパティの値の同期のために管理フレームワークによって使用される X++ [派生型](https://msdn.microsoft.com/library/esd9wew8(v=vs.100).aspx) です。 **FormProperty** オブジェクトはプロパティによって内部で使用されるバックアップ フィールドと見なされます。 各 **FormProperty** は、コントロールの X++ ランタイム クラスの 4 つの場所で通常使用されます。
+**FormProperty** は X++ と JavaScript の間のプロパティの値の同期のために管理フレームワークによって使用される X++ [派生型](/previous-versions/visualstudio/visual-studio-2010/esd9wew8(v=vs.100)) です。 **FormProperty** オブジェクトはプロパティによって内部で使用されるバックアップ フィールドと見なされます。 各 **FormProperty** は、コントロールの X++ ランタイム クラスの 4 つの場所で通常使用されます。
 
 1.  **FormProperty** は通常クラス宣言のすぐ下で宣言されます。
 2.  **FormProperty** は、クラスの **new** メソッドでインスタンス化されます

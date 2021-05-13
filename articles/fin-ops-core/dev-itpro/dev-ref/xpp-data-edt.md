@@ -4,22 +4,19 @@ description: このトピックでは、X++の拡張データ型について説�
 author: RobinARH
 ms.date: 06/17/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150183
-ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e8c730847c6fb2066585b054f4b1b4860f17871
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: aee2caa5133092a9b55ad5b36041a21cec4e0340
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753022"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866013"
 ---
 # <a name="x-extended-data-types"></a>X++ 拡張データ型
 

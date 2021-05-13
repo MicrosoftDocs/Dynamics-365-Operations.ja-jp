@@ -4,8 +4,6 @@ description: このトピックでは、アプリケーション エクスプロ
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 74934
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd1857e75df06f65c68826cc3296940e2d198f72
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2b89d389e1b140d3cec4f1c3f366352ef2a22301
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750942"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866216"
 ---
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 

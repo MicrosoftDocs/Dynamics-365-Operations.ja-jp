@@ -2,7 +2,7 @@
 title: 財務報告のデータ マートのリセット
 description: このトピックでは、Microsoft Dynamics 365 Finance の財務報告データ マートをリセットする方法について説明します。
 author: aprilolson
-ms.date: 07/27/2020
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6e0b209907a1168616cbbddfa310ca2c3d75f94
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 057acf9d68ef905687376a77e5f411f78f695537
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754334"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890898"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
@@ -105,7 +105,7 @@ MinorVersionDataUpgrade.zip パッケージをダウンロードするために�
 財務報告データベースに対してではなく、データベースに対して、次のスクリプトを実行します:
 
 - DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
-- DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
+- DataUpgrade.zip\\AosService\\Scripts\\GrantAxViewChangeTracking.sql
 
 これらのスクリプトは、ユーザー、ロール、変更の追跡の設定が正しいことを保証する助けになります。
 
@@ -688,7 +688,7 @@ END
 ファイルを安全な場所にコピーまたはアップロードできます。
 
 > [!WARNING]
-> Microsoft Azure Virtual Machines (VMs) の Dドライブ の挙動には気をつけてください。 Dドライブに、エクスポートしたレポート パーツ グループを完全には保存しません。一時的なドライブの詳細については、次を参照してください。[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+> Microsoft Azure Virtual Machines (VMs) の Dドライブ の挙動には気をつけてください。 Dドライブに、エクスポートしたレポート パーツ グループを完全には保存しません。一時的なドライブの詳細については、次を参照してください。[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines).
 
 ### <a name="import-report-definitions"></a>レポート定義のインポート
 

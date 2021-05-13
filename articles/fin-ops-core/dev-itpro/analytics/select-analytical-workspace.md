@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 5d89311a93f56fad3f3ae99c801f1fa6cb26856e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 875d06e74e31ae5f0739e691335968514195e8bc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754278"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893536"
 ---
 # <a name="select-analytical-workspaces-from-power-bi"></a>Power BI から分析ワークスペースを選択する
 
@@ -61,7 +61,7 @@ PowerBI.comが提供するワールドクラスのツールを使用すると、
     デフォルトでは、アプリケーションと共に含まれる標準分析ワークスペース ソリューションが表示されます。 このソリューションのレポートは、プロビジョニング プロセス中に環境に合わせて自動的に配置および設定されます。
 
     > [!NOTE]
-    > 分析ワークスペースには、専用の環境に対してのみ使用できるホストされた Power BI サービスが必要です。 詳細については、ブログ投稿 [1-Box 環境での分析ワークスペースおよびレポートへのアクセス](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/) を参照してください。
+    > 分析ワークスペースには、専用の環境に対してのみ使用できるホストされた Power BI サービスが必要です。 詳細については、ブログ投稿 [1-Box 環境での分析ワークスペースおよびレポートへのアクセス](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment) を参照してください。
 
 3. アクション ペインの **オプション** タブの **Power BI** グループで、 **分析の選択** を選択して **Power BIレポート** ダイアログボックスを開きます。
 

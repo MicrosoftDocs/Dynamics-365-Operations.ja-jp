@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 4629a32516d6990b20eeff2344cab24a6a31e7ce
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4ad3a1a620f104d81653c0a50576b1e449b77eab
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745117"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908682"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
@@ -108,7 +108,7 @@ Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環�
 [開発環境またはデモ環境でのデータのアップグレード](../migration-upgrade/upgrade-data-to-latest-update.md) で説明されているプロセスは、コマンド ラインからのデータ アップグレード パッケージを実行します。 これを行うには、VM の管理者である必要があります。
 
 ## <a name="what-do-i-need-to-know-if-i-am-developing-for-commerce"></a>コマースの開発をしている場合、何を把握する必要がありますか。
-Dynamics 365 Commerce を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../retail/dev-itpro/cloud-dev-box.md) に記載されています。
+Dynamics 365 Commerce を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../commerce/dev-itpro/cloud-dev-box.md) に記載されています。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

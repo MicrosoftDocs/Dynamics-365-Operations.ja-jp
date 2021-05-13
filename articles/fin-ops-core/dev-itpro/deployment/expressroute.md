@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 01afaf018fc91baec9a1a469d0d727ed64ca22c5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 534f47538d4be37ce6c74fc8813359321efb7c27
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744821"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941154"
 ---
 # <a name="azure-expressroute-and-finance-and-operations-apps"></a>Azure ExpressRoute と Finance and Operations アプリ
 
@@ -37,8 +37,8 @@ Microsoft Azure ExpressRoute で、Azure データ センターとオンプレ�
 ## <a name="resources-for-getting-started"></a>概要リソース
 
 - [ExpressRoute サービス ページ](https://azure.microsoft.com/services/expressroute/)
-- [ExpressRoute 技術の概要](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)
-- [ExpressRoute パートナーおよびピアリング場所](https://azure.microsoft.com/documentation/articles/expressroute-locations/)
+- [ExpressRoute 技術の概要](/azure/expressroute/expressroute-introduction)
+- [ExpressRoute パートナーおよびピアリング場所](/azure/expressroute/expressroute-locations)
 - [ExpressRoute の価格決定](https://azure.microsoft.com/pricing/details/expressroute/)
 
 

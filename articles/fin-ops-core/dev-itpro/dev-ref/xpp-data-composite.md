@@ -4,22 +4,19 @@ description: このトピックでは、X++ の複合データ型について説
 author: RobinARH
 ms.date: 04/08/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150183
-ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d44828052ca6e08e76ee3bbfe00ce020c5add473
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4d37fb8355a3a6e4a058f9720d73728a63c9ed3b
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753024"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866015"
 ---
 # <a name="x-composite-data-types"></a>X++ 複合データ型
 

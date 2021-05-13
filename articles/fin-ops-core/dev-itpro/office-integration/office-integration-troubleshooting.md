@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0ff0fdd9826d1646d27d96c88b7527e18f360ee
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8d3193411c4b58d36bbfbe5dbfd72c1ce8fcdf05
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752984"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908357"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
@@ -35,15 +35,15 @@ ms.locfileid: "5752984"
 
 ### <a name="what-platforms-do-the-office-add-ins-support"></a>Office アドインはどのようなプットフォームをサポートしますか ?
 
-Microsoft Excel アドインと Microsoft Word アドインは、Office Web/JavaScript アドイン フレームワークを使用して構築されます。 このフレームワークは最初は Microsoft Office 2013 用にリリースされましたが、Microsoft Office 2016 では重要な更新が行われました。 詳細については、[Office アドイン ホストおよびプラットフォームの可用性](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability) を参照してください。 Excel アドインには ExcelAPI 1.2 が必要です。 したがって、Excel アドインをサポートするプラットフォームを判断するには、[[Office アドイン ホストおよびプラットフォームの可用性](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability)] マトリックスを使用します。 多くのユーザーにとって、語句「Excel 2016 と最新の更新」で十分です。
+Microsoft Excel アドインと Microsoft Word アドインは、Office Web/JavaScript アドイン フレームワークを使用して構築されます。 このフレームワークは最初は Microsoft Office 2013 用にリリースされましたが、Microsoft Office 2016 では重要な更新が行われました。 詳細については、[Office アドイン ホストおよびプラットフォームの可用性](/office/dev/add-ins/overview/office-add-in-availability) を参照してください。 Excel アドインには ExcelAPI 1.2 が必要です。 したがって、Excel アドインをサポートするプラットフォームを判断するには、[[Office アドイン ホストおよびプラットフォームの可用性](/office/dev/add-ins/overview/office-add-in-availability)] マトリックスを使用します。 多くのユーザーにとって、語句「Excel 2016 と最新の更新」で十分です。
 
 ### <a name="are-the-office-add-ins-safe"></a>Office アドインは安全ですか。
 
-マルウェア、完全な接続、およびコンプライアンス リスクがあるうちは、完全に安全なものはありません。 ただし、他の Web サイトと同様、Web アドインは基本的に、制限のあるアプリケーション プログラミング インターフェイス (API) 経由で Office クライアント製品と対話する Web アプリケーションです。 詳細については、 [Office アドイン プラットフォームの概要](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) を参照してください。
+マルウェア、完全な接続、およびコンプライアンス リスクがあるうちは、完全に安全なものはありません。 ただし、他の Web サイトと同様、Web アドインは基本的に、制限のあるアプリケーション プログラミング インターフェイス (API) 経由で Office クライアント製品と対話する Web アプリケーションです。 詳細については、 [Office アドイン プラットフォームの概要](/office/dev/add-ins/overview/office-add-ins) を参照してください。
 
 ### <a name="does-the-excel-add-in-support-office-for-mac"></a>Excel アドインは Mac のために Office をサポートしますか。
 
-No. Apple Mac および iOS のサポートは、現在開発中です。 Office JavaScript (JS) API は、特に認証に関しては、Apple Safari と Internet Explorer で動作が異なります。 Office JS API のプラットフォーム サポートの詳細については、[Office アドイン ホストおよびプラットフォームの可用性](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability) を参照してください。
+No. Apple Mac および iOS のサポートは、現在開発中です。 Office JavaScript (JS) API は、特に認証に関しては、Apple Safari と Internet Explorer で動作が異なります。 Office JS API のプラットフォーム サポートの詳細については、[Office アドイン ホストおよびプラットフォームの可用性](/office/dev/add-ins/overview/office-add-in-availability) を参照してください。
 
 ### <a name="what-version-of-office-is-required-for-the-excel-add-in-to-support-ad-fs"></a>Excel アドインが AD FS をサポートするために必要な Office のバージョンとは
 
@@ -51,11 +51,11 @@ No. Apple Mac および iOS のサポートは、現在開発中です。 Office
 
 ### <a name="how-can-i-force-an-update-of-office"></a>どのように Office の更新を強制できますか。
 
-Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](https://technet.microsoft.com/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 最も簡単な方法は、Office 配置ツールを使用して現在のチャネルに切り替えることです。 この場合、最新の更新プログラムはすぐにインストールされます。
+Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](/deployoffice/overview-update-channels))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 最も簡単な方法は、Office 配置ツールを使用して現在のチャネルに切り替えることです。 この場合、最新の更新プログラムはすぐにインストールされます。
 
 ### <a name="why-cant-you-tell-me-what-version-of-office-or-excel-a-particular-issue-is-fixed-in"></a>どのバージョンの Office または Excel で特定の問題が修正されたか知ることができないのはなぜですか。
 
-Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office のバージョンの詳細については、[Microsoft 365 アプリの更新に関するリリース情報](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) を参照してください。
+Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office のバージョンの詳細については、[Microsoft 365 アプリの更新に関するリリース情報](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) を参照してください。
 
 ### <a name="why-am-i-having-trouble-signing-into-the-excel-add-in"></a>Excel アドインへのサインインに問題が生じるのはなぜですか。
 
@@ -101,7 +101,7 @@ Excel にエクスポートの理想的な代替は、[Excel で開く] と Exce
 
 ### <a name="can-the-excel-add-in-and-word-add-in-be-made-available-to-users-using-centralized-deployment"></a>一元化配置を使用して、Excel アドインと Word アドインをユーザーが利用できるようにできますか。
 
-はい、一元化配置はサポートされています。 詳細については、「[一元化配置](https://docs.microsoft.com/office/dev/add-ins/publish/centralized-deployment)」を参照してください。 
+はい、一元化配置はサポートされています。 詳細については、「[一元化配置](/office/dev/add-ins/publish/centralized-deployment)」を参照してください。 
 
 一元化配置を使用するには、**Office アプリのパラメーター** ページの **アプリのパラメーター** タブで **アプリ ID**、**ストア**、**ストア タイプ** を変更します:
 
@@ -189,9 +189,9 @@ Excelアドイン、データ管理 フレームワーク、 Power BI レポー�
 
 **長期的な修正プログラム:** 2016 年 5 月 10 日にこの問題の長期的な修正プログラムが適切に配置されました。 Office アドインは、Office チームが追加した新しいダイアログ API を使用するようになりました。 
 
-**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました (16.0.6868.2060)。 更新プログラムの詳細については、[Microsoft 365 クライアント更新チャネルのリリース](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) ページを参照してください。 
+**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました (16.0.6868.2060)。 更新プログラムの詳細については、[Microsoft 365 クライアント更新チャネルのリリース](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) ページを参照してください。 
 
-Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](https://technet.microsoft.com/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 また、[Office の最新バージョンをインストールする](https://docs.microsoft.com/office/dev/add-ins/develop/install-latest-office-version) と [管理者向け Office 2016 の展開ガイド](https://technet.microsoft.com/library/cc303401(v=office.16).aspx) を参照してください。 
+Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](/deployoffice/overview-update-channels))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 また、[Office の最新バージョンをインストールする](/office/dev/add-ins/develop/install-latest-office-version) と [管理者向け Office 2016 の展開ガイド](/deployoffice/) を参照してください。 
 
 Office の更新プログラムをインストールできない場合、次の回避策を実行するとユーザーのブロックを解除できます。
 

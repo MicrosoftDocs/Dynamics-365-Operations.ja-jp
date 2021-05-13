@@ -4,8 +4,6 @@ description: このトピックでは、Microsoft Azure DevOps でエージェ�
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 26731
@@ -14,18 +12,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f62a4a0f72ec5c867d0d8288357699283ac9b5ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eaa6c283fe5c307abff68bdd2664a70a78dbe653
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750308"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923287"
 ---
 # <a name="build-automation-that-uses-microsoft-hosted-agents-and-azure-pipelines"></a>Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Windows で実行される任意のビルド エージェントで、X++ コードのビルドと配置可能なパッケージの作成プロセスを自動化できます。 これらのエージェントには、[Microsoft-ホステッド エージェント](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted)が含まれています。 この方法は、ビルド バーチャル マシン (VM) の配置の設定、保守、およびコストを回避するのに役立ちます。 また、ビルド エージェントの既存の設定を再利用して、他の .NET ビルド自動化を実行することもできます。
+Microsoft Windows で実行される任意のビルド エージェントで、X++ コードのビルドと配置可能なパッケージの作成プロセスを自動化できます。 これらのエージェントには、[Microsoft-ホステッド エージェント](/azure/devops/pipelines/agents/hosted)が含まれています。 この方法は、ビルド バーチャル マシン (VM) の配置の設定、保守、およびコストを回避するのに役立ちます。 また、ビルド エージェントの既存の設定を再利用して、他の .NET ビルド自動化を実行することもできます。
 
 > [!NOTE]
 > この機能は、コンパイルとパッケージングに限定されています。 このランタイムを必要とする X++ 単体テスト (SysTest)、データベースの同期、またはその他の機能 (Application Object Server \[AOS \]) やそのコンポーネントはサポートされていません。
@@ -53,16 +51,16 @@ X++ コードをビルドするには、X++ コンパイラ (xppc.exe) などの
 
 これらのパッケージを LCS からダウンロードし、ビルドを実行する Azure DevOps 組織内の Azure コンポーネント フィードに追加し ます。 Azure コンポーネントを作成し、NuGet パッケージを追加する方法の詳細については、次のトピックを参照してください。
 
-- [Azure DevOps サービスおよび TFS の NuGet パッケージの使用を開始する](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget)
-- [フィードの作成](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget#create-a-feed)
-- [独自の NuGet パッケージの作成と公開](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget#create-and-publish-your-own-nuget-package)
+- [Azure DevOps サービスおよび TFS の NuGet パッケージの使用を開始する](/azure/devops/artifacts/get-started-nuget)
+- [フィードの作成](/azure/devops/artifacts/get-started-nuget#create-a-feed)
+- [独自の NuGet パッケージの作成と公開](/azure/devops/artifacts/get-started-nuget#create-and-publish-your-own-nuget-package)
 
 > [!NOTE]
-> 無料の Azure DevOps 組織には、Azure コンポーネントの限られたストレージしかありません。 ストレージ容量を解放するために、古いバージョンと使用していないバージョンを削除することを検討してください。 詳細については、[Azure コンポーネントのサインアップ](https://docs.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts#billing-and-free-monthly-usage) を参照してください。
+> 無料の Azure DevOps 組織には、Azure コンポーネントの限られたストレージしかありません。 ストレージ容量を解放するために、古いバージョンと使用していないバージョンを削除することを検討してください。 詳細については、[Azure コンポーネントのサインアップ](/azure/devops/artifacts/start-using-azure-artifacts#billing-and-free-monthly-usage) を参照してください。
 
 ビルド中に使用する必要があるパッケージを特定するには、ビルド時に nuget.exe ファイルと packages.config ファイルを用意する必要があります。 これらのファイルを作成し、ソース管理リポジトリに追加することをお勧めします。 これらのファイルのパスは NuGet コマンドの明示的な入力であるため、ソース管理内の任意の場所にファイルを格納でき ます。
 
-nuget.exe ファイルには、パッケージが格納されているソース フィードを持つ NuGet が含まれています。 packages.config ファイルでは、パッケージとそのバージョンが指定されています。 新しいバージョンに対してビルドする場合は、packages.config ファイルのバージョンを更新するだけで済みます。 サンプルの nuget.config ファイルを含む詳細については、[Azure Pipelines でのパッケージ管理 NuGet パッケージの復元](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore)を参照してください。
+nuget.exe ファイルには、パッケージが格納されているソース フィードを持つ NuGet が含まれています。 packages.config ファイルでは、パッケージとそのバージョンが指定されています。 新しいバージョンに対してビルドする場合は、packages.config ファイルのバージョンを更新するだけで済みます。 サンプルの nuget.config ファイルを含む詳細については、[Azure Pipelines でのパッケージ管理 NuGet パッケージの復元](/azure/devops/pipelines/packages/nuget-restore)を参照してください。
 
 次の例は、一般的な X++ ビルドに必要な 3 つの主要なパッケージのための、**packages.config** ファイルを示しています。 一覧のバージョンを実際のバージョンの NuGet パッケージに置き換える必要があります。
 
@@ -91,7 +89,7 @@ nuget.exe ファイルには、パッケージが格納されているソース 
 
 ## <a name="creating-the-pipeline"></a>パイプラインの作成
 
-Azure DevOps は、ビルドを自動化するために使用できるパイプラインを提供します。 パイプラインには、YML と Classic の 2 つのタイプがあります。 YML パイプラインは、Git ソース管理リポジトリを使用している場合にのみ使用できます。 Classic パイプラインを使用して、Team Foundation バージョン管理 (TFVC) リポジトリをビルドする必要があります。 詳細については、 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started) を参照してください。
+Azure DevOps は、ビルドを自動化するために使用できるパイプラインを提供します。 パイプラインには、YML と Classic の 2 つのタイプがあります。 YML パイプラインは、Git ソース管理リポジトリを使用している場合にのみ使用できます。 Classic パイプラインを使用して、Team Foundation バージョン管理 (TFVC) リポジトリをビルドする必要があります。 詳細については、 [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) を参照してください。
 
 このセクションでは、パイプラインで X++ コードを作成するために必要な手順について説明します。 [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub リポジトリでは、既存の Azure DevOps プロジェクトにインポートできるサンプル パイプラインを見つけることができます。
 
@@ -102,7 +100,7 @@ X++ をコンパイルするための基本パイプラインには、2 つの�
 1. NuGet パッケージをインストールします。
 2. ソリューションまたはプロジェクトをビルドします。
 
-抽出された NuGet パッケージの使用を容易にするために、**NuGet インストール** オプションを使用して、**-ExcludeVersion** [NuGet コマンドライン オプション](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-install#options)を指定することを検討してください。 このようにして、パッケージのバージョンに関係なく、抽出されたパッケージ パスをビルドで使用できます。 **NuGet インストーラー** タスクを使用し、**インストールの種類** フィールドを **インストール** に設定します。 最後に、前の手順で作成した packages.config ファイルと nuget.config ファイルのパスを指定します。
+抽出された NuGet パッケージの使用を容易にするために、**NuGet インストール** オプションを使用して、**-ExcludeVersion** [NuGet コマンドライン オプション](/nuget/reference/cli-reference/cli-ref-install#options)を指定することを検討してください。 このようにして、パッケージのバージョンに関係なく、抽出されたパッケージ パスをビルドで使用できます。 **NuGet インストーラー** タスクを使用し、**インストールの種類** フィールドを **インストール** に設定します。 最後に、前の手順で作成した packages.config ファイルと nuget.config ファイルのパスを指定します。
 
 次の NuGet 引数の例では、パッケージ バージョンに対してサブフォルダーが作成されないようにし、NuGet パッケージを **$(Pipeline.Workspace)\\NuGets** に展開します。
 
@@ -145,7 +143,7 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 
 ### <a name="creating-a-full-pipeline-that-includes-packaging"></a>パッケージを含む完全なパイプラインの作成
 
-利便性のため、パイプラインにはバージョン管理手順とパッケージ手順が含まれている必要があります。 これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[Azure DevOps のドキュメント](https://docs.microsoft.com/azure/devops/marketplace/install-extension)を参照してください。
+利便性のため、パイプラインにはバージョン管理手順とパッケージ手順が含まれている必要があります。 これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[Azure DevOps のドキュメント](/azure/devops/marketplace/install-extension)を参照してください。
 
 パイプライン全体は、少なくとも次の手順で構成されている必要があります。
 
@@ -157,6 +155,9 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 6. 配置可能パッケージ コンポーネントをビルド出力として発行します。
 
 配置可能パッケージを作成するには、ビルド エージェントですぐに NuGet を使用できるようにする必要があります。 したがって、パッケージを作成するステップの前に、Azure DevOps の **NuGetツール インストーラー** タスクを実行する必要があります。
+
+> [!NOTE]
+> ソース コード リポジトリに ISVs のようなサード パーティのバイナリ パッケージが含まれる場合は、パッケージ ステップに明示的に追加する必要があります。 詳細については、[Azure Pipelines での配置可能パッケージの作成](pipeline-create-deployable-package.md) を参照してください。
 
 > [!NOTE]
 > NuGet バージョン 3.4 以降のセマンティック バージョニング機能のために、タスクによってバージョン 3.3.0 またはそれ以前のバージョンがインストールされることを確認してください。 現在、配置可能パッケージの生成はセマンティック バージョニングをサポートしていません。

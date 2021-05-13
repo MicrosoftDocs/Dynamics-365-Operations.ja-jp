@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: b0b5784ad107cc013fce3c22a09d8f65046b1f2f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 11a85cae0bf0ef7a3398e5ba5ee4da653c744202
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753106"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893063"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
@@ -57,7 +57,7 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 上記の理由のいずれかによってユーザーの状況がカバーされる場合、エンティティ店舗で集計測定を実行し、Power BI 統合に対して使用する必要があります。
 
 ## <a name="update-entity-store"></a>エンティティ店舗の更新
-エンティティ格納が自動化され、システムにより管理されます。 クライアントで、**エンティティ格納** ページは **システム管理** &gt; **設定** &gt; **エンティティ格納** で表示できます。 詳細については、[エンティティ格納の自動化更新](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh)を参照してください。
+エンティティ格納が自動化され、システムにより管理されます。 クライアントで、**エンティティ格納** ページは **システム管理** &gt; **設定** &gt; **エンティティ格納** で表示できます。 詳細については、[エンティティ格納の自動化更新](./automated-entity-store-refresh.md)を参照してください。
 
 ### <a name="connecting-to-the-entity-store-database"></a>エンティティ格納データベースに接続する
 トラブルシューティングや診断の場合、関連するサンドボックス環境から直接エンティティ格納データベースに接続することができます。  接続するには

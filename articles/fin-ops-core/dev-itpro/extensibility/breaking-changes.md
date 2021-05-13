@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 477f83d510a830c2a6d2199e57469aa5af7573a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ec0c3b00cadd94436a3494b5815e104fff5c6aa3
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748487"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865961"
 ---
 # <a name="breaking-changes"></a>変更の分割
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0c29d68b29475c2c7040d06e60f7624c49a42002
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890079"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951935"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>BYOD でスケジュール設定されたバッチ ジョブを最適化する
 
@@ -89,6 +89,12 @@ BYOD 機能には、次の制限があります :
 **問題 :** あるエンティティに対してフルプッシュが実行された場合、**セレクト** 文を使用すると BYOD で大量のレコードセットが表示されます。 しかし、増分プッシュを行うと、BYOD では数件のレコードしか表示されません。 増分プッシュですべてのレコードが削除され、BYOD で変更したレコードだけが追加されたように見えます。
 
 **解決策 :** SQLの変更追跡テーブルがしかるべき状態になっていない可能性があります。 このような場合は、エンティティの変更の追跡をオフにしてからオンに戻すことをお勧めします。 詳細については、 [エンティティへの変更の追跡を有効化する](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
+
+### <a name="staging-tables-arent-clearing"></a>ステージング テーブルがクリアされていない
+
+**問題 :** プロジェクトに対してステージングを使用すると、ステージング テーブルが正しくクリアされません。 テーブル内のデータが増加し続け、パフォーマンスに問題が発生します。
+
+**解決策 :** 7 日間の履歴がステージング テーブルで維持されます。 7 日よりも古い履歴データは、**インポート エクスポート ステージング クリーンアップ** バッチ ジョブによってステージング テーブルから自動的にクリアされます。 このジョブが行き詰った場合、テーブルは正しくクリアされません。 このバッチ ジョブを再起動すると、処理が続行され、ステージング テーブルは自動的にクリアされます。
 
 ## <a name="see-also"></a>参照
 

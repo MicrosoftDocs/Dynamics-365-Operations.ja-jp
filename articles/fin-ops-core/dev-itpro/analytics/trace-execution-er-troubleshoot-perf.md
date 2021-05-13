@@ -2,7 +2,7 @@
 title: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
 description: このトピックでは、パフォーマンス上の問題をトラブルシューティングするために電子申告 (ER) のパフォーマンス追跡機能を使用する方法について説明します。
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754219"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944656"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>パフォーマンス上の問題をトラブルシューティングするため ER 形式の実行を追跡します
 
@@ -47,10 +47,10 @@ ms.locfileid: "5754219"
 
 | ファイル                                  | コンテンツ                               |
 |---------------------------------------|---------------------------------------|
-| model.version.1 のパフォーマンス追跡     | [ER データ モデル構成のサンプル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| metadata.version.1 のパフォーマンス追跡  | [ER メタデータ構成のサンプル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| mapping.version.1.1 のパフォーマンス追跡 | [ER モデル マッピング構成のサンプル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| format.version.1.1 のパフォーマンス追跡  | [ER フォーマット構成のサンプル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| model.version.1 のパフォーマンス追跡     | [ER データ モデル構成のサンプル](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| metadata.version.1 のパフォーマンス追跡  | [ER メタデータ構成のサンプル](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| mapping.version.1.1 のパフォーマンス追跡 | [ER モデル マッピング構成のサンプル](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| format.version.1.1 のパフォーマンス追跡  | [ER フォーマット構成のサンプル](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>ER パラメーターのコンフィギュレーション
 
@@ -84,7 +84,7 @@ ms.locfileid: "5754219"
 仕入先トランザクションを表示する新しいレポートを生成するため、新しい ER ソリューションのデザインを開始したとします。 現時点では、選択した仕入先のトランザクションは **仕入先トランザクション** ページ (**買掛金勘定 \> 仕入先 \> すべての仕入先** に移動し、仕入先を選択してから、アクション ウィンドウの **仕入先** タブの **トランザクション** グループで、**トランザクション** を選択します) で検索できます。 ただし、XML 形式の 1 つの電子ドキュメントで、すべての仕入先トランザクションを同時に処理する必要があります。 このソリューションは、必要なデータ モデル、メタデータ、モデル マッピング、および形式コンポーネントを含むいくつかの ER コンフィギュレーションで構成されます。
 
 1. 会社用にプロビジョニングされた RCS のインスタンスにサインインします。
-2. このチュートリアルでは、サンプル会社 **Litware, Inc.** のコンフィギュレーションを作成または変更します。 そのため、このコンフィギュレーション プロバイダーが RCS に追加され、有効として選択されていることを確認してください。 手順については、[コンフィギュレーション プロバイダーを作成し、有効としてマークする](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) を参照してください。
+2. このチュートリアルでは、サンプル会社 **Litware, Inc.** のコンフィギュレーションを作成または変更します。 そのため、このコンフィギュレーション プロバイダーが RCS に追加され、有効として選択されていることを確認してください。 手順については、[コンフィギュレーション プロバイダーを作成し、有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) を参照してください。
 3. **電子レポート** ワークスペースで、**レポート コンフィギュレーション** タイルを選択します。
 4. **構成** ページで、前提条件としてダウンロードした ER コンフィギュレーションを RCS に次の順序でインポートします: データ モデル、メタデータ、モデル マッピング、フォーマット。 各コンフィギュレーションについて、次の手順を実行します。
 
@@ -101,7 +101,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>RCS から ER コンフィギュレーションの Finance and Operations へのインポート
 
 1. アプリケーション インスタンスにサインインします。
-2. このチュートリアルでは、RCS インスタンス (ER コンポーネントを設計する場所) から、インスタンス (テストして最後に使用する場所) にコンフィギュレーションをインポートします。 したがって、必要なコンポーネントがすべて準備されたことを確認する必要があります。 手順については、[規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) を参照してください。
+2. このチュートリアルでは、RCS インスタンス (ER コンポーネントを設計する場所) から、インスタンス (テストして最後に使用する場所) にコンフィギュレーションをインポートします。 したがって、必要なコンポーネントがすべて準備されたことを確認する必要があります。 手順については、[規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート](rcs-download-configurations.md) を参照してください。
 3. これらの手順に従って、コンフィギュレーションを RCS からアプリケーションにインポートします。
 
     1. **電子申告** ワークスペースの、**Litware, inc.** コンフィギュレーション プロバイダーのタイルで、**リポジトリ** を選択します。

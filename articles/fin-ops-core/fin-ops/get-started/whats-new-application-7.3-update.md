@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: aaab2335bb39c3c2f9b552e185123c23b0dd050d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6394f3d5e292e48e3eb273bd10848602226c2bf9
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754644"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923211"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
 
@@ -27,7 +27,7 @@ ms.locfileid: "5754644"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能または変更された機能について説明します。 このバージョンは 2017 年 12 月にリリースされ、ビルド番号は 7.3.11971.56116 です。
 
-最新の製品リリースの新機能および変更点の詳細については、[新機能または変更点](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) および [Dynamics 365 for Retail の新機能または変更点](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new) を参照してください。
+最新の製品リリースの新機能および変更点の詳細については、[新機能または変更点](whats-new-changed.md) および [Dynamics 365 for Retail の新機能または変更点](../../../commerce/get-started/whats-new.md) を参照してください。
 
 新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。
 
@@ -47,7 +47,7 @@ ms.locfileid: "5754644"
 
 Dynamics 365 for Project Service Automation から Dynamics 365 for Finance and Operations への統合の最初のフェーズは、プライベート プレビューで利用できるようになりました。
 
-Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Dataverse 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約明細行の流れを有効にします。 Dataverse データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Dataverse へのデータ統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) を参照してください。
+Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Dataverse 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約明細行の流れを有効にします。 Dataverse データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Dataverse へのデータ統合](/powerapps/administrator/data-integrator) を参照してください。
 
 このソリューションは、次の領域で直接同期を提供します。
 
@@ -82,7 +82,7 @@ Dynamics 365 for Sales と Dynamics 365 for Finance and Operations、Enterprise 
 ### <a name="more-information"></a>詳細情報
 
 - [見込顧客の現金統合 (ビデオ) の概要](https://www.youtube.com/watch?v=AVV9x5x-XCg)
-- [見込顧客の現金ドキュメント化](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash)
+- [見込顧客の現金ドキュメント化](../../../supply-chain/sales-marketing/prospect-to-cash.md)
 
 ## <a name="expense-management-mobile-workspace-enhancements"></a>経費管理モバイル ワークスペースの強化
 
@@ -92,7 +92,7 @@ Dynamics 365 for Sales と Dynamics 365 for Finance and Operations、Enterprise 
 - 会社間経費のサポート。
 - 日当経費のサポート。
 
-詳細については、[経費管理モバイル ワークスペース](https://docs.microsoft.com/dynamics365/finance/expense-management/expense-management-mobile-workspace) を参照してください。
+詳細については、[経費管理モバイル ワークスペース](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace) を参照してください。
 
 ## <a name="financial-reporting-using-power-bi"></a>Power BI を使用した財務報告
 
@@ -116,7 +116,7 @@ Power BI を使用した財務報告についての追加情報を表示する�
 - **受信したドキュメントからの情報に基づくレコード削除** – 新しいレコードを挿入するか、既存のレコードを更新するだけで、受信したドキュメントからデータをインポートするための ER フォーマットを設定できるようになりました。 既存のレコードの削除のロジックを構成することもできます。 顧客はこれにより、ER フレームワークを構成可能なものとしてさまざまな業務プロセスの自動化に使用できる機会が増えます。
 - **ER フレームワークにアクセスする API の変更** - ER フレームワークにアクセスする既存の API が変更されました。(ほとんどの X++ クラスは外部の C# アセンブリに移動され、残りのクラスは内部としてマークされました。) 新しい API によって、ER フレームワークの下位互換性が向上します。 これにより、将来のアプリケーションの更新で、お客様は ER 関連のコード変更を管理するために必要な労力を大幅に削減できます。
 
-詳細については、「[電子申告の概要](https://docs.microsoft.com/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)」を参照してください。
+詳細については、「[電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)」を参照してください。
 
 ## <a name="inventory-transactions-logging-inventsumlogtts-optimization"></a>在庫トランザクションのログ (InventSumLogTTS) の最適化  
 
@@ -149,7 +149,7 @@ Power BI を使用した財務報告についての追加情報を表示する�
 
 サプライ チェーン マネジメントの領域の設定データに対して、データ エンティティのサポートが有効になりました。 倉庫および配送領域については、既定のコンフィギュレーション テンプレートに拡張が行われました。 既定のコンフィギュレーション テンプレートは、コンフィギュレーション データを 1 つのインスタンスから別のインスタンスに単一のステップでコピーするために必要なエンティティと順序を提供します。
 
-詳細については、[倉庫コンフィギュレーション テンプレートを使用した倉庫の設定](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/inventory/warehouse-template) を参照してください。
+詳細については、[倉庫コンフィギュレーション テンプレートを使用した倉庫の設定](../../../supply-chain/inventory/warehouse-template.md) を参照してください。
 
 ## <a name="notifications-in-point-of-sale"></a>販売時点管理での通知
 
@@ -175,7 +175,7 @@ Power BI を使用した財務報告についての追加情報を表示する�
 ### <a name="more-information"></a>詳細情報
 
 - [最適化アドバイザー (ビデオ)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
-- [最適化アドバイザーのルールの作成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/create-rules-optimization-advisor)
+- [最適化アドバイザーのルールの作成](../../dev-itpro/sysadmin/create-rules-optimization-advisor.md)
 
 ## <a name="partial-release-of-materials-and-release-materials-per-production-operation"></a>材料の部分的なリリースおよび生産工程あたりのリリース材料
 
@@ -212,7 +212,7 @@ Power BI を使用した財務報告についての追加情報を表示する�
 
 **製品コンフィギュレーションの Z3 ソルバー戦略を有効にする** - Z3 ソルバー戦略は、製品コンフィギュレーションに使用できます。 多くのベンチマーク テストで、ソルバーは Microsoft Solver Foundation (MSF) ソルバーと比較して大幅なパフォーマンス向上が示されています。 新しい Z3 ソルバー戦略は、コンフィギュレーション モデルごとに割り当てられます。 その他 3 つのソルバー戦略は、**既定**、**トップダウン**、および **最小ドメインを先頭にする** の MSF のすべての戦略であることに注意してください。
 
-詳細については、[製品コンフィギュレーションのソルバー戦略](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/solver-strategy-product-configuration) を参照してください。
+詳細については、[製品コンフィギュレーションのソルバー戦略](../../../supply-chain/pim/solver-strategy-product-configuration.md) を参照してください。
 
 **製品コンフィギュレーション モデルのインポート、エクスポート、および移行** – 標準データ エンティティを使用して、製品コンフィギュレーション モデルとモデル バージョンをエクスポートおよびインポートすることができます。 コンフィギュレーション モデルは XML 構造としてエクスポートされ、単一のエンティティに保管されるため、エクスポートおよびインポートが簡単になります。  
 
@@ -244,13 +244,13 @@ Power BI を使用した財務報告についての追加情報を表示する�
 > [!NOTE]
 > リリースされた製品または製品バリアントのデータ エンティティを使用して個々の製品ライフサイクルの状態を設定する機能はサポートされていません。
 
-詳細については、[製品ライフサイクルの状態](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-lifecycle) を参照してください。
+詳細については、[製品ライフサイクルの状態](../../../supply-chain/pim/product-lifecycle.md) を参照してください。
 
 ## <a name="retail-proxy--new-extension-point-added-to-support-retail-proxy-extension-without-inline-changes"></a>小売プロキシ - インライン変更なしで小売プロキシの拡張機能をサポートするために追加された新しい拡張ポイント
 
 以前は、POS オフライン モードで新しい CRT/RS 拡張機能を、または電子商取引の拡張機能をサポートするために、Retail プロキシ プロジェクトをインラインで変更して Retail プロキシを生成する必要がありました。 現在は、完全に新しい拡張機能としてインライン変更を行わずにプロキシを生成できます。 また、拡張プロキシ間のコード マージなしで、複数の ISV/パートナー拡張プロキシのサポートも追加しました。 これにより、プロキシ拡張のシームレスなアップグレードが可能になります。
 
-詳細については、[Retail の Typescript プロキシと C# プロキシ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/typescript-proxy-retail-pos) を参照してください。
+詳細については、[Retail の Typescript プロキシと C# プロキシ](../../../retail/dev-itpro/typescript-proxy-retail-pos.md) を参照してください。
 
 ## <a name="safety-stock-replenishment-enhancements"></a>安全在庫補充の拡張機能
 
@@ -264,7 +264,7 @@ Power BI を使用した財務報告についての追加情報を表示する�
 
 有効期限が切れるアイテムの補充計算にも新しいロジックがあります。 任意の時点で、注文明細行または BOM 明細行などの実際の需要を許可するよう、FEFO (先に期限が切れるものから先出し) の順序で履行するよう、最新の有効期限の日付で在庫入庫が安全在庫に対して使用されます。
 
-詳細については、[品目に対する安全在庫フルフィルメント](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/safety-stock-replenishment) を参照してください。
+詳細については、[品目に対する安全在庫フルフィルメント](../../../supply-chain/master-planning/safety-stock-replenishment.md) を参照してください。
 
 ## <a name="tax-engine-gte--india-gst-only"></a>税エンジン (GTE) – インドの販売税のみ
 

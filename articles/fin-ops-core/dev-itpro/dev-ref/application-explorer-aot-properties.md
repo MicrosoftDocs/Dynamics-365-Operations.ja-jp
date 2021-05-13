@@ -4,22 +4,19 @@ description: このトピックでは、アプリケーション エクスプロ
 author: RobinARH
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 85213
-ms.assetid: ca186dda-8a78-4969-9be0-b81be00892e5
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a0afc48ed059bec67147547ec112f6bc9de3587
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 958394fd0fca370bce825e5a0a5a8f2bad850407
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750982"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865867"
 ---
 # <a name="application-explorer-properties"></a>アプリケーション エクスプローラーのプロパティ
 

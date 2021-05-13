@@ -1,7 +1,7 @@
 ---
 title: 環境計画
 description: このトピックでは、プロジェクトの環境を計画するときに考慮する必要があるさまざまな側面の概要を示します。
-author: petryo
+author: laneswenka
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: petryo
+ms.author: laswenka
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: fcbba1e1b2d013e1e6b6c792e5dcab88e4990dac
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63044254730d6fea6eee064475d0307872189a97
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751848"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923321"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -55,7 +55,7 @@ ms.locfileid: "5751848"
 |--------|-------------------|
 | シングルボックス環境 | マルチボックス環境 |
 | すべてのコンポーネントは、同じサーバーにインストールされます。 これらのコンポーネントには、アプリケーション オブジェクト サーバー (AOS)、データベース、Dynamics 365 Commerce、および Management Reporter が含まれます。 | コンポーネントは、複数のサーバーにインストールされます。 |
-| Microsoft SQL Server で使用 | [Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/)が使用されます。 |
+| Microsoft SQL Server で使用 | [Azure SQL データベース](/azure/sql-database/)が使用されます。 |
 | この構造は本稼働環境の構造によって異なり、これは開発チームの効率性を最大限に高めることを意図しています。 | アーキテクチャは、実稼働環境のアーキテクチャと同じです。ただし、このような環境はサイズがさまざまで、災害復旧に対応していません。 |
 | この環境は、クラウドホストとして使用することも、環境イメージ (VHD) として配置することもできます。 | 環境は、標準環境またはアドオン環境としてのみ展開することができます。 クラウド ホストにすることはできません。 |
 | この環境は、UAT またはパフォーマンス テストに適していません。 | この環境は、UAT およびパフォーマンス テストに適しています。 |
@@ -99,7 +99,7 @@ ms.locfileid: "5751848"
 
 顧客は、ソリューションをビルドするのではなく **運用** するために実稼働環境を使用する必要がある。 実稼働環境が業務の遂行に合ったサイズになっている。 サイズ決定は、サブスクリプションの見積とパフォーマンス テストの診断データに基づいて行われます。 展開後、顧客は実稼働環境でモック切替および最終的な一連の検証を行うことができ、その必要があります。 最終切替の前に、顧客はポイント イン タイム復元を要求し、実稼働環境をクリーンなスナップショット (最大 28 日前) に復元できます。
 
-実稼働環境の適切なデータ センターを選択するには、ビジネスが運営されている地理的な場所から待機時間を検討してください。 [PsPing](https://docs.microsoft.com/sysinternals/downloads/psping) や [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) などのツールを使って、Azure データ センターの待機時間をテストします。
+実稼働環境の適切なデータ センターを選択するには、ビジネスが運営されている地理的な場所から待機時間を検討してください。 [PsPing](/sysinternals/downloads/psping) や [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) などのツールを使って、Azure データ センターの待機時間をテストします。
 
 次の図は、環境計画プロセスを示しています。
 

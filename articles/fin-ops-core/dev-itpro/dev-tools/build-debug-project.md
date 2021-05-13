@@ -4,8 +4,6 @@ description: このチュートリアルでは、フリート管理アプリを�
 author: pvillads
 ms.date: 02/06/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 26731
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69dd2d360f8cb34817ef6c4dddff4d726fdd9199
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bc74f1ceb2080cd55900e0c52f9e1a97b0fda7ff
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750366"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865950"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 

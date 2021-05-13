@@ -2,7 +2,7 @@
 title: チャネル ナビゲーション階層の作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce にチャネル ナビゲーション階層を作成する方法について説明します。
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 358f3d40c7a21184c20da342d6b2bf72dd4e7bbd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795838"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951911"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>チャネル ナビゲーション階層の作成
 
@@ -77,7 +77,7 @@ ms.locfileid: "5795838"
 1. アクション ウィンドウで、**保存** を選択します。
 
 > [!NOTE]
-> 選択されたチャネルで製品を表示するために、チャネル ナビゲーション階層内ノードへの製品の追加だけでなく、その製品を製品に類別する必要もあります。
+> 選択されたチャネルで製品を表示するためには、チャネル ナビゲーション階層内ノードへの製品の追加だけでなく、その製品をチャネルに類別する必要もあります。 品揃えの詳細については、[品揃え管理](assortments.md) を参照してください。
 
 次の図は、製品が追加されたノードの例を示しています。
 

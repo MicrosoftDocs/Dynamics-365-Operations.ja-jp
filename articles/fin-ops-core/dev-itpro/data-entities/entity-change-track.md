@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ea630d0684d3f51e21150865364ab4144ca5771
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5b0aac56d60d67664a2ab92adbe68b3f579de306
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750580"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941069"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
@@ -29,8 +29,8 @@ ms.locfileid: "5750580"
 
 変更追跡は、自分のデータベース (BYOD) シナリオと非 BYOD シナリオの両方に対して有効にできます。 これには、Dataverse 仮想エンティティを介したレコードの変更の取得が含まれます。
 
-    > [!NOTE]
-    > Change tracking will track record deletion only for bring your own database (BYOD) and Dataverse virtual entity use cases, if the entity supports it. Other non-BYOD scenarios will not include tracking record deletion. Deletion is tracked only for the root data source in the entity.
+> [!NOTE]
+> 変更の追跡では、エンティティがサポートしている場合、独自のデータベース (BYOD) および Dataverse 仮想エンティティのユース ケースに対してのみレコードの削除を追跡します。 他の非 BYOD シナリオでは、追跡レコードの削除は含まれません。 削除処理は エンティティ内 の ルート データ ソース に対してのみ追跡されます。
 
 ## <a name="enable-change-tracking-for-byod"></a>BYOD の変更追跡を有効する
 データ ストア (BYOD) に 1 つまたは複数のエンティティを発行するとき、変更追跡を有効にすることができます。
@@ -57,13 +57,13 @@ ms.locfileid: "5750580"
 ## <a name="enable-change-tracking-for-non-byod-scenarios"></a>非 BYOD シナリオでの変更追跡の有効化
 変更追跡は、非 BYOD シナリオに対して有効にできます。 これには、Finance and Operations アプリの Dataverse 仮想エンティティを介したレコードの変更の取得が含まれます。 エンティティで変更追跡が有効になっている場合、優先設定ヘッダーとして `odata.track-changes` を追加することで、エンティティの OData エンドポイントから変更点を取得することができます。
 
-エンティティに対する変更追跡の使用の詳細については、「[変更追跡を使用したデータと外部システムとの同期](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)」を参照してください。
+エンティティに対する変更追跡の使用の詳細については、「[変更追跡を使用したデータと外部システムとの同期](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)」を参照してください。
 
 非 BYOD シナリオで変更追跡を有効化する方法 :
 
 1. **データ管理** ワークスペースから、**データ エンティティ** リスト ページを選択します。
 2. 変更追跡を有効にするエンティティを選択します。 
-3. アクション リボンで、**変更追跡** アクションを選択し、エンティティの変更を追跡する方法について必要なオプションを選択します。 使用可能なオプションの詳細については、前述の「[BYOD に対して変更追跡を有効にする](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track#enable-change-tracking-for-byod)」セクションのテーブルを参照してください。
+3. アクション リボンで、**変更追跡** アクションを選択し、エンティティの変更を追跡する方法について必要なオプションを選択します。 使用可能なオプションの詳細については、前述の「[BYOD に対して変更追跡を有効にする](#enable-change-tracking-for-byod)」セクションのテーブルを参照してください。
 
 ## <a name="custom-query-for-change-tracking"></a>変更追跡用のカスタム クエリ
 次の例は、エンティティに静的メソッドを追加する方法を示しています。 メソッドがクエリを返し、ルート ノードがエンティティと同様であることを確認する必要があります。 たとえば、顧客エンティティについては、ルート ノードは custTable で、その変更追跡クエリも custTable です。

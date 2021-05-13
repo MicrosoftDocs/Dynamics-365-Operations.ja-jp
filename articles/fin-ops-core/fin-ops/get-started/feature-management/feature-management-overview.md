@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d5d5303b6d81ad182e0e28a51790166b833bee7b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754803"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923310"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
@@ -140,7 +140,7 @@ ms.locfileid: "5754803"
 
 ## <a name="new-features-are-optional-for-12-months"></a>新機能は 12 ヶ月間のオプションです
 
-新しい非クリティカル機能がインストールされている場合は、12 ヶ月の期間に対してのオプションになります。 これにより、ユーザーと組織は、いつ機能を採用するかを事前に計画し、日常業務に対するテストを行うことができます。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features)を参照してください。
+新しい非クリティカル機能がインストールされている場合は、12 ヶ月の期間に対してのオプションになります。 これにより、ユーザーと組織は、いつ機能を採用するかを事前に計画し、日常業務に対するテストを行うことができます。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../one-version.md#what-about-new-features)を参照してください。
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>機能管理を使用して ISV 機能またはカスタム機能をオンにする
 
@@ -161,7 +161,7 @@ ms.locfileid: "5754803"
 更新リリースのタイミングは変動し、環境更新のタイミングは変動し、顧客は一部の更新をスキップすることもできます。 その結果、特定の日付を決定することは困難です。 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>必須になる機能のドキュメントはどこにありますか? 
-このドキュメントは、アプリケーション チームから提供されます。 多くの場合、これらは [削除済みまたは非推奨の機能](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) に記載されています。 
+このドキュメントは、アプリケーション チームから提供されます。 多くの場合、これらは [削除済みまたは非推奨の機能](../../../dev-itpro/migration-upgrade/deprecated-features.md) に記載されています。 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>機能が必須で有効になるという製品内の通知またはシグナルはありますか? 
 機能の必須化に関連する通知メカニズムは、現在存在しません。

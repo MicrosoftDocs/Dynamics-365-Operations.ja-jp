@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6a2af6a33817737350e905cb1a74ee3e5b243397
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b004b88c11b056af897e33d50d6f4f5a5638b173
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745129"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909014"
 ---
 # <a name="application-lifecycle-management-for-solutions-that-use-virtual-entities"></a>仮想エンティティを使用するソリューションのアプリケーション ライフサイクル管理
 
@@ -26,7 +26,7 @@ ms.locfileid: "5745129"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 Finance and Operations 仮想エンティティを使用するエンド ツー エンド ソリューションのアプリケーション ライフサイクルには、Finance and Operations および Dataverse の両方が含まれます。 詳細については、このトピックで説明します。
 
@@ -34,7 +34,7 @@ Finance and Operations 仮想エンティティを使用するエンド ツー �
 
 Finance and Operations の仮想エンティティは、作成されるまで Dataverse には存在しません。 仮想エンティティは、ソリューション内に作成する必要があります。 MicrosoftOperationsERPVE ソリューションは、この目的に使用されます。 このソリューションには、Finance and Operations のインスタンスから作成されたすべての仮想エンティティが含まれます。
 
-MicrosoftOperationsERPVE は、[マネージド ソリューション](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions)です。 定義上、マネージド ソリューションを生成した後で変更することはできません。 ただし、MicrosoftOperationsERPVE は、その中に含まれるコンポーネント (仮想エンティティ) を更新する特権を付与するマネージド ソリューションです。 したがって、新しい仮想エンティティを作成時にソリューションに追加したり、既存の仮想エンティティを必要に応じて更新したりできます。 ただし、マネージド ソリューションを変更する特権は、プラットフォーム自体に対してのみ使用できます。 ユーザーは直接ソリューションに変更を加えることはできません。
+MicrosoftOperationsERPVE は、[マネージド ソリューション](/powerapps/developer/common-data-service/introduction-solutions)です。 定義上、マネージド ソリューションを生成した後で変更することはできません。 ただし、MicrosoftOperationsERPVE は、その中に含まれるコンポーネント (仮想エンティティ) を更新する特権を付与するマネージド ソリューションです。 したがって、新しい仮想エンティティを作成時にソリューションに追加したり、既存の仮想エンティティを必要に応じて更新したりできます。 ただし、マネージド ソリューションを変更する特権は、プラットフォーム自体に対してのみ使用できます。 ユーザーは直接ソリューションに変更を加えることはできません。
 
 MicrosoftOperationsERPVE はマネージド ソリューションであるため、顧客、パートナー、および独立系ソフトウェアベンダー (ISV) によるソリューションは、それに対する依存関係を持つことになります。 この機能により、Finance and Operations の仮想エンティティを使用したり依存したりするソリューションに一貫したアプリケーション ライフサイクル管理 (ALM) が可能になります。
 

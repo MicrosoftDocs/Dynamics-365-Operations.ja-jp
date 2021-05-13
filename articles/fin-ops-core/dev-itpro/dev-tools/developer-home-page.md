@@ -4,8 +4,6 @@ description: このトピックでは、開発に関するトピックへのリ�
 author: RobinARH
 ms.date: 04/27/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 21631
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1ae81c9fb1fadae0974a9479127df0b130a73ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4657ae53908e8588bf78168adefb28ed4ae137ba
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745303"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881386"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -101,6 +99,7 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 
 - [X++ およびデバッガーの機能](new-x-debugger-features.md)
 - [C\# と X++ ソース コードを使用してビジネス ロジックを記述する](write-business-logic.md)
+- [X++ の Visual Studio 2017 の要件](developer-tools-vs2017.md)
 
 ### <a name="language-support"></a>言語サポート
 
@@ -174,13 +173,15 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 
 - [Dynamics 365 Finance ホーム ページの開発](../financial/financial-dev-home-page.md)
 
-## <a name="licensing"></a>ライセンス
+## <a name="development-for-independent-software-vendors"></a>独立系ソフトウェア ベンダーのための開発
 
-- [独立系ソフトウェア ベンダー (ISV) ライセンス](isv-licensing.md)
+- [ISV Studio を使用した X++ モジュールのパッケージへのリンク](isv-studio-solutions.md)
+- [ISV ライセンス](isv-licensing.md)
+- [オンプレミスの ISV ライセンス](isv-licensing-on-prem.md)
 
-## <a name="supply-chain-management"></a>サプライ チェーン マネジメント
+## <a name="supply-chain-management"></a>Supply Chain Management
 
-- [ガント コントロール作成ガイド](../user-interface/gantt-development-guide.md)
+- [ガント コントロール開発ガイド](../user-interface/gantt-development-guide.md)
 - [新しい輸送管理エンジンの作成](../../../supply-chain/transportation/create-new-transportation-management-engine.md)
 
 ## <a name="additional-resources"></a>その他のリソース

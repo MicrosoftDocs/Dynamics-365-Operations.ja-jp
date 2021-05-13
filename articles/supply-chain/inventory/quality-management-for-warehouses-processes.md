@@ -2,7 +2,7 @@
 title: 倉庫プロセスに対する品質管理
 description: このトピックでは、倉庫プロセスの品質管理の機能に関する情報を提供します。 この機能は、品質管理の機能を拡張し、高度な倉庫管理を使用して、品目サンプリングの管理を倉庫の入荷プロセスに統合できるようにします。
 author: Henrikan
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: a049a7832e02dbd2debdd016a6b723726cc25df0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db23ffcea4da28fa309ccca12540e0edaf00ad6c
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834268"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956085"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>倉庫プロセスに対する品質管理
 
@@ -620,5 +620,8 @@ _倉庫プロセスの品質管理_ 機能により、新しい品目のサン�
 > [!NOTE]
 > 品質-アウト エントリを、活動コードが *オープン作業のリストを表示* であるモバイル デバイス メニュー項目に追加することを検討してください。 例については、デモ データで、**作業一覧** という名前のモバイル デバイス メニュー項目を参照してください。 作業を作業一覧に表示するには、まず *品質指示* 作業クラスをユーザーの指示に従ったメニュー項目に追加します。 その後、*品質指示* 作業クラスを **作業一覧** メニュー項目に追加します。 作業一覧へのアクセス権を持つユーザーは、品質指示の検証によって自動的に生成された作業を選択および処理できるようになります。
 
+## <a name="additional-resources"></a>追加リソース
+
+- [品質および不適合管理の概要](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

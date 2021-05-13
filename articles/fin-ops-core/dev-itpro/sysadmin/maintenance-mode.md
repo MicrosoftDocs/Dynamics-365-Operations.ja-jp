@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2239911f9484c0cfa5a72457e86658de4b5609c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6abc6b175973547dffa06f00b4a3d3a0bc8a2b2c
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745971"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881022"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 

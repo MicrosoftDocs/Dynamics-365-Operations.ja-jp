@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: e79feb567a48d08a9063bf20cface3c5c7fe8ecc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e806af55247fc78b5e353f3ae1dd624809feb43
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831749"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919920"
 ---
 # <a name="rebate-management-posting-setup"></a>リベート管理転記設定
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 リベート管理計算行の転記エントリーを決定するには、リベート管理転記プロファイルを使用します。 取引ヘッダーで転記プロファイルが選択されている場合、すべての取引明細行に適用されます。
 

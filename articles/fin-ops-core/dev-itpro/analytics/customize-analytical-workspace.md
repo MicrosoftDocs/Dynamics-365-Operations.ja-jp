@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: deb3b3417abdcbbd3d79f413930a065e3ee0e28e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 58e3937a44ae278c4a4f4d78ed597b55bf69026b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755458"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893314"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 
@@ -70,7 +70,7 @@ ms.locfileid: "5755458"
     デフォルトでは、アプリケーションと共にパッケージ化された標準分析ワークスペース ソリューションが表示されます。 このソリューションのレポートは、プロビジョニング プロセス中に環境に合わせて自動的に配置および設定されます。
 
     > [!NOTE]
-    > 分析ワークスペースには、専用の環境に対してのみ使用できるホストされた Microsoft Power BI サービスが必要です。 詳細については、「[1 Box 環境での分析ワークスペースおよびレポートへのアクセス](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)」を参照してください。
+    > 分析ワークスペースには、専用の環境に対してのみ使用できるホストされた Microsoft Power BI サービスが必要です。 詳細については、「[1 Box 環境での分析ワークスペースおよびレポートへのアクセス](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)」を参照してください。
 
 3. アクション ペインの **オプション** タブの **Power BI** グループで **Edit Analytics** を選択してください。
 
@@ -80,7 +80,7 @@ ms.locfileid: "5755458"
 
     ![分析ワークスペース レポート エディター](media/analytical-workspace-edit-view.png)
 
-4. レポート キャンバスPower BIをカスタマイズするには、web デザイナー ツールを使用します。 直感的な web コントロールを使用すると、ビジュアルの追加および削除、ビジュアル型の変更、コンテンツの書式設定などの一般的なアクションを実行できます。 視覚エフェクト レポートのソースを調査して、システムで利用可能な最も関連性のあるデータに基づいて意思決定を行うこともできます。 詳細については、「[Power BIレポートへの視覚エフェクトの追加](https://docs.microsoft.com/power-bi/visuals/power-bi-report-add-visualizations-i)」を参照してください。
+4. レポート キャンバスPower BIをカスタマイズするには、web デザイナー ツールを使用します。 直感的な web コントロールを使用すると、ビジュアルの追加および削除、ビジュアル型の変更、コンテンツの書式設定などの一般的なアクションを実行できます。 視覚エフェクト レポートのソースを調査して、システムで利用可能な最も関連性のあるデータに基づいて意思決定を行うこともできます。 詳細については、「[Power BIレポートへの視覚エフェクトの追加](/power-bi/visuals/power-bi-report-add-visualizations-i)」を参照してください。
 5. レポートのカスタマイズが完了したら、 **保存** ボタンを選択してレポート編集のレベルを上げます。 レポートへのカスタマイズは、サービスにすぐに反映されます。 したがって、組織のユーザーは最新のイノベーションにアクセスできます。
 
     > [!NOTE]

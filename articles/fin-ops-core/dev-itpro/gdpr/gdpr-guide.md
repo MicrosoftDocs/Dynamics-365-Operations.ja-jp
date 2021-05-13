@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: faa5195820fa97f98317b401c164d9a79a47af5b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29c64d6b6209783a6d70035d4bd855b15d03c153
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750300"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923554"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -250,7 +250,7 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 
 ## <a name="representation-of-a-person-in-finance-and-operations"></a>Finance and Operations のユーザーの表示
 
-Finance and Operations には共通の [グローバル アドレス帳](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
+Finance and Operations には共通の [グローバル アドレス帳](../../fin-ops/organization-administration/overview-global-address-book.md) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
 
 ![グローバル アドレス帳のデータ モデル](../media/gdpr-address-data-model.jpg)
 
@@ -271,7 +271,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 
 データ主体がコントローラーに申し入れてユーザーの個人データのコピーを要求するとき、そのコントローラーは、個人を説明するデータを特定するためにグローバル アドレス帳情報を使用する選択をすることがあります。 このトピックの前の図で説明したように、**人物** は **ロール** を担う **関係者** のタイプです。
 
-組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
+組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](..//office-integration/office-integration-edit-excel.md)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
 
 ## <a name="the-person-search-report"></a>個人検索レポート
 
@@ -286,7 +286,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 
 データ主体がコントローラーに申し入れてユーザーの個人データのコピーを要求するとき、そのコントローラーは、個人を説明するデータを特定するためにグローバル アドレス帳情報を使用する選択をすることがあります。 このトピックの前の図で説明したように、**人物** は **ロール** を担う **関係者** のタイプです。
 
-組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
+組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](../office-integration/office-integration-edit-excel.md#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
 
 ## <a name="additional-notes-that-apply-to-requests-for-data"></a>データの要求に適用される追加のメモ
 
@@ -321,7 +321,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 + 応募者
 + 競合他社
 
-個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用されるページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](https://docs.microsoft.com/dynamics/s-e/)ページからスプレッドシートを表示したりダウンロードしたりできます。 
+個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用されるページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](/dynamics/s-e/)ページからスプレッドシートを表示したりダウンロードしたりできます。 
 
 ## <a name="detailed-inventory"></a>詳細な在庫
 

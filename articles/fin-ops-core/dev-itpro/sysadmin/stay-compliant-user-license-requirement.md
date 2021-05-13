@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 300bae7debeb0af23ca3be165630c2a612c9699e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 81fb88cf2225d9ec74f16b6726b96de16847518e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745903"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907927"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 
@@ -32,7 +32,7 @@ ms.locfileid: "5745903"
 - 権限
 - 直接参照された、セキュリティ保護可能なオブジェクト 
 
-詳細については、[ロールベース セキュリティ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security)を参照してください。
+詳細については、[ロールベース セキュリティ](./role-based-security.md)を参照してください。
 
 ユーザーのライセンス要件は、組織またはテナント レベルで決定されます。 このトピックでは、単一の環境の要件に重点を置いて説明します。 複数の環境がある場合は、すべての要件に対して要件を分析する必要があります。
 
@@ -106,9 +106,9 @@ ms.locfileid: "5745903"
 
 Finance and Operations アプリの購入方法とライセンスの詳細については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
 
-Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) を参照してください。
+Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) を参照してください。
 
-同じテナントに複数の実装プロジェクトが存在する場合は、追加のユーザー ライセンスが必要です。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#licensing-requirements) を参照してください。
+同じテナントに複数の実装プロジェクトが存在する場合は、追加のユーザー ライセンスが必要です。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#licensing-requirements) を参照してください。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

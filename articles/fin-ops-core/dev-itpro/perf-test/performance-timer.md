@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d193f7c5c6acc63033a613536fe40db7061a19b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ae509a7055fd2f95f1a1f1809b11223d10c22f5e
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746027"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866318"
 ---
 # <a name="performance-timer"></a>パフォーマンス タイマー
 

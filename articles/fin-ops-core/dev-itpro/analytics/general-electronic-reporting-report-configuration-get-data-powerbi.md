@@ -2,7 +2,7 @@
 title: Power BI にデータをプルするよう電子申告 (ER) を構成する
 description: このトピックでは、電子申告 (ER) コンフィギュレーションを使用してインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8a53c1c3e1850dabc05a47df6d8cc785a13f6f86
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750085"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944440"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Power BI にデータをプルするよう電子申告 (ER) を構成する
 
@@ -68,10 +68,10 @@ Microsoft Power BI は、外部のデータ ソースを一貫性、視覚的な
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>データのソースとして ER データ モデルを使用
 Power BI レポートで使用されるビジネス データのソースとして、ER データ モデルが必要です。 このデータ モデルは、ER コンフィギュレーション リポジトリからアップロードされます。 詳細については、「[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](download-electronic-reporting-configuration-lcs.md)」、または **Lifecycle Services からのコンフィギュレーションの ER インポート** を参照してください。 選択した ER コンフィギュレーション リポジトリからアップロードされるデータ モデルとして、**イントラスタット** を選択します。 (この例では、モデルのバージョン 1 が使用されています)。**コンフィギュレーション** のページで、**イントラスタット** ER モデル コンフィギュレーションにアクセスできます。
 
-[![構成ページ](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![構成ページのイントラスタット ER モデル構成](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>ER 形式のコンフィギュレーションをデザイン
-ビジネス データのソースとして **イントラスタット** データ モデルを使用する新しい ER 形式のコンフィギュレーションを作成する必要があります。 この形式のコンフィギュレーションは、OpenXML (Excel ファイル) 形式の電子ドキュメントとして出力結果を生成する必要があります。 詳細については、**OPENXML 形式でレポートのコンフィギュレーションを ER 作成する** のタスク ガイドを再生してください。 次の図に示すように、新しいコンフィギュレーションに **インポート/エクスポート活動** の名前を付けます。 ER 形式をデザインするときにテンプレートとして、「[ER データのインポートとエクスポートの詳細](https://go.microsoft.com/fwlink/?linkid=845208)」 Excel ファイルを使用します。 (形式のテンプレートをインポートする方法について、タスク ガイドを再生してください。)
+ビジネス データのソースとして **イントラスタット** データ モデルを使用する新しい ER 形式のコンフィギュレーションを作成する必要があります。 この形式のコンフィギュレーションは、OpenXML (Excel ファイル) 形式の電子ドキュメントとして出力結果を生成する必要があります。 詳細については、**OPENXML 形式でレポートのコンフィギュレーションを ER 作成する** のタスク ガイドを再生してください。 次の図に示すように、新しいコンフィギュレーションに **インポート/エクスポート活動** の名前を付けます。 ER 形式をデザインするときにテンプレートとして、「[ER データのインポートとエクスポートの詳細](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx)」 Excel ファイルを使用します。 (形式のテンプレートをインポートする方法について、タスク ガイドを再生してください。)
 
 [![インポート/エクスポート活動のコンフィギュレーション](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
@@ -126,7 +126,7 @@ Power BI レポートで使用されるビジネス データのソースとし�
 1. **コンフィギュレーション** ページ (**組織管理** &gt; **電子申告** &gt; **コンフィギュレーション**) のコンフィギュレーション ツリーで、以前に作成した **インポート/エクスポート活動** のコンフィギュレーションを選択します。
 2. この形式を使用できるように、バージョン 1.1 の状態を **ドラフト** から **完了** に変更します。
 
-    [![構成ページ](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![構成ページでのインポート/エクスポート活動の構成](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. **インポート/エクスポート活動** コンフィギュレーションの完了したバージョンを選択し、**実行** をクリックします。 コンフィギュレーションした送信先は、Excel 形式で生成される出力結果に適用されることに注意してください。
 4. 無人モードでこのレポートを実行するには、**バッチ処理** オプションを **はい** に設定します。
@@ -187,7 +187,7 @@ Power BI レポートで使用されるビジネス データのソースとし�
 2. 作成した **インポートとエクスポートの詳細** Power BI レポートを選択して、選択されたページでアクション項目としてレポートを表示します。
 3. アクション項目をクリックして、Power BI でデザインされたレポートを表示するページを開きます。
 
-    [![インポートとエクスポートの詳細レポート](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Power BI で設計されたインポートおよびエクスポートの詳細レポート](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

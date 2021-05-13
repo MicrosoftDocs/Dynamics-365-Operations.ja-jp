@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: dd4f2b71e20fc012bb5b3c28b4847c47798af005
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4b09a1076dbbb00819b8e7a694a58488b9f912a2
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800403"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936994"
 ---
 # <a name="support-for-network-peripherals"></a>ネットワーク周辺機器のサポート
 
@@ -45,7 +45,7 @@ ms.locfileid: "5800403"
 
 この機能は、ネットワーク対応型の支払ターミナルとレシート プリンターをサポートしています。 キャッシュ ドロワーのサポートを提供するには、d/k ポートを介して、キャッシュ ドロワーをネットワーク対応型のレシート プリンターに接続します。
 
-この機能に対するすぐに使える、[Adyen 向け Microsoft Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) によって提供されます。 ただし、その他の支払コネクタは、コマース ソフトウェア開発キット (SDK) を介してサポートされる可能性があります。 サポートされているレシート プリンターには、Star Micronics と Epson のネットワーク対応型レシート プリンターがあります。
+この機能に対するすぐに使える、[Adyen 向け Microsoft Dynamics 365 Payment Connector](./adyen-connector.md?tabs=8-1-3) によって提供されます。 ただし、その他の支払コネクタは、コマース ソフトウェア開発キット (SDK) を介してサポートされる可能性があります。 サポートされているレシート プリンターには、Star Micronics と Epson のネットワーク対応型レシート プリンターがあります。
 
 すぐに使えるサポートは、Epson および Star Micronics レシート プリンターのネットワーク プロトコルに対して提供されます。 d/k ポートを介してこれらのプリンターに接続されたキャッシュ ドロワーは、ESC/P プロトコルを介してサポートされます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "5800403"
 
 ### <a name="adyen-payment-terminal"></a>Adyen 支払ターミナル
 
-Adyen 支払ターミナルの設定方法については、[Adyen の Dynamics 365 支払コネクタ](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#pos-payment-terminal)の「POS 支払ターミナル」セクションを参照してください。
+Adyen 支払ターミナルの設定方法については、[Adyen の Dynamics 365 支払コネクタ](./adyen-connector.md?tabs=8-1-3#pos-payment-terminal)の「POS 支払ターミナル」セクションを参照してください。
 
 ### <a name="epson-or-star-micronics-receipt-printer-and-a-cash-drawer"></a>Epson または Star Micronics レシート プリンターとキャッシュ ドロワー
 
@@ -113,7 +113,7 @@ iOS 用 Modern POS およびクラウド アプリケーション用 Modern POS 
 10. キャッシュ ドロワーのクイックタブで、プリンターの IP アドレスを入力します。 ポート番号のフィールドを空欄のままにします。
 
     > [!NOTE]
-    > 共有ハードウェア ステーションを設定する方法の詳細については、[小売りハードウェア ステーションの設定とインストール](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation)を参照してください。
+    > 共有ハードウェア ステーションを設定する方法の詳細については、[小売りハードウェア ステーションの設定とインストール](../retail-hardware-station-configuration-installation.md)を参照してください。
 
 11. **保存** を選択します
 12. **配布スケジュール** を検索します。
@@ -128,9 +128,9 @@ iOS 用 Modern POS およびクラウド アプリケーション用 Modern POS 
 
 ## <a name="related-articles"></a>関連記事
 
-- [Android と iOS での POS ハイブリッドアプリの設定](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト](https://go.microsoft.com/fwlink/?linkid=2129966)
+- [Android と iOS での POS ハイブリッドアプリの設定](./hybridapp.md)
+- [Adyen 向け Dynamics 365 Payment Connector](./adyen-connector.md?tabs=8-1-3)
+- [専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト](../pos-multi-hws.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

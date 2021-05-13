@@ -12,12 +12,12 @@ ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: b8bb61b959d25512ea066ed6ad3f6d4f793b740f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 03fdb3b72e657ce1a51789fec997234aabf7e58c
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748479"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921205"
 ---
 # <a name="migrate-code-for-finance-and-operations-apps-solutions"></a>Finance and Operations アプリ ソリューションのコードの移行
 
@@ -40,7 +40,7 @@ xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\
 xppbp.exe ファイルは、c:\\packages\\bin または I:\\AosService\\Packages\\LocalDirectory\\bin に配置されています。 レポートの **問題** タブ上に表示される警告またはエラーを解決する必要があります。 CAR のコピーを、検証ミーティングよりも前に、Microsoft に送信する必要があります。 詳細については、 [カスタマイズ分析のレポートt (CAR)](../dev-tools/customization-analysis-report.md)を参照してください。 問題と例外の詳細については、Dynamics 365 Community ブログの投稿[カスタマイズ分析のレポート: 例外と既知の問題](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues)を参照してください。
 
 ## <a name="extensibility"></a>拡張性
-Microsoft Dynamics 365 for Finance and Operationsバージョン 8.0 (2018年4月) では、すべての製品モデルがシールされます。 したがって、拡張機能ベースのカスタマイズのみが現在サポートされています。 拡張機能の詳細については、[拡張機能](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page)を参照してください。
+Microsoft Dynamics 365 for Finance and Operationsバージョン 8.0 (2018年4月) では、すべての製品モデルがシールされます。 したがって、拡張機能ベースのカスタマイズのみが現在サポートされています。 拡張機能の詳細については、[拡張機能](../extensibility/extensibility-home-page.md)を参照してください。
 
 ソリューション パッケージを完成させるための第一歩は、LCS の <strong>Finance and Operations アプリ ソリューションの移行と作成</strong> のベストプラクティスを使用してコードをアップグレードすることです。 このステップが完了したら、カスタマイズ分析レポートを実行する必要があります。 このレポートは、カスタマイズおよび拡張モデルを分析し、事前定義されたベスト プラクティスのルールを実行します。 
 

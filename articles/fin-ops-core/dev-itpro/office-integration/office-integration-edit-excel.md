@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29b6e93f30d6d0aa16e365f0b24887cec90e0636
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5bc514a31915792607ce958b38e25a573e67929c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752986"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908359"
 ---
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
 
@@ -74,7 +74,7 @@ AutoReport および AutoLookup フィールド グループを定義し、Excel
 現在、フィルターはこれらのオプションに追加されないため、「(フィルターなし)」という用語になります。 今後、フォームからこれらのオプションへのフィルターの適用が試行されます。 たとえば、顧客の一覧がカリフォルニア州で顧客だけにフィルター処理された場合、今後エンティティは州フィールドに対してスキャンされ、見つかるとフィルターは自動で追加されます。
 
 ## <a name="how-can-an-entity-be-added-as-an-open-in-excel-option-on-a-form-that-doesnt-share-the-same-root-datasource"></a>同じルート データソースを共有しないフォーム上で、Excel で開くオプションとしてエンティティを追加するにはどうしたらいいですか。
-生成された Excel で開くオプションは、OfficeIGeneratedWorkbookCustomExporter インターフェイスを実装することにより、任意のフォームに追加できます。 生成されたオプションをプログラムで追加するとき、一組のフィールドを明示的に指定できます。 詳細については、[インターフェイスを通じた Office で開くメニューの変更](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu#modifying-the-open-in-office-menu-through-interfaces)を参照してください。
+生成された Excel で開くオプションは、OfficeIGeneratedWorkbookCustomExporter インターフェイスを実装することにより、任意のフォームに追加できます。 生成されたオプションをプログラムで追加するとき、一組のフィールドを明示的に指定できます。 詳細については、[インターフェイスを通じた Office で開くメニューの変更](./customize-open-office-menu.md#modifying-the-open-in-office-menu-through-interfaces)を参照してください。
 
 ## <a name="what-are-the-region-specific-considerations-for-defining-entities"></a>エンティティを定義するための地域固有の考慮事項
 [Excel で開く] により生成されたエクスペリエンスは、AutoLookup グループに地域固有のフィールドを追加することで地域固有にできます。 これらの領域固有のフィールドは、生成されたワークブックに含まれます。

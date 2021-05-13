@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 11b417bc0ffbc61be2a5bcd44a2f8547dcdc5e1a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 51384548775563df07c37c4a514583dd68ecaae6
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749616"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866055"
 ---
 # <a name="extensibility-requests"></a>拡張性の要求
 

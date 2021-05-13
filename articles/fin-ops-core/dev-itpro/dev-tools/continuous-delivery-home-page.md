@@ -4,8 +4,6 @@ description: 以下のトピックでは、ソリューションのアプリケ�
 author: RobinARH
 ms.date: 10/16/2019
 ms.topic: index-page
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
 ms.custom: 189643
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706a4c7730bfb68e5a76b407a62ee08c06ac37df
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1fa6f4689f9bd8ae02adfa90b9fb1b01bec4b917
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750544"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923417"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 
@@ -36,7 +34,7 @@ ms.locfileid: "5750544"
 - [継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md)
 - [Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化](hosted-build-automation.md)
 - [テストと検証](../perf-test/testing-validation.md)
-- [コマースおよび Finance のビルド システムのマージ](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [コマースおよび Finance のビルド システムのマージ](../../../commerce/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [クラスおよびメソッドの属性を使用した SysTest フィルター処理](../perf-test/systest-filtering.md)
 - [承認テスト ライブラリのリソース](../perf-test/acceptance-test-library.md)
 

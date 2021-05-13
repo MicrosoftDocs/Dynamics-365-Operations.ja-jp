@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed48d41926c801c9017867be2eaa9af85a94b119
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f29a5014b98daa5150e01b541a076237e45ff180
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817680"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951962"
 ---
 # <a name="generate-and-process-customer-rebates"></a>顧客リベートの生成および処理
 
@@ -62,7 +62,7 @@ ms.locfileid: "5817680"
 
 ## <a name="process-rebate-claims"></a>リベート要求の処理
 1. **ナビゲーション ウィンドウ > モジュール > 販売とマーケティング > 顧客リベート > リベート** の順に移動します。
-    - [リベート] ページは、リベート要求の確認、承認、処理を行うワークベンチとして機能します。 リベート契約 USMF-000001 の対象となる顧客 US-009 の販売注文が請求された結果として、作成された請求を処理します。   
+    - リベート ページは、リベート要求の確認、承認、処理を行うワークベンチとして機能します。 リベート契約 USMF-000001 の対象となる顧客 US-009 の販売注文が請求された結果として、作成された請求を処理します。   
     - 最初の行は、製品 T0020 の 40 単位の販売に基づいて、単位ごとに 20 USD として計算された 800 USD のリベート要求を表します。 これは、リベート契約の最初の数量区分の条件と一致します。  
     - 2 番目の要求は、2,400 USD です。これは、製品 T0020 の 60 単位の販売に基づいています。また、契約の 2 番目の数量区分により、1 単位 40 USD として計算されました。  
     - 両方の請求は、"計算対象" 状態にあります。 これは、定期的に顧客の販売実績を追跡する契約に関連付けられ、対応する期間内の合計売上高の勘定を再計算する必要があることを意味します。   

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: c80b88b82888f559a6aa8c12653c716afe932ac3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5b29f73c5537b2ee53a1886c80474ef0ee413ce6
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752722"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908250"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
@@ -90,7 +90,7 @@ ms.locfileid: "5752722"
     > [!NOTE]
     > 以前のリリースで実行されている実稼働データベースのデータのアップグレードを検査する場合: 実稼働環境からデモまたは開発環境にデータベースをコピーするには [標準ユーザー受け入れテスト (UAT) データベースのコピーのエクスポート](../database/dbmovement-scenario-exportuat.md) の手順に従ってください。   
     > 
-    > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) を参照してください。
+    > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](/azure/storage/common/storage-use-azcopy-v10) を参照してください。
 
 3. 接尾語 **\_orig** を追加することによって、元のデータベースの名前を変更します。 元のデータベースと同じ名前になるように、新しく復元したデータベースの名前を変更します。 この方法で、2 つのデータベースが場所を切り替えます。
 
@@ -402,7 +402,7 @@ KB 番号 3170386 がインストールされていない場合、次のエラ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Finance and Operationsで最新の更新プログラムに移行するためのプロセス](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
+[Finance and Operationsで最新の更新プログラムに移行するためのプロセス](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

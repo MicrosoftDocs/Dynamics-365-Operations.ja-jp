@@ -2,7 +2,7 @@
 title: ビジネス イベントの概要
 description: このトピックは、外部システムが Dynamics 365 Finance and Operations アプリから通知を受信できるようにする、ビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
-ms.date: 11/03/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 4851d5e34cf548cbe3d8ee6ccfb0762b53c7bc99
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7c35eded0e83c8a0dda9ab55ce67a5104379d9a9
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752352"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940916"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 
@@ -96,31 +96,31 @@ Azure ベースのエンドポイントは、顧客の Azure サブスクリプ�
 
 新しいエンドポイントを作成するには、**新規作成** を選択します。 次に、**エンドポイントの種類** フィールドで、適切なエンドポイントの種類を選択します。 Service Bus キューにエンドポイントを作成するには、**Azure Service Busキュー** を選択します。
 
-![ビジネス イベントの新規エンドポイント](../media/businesseventsnewendpoint1.png)
+![Service Bus キューにエンドポイントを作成するには、**Azure Service Bus キュー**を選択します](../media/businesseventsnewendpoint1.png)
 
 **次へ** を選択し、エンドポイントおよび Service Busキューの名前を指定します。 また、Azure メッセージング リソースにシークレットを提供するために、Azure Key Vault を設定する必要があります。 また、Azure Active Directory (Azure AD) アプリケーション ID およびアプリケーション シークレットを設定する必要があります。
 
-![ビジネス イベントの新規エンドポイント](../media/businesseventsnewendpoint2.png)
+![エンドポイントおよび Service Bus キューの名前を指定](../media/businesseventsnewendpoint2.png)
 
 **キュー名** フィールドに、Azure の Azure Service Bus キューの構成で作成した **Azure Service Bus キュー** 名を入力します。  
 
-![ビジネス イベント キュー名](../media/BusinessEventsSBQueueName.PNG)
+![Azure の Azure Service Bus キュー構成で作成した **Azure Service Bus キュー**名を入力](../media/BusinessEventsSBQueueName.PNG)
 
 **Azure Active Directory アプリケーションID** フィールドに、Azure ポータルの Azure AD で作成されたアプリケーションIDを入力します。
 
-![ビジネス イベントの Azure AD のコンフィギュレーション](../media/businesseventsaad1.png)
+![Azure ポータル の Azure ADで作成されたアプリケーション ID を入力](../media/businesseventsaad1.png)
 
 **Azure アプリケーション シークレット** フィールドに、アプリケーションのシークレット値を入力します。
 
-![ビジネス イベントの Azure AD のコンフィギュレーション](../media/businesseventsaad2.png)
+![アプリケーションのシークレットの値を入力](../media/businesseventsaad2.png)
 
 **Key Vault DNS 名** フィールドに、Key Vault設定名を入力します。
 
-![ビジネス イベントの Azure Key Vault のコンフィギュレーション](../media/businesseventskeyvault1.png)
+![Key Vault の設定から名前を入力](../media/businesseventskeyvault1.png)
 
 **Key Vault シークレット名** フィールドに、Key Vaultに作成する必要があるエンドポイント リソースのシークレット名を入力します。
 
-![ビジネス イベントの Azure Key Vault のコンフィギュレーション](../media/businesseventskeyvault2.png)
+![Key Vault で作成されたエンドポイント リソースのシークレット名を入力](../media/businesseventskeyvault2.png)
 
 Azure では、**Key Vault シークレット** の値は Azure Service Busの **プライマリ接続文字列** の値になります。 この値は **共有アクセス ポリシー > RootManagedSharedAccessKey** で構成した Azure Service Bus で確認できます。
 
@@ -195,14 +195,14 @@ Key Vault の情報は、Azure Service Bus キュー エンドポイントの設
 - ビジネス イベントは Power Automate、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用して消費できます。
 - Power Automate、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用するには、顧客は独自の購読を提供する必要があります。
 - ビジネス イベントは、すべての法人または特定の法人で有効化できます。
-- ビジネス イベントは、一意のエンドポイントまたは同一のエンドポイントに送信できます。
+- ビジネス イベントは、一意のエンドポイントまたは複数のエンドポイントに送信できます。
 - Power Automate はビジネス イベントを直接購読できます。
 
 ## <a name="idempotency"></a>べき等
 ビジネス イベントはペイロードに管理番号を含めることで消費側でべき等の動作を有効にします。 制御番号は増加する番号であり、重複や故障出荷を検出するために消費アプリケーションによって追跡できます。 制御番号は連番にできないため、順序番号と読み間違えられることはありません。 番号付けスペースに間隔がある可能性があります。
 
 ## <a name="filtering-in-azure-event-grid-and-azure-service-bus"></a>Azure Event Grid と Azure Service Bus でのフィルター処理
-Azure Service Bus と Azure Event Grid は受信メッセージの条件を指定してトピックの購読をサポートします。 詳細については [トピック フィルターとアクション](https://docs.microsoft.com/azure/service-bus-messaging/topic-filters) および [イベント グリッド購読のイベント フィルターを理解する](https://docs.microsoft.com/azure/event-grid/event-filtering) を参照してください。
+Azure Service Bus と Azure Event Grid は受信メッセージの条件を指定してトピックの購読をサポートします。 詳細については [トピック フィルターとアクション](/azure/service-bus-messaging/topic-filters) および [イベント グリッド購読のイベント フィルターを理解する](/azure/event-grid/event-filtering) を参照してください。
 
 Azure Service Bus や Azure Event Grid に送信されるビジネス イベントは、この目的で使用できる次のフィールドを持ちます。 購読者はこの情報を使用して、必要に応じてさらに特定のトピックを購読できます。
 
@@ -216,7 +216,7 @@ Azure Service Bus や Azure Event Grid に送信されるビジネス イベン�
 > ビジネス イベントで送信されるフィルター処理可能フィールドは、カスタムフィールドを含むように変更できます。 これは開発者向けの環境です。
 
 ## <a name="role-based-security-for-business-events"></a>ビジネス イベントのロールベース セキュリティ
-プラットフォーム更新 29 以降、ロールベース セキュリティをビジネス イベントに適用して、適切なセキュリティ コンポーネントを使用して以下の要件を満たすことができます。
+ロールベース セキュリティはビジネス イベントに適用され、適切なセキュリティ コンポーネントを使用して以下の要件を満たすことができます。
 
 | **必要量**                                                                                                                                | **権限**                                 | **関税**                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------|
@@ -253,7 +253,7 @@ Azure Service Bus や Azure Event Grid に送信されるビジネス イベン�
 
 ### <a name="backward-compatibility"></a>下位互換性
 
-プラットフォーム更新プログラム 29 より前のバージョンとビジネス イベントの下位互換性を確保するには、次の動作を理解する必要があります。
+下位互換性を確保するには、次の動作を理解する必要があります。
 
 -   ビジネス イベントのロールベースのセキュリティは既定で無効になります。
 

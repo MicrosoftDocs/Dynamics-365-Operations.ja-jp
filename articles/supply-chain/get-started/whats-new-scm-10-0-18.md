@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.18 のプレビュー (2021 年 5 月)
+title: Dynamics 365 Supply Chain Management バージョン 10.0.18 (2021 年 5 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.18 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 03/01/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
+ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909356"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934970"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Dynamics 365 Supply Chain Management 10.0.18 のプレビュー (2021 年 5 月)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Dynamics 365 Supply Chain Management バージョン 10.0.18 (2021 年 5 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、バージョン 10.0.18 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.793 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.18 の新機能または変更された機能について列挙します。 このバージョンには 10.0.793 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 3 月
 - **リリースの一般提供 (自己更新):** 2021 年 4 月
@@ -43,9 +42,17 @@ ms.locfileid: "5909356"
 
 - [リベート管理](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - 詳細については、[リベート管理モジュールの概要](../rebate-management/rebate-management-overview.md) を参照してください
 
+- [販売データ エンティティのエクスポート設定ポリシー](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [CW を使用する場合と使用しない場合の小数点以下の精度での販売返品注文明細行の登録](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [1 度クリックして販売注文を確認](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [販売注文から発注書に対する明細行の削除ポリシー](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
 - 出勤と退勤のみの簡略化されたインターフェイス ( [製造用の強化された生産フロア実行インターフェイス](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) 機能拡張)<br> - 詳細情報については、[生産現場の実行インターフェースを構成する](../production-control/production-floor-execution-configure.md) を参照してください。
 
-これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。 
+これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 ## <a name="new-and-updated-documentation-resources"></a>新しいドキュメント リソースおよび更新されたドキュメント リソース
 

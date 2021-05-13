@@ -2,7 +2,7 @@
 title: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 description: このトピックでは、複数の LCS プロジェクトと実稼動環境を同じ Azure Active Directory テナント上に実装する方法について説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 07/14/2020
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 1be533dda374e050b2fa60331e7c9506f1c9d954
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f3695521289cb9640a4772065303530e51d12fb5
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749185"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906689"
 ---
 # <a name="multiple-lcs-projects-and-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 
@@ -28,7 +28,7 @@ ms.locfileid: "5749185"
 - 移住地や待機時間のデータまたはデータ量のグローバル実装の要件は、1 つのインスタンスでは満たされません。
 - 組織内の異なる部署は、製品を独立したアプリケーションとして個別に実行しています。
 
-Microsoft Dynamics サービス エンジニアリング (DSE) チームによる手動操作は、共有 Azure AD テナントで追加の LCS プロジェクトを作成するために必要になります。 このアプローチは、単一インスタンスの戦略が本当に実現可能でない場合にのみ使用する必要があります。 追加の LCS プロジェクトを作成する前に、業務の妥当性を指定し、アプローチのすべての影響を理解していることを確認する必要があります。 このプロセスは、可能な限り実装ライフサイクルの早い段階で開始する必要があります。 続行する場合は、追加の LCS プロジェクトを必要としているプロジェクトに誰が割り当てられているかを、FastTrack ソリューション アーキテクトに通知する必要があります。 ソリューション アーキテクトがプロジェクトに割り当てられていない場合、顧客は、サポート チケットを開く必要があります。
+Microsoft Dynamics サービス エンジニアリング (DSE) チームによる手動操作は、共有 Azure AD テナントで追加の LCS プロジェクトを作成するために必要になります。 このアプローチは、単一インスタンスの戦略が本当に実現可能でない場合にのみ使用する必要があります。 追加の LCS プロジェクトを作成する前に、業務の妥当性を指定し、アプローチのすべての影響を理解していることを確認する必要があります。 このプロセスは、可能な限り実装ライフサイクルの早い段階で開始する必要があります。 続行を決定した顧客は、既存の LCS プロジェクトを介してサポート チケットを開く必要があります。
 
 ## <a name="licensing-requirements"></a>ライセンス要件
 
@@ -70,7 +70,7 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 - 同じ Azure AD テナントにおける、複数の LCS プロジェクトの影響を、顧客が理解していることを確認します。
 
 ## <a name="online-deployments-in-china-sovereign-cloud"></a>中国の主権クラウドにおけるオンラインの展開
-中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン導入が 2019 年 4 月より中国本土で利用可能になったと伝えています。 詳細については、[中国で 21Vianet が運用する Finance and Operations アプリ](../../dev-itpro/deployment/china-local-deployment.md)を参照してください。 この配置は、中国における規制要件に準拠するように設計されており、サービスには 21Vianet が運営およびトランザクション処理する別のテナント (Azure Active Directory) を持つクラウド サービスのインスタンスが、物理的に分離されています。 
+中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン導入が 2019 年 4 月より中国本土で利用可能になったと伝えています。 詳細については、[Finance and Operations アプリ - 中国で 21Vianet が運用](../../dev-itpro/deployment/china-local-deployment.md) を参照してください。 この配置は、中国における規制要件に準拠するように設計されており、サービスには 21Vianet が運営およびトランザクション処理する別のテナント (Azure Active Directory) を持つクラウド サービスのインスタンスが、物理的に分離されています。 
 
 これは、別のテナント (Azure Active Directory) を持つ複数のクラウドの単一組織です。 上記のように、マルチ Lifecycle Services プロジェクトまたは運用環境におけるメリットとデメリットは引き続き適用されますが、ライセンス要件と要求の手順は異なります。 あらゆるプロセス支援において、Microsoft Account Executive または実装パートナーと協力します。
 

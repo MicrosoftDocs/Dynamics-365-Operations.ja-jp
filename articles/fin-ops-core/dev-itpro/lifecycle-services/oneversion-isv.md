@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 72fa5e2e36894a1a1ef61fa63312ef5449f58523
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 562f2a0d7d50253401eb3429b23a4d5744e98bea
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750540"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920975"
 ---
 # <a name="delivering-isv-solutions-using-one-version"></a>1 つのバージョンを使用した ISV ソリューションの提供
 
@@ -187,7 +187,7 @@ Microsoft には検証をサポートする広範なテスト スイートがあ
 
 テストが成功した場合、このステップは Microsoft が新しいリリースを顧客に配信するときに、現在のバージョンの ISV ソリューションの顧客インストールを更新する必要がないことを検証します。
 
-テストに成功しなかった場合、ISV として [PEAP コミュニケーション プロセス](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に直ちに通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。 この問題には Microsoft による修正か、または独自の ISV ソリューションの修正が必要です。 ソリューションの修正は顧客をサービス分枝から順番に更新する必要があります。 どちらの場合も、Microsoft は問題について知る必要があります。そのため今後のリリースに向けて、より積極的なプロセスをとる場合があります。
+テストに成功しなかった場合、ISV として [PEAP コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に直ちに通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。 この問題には Microsoft による修正か、または独自の ISV ソリューションの修正が必要です。 ソリューションの修正は顧客をサービス分枝から順番に更新する必要があります。 どちらの場合も、Microsoft は問題について知る必要があります。そのため今後のリリースに向けて、より積極的なプロセスをとる場合があります。
 
 ### <a name="currently-released-products--testing-design-time-compatibility"></a>現在リリースされている製品 - デザイン時の互換性のテスト
 
@@ -197,7 +197,7 @@ ISV ソリューションに対する一連の自動化開発者テスト、自�
 
 テストが成功した場合、ソースコードが顧客に提供され、顧客が ISV ソリューションを再コンパイルしても、このステップは ISVソリューションを更新する必要がないことを検証します。
 
-テストが成功せず、その問題が [重大な変更](../extensibility/breaking-changes.md) に記載されているカテゴリに該当しない場合、ISV として直ちに [PEAP コミュニケーション プロセス](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。 この問題には Microsoft による修正か、または独自の ISV ソリューションの修正が必要です。 ソリューションの修正は顧客をサービス分枝から順番に更新する必要があります。 どちらの場合も、Microsoft は問題について知る必要があります。そのため今後のリリースに向けて、より積極的なプロセスをとる場合があります。
+テストが成功せず、その問題が [重大な変更](../extensibility/breaking-changes.md) に記載されているカテゴリに該当しない場合、ISV として直ちに [PEAP コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。 この問題には Microsoft による修正か、または独自の ISV ソリューションの修正が必要です。 ソリューションの修正は顧客をサービス分枝から順番に更新する必要があります。 どちらの場合も、Microsoft は問題について知る必要があります。そのため今後のリリースに向けて、より積極的なプロセスをとる場合があります。
 
 ### <a name="currently-released-products--updating-the-base-build"></a>現在リリースされている製品 - 基本ビルドの更新
 
@@ -207,7 +207,7 @@ Microsoft が顧客を新しいリリースに更新するときは、ISV ソリ
 
 最新のリリース バージョン、または新しいリリースが終了したときにサービスに使用する予定のリリース バージョンで、新しいソリューション開発を検証します。ただし、どちらの場合にも最新バージョンでの検証をご検討ください。 この検証は問題の早期発見や必須の作業を理解するのに役立ちます。
 
-予期せぬ中断が発生した場合は、ISV として [PEAP コミュニケーション プロセス](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に直ちに通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。
+予期せぬ中断が発生した場合は、ISV として [PEAP コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に直ちに通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。
 
 ## <a name="deploying-updates"></a>更新の展開
 

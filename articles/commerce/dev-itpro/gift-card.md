@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: df50170f3ca00e5055a6f3683c4430aa160f000a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0ca628bfc268335608f1740209d9c411127216fd
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797221"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936818"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
@@ -162,6 +162,22 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
 > [!NOTE]
 > コール センターおよびストアフロントの外部ギフト カード サポートは、**機能管理** ワークスペースで有効になっています。 **オムニ チャネル支払** を有効にし、**詳細な外部ギフト カードの有効** を有効をにします。 ストアフロントで外部ギフト カードを設定するのに必要な追加手順については、[eコマース デジタル ギフト カード](../digital-gift-cards.md)専用のドキュメント記事を参照してください。 
+> 
+#### <a name="adyen-external-gift-card-setup"></a>Adyen 外部ギフト カードの設定
+
+支払サービスの設定方法を示す例については、[Adyen 支払コネクタのドキュメント](adyen-connector.md?tabs=8-1-3) を参照してください。
+
+コール センターとストアフロントに関しては、Adyen コネクタは次のギフト カードをサポートします。
+
+| ブランド   | ギフト カード タイプ   | サポート | アクティブ化       |
+|---------|------------------|-----------|------------------|
+| SVS     | 現物         | はい       | 手動         | 
+| SVS     | メール            | あり       | プログラム化 |
+| Givex   | 現物         | あり       | 手動         |
+
+> [!NOTE]
+>  この時点で、オンライン注文で発行できるのは、「電子メール」タイプのギフト カードのみです。 標準の Adyen コネクタでは、既定でギフト カードがコンフィギュレーションされません。 支払コネクタの商社プロパティでギフト カード プロバイダーを指定するには、[Adyen 支払コネクタのドキュメント](adyen-connector.md?tabs=8-1-3)の手順に従ってください。
+
 
 ### <a name="tokenization"></a>トークン化
 
@@ -236,20 +252,6 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
 外部のギフト カードの処理に Adyen を使用するようオンライン ストアの支払口座をコンフィギュレーションするには、Adyen コネクタ用ドキュメントの [eコマース設定セクション](adyen-connector.md?tabs=8-1-3#e-commerce)を参照してください。 
 
-#### <a name="adyen-external-gift-card-setup"></a>Adyen 外部ギフト カードの設定
-
-支払サービスの設定方法を示す例については、[Adyen 支払コネクタのドキュメント](adyen-connector.md?tabs=8-1-3) を参照してください。
-
-コール センターとストアフロントに関しては、Adyen コネクタは次のギフト カードをサポートします。
-
-| ブランド   | ギフト カード タイプ   | サポート | アクティブ化       |
-|---------|------------------|-----------|------------------|
-| SVS     | 現物         | はい       | 手動         |
-| SVS     | 電子メール            | はい       | プログラム化 |
-| Givex   | 現物         | はい       | 手動         |
-
-> [!NOTE]
-> 標準の Adyen コネクタでは、既定でギフト カードがコンフィギュレーションされません。 支払コネクタの商社プロパティでギフト カード プロバイダーを指定するには、[Adyen 支払コネクタのドキュメント](adyen-connector.md?tabs=8-1-3)の手順に従ってください。
 
 #### <a name="test-connector-external-gift-card-setup"></a>テスト コネクタの外部ギフト カードの設定
 
@@ -283,17 +285,17 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
     ![電子的方法による納品](media/EmailMoD.png)
 
-19. 出荷の荷渡方法を選択してから、**現物** ギフト カード バリアントを追加します。
-20. **保存** を選択します。
-21. **配送モードの処理** を検索して、**配送モードの処理** ダイアログ ボックスを開きます。
-22. **OK** を選択します。
+19. **保存** を選択します。
+20. **配送モードの処理** を検索して、**配送モードの処理** ダイアログ ボックスを開きます。
+21. **OK** を選択します。
 
     > [!NOTE]
     > 現在、ギフト カードは MPOS 顧客注文の作成または店舗内での受取に対してはサポートされていません。
+    > 電子商取引注文の一部として発行されるギフト カードは、**電子メール** モードの配送のみを使用できます。 これらのギフト カードには、物理的な配送モードをマッピングすることはできません。 
 
-23. **カテゴリ別リリース済製品** を検索して、**リリース済製品の詳細** ページを開きます。
-24. 外部ギフト カード品目を選択します。
-25. 次の値を設定します。
+22. **カテゴリ別リリース済製品** を検索して、**リリース済製品の詳細** ページを開きます。
+23. 外部ギフト カード品目を選択します。
+24. 次の値を設定します。
 
     | クイックタブ           | フィールド               | Value                 |
     |-------------------|-------------------- |-----------------------|
@@ -304,7 +306,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
     | 在庫の管理  | 在庫単位      | ea                    |
     | 原価の管理      | 品目グループの天気  | 任意                   |
 
-26. **保存** を選択します。
+25. **保存** を選択します。
 
 ストアフロントでは、店舗の品揃えにもギフト カードを含める必要があります。 詳細については、[品揃え管理](../assortments.md) を参照してください。
 
@@ -314,7 +316,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
 ### <a name="set-up-notification-emails-for-virtual-gift-cards"></a>仮想ギフトカードの通知電子メールの設定
 
-電子メール設定の詳細については、[電子メール機能のコンフィギュレーション](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax) を参照してください。
+電子メール設定の詳細については、[電子メール機能のコンフィギュレーション](/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax) を参照してください。
 
 コマース用電子メール通知の設定方法の詳細については、[電子メール通知プロファイルの設定](../email-notification-profiles.md) を参照してください。
 
@@ -380,28 +382,6 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 5. **OK** を選択します。
 6. **送信** を選択して、注文を完了します。
 
-## <a name="troubleshooting"></a>トラブルシューティング 
-
-### <a name="issue-an-error-occurs-when-you-start-the-hardwarestationconfigurationutility-program"></a>問題: HardwareStationConfigurationUtility プログラムの起動時にエラーが発生します
-
-1. 上位のコマンド プロンプトからは、メモ帳で **HardwareStationConfigurationUtility.exe.config** ファイルを開きます。
-2. ファイルで、次の手順に従います。
-
-    1. **DataServiceUrl** 値を適切な Commerce Scale Unit URL に置き換えます。
-    2. **AADLogonUrl** の値が正しいことを確認します。
-
-3. ファイルを保存して閉じます。
-4. ユーティリティを再起動します。
-
-### <a name="issue-a-token-error-occurs-when-you-try-to-pair-virtual-peripherals"></a>問題: 仮想周辺機器をペアリングしようとしたときにトークン エラーが発生します
-
-1. MPOS を終了します。
-2. **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Hardware Station\\Package** に移動します。
-3. 上位のコマンド プロンプトからは、メモ帳で **Web.config** ファイルを開きます。
-4. **RetailServer** 値を適切な Commerce Scale Unit 値に置き換えます。
-5. ファイルを保存して閉じます。
-6. MPOS を再起動します。
-7. 問題が解消しない場合は、MPOS を終了し、タスク マネージャーを使用して、実行中の dllhost.exe インスタンスを終了させ、インターネット インフォメーション サービス (IIS) のリセットを別に行います。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

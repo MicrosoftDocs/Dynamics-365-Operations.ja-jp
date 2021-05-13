@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a821386281e7e41ee8d17afa49780b801d44ba83
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1fb91d15b7c013d8084e4d714a53099de8cf93da
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744141"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908170"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 
@@ -139,8 +139,8 @@ Microsoft Dynamics AX 2012 ロール センターは、アクティビティに�
 
 ### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [MSDN ロール センター ページ参照 \[AX 2012\]](https://msdn.microsoft.com/library/cc558235.aspx)
--   [MSDN ロール センター ユーザー エクスペリエンス ガイドライン \[AX 2012\]](https://msdn.microsoft.com/library/gg886608.aspx)
+-   [MSDN ロール センター ページ参照 \[AX 2012\]](/dynamicsax-2012/developer/role-center-page-reference)
+-   [MSDN ロール センター ユーザー エクスペリエンス ガイドライン \[AX 2012\]](/dynamicsax-2012/developer/role-center-user-experience-guidelines)
 
 ### <a name="ax-2012-example"></a>AX 2012 の例
 

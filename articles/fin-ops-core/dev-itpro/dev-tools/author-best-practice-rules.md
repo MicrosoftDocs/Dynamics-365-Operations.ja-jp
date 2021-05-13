@@ -4,8 +4,6 @@ description: このトピックでは、メタデータと X++ コードの両�
 author: pvillads
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 48071
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb7c00071099d03a8d5554de5690caec4d559e8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fd19ae4fc02d4cedd731d4a7e60d10c476129a7d
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750368"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865952"
 ---
 # <a name="write-best-practice-rules"></a>ベスト プラクティス ルールを記述する
 

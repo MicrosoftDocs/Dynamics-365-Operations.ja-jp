@@ -4,8 +4,6 @@ description: このチュートリアルでは、開発者が X++ 言語の高�
 author: pvillads
 ms.date: 11/25/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 26801
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31120328aa5668599ace07860b1025d2ecfe0b73
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7ec9ed420cef8c604348337327d9678b716e1e2d
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751368"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866098"
 ---
 # <a name="x-and-debugger-features"></a>X++ およびデバッガーの機能
 

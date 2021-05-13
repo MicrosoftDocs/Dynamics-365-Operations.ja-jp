@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 21
-ms.openlocfilehash: 482534e0fc1b124f212a12a6a7c270689b3c731b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: beddf724556c155e0d2d0ea1b5847e7ea667e492
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752224"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923273"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-21-november-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 11 月) の新機能および変更された機能
 
@@ -31,7 +31,7 @@ ms.locfileid: "5752224"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2018 年 10 月リリース ノートを確認](https://go.microsoft.com/fwlink/?linkid=870424). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2018 年 10 月リリース ノートを確認](/dynamics365/release-plans/). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ## <a name="bug-fixes"></a>バグ修正
 
@@ -39,7 +39,7 @@ ms.locfileid: "5752224"
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-リリース ノートには、[2018 年 10 月リリースのプラットフォーム拡張機能の 2 番目の波](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility2)に関する情報が含まれています。これは、プラットフォーム更新 21 に付属しています。 11 個の拡張機能が詳細に説明されており、ハイライトの 1 つは、標準例外処理を容易にするため、try-finally ブロック内のコマンド メソッド チェーン内に次の呼び出しを配置する新しい機能です。
+リリース ノートには、[2018 年 10 月リリースのプラットフォーム拡張機能の 2 番目の波](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility2)に関する情報が含まれています。これは、プラットフォーム更新 21 に付属しています。 11 個の拡張機能が詳細に説明されており、ハイライトの 1 つは、標準例外処理を容易にするため、try-finally ブロック内のコマンド メソッド チェーン内に次の呼び出しを配置する新しい機能です。
 
 ## <a name="transientsqlconnectionerror-x-exception"></a>TransientSqlConnectionError X++ 例外
 
@@ -67,7 +67,7 @@ Finance and Operations の多くのグリッドで *既定のアクション* �
 
 既定の付箋アクションがオンになると、既定のアクション ハイパーリンクは、フォームに適用される個人用設定に関係なく同じ列になります。 つまり、この顧客リストについて、**アカウント** 列が移動されるか非表示になるか関係なく、**アカウント** 列は引き続き既定のアクション列です。
 
-![既定の付箋アクションがオフ](media/stickyDAOn.png "既定の付箋アクションがオンになると、アカウント列は個人用設定にかかわらず既定のアクション列です。")
+![既定の付箋アクションがオン](media/stickyDAOn.png "既定の付箋アクションがオンになると、アカウント列は個人用設定にかかわらず既定のアクション列です。")
 
 プラットフォーム更新 21 では、既定の付箋アクション機能がオフですが、システム管理者が環境で有効にできます。 この機能を有効にするには、**システム管理** で **クライアント パフォーマンス オプション** ページに移動し、**既定の付箋アクションを有効にする** オプションを見つけます。
 

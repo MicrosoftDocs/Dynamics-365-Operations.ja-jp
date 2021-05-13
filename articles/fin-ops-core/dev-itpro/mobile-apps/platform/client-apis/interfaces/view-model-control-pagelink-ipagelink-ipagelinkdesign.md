@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 989d469dbbcc052346e758d25f8af9238fcf9249
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9ba36fa48e4c7a2859141b3abe359372f6f89eb6
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744721"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909270"
 ---
 # <a name="pagelinkdesign-type"></a>PageLinkDesign タイプ
 
@@ -178,7 +178,7 @@ hideArrow: boolean (省略可)
 icon: string (省略可) 
 
 ページリンク コントロールに表示されるアイコンの名前。
-次に [利用可能なアイコンの一覧](https://docs.microsoft.com/dynamics/s-e/) を示します。
+次に [利用可能なアイコンの一覧](/dynamics/s-e/) を示します。
 
 
 ### <a name="justifyitems"></a>justifyItems

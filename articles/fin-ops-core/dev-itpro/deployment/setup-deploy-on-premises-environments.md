@@ -14,12 +14,12 @@ ms.custom: NotInToc
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d60c3e77505cdcb005b78e65d99a416b78d91d34
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9969a458b1fc11aae0b51e2474b5dd56a3eeca83
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745315"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923261"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-home-page"></a>オンプレミス環境の設定と配置ホーム ページ
 
@@ -29,7 +29,7 @@ ms.locfileid: "5745315"
 
 セットアップ手順については、以下を参照してください。 
 - [オンプレミス環境の設定と配置 (Platform update 12 以降)](setup-deploy-on-premises-pu12.md)
-- [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)](setup-deploy-on-premises-pu8-pu11.md)
+- [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)](./setup-deploy-on-premises-pu12.md)
 
 
 > [!NOTE]

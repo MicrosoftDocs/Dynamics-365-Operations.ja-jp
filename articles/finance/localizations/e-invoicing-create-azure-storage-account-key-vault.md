@@ -2,7 +2,7 @@
 title: Azure ストレージ アカウントとキー コンテナーの作成
 description: このトピックでは、Azure ストレージ アカウントとキー コンテナーを作成する方法について説明します。
 author: gionoder
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893805"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963242"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure ストレージ アカウントとキー コンテナーの作成
 
@@ -80,6 +80,10 @@ ms.locfileid: "5893805"
 11. **追加** を選択し、**キー コンテナーの変更を保存する** を選択します。
 12. **概要** ページで、 キー コンテナーの **DNS 名** の値をコピーして保存します。 この値は、RCS におけるサービスの設定時に使用され、*キー コンテナーの URI* として参照されます。
 
+> [!NOTE]
+> ストレージ アカウントのセキュリティを追加するには、Azure Defender For Storage を構成します。
+> 
+> 詳細については、[Azure Defender for Storage の概要](/azure/security-center/defender-for-storage-introduction) を参照してください。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

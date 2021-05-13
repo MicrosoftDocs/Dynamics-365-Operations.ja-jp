@@ -1,8 +1,8 @@
 ---
-title: セルフサービス コンポーネントの一括配置
+title: レガシ セルフサービス コンポーネントの一括配置
 description: このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。
 author: jashanno
-ms.date: 06/02/2020
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 41c6fd30a33a27fd513b0864755e73684de22177
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 369d60cdb1ba84c35f38e7a28c1bbac41f0a19b3
+ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794331"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5864338"
 ---
-# <a name="mass-deployment-of-self-service-components"></a>セルフサービス コンポーネントの一括配置
+# <a name="mass-deployment-of-legacy-self-service-components"></a>レガシ セルフサービス コンポーネントの一括配置
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。 このトピックは、機能が開発され、より多くの機能が利用可能になると更新されます。 現在、サイレント サービス更新の機能のみが利用可能です。
+このトピックは、レガシ セルフサービス インストーラーに対応しています。 レガシ セルフサービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。 このトピックは、機能が開発され、より多くの機能が利用可能になると更新されます。 現在、サイレント サービス更新の機能のみが利用可能です。 
 
 ## <a name="delimiters-for-mass-deployment"></a>一括配置の区切り記号
 
@@ -38,7 +38,7 @@ ms.locfileid: "5794331"
 | -LogFile                  | インストール ログのカスタム ファイルの場所を指定します。<p>標準のインストールにこの区切り記号を使用することをお勧めしません。</p> |
 | -SkipPrerequisiteCheck    | 前提条件および必須コンポーネントのインストールのチェックをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
 | -SkipSystemInfoCollection | インストールの開始時にシステム情報を収集するプロセスをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
-| -SkipMerchantInfo         | ハードウェア ステーションのセルフ サービス インストーラーの終わりにマーチャント アカウント情報のインストールをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
+| -SkipMerchantInfo         | ハードウェア ステーションのレガシ セルフサービス インストーラーの終わりにマーチャント アカウント情報のインストールをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
 | -SkipAppxInstallation     | Dynamics 365 の2018 年 10 月のリリースから、この区切り記号は APPX Retail Modern POS アプリケーションのインストールをスキップします。 この区切り記号は、システム アカウントまたはサービス アカウント (ユーザー プロファイルがないアカウント) を使用してアプリケーションのインストールを実行するために必要です。 |
 
 ## <a name="silent-servicing"></a>サイレント サービス
@@ -49,7 +49,7 @@ ms.locfileid: "5794331"
 
 ### <a name="examples-of-commands-for-silent-servicing"></a>サイレント サービスのコマンド例
 
-このセクションでは、セルフサービスの大量展開に使用されるコマンドの例を示します。 これらのコマンドは、Modern POS (オフラインでサポートされているインストーラーとオフラインでサポートされていないインストーラーの両方) 用インストーラー、ハードウェア ステーション、Commerce Scale Unit (自己ホスト) など、すべての標準セルフサービス インストーラーで動作します。
+このセクションでは、レガシ セルフサービスの大量展開に使用されるコマンドの例を示します。 これらのコマンドは、Modern POS (オフラインでサポートされているインストーラーとオフラインでサポートされていないインストーラーの両方) 用インストーラー、ハードウェア ステーション、Commerce Scale Unit (自己ホスト) など、すべての標準インストーラーで動作します。
 
 #### <a name="silently-update-the-current-installation-of-modern-pos"></a>Modern POS の現在のインストールをサイレントに更新
 
@@ -78,7 +78,7 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 ### <a name="examples-of-commands-for-silent-mass-deployment"></a>サイレント マス展開のコマンド例
 
-このセクションでは、Modern POS のセルフサービスの一括配置に使用されるコマンドの例を示します。オフラインでの Modern POS およびオフライン サポートのないインストーラ―も含まれます。 Windows PowerShell スクリプトの例では、ユーザーがインストールを実行する支援も含まれます。
+このセクションでは、Modern POS、オフラインでの Modern POS およびオフライン サポートのないインストーラーのレガシ セルフサービスの一括配置に使用されるコマンドの例を示します。 Windows PowerShell スクリプトの例では、ユーザーがインストールを実行する支援も含まれます。
 
 #### <a name="silently-install-modern-pos"></a>Modern POS をサイレント インストール
 

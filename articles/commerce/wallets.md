@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fb47a536615e1d166c45c77233671adfbd07fd61
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1007df0751b665dc7b0eae6eb2f31f1b18664c76
+ms.sourcegitcommit: d02ab79c18200cbccbab6c57aad396ef0b3838d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791571"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857956"
 ---
 # <a name="wallet-payment-support"></a>Wallet 支払サポート
 
@@ -66,6 +66,9 @@ ms.locfileid: "5791571"
 プロセッサの支払方法をカードまたはウォレットにマップするには、カードまたはウォレットを選択し、プロセッサ支払方法を選択して、**追加** を選択します。 プロセッサ支払方法が **マップ済み** 列に移動します。 一致する支払承認を受け取ると、選択したカードまたはウォレットにマッピングされます。
 
 ![マップ済みのプロセッサ支払方法](media/Payments/Mapped.png)
+
+> [!NOTE]
+> **プロセッサの支払方法のマッピング** 機能により、チャネル データベースに同期する必要がある新しいテーブルを追加します。 このデータを Commerce スケジューラに追加するには、Commerceスケジューラを初期化する必要があります。 詳細については、[commerce スケジューラのコンフィギュレーションの更新](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/cdx-best-practices#updating-configurations) に関連するドキュメントを参照してください。 
 
 ### <a name="when-not-to-use-processor-payment-method-mapping"></a>プロセッサ支払方法のマッピングを使用しない場合
 

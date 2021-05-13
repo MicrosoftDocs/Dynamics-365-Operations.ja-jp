@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 042cefb9fa659ad9511b48365d22fa878b5874bc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5340774a48735e7d5bf31638e99904a29d480b00
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751448"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941180"
 ---
 # <a name="initialize-company-data"></a>会社データの初期化
 
@@ -30,7 +30,7 @@ ms.locfileid: "5751448"
 
 ビジネス データを持つ既存の Microsoft Dataverse インスタンスまたは Finance and Operations アプリ インスタンスを所有している場合、それに対してデュアル書き込み接続を有効にすることをお勧めします。 この場合は、デュアル書き込みを有効にする前に、会社情報を使用して Dataverse データまたは Finance and Operations アプリ データを初期化する必要があります。 この初期化プロセスは、*bootstrapping* と呼ばれる場合があります。
 
-このトピックには、デュアル書き込み用 Dataverse のデータを初期化するために、[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) の使い方をを説明するサンプル シナリオが含まれます。 すべてのテーブル、エラー処理のシナリオ、またはルックアップについては説明しません。 照会としてこのトピックとテンプレートを使用し、独自の Azure Data Factory パイプラインを設定して、データを Dataverse にインポートまたは  Dataverse に更新します。
+このトピックには、デュアル書き込み用 Dataverse のデータを初期化するために、[Azure Data Factory](/azure/data-factory/introduction) の使い方をを説明するサンプル シナリオが含まれます。 すべてのテーブル、エラー処理のシナリオ、またはルックアップについては説明しません。 照会としてこのトピックとテンプレートを使用し、独自の Azure Data Factory パイプラインを設定して、データを Dataverse にインポートまたは  Dataverse に更新します。
 
 ## <a name="high-level-scenario"></a>高レベルのシナリオ
 
@@ -55,8 +55,8 @@ Finance and Operations アプリに **顧客** テーブル、および Datavers
 ## <a name="prerequisites"></a>必要条件
 
 - **Azure の定期売買** – 既存の Azure 定期売買に対する **貢献者のアクセス** があります。 Azure 定期売買をお持ちでない場合は、開始前に[フリー Azure アカウント](https://azure.microsoft.com/free/) を作成してください。
-- **Azure Storage アカウント** – Azure Srage アカウントがあります。 ストレージ アカウントを持っていない場合は、[Azure Storage アカウントを作成](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) の手順に従ってください。
-- **Azure データ ファクトリ** – [データ ファクトリを作成](https://docs.microsoft.com/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory) の手順に従い Azure Data Factory のリソースを作成します。
+- **Azure Storage アカウント** – Azure Srage アカウントがあります。 ストレージ アカウントを持っていない場合は、[Azure Storage アカウントを作成](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) の手順に従ってください。
+- **Azure データ ファクトリ** – [データ ファクトリを作成](/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory) の手順に従い Azure Data Factory のリソースを作成します。
 - **Finance and Operations アプリ**  – データ管理フレームワークを使用して、CSV 形式でデータをエクスポートします。 詳細については、 [データ管理の概要](../data-entities-data-packages.md) を参照してください。 このテンプレートでは、顧客が **CustCustomerV3Entity** テーブルを使用してエクスポートされます。
 - **Dynamics 365 Dataverse** – Dataverse 管理者ユーザーの認証情報を使い、データを初期化します。
 - **デュアル書き込み** – デュアル書き込みソリューションがインストールされ、初期書き込みを使用して参照データがコピーされます。
@@ -65,7 +65,7 @@ Finance and Operations アプリに **顧客** テーブル、および Datavers
 
 ### <a name="set-up-an-azure-storage-account"></a>Azure ストレージ アカウントの設定
 
-Azure ストレージ アカウントを持っていない場合は、[Azure ストレージ アカウントを作成](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) の手順に従ってください。 ストレージ アカウントで、**ce-data** という名前のコンテナーを 1 つ作成します。 このコンテナには、すべてのデータ ファイルが格納されます。 データセットおよびパイプライン内のコンテナは、必要に応じ変更できます。 次の図に示すように、**アクセス キー** に移動し、**接続文字列** 値をコピーします。 この値は、Azure Data Factory テンプレートをインポートする際に必須です。
+Azure ストレージ アカウントを持っていない場合は、[Azure ストレージ アカウントを作成](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) の手順に従ってください。 ストレージ アカウントで、**ce-data** という名前のコンテナーを 1 つ作成します。 このコンテナには、すべてのデータ ファイルが格納されます。 データセットおよびパイプライン内のコンテナは、必要に応じ変更できます。 次の図に示すように、**アクセス キー** に移動し、**接続文字列** 値をコピーします。 この値は、Azure Data Factory テンプレートをインポートする際に必須です。
 
 :::image type="content" source="media/boot-storage-account.png" alt-text="アクセス キーの設定":::
 

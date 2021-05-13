@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a68d9ccec841ea67a85815286000b5b9594cecbc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 846f91a4527ea89c1daab5c3f69f7b8f4cc36023
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791231"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936968"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -124,6 +124,14 @@ ms.locfileid: "5791231"
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_59p7 | adyen_v1_59p7 |
+| | *注: ギフト カードのキャッシュ アウトに関する詳細については、以下を参照してください。* |
+
+# <a name="10018"></a>[10.0.18](#tab/10-0-18)
+### <a name="dynamics-365-retail-pos-version-10018"></a>Dynamics 365 Retail POS バージョン 10.0.18
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_59p7 | adyen_v1_62p9 |
+| | *注: ギフト カードのキャッシュ アウトに関する詳細については、以下を参照してください* |
 
 ---
 
@@ -131,7 +139,8 @@ ms.locfileid: "5791231"
 > Adyen では、Microsoft がメジャー バージョンをテストした後にマイナー バージョンの更新をリリースする場合があります。 メジャー バージョンがサポートされている限り、同じメジャー バージョン内でマイナー バージョンの更新を行うことができます。 通常これらの更新プログラムは、非常にターゲットを定めた修正プログラムであり、同じメジャー ファームウェア バージョンが以前にテストされている場合に限り、完全な再テストの基準を満たしません。 更新が、ドキュメントに表示されている最大 Adyen ファームウェア バージョンを超える必要はありません。 
 >
 > バージョン 53より前の Adyen ファームウェア バージョンからバージョン 53に移行する場合は、POS KB **4577957** が Commerce、バージョン10.0.11 から 10.0.14 の更新をする必要があります。 これらのバージョンのいずれかが使用されていて、修正プログラムが含まれていない場合、アップグレード後の支払ターミナルは、NFC 経由での支払のみを許可します。 POS に修正プログラムを適用すると、この問題が解決されます。 POS バージョンがバージョン 10.0.11より古い場合、サポート要求を提出して、MPOS が利用できないため KB **4577957** の修正が必要であることを示します。
-
+> 
+> Adyen ファームウェアのバージョンが 59p7 ~ 62p9 の場合、**ギフト カード のキャッシュ アウト** 操作では、ギフト カードを手動で入力する場合に PIN の入力を 2 回要求します。 この問題は、ギフト カードを読み取る時点では再現されません。 Adyen は調査しています。 
 
 ### <a name="supported-payment-terminals"></a>サポートされる支払端末
 Adyen 向け Dynamics 365 Payment Connector はデバイスに依存しない [Adyen 支払端末 API](https://www.adyen.com/blog/introducing-the-terminal-api) を活用します。 このアプリケーション プログラミング インターフェイス (API) がサポートするすべての支払端末をサポートします。 サポート対象の支払端末の完全な一覧については、[Adyen POS 端末](https://www.adyen.com/pos-payments/terminals)ページを参照してください。
@@ -187,7 +196,7 @@ Adyen 向け Dynamics 365 Payment Connector はデバイスに依存しない [A
 | Givex | ✔ | ✔ |
 | SVS | ✔ | ✔ |
 
-Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフト カード スキーマをサポートするには、追加手順完了する必要があります。 詳細については、[外部ギフト カードのサポート](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card)を参照してください。
+Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフト カード スキーマをサポートするには、追加手順完了する必要があります。 詳細については、[外部ギフト カードのサポート](/dynamics365/unified-operations/retail/dev-itpro/gift-card)を参照してください。
 
 #### <a name="supported-wallets"></a>サポートされる wallet
 
@@ -208,7 +217,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 
 #### <a name="supported-card-present-countries"></a>カード提示がサポートされている国
 
-次の国には、Adyen のカード サポートと共に、使用可能なコマース コンポーネントがあります。 コマースの現在の国際的な利用可能性については、[国際的な利用可能性ページ](https://docs.microsoft.com/dynamics365/get-started/availability) を参照してください。
+次の国には、Adyen のカード サポートと共に、使用可能なコマース コンポーネントがあります。 コマースの現在の国際的な利用可能性については、[国際的な利用可能性ページ](/dynamics365/get-started/availability) を参照してください。
 
 | 国 | サポート |
 | --- | :-: |
@@ -244,7 +253,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 
 #### <a name="supported-card-not-present-countries"></a>カード不提示がサポートされている国
 
-次の国では、カードが存在しない取引の場合は Adyen がサポートします。 特定の国のサポートの詳細については、[Adyen 連絡先 ](https://www.adyen.com/contact/sales) に問い合わせください。 コマースの現在の国際的な利用可能性については、[国際的な利用可能性ページ](https://docs.microsoft.com/dynamics365/get-started/availability) を参照してください。
+次の国では、カードが存在しない取引の場合は Adyen がサポートします。 特定の国のサポートの詳細については、[Adyen 連絡先 ](https://www.adyen.com/contact/sales) に問い合わせください。 コマースの現在の国際的な利用可能性については、[国際的な利用可能性ページ](/dynamics365/get-started/availability) を参照してください。
 
 | 国 | 
 | --- | --- |
@@ -319,18 +328,18 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | プエルトリコを含むアメリカ合衆国  |
 
 #### <a name="supported-dynamics-365-payment-features"></a>サポートされる Dynamics 365 支払フィーチャ
-次の表は、Adyen 向け Dynamics 365 Payment Connector がサポートする一連のフィーチャを示します。 これらのフィーチャは、2018 年 12 月に支払 SDK および一部のコンポーネントで導入された拡張機能を使用します。 それらは Adyen 向け Dynamics 365 Payment Connector 専用ではありません。 異なる支払端末に対するこれらの拡張機能を取得する方法の詳細については、[支払端末のエンドツーエンド支払統合を作成する](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)を参照してください。
+次の表は、Adyen 向け Dynamics 365 Payment Connector がサポートする一連のフィーチャを示します。 これらのフィーチャは、2018 年 12 月に支払 SDK および一部のコンポーネントで導入された拡張機能を使用します。 それらは Adyen 向け Dynamics 365 Payment Connector 専用ではありません。 異なる支払端末に対するこれらの拡張機能を取得する方法の詳細については、[支払端末のエンドツーエンド支払統合を作成する](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)を参照してください。
 
 | スキーム | カードあり | カードなし |
 |---|:-:|:-:|
-| [ギフト カードの残高を清算する](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
-| [重複支払保護](https://docs.microsoft.com/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
+| [ギフト カードの残高を清算する](/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
+| [重複支払保護](/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | オムニ チャネルのトークン化 | ✔ | ✔ |
 | リンクされた払戻 | ✔<br>(10.0.1 以降) | ✔<br>(10.0.1 以降) |
 | [オンライン支払の保存](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(10.0.2 以降) | 
-| [コール センターおよび電子商取引の外部ギフト カード](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/gift-card) | ✔<br>(10.0.10 以降) | 
-| [SCA 支払リダイレクト](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(10.0.12 以降) |
-| [専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト](https://docs.microsoft.com/dynamics365/commerce/pos-multi-hws) | ✔<br>(10.0.12 以降) | |
+| [コール センターおよび電子商取引の外部ギフト カード](./gift-card.md) | ✔<br>(10.0.10 以降) | 
+| [SCA 支払リダイレクト](../adyen_redirect.md) | | ✔<br>(10.0.12 以降) |
+| [専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト](../pos-multi-hws.md) | ✔<br>(10.0.12 以降) | |
 | [Adyen コネクタによる SDK レベルのチップ サポート](tipping.md) | ✔<br>(10.0.14 以降) | |
 | [注文請求の増分取得](incremental-capture.md) |  | ✔<br>(10.0.18 以降) |
 
@@ -369,7 +378,7 @@ POS 端末、コール センター、または電子商取引で支払を処理
     |---|---|:-:|:-:|---|
     | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector の自動入力されたアセンブリ名。 | はい | はい | *バイナリ名* |
     | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
-    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 「V002」は、支払を提示しないカード用の新しい Adyen API を活用し、[SCA サポート](https://go.microsoft.com/fwlink/?linkid=2131175) に必要とされているため、すべての新しい実装に使用されるべきです。  | あり | あり | "V001"/"V002" |
+    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 「V002」は、支払を提示しないカード用の新しい Adyen API を活用し、[SCA サポート](../adyen_redirect.md) に必要とされているため、すべての新しい実装に使用されるべきです。  | あり | あり | "V001"/"V002" |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
     | オプション ドメイン | ライブ環境にはオプションのドメインが必要となります。これは、Adyen に連絡して取得する必要があります。 これは、**[ランダム]-[会社名]** の形式にて、実稼働環境の一意識別子です。 これは Adyen Customer Area ポータル上の、使用している会社の実稼働口座の **口座 > API URLs** の下で、API URL 内の接頭語として存在します。 詳細については、[ライブ エンドポイント](https://docs.adyen.com/development-resources/live-endpoints) を参照してください。 | ライブのみ | 無 | Adyen に連絡する |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
@@ -540,7 +549,7 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
     |---|---|:-:|:-:|---|
     | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector の自動入力されたアセンブリ名。 | はい | はい | *バイナリ名* |
     | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
-    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 「V002」は、支払を提示しないカード用の新しい Adyen API を活用し、[SCA サポート](https://go.microsoft.com/fwlink/?linkid=2131175) に必要とされているため、すべての新しい実装に使用されるべきです。  | あり | あり | "V001"/"V002" |
+    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 「V002」は、支払を提示しないカード用の新しい Adyen API を活用し、[SCA サポート](../adyen_redirect.md) に必要とされているため、すべての新しい実装に使用されるべきです。  | あり | あり | "V001"/"V002" |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 | 有 | 有 | ライブ |
     | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 これは、**[ランダム]-[会社名]** の形式にて、実稼働環境の一意識別子です。 これは Adyen Customer Area ポータル上の、使用している会社の実稼働口座の **口座 > API URLs** の下で、API URL 内の接頭語として存在します。 詳細については、[ライブ エンドポイント](https://docs.adyen.com/development-resources/live-endpoints) を参照してください。 | ライブのみ | 無 | Adyen に連絡する |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
@@ -651,6 +660,6 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 
 ## <a name="additional-resources"></a>追加リソース
 
-[支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+[支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]

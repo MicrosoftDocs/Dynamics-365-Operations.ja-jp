@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 228e6fd5595ab5d3778291e392235fdd96ec6122
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d10738dc2f5253f54f8df32c389d0d39b44a193d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749608"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921073"
 ---
 # <a name="code-migration-and-upgrade-home-page"></a>コードの移行とホーム ページのアップグレード
 
@@ -39,12 +39,12 @@ Dynamics AX 2012 から Dynamics 365 Finance、Supply Chain Management、また�
 
 ## <a name="learning-path"></a>ラーニング パス
 
-- [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/)
+- [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](/learn/paths/upgrade-ax-2012-finance-operations/)
 
 ## <a name="additional-concepts"></a>追加コンセプト
 
 - [コードの移行中にデリゲートを使用してモデル間の依存関係の解決](delegates-migration.md)
-- [SQL Server Analysis Services プロジェクトを AOT にインポートする方法](https://technet.microsoft.com/library/dn754850.aspx)
+- [SQL Server Analysis Services プロジェクトを AOT にインポートする方法](/dynamicsax-2012/appuser-itpro/import-a-sql-server-analysis-services-project-into-the-aot)
 - [アップグレード、更新プログラム、および修正プログラムのリソース](upgrade-home-page.md)
 - [Finance and Operations のワークフロー サブシステムのアップデート](workflow-subsystem.md)
 - [更新した AX 2012 R3 セールスキューブをエンティティ の ストレージ へと移行する](migrate-upgraded-cube-entity-store.md)

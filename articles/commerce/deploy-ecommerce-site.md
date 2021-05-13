@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fff5d47d6eb3e08288d17853fcd94f9eab843c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b228babfd32a4191eeed2a6d924a8b99f1a5311
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801952"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936709"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>新しい eコマース テナントのデプロイ
 
@@ -29,13 +29,13 @@ ms.locfileid: "5801952"
 
 Microsoft Dynamics Lifecycle Services (LCS) は、パートナーや顧客がプロジェクト環境を管理したり、Microsoft Dynamics 製品や機能に関する最新情報を表示したり、サポート インシデントを作成、追跡、参照したりするために使用できる、クラウドベースのコラボレーション ワークスペースです。 e コマースの管理機能は LCS に統合されています。
 
-LCS の詳細については、[Lifecycle Services ユーザー ガイド](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)を参照してください。
+LCS の詳細については、[Lifecycle Services ユーザー ガイド](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)を参照してください。
     
 ## <a name="get-started"></a>開始する
 
 e コマースを初期化する前に、プロジェクト、環境、Retail Cloud Scale Unit (RCSU) を初期化する必要があります。 LCS で初期化を行うには、プロジェクト所有者ロールまたは環境マネージャ ロールのいずれかのアクセス許可が必要です。 実稼働環境とサンドボックス環境のトポロジがサポートされています。
 
-環境に関する詳細については、[環境計画](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning)を参照してください。 RCSU の詳細については、[Retail Cloud Scale Unit の初期化](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels)を参照してください。
+環境に関する詳細については、[環境計画](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning)を参照してください。 RCSU の詳細については、[Retail Cloud Scale Unit の初期化](/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels)を参照してください。
 
 ## <a name="initialize-e-commerce"></a>e コマースの初期化
 

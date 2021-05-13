@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: dc0ccf4bf0c4176b0f01a20b7035dd1ca9c6150d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c2151b1e3c15b3076e6eaca4f037366320dc8c9c
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749900"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923173"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]
@@ -164,7 +164,7 @@ AccountingDistributionCurrent と DimensionCombinationentity エンティティ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Dynamics AX 7 のエンティティを自分の Azure SQL データベースにエクスポートする](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/27/export-dynamics-ax7-entities-to-your-own-azure-sql-database/)
+[Dynamics AX 7 のエンティティを自分の Azure SQL データベースにエクスポートする](/archive/blogs/dynamicsaxbi/export-dynamics-ax7-entities-to-your-own-azure-sql-database)
 
 
 

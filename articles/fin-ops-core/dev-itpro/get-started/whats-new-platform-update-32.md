@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
-ms.openlocfilehash: 1d0b6deb2168c6316ba88a0d2ebbd8744279aa30
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: acd6c7827d450b72c6e8f37728879a876fabe2a5
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743965"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923522"
 ---
 # <a name="whats-new-or-changed-in-platform-update-32-for-finance-and-operations-apps-february-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能
 
@@ -37,7 +37,7 @@ ms.locfileid: "5743965"
 
 ### <a name="file-size-limit-for-data-management-export-has-been-removed"></a>データ管理エクスポートのファイル サイズ制限が削除されました
 
-詳細情報については、[データ管理エクスポートのファイル サイズ制限が削除されました](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed)を参照してください。
+詳細情報については、[データ管理エクスポートのファイル サイズ制限が削除されました](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed)を参照してください。
 
 ### <a name="finance-and-operations-aos-kernel-improvements"></a>Finance and Operations AOS (カーネル) の改善
 
@@ -45,22 +45,22 @@ ms.locfileid: "5743965"
 
 ### <a name="continued-stabilization-of-saved-views"></a>保存されたビューの継続的な安定化
 
-この機能の詳細については、[ユーザーの生産性 – 保存されたビュー](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views)を参照してください。
+この機能の詳細については、[ユーザーの生産性 – 保存されたビュー](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views)を参照してください。
 
 ### <a name="improved-responsiveness-of-action-panes-on-smaller-screens"></a>小さい画面上でアクション ペインの応答性が向上
 
-この機能の詳細については、[モバイル デバイス エクスペリエンスの向上 – フェーズ 1 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1)を参照してください。
+この機能の詳細については、[モバイル デバイス エクスペリエンスの向上 – フェーズ 1 ](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1)を参照してください。
 
 ### <a name="ability-to-filter-on-blank-values-by-using-the-filter-pane-and-filters-in-grid-column-headers"></a>グリッド列ヘッダーのフィルター ウィンドウとフィルターを使用して、空白の値をフィルター処理する機能
 
-この機能の詳細については、[ユーザーの生産性 – フィルター処理の強化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-filtering-enhancements)を参照してください。
+この機能の詳細については、[ユーザーの生産性 – フィルター処理の強化](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-filtering-enhancements)を参照してください。
 
 ### <a name="continued-evolution-of-the-new-grid"></a>新しいグリッド進化の継続
 
-この機能の詳細については、[ユーザーの生産性 – 新規グリッド](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-new-grid)を参照してください。
+この機能の詳細については、[ユーザーの生産性 – 新規グリッド](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-new-grid)を参照してください。
 
 ### <a name="priority-based-scheduling-for-batch-jobs"></a>バッチ ジョブの優先度のスケジュール
-[バッチ ジョブの優先度スケジュール](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs)機能の既存のバッチ ジョブとタスクを準備できるように 2 つの新しいシステム バッチ ジョブを導入しました。 その 2 つの新しいシステム バッチは、次のようなものです。
+[バッチ ジョブの優先度スケジュール](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs)機能の既存のバッチ ジョブとタスクを準備できるように 2 つの新しいシステム バッチ ジョブを導入しました。 その 2 つの新しいシステム バッチは、次のようなものです。
 
 - **バッチ ジョブにバッチ グループの関連付けをシードするシステム ジョブ:** このバッチ ジョブは、クラス名 **SysMigrateBatchGroupsForPriorityBasedScheduling** で、バッチ ジョブをバッチ グループに関連付けます。
 - **期限切れのバッチレコードを削除するシステムジョブ:** このバッチ ジョブでは、クラス名 **SysCleanupBatchHeartbeatTable** で、新しい内部監視 **BatchHeartbeatTable** テーブルを削除します。
@@ -77,7 +77,7 @@ ms.locfileid: "5743965"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 

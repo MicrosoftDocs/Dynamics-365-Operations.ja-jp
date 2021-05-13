@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 826cee7b1e30020aec99f6148dd9ab16f126c417
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7917f36d8ff3c1ae2d37c5390806ef82771b5211
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839128"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920040"
 ---
 # <a name="rebate-management-module-overview"></a>リベート管理モジュールの概要
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 **リベート管理** モジュールを使用して、取引とその顧客または仕入先との間で契約、取引、または契約を作成し、リベート、控除、ロイヤリティを計算 できます。 リベート管理では、ユーザーが効率的にリベートトランザクションを作成、確認、処理できる中央の場所で、リベート トランザクションと控除トランザクションを追跡および管理します。
 

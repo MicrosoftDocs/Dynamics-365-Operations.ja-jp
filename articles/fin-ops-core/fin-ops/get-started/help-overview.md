@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e33a2d4c50d17125a91b3b55b46626c6199575c8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897819"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923449"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -39,7 +39,7 @@ ms.locfileid: "5897819"
 
 ## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
 
-docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) が前述のアプリの製品ドキュメントの既定のソースです。 このサイトには次のような機能が含まれています:
+docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](/dynamics365/)) が前述のアプリの製品ドキュメントの既定のソースです。 このサイトには次のような機能が含まれています:
 
 - **最新コンテンツへのアクセス** – このサイトは、製品ドキュメントの作成、納品、更新をより迅速かつ柔軟に行うことができます。 最新の技術情へのアクセスに役立てることができます。
 - **専門家が記述したコンテンツ** – このサイトのコンテンツは、Microsoft 内外のコミュニティメンバーによる投稿を受け付けています。
@@ -50,7 +50,7 @@ docs.microsoft.com のコンテンツは、任意の検索エンジンを使用�
 
 docs.microsoft.com 上のコンテンツにおけるすべての更新について、Really Simple Syndication (RSS) フィードを購読するには、次のリンクを使用します:
 
-[RSS フィード](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
+[RSS フィード](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
 
 ### <a name="leave-us-feedback"></a>フィードバックをお送りください
 
@@ -73,7 +73,7 @@ docs.microsoft.com 上のコンテンツにおけるすべての更新につい�
 
 [Microsoft Dynamics365 のドキュメントへの投稿方法](https://youtu.be/m5djioozRbg)ビデオ (上記参照) は YouTube の Microsoft Dynamics 365 チャンネルに含まれています。
 
-詳細については、docs.microsoft.com サイトを構築したチームが公開した [Docs 共同作成者ガイド](https://docs.microsoft.com/contribute)を参照してください。
+詳細については、docs.microsoft.com サイトを構築したチームが公開した [Docs 共同作成者ガイド](/contribute)を参照してください。
 
 > [!NOTE]
 > 現時点では英語のコンテンツへの寄稿のみを受け付けています。
@@ -155,12 +155,13 @@ On the **System parameters** page, follow these steps:
 | サイト | 説明 |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | このサイトでは、Dynamics 365 のすべての製品ドキュメントをホスト、またはリンクしています。 |
-| [Microsoft Learn](https://docs.microsoft.com/learn/) | このサイトは、無償で提供されている Microsoft eラーニング サイトです。 |
+| [Microsoft Learn](/learn/) | このサイトは、無償で提供されている Microsoft eラーニング サイトです。 |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | このサイトでは、顧客やパートナーがプリ セールスから導入、運用までのプロジェクトを管理できるクラウド ベースの共同ワークスペースを提供しています。 このサイトは、実装におけるすべてのフェーズに活用できます。 |
 | [サポート ブログ](https://aka.ms/AXSupportBlog) | サポート チームが投稿するコツやヒントを参照できます。 |
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | 古いリリースのコンテンツをホストします。 |
 | [Dynamics コミュニティ](https://community.dynamics.com/) | ブログ、フォーラム、ビデオをホストします。 |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | 評価と販売情報を提供します。 |
+
 
 
 

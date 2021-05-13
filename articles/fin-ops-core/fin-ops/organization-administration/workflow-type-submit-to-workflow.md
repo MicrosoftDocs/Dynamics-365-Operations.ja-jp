@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 91c9ebe799eb85de06c59297f117bc3884384f76
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 64f12c12d517ea39f667001bd1b82e414d779497
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747127"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891679"
 ---
 # <a name="create-a-submittoworkflow-class"></a>SubmitToWorkflow クラスの作成 
 
@@ -27,7 +27,7 @@ ms.locfileid: "5747127"
 
 ワークフローは、ユーザーがワークフロー ツールバーの **送信** ボタンを選択したときに開始されます。 **送信** ボタンは、ワークフローを有効にするために作成したクラスの **main** メソッドを呼び出すアクション メニュー項目にバインドされます。 このトピックでは、 **SubmitToWorkflow** クラスを作成する方法、およびワークフロー タイプの名前を使用してワークフローを有効にする方法について説明します。
 
-ワークフロー コンフィギュレーション IDまたはワークフローのシーケンス 番号を使用してワークフローを有効にすることもできます。 基本的な手順は同じです。 詳細については、 [ワークフローの有効化](https://docs.microsoft.com/dynamicsax-2012/developer/activating-a-workflow) を参照してください。
+ワークフロー コンフィギュレーション IDまたはワークフローのシーケンス 番号を使用してワークフローを有効にすることもできます。 基本的な手順は同じです。 詳細については、 [ワークフローの有効化](/dynamicsax-2012/developer/activating-a-workflow) を参照してください。
 
 > [!NOTE]
 > **ワークフロー** ウィザードを使用してワークフロー タイプを作成した場合は、ウィザードが、ワークフロー送信マネージャー クラスを既に作成しています。 単にコードを追加するだけです。
@@ -41,7 +41,7 @@ ms.locfileid: "5747127"
 5. ワークフローを有効化するためにワークフロー タイプの名前を使用する **main** メソッドに次のコードを入力します。
 
     > [!NOTE]
-    > この例は、ワークフローの送信に適用されます。 エンタープライズ ポータルでも機能する例については、 [ワークフロー送信のためのエンタープライズ ポータル サポートの追加](https://docs.microsoft.com/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission) を参照してください。
+    > この例は、ワークフローの送信に適用されます。 エンタープライズ ポータルでも機能する例については、 [ワークフロー送信のためのエンタープライズ ポータル サポートの追加](/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission) を参照してください。
 
     ```X++
     public static void main(Args args)
@@ -87,15 +87,15 @@ ms.locfileid: "5747127"
 
 ## <a name="see-also"></a>参照
 
-[ワークフローの有効化](https://docs.microsoft.com/dynamicsax-2012/developer/activating-a-workflow)
+[ワークフローの有効化](/dynamicsax-2012/developer/activating-a-workflow)
 
 [新しいワークフロー タイプの作成](workflow-type-create-new.md)
 
-[ワークフロー::activateFromWorkflowType メソッド](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812416(v=ax.60))
+[ワークフロー::activateFromWorkflowType メソッド](/previous-versions/dynamics/ax-2012/application-classes/gg812416(v=ax.60))
 
-[ワークフロー::activateFromWorkflowSequenceNumber メソッド](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
+[ワークフロー::activateFromWorkflowSequenceNumber メソッド](/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
 
-[ワークフロー::activateFromWorkflowConfigurationId メソッド](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
+[ワークフロー::activateFromWorkflowConfigurationId メソッド](/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

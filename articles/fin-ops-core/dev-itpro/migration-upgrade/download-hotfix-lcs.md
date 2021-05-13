@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05efca0496c32da550ff9eebbbcffd189e21e6c5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c70e8fbb42b527ce5831d706ad16041bf65a526b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750346"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921407"
 ---
 # <a name="download-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムをダウンロード
 
@@ -82,7 +82,7 @@ ms.locfileid: "5750346"
 > [!NOTE]
 > 上記バージョンをご利用の場合は、可能な限り早めに更新を行ってください。 
 >
-> これらバージョンに対してリリースされた X++ の更新プログラムについては、 [Lifecycle Services でのイシューの検索](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) からご利用いただけます。
+> これらバージョンに対してリリースされた X++ の更新プログラムについては、 [Lifecycle Services でのイシューの検索](../lifecycle-services/issue-search-lcs.md) からご利用いただけます。
 
   
 ## <a name="download-binary-updates"></a>バイナリ更新プログラムのダウンロード

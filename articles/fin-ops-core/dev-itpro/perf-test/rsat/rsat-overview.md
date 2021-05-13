@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3d0210aa563a04d56849d257aad9fef41c80a85
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9b45a05adb79eb9e9232b09a133306e7798a64db
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745183"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935767"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -33,10 +33,12 @@ RSAT の使用についての定義。
 + [Regression Suite Automation Tool (このトピック)](rsat-overview.md)
 + [Regression Suite Automation Tool インストールおよび構成](rsat-install-configure.md)
 + [Regression Suite Automation Tool テスト ケースの実行](rsat-run.md)
++ [Regression Suite Automation Tool でのテスト ケースの管理](rsat-maintain-test-cases.md)
 + [予測値の検証](rsat-validate-expected.md)
 + [チェーン テスト ケース](rsat-chain-test-cases.md)
 + [派生テスト ケース](rsat-derived-test-cases.md)
 + [管理者以外のユーザーが RSAT を使用するように構成する](rsat-configure-nonadmin.md)
++ [パラメーター ファイルのアップグレード](rsat-upgrade-parameter-files.md)
 + [Regression Suite Automation Tool ベスト プラクティス](rsat-best-practices.md)
 + [Regression Suite Automation Tool のトラブルシューティング](rsat-troubleshooting.md)
 

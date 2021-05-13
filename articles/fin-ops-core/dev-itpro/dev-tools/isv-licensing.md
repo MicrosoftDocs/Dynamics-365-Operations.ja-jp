@@ -4,8 +4,6 @@ description: このトピックでは、独立系ソフトウェア ベンダー
 author: jorisdg
 ms.date: 05/08/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 70381
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9841a77562e74f55f501ab55478540fe51e48c10
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 604d7f813b46c493560570a78030dbf8d5485f63
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753016"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923285"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -48,7 +46,7 @@ ISV は独自のライセンスを個別に生成し、ソリューションに�
 
 ### <a name="there-are-two-types-of-license-boolean-and-number"></a>ライセンスには、ブール値と数値の 2 種類があります
 
-ISV は **ブール値** および **番号** の 2 つのタイプを作成できます。 ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。 この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。 ブール値ライセンスは、単純な有効化ライセンスです。 ライセンスのタイプ (**ブール値** または **数字**) は、ライセンス コード ノードのプロパティによって設定されます。 ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。 詳細については、[ISV のライセンス フレームワーク](https://msdn.microsoft.com/library/jj677284.aspx)を参照してください。
+ISV は **ブール値** および **番号** の 2 つのタイプを作成できます。 ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。 この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。 ブール値ライセンスは、単純な有効化ライセンスです。 ライセンスのタイプ (**ブール値** または **数字**) は、ライセンス コード ノードのプロパティによって設定されます。 ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。 詳細については、[ISV のライセンス フレームワーク](/dynamicsax-2012/developer/licensing-framework-for-isvs-of-microsoft-dynamics-ax)を参照してください。
 
 ### <a name="license-validation-errors"></a>ライセンス検証エラー
 
@@ -218,7 +216,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
     ```
 
-    詳細については、[MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) のドキュメントを参照してください。
+    詳細については、[MakeCert](/windows/win32/seccrypto/makecert) のドキュメントを参照してください。
 
 2. CA を使用して証明書を作成します。
 

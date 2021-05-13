@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: marwalke
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 67685abfe0d4fcdb44f6ef3de184910bc890e2a0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b9324f6bc939ebfc25ad2eb13df5bb80f1541a1e
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749269"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920973"
 ---
 # <a name="move-lcs-implementation-projects-from-on-premises-to-the-cloud"></a>LCS 実装プロジェクトをオンプレミスからクラウドに移動する
 
@@ -31,7 +31,7 @@ ms.locfileid: "5749269"
 
 ## <a name="configure-lcs-cloud-implementation-project"></a>LCS クラウドの実装プロジェクトを構成する
 
-以前に Azure AD テナントで Finance and Operations クラウド名のユーザー サブスクリプション ライセンスがアクティブ化されていない場合、新しい Microsoft Dynamics Lifecycle Services (LCS) クラウド実装プロジェクトが自動的にプロビジョニングされます。 それ以外の場合は、サポート要求を開いて LCS クラウドの実装プロジェクトを作成する必要があります。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant) を参照してください。
+以前に Azure AD テナントで Finance and Operations クラウド名のユーザー サブスクリプション ライセンスがアクティブ化されていない場合、新しい Microsoft Dynamics Lifecycle Services (LCS) クラウド実装プロジェクトが自動的にプロビジョニングされます。 それ以外の場合は、サポート要求を開いて LCS クラウドの実装プロジェクトを作成する必要があります。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant) を参照してください。
 
 LCS クラウドの実装プロジェクトが作成されたら、完全に構成する必要があります。 この構成の一部として、ユーザー、Azure DevOps DevOps アソシエーション、サブスクリプションの見積りを追加し、アセット ライブラリおよびビジネス プロセス モデラー (BPM) などに入力する必要があります。
 
@@ -60,7 +60,7 @@ LCS クラウドの実装プロジェクトが作成されたら、完全に構�
     SELECT SHAREDFOLDERPATH from DMFPARAMETERS
     ```
 
-4. データベースをオンプレミスからオンラインにコピーします。 使用するエクスポートとインポートのプロセスは、[ゴールデン構成プロモーション](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig) データベースの移動チュートリアルで説明されているプロセスと同じです。 ただし、この場合、ソース データベースは既存のオンプレミスの実稼動 SQL データベースであり、開発環境にインポートするために説明されている sqlpackage.exe アプローチを使用する必要があります。 代わりに、LCS セルフ サービス データベース インポート オプションを使用する場合は、クリーンアップされるデータ要素に関する警告に記載されているように、一部のデータがインポートされません。 次のコードに示されているプレースホルダーの代わりに、LCS 環境の詳細で使用可能なターゲット データベース情報を使用する必要があります。
+4. データベースをオンプレミスからオンラインにコピーします。 使用するエクスポートとインポートのプロセスは、[ゴールデン構成プロモーション](../database/dbmovement-scenario-goldenconfig.md) データベースの移動チュートリアルで説明されているプロセスと同じです。 ただし、この場合、ソース データベースは既存のオンプレミスの実稼動 SQL データベースであり、開発環境にインポートするために説明されている sqlpackage.exe アプローチを使用する必要があります。 代わりに、LCS セルフ サービス データベース インポート オプションを使用する場合は、クリーンアップされるデータ要素に関する警告に記載されているように、一部のデータがインポートされません。 次のコードに示されているプレースホルダーの代わりに、LCS 環境の詳細で使用可能なターゲット データベース情報を使用する必要があります。
 
     ```powershell
     SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
@@ -82,7 +82,7 @@ LCS クラウドの実装プロジェクトが作成されたら、完全に構�
     ```
 
 6. 他のすべてのユーザーを再インポートし、適切なセキュリティ ロールを割り当てます。
-7. クラウド環境での直接印刷は、ドキュメント回覧エージェント (DRA) を介して行われます。 [ネットワーク印刷を有効にしてドキュメント回覧エージェントをインストール](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent) の説明に従ってサンドボックス DRA を設定し、回帰テストに印刷シナリオを含めることができます。
+7. クラウド環境での直接印刷は、ドキュメント回覧エージェント (DRA) を介して行われます。 [ネットワーク印刷を有効にしてドキュメント回覧エージェントをインストール](../analytics/install-document-routing-agent.md) の説明に従ってサンドボックス DRA を設定し、回帰テストに印刷シナリオを含めることができます。
 8. ドキュメント処理の添付ファイルをクラウドにコピーします。 ドキュメント処理の添付ファイルはデータベースに保存されません。 保存する必要がある場合は、個別に移動する必要があります。 手順については、このトピックで後述する[サンドボックスへの添付ファイルを処理するドキュメントの移行](#migrate-document-handling-attachments-to-your-sandbox) セクションを参照してください。
 9. 完全な回帰テスト サイクルを実行します。 このサイクルには、統合のテストを含める必要があります。
 10. テスト中に検出された問題を解決します。 各問題ごとに、サンドボックスで行った修正調整を文書化して追跡し、オンプレミスソースで繰り返します。 オンプレミス環境で変更を加えてはならない場合は、その環境の正しい機能と互換性がないため、移行プロセスの繰り返しごとに手動で適用するのではなく、DMF データパッケージを作成することをお勧めします。
@@ -90,7 +90,7 @@ LCS クラウドの実装プロジェクトが作成されたら、完全に構�
 
 ## <a name="repeat-the-migration-to-production"></a>実稼働への移行の繰り返し
 
-1. 新しい運用環境を展開します。 通常の前提条件が適用されることに注意してください。 たとえば、有効なサブスクリプションの見積もりツールが必要であり、運用フェーズの前に LCS の方法のフェーズを完了し、FastTrack 準備レビューを完了する必要があります。 詳細については、「[Go-Live の準備](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live)」を参照してください。
+1. 新しい運用環境を展開します。 通常の前提条件が適用されることに注意してください。 たとえば、有効なサブスクリプションの見積もりツールが必要であり、運用フェーズの前に LCS の方法のフェーズを完了し、FastTrack 準備レビューを完了する必要があります。 詳細については、「[Go-Live の準備](../../fin-ops/imp-lifecycle/prepare-go-live.md)」を参照してください。
 2. ソフトウェア展開可能パッケージの最終バージョンを実稼働に適用します。
 3. オンプレミスの運用環境に対するデータの変更を中止します。
 4. [試用版の移行と問題の解決](#do-a-trial-migration-and-resolve-issues) セクションで手順 3 ～ 6 を繰り返して、最終的な/最新のオンプレミス本番データベースをクラウド サンドボックスにコピーします。

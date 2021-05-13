@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
-ms.openlocfilehash: 78595aed0c3f2905e56cc08fb50fc17876f1161c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e001631344bf74ea9a8ccccf0f27036cb99bb6bb
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752226"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923277"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-20-september-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年 9 月) の新機能および変更された機能
 
@@ -34,7 +34,7 @@ ms.locfileid: "5752226"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2018 年 10 月リリース ノートを確認](https://go.microsoft.com/fwlink/?linkid=870424). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2018 年 10 月リリース ノートを確認](/dynamics365/release-plans/). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="platform-update-20-bug-fixes"></a>プラットフォーム アップデート 20 のバグ修正プログラム
 
@@ -168,7 +168,7 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスクの自�
 - データ エンティティのコマンド チェーンを有効にします。
 - データ ソースやコントロールを含む、フォーム内の入れ子になった型でコマンド チェーンを有効にします。
 
-すべての拡張機能の詳細については、[拡張機能のホーム ページ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page) を参照してください。
+すべての拡張機能の詳細については、[拡張機能のホーム ページ](../../dev-itpro/extensibility/extensibility-home-page.md) を参照してください。
 
 ## <a name="performance-improvement-in-the-visual-studio-development-environment"></a>Visual Studio 開発環境でのパフォーマンスの向上
 

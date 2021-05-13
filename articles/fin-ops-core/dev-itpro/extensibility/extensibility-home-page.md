@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 8a8d3cffa24cd794b28c285df365e9050334a6c8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fdb63ba66b6eff223fae723349d35f09ece0518a
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749618"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866059"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 

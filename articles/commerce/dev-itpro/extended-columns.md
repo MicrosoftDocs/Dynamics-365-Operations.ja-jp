@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: aa66ce61792508924554ad7f661da7abf5463555
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b0979bce426c05e495a0a88e5dcaed9a859344bf
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793001"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937134"
 ---
 # <a name="pre-extended-columns-in-the-channel-database"></a>チャネル データベースの事前拡張された列
 
@@ -30,7 +30,7 @@ ms.locfileid: "5793001"
 チャネル データベースのフィールドは拡張されることは多いですが、フィールドの列の長さは拡張に対応していません。 したがって、拡張が必要となった場合にも対応できるよう、標準で列の長さが増設されています。
 
 > [!NOTE]
-> 事前拡張されていないフィールドを拡張する必要がある場合は、Lifecycle Services (LCS) で拡張リクエストを提出する必要があります。 詳細については、[拡張性要求](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-requests) を参照してください。
+> 事前拡張されていないフィールドを拡張する必要がある場合は、Lifecycle Services (LCS) で拡張リクエストを提出する必要があります。 詳細については、[拡張性要求](../../fin-ops-core/dev-itpro/extensibility/extensibility-requests.md) を参照してください。
 
 このフィールドは、チャネル データベースで拡張されますが、拡張データ型 (EDT) の拡張モデルを使用して、Commerce 本体のデータベースのフィールドも拡張する必要があります。 さらに、これに対応する販売時点管理 (POS) 、または Commerce Runtime (CRT) ユーザー インターフェイス (UI) を拡張する必要があります。
 
@@ -166,6 +166,9 @@ namespace Contoso
 | RETAILASYNCADDRESS            | COUNTY                                                                        | Nvarchar (60)  |                       |                                     |
 | RETAILASYNCCUSTOMER           | STREET                                                                        | Nvarchar (400) |                       |                                     |
 | RETAILASYNCCUSTOMER           | COUNTY                                                                        | Nvarchar (60)  |                       |                                     |
+| CUSTOMERTABLETYPE_V2           | FIRSTNAME                                                                        | Nvarchar (100)  | ValidateCustomerNameLengthServiceRequest                     |                                     |
+| CUSTOMERTABLETYPE_V2          | MIDDLENAME                                                                        | Nvarchar (100)  | ValidateCustomerNameLengthServiceRequest                       |                                     |
+| CUSTOMERTABLETYPE_V2           | LASTNAME                                                                        | Nvarchar (100)  |  ValidateCustomerNameLengthServiceRequest                      |                                     |
 | RETAILFISCALDOCUMENT\_BR      | FEADDRESSSTREET                                                               | Nvarchar (400) |                       |                                     |
 | RETAILFISCALDOCUMENT\_BR      | THIRDPARTYADDRESSSTREET                                                       | Nvarchar (400) |                       |                                     |
 | RETAILTAXFILTERS              | COUNTYID                                                                      | Nvarchar (60)  |                       |                                     |

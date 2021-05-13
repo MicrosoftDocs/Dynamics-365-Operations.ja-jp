@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 8a809b81504fdc31d8f9e0529048269dd7e0c5cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800450"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937015"
 ---
 # <a name="clienteling-overview"></a>クライアンテリングの概要
 
@@ -60,7 +60,7 @@ Microsoft Dynamics 365 Commerce では、小売業者はクライアント ブ�
 
 ## <a name="integration-with-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights との統合
 
-Dynamics 365 Customer Insights アプリケーションを使用することで、小売業者は、顧客が小売業者のブランドと接触する際に使用するさまざまなシステムからデータを集計できます。 その後、このデータを使用して顧客の単一のビューを生成し、洞察を導き出すことができます。 Customer Insights と Commerce の統合により、小売業者はクライアント ブックの顧客カードに表示する必要のある 1 つ以上の指標を選択できます。 たとえば、小売業者は Customer Insights のデータを使用して、顧客の「解約率」を計算し「次に優先するアクション」を定義することができます。 これらの値が指標として定義されている場合は顧客カードに表示され、店員に重要な情報を提供できます。 Customer Insights の詳細については、[Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview) を参照してください。 指標の詳細については、[指標](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)を参照してください。
+Dynamics 365 Customer Insights アプリケーションを使用することで、小売業者は、顧客が小売業者のブランドと接触する際に使用するさまざまなシステムからデータを集計できます。 その後、このデータを使用して顧客の単一のビューを生成し、洞察を導き出すことができます。 Customer Insights と Commerce の統合により、小売業者はクライアント ブックの顧客カードに表示する必要のある 1 つ以上の指標を選択できます。 たとえば、小売業者は Customer Insights のデータを使用して、顧客の「解約率」を計算し「次に優先するアクション」を定義することができます。 これらの値が指標として定義されている場合は顧客カードに表示され、店員に重要な情報を提供できます。 Customer Insights の詳細については、[Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) を参照してください。 指標の詳細については、[指標](/dynamics365/ai/customer-insights/pm-measures)を参照してください。
 
 ## <a name="set-up-clienteling"></a>クライアンテリングの設定
 
@@ -73,7 +73,7 @@ Dynamics 365 Customer Insights アプリケーションを使用することで�
 2. **直ちに有効化** を選択して **クライアンテリング** 機能をオンにします。
 3. **Commerce パラメーター** ページの **番号順序** タブで、**クライアント ブック識別子** の行を選択します。 次に、**番号順序コード** フィールドで、番号順序を選択します。 システムはこの番号順序を使用して、クライアント ブックに ID を割り当てます。
 4. **保存** を選択します。
-5. クライアント ブックで管理されている顧客用に取得する属性を含む、新しい属性グループを作成します。 手順については、[属性および属性グループ](https://docs.microsoft.com/dynamics365/retail/attribute-attributegroups-lifecycle)を参照してください。
+5. クライアント ブックで管理されている顧客用に取得する属性を含む、新しい属性グループを作成します。 手順については、[属性および属性グループ](./attribute-attributegroups-lifecycle.md)を参照してください。
 
     - 必須属性を **絞り込み可能** として定義します。 店員は、これらの属性を使用してクライアント ブックをフィルタ処理できます。
     - これらの属性の表示順序を設定します。 この表示順序によって、クライアント ブックの顧客カードに表示する属性が決まります。 表示順序 1 は、表示順序 2 より高いと見なされます。 したがって、表示順序が 1 の属性は、表示順序が 2 の属性よりも前に表示されます。
@@ -103,18 +103,18 @@ Customer Insights と Commerce の統合を有効にするには、Commerce が�
 
 統合を設定するには、これらの手順に従います。
 
-1. Azure ポータルで、新しいアプリケーションを登録し、アプリケーション名、アプリケーションID、シークレットをメモしておきます。 この情報は、Commerce と Customer Insights のサービス間の認証に使用されます。 シークレットは Key Vault で安全に保管する必要があることにご注意ください。 以下の例では、アプリケーション名、アプリケーションID、シークレットにそれぞれ CI_Access_name、CI_Access_AppID、CI_Access_Secret を使用しています。 詳細については、[クイックスタート : Microsoft ID プラットフォームにアプリケーションを登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) を参照してください。
+1. Azure ポータルで、新しいアプリケーションを登録し、アプリケーション名、アプリケーションID、シークレットをメモしておきます。 この情報は、Commerce と Customer Insights のサービス間の認証に使用されます。 シークレットは Key Vault で安全に保管する必要があることにご注意ください。 以下の例では、アプリケーション名、アプリケーションID、シークレットにそれぞれ CI_Access_name、CI_Access_AppID、CI_Access_Secret を使用しています。 詳細については、[クイックスタート : Microsoft ID プラットフォームにアプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app) を参照してください。
 
     > [!IMPORTANT]
     > 期限が切れる前にシークレットを変更することを忘れないように、対策を講じてください。 そうでない場合、統合は予期せず停止します。
 
 2. Customer Insights インスタンスに移動し、上記で作成したアプリケーションの名前 (この例では "CI_Access_name) を検索します。
-3. Azure Key Vault を作成し、名前と URL をメモします (この例では、"KeyVaultName"、"KeyVault VAULT")。 手順については、[クイックスタート: Azure ポータルを使用して Azure Key Vault からシークレットを設定および取得する](https://docs.microsoft.com/azure/key-vault/quick-create-portal)を参照してください。
+3. Azure Key Vault を作成し、名前と URL をメモします (この例では、"KeyVaultName"、"KeyVault VAULT")。 手順については、[クイックスタート: Azure ポータルを使用して Azure Key Vault からシークレットを設定および取得する](/azure/key-vault/quick-create-portal)を参照してください。
 4. KeyVault にシークレット (この例では "CI_Access_Secret) を保存します。 シークレット を KeyVault に保存すると、シークレットに名前が付けられます。 シークレットの名前をメモします (この例では 'SecretName')。
 5. Azure Key Vault からシステムにアクセスするには、アプリケーション ID とアプリケーションで構成された別のアプリケーションを作成する必要があります (この例では、"KeyVault_Access_AppID"、"KeyVault_Access_Secret")。 安全上の観点から、シークレットは再表示されません。
 6. API を使用して Commerce からキー コンテナーにアクセスするには、アプリケーションへのアクセス許可を付与する必要があります。 Azure portal のアプリケーション ページに移動します。 **管理** セクションで、 **API のアクセス許可** を選択します。 **Azure key vault** にアクセスするためのアクセス許可を追加します。 このアクセス許可については、**アクセス ポリシー** を選択します。 テンプレートに **シークレットの管理** を使用し、**取得**、**一覧**、**復号化**、**暗号化** オプションを選択します。 
 5. Commerce Headquarters で、**システム管理 \> 設定 \> Key Vault パラメーター** に移動し、Key Vault に必要な情報を入力します。 次に、**Key Vault クライアント** フィールドに手順 4 で使用したアプリケーション ID を入力して、Commerce が Key Vault でシークレットにアクセスできるようにします。
-6. ステップ 1 で作成したアプリケーションを安全なアプリケーション (セーフ リストとも呼ばれます) の一覧に追加するには、Customer Insights にアクセスして、アプリケーションへの **表示** アクセスを選択します。 手順については、[アクセス許可](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions)を参照してください。
+6. ステップ 1 で作成したアプリケーションを安全なアプリケーション (セーフ リストとも呼ばれます) の一覧に追加するには、Customer Insights にアクセスして、アプリケーションへの **表示** アクセスを選択します。 手順については、[アクセス許可](/dynamics365/ai/customer-insights/pm-permissions)を参照してください。
 7. Commerce HQ の **システム管理 > 設定 >  Key Vault パラメーター** ページで、以下の説明に従ってフィールドを更新します。 
 
 - **Key Vault URL** : "KeyVaultURL" (上記の手順 3 から)。

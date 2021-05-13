@@ -4,8 +4,6 @@ description: この記事では、ワンボックス開発環境の推奨構成�
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 23361
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7fa40f8f48196815ca4cbce379a21041a4677ee
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 754621f215e34dbc334a7500d8dd519fb4e21098
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750360"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866079"
 ---
 # <a name="configure-one-box-development-environments"></a>1 ボックス開発環境の構成
 

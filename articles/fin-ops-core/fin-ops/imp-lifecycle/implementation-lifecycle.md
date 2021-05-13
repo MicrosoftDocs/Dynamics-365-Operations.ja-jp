@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 575641b82dadd85c408c53a3ebea278b00bc1f31
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cadd3a0cdc4dfb0930e0be19e2345a732a9c24f5
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751844"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923462"
 ---
 # <a name="implementation-lifecycle-management-home-page"></a>実装ライフサイクル管理ホーム ページ
 
@@ -27,7 +27,7 @@ ms.locfileid: "5751844"
 
 ## <a name="programs"></a>プログラム
 
-[Microsoft FastTrack](https://aka.ms/D365FastTrackDocs)
+[Microsoft FastTrack](/dynamics365/fasttrack/)
 
 ## <a name="tools"></a>ツール
 

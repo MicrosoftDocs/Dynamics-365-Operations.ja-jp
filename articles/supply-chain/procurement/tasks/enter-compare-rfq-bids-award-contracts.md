@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811993"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920584"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>RFQ 入札価格の入力と比較および契約の授与
 
@@ -32,7 +32,7 @@ ms.locfileid: "5811993"
 
 ## <a name="enter-a-reply-as-a-vendor"></a>仕入先として返信を入力する
 
-1. ダッシュボードで、**仕入先の入札** を選択します。
+1. **仕入先コラボレーション \> ワークスペース \> 仕入先の入札** の順に移動します。
 2. **新しい入札の招待** の一覧で、送信したばかりの RFQ を見つけます。 RFQ を選択して、要求された内容を確認します。
 3. 追加された添付ファイルを確認するには、**RQF 添付ファイル** を選択します。
 4. フィールドを編集できるようにするには、**入札** を選択します。 **入札進捗状況** フィールドが **仕入先が更新中** に設定されていることを確認します。

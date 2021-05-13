@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 471f3609b9c930b6362ea1f86f051f3fc9806053
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59c343b7e23d053d0b0411cd86a78063ced8c8cb
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793031"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936926"
 ---
 # <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジットカードの処理
 
@@ -84,7 +84,7 @@ ms.locfileid: "5793031"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[オムニチャネル支払の概要](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[オムニチャネル支払の概要](../omni-channel-payments.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

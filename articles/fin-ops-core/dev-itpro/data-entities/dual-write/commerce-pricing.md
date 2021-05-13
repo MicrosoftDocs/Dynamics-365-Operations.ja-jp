@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: shajain
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-11-03
-ms.openlocfilehash: 364cc5adf0358ffa952750149ad31d62cbd35e87
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fa93b1262049d80148ff23b3d7223ec0f6c2fe68
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751437"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941169"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>Dynamics 365 Sales で Dynamics 365 Commerce 価格決定エンジンを使用する
 
@@ -31,7 +31,7 @@ ms.locfileid: "5751437"
 
 Dynamics 365 Commerce 価格設定エンジンは、店舗レベルの価格設定、提携ベースの価格設定、ロイヤルティ ベースの価格設定、組み合わせ割引、数量割引、しきい値割引など、ほとんどの B2C (企業と一般消費者) 価格設定のシナリオに対応しています。 価格決定エンジンでは、複雑なルールを使用して、特定の見積または注文に対して最適な価格を決定します。
 
-[デュアル書き込み](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview)を使用する場合は、価格決定のニーズに対して 3 つのオプションがあります。 この静的な価格決定は、Dynamics 365 Sales の価格表、Dynamics 365 Supply Chain Management の価格決定エンジン、または Dynamics 365 Commerce の価格決定エンジンを使用して行うことができます。 これらのオプションの中でも、 Commerce の価格設定エンジンは B2C シナリオに最適です。
+[デュアル書き込み](./dual-write-overview.md)を使用する場合は、価格決定のニーズに対して 3 つのオプションがあります。 この静的な価格決定は、Dynamics 365 Sales の価格表、Dynamics 365 Supply Chain Management の価格決定エンジン、または Dynamics 365 Commerce の価格決定エンジンを使用して行うことができます。 これらのオプションの中でも、 Commerce の価格設定エンジンは B2C シナリオに最適です。
 
 ## <a name="use-the-commerce-pricing-engine-in-sales"></a>Sales で Commerce の価格設定エンジンを使用する
 
@@ -42,7 +42,7 @@ Dynamics 365 Commerce 価格設定エンジンは、店舗レベルの価格設�
 
 ## <a name="prerequisites"></a>必要条件
 
-- Commerce の価格エンジンを Sales で使用するには、事前に [デュアル書き込みにおける見込顧客から売上へのプロセス](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/) の手順を実行しておく必要があります。
+- Commerce の価格エンジンを Sales で使用するには、事前に [デュアル書き込みにおける見込顧客から売上へのプロセス](./dual-write-prospect-to-cash.md) の手順を実行しておく必要があります。
 - 以下の手順で、手動入力の売買契約評価をオフにする必要があります。
 
     1. Commerce 環境で、**売掛金勘定 \> 設定 \> 売掛金勘定パラメーター** に移動します。
@@ -50,7 +50,7 @@ Dynamics 365 Commerce 価格設定エンジンは、店舗レベルの価格設�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[二重書き込みの見込顧客を現金化](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+[二重書き込みの見込顧客を現金化](./dual-write-prospect-to-cash.md)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

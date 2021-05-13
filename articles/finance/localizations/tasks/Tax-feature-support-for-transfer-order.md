@@ -2,7 +2,7 @@
 title: 移動オーダーに対する税機能のサポート
 description: このトピックでは、税計算サービスを使用した移動オーダーの新しい税機能のサポートについて説明します。
 author: kailiang
-ms.date: 03/10/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 55597e4f0f40677e793b4c182e4b0ced01057751
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832564"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920958"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>移動オーダーに対する税機能のサポート
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [banner](../../includes/preview-banner.md)]
 
 このトピックでは、移動オーダーの税計算と転記の統合に関する情報を提供します。 この機能により、在庫移動の移動オーダーで税計算および転記を設定できます。 欧州連合 (EU) の付加価値税 (VAT) 規制では、在庫移動は EU 内供給および EU 内取得と見なされます。
 

@@ -12,12 +12,12 @@ ms.custom: 197023
 ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 9c4a866530b65e1efe29a79787760be3db501ad9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ea17217f8f7d20b068434d7c2cbaf2d3f63db742
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750352"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921103"
 ---
 # <a name="requirements-for-publishing-apps-on-appsource"></a>AppSource でアプリを公開するための要件
 
@@ -32,7 +32,7 @@ Microsoft AppSource の Lifecycle Services (LCS) ソリューション パッケ
 -   [データベースのバックアップ](database-backup-lcs-solutions.md) および [データ パッケージ](process-data-packages-lcs-solutions.md)
 -   [ビジネス プロセス モデル](business-process-modeler-libraries-lcs-solutions.md)
 -   [方法](methodologies-lcs-solutions.md)
--   [マーケティング](marketing-content-lcs-solutions.md)
+-   [マーケティング](/azure/marketplace/partner-center-portal/create-new-operations-offer)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

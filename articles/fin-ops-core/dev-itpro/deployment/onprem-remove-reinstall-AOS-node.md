@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: cfe0a10f9c0b1376f433f40593377e6d91cd43ce
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3d522fcb3a3f3572a771dc762076d151981e67ce
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745325"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923263"
 ---
 # <a name="remove-and-reinstall-or-add-an-aos-node"></a>AOS ノードの削除と再インストール、または追加
 
@@ -29,7 +29,7 @@ ms.locfileid: "5745325"
 
 ### <a name="option-1-use-a-configuration-file-preferred-option"></a>オプション 1：構成ファイルを使用する (推奨オプション)
 
-**参照ドキュメント：**[Windows Server で実行されているスタンドアローンの Service Fabric Cluster へのノードの追加または削除](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes)
+**参照ドキュメント：**[Windows Server で実行されているスタンドアローンの Service Fabric Cluster へのノードの追加または削除](/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes)
 
 1. Service Fabric エクスプローラー で、**クラスター** を選択し、Microsoft Service Fabric Cluster のバージョンをメモします。 この例では、クラスター バージョンが **6.5.676.9590** となっています。
 
@@ -153,7 +153,7 @@ ms.locfileid: "5745325"
 
     クラスタ構成のアップグレード中に、**Add-ServiceFabricNode** コマンドを使用して既にノードが追加されているというエラーメッセージが表示された場合は、バージョン番号以外の構成ファイルを変更せずに構成のアップグレードを実行する必要があります。 この目的では、**Get-ServiceFabricClusterConfiguration** と **Start-ServiceFabricClusterConfigurationUpgrade** コマンドを使用することができます。
 
-    ![コマンドと結果の取得](media/329b9c2bd807d7bca96e106037504e0e.png)
+    ![バージョン番号以外の構成ファイルを変更せずに構成のアップグレードを実行します。](media/329b9c2bd807d7bca96e106037504e0e.png)
 
     また、 Service Fabric エクスプローラー で進行状況を確認することもできます。
 
@@ -213,7 +213,7 @@ ms.locfileid: "5745325"
 2. 既存のクラスターに新しいサーバーを追加する場合は、ConfigTemplate .xml ファイルを更新することで追加情報を含めることができます。 この情報は、前提条件を押し出して、Windows PowerShell スクリプトを使用して設定を適用する際に使用されます。
 3. AOS サーバーのローカル管理者グループに **AXServiceUser** と **svc-AXSF\$** グループのマネージド サービス アカウント (gMSA) が追加されていることを確認してください。
 
-    サーバーをドメインに接続した後は、[オンプレミス環境 (プラットフォーム更新プログラム 12 以降) の設定と展開](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine) に記載されているオンプレミス環境の前提条件に従う必要があります。 次の手順は、これら前提条件の手順をまとめたものです。
+    サーバーをドメインに接続した後は、[オンプレミス環境 (プラットフォーム更新プログラム 12 以降) の設定と展開](./setup-deploy-on-premises-pu12.md#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine) に記載されているオンプレミス環境の前提条件に従う必要があります。 次の手順は、これら前提条件の手順をまとめたものです。
 
 4. それぞれのインフラストラクチャ \\VMs\<VMName\> フォルダの内容を、対応する仮想マシン (VM) にコピーします。 （リモート スクリプトを使用している場合は、コンテンツが自動的に対象のVMにコピーされます。）続いて、次の Windows PowerShell スクリプトを管理者として実行します。
 

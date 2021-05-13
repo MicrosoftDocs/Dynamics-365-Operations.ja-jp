@@ -1,6 +1,6 @@
 ---
 title: 最新バージョンへのセルフサービス アップグレード
-description: このトピックでは、Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
+description: このトピックでは、Finance and Operations の最新の更新プログラムに移行するためのプロセスについて説明します。
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 75b7f272139a8650723b5af3ef7dca03924fee0d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d3c956fac6c57fbd655155731c1d4d10a0ec60ef
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743935"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908254"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 
@@ -203,7 +203,7 @@ ms.locfileid: "5743935"
 
 サンドボックス UAT 環境でアップグレードをコミットした後、サンドボックス環境でアップグレード プロセスを完了します。 実稼働環境で、同じプロセスを開始できるようになりました。 実行する手順は同じです。
 
-実稼働環境のアップグレード時に非常に長いダウンタイムを引き起こす問題が発生した場合、[実稼働環境の停止の報告](https://docs.microsoft.com/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage)プロセスを使用して、Microsoft に知らせてサポートを受けます。
+実稼働環境のアップグレード時に非常に長いダウンタイムを引き起こす問題が発生した場合、[実稼働環境の停止の報告](/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage)プロセスを使用して、Microsoft に知らせてサポートを受けます。
 
 ### <a name="upgrade-additional-environments"></a>追加の環境のアップグレード
 

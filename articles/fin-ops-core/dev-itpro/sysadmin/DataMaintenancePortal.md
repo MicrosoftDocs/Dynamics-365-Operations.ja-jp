@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 925a1d85a394c7dbed831e3fa440c892187e9817
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9e4b75f260376ad9801ec8ec03f98e7187fed3ad
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751342"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906635"
 ---
 # <a name="data-maintenance"></a>データ管理
 
 [!include[banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 データ管理によって、単純なスケジューリング プロセスを実行して、環境内のデータの不整合を検出または修正できます。
 

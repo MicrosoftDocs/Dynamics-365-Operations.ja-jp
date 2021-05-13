@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: abde2b773f88ae5ef8cdd55d326bd09f4adc44e2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 869f7a86991c8befc3cfd3db55d1a96f4b350d75
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791183"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5959985"
 ---
 # <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations のデプロイのための Commerce 支払パッケージの作成
 
@@ -53,8 +53,13 @@ ms.locfileid: "5791183"
 7. すべての支払コネクタ アセンブリとその依存関係を、プロジェクトに参照として追加します。
 
     ![参照ダイアログ ボックスの追加](./media/Reference.png)
+    
+[!NOTE]
+> すべての支払いコネクタ dll は移動可能である必要があります。移動可能および移動不可の支払いコネクタ dll があると、コネクタの読み取り時に問題が発生します。
 
 8. 拡張機能を実装するのに HTML と CSS ファイルが必要な場合 、それらをリソース ファイルとしてプロジェクトに追加します。 配置中は、HTML ファイルが AosService\WebRoot\Resources\Html フォルダーにコピーされます。 CSS ファイルは AosService\WebRoot\Resources\Styles フォルダーにコピーされ、次の URL 形式を使用してアクセスすることができます。
+
+例: GetPaymentAcceptPoint の実装は、必要に応じてこの URL を返す更新する必要があります。
 
 ```
 https://AOSUrl/resources/html/Myhtml.html
@@ -66,7 +71,7 @@ https://AOSUrl/resources/styles/Mycss.css
 9. 支払コネクタに関連付けられているその他の支払 X++ 拡張機能がない場合、ソリューションをビルドします。
 
 > [!NOTE]
-> 他の拡張機能パッケージが存在しない場合は、次の手順に進みます。 追加の拡張機能パッケージがある場合は、すべてを 1 つの配置可能なパッケージに結合させます。 これを行わないと、このパッケージは他のパッケージを上書きします。 詳細については、「[オールインワン配置可能パッケージ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages)」を参照してください。
+> 他の拡張機能パッケージが存在しない場合は、次の手順に進みます。 追加の拡張機能パッケージがある場合は、すべてを 1 つの配置可能なパッケージに結合させます。 これを行わないと、このパッケージは他のパッケージを上書きします。 詳細については、「[オールインワン配置可能パッケージ](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md)」を参照してください。
 
 10. 配備可能なパッケージを作成するには、**Dynamics 365** メニューで、**配置 \> 配置パッケージの作成** を選択します。
 11. 以前に作成したモデルを選択し、パッケージ ファイルの場所を指定してから、**作成** を選択します。

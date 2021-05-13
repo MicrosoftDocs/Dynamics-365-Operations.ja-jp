@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745266"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921426"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -37,7 +37,7 @@ ms.locfileid: "5745266"
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 プラットフォーム更新プログラム 31
 
@@ -147,7 +147,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | 他の Dynamics および Office 製品のヘッダー配置。 詳細については、[Office のヘッダーに対応した更新済みのナビゲーション バー](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar) を参照してください。
+| **廃止 / 削除の理由** | 他の Dynamics および Office 製品のヘッダー配置。 詳細については、[Office のヘッダーに対応した更新済みのナビゲーション バー](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar) を参照してください。
 | **別の機能で置き換えられているか?**   | プラットフォーム更新プログラム 24 から開始し、検索機能を持つ再スタイルされたナビゲーション バーを追加しました。 |
 | **影響を受ける製品領域**         | Web クライアント |
 | **配置オプション**              | すべて |
@@ -161,7 +161,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | グリッド内の既定アクションのレガシ動作は、グリッド列が個人用設定より変更された後、既定アクションのリンクで予期外の列になります。 新しい既定の付箋アクションの機能は、これを修正します。 詳細については、[グリッド内の既定の付箋アクション](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action) を参照してください。 |
+| **廃止 / 削除の理由** | グリッド内の既定アクションのレガシ動作は、グリッド列が個人用設定より変更された後、既定アクションのリンクで予期外の列になります。 新しい既定の付箋アクションの機能は、これを修正します。 詳細については、[グリッド内の既定の付箋アクション](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action) を参照してください。 |
 | **別の機能で置き換えられているか?**   | プラットフォーム更新プログラム 21 以降は、「既定の付箋アクション」の機能が導入されました。 この機能は、**クライアント パフォーマンス オプション** ページで有効です。 |
 | **影響を受ける製品領域**         | Web クライアントのグリッド |
 | **配置オプション**              | すべて |
@@ -172,7 +172,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | フィルタリング結果の「いずれか」は、これが最終的に唯一のフィルタリング結果の「いずれか」になる計画で、プラットフォーム更新プログラム 22 で再設計を通過しました。 |
-| **別の機能で置き換えられているか?**   | プラットフォーム更新プログラム 22 以降、改善されたフィルタリング結果の「いずれか」は、**クライアント パフォーマンス オプション** ページで利用可能になりました。 詳細については、[フィルタリング結果のいずれかは最適化](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering) 参照してください。 |
+| **別の機能で置き換えられているか?**   | プラットフォーム更新プログラム 22 以降、改善されたフィルタリング結果の「いずれか」は、**クライアント パフォーマンス オプション** ページで利用可能になりました。 詳細については、[フィルタリング結果のいずれかは最適化](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering) 参照してください。 |
 | **影響を受ける製品領域**         | Web クライアント |
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: 2020 年 4 月以降、改善された結果の「いずれか」は、レガシ動作に戻すメカニズムなしで、既定動作になります。 |
@@ -1333,7 +1333,7 @@ Dynamics AX 2012 R3 では Retail サーバーは、HTTP 通信 (保護されて
 
 ### <a name="virtual-company-accounts"></a>仮想会社
 
-仮想会社の機能は、Dynamics AX ではサポートされていません。 仮想会社の機能で、ユーザーは一連の会社で共有できるテーブルを設定できます。 機能の説明については、「[会社コードと仮想会社コード](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx)」を参照してください。 その機能は、既存の「実在する」会社のグループの仮想会社に割り当てられたコレクションに、テーブルをグループ化することで動作します。 仮想会社内の会社すべてが、関連付けられたテーブル コレクションのテーブルにあるデータにアクセスできるように、クエリが作成されます。
+仮想会社の機能は、Dynamics AX ではサポートされていません。 仮想会社の機能で、ユーザーは一連の会社で共有できるテーブルを設定できます。 機能の説明については、「[会社コードと仮想会社コード](../../fin-ops/get-started/ax4-content-retired.md)」を参照してください。 その機能は、既存の「実在する」会社のグループの仮想会社に割り当てられたコレクションに、テーブルをグループ化することで動作します。 仮想会社内の会社すべてが、関連付けられたテーブル コレクションのテーブルにあるデータにアクセスできるように、クエリが作成されます。
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

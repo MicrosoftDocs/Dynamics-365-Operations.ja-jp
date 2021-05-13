@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: c395d26725b8374eae0e935ae53d61645c5c4bcb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6bbf1e1ef6a65bb30249de4817ecb546b5c9f051
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750940"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866088"
 ---
 # <a name="table-map-extension"></a>テーブル マップ拡張
 

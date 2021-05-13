@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a134edd97e261222daab0acd764ba8c414a02a48
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 410fa6e32ba7c2f6f5260120f99d3a2ae7d927d0
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752728"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920843"
 ---
 # <a name="lifecycle-services-resources"></a>Lifecycle Services のリソース
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and O
 -   [Lifecycle Services (LCS) 内のカスタマイズ分析](./ax-2012/customization-analysis-lcs.md)
 -   [Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール](./ax-2012/infrastructure-estimator-lcs.md)
 -   [Lifecycle Services (LCS) での問題検索](issue-search-lcs.md)
--   [Lifecycle Services (LCS) のライセンス数見積もりツール](./ax-2012/license-sizing-estimator-lcs.md)
+-   [Lifecycle Services (LCS) のライセンス数見積もりツール](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)
 -   [提案依頼 (RFP) の応答](./ax-2012/rfp-responses-lcs.md)
 -   [Lifecycle Services (LCS) のシステム診断](./ax-2012/system-diagnostics-lcs.md)
 -   [Lifecycle Services (LCS) におけるアップグレード分析](./ax-2012/upgrade-analysis-lcs.md)

@@ -2,7 +2,8 @@
 title: 配送オプション モジュール
 description: このトピックでは、配送オプション モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
-ms.date: 08/05/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,26 +15,27 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f97dcd42e22e319d9af7cbf57fce7c10d8565d04
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 12b0281a27dcf5f567bcd6be5530fa8e26a4ae99
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801999"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937485"
 ---
 # <a name="delivery-options-module"></a>配送オプション モジュール
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、配送オプション モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 
 配送オプション モジュールを使用すると、顧客は、オンライン注文の配送や受取などの配送方法を選択できます。 配送モードを決定するには、配送先住所が必要です。 配送先住所が変更になると、配送オプションを再度取得する必要があります。 注文に店舗で受け取る品目のみが含まれる場合、このモジュールは自動的に非表示になります。
 
-配送モードのコンフィギュレーションについては、[オンライン チャネル設定](channel-setup-online.md) と [配送モードの設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery) を参照してください。
+配送モードのコンフィギュレーションについては、[オンライン チャネル設定](channel-setup-online.md) と [配送モードの設定](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery) を参照してください。
 
 各配送モードでは、関連付けられている料金を持つことができます。 オンライン ストアの諸費用を設定する方法の詳細については、[オムニ チャネルの高度な自動請求](omni-auto-charges.md) を参照してください。
 
-Commerce バージョン 10.0.13 では、配送オプション モジュールが、**比例配分なしのヘッダー料金** と **明細行手数料での配送** 機能をサポートするように更新されました。 比例配分がオフになっている場合、電子商取引ワークフローでは、カート内の品目に対して配送の混合モードを許可しないことが予想されます (つまり、いくつかの品目は配送用に選択されていますが、他の品目は受取用に選択されています)。 **比例配分なしのヘッダー料金** 機能を使用するには、**チャネルで一貫した配送モード処理を有効にする** フラグを Commerce Headquarters でオンにする必要があります。 フラグがオンになっているとき、送料は Commerce Headquarters でのコンフィギュレーションに応じて、ヘッダー レベルまたは明細行レベルのいずれかで適用されます。
+Commerce バージョン 10.0.13 では、配送オプション モジュールが、**比例配分なしのヘッダー料金** と **明細行手数料での配送** 機能をサポートするように更新されました。 比例配分がオフになっている場合、電子商取引ワークフローでは、カート内の品目に対して配送の混合モードを許可しないことが予想されます (つまり、いくつかの品目は配送用に選択されていますが、他の品目は受取用に選択されています)。 **比例配分なしのヘッダー料金** 機能を使用するには、**チャネルで一貫した配送モード処理を有効にする** フラグが Commerce 本社でオンになっている必要があります。 機能フラグがオンになっているとき、送料は Commerce 本社でのコンフィギュレーションに応じて、ヘッダー レベルまたは明細行レベルのいずれかで適用されます。
 
 Fabrikam のテーマは、一部の品目が配送用に選択されていて、その他の品目が受取用に選択される、配送の混合モードをサポートします。 このモードでは、発送方法として選択されたすべての品目について、送料が比例配分になります。 配送の混在モードを機能させるには、最初に、**比例配分ありのヘッダー料金** 機能を Commerce Headquarters でコンフィギュレーションする必要があります。 このコンフィギュレーションの詳細については、[ヘッダー料金を販売明細行と一致するよう比例配分する](pro-rate-charges-matching-lines.md) を参照してください。
 
@@ -50,6 +52,7 @@ Fabrikam のテーマは、一部の品目が配送用に選択されていて�
 | ヘッダー | ヘッダー テキストとヘッダー タグ (**H1**、**H2**、**H3**、**H4**、**H5**、または **H6**) | 配送オプションモジュールのオプション ヘッダー。 |
 | カスタム CSS クラス名 | テキスト | 該当する場合、このモジュールをレンダリングするために使用される カスタム カスケード スタイル シート (CSS) クラス名。 |
 | フィルター配送モードのオプション | **フィルター処理しない** または **非発送モード** | 配送オプション モジュールがすべての発送以外の配送モードを除外するかどうかを指定する値。 |
+| 配送オプションの自動選択 | **フィルター処理しない**、**配送オプションを自動選択して集計を表示する**、または **配送オプションを自動選択して集計を表示しない** | このプロパティは、ユーザーが選択しなくても、最初に使用可能な配送オプションを自動的にチェック アウトに適用します。 このオプションは、使用可能な配送オプションが 1 つしかない場合にのみ使用します。 このプロパティは、Commerce バージョン 10.0.19 リリース以降でサポートされています。 |
 
 ## <a name="add-a-delivery-options-module-to-a-checkout-page-and-set-the-required-properties"></a>チェックアウト ページに配送オプション モジュールを追加して必要なプロパティを設定する
 
@@ -77,7 +80,7 @@ Fabrikam のテーマは、一部の品目が配送用に選択されていて�
 
 [ヘッダー料金を販売明細行と一致するよう比例配分する](pro-rate-charges-matching-lines.md)
 
-[荷渡方法の設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[荷渡方法の設定](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

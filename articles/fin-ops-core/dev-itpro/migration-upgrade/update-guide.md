@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 15a54b0d5fa6ec2d19a70a361ba5580640d5af33
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 72b09c1ee1d5026c72428ec83f2ba58a88931537
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743907"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908252"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>Finance and Operations の更新とカスタム コード ライフサイクルの管理
 
@@ -140,7 +140,7 @@ ms.locfileid: "5743907"
 
 カスタム コードの新しいバージョンをリリースする準備ができたら、**メイン** 分岐に基づく新しいリリース分岐を作成します。 この例では、**メイン** に基づいて **2020-July** という名前の新しいリリース分岐を作成します。
 
-コードの特定の分岐に基づく特定の作業項目で作業しているときに、個々の開発者が作業するプライベート分岐がある場合があります。 作業が完了すると、プライベート分岐は親分岐にマージされます。 詳細については、[Team Foundation バージョン管理 (TFVC) の分岐戦略と効果的な戦略の選択方法について](https://docs.microsoft.com/azure/devops/repos/tfvc/branching-strategies-with-tfvc) を参照してください。
+コードの特定の分岐に基づく特定の作業項目で作業しているときに、個々の開発者が作業するプライベート分岐がある場合があります。 作業が完了すると、プライベート分岐は親分岐にマージされます。 詳細については、[Team Foundation バージョン管理 (TFVC) の分岐戦略と効果的な戦略の選択方法について](/azure/devops/repos/tfvc/branching-strategies-with-tfvc) を参照してください。
 
 ## <a name="apply-the-next-version-of-a-microsoft-service-update"></a><a id="apply-next-update"></a>Microsoft サービス更新プログラムの次のバージョンを適用する
 

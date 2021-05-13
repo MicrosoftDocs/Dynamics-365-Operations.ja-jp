@@ -2,7 +2,7 @@
 title: Dynamics Service Engineering チームへのサービス要求の送信
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。
 author: laneswenka
-ms.date: 02/16/2021
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 4aa13c2108fa505bb63f2ebfc80b9a2c45faa2ca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d4742b52c5f1496c1769c23db412b4d2a42c72f2
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750538"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906687"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
@@ -28,7 +28,9 @@ ms.locfileid: "5750538"
 サービス要求は、Dynamics サービス エンジニア リング (DSE) チームがお客様の環境で事前定義された一連のタスクを実行することを要求するために使用するチケットです。
 
 > [!NOTE]
-> 製品問題にサービス要求を使用しないでください。 このトピックに記載されているタスクに適合しない状況が発生した場合は、代わりにサポート チケットを提出します。 サポート チケットの詳細については、[Finance and Operations アプリまたは Lifecycle Services (LCS) のサポート情報を取得する](lcs-support.md) をご覧ください。
+> サービス要求は、**Microsoft 管理** の環境に対してのみ必要です。 ほとんどの環境はセルフ サービスです。 環境のタイプの詳細については、[クラウド配置の概要](../deployment/cloud-deployment-overview.md) を参照してください。
+
+> 製品の問題にサービス要求を使用しないでください。 このトピックに記載されているタスクに適合しない状況が発生した場合は、代わりにサポート チケットを提出します。 サポート チケットの詳細については、[Finance and Operations アプリまたは Lifecycle Services (LCS) のサポート情報を取得する](lcs-support.md) をご覧ください。
 
 Microsoft Dynamics Lifecycle Services (LCS) を使用して、DSE チームにサービス要求を直接送信することができます。 ユーザーの環境でどの要求が送信、実行、およびキャンセルされたか表示することもできます。
 

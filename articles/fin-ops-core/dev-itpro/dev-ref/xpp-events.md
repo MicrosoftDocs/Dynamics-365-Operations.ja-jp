@@ -4,22 +4,19 @@ description: このトピックでは、X++ のイベント用語とキーワー
 author: robinarh
 ms.date: 06/18/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150303
-ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7bc075802e785bae3b4d454105b7961b7b63371c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26707cdb07d3a20d999f52d6bab72a89a7a9a14d
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749946"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865902"
 ---
 # <a name="x-event-terminology-and-keywords"></a>X++ イベントの用語およびキーワード
 

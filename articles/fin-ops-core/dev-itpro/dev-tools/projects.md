@@ -4,8 +4,6 @@ description: Finance and Operations プロジェクト タイプは開発ツー�
 author: RobinARH
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31781
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 161cec9300479fe6185d4af3cd1638ac8b730594
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29a85dda7659be3b16e957fa64a7a12f49cd9ba4
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748789"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866232"
 ---
 # <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations プロジェクト タイプ
 

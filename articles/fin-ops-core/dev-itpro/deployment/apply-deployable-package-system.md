@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 63187c6daec191cc65a76b8d373f2c8de5dd0e3c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3076052a07713605500b832331137fad79627306
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745335"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941043"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
@@ -112,7 +112,7 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 
 アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、Cloud Scale Unit を初期化した場合は、コマース チャネル コンポーネントも更新する必要があります。 詳細については、[Retail Cloud Scale Unit の更新](Update-retail-channel.md) を参照してください。
 
-コンポーネント (Modern POS など) を使用している場合、環境内で更新プログラムと拡張機能を適用した後に、店舗内コンポーネントも更新する必要があります。 詳細については、[Modern POS (MPOS) の構成、インストール、有効化](../../../retail/retail-modern-pos-device-activation.md) を参照してください。
+コンポーネント (Modern POS など) を使用している場合、環境内で更新プログラムと拡張機能を適用した後に、店舗内コンポーネントも更新する必要があります。 詳細については、[Modern POS (MPOS) の構成、インストール、有効化](../../../commerce/retail-modern-pos-device-activation.md) を参照してください。
 
 ## <a name="packages-runbooks-and-the-axupdateinstaller-in-depth"></a>パッケージ、Runbook、および AXUpdateInstaller の詳細
 

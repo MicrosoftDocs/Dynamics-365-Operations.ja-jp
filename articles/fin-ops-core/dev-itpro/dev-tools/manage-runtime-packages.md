@@ -4,8 +4,6 @@ description: このトピックでは、サードパーティ ソリューショ
 author: jorisdg
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 26731
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73e565a7fb698027cf8eb13cffb929ff16706774
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d0c7ce2d04e2488635afbf5ed27988ff94267a03
+ms.sourcegitcommit: 5e7a918c9b7074916e350bf06518b89afaf2af18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753012"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "5873198"
 ---
 # <a name="manage-third-party-models-and-runtime-packages-by-using-source-control"></a>ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 
@@ -69,6 +67,13 @@ ms.locfileid: "5753012"
 6. 次のページで、**除外した項目** タブで、ファイルのいずれかをクリックし Ctrl + A キーを押してすべてのファイルを選択します。 選択ウィンドウの下部にある **項目を含める** をクリックします。 準備ができたら、**完了** をクリックします。
 7. **保留中の変更** ウィンドウを、**チーム エクスプローラー** ウィンドウから、または **表示** > **その他の Windows** > **保留中の変更** をクリックして開きます。
 8. 変更を確認してチェックイン コメントを入力し、**チェック イン** をクリックします。
+
+## <a name="including-source-controlled-third-party-packages"></a>ソース管理サード パーティ パッケージを含む
+
+前のセクションで説明したように、パッケージ バイナリをソース管理にチェックインした後、ビルドの自動化中に生成されたデプロイ可能なパッケージにバイナリを含めます。 次の 2 つのオプションがあります。
+
++ ビルド仮想マシンでは、標準のレガシー パイプラインがバイナリを自動的に検出し、生成するデプロイ可能なパッケージに含めます。
++ [新しいパイプライン](hosted-build-automation.md) を使用するか、レガシー パイプラインで新しいパッケージングタスクを使用して、[配置可能なパッケージを作成](pipeline-create-deployable-package.md) ドキュメントを確認してください。 このドキュメントには、配置可能なパッケージにソース管理されたオブジェクトを含む例があります。
 
 ## <a name="deploying-third-party-code"></a>サード パーティのコードを展開する
 モデルとランタイム パッケージはソース管理のため、他の開発環境を使用する他の開発者はソース管理の **最新を取得** 機能を使用してモデルとパッケージをワークスペースに同期させることができます。

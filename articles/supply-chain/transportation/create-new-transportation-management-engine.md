@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ced8b8d64ee9d12603c22559094929d29e430d6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c07f9bb6d8b8613757cb2098865cff88072885d1
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824090"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919783"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 
@@ -31,6 +31,7 @@ ms.locfileid: "5824090"
 輸送管理 (TMS) エンジンは、輸送管理で配送率を生成およびプロセスするために使用するロジックを定義します。 Supply Chain Management は、レート、輸送時間、および輸送中に越えるゾーンの数などのさまざまなパラメーターを計算する複数の異なるエンジン タイプを提供します。 この記事では、Microsoft Visual Studio 開発環境と Supply Chain Management 開発ツールを使用して新しい TMS エンジンを作成して展開する方法と、次に Operations でエンジンを設定する方法について説明します。 エンジンに関する詳細については、[輸送管理エンジン](transportation-management-engines.md) を参照してください。
 
 ## <a name="create-a-new-tms-engine"></a>新しい TMS エンジンを作成する
+
 このセクションでは、TMS エンジン実装を持つクラス ライブラリを作成する方法と、Supply Chain Management モデルからクラス ライブラリを参照する方法について説明します。
 
 1. 新しいエンジンを配置するには、エンジンを含めるモデルが必要です。 **Dynamics 365**&gt; **モデル管理** メニューで、**モデルの作成** をクリックして、新しいモデルを作成します。 **モデルの作成** ウィザードの最初のページで、モデル名を **TMSEngines** にします。 
@@ -113,6 +114,7 @@ ms.locfileid: "5824090"
     [![アプリケーション エクスプ ローラーの参照ノード内の新しいライブラリ](./media/061.png)](./media/061.png)
 
 ## <a name="deploy-the-tms-engine-as-a-package"></a>TMS エンジンをパッケージとして配置する
+
 サードパーティの TMS エンジンを配置する 1 つの方法は、配置パッケージを介することです。 実稼働環境では、この方法をお勧めします。 開発環境では、次のセクション「Supply Chain Management で TMS エンジンを設定する」で説明するように手動でアセンブリをコピーできます。 エンジンをパッケージとして展開するには、次の手順を実行します。
 
 1. **Dynamics 365** &gt; **配置** メニューで、<strong>配置パッケージの作成</strong> をクリックします。
@@ -120,9 +122,10 @@ ms.locfileid: "5824090"
 
    [![TMSEngines モデルの選択](./media/071.png)](./media/071.png)
 
-3. パッケージをターゲット環境に展開することができるようになりました。 チュートリアルについては、[配置可能パッケージのインストール](../../dev-itpro/deployment/install-deployable-package.md) を参照してください。
+3. パッケージをターゲット環境に展開することができるようになりました。 チュートリアルについては、[配置可能パッケージのインストール](../../fin-ops-core/dev-itpro/deployment/install-deployable-package.md) を参照してください。
 
 ## <a name="set-up-the-tms-engine-in-supply-chain-management"></a>Supply Chain Management での TMS エンジンの設定
+
 このセクションでは、TMS エンジンを使用するために Supply Chain Management を設定する方法、および作成した新しいエンジンをレート ショッピングで使用する方法を示します。 このセクションの例では、USMF デモ データ会社を使用しています。
 
 1. 「新しい TMS エンジンの作成」の説明に従って、新しいエンジンを作成します。
@@ -136,15 +139,21 @@ ms.locfileid: "5824090"
 
    [![新規出荷の配送業者の作成](./media/092.png)](./media/092.png)
 
-6. **工順ワークベンチの評価** ページで、**レート ショップ** をクリックします。 次のスクリーン ショットに示すように、SampleCarrier から 100.00 のレートが表示されます。 この例では、倉庫 24 から顧客 US-004 へのルートの輸送料を検索しています。 ただし、料金がハードコーディングされているために、100.00 の料金が常に表示されます。 
+6. **工順ワークベンチの評価** ページで、**レート ショップ** をクリックします。 次のスクリーン ショットに示すように、SampleCarrier から 100.00 のレートが表示されます。 この例では、倉庫 24 から顧客 US-004 へのルートの輸送料を検索しています。 ただし、料金がハードコーディングされているために、100.00 の料金が常に表示されます。
 
    [![工順ワークベンチの評価](./media/101.png)](./media/101.png)
 
 ## <a name="tips-and-tricks"></a>ヒントや秘訣
--   Supply Chain Management の開発ツールを使用している場合、ソリューションに新しいプロジェクトを追加すると便利です。 このプロジェクトをスタートアップ プロジェクトとして設定した場合、デバッグ セッションを開始すると、同じデバッグ セッションで X++ と C\# コードの両方のコードをデバッグできます。
--   ThirdPartyTMSEngines プロジェクトを変更して再コンパイルするたびに、アセンブリの結果をバイナリの場所に手動でコピーするか、展開パッケージを通じて展開する必要があります。 それ以外の場合、古いアセンブリを使用して実行される場合があります。
--   Supply Chain Management で TMS 固有の操作を実行した後、Internet Information Services (IIS) ワーカー プロセスによって ThirdPartyTMSEngines アセンブリが、ロックされアセンブリを更新することができなくなることがあります。 この場合、w3svc プロセスを再起動します。
 
+- Supply Chain Management の開発ツールを使用している場合、ソリューションに新しいプロジェクトを追加すると便利です。 このプロジェクトをスタートアップ プロジェクトとして設定した場合、デバッグ セッションを開始すると、同じデバッグ セッションで X++ と C\# コードの両方のコードをデバッグできます。
+- ThirdPartyTMSEngines プロジェクトを変更して再コンパイルするたびに、アセンブリの結果をバイナリの場所に手動でコピーするか、展開パッケージを通じて展開する必要があります。 それ以外の場合、古いアセンブリを使用して実行される場合があります。
+- Supply Chain Management で TMS 固有の操作を実行した後、Internet Information Services (IIS) ワーカー プロセスによって ThirdPartyTMSEngines アセンブリが、ロックされアセンブリを更新することができなくなることがあります。 この場合、w3svc プロセスを再起動します。
+
+### <a name="whitepaper"></a>ホワイト ペーパー
+
+詳細については、次のホワイト ペーパー (AX2012 をサポートするように記述されているが、Dynamics 365 Supply Chain Management にも適用される) をダウンロードしてください
+
+- [輸送管理エンジンの実装と展開](https://download.microsoft.com/download/b/5/f/b5ff8fef-3918-4c1d-92d5-b67eb0971684/ImplementingAndDeployingTransportationManagementEnginesInAX.pdf)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e1efada0dd3f3d012ba3d96978a62eb05ac276c5
-ms.sourcegitcommit: 3f2bcb8745e826efcf3d82194e1cb2a41e7e0bf2
+ms.openlocfilehash: 31cafee93d8fdaf9112d7d31201dc856bbaf7284
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5770148"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941240"
 ---
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 
@@ -59,9 +59,9 @@ FTP に依存するカスタマイズは、セルフサービスの配置では�
 
 - 2021 年 6 月まで、特定の AOS セッション中のすべての発信要求が同じ IP アドレスに設定されます。 これは、FTP などの一部のプロセスに影響を与える可能性があります。 Power Apps を使用してファイルを引き出し、Finance and Operations アプリに API 呼び出しを実行して、データ統合フレームワークを使用してファイルをインポートすることにより、FTP の使用を除去することをお勧めします。 詳細については、[データ エンティティ統合の概要](../data-entities/integration-overview.md) を参照してください。 特定の例には以下が含まれます。
 
-  - ([Azure Logic App での SFTP ファイルの監視、作成、および管理で説明されているように](https://docs.microsoft.com/azure/connectors/connectors-create-api-sftp))、ネイティブの SFTP コネクタを使用します。そのために、オン プレミス サービスを呼び出すためにファイアウォールでいくつかのポートを開いておく必要があります。 Logic Apps の場合、IP のリストは、全体の[地域の許可リスト ](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound)および [Power Automate での制限と構成](https://docs.microsoft.com/power-automate/limits-and-config#logic-apps)よりもはるかに短いことを考慮してください。
+  - ([Azure Logic App での SFTP ファイルの監視、作成、および管理で説明されているように](/azure/connectors/connectors-create-api-sftp))、ネイティブの SFTP コネクタを使用します。そのために、オン プレミス サービスを呼び出すためにファイアウォールでいくつかのポートを開いておく必要があります。 Logic Apps の場合、IP のリストは、全体の[地域の許可リスト ](/azure/logic-apps/logic-apps-limits-and-config#outbound)および [Power Automate での制限と構成](/power-automate/limits-and-config#logic-apps)よりもはるかに短いことを考慮してください。
 
-  - [発信 IP アドレス](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound) の説明に従って、オンプレミスのデータ ゲートウェイと組み合わせて、「ローカル ファイルシステム」コネクタを使用します。 詳細については、[Azure Logic Apps のオンプレミス データ ゲートウェイのインストール](https://docs.microsoft.com/azure/logic-apps/logic-apps-gateway-install) を参照してください。 このソリューションでは、非常に高いセキュリティ レベルを維持しながら、セルフサービス配置では非推奨の IP 許可リストの必要性を完全に排除します。
+  - [発信 IP アドレス](/azure/logic-apps/logic-apps-limits-and-config#outbound) の説明に従って、オンプレミスのデータ ゲートウェイと組み合わせて、「ローカル ファイルシステム」コネクタを使用します。 詳細については、[Azure Logic Apps のオンプレミス データ ゲートウェイのインストール](/azure/logic-apps/logic-apps-gateway-install) を参照してください。 このソリューションでは、非常に高いセキュリティ レベルを維持しながら、セルフサービス配置では非推奨の IP 許可リストの必要性を完全に排除します。
 
   - セルフサービス機能: セルフサービス機能への移行後に FTP シナリオが失敗した場合は、FTP サーバーのコンフィギュレーションを確認してください。 最も一般的なシナリオは、許可された [IP リスト](deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment)をセルフサービス環境の範囲で更新する必要があることです。
 

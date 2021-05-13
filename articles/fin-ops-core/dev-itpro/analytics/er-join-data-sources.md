@@ -2,7 +2,7 @@
 title: 複数のアプリケーション テーブルからデータを取得するには、ER モデル マッピングで結合データ ソースを使用します。
 description: このトピックでは、電子申告 (ER) で結合タイプのデータ ソースを使用する方法について説明します。
 author: NickSelin
-ms.date: 05/04/2020
+ms.date: 04/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: d42016b914d7992b6f4ae1c573eb8f867ba87e22
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743980"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944729"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>電子申告 (ER) モデル マッピングで複数のアプリケーション テーブルからデータを取得するには、結合データ ソースを使用します。
 
@@ -64,13 +64,13 @@ ms.locfileid: "5743980"
 
 また、まず[コンフィギュレーション プロバイダーを作成し、それを有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) にある手順を完了する必要もあります。
 
-事前に [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=000000) からダウンロードして、次のサンプル ER 構成ファイルをローカルに保存しておく必要があります。
+次のサンプル ER 構成ファイルも事前にダウンロードして保存する必要があります。
 
 | **コンテンツの説明**  | **ファイル名**   |
 |--------------------------|-----------------|
-| データ ソースとして使用される、サンプル **ER データ モデル** 構成ファイルの例を次に示します。| [結合データ ソース version.1.xml を知るためのモデル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER データ モデルを実行する、サンプル **ER モデル マッピング** 構成ファイルの例を次に示します。 | [結合データ ソース version.1.xml を知るためのマッピング](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| サンプル **ER フォーマット** 構成ファイル。 このファイルでは、例として ER フォーマット コンポーネントを設定するデータについて説明します。 | [結合データ ソース version.1.xml を知るためのフォーマット](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| データ ソースとして使用される、サンプル **ER データ モデル** 構成ファイルの例を次に示します。| [結合データ ソース version.1.xml を知るためのモデル](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
+| ER データ モデルを実行する、サンプル **ER モデル マッピング** 構成ファイルの例を次に示します。 | [結合データ ソース version.1.xml を知るためのマッピング](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| サンプル **ER フォーマット** 構成ファイル。 このファイルでは、例として ER フォーマット コンポーネントを設定するデータについて説明します。 | [結合データ ソース version.1.xml を知るためのフォーマット](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>コンフィギュレーション プロバイダーの有効化
 
@@ -123,18 +123,18 @@ ER モデル マッピング コンポーネントの設定を確認します。
 4. **詳細を表示** を選択します。
 5. 構成ツリーで、**Set1** および **Set1.Details** データ モデル項目を展開します。
 
-    1. **Details: Record list = Versions** のバインドは、**Set1.Details** 項目が **バージョン** データ ソースにバインドされていて、**ERSolutionVersionTable** テーブルのレコードを返すことを示します。 このテーブルの各レコードは、ER コンフィギュレーションの 1 つのバージョンを表します。 このテーブルの内容は、**バージョン** クイック タブ (**コンフィギュレーション** ページ) に表示されます。
+    1. **Details: Record list = Versions** のバインドは、**Set1.Details** 項目が **バージョン** データ ソースにバインドされていて、**ERSolutionVersionTable** テーブルのレコードを返すことを示します。 このテーブルの各レコードは、ER コンフィギュレーションの 1 つのバージョンを表します。 このテーブルの内容は、**バージョン** クイック タブ (**構成** ページ) に表示されます。
     2. **ConfigurationVersion: String = @.PublicVersionNumber** のバインドは、各 ER コンフィギュレーションのバージョンの公開バージョンの値が **PublicVersionNumber** フィールド (**ERSolutionVersionTable** テーブルの) から取得され、**ConfigurationVersion** 項目に配置されることを意味します。
     3. **ConfigurationTitle: String = @.'>Relations'.Solution.Name** のバインドは、ER コンフィギュレーションの名前が **名前** フィールド (**ERSolutionTable** テーブルの) から取得され、多対一の関係 (**> 関係**、**ERSolutionVersionTable** および **ERSolutionTable** テーブル間) を使用して評価することを示します。 現在のアプリケーション インスタンスの ER コンフィギュレーション名は、**コンフィギュレーション** ページの構成ツリーに表示されます。
     4. **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** のバインドは、現在のコンフィギュレーションを所有するコンフィギュレーション プロバイダーの名前が、**名前** フィールド (**ERVendorTable** テーブルの) から取得され、多対一の関係 (**ERSolutionTable** および **ERVendorTable** テーブル間) を使用することで評価することを意味します。 ER コンフィギュレーション名は、各コンフィギュレーションのページ ヘッダーの、**コンフィギュレーション** ページの構成ツリーに表示されます。 ER コンフィギュレーション プロバイダーの一覧全体は、**組織管理\>電子申告\>コンフィギュレーション プロバイダー** テーブルページにあります。
 
-    ![ER モデル マッピング デザイナーのページ](./media/GER-JoinDS-Set1Review.PNG)
+    ![ER モデル マッピング デザイナー ページ、バインド データ モデル項目のリスト](./media/GER-JoinDS-Set1Review.PNG)
 
 6. 構成ツリーで、**Set1.Summary** データ モデル項目を展開します。
 
     1. **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** は、**Set1.Summary.VersionsNumber** 項目が **VersionsNumber** アグリゲーション フィールドにバインドされていることを示します。これは **VersionsSummary** データ ソースの、**GroupBy** タイプで、**ERSolutionVersionTable** テーブルのレコード数を **バージョン** データ ソース経由で返すように構成されています。
 
-    ![GROUPBY データ ソース パラメーター ページ](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    !['Group By' パラメーター ページの編集](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. ページを閉じます。
 
@@ -144,11 +144,11 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
 1. 構成ツリーで、**Set2** および **Set2.Details** データ モデル項目を展開します。 **Details: Record list = Details** のバインドは、**Set2.Details** 項目が **Join** タイプのデータ ソースとして構成された **詳細** データ ソースにバインドされていることを示します。
 
-    ![ER モデル マッピング デザイナーのページ](./media/GER-JoinDS-Set2Review.PNG)
+    ![展開された Set2:Record データ モデル項目を表示する ER モデル マッピング デザイナー ページ](./media/GER-JoinDS-Set2Review.PNG)
 
     **結合** データ ソースは、**Functions\Join** データ ソースを選択することによって追加できます。
 
-    ![ER モデル マッピング デザイナーのページ](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![ER モデル マッピング デザイナー ページ、結合データ ソース タイプ](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. **詳細** データ ソースを選択します。
 3. **編集** を、**データ ソース** ウィンドウで選択します。
@@ -196,21 +196,21 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
     この形式は、ER 構成のバージョン (**バージョン** 順序) ごとに、生成されたテキスト ファイルに新しい行を挿入するように設計されています。 生成される各行には、現在の構成を所有する構成プロバイダー名、構成名、およびセミコロン記号で区切られた構成バージョンが含まれます。 生成されるファイルの最終行には、ER コンフィギュレーションの検出されたバージョン数が含まれます (**集計** シーケンス) 。
 
-    ![ER 形式デザイナーのページ](./media/GER-JoinDS-FormatReview.PNG)
+    ![ER 形式 デザイナー ページ、形式タブ](./media/GER-JoinDS-FormatReview.PNG)
 
     **データ** および **集計** データ ソースは、生成されたファイルにコンフィギュレーション バージョンの詳細を設定するために使用されます:
 
     - **Set1** データ モデルの情報は、ER 形式実行時に、ユーザー ダイアログ ページで **いいえ** を **セレクター** データ ソースに対して選択する際に使用されます。
     - **Set2** データ モデルの情報は、ユーザー ダイアログ ページで **はい** を **セレクター** データ ソースに対して選択する際に使用されます。
 
-    ![ER 形式デザイナーのページ](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![ER 形式 デザイナー ページ、マッピング タブ](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. **実行** を選択します。
 10. ダイアログ ページで、**いいえ** を **結合データ ソースの使用** フィールドで選択します。
 11. **OK** を選択します。
 12. 生成されたファイルを確認します。
 
-    ![ER ユーザー ダイアログ ページ](./media/GER-JoinDS-Set1Run.PNG)
+    ![電子申告パラメーターが JOIN データ ソースを使用しないで生成したファイル](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>ER 形式実行追跡の分析
 
@@ -224,7 +224,7 @@ ER モデル マッピング コンポーネントの設定を確認します。
     - **ERSolutionTable** は、**ERSolutionVersionTable** テーブルに含まれるコンフィギュレーション バージョン レコードの数だけ呼び出されますが、そのような呼び出しの数はパフォーマンス向上のため、所用時間が減ることがあります。
     - **ERVendorTable** は、**ERSolutionVersionTable** テーブルで検出されるコンフィギュレーション バージョン レコードの 2 倍呼び出されますが、そのような呼び出しの数も減ることがあります。
 
-    ![ER モデル マッピング デザイナーのページ](./media/GER-JoinDS-Set1Run2.PNG)
+    ![ER モデル マッピング デザイナー ページでの実行の統計](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. ページを閉じます。
 
@@ -236,7 +236,7 @@ ER モデル マッピング コンポーネントの設定を確認します。
 4. **OK** を選択します。
 5. 生成されたファイルを確認します。
 
-    ![ER ユーザー ダイアログ ページ](./media/GER-JoinDS-Set2Run.PNG)
+    ![電子申告パラメーターが JOIN データ ソースを使用して生成したファイル](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> ER 形式実行追跡の分析
 
@@ -249,11 +249,11 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
     - 必須フィールドにアクセスする、**ERVendorTable**、**ERSolutionTable**、および **ERSolutionVersionTable** テーブルからレコードを取得するため、アプリケーション データベースが 1 回呼び出されます。
 
-    ![ER モデル マッピング デザイナーのページ](./media/GER-JoinDS-Set2Run2.PNG)
+    ![ER モデル マッピング デザイナー ページのパフォーマンス統計の詳細](./media/GER-JoinDS-Set2Run2.PNG)
 
     - **詳細** データ ソースで構成された結合を使用して、コンフィギュレーション バージョン数を計算するのに、アプリケーション データベースが 1 回呼び出されます。
 
-    ![ER モデル マッピング デザイナーのページ](./media/GER-JoinDS-Set2Run3.PNG)
+    ![アプリケーション データベース呼び出しを示す ER モデル マッピング デザイナー ページ](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>制限
 

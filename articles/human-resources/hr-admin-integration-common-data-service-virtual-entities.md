@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 04997aba427ae6013c8154593b09ae1a45a580c3
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890055"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935756"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Dataverse の仮想テーブルを構成する
 
@@ -102,27 +102,15 @@ Microsoft ID プラットフォームがアプリとユーザーに対して認�
 
 Power Apps 環境に Dynamics 365 HR Virtual テーブルアプリをインストールして、仮想テーブルのソリューション パッケージを Dataverse にデプロイします。
 
-1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com)を開きます。
+1. Human Resources で、**Microsoft Dataverse の統合** ページを開きます。
 
-2. **環境** の一覧で、Human Resources のインスタンスに関連付けられている Power Apps 環境を選択します。
+2. **仮想テーブル** タブを選択します。
 
-3. ページの **リソース** セクションで、**Dynamics 365 アプリ** を選択します。
+3. **テーブル アプリのインストール** を選択します。
 
-4. **アプリのインストール** アクションを選択します。
+### <a name="configure-the-virtual-table-data-source"></a>仮想テーブル データ ソースの構成
 
-5. **Dynamics 365 HR 仮想テーブル** を選択し、**次へ** を選択します。
-
-6. サービス使用条件に同意することを確認してマークします。
-
-7. **インストール** を選択します。
-
-インストールには数分かかります。 完了したら、次の手順に進みます。
-
-![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストールします](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### <a name="configure-the-virtual-table-data-source"></a>仮想テーブル データ ソースの構成 
-
-次の手順では、Power Apps 環境で仮想テーブルのデータ ソースを構成します。 
+次の手順では、Power Apps 環境で仮想テーブルのデータ ソースを構成します。
 
 1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com)を開きます。
 
@@ -133,6 +121,9 @@ Power Apps 環境に Dynamics 365 HR Virtual テーブルアプリをインス�
 4. **ソリューションの正常性ハブ** で、アプリケーション ページの右上にある **高度な検索** アイコンを選択します。
 
 5. **高度な検索** ページの **検索対象** ドロップダウン リストで、**Finance and Operations 仮想データ ソースの構成** を選択します。
+
+   > [!NOTE]
+   > 前の設定手順から仮想テーブル アプリをインストールするには、数分かかる場合があります。 **Finance and Operations 仮想データ ソースの構成** がリストにない場合は、1 分ほど待ってからリストを更新してください。
 
 6. **結果** を選択します。
 
@@ -186,7 +177,7 @@ Human Resources でアクセス許可を付与するのは、次の 2 つの Azu
 
 設定が完了したら、Dataverse インスタンスで生成して有効にする仮想テーブルを選択できます。
 
-1. Human Resources で、**Dataverse の統合** ページを開きます。
+1. Human Resources で、**Microsoft Dataverse の統合** ページを開きます。
 
 2. **仮想テーブル** タブを選択します。
 
@@ -197,7 +188,7 @@ Human Resources でアクセス許可を付与するのは、次の 2 つの Azu
 
 4. **生成/更新** を選択します。
 
-![Dataverse の統合](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse の統合](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>テーブルの生成状態の確認
 

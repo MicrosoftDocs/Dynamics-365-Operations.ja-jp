@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a0ed5a9e89ba1e7854b1064ebfd655d271f0916
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 213476da0ef495978063818c8d4645cfc8205f21
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752204"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923556"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-4-february-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能
 
@@ -57,7 +57,7 @@ Microsoft Dynamics クラウド プラットフォームの継続的な更新サ
 
 [Power BI Embedded](../../dev-itpro/analytics/embed-power-bi-workspaces.md) は、すべてのユーザーが Dynamics 365 for Operations アプリケーションにバンドルされている分析データの豊富なグラフィカル ビューにアクセスできるようにします。 レポートは、Dynamics 365 for Operations アプリケーションに組み込まれています。 それらにアクセスするために必要な追加のライセンスはありません。
 
-PowerBI.com サービス統合を通じて提供される既存の[タイルピン留めエクスペリエンス](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)のサポートは継続されます。 このエンベデッド エクスペリエンス以外の PowerBI.com の機能にアクセスするには、Pro ライセンスを別途取得する必要があります。
+PowerBI.com サービス統合を通じて提供される既存の[タイルピン留めエクスペリエンス](/archive/blogs/dynamicsaxbi/pinning-power-bi-reports-to-dynamics-ax-client)のサポートは継続されます。 このエンベデッド エクスペリエンス以外の PowerBI.com の機能にアクセスするには、Pro ライセンスを別途取得する必要があります。
 
 ## <a name="build-and-release-workspaces-that-have-embedded-power-bi-reports"></a>Power BI レポートが埋め込まれているワークスペースのビルドおよびリリース
 
@@ -69,11 +69,11 @@ PowerBI.com サービス統合を通じて提供される既存の[タイルピ�
 
 ユーザーが ISV またはシステム インテグレーターである場合は、Microsoft Dynamics Lifecycle Services (LCS) ソリューションの一部として、(ナビゲーション エクスペリエンスと共に) [Power BI の有効化されたワークスペースをパッケージ化](../../dev-itpro/analytics/power-bi-embedded-integration.md) することができます。 顧客は同じ体験をしますが、PowerBI.com サブスクリプションは必要はありません。 このソリューションは、Dynamics 365 for Operations でのみ動作します。
 
-これらの機能およびその他の Power BI 機能に関する詳細については、[BI ブログ](https://blogs.msdn.microsoft.com/dynamicsaxbi/) を参照してください。
+これらの機能およびその他の Power BI 機能に関する詳細については、[BI ブログ](/archive/blogs/dynamicsaxbi/) を参照してください。
 
 ## <a name="mobility"></a>モビリティ
 
-Dynamics 365 for Operations のモバイル フレームワークを大幅に向上させました。これにより、パートナーは、固有で完全に機能的なモバイル エクスペリエンスとなるワークスペースを構築できます。 これらの新機能により、ユーザーはオンラインとオフラインの両方で Dynamics 365 for Operations とより簡単に対話できます。 モバイルフ レームワークは、iOS と Android デバイスをサポートするようになりました。 詳細については、次回の [Mobility ブログ](https://blogs.msdn.microsoft.com/Dynamics365forOperationsMobile/) を参照してください。
+Dynamics 365 for Operations のモバイル フレームワークを大幅に向上させました。これにより、パートナーは、固有で完全に機能的なモバイル エクスペリエンスとなるワークスペースを構築できます。 これらの新機能により、ユーザーはオンラインとオフラインの両方で Dynamics 365 for Operations とより簡単に対話できます。 モバイルフ レームワークは、iOS と Android デバイスをサポートするようになりました。 詳細については、次回の [Mobility ブログ](/archive/blogs/Dynamics365forOperationsMobile/) を参照してください。
 
 [![モバイル フレームワークを使用して構築されたワークスペース](./media/444444444444-1024x533.png)](./media/444444444444.png)
 
@@ -89,11 +89,3 @@ Dynamics 365 for Operations のモバイル フレームワークを大幅に向
 
 [![視覚的スケジューリング](./media/55555555555-1024x539.png)](./media/55555555555.png)
 
-## <a name="feedback"></a>フィードバック
-
-フィードバックを常に大切に扱います。 この更新処理の一環として、定期的に製品の推奨を評価するように要求されます。 お客様の経験の継続な向上に役立たせるために、このフィードバックのご提供をお願いいたします。 改善可能な領域の詳細情報を提供することも推奨します。
-
-[![フィードバックの確認](./media/6666666666-1024x453.png)](./media/6666666666.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

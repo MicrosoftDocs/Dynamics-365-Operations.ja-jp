@@ -2,7 +2,7 @@
 title: オンプレミス環境でのネットワーク プリンター デバイスのインストール
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) のオンプレミス展開を既存のネットワーク プリンター デバイスに接続する方法について説明します。
 author: RichdiMSFT
-ms.date: 11/13/2017
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0264a90912a62868ae46a8dde361fcf0fd502795
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0f9b76e3a6a814e90d0a98d68db7e3288ac7f82a
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744277"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924218"
 ---
 # <a name="install-network-printer-devices-in-on-premises-environments"></a>オンプレミス環境でのネットワーク プリンター デバイスのインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) のオンプレミス展開を既存のネットワーク プリンター デバイスに接続する方法について説明します。 オンプレミス アプリケーションでのネットワーク印刷は、Microsoft Windows Server 2016 の「[印刷およびドキュメント サービス](https://technet.microsoft.com/library/hh831468(v=ws.11).aspx)」機能でサポートされます。 この機能を使用すると、プリンター管理に関連するタスクを集中管理できます。 印刷およびドキュメント サービスをインストールして構成するには、Application Object Server (AOS) のプライマリー インスタンスをホストするサーバーへの管理アクセス権が必要です。
+このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) のオンプレミス展開を既存のネットワーク プリンター デバイスに接続する方法について説明します。 オンプレミス アプリケーションでのネットワーク印刷は、Microsoft Windows Server 2016 の「[印刷およびドキュメント サービス](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831468(v=ws.11))」機能でサポートされます。 この機能を使用すると、プリンター管理に関連するタスクを集中管理できます。 印刷およびドキュメント サービスをインストールして構成するには、Application Object Server (AOS) のプライマリー インスタンスをホストするサーバーへの管理アクセス権が必要です。
 
 ネットワーク印刷サービスの構成には、次の 2 つの役割があります。
 
@@ -38,17 +38,55 @@ ms.locfileid: "5744277"
 
 環境管理者は、このセクションの情報を使用してネットワーク印刷サービスを有効にします。
 
-1. [印刷およびドキュメント サービスのインストール](https://technet.microsoft.com/library/jj134159(v=ws.11).aspx)の手順に従って印刷およびドキュメント サービスをインストールします。
-2. 次の手順に従って印刷およびドキュメント サービスをコンフィギュレーションします [印刷およびドキュメント サービスのコンフィギュレーション](https://technet.microsoft.com/library/jj134163(v=ws.11).aspx)。
+1. [印刷およびドキュメント サービスのインストール](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134159(v=ws.11))の手順に従って印刷およびドキュメント サービスをインストールします。
+2. 次の手順に従って印刷およびドキュメント サービスをコンフィギュレーションします [印刷およびドキュメント サービスのコンフィギュレーション](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134163(v=ws.11))。
 3. AXService アプリケーションをホストするために使用する各サーバーに対して、これらの手順に従います。
-
     1. ローカル サーバーで、**ローカル ユーザーとグループ** マネージャーを開始します。
     2. **グループ** ノードを選択します。
     3. **出力演算子** を右クリックし、**グループへの追加** を選択します。
     4. グループに AXService アプリケーションを実行するために使用されるネットワーク Active Directory アカウントを追加します。
-    5. AXService ユーザー アカウントを使用してネットワーク プリンターをインストールします。 このステップにより、プリンター ドライバーが AXService ユーザー アカウントで使用できることが保証されます。
-    6. すべての接続が正しく構成されていることを確認するため、インストールされているプリンターのテスト ページを印刷します。
-    7. ユーザーのプロファイルが正しく読み込まれることを保証し、プリンターを参照できるようにするために、AXService アプリケーションを再起動します。
+
+> [!NOTE]
+> インフラストラクチャ スクリプトのバージョン 2.9.0 移行、アカウントは自動的に適切なグループに追加されます。
+
+### <a name="install-printers-on-nodes-where-axservice-is-executing-under-a-domain-account"></a>AXService がドメイン アカウントで実行されているノードにプリンターをインストール
+AXService がドメイン アカウントで実行されているノードにプリンターをインストールするには、次の手順に従います。
+
+1. AXService ユーザー アカウントを使用してネットワーク プリンターをインストールします。 このステップにより、プリンター ドライバーが AXService ユーザー アカウントで使用できることを確認します。
+2. すべての接続が正しく構成されていることを確認するため、インストールされているプリンターのテスト ページを印刷します。
+3. ユーザーのプロファイルが正しく読み込まれることを確認し、プリンターを見つけるために、AXService アプリケーションを再起動します。
+
+### <a name="install-printers-on-nodes-where-axservice-is-executing-under-a-group-managed-service-account-gmsa"></a>AXService がグループ管理サービス アカウント (gMSA) で実行されているノードにプリンターをインストール
+AXService が gMSA で実行されているノードにプリンターをインストールするには、次の手順に従います。
+
+> [!IMPORTANT]
+> このセクションには、少なくともバージョン 2.9.0 のインフラストラクチャ スクリプトが必要です。
+> また 、[SysInternals Suite](https://docs.microsoft.com/sysinternals/downloads/) をダウンロードする必要があります 。
+
+1. AOS が使用可能になる各プリンタのネットワーク上の場所を追加して、Printers.json ファイルを更新します。 例のエントリを必ず削除してください。 
+2. インフラストラクチャ スクリプト フォルダから次のコマンドを実行します。
+
+```powershell
+# Exports the script files to be executed on each VM into a directory VMs\<VMName>.
+.\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml    
+```
+
+3. 各 infrastructure\VMs\<VMName> フォルダーの内容を、対応する VM にコピーします。 (リモート処理スクリプトを使用している場合は、コンテンツが自動的に対象の VM にコピーされます。) 続いて、次のコマンドを管理者として実行します。
+
+> [!NOTE]
+> - 次の手順では、複数の VM での実行が必要です。 ただし、プロセスを簡略化するために、提供されるリモート処理スクリプトを使用できます。 これらのスクリプトを使用すると、**.\\Export-Scripts.ps1** コマンドの実行に使用されるのと同じコンピューターなど、単一のコンピューターから必要なスクリプトを実行できます。 リモート処理スクリプトが利用可能な場合、Windows PowerShell セクションの **\# If Remoting** コメントの後に宣言されます。
+> - リモート処理では [WinRM](/windows/win32/winrm/portal?redirectedfrom=MSDN) を使用します。 場合によっては、[CredSSP](/windows/win32/secauthn/credential-security-support-provider?redirectedfrom=MSDN) を有効にする必要があります。 リモート処理モジュールでは、実行ごとに CredSSP を有効または無効にします。 使用しない場合は、CredSSP を無効にすることをお勧めします。 そうしないと、資格情報の盗難リスクが伴います。 設定が完了したら、次のコマンドを実行します。
+> 
+> ```powershell
+> .\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml.
+> ```
+
+```powershell
+# If Remoting, execute
+# .\Install-PrintersOnGmsa-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite -ForcePushLBDScripts
+
+.\Install-PrintersOnGmsa.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
+```
 
 ## <a name="manage-network-printers"></a>ネットワーク プリンターの管理
 

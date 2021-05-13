@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3d0208805070aac394a4ce49ed6ccfca0108e3f6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c379ebb90e8a17e312b0a1a44cc34fc42ef68f76
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749816"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923203"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
 
@@ -31,8 +31,8 @@ Dynamics AX 2009 SP1、Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客�
 
 Dynamics 365 Finance、Supply Chain Management、Retail、および人事管理などの Finance and Operations アプリを最新バージョンにアップグレードすることを推奨します。
 
-- Dynamics AX 2009 Service Pack 1 ユーザーは、入手可能な「[移行ツール](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page)」を使用してください。
-- Dynamics AX 2012 および Dynamics AX 2012 R2 ユーザーは、入手可能なアップグレード ツールを使って Dynamics AX 2012 R3 を通じて Finance and Operations アプリにアップグレードする必要があります。 アップグレードに関する追加情報は、[AX 2012 から Finance and Operations アプリへのアップグレード](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) トピックにあります。
+- Dynamics AX 2009 Service Pack 1 ユーザーは、入手可能な「[移行ツール](../../dev-itpro/migration-upgrade/upgrade-home-page.md)」を使用してください。
+- Dynamics AX 2012 および Dynamics AX 2012 R2 ユーザーは、入手可能なアップグレード ツールを使って Dynamics AX 2012 R3 を通じて Finance and Operations アプリにアップグレードする必要があります。 アップグレードに関する追加情報は、[AX 2012 から Finance and Operations アプリへのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md) トピックにあります。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

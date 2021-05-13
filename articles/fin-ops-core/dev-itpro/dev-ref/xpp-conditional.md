@@ -4,22 +4,19 @@ description: このトピックでは、X++の条件付きステートメント�
 author: RobinARH
 ms.date: 06/17/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150213
-ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b48f33f5e8866dd8dd1a9037e7ae997f76ec8e9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cc70031ab0984545f1641cb8b8536e37549365b8
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753034"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866021"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 

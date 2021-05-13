@@ -2,7 +2,7 @@
 title: '[Microsoft Office で開く] メニューのカスタマイズ'
 description: このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: dc3f229f02a5d50e0b21b80edd805b87a592c875
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6338e5701f88700d2b9527feaee18a893107a247
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750528"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919857"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 
@@ -112,6 +112,10 @@ public static class MyForm_Extension
 ### <a name="modifying-the-set-of-data-entities-that-is-considered-for-a-page"></a>ページで考慮されるデータ エンティティのセットの変更
 
 **Office で開く** メニューにあるメニュー項目の多くは、ページとみなされるデータ エンティティに基づいて自動的に追加されます。 ただし、場合によっては、データ エンティティのセットを特定するために使用されるアルゴリズムが、正しいセットを特定しない可能性があります。 ページと見なされるデータ エンティティのセットを変更するには、**OfficeIMenuCustomizer.customizeMenuOptions** メソッドまたは **OfficeFormRunHelper.OfficeMenuInitializing** デリゲートから利用可能な **OfficeMenuOptions** を使用します。
+
+> [!WARNING]
+> このコードは、フォーム init() または run() には使用しません。 これは、特にシステムを変更した場合、フォームの読み込み速度に悪影響を与える可能性があります。
+
 
 ```xpp
 // Add an entity to the list

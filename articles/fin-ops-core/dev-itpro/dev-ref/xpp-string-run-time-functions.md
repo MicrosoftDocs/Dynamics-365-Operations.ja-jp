@@ -4,22 +4,19 @@ description: このトピックでは、文字列ランタイム関数につい�
 author: RobinARH
 ms.date: 08/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31401
-ms.assetid: f8d76054-c863-40de-b32a-73dfaa77aeff
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf4b5e922d5f081f51df3b17fad3bf2345240295
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 344425d5b62b6a0363f67cdd99cc13b6676025e3
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749916"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865870"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 

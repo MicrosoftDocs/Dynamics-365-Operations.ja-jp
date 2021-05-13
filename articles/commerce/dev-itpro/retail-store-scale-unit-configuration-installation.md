@@ -2,7 +2,7 @@
 title: Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 description: このトピックでは、セルフサービスを使用して、従来型の店舗にあるコンピューターに Commerce Scale Unit (自己ホスト) を構成し、インストールする方法について説明します。
 author: jashanno
-ms.date: 02/08/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ba252145e8d82a141e00bd5d06819008de526e69
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 673c062ade8c9a5ed084d6022b59c358e37228b2
+ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792973"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5864368"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 
@@ -175,11 +175,11 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 
      インストールするすべてのコンポーネントを選択した後、**次** を選択して続行します。
 
-2. インストーラーは、すべての前提条件が満たされていることを検証します。 Microsoft SQL Server の有効なバージョンが見つからない場合、インストーラーが Microsoft SQL Server 2014 Express with Service Pack 2 をダウンロードおよびインストールします (このダウンロード機能は非推奨であり、実装用の Microsoft SQL Server の正しいバージョンをダウンロードおよびインストールすることが重要です)。
+2. インストーラーは、すべての前提条件が満たされていることを検証します。 有効なバージョンの Microsoft SQL Server が見つからない場合、前提条件の確認中にインストーラーは失敗します。  サポートされているバージョンの SQL Server をインストールし、インストーラーを再試行します。
 
     > [!NOTE]
-    > - この前提条件を満たすためには、SQL Server に全文検索機能を搭載し、最低限トランスポート層セキュリティ (TLS) 1.2 がサポートされている必要があります。 Microsoft SQL Server 2014 では、Service Pack 2 がインストールされている必要があります。 Microsoft SQL Server 2016 については、Service Pack 1 が最低限必要です。 Microsoft SQL 2017 では、CLR タイプの手動インストールを実行する必要があります。 Microsoft SQL Server のサポートされているバージョンをインストールすることが重要です。
-    > - システムの再起動が必要な場合、インストーラーはユーザーにプロンプトを表示します。  この確認は、再起動が必要かどうかをすべてのアプリケーションに通知する Windows システム レジストリ キーに基づいています。  インストールを続行する前に再起動することをお勧めしますが、再起動は必須ではなく、インストーラーはコンピュータを再起動せずに続行することができます。
+    > - この前提条件を満たすためには、SQL Server に全文検索機能を搭載し、最低限トランスポート層セキュリティ (TLS) 1.2 がサポートされている必要があります。 サポートされているバージョンの SQL Server のシステム要件を確認してください。
+    > - システムの再起動が必要な場合、インストーラーはユーザーにプロンプトを表示します。  このプロンプトは、再起動が必要かどうかをすべてのアプリケーションに通知する Windows システム レジストリ キーに基づいています。 インストールを続行する前に再起動することをお勧めしますが、再起動は必須ではなく、インストーラーはコンピュータを再起動せずに続行することができます。
 
 3. Application Object Server (AOS) の URL を確認し、**次へ** を選択します。 (AOS URL とは、Headquarters にアクセスするために使用される URL のことです。)
 

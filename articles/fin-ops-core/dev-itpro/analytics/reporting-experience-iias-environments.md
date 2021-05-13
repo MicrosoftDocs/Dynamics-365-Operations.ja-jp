@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 14791b115c3ed5d75643c436268ec262e75cbfe9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 44c140748c1ba7dc6e5a532ac6f7c3c179c48fc9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754338"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893540"
 ---
 # <a name="document-reporting-service-in-dynamics-365-applications"></a>Dynamics 365 アプリケーションのドキュメント レポート サービス
 
@@ -33,7 +33,7 @@ Finance and Operations アプリにバンドルされたドキュメント レ�
 - **ドキュメントの生成** 印刷や電子メールの一括配信を主要な目的とする、構造化されたドキュメントを作成します。
 - **BI と分析** 集計に基づいた、参照データへのリンクが埋め込まれている対話形式の視覚化を行います,。 ユーザーは、これらの視覚情報を活用して、大量のデータのパターンと傾向を特定します。
 
-Document Reporting Service は、ビジネス文書を一括生成するにあたっての最適なツールですが、分析ビューを適応させたり、ビジネス環境の頻繁な変化に対応するために、パワーユーザーが必要とする拡張性のオプションが不足しています。 また、[Microsoft Power BI サービス](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) は、あらゆる規模のビジネスに強力な分析を提供する業界のリーダーとして認知されています。 Finance and Operations アプリと Power BI サービスの統合オプションは、顧客のビジネスデータのシームレスな探索に対応するしています。
+Document Reporting Service は、ビジネス文書を一括生成するにあたっての最適なツールですが、分析ビューを適応させたり、ビジネス環境の頻繁な変化に対応するために、パワーユーザーが必要とする拡張性のオプションが不足しています。 また、[Microsoft Power BI サービス](/power-bi/fundamentals/power-bi-overview) は、あらゆる規模のビジネスに強力な分析を提供する業界のリーダーとして認知されています。 Finance and Operations アプリと Power BI サービスの統合オプションは、顧客のビジネスデータのシームレスな探索に対応するしています。
 
 > [!NOTE]
 > バージョン 10.0.12 のプラットフォーム更新プログラムがリリースされると、Dynamics 365 serviceでは、ページ分割されたレポートでの BI および分析の相互作用に使用されるレポート ビューア コントロールのサポートを中止します。 代わりに、ドキュメント報告サービスが表示するレポートには、埋め込み PDF ビューアーが使用されます。 埋め込み PDF ビューアーの詳細については、[埋め込みビューアを使用した PDF ドキュメントのプレビュー](preview-pdf-documents.md) を参照してください。
@@ -48,7 +48,7 @@ Document Reporting Service は、ビジネス文書を一括生成するにあ�
 |--------------------------|---------|------------------|
 | **表示の形式**       | PDF と Office ドキュメント | HTML |
 | **データ量**          | 1 から 数百規模の行 | 数万以上の行 |
-| **インタラクティブな機能** | 印刷、テキスト検索、共有 | [ドリルスルー、ドリルダウン、ネストされた領域](https://docs.microsoft.com/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
+| **インタラクティブな機能** | 印刷、テキスト検索、共有 | [ドリルスルー、ドリルダウン、ネストされた領域](/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
 | **データ ソース**          | トランザクションのデータベース | データ ウェアハウス |
 | **レポート作成者**        | 開発者 | パワー ユーザー |
 | **レイアウト**               | 構造化された定義済みのレイアウト | 適応性のある柔軟なレイアウト |

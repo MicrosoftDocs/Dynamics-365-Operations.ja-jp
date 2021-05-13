@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2541c2fda1ff219f91dcf0d132e867bb94a019f8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ddd7d1705d7b9a265c2f6cef3fe696c4704c7e2b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749606"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908694"
 ---
 # <a name="pagelinkmetadata-type"></a>PageLinkMetadata タイプ
 
@@ -127,7 +127,7 @@ HelpText: 文字列 (オプション)
 アイコン: string (オプション)
 
 ページ リンク コントロールに表示されるアイコンの名前。
-次に [利用可能なアイコンの一覧](https://docs.microsoft.com/dynamics/s-e/) を示します。
+次に [利用可能なアイコンの一覧](/dynamics/s-e/) を示します。
 
 ### <a name="iconsize"></a>IconSize
 

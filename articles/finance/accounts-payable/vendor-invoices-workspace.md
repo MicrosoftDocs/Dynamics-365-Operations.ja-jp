@@ -1,5 +1,5 @@
 ---
-title: 仕入先請求書入力ワークスペース
+title: 仕入先請求書の自動化ワークスペース
 description: このトピックでは、仕入先請求書に関連するワークスペースの設定方法について説明し、Microsoft Power BI によって提供される情報を示します。
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837261"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954138"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>仕入先請求書入力ワークスペース
+# <a name="vendor-invoice-automation-workspace"></a>仕入先請求書の自動化ワークスペース
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "5837261"
 
 ## <a name="overview"></a>概要
 
-**仕入先請求書エントリ** ワークスペースは、仕入先請求書の処理に関連する情報を表示します。 このワークスペースには、**自分の作業** ビューと **Analytics - すべての会社** ページが含まれます。 **自分の作業** ビューでは、概要タイル、仕入先トランザクションのグリッド、および関連する仕入先情報を表示します。 **Analytics- すべての会社** ページは、Power BI の機能を使用して、仕入先請求書に関連付けられているビジュアルを表示します。
+**仕入先請求書の自動化** ワークスペースは、仕入先請求書の処理に関連する情報を表示します。 このワークスペースには、**自分の作業** ビューと **Analytics - すべての会社** ページが含まれます。 **自分の作業** ビューでは、概要タイル、仕入先トランザクションのグリッド、および関連する仕入先情報を表示します。 **Analytics- すべての会社** ページは、Power BI の機能を使用して、仕入先請求書に関連付けられているビジュアルを表示します。
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Power BI コンテンツを表示するためのワークスペースの設定
 
-**仕入先請求書エントリ** ワークスペースの Power BI の視覚エフェクトにデータを表示する前に、この設定を行う必要があります。
+**仕入先請求書の自動化** ワークスペースの Power BI の視覚エフェクトにデータを表示する前に、この設定を行う必要があります。
 
 1. **機能管理** ワークスペースで、リストをフィルタ処理して **仕入先請求書の自動化** 機能を検索します。
 3. **直ちに有効化** を選択します。

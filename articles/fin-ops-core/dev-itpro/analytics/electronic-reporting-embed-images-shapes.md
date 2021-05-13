@@ -2,7 +2,7 @@
 title: ER を使用して生成されるドキュメントへの画像や図形の埋め込み
 description: このトピックでは、電子申告ツールを使用して、画像や図形が埋め込まれたビジネス ドキュメントを生成する方法について説明します。
 author: kfend
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0f31ea4dda8f886e32e66ac4299bf7e70c300453
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c2bd32bc475dc42be35532d9ec40a1fa0bc7ca23
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751304"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944815"
 ---
 # <a name="embed-images-and-shapes-in-documents-that-you-generate-by-using-er"></a>ER を使用して生成されるドキュメントへの画像や図形の埋め込み
 
@@ -74,17 +74,17 @@ ms.locfileid: "5751304"
 ## <a name="more-information"></a>詳細情報
 この機能の詳細を理解するには、一連のタスク ガイド **画像を埋め込んだ MS Office 形式の ER Make レポート** を再生します。 これらのタスク ガイドは、Excel ツールと Word ドキュメントで ER ツールを使用して生成された支払小切手に、会社ロゴの画像と権限を与えられたユーザーの署名を埋め込む方法を示しています。
 
-次のテーブルに、**ER 埋め込み画像付きで MS Office 形式のレポートを作成する** タスク ガイドを完了するために必要なファイルを示します。 ファイルをローカル コンピューターに[ダウンロード](https://go.microsoft.com/fwlink/?linkid=851448) し、保存します。
+次のテーブルに、**ER 埋め込み画像付きで MS Office 形式のレポートを作成する** タスク ガイドを完了するために必要なファイルを示します。 ファイルをローカル コンピューターにダウンロード し、保存します。
 
 | 説明                                          | ファイル名                   |
 |------------------------------------------------------|-----------------------------|
-| ER データ モデル構成                          | cheques.xml 用のモデル       |
-| ER フォーマット構成                              | format.xml を印刷する小切手 |
-| 会社のロゴ画像                                   | 会社の logo.png            |
-| 署名の画像                                      | Signature image.png         |
-| 代替署名画像                          | Signature image 2.png       |
-| 小切手印刷用の Microsoft Word テンプレート  | 小切手テンプレート Word.docx   |
-| 小切手印刷用の Microsoft Excel テンプレート | 小切手 template.xlsx        |
+| ER データ モデル構成                          | [cheques.xml 用のモデル](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)       |
+| ER フォーマット構成                              | [format.xml を印刷する小切手](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
+| 会社のロゴ画像                                   | [会社の logo.png](https://download.microsoft.com/download/8/2/e/82e6bd81-caac-4e9a-bfce-1392ce7c8616/Companylogo.png)            |
+| 署名の画像                                      | [Signature image.png](https://download.microsoft.com/download/5/0/9/509151b3-06fc-4870-9408-7c9a43b72771/Signatureimage.png)         |
+| 代替署名画像                          | [Signature image 2.png](https://download.microsoft.com/download/3/0/0/30045bf1-0ff6-4215-9162-b77c2f5dcc7c/Signatureimage2.png)       |
+| 小切手印刷用の Microsoft Word テンプレート  | [小切手テンプレート Word.docx](https://download.microsoft.com/download/4/4/d/44d9d255-9ad1-42fe-87db-23f319fd8e89/ChequetemplateWord.docx)   |
+| 小切手印刷用の Microsoft Excel テンプレート | [小切手 template.xlsx](https://download.microsoft.com/download/1/f/6/1f671963-73aa-48d5-ae69-45f21fe7dfb4/Cheque template.xlsx)        |
 
 次の図は、Excel テンプレートから生成された支払い小切手のテスト印刷の例です。
 

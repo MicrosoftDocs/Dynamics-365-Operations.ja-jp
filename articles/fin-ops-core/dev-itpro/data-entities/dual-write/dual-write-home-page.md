@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2341fdeb15f32ec694801170f90960cb93835416
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0873ad4f98eeec7e335c2a8215d6c22bed689296
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808714"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857287"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -93,8 +93,11 @@ ms.locfileid: "5808714"
 + [サービスのための社内資産](in-house-assets.md)
 + [手持在庫の可用性](inventory-availability.md)
 + [作業者、職務、および職位の統合](integrated-hr.md)
-+ [関係者とグローバル アドレス帳](party-gab.md)
-+ [Power Portal を関係者データ モデルで使用する](party-gab-portal.md)
++ [当事者およびグローバル アドレス帳](party-gab.md)
+
+    + [Power Portal を当事者のデータ モデルで使用する](party-gab-portal.md)
+    + [当事者およびグローバル アドレス帳モデルへのアップグレード](upgrade-party-gab.md)
+
 + [注記の統合](notes-integration.md)
 + [マッピング参照](mapping-reference.md)
 

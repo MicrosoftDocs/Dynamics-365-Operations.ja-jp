@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 9fb6a0cc4cbf8a6d837cc45579b05f496a5313f1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9ff3ae5e65b83e60740a46a1f8b3f44db0ee820f
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750552"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941011"
 ---
 # <a name="application-connector"></a>アプリケーション コネクタ
 
@@ -31,13 +31,13 @@ ms.locfileid: "5750552"
 ## <a name="prerequisites"></a>必要条件
 先に進む前に、コネクタについて理解するための前提条件として、次のトピックをお読みください。
 
-- [コネクタ](https://docs.microsoft.com/connectors/) 
-- [データ管理パッケージ REST API](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
-- [データ プロトコル (OData) を開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
-- [定期統合](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
+- [コネクタ](/connectors/) 
+- [データ管理パッケージ REST API](data-management-api.md)
+- [データ プロトコル (OData) を開く](odata.md) 
+- [定期統合](recurring-integrations.md) 
 
 ## <a name="triggers"></a>トリガー
-ビジネス イベントは、*ビジネス イベントが発生した場合* にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、[Microsoft Power Automate](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) のビジネス イベントおよび[ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page)を参照してください。
+ビジネス イベントは、*ビジネス イベントが発生した場合* にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、[Microsoft Power Automate](../business-events/business-events-flow.md) のビジネス イベントおよび[ビジネス イベント](../business-events/home-page.md)を参照してください。
 
 ## <a name="actions"></a>アクション
 

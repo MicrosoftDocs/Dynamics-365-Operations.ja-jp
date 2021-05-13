@@ -10,12 +10,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ms.date: 05/11/2020
 ms.author: edupont
-ms.openlocfilehash: 01e10052995e8f17309f0e9286d86ba80b3dc0bd
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ade9bc331852768177084a6ebe769ecc6c82ab7b
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563970"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923391"
 ---
 # <a name="extend-customize-and-collaborate-on-the-help"></a>ヘルプの拡張、カスタマイズ、および共同作業
 
@@ -38,7 +38,10 @@ GitHub の利点の 1 つは、Microsoft チームが [MicrosoftDocs/Dynamics-36
 
 Microsoft は、ソース コンテンツと Microsoft がコンテンツを翻訳する各言語について、GitHub で個別のリポジトリを使用します。 [Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) リポジトリには、英語 (米国) でのソース コンテンツが含まれています。 他の言語のコンテンツにアクセスする場合は、名前はパターン **Dynamics-365-Operations\<language\>-\<country\>** に従います。 たとえば、ドイツ語 (ドイツ) のバージョンは [Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de) という名前になります。
 
-Microsoft がコンテンツの更新を公開すると、対応する GitHub リポジトリの *ライブ* ブランチが更新されます。 ソース リポジトリは毎週更新されます。 ただし、関連する言語固有のリポジトリの更新頻度は低くなります。 頻度は、新しい翻訳がいつ使用可能になるかによって異なります。 Microsoft リポジトリの 1 つをフォークする場合、優先作業プロセスに応じて、Microsoft リポジトリからの更新でフォークを毎月またはそれ以下の頻度で更新することを選択できます。 GitHub プラットフォームとツールを使用すると、Microsoft が変更したファイルを変更した場合に起こり得るマージの競合を管理することができます。 詳細については、ドキュメント作成ガイドの [ドキュメント用に Git リポジトリをローカルに設定する](/contribute/get-started-setup-local)、または GitHub のヘルプの [リポジトリをフォークする](https://help.github.com/articles/fork-a-repo/) を参照してください。
+Microsoft がコンテンツの更新を公開すると、対応する GitHub リポジトリの *メイン* ブランチが更新されます。 ソース リポジトリは毎週更新されます。 ただし、関連する言語固有のリポジトリの更新頻度は低くなります。 頻度は、新しい翻訳がいつ使用可能になるかによって異なります。 Microsoft リポジトリの 1 つをフォークする場合、優先作業プロセスに応じて、Microsoft リポジトリからの更新でフォークを毎月またはそれ以下の頻度で更新することを選択できます。 GitHub プラットフォームとツールを使用すると、Microsoft が変更したファイルを変更した場合に起こり得るマージの競合を管理することができます。 詳細については、ドキュメント作成ガイドの [ドキュメント用に Git リポジトリをローカルに設定する](/contribute/get-started-setup-local)、または GitHub のヘルプの [リポジトリをフォークする](https://help.github.com/articles/fork-a-repo/) を参照してください。
+
+> [!IMPORTANT]
+> 2021 年 4 月、パブリック ソース リポジトリの既定のブランチの名前が *ライブ* から *メイン* に変更されました。 *ライブ* ブランチに依存するスクリプトがある場合は、代わりに *メイン* に依存して更新してください。 言語固有のリポジトリの既定のブランチの名前は後で変更されます。
 
 > [!TIP]
 > Microsoftのコンテンツをそのまま取得するだけであれば、GitHub について精通している必要はありません。 詳細については、このトピックの [GitHub アカウントなしでコンテンツを取得する](#get-the-content-without-a-github-account) を参照してください。 ただし、Microsoft のコンテンツを拡張またはカスタマイズする場合は、GitHub で Microsoft に参加することをお勧めします。
@@ -85,7 +88,7 @@ Microsoft リポジトリは公開されているため、コンテンツを入�
 
 ## <a name="translate-the-content"></a>コンテンツを翻訳する
 
-[Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) (DTS) を使用して、独自のコンテンツまたは Microsoft が提供するコンテンツを他の言語に翻訳できます。 このサービスは Microsoft Dynamics Lifecycle Services (LCS) でホストされ、現在 Word ドキュメントおよび HTML ファイルの翻訳をサポートしています。 詳細については、[ドキュメント ファイルの翻訳](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua) を参照してください。
+[Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) を使用して、独自のコンテンツまたは Microsoft が提供するコンテンツを他の言語に翻訳できます。 このサービスは Microsoft Dynamics Lifecycle Services (LCS) でホストされ、現在 Word ドキュメントおよび HTML ファイルの翻訳をサポートしています。 詳細については、[ドキュメント ファイルの翻訳](../lifecycle-services/use-translation-service-ua.md) を参照してください。
 
 ## <a name="see-also"></a>参照
 

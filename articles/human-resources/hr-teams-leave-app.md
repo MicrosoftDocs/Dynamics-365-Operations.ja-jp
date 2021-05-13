@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48bf6f7997d6159077419bcd05d27fd711c8fb4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
+ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891033"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5953415"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -207,6 +207,14 @@ Teams アプリで休暇申請を承認しようとしたときにエラーが�
 1. Microsoft Teams へのサインインに使用しているアカウントが、Dynamics 365 Human Resources にアクセスに使用しているアカウントと同じであることを確認します。
 
 2. 休暇承認のワークフロー設定を確認して、要求の有効な承認者であることを確認します。 休暇申請ワークフローの詳細については、[休暇申請ワークフローの作成](hr-leave-and-absence-workflow.md) を参照してください。
+
+### <a name="leave-approvers-dont-receive-teams-chat-messages-to-approve-leave-requests"></a>休暇承認者が休暇申請を承認するための Teams のチャット メッセージを受信しない
+
+1. 通知が環境およびユーザーに対して有効になっている必要があります。 詳細については、[Teams の Human Resources アプリで通知を有効にする](hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) および[個々のユーザーの Teams の通知をオンまたはオフにする](hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) を参照してください。
+
+2. ユーザーが休暇申請を承認するために使用するのと同じ資格情報で **チャット** タブにログインしていることを確認します。 "サインアウト" というメッセージを使用してから "サインイン" を使用して正しい資格情報でサインインします。
+
+3. それでも問題が解消しない場合は、システム管理者としてビジネス イベント システム バッチ ジョブのステータスを確認します。 待機中または実行中のステージにある場合は、数分後にもう一度戻って確認します。 ステータスが変わらない場合は、弊社のチームで問題を解決することができるように、サポート チケットを記録します。
 
 ## <a name="known-accessibility-issues"></a>既知のアクセシビリティの問題
 

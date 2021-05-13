@@ -2,7 +2,7 @@
 title: Go-Live の準備
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトにおける Go-Live の準備方法を説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 11/30/2020
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 37ca03f004fdbf3faff53396047e96b7786161f7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 71ae8b2ae984fe9251d4befb411549d60d127272
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751842"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890371"
 ---
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 
@@ -93,7 +93,7 @@ UAT フェーズ中に、実装したすべてのビジネス プロセスおよ
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack Go-live 評価
 
-すべての顧客は、実稼働環境を展開する前に Microsoft FastTrack チームとの Go-live レビューを完了する必要があります。 運用環境を要求する前に、この評価を正常に完了する必要があります。 Microsoft FastTrack に馴染みがない場合は、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
+すべての顧客は、実稼働環境を展開する前に Microsoft FastTrack チームとの Go-live レビューを完了する必要があります。 運用環境を要求する前に、この評価を正常に完了する必要があります。 Microsoft FastTrack に馴染みがない場合は、[FastTrack for Dynamics 365 ホーム ページ](/dynamics365/fasttrack/) を参照してください。
 
 Go-Live の約 8 週間前に、FastTrack チームが Go-Live チェックリストへの記入を求めます。 
 

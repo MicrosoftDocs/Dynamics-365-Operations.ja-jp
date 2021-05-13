@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9173f226d51f6cf6b8a0b0cf9fdd52c6ab336100
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 50e8aba432fe1273589d233b6b16e9202e4fd0c2
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793019"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5959987"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 
@@ -56,7 +56,7 @@ ms.locfileid: "5793019"
         - Commerce Scale Unit (自己ホスト)
 
 > [!NOTE]
-> 10.0.10 以前のリリースでは、AOS および CSU の両方に RetailDeployablePackage を配置できます。 その後のリリースでは、RetailDeployablePackage は CSU にのみ配置できます。 支払コネクタを AOS アプリケーション バージョン 10.0.10 以降に配置するには、[セルフサービス配置のアプリケーション エクスプローラー用支払パッケージの作成](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/payment-connector-package) の情報に従ってください。
+> 10.0.10 以前のリリースでは、AOS および CSU の両方に RetailDeployablePackage を配置できます。 その後のリリースでは、RetailDeployablePackage は CSU にのみ配置できます。 支払コネクタを AOS アプリケーション バージョン 10.0.10 以降に配置するには、[セルフサービス配置のアプリケーション エクスプローラー用支払パッケージの作成](./payment-connector-package.md) の情報に従ってください。
 
 ### <a name="upload-and-deploy-deployable-packages"></a>展開可能なパッケージのアップロードと展開
 
@@ -72,7 +72,7 @@ ms.locfileid: "5793019"
 5. **アップロード** をクリックします。
 6. 圧縮済みのパッケージを選択してアップロードし、**確定** をクリックします。
 
-配置可能パッケージを LCS 資産ライブラリにアップロードした後、LCS ポータルを通じて環境に配置することができます。 サンドボックス環境内の配置を検証した後は、実稼働環境を配置するサービス要求を作成できます。 詳細については、[配置可能パッケージの適用](../../dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
+配置可能パッケージを LCS 資産ライブラリにアップロードした後、LCS ポータルを通じて環境に配置することができます。 サンドボックス環境内の配置を検証した後は、実稼働環境を配置するサービス要求を作成できます。 詳細については、[配置可能パッケージの適用](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
 
 #### <a name="download-and-run-installers-on-client-computers"></a>クライアント コンピューターでインストーラーをダウンロードして実行
 
@@ -88,17 +88,14 @@ ms.locfileid: "5793019"
 
 |  コネクタ | IPaymentProcessor Assemblies フォルダーのコンテンツ | 支払い Web ファイル フォルダーのコンテンツ | IPaymentDevice Assemblies フォルダーのコンテンツ |
 |-----------|-----------------------------|------------------------------|---|
-| Application Object Server (AOS)                                            | &lt;*Aos.PackageDirectory*&gt;/bin/Connectors/ &lt;*Aos.WebRoot*&gt;/bin/ | &lt;*Aos.WebRoot*&gt;/Connectors/        | 適用できません                                   |
-| コマース スケール ユニット                                                              | &lt;*RS.WebRoot*&gt;/bin/                                                 | 適用できません                           | 適用できません                                   |
+| Commerce Scale Unit                                                              | &lt;*RS.WebRoot*&gt;/bin/                                                 | 適用できません                           | 適用できません                                   |
 | クラウド POS                                                                  | 適用できません                                                            | &lt;*CPOS.WebRoot*&gt;/Connectors/       | 該当なし                                   |
 | リモート ハードウェア ステーション (インターネット インフォメーション サービス \[IIS\])            | &lt;*HWS.WebRoot*&gt;/bin/                                                | 該当なし                           | &lt;*HWS.WebRoot*&gt;/bin/                       |
 | Modern POS のローカルのハード ステーション (情報の保護とコントロール \[IPC\]) | &lt;*MPOS.AppRoot*&gt;/ClientBroker/                                      | 該当なし                           | &lt;*MPOS.AppRoot*&gt;/ClientBroker/             |
-| E コマース                                                                 | 該当なし                                                            | &lt;*ECOM.WebRoot*&gt;/Connectors/       | 該当なし                                   |
+| E コマース                                                                 | 該当なし                                                            | &lt;*ECOM.WebRoot*&gt;/Connectors/       | 適用できません                                   |
 
 上記のテーブルへのキーを次に示します。
 
-- &lt;*Aos.PackageDirectory*&gt; は AOS のパッケージ ディレクトリです。 パスは AOS の web.config ファイルから見つけることができます (key = **Aos.PackageDirectory**)。
-- &lt;*Aos.WebRoot*&gt; は AOS の Web アプリケーション ルートです。
 - &lt;*RS.WebRoot*&gt; は Commerce Scale Unit の Web アプリケーション ルートです。
 - &lt;*HWS.WebRoot*&gt; はリモート ハードウェア ステーションの Web アプリケーション ルートです。
 - &lt;*MPOS.AppRoot*&gt; は Modern POS (例えば、\\C:Program Files (x86)\\Microsoft Dynamics AX70\\Retail Modern POS) のアプリ インストール フォルダーです。

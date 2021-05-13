@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 407abd5dd1aa53fa158c2e188dc121f6cc6fdaa6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bbdb53b949ff0a4df57c7b3bd81ddb9e0137dc6d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744749"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921105"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -56,7 +56,7 @@ AX 2012 データベースをバックアップするには、標準の Microsof
 > [!NOTE]
 > マイクロソフトがホストする開発環境環境では、ドライブの領域が制限されます。 多くの AX 2012 のユーザーが、 [クラウド ホスト環境](../dev-tools/access-instances.md)を使用して、独自の開発環境をホストすることを推奨します。 クラウドホスト環境を使用することで、独自の仕様に合うようにドライブの容量を増やすことができます。  
 
-新しい開発環境にバックアップを復元する場合、既存の AXDB データベースを上書きしないでください。 代わりに、元のデータベースの横にある AX 2012 データベースを復元します。 パフォーマンスを向上させるために、データおよびログ ファイルの D ドライブの使用も考慮する場合があります。 ただし、D ドライブを使用することには潜在的な問題点があります。基になる仮想マシン (VM) が Azure で割り当て解除され、次に再割り当てされると、D ドライブが消去されます。 実際、このシナリオが発生ことはほとんどありません。 したがって、そのリスクは容認できる可能性があります。 ドライブ D の使用方法の詳細については、[[Windows Azure 仮想マシンでのテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/)] を参照してください。
+新しい開発環境にバックアップを復元する場合、既存の AXDB データベースを上書きしないでください。 代わりに、元のデータベースの横にある AX 2012 データベースを復元します。 パフォーマンスを向上させるために、データおよびログ ファイルの D ドライブの使用も考慮する場合があります。 ただし、D ドライブを使用することには潜在的な問題点があります。基になる仮想マシン (VM) が Azure で割り当て解除され、次に再割り当てされると、D ドライブが消去されます。 実際、このシナリオが発生ことはほとんどありません。 したがって、そのリスクは容認できる可能性があります。 ドライブ D の使用方法の詳細については、[[Windows Azure 仮想マシンでのテンポラリー ドライブを理解する](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines)] を参照してください。
 
 データベースの復元プロセスをスピードアップするには、SQL Server サービスアカウントを **axlocaladmin** に変更します。 復元プロセスでは、インスタント ファイルの初期化を使用できます。 詳細については、[データベース インスタント ファイルの初期化](/sql/relational-databases/databases/database-instant-file-initialization) を参照してください。
 

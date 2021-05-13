@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e209ddc7481201a7445cccc619ae5c83f7d187ed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5658092ded3ab7958359cf075eec33a1d8a6f0dc
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793011"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936868"
 ---
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 
@@ -39,7 +39,7 @@ ms.locfileid: "5793011"
 
 Retail SDK は、開発環境と、Retail SDK フォルダーにある修正プログラム パッケージで使用できます。
 
-- 開発インスタンスから SDK を取得すると、構成および使用の準備がすぐに整います。 詳細については、「[アクセス インスタンス](../../dev-itpro/dev-tools/access-instances.md)」を参照してください。 
+- 開発インスタンスから SDK を取得すると、構成および使用の準備がすぐに整います。 詳細については、「[アクセス インスタンス](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md)」を参照してください。 
 - 修正プログラムから SDK を取得する場合は、修正プログラムのパッケージでは圧縮フォルダとして含まれています。 修正プログラムは累積的であり、その他のすべての修正プログラムが含まれています。 
 
 Visual Studio Online などのソース管理システムに SDK を配置することをお勧めします。

@@ -2,7 +2,7 @@
 title: データ管理パッケージ REST API
 description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
 author: Sunil-Garg
-ms.date: 06/18/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: 813da7d30fc744792a189431ea2b2ebc57e4cfe2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bfe3df6ea19420ea1011171f2f55175cb685496c
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750984"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937346"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、データ管理フレームワークのパッケージの Representational State Transfer (REST) のアプリケーション プログラミング インターフェイス (API) について説明します。 パッケージ API により、データ パッケージを使用して統合できます。 REST API はクラウド展開とオンプレミスの展開で使用できます。 オンプレミス配置では、現在この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) (バージョン 7.2)、ビルド 7.0.4709.41184 以降で利用可能です。
+このトピックでは、データ管理フレームワークのパッケージの Representational State Transfer (REST) のアプリケーション プログラミング インターフェイス (API) について説明します。 パッケージ API により、データ パッケージを使用して統合できます。 REST API はクラウド展開とオンプレミスの展開で使用できます。 
 
 オンプレミス サポートが追加されましたが、API 名は変更されていません。 したがって、Microsoft は、クラウド配置とオンプレミス配置の両方に対して単一の API セットを維持することができます。
 
@@ -38,7 +38,6 @@ ms.locfileid: "5750984"
 | 変換      | データ ファイルが XML 形式の場合の Extensible Stylesheet Language Transformations (XSLT) のサポート | システム外部での変換 |
 | サポートされているプロトコル | SOAP および REST | REST |
 | サービス タイプ        | カスタム サービス | データ プロトコル (OData) アクションを開きます |
-| 在庫状態        | Microsoft Dynamics Finance and Operations (2016 年 2 月) およびそれ以降。 注意: この機能は、オンプレミス バージョンの Dynamics 365 Finance and Operations には対応していません。 | Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 5 (2017 年 3 月) およびそれ以降 |
 
 定期的な統合 API がデータ管理フレームワークのパッケージ API よりも要件を満たしていることを決定した場合、[定期統合](recurring-integrations.md) を参照します。 このトピックの残りの部分では、データ管理フレームワークのパッケージ API について説明します。
 
@@ -239,7 +238,7 @@ HTTP/1.1 200 OK
 **ImportFromPackage** API は、実装に関連付けられている Blob ストレージにアップロードされるデータ パッケージからインポートを開始するために使用します。 オンプレミス配置の場合、ファイルが以前アップロードされたローカル ストレージから、インポートが開始されます。
 
 > [!NOTE]
-> プラットフォーム更新プログラム 12 を起動すると、**ImportFromPackage** API は複合エンティティをサポートします。 ただし、1 つのパッケージで 1 つの複合エンティティのみという制限があります。
+> **ImportFromPackage** API は、複合エンティティをサポートします。 ただし、1 つのパッケージで 1 つの複合エンティティのみという制限があります。
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage

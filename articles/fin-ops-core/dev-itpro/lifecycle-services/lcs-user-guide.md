@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2fcf0450f1eae3fe9f56098b913eed7e4b4178d4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 22624c2952ca64bba53186d56d6dbf896e6a15dd
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744513"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920845"
 ---
 # <a name="lifecycle-services-lcs-user-guide"></a>Lifecycle Services (LCS) ユーザー ガイド
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサービスを提供します。 LCS の目標は、適切な情報を適切なタイミングで適切な相手に伝えることであり、実装、更新、アップグレードを毎回問題なく実行する反復性と予測可能性を実現することです。 LCS は顧客やパートナーがサポート計画の一部として使用できます。 Microsoft Dynamics AX 2012 ユーザーである場合、CustomerSource または PartnerSource の資格情報を使用してログインすることができます。 Dynamics 365 Finance and Operations アプリの最新バージョンの顧客である場合は、Microsoft Azure Active Directory (Azure AD) の資格情報を使用してログインできます。 [LCS に移動](https://lcs.dynamics.com/Logon/Index).
+Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサービスを提供します。 LCS の目標は、適切な情報を適切なタイミングで適切な相手に伝えることであり、実装、更新、アップグレードを毎回問題なく実行する反復性と予測可能性を実現することです。 LCS は顧客やパートナーがサポート計画の一部として使用できます。 Dynamics 365 Finance and Operations アプリの最新バージョンの顧客である場合は、Microsoft Azure Active Directory (Azure AD) の資格情報を使用してログインできます。 [LCS に移動](https://lcs.dynamics.com/Logon/Index).
 
 ## <a name="tools-that-are-provided-in-lcs"></a>LCS で提供されるツール
 次のテーブルでは、LCS で提供されるツールのリストと各ツールが適用されるフェーズについて説明しています。
@@ -50,7 +50,7 @@ Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサ�
 | [アップグレード分析](ax-2012/upgrade-analysis-lcs.md)                         | アップグレード分析は、Microsoft Dynamics AX 4.0、Microsoft Dynamics AX 2009、または AX 2012 からコード アーティファクトを分析して、最新バージョンに更新する計画に役立ちます。                                                                                                                                                                                                                                                                                                    |
 | [使用状況プロファイラー](ax-2012/usage-profiler-lcs.md)                           | 使用状況プロファイラーは、予想される使用状況、または現在の使用状況を説明するのに役立つデータ収集ツールです。 生成された使用プロファイルは、ハードウェアのサイズ変更やサポートなど、さまざまな目的で使用できます。                                                                                                                                                                                                                                                                                                 |
 | [ダウンロード可能なツール](ax-2012/lcs-downloadable-tools-formerly-informationsource.md)                       | **ダウンロード可能なツール** ページは、 Microsoft Dynamics InformationSource にホストされていたツールを提供します。                                      |
-| [ライセンス数見積もりツール](ax-2012/license-sizing-estimator-lcs.md)                 | ライセンス数見積もりツールは、必要なライセンスの数を予測するのに役立ちます。 これは、既定またはカスタマイズされたロールをモデル化して、必要なクライアント アクセス ライセンス (CAL) を自動的に計算できる共有ワークスペースを提供します。
+| [ライセンス数見積もりツール](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)                 | ライセンス数見積もりツールは、必要なライセンスの数を予測するのに役立ちます。 これは、既定またはカスタマイズされたロールをモデル化して、必要なクライアント アクセス ライセンス (CAL) を自動的に計算できる共有ワークスペースを提供します。
 
 <a name="additional-resources"></a>追加リソース
 --------

@@ -2,7 +2,7 @@
 title: サポートされるフォント
 description: Finance and Operations アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、270 以上の標準のビジネス対応フォントへのアクセスが含まれます。
 author: RichdiMSFT
-ms.date: 02/10/2020
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 42f1e3bc0f836ae2954735e4c35caeed04644c24
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14f4774481f70e43bf7dd4fe2f50171e9bbec2ba
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749353"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898174"
 ---
 # <a name="supported-fonts"></a>サポートされるフォント
 
@@ -25,7 +25,7 @@ ms.locfileid: "5749353"
 
 Finance and Operations アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、何百もの標準のビジネス対応フォントへのアクセスが含まれます。 
 
-このポートフォリオは、サービスが新しい地域や業界に拡大するにつれて増え続けます。 ただし、サービスでは、顧客環境でのカスタム フォントのインストールはサポートされなくなりました。 サービスでサポートされるフォントのコレクションを拡張する要求は、その都度考慮されます。
+このポートフォリオは、サービスが新しい地域や業界に拡大するにつれて増え続けます。 このサービスは、顧客環境でのカスタム フォントのインストールはサポートされていません。
 
 次の一覧は、Finance and Operations アプリで SQL Server Reporting Services (SSRS) サービスを使用して生成されたドキュメントに使用できるフォント ファミリーのポートフォリオをキャプチャします。
 

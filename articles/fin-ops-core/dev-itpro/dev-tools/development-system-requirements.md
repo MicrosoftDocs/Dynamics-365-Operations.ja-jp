@@ -4,8 +4,6 @@ description: このトピックでは、開発のシステム要件を一覧表�
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 33221
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c5d280cc211eb1d482fb65fe922bed11f8d63dc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0b507900f9eb8d11d4dec1b79ed16b202ef9129f
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745297"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866350"
 ---
 # <a name="development-system-requirements"></a>開発システム要件
 

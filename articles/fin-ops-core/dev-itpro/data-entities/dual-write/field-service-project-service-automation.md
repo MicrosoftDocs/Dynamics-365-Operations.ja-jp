@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b41f6dbb73172b3106981c7f7d0e80a9d37bf6bb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 38d545b5cfdb9145817ebabbfaad8012c6027d31
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748655"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940921"
 ---
 # <a name="support-for-field-service-and-project-service-automation-solutions"></a>Field Service と Project Service Automation ソリューションのサポート
 
@@ -35,7 +35,7 @@ ms.locfileid: "5748655"
 
 Microsoft は、Field Service ソリューションをベースにした既存の Dataverse 環境上で二重書き込みに対応しています。
 
-詳細については、[Dynamics 365 Field Service と Supply Chain Management の統合](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration) を参照してください。
+詳細については、[Dynamics 365 Field Service と Supply Chain Management の統合](/dynamics365/field-service/supply-chain-field-service-integration) を参照してください。
 
 ## <a name="support-for-project-service-automation-solutions"></a>Project Service Automation ソリューションへの対応
 

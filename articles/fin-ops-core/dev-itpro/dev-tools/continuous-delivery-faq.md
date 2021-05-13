@@ -4,8 +4,6 @@ description: このトピックでは、ISV やパートナーによってよく
 author: RobinARH
 ms.date: 01/21/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 202614
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: a1f717bc5d31939ab919d82facd59a220abccd10
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ac73957a94afcc49431f8f2f0d97381b07601d37
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750546"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923289"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 
@@ -56,7 +54,7 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 
 ### <a name="what-strategy-do-i-use-for-test-automation"></a>テストの自動化にどのような戦略を使用しますか ?
 
-テストの自動化については、独立したデータまたは独自のデータを作成する単体テスト (SysTest フレームワークを使用) に焦点を合わせます。 実行するテスト データに依存する少数の機能的なシナリオ テスト (タスク レコーダーに基づく) を使用します。 シナリオ テストは、維持にコストがかかります。 単体テストは任意の開発環境で簡単かつ迅速に実行できます。 [テスト自動化のピラミッド](https://blogs.msdn.microsoft.com/dave_froslie/2016/03/09/test-automation-pyramid/) に関するブログ記事を確認し、 [自動化されたテストのガイダンス](https://blogs.msdn.microsoft.com/axdevalm/2016/08/12/automated-testing-guidance-for-ax-7/) を参照してください。
+テストの自動化については、独立したデータまたは独自のデータを作成する単体テスト (SysTest フレームワークを使用) に焦点を合わせます。 実行するテスト データに依存する少数の機能的なシナリオ テスト (タスク レコーダーに基づく) を使用します。 シナリオ テストは、維持にコストがかかります。 単体テストは任意の開発環境で簡単かつ迅速に実行できます。 [テスト自動化のピラミッド](/archive/blogs/dave_froslie/test-automation-pyramid) に関するブログ記事を確認し、 [自動化されたテストのガイダンス](/archive/blogs/axdevalm/automated-testing-guidance-for-ax-7) を参照してください。
 
 ![media/testautomationpyramid1.png](media/testautomationpyramid1.png) いくつかの重要な概念に留意してください。
 

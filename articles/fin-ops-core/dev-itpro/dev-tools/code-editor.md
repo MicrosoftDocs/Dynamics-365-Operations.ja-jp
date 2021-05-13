@@ -4,8 +4,6 @@ description: このトピックでは、Visual Studio のコードエディタ�
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 23941
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2d8beeb8bbad171c7b92278f3cec3f7e4cc2515
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cdbe8994a2f6ad08b3ad9ab3a71a611ac68375aa
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750362"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866077"
 ---
 # <a name="code-editor-features"></a>コード エディター機能
 

@@ -2,7 +2,7 @@
 title: 休暇申請の管理
 description: Dynamics 365 Human Resources で、休暇申請を表示および承認します。
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 53d4651b60da63243547ee8a5da6e105705640c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 301b8978264dd3cb517652492a0b1791df63e6f3
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790743"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924806"
 ---
 # <a name="manage-leave-and-absence-requests"></a>休暇および欠勤要求の管理
 
@@ -31,13 +31,24 @@ ms.locfileid: "5790743"
 
 1. **従業員セルフサービス** ワークスペースで、**自分のチーム** を選択します。
 
-2. **自分のチームの情報** で、**休暇** タブを選択します。 
+2. **自分のチームの情報** で、**休暇** タブを選択します。
 
 3. 必要に応じて自分のチーム メンバーの休暇申請を表示および承認します。
+
+## <a name="preview-leave-request-workflow-experience-enhancements"></a>(プレビュー) 休暇申請ワークフロー エクスペリエンス拡張機能
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+このプレビュー機能は、次の拡張機能を提供します。
+
+- 複数の休暇申請を選択し、すべての休暇申請に対して同じアクションを実行できます。
+- ページの上部に位置するリボンと新しいワークフロー ボタンには、休暇申請に対して実行できるアクションが表示されます。
+
+![マネージャーのエクスペリエンス](media/hr-leave-and-absence-manager-experience.png)
 
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
-- [休暇計画の作成](hr-leave-and-absence-plans.md)
+- [休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

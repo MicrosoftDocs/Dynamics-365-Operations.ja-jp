@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 964db71efc9dc81d60199e37de8668de9d667496
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842084"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947523"
 ---
 # <a name="engineering-change-management-overview"></a>エンジニアリング変更管理の概要
 
@@ -48,7 +48,7 @@ ms.locfileid: "5842084"
 
 まず、次の手順に従って機能をオンにします。
 
-1. [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動します。
+1. [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースに移動します。
 1. 更新プログラムを確認します。
 1. **エンジニアリング変更管理** という機能を有効にします。
 1. それを使用する場合は、**製品分析コード バージョン** という名前の機能も有効にします。
@@ -57,9 +57,12 @@ ms.locfileid: "5842084"
 
 1. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、システムをメンテナンス モードにします。
 1. **システム管理 \> 設定 \> ライセンス コンフィギュレーション** の順にクリックします。
-1. **取引** ノードを展開します
-1. **エンジニアリング変更管理** チェック ボックスをオンにします。
-1. それを使用する場合は、**製品分析コード - バージョン** チェック ボックスもオンにします。
+1. **取引** ノードを展開します。
+1. **エンジニアリング変更管理** チェック ボックスを選択して、主要機能のコンフィギュレーション キーを有効にします。 (サブ機能の一方または両方を無効にする場合を除いて、ノードを展開する必要はありません。)
+1. バージョン分析コードも使用する場合は、**製品分析コード - バージョン** チェック ボックスもオンにします。 (このチェック ボックスは一覧の下の方にあり、**エンジニアリング変更管理** ノードの下に入れ子になってはいません。)
 1. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、メンテナンス モードをオフにします。
+
+> [!IMPORTANT]
+> 2022 年 4 月から、**エンジニアリング変更管理** および **製品分析コード - バージョン** の両方のライセンス キーがすべての新規インストールで既定で有効になりますが、必要に応じて無効にすることもできます。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,8 +4,6 @@ description: このトピックでは、SysMailer フレームワークを使用
 author: ChrisGarty
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
 ms.custom: 270774
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: c15bd8f283dedc678dbf860ac843f277a8607fda
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4b2c3ca5719cfd507e32a17514c36b26304e08c4
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753008"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866320"
 ---
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 

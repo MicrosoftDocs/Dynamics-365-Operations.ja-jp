@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fee496157db581bf77f444674ca858aa4383e27c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889791"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963218"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -55,6 +55,9 @@ ms.locfileid: "5889791"
 Human Resources 環境を管理するために LCS を使用するには、最初に LCS プロジェクトを作成する必要があります。
 
 1. Human Resources をサブスクライブするために使用したアカウントを使用して [LCS](https://lcs.dynamics.com/Logon/Index) にサインインします。
+
+   > [!NOTE]
+   > プロビジョニングを成功させるためには、Human Resources 環境のプロビジョニングに使用するアカウントが、Human Resources 環境に関連する Power Apps 環境の **システム管理者** または **システム カスタマイザー** のいずれかのロールに割り当てられている必要があります。 セキュリティ ロールを Power Platform 内のユーザーに割り当てる方法の詳細については、「[リソースに対するユーザー セキュリティの構成](https://docs.microsoft.com/power-platform/admin/database-security)」を参照してください。
 
 2. プラス記号 (**+**) を選択してプロジェクトを作成します。
 
@@ -115,13 +118,30 @@ Human Resources を配置する Power Apps 環境を決定する際には、次�
    
     - **評価版環境** - これらの環境には、有効期限が設定されています。 有効期限が切れると、環境とその中に含まれる Human Resources インスタンスが自動的に削除されます。
    
-    - **対応していない地域** - 現在の Human Resources は、次の地域でのみ対応しています：米国、ヨーロッパ、英国、オーストラリア、カナダ、アジア。
-
-    > [!NOTE]
-    > Human Resources 環境は、Power Apps 環境がプロビジョニングされたのと同じ領域でプロビジョニングされます。 Human Resources 環境の別の領域への移行には対応していません。
+    - **サポート対象外の地域** - 環境はサポートされている地域に存在している必要があります。 詳細については、[サポートされている地域](hr-admin-setup-provision.md#supported-geographies) を参照してください。
 
 6. 使用する正しい環境の決定後、プロビジョニング プロセスを続行できます。 
- 
+
+### <a name="supported-geographies"></a>サポートされている地域
+
+Human Resources では現在、次の場所がサポートされます。
+
+- 米国
+- ヨーロッパ
+- 英国
+- オーストラリア
+- カナダ
+- アジア 
+
+Human Resources 環境を作成するときに、Human Resources 環境に関連付ける Power Apps 環境を選択します。 Human Resources 環境は、選択した Power Apps 環境と同じ Azure 地域にプロビジョニングされます。 Human Resources 環境に関連する Power Apps 環境を作成する際に、地理的な場所を選択することで、Human Resources 環境とデータベースが物理的に存在する場所を選択することができます。
+
+環境がプロビジョニングされる Azure *地域* は選択できますが、特定の Azure *リージョン* は選択できません。 オートメーションでは、負荷分散とパフォーマンスを最適化するために、環境が作成される地域内の特定の地域を決定します。 Azure 地域とリージョンについては、[Azure 地域](https://azure.microsoft.com/global-infrastructure/geographies)についてのドキュメントを参照してください。
+
+Human Resources 環境のデータは常に、Human Resources 環境が作成された Azure 地域内に含まれます。 ただし、常に同じ Azure リージョン内に含まれるわけではありません。 ディザスター リカバリーを目的として、データは主要な Azure リージョンと地域内のフェールオーバー リージョンの両方で複製されます。
+
+ > [!NOTE]
+ > Human Resources 環境を 1 つの Azure リージョンから別のリージョンに移行することはサポートされていません。
+
 ## <a name="grant-access-to-the-environment"></a>環境へのアクセスを付与
 
 既定では、環境を作成したグローバル管理者がそこにアクセスできます。 追加のアプリケーション ユーザーに対するアクセス権を明示的に付与する必要があります。 Human Resources 環境では、ユーザーを追加し、適切な役割を割り当てる必要があります。 Human Resources を展開するグローバル管理者は、初期化を完了して、他のテナント ユーザーのアクセスを有効にするため、Attract および Onboard の両方も起動する必要があります。 これが発生するまで、他のユーザーは Attract および Onboard にアクセスすることはできませんし、アクセス違反エラーが発生します。 詳細については、[新規ユーザーの作成](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) および [ユーザーのセキュリティ ロールへの割り当て](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) を参照してください。 

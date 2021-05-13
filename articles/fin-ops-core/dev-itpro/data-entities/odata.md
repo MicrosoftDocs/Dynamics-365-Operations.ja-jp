@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7eb7fca749402b56709ff7ad54cd83d95a49e1b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7eae44671af9d4fd48ff28604858c5de05d3205d
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750374"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941266"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -244,7 +244,7 @@ OData は、データベースに対して豊富なクエリを作成できる S
 | \[組織のルート URL\]/data/Customers?$select=FirstName,LastName | すべての顧客の一覧を表示しますが、姓名のプロパティだけを表示します。 |
 | \[組織のルート URL\]/data/Customers?$format=json               | JavaScript クライアントとやり取りするために使用できる JSON 形式ですべての顧客の一覧を表示します。 |
 
-OData プロトコルは、エンティティで多くの似たフィルター処理とクエリ オプションをサポートします。 クエリ オプションの完全なセットについては、[Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx) を参照してください。
+OData プロトコルは、エンティティで多くの似たフィルター処理とクエリ オプションをサポートします。 クエリ オプションの完全なセットについては、[Windows Communication Foundation](/dotnet/framework/wcf/) を参照してください。
 
 ## <a name="using-enums"></a>列挙型の使用
 列挙型は、名前空間 **Microsoft.Dynamics.DataEntities** の下にあります。 OData クエリに列挙型を含めるには、次の構文を使用します。
@@ -326,7 +326,7 @@ public static void CreateVendor(Resources context)
 OData はエンティティで配列フィールドをサポートしていません。 OData で使用されるエンティティを設計するときにこれを考慮する必要があります。
 
 ### <a name="after-restarting-aos-the-first-odata-call-may-take-a-long-time-to-process"></a>AOS を再起動した後、最初の OData 呼び出しの処理に時間がかかることがあります
-メタデータがキャッシュされていないために、再起動された AOS によって処理される最初の OData 呼び出しは処理に時間がかかる場合があります。 この待ち時間は、AOS 起動時に OData をウォーム アップすることで回避できます。 詳細については、[AOS 起動時に OData メタデータ キャッシュを作成する](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup) を参照してください。
+メタデータがキャッシュされていないために、再起動された AOS によって処理される最初の OData 呼び出しは処理に時間がかかる場合があります。 この待ち時間は、AOS 起動時に OData をウォーム アップすることで回避できます。 詳細については、[AOS 起動時に OData メタデータ キャッシュを作成する](../sysadmin/odata-warmup.md) を参照してください。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

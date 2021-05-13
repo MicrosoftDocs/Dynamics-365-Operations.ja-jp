@@ -10,12 +10,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 76e64d483e833782733277a64d8dc37cbeba6130
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 32128d48bfac195530d70b60e67cfd4921fc001e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857373"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941086"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>当事者およびグローバル アドレス帳モデルへのアップグレード
 
@@ -52,11 +52,11 @@ ms.locfileid: "5857373"
 
 2. [Microsoft Azure](https://portal.azure.com/) にログインします。
 
-3. [リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal)を作成します。
+3. [リソース グループ](/azure/azure-resource-manager/management/manage-resource-groups-portal)を作成します。
 
-4. 作成したリソース グループに[ストレージ アカウント](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal)を作成します。
+4. 作成したリソース グループに[ストレージ アカウント](/azure/storage/common/storage-account-create?tabs=azure-portal)を作成します。
 
-5. 作成した上記のリソース グループに[データ ファクトリー](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal)を作成します。
+5. 作成した上記のリソース グループに[データ ファクトリー](/azure/data-factory/quickstart-create-data-factory-portal)を作成します。
 
 6. データ ファクトリーを開き、**作成者 & モニター** タイルを選択します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "5857373"
     FO リンクされた Service_properties_type Properties_service プリンシパル ID | アプリケーションのクライアント ID を指定します。
     Dynamics CRM リンクされた Service_properties_type Properties_username | Dynamics に接続するユーザー名。
 
-    詳細については、[各環境の Resource Manager テンプレートの手動促進](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)、[リンクされたサービス プロパティ](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties)、および [Azure Data Factory を使用するデータ ファクトリ](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)参照してください
+    詳細については、[各環境の Resource Manager テンプレートの手動促進](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)、[リンクされたサービス プロパティ](/azure/data-factory/connector-dynamics-ax#linked-service-properties)、および [Azure Data Factory を使用するデータ ファクトリ](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)参照してください
 
 10. 配置後に、データ ファクトリのデータセット、データ フロー、およびリンクされたサービスを検証します。
 
@@ -158,7 +158,7 @@ ms.locfileid: "5857373"
 8. Finance and Operations アプリで新しい **当事者** レコードをインポートします。
 
     + Azure Blob Storage から `FONewParty.csv` ファイルをダウンロードします。 パスは `partybootstrapping/output/FONewParty.csv` です。
-    + `FONewParty.csv` ファイルを Excel ファイルに変換し、Excel ファイルを Finance and Operations アプリにインポートします。  csv インポートがふさわしい場合は、csv ファイルを直接インポートできます。 データ量によっては、インポートの実行に数時間かかる場合があります。 詳細については、[データのインポート ジョブとエクスポート ジョブの概要](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job)を参照してください。
+    + `FONewParty.csv` ファイルを Excel ファイルに変換し、Excel ファイルを Finance and Operations アプリにインポートします。  csv インポートがふさわしい場合は、csv ファイルを直接インポートできます。 データ量によっては、インポートの実行に数時間かかる場合があります。 詳細については、[データのインポート ジョブとエクスポート ジョブの概要](../data-import-export-job.md)を参照してください。
 
     ![Datavers 当事者レコードのインポート](media/data-factory-import-party.png)
 

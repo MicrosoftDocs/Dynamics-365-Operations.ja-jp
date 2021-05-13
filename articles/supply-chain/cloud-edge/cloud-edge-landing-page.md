@@ -1,8 +1,8 @@
 ---
-title: スケール ユニットを使用して、Supply Chain Management ワークロードの弾力性を高める
+title: 製造と倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
 description: このトピックでは、製造および倉庫管理のワークロードのクラウドおよびエッジのスケール ユニットに関する情報を提供します。
 author: cabeln
-ms.date: 04/13/2021
+ms.date: 04/22/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c47088edd89413d196e904bc7eaa115585bf8464
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 86f231b9ae85d136b0e963757d9561a7abda4edc
+ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899146"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5938303"
 ---
-# <a name="use-scale-units-to-help-increase-resilience-for-supply-chain-management-workloads"></a>スケール ユニットを使用して、Supply Chain Management ワークロードの弾力性を高める
+# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>製造および倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
 
 [!include [banner](../includes/banner.md)]
 

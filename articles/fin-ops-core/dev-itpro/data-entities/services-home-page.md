@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5023caa058280abe65c055c54a5e9b476cad6fa5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 96c57fd1f1a72aa679b5312cbe4780cf3cd5ae5a
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749686"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941009"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -49,7 +49,7 @@ ms.locfileid: "5749686"
 ## <a name="authentication"></a>認証
 OData サービス、JSON ベース カスタム サービス、および REST メタデータ サービスは、標準の OAuth 2.0 認証をサポートします。
 
-現在のところ、[承認コード付与フロー](https://msdn.microsoft.com/library/azure/dn645542.aspx)と[クライアントの資格情報 (共有シークレットまたは証明書) を使用したサービス間の呼び出し](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)の両方をサポートしています。
+現在のところ、[承認コード付与フロー](/previous-versions/azure/dn645542(v=azure.100))と[クライアントの資格情報 (共有シークレットまたは証明書) を使用したサービス間の呼び出し](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)の両方をサポートしています。
 
 Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケーションがサポートされています。
 
@@ -58,7 +58,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 詳細については、以下を参照してください。
 
-- [OAuth 2.0 および Azure Active Directory を使用して web アプリケーションへのアクセスを許可する](https://msdn.microsoft.com/library/azure/dn645545.aspx)
+- [OAuth 2.0 および Azure Active Directory を使用して web アプリケーションへのアクセスを許可する](/previous-versions/azure/dn645545(v=azure.100))
 - [サービス認証問題のトラブルシューティング](troubleshoot-service-authentication.md)
 
 次の図は、認証コードの付与フローに対して認証を設定する方法について説明します。
@@ -76,7 +76,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 **前提条件:** Azure サブスクリプションと Azure Active Directory (Azure AD) への管理者権限が必要です。
 
-クライアントがサービスと通信する前に、(Azure AD) に登録する必要があります。 これらの手順を使用すると、(Azure AD) でアプリケーションに登録できます。 この手順については、[Azure アプリ登録のトレーニングガイド](https://docs.microsoft.com/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users)を参照してください。 このプロセスでの固有の構成には、コンテキストで次の追加情報を使用する必要があります。
+クライアントがサービスと通信する前に、(Azure AD) に登録する必要があります。 これらの手順を使用すると、(Azure AD) でアプリケーションに登録できます。 この手順については、[Azure アプリ登録のトレーニングガイド](/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users)を参照してください。 このプロセスでの固有の構成には、コンテキストで次の追加情報を使用する必要があります。
 
 **Microsoft DynamicsERP (Microsoft.ERP)** を選択します。 **API を選択** 内の検索フィールドで **Microsoft Dynamics ERP** を検索する場合、使用できないように見えることがあります。 その場合は、上に示したようにフルネームを検索してください。
 **委任アクセス権** で、少なくとも次のオプションを選択する必要があります。

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7c1bd8d9cb494cef78fa7c14f6c391821d48749a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799856"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936659"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理
 
@@ -43,7 +43,7 @@ Commerce 本部の B2B e コマース機能をオンにするには、次の手�
 
 ## <a name="create-a-number-sequence-and-add-it-to-commerce-shared-parameters"></a>番号順序を作成して Commerce の共有パラメータに追加する
 
-番号順序は、ID が必要なマスター データ レコードおよびトランザクション レコードに対して読みやすい固有の ID を生成するために使用されます。 番号シーケンスの詳細については、[番号シーケンスの概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) を参照してください。
+番号順序は、ID が必要なマスター データ レコードおよびトランザクション レコードに対して読みやすい固有の ID を生成するために使用されます。 番号シーケンスの詳細については、[番号シーケンスの概要](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) を参照してください。
 
 番号順序を作成し、これを Commerce 本部の [Commerce] 共有パラメータに追加するには、次の手順に従います。
 
@@ -136,7 +136,7 @@ Commerce 本部の取引先とユーザーをオンボードするには、以�
 
 [B2B eコマース サイトの製品数量制限の設定](quantity-limits.md)
 
-[番号順序の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+[番号順序の概要](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

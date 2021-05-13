@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ef0198d694c971af9a93019e51aa7a0bd2a090e3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 332f22c24ecc13259022ce633be287151868848e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749327"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941015"
 ---
 # <a name="point-in-time-restore-of-the-production-database-to-a-sandbox-environment"></a>サンドボックス環境への生産データベースのポイントインタイム復元
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用すると、ユーザー受け入れテスト(UAT)のサンドボックス環境に対して、本番データベースのポイント イン タイム復元(PITR)を実行できます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
+Microsoft Dynamics Lifecycle Services (LCS) を使用すると、ユーザー受け入れテスト(UAT)のサンドボックス環境に対して、本番データベースのポイント イン タイム復元(PITR)を実行できます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](/azure/sql-database/sql-database-automated-backups)を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
 
 > [!IMPORTANT]
 > Microsoft は、実稼働レポートを目的とした実稼働データのサンドボックス環境へのコピーには対応していません。

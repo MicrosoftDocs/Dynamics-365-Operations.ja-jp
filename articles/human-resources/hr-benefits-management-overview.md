@@ -2,7 +2,7 @@
 title: 福利厚生の管理の概要
 description: Dynamics 365 Human Resources の福利厚生の管理機能の概要。 使いやすいオンライン エクスペリエンスで、従業員に拡張された給付金オプションを提供します。
 author: andreabichsel
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34b0916e0bf618590bcc56a9a3bc7c61576361cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4ad94d81d7e8bedd3622b3e073e431bc4abaafff
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805781"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924233"
 ---
 # <a name="benefits-management-overview"></a>給付金管理の概要
 
@@ -40,6 +40,10 @@ ms.locfileid: "5805781"
 - 認定されたライフ イベント処理は将来のライフ イベントをサポートします。
 
 デモ データにアクセスする場合は、サンドボックス環境を再配置する必要があります。
+
+>[!NOTE]
+>これで、給付金管理フォームをカスタマイズできます。 補償レートに関連するカスタム フィールドを、給付金計画の **補償オプション** フォームに追加できます。 カスタム フィールドの操作についての詳細については、[カスタム フィールド](hr-developer-custom-fields.md) を参照してください。
+>![給付金管理カスタム フィールド](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>給付金管理を有効にする
 

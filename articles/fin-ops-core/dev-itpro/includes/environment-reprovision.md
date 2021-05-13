@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3f75f25966df60c2041e9ae0fb51dc275c44f251
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb5ecef9cb9b70e8395989ea271bdb717e573427
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409099"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920495"
 ---
 > [!IMPORTANT]
 > 環境固有のレコードの中には、自動的なデータベース移動操作に含められないものがあり、その手順を追加する必要があります。 次のような役割があります。
@@ -17,7 +17,7 @@ ms.locfileid: "4409099"
 データベースをサンドボックス UAT または実稼動環境に移動する場合は、データベースの移動操作が完了した後に、[Commerce Scale Unit を初期化](../deployment/Initialize-Retail-Channels.md)する必要があります。 ソース環境からの Commerce Scale Unit の関連付けは、移行先の環境にコピーされません。 
 
 ### <a name="synchronize-commerce-self-service-installers"></a>Commerce のセルフサービス インストーラーの同期
-HQ 内の Commerce セルフサービス インストーラーにアクセスできるようにするには、データベースの移動操作が完了した後に[セルフサービス インストーラーを同期](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers)する必要があります。
+HQ 内の Commerce セルフサービス インストーラーにアクセスできるようにするには、データベースの移動操作が完了した後に[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/synchronize-installers.md)する必要があります。
 
 > [!IMPORTANT]
 > 環境の再プロビジョニング手順は、データベース移動操作の一部として完全に自動化されており、これ以上手動で実行する必要はありません。 環境の再プロビジョニング ツールはアセット ライブラリで引き続き使用でき、特定の状況でエラーの状態を軽減するために使用される場合もあります。 

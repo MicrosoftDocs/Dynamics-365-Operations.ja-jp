@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4de916fcd09b4eaa041dea0a1d1f843ce0e8f10a
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749308"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940964"
 ---
 # <a name="on-premises-deployment-home-page"></a>オンプレミス配置のホーム ページ
 
@@ -56,10 +56,10 @@ Dynamics 365 Finance + Operations (オンプレミス) を配置できます。 
 - [複数の環境に対する同じ AD FS インスタンスの再利用](onprem-reuseadfs.md)
 
 ## <a name="commerce"></a>Commerce
-- [オンプレミス配置で使用できるコマースの機能](../../../retail/retail-onprem.md)
+- [オンプレミス配置で使用できるコマースの機能](../../../commerce/retail-onprem.md)
 - [オンプレミス環境での小売チャネルのコンポーネントのインストール手順](deploy-retail-onprem.md)
-- [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../../../retail/retail-modern-pos-device-activation.md)
-- [コマース スケール ユニットのコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../../../commerce/retail-modern-pos-device-activation.md)
+- [コマース スケール ユニットのコンフィギュレーションとインストール](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>アップグレード
 - [オンプレミス環境のインプレース アップグレード プロセス](../migration-upgrade/on-prem-upgrade.md)

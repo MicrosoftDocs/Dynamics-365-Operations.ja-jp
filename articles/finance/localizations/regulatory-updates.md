@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890779"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941143"
 ---
 # <a name="regulatory-updates"></a>規制の更新
 
@@ -47,6 +47,7 @@ Microsoft は、新しい規制要件をできるだけ早く実装するよう�
 |      ブラジル         |   2020 年 10 月      | 10.0.16      |   DRCST 申告 SC - SEF 262/2020   |
 |      ブラジル         |   2020 年 10 月      | 10.0.16      |   SPED 会計 ICMS / IPI レコード C176   |
 |      ブラジル         |   2020 年 12 月      | 10.0.17、10.0.16HF、10.0.15HF      |   NF-e NT2020.006 - Iデジタル プラットフォームの中継 ID (レイアウトと検証ルールの更新)   |
+|      ブラジル         |   2021 年 3 月         | 10.0.17、10.0.18、10.0.19         |    SPED REINF レイアウト 1.5.1
 |      ヨーロッパ        |   2021 年 1 月       | 10.0.17、10.0.16HF、10.0.15HF      |   Brexit - 北アイルランド議定書が EU 諸国の域内貿易報告に与える影響  |
 |      ドイツ        |   2021 年 1 月       | 10.0.16HF      |   ELSTER UstVAT VAT 事前通知形式が拡張され、回収不能な債務の償却に使用する 2 つのボックス 37,50 が追加されました  |
 |      ドイツ        |   2021 年 1 月       | 10.0.17      |   ELSTER VAT 事前通知 XML 構造の変更 (UstVA)  |

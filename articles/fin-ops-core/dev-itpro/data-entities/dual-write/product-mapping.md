@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3087ab8853b14308da9496eead7478822cec86b8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750743"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941199"
 ---
 # <a name="unified-product-experience"></a>統一された製品経験
 
@@ -124,7 +124,7 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 
 1 つの製品に異なる製品分析コードが含まれている場合 (たとえば、製品マスターのサイズや色が製品分析コードと同じである場合)、個々の特徴的製品 (つまり、各製品バリアント) は、それらの製品分析コードの組み合わせとして定義されます。 たとえば、製品番号 B0001 は、XS サイズの黒い T シャツで、製品番号 B0002 は S サイズの黒い T シャツです。 この場合、製品分析コードの既存の組み合わせが定義されています。 たとえば、前の例の T シャツは、XS サイズの黒、S サイズの黒、M サイズの黒、L サイズの黒にすることができますが、XL サイズの黒にすることはできません。 つまり、製品マスターが実行できる製品分析コードは指定されており、これらの値に基づいてバリアントをリリースできます。
 
-製品マスターで実行できる製品分析コードを追跡するために、各製品分析コードに対して次のテーブルが Dataverseに作成され、マッピングされます。 詳細については、「[製品情報の概要](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information)」を参照してください。
+製品マスターで実行できる製品分析コードを追跡するために、各製品分析コードに対して次のテーブルが Dataverseに作成され、マッピングされます。 詳細については、[製品情報の概要]../../../supply-chain/pim/product-information.md)を参照してください。
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
@@ -138,7 +138,7 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>既定の注文設定と製品固有の既定の注文設定
 
-既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 この情報は、既定の注文設定と製品固有の既定の注文設定エンティティを使用して Dataverse で利用できます。 機能の詳細については、[既定の注文設定トピック](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings) を参照してください。
+既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 この情報は、既定の注文設定と製品固有の既定の注文設定エンティティを使用して Dataverse で利用できます。 機能の詳細については、[既定の注文設定トピック](../../../../supply-chain/production-control/default-order-settings.md) を参照してください。
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 

@@ -4,22 +4,19 @@ description: このトピックには、X++ の構文リファレンスが含ま
 author: RobinARH
 ms.date: 07/22/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 72211
-ms.assetid: bb238a46-3a43-4f3c-a9b6-86b26e988881
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2fb739bcd23a64ab19acc40c785822e69a94477
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 44b59d68039b52ebd67f2a8cb9950606b93df645
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749918"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865959"
 ---
 # <a name="x-syntax"></a>X++ 構文
 

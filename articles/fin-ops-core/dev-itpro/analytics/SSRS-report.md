@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 1c79fc8167d5227c261a5ae1ec23ccbc618e379a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2961227fead338425c4713d584f6422f51922559
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754612"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892477"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 
@@ -36,7 +36,7 @@ ms.locfileid: "5754612"
 詳細については、[レポート ソリューションの作成](create-nextgen-reporting-solutions.md) を参照してください。
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
-[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61) により含められる **SQL Server Reporting Services レポート** は、使用可能な SSRS レポートを一覧表示します。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。
+[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) により含められる **SQL Server Reporting Services レポート** は、使用可能な SSRS レポートを一覧表示します。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

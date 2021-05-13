@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b04eac616bcfb780ca9ff0b2943bc635da41fc77
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dfd7f5479217e02258bf7e756dd3f3731da653dd
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745153"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866144"
 ---
 # <a name="validate-expected-values"></a>予測値を検証する
 

@@ -2,7 +2,7 @@
 title: データ パッケージを使用してデモ データを生成します
 description: このトピックでは、デモ データ パッケージを使用して、システムのデータを生成する方法について説明します。
 author: panolte
-ms.date: 06/06/2018
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: a61a76e4a8c3bcda6146b5ae76ac0de1f76ff1d0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bb0c658deb5d4c674613dc7ea52b97fe354a19b8
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749972"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956120"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 
@@ -170,10 +170,6 @@ ms.locfileid: "5749972"
 3. 経費パッケージをインポートする前に、ポリシーの優先順位を設定します。 **経費管理** &gt; **設定** &gt; **ポリシー** &gt; **経費レポート** を選び、**パラメーター** を選択します。 その後、**会社** を選択し、右の列に移動します。
 4. プロジェクト管理および会計パッケージをロードした後、**リソース能力のロールアップ** バッチ ジョブを実行する必要があります。 このジョブは **リソース能力のロールアップを同期** ページ (**プロジェクト管理と会計** &gt; **定期処理** &gt; **能力の同期** &gt; **リソース能力のロールアップを同期**) から実行することができます。 将来の長い期間リソースをスケジュールすることができる終了日を指定します。 バッチ ジョブを実行した後、チーム機能の自動生成は、プロジェクトの作業分解構造 (WBS) で有効になります。
 5. 各モジュールの印刷管理設定を追加します。
-
-### <a name="scenario-scripts"></a>シナリオ スクリプト
-
-デモ データがサポートするシナリオの多くにスクリプトが用意されています。 これらのスクリプトは、[デモ データ スクリプト](https://go.microsoft.com/fwlink/?linkid=861599) で検索できます。
 
 ## <a name="transactions-and-automatic-posting"></a>トランザクションと自動転記
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6ec8714ef208b25284f218e81dda0ff94ed49d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828372"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920112"
 ---
 # <a name="transportation-management-engines"></a>輸送管理エンジン
 
@@ -96,6 +96,12 @@ Supply Chain Management で定義されたデータに依存する輸送管理�
 | 3        | 発送先開始郵便番号 | 割り当て | 文字列    | 郵便番号    | 選択済  |
 | 4        | 発送先終了郵便番号   | 割り当て | 文字列    | 郵便番号    | 選択済  |
 | 5        | 発送先国           | 割り当て | 文字列    | 国/地域 |           |
+
+### <a name="whitepaper"></a>ホワイト ペーパー
+
+詳細については、次のホワイト ペーパー (AX2012 をサポートするように記述されているが、Dynamics 365 Supply Chain Management にも適用される) をダウンロードしてください
+
+- [輸送管理エンジン](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

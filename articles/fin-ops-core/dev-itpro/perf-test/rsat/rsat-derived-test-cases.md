@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 396b8c769a7efb476354d25670e03247d2d1d5a7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1202991f22f084e6e12b28d7ab159092b0916fe8
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750342"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865944"
 ---
 # <a name="derived-test-cases"></a>派生テスト ケース
 

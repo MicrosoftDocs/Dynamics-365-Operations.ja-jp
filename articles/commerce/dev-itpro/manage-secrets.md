@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 8eb49e201b32b3944104af3941c1fb13a2b31181
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8d7b8be5fca49176e92efcf5a128817598d56004
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800405"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937076"
 ---
 # <a name="manage-secrets-for-retail-channels"></a>小売チャンネルのシークレットを管理
 
@@ -38,8 +38,8 @@ ms.locfileid: "5800405"
 
 2. IT プロフェッショナルまたは実装パートナーは、これらの配置およびコンフィギュレーションの手順に従います。
 
-    1. 拡張機能を顧客環境に適用します。 詳細については、[クラウド環境への更新プログラムの適用](../../dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
-    2. 目的のシークレットを Key Vault にアップロードします (または入力します)。 詳細については、[Azure Key Vault とは何ですか](https://docs.microsoft.com/azure/key-vault/key-vault-overview) を参照してください。
+    1. 拡張機能を顧客環境に適用します。 詳細については、[クラウド環境への更新プログラムの適用](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
+    2. 目的のシークレットを Key Vault にアップロードします (または入力します)。 詳細については、[Azure Key Vault とは何ですか](/azure/key-vault/key-vault-overview) を参照してください。
     3. **Key Vault パラメーター** ページで (**本社 \> Key Vault パラメーター**)、本社クライアントを Key Vault に接続するようコンフィギュレーションします。
     4. **Key Vault パラメーター** ページで、本社クライアントの Key Vault シークレットの拡張機能シークレット名を指定します。
 

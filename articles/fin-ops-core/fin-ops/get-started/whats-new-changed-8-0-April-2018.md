@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 10cdad198206696276eb9f6743bc03b0de30ed00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d92d4d8fda5ce473ffe4a28ac316d0da20297e75
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749181"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923428"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
 
@@ -30,7 +30,7 @@ ms.locfileid: "5749181"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
-ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース計画](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
+ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース計画](/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
 
 ### <a name="introducing-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の導入
 
@@ -77,7 +77,7 @@ Finance and Operations 内で担当者および個人データを検索するこ
 
 - **18 年秋およびそれ以降のリリース** – 機能的なギャップが埋まります。 機能的なギャップが埋められた後、1 つの伝票の機能が完全にオフになります。
 
-この機能の使用と廃止に関する詳細については、[1 つの伝票ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/one-voucher)を参照してください。
+この機能の使用と廃止に関する詳細については、[1 つの伝票ドキュメント](../../../finance/general-ledger/one-voucher.md)を参照してください。
 
 ## <a name="extensibility-and-customization"></a>拡張性およびカスタマイズ
 
@@ -165,7 +165,7 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 ### <a name="improved-delivery-of-platform-and-financial-reporting-updates"></a>プラットフォームおよび財務レポート更新のデリバリーの強化
 
-プラットフォームおよび財務レポートの更新は、オプションの更新プログラムではなく、Microsoft によって管理される継続的な更新になります。 この変更は、サービスの信頼性と可用性を向上させるとともに、最新の改善と修正を顧客に確実に提供することを目的としています。  プラットフォームと財務レポートの更新には、下位互換性があります。 詳細については、[Finance and Operations クラウド プラットフォームの毎月の更新に関するよく寄せられる質問](../../../dev-itpro/sysadmin/faq-platform-monthly-updates.md) を参照してください。
+プラットフォームおよび財務レポートの更新は、オプションの更新プログラムではなく、Microsoft によって管理される継続的な更新になります。 この変更は、サービスの信頼性と可用性を向上させるとともに、最新の改善と修正を顧客に確実に提供することを目的としています。  プラットフォームと財務レポートの更新には、下位互換性があります。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](./one-version.md)を参照してください。
 
 ### <a name="upgrade-automation"></a>自動アップグレード
 

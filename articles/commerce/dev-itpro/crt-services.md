@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-18
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: 246674b5ef823271ece1843867f4ed541441d0e5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76ab8d8ac8e21ae90e79ba7f8f87d8e90f1b7f07
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795675"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937106"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
@@ -218,7 +218,7 @@ CRT の多くのサービスは、チャネルおよび店舗運営の機能を�
 
 サービス レイヤーの上は、ワークフロー レイヤーです。 ワークフローは、サービスとビジネス ロジックを共に業務プロセスを定義するコレクションです。 たとえば、顧客がカートに品目を追加すると、価格の取得、検証の実行、在庫数量の確認、出荷費用の計算、税計算、および割引計算をするためワークフローを使用できます。 既存のワークフローをカスタマイズすることも、新しいワークフローを作成することもできます。 ワークフローを使用して、業務プロセスの一部としてサードパーティ製システムに接続することもできます。
 
-サービスと同じように、ワークフローは要求/応答パターンを使用します。 基本 CRT [要求](https://technet.microsoft.com/library/microsoft.dynamics.commerce.runtime.messages.request.aspx) クラスから継承された要求オブジェクト。 基本 CRT [応答](https://technet.microsoft.com/library/microsoft.dynamics.commerce.runtime.messages.response.aspx) クラスから継承された応答オブジェクト。 ワークフローには、[WorkflowRequestHandler<TRequest, TResponse>](https://technet.microsoft.com/library/jj764791.aspx) クラスを拡張する要求ハンドラー クラスもあります。 ワークフローを作成するには、要求クラスおよび応答クラスを作成し、ワークフローのビジネス ロジックが含まれる要求ハンドラー クラスを作成します。
+サービスと同じように、ワークフローは要求/応答パターンを使用します。 基本 CRT [要求](/dynamicsax-2012/appuser-itpro/request-class-microsoft-dynamics-commerce-runtime-messages) クラスから継承された要求オブジェクト。 基本 CRT [応答](/dynamicsax-2012/appuser-itpro/response-class-microsoft-dynamics-commerce-runtime-messages) クラスから継承された応答オブジェクト。 ワークフローには、[WorkflowRequestHandler<TRequest, TResponse>](/dynamicsax-2012/appuser-itpro/workflowrequesthandler-trequest-tresponse-class-microsoft-dynamics-commerce-runtime-workflow) クラスを拡張する要求ハンドラー クラスもあります。 ワークフローを作成するには、要求クラスおよび応答クラスを作成し、ワークフローのビジネス ロジックが含まれる要求ハンドラー クラスを作成します。
 
 たとえば、現金払いトランザクションまたは顧客からの注文を作成する場合、注文が作成される前に、多くの異なるステップやワークフローが完了します。 注文プロセスでのワークフロー ステップの 1 つは、カート要求の保存です。 カート要求ワークフローの保存は、POS からカートに加えられる変更の保存を担当します。 たとえば、買い物カゴに品目を追加したり、数量を変更するなど POS で行う行為は、SaveCart を呼び出して POS とデータベースに変更を保存します。
 

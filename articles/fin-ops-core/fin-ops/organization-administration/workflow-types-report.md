@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 22ffb4c7f927f9ee3c2c9b61ccf5f3e1b0575b0a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a5295984115cafc8544d2f2a2d12727853d616d7
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747121"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893486"
 ---
 # <a name="workflow-types-report"></a>ワークフロー タイプのレポート
 
@@ -31,7 +31,7 @@ ms.locfileid: "5747121"
 
 ## <a name="view-the-report"></a>レポートの表示
 
-[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61) に含まれる **ワークフロー タイプ レポート** は、用意されているワークフローの各タイプが一覧表示されています。 レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。 
+[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) に含まれる **ワークフロー タイプ レポート** は、用意されているワークフローの各タイプが一覧表示されています。 レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

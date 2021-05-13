@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f1d0361da03f2fc4aaaa749d632192265483db2d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c4d762a6750a295b91a1d146b7bf0ae750e2e9bd
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752828"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923192"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能および変更された機能
 
@@ -76,7 +76,7 @@ ms.locfileid: "5752828"
 </tr>
 <tr>
 <td>同じ品目でさまざまな製品分析コードを持つ品目を含む BOM をサポートします。</td>
-<td>実稼動環境で 1 つまたは複数の製品分析コードを使用している場合、同じ品目の異なるバリアントに基づいて、品目を生産したい状況を手に入れることができます。 詳細については、<a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">このブログ</a>を参照してください。</td>
+<td>実稼動環境で 1 つまたは複数の製品分析コードを使用している場合、同じ品目の異なるバリアントに基づいて、品目を生産したい状況を手に入れることができます。 詳細については、<a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">このブログ</a>を参照してください。</td>
 </tr>
 <tr>
 <td>BOM の最初のレベルでの循環構造による製造オーダーは、原材料リソースを計画するための BOM レベルの計算から除外されます。</td>

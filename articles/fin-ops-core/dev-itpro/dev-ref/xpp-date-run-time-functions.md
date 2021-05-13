@@ -4,22 +4,19 @@ description: このトピックでは、日付ランタイム関数について�
 author: RobinARH
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31341
-ms.assetid: fbaf07ef-63d0-40aa-bef5-e44d6c6a4643
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9f867ae6b379e5ecf51f0519551cfeedb8dd8ac
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 928eeb52a0f8a14c7b97544e29cb23cefb5fda38
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749948"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865904"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b96ca782223993a0f49c140b05b62b105d00be53
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 629f2ecf4ccd7aee389b495be9b13fccb7dbc97a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751302"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893592"
 ---
 # <a name="configure-the-electronic-reporting-er-framework"></a>電子申告 (ER) フレームワークの構成
 
@@ -58,7 +58,7 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
 - **デザイン モードを有効にする**
 
     - このオプションを **はい** に設定すると、埋め込み ER デザイナーが有効になり、ユーザーが独自の ER コンフィギュレーションを作成できるようになります。
-    - ユーザーが [コンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップして ER デザイナーの機能にアクセスすることを要求するには、このオプションを **いいえ** に設定します。
+    - ユーザーが [コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップして ER デザイナーの機能にアクセスすることを要求するには、このオプションを **いいえ** に設定します。
 
 - **データ処理の ER パフォーマンスの追跡を無効にします**
 
@@ -93,7 +93,7 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
 
 ## <a name="rcs-parameters"></a>RCS パラメーター
 
-**電子申告のパラメーター** ページの **RCS** タブで、[コンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップします。
+**電子申告のパラメーター** ページの **RCS** タブで、[コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップします。
 
 [![電子申告パラメーター ページの RCS タブ](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
 
@@ -128,7 +128,7 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
 
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
-- [Regulatory Services のコンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+- [Regulatory Services のコンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

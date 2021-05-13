@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c8f417b3ba427104d6d0e57ac595ab7b453f48fa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749568"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923601"
 ---
 # <a name="grid-capabilities"></a>グリッド機能
 
@@ -134,7 +134,7 @@ Finance and Operations アプリでは、すべての表形式のグリッドの
 
 **10.0.9 / プラットフォーム更新プログラム 33 以降**
 
-**新しいグリッド コントロール** 機能は、任意の環境の機能管理で直接使用できます。 他の公開プレビュー機能と同様に、実稼働でこの機能を有効にするには、[補足利用規約](https://go.microsoft.com/fwlink/?linkid=2105274) が適用されます。  
+**新しいグリッド コントロール** 機能は、任意の環境の機能管理で直接使用できます。 他の公開プレビュー機能と同様に、実稼働でこの機能を有効にするには、[補足利用規約](public-preview-terms.md) が適用されます。  
 
 **10.0.8 / プラットフォーム更新プログラム 32 と 10.0.7 / プラットフォーム更新プログラム 31**
 

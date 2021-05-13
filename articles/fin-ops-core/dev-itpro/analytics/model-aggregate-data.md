@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f19b6a36c02e651c44e7c3618b741f96ab3d2e0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 705e0638dee09aa25868c9d9864bd03da7894fd2
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748003"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890210"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 
@@ -207,7 +207,7 @@ ms.locfileid: "5748003"
 | オプション                | 注意事項 |
 |-----------------------|----------------|
 | メモリ内リアルタイム   | このオプションは、SQL Server データベースのメモリ内縦棒ストア インデックスを利用して、集計の測定を展開します。 このオプションは、**リアルタイム分析** が必要なクライアント内の埋め込み分析に集計の測定を使用する場合に推奨されます。 リアルタイム分析の概念の概要については、[分析、集計測定、および KPI モデリング](analytics.md) を参照してください。 |
-| エンティティ格納のステージ | このオプションは、**near real-time PowerBI reporting** を有効にする運用データストアであるエンティティ ストアを利用します。 このオプションを選択する場合は、集計測定をエンティティ店舗に配置でき、データを定期的に更新するためにスケジューリングできます。 このアプローチの概要については、このブログ投稿を参照してください: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) |
+| エンティティ格納のステージ | このオプションは、**near real-time PowerBI reporting** を有効にする運用データストアであるエンティティ ストアを利用します。 このオプションを選択する場合は、集計測定をエンティティ店舗に配置でき、データを定期的に更新するためにスケジューリングできます。 このアプローチの概要については、このブログ投稿を参照してください: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) |
 
 > [!NOTE]
 > 集計測定をモデル化する場合、**SSAS キューブ** オプションは、サポートされなくなりました。

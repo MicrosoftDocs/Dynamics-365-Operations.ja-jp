@@ -4,22 +4,19 @@ description: このトピックでは、変換ランタイム関数について�
 author: RobinARH
 ms.date: 06/26/2018
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31321
-ms.assetid: cf3e4f05-5ef0-49b1-b76e-8269913ee29d
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e37991a21c9186482309a222d0a86fa9c6225617
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7378559b6d141378c04e8f10e133832ea7fe2186
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753028"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866023"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 

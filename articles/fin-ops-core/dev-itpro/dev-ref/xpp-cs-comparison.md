@@ -4,8 +4,6 @@ description: このトピックでは、X++ と C# の構文とプログラミ�
 author: RobinARH
 ms.date: 04/10/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 72424
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7b04ec44037a9479d831fbb67757cdb5e4e7941
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: adc951a402d315470d6032ed04a24b40a511e1bb
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753030"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866019"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3c8461f4530a39bcda56717d29ec1a3da0d3188f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1313a402a5a81fabdb83c48830ee8d9f750430bd
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749896"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908246"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
@@ -44,7 +44,7 @@ Finance and Operations は、Platform update 8 および 2017 年 7 月のアプ
 
 ![アップグレード プロセス](./media/upgrade-process.png)
 
-Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについては、[Dynamics AX 2012 を Finance and Operations アプリにアップグレードする](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) を参照してください。
+Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについては、[Dynamics AX 2012 を Finance and Operations アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/) を参照してください。
 
 ## <a name="analyze"></a>分析
 

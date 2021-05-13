@@ -4,8 +4,6 @@ description: このトピックでは、X++ 言語での select ステートメ�
 author: robinarh
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150273
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: d19681c77ed3423fbfb3894af140834587db5785
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8de85d0267b847860c849aa9dd61cc616846b052
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749956"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865912"
 ---
 # <a name="select-data"></a>データの選択
 

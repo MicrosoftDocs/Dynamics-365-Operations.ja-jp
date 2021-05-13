@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b55e8a83fe7dd2e1d7978d2170ede47fe2162d97
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 27448c0ce06e018b4c9f40397eb2ffd1f6aea2aa
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748125"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920491"
 ---
 # <a name="development-and-administration-for-finance-and-operations-apps"></a>Finance and Operations アプリの開発と管理
 
@@ -71,7 +71,7 @@ Finance and Operations からのデータは、Dataverse、Power Apps、およ�
 Microsoft Office の統合機能は、生産的環境を提供し、Office 製品を使用して作業を遂行するユーザーを支援します。 詳細については、 [Office 統合の概要](office-integration/office-integration.md) を参照してください。
 
 ## <a name="elearning-courses"></a>eLearning コース
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance and Operations ](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2Cdeveloper) をご確認ください。
+オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance and Operations ](/learn/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2cdeveloper) をご確認ください。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5f14a22624295fd9f8eae1996effc7f714ba2279
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 18001e2227d4815c96343645fae786703aaf4b36
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797217"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936768"
 ---
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
@@ -48,7 +48,7 @@ Hardware Station は、プリンター、キャッシュ ドロワー、スキ�
 [![ハードウェア ステーション アーキテクチャ](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png)
 
 ## <a name="hardware-station-extensibility-scenarios"></a>Hardware Station 拡張性シナリオ
-.NTE にサポートされている [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/dd460648(v=vs.110).aspx) を使用して、ハードウェア ステーションの拡張性が獲得されます。 **拡張性の規定:** 拡張機能アセンブリで、常に、拡張機能の書き込みをします。 そのようにして、実際の拡張機能を記述し、アップグレードがかなり簡単になります。 拡張のための 2 つの基本的なシナリオがあります。
+.NTE にサポートされている [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/) を使用して、ハードウェア ステーションの拡張性が獲得されます。 **拡張性の規定:** 拡張機能アセンブリで、常に、拡張機能の書き込みをします。 そのようにして、実際の拡張機能を記述し、アップグレードがかなり簡単になります。 拡張のための 2 つの基本的なシナリオがあります。
 
 -   **新しいデバイスを追加する** - 最初から用意されているハードウェア ステーションはデバイス (現金自動支払機など) をまだサポートしていません。 したがって、ハードウェア ステーションで新しいデバイスのサポートを追加する必要があります。
 -   **既存のデバイスに対する新しいデバイス タイプを追加する** - 最初から用意されているハードウェア ステーションの実装ではすでにデバイス (MSR など) がサポートされていますが、特定のデバイス タイプ (オーディオ ジャック MSR 実装) のサポートを追加する必要があります。

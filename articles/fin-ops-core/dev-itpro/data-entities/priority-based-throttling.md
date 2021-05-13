@@ -1,6 +1,6 @@
 ---
 title: 優先順位に基づく調整
-description: このトピックでは、Odata およびカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
+description: このトピックでは、OData およびカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
 author: hasaid
 ms.date: 09/25/2020
 ms.topic: article
@@ -14,32 +14,30 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 8dd76d82dfa62823b6c867fd825c01668feb575f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 900c7c1f36bed1a5f46cc8c5048bc0b231f7177a
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750380"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941214"
 ---
 # <a name="priority-based-throttling"></a>優先順位に基づく調整
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このトピックに記載されている機能は、プレビュー リリースの一部として使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能をテストするには、**調整優先順位マッピング** ページで統合優先順位をコンフィギュレーションします。  
+> 優先順位に基づく調整は、Dynamics 365 Finance バージョン 10.0.19 から既定で有効になります。 バージョン 10.0.19 に更新する前に環境を準備する方法については [FAQ ドキュメント](throttling-faq.md) を参照してください。 この機能をテストするには、**調整優先順位マッピング** ページで統合優先順位をコンフィギュレーションします。
 
+優先順位に基づく調整により、サービス保護設定を導入し、リソースの過剰使用率を回避してシステムの応答性を維持し、Finance and Operations アプリを実行する環境において一貫した可用性とパフォーマンスを確保できます。
 
-優先順位に基づく調整により、リソースの過剰使用率を回避してシステムの応答性を維持し、Dynamics 365 Finance and Operations アプリケーションを実行する環境において一貫した可用性とパフォーマンスを確保できます。
+優先順位に基づく調整では、ビジネスにとって重要なこれらの統合の必要性に応じて、OData とカスタム サービス ベース統合の相対的な優先順位を設定することができます。 調整マネージャーは、これらの要求に対して設定されたこれらの優先順位を受け入れます。
 
-- 統合には、ビジネスで重要なニーズに基づいて優先順位を付けられます。 調整では、これらの優先順位を受け入れます。 
-- OData とカスタム サービス要求では、429 エラー「要求過多」が発生します。 
+- OData およびカスタム サービス要求では、システムの正常性とパフォーマンスが影響を受けると、「要求過多」 を示すエラーが送信されます。 
 - **Lifecycle Services (LCS) の監視** ページで調整イベントを照会できます。  
 
-優先順位に基づく調整では、ビジネスにとって重要な統合の必要性に応じて、OData とカスタム サービス ベース統合の優先順位を設定することができます。
+**調整優先順位マッピング** ページは、要求が調整された場合、優先順位が受け入れられるように統合の優先順位を割り当てるために使用されます。 
 
-**統合優先順位** ページでは、要求が調整された場合、優先順位が受け入れられるように統合の優先順位を割り当てます。 
-
-適切な優先順位を設定することにより、統合に基づいて優先順位の低い統合を、優先順位の高い統合の前に調整することができます。 統合の設定方法の詳細については、[外部サービスとの接続を有効にする](https://docs.microsoft.com/learn/modules/integrate-azure-finance-operations/7-connect-external) を参照してください。 
+適切な優先順位を設定することにより、優先順位の低い統合を優先順位の高い統合の前に調整することができます。 統合の設定方法の詳細については、[外部サービスとの接続を有効にする](/learn/modules/integrate-azure-finance-operations/7-connect-external) を参照してください。 
 
 Microsoft Azure Active Directory (Azure AD) では、次の 2 種類のアプリケーションがサポートされています。
 
@@ -89,7 +87,7 @@ Microsoft Azure Active Directory (Azure AD) では、次の 2 種類のアプリ
 
 ## <a name="monitoring"></a>監視
 
-調整機能でオンボード エクスペリエンスを成功させるには、Odata およびカスタム サービス統合パターンも監視できる必要があります。 管理センターである Microsoft Dynamics Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、[Lifecycle Services (LCS) の監視および診断ツール](../lifecycle-services/monitoring-diagnostics.md) を参照してください。
+調整機能でオンボード エクスペリエンスを成功させるには、OData およびカスタム サービス統合パターンも監視できる必要があります。 管理センターである Microsoft Dynamics Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](../lifecycle-services/monitoring-diagnostics.md)を参照してください。
 
 一連の定義済クエリを使用して、問題の未加工ログを取得することができます。 さらに高度な分析を行うためにログをエクスポートすることができます。 以下のタイプのクエリを使用できます。
 
@@ -102,8 +100,8 @@ Microsoft Azure Active Directory (Azure AD) では、次の 2 種類のアプリ
 2. **環境** セクションで、表示する環境を選択してから **完全な詳細** を選択します。
 3. **環境の詳細** ページで、**環境の監視** を選択して、監視および診断ポータルを開きます。 
 4. **環境の監視** ページで、**活動** タブを選択して、**未加工ログ** ページを表示します。 
-5. **クエリ名** を選択し、すべての Odata およびカスタム サービス活動の **すべての調整イベント** を選択します。
-6. **クエリ名** を選択し、調整されたすべての Odata およびカスタム サービス要求の **調整された要求** を選択します。
+5. **クエリ名** を選択し、すべての OData およびカスタム サービス活動の **すべての調整イベント** を選択します。
+6. **クエリ名** を選択し、調整されたすべての Odata およびカスタム サービス要求の **調整済みの要求** を選択します。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

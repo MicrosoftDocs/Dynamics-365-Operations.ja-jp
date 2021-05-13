@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cfadbfbd23a2a985a1c0f51324161082ca80cb5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9268f709d194e788a761406ad1a0b3ad724f3757
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749243"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907779"
 ---
 # <a name="multi-user-performance-sdk-testing-with-a-local-test-controller"></a>ローカル テスト コントローラーを使用したマルチ ユーザー パフォーマンス SDK テスト
 
@@ -36,7 +36,7 @@ ms.locfileid: "5749243"
 
 - Microsoft Azure サブスクリプションに、プラットフォーム更新プログラム 21 以降の開発環境があります。
 > [!IMPORTANT]
-> Finance and Operations アプリが 21Vianet に配置された場合、環境のプラットフォーム更新プログラムは 10.0.11 またはそれ以上である必要があります。
+> Finance and Operations アプリが 21Vianet に配置された場合、環境のプラットフォーム更新は 10.0.11 またはそれ以上のプラットフォーム更新である必要があります。
 - 開発環境には Microsoft Visual Studio Enterprise Edition があります。
 - 開発環境と同じリリース (アプリケーション バージョンとプラットフォーム更新プログラム) の階層 2 以上のサンドボックス環境があります。
 - [タスク レコーダーとパフォーマンス SDK を使用したシングルユーザー テスト](single-user-test-perf-sdk.md) の手順に従って開発環境を構成しました。
@@ -44,7 +44,7 @@ ms.locfileid: "5749243"
 
 ## <a name="configure-a-development-environment-for-multi-user-testing"></a>マルチ ユーザー テストのための開発環境のコンフィギュレーション
 
-1. [SQL Server の ODBC ドライバー 17](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server) をダウンロードして、ダウンロードしたファイルを **msodbcsql** に名前を変更して、それを **PerfSDK** フォルダーの **Visual Studio Online** フォルダーにコピーします。
+1. [SQL Server の ODBC ドライバー 17](/sql/connect/odbc/download-odbc-driver-for-sql-server) をダウンロードして、ダウンロードしたファイルを **msodbcsql** に名前を変更して、それを **PerfSDK** フォルダーの **Visual Studio Online** フォルダーにコピーします。
 
     [![Visual Studio Online フォルダーの msodbcsql ファイル](./media/multi-user-test-local-01.png)](./media/multi-user-test-local-01.png)
 
@@ -131,7 +131,7 @@ ms.locfileid: "5749243"
 
     [![更新された CloudEnvironment.config ファイル](./media/multi-user-test-local-10.png)](./media/multi-user-test-local-10.png)
 
-    - Finance and Operations アプリが 21Vianet に配置された場合、**SelfMintingSysUser** および **SelfMintingAdminUser** で **NetworkDomain="https://sts.chinacloudapi.cn/"** を指定してください。
+    - Finance and Operations アプリが 21Vianet に配置されている場合、必ず **NetworkDomain="https://sts.chinacloudapi.cn/"** を **SelfMintingSysUser** および **SelfMintingAdminUser** で指定してください。
 
 4. **vsonline.testsettings** を構成します。 **テストの設定** ダイアログ ボックスの **一般** タブの **テストの実行場所** フィールド グループで **ローカル コンピューターまたはテスト コント ローラーを使用してテストを実行** オプションを選択します。
 

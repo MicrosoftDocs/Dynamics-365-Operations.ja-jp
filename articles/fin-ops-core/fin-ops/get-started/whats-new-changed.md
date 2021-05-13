@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 67bac122593f53b1c43fcad74c39c2f40d091791
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 412a1f8d6aac597476fb2043caa72731e0437905
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750513"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923344"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Finance and Operations アプリ ホーム ページの新機能および変更された機能
 
@@ -33,7 +33,7 @@ Finance and Operations アプリの各リリースでの新機能や変更事項
 
 - **Finance:** [Dynamics 365 Finance の新機能および変更された機能](../../../finance/get-started/whats-new-home-page.md) 
 - **Supply Chain Management:** [Dynamics 365 Supply Chain Management の新機能および変更された機能](../../../supply-chain/get-started/whats-new-home-page.md) 
-- **コマース:** [ Dynamics 365 Commerce の新機能および変更された機能](../../../retail/get-started/whats-new-home-page.md)
+- **コマース:** [ Dynamics 365 Commerce の新機能および変更された機能](../../../commerce/get-started/whats-new-home-page.md)
 - **Human Resources:** [Dynamics 365 Human Resources の新機能および変更された機能](../../../human-resources/hr-admin-whats-new.md)
 
 ## <a name="platform-updates"></a>プラットフォーム更新プログラム

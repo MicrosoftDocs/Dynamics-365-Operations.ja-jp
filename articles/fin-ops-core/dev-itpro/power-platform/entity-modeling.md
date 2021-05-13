@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: e397218df532a08c6091e42d772d874c1d975b87
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ba09ca47da96e25acce1e86192229347285f7c15
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745131"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908692"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 
@@ -26,7 +26,7 @@ ms.locfileid: "5745131"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 > Finance and Operations 仮想エンティティの Dataverse メタデータで公開されるパブリック エンティティ名は、Finance and Operations エンティティの物理名を使用します。 これは、Finance and Operations アプリの OData メタデータによって公開されるエンティティのパブリック名とは異なる場合があります。
 
@@ -40,7 +40,7 @@ ms.locfileid: "5745131"
 
 Finance and Operations エンティティに対して仮想エンティティが生成されると、システムによって Dataverse の対応する仮想エンティティの Finance and Operations エンティティに各フィールドが作成されます。 理想的なケースでは、Finance and Operations と Dataverse の間でサポートされるデータ型が一致していない場合、両方のエンティティで同じフィールドの総数が同じになり ます。 サポートされているデータ型については、Finance and Operations のプロパティに基づいて Dataverse のフィールド プロパティが設定されます。
 
-このセクションの残りの部分では、サポートされるデータ型とサポートされていないデータ型について説明します。 Dataverse にあるフィールドの詳細については、[フィールドの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview)を参照してください。
+このセクションの残りの部分では、サポートされるデータ型とサポートされていないデータ型について説明します。 Dataverse にあるフィールドの詳細については、[フィールドの概要](/powerapps/maker/common-data-service/fields-overview)を参照してください。
 
 | Finance and Operations のデータ型 | Dataverse のモデル化されたデータ型 |
 |-------------------------------------|------------------------------------------|
@@ -188,7 +188,7 @@ Finance and Operations 仮想エンティティでサポートされるのは、
 
 ## <a name="odata-actions"></a>OData アクション
 
-Finance and Operations エンティティの OData アクションは、Dataverse のカスタム アクションとして使用できるようになります。 カスタム アクションと Dataverse での使用方法の詳細については、[カスタム アクション](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions)を参照してください。
+Finance and Operations エンティティの OData アクションは、Dataverse のカスタム アクションとして使用できるようになります。 カスタム アクションと Dataverse での使用方法の詳細については、[カスタム アクション](/powerapps/developer/common-data-service/custom-actions)を参照してください。
 
 次のタイプの入力パラメーターと出力パラメーターがサポートされています。 入力または出力パラメーターのタイプが異なる場合、OData アクションは Dataverse の SDK メッセージとして表示されません。
 

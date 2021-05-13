@@ -4,8 +4,6 @@ description: この記事では、アプリケーションでの要素の使用�
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 4984
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a827ef0e7bd01def7a31664491317f49bdfaaaa7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 222536cc3a9253f3724ea5363602b8e31b4cb489
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749283"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866344"
 ---
 # <a name="commands-for-determining-how-elements-are-used"></a>要素の使用方法を決定するためのコマンド
 

@@ -4,8 +4,6 @@ description: このトピックでは、X++ のプログラミング ガイド�
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: ''
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e214c7c8bd3431e913795585cbef4ef74934d136
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a42af1740352119481698b3278ab7e239bee5042
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749938"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866290"
 ---
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 

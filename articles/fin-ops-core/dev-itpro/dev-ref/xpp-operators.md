@@ -4,8 +4,6 @@ description: このトピックでは、X++ でサポートされている演算
 author: RobinARH
 ms.date: 12/02/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150373
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a384adb80649e7149db4d545fcfc2d40135c2b0d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c2e8fde8fae0a41446c00717611de2be6f5fc019
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749926"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866110"
 ---
 # <a name="x-operators"></a>X++ 演算子
 

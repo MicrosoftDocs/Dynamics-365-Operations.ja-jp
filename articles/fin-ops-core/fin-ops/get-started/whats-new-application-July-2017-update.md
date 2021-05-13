@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: be2db55ad893729baad69d2c0a382e5e58be9053
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d8a0733acdc4105d408883c8d8e1d56de87211d7
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754642"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923392"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月) の新機能と変更点
 
@@ -100,7 +100,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 - 承認および払い戻しのために経費精算書を提出します。
 - 承認者として従業員に割り当てられた経費精算書を承認または却下します。
 
-詳細については、[経費管理モバイル ワークスペース](../../../finance/expense-management/expense-management-mobile-workspace.md) を参照してください。
+詳細については、[経費管理モバイル ワークスペース](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace) を参照してください。
 
 ### <a name="expense-management-configuration-related-to-employees-card-id"></a>経費管理: 従業員のカード ID に関連するコンフィギュレーション
 
@@ -356,7 +356,7 @@ GDPdU\\GoBD サンプル電子レポート構成には、次の拡張機能が�
 
 Retail POS と会計デバイス (制御ユニット) の統合の例に加えて、キャッシュ レジスターの継続的使用に対する一般要件などのキャッシュ レジスターの現地要件をサポートするため、スウェーデンの規制の小売機能が追加されました。
 
-詳細については、「[スウェーデンのキャッシュ レジスター](../../../retail/localizations/emea-swe-cash-registers.md)」を参照してください。
+詳細については、「[スウェーデンのキャッシュ レジスター](../../../commerce/localizations/emea-swe-cash-registers.md)」を参照してください。
 
 ### <a name="reverse-charge-functionality-for-european-countriesregions"></a>ヨーロッパの国/地域の逆請求機能
 
@@ -739,7 +739,7 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 - プロジェクトに支払請求可能または非請求可能として時間を記録します。
 - 必要に応じて外部または内部コメントを入力します。
 
-**プロジェクト タイム エントリ** モバイル ワークスペースを実装するには、docs.microsoft.com で Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。 詳細については、[プロジェクト時間入力モバイル ワークスペース](../../../finance/project-management/project-time-entry-mobile-workspace.md) を参照してください。
+**プロジェクト タイム エントリ** モバイル ワークスペースを実装するには、docs.microsoft.com で Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。 詳細については、[プロジェクト時間入力モバイル ワークスペース](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) を参照してください。
 
 ### <a name="rename-project-stages"></a>プロジェクト ステージの名前の変更
 
@@ -851,11 +851,11 @@ Retail の周辺機器シミュレーターでは、以前にリリースされ�
 
 サポートされているデバイスごとに、POS シミュレーターは、カードの読み取りまたはライン ディスプレイにテキストの特定の文字列を表示するなどの、アドホック テストというデバイス固有能力をテストする機能を提供します。 サポートされている各デバイスには、公式デバイス互換性テストに使用される特定の自己テスト ルーチンがあります。 互換性テストの結果は、Retail の新しい展開に承認済みとしてリストするため、Microsoft に送信できます。
 
-周辺機器シミュレーターの説明については、[小売の周辺機器シミュレーター](../../../retail/dev-itpro/retail-peripheral-simulator.md) を参照してください。
+周辺機器シミュレーターの説明については、[小売の周辺機器シミュレーター](../../../commerce/dev-itpro/retail-peripheral-simulator.md) を参照してください。
 
 互換性プログラムおよび参加方法の詳細については、<drpc@microsoft.com> に問い合わせてください。
 
-Microsoft により以前にテストされた周辺機器の詳細については、[Microsoft でテストされた周辺機器](../../../retail/retail-peripherals-overview.md) にアクセスしてください。 このページは、そのページが利用可能になるとすぐに、POS シミュレータでテストされたデバイスへのリンクとともに更新されます。
+Microsoft により以前にテストされた周辺機器の詳細については、[Microsoft でテストされた周辺機器](../../../commerce/retail-peripherals-overview.md) にアクセスしてください。 このページは、そのページが利用可能になるとすぐに、POS シミュレータでテストされたデバイスへのリンクとともに更新されます。
 
 ### <a name="omni-channel-coupons"></a>Omni チャネル クーポン
 
@@ -863,7 +863,7 @@ Microsoft により以前にテストされた周辺機器の詳細について�
 
 コール センター クーポンは、小売割引とマージされ、すべての小売チャネルでクーポンを管理および承諾する統一されたエクスペリエンスを提供します。 合わさった経験は、クーポンのコードとバーコードを使用して小売割引の割引値を適用します。
 
-クーポンの詳細については、[小売販売のクーポンの作成](../../../retail/retail-coupons.md) を参照してください。
+クーポンの詳細については、[小売販売のクーポンの作成](../../../commerce/retail-coupons.md) を参照してください。
 
 ### <a name="discounts--quantity-limit-and-exclude-discount-lines"></a>割引 - 数量の制限および割引の明細行を除外
 
@@ -871,7 +871,7 @@ Microsoft により以前にテストされた周辺機器の詳細について�
 
 また、割引明細行に対してプロパティを含めるか除外することができます。 割引明細行の含有および除外の組み合わせを使用して、割引を適用する製品のセットを定義することができます。 たとえば、**ファッション** カテゴリの 1 つ目の割引明細行を **含む** に設定する、および製品 **81327** の 2 つ目の割引明細行を **除外** に設定している割引があります。 この割引は、製品 **81327** を除く **ファッション** カテゴリ ツリーのすべての製品に適用されます。 すべて既存の割引ラインは **含める** に設定されます。 これにより、マーチャンダイジングがいくつかのシナリオで割引を定義することが容易になります。
 
-割引の詳細については、[価格調整と割引](../../../retail/price-adjustments-discounts.md) を参照してください。
+割引の詳細については、[価格調整と割引](../../../commerce/price-adjustments-discounts.md) を参照してください。
 
 ### <a name="pos-inventory-visibility-improvements"></a>POS 在庫可視性の向上
 
@@ -896,7 +896,7 @@ Retail ユーザーは、Dynamics AX 2012 R3 CU11 以上を使用している場
 
 N-1 サポートを有効にするには、Dynamics AX 2012 R3 CU 11 または CU12 ストアを新しい HQ に接続するための N-1 コンポーネントをインストールする必要があります。 顧客は、事前 CU 11バージョンを使用している場合、少なくとも Dynamics AX 2012 R3 CU 1 にアップグレードし、N-1 サポートを利用する必要があります。
 
-小売のアップグレードおよび N-1 のサポートの詳細については、[アップグレードおよび N-1 のサポートの概要](../../../retail/dev-itpro/overview-upgrade-n-minus1.md) および [N-1のインストールおよびコンフィギュレーション](../../../retail/dev-itpro/overview-upgrade-n-minus1.md) を参照してください。
+小売のアップグレードおよび N-1 のサポートの詳細については、[アップグレードおよび N-1 のサポートの概要](../../../commerce/dev-itpro/overview-upgrade-n-minus1.md) および [N-1のインストールおよびコンフィギュレーション](../../../commerce/dev-itpro/overview-upgrade-n-minus1.md) を参照してください。
 
 ## <a name="supply-chain-management"></a>サプライ チェーン マネジメント
 

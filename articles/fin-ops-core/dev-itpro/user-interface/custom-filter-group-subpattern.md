@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 626f3471e40c970b645ad58e342eeba09797eaa9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bf457230b6a0c0e5c05262491121bf032e1e3615
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752656"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909907"
 ---
 # <a name="custom-filter-group-subpattern"></a>カスタム フィルター グループのサブパターン
 
@@ -45,11 +45,11 @@ ms.locfileid: "5752656"
 ## <a name="wireframes"></a>ワイヤーフレーム
 ### <a name="custom-filters"></a>カスタム フィルター
 
-[![カスタム フィルター](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+[![カスタム フィルター グループ 1](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### <a name="custom-and-quick-filters"></a>カスタムおよびクイック フィルター
 
-![カスタムおよびクイック フィルター](./media/customfiltergroup2.png)
+![カスタムおよびクイック フィルター グループ 2 をクリックする](./media/customfiltergroup2.png)
 
 ## <a name="model"></a>モデル
 ### <a name="custom-filters--high-level-structure"></a>カスタム フィルタ – 高度なレベル構造
@@ -106,13 +106,13 @@ None
 
 フォーム: **LedgerJournalTable (TopFields)** 
 
-![カスタム フィルター](./media/customfiltergroup3.png)
+![カスタム フィルター グループ 3](./media/customfiltergroup3.png)
 
 ### <a name="custom-and-quick-filters"></a>カスタムおよびクイック フィルター
 
 フォーム: **CustTable** **(CustomFilterGroup)** 
 
-[![カスタムおよびクイック フィルター](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
+[![カスタムおよびクイック フィルター グループ 4 をクリックする](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-form-patterns"></a>通常、フォームのパターンによって使用される
@@ -145,8 +145,8 @@ None
 
 #### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [MSDN AX 2012 フィルター ウィンドウにコントロールを追加する方法](https://msdn.microsoft.com/library/cc577231.aspx)
--   [MSDN AX 2012 リスト ページの概要 – セクション フィルター ウィンドウ](https://msdn.microsoft.com/library/cc616937.aspx)
+-   [MSDN AX 2012 フィルター ウィンドウにコントロールを追加する方法](/dynamicsax-2012/developer/how-to-add-controls-to-the-filter-pane)
+-   [MSDN AX 2012 リスト ページの概要 – セクション フィルター ウィンドウ](/dynamicsax-2012/developer/list-page-overview)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe4f4323d1f90f5debebe36aa6ecda1df71f013
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 422debcb82fb52e2ed1ceed4a40024b964dfa525
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745143"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866134"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 

@@ -4,8 +4,6 @@ description: このトピックでは、スタックの 3 つの主要モデル�
 author: maertenm
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 26941
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce150d36548251007a6f41ab55d65c0196c17835
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dd2ea10dca8afbcb94a4c40a8135fff9fd544430
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744223"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866071"
 ---
 # <a name="model-split"></a>分割されたモデル
 

@@ -2,7 +2,7 @@
 title: プラットフォーム更新の新機能と変更された機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
 author: sericks007
-ms.date: 03/02/2021
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: d884eeade105264781f8d0cba56e2c93fcbe9e16
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 42425e6a665d6024a79f06eb68b7821923615910
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750266"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935773"
 ---
 # <a name="whats-new-and-changed-in-platform-updates"></a>プラットフォーム更新の新機能と変更された機能
 
@@ -29,6 +29,7 @@ Finance and Operations アプリのプラットフォーム更新での新機能
 
 | **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| プラットフォーム更新プログラム 10.0.19 | 7.0.6009    | 2021 年 7 月     | [Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-19.md)  |
 | プラットフォーム更新プログラム 10.0.18 | 7.0.5968    | 2021 年 5 月     | [Finance and Operations アプリ バージョン 10.0.18 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-18.md)  |
 | プラットフォーム更新プログラム 10.0.17 | 7.0.5934    | 2021 年 4 月     | [Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-17.md)  |
 | プラットフォーム更新プログラム 10.0.16 | 7.0.5860    | 2021 年 2 月  | [Finance and Operations アプリ バージョン 10.0.16 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-16.md)  |

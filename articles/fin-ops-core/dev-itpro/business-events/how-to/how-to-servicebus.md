@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: df1e3e3f087970af757873927e6d33d36386b131
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 86d846c2d58c982c488c2c876ea510d6a8d0c3bd
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745357"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940904"
 ---
 # <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]
@@ -175,7 +175,7 @@ ms.locfileid: "5745357"
 
 10. トリガー パラメーターを選択します。 作成したトピックとサブスクリプションに必ず正しい名前を使用します。
 
-    この API はコンフィギュレーション可能な頻度で、新しいメッセージの Service Bus をポーリングします (既定は 3 分ごと)。 Logic Apps はトリガーの呼び出しとアクションの実行ごとに課金されるため、メッセージの量が少ない場合に API は不要なトリガーのコストに影響を与えます。 ただし、途中で Azure Event Grid を使用するプッシュ アーキテクチャを実装できます。 キューやサブスクリプションにメッセージがある場合、Service Bus はイベントをイベント グリッドにプッシュできます。 詳細については [Azure Service Bus からイベント グリッドへの統合の概要](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept) を参照してください。
+    この API はコンフィギュレーション可能な頻度で、新しいメッセージの Service Bus をポーリングします (既定は 3 分ごと)。 Logic Apps はトリガーの呼び出しとアクションの実行ごとに課金されるため、メッセージの量が少ない場合に API は不要なトリガーのコストに影響を与えます。 ただし、途中で Azure Event Grid を使用するプッシュ アーキテクチャを実装できます。 キューやサブスクリプションにメッセージがある場合、Service Bus はイベントをイベント グリッドにプッシュできます。 詳細については [Azure Service Bus からイベント グリッドへの統合の概要](/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept) を参照してください。
 
     <img alt="Logic apps trigger " src="../../media/BEF-Howto-servicebus-17.png" width="70%">
 

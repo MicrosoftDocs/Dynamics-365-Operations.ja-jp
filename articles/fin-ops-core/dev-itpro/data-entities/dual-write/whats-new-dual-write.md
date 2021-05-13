@@ -5,7 +5,6 @@ author: robinarh
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a04f6076ad3a7375910744033af48d31e57c62a9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 636b4535925d795cfbf9c6d94bf48b4f9ef52ff9
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750582"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941071"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -28,11 +27,37 @@ ms.locfileid: "5750582"
 
 二重書き込みは、Microsoft Dynamics 365 アプリと Finance and Operations アプリの Customer Engagement アプリ間の、ほぼリアルタイムの対話を提供する標準のインフラストラクチャです。 デュアル書き込みを開始する方法については、[デュアル書き込みホームページ](dual-write-home-page.md) を参照してください。
 
-[リリース計画](https://go.microsoft.com/fwlink/?linkid=2010158) におけるデュアル書き込み機能および変更点に関する最新情報を確認してください。
+[リリース計画](/dynamics365/release-plans/) におけるデュアル書き込み機能および変更点に関する最新情報を確認してください。
 
-+ [Dataverse のデータ - フェーズ 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
-+ [Dataverse のデータ - フェーズ 1 と 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
-+ [Dataverse の Finance and Operations データ – フェーズ 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
++ [Dataverse のデータ - フェーズ 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
++ [Dataverse のデータ - フェーズ 1 と 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
++ [Dataverse の Finance and Operations データ – フェーズ 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+
+## <a name="april-2021-release"></a>2021 年 4 月リリース
+
+2021 年 4 月リリースされた修正プログラムの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| バグ修正| **メモ** テーブルで **Null** 値が理解するようになりました。 | 一般提供 |
+| バグ修正| デュアル書き込みオーケストレーション パッケージの2.2.2.50では、**アドレス** テーブルの既存のキー (**msdyn_locationid** フィールド) を、**msdyn_locationid** と **parentid** フィールドの組み合わせである新しいキーに置き換えません。 代わりに、両方のキーが表示されます。 これは新しいバージョン 2.2.2.60 で修正されています。 この新しいバージョンは、[当事者およびグローバル アドレス帳](party-gab.md) ソリューションを使用している場合にのみ適用されます。| 一般提供 |
+
+
+## <a name="march-2021-release"></a>2021 年 3 月リリース
+
+2021 年 3 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.50](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| [当事者およびグローバル アドレス帳](party-gab.md) | Finance and Operations アプリとスキーマの同等性をもたらし、顧客、仕入先、および連絡担当者に関連する Dataverse の複雑なビジネス上の問題を解決する機能を提供します。 この機能を使用するには [二重書き込み当事者およびグローバル アドレス帳ソリューション](https://aka.ms/dual-write-gab) をインストールします。<br>サポートされる Finance and Operations バージョンは、10.0.605.30025 (プラットフォーム更新プログラム 14)、10.0.644.20031 (プラットフォーム更新プログラム 15)、10.0.689.10027 (プラットフォーム更新プログラム 16)、および 10.0.761.1 (プラットフォーム更新プログラム 17) です | 一般提供 |
+| バグ修正 | **製品カテゴリ名** は、**製品カテゴリ** テーブルのナチュラル/統合キーの一部です。 Finance and Operations アプリを使用して名前更新すると、更新ではなく Dataverse に挿入されます。 バージョン 1.0.0.1 の `msdyn_productcategories - Product categories` の新しいマップを使用してください。 サポートされている Finance and Operations のバージョンは 10.0.778.0 (プラットフォーム更新プログラム 42) です | 一般提供 |
+| バグ修正| ローカライズのバグ修正と更新。 | 一般提供 |
+| バグ修正| 説明のないメモはエラーになります。 | 一般提供 |
+| バグ修正| Finance and Operations アプリで「販売合計の計算」バッチ ジョブを実行すると、過去 24 時間以内に変更されたすべての注文が更新され、注文のステータス、例えば **キャンセル済** や **フルフィルメント** に関係なく合計が修正されます。 このアクションによって、再キャンセルまたは再フルフィルメントがトリガーされ，競合エラーが発生します。 | 一般提供 |
 
 ## <a name="february-2021-release"></a>2021 年 2 月リリース
 
@@ -134,7 +159,7 @@ ms.locfileid: "5750582"
 | 機能 | 説明 |ステータス |
 |------|---------|-------|
 | 手持在庫の検索 | Customer Engagement アプリのフォームで、手持在庫と納期回答可能日を参照できます。 | 一般提供 |
-| 単位換算 |    Finance and Operations アプリで見積もり明細行と注文明細行の単位換算が発生すると、Customer Engagement アプリによって、その単位換算が受け入れられ、顧客契約アプリの見積詳細と注文の詳細の単位と価格に対する変更が反映されます。 | 一般提供 |
+| 単位換算 | Finance and Operations アプリで見積もり明細行と注文明細行の単位換算が発生すると、Customer Engagement アプリによって、その単位換算が受け入れられ、顧客契約アプリの見積詳細と注文の詳細の単位と価格に対する変更が反映されます。 | 一般提供 |
 | 通貨変更の制限 | 既存の見積もりや注文に対して Finance and Operations アプリの通貨を変更しようとすると、変更は失敗します。   | 一般提供 |
 | **アカウント** フォームと **連絡先** フォームのパリティ | B2B と B2C の Customer Engagement アプリで **アカウント** フォームと **連絡先** フォームの属性アプリを持ち込みます。  | 一般提供 |
 | アドレスの重複なし | Customer Engagement アプリの見積または注文に対して作成または更新のアクションがある場合は、Finance and Operations アプリでアドレスを重複させないでください。  | 一般提供 |

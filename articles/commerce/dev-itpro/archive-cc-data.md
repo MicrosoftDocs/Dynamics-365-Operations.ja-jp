@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 398dbb578fad1770260af6e4822bec974cb258f0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4150428358967da9ca61a4e09dd2d71a480d807c
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791229"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936964"
 ---
 # <a name="archive-credit-card-transaction-data"></a>クレジット カード トランザクション データのアーカイブ
 
@@ -47,7 +47,7 @@ ms.locfileid: "5791229"
 
 ## <a name="document-management-dependency"></a>ドキュメント管理の依存関係
 
-アーカイブ ジョブを実行すると、ドキュメント管理を使用して、zip ファイル内の古いクレジット カード認証に関する XML データがエクスポートされます。 ドキュメント管理が環境で設定されていない場合、アーカイブ ジョブを正常に実行できません。 詳細については、[ドキュメント管理のコンフィギュレーション](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) を参照してください。
+アーカイブ ジョブを実行すると、ドキュメント管理を使用して、zip ファイル内の古いクレジット カード認証に関する XML データがエクスポートされます。 ドキュメント管理が環境で設定されていない場合、アーカイブ ジョブを正常に実行できません。 詳細については、[ドキュメント管理のコンフィギュレーション](../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md) を参照してください。
 
 アーカイブ ジョブでは、**トランザクションの最小日数** の値で定義されている条件を満たすすべてのクレジット カード支払データが処理されます。 ジョブが有効であり、定義された基準に基づいて大量のレコードを処理する必要がある場合、ジョブの実行に数日かかる場合があります。 ただし、支払のバックログがアーカイブされた後は、ジョブの実行に時間はかかりません。
 
@@ -80,7 +80,7 @@ ms.locfileid: "5791229"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+[支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [Adyen 向け Dynamics 365 Payment Connector](adyen-connector.md?tabs=8-1-3)
 

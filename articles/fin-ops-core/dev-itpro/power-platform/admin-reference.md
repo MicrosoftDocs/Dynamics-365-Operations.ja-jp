@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c35074deac52ae9d7e337f2fbdec0c75839f1dc4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fc01a2e68c8713e2a39bd5434be034db043332e3
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745132"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909016"
 ---
 # <a name="finance-and-operations-and-dataverse-admin-reference"></a>Finance and Operations および Dataverse 管理リファレンス
 
@@ -26,7 +26,7 @@ ms.locfileid: "5745132"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> この機能には、[Finance and Operations](../get-started/whats-new-platform-update-10-0-12.md) および Dataverse の更新プログラム 189 のサービスが必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能には、[Finance and Operations](../get-started/whats-new-platform-update-10-0-12.md) および Dataverse の更新プログラム 189 のサービスが必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 このトピックでは、Dataverse で Finance and Operations アプリの仮想エンティティを設定およびコンフィギュレーションする方法について手順を追って説明します。
 

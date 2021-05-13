@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance バージョン 10.0.8 (2020 年 2 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 Finance バージョン 10.0.8 の新機能または変更された機能について説明します。
+description: このトピックでは Dynamics 365 Finance バージョン 10.0.8 の新機能または変更された機能について説明します。
 author: roschlom
 ms.date: 01/23/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59ca2544571dc4a84ab5a73292bab273f18d5126
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4109d88b3f8fbef7a04c9a2d461602e3662d3b3d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836881"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893884"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1008-february-2020"></a>Dynamics 365 Finance バージョン 10.0.8 (2020 年 2 月) の新機能および変更された機能
 
@@ -31,13 +31,13 @@ ms.locfileid: "5836881"
 - **一般提供 (自己更新):** 2020 年 1 月
 - **自動更新:** 2020 年 2 月
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 
 
-- [財務諸表の保有ポリシー](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
+- [財務諸表の保有ポリシー](/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
 
-- [為替換算を使用する場合の財務レポートの利益剰余金計算の強化](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
+- [為替換算を使用する場合の財務レポートの利益剰余金計算の強化](/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
 
-- [購買契約の拡張](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
+- [購買契約の拡張](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -54,7 +54,7 @@ Microsoft Dynamics 365 Finance 10.0.8 には、プラットフォーム更新プ
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

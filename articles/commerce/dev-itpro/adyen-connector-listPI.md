@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8cc1877733f4fbb1a11ba416b8951ba98a8b7b37
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 60588d687cad86b4cdebf73c0d68bc222f546350
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791233"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936966"
 ---
 # <a name="saving-online-payment-instruments-with-the-adyen-connector"></a>オンライン支払手段を Adyen コネクタで保存
 
@@ -53,14 +53,14 @@ ms.locfileid: "5791233"
 - リスト PI 機能と互換性のある支払コネクタ
 - 顧客がその支払プロセッサに保存させたい支払手段に一意の顧客 ID をマッピングする支払プロセッサ
 
-一般的な支払コネクタとソフトウェア開発キット (SDK) の実装方法の詳細については、[IT プロおよび開発者向けのコマース ホームページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors) にアクセスしてください。
+一般的な支払コネクタとソフトウェア開発キット (SDK) の実装方法の詳細については、[IT プロおよび開発者向けのコマース ホームページ](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors) にアクセスしてください。
 
 ## <a name="setup"></a>セットアップ
 
 リスト PI 機能には次のコンポーネントと設定手順が必要です:
 
-- **電子商取引の統合** – オンライン ストアフロントとコマースの統合が必要です。 電子商取引 SDK の詳細は [電子商取引プラットフォーム ソフトウェア開発キット (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) を参照してください。
-- **オンライン支払コンフィギュレーション** – Adyen の Dynamics 365 支払コネクタは、そのままでリスト PI をサポートします。 オンライン ストアの支払いを構成する方法については [Adyen の Dynamics 365 支払コネクタ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) を参照してください。 
+- **電子商取引の統合** – オンライン ストアフロントとコマースの統合が必要です。 電子商取引 SDK の詳細は [電子商取引プラットフォーム ソフトウェア開発キット (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) を参照してください。
+- **オンライン支払コンフィギュレーション** – Adyen の Dynamics 365 支払コネクタは、そのままでリスト PI をサポートします。 オンライン ストアの支払いを構成する方法については [Adyen の Dynamics 365 支払コネクタ](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) を参照してください。 
 
     このトピックで説明されている電子商取引の設定手順を完了することに加えて、**オンライン ストア** フォームの支払口座クイック タブの **電子商取引で支払情報の保存を許可する** オプションを **はい** に設定する必要があります。 
 
@@ -102,7 +102,7 @@ ms.locfileid: "5791233"
 
 ## <a name="related-articles"></a>関連記事
 
-- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

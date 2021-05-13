@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.openlocfilehash: a2bcc47e0ca2630e8c8bc6afd75ed9f6f594acfb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6316440b633a065fa52a37808f06dfb28c36df3
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750262"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923524"
 ---
 # <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
 
@@ -36,7 +36,7 @@ ms.locfileid: "5750262"
 ## <a name="turn-on-the-new-preview-grid-control-through-feature-management"></a>機能管理を通じて、新しい (プレビュー) グリッド コントロールをオンにする
 以前は、「&debug=reactGrid」を環境 URL に追加することによって、新しいグリッド コントロールは使用可能になりました。 プラットフォーム更新 31 では、機能管理ワークスペースを使用して、認定された環境に対して新しいグリッド コントロールを有効にすることができます。 このフライトを非運用環境で有効にする方法については、次の手順を参照してください。 認定された環境には、第 1 層 (開発/テスト) 環境と第 2 層 (サンドボックス) 環境が含まれます。 この機能は、バージョン10.0.9、プラットフォーム更新 33 まで生産中に有効にすることはできません。
 
-新しいグリッド コントロールに関する詳細については、[ユーザーの生産性 - 新しいグリッド](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid) を参照してください。
+新しいグリッド コントロールに関する詳細については、[ユーザーの生産性 - 新しいグリッド](/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid) を参照してください。
 
 この機能のプレビュー中に新しいグリッドを有効にするには、これらのステップに従います。
 
@@ -90,7 +90,7 @@ Excel アドインに複数の認証および承認の機能拡張があり、�
 - **認証失敗に関する情報が提供される** - 以前は、ユーザー認証に成功したにもかかわらず、サーバーと通信するための承認されたアクセス許可を持っていない場合、アプレットの読み込みが失敗するので、Excel アドインは「アプレットの読み込み」を表示していました。 これは、承認されたアクセス許可に関する暗黙的な失敗でした。 承認のアクセス許可の失敗について明示的に詳細がユーザーに表示されるので、何が起こったかを知ることができ、正しいサーバーに正しいユーザーでサインインしていることを確認できるようになりました。
 
 ## <a name="skipautoorderby-api"></a>skipAutoOrderBy API
-ORDER BY 句を含めないよう明示的に指定することにより、AX クエリ オブジェクトを使用している場合、カーネルによって主キーが ORDER BY 句に追加されます。 この API は ORDER BY 句をスキップし、クエリには追加されません。 詳細については、[Q クラス](../dev-ref/q-classes.md) を参照してください。
+ORDER BY 句を含めないよう明示的に指定することにより、AX クエリ オブジェクトを使用している場合、カーネルによって主キーが ORDER BY 句に追加されます。 この API は ORDER BY 句をスキップし、クエリには追加されません。 詳細については、[Q クラス](/dotnet/api/dynamics.ax.application) を参照してください。
 
 ## <a name="batch-framework-contention-reduction"></a>バッチ フレームワークの競合軽減
 バッチフレームワークテーブルでの負荷の高いブロッキングと競合を軽減するために、パフォーマンスが強化されました。 この修正プログラムは、バッチタスクの選択とバッチジョブの完了時に競合が発生している現在の顧客環境を対象にしています。 この機能に関連する機能的な変更はありません。 この機能は、機能管理で有効にできます。
@@ -103,7 +103,7 @@ ORDER BY 句を含めないよう明示的に指定することにより、AX �
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックでは、削除済みまたは非推奨の機能について説明します。

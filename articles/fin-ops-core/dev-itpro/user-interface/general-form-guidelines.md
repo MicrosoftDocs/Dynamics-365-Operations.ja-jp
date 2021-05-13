@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bda08de01c870771a660163e90490004f92458ba
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b0ef37e50b84be3719ea71edb3b2a2e45a31cf88
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743887"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909219"
 ---
 # <a name="general-form-guidelines"></a>フォームの全般的なガイドライン
 
@@ -139,7 +139,7 @@ ms.locfileid: "5743887"
 -   クイック タブにグリッドが含まれている場合は、[ツールバーおよびリスト](toolbar-list-subpattern.md) サブパターン ガイドラインに従う必要があります。
 
 ## <a name="radio-button-guidelines"></a>ラジオ ボタン ガイドライン
--   すべての [ラジオ ボタンに対する Microsoft 標準ガイドライン](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-radio-buttons) に従います。 具体的には、次のガイドラインを遵守します。
+-   すべての [ラジオ ボタンに対する Microsoft 標準ガイドライン](/windows/desktop/uxguide/ctrl-radio-buttons) に従います。 具体的には、次のガイドラインを遵守します。
     -   ラジオ ボタン コントロールは、相互に排他的な選択肢からオプションを 1 つ選択するために使用されます。
     -   2 つから 7 つの選択肢があります。 7 つ以上の選択肢がある場合は、コンボ ボックスを使用します。
     -   オプションのいずれも有効な選択肢でない場合、この状況を反映するには、**なし** または **適用されない** などの別のオプションがあります。
@@ -161,7 +161,7 @@ ms.locfileid: "5743887"
 
 [![チェック ボックスと切替のイメージ](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
--   すべての [チェック ボックスに対する Microsoft の標準ガイドライン](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-check-boxes ) に従います。 具体的には、次のガイドラインを遵守します。
+-   すべての [チェック ボックスに対する Microsoft の標準ガイドライン](/windows/desktop/uxguide/ctrl-check-boxes) に従います。 具体的には、次のガイドラインを遵守します。
     -   既定では、フォームのチェック ボックスの代わりにトグル ボタンを使用します。 ラベルは、Microsoft のチェックボックス ラベルのガイドラインに従う必要があります。
         -   **例外:**
             -   多数の関連オプションをグループで設定する必要がある場合は、チェック ボックスを使用します。

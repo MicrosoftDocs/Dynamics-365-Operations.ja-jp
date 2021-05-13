@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690787be87c34bbb4e46375c17bad2bec0a60a0a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2d7ace5697ff2ab9cfb7af1ec2c35d80e0f36e08
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745111"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866112"
 ---
 # <a name="user-configurable-queries"></a>構成可能なユーザーのクエリ
 

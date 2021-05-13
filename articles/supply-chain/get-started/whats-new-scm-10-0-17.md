@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907966"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935608"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management 10.0.17 の新機能または変更された機能 (2021 年 4 月)
 
@@ -35,7 +35,7 @@ ms.locfileid: "5907966"
 
 このリリースでは次の機能が含まれています。  [リリース計画](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
 
-これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。 一覧表示された機能の一部はプレビューの場合もありますが、ほとんどの機能はすでに一般提供されています。
+これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 ### <a name="asset-management"></a>資産管理
 
@@ -71,13 +71,13 @@ ms.locfileid: "5907966"
 
 - [生産フロア実行インターフェイスの資産管理機能](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - 詳細情報については、[生産現場の実行インターフェースを構成する](../production-control/production-floor-execution-configure.md) を参照してください。
 
-- ジョブ ID の統合番号順序<br> - 詳細については、以下を参照してください。 
+- [スケール単位をクラウドに含む製造の実行](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - 詳細については、[クラウドおよびエッジのスケール ユニットの製造実行ワークロード](../cloud-edge/cloud-edge-workload-manufacturing.md) を参照してください。
 
 - [生産材料の既定の予約原則の上書き](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - 詳細については、[生産材料の既定の予約原則の上書き](../production-control/override-default-reservation-principle.md) を参照してください。
 
 - [製造制御の保存済みビュー](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - 詳細については、[Supply Chain Management の標準の保存済みビュー](saved-views-scm.md) を参照してください。
 
-- [スケール単位をクラウドに含む製造の実行](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - 詳細については、[クラウドおよびエッジのスケール ユニットの製造実行ワークロード](../cloud-edge/cloud-edge-workload-manufacturing.md) を参照してください。
+- ジョブ ID の統合番号順序<br> - 詳細については、[ジョブ ID の統合番号順序](../production-control/unified-job-ids.md)を参照してください。
 
 ### <a name="planning"></a>計画
 

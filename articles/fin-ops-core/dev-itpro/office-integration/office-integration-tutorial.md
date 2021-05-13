@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dd7550c3fabd35bbe7eade9c6219e50a1a16523
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 034463b223c220ee8f9e048afbedcaecea1b73c3
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752982"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908355"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 
@@ -463,7 +463,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 14. メッセージの件名および本文を入力します。
 15. **送信** をクリックします。 メッセージは 1 〜 5 分で配信する必要があります。 メッセージが **電子メール パラメーター** ページに設定されている電子メール アカウントから送信されることに注意してください。 そのメール アカウントに **メールの送信** ダイアログ ボックスで使用されている送信元アドレスの「送信者」(または「このメールボックスからメールを送信」) のアクセス許可が与えられている場合、そのアドレスからのメッセージが表示されます。
     -   [送信者] 権限は、Microsoft 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メールボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、[Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。
-    -   ユーザーが電子メール メッセージを送信する前に、**電子メール パラメーター** ページで設定されている電子メール アカウントにクライアントの各ユーザー電子メール アカウントの 「送信者」権限を与える必要があります。 詳細については、[Microsoft 365 を使用して電子メールを送信するためのマルチ機能デバイスまたはアプリケーションの設定方法](https://technet.microsoft.com/library/dn554323(v=exchg.150).aspx) を参照してください。
+    -   ユーザーが電子メール メッセージを送信する前に、**電子メール パラメーター** ページで設定されている電子メール アカウントにクライアントの各ユーザー電子メール アカウントの 「送信者」権限を与える必要があります。 詳細については、[Microsoft 365 を使用して電子メールを送信するためのマルチ機能デバイスまたはアプリケーションの設定方法](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) を参照してください。
 
 16. ユーザーの介入なしにサーバーから直接送信される電子メールは、バッチ処理を介して送信され、**電子メール ディストリビューター バッチ** プロセスを開始する必要があります。 プロセスを開始するには、これらの手順に従います。
     1.  **システム管理** &gt; **定期処理のタスク** &gt; **電子メールの処理** &gt; **バッチ** と移動します。

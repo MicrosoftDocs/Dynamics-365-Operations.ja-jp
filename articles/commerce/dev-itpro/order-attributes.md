@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 23f2ae4dc671982a3e23e20c061750d0f2db7123
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3d92b9c36cf81aa7c9715d46b8fc77c5eb01a4a5
+ms.sourcegitcommit: ded9d9426e57a772d0ab3dda1171bc46f8309928
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795667"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5945777"
 ---
 # <a name="define-and-set-order-attributes"></a>注文属性の定義および設定
 
@@ -234,6 +234,48 @@ Retail SDK に追加された新しいサンプルでは、CRT の注文属性�
                 return cartUpdated;
             }
         }
+```
+
+## <a name="extend-a-dynamics-365-commerce-e-commerce-site-to-set-values-for-order-attributes-in-the-cart"></a>Dynamics 365 Commerce eコマースサイトを拡張して、カート内の注文属性の値を設定し
+
+このコードを使用して、カートの注文属性の値を設定します。
+
+```javascript
+public _addOrUpdateSalesOrderAttributes = (cart: Cart): void => {
+    // Create the array of attribute and add attributes
+    const attributeArr: AttributeValueBase[] = [];
+    let attributeObj = {
+        // @ts-ignore
+        '@odata.type': '#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue',
+        Name: 'Brand',
+        ExtensionProperties: [],
+        TextValue: 'OscarBrand-2',
+        TextValueTranslations: []
+    };
+    attributeObj.Name = 'Brand';
+    attributeArr.push(attributeObj);
+
+    attributeObj = {
+        // @ts-ignore
+        '@odata.type': '#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue',
+        Name: 'Connector',
+        ExtensionProperties: [],
+        TextValue: 'OscarConnector-2',
+        TextValueTranslations: []
+    };
+    attributeObj.Name = 'Connector';
+    attributeArr.push(attributeObj);
+
+    cart.AttributeValues = attributeArr;
+    updateAsync({ callerContext: this.props.context.actionContext}, cart)
+                .then(newCart => {
+                    console.log('Success');
+                    this.props.context.actionContext.update(new GetCheckoutCartInput(this.props.context.request.apiSettings), newCart);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+};
 ```
 
 ## <a name="extend-attributes-to-do-some-business-logic-in-the-pos"></a>POS でビジネス ロジックを行うには、属性を拡張します。

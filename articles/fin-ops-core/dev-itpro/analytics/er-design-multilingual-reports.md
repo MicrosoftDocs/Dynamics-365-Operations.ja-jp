@@ -2,7 +2,7 @@
 title: 電子申告における多言語レポートの設計
 description: このトピックでは、電子申告 (ER) ラベルを使用して多言語レポートをデザインおよび生成する方法について説明します。
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753555"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951988"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>電子申告における多言語レポートの設計
 
@@ -158,6 +158,31 @@ ERでは、生成されるレポートの言語を指定するさまざまな方
 - **ランタイムに定義** – ランタイムに指定された言語でレポートを生成します。 この値を選択する場合は、**言語** フィールドで、対応する顧客の言語など、言語の言語コードを返す ER 式を構成します。
 
     ![ER オペレーション デザイナーで、生成されたレポートの言語としてランタイム定義言語を指定します](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>カルチャ固有の形式
+
+ERでは、生成されるレポートのカルチャを指定するさまざまな方法をサポートしています。 したがって、日付、時刻、および数値に対して、カルチャ固有の正しい形式を使用できます。 電子申告形式をデザインする場合は、**形式** タブの、**カルチャの基本設定** フィールドで **Common\\File**、**Excel\\File**、**PDF\\File** または **PDF\\Merger** タイプの各形式コンポーネントに対して、以下の値を選択することができます。
+
+- **ユーザーの基本設定** – ユーザーの優先するカルチャに従って値をフォーマットします。 このカルチャーは、**ユーザー オプション** ページの **基本設定** タブにある **日付、時刻、および数字の形式** フィールドで定義されます。
+
+    ![ER 操作デザイナーで、生成されたレポートのカルチャとしてユーザーの優先するカルチャを定義する](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **明示的に定義** – 設計時に指定されたカルチャに従って値をフォーマットします。
+
+    ![設計時に指定されたカルチャを、ER 操作デザイナーで生成されたレポートのカルチャとして定義する](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **ランタイムに定義** – ランタイムに指定されたカルチャに従って値をフォーマットします。 この値を選択した場合、**マッピング** タブの **日付、時刻、数字の形式** フィールドに、該当する顧客のカルチャなど、カルチャのカルチャ コードを返す ER 式を設定します。
+
+    ![ランタイムに定義されたカルチャを、ER 操作デザイナーで生成されたレポートのカルチャとして定義する](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> 特定のカルチャを定義する ER コンポーネントには、テキスト値を入力するように構成された子 ER コンポーネントが含まれている場合があります。 既定では、親コンポーネントのカルチャがそれらのコンポーネントの値のフォーマットに使用されます。 次の組み込み ER 機能を使用して、これらのコンポーネントのバインドを構成し、値のフォーマットに代替カルチャを適用できます。
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> バージョン 10.0.20 以降では生成されたドキュメントの [PDF 変換](electronic-reporting-destinations.md#OutputConversionToPDF) 時に、**Common\\File** および **Excel\\File** タイプのフォーマット コンポーネントのロケールを使用して値をフォーマットします。
 
 ## <a name="translation"></a>翻訳
 

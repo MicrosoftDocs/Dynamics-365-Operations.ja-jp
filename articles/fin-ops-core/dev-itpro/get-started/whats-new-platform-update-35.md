@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 35
-ms.openlocfilehash: 33341d49f798fe0a1eb7a5cce928398d4cd8feeb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b9c2c71707cf284ee4b622c406cee77f3b19b118
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744213"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923409"
 ---
 # <a name="platform-updates-for-version-10011-of-finance-and-operations-apps-july-2020"></a>Finance and Operations アプリ バージョン 10.0.11 のプラットフォーム更新プログラム（2020 年 7 月）
 
@@ -33,8 +33,8 @@ ms.locfileid: "5744213"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-- [パーソナル化を使用してフィールドを必須として指定する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) – 詳細については、[ユーザー エクスペリエンスのカスタマイズ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience) を参照してください。
-- [新たなグリッドのスタイルを更新しました](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2)
+- [パーソナル化を使用してフィールドを必須として指定する](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) – 詳細については、[ユーザー エクスペリエンスのカスタマイズ](../../fin-ops/get-started/personalize-user-experience.md) を参照してください。
+- [新たなグリッドのスタイルを更新しました](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2)
 - [コンパイラの警告のエラー：無効なフィールド参照を含むフィールド グループ](removed-deprecated-features-platform-updates.md#field-groups-containing-invalid-field-references) – 詳細については、[すでに発表されている当コンパイラの警告の非推奨化](removed-deprecated-features-platform-updates.md#field-groups-containing-invalid-field-references) を参照してください。
 - Visual Studio の代わりに Microsoft Windows PowerShell を使用して、テスト用の自己署名証明書を作成する – 詳細については、[独立系ソフトウェア ベンダー (ISV) ライセンス](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes) を参照してください。
 
@@ -48,7 +48,7 @@ ms.locfileid: "5744213"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 

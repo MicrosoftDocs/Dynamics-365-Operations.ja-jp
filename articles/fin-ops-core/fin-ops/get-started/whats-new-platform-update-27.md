@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-06-30
 ms.dyn365.ops.version: Platform 27
-ms.openlocfilehash: 2e530f2ef32155f9db10c9dda1b21ffb71870f25
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01e792d9f92f92124867d514a20ad240cf520e09
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752210"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923325"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-27-june-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) の新機能および変更された機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "5752210"
 ジョブに現在実行中のタスクが含まれている場合、バッチ ジョブのキャンセルに長い時間がかかることがあります。 中止オプションを使用すると、システム管理者やバッチ ジョブ マネージャーは、ジョブがキャンセルされた場合にジョブに対してすでに実行中のタスクをキャンセルすることができます。 これは他の場所でシステムの使用に影響を与える可能性がある長時間実行中のジョブをキャンセルする、はるかに高速なメカニズムを提供します。 詳細については [実行中のバッチ ジョブの中止](../../dev-itpro/sysadmin/batch-abort.md) を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
-プラットフォーム更新プログラム 27 に含まれる [プラットフォーム拡張機能の 4 番目の波](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4) は、2019 年 4 月リリース ノートにドキュメントされています。 2 つの機能強化の詳細が記載されており、そのハイライトは表示拡張がラベルとヘルプ テキストの値を変更できるようになったことです。
+プラットフォーム更新プログラム 27 に含まれる [プラットフォーム拡張機能の 4 番目の波](/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4) は、2019 年 4 月リリース ノートにドキュメントされています。 2 つの機能強化の詳細が記載されており、そのハイライトは表示拡張がラベルとヘルプ テキストの値を変更できるようになったことです。
 
 ## <a name="export-data-from-all-companies-to-byod-can-be-enabled-via-parameters"></a>パラメーターを使用してすべての会社からデータをエクスポートすることもできます。
 すべての企業から BYOD へのエクスポートを可能にする機能を、データ管理のフレームワーク パラメーターで有効にできるようになりました。 この時点では、これにより、不要なフライトが有効になります。
@@ -54,7 +54,7 @@ ms.locfileid: "5752210"
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。

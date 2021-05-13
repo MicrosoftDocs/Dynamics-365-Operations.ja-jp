@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 69387676d19e158ce2b62cc8480dc96c0de36d5a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 737c36e3b15c586b6e6c8ff982a61c90802b6919
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800435"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937078"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -29,12 +29,12 @@ ms.locfileid: "5800435"
 
 ## <a name="overview"></a>概要
 
-Retail ハイブリッド アプリは、[Xamarin](https://docs.microsoft.com/xamarin/) を使用して構築されたシェルです。 シェル内は、クラウド POS を読み込む Web ビュー コントローラーになっています。これは、このアプリケーションの設定で指定される Commerce Scale Unit URL に基づきます。 これは、クラウド POS を内部で読み込む Android および iOS の Retail ハイブリッド アプリケーション シェルです。 詳細については、[クラウド POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/mpos-or-cpos)を参照してください。
+Retail ハイブリッド アプリは、[Xamarin](/xamarin/) を使用して構築されたシェルです。 シェル内は、クラウド POS を読み込む Web ビュー コントローラーになっています。これは、このアプリケーションの設定で指定される Commerce Scale Unit URL に基づきます。 これは、クラウド POS を内部で読み込む Android および iOS の Retail ハイブリッド アプリケーション シェルです。 詳細については、[クラウド POS](/dynamics365/unified-operations/retail/mpos-or-cpos)を参照してください。
 
 ## <a name="development-tools"></a>開発ツール
 Retail ハイブリッド アプリは、Android および iOS スマートフォン プラットフォームをサポートします。 このアプリは、Xamarin を使用して構築されています。つまり、開発用コンピューターには Xamarin をインストールする必要があります。 iOS アプリをビルドするには、Xamarin がインストールされている Mac が必要です。 Microsoft Windows を実行しているコンピューターで Android および iOS の両方に対して開発を行うことができますが、Mac を使用して iOS プラットフォームのビルドを完了する必要があります。 Mac が共有チーム リソースである場合、ビルド処理のためだけ Mac を使用する場合があります。 開発に使用するすべてのコンピューターに、Retail ソフトウェアの開発キット (Retail SDK) をコピーする必要があります。 Retail SDK は、「[Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)」を使用してプロビジョニングされるすべての開発者 VM で使用できます。
 
-Xamarin の詳細については、[Xamarin のドキュメント](https://docs.microsoft.com/xamarin/)を参照してください。
+Xamarin の詳細については、[Xamarin のドキュメント](/xamarin/)を参照してください。
 
 ## <a name="set-up-and-install-xamarin-on-windows"></a>Windows での Xamarin のセットアップとインストール
 
@@ -71,7 +71,7 @@ Windows で開発し、iOS アプリケーションを構築するためだけ�
 
  ## <a name="set-up-and-install-xamarin-on-ios"></a>iOS での Xamarin のセットアップとインストール
 
-iOS で Xamarin をインストールに関する詳しい手順については、[Xamarin.iOS のインストール](https://docs.microsoft.com/xamarin/ios/get-started/installation/)を参照してください。
+iOS で Xamarin をインストールに関する詳しい手順については、[Xamarin.iOS のインストール](/xamarin/ios/get-started/installation/)を参照してください。
 
   1.  <https://developer.apple.com/xcode/> から Xcode をダウンロードしてインストールします。 [Xcode へのアカウントの追加](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) で説明されている手順を使用して Apple ID を追加します。
   
@@ -120,9 +120,9 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 >
 > 店舗の詳細 フォームで、 **ハードウェア ステーション** ファストタブまで下にスクロールしていきます。 既存の専用ハードウェアステーションを削除して **追加** を選択して新しいハードウェアステーションのタイプに **専用** を追加します。 説明がオプションです。 ハードウェアステーションについてはその他の詳細は必要ありません。 
 
-支払コネクタを設定するには、 [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration) に記載されている標準の設定手順に従ってください。 モダンPOSまたはIISハードウェアステーションコンフィギュレーションの更新という名称のセクションは省略します。
+支払コネクタを設定するには、 [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration) に記載されている標準の設定手順に従ってください。 モダンPOSまたはIISハードウェアステーションコンフィギュレーションの更新という名称のセクションは省略します。
 
-ネットワーク接続周辺機器の設定に関する詳細については、ドキュメント[ネットワーク周辺機器のサポート](https://go.microsoft.com/fwlink/?linkid=2129965)をご覧ください。
+ネットワーク接続周辺機器の設定に関する詳細については、ドキュメント[ネットワーク周辺機器のサポート](./network-peripherals.md)をご覧ください。
 
 ## <a name="additional-resources"></a>追加リソース
 - [支払に関するよく寄せられる質問](payments-retail.md)

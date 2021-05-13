@@ -2,7 +2,7 @@
 title: 1 つのバージョンのサービス更新に関するよく寄せられる質問
 description: このトピックでは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールについて明確に説明します。
 author: ShellyBakke
-ms.date: 02/22/2021
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 288967df5d9509ae63de2798b316ad41c57769f3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 04328c08656a7ef6890ff27fe32252fab329493e
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749742"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951896"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -47,7 +47,7 @@ ms.locfileid: "5749742"
 
 | バージョン       | 説明 |
 |---------------|-------------|
-| 8.1 以降 | 8.1 以降のすべてのユーザーは、2018 年 11 月以降アプリケーションとプラットフォーム更新が結合された毎月の自動更新プログラムがスケジュールされています。 4 か月以内または 3 つのサービス更新プログラム以内に更新する必要があります。 更新を一時停止するには、[サービスの更新の一時停止](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates)を参照してください。 |
+| 8.1 以降 | 8.1 以降のすべてのユーザーは、2018 年 11 月以降アプリケーションとプラットフォーム更新が結合された毎月の自動更新プログラムがスケジュールされています。 4 か月以内または 3 つのサービス更新プログラム以内に更新する必要があります。 更新を一時停止するには、[サービスの更新の一時停止](../../dev-itpro/lifecycle-services/pause-service-updates.md)を参照してください。 |
 | 8.0           | 8.0 をご利用のユーザーは、毎月のプラットフォーム更新プログラム と財務報告の更新をマニュアルで適用することが可能です。 4 か月または 3 つのサービス更新以内に更新する必要があります。 2019 年 4 月で 8.0 アプリケーションのライフサイクルが終了します。 8.0 を使用している顧客は、サポートを維持するには 2019 年 4 月 30 日までに更新する必要があります。 アプリケーションのサポート対象となるには、手順にに従って最新バージョンに更新する必要があります。 詳細については、 [バージョン 8.0 から 10.0.X への環境の更新](../../dev-itpro/migration-upgrade/appupdate-80-81.md)を参照してください。 | 
 | 7.x           | 7.x をご利用のユーザーは、毎月のプラットフォーム更新プログラム と財務報告の更新をマニュアルで適用することが可能です。 4 か月以内の更新プログラムと 3 つのサービス更新が必要です。 7.x をご利用の顧客は、2019 年 4 月 30 日までに更新をしない場合はサポートが失効します。 2019 年 4 月 30 日以降もバージョン7.3 の顧客には、毎月自動プラットフォーム更新プログラムが送信されます。 2019 年 4 月中までに8.1にアップグレードする必要があります (拡張機能を使用できない場合は除きます)。 市販されているオーバーレイ済のバージョンは7.3です。 
 
@@ -132,6 +132,19 @@ LCS コンフィギュレーションを介して最大 4 か月または連続�
 
 いいえ、サービス更新はサンドボックスに自動的に適用されます。 そして7 日後、環境が 3 サービス更新より古い場合、更新が実稼働環境に適用されます。 顧客は、最大 3 つの連続した更新のみ連続して一時停止できます。 たとえば、バージョン 10.0 の顧客が 10.0.1、10.0.2、および 10.0.3 の更新を一時停止する場合、サービスの更新プログラム 10.0.4 はサンドボックスに自動適用されます。 
 
+### <a name="what-happens-to-an-environment-that-is-running-a-finance-and-operations-version-that-is-no-longer-supported"></a>サポートされなくなった Finance and Operations バージョンを実行している環境はどうなりますか？
+サポートされなくなった Finance and Operations バージョンを実行している環境では、LCS の環境詳細ページの上部に警告メッセージが表示されます。
+
+すべての Microsoft 管理環境、およびオンプレミス実装プロジェクトのサンドボックス環境と実稼働環境では、サポートされなくなった Finance and Operations バージョンを実行している環境では、一部の Lifecycle Services (LCS) 機能を使用できない場合があります。 使用できない可能性のある LCS 機能には、次の機能が含まれます。
+
+ - メンテナンス モードの有効化
+ - 環境または環境間でデータベースを移動するために提供されるすべての機能を使用する
+ - SQL Server データベースへのファイアウォール アクセスの有効化
+ - RSAT 証明書のダウンロード
+ - RSAT 証明書を再生成する
+
+サポートされているバージョンにサービス更新を適用すると、この機能は影響を受ける環境で使用できます。
+
 ### <a name="what-if-i-find-an-issue-during-the-sandbox-update"></a>サンドボックスの更新中に問題が発生した場合はどうなりますか?
 
 サンドボックス環境で検証を行うときに問題が見つかった場合は、有効なサポート チケット番号と業務の妥当性を提供することで直接 LCS を通じて更新をスキップするように要求できます。 
@@ -184,25 +197,25 @@ LCS コンフィギュレーションを介して最大 4 か月または連続�
 
 ### <a name="is-there-tooling-available-to-support-testing-the-latest-release"></a>最新のリリースのテストをサポートするために使用可能なツールはありますか?
 
-[Regression Suite Automation Tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests) は[現在利用可能](https://www.microsoft.com/download/details.aspx?id=57357)です。 このツールは、ユーザー受け入れテストの費用と時間を大幅に減少します。 通常、ユーザー受け入れテストは Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードおよびコンフィギュレーションを実稼働環境に適用する前に必要です。 機能パワー ユーザーがタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。 テスト ライブラリは、ビジネス プロセス モデラー (BPM) ライブラリを使用して Lifecycle Services に保存および配分され、テストの実行、報告、調査のために Azure DevOps と完全に統合されます。 テスト データ パラメーターは、テスト ステップから切り離され、Excel データ ファイルに保存されます。
+[Regression Suite Automation Tool](../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md) は[現在利用可能](https://www.microsoft.com/download/details.aspx?id=57357)です。 このツールは、ユーザー受け入れテストの費用と時間を大幅に減少します。 通常、ユーザー受け入れテストは Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードおよびコンフィギュレーションを実稼働環境に適用する前に必要です。 機能パワー ユーザーがタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。 テスト ライブラリは、ビジネス プロセス モデラー (BPM) ライブラリを使用して Lifecycle Services に保存および配分され、テストの実行、報告、調査のために Azure DevOps と完全に統合されます。 テスト データ パラメーターは、テスト ステップから切り離され、Excel データ ファイルに保存されます。
 
 ### <a name="how-can-i-test-and-validate-that-the-integrations-continue-to-work"></a>統合が機能し続けていることはどのようにテストおよび検証できますか?
 
-データ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証することができます。 また、タスクの結果の検証を使用して、データ エンティティの自動テストを使用することもできます。 詳細については、[データ タスクの自動化](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation)トピックの差し込みデータの概要を参照してください。
+データ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証することができます。 また、タスクの結果の検証を使用して、データ エンティティの自動テストを使用することもできます。 詳細については、[データ タスクの自動化](../../dev-itpro/data-entities/data-task-automation.md)トピックの差し込みデータの概要を参照してください。
 
 ### <a name="how-can-i-determine-whats-changed-in-a-service-update"></a>サービス更新プログラムの変更内容はどのようにわかりますか?
 
-「新機能および変更された機能」ドキュメントは、各サービス更新に含まれている詳細の主要ソースです。 [リリース プラン](https://docs.microsoft.com/business-applications-release-notes/) は、今後のリリースのすべての新機能と変更の情報の主要ソースです。 必要に応じて、機能には docs.microsoft.com のヘルプ トピックも含められます。 影響分析ツールは、使用する機能への影響を理解するために LCS で利用可能になります。
+「新機能および変更された機能」ドキュメントは、各サービス更新に含まれている詳細の主要ソースです。 [リリース プラン](/business-applications-release-notes/) は、今後のリリースのすべての新機能と変更の情報の主要ソースです。 必要に応じて、機能には docs.microsoft.com のヘルプ トピックも含められます。 
 
 ### <a name="how-will-i-know-if-there-is-a-deprecated-feature-that-will-impact-me-if-im-not-doing-active-development-recompile-my-code"></a>現在開発中でない、またはコードを再コンパイルしない場合、推奨されない機能があるかどうかはどうすればわかりますか。 
 
-非推奨の機能については、リリースのたびに記載されます。  詳細については、[削除済みまたは非推奨の機能](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/fin-and-ops/toc.json) を参照してください。  
+非推奨の機能については、リリースのたびに記載されます。  詳細については、[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) を参照してください。  
 
 ## <a name="preparing-for-one-version"></a>1 つのバージョンの準備
 
 ### <a name="how-can-i-log-an-extensibility-request"></a>拡張機能の要求を記録するにはどうすればよいですか?
 
-拡張機能の要求は、LCS に記録することができます。 詳細は、[機能拡張要求](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests)トピックにあります。 使用可能な拡張機能をログに記録して使用するには、以下のタイムライムに注目してください。
+拡張機能の要求は、LCS に記録することができます。 詳細は、[機能拡張要求](../../dev-itpro/extensibility/extensibility-requests.md)トピックにあります。 使用可能な拡張機能をログに記録して使用するには、以下のタイムライムに注目してください。
 
 | 日         | 拡張性の要求 |
 |--------------|------------------------|
@@ -225,13 +238,13 @@ Microsoft は、サービスの終了に達しているバージョンの問題�
 
 ### <a name="how-can-i-upgrade-to-8x"></a>8.x にアップグレードする方法を教えてください。
 
-最新のアプリケーションにアップグレードする方法については、[最新の更新プログラムに移行するためのプロセス](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1)を参照してください。 [8.0 から 8.1 への](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81)更新では、データのアップグレードは不要です。ダウンタイムが大幅に削減されるセルフ サービスの更新になります。
+最新のアプリケーションにアップグレードする方法については、[最新の更新プログラムに移行するためのプロセス](../../dev-itpro/migration-upgrade/upgrade-latest-update.md)を参照してください。 [8.0 から 8.1 への](../../dev-itpro/migration-upgrade/appupdate-80-81.md)更新では、データのアップグレードは不要です。ダウンタイムが大幅に削減されるセルフ サービスの更新になります。
 
 ## <a name="commerce-service-updates"></a>コマース サービスの更新
 
 ### <a name="what-options-are-available-to-minimize-impact-to-my-commerce-cloud-components"></a>コマース クラウド コンポーネントへの影響を最小限に抑えるためにどのオプションを使用できますか?
 
-コマース クラウド コンポーネントには、Dynamics 365 バックオフィスと同じダウンタイムが必要です。 今後のリリースでは、展開への更新を減らしてさらにスケジュールするために Retail Cloud Scale Unit (RCSU) が使用可能になります。 RCSU の詳細については、[ドキュメント](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-retail/planned-features)および[リリース ノート](https://docs.microsoft.com/business-applications-release-notes/#pivot=products&panel=products1) サイトにある発行済みのリリース情報を参照してください。
+コマース クラウド コンポーネントには、Dynamics 365 バックオフィスと同じダウンタイムが必要です。 今後のリリースでは、展開への更新を減らしてさらにスケジュールするために Retail Cloud Scale Unit (RCSU) が使用可能になります。 RCSU の詳細については、[ドキュメント](/business-applications-release-notes/October18/dynamics365-retail/planned-features)および[リリース ノート](/business-applications-release-notes/?panel=products1#pivot=products) サイトにある発行済みのリリース情報を参照してください。
 
 ### <a name="will-there-be-options-to-take-individual-hotfixes-for-my-commerce-solution-components"></a>コマース ソリューション コンポーネントの個別の修正プログラムを取得するオプションはありますか?
 
@@ -239,7 +252,7 @@ Microsoft は、サービスの終了に達しているバージョンの問題�
 
 ### <a name="what-are-the-maintenance-downtime-requirements-that-may-impact-channel-operations"></a>チャンネル工程に影響を与える可能性のある保守ダウンタイム要件は何ですか?
 
-冗長性の業務ニーズがある小売業者のため、Modern POS オフライン機能では、インターネットから切断中またはクラウド環境の更新中にコア POS 処理を使用できます。 Commerce Scale Unit を運用している店舗では、サポート クラウド メンテナンス期間中もコア POS 処理のサポートを伴う処理を継続します。 詳細については、[オンラインおよびオフライン販売時点管理 (POS) 処理](../../../retail/pos-operations.md)を参照してください。
+冗長性の業務ニーズがある小売業者のため、Modern POS オフライン機能では、インターネットから切断中またはクラウド環境の更新中にコア POS 処理を使用できます。 Commerce Scale Unit を運用している店舗では、サポート クラウド メンテナンス期間中もコア POS 処理のサポートを伴う処理を継続します。 詳細については、[オンラインおよびオフライン販売時点管理 (POS) 処理](../../../commerce/pos-operations.md)を参照してください。
 
 ### <a name="when-will-i-need-to-update-my-in-store-components"></a>店舗内コンポーネントを更新する必要があるのはいつですか?
 
@@ -257,7 +270,7 @@ Microsoft は、サービスの終了に達しているバージョンの問題�
 
 Microsoft では、店舗、デバイス、およびユーザー全体で機能拡張を徐々に展開して有効にするいくつかのメカニズムを提供しています。
 
-- **画面レイアウト デザイナー**: POS のほとんどのビジュアル要素は、顧客組織の管理ユーザーによって構成され、集中管理されます。 つまり、対応する画面レイアウトに含まれるように明示的に設定されていない限り、新しい POS の操作は POS に自動的に表示されません。 画面レイアウトは、画面レイアウト デザイナーを使用して構成され、店舗または POS デバイスに固有の場合があります。 詳細については、[販売時点管理 (POS) の画面レイアウト](../../../retail/pos-screen-layouts.md)を参照してください。
+- **画面レイアウト デザイナー**: POS のほとんどのビジュアル要素は、顧客組織の管理ユーザーによって構成され、集中管理されます。 つまり、対応する画面レイアウトに含まれるように明示的に設定されていない限り、新しい POS の操作は POS に自動的に表示されません。 画面レイアウトは、画面レイアウト デザイナーを使用して構成され、店舗または POS デバイスに固有の場合があります。 詳細については、[販売時点管理 (POS) の画面レイアウト](../../../commerce/pos-screen-layouts.md)を参照してください。
 - **機能プロファイル、POS のアクセス許可、コマース パラメーター** – POS の機能の重要な要素は通常、ユーザーがコンフィギュレーション可能です。 これは、機能プロファイル、POS のアクセス許可、コマース パラメーター、または該当するシナリオにおけるデバイス、レジスター、店舗、またはユーザー レベルの機能の管理を可能にするその他のコントロールを通じて設定できます。
 - **Modern POS および Commerce Scale Unit** – Modern POS および Commerce Scale Unit は小売業者によって自己ホストされるため、いずれかのコンポーネントを含むトポロジによっては、個別 (および低速) のリズムかつクラウド専用トポロジより細かい方法での更新の展開が可能になります。
 

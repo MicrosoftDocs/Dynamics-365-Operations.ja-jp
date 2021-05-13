@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4de3cb867b91bb93575673824a25cd0aa262a428
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8c4bbf64f1a770858a490eefb80fc09b12181175
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754076"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940894"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 
@@ -32,7 +32,7 @@ ms.locfileid: "5754076"
 
 二重書き込みには、次の制限があります:
 
-+ データ インテグレータに対して、二重書き込みと [見込み顧客の収益化ソリューション](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) を並行して実行することはできません。 データ インテグレータで見込み顧客の収益化ソリューションを実行している場合は、アンインストールする必要があります。
++ データ インテグレータに対して、二重書き込みと [見込み顧客の収益化ソリューション](../../../../supply-chain/sales-marketing/accounts-template-mapping-direct.md) を並行して実行することはできません。 データ インテグレータで見込み顧客の収益化ソリューションを実行している場合は、アンインストールする必要があります。
 + 二重書き込み設定は、Finance and Operations アプリの試用版インスタンスではサポートされていません。
 + 単一の Finance and Operations アプリ インスタンスおよび単一の Customer Engagement アプリ インスタンスを統合するには、二重書き込みを使用する必要があります。
 + 二重書き込みでは現在、40 の法人に制限されています。

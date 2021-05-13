@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3eec2af275018f4f412329695a536428372c283
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9613c911caa35a9d058dc0b7dcb3c2f07135200b
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751450"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941183"
 ---
 # <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
 
@@ -38,7 +38,7 @@ ms.locfileid: "5751450"
 
 マネージド ソリューションを変更することはできませんが、インポート後にアンインストールできます。 アンマネージド ソリューションをインポートする場合は、そのソリューションのすべてのコンポーネントを環境に追加します。 既にカスタマイズしたコンポーネントを含むアンマネージド ソリューションをインポートすると、カスタマイズはインポート済みアンマネージド ソリューションのカスタマイズによって上書きされます。
 
-ソリューションの詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) を参照してください。
+ソリューションの詳細については、[ソリューションの概要](/powerapps/maker/common-data-service/solutions-overview) を参照してください。
 
 ## <a name="install-the-dual-write-core-solution"></a>二重書き込みコア ソリューションのインストール
 
@@ -150,7 +150,7 @@ Microsoft が公開した二重書き込みテーブル マップ ソリュー�
 
 これで、テーブルをカスタマイズして、新しいソリューションに追加し、他の環境にインポートして適用できるソリューション ファイルを作成しました。 (この機能は、テスト環境と実稼動環境の間でテーブル マップを移動する場合に役立ちます。) 同様に、すべてのテーブル マップのバックアップを、ソリューションに追加し、そのソリューションをパッケージとしてエクスポートすることによって作成できます。 その後、そのパッケージを任意の環境にインポートして、テーブル マップを復元できます。
 
-AppSource にパッケージを公開する方法の詳細については、[AppSource でアプリを公開](https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource) を参照してください。
+AppSource にパッケージを公開する方法の詳細については、[AppSource でアプリを公開](/powerapps/developer/common-data-service/publish-app-appsource) を参照してください。
 
 ### <a name="test-your-exported-solution-package"></a>エクスポート済みソリューション パッケージのテスト
 

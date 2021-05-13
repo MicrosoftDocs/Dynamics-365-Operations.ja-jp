@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: riluan
+ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: fcbede8b1a0a9a1dfcb9acbfd7cadb49eb48eecd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750693"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941112"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Supply Chain Management と Field Service の間の調達の統合
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Supply Chain Management は、信頼性の高い調達機
 ### <a name="prerequisites"></a>必要条件
 
 - **デュアル書き込み** – 詳細については、[デュアル書き込みホームページ](dual-write-home-page.md#dual-write-setup) をご覧ください。
-- **Dynamics 365 Field Service** – 詳細については、[Dynamics 365 Field Service のインストール方法](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service) をご覧ください。
+- **Dynamics 365 Field Service** – 詳細については、[Dynamics 365 Field Service のインストール方法](/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service) をご覧ください。
 
 この機能が  Microsoft Dataverse で有効な場合は、デュアル書き込みおよび Field Service により、新しいメタデータ、フォーム、ビュー、ロジックで環境を拡張する複数のソリューション レイヤーが導入されます。 これらのソリューションは、任意の順序で有効にできます。通常、次の順序でインストールします。
 

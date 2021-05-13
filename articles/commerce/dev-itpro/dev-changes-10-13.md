@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2020-04-10
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 574bdf53d2c204dd9b0fb7733b64932f13e5f715
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fb9b96bef3bd52afe758a745bf7a8705e0e21d5f
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793017"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936896"
 ---
 # <a name="development-and-alm-changes-from-version-10010-to-10013"></a>バージョン 10.0.10 から 10.0.13 における開発と ALM の変更
 
@@ -54,7 +54,7 @@ Microsoft は、互換性に影響する変更を含まない更新を提供す�
 
 各アプリケーション リリースの全般的な概要については、「新機能および変更された機能」のトピックを必ず確認してください。
 
-- [Finance and Operations アプリ ホーム ページの新機能および変更された機能](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-changed?toc=/dynamics365/commerce/toc.json)
+- [Finance and Operations アプリ ホーム ページの新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=%2fdynamics365%2fcommerce%2ftoc.json)
 - [Dynamics 365 Commerce での新機能と変更](../get-started/whats-new-home-page.md)
 - [プラットフォーム更新の新機能と変更された機能](../../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md)
 
@@ -123,7 +123,7 @@ Microsoft は、互換性に影響する変更を含まない更新を提供す�
 ## <a name="whats-changed-in-the-10013-release"></a>10.0.13 リリースの変更された機能
 
 - バージョン 10.0.13 では、X++ を使用するアプリケーション開発には Visual Studio 2017 が必要です。 まだ Visual Studio 2017 に更新していない場合は、このトピックで前述したバージョン 10.0.11 に関するセクションを確認してください。
-- Microsoft は、開発およびテスト環境のプロビジョニングに使用される VHD テンプレートのリビルドに取り組んでいます。 この作業が完了すると、VHD テンプレートには Visual Studio 2017 が自動的に含まれます。 リビルドされたテンプレートが利用可能になる日付は確認されていませんが、Microsoft は、バージョン 10.0.13 が 2020 年 9 月に一般公開された後には準備が整うと予想しています。 詳細については、「[必要なアクション - .NET バージョン と Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017)」を参照してください。
+- バージョン 10.0.13 以降、開発者およびテスト環境のプロビジョニングに使用する VHD テンプレートには、Visual Studio 2017 が含まれます。 詳細については、[X++ の Visual Studio 2017 の要件](../../fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017.md) および[必要なアクション - .NET バージョン と Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017) を参照してください。
 
 ## <a name="where-to-go-for-help"></a>ヘルプの参照先
 

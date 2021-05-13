@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76fec1ee416891e33c9ead9d44640522fd4c568f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 12f45ed7bb751325bfd02f1e18ce202a219dbe00
+ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751374"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5864340"
 ---
 # <a name="recurring-integrations"></a>定期統合
 
@@ -86,7 +86,7 @@ REST API の統合は、その他の サービス エンドポイント と同�
     ![スケジュール済みデータ ジョブの管理](./media/image013.jpg)
 
 ## <a name="submitting-data-to-recurring-data-jobs"></a>定期的なデータ ジョブにデータを送信
-統合 REST エンドポイントを使用して、クライアントと統合、ドキュメントの送信 (インポート)、またはダウンロードに使用可能なドキュメントのポーリング (エクスポート) を実行することができます。 これらのエンドポイントは OAuth をサポートします。
+統合 REST エンドポイントを使用して、クライアントと統合、ドキュメントの送信 (インポート)、またはダウンロードに使用可能なドキュメントのプル (エクスポート) を実行することができます。 これらのエンドポイントは OAuth をサポートします。
 
 ## <a name="integration-rest-apis"></a>REST API の統合
 次の API セットは、統合クライアントとアプリケーション間でデータを交換するために使用されます。

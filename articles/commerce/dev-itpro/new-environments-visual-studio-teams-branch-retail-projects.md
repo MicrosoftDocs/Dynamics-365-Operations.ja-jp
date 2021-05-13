@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: d691b8873eafbc0e129c4ac2308a36703b702802
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8652f7273970e8b9f8cc550ea374690deaf1ae20
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795669"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937142"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-projects"></a>プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境がクラウドでホストされます。 それら環境は Microsoft サブスクリプション または、クラウド ホストの顧客サブスクリプションで 提供されています。 既定では、環境は、Microsoft によってホストされます。 クラウド ホスト環境は、開発環境またはビルド環境を詳細に制御するために使用されます。 詳細については、[Lifecycle Services (LCS) ユーザー ガイド](../../dev-itpro/lifecycle-services/lcs-user-guide.md)を参照してください。
+Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境がクラウドでホストされます。 それら環境は Microsoft サブスクリプション または、クラウド ホストの顧客サブスクリプションで 提供されています。 既定では、環境は、Microsoft によってホストされます。 クラウド ホスト環境は、開発環境またはビルド環境を詳細に制御するために使用されます。 詳細については、[Lifecycle Services (LCS) ユーザー ガイド](../../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)を参照してください。
 
 ## <a name="development-tier-1-environments"></a>第 1 層環境の開発
 
@@ -85,7 +85,7 @@ Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境
 
 ## <a name="branches-build-definitions-and-environments"></a>分岐、ビルド定義、および環境
 
-分岐は、ソフトウェア開発における重要なプラクティスです。 [分岐とマージ入門](https://msdn.microsoft.com/library/aa730834(v=vs.80).aspx) のトピックでは、分岐の利点について説明します。
+分岐は、ソフトウェア開発における重要なプラクティスです。 [分岐とマージ入門](/previous-versions/aa730834(v=vs.80)) のトピックでは、分岐の利点について説明します。
 
 > [!NOTE]
 > 分岐と統合の戦略には、リスクと生産性のトレードオフがあります。 孤立して作業することの安全性と引き換えに、他の人と作業する生産性が向上します。 生産性の向上にはコストが伴います。追加作業量は今後ソフトウェアの資産をマージするために必要です。
@@ -248,7 +248,7 @@ X++ および Retail SDK をマッピングするには、現在のワークス�
 5. オプション: 適切なデータが含まれている生産データベースの最新のコピーを復元します。
 
     1. 既存のデータベース **AxDB\_Orig** の名前を変更します。
-    2. Microsoft SQL Server Management Studio では、.bak ファイルを復元します。 (.bacpac ファイルが存在する場合、[Azure SQL データベースから SQL Server 環境にデータベースをコピー](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server)に記載されている手順に従います。)
+    2. Microsoft SQL Server Management Studio では、.bak ファイルを復元します。 (.bacpac ファイルが存在する場合、[Azure SQL データベースから SQL Server 環境にデータベースをコピー](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server)に記載されている手順に従います。)
     3. Visual Studio で、モデル ストアを更新します。
     4. Visual Studio では、データベースのソースおよびコピー先の環境が異なるバージョンの場合、完全なビルドを実行します。
     5. Visual Studio で、データベースの完全同期を実行します。
@@ -272,7 +272,7 @@ X++ および Retail SDK をマッピングするには、現在のワークス�
     3. **msbuild** と入力し、Enter キーを押します。 ビルドは成功するはずです。
 
 10. 開発/サンプル Retail Modern POS (MPOS) 証明書をローカル コンピューターの信頼されたルート証明書ストアに追加する: **...\\RetailSDK\\BuildTools\\ModernPOSAppxSigningCert-Contoso.pfx**。 パスワードを空の文字列に設定します。
-11. **...\\RetailSDK \\References\\YourCompany|Contoso.ModernPOSSetupOffline.exe** でインストーラーを実行して、MPO または MPOSOffline をインストールする ClientBroker ファイルを配置するのには、1 回でこの手順を完了する必要があります。
+11. **...\\RetailSDK \\References\\YourCompany|Contoso.ModernPOSSetupOffline.exe** でインストーラーを実行して、MPO または MPOSOffline をインストールします。 ClientBroker ファイルを配置するのには、1 回でこの手順を完了する必要があります。
 12. Visual Studio で、**ModernPOS.sln** (管理者として) を開き、完全なリビルドを実行します。
 13. F5 キーを押して、MPOS をデバッガーで起動します。
 14. コマースでは、**チャネル プロファイル** ページを開き、既定のチャネル プロファイルのために Commerce Scale Unit URL をコピーします。
@@ -311,7 +311,7 @@ LCS から配置する際、**PRODREL1** をエージェント プールの名�
 
 このトピックで前述の手順を完了すると、1 つのビルド定義および 2 つのエージェント キューがある必要があり、各エージェント キューは 1 つのエージェントを持つ必要があります。 異なる分岐をビルドするには、ビルド定義を異なる方法でコンフィギュレーションしなければなりません。 したがって、ビルド定義を複製する必要があります。
 
-ただし、ビルド定義を複製する前に、この手順を 2 回実行する必要がないように、Retail SDK をビルドに追加する必要があります。 **Unified Operations プラットフォーム - Build Main** という名前の既存のビルド定義を編集するには、[Retail SDK を継続的ビルド システムと統合 (Azure DevOps)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) の手順に従って、Main 分岐のメタデータビルドに Retail SDK を統合します。
+ただし、ビルド定義を複製する前に、この手順を 2 回実行する必要がないように、Retail SDK をビルドに追加する必要があります。 **Unified Operations プラットフォーム - Build Main** という名前の既存のビルド定義を編集するには、[Retail SDK を継続的ビルド システムと統合 (Azure DevOps)](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) の手順に従って、Main 分岐のメタデータビルドに Retail SDK を統合します。
 
 複数のビルド ブランチおよび環境がある場合、ビルド定義を複製し、新しいビルド定義に名前を付けるだけで、どのブランチのためであるかを明確にします。 (複製機能は Azure DevOps のポータルで使用することができます)。 作成した新しいエージェント キューを選択し、任意のビルド ステップまたはソース マッピングの次のパスを変更します。 (パスで、**メイン** を **ProdRel1** に変更します。)
 

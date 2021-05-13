@@ -4,22 +4,19 @@ description: 文字 F で始まるシステム API クラス。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 47561
-ms.assetid: 03d9d906-d683-47b4-8488-795173db2125
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448dcd983498d6a37c19e7f3c4dcc5b41bd04c18
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 81051f74eddae2275680206bfc4686434bd6c847
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750970"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923251"
 ---
 # <a name="f-classes"></a>F クラス
 
@@ -27,261 +24,261 @@ ms.locfileid: "5750970"
 
 文字 F で始まるシステム API クラス。
 
-[FieldBinding クラス](system-classes/FieldBinding-class.md)
+[FieldBinding クラス](/dotnet/api/dynamics.ax.application)
 
-[FieldFilterValue クラス](system-classes/FieldFilterValue-class.md)
+[FieldFilterValue クラス](/dotnet/api/dynamics.ax.application)
 
-[FileIOPermission クラス](system-classes/FileIOPermission-class.md)
+[FileIOPermission クラス](/dotnet/api/dynamics.ax.application)
 
-[FilterValue クラス](system-classes/FilterValue-class.md)
+[FilterValue クラス](/dotnet/api/dynamics.ax.application)
 
-[フォーム クラス](system-classes/Form-class.md)
+[フォーム クラス](/dotnet/api/dynamics.ax.application)
 
-[FormActionPaneControl クラス](system-classes/FormActionPaneControl-class.md)
+[FormActionPaneControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormActionPaneTabControl クラス](system-classes/FormActionPaneTabControl-class.md)
+[FormActionPaneTabControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormActiveXControl クラス](system-classes/FormActiveXControl-class.md)
+[FormActiveXControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormAnimateControl クラス](system-classes/FormAnimateControl-class.md)
+[FormAnimateControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormAutoLookupFactory クラス](system-classes/FormAutoLookupFactory-class.md)
+[FormAutoLookupFactory クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBinding クラス](system-classes/FormBinding-class.md)
+[FormBinding クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildActionPaneControl クラス](system-classes/FormBuildActionPaneControl-class.md)
+[FormBuildActionPaneControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildActionPaneTabControl クラス](system-classes/FormBuildActionPaneTabControl-class.md)
+[FormBuildActionPaneTabControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildActiveXControl クラス](system-classes/FormBuildActiveXControl-class.md)
+[FormBuildActiveXControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildAnimateControl クラス](system-classes/FormBuildAnimateControl-class.md)
+[FormBuildAnimateControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildButtonControl クラス](system-classes/FormBuildButtonControl-class.md)
+[FormBuildButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildButtonGroupControl クラス](system-classes/FormBuildButtonGroupControl-class.md)
+[FormBuildButtonGroupControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildButtonSeparatorControl クラス](system-classes/FormBuildButtonSeparatorControl-class.md)
+[FormBuildButtonSeparatorControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildCheckBoxControl クラス](system-classes/FormBuildCheckBoxControl-class.md)
+[FormBuildCheckBoxControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildComboBoxControl クラス](system-classes/FormBuildComboBoxControl-class.md)
+[FormBuildComboBoxControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildCommandButtonControl クラス](system-classes/FormBuildCommandButtonControl-class.md)
+[FormBuildCommandButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildContainerControl クラス](system-classes/FormBuildContainerControl-class.md)
+[FormBuildContainerControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildControl クラス](system-classes/FormBuildControl-class.md)
+[FormBuildControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDataSource クラス](system-classes/FormBuildDataSource-class.md)
+[FormBuildDataSource クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDateControl クラス](system-classes/FormBuildDateControl-class.md)
+[FormBuildDateControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDateTimeControl クラス](system-classes/FormBuildDateTimeControl-class.md)
+[FormBuildDateTimeControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDesign クラス](system-classes/FormBuildDesign-class.md)
+[FormBuildDesign クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDropDialogButtonControl クラス](system-classes/FormBuildDropDialogButtonControl-class.md)
+[FormBuildDropDialogButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildFastTabHeaderControl クラス](system-classes/FormBuildFastTabHeaderControl-class.md)
+[FormBuildFastTabHeaderControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildFastTabSummarySeparator クラス](system-classes/FormBuildFastTabSummarySeparator-class.md)
+[FormBuildFastTabSummarySeparator クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildFilterPaneControl クラス](system-classes/FormBuildFilterPaneControl-class.md)
+[FormBuildFilterPaneControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildFunctionButtonControl クラス](system-classes/FormBuildFunctionButtonControl-class.md)
+[FormBuildFunctionButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildGridControl クラス](system-classes/FormBuildGridControl-class.md)
+[FormBuildGridControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildGroupControl クラス](system-classes/FormBuildGroupControl-class.md)
+[FormBuildGroupControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildGuidControl クラス](system-classes/FormBuildGuidControl-class.md)
+[FormBuildGuidControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildHTMLControl クラス](system-classes/FormBuildHTMLControl-class.md)
+[FormBuildHTMLControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildIntControl クラス](system-classes/FormBuildIntControl-class.md)
+[FormBuildIntControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildListBoxControl クラス](system-classes/FormBuildListBoxControl-class.md)
+[FormBuildListBoxControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildListControl クラス](system-classes/FormBuildListControl-class.md)
+[FormBuildListControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildManagedHostControl クラス](system-classes/FormBuildManagedHostControl-class.md)
+[FormBuildManagedHostControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildMenuButtonControl クラス](system-classes/FormBuildMenuButtonControl-class.md)
+[FormBuildMenuButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildObjectSet クラス](system-classes/FormBuildObjectSet-class.md)
+[FormBuildObjectSet クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildProgressControl クラス](system-classes/FormBuildProgressControl-class.md)
+[FormBuildProgressControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildRadioControl クラス](system-classes/FormBuildRadioControl-class.md)
+[FormBuildRadioControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildRealControl クラス](system-classes/FormBuildRealControl-class.md)
+[FormBuildRealControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildReferenceControl クラス](system-classes/FormBuildReferenceControl-class.md)
+[FormBuildReferenceControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildReferenceGroupControl クラス](system-classes/FormBuildReferenceGroupControl-class.md)
+[FormBuildReferenceGroupControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildRichTextControl クラス](system-classes/FormBuildRichTextControl-class.md)
+[FormBuildRichTextControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildSegmentedEntryControl クラス](system-classes/FormBuildSegmentedEntryControl-class.md)
+[FormBuildSegmentedEntryControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildStaticTextControl クラス](system-classes/FormBuildStaticTextControl-class.md)
+[FormBuildStaticTextControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildStringControl クラス](system-classes/FormBuildStringControl-class.md)
+[FormBuildStringControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTabControl クラス](system-classes/FormBuildTabControl-class.md)
+[FormBuildTabControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTableControl クラス](system-classes/FormBuildTableControl-class.md)
+[FormBuildTableControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTabPageControl クラス](system-classes/FormBuildTabPageControl-class.md)
+[FormBuildTabPageControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTimeControl クラス](system-classes/FormBuildTimeControl-class.md)
+[FormBuildTimeControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTreeControl クラス](system-classes/FormBuildTreeControl-class.md)
+[FormBuildTreeControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormBuildWindowControl クラス](system-classes/FormBuildWindowControl-class.md)
+[FormBuildWindowControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormButtonControl クラス](system-classes/FormButtonControl-class.md)
+[FormButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormButtonGroupControl クラス](system-classes/FormButtonGroupControl-class.md)
+[FormButtonGroupControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormButtonSeparatorControl クラス](system-classes/FormButtonSeparatorControl-class.md)
+[FormButtonSeparatorControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormChangeTracker クラス](system-classes/FormChangeTracker-class.md)
+[FormChangeTracker クラス](/dotnet/api/dynamics.ax.application)
 
-[FormCheckBoxControl クラス](system-classes/FormCheckBoxControl-class.md)
+[FormCheckBoxControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormComboBoxControl クラス](system-classes/FormComboBoxControl-class.md)
+[FormComboBoxControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormCommandButtonControl クラス](system-classes/FormCommandButtonControl-class.md)
+[FormCommandButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormContainer クラス](system-classes/FormContainer-class.md)
+[FormContainer クラス](/dotnet/api/dynamics.ax.application)
 
-[FormContainerControl クラス](system-classes/FormContainerControl-class.md)
+[FormContainerControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormControl クラス](system-classes/FormControl-class.md)
+[FormControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormControlCancelableSuperEventArgs クラス](system-classes/FormControlCancelableSuperEventArgs-class.md)
+[FormControlCancelableSuperEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormControlCancelEventArgs クラス](system-classes/FormControlCancelEventArgs-class.md)
+[FormControlCancelEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormControlEventArgs クラス](system-classes/FormControlEventArgs-class.md)
+[FormControlEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormDataObject クラス](system-classes/FormDataObject-class.md)
+[FormDataObject クラス](/dotnet/api/dynamics.ax.application)
 
-[FormDataRow クラス](system-classes/FormDataRow-class.md)
+[FormDataRow クラス](/dotnet/api/dynamics.ax.application)
 
-[FormDataSource クラス](system-classes/FormDataSource-class.md)
+[FormDataSource クラス](/dotnet/api/dynamics.ax.application)
 
-[FormDateControl クラス](system-classes/FormDateControl-class.md)
+[FormDateControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormDateTimeControl クラス](system-classes/FormDateTimeControl-class.md)
+[FormDateTimeControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormDesign クラス](system-classes/FormDesign-class.md)
+[FormDesign クラス](/dotnet/api/dynamics.ax.application)
 
-[FormDesignView クラス](system-classes/FormDesignView-class.md)
+[FormDesignView クラス](/dotnet/api/dynamics.ax.application)
 
-[FormDropDialogButtonControl クラス](system-classes/FormDropDialogButtonControl-class.md)
+[FormDropDialogButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormEventArgs クラス](system-classes/FormEventArgs-class.md)
+[FormEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormFastTabHeaderControl クラス](system-classes/FormFastTabHeaderControl-class.md)
+[FormFastTabHeaderControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormFastTabSummarySeparator クラス](system-classes/FormFastTabSummarySeparator-class.md)
+[FormFastTabSummarySeparator クラス](/dotnet/api/dynamics.ax.application)
 
-[FormFilterPaneControl クラス](system-classes/FormFilterPaneControl-class.md)
+[FormFilterPaneControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormFunctionButtonControl クラス](system-classes/FormFunctionButtonControl-class.md)
+[FormFunctionButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormGridControl クラス](system-classes/FormGridControl-class.md)
+[FormGridControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormGroupControl クラス](system-classes/FormGroupControl-class.md)
+[FormGroupControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormGuidControl クラス](system-classes/FormGuidControl-class.md)
+[FormGuidControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormHTMLControl クラス](system-classes/FormHTMLControl-class.md)
+[FormHTMLControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormIntControl クラス](system-classes/FormIntControl-class.md)
+[FormIntControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormListBoxControl クラス](system-classes/FormListBoxControl-class.md)
+[FormListBoxControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormListColumn クラス](system-classes/FormListColumn-class.md)
+[FormListColumn クラス](/dotnet/api/dynamics.ax.application)
 
-[FormListControl クラス](system-classes/FormListControl-class.md)
+[FormListControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormListItem クラス](system-classes/FormListItem-class.md)
+[FormListItem クラス](/dotnet/api/dynamics.ax.application)
 
-[FormManagedHostControl クラス](system-classes/FormManagedHostControl-class.md)
+[FormManagedHostControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormMenuButtonControl クラス](system-classes/FormMenuButtonControl-class.md)
+[FormMenuButtonControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormNotifyEventArgs クラス](system-classes/FormNotifyEventArgs-class.md)
+[FormNotifyEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObject クラス](system-classes/FormObject-class.md)
+[FormObject クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSet クラス](system-classes/FormObjectSet-class.md)
+[FormObjectSet クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetCacheChangedEventArgs クラス](system-classes/FormObjectSetCacheChangedEventArgs-class.md)
+[FormObjectSetCacheChangedEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetCurrentChangedEventArgs クラス](system-classes/FormObjectSetCurrentChangedEventArgs-class.md)
+[FormObjectSetCurrentChangedEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetLeaveEventArgs クラス](system-classes/FormObjectSetLeaveEventArgs-class.md)
+[FormObjectSetLeaveEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetMarkingChangedEventArgs クラス](system-classes/FormObjectSetMarkingChangedEventArgs-class.md)
+[FormObjectSetMarkingChangedEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetNotify クラス](system-classes/FormObjectSetNotify-class.md)
+[FormObjectSetNotify クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetNotifyEvents クラス](system-classes/FormObjectSetNotifyEvents-class.md)
+[FormObjectSetNotifyEvents クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetPagingParamsChangedEvtArgs クラス](system-classes/FormObjectSetPagingParamsChangedEvtArgs-class.md)
+[FormObjectSetPagingParamsChangedEvtArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetRequestCacheSizeEventArgs クラス](system-classes/FormObjectSetRequestCacheSizeEventArgs-class.md)
+[FormObjectSetRequestCacheSizeEventArgs クラス](/dotnet/api/dynamics.ax.application)
 
-[FormPart クラス](system-classes/FormPart-class.md)
+[FormPart クラス](/dotnet/api/dynamics.ax.application)
 
-[FormProgressControl クラス](system-classes/FormProgressControl-class.md)
+[FormProgressControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormQueryMiner クラス](system-classes/FormQueryMiner-class.md)
+[FormQueryMiner クラス](/dotnet/api/dynamics.ax.application)
 
-[FormRadioControl クラス](system-classes/FormRadioControl-class.md)
+[FormRadioControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormRealControl クラス](system-classes/FormRealControl-class.md)
+[FormRealControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormReferenceControl クラス](system-classes/FormReferenceControl-class.md)
+[FormReferenceControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormReferenceGroupControl クラス](system-classes/FormReferenceGroupControl-class.md)
+[FormReferenceGroupControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormReferenceObject クラス](system-classes/FormReferenceObject-class.md)
+[FormReferenceObject クラス](/dotnet/api/dynamics.ax.application)
 
-[FormRichTextControl クラス](system-classes/FormRichTextControl-class.md)
+[FormRichTextControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormRowDisplayOption クラス](system-classes/FormRowDisplayOption-class.md)
+[FormRowDisplayOption クラス](/dotnet/api/dynamics.ax.application)
 
-[FormSegment クラス](system-classes/FormSegment-class.md)
+[FormSegment クラス](/dotnet/api/dynamics.ax.application)
 
-[FormSegmentedEntryControl クラス](system-classes/FormSegmentedEntryControl-class.md)
+[FormSegmentedEntryControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormsPreloadingManager クラス](system-classes/FormsPreloadingManager-class.md)
+[FormsPreloadingManager クラス](/dotnet/api/dynamics.ax.application)
 
-[FormStaticTextControl クラス](system-classes/FormStaticTextControl-class.md)
+[FormStaticTextControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormStringControl クラス](system-classes/FormStringControl-class.md)
+[FormStringControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormTabControl クラス](system-classes/FormTabControl-class.md)
+[FormTabControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormTableCell クラス](system-classes/FormTableCell-class.md)
+[FormTableCell クラス](/dotnet/api/dynamics.ax.application)
 
-[FormTableControl クラス](system-classes/FormTableControl-class.md)
+[FormTableControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormTabPageControl クラス](system-classes/FormTabPageControl-class.md)
+[FormTabPageControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormTimeControl クラス](system-classes/FormTimeControl-class.md)
+[FormTimeControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormTreeControl クラス](system-classes/FormTreeControl-class.md)
+[FormTreeControl クラス](/dotnet/api/dynamics.ax.application)
 
-[FormTreeItem クラス](system-classes/FormTreeItem-class.md)
+[FormTreeItem クラス](/dotnet/api/dynamics.ax.application)
 
-[FormWindowControl クラス](system-classes/FormWindowControl-class.md)
+[FormWindowControl クラス](/dotnet/api/dynamics.ax.application)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

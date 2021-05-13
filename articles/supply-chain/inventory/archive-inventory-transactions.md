@@ -10,22 +10,20 @@ ms.technology: ''
 ms.search.form: InventTransArchiveProcessForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b740da1a8a349f4a1a80b41bf717c388fd3db0c0
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 0526eb42a886817d50e1ecfd252a6e971875ba92
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881835"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956061"
 ---
 # <a name="archive-inventory-transactions"></a>在庫トランザクションをアーカイブする
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 時間の経過と共に、在庫トランザクション テーブル (`InventTrans`) は拡大し、データベース容量を消費します。 したがって、テーブルに対して実行されるクエリの速度は徐々に低下します。 このトピックでは、システム パフォーマンスを向上させるために、*在庫トランザクション アーカイブ* 機能を使用して在庫トランザクションに関するデータをアーカイブする方法について説明します。
 
