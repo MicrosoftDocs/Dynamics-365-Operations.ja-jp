@@ -1,76 +1,107 @@
 ---
-title: POS サインインの Azure Active Directory 認証を有効にする
-description: このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) のサインイン エクスペリエンスを構成して、Azure Active Directory 認証を使用できるようにする方法について説明します。
+title: POS サインインの Azure Active Directory 認証の構成
+description: このトピックでは、Azure Active Directory を Microsoft Dynamics 365 Commerce 販売時点管理の認証方法として構成する方法について説明します。
 author: boycezhu
-ms.date: 07/27/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 50088aee8c2474708682c9041251d2336e84d971
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 34a7946a56a58655bc9ae23e060fc50ab01f2c6e
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796345"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937461"
 ---
-# <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a><span data-ttu-id="ae029-103">POS サインインの Azure Active Directory 認証の有効化</span><span class="sxs-lookup"><span data-stu-id="ae029-103">Enable Azure Active Directory authentication for POS sign-in</span></span>
+# <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a><span data-ttu-id="42609-103">POS サインインの Azure Active Directory 認証の構成</span><span class="sxs-lookup"><span data-stu-id="42609-103">Configure Azure Active Directory authentication for POS sign-in</span></span>
+
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
+<span data-ttu-id="42609-104">このトピックでは、Azure Active Directory (Azure AD) を Microsoft Dynamics 365 Commerce 販売時点管理 (POS) の認証方法として構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="42609-104">This topic explains how to configure Azure Active Directory (Azure AD) as the authentication method in Microsoft Dynamics 365 Commerce point of sale (POS).</span></span>
 
-<span data-ttu-id="ae029-104">Microsoft Dynamics 365 Commerce を使用する多くの顧客は、他の Microsoft クラウド サービスも使用しており、Azure Active Directory (Azure AD) を使用して、これらのサービスのユーザー資格情報を管理することができます。</span><span class="sxs-lookup"><span data-stu-id="ae029-104">Many customers who use Microsoft Dynamics 365 Commerce also use other Microsoft cloud services, and they might use Azure Active Directory (Azure AD) to manage user credentials for those services.</span></span> <span data-ttu-id="ae029-105">そのような場合、顧客はアプリケーション間で同じ Azure AD アカウントを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="ae029-105">In those cases, the customers might want to use the same Azure AD account across applications.</span></span> <span data-ttu-id="ae029-106">このトピックでは、Commerce 販売時点管理 (POS) のサインイン エクスペリエンスを構成して、 Azure AD 認証を使用できるようにする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ae029-106">This topic explains how to configure the Commerce point of sale (POS) sign-in experience to use Azure AD authentication.</span></span>
+<span data-ttu-id="42609-105">Microsoft Azure、Microsoft 365、および Microsoft Teams など、他の Microsoft クラウド サービスと共に Dynamics 365 Commerce を使用している小売業者は、通常、アプリケーション間での安全でシームレスなサインイン エクスペリエンスのため、ユーザー資格情報の集中管理に Azure AD を使用します。</span><span class="sxs-lookup"><span data-stu-id="42609-105">Retailers who use Dynamics 365 Commerce along with other Microsoft cloud services such as Microsoft Azure, Microsoft 365, and Microsoft Teams typically want to use Azure AD for centralized management of user credentials for a secure and seamless sign-in experience across applications.</span></span> <span data-ttu-id="42609-106">Commerce POS に Azure AD 認証を使用するには、最初に Azure AD を Commerce 本社の認証方法として構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="42609-106">To use Azure AD authentication for Commerce POS, you must first configure Azure AD as the authentication method in Commerce headquarters.</span></span>
 
-## <a name="configure-azure-ad-authentication"></a><span data-ttu-id="ae029-107">Azure AD 認証の構成</span><span class="sxs-lookup"><span data-stu-id="ae029-107">Configure Azure AD authentication</span></span>
+## <a name="configure-pos-authentication-method"></a><span data-ttu-id="42609-107">POS 認証方法の構成</span><span class="sxs-lookup"><span data-stu-id="42609-107">Configure POS authentication method</span></span>
 
-<span data-ttu-id="ae029-108">店舗の POS サインインの認証方法として Azure AD を使用できるようにするには、店舗の機能プロファイルの設定を構成してから、それらの設定を POS クライアントに適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae029-108">To make Azure AD available as the authentication method for POS sign-in for a store, you must configure the settings of the store's functionality profile and then apply those setting to POS clients.</span></span>
+<span data-ttu-id="42609-108">Commerce 本社の POS 認証方法を構成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="42609-108">To configure the POS authentication method in Commerce headquarters, follow these steps.</span></span>
+    
+1. <span data-ttu-id="42609-109">**Retail と Commerce \> チャネル設定 \> POS の設定 \> POS プロファイル \> 機能プロファイル** の順に移動し、機能プロファイルを選択して変更します。</span><span class="sxs-lookup"><span data-stu-id="42609-109">Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, and select a functionality profile to change.</span></span>
+1. <span data-ttu-id="42609-110">**機能** クイックタブの **POS スタッフ ログオン** セクションで、**ログオン認証方法** ドロップダウン リストから目的の認証方法を選択します。</span><span class="sxs-lookup"><span data-stu-id="42609-110">In the **POS staff logon** section of the **Functions** FastTab, select a desired authentication method option from the **Logon authentication method** drop-down list.</span></span>
 
-<span data-ttu-id="ae029-109">機能プロファイルを構成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="ae029-109">To configure a functionality profile, follow these steps.</span></span>
+    <span data-ttu-id="42609-111">**ログオン認証方法** には 3 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="42609-111">The **Logon authentication method** has three options:</span></span>
+    
+    - <span data-ttu-id="42609-112">**個人 ID とパスワード** - この既定のオプションの場合、POS ユーザーが POS にサインインしてマネージャーの上書き機能にアクセスするために、個人 ID とパスワードを入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="42609-112">**Personnel ID and Password** - This default option requires POS users to enter a personnel ID and password to sign in to the POS and to access manager override functionality.</span></span>
+    - <span data-ttu-id="42609-113">**シングル サインオンなしの Azure AD** - このオプションの場合、POS ユーザーが Azure AD 資格情報を使用して POS にサインインし、マネージャー上書き機能にアクセスすることが必要です。</span><span class="sxs-lookup"><span data-stu-id="42609-113">**Azure AD without single sign-on** - This option requires POS users to use Azure AD credentials to sign in to the POS and access manager override functionality.</span></span> <span data-ttu-id="42609-114">POS クライアントが更新されるか再度開いた場合、POS ユーザーは再度サインインするために Azure AD 資格情報を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="42609-114">When the POS client is refreshed or reopened, the POS user must provide Azure AD credentials to sign in again.</span></span>
+    - <span data-ttu-id="42609-115">**シングル サインオン 付きの Azure AD** - このオプションを選択した場合、POS ユーザーは、他の Web アプリケーションによって使用されている有効な Azure AD 資格情報を使用してクラウド POS (CPOS) にサインインするか、または Windows にサインインしている Azure AD 資格情報を使用して Modern POS (MPOS) にサインインすることができます。</span><span class="sxs-lookup"><span data-stu-id="42609-115">**Azure AD with single sign-on** - When this option is selected, POS users are able to sign in to Cloud POS (CPOS) using active Azure AD credentials that are being used by other web applications in the same web browser, or sign in to Modern POS (MPOS) using Azure AD credentials signed in to Windows.</span></span> <span data-ttu-id="42609-116">両方の方法により、POS のサインイン画面で Azure AD 資格情報を入力する必要なくサインインできるようになります。</span><span class="sxs-lookup"><span data-stu-id="42609-116">Both methods allow sign-in without needing to enter Azure AD credentials on the POS sign-in screen.</span></span> <span data-ttu-id="42609-117">ただし、POS マネージャー上書き機能にアクセスするには、Azure AD 資格情報を使用してサインインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="42609-117">However, accessing the POS manager override functionality will still require sign-in using Azure AD credentials.</span></span>
 
-1. <span data-ttu-id="ae029-110">**Retail および Commerce** \> **チャネル設定** \> **POS 設定** \> **POS プロファイル** \> **機能プロファイル** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ae029-110">Go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profiles** \> **Functionality profiles**.</span></span>
-1. <span data-ttu-id="ae029-111">変更する機能プロファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="ae029-111">Select the functionality profile to change.</span></span>
-1. <span data-ttu-id="ae029-112">**関数** クイック タブの、**POS スタッフ ログオン** セクションで、**ログオン認証方法** フィールドの値を **従業員 ID とパスワード** から **Azure Active Directory** に変更します。</span><span class="sxs-lookup"><span data-stu-id="ae029-112">On the **Functions** FastTab, in the **POS staff logon** section, change the value of the **Logon Authentication Method** field from **Personnel ID and Password** to **Azure Active Directory**.</span></span>
-
-<span data-ttu-id="ae029-113">既定では、すべての機能プロファイルは、POS 認証方法として **従業員 ID とパスワード** を使用します。</span><span class="sxs-lookup"><span data-stu-id="ae029-113">By default, all functionality profiles use **Personnel ID and Password** as the POS authentication method.</span></span> <span data-ttu-id="ae029-114">したがって、Azure AD を使用する場合は、**ログオン認証方法** フィールドの値を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae029-114">Therefore, you must change the value of the **Logon Authentication Method** field if you want to use Azure AD.</span></span> <span data-ttu-id="ae029-115">選択した機能プロファイルにリンクされているすべての小売用店舗は、この変更によって影響を受けます。</span><span class="sxs-lookup"><span data-stu-id="ae029-115">Every retail store that is linked to the selected functionality profile will be affected by this change.</span></span>
-
-<span data-ttu-id="ae029-116">POS クライアントにこの設定を適用するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="ae029-116">To apply the settings to POS clients, follow these steps.</span></span>
-
-1. <span data-ttu-id="ae029-117">**Retail と Commerce** \> **Retail と Commerce IT** \> **配送スケジュール** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ae029-117">Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.</span></span>
-1. <span data-ttu-id="ae029-118">**1070** (**チャネル構成**) 配布スケジュールを実行します。</span><span class="sxs-lookup"><span data-stu-id="ae029-118">Run the **1070** (**Channel configuration**) distribution schedule.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="ae029-119">Azure AD 認証にはインターネット接続が必要です。</span><span class="sxs-lookup"><span data-stu-id="ae029-119">Azure AD authentication requires an internet connection.</span></span> <span data-ttu-id="ae029-120">POS がオフライン モードの場合は機能しません。</span><span class="sxs-lookup"><span data-stu-id="ae029-120">It won't work when POS is in offline mode.</span></span>
-> 
-> <span data-ttu-id="ae029-121">現時点では、**マネージャー優先** 機能は、 Azure AD の認証方法としてサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ae029-121">Currently, the **Manager override** function doesn't support Azure AD as an authentication method.</span></span> <span data-ttu-id="ae029-122">Azure AD が POS サインインの認証方法として構成されている場合でも、オペレーター ID とパスワードを入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae029-122">An operator ID and password are required even if Azure AD is configured as the authentication method for POS sign-in.</span></span>
-
-## <a name="associate-an-azure-ad-account-with-a-worker"></a><span data-ttu-id="ae029-123">Azure AD アカウントと作業者の関連付け</span><span class="sxs-lookup"><span data-stu-id="ae029-123">Associate an Azure AD account with a worker</span></span>
-
-<span data-ttu-id="ae029-124">店舗の作業者が POS アプリケーションへのサインインに Azure AD アカウントを使用する前に、Azure AD アカウントがその作業者に関連付けられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae029-124">Before a store worker can use an Azure AD account to sign in to the POS application, the Azure AD account must be associated with that worker.</span></span>
-
-<span data-ttu-id="ae029-125">Azure AD アカウントを作業者に関連付けるには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="ae029-125">To associate an Azure AD account with a worker, follow these steps.</span></span>
-
-1. <span data-ttu-id="ae029-126">**Retail と Commerce** \> **従業員** \> **作業者** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ae029-126">Go to **Retail and Commerce** \> **Employees** \> **Workers**.</span></span>
-1. <span data-ttu-id="ae029-127">作業者の詳細ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="ae029-127">Open the details page for a worker.</span></span>
-1. <span data-ttu-id="ae029-128">アクション ウィンドウ、**Commerce** タブの、**外部 ID** グループで、**既存の ID の関連付け** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae029-128">On the Action Pane, on the **Commerce** tab, in the **External identity** group, select **Associate existing identity**.</span></span>
-1. <span data-ttu-id="ae029-129">**既存の外部 ID を使用する** ダイアログ ボックスで、**電子メールで検索** を選択し、Azure AD 電子メール アドレスを入力して、**検索** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae029-129">In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**.</span></span>
-1. <span data-ttu-id="ae029-130">返された Azure AD アカウントを選択し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae029-130">Select the Azure AD account that is returned, and then select **OK**.</span></span>
-
-<span data-ttu-id="ae029-131">**Commerce** タブの **エイリアス**、**UPN**、および **外部サブ ID** フィールドが入力されます。</span><span class="sxs-lookup"><span data-stu-id="ae029-131">The **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.</span></span>
+1. <span data-ttu-id="42609-118">**Retail と Commerce > Retail および Commerce IT > 配送スケジュール** に移動し、**1070 (チャネル コンフィギュレーション)** ジョブを実行して、最新の機能プロファイル設定を POS クライアントに同期させます。</span><span class="sxs-lookup"><span data-stu-id="42609-118">Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule** and run the **1070 (Channel configuration)** job to synchronize the latest functionality profile settings to POS clients.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ae029-132">従業員レコードが更新された後は、たとえば、新しい Azure AD のアカウントが関連付けられている場合、パスワードが変更された場合、または従業員のアドレス帳が更新された場合は、**1060** **(スタッフ)** 配送スケジュールを実行して、最新のスタッフ情報をチャンネルに同期することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="ae029-132">After a worker record is updated, for example if a new Azure AD account is associated, a password is changed, or an employee address book is updated, it’s recommended that you run **1060** (**Staff**) distribution schedule to synchronize the latest staff information to the channel.</span></span> <span data-ttu-id="ae029-133">このようにして、POS アプリケーションはユーザーの認証および承認のチェックに使用する正しいデータを取得できます。</span><span class="sxs-lookup"><span data-stu-id="ae029-133">That way, the POS application can fetch the correct data for user authentication and authorization check.</span></span>
+> - <span data-ttu-id="42609-119">**シングル サインオンなしの Azure AD** の認証方法オプションは、Commerce バージョン 10.0.18 以前の **Azure Active Directory** オプションに代わります。</span><span class="sxs-lookup"><span data-stu-id="42609-119">The **Azure AD without single sign-on** authentication method option replaces the **Azure Active Directory** option in Commerce version 10.0.18 and earlier.</span></span>
+> - <span data-ttu-id="42609-120">Azure AD 認証には有効なインターネット接続が必要で、POS がオフラインの場合は機能しません。</span><span class="sxs-lookup"><span data-stu-id="42609-120">Azure AD authentication requires an active internet connection, and won't function when the POS is offline.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ae029-134">追加リソース</span><span class="sxs-lookup"><span data-stu-id="ae029-134">Additional resources</span></span>
+## <a name="associate-azure-ad-accounts-with-pos-users"></a><span data-ttu-id="42609-121">Azure AD アカウントを POS ユーザーに関連付ける</span><span class="sxs-lookup"><span data-stu-id="42609-121">Associate Azure AD accounts with POS users</span></span>
 
-[<span data-ttu-id="ae029-135">MPOS および Cloud POS の拡張ログオン機能の設定</span><span class="sxs-lookup"><span data-stu-id="ae029-135">Set up extended logon functionality for MPOS and Cloud POS</span></span>](extended-logon.md)
+<span data-ttu-id="42609-122">Azure AD を POS 認証方法として使用するには、Azure AD アカウントを Commerce 本社の POS ユーザーと関連付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="42609-122">To use Azure AD as the POS authentication method, you must associate Azure AD accounts with POS users in Commerce headquarters.</span></span> 
 
-[<span data-ttu-id="ae029-136">小売機能プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="ae029-136">Create a retail functionality profile</span></span>](retail-functionality-profile.md)
+<span data-ttu-id="42609-123">Azure AD アカウントを Commerce 本社の POS ユーザーに関連付けるには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="42609-123">To associate Azure AD accounts with POS users in Commerce headquarters, follow these steps.</span></span>
+    
+1. <span data-ttu-id="42609-124">**Retail と Commerce > 従業員 > 作業者** に移動し、作業者レコードを開きます。</span><span class="sxs-lookup"><span data-stu-id="42609-124">Go to **Retail and Commerce > Employees > Workers** and open a worker record.</span></span>
+1. <span data-ttu-id="42609-125">アクション ウィンドウで **Commerce** タブを選択し、**外部 ID** の下で、**既存の ID の関連付け** を選択します。</span><span class="sxs-lookup"><span data-stu-id="42609-125">On the Action Pane, select the **Commerce** tab, then under **External identity** select **Associate existing identity**.</span></span> 
+1. <span data-ttu-id="42609-126">**既存の外部 ID を使用する** ダイアログ ボックスで、**電子メールで検索** を選択し、Azure AD 電子メール アドレスを入力して、**検索** を選択します。</span><span class="sxs-lookup"><span data-stu-id="42609-126">In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**.</span></span>
+1. <span data-ttu-id="42609-127">返された Azure AD アカウントを選択し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="42609-127">Select the Azure AD account that is returned, then select **OK**.</span></span>
 
-[<span data-ttu-id="ae029-137">作業者のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="ae029-137">Configure a worker</span></span>](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+<span data-ttu-id="42609-128">上記の構成手順の後、**Commerce** タブの **エイリアス**、**UPN**、および **外部サブ ID** フィールドが入力されます。</span><span class="sxs-lookup"><span data-stu-id="42609-128">After the configuration steps above, the **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.</span></span>
+
+<span data-ttu-id="42609-129">**Retail と Commerce > Retail と Commerce IT > 配送スケジュール** で **1060 (スタッフ)** ジョブを実行して、最新の POS ユーザーと Azure AD アカント データをチャネルに同期させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="42609-129">You must run the **1060 (Staff)** job in **Retail and Commerce > Retail and Commerce IT > Distribution schedule** to synchronize the latest POS user and Azure AD account data to the channel.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="42609-130">ベスト プラクティスとして、パスワード、POS のアクセス許可、関連付けられている Azure AD アカウント、または従業員のアドレス帳などの作業者情報が Commerce 本社に更新された後、**1060 (スタッフ)** ジョブを実行して、最新の作業者情報とチャネルを同期することを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="42609-130">As a best practice, after worker information such as password, POS permission, associated Azure AD account, or employee address book is updated in Commerce headquarters, it is highly recommended to run the **1060 (Staff)** job to synchronize the latest worker information to the channel.</span></span> <span data-ttu-id="42609-131">POS クライアントはユーザーの認証および承認のチェックに使用する正しいデータを取得できます。</span><span class="sxs-lookup"><span data-stu-id="42609-131">The POS client can then fetch the correct data for user authentication and authorization checks.</span></span>
+
+## <a name="pos-lock-register-and-sign-out-with-azure-ad-authentication"></a><span data-ttu-id="42609-132">Azure AD 認証を使用した POS のレジスター ロックとサインアウト</span><span class="sxs-lookup"><span data-stu-id="42609-132">POS lock register and sign-out with Azure AD authentication</span></span>
+
+<span data-ttu-id="42609-133">POS が Azure AD 認証方法を使用するように構成されている場合、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="42609-133">The following occurs when POS is configured to use the Azure AD authentication method:</span></span>
+
+- <span data-ttu-id="42609-134">POS アプリケーションで、**レジスターのロック** 機能は使用できません。</span><span class="sxs-lookup"><span data-stu-id="42609-134">The **Lock register** function will not be available in the POS application.</span></span> 
+- <span data-ttu-id="42609-135">**自動ロック** 機能は、**自動ログオフ** 機能と同じように動作します。</span><span class="sxs-lookup"><span data-stu-id="42609-135">The **Automatically lock** function will behave the same as the **Automatically logoff** function.</span></span>
+- <span data-ttu-id="42609-136">POS ユーザーが **ログオフ** を選択すると、シングル サインインが有効になっているかどうかにかかわらず、次回 POS を起動する場合にユーザーは Azure AD 資格情報を使用してサインインするよう求められます。</span><span class="sxs-lookup"><span data-stu-id="42609-136">If the POS user selects **Log off**, the user will be asked to sign in with Azure AD credentials the next time the POS launches, regardless of whether single sign-in is enabled.</span></span>
+
+## <a name="manager-override-functionality-with-azure-ad-authentication"></a><span data-ttu-id="42609-137">Azure AD 認証を使用したマネージャー上書き機能</span><span class="sxs-lookup"><span data-stu-id="42609-137">Manager override functionality with Azure AD authentication</span></span>
+
+<span data-ttu-id="42609-138">POS が Azure AD 認証を使用するように構成されている場合、マネージャーの上書き機能は、マネージャーのユーザーの Azure AD 資格情報を求めるダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="42609-138">When the POS is configured to use Azure AD authentication, the manager override functionality will open a dialog box that prompts for the manager user's Azure AD credentials.</span></span> <span data-ttu-id="42609-139">マネージャーのサインインが承認されると、マネージャーの Azure AD 資格情報が削除され、以前のユーザーの Azure AD 資格情報がそれ以降の POS 操作に使用されます。</span><span class="sxs-lookup"><span data-stu-id="42609-139">After manager sign-in is approved, the manager's Azure AD credentials will be dropped and the previous user's Azure AD credentials will be used for subsequent POS operations.</span></span>
+
+> [!NOTE]
+> - <span data-ttu-id="42609-140">Commerce のバージョン 10.0.18 以前では、マネージャーの上書き機能は Azure AD をサポートしません。</span><span class="sxs-lookup"><span data-stu-id="42609-140">In Commerce versions 10.0.18 and earlier, the manager override function does not support Azure AD.</span></span> <span data-ttu-id="42609-141">POS が Azure AD 認証方法を使用するよう構成されている場合でも、個人 ID とパスワードを入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="42609-141">A personnel ID and password are required even if the POS is configured to use the Azure AD authentication method.</span></span>
+> - <span data-ttu-id="42609-142">Apple iOS デバイス上の Safari Web ブラウザーで CPOS を使用する場合、Azure AD 認証でマネージャー上書き機能を使用するには、Safari の設定の **ポップアップをブロック** をオフにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="42609-142">When using CPOS with the Safari web browser on an Apple iOS device, you must first turn off **Block Pop-ups** in Safari settings for the manager override functionality to work with Azure AD authentication.</span></span> 
+
+## <a name="security-best-practices-for-azure-ad-based-pos-authentication-on-shared-devices"></a><span data-ttu-id="42609-143">共有デバイスでの Azure AD ベースの POS 認証のセキュリティ ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="42609-143">Security best practices for Azure AD-based POS authentication on shared devices</span></span>
+
+<span data-ttu-id="42609-144">多くの小売業者は、複数のユーザーが共有の物理デバイスから POS アプリケーションにアクセスすることが必要な方法で小売店舗の環境を設定します。</span><span class="sxs-lookup"><span data-stu-id="42609-144">Many retailers set up their retail store environment in a way that multiple users need to access the POS application from a shared physical device.</span></span> <span data-ttu-id="42609-145">このコンテキストでは、シングル サインインは便利でシームレスな認証エクスペリエンスを提供しますが、現在の POS ユーザーが、別のユーザーの資格情報が使用されて POS のトランザクションまたは操作が実行されていることを認識しないことがあるというセキュリティ ループホールが作成されることがあります。</span><span class="sxs-lookup"><span data-stu-id="42609-145">In that context, while single sign-in provides a convenient and seamless authentication experience, it may also create a security loophole where the current POS user may not realize that another user's credentials are being used to perform transactions or operations in the POS.</span></span> <span data-ttu-id="42609-146">Azure AD 認証方法を使用するように POS を構成する前に、セキュリティ ポリシーと共有デバイスのサインイン設定を確認して、最も適合するオプションを決定することを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="42609-146">Before you configure the POS to use the Azure AD authentication method, it is highly recommended to review your security policy and the shared device's sign-in settings to decide which option is the best fit.</span></span>
+
+- <span data-ttu-id="42609-147">小売環境で物理的なデバイスのサインインに共有アカウント (ローカル アカウントなど) を使用する場合は、**シングル サインオンなしの Azure AD** オプションを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="42609-147">If your retail environment uses a shared account (for example, a local account) for physical device sign-in, it's recommended to use the **Azure AD without single sign-on** option.</span></span> <span data-ttu-id="42609-148">これにより、POS にサインインするのに各 POS ユーザーは明示的に Azure AD 資格情報を提供することになります。</span><span class="sxs-lookup"><span data-stu-id="42609-148">This ensures that each POS user explicitly provides Azure AD credentials to sign in to the POS.</span></span>
+- <span data-ttu-id="42609-149">小売環境で従業員が POS および物理的なホスティング デバイスにサインインするのに自分の Azure AD アカウントを使用する必要がある場合、**シングル サインオン 付きの Azure AD** オプションを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="42609-149">If your retail environment requires employees to use their own Azure AD accounts to sign in to the POS and its hosting physical device, it's recommended to use the **Azure AD with single sign-on** option.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="42609-150">追加リソース</span><span class="sxs-lookup"><span data-stu-id="42609-150">Additional resources</span></span>
+
+[<span data-ttu-id="42609-151">作業者のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="42609-151">Configure a worker</span></span>](tasks/worker.md)
+
+[<span data-ttu-id="42609-152">小売機能プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="42609-152">Create a retail functionality profile</span></span>](retail-functionality-profile.md)
+
+
+[<span data-ttu-id="42609-153">MPOS および Cloud POS の拡張ログオン機能の設定</span><span class="sxs-lookup"><span data-stu-id="42609-153">Set up extended logon functionality for MPOS and Cloud POS</span></span>](extended-logon.md)
+
+[<span data-ttu-id="42609-154">共有環境におけるクラウド POS のセキュリティ ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="42609-154">Security best practices for Cloud POS in shared environments</span></span>](dev-itpro/secure-retail-cloud-pos.md)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

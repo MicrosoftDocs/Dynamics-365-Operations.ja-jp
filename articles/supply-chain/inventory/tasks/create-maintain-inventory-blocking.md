@@ -1,8 +1,8 @@
 ---
 title: 在庫ブロックの作成および管理
-description: この手順では、在庫ブロックを使用することによって、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。
+description: このトピックでは、在庫ブロックを使用して、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。
 author: perlynne
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,41 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 319ae6da1e0e504316b2d96001d582e835cef20c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9aa38ca52da577fff258bb330922ad7f4044330
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834004"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956161"
 ---
-# <a name="create-and-maintain-an-inventory-blocking"></a><span data-ttu-id="ae58a-103">在庫ブロックの作成および管理</span><span class="sxs-lookup"><span data-stu-id="ae58a-103">Create and maintain an inventory blocking</span></span>
+# <a name="create-and-maintain-an-inventory-blocking"></a><span data-ttu-id="4fcf1-103">在庫ブロックの作成および管理</span><span class="sxs-lookup"><span data-stu-id="4fcf1-103">Create and maintain an inventory blocking</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ae58a-104">この手順では、在庫ブロックを使用することによって、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-104">This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.</span></span> <span data-ttu-id="ae58a-105">表示されているサンプル値を使用して、デモ データの会社 USMF の手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="ae58a-105">You can run the procedure in demo data company USMF using the example values that are shown.</span></span> <span data-ttu-id="ae58a-106">この手順を開始する前に、使用可能な現物手持在庫の品目を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae58a-106">You need to have an item with physical on-hand inventory available before you start this procedure.</span></span>
+<span data-ttu-id="4fcf1-104">このトピックでは、在庫ブロックを使用して、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-104">This topic describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents.</span></span> <span data-ttu-id="4fcf1-105">このトピックの手順を開始する前に、使用可能な現物手持在庫の品目が必要です。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-105">Before you start the procedures in this topic, you must have an item that physical on-hand inventory is available for.</span></span>
 
+## <a name="block-inventory"></a><span data-ttu-id="4fcf1-106">在庫のブロック</span><span class="sxs-lookup"><span data-stu-id="4fcf1-106">Block inventory</span></span>
 
-## <a name="create-an-inventory-blocking"></a><span data-ttu-id="ae58a-107">在庫ブロックの作成</span><span class="sxs-lookup"><span data-stu-id="ae58a-107">Create an inventory blocking</span></span>
-1. <span data-ttu-id="ae58a-108">**ナビゲーション ウィンドウ** で、**モジュール > 在庫管理 > 定期処理 > 在庫ブロック** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-108">In the **Navigation pane**, go to **Modules > Inventory management > Periodic tasks > Inventory blocking**.</span></span>
-2. <span data-ttu-id="ae58a-109">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae58a-109">Click **New**.</span></span>
-3. <span data-ttu-id="ae58a-110">**品目番号** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="ae58a-110">In the **Item number** field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="ae58a-111">一覧で、目的の品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-111">In the list, select the item you want to choose.</span></span> <span data-ttu-id="ae58a-112">ブロックする現物手持在庫の品目番号を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-112">Select an item number with physical on-hand inventory that you want to block.</span></span> <span data-ttu-id="ae58a-113">USMF を使用している場合、品目 M9201 を選択できます。</span><span class="sxs-lookup"><span data-stu-id="ae58a-113">If you're using USMF you can select item M9201.</span></span>  
-5. <span data-ttu-id="ae58a-114">**数量** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-114">In the **Quantity** field, enter a number.</span></span> <span data-ttu-id="ae58a-115">品目 M9201 を使用する場合、200 未満を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae58a-115">If you're using item M9201, you need to select less than 200.</span></span>
-6. <span data-ttu-id="ae58a-116">**在庫分析コード** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-116">Expand the **Inventory dimensions** fastTab.</span></span>
-7. <span data-ttu-id="ae58a-117">**倉庫** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="ae58a-117">In the **Warehouse** field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="ae58a-118">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-118">In the list, find and select the desired record.</span></span> <span data-ttu-id="ae58a-119">品目 M9201 を使用すると、倉庫 51 を選択できます。</span><span class="sxs-lookup"><span data-stu-id="ae58a-119">If you're using item M9201, you can select warehouse 51.</span></span>  
-9. <span data-ttu-id="ae58a-120">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae58a-120">Click **Save**.</span></span>
+<span data-ttu-id="4fcf1-107">在庫がブロックされるように在庫ブロック レコードを作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-107">To create an inventory blocking record so that inventory is blocked, follow these steps.</span></span>
 
-## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="ae58a-121">在庫ブロックの条件の更新</span><span class="sxs-lookup"><span data-stu-id="ae58a-121">Update the conditions of the inventory blocking</span></span>
-1. <span data-ttu-id="ae58a-122">**一般** クイック タブの **数量** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-122">In the **General** fastTab, in the **Quantity** field, enter a number.</span></span> <span data-ttu-id="ae58a-123">[在庫数量] フィールドを更新し、ブロックする数量を反映します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-123">Update the inventory quantity field to reflect the quantity to block.</span></span>  
-2. <span data-ttu-id="ae58a-124">**予定日** フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="ae58a-124">In the **Expected date** field, enter a date.</span></span> <span data-ttu-id="ae58a-125">予定日を割り当てることにより、ブロックされた在庫の引当可能日を指定することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="ae58a-125">You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date.</span></span> <span data-ttu-id="ae58a-126">入庫予定オプションが在庫ブロックに対して選択されている場合、既定通り、ブロックを手動で作成する場合、この日付は予想されるトランザクションに表示されます。</span><span class="sxs-lookup"><span data-stu-id="ae58a-126">If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.</span></span>  
-3. <span data-ttu-id="ae58a-127">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae58a-127">Click **Save**.</span></span>
+1. <span data-ttu-id="4fcf1-108">**在庫管理\>定期処理タスク\>在庫ブロック** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-108">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="4fcf1-109">アクション ウィンドウで、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-109">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="4fcf1-110">新しいブロック レコードのヘッダーで、**品目番号** フィールドにブロックする品目を設定し、説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-110">On the header of the new blocking record, set the **Item number** field to the item that you want to block, and enter a description.</span></span>
+1. <span data-ttu-id="4fcf1-111">**全般** クイック タブの **数量** フィールドに、ブロックする品目の数を入力します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-111">On the **General** FastTab, in the **Quantity** field, enter the number of items to block.</span></span>
+1. <span data-ttu-id="4fcf1-112">**在庫分析コード** クイック タブで、ブロックする品目が現在保管されているサイトと倉庫を指定します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-112">On the **Inventory dimensions** FastTab, specify the site and warehouse where the items that you want to block are currently located.</span></span>
+1. <span data-ttu-id="4fcf1-113">アクション ウィンドウで、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-113">On the Action Pane, select **Save**.</span></span>
 
-## <a name="remove-the-inventory-blocking"></a><span data-ttu-id="ae58a-128">在庫ブロックの削除</span><span class="sxs-lookup"><span data-stu-id="ae58a-128">Remove the inventory blocking</span></span>
-1. <span data-ttu-id="ae58a-129">**アクション ウィンドウ** で **削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae58a-129">On the **Action Pane**, click **Delete**.</span></span>
-2. <span data-ttu-id="ae58a-130">**はい** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae58a-130">Click **Yes**.</span></span>
-3. <span data-ttu-id="ae58a-131">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ae58a-131">Close the page.</span></span>
+## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="4fcf1-114">在庫ブロックの条件の更新</span><span class="sxs-lookup"><span data-stu-id="4fcf1-114">Update the conditions of the inventory blocking</span></span>
 
+<span data-ttu-id="4fcf1-115">在庫ブロック レコードを更新するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-115">To update an inventory blocking record, follow these steps.</span></span>
 
+1. <span data-ttu-id="4fcf1-116">**在庫管理\>定期処理タスク\>在庫ブロック** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-116">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="4fcf1-117">一覧ペインで、関連するブロック レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-117">In the list pane, select the relevant blocking record.</span></span>
+1. <span data-ttu-id="4fcf1-118">必要に応じてレコードを編集します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-118">Edit the record as required.</span></span> <span data-ttu-id="4fcf1-119">たとえば、**予定日** フィールドの値を変更して、ブロックされた在庫の引当可能日を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-119">For example, you might change the value of the **Expected date** field to indicate when the blocked inventory is expected to become available for reservation.</span></span> <span data-ttu-id="4fcf1-120">**入庫予定** オプションが選択されている場合、予想されるトランザクションに日付が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-120">If the **Expected receipts** option is selected, the date will appear on the expected transaction.</span></span> <span data-ttu-id="4fcf1-121">(ブロック レコードを手動で作成する場合、既定で **入庫予定** オプションが選択されます。)</span><span class="sxs-lookup"><span data-stu-id="4fcf1-121">(The **Expected receipts** option is selected by default when you manually create a blocking record.)</span></span>
+1. <span data-ttu-id="4fcf1-122">アクション ウィンドウで、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-122">On the Action Pane, select **Save**.</span></span>
+
+## <a name="unblock-inventory"></a><span data-ttu-id="4fcf1-123">在庫のブロック解除</span><span class="sxs-lookup"><span data-stu-id="4fcf1-123">Unblock inventory</span></span>
+
+<span data-ttu-id="4fcf1-124">在庫がブロック解除されるように在庫ブロック レコードを削除するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-124">To remove an inventory blocking record so that inventory is unblocked, follow these steps.</span></span>
+
+1. <span data-ttu-id="4fcf1-125">**在庫管理\>定期処理タスク\>在庫ブロック** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-125">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="4fcf1-126">一覧ペインで、関連するブロック レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-126">In the list pane, select the relevant blocking record.</span></span>
+1. <span data-ttu-id="4fcf1-127">アクション ウィンドウで **削除** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-127">On the Action Pane, select **Delete**.</span></span>
+1. <span data-ttu-id="4fcf1-128">操作を確認するように求められます。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-128">You're prompted to confirm the operation.</span></span> <span data-ttu-id="4fcf1-129">**はい** を選択して続行します。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-129">Select **Yes** to continue.</span></span>
+1. <span data-ttu-id="4fcf1-130">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4fcf1-130">Close the page.</span></span>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

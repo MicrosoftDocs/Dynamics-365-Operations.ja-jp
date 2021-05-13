@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance バージョン 10.0.8 (2020 年 2 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 Finance バージョン 10.0.8 の新機能または変更された機能について説明します。
+description: このトピックでは Dynamics 365 Finance バージョン 10.0.8 の新機能または変更された機能について説明します。
 author: roschlom
 ms.date: 01/23/2020
 ms.topic: article
@@ -14,58 +14,58 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59ca2544571dc4a84ab5a73292bab273f18d5126
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4109d88b3f8fbef7a04c9a2d461602e3662d3b3d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836881"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893884"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-finance-version-1008-february-2020"></a><span data-ttu-id="d37be-103">Dynamics 365 Finance バージョン 10.0.8 (2020 年 2 月) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="d37be-103">What's new or changed in Dynamics 365 Finance version 10.0.8 (February 2020)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-finance-version-1008-february-2020"></a><span data-ttu-id="17216-103">Dynamics 365 Finance バージョン 10.0.8 (2020 年 2 月) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="17216-103">What's new or changed in Dynamics 365 Finance version 10.0.8 (February 2020)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d37be-104">このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.8 の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="d37be-104">This topic lists features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.8.</span></span> <span data-ttu-id="d37be-105">このバージョンには 10.0.319 のビルド番号が含まれており、次のように使用できます。</span><span class="sxs-lookup"><span data-stu-id="d37be-105">This version has a build number of 10.0.319 and is available as follows:</span></span>
+<span data-ttu-id="17216-104">このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.8 の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="17216-104">This topic lists features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.8.</span></span> <span data-ttu-id="17216-105">このバージョンには 10.0.319 のビルド番号が含まれており、次のように使用できます。</span><span class="sxs-lookup"><span data-stu-id="17216-105">This version has a build number of 10.0.319 and is available as follows:</span></span>
 
-- <span data-ttu-id="d37be-106">**プレビュー リリース** 2019 年 12 月</span><span class="sxs-lookup"><span data-stu-id="d37be-106">**Preview release:** December 2019</span></span>
-- <span data-ttu-id="d37be-107">**一般提供 (自己更新):** 2020 年 1 月</span><span class="sxs-lookup"><span data-stu-id="d37be-107">**General availability (self-update):** January 2020</span></span>
-- <span data-ttu-id="d37be-108">**自動更新:** 2020 年 2 月</span><span class="sxs-lookup"><span data-stu-id="d37be-108">**Auto-update:** February 2020</span></span>
+- <span data-ttu-id="17216-106">**プレビュー リリース** 2019 年 12 月</span><span class="sxs-lookup"><span data-stu-id="17216-106">**Preview release:** December 2019</span></span>
+- <span data-ttu-id="17216-107">**一般提供 (自己更新):** 2020 年 1 月</span><span class="sxs-lookup"><span data-stu-id="17216-107">**General availability (self-update):** January 2020</span></span>
+- <span data-ttu-id="17216-108">**自動更新:** 2020 年 2 月</span><span class="sxs-lookup"><span data-stu-id="17216-108">**Auto-update:** February 2020</span></span>
 
-<span data-ttu-id="d37be-109">このリリースでは次の機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d37be-109">The following features are included in this release.</span></span> <span data-ttu-id="d37be-110">機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。</span><span class="sxs-lookup"><span data-stu-id="d37be-110">The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site.</span></span> 
+<span data-ttu-id="17216-109">このリリースでは次の機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17216-109">The following features are included in this release.</span></span> <span data-ttu-id="17216-110">機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。</span><span class="sxs-lookup"><span data-stu-id="17216-110">The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site.</span></span> 
 
-- [<span data-ttu-id="d37be-111">財務諸表の保有ポリシー</span><span class="sxs-lookup"><span data-stu-id="d37be-111">Financial report retention policies</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
+- [<span data-ttu-id="17216-111">財務諸表の保有ポリシー</span><span class="sxs-lookup"><span data-stu-id="17216-111">Financial report retention policies</span></span>](/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
 
-- [<span data-ttu-id="d37be-112">為替換算を使用する場合の財務レポートの利益剰余金計算の強化</span><span class="sxs-lookup"><span data-stu-id="d37be-112">Retained earnings calculation enhancements for financial reporting when using currency translation</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
+- [<span data-ttu-id="17216-112">為替換算を使用する場合の財務レポートの利益剰余金計算の強化</span><span class="sxs-lookup"><span data-stu-id="17216-112">Retained earnings calculation enhancements for financial reporting when using currency translation</span></span>](/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
 
-- [<span data-ttu-id="d37be-113">購買契約の拡張</span><span class="sxs-lookup"><span data-stu-id="d37be-113">Purchase agreement enhancements</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
+- [<span data-ttu-id="17216-113">購買契約の拡張</span><span class="sxs-lookup"><span data-stu-id="17216-113">Purchase agreement enhancements</span></span>](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
 
-## <a name="additional-resources"></a><span data-ttu-id="d37be-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="d37be-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="17216-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="17216-114">Additional resources</span></span>
 
-### <a name="platform-update-32"></a><span data-ttu-id="d37be-115">プラットフォーム update 32</span><span class="sxs-lookup"><span data-stu-id="d37be-115">Platform update 32</span></span>
+### <a name="platform-update-32"></a><span data-ttu-id="17216-115">プラットフォーム update 32</span><span class="sxs-lookup"><span data-stu-id="17216-115">Platform update 32</span></span>
 
-<span data-ttu-id="d37be-116">Microsoft Dynamics 365 Finance 10.0.8 には、プラットフォーム更新プログラム 32 が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d37be-116">Microsoft Dynamics 365 Finance 10.0.8 includes Platform update 32.</span></span> <span data-ttu-id="d37be-117">詳細については、[プラットフォームアップデート 32 のプレビュー機能](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d37be-117">To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).</span></span>
-
-
-### <a name="bug-fixes"></a><span data-ttu-id="d37be-118">バグ修正</span><span class="sxs-lookup"><span data-stu-id="d37be-118">Bug fixes</span></span> 
-<span data-ttu-id="d37be-119">10.0.7 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d37be-119">For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).</span></span>
+<span data-ttu-id="17216-116">Microsoft Dynamics 365 Finance 10.0.8 には、プラットフォーム更新プログラム 32 が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17216-116">Microsoft Dynamics 365 Finance 10.0.8 includes Platform update 32.</span></span> <span data-ttu-id="17216-117">詳細については、[プラットフォームアップデート 32 のプレビュー機能](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17216-117">To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).</span></span>
 
 
-### <a name="dynamics-365-2019-release-wave-2-plan"></a><span data-ttu-id="d37be-120">Dynamics 365: 2019 リリースのウェーブ 2 プラン</span><span class="sxs-lookup"><span data-stu-id="d37be-120">Dynamics 365: 2019 release wave 2 plan</span></span>
+### <a name="bug-fixes"></a><span data-ttu-id="17216-118">バグ修正</span><span class="sxs-lookup"><span data-stu-id="17216-118">Bug fixes</span></span> 
+<span data-ttu-id="17216-119">10.0.7 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17216-119">For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).</span></span>
 
-<span data-ttu-id="d37be-121">当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?</span><span class="sxs-lookup"><span data-stu-id="d37be-121">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span>
 
-<span data-ttu-id="d37be-122">[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="d37be-122">Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index).</span></span> <span data-ttu-id="d37be-123">あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。</span><span class="sxs-lookup"><span data-stu-id="d37be-123">We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</span></span>
+### <a name="dynamics-365-2019-release-wave-2-plan"></a><span data-ttu-id="17216-120">Dynamics 365: 2019 リリースのウェーブ 2 プラン</span><span class="sxs-lookup"><span data-stu-id="17216-120">Dynamics 365: 2019 release wave 2 plan</span></span>
 
-### <a name="removed-and-deprecated-features"></a><span data-ttu-id="d37be-124">削除済みおよび非推奨の機能</span><span class="sxs-lookup"><span data-stu-id="d37be-124">Removed and deprecated features</span></span>
+<span data-ttu-id="17216-121">当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?</span><span class="sxs-lookup"><span data-stu-id="17216-121">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span>
 
-<span data-ttu-id="d37be-125">[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="d37be-125">The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</span></span>
+<span data-ttu-id="17216-122">[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/index) をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="17216-122">Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/index).</span></span> <span data-ttu-id="17216-123">あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。</span><span class="sxs-lookup"><span data-stu-id="17216-123">We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</span></span>
 
-- <span data-ttu-id="d37be-126">*削除された* 機能は製品では使用できません。</span><span class="sxs-lookup"><span data-stu-id="d37be-126">A *removed* feature is no longer available in the product.</span></span>
-- <span data-ttu-id="d37be-127">*削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d37be-127">A *deprecated* feature is not in active development and may be removed in a future update.</span></span>
+### <a name="removed-and-deprecated-features"></a><span data-ttu-id="17216-124">削除済みおよび非推奨の機能</span><span class="sxs-lookup"><span data-stu-id="17216-124">Removed and deprecated features</span></span>
 
-<span data-ttu-id="d37be-128">製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。</span><span class="sxs-lookup"><span data-stu-id="d37be-128">Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.</span></span>
+<span data-ttu-id="17216-125">[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="17216-125">The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</span></span>
 
-<span data-ttu-id="d37be-129">コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。</span><span class="sxs-lookup"><span data-stu-id="d37be-129">For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months.</span></span> <span data-ttu-id="d37be-130">通常、これらはコンパイラに加える必要がある機能の更新です。</span><span class="sxs-lookup"><span data-stu-id="d37be-130">Typically, these are functional updates that need to be made to the compiler.</span></span>
+- <span data-ttu-id="17216-126">*削除された* 機能は製品では使用できません。</span><span class="sxs-lookup"><span data-stu-id="17216-126">A *removed* feature is no longer available in the product.</span></span>
+- <span data-ttu-id="17216-127">*削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="17216-127">A *deprecated* feature is not in active development and may be removed in a future update.</span></span>
+
+<span data-ttu-id="17216-128">製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。</span><span class="sxs-lookup"><span data-stu-id="17216-128">Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.</span></span>
+
+<span data-ttu-id="17216-129">コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。</span><span class="sxs-lookup"><span data-stu-id="17216-129">For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months.</span></span> <span data-ttu-id="17216-130">通常、これらはコンパイラに加える必要がある機能の更新です。</span><span class="sxs-lookup"><span data-stu-id="17216-130">Typically, these are functional updates that need to be made to the compiler.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

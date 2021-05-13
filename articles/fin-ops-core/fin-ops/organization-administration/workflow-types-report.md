@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 22ffb4c7f927f9ee3c2c9b61ccf5f3e1b0575b0a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a5295984115cafc8544d2f2a2d12727853d616d7
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747121"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893486"
 ---
-# <a name="workflow-types-report"></a><span data-ttu-id="00686-103">ワークフロー タイプのレポート</span><span class="sxs-lookup"><span data-stu-id="00686-103">Workflow types report</span></span>
+# <a name="workflow-types-report"></a><span data-ttu-id="791dd-103">ワークフロー タイプのレポート</span><span class="sxs-lookup"><span data-stu-id="791dd-103">Workflow types report</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="00686-104">このトピックでは、使用可能なワークフロー タイプを一覧表示するレポートを示します。</span><span class="sxs-lookup"><span data-stu-id="00686-104">This topic points you to a report that lists the available workflow types.</span></span>
+<span data-ttu-id="791dd-104">このトピックでは、使用可能なワークフロー タイプを一覧表示するレポートを示します。</span><span class="sxs-lookup"><span data-stu-id="791dd-104">This topic points you to a report that lists the available workflow types.</span></span>
 
-<span data-ttu-id="00686-105">ワークフローを作成するには、最初に作成するワークフローの *タイプ* を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="00686-105">To create a workflow, you must first select the *type* of workflow that you want to create.</span></span> <span data-ttu-id="00686-106">たとえば、**購買要求明細行の確認** ワークフローを作成し、購買要求でだれが明細行品目を承認する必要があるかを定義する場合があります。</span><span class="sxs-lookup"><span data-stu-id="00686-106">For example, you may want to create a **Purchase requisition line review** workflow to define who must approve line items on purchase requisitions.</span></span> <span data-ttu-id="00686-107">ワークフローを作成する詳細については、[ワークフローの作成の概要](create-workflow.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="00686-107">For more information about creating a workflow, see [Create workflows overview](create-workflow.md).</span></span>
+<span data-ttu-id="791dd-105">ワークフローを作成するには、最初に作成するワークフローの *タイプ* を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="791dd-105">To create a workflow, you must first select the *type* of workflow that you want to create.</span></span> <span data-ttu-id="791dd-106">たとえば、**購買要求明細行の確認** ワークフローを作成し、購買要求でだれが明細行品目を承認する必要があるかを定義する場合があります。</span><span class="sxs-lookup"><span data-stu-id="791dd-106">For example, you may want to create a **Purchase requisition line review** workflow to define who must approve line items on purchase requisitions.</span></span> <span data-ttu-id="791dd-107">ワークフローを作成する詳細については、[ワークフローの作成の概要](create-workflow.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="791dd-107">For more information about creating a workflow, see [Create workflows overview](create-workflow.md).</span></span>
 
-## <a name="view-the-report"></a><span data-ttu-id="00686-108">レポートの表示</span><span class="sxs-lookup"><span data-stu-id="00686-108">View the report</span></span>
+## <a name="view-the-report"></a><span data-ttu-id="791dd-108">レポートの表示</span><span class="sxs-lookup"><span data-stu-id="791dd-108">View the report</span></span>
 
-<span data-ttu-id="00686-109">[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61) に含まれる **ワークフロー タイプ レポート** は、用意されているワークフローの各タイプが一覧表示されています。</span><span class="sxs-lookup"><span data-stu-id="00686-109">The **Workflow types report**, included with the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61), lists each type of workflow that is available.</span></span> <span data-ttu-id="00686-110">レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。</span><span class="sxs-lookup"><span data-stu-id="00686-110">The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization.</span></span> 
+<span data-ttu-id="791dd-109">[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) に含まれる **ワークフロー タイプ レポート** は、用意されているワークフローの各タイプが一覧表示されています。</span><span class="sxs-lookup"><span data-stu-id="791dd-109">The **Workflow types report**, included with the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61), lists each type of workflow that is available.</span></span> <span data-ttu-id="791dd-110">レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。</span><span class="sxs-lookup"><span data-stu-id="791dd-110">The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization.</span></span> 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

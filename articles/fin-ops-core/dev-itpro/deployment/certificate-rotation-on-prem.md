@@ -12,45 +12,45 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 23312d43ae482f685fc06c489163b2a4a07833a2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ec6bbd0ba6cbdf30c56cb89b235f6abd983830c1
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744541"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941007"
 ---
-# <a name="certificate-rotation"></a><span data-ttu-id="d8690-103">証明書のローテーション</span><span class="sxs-lookup"><span data-stu-id="d8690-103">Certificate rotation</span></span>
+# <a name="certificate-rotation"></a><span data-ttu-id="d07f0-103">証明書のローテーション</span><span class="sxs-lookup"><span data-stu-id="d07f0-103">Certificate rotation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="d8690-104">有効期限が近づくにつれて、Dynamics 365 Finance + Operations (オンプレミス) 環境で使用する証明書を回転することが必要となる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-104">You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date.</span></span> <span data-ttu-id="d8690-105">このトピックでは、既存の証明書を置換する方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d8690-105">In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.</span></span>
+<span data-ttu-id="d07f0-104">有効期限が近づくにつれて、Dynamics 365 Finance + Operations (オンプレミス) 環境で使用する証明書を回転することが必要となる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-104">You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date.</span></span> <span data-ttu-id="d07f0-105">このトピックでは、既存の証明書を置換する方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-105">In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="d8690-106">証明書の有効期限が切れる前に、証明書ローテーションのプロセスを正しく開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-106">The certificate rotation process should be initiated well before the certificates expire.</span></span> <span data-ttu-id="d8690-107">これはデータ暗号化の証明書にとって非常に重要です。暗号化されたフィールドのデータが失われる可能性があるためです。</span><span class="sxs-lookup"><span data-stu-id="d8690-107">This is very important for the Data Encryption certificate, which could cause data loss for encrypted fields.</span></span> <span data-ttu-id="d8690-108">詳細については、[証明書ローテーション後](#aftercertrotation)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d8690-108">For more information, see [After certificate rotation](#aftercertrotation).</span></span> 
+> <span data-ttu-id="d07f0-106">証明書の有効期限が切れる前に、証明書ローテーションのプロセスを正しく開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-106">The certificate rotation process should be initiated well before the certificates expire.</span></span> <span data-ttu-id="d07f0-107">これはデータ暗号化の証明書にとって非常に重要です。暗号化されたフィールドのデータが失われる可能性があるためです。</span><span class="sxs-lookup"><span data-stu-id="d07f0-107">This is very important for the Data Encryption certificate, which could cause data loss for encrypted fields.</span></span> <span data-ttu-id="d07f0-108">詳細については、[証明書ローテーション後](#aftercertrotation)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-108">For more information, see [After certificate rotation](#aftercertrotation).</span></span> 
 > 
-> <span data-ttu-id="d8690-109">古い証明書は、証明書ローテーションプロセスが完了するまでそのままにしておく必要があり、事前に削除すると回転プロセスが失敗します。</span><span class="sxs-lookup"><span data-stu-id="d8690-109">Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.</span></span>
+> <span data-ttu-id="d07f0-109">古い証明書は、証明書ローテーションプロセスが完了するまでそのままにしておく必要があり、事前に削除すると回転プロセスが失敗します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-109">Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="d8690-110">この証明書ローテーション プロセスは、7.0.x および 7.1. x を実行する Service Fabric クラスターでは行わないでください。</span><span class="sxs-lookup"><span data-stu-id="d8690-110">The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x.</span></span> 
+> <span data-ttu-id="d07f0-110">この証明書ローテーション プロセスは、7.0.x および 7.1. x を実行する Service Fabric クラスターでは行わないでください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-110">The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x.</span></span> 
 >
-> <span data-ttu-id="d8690-111">証明書ローテーションをする前に Service Fabric Cluster を 7.2.x 以降にアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="d8690-111">Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.</span></span>
+> <span data-ttu-id="d07f0-111">証明書ローテーションをする前に Service Fabric Cluster を 7.2.x 以降にアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="d07f0-111">Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.</span></span>
 
-## <a name="preparation-steps"></a><span data-ttu-id="d8690-112">準備段階</span><span class="sxs-lookup"><span data-stu-id="d8690-112">Preparation steps</span></span> 
+## <a name="preparation-steps"></a><span data-ttu-id="d07f0-112">準備段階</span><span class="sxs-lookup"><span data-stu-id="d07f0-112">Preparation steps</span></span> 
 
-1. <span data-ttu-id="d8690-113">プロセス中に作成した元の **インフラストラクチャ** フォルダーの名前を変更して、[LCS からのセットアップスクリプトをダウンロード](setup-deploy-on-premises-pu12.md#downloadscripts)するようにします。</span><span class="sxs-lookup"><span data-stu-id="d8690-113">Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts).</span></span> <span data-ttu-id="d8690-114">フォルダーの名前を **InfrastructureOld** に変更します。</span><span class="sxs-lookup"><span data-stu-id="d8690-114">Rename the folder to **InfrastructureOld**.</span></span>
+1. <span data-ttu-id="d07f0-113">プロセス中に作成した元の **インフラストラクチャ** フォルダーの名前を変更して、[LCS からのセットアップスクリプトをダウンロード](setup-deploy-on-premises-pu12.md#downloadscripts)するようにします。</span><span class="sxs-lookup"><span data-stu-id="d07f0-113">Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts).</span></span> <span data-ttu-id="d07f0-114">フォルダーの名前を **InfrastructureOld** に変更します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-114">Rename the folder to **InfrastructureOld**.</span></span>
 
-2. <span data-ttu-id="d8690-115">[LCS のダウンロード セットアップ スクリプト](setup-deploy-on-premises-pu12.md#downloadscripts)から最新のセットアップスクリプトをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="d8690-115">Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts).</span></span> <span data-ttu-id="d8690-116">**infrastructure** という名前のフォルダーにファイルを解凍します。</span><span class="sxs-lookup"><span data-stu-id="d8690-116">Unzip the files into a folder that is named **Infrastructure**.</span></span>
+2. <span data-ttu-id="d07f0-115">[LCS のダウンロード セットアップ スクリプト](setup-deploy-on-premises-pu12.md#downloadscripts)から最新のセットアップスクリプトをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="d07f0-115">Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts).</span></span> <span data-ttu-id="d07f0-116">**infrastructure** という名前のフォルダーにファイルを解凍します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-116">Unzip the files into a folder that is named **Infrastructure**.</span></span>
 
-3. <span data-ttu-id="d8690-117">**Configtemplate .Xml** および **clusterconfig. json** を **InfrastructureOld** から **インフラストラクチャ** にコピーします。</span><span class="sxs-lookup"><span data-stu-id="d8690-117">Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.</span></span>
+3. <span data-ttu-id="d07f0-117">**Configtemplate .Xml** および **clusterconfig. json** を **InfrastructureOld** から **インフラストラクチャ** にコピーします。</span><span class="sxs-lookup"><span data-stu-id="d07f0-117">Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.</span></span>
 
-4. <span data-ttu-id="d8690-118">必要に応じて、**configtemplate.xml** で証明書をコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="d8690-118">Configure certificates as needed in **ConfigTemplate.xml**.</span></span> <span data-ttu-id="d8690-119">[証明書のコンフィギュレーション](setup-deploy-on-premises-pu12.md#configurecert) の手順に従って、特に、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d8690-119">Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps.</span></span>
+4. <span data-ttu-id="d07f0-118">必要に応じて、**configtemplate.xml** で証明書をコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="d07f0-118">Configure certificates as needed in **ConfigTemplate.xml**.</span></span> <span data-ttu-id="d07f0-119">[証明書のコンフィギュレーション](setup-deploy-on-premises-pu12.md#configurecert) の手順に従って、特に、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-119">Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps.</span></span>
 
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-    <span data-ttu-id="d8690-120">または、Active Directory 証明書サービス (AD CS) 証明書に切り替える場合は、この情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="d8690-120">Alternatively, if you have or would like to switch to Active Directory Certificate Services (AD CS) certificates, use this information.</span></span>
+    <span data-ttu-id="d07f0-120">または、Active Directory 証明書サービス (AD CS) 証明書に切り替える場合は、この情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-120">Alternatively, if you have or would like to switch to Active Directory Certificate Services (AD CS) certificates, use this information.</span></span>
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -59,26 +59,26 @@ ms.locfileid: "5744541"
     ```
 
     > [!NOTE]
-    > <span data-ttu-id="d8690-121">AD CS スクリプトは、ドメイン コントローラー、またはリモート サーバー管理ツールがインストールされている Windows Server コンピューターで実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-121">The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.</span></span>
-    > <span data-ttu-id="d8690-122">AD CS 機能は、インフラストラクチャ スクリプトのリリースが 2.7.0 以降である場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="d8690-122">The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later.</span></span> 
+    > <span data-ttu-id="d07f0-121">AD CS スクリプトは、ドメイン コントローラー、またはリモート サーバー管理ツールがインストールされている Windows Server コンピューターで実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-121">The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.</span></span>
+    > <span data-ttu-id="d07f0-122">AD CS 機能は、インフラストラクチャ スクリプトのリリースが 2.7.0 以降である場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-122">The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later.</span></span> 
 
-    > <span data-ttu-id="d8690-123">自己署名証明書は、実稼働環境では使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="d8690-123">Self-signed certificates should never be used in production environments.</span></span> <span data-ttu-id="d8690-124">公開されている信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。</span><span class="sxs-lookup"><span data-stu-id="d8690-124">If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.</span></span>
+    > <span data-ttu-id="d07f0-123">自己署名証明書は、実稼働環境では使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-123">Self-signed certificates should never be used in production environments.</span></span> <span data-ttu-id="d07f0-124">公開されている信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-124">If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.</span></span>
 
     ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-5. <span data-ttu-id="d8690-125">[VM の設定](setup-deploy-on-premises-pu12.md#setupvms)に進みます。</span><span class="sxs-lookup"><span data-stu-id="d8690-125">Continue to [Setup VMs](setup-deploy-on-premises-pu12.md#setupvms).</span></span> <span data-ttu-id="d8690-126">このプロセスに必要な具体的な手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d8690-126">The specific steps that are needed for this process include:</span></span>
+5. <span data-ttu-id="d07f0-125">[VM の設定](setup-deploy-on-premises-pu12.md#setupvms)に進みます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-125">Continue to [Setup VMs](setup-deploy-on-premises-pu12.md#setupvms).</span></span> <span data-ttu-id="d07f0-126">このプロセスに必要な具体的な手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d07f0-126">The specific steps that are needed for this process include:</span></span>
 
-    1. <span data-ttu-id="d8690-127">各 VM で実行する必要があるスクリプトをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="d8690-127">Export the scripts that must be run on each VM.</span></span>
+    1. <span data-ttu-id="d07f0-127">各 VM で実行する必要があるスクリプトをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="d07f0-127">Export the scripts that must be run on each VM.</span></span>
     
         ```powershell
         # Export the script files to be executed on each VM into a directory VMs\<VMName>
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-    2. <span data-ttu-id="d8690-128">各インフラストラクチャ\\VM<VMName>フォルダーのコンテンツを、対応する VM にコピーし (リモート処理スクリプトが使用されている場合は、コンテンツをターゲット VM に自動的にコピーします)、存在する場合は次のスクリプトを管理者として実行します。</span><span class="sxs-lookup"><span data-stu-id="d8690-128">Copy the contents of each infrastructure\\VMs<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts, if they exist.</span></span> <span data-ttu-id="d8690-129">これらの手順を管理者として実行します。</span><span class="sxs-lookup"><span data-stu-id="d8690-129">Perform these steps as an Administrator.</span></span>
+    2. <span data-ttu-id="d07f0-128">各インフラストラクチャ\\VM<VMName>フォルダーのコンテンツを、対応する VM にコピーし (リモート処理スクリプトが使用されている場合は、コンテンツをターゲット VM に自動的にコピーします)、存在する場合は次のスクリプトを管理者として実行します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-128">Copy the contents of each infrastructure\\VMs<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts, if they exist.</span></span> <span data-ttu-id="d07f0-129">これらの手順を管理者として実行します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-129">Perform these steps as an Administrator.</span></span>
     
         ```powershell
         # If remoting, only execute
@@ -88,7 +88,7 @@ ms.locfileid: "5744541"
         .\Set-CertificateAcls.ps1
         ```
         
-    3. <span data-ttu-id="d8690-130">次のスクリプトを実行して VM のセットアップを検証します。</span><span class="sxs-lookup"><span data-stu-id="d8690-130">Run the following script to validate the VM setup.</span></span>
+    3. <span data-ttu-id="d07f0-130">次のスクリプトを実行して VM のセットアップを検証します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-130">Run the following script to validate the VM setup.</span></span>
     
         ```powershell
         # If remoting, only execute
@@ -96,20 +96,20 @@ ms.locfileid: "5744541"
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. <span data-ttu-id="d8690-131">Axdataenciphermentcert 証明書がローテーションされている場合は、資格情報の .json ファイルを再生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-131">If axdataenciphermentcert certificates are rotated, you need to regenerate the credentials.json file.</span></span> <span data-ttu-id="d8690-132">詳細については、「[資格情報の暗号化](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d8690-132">For more information, see [Encrypt credentials](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred).</span></span>
+6. <span data-ttu-id="d07f0-131">Axdataenciphermentcert 証明書がローテーションされている場合は、資格情報の .json ファイルを再生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-131">If axdataenciphermentcert certificates are rotated, you need to regenerate the credentials.json file.</span></span> <span data-ttu-id="d07f0-132">詳細については、「[資格情報の暗号化](setup-deploy-on-premises-pu12.md#encryptcred)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-132">For more information, see [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).</span></span>
 
-7. <span data-ttu-id="d8690-133">後で LCS で使用できる値を保持するには、次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d8690-133">Run the following PowerShell command to have values that can be used in LCS later.</span></span> <span data-ttu-id="d8690-134">詳細については、[LCS からのオンプレミス環境の配置](setup-deploy-on-premises-pu12.md#deploy) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d8690-134">For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu12.md#deploy).</span></span>
+7. <span data-ttu-id="d07f0-133">後で LCS で使用できる値を保持するには、次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-133">Run the following PowerShell command to have values that can be used in LCS later.</span></span> <span data-ttu-id="d07f0-134">詳細については、[LCS からのオンプレミス環境の配置](setup-deploy-on-premises-pu12.md#deploy) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-134">For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu12.md#deploy).</span></span>
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 
-## <a name="activate-new-certificates-within-service-fabric-cluster"></a><span data-ttu-id="d8690-135">Service Fabric cluster 内での新しい証明書のアクティブ化</span><span class="sxs-lookup"><span data-stu-id="d8690-135">Activate new certificates within Service Fabric cluster</span></span>
+## <a name="activate-new-certificates-within-service-fabric-cluster"></a><span data-ttu-id="d07f0-135">Service Fabric cluster 内での新しい証明書のアクティブ化</span><span class="sxs-lookup"><span data-stu-id="d07f0-135">Activate new certificates within Service Fabric cluster</span></span>
 
-### <a name="service-fabric-with-certificates-that-arent-expired"></a><a name="sfcertrotationnotexpired"></a><span data-ttu-id="d8690-136">期限切れになっていない証明書を含む Service Fabric</span><span class="sxs-lookup"><span data-stu-id="d8690-136">Service Fabric with certificates that aren't expired</span></span>
+### <a name="service-fabric-with-certificates-that-arent-expired"></a><a name="sfcertrotationnotexpired"></a><span data-ttu-id="d07f0-136">期限切れになっていない証明書を含む Service Fabric</span><span class="sxs-lookup"><span data-stu-id="d07f0-136">Service Fabric with certificates that aren't expired</span></span>
 
-1. <span data-ttu-id="d8690-137">編集するために **Clusterconfig.json** ファイルを開き、次のセクションを検索します。</span><span class="sxs-lookup"><span data-stu-id="d8690-137">Open the **Clusterconfig.json** file for editing, and find the following section.</span></span> <span data-ttu-id="d8690-138">セカンダリ サムプリントが定義されている場合は、先に進む前に、[古い Service Fabric 証明書をクリーンアップ](#cleanupoldsfcerts) に移動します。</span><span class="sxs-lookup"><span data-stu-id="d8690-138">If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you go any further.</span></span>
+1. <span data-ttu-id="d07f0-137">編集するために **Clusterconfig.json** ファイルを開き、次のセクションを検索します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-137">Open the **Clusterconfig.json** file for editing, and find the following section.</span></span> <span data-ttu-id="d07f0-138">セカンダリ サムプリントが定義されている場合は、先に進む前に、[古い Service Fabric 証明書をクリーンアップ](#cleanupoldsfcerts) に移動します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-138">If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you go any further.</span></span>
 
     ```json
     "security": {
@@ -136,7 +136,7 @@ ms.locfileid: "5744541"
                 },
     ```
 
-2. <span data-ttu-id="d8690-139">ファイルのそのセクションを、次のセクションと置換します。</span><span class="sxs-lookup"><span data-stu-id="d8690-139">Replace that section in the file with following section.</span></span>
+2. <span data-ttu-id="d07f0-139">ファイルのそのセクションを、次のセクションと置換します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-139">Replace that section in the file with following section.</span></span>
 
     ```json
     "security":  {
@@ -169,9 +169,9 @@ ms.locfileid: "5744541"
                 },
     ```
 
-3. <span data-ttu-id="d8690-140">新しいサムプリントと古いサムプリント値を編集します。</span><span class="sxs-lookup"><span data-stu-id="d8690-140">Edit the new and old thumbprint values.</span></span> 
+3. <span data-ttu-id="d07f0-140">新しいサムプリントと古いサムプリント値を編集します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-140">Edit the new and old thumbprint values.</span></span> 
 
-4. <span data-ttu-id="d8690-141">2.0.0 などの clusterConfigurationVersion を新しいバージョンに変更します。</span><span class="sxs-lookup"><span data-stu-id="d8690-141">Change clusterConfigurationVersion to the new version, for example 2.0.0.</span></span>
+4. <span data-ttu-id="d07f0-141">2.0.0 などの clusterConfigurationVersion を新しいバージョンに変更します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-141">Change clusterConfigurationVersion to the new version, for example 2.0.0.</span></span>
 
     ```json
     {
@@ -180,9 +180,9 @@ ms.locfileid: "5744541"
     "apiVersion": "10-2017",
     ```
     
-5. <span data-ttu-id="d8690-142">Clusterconfig.json ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="d8690-142">Save the new ClusterConfig.json file.</span></span>
+5. <span data-ttu-id="d07f0-142">Clusterconfig.json ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-142">Save the new ClusterConfig.json file.</span></span>
 
-6. <span data-ttu-id="d8690-143">次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d8690-143">Run the following PowerShell command.</span></span>
+6. <span data-ttu-id="d07f0-143">次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-143">Run the following PowerShell command.</span></span>
 
     ```powershell
     # Connect to the Service Fabric cluster
@@ -204,19 +204,19 @@ ms.locfileid: "5744541"
     # When UpgradeState shows RollingForwardCompleted, the upgrade is finished
     ```
 
-### <a name="service-fabric-with-or-without-expired-certificates-cluster-not-accessible"></a><span data-ttu-id="d8690-144">期限が切れた証明書 (クラスターにアクセスできない)を含むまたは含まないサービスファブリック</span><span class="sxs-lookup"><span data-stu-id="d8690-144">Service Fabric with or without expired certificates (cluster not accessible)</span></span>
+### <a name="service-fabric-with-or-without-expired-certificates-cluster-not-accessible"></a><span data-ttu-id="d07f0-144">期限が切れた証明書 (クラスターにアクセスできない)を含むまたは含まないサービスファブリック</span><span class="sxs-lookup"><span data-stu-id="d07f0-144">Service Fabric with or without expired certificates (cluster not accessible)</span></span>
 
-<span data-ttu-id="d8690-145">このプロセスを続行するには、 [オンプレミスの展開のトラブルシューティング](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy) を行ってください。</span><span class="sxs-lookup"><span data-stu-id="d8690-145">Continue this process following [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).</span></span>
+<span data-ttu-id="d07f0-145">このプロセスを続行するには、 [オンプレミスの展開のトラブルシューティング](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy) を行ってください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-145">Continue this process following [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).</span></span>
 
-## <a name="update-the-localagent-certificate"></a><span data-ttu-id="d8690-146">LocalAgent 証明書を更新する</span><span class="sxs-lookup"><span data-stu-id="d8690-146">Update the LocalAgent certificate</span></span>
+## <a name="update-the-localagent-certificate"></a><span data-ttu-id="d07f0-146">LocalAgent 証明書を更新する</span><span class="sxs-lookup"><span data-stu-id="d07f0-146">Update the LocalAgent certificate</span></span>
 
-<span data-ttu-id="d8690-147">次の場合は、LocalAgent を再インストールする必要があります:</span><span class="sxs-lookup"><span data-stu-id="d8690-147">You must reinstall the LocalAgent if:</span></span>
+<span data-ttu-id="d07f0-147">次の場合は、LocalAgent を再インストールする必要があります:</span><span class="sxs-lookup"><span data-stu-id="d07f0-147">You must reinstall the LocalAgent if:</span></span>
 
-- <span data-ttu-id="d8690-148">Service Fabric Cluster/サーバー証明書を変更しました。</span><span class="sxs-lookup"><span data-stu-id="d8690-148">You changed the service fabric cluster/server certificate.</span></span>
-- <span data-ttu-id="d8690-149">Service Fabric クライアント証明書を変更しました。</span><span class="sxs-lookup"><span data-stu-id="d8690-149">You changed the service fabric client certificate.</span></span>
-- <span data-ttu-id="d8690-150">LocalAgent 証明書を更新しました。</span><span class="sxs-lookup"><span data-stu-id="d8690-150">You changed the LocalAgent certificate.</span></span>
+- <span data-ttu-id="d07f0-148">Service Fabric Cluster/サーバー証明書を変更しました。</span><span class="sxs-lookup"><span data-stu-id="d07f0-148">You changed the service fabric cluster/server certificate.</span></span>
+- <span data-ttu-id="d07f0-149">Service Fabric クライアント証明書を変更しました。</span><span class="sxs-lookup"><span data-stu-id="d07f0-149">You changed the service fabric client certificate.</span></span>
+- <span data-ttu-id="d07f0-150">LocalAgent 証明書を更新しました。</span><span class="sxs-lookup"><span data-stu-id="d07f0-150">You changed the LocalAgent certificate.</span></span>
 
-1. <span data-ttu-id="d8690-151">**serverCertThumprint** および **clientCertThumbprint** の値を新しいサムプリントで置き換えて、現在の localagent-config.json を更新します。</span><span class="sxs-lookup"><span data-stu-id="d8690-151">Update your current localagent-config.json by replacing the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.</span></span>
+1. <span data-ttu-id="d07f0-151">**serverCertThumprint** および **clientCertThumbprint** の値を新しいサムプリントで置き換えて、現在の localagent-config.json を更新します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-151">Update your current localagent-config.json by replacing the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.</span></span>
 
     ```json
     {
@@ -229,46 +229,46 @@ ms.locfileid: "5744541"
         }
     },
     ```
-1. <span data-ttu-id="d8690-152">いずれかの Orchestrator ノードに対して次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d8690-152">Run the following PowerShell command on one of the Orchestrator nodes.</span></span>
+1. <span data-ttu-id="d07f0-152">いずれかの Orchestrator ノードに対して次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-152">Run the following PowerShell command on one of the Orchestrator nodes.</span></span>
 
     ```powershell
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-1. <span data-ttu-id="d8690-153">次の PowerShell コマンドを実行して、新しい LocalAgent の拇印を記録します。</span><span class="sxs-lookup"><span data-stu-id="d8690-153">Run the following PowerShell command and note the new LocalAgent thumbprint.</span></span>
+1. <span data-ttu-id="d07f0-153">次の PowerShell コマンドを実行して、新しい LocalAgent の拇印を記録します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-153">Run the following PowerShell command and note the new LocalAgent thumbprint.</span></span>
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. <span data-ttu-id="d8690-154">「[テナント向けの LCS 接続コンフィギュレーション](setup-deploy-on-premises-pu12.md#configurelcs)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="d8690-154">Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).</span></span>
+1. <span data-ttu-id="d07f0-154">「[テナント向けの LCS 接続コンフィギュレーション](setup-deploy-on-premises-pu12.md#configurelcs)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-154">Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).</span></span>
 
     > [!NOTE] 
-    > <span data-ttu-id="d8690-155">**KeyId \<key\> による既存の資格情報の更新は許可されていません** というエラー メッセージを受信した場合は、[エラー メッセージ: 「KeyId <key> による既存の資格情報の更新は許可されていません」](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed) の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="d8690-155">If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).</span></span>
+    > <span data-ttu-id="d07f0-155">**KeyId \<key\> による既存の資格情報の更新は許可されていません** というエラー メッセージを受信した場合は、[エラー メッセージ: 「KeyId <key> による既存の資格情報の更新は許可されていません」](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed) の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-155">If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).</span></span>
 
-1. <span data-ttu-id="d8690-156">[コネクタのコンフィギュレーションを続行し、オンプレミスのローカルエージェントをインストールします。](setup-deploy-on-premises-pu12.md#configureconnector)具体的には、次の変更があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-156">Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically the following changes:</span></span>
+1. <span data-ttu-id="d07f0-156">[コネクタのコンフィギュレーションを続行し、オンプレミスのローカルエージェントをインストールします。](setup-deploy-on-premises-pu12.md#configureconnector)具体的には、次の変更があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-156">Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically the following changes:</span></span>
 
-    - <span data-ttu-id="d8690-157">クライアント証明書の拇印</span><span class="sxs-lookup"><span data-stu-id="d8690-157">Client certificate thumbprint</span></span>
-    - <span data-ttu-id="d8690-158">サーバー証明書の拇印</span><span class="sxs-lookup"><span data-stu-id="d8690-158">Server certificate thumbprint</span></span>
-    - <span data-ttu-id="d8690-159">テナント サービス プリンシパル証明書の拇印</span><span class="sxs-lookup"><span data-stu-id="d8690-159">Tenant service principle certificate thumbprint</span></span>
+    - <span data-ttu-id="d07f0-157">クライアント証明書の拇印</span><span class="sxs-lookup"><span data-stu-id="d07f0-157">Client certificate thumbprint</span></span>
+    - <span data-ttu-id="d07f0-158">サーバー証明書の拇印</span><span class="sxs-lookup"><span data-stu-id="d07f0-158">Server certificate thumbprint</span></span>
+    - <span data-ttu-id="d07f0-159">テナント サービス プリンシパル証明書の拇印</span><span class="sxs-lookup"><span data-stu-id="d07f0-159">Tenant service principle certificate thumbprint</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="d8690-160">LCSで新しいコネクタを作成 **しない** でください。</span><span class="sxs-lookup"><span data-stu-id="d8690-160">Do **not** create a new connector in LCS.</span></span> <span data-ttu-id="d8690-161">既存のコネクタのコンフィギュレーションを更新し、設定を再度ダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="d8690-161">Update the configuration of your existing connector and download the settings again.</span></span>
+    > <span data-ttu-id="d07f0-160">LCSで新しいコネクタを作成 **しない** でください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-160">Do **not** create a new connector in LCS.</span></span> <span data-ttu-id="d07f0-161">既存のコネクタのコンフィギュレーションを更新し、設定を再度ダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="d07f0-161">Update the configuration of your existing connector and download the settings again.</span></span>
 
-## <a name="update-your-current-deployment-configuration"></a><span data-ttu-id="d8690-162">現在の配置コンフィギュレーションを更新する</span><span class="sxs-lookup"><span data-stu-id="d8690-162">Update your current deployment configuration</span></span>
+## <a name="update-your-current-deployment-configuration"></a><span data-ttu-id="d07f0-162">現在の配置コンフィギュレーションを更新する</span><span class="sxs-lookup"><span data-stu-id="d07f0-162">Update your current deployment configuration</span></span>
 
-<span data-ttu-id="d8690-163">証明書を更新すると、環境に存在するコンフィギュレーション ファイルが古くなり、手動で更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-163">Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated.</span></span> <span data-ttu-id="d8690-164">そうしないと、クリーンアップ ジョブが失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-164">Otherwise, the clean-up job will probably fail.</span></span> <span data-ttu-id="d8690-165">(この手動更新は、今回だけ行う必要があります。)</span><span class="sxs-lookup"><span data-stu-id="d8690-165">(This manual update must be done just this one time.)</span></span>
+<span data-ttu-id="d07f0-163">証明書を更新すると、環境に存在するコンフィギュレーション ファイルが古くなり、手動で更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-163">Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated.</span></span> <span data-ttu-id="d07f0-164">そうしないと、クリーンアップ ジョブが失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-164">Otherwise, the clean-up job will probably fail.</span></span> <span data-ttu-id="d07f0-165">(この手動更新は、今回だけ行う必要があります。)</span><span class="sxs-lookup"><span data-stu-id="d07f0-165">(This manual update must be done just this one time.)</span></span>
 
-1. <span data-ttu-id="d8690-166">コンフィギュレーション ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="d8690-166">Open your configuration file.</span></span> <span data-ttu-id="d8690-167">次のコマンドを実行して、このファイルの場所を検索できます。</span><span class="sxs-lookup"><span data-stu-id="d8690-167">You can find the location of this file by running the following command.</span></span>
+1. <span data-ttu-id="d07f0-166">コンフィギュレーション ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-166">Open your configuration file.</span></span> <span data-ttu-id="d07f0-167">次のコマンドを実行して、このファイルの場所を検索できます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-167">You can find the location of this file by running the following command.</span></span>
 
     ```sql
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
     ```
 
     > [!NOTE]
-    > <span data-ttu-id="d8690-168">**LCSENVIRONMENTID** を環境の ID で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="d8690-168">Replace **LCSENVIRONMENTID** with the ID of your environment.</span></span> <span data-ttu-id="d8690-169">このIDは、LCS の環境のページから取得できます。</span><span class="sxs-lookup"><span data-stu-id="d8690-169">You can obtain this ID from the page for your environment in LCS.</span></span> 
+    > <span data-ttu-id="d07f0-168">**LCSENVIRONMENTID** を環境の ID で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-168">Replace **LCSENVIRONMENTID** with the ID of your environment.</span></span> <span data-ttu-id="d07f0-169">このIDは、LCS の環境のページから取得できます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-169">You can obtain this ID from the page for your environment in LCS.</span></span> 
 
-    <span data-ttu-id="d8690-170">ファイルの先頭は、次の例のようになります。</span><span class="sxs-lookup"><span data-stu-id="d8690-170">The beginning of the file should resemble the following example.</span></span>
+    <span data-ttu-id="d07f0-170">ファイルの先頭は、次の例のようになります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-170">The beginning of the file should resemble the following example.</span></span>
 
     ```json
     {
@@ -282,7 +282,7 @@ ms.locfileid: "5744541"
     },
     ```
 
-2. <span data-ttu-id="d8690-171">**serverCertThumprint** と **clientCertThumbprint** 値を新しいサムプリントで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="d8690-171">Replace the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.</span></span>
+2. <span data-ttu-id="d07f0-171">**serverCertThumprint** と **clientCertThumbprint** 値を新しいサムプリントで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-171">Replace the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.</span></span>
 
     ```json
     {
@@ -296,56 +296,56 @@ ms.locfileid: "5744541"
     },
     ```
 
-3. <span data-ttu-id="d8690-172">ファイルを保存して閉じます。</span><span class="sxs-lookup"><span data-stu-id="d8690-172">Save and close the file.</span></span> <span data-ttu-id="d8690-173">このネットワークの場所にアクセスするすべてのプログラムを閉じてください。</span><span class="sxs-lookup"><span data-stu-id="d8690-173">Remember to close any programs that are accessing this network location.</span></span> <span data-ttu-id="d8690-174">そうしないと、クリーンアップ プロセスが失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-174">Otherwise, the cleanup process might fail.</span></span>
+3. <span data-ttu-id="d07f0-172">ファイルを保存して閉じます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-172">Save and close the file.</span></span> <span data-ttu-id="d07f0-173">このネットワークの場所にアクセスするすべてのプログラムを閉じてください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-173">Remember to close any programs that are accessing this network location.</span></span> <span data-ttu-id="d07f0-174">そうしないと、クリーンアップ プロセスが失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-174">Otherwise, the cleanup process might fail.</span></span>
 
-## <a name="update-deployment-settings-in-lcs"></a><span data-ttu-id="d8690-175">LCS の展開設定の更新</span><span class="sxs-lookup"><span data-stu-id="d8690-175">Update deployment settings in LCS</span></span>
+## <a name="update-deployment-settings-in-lcs"></a><span data-ttu-id="d07f0-175">LCS の展開設定の更新</span><span class="sxs-lookup"><span data-stu-id="d07f0-175">Update deployment settings in LCS</span></span>
 
 > [!NOTE]
->  <span data-ttu-id="d8690-176">ただし、クライアント、データ署名、および暗号化証明書は置換のみ行われます。</span><span class="sxs-lookup"><span data-stu-id="d8690-176">Note that the Client, Data Signing, and Encipherment certificates will only be replaced.</span></span> <span data-ttu-id="d8690-177">また、「[資格情報の暗号化](setup-deploy-on-premises-pu12.md#encryptcred)」で説明されているように、資格情報の Credentials.json ファイルを再作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-177">You will also need to recreate the Credentials.json file, as described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).</span></span>
+>  <span data-ttu-id="d07f0-176">ただし、クライアント、データ署名、および暗号化証明書は置換のみ行われます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-176">Note that the Client, Data Signing, and Encipherment certificates will only be replaced.</span></span> <span data-ttu-id="d07f0-177">また、「[資格情報の暗号化](setup-deploy-on-premises-pu12.md#encryptcred)」で説明されているように、資格情報の Credentials.json ファイルを再作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-177">You will also need to recreate the Credentials.json file, as described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).</span></span>
 >
-> <span data-ttu-id="d8690-178">続行する前に、ロケール Dynamics データベースのバックアップを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-178">Before you continue, you need to make a backup of the local Dynamics database.</span></span>
+> <span data-ttu-id="d07f0-178">続行する前に、ロケール Dynamics データベースのバックアップを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-178">Before you continue, you need to make a backup of the local Dynamics database.</span></span>
 
-1. <span data-ttu-id="d8690-179">LCS で、証明書の変更を希望する環境についての「完全な詳細情報」リンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="d8690-179">In LCS, select the "Full Details" link for the environment where you want to change the certificates.</span></span>
+1. <span data-ttu-id="d07f0-179">LCS で、証明書の変更を希望する環境についての「完全な詳細情報」リンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-179">In LCS, select the "Full Details" link for the environment where you want to change the certificates.</span></span>
 
-2. <span data-ttu-id="d8690-180">**管理** を選択し、**更新の設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d8690-180">Select **Maintain** and then select **Update Settings**.</span></span>
+2. <span data-ttu-id="d07f0-180">**管理** を選択し、**更新の設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-180">Select **Maintain** and then select **Update Settings**.</span></span>
 
     ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-3. <span data-ttu-id="d8690-182">以前にコンフィギュレーションした新しいサムプリントにサムプリントを変更します。</span><span class="sxs-lookup"><span data-stu-id="d8690-182">Change the thumbprints to the new thumbprints that you previously configured.</span></span> <span data-ttu-id="d8690-183">これらは、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルで検索できます。</span><span class="sxs-lookup"><span data-stu-id="d8690-183">You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.</span></span>
+3. <span data-ttu-id="d07f0-182">以前にコンフィギュレーションした新しいサムプリントにサムプリントを変更します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-182">Change the thumbprints to the new thumbprints that you previously configured.</span></span> <span data-ttu-id="d07f0-183">これらは、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルで検索できます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-183">You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.</span></span>
 
     ![配置設定のサムプリント画像 1](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
     ![配置設定のサムプリント画像 2](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
-4. <span data-ttu-id="d8690-186">**準備** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d8690-186">Select **Prepare**.</span></span>
+4. <span data-ttu-id="d07f0-186">**準備** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-186">Select **Prepare**.</span></span>
 
-5. <span data-ttu-id="d8690-187">ダウンロードおよび準備が完了すると、**環境の更新** ボタンが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d8690-187">After downloading and preparation is complete, the **Update environment** button will display.</span></span>
+5. <span data-ttu-id="d07f0-187">ダウンロードおよび準備が完了すると、**環境の更新** ボタンが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-187">After downloading and preparation is complete, the **Update environment** button will display.</span></span>
 
     ![環境の更新ボタン](media/0a9d43044593450f1a828c0dd7698024.png)
 
-6. <span data-ttu-id="d8690-189">**環境の更新** を選択して、環境の更新を開始します。</span><span class="sxs-lookup"><span data-stu-id="d8690-189">Select **Update environment** to start updating your environment.</span></span>
+6. <span data-ttu-id="d07f0-189">**環境の更新** を選択して、環境の更新を開始します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-189">Select **Update environment** to start updating your environment.</span></span>
 
-7. <span data-ttu-id="d8690-190">更新中、環境は使用できません。</span><span class="sxs-lookup"><span data-stu-id="d8690-190">During the update, the environment will be unavailable.</span></span>
+7. <span data-ttu-id="d07f0-190">更新中、環境は使用できません。</span><span class="sxs-lookup"><span data-stu-id="d07f0-190">During the update, the environment will be unavailable.</span></span>
 
-8. <span data-ttu-id="d8690-191">新しい証明書を使用して環境を正常に更新した後、Service Fabric Cluster エクスプローラーで新しいサムプリントを表示できます。</span><span class="sxs-lookup"><span data-stu-id="d8690-191">After the environment is successfully updated with the new certificates, you can view the new thumbprints in Service Fabric Cluster Explorer.</span></span> <span data-ttu-id="d8690-192">Service Fabric エクスプローラーのサムプリントの名前は、LCS の名前と異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-192">The names of the thumbprints in Service Fabric Explorer might differ from the names in LCS.</span></span> <span data-ttu-id="d8690-193">ただし、値は同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-193">However, the values should be the same.</span></span>
+8. <span data-ttu-id="d07f0-191">新しい証明書を使用して環境を正常に更新した後、Service Fabric Cluster エクスプローラーで新しいサムプリントを表示できます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-191">After the environment is successfully updated with the new certificates, you can view the new thumbprints in Service Fabric Cluster Explorer.</span></span> <span data-ttu-id="d07f0-192">Service Fabric エクスプローラーのサムプリントの名前は、LCS の名前と異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-192">The names of the thumbprints in Service Fabric Explorer might differ from the names in LCS.</span></span> <span data-ttu-id="d07f0-193">ただし、値は同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-193">However, the values should be the same.</span></span>
 
-    <span data-ttu-id="d8690-194">次の例では、同じ拇印の名前がいくらか異なっている例の一部です。</span><span class="sxs-lookup"><span data-stu-id="d8690-194">Here is an example of how the name of the same thumbprint might differ.</span></span>
+    <span data-ttu-id="d07f0-194">次の例では、同じ拇印の名前がいくらか異なっている例の一部です。</span><span class="sxs-lookup"><span data-stu-id="d07f0-194">Here is an example of how the name of the same thumbprint might differ.</span></span>
 
     ![配置設定におけるサムプリントの例 1](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
     ![配置設定におけるサムプリントの例 2](media/642f6434da9cdeac3651b765acca08fa.png)
 
-## <a name="update-other-certificates-as-needed"></a><span data-ttu-id="d8690-197">必要に応じて他の証明書を更新する</span><span class="sxs-lookup"><span data-stu-id="d8690-197">Update other certificates as needed</span></span>
+## <a name="update-other-certificates-as-needed"></a><span data-ttu-id="d07f0-197">必要に応じて他の証明書を更新する</span><span class="sxs-lookup"><span data-stu-id="d07f0-197">Update other certificates as needed</span></span>
 
-1. <span data-ttu-id="d8690-198">SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。</span><span class="sxs-lookup"><span data-stu-id="d8690-198">Always check if the SQL server certificate has expired.</span></span> <span data-ttu-id="d8690-199">詳細については、「[SQL Server の設定](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d8690-199">For more information, see [Set up SQL Server](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql).</span></span>
+1. <span data-ttu-id="d07f0-198">SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-198">Always check if the SQL server certificate has expired.</span></span> <span data-ttu-id="d07f0-199">詳細については、「[SQL Server の設定](setup-deploy-on-premises-pu12.md#setupsql)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-199">For more information, see [Set up SQL Server](setup-deploy-on-premises-pu12.md#setupsql).</span></span>
 
-2. <span data-ttu-id="d8690-200">Active Directory フェデレーション サービス (ADFS) 証明書の有効期限が切れていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="d8690-200">Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.</span></span>
+2. <span data-ttu-id="d07f0-200">Active Directory フェデレーション サービス (ADFS) 証明書の有効期限が切れていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-200">Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.</span></span>
 
-## <a name="clean-up-old-service-fabric-certificates"></a><a name="cleanupoldsfcerts"></a><span data-ttu-id="d8690-201">古い Service Fabric 証明書をクリーンアップ</span><span class="sxs-lookup"><span data-stu-id="d8690-201">Clean up old Service Fabric certificates</span></span>
+## <a name="clean-up-old-service-fabric-certificates"></a><a name="cleanupoldsfcerts"></a><span data-ttu-id="d07f0-201">古い Service Fabric 証明書をクリーンアップ</span><span class="sxs-lookup"><span data-stu-id="d07f0-201">Clean up old Service Fabric certificates</span></span>
 
-<span data-ttu-id="d8690-202">この手順は、証明書のローテーションが成功した後、または次の証明書のローテーションの前に完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-202">This procedure should be completed either after a successful certificate rotation or before the next certificate rotation.</span></span>
+<span data-ttu-id="d07f0-202">この手順は、証明書のローテーションが成功した後、または次の証明書のローテーションの前に完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-202">This procedure should be completed either after a successful certificate rotation or before the next certificate rotation.</span></span>
 
-1. <span data-ttu-id="d8690-203">クラスター構成から古い/セカンダリのサムプリントを削除します。</span><span class="sxs-lookup"><span data-stu-id="d8690-203">Remove the old/secondary thumbprints from the cluster configuration.</span></span> <span data-ttu-id="d8690-204">これらを削除した後、適切なセクションは次の例のようになります。</span><span class="sxs-lookup"><span data-stu-id="d8690-204">After you've removed them, the appropriate section should resemble the following example.</span></span>
+1. <span data-ttu-id="d07f0-203">クラスター構成から古い/セカンダリのサムプリントを削除します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-203">Remove the old/secondary thumbprints from the cluster configuration.</span></span> <span data-ttu-id="d07f0-204">これらを削除した後、適切なセクションは次の例のようになります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-204">After you've removed them, the appropriate section should resemble the following example.</span></span>
 
     ```json
     "security": {
@@ -372,15 +372,15 @@ ms.locfileid: "5744541"
                 },
     ```
 
-1. <span data-ttu-id="d8690-205">このトピックの前半の [期限切れになっていない証明書を含む Service Fabric](#sfcertrotationnotexpired) セクションの手順 4 から 6 を実行します。</span><span class="sxs-lookup"><span data-stu-id="d8690-205">Follow steps 4 through 6 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section earlier in this topic.</span></span> 
+1. <span data-ttu-id="d07f0-205">このトピックの前半の [期限切れになっていない証明書を含む Service Fabric](#sfcertrotationnotexpired) セクションの手順 4 から 6 を実行します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-205">Follow steps 4 through 6 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section earlier in this topic.</span></span> 
 
-## <a name="after-certificate-rotation"></a><a name="aftercertrotation"></a><span data-ttu-id="d8690-206">証明書ローテーション後</span><span class="sxs-lookup"><span data-stu-id="d8690-206">After certificate rotation</span></span>
+## <a name="after-certificate-rotation"></a><a name="aftercertrotation"></a><span data-ttu-id="d07f0-206">証明書ローテーション後</span><span class="sxs-lookup"><span data-stu-id="d07f0-206">After certificate rotation</span></span>
 
-### <a name="data-encryption-certificate"></a><span data-ttu-id="d8690-207">データの暗号化証明書</span><span class="sxs-lookup"><span data-stu-id="d8690-207">Data encryption certificate</span></span>
+### <a name="data-encryption-certificate"></a><span data-ttu-id="d07f0-207">データの暗号化証明書</span><span class="sxs-lookup"><span data-stu-id="d07f0-207">Data encryption certificate</span></span>
 
-<span data-ttu-id="d8690-208">この証明書は、データベースに格納されているデータを暗号化するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="d8690-208">This certificate is used to encrypt data stored in the database.</span></span> <span data-ttu-id="d8690-209">既定では、この証明書を使用して暗号化される特定のフィールドがあります。これらのフィールドは、[暗号化されたフィールドの値を文書化](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields) で確認できます。</span><span class="sxs-lookup"><span data-stu-id="d8690-209">By default there are certain fields that are encrypted with this certificate, you can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields).</span></span> <span data-ttu-id="d8690-210">ただし、この API を使用して、ユーザーが暗号化すべきと判断した他のフィールドを暗号化することができます。</span><span class="sxs-lookup"><span data-stu-id="d8690-210">However, our API can be used to encrypt other fields that customers deem should be encrypted.</span></span> 
+<span data-ttu-id="d07f0-208">この証明書は、データベースに格納されているデータを暗号化するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-208">This certificate is used to encrypt data stored in the database.</span></span> <span data-ttu-id="d07f0-209">既定では、この証明書を使用して暗号化される特定のフィールドがあります。これらのフィールドは、[暗号化されたフィールドの値を文書化](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields) で確認できます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-209">By default there are certain fields that are encrypted with this certificate, you can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields).</span></span> <span data-ttu-id="d07f0-210">ただし、この API を使用して、ユーザーが暗号化すべきと判断した他のフィールドを暗号化することができます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-210">However, our API can be used to encrypt other fields that customers deem should be encrypted.</span></span> 
 
-<span data-ttu-id="d8690-211">プラットフォーム更新 33 以降では、「暗号化されたデータ ローテーション システム ジョブ」という名前のバッチ ジョブが、新しくローテーションした証明書を使用してデータを再暗号化します。</span><span class="sxs-lookup"><span data-stu-id="d8690-211">In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job" will use the newly rotated certificate to re-encrypt data.</span></span> <span data-ttu-id="d8690-212">このバッチ ジョブは、データをクロールし、新しい証明書を使用してすべての暗号化データを再暗号化します。</span><span class="sxs-lookup"><span data-stu-id="d8690-212">This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate.</span></span> <span data-ttu-id="d8690-213">これは、すべてのデータが再度暗号化されるまで、1 日に 2 時間実行されます。</span><span class="sxs-lookup"><span data-stu-id="d8690-213">It will run for two hours per day until all of the data has been re-encrypted.</span></span> <span data-ttu-id="d8690-214">バッチ ジョブを有効にするには、フライトとコンフィギュレーション キーを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-214">In order to enable the batch job, a flight and a configuration key need to be enabled.</span></span> <span data-ttu-id="d8690-215">業務データベース (AXDB など) に対して次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d8690-215">Execute the following commands against your business database (for example, AXDB).</span></span>
+<span data-ttu-id="d07f0-211">プラットフォーム更新 33 以降では、「暗号化されたデータ ローテーション システム ジョブ」という名前のバッチ ジョブが、新しくローテーションした証明書を使用してデータを再暗号化します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-211">In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job" will use the newly rotated certificate to re-encrypt data.</span></span> <span data-ttu-id="d07f0-212">このバッチ ジョブは、データをクロールし、新しい証明書を使用してすべての暗号化データを再暗号化します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-212">This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate.</span></span> <span data-ttu-id="d07f0-213">これは、すべてのデータが再度暗号化されるまで、1 日に 2 時間実行されます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-213">It will run for two hours per day until all of the data has been re-encrypted.</span></span> <span data-ttu-id="d07f0-214">バッチ ジョブを有効にするには、フライトとコンフィギュレーション キーを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-214">In order to enable the batch job, a flight and a configuration key need to be enabled.</span></span> <span data-ttu-id="d07f0-215">業務データベース (AXDB など) に対して次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-215">Execute the following commands against your business database (for example, AXDB).</span></span>
 
 ```sql
 IF (EXISTS(SELECT * FROM SYSFLIGHTING WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'))
@@ -394,10 +394,10 @@ ELSE
   INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
 ```
 
-<span data-ttu-id="d8690-216">上記のコマンドを実行した後、Service Fabric Explorer から AOS ノードを再起動します。</span><span class="sxs-lookup"><span data-stu-id="d8690-216">After the above commands have been executed, restart your AOS nodes from Service Fabric Explorer.</span></span> <span data-ttu-id="d8690-217">AOS によって新しいコンフィギュレーションが検出され、業務時間外にバッチ ジョブが実行されるようにスケジュールされます。</span><span class="sxs-lookup"><span data-stu-id="d8690-217">The AOS will detect the new configuration and will schedule the batch job to run during off hours.</span></span> <span data-ttu-id="d8690-218">バッチ ジョブを作成した後、ユーザー インターフェイスからスケジュールを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="d8690-218">After the batch job has been created, the schedule can be modified from the user interface.</span></span>
+<span data-ttu-id="d07f0-216">上記のコマンドを実行した後、Service Fabric Explorer から AOS ノードを再起動します。</span><span class="sxs-lookup"><span data-stu-id="d07f0-216">After the above commands have been executed, restart your AOS nodes from Service Fabric Explorer.</span></span> <span data-ttu-id="d07f0-217">AOS によって新しいコンフィギュレーションが検出され、業務時間外にバッチ ジョブが実行されるようにスケジュールされます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-217">The AOS will detect the new configuration and will schedule the batch job to run during off hours.</span></span> <span data-ttu-id="d07f0-218">バッチ ジョブを作成した後、ユーザー インターフェイスからスケジュールを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="d07f0-218">After the batch job has been created, the schedule can be modified from the user interface.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="d8690-219">暗号化されたデータがすべて再暗号化され、期限が切れるまでは、古いデータ暗号化証明書が削除されなうようにしてください。</span><span class="sxs-lookup"><span data-stu-id="d8690-219">Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired.</span></span> <span data-ttu-id="d8690-220">そうしないと、これによってデータが失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d8690-220">Otherwise, this could lead to data loss.</span></span>
+> <span data-ttu-id="d07f0-219">暗号化されたデータがすべて再暗号化され、期限が切れるまでは、古いデータ暗号化証明書が削除されなうようにしてください。</span><span class="sxs-lookup"><span data-stu-id="d07f0-219">Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired.</span></span> <span data-ttu-id="d07f0-220">そうしないと、これによってデータが失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d07f0-220">Otherwise, this could lead to data loss.</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

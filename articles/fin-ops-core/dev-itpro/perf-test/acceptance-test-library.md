@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 304c5a9b09f71e47811de54fe97a9ee89870748f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6bc8723651148aa6de418f438241a9daeaf010fe
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752954"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866214"
 ---
-# <a name="acceptance-test-library-resources"></a><span data-ttu-id="76a62-103">承認テスト ライブラリ のリソース</span><span class="sxs-lookup"><span data-stu-id="76a62-103">Acceptance test library resources</span></span>
+# <a name="acceptance-test-library-resources"></a><span data-ttu-id="286c4-103">承認テスト ライブラリ のリソース</span><span class="sxs-lookup"><span data-stu-id="286c4-103">Acceptance test library resources</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="76a62-104">承認テスト ライブラリ (ATL) は、X++ テスト ライブラリであり、以下の利点を提供します:</span><span class="sxs-lookup"><span data-stu-id="76a62-104">The Acceptance test library (ATL) is an X++ test library that offers the following benefits:</span></span>
+<span data-ttu-id="286c4-104">承認テスト ライブラリ (ATL) は、X++ テスト ライブラリであり、以下の利点を提供します:</span><span class="sxs-lookup"><span data-stu-id="286c4-104">The Acceptance test library (ATL) is an X++ test library that offers the following benefits:</span></span>
 
-- <span data-ttu-id="76a62-105">一貫したテスト データを作成できます。</span><span class="sxs-lookup"><span data-stu-id="76a62-105">It lets you create consistent test data.</span></span>
-- <span data-ttu-id="76a62-106">テスト コードが読みやすくなります。</span><span class="sxs-lookup"><span data-stu-id="76a62-106">It increases the readability of test code.</span></span>
-- <span data-ttu-id="76a62-107">テスト データの作成に使用されているメソッドの発見可能性が向上します。</span><span class="sxs-lookup"><span data-stu-id="76a62-107">It provides improved discoverability of the methods that are used to create test data.</span></span>
-- <span data-ttu-id="76a62-108">前提条件の設定の複雑さを隠します。</span><span class="sxs-lookup"><span data-stu-id="76a62-108">It hides the complexity of setting up prerequisites.</span></span>
-- <span data-ttu-id="76a62-109">パフォーマンスの高いテスト ケースをサポートします。</span><span class="sxs-lookup"><span data-stu-id="76a62-109">It supports high performance of test cases.</span></span>
+- <span data-ttu-id="286c4-105">一貫したテスト データを作成できます。</span><span class="sxs-lookup"><span data-stu-id="286c4-105">It lets you create consistent test data.</span></span>
+- <span data-ttu-id="286c4-106">テスト コードが読みやすくなります。</span><span class="sxs-lookup"><span data-stu-id="286c4-106">It increases the readability of test code.</span></span>
+- <span data-ttu-id="286c4-107">テスト データの作成に使用されているメソッドの発見可能性が向上します。</span><span class="sxs-lookup"><span data-stu-id="286c4-107">It provides improved discoverability of the methods that are used to create test data.</span></span>
+- <span data-ttu-id="286c4-108">前提条件の設定の複雑さを隠します。</span><span class="sxs-lookup"><span data-stu-id="286c4-108">It hides the complexity of setting up prerequisites.</span></span>
+- <span data-ttu-id="286c4-109">パフォーマンスの高いテスト ケースをサポートします。</span><span class="sxs-lookup"><span data-stu-id="286c4-109">It supports high performance of test cases.</span></span>
 
-## <a name="example-of-a-test-that-is-written-in-atl"></a><span data-ttu-id="76a62-110">ATL で記述されたテストの例</span><span class="sxs-lookup"><span data-stu-id="76a62-110">Example of a test that is written in ATL</span></span>
+## <a name="example-of-a-test-that-is-written-in-atl"></a><span data-ttu-id="286c4-110">ATL で記述されたテストの例</span><span class="sxs-lookup"><span data-stu-id="286c4-110">Example of a test that is written in ATL</span></span>
 
 ```xpp
 // Create the data root node
@@ -62,27 +62,27 @@ salesLine.inventoryTransactions().assertExpectedLines(
     invent.trans().spec().withStatusIssue(StatusIssue::ReservPhysical).withInventDims([warehouse]).withQty(-3)); 
 ```
 
-## <a name="concepts"></a><span data-ttu-id="76a62-111">概念</span><span class="sxs-lookup"><span data-stu-id="76a62-111">Concepts</span></span>
+## <a name="concepts"></a><span data-ttu-id="286c4-111">概念</span><span class="sxs-lookup"><span data-stu-id="286c4-111">Concepts</span></span>
 
-<span data-ttu-id="76a62-112">ATL のクラスとメソッドの構造と命名は非常に厳格です。</span><span class="sxs-lookup"><span data-stu-id="76a62-112">The structure and naming of the classes and methods in ATL are quite rigid.</span></span> <span data-ttu-id="76a62-113">この厳格さにより、発見性が向上し、慣れないドメインでさえもテストを簡単に作成できるようになります。</span><span class="sxs-lookup"><span data-stu-id="76a62-113">This rigidity helps improve discoverability and also makes it easier to write tests, even in domains that you're unfamiliar with.</span></span>
+<span data-ttu-id="286c4-112">ATL のクラスとメソッドの構造と命名は非常に厳格です。</span><span class="sxs-lookup"><span data-stu-id="286c4-112">The structure and naming of the classes and methods in ATL are quite rigid.</span></span> <span data-ttu-id="286c4-113">この厳格さにより、発見性が向上し、慣れないドメインでさえもテストを簡単に作成できるようになります。</span><span class="sxs-lookup"><span data-stu-id="286c4-113">This rigidity helps improve discoverability and also makes it easier to write tests, even in domains that you're unfamiliar with.</span></span>
 
-<span data-ttu-id="76a62-114">クラスは次の概念に分類されます:</span><span class="sxs-lookup"><span data-stu-id="76a62-114">The classes are grouped into the following concepts:</span></span>
+<span data-ttu-id="286c4-114">クラスは次の概念に分類されます:</span><span class="sxs-lookup"><span data-stu-id="286c4-114">The classes are grouped into the following concepts:</span></span>
 
-- <span data-ttu-id="76a62-115">[ナビゲーション](concepts-navigation.md) – 慣れている階層でエンティティを検出し、データ メソッドをテストします。</span><span class="sxs-lookup"><span data-stu-id="76a62-115">[Navigation](concepts-navigation.md) – Discover entities and test data methods in a familiar hierarchy.</span></span>
-- <span data-ttu-id="76a62-116">[テスト データ メソッド](test-data-methods.md) – これらのメソッドはテスト データの設定に使用されます。</span><span class="sxs-lookup"><span data-stu-id="76a62-116">[Test data methods](test-data-methods.md) – These methods are used to set up test data.</span></span>
-- <span data-ttu-id="76a62-117">[エンティティ](concepts-entities.md) – エンティティは、ひとつの単位として認識されるデータと、それに関連する動作を表します。</span><span class="sxs-lookup"><span data-stu-id="76a62-117">[Entities](concepts-entities.md) – Entities represent data and associated behavior that is perceived as a single unit.</span></span>
-- <span data-ttu-id="76a62-118">[作成者](concepts-creators.md) – 作成者により特定のテスト データを作成できます。</span><span class="sxs-lookup"><span data-stu-id="76a62-118">[Creators](concepts-creators.md) – Creators let you create specific test data.</span></span>
-- <span data-ttu-id="76a62-119">[コマンド](concepts-commands.md) – コマンドは事業運営を実行します。</span><span class="sxs-lookup"><span data-stu-id="76a62-119">[Commands](concepts-commands.md) – Commands run business operations.</span></span>
-- <span data-ttu-id="76a62-120">[クエリ](concepts-queries.md) – クエリはエンティティを検索します。</span><span class="sxs-lookup"><span data-stu-id="76a62-120">[Queries](concepts-queries.md) – Queries find entities.</span></span>
-- <span data-ttu-id="76a62-121">[仕様](concepts-specifications.md) – 仕様はテストの終わりで期待されるエンティティを説明します。</span><span class="sxs-lookup"><span data-stu-id="76a62-121">[Specifications](concepts-specifications.md) – Specifications describe expected entities at the end of the test.</span></span>
+- <span data-ttu-id="286c4-115">[ナビゲーション](concepts-navigation.md) – 慣れている階層でエンティティを検出し、データ メソッドをテストします。</span><span class="sxs-lookup"><span data-stu-id="286c4-115">[Navigation](concepts-navigation.md) – Discover entities and test data methods in a familiar hierarchy.</span></span>
+- <span data-ttu-id="286c4-116">[テスト データ メソッド](test-data-methods.md) – これらのメソッドはテスト データの設定に使用されます。</span><span class="sxs-lookup"><span data-stu-id="286c4-116">[Test data methods](test-data-methods.md) – These methods are used to set up test data.</span></span>
+- <span data-ttu-id="286c4-117">[エンティティ](concepts-entities.md) – エンティティは、ひとつの単位として認識されるデータと、それに関連する動作を表します。</span><span class="sxs-lookup"><span data-stu-id="286c4-117">[Entities](concepts-entities.md) – Entities represent data and associated behavior that is perceived as a single unit.</span></span>
+- <span data-ttu-id="286c4-118">[作成者](concepts-creators.md) – 作成者により特定のテスト データを作成できます。</span><span class="sxs-lookup"><span data-stu-id="286c4-118">[Creators](concepts-creators.md) – Creators let you create specific test data.</span></span>
+- <span data-ttu-id="286c4-119">[コマンド](concepts-commands.md) – コマンドは事業運営を実行します。</span><span class="sxs-lookup"><span data-stu-id="286c4-119">[Commands](concepts-commands.md) – Commands run business operations.</span></span>
+- <span data-ttu-id="286c4-120">[クエリ](concepts-queries.md) – クエリはエンティティを検索します。</span><span class="sxs-lookup"><span data-stu-id="286c4-120">[Queries](concepts-queries.md) – Queries find entities.</span></span>
+- <span data-ttu-id="286c4-121">[仕様](concepts-specifications.md) – 仕様はテストの終わりで期待されるエンティティを説明します。</span><span class="sxs-lookup"><span data-stu-id="286c4-121">[Specifications](concepts-specifications.md) – Specifications describe expected entities at the end of the test.</span></span>
 
-## <a name="code-generation"></a><span data-ttu-id="76a62-122">コード生成</span><span class="sxs-lookup"><span data-stu-id="76a62-122">Code generation</span></span>
+## <a name="code-generation"></a><span data-ttu-id="286c4-122">コード生成</span><span class="sxs-lookup"><span data-stu-id="286c4-122">Code generation</span></span>
 
-<span data-ttu-id="76a62-123">クエリと仕様は、エンティティの作成プロセスを簡素化するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="76a62-123">Queries and specifications help simplify the process of creating entities.</span></span> <span data-ttu-id="76a62-124">詳細は [承認テスト ライブラリ コード生成ウィザード](code-generation-wizard.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76a62-124">For more information, see [Acceptance test library Code generation wizard](code-generation-wizard.md).</span></span> <span data-ttu-id="76a62-125">**コード生成** ウィザードを使用してシナリオを作成し、またそれらを更新することができます。</span><span class="sxs-lookup"><span data-stu-id="76a62-125">The **Code generation** wizard can be used to create scenarios and update them.</span></span>
+<span data-ttu-id="286c4-123">クエリと仕様は、エンティティの作成プロセスを簡素化するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="286c4-123">Queries and specifications help simplify the process of creating entities.</span></span> <span data-ttu-id="286c4-124">詳細は [承認テスト ライブラリ コード生成ウィザード](code-generation-wizard.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="286c4-124">For more information, see [Acceptance test library Code generation wizard](code-generation-wizard.md).</span></span> <span data-ttu-id="286c4-125">**コード生成** ウィザードを使用してシナリオを作成し、またそれらを更新することができます。</span><span class="sxs-lookup"><span data-stu-id="286c4-125">The **Code generation** wizard can be used to create scenarios and update them.</span></span>
 
-## <a name="further-reading"></a><span data-ttu-id="76a62-126">参考文献</span><span class="sxs-lookup"><span data-stu-id="76a62-126">Further reading</span></span>
+## <a name="further-reading"></a><span data-ttu-id="286c4-126">参考文献</span><span class="sxs-lookup"><span data-stu-id="286c4-126">Further reading</span></span>
 
-<span data-ttu-id="76a62-127">何千ものテスト基盤として、Microsoft は ATL を社内で何年も使用してきました。</span><span class="sxs-lookup"><span data-stu-id="76a62-127">Microsoft has used ATL internally for several years, as the foundation for thousands of tests.</span></span> <span data-ttu-id="76a62-128">詳細については [承認テスト ライブラリのベスト プラクティス](atl-best-practices.md) および [承認テスト ライブラリについてよく寄せられる質問](atl-faq.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76a62-128">For more information see, [Best practices for the Acceptance test library](atl-best-practices.md) and [Acceptance test library FAQ](atl-faq.md).</span></span>
+<span data-ttu-id="286c4-127">何千ものテスト基盤として、Microsoft は ATL を社内で何年も使用してきました。</span><span class="sxs-lookup"><span data-stu-id="286c4-127">Microsoft has used ATL internally for several years, as the foundation for thousands of tests.</span></span> <span data-ttu-id="286c4-128">詳細については [承認テスト ライブラリのベスト プラクティス](atl-best-practices.md) および [承認テスト ライブラリについてよく寄せられる質問](atl-faq.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="286c4-128">For more information see, [Best practices for the Acceptance test library](atl-best-practices.md) and [Acceptance test library FAQ](atl-faq.md).</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,29 +1,29 @@
 ---
-ms.openlocfilehash: b4c074e5b8884c65f03558814c35dcaf8adfa5ae
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2dc324879b947af52e813d70a5ffd71f43e531fb
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409100"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923279"
 ---
-## <a name="mapping-tables"></a><span data-ttu-id="07f1d-101">テーブルのマッピング</span><span class="sxs-lookup"><span data-stu-id="07f1d-101">Mapping tables</span></span>
+## <a name="mapping-tables"></a><span data-ttu-id="9f3c9-101">テーブルのマッピング</span><span class="sxs-lookup"><span data-stu-id="9f3c9-101">Mapping tables</span></span>
 
-### <a name="mapping-types"></a><span data-ttu-id="07f1d-102">マッピング タイプ</span><span class="sxs-lookup"><span data-stu-id="07f1d-102">Mapping types</span></span>
+### <a name="mapping-types"></a><span data-ttu-id="9f3c9-102">マッピング タイプ</span><span class="sxs-lookup"><span data-stu-id="9f3c9-102">Mapping types</span></span>
 
-<span data-ttu-id="07f1d-103">さまざまな異なるマッピング タイプがあります。</span><span class="sxs-lookup"><span data-stu-id="07f1d-103">There are several different mapping types.</span></span> <span data-ttu-id="07f1d-104">次の表は、テンプレート テーブルで使用される記号について説明します。</span><span class="sxs-lookup"><span data-stu-id="07f1d-104">The following table explains the symbols used in the template tables.</span></span>
+<span data-ttu-id="9f3c9-103">さまざまな異なるマッピング タイプがあります。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-103">There are several different mapping types.</span></span> <span data-ttu-id="9f3c9-104">次の表は、テンプレート テーブルで使用される記号について説明します。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-104">The following table explains the symbols used in the template tables.</span></span>
 
-| <span data-ttu-id="07f1d-105">記号</span><span class="sxs-lookup"><span data-stu-id="07f1d-105">Symbol</span></span> | <span data-ttu-id="07f1d-106">説明</span><span class="sxs-lookup"><span data-stu-id="07f1d-106">Description</span></span> |
+| <span data-ttu-id="9f3c9-105">記号</span><span class="sxs-lookup"><span data-stu-id="9f3c9-105">Symbol</span></span> | <span data-ttu-id="9f3c9-106">説明</span><span class="sxs-lookup"><span data-stu-id="9f3c9-106">Description</span></span> |
 |--------|-------------|
-| >  | <span data-ttu-id="07f1d-107">一方向</span><span class="sxs-lookup"><span data-stu-id="07f1d-107">One-way</span></span> |
-| >> | <span data-ttu-id="07f1d-108">一方向、データはプロセス内で変換されます。</span><span class="sxs-lookup"><span data-stu-id="07f1d-108">One-way, and data is transformed in the process.</span></span> |
-| =  | <span data-ttu-id="07f1d-109">双方向</span><span class="sxs-lookup"><span data-stu-id="07f1d-109">Bidirectional</span></span> |
-| >< | <span data-ttu-id="07f1d-110">双方向、データはプロセス内で変換されます。</span><span class="sxs-lookup"><span data-stu-id="07f1d-110">Bidirectional, and data is transformed in the process.</span></span> |
-| << | <span data-ttu-id="07f1d-111">一方向、データはプロセス内で変換されます。</span><span class="sxs-lookup"><span data-stu-id="07f1d-111">One-way, and data is transformed in the process.</span></span> |
+| >  | <span data-ttu-id="9f3c9-107">一方向</span><span class="sxs-lookup"><span data-stu-id="9f3c9-107">One-way</span></span> |
+| >> | <span data-ttu-id="9f3c9-108">一方向、データはプロセス内で変換されます。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-108">One-way, and data is transformed in the process.</span></span> |
+| =  | <span data-ttu-id="9f3c9-109">双方向</span><span class="sxs-lookup"><span data-stu-id="9f3c9-109">Bidirectional</span></span> |
+| >< | <span data-ttu-id="9f3c9-110">双方向、データはプロセス内で変換されます。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-110">Bidirectional, and data is transformed in the process.</span></span> |
+| << | <span data-ttu-id="9f3c9-111">一方向、データはプロセス内で変換されます。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-111">One-way, and data is transformed in the process.</span></span> |
 
-### <a name="filters"></a><span data-ttu-id="07f1d-112">フィルター</span><span class="sxs-lookup"><span data-stu-id="07f1d-112">Filters</span></span>
+### <a name="filters"></a><span data-ttu-id="9f3c9-112">フィルター</span><span class="sxs-lookup"><span data-stu-id="9f3c9-112">Filters</span></span>
 
-<span data-ttu-id="07f1d-113">ソースフィルタとリバースソースフィルタによって、どの行が同期されるかが決まります。</span><span class="sxs-lookup"><span data-stu-id="07f1d-113">The source filter and reverse source filter determine which rows are synchronized.</span></span>
+<span data-ttu-id="9f3c9-113">ソースフィルタとリバースソースフィルタによって、どの行が同期されるかが決まります。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-113">The source filter and reverse source filter determine which rows are synchronized.</span></span>
 
-### <a name="default-values"></a><span data-ttu-id="07f1d-114">既定値</span><span class="sxs-lookup"><span data-stu-id="07f1d-114">Default values</span></span>
+### <a name="default-values"></a><span data-ttu-id="9f3c9-114">既定値</span><span class="sxs-lookup"><span data-stu-id="9f3c9-114">Default values</span></span>
 
-<span data-ttu-id="07f1d-115">同期されたフィールドが Finance and Operations テーブルやその他の Dynamics 365 テーブルのいずれかに存在しない場合は、同期されたテーブルに既定の値が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="07f1d-115">If a synchronized field does not exist in either the Finance and Operations table or the other Dynamics 365 table, then a default value is assigned in the synchronized table.</span></span> <span data-ttu-id="07f1d-116">場合によっては、デフォルト値は、共通データモデル内の属性値へのルックアップである整数となります。</span><span class="sxs-lookup"><span data-stu-id="07f1d-116">In some cases, the default value is an integer that is a lookup to an attribute value in the Common Data Model.</span></span> <span data-ttu-id="07f1d-117">たとえば、共通データモデル の 取引先担当者 テーブルでは、 [**address1_addresstypecode**](../data-entities/dual-write/customer-mapping.md#customers-v3-to-contacts) の既定値は **3** です。</span><span class="sxs-lookup"><span data-stu-id="07f1d-117">For example, in the Contacts table of the Common Data Model, the default value of [**address1_addresstypecode**](../data-entities/dual-write/customer-mapping.md#customers-v3-to-contacts) is **3**.</span></span> <span data-ttu-id="07f1d-118">共通データモデルでは、 [address1AddressTypeCode](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/contact#address1AddressTypeCode) に対する **3** の値は **プライマリー アドレス** です。</span><span class="sxs-lookup"><span data-stu-id="07f1d-118">In the Common Data Model, for [address1AddressTypeCode](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/contact#address1AddressTypeCode) the value of **3** is **Primary address**.</span></span> 
+<span data-ttu-id="9f3c9-115">同期されたフィールドが Finance and Operations テーブルやその他の Dynamics 365 テーブルのいずれかに存在しない場合は、同期されたテーブルに既定の値が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-115">If a synchronized field does not exist in either the Finance and Operations table or the other Dynamics 365 table, then a default value is assigned in the synchronized table.</span></span> <span data-ttu-id="9f3c9-116">場合によっては、デフォルト値は、共通データモデル内の属性値へのルックアップである整数となります。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-116">In some cases, the default value is an integer that is a lookup to an attribute value in the Common Data Model.</span></span> <span data-ttu-id="9f3c9-117">たとえば、共通データモデル の 取引先担当者 テーブルでは、 [**address1_addresstypecode**](../data-entities/dual-write/customer-mapping.md#customers-v3-to-contacts) の既定値は **3** です。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-117">For example, in the Contacts table of the Common Data Model, the default value of [**address1_addresstypecode**](../data-entities/dual-write/customer-mapping.md#customers-v3-to-contacts) is **3**.</span></span> <span data-ttu-id="9f3c9-118">共通データモデルでは、 [address1AddressTypeCode](/common-data-model/schema/core/applicationcommon/foundationcommon/contact#address1AddressTypeCode) に対する **3** の値は **プライマリー アドレス** です。</span><span class="sxs-lookup"><span data-stu-id="9f3c9-118">In the Common Data Model, for [address1AddressTypeCode](/common-data-model/schema/core/applicationcommon/foundationcommon/contact#address1AddressTypeCode) the value of **3** is **Primary address**.</span></span>

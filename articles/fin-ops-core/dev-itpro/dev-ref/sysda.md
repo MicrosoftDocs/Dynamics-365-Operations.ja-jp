@@ -4,49 +4,46 @@ description: このトピックでは、SysDa アプリケーションプログ�
 author: RobinARH
 ms.date: 06/24/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 72211
-ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bedc6db2df260a81647daccc24eb68dec490658a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: faa7dedced6b38faad85895d633f1e826872fca1
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750964"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865843"
 ---
-# <a name="access-data-by-using-the-sysda-classes"></a><span data-ttu-id="dd3b1-103">SysDa クラスを使用したデータへのアクセス</span><span class="sxs-lookup"><span data-stu-id="dd3b1-103">Access data by using the SysDa classes</span></span>
+# <a name="access-data-by-using-the-sysda-classes"></a><span data-ttu-id="508a6-103">SysDa クラスを使用したデータへのアクセス</span><span class="sxs-lookup"><span data-stu-id="508a6-103">Access data by using the SysDa classes</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="dd3b1-104">このトピックでは、SysDa アプリケーションプログラミングインターフェイス (API) を使用して拡張可能なクエリおよびデータアクセスステートメントを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-104">This topic explains how to create extensible queries by using the SysDa application programming interface (API).</span></span>
+<span data-ttu-id="508a6-104">このトピックでは、SysDa アプリケーションプログラミングインターフェイス (API) を使用して拡張可能なクエリおよびデータアクセスステートメントを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="508a6-104">This topic explains how to create extensible queries by using the SysDa application programming interface (API).</span></span>
 
-<span data-ttu-id="dd3b1-105">拡張可能な SysDa API では、X++ で使用できるほとんどすべてのデータアクセス可能性が提供されます。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-105">The extensible SysDa API provides almost all the data access possibilities that are available in X++.</span></span> <span data-ttu-id="dd3b1-106">実際、API は、X++ コンパイラが生成するコードのラッパーです。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-106">In fact, the APIs are wrappers around the code that the X++ compiler would generate.</span></span> <span data-ttu-id="dd3b1-107">したがって、SysDa クラスを使用しても、たとえば **QueryRun** オブジェクトなどを使用してもオーバーヘッドは発生しません。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-107">Therefore, use of the SysDa classes carries no overhead, unlike use of the **QueryRun** object, for example.</span></span> <span data-ttu-id="dd3b1-108">さらに、X++ コンパイラがデータアクセス明細書に対して行うチェックは、ユーザーの責任です。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-108">Additionally, the check that the X++ compiler does on data access statements is your responsibility.</span></span> <span data-ttu-id="dd3b1-109">たとえば、グローバルな一意識別子 ( GUID) を整数と比較する **where** 句を作成します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-109">For example, you create a **where** clause that compares a globally unique identifier (GUID) to an integer.</span></span> <span data-ttu-id="dd3b1-110">X++ コンパイラは、この句をエラーとして診断します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-110">The X++ compiler would diagnose this clause as an error.</span></span>
+<span data-ttu-id="508a6-105">拡張可能な SysDa API では、X++ で使用できるほとんどすべてのデータアクセス可能性が提供されます。</span><span class="sxs-lookup"><span data-stu-id="508a6-105">The extensible SysDa API provides almost all the data access possibilities that are available in X++.</span></span> <span data-ttu-id="508a6-106">実際、API は、X++ コンパイラが生成するコードのラッパーです。</span><span class="sxs-lookup"><span data-stu-id="508a6-106">In fact, the APIs are wrappers around the code that the X++ compiler would generate.</span></span> <span data-ttu-id="508a6-107">したがって、SysDa クラスを使用しても、たとえば **QueryRun** オブジェクトなどを使用してもオーバーヘッドは発生しません。</span><span class="sxs-lookup"><span data-stu-id="508a6-107">Therefore, use of the SysDa classes carries no overhead, unlike use of the **QueryRun** object, for example.</span></span> <span data-ttu-id="508a6-108">さらに、X++ コンパイラがデータアクセス明細書に対して行うチェックは、ユーザーの責任です。</span><span class="sxs-lookup"><span data-stu-id="508a6-108">Additionally, the check that the X++ compiler does on data access statements is your responsibility.</span></span> <span data-ttu-id="508a6-109">たとえば、グローバルな一意識別子 ( GUID) を整数と比較する **where** 句を作成します。</span><span class="sxs-lookup"><span data-stu-id="508a6-109">For example, you create a **where** clause that compares a globally unique identifier (GUID) to an integer.</span></span> <span data-ttu-id="508a6-110">X++ コンパイラは、この句をエラーとして診断します。</span><span class="sxs-lookup"><span data-stu-id="508a6-110">The X++ compiler would diagnose this clause as an error.</span></span>
 
-<span data-ttu-id="dd3b1-111">SysDa API には、カスタムクエリを作成するための広範な API セットが含まれています。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-111">The SysDa APIs include an extensive set of APIs for creating custom queries.</span></span> <span data-ttu-id="dd3b1-112">ただし、主なクエリ活動を駆動するもっと小さなタイプには以下のものがあります。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-112">However, there is a smaller set of types that drives the primary query activities:</span></span>
+<span data-ttu-id="508a6-111">SysDa API には、カスタムクエリを作成するための広範な API セットが含まれています。</span><span class="sxs-lookup"><span data-stu-id="508a6-111">The SysDa APIs include an extensive set of APIs for creating custom queries.</span></span> <span data-ttu-id="508a6-112">ただし、主なクエリ活動を駆動するもっと小さなタイプには以下のものがあります。</span><span class="sxs-lookup"><span data-stu-id="508a6-112">However, there is a smaller set of types that drives the primary query activities:</span></span>
 
-+ <span data-ttu-id="dd3b1-113">次を選択します: **SysDaQueryObject**、**SysDaSearchObject**、および **SysDaSearchStatement**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-113">Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**</span></span>
-+ <span data-ttu-id="dd3b1-114">次を更新します: **SysDaUpdateObject** および **SysDaUpdateStatement**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-114">Update: **SysDaUpdateObject** and **SysDaUpdateStatement**</span></span>
-+ <span data-ttu-id="dd3b1-115">次を挿入します: **SysDaInsertObject** および **SysDaInsertStatement**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-115">Insert: **SysDaInsertObject** and **SysDaInsertStatement**</span></span>
-+ <span data-ttu-id="dd3b1-116">次を削除します: **SysDaQueryObject**、**SysDaDeleteObject**、および **SysDaDeleteStatement**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-116">Delete: **SysDaQueryObject**, **SysDaDeleteObject**, and **SysDaDeleteStatement**</span></span>
++ <span data-ttu-id="508a6-113">次を選択します: **SysDaQueryObject**、**SysDaSearchObject**、および **SysDaSearchStatement**</span><span class="sxs-lookup"><span data-stu-id="508a6-113">Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**</span></span>
++ <span data-ttu-id="508a6-114">次を更新します: **SysDaUpdateObject** および **SysDaUpdateStatement**</span><span class="sxs-lookup"><span data-stu-id="508a6-114">Update: **SysDaUpdateObject** and **SysDaUpdateStatement**</span></span>
++ <span data-ttu-id="508a6-115">次を挿入します: **SysDaInsertObject** および **SysDaInsertStatement**</span><span class="sxs-lookup"><span data-stu-id="508a6-115">Insert: **SysDaInsertObject** and **SysDaInsertStatement**</span></span>
++ <span data-ttu-id="508a6-116">次を削除します: **SysDaQueryObject**、**SysDaDeleteObject**、および **SysDaDeleteStatement**</span><span class="sxs-lookup"><span data-stu-id="508a6-116">Delete: **SysDaQueryObject**, **SysDaDeleteObject**, and **SysDaDeleteStatement**</span></span>
 
-<span data-ttu-id="dd3b1-117">次のセクションでは、クエリのタイプの例と、それがサポートするカスタマイズについて説明します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-117">The following sections provide examples of each type of query and the customizations that it supports.</span></span> <span data-ttu-id="dd3b1-118">この例では、TestTable という名前のテーブルを使用します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-118">The examples use a table that is named TestTable.</span></span> <span data-ttu-id="dd3b1-119">このテーブルには、**stringField** という名前の文字列フィールドと、**intField** という名前の整数フィールドの2つのフィールドがあります。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-119">This table has two fields: a string field that is named **stringField** and an integer field that is named **intField**.</span></span>
+<span data-ttu-id="508a6-117">次のセクションでは、クエリのタイプの例と、それがサポートするカスタマイズについて説明します。</span><span class="sxs-lookup"><span data-stu-id="508a6-117">The following sections provide examples of each type of query and the customizations that it supports.</span></span> <span data-ttu-id="508a6-118">この例では、TestTable という名前のテーブルを使用します。</span><span class="sxs-lookup"><span data-stu-id="508a6-118">The examples use a table that is named TestTable.</span></span> <span data-ttu-id="508a6-119">このテーブルには、**stringField** という名前の文字列フィールドと、**intField** という名前の整数フィールドの2つのフィールドがあります。</span><span class="sxs-lookup"><span data-stu-id="508a6-119">This table has two fields: a string field that is named **stringField** and an integer field that is named **intField**.</span></span>
 
-## <a name="select-query"></a><span data-ttu-id="dd3b1-120">クエリの選択</span><span class="sxs-lookup"><span data-stu-id="dd3b1-120">Select query</span></span>
+## <a name="select-query"></a><span data-ttu-id="508a6-120">クエリの選択</span><span class="sxs-lookup"><span data-stu-id="508a6-120">Select query</span></span>
 
-<span data-ttu-id="dd3b1-121">**選択** クエリを実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-121">To run a **select** query, follow these steps.</span></span>
+<span data-ttu-id="508a6-121">**選択** クエリを実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="508a6-121">To run a **select** query, follow these steps.</span></span>
 
-1. <span data-ttu-id="dd3b1-122">指定されたレコードを含むテーブルインスタンスを指定する、**SysDaQueryObject** オブジェクトを作成および構成します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-122">Create and configure a **SysDaQueryObject** object that specifies the table instance that will contain the designated records.</span></span>
-2. <span data-ttu-id="dd3b1-123">**Sysdasearchobject** オブジェクトを作成し、**SysDaQueryObject** オブジェクトをコンストラクターに渡します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-123">Create a **SysDaSearchObject** object, and pass the **SysDaQueryObject** object to the constructor.</span></span>
-3. <span data-ttu-id="dd3b1-124">**Sysdasearchobject** オブジェクトを **SysDaSearchStatement.next()** メソッドに渡すことで、クエリの結果を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-124">Iterate over the results of the query by passing the **SysDaSearchObject** object to the **SysDaSearchStatement.next()** method.</span></span>
+1. <span data-ttu-id="508a6-122">指定されたレコードを含むテーブルインスタンスを指定する、**SysDaQueryObject** オブジェクトを作成および構成します。</span><span class="sxs-lookup"><span data-stu-id="508a6-122">Create and configure a **SysDaQueryObject** object that specifies the table instance that will contain the designated records.</span></span>
+2. <span data-ttu-id="508a6-123">**Sysdasearchobject** オブジェクトを作成し、**SysDaQueryObject** オブジェクトをコンストラクターに渡します。</span><span class="sxs-lookup"><span data-stu-id="508a6-123">Create a **SysDaSearchObject** object, and pass the **SysDaQueryObject** object to the constructor.</span></span>
+3. <span data-ttu-id="508a6-124">**Sysdasearchobject** オブジェクトを **SysDaSearchStatement.next()** メソッドに渡すことで、クエリの結果を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="508a6-124">Iterate over the results of the query by passing the **SysDaSearchObject** object to the **SysDaSearchStatement.next()** method.</span></span>
 
-<span data-ttu-id="dd3b1-125">次の例では **intField**\<= **5** のTestTableのすべての行を検索します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-125">The following example finds all rows in TestTable where **intField** \<= **5**.</span></span>
+<span data-ttu-id="508a6-125">次の例では **intField**\<= **5** のTestTableのすべての行を検索します。</span><span class="sxs-lookup"><span data-stu-id="508a6-125">The following example finds all rows in TestTable where **intField** \<= **5**.</span></span>
 
 ```xpp
 // t is the table buffer that will hold the result.
@@ -87,14 +84,14 @@ while (ss.next(so))
 }
 ```
 
-## <a name="update-statement"></a><span data-ttu-id="dd3b1-126">明細書の更新</span><span class="sxs-lookup"><span data-stu-id="dd3b1-126">Update statement</span></span>
+## <a name="update-statement"></a><span data-ttu-id="508a6-126">明細書の更新</span><span class="sxs-lookup"><span data-stu-id="508a6-126">Update statement</span></span>
 
-<span data-ttu-id="dd3b1-127">**Update** 明細書を実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-127">To run an **update** statement, follow these steps.</span></span>
+<span data-ttu-id="508a6-127">**Update** 明細書を実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="508a6-127">To run an **update** statement, follow these steps.</span></span>
 
-1. <span data-ttu-id="dd3b1-128">**SysDaUpdateObject** オブジェクトを作成および構成します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-128">Create and configure a **SysDaUpdateObject** object.</span></span>
-2. <span data-ttu-id="dd3b1-129">**SysDaUpdateObject** オブジェクトを **SysDaUpdateStatement.execute()** オブジェクトに渡すことでデータを更新します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-129">Update data by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object.</span></span> <span data-ttu-id="dd3b1-130">更新ではデータベースのデータが変更されるため、**ttsbegin** および **ttscommit** ステートメントで **実行** するための呼び出しをラップする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-130">Because updates modify the data in the database, you must wrap the call to **execute** in **ttsbegin** and **ttscommit** statements.</span></span>
+1. <span data-ttu-id="508a6-128">**SysDaUpdateObject** オブジェクトを作成および構成します。</span><span class="sxs-lookup"><span data-stu-id="508a6-128">Create and configure a **SysDaUpdateObject** object.</span></span>
+2. <span data-ttu-id="508a6-129">**SysDaUpdateObject** オブジェクトを **SysDaUpdateStatement.execute()** オブジェクトに渡すことでデータを更新します。</span><span class="sxs-lookup"><span data-stu-id="508a6-129">Update data by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object.</span></span> <span data-ttu-id="508a6-130">更新ではデータベースのデータが変更されるため、**ttsbegin** および **ttscommit** ステートメントで **実行** するための呼び出しをラップする必要があります。</span><span class="sxs-lookup"><span data-stu-id="508a6-130">Because updates modify the data in the database, you must wrap the call to **execute** in **ttsbegin** and **ttscommit** statements.</span></span>
 
-<span data-ttu-id="dd3b1-131">次の例では、**intField** = **50** のすべての行について、**stringField** を **"fifty"** に更新します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-131">The following example updates **stringField** to **"fifty"** for all rows where **intField** = **50**.</span></span>
+<span data-ttu-id="508a6-131">次の例では、**intField** = **50** のすべての行について、**stringField** を **"fifty"** に更新します。</span><span class="sxs-lookup"><span data-stu-id="508a6-131">The following example updates **stringField** to **"fifty"** for all rows where **intField** = **50**.</span></span>
 
 ```xpp
 TestTable t;
@@ -128,16 +125,16 @@ info("Updated value is: " + t1.stringField);
 // Output is: "Updated value is: fifty".
 ```
 
-## <a name="insert-statement"></a><span data-ttu-id="dd3b1-132">明細書の挿入</span><span class="sxs-lookup"><span data-stu-id="dd3b1-132">Insert statement</span></span>
+## <a name="insert-statement"></a><span data-ttu-id="508a6-132">明細書の挿入</span><span class="sxs-lookup"><span data-stu-id="508a6-132">Insert statement</span></span>
 
-<span data-ttu-id="dd3b1-133">**挿入** 明細書を実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-133">To run an **insert** statement, follow these steps.</span></span>
+<span data-ttu-id="508a6-133">**挿入** 明細書を実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="508a6-133">To run an **insert** statement, follow these steps.</span></span>
 
-1. <span data-ttu-id="dd3b1-134">**SysDaInsertObject** オブジェクトを作成および構成して、挿入中に更新されるフィールドを指定します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-134">Create and configure a **SysDaInsertObject** object to specify which fields are updated during the insertion.</span></span>
-2. <span data-ttu-id="dd3b1-135">挿入する行のソースを指定する **SysDaQueryObject** オブジェクトを作成および構成します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-135">Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert.</span></span> <span data-ttu-id="dd3b1-136">**SysDaQueryObject.予測()** のフィールドの順序は、**SysDaInsertObject.fields()** のフィールドの順序と一致している必要があります。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-136">The order of the fields in **SysDaQueryObject.projection()** must match the order of the fields in **SysDaInsertObject.fields()**.</span></span>
-3. <span data-ttu-id="dd3b1-137">**SysDaQueryObject** オブジェクトを、**SysDaInsertObject** オブジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-137">Assign the **SysDaQueryObject** object to the **SysDaInsertObject** object.</span></span>
-4. <span data-ttu-id="dd3b1-138">新しい行を挿入するには **SysDaInsertObject** オブジェクトを **SysDaInsertStatement.executeQuery()** メソッドに渡します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-138">Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.</span></span>
+1. <span data-ttu-id="508a6-134">**SysDaInsertObject** オブジェクトを作成および構成して、挿入中に更新されるフィールドを指定します。</span><span class="sxs-lookup"><span data-stu-id="508a6-134">Create and configure a **SysDaInsertObject** object to specify which fields are updated during the insertion.</span></span>
+2. <span data-ttu-id="508a6-135">挿入する行のソースを指定する **SysDaQueryObject** オブジェクトを作成および構成します。</span><span class="sxs-lookup"><span data-stu-id="508a6-135">Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert.</span></span> <span data-ttu-id="508a6-136">**SysDaQueryObject.予測()** のフィールドの順序は、**SysDaInsertObject.fields()** のフィールドの順序と一致している必要があります。</span><span class="sxs-lookup"><span data-stu-id="508a6-136">The order of the fields in **SysDaQueryObject.projection()** must match the order of the fields in **SysDaInsertObject.fields()**.</span></span>
+3. <span data-ttu-id="508a6-137">**SysDaQueryObject** オブジェクトを、**SysDaInsertObject** オブジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="508a6-137">Assign the **SysDaQueryObject** object to the **SysDaInsertObject** object.</span></span>
+4. <span data-ttu-id="508a6-138">新しい行を挿入するには **SysDaInsertObject** オブジェクトを **SysDaInsertStatement.executeQuery()** メソッドに渡します。</span><span class="sxs-lookup"><span data-stu-id="508a6-138">Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.</span></span>
 
-<span data-ttu-id="dd3b1-139">次の例では、行を **intField** = **40** と **stringField** = **"en-us"** を TestTable に挿入します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-139">The following example inserts rows where **intField** = **40** and **stringField** = **"en-us"** into TestTable.</span></span>
+<span data-ttu-id="508a6-139">次の例では、行を **intField** = **40** と **stringField** = **"en-us"** を TestTable に挿入します。</span><span class="sxs-lookup"><span data-stu-id="508a6-139">The following example inserts rows where **intField** = **40** and **stringField** = **"en-us"** into TestTable.</span></span>
 
 ```xpp
 TestTable t;
@@ -187,15 +184,15 @@ info(any2Str(t1.intField) + ":" + t1.stringField);
 // The output is "40:en-us".
 ```
 
-## <a name="delete-statement"></a><span data-ttu-id="dd3b1-140">明細書の削除</span><span class="sxs-lookup"><span data-stu-id="dd3b1-140">Delete statement</span></span>
+## <a name="delete-statement"></a><span data-ttu-id="508a6-140">明細書の削除</span><span class="sxs-lookup"><span data-stu-id="508a6-140">Delete statement</span></span>
 
-<span data-ttu-id="dd3b1-141">明細書の **削除** を実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-141">To run a **delete** statement, follow these steps.</span></span>
+<span data-ttu-id="508a6-141">明細書の **削除** を実行するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="508a6-141">To run a **delete** statement, follow these steps.</span></span>
 
-1. <span data-ttu-id="dd3b1-142">**Sysdaqueryobject** オブジェクトを作成および構成して、削除する行を指定します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-142">Create and configure a **SysDaQueryObject** object to specify which rows to delete.</span></span>
-2. <span data-ttu-id="dd3b1-143">**SysDaDeleteObject** オブジェクトを作成し、**SysDaQueryObject** オブジェクトをコンストラクターに渡します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-143">Create a **SysDaDeleteObject** object, and pass the **SysDaQueryObject** object to the constructor.</span></span>
-3. <span data-ttu-id="dd3b1-144">行を削除するには **SysDaDeleteObject** オブジェクトを **SysDaDeleteStatement.executeQuery()** メソッドに渡します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-144">Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.</span></span>
+1. <span data-ttu-id="508a6-142">**Sysdaqueryobject** オブジェクトを作成および構成して、削除する行を指定します。</span><span class="sxs-lookup"><span data-stu-id="508a6-142">Create and configure a **SysDaQueryObject** object to specify which rows to delete.</span></span>
+2. <span data-ttu-id="508a6-143">**SysDaDeleteObject** オブジェクトを作成し、**SysDaQueryObject** オブジェクトをコンストラクターに渡します。</span><span class="sxs-lookup"><span data-stu-id="508a6-143">Create a **SysDaDeleteObject** object, and pass the **SysDaQueryObject** object to the constructor.</span></span>
+3. <span data-ttu-id="508a6-144">行を削除するには **SysDaDeleteObject** オブジェクトを **SysDaDeleteStatement.executeQuery()** メソッドに渡します。</span><span class="sxs-lookup"><span data-stu-id="508a6-144">Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.</span></span>
 
-<span data-ttu-id="dd3b1-145">次の例では、**intField** が偶数である行を削除します。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-145">The following example deletes rows where **intField** is an even number.</span></span>
+<span data-ttu-id="508a6-145">次の例では、**intField** が偶数である行を削除します。</span><span class="sxs-lookup"><span data-stu-id="508a6-145">The following example deletes rows where **intField** is an even number.</span></span>
 
 ```xpp
 TestTable t;
@@ -232,20 +229,20 @@ ttscommit;
 info("Number of rows after deletion: " + any2Str(t.RowCount()));
 ```
 
-## <a name="clauses"></a><span data-ttu-id="dd3b1-146">句</span><span class="sxs-lookup"><span data-stu-id="dd3b1-146">Clauses</span></span>
+## <a name="clauses"></a><span data-ttu-id="508a6-146">句</span><span class="sxs-lookup"><span data-stu-id="508a6-146">Clauses</span></span>
 
-<span data-ttu-id="dd3b1-147">SysDa クエリは複数の句をサポートします。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-147">SysDa queries support several clauses:</span></span>
+<span data-ttu-id="508a6-147">SysDa クエリは複数の句をサポートします。</span><span class="sxs-lookup"><span data-stu-id="508a6-147">SysDa queries support several clauses:</span></span>
 
-+ <span data-ttu-id="dd3b1-148">**whereClause** – **where** 句は、**SysDaQueryExpression** から継承したオブジェクトから構築されます。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-148">**whereClause** – The **where** clause is constructed from objects that inherit from **SysDaQueryExpression**.</span></span> <span data-ttu-id="dd3b1-149">例は **SysDaEqualsExpression**、**SysDaNotEqualsExpression**、**SysDaLessThanExpression** があります。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-149">Examples are **SysDaEqualsExpression**, **SysDaNotEqualsExpression**, and **SysDaLessThanExpression**.</span></span> <span data-ttu-id="dd3b1-150">完全な一覧は、アプリケーションエクスプローラーでフィルタ処理することによって確認できます。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-150">You can find the full list by filtering in Application Explorer.</span></span>
-+ <span data-ttu-id="dd3b1-151">**orderByClause**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-151">**orderByClause**</span></span>
-+ <span data-ttu-id="dd3b1-152">**groupByClause**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-152">**groupByClause**</span></span>
-+ <span data-ttu-id="dd3b1-153">**joinClauseKind** 付き **joinClause**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-153">**joinClause** with **joinClauseKind**</span></span>
-+ <span data-ttu-id="dd3b1-154">**joinedQuery**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-154">**joinedQuery**</span></span>
-+ <span data-ttu-id="dd3b1-155">**settingClause**</span><span class="sxs-lookup"><span data-stu-id="dd3b1-155">**settingClause**</span></span>
++ <span data-ttu-id="508a6-148">**whereClause** – **where** 句は、**SysDaQueryExpression** から継承したオブジェクトから構築されます。</span><span class="sxs-lookup"><span data-stu-id="508a6-148">**whereClause** – The **where** clause is constructed from objects that inherit from **SysDaQueryExpression**.</span></span> <span data-ttu-id="508a6-149">例は **SysDaEqualsExpression**、**SysDaNotEqualsExpression**、**SysDaLessThanExpression** があります。</span><span class="sxs-lookup"><span data-stu-id="508a6-149">Examples are **SysDaEqualsExpression**, **SysDaNotEqualsExpression**, and **SysDaLessThanExpression**.</span></span> <span data-ttu-id="508a6-150">完全な一覧は、アプリケーションエクスプローラーでフィルタ処理することによって確認できます。</span><span class="sxs-lookup"><span data-stu-id="508a6-150">You can find the full list by filtering in Application Explorer.</span></span>
++ <span data-ttu-id="508a6-151">**orderByClause**</span><span class="sxs-lookup"><span data-stu-id="508a6-151">**orderByClause**</span></span>
++ <span data-ttu-id="508a6-152">**groupByClause**</span><span class="sxs-lookup"><span data-stu-id="508a6-152">**groupByClause**</span></span>
++ <span data-ttu-id="508a6-153">**joinClauseKind** 付き **joinClause**</span><span class="sxs-lookup"><span data-stu-id="508a6-153">**joinClause** with **joinClauseKind**</span></span>
++ <span data-ttu-id="508a6-154">**joinedQuery**</span><span class="sxs-lookup"><span data-stu-id="508a6-154">**joinedQuery**</span></span>
++ <span data-ttu-id="508a6-155">**settingClause**</span><span class="sxs-lookup"><span data-stu-id="508a6-155">**settingClause**</span></span>
 
-## <a name="troubleshooting"></a><span data-ttu-id="dd3b1-156">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="dd3b1-156">Troubleshooting</span></span>
+## <a name="troubleshooting"></a><span data-ttu-id="508a6-156">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="508a6-156">Troubleshooting</span></span>
 
-<span data-ttu-id="dd3b1-157">**toString()** メソッドを、**SysDaQueryObject**、**SysDaUpdateObject**、**SysDaInsertObject**、および **SysDaQueryObject** オブジェクトに対して使用して、構築している明細書を表示できます。</span><span class="sxs-lookup"><span data-stu-id="dd3b1-157">You can use the **toString()** method on **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the statement that you're building.</span></span>
+<span data-ttu-id="508a6-157">**toString()** メソッドを、**SysDaQueryObject**、**SysDaUpdateObject**、**SysDaInsertObject**、および **SysDaQueryObject** オブジェクトに対して使用して、構築している明細書を表示できます。</span><span class="sxs-lookup"><span data-stu-id="508a6-157">You can use the **toString()** method on **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the statement that you're building.</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

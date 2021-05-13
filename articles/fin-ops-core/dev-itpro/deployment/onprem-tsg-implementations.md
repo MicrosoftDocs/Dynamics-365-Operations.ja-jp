@@ -2,7 +2,7 @@
 title: オンプレミス環境の問題を解決するためのスクリプト
 description: このトピックは、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。
 author: faix
-ms.date: 11/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30]
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: f125e974893c8eed8221c513308b57ae377482ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 25338f2bf9c339a3cce56eefb1f161521186ca18
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745321"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924389"
 ---
-# <a name="scripts-for-resolving-issues-in-on-premises-environments"></a><span data-ttu-id="f23c4-103">オンプレミス環境の問題を解決するためのスクリプト</span><span class="sxs-lookup"><span data-stu-id="f23c4-103">Scripts for resolving issues in on-premises environments</span></span>
+# <a name="scripts-for-resolving-issues-in-on-premises-environments"></a><span data-ttu-id="70126-103">オンプレミス環境の問題を解決するためのスクリプト</span><span class="sxs-lookup"><span data-stu-id="70126-103">Scripts for resolving issues in on-premises environments</span></span>
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f23c4-104">このトピックは、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。</span><span class="sxs-lookup"><span data-stu-id="f23c4-104">This topic will serve as a central repository for scripts that you can use to fix issues in on-premises environments.</span></span> <span data-ttu-id="f23c4-105">通常、これらのスクリプトは配置前スクリプトまたは配置後スクリプトとして実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f23c4-105">These scripts must usually be run as pre-deployment or post-deployment scripts.</span></span>
+<span data-ttu-id="70126-104">このトピックは、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。</span><span class="sxs-lookup"><span data-stu-id="70126-104">This topic will serve as a central repository for scripts that you can use to fix issues in on-premises environments.</span></span> <span data-ttu-id="70126-105">通常、これらのスクリプトは配置前スクリプトまたは配置後スクリプトとして実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="70126-105">These scripts must usually be run as pre-deployment or post-deployment scripts.</span></span>
 
-<span data-ttu-id="f23c4-106">オンプレミス環境における問題の解決方法の詳細については、 [オンプレミス配置のトラブルシューティング](troubleshoot-on-prem.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f23c4-106">For more information about how to resolve issues in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).</span></span>
+<span data-ttu-id="70126-106">オンプレミス環境における問題の解決方法の詳細については、 [オンプレミス配置のトラブルシューティング](troubleshoot-on-prem.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70126-106">For more information about how to resolve issues in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).</span></span>
 
-## <a name="prepare-your-environment-for-script-execution"></a><span data-ttu-id="f23c4-107">スクリプトの実行に関する環境の準備</span><span class="sxs-lookup"><span data-stu-id="f23c4-107">Prepare your environment for script execution</span></span>
+## <a name="prepare-your-environment-for-script-execution"></a><span data-ttu-id="70126-107">スクリプトの実行に関する環境の準備</span><span class="sxs-lookup"><span data-stu-id="70126-107">Prepare your environment for script execution</span></span>
 
-1. <span data-ttu-id="f23c4-108">配置前スクリプトと配置後スクリプトの実行をコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="f23c4-108">Configure the execution of pre-deployment and post-deployment scripts.</span></span> <span data-ttu-id="f23c4-109">詳細については、[ローカル エージェントの配置前スクリプトと配置後スクリプト](../lifecycle-services/pre-post-scripts.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f23c4-109">For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).</span></span>
-2. <span data-ttu-id="f23c4-110">次のコードを Predeployment.ps1 に追加します。</span><span class="sxs-lookup"><span data-stu-id="f23c4-110">Add the following code to your Predeployment.ps1 script.</span></span>
+1. <span data-ttu-id="70126-108">配置前スクリプトと配置後スクリプトの実行をコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="70126-108">Configure the execution of pre-deployment and post-deployment scripts.</span></span> <span data-ttu-id="70126-109">詳細については、[ローカル エージェントの配置前スクリプトと配置後スクリプト](../lifecycle-services/pre-post-scripts.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70126-109">For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).</span></span>
+2. <span data-ttu-id="70126-110">次のコードを Predeployment.ps1 に追加します。</span><span class="sxs-lookup"><span data-stu-id="70126-110">Add the following code to your Predeployment.ps1 script.</span></span>
 
     ```powershell
     # This has to be filled out
@@ -49,14 +49,16 @@ ms.locfileid: "5745321"
     #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
     
     #& $agentShare\scripts\TSG_RemoveFilesFromZip.ps1 -agentShare $agentShare -filesToRemove 'Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.dll','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.pdb'
+
+    #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     ```
 
-3. <span data-ttu-id="f23c4-111">このトピックの該当する部分から、問題を修正するために必要なコードをコピーし、新しいファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="f23c4-111">From the relevant section of this topic, copy the code that you require to fix your issue, and paste it into a new file.</span></span> <span data-ttu-id="f23c4-112">このファイルを、 Predeployment.ps1 スクリプトが格納されているフォルダと同じフォルダに保存します。</span><span class="sxs-lookup"><span data-stu-id="f23c4-112">Save this file in the same folder where your Predeployment.ps1 script is stored.</span></span> <span data-ttu-id="f23c4-113">ファイル名は、コードをコピーしたセクションのタイトルと同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="f23c4-113">The file name must match the title of the section that you copied the code from.</span></span> <span data-ttu-id="f23c4-114">修正する必要があるその他の問題について、この手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="f23c4-114">Repeat this step for other issues that you must fix.</span></span>
-4. <span data-ttu-id="f23c4-115">Predeployment.ps1 スクリプトで、前に追加したコードで、使用するスクリプトを呼び出す行のコメントを解除します。</span><span class="sxs-lookup"><span data-stu-id="f23c4-115">In the Predeployment.ps1 script, in the code that you added earlier, uncomment the lines that invoke the scripts that you want to use.</span></span>
+3. <span data-ttu-id="70126-111">このトピックの該当する部分から、問題を修正するために必要なコードをコピーし、新しいファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="70126-111">From the relevant section of this topic, copy the code that you require to fix your issue, and paste it into a new file.</span></span> <span data-ttu-id="70126-112">このファイルを、 Predeployment.ps1 スクリプトが格納されているフォルダと同じフォルダに保存します。</span><span class="sxs-lookup"><span data-stu-id="70126-112">Save this file in the same folder where your Predeployment.ps1 script is stored.</span></span> <span data-ttu-id="70126-113">ファイル名は、コードをコピーしたセクションのタイトルと同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="70126-113">The file name must match the title of the section that you copied the code from.</span></span> <span data-ttu-id="70126-114">修正する必要があるその他の問題について、この手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="70126-114">Repeat this step for other issues that you must fix.</span></span>
+4. <span data-ttu-id="70126-115">Predeployment.ps1 スクリプトで、前に追加したコードで、使用するスクリプトを呼び出す行のコメントを解除します。</span><span class="sxs-lookup"><span data-stu-id="70126-115">In the Predeployment.ps1 script, in the code that you added earlier, uncomment the lines that invoke the scripts that you want to use.</span></span>
 
-## <a name="tsg_sysclassrunnerps1"></a><a name="sysclassrunner"></a><span data-ttu-id="f23c4-116">TSG\_SysClassRunner.ps1</span><span class="sxs-lookup"><span data-stu-id="f23c4-116">TSG\_SysClassRunner.ps1</span></span>
+## <a name="tsg_sysclassrunnerps1"></a><a name="sysclassrunner"></a><span data-ttu-id="70126-116">TSG\_SysClassRunner.ps1</span><span class="sxs-lookup"><span data-stu-id="70126-116">TSG\_SysClassRunner.ps1</span></span>
 
-<span data-ttu-id="f23c4-117">次のスクリプトは、プラットフォームの一部のバージョンで SysClassRunner が実行される場合に発生する問題を修正するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f23c4-117">The following script is used to fix an issue that occurs when SysClassRunner is run in some versions of the platform.</span></span> <span data-ttu-id="f23c4-118">この問題の詳細については、 [SysClassRunner が正常に実行されません](troubleshoot-on-prem.md#SysClassRunner) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f23c4-118">For more information about this issue, see [SysClassRunner doesn't run successfully](troubleshoot-on-prem.md#SysClassRunner).</span></span>
+<span data-ttu-id="70126-117">次のスクリプトは、プラットフォームの一部のバージョンで SysClassRunner が実行される場合に発生する問題を修正するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="70126-117">The following script is used to fix an issue that occurs when SysClassRunner is run in some versions of the platform.</span></span> <span data-ttu-id="70126-118">この問題の詳細については、 [SysClassRunner が正常に実行されません](troubleshoot-on-prem.md#SysClassRunner) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70126-118">For more information about this issue, see [SysClassRunner doesn't run successfully](troubleshoot-on-prem.md#SysClassRunner).</span></span>
 
 ```powershell
 param (
@@ -125,9 +127,9 @@ $xml.save($axConfig)
 Write-Output "TSG SysClassRunner script succeeded"
 ```
 
-## <a name="tsg_updatefrdeployerconfigps1"></a><a name="frdeployer"></a><span data-ttu-id="f23c4-119">TSG\_UpdateFRDeployerConfig.ps1</span><span class="sxs-lookup"><span data-stu-id="f23c4-119">TSG\_UpdateFRDeployerConfig.ps1</span></span>
+## <a name="tsg_updatefrdeployerconfigps1"></a><a name="frdeployer"></a><span data-ttu-id="70126-119">TSG\_UpdateFRDeployerConfig.ps1</span><span class="sxs-lookup"><span data-stu-id="70126-119">TSG\_UpdateFRDeployerConfig.ps1</span></span>
 
-<span data-ttu-id="f23c4-120">次のスクリプトは、プラットフォームの一部のバージョンで財務諸表が配置される場合に発生する問題を修正するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f23c4-120">The following script is used to fix an issue that occurs when Financial Reporting is deployed in some versions of the platform.</span></span> <span data-ttu-id="f23c4-121">この問題の詳細については、 [ファイルまたはアセンブリ EntityFramework を読み込めませんでした](troubleshoot-on-prem.md#FREntityFramework) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f23c4-121">For more information about this issue, see [Could not load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).</span></span>
+<span data-ttu-id="70126-120">次のスクリプトは、プラットフォームの一部のバージョンで財務諸表が配置される場合に発生する問題を修正するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="70126-120">The following script is used to fix an issue that occurs when Financial Reporting is deployed in some versions of the platform.</span></span> <span data-ttu-id="70126-121">この問題の詳細については、 [ファイルまたはアセンブリ EntityFramework を読み込めませんでした](troubleshoot-on-prem.md#FREntityFramework) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70126-121">For more information about this issue, see [Could not load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).</span></span>
 
 ```powershell
 param (
@@ -182,9 +184,9 @@ else
 }
 ```
 
-## <a name="tsg_windowsazurestorageps1"></a><a name="azurestorage"></a><span data-ttu-id="f23c4-122">TSG\_WindowsAzureStorage.ps1</span><span class="sxs-lookup"><span data-stu-id="f23c4-122">TSG\_WindowsAzureStorage.ps1</span></span>
+## <a name="tsg_windowsazurestorageps1"></a><a name="azurestorage"></a><span data-ttu-id="70126-122">TSG\_WindowsAzureStorage.ps1</span><span class="sxs-lookup"><span data-stu-id="70126-122">TSG\_WindowsAzureStorage.ps1</span></span>
 
-<span data-ttu-id="f23c4-123">次のスクリプトは、一部のバージョンのプラットフォームでファイルをダウンロードまたはエクスポートできない問題を解決するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f23c4-123">The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform.</span></span>
+<span data-ttu-id="70126-123">次のスクリプトは、一部のバージョンのプラットフォームでファイルをダウンロードまたはエクスポートできない問題を解決するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="70126-123">The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform.</span></span>
 
 ```powershell
 param (
@@ -224,9 +226,9 @@ Write-Output "TSG WindowsAzureStorage script succeeded"
 ```
 
 
-## <a name="tsg_removefilesfromzipps1"></a><a name="taxengine"></a><span data-ttu-id="f23c4-124">TSG\_RemoveFilesFromZip.ps1</span><span class="sxs-lookup"><span data-stu-id="f23c4-124">TSG\_RemoveFilesFromZip.ps1</span></span>
+## <a name="tsg_removefilesfromzipps1"></a><a name="taxengine"></a><span data-ttu-id="70126-124">TSG\_RemoveFilesFromZip.ps1</span><span class="sxs-lookup"><span data-stu-id="70126-124">TSG\_RemoveFilesFromZip.ps1</span></span>
 
-<span data-ttu-id="f23c4-125">次のスクリプトは、以前バージョン 10.0.5 から 10.0.9 を使用していた一部の顧客に発生する問題を修正するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f23c4-125">The following script is used to fix an issue that occurs for some customers who were previously on versions 10.0.5 through 10.0.9.</span></span> <span data-ttu-id="f23c4-126">準備プロセスの仕組みにより、TaxEngine フォルダーにはいくつかの古いバージョンの DLL が 残っていますが、新しいリリースでは、別のモジュールフォルダに移動されています。</span><span class="sxs-lookup"><span data-stu-id="f23c4-126">Due to how the prepare process works, there are some older versions of DLLs that remain in the TaxEngine folder, which in newer releases have been moved to different module folders.</span></span> <span data-ttu-id="f23c4-127">このスクリプトを使用すると、DLL が AOS ノードに配置される前に、ダウンロードした資産から削除されます。</span><span class="sxs-lookup"><span data-stu-id="f23c4-127">This script ensures that these DLLs are removed from the downloaded asset, before being deployed to the AOS nodes.</span></span>
+<span data-ttu-id="70126-125">次のスクリプトは、以前バージョン 10.0.5 から 10.0.9 を使用していた一部の顧客に発生する問題を修正するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="70126-125">The following script is used to fix an issue that occurs for some customers who were previously on versions 10.0.5 through 10.0.9.</span></span> <span data-ttu-id="70126-126">準備プロセスの仕組みにより、TaxEngine フォルダーにはいくつかの古いバージョンの DLL が 残っていますが、新しいリリースでは、別のモジュールフォルダに移動されています。</span><span class="sxs-lookup"><span data-stu-id="70126-126">Due to how the prepare process works, there are some older versions of DLLs that remain in the TaxEngine folder, which in newer releases have been moved to different module folders.</span></span> <span data-ttu-id="70126-127">このスクリプトを使用すると、DLL が AOS ノードに配置される前に、ダウンロードした資産から削除されます。</span><span class="sxs-lookup"><span data-stu-id="70126-127">This script ensures that these DLLs are removed from the downloaded asset, before being deployed to the AOS nodes.</span></span>
 
 ```powershell
 [CmdletBinding()]
@@ -294,5 +296,57 @@ finally
 
 ```
 
+## <a name="tsg_enablegmsaforaosps1"></a><a name="useGMSA"></a><span data-ttu-id="70126-128">TSG\_EnableGMSAForAOS.ps1</span><span class="sxs-lookup"><span data-stu-id="70126-128">TSG\_EnableGMSAForAOS.ps1</span></span>
+
+<span data-ttu-id="70126-129">次のスクリプトは、AOS が Active Directory (AD) ユーザーからグループ管理サービス アカウント (gMSA) に実行されるアカウントを変更するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="70126-129">The following script is used to change the account the AOS runs under from an Active Directory (AD) user to a group Managed Service Account (gMSA).</span></span>
+
+>[!NOTE]
+> <span data-ttu-id="70126-130">このスクリプトは、バージョン 10.0.17 でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="70126-130">This script can only be used starting with version 10.0.17.</span></span>
+> <span data-ttu-id="70126-131">gMSA アカウントで使用できないプリンタを各 AOS ノードに再インストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="70126-131">You will need to reinstall the printers on each AOS node as they are not available to the gMSA account.</span></span> <span data-ttu-id="70126-132">詳細については、[オンプレミス環境でのネットワーク プリンター デバイスのインストール](../analytics/install-network-printer-onprem.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70126-132">For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).</span></span>
+
+```powershell
+param (
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [ValidateScript({ Test-Path -Path $_ })]
+    [string] $agentShare,
+
+    [Parameter(Mandatory=$true)]
+    [string]
+    $gmsaAccount
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configJsonPath = "$basePath\config.json"
+
+$configJson = Get-Content $configJsonPath | ConvertFrom-Json
+
+$updatedComponents = @()
+foreach ($component in $configJson.components)
+{
+    if($component.name -eq "AOS")
+    {
+        $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
+        $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
+    }
+
+    $updatedComponents += $component
+}
+
+$configJson.components = $updatedComponents
+
+$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
+
+Write-Host "Successfully updated the configuration for AOS gMSA execution."
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 3d8124b2ab2697afe421687599a8ed0228b3b07b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d1214cec71d48cea26646de803e83c51f2da85c6
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745641"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865914"
 ---
-# <a name="modify-existing-fields-in-a-table-through-extension"></a><span data-ttu-id="d2730-103">拡張機能を使用したテーブル内の既存のフィールドの変更</span><span class="sxs-lookup"><span data-stu-id="d2730-103">Modify existing fields in a table through extension</span></span>
+# <a name="modify-existing-fields-in-a-table-through-extension"></a><span data-ttu-id="1d982-103">拡張機能を使用したテーブル内の既存のフィールドの変更</span><span class="sxs-lookup"><span data-stu-id="1d982-103">Modify existing fields in a table through extension</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d2730-104">テーブル内の既存のフィールドのプロパティを変更するには、まずテーブルの拡張を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2730-104">To modify properties on an existing field in a table, you must first create an extension for the table.</span></span> <span data-ttu-id="d2730-105">次のプロパティを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="d2730-105">You can modify the following properties:</span></span>
+<span data-ttu-id="1d982-104">テーブル内の既存のフィールドのプロパティを変更するには、まずテーブルの拡張を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1d982-104">To modify properties on an existing field in a table, you must first create an extension for the table.</span></span> <span data-ttu-id="1d982-105">次のプロパティを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="1d982-105">You can modify the following properties:</span></span>
 
-- <span data-ttu-id="d2730-106">**ラベル**</span><span class="sxs-lookup"><span data-stu-id="d2730-106">**Label**</span></span>
-- <span data-ttu-id="d2730-107">**ヘルプ テキスト**</span><span class="sxs-lookup"><span data-stu-id="d2730-107">**Help text**</span></span>
-- <span data-ttu-id="d2730-108">**国地域コード**</span><span class="sxs-lookup"><span data-stu-id="d2730-108">**Country Region Codes**</span></span>
-- <span data-ttu-id="d2730-109">**拡張データ型** - 現在選択されている EDT から派生した拡張データ型 (EDT) のみを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d2730-109">**Extended Data Type** – You can select only extended data types (EDTs) that are derived from the currently selected EDT.</span></span> <span data-ttu-id="d2730-110">プロパティ シートのルックアップはフィルタリングされ、それらの EDT のみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d2730-110">The lookup in the property sheet is filtered so that only those EDTs are shown.</span></span> <span data-ttu-id="d2730-111">たとえば、InventTable 上のテーブルの **幅** フィールドで EDT を編集する場合は、 **BOMMeasureWidth** を基にして EDT を作成することができます。次に、 **InventTable** 拡張子の **幅** フィールドで、 **拡張データ型** プロパティを変更します。</span><span class="sxs-lookup"><span data-stu-id="d2730-111">For example, to edit the EDT on the **Width** field in the InventTable table, you can create a derived EDT that is based on **BOMMeasureWidth**, and then modify the **Extended Data Type** property on the **Width** field in the **InventTable** extension.</span></span> <span data-ttu-id="d2730-112">この方法で、新しいパッケージが配置されるときに、ユーザー インターフェイスで **幅** フィールドの外観を変更できます。</span><span class="sxs-lookup"><span data-stu-id="d2730-112">In this way, you can modify the look and feel of the **Width** field in the user interface when the new package is deployed.</span></span>
+- <span data-ttu-id="1d982-106">**ラベル**</span><span class="sxs-lookup"><span data-stu-id="1d982-106">**Label**</span></span>
+- <span data-ttu-id="1d982-107">**ヘルプ テキスト**</span><span class="sxs-lookup"><span data-stu-id="1d982-107">**Help text**</span></span>
+- <span data-ttu-id="1d982-108">**国地域コード**</span><span class="sxs-lookup"><span data-stu-id="1d982-108">**Country Region Codes**</span></span>
+- <span data-ttu-id="1d982-109">**拡張データ型** - 現在選択されている EDT から派生した拡張データ型 (EDT) のみを選択できます。</span><span class="sxs-lookup"><span data-stu-id="1d982-109">**Extended Data Type** – You can select only extended data types (EDTs) that are derived from the currently selected EDT.</span></span> <span data-ttu-id="1d982-110">プロパティ シートのルックアップはフィルタリングされ、それらの EDT のみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1d982-110">The lookup in the property sheet is filtered so that only those EDTs are shown.</span></span> <span data-ttu-id="1d982-111">たとえば、InventTable 上のテーブルの **幅** フィールドで EDT を編集する場合は、 **BOMMeasureWidth** を基にして EDT を作成することができます。次に、 **InventTable** 拡張子の **幅** フィールドで、 **拡張データ型** プロパティを変更します。</span><span class="sxs-lookup"><span data-stu-id="1d982-111">For example, to edit the EDT on the **Width** field in the InventTable table, you can create a derived EDT that is based on **BOMMeasureWidth**, and then modify the **Extended Data Type** property on the **Width** field in the **InventTable** extension.</span></span> <span data-ttu-id="1d982-112">この方法で、新しいパッケージが配置されるときに、ユーザー インターフェイスで **幅** フィールドの外観を変更できます。</span><span class="sxs-lookup"><span data-stu-id="1d982-112">In this way, you can modify the look and feel of the **Width** field in the user interface when the new package is deployed.</span></span>
 
 ![既存のフィールドの変更](media/modify-table-property.jpg) 
 

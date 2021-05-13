@@ -1,74 +1,109 @@
 ---
 title: 事前定義された製品バリアントの作成
 description: この手順では、製品分析コードの組み合わせを使用する製品マスターの製品バリアントの作成を説明します。
-author: ShylaThompson
-ms.date: 08/29/2018
+author: t-benebo
+manager: tfehr
+ms.date: 04/22/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8340d295ffd072c95d9b174507ef4203131c8165
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: acd2e3f1464dfed09ee24764270b06970b747d7c
+ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809353"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5938205"
 ---
-# <a name="create-predefined-product-variants"></a><span data-ttu-id="c8198-103">事前定義された製品バリアントの作成</span><span class="sxs-lookup"><span data-stu-id="c8198-103">Create predefined product variants</span></span>
+# <a name="predefined-product-variants"></a><span data-ttu-id="2dbff-103">事前定義された製品バリアント</span><span class="sxs-lookup"><span data-stu-id="2dbff-103">Predefined product variants</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c8198-104">この手順では、製品分析コードの組み合わせを使用する製品マスターの製品バリアントの作成を説明します。</span><span class="sxs-lookup"><span data-stu-id="c8198-104">This procedure walks through creating product variants for a product master using the combinations of product dimensions.</span></span> <span data-ttu-id="c8198-105">この手順の作成に使用されるデモ データ会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="c8198-105">The demo company used to create this procedure is USMF.</span></span>
+## <a name="example-scenario-create-predefined-product-variants"></a><span data-ttu-id="2dbff-104">シナリオ例: 事前定義された製品バリアントの作成</span><span class="sxs-lookup"><span data-stu-id="2dbff-104">Example scenario: Create predefined product variants</span></span>
 
+<span data-ttu-id="2dbff-105">このシナリオ例では、製品分析コードの組み合わせを使用する製品マスターの製品バリアントを作成ずる方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-105">This example scenario shows how to create product variants for a product master using a combinations of product dimensions.</span></span>
 
-## <a name="create-a-product-master"></a><span data-ttu-id="c8198-106">製品マスターの作成</span><span class="sxs-lookup"><span data-stu-id="c8198-106">Create a product master</span></span>
-1. <span data-ttu-id="c8198-107">[製品情報管理] > [製品] > [製品マスター] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="c8198-107">Go to Product information management > Products > Product masters.</span></span>
-2. <span data-ttu-id="c8198-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-108">Click New.</span></span>
-3. <span data-ttu-id="c8198-109">[製品番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c8198-109">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="c8198-110">[製品番号] フィールドに番号順序が設定されていない場合は、製品番号の手動入力のみ必須です。</span><span class="sxs-lookup"><span data-stu-id="c8198-110">Entering a product number manually is only required if no number sequence has been set for the product number field.</span></span> <span data-ttu-id="c8198-111">つまり、番号順序がフィールドに設定されている場合、手順を省略します。</span><span class="sxs-lookup"><span data-stu-id="c8198-111">In other words, skip the step if number sequence has been set for the field.</span></span>  
-4. <span data-ttu-id="c8198-112">[製品名] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c8198-112">In the Product name field, type a value.</span></span>
-5. <span data-ttu-id="c8198-113">[製品分析コード グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="c8198-113">In the Product dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="c8198-114">製品分析コード グループ SizeCol (サイズおよび色) を選択します。</span><span class="sxs-lookup"><span data-stu-id="c8198-114">Select the product dimension group SizeCol (Size and Color).</span></span>  
-6. <span data-ttu-id="c8198-115">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-115">Click OK.</span></span>
+### <a name="make-demo-data-available"></a><span data-ttu-id="2dbff-106">デモ データを有効化する</span><span class="sxs-lookup"><span data-stu-id="2dbff-106">Make demo data available</span></span>
 
-## <a name="add-product-dimensions"></a><span data-ttu-id="c8198-116">製品分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="c8198-116">Add product dimensions</span></span>
-1. <span data-ttu-id="c8198-117">[製品分析コード] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-117">Click Product dimensions.</span></span>
-    * <span data-ttu-id="c8198-118">この例では、手動で製品分析コードを入力する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c8198-118">This example shows how to manually enter product dimensions.</span></span> <span data-ttu-id="c8198-119">使用する製品分析コードの値を含むサイズ、色、またはスタイル グループを選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="c8198-119">You can also choose to select a size, color or style group that includes the product dimension values you want to use.</span></span>  
-2. <span data-ttu-id="c8198-120">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-120">Click New.</span></span>
-3. <span data-ttu-id="c8198-121">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="c8198-121">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="c8198-122">[サイズ] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="c8198-122">In the Size field, enter or select a value.</span></span>
-5. <span data-ttu-id="c8198-123">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c8198-123">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="c8198-124">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-124">Click New.</span></span>
-7. <span data-ttu-id="c8198-125">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="c8198-125">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="c8198-126">[サイズ] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="c8198-126">In the Size field, enter or select a value.</span></span>
-9. <span data-ttu-id="c8198-127">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c8198-127">In the Name field, type a value.</span></span>
-10. <span data-ttu-id="c8198-128">[色] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-128">Click the Colors tab.</span></span>
-11. <span data-ttu-id="c8198-129">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-129">Click New.</span></span>
-12. <span data-ttu-id="c8198-130">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="c8198-130">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="c8198-131">[色] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="c8198-131">In the Color field, enter or select a value.</span></span>
-14. <span data-ttu-id="c8198-132">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c8198-132">In the Name field, type a value.</span></span>
-15. <span data-ttu-id="c8198-133">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-133">Click New.</span></span>
-16. <span data-ttu-id="c8198-134">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="c8198-134">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="c8198-135">[色] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="c8198-135">In the Color field, enter or select a value.</span></span>
-18. <span data-ttu-id="c8198-136">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c8198-136">In the Name field, type a value.</span></span>
-19. <span data-ttu-id="c8198-137">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-137">Click Save.</span></span>
-20. <span data-ttu-id="c8198-138">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="c8198-138">Close the page.</span></span>
+<span data-ttu-id="2dbff-107">ここで推奨されている値を使用してこのシナリオを実行するには、デモ データがインストールされている必要があり、法人として *USMF* を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2dbff-107">To follow this scenario using the values suggested here, you must have demo data installed, and you must select the *USMF* legal entity.</span></span>
 
-## <a name="generate-product-variants"></a><span data-ttu-id="c8198-139">製品バリアントの生成</span><span class="sxs-lookup"><span data-stu-id="c8198-139">Generate product variants</span></span>
-1. <span data-ttu-id="c8198-140">[製品バリアント] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-140">Click Product variants.</span></span>
-2. <span data-ttu-id="c8198-141">[バリアント修正候補] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-141">Click Variant suggestions.</span></span>
-3. <span data-ttu-id="c8198-142">[すべて選択] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-142">Click Select all.</span></span>
-    * <span data-ttu-id="c8198-143">この例では、すべての可能なバリアントが選択されます。</span><span class="sxs-lookup"><span data-stu-id="c8198-143">In this example, all possible variants are selected.</span></span> <span data-ttu-id="c8198-144">可能な製品分析コードの組み合わせのサブセットのみをバリアントの作成に使用する場合、個々のエントリを選択できます。</span><span class="sxs-lookup"><span data-stu-id="c8198-144">If only a subset of the possible product dimension combinations will be used to create variants, you can select the individual entries.</span></span>  
-4. <span data-ttu-id="c8198-145">[作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-145">Click Create.</span></span>
-    * <span data-ttu-id="c8198-146">製品分析コードの値の組み合わせに基づいてすべてのバリアントの説明を生成できます。</span><span class="sxs-lookup"><span data-stu-id="c8198-146">You can generate descriptions for all your variants based on the combination of product dimension values.</span></span> <span data-ttu-id="c8198-147">説明はオプションです。</span><span class="sxs-lookup"><span data-stu-id="c8198-147">The descriptions are optional.</span></span>  
-5. <span data-ttu-id="c8198-148">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8198-148">Click Save.</span></span>
+### <a name="step-1-create-a-product-master"></a><span data-ttu-id="2dbff-108">ステップ 1: 製品マスターの作成</span><span class="sxs-lookup"><span data-stu-id="2dbff-108">Step 1: Create a product master</span></span>
 
+<span data-ttu-id="2dbff-109">製品マスターを作成するには:</span><span class="sxs-lookup"><span data-stu-id="2dbff-109">To create a product master:</span></span>
 
+1. <span data-ttu-id="2dbff-110">**製品情報管理 > 製品 > 製品マスター** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="2dbff-110">Go to **Product information management > Products > Product masters**.</span></span>
+1. <span data-ttu-id="2dbff-111">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-111">Select **New**.</span></span>
+1. <span data-ttu-id="2dbff-112">**製品番号** フィールドにまだ番号が表示できない場合は、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-112">If the **Product number** field doesn't already show a number, then enter a value.</span></span> <span data-ttu-id="2dbff-113">これは、フィールドに番号順序が設定されていない場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="2dbff-113">This is only required if no number sequence has been set for this field.</span></span>
+1. <span data-ttu-id="2dbff-114">**製品名** フィールドに、名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-114">Enter a name in the **Product name** field.</span></span>
+1. <span data-ttu-id="2dbff-115">**製品分析コード グループ** フィールドで、製品分析コード グループ *SizeCol* (サイズおよび色) を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-115">In the **Product dimension group** field, select the product dimension group *SizeCol* (Size and Color).</span></span>
+1. <span data-ttu-id="2dbff-116">**OK** を選択して新しい製品マスターを作成し開きます。</span><span class="sxs-lookup"><span data-stu-id="2dbff-116">Select **OK** to create and open the new product master.</span></span>
+
+### <a name="step-2-add-product-dimensions"></a><span data-ttu-id="2dbff-117">ステップ 2: 製品分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="2dbff-117">Step 2: Add product dimensions</span></span>
+
+<span data-ttu-id="2dbff-118">この例では、手動で製品分析コードを入力する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-118">This example shows how to manually enter product dimensions.</span></span> <span data-ttu-id="2dbff-119">使用する製品分析コードの値を含むサイズ、色、またはスタイル グループを選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="2dbff-119">You can also choose to select a size, color, or style group that includes the product dimension values you want to use.</span></span>
+
+<span data-ttu-id="2dbff-120">製品分析コードを追加するには:</span><span class="sxs-lookup"><span data-stu-id="2dbff-120">To add product dimensions:</span></span>
+
+1. <span data-ttu-id="2dbff-121">新しい製品マスターを開いたまま、アクション ペインで **製品分析コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-121">With your new product master still open, select **Product dimensions** on the Action Pane.</span></span>
+1. <span data-ttu-id="2dbff-122">**サイズ** タブを開き、ツールバーの **新規** を選択して、グリッドに行を追加します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-122">Open the **Size** tab and select **New** on the toolbar to add a row to the grid.</span></span> <span data-ttu-id="2dbff-123">新しい行に対して、次の設定を行います。</span><span class="sxs-lookup"><span data-stu-id="2dbff-123">Make the following settings for the new row:</span></span>
+    - <span data-ttu-id="2dbff-124">**サイズ:** サイズの値を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-124">**Size:** Select a size value.</span></span>
+    - <span data-ttu-id="2dbff-125">**名前:** サイズの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-125">**Name:** Enter a name for the size.</span></span>
+1. <span data-ttu-id="2dbff-126">ツールバーで **新規** を選択し、新しい **サイズ** および **名前** を使用して、グリッドに 2 番目のサイズを追加します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-126">Select **New** on the toolbar and add a second size to the grid with a new **Size** and **Name**.</span></span>
+1. <span data-ttu-id="2dbff-127">**色** タブを開き、ツールバーの **新規** を選択して、グリッドに行を追加します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-127">Open the **Colors** tab and select **New** on the toolbar to add a row to the grid.</span></span> <span data-ttu-id="2dbff-128">新しい行に対して、次の設定を行います。</span><span class="sxs-lookup"><span data-stu-id="2dbff-128">Make the following settings for the new row:</span></span>
+    - <span data-ttu-id="2dbff-129">**色:** 色の値を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-129">**Color:** Select a color value.</span></span>
+    - <span data-ttu-id="2dbff-130">**名前:** 色の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-130">**Name:** Enter a name for the color.</span></span>
+1. <span data-ttu-id="2dbff-131">ツールバーで **新規** を選択し、新しい **色** および **名前** を使用して、グリッドに 2 番目の色を追加します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-131">Select **New** on the toolbar and add a second color to the grid with a new **Color** and **Name**.</span></span>
+1. <span data-ttu-id="2dbff-132">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-132">Select **Save**.</span></span>
+1. <span data-ttu-id="2dbff-133">ページを閉じて、新しい製品マスターに戻ります。</span><span class="sxs-lookup"><span data-stu-id="2dbff-133">Close the page to return to your new product master.</span></span>
+
+### <a name="step-3-generate-product-variants"></a><span data-ttu-id="2dbff-134">ステップ 3: 製品バリアントの生成</span><span class="sxs-lookup"><span data-stu-id="2dbff-134">Step 3: Generate product variants</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2dbff-135">このセクションでは、*バリアント提案ページの改善* 機能が有効になっていない場合に製品バリアントを生成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-135">This section describes how to generate product variants when the *Variant suggestions page improvements* feature isn't enabled.</span></span> <span data-ttu-id="2dbff-136">この機能を利用できる場合に製品バリアントを生成する方法の詳細については、次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="2dbff-136">See the next section for details about how to generate product variants when that feature is available.</span></span>
+
+<span data-ttu-id="2dbff-137">製品バリアントを生成するには:</span><span class="sxs-lookup"><span data-stu-id="2dbff-137">To generate product variants:</span></span>
+
+1. <span data-ttu-id="2dbff-138">新しい製品マスターを開いたまま、アクション ペインで **製品バリアント** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-138">With your new product master still open, select **Product variants** on the Action Pane.</span></span>
+1. <span data-ttu-id="2dbff-139">アクション ペインで、**バリアントの提案** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-139">Select **Variant suggestions** on the Action Pane.</span></span>
+1. <span data-ttu-id="2dbff-140">システムは、製品に対して定義されたサイズと色のすべての可能な組み合わせを含む一覧を生成します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-140">The system generates a list with all possible combinations of the sizes and colors you defined for the product.</span></span> <span data-ttu-id="2dbff-141">ツールバーで、**すべて選択** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-141">Select **Select all** on the toolbar.</span></span>
+    - <span data-ttu-id="2dbff-142">この例では、すべての可能なバリアントを選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-142">In this example, select all of the possible variants.</span></span> <span data-ttu-id="2dbff-143">可能な製品分析コードの組み合わせのサブセットのみを使用する場合は、必要に応じて必要なチェック ボックスのみをオンにします。</span><span class="sxs-lookup"><span data-stu-id="2dbff-143">If you only want to use a subset of the possible product dimension combinations, select only the required check boxes as needed.</span></span>  
+1. <span data-ttu-id="2dbff-144">**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-144">Select **Create**.</span></span>
+1. <span data-ttu-id="2dbff-145">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-145">Select **Save**.</span></span>
+
+## <a name="improved-variant-suggestions"></a><span data-ttu-id="2dbff-146">バリアント提案の改善</span><span class="sxs-lookup"><span data-stu-id="2dbff-146">Improved variant suggestions</span></span>
+
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
+
+<span data-ttu-id="2dbff-147">*バリアント提案ページの改善* 機能を使用すると、**バリアント提案** ページが改善され、製品分析コードの組み合わせが多い会社のパフォーマンスと操作性問題に対処できます。</span><span class="sxs-lookup"><span data-stu-id="2dbff-147">The *Variant suggestions page improvements* feature improves the **Variant suggestions** page to address performance and usability issues for companies that have a high number of product dimension combinations.</span></span> <span data-ttu-id="2dbff-148">バリアント提案を生成する製品分析コード値を選択するプロセスの強化により、関連する製品バリアントの識別とリリースをより迅速かつ簡単に行うことができます。</span><span class="sxs-lookup"><span data-stu-id="2dbff-148">The enhanced process for selecting the product dimension values for which to generate variant suggestions makes it faster and easier to identify and release the relevant set of product variants.</span></span>
+
+<span data-ttu-id="2dbff-149">この機能により、次の改善が追加されました。</span><span class="sxs-lookup"><span data-stu-id="2dbff-149">The following improvements are added by this feature:</span></span>
+
+- <span data-ttu-id="2dbff-150">**バリアント提案の繰延生成:** 最初に開いたときに、**バリアント提案** ページに提案が表示されなくなりました。</span><span class="sxs-lookup"><span data-stu-id="2dbff-150">**Deferred generation of variant suggestions:** The **Variant suggestions** page no longer shows suggestions when you first open it.</span></span> <span data-ttu-id="2dbff-151">代わりに、必要な値を明示的に選択してから、**提案** ボタンを選択して組み合わせを生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2dbff-151">Instead, you must explicitly choose which values you will need and then select the **Suggest** button to generate the combinations.</span></span> <span data-ttu-id="2dbff-152">これにより、プロセスが可視化され対話型になります。</span><span class="sxs-lookup"><span data-stu-id="2dbff-152">This makes the process more visible and interactive.</span></span>
+- <span data-ttu-id="2dbff-153">**分析コード値の選択:** 多くの分析コード値がある場合は、通常、そのうちのいくつかを含むバリアント提案を生成します (新しい色やスタイルのセットを導入する場合など)。</span><span class="sxs-lookup"><span data-stu-id="2dbff-153">**Selection of dimensions values:** When you have many dimension values, you are typically interested in generating variant suggestions that include just a few of them (such as when introducing a new set of colors or styles).</span></span> <span data-ttu-id="2dbff-154">改善されたデザインで、製品バリアント提案を生成する分析コード値を選択できます。</span><span class="sxs-lookup"><span data-stu-id="2dbff-154">With the improved design, you can select the dimension values for which you want to generate product variant suggestions.</span></span> <span data-ttu-id="2dbff-155">これにより、提案されるバリアントの関連性が大幅に増加し、システム パフォーマンスとユーザーの生産性の両方が向上します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-155">This greatly increases the relevance of the suggested variants and improves both system performance and user productivity.</span></span>
+
+### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a><span data-ttu-id="2dbff-156">バリアント提案ページの改善機能をオンにする</span><span class="sxs-lookup"><span data-stu-id="2dbff-156">Turn on the Variant suggestions page improvements feature</span></span>
+
+<span data-ttu-id="2dbff-157">*バリアント提案ページの改善* 機能を使用するには、システム上で有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2dbff-157">Before you can use *Variant suggestions page improvements* feature, it must be turned on in your system.</span></span> <span data-ttu-id="2dbff-158">管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="2dbff-158">Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on.</span></span> <span data-ttu-id="2dbff-159">**機能管理** ワークスペースで、この機能は次のようにリストされています。</span><span class="sxs-lookup"><span data-stu-id="2dbff-159">In the **Feature management** workspace, the feature is listed in the following way:</span></span>
+
+- <span data-ttu-id="2dbff-160">**モジュール :** *製品情報管理*</span><span class="sxs-lookup"><span data-stu-id="2dbff-160">**Module:** *Product information management*</span></span>
+- <span data-ttu-id="2dbff-161">**機能名:** *バリアント提案ページの改善*</span><span class="sxs-lookup"><span data-stu-id="2dbff-161">**Feature name:** *Variant suggestions page improvements*</span></span>
+
+### <a name="work-with-the-improved-variant-suggestions"></a><span data-ttu-id="2dbff-162">改善されたバリアント提案に関する作業</span><span class="sxs-lookup"><span data-stu-id="2dbff-162">Work with the improved variant suggestions</span></span>
+
+<span data-ttu-id="2dbff-163">*バリアント提案ページの改善* 機能が有効になっている場合に製品バリアントを生成するには:</span><span class="sxs-lookup"><span data-stu-id="2dbff-163">To generate product variant suggestions when the *Variant suggestions page improvements* feature is enabled:</span></span>
+
+1. <span data-ttu-id="2dbff-164">前のセクションで説明したように、製品マスターを開くか作成し、必要な製品分析コードを追加します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-164">Open or create a product master and add the required product dimensions to it, as described in the previous section.</span></span>
+1. <span data-ttu-id="2dbff-165">製品マスターを開いたまま、アクション ペインで **製品バリアント** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-165">With the product master open, select **Product variants** on the Action Pane.</span></span>
+1. <span data-ttu-id="2dbff-166">アクション ペインで、**バリアントの提案** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-166">Select **Variant suggestions** on the Action Pane.</span></span>
+1. <span data-ttu-id="2dbff-167">各分析コードに使用する値を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-167">Select the values that you want to use for each of the dimensions.</span></span>
+1. <span data-ttu-id="2dbff-168">上部のツールバーで、**提案** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-168">On the top toolbar, select **Suggest**.</span></span>
+1. <span data-ttu-id="2dbff-169">システムは、選択したサイズと色のすべての可能な組み合わせを含む一覧を生成します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-169">The system generates a list with all possible combinations of the sizes and colors you selected.</span></span> <span data-ttu-id="2dbff-170">**提案されるバリアント** クイック タブで、使用する製品分析コードの組み合わせごとにチェック ボックスをオンにするか、ツールバーの **すべて選択** を選択してすべてのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-170">On the **Suggested variants** FastTab, select the check box for each product dimension combination that you want to use, or select **Select all** on the toolbar to select all of them.</span></span>  
+1. <span data-ttu-id="2dbff-171">**作成** を選択して、バリアントを現在の製品マスターに追加します。</span><span class="sxs-lookup"><span data-stu-id="2dbff-171">Select **Create** to add the variants to the current product master.</span></span>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

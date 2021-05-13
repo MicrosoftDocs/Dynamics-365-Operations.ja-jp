@@ -14,42 +14,42 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a134edd97e261222daab0acd764ba8c414a02a48
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 410fa6e32ba7c2f6f5260120f99d3a2ae7d927d0
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752728"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920843"
 ---
-# <a name="lifecycle-services-resources"></a><span data-ttu-id="77ea1-103">Lifecycle Services のリソース</span><span class="sxs-lookup"><span data-stu-id="77ea1-103">Lifecycle Services resources</span></span>
+# <a name="lifecycle-services-resources"></a><span data-ttu-id="73de7-103">Lifecycle Services のリソース</span><span class="sxs-lookup"><span data-stu-id="73de7-103">Lifecycle Services resources</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="77ea1-104">Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and Operations アプリの実装アプリケーション ライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。</span><span class="sxs-lookup"><span data-stu-id="77ea1-104">Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations of the Dynamics 365 Finance and Operations apps.</span></span>
+<span data-ttu-id="73de7-104">Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and Operations アプリの実装アプリケーション ライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。</span><span class="sxs-lookup"><span data-stu-id="73de7-104">Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations of the Dynamics 365 Finance and Operations apps.</span></span>
 
--   [<span data-ttu-id="77ea1-105">Lifecycle Services (LCS) の新機能</span><span class="sxs-lookup"><span data-stu-id="77ea1-105">What's new in Lifecycle Services (LCS)</span></span>](whats-new-lcs.md)
--   [<span data-ttu-id="77ea1-106">Lifecycle Services (LCS) ユーザー ガイド</span><span class="sxs-lookup"><span data-stu-id="77ea1-106">Lifecycle Services (LCS) user guide</span></span>](lcs-user-guide.md)
--   [<span data-ttu-id="77ea1-107">Lifecycle Services (LCS) のプロジェクト</span><span class="sxs-lookup"><span data-stu-id="77ea1-107">Projects in Lifecycle Services (LCS)</span></span>](./ax-2012/projects-lcs.md)
--   [<span data-ttu-id="77ea1-108">プロジェクトの研修</span><span class="sxs-lookup"><span data-stu-id="77ea1-108">Project onboarding</span></span>](project-onboarding.md)
--   [<span data-ttu-id="77ea1-109">Lifecycle Services (LCS) での方法</span><span class="sxs-lookup"><span data-stu-id="77ea1-109">Methodologies in Lifecycle Services (LCS)</span></span>](./ax-2012/methodologies-lcs.md)
--   [<span data-ttu-id="77ea1-110">Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)</span><span class="sxs-lookup"><span data-stu-id="77ea1-110">Business process modeler (BPM) in Lifecycle Services (LCS)</span></span>](bpm-overview.md)
--   [<span data-ttu-id="77ea1-111">Lifecycle Services (LCS) のクラウド ホスト環境</span><span class="sxs-lookup"><span data-stu-id="77ea1-111">Cloud-hosted environments in Lifecycle Services (LCS)</span></span>](./ax-2012/cloud-hosted-environments-lcs.md)
--   [<span data-ttu-id="77ea1-112">Finance and Operations アプリのサポート エクスペリエンスを管理する</span><span class="sxs-lookup"><span data-stu-id="77ea1-112">Manage the support experiences for Finance and Operations apps</span></span>](cloud-powered-support-lcs.md)
--   [<span data-ttu-id="77ea1-113">Lifecycle Services の設定の概要</span><span class="sxs-lookup"><span data-stu-id="77ea1-113">Configuration in Lifecycle Services overview</span></span>](configuration-manager-lcs.md)
--   [<span data-ttu-id="77ea1-114">Lifecycle Services (LCS) 内のカスタマイズ分析</span><span class="sxs-lookup"><span data-stu-id="77ea1-114">Customization analysis in Lifecycle Services (LCS)</span></span>](./ax-2012/customization-analysis-lcs.md)
--   [<span data-ttu-id="77ea1-115">Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール</span><span class="sxs-lookup"><span data-stu-id="77ea1-115">Infrastructure estimator in Lifecycle Services (LCS)</span></span>](./ax-2012/infrastructure-estimator-lcs.md)
--   [<span data-ttu-id="77ea1-116">Lifecycle Services (LCS) での問題検索</span><span class="sxs-lookup"><span data-stu-id="77ea1-116">Issue search in Lifecycle Services (LCS)</span></span>](issue-search-lcs.md)
--   [<span data-ttu-id="77ea1-117">Lifecycle Services (LCS) のライセンス数見積もりツール</span><span class="sxs-lookup"><span data-stu-id="77ea1-117">License sizing estimator in Lifecycle Services (LCS)</span></span>](./ax-2012/license-sizing-estimator-lcs.md)
--   [<span data-ttu-id="77ea1-118">提案依頼 (RFP) の応答</span><span class="sxs-lookup"><span data-stu-id="77ea1-118">Request for proposals (RFP) responses</span></span>](./ax-2012/rfp-responses-lcs.md)
--   [<span data-ttu-id="77ea1-119">Lifecycle Services (LCS) のシステム診断</span><span class="sxs-lookup"><span data-stu-id="77ea1-119">System diagnostics in Lifecycle Services (LCS)</span></span>](./ax-2012/system-diagnostics-lcs.md)
--   [<span data-ttu-id="77ea1-120">Lifecycle Services (LCS) におけるアップグレード分析</span><span class="sxs-lookup"><span data-stu-id="77ea1-120">Upgrade analysis in Lifecycle Services (LCS)</span></span>](./ax-2012/upgrade-analysis-lcs.md)
--   [<span data-ttu-id="77ea1-121">Lifecycle Services (LCS) の使用状況プロファイル</span><span class="sxs-lookup"><span data-stu-id="77ea1-121">Usage profiler in Lifecycle Services (LCS)</span></span>](./ax-2012/usage-profiler-lcs.md)
--   [<span data-ttu-id="77ea1-122">Lifecycle Services (LCS) のダウンロード可能ツール</span><span class="sxs-lookup"><span data-stu-id="77ea1-122">Downloadable tools in Lifecycle Services (LCS)</span></span>](./ax-2012/lcs-downloadable-tools-formerly-informationsource.md)
+-   [<span data-ttu-id="73de7-105">Lifecycle Services (LCS) の新機能</span><span class="sxs-lookup"><span data-stu-id="73de7-105">What's new in Lifecycle Services (LCS)</span></span>](whats-new-lcs.md)
+-   [<span data-ttu-id="73de7-106">Lifecycle Services (LCS) ユーザー ガイド</span><span class="sxs-lookup"><span data-stu-id="73de7-106">Lifecycle Services (LCS) user guide</span></span>](lcs-user-guide.md)
+-   [<span data-ttu-id="73de7-107">Lifecycle Services (LCS) のプロジェクト</span><span class="sxs-lookup"><span data-stu-id="73de7-107">Projects in Lifecycle Services (LCS)</span></span>](./ax-2012/projects-lcs.md)
+-   [<span data-ttu-id="73de7-108">プロジェクトの研修</span><span class="sxs-lookup"><span data-stu-id="73de7-108">Project onboarding</span></span>](project-onboarding.md)
+-   [<span data-ttu-id="73de7-109">Lifecycle Services (LCS) での方法</span><span class="sxs-lookup"><span data-stu-id="73de7-109">Methodologies in Lifecycle Services (LCS)</span></span>](./ax-2012/methodologies-lcs.md)
+-   [<span data-ttu-id="73de7-110">Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)</span><span class="sxs-lookup"><span data-stu-id="73de7-110">Business process modeler (BPM) in Lifecycle Services (LCS)</span></span>](bpm-overview.md)
+-   [<span data-ttu-id="73de7-111">Lifecycle Services (LCS) のクラウド ホスト環境</span><span class="sxs-lookup"><span data-stu-id="73de7-111">Cloud-hosted environments in Lifecycle Services (LCS)</span></span>](./ax-2012/cloud-hosted-environments-lcs.md)
+-   [<span data-ttu-id="73de7-112">Finance and Operations アプリのサポート エクスペリエンスを管理する</span><span class="sxs-lookup"><span data-stu-id="73de7-112">Manage the support experiences for Finance and Operations apps</span></span>](cloud-powered-support-lcs.md)
+-   [<span data-ttu-id="73de7-113">Lifecycle Services の設定の概要</span><span class="sxs-lookup"><span data-stu-id="73de7-113">Configuration in Lifecycle Services overview</span></span>](configuration-manager-lcs.md)
+-   [<span data-ttu-id="73de7-114">Lifecycle Services (LCS) 内のカスタマイズ分析</span><span class="sxs-lookup"><span data-stu-id="73de7-114">Customization analysis in Lifecycle Services (LCS)</span></span>](./ax-2012/customization-analysis-lcs.md)
+-   [<span data-ttu-id="73de7-115">Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール</span><span class="sxs-lookup"><span data-stu-id="73de7-115">Infrastructure estimator in Lifecycle Services (LCS)</span></span>](./ax-2012/infrastructure-estimator-lcs.md)
+-   [<span data-ttu-id="73de7-116">Lifecycle Services (LCS) での問題検索</span><span class="sxs-lookup"><span data-stu-id="73de7-116">Issue search in Lifecycle Services (LCS)</span></span>](issue-search-lcs.md)
+-   [<span data-ttu-id="73de7-117">Lifecycle Services (LCS) のライセンス数見積もりツール</span><span class="sxs-lookup"><span data-stu-id="73de7-117">License sizing estimator in Lifecycle Services (LCS)</span></span>](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)
+-   [<span data-ttu-id="73de7-118">提案依頼 (RFP) の応答</span><span class="sxs-lookup"><span data-stu-id="73de7-118">Request for proposals (RFP) responses</span></span>](./ax-2012/rfp-responses-lcs.md)
+-   [<span data-ttu-id="73de7-119">Lifecycle Services (LCS) のシステム診断</span><span class="sxs-lookup"><span data-stu-id="73de7-119">System diagnostics in Lifecycle Services (LCS)</span></span>](./ax-2012/system-diagnostics-lcs.md)
+-   [<span data-ttu-id="73de7-120">Lifecycle Services (LCS) におけるアップグレード分析</span><span class="sxs-lookup"><span data-stu-id="73de7-120">Upgrade analysis in Lifecycle Services (LCS)</span></span>](./ax-2012/upgrade-analysis-lcs.md)
+-   [<span data-ttu-id="73de7-121">Lifecycle Services (LCS) の使用状況プロファイル</span><span class="sxs-lookup"><span data-stu-id="73de7-121">Usage profiler in Lifecycle Services (LCS)</span></span>](./ax-2012/usage-profiler-lcs.md)
+-   [<span data-ttu-id="73de7-122">Lifecycle Services (LCS) のダウンロード可能ツール</span><span class="sxs-lookup"><span data-stu-id="73de7-122">Downloadable tools in Lifecycle Services (LCS)</span></span>](./ax-2012/lcs-downloadable-tools-formerly-informationsource.md)
 
-### <a name="additional-resources"></a><span data-ttu-id="77ea1-123">追加リソース</span><span class="sxs-lookup"><span data-stu-id="77ea1-123">Additional resources</span></span>
+### <a name="additional-resources"></a><span data-ttu-id="73de7-123">追加リソース</span><span class="sxs-lookup"><span data-stu-id="73de7-123">Additional resources</span></span>
 
--   <span data-ttu-id="77ea1-124">Dynamics 365 Finance and Operations アプリに関する技術的な質問がある場合、または Microsoft Dynamics Lifecycle Services (LCS) にアクセスするための助けが必要な場合、Microsoft に連絡する方法の詳細については、[Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートの検索](lcs-support.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="77ea1-124">For information about how to contact Microsoft if you have technical questions about Dynamics 365 Finance and Operations apps, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS), see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).</span></span>
--   <span data-ttu-id="77ea1-125">Microsoft Dynamics AX 2012 に関する技術的な質問がある場合またはサポートが必要な場合に、Microsoft に連絡する方法の詳細については、[Finance and Operations アプリのサポート エクスペリエンスの管理](cloud-powered-support-lcs.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="77ea1-125">For information about how to contact Microsoft if you have technical questions about Microsoft Dynamics AX 2012 or need support, see [Manage the support experiences for Finance and Operations apps](cloud-powered-support-lcs.md).</span></span>
+-   <span data-ttu-id="73de7-124">Dynamics 365 Finance and Operations アプリに関する技術的な質問がある場合、または Microsoft Dynamics Lifecycle Services (LCS) にアクセスするための助けが必要な場合、Microsoft に連絡する方法の詳細については、[Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートの検索](lcs-support.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="73de7-124">For information about how to contact Microsoft if you have technical questions about Dynamics 365 Finance and Operations apps, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS), see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).</span></span>
+-   <span data-ttu-id="73de7-125">Microsoft Dynamics AX 2012 に関する技術的な質問がある場合またはサポートが必要な場合に、Microsoft に連絡する方法の詳細については、[Finance and Operations アプリのサポート エクスペリエンスの管理](cloud-powered-support-lcs.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="73de7-125">For information about how to contact Microsoft if you have technical questions about Microsoft Dynamics AX 2012 or need support, see [Manage the support experiences for Finance and Operations apps](cloud-powered-support-lcs.md).</span></span>
 
 
 
