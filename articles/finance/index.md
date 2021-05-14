@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 33c12fc47dc5781867ad6872a8be2a9ae1f28a2d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813486"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890332"
 ---
 # <a name="finance-home-page"></a>Finance ホーム ページ
 
@@ -38,11 +38,11 @@ ms.locfileid: "5813486"
         - [原価会計](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [経費管理](expense-management/expense-management.md)
-        - [財務諸表](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [経費管理](/dynamics365/project-operations/prod-exp/expense-management)
+        - [財務諸表](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [固定資産](fixed-assets/fixed-assets.md)
         - [一般会計と財務諸表](general-ledger/general-ledger.md) 
-        - [プロジェクト管理および会計](project-management/overview-project-management-accounting.md)
+        - [プロジェクト管理および会計](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [公的機関](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -65,7 +65,7 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 
 ### <a name="countryregion-functionality"></a>国/地域の機能
 
-それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、ヘルプ コンテンツにある [ローカライズと規制の機能](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) のセクションを参照してください。
+それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、ヘルプ コンテンツにある [ローカライズと規制の機能](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) のセクションを参照してください。
 
 ### <a name="additional-content"></a>追加のコンテンツ
 
@@ -73,6 +73,6 @@ Supply Chain Management 機能は、企業が購買する商品やサービス�
 
 ## <a name="elearning-courses"></a>eLearning コース
 
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path) をご確認ください。
+オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance](/learn/browse/?products=dynamics-finance&resource_type=learning+path) をご確認ください。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

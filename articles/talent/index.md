@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 1b5220577108eebf1efe1adf2c64835d287a3e7a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 23e840db6175f97f31ba978a7f126686e3dcd175
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796661"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894369"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Dynamics 365 Talent へようこそ
 
@@ -31,7 +31,7 @@ Talent に含まれている Attract アプリは、組織が必要とするス�
 - [Onboard の使用を開始する](create-onboarding-experience.md)
 
 > [!IMPORTANT]
-> Dynamics 365 Talent: Core HR の機能は、現在 Dynamics 365 Human Resources に含まれています。 [Dynamics 365 Human Resources へようこそ](https://docs.microsoft.com/dynamics365/human-resources/hr-welcome) で Human Resources のドキュメントを参照できます。
+> Dynamics 365 Talent: Core HR の機能は、現在 Dynamics 365 Human Resources に含まれています。 [Dynamics 365 Human Resources へようこそ]() で Human Resources のドキュメントを参照できます。
 
 
 
