@@ -14,12 +14,12 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
+                - name: 10.0.19 のプラットフォーム更新プログラム (2021 年 7 月)
+                  href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: 10.0.18 のプラットフォーム更新プログラム (2021 年 5 月)
                   href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)
                   href: get-started/whats-new-platform-updates-10-0-17.md
-                - name: 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)
-                  href: get-started/whats-new-platform-updates-10-0-16.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -303,19 +303,19 @@
                         - name: Project Service Automation 統合のコンフィギュレーション
                           items:
                             - name: Project Service Automation の概要
-                              href: ../../finance/project-management/PSA-integration.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-integration
                             - name: Project Service Automation 統合パラメーター
-                              href: ../../finance/project-management/PSA-parameters.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
                             - name: プロジェクト契約とプロジェクトの同期
-                              href: ../../finance/project-management/project-contracts-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
                             - name: プロジェクト タスクの同期
-                              href: ../../finance/project-management/project-tasks-template.md
+                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
                             - name: プロジェクト経費カテゴリの同期
-                              href: ../../finance/project-management/project-categories-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
                             - name: プロジェクト見積のプロジェクト予測への同期
-                              href: ../../finance/project-management/project-estimates-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
                             - name: プロジェクト実績のプロジェクト統合仕訳帳への同期
-                              href: ../../finance/project-management/project-actuals-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: 外部 Web サービスの使用
               href: data-entities/consume-external-web-service.md
             - name: 電子メッセージ
@@ -691,7 +691,7 @@
                     - name: モデルとデータ モデル要素の作成の概要
                       href: dev-tools/create-data-model-elements.md
                     - name: 拡張機能の名前付けガイドライン
-                      href: extensibility/NamingGuidelines.md
+                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
                     - name: カスタマイズをオフにして機能を廃止
                       href: dev-tools/lock-models.md
                 - name: カスタマイズ分析のレポート
@@ -1072,8 +1072,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Lifecycle Services の新機能および変更された機能
                   href: lifecycle-services/whats-new-lcs.md
-                - name: 既知の問題
-                  href: lifecycle-services/known-issues.md
                 - name: Lifecycle Services (LCS) の削除済みまたは非推奨の機能
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services ユーザー ガイド
@@ -1400,12 +1398,16 @@
               href: perf-test/rsat/rsat-install-configure.md
             - name: Regression Suite Automation Tool の使用
               href: perf-test/rsat/rsat-run.md
+            - name: Regression Suite Automation Tool 内でのテスト ケースの管理
+              href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: 予測値の検証
               href: perf-test/rsat/rsat-validate-expected.md
             - name: チェーン テスト ケース
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: 派生テスト ケース
               href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: パラメーター ファイルのアップグレード
+              href: perf-test/rsat/rsat-upgrade-parameter-files.md
             - name: Regression Suite Automation Tool チュートリアル
               href: perf-test/rsat/rsat-tutorial.md
             - name: 管理者以外のユーザーのコンフィギュレーション
@@ -1582,6 +1584,8 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: AX 2012 アップグレード - DACPAC プロセスを使用したサンドボックス環境でのデータ アップグレード
                   href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: AX 2012 からのアップグレード - SQL トランザクション レプリケーション
+                  href: database/replication-setup.md
                 - name: AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012 アップグレード - オンプレミス環境

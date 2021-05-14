@@ -94,12 +94,12 @@
                   items:
                     - name: Commerce ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.19 (2021 年 7 月)
+                      href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (2021 年 5 月)
                       href: get-started/whats-new-commerce-10-0-18.md
                     - name: Commerce 10.0.17 (2021 年 4 月)
                       href: get-started/whats-new-commerce-10-0-17.md
-                    - name: Commerce 10.0.16 (2021 年 2 月)
-                      href: get-started/whats-new-commerce-10-0-16.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -184,6 +184,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Power Apps からキャンバス アプリを埋め込む
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+                - name: サード パーティのアプリの埋め込み
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
                 - name: ルックアップを使用した情報の検索
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: セッションの日付変更
@@ -220,7 +222,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
-                - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
+                - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび運用環境
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations Commerce プロジェクトを実装する
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
@@ -280,6 +282,8 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Retail Hardware Station のコンフィギュレーションとインストール
                   href: retail-hardware-station-configuration-installation.md
+                - name: シールされた Commerce セルフサービス コンポーネントの一括配置
+                  href: dev-itpro/Enhanced-Mass-Deployment.md
                 - name: レガシ セルフサービス コンポーネントの一括配置
                   href: dev-itpro/retail-mass-deployment.md
                 - name: 診断とトラブルシューティングの Commerce コンポーネント イベント
@@ -368,7 +372,7 @@
                       href: pos-operations.md
                     - name: カスタマイズされた Modern POS のデバイスの有効化
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: POS サインインの Azure Active Directory 認証の有効化
+                    - name: POS サインインの Azure Active Directory 認証のコンフィギュレーション
                       href: aad-pos-logon.md
                     - name: POS での製品および顧客の検索
                       href: POS-search-improvements.md
@@ -634,6 +638,8 @@
                   href: tender_based_discounts.md
                 - name: 出荷割引の概要
                   href: retail-shipping-discount.md
+                - name: 購買プロモーションを使用したギフトのコンフィギュレーション
+                  href: gift-with-purchase.md
                 - name: クーポンの設定
                   href: retail-coupons.md
                 - name: POS での割引の表示
@@ -756,10 +762,12 @@
                   href: order-fulfillment-overview.md
                 - name: 店舗における注文のフルフィルメントの設定
                   href: order-fulfillment-pos-setup.md
-                - name: POS の注文通知の表示
+                - name: POS での注文通知の表示
                   href: notifications-pos.md
                 - name: 連続プログラムの販売と販売注文の処理
                   href: tasks/use-continuity-program.md
+                - name: 販売時点管理 (POS) での顧客のチェックイン通知の有効化
+                  href: enable-customer-check-in.md
             - name: 返品
               items:
                 - name: リンクされた払戻
@@ -922,6 +930,8 @@
                   href: manage-csp.md
                 - name: Web アクティビティ イベント コレクションのオプトアウト
                   href: web-activity-opt-out.md
+                - name: 測定単位設定の適用
+                  href: unit-of-measure.md
             - name: サイト コンテンツの管理
               items:
                 - name: コンテンツを追加する方法
@@ -1092,6 +1102,8 @@
                       href: delivery-options-module.md
                     - name: 集荷情報モジュール
                       href: pickup-info-module.md
+                    - name: 集荷のチェックイン モジュール
+                      href: check-in-pickup-module.md
                     - name: 注文詳細モジュール
                       href: order-confirmation-module.md
                     - name: ギフト カード モジュール
@@ -1194,6 +1206,8 @@
               href: store-performance-information.md
             - name: 最新、頻度、金額 (RFM) 分析の設定
               href: set-up-rfm-analysis.md
+            - name: Dynamics 365 Commerce での Microsoft Clarity の設定
+              href: set-up-clarity.md
         - name: グローバリゼーション
           items:
             - name: Commerce チャネルの会計統合の概要
@@ -1202,6 +1216,14 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: 小売店舗のユーザー定義の証明書プロファイル
               href: localizations/certificate-profiles-for-retail-stores.md
+            - name: Regulatory Configuration Service
+              items:
+                - name: Regulatory Configuration Service の概要
+                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service - グローバリゼーション機能
+                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
+                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
             - name: オーストリア
               items:
                 - name: オーストリア向け会計登録サービス統合サンプル
@@ -2210,6 +2232,8 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: モジュール props.autogenerated.ts ファイル
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                    - name: モジュール コンフィギュレーションのプリセット
+                      href: e-commerce-extensibility/module-config-presets.md
                 - name: モジュールの開発
                   items:
                     - name: 新しいモジュールの作成
@@ -2416,6 +2440,18 @@
                   href: dev-itpro/cart-view-handlers.md
                 - name: カスタム ボタンを POS ヘッダー バーに追加
                   href: dev-itpro/pos-header-bar.md
+                - name: POS の独立したパッケージ SDK
+                  items:
+                    - name: POS 拡張機能の概要
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: POS 拡張機能の使用を開始する
+                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: POS 拡張機能パッケージ プロジェクトの作成
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Modern POS 拡張機能 appx ファイルの作成
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: POS 拡張機能のデバッグ
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
             - name: Hardware Station の拡張機能
               items:
                 - name: Hardware Station および拡張機能

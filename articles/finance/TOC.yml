@@ -72,6 +72,8 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.19 (2021 年 7 月)
+                      href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (2021 年 5 月)
                       href: get-started/whats-new-changed-10-0-18.md
                     - name: Finance 10.0.17 (2021 年 4 月)
@@ -162,6 +164,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
                 - name: Power Apps からキャンバス アプリを埋め込む
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
+                - name: サード パーティのアプリの埋め込み
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/finance/toc.json
                 - name: ルックアップを使用した情報の検索
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
                 - name: セッションの日付変更
@@ -198,7 +202,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
                 - name: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
-                - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
+                - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび運用環境
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: 買掛金勘定
           items:
@@ -683,45 +687,45 @@
         - name: 経費管理
           items:
             - name: 経費管理の概要
-              href: expense-management/expense-management.md
+              href: /dynamics365/project-operations/prod-exp/expense-management
             - name: 経費精算書の再設計
-              href: expense-management/ExpenseWorkspaceNew.md
+              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
             - name: 経費管理の計画
-              href: expense-management/plan-expense-management.md
+              href: /dynamics365/project-operations/prod-exp/plan-expense-management
             - name: 経費管理パラメーター
-              href: expense-management/Expense-Management-Parameters.md
+              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
             - name: 経費管理モバイル ワークスペース
-              href: expense-management/expense-management-mobile-workspace.md
+              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
             - name: 経費管理のワークフローの設定
-              href: expense-management/expense-workflows.md
+              href: /dynamics365/project-operations/prod-exp/expense-workflows
             - name: 経費管理のワークフロー
-              href: expense-management/expense-workflow.md
+              href: /dynamics365/project-operations/prod-exp/expense-workflow
             - name: 経費委任の管理
-              href: expense-management/manage-expense-delegation.md
+              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
             - name: 経費の領収書
-              href: expense-management/expense-receipt-processing.md
+              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
             - name: クレジット カード トランザクションのインポートおよび管理
-              href: expense-management/import-credit-card.md
+              href: /dynamics365/project-operations/prod-exp/import-credit-card
             - name: 経費レポートでの配分
-              href: expense-management/expense-report-distributions.md
+              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
             - name: 会社間経費
-              href: expense-management/intercompany-expense.md
+              href: /dynamics365/project-operations/prod-exp/intercompany-expense
             - name: 経費ポリシーの定義
-              href: expense-management/travel-expense-policies.md
+              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
             - name: 経費精算書の表示
-              href: expense-management/view-expense-report.md
+              href: /dynamics365/project-operations/prod-exp/view-expense-report
             - name: 経費精算書の転記
-              href: expense-management/post-expense.md
+              href: /dynamics365/project-operations/prod-exp/post-expense
             - name: 経費精算書と複数の承認者
-              href: expense-management/expense-report-multiple-approvers.md
+              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
             - name: 経費管理における VAT 回収
-              href: expense-management/VAT-expense-report.md
+              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
             - name: 日当ルール
-              href: expense-management/per-diem.md
+              href: /dynamics365/project-operations/prod-exp/per-diem
             - name: 出張費要求
-              href: expense-management/travel-req.md
+              href: /dynamics365/project-operations/prod-exp/travel-req
             - name: 経費精算書での個人経費
-              href: expense-management/personal-expenses.md
+              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: 固定資産
           items:
             - name: 固定資産ホーム ページ
@@ -1102,8 +1106,22 @@
                   href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
                 - name: 転記された消費税トランザクションの表示
                   href: general-ledger/tasks/view-posted-sales-tax-transactions.md
-                - name: コード別売上税支払レポートの印刷
+                - name: コード別消費税支払レポートの印刷
                   href: general-ledger/print-sales-tax-payment-by-code-report.md
+                - name: 消費税に関するトラブルシューティング
+                  items:
+                    - name: 税が計算されていないか、税額がゼロである
+                      href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+                    - name: 税計算のパフォーマンスがトランザクションに影響する
+                      href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+                    - name: TaxTrans のフィールド値が誤っている
+                      href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+                    - name: TaxTrans レコードが生成されない
+                      href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+                    - name: 税が伝票の誤った勘定科目に転記される
+                      href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+                    - name: 伝票が生成されない
+                      href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
             - name: 源泉徴収税
               items:
                 - name: 源泉徴収税の設定
@@ -1215,85 +1233,85 @@
         - name: プロジェクト管理および会計
           items:
             - name: プロジェクト管理および会計の概要
-              href: project-management/overview-project-management-accounting.md
+              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
             - name: 会社間請求書
-              href: project-management/intercompany-invoicing.md
+              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
             - name: 会社間プロジェクト請求のコンフィギュレーション
-              href: project-management/tasks/configure-intercompany-project-invoicing.md
+              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
             - name: 労務および経費の標準原価のコンフィギュレーション
-              href: project-management/tasks/configure-standard-costs-labor-expenses.md
+              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
             - name: 仕入先支払留保条件の作成と適用
-              href: project-management/create-and-apply-vendor-payment-retention-terms.md
+              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
             - name: ペイウェンペイド仕入先支払方法の設定と使用
-              href: project-management/setup-manage-vendor-payments.md
+              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
             - name: 購買入庫におけるプロジェクト費用見越し額
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: プロジェクト請求
               href: accounts-payable/project-invoicing.md
             - name: プロジェクト契約
-              href: project-management/project-contracts.md
+              href: /dynamics365/project-operations/prod-pma/project-contracts
             - name: 状況に基づいた請求書のアドバンス契約の作成
-              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
+              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
             - name: プロジェクトの予測と予算
-              href: project-management/project-forecasts-budgets.md
+              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
             - name: プロジェクト予算の予測モデルを作成
-              href: project-management/create-forecast-models-project-budgets.md
+              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
             - name: 会計年度末のプロジェクト予算の転送
-              href: project-management/process-project-budgets-for-fiscal-year-end.md
+              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
             - name: プロジェクト販売注文
-              href: project-management/project-sales-orders.md
+              href: /dynamics365/project-operations/prod-pma/project-sales-orders
             - name: プロジェクトの発注書
-              href: project-management/project-purchase-orders.md
+              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
             - name: プロジェクト見積
-              href: project-management/project-quotations.md
+              href: /dynamics365/project-operations/prod-pma/project-quotations
             - name: プロジェクト見積の確認、更新、送信
-              href: project-management/confirm-update-send-project-quotation.md
+              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
             - name: プロジェクトに見積書を転送する
-              href: project-management/transfer-quote-new-existing-project.md
+              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
             - name: プロジェクト リソース
               items:
                 - name: プロジェクト リソースの概要
-                  href: project-management/project-resourcing.md
+                  href: /dynamics365/project-operations/prod-pma/project-resourcing
                 - name: プロジェクト リソースの設定
-                  href: project-management/set-up-project-resources.md
+                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
                 - name: リソースのコンピテンシーの管理
-                  href: project-management/manage-resource-competencies.md
+                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
                 - name: 新しいプロジェクトの作成
-                  href: project-management/create-new-project.md
+                  href: /dynamics365/project-operations/prod-pma/create-new-project
                 - name: ロール ベースの価格の設定
-                  href: project-management/set-up-role-based-pricing.md
+                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
                 - name: プロジェクト チームの作成
-                  href: project-management/create-project-team.md
+                  href: /dynamics365/project-operations/prod-pma/create-project-team
                 - name: リソース能力の同期
-                  href: project-management/synchronize-resource-capacity.md
+                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
                 - name: プロジェクト リソースのスケジューリング パフォーマンス
-                  href: project-management/project-scheduling-performance.md
+                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
                 - name: 作業分解構造テンプレートにロールを設定する
-                  href: project-management/set-up-roles-wbs-template.md
+                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
                 - name: 計画されているリソースの履行
-                  href: project-management/resource-fulfillment-planned-resources.md
+                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
             - name: 在庫品目要求からの発注書品目の入庫
-              href: project-management/tasks/receive-items-purchase-order-item-requirement.md
+              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
             - name: 作業分解構造
               items:
                 - name: 作業分解構造の概要
-                  href: project-management/work-breakdown-structures.md
+                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
                 - name: Microsoft Project Client 統合
-                  href: project-management/project-integration.md
+                  href: /dynamics365/project-operations/prod-pma/project-integration
                 - name: Project モバイル アプリケーションの概要
-                  href: project-management/project-mobile-application-overview.md
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
                 - name: プロジェクト時間入力モバイル ワークスペース
-                  href: project-management/project-time-entry-mobile-workspace.md
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
                 - name: Project Timesheet モバイル アプリ
-                  href: project-management/project-timesheet.md
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet
                 - name: モバイル デバイスでのプロジェクト タイムシート
-                  href: project-management/mobile-timesheets.md
+                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
                 - name: Project Timesheet モバイル アプリのカスタム フィールドの実装
-                  href: project-management/custom-fields-mobile.md
+                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
             - name: プロジェクト交付
-              href: project-management/project-grants.md
+              href: /dynamics365/project-operations/prod-pma/project-grants
             - name: プロジェクト見積書の削除
-              href: project-management/eliminate-project-estimate.md
+              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: 公的機関
           items:
             - name: 公的機関ホーム ページ
@@ -1419,61 +1437,61 @@
             - name: グローバリゼーション サービス
               items:
                 - name: グローバリゼーション サービスの概要
-                  href: localizations/globalization-services-overview.md
+                  href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory Configuration Service
                   items:
                     - name: Regulatory Configuration Service の概要
-                      href: localizations/rcs-overview.md
+                      href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Regulatory Configuration Service - グローバリゼーション機能
-                      href: localizations/rcs-globalization-feature.md
+                      href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
-                      href: localizations/rcs-global-repo-upload.md
+                      href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                 - name: 電子請求
                   items:
                     - name: 電子請求の概要
-                      href: localizations/e-invoicing-service-overview.md
+                      href: localizations/e-invoicing-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: 電子請求管理コンポーネント
-                      href: localizations/e-invoicing-service-administration.md
+                      href: localizations/e-invoicing-service-administration.md?toc=/dynamics365/finance/toc.json
                     - name: Regulatory Configuration Services (RCS) での電子請求のコンフィギュレーション
-                      href: localizations/e-invoicing-configuration-rcs.md
+                      href: localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                     - name: Finance および Supply Chain Management での電子請求書の発行
-                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
                     - name: Azure ストレージ アカウントと Key Vault の作成
-                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
                     - name: 使用開始
                       items:
                         - name: 電子請求サービス管理の使用を開始する
-                          href: localizations/e-invoicing-get-started-service-administration.md
+                          href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: 電子請求の使用を開始する
-                          href: localizations/e-invoicing-get-started.md
+                          href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: ブラジル用電子請求の使用を開始する
-                          href: localizations/e-invoicing-bra-get-started.md
+                          href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: エジプト用電子請求の使用を開始する
-                          href: localizations/e-invoicing-eg-get-started.md
+                          href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: イタリア用電子請求の使用を開始する
-                          href: localizations/e-invoicing-ita-get-started.md
+                          href: localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: メキシコ用電子請求の使用を開始する
-                          href: localizations/e-invoicing-mex-get-started.md
+                          href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: 電子請求の設定
-                          href: localizations/e-invoicing-setup.md
+                          href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
                     - name: 電子請求に関するよく寄せられる質問
-                      href: localizations/e-invoicing-faq.md
+                      href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: 税の計算
                   items:
                     - name: 税の計算の概要
-                      href: localizations/global-tax-calcuation-service-overview.md
+                      href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: 税の計算の使用を開始する
-                      href: localizations/global-get-started-with-tax-calculation-service.md
+                      href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
                     - name: 移動オーダーに対する税金機能のサポート
-                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
                     - name: 税コンフィギュレーションへのデータ フィールドの追加
-                      href: localizations/tax-service-add-data-fields-tax-configurations.md
+                      href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: 拡張機能を使用した税統合へのデータ フィールドの追加
-                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
                     - name: 複数の VAT 登録番号
-                      href: localizations/emea-multiple-vat-registration-numbers.md
+                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: マスター データ検索用の環境の設定
-                      href: localizations/tax-service-set-up-environment-master-data-lookup.md
+                      href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
             - name: 規制の更新
               href: localizations/regulatory-updates.md
             - name: オーストラリア
@@ -3139,7 +3157,7 @@
                 - name: Human Resources 共有パラメーターのコンフィギュレーション
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Human Resources ワークフローの設定
-                  href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: 日付と時刻のフィールドの理解
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
             - name: 個人の管理
@@ -3189,15 +3207,15 @@
                 - name: 採用プロセスの管理
                   href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
                 - name: 大量雇用プロジェクト
-                  href: ../fin-ops-core/fin-ops/hr/mass-hire-projects.md
+                  href: ../human-resources/hr-personnel-mass-hire-projects.md
                 - name: 大量雇用プロジェクトの作成
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-mass-hire-project.md
+                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
                 - name: 申請者およびアプリケーション データの手動入力
                   href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                 - name: 求人の作成と実施
                   href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
                 - name: 職位の設定
-                  href: ../fin-ops-core/fin-ops/hr/tasks/set-up-positions.md
+                  href: ../human-resources/hr-personnel-set-up-positions.md
                 - name: 採用による候補者の雇用
                   href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
                 - name: 採用による既存の従業員の雇用
@@ -4052,7 +4070,7 @@
                 - name: 原価管理
                   href: cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: 経費管理
-                  href: expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: 手持在庫
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: 請求書の承認
@@ -4060,11 +4078,11 @@
                 - name: 自分のチーム
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: Project モバイル アプリケーションの概要
-                  href: project-management/project-mobile-application-overview.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: プロジェクト時間の入力
-                  href: project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: Project Timesheet
-                  href: project-management/project-timesheet.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: 発注書の承認
                   href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: 販売注文
