@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a8eda003e4cd4cf0d43bb07c93bd8d68a2fb9e57
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792960"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019960"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
 
@@ -52,8 +52,8 @@ ms.locfileid: "5792960"
 
 ## <a name="related-topics"></a>関連トピック
 
-- [オフライン販売時点管理 (POS) の機能](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
-- [オンラインおよびオフラインでの販売時点管理 (POS) の操作](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+- [オフライン販売時点管理 (POS) の機能](../pos-offline-functionality.md)
+- [オンラインおよびオフラインでの販売時点管理 (POS) の操作](../pos-operations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

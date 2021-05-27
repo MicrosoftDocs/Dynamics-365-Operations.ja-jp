@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0c7aa3bc1d4eef7b557bd9b07b31196faab273d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791081"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022475"
 ---
 # <a name="e-commerce-site-overview"></a>eコマース サイトの概要
 
@@ -37,11 +37,11 @@ Dynamics 365 Commerce では、オンライン ストア チャネルを使用�
 
 Dynamics 365 Commerce の使用を開始する前に、設定する必要があるオンライン ストア チャネルは 1 つだけです。 ただし、1 つの電子商取引サイトは、複数のオンライン ストアにオンライン エクスペリエンスを提供できます。 たとえば、異なる地理的地域をサポートするように複数のオンライン ストアが設定されている場合、単一の電子商取引ページ セットを使用して、各ストアで定義されている固有のエクスペリエンスを提供できます。 複数のオンライン ストアをサポートするようにサイトを構成する方法の詳細については、[チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)を参照してください。
 
-オンライン ストアが設定されると、オンライン ストアフロントとして機能する Dynamics 365 Commerce サイトに関連付けることができます。 オンライン ストアとその設定方法の詳細については、[オンライン ストアの設定](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores)を参照してください。
+オンライン ストアが設定されると、オンライン ストアフロントとして機能する Dynamics 365 Commerce サイトに関連付けることができます。 オンライン ストアとその設定方法の詳細については、[オンライン ストアの設定](/dynamics365/unified-operations/retail/online-stores)を参照してください。
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>新しい eコマース テナントのデプロイ
 
-電子商取引サイトの初期化中に、ドメイン名の入力を求めるメッセージが表示されます。 Commerce のドメインの詳細については、[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)[Dynamics 365 Commerce のドメイン](domains-commerce.md)を参照してください。 [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) を使用して新しい電子商取引のテナントを配置するには、[新しい電子商取引テナントの配置](deploy-ecommerce-site.md)を参照してください。 電子商取引のテナントが LCS で設定された後に、Commerce サイト ビルダーへのリンクが提供されます。 その後、Commerce サイト ビルダーを使用して、電子商取引サイトを初期化および構成することができます。
+電子商取引サイトの初期化中に、ドメイン名の入力を求めるメッセージが表示されます。 Commerce のドメインの詳細については、[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)[Dynamics 365 Commerce のドメイン](domains-commerce.md)を参照してください。 [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) を使用して新しい電子商取引のテナントを配置するには、[新しい電子商取引テナントの配置](deploy-ecommerce-site.md)を参照してください。 電子商取引のテナントが LCS で設定された後に、Commerce サイト ビルダーへのリンクが提供されます。 その後、Commerce サイト ビルダーを使用して、電子商取引サイトを初期化および構成することができます。
 
 ## <a name="initialize-your-e-commerce-site"></a>電子商取引サイトの初期化
 

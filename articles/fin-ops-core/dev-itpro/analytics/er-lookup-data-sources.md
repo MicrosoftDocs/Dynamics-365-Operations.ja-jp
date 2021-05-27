@@ -2,7 +2,6 @@
 title: ER アプリケーション固有のパラメータを使用するルックアップ データ ソースのコンフィギュレーション
 description: このトピックでは、ER アプリケーション固有のパラメーターを使用して電子申告 (ER) 形式のルックアップ データ ソースを構成する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 542580c859759c25da84589ec82495eb72bbcbe5
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 131d14f1f1aa329bd71b1f8a4015192736bd8e44
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853524"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022578"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>ER アプリケーション固有のパラメータを使用するルックアップ データ ソースのコンフィギュレーション 
 
@@ -70,7 +69,7 @@ ms.locfileid: "5853524"
 次の図は、**計算済みフィールド** タイプの `Model.Data.Summary.LevelByLookup` データ ソースを、必要なパラメーターを提供する **ルックアップ** データ ソースを呼び出すように構成する方法を示しています。 実行時にこの呼び出しを処理するために、ER は定義された順序で構成されたルールの一覧を確認し、指定された条件を満たす最初のルールを探します。 この例は、指定された税コードと一致する税コードを含むルールです。 このため、最も適しているルールが検索され、検索されたルールに対して構成されている列挙値が、このデータ ソースによって返されます。
 
 > [!NOTE]
-> 該当するルールが見つからない場合に、例外がスローされます。 これらの例外を回避するために、ルール一覧の最後に追加のルールを構成して、構成されていない値または値が指定されなかったケースを処理できるようにします。 それに応じて **\*空白でない\*** と **\*空白\*** オプションを使用します。  
+> 該当するルールが見つからない場合に、例外がスローされます。 これらの例外を回避するために、ルール一覧の最後に追加のルールを構成して、構成されていない値または値が指定されなかったケースを処理できるようにします。 それに応じて **\*空白でない** と **\*空白** オプションを使用します。  
 >
 > ![データ ソースを追加して、構成済みのルックアップ データ ソースを呼び出す](./media/er-lookup-data-sources-img7.png)
 

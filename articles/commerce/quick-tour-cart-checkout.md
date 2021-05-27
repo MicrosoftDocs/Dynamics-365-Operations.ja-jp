@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792246"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027942"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>買い物カゴとチェック アウト ページの概要
 
@@ -83,7 +83,7 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 
 ### <a name="order-summary"></a>注文集計
 
-チェックアウトには、顧客が注文を行う前に検証できるように、買い物カゴ内の品目の集計が表示されます。 チェックアウト フロー中は、明細行品目を編集できません。 ただし、ユーザーが戻って明細行品目を編集したい場合のために買い物カゴへのリンクが提供されます。
+チェックアウトには、注文を行う前に検証できるように、買い物カゴ内の品目の集計が表示されます。 チェックアウト フロー中は、明細行品目を編集できません。 ただし、ユーザーが戻って明細行品目を編集したい場合のために買い物カゴへのリンクが提供されます。
 
 顧客が出荷および請求書作成情報を提供した後、注文集計には、ロイヤルティ ポイント、ギフト カード、および他の支払が適用された後の金額が反映されます。
 

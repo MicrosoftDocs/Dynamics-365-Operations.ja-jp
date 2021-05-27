@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f062f40c9eb883d02c4a0ee06c797ed1b0b22665
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793998"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018583"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "5793998"
 Dynamics 365 Commerce は Azure AD B2C を使用して、ユーザーの資格情報と認証フローをサポートします。 ユーザーは、これらのフローを使用して、登録、サインイン、およびパスワードのリセットを行うことができます。 Azure AD B2C では、ユーザー名やパスワードなどの機密性の高いユーザー認証情報を保存します。 B2C テナントのユーザー レコードには、B2C ローカル アカウント レコードまたは B2C ソーシャル ID プロバイダー レコードのいずれかが保存されます。 これらの B2C レコードは、Commerce 環境内の顧客レコードにリンクされます。
 
 > [!WARNING] 
-> Azure AD B2C は、2021 年 8 月 1 日までに古い (レガシ) ユーザー フローを破棄します。 したがって、ユーザー フローを新しい推奨バージョンに移行する必要があります。 新しいバージョンでは、機能パリティと新しい機能が提供されます。 推奨される B2C ユーザー フローには、Commerce のバージョン 10.0.15 以上のモジュール ライブラリを使用する必要があります。 詳細については、[Azure Active Directory B2C のユーザー フロー](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview) を参照してください。
+> Azure AD B2C は、2021 年 8 月 1 日までに古い (レガシ) ユーザー フローを破棄します。 したがって、ユーザー フローを新しい推奨バージョンに移行する必要があります。 新しいバージョンでは、機能パリティと新しい機能が提供されます。 推奨される B2C ユーザー フローには、Commerce のバージョン 10.0.15 以上のモジュール ライブラリを使用する必要があります。 詳細については、[Azure Active Directory B2C のユーザー フロー](/azure/active-directory-b2c/user-flow-overview) を参照してください。
  
  > [!NOTE]
  > Commerce 評価環境には、デモ用に Azure AD B2C テナントがプリロードされています。 評価環境では、次の手順を使用して独自の Azure AD B2C テナントを読み込む必要はありません。
@@ -88,7 +88,7 @@ B2C アプリケーションを作成するには、次の手順に従います�
 1. **暗黙的な付与** で、**アクセス トークン** と **IDトークン** の両方を選択してアプリケーションで有効にします。 **保存** を選択します。
 1. Azure ポータルの **概要** メニューに移動し、**アプリケーション (クライアント) ID** をコピーします。 この ID は、後の設定手順 (後で **クライアント GUID** として参照) に使用します 。
 
-Azure AD B2C のアプリの登録の追加情報については、[Azure Active Directory B2C の新しいアプリケーション登録 エクスペリエンス](https://docs.microsoft.com/azure/active-directory-b2c/app-registrations-training-guide) を参照してください。
+Azure AD B2C のアプリの登録の追加情報については、[Azure Active Directory B2C の新しいアプリケーション登録 エクスペリエンス](/azure/active-directory-b2c/app-registrations-training-guide) を参照してください。
 
 ### <a name="reply-urls"></a>返信 URL
 
@@ -110,7 +110,7 @@ Azure AD B2Cでは、次の 3 つの基本的なユーザー フロー タイプ
 
 Azure AD が提供する既定のユーザー フローを使用するように選択できます。これにより、AAD B2Cでホストされるページが表示されます。 また、HTML ページを作成して、これらのユーザー フローのエクスペリエンスの外観をコントロールすることもできます。 
 
-Dynamics 365 Commerce に組み込まれたページでユーザー ポリシー ページをカスタマイズするには、[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md) を参照してください。 詳細については[Azure Active Directory B2C のユーザーエクスペリエンスのインターフェイスをカスタマイズする](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui)を参照してください。
+Dynamics 365 Commerce に組み込まれたページでユーザー ポリシー ページをカスタマイズするには、[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md) を参照してください。 詳細については[Azure Active Directory B2C のユーザーエクスペリエンスのインターフェイスをカスタマイズする](/azure/active-directory-b2c/tutorial-customize-ui)を参照してください。
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>登録を作成し、ユーザー フロー ポリシーにサインインする
 
@@ -197,15 +197,15 @@ Dynamics 365 Commerce に組み込まれたページでユーザー ポリシー
 
 認証用のソーシャル ID プロバイダーを追加する前に、ID プロバイダーのポータルにアクセスして、Azure AD B2C ドキュメントの指示に従って ID プロバイダーアプリケーションを設定する必要があります。 ドキュメントへのリンクの一覧は、次のとおりです。
 
-- [Amazon](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (単一テナント)](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-- [Microsoft アカウント](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-- [Facebook](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-- [GitHub](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-- [Google](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-- [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-- [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-- [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+- [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (単一テナント)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Microsoft アカウント](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### <a name="add-and-set-up-a-social-identity-provider"></a>ソーシャル ID プロバイダーの追加と設定
 
@@ -346,11 +346,11 @@ B2C アプリケーションをサイトとチャンネルに関連付けるに�
 
 以前の ID プロバイダー プラットフォームからの顧客レコードの移行を検討している場合は、Dynamics 365 Commerce チームと協力して、顧客移行のニーズを確認してください。
 
-顧客の移行に関する Azure AD B2C 追加ドキュメントについては、[Azure Active Directory B2C へのユーザー移行](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration)を参照してください。
+顧客の移行に関する Azure AD B2C 追加ドキュメントについては、[Azure Active Directory B2C へのユーザー移行](/azure/active-directory-b2c/active-directory-b2c-user-migration)を参照してください。
 
 ### <a name="custom-policies"></a>カスタム ポリシー
 
-Azure AD B2C の操作および B2C 標準ポリシーで提供されるものを超えるポリシー フローのカスタマイズに関する追加情報については、[Azure Active Directory B2C のカスタム ポリシー](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom)を参照してください。 
+Azure AD B2C の操作および B2C 標準ポリシーで提供されるものを超えるポリシー フローのカスタマイズに関する追加情報については、[Azure Active Directory B2C のカスタム ポリシー](/azure/active-directory-b2c/active-directory-b2c-overview-custom)を参照してください。 
 
 ### <a name="secondary-admin"></a>二次管理者
 

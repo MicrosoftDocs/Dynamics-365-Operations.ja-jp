@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 07d8e740e8f20533272c403446d5e8294c9f37a1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7b99b5f7b5b972d41e0831995bde69e9041369b9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791129"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028014"
 ---
 # <a name="omni-channel-payments-overview"></a>オムニ チャネル支払の概要
 
@@ -43,11 +43,11 @@ ms.locfileid: "5791129"
 
 一般的に、*オムニ チャネル支払* という用語は、1 つのチャネルで注文を作成し、それを別のチャネルで満たすための機能を表します。 オムニ チャネル支払のサポートの鍵は、支払詳細を他の注文詳細の残りと一緒に保存し、別のチャネルで注文が取り消されたり処理されたりしたときに、支払詳細を使用することです。 古典的な例として、「オンラインで購入、店舗で受取」というシナリオがあります。 このシナリオでは、注文をオンラインで作成したときに、支払詳細が追加されます。 その後、受取り時に顧客の支払カードを請求するために POS で呼び戻されます。 
 
-このトピックで説明されるすべてのシナリオは、Commerce で提供される標準の支払ソフトウェア開発キット (SDK) を使用して実装できます。 [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) では、こちらで説明されるすべてのシナリオの直ぐに使える実装を提供します。 
+このトピックで説明されるすべてのシナリオは、Commerce で提供される標準の支払ソフトウェア開発キット (SDK) を使用して実装できます。 [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) では、こちらで説明されるすべてのシナリオの直ぐに使える実装を提供します。 
 
 ### <a name="prerequisites"></a>必要条件
 
-このトピックで説明されるすべてのシナリオでは、オムニ チャネル支払をサポートする支払コネクタが必要です。 直ぐに使える Adyen コネクタは、支払 SDK を通じて使用可能となるシナリオをサポートするため、使うこともできます。 支払コネクタの実装方法および一般的な Retail SDK の詳細については、[IT プロおよび開発者向けの小売ホーム ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors) にアクセスしてください。
+このトピックで説明されるすべてのシナリオでは、オムニ チャネル支払をサポートする支払コネクタが必要です。 直ぐに使える Adyen コネクタは、支払 SDK を通じて使用可能となるシナリオをサポートするため、使うこともできます。 支払コネクタの実装方法および一般的な Retail SDK の詳細については、[IT プロおよび開発者向けの小売ホーム ページ](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors) にアクセスしてください。
 
 #### <a name="supported-versions"></a>サポートされているバージョン
 
@@ -57,14 +57,14 @@ ms.locfileid: "5791129"
 
 支払 SDK は、2 セットの支払い用アプリケーション プログラミング インターフェイス (APIs) に依存します。 最初の APIs セットは、**iPaymentProcessor** と呼ばれます。 これは、コール センターおよび Microsoft Dynamics 電子商取引プラットフォームで使用できる「カードなし」の支払コネクタを実装するために使用されます。 **iPaymentProcessor** インターファイスについては、支払いをカバーする[支払コネクタと支払デバイスの実装](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf) ホワイト ペーパーを参照してください。 
 
-2 番目の APIs セットは、**iNamedRequestHandler** と呼ばれます。 この機能は、支払ターミナルを使用する「カードあり」の支払統合をサポートします。 **INamedRequestHandler** インターフェイスの詳細については、[支払ターミナルの支払統合を作成](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension) を参照してください。 
+2 番目の APIs セットは、**iNamedRequestHandler** と呼ばれます。 この機能は、支払ターミナルを使用する「カードあり」の支払統合をサポートします。 **INamedRequestHandler** インターフェイスの詳細については、[支払ターミナルの支払統合を作成](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension) を参照してください。 
 
 ### <a name="setup-and-configuration"></a>設定およびコンフィギュレーション
 
 次のコンポーネントと設定手順が必要です。
 
-- **E コマースの統合:** Commerce との統合は、注文がオンライン店舗で発生するシナリオをサポートするために必要です。 小売の電子商取引 SDK の詳細は[電子商取引プラットフォーム ソフトウェア開発キット (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) を参照してください。 デモ環境では、参照ストアがオムニ チャネル支払のシナリオをサポートします。 
-- **オンライン支払構成:** オンライン チャネルの設定には、オムニ チャネル支払をサポートするように、更新された支払コネクタを含める必要があります。 代わりに、直ぐに使える支払コネクタを使用することができます。 オンライン ストアの Adyen 支払コネクタを構成する方法については [Adyen 支払コネクタ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) を参照してください。 そのトピックで説明されている電子商取引の設定に加えて、**電子商取引で支払情報の保存を許可する** パラメーターでは、Adyen コネクタの設定で **True** と設定する必要があります。 
+- **E コマースの統合:** Commerce との統合は、注文がオンライン店舗で発生するシナリオをサポートするために必要です。 小売の電子商取引 SDK の詳細は[電子商取引プラットフォーム ソフトウェア開発キット (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) を参照してください。 デモ環境では、参照ストアがオムニ チャネル支払のシナリオをサポートします。 
+- **オンライン支払構成:** オンライン チャネルの設定には、オムニ チャネル支払をサポートするように、更新された支払コネクタを含める必要があります。 代わりに、直ぐに使える支払コネクタを使用することができます。 オンライン ストアの Adyen 支払コネクタを構成する方法については [Adyen 支払コネクタ](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) を参照してください。 そのトピックで説明されている電子商取引の設定に加えて、**電子商取引で支払情報の保存を許可する** パラメーターでは、Adyen コネクタの設定で **True** と設定する必要があります。 
 - **オムニ チャネルの支払コンフィギュレーション:** バック オフィスで **Retail および Commerce\>Headquarters の設定 \>パラメーター \>Commerce 共有パラメーター** の順に移動します。 次に **オムニ チャネルの支払** タブで **オムニ チャネルの支払を使用する** オプションを **はい** に設定します。 Commerce のバージョン 10.0.12 では、この設定は **機能管理** ワークスペースにあります。 **オムニ チャネル支払** 機能を選択して、**今すぐ有効にする** をクリックします。 
 - **支払サービス:** コールセンターでは、**支払サービス** ページの既定の支払コネクタを使用して支払を処理します。 「コールセンターで購入」や「店舗で受取り」などのシナリオをサポートするには、この既定の支払コネクタは、オムニ チャネル支払に向けた実装要望を満たす Adyen 支払コネクタまたはオムニ チャネル支払である必要があります。
 - **EFT サービス:** 支払ターミナルを通じた支払は、ハードウェア プロファイルの **EFT サービス** FastTab で設定する必要があります。 Adyen コネクタでは、そのままオムニ チャネル支払のシナリオがサポートされています。 **INamedRequestHandler** インターフェイスをサポートする他の支払コネクタは、オムニ チャネル支払をサポートする場合にも使用できます。
@@ -219,7 +219,7 @@ ms.locfileid: "5791129"
 
 ### <a name="using-a-different-card"></a>別のカードを使用
 
-注文受取の店舗に来る顧客には、別のカードを使用するためのオプションが用意されています。 受注受取時に、レジ担当者が **使用可能な支払方法の利用** プロンプトを受け取ると、顧客が同じカードを使用するかどうかをたずねることができます。 注文の作成に使用されたカードを顧客が失い、別のカードを使用して注文の支払を行う場合は、レジ担当者が **別の支払方法を使用** に選択できます。 顧客が同じ注文に対してより多くの品目を受取るため戻ってきた場合、元のカードの認証がまだ有効であれば、レジ担当者はそのカードを使用するかどうかを再度確認することができます。
+注文受取の店舗に来る顧客には、別のカードを使用するためのオプションが用意されています。 受注受取時に、レジ担当者が **使用可能な支払方法の利用** プロンプトを受け取ると、レジ担当者が同じカードを使用するかどうかをたずねることができます。 注文の作成に使用されたカードを顧客が失い、別のカードを使用して注文の支払を行う場合は、レジ担当者が **別の支払方法を使用** に選択できます。 顧客が同じ注文に対してより多くの品目を受取るため戻ってきた場合、元のカードの認証がまだ有効であれば、レジ担当者はそのカードを使用するかどうかを再度確認することができます。
 
 ### <a name="invalid-authorizations"></a>無効な認証
 
@@ -231,9 +231,9 @@ ms.locfileid: "5791129"
 
 ## <a name="related-topics"></a>関連トピック
 
-- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Dynamics 365 Commerce 評価環境で BOPIS を構成する](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
+- [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Adyen 向け Dynamics 365 Payment Connector](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Dynamics 365 Commerce 評価環境で BOPIS を構成する](./cpe-bopis.md)
 
 
 

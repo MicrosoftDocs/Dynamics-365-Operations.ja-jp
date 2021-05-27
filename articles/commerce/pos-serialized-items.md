@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 39135111a8e7bf16d1e56ca42726ae8a8e130c5d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7b1b004d7a910e3b53eb584dbceb4d52d41fe409
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798684"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022686"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>POS でシリアル品目を処理する
 
@@ -130,9 +130,9 @@ POS の **注文の実行** 操作を使用してシリアル化された品目�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[POS でのインバウンド在庫操作](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
+[POS でのインバウンド在庫操作](./pos-inbound-inventory-operation.md)
 
-[POS でのアウトバウンド在庫操作](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+[POS でのアウトバウンド在庫操作](./pos-outbound-inventory-operation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

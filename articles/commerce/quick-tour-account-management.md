@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dc4ae56be1740f0160b4e4777f8db93a6bc4e704
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792270"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027966"
 ---
 # <a name="account-management-pages-overview"></a>アカウント管理ページの概要
 
@@ -39,7 +39,7 @@ ms.locfileid: "5792270"
 
 ### <a name="my-profile-page"></a>プロファイル ページ
 
-**マイ プロファイル** ページには、名前および電話番号など、顧客のアカウント情報が表示されます。 顧客は、このページでプロファイル情報を更新できます。 このページをカスタマイズして、マーケティング メールにオプトインするオプションなど、顧客アカウントに関する追加設定を含めることができます。
+**マイ プロファイル** ページには、名前および電話番号など、顧客のアカウント情報が表示されます。 顧客は、このページで自分のプロファイル情報を更新できます。 このページをカスタマイズして、マーケティング メールにオプトインするオプションなど、顧客アカウントに関する追加設定を含めることができます。
 
 以下の図は、モジュール ライブラリを使用してビルドされた **プロファイル** ページの例を示します。
 
@@ -47,7 +47,7 @@ ms.locfileid: "5792270"
 
 ### <a name="addresses-page"></a>住所のページ
 
-**住所** のページにより、顧客は自分のアカウントに住所を追加できます。 また、顧客が以前にアカウントに追加または保存した住所のリストも表示します。 これらの住所は、顧客がこのページで入力、または注文の間に入力した住所です。
+**住所** ページでは、顧客が自分のアカウントに住所を追加できます。 また、顧客が以前にアカウントに追加または保存した住所のリストも表示します。 これらの住所は、顧客がこのページで入力、または注文の間に入力した住所です。
 
 次の図は、**住所** ページの例を表示しています。
 

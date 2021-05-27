@@ -2,7 +2,6 @@
 title: 事前定義された製品バリアントの作成
 description: この手順では、製品分析コードの組み合わせを使用する製品マスターの製品バリアントの作成を説明します。
 author: t-benebo
-manager: tfehr
 ms.date: 04/22/2021
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: acd2e3f1464dfed09ee24764270b06970b747d7c
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 6f78441445baecba279f96eb3935d9ebbb4ff03f
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938205"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021911"
 ---
 # <a name="predefined-product-variants"></a>事前定義された製品バリアント
 

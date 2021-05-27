@@ -2,7 +2,7 @@
 title: 電子請求サービスの管理を開始する
 description: このトピックでは、電子請求を開始する方法について説明します。
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840151"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980978"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>電子請求サービスの管理を開始する
 
@@ -33,10 +33,10 @@ ms.locfileid: "5840151"
 - Microsoft Dynamics Lifecycle Services (LCS) アカウントにアクセスできる必要があります。
 - バージョン 10.0.17 以降の Microsoft Dynamics 365 Finance と Dynamics 365 Supply Chain Management。 さらに、これらのアプリケーションは、次のいずれかの Azure 地域にデプロイされている必要があります。
 
-    - 米国東部
-    - 米国西部
-    - 北ヨーロッパ
-    - 西ヨーロッパ
+    - 米国
+    - ヨーロッパ
+    - 英国
+    - アジア
 
 - Dynamics 365 Regulatory Configuration Services (RCS) アカウントにアクセスする必要があります。
 - 機能管理で RCS アカウントのグローバル化機能を有効にする必要があります。 詳細については、[Regulatory Configuration Services (RCS) - グローバリゼーション機能](rcs-globalization-feature.md)を参照してください。
@@ -46,11 +46,12 @@ ms.locfileid: "5840151"
 
 1. LCS アカウントにサインインします。
 2. **プレビュー機能管理** タイルを選択します。
-3. **パブリックプレビュー機能** セクションで、**電子請求書サービス** を選択します。
+3. **パブリック プレビュー機能** セクションで、**電子請求書** を選択します。
 4. **プレビュー機能の有効化** オプションが **はい** に設定されていることを確認します。
-5. LCS ダッシュボードで、LCS 配置プロジェクトを選択します。 LCS プロジェクトが実行されている必要があります。
-7. **環境アドイン** タブで、**新しいアドインのインストール** を選択します。
-8. **電子請求サービス** を選択します。
+5. LCS プロジェクト ダッシュボードで、LCS プロジェクトを選択します。
+6. LCS プロジェクトの LCS 環境ダッシュボードで、LCS 配置プロジェクトを選択します。 LCS 展開プロジェクトが実行されている必要があります。
+7. **Power Platform 統合** タブの **環境アドイン** フィールド グループで、**新しいアドインをインストールする** を選択します 。
+8. **電子請求** を選択します。
 9. **AAD アプリケーション ID** フィールドに、**091c98b0-a1c9-4b02-b62c-7753395ccabe** を入力します。 この値は固定値です。
 10. **AAD のテナント ID** フィールドに、Azure のサブスクリプション アカウントのテナント ID を入力します。
 11. 条件を確認して、このチェック ボックスをオンにします。
@@ -65,10 +66,10 @@ ms.locfileid: "5840151"
 
     | Azure geography データ センター | サービス エンドポイント URI                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | 米国東部                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | 米国西部                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | 北ヨーロッパ                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | 西ヨーロッパ                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | 米国              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | ヨーロッパ                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | 英国             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | アジア                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 4. **アプリケーション ID** フィールドが、**0cdb527f-a8d1-4bf8-9436-b352c68682b2** に設定されていることを確認します。 この値は固定値です。
 5. **LCS 環境** フィールドに、LCS 環境の ID を入力してください。
@@ -152,12 +153,12 @@ ms.locfileid: "5840151"
 1. **組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動します。
 2. **送信サービス** タブの **サービス エンドポイント URI** フィールドに、次の表に示すように、Azure の地域に対応するサービス エンドポイントを入力します。
 
-    | Azure geography データ センター | サービス エンドポイント URL                                                       |
+    | Azure geography データ センター | サービス エンドポイント URI                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | 米国東部                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | 米国西部                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | 北ヨーロッパ                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | 西ヨーロッパ                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | 米国              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | ヨーロッパ                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | 英国             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | アジア                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. **環境** フィールドで、 電子請求に公開されたサービス環境の名前を入力します。
 4. **保存** を選択し、ページを閉じます。

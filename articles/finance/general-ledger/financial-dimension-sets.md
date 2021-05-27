@@ -2,7 +2,6 @@
 title: 財務分析コード セット
 description: このトピックでは、財務分析コード セットについて説明し、その使用を最適化するためのヒントを提供します。
 author: yukonpeegs
-manager: AnnBe
 ms.date: 03/23/2021
 ms.topic: article
 ems.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b719d8eb868cb1722b470be4443d01181078ce21
-ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
+ms.openlocfilehash: ba11be028ebeea140df93e2a07dbb463402e3ef0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5864415"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021831"
 ---
 # <a name="financial-dimension-sets"></a>財務分析コード セット
 

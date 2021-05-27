@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: 570b0995821dcaa2e180b48c25facee01e98f8e3
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961708"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015904"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>購買売買契約を使用したマスター プラン
 
@@ -67,7 +67,7 @@ ms.locfileid: "5961708"
 1. 各関連製品に対してこの手順を繰り返します。
 
 > [!NOTE]
-> 計画の最適化では複数通貨の購買売買契約をサポートします。 **最小リード タイム** オプションを使用して売買契約を検索する際に、為替レートが売買契約明細行の通貨と法人の会計通貨の間で為替レートが定義されている場合、システムでは異なる通貨での売買契約明細行が考慮されます。 それ以外の場合は、売買契約明細行が無視され、マスター プラン中にエラーが表示されます。 したがって、 プランには、価格を会計通貨に換算できる、関連するすべての購買売買契約明細行からの情報が含まれます。
+> 計画の最適化では複数通貨の購買売買契約をサポートします。 **最小リード タイム** オプションを使用して売買契約を検索する際に、為替レートが売買契約明細行の通貨と法人の会計通貨の間で為替レートが定義されている場合、システムでは異なる通貨での売買契約明細行が考慮されます。 それ以外の場合は、売買契約明細行が無視され、マスター プラン中にエラーが表示されます。 したがって、 プランには、価格を会計通貨に換算できる、関連するすべての購買売買契約明細行からの情報が含まれます。 購買売買契約明細行の価格換算時には、丸めルールが考慮されないので注意が必要です。
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>計画の最適化によって仕入先とリードタイムを検索する方法の例
 

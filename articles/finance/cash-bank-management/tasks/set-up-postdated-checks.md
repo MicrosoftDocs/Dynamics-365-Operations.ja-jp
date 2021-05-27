@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834599"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026208"
 ---
 # <a name="set-up-postdated-checks"></a>先日付小切手の設定
 
@@ -51,9 +51,13 @@ ms.locfileid: "5834599"
     * 支払方法の相手勘定は銀行となります。  
 17. [支払勘定] フィールドで、任意の値を指定します。
     * 請求書額を控除するために使用される銀行口座を選択します。  
-18. [保存] をクリックします。
+18. 保存 をクリックします。
 19. ページを閉じます。
-
-
+> [!NOTE]
+> セッション日付が満期日付より後の場合に転記済み小切手を銀行口座に転記するには、**銀行口座に小切手が転記された支払仕訳帳を転記する際に、機能の満期日検証する** 機能を有効にする必要があります。 この機能により、セッション日付が満期日より後の場合に、小切手が転記された仕入先または顧客に対する支払仕訳帳を転記できます。
+> 
+> **支払方法** (**買掛金勘定 > 支払設定 > 支払方法**) を設定する場合は、**つなぎ勘定** に入力しないでください。 この場合、相手勘定には、**支払方法** で設定された銀行口座が入力されます。
+>  
+> 機能が有効で、セッション日付が満期日より前の場合、支払仕訳帳の転記時に次のエラー メッセージが表示されます。"相手勘定タイプが銀行の場合は、満期日以前にする必要があります"。 この機能が有効になっていない場合、セッション日付が満期日付よりも前であれば、先日付小切手を使って支払仕訳帳を転記できます。    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

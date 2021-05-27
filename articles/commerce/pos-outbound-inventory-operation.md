@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3cfe144f7bba2bbc4b25024b68155045271f6366
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5a2c596293e632bb6c06af56f413fcee9e867563
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795648"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022734"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>POS でのアウトバウンド在庫操作
 
@@ -71,7 +71,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 またはそれ以降で
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>前提条件: 入庫操作を POS 画面レイアウトに追加する
 
-組織で出庫操作機能を使用する前に、1 つ以上の [POS 画面レイアウト](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts)に対して **出庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
+組織で出庫操作機能を使用する前に、1 つ以上の [POS 画面レイアウト](/dynamics365/unified-operations/retail/pos-screen-layouts)に対して **出庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
 
 ## <a name="overview"></a>概要
 

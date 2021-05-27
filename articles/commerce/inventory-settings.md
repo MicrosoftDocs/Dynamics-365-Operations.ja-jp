@@ -2,7 +2,6 @@
 title: 在庫設定を適用する
 description: このトピックでは在庫設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dd3db0039525c18521ad6a42b2f281976b7b236a
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: ae0195f63b123a345b0cdcd4976bfd25b3b3d6d9
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937413"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019082"
 ---
 # <a name="apply-inventory-settings"></a>在庫設定の適用
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f70f42f2650a439c7131f228588c11124d326aec
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 80d62b29fcc95a3153c604512e1ee6b3e55ba840
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792370"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019790"
 ---
 # <a name="generate-online-channel-reports"></a>オンライン チャネル レポートの生成
 
@@ -131,7 +131,7 @@ Commerce では、複数のレポートを生成および表示して、オン�
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [Commerce のホーム ページ](../retail/index.md)
+- [Commerce のホーム ページ](./index.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

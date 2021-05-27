@@ -2,11 +2,9 @@
 title: メッセージ プロセッサのメッセージ
 description: このトピックでは、スケール ユニット ワークロードのッセージ プロセッサ メッセージ機能に関する情報を提供します。
 author: perlynne
-manager: tfehr
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b1428e2e657e653874d4ec07605932a32bd803b2
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 03d8cad743ac2b2b1e7b2832b8272ca3dbf5a163
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938253"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021058"
 ---
 # <a name="message-processor-messages"></a>メッセージ プロセッサのメッセージ
 

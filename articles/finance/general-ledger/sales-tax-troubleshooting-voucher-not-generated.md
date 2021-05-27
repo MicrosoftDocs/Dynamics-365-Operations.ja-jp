@@ -2,11 +2,9 @@
 title: 伝票が生成されない
 description: このトピックでは、伝票を生成する必要があるが、生成しない場合に役立つトラブルシューティング情報を提供します。
 author: qire
-manager: beya
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: eafc9110ec58be5083569188d59b67a62e86c85d
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: ba23b597b1d7d283b99638fb7d5d91da00afb09c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947670"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018760"
 ---
 # <a name="voucher-isnt-generated"></a>伝票が生成されない
 

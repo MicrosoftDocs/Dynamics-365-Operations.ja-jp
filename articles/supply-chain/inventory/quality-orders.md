@@ -2,11 +2,9 @@
 title: 品質指示
 description: このトピックでは、品質指示を手動または自動で作成する方法、および品質指示を使用して Microsoft Dynamics 365 Supply Chain Management の検査を実行してテスト結果を記録する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQualityOrderTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c951716a456101ba753e5c567c80deb4ee7e764f
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 964f8a37ac9471b2eb6c9ec01fc0322a43cfea11
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956736"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022183"
 ---
 # <a name="quality-orders"></a>品質指示
 

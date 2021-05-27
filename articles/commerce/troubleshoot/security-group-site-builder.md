@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aa00e9331693600ced2f4ead399a0c005b77ad08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d29e560d0f7b2bbc2415d7a0f6fe18f2ca17dc7c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801510"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020735"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>初期配置中に Commerce サイト ビルダーのセキュリティ グループを構成できない
 
@@ -38,7 +37,7 @@ Commerce サイト ビルダー コンポーネントを含む新しい eコマ�
 ### <a name="provision-the-e-commerce-site-with-a-user-in-the-correct-tenant"></a>正しいテナントのユーザーでの eコマース サイトのプロビジョニング
 
 1. [Azure ポータル](https://portal.azure.com/) に移動します。
-1. eコマース サイトの LCS プロジェクトがプロビジョニングされたテナントで、[Azure Active Directory を使用して基本グループを作成してメンバーを追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) の手順に従ってください 。
+1. eコマース サイトの LCS プロジェクトがプロビジョニングされたテナントで、[Azure Active Directory を使用して基本グループを作成してメンバーを追加する](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) の手順に従ってください 。
 1. [LCS](https://lcs.dynamics.com/) に移動し、作成した Azure AD セキュリティ グループと同じテナントを共有するアカウントを使用してサインインします。 このアカウントは、Azure AD セキュリティ グループを表示するためのアクセス権が必要です。
 1. 設定手順を完了して、eコマース サイトを構成します。 eコマース コンポーネントをプロビジョニングすると、セキュリティ グループがダイアログ ボックスのオプションとして表示されるようになります。
 
@@ -47,6 +46,6 @@ Commerce サイト ビルダー コンポーネントを含む新しい eコマ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Azure Active Directory を使用して基本グループを作成してメンバーを追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+[Azure Active Directory を使用して基本グループを作成してメンバーを追加する](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 [新しい eコマース テナントの配置](../deploy-ecommerce-site.md)

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95862a0dc55ec1d77b7d1a53209ba41fed48f82a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 125cc9dd1fb2ba0d3aeced8018d15e615b5d78e6
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820764"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027845"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>支払提案を使用した仕入先支払の作成
 
@@ -62,7 +62,7 @@ ms.locfileid: "5820764"
 | 3075   | 1003    | 6 月 15 日      | 250.00         | 6 月 29 日  |                    | 0.00                 |
 | 3100   | 1004    | 6 月 17 日      | 100.00         | 7 月 17 日  | 7 月 1 日             | 1.00                 |
 
-7 月 1 日に、エイプリルは仕入先に支払います。 彼女は、このタスクをより効率的に完了するために役立つ支払提案を使用します。
+7 月 1 日に、エイプリルは仕入先に支払います。 彼女は、このタスクをより効率的に完了するための支払提案を使用します。
 
 ### <a name="option-1-by-cash-discount"></a>オプション 1: 現金割引適用
 

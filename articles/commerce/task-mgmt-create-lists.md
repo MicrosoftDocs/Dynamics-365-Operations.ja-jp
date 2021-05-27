@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: a0e49d1eced3bb62e78c630b137a5b86121682f3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f3fcfae9f4ab458b4f14f18859f22fc25bf98623
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795240"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027627"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>タスク リストの作成とタスクの追加
 
@@ -49,7 +49,7 @@ ms.locfileid: "5795240"
 1. **新しいタスクの作成** ダイアログ ボックスの **名前** フィールドにタスクの名前を入力します。
 1. **目標期日からの期日のオフセット** フィールドに、正または負の整数値を入力します。 たとえば、タスクをタスク リストの期日の 2 日前に完了する必要がある場合、**-2** と入力します。
 1. **メモ** フィールドに、詳細な指示を入力します。
-1. **連絡担当者** フィールドに、支援が必要な時にタスクの所有者が連絡できる専門家の名前を入力します。
+1. **連絡担当者** フィールドに、タスクの所有者に支援が必要な時にタスクの所有者が連絡できる専門家の名前を入力します。
 1. **タスクのリンク** フィールドに、タスクの性質に基づいてリンクを入力します。
 
 > [!TIP]

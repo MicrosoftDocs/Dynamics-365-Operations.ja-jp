@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
-ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
+ms.openlocfilehash: 081d23c85d3555210b54597920a49e800ffe284b
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5963194"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980926"
 ---
 # <a name="electronic-invoicing-administration-components"></a>電子請求管理コンポーネント
 
@@ -59,10 +59,10 @@ RCS を使用して電子請求書を構成するには、電子請求との通�
 
 | Azure データ センターの地域 |
 |----------------------------|
-| 米国東部                    |
-| 米国西部                    |
-| 北ヨーロッパ                   |
-| 西ヨーロッパ                    |
+| 米国              |
+| ヨーロッパ                     |
+| 英国             |
+| アジア                       |
 
 ### <a name="service-environments"></a>サービス環境
 

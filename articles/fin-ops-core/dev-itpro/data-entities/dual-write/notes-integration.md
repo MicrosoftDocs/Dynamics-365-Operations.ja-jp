@@ -5,7 +5,6 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: beab7f2fc4fd96ce7a28734d2449445b3b5d4451
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750839"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018389"
 ---
 # <a name="note-integration"></a>メモ統合
 
@@ -34,9 +33,9 @@ ms.locfileid: "5750839"
 
 顧客情報は、次のように分類できます。
 
-+ **顧客の代わりに Dynamics 365 ユーザーが処理する実用的な情報** - 例えば Contoso (Dynamics 365ユーザー) が Game Show を実行している場合など。 Contoso の顧客の 1 人 (顧客) が、Game Show に参加したいと思っています。 顧客は、Contoso の従業員に対し、Game Show でのスロットの予約を求める場合があります。 予約は Contoso のイベント出席者のカレンダーで発生します。
-+ **Dynamics 365 ユーザーの実用的な情報** - たとえば、Surface ユニットを購入する顧客は、出荷前にデバイスを贈り物用に包装する必要があるという特別な指示を入力します。 これらの指示は、梱包を担当する Contoso の従業員が処理する必要がある、実用的な情報です。
-+ **非実用的な情報** - 例えば、顧客は Contoso ストアにアクセスし、店舗スタッフとの会話の中で、*Halo* のゲームとゲーム用アクセサリに関心を示します。 店舗スタッフはこの情報をメモします。 その後、製品の推奨エンジンを使用して、顧客に対して推奨事項を作成します。
++ **顧客の代わりに Dynamics 365 ユーザーが処理する実用的な情報** – 例えば Contoso (Dynamics 365 ユーザー) が Game Show を実行している場合など。 Contoso の顧客の 1 人 (顧客) が、Game Show に参加したいと思っています。 顧客は、Contoso の従業員に対し、Game Show でのスロットの予約を求める場合があります。 予約は Contoso のイベント出席者のカレンダーで行われます。
++ **Dynamics 365 ユーザーの実用的な情報** - たとえば、Surface ユニットを購入する顧客は、出荷前にデバイスを贈り物用に包装する必要があるという特別な指示を入力します。 これらの指示は、Contoso の梱包担当者が処理すべき実用的な情報です。
++ **非実用的な情報** – 例えば、顧客は Contoso ストアにアクセスし、店舗スタッフとの会話の中で、*Halo* のゲームとゲーム用アクセサリに関心を示します。 店舗スタッフはこの情報をメモします。 その後、製品の推奨エンジンを使用して、顧客に対して推奨事項を作成します。
 
 一般に、実用的な情報は、Finance and Operations アプリと Customer Engagement アプリに *活動* として記録されます。 非実用的な情報は、Finance and Operations アプリに *メモ*、Customer Engagement アプリに *注釈* として記録されます。
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ad75430c606f959b17c887531fb62bd37caec624
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8a3c7eb9580f9155dd33f6351f37eb1edd269a3d
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804310"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018636"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト
 
@@ -50,13 +50,13 @@ Microsoft Dynamics 365 Commerce では、POS デバイスに専用の支払タ�
 
 この機能は、ネットワーク対応型の支払ターミナルとレシート プリンターをサポートしています。 キャッシュ ドロワーのサポートを提供するには、d/k ポートを介して、キャッシュ ドロワーをネットワーク対応型のレシート プリンターに接続します。
 
-この機能に対するすぐに使える、[Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) によって提供されます。 ただし、その他の支払コネクタは、支払のためにコマース ソフトウェア開発キット (SDK) を介してサポートされる可能性があります。 サポートされているレシート プリンターには、Star Micronics と Epson のネットワーク対応型レシート プリンターがあります。
+この機能に対するすぐに使える、[Adyen 向け Dynamics 365 Payment Connector](./dev-itpro/adyen-connector.md?tabs=8-1-3) によって提供されます。 ただし、その他の支払コネクタは、支払のためにコマース ソフトウェア開発キット (SDK) を介してサポートされる可能性があります。 サポートされているレシート プリンターには、Star Micronics と Epson のネットワーク対応型レシート プリンターがあります。
 
 Star Micronics のレシート プリンターを設定するには、Star Micronics のプリンター ユーティリティを使用してデバイスを構成し、ネットワーク上で使用できるようにします。 このユーティリティは、デバイスの IP アドレスも提供します。
 
 Epson のレシート プリンターを設定するには、Epson ePOS-Print ユーティリティを使用して、ネットワーク プロトコルを使用するデバイスを設定します。
 
-ネットワーク周辺機器の設定方法の詳細については、[ネットワーク周辺機器サポートの概要](https://go.microsoft.com/fwlink/?linkid=2129965) を参照してください。
+ネットワーク周辺機器の設定方法の詳細については、[ネットワーク周辺機器サポートの概要](./dev-itpro/network-peripherals.md) を参照してください。
 
 ## <a name="set-up-a-dedicated-payment-terminal-and-a-prompt-for-a-printer-and-cash-drawer"></a>専用の支払ターミナル、およびプリンターとキャッシュ ドロワーのプロンプトの設定
 
@@ -75,9 +75,9 @@ Epson のレシート プリンターを設定するには、Epson ePOS-Print �
 
     | デバイス | 種類 | デバイス名 | 追加の詳細 |
     |---|---|---|---|
-    | プリンター | 予備 | *任意* | デバイス名は大文字と小文字が区別されます。 **レシート プロファイル ID** は、ハードウェアステーションにチャンネルレベルで割り当てられている **ハードウェア プロファイル ID** で設定されているネットワーク プリンターにマップされているレシートプロファイル ID と同じである必要があります。 |
-    | キャッシュ ドロワー | 予備 | *任意* | デバイス名は大文字と小文字が区別されます。 **共有シフトを使用** オプションを **はい** に設定します。 |
-    | EFT サービス | Adyen | 該当なし | 最初から用意されている Adyen コネクタを設定する方法については、[Adyen 用の Dynamics 365 Payment Connector ](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 その他の支払コネクタは、支払のために [支払用コマース ソフトウェア開発キット (SDK)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension) を介してサポートされる可能性があります。 |
+    | プリンター | ネットワーク | *任意* | デバイス名は大文字と小文字が区別されます。 **レシート プロファイル ID** は、ハードウェアステーションにチャンネルレベルで割り当てられている **ハードウェア プロファイル ID** で設定されているネットワーク プリンターにマップされているレシートプロファイル ID と同じである必要があります。 |
+    | キャッシュ ドロワー | ネットワーク | *任意* | デバイス名は大文字と小文字が区別されます。 **共有シフトを使用** オプションを **はい** に設定します。 |
+    | EFT サービス | Adyen | 該当なし | 最初から用意されている Adyen コネクタを設定する方法については、[Adyen 用の Dynamics 365 Payment Connector ](./dev-itpro/adyen-connector.md?tabs=8-1-3) を参照してください。 その他の支払コネクタは、支払のために [支払用コマース ソフトウェア開発キット (SDK)](./dev-itpro/end-to-end-payment-extension.md) を介してサポートされる可能性があります。 |
     | PIN パッド | ネットワーク | **MicrosoftAdyenDeviceV001** | なし。 |
 
 5. Dynamics 365 Commerce で、**レジスター** を検索します。
@@ -85,7 +85,7 @@ Epson のレシート プリンターを設定するには、Epson ePOS-Print �
 7. 作成したハードウェア プロファイルをレジスターに割り当てて、専用の支払ターミナルを使用するようにします。 このレジスターにマップされているデバイスには、Windows アプリケーション用のモダン POS か Android アプリケーション用のモダン POS のいずれかを使用する必要があります。
 8. **保存** を選択します。
 9. アクション ウィンドウの **レジスター** タブで、**IP アドレスの構成** を選択します。
-10. **PIN パッド** のクイックタブで、支払ターミナルの IP アドレスを入力します。 Adyen コネクタを使用して支払ターミナルの IP アドレスを取得する方法については、[Adyen 用 Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
+10. **PIN パッド** のクイックタブで、支払ターミナルの IP アドレスを入力します。 Adyen コネクタを使用して支払ターミナルの IP アドレスを取得する方法については、[Adyen 用 Dynamics 365 Payment Connector](./dev-itpro/adyen-connector.md?tabs=8-1-3) を参照してください。
 11. **保存** を選択します。
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>レシート プリンターとキャッシュ ドロワーのハードウェア プロファイルの設定
@@ -100,7 +100,7 @@ Epson のレシート プリンターを設定するには、Epson ePOS-Print �
     | デバイス | 種類 | 説明 | 追加の詳細 |
     |---|---|---|---|
     | プリンター | ネットワーク | **Epson** または **Star** | デバイス名は大文字と小文字が区別されます。 **レシート プロファイル ID** は、レジスターに割り当てあてられているハードウェア プロファイルで設定されているプリンターにマップされている **ハードウェア プロファイル ID** と同じである必要があります。 |
-    | キャッシュ ドロワー | ネットワーク | **Epson** または **Star** | デバイス名は大文字と小文字が区別されます。 **共有シフトを使用** オプションを **はい** に設定します。 |
+    | キャッシュ ドロワー | 予備 | **Epson** または **Star** | デバイス名は大文字と小文字が区別されます。 **共有シフトを使用** オプションを **はい** に設定します。 |
 
 5. **保存** を選択します。
 
@@ -148,9 +148,9 @@ Epson のレシート プリンターを設定するには、Epson ePOS-Print �
 
 ## <a name="related-articles"></a>関連記事
 
-- [Android と iOS での POS ハイブリッドアプリの設定](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [ネットワーク周辺機器サポートの概要](https://go.microsoft.com/fwlink/?linkid=2129965)
+- [Android と iOS での POS ハイブリッドアプリの設定](./dev-itpro/hybridapp.md)
+- [Adyen 向け Dynamics 365 Payment Connector](./dev-itpro/adyen-connector.md?tabs=8-1-3)
+- [ネットワーク周辺機器サポートの概要](./dev-itpro/network-peripherals.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

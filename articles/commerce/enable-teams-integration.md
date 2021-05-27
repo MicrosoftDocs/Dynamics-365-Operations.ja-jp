@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce と Microsoft Teams の統合を有効化する
 description: このトピックでは、Microsoft Dynamics 365 Commerce と Microsoft Teams の統合を有効化する方法について説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c4d596f27ffe15a97dc04e2ce7e85d21f8e7161f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: eb0b8b419b302fbd0bc107bca22f8b26774ba3c7
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908398"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019838"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Dynamics 365 Commerce と Microsoft Teams の統合を有効化する
 
@@ -39,9 +37,9 @@ Microsoft Teams と Commerce との統合を有効にする前に、Azure ポー
 
 Azure ポータルで Teams アプリケーションをテナントに登録するには、以下の手順に従います。
 
-1. [クイック スタート : Microsoft IDプラットフォームにアプリを登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) に記載の手順に従い、Azure ポータルで Teams アプリケーションをテナントに登録します。
+1. [クイック スタート : Microsoft IDプラットフォームにアプリを登録する](/azure/active-directory/develop/quickstart-register-app) に記載の手順に従い、Azure ポータルで Teams アプリケーションをテナントに登録します。
 1. 登録されたアプリケーションの **概要** ページから **アプリケーション (クライアント) ID** 値をコピーします。 この値は、Commerce 本部で Teams を有効にするために使用します。
-1. 手順 1 で[証明書を追加](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-certificate)した際に入力した証明書の値をコピーします。 証明書は、公開鍵やアプリケーション キーとも呼ばれます。 この値は、Commerce 本部で Teams を有効にするために使用します。
+1. 手順 1 で[証明書を追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)した際に入力した証明書の値をコピーします。 証明書は、公開鍵やアプリケーション キーとも呼ばれます。 この値は、Commerce 本部で Teams を有効にするために使用します。
 
 Commerce 本部で Teams の統合を有効にするには、以下の手順に従います。
 

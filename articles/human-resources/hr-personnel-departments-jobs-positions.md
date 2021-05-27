@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 48427bb52d4e398edba152ff25e28c3625b6a5d3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 31b9532eea82fd5b88fe59718af7be4d242dc885
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803588"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027893"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>部門、職務、職位を使用した従業員の編成
 
@@ -159,7 +159,7 @@ ms.locfileid: "5803588"
 </tbody>
 </table>
 
-前のテーブルに示されている職位または職務の情報を変更し、職位または職務への変更が有効になる日付を指定できます。 たとえば、一つの職位は 1 人の作業者にのみ割り当てることができますが、経理担当-A の職位に割り当てられている Patel Sanjay は 2 週間以内に退職します。 Joe Healy は、Sanjay Patel が退職した後、その職位に就きます。 Sanjay がまだ彼の職位に割り当てられている場合でも、Sanjay の最終日の後にのみ割り当てが有効になるように Joe Heal を同じ職位に割り当てることができます。
+前のテーブルに示されている職位または職務の情報を変更し、職位または職務への変更が有効になる日付を指定できます。 たとえば、一つの職位は 1 人の作業者にのみ割り当てることができますが、経理担当-A の職位に割り当てられている Patel Sanjay は 2 週間以内に退職します。 Joe Healy は、Sanjay Patel が退職した後、Sanjay の職位に就きます。 Sanjay がまだ彼の職位に割り当てられている場合でも、Sanjay の最終日の後にのみ割り当てが有効になるように Joe Heal を同じ職位に割り当てることができます。
 
 
 

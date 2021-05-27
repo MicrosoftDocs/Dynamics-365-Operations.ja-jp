@@ -2,7 +2,6 @@
 title: オンライン注文用の消費税のコンフィギュレーション
 description: このトピックでは、Dynamics 365 Commerce のさまざまなオンライン注文タイプに対する消費税グループの選択の概要を示します。
 author: gvrmohanreddy
-manager: AnnBe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 8df939c1a566fb63bc53e455cc6c2aa85956ac79
-ms.sourcegitcommit: 583801af75c50915ea5ffc60e831fb617d045533
+ms.openlocfilehash: fff4f39703a146412b460dacc3805fde097ab756
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853814"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021443"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>オンライン注文用の消費税のコンフィギュレーション
 
@@ -41,7 +40,7 @@ ms.locfileid: "5853814"
 
 ### <a name="order-pick-up-in-store"></a>店舗で受け取る注文
 
-店舗での受け取りまたはカーブサイド ピックアップが指定されている注文明細行の場合は、選択したピックアップ店舗の税グループが適用されます。 特定の店舗の消費税を設定する方法の詳細については、[店舗のその他の税オプションの設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores)を参照してください。
+店舗での受け取りまたはカーブサイド ピックアップが指定されている注文明細行の場合は、選択したピックアップ店舗の税グループが適用されます。 特定の店舗の消費税を設定する方法の詳細については、[店舗のその他の税オプションの設定](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores)を参照してください。
 
 ## <a name="customer-account-based-taxes-for-online-orders"></a>オンライン注文の顧客アカウントに基づく税
 
@@ -71,15 +70,15 @@ Commerce 本社の特定の顧客アカウントに消費税グループを構�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[宛先に基づくオンライン ストアの税を設定する](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
+[宛先に基づくオンライン ストアの税を設定する](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
-[消費税の概要](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
+[消費税の概要](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[[発生元] フィールドでの消費税計算方法](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
+[[発生元] フィールドでの消費税計算方法](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[消費税の割り当ておよび上書き](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
+[消費税の割り当ておよび上書き](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[消費税コードの合計額と間隔計算オプション](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
+[消費税コードの合計額と間隔計算オプション](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
 [非課税の計算](tax-exempt-price-inclusive.md) 
 
