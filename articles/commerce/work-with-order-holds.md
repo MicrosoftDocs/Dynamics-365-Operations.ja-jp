@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 61a73f10c8a8b3386826f08184028d8d5e6508a4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2066e0841658917cb0e6ddc0fbacf98d52098da8
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800386"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027459"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>コール センターの注文保留のコンフィギュレーションおよび作業
 
@@ -53,7 +53,7 @@ ms.locfileid: "5800386"
 
 コール センター チャンネルで **オーダー完了の有効化** フラグが有効な場合、支払を保留中の注文に適用する必要はありません。 対照的に、保留中と設定されていない販売注文に対して、ユーザーは支払が適用されるまで販売注文入力ページから移動できません。 もちろん、注文保留がリリースされる前に、支払われる必要があります。
 
-また、コール センターのユーザーは、何らかの理由で疑わしい注文を手動の不正保留とすることができます。 また、不正の基準や規則に合っている場合、注文を自動的に保留にすることもできます。 この注文保留のタイプに関する詳細情報については、次を参照してください [詐欺警告の設定](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts)。
+また、コール センターのユーザーは、何らかの理由で疑わしい注文を手動の不正保留とすることができます。 また、不正の基準や規則に合っている場合、注文を自動的に保留にすることもできます。 この注文保留のタイプに関する詳細情報については、次を参照してください [詐欺警告の設定](/dynamics365/unified-operations/retail/set-up-fraud-alerts)。
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>保留中の注文を、表示および管理します。
 

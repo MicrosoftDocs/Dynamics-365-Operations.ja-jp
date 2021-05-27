@@ -2,11 +2,9 @@
 title: 品質管理テスト機器
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質指示のテストに使用できるテスト機器を作成する方法について説明します。
 author: rachel-profitt
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestInstrument
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: raprofit
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc09021f89a9064a3140a726fca74e3eceab13da
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 3806ca26b8909b03768dad54ddad0084e1cea4a6
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956730"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021735"
 ---
 # <a name="quality-management-test-instruments"></a>品質管理テスト機器
 

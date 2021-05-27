@@ -380,8 +380,6 @@
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: 現金管理の改善
                       href: cash-mgmt.md
-                    - name: POS での在庫検索
-                      href: product-variants-POS.md
                     - name: POS でのトランザクションの中断および再開
                       href: pos-suspend-recall-transactions.md
                     - name: オフライン POS 機能
@@ -714,6 +712,8 @@
                       href: pos-outbound-inventory-operation.md
                     - name: 小売チャンネルの引当可能在庫数量の計算
                       href: calculated-inventory-retail-channels.md
+                    - name: POS での在庫検索操作
+                      href: pos-inventory-lookup-operation.md
                 - name: 発注書
                   items:
                     - name: 発注書の概要
@@ -2448,10 +2448,34 @@
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
                     - name: POS 拡張機能パッケージ プロジェクトの作成
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Modern POS 拡張機能 appx ファイルの作成
+                    - name: Modern POS 拡張パッケージの .appx ファイルの作成
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
                     - name: POS 拡張機能のデバッグ
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: 拡張機能パッケージと展開
+                      items:
+                        - name: Modern POS 拡張機能パッケージの作成
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: Modern POS (MSIX) 拡張機能パッケージへのコード署名
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: Cloud POS 拡張機能パッケージの作成
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: 独立したパッケージ モデルへの POS 拡張機能の移行
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: POS 拡張機能開発ガイド
+                      items:
+                        - name: POS 拡張機能の基本
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: POS でのカスタム ビューの作成
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: 拡張機能での POS コントロールの使用
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: タスク
+                          items:
+                            - name: POS 拡張機能での Knockout.js の使用
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: カスタム ヘッドレス Commerce API の使用
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Hardware Station の拡張機能
               items:
                 - name: Hardware Station および拡張機能

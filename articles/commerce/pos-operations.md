@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac3eb0da704e06376d8ca969e06fb177ce15a6b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b02f94bb2217729f35f0593fe99807273608811
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804284"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027651"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>オンラインおよびオフラインでの販売時点管理 (POS) の操作
 
@@ -64,8 +64,8 @@ ms.locfileid: "5804284"
 | 642 | すべての製品の実行 | すべての明細行の配送モードを **Carryout** に設定します。 | 有 | 有 | 無 | 有\* | 無 |
 | 641 | 選択した製品の実行 | 選択した明細行の配送モードを **Carryout** に設定します。 | はい | はい | いいえ | はい\* | いいえ |
 | 647 | 荷渡方法の変更 | コンフィギュレーション済の出荷販売明細行の荷渡方法を変更します。 | はい | はい | いいえ | いいえ| いいえ |
-| 1215 | パスワードの変更 | この操作で、POS ユーザーが自分のパスワードを変更することができます。 | 有 | 有 | 有 | 無 | 無 |
-| 123 | 単位の変更 | 選択した明細行品目の測定単位を変更します。 | 有 | 有 | 無 | 有 | 無 |
+| 1215 | パスワードの変更 | この操作で、POS ユーザーが自分のパスワードを変更することができます。 | あり | あり | あり | なし | なし |
+| 123 | 測定単位の変更 | 選択した明細行品目の測定単位を変更します。 | 有 | 有 | 無 | 有 | 無 |
 | 639 | トランザクションの既定の販売担当者をクリア | トランザクションからコミッション売上グループ (販売担当者) を削除します。 | 有 | 有 | 無 | 有 | 無 |
 | 106 | 数量のクリア | 現在選択されている明細行の数量を **1** にリセットします。 | 有 | 有 | 無 | 有 | 無 |
 | 640 | 明細行の販売担当者のクリア | 現在選択されている明細行からコミッション売上グループ (販売担当者) を削除します。 | 有 | 有 | 無 | 有 | 無 |

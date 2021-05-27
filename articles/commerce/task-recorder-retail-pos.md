@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4bb8ce1abc07bc57e90e893e7e327761131d52a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795216"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028110"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) および Cloud POS のタスク レコーダーとヘルプ
 
@@ -127,7 +127,7 @@ You can specify the beginning and end of a set of grouped steps by using the **�
 
 #### <a name="text"></a>テキスト
 
-**テキスト** フィールドに入力するテキストは、タスク ガイドのステップのテキストの *上* に表示されます。 この場所は、ステップを完了する前にユーザーに読んでもらいたいテキストに適しています。
+**テキスト** フィールドに入力するテキストは、タスク ガイドのステップのテキストの *上* に表示されます。 この場所は、ユーザーがステップを完了する前にユーザーに読んでもらいたいテキストに適しています。
 
 #### <a name="notes"></a>摘要
 
@@ -135,7 +135,7 @@ You can specify the beginning and end of a set of grouped steps by using the **�
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Retail Modern POS および Cloud POS のヘルプ
 
-独自のタスク記録をテキストとして表示するために、Retail Modern POS および Cloud POS のヘルプ ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、「[ヘルプ システムの接続](../fin-and-ops/get-started/help-connect.md)」を参照してください。 Retail Modern POS および Cloud POS のヘルプでは、リアルタイムで LCS を検索します。 コマースのヘルプ システムのパラメーターで選択されているすべての BPM ライブラリを検索し、関連する結果を示します。 **ヘルプ** メニューにアクセスするには、画面の上部にある **ヘルプ** ボタン (疑問符) をクリックし、検索ボックスにプロセス名を入力して、検索ボタンをクリックします。
+独自のタスク記録をテキストとして表示するために、Retail Modern POS および Cloud POS のヘルプ ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、「[ヘルプ システムの接続](../fin-ops-core/fin-ops/get-started/help-connect.md)」を参照してください。 Retail Modern POS および Cloud POS のヘルプでは、リアルタイムで LCS を検索します。 コマースのヘルプ システムのパラメーターで選択されているすべての BPM ライブラリを検索し、関連する結果を示します。 **ヘルプ** メニューにアクセスするには、画面の上部にある **ヘルプ** ボタン (疑問符) をクリックし、検索ボックスにプロセス名を入力して、検索ボタンをクリックします。
 
 [![ヘルプ ボタン](./media/help.jpg)](./media/help.jpg)
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d6fa36d7bb45e1cd9f8c3fbc1e60ac521f1f9b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d9d36bcb05cf466d34d921d8cd5266b6c12a63d7
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795456"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028254"
 ---
 # <a name="shift-and-cash-drawer-management"></a>シフトとキャッシュ ドロワーの管理
 
@@ -154,7 +154,7 @@ POS でシフトおよびキャッシュ ドロワーの調整が使用される
 
 この設定により、バック オフィスの明細書が POS のシフトと同じトランザクションを含み、データがそのシフトごとに集計されていることが保証されます。
 
-明細書および決済方法の詳細については、[小売明細書の店舗のコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements) を参照してください。
+明細書および決済方法の詳細については、[小売明細書の店舗のコンフィギュレーション](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements) を参照してください。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

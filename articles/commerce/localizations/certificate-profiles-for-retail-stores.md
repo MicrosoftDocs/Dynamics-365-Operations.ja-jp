@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 66a2cc5c87f5567f0e65842638017e5127d68a13
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44042fc43fa3b43358120fb6f8f633abeae7005f
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798864"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020316"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>小売店舗のユーザー定義の証明書プロファイル
 
@@ -79,7 +79,7 @@ ms.locfileid: "5798864"
 - **Key Vault 証明書** – **場所のタイプ** フィールドを **Key Vault** に設定する場合、このフィールドは必須です。 これを使用して、Key Vault 証明書のシークレットを指定します。
 
     > [!NOTE]
-    > 証明書プロファイルで Key Vault 証明書を使用する前に、必ずキー コンテナー ストレージに証明書をアップロードし、[Azure Key Vault クライアントの設定](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client) の指示に従ってください。
+    > 証明書プロファイルで Key Vault 証明書を使用する前に、必ずキー コンテナー ストレージに証明書をアップロードし、[Azure Key Vault クライアントの設定](../../finance/localizations/setting-up-azure-key-vault-client.md) の指示に従ってください。
 
 - **店舗名** – このフィールドはオプションであり、**場所タイプ** フィールドを **ローカル証明書** に設定した場合にのみ利用できます。 これを使用して、ローカル証明書の検索に使用する既定の店舗名を指定します。
 - **店舗の場所** – このフィールドはオプションであり、**場所タイプ** フィールドを **ローカル証明書** に設定した場合にのみ利用できます。 これを使用して、ローカル証明書の検索に使用する既定の店舗の場所を指定します。

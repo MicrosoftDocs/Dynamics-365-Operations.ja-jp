@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71e523cab20281d5db7efff40b5ef4f7293a4765
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3e26c3130914ebef5a63b79c477d7d5846fd5b71
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799134"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027603"
 ---
 # <a name="enable-location-based-store-detection"></a>場所に基づく店舗検出の有効化
 
@@ -31,7 +31,7 @@ ms.locfileid: "5799134"
 
 ## <a name="privacy-notice"></a>プライバシー通知
 
-場所に基づく店舗検出機能を有効にすると、顧客のブラウザーからの情報が Microsoft location 位置情報サービスに送信されます。 その後、この情報を使用して、その場所に関連するコンテンツを顧客に提供します。 顧客のブラウザーから送信される情報と、顧客に返される場所に基づく情報の両方が、プライバシー ポリシーと Cookie コンプライアンス ポリシーの対象となります。
+場所に基づく店舗検出機能を有効にすると、顧客のブラウザーからの情報が Microsoft location 位置情報サービスに送信されます。 その後、この情報を使用して、その顧客の場所に関連するコンテンツを顧客に提供します。 顧客のブラウザーから送信される情報と、顧客に返される場所に基づく情報の両方が、プライバシー ポリシーと Cookie コンプライアンス ポリシーの対象となります。
 
 ## <a name="turn-on-location-based-store-detection"></a>場所に基づく店舗検出の有効化
 

@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944416"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980952"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
 
@@ -58,7 +58,10 @@ ms.locfileid: "5944416"
   - **移動オーダー** (単純なピッキングと積荷作業を含む出庫のみ)
 
 - **倉庫オーダー入庫データ** - このデータは、倉庫にリリースされた発注書に対してのみ使用されます。
-- **ライセンス プレート データ** - ライセンス プレートはハブとスケール ユニットで作成できます。 専用の競合処理が指定されています。 このデータは倉庫固有ではないことに注意してください。
+- **ライセンス プレート データ** - ライセンス プレートはハブとスケール ユニットの両方で作成できます。 専用の競合処理が指定されています。 
+
+    > [!IMPORTANT]
+    > ライセンス プレート データは倉庫固有ではありません。 同じ同期サイクル内に同じライセンス プレート番号が 1 つでも、スケール単位に対して同じライセンス番号が作成されると、次の同期が失敗します。 この場合は、**システム管理 > 照会 > ワークロード照会 > 重複レコード** の順にクリックして、データを表示および統合します。
 
 ## <a name="outbound-process-flow"></a>出荷プロセス フロー
 

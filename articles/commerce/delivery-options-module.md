@@ -2,7 +2,6 @@
 title: 配送オプション モジュール
 description: このトピックでは、配送オプション モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 12b0281a27dcf5f567bcd6be5530fa8e26a4ae99
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 1e55ce327e2c8ab714eb5e2fa14b3830b9171688
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937485"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020682"
 ---
 # <a name="delivery-options-module"></a>配送オプション モジュール
 

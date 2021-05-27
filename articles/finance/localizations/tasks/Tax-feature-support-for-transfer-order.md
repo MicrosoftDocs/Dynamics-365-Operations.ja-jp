@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920958"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021372"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>移動オーダーに対する税機能のサポート
 
@@ -41,7 +40,7 @@ ms.locfileid: "5920958"
 
 1. **税機能** ページの **バージョン** タブで、ドラフト機能バージョンを選択し、**編集** を選択します。
 
-    ![編集の選択](../media/image1.png)
+    ![編集の選択](../media/tax-feature-support-01.png)
 
 2. **税機能の設定** ページの **税コード** タブで、**追加** を選択して新しい税コードを作成します。 この例では 、**NL-Exempt**、**BE-RC-21**、**BE-RC+21** の 3 つの税コードが作成されます。
 
@@ -54,7 +53,7 @@ ms.locfileid: "5920958"
         4. **レート** テーブルで、**追加** を選択します。
         5. **一般** セクションで 、**非課税である** を **はい** に切り替えます。
 
-        ![NL-Exempt 税コード](../media/image2.png)
+        ![NL-Exempt 税コード](../media/tax-feature-support-02.png)
 
     - ベルギーの倉庫で移動オーダーを受け取る場合は 、**BE-RC-21** および **BE-RC+21** 税コードを使用して逆請求メカニズムが適用されます。
         
@@ -67,7 +66,7 @@ ms.locfileid: "5920958"
         6. **一般** セクションで 、**逆請求である** を **はい** に切り替えます。
         7. **保存** を選択します。
 
-        ![逆請求の BE-RC-21 税コード](../media/image3.png)
+        ![逆請求の BE-RC-21 税コード](../media/tax-feature-support-03.png)
         
         税コード **BE-RC+21** を作成します。
         1. **追加** を選択し、**税コード** フィールドに **BE-RC-21** を入力します。
@@ -77,7 +76,7 @@ ms.locfileid: "5920958"
         5. **税率** フィールドに **21** と入力します。
         6. **保存** を選択します。
 
-        ![逆請求の BE-RC+21 税コード](../media/image4.png)
+        ![逆請求の BE-RC+21 税コード](../media/tax-feature-support-04.png)
 
 3. 税コードの適用方法を定義します。
 

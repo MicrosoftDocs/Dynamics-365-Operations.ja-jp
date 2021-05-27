@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910428"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6017009"
 ---
 # <a name="inventory-visibility-add-in"></a>在庫の視覚化アドイン
 
@@ -41,20 +41,23 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、 Inventory Visibil
 
 詳細については、 [Lifecycle Services のリソース](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md) を参照してください。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="inventory-visibility-add-in-prerequisites"></a>在庫の視覚化アドイン前提条件
 
 Inventory Visibility Add-in をインストールする前に、以下を実行する必要があります。
 
 - 少なくとも 1 つの環境が配置されている LCS 実装プロジェクトを取得する。
 - [アドインの概要](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md)で提供されるアドインを設定するための前提条件が完了したことを確認します。 在庫の視覚化にデュアル書き込みリンクは必要ありません。
 - [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) から在庫の視覚化チームに連絡して、次の 3 つの必要なファイルを入手してください。
-    - `Inventory Visibility Dataverse Solution.zip`
-    - `Inventory Visibility Configuration Trigger.zip`
-    - `Inventory Visibility Integration.zip` (実行している Supply Chain Management がバージョン 10.0.18 より以前のバージョンの場合)
+  - `Inventory Visibility Dataverse Solution.zip`
+  - `Inventory Visibility Configuration Trigger.zip`
+  - `Inventory Visibility Integration.zip` (実行している Supply Chain Management がバージョン 10.0.18 より以前のバージョンの場合)
+- または、[inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) から在庫の視覚化チームに連絡して、Package Deployer のパッケージを入手してください。 これらのパッケージは、公式の Package Deployer ツールで使用できます。
+  - `InventoryServiceBase.PackageDeployer.zip`
+  - `InventoryServiceApplication.PackageDeployer.zip` (このパッケージには、`InventoryServiceBase` パッケージ内のすべての変更に加えて、UI アプリケーション コンポーネント が含まれています)
 - [クイック スタート: Microsoft ID プラットフォームにアプリケーションを登録](/azure/active-directory/develop/quickstart-register-app) の指示に従って、アプリケーションを登録し、Azure サブスクリプションで AAD にクライアント シークレットを起動します。
-    - [アプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)
-    - [クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-    - **アプリケーション (クライアント) ID**、**クライアント シークレット** と **テナント ID** は次の手順でを使用されます。
+  - [アプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)
+  - [クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+  - **アプリケーション (クライアント) ID**、**クライアント シークレット**、**テナント ID** は次の手順でを使用されます。
 
 > [!NOTE]
 > 現在サポートされている国や地域には、カナダ、米国、欧州連合 (EU) が含まれます。
@@ -63,18 +66,49 @@ Inventory Visibility Add-in をインストールする前に、以下を実行�
 
 ### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Dataverse を設定する
 
-Dataverse を設定するには、次の手順に従います。
+在庫の可視化で使用できるよう Dataverse を設定するには、まず前提条件を満たしてから、Package Deployer ツールを使用して Dataverse を設定するか、ソリューションを手動でインポートするかを決定する必要があります (両方を行う必要はありません)。 その後、在庫の可視化アドインをインストールします。 次のサブセクションでは、これらの各タスクの完了方法について説明します。
 
-1. テナントにサービス プリンシパルを追加します。
+#### <a name="prepare-dataverse-prerequisites"></a>Dataverse 前提条件の準備
 
-    1. [Graph 用 Azure Active Directory  PowerShell をインストールする](/powershell/azure/active-directory/install-adv2)に記載の手順に従って Azure AD PowerShell モジュール v2 をインストールします。
-    1. 次の PowerShell コマンドを実行します。
+Dataverse の設定を開始する前に、次の手順に従って、テナントにサービス原則を追加します。
 
-        ```powershell
-        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+1. [Graph 用 Azure Active Directory  PowerShell をインストールする](/powershell/azure/active-directory/install-adv2)に記載の手順に従って Azure AD PowerShell モジュール v2 をインストールします。
 
-        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
-        ```
+1. 次の PowerShell コマンドを実行します。
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+    
+    New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+    ```
+
+#### <a name="set-up-dataverse-using-the-package-deployer-tool"></a>Package Deployer ツールを使用した Dataverse の設定
+
+前提条件を満たした後に Package Deployer ツールを使用して Dataverse を設定したい場合は、次の手順に従います。 代わりにソリューションを手動でインポートする方法の詳細については、次のセクションを参照してください (両方実行しないでください)。
+
+1. [NuGet からツールをダウンロード](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget) に従って、開発者ツールをインストールします。
+
+1. 業務要件に基づいて、`InventoryServiceBase` または `InventoryServiceApplication` パッケージを選択します。
+
+1. ソリューションのインポート。
+    1. `InventoryServiceBase` パッケージの場合は、次に従ってください。
+        - `InventoryServiceBase.PackageDeployer.zip` を解凍する
+        - フォルダ `InventoryServiceBase`、ファイル `[Content_Types].xml`、ファイル `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`、ファイル `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`、ファイル `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config` を検索します。 
+        - これらのフォルダおよびファイルを、開発者ツールのインストール時に作成された `.\Tools\PackageDeployment` ディレクトリにコピーします。
+    1. `InventoryServiceApplication` パッケージの場合は、次に従ってください。
+        - `InventoryServiceApplication.PackageDeployer.zip` を解凍する
+        - フォルダ `InventoryServiceApplication`、ファイル `[Content_Types].xml`、ファイル `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`、ファイル `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`、ファイル `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config` を検索します。
+        - これらのフォルダおよびファイルを、開発者ツールのインストール時に作成された `.\Tools\PackageDeployment` ディレクトリにコピーします。
+    1. `.\Tools\PackageDeployment\PackageDeployer.exe` を実行する。 画面の指示に従って、ソリューションをインポートします。
+
+1. セキュリティ ロールをアプリケーション ユーザーに割り当てます。
+    1. Dataverse 環境の URLを開きます。
+    1. **詳細設定 \> システム \> セキュリティ \> ユーザー** に移動して、**# InventoryVisibility** という名前のユーザーを検索します。
+    1. **ロールの割り当て** を選択してから、**システム管理者** を選択します。 **Common Data Service ユーザー** という名前のロールがある場合は、それも選択します。
+
+#### <a name="set-up-dataverse-manually-by-importing-solutions"></a>ソリューションをインポートして Dataverse を手動設定
+
+前提条件を満たした後に手動でソリューションをインポートして Dataverse を設定したい場合は、次の手順に従います。 代わりに Package Deployer ツールを使用する方法の詳細については、前のセクションを参照してください (両方実行しないでください)。
 
 1. Dataverse で在庫の視覚化のアプリケーション ユーザーを作成します。
 

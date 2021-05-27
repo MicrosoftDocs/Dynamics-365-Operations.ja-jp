@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb3555e6d923fe37479c3204f0b78f7cdf510118
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 1951f85f84c3b8b2d42f49d5f464d90d410ebfa2
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938501"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015954"
 ---
 # <a name="category-requests-from-vendors"></a>仕入先からのカテゴリ要求
 
@@ -36,10 +36,7 @@ ms.locfileid: "5938501"
 
 仕入先がカテゴリ要求を操作するには、仕入先コラボレーションに設定されている必要があります。
 
-仕入先には、少なくとも 1 人の仕入先コラボレーション ユーザーが必要です。 次のセキュリティ ロールの 1 つまたは両方を持つ仕入先ユーザーだけがカテゴリ要求の作成と送信を行うことができます。
-
-- 仕入先連絡先 (外部)
-- ベンダー管理者 (外部)
+仕入先には、少なくとも 1 人の仕入先コラボレーション ユーザーが必要です。 カテゴリ要求を作成および送信できるのは、*仕入先管理者 (外部)* セキュリティ ロールを持つ仕入先ユーザーのみです。
 
 詳細については、「[仕入先コラボレーションの設定と管理](set-up-maintain-vendor-collaboration.md)」を参照してください。
 

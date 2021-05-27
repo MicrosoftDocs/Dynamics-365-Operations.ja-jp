@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ee2ac8636dad8d31719971b2cc17c8b923f07959
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a1d0ae4e487c391020947c607d5d7cb5d1ba6af4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801462"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020606"
 ---
 # <a name="sign-in-link-redirects-back-to-an-e-commerce-site"></a>サインイン リンクが eコマース サイトにリダイレクトする
 
@@ -51,6 +50,6 @@ Azure AD B2C アプリケーションで返信 URL が正しく構成されて�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Azure Active Directory B2C にWeb アプリケーションを登録する](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
+[Azure Active Directory B2C にWeb アプリケーションを登録する](/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
 
 [Commerce での B2C テナントの設定](../set-up-b2c-tenant.md)

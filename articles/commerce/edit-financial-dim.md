@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ff16d8e2e75a877e5ca7de604c7915e908473da6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 381d8bb0939f6c4c163477990e49382201487375
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792708"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019910"
 ---
 # <a name="edit-financial-dimensions-for-retail-transactions"></a>小売トランザクションの財務分析コードの編集
 
@@ -34,7 +34,7 @@ Commerce 本社で小売トランザクションの財務分析コードを編�
 
 1. **アプリケーション統合用の財務分析コードのコンフィギュレーション** ページを開きます。
 1. 有効な **既定の分析コード統合** レコードを選択します。
-1. **財務分析コード** クイックタブで、Excel ワークシートで編集するすべての分析コードが、**選択済** リストに表示されていることを確認します。 詳細については、[データ エンティティ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration#data-entities)を参照してください。
+1. **財務分析コード** クイックタブで、Excel ワークシートで編集するすべての分析コードが、**選択済** リストに表示されていることを確認します。 詳細については、[データ エンティティ](../fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration.md#data-entities)を参照してください。
 1. **明細書** ページ、**小売トランザクション** ページ、または **店舗の財務** ワークスペースの **トランザクションの検証エラー** タイル から Excel ファイルをダウンロードして開きます。
 1. トランザクションの財務分析コードを変更するには、**デザイン** を選択し、**トランザクション (監査可能)** 行の横にある鉛筆の記号を選択します。
 1. **FinancialDimensionDisplayValue** フィールドを見つけて選択し、Excel ワークシートのヘッダー部分のセルを選択して、**ラベルの追加** を選択します。

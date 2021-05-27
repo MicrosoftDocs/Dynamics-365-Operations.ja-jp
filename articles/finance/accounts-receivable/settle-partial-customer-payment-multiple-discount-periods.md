@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21600c0815da99314dcbb8f123449c2ae93a3c1a
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835103"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027483"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>複数の割引期間を持つ一部の顧客支払を決済する
 
@@ -31,7 +31,7 @@ ms.locfileid: "5835103"
 Fabrikam は、顧客 4031 に 2 つの現金割引期間を提示します。 顧客は、請求書の支払が 5 日以内に行われた場合には 2% の現金割引を、14 日以内に行われた場合には 1% の現金割引を受けます。 Fabrikam は、一部支払に対する現金割引も提供します。 決済のパラメーターは **売掛金勘定パラメーター** ページにあります。
 
 ## <a name="invoice"></a>請求書
-6 月 25 日に、アーニーは顧客 4031 に対して 1,000.00 ドルの請求書を入力して転記します。 アーニーはこの請求書の現金割引を確認すると、請求書の支払が 6 月 30 日までに行われた場合、顧客は 4031 は 20.00 ドルの割引きを受けることがわかります。 請求書の支払が 7 月 9 日までに行われた場合、顧客は 10.00 ドルの割引を受けます。
+6 月 25 日に、アーニーは顧客 4031 に対して 1,000.00 ドルの請求書を入力して転記します。 アーニーがこの請求書の現金割引を確認すると、請求書の支払が 6 月 30 日までに行われた場合、顧客は 4031 は 20.00 ドルの割引きを受けることがわかります。 請求書の支払が 7 月 9 日までに行われた場合、顧客は 10.00 ドルの割引を受けます。
 
 | 現金割引日 | 現金割引金額 | トランザクション通貨の金額 |
 |--------------------|----------------------|--------------------------------|

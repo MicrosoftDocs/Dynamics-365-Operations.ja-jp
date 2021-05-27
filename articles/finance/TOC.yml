@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-18.md
                     - name: Finance 10.0.17 (2021 年 4 月)
                       href: get-started/whats-new-changed-10-0-17.md
-                    - name: Finance 10.0.16 (2021 年 2 月)
-                      href: get-started/whats-new-changed-10-0-16.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -426,8 +424,10 @@
                   href: accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
                 - name: 訂正票で割引がある一部の顧客支払の決済
                   href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
-                - name: 複数の割引期間を持つ一部の仕入先支払の決済
+                - name: 複数の割引期間を持つ一部の顧客支払の決済
                   href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+                - name: 顧客前払
+                  href: accounts-receivable/customer-prepayments.md
                 - name: 顧客への払戻し
                   href: accounts-receivable/reimburse-customers.md
                 - name: 一部金額の顧客支払
@@ -484,6 +484,8 @@
               href: accounts-receivable/process-collection-letters-example.md
             - name: 売掛金勘定のエイジング情報の設定および生成
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: 顧客エイジングのスナップショット
+              href: accounts-receivable/customer-aging-snapshot.md
             - name: 顧客エイジング レポート
               href: accounts-receivable/customer-aging.md
             - name: 顧客の損金処理仕訳帳の作成
@@ -512,6 +514,8 @@
               href: budgeting/budget-planning-justification-docs.md
             - name: トランザクション勘定および勘定合計からの予算作成
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: 予算計画 (ナラティブ)
+              href: budgeting/budget-narrative.md
             - name: Excel の予算計画テンプレート
               href: budgeting/budget-planning-excel-templates.md
             - name: 予算計画レイアウトの拡張
@@ -1146,6 +1150,16 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: 元伝票の監査ポリシーの定義
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+            - name: トラブルシューティング
+              items:
+                - name: 会計通貨またはレポート通貨の変更
+                  href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                - name: 元帳カレンダーの変更または再割り当て
+                  href: general-ledger/change-mdfy-clndr-to-ledger.md
+                - name: 仕訳帳と明細行の逆仕訳設定
+                  href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+                - name: 年度末決算に期首残高が表示されない
+                  href: general-ledger/yec-mssng-open-blnces.md
         - name: 財務諸表
           items:
             - name: 財務諸表の使用を開始する
@@ -1648,8 +1662,16 @@
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
-                - name: SPED-Reinf 税明細書
-                  href: localizations/latam-bra-sped-reinf.md
+                - name: SPED-Reinf
+                  items:
+                    - name: SPED-Reinf の概要
+                      href: localizations/latam-bra-sped-reinf-overview.md
+                    - name: 電子メッセージの設定
+                      href: localizations/latam-bra-sped-reinf-electronic-messages.md
+                    - name: 会計帳簿の設定
+                      href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+                    - name: イベント
+                      href: localizations/latam-bra-sped-reinf.md
                 - name: SPED 会計解決 13/2019 RJ
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: SPED 会計 2020 - SPED 会計レイアウト 014 の ICMS-ST の補足情報
@@ -1782,6 +1804,8 @@
                   href: localizations/tasks/user-operation-log-china-working-rule.md
                 - name: VAT 顧客請求書に関するよく寄せられる質問
                   href: localizations/apac-chn-tax-integration-vat-customer-invoices.md
+                - name: GB/T 24589-2010 エクスポート
+                  href: localizations/apac-chn-gbt-24589-2010.md
             - name: チェコ共和国
               items:
                 - name: チェコ共和国
@@ -2038,8 +2062,18 @@
                   href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
                 - name: 時系列の請求書伝票
                   href: localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: フランスの標準監査ファイル (FEC) の作成
-                  href: localizations/emea-fra-fec-audit-file.md
+                - name: フランスの監査ファイル
+                  items:
+                    - name: フランスの監査ファイル (FEC) の概要
+                      href: localizations/emea-fra-fec-audit-file.md
+                    - name: フランスで FEC 監査ファイルを生成するための前提条件
+                      href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+                    - name: FEC の Finance データ ソースの構造
+                      href: localizations/emea-fra-fec-audit-file-structure.md
+                    - name: FEC を生成するための環境の準備
+                      href: localizations/emea-fra-fec-audit-file-setup.md
+                    - name: Dynamics 365 Finance での FEC の生成
+                      href: localizations/emea-fra-fec-audit-file-generation.md
                 - name: 顧客および仕入先の勘定明細書
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
                 - name: 請求書や督促状の支払遅延の一日当たりの利息計算および総額
@@ -2392,6 +2426,84 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: 資本品目の固定資産への移動
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
+                - name: インド TDS
+                  items:
+                    - name: インド源泉控除 (TDS) の概要
+                      href: localizations/apac-ind-TDS-India-TDS-overview.md
+                    - name: TDS の基本設定
+                      items:
+                        - name: TDS パラメーターの設定
+                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                        - name: TDS 勘定科目の設定
+                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                        - name: 法人の TDS 登録番号の設定
+                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                        - name: TDS 税タイプに対する源泉徴収税の関係機関の設定
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: TDS 税タイプに対する税コンポーネントの設定
+                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                        - name: TDS 税タイプに対する源泉徴収税コードの設定
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: TDS 税タイプに対する源泉徴収税精算期間の設定
+                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                        - name: TDS 税タイプに対する源泉徴収税レポート コードの設定
+                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                        - name: TDS 税タイプに対する源泉徴収税コードの設定
+                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                        - name: TDS 税コードを TDS 税グループに関連付け、TDS を計算するための式を定義する
+                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                        - name: TDS 特約証明書番号の記録
+                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                        - name: 買掛金勘定と売掛金勘定の TDS パラメーターの設定
+                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                        - name: TDS 配賦を使用した支払スケジュールの設定
+                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                        - name: TDS オーソリティ支払の支払手数料の設定
+                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                        - name: 仕入先と顧客の TDS グループ、PAN、TAN 情報の設定
+                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                    - name: TDS 計算のフォーミュラ デザイナーおよびしきい値の制限
+                      items:
+                        - name: TDS 計算のフォーミュラ デザイナー
+                          href: localizations/apac-ind-TDS-Formula-designer.md
+                        - name: しきい値の制限としきい値の制限の例外
+                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                    - name: 請求書の TDS 計算
+                      items:
+                        - name: 請求書の TDS 計算
+                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                        - name: 仕訳帳を使用した請求書の TDS 計算
+                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                        - name: 発注書フォームと販売注文フォームを使用した請求書の TDS 計算
+                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                        - name: '[自由形式の請求書] ページからの請求書の TDS 計算'
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                        - name: 請求書分割機能
+                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                    - name: 支払および支払手形の TDS 計算
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                    - name: 会社間トランザクションの TDS 計算
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                    - name: TDS 決済プロセス
+                      items:
+                        - name: 支払および支払手形の TDS 計算
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                        - name: 会社間トランザクションの TDS 計算
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                        - name: TDS 決済プロセス
+                          items:
+                            - name: 定期 TDS 決済プロセスの実行
+                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                            - name: TDS 支払の TDS オーソリティ仕入先への決済と TDS challan の生成
+                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                            - name: TDS 決済期間の転記された TDS 支払およびトランザクションの表示
+                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+                        - name: TDS 証明書の番号と日付の記録と更新
+                          items:
+                            - name: TDS 回収可能証明書番号の記録
+                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                            - name: TDS トランザクションの証明書の番号と日付の更新
+                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: イタリア
               items:
                 - name: イタリアの概要

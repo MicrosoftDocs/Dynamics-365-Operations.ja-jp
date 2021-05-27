@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce から Microsoft Teams へのプロビジョニング
 description: ここでは、Microsoft Teams の組織データを利用して Dynamics 365 Commerce のプロビジョニングを行う方法について説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ba7c74942735b723d1015dc4da0068fbb631bc6b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908907"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022449"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Dynamics 365 Commerce から Microsoft Teams へのプロビジョニング
 
@@ -75,9 +73,9 @@ Commerce の組織階層を Teams にアップロードするには、以下の�
     
 1. Commerce 本部で、**Retail と Commerce \> チャネルの設定 \> Microsoft Teams 統合の構成** の順に移動します。
 1. **対象の階層をダウンロード** を選択し、**地域別の小売店舗** を選択して組織階層のコンマ区切り値 (CSV) ファイルをダウンロードします。
-1. [Microsoft Teams PowerShell のインストール](https://docs.microsoft.com/microsoftteams/teams-powershell-install)に記載の手順に従って、Microsoft Teams PowerShell モジュールをインストールします。
+1. [Microsoft Teams PowerShell のインストール](/microsoftteams/teams-powershell-install)に記載の手順に従って、Microsoft Teams PowerShell モジュールをインストールします。
 1. Teams の PowerShell ウィンドウでプロンプト ウィンドウが表示された場合は、ご利用の Azure AD テナントの管理者アカウントを使用してサインインします。
-1. [チームが対象とする階層を設定する](https://docs.microsoft.com/microsoftteams/set-up-your-team-hierarchy) に記載の手順に従って、対象の階層に CSV ファイルをアップロードします。
+1. [チームが対象とする階層を設定する](/microsoftteams/set-up-your-team-hierarchy) に記載の手順に従って、対象の階層に CSV ファイルをアップロードします。
 
 ## <a name="verify-that-the-organizational-hierarchy-was-uploaded-to-teams"></a>組織階層が Teams にアップロードされたことを確認する
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa845f4d41e0bd7725349a216b9e4ee79efee79d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b3db432ae10139bcd8ee400b0bbc1173e33ef206
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792418"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019814"
 ---
 # <a name="product-recommendations-faq"></a>製品推奨事項に関するよく寄せられる質問
 
@@ -68,7 +68,7 @@ ms.locfileid: "5792418"
 
 ## <a name="how-do-i-add-a-list-to-an-e-commerce-page"></a>E コマース ページにリストを追加する方法はありますか。
 
-製品推奨事項ページを E コマース Web サイトに追加する方法の詳細については、[製品推奨リストをページに追加する](add-reco-list-to-page.md)を参照してください。
+製品推奨事項ページを E コマース Web サイトに追加する方法の詳細については、[製品推奨リストをページに追加する](./product-recommendations.md)を参照してください。
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>POS で推奨事項を有効にするにはどうすればよいですか。
 

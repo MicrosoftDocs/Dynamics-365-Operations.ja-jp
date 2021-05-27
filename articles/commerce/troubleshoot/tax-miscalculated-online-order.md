@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7f71add679e1d24f80db8ce3990058b591128ec1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f7cef533d76bdddfbad2e8c5f84f81ef62bccc38
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801414"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021106"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>オンライン注文の税金が間違って計算される
 
@@ -44,7 +43,7 @@ Commerce 本社で小売店舗の消費税を構成するには、次の手順�
 1. **一般** クイックタブの **消費税** セクションで、店舗の消費税情報を構成します。
 
 > [!NOTE]
-> 店舗からの製品集荷の場合、税グループは、集荷用に選択された店舗から取得されます。 詳細については、[店舗のほかの税オプションの設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores) を参照してください。
+> 店舗からの製品集荷の場合、税グループは、集荷用に選択された店舗から取得されます。 詳細については、[店舗のほかの税オプションの設定](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores) を参照してください。
 
 ### <a name="configure-the-sales-tax-for-a-customers-address-in-commerce-headquarters"></a>Commerce 本社で顧客の住所の消費税を構成する
 
@@ -68,7 +67,7 @@ Commerce 本社で一般的な消費税グループを構成するには、次�
 1. **小売の宛先に基づく税** クイックタブで、消費税グループの税金を構成します。
 
 > [!NOTE]
-> 顧客の住所で消費税がかからない出荷の場合、税グループに対して構成されている明細行の配送先住所と宛先に基づく税によって、税グループが決まります。 詳細については、[宛先に基づくオンライン ストアのための税の設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)を参照してください。
+> 顧客の住所で消費税がかからない出荷の場合、税グループに対して構成されている明細行の配送先住所と宛先に基づく税によって、税グループが決まります。 詳細については、[宛先に基づくオンライン ストアのための税の設定](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

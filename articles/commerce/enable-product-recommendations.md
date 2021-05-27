@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 59d6b298896c92cbc0f6bbae17096ee1f027b922
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 873266405638cd277eb748ad7e966ba8a4976b13
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799158"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019862"
 ---
 # <a name="enable-product-recommendations"></a>製品推奨事項の有効化
 
@@ -39,7 +39,7 @@ ms.locfileid: "5799158"
 2. エンティティ格納の更新が自動化されていることを確認します。 詳細については、[エンティティ格納の更新が自動化されていることを確認する](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md) を参照してください。
 3. Azure AD ID コンフィギュレーションに推奨事項のエントリが含まれていることを確認します。 このアクションを実行する方法の詳細については、以下を参照してください。
 
-さらに、RetailSale の測定が有効になっていることを確認します。 この設定プロセスの詳細については、[測定の使用](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures) を参照してください。
+さらに、RetailSale の測定が有効になっていることを確認します。 この設定プロセスの詳細については、[測定の使用](/dynamics365/ai/customer-insights/pm-measures) を参照してください。
 
 ## <a name="azure-ad-identity-configuration"></a>Azure AD ID コンフィギュレーション
 

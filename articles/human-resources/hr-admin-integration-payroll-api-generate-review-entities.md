@@ -2,7 +2,6 @@
 title: 給与エンティティの生成および確認
 description: このトピックでは、給与エンティティを生成および確認する方法について説明します。
 author: andreabichsel
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6e043498d4e36e38575a16c6475a5edfef51fc6
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 4adab0225190b4dea5213dccf297eaab33efc863
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5882023"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021323"
 ---
 # <a name="generate-payroll-entities"></a>給与エンティティの生成
 
