@@ -1,0 +1,39 @@
+---
+title: 請求書における TDS の計算
+description: このトピックでは、請求書レベルで源泉徴収 (TDS) が計算されるトランザクションについての参考情報を提供します。
+author: kailiang
+ms.date: 02/12/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+ms.author: kailiang
+ms.search.validFrom: 2021-02-12
+ms.dyn365.ops.version: AX 10.0.17
+ms.openlocfilehash: 496e87e3028025f738d2f0a697d91c18b77ad1c9
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023392"
+---
+# <a name="tds-calculation-on-invoices"></a><span data-ttu-id="5332c-103">請求書における TDS の計算</span><span class="sxs-lookup"><span data-stu-id="5332c-103">TDS calculation on invoices</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="5332c-104">このトピックでは、請求書レベルで源泉徴収 (TDS) が計算されるトランザクションについての参考情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="5332c-104">This topic provides a reference for transactions where the Tax Deducted at Source (TDS) is calculated at the invoice level.</span></span>
+
+| <span data-ttu-id="5332c-105">シリアル番号</span><span class="sxs-lookup"><span data-stu-id="5332c-105">Serial number</span></span> | <span data-ttu-id="5332c-106">トランザクション タイプ</span><span class="sxs-lookup"><span data-stu-id="5332c-106">Transaction type</span></span>                                 | <span data-ttu-id="5332c-107">トランザクション金額</span><span class="sxs-lookup"><span data-stu-id="5332c-107">Transaction amount</span></span> | <span data-ttu-id="5332c-108">ページ名とパスの選択</span><span class="sxs-lookup"><span data-stu-id="5332c-108">Page name and selection path</span></span>                                 | <span data-ttu-id="5332c-109">勘定タイプと相手勘定タイプ</span><span class="sxs-lookup"><span data-stu-id="5332c-109">Account type and offset account type</span></span>                         |
+| ------------- | ------------------------------------------------ | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <span data-ttu-id="5332c-110">1.</span><span class="sxs-lookup"><span data-stu-id="5332c-110">1.</span></span>            | <span data-ttu-id="5332c-111">仕入先からのの購買/費用の計上</span><span class="sxs-lookup"><span data-stu-id="5332c-111">Purchase made from vendor / recording expenses</span></span>   | <span data-ttu-id="5332c-112">借方または貸方</span><span class="sxs-lookup"><span data-stu-id="5332c-112">Debit  Or  Credit</span></span>  | <span data-ttu-id="5332c-113">一般仕訳帳ページ ([総勘定元帳] > [仕訳帳エントリ] > [一般仕訳帳])、請求書承認仕訳帳ページ ([買掛金管理] > [請求書の承認])、請求仕訳帳ページ ([買掛金管理] > [請求書] > [請求仕訳帳])</span><span class="sxs-lookup"><span data-stu-id="5332c-113">General journals page (General ledger >  Journal entries > General journals), Invoice approval journal page (Accounts payable > Invoices > Invoice approval), Invoice journal page (Accounts payable >  Invoices > Invoice journal)</span></span> | <span data-ttu-id="5332c-114">仕入先 (Dr.)  仕入先 (Cr.)</span><span class="sxs-lookup"><span data-stu-id="5332c-114">Ledger (Dr.)  Vendor (Cr.).</span></span>  <span data-ttu-id="5332c-115">源泉徴収税は、勘定科目が転記タイプが **購買** もしくは **現金** の場合にのみ、仕入先と元帳の組み合わせに対して計算されます。</span><span class="sxs-lookup"><span data-stu-id="5332c-115">Withholding tax is calculated for the Vendor-Ledger  combination only when the Ledger account has the posting type **Purchase**  **cash**.</span></span> |
+| <span data-ttu-id="5332c-116">2.</span><span class="sxs-lookup"><span data-stu-id="5332c-116">2.</span></span>            | <span data-ttu-id="5332c-117">顧客からの仕入れ/経費計上</span><span class="sxs-lookup"><span data-stu-id="5332c-117">Purchase made from customer / recording expenses</span></span> | <span data-ttu-id="5332c-118">借方または貸方</span><span class="sxs-lookup"><span data-stu-id="5332c-118">Debit  Or  Credit</span></span>  | <span data-ttu-id="5332c-119">[一般仕訳帳] ページ ([総勘定元帳] > [仕訳帳エントリ] > [一般仕訳帳])、請求仕訳帳ページ ([買掛金管理] > [請求書] > [請求仕訳帳])</span><span class="sxs-lookup"><span data-stu-id="5332c-119">General journals page (General ledger >  Journal entries > General journals), Invoice journal page (Accounts payable >  Invoices > Invoice journal)</span></span> | <span data-ttu-id="5332c-120">仕入先 (Dr.)、顧客 (Cr.)</span><span class="sxs-lookup"><span data-stu-id="5332c-120">Ledger (Dr.)  Customer (Cr.)</span></span>                                 |
+| <span data-ttu-id="5332c-121">3.</span><span class="sxs-lookup"><span data-stu-id="5332c-121">3.</span></span>            | <span data-ttu-id="5332c-122">仕入先からの固定資産の購入</span><span class="sxs-lookup"><span data-stu-id="5332c-122">Purchase of fixed asset from vendor</span></span>              | <span data-ttu-id="5332c-123">借方または貸方</span><span class="sxs-lookup"><span data-stu-id="5332c-123">Debit  Or  Credit</span></span>  | <span data-ttu-id="5332c-124">一般仕訳帳ページ ([総勘定元帳] > [仕訳帳エントリ] > [一般仕訳帳])、請求書登録仕訳帳ページ ([買掛金管理] > [請求書の登録])、請求仕訳帳ページ ([買掛金管理] > [請求書] > [請求仕訳帳])</span><span class="sxs-lookup"><span data-stu-id="5332c-124">General journals page (General ledger >  Journal entries > General journals), Invoice register journal page (Accounts payable > Invoices > Invoice register), Invoice journal page (Accounts payable >  Invoices > Invoice journal)</span></span> | <span data-ttu-id="5332c-125">固定資産 (Dr.)、 仕入先 (Cr.)</span><span class="sxs-lookup"><span data-stu-id="5332c-125">Fixed assets (Dr.)  Vendor (Cr.)</span></span>                             |
+| <span data-ttu-id="5332c-126">4.</span><span class="sxs-lookup"><span data-stu-id="5332c-126">4.</span></span>            | <span data-ttu-id="5332c-127">顧客からの固定資産の購入</span><span class="sxs-lookup"><span data-stu-id="5332c-127">Purchase of fixed asset from customer</span></span>            | <span data-ttu-id="5332c-128">借方または貸方</span><span class="sxs-lookup"><span data-stu-id="5332c-128">Debit  Or  Credit</span></span>  | <span data-ttu-id="5332c-129">[一般仕訳帳] ページ ([総勘定元帳] > [仕訳帳エントリ] > [一般仕訳帳])、請求仕訳帳ページ ([買掛金管理] > [請求書] > [請求仕訳帳])</span><span class="sxs-lookup"><span data-stu-id="5332c-129">General journals page (General ledger >  Journal entries > General journals), Invoice journal page (Accounts payable >  Invoices > Invoice journal)</span></span> | <span data-ttu-id="5332c-130">固定資産 (Dr.)、 顧客 (Cr.)</span><span class="sxs-lookup"><span data-stu-id="5332c-130">Fixed assets (Dr.)  Customer (Cr.)</span></span>                           |
+| <span data-ttu-id="5332c-131">5.</span><span class="sxs-lookup"><span data-stu-id="5332c-131">5.</span></span>            | <span data-ttu-id="5332c-132">購買請求書 (TDS 買掛金)</span><span class="sxs-lookup"><span data-stu-id="5332c-132">Purchase invoice  (TDS payable)</span></span>                  |                    | <span data-ttu-id="5332c-133">買掛金勘定のページ ([買掛金勘定] > [発注書] > [すべての発注書])</span><span class="sxs-lookup"><span data-stu-id="5332c-133">Purchase order page (Accounts payable > Purchase orders > All purchase orders)</span></span> |                                                              |
+| <span data-ttu-id="5332c-134">6.</span><span class="sxs-lookup"><span data-stu-id="5332c-134">6.</span></span>            | <span data-ttu-id="5332c-135">売上請求書 (TDS 売掛金)</span><span class="sxs-lookup"><span data-stu-id="5332c-135">Sales invoice  (TDS receivable)</span></span>                  |                    | <span data-ttu-id="5332c-136">[販売注文] ページ ([売掛金管理] > [注文] > [すべての販売注文])、自由形式の請求書ページ ([売掛金管理] > [請求書] > [すべての自由形式の請求書])</span><span class="sxs-lookup"><span data-stu-id="5332c-136">Sales order page (Accounts receivable > Orders > All sales orders), Free text invoice page (Accounts receivable > Invoices > All free text invoices)</span></span> |                                                              |
