@@ -1,27 +1,21 @@
 ---
 title: マイナス在庫日数および動的マイナス在庫日数
 description: このトピックでは、マイナス在庫日数および動的マイナス在庫日数に関する情報、およびこれらを使用してビジネスを支援する方法について説明します。
-author: t-benebo
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7440a6a0b9093664a0d717b3bfa011ee3100639f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907744"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097237"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>マイナス在庫日数および動的マイナス在庫日数
 
@@ -45,7 +39,7 @@ ms.locfileid: "5907744"
 - DemoProduct 品目には、6 日間の購買リード タイムがあります。
 - 0 日目 (1 月 1 日) の時点では、DemoProduct 品目の在庫レベルは 0 (ゼロ) です。
 - 0 日目 (1 月 1 日) に、DemoProduct 品目の数量 10 の販売注文を取得します。
-- 7 日目 (1 月 7 日) には、DemoProduct 項目の数量 10 に対応する既存の発注書があります。
+- 7 日目 (1 月 8 日) には、数量 10 の DemoProduct 品目に対する既存の発注書があります。
 
 次の図は、このシナリオのグラフィカル表示を示します。
 
@@ -112,7 +106,7 @@ MRP のパフォーマンスを向上させるために、マイナス在庫日�
 
 次の図は、このシナリオのグラフィカル表示を示します。
 
-![シナリオ 1 のグラフィカル表示](./media/negative-days-8.png)
+![シナリオ 2 のグラフィカル表示](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>ケース A: マイナス在庫日数は品目のリード タイムより小さい
 
@@ -157,7 +151,7 @@ MRP のパフォーマンスを向上させるために、マイナス在庫日�
 - DemoProduct 品目には、6 日間の購買リード タイムがあります。
 - 0 日目 (1 月 1 日) の時点では、DemoProduct 品目の在庫は 0 (ゼロ) です。
 - 品目のリード タイム外である 7 日目 (1 月 8 日) に、DemoProduct 品目の数量 10 の販売注文を取得します。
-- 10 日目 (1 月 11 日) には、DemoProduct 項目の数量 10 に対応する発注書があります。
+- 10 日目 (1 月 11 日) には、数量 10 の DemoProduct 品目に対する発注書があります。
 
 次の図は、このシナリオのグラフィカル表示を示します。
 
@@ -219,8 +213,8 @@ MRP のパフォーマンスを向上させるために、マイナス在庫日�
 - DemoProduct 品目には、6 日間の購買リード タイムがあります。
 - 0 日目 (1 月 1 日) の時点では、DemoProduct 品目の在庫は 0 (ゼロ) です。
 - 0 日目 (1 月 1 日) に、DemoProduct 品目の数量 10 の販売注文を取得します。
-- 10 日目 (1 月 10 日) に、DemoProduct 品目の数量 10 の販売注文を取得します。
-- 12 日目 (1 月 12 日) には、DemoProduct 項目の数量 10 に対応する発注書があります。
+- 9 日目 (1 月 10 日) に、数量 10 の DemoProduct 品目に対する販売注文を取得します。
+- 11 日目 (1 月 12 日) には、数量 10 の DemoProduct 品目に対する発注書があります。
 - マイナス在庫日数は **20** に設定され、品目のリード タイムよりもかなり大きくなります。
 
 次の図は、何が起こるかのグラフィカル表示です。
@@ -229,7 +223,7 @@ MRP のパフォーマンスを向上させるために、マイナス在庫日�
 
 MRP では次の結果が生成されます。
 
-![結果](./media/negative-days-20.png)
+![結果例 1](./media/negative-days-20.png)
 
 前のスクリーンショットでは、販売注文の要求日は 1 月 10 日ではなく、1 月 9 日になります。 このスクリーンショットは 2015 年に取られたものだったため、1 月 10 日が土曜日である場合、注文の要求日を前の稼働日である 1 月 9 日の金曜日にする必要があります。
 
@@ -239,7 +233,7 @@ MRP は、最初の販売注文で要求される需要を満たす計画発注�
 
 マイナス在庫日数を品目のリード タイムに近い値に減らし、動的マイナス在庫日数を使用すると、MRP では次のような結果が生成されます。
 
-![結果](./media/negative-days-21.png)
+![結果例 2](./media/negative-days-21.png)
 
 MRP では、最初の販売注文に関連付けられた計画オーダーが作成されます。 その後、予想されるように、2 番目の販売注文は、マイナス在庫日数の設定に基づいて既存の発注書に対して関連付けされます。 このプランニング結果も正しく、MRP の実行時間が短くなる可能性があります。 この場合、アクション メッセージをどのように処理するかを理解しておくことは必須ではありません。
 

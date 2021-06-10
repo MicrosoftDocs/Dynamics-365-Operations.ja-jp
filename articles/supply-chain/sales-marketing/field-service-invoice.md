@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f3066741781bd9058e09d7f577a35df4c9b453d4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21a77a0289055285f47323803a484c012e662e3a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819211"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102737"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Service の契約の請求書と Supply Chain Management の自由書式の請求書との同期
 
@@ -68,7 +68,7 @@ Field Service の契約から作成された請求書は、Microsoft Dataverse �
 **請求日** は、Supply Chain Management の必須フィールドです。 したがって、この列は同期が発生する前に Field Service に値が必要です。 この要件を満たすためには、次のロジックが追加されます。
 
 - **請求日** 列の **請求書** テーブルが空白の場合 (つまり、値が存在しない場合)、契約に基づく請求明細行が追加された現在の日付が設定されます。
-- ユーザーは **請求日** 列を変更できます。 ただし、ユーザーが契約に基づいた請求書を保存する際に、**請求日** 列の請求書が空白の場合、ユーザーは業務プロセス エラーを受け取ります。
+- ユーザーは **請求日** 列を変更できます。 しかし、契約に基づく請求書を保存しようとすると、請求書の **請求日** 列が空白の場合、ビジネス プロセス エラーが発生します。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
@@ -100,11 +100,11 @@ Supply Chain Management フィールド **主勘定表示値** に対する既�
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>契約請求書 (Field Service から Supply Chain Management) : 請求書ヘッダー
 
-[![データ統合のテンプレートのマッピング](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![請求書ヘッダーのデータ統合でのテンプレート マッピング](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>契約請求書 (Field Service から Supply Chain Management) : 請求明細行
 
-[![データ統合のテンプレートのマッピング](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![請求書ヘッダーのデータ統合でのテンプレート マッピング](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b113f0db1d44dc5fbda30e10d62ff939550f299
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88fb3a947dd15f80238baab5f315c889f47f5b3b
+ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748696"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "6087018"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
 
 [!include [banner](../../includes/banner.md)]
 
-次の手順では、システム管理者または電子申告開発者ロールの Regulatory configuration service (RCS) ユーザーが、Finance and Operations アプリケーションのメタデータを使用して、電子申告 (ER) モデルのマッピングをデザインする方法を説明します。 アプリケーションのメタデータは、RCS 接続されたアプリケーションを使用してオンラインでアクセスできます。 サンプル ER モデルマッピングは、対外貿易トランザクションにアクセスするようにコンフィギュレーションされます。 これらの手順を完了するには、まず、RCS で [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) のトピックにある手順を完了する必要があります。 トピック [ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする](access-application-metadata-er-configuration.md)の手順を完了していない場合は、[電子申告例のページ](https://go.microsoft.com/fwlink/?linkid=862266)に移動し、次の ER コンフィギュレーションをダウンロードして保存します。対外貿易メタデータ .xml、対外貿易モデル .xml、対外貿易マッピング .xml。その後、手順のステップを完了してください。
+次の手順では、システム管理者または電子申告開発者ロールの Regulatory configuration service (RCS) ユーザーが、Finance and Operations アプリケーションのメタデータを使用して、電子申告 (ER) モデルのマッピングをデザインする方法を説明します。 アプリケーションのメタデータは、RCS 接続されたアプリケーションを使用してオンラインでアクセスできます。 サンプル ER モデルマッピングは、対外貿易トランザクションにアクセスするようにコンフィギュレーションされます。 これらの手順を完了するには、まず、RCS で [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) のトピックにある手順を完了する必要があります。 トピック [ER 構成を使用してアプリケーション メタデータにアクセスする](access-application-metadata-er-configuration.md) に記載の手順を完了していない場合は、[電子申告の例のページ](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip)に移動し、次の ER 構成をダウンロードして保存し、手順を完了してください: 「対外貿易メタデータ.xml」、「対外貿易モデル.xml」、「対外貿易マッピング.xml」。
 
 ## <a name="prerequisites"></a>必要条件
 1. **すべてのワークスペース** > **電子申告** の順に移動します。 

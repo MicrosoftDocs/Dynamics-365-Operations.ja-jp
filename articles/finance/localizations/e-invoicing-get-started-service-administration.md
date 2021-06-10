@@ -2,7 +2,7 @@
 title: 電子請求サービスの管理を開始する
 description: このトピックでは、電子請求を開始する方法について説明します。
 author: gionoder
-ms.date: 05/04/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 7c4d69edd4a8f7c7acc2ac1bc22c1ba6eaba25ae
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980978"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092409"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>電子請求サービスの管理を開始する
 
@@ -44,18 +44,14 @@ ms.locfileid: "5980978"
 
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Lifecycle Services にマイクロサービス向けのアドインをインストールします
 
-1. LCS アカウントにサインインします。
-2. **プレビュー機能管理** タイルを選択します。
-3. **パブリック プレビュー機能** セクションで、**電子請求書** を選択します。
-4. **プレビュー機能の有効化** オプションが **はい** に設定されていることを確認します。
-5. LCS プロジェクト ダッシュボードで、LCS プロジェクトを選択します。
-6. LCS プロジェクトの LCS 環境ダッシュボードで、LCS 配置プロジェクトを選択します。 LCS 展開プロジェクトが実行されている必要があります。
-7. **Power Platform 統合** タブの **環境アドイン** フィールド グループで、**新しいアドインをインストールする** を選択します 。
-8. **電子請求** を選択します。
-9. **AAD アプリケーション ID** フィールドに、**091c98b0-a1c9-4b02-b62c-7753395ccabe** を入力します。 この値は固定値です。
-10. **AAD のテナント ID** フィールドに、Azure のサブスクリプション アカウントのテナント ID を入力します。
-11. 条件を確認して、このチェック ボックスをオンにします。
-12. **インストール** を選択します。
+1. LCS アカウントにサインインし、LCS プロジェクトのダッシュボードで、LCS プロジェクトを選択します。
+2. LCS プロジェクトの LCS 環境ダッシュボードで、LCS のデプロイプロジェクトを選択します。 選択するプロジェクトが実行されている必要があります。
+3. **Power Platform 統合** タブの **環境アドイン** フィールド グループで、**新しいアドインをインストールする** を選択します 。
+4. **電子請求** を選択します。
+5. **AAD アプリケーション ID** フィールドに、**091c98b0-a1c9-4b02-b62c-7753395ccabe** を入力します。 この値は固定値です。
+6. **AAD のテナント ID** フィールドに、Azure のサブスクリプション アカウントのテナント ID を入力します。
+7. 条件を確認して、このチェック ボックスをオンにします。
+8. **インストール** を選択します。
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>電子請求と RCS 統合のパラメーターを設定する

@@ -2,7 +2,7 @@
 title: Regulatory Configuration Services (RCS) から電子請求書を設定する
 description: このトピックでは、Dynamics 365 Regulatory Configuration Services (RCS) で電子請求書を設定する方法について説明します。
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 6c1d309744c4c8dd0d17f5259551d31c257ede61
+ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897723"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6075146"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Regulatory Configuration Services (RCS) から電子請求書を設定する
 
@@ -194,6 +194,8 @@ ms.locfileid: "5897723"
 
 - 売上請求書 (ES)
 - プロジェクト請求書 (ES)
+
+電子請求サービスで利用可能な ER フォーマットの構成に加えて、独自の ER フォーマットを構成することも可能です。 ただし、電子請求機能で使用するために作成されたフォーマットの構成では、財務または Supply Chain Management のテーブルや対応するメタデータへの直接的な参照はサポートされません。 ER モデル マッピングへの参照のみサポートされます。
 
 ### <a name="actions"></a>アクション
 

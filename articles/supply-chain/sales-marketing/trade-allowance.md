@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 58cdfcf67ab774bbc119f2507920f1fb1d7a562c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824777"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102809"
 ---
 # <a name="trade-allowance-management"></a>取引割引管理
 
@@ -171,7 +171,7 @@ ms.locfileid: "5824777"
 
 ## <a name="settle-the-deduction-that-is-due-and-the-customer-short-pay-by-using-the-deduction-workbench"></a>期日控除の決済および控除ワークベンチを使用する顧客の短期支払
 
-多くの場合、払戻計算を見越して、顧客は選択した請求書の短期支払を選択します。 将来の支払調整の問題を防ぐために、 A/R 係は実際の顧客支払を記録する際に控除としてそれらの短期支払を登録します。 次に、控除ワークベンチで、それらの顧客控除は会社から支払われる請求金額に対して簡単に決済できます。
+多くの場合、払戻計算を見越して、顧客は選択した請求書の短期支払を選択します。 将来の支払調整の問題を防ぐために、A/R 係は実際の顧客支払を記録する際に控除としてそれらの短期支払を登録します。 次に、控除ワークベンチで、それらの顧客控除は会社から支払われる請求金額に対して簡単に決済できます。
 
 支払仕訳帳で顧客の短期支払を登録するには、**売掛金勘定** \> **支払** \> **支払仕訳帳** の順に選択し、新しい支払仕訳帳を作成します。 アクション ウィンドウで、**控除** を選択します。 **控除** ページで、短期で支払われた金額を作成および追跡できます。
 

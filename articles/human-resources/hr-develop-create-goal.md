@@ -8,18 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 82104e401f21c459081f48a5d1f9a0a264288106
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c6e329c2219c57f83ef02f9fa224bcac84fb83fa
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794832"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055463"
 ---
 # <a name="create-a-goal"></a>目標の作成
 
@@ -31,7 +30,7 @@ ms.locfileid: "5794832"
 2. [すべての目標の表示] をクリックします。
 3. [新規] をクリックします。
 4. [名前] フィールドに、「Contoso プロジェクトの完了」と入力します。
-5. [概要] フィールドで、「Contoso プロジェクトを 30 日以内に完了する」と入力します。
+5. [概要] フィールドで、「Contoso プロジェクトを 30 日以内に完了」と入力します。
     * 目標は個人、チーム、または会社にも適用できます。 [従業員の目標] の既定の設定は [個別] です。  
 6. [目標カテゴリ] フィールドで値を入力または選択します。
 7. [開始日] フィールドで、表示する日付を変更します。

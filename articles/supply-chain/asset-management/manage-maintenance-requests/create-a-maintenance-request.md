@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af67d320f14fc6c3d28eec47de402ba645eea06d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836785"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102977"
 ---
 # <a name="create-maintenance-requests"></a>メンテナンス要求の作成
 
@@ -30,7 +30,7 @@ ms.locfileid: "5836785"
 
 メンテナンス要求は、メンテナンス作業者または生産作業者が機器の修理が必要であることを発見したが、修理作業をすぐに実行できない場合に使用できます。
 
-**例:** メンテナンス作業員が修理を行っている間に、同じ場所にある別の資産にも修理が必要であることがわかります。 しかし、メンテナンス作業者には、修理作業を行う時間や必要な予備部品がありません。 それで、資産に対してメンテナンス要求を作成し、問題についての簡単な説明を入力します。
+**例:** メンテナンス作業者が修理をしているときに、同じ場所にある別の資産の修理が必要であることがわかります。 しかし、メンテナンス作業者には、修理作業を行う時間や必要な予備部品がありません。 そこで、その資産にメンテナンス要求を作成し、問題についての簡単な説明を入力します。
 
 **全資産** または **有効な資産** ページ (**資産管理** \> **共通** \> **資産** \> **全資産** または **有効な資産**) の右側にある **関連情報** ウィンドウの **有効なメンテナンス要求** セクションは、選択した資産に添付された有効なメンテナンス要求を示します。
 

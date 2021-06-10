@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 080b84d712a9c634611090f71b9ecca75e13cdcb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 77b4276cec5e046a19d6d001acf41fc410052fba
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837468"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049295"
 ---
 # <a name="mobile-device-user-settings"></a>モバイル デバイスのユーザー設定
 
@@ -94,3 +94,8 @@ ms.locfileid: "5837468"
 
     - **デバイス モデル ID** – *Surface Book 2* などのデバイス モデル ID。
     - **説明** – モデル ID の区別に役立つ説明を入力できます。
+
+## <a name="additional-resources"></a>追加リソース
+
+- [倉庫管理モバイル アプリのインストールと接続](install-configure-warehouse-management-app.md)
+- [Warehouse Management モバイル アプリのステップ アイコンとタイトルの割り当て](step-icons-titles.md)

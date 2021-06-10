@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48830c975f1bdfd953f57e7c0b6601a78e3a521b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3ff153d9c16b219158c12f4bb49eb0a0c5d401ac
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910042"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102905"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>見積依頼 (RFQ) の概要
 
@@ -83,7 +83,7 @@ RFQ ケースを作成するためには、**調達パラメーター** ペー�
 - %有効期限日時%
 - %Date%
 
-%入札を無効にする理由%および%修正の理由%トークンは、**修正** ウィザードで修正を完了した際に、調達担当者が入力するテキストに置き換えられます。 % 修正の作成者 % の値および %Company% のトークンは、RFQ から自動的に取得されます。 %Date% トークンは、現在の日付に置き換えられます。
+%入札を無効にする理由% および %修正の理由% トークンは、**修正** ウィザードで修正を完了した際に、調達担当者が入力できるテキストに置き換えられます。 % 修正の作成者 % の値および %Company% のトークンは、RFQ から自動的に取得されます。 %Date% トークンは、現在の日付に置き換えられます。
 
 送信された後に RFQ をキャンセルする場合は、RFQ ケースから行うことができます。 キャンセルの場合、仕入先の連絡担当者にキャンセルの通知を送信するための電子メール テンプレートが必要です。 テンプレートは、**調達パラメーター** ページで選択する必要があります。 そのテンプレートの作成時に、次の交換トークンを含むことができます。
 

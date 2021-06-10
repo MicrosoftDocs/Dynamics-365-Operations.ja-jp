@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908955"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049319"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションのインストールと接続
 
@@ -295,5 +295,9 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 1. ツール バーで、**削除** を選択します。
 1. 確認メッセージが表示されたら、**はい** を選択します。
 
+## <a name="additional-resources"></a>追加リソース
+
+- [モバイル デバイスのユーザー設定](mobile-device-user-settings.md)
+- [Warehouse Management モバイル アプリのステップ アイコンとタイトルの割り当て](step-icons-titles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

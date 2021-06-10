@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909003"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102713"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>顧客ポータルをカスタマイズして使用する
 
@@ -82,7 +82,7 @@ ms.locfileid: "5909003"
 1. 品目の追加の完了後は、**品目** ページで **次へ** を選択します。
 1. **注文情報** ページに注文の概要が表示されます。 注文内容と配送の詳細を確認します。 すべてが正しい場合は、**送信** を選択して注文を送信します。
 
-    ![注文情報のページ](media/customer-portal-order-submit.png "注文情報のページ")
+    ![完了した注文情報のページ](media/customer-portal-order-submit.png "完了した注文情報のページ")
 
 ### <a name="standard-data-setup"></a>標準データの設定
 

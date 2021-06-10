@@ -2,7 +2,7 @@
 title: 税の計算の使用を開始する
 description: このトピックでは、税の計算を設定する方法について説明します。
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 43a7c7133156d199da7b5ba16d48652359098c74
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3f8aa791cee1926afe6be347331d47902a3b7304
+ms.sourcegitcommit: f4dc09601bceb5cdc88ee184ce7c8f369e3e6e86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018882"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6060566"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>税の計算の使用を開始する (プレビュー)
 
@@ -41,7 +41,7 @@ ms.locfileid: "6018882"
 
 このトピックの手順を完了する前に、以下の前提条件を満たす必要があります。
 
-- LCS アカウントにアクセスし、Dynamics 365 バージョン 10.0.18 以降を実行する第 2 層 (またはそれ以上) の環境を持つ LCS プロジェクトをデプロイしました。
+- LCS のアカウントにアクセスでき、[KB4616360](https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&bugId=568738&dbType=3&qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a) を 実装する Dynamics 365 バージョン 10.0.18、またはそれ以降 が稼働する Tier 2 (またはそれ以上) の環境で LCS プロジェクトを展開している場合。
 - RCS アカウントへのアクセス権があります。
 - Microsoftに連絡し、デプロイされている Finance or Supply Chain Management 環境でフライティングを有効にしました。
 
@@ -127,7 +127,7 @@ ms.locfileid: "6018882"
 
 このセクションの設定は法人が行います。 Finance で税計算を有効にした法人ごとに、この機能を構成する必要があります。
 
-1. Finance では、**税** \> **設定** \> **税コンフィギュレーション** \> **税計算の設定 (プレビュー)** に移動します。
+1. Finance では、**税** \> **設定** \> **税の構成** \> **税計算の設定 (プレビュー)** に移動します。
 2. **一般** タブで、次のフィールドを設定します。
 
     - **税計算の有効化** - 法人に対して税計算アドインを有効にするには 、このチェック ボックスをオンにします。 現在の法人に対して有効になっていない場合、法人は引き続き既存の税エンジンを使用して税金を決定および計算します。
