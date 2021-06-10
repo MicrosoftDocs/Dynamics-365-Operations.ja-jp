@@ -2,13 +2,12 @@
 title: Teams での休暇要求の管理
 description: このトピックでは、Microsoft Teams で Dynamics 365 Human Resources アプリを使用して休暇を申請する方法について説明します。
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953415"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097262"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -33,21 +32,13 @@ Microsoft Teams の Dynamics 365 Human Resources アプリを使用すること�
 
 Dynamics 365 Human Resources アプリは、Teams ストアにあります。
 
-1. Microsoft Teams で省略記号を選択します。
-
-   ![Teams Human Resources の休暇アプリの省略記号](./media/hr-teams-leave-app-ellipses.png)
+1. Microsoft Teams で、アプリケーションの一覧に移動します。
  
 2. Dynamics 365 Human Resources を検索し、**Human Resources** タイルを選択します。
 
-   ![Teams Human Resources の休暇アプリの HR タイル](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. **追加** ボタンを選択してアプリをインストールします。
 
-   ![Teams Human Resources の休暇アプリのインストール](./media/hr-teams-leave-app-in-store.png)
-
 アプリで自動的にサインインされなかった場合は、**設定** タブを選択してサイン インします。
-
-![Teams Human Resources 休暇アプリの設定タブ](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > [サインイン] ダイアログ ボックスが表示されない場合は、ブラウザーの設定でポップアップを許可しているかどうかを確認してください。 
@@ -61,20 +52,24 @@ Dynamics 365 Human Resources アプリは、Teams ストアにあります。
 
 アプリをインストールすると、ボットが代理で実行できるアクションの種類を通知するウェルカム メッセージが表示されます。
 
-![Human Resources Teams 休暇アプリがウェルカム メッセージを表示します](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > 初めてボットと通信する際には、サイン インする必要があります。 [サインイン] ダイアログ ボックスが表示されない場合は、ブラウザーの設定でポップアップを許可しているかどうかを確認してください。
 
 ボットには次の依頼ができます:
 
-- 休暇申請を開始する。
+- 現在の休暇残数を表示します。 たとえば、「休暇残数を表示する」というメッセージが表示されます。
+
+- 休暇申請を開始する。 たとえば、「休暇を取ってください」や「来週の木曜と金曜に休暇を取りたいのですが」というメッセージを送信すると、休暇の種類に応じた休暇申請がより具体的にできます。 
 
   ![Teams チャットでの休暇申請の開始](./media/hr-teams-leave-app-initiate.png)
 
 - チャット ボットでユーザーの休暇申請を入力します。 **休暇申請** を選択し、申請の詳細を編集します。
 
-  ![休暇申請詳細情報の編集](./media/hr-teams-leave-app-details.png)
+   同じ日に複数の休暇タイプの休暇申請を行いたい場合は、**その他オプション** メニューから **日の分割** オプションを選択します。 
+
+   休暇申請の単位が日数の場合に半日休暇を選択した場合は、**その他のオプション** メニューから **半日の定義** を選択することで、最初の半日と後半の半日のどちらに休暇を申請するかを指定できます。
+   
+   ![半日の定義](./media/HalfDayDefinitions.png)
 
 - 休暇申請詳細情報の編集が完了したら、**送信** を選択して、承認を依頼します。
 
@@ -91,42 +86,36 @@ Dynamics 365 Human Resources アプリは、Teams ストアにあります。
 - 休暇申請
 
 - 休暇申請の下書き
-
-![Teams Human Resources 休暇アプリの休暇タブ](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>新しい製品の作成
 
 1. **新規作成** を選択して、新しい休暇申請を作成する。
 
-   ![Teams Human Resources 休暇アプリの新規申請](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. 休暇の日付または日数を入力し、**追加** を選択します。
 
-   ![Teams Human Resources 休暇アプリが休暇を追加します](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Teams Human Resources 休暇アプリが休暇を追加します](./media/TimeOffHours.png)
 
 3. 必要に応じて、理由コードを入力します。 また、コメントを入力して添付ファイルを追加します。
 
-4. 情報の入力が完了後は、**提出** と入力して承認を依頼します。 また、**下書きとして保存** と入力すると、後で処理の続きを進めることができます。
+4. 異なる休暇タイプで同じ日に複数の休暇申請を行う場合は、**その他のオプション** メニューから **日の分割** を選択します。
+
+5. **半日の定義** オプションを選択して、最初の半日の休みを要求するか、後半の半日の休みを要求するかを指定します。 このオプションは、休暇要求単位が日数で、要求量が 0.5 日の場合に使用できます。
+
+6. 情報の入力が完了したら、**送信** を選択して、承認をリクエストします。 また、**下書きとして保存** と入力すると、後で処理の続きを進めることができます。
 
 ### <a name="manage-draft-requests"></a>申請の下書きを管理する
 
 1. **下書き** タブを選択します。
 
-   ![Teams Human Resources 休暇アプリの下書きタブ](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. 申請を編集するには鉛筆アイコンを選択するか、[ごみ箱] を選択することで申請を削除できます。
 
 3. 必要な変更を行います。 情報の入力が完了後は、**提出** と入力して承認を依頼します。 また、**下書きとして保存** を選択すると、後で処理の続きを進めることができます。
-
-   ![Teams Human Resources 休暇アプリが下書きを編集します](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Teams 通知への対応
 
 自分または自分が承認者である作業者が休暇申請を送信すると、Teams の Human Resources アプリで通知を受け取ります。 通知を選択して表示することができます。 通知は、**チャット** 領域にも表示されます。
 
 承認者の場合は、通知で **承認** または **拒否** を選択できます。 オプション メッセージを指定することもできます。
-
-![Teams の Human Resources アプリの休暇申請通知](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>同僚に次の休暇情報を送信する
 
@@ -138,15 +127,9 @@ Teams 向けの Human Resources アプリをインストールすると、チー
 
 2. 共有する休暇申請を選択します。 休暇申請の下書きを共有する場合は、まず **下書き** を選択します。
 
-   ![共有する今後の休暇申請の選択](./media/hr-teams-leave-app-chat-search.png)
-
 休暇申請がチャットに表示されます。
 
-![Human Resources の休暇申請カード](./media/hr-teams-leave-app-chat-card.png)
-
 申請の下書きを共有すると、下書きとして表示されます。
-
-![Human Resources の休暇申請カードの下書き](./media/hr-teams-leave-app-chat-draft-card.png)
 
 ## <a name="view-your-teams-leave-calendar"></a>チームの休暇カレンダーの表示
 
@@ -155,8 +138,6 @@ Teams 向けの Human Resources アプリをインストールすると、チー
 1. Teams の Human Resources アプリで、**休暇** を選択します。
 
 2. **チーム カレンダー** を選択します。 カレンダーには、直属の部下の承認済と保留中の休暇が表示されます。
-
-   ![Teams の Human Resources アプリでカレンダーを表示](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > チーム カレンダーが表示できない場合は、有効にできるよう管理者に問い合わせてください。 詳細については、[インストールと設定](hr-admin-teams-leave-app.md#install-and-setup)を参照してください。

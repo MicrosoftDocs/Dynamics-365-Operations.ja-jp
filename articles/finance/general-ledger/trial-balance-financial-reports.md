@@ -1,8 +1,8 @@
 ---
 title: 試算表の財務諸表
 description: この記事では、試算表の既定のレポートについて説明します。 さらに、これらのレポートに関連付けられる構成要素について、また業務要件を満たすようにレポートを変更する方法についても説明します。
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816934"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103661"
 ---
 # <a name="trial-balance-financial-reports"></a>試算表の財務諸表
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816934"
 
 この記事では、試算表の既定のレポートについて説明します。 さらに、これらのレポートに関連付けられる構成要素について、また業務要件を満たすようにレポートを変更する方法についても説明します。 
 
-<a name="default-trial-balance-reports"></a>既定の試算表のレポート
------------------------------
+## <a name="default-trial-balance-reports"></a>既定の試算表のレポート
 
 財務報告では、3 つの試算表のレポートが使用できます。
 
@@ -47,6 +46,9 @@ ms.locfileid: "5816934"
 | 詳細な試算表 - 既定               | 試算表 - 既定 | 詳細な試算表 - 既定               |
 | 試算表の集計 – 既定                | 試算表 - 既定 | 試算表の集計 - 既定                |
 | 年次試算表の集計 – 既定 | 試算表 - 既定 | 年次試算表の集計 - 既定 |
+
+> [!NOTE] 
+> Financial Reporting で **試算表** レポートを実行する場合は、**設定** タブで、**金額のない行を表示** と **有効な行のないレポートを表示** のチェック ボックスを選択してください。
 
 ### <a name="row-definition"></a>行の定義
 
@@ -94,10 +96,7 @@ ms.locfileid: "5816934"
     -   **FD** – 昨年度の借方のみを含む財務データ
     -   **FD** – 昨年度の貸方のみを含む財務データ
 
-
-
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [財務諸表の概要](financial-reporting-getting-started.md)
 

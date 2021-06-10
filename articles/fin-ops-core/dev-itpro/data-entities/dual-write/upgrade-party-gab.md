@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95472a00d34ba939ac89b4e2484f34d50bee3088
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018315"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112676"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>当事者およびグローバル アドレス帳モデルへのアップグレード
 
@@ -22,22 +22,23 @@ ms.locfileid: "6018315"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[Azure Data Factory テンプレート](https://aka.ms/dual-write-gab-adf)を使用すると、既存の **取引先企業**、**連絡先**、および **仕入先** テーブル データを当事者およびグローバル アドレス帳モデルに二重書き込みでアップグレードできます。 テンプレートでは、 Finance and Operations アプリおよび Customer Engagement アプリケーションの両方からのデータを調整します。 このプロセスの終了時に、**当事者** レコードの **当事者** および **連絡先** が作成され、Customer Engagement アプリケーションの **取引先企業**、**連絡先**、および **仕入先** レコードに関連付けされます。 .csv ファイル (`FONewParty.csv`) が生成され、Finance and Operations アプリ内に新しい **当事者** レコードが作成されます。 このトピックでは、Data Factory テンプレートを使用し、データをアップグレードする手順を説明します。
+[Microsoft Azure Data Factory テンプレート](https://aka.ms/dual-write-gab-adf) を使用すると、既存の **取引先企業**、**連絡先**、および **仕入先** テーブル データを当事者およびグローバル アドレス帳モデルに二重書き込みでアップグレードできます。 テンプレートでは、Finance and Operations アプリおよび Customer Engagement アプリケーションの両方からのデータを調整します。 このプロセスの終了時に、**当事者** レコードの **当事者** および **連絡先** が作成され、Customer Engagement アプリケーションの **取引先企業**、**連絡先**、および **仕入先** レコードに関連付けされます。 .csv ファイル (`FONewParty.csv`) が生成され、Finance and Operations アプリ内に新しい **当事者** レコードが作成されます。 このトピックでは、Data Factory テンプレートを使用し、データをアップグレードする方法について説明します。
 
 カスタマイズを実行しない場合は、テンプレートを現状のままで使用できます。 **取引先企業**、**連絡先**、および **仕入先** をカスタマイズする場合は、次の手順に従ってテンプレートを変更する必要があります。
 
-> [!Note]
-> テンプレートは、**当事者** データのみをアップグレードするのに役立ちます。 将来のリリースでは、郵便番号および電子住所が含まれる予定です。
+> [!NOTE]
+> テンプレートは、**当事者** データのみをアップグレードします。 将来のリリースでは、郵便番号および電子住所が含まれる予定です。
 
 ## <a name="prerequisites"></a>必要条件
 
-これらの必要条件は必須です:
+当事者およびグローバル アドレス帳モデルにアップグレードするには、次の前提条件を満たしている必要があります:
 
 + [Azure サブスクリプション](https://portal.azure.com/)
 + [テンプレートへのアクセス](https://aka.ms/dual-write-gab-adf)
-+ ユーザーは既存の二重書き込み顧客です。
++ 既存の二重書き込み顧客である必要があります。
 
 ## <a name="prepare-for-the-upgrade"></a>アップグレードの準備
+アップグレードの準備には、次の活動が必要です:
 
 + **完全同期**: 両方の環境は、**取引先企業 (顧客)**、**連絡先**、および **仕入先** に対して完全に同期された状態です。
 + **統合キー**: Customer Engagement アプリの **取引先企業 (顧客)**、**連絡先**、および **仕入先** テーブルは、すぐに出荷される統合キーを使用しています。 統合キーをカスタマイズした場合は、テンプレートをカスタマイズする必要があります。
@@ -78,15 +79,19 @@ ms.locfileid: "6018315"
     FO リンクされた Service_properties_type Properties_tenant | アプリケーションが存在するテナント情報 (ドメイン名またはテナント ID) を指定します。
     FO リンクされた Service_properties_type Properties_aad リソース ID | `https://sampledynamics.sandboxoperationsdynamics.com`
     FO リンクされた Service_properties_type Properties_service プリンシパル ID | アプリケーションのクライアント ID を指定します。
-    Dynamics CRM リンクされた Service_properties_type Properties_username | Dynamics に接続するユーザー名。
+    Dynamics CRM リンクされた Service_properties_type Properties_username | Dynamics 365 に接続する username。
 
-    詳細については、[各環境の Resource Manager テンプレートの手動促進](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)、[リンクされたサービス プロパティ](/azure/data-factory/connector-dynamics-ax#linked-service-properties)、および [Azure Data Factory を使用するデータ ファクトリ](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)参照してください
+    詳細については、次のトピックを参照してください: 
+    
+    - [各環境の Resource Manager テンプレートの手動促進](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [リンクされたサービス プロパティ](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Azure Data Factory を使用したデータのコピー](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. 配置後に、データ ファクトリのデータセット、データ フロー、およびリンクされたサービスを検証します。
 
    ![データセット、データ フロー、およびリンクされたサービス](media/data-factory-validate.png)
 
-11. **管理** に移動します。 **接続** で、**リンクされたサービス** を選択します。 **DynamicsCrmLinkedService** を選択します。 **リンクされたサービスの編集 (Dynamics CRM)** フォームに、次の値を入力します:
+11. **管理** に移動します。 **接続** で、**リンクされたサービス** を選択します。 **DynamicsCrmLinkedService** を選択します。 **リンクされたサービスの編集 (Dynamics CRM)** フォームに、次の値を入力します。
 
     フィールド | 先頭値
     ---|---
@@ -102,7 +107,7 @@ ms.locfileid: "6018315"
 
 ## <a name="run-the-template"></a>テンプレートの実行
 
-1. Finance and Operations アプリを使用して、次の **取引先企業**、**連絡先**、および **仕入先** の二重書き込みを停止します。
+1. Finance and Operations アプリを使用して、次の **取引先企業**、**連絡先**、および **仕入先** の二重書き込みマップを停止します。
 
     + 顧客 V3 (アカウント)
     + 顧客 V3 (連絡先)
@@ -114,7 +119,7 @@ ms.locfileid: "6018315"
 
 3. AppSource から [二重書き込み当事者およびグローバル アドレス帳ソリューション](https://aka.ms/dual-write-gab)をインストールします 。
 
-4. Finance and Operations アプリで、次の表にデータが含まれている場合は、そのテーブルの **初期同期** を実行します。
+4. Finance and Operations アプリで、次のテーブルにデータが含まれている場合は、そのテーブルの **初期同期** を実行します。
 
     + あいさつ文
     + 個人の特徴タイプ
@@ -157,7 +162,7 @@ ms.locfileid: "6018315"
 8. Finance and Operations アプリで新しい **当事者** レコードをインポートします。
 
     + Azure Blob Storage から `FONewParty.csv` ファイルをダウンロードします。 パスは `partybootstrapping/output/FONewParty.csv` です。
-    + `FONewParty.csv` ファイルを Excel ファイルに変換し、Excel ファイルを Finance and Operations アプリにインポートします。  csv インポートがふさわしい場合は、csv ファイルを直接インポートできます。 データ量によっては、インポートの実行に数時間かかる場合があります。 詳細については、[データのインポート ジョブとエクスポート ジョブの概要](../data-import-export-job.md)を参照してください。
+    + `FONewParty.csv` ファイルを Excel ファイルに変換し、Excel ファイルを Finance and Operations アプリにインポートします。 csv インポートが機能する場合は、csv ファイルを直接インポートできます。 データ量によっては、インポートの実行に数時間かかる場合があります。 詳細については、[データのインポート ジョブとエクスポート ジョブの概要](../data-import-export-job.md)を参照してください。
 
     ![Datavers 当事者レコードのインポート](media/data-factory-import-party.png)
 
@@ -189,7 +194,7 @@ ms.locfileid: "6018315"
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-1. プロセスが失敗すると、失敗した活動からデータ ファクトリを再実行します。
+1. プロセスが失敗した場合は、失敗した活動から始めてデータ ファクトリを再実行します。
 2. 一部のファイルは、データ検証の目的で使用できるデータ ファクトリによって生成されます。
 3. データ ファクトリは、コンマ区切りされた csv ファイルに基づいて実行されます。 コンマを含むフィールド値がある場合は、結果に影響が出る場合があります。 コンマを削除する必要があります。
 4. **監視** タブでは、すべてのステップおよび処理済みデータに関する情報が提供されます。 特定の手順を選択してデバッグします。
@@ -198,4 +203,4 @@ ms.locfileid: "6018315"
 
 ## <a name="learn-more-about-the-template"></a>テンプレートの詳細を確認する
 
-テンプレート [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md) ファイルに対するコメントを検索できます。
+テンプレートに関する追加情報は、[Azure Data Factory テンプレートの readme のコメント](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md) で確認できます。
