@@ -1,7 +1,7 @@
 ---
 title: 財務分析コードを公開する読み取り専用エンティティの作成
 description: このトピックでは、登録済のトランザクションのエンティティを作成する方法について説明します。
-author: robinarh
+author: RyanCCarlson2
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: rcarlson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c2151b1e3c15b3076e6eaca4f037366320dc8c9c
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: c8545a70bca7f3f8e98128e7c4ca3abca274b0b7
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923173"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111644"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]

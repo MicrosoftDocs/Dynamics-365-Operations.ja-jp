@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a48f1ef0a5df0d4a9e8033bc9705bfa8c19dbf99
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 62a0e0bc6b4375b943ea02de47ce5a6298f792c7
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797144"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021872"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10013-october-2020"></a>Dynamics 365 Commerce 10.0.13 (2020 年 10 月) の新機能または変更された機能
 
@@ -33,14 +33,14 @@ ms.locfileid: "5797144"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 
-- [E コマース用の放棄されたカート機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
-- [サイトビルダー WYSIWYG の改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
-- [メディア ギャラリー](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - 詳細については、[メディア ギャラリー モジュール](../media-gallery-module.md) を参照してください。
-- [地図モジュール](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - 詳細については、[マップ モジュール](../map-module.md) を参照してください。
-- [POS 在庫操作での機能の確認](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/review-function-pos-inventory-operations)
+- [E コマース用の放棄されたカート機能](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
+- [サイトビルダー WYSIWYG の改善](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
+- [メディア ギャラリー](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - 詳細については、[メディア ギャラリー モジュール](../media-gallery-module.md) を参照してください。
+- [地図モジュール](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - 詳細については、[マップ モジュール](../map-module.md) を参照してください。
+- [POS 在庫操作での機能の確認](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/review-function-pos-inventory-operations)
 
 
 
@@ -57,7 +57,7 @@ Dynamics 365 Commerce 10.0.13 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

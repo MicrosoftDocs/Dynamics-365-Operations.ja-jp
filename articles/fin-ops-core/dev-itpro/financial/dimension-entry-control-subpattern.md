@@ -1,7 +1,7 @@
 ---
 title: 分析コード エントリ コントロールのサブパターン
 description: この記事では、分析コード エントリ コントロールのサブパターンについて説明します。
-author: jasongre
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 15951
 ms.assetid: 6baee22e-2a86-428c-b9e2-178581c57830
 ms.search.region: Global
-ms.author: jasongre
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f53856669ba1f432b3dfabdc45526036a3046e6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e05868618113c79a00c07fb4fc36aab1fe58b236
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753912"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111676"
 ---
 # <a name="dimension-entry-control-subpattern"></a>分析コード エントリ コントロールのサブパターン
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c03c1a655cc12cf160c90e50c3da42db2e2973d9
-ms.sourcegitcommit: ded9d9426e57a772d0ab3dda1171bc46f8309928
+ms.openlocfilehash: 7c1295b306bb75e731919e5951c0628a0b071a1b
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5945775"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015993"
 ---
 # <a name="add-templates-to-the-open-lines-in-excel-menu"></a>[Excel で明細行を開く] メニューへのテンプレートの追加
 
@@ -33,7 +33,7 @@ ms.locfileid: "5945775"
 
 2.  Microsoft Visual Studio で、ApplicationSuite モデルへの参照を含むモデルに新しいプロジェクトを作成します。 
 
-3.  新しいクラスを作成し、**LedgerIJournalExcelTemplate** インターフェイスを実装し、**DocuTemplateRegistrationBase** を拡張します。 実装 (仕訳帳タイプなどによってサポートされる) では、「Excel で開く」エクスペリエンスで、テンプレートをオプションとして使用できるコンテキストが定義されます。 この例では、LedgerJournalHeaderEntity と LedgerJournalLineEntity を使用していますが、これらのエンティティに限定されません。 エンティティが仕訳帳ヘッダー/明細行のエンティティ パターンに従うという条件で、自分自身のエンティティを定義することができます。 **LedgerDailyJournalExcelTemplate** クラスからの例を次に示します。
+3.  新しいクラスを作成し、**LedgerIJournalExcelTemplate** インターフェイスを実装し、**DocuTemplateRegistrationBase** を拡張します。 実装 (仕訳帳タイプなどによってサポートされる) では、「Excel で開く」エクスペリエンスで、テンプレートをオプションとして使用できるコンテキストが定義されます。 この例では、LedgerJournalHeaderEntity と LedgerJournalLineEntity を使用していますが、これらのエンティティに限定されません。 エンティティが仕訳帳ヘッダー/明細行のエンティティ パターンに従うという条件に限り、自分自身のエンティティを定義することができます。 **LedgerDailyJournalExcelTemplate** クラスからの例を次に示します。
 
     ```xpp
     using Microsoft.Dynamics.Platform.Integration.Office;  

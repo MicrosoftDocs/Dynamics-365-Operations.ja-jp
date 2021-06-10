@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 072722c59fe12cf5a6c0d56f3ce0b87e2132eaa8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6b662fdf836a6bace1f57c0ecb814701e7f92819
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747139"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111592"
 ---
 # <a name="workflow-system-architecture"></a>ワークフロー システムのアーキテクチャ
 
@@ -27,7 +27,7 @@ ms.locfileid: "5747139"
 
 この記事では、ワークフロー システムのアーキテクチャについて説明します。
 
-ワークフロー インフラストラクチャは、Application Object Server (AOS) でホストされる 2 つのコンポーネント (X++ ワークフロー ランタイムおよび管理ワークフロー ランタイム) から構成されます。
+ワークフロー インフラストラクチャは、Application Object Server (AOS) でホストされる 2 つのコンポーネント (X++ ワークフロー ランタイムおよび管理ワークフロー ランタイム) で構成されます。
 
 X++ ワークフロー ランタイムは、次のコンポーネントで構成されます。
 

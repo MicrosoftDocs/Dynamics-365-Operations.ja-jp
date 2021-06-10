@@ -2,7 +2,7 @@
 title: 優先順位に基づく調整
 description: このトピックでは、OData およびカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
 author: hasaid
-ms.date: 09/25/2020
+ms.date: 05/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 900c7c1f36bed1a5f46cc8c5048bc0b231f7177a
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 42255f78a8596523ba4989b3fe217b7a6b01d07e
+ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941214"
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "6039753"
 ---
 # <a name="priority-based-throttling"></a>優先順位に基づく調整
 
@@ -28,7 +28,16 @@ ms.locfileid: "5941214"
 > [!NOTE]
 > 優先順位に基づく調整は、Dynamics 365 Finance バージョン 10.0.19 から既定で有効になります。 バージョン 10.0.19 に更新する前に環境を準備する方法については [FAQ ドキュメント](throttling-faq.md) を参照してください。 この機能をテストするには、**調整優先順位マッピング** ページで統合優先順位をコンフィギュレーションします。
 
+
+> [!IMPORTANT]
+> [KB 4615823](https://fix.lcs.dynamics.com/Issue/Details?kb=4615823&bugId=560394&dbType=3&qc=bdc60364311159f2509ed641a0d858a46b5c57effbae2ffe778cd41f2109f7e9) には優先順位に基づく調整エクスペリエンスに直接影響する 2 つの重要な修正が含まれています。 
+> 
+> この修正により、環境内で調整イベントが発生した場合に 429 HTTP メッセージが送信され、そのイベントが環境に対する正しいしきい値の計算を反映するようにします。 
+>
+> この修正は、品質更新プログラム 10.0.17 の一部として利用できます。 このバージョンをインストールして、環境に対して優先順位に基づく調整を行う準備ができていることを確認するようお勧めします。
+
 優先順位に基づく調整により、サービス保護設定を導入し、リソースの過剰使用率を回避してシステムの応答性を維持し、Finance and Operations アプリを実行する環境において一貫した可用性とパフォーマンスを確保できます。
+
 
 優先順位に基づく調整では、ビジネスにとって重要なこれらの統合の必要性に応じて、OData とカスタム サービス ベース統合の相対的な優先順位を設定することができます。 調整マネージャーは、これらの要求に対して設定されたこれらの優先順位を受け入れます。
 

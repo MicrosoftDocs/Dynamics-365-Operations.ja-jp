@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9a223f1d984bd11d2e5df98701e577f7c38dcdf1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5657c6e6bf99aef28c05448c811f24bb7cf1b802
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791145"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019527"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -227,7 +227,7 @@ Azure DevOps に直接アップロードするには:
 RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイルを [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357) からダウンロードします。 MSI ファイルをダブルクリックして、実行します。 RSAT をインストールした後、Selenium と Web ブラウザーのドライバーをインストールする必要があります。 
 
 > [!NOTE]
-> テストを実行する前に Azure DevOps を設定する必要があります。また、必要な全般設定およびその他の RSAT で必要な設定を完了しておく必要があります。 詳細な手順については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。
+> テストを実行する前に Azure DevOps を設定する必要があります。また、必要な全般設定およびその他の RSAT で必要な設定を完了しておく必要があります。 詳細な手順については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。
 
 次の手順では、POS のテスト ケースを実行するために必要なコンフィギュレーションについて説明します。
 
@@ -275,7 +275,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 このセクションでは、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テスト パラメーターの変更、テストの実行、結果の調査、Azure DevOps への作業の保存方法について説明します。
 
 > [!NOTE]
-> Azure DevOps およびテスト ケースの設定の詳細については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
+> Azure DevOps およびテスト ケースの設定の詳細については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 
 ### <a name="load-test-cases-and-create-parameter-files"></a>テスト ケースの読み込みとパラメーター ファイルの作成
 

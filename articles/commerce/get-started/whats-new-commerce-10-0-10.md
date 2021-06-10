@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0b7a0f5b915fd9651905ce978cf12cebedce1551
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6e824282ebcdec75c176664433a382e1d03b95c4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797150"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022081"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10010-may-2020"></a> Dynamics 365 Commerce 10.0.10 (2020 年 5 月) の新機能および変更された機能
 
@@ -34,14 +34,14 @@ ms.locfileid: "5797150"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/)のサイトに関する追加情報にリンクします。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365-release-plan/2020wave1/)のサイトに関する追加情報にリンクします。
 
-- [POS のサインインの Azure AD サポート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
-- [店舗で使用可能な現物在庫のチャンネル側計算](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
-- [POS でのデリバリー運営の変更モード](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
-- [POS の販売を表示できるようにするには、使用可能な割引を使用してアップセルとクロスセルを販売します](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)
-- [仕訳帳からのレシートのメール送信](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/email-receipt-journal)
-- [チャネルに基づくサポート料金の自動請求の向上](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
+- [POS のサインインの Azure AD サポート](/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
+- [店舗で使用可能な現物在庫のチャンネル側計算](/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
+- [POS でのデリバリー運営の変更モード](/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
+- [POS の販売を表示できるようにするには、使用可能な割引を使用してアップセルとクロスセルを販売します](/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)
+- [仕訳帳からのレシートのメール送信](/dynamics365-release-plan/2020wave1/dynamics365-commerce/email-receipt-journal)
+- [チャネルに基づくサポート料金の自動請求の向上](/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
 
 
 ## <a name="additional-resources"></a>追加リソース
@@ -58,7 +58,7 @@ Dynamics 365 Commerce 10.0.10 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

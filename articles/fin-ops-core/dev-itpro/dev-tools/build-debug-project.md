@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc74f1ceb2080cd55900e0c52f9e1a97b0fda7ff
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 4e44772a741d8aa9883c0b4d98cc6fd7b906c854
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865950"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6116997"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 
@@ -206,11 +206,10 @@ public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct ren
 
     [![コードを進める](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)
     
-13. コール スタックのコード マップを表示するには、コード エディターを右クリックし、**コード マップにコール スタックを表示** をクリックします。 呼び出し履歴にコメントを追加し、コードを進め、それに応じたコード マップの変更としてウォッチすることが必要な場合があります。
-14. F5 キーを押して続行します。 その顧客が許可されていないことが表示されます。
-15. 同じレンタルで、顧客名を Phil Spencer に変更してから **更新** をクリックします。 今回は、トランザクションが可能です。
-16. Internet Explorer を閉じます。
-17. **RentalFinalizedEventHandler** メソッドで **SubscribesTo** をコメントにします。 このステップでは、残りのチュートリアルで作業してもクレジット カード テストが実行されなくなります。
+13. F5 キーを押して続行します。 その顧客が許可されていないことが表示されます。
+14. 同じレンタルで、顧客名を Phil Spencer に変更してから **更新** をクリックします。 今回は、トランザクションが可能です。
+15. Internet Explorer を閉じます。
+16. **RentalFinalizedEventHandler** メソッドで **SubscribesTo** をコメントにします。 このステップでは、残りのチュートリアルで作業してもクレジット カード テストが実行されなくなります。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 

@@ -5,7 +5,6 @@ author: faix
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 66bf588f37bbebc153457867b0a28ed00dca787e
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 5c7f83158a0366ff292c4c3f56df2084884bee4e
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923271"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018795"
 ---
 # <a name="configure-high-availability-for-sql-server-reporting-services-ssrs-nodes"></a>SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
 

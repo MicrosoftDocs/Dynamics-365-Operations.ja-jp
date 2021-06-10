@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 41b91f2dda05a0dfe499e7ef639024756b1a35c8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 51017bd0b64a2c7f46da6ed6642c9fa7c5b7e4a6
+ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794335"
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "6039757"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -84,7 +84,11 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 > [!NOTE]
 > 仕訳帳の表示 (行グリッド) と 返品トランザクション ビューのカスタム列は、行サブ フィールドの使用をサポートしています。 これらのサブ フィールドは、情報コード メッセージ、シリアル番号、割引の値などのように、列ではなく行として表示されます。
 
-フィルターの拡張機能は **仕訳帳ビューを表示** および **注文ビューを検索** でもサポートされ、カスタム フィルターを追加します。 **注文ビューを検索** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、既定のストア検索パラメータを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
+## <a name="custom-filter-extension"></a>カスタム フィルターの拡張機能
+
+カスタム フィルターの拡張機能は **仕訳帳表示ビュー**、**注文検索ビュー**、および **FulfillmentLine ビュー** でサポートされます。 **注文検索ビュー** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、店舗検索において既定のパラメーターを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
+
+カスタム フィルターの拡張機能のサンプル コードは、Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts) で使用可能です。
 
 ## <a name="add-a-custom-column-and-an-app-bar-button"></a>カスタム列とアプリ バー ボタンの追加
 

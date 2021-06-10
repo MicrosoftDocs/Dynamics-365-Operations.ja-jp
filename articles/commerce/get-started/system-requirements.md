@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce のクラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
-ms.date: 02/11/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54fe57065fec73f44004a7e9c2e6c8969d3b78d8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 13667a878b72e4f8cd3491b152a15b5d007ed0cd
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797168"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020850"
 ---
 # <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 
@@ -37,7 +37,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 - Apple Safari (公開されている最新バージョン)
 
 > [!NOTE]
-> Azure Active Directory トークンが取得できないため、クラウド POS デバイスのデバイスのアクティブ化中に Safari ブラウザーでエラーが表示されることがあります。 この問題は、[Apple デバイスの Microsoft Enterprise SSO プラグイン](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin) を利用することで解決できます。
+> Azure Active Directory トークンが取得できないため、クラウド POS デバイスのデバイスのアクティブ化中に Safari ブラウザーでエラーが表示されることがあります。 この問題は、[Apple デバイスの Microsoft Enterprise SSO プラグイン](/azure/active-directory/develop/apple-sso-plugin) を利用することで解決できます。
 
 各 Web ブラウザーの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。
 
@@ -68,7 +68,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="net-framework-requirements"></a>.NET Framework 要件
 
-コマースでは、ドキュメント回覧エージェントなどのすべての ClickOnce アプリケーション用として Microsoft .NET Framework バージョン 4.7.1 以降が必要です。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。 
+コマースでは、ドキュメント回覧エージェントなどのすべての ClickOnce アプリケーション用として Microsoft .NET Framework バージョン 4.7.1 以降が必要です。 インストール手順については、[開発者の .NET Framework のインストール](/dotnet/framework/install/guide-for-developers) を参照してください。 
 
 ## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 
@@ -87,7 +87,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 > [!NOTE]
 > - Modern POS でオフライン データベースを使用する場合は、Microsoft SQL Server のすべてのシステム要件を満たしていて、システムに 10 GB 以上の空きディスク領域が必要です。 20 GB 以上の空きディスク領域を用意することをお勧めします。 Modern POS のオフライン データベースは、Service Pack 3 以降の SQL Server 2014、Service Pack 2 の SQL Server 2016、または SQL Server 2017 以降が必要です。 使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。
-> - 2019 年 8 月 1 日以降、 Modern POS や他のクライアント側コンポーネントを使用するには、Microsoft .NET Framework バージョン 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+> - 2019 年 8 月 1 日以降、 Modern POS や他のクライアント側コンポーネントを使用するには、Microsoft .NET Framework バージョン 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](/dotnet/framework/install/guide-for-developers) を参照してください。
 
 ### <a name="supported-windows-operating-systems"></a>サポートされる Windows オペレーティング システム
 
@@ -106,6 +106,8 @@ Web アプリケーションは、指定されたオペレーティング シス
     - 最低でも、3 ギガバイト (GB) の ランダム アクセス メモリー (RAM) が必要です。 オフラインの SQL Server と組み合わせるときは、4 GB 以上の RAM が必要です。
     - インターネットにアクセスできる必要があります。
 
+端末がオフライン データベースを使用する場合は、[SQL Server のバージョンとライセンス](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) セクションを確認することを強くお勧めします。 SQL Server のバージョンについては、現在メインストリーム サポートの期間内にあるバージョンの使用をお勧めします。  サポート日は、[製品とサービス ライフサイクル情報の検索](/lifecycle/products/) という記事で製品ごとに検索できます。
+
 ## <a name="modern-pos-for-apple-iphone-or-ipad-requirements"></a>Apple iPhone または iPad 用 Modern POS の要件
 
 - iOS 11 以降
@@ -117,7 +119,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 ## <a name="retail-hardware-station-requirements"></a>Retail hardware station 要件
 
 > [!NOTE]
-> 2019 年 8 月 1 日以降、Retail ハードウェア ステーションや 他のクライアント側コンポーネントを使用するには、.NET Framework version 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+> 2019 年 8 月 1 日以降、Retail ハードウェア ステーションや 他のクライアント側コンポーネントを使用するには、.NET Framework version 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](/dotnet/framework/install/guide-for-developers) を参照してください。
 > このコンポーネントはサーバー証明書を利用することに注意してください。 有効期限に対してサーバー証明書を管理する必要があります。 既定では、証明書は 1 つの暦年 (365 日) で期限切れになります。
 
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
@@ -140,11 +142,11 @@ Web アプリケーションは、指定されたオペレーティング シス
 ## <a name="commerce-scale-unit-self-hosted-requirements"></a>Commerce Scale Unit (自己ホスト) 要件
 
 > [!NOTE]
-> 2019 年 8 月 1 日以降、Commerce Scale Unit や 他のクライアント側コンポーネントを使用するには、.NET Framework バージョン 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+> 2019 年 8 月 1 日以降、Commerce Scale Unit や 他のクライアント側コンポーネントを使用するには、.NET Framework バージョン 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](/dotnet/framework/install/guide-for-developers) を参照してください。
 >
 > このコンポーネントは、Azure Service to Service 認証に加えてサーバー証明書を利用することに注意してください。  生成された Azure Web アプリケーション キー (旧 *シークレット*) とサーバー証明書の両方が、有効期限に対して管理されている必要があります。  既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) で期限切れになります。
 
-以下に示す最小システム要件は、テスト シナリオでの機能へ Commerce Scale Unit を取得するのに必要最低限であることをご確認下さい。 以下は実際的な実稼働環境を表すものではありません。 適切なパフォーマンス テストを実行し、使用するハードウェアがユーザーのニーズを満たしているのを検証することが重要です。
+以下に示す最小システム要件は、テスト シナリオでの機能へ Commerce Scale Unit を取得するのに必要最低限であることに注意してください。 以下は実際的な実稼働環境を表すものではありません。 適切なパフォーマンス テストを実行し、使用するハードウェアがユーザーのニーズを満たしているのを検証することが重要です。 SQL Server のバージョンについては、現在メインストリーム サポートの期間内にあるバージョンの使用をお勧めします。 サポート日は、[製品とサービス ライフサイクル情報の検索](/lifecycle/products/) で製品ごとに検索できます。
 
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
@@ -164,12 +166,14 @@ Web アプリケーションは、指定されたオペレーティング シス
 - 4 GB の RAM
 - コアごとの CPU 最小処理スピードが 1.6 GHz の i5 (または同等) (最少 2 コア)。
 - 少なくとも 15 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります)。
+- サポートされているバージョンの SQL Server。  Express Edition では既知の制限が原因で同期の問題が発生する可能性があるので、Commerce Scale Unit (自己ホスト) の標準ライセンス以上を使用することをお勧めします。 詳細については、[SQL Server のバージョンとライセンス](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) を参照してください。
 
 ### <a name="recommended-system-requirements"></a>推奨システム要件
 
 - 6 GB の RAM
 - コアごとの CPU 最小処理スピードが 2.4 GHz の i7 (または同等) (4 つのコアを推奨)。
 - 少なくとも 20 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります)。
+- - サポートされているバージョンの SQL Server。 Express Edition では既知の制限が原因で同期の問題が発生する可能性があるので、Commerce Scale Unit (自己ホスト) の標準ライセンス以上を使用することをお勧めします。 詳細については、[SQL Server のバージョンとライセンス](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) を参照してください。
 
 個人のハードウェア ニーズを決定する際に次の品目も考慮することは、組織の最高の利益となります。
 
@@ -200,7 +204,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="requirements-for-development-on-local-vms"></a>ローカル VM の開発要件
 
-ローカル仮想マシン (VM) の開発要件については、[オンプレミスで実行されている VM](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises) を参照してください。
+ローカル仮想マシン (VM) の開発要件については、[オンプレミスで実行されている VM](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises) を参照してください。
 
 ## <a name="database-collation"></a>データベース照合順序
 
@@ -208,7 +212,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="additional-resources"></a>その他のリソース
 
-[ベータ評価版の入手](../../dev-itpro/dev-tools/get-evaluation-copy.md)
+[ベータ評価版の入手](../../fin-ops-core/dev-itpro/dev-tools/get-evaluation-copy.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

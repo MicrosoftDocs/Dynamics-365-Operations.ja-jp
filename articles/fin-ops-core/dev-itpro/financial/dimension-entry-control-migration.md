@@ -1,7 +1,7 @@
 ---
 title: 既定の分析コード コントロールを分析コード エントリ コントロールに移行する
 description: このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。
-author: robinarh
+author: RyanCCarlson2
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 25531
 ms.assetid: 05e85771-44e1-4b0a-8dd2-a878be5a3309
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 197cc065fff165a15e08f3c90e004353896fdbd4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a634c1da5aed4bb6b6258b2c522e6f723bb25d5b
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753914"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111584"
 ---
 # <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールの分析コード エントリ コントロールへの移行
 

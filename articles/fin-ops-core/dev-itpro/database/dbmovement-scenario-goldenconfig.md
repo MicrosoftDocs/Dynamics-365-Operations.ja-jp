@@ -2,7 +2,7 @@
 title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
-ms.date: 12/02/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 503c07c286f18c413a4c38d64082fc8dc94317ca
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 24fc78ca6101b8936101e18128fb2ffc91709feb
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940910"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092394"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -161,7 +161,7 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 UAT 環境にゴールデン コンフィギュレーションが適用され、マスター データの移行を開始することができます。 [データ エンティティを使用して](../data-entities/develop-entity-for-data-migration.md)、このデータの移行を行うことができます。 UAT 環境を生産環境にコピーする前にデータ移行アクティビティを完了することをお勧めします。トラブルシューティングのために UAT 環境のデータベースにアクセスするためです。  
 
 > [!IMPORTANT]
-> 次の手順では、添付されたドキュメントはUAT環境から運用環境にコピーされません。  稼働するにあたって添付が必要な場合は、運用環境ディレクトリにそれらをインポートすることで対応することができます。
+> 次の手順では、Azure Blob Storage に格納されたファイルは UAT から生産にコピーされません。 これには、ドキュメントの添付ファイルやカスタム Microsoft Office テンプレートが含まれます。 Go-Live に添付ファイルまたはカスタム テンプレートが必要な場合は、実稼働環境にあるテンプレートを直接インポートします。
 
 ## <a name="copy-the-sandbox-database-to-production"></a>サンドボックス データベースを生産環境にコピーします。
 

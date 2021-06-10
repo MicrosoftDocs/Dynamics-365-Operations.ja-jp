@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b8ec11681c2388b4abe7d9cec887dc581b2d24c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 41b253f03b8b013d3babc79f109ccbbf9e5ce10e
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797142"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021870"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10014-november-2020"></a>Dynamics 365 Commerce 10.0.14 (2020 年 11 月) の新機能と変更された機能
 
@@ -34,15 +34,15 @@ ms.locfileid: "5797142"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-- [E コマース用の放棄されたカート機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
-- [Dynamics 365 Commerce での実験](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)
-- [POS での入荷中に、発注書への品目の追加がサポートされます](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-adding-items-purchase-orders-during-receiving-pos)<br> - 詳細については、[POS での入庫在庫操作](../pos-inbound-inventory-operation.md) を参照してください。
-- [POS から出荷する移動オーダーの出荷時のシリアル番号登録をサポートします](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-serial-number-registration-outbound-transfer-order-shipments-pos)<br> - 詳細については、[POS でシリアル化された品目を使って作業する](../pos-serialized-items.md) を参照してください。
+- [E コマース用の放棄されたカート機能](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
+- [Dynamics 365 Commerce での実験](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)
+- [POS での入荷中に、発注書への品目の追加がサポートされます](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-adding-items-purchase-orders-during-receiving-pos)<br> - 詳細については、[POS での入庫在庫操作](../pos-inbound-inventory-operation.md) を参照してください。
+- [POS から出荷する移動オーダーの出荷時のシリアル番号登録をサポートします](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-serial-number-registration-outbound-transfer-order-shipments-pos)<br> - 詳細については、[POS でシリアル化された品目を使って作業する](../pos-serialized-items.md) を参照してください。
 - ソーシャル共有モジュール<br> - 詳細については、[ソーシャル シェア モジュール](../social-share-module.md) を参照してください。
 - ハードウェア ステーションを使用しないクレジットカードの処理<br> - 詳細については、[ハードウェア ステーションのないクレジットカードの処理](../dev-itpro/cnp-pos.md) を参照してください。
-- [ギフト カードの残高の確認モジュール](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)<br> - 詳細については、[ギフト カード モジュール](../add-giftcard.md) を参照してください。
+- [ギフト カードの残高の確認モジュール](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)<br> - 詳細については、[ギフト カード モジュール](../add-giftcard.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -57,7 +57,7 @@ Dynamics 365 Commerce 10.0.14 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

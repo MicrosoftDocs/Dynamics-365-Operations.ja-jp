@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e925c1c2a4c289c8f53cd99219e0837b3274b40
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: 760f7253e870a22d732c04633815a521b37f061d
+ms.sourcegitcommit: d13c0ff34f52ea0453d281fed643bc9a983fb7e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951973"
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "6033283"
 ---
 # <a name="error-management-and-alert-notifications"></a>エラー管理と警告通知
 
@@ -79,9 +79,12 @@ Finance and Operations アプリ と Dataverse の間で既存のデータをコ
 
 ![1 つ以上の警告設定の作成](media/create-alert-settings.png)
 
-**警告設定の作成** を選択することにより、追加の警告を作成できます。 また、個人またはグループのどちらに通知を送信するかを選択したり、二重書き込みシステムがユーザーに代わりにアクションを実行するかどうかを選択することもできます。
+**警告設定の作成** を選択することにより、追加の警告を作成できます。 また、個人またはグループのどちらに通知を送信するかを選択したり、二重書き込みシステムがユーザーに代わりにアクションを実行するかどうかを選択することもできます。 警告をグループに送信するには、コンマで区切られた値、例えば "id1@contoso.com, id2@contoso.com" を入力します。
 
 ![警告の作成と通知の送信](media/create-alert-notification.png)
+
+> [!NOTE]
+> 警告を有効にするには、テーブル マップを再起動する必要があります
 
 この機能は、計画外のメンテナンスがある場合に特に便利です。 たとえば、アプリの 1 つが使用できなくなり、定義したしきい値に基づいて、二重書き込みが一時停止状態になり、すべての新しい要求がキューに入れられるます (つまり、それらは失われません)。 基になる問題を修正し、両方のアプリが正常に実行されたら、一時停止状態から再開できます。 更新はキューから読み戻され、復元されたアプリに書き込まれます。
 

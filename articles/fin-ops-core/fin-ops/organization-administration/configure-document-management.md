@@ -2,7 +2,7 @@
 title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: jasongre
-ms.date: 04/15/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b766251c86738e7b3c74422eadd014e00e57d172
-ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
+ms.openlocfilehash: 166189aaeaa60ba9d9df9df211bcffe2be7f2850
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906637"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111642"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -96,7 +96,12 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 ## <a name="configure-document-preview"></a>ドキュメント プレビューのコンフィギュレーション
 
-添付ファイルのプレビューには、Microsoft Office Online Server で提供される Web アプリ オープン プラットフォーム インターフェイス (WOPI) を使用します。 **ドキュメント管理パラメーター** ページの **全般** タブの **Office Web Apps サーバー** フィールドで、添付ファイルのプレビューに使用する Office Online サーバー インスタンスを指定します。 既定値は [`https://onenote.officeapps.live.com`] です。 この値は、クラウド ベースの WOPI サーバーを指しています。
+添付ファイルのプレビューには、Microsoft Office Online Server で提供される Web アプリ オープン プラットフォーム インターフェイス (WOPI) を使用します。 **ドキュメント管理パラメーター** ページの **全般** タブの **Office Web Apps サーバー** フィールドで、添付ファイルのプレビューに使用する Office Online サーバー インスタンスを指定します。 既定値は、クラウドベースの WOPI サーバーをポイントする `https://onenote.officeapps.live.com` です。 
+
+> [!NOTE]
+> 次の場合は、指定通りの **Office Web Apps サーバー** フィールドを調整する必要があります。 
+> -  中国の環境では、https://onenote.partner.officewebapps.cn を使用します。 
+> -  Government Commmunity Cloud (GCC) の環境では、https://gb4-onenote.officeapps.live.com を使用します。
 
 ### <a name="for-a-microsoft-dynamics-365-finance--operations-on-premises-environment"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境の場合
 
@@ -227,6 +232,21 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
     }
 ```
+
+## <a name="developer-specifying-valid-content-types-when-attaching-documents-programmatically"></a>[開発者] ドキュメントをプログラムで関連付ける際の有効なコンテンツのタイプを指定
+
+`DocumentManagement` クラスからの次の API を使用すると、開発者は関連付けるファイルのファイル コンテンツ タイプ (MIME タイプ) を指定できます。 
+-  attachFileToCommon()
+-  attachFile()
+-  attachFileToDocuRef()
+
+このファイル コンテンツ タイプが正しく指定されていない場合、関連付けられているドキュメントが予期した動作をしない可能性があります。 このため、これらの API を使用する場合は、次のいずれかのアクション コースを考慮する必要があります。  
+
+-  先行する API のいづれかで、`_fileContentType` パラメーターの **null** を渡します。 これにより、ファイル名から正しいコンテンツ タイプを推定できます。 
+-  `_fileContentType` パラメータを含めない次のいずれかの方法で切り替えます。 これにより、誤ったファイル コンテンツ タイプを受け渡す可能性が回避されます。
+    -  attachFileToCommon() を置き換える **attachFileForRecord()**
+    -  attachFile() を置き換える **attachFileForReference()**
+    -  attachFileToDocuRef() を置き換える **attachFileForDocuRefRecord()**
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

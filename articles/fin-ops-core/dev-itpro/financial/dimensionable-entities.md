@@ -1,7 +1,7 @@
 ---
 title: 財務分析コードとして使用可能なバッキング テーブルの作成
 description: このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
-author: aprilolson
+author: RyanCCarlson2
 ms.date: 03/04/2019
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 191363
 ms.assetid: ''
 ms.search.region: Global
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b68cb711208dcd1cb35b2033aaad8070878bf94f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d8b0578e4bdd698c557986200a1dcfff2c75cff4
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753906"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111645"
 ---
 # <a name="make-backing-tables-consumable-as-financial-dimensions"></a>財務分析コードとして使用可能なバッキング テーブルの作成
 

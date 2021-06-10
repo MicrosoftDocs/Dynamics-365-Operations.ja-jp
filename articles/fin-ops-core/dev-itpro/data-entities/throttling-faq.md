@@ -2,7 +2,7 @@
 title: 優先順位に基づく調整に関する FAQ
 description: このトピックでは、OData の優先度ベースのスロットリングとカスタムサービスベースの統合に関するよくある質問 (FAQ) に対する回答を提供します。
 author: hasaid
-ms.date: 04/20/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: f318d6854648325b6ca9a997da47c82f92b76976
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: b1826ba6e151925983beab63a93e723d838060f1
+ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935593"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6075130"
 ---
 # <a name="priority-based-throttling-faq"></a>優先順位に基づく調整に関する FAQ
 
@@ -39,8 +39,10 @@ Finance バージョン 10.0.19 は、2021 年 4 月後半にプレリリース�
 ## <a name="will-a-retry-request-receive-preferential-treatment-over-a-new-request"></a>再試行要求は新規要求より優先処理されますか?
 いいえ。
 
-## <a name="will-my-environment-be-subjected-to-any-api-limits"></a>私の環境は API の制限対象になりますか?
+## <a name="will-my-environment-be-subject-to-any-api-limits"></a>私の環境は API の制限対象になりますか?
 いいえ。 現時点では、環境は API の制限対象ではありません。 
+
+環境全体にわたるワークロードの影響を評価するために、テレメトリ データが収集されます。 このデータは、使用状況に基づく制限の導入のロードマップを定義する場合に、API のベースライン制限を確立するのに役立ちます。
 
 ## <a name="is-there-a-report-that-determines-when-throttling-might-occur"></a>調整が発生する時を決定するレポートがありますか?
 はい。 レポートは利用可能で、LCS の **環境の監視** ページの **未加工ログ** からアクセスできます。 このビューに一覧表示される要求は、Finance バージョン 10.0.19 以降、この機能が既定でオンになっている場合に調整される可能性があります。
@@ -82,8 +84,24 @@ No. 対話型 (オンライン) ユーザーの要求には影響しません。
 次のメッセージが表示されます。「システムのリソース稼働率が高いため、現時点ではこのリクエストを処理できませんでした。 要求を {0} 秒後に再試行します」。
 **{0}** には，動的に計算された再試行サイクル間隔があります。
 
-## <a name="does-throttling-apply-to-internal-microsoft-services"></a>調整は Microsoft の内部サービスに適用されますか?
-DRA、WHSMobile、RetailAPI などの Microsoft の内部サービスは、現在、調整の対象から除外されています。 ただし、テレメトリは、システム全体の正常性に対するこれらのサービスのパフォーマンスについて収集されています。 Microsoft は、これらの内部サービス チームと協力し、ある特定の時点で使用ベースの制限を確立します。
+## <a name="does-throttling-apply-to-microsoft-services"></a>調整は Microsoft サービスに適用されますか?
+最初は除外される Microsoft サービスは次のサービスであり、調整はそのサービスには適用されません。 
+
+   - ドキュメント回覧エージェント (DRA)
+   - 倉庫モバイル (WHSMobile)
+   - RetailAPI
+   - Office 統合
+   - データのインポート/エクスポート フレームワーク (DIXF)
+   - データ インテグレーター
+   - 二重書き込み
+   - Finance and Operations アプリ- Power Platform 統合 (仮想エンティティ)
+   - Finance and Operations アプリケーション コネクタ 
+
+これらのサービスは除外されますが、テレメトリはこれらのサービスがシステム全体の正常性に与える影響とパフォーマンスで収集されます。 
+
+除外サービスの所有者は、2021 年度末までに 429 のハンドラーを実装することを優先しています。 その時点で、サービスはもはや除外されず、調整が適用されます。 これらの変更に先立って通知がなされ、ドキュメントが更新されます。
+
+これらのサービスが独自のハンドラーを実装している場合でも、クライアント側の処理をお勧めします。 *再試行* ロジックを含む 429 のハンドラーの実装を検討してください。
 
 ## <a name="is-it-recommended-to-use-a-dedicated-integration-account-instead-of-just-the-generic-admin-user-account"></a>汎用管理者ユーザー アカウントの代わりに、専用の統合アカウントを使用することが勧められていますか?
 はい、この方法を強く推奨します。 これらのサービス保護設定はユーザー固有の値に対して設定されているため、統合のほとんどまたはすべてに対して同じユーザー アカウントを使用すると、統合のニーズに対して相対的な優先順位を割り当てる機能が制限されます。 さらに、同じユーザー アカウントを使用すると、そのユーザー アカウントから発信されたすべての統合リクエストは調整の対象になります。

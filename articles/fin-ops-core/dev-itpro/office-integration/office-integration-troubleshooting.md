@@ -2,7 +2,7 @@
 title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。
 author: jasongre
-ms.date: 04/28/2020
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d3193411c4b58d36bbfbe5dbfd72c1ce8fcdf05
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 982d558e31434c1b311df6891eea1e373e4a6e75
+ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908357"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6075157"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
@@ -135,6 +135,16 @@ Office ストアへの戻しが必要な場合、標準値は次のとおりで�
 Excelアドイン、データ管理 フレームワーク、 Power BI レポートはすべて、データベース レベル で データと直接やり取りするように設計されています。 ユーザーのタイムゾーンに合わせて日付と時刻のデータを調整するクライアントが存在しないため、日付と時刻の値はすべて UTC となります。
 
 ## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
+
+### <a name="issue-during-sign-in-to-the-excel-add-in-users-receive-an-error-message-saying-they-cannot-access-the-application-2bc50526-cdc3-4e36-a970-c284c34cbd6e-in-that-tenant"></a>問題: Excel アドインへのサインイン中、ユーザーに「テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e にアクセスできません」というエラー メッセージが表示される
+
+**問題:** Excel アドインへのサインイン中、ユーザーに次のようなエラーが表示される。 
+-  「AADSTS50020: ID プロバイダー https://sts.windows.net/XXX のユーザー アカウント 'XXX' はテナント 'XXX' に存在しないため、テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e (Microsoft Business Office のアドイン) にアクセスできません。」
+-  「選択したユーザー アカウントはテナント 'XXX' に存在しないため、テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e にアクセスできません。」
+
+**説明:** この問題は、外部ユーザーに関して 2021 年 4 月に Azure Active Directory (Azure AD) に行われた変更により発生します。 この変更は Finance and Operations アプリに対して行われたものではないので、すべてのバージョンのプラットフォームまたはアプリケーションの顧客に影響を与える可能性があります。  
+
+**修正:** すべての外部ユーザーは、 Azure AD を通してテナントに招待される必要があります。 詳細については、[Azure Active Directory B2B コラボレーションを使用してユーザーを招待する](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration) を参照してください。
 
 ### <a name="fixed-issue-during-sign-in-to-the-excel-add-in-i-receive-the-following-error-message-aadsts65001-the-user-or-administrator-has-not-consented-to-use-the-application-with-id-xyz"></a>\[固定\] 問題: Excel アドインへのサインイン中に、次のエラー メッセージが表示されます: 「AADSTS65001: ユーザーまたは管理者が ID XYZ のアプリケーションを使用することに同意していません」
 

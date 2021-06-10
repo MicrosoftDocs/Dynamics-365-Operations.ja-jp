@@ -5,7 +5,6 @@ author: BrianShook
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 749818018fae37bdf5c3c6b3c65330b1d8bf51ec
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a09ba4a4d34f5168aa35271a734764df181108a1
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798951"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022745"
 ---
 # <a name="identity-management-pages-and-modules"></a>ID 管理ページとモジュール
 
@@ -33,7 +32,7 @@ ms.locfileid: "5798951"
 ID 管理モジュールは、eコマース サイトのユーザーが Dynamics 365 Commerce 環境に関連付けられている ID 管理システムと対話するために使用する ID 管理ページの要素を表示します。 特に、ID 管理モジュールは、サインイン、サインアップ、パスワードのリセット、およびアカウント プロフィール編集ページで使用されます。 既定では、Commerce モジュールは、ID プロバイダーとして Azure Active Directory B2C (Azure AD B2C) を使用するように構成されています。
 
 > [!WARNING]
-> Azure AD B2C は、2021 年 8 月 1 日までに古い (レガシ) ユーザー フローを破棄します。 したがって、ユーザー フローを新しい推奨バージョンに移行する必要があります。 新しいバージョンでは、機能パリティと新しい機能が提供されます。 詳細については、[Azure Active Directory B2C のユーザー フロー](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview) を参照してください。
+> Azure AD B2C は、2021 年 8 月 1 日までに古い (レガシ) ユーザー フローを破棄します。 したがって、ユーザー フローを新しい推奨バージョンに移行する必要があります。 新しいバージョンでは、機能パリティと新しい機能が提供されます。 詳細については、[Azure Active Directory B2C のユーザー フロー](/azure/active-directory-b2c/user-flow-overview) を参照してください。
 
 ## <a name="identity-management-pages"></a>ID 管理ページ
 

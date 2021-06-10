@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 0ca628bfc268335608f1740209d9c411127216fd
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 8bad7634cf401d1345f0b03a0787aa228d82342a
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936818"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016069"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
@@ -91,6 +91,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
 10. **保存** を選択します。
 11. **カード設定** を選択し、**新規** を選択して、ギフト カードの支払方法をサンフランシスコ店舗の新規作成された外部ギフト カード支払方法にマップします。
+12. 支払ターミナルに加えて POS にギフト カード番号を入力できる場合は、**一般** クイック タブを展開し、**手動入力を許可** を **はい** に設定します。
 
 ## <a name="pos-setup"></a>POS の設定
 
@@ -255,7 +256,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
 #### <a name="test-connector-external-gift-card-setup"></a>テスト コネクタの外部ギフト カードの設定
 
-テスト コネクタの外部ギフト カードを設定するには、**支払サービス** ページで **Dyn オンライン** を選択してから、**サポートされている支払/入金タイプ** フィールドで、**借方** の後に **;GiftCard** を追加します。 次に **クレジット カード タイプ** を選択し、ギフト カード支払方法に支払仕訳帳を割り当てます。
+テスト コネクタの外部ギフト カードを設定するには、**支払サービス** ページで **Dyn オンライン** を選択してから、**サポートされている支払/入金タイプ** フィールドで、**借方** の後に **GiftCard** を追加します。 次に **クレジット カード タイプ** を選択し、ギフト カード支払方法に支払仕訳帳を割り当てます。
 
 ### <a name="gift-card-product-setup"></a>ギフト カード製品の設定
 

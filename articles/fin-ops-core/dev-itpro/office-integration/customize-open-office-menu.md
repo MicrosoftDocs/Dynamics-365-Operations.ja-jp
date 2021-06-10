@@ -2,7 +2,7 @@
 title: '[Microsoft Office で開く] メニューのカスタマイズ'
 description: このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
 author: jasongre
-ms.date: 04/20/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 6338e5701f88700d2b9527feaee18a893107a247
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: b4abaa6756fd80ff784fdc8d30176236e8044a48
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5919857"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092443"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 
@@ -105,6 +105,18 @@ public static class MyForm_Extension
     }
 }
 ```
+
+## <a name="office-menu-best-practices"></a>Office メニューのベスト プラクティス
+
+### <a name="avoid-apis-that-could-initialize-the-metadata-cache-during-form-load"></a>フォームの読み込み中にメタデータ キャッシュを初期化する API の回避
+
+次のクラスはメタデータ キャッシュを初期化する可能性があり、非常に時間がかかる場合があります。 このため、これらのクラスをフォームの読み込み中に (`init()` および `run()` など) 実行されるメソッドで使用しないでください。フォームの読み込み時間が長引く場合があります。  
+
+-  ExportToExcelMetadataCache
+-  ExportToExcelDataEntityContext
+-  OfficeDataEntityExportMenuItem
+-  ExportToExcelDataEntityHelper
+-  ExportToExcelFilterTreeBuilder
 
 ## <a name="typical-customization-scenarios"></a>一般的なカスタマイズ シナリオ
 次の例では、**\_menuOptions** 変数に、カスタマイズしている **OfficeMenuOptions** インスタンスが含まれていると想定しています。

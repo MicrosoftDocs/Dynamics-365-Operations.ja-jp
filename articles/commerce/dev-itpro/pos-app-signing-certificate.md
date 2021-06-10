@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 35623a1ed24859a326ac901f2c8dbb5dcc8dd6c0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 26afd29b3b59630ff99a9aa7581112006f77bd96
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791151"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018621"
 ---
 # <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>コード署名証明書を使用した MPOS appx の署名
 
@@ -38,7 +38,7 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
 
 ## <a name="use-a-secure-file-task-for-universal-windows-platform-app-signing"></a>Universal Windows Platform アプリの署名にセキュリティで保護されたファイル タスクを使用する
 
-セキュリティで保護されたファイル タスクの使用は、Universal Windows Platform (UWP) アプリの署名に推奨される方法です。 パッケージ署名の詳細については、[パッケージ署名の構成](https://docs.microsoft.com/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing)を参照してください。 このプロセスを次の図に示します。
+セキュリティで保護されたファイル タスクの使用は、Universal Windows Platform (UWP) アプリの署名に推奨される方法です。 パッケージ署名の詳細については、[パッケージ署名の構成](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing)を参照してください。 このプロセスを次の図に示します。
 
 ![MPOS アプリ署名フロー](media/POSSigningFlow.png)
 
@@ -49,7 +49,7 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
 
 ### <a name="certificate-in-the-file-systemsecure-location"></a>ファイル システム / 安全な場所の証明書
 
-[ダウンロードファイル タスク](https://docs.microsoft.com/visualstudio/msbuild/downloadfile-task)をダウンロードして、ビルド プロセスの最初の手順として追加します。 セキュリティで保護されたファイルのタスクを使用する利点は、ビルド パイプラインが成功したか、失敗したか、またはキャンセルされたかに関係なく、ビルド時にファイルが暗号化されてディスクに格納されることです。 このファイルは、ビルド プロセスの完了後にダウンロード場所から削除されます。
+[ダウンロードファイル タスク](/visualstudio/msbuild/downloadfile-task)をダウンロードして、ビルド プロセスの最初の手順として追加します。 セキュリティで保護されたファイルのタスクを使用する利点は、ビルド パイプラインが成功したか、失敗したか、またはキャンセルされたかに関係なく、ビルド時にファイルが暗号化されてディスクに格納されることです。 このファイルは、ビルド プロセスの完了後にダウンロード場所から削除されます。
 
 1. 最初のステップとして、Azure ビルド パイプラインでセキュア ファイル タスクをダウンロードして追加します。 セキュア ファイル タスクは、[DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile) からダウンロードできます。
 2. 次の図に示すように、証明書をセキュア ファイル タスクにアップロードし、出力変数で参照名を設定します。
@@ -137,7 +137,7 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
  
 - 新しい信頼される証明書 (または新しい自己署名の証明書) を使用する場合、すべてのデバイスに新しい証明書をインストールする必要があります。 その後、新しく作成された Modern POS のパッケージ (インストーラー) を使用して、既存のアプリケーションをアンインストールし、新しい Modern POS パッケージを再インストールする必要があります。 すべてのデバイスで Modern POS のデバイスの有効化を実行する必要があります。
 
-- 更新された Contoso 証明書を使用する場合、すべてのデバイスに新しい証明書をインストールして、Modern POS パッケージ (インストーラー) をインストールする必要があります。 アンインストールする必要はありませんが、デバイスに再インストールする必要があります。 Modern POS のデバイスの有効化は必須ではないことに注意してください。 このオプションは一時的なソリューションです。 新しい信頼される証明書を取得する前にこのオプションを使用するだけで最有効化を回避し、問題を解決することができます。
+- 更新された Contoso 証明書を使用している場合、すべてのデバイスに新しい証明書をインストールして、Modern POS パッケージ (インストーラー) をインストールする必要があります。 アンインストールする必要はありませんが、デバイスに再インストールする必要があります。 Modern POS のデバイスの有効化は必須ではないことに注意してください。 このオプションは一時的なソリューションです。 新しい信頼される証明書を取得する前にこのオプションを使用するだけで最有効化を回避し、問題を解決することができます。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

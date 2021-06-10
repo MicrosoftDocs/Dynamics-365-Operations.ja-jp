@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 5 月 20 日
+          href: hr-whats-new-2021-05-20.md
         - name: 2021 年 5 月 3 日
           href: hr-whats-new-2021-05-03.md
         - name: 2021 年 4 月 19 日
@@ -785,8 +787,14 @@
           items:
             - name: 業績管理の概要
               href: hr-develop-performance-management-overview.md
-            - name: 要員のスキルの調整
-              href: hr-develop-skills.md
+            - name: スキル
+              items:
+                - name: スキルの設定
+                  href: hr-develop-skills.md
+                - name: スキルの入力
+                  href: hr-develop-enter-skills.md
+                - name: スキルのマッピング
+                  href: hr-develop-map-skills.md
             - name: 業績仕訳への追加
               href: hr-develop-add-performance-journal.md
             - name: 目標の作成

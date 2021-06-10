@@ -1,5 +1,5 @@
 ---
-title: ISV Studio を使用して、独立系ソフトウェア ベンダー (ISV) パッケージから X++ モジュールをリンク
+title: ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
 description: このトピックでは、ISV Studio を使用した X++ パッケージのリンクについて説明します。
 author: jorisdg
 ms.date: 04/08/2021
@@ -12,26 +12,26 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a6b4618a7184255ed6580805f8af35fbde0b8e
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 0c6c39f7baa0b76492f4db85bc6f04787a487d71
+ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881895"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6093906"
 ---
-# <a name="link-x-modules-from-independent-software-vendor-isv-packages-by-using-isv-studio"></a>ISV Studio を使用して、独立系ソフトウェア ベンダー (ISV) パッケージから X++ モジュールをリンク
+# <a name="link-x-modules-from-isv-packages-by-using-isv-studio"></a>ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
 
-独立系ソフトウェア ベンダー (ISVs) は、[Microsoft Power Platform ISV Studio](https://docs.microsoft.com/powerapps/developer/data-platform/isv-app-management) を使用して、X++モジュールを登録済みの製品およびソリューションにリンクできます。 リンクにより、ISV は Finance and Operations アプリでのアプリケーションの成功と使用を監視できます。
+独立系ソフトウェア ベンダー (ISVs) は、[Microsoft Power Platform ISV Studio](/powerapps/developer/data-platform/isv-app-management) を使用して、X++モジュールを登録済みの製品およびソリューションにリンクできます。 リンクにより、ISV は Finance and Operations アプリでのアプリケーションの成功と使用を監視できます。
 
 > [!NOTE]
-> X++ から ISV Studio へのリンクが正しく機能するには、顧客ははすべての ISV モデルに正しいソリューション ID を持つ ISV パッケージを展開している必要があり、顧客の環境はバージョン 10.0.16 以降を実行している必要があります。
+> X++ から ISV Studio へのリンクが正常に機能するには、顧客がすべての ISV モデルに正しいソリューション ID を持つ ISV パッケージを配置している必要があります。 また、顧客の環境はバージョン 10.0.16 以上である必要があります。
 
 ## <a name="find-the-product-id-in-microsoft-partner-center"></a>Microsoft パートナー センターで製品 ID を検索する
 
-パートナー センターにサインインし、製品の **オファーの概要** ページを開きます。 次の例に示すように、ブラウザの URL バーから製品 ID GUID (グローバル一意識別子) を検索します。
+パートナー センターにサインインし、製品の **オファーの概要** ページを開きます。 次の例に示すように、ブラウザの URL バーから製品 ID グローバル一意識別子 (GUID) を検索します。
 
 ```HTTP
-https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/<product-ID-GUID>/overview
+https://partner.microsoft.com/dashboard/commercial-marketplace/offers/<product-ID-GUID>/overview
 ```
 
 > [!NOTE]
@@ -41,11 +41,6 @@ https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/<pro
 
 ソリューションを構成するすべてのモデルについて、記述子 XML ファイルを検索します。 ソリューションに属しているすべての記述子で、パートナー センターの製品 ID を使用して `SolutionId` タグを更新します。
 
-```xml
-<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    <!-- XML content -->
-    <SolutionId>product-ID-GUID</SolutionId>
-</AxModelInfo>
-```
+:::code language="xml" source="code/descriptor.xml" highlight="19,20":::
 
-再コンパイル後、X++ バイナリには製品 ID が含まれ、Tier2+ サンドボックスまたは実稼働環境に配置された後に ISV Studio にリンクされます。
+再コンパイル後、X++ バイナリには製品 ID が含まれ、Tier 2+ サンドボックスまたは実稼働環境に配置された後に ISV Studio にリンクされます。

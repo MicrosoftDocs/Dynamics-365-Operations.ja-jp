@@ -2,7 +2,7 @@
 title: PayPal 向け Dynamics 365 Payment Connector
 description: このトピックでは、PayPal 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rubendel
-ms.date: 11/18/2020
+ms.date: 05/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f4f23b78596a4f3b6b57af3d4cdf2b2bf513f092
-ms.sourcegitcommit: d02ab79c18200cbccbab6c57aad396ef0b3838d7
+ms.openlocfilehash: cc94c8d1c58aac989d2f1421de05f30e5f70a9eb
+ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857958"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "6087029"
 ---
 # <a name="dynamics-365-payment-connector-for-paypal"></a>PayPal 向け Dynamics 365 Payment Connector
 
@@ -35,9 +35,7 @@ ms.locfileid: "5857958"
 | PayPal ウォレット | PayPal 「ボタン」ととして知られる PayPal ウォレットは、PayPal コネクタでサポートされるカスタマー エクスペリエンスと統合について説明します。 |
 | ウォレット | BIN 範囲や有効期限など、クレジット カード タイプとデビット カード タイプを区別するために使用される従来の支払特性を含まない支払タイプ。 |
 
-## <a name="overview"></a>概要
-
-Microsoft Dynamics 365 Commerce は、PayPal ウォレットとの統合を最初から用意しています。 PayPal コネクタが構成されている場合、PayPal ボタンは、オンライン注文のチェックアウトの一部として選択可能な支払方法になります。 ユーザーが **PayPal** を選択すると、PayPal で直接支払を完了するように指示され、注文完了のためにオンライン店舗に戻ります。  
+Microsoft Dynamics 365 Commerce は、PayPal ウォレットとの統合を最初から用意しています。 PayPal コネクタが構成されている場合、PayPal ボタンは、オンライン注文のチェックアウトの一部として選択可能な支払方法になります。 ユーザーが **PayPal** を選択すると、PayPal で直接支払を完了するように指示され、注文完了のためにオンライン ストアフロントに戻ります。  
 
 PayPal コネクタは、クレジット カード決済で活用されているのと同じ支払 SDK を使用して実装されます。 PayPal による支払のサポートを向上させるために、「ウォレット」支払タイプのサポートが追加され、クレジット カード以外の支払のサポートも強化されました。 具体的には、PayPal による支払は BIN 範囲を返しません。 PayPal および他のウォレットの支払をサポートするために、BIN 範囲を含まない支払のための新しいマッピングが導入されました。 この新しいマッピングは、クレジット カード決済の方法に対する既存の BIN 範囲マッピングを拡張するために使用することもできます。 詳細については、[ウォレット支払のサポート](wallets.md) を参照してください。 
 
@@ -47,7 +45,7 @@ PayPal 向け Microsoft Dynamics 365 Payment Connector は中国では使用で�
 
 ### <a name="paypal-wallet-in-storefront"></a>店舗での PayPal ウォレット 
 
-コネクタは、電子商取引の支払のために PayPal ウォレットまたは PayPal ボタンの使用をサポートしています。 コネクタがオンライン店舗用に構成されている場合、顧客は支払時に PayPal ボタンを使用して支払を行うオプションが表示されます。 顧客が PayPal ボタンを選択すると、PayPal によって認証され、支払方法を選択できる、PayPal ウォレットの小さなブラウザー ウィンドウにリダイレクトされます。 認証と支払方法の選択に成功すると、顧客は、PayPal 支払がチェックアウト フォームに読み込まれた店舗にリダイレクトされます。 注文が行われると、PayPal 支払は注文の支払明細行として含められ、Commerce 本社に同期されます。
+コネクタは、電子商取引の支払のために PayPal ウォレットまたは PayPal ボタンの使用をサポートしています。 コネクタがオンライン店舗用に構成されている場合、顧客は支払時に PayPal ボタンを使用して支払を行うオプションが表示されます。 顧客が PayPal ボタンを選択すると、PayPal によって認証され、支払方法を選択できる、PayPal ウォレットの小さなブラウザー ウィンドウにリダイレクトされます。 認証と支払方法の選択に成功すると、顧客は、PayPal 支払がチェックアウト フォームに読み込まれた店舗にリダイレクトされます。 注文が行われると、PayPal 支払は注文の支払明細行として含められ、Commerce 本社によって同期されます。
 
 PayPal ウォレットの詳細については、PayPal がホストする [PayPal チェックアウト ページ](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) を参照してください。 
 
@@ -106,7 +104,7 @@ PayPal 支払コネクタをテストするには、最初に PayPal 開発者�
 8. **プロセッサ支払方法のマッピング** ページで、以前に作成した **PayPal** のカード タイプを選択します。 中央の列で、**PayPal 向け Dynamics 365 Payment Connector** を選択し、**追加** を選択します。 
 
 > [!NOTE]
-> **プロセッサの支払方法のマッピング** 機能により、チャネル データベースに同期する必要がある新しいテーブルを追加します。 このデータを Commerce スケジューラに追加するには、Commerceスケジューラを初期化する必要があります。 詳細については、[commerce スケジューラのコンフィギュレーションの更新](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/cdx-best-practices#updating-configurations) に関連するドキュメントを参照してください。 
+> **プロセッサの支払方法のマッピング** 機能により、チャネル データベースに同期する必要がある新しいテーブルを追加します。 このデータを Commerce スケジューラに追加するには、Commerceスケジューラを初期化する必要があります。 詳細については、[commerce スケジューラのコンフィギュレーションの更新](./dev-itpro/cdx-best-practices.md#updating-configurations) に関連するドキュメントを参照してください。 
 
 ### <a name="set-up-the-paypal-payment-connector-in-payment-services"></a>支払サービスで PayPal 支払コネクタを設定する
 
@@ -157,7 +155,20 @@ PayPal 支払コネクタをテストするには、最初に PayPal 開発者�
     | サポートされている支払/入金タイプ | その他の支払コネクタは、複数の支払/入金タイプをサポートします。 PayPal の場合、支払い方法は **PayPal** だけです。 | あり | あり | PayPal |
     | サポートされている支払方法のバリアント | その他の支払コネクタは、複数の支払方法のバリアントを返すことがあります。 PayPal の場合、バリアントは **PayPal** だけです。 | あり | あり | PayPal |
     | 環境 | このフィールドは、トランザクションをサンドボックス環境またはライブ環境に送信するかを指定するために使用されます。 | あり | あり | *サンドボックス* または *ライブ* |
-    
+
+### <a name="set-up-the-paypal-payment-method-for-the-online-store"></a>オンライン ストア用に PayPal 支払方法を設定する
+
+オンライン ストア用に PayPal 支払方法を設定するには、次の手順を実行します。
+
+1. PayPal 支払コネクタが構成されているオンライン ストアの **設定** タブで、**支払方法** を選択します。
+1. **新規** を選択して、支払方法を追加します。
+1. **支払方法** フィールドで、先ほど作成した PayPal の支払方法を選択します。 
+1. **工程名** フィールドで、**カードで支払う** を選択します。
+1. **コネクタ名** フィールドで、**PayPal 向け Dynamics 365 Payment Connector** を選択します。
+1. **転記** クイックタブで、転記詳細を指定します。
+1. **電子支払の設定** を選択し、**新規** を選択した後、**ID** フィールドで以前に PayPal に対して作成したカードの種類を選択します。 
+1. **保存** を選択し、**電子支払の種類** と **オンライン ストア** ページを閉じます。 
+
 > [!NOTE]
 > サンドボックス環境で支払のテストをする場合、**環境** フィールドをライブおよびライブ環境に設定することはできません。 **マーチャント クライアント ID** および **マーチャント API キー** を使用することはできません。 サンドボックス環境は、サンドボックス テストの目的でのみ使用されます。
 

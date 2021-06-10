@@ -2,7 +2,6 @@
 title: Application update 10.0.19 での電子申告フレームワーク API の変更
 description: このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.19 で電子申告 (ER) フレームワークの API がどのように変更されたのかについて説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 63fc9c3f16a6162a03cc6b130f900006d26b1160
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: d9987cfa8adf1c3c485e96aa81c63e09158b66ec
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5952121"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018274"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10019"></a>Application update 10.0.19 での電子申告フレームワーク API の変更
 

@@ -1,7 +1,7 @@
 ---
 title: 財務分析コードのコンフィギュレーション
 description: このトピックでは、アプリケーション ページを統合するための財務分析コードの構成について説明します。
-author: aprilolson
+author: RyanCCarlson2
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 91363
 ms.assetid: 6be04fc8-5e2b-4ea6-b9bc-940fb5b811e5
 ms.search.region: Global
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f600e23544f82bcbfc4de3a30d291cf8099c36b5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 268ae30c8ec759d1491c62659fbfbf4f711d6264
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753896"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111710"
 ---
 # <a name="financial-dimension-configuration"></a>財務分析コードのコンフィギュレーション
 

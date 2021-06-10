@@ -2,11 +2,9 @@
 title: 既定のページ モジュール
 description: このトピックでは、既定のページ モジュールと、これを Microsoft Dynamics 365 Commerce のページ テンプレートに追加する方法について説明します。
 author: samjarawan
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4035406affdc6566bd6dcf0b423803fd6d919105
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 18be8e54cd85c3443bd53c928280e623c517b374
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853508"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020693"
 ---
 # <a name="default-page-module"></a>既定のページ モジュール
 

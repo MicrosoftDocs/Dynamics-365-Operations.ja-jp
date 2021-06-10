@@ -14,7 +14,9 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
-                - name: 10.0.19 のプラットフォーム更新プログラム (2021 年 7 月)
+                - name: バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 7 月)
+                  href: get-started/whats-new-platform-updates-10-0-20.md
+                - name: 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: 10.0.18 のプラットフォーム更新プログラム (2021 年 5 月)
                   href: get-started/whats-new-platform-updates-10-0-18.md
@@ -940,8 +942,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Lifecycle Services の新機能および変更された機能
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Lifecycle Services (LCS) の削除済みまたは非推奨の機能
-                  href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services ユーザー ガイド
               href: lifecycle-services/lcs-user-guide.md
             - name: プロジェクト オンボード
@@ -1064,6 +1064,10 @@
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: アプリケーション ライフサイクル管理
                       href: data-entities/dual-write/app-lifecycle-management.md
+                    - name: ユーザーが指定するチームの所有者
+                      href: data-entities/dual-write/user-specified-team-owner.md
+                    - name: 二重書き込み環境のリンクの解除と再リンク
+                      href: data-entities/dual-write/relink-environments.md
                 - name: アプリ間の概念のマッピング
                   items:
                     - name: 統合された顧客マスター
@@ -1166,6 +1170,8 @@
               items:
                 - name: アドインの概要
                   href: power-platform/add-ins-overview.md
+            - name: ポリシーおよび通信
+              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: モバイル プラットフォーム
           items:
             - name: モバイル プラットフォームのリソース

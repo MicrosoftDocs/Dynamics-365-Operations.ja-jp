@@ -1,7 +1,7 @@
 ---
 title: ダイアログ上のセグメント化されたエントリ コントロールをサポート
 description: セグメント化されたエントリ コントロールをダイアログに追加するためのコード パターンについて説明します。
-author: robinarh
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 25571
 ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
 ms.search.region: Global
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8ab24038072ce05aa8e43973d75811c1a04e7f7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b89858f978f2e21d26b97ec3382d96944ae404d5
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750960"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111582"
 ---
 # <a name="support-for-segmented-entry-controls-on-dialogs"></a>ダイアログ上のセグメント化されたエントリ コントロールをサポート
 
@@ -67,7 +67,7 @@ dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
 
 [セグメント化されたエントリ コントロールのデザイン時メタデータ](segmented-entry-control-metadata-specification.md)
 
-[セグメント化されたエントリ コントロールの Parm メソッド](segmented-entry-control-parm-method-specification.md)
+[セグメント化されたエントリ コントロールの `Parm` メソッド](segmented-entry-control-parm-method-specification.md)
 
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 

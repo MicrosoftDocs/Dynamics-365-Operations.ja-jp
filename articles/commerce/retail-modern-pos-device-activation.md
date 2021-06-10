@@ -2,7 +2,7 @@
 title: Modern POS (MPOS) のインストール、構成、有効化
 description: このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 author: jashanno
-ms.date: 04/06/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: fffc69dc40e03bc23523d731cf71e51047502e94
-ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
+ms.openlocfilehash: 18cfe9a838526a598108dd7efb3de1f6ac7c4da5
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5864342"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027662"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
+このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 このトピックは、レガシ セルフサービス インストーラーに基づいています。 シールされたセルフサービス インストーラーの詳細については、[シールされた Commerce セルフサービス コンポーネントの一括配置](dev-itpro/Enhanced-Mass-Deployment.md) を参照してください。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 
 > [!NOTE]
 > 最新の POS インストーラーには、Modern POS とオフラインの Modern POS (このインストーラーでもオフライン データベースをインストールします) の 2 つが用意されています。
@@ -96,7 +96,7 @@ ms.locfileid: "5864342"
 
 ### <a name="before-running-the-modern-pos-installer"></a>Modern POS インストーラーを実行する前に
 
-- すべての [システム要件](../fin-and-ops/get-started/system-requirements.md) を満たしていることを確認します。
+- すべての [システム要件](../fin-ops-core/fin-ops/get-started/system-requirements.md) を満たしていることを確認します。 オフライン データベースを使用する場合は、最初に、[Commerce Data Exchange 実装ガイダンス](dev-itpro/implementation-considerations-cdx.md#commerce-data-exchange-implementation-guidance) セクション、およびそれによって参照される関連するベスト プラクティス コンテンツを確認することをお勧めします。
 - 一時的にウィルス対策アプリケーションを無効にすることをお勧めします。  積極的なウィルス対策ソリューションの場合、使用中のアクティブなファイルをチェックしたときに、ウィルス対策ソリューションがフリーズする可能性があることが報告されています。
 - インストーラーは、最新のアプリケーションをサイドロードします。 したがって、サイドロードされたアプリケーションを許可するようにグループ ポリシー エントリを設定する必要があります。 インストーラーは、このインストールを可能にするために、次のように関連するレジストリ キーを変更します。
     - **パス:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx     
@@ -127,7 +127,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 プログラムを開始できるようになりました。
 
 > [!NOTE]
-> このインストールは、インストーラーを実行した管理者ユーザーに対してのみ行われます。 その他のすべてのユーザーについては、Modern POS をインストールするデスクトップ アイコンが作成されます。 ユーザーがサインインするたびに、そのユーザーがアイコンをダブルクリックする必要があります。 その後、要求に応じて、プログラムがインストールまたは更新されます。 更新後にユーザーがデスクトップ アイコンを使用しない場合、POS クライアントは、実行する前に正しく更新されるように、デスクトップ アイコンからら実行するようユーザーに POS クライアントより要求されます。
+> このインストールは、インストーラーを実行した管理者ユーザーに対してのみ行われます。 その他のすべてのユーザーについては、Modern POS をインストールするデスクトップ アイコンが作成されます。 ユーザーがサイン インするたびに、そのユーザーがアイコンをダブルクリックする必要があります。 その後、要求に応じて、プログラムがインストールまたは更新されます。 更新後にユーザーがデスクトップ アイコンを使用しない場合、POS クライアントは、実行する前に正しく更新されるように、デスクトップ アイコンからら実行するようユーザーに POS クライアントより要求されます。
 
 ### <a name="run-the-installer-on-any-other-device-windows-phone-google-android-device-or-apple-ios-device"></a>その他のデバイス (Windows Phone、Google Android デバイス、または Apple iOS デバイス) でインストーラーを実行する
 
@@ -167,7 +167,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 15. アクション ウィンドウで、**保存** を選択します。
 16. **Retail と Commerce** &gt; **定期処理** &gt; **配送スケジュール** の順に移動します。
 17. **1060 – スタッフ** ジョブを選択し、アクション ウィンドウで **今すぐ実行** を選択して作業者データをチャネル データベースに同期します。
-18. 新しい作業者が作成され、店舗に同期された後、作業者ジョン スミスは割り当てられたヒューストン ストアで使用されているすべての POS デバイスにサインインし、トランザクションを実行できます。 ただし、デバイスが最初に有効になっている必要があります。 次のセクションでは、新しい作業者用のデバイスを有効にする方法について説明します。
+18. 新しい作業者が作成され、店舗に同期された後、その作業者は割り当てられたヒューストン店舗で使用されているすべての POS デバイスにサイン インし、トランザクションを実行できます。 ただし、デバイスが最初に有効になっている必要があります。 次のセクションでは、新しい作業者用のデバイスを有効にする方法について説明します。
 
 ### <a name="map-an-azure-ad-account-to-a-worker-who-has-pos-permissions-for-device-activation"></a>デバイスの有効化の POS アクセス許可がある作業者に、Azure AD アカウントをマップする
 
@@ -199,7 +199,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 ## <a name="activate-a-device"></a>デバイスのアクティブ化
 
 > [!NOTE]
-> Azure Active Directory トークンが取得できないため、クラウド POS デバイスのデバイスのアクティブ化中に Safari ブラウザーでエラーが表示されることがあります。 この問題は、[Apple デバイスの Microsoft Enterprise SSO プラグイン](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin) を利用することで解決できます。
+> Azure Active Directory トークンが取得できないため、クラウド POS デバイスのデバイスのアクティブ化中に Safari ブラウザーでエラーが表示されることがあります。 この問題は、[Apple デバイスの Microsoft Enterprise SSO プラグイン](/azure/active-directory/develop/apple-sso-plugin) を利用することで解決できます。
 
 1. コンピューターで Modern POS を起動します。 **開始する前に** ページの手順を読み、完了したことを確認します。 その後、**次へ** を選択します。
 2. **有効化** を選択します。 Azure AD サインイン ページにリダイレクトされます。
@@ -212,7 +212,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 ## <a name="update-the-modern-pos-application"></a>Modern POS アプリケーションの更新
 
 > [!NOTE]
-> 配置可能パッケージの詳細については、[配置可能パッケージの適用](../dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
+> 配置可能パッケージの詳細については、[配置可能パッケージの適用](../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
 
 1. Modern POS アプリケーションが環境にアップロードされた後、デバイスでパッケージのバージョンを選択することができます。 パッケージ一覧には、新しいアップロードされたアプリケーションが含まれている必要があります。
 2. Modern POS アプリケーションを更新するには、[Modern POS のダウンロードおよびインストール](#download-and-install-modern-pos) セクションの手順に従ってください。 インプレース更新を行うには、新しいバージョンのセルフ サービス インストーラーを実行します。 アンインストールは必須でないか、推奨されていません。 デバイスの有効化状態は更新後も維持されます。
@@ -342,7 +342,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 
 開発者トポロジまたはデモ環境などのシングル コンピュータ システム上、または Commerce Scale Unit と Modern POS が同じコンピュータにインストールされている場合は、Modern POS はデバイス有効化を完了できません。
 
-**ソリューション:** この問題は、Modern POS が同じコンピューターへのネットワーク コール (つまり、それ自体の呼び出し) を行うことができないために発生します。 この問題を緩和するには、同じコンピュータに対して通信できるように AppContainer ループバック例外を有効にする必要があります。 Modern POS のこのループバックを有効にするのにさまざまなアプリケーションが役立ちます。 ループバックの詳細については、[ループバックの有効化およびネットワーク分離のトラブルシューティングの方法](https://msdn.microsoft.com/library/windows/apps/hh780593.aspx)を参照してください。
+**ソリューション:** この問題は、Modern POS が同じコンピューターへのネットワーク コール (つまり、それ自体の呼び出し) を行うことができないために発生します。 この問題を緩和するには、同じコンピュータに対して通信できるように AppContainer ループバック例外を有効にする必要があります。 Modern POS のこのループバックを有効にするのにさまざまなアプリケーションが役立ちます。 ループバックの詳細については、[ループバックの有効化およびネットワーク分離のトラブルシューティングの方法](/previous-versions/windows/apps/hh780593(v=win.10))を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

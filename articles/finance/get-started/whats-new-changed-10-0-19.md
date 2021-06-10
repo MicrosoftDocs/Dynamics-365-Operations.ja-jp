@@ -1,11 +1,10 @@
 ---
-title: Dynamics 365 Finance 10.0.19 (2021 年 7 月) の新機能または変更された機能
+title: Dynamics 365 Finance 10.0.19 (2021 年 6 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.19 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
-ms.date: 04/23/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
@@ -15,14 +14,14 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1d8d58963e373768554113992295598a1452698c
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 7d35f3dc310319e19254a629ad33759ccb9dcc4a
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941271"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112546"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10019-july-2021"></a>Dynamics 365 Finance 10.0.19 (2021 年 7 月) の機能のプレビュー
+# <a name="preview-features-in-dynamics-365-finance-10019-june-2021"></a>Dynamics 365 Finance 10.0.19 (2021 年 6 月) の機能のプレビュー
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -31,7 +30,7 @@ ms.locfileid: "5941271"
 
 - **プレビュー リリース:** 2021 年 4 月
 - **一般提供 (自己更新):** 2021 年 6 月
-- **一般提供 (自動更新):** 2021 年 7 月
+- **一般提供 (自動更新):** 2021 年 6 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
@@ -44,6 +43,15 @@ ms.locfileid: "5941271"
 - [税務サービス – 複数の VAT ID をサポート (プレビュー)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-multiple-vat-id-preview)
 - [税務サービス – 移動オーダーのサポート税 (プレビュー)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-tax-transfer-order-preview)
 - [税サービス (プレビュー)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview)
+- [電子請求– コンフィギュレーション可能なオーストリアの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-austrian-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なベルギーの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-belgian-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なデンマークの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-danish-electronic-invoice)
+- [電子請求 – コンフィギュレーション可能なオランダの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-dutch-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なエストニアの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-estonian-electronic-invoice)
+- [電子請求 – コンフィギュレーション可能なフランスの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-french-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なドイツの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-german-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なノルウェーの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-norwegian-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なスペインの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-spanish-electronic-invoice)
 
 ## <a name="additional-resources"></a>追加リソース
 

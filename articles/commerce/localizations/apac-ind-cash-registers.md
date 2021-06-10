@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 50e5cde567b78278aab21cec066a5f3298139f43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2a77a34459f08208665ecf8b207ae0e71b2580a2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798877"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020327"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
@@ -30,7 +30,7 @@ ms.locfileid: "5798877"
 
 ## <a name="prerequisites"></a>必要条件
 
-- インドの GST を設定します。 詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
+- インドの GST を設定します。 詳細については、[インドの商品及びサービス税 (GST)](../../finance/localizations/apac-ind-gst.md) を参照してください。
 - コマース チャネル コンポーネントを構成します。 インド固有の機能を有効にするには、チャネル コンポーネントの拡張機能を構成する必要があります。 詳細については、[配置ガイドライン](./apac-ind-loc-deployment-guidelines.md)を参照してください。
 
 ## <a name="india-tax-entities-for-commerce"></a>コマース向けインドの税エンティティ
@@ -49,7 +49,7 @@ ms.locfileid: "5798877"
 | 税設定                           | 小売とコマース \> チャネル設定 \> 売上税 \> 税コンフィギュレーション \> 税設定      |
 
 > [!NOTE]
-> コマースでのインドの税エンティティ用ナビゲーション パスは、Finance でのナビゲーション パスと異なります。 Finance のナビゲーション パスの詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
+> コマースでのインドの税エンティティ用ナビゲーション パスは、Finance でのナビゲーション パスと異なります。 Finance のナビゲーション パスの詳細については、[インドの商品及びサービス税 (GST)](../../finance/localizations/apac-ind-gst.md) を参照してください。
 
 ## <a name="validate-tax-information-for-the-store"></a>店舗の税情報の検証
 

@@ -2,7 +2,7 @@
 title: データ タスクの自動化
 description: このトピックでは、データ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法について説明します。
 author: Sunil-Garg
-ms.date: 12/04/2019
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
-ms.openlocfilehash: a9f61c3eef90210839926d601f5bcd01dcec9cfc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b0e60afbca0854444fa1af065761d4c0460b0500
+ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748961"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "5989030"
 ---
 # <a name="data-task-automation"></a>データ タスクの自動化
 
@@ -54,7 +54,7 @@ ms.locfileid: "5748961"
     > [!IMPORTANT]
     > データ タスクの自動化はクラウドのすべての環境で実行できますが、実稼動環境の統合 API を使用してすべてのインポート/エクスポート タスクを実行しないことを強くお勧めいたします。 統合 API を含むデータ タスクの自動化は、自動テストにのみ使用する必要があります。
 
-次のビデオは、Data Task Automation Manager の初期リリースを紹介する TechTalk の 55 分です。[タスク自動化フレームワーク](https://academylive.blob.core.windows.net/media/PAL/TechTalks-EnterpriseEdition/TaskAutomationFrameworkForDataManagement-DYN447PAL2.mp4)。
+次のビデオは、[タスク自動化フレームワーク](https://community.dynamics.com/365/b/techtalks/posts/task-automation-framework-for-data-management-march-3-2018)の初期リリースを紹介する 55 分の TechTalk です。
 
 ## <a name="task-manifest"></a>タスク マニフェスト
 タスクは、XML マニフェストで定義する必要があります。 このセクションでは、マニフェストについて説明します。 マニフェストを名前付けしデザインする方法の指針については、このトピックの後半の、「マニフェストのデザインに対するベスト プラクティス」セクションを参照してください。

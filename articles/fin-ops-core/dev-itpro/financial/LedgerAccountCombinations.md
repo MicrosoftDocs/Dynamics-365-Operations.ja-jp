@@ -1,7 +1,7 @@
 ---
 title: 勘定科目の組み合せ
 description: このトピックでは、分析コードフレームワークにおける勘定科目の組み合わせに関する情報を提供します。
-author: jasonsto
+author: RyanCCarlson2
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
-ms.author: rbrow
+ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c6778764ee4f81f4b9a27dd2170c8bda4af66a8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3a04895f698991d60cfb734e988717ff59fab2f6
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753926"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111744"
 ---
 # <a name="ledger-account-combinations"></a>勘定科目の組み合せ
 

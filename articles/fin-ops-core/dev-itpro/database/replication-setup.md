@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: b8fba9997cb77ce449b5655c5d04b1a514708a07
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 1bf830496923bf776e74a8e431a36f2be2249824
+ms.sourcegitcommit: cf8d87ea9333ae2af7db5887771df33b059cf34a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944765"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5979819"
 ---
 # <a name="upgrade-from-ax-2012---sql-transactional-replication"></a>AX 2012 からのアップグレード - SQL トランザクション レプリケーション 
 
@@ -75,7 +75,7 @@ ms.locfileid: "5944765"
     <Config>
       <!-- Edit the properties in this section for your source AX 2012 database -->
          <SourceDatabase>
-                 <Server>SQLINSTANCE\SQLSERVERNAME</Server>
+                 <Server>SQLSERVERNAME\SQLINSTANCE</Server>
                  <Database>MicrosoftDynamicsAX</Database>
                   <UserName>ReplicationUser</UserName>
                   <Password>********************</Password>

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8f835e5af2f1faa7dce62c318afd796a11d8fe01
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7c87595065c68966d2476fdb7373e70d8856edbf
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797152"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022085"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-1009-april-2020"></a>Dynamics 365 Commerce 10.0.9 の新機能と変更点 (2020 年 4 月)
 
@@ -32,14 +32,14 @@ ms.locfileid: "5797152"
 - **一般提供 (自己更新):** 2020 年 3 月
 - **自動更新:** 2020 年 4 月
 
-このリリースでは次の機能が含まれています。 機能のタイトルは、[リリース プランのサイト](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/) の追加情報にリンクしています。
+このリリースでは次の機能が含まれています。 機能のタイトルは、[リリース プランのサイト](/dynamics365-release-plan/2020wave1/) の追加情報にリンクしています。
 
-- [会計年度の初めに受領番号をリセットできるようにする](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
-- [チャネルに基づくサポート料金の自動請求の向上](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
-- [店舗における入庫/出庫の操作の改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
-- [返品の優先支払方法を設定する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
-- [一括 URL リダイレクトのサポート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
-- [第一線の作業者とマネージャー向けのHQとPOSのタスク管理](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
+- [会計年度の初めに受領番号をリセットできるようにする](/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
+- [チャネルに基づくサポート料金の自動請求の向上](/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
+- [店舗における入庫/出庫の操作の改善](/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
+- [返品の優先支払方法を設定する](/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
+- [一括 URL リダイレクトのサポート](/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
+- [第一線の作業者とマネージャー向けのHQとPOSのタスク管理](/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
 
 
 ## <a name="additional-resources"></a>追加リソース
@@ -57,7 +57,7 @@ Microsoft Dynamics 365 Commerce 10.0.9 には、プラットフォーム更新�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

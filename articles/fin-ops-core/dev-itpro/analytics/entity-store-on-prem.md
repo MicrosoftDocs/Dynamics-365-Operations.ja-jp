@@ -2,7 +2,7 @@
 title: PowerBI.comとオンプレミス環境との統合
 description: このトピックでは、 オンプレミス配置にてエンティティストアを有効にする方法を提供します。
 author: MilindaV
-ms.date: 06/18/2019
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5dda687687e7adaf77726ab081c82fdc3bc553f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e79fa89dc8565b00958c266f326643bea33b9eb
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751246"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112605"
 ---
 # <a name="powerbicom-integration-with-on-premises-environments"></a>オンプレミス環境との PowerBI.com の統合
 
@@ -120,7 +120,7 @@ ms.locfileid: "5751246"
     - データベースの名称は手順14で作成され、DatabaseTopologyDefinitionファイルにて定義されています。 既定の名称は **AXDW** です。
     - SQL Serverの名称は、 Microsoft SQL Server またはAlwaysOnリスナー の完全修飾ドメイン名 (FQDN) となります。 このFQDNの例としては、 **sqlinstance.onprem.contoso.com** があります。 これはAXDWデータベースが作成されたサーバーです。
 
-現在のところ、エンティティストアの有効化は最初の配置処理中にのみ行うことができます。 既存の環境で有効にする必要がある場合は、エンティティストアに対応しているプラットフォームの更新を使用して、当該環境を削除したのちに再度配置する必要があります。
+既に配置されている環境でエンティティ格納を有効にするには、LCS の **管理** ボタンの下にある **更新設定** アクションを使用できます。 これにより、エンティティ格納のコンフィギュレーションを指定できるダイアログが開きます。 
 
 ## <a name="authoring-and-distributing-reports-by-using-entity-store-on-premises"></a>エンティティストア オンプレミスを使用したレポートの作成および配布
 

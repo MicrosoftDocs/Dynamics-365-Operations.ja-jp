@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 890cce5d61a353a53e29b22db72e63d751c0d2dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bcb8492b9f831e27e034218fb203259fbc70bd56
+ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793005"
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "6039755"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
@@ -62,7 +62,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
 
 11. コード エディターで、次のコードを追加します。 
 
-    ```C#
+    ```X++
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
     final class ContosoRetailTransactionServiceSample
     {
@@ -71,27 +71,27 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
 
 12. クラス内部で、カスタム ロジックを実行する新しいメソッドを追加します。 これは、カスタム ロジックを実行するために CRT から呼び出すメソッドです。
 
-    ```C#
+    ```X++
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
-    final class ContosoRetailTransactionServiceSample
+    final class ContosoRetailTransactionServiceSample_Extension
     {
         public static container SerialCheck(str _serialNum)
         {
             boolean success = false;
             str errorMessage;
             int fromLine;
-
-            ttsbegin;
-
+            
             try
             {
                 if (_serialNum)
                 {
-                    // check whether the serial number exists
+                     ttsbegin;
+                   // check whether the serial number exists
 
                     // Add your custom logic
 
                     errorMessage = "Serial number found";
+                    ttscommit;
                 }
                 else
                 {
@@ -102,10 +102,9 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
             }
             catch (Exception::Error)
             {
+                ttsAbort;
                 error = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
             }
-
-            ttscommit;
 
             // Return sanitized error code.
             errorMessage = RetailTransactionServiceUtilities::getErrorCode(errorMessage);

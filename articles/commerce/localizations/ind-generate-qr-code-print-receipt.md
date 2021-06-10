@@ -5,7 +5,6 @@ author: prabhatb2011
 ms.date: 03/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -14,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f8e84cb56ad6beba137743aa11f29431770828b7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fd938f76a31c329aa4aa2f1000f9a59624ec7d1b
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798769"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021867"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts"></a>QR コードの生成とレシートへの印刷
 
@@ -143,7 +142,7 @@ QR コードの新しいカスタム レシート フィールドをサポート
             return receiptFieldValue;
         ```  
 
-6. **CommerceRuntime.Ext.config** に必要な拡張子を追加します。ここで、**Contoso.Commerce.Runtime.ReceiptsIndia** は QR コード アセンブリを印刷するための新しい拡張機能の名前です。
+6. **CommerceRuntime.Ext.config** に必要な拡張機能を追加します。ここで **Contoso.Commerce.Runtime.ReceiptsIndia** は、QR コード アセンブリを印刷するための新しい拡張機能の名前です。
 
     ```xml 
     <commerceRuntimeExtensions>

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 2861022febf1b9c08b47ae7b5e3c410593a5beeb
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 4cd386f831ec03489bc7a4f18256b7c6ee5e0da2
+ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908690"
+ms.lasthandoff: 05/15/2021
+ms.locfileid: "6048932"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
@@ -107,7 +107,7 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 
 ### <a name="is-there-guidance-on-when-to-use-a-virtual-entity-and-when-to-use-dual-write"></a>いつ仮想エンティティを使用するか、いつ二重書き込みを使用するかについてのガイダンスはありますか?
 
-仮想エンティティおよび二重書き込みを使用する場合のガイダンスについては、「[データ統合戦略の選択](../data-entities/integration-overview.md)」で説明されいています。
+仮想エンティティおよび二重書き込みを使用する場合のガイダンスについては、[Finance and Operations アプリとサード パーティ サービス間の統合](../data-entities/integration-overview.md)で説明されています。
 
 ### <a name="when-adding-records-using-virtual-entities-is-there-any-way-to-use-number-sequences"></a>仮想エンティティを使用してレコードを追加する場合、番号順序を使用する方法はありますか?
 はい、Finance and Operations エンティティで番号順序が自動生成される場合は、仮想エンティティからも同じように機能します。

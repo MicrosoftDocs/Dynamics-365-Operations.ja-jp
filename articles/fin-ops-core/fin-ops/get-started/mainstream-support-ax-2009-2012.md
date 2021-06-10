@@ -2,7 +2,7 @@
 title: Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
 description: このトピックでは、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートの終了に関する詳細情報を提供します。
 author: ShellyBakke
-ms.date: 07/10/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,22 +12,20 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c379ebb90e8a17e312b0a1a44cc34fc42ef68f76
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 129597842b44fd703e67b70b15e9b2b6db77e0aa
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923203"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018326"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
 
 [!include[banner](../includes/banner.md)]
 
-Dynamics AX 2009 Service Pack 1 (SP1)、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートは、2018 年 10 月 9 日に終了します。 その日より後は、2021 年 10 月 12 日まで続く延長サポート期間の終わりまで、これら 3 つのバージョンのセキュリティ修正プログラムのみ提供され続けます。 詳細については、[support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX) を参照してください。
+Dynamics AX 2009 Service Pack 1 (SP1)、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートは、2018 年 10 月 9 日に終了します。 その日より後は、2022 年 4 月 12 日まで続く延長サポート期間の終わりまで、これら 3 つのバージョンのセキュリティ修正プログラムのみ提供され続けます。 詳細については、[support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX) を参照してください。
 
-Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 月 12 日まで続行されます。 Microsoft は、メインストリーム サポート期間全体を通じて、Dynamics AX 2012 R3 のセキュリティ修正プログラム、セキュリティ以外の修正プログラム、および規制に関する更新を作成し続けます。 これらの非バイナリ、セキュリティ以外の修正プログラム、規制更新プログラムのソース コードは、拡張プランまたはソフトウェア保証がアクティブな顧客、およびそのパートナーが引き続き利用できます。
-
-Dynamics AX 2009 SP1、Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、それらの変更を必要に応じて選択的に統合できます。 顧客やパートナーは、Lifecycle Services (LCS) で公開されている、および問題検索を通じて検索可能な関連する Dynamics AX 2012 R3 KB 記事に付属するパッケージからソース コードを取得できます。
+Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 月 12 日まで続行されます。 Microsoft は、メインストリーム サポート期間全体を通じて、Dynamics AX 2012 R3 のセキュリティ修正プログラム、セキュリティ以外の修正プログラム、および規制に関する更新を作成し続けます。 これらの非バイナリ、セキュリティ以外の修正プログラム、規制更新プログラムのソース コードは、拡張プランまたはソフトウェア保証がアクティブな顧客、およびそのパートナーが引き続き利用できます。 顧客やパートナーは、Lifecycle Services (LCS) で公開されている、および問題検索を通じて検索可能な関連する Dynamics AX 2012 R3 KB 記事に付属するパッケージからソース コードを取得できます。
 
 Dynamics 365 Finance、Supply Chain Management、Retail、および人事管理などの Finance and Operations アプリを最新バージョンにアップグレードすることを推奨します。
 

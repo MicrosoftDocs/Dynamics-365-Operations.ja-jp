@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017058"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085477"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>会計通貨またはレポート通貨の変更
 
@@ -31,12 +31,12 @@ ms.locfileid: "6017058"
 会計通貨またはレポート通貨を変更したり、元帳の設定にレポート通貨を追加する必要がある場合があります。 これは通常、次のシナリオで発生します。
 
 - 法人の設定時に間違った会計通貨またはレポート通貨が指定されました。 現在、通貨を変更する必要があります。
-- 法人の設定時にレポート通貨が指定されませんでした。 (レポート通貨はオプションです。) 現在、レポート通貨を追加する必要があります。
+- 法人の設定時にレポート通貨が指定されましたが、現在、レポート通貨を削除する必要があります。
+- 組織は、Microsoft Dynamics 365 Finance にアップグレードまたは移行中で、会計通貨またはレポート通貨の変更が必要です。
 
 二重通貨機能を以前使用していなかった組織で、この機能の使用を開始する必要があります。 この問題は通常、次のシナリオで発生します。
 
-- 法人の設定時にレポート通貨が指定されましたが、現在、レポート通貨を削除する必要があります。
-- 組織は、Microsoft Dynamics 365 Finance にアップグレードまたは移行中で、会計通貨またはレポート通貨の変更が必要です。
+- 法人の設定時にレポート通貨が指定されませんでした。 (レポート通貨はオプションです。) 現在、レポート通貨を追加する必要があります。
 
 ## <a name="resolution"></a>解決策
 

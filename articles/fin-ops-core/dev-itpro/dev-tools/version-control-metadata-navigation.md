@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc29a25b9440bc7c2aa4920a12c8ddcca9b4adef
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 0ac7c814f3c76e10ffe60f6d861865c04957c9aa
+ms.sourcegitcommit: a0690817a0787795d7bc5bc7781780da8ef701e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866230"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6050596"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
@@ -131,12 +131,12 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 すべての Visual Studio プロジェクトはモデルに属しています。 モデルは、通常 Visual Studio プロジェクトよりも大きなスコープ内にあるソース コードの配布と配置の単位です。 前のセクションでは、ソース管理にフリート管理ソリューションの要素のファイルを追加しました。 フリート管理モデルの要素をソース管理に追加したのは初めてのため、モデル記述子ファイルをチェックインする必要があります。
 
-1. Visual Studio の **チーム エクスプローラー** で、**ソース管理エクスプローラー** を開いてから、メタデータ フォルダー (たとえば、**\Trunk\Main\Metadata**) を右クリックします。
-2. **ソース管理エクスプローラー** ツール バーで、**フォルダーへの項目の追加** をクリックします。
+1. Visual Studio 内の **チーム エクスプローラー** で,**ソース管理エクスプローラー** を開きます。
+2. メタデータ フォルダー (たとえば、**\Trunk\Main\Metadata**) を右クリックし、**フォルダーへの品目の追加** をクリックします。
 3. モデル記述子ファイルを選択します。 モデル記述子ファイルは、モデルの XML ファイルのマニフェストです。 これは、モデルが属するパッケージの **記述子** フォルダーにあります。 次の図は、フリート管理モデルのモデル記述子ファイルが存在する場所の例を示しています (c:\\packages\\FleetManagement\\Descriptor\\FleetManagement.xml)。
 
     > [!NOTE]
-    > マシンの構成によっては、モデル ストアが、I:\AosService\PackagesLocalDirectory、c:\AosService\PackagesLocalDirectory、または別のドライブの配下にある場合があります。
+    > マシンの構成によっては、モデル ストアが、K:\AosService\PackagesLocalDirectory、c:\AosService\PackagesLocalDirectory、または別のドライブの下にある場合があります。
 
     [![ソース コントロールへの FleetManagement.xml の追加](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 

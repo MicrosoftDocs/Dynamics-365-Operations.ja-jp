@@ -1,7 +1,7 @@
 ---
 title: 異なるディメンション パターンをサポート
 description: さまざまな分析コードのパターンをサポートするため、一連のフレームワーク データ エンティティが分析コードを含む他のエンティティのデータ ソースとして使用できます。
-author: Sunil-Garg
+author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 13461
 ms.assetid: c2431895-0751-4a2a-96cb-f7df76c88f66
 ms.search.region: Global
-ms.author: sunilg
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9e3874d4e34f707f354a5550999d84ef97ea585
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3a833007f5b6fc5088b86bf9bdf3e0c0ed7860e5
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753902"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111740"
 ---
 # <a name="support-for-different-dimension-patterns"></a>異なるディメンション パターンをサポート
 

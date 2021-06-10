@@ -1,11 +1,10 @@
 ---
-title: Dynamics 365 Commerce 10.0.19 (2021 年 7 月) の新機能と変更された機能
+title: Dynamics 365 Commerce 10.0.19 (2021 年 6 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.19 の新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 04/22/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -15,14 +14,14 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b90d65e7faf8097bf8b5491a30135e004f9da4e0
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: 4c91f077ec9457b8228738ac2b1cdf8ab8c2cd16
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937874"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112551"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-commerce-10019-july-2021"></a>Dynamics 365 Commerce 10.0.19 (2021 年 7 月) の新機能と変更された機能
+# <a name="whats-new-and-changed-in-dynamics-365-commerce-10019-june-2021"></a>Dynamics 365 Commerce 10.0.19 (2021 年 6 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -31,16 +30,16 @@ ms.locfileid: "5937874"
 
 - **リリースのプレビュー:** 2021 年 4 月
 - **リリースの一般提供 (手動更新):** 2021 年 6 月
-- **リリースの一般提供 (自動更新):** 2021 年 7 月
+- **リリースの一般提供 (自動更新):** 2021 年 6 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-- Dynamics 365 Commerce で Microsoft Clarity をセットアップします<br> - 詳細については [Dynamics 365 Commerce で Microsoft Clarity をセットアップ](../set-up-clarity.md) を参照してください。
+- Dynamics 365 Commerce での Microsoft Clarity の設定<br> - 詳細については、[Dynamics 365 Commerce での Microsoft Clarity の設定](../set-up-clarity.md) を参照してください。
 - 測定単位設定の適用<br> - 詳細については、[測定単位設定の適用](../unit-of-measure.md) を参照してください。
 - 集荷モジュールのチェックイン<br> - 詳細については、[集荷モジュールのチェックイン](../check-in-pickup-module.md) を参照してください。
-- [カーブサイド注文フルフィルメントのための顧客チェックイン](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/customer-check-in-touchless-commerce)<br> - 詳細については、[POS での顧客チェックイン通知を有効にする](../enable-customer-check-in.md) を参照してください。
+- [カーブサイド注文フルフィルメントのための顧客チェックイン](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/customer-check-in-touchless-commerce)<br> - 詳細については、[POS での顧客チェックイン通知を有効にする](../enable-customer-check-in.md) を参照してください。
 - 購入プロモーションでギフトを構成する<br> - 詳細については、[購買プロモーションでギフトを構成する](../gift-with-purchase.md) を参照してください。
 - - モジュール構成プリセット<br> - 詳細については、[モジュール構成プリセット](../e-commerce-extensibility/module-config-presets.md) を参照してください。
 
@@ -57,7 +56,7 @@ Dynamics 365 Commerce 10.0.19 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2021 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2021 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2021wave1/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

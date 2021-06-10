@@ -2,7 +2,7 @@
 title: Commerce Scale Unit (クラウド) の初期化
 description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
-ms.date: 02/09/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: f574bd9f9c0af220f826dab971f62be05ad19134
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 75948fa45002b7e5f56a9fdd5da168641ef8fbb8
+ms.sourcegitcommit: cf8d87ea9333ae2af7db5887771df33b059cf34a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744827"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5979815"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -83,8 +83,8 @@ Commerce Scale Unit は、次の地域に配置することができます。
 本社が使用可能か確認してください。 これは、初期化プロセス中にスケール ユニットを本社に登録するために必要です。 サービス プロセスで利用できなくなる可能性があるため、本社がサービス中の場合はスケール ユニットの初期化をお勧めしません。
 
 1. 本社環境が使用可能で [メンテナンス モード](../sysadmin/maintenance-mode.md) でないことを確認してください。
-2. LCS の環境の詳細 ページで、**環境機能 \> Retail** を選択します。
-3. Retail 設定配置ページで、**初期化** を選択します。
+2. LCS の環境の詳細 ページで、**環境機能 \> Commerce** を選択します。
+3. Commerce 設定配置ページで、**初期化** を選択します。
 4. 初期化する Commerce Scale Unit のバージョンを選択します。
 5. 地域を選択して Commerce Scale Unit を初期化します。
 

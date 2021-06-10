@@ -1,7 +1,7 @@
 ---
 title: セグメント化されたエントリ コントロールの移行のガイダンス
 description: このトピックは、セグメント化されたエントリ コントロールの移行プロセスについて説明します。
-author: robinarh
+author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 25651
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f9a16d725c445f04404967edd087f1c4c9143f8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 38ff72acdefb8898624dc014d9d4cd1b02ef8676
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750938"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111738"
 ---
 # <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
 
@@ -991,8 +991,8 @@ ledgerDimensionDefaultAccountControllerResourceIssueOffset.loadFromId(wrkCtrTabl
     -   **予算計画** コントローラーを用いて、使用する勘定構造を指定する必要があります。 **Dialog** クラスは、ユーザーが勘定構造を選択し (SEC の外部で)、選択した勘定構造を SEC で設定する方法を実装する必要があります。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
+
 
 [ダイアログのセグメント化されたエントリ コントロールのサポート](segmented-entry-control-dialog-support.md)
 

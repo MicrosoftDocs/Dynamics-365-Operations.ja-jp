@@ -5,7 +5,6 @@ author: sericks007
 ms.date: 04/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a77b221231aee5f0cd5d4d0bb8882ad0c8db174b
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 69cd40d1239df79b5abc833ab8062915ea0ea56e
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923395"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022079"
 ---
 # <a name="platform-updates-for-version-10018-of-finance-and-operations-apps-may-2021"></a>Finance and Operations アプリ バージョン 10.0.18 のプラットフォーム更新プログラム (2021 年 5 月)
 

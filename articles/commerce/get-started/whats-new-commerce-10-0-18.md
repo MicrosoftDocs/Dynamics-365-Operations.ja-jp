@@ -5,7 +5,6 @@ author: josaw1
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e5ba227ff1c762cc08bd362c2b6588ecff72b233
-ms.sourcegitcommit: dcc6a5dcb6595e421eec5d6c4dbb2bad6de7de40
+ms.openlocfilehash: 4c09e0c016d14a3001e138bc9bf46e55272496d1
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5916193"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022748"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10018-may-2021"></a>Dynamics 365 Commerce 10.0.18 (2021 年 5 月) の新機能と変更された機能
 
@@ -35,16 +34,16 @@ ms.locfileid: "5916193"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 - AJAX を含むサーバー側データ アクションの呼び出し<br> - 詳細については、[AJAX を使用したサーバー側のデータ アクションの呼び出し](../e-commerce-extensibility/data-actions-with-ajax.md) を参照してください
 - トランザクションとレシートの電子メールへの QR コードまたはバー コードの追加<br> - 詳細については、[トランザクションとレシートの電子メールへの QR コードまたはバー コードの追加](../add-qr-code-barcode-email.md) を参照してください
-- [カスタム レイアウトおよびテンプレートを使用するためのレシートの電子メールのコンフィギュレーション](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)<br> - 詳細については、[カスタム レイアウトおよびテンプレートを使用するためのレシートの電子メールのコンフィギュレーション](../configure-emailed-receipt-formats.md) を参照してください
+- [カスタム レイアウトおよびテンプレートを使用するためのレシートの電子メールのコンフィギュレーション](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)<br> - 詳細については、[カスタム レイアウトおよびテンプレートを使用するためのレシートの電子メールのコンフィギュレーション](../configure-emailed-receipt-formats.md) を参照してください
 - Commerce オンライン SDK に関するよく寄せられる質問への追加<br> - 詳細については、[Dynamics 365 Commerce オンライン SDK に関するよく寄せられる質問](../e-commerce-extensibility/sdk-faq.md) を参照してください
-- [GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/simplified-commerce-sdk-update-developer-experience)<br> - 詳細については、[GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) を参照してください
-- [E コマースの在庫 API から販売の測定単位 (UoM) で数量を取得する](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhancements-e-commerce-inventory-availability-lookup-apis)<br> - 詳細については、[小売チャンネルの引当可能在庫数量の計算](../calculated-inventory-retail-channels.md) を参照してください
-- [POS 在庫検索操作に関する強化事項](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improvements-pos-inventory-lookup-operation)
-- [新しいクラウド検索インフラストラクチャを使用した、高パフォーマンスでスケーラブルな顧客検索エクスペリエンス](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/highly-performant-scalable-customer-search-experience-using-new-cloud-search-infrastructure)
+- [GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/simplified-commerce-sdk-update-developer-experience)<br> - 詳細については、[GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) を参照してください
+- [E コマースの在庫 API から販売の測定単位 (UoM) で数量を取得する](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhancements-e-commerce-inventory-availability-lookup-apis)<br> - 詳細については、[小売チャンネルの引当可能在庫数量の計算](../calculated-inventory-retail-channels.md) を参照してください
+- [POS 在庫検索操作に関する強化事項](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improvements-pos-inventory-lookup-operation)
+- [新しいクラウド検索インフラストラクチャを使用した、高パフォーマンスでスケーラブルな顧客検索エクスペリエンス](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/highly-performant-scalable-customer-search-experience-using-new-cloud-search-infrastructure)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -59,7 +58,7 @@ Dynamics 365 Commerce 10.0.18 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2021 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2021 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2021wave1/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

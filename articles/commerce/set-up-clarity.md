@@ -1,12 +1,10 @@
 ---
-title: Dynamics 365 Commerce で Microsoft Clarity をセットアップします
-description: このトピックでは、Dynamics 365 Commerce Microsoft Clarity をセットアップする方法について説明します。
+title: Dynamics 365 Commerce での Microsoft Clarity の設定
+description: このトピックでは、Dynamics 365 Commerce 環境内で Microsoft Clarity を設定する方法について説明します。
 author: BrianShook
-manager: annbe
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -17,19 +15,19 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ffaee160ade4f25255bbf0a3335d7696f58f91ec
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 942805812d1951dae04c81d0ec380b07232f3ea3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937550"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018568"
 ---
-# <a name="set-up-microsoft-clarity-in-dynamics-365-commerce"></a>Dynamics 365 Commerce で Microsoft Clarity をセットアップします
+# <a name="set-up-microsoft-clarity-in-dynamics-365-commerce"></a>Dynamics 365 Commerce での Microsoft Clarity の設定
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-このトピックでは、Dynamics 365 Commerce Microsoft Clarity をセットアップする方法について説明します。 
+このトピックでは、Dynamics 365 Commerce 環境内で Microsoft Clarity を設定する方法について説明します。 
 
 [Microsoft Clarity](https://clarity.microsoft.com/) は、サイト所有者が自分の e コマース サイトとのユーザー操作を理解するのに役立つユーザー動作分析ツールです。 Clarity の分析ツールは、セッション記録、ヒートマップ、および機械学習情報を使用して可視性を実現し、ユーザー操作を確認及び調査します。 
 

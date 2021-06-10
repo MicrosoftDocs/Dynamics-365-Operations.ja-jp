@@ -2,23 +2,22 @@
 title: Human Resources 仮想テーブルに関するよく寄せられる質問
 description: このトピックでは、Human Resources 仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: jaredha
-ms.date: 04/22/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 09b1bad6cfc24259d0be0400898e4a629d8b21fd
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 067d0c3c05e93f8696405d2e3893f78300e6722c
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935847"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103611"
 ---
 # <a name="human-resources-virtual-tables-faq"></a>Human Resources 仮想テーブルに関するよく寄せられる質問
 
@@ -85,7 +84,9 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 
 ### <a name="are-custom-fields-supported-on-virtual-tables"></a>カスタム フィールドは仮想テーブルでサポートされていますか?
 
-はい。カスタム フィールドは仮想テーブルでサポートされています。 最初に、仮想テーブルに関連付けられているデータ エンティティにカスタム フィールドを追加する必要があります。 その後、仮想テーブルを生成または更新して、カスタム フィールドをスキーマに含めます。 データ エンティティにカスタム フィールドを追加する方法の詳細については、「[データ エンティティのカスタム フィールドを公開](../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json#exposing-custom-fields-on-data-entities)」を参照してください。
+はい。カスタム フィールドは仮想テーブルでサポートされています。 最初に、仮想テーブルに関連付けられているデータ エンティティにカスタム フィールドを追加する必要があります。 [データ エンティティのカスタム フィールドの公開](../fin-ops-core/fin-ops/get-started/user-defined-fields.md#exposing-custom-fields-on-data-entities)で説明されている手順に従って、カスタム フィールドをデータ エンティティに追加できます。 データ エンティティにカスタム フィールドを追加した後、仮想テーブルを生成または更新することで、関連付けられている仮想テーブルにカスタム フィールドを追加できます。 仮想テーブルの生成および更新方法の詳細については、[仮想テーブルの生成](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables)を参照してください。
+
+仮想テーブルに対して依存関係を作成した場合は、仮想テーブルからカスタム フィールドを追加したり削除したりすることはできません。 たとえば、仮想テーブルを使用する Power App を作成した場合、依存関係がある間は仮想テーブルを削除、変更、または更新することはできません。 Dynamics 365 HR Virtual Entities マネージド ソリューションの一部である仮想テーブルを更新するには、最初に、マネージド ソリューションの一部ではない依存コンポーネントを削除する必要があります。 依存コンポーネントを確認および削除する方法の詳細については、[依存関係の削除](/power-platform/alm/removing-dependencies)を参照してください。
 
 ### <a name="what-do-i-do-if-i-get-an-error-that-the-dynamics-365-for-talent-user-wasnt-found"></a>Dynamics 365 for Talent ユーザーが見つからないというエラーが発生した場合、どうしたらよいですか?
 
@@ -93,11 +94,11 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 
 `User Dynamics365 for Talent was not found in Finance and Operations. Please ensure this user exists.`
 
-このメッセージは、仮想テーブル用に設定されたアプリに対して、Human Resources アプリケーションでアクセス許可が付与されていないことを示しています。 これを解決するには、[Human Resourcesでアプリのアクセス許可を付与する](./hr-admin-integration-common-data-service-virtual-entities.md#grant-app-permissions-in-human-resources) 手順を実行します。
+このメッセージは、仮想テーブル用に設定されたアプリに対して、Human Resources アプリケーションでアクセス許可が付与されていないことを示しています。 これを解決するには、[Human Resourcesでアプリのアクセス許可を付与する](hr-admin-integration-common-data-service-virtual-entities.md#grant-app-permissions-in-human-resources) 手順を実行します。
 
 ### <a name="what-do-i-do-if-the-finance-and-operations-virtual-data-source-configurations-option-isnt-available-in-my-microsoft-dataverse-environment"></a>Finance and Operations 仮想データ ソースの構成オプションを Microsoft Dataverse 環境で使用できない場合はどうしたらよいですか?
 
-仮想テーブルの設定時に Dynamics 365 HR 仮想テーブル アプリをインストールする必要があります。このアプリにより、**Finance and Operations 仮想データ ソースの構成** オプションが追加されます。 **Microsoft Dataverse 統合** ページでのアプリのインストールの詳細については、[Dataverse 仮想テーブルの構成](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities#install-the-dynamics-365-hr-virtual-table-app) を参照してください。
+仮想テーブルの設定時に Dynamics 365 HR 仮想テーブル アプリをインストールする必要があります。このアプリにより、**Finance and Operations 仮想データ ソースの構成** オプションが追加されます。 **Microsoft Dataverse 統合** ページでのアプリのインストールの詳細については、[Dataverse 仮想テーブルの構成](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app) を参照してください。
 
 **Microsoft Dataverse 統合** ページの **仮想テーブル アプリのインストール** アクションが正常に完了しなかった場合は、Power Platform 管理センターでアクションを実行できます。
 
@@ -117,5 +118,31 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 
 インストールには数分かかります。 完了すると **Finance and Operations 仮想データ ソースの構成** エンティティをこの環境で生成されます。
 
-![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストール](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストールします](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+
+### <a name="can-i-generate-virtual-tables-for-hr-from-my-power-apps-environment"></a>HR の仮想テーブルを自分の Power Apps 環境から生成できますか?
+
+はい。 [Dataverse 仮想テーブルのコンフィギュレーション](hr-admin-integration-common-data-service-virtual-entities.md)に示されている仮想テーブルの前提条件の設定手順を完了した後、Power Apps 環境から直接仮想テーブルを生成できます。 ドキュメントの[仮想テーブルの生成](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables)セクションで説明されている Human Resources アプリから仮想テーブルを生成するプロセスではなく、このプロセスに従うことができます。
+
+1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com)を開きます。
+
+2. **環境** の一覧で、Human Resources のインスタンスに関連付けられている Power Apps 環境を選択します。
+
+3. ページの **詳細** セクションで、**環境 URL** を選択します。
+
+4. ソリューションの正常性ハブで、ページ右上のアイコン グループにある **高度な検索** (じょうご) アイコンを選択します。
+
+5. **検索** リストで、**使用可能な HR エンティティ** を選択します。
+
+6. フィルター オプションを使用して、有効にするエンティティを検索します。
+
+7. リストからエンティティを選択します。
+
+8. エンティティ ページで、**生成済み** のプロパティを **はい** に変更します。
+
+9. エンティティ ページを保存して閉じます。
+
+> [!NOTE]  
+> **複数のレコードの変更** ページを使用すると、複数の仮想テーブルを一度に生成できます。 ページで複数のレコードを選択し、リボンで **編集** アクションを選択します。 これにより、選択したすべてのレコードについて、**生成済み** のプロパティを変更できます。
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

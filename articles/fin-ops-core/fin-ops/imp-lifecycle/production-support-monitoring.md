@@ -2,11 +2,9 @@
 title: 運用サポートと監視
 description: このトピックでは、プロジェクトのライフサイクルに関連するサポートのタイプと、環境を監視するためのベスト プラクティスについて説明します。
 author: PedroTubal
-manager: AnnBe
 ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: v-petbal
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0ab22816a01bbfe9437877d3bbfc0158952c417a
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 72b9dab03a28b73d81bd2e3999232da47d1604a8
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881894"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018894"
 ---
 # <a name="production-support-and-monitoring"></a>運用サポートと監視
 

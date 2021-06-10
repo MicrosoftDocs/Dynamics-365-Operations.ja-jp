@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1e5b1c6f20217cab156263119fde6f637a5debd2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bae117aa0292192753be10a709fb85cf44c01c2c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792979"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019975"
 ---
 # <a name="commerce-scale-unit-customer-and-consumer-apis"></a>Commerce Scale Unit の顧客およびコンシューマー API
 
@@ -46,7 +46,7 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 匿名および顧客ロールは、電子商取引 (顧客/消費者) シナリオに適用されます。 匿名ロールは、サインインしていない電子商取引顧客を表す要求に使用されます。 顧客ロールは、認証済みでサインインしている電子商取引顧客を表す要求に使用されます。 ロール フィルターは、Commerce Scale Unit で公開されているすべての API に適用されます。 eCommerce シナリオでは、関連する CommerceRole.Anonymous または CommerceRole.Customer のいずれかを持つ API のみを使用することができます。
 
 > [!NOTE]
-> 既定では、匿名アクセスは有効ではありません。 環境の匿名アクセスを有効にするには、[サポート](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)に問い合わせてください。
+> 既定では、匿名アクセスは有効ではありません。 環境の匿名アクセスを有効にするには、[サポート](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)に問い合わせてください。
 
 ## <a name="customer-controller"></a>顧客のコントロール
 

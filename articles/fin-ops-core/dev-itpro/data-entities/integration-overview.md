@@ -1,5 +1,5 @@
 ---
-title: データ統合戦略の選択
+title: Finance and Operations アプリとサード パーティ サービス間の統合
 description: このトピックは、設計者と開発者が統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。
 author: Sunil-Garg
 ms.date: 11/23/2020
@@ -12,14 +12,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8097b8d3601b182059022b22d9459d0064fd12e
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 5507485400ced669526d3a7020c8c27e8d39d827
+ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941182"
+ms.lasthandoff: 05/15/2021
+ms.locfileid: "6048830"
 ---
-# <a name="choose-a-data-integration-strategy"></a>データ統合戦略の選択
+# <a name="integration-between-finance-and-operations-apps-and-third-party-services"></a>Finance and Operations アプリとサード パーティ サービス間の統合
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,8 +37,6 @@ ms.locfileid: "5941182"
 | パターン                       | ドキュメント |
 |-------------------------------|---------------|
 | Power Platform 統合    | [Finance and Operations アプリと Microsoft Power Platform の統合](../power-platform/overview.md) |
-| 二重書き込み                    | [二重書き込みの概要](dual-write/dual-write-home-page.md) |
-| クラシック データの統合      | [クラシック データ統合の概要](data-integration-cds.md) |
 | OData                         | [データ プロトコル (OData) を開く](odata.md) |
 | バッチ データ API                | [定期統合](recurring-integrations.md)<br>[データ管理パッケージ REST API](data-management-api.md) |
 | カスタム サービス                | [カスタム サービスの開発](custom-services.md) |
@@ -47,22 +45,6 @@ ms.locfileid: "5941182"
 
 > [!NOTE]
 > オンプレミス配置の場合、唯一サポートされる API は [データ管理パッケージ REST API](data-management-api.md) です。 これは、7.2、platform update 12 ビルド 7.0.4709.41184 で現在利用可能です。
-
-## <a name="power-platform-integration"></a>Power Platform の統合
-Finance and Operations は、Dataverse の仮想データ ソースであり、Dataverse および Microsoft Power Platform からの完全な作成、読み取り、更新、削除 (CRUD) 操作を可能にし ます。 定義上、仮想エンティティのデータは、Dataverse には存在しません。 代わりに、Finance and Operations には引き続き存在します。 Dataverse から Finance and Operations エンティティに対して CRUD 操作を有効にするには 、エンティティを Dataverse の仮想エンティティとして使用できるようにする必要があります。 これにより、Finance and Operations アプリに存在するデータに対して、Dataverse と Microsoft Power Platform から CRUD 処理を実行できるようになります。 詳細については、[Microsoft Power Platform 統合](../power-platform/overview.md)を参照してください。
-
-## <a name="dual-write-vs-classic-data-integration-patterns-vs-virtual-entities"></a>二重書き込み対クラシック データ統合のパターン対仮想エンティティ
-
-二重書き込みにより、Dynamics 365 と Finance and Operations アプリケーションのモデル駆動型アプリケーション間で、同期、双方向、ほぼリアルタイムのエクスペリエンスが可能です。 データ同期は、ほとんどまたはまったく介入を伴うことなく行われ、エンティティに対する作成、更新、および削除アクションによってトリガーされます。 二重書き込みは、Dynamics 365 アプリケーションにまたがる対話型業務シナリオに適しています。
-
-クラシック データ統合により、Customer Engagement アプリと Finance and Operations アプリの間で非同期および単一方向のデータ同期エクスペリエンスが可能です。 IT管理者主導のエクスペリエンスであり、データ同期ジョブを特定の頻度で実行するようにスケジュールする必要があります。 クラシック データの統合は、Dynamics 365アプリケーション間で大量のデータの入出力を伴う業務シナリオに適しています。
-
-| パターン                       | タイミング                        | バッチ | テクノロジ | Finance and Operations アプリ | Dynamics 365 モデル駆動型アプリ |
-|-------------------------------|-------------------------------|-------|---|------|------------|
-| 二重書き込み             | 同期<br>双方向   | 無    | OData | Finance<br>サプライ チェーン<br>Commerce<br>サービス業<br>CoreHR | Sales<br>マーケティング<br>顧客サービス<br>Field Service<br>Project Service Automation<br>人材 | 
-| クラシック データの統合 | 非同期、単一方向 | 有   | DIXF | Finance<br>サプライ チェーン<br>Commerce<br>サービス業<br>CoreHR | Sales<br>マーケティング<br>顧客サービス<br>Field Service<br>Project Service Automation<br>人材 |
-
-仮想エンティティは、データを Dataverse に物理的にコピーすることなく、Finance and Operations で Microsoft Power Platform を使用するメカニズムを提供します。 このガイダンスは、要件に二重書き込みまたはデータ統合、または仮想エンティティが必要かどうかを判断するために使用する必要があります。 仮想エンティティと二重書き込み/データ統合は、必要に応じて併用できる補完的なテクノロジです。
 
 ## <a name="synchronous-vs-asynchronous-integration-patterns"></a>同期および非同期の統合パターン
 
@@ -109,52 +91,6 @@ Finance and Operations は、Dataverse の仮想データ ソースであり、D
 
 非同期パターンを使用するときは、呼び出し元には、スケジューリング呼び出しが成功したかどうかを示す応答がすぐ表示されます。 呼び出し元は、応答内のエラーを処理します。 スケジューリングが完了したら、データのインポートまたはエクスポートのステータスは、呼び出し元にプッシュされません。 呼び出し元は、対応するインポートまたはエクスポート処理の結果をポーリングし、それに応じてエラーを処理する必要があります。
 
-## <a name="typical-scenarios-and-patterns-that-use-dual-write"></a>二重書き込みを使用する一般的なシナリオとパターン 
-
-二重書き込みを使用する一般的なシナリオを次に示します。
-
-### <a name="enable-customer-service-representative-to-facilitate-change-of-address-for-finance-and-operations-customers"></a>顧客サービス担当者が Finance and Operations の顧客の住所変更を容易にできるようにする
-
-顧客が移転し、請求先住所と送付先住所の情報を変更したいとします。 この顧客は、顧客サポート担当者に連絡して、住所の変更を依頼します。 顧客サポート担当者が電話を受け、顧客の請求先住所と送付先住所を変更します。
-
-| 意思決定                    | 情報              |
-|-----------------------------|--------------------------|
-| リアルタイムな日付が必要ですか。 | 有                      |
-| ピーク データ量            |                          |
-| 頻度                   | アドホック                   |
-
-#### <a name="recommended-solution"></a>推奨される解決策
-このほぼリアルタイムのデータ同期のシナリオでは、二重書き込みで実装するのが最適です。
-
-- 顧客情報は、Finance and Operations アプリから取得されます。
-- 顧客が顧客サポートに電話し、請求先住所と送付先住所の情報を変更するよう依頼します。
-- 顧客サポート担当者は、Dynamics 365 Customer Service の顧客レコードを取得します。
-- 顧客サポート担当者は、請求先住所と送付先住所を更新してデータを保存します。
-- 新しい請求先住所と送付先住所は、リアルタイムで Finance and Operations アプリに同期されます。
-
-### <a name="sales-representatives-can-change-customer-credit-limits-without-logging-into-a-finance-and-operations-app"></a>販売担当者は、Finance and Operations アプリにログインすることなく、顧客の与信限度額を変更できます
-
-顧客には $2,000 の与信限度額があり、$5,000 に引き上げたいと考えています。 この顧客は、顧客サポートに電話し、増加を依頼します。 チケットが、販売部門に割り当てられます。 販売責任者は、依頼を検討し、顧客の支払履歴を確認し、顧客が与信限度額の増加の資格があると判断します。 販売責任者は依頼を承認し、チケットに応答します。 顧客は与信限度額 $5,000 の承認を通知する電子メールを受け取ります。
-
-| 意思決定                    | 情報              |
-|-----------------------------|--------------------------|
-| リアルタイムな日付が必要ですか。 | 有                      |
-| ピーク データ量            |                          |
-| 頻度                   | アドホック                   |
-
-
-#### <a name="recommended-solution"></a>推奨される解決策
-
-このシナリオでは、二重書き込みで実装するのが最適です。
-
-- 顧客は顧客サポートに電話し、与信限度額を $2,000 から $5,000 に引き上げたいと考えています。
-- 顧客サポート担当者が Dynamics 365 Customer Service でチケットを作成します。
-- このチケットが、販売部門に割り当てられます。
-- 販売部門の販売担当者が依頼を確認して、承認します。
-- この結果、Dynamics 365 Sales で顧客の与信限度額が $5,000 に引き上げられました。 
-- Finance and Operations アプリの与信限度額が $5,000 に更新されます。
-- 販売担当者は、チケットに応答して解決します。 
-- 顧客は、与信限度額の引き上げに関する電子メールを受け取ります。
 
 ## <a name="typical-scenarios-and-patterns-that-use-odata-integrations"></a>OData 統合を使用する一般的なシナリオとパターン
 
@@ -173,7 +109,7 @@ OData 統合を使用する典型的なシナリオを次に示します。
 | ピーク データ量            | 時間当たり 1,000 レコード\* |
 | 頻度                   | アドホック                   |
 
-\* 場合によっては、新しいまたは変更された生産コンフィギュレーションが短時間に多く発生します。
+ 場合によっては、新しいまたは変更された生産コンフィギュレーションが短時間に多く発生します。
 
 #### <a name="recommended-solution"></a>推奨される解決策
 

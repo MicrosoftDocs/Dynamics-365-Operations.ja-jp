@@ -1,11 +1,10 @@
 ---
-title: Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 7 月)
+title: Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,14 +14,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e18224fcc90efbffebaf386b7fd9be3a44420096
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: aa7af067a2c8ec6840d5af69d65dc5ac39fbe55d
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936043"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112635"
 ---
-# <a name="platform-updates-for-version-10019-of-finance-and-operations-apps-july-2021"></a>Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 7 月)
+# <a name="platform-updates-for-version-10019-of-finance-and-operations-apps-june-2021"></a>Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -31,7 +30,7 @@ ms.locfileid: "5936043"
 
 - **リリースのプレビュー:** 2021 年 4 月
 - **リリースの一般提供 (手動更新):** 2021 年 6 月
-- **リリースの一般提供 (自動更新):** 2021 年 7 月
+- **リリースの一般提供 (自動更新):** 2021 年 6 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 

@@ -1,7 +1,7 @@
 ---
 title: Excel テンプレートに財務分析コードの値の検索を追加
 description: このトピックでは、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
-author: aprilolson
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 261064
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
 ms.search.region: Global
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 57b1a85aa9f9fcb6bdd47a874a82129b4b44ad2d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bf04b4a98cfbee5527dcc7fcc0b569943847c180
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753924"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111742"
 ---
 # <a name="add-lookup-values-for-financial-dimensions-to-excel-templates"></a>Excel テンプレートに財務分析コードの値の検索を追加
 

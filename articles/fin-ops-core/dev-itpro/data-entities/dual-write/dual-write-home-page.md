@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0873ad4f98eeec7e335c2a8215d6c22bed689296
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: b241353f6230db2b50cbae4ba4070e8761521bf8
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857287"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088453"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -61,6 +61,8 @@ ms.locfileid: "5857287"
 + [二重書き込み設定後にリーガル テーブルの編集](edit-legal-entity.md)
 + [エラー管理と警告通知](errors-and-alerts.md)
 + [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
++ [ユーザー指定のチームの所有者](user-specified-team-owner.md)
++ [二重書き込み環境のリンク解除および再リンク](relink-environments.md)
 
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング
 

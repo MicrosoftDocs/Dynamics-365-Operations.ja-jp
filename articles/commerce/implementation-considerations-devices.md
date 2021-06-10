@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: d393d8ad76df198600cbbe6c6c3ddd491e831c5b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c2b4a8dd24d8af97a944901b2287e998dd1d50cf
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797058"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019116"
 ---
 # <a name="device-management-implementation-guidance"></a>デバイス管理実装ガイダンス
 
@@ -79,7 +79,7 @@ ms.locfileid: "5797058"
 - **チャンネル配置ワークスペース** - このワークスペースを使用すると、大規模でフィルター設定可能な一連の店舗、レジスター、デバイスなどをすばやく表示できます。 このワークスペースには、大規模な展開のオプションも用意されています。 (詳細については、[Modern POS (MPOS) での顧客注文](dev-itpro/retail-mass-deployment.md) を参照してください)。 このワークスペースを使用すると、重要なページにすばやくアクセスしたり、展開時のステータス チェックを減らしたり、デバイス状態を効率的に管理したりするのに役立ちます。
 - **一括配置** – MPOS およびその他のクライアント側コンポーネントを使用する Dynamics 365 の顧客は、インストール、コンフィギュレーション、およびサービスを支援するさまざまなアクションをサイレントで実行できます。 コマンド プロンプトで基本的なコマンドを実行すると、コマース コンポーネントを配置してサービスする (つまり、更新する) ことができます。 インストーラーの手動ユーザー インターフェイスをスキップするこの基本的な方法は、インストールおよびサービスに必要な時間を短縮できます。 ログ ファイルは同じままであり、インストールの詳細を表示することができます。
 - **スクリプティング** – 一括配置に基づいて、スクリプトが生成され、MPOS などのコマース コンポーネントのインストールまたは更新を自動的に実行するよう設定されます。 これらの基本スクリプトは、デバイス上でスケジュールされたタスクとして入力できます。 次に、タスクは所定の時間に実行され、ログおよび結果を所定の場所に返します。ここでは、時間が許す限り閲覧することができます。
-- **システム管理ソリューション** – システム管理ソリューションは、使用されているデバイスに関する既知のデータ量を増やすのに役立ちます。 また、そのデータを取得するために必要な時間を減少させることもできます。 システム管理ソリューションの例には、Microsoft System Center および Microsoft InTune が含まれます。 一括配置とスクリプトと共にシステム管理ソリューションを使用することで、コンポーネントをより迅速に設定およびインストールすることができます。 さらに、配置または処理後のステータスをより効率的に検証できます。 Microsoft は、System Center Configuration Manager 経由でのデバイス管理に関する具体的なドキュメントである [System Center Configuration Manager のデバイス管理ソリューションの選択](https://docs.microsoft.com/sccm/core/plan-design/choose-a-device-management-solution)を発行しました。
+- **システム管理ソリューション** – システム管理ソリューションは、使用されているデバイスに関する既知のデータ量を増やすのに役立ちます。 また、そのデータを取得するために必要な時間を減少させることもできます。 システム管理ソリューションの例には、Microsoft System Center および Microsoft InTune が含まれます。 一括配置とスクリプトと共にシステム管理ソリューションを使用することで、コンポーネントをより迅速に設定およびインストールすることができます。 さらに、配置または処理後のステータスをより効率的に検証できます。 Microsoft は、System Center Configuration Manager 経由でのデバイス管理に関する具体的なドキュメントである [System Center Configuration Manager のデバイス管理ソリューションの選択](/sccm/core/plan-design/choose-a-device-management-solution)を発行しました。
 
 配分配置をより理解するのに役立つ情報の詳細については、[Modern POS (MPOS) のコンフィギュレーション、インストール、有効化](retail-modern-pos-device-activation.md) と [Modern POS (MPOS) の顧客注文](dev-itpro/retail-mass-deployment.md) を参照してください。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422debcb82fb52e2ed1ceed4a40024b964dfa525
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 08fbeff94462a7f72c0a930c68b934382e0b6f9e
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866134"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015815"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 
@@ -142,7 +142,7 @@ ms.locfileid: "5866134"
 ## <a name="test-module-creation-to-manage-test-code-and-formadaptors"></a>テスト コードと FormAdaptors を管理するテスト モジュールの作成
 テスト コードをまとめて管理しやすくするためにテスト固有のモジュールを作成しています。
 
-1. **Visual Studio** を開き、**Finance and Operations** > **モデル管理** > **モデルの作成** に移動します。
+1. **Visual Studio** を開き、**Dynamics 365** > **モデル管理** > **モデルの作成** に移動します。
 
 2. モデル名を入力し、レイヤーを選択し、次に追加詳細を入力します。 テスト モジュールの名前に **テスト** という語を含めることをお勧めします。 既定のビルド定義は、**テスト** という単語を含むすべてのテスト モジュールを検出するように設定されています。 
    
@@ -157,7 +157,7 @@ ms.locfileid: "5866134"
 
 1. タスク レコーダーを使用してシナリオを記録します。
 
-2. Visual Studio にタスク記録をインポートするには、**Finance and Operations** > **アドイン** > **タスク記録をインポート** をクリックします。 
+2.  Visual Studio にタスク記録をインポートするには、**Dynamics 365** > **アドイン** > **タスク記録のインポート** をクリックします。 
 
 3. **タスクの記録をインポート** ダイアログで、タスクの記録をインポートするテスト モジュール (ISVTestModule) を選択し、記録している xml ファイルを参照します。 
 

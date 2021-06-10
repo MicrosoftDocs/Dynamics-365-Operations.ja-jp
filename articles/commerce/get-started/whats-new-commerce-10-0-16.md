@@ -12,14 +12,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
-ms.search.validFrom: 2020-11-31
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: bd5a908f4450ca8a2cea8933841e0f3ca6544889
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 07c9737a6e5a60727776b30fd3cdc6b1dde10b7c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797138"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022853"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10016-february-2021"></a>Dynamics 365 Commerce 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 
@@ -34,16 +34,16 @@ ms.locfileid: "5797138"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-- [Dynamics 365 Sales で Dynamics 365 Commerce 価格決定エンジンを活用して営業見積もりを作成する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/leverage-dynamics-365-commerce-pricing-engine-create-sales-quote-dynamics-365-sales)<br> - 詳細については [Dynamics 365 Sales で Dynamics 365 Commerce 価格決定エンジンを使用する](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/commerce-pricing) を参照してください
+- [Dynamics 365 Sales で Dynamics 365 Commerce 価格決定エンジンを活用して営業見積もりを作成する](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/leverage-dynamics-365-commerce-pricing-engine-create-sales-quote-dynamics-365-sales)<br> - 詳細については [Dynamics 365 Sales で Dynamics 365 Commerce 価格決定エンジンを使用する](../../fin-ops-core/dev-itpro/data-entities/dual-write/commerce-pricing.md) を参照してください
 - 荷渡方法別にトランザクション電子メールをカスタマイズする<br> - 詳細については、[荷渡方法別にトランザクション電子メールをカスタマイズする](../customize-email-delivery-mode.md) を参照してください
 - 静的ファイルのアップロードと配信<br> - 詳細については、[静的ファイルのアップロードと配信](../upload-serve-static-files.md) を参照してください
-- [営業明細行または営業トランザクションからシステム割引をクリアする](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/clear-system-discounts-sales-line-or-sales-transaction)<br> - 詳細については、[オンラインおよびオフラインでの販売時点管理 (POS) の操作](../pos-operations.md) を参照してください
+- [営業明細行または営業トランザクションからシステム割引をクリアする](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/clear-system-discounts-sales-line-or-sales-transaction)<br> - 詳細については、[オンラインおよびオフラインでの販売時点管理 (POS) の操作](../pos-operations.md) を参照してください
 - 顧客注文に対して複数の受け取り配送モードを有効にする<br> - 詳細については、[顧客注文に対して複数の受け取り配送モードを有効にする](../multiple-pickup-modes.md) を参照してください
-- [店舗の提携とロイヤルティの割引を制限する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/planned-features)
-- [E コマースでのギフトカードの購入](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)
-- [シリアル化された品目の販売時点管理注文とフルフィルメント エクスペリエンスの改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/improved-point-sale-ordering-fulfillment-experiences-serialized-items)<br>  - 詳細については、[POS でシリアル化された品目を使って作業する](../pos-serialized-items.md) を参照してください
+- [店舗の提携とロイヤルティの割引を制限する](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/planned-features)
+- [E コマースでのギフトカードの購入](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)
+- [シリアル化された品目の販売時点管理注文とフルフィルメント エクスペリエンスの改善](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/improved-point-sale-ordering-fulfillment-experiences-serialized-items)<br>  - 詳細については、[POS でシリアル化された品目を使って作業する](../pos-serialized-items.md) を参照してください
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -58,7 +58,7 @@ Dynamics 365 Commerce 10.0.16 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

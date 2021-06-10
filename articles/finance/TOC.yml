@@ -72,6 +72,8 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.20 (2021 年 7 月)
+                      href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (2021 年 7 月)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (2021 年 5 月)
@@ -1160,6 +1162,8 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: 年度末決算に期首残高が表示されない
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Office で財務仕訳帳テンプレートを開く
+                  href: general-ledger/open-fincl-jrnls-in-office.md
         - name: 財務諸表
           items:
             - name: 財務諸表の使用を開始する
@@ -1502,10 +1506,20 @@
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: 拡張機能を使用した税統合へのデータ フィールドの追加
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: 複数の VAT 登録番号
-                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: マスター データ検索用の環境の設定
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: 複数の VAT 登録番号
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: 複数の VAT 登録に関するレポート
+                      items:
+                        - name: 複数の VAT 登録に関するレポート
+                          href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: オランダのレポート
+                          items:
+                            - name: VAT 申告
+                              href: localizations/emea-nl-vat-declaration-netherlands.md
+                            - name: EU 販売リスト
+                              href: localizations/emea-nl-eu-sales-list.md
             - name: 規制の更新
               href: localizations/regulatory-updates.md
             - name: オーストラリア
@@ -2388,6 +2402,20 @@
                               href: localizations/apac-ind-GST-tax-returns.md
                             - name: GSTR レポートに対してマルチ バッチ処理を有効化する
                               href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                        - name: 商品及びサービス税のトラブルシューティング
+                          items:
+                            - name: 計算後の税額が正しくない
+                              href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+                            - name: 税コンフィギュレーション エラー
+                              href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+                            - name: 税金が計算されない
+                              href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+                            - name: 税相殺ルールを有効化すると予想以上に時間がかかる
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+                            - name: TaxTrans または伝票が生成されない
+                              href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+                            - name: 税トランザクション ID が正しくない
+                              href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
                 - name: 直接税
                   items:
                     - name: インドの源泉徴収税
@@ -2844,6 +2872,10 @@
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: 監査ファイル (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
+                - name: VAT 申告 (オランダ)
+                  href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: EU 販売リスト
+                  href: localizations/emea-nl-EU-sales-list.md
             - name: ノルウェー
               items:
                 - name: ノルウェーの概要
@@ -4123,7 +4155,7 @@
                   items:
                     - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                    - name: 生成された ER レポートの追跡結果およびベースライン値との比較における改善
+                    - name: 生成された ER レポートの結果を追跡し、ベースライン値と比較するための改善
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: ER によるテストの自動化
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json

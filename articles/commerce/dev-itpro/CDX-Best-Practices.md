@@ -2,7 +2,7 @@
 title: Commerce Data Exchange のベスト プラクティス
 description: このトピックでは、Microsoft Dynamics 365 Commerce 環境の Commerce Data Exchange (CDX) によるデータ同期について説明します。
 author: jashanno
-ms.date: 03/10/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 6be7947a38ee88f3c37f84ecded6e4ba132c2c76
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 45f4eb49382b958e2c7cc5aead655410c80882e2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801937"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020667"
 ---
 # <a name="commerce-data-exchange-best-practices"></a>Commerce Data Exchange のベスト プラクティス
 
@@ -64,6 +64,37 @@ ms.locfileid: "5801937"
 | <ul><li>パラメーター</li><li>コマース スケジューラ</li><li>再試行</li></ul> | **小売とコマース \> バックオフィスの設定 \> パラメーター \> コマース スケジューラー パラメーター** に移動し、**試行回数** を **3** に設定します。 このフィールドの値が大きすぎる場合は、利用率の高い時間帯にダウンロード セッションが失敗する可能性があります。  また、**完全なデータセットの生成サイクル間隔の日単位** を **0** に確認 (または設定) します。 これは、完全なデータセットの生成は、時間以外に必要とされない限り発生しないことを意味します。 これらの値を設定することにより、CDX を予定した方法で機能させることができ、エラーの発生またはパフォーマンスの問題を減らすことができます。 |
 | <ul><li>機能プロファイル</li><li>データのリテンション期間</li><li>返品ポリシー</li> | **小売とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> 機能プロファイル** に移動し、続いて **機能** セクションで、**トランザクションの存在日数** を返品ポリシーに対して定義されている値と同じか、またはそれに近い値に設定します。 たとえば、返品ポリシーに 30 日以内の返品可能と記載されている場合は、このフィールドを **30**、**31** に設定したり、または、通常のポリシーを超える特別な例外が可能な場合は **60** に設定します (この場合は通常の返品ポリシー期間の倍になるため、通常のポリシーの制限を超えてもより迅速な返品が可能となります)。 |
 | <ul><li>チャネル データベース グループ</li><li>配送スケジュール</li><li>オフライン プロファイル</li><li>一時停止</li><li>データ</li><li>ダウンロード</li></ul> | 新たに生成された端末に割り当てる "ダミー" のデータベース グループ (どの配布スケジュール ジョブにも関連付けられていないグループ)、または **オフライン同期の一時停止** オプションが **はい** に設定されている特別なオフライン プロファイルのいずれかを持つことを強くお勧めします。 このようにして、データ生成は、必要なときにシステムが最も可用性が高い時に行うことができます。 (ただし、システムによっては必要に応じて何度か一時停止する場合があります。) |
+  
+### <a name="enable-table-and-index-compression"></a>テーブルとインデックスの圧縮の有効化
+このトピックを読む前に、[Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md#implementation-considerations) のオンプレミス データベース コンポーネント (CSU の一部としてオフライン データベースおよびチャンネル データベース) で使用される SQL Server の各種の推奨バージョンについて読み取る方をお勧めします。 Modern POS のオフライン データベースおよび CSU のチャンネル データベース (セルフホスト型) など、テーブル/インデックスの圧縮を、その上の施設のデータベースで有効にすることが重要です。 この機能は、SQL Server 2016 SP1 Express、SQL Server 2017 Express、SQL Server 2019 Express および以降でのみサポートされます。 まだ SQL Server Express 2014 を実行している場合は、新しいバージョンにアップグレードする必要があります。 ディスク領域を使用して、トップ テーブルのレポートを作成します (**SQL Server Management Studio > レポート > スタンダード レポート > トップ テーブルによるディスク用途**)。 その後、レポートの上部にある各テーブルおよびインデックスの圧縮を有効にできます。 基本コマンドを次に示します。
+
+```Console
+ALTER TABLE [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX <index1_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX <index2_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+```
+
+圧縮からメリットを頻繁に受けるテーブルの例として、この例では ax.INVENTDIM を使用します。
+
+```Console
+sp_helpindex 'ax.INVENTDIM'
+```
+
+上記のクエリには、選択したテーブルのすべてのインデックスが表示されます (そのリストはコマンドの次のセットで以下に示します)。 そのクエリに基づいて、最初にこのトピックで示した基本的なコマンドを使用して、テーブルと関連のすべてのコマンドを圧縮できます。
+
+```Console
+ALTER TABLE [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [I_-65082180_-588450352] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [I_-65082180_-997209838] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_CONFIGID_INVENTSIZEID_INVENTCOLORID_INVENTSTYLEID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_INVENTLOCATIONID_INVENTSITEID_LICENSEPLATEID_WMSLOCATIONID_WMSPALLETID_CONFIGID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+```
+
+適切なデータベース サイズに到達するまで、レポートのトップ テーブルに対して、このセクションを繰り返すことをお勧めします。
+
 
 ## <a name="practices-that-affect-performance"></a>パフォーマンスに影響を与えるプラクティス
 

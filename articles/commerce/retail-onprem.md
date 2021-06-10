@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: 2129946db7d2f151246a96acf12bc004bb26c232
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8e8e720f752e9086a36e8014a4542f8e30a0ce21
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791935"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022637"
 ---
 # <a name="commerce-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できるコマースの機能
 
@@ -25,7 +25,7 @@ ms.locfileid: "5791935"
 
 このトピックでは、オンプレミス配置で使用できるコマースの機能を一覧表示します。
 
-オンプレミス配置の詳細については、[オンプレミス配置のホーム ページ](../dev-itpro/deployment/on-premises-deployment-landing-page.md) を参照してください。
+オンプレミス配置の詳細については、[オンプレミス配置のホーム ページ](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) を参照してください。
 
 | コンポーネント            | On-premises ステータス |
 |----------------------|--------------------|

@@ -1,7 +1,7 @@
 ---
 title: 既定の財務分析コード
 description: このトピックでは、財務分析コードがどのように生成されるか、その結合に使用される API、および元帳分析コードの作成に使用する方法について説明します。
-author: jasonsto
+author: RyanCCarlson2
 ms.date: 01/09/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: rbrow
+ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 971a6cd776d52789894cdf01e17050fb808cb23e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d85d9bb3729a1d92e5c355099bdc06d46827dbaf
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753918"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111682"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]

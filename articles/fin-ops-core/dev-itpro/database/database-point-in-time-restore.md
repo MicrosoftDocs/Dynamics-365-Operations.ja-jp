@@ -2,7 +2,7 @@
 title: データベース ポイントインタイム復元 (PITR)
 description: このトピックでは、Finance and Operations のデータベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 09/22/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4b76c1d6664b1809e7af85dc0dbbb0e0a490a37
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 0f39905baad57a096f6b78aedc3c7ae3c2825056
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941013"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092362"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 
@@ -35,6 +35,9 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス
 
 ### <a name="data-elements-that-need-attention-after-restore"></a>復元後に注意が必要なデータの要素
 以前の時点からデータベースを復元する場合、データベースは "現状のまま" 提供されることに注意してください。 例えば、システム内のバッチ ジョブやその他のデータ要素が進行中の状態になる可能性があります。 これらの要素は、手動で確認が必要となります。
+
+> [!NOTE]
+> 復元は、Azure Blob Storage に保存されているファイルへの参照を保存するテーブルに影響を与えます (ドキュメントの添付ファイルやカスタム Microsoft Office テンプレートなど)。 ただし、Azure Blob Storage 自体は、このプロセスの影響を受けません。復元時点の後に追加されたファイルは引き続き Azure Blob Storage に存在しますが、データベースには反映されません。 
 
 ### <a name="environment-administrator"></a>環境管理者
 対象の環境のシステム管理者アカウント (**Admin** の **UserId** 値を持つアカウント) が、対象の環境に存在する web.config ファイルで検出された値にリセットされます。 この値は、LCS の管理者アカウントの値と一致している必要があります。 使用するアカウントをプレビューするには、LCS でターゲット サンドボックス環境の **環境詳細** ページに移動します。 環境が最初に展開されたときに **環境管理者** フィールドで選択された値は、トランザクション データベースのシステム管理者に更新されます。 環境のテナントが環境管理者のテナントになります。

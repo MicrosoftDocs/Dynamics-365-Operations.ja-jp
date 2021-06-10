@@ -1,7 +1,7 @@
 ---
 title: セグメント化されたエントリ コントロールの移行
 description: このトピックでは、セグメント化されたエントリ コントロールの移行シナリオについて説明します。
-author: robinarh
+author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
 ms.search.region: Global
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eae0a64d736dc1333d2ba25f6adcd7ccc25e4f43
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 93dabe8bf6736dbf16e6a92344897b7ba335d078
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750962"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111588"
 ---
 # <a name="migrate-segmented-entry-controls"></a>セグメント化されたエントリ コントロールの移行
 
@@ -27,8 +27,7 @@ ms.locfileid: "5750962"
 
 このチュートリアルでは、簡単なシナリオ (SMAServiceOrderTable フォームの場合) と複雑なシナリオ (LedgerJournalTransDaily フォームの場合) の 2 つのセグメント化エントリ管理の移行シナリオについて説明します。
 
-<a name="simple-migration-scenario--smaserviceordertable-form"></a>簡易移行シナリオ - SMAServiceOrderTable フォーム
------------------------------------------------------
+## <a name="simple-migration-scenario--smaserviceordertable-form"></a>簡易移行シナリオ - SMAServiceOrderTable フォーム
 
 1.  アプリケーション エクスプローラーで **SMAServiceOrderTable** フォームを検索します。
 2.  現在のプロジェクトにフォームを追加します。
@@ -1723,8 +1722,7 @@ public boolean validate()
 
 このメソッドはコントロールの **validate()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [ダイアログのセグメント化されたエントリ コントロールのサポート](segmented-entry-control-dialog-support.md)
 

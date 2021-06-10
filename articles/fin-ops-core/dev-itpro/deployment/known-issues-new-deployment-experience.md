@@ -2,7 +2,6 @@
 title: セルフサービス配置に関する既知の問題
 description: このトピックでは、セルフ サービス配置を使用する場合に発生する可能性がある既知の問題を一覧表示します。
 author: rashmansur
-manager: AnnBe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 31cafee93d8fdaf9112d7d31201dc856bbaf7284
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 513a0d4d33abf45bbb4a74e6928301acf4bdf0c4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941240"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022051"
 ---
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 

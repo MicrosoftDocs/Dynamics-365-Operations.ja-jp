@@ -5,7 +5,6 @@ author: RyanCCarlson2
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataMaintenance
 audience: IT Pro
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 9e4b75f260376ad9801ec8ec03f98e7187fed3ad
-ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
+ms.openlocfilehash: adac907b7ecc2523c4f9642b9676b4f975365704
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906635"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022362"
 ---
 # <a name="data-maintenance"></a>データ管理
 

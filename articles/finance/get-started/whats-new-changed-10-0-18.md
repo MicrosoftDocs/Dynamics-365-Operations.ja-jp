@@ -5,7 +5,6 @@ author: roschlom
 ms.date: 03/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9ab287972c9578a8c67f46a6a1de9354b29231c1
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 900a677071e29fa3e7c2a2213bbe90f9e3772722
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941127"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022563"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10018-may-2021"></a>Dynamics 365 Finance 10.0.18 の機能のプレビュー (2021 年 5 月)
 

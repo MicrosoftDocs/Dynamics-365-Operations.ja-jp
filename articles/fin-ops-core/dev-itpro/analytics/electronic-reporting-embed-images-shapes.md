@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c2bd32bc475dc42be35532d9ec40a1fa0bc7ca23
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d7797a5e3956ccd6778a30112624d154dd314077
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944815"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103672"
 ---
 # <a name="embed-images-and-shapes-in-documents-that-you-generate-by-using-er"></a>ER を使用して生成されるドキュメントへの画像や図形の埋め込み
 
@@ -84,7 +84,7 @@ ms.locfileid: "5944815"
 | 署名の画像                                      | [Signature image.png](https://download.microsoft.com/download/5/0/9/509151b3-06fc-4870-9408-7c9a43b72771/Signatureimage.png)         |
 | 代替署名画像                          | [Signature image 2.png](https://download.microsoft.com/download/3/0/0/30045bf1-0ff6-4215-9162-b77c2f5dcc7c/Signatureimage2.png)       |
 | 小切手印刷用の Microsoft Word テンプレート  | [小切手テンプレート Word.docx](https://download.microsoft.com/download/4/4/d/44d9d255-9ad1-42fe-87db-23f319fd8e89/ChequetemplateWord.docx)   |
-| 小切手印刷用の Microsoft Excel テンプレート | [小切手 template.xlsx](https://download.microsoft.com/download/1/f/6/1f671963-73aa-48d5-ae69-45f21fe7dfb4/Cheque template.xlsx)        |
+| 小切手印刷用の Microsoft Excel テンプレート | [小切手 template.xlsx](https://download.microsoft.com/download/1/f/6/1f671963-73aa-48d5-ae69-45f21fe7dfb4/Cheque%20template.xlsx)        |
 
 次の図は、Excel テンプレートから生成された支払い小切手のテスト印刷の例です。
 

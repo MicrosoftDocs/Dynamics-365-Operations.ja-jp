@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ff39ebbf94bf81a8cab7774ab76608a537c9aa5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ef9afa7ecb3e1228fd0db27ee45283e37accb6c3
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748505"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103614"
 ---
 # <a name="use-the-dual-write-wizard-to-link-your-environments"></a>二重書き込みウィザードを使用して環境をリンクする
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 1. Dataverse 環境にリンクする Finance and Operations アプリ環境にサインインします。
 2. **ワークスペース \> データ管理** に移動して、**デュアル書き込み** のタイルを選択します。

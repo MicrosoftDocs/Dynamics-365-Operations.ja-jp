@@ -72,7 +72,9 @@
                   items:
                     - name: Supply Chain Management ホーム ページの新機能または変更された機能
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.19 (2021 年 7 月)
+                    - name: Supply Chain Management 10.0.20 (2021 年 7 月)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Supply Chain Management 10.0.19 (2021 年 6 月)
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (2021 年 5 月)
                       href: get-started/whats-new-scm-10-0-18.md
@@ -387,7 +389,7 @@
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
             - name: 作業指示書の設定
               items:
-                - name: メンテナンス作業タイプのカテゴリとメンテナンス作業タイプ、メンテナンス作業タイプのバリアント、メンテナンス作業の取引、およびメンテナンス チェックリスト
+                - name: メンテナンス作業タイプ、カテゴリ、バリアント、取引、およびチェックリスト
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: 作業指示書ライフサイクルの状態
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1373,7 @@
                   items:
                     - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 生成された ER レポートの追跡結果およびベースライン値との比較における改善
+                    - name: 生成された ER レポートの結果を追跡し、ベースライン値と比較するための改善
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
                     - name: ER によるテストの自動化
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,6 +2227,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: エンジニアリング バージョンとエンジニアリング製品カテゴリ
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: フォーミュラとその材料の変更の管理
+              href: engineering-change-management/manage-formula-changes.md
             - name: 既存の製品の変更管理の有効化
               href: engineering-change-management/change-management-existing-products.md
             - name: 製品ライフサイクルの状態とトランザクション
@@ -2247,6 +2251,8 @@
               href: production-control/manage-subcontract-work-production.md
             - name: ジョブ ID の統合番号順序
               href: production-control/unified-job-ids.md
+            - name: プロセス自動化フローを呼び出して品質指示を作成する
+              href: production-control/process-automation-quality-orders.md
             - name: 個別製造
               items:
                 - name: 生産マスター データの管理
@@ -2337,7 +2343,7 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: 生産現場の実行インターフェイスを作業者が使用する方法
                           href: production-control/production-floor-execution-use.md
-                        - name: 生産現場の実行ユーザー インターフェイス コントロールのスタイル
+                        - name: 生産現場の実行インターフェースのスタイルを作成する
                           href: production-control/production-floor-execution-styles.md
                     - name: デバイスのジョブ カードのコンフィギュレーション
                       href: production-control/config-job-card-device.md
@@ -3137,13 +3143,13 @@
                   items:
                     - name: 出荷連結ポリシー
                       href: warehousing/about-shipment-consolidation-policies.md
-                    - name: コンフィギュレーション出荷連結ポリシー
+                    - name: 出荷連結ポリシーのコンフィギュレーション
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: シナリオ 1 - 販売注文の自動リリースを使用して、出荷が倉庫にリリースされた場合に出荷を連結する
+                    - name: シナリオ 1 - 販売注文の自動リリースを使用して、倉庫にリリースされる出荷を連結する
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: シナリオ 2 - 出荷連結ポリシーが、倉庫からリリース ページで上書きされている場合の出荷を連結する
+                    - name: シナリオ 2 - 出荷連結ポリシーが上書きされるときに出荷を連結する
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                    - name: シナリオ 3 - 積荷計画ワークベンチから倉庫へのリリースを使用して出荷を連結する
+                    - name: シナリオ 3 - 積荷計画ワークベンチから倉庫にリリースして出荷を連結する
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: シナリオ 4 - 出荷連結ワークベンチを使用して出荷を連結する
                       href: warehousing/consolidate-shipments-manual-workbench.md
@@ -3287,23 +3293,25 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: 倉庫コンフィギュレーションのトラブルシューティング
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: 倉庫管理モバイル アプリのインストールとコンフィギュレーション
+                - name: Warehouse Management モバイル アプリのインストールとコンフィギュレーション
                   items:
-                    - name: 倉庫管理モバイル アプリのインストールと接続
+                    - name: Warehouse Management モバイル アプリのインストールと接続
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: モバイル デバイスのユーザー設定
                       href: warehousing/mobile-device-user-settings.md
                     - name: 倉庫アプリのインストールと接続
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: 倉庫管理モバイル アプリでカメラを使用してバーコードをスキャンする
+                    - name: Warehouse Management モバイル アプリでカメラを使用してバーコードをスキャンする
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: 倉庫管理モバイル アプリのフィールドを構成する
+                    - name: Warehouse Management モバイル アプリのフィールドを構成する
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: 倉庫作業用のモバイル デバイスの設定
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: ステップ アイコンとタイトルの割り当て
+                      href: warehousing/step-icons-titles.md
                     - name: 倉庫アプリのイベント処理
                       href: warehousing/warehouse-app-events.md
-                    - name: 倉庫管理モバイル アプリで受信するライセンス プレート
+                    - name: Warehouse Management モバイル アプリで受信するライセンス プレート
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3321,7 +3329,7 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: プロセス ガイドのフレームワーク
                       href: warehousing/process-guide-framework.md
-                    - name: 倉庫管理モバイル アプリの接続に関する問題のトラブルシューティング
+                    - name: Warehouse Management モバイル アプリの接続に関する問題のトラブルシューティング
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: アップグレードおよび移行
                   items:
@@ -3345,7 +3353,7 @@
               items:
                 - name: 品目モデル グループを別の法人にコピーする場合のフィールド設定がない
                   href: troubleshooting/costing/copying-item-model-groups.md
-                - name: '"処理中の間接原価" レポートに削除された製造オーダーが含まれる'
+                - name: 処理中の間接原価レポートに削除された製造オーダーが含まれる
                   href: troubleshooting/costing/indirect-costs-in-pr.md
                 - name: 購買見越が、値がゼロの製品受領書に金額ゼロで転記される
                   href: troubleshooting/costing/posting-to-purchase.md
@@ -3359,7 +3367,7 @@
                   href: troubleshooting/inventory/multiple-inventory-t.md
                 - name: レポートを完了済みとして取り消すと予期しない未処理トランザクションが作成される
                   href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: ピッキング リスト レポートで仕訳帳に関連付けられた新しいメモを表示できない
+                - name: ピッキング リスト レポートに、仕訳帳に関連付けられた新しいメモを表示できない
                   href: troubleshooting/inventory/unable-to-print-the.md
                 - name: 開始された検査指示の数量が注文を分割しても更新されない
                   href: troubleshooting/inventory/quantity-on-a-start.md
@@ -3371,17 +3379,21 @@
               items:
                 - name: 直接派生した確定注文がレビュー中のワークフローによって処理される
                   href: troubleshooting/planning/firmed-directly-deri.md
+                - name: 関連する補充グループの値でマスター プランの品目をフィルター処理できない
+                  href: troubleshooting/planning/master-planning-batc.md
                 - name: マスター プランがファントム製品の計画オーダーを生成する
                   href: troubleshooting/planning/planned-orders-are-g.md
                 - name: 購買がマイナス在庫日数内に存在する場合に計画発注書が作成される
                   href: troubleshooting/planning/planning-optimisatio.md
-                - name: 需要予測エントリに原価価格をアップロードできない
+                - name: 需要予測レコードをインポートする際に予測単位原価を更新できない
                   href: troubleshooting/planning/unable-to-upload-the.md
                 - name: 倉庫需要予測分析コードを予測明細行から削除できない
                   href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: 変更を行っていないのみ品目補充設定を保存するように求めるメッセージが表示される
+                  href: troubleshooting/planning/when-importing-to-th.md
             - name: 調達
               items:
-                - name: VEL 企業で顧客対応販売注文を請求できない
+                - name: 顧客対応販売注文を請求できない
                   href: troubleshooting/procurement/not-able-to-invoice-.md
                 - name: 変更要求後に購買要求に明細行を追加できない
                   href: troubleshooting/procurement/purchase-requisition.md
@@ -3403,7 +3415,7 @@
                   href: troubleshooting/production/late-selection-is-no.md
                 - name: ユーザーは、完了報告された製品の材料明細行のピッキングを解除できる
                   href: troubleshooting/production/raw-material-lines-a.md
-                - name: レポートを完了仕訳帳として転記する際のエラー
+                - name: レポートを完了仕訳帳を転記するとエラーが発生する
                   href: troubleshooting/production/posting-report-as-.md
                 - name: ピッキング リスト仕訳帳の倉庫が BOM 明細行で更新されない
                   href: troubleshooting/production/the-warehouse-in-pic.md
@@ -3423,11 +3435,11 @@
               items:
                 - name: ピッキング リスト登録時に場所を選択するとエラーが発生する
                   href: troubleshooting/warehousing/error-cannot-update.md
-                - name: ピッキング ステーションに製品のメモが表示されません
+                - name: ピッキング ステーションに製品のメモが表示されない
                   href: troubleshooting/warehousing/packing-station-not-.md
                 - name: 場所プロファイルではマイナス在庫は許可されないが、マイナスの手持在庫は許可される
                   href: troubleshooting/warehousing/location-profile-set.md
-                - name: 1 つのラベルで単一のレシートに複数の作業ヘッダーを印刷する
+                - name: 単一のレシートの複数の作業ヘッダーに 1 つのラベルのみ印刷される
                   href: troubleshooting/warehousing/when-receipting-prod.md
                 - name: カレンダーに問題があるために出荷を確認できない
                   href: troubleshooting/warehousing/load-has-active-appo.md
@@ -3453,7 +3465,7 @@
                   href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
                 - name: 状態が理由で作業をキャンセルできない
                   href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
-                - name: 作業がブロックされていない
+                - name: 作業はブロックされていない
                   href: troubleshooting/warehousing/work-is-not-blocked.md
                 - name: 作業がブロックされたままになっている
                   href: troubleshooting/warehousing/work-remains-blocked.md

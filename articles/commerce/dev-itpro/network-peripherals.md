@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4b09a1076dbbb00819b8e7a694a58488b9f912a2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: ac533bef9c7d075b690250eaec6f8c35ee914f5c
+ms.sourcegitcommit: d84329f903d359ae042e8c0a4594982a7e06756f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936994"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "5984262"
 ---
 # <a name="support-for-network-peripherals"></a>ネットワーク周辺機器のサポート
 
@@ -56,6 +56,8 @@ ms.locfileid: "5936994"
 Adyen 支払ターミナルの設定方法については、[Adyen の Dynamics 365 支払コネクタ](./adyen-connector.md?tabs=8-1-3#pos-payment-terminal)の「POS 支払ターミナル」セクションを参照してください。
 
 ### <a name="epson-or-star-micronics-receipt-printer-and-a-cash-drawer"></a>Epson または Star Micronics レシート プリンターとキャッシュ ドロワー
+
+Commerce でネットワーク周辺機器をサポートするには、各メーカー固有の通信プロトコルを実装する必要があります。 印刷プロトコルが一覧に表示されていない場合、標準ではサポートされておらず、カスタマイズが必要です。 
 
 #### <a name="epson-prerequisite"></a>Epson の前提条件
 

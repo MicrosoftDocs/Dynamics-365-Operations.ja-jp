@@ -2,11 +2,9 @@
 title: メタタグ モジュール
 description: このトピックでは、メタタグ モジュールと、それらを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
 author: samjarawan
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c75b69a3be938d84ee7dfd5bd9dff299131ae611
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 034ebbaf4f6fd2924e31cc54f0239d67079583a9
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853509"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021504"
 ---
 # <a name="metatags-module"></a>メタタグ モジュール
 

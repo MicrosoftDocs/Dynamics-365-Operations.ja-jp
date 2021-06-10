@@ -2,7 +2,7 @@
 title: Lifecycle Services (LCS) のアセット ライブラリ
 description: このトピックでは、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。
 author: laneswenka
-ms.date: 03/31/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c1496ce3884c478b4e833512f4f2e1349f8961c
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 2c8520034f5acc32e1de8139ce31cdaed456ffb0
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881700"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016019"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 
@@ -105,17 +105,7 @@ ms.locfileid: "5881700"
 
 資産が、プロジェクト レベルのアセット ライブラリから共有アセット ライブラリに再び保存され、範囲が **自分自身** に設定されます。
 
-## <a name="asset-library-preview"></a>資産ライブラリ (プレビュー) 
-資産ライブラリのパフォーマンスと信頼性を向上させるために、資産ライブラリのプレビュー バージョンを有効にすると、ページ読み込みエクスペリエンスが向上します。 
 
-資産ライブラリのプレビュー バージョンは、すべての LCS 地域およびプロジェクト タイプの **共有アセット ライブラリ** と **プロジェクト レベルのアセット ライブラリ** の両方で使用できます。 
-
-資産ライブラリ (プレビュー) は、すべてのタイプの資産をサポートし、いくつかの拡張機能を加えた同じ機能を備えています。
-
-- **オンデマンド資産負荷**: ページの読み込み時間を短縮するために、アクセスする資産タイプを選択するまで、資産ライブラリ ページの読み込み時に既定の資産が表示されません。 また、資産タイプ間を移動するために、資産ライブラリ ページ全体の読み込みが完了するまで待つ必要もありません。
-- **ファイル資産の更新**: ファイルの一覧を更新するために新しい更新ボタンが追加されます。 ページ全体を更新する必要なく、ファイル資産の一覧を更新できます。 
-
-プレビュー バージョンを試している間でも既存の資産ライブラリにアクセスできます。 新しいエクスペリエンスに完全に切り替える前に、翌月のプレビュー期間中のパフォーマンスと使用状況を監視し、既知の問題に対処します。 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

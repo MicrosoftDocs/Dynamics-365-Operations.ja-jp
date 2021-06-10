@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eddb26e706d1326f32902ec496fb2bc1a4923a2f
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: d750fc927f3f5f124318bc191702d57a6b88f3cc
+ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936041"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6093908"
 ---
 # <a name="upgrade-parameter-files"></a>パラメーター ファイルのアップグレード
 
@@ -42,7 +42,7 @@ Regression suite automation tool (RSAT) で使用された Microsoft Excel フ�
 > [!IMPORTANT]
 > 今から、部分ファイルに追加するのと同様に、パラメーター ファイルの新しい **CustomParameters** シートに新しい行を追加します。
 
-RSAT の 2.2 以降のリリースで、パラメーター ファイルには **CustomParameters** という名前のシートが含まれています。 このシートは、将来のパラメーター ファイルのアップグレードに役立ちます。 セルを追加する場合は、このシートにセルを追加します。 Microsoft はアップグレード機能の今後のリリースで、このシートを直接継承する計画です。
+RSAT の 2.2 以降のリリースで、パラメーター ファイルには **CustomParameters** という名前のシートが含まれています。 このシートは、将来のパラメーター ファイルのアップグレードに役立ちます。 セルを追加する場合は、このシートにセルを追加します。
 
 古いパラメーター ファイルにセルを追加してそのセルに名前を割り当てた場合、名前付きセルはその値が他のセルを参照しない限りアップグレード中に自動的に **CustomParameters** シートに移動されます。
 

@@ -13,12 +13,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8753c334e23d03749cc045ffa54436b437f2f94c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5fc5208729a96a5dcfa1cd7987164b3c2a560087
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792353"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019749"
 ---
 # <a name="before-you-buy-retail"></a>Retail を購入する前に
 
@@ -65,7 +65,7 @@ Microsoft は柔軟性の高い、業界をリードするサポート、サー�
 
 ## <a name="step-3-learn-about-fasttrack-and-plan-your-deployment"></a>手順 3: FastTrack について学び、展開を計画する
 
-Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 また、Dynamics 365 でのお客様の経験を成功に導く Microsoft エンジニアリング リソースにアクセスできます。 詳細については、[Microsoft FastTrack for Dynamics 365 の概要](../../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md) を参照してください。 
+Microsoft FastTrack for Dynamics 365 は、Dynamics 365 に円滑、かつ確実に移行できるように設計された顧客成功サービスであり、事業価値をより迅速に実現できます。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 また、Dynamics 365 でのお客様の経験を成功に導く Microsoft エンジニアリング リソースにアクセスできます。 詳細については、[Microsoft FastTrack for Dynamics 365 の概要](/dynamics365/fasttrack/) を参照してください。 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

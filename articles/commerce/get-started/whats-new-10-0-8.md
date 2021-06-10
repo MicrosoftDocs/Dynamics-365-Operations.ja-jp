@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 35182260e3871b3a6bc465c9a904df528da0d350
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4a102371a222be0a67c692cd9fd396757f992309
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797154"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022087"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-1008-february-2020"></a>Dynamics 365 Commerce 10.0.8 の新機能と変更点 (2020 年 2 月)
 
@@ -32,12 +32,12 @@ ms.locfileid: "5797154"
 - **一般提供 (自己更新):** 2020 年 1 月
 - **自動更新:** 2020 年 2 月 
 
-このリリースでは次の機能が含まれています。 機能のタイトルは、[リリース プランのサイト](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) の追加情報にリンクしています。
+このリリースでは次の機能が含まれています。 機能のタイトルは、[リリース プランのサイト](/dynamics365-release-plan/2019wave2/index) の追加情報にリンクしています。
 
-- [E コマースのチェックアウト中に Dynamics 365 Fraud Protection を呼び出す](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
-- [おすすめ候補](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
-- [POS の製品推奨事項](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
-- [チャネルごとの Azure Active Directory 企業と顧客間テナント](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
+- [E コマースのチェックアウト中に Dynamics 365 Fraud Protection を呼び出す](/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
+- [おすすめ候補](/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
+- [POS の製品推奨事項](/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
+- [チャネルごとの Azure Active Directory 企業と顧客間テナント](/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
 
 
 ## <a name="additional-resources"></a>追加リソース
@@ -55,7 +55,7 @@ Microsoft Dynamics 365 Commerce 10.0.8 には、プラットフォーム更新�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: 25c7ed41ace104ce6523459482fba3b84b073de5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59e653f51df3883aea88843ea74ab72dd98ed9eb
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804541"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018647"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
@@ -330,7 +330,7 @@ ms.locfileid: "5804541"
 
 ## <a name="related-topics"></a>関連トピック
 
-- **[支払端末のエンド ツー エンド支払統合の作成](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – このトピックでは、カスタム支払コネクタを作成する方法について説明します。
+- **[支払端末のエンド ツー エンド支払統合の作成](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – このトピックでは、カスタム支払コネクタを作成する方法について説明します。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

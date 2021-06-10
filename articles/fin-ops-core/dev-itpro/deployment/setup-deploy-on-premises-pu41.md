@@ -2,10 +2,9 @@
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 04/21/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 59c2bc3786a9bb701d98c4e324a6fd2fc419d394
-ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
+ms.openlocfilehash: 67fbffd6683a62ff8b65f8f44e839620627c66e6
+ms.sourcegitcommit: 9f8dccdbfa76f8be24e083dc69be718c2d5a2877
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5924415"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6114026"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
@@ -40,7 +39,7 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
 
 これらのコンポーネントは、次のシステム ソフトウェアによって異なります。
 
-- Microsoft Windows Server 2016 (英語オペレーティング システムのインストールのみがサポートされます。)
+- Microsoft Windows Server 2019 または Microsoft Windows Server 2016 (英語オペレーティング システムのインストールのみがサポートされます。)
 - Microsoft SQL Server 2016 SP2
 
     > [!IMPORTANT]
@@ -57,7 +56,7 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
 - SQL Server Management Studio
 - スタンドアロン Microsoft Azure Service Fabric 7.2 以降
 - Microsoft Windows PowerShell 5.0 以降
-- Windows Server 2016 での Active Directory Federation Services (AD FS)
+- Windows Server 2019 または Windows Server 2016 での Active Directory フェデレーション サービス (AD FS)
 - ドメイン コントローラー
 
     > [!IMPORTANT]
@@ -67,7 +66,7 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
     > - [Active Directory Domain Services (AD DS) 機能のレベルを理解する](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))
     > - [双方向の完全な信頼](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
-- 次はオプションですが **非常に** 推奨されています: Windows Server 2016 の Active Directory Certificate Services (AD CS)
+- 次はオプションですが、**強く** お勧めします: Windows Server 2019 または Windows Server 2016 の Active Directory 証明書サービス (AD CS)
 
 ## <a name="lcs"></a>LCS
 
@@ -98,11 +97,11 @@ VMware を使用している場合は、次の Web ページに記載されて�
 - [vmxnet3 仮想アダプターのいくつかの問題](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
  > [!WARNING]
- > Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure スタック ハブ](https://azure.microsoft.com/en-us/products/azure-stack/hub/) での実行はサポートされています。
+ > Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure スタック ハブ](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
-- Windows Server 2016 VM に基づく スタンドアロン Service Fabric Cluster
+- Windows Server 2019 または Windows Server 2016 VM に基づく スタンドアロン Service Fabric Cluster
 - SQL Server (Clustered SQL と Always-On の両方がサポートされます。)
 - 認証のための AD FS
 - ストレージ用の Server Message Block (SMB) バージョン 3 のファイル共有
@@ -203,20 +202,20 @@ Finance + Operations のインフラストラクチャを設定するには、�
 
 | ノード タイプ | コンポーネント | 細目 |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC ドライバー 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
-| AOS       | SNAC – ODBC ドライバー 17.5.x | <p>このドライバーは、プラットフォーム更新プログラム 15 以上にアップグレードするために必要です</p><p><https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true></p> |
+| AOS       | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) |
+| AOS       | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true) |
 | AOS       | Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | AOS       | Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
 | AOS       | Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
 | AOS       | Microsoft Internet Information Services (IIS) | **Windows の機能:** WAS、WAS-Process-Model、WAS-NET-Environment、WAS-Config-APIs、Web-Server、Web-WebServer、Web-Security、Web-Filtering、Web-App-Dev、Web-Net-Ext、Web-Mgmt-Tools、Web-Mgmt-Console |
-| AOS       | SQL Server Management Studio 17.9.1 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| AOS       | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms?view=sql-server-ver15#1791&preserve-view=true) |
 | AOS       | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> |
 | AOS       | Microsoft Visual Studio 2017 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://lcs.dynamics.com/V2/SharedAssetLibrary>に移動して、資産タイプとして **モデル** を選択して、**VC++ 17 再配布可能ファイル** を選択します。 |
 | AOS       | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | BI        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
 | BI        | .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
-| BI        | SQL Server Management Studio 17.9.1 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| BI        | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms?view=sql-server-ver15#1791&preserve-view=true) |
 | MR        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | MR        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
 | MR        | .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
@@ -480,9 +479,9 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 
     | コンポーネント | リンクのダウンロード | 必要なファイル名 |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC ドライバー 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | Msodbcsql .msi |
-    | SNAC – ODBC ドライバー 17.5.x | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true> | msodbcsql\_17.msi |
-    | SQL Server Management Studio 17.9.1 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
+    | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | Msodbcsql .msi |
+    | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true) | msodbcsql\_17.msi |
+    | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms?view=sql-server-ver15#1791&preserve-view=true) | SSMS-Setup-\*.exe |
     | Microsoft Visual Studio 2013 用 Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual Studio 2017 用 Visual C++ 再頒布可能パッケージ | <https://lcs.dynamics.com/V2/SharedAssetLibrary>に移動して、資産タイプとして **モデル** を選択して、**VC++ 17 再配布可能ファイル** を選択します。 | vc\_redist.x64\_14\_16\_27024.exe |
     | Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
@@ -573,7 +572,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
     5. すべてのノードが緑で表示されることを確認します。
 
     > [!IMPORTANT]
-    > - クライアント コンピューターがサーバー コンピューター (たとえば、Windows Server 2016 を実行しているコンピューター) である場合は、**Service Fabric Explorer** ページにアクセスするときに Internet Explorer のセキュリティ強化の構成をオフにする必要があります。
+    > - クライアント コンピューターがサーバー コンピューター (たとえば、Windows Server 2019 を実行しているコンピューター) である場合は、**Service Fabric Explorer** ページにアクセスするときに Internet Explorer のセキュリティ強化の構成をオフにする必要があります。
     > - 任意のウィルス対策ソフトウェアをインストールする場合は、除外を設定してください。 [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) ドキュメントのガイダンスに従ってください。
 
 ### <a name="step-11-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a>手順 11、 テナント用 LCS 接続の構成
@@ -586,7 +585,7 @@ CA から取得したオンプレミス エージェントの証明書または�
 
 > [!IMPORTANT]
 > - テナントごとに証明書を正確に **1** 回構成する必要があります。 同じ環境のすべてのオンプレミス環境では、同じ証明書を使用して LCS に接続できます。
-> - サーバー コンピューター ( Windows Server 2016 を実行しているコンピューターなど) で以下のスクリプトを実行する場合は、Internet Explorer セキュリティ強化の構成を一時的にオフにする必要があります。 そうしないと、Azure のサインイン ページのコンテンツがブロックされます。
+> - サーバー コンピューター ( Windows Server 2019 を実行しているコンピューターなど) で以下のスクリプトを実行する場合は、Internet Explorer セキュリティ強化の構成を一時的にオフにする必要があります。 そうしないと、Azure のサインイン ページのコンテンツがブロックされます。
 
 1. 顧客の [Azure ポータル](https://portal.azure.com)にサインインして、グローバル管理者ディレクトリの役割があることを確認します。
 2. 次のコマンドを **インフラストラクチャ** フォルダーから実行して、証明書が既に登録されているかどうかを確認します。
@@ -938,7 +937,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 ### <a name="step-18-configure-ad-fs"></a><a name="configureadfs"></a>手順 18、 AD FS のコンフィギュレーション
 
-この手順を完了する前に、AD FS を Windows Server 2016 に展開する必要があります。 AD FS を展開する方法については、[Windows Server 2016 配置ガイドおよび 2012 R2 AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
+この手順を完了する前に、AD FS を Windows Server 2019 または Windows Server 2016 に展開する必要があります。 AD FS を展開する方法については、[Windows Server 2016 配置ガイドおよび 2012 R2 AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
 
 Finance + Operations では、既定で標準のコンフィギュレーション以外の、AD FS の追加のコンフィギュレーションが必要です。 以下の Windows PowerShell コマンドを、AD FS ロール サービスがインストールされているマシン上で実行する必要があります。 ユーザー アカウントには、AD FS を管理するための十分なアクセス許可が必要です。 たとえば、ユーザーには、ドメイン管理者アカウントが必要です。 複雑な AD FS シナリオでは、ドメイン管理者に問い合わせてください。
 

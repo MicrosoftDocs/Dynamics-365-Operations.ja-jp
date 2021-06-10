@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 633e4e4d934c0915064059c16e6ae5c3d434e39f
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 072ebac7e62e7da83dde5df0d7a75ef3b80b60d9
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959983"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6116965"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -57,6 +57,7 @@ ms.locfileid: "5959983"
 - [販売時点管理 (POS) デバイスのライセンス認証](retail-device-activation.md)
 - [共有環境におけるクラウド POS のセキュリティ ベスト プラクティス](secure-retail-cloud-pos.md)
 - [外部ギフト カードのサポート](gift-card.md)
+- [Microsoft Dynamics 365 Commerce の Store Commerce アプリ](store-commerce.md)
 
 ## <a name="customize-pos"></a>カスタマイズ POS
 
@@ -79,13 +80,25 @@ ms.locfileid: "5959983"
 - [POS カート ビューのイベントおよびハンドラー](cart-view-handlers.md)
 - [カスタム ボタンを POS ヘッダー バーに追加](pos-header-bar.md)
 
-## <a name="pos-independent-packaging-sdk"></a>POS 独立 - パッケージ SDK
+## <a name="pos-independent-packaging-sdk"></a>POS の独立したパッケージ SDK
 
 - [POS 拡張機能の概要](pos-extension/pos-extension-overview.md)
-- [POS 拡張機能を開始する ](pos-extension/pos-extension-getting-started.md)
+- [POS 拡張機能の使用を開始する](pos-extension/pos-extension-getting-started.md)
 - [POS 拡張機能パッケージ プロジェクトの作成](pos-extension/create-pos-extension-package.md)
-- [Modern POS 拡張 appx ファイルの作成](pos-extension/create-pos-extension-appx.md)
+- [Modern POS 拡張パッケージの .appx ファイルの作成](pos-extension/create-pos-extension-appx.md)
 - [POS 拡張機能のデバッグ](pos-extension/debug-pos-extension.md)
+- 拡張機能パッケージと展開
+    - [Modern POS 拡張機能パッケージの作成](pos-extension/mpos-extension-packaging.md)
+    - [Modern POS (MSIX) 拡張機能パッケージへのコード署名](pos-extension/mpos-extension-signing.md)
+    - [Cloud POS 拡張機能パッケージの作成](pos-extension/cpos-extension-package.md)
+- [独立したパッケージ モデルへの POS 拡張機能の移行](pos-extension/migrate-pos-extension.md)
+- POS 拡張機能開発ガイド
+    - [POS 拡張機能の基本](pos-extension/pos-extension-basics.md)
+    - [POS でのカスタム ビューの作成](pos-extension/custom-pos-view.md)
+    - [拡張機能での POS コントロールの使用](pos-extension/controls-pos-extension.md)
+    - タスク
+        - [POS 拡張機能での Knockout.js の使用](pos-extension/knockout-pos-extension.md)
+        - [POS でのカスタム ヘッドレス コマース エンジン API の使用](pos-extension/consume-apis-pos.md)
 
 ## <a name="integrating-commerce"></a>コマースの統合
 
@@ -118,6 +131,7 @@ ms.locfileid: "5959983"
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)
 - [Retail SDK の今後の変更](UpcomingSDKChanges.md)
 - [バージョン 10.0.10 から 10.0.13 における開発と ALM の変更](dev-changes-10-13.md)
+- [独立したパッケージ SDK ビルド パイプラインの設定](build-pipeline.md)
 - [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
 - [コマースおよび Finance のビルド システムのマージ](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行](retail-sdk/migrate-sdk.md)

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4ceadde25e055b32a4775560bdf5ea80c8fb18cb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: dc603e5b5830556eb00f0859bc40d6a9528fd056
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797146"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021972"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10012-august-2020"></a>Dynamics 365 Commerce 10.0.12 (2020 年 8 月) の新機能または変更された機能
 
@@ -34,8 +34,8 @@ ms.locfileid: "5797146"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-- [保証の設定と販売](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/warranty-set-up-sell)
-- [E コマースの在庫バッファーと在庫レベル](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/define-utilize-inventory-buffers-drive-inventory-level-displays-e-commerce)
+- [保証の設定と販売](/dynamics365-release-plan/2020wave1/dynamics365-commerce/warranty-set-up-sell)
+- [E コマースの在庫バッファーと在庫レベル](/dynamics365-release-plan/2020wave1/dynamics365-commerce/define-utilize-inventory-buffers-drive-inventory-level-displays-e-commerce)
 - [出庫工程における過少配送のクローズ ライン](../pos-outbound-inventory-operation.md)
 
 ## <a name="additional-resources"></a>追加リソース
@@ -51,7 +51,7 @@ Dynamics 365 Commerce 10.0.12 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

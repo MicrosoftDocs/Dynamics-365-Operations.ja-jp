@@ -1,7 +1,7 @@
 ---
 title: セグメント化されたエントリ コントロールのための parm メソッド
 description: セグメント化されたエントリ コントロールのインスタンスで、コード内で設定できる parm メソッドについて説明します。
-author: robinarh
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f02427d1d7da370da217820082656f117695c80
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 52c6d1c1672fabf4e3f2046fa6e8943b5c2423a6
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752278"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111708"
 ---
 # <a name="parm-methods-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのための parm メソッド
 
@@ -47,10 +47,7 @@ ms.locfileid: "5752278"
 | parmPostingType                      | デザイン時プロパティと関連します。  詳細については、「セグメント化されたエントリ コントロールのメタデータ詳細」を参照してください。                                                                                                                                                                                                         |
 | parmValidateBlockedForManualEntry    | デザイン時プロパティと関連します。  詳細については、「セグメント化されたエントリ コントロールのメタデータ詳細」を参照してください。                                                                                                                                                                                                         |
 
-
-
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [ダイアログのセグメント化されたエントリ コントロールのサポート](segmented-entry-control-dialog-support.md)
 
@@ -59,9 +56,5 @@ ms.locfileid: "5752278"
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 
 [セグメント化されたエントリ コントロールに関する移行ガイダンス](segmented-entry-control-migration-guidance.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

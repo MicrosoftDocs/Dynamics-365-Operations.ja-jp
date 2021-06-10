@@ -1,8 +1,8 @@
 ---
-title: Finance and Operations と Microsoft Power Platform の統合
-description: このトピックでは Finance and Operations および Microsoft Dataverse の Lifecycle Services を介して Power Platform の統合の概要を提供します。
+title: Finance and Operations アプリと Microsoft Power Platform の統合
+description: このトピックでは Microsoft Dataverse および Finance and Operations アプリ の Microsoft Dynamics Lifecycle Services を介して Microsoft Power Platform の統合の概要を提供します。
 author: Sunil-Garg
-ms.date: 04/08/2021
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,115 +12,162 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 9b8d5a5703a42c3788cabfd051a7633bc849ec05
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 1c98ec12ade16e4850b624fdec69681b16b357c9
+ms.sourcegitcommit: 6884d9c845a8d16e7a18d5a3880606e3cbe78b95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908688"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111368"
 ---
-# <a name="microsoft-power-platform-integration-with-finance-and-operations"></a>Finance and Operations と Microsoft Power Platform の統合
+# <a name="microsoft-power-platform-integration-with-finance-and-operations-apps"></a>Finance and Operations アプリと Microsoft Power Platform の統合
 
 [!include[banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-> [!IMPORTANT]
-> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
-
-Microsoft Power Platform は、Power Platform 管理者センターを介した Dynamics 365 アプリケーションの一連の機能を提供します。 現在、Finance and Operations アプリは Power Platform 管理センターによって管理されませんが、時間の経過とともに、Lifecycle Services (LCS) から管理センターに移行される管理機能がますます増えています。 暫定的に、顧客は、LCS の Power Platform 統合機能を介して、二重書き込み機能、仮想エンティティ、アドインなどの機能のロックを解除できるようになります。
-
-このトピックでは、Power Platform 統合によってロックが解除されたさまざまな機能の概要と、設定手順の実行方法を提供します。
+Microsoft Power Platform は、Power Platform 管理者センターを介した Dynamics 365 アプリケーションの一連の機能を提供します。 今日、Finance and Operations アプリは Power Platform 管理者センターで管理されていません。 ただし、時間の経過とともに、Microsoft Dynamics Lifecycle Services (LCS) から管理センターに移行される管理機能がますます増えています。 暫定的に、顧客は、LCS の Microsoft Power Platform 統合機能を介して、二重書き込み機能、仮想エンティティ、アドインなどの機能のロックを解除できるようになります。
 
 ## <a name="prerequisite-reading"></a>前提条件の参照先
 
-Power Platform, Microsoft Dataverse のアーキテクチャと Finance and Operations アプリの仮想エンティティを理解するには、それらのしくみを理解しておく必要があります。 したがって、次のドキュメントが前提条件になります。
+Microsoft Power Platform、Dataverse、二重書き込み、および Finance and Operations アプリの仮想エンティティのアーキテクチャを理解するには、それらのしくみを理解しておく必要があります。 したがって、次のドキュメントが前提条件になります。
 
 - [Power Platform の管理](/power-platform/admin/admin-documentation)
 - [Dataverse とは](/powerapps/maker/common-data-service/data-platform-intro)
-- [エンティティ概要](/powerapps/maker/common-data-service/entity-overview)
+- [Dataverse のテーブル](/powerapps/maker/common-data-service/entity-overview)
 - [エンティティの関連付けの概要](/powerapps/maker/common-data-service/relationships-overview)
-- [外部データ ソースのデータを含む仮想エンティティの作成と編集](/powerapps/maker/common-data-service/create-edit-virtual-entities)
+- [外部データ ソースのデータを含む仮想テーブルの作成と編集](/powerapps/maker/common-data-service/create-edit-virtual-entities)
 - [Power Apps ポータルについて](/powerapps/maker/portals/overview)
 - [Power Apps でのアプリの作成の概要](/powerapps/maker/)
 
-## <a name="tools-and-services-unlocked-with-power-platform-integration"></a>Power Platform 統合によってロックが解除されたツールとサービス
-以下は、環境に Power Platform 統合を設定することでロックが解除されるさまざまなツールとサービスの一覧です。
+## <a name="tools-and-services-unlocked-with-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合によってロックが解除されたツールとサービス
 
-### <a name="virtual-entities-for-finance-and-operations-apps"></a>Finance and Operations アプリの仮想エンティティ
+同時に、仮想エンティティ、二重書き込み、およびビジネス イベントは、Finance and Operations アプリと Dataverse プラットフォームの収束性に対する共有データ レイヤーを構成しています。 これらは、一緒に仕様することを目的とした補完的なテクノロジです。 
 
-Finance and Operations アプリは、Dataverse の仮想データ ソースであり、Dataverse および Microsoft Power Platform からの完全な作成、読み取り、更新、削除 (CRUD) 操作を可能にし ます。 定義上、仮想エンティティのデータは、Dataverse には存在しません。 その代わりに、データは属しているアプリケーションで引き続き存在します。 Dataverse から Finance and Operations エンティティに対して CRUD 操作を有効にするには 、エンティティを Dataverse の仮想エンティティとして使用できるようにする必要があります。 これにより、Finance and Operations アプリに存在するデータに対して、Dataverse と Microsoft Power Platform から CRUD 処理を実行できるようになります。
+**仮想エンティティ** により、Microsoft Power Platform または Dataverse ネイティブ アプリから Finance and Operations データへのアクセスが必要になるシナリオが有効になります。 そのデータをクエリしてフォームをバインドし、一般的には、Finance and Operations アプリの全機能に対して Microsoft Power Platform の完全な機能を使用することができます。 システム間でデータはコピーされません。 代わりに、Microsoft Power Platform テクノロジが既にバインドすることができる標準の仮想エンティティ インフラストラクチャを通して直接アクセスします。 詳細については、[仮想エンティティの概要](virtual-entities-overview.md)を参照してください。 
 
-Finance and Operations 内のすべての Open Data Protocol (OData) エンティティは、Dataverse の仮想エンティティとして使用できます。したがって Power Platform でも使用できます。 作成者は、Finance and Operations から直接データを使用して Customer Engagement アプリのエクスペリエンスを構築できるようになりました。このとき、完全な CRUD 機能を使用でき、Dataverse にコピーする必要はありません。 Power Apps ポータルは、Finance and Operations の業務プロセスのコラボレーション シナリオを可能にする外部向けの Web サイトを構築するために使用できます。
+**ビジネス イベント** により、Microsoft Power Platform を使用して Finance and Operations アプリで発生するイベントに応答できます。 ビジネス イベントは、Finance and Operations アプリを含め、任意のアプリから発生させることができ、Microsoft Power Platform ビジネス ロジックによって処理することができます。 多くの場合、この処理には、ネイティブ エンティティまたは仮想エンティティを通じた追加データのクエリや操作が含まれます。 
 
-#### <a name="virtual-entities-for-core-human-resources"></a>Core Human Resources の仮想エンティティ
-Core Human Resources エンティティは、Finance and Operations エンティティと同じように仮想化することもできます。 詳細については、[Core HR の仮想エンティティ](../../../human-resources/hr-admin-integration-common-data-service-virtual-entities.md)を参照してください。
+シナリオのサブセットについては、Finance and Operations アプリと Dataverse ネイティブ エンティティの間でデータを物理的にコピーする必要があります。 これらのシナリオは、Dataverse ネイティブ アプリと Finance and Operations アプリの両方でバインドされた大量のロジックを持つ重複するエンティティを対象としているので、データを各タイプのアプリのローカル データベースに配置する必要があります。 これらのエンティティの数は比較的少ないがが、アカウント/顧客、会社、製品、および販売注文などの最も重要なエンティティの一部が含まれます。 これらのシナリオでは、**二重書き込み** により、ほぼリアルタイムの同期コピーが可能になります。 この機能により、既存のアプリはローカル データに対する操作を設計通りに継続することができ、また対応する重複エンティティが同期されていることを確認することができます。詳細については、[二重書き込みのホームページ](../data-entities/dual-write/dual-write-home-page.md)を参照してください。 
 
-
-#### <a name="virtual-entities-vs-dual-write"></a>仮想エンティティ対二重書き込み
-仮想エンティティは、データを Dataverse に物理的にコピーすることなく、Finance and Operations で Microsoft Power Platform を使用するメカニズムを提供します。 このガイダンスは、要件に二重書き込みまたはデータ統合、または仮想エンティティが必要かどうかを判断するために使用します。 仮想エンティティと二重書き込み/データ統合は、必要に応じて併用できる補完的なテクノロジです。 各テクノロジは、[統合戦略](../data-entities/integration-overview.md)で説明されているように、特定のシナリオに対して存在します。
-
-### <a name="dual-write-functionality"></a>二重書き込み機能
-二重書き込み機能は、Customer Engagement アプリと Finance and Operations アプリの間の、ほぼリアルタイムの対話を提供する標準のインフラストラクチャです。 顧客、製品、人材、および業務に関するデータがアプリケーション境界を超えてフローする場合、組織のすべての部門が権利を持つことになります。
-
-二重書き込み機能は、Finance and Operations アプリと Dataverse の間で密に結合された双方向の統合を提供します。 Finance and Operations アプリでのデータの変更によって Dataverse 書き込みが行われ、Dataverse のデータの変更によって Finance and Operations アプリケーションへの書き込みが行われます。 この自動化されたデータ フローによって、アプリ間で統合されたユーザー エクスペリエンスが提供されます。  二重書き込み機能の詳細については、[二重書き込みの概要](../data-entities/dual-write/dual-write-overview.md) を参照してください。
+同時に、仮想エンティティ、二重書き込み、およびビジネス イベントにより、Finance and Operations アプリと Dataverse ネイティブ アプリ間の境界をまたぐアプリと業務プロセスをビルドすることができます。 ほとんどのアプリと業務プロセスでは、これら共有データ レイヤーの 3 つの部分の組み合わせかすべてのいずれかが使用されます。 同様に、拡張機能およびカスタマイズにおいて、データベース間でコピーされるデータ量を可能な限り減少させる必要があり、これらのツールを使用する際に、最も有利なユーザー エクスペリエンス用に最適化する必要もあります。 
 
 ### <a name="add-ins-functionality"></a>アドイン機能
-アドインを使用すると、Finance and Operations アプリの機能を拡張できます。 すべてのアドインは、サンドボックスおよび実稼働タイプの環境の環境詳細ページの Lifecycle Services を介してインストールされ、管理されます。 インストールされているアドインと各アドインの構成オプションに関するメタデータは、Power Platform 統合の一部としてプロビジョニングされている Microsoft Dataverse データベースに格納されます。 一部のアドインは、Dataverse データベースにビジネス データも格納します。 使用可能なアドインの詳細については、[アドインの概要](add-ins-overview.md) を参照してください。
 
-## <a name="architecture"></a>アーキテクチャ
+アドインを使用すると、Finance and Operations アプリの機能を拡張できます。 すべてのアドインは、サンドボックスおよび実稼働タイプの環境の環境詳細ページの Lifecycle Services を介してインストールされ、管理されます。 インストールされているアドインと各アドインの構成オプションに関するメタデータは、Microsoft Power Platform 統合の一部としてプロビジョニングされている Microsoft Dataverse データベースに格納されます。 一部のアドインは、Dataverse データベースにビジネス データも格納します。 使用可能なアドインの詳細については、[アドインの概要](add-ins-overview.md) を参照してください。
 
-仮想エンティティは、Finance and Operations 以外にも有用な Dataverse の概念です。 次の図は、仮想エンティティの Finance and Operations プロバイダーを実装する方法を示しています。 6 つの主要メソッドがプロバイダーによって実装されます。 最初の 5 つのメソッドは、**Create**、**Update**、**Delete**、**Retrieve**、**RetrieveMultiple** という標準的な CRUD 操作です。 最後のメソッドである **PerformAction** は、このトピックで後述するように OData アクションを呼び出すために使用されます。 Finance and Operations 仮想エンティティ データ プロバイダー (図では "VE プラグイン" と表示) を呼び出すと、Finance and Operations の CDSVirtualEntityService Web API エンドポイントに対して Secure Sockets Layer (SSL)/トランスポート層セキュリティ (TLS) 1.2 セキュア Web 呼び出しが行われます。 その後、この Web サービスは、Finance and Operations 内の関連する物理エンティティへの呼び出しにクエリを変換し、それらのエンティティで CRUD 操作または OData 操作を呼び出します。 Finance and Operations エンティティはすべての操作で直接呼び出されるため、エンティティまたはバッキング テーブルのビジネス ロジックも呼び出されます。
+## <a name="typical-scenarios-and-patterns-that-use-dual-write"></a>二重書き込みを使用する一般的なシナリオとパターン
 
-[![Finance and Operations アプリの仮想エンティティのアーキテクチャ](../media/fovearchitecture.png)](../media/fovearchitecture.png)
+二重書き込みを使用する一般的なシナリオを次に示します。
 
-呼び出し時、Dataverse から Finance and Operations アプリまで 2 つの変換点があります。 変換の最初のポイントは、エンティティの物理名などの概念を Finance and Operations エンティティ名に変換する VE プラグインにあります。 また、会社の参照などの既知の概念も変換されます。 Web サービス呼び出しでは、引き続き EntityCollection、Entity、および QueryExpression オブジェクトを使用して、実行される操作が表されます。このとき、VE プラグインから変換されたエンティティ名と概念が使用されます。 最後に、Finance and Operations の CDSVirtualEntityAdapterService Web API によって、QueryExpression から QueryBuildDataSource およびその他の内部 Finance and Operations 言語構成要素への変換が完了します。
+### <a name="customer-service-representatives-can-facilitate-a-change-of-address-for-finance-and-operations-customers"></a>顧客サービス担当者が Finance and Operations の顧客の住所変更を容易にできるようにする
 
-仮想エンティティの一部としての Dataverse および Finance and Operations 間での呼び出しはすべて、コンフィギュレーションで指定されている Azure Active Directory (Azure AD) アプリケーションを使用して、サービス間 (S2S) 呼び出しとして実行されます。 このアプリケーションのユーザーは、CDSVirtualEntityAdapterService Web API とカタログ エンティティ CDSVirtualEntityListEntity に *のみ* アクセスできるようにする必要があります。 これらの特権は、CDSVirtualEntityApplication という名前の、標準のセキュリティ ロールに含まれています。 S2S 呼び出し中に、アクションを呼び出す Dataverse のユーザーの ID が Dataverse により提供されます。 CDSVirtualEntityAdapterService Web API は、Finance and Operations の関連付けられているユーザーを検索し、そのユーザーのコンテキストでクエリを実行します。 したがって、S2S 呼び出しでは、すべての Finance and Operations エンティティに明示的にアクセスする必要はありません。 代わりに、データ アクセスを決定するには、アクションを呼び出すユーザーの特権が必要な場合があります。
+顧客が移転し、請求先住所と送付先住所の情報を変更したいとします。 この顧客は、顧客サービス担当者に連絡して、住所の変更を依頼します。 顧客サービス担当者が電話を受け、顧客の請求先住所と送付先住所を変更します。
 
-> [!NOTE]
-> 仮想エンティティの呼び出しの待機時間を最適化するために、同じ Azure リージョンに Finance and Operations と Dataverse の両方を同一配置することをお勧めします。 同一配置する場合、仮想エンティティの間接費は 1 回の呼び出しあたり 30 ミリ秒 (ms) 未満である予定です。
+| 意思決定 | 情報 | 
+|----------|-------------|
+| リアルタイムな日付が必要ですか。 | あり |
+| ピーク データ量 | 適用できません |
+| 頻度 | アドホック |
 
-Power Apps ポータルでは、仮想エンティティにもアクセスできます。 Power Apps ポータル認証は連絡先レコードに基づいているため、連絡先レコードと Finance and Operations ユーザーの間のマッピングは Dataverse の msdyn\_externalportalusermapping テーブルで管理されます。 このテーブルは、Dataverse の高度な特権を持つユーザーのみが編集できます。このユーザーは、ポータル ユーザーのセキュリティアクセスを Finance and Operations 仮想エンティティに対して制御する権限を持っています。 Power Apps ポータル アクセス用に設定されたすべての Finance and Operations ユーザーには、CDSVirtualEntityAuthorizedPortalUser セキュリティ ロールが割り当てられている必要があります。また、システム管理者またはセキュリティ管理者ロールを割り当てることはできません。 仮想エンティティに適用される Power Apps ポータル セキュリティ設定に関係なく、Finance and Operations アプリへの結果のクエリは常に関連付けられた Finance and Operations ユーザーとして実行され、そのユーザーのエンティティと行のセキュリティ設定に従います。 匿名ポータルのアクセスもサポートされます。 このタイプのアクセスとその実行方法については、[Power Apps ポータル参照](power-portal-reference.md)を参照してください。
+#### <a name="recommended-solution"></a>推奨される解決策
 
-## <a name="prerequisites-for-setting-up-the-power-platform-integration"></a>Power Platform 統合を設定するための前提条件
-次の一覧は、Power Platform 統合を設定するための前提条件に関する詳細を提供します。
+ほぼリアルタイムのデータ同期が関係するシナリオでは、二重書き込みで実装するのが最適です。
 
-- テナントで少なくとも 1 ギガバイト (GB) の Power Platform データベース ストレージ容量スペースが使用可能であることを確認してください。 それ以外の場合、設定は失敗です。 [Power Platform管理センター](https://admin.powerplatform.microsoft.com/resources/capacity) にて、容量を表示できます。 
+1. 顧客情報は、Finance and Operations アプリから取得されます。
+2. 顧客が顧客サービスに電話し、請求先住所と送付先住所の情報を変更するよう依頼します。
+3. 顧客サービス担当者は、Dynamics 365 Customer Service の顧客レコードを取得します。
+4. 顧客サービス担当者は、請求先住所と送付先住所を更新してデータを保存します。
+5. 新しい請求先住所と送付先住所は、リアルタイムで Finance and Operations アプリに同期されます。
+
+### <a name="sales-representatives-can-change-customer-credit-limits-without-signing-in-to-a-finance-and-operations-app"></a>販売担当者は、Finance and Operations アプリにサインインすることなく、顧客の与信限度額を変更できます
+
+顧客には $2,000 の与信限度額があり、$5,000 に引き上げたいと考えています。 この顧客が電話をかけて、増額を要求します。 チケットが、販売部門に割り当てられます。 販売責任者は依頼を検討し、顧客の支払履歴を確認し、顧客が与信限度額の増加の資格があると判断します。 販売責任者は依頼を承認し、チケットに応答します。 顧客は与信限度額 $5,000 の承認に関する電子メールを受け取ります。
+
+| 意思決定 | 情報 | 
+|---------|--------------|
+| リアルタイムな日付が必要ですか。 | あり |
+| ピーク データ量 | 適用できません |
+| 頻度 | アドホック |
+
+#### <a name="recommended-solution"></a>推奨される解決策
+
+このシナリオでは、二重書き込みを使用して実装するのが最適です。
+
+1. 顧客は電話し、与信限度額を $2,000 から $5,000 に引き上げたいと考えています。
+2. 顧客サポート担当者が Dynamics 365 Customer Service でチケットを作成します。
+3. チケットが、販売部門に割り当てられます。
+4. 販売部門の販売担当者が依頼を確認して、承認します。
+5. Dynamics 365 Sales で顧客の与信限度額が $5,000 に増額されます。
+6. Finance and Operations アプリの与信限度額が $5,000 に更新されます。
+7. 販売担当者は、チケットに応答して解決します。
+8. 顧客は、与信限度額の引き上げに関する電子メールを受け取ります。
+
+## <a name="prerequisites-for-setting-up-the-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合を設定するための前提条件
+
+次の一覧は、Microsoft Power Platform 統合を設定するための前提条件に関する詳細を提供します。
+
+- テナントで少なくとも 1 ギガバイト (GB) の Microsoft Power Platform データベース ストレージ容量スペースが使用可能であることを確認してください。 それ以外の場合、設定は失敗です。 [Power Platform管理センター](https://admin.powerplatform.microsoft.com/resources/capacity) にて、容量を表示できます。 
+
 - Finance and Operations 環境管理者を識別します。 **環境の詳細** セクションにて、情報を確認できます。
 
     ![環境の詳細タブ](media/EnvironmentDetails.png)
-    
-- Power Platform 環境ガバナンス ポリシーを検証します。 検証するには、**グローバル管理者** または **Power Platform 管理者** である必要があります。
-    
+
+- Microsoft Power Platform 環境ガバナンス ポリシーを検証します。 検証するには、**グローバル管理者** または **Power Platform 管理者** である必要があります。
+
     1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com) にサイン インします。
-    2. Power Platform サイトの右上端にあるギア アイコンを選択します。
-    
-        ![Power Platform の設定](media/PowerPlatformSettings.png)
-    
-- **全員** に Power Platform 実稼働環境の作成を許可しない組織のために、Finance and Operations 環境管理者のアカウントを次の Power Platform 管理ロールの 1 つを追加する必要があります。
-    
-    Finance and Operations 環境管理者は、次のいずれかのロールに追加する必要があります。 このアクションを実行するには、グローバル管理者が必要です。
+    2. ページの右上隅にある **設定** ボタン (ギヤ記号) を選択して、**Power Platform 設定** ウィンドウを開きます。
+
+        ![Power Platform 設定ウィンドウ](media/PowerPlatformSettings.png)
+
+- 全員に Microsoft Power Platform 実稼働環境の作成を **許可しない** 組織のために、Finance and Operations 環境管理者のアカウントを次の Microsoft Power Platform 管理ロールの 1 つを追加する必要があります。 この変更を行うには、**グローバル管理者** が必要です。
+
     - Global 管理者
     - Dynamics 365 管理者
     - Power Platform 管理者
-    
-    詳細については、[サービス管理者ロールを使用したテナントの管理](/power-platform/admin/use-service-admin-role-manage-tenant) を参照してください。
 
-- Power Platform 環境を作成するすべてのユーザーはライセンスが必要です。 Finance and Operations 環境管理者アカウントは、Microsoft 365 管理者センターを使用して **Dynamics 365 Unified Operations プラン** ライセンスを適用する必要があります。
+    > [!NOTE]
+    > 上記のロールは、Finance and Operations 管理者アカウントに必要なアクセス許可よりも多くのアクセス許可を提供することがあります。 したがって、この統合にさらに制限されたロールが最終的に Azure Active Directory (Azure AD) に追加されます。 新しいロールに上記のロールは必要ではありません。 最小限の特権の管理者を維持する場合、一時的に上記のロールの 1 つを付与できます。 Microsoft Power Platform 統合が設定された後、そのロールを削除します。
 
-## <a name="enabling-the-power-platform-integration"></a>Power Platform 統合の有効化
-現在、Power Platform 統合は Finance and Operations 環境の配置後にのみ設定できます。  将来、Finance and Operations 環境自体を配置中や新しいサンドボックス環境と実稼働環境でも可能になります。
+- Microsoft Power Platform 環境を作成するすべてのユーザーはライセンスが必要です。 **Dynamics 365 Unified Operations プラン** または **AX エンタープライズ** ライセンス、または **Dynamics 365 Finance** などのアプリケーション固有のライセンスを Finance and Operations 環境の管理者アカウントに適用するには、Microsoft 365 管理センターを使用する必要があります。
+
+## <a name="enabling-the-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合の有効化
+
+Microsoft Power Platform 統合は、LCS で新しい Finance and Operations 環境を作成するときに有効にすることができます。 また、既存の Finance and Operations 環境で有効にできます。
+
+### <a name="enable-during-environment-deployment"></a>環境の配置中に有効にする
+
+LCS に新しい Finance and Operations 環境を設定する場合、配置ウィザードには値を設定することができる複数のセクションが含まれています。 それらセクションの 1 つが **Power Platform 統合** という名前です 。
+
+![配置ウィザードの Power Platform 統合セクション](media/powerplat_integration_step0.png)
+
+**Power Platform 統合** セクションを構成するには、次の手順に従います。
+
+1. **Power Platform 環境の構成** オプションを **はい** に設定します。 複数の追加設定が使用可能になります。
+2. **Power Platform テンプレート** フィールドで、次のいずれかの値を選択します。
+
+    - **Dynamics 365 標準** – この基本テンプレートは、すべての Finance and Operations 環境に適用できます。 特定のテンプレートが必要ない場合、この値を選択します。
+    - **Project Operations** – このテンプレートは、プロジェクト操作のシナリオに固有のものです。 この値は、テナントに Dynamics 365 Project Operations のライセンスと資格が付与されている場合にのみ使用できます。
+
+3. DevTest またはクラウド ホスト環境を配置する場合、**環境の種類** フィールドが使用可能です。 そこで、作成しリンクする Dataverse 環境の種類を選択できます。 それ以外の場合、既定では、環境の種類はレベル 2 から 5 の承認テスト環境の場合は **サンドボックス** に、運用環境の場合は **運用** に設定されます。
+4. **同意** チェック ボックスをオンにして、統合の使用条件に同意することを示します。
+
+> [!IMPORTANT]
+> Finance and Operations 環境に作成およびリンクされる Dataverse 環境の **言語** および **通貨** の値は、Azure AD テナントの物理的なアドレスに基づいて自動的に決定されます。 たとえば、住所が米国ワシントン州 Redmond である場合、既定では言語は英語で、通貨は米ドル (USD) になります。
+>
+> 既定値とは異なる値が必要な場合、Microsoft サポートに問い合わせください。 Finance and Operations 環境に手動でプロビジョニングする既存の Dataverse 環境をリンクすることができます。 最終的には、設定オプションとして言語と通貨のフィールドが追加され、顧客は手動で設定したり、既定値を受け入れることができます。
 
 ### <a name="set-up-after-environment-deployment"></a>環境を配置後に設定
 Finance and Operations 環境が配置された後に設定するには、次の手順に従います。
 
 1. Finance and Operations 環境が LCS を通じて展開された後、LCS の **環境詳細** ページが開きます。
 2. **Power Platform 統合** セクションで、**設定** を選択します。
+
+    ![Power Platform 統合セクションの設定ボタン](media/powerplat_integration_step1.png) 
+
 3. **Power Platform 環境の設定** ダイアログ ボックスで契約条件に同意し、ダイアログ ボックスの下部にある **設定** を選択します。
 
     > [!NOTE]
-    > これにより、Power Platform 管理センターで Microsoft Dataverse ベースの環境がプロビジョニングされ、通常は 1GB のデータベース ストレージ容量が必要になります。  使用する Finance and Operations 環境と同じ名前が必要です。  二重書き込みプラットフォーム レベルのコンポーネントはインストールされますが、二重書き込みアプリケーション コンポーネントは設定または有効化されません。  これは別のアクションです。  
+    > これにより、Power Platform 管理センターで Microsoft Dataverse ベースの環境がプロビジョニングされ、通常は 1GB のデータベース ストレージ容量が必要になります。 使用する Finance and Operations 環境と同じ名前が必要です。 二重書き込みプラットフォーム レベルのコンポーネントはインストールされますが、二重書き込みアプリケーション コンポーネントは設定または有効化されません。 これは別のアクションです。
 
 4. Microsoft Power Platform 環境が準備されているというメッセージが表示された場合は、**OK** を選択します。
 
@@ -134,15 +181,21 @@ Finance and Operations 環境が配置された後に設定するには、次の
     Dataverse 環境がプロビジョニングされた後、**新しいアドインのインストール** と **二重書き込みアプリケーション** ボタンが **Power Platform 統合** セクションで利用できます。
 
     ![新しいアドイン ボタンのインストール](media/InstallANewAddIn.png)
-    <br/>
+
     ![二重書き込みアプリケーション ボタン](media/powerplat_integration_dwApp_button.png)
 
+> [!IMPORTANT]
+> Finance and Operations 環境に作成およびリンクされる Dataverse 環境の **言語** および **通貨** の値は、Azure AD テナントの物理的なアドレスに基づいて自動的に決定されます。 たとえば、住所が米国ワシントン州 Redmond である場合、既定では言語は英語で、通貨は米ドル (USD) になります。
+>
+> 既定値とは異なる値が必要な場合、Microsoft サポートに問い合わせください。 Finance and Operations 環境に手動でプロビジョニングする既存の Dataverse 環境をリンクすることができます。 最終的には、設定オプションとして言語と通貨のフィールドが追加され、顧客は手動で設定したり、既定値を受け入れることができます。
+
+
 ### <a name="troubleshooting-the-setup"></a>設定のトラブルシューティング
-設定は、Dataverse ベースの環境を配置するさまざまなステージで失敗する可能性があります。   
+
+設定は、Dataverse ベースの環境を配置するさまざまなステージで失敗する可能性があります。 
 
 ![デュアル書き込みの失敗](media/Error.png)
 
-- 設定が失敗すると、エラー メッセージが表示されます。  エラー メッセージに基づいて、ライセンスや容量の問題に対処する必要がある場合があります。  これらが解決されたら、LCS の **環境の詳細** ページの **Power Platform 統合** セクションにある **再開** ボタンを使用して設定を完了することができます。
-
+- 設定が失敗すると、エラー メッセージが表示されます。 エラー メッセージに基づいて、ライセンスや容量の問題に対処する必要がある場合があります。 これらが解決されたら、LCS の **環境の詳細** ページの **Power Platform 統合** セクションにある **再開** ボタンを使用して設定を完了することができます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

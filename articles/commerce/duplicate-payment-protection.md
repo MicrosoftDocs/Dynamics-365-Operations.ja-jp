@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9d19dd65f92030667e8f6bcf731027f2754cf9d4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 40a72fdb6e75da3d5435b98b4935bb419ed45cdb
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792763"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022850"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 
@@ -39,7 +39,7 @@ ms.locfileid: "5792763"
 
 このトピックでは、重複支払保護機能の次の側面について説明します。
 
-- [前提条件](#prerequisites) – Modern POS でこの機能を活用するため、一連の前提条件を設定します。
+- [前提条件](#prerequisites) – Modern POS でこの機能を使用するため、一連の前提条件を設定します。
 - [シナリオの詳細](#scenario-details) – 重複支払保護機能の対象となるシナリオの詳細な説明。
 - [トラブルシューティング](#troubleshooting) – 重複支払保護機能で問題が発生したときに実行する手順です。
 - [追加リソース](#additional-resources) – 重複支払保護機能を使用する場合に役に立つ関連記事の一覧。
@@ -136,11 +136,11 @@ POS またはネットワーク通信が回復した後は、レジ担当者が�
 
 ### <a name="payment-recovery-fails"></a>支払の回復が失敗する時
 
-Modern POS で、前の支払の復元中にエラーが発生する可能性があります。 これは、支払コネクタまたは支払ゲートウェイ/プロセッサが前の支払の復元を許可しないという問題がある時に発生します。 この問題を解決するには、前の支払を復元できないために起きているので、レジ担当者は [支払の回復をスキップする方法](#how-to-skip-payment-recovery) セクションで説明されているように、回復をスキップしなければなりません。
+Modern POS で、前の支払の復元中にエラーが発生する可能性があります。 このエラーは、支払コネクタまたは支払ゲートウェイ/プロセッサが前の支払の復元を許可しないという問題がある時に発生します。 この問題を解決するには、前の支払を復元できないために起きているので、レジ担当者は [支払の回復をスキップする方法](#how-to-skip-payment-recovery) セクションで説明されているように、回復をスキップしなければなりません。
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

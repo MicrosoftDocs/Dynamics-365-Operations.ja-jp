@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9682136b842d7ff8a3ae2ff35e6a4def3d7349a4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: dd73b6367b8833b292c408ea772e12ee6bf93cfb
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794327"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019521"
 ---
 # <a name="online-store-publishing-architecture"></a>オンライン ストア発行アーキテクチャ
 
@@ -44,7 +44,7 @@ Commerce オンライン店舗チャネルを公開するとき、Microsoft Dyna
 5. コマース公開ジョブは、CRT アプリケーション プログラミング インターフェイス (API) から実行され、オンライン ストアで作成したサイトの階層を作成します。
 6. Commerce Data Exchange: Real-time Service は、CRT API から公開ジョブ アクションの状態を受け取り、状態を公開します。 状態は、**公開済** または **エラー** のいずれかになります。
 
-チャンネルを公開する特定の手順については、[オンライン ストアの設定](https://msdn.microsoft.com/jj682095) を参照してください。 チャンネルを公開した後は、カタログを公開できます。
+チャンネルを公開する特定の手順については、[オンライン ストアの設定](/dynamicsax-2012/appuser-itpro/set-up-an-online-store) を参照してください。 チャンネルを公開した後は、カタログを公開できます。
 
 ## <a name="publish-an-online-store-catalog"></a>オンライン ストア カタログの公開
 

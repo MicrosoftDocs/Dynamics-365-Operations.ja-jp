@@ -2,7 +2,7 @@
 title: Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 description: このトピックでは、セルフサービスを使用して、従来型の店舗にあるコンピューターに Commerce Scale Unit (自己ホスト) を構成し、インストールする方法について説明します。
 author: jashanno
-ms.date: 04/06/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 673c062ade8c9a5ed084d6022b59c358e37228b2
-ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
+ms.openlocfilehash: 27be73261c963506034eb9e2f026282d23bc61b8
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5864368"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019971"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 
@@ -42,7 +42,7 @@ ms.locfileid: "5864368"
 1. アプリケーション ID (クライアント ID) とキー (シークレット) を作成する Microsoft Azure Active Directory (Azure AD) アプリ登録を生成します。 手順については、[Azure Active Directory アプリケーションを作成する](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application) を参照してください。 このトピックでは、Azure ユーザーのアクセス許可と要件を確認し、アプリ登録を生成する方法について説明します。
 
     > [!IMPORTANT]
-    > Azure ではなく Active Directory Federation Services を使用するオンプレミス環境で使用する Commerce Scale Unit をインストールする場合は、オンプレミス環境の Commerce インストール ドキュメントの手順に従います。 詳細については、[オンプレミス環境での Commerce チャネル コンポーネントのインストール手順](../../dev-itpro/deployment/deploy-retail-onprem.md) を参照してください。
+    > Azure ではなく Active Directory Federation Services を使用するオンプレミス環境で使用する Commerce Scale Unit をインストールする場合は、オンプレミス環境の Commerce インストール ドキュメントの手順に従います。 詳細については、[オンプレミス環境での Commerce チャネル コンポーネントのインストール手順](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) を参照してください。
 
 2. Commerce Scale Unit のアプリケーション ID (クライアント ID) とキーが作成された後、Commerce でクライアント ID を受け入れる必要があります。 **システム管理** &gt; **設定** &gt; **Azure Active Directory アプリケーション** の順に移動します。 アプリケーション ID (クライアントID) を **クライアント ID** 列に入力し、説明のテキストを **名** 列に入力および **RetailServiceAccount** を **ユーザー ID** 列に入力します。
 
@@ -156,7 +156,7 @@ ms.locfileid: "5864368"
 > Commerce Scale Unit (自己ホスト) インストーラーを実行する前に、インストーラーの実行可能ファイルと同じ名前の構成ファイルがあることを確認してください。 これは、**ExecutableInstallerName.xml** のように表示され、両方のファイルを同じフォルダに配置します。 別の方法として、構成ファイルを手動で指定するためのコマンド ライン区切り記号があります。
 > Retail Cloud POS をインストールして使用する場合は、次の手順に従って、インストーラーを初めて実行するときに構成を初期化する必要があります。
 
-Commerce Scale Unit インストーラーを実行する前に、すべての[システム要件](../../fin-and-ops/get-started/system-requirements.md) が満たされていることを確認してください。
+Commerce Scale Unit インストーラーを実行する前に、すべての[システム要件](../../fin-ops-core/fin-ops/get-started/system-requirements.md) が満たされていることを確認してください。
 
 > [!IMPORTANT]
 > オンプレミス環境で使用する Commerce Scale Unit をインストールする場合は、次のように、管理者権限を使用して、コマンド ラインから起動する必要があります: StoreSystemSetup.exe -UseAdfsAuthentication
@@ -178,8 +178,8 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 2. インストーラーは、すべての前提条件が満たされていることを検証します。 有効なバージョンの Microsoft SQL Server が見つからない場合、前提条件の確認中にインストーラーは失敗します。  サポートされているバージョンの SQL Server をインストールし、インストーラーを再試行します。
 
     > [!NOTE]
-    > - この前提条件を満たすためには、SQL Server に全文検索機能を搭載し、最低限トランスポート層セキュリティ (TLS) 1.2 がサポートされている必要があります。 サポートされているバージョンの SQL Server のシステム要件を確認してください。
-    > - システムの再起動が必要な場合、インストーラーはユーザーにプロンプトを表示します。  このプロンプトは、再起動が必要かどうかをすべてのアプリケーションに通知する Windows システム レジストリ キーに基づいています。 インストールを続行する前に再起動することをお勧めしますが、再起動は必須ではなく、インストーラーはコンピュータを再起動せずに続行することができます。
+    > - この前提条件を満たすためには、SQL Server に全文検索機能を搭載し、最低限トランスポート層セキュリティ (TLS) 1.2 がサポートされている必要があります。 サポートされているバージョンの SQL Server のシステム要件を確認してください。 [SQL Server のバージョンとライセンス](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) を確認することを強くお勧めします。
+    > - システムの再起動が必要な場合、インストーラーはユーザーにプロンプトを表示します。  このプロンプトは、再起動が必要な場合すべてのアプリケーションに通知する Windows システム レジストリ キーに基づいています。 インストールを続行する前に再起動することをお勧めしますが、再起動は必須ではなく、インストーラーはコンピュータを再起動せずに続行することができます。
 
 3. Application Object Server (AOS) の URL を確認し、**次へ** を選択します。 (AOS URL とは、Headquarters にアクセスするために使用される URL のことです。)
 
@@ -207,7 +207,7 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 
     > [!IMPORTANT]
     > - オンプレミス環境で使用する Commerce Scale Unit をインストールするとき、クラウド POS は Azure または AD FS アプリケーションの構成を要求しないため、**Retail クラウド POS の構成** のマークを解除することが重要です。
-    > - オンプレミス環境で使用する Commerce Scale Unit をインストールするとき、使用されるクライアント ID (アプリケーション ID) およびシークレット (キー) は、[オンプレミス環境の Commerce チャネル コンポーネントのインストール手順](../../dev-itpro/deployment/deploy-retail-onprem.md) トピックの手順 6 ～ 8 で実行される構成手順で実行される PowerShell スクリプトによって生成される値になります。 (手順 6 ではクライアント ID を作成し、手順 8 ではコピーされるシークレットをリセットします)。
+    > - オンプレミス環境で使用する Commerce Scale Unit をインストールするとき、使用されるクライアント ID (アプリケーション ID) およびシークレット (キー) は、[オンプレミス環境の Commerce チャネル コンポーネントのインストール手順](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) トピックの手順 6 ～ 8 で実行される構成手順で実行される PowerShell スクリプトによって生成される値になります。 (手順 6 ではクライアント ID を作成し、手順 8 ではコピーされるシークレットをリセットします)。
 
     Web アプリを作成するとき、最初の URI と URL は特定の値である必要はありません。 作成されるアプリケーション ID (クライアント ID) とキー (シークレット) のみ重要です。
 
@@ -309,7 +309,7 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 15. 高度なセキュリティの Microsoft Windows ファイアウォールを起動します。
 16. Windows ファイアウォールで、TCP ポート 1433 を開放する受信ルールを作成します。
 
-SQL Server および Windows ファイアウォールに関する詳細については、[データベース エンジンへ アクセス用の Windows ファイアウォールをコンフィギュレーションする](https://msdn.microsoft.com/library/ms175043.aspx) を参照してください。
+SQL Server および Windows ファイアウォールに関する詳細については、[データベース エンジンへ アクセス用の Windows ファイアウォールをコンフィギュレーションする](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access) を参照してください。
 
 #### <a name="installation-on-the-second-computer"></a>2 台目のコンピューターへのインストール
 
@@ -328,7 +328,7 @@ SQL Server および Windows ファイアウォールに関する詳細につい
 
 4. **クラウド POS のコンフィギュレーション** を選択し、Azure Web アプリケーションを作成するための適切なアクセス許可を持つ Azure AD 資格情報を入力します。
 
-    Azure Web アプリ、それを作成する方法、および新しいキー (シークレット) を生成する方法の詳細については、[リソースにアクセスできる Azure Active Directory アプリケーションおよびサービス プリンシパルを作成するポータルの使用](https://azure.microsoft.com/documentation/articles/resource-group-create-service-principal-portal/) を参照してください。 サインイン URL やアプリ ID URI は重要ではないことに注意してください。
+    Azure Web アプリ、それを作成する方法、および新しいキー (シークレット) を生成する方法の詳細については、[リソースにアクセスできる Azure Active Directory アプリケーションおよびサービス プリンシパルを作成するポータルの使用](/azure/active-directory/develop/howto-create-service-principal-portal) を参照してください。 サインイン URL やアプリ ID URI は重要ではないことに注意してください。
 
 5. セットアップが正常に行われたときは、インストーラーを終了しません。
 
@@ -412,6 +412,8 @@ Retail Server が一定時間の後に停止した場合、確認すべき 2 つ
 
 - パスワード ポリシーにより、パスワード (パスワードの有効期限) を変更するために生成されたサービス アカウントが求められているかどうかを確認します。
 - 現在のインストール (非べき等) で同一のインストーラーを再実行します。これにより、サービス アカウントのパスワードが更新されるか、選択したアカウントのパスワードの更新が許可されます。
+
+[SQL Server のバージョンとライセンス](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) を確認することも強くお勧めします。
 
 ### <a name="uninstall-commerce-scale-unit"></a>Commerce Scale Unit のアンインストール
 

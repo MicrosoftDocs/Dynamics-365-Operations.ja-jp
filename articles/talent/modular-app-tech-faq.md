@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: anbichse
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.openlocfilehash: 68e11f4733c612d4f7e060daa77b941b60d6adad
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 229cd09656b527f881055ea2c7a37a716fdcc681
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890286"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6058140"
 ---
 #  <a name="provision-onboard"></a>オンボード プロビジョニング
 

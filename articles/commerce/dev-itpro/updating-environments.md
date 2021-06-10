@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 0368f30a36f46488c8657dbd44fc5e6e8383899e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de39f77857dffa22a10a1d7833d70730943938cf
+ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792911"
+ms.lasthandoff: 05/15/2021
+ms.locfileid: "6048856"
 ---
 # <a name="update-code-and-environments-for-commerce-projects"></a>Commerce プロジェクトのコードと環境の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "5792911"
 
 データまたはコードのいずれかを更新することにより、環境を更新できます。
 
-データを更新する複数の方法があります。 環境にデータを取得する方法を示す例については、[データ エンティティおよびデータ パッケージ](../../dev-itpro/data-entities/integration-overview.md)を参照してください。
+データを更新する複数の方法があります。 環境にデータを取得する方法を示す例については、[Finance and Operations アプリとサード パーティ サービス間の統合](../../dev-itpro/data-entities/integration-overview.md) を参照してください。
 
 環境を更新するときは、データベース全体の移動も考慮する必要があります。 このアプローチにより、データをある環境から別の環境に素早く簡単に複製できます。
 
@@ -45,13 +45,13 @@ ms.locfileid: "5792911"
 
 一部の更新プログラムがアプリケーションの更新プログラムとバイナリの更新プログラムの両方を必要とすることに注意してください。 修正プログラムの推奨事項については、次のセクションを参照してください。
 
-サード パーティ パッケージは、アプリケーション パッケージと似ていますが、他のユーザーによって開発されました。 独立系ソフトウェア ベンダー (ISV) パッケージの使用方法の詳細については、[ランタイム パッケージの管理](../../dev-itpro/dev-tools/manage-runtime-packages.md)を参照してください。
+サード パーティ パッケージは、アプリケーション パッケージと似ていますが、他のユーザーによって開発されました。 独立系ソフトウェア ベンダー (ISV) パッケージの使用方法の詳細については、[ランタイム パッケージの管理](../../fin-ops-core/dev-itpro/dev-tools/manage-runtime-packages.md)を参照してください。
 
 ## <a name="updating-data-by-restoring-the-database"></a>データベースを復元してデータを更新する
 
 便利で一般的な操作の 1 つでは、データベース全体が 1 つの環境から別の環境に移動されます。 たとえば、追加機能を開発する準備をしているときに、生産データベースを開発環境に移動することがあります。 また、運用プロセスの一部として、ゴールデン セットアップ データベースを生産データベースに移動することもできます。
 
-詳細については、[Azure SQL から SQL Server へのデータベースのコピー](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)を参照してください。 ソースおよび宛先の環境に同じ binary バージョンがない場合、ビルドおよびデータベースの同期 (開発環境の) または配置 (サンドボックスまたは実稼働環境の) のいずれかを行う必要があります。
+詳細については、[Azure SQL から SQL Server へのデータベースのコピー](/dynamics365/commerce/dev-itpro/dbmovement-operations)を参照してください。 ソースおよび宛先の環境に同じ binary バージョンがない場合、ビルドおよびデータベースの同期 (開発環境の) または配置 (サンドボックスまたは実稼働環境の) のいずれかを行う必要があります。
 
 別の環境から移動されたデータベースを復元するたびに、データベース内の特定のリンクは、中断することができます。 環境再プロビジョニング ツールでは、使用されている環境タイプに関係なく、既定データベース グループのすべての壊れたリンクを修正します。 一般的なガイドラインでは、データベースが別の環境から来る場合、環境再プロビジョニング ツールを実行する必要があります。
 
@@ -129,7 +129,7 @@ X ++ コードの場合、開発者はメタデータ フォルダを同期し�
 
 ダウンタイム、ダウンタイムの軽減、データ移行、ストアの更新、および一括配置など、運用環境を更新するときには、多くの考慮事項があります。 コマース プロジェクトでは、通常、配置以上のものが必要となるため、更新に必要なすべての手順を計画しておくことは非常に重要です。 いくつか追加の考慮事項は、このトピックの「ヒント」セクションを参照してください。
 
-Go-Live の計画がかなり早く開始されたと見なされます。 詳細については、[実装ライフサイクル](../../fin-and-ops/imp-lifecycle/implementation-lifecycle.md)を参照してください。
+Go-Live の計画がかなり早く開始されたと見なされます。 詳細については、[実装ライフサイクル](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md)を参照してください。
 
 ### <a name="step-5-merge-the-code-from-the-main-branch-to-the-prodrel1-branch"></a>手順 5: Main ブランチから ProdRel1 ブランチへコードをマージ
 
@@ -158,7 +158,7 @@ Finance およびコマース カスタマイズ パッケージは、ビルド�
 
 ## <a name="move-to-a-new-version"></a>新しいバージョンへの移動
 
-新しいバージョン (7.2 から 7.3、7.3 から 8.0 など) にアップグレードするには、新しい環境を配置する必要があります。 これらのアップグレードが適用可能な場合は、コードのアップグレードとデータベースのアップグレードも実行する必要があります。 詳細については、[Code の移行ホーム ページ](../../dev-itpro/migration-upgrade/code-migration-home-page.md)を参照してください。
+新しいバージョン (7.2 から 7.3、7.3 から 8.0 など) にアップグレードするには、新しい環境を配置する必要があります。 これらのアップグレードが適用可能な場合は、コードのアップグレードとデータベースのアップグレードも実行する必要があります。 詳細については、[Code の移行ホーム ページ](../../fin-ops-core/dev-itpro/migration-upgrade/code-migration-home-page.md)を参照してください。
 
 ## <a name="tips"></a>ヒント
 - LCS アセット ライブラリの名前とダウンロードされた zip パッケージの名前について、適切なパッケージ名の名前付け規則を決定します。 このようにして、配置したパッケージと送信元を簡単に確認できます。 パッケージ名にスペースを避けてください。 名前付け規則の例は次の通りです。

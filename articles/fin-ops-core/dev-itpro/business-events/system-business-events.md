@@ -5,7 +5,6 @@ author: sarvanisathish
 ms.date: 02/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 573941023fcd5e4f6f59b0275d0f0d71f10de1c2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d95e9436c8f1f890cf14d394651a04e7fa998c0e
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745349"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019066"
 ---
 # <a name="batch-business-events"></a>バッチ ビジネス イベント
 

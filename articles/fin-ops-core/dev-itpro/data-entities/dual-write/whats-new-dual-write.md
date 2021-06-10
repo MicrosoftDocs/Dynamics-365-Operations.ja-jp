@@ -4,20 +4,18 @@ description: このトピックでは、リリース計画、主要な発表、�
 author: robinarh
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 636b4535925d795cfbf9c6d94bf48b4f9ef52ff9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 63351985f0a5d94a137ab28a2d01855fb0089329
+ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941071"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6093904"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -33,17 +31,63 @@ ms.locfileid: "5941071"
 + [Dataverse のデータ - フェーズ 1 と 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Dataverse の Finance and Operations データ – フェーズ 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
-## <a name="april-2021-release"></a>2021 年 4 月リリース
+## <a name="may-2021-release"></a>2021 年 5 月リリース
 
-2021 年 4 月リリースされた修正プログラムの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+2021 年 5 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
 
 このリリースには、次の表に記載されている機能とバグ修正が含まれています。
 
 | 機能 | 説明 |状態 |
 |------|---------|-------|
-| バグ修正| **メモ** テーブルで **Null** 値が理解するようになりました。 | 一般提供 |
-| バグ修正| デュアル書き込みオーケストレーション パッケージの2.2.2.50では、**アドレス** テーブルの既存のキー (**msdyn_locationid** フィールド) を、**msdyn_locationid** と **parentid** フィールドの組み合わせである新しいキーに置き換えません。 代わりに、両方のキーが表示されます。 これは新しいバージョン 2.2.2.60 で修正されています。 この新しいバージョンは、[当事者およびグローバル アドレス帳](party-gab.md) ソリューションを使用している場合にのみ適用されます。| 一般提供 |
+| 政府のコミュニティ クラウドのサポート | 政府のコミュニティ クラウドのリージョンでの二重書き込みランタイムがサポートされます。 | 一般提供 |
+| わかりやすいエラー メッセージ | ライブ同期の失敗のいくつかに関してわかりやすいエラー メッセージを有効にします。 | 一般提供 |
 
+## <a name="may-2021-release-of-party-and-global-address-book"></a>2021 年 5 月リリースの当事者およびグローバル アドレス帳
+
+2021 年 5 月リリースされた修正プログラムの [二重書き込み当事者およびグローバル アドレス帳ソリューション 3.0.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwgabsln) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されているバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| バグ修正| Customer Engagement アプリでは、潜在顧客に郵便住所が含まれ見込みありとされる場合、その郵便住所がアカウントに関連付けられます。 ただし、Finance and Operations アプリには送られません。| 一般提供 |
+| バグ修正| Customer Engagement アプリでは、既存のアカウントまたは連絡先に住所を追加する場合、住所は Finance and Operations アプリには送られません。| 一般提供 |
+| バグ修正| 顧客住所テーブルには、さらに多くの住所フィールドが追加されます。 | 一般提供 |
+| バグ修正| Dataverse では、msdyn_contactforparties テーブルの表示名を、**顧客または仕入れ先の連絡先** に変更した | 一般提供 |
+| バグ修正| 連絡先 V2 (msdyn_contactforparties) のマッピングで language transformation を修正しました。 | 一般提供 |
+| バグ修正| CDS 関係者の配送先の場所 (msdyn_partypostaladdresses) マッピングで初期同期の問題を修正し、顧客住所テーブル内の一部のレコードが失われしないようにしました。 | 一般提供 |
+
+### <a name="solution-details"></a>ソリューションの詳細
+
+|ソリューション名 | 新たな変更がありますか? | 以前のバージョン | 新しいバージョン |
+|--------------|--------------|--------------|--------------|
+|当事者|あり|3.0.0.1|3.0.0.26|
+|Dynamics365GABExtended|あり|3.0.0.1|3.0.0.26|
+|Dynamics365GABDualWriteEntityMaps|あり|3.0.0.1|3.0.0.26|
+|Dynamics365GABPartyAnchor|あり|3.0.0.1|3.0.0.26|
+|Dynamics365GABPartyCommon|あり|3.0.0.1|3.0.0.26|
+
+### <a name="map-instructions"></a>マッピングの手順
+
+新しいマップを適用するには、次の手順に従います。
+
+1. CDS 住所履歴 V2 (msdyn_postaladdresses) のマッピング用に、最新のマップ バージョン 1.0.0.2 を適用します。
+2. 連絡先 V2 (msdyn_contactforparties) のマッピング用に、最新のマップ バージョンを適用します。
+3. CDS 関係者の配送先の住所 (msdyn_partypostaladdresses) のマッピングの初期同期を 2 回実行し、 住所の同時更新によって顧客住所テーブルの住所レコードが失われないようにします。
+
+## <a name="april-2021-release"></a>2021 年 4 月リリース
+
+2021 年 4 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.25](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| レコードの削除 | 複数のエンティティを含むトランザクションでのレコードの削除を処理します。 | 一般提供
+| バグ修正 | キャッチアップ同期中に競合の解決を処理します。 | 一般提供
+| バグ修正 | 環境でのソリューションのインポートに関連する問題。 | 一般提供
+| バグ修正 | **メモ** テーブルで **Null** 値が理解するようになりました。 | 一般提供 |
+| バグ修正 | デュアル書き込みオーケストレーション パッケージの2.2.2.50では、**アドレス** テーブルの既存のキー (**msdyn_locationid** フィールド) を、**msdyn_locationid** と **parentid** フィールドの組み合わせである新しいキーに置き換えません。 代わりに、両方のキーが表示されます。 これは新しいバージョン 2.2.2.60 で修正されています。 この新しいバージョンは、[当事者およびグローバル アドレス帳](party-gab.md) ソリューションを使用している場合にのみ適用されます。| 一般提供 |
 
 ## <a name="march-2021-release"></a>2021 年 3 月リリース
 
@@ -116,7 +160,6 @@ ms.locfileid: "5941071"
 | キャメルケースされた列のマッピング | キャメルケースされたナビゲーション プロパティを使用した列マッピングのサポートを追加します。 | 一般提供
 | バグ修正 | 未認識のタグ コンフィギュレーションによって二重書き込みの実行がスキップされるバグを修正する | 一般提供
 
-
 ## <a name="september-2020-release"></a>2020 年 9 月リリース
 
 2020 年 9 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.21](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
@@ -151,7 +194,6 @@ ms.locfileid: "5941071"
 |------|---------|-------|
 | 二重書き込み設定後に法人を編集する | 企業や法人の一覧は静的ではなく、常に変化しています。 たとえば、段階的なロールアウトや買収の際に、新しい会社を追加することが必要な場合があります。 以前は、会社や法人をシステムのダウンタイムなしで追加することはできませんでした。 このダウンタイム中に、環境のリンクを解除して再リンクする必要があります。 これは、特にデータが既に存在する場合は、費用がかかる可能性があります。 この機能を使用すると、リンクを解除して再リンクすることなく、ライブ環境で会社を追加できます。 | 一般提供 |
 
-
 ## <a name="may-2020-release"></a>2020 年 5 月リリース
 
 2020 年 5 月リリースのデュアル書き込みオーケストレーション パッケージ (バージョン 2.0.777.353) には、次のテーブルに示す機能とバグ修正が含まれています。
@@ -168,8 +210,5 @@ ms.locfileid: "5941071"
 | 見積もりと注文の作成 | B2C 顧客の見積もりと注文の作成を有効にします。 | 一般提供 |
 | テナント管理者レベルの承認要件の削除 | これまでは、デュアル書き込みを有効にするには、アプリケーションに対する承認を明示的に行う必要がありました。 これは、実用的で、追加の承認が必要であるため、時間がかかる場合があります。 この機能を使用すると、この前提条件と、アプリケーションに対する同意を明示的に提供する必要がなくなりました。 | 一般提供 |
 | デュアル書き込み環境の強制リンク解除 | これまでは、二重書き込みのテスト中に、すべてのテーブル マップを無効にしてから、二重書き込み環境のリンクを解除する必要がありました。 この方法は煩雑になり、いずれかの環境が使用できない場合は不可能になることがあります。 この新しい機能を使用すると、テスト環境とトライアル環境を簡単にリンク解除することができます。 | 一般提供 |
-
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

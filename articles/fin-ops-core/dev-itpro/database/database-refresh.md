@@ -2,7 +2,7 @@
 title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 Finance のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 03/01/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd9259d3a98dc9e37efc791627726f82e73e79a8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f2d2f70bfbbeed6e55cf9864eedd6cd347a5c72c
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800371"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092392"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -62,7 +62,7 @@ ms.locfileid: "5800371"
 #### <a name="these-elements-are-removed-for-all-database-refresh-operations"></a>これらの要素は、すべてのデータベースの更新操作で削除されます
 
 * SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
-* DocuValue テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
+* Azure Blob Storage に保存されているすべてのファイル。 これには、ドキュメントの添付ファイル (DocuValue テーブルおよび DocuDeletedValue テーブルから)、およびカスタム Microsoft Office テンプレート (DocuTemplate テーブルから) が含まれます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
@@ -83,7 +83,7 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 - 更新処理では、実行対象のデータベースで削除が実行されます。
 - ターゲット環境は、データベースのコピーがターゲット サーバーに達するまで使用可能です。 その時点以降は、更新プロセスが完了するまで、ターゲット環境はオフラインになります。
 - リフレッシュは、アプリケーションおよび Financial Reporting データベースにのみ影響します。
-- Azure blob storage のドキュメントは、ある環境から別の環境にコピーされません。 つまり、添付されたドキュメント処理ドキュメントとチームプレートは変更されず、現在の状態にとどまります。
+-  ある環境から別の環境に、**Azure Blob Storage に保管してあるファイルはコピー** されません。 これには、**ドキュメントの添付ファイルやカスタム Microsoft Office テンプレート** が含まれます。 これらのドキュメントは変更されず、現在の状態のままになります。 
 - 管理者ユーザー、およびその他の内部サービス ユーザー アカウントを除くすべてのユーザーは使用できなくなります。 このプロセスにより、ほかのユーザーがシステムに復帰する前に管理者ユーザーがデータを削除または難読化できます。
 - 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
 - 定期的なインポートおよびエクスポート ジョブを持つすべてのデータ管理フレームワークは完全に処理され復元が開始される前にターゲット システムで停止する必要があります。 さらに、すべての定期的なインポートおよびエクスポート ジョブが完全に処理された後に、データベースをソースから選択することをお勧めします。 これにより、いずれかのシステムから Azure ストレージにオーファン ファイルが存在しないことが保証されます。 これは、データベースがターゲット環境にリストアされた後にオーファン ファイルを処理できないため重要です。 復元後、統合ジョブを再開することができます。

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 59030654d3df53549e8da69d996ba2e029b428a0
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 393acaf355141f6445354906886e74e9743ea6e9
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923249"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112637"
 ---
 # <a name="x-data-selection-and-manipulation-overview"></a>X++ データの選択と操作の概要
 
@@ -57,5 +57,6 @@ ms.locfileid: "5923249"
 
 **executeQueryWithParameters** API は、[SQL インジェクション攻撃の軽減](../query-with-parameters.md) に役立ちます。
 
+結合の使用の詳細については、[Exists 結合および Notexists 結合についてのよくある誤解](https://community.dynamics.com/365/financeandoperations/b/peter-s-x-developer-blog/posts/common-misconception-about-exists-and-notexists-joins) を参照してください。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

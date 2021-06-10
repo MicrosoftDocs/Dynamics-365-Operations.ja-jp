@@ -2,7 +2,7 @@
 title: Commerce Data Exchange 実装ガイダンス
 description: このトピックでは、実装のヒントや総合的なガイダンスを含む、Commerce Data Exchange の概要を示します。
 author: jashanno
-ms.date: 08/01/2020
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 278c2089425e7d02e3cf7d6fbcf6670965a73f91
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 88a09c28477a36c5581956e4c2f82db3c54258c0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797215"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022534"
 ---
 # <a name="commerce-data-exchange-implementation-guidance"></a>Commerce Data Exchange 実装ガイダンス
 
@@ -111,7 +111,21 @@ Scheduler ジョブが実行されると、チャネル データベース グ�
 
     また、新しいチャネル データベースの構成に使用できる "ダミー" のチャネル データベース グループ、オフライン サポートのあるレジスター (この場合、オフライン データベースが作成されます)、そして場合によっては新しいが未使用の Commerce Scale Unit (クラウドまたは自己ホストのいずれか) があると便利です。 この "ダミー" グループは、配送スケジュール ジョブに関連付けられていないので、関連付けられているものに対してデータ生成は発生しません。 時間と実装が進むにつれて、関連付けられているエンティティ (たとえば、チャネル \[店舗\] やオフライン データベースの登録など) は、正しいデータベース グループに再関連付けされます。 このアプローチの優れた代替策、おそらくは改善策として、前述の **オフライン同期の一時停止** 機能を使用することです。
 
-## <a name="resources"></a>リソース
+### <a name="sql-server-versions-and-licenses"></a>SQL Server のバージョンとライセンス 
+SQL Server には、さまざまなバージョン (SQL Server 2017 や SQL Server 2019 など) やエディション (SQL Standard や SQL Express など) があります。 これらのバージョンの詳細な情報については、[SQL Server 2019 (15.x) のエディションとサポートされている機能](/sql/sql-server/editions-and-components-of-sql-server-version-15?view=sql-server-ver15#Cross-BoxScaleLimits)を参照してください。 追加のバージョンについては、このトピックで後述する「追加リソース」も参照してください。
+
+SQL Server のバージョンについては、現在メインストリーム サポートの期間内にあるバージョンの使用のみをお勧めします。 サポート日は、[製品とサービス ライフサイクル情報](/lifecycle/products/)という記事で製品ごとに検索できます。
+
+#### <a name="which-sql-server-edition-to-use"></a>使用する SQL Server エディション
+包括的なリストは作成できませんが、Dynamics 365 Commerce で最も使用される SQL Server エディションを次に示します。 各エディションのユース ケースについても説明します。
+
+| エディション | ユース ケース |
+|--------------|-------------|
+| 速達 | SQL Server Express には CPU コア カウントや RAM の使用などのいくつかの主要な制限がありますが、最も大きな制限の要因は、10 GBのデータベース サイズ制限です。  その結果、Express は多くの場合、CSU (自己ホスト) チャネル データベースではなく、Modern POS のオフライン データベースに使用されます。 Express Edition を CSU (自己ホスト) に使用する場合、データベースが 10 GB の最大サイズ制限に達するとデータ同期に問題が生じ、データの損失などの問題が発生する可能性があります。 Express Edition を使用する場合は、圧縮と Dynamics 365 Commerce 機能を使用して、オフライン データベースからデータを除外することが重要です。 SQL 圧縮の詳細については、[Commerce Data Exchange のベスト プラクティス](CDX-Best-Practices.md#enable-table-and-index-compression)を参照してください。 データベースのサイズは 8 GB 以下で管理することをお勧めします。 |
+| 標準 | SQL Server Standard は多くの場合、CSU (自己ホスト) チャネル データベースで使用されます。  これにより、一般に 1 つ以上の小売店舗の場所で CSU (自己ホスト) チャネル データベースを処理するのに十分なサイズとシステム使用率が提供されます。 |
+| 企業 | SQL Server Enterprise の必要はほとんどありませんが、価値のあるシナリオがあります。 たとえば、データセンター VM で CSU (自己ホスト) をホストして、多くのデバイスの広い領域で使用する場合、パフォーマンス機能を最大限にするには、制限を取り除くことが重要です。 |
+
+## <a name="additional-resources"></a>追加リソース
 
 - [Commerce Data Exchange のトラブルシューティング](CDX-Troubleshooting.md)
 - [Commerce Data Exchange ベスト プラクティス](CDX-Best-Practices.md)

@@ -2,7 +2,7 @@
 title: サンドボックス環境への生産データベースのポイントインタイム復元
 description: このトピックでは、Microsoft Dynamics Lifecycle Services を使用して生産データベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 12/15/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 332f22c24ecc13259022ce633be287151868848e
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 4f91ce84f9ce18a2b6cce41078248811ae49e91a
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941015"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092390"
 ---
 # <a name="point-in-time-restore-of-the-production-database-to-a-sandbox-environment"></a>サンドボックス環境への生産データベースのポイントインタイム復元
 
@@ -55,7 +55,7 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 * SysEmailParameters テーブルの シンプル メール トランスファー プロトコル (SMTP) リレーサーバー。
 * PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。
 * SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
-* DocuValue テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
+* Azure Blob Storage に保存されているすべてのファイル。 これには、ドキュメントの添付ファイル (DocuValue テーブルおよび DocuDeletedValue テーブルから)、およびカスタム Microsoft Office テンプレート (DocuTemplate テーブルから) が含まれます。
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
@@ -78,7 +78,7 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 - 更新処理では、実行対象のデータベースで削除が実行されます。
 - ターゲット環境は、データベースのコピーがターゲット サーバーに達するまで使用可能です。 その時点以降は、更新プロセスが完了するまで、ターゲット環境はオフラインになります。
 - リフレッシュは、アプリケーションおよび Financial Reporting データベースにのみ影響します。
-- Azure blob storage のドキュメントは、環境間でのコピーができません。 したがって、添付されたドキュメントを処理するドキュメントとテンプレートは変更されず、現在の状態のままとなります。
+-  ある環境から別の環境に、**Azure Blob Storage に保管してあるファイルはコピー** されません。 これには、**ドキュメントの添付ファイルやカスタム Microsoft Office テンプレート** が含まれます。 これらのドキュメントは変更されず、現在の状態のままになります。 
 - 管理者ユーザー、およびその他の内部サービス ユーザー アカウントを除くすべてのユーザーは使用できなくなります。 そのため、管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
 - 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
 - 定期的なインポートおよびエクスポート ジョブを持つすべてのデータ管理フレームワークは、復元を開始する前に、対象のシステムを完全に処理して停止する必要があります。 さらに、すべての定期的なインポートおよびエクスポート ジョブが完全に処理された後に、データベースをソースから選択することをお勧めします。 このようにして、Azure ストレージ内のいずれのシステムからも孤立ファイルがないことを確認してください。 対象の環境でデータベースを復元した後は、孤立したファイルを処理できないため、この手順は重要となります。 復元後、統合ジョブを再開することができます。

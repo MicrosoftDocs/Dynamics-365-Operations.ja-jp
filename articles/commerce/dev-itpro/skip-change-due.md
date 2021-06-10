@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5468a0a224bdfc044a50aa4dffa66d0bd155148e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9d66937f2b2d13c9473bfb31db39d36bb5944bde
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792943"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022095"
 ---
 # <a name="skip-change-due-dialog-box-in-pos"></a>POS の「お釣りの支払い」ダイアログ ボックスをスキップする
 
@@ -46,7 +46,7 @@ POS での支払いでは、クレジットの使用率が高まっているた�
 
 [支払方法](../payment-methods.md)
 
-[クレジット カードの設定、認証、および取得](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-card-authorizations)
+[クレジット カードの設定、認証、および取得](../../finance/accounts-receivable/credit-card-authorizations.md)
 
 [販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション](../cash-denominations.md)
 

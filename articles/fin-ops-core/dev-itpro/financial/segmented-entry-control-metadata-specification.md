@@ -1,7 +1,7 @@
 ---
 title: セグメント化されたエントリ コントロールのためのデザイン時メタデータ
 description: セグメント化エントリ コントロールのデザイン時メタデータ プロパティについて説明します。
-author: robinarh
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 25591
 ms.assetid: b8c5d7a4-ee2b-4ab1-b042-88472b97f035
 ms.search.region: Global
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e39cad1bda1b757dcd3d45ada48453df4431c750
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d3426b1d37ff2b873642c2eddb0d880609b41469
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750958"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111590"
 ---
 # <a name="design-time-metadata-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのためのデザイン時メタデータ
 

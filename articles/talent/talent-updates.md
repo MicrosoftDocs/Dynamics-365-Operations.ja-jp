@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: fe4250a8c4e4c0d14f6ce55056a2ee0d6f5e61ab
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b2ea805021445c8488d7d694ab17e295428bf31
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890236"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6057226"
 ---
 # <a name="talent-updates"></a>人材の更新
 

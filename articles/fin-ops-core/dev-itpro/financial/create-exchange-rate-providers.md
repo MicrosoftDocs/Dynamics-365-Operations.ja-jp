@@ -1,7 +1,7 @@
 ---
 title: 為替レート プロバイダーの作成
 description: このトピックでは、為替レート プロバイダーの設定方法について説明します。
-author: RobinARH
+author: RyanCCarlson2
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
-ms.author: jbye
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9893b04d43e9ebfecbe3f34163999628a43f362f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 78b21b24255474a11c5f41e9382636f57cda6054
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753920"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111712"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
@@ -34,7 +34,7 @@ ms.locfileid: "5753920"
 -   **為替レート プロバイダーのコンフィギュレーション**: 使用方法を決定する為替レート プロバイダーのコンフィギュレーション設定。
 -   **為替レート サービス** - 発行された為替レートの一覧を提供する無料または有料の定期売買サービス。 OANDA による外貨為替レートは、為替レートを提供するサービスの例です。
 -   **フレームワーク** – プロバイダーからの為替レートの取得および、その為替レートの適切なストレージを調整するインポート通貨の為替レートのフレームワーク。
--   **SysPlugin フレームワーク** - この拡張フレームワークは、Managed Extension Framework に基づいています。 マネージ拡張フレームワークは、SysPlugin 拡張フレームワークを非 X++ コードで使用できるようにします。 詳細については、[ファクトリ メソッドのサブクラスを登録] (https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/register-subclass-factory-methods) を参照してください。 
+-   **SysPlugin フレームワーク** - この拡張フレームワークは、Managed Extension Framework に基づいています。 マネージ拡張フレームワークは、SysPlugin 拡張フレームワークを非 X++ コードで使用できるようにします。 詳細については、[工場メソッドに対する登録] (../機能性/レジスター - 工場 - メソッド) を参照してください。 
 
 ## <a name="conceptualclass-model"></a>概念/クラス モデル
 次の図は、為替レート プロバイダーのフレームワークを構成する主なインターフェイスとクラス、およびそれらの関係を示しています。 新しい為替レート プロバイダーは、**IExchangeRateProvider** インターフェイスから派生している必要があります。 為替レート プロバイダーは、X++ で記述されます。 X++ は .NET 言語なので、プロバイダーで簡単に Microsoft .NET Framework を使用できます。 
