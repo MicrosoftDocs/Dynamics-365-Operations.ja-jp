@@ -7,31 +7,30 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4adab0225190b4dea5213dccf297eaab33efc863
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c0da21c0074468c5942bf853df701151ef7ee95
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021323"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055079"
 ---
-# <a name="generate-payroll-entities"></a><span data-ttu-id="0e196-103">給与エンティティの生成</span><span class="sxs-lookup"><span data-stu-id="0e196-103">Generate payroll entities</span></span>
+# <a name="generate-payroll-entities"></a><span data-ttu-id="4220d-103">給与エンティティの生成</span><span class="sxs-lookup"><span data-stu-id="4220d-103">Generate payroll entities</span></span>
 
-<span data-ttu-id="0e196-104">この OData 機能を使用して、給与統合に必要なエンティティを生成します。</span><span class="sxs-lookup"><span data-stu-id="0e196-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="0e196-105">カスタム フィールドの追加など、Human Resources でこれらのエンティティに変更が加えられた場合は、この関数を再度呼び出して、各エンティティのメタデータを更新できます。</span><span class="sxs-lookup"><span data-stu-id="0e196-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="0e196-106">応答には、生成プロセスがいつ完了したかを知るために監視できる操作 ID が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0e196-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
+<span data-ttu-id="4220d-104">この OData 機能を使用して、給与統合に必要なエンティティを生成します。</span><span class="sxs-lookup"><span data-stu-id="4220d-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="4220d-105">カスタム フィールドの追加など、Human Resources でこれらのエンティティに変更が加えられた場合は、この関数を再度呼び出して、各エンティティのメタデータを更新できます。</span><span class="sxs-lookup"><span data-stu-id="4220d-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="4220d-106">応答には、生成プロセスがいつ完了したかを知るために監視できる操作 ID が含まれています。</span><span class="sxs-lookup"><span data-stu-id="4220d-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
 
-<span data-ttu-id="0e196-107">**申請**</span><span class="sxs-lookup"><span data-stu-id="0e196-107">**Request**</span></span>
+<span data-ttu-id="4220d-107">**申請**</span><span class="sxs-lookup"><span data-stu-id="4220d-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
-<span data-ttu-id="0e196-108">**body**</span><span class="sxs-lookup"><span data-stu-id="0e196-108">**body**</span></span>
+<span data-ttu-id="4220d-108">**body**</span><span class="sxs-lookup"><span data-stu-id="4220d-108">**body**</span></span>
 
 ```json
 {
@@ -39,7 +38,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-<span data-ttu-id="0e196-109">**応答**</span><span class="sxs-lookup"><span data-stu-id="0e196-109">**Response**</span></span>
+<span data-ttu-id="4220d-109">**応答**</span><span class="sxs-lookup"><span data-stu-id="4220d-109">**Response**</span></span>
 
 ```json
 {
@@ -47,17 +46,17 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-## <a name="review-payroll-entities"></a><span data-ttu-id="0e196-110">給与エンティティの確認</span><span class="sxs-lookup"><span data-stu-id="0e196-110">Review payroll entities</span></span>
+## <a name="review-payroll-entities"></a><span data-ttu-id="4220d-110">給与エンティティの確認</span><span class="sxs-lookup"><span data-stu-id="4220d-110">Review payroll entities</span></span>
 
-<span data-ttu-id="0e196-111">この API を使用して、正常に生成され、使用できる状態であるエンティティの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="0e196-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
+<span data-ttu-id="4220d-111">この API を使用して、正常に生成され、使用できる状態であるエンティティの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="4220d-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
 
-<span data-ttu-id="0e196-112">**申請**</span><span class="sxs-lookup"><span data-stu-id="0e196-112">**Request**</span></span>
+<span data-ttu-id="4220d-112">**申請**</span><span class="sxs-lookup"><span data-stu-id="4220d-112">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
 
-<span data-ttu-id="0e196-113">**応答**</span><span class="sxs-lookup"><span data-stu-id="0e196-113">**Response**</span></span>
+<span data-ttu-id="4220d-113">**応答**</span><span class="sxs-lookup"><span data-stu-id="4220d-113">**Response**</span></span>
 
 ```json
 {
