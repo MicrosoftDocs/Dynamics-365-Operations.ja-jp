@@ -1,6 +1,6 @@
 ---
-title: Modern POS 拡張パッケージ appx ファイルの作成
-description: このトピックでは、Visual Studio 2017 を使用した Modern POS のパッケージ プロジェクトの作成方法について説明します。
+title: Modern POS 拡張パッケージの .appx ファイルの作成
+description: このトピックでは、Microsoft Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,62 +10,63 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 68f77ab9a2c821828e3ec397b84da98aeb0bc104
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: e8bf9753e87efeefda2e4714ac6d2d39d93eb5df
+ms.sourcegitcommit: d84329f903d359ae042e8c0a4594982a7e06756f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960155"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "5984206"
 ---
-# <a name="create-a-modern-pos-extension-package-appx-file"></a><span data-ttu-id="34451-103">Modern POS 拡張パッケージ appx ファイルの作成</span><span class="sxs-lookup"><span data-stu-id="34451-103">Create a Modern POS extension package appx file</span></span>
+# <a name="create-an-appx-file-for-a-modern-pos-extension-package"></a><span data-ttu-id="435a9-103">Modern POS 拡張パッケージの .appx ファイルの作成</span><span class="sxs-lookup"><span data-stu-id="435a9-103">Create an .appx file for a Modern POS extension package</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="34451-104">次の手順では、Visual Studio 2017 を使用して Modern POS のパッケージ プロジェクトを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="34451-104">The following steps show you how to create a Modern POS packaging project using Visual Studio 2017.</span></span> <span data-ttu-id="34451-105">これらの手順は、Modern POS の拡張機能を開発する場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="34451-105">These steps are only required if you are developing extensions for Modern POS.</span></span> <span data-ttu-id="34451-106">Modern POS 拡張機能パッケージ プロジェクトは、Modern POS アプリを拡張する[MSIX Windows アプリ パッケージ](https://docs.microsoft.com/windows/msix/overview) を生成します。</span><span class="sxs-lookup"><span data-stu-id="34451-106">The Modern POS extension packaging project generates the [MSIX Windows app package](https://docs.microsoft.com/windows/msix/overview) that will extend the Modern POS app.</span></span>
+<span data-ttu-id="435a9-104">このトピックでは、 Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="435a9-104">This topic explains how to create a Modern Point of Sale (MPOS) packaging project by using Visual Studio 2017.</span></span> <span data-ttu-id="435a9-105">これらの手順は、MPOS の拡張機能を開発する場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="435a9-105">These steps are required only if you're developing extensions for MPOS.</span></span> <span data-ttu-id="435a9-106">MPOS 拡張機能パッケージ プロジェクトは、MPOS アプリを拡張する[MSIX Windows アプリ パッケージ](https://docs.microsoft.com/windows/msix/overview) を生成します。</span><span class="sxs-lookup"><span data-stu-id="435a9-106">The MPOS extension packaging project generates the [MSIX Windows app package](https://docs.microsoft.com/windows/msix/overview) that will extend the MPOS app.</span></span>
 
-1. <span data-ttu-id="34451-107">次の手順に従って、新しい JavaScript Universal Windows Platform アプリ プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="34451-107">Create a new JavaScript Universal Windows Platform App project by following these steps:</span></span>
+1. <span data-ttu-id="435a9-107">新しい JavaScript Universal Windows Platform (UWP) アプリ プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="435a9-107">Create a new JavaScript Universal Windows Platform (UWP) app project:</span></span>
 
-    1. <span data-ttu-id="34451-108">ソリューション エクスプローラーで、ソリューションを右クリックし、**追加** を選択してから **新しいプロジェクト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-108">Right-click the solution in Solution explorer and select **Add** and then **New Project**.</span></span> <span data-ttu-id="34451-109">**Windows JavaScript** を検索し、**空白のアプリ (Universal Windows)** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-109">Find **Windows JavaScript** and select **Blank App (Universal Windows)**.</span></span> <span data-ttu-id="34451-110">プロジェクトに **ModernPos** と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="34451-110">Name the project **ModernPos**.</span></span>
-    2. <span data-ttu-id="34451-111">**ターゲット バージョン** を **Windows 10、バージョン 1809 (10.0; ビルド 17763)** に設定します。</span><span class="sxs-lookup"><span data-stu-id="34451-111">Set **Target version** to **Windows 10, version 1809 (10.0; Build 17763)**.</span></span>
-    3. <span data-ttu-id="34451-112">**最小 バージョン** を **Windows 10、バージョン 1809 (10.0; ビルド 17763)** に設定します。</span><span class="sxs-lookup"><span data-stu-id="34451-112">Set **Minimum version** to **Windows 10, version 1809 (10.0; Build 17763)**.</span></span>
+    1. <span data-ttu-id="435a9-108">ソリューション エクスプローラーで、ソリューションを保留 (または右クリック)し、**追加** から **新しいプロジェクト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-108">In Solution Explorer, select and hold (or right-click) the solution, select **Add**, and then select **New Project**.</span></span>
+    2. <span data-ttu-id="435a9-109">**Windows JavaScript** を検索し、**空白のアプリ (Universal Windows)** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-109">Find **Windows JavaScript**, and select **Blank App (Universal Windows)**.</span></span>
+    3. <span data-ttu-id="435a9-110">プロジェクトに **ModernPos** と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="435a9-110">Name the project **ModernPos**.</span></span>
+    4. <span data-ttu-id="435a9-111">**ターゲット バージョン** フィールドを **Windows 10、バージョン 1809 (10.0; ビルド 17763)** に設定します。</span><span class="sxs-lookup"><span data-stu-id="435a9-111">Set the **Target version** field to **Windows 10, version 1809 (10.0; Build 17763)**.</span></span>
+    5. <span data-ttu-id="435a9-112">**ミニマム バージョン** フィールドを **Windows 10、バージョン 1809 (10.0; ビルド 17763)** に設定します。</span><span class="sxs-lookup"><span data-stu-id="435a9-112">Set the **Minimum version** field to **Windows 10, version 1809 (10.0; Build 17763)**.</span></span>
 
-2. <span data-ttu-id="34451-113">生成されたソース フォルダーおよびファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="34451-113">Delete these generated source folders and files:</span></span>
+2. <span data-ttu-id="435a9-113">生成される次のソース フォルダおよびファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="435a9-113">Delete the following source folders and files that are generated:</span></span>
 
-    + <span data-ttu-id="34451-114">**js** フォルダー。</span><span class="sxs-lookup"><span data-stu-id="34451-114">**js** folder.</span></span>
-    + <span data-ttu-id="34451-115">**css** フォルダー。</span><span class="sxs-lookup"><span data-stu-id="34451-115">**css** folder.</span></span>
-    + <span data-ttu-id="34451-116">**index.html** ファイル。</span><span class="sxs-lookup"><span data-stu-id="34451-116">**index.html** file.</span></span>
-    + <span data-ttu-id="34451-117">**package.appxmanifest** ファイル。</span><span class="sxs-lookup"><span data-stu-id="34451-117">**package.appxmanifest** file.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="34451-118">交換するロゴが含まれる場合に限り、アプリ パッケージのロゴとして使用する画像ファイル (**images\\StoreLogo.png**) は削除しないでください。</span><span class="sxs-lookup"><span data-stu-id="34451-118">Don't delete the image file used as the logo for the app package (**images\\StoreLogo.png**) unless you include a replacement logo.</span></span>
-
-3. <span data-ttu-id="34451-119">プロジェクトを編集し、上記の手順で作成したカスタマイズ パッケージ **props** ファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="34451-119">Edit the project and import the customization package **props** file created in the steps above.</span></span>
+    + <span data-ttu-id="435a9-114">**js** フォルダー</span><span class="sxs-lookup"><span data-stu-id="435a9-114">**js** folder</span></span>
+    + <span data-ttu-id="435a9-115">**css** フォルダー</span><span class="sxs-lookup"><span data-stu-id="435a9-115">**css** folder</span></span>
+    + <span data-ttu-id="435a9-116">**index.html** ファイル</span><span class="sxs-lookup"><span data-stu-id="435a9-116">**index.html** file</span></span>
+    + <span data-ttu-id="435a9-117">**package.appxmanifest** ファイル</span><span class="sxs-lookup"><span data-stu-id="435a9-117">**package.appxmanifest** file</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="34451-120">**package.appxmanifest** ファイルの生成は、カスタマイズ パッケージ **props** ファイルのプロパティによって異なります。</span><span class="sxs-lookup"><span data-stu-id="34451-120">Generating the **package.appxmanifest** file depends on the properties from the customization package **props** file.</span></span> <span data-ttu-id="34451-121">プロジェクトにインポートする必要があります。\*\*</span><span class="sxs-lookup"><span data-stu-id="34451-121">Make sure that you import it into the project.\*\*</span></span>
+    > <span data-ttu-id="435a9-118">交換するロゴが含まれる場合に限り、アプリ パッケージのロゴとして使用する画像ファイル (**images\\StoreLogo.png**) は削除しないでください。</span><span class="sxs-lookup"><span data-stu-id="435a9-118">Don't delete the image file that is used as the logo for the app package (**images\\StoreLogo.png**), unless you include a replacement logo.</span></span>
 
-4. <span data-ttu-id="34451-122">POS SDK NuGet パッケージへの参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="34451-122">Add a reference to the POS SDK NuGet Package.</span></span>
+3. <span data-ttu-id="435a9-119">プロジェクトを編集し、カスタマイズ パッケージ用に作成されたプロパティ (.props) ファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="435a9-119">Edit the project, and import the properties (.props) file that was created for the customization package.</span></span>
 
-    1. <span data-ttu-id="34451-123">プロジェクト ソリューション エクスプローラーを選択し、**NuGet パッケージの管理** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-123">Right-click the project Solution Explorer and select **Manage NuGet packages**.</span></span>
-    2. <span data-ttu-id="34451-124">NuGet パッケージ マネージャー ウィンドウで **参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-124">Select the **Browse** tab in the NuGet Package Manager window.</span></span>
-    3. <span data-ttu-id="34451-125">**Microsoft.Dynamics.Commerce.Sdk.Pos** を検索します。</span><span class="sxs-lookup"><span data-stu-id="34451-125">Search for **Microsoft.Dynamics.Commerce.Sdk.Pos**.</span></span>
-    4. <span data-ttu-id="34451-126">パッケージを選択し、**インストール** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-126">Select the package and select **Install**.</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="435a9-120">**package.appxmanifest** ファイルの世代は、カスタマイズ パッケージの .props ファイルによって異なります。</span><span class="sxs-lookup"><span data-stu-id="435a9-120">Generation of the **package.appxmanifest** file depends on the properties from the customization package's .props file.</span></span> <span data-ttu-id="435a9-121">.props ファイルをプロジェクトにインポートすることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="435a9-121">Make sure that you import the .props file into the project.</span></span>
 
-5. <span data-ttu-id="34451-127">**x86** のみを対象とするようにソリューション コンフィギュレーションを更新します。</span><span class="sxs-lookup"><span data-stu-id="34451-127">Update the solution configuration to target only **x86**.</span></span>
+4. <span data-ttu-id="435a9-122">POS SDK NuGet パッケージへの参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="435a9-122">Add a reference to the POS SDK NuGet package:</span></span>
 
-    1. <span data-ttu-id="34451-128">プロジェクト ソリューション エクスプローラーを選択し、**プロパティ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-128">Right-click the project Solution Explorer and select **Properties**.</span></span>
-    2. <span data-ttu-id="34451-129">構成マネージャーを開きます。</span><span class="sxs-lookup"><span data-stu-id="34451-129">Open the Configuration Manager.</span></span>
-    3. <span data-ttu-id="34451-130">**有効なソリューション プラットフォーム** ドロップダウンで、**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-130">In the **Active solution platform** drop-down, select **Edit**.</span></span>
-    4. <span data-ttu-id="34451-131">**x86** を除く他のすべてのプラットフォームを削除します。</span><span class="sxs-lookup"><span data-stu-id="34451-131">Remove all other platforms except for **x86**.</span></span>
+    1. <span data-ttu-id="435a9-123">ソリューション エクスプローラーで、プロジェクトを保留 (または右クリック) し、**NuGet パッケージの管理** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-123">In Solution Explorer, select and hold (or right-click) the project, and then select **Manage NuGet packages**.</span></span>
+    2. <span data-ttu-id="435a9-124">**NuGet パッケージ マネージャー** ウィンドウの **閲覧** タブで、**Microsoft.Dynamics.Commerce.Sdk.Pos** を検索します。</span><span class="sxs-lookup"><span data-stu-id="435a9-124">In the **NuGet Package Manager** window, on the **Browse** tab, search for **Microsoft.Dynamics.Commerce.Sdk.Pos**.</span></span>
+    3. <span data-ttu-id="435a9-125">パッケージを選択し、**インストール** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-125">Select the package, and then select **Install**.</span></span>
 
-         ![プラットフォーム コンフィギュレーション](media/platform.png)
+5. <span data-ttu-id="435a9-126">ソリューション コンフィギュレーションを更新して、x86 プラットフォームのみをターゲットとします。</span><span class="sxs-lookup"><span data-stu-id="435a9-126">Update the solution configuration so that it targets only x86 platforms:</span></span>
 
-6. <span data-ttu-id="34451-133">サポートされていないプラットフォーム コンフィギュレーションを削除するには、**jsproj** ファイルを編集してください。</span><span class="sxs-lookup"><span data-stu-id="34451-133">Edit the **jsproj** file to remove unsupported platform configurations.</span></span>
+    1. <span data-ttu-id="435a9-127">ソリューション エクスプローラーで、プロジェクトを保留 (または右クリック) し、**プロパティ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-127">In Solution Explorer, select and hold (or right-click) the project, and then select **Properties**.</span></span>
+    2. <span data-ttu-id="435a9-128">構成マネージャーを開きます。</span><span class="sxs-lookup"><span data-stu-id="435a9-128">Open Configuration Manager.</span></span>
+    3. <span data-ttu-id="435a9-129">**有効なソリューション プラットフォーム** メニューで、**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-129">On the **Active solution platform** menu, select **Edit**.</span></span>
+    4. <span data-ttu-id="435a9-130">**x86** を除くすべてのプラットフォームを削除します。</span><span class="sxs-lookup"><span data-stu-id="435a9-130">Remove all platforms except **x86**.</span></span>
 
-    1. <span data-ttu-id="34451-134">プロジェクト ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="34451-134">Save the project file.</span></span>
-    2. <span data-ttu-id="34451-135">ソリューション エクスプローラを使用してプロジェクトをアンロードします。</span><span class="sxs-lookup"><span data-stu-id="34451-135">Unload the project using Solution Explorer.</span></span>
-    3. <span data-ttu-id="34451-136">ソリューション エクスプローラーでプロジェクトを選択し、**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-136">Right-click the project in Solution Explorer and select **Edit**.</span></span>
-    4. <span data-ttu-id="34451-137">**x86** 以外のすべてのプラットフォームが含まれる **ProjectConfiguration** を削除します。</span><span class="sxs-lookup"><span data-stu-id="34451-137">Delete the **ProjectConfiguration** includes for all platforms other than **x86**.</span></span> <span data-ttu-id="34451-138">**ProjectConfigurations** は次の Xml のようになります。</span><span class="sxs-lookup"><span data-stu-id="34451-138">The **ProjectConfigurations** should look like the following Xml:</span></span>
+    ![プラットフォーム コンフィギュレーション](media/platform.png)
+
+6. <span data-ttu-id="435a9-132">サポートされていないプラットフォーム コンフィギュレーションを削除するには、JavaScript プロジェクト ファイル (.jsproj ファイル) を編集してください。</span><span class="sxs-lookup"><span data-stu-id="435a9-132">Edit the JavaScript project file (.jsproj file) file to remove unsupported platform configurations:</span></span>
+
+    1. <span data-ttu-id="435a9-133">プロジェクト ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="435a9-133">Save the project file.</span></span>
+    2. <span data-ttu-id="435a9-134">ソリューション エクスプローラを使用してプロジェクトをアンロードします。</span><span class="sxs-lookup"><span data-stu-id="435a9-134">Unload the project by using Solution Explorer.</span></span>
+    3. <span data-ttu-id="435a9-135">ソリューション エクスプローラーで、プロジェクトを保留 (または右クリック) し、**編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-135">In Solution Explorer, select and hold (or right-click) the project, and then select **Edit**.</span></span>
+    4. <span data-ttu-id="435a9-136">**x86** を除くすべてのプラットフォームが含まれる **ProjectConfiguration** を削除します。</span><span class="sxs-lookup"><span data-stu-id="435a9-136">Delete the **ProjectConfiguration** includes for all platforms except **x86**.</span></span> <span data-ttu-id="435a9-137">完了すると、**ProjectConfiguration** エレメントは次の例のようになります。</span><span class="sxs-lookup"><span data-stu-id="435a9-137">When you've finished, the **ProjectConfiguration** elements should resemble the following example.</span></span>
 
         ```xml
         <ItemGroup Label="ProjectConfigurations">
@@ -81,24 +82,22 @@ ms.locfileid: "5960155"
         </ItemGroup>
         ```
 
-    5. <span data-ttu-id="34451-139">プロジェクトをリロードします。</span><span class="sxs-lookup"><span data-stu-id="34451-139">Reload the project.</span></span>
+    5. <span data-ttu-id="435a9-138">プロジェクトをリロードします。</span><span class="sxs-lookup"><span data-stu-id="435a9-138">Reload the project.</span></span>
 
-7. <span data-ttu-id="34451-140">次の手順に従って、Modern POS **jsproj** から上記で作成した **POS.Extension パッケージ** プロジェクトへの参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="34451-140">Add a reference from the Modern POS **jsproj** to the **POS.Extension Package** project created above, by following these steps:</span></span>
+7. <span data-ttu-id="435a9-139">参照を MPOS .jsproj ファイルから以前作成した **POS. 拡張機能パッケージ** プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="435a9-139">Add a reference from the MPOS .jsproj file to the **POS.Extension Package** project that you created earlier:</span></span>
 
-    1. <span data-ttu-id="34451-141">ソリューション エクスプローラーで、Modern POS プロジェクトを右クリックし、**追加** を選択してから、**参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-141">Right-click the Modern POS project in Solution Explorer and select **Add** and then **Reference**.</span></span>
-    2. <span data-ttu-id="34451-142">参照マネージャの左側にある **プロジェクト** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-142">Select the **Projects** tab on the left side of the Reference Manager.</span></span>
-    3. <span data-ttu-id="34451-143">上記で **作成した POS 拡張機能パッケージ** プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-143">Select the **POS Extension Package** project created above.</span></span> <span data-ttu-id="34451-144">プロジェクトを選択すると、Visual Studio はサポートされていない参照を確認するように求めます。</span><span class="sxs-lookup"><span data-stu-id="34451-144">When you select the project, Visual Studio asks you confirm the unsupported reference.</span></span> <span data-ttu-id="34451-145">**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-145">Select **Yes**.</span></span>
+    1. <span data-ttu-id="435a9-140">ソリューション エクスプローラーで、MPOS プロジェクトを保留 (または右クリック)し、**追加** から **参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-140">In Solution Explorer, select and hold (or right-click) the MPOS project, select **Add**, and then select **Reference**.</span></span>
+    2. <span data-ttu-id="435a9-141">照会マネージャーの左側の **プロジェクト** タブで、以前作成した **POS 拡張機能パッケージ** プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-141">On the **Projects** tab on the left side of Reference Manager, select the **POS Extension Package** project that you created earlier.</span></span>
+    3. <span data-ttu-id="435a9-142">サポートされていない参照を確認するメッセージが表示されたら、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-142">When you're prompted to confirm the unsupported reference, select **Yes**.</span></span>
 
-8. <span data-ttu-id="34451-146">ソリューションに Commerce Runtime 拡張機能プロジェクトが含まれている場合は、ソリューションで各 Commerce Runtime 拡張機能プロジェクトをプロジェクト参照に追加します。</span><span class="sxs-lookup"><span data-stu-id="34451-146">If your solution contains Commerce Runtime extension projects, then add project references to each of the Commerce Runtime extension projects in the solution.</span></span>
+8. <span data-ttu-id="435a9-143">ソリューションに Commerce Runtime (CRT) 拡張機能プロジェクトが含まれている場合、プロジェクト参照をソリューションの各 CRT 拡張機能プロジェクトに追加します。</span><span class="sxs-lookup"><span data-stu-id="435a9-143">If your solution contains Commerce runtime (CRT) extension projects, add project references to each CRT extension project in the solution:</span></span>
 
-    1. <span data-ttu-id="34451-147">ソリューション エクスプローラーで、Modern POS を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="34451-147">Right-click the Modern POS project in Solution Explorer.</span></span> <span data-ttu-id="34451-148">**追加** を選択してから **参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-148">Select **Add** and then **Reference**.</span></span>
-    2. <span data-ttu-id="34451-149">参照マネージャの左側にある **プロジェクト** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-149">Select the **Projects** tab on the left side of the Reference Manager.</span></span>
-    3. <span data-ttu-id="34451-150">Commerce Runtime 拡張機能プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-150">Select the Commerce Runtime extension projects.</span></span>
+    1. <span data-ttu-id="435a9-144">ソリューション エクスプローラーで、MPOS プロジェクトを保留 (または右クリック)し、**追加** から **参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-144">In Solution Explorer, select and hold (or right-click) the MPOS project, select **Add**, and then select **Reference**.</span></span>
+    2. <span data-ttu-id="435a9-145">参照マネージャーの左側の **プロジェクト** タブで、CRT 拡張機能プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-145">On the **Projects** tab on the left side of Reference Manager, select the CRT extension projects.</span></span>
 
-9. <span data-ttu-id="34451-151">ソリューションに Hardware Station 拡張機能プロジェクトが含まれている場合は、ソリューションで各 Hardware Station 拡張機能プロジェクトをプロジェクト参照に追加します。</span><span class="sxs-lookup"><span data-stu-id="34451-151">If your solution contains Hardware Station extension projects, then add project references to each of the Hardware Station extension projects in the solution.</span></span>
+9. <span data-ttu-id="435a9-146">ソリューションに Hardware Station 拡張機能プロジェクトが含まれている場合は、ソリューションで各 Hardware Station 拡張機能プロジェクトにプロジェクト参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="435a9-146">If your solution contains Hardware Station extension projects, add project references to each Hardware Station extension project in the solution:</span></span>
 
-    1. <span data-ttu-id="34451-152">ソリューション エクスプローラーで、Modern POS を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="34451-152">Right-click the Modern POS project in Solution Explorer.</span></span> <span data-ttu-id="34451-153">**追加** を選択してから **参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-153">Select **Add** and then **Reference**.</span></span>
-    2. <span data-ttu-id="34451-154">参照マネージャの左側にある **プロジェクト** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-154">Select the **Projects** tab on the left side of the Reference Manager.</span></span>
-    3. <span data-ttu-id="34451-155">Hardware Station の拡張機能プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="34451-155">Select the Hardware Station Extension projects.</span></span>
+    1. <span data-ttu-id="435a9-147">ソリューション エクスプローラーで、MPOS プロジェクトを保留 (または右クリック)し、**追加** から **参照** を選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-147">In Solution Explorer, select and hold (or right-click) the MPOS project, select **Add**, and then select **Reference**.</span></span>
+    2. <span data-ttu-id="435a9-148">参照マネージャーの左側の **プロジェクト** タブで、Hardware Station 拡張機能プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="435a9-148">On the **Projects** tab on the left side of Reference Manager, select the Hardware Station extension projects.</span></span>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

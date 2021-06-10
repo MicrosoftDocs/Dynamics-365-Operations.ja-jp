@@ -94,7 +94,9 @@
                   items:
                     - name: Commerce ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.19 (2021 年 7 月)
+                    - name: Commerce 10.0.20 (2021 年 7 月)
+                      href: get-started/whats-new-commerce-10-0-20.md
+                    - name: Commerce 10.0.19 (2021 年 6 月)
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (2021 年 5 月)
                       href: get-started/whats-new-commerce-10-0-18.md
@@ -556,6 +558,8 @@
                   href: dev-itpro/manage-bing-maps.md
                 - name: 顧客集荷の時間スロットの作成と更新
                   href: dev-itpro/pickup-timeslots.md
+                - name: 製品分析コード値を見本として表示するように構成する
+                  href: dev-itpro/dimensions-swatch.md
         - name: 製品とサービスの販売
           items:
             - name: カテゴリ、製品、品揃え
@@ -932,6 +936,8 @@
                   href: web-activity-opt-out.md
                 - name: 測定単位設定の適用
                   href: unit-of-measure.md
+                - name: 製品分析コードの表示設定の適用
+                  href: dimension-settings.md
             - name: サイト コンテンツの管理
               items:
                 - name: コンテンツを追加する方法
@@ -1946,7 +1952,7 @@
                   items:
                     - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: 生成された ER レポートの追跡結果およびベースライン値との比較における改善
+                    - name: 生成された ER レポートの結果を追跡し、ベースライン値と比較するための改善
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
                     - name: ER によるテストの自動化
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2268,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: アプリの設定
                       href: e-commerce-extensibility/app-settings.md
+                    - name: 有効な機能に基づくサイト ビルダー グローバル構成設定のコンフィギュレーション
+                      href: e-commerce-extensibility/config-settings-for-features.md
                     - name: プラットフォーム設定ファイル
                       href: e-commerce-extensibility/platform-settings.md
                     - name: モジュール定義の拡張
@@ -2366,6 +2374,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: バージョン 10.0.10 から 10.0.13 における開発と ALM の変更
                   href: dev-itpro/dev-changes-10-13.md
+                - name: 独立したパッケージ SDK のビルド パイプラインの設定
+                  href: dev-itpro/build-pipeline.md
                 - name: Commerce および Finance and Operations のビルド システムのマージ
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行
@@ -2386,6 +2396,8 @@
               items:
                 - name: POS 画面レイアウト
                   href: pos-screen-layouts.md
+                - name: Microsoft Dynamics 365 Commerce の Store Commerce アプリ
+                  href: dev-itpro/store-commerce.md
                 - name: POS で URL を開く
                   href: Open-URL-in-POS.md
                 - name: POS のレイアウト デザイナーのインストール
