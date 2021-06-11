@@ -7,35 +7,34 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e3bba96988f3ccef9ef54c1dad2a4c63e829198f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 24c94aeb743aa1c9267b63472db2ac68badd0130
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789711"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6057409"
 ---
-# <a name="example-query-for-recruiting-request"></a><span data-ttu-id="9e68a-103">採用要求のクエリの例</span><span class="sxs-lookup"><span data-stu-id="9e68a-103">Example query for Recruiting request</span></span>
+# <a name="example-query-for-recruiting-request"></a><span data-ttu-id="5954e-103">採用要求のクエリの例</span><span class="sxs-lookup"><span data-stu-id="5954e-103">Example query for Recruiting request</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="9e68a-104">このトピックでは、Dynamics 365 Human Resources における採用要求エンティティに対するクエリの例を示します。</span><span class="sxs-lookup"><span data-stu-id="9e68a-104">This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="5954e-104">このトピックでは、Dynamics 365 Human Resources における採用要求エンティティに対するクエリの例を示します。</span><span class="sxs-lookup"><span data-stu-id="5954e-104">This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="9e68a-105">次のクエリは、GET操作で $expand クエリ オプションを使用して、指定された採用要求レコードと、指定された要求に関連するすべてのポジション、必要なスキル、教育要件を取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="9e68a-105">The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request.</span></span> <span data-ttu-id="9e68a-106">この例では、2つの職種での採用要求と、要求職種に必要なスキルや学歴を示しています。</span><span class="sxs-lookup"><span data-stu-id="9e68a-106">The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.</span></span>
+<span data-ttu-id="5954e-105">次のクエリは、GET操作で $expand クエリ オプションを使用して、指定された採用要求レコードと、指定された要求に関連するすべてのポジション、必要なスキル、教育要件を取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="5954e-105">The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request.</span></span> <span data-ttu-id="5954e-106">この例では、2つの職種での採用要求と、要求職種に必要なスキルや学歴を示しています。</span><span class="sxs-lookup"><span data-stu-id="5954e-106">The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.</span></span>
 
-<span data-ttu-id="9e68a-107">**申請**</span><span class="sxs-lookup"><span data-stu-id="9e68a-107">**Request**</span></span>
+<span data-ttu-id="5954e-107">**申請**</span><span class="sxs-lookup"><span data-stu-id="5954e-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruiting request entity ID>)?$expand=mshr_FK_HcmRecruitingRequestPositionEntity_RecruitingRequest,mshr_FK_HcmRecruitingRequestSkillEntity_RecruitingRequest,mshr_FK_HcmRecruitingRequestEducationEntity_RecruitingRequest
 ```
 
-<span data-ttu-id="9e68a-108">**応答**</span><span class="sxs-lookup"><span data-stu-id="9e68a-108">**Response**</span></span>
+<span data-ttu-id="5954e-108">**応答**</span><span class="sxs-lookup"><span data-stu-id="5954e-108">**Response**</span></span>
 
 ```json
 {
@@ -180,8 +179,8 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9e68a-109">参照</span><span class="sxs-lookup"><span data-stu-id="9e68a-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5954e-109">参照</span><span class="sxs-lookup"><span data-stu-id="5954e-109">See also</span></span>
 
-[<span data-ttu-id="9e68a-110">申請者追跡システム統合APIの概要</span><span class="sxs-lookup"><span data-stu-id="9e68a-110">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="5954e-110">申請者追跡システム統合APIの概要</span><span class="sxs-lookup"><span data-stu-id="5954e-110">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
