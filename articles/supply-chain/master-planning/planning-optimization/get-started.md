@@ -2,7 +2,7 @@
 title: 計画の最適化の使用を開始する
 description: このトピックでは、計画の最適化機能の使用を開始する方法について説明します。
 author: ChristianRytt
-ms.date: 10/09/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d346251e82737624edfce88dc7b2ee10280f6877
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907670"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103596"
 ---
 # <a name="get-started-with-planning-optimization"></a>計画最適化の開始
 
@@ -58,7 +58,7 @@ ms.locfileid: "5907670"
 
 - LCS が有効になっている高可用性環境の tier 2 またはそれ以降 (OneBox 環境ではなく)、Dynamics 365 Supply Chain Management バージョン 10.0.7 またはそれ以降で Supply Chain Management を実行する必要があります。 このアドインを OneBox 環境にインストールはできません。インストール処理をキャンセルする必要があります。
 
-- システムは Power Platform 統合用に設定されている必要があります。 詳細については、[アドインを設定するための前提条件](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) および [アドインの設定](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins) を参照してください。
+- システムは Power Platform 統合用に設定されている必要があります。 詳細については、[Finance and Operations アプリと Microsoft Power Platform の統合](../../../fin-ops-core/dev-itpro/power-platform/overview.md)を参照してください。
 
 ### <a name="enable-the-planning-optimization-license"></a>計画最適化ライセンスを有効化する
 

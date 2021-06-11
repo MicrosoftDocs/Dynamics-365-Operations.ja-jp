@@ -2,7 +2,7 @@
 title: 電子申告 (ER) の送信先
 description: このトピックでは、電子申告の送信先の管理、サポートされている送信先のタイプ、およびセキュリティ上の注意事項について説明します。
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893607"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085503"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -199,6 +199,34 @@ ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、
 > 選択したページの向きは、Excel 形式で生成され、PDF 形式に変換されたすべての ER の構成に適用されます。
 >
 > Word 形式の ER 構成を PDF 形式に変換する場合、PDF ドキュメントの印刷の向きは、Word ドキュメントから取得されます。
+
+## <a name="output-unfolding"></a>結果の展開
+
+ER フォーマットの **フォルダ** コンポーネントの配信先を設定すると、そのコンポーネントの出力を設定した配信先への配信方法を指定できます。
+
+### <a name="make-output-unfolding-available"></a>結果の展開を可能にする
+
+現在の Finance インスタンスで出力展開オプションを使用できるようにするには、**機能管理** ワークスペースを開き、**ER の出力先を構成してフォルダのコンテンツを別のファイルとして送信する** 機能をオンにします。
+
+### <a name="applicability"></a>適用性
+
+出力のアンフォールディング オプションは、**フォルダー** タイプのフォーマット コンポーネントに対してのみ構成できます。 **フォルダー** コンポーネントの構成を開始すると、**電子報告書の送信先** ページで **全般** クイック タブが利用可能になります。 
+
+### <a name="use-the-output-unfolding-option"></a>出力を変更するオプションの使用
+
+**一般** クイック タブの **名前を付けて送信** フィールドで 、次のいずれかの値を選択します:
+
+- **ZIP アーカイブ** - 生成されたファイルを zip ファイルとして配信します。
+- **ファイルの分割** - 生成されたzipファイルのすべてのファイルを個別のファイルとして配信します。
+
+    > [!NOTE]
+    > **個別のファイル** を選択 した場合、生成された出力はZIP状態でメモリに収集されます。 そのため、実際のファイルサイズがこの上限を超える可能性がある場合には、ZIP 出力に対して最大の[ファイルサイズの上限](er-compress-outbound-files.md)が適用されます。 生成される出力のサイズがかなり大きくなることが予想される場合は、この値を選択することをお勧めします。
+
+[![フォルダ形式コンポーネントの出力先を構成する](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>制限
+
+ネストした他の **フォルダー** コンポーネントを含む **フォルダー** コンポーネントの **名前を付けて送信** フィールドを **個別のファイル** に設定した場合、その設定はネストした **フォルダー** コンポーネントには設定の変更が適用されません。
 
 ## <a name="security-considerations"></a>セキュリティ上の注意事項
 

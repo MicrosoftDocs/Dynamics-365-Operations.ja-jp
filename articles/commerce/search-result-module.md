@@ -2,7 +2,7 @@
 title: 検索結果モジュール
 description: このトピックでは、検索結果モジュールを取り上げ、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3409e9e99329def55b173eb78cf03db4a6764c92
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794118"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117136"
 ---
 # <a name="search-results-module"></a>検索結果モジュール
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、検索結果モジュールを取り上げ、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
@@ -51,9 +52,12 @@ ms.locfileid: "5794118"
 | カテゴリ階層を非表示にする | **True** または **False** | このプロパティが **True** に設定されている場合、ページのカテゴリ階層は表示されません。 [パンくずモジュール](add-breadcrumb.md)を使用してカテゴリ階層を表示する場合、このプロパティは **True** に設定する必要があります。|
 | 検索結果に製品属性を含める | **True** または **False** | このプロパティが **True** に設定されている場合、検索結果の商品に対して属性が返されます。 これらの属性を Commerce サイトに表示することもできますが、その場合は拡張機能が必要です。|
 | 所属価格の表示 | **True** または **False** | このプロパティが **True** に設定されている場合、ユーザーがサインイン ページを参照すると、検索結果に製品の所属価格が表示されます。 |
+| 絞り込み条件パネルの更新 | **True** または **False** | このプロパティが **True** に設定されている場合、絞り込み条件を選択すると、絞り込み条件パネルが更新されます。 このモードでは、複数選択が可能な絞り込み条件は、絞り込み条件パネルを更新するときに単一選択の絞り込み条件のように動作します。 |
 
 > [!IMPORTANT]
-> リリース  Dynamics 365 Commerce 10.0.16 以降では、**所属価格の表示** の構成を使用して、ページに所属価格を表示できます。
+> Commerce バージョン 10.0.16 リリース以降では、**所属価格の表示** の構成を使用して、ページに所属価格を表示できます。
+>
+> Commerce バージョン 10.0.20 リリース以降では、**絞り込み条件パネルの更新** の構成を使用して、絞り込み条件の選択時に絞り込みパネルを更新できます。
 
 ## <a name="supported-modules"></a>サポートされているモジュール
 

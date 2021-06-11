@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のホーム ページの機能
 description: このトピックでは、Finance and Operations アプリの削除済みまたは非推奨の機能に関するヘルプ トピックの一覧を示します。
 author: sericks007
-ms.date: 03/10/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0827daafb71fd248980c72626e10b8b52016664d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b53b7c0577f7934e5bb7e03ce43cc66cafebee47
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018909"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112652"
 ---
 # <a name="removed-or-deprecated-features-home-page"></a>削除済みまたは非推奨のホーム ページの機能
 
@@ -30,7 +30,6 @@ ms.locfileid: "6018909"
 - [Dynamics 365 Finance の削除済みまたは非推奨の機能](../../../finance/get-started/removed-deprecated-features-finance.md)
 - [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
 - [削除済みまたは非推奨のプラットフォームの機能](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
-- [Lifecycle Services (LCS) の削除済みまたは非推奨の機能](../../dev-itpro/lifecycle-services/removed-deprecated-features.md)
 - [以前のリリースの削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md)
 
 ## <a name="deprecations-in-the-microsoft-power-platform"></a>Microsoft Power Platform での非推奨

@@ -1,5 +1,5 @@
 ---
-title: 出荷連結ポリシーが [倉庫へのリリース] ページで無効になっている場合の出荷の連結
+title: 出荷連結ポリシーが上書きされた際に出荷を連結する
 description: このトピックでは、1 つ以上の販売明細を、[倉庫へのリリース] ページから手動でリリースする必要がある場合で、かつリリース前にシステム定義の連結ポリシーを上書きする必要があるシナリオを示します。
 author: GarmMSFT
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dcd619ad2906d4224966e2696712ed0e71886eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6928375c88a199bd9c6b48f05b38343463762920
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837492"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117012"
 ---
-# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>出荷連結ポリシーが [倉庫へのリリース] ページで無効になっている場合の出荷の連結
+# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>出荷連結ポリシーが上書きされた際に出荷を連結する
 
 [!include [banner](../includes/banner.md)]
 

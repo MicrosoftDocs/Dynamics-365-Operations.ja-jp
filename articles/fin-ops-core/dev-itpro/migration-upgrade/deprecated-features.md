@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921426"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112624"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -104,6 +104,39 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: 2020 年 10 月 1 日までに、**国内の税レポート – 機能リファレンス IT-00003** をサポートしなくなる予定です。 |
 
+## <a name="october-2019-deprecation-announcement"></a>2019 年 10 月の廃止通知
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>ビジネス プロセス モデラーのフローチャート図
+
+<table>
+<tbody>
+<tr>
+<td><strong>廃止 / 削除の理由</strong></td>
+<td>レガシ デザインによって使用率が低くなったため、ビジネス プロセス モデラ― (BPM) のフローチャート図コンポーネントを廃止しています。</td>
+</tr>
+<tr>
+<td><strong>別の機能での置き換え?</strong></td>
+<td>いいえ</td>
+</tr>
+<tr>
+<td><strong>影響を受ける領域</strong></td>
+<td>ビジネス プロセス モデラー</td>
+</tr>
+<tr>
+<td><strong>ステータス</strong></td>
+<td>非推奨: BPM のフローチャート図コンポーネントは、2020 年に削除されることが予想されます。 次の機能は削除されます:
+<ul>
+<li>すべてのフローチャートは読み取り専用で、編集できません。 フローチャート活動に関連付けられているシェイプ プロパティも使用できません。 これらのフローチャートには、自動生成される既定のフローチャートと、既定のフローチャートに基づいて変更されるカスタマイズ フローチャートの両方が含まれます。</li>
+<li>このプロセス ステップは読み取り専用で、編集できません。</li>     
+<li>レガシ フィット/ギャップ分析機能は使用できません。 したがって、ギャップ リストは自動的に作成されず、エクスポートすることもできません。
+<p><strong>注記:</strong>この機能は以前に廃止され、Microsoft Azure DevOps 統合によって置き換えられました。</p>
+</li>
+<li>フローチャートのバージョン履歴は使用できません。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 プラット更新プログラム 29
 

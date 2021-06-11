@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 02/16/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 435f7f0090ca16a9e8cfee2d1ceb65bec8457d09
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923541"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111727"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -31,6 +31,19 @@ ms.locfileid: "5923541"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="feature-deprecation-notice-effective-may-2021"></a>2021 年 5 月からの機能非推奨の通知
+
+### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のグローバリゼーション ポータル
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | この機能は他の LCS ベースのサービスに引き継がれたため、LCS のグローバリゼーション ポータルは非推奨になりました。 |
+| **別の機能で置き換えられているか?**   | はい、この機能は LCS [問題検索](../lifecycle-services/issue-search-lcs.md) と [Dynamics 規制警告送信サービス](../lcs-solutions/submit-localization-alerts.md) に置き換えられます。 |
+| **影響を受ける製品領域**         | LCS のグローバリゼーション ポータル|
+| **配置オプション**              | クラウド配置 |
+| **状態**                         | 非推奨: 2022 年 5 月に削除予定。 |
+
 
 ## <a name="feature-removed-effective-january-28-2021"></a>機能が 2021 年 1 月 28 日に削除済み
 
@@ -56,7 +69,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | Visual Studio 2017 は、配置および必要なバージョンとして Visual Studio 2015 を置き換えます。 |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
 | **配置オプション**              | All |
-| **状態**                         | 非推奨。 更新時に、以前の X++ ツールは Visual Studio 2015 から削除され、更新されたツールは Visual Studio 2015 にはインストールされません。 ホストされているビルドには影響はありません。 仮想マシンを構築する場合は、[Azure Pipelines でのレガシ パイプラインの更新](../dev-tools/pipeline-msbuild-update.md) の説明に従って、ビルド パイプライン (ビルド定義) を手動で更新して、MSBuild 14.0 (Visual Studio 2015) から MSBuild 15.0 (Visual Studio 2017) に依存関係を変更する必要があります。 |
+| **状態**                         | 非推奨: 更新時に、以前の X++ ツールは Visual Studio 2015 から削除され、更新されたツールは Visual Studio 2015 にはインストールされません。 ホストされているビルドには影響はありません。 仮想マシンを構築する場合は、[Azure Pipelines でのレガシ パイプラインの更新](../dev-tools/pipeline-msbuild-update.md) の説明に従って、ビルド パイプライン (ビルド定義) を手動で更新して、MSBuild 14.0 (Visual Studio 2015) から MSBuild 15.0 (Visual Studio 2017) に依存関係を変更する必要があります。 |
 
 ### <a name="user-avatar"></a>ユーザー アバター 
 
@@ -76,7 +89,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | なし |
 | **影響を受ける製品領域**         | Web クライアント |
 | **配置オプション**              | All |
-| **状態**                         | 非推奨。 すべての EP コードは、2021 年 10 月リリース版で削除される予定です。 |
+| **状態**                         | 非推奨: すべての EP コードは、2021 年 10 月リリース版で削除される予定です。 |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.15 に対する Platform update
 
@@ -88,7 +101,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
 | **影響を受ける製品領域**         | すべての Dynamics 365 製品 |
 | **配置オプション**              | All|
-| **ステータス**                         | 非推奨。 2021 年 8 月以降は、Internet Explorer 11 はサポートされません。|
+| **状態**                         | 非推奨: 2021 年 8 月を過ぎると、Internet Explorer 11 はサポートされなくなります。|
 
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>メタデータ修正プログラムを適用するための Visual Studio アドイン
@@ -181,7 +194,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | 詳細については、[Azure Active Directory の条件付きアクセスの構成](/appcenter/general/configuring-aad-conditional-access) をご覧ください。|
 | **影響を受ける製品領域**         | セキュリティ |
 | **配置オプション**              | クラウド |
-| **ステータス**                         | **非推奨:** この機能は、セルフサービス配置に対して完全に廃止されました。 |
+| **ステータス**                         | 非推奨: この機能は、セルフサービス配置に対して完全に廃止されました。 |
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
@@ -201,7 +214,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | コンパイラ エラーは、コンパイラの警告を完全に置換します。  |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
 | **配置オプション**              | すべて |
-| **ステータス**                         | **非推奨:** コンパイラの警告は、Finance and Operations アプリのバージョン 10.0.11 プラットフォーム更新でコンパイラのエラーになりました。 |
+| **ステータス**                         | 非推奨: コンパイラの警告は、Finance and Operations アプリのバージョン 10.0.11 に対するプラットフォーム更新でのコンパイラ エラーです。 |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>SHA1 ハッシュ アルゴリズムを使用して作成された ISV ライセンス
 
@@ -211,7 +224,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | はい。 Windows PowerShell を使用してライセンスを作成します。 |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
 | **配置オプション**              | すべて |
-| **ステータス**                         | <strong>非推奨:</strong> SHA1 ハッシュ アルゴリズムを使用して作成された ISV のライセンス。 このアルゴリズムは、MakeCert ユーティリティを使用して作成された証明書に依存しており、このユーティリティは推奨されていません。<p><strong>非推奨:</strong> セキュリティまたはハッシュ目的の SHA1 の使用。 SHA1 は、2021 年の初めに機能を停止する予定です。 したがって、今後は使用しないでください。<p><strong>削除済み:</strong> トランスポート層セキュリティ (TLS) 1.0 と TLS 1.1 着信要求または送信要求をサポートします。 |
+| **ステータス**                         | 非推奨: SHA1 ハッシュ アルゴリズムを使用して作成された ISV のライセンス。 このアルゴリズムは、MakeCert ユーティリティを使用して作成された証明書に依存しており、このユーティリティは推奨されていません。<br><br>非推奨: セキュリティまたはハッシュ目的の SHA1 の使用。 SHA1 は、2021 年の初めに機能を停止する予定です。 したがって、今後は使用しないでください。<br><br>削除済み: トランスポート層セキュリティ (TLS) 1.0 と TLS 1.1 着信要求または送信要求をサポートします。 |
 
 ## <a name="platform-update-32"></a>プラットフォーム update 32
 
