@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aa89f27925b88be947f27303957cd53089b8290
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960019"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187919"
 ---
 # <a name="budgeting-home-page"></a>予算作成用のホーム ページ
 
@@ -28,8 +28,7 @@ ms.locfileid: "5960019"
 
 このトピックでは、予算作成機能コンポーネント、予算作成ツール、およびレポート機能の概要を示します。 
 
-<a name="components-of-budgeting-functionality"></a>予算作成機能のコンポーネント
--------------------------------------
+## <a name="components-of-budgeting-functionality"></a>予算作成機能のコンポーネント
 
 通常、会社のリソース予定サイクルは、計画、予算作成、予測活動で構成されます。
 
