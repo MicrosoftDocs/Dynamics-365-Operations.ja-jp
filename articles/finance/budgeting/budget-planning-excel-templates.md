@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80190419176848f10d9a3908350d57ddaadfd8c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d4e901871267d4f11d9afefc873708663dbabd6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822182"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190288"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Excel の予算計画テンプレート
 
@@ -66,8 +66,7 @@ Excel ファイルの挿入位置にカーソルを合わせます。 **ラベ�
 
 ## <a name="select-add-valuemediabpt7png"></a>[![値の追加を選択](./media/bpt7.png)](./media/bpt7.png)
 
-<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>予算計画ドキュメント テンプレート テーブルへの計算された列の追加
---------------------------------------------------------------
+## <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>予算計画ドキュメント テンプレート テーブルへの計算された列の追加
 
 次に、計算された列が生成された予算計画ドキュメント テンプレートに追加されます。 **合計要求** 列は、要求 Q1: 要求 Q4 の列を集計し、**調整** 列は、事前定義された係数によって **合計要求** 列を再計算します。
 

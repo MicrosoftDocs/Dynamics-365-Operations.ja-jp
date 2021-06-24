@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1279cd1eb0d495107515dd40f7d2e0f9dfd5e080
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058827"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189753"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>部門、職務、職位を使用した従業員の編成
 
@@ -42,8 +42,7 @@ ms.locfileid: "6058827"
 |**人事管理**|HR の管理者 (中央)|HR の管理者|
 
 
- <a name="departments"></a>部門
-------------
+##  <a name="departments"></a>部門
 
 部門は、販売や会計など、組織内の特定の領域を担当する、組織のカテゴリまたは機能領域を表す作業単位です。 部門は機能領域の報告に使用され、損益の職責を持つ場合があります。 また、部門はコスト センターのグループを含む場合があります。 販売、会計、および人事管理は、組織内の部門の例です。
 
@@ -96,8 +95,7 @@ ms.locfileid: "6058827"
 
 その職務の作業者が担当する作業の役割、プロセス、および製品を示す責任領域を使用します。 「経理担当」というタイトルの職務の領域の例には、「製品 A の財務報告」があります。
 
-<a name="positions"></a>職位
-----------
+## <a name="positions"></a>職位
 
 職位は組織階層の下位レベルの重要な要素です。 職位は、職務の個々のインスタンスです。 たとえば、「販売マネージャ (東部)」という職位は、「販売マネージャ」という職務に関連付けられている職位の 1 つに過ぎません。 部門にはさらに職位が存在し、作業者に割り当てられています。
 ### <a name="position-creation-and-maintenance"></a>職位の作成と管理

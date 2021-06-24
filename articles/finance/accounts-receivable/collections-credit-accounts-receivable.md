@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dc4dc556cbb8bd461e904ef569016acd4276f7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c394219bbb58bea187d352c8817ed4c3e2eb883c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814251"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189448"
 ---
 # <a name="collections-in-accounts-receivable"></a>売掛金勘定の回収
 
@@ -99,8 +99,7 @@ ms.locfileid: "5814251"
 
 詳細については、「[顧客の損金処理仕訳帳の作成](tasks/create-write-off-journal-customer.md)」を参照してください。
 
-<a name="process-not-sufficient-funds-nsf-payments"></a>預金不足 (NSF) 支払の処理 
---------------------------------------------
+## <a name="process-not-sufficient-funds-nsf-payments"></a>預金不足 (NSF) 支払の処理 
 
 [回収] ページで NSF 支払をクリックして、NSF 支払を処理できます。 このボタンをクリックすると、支払をキャンセルします。 NSF 手数料を顧客に適用する場合は、費用トランザクションが支払仕訳帳で作成されます。 手数料の金額は、自動請求の設定に基づきます。 NSF 支払に適用される自動請求は、当該銀行口座の [銀行口座] ページで選択した費用グループで指定します。
 

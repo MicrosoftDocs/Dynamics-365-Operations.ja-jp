@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2780edc75891d565a184135d6a915a0e6f8504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7d64729d6da5c57267d6d62274cce496888548d7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839080"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189995"
 ---
 # <a name="order-entry-deadlines"></a>注文入力期限
 
@@ -99,8 +99,7 @@ ms.locfileid: "5839080"
 
 **注記:** 夏時間調整が有効である場合は、それに合わせて注文入力期限も調整されます。
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [配送スケジュール](delivery-schedules.md)
 

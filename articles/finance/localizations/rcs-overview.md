@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service
 description: このトピックでは、Regulatory Configuration Service (RCS) の機能の概要を示し、サービスにアクセスする方法について説明します。
 author: JaneA07
-ms.date: 04/07/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1eeac7217290e0583fcecdf5b4b5b9153d266240
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019397"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216565"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -59,9 +59,19 @@ RCS は次の機能を提供します。
 
 地域の完全な一覧については [Dynamics 365 および Power Platform: 使用可能性、データの場所、言語、およびローカライズ](https://aka.ms/dynamics_365_international_availability_deck) を参照してください。
 
+## <a name="rcs-default-company"></a>RCS 既定会社
+
+RCS で使用される設計時間機能は、すべての会社間で共有されます。 会社固有の機能はありません。 したがって、RCS 環境では 1 つの会社 **DAT** を使用することをお勧めします。
+
+ただし、場合によっては、ER 形式で特定の法人に関連するパラメーターを使用することが推奨されます。 これらのシナリオでのみ、既定の会社の切り替え機能を使用する必要があります。 例については、[法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md)を参照してください。
+
 ## <a name="related-rcs-documentation"></a>関連する RCS ドキュメント
 
-関連コンポーネントの詳細については、次のドキュメントを参照してください。
+関連コンポーネントの詳細については、次のトピックを参照してください。
+
+- **RCS:**
+
+    - [RCS で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする](rcs-global-repo-upload.md)
 
 - **グローバル リポジトリ:**
 
@@ -70,7 +80,20 @@ RCS は次の機能を提供します。
     - [グローバル レポジトリの拡張フィルター処理](enhanced-filtering-global-repo.md)
     - [ER コンフィギュレーションをグローバル リポジトリからダウンロードする](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
     - [グローバル リポジトリのコンフィギュレーションを中止する](discontinuing-configurations-rcs-global-repo.md)
+    - [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](rcs-lcs-repo-dep-faq.md)
 
 - **グローバリゼーション機能:**
 
     - [Regulatory Configuration Service (RCS) - グローバリゼーション機能](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+
+
+## <a name="troubleshooting-rcs-sign-up"></a>RCS サインアップのトラブルシューティング
+
+サービス ページから RCS にサインアップすると、Azure Active Directory (Azure AD) に関連した問題が発生する 場合があります。 表示されるエラー メッセージは、RCS のサインアップが現在オフであり、サインアップ プロセスを完了する前に有効になっていることを示します。
+
+![RCS サインアップのエラー メッセージ](media/01_RCSSignUpError.jpg)
+
+問題が発生するのは、アドホック サブスクリプションへのサインアップがブロックされ、`AllowAdHocSubscriptions` プロパティがテナントで有効になっている必要があるためです。 
+
+- 組織の Azure テナントを IT 部門が管理している場合は、その部門に問題を報告してください。
+- ご自身が Azure テナントの管理を担当している場合は、[Azure Active Directory のセルフサービス登録とは](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings)の手順に従って問題を修正できます。

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 33d5e831d3a631aa17e78628a4e88b5e1cfa8c73
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e4109762a2db3114ad66882092d6729dd9b08364
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052867"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190211"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>作業者へ貸与された品目の管理
 
@@ -41,14 +41,12 @@ ms.locfileid: "6052867"
 
 管理者は、直属の部下への貸与品目を表示できます。 また、従業員に代わって新しい貸与品目を追加するアクセス許可を得ることができます。
 
- <a name="account-for-lost-or-misplaced-loan-items"></a>紛失した貸与品目の勘定
------------------------------------------
+##  <a name="account-for-lost-or-misplaced-loan-items"></a>紛失した貸与品目の勘定
 
 品目が損傷または紛失した場合は、架空の返却レコードを入力します。 その後、品目を削除するか概要に記録し、品目が利用できないことを示すために説明を変更します。
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [人事管理](index.md)
 

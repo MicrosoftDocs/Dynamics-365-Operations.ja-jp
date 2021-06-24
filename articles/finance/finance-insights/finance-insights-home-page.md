@@ -2,7 +2,7 @@
 title: Finance 分析情報のホーム ページ (プレビュー)
 description: Finance 分析情報には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086992"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222513"
 ---
 # <a name="finance-insights-home-page-preview"></a>Finance 分析情報のホーム ページ (プレビュー)
 
@@ -68,7 +68,9 @@ Azure、Microsoft Dataverse、LCS のリソースを作成および管理する�
 
 ## <a name="configure-finance-insights"></a>Finance 分析情報のコンフィギュレーション
 
-Finance 分析情報を使用する前に、いくつかのコンフィギュレーション ステップを完了する必要があります。 Finance 分析情報のコンフィギュレーション方法の詳細については、[Finance 分析情報のコンフィギュレーション](configure-for-fin-insites.md) を参照してください。
+Finance 分析情報を使用する前に、いくつかのコンフィギュレーション ステップを完了する必要があります。 Finance Insights をコンフィギュレーションする方法の詳細については、次を参照してください。
+  - 10.0.19 までのバージョン : [Finance Insights のコンフィギュレーション - 最大 1 つのバージョン 10.0.19](configure-for-fin-insites.md)。
+  - バージョン 10.0.20 以降: [Finance Insights のコンフィギュレーション (プレビュー) - バージョン10.0.20 以降](configure-for-fin-insites-PubPrvw.md)。
 
 ## <a name="create-a-data-integrator-project"></a>データ インテグレーター プロジェクトの作成
 
@@ -84,10 +86,7 @@ Finance 分析情報を使用する前に、いくつかのコンフィギュレ
 顧客支払予測を有効にするには、一連のステップを実行して、顧客が未払の請求書の支払を行う可能性がある場合や、特定の請求書の支払が見込まれる時期についての予測を生成する、組織のデータを使用する機械学習モデルを構築する必要があります。 詳細と完了する特定のステップについては、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md) を参照してください。 
 
 ### <a name="enable-cash-flow-forecasting"></a>キャッシュ フロー予測の有効化
-キャッシュフロー予測を有効にするには、一連のステップを実行して、組織のデータを使用してキャッシュフロー予測を生成する機械学習モデルを構築する必要があります。 詳細と完了する特定のステップについては、[キャッシュフロー予測の有効化](enable-cash-flow-forecasting.md) を参照してください 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>キャッシュフロー予測の設定と使用
-キャッシュ フロー予測の設定と使用の詳細については、[キャッシュ フロー予測の有効化](enable-cash-flow-forecasting.md) を参照してください。 この機能の使い方についての詳細については、[キャッシュ フロー予測](cash-flow-forecast-intro.md) を参照してください。
+キャッシュフロー予測を有効にするには、一連のステップを実行して、組織のデータを使用してキャッシュフロー予測を生成する機械学習モデルを構築する必要があります。 詳細と完了する特定のステップについては、[キャッシュフロー予測の有効化](enable-cash-flow-forecasting.md) を参照してください。
 
 ### <a name="enable-budget-proposals"></a>予算案の有効化
 
@@ -111,14 +110,12 @@ AI 予測モデルの結果についての詳細は、[機械学習モデルの�
 
 - キャッシュフロー予測の新機能については、[キャッシュフロー予測](cash-flow-forecast-intro.md) を参照してください。
 - ここでキャッシュフロー予測に含める外部データのインポートについては、[外部データをキャッシュフロー予測に使用する](external-data-in-cash-flow.md) を参照してください。 
-- AI モデルを使用して長期的なキャッシュフローを予測する方法の詳細については、[キャッシュフロー予測の概要](cash-position.md) を参照してください。
+- AI モデルを使用して短期的なキャッシュフローを予測する方法の詳細については、[キャッシュ ポジション](cash-position.md) を参照してください。
 - キャッシュフローの位置およびキャッシュフロー予測をスナップショットとして保存する方法、およびスナップショットを実績と比較する方法については、[スナップショットの概要](payment-snapshots.md) を参照してください。
 
 ### <a name="using-budget-proposal"></a>予算案の使用
 
 予算作成の迅速化については、[予算案](budget-proposals.md) を参照してください。 
-
-予算案のデモデータ:
 
 ## <a name="feedback-and-support"></a>フィードバックとサポート
 

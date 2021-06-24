@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
+ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838373"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "6164849"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>倉庫アプリからの移動オーダーの作成
 
@@ -330,7 +330,6 @@ ms.locfileid: "5838373"
 
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>現物マイナス手持在庫があるライセンス プレートを使用することはできますか?
 
-この機能は、正の現物手持在庫の数量のみをサポートします。 移動オーダーにライセンス プレートを割り当てる前に、倉庫および在庫の状態スレベルが正の現物手持の数量であることを確認してください。
-
+この機能は、ライセンス プレート レベルでは正の物理的な在庫数量のみをサポートしていますが、転送オーダーにライセンス プレートを割り当てる際には、上位の倉庫や在庫状況のレベルで物理的な負の在庫数量を持つことができます。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

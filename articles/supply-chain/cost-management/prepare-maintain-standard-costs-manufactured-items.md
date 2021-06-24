@@ -16,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6944782ac236a3f414b1cadfb12b0f0d8c1115b9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2a82b0a205ac6b7a86b9aca0771303469c6666c1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821516"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187749"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>製造品目の標準原価を管理するための準備
 
@@ -63,8 +63,7 @@ ms.locfileid: "5821516"
 
 原価計算のために工順情報を使用したい場合は、追加の準備手順が必要です。 たとえば、工順操作には正確で完全な原価カテゴリを割り当てる必要があります。
 
-<a name="related-topics"></a>関連トピック
---------
+## <a name="related-topics"></a>関連トピック
 
 [製造品目の固定費の償却](amortize-constant-costs-manufactured-item.md)
 

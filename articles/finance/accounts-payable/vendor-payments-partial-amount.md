@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a46ebb841b4abe6aa5bd8b06966f4197b27aeaee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ee17aeb75e2bdc3b9c36d50914c24aa9d6218b7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841216"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189520"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>一部金額の仕入先支払
 
@@ -28,8 +28,7 @@ ms.locfileid: "5841216"
 
 1 つの請求書の量より少ない支払いを仕入先に行う場合があります。 この記事は、この状況を処理するためのさまざまなオプションについて説明します。 利用できるオプションは、業務要件とコンフィギュレーションによって異なります。 
 
-<a name="cash-discount-amounts"></a>現金割引金額
----------------------
+## <a name="cash-discount-amounts"></a>現金割引金額
 
 ベンダーは、期日までに請求書の支払いをする場合の現金割引を提供できます。 たとえば、請求書が 10 日以内に支払われた場合は 2% の現金割引が指定される 100.00 の請求書を入力します。 期日の条件は 30 日になります。 支払提案が、請求書を選択するための条件として現金割引を使用する場合、また提案が現金割引日かそれ以前に実行される場合、請求書が支払に選択され、98.00 の支払いが作成されます。 現金割引は、手動で作成された 1 回限りの支払にも適用できます。
 

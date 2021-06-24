@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018688"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187274"
 ---
 # <a name="engineering-change-management-faq"></a>エンジニアリング変更管理に関するよく寄せられる質問
 
@@ -46,7 +46,7 @@ ms.locfileid: "6018688"
 
 このオプションはバージョン管理と変更管理を提供していますが、各トランザクション、在庫、およびマスター プランにおいてバージョン追跡の間接費が追加されることはないので、ほとんどの組織はこのオプションを選択します。
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>どのフィールドがリリースされた品目テンプレートにコピーされますか?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>どのフィールドがリリースされた品目テンプレートにコピーされますか？
 
 エンジニアリング会社がエンジニアリング製品を作成するとき、製品はそのエンジニアリング会社のリリース製品として作成されます。 リリース製品は、選択した *リリースされた品目テンプレート* に基づいて作成されます。 (リリースされた品目テンプレート自体は既存のリリース製品です。) リリースされた品目テンプレートは、製品が運用会社にリリースされるときにも使用されます。 いずれの場合も、リリースされた品目テンプレートは、リリースされた製品のほとんどのフィールド値を定義し、それらの値は関連付けられている **リリース済製品の詳細** ページから取得されます。
 

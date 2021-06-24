@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 562cf07348e77d9c2f169e31a852843bea10fcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 780d1e1307b69ec9a31d032039970de454160d6f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816511"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189695"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>統計ベースライン予測の生成
 
@@ -67,8 +67,7 @@ ms.locfileid: "5816511"
 > [!NOTE]
 > フラットである可能性のある予測は、履歴時間枠 (毎月の予測で 3 年間などのパターンを選択するために最低 3 つの期間) でなければならない履歴データが原因である可能性があります。 より良い結果を得るには、時間の範囲の粒度を変更するか、時間の範囲を増やします。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 - [需要予測の設定](demand-forecasting-setup.md)
 

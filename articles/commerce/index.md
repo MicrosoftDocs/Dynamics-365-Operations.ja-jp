@@ -9,6 +9,7 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: ''
 ms.custom: 260624
 ms.assetid: ''
 ms.search.region: global
@@ -16,17 +17,16 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f7ff7ea28f8417d4c35f87e0d8fef46d647f42e4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 51fd8ca2ef7cdc43967ced8251b8377f3eaaf753
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019105"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193675"
 ---
 # <a name="commerce-home-page"></a>Commerce のホーム ページ
 
 [!include [banner](includes/banner.md)]
-
 
 Dynamics 365 Commerce: 実績のある Dynamics 365 Retail 機能に基づいて構築。バックオフィス、店舗、コール センター、デジタル経験を統合する包括的なオムニチャネル ソリューションを提供します。 Dynamics 365 Commerce では、カスタマイズされた顧客契約を通じてブランド ロイヤルティの構築、従業員の生産性向上に伴う収益の増加、コストの削減とサプライ チェーンの効率性の向上を実現しており、それによって優れたビジネス上の成果を生み出します。
 
@@ -38,21 +38,23 @@ Dynamics 365 Commerce: 実績のある Dynamics 365 Retail 機能に基づいて
 
 - **柔軟でインテリジェントなオムニチャネル エクスペリエンス:** クラウドを利用した検索と検出、製品レビュー、欲しい物のリスト、在庫、ギフト カード、およびロイヤルティを通じて顧客に一貫したエクスペリエンスを提供することにより、物理的およびデジタルなコマースを統合します。 最新の支払方法や製品の収集または配送を選択できるようにするのと同時に、顧客にいつでも、どのようにでも、どこででも、どのデバイスでも購入できるようにします。
 
-- **クラウド内の AI を使用した業務の合理化:** 広く普及し根付いている、コンテキスト認識のクラウド インテリジェンスによって、オムニチャネル コマース エクスペリエンスおよび、統合され最適化されたバックオフィスのオペレーションを効率化します。 高度な販売促進、在庫管理、配分済み注文の管理、および価格決定とプロモーションを使用して、革新を図り、競争に勝ち抜くことができます。ビジネスのあらゆる側面にわたって包括的で一貫したデータを視覚化および分析することによって、洞察を得ることができます。 AI によるテクノロジーを使用して、アクセス可能な Web サイトを提供し、支払詐欺からビジネスを保護し、評価やレビューなどユーザーが生成したコンテンツを効率的に管理します。 
+- **クラウド内の AI を使用した業務の合理化:** 広く普及し根付いている、コンテキスト認識のクラウド インテリジェンスによって、オムニチャネル コマース エクスペリエンスおよび、統合され最適化されたバックオフィスのオペレーションを効率化します。 高度な販売促進、在庫管理、配分済み注文の管理、および価格決定とプロモーションを使用して、革新を図り、競争に勝ち抜くことができます。ビジネスのあらゆる側面にわたって包括的で一貫したデータを視覚化および分析することによって、洞察を得ることができます。 AI によるテクノロジーを使用して、アクセス可能な Web サイトを提供し、支払詐欺からビジネスを保護し、評価やレビューなどユーザーが生成したコンテンツを効率的に管理します。
 
 ## <a name="core-concepts-and-tasks"></a>主要な概念とタスク
 
 機能領域を選択すると詳細が表示されます。
+
 - [Commerce プレビュー環境のコンフィギュレーション](provisioning-guide.md)
 - [Commerce のアーキテクチャ](./commerce-architecture.md)
 - [チャネルの設定](channels-overview.md)
-- [製品とサービスの販売](set-up-retail-products.md)
+- [製品およびサービスの販売促進](set-up-retail-products.md)
 - [注文の管理](Order-fulfillment-overview.md)
 - [顧客の管理](set-up-customer-loyalty-program.md)
 - [財務管理](retail-statements.md)
 - [E コマース サイトの管理](online-store-overview.md)
 - [Fraud Protection](dev-itpro/DFP.md)
-- [コマース開発と拡張性](dev-itpro/dev-retail-home-page.md)
+- [Commerce 開発と拡張性](dev-itpro/dev-retail-home-page.md)
 
+## <a name="elearning-courses"></a>eLearning コース
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Commerce](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path) をご確認ください。

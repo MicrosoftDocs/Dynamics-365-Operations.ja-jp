@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abc8607e5c3c6ab63a3878b92072bde2ebb0216c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814539"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189645"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>モバイル デバイスを使用して材料消費を登録する
 
@@ -28,8 +28,7 @@ ms.locfileid: "5814539"
 
 このトピックでは、ハンドヘルド デバイスを使用して生産における原材料消費の登録を可能にするワークフローについて説明します。
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 このワークフローは、材料の追跡に厳密な要件がある場合に有効です。 その場合、材料の追跡を管理するために、消費に関する正確な時間と数量を報告する必要があります。 このプロセスはプレフラッシュまたはバックフラッシュの工程とは異なって見ることができ、登録の時間と実際の消費が行われる時期の間にオフセットが存在します。 これが、追跡の要件を持つ一部の材料に対して自動消費する方法を使用できない理由です。 ハンドヘルド デバイスを使用して生産における原材料消費の登録を可能にするワークフローの設定方法を説明する簡単なシナリオを見てみましょう。 [![ハンドヘルド デバイスを使用して原材料消費の登録を有効にするワークフローの設定](./media/scenario3.png)](./media/scenario3.png)
 

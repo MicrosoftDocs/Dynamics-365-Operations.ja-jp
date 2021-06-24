@@ -1,5 +1,5 @@
 ---
-title: 需要予測の手動変更
+title: 'ガイド: 需要予測の手動変更'
 description: このトピックでは、品目の予測を変更する方法を説明します
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
-ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
+ms.openlocfilehash: 1e12ccf90b9971379e8931bd48d6243a855bb795
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889027"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224013"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>需要予測の手動変更
+# <a name="guide-modify-a-demand-forecast-manually"></a>ガイド: 需要予測の手動変更
 
 [!include [banner](../../includes/banner.md)]
 
-この手順では、品目の予測を変更する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、生産の計画者を対象としています。
+この手順では、品目の予測を変更する方法を示します。 この手順は、生産の計画者を対象としています。
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>選択された品目の予測の変更
 
@@ -36,9 +36,9 @@ ms.locfileid: "5889027"
 1. 必要に応じて、その他のフィールドに入力します。
 1. アクション ウィンドウで、 **保存** を選択します。
 
-## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>1 つ以上の品目の予測を変更する Microsoft Excel
+## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Microsoft Excel を使って、1 つ以上のアイテムの予測を変更する
 
-1 つ以上のアイテムの予測を変更するには Microsoft Excel:
+Microsoft Excel を使って、1 つ以上のアイテムの予測を変更するには:
 
 1. 次のどちらかを実行します。
     - 前のセクションで説明したように、任意の品目 (どちらでも構いません) の **需要予測** ページを開きます。

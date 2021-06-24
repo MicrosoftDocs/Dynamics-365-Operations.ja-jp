@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7044aa84dc7ea7adc303c250e75ca6fb4a493800
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831245"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189947"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>引き取りかんばんを使用した補充
 
@@ -30,7 +30,6 @@ ms.locfileid: "5831245"
 このトピックでは、製造活動における材料補充の引き取りかんばん使用方法を説明します。
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>引き取りかんばんを使用する材料補充のワークフロー
--------------------------------------------------------------------
 
 引き取りかんばんは、倉庫と材料が消費される生産場所の間で、1 つの品目のかんばんを移動することに使用できます。 引き取りかんばんは、プル信号が特定の需要の供給をトリガするために必要な材料補充のプル ベースのソリューションをサポートします。 
 

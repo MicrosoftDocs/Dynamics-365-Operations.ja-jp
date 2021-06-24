@@ -2,7 +2,7 @@
 title: ビデオのアップロード
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのビデオのアップロード方法について説明します。
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5ec20f8caee2f5a62230be05923dfd52600c1e35
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e3579b54c58898b79c84406480a3b58f541c4621
+ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799208"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6224541"
 ---
 # <a name="upload-videos"></a>ビデオのアップロード
 
@@ -35,7 +35,7 @@ ms.locfileid: "5799208"
 ビデオをアップロードする場合は、次の情報を指定できます。
 
 - **タイトル、説明、キーワード**: ビデオのメタデータ。
-- **クローズド キャプションの自動生成**: ビデオに対してクローズド キャプションを自動的に生成するかどうかを指定します。
+- **クローズド キャプションの自動生成**: ビデオに対してクローズド キャプションを自動的に生成するかどうかを指定します (英語のみに対応)。 
 - **クローズド キャプション**: 使用するクローズド キャプションを指定します。
 - **通常オーディオ**: 使用する通常のオーディオ トラックを指定します。
 - **サムネイル**: ビデオのサムネイルを指定します。 指定しない場合は、自動的に生成されます。

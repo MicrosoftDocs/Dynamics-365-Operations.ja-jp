@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e334c6351814db191731ce94c4a704863679dd85
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0edc2fcbde536e98fa3ce3567c2c8fdf3fc864ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820886"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188785"
 ---
 # <a name="configure-accounts-payable-overview"></a>買掛金勘定のコンフィギュレーションの概要
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820886"
 
 この記事は、買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。
 
-<a name="prerequisites-for-accounts-payable-setup"></a>買掛金勘定設定の前提条件
-----------------------------------------
+## <a name="prerequisites-for-accounts-payable-setup"></a>買掛金勘定設定の前提条件
 
 買掛金勘定を設定できるようにするには、その前に次の設定を完了する必要があります。
 

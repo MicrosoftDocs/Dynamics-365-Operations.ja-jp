@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdcb45918b404f8a47f27bcea7c02a8397c9336f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 236743277a95b8a1170ca05f93106575ea1cc8e4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821444"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187605"
 ---
 # <a name="standard-cost-conversion-overview"></a>標準原価換算の概要
 
@@ -92,8 +92,7 @@ ms.locfileid: "5821444"
 -   日付を遡らせた在庫移動を分析します。 換算後に入力された、日付を遡らせた在庫移動を表示するには、**在庫金額** レポートを使用します。 レポートの開始日と終了日は、移行の開始日と換算日のそれぞれの前日と一致する必要があります。 レポートの選択基準は、換算された品目を反映します。 このレポートは、移行期間中に標準原価で行われた在庫移動を表示します。
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [標準原価換算の前提条件](prerequisites-standard-cost-conversion.md)
 

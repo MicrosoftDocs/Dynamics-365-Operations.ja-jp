@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103631"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193884"
 ---
 # <a name="firm-planned-orders"></a>計画オーダーの確定
 
@@ -102,7 +102,7 @@ ms.locfileid: "6103631"
 
 計画の最適化および組み込み計画エンジンの両方とも、計画オーダーの自動確定に使用できます。 ただし、重要な違いがいくつかあります。 たとえば、計画の最適化は注文日 (つまり、開始日) を使用して確定する計画オーダーを決定しますが、組み込み計画エンジンは、要求期日 (つまり、終了日) を使用します。 次の表では、違いについて要約します。
 
-| | 計画の最適化 | 組み込み計画エンジン |
+| 機能 | 計画の最適化 | 組み込み計画エンジン |
 |---|---|---|
 | **日付基準** | 自動確定は注文日 (開始日) に基づきます。 | 自動確定は要求期日 (終了日) に基づきます。 |
 | **リード タイム** | 注文日 (開始日) によって確定がトリガーされるため、確定タイム フェンスの一部としてリード タイムを考慮する必要はありません。 | 注文が時間通りに確定されるようにするには、確定タイム フェンスはリード タイムよりも長くする必要があります。 |

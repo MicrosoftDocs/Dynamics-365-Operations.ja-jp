@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792150"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193285"
 ---
 # <a name="ratings-and-reviews-modules"></a>評価およびレビュー モジュール
 
@@ -54,7 +54,11 @@ E コマース Web サイトの評価およびレビューは、購入を決定�
 
 レビューの書き込みモジュールには、ユーザーがサインインし、評価を割り当て、製品のレビューを書くことのできる **レビューを書く** ボタンが含まれています。 このモジュールで、ユーザーが以前に送信した評価またはレビューを編集することもできます。 このモジュールは通常、PDP 上の評価ヒストグラムおよび製品レビュー リスト モジュールの上に表示されます。
 次の図は、顧客が **レビューを書く** を選択したときに表示される **レビューを書く** ダイアログ ボックスを示しています。 顧客は、このダイアログ ボックスを使用して評価およびレビューを送信できます。
-![レビューを書くダイアログ ボックス](media/rnr-eCommerce-write-review-module.png) 次の表は、オーサリング ツールでコンフィギュレーションする必要があるレビューの書き込みモジュール プロパティを示します。
+
+![レビューを書くダイアログ ボックス](media/rnr-eCommerce-write-review-module.png)
+
+次の表は、オーサリング ツールでコンフィギュレーションする必要がある レビューの書き込みモジュール プロパティを示します。
+
 | プロパティ名 | 金額        | プロパティの説明                 |
 |---------------|--------------|--------------------------------------|
 | 氏名          | レビューの書き込み | レビューの書き込みモジュールの名前。 |

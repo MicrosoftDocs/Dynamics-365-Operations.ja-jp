@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 833eb271b15dd6d32501049ce9154022a388f1d4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018834"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189578"
 ---
 # <a name="peripherals"></a>周辺機器
 
@@ -833,8 +833,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
     6.  DLL ホストが終了したら、Modern POS を再起動します。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fb7d2623451313475a6c234e820c7c6295be40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e4b38fd137e6479493da79d4b62d0111b502a632
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835487"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189496"
 ---
 # <a name="vendor-posting-profiles"></a>仕入先転記プロファイル
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835487"
 
 仕入先転記プロファイルは、仕入先トランザクションの総勘定元帳への転記を制御します。
 
-<a name="vendor-posting-profiles"></a>仕入先転記プロファイル
------------------------
+## <a name="vendor-posting-profiles"></a>仕入先転記プロファイル
 
 仕入先転記プロファイルでは、すべての仕入先、仕入先グループ、または単一の仕入先に総勘定元帳勘定とドキュメント設定を割り当てることができます。 これらの設定は、発注書、仕入先請求書、および現金による支払を作成するときに使用されます。 トランザクションに、このページ上でトランザクション用に設定された転記プロファイルとは異なる転記プロファイルを選択し、優先して使用できます。 既定の転記プロファイルは、**買掛金勘定パラメーター** ページの **元帳と売上税** クイック タブで定義されます。 既定の転記プロファイルは、必要に応じて、別のプロファイルに変更できる新しいドキュメントのヘッダーに自動的に追加されます。
 

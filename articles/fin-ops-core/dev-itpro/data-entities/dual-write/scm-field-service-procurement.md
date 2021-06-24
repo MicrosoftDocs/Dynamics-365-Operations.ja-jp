@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941112"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219790"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Supply Chain Management と Field Service の間の調達の統合
 
@@ -196,23 +196,10 @@ Supply Chain Management によって共有されている Dataverse と Field Se
 
 | サプライ チェーン マネジメント | Field Service | 説明 |
 |---|---|---|
-| 発注書ヘッダー V2 | msdyn\_Purchaseorders | 次の表に、発注書ヘッダーを表す列を示します。 |
-| 発注書明細行エンティティ | msdyn\_PurchaseOrderProducts | このテーブルは、発注書で明細行を示す列を示します。 製品番号が同期に使用されます。 これにより、製品の分析コードを含め、製品を在庫管理単位 (SKU) として識別します。 Dataverse を使った製品統合の詳細については、[統一された製品の体験](product-mapping.md) を参照してください。 |
-| 製品受領書ヘッダー | msdyn\_purchaseorderreceipts | 次のテーブルは、Supply Chain Management で製品受領が転記された場合に作成される製品受領 ヘッダーを示しています。 |
-| 製品受領書明細行 | msdyn\_purchaseorderreceiptproducts | このテーブルは、Supply Chain Management で製品受領が転記された場合に作成される製品受領明細行ヘッダーを示しています。 |
-| 発注書明細行によって削除されたエンティティ | msdyn\_purchaseorderproducts | 次のテーブルは、ソフト削除された発注書明細行に関する情報を示しています。 Supply Chain Management の発注書明細行は、変更管理が有効な場合に発注書が確認または承認された場合にのみソフト削除できます。 この行は Supply Chain Management データベースに存在し、**IsDeleted** としてマークされています。 Dataverse にはソフト削除という概念は存在しないので、この情報を Dataverse に同期することが重要です。 これにより、Supply Chain Management でソフト削除された明細行を Dataverse から自動的に削除することができます。 この場合、Dataverse で行を削除するロジックは Supply Chain Management Extende に位置します。 |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [発注書ヘッダー V2](mapping-reference.md#183) | msdyn\_Purchaseorders | 次の表に、発注書ヘッダーを表す列を示します。 |
+| [発注書明細行エンティティ](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | このテーブルは、発注書で明細行を示す列を示します。 製品番号が同期に使用されます。 これにより、製品の分析コードを含め、製品を在庫管理単位 (SKU) として識別します。 Dataverse を使った製品統合の詳細については、[統一された製品の体験](product-mapping.md) を参照してください。 |
+| [製品受領書ヘッダー](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | 次のテーブルは、Supply Chain Management で製品受領が転記された場合に作成される製品受領 ヘッダーを示しています。 |
+| [製品受領書明細行](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | このテーブルは、Supply Chain Management で製品受領が転記された場合に作成される製品受領明細行ヘッダーを示しています。 |
+| [発注書明細行によって削除されたエンティティ](mapping-reference.md#182) | msdyn\_purchaseorderproducts | 次のテーブルは、ソフト削除された発注書明細行に関する情報を示しています。 Supply Chain Management の発注書明細行は、変更管理が有効な場合に発注書が確認または承認された場合にのみソフト削除できます。 この行は Supply Chain Management データベースに存在し、**IsDeleted** としてマークされています。 Dataverse にはソフト削除という概念は存在しないので、この情報を Dataverse に同期することが重要です。 これにより、Supply Chain Management でソフト削除された明細行を Dataverse から自動的に削除することができます。 この場合、Dataverse で行を削除するロジックは Supply Chain Management Extende に位置します。 |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

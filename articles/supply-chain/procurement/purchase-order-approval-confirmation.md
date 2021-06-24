@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f1f6971e645a0aae8679c94a4bbd4cba946dc3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9b387be0b28564dd7ae88af33812a8bbf034c0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825425"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188294"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>発注書の承認と確認
 
@@ -83,8 +83,7 @@ ms.locfileid: "5825425"
 
 発注書に変更管理が行われている場合、注文または出荷残量のキャンセルなどの変更がワークフローシステムに送信され、プロセスが完了および在庫トランザクションがキャンセルされる前に、承認する必要があります。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [発注書の概要](purchase-order-overview.md)
 

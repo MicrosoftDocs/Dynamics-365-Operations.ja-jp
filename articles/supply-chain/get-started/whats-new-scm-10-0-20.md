@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.20 のプレビュー (2021 年 7 月)
+title: Dynamics 365 Supply Chain Management 10.0.20 のプレビュー (2021 年 8 月)
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.20 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c009625204ef0fdc72c381b5fee11f4d031a6a82
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.openlocfilehash: 3a35d3becbf81c51d29ef2e0f4cbf6a12cd196b8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123417"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187629"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-july-2021"></a>Dynamics 365 Supply Chain Management 10.0.20 のプレビュー (2021 年 7 月)
+# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Management 10.0.20 のプレビュー (2021 年 8 月)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -25,8 +25,9 @@ ms.locfileid: "6123417"
 このトピックでは、バージョン 10.0.20 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.886 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 5 月
-- **リリースの一般提供 (手動更新):** 2021 年 6 月
+- **リリースの一般提供 (手動更新):** 2021 年 7 月
 - **リリースの一般提供 (自動更新):** 2021 年 7 月
+
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 

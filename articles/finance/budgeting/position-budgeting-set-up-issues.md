@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3e3c2f8a69d620bd2babe0d8d55858d01b25436
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ed85e9fd1a953a60483f369e9ac39762e294f6fc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833116"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190264"
 ---
 # <a name="position-budgeting-troubleshooting"></a>職位の予算作成のトラブルシューティング
 
@@ -28,8 +28,7 @@ ms.locfileid: "5833116"
 
 この記事は、職位の予算作成をコンフィギュレーションするときに提起される可能性のある質問に対する回答を提供します。 これは、予算原価要素、報酬グループ、および報酬グリッドの作成方法に関する、よく寄せられる質問に対処します。 
 
-<a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>人事管理で [予測職位] ページが見つからないのはなぜですか。
----------------------------------------------------------------
+## <a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>人事管理で [予測職位] ページが見つからないのはなぜですか。
 
 予測職位は予算作成に移動されました。
 

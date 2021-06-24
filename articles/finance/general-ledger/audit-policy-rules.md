@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1297f405e57c2de4f42f05f78ef52b2d763f0f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f57c3405e03651798b7e0aaf1fab84d25f33f7cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821988"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187871"
 ---
 # <a name="audit-policy-rules"></a>監査ポリシー ルール
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821988"
 
 経費精算書、仕入先請求書、および発注書が、作成したポリシー ルールに準拠しているかどうか評価するには、監査ポリシーを使用できます。 監査ポリシーに関連付けられているすべてのルールが、指定したスケジュールに従ってバッチ モードで実行されます。  各ポリシー ルールは、ポリシー ルール タイプのインスタンスです。 各ポリシー ルール タイプに対して、一度に 1 つのポリシー ルールだけ有効にできます。 
 
-<a name="queries-and-query-types"></a>クエリおよびクエリ タイプ
------------------------
+## <a name="queries-and-query-types"></a>クエリおよびクエリ タイプ
 
 監査ポリシー ルールを作成する場合は、最初にポリシー ルール タイプを選択します。 ポリシー ルール タイプは、ポリシー ルールを作成するための開始点として使用するアプリケーション オブジェクト ツリー (AOT) のクエリを指定します。 また、ポリシー ルールに使用するクエリ タイプを指定します。 クエリは、ポリシー ルールが評価する元伝票を決定します。 また、法人および日付の両方を識別する元伝票のフィールド指定して、監査するドキュメントを選択する際に使用します。 クエリ タイプは、クエリ ページと監査ポリシー ルール ページの既定のフィールドを制御します。 次の表に、監査ポリシー ルールに使用できるクエリ タイプを示します。
 
@@ -91,8 +90,7 @@ ms.locfileid: "5821988"
 
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [監査ポリシー違反およびケース](audit-policy-violations-cases.md)
 [元伝票の監査ポリシーの定義](tasks/define-audit-policies-source-documents.md)

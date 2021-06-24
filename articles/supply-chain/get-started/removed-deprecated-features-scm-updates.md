@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: a7a9fb619ce3488ad4e3e79292af7acc359b83c5
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947547"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193233"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 
@@ -38,7 +38,7 @@ ms.locfileid: "5947547"
 
 ### <a name="job-card-device"></a>ジョブ カード デバイス
 
-|   |   |
+| &nbsp;  | &nbsp;  |
 |---|---|
 | **廃止 / 削除の理由** | [ジョブ カード デバイス](../production-control/config-job-card-device.md) が、新しい [生産現場の実行インターフェイス](../production-control/production-floor-execution-configure.md) により置き換えられています。 |
 | **別の機能で置き換えられているか?**   | はい、[ジョブ カード デバイス](../production-control/config-job-card-device.md) が、新しい [生産現場の実行インターフェイス](../production-control/production-floor-execution-configure.md) により置き換えられます。 |
@@ -50,7 +50,7 @@ ms.locfileid: "5947547"
 
 ### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations- 倉庫管理 (倉庫アプリ)
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 2021 年 4 月付で、*Dynamics 365 for Finance and Operations - 倉庫管理* (倉庫アプリ) は廃止され、2022 年 4 月以降はサポートされません。 これで、Supply Chain Management のバージョン 10.0.17 にリリースされた *Warehouse Mobile モバイル アプリ* によって置き換えられたのです。 この新しいアプリは完全に交換するものですが、移行を容易にする基になる同じフレームワークを使用します。 必要に応じて、2 つのアプリケーションを並べて、新しいアプリの使い方をユーザーが徐々に調整できるよう支援することができます。<br><br>新しい Warehouse Management モバイル アプリについての詳細は、[Warehouse Management モバイル アプリケーション](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) と [Warehouse Management モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md) をご覧ください。 |
 | **別の機能で置き換えられているか?**   | はい、新しい Warehouse Mobile モバイル アプリによって置き換えられる必要があります。 |
@@ -62,7 +62,7 @@ ms.locfileid: "5947547"
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 による Internet Explorer 11 サポートの非推奨
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
@@ -72,7 +72,7 @@ ms.locfileid: "5947547"
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-manufacturing-scenarios"></a>製造シナリオに、組み込み型 Supply Chain Management マスター プラン エンジンを使用する
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | マスター プランの実行中のパフォーマンスを向上させ、SQLデータベースの負荷を最小化する目的で、組み込み型 Supply Chain Management マスタープラン エンジンは、プランの最適化によって置き換えられます。 プランの最適化を使用すると、オフィス時間内でも実行できる迅速な計画の実行が可能となります。 これにより、立案者は、需要またはプランのパラメーターの変更にすぐに対応できます。 |
 | **別の機能で置き換えられているか?**   | 既存の組み込み Supply Chain Management 計画エンジンは、マスター計画の最適化によって置き換えられます。 |
@@ -84,7 +84,7 @@ ms.locfileid: "5947547"
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios"></a>配送シナリオに、組み込み型 Supply Chain Management マスター プラン エンジンを使用する
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | マスター プランの実行中のパフォーマンスを向上させ、SQLデータベースの負荷を最小化する目的で、組み込み型 Supply Chain Management マスタープラン エンジンは、プランの最適化によって置き換えられます。 プランの最適化を使用すると、オフィス時間内でも実行できる迅速な計画の実行が可能となります。 これにより、立案者は、需要またはプランのパラメーターの変更にすぐに対応できます。 |
 | **別の機能で置き換えられているか?**   | 既存の組み込み Supply Chain Management 計画エンジンは、マスター計画の最適化によって置き換えられます。 |
