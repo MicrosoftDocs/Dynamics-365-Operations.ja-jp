@@ -12,13 +12,13 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Platform update における新機能および変更された機能
               items:
-                - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
+                - name: プラットフォーム更新プログラムの最新情報や変更事項に関するホームページ
                   href: get-started/whats-new-home-page.md
-                - name: バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 7 月)
+                - name: プラットフォーム更新プログラム バージョン 10.0.20 (2021 年 8 月)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)
+                - name: プラットフォーム更新プログラム バージョン 10.0.19 (2021 年 6 月)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: 10.0.18 のプラットフォーム更新プログラム (2021 年 5 月)
+                - name: プラットフォーム更新プログラム 10.0.18 (2021 年 5 月)
                   href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)
                   href: get-started/whats-new-platform-updates-10-0-17.md
@@ -848,15 +848,13 @@
                       href: extensibility/compatibility-checker-tool.md
             - name: パフォーマンス
               items:
-                - name: Trace Parser を使用したトレースの実行
+                - name: Trace Parser によるトレースの取得
                   href: perf-test/trace-trace-tutorial.md
-                - name: タスク レコーダーおよび Performance SDK を使用したシングル ユーザー テスト
+                - name: パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: ローカル テスト コントローラーを使用したマルチユーザー パフォーマンス SDK テスト
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: パフォーマンス SDK および Azure DevOps を使用したマルチ ユーザー テスト
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: パフォーマンス SDK を使ったテストのトラブルシューティング ガイド
+                - name: パフォーマンス SDK によるマルチユーザー テスト
+                  href: perf-test/perfsdk-multi-user-testing.md
+                - name: パフォーマンス SDK を利用したテストに関するトラブルシューティング ガイド
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -1176,7 +1174,7 @@
           items:
             - name: モバイル プラットフォームのリソース
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: 使用開始
+            - name: 開始する
               items:
                 - name: モバイル プラットフォームの使用を開始する
                   href: mobile-apps/platform/mobile-platform-getting-started.md
@@ -1538,11 +1536,13 @@
                   href: sysadmin/batch-server-overview.md
                 - name: バッチ ジョブの作成
                   href: sysadmin/tasks/create-batch-job.md
+                - name: バッチ ジョブで自動再試行を実現
+                  href: sysadmin/retryable-batch.md
                 - name: バッチ ジョブのコピー
                   href: sysadmin/copy-batch-job.md
                 - name: 有効なバッチ期間
                   href: sysadmin/activeperiod.md
-                - name: 有効なバッチ期間における夏時間のサポート
+                - name: 有効なバッチ期間で夏時間をサポート
                   href: sysadmin/batch-active-period-dst.md
                 - name: バッチ マネージャーのセキュリティ ロール
                   href: sysadmin/runby.md
@@ -1584,19 +1584,17 @@
                   href: migration-upgrade/analyze-code-upgrade.md
                 - name: 'AX 2012 アップグレード: 分析のためのデモ環境の展開'
                   href: migration-upgrade/analysis-sandbox.md
-                - name: AX 2012 アップグレード - 開発環境でのデータ アップグレード
+                - name: AX 2012 アップグレード - 開発環境のデータ アップグレード
                   href: migration-upgrade/data-upgrade-2012.md
-                - name: AX 2012 アップグレード - データ アップグレードのためのアップグレード前のチェックリスト
+                - name: AX 2012 アップグレード - データ アップグレードにともなう事前確認事項
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012 アップグレード - DACPAC プロセスを使用したサンドボックス環境でのデータ アップグレード
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: AX 2012 からのアップグレード - SQL トランザクション レプリケーション
                   href: database/replication-setup.md
-                - name: AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード
-                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
+                  href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012 アップグレード - オンプレミス環境
                   href: migration-upgrade/on-prem-upgrade-2012.md
-                - name: AX 2012 アップグレード - 切替テスト
+                - name: AX 2012 アップグレード - カットオーバー テスト
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012 アップグレード - アップグレード後のタスク
                   href: migration-upgrade/app-validation-process.md

@@ -4,7 +4,7 @@
       items:
         - name: Dynamics 365 Commerce ホーム ページ
           href: index.md
-        - name: 使用開始
+        - name: 開始する
           items:
             - name: 購入する前に
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
@@ -92,9 +92,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce の新機能および変更された機能
                   items:
-                    - name: Commerce ホーム ページの新機能および変更された機能
+                    - name: Commerce の最新情報や変更事項に関するホームページ
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.20 (2021 年 7 月)
+                    - name: Commerce 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (2021 年 6 月)
                       href: get-started/whats-new-commerce-10-0-19.md
@@ -242,25 +242,25 @@
                   href: commerce-architecture.md
                 - name: Dynamics 365 Commerce 認証フロー
                   href: arch-auth-flow.md
-                - name: Dynamics 365 Commerceコンポーネント バージョンの管理要件
+                - name: Dynamics 365 Commerce コンポーネントのバージョン管理要件
                   href: arch-component-versioning.md
-                - name: Commerce Scale Unit アーキテクチャ
+                - name: ヘッドレス コマース エンジンのアーキテクチャ
                   href: dev-itpro/retail-server-architecture.md
-                - name: ストア内トポロジの選択
+                - name: 店舗内トポロジの選択
                   href: dev-itpro/retail-in-store-topology.md
                 - name: Commerce Data Exchange
                   items:
                     - name: Commerce Data Exchange のベスト プラクティス
                       href: dev-itpro/CDX-Best-Practices.md
-                    - name: Commerce Data Exchange とコマース チャネルのコミュニケーション
+                    - name: Commerce Data Exchange とコマース チャネルの通信
                       href: dev-itpro/define-retail-channel-communications-cdx.md
                     - name: Commerce Data Exchange のトラブルシューティング
                       href: dev-itpro/CDX-Troubleshooting.md
-                - name: Modern POS アーキテクチャ
+                - name: Modern POS のアーキテクチャ
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: オンライン ストア発行アーキテクチャ
+                - name: オンライン ストア チャネルの公開
                   href: dev-itpro/retail-online-store-publishing-architecture.md
-                - name: Retail Channel Performance Power BI コンテンツ
+                - name: Retail Channel Performance Power BI のコンテンツ
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
                   href: dev-itpro/PA-DSS-Certification.md
@@ -544,13 +544,15 @@
                       href: dev-itpro/cnp-pos.md
                     - name: PayPal 向け Dynamics 365 Payment Connector
                       href: paypal.md
-                    - name: Wallet 支払サポート
+                    - name: ウォレット支払のサポート
                       href: wallets.md
-                    - name: 支払に関してよく寄せられる質問
+                    - name: 店頭会計の支払を強化
+                      href: dev-itpro/enhanced-sca.md
+                    - name: 支払に関する FAQ
                       href: dev-itpro/payments-retail.md
-                - name: 電子メールと通知
+                - name: メールと通知
                   items:
-                    - name: カスタム レイアウトおよびテンプレートを使用するためのレシートの電子メールのコンフィギュレーション
+                    - name: 領収書メールを構成してカスタム レイアウトとテンプレートを利用する
                       href: configure-emailed-receipt-formats.md
                     - name: トランザクションとレシートの電子メールへの QR コードまたはバー コードの追加
                       href: add-qr-code-barcode-email.md
@@ -768,15 +770,19 @@
                   href: order-fulfillment-pos-setup.md
                 - name: POS での注文通知の表示
                   href: notifications-pos.md
-                - name: 連続プログラムの販売と販売注文の処理
+                - name: 販売継続プログラムと販売注文処理
                   href: tasks/use-continuity-program.md
-                - name: 販売時点管理 (POS) での顧客のチェックイン通知の有効化
+                - name: POS で顧客チェックイン通知を利用する
                   href: enable-customer-check-in.md
-            - name: 返品
+            - name: 返品と払戻
               items:
+                - name: POS で返品を作成する
+                  href: POS-returns.md
+                - name: シリアル番号で管理する製品を POS で返品する
+                  href: POS-serial-returns.md
                 - name: リンクされた払戻
                   href: dev-itpro/linked-refunds.md
-                - name: 店舗の品揃えに含まれていない製品の販売および返品
+                - name: 店舗の品揃えに含まれない製品の販売と返品
                   href: sell-return-outside-assortments.md
                 - name: 返品注文に対する交換のコンフィギュレーションとプロセス
                   href: orderexchanges.md
@@ -1228,21 +1234,25 @@
                   href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service - グローバリゼーション機能
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
+                - name: Regulatory Configuration Service で ER 構成を作成し、グローバル リポジトリにアップロードする
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
             - name: オーストリア
               items:
-                - name: オーストリア向け会計登録サービス統合サンプル
+                - name: オーストリア向け会計登録サービス統合のサンプル
                   href: localizations/emea-aut-fi-sample.md
             - name: ブラジル
               items:
                 - name: ブラジル向け Commerce ローカライズ
                   href: localizations/latam-bra-commerce-localization.md
-            - name: 東ヨーロッパ
+                - name: ブラジル向け Commerce ローカライズの設定と展開
+                  href: localizations/latam-bra-deployment.md
+            - name: 西ヨーロッパ
               items:
                 - name: 共通
                   items:
-                    - name: 東ヨーロッパにおける Commerce の事前請求書
+                    - name: 西ヨーロッパ向け Commerce の高度な請求書
                       href: localizations/emea-eeu-advance-invoices-for-retail.md
                     - name: 東ヨーロッパにおける Commerce の小口現金管理
                       href: localizations/emea-eeu-petty-cash-for-retail.md
@@ -1958,13 +1968,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
                 - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
                   items:
-                    - name: Power BI にデータをプルするよう ER を構成する
+                    - name: ER を構成して Power BI にデータをプルする
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
-                    - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
+                    - name: 印刷に対応した自由書式請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
-                - name: ビジネス ドキュメントの管理 (BDM)
+                - name: 効率的な ER ソリューションを設計する
+                  items:
+                    - name: ER 形式の実行をトレースしてパフォーマンスの問題を解決する
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER 構成でパフォーマンス問題を解決する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                - name: ビジネス ドキュメント管理 (BDM)
                   items:
                     - name: BDM 概要
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
@@ -2198,7 +2212,7 @@
               items:
                 - name: オンライン チャネルの拡張性の概要
                   href: e-commerce-extensibility/overview.md
-                - name: 使用開始
+                - name: 開始する
                   items:
                     - name: eコマース オンライン拡張機能の開発を開始する
                       href: e-commerce-extensibility/sdk-getting-started.md
@@ -2388,13 +2402,13 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Commerce SDK ビルド パイプラインの設定
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
-                - name: GitHub および NuGet からサンプルとパッケージをダウンロードする
+                - name: GitHub と NuGet からサンプルとパッケージをダウンロードする
                   href: dev-itpro/retail-sdk/sdk-github.md
-                - name: Retail SDK に関するよく寄せられる質問
+                - name: Retail SDK に関する FAQ
                   href: dev-itpro/retail-sdk/sdk-faq.md
-            - name: 販売時点管理の拡張機能
+            - name: 販売時点管理 (POS) の拡張機能
               items:
-                - name: POS 画面レイアウト
+                - name: POS 画面のレイアウト
                   href: pos-screen-layouts.md
                 - name: Microsoft Dynamics 365 Commerce の Store Commerce アプリ
                   href: dev-itpro/store-commerce.md

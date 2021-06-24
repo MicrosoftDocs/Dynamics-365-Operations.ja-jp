@@ -72,13 +72,11 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.20 (2021 年 7 月)
+                    - name: Finance 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (2021 年 7 月)
+                    - name: Finance 10.0.19 (2021 年 6 月)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (2021 年 5 月)
-                      href: get-started/whats-new-changed-10-0-18.md
-                    - name: Finance 10.0.17 (2021 年 4 月)
                       href: get-started/whats-new-changed-10-0-17.md
             - name: 削除済みまたは非推奨の機能
               items:
@@ -1216,7 +1214,9 @@
               href: finance-insights/finance-insights-home-page.md
             - name: コンフィギュレーションと管理
               items:
-                - name: Finance 分析情報のコンフィギュレーション
+                - name: パブリック プレビュー用に Finance Insights を構成する
+                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
+                - name: Finance Insights を構成する
                   href: finance-insights/configure-for-fin-insites.md
                 - name: 顧客支払予測の有効化
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1462,8 +1462,10 @@
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Regulatory Configuration Service - グローバリゼーション機能
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-                    - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
+                    - name: Regulatory Configuration Service で電子申告コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
+                      href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: 電子請求
                   items:
                     - name: 電子請求の概要
@@ -1476,7 +1478,9 @@
                       href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
                     - name: Azure ストレージ アカウントと Key Vault の作成
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
-                    - name: 使用開始
+                    - name: 使用状況管理ダッシュボード
+                      href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
+                    - name: 開始する
                       items:
                         - name: 電子請求サービス管理の使用を開始する
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
@@ -2416,18 +2420,102 @@
                               href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
                             - name: 税トランザクション ID が正しくない
                               href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
+                            - name: GSTR レポートのフィールド値が正しくない
+                              href: localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md
+                            - name: 請求仕訳帳または伝票のフィールド値が正しくない
+                              href: localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md
+                            - name: 伝票の勘定科目が正しくない
+                              href: localizations/apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md
+                            - name: 現在の税コンフィギュレーションのデザイナーを開く
+                              href: localizations/apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md
+                            - name: レコードやフィールドが GSTR レポートに表示されない
+                              href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
+                            - name: 税決済の実行時にセットオフ ルール エラーが発生する
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
                 - name: 直接税
                   items:
                     - name: インドの源泉徴収税
                       items:
-                        - name: 税控除の計算時に商品及びサービス税を含める
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: 徴税の計算時に商品及びサービス税を含める
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
                         - name: 税しきい値に関するよく寄せられる質問
                           href: localizations/apac-ind-tax-thresholds.md
-                        - name: 商品の売上に課せられる TCS
-                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                        - name: インド TCS
+                          items:
+                            - name: 商品の売上に課せられる TCS
+                              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                            - name: 徴税の計算時に商品及びサービス税を含める
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                        - name: インド TDS
+                          items:
+                            - name: インド源泉控除 (TDS) の概要
+                              href: localizations/apac-ind-TDS-India-TDS-overview.md
+                            - name: 税控除の計算時に商品及びサービス税を含める
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                            - name: TDS の基本設定
+                              items:
+                                - name: TDS パラメーターの設定
+                                  href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                                - name: TDS 勘定科目の設定
+                                  href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                                - name: 法人の TDS 登録番号の設定
+                                  href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: TDS 税タイプに対する源泉徴収税の関係機関の設定
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: TDS 税タイプに対する税コンポーネントの設定
+                                  href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                                - name: TDS 税タイプに対する源泉徴収税コードの設定
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: TDS 税タイプに対する源泉徴収税精算期間の設定
+                                  href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                                - name: TDS 税タイプに対する源泉徴収税レポート コードの設定
+                                  href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                                - name: TDS 税タイプに対する源泉徴収税コードの設定
+                                  href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                                - name: TDS 税コードを TDS 税グループに関連付け、TDS を計算するための式を定義する
+                                  href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                                - name: TDS 特約証明書番号の記録
+                                  href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                                - name: 買掛金勘定と売掛金勘定の TDS パラメーターの設定
+                                  href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                                - name: TDS 配賦を使用した支払スケジュールの設定
+                                  href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                                - name: TDS オーソリティ支払の支払手数料の設定
+                                  href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                                - name: 仕入先と顧客の TDS グループ、PAN、TAN 情報の設定
+                                  href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                                - name: TDS 計算のフォーミュラ デザイナーおよびしきい値の制限
+                                  items: null
+                                - name: TDS 計算のフォーミュラ デザイナー
+                                  href: localizations/apac-ind-TDS-Formula-designer.md
+                                - name: しきい値の制限としきい値の制限の例外
+                                  href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                            - name: 請求書の TDS 計算
+                              items:
+                                - name: 請求書の TDS 計算
+                                  href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                                - name: 仕訳帳を使用した請求書の TDS 計算
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                                - name: 発注書フォームと販売注文フォームを使用した請求書の TDS 計算
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                                - name: '[自由形式の請求書] ページからの請求書の TDS 計算'
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                                - name: 請求書分割機能
+                                  href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                            - name: 支払および支払手形の TDS 計算
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                            - name: 会社間トランザクションの TDS 計算
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                            - name: TDS 決済プロセス
+                              items:
+                                - name: 支払および支払手形の TDS 計算
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                                - name: 会社間トランザクションの TDS 計算
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                                - name: 定期 TDS 決済プロセスの実行
+                                  href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                                - name: TDS 支払の TDS オーソリティ仕入先への決済と TDS challan の生成
+                                  href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                                - name: TDS 決済期間の転記された TDS 支払およびトランザクションの表示
+                                  href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
                 - name: 固定資産
                   items:
                     - name: インドの固定資産の概要
@@ -2454,84 +2542,12 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: 資本品目の固定資産への移動
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: インド TDS
-                  items:
-                    - name: インド源泉控除 (TDS) の概要
-                      href: localizations/apac-ind-TDS-India-TDS-overview.md
-                    - name: TDS の基本設定
+                    - name: TDS 証明書の番号と日付の記録と更新
                       items:
-                        - name: TDS パラメーターの設定
-                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-                        - name: TDS 勘定科目の設定
-                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
-                        - name: 法人の TDS 登録番号の設定
-                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
-                        - name: TDS 税タイプに対する源泉徴収税の関係機関の設定
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: TDS 税タイプに対する税コンポーネントの設定
-                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
-                        - name: TDS 税タイプに対する源泉徴収税コードの設定
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: TDS 税タイプに対する源泉徴収税精算期間の設定
-                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
-                        - name: TDS 税タイプに対する源泉徴収税レポート コードの設定
-                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
-                        - name: TDS 税タイプに対する源泉徴収税コードの設定
-                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
-                        - name: TDS 税コードを TDS 税グループに関連付け、TDS を計算するための式を定義する
-                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
-                        - name: TDS 特約証明書番号の記録
-                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
-                        - name: 買掛金勘定と売掛金勘定の TDS パラメーターの設定
-                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
-                        - name: TDS 配賦を使用した支払スケジュールの設定
-                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
-                        - name: TDS オーソリティ支払の支払手数料の設定
-                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
-                        - name: 仕入先と顧客の TDS グループ、PAN、TAN 情報の設定
-                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
-                    - name: TDS 計算のフォーミュラ デザイナーおよびしきい値の制限
-                      items:
-                        - name: TDS 計算のフォーミュラ デザイナー
-                          href: localizations/apac-ind-TDS-Formula-designer.md
-                        - name: しきい値の制限としきい値の制限の例外
-                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
-                    - name: 請求書の TDS 計算
-                      items:
-                        - name: 請求書の TDS 計算
-                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
-                        - name: 仕訳帳を使用した請求書の TDS 計算
-                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
-                        - name: 発注書フォームと販売注文フォームを使用した請求書の TDS 計算
-                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
-                        - name: '[自由形式の請求書] ページからの請求書の TDS 計算'
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
-                        - name: 請求書分割機能
-                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
-                    - name: 支払および支払手形の TDS 計算
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                    - name: 会社間トランザクションの TDS 計算
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                    - name: TDS 決済プロセス
-                      items:
-                        - name: 支払および支払手形の TDS 計算
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                        - name: 会社間トランザクションの TDS 計算
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                        - name: TDS 決済プロセス
-                          items:
-                            - name: 定期 TDS 決済プロセスの実行
-                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
-                            - name: TDS 支払の TDS オーソリティ仕入先への決済と TDS challan の生成
-                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
-                            - name: TDS 決済期間の転記された TDS 支払およびトランザクションの表示
-                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
-                        - name: TDS 証明書の番号と日付の記録と更新
-                          items:
-                            - name: TDS 回収可能証明書番号の記録
-                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
-                            - name: TDS トランザクションの証明書の番号と日付の更新
-                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+                        - name: TDS 回収可能証明書番号の記録
+                          href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                        - name: TDS トランザクションの証明書の番号と日付の更新
+                          href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: イタリア
               items:
                 - name: イタリアの概要
@@ -4157,16 +4173,20 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
                     - name: 生成された ER レポートの結果を追跡し、ベースライン値と比較するための改善
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                    - name: ER によるテストの自動化
+                    - name: 電子申告によるテストの自動化
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
                 - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
                   items:
-                    - name: Power BI にデータをプルするよう ER を構成する
+                    - name: Power BI にデータをプルするよう電子申告を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                - name: 効率的な電子申告ソリューションをデザインする
+                  items:
+                    - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                    - name: 電子申告コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: ビジネス ドキュメントの管理 (BDM)
                   items:
                     - name: BDM 概要

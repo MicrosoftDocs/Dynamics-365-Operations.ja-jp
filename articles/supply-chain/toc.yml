@@ -4,7 +4,7 @@
       items:
         - name: Dynamics 365 Supply Chain Management ホーム ページ
           href: index.md
-        - name: 使用開始
+        - name: 開始する
           items:
             - name: 購入する前に
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
@@ -70,9 +70,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Supply Chain Management の新機能または変更された機能
                   items:
-                    - name: Supply Chain Management ホーム ページの新機能または変更された機能
+                    - name: Supply Chain Management の最新情報や変更事項に関するホームページ
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.20 (2021 年 7 月)
+                    - name: Supply Chain Management 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (2021 年 6 月)
                       href: get-started/whats-new-scm-10-0-19.md
@@ -220,23 +220,27 @@
                       href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service - グローバリゼーション機能
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
+                    - name: Regulatory Configuration Service で ER 構成を作成し、グローバル リポジトリにアップロードする
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
+                      href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 電子請求
                   items:
                     - name: 電子請求の概要
                       href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 電子請求管理コンポーネント
+                    - name: 電子請求の管理コンポーネント
                       href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Services (RCS) での電子請求のコンフィギュレーション
                       href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Finance および Supply Chain Management での電子請求書の発行
+                    - name: Finance と Supply Chain Management で電子請求書を発行する
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Azure ストレージ アカウントと Key Vault の作成
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 使用開始
+                    - name: 使用状況の管理ダッシュボード
+                      href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 開始する
                       items:
-                        - name: 電子請求サービス管理の使用を開始する
+                        - name: 電子請求サービス管理の概要
                           href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 電子請求の使用を開始する
                           href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
@@ -1379,13 +1383,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
                   items:
-                    - name: Power BI にデータをプルするよう ER を構成する
+                    - name: ER を構成して Power BI にデータをプルする
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
+                    - name: 印刷に対応した自由書式請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ビジネス ドキュメントの管理 (BDM)
+                - name: 効率的な ER ソリューションを設計する
+                  items:
+                    - name: ER 形式の実行をトレースしてパフォーマンスの問題を解決する
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER 構成でパフォーマンス問題を解決する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ビジネス ドキュメント管理 (BDM)
                   items:
                     - name: BDM 概要
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
@@ -1671,34 +1679,42 @@
                   href: master-planning/more-about-dynamic-negative-days.md
                 - name: 会社間計画の作成
                   href: master-planning/tasks/create-intercompany-plan.md
-                - name: 計画企業内需要 (アウトバウンド) の表示
+                - name: 出庫の計画企業内需要を表示する
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: 社内サプライ チェーンの顧客との共同作業
+                - name: サプライ チェーンの内部顧客と共同作業する
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: 需要予測
+            - name: 予測
               items:
-                - name: 需要予測の概要
-                  href: master-planning/introduction-demand-forecasting.md
-                - name: 需要予測の設定
-                  href: master-planning/demand-forecasting-setup.md
-                - name: 需要予測の履歴データのインポート
-                  href: master-planning/import-historical-data.md
-                - name: 統計ベースライン予測の生成
-                  href: master-planning/generate-statistical-baseline-forecast.md
-                - name: ベースライン予測の手動調整
-                  href: master-planning/manual-adjustments-baseline-forecast.md
-                - name: 調整された需要予測の承認
-                  href: master-planning/authorize-adjusted-forecast.md
-                - name: 予測精度の監視
-                  href: master-planning/monitor-forecast-accuracy.md
-                - name: 需要予測を計算するときに、トランザクション履歴データから異常値を削除
-                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-                - name: 下方修正キー
-                  href: master-planning/reduction-keys.md
-                - name: ベースライン予測の作成
-                  href: master-planning/tasks/create-baseline-forecast.md
-                - name: 需要予測の手動変更
-                  href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: 需要予測と供給予測
+                  items:
+                    - name: 在庫予測
+                      href: master-planning/inventory-forecast.md
+                    - name: 'ガイド: 需要予測を手動で変更する'
+                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: 需要予測
+                  items:
+                    - name: 需要予測の概要
+                      href: master-planning/introduction-demand-forecasting.md
+                    - name: 需要予測の設定
+                      href: master-planning/demand-forecasting-setup.md
+                    - name: 統計ベースライン予測を生成する
+                      href: master-planning/generate-statistical-baseline-forecast.md
+                    - name: ベースライン予測を手動で調整する
+                      href: master-planning/manual-adjustments-baseline-forecast.md
+                    - name: 調整した予測を承認する
+                      href: master-planning/authorize-adjusted-forecast.md
+                    - name: 需要予測の履歴データをインポートする
+                      href: master-planning/import-historical-data.md
+                    - name: 需要予測を計算するときに、トランザクション履歴データから異常値を削除
+                      href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                    - name: 予測精度を監視する
+                      href: master-planning/monitor-forecast-accuracy.md
+                    - name: 'ガイド: ベースライン予測を作成する'
+                      href: master-planning/tasks/create-baseline-forecast.md
+                - name: 予測を利用したマスター プラン
+                  items:
+                    - name: 予測の下方修正キー
+                      href: master-planning/reduction-keys.md
             - name: マスター プランのトラブルシューティング
               href: master-planning/troubleshoot-masterplanning.md
         - name: モバイル アプリ
@@ -3421,11 +3437,13 @@
                   href: troubleshooting/production/the-warehouse-in-pic.md
             - name: リベート管理
               items:
-                - name: 品目リベート グループを使用した顧客リベートの累計が失敗する
+                - name: 品目リベート グループを使用した顧客リベート累積で失敗する
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: 販売とマーケティング
               items:
-                - name: システム管理者は権限が与えられていないため、注文の注文保留をクリアできない
+                - name: 販売注文のキャンセル時に数量を減らせません
+                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
+                - name: 未承認のため、システム管理者は注文保留を解除できません
                   href: troubleshooting/sales/system-administrator.md
             - name: 輸送管理
               items:
