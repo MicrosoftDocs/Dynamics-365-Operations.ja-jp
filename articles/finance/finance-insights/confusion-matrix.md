@@ -2,7 +2,7 @@
 title: 機械学習モデルの結果 (プレビュー版)
 description: このトピックでは、機械学習 (ML) モデルの混乱マトリックス、分類に関する問題、および正確性について説明します。 ML の予測結果の正確性について理解を深めることを目的としています。
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028206"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193543"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>機械学習モデルの結果 (プレビュー版)
 
@@ -129,16 +129,12 @@ F1 の精度を理解するのは簡単ではありませんが、基本的な�
 
 この計算方法の詳細については、モデル 1 の sklearn.metrics の分類レポートを参照してください。 3 つの状態 "時間通り"、"遅延"、"大きく遅延" は、それぞれ 1、2、3 というラベルの行で表されています。 マクロ平均は、"f1-スコア" 列の平均値になります。
 
-|           | 精度 | リコール   | f1-スコア |
+| &nbsp;    | 精度 | リコール   | f1-スコア |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 これらの結果が示すように、2 つのモデルの F1 マクロ精度スコアはほぼ同じです。 このような場合あるいはその他多くのケースでは、F1 の精度はモデルの能力を示すより良い指標となります。 精度については、結果の解釈では、モデルで考慮すべき最も重要なことを理解する必要があります。
-
-#### <a name="privacy-notice"></a>プライバシー通知
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

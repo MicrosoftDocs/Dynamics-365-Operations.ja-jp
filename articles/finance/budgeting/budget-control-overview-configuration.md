@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9a4897f34d016da8dd03d3108069e8aaa1369f7
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 98331fa4dcafb87789e7ea80f28a16463d7f2e3e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959972"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188048"
 ---
 # <a name="budget-control-overview"></a>予算管理の概要
 
@@ -28,8 +28,7 @@ ms.locfileid: "5959972"
 
 この記事は、予算管理を紹介し、財源を管理できるように、予算管理をコンフィギュレーションするのに役立つ情報を提供します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 予算管理は、勘定科目表、ワークフロー、ユーザー グループ、元伝票と仕訳帳、コンフィギュレーション可能な使用できる資金の計算、予算サイクル、しきい値などにより、組織の財源管理をサポートします。 適切に操作される場合、組織は会計年度中の財務資源の計画、測定、管理、予測が可能になります。 
 

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899098"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6183999"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード
 
@@ -72,6 +72,7 @@ _計画_ フェーズには、製品定義、計画、注文の作成、スケ�
 - 仕損のレポート
 - 間接活動
 - 分割
+- 完成とプットアウェイのレポート (スケール ユニットで倉庫の実行ワークロードも実行する必要があります [スケール ユニットでの完了とプットアウェイのレポート](#RAF)も参照ください)
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>ハブでの製造実行ワークロードで作業します
 
@@ -108,6 +109,26 @@ Supply Chain Management のバッチ ジョブは、ワークロードから受�
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>製造ハブからスケール ユニットへのメッセージ プロセッサ ジョブ
 
 _製造ハブからスケール ユニットへのメッセージ プロセッサ_ ジョブは、ハブのデータをスケール ユニットに処理します。 このジョブは、製造実行ワークロードがデプロイされると自動的に開始されます。 ただし、これは、**生産管理 \> 定期タスク \> バックオフィス ワークロード管理 \> 製造ハブからスケール ユニットへのメッセージ プロセッサ** に移動することで、いつでも手動で実行できます。
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>スケール ユニットでの完了レポートとプットアウェイ レポート
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+現在のリリースでは、(完成品、共製品、新製品の) 完了レポートとプットアウェイ操作は、[倉庫の実行ワークロード](cloud-edge-workload-warehousing.md) (製造の実行ワークロードではなく) でサポートされています。 したがって、スケールユニットに接続してこの機能を使用するには、次の操作を行う必要があります。
+
+- 倉庫実行ワークロードと製造実行ワークロードの両方をスケール ユニットにインストールします。
+- Warehouse Management モバイル アプリケーションを使用して、完了を報告し、プットアウェイ操作を処理します。 生産現場の実行インターフェースは、現在これらのプロセスをサポートしていません。
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

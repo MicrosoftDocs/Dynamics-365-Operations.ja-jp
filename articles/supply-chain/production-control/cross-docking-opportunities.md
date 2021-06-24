@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 231c59cea2ca0bcb139079209d2e846e67eb7fed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839152"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190091"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>製造オーダーから出荷ドックへのクロスドッキング
 
@@ -28,8 +28,7 @@ ms.locfileid: "5839152"
 
 このトピックでは、生産ラインから出荷輸送ドックまでの完了レポートがされているクロスドッキング材料のプロセスを管理する方法について説明します。
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 生産から出荷場所へのクロスドッキングは、大量生産しており、生産ラインから完了レポートされ次第完成品を出荷することを理想とするメーカーに適しています。 製造サイトで在庫を増やすのではなく、物理的に顧客需要の近くに位置した物流センターに製品を出荷することを目的としています。
 

@@ -2,7 +2,7 @@
 title: キャッシュ フローの予測 (プレビュー版)
 description: このトピックでは、キャッシュ フローの予測機能について説明します。
 author: ShivamPandey-msft
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6e4713aa4662714d1b2a3eeb62adce8608907054
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 64935db3b50e7598f2076ecbec72aba020d4f908
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811414"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186543"
 ---
 # <a name="cash-flow-forecast-preview"></a>キャッシュ フローの予測 (プレビュー版)
 
@@ -62,9 +62,5 @@ Dynamics 365 Finance のキャッシュ フロー予測機能は、冗長で複�
 **キャッシュフロー予測の設定** ページの新しいタブでは、**キャッシュ フローの予測** ワークスペースでフィルター処理に使用する財務分析コードをコントロールできます。 このタブは、キャッシュ フロー予測機能が有効になっている場合にのみ表示されます。 
 
 **分析コード** タブで、フィルター処理に使用する分析コードを一覧から選択し、方向キーを使用して右側の列に移動します。 キャッシュ フロー予測データのフィルター処理には、2 つの分析コードのみを選択できます。 
-
-#### <a name="privacy-notice"></a>プライバシー通知
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

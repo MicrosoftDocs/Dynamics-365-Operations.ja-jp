@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018389"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186789"
 ---
 # <a name="note-integration"></a>メモ統合
 
@@ -122,5 +122,9 @@ URL を作成することもできます。
 | [仕入先ドキュメントの添付ファイル](mapping-reference.md#231) | 注釈 | テキスト形式と URL を使用して仕入れ先固有の (組織と人の両方の) 情報を取り込む企業。 |
 | [販売注文のヘッダー ドキュメント添付](mapping-reference.md#229) | 注釈 | テキスト形式と URL を使用して販売注文固有の情報を取り込む企業。 |
 | [発注書のヘッダー ドキュメントの添付ファイル](mapping-reference.md#232) | 注釈 | テキスト形式と URL を使用して発注書固有の情報を取り込む企業。 |
+
+## <a name="limitations"></a>制限
+
+ノート ソリューションをインストールすると、アンインストールすることはできなくなります。 
 
 詳細については、[二重書き込みマッピングのリファレンス](mapping-reference.md) を参照してください。

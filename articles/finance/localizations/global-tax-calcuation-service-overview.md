@@ -2,7 +2,7 @@
 title: 税の計算 (プレビュー)
 description: このトピックでは、税計算機能の全体的な範囲と機能について説明します。
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b26472e195d9bdbba340a118c106de1a4dc79b34
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9daa6e001200d03a2639974fb6de618d77ddf09d
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021935"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184104"
 ---
 # <a name="tax-calculation-preview"></a>税の計算 (プレビュー)
 
@@ -31,6 +31,9 @@ ms.locfileid: "6021935"
 税計算は、Global Tax Engine によって税の決定と計算プロセスを自動化および簡素化できる、超スケーラブルなマルチテナント サービスです。 税エンジンは完全にコンフィギュレーション可能です。 設定できる要素には、課税対象データ モデル、税コード、課税適用マトリックス、および税金計算式が含まれますが、これに限定されません。 税エンジンは  Microsoft Azureコア サービス プラットフォームで実行され、最新のテクノロジと指数関数的なスケーラビリティを提供します。
 
 税計算は、Dynamics 365 Finance および Dynamics 365 Supply Chain Management と統合されます。 最終的には、Dynamics 365 Project Operations、Dynamics 365 Commerce やその他のファースト パーティ アプリケーションとも統合されます。
+
+> [!IMPORTANT]
+> Tax Calculation サービスを有効にした場合、サービス データを管理するデータ センター以外のデータ センターで、関連データに対する一部の操作が実行される場合があります。 税計算サービスを有効にする前に、[条件](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) を確認してください。 Microsoft にとってお客様のプライバシーは重要です。 詳細については、Microsoft [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=521839)をお読みください。
 
 税計算は、指数関数的なスケーラビリティを提供するマイクロサービス ベースの税エンジンです。 実行できるスケジューリング タスクは次のとおりです。
 

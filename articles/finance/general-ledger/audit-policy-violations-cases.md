@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4c7b9426cc98f62cd7a62b841c0f90c7c57889d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82d94be7a0ce915b0a2b86fb3894435afdd6f37a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821964"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187847"
 ---
 # <a name="audit-policy-violations-and-cases"></a>監査ポリシー違反およびケース
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821964"
 
 記事は、監査ポリシー ルール違反からどのように監査ケースが生成されるかを説明します。 また、監査ポリシーがドキュメントの選択の日付範囲を使用する、さまざまな方法に関する情報が含まれます。
 
-<a name="how-audit-cases-are-generated"></a>監査ケースの生成方法
------------------------------
+## <a name="how-audit-cases-are-generated"></a>監査ケースの生成方法
 
 監査ポリシーが、監査ポリシー ルールとして定義およびコンフィギュレーションしたビジネス ルールに適合しない、経費精算書、発注書、および仕入先請求書の識別に使用されます。 
 

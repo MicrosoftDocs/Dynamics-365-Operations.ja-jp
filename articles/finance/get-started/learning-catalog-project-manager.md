@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fee455fe1e51ac99fe6f38a63b48c7b92d32ac7a
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 01d6d79c482871c9f39898298292b21367c9a48e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897067"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193334"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Dynamics 365 Finance を使用する実装プロジェクト マネージャー向けラーニング カタログ
 
@@ -88,10 +88,10 @@ ms.locfileid: "5897067"
 
 ## <a name="exams"></a>試験<a name="exams"></a>
 
-| コンテンツ  | 説明  | 書式設定   |
-|-------------|-----------------|-------------|
-| [試験 MB-300: Microsoft Dynamics 365 Unified Operations コア](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、一般的な機能と実装ツールの使用、セキュリティ、プロセス、およびオプションの設定、データ移行の実施、ソリューションの検証とサポートという技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる | |
-| [試験 MB-310: Microsoft Dynamics 365 for Finance and Operations、財務](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、財務管理の設定とコンフィギュレーション、共通プロセスの管理と適用、買掛金勘定と売掛金勘定の実装および管理、および予算作成と固定資産の管理という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる | |
+| コンテンツ | 説明 | 書式設定 |
+|---|---|---|
+| [試験 MB-300: Microsoft Dynamics 365 Unified Operations コア](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、一般的な機能と実装ツールの使用、セキュリティ、プロセス、およびオプションの設定、データ移行の実施、ソリューションの検証とサポートという技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
+| [試験 MB-310: Microsoft Dynamics 365 for Finance and Operations、財務](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、財務管理の設定とコンフィギュレーション、共通プロセスの管理と適用、買掛金勘定と売掛金勘定の実装および管理、および予算作成と固定資産の管理という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [Microsoft 認定: Dynamics 365 for Finance and Operations、財務機能コンサルタント アソシエート](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft 認定: Dynamics 365 for Finance and Operations、財務機能コンサルタントは、グローバルな財務と運用を統一し、タスクとワークフローを自動化し、顧客の注文、販売、請求、および報告を効率化します。 | 証明書、費用は地域によって異なる |
 
 

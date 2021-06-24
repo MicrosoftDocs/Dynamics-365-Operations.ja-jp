@@ -2,7 +2,7 @@
 title: 顧客支払予測 (プレビュー)
 description: このトピックでは、顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、コレクション プロセスを開始したとしても、それ以外の状況を把握することができます。
 author: ShivamPandey-msft
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 4151b56b8b385e29d3926dc7e245728158cbcd34
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 84a2342d76dc309fa1fd3de7b2c3de60e62e4d72
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898015"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186399"
 ---
 # <a name="customer-payment-predictions-preview"></a>顧客支払予測 (プレビュー)
 
@@ -72,10 +72,5 @@ ms.locfileid: "5898015"
 財務インサイトのパブリック プレビューは、米国、ヨーロッパ、および英国でのデプロイの試行ができます。 Microsoft は、その他の地域へのサポートも段階的に追加しています。
 
 パブリック プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および AI モデルは、運用環境に移行できない可能性があります。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) を参照してください。
-
-## <a name="privacy-notice"></a>プライバシー通知
-
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

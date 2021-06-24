@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: bc87972b1cd2e04d31a3d48132cd1de42353698d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2ac8dc8787ab0bdb796ec849f9ede3f697b09680
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801920"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193647"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>コマース チャネルの会計統合の設定
 
@@ -86,7 +86,7 @@ ms.locfileid: "5801920"
 
         **例**
 
-        |   | 形式 | 例 |
+        | パラメーター  | 書式設定 | 例 |
         |---|--------|---------|
         | **VAT 率の設定** | 値 : VATrate | 1 : 2000, 2 : 1800 |
         | **VAT コードのマッピング** | VATcode : 値 | vat20: 1、vat18: 2 |

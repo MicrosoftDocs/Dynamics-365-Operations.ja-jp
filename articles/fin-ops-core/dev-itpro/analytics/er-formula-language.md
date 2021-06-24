@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2015405f3c7f89ba36f811ca125f3a73bc13c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753267"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223989"
 ---
 # <a name="electronic-reporting-formula-language"></a>電子申告の数式言語
 
@@ -38,13 +38,13 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 - [パス](#Paths)
 - [関数](#Functions)
 
-## <a name=""></a><a name="Constants">定数</a>
+## <a name="constants"></a><a name="Constants"></a>定数
 
 式の設計時に、テキストおよび数値定数 (つまり、計算されない定数) を使用できます。 たとえば、`VALUE ("100") + 20` の式では、数値定数 **20** および文字列定数 **"100"** を使用し、**120** という数値を返します。
 
 ER フォーミュラ デザイナーはエスケープ シーケンスをサポートします。 したがって、別の方法で処理されるべき式文字列を指定することができます。 たとえば、`"Leo Tolstoy ""War and Peace"" Volume 1"` の式は、**レフ トルストイ "戦争と平和" ボリューム 1** というテキスト文字列を返します。
 
-## <a name=""></a><a name="Operators">演算子</a>
+## <a name="operators"></a><a name="Operators"></a>演算子
 
 次の表に、加算、減算、乗算、除算などの基本的な数学演算の実行に使用できる算術演算子を示します。
 
@@ -88,9 +88,9 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 式に同じ優先順位を持つ複数の連続した演算子が含まれている場合は、これらの操作は左から右に評価されます。 たとえば、`1 + 6 / 2 \* 3 > 5` の式は **true** を返します。 式の閲覧や管理を簡単にするよう、式で操作する希望の順序を明示的に示すために、かっこを使用することをお勧めします。
 
-## <a name=""></a><a name="References">参照</a>
+## <a name="references"></a><a name="References"></a>参照
 
-式の設計中に使用できる現在の ER コンポーネントのすべてのデータ ソースは名前付き参照を使用できます。 現在の ER コンポーネントは、モデル マッピングまたは形式のいずれかです。 たとえば、現在の ER モデル マッピングには **ReportingDate** データ ソースが含まれ、*DateTime* データ型の値を返します。 生成ドキュメントでその値を正しく書式設定するために、`DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")` の式のデータ ソースを参照できます。
+式の設計中に使用できる現在の ER コンポーネントのすべてのデータ ソースは名前付き参照を使用できます。 現在の ER コンポーネントは、モデル マッピングまたは形式のいずれかです。 たとえば、現在の ER モデル マッピングには、データ ソース: **ReportingDate** が含まれ、データ型: [*DateTime*](er-formula-supported-data-types-primitive.md#datetime) の値を返します。 生成ドキュメントでその値を正しく書式設定するために、`DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")` の式のデータ ソースを参照できます。
 
 アルファベットの文字で表されない参照元のデータ ソースの名前のすべての文字は、単一引用符 (') の後に続く必要があります。 参照データ ソースの名前がアルファベットの文字を表さない記号を少なくとも 1 つ含む場合、名前を単一引用符で囲む必要があります。 たとえば、これらアルファベットでない記号は、句読点またはそのほかの書面記号です。 次にいくつか例を挙げます。
 
@@ -99,7 +99,7 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 アプリケーション データ ソースのメソッドにパラメーターがある場合は、次の構文を使用して、これらのメソッドを呼び出します。
 
-- **システム** データ ソースの **isLanguageRTL** メソッドが、*文字列* データ型の **EN-US** パラメーターを含む場合、このメソッドは ER 式で `System.isLanguageRTL("EN-US")` として参照する必要があります。
+- データ ソース: **システム** の **isLanguageRTL** メソッドが、データ型: [*String*](er-formula-supported-data-types-primitive.md#string)の **EN-US** パラメーターを含む場合、このメソッドは `System.isLanguageRTL("EN-US")` の ER 式として参照する必要があります。
 - メソッド名に英数字シンボルのみが含まれている場合、引用符は必須ではありません。 ただし、名前にかっこが含まれている場合、テーブルのメソッドに対しては必須です。
 
 **システム** データ ソースが、**グローバル** アプリケーション クラスを参照する ER マッピングに追加されると、式 `System.isLanguageRTL("EN-US ")` は *ブール* 値の **FALSE** を返します。 変更された式 `System.isLanguageRTL("AR")` は *ブール* 値の **TRUE** を返します。
@@ -107,9 +107,9 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 値がこのメソッドのタイプのパラメータに渡される方法を制限することができます。
 
 - このタイプのメソッドに、定数だけを渡すことができます。 定数の値は、デザイン時に定義されます。
-- このタイプのパラメーターで、プリミティブ (基本) データ型のみがサポートされています。 プリミティブ データ型には、*整数*、*実数*、*ブール値*、および *文字列* が含まれます。
+- このタイプのパラメーターでは、データ型: [primitive](er-formula-supported-data-types-primitive.md) (基本) のみがサポートされています。 プリミティブ データ型には、*整数*、*実数*、*ブール値*、および *文字列* が含まれます。
 
-## <a name=""></a><a name="Paths">パス</a>
+## <a name="paths"></a><a name="Paths"></a>パス
 
 式が構成されたデータ ソースを参照する場合、そのデータ ソースの特定のプリミティブ要素の選択にパス定義を使用できます。 ドット (.) は、構成されたデータ ソースの個別要素を区切るために使用します。 たとえば、現在の ER モデル マッピングには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、**AmountDebit** および **AmountCredit** フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求金額 `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit` を計算するための次の式をデザインできます。 この式の `InvoiceTransactions.AmountDebit` 構造は、*レコード リスト* タイプの **InvoiceTransactions** データ ソースの **AmountDebit** フィールドにアクセスするために使用されるパスです。
 
@@ -129,7 +129,7 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 詳細については、[ER モデルと ER 形式のデータ バインディングに相対パスを使用する](relative-path-data-bindings-er-models-format.md) を参照してください。
 
-## <a name=""></a><a name="Functions">関数</a>
+## <a name="functions"></a><a name="Functions"></a>関数
 
 ER 組み込み関数は、ER 式で使用できます。 式のコンテキストのすべてのデータ ソース (つまり、現在の ER モデル マッピングまたは ER フォーマット) は、呼び出し元関数の引数に従って呼び出し元関数のパラメータとして使用できます。 定数は、呼び出し関数のパラメータとしても使用できます。 たとえば、現在の ER モデル マッピングには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、**AmountDebit** および **AmountCredit** フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求額を計算するには、ER 丸め関数を使用する次の式をデザインできます: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`。
 
@@ -173,5 +173,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [電子申告機能の一覧の拡張](general-electronic-reporting-formulas-list-extension.md)
 
+[対応しているプリミティブ データ型](er-formula-supported-data-types-primitive.md)
+
+[対応している複合データ型](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

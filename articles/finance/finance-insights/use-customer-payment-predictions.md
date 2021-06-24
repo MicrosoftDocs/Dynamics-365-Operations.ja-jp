@@ -2,7 +2,7 @@
 title: 顧客支払予測の使用 (プレビュー)
 description: このトピックでは、Finance 分析情報の試用版を使用するために必要な前提条件と手順について説明します。
 author: ShivamPandey-msft
-ms.date: 11/16/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 21c5236b6d7e7ce7bd968f1511723a3646fe7a29
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897795"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186567"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>顧客支払予測の使用 (プレビュー)
 
@@ -103,10 +103,5 @@ ms.locfileid: "5897795"
 Finance 分析情報のパブリック プレビューは、米国、ヨーロッパ、および英国でのデプロイの試行ができます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
 
 パブリック プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および AI モデルは、運用環境に移行できません。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) を参照してください。
-
-## <a name="privacy-notice"></a>プライバシー通知
-
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

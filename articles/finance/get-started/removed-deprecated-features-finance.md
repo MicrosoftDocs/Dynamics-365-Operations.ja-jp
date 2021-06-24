@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: e6a391b10ddaef79e68f47afae7d77135a1c333a
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980900"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184128"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは推奨されない機能
 
@@ -65,7 +65,7 @@ ms.locfileid: "5980900"
 | **別の機能で置き換えられているか?**   | あり |
 | **影響を受ける製品領域**         | Dynamics 365 Finance、Supply Chain Management、Project Operations 製品|
 | **配置オプション**              | All |
-| **状態**                         | 非推奨: 2022 年 4 月 1 日より、電子申告 (ER) コンフィギュレーションのストレージ オプションとして Microsoft Dynamics Lifecycle Services (LCS) リポジトリのサポートを終了する予定です。 新しい Microsoft ER コンフィギュレーションは、グローバル リポジトリからのみダウンロードできるように公開されます。 グローバル リポジトリは、Dynamics 365 製品と RCS からアクセスできます。 詳細については、[RCS から ER コンフィグレーションをインポートする](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) を参照してください。 |
+| **状態**                         | 非推奨: 2022 年 4 月 1 日より、電子申告 (ER) コンフィギュレーションのストレージ オプションとして Microsoft Dynamics Lifecycle Services (LCS) リポジトリのサポートを終了する予定です。 新しい Microsoft ER コンフィギュレーションは、グローバル リポジトリからのみダウンロードできるように公開されます。 グローバル リポジトリは、Dynamics 365 製品と RCS からアクセスできます。 詳細については、[RCS から ER コンフィグレーションをインポートする](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md)および [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](../localizations/rcs-lcs-repo-dep-faq.md)を参照してください。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Finance 10.0.16 リリースの削除済みまたは非推奨の機能
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 972762522b4f7627648f1e1eec9dad73fe503710
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 90bfd55bd865b27aec831957209ce8716cb253c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825449"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188276"
 ---
 # <a name="purchase-agreements"></a>購買契約
 
@@ -102,8 +102,7 @@ ms.locfileid: "5825449"
 ## <a name="financial-dimensions-on-purchase-agreements"></a>購買契約書の財務分析コード
 購買契約書のドキュメント ヘッダーまたは個々の明細行に財務分析コードをコピーできます。 契約ヘッダーまたは契約明細行にある分析コードを変更する場合、変更はリリースされた注文に影響はしませんが、すべての新しい注文に反映されます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [購買契約書の作成](tasks/create-purchase-agreement.md)
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5654084232c2988ed844862b977945c04dbb0833
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935886"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193753"
 ---
 # <a name="financial-analysis"></a>財務分析
 
@@ -87,7 +87,7 @@ ms.locfileid: "5935886"
 次の比較チャートは、2 つのオプションを区別することができます。
 
 
-|                                                          | Financial Reporting                                               | 財務分析 |
+| 機能                                                   | Financial Reporting                                               | 財務分析 |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | **既定のレポートの編集**                                 | あり                                                               | なし |
 | **新しいレポートの作成**                                   | あり                                                               | なし |

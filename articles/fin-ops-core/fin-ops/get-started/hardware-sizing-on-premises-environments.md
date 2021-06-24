@@ -2,7 +2,7 @@
 title: オンプレミス環境のハードウェアのサイズ設定要件
 description: このトピックでは、オンプレミス環境のハードウェアのサイズ設定要件を一覧表示します。
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
+ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923483"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6168732"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定要件
 
@@ -131,6 +131,8 @@ A[サイズ変更スプレッドシート](https://adfsdocs.blob.core.windows.ne
 ## <a name="sql-server-reporting-services"></a>SQL Server Reporting Services
 
 一般的な使用可能なリリースは、1 つの SSRS ノードしか展開できません。 テスト中に SSRS ノードを監視し、SSRS で使用可能なコアの数を必要に応じて増やします。 SSRS VM とは異なる仮想ホストで事前構成されたセカンダリ ノードを使用できることを確認してください。 これは、SSRS または仮想ホストをホストする仮想マシンに問題がある場合に重要です。 この場合、交換する必要があります。
+
+バージョン 10.0.17 以降では、高可用性を実現するために追加の SSRS ノードを構成することが可能です。 詳細情報については、[SQL Server Reporting Services (SSRS) ノードの高可用性の構成](../../dev-itpro/deployment/onprem-ssrsha.md) を参照してください。
 
 ## <a name="environment-orchestrator"></a>環境オーケストレーター
 

@@ -2,7 +2,7 @@
 title: キャッシュ ポジション (プレビュー版)
 description: このトピックでは、キャッシュフロー予測機能が特定の時間における組織のキャッシュ ポジションの予測を行う方法について説明します。 また、異なる期間の予測の表示に使用できるオプションについても説明します。
 author: ShivamPandey-msft
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123393"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186495"
 ---
 # <a name="cash-position-preview"></a>キャッシュ ポジション (プレビュー版)
 
@@ -48,6 +48,5 @@ ms.locfileid: "6123393"
 
 #### <a name="privacy-notice"></a>プライバシー通知
 プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

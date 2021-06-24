@@ -2,7 +2,7 @@
 title: エジプトの VAT 申告
 description: このトピックでは、エジプトの VAT 還付フォームを構成および生成する方法について説明します。
 author: sndray
-ms.date: 03/10/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: bd48ee96a26c59183981fae879e3659711e70ce3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021959"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186617"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>エジプトの VAT 申告 (EG-00002)
 
@@ -85,6 +85,7 @@ Lifecycle Services (LCS) またはグローバル リポジトリから電子申
 - **VATRateTypeLookup** > 列 B: 税のタイプ
 - **VATRateTypeLookup** > 列 C: テーブルのアイテムの種類
 - **PurchaseOperationTypeLookup** > 列 A: ドキュメント タイプ
+- **CustomerTypeLookup** > 列A: ドキュメント タイプ
 - **SalesOperationTypeLookup** > 列 N: 操作タイプ
 - **SalesItemTypeLookup** > 列 O: アイテムの種類
 
@@ -98,6 +99,8 @@ VAT 申告および関連する帳簿レポートの生成に使用する異な�
 6. 使用可能なすべてのルックアップで手順 3 ～ 5 を繰り返します。
 7. **追加** を選択して、最後のレコード行を含め、**ルックアップの結果** の列で **適用できません** を選択します。 
 8. 残りの列で、**空白でない** を選択します。 
+9. **ステータス** フィールドで **完了** を選択します。
+10. **保存** を選択して、**アプリケーションに特化したパラメーター** のページを閉じます。
 
 > [!NOTE]
 > 最後のレコード **適用できません** を追加する場合、次のルールを定義します。引数として渡された消費税グループ、品目消費税グループ、税コード、および名前が前のルールを満たしていない場合、トランザクションは売上 VAT 帳簿に含まれません。 このルールは、レポートの生成時には使用されませんが、ルールの構成が欠落しているときにレポート生成でエラーを回避するのに役立ちます。
@@ -138,7 +141,7 @@ VAT 申告および関連する帳簿レポートの生成に使用する異な�
 | サービス       | 7    | VAT_SERV                | *空白でない* | SaleExempt            |
 | サービス       | 8    | VAT_SERV                | *空白でない* | SalesExemptCreditNote |
 | 調整    | 9    | *空白*                 | VAT_ADJ     | 販売注文                 |
-| 調整    | 10   | *空白*                 | VAT_ADJ     | 購買              |
+| 調整    | 10   | *空白*                 | VAT_ADJ     | SalesCreditNote       |
 | 適用できません | 11   | *空白でない*             | *空白でない* | *空白でない*           |
 
 **PurchaseItemTypeLookup**
@@ -148,16 +151,14 @@ VAT 申告および関連する帳簿レポートの生成に使用する異な�
 | 商品                  | 1    | VAT_GOODS               | *空白でない* | 購買                 |
 | 商品                  | 2    | VAT_GOODS               | *空白でない* | PurchaseCreditNote       |
 | サービス               | 3    | VAT_SERV                | *空白でない* | 購買                 |
-| サービス               | 4    | VAT_SERV                | *空白でない*  | PurchaseCreditNote       |
+| サービス               | 4    | VAT_SERV                | *空白でない* | PurchaseCreditNote       |
 | マシンおよび設備  | 5    | VAT_M&E                 | *空白でない* | 購買                 |
 | マシンおよび設備  | 6    | VAT_M&E                 | *空白でない* | PurchaseCreditNote       |
 | パーツ マシン         | 7    | VAT_PARTS               | *空白でない* | 購買                 |
 | パーツ マシン         | 8    | VAT_PARTS               | *空白でない* | PurchaseCreditNote       |
 | 控除             | 9    | VAT_EXE                 | *空白でない*  | PurchaseExempt           |
 | 控除             | 10   | VAT_EXE                 | *空白でない* | PurchaseExemptCreditNote |
-| 適用できません         | 11   | *空白*                 | VAT_ADJ     | *空白でない*              |
-| 適用できません         | 12   | *空白でない*             | *空白でない* | *空白でない*              |
-| 適用できません         | 13   | *空白*                 | *空白でない* | *空白でない*              |
+| 適用できません         | 11   | *空白でない*             | *空白でない* | *空白でない*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -174,6 +175,17 @@ VAT 申告および関連する帳簿レポートの生成に使用する異な�
 | 調整    | 9    | *空白*          | VAT_ADJ     | PurchaseCreditNote       |
 | 調整    | 10   | *空白*          | VAT_ADJ     | 購買                 |
 | 適用できません | 11   | *空白でない*      | *空白でない* | *空白でない*              |
+
+**CustomerTypeLookup**
+
+|    ルックアップの結果    | ライン | 売上税グループ |
+|---------------------|------|-----------------|
+| 組織        |  1   | VAT_LOCAL       |
+| 組織        |  2   | VAT_EXPORT      |
+| 組織        |  3   | VAT_EXE         |
+| 最終コンシューマー      |  4   | VAT_FINALC      |
+| 組織 |  5   | VAT_PUBLIO      |
+| 該当なし      |  6   | *空白でない*     |
 
 **VATRateTypeLookup**
 

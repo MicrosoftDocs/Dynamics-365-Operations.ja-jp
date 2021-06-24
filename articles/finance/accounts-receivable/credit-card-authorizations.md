@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6b59d54df9427961e2c4fb6f1387646d6fe8dfc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 502fe22aa0caafbcff059c9d0ae83c7cd030e8d0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837132"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190312"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>クレジット カードの設定、認証、および取得
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837132"
 
 この記事は、Microsoft Dynamics 365 Finance でのクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
 
-<a name="setting-up-the-credit-card-payment-service"></a>クレジット カード支払サービスの設定
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>クレジット カード支払サービスの設定
 
 にクレジット カードを使用するには、[支払サービス] ページの支払サービスを設定して有効化する必要があります。 支払サービスは、法人と、顧客のクレジット カード請求を処理する銀行とを橋渡しする役割を果たします。 [支払コネクタ] フィールドに表示されるクレジット カード プロバイダーについて、そのプロバイダで使用するアカウントを設定する必要があります。 その後、[支払サービス] ページの他のオプションを設定し、[クレジット カード タイプ] ページで American Express、Discover、MasterCard、Discover のクレジット カード タイプを設定し、既定プロバイダーを有効化します。 また、次の手順に従って設定を完了します:
 -   [売掛金勘定パラメーター] ページで、クレジット カード認証に使用するパラメーターを指定します。
@@ -39,13 +38,11 @@ ms.locfileid: "5837132"
 ## <a name="adding-a-new-credit-card"></a>新しいクレジット カードの追加
 新しいクレジット カード レコードを作成するには、[顧客] ページで [顧客]、[設定]、[クレジット カード] の順に進みます。 また、[販売注文] ページで販売注文を入力するときに、[管理]、[顧客]、[クレジット カード]、[登録] の順に進むとクレジット カード レコードを作成できます。
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>販売注文にクレジット カードを追加
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>販売注文にクレジット カードを追加
 
 販売注文にクレジット カードを追加するには、[販売注文] ページの [価格と割引] クイック タブで、クレジット カードのルックアップでクレジット カードを選択します。 認証プロセスを開始するには、[管理] タブの [アクション] ペインで、[クレジット カード] と [認証] を選択します。
 
-<a name="authorizing-a-credit-card"></a>クレジット カードの認証
--------------------------
+## <a name="authorizing-a-credit-card"></a>クレジット カードの認証
 
 クレジット カードが認証されると、カード番号とカード所有者の名前が確認された後で、利用可能な与信残高が確認されます。 必要に応じて、カード検証番号とカード所有者の住所が確認されます。 次に、顧客の利用可能な与信残高から請求金額が差し引かれます。 支払サービスは、クレジット カードの承認または否認を通知する情報を送信します。 販売注文の請求時に、クレジット カードに対して請求金額が課金 (キャプチャ) されます。
 

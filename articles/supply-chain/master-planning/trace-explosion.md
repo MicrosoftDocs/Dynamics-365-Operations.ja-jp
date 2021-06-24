@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f2a50c5e30155c11d653601187c36cb385aa4a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 75d994db80071c4ef9e23caf24cb4cadbc1473ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839200"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189895"
 ---
 # <a name="use-tracing-for-explosion"></a>展開のトレースを使用する
 
@@ -38,8 +38,7 @@ ms.locfileid: "5839200"
 
 選択した注文の将来およびアクションに関する詳細を表示できます。 **展開** ページにある上部ウィンドウの **説明** タブで追跡情報を使用できます。 追跡はオーダーを展開するときに発生します。 オーダーの追跡を開始するには、**更新** をクリックし、**トレースの有効化** チェック ボックスをオンにします。 特定の情報のログを検索するには **テキストの検索** フィールドを使用できます。 検索結果はツリーで強調表示されます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [マスター プランの概要](master-plans.md)
 

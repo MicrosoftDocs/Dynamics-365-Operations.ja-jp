@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a88ca9cc8fc8cde6d738dbc4fcf474f1e27e05dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fd69d82536047c06e94ba4a7e860ef54680619a4
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796393"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193134"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>POS の荷渡方法の変更
 
@@ -31,7 +31,7 @@ Dynamics 365 Commerce バージョン 10.0.10 以降では、POS 画面レイア
 
 荷渡方法の変更機能により、POS トランザクションで 1 つ以上の出荷コンフィギュレーションの販売明細行に対して、荷渡方法を変更するオプションが提供されます。 以前のバージョンの Commerce では、出荷用にコンフィギュレーションされた既存の明細行の荷渡方法を変更する場合、**すべて出荷** または **選択された出荷** のコンフィギュレーション フロー全体を使用する必要がありました。 この処理には時間がかかり、明細行の配送元または配送日が誤って変更される可能性がありました。 この新しい機能により、これら販売明細行の荷渡方法を効率的に更新する代替方法が提供されます。
 
-POS ボタン グリッドのボタンに操作を追加する方法の詳細については、[販売時点管理の画面レイアウト](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) を参照してください。
+POS ボタン グリッドのボタンに操作を追加する方法の詳細については、[販売時点管理の画面レイアウト](pos-screen-layouts.md) を参照してください。
 
 POS でこの機能がコンフィギュレーションされた後、**荷渡方法の変更** を選択すると、荷渡方法を変更するトランザクションの明細行を選択できる一覧のページが表示されます。 明細行の一部またはすべてを選択するか、または何も変更せずに終了することができます。 変更可能なリストの明細行は、以前に出荷用にコンフィギュレーションされた販売明細行のみです。 集荷または Carryout に指定された明細行を変更する場合、**すべて出荷** または **選択された出荷** 操作を使用する必要があります。 逆に、出荷として指定された明細行を集荷または Carryout に変更する場合、**すべて集荷**、**選択された集荷**、**すべて Carryout**、または **選択された Carryout** 操作を使用する必要があります。
 

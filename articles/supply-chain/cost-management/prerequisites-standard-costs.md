@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92f80ecc611e68210e24e59b696724e1bc9c3a06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4f2e1620de804f42688ad8d05232e38178b5fb80
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809665"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187725"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>標準原価の前提条件概要
 
@@ -66,8 +66,7 @@ ms.locfileid: "5809665"
 既存の品目を標準原価在庫モデルに変更する顧客は、**標準原価換算** ページを使用する必要があります。
 
 
-<a name="related-topics"></a>関連トピック
---------
+## <a name="related-topics"></a>関連トピック
 
 [標準原価換算の概要](standard-cost-conversion-overview.md)
 

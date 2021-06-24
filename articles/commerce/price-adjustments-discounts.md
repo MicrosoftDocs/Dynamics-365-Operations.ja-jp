@@ -2,7 +2,7 @@
 title: 価格調整および割引
 description: この記事は、Dynamics 365 Commerce における価格調整および割引についての情報を提供します。
 author: scott-tucker
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2d3e8025c5ab28296713634094694156f9addf62
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44c03ae0a04d648e788a72d8f6dcc3671c5736c7
+ms.sourcegitcommit: 7c9d6be464db058511df9cb6ba162d21dc0554e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802794"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6240945"
 ---
 # <a name="price-adjustments-and-discounts"></a>価格調整および割引
 
@@ -48,6 +48,13 @@ ms.locfileid: "5802794"
 - **送料割引** – トランザクションの合計が指定した金額を超えて、特定の荷渡方法 (出荷または一括出荷) が注文で使用される場合に適用される割引。
 
 価格調整と割引のどちらも、価格グループと関連付けることができます。 価格グループは、チャンネル、カタログ、加盟者およびロイヤルティ プログラムに関連付けることができます。
+
+> [!NOTE]
+> 組み合わせ割引としきい値割引には、それぞれ "割引不可の製品をカウントする" と "割引不可の製品をしきい値にカウント" というプロパティがあります。 これらのプロパティが有効な場合、割引の対象外の品目は引き続きトランザクションの割引の資格獲得に役立ちますが、対象外の品目は割引を受け取りません。 
+> 
+> たとえば、顧客が両方の品目で 10% オフにする必要があるが、品目 A のコンフィギュレーションが [すべての割引を禁止する] チェック ボックスがオンになっている A と B という 2 行の組み合わせ割引を作成すると、通常、品目 A は割引に含まれなくなります。 ただし、[割引不可の製品をカウントする] プロパティが有効になっている場合、品目 A を使用して組み合わせ割引の資格を得ることができますが、10% 割引は品目 B にのみ適用されます。同様のロジックがしきい値割引にも当てはまります。 
+>
+> ただし、[しきい値に向けて割引不可の製品をカウント] プロパティは、組み合わせ割引の [割引不可の製品をカウント] プロパティよりも、多くの機能を持っています。 しきい値割引が有効で、他の割引からの品目を使用できなくする既存の割引がある場合、この品目に支払われた価格はしきい値を満たす対象となりますが、この品目は追加の割引を受けません。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

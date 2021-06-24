@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2131ae11e634f9ced0d9696acb61d7b8a94c59cf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: df20a45707d3f6ff2ba963e3310194c1af830234
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841818"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187389"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>需要予測を計算するときに、トランザクション履歴データから異常値を削除します。
 
@@ -39,8 +39,7 @@ ms.locfileid: "5841818"
 
 **注記:** 既存のクエリに基づいたクエリの作成もできます。 コピーするクエリを選択してから **重複** をクリックします。 **クエリ日付** フィールドがバージョンを識別します。 クエリをそのまま使用するか、**クエリの編集** をクリックして基準を変更することもできます。 必要に応じて新しいクエリの名前と説明を変更できます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [需要予測の概要](introduction-demand-forecasting.md)
 

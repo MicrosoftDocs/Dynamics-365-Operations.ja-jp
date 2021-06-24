@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 0ccb2ed2a143735c199c36f2da357996ad3fbff3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edab3420cbd39539358c03fe4d6b3646433f8ec5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812838"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190163"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>製品バリアント番号と名前の分類
 
@@ -188,8 +188,7 @@ BOM には、2 つのコンフィギュレーション グループに分割さ�
 
 コンフィギュレーション プロセスの 1 つのステップ中に、分類に基づいてコンフィギュレーション値が提案されます。 このステップでは、コンフィギュレーションの値を手動で変更できます。 コンフィギュレーションを保存すると、コンフィギュレーション値が一意かどうかが確認されます。 入力した値が一意でない場合は、エラー メッセージが表示されます。 コンフィギュレーションを保存するためには、一意のコンフィギュレーション値を入力する必要があります。
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [事前定義された製品バリアントの製品番号の分類の作成](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 

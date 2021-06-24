@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908931"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188937"
 ---
 # <a name="routes-and-operations"></a>工順と工程
 
@@ -29,8 +29,7 @@ ms.locfileid: "5908931"
 
 このトピックでは、工順と工程に関する情報を提供します。 工順は、製品または製品バリアントを生産するためのプロセスを定義します。 ここでは、生産プロセス内の各ステップ (工程) とこれらのステップが実行される必要がある手順について説明します。 ステップごとに、工程は必要な運営リソース、必要な段取り時間と実行時間、およびコストが計算される必要がある方法も定義します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 工順は、製品または製品バリアントの製造に必要な工程順序について説明します。 工程ごとに、工順は必要な運営リソース、工程を設定および実行するために必要な時間、およびコストを計算する方法も定義します。 複数の製品を生産するために同じ工順を使用するか、 各製品または製品バリアントへの固有の工順を定義したりできます。 同じ製品に複数の工順を使用することもできます。 この場合、使用される工順は必要な生産数量などの要因によって異なります。 Supply Chain Management の工順の定義は、生産プロセスを表す 4 つの別々の要素をまとめることにより構成されます。
 

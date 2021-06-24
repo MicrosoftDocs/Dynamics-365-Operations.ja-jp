@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8dcb5c9860cb617612dade03b55b8bd4a0983b6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41c64607f5dfbe00bd8a2e7cc80fb4771f11a6d1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826621"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188443"
 ---
 # <a name="sales-tax-overview"></a>消費税の概要
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826621"
 
 このトピックは、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 販売税の枠組みは、消費税、付加価値税 (VAT)、物品サービス税 (GST)、単位あたりの費用、源泉徴収税などさまざまな間接税のタイプをサポートします。 これらの税は、購買および販売トランザクション中に計算され、文書化されます。 定期的に報告され、税務当局に支払われなければなりません。 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b173f856c79973eec6ce884e7b8e44420c93fc7
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 77410fd131ecdcb05b682ac4660ec8c453b75218
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909134"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188224"
 ---
 # <a name="purchase-order-overview"></a>発注書の概要
 
@@ -76,8 +76,7 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 -   **確認済** – 注文が確認された後に、このステータスが割り当てられます。 通常、このステータスは注文に割り当てられる最後の承認のステータスです。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [発注書の作成](purchase-order-creation.md)
 

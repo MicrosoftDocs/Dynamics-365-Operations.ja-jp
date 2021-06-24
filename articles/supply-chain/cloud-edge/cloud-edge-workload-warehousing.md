@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980952"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184025"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
 
@@ -289,14 +289,15 @@ ms.locfileid: "5980952"
 | 作業での作業プールの変更                           | あり | あり                          |
 | 作業のキャンセル                                        | あり | あり                          |
 
-
 ### <a name="production"></a>実稼働
 
-倉庫管理の生産シナリオは、次のテーブルに示すように、現在スケール ユニット ワークロードではサポートされていません。
+次の表は、スケールユニットのワークロードで現在サポートされている (あるいはされていない) 倉庫管理の生産シナリオをまとめたものです。
 
 | 処理 | ハブ | スケール ユニットの WES ワークロード |
 |---------|-----|------------------------------|
-| <p>生産に関連するすべての倉庫管理プロセス。 次にいくつか例を挙げます。</p><li>倉庫にリリース</li><li>生産ウェーブプロセス</li><li>原材料のピッキング</li><li>RAF と完成品のプット アウェイ</li><li>連産物と副産物のプット アウェイ</li><li>かんばんのプット アウェイ</li><li>かんばんのピッキング</li><li>製造オーダーの開始</li><li>生産仕損</li><li>最後の生産パレット</li><li>材料消費の登録</li><li>空のかんばん</li></ul> | あり | なし |
+| 完成品と完成品のプットアウェイ レポート | あり | あり |
+| 連産物と副産物のプット アウェイ | あり | あり |
+| <p>その他、生産に関連するすべての倉庫管理プロセスを含みます。</p><li>倉庫にリリース</li><li>生産ウェーブプロセス</li><li>原材料のピッキング</li><li>かんばんのプット アウェイ</li><li>かんばんのピッキング</li><li>製造オーダーの開始</li><li>生産仕損</li><li>最後の生産パレット</li><li>材料消費の登録</li><li>空のかんばん</li></ul> | あり | なし |
 
 ## <a name="maintaining-scale-units-for-wes"></a>WES のスケール ユニットの管理
 

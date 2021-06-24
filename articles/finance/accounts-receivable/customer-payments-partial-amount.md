@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f89b3d94fd16aa9cf27931d11fd8fff22048d40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c6d96f1f957bfe8002a763d98f170681ad92b23
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824031"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188737"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>一部金額の顧客支払
 
@@ -28,8 +28,7 @@ ms.locfileid: "5824031"
 
 顧客は、請求金額未満の支払を行う場合があります。 この記事は、この状況を処理するためのさまざまなオプションについて説明します。 利用できるオプションは、業務要件とコンフィギュレーションによって異なります。
 
-<a name="partial-payment-with-no-discount"></a>割引のない一部支払
---------------------------------
+## <a name="partial-payment-with-no-discount"></a>割引のない一部支払
 
 顧客が請求書の全額を支払う現金の手持ちがどうしてもないため、または請求書の品目に関して争議があるために一部支払を行う場合があります。 この場合、支払いにより請求書は部分的に決済できます。 請求書は未処理のままで残り、残高を表示します。
 

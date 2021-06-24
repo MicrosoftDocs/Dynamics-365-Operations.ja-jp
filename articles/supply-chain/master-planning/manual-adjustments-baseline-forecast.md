@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56069b1d2cf72eb29737b0aa7d066c998c0c423c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dbcdc852bf42038761b4ea19fd7fe7cbfc45f713
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833644"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187437"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 
@@ -73,8 +73,7 @@ ms.locfileid: "5833644"
 
 また、**予測** セクションの **予測** 行の値を変更することによって、**需要予測の詳細** ページで予測に手動調整を加えることもできます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [予測精度の監視](monitor-forecast-accuracy.md)
 

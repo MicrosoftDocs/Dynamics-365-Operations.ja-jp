@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dd6b21207b61dfb96e4d9538b5e6ffc1c6b02d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 834dc64ce531fb614bc7836e0def16f27ecf5e18
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835127"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188641"
 ---
 # <a name="set-up-and-process-recurring-invoices"></a>定期請求書の設定と処理
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835127"
 
 この記事は、定期的な請求書の設定および処理の方法を説明します。 定期的に同じ金額に対して請求書を発行する場合に、定期的な請求書を使用できます。
 
-<a name="create-a-recurring-free-text-invoice-template"></a>定期的な自由書式の請求書テンプレートの作成
----------------------------------------------
+## <a name="create-a-recurring-free-text-invoice-template"></a>定期的な自由書式の請求書テンプレートの作成
 
 同じサービスに関する請求を定期的に顧客に行うには、請求書を作成する場合でも、請求書の作成に再利用できる自由書式の請求書テンプレートを定義する必要があります。 このテンプレートには、次の情報が含まれます。
 
@@ -52,13 +51,11 @@ ms.locfileid: "5835127"
 ## <a name="generate-the-recurring-invoices"></a>定期請求書の生成
 **定期請求書** ページには、定期的な請求書テンプレートを処理するタスクがあります。 請求書を生成する請求日およびテンプレートを指定します。 請求書が生成され、処理される請求書の各グループに固有の再実行 ID 番号が請求書に割り当てられます。
 
-<a name="post-recurring-free-text-invoices"></a>定期的な自由書式の請求書の転記
----------------------------------
+## <a name="post-recurring-free-text-invoices"></a>定期的な自由書式の請求書の転記
 
 定期請求書が生成された後、請求書の再実行 ID が **定期請求書** ページの転記タスクに表示されます。 リンクをクリックすることにより、再実行 ID の請求書をすべて表示できます。 再実行 ID の請求書の確認中に、請求書を個別に削除できます。 顧客の再実行設定をそのテンプレートに対してリセットすると、あとで再生成できます。 再実行 ID の請求書は、1 つ、複数、またはすべてを転記できます。 ワークフローが有効な場合、請求書を転記する前に **送信** をクリックする必要があります。
 
-<a name="print-recurring-free-text-invoices"></a>定期的な自由書式の請求書の印刷
-----------------------------------
+## <a name="print-recurring-free-text-invoices"></a>定期的な自由書式の請求書の印刷
 
 定期請求書が転記された後、自由書式の請求書のリスト ページから請求書を印刷できます。 選択した請求書を印刷でき、また印刷する請求書の範囲を選択できます。
 

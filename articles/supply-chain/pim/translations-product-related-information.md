@@ -16,12 +16,12 @@ ms.search.industry: Product information
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dba501acb3a360f2936ff407b549df6d7eb358ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7dc7c681b86e34f59cbbc3c6231a36fe9ca5327a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841578"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188889"
 ---
 # <a name="product-related-translations-faq"></a>製品関連の翻訳のよく寄せられる質問
 
@@ -29,8 +29,7 @@ ms.locfileid: "5841578"
 
 このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。 
 
-<a name="what-product-related-data-can-be-translated"></a>どの製品関連データは翻訳できますか。
---------------------------------------------
+## <a name="what-product-related-data-can-be-translated"></a>どの製品関連データは翻訳できますか。
 
 次の製品関連情報の翻訳を作成できます。
 -   製品の名前と説明。

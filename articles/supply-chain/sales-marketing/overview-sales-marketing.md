@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4735b51d13a6de9874c10ec82e1e6d9761ce9fcf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810873"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188128"
 ---
 # <a name="sales-and-marketing-overview"></a>販売とマーケティングの概要
 
@@ -27,8 +27,7 @@ ms.locfileid: "5810873"
 
 販売およびマーケティングを使用して、販売フローのさまざまなタイプのデータを取得、保存、および使用できます。 このデータには、元の販売戦略、将来のフォローアップ アクション、および追加販売が含まれます。
 
-<a name="marketing"></a>マーケティング
----------
+## <a name="marketing"></a>マーケティング
 
 マーケティング キャンペーンや活動を使用して、潜在的な顧客との関係を模索して構築し、初期の相互作用を販売関係へと発展させることができます。 次のプロセス フローは、マーケティングの業務プロセスを表しています。 [![マーケティングの業務プロセス](./media/marketing01.jpg)](./media/marketing01.jpg)
 

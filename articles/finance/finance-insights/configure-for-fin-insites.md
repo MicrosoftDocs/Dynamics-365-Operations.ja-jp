@@ -1,8 +1,8 @@
 ---
-title: Finance Insights の構成 (プレビュー版)
-description: このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。
+title: Finance Insights の構成 (10.0.19 までのバージョン)
+description: このトピックでは、Finance Insights (10.0.19 までのバージョン) で使用できる機能をシステムで使用するための構成手順について説明します。
 author: ShivamPandey-msft
-ms.date: 11/25/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941229"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186423"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Finance Insights の構成 (プレビュー版)
 
@@ -30,6 +30,9 @@ ms.locfileid: "5941229"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+> [!NOTE]
+> 次の Finance Insights の設定方法は、Microsoft Dynamics 365 Finance の 10.0.19 までのバージョンに有効です。 バージョン 10.0.20 以降で Finance Insights を設定するには、[Finance Insights の構成 (プレビュー) - バージョン 10.0.20 以降](configure-for-fin-insites-PubPrvw.md)を参照してください。
+
 Finance insights では、Microsoft Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、強力な予測ツールを提供します。 このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。
 
 ## <a name="deploy-dynamics-365-finance"></a>Dynamics 365 Finance のデプロイ
@@ -38,7 +41,7 @@ Finance insights では、Microsoft Dataverse を使用した Microsoft Dynamics
 
 1. Microsoft Dynamics Lifecycle Services (LCS) で、Dynamics 365 Finance 環境を作成または更新します。 この環境では、アプリ バージョン10.0.11/プラットフォーム更新プログラム 35またはそれ以降が必要となります。
 2. この環境は、サンドボックスの高可用性 (HA) 環境である必要があります。 (このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
-3. Contoso のデモ データを使用している場合は、顧客支払予測、キャッシュ フロー予測、予算予測機能の使用にあたり、追加のサンプル データが必要になります。 
+3. サンドボックス環境で Finance insights を構成している場合は、予測を機能させるには、本番データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの十分な過去のデータが含まれていません。 
 
 ## <a name="configure-dataverse"></a>Dataverse のコンフィギュレーション
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920112"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188855"
 ---
 # <a name="transportation-management-engines"></a>輸送管理エンジン
 
@@ -43,8 +43,7 @@ ms.locfileid: "5920112"
 | **運賃請求書タイプ**            | 運賃請求書と配送料の明細行を標準化し、配送料の自動照合に使用されます。                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>出荷を評価するため、どのエンジンをコンフィギュレーションする必要がありますか。
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>出荷を評価するため、どのエンジンをコンフィギュレーションする必要がありますか。
 
 特定の配送業者を使用して出荷を評価するには、複数の輸送管理エンジンをコンフィギュレーションする必要があります。 **レート エンジン** は必要ですが、**レート エンジン** をサポートするために他の輸送管理エンジンも必要な場合があります。 たとえば、**レート エンジン** を使用すると、**マイレージ エンジン** からデータを取得して、起点と終点の間の距離に基づいてレートを計算できます。
 
@@ -62,8 +61,7 @@ ms.locfileid: "5920112"
 |  <em>MileageEngineCode</em>  |                       データベースのマイレージ エンジン レコードを識別する、マイレージ エンジン コード。                        |
 | <em>ApportionmentEngine</em> |                        データベースの予定エンジンを識別する、汎用エンジン コード。                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>輸送管理エンジンのでどのようにメタデータを使用しますか。
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>輸送管理エンジンのでどのようにメタデータを使用しますか。
 
 Supply Chain Management で定義されたデータに依存する輸送管理エンジンは、異なるデータ スキーマを使用します。 輸送管理エンジン システムを使用すると、異なる輸送管理エンジンが同じ汎用物理データベース テーブルを使用できます。 エンジン データの実行時の解釈が正しくなるように、データベース テーブルのメタデータを定義できます。 Operations では追加テーブルおよびフォーム構造が必要ないため、これにより、新しい輸送管理エンジンの構築コストを軽減できます。
 

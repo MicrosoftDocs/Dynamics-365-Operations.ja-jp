@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112624"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193569"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -92,7 +92,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | いいえ |
 | **影響を受ける製品領域**         | イタリア語のローカライズ |
 | **配置オプション**              | すべて |
-| **ステータス**                         | 非推奨: 2020 年 10 月 1 日までに、**ブラックリスト レポート (IT) – 機能リファレンス IT-00001** をサポートしなくなる予定です。 |
+| **ステータス**                         | 非推奨: 2020 年 10 月 1 日までに、このレポートの対応が終了する予定です。 |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>国内の税レポート – 機能リファレンス IT-00003
 
@@ -362,9 +362,19 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **廃止 / 削除の理由** | 機能は、Finance and Operations の拡張性モデルとは互換性がありません。 |
 | **別の機能での置き換え?**   | 無 |
 | **影響を受ける製品領域**         | 税申告 |
-| **配置オプション**              | すべて |
-| **ステータス**                         | Finance and Operations 8.1 およびプラットフォーム更新プログラム 20 から削除されました。 |
+| **配置オプション**              | All |
+| **状態**                         | Finance and Operations 8.1 およびプラットフォーム更新プログラム 20 から削除されました。 |
 
+### <a name="payroll-and-human-resources-for-russia"></a>ロシアの給与と人事
+スタッフの管理情報、従業員のタイムシート詳細、給与計算、給与明細書の作成などを管理するロシア向けの国別モジュールです。 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 給与計算は、Dynamics 365 ポートフォリオのグローバル戦略には含まれていません。 パートナーと ISV は、各国の規制や税制改正に対応した給与計算機能を提供する最適な立場にあります。|
+| **別の機能で置き換えられているか?**   | なし|
+| **影響を受ける製品領域**         | ロシアの給与と人事管理 |
+| **配置オプション**              | All |
+| **状態**                         | 非推奨: 削除される機能のターゲット タイム フレームは、10.0 バージョンの今後のアップデートのいずれかとなります。 |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 プラット更新プログラム 15
 今回のリリースで削除済みまたは推奨されない機能はありません。 プラットフォーム更新 15 は累積的であり、プラットフォーム更新 13、プラットフォーム更新 14、およびプラットフォーム更新 15 の新機能または変更された機能を含みます。

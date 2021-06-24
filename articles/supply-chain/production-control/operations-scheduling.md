@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09a420fcf5bb122b7ffa0c6ef8566efad86db4f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 16b05bfe2a8deec365bdccf56ddbb375e9c4becd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817872"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190019"
 ---
 # <a name="operations-scheduling"></a>工程のスケジューリング
 
@@ -74,8 +74,7 @@ ms.locfileid: "5817872"
 ## <a name="finite-materials"></a>有限原材料
 有限原材料を使用する場合、スケジューリングはさらに、生産に必要な材料の利用可能性によって異なります。 生産に利用可能なコンポーネントが十分ではない場合、生産が遅れる可能性があります。 生産に利用する必要のある材料を指定して、材料の使用に基づいてスケジューリングできます。 リソースの能力と材料の利用可能性に基づいて最適化すると、生産は、これらの制限に基づいて計算されます。 製造オーダーは、能力と材料が同時に、必要量利用可能になるまで、スケジューリングすることはできません。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [工程スケジューリング オプション](operation-scheduling-options.md)
 

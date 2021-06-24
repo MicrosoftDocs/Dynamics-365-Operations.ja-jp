@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b773b12b7eb3a8a59627d011f2469a98c5dde58a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d683b0b140592e4c93a68f7f58c7d13475b4c2a5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058923"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189604"
 ---
 # <a name="compensation-plans"></a>報酬プラン
 
@@ -121,8 +121,7 @@ ms.locfileid: "6058923"
 ## <a name="process-events"></a>プロセス イベント
 プロセス イベントでは、1 つ以上の固定報酬プランまたは変動報酬プランに登録されるすべての従業員の、特定の期間の報酬情報を計算します。 計算した報酬結果をテストしたり更新したり場合に、プロセス イベントを繰り返し実行できます。
 
-<a name="compensation-events"></a>報酬イベント
--------------------
+## <a name="compensation-events"></a>報酬イベント
 
 プロセス イベントを実行するたびに、報酬イベントが作成されます。  報酬イベントには、そのプロセス イベントに含まれる各従業員の報酬プロセスの結果が含まれます。  計算が正しい場合、プロセス イベントによって影響を受ける従業員の報酬レコードを更新するために、報酬イベントを読み込むことができます。
 

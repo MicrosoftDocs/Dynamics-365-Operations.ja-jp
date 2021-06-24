@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f729b1703a7703a8a604b007bd1c8d9e1f604a6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 723e0fa52cd7a9377671795e039f5948ce9239f3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897287"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187797"
 ---
 # <a name="view-financial-reports"></a>財務諸表の表示
 
@@ -28,8 +28,7 @@ ms.locfileid: "5897287"
 
 このトピックでは、財務報告書を表示および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。
 
-<a name="financial-reporting-overview"></a>財務諸表の概要
-----------------------------
+## <a name="financial-reporting-overview"></a>財務諸表の概要
 
 ## <a name="open-a-financial-report"></a>財務諸表を開く
 レポートを開くには、レポート名を選択します。 レポートを初めて開くと、前の月のレポートが自動的に生成されます。 たとえば、2015 年 8 月にレポートを初めて開くと、2015 年 7 月 31 日のレポートが生成されます。 レポートを開いた後、データの特定の部分をドリルダウンしたり、レポート オプションを変更することによりレポートの検討を開始できます。
@@ -76,8 +75,7 @@ ms.locfileid: "5897287"
 ## <a name="export-a-financial-report"></a>財務諸表のエクスポート
 財務諸表をエクスポートするには、アクション ウィンドウで、**エクスポート** をクリックします。 レポートは、Microsoft Excel にエクスポートされ、使用しているブラウザーには、エクスポート済みファイルを開くか、保存するかを確認するメッセージが表示されます。 レポートのデザインで定義されているエクスポート設定が、エクスポートされるレポートに適用されます。    
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [財務諸表](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 

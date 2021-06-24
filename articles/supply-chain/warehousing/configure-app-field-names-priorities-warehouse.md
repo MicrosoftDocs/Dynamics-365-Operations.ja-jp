@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c6ed726536085b836f4014c59ea8df4755577ab5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bc224d3fd6cf5b111f61066202090f10ba4a7e8a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808825"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189253"
 ---
 # <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリのフィールドを構成する
 
@@ -137,8 +137,7 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 
 場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。 ユーザー インターフェイスの詳細や例については、ブログ投稿 [Finance and Operations - Warehousing の発表](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) を参照してください。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [倉庫管理モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md)
 

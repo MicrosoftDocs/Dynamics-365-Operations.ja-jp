@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d09b6f693f3396da181a0f47051b7c961aa55e03
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909159"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188248"
 ---
 # <a name="create-purchase-orders"></a>販売注文の作成
 
@@ -80,8 +80,7 @@ ms.locfileid: "5909159"
 
 発注書の完了を延期する必要があるかもしれません。 例えば、製品やサービスに関する追加情報が必要とされる、または支出の承認を得る必要があるかもしれません。 注文を保留するにはいくつかの方法があります。 例えば、注文確定を待機できます。 または、変更管理ワークフローを使用している場合は、承認を得るための発注書送信を行いません。 特定の仕入先へのすべての注文をブロックする必要がある場合は、仕入先マスターで処理するため、その仕入先を **保留中** としてマークできます。 注文の処理を妨げる状況が発生する場合もあります。 例えば、与信限度額を超過した場合、または予算資金が利用できないため、処理の進行が妨げられるかもしれません。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [発注書の概要](purchase-order-overview.md)
 

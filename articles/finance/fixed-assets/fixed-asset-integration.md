@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e6be2aeb263c339f4e733b98ea4e01194973a9f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826837"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189787"
 ---
 # <a name="fixed-assets-integration"></a>固定資産の統合
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826837"
 
 固定資産は、一般会計、在庫管理、売掛金勘定、および買掛金勘定と統合できます。 また、固定資産を発注書と統合するように設定することもできます。
 
-<a name="general-ledger"></a>一般会計
---------------
+## <a name="general-ledger"></a>一般会計
 
 一般会計では、すべての固定資産の金額は通常、財務報告に必要な複数の主勘定に集計されます。 ただし、**固定資産** ページでは、多くの固定資産レコードを作成できます。 これらのレコードには、取得価格、減価償却、および価額評価などの情報を含めることができます。 固定資産のトランザクションを転記するたびに、該当する主勘定が更新されます。 固定資産の主勘定には常に固定資産の更新金額が表示されます。
 

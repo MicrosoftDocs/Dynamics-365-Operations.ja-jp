@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f97dc4627f9bb3a0ac2020b966de7e58aafcedc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7f16a666cef5625fb159265ddc7237ad0eb45927
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833668"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187653"
 ---
 # <a name="maintain-planned-orders"></a>計画オーダーの管理
 
@@ -58,8 +58,7 @@ ms.locfileid: "5833668"
 > [!NOTE]
 > **確定並列化** のオプションは、確定のために複数の計画オーダーが選択されている場合にのみ表示されます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [マスター プランの概要](master-plans.md)
 

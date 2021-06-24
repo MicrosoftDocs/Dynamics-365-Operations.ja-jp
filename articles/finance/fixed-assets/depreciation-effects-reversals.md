@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6973cf3f4189347e0403d3d29014a23afb03836c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0d47a25835eab16438ea47bf3960132debc8c975
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826957"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187895"
 ---
 # <a name="depreciation-effects-with-reversals"></a>取消による減価償却の影響
 
@@ -86,8 +86,7 @@ ms.locfileid: "5826957"
 
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [固定資産の減価償却](fixed-asset-depreciation.md)
 

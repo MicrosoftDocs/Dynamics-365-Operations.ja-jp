@@ -2,7 +2,7 @@
 title: 顧客支払予測の有効化 (プレビュー)
 description: このトピックでは、財務インサイトで顧客支払予測機能をオンにし構成する方法について説明します。
 author: ShivamPandey-msft
-ms.date: 05/27/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0f972b6f3c0c7c4fcf69b3644a5e73d863cd817d
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897359"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222589"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>顧客支払予測の有効化 (プレビュー)
 
@@ -34,10 +34,10 @@ ms.locfileid: "5897359"
 
 1. Microsoft Dynamics Lifecycle Services (LCS) で環境ページの情報を使用して、その環境に対する Azure SQL のプライマリ インスタンスに接続します。 次の Transact-SQL (T-SQL) コマンドを実行して、サンドボックス環境のフライトを有効にします。 (Application Object Server \[AOS\] にリモートで接続する前に、LCS で IP アドレスに対してアクセスを有効にする必要がある場合があります。)
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, PARTITION) VALUES ('PayPredEnableFeature', 1, 5637144576)`
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('PayPredEnableFeature', 1)`
 
     > [!NOTE]
-    > Microsoft Dynamics 365 Finance の配置が Service Fabric 配置である場合は、この手順を省略できます。 財務インサイト チームは既にフライトを有効にしている必要があります。 **機能管理** ワークスペースに機能が表示されない場合や、有効にしようとしたときに問題が発生した場合は、<fiap@microsoft.com> に連絡してください。
+    > バージョン 10.0.20 以降を使用している場合や、Service Fabric のデプロイを使用している場合は、この手順をスキップします。 財務インサイト チームは既にフライトを有効にしている必要があります。 **機能管理** ワークスペースに機能が表示されない場合や、有効にしようとしたときに問題が発生した場合は、<fiap@microsoft.com> までご連絡ください。 
 
 2. 顧客支払に関するインサイト機能を有効にします:
 
@@ -84,10 +84,5 @@ ms.locfileid: "5897359"
 財務インサイトのパブリック プレビューは、米国、ヨーロッパ、および英国での試用版の展開に使用できます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
 
 パブリック プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および AI モデルは、運用環境に移行できません。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) を参照してください。
-
-## <a name="privacy-notice"></a>プライバシー通知
-
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

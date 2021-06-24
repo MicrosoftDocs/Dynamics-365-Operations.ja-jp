@@ -2,7 +2,7 @@
 title: 初期の顧客支払予測モデルを評価する (プレビュー)
 description: このトピックでは、顧客支払予測モデルを理解し、その有効性を評価するために実行できる手順について説明します。
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897915"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186741"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>初期の顧客支払予測モデルを評価する (プレビュー)
 
@@ -95,9 +95,5 @@ Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** 
 ## <a name="for-more-information"></a>詳細情報
 
 予測モデルの評価方法の詳細については、[機械学習モデルの結果](/confusion-matrix.md)
-
-#### <a name="privacy-notice"></a>プライバシー通知
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814587"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188152"
 ---
 # <a name="production-process-overview"></a>生産プロセスの概要
 
@@ -74,8 +74,7 @@ ms.locfileid: "5814587"
 12. **期間終了** – 周期平均、バック フラッシュ原価計算、FIFO、LIFOなどいくつかの原価計算の原則は、定期的な活動によって在庫または財務期間を閉じる必要があります。 通常、システムは、期間終了前にすべての材料消費、リソース消費、在庫と仕損の修正を報告するように試みます。 この報告は通常、在庫移動仕訳帳または調整仕訳帳を使用して行われます。 目標は、期間ごとの作業単位の経済パフォーマンスを評価することです。 場合によっては、複数の財務報告期間にまたがる長期の製造オーダーを使用すると、生産仕訳帳が、期間の終わりに生産の進捗状況およびリソース消費を報告するのに使用されます。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [生産フィードバック](production-feedback.md)
 

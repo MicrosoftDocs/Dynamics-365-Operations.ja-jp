@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 962edb3fd0478a8f0281054abc00c35b732620f6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 88665c70b05d9ecf8ec2641862d870d87604092f
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796417"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193158"
 ---
 # <a name="store-order-fulfillment"></a>店舗注文のフルフィルメント
 
@@ -33,7 +33,7 @@ ms.locfileid: "5796417"
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>販売時点管理の統一された注文フルフィルメントへのアクセス
 
-注文のフルフィルメント、[操作 ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations)、は販売時点管理の、店舗の注文フルフィルメント作業領域へのアクセスに利用できます。
+注文のフルフィルメント、[操作 ID 928](pos-operations.md)、は販売時点管理の、店舗の注文フルフィルメント作業領域へのアクセスに利用できます。
 
 注文のフルフィルメント操作は、そのまま使用できる独自のアクセス許可を持っていませんが、将来的に、ユーザーは **注文の取得を許可** のアクセス許可を使用して販売時点管理から操作を起動できるようになります。
 
@@ -93,7 +93,7 @@ ms.locfileid: "5796417"
 
 ピッキング プロセスを実行する作業者を支援するために販売時点管理で、ピッキング リストを印刷できます。 ピッキング プロセスを実行する作業者により印刷されたピッキング リストが運ばれ、製品がピッキングされると、作業者はピッキング リストに、ピッキングされた製品を手動でマークすることができます。
 
-ピッキング リストの形式は Commerce で構成され、レシート プロファイルに追加されます。 レシート プロファイルの設定の詳細については、[レシート テンプレートと印刷](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing) を参照してください。
+ピッキング リストの形式は Commerce で構成され、レシート プロファイルに追加されます。 レシート プロファイルの設定の詳細については、[レシート テンプレートと印刷](receipt-templates-printing.md) を参照してください。
 
 明細行が選択され、それらの明細行用にピッキング リストが印刷された場合、**ピッキング** 状態で自動的に更新されます。
 
@@ -119,7 +119,7 @@ ms.locfileid: "5796417"
 - **結果の状態:** 梱包済または一部梱包済
 - **結果のバックオフィスの状態:** 出荷済または一部出荷済
 
-このアクションは梱包済または部分的に梱包済として明細行をマークし、梱包明細を印刷します。 まとめて梱包された製品を検証するために梱包明細を印刷することができます。 梱包明細の形式は Commerce で構成され、レシート プロファイルに追加されます。 レシート プロファイルの設定の詳細については、[レシート テンプレートと印刷](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing) を参照してください。
+このアクションは梱包済または部分的に梱包済として明細行をマークし、梱包明細を印刷します。 まとめて梱包された製品を検証するために梱包明細を印刷することができます。 梱包明細の形式は Commerce で構成され、レシート プロファイルに追加されます。 レシート プロファイルの設定の詳細については、[レシート テンプレートと印刷](receipt-templates-printing.md) を参照してください。
 
 **アクション: 梱包済としてマーク**
 

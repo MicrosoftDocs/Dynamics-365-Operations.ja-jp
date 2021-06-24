@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 87ab65469ec4a8154267b88fe45481b65ade5e7a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027797"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189181"
 ---
 # <a name="three-way-matching-policies"></a>スリーウェイ マッチング ポリシー
 
@@ -28,8 +28,7 @@ ms.locfileid: "6027797"
 
 このトピックは、スリーウェイ マッチングの例を示します。
 
-<a name="example-three-way-matching-for-items"></a>例: 品目のスリーウェイ マッチング
--------------------------------------
+## <a name="example-three-way-matching-for-items"></a>例: 品目のスリーウェイ マッチング
 
 **概要:** ケンは、Fabrikam という法人の本社のコントローラーです。 ケンは、発注書に基づくすべての仕入先請求書が購買注文明細行と一致しているか判断します (2 状況照合)。 固定資産として使用される品目の購買については、請求書が購買注文明細行および製品の受領書明細行の両方と一致する必要があります (スリーウェイ マッチング)。
 

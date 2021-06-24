@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceffa7028f4490a88027a2affdc898877cc2db43
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 2fa295c71fb82b4168123970fee6ba71d293e3c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910068"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189671"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>仕入先ポータルを使用した仕入先とのコラボレーション
 
@@ -92,8 +92,7 @@ Dynamics AX で発注書が作成されます。 **承認済** ステータス�
 |                           仕入先ポータルに発注書の新しいバージョンを送信します。                            |                                                                                                                                                                    新しいバージョンが仕入先ポータルに登録され、ステータスが<strong>外部で確認中</strong>に変更されます。                                                                                                                                                                     |
 |                                仕入先は、新しいバージョンの発注書を承認します                                 |                                                                                                                                                     状態は、自動的に、または仕入先からの応答を受信して確認したときに、<strong>確認済</strong>に変更されます。                                                                                                                                                     |
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [仕入先ポータル ユーザー セキュリティ](configure-security-vendor-portal-users.md)
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c5087ee04030a76aef774871b88b7970391723c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bdd03dff359e7c2799eff53b0e999580ce8b1c06
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804384"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193106"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>販売時点管理 (POS) アプリケーションおよびユーザー言語の設定
 
@@ -57,7 +57,7 @@ POS ユーザーの言語設定によって、アプリケーション ユーザ
 
 POS ユーザーの言語設定は、**Retail とコマース &gt; 言語** の下の、**作業者** ページの **すべての作業者** から設定します。 メインのプロフィール タブでは設定しません。この設定は POS では使用されません。 ユーザーの言語が設定されていないか、翻訳が使用できない言語に設定されている場合、POS は店舗の言語に戻ります。
 
-|             | [UI l言語]                  | [データ言語 (製品、受領書フォーマット、ライン ディスプレイなど)] |
+| &nbsp;      | [UI l言語]                  | [データ言語 (製品、受領書フォーマット、ライン ディスプレイなど)] |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **会社** | 既定                    | 既定                                                       |
 | **店舗**   | 会社を上書き          | 会社を上書き                                             |

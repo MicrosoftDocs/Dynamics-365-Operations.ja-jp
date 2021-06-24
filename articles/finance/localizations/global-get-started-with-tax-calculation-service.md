@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3f8aa791cee1926afe6be347331d47902a3b7304
-ms.sourcegitcommit: f4dc09601bceb5cdc88ee184ce7c8f369e3e6e86
+ms.openlocfilehash: e72b81d4a109db2dd8b4c6ca2ca0b030220e25f3
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6060566"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216722"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>税の計算の使用を開始する (プレビュー)
 
@@ -58,7 +58,7 @@ ms.locfileid: "6060566"
 このセクションの手順は、特定の法人に関連しています。 この手順を実行する必要があるのは 1 回だけであり、RCS のどの法人でもこれを実行できます。
 
 1. [RCS](https://marketing.configure.global.dynamics.com/) にサインインします。
-2. Finance の **電子申告** ワークスペースで、新しいコンフィギュレーション プロバイダーを追加します。 会社名をプロバイダーの名前として使用します。 詳細については、[構成プロバイダーを作成して、有効としてマークする](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) を参照してください。
+2. **電子申告** ワークスペースで、新しいコンフィギュレーション プロバイダーを追加します。 会社名をプロバイダーの名前として使用します。 詳細については、[構成プロバイダーを作成して、有効としてマークする](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) を参照してください。
 3. 作成したコンフィギュレーション プロバイダーを選択し、**有効に設定** を選択します。
 4. **Microsoft** コンフィギュレーション プロバイダーを選択し、**リポジトリ** を選択します。
 5. **タイプ** フィールドで、**グローバル** を選択します。

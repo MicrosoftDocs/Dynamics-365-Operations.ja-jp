@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744166"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188078"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>タスク レコーダーによるドキュメントやトレーニングの作成
 
@@ -31,8 +31,7 @@ ms.locfileid: "5744166"
 > [!IMPORTANT]
 > Dynamics 365 Human Resources 用のタスク ガイドを記録できますが、それをビジネス プロセス モデラー (BPM) ライブラリに保存したり、またはこの時点でヘルプ ウィンドウから開くことはできません。 ローカルまたはネットワーク上の場所に保存することはでき、タスク レコーダーを使用して開き再生します。 
 
-<a name="learn-about-task-recorder"></a>タスク レコーダーについて学ぶ
--------------------------
+## <a name="learn-about-task-recorder"></a>タスク レコーダーについて学ぶ
 
 タスク レコーダーは、製品のユーザー インターフェイス (UI) で実行するアクションを記録するのに使用するツールです。 タスク レコーダーを使用している場合は、UI で実行する、サーバーに対して実行されるイベント —値の追加、設定の変更、データの削除— はすべて取得されます。 記録する手順は、*タスク記録* と呼ばれます。 タスク記録はさまざまな方法で使用できます。
 
@@ -111,8 +110,7 @@ Microsoft のタスク記録をダウンロードおよび編集し、自分の�
 
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [ヘルプ システム](../../fin-ops/get-started/help-overview.md)
 

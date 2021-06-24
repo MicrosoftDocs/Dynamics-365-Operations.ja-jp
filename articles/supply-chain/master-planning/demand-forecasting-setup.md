@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816535"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189719"
 ---
 # <a name="demand-forecasting-setup"></a>需要予測の設定
 
@@ -88,8 +88,7 @@ ms.locfileid: "5816535"
 - **季節性のヒント**: 季節データについては、予測の精度を高めるために予測モデルに対するヒントを指定してください。 形式: 需要パターンが繰り返し現れるバケット数を整数で指定します。 たとえば、6 か月ごとに繰り返されるデータの場合は「6」を入力します。
 - **テスト セット サイズの割合 (%)**: 予測精度計算のテスト セットとして使用する履歴データの割合 (%)。 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [需要予測の概要](introduction-demand-forecasting.md)
 

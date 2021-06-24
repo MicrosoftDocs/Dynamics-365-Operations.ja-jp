@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820987"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189096"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>仕入先請求書の勘定配布と元帳仕訳入力
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820987"
 
 勘定配布は、仕入先請求書における経費、税金、または手数料などの計上方法など、金額をどのように計上するかを定義します。 仕入先請求書を仕訳入力するときに計上しなければならない金額にはいずれも一つ以上の勘定配布があります。 
 
-<a name="accounting-distributions"></a>勘定配布 
--------------------------
+## <a name="accounting-distributions"></a>勘定配布 
 
 [仕入先請求書] ページでは、次のボタンで、仕入先請求書の各金額の勘定配布を表示したり、場合によっては変更できます。
 -   **金額の配分** – 税または請求金額などの明細行と子行の勘定配布を表示または変更します。 売上税トランザクション ページまたは諸費用トランザクション ページから子明細行の勘定配布を直接表示または変更することもできます。
@@ -227,8 +226,7 @@ ms.locfileid: "5820987"
 </table>
 
 
-<a name="distributing-taxes"></a>税の配分
-------------------
+## <a name="distributing-taxes"></a>税の配分
 
 税金の勘定配布は、税金が計算されるまで作成できません。 売上税を計算するには、[仕入先請求書] ページで次の作業のいずれかを完了する必要があります。
 -   請求金額の合計を表示する。

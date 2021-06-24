@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62868c30d3ff60e51d99c71b743ab0bbb3c87451
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc986ea752d1482f618401058f7a0b18f13efd5f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835199"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188713"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>利息コードに対する金利の設定
 
@@ -90,7 +90,6 @@ ms.locfileid: "5835199"
 
 
 ## <a name="example-2-interest-by-range--days"></a>例 2: 利息/範囲 = 日数
---------------------------------------------------
 
 請求書支払がトランザクションの期日を超えると、15 日おきに利息を 1 回計算する利息コードを設定します。 段階的な日数間隔に応じて、金額利息値を基準に計算します。 利息値は、最初の 60 日まで 15 日あたり 10.00、61 日から 90 日まで 15.00、91 日以降は 15 日あたり 20.00 です。 利息コードのフィールド値は次のように設定します。
 
@@ -111,7 +110,6 @@ ms.locfileid: "5835199"
 
 
 ## <a name="example-3-interest-by-range--months"></a>例 3: 利息/範囲 = 月数
-----------------------------------------------------
 
 請求書支払がトランザクションの期日を超えると、毎月利息を 1 回計算する利息コードを設定します。 段階的な月間隔に応じて、割合利息値を基準に計算します。 利息の値は、支払い期限を過ぎて最初の 3 か月は毎月 1.5%、次の 3 か月が毎月 2.0% が、最初の 6 か月を過ぎると毎月 2.5% です。 利息コードのフィールド値は次のように設定します。
 

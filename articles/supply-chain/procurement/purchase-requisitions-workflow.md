@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12497e4b6dde44cc7f3701cf6e00c90f109ff16c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825377"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188176"
 ---
 # <a name="purchase-requisition-workflow"></a>購買要求ワークフロー
 
@@ -105,8 +105,7 @@ ms.locfileid: "5825377"
 
 ワークフローで設定した支出確認者のうちの 1 人を使用するには、関連するワークフロー要素の **割り当て** プロパティーの **参加者のタイプ** オプションを **支出実行者** に設定する必要があります。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [消費要求の作成](tasks/create-requisition-consumption.md)
 

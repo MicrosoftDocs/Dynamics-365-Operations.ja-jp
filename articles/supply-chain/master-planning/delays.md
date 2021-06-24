@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4216ed1d9b981eee94cfd4c621abd1da99111512
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8e863ae63466f68e763b133da9f0e9488c6cfa6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813678"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189349"
 ---
 # <a name="delays"></a>遅延
 
@@ -52,8 +52,7 @@ ms.locfileid: "5813678"
 
 **遅延** タブの下の **計画済オーダー** ページは、計画済オーダーの **希望日** です。 計画済オーダーの希望日は遅延の基本日となり、**正味必要量** から計算された **希望日** に等しい計算日です。 計画済オーダーが BOM 明細行、生産明細行またはかんばん明細行の場合、目的の日付は **要求日** に基づいて要求され、**計画済オーダー** ページには表示されません。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [補充設定](coverage-settings.md)
 

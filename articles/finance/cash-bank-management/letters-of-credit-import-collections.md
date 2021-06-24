@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c59a4f098ac19223c5b2fb6808d18d8fea4f4290
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2673ecb09cd479eb10182a4345fe89d8f6b8d404
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815935"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188467"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>信用状および輸入取立
 
@@ -28,8 +28,7 @@ ms.locfileid: "5815935"
 
 この記事は、信用状および輸入取立に関する一般情報を提供します。 どちらのタイプの銀行ドキュメントも、国境をまたぐ商品売買によく使用されます。
 
-<a name="letters-of-credit"></a>信用状
------------------
+## <a name="letters-of-credit"></a>信用状
 
 信用状は国際取引に使用され、支払が確実に行われるようにします。 信用状は銀行が発行する契約であり、銀行は、買主と売主の契約が満たされた場合に買主に代わって確実に支払を行うことに同意します。 信用状は荷為替信用状 (DC) と呼ばれることもあります。
 

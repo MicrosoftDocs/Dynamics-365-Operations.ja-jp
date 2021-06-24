@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ce0a12aff70da1ec556b69198aa5210519b6af2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 841b4b4bb3c2f98ac65491a21bb991945c9f4bc9
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834743"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193932"
 ---
 # <a name="import-letter-of-credit"></a>輸入信用状
 
@@ -128,7 +128,8 @@ ms.locfileid: "5834743"
 12. ページを閉じます。
 13. ページを閉じます。
 
-## <a name="verify-import-letter-of-credit-status"></a>[輸入信用状] の状態の確認
+## <a name="verify-import-letter-of-credit-status-and-printing"></a>[輸入信用状] の状態と印刷を確認します。
+
 1. [現金および銀行管理] > [信用状] > [輸入信用状] および [輸入取立] の順に移動します。
 2. 一覧で、目的のレコードを見つけ、選択します。
 3. 一覧で、選択された行のリンクをクリックします。

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0af952c760a3a2039d3332f73544d0b7c45d7b09
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811364"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193908"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>財務連結および通貨換算の概要
 
@@ -165,7 +165,8 @@ ms.locfileid: "5811364"
 - **為替換算の合理化** – 財務での最小限の設定後に、設定した任意のレポート通貨に財務諸表を換算することができます。 また、設定できるレポート通貨の数に制限はありません。
 - **ソースで削除を転記** – 削除トランザクションを確認するために、削除可能レポートを作成して印刷することができます。 次に、標準的な会社間トランザクションとして新しい削除を転記することができます。 また、法人で必要としないトランザクションに、削除法人を使用することもできます。
 
-## <a name="supported-consolidation-scenarios"></a>サポートされている連結のシナリオ
+## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Financial Reporting でサポートされる連結シナリオ
+
 次に、財務諸表がサポートしている連結のシナリオをいくつか示します:
 
 - 法人間での単一レベルおよび複数レベルの連結

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d916b6593b641ec1c8365475103b1520e07e3768
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 64e3624b387820bea3bfea9c2a4b2f48b0aa9822
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821940"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189024"
 ---
 # <a name="balance-sheet-financial-reports"></a>貸借対照表の会計報告書
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821940"
 
 この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられる構成要素を説明します。 
 
-<a name="default-balance-sheet-reports"></a>既定の貸借対照表のレポート
------------------------------
+## <a name="default-balance-sheet-reports"></a>既定の貸借対照表のレポート
 
 2 つの既定の貸借対照表レポートがあります。 1 つのレポートでは、セクションが積み重ねられています。 他のレポートでは、セクションは並べて表示されています。
 
@@ -68,8 +67,7 @@ ms.locfileid: "5821940"
 
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [財務諸表の概要](financial-reporting-getting-started.md)
 

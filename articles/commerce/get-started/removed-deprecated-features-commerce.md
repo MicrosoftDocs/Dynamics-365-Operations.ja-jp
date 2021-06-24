@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5544fefbbf0dfc012e868b672f80cc2be30fe7ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f80d1509c7c363e93b83cb47c1b93ab00bf67180
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020865"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193471"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -37,7 +37,7 @@ ms.locfileid: "6020865"
 
 ### <a name="full-dataset-generation-interval-is-deprecated"></a>完全なデータセットの生成間隔は削除されます
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | このリリースから、 Dynamics 365 本部 の **Commerce Scheduler パラメーター** フォームでは、**日数の完全なデータセット生成間隔** は非推奨となります。 また、今回のリリースからは、フィールドを視覚的に削除し、値を編集できないようになっています。 これは **0** の値で表示されます。 |
 | **別の機能で置き換えられているか?**   | なし |
@@ -49,7 +49,7 @@ ms.locfileid: "6020865"
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 による Internet Explorer 11 サポートの非推奨
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
@@ -59,7 +59,7 @@ ms.locfileid: "6020865"
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Commerce 10.0.11 リリースの削除済みまたは非推奨の機能
 ### <a name="data-action-hooks"></a>データ アクションのフック
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | パフォーマンスの問題のために、データ アクション フック機能は廃止されました。 |
 | **別の機能で置き換えられているか?**   | データアクション層のビジネス ロジックを変更するために、[データ アクションの上書き](../e-commerce-extensibility/data-action-overrides.md) の使用をお勧めします。|
@@ -68,7 +68,7 @@ ms.locfileid: "6020865"
 | **ステータス**                         | 非推奨: リリース 10.0.11 現在 |
 
 ### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Visual Studio 2015、msbuild 14.0、および Retail SDK\Reference ライブラリとツールのための Retail SDK サポート
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | Visual Studio 2015 の Retail SDK サポートは推奨されておらず、VS 2017、msbuild 15.0、すべての参照ライブラリをサポートするために更新され、RetailSDK\References フォルダ内の commerce プロキシ ジェネレーター ツールが、拡張モデルと SDK アップグレード プロセスを簡素化するために NuGet パッケージに移動しました。|
 | **別の機能で置き換えられているか?**   | [Retail SDK を Visual Studio 2015 から Visual Studio 2017への移行](../dev-itpro/retail-sdk/migrate-sdk.md) の情報に従って、システムを更新することをお勧めします。 |
@@ -77,7 +77,7 @@ ms.locfileid: "6020865"
 | **ステータス**                         | 非推奨: リリース 10.0.11 現在 |
 
 ### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>IEdmModelExtender と CommerceController を使用した Retail Server 拡張機能
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | IEdmModelExtender と CommerceController を使用した Retail Server 拡張機能は、簡略化された拡張モデルを提供するために廃止されました。 新しい実装では、追加の IEdmModelExtender クラスの実装のない、コントローラー クラスのみが含まれます。 これにより、特定の OData バージョンとの依存関係を回避します (OData バージョンが更新されると、拡張機能が壊れてしまう可能性があります。) |
 | **別の機能で置き換えられているか?**   |  NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) パッケージをインポートして、IController クラス拡張モデルを使用することをお勧めします。 |
@@ -86,7 +86,7 @@ ms.locfileid: "6020865"
 | **ステータス**                         | 非推奨: リリース 10.0.11 現在 |
 
 ### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>IHardwareStationController を使用した Hardware Station 拡張機能
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | IHardwareStationController を使用した Hardware Station 拡張機能は、簡略化された拡張モデルを提供するために廃止されました。 新しい実装では、追加のクラス実装のない、IController クラスのみを持つことになり、コア Hardware Station ライブラリとの依存関係を回避するために、以前の拡張では複数のライブラリを参照する必要があります。) |
 | **別の機能で置き換えられているか?**   | NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) パッケージをインポートして、IController クラス拡張モデルを使用することをお勧めします。 |
@@ -96,7 +96,7 @@ ms.locfileid: "6020865"
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Commerce 10.0.10 リリースの削除済みまたは非推奨の機能
 ### <a name="pos-operation-803---picking-and-receiving"></a>POS operation 803 - ピッキングと入荷
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | ピッキングと入庫処理は、運用面の見直しに伴い、現在は使用されていません。 |
 | **別の機能で置き換えられているか?**   | はい。 この機能は、インバウンド処理 (804) とアウトバウンド処理 (805) の 2 つの新しい POS 工程に置き換えられます。|
@@ -107,7 +107,7 @@ ms.locfileid: "6020865"
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Commerce 10.0.7 リリースの削除済みまたは非推奨の機能
 ### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>Commerce GetProductAvailabilities と GetAvailableInventoryNearby API
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | GetProductAvailabilities と GetAvailableInventoryNearby API は、新たに最適化された API に置き換えられます。 |
 | **別の機能で置き換えられているか?**   | 今後は、GetEstimatedAvailabilty と GetEstimatedProductWarehouseAvailability API がご利用頂けます。 |

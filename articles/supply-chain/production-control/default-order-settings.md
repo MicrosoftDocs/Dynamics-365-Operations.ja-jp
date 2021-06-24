@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 73e6a45dedba0831c15d70ad35676c62a14acabb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e389a6af02b8ee30bc491606f72a2e8e250ef00
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809161"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193309"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
@@ -115,7 +115,7 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 
 以下の製品例について考えます。
 
-|                                                     |                                         |
+| 項目                                                | 先頭値                                   |
 |-----------------------------------------------------|-----------------------------------------|
 | **製品名**                                    | 光電センサー                    |
 | **品目番号**                                     | XW56                                    |

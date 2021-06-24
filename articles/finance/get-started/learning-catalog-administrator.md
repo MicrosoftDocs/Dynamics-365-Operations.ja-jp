@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c3c69781aa7a67d22fe7d0fc70b1349673c5867c
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 289b51c1dcb2a30a09c643d7cc419af0627bd8d8
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897263"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193358"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Dynamics 365 Finance 管理者向けラーニング カタログ
 
@@ -60,6 +60,7 @@ ms.locfileid: "5897263"
 
 | コンテンツ | 説明  | 書式設定 | 期間    |
 |---------|--------------|--------|-----------|
+| [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Finance and Operations： 7. x から 8 + へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 7.X から 8.X へのアップグレード プロセスについて説明する次の Tech Talk にご参加ください。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオと手順について説明します。 また、拡張機能の要求のシナリオと、必要に応じてそれらを上げる方法についても説明します。 | Web カンファレンスの無料録画 | 61 分 |
 | [7.0 (RTW)/7.1 (リリース 1611) から 7.2 (2017 年 7 月) にアップグレードする方法 (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | このセッションでは、Dynamics 365 Finance and Operations アプリケーション v7.0 (RTW) および v7.1 (1611) から v7.2 (2017 年 7 月) にアップグレードする方法について説明します。 Live の顧客と進行中のプロジェクト (まだ Live ではない) を明確に区別します。 | Web カンファレンスの無料録画 | 58 分 |
 | [AX2012 から Dynamics 365 for Operations へのアップグレード (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 for Operations にアップグレードする方法の概要を説明します。 | Web カンファレンスの無料録画 | 45 分 |

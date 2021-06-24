@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67098f6008086788ef8814f45fd0dd5add990460
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42137b9eb24e14518244d87e72e9ea1295be4485
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813702"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188961"
 ---
 # <a name="authorize-an-adjusted-forecast"></a>調整された予測の承認
 
@@ -39,8 +39,7 @@ ms.locfileid: "5813702"
 
 **ベースライン需要予測に対して行われた手動調整の保存** チェック ボックスの機能を理解することは非常に重要です。 統計ベースラインの予測に手動調整がある場合、調整された値はこのチェック ボックスがオフの場合でも使用のために承認されます。 ただし、変更は承認後に破棄されます。 したがって、次に予測が生成される時、**手動調整を需要予測に転送** が選択されている場合でも、その予測は統計予測のみで手動上書きはありません。 したがって、**ベースライン需要予測に対して行われた手動調整の保存** チェック ボックスを、すべて手動による変更で維持または破棄するメカニズムと仮定できます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
 

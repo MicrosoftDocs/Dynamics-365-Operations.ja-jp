@@ -2,7 +2,7 @@
 title: 仕入先請求書の概要
 description: このトピックでは、仕入先請求書に関する一般情報を示します。
 author: abruer
-ms.date: 12/18/2019
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd30e7128c688a0880727380e601069a95a28dcd
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: c12b85103ff136799e5d676f72186e007161e9a9
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111697"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186351"
 ---
 # <a name="vendor-invoices-overview"></a>仕入先請求書の概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "6111697"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-このトピックでは、仕入先請求書に関する一般情報を示します。 仕入先請求書とは、製品やサービスの代金を受け取る請求書を指します。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。
+このトピックでは、仕入先請求書に関する一般情報を示します。 仕入先請求書とは、製品やサービスに対する支払いを受け取るための要求です。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。
 
 ## <a name="vendor-invoices"></a>仕入先請求書
 
