@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: marwalke
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b9324f6bc939ebfc25ad2eb13df5bb80f1541a1e
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 4c4f731b987c1d9e0e62f435e8e7a5bb651026b7
+ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920973"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261926"
 ---
 # <a name="move-lcs-implementation-projects-from-on-premises-to-the-cloud"></a>LCS 実装プロジェクトをオンプレミスからクラウドに移動する
 
@@ -31,7 +31,7 @@ ms.locfileid: "5920973"
 
 ## <a name="configure-lcs-cloud-implementation-project"></a>LCS クラウドの実装プロジェクトを構成する
 
-以前に Azure AD テナントで Finance and Operations クラウド名のユーザー サブスクリプション ライセンスがアクティブ化されていない場合、新しい Microsoft Dynamics Lifecycle Services (LCS) クラウド実装プロジェクトが自動的にプロビジョニングされます。 それ以外の場合は、サポート要求を開いて LCS クラウドの実装プロジェクトを作成する必要があります。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant) を参照してください。
+以前に Azure AD テナントで Finance and Operations クラウド名のユーザー サブスクリプション ライセンスがアクティブ化されていない場合、新しい Microsoft Dynamics Lifecycle Services (LCS) クラウド実装プロジェクトが自動的にプロビジョニングされます。 それ以外の場合は、サポート要求を開いて LCS クラウドの実装プロジェクトを作成する必要があります。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md) を参照してください。
 
 LCS クラウドの実装プロジェクトが作成されたら、完全に構成する必要があります。 この構成の一部として、ユーザー、Azure DevOps DevOps アソシエーション、サブスクリプションの見積りを追加し、アセット ライブラリおよびビジネス プロセス モデラー (BPM) などに入力する必要があります。
 

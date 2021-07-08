@@ -2,7 +2,7 @@
 title: サンドボックス環境への生産データベースのポイントインタイム復元
 description: このトピックでは、Microsoft Dynamics Lifecycle Services を使用して生産データベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 05/24/2021
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4f91ce84f9ce18a2b6cce41078248811ae49e91a
-ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
+ms.openlocfilehash: 04d6d49758dcd27181a1f8e5d515e9a725cdbacb
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6092390"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303426"
 ---
 # <a name="point-in-time-restore-of-the-production-database-to-a-sandbox-environment"></a>サンドボックス環境への生産データベースのポイントインタイム復元
 
@@ -127,7 +127,7 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 
 ### <a name="the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service"></a>異なるインフラストラクチャ (Microsoft による管理対セルフ サービス) 上にあるソースおよびターゲット
 
-PITR プロセスは、異なる地域間の Microsoft による管理およびセルフ サービス環境間でサポートされていません。 たとえば、実稼働環境が Microsoft によって管理されており、米国東部 2 で、セルフ サービスのサンドボックス環境に PITR が必要な場合、米国東部では PITR はサポートされていません。 代わりに、実稼働環境をセルフ サービスに移動するか、定期的なデータベース更新を選択することもできます。
+PITR プロセスは、ソースとして Microsoft 管理環境と、行先としてのセルフサービス環境の間ではサポートされません。 たとえば、実稼働環境が Microsoft によって管理されており、米国東部にある場合、また、セルフサービスで米国東部にあるサンドボックス環境に PITR が必要な場合です。 PITR はサポートされていません。 代わりに、実稼働環境をセルフ サービスに移動するか、定期的なデータベース更新を選択することもできます。
 
 ### <a name="point-in-time-restore-between-source-and-target-that-are-both-on-self-service-in-different-regions"></a>異なる地域で、両方ともセルフ サービスにあるソースとターゲット間のポイントインタイム復元
 PITR プロセスは、異なる地域間のセルフ サービス環境間ではサポートされていません。 たとえば、実稼働環境が米国東部にあり、セルフ サービスのサンドボックス環境に PITR が必要な場合、西ヨーロッパでは PITR はサポートされていません。 代わりに、環境を両方とも同じ地域にするか、定期的なデータベース更新を選択することもできます。

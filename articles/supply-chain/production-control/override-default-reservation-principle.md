@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814805"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270790"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>生産材料の既定の予約原則の上書き
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 *既定の生産予約の上書き* 機能を使用すると、各品目モデル グループに対して既定の予約原則を設定できます。 したがって、生産部品表 (BOM) またはバッチ オーダー フォーミュラの一部である各品目に対して、異なる予約原則を自動的に適用できます。 各品目モデル グループが、注文に対して設定されている既定の予約原則を上書きするかどうか、および、代わりに使用する必要がある予約原則 (*手動*、*見積*、*スケジューリング*、*リリース*、または *開始*) を選択できます。
 
@@ -37,7 +36,7 @@ ms.locfileid: "5814805"
 この機能を使用するには、システム上で有効化する必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール:** *生産制御*
-- **機能名:** *(プレビュー) 規定の生産計画の上書き*
+- **機能名:** *規定の生産計画の上書き*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>品目モデル グループへの生産予約ポリシーの割り当て
 

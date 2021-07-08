@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c0d64a13d9db407b788f36eede677bf988144fe
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: b80b71e99f52a5949ad3184effcb08d58e91eee1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908172"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189732"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5908172"
 
 この記事では、ウィザードのフォーム パターンに関する情報を提供します。 ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。 ウィザードは、学習または実行が難しい複雑または頻度の低いタスクで、または頻繁に実行する面倒なタスクで特に便利です。
 

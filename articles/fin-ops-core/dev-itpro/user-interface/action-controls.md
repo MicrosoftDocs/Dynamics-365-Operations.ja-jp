@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d530de3e743352a415e7e1843bfe4ab3eb776624
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 40a9f903eeb8054e22188ae6df4b2815335c1f24
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745725"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189228"
 ---
 # <a name="action-controls"></a>アクション コントロール
 
@@ -27,8 +27,7 @@ ms.locfileid: "5745725"
 
 アクションは、エンタープライズ リソース プランニング (ERP) システムに不可欠なコンポーネントであり、マウスのクリック、キーボード、タッチによってトリガーされます。
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 アクションは、エンタープライズ リソース プランニング (ERP) システムの不可欠なコンポーネントです。 アクションは、さまざまなメカニズムからアクセスすることができます。
 

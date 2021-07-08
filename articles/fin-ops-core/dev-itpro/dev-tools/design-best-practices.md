@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c135b491a9bb1fdcafdb9f3845a83669cf089ed0
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 10ac07774262a7b0e70deb19eb70fbc20db045e8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865861"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188822"
 ---
 # <a name="design-principles-and-best-practices-for-data-entities"></a>データ エンティティに関する設計原則とベスト プラクティス
 
@@ -25,8 +25,7 @@ ms.locfileid: "5865861"
 
 この記事では、データ エンティティの設計原則について説明します。 また、データ エンティティ、フィールド、関係のロール、ロールの名前、OData EntityType および EntitySet のガイドラインも含まれています。
 
-<a name="entity-design-principles"></a>エンティティ デザインの原則
-------------------------
+## <a name="entity-design-principles"></a>エンティティ デザインの原則
 
 データ エンティティは、1 つの消耗契約に関連するビジネス ロジックをカプセル化する総合的なオブジェクトを提供する必要があります。 契約は、OData、インポートとエクスポート、統合、プログラミング モデルなどのアプリケーション インターフェイス (API) を通じて公開されます。 各データ エンティティでは、以下の目標を達成するように設計する必要があります。
 

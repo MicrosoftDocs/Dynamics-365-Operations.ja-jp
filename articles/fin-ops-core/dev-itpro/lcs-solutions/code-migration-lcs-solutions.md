@@ -12,12 +12,12 @@ ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 03fdb3b72e657ce1a51789fec997234aabf7e58c
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 40e6bfd7ed0f9447e71bc7b752622410e973e0cf
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921205"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189926"
 ---
 # <a name="migrate-code-for-finance-and-operations-apps-solutions"></a>Finance and Operations アプリ ソリューションのコードの移行
 
@@ -58,8 +58,7 @@ xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\
 
 xppbp.exe ファイルは、*c:\packages\bin* または *I:\AosService\Packages\LocalDirectory\bin)* にあります。 レポートの **問題** タブ上に表示される警告またはエラーを解決する必要があります。 CAR レポートのコピーは、検証ミーティングよりも前に、Microsoft に送信する必要があります。 詳細については、 [カスタマイズ分析のレポート (CAR)](../dev-tools/customization-analysis-report.md) および、問題と例外に関する [Dynamics コミュニティのブログ](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues) を参照してください。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
 
 [開発およびカスタマイズのホーム ページ](../dev-tools/developer-home-page.md#code-migration)

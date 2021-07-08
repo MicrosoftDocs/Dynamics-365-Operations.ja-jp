@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84955755311a81c7dee76956d14c500a165782a3
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 37813f96f5eca4a77d140b800e73c5d91c6c0094
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941125"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193268"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 
@@ -110,7 +110,7 @@ Prospect to Cash を二重書き込みに移行する方法の詳細について
 
 ### <a name="on-finance-and-operations-data-tables-can-i-develop-unbounded-columns-that-flow-to-dataverse-by-using-dual-write"></a>Finance and Operations データ テーブルでは、二重書き込みを使用して Dataverse にフローするバインドされない列を開発することはできますか?
 
-はい。 [計算列と仮想列](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-columns)の両方を使用できます。 ただし、読み取りと書き込みに必要な追加のX++ ロジックを使用して、パフォーマンスのオーバーヘッドを監視する必要があります。 同じトランザクション内でのラウンド トリップは許可されません。 したがって、X++ を使用して追加の値を変換または計算するために仮想列を使用することは避け、それが同じトランザクション内の Dataverse に戻ることを予期してください。
+はい。 [計算列と仮想列](../data-entity-computed-columns-virtual-fields.md)の両方を使用できます。 ただし、読み取りと書き込みに必要な追加のX++ ロジックを使用して、パフォーマンスのオーバーヘッドを監視する必要があります。 同じトランザクション内でのラウンド トリップは許可されません。 したがって、X++ を使用して追加の値を変換または計算するために仮想列を使用することは避け、それが同じトランザクション内の Dataverse に戻ることを予期してください。
 
 ### <a name="when-i-use-the-dataverse-offline-app-what-happens-if-i-cant-sync-the-data-after-reconnection-does-this-situation-cause-an-inconsistent-state-between-the-dataverse-environment-and-the-finance-and-operations-environment"></a>Dataverse オフライン アプリを使用して、再接続後にデータを同期できない場合はどうなりますか? この状況により、Dataverse 環境と Finance and Operations 環境との間で状態が矛盾することになりますか?
 

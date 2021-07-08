@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: b4abaa6756fd80ff784fdc8d30176236e8044a48
-ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
+ms.openlocfilehash: c93845b2f37a1b760a6fc160fe75db568d757a4f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6092443"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190323"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 
@@ -29,8 +29,7 @@ ms.locfileid: "6092443"
 
 ほとんどのページには、Microsoft Office で開くメニューが含まれます。 このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 **Microsoft Office で開く** メニュー ボタン (**Office で開く** メニュー) は、ページに表示されるシステム定義ボタンです。 **Office で開く** メニューには、Microsoft Excel や Microsoft Word などのさまざまな Office 製品にデータをエクスポートできるようにするためのメニュー項目が含まれています。 次のテーブルは、**Office で開く** メニューのメニュー項目について説明しています。
 
