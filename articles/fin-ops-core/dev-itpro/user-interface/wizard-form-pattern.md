@@ -14,105 +14,104 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c0d64a13d9db407b788f36eede677bf988144fe
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: b80b71e99f52a5949ad3184effcb08d58e91eee1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908172"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189732"
 ---
-# <a name="wizard-form-pattern"></a><span data-ttu-id="efb03-104">ウィザードのフォーム パターン</span><span class="sxs-lookup"><span data-stu-id="efb03-104">Wizard form pattern</span></span>
+# <a name="wizard-form-pattern"></a><span data-ttu-id="7036d-104">ウィザードのフォーム パターン</span><span class="sxs-lookup"><span data-stu-id="7036d-104">Wizard form pattern</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="efb03-105">この記事では、ウィザードのフォーム パターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="efb03-105">This article provides information about the Wizard form pattern.</span></span> <span data-ttu-id="efb03-106">ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。</span><span class="sxs-lookup"><span data-stu-id="efb03-106">A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.</span></span>
+<span data-ttu-id="7036d-105">この記事では、ウィザードのフォーム パターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="7036d-105">This article provides information about the Wizard form pattern.</span></span> <span data-ttu-id="7036d-106">ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。</span><span class="sxs-lookup"><span data-stu-id="7036d-106">A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.</span></span>
 
-<a name="usage"></a><span data-ttu-id="efb03-107">用途</span><span class="sxs-lookup"><span data-stu-id="efb03-107">Usage</span></span>
------
+## <a name="usage"></a><span data-ttu-id="7036d-107">用途</span><span class="sxs-lookup"><span data-stu-id="7036d-107">Usage</span></span>
 
-<span data-ttu-id="efb03-108">ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。</span><span class="sxs-lookup"><span data-stu-id="efb03-108">A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.</span></span> <span data-ttu-id="efb03-109">ウィザードは、学習または実行が難しい複雑または頻度の低いタスクで、または頻繁に実行する面倒なタスクで特に便利です。</span><span class="sxs-lookup"><span data-stu-id="efb03-109">Wizards are especially useful for complex or infrequent tasks that the user might have difficulty learning or doing, or for tedious, frequently performed tasks.</span></span>
+<span data-ttu-id="7036d-108">ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。</span><span class="sxs-lookup"><span data-stu-id="7036d-108">A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.</span></span> <span data-ttu-id="7036d-109">ウィザードは、学習または実行が難しい複雑または頻度の低いタスクで、または頻繁に実行する面倒なタスクで特に便利です。</span><span class="sxs-lookup"><span data-stu-id="7036d-109">Wizards are especially useful for complex or infrequent tasks that the user might have difficulty learning or doing, or for tedious, frequently performed tasks.</span></span>
 
-## <a name="wireframe"></a><span data-ttu-id="efb03-110">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="efb03-110">Wireframe</span></span>
+## <a name="wireframe"></a><span data-ttu-id="7036d-110">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="7036d-110">Wireframe</span></span>
 
-<span data-ttu-id="efb03-111">[![ウィザード フォームのワイヤーフレーム](./media/wizard1-1024x574.png)](./media/wizard1.png)</span><span class="sxs-lookup"><span data-stu-id="efb03-111">[![Wireframe for Wizard form](./media/wizard1-1024x574.png)](./media/wizard1.png)</span></span>
+<span data-ttu-id="7036d-111">[![ウィザード フォームのワイヤーフレーム](./media/wizard1-1024x574.png)](./media/wizard1.png)</span><span class="sxs-lookup"><span data-stu-id="7036d-111">[![Wireframe for Wizard form](./media/wizard1-1024x574.png)](./media/wizard1.png)</span></span>
 
-## <a name="pattern-changes"></a><span data-ttu-id="efb03-112">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="efb03-112">Pattern changes</span></span>
-<span data-ttu-id="efb03-113">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="efb03-113">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
+## <a name="pattern-changes"></a><span data-ttu-id="7036d-112">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="7036d-112">Pattern changes</span></span>
+<span data-ttu-id="7036d-113">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7036d-113">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
 
--   <span data-ttu-id="efb03-114">ウィザード ステップの 2 番目の指示は、そのステップの [タブ] ページのヘルプ テキスト プロパティですでに定義されていました。</span><span class="sxs-lookup"><span data-stu-id="efb03-114">The secondary instruction for a wizard step was previously defined in the Help Text property of that step’s Tab Page.</span></span> <span data-ttu-id="efb03-115">この指示はタブページで静的テキスト コントロールとしてモデル化されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="efb03-115">This instruction will now be modeled on the Tab Page as a Static Text control.</span></span>
+-   <span data-ttu-id="7036d-114">ウィザード ステップの 2 番目の指示は、そのステップの [タブ] ページのヘルプ テキスト プロパティですでに定義されていました。</span><span class="sxs-lookup"><span data-stu-id="7036d-114">The secondary instruction for a wizard step was previously defined in the Help Text property of that step’s Tab Page.</span></span> <span data-ttu-id="7036d-115">この指示はタブページで静的テキスト コントロールとしてモデル化されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="7036d-115">This instruction will now be modeled on the Tab Page as a Static Text control.</span></span>
 
-## <a name="model"></a><span data-ttu-id="efb03-116">モデル</span><span class="sxs-lookup"><span data-stu-id="efb03-116">Model</span></span>
-### <a name="high-level-structure"></a><span data-ttu-id="efb03-117">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="efb03-117">High-level structure</span></span>
+## <a name="model"></a><span data-ttu-id="7036d-116">モデル</span><span class="sxs-lookup"><span data-stu-id="7036d-116">Model</span></span>
+### <a name="high-level-structure"></a><span data-ttu-id="7036d-117">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="7036d-117">High-level structure</span></span>
 
-- <span data-ttu-id="efb03-118">デザイン (スタイル = ウィザード; キャプション =&lt;ウィザード タイトル&gt;)</span><span class="sxs-lookup"><span data-stu-id="efb03-118">Design (Style=Wizard; Caption=&lt;wizard title&gt;)</span></span>
+- <span data-ttu-id="7036d-118">デザイン (スタイル = ウィザード; キャプション =&lt;ウィザード タイトル&gt;)</span><span class="sxs-lookup"><span data-stu-id="7036d-118">Design (Style=Wizard; Caption=&lt;wizard title&gt;)</span></span>
 
-    - <span data-ttu-id="efb03-119">WizardContent (Tab)</span><span class="sxs-lookup"><span data-stu-id="efb03-119">WizardContent (Tab)</span></span>
+    - <span data-ttu-id="7036d-119">WizardContent (Tab)</span><span class="sxs-lookup"><span data-stu-id="7036d-119">WizardContent (Tab)</span></span>
 
-        - <span data-ttu-id="efb03-120">WizardContentPage (TabPage) *\[1..N 回繰り返し、任意の名前を付けることができます。キャプションはページ タイトルに設定します\]*</span><span class="sxs-lookup"><span data-stu-id="efb03-120">WizardContentPage (TabPage) *\[repeats 1..N times, can be named anything; Caption set to page title\]*</span></span>
+        - <span data-ttu-id="7036d-120">WizardContentPage (TabPage) *\[1..N 回繰り返し、任意の名前を付けることができます。キャプションはページ タイトルに設定します\]*</span><span class="sxs-lookup"><span data-stu-id="7036d-120">WizardContentPage (TabPage) *\[repeats 1..N times, can be named anything; Caption set to page title\]*</span></span>
 
-            - <span data-ttu-id="efb03-121">MainInstruction (StaticText)</span><span class="sxs-lookup"><span data-stu-id="efb03-121">MainInstruction (StaticText)</span></span>
-            - <span data-ttu-id="efb03-122">本文 (グループ)</span><span class="sxs-lookup"><span data-stu-id="efb03-122">Body (Group)</span></span>
+            - <span data-ttu-id="7036d-121">MainInstruction (StaticText)</span><span class="sxs-lookup"><span data-stu-id="7036d-121">MainInstruction (StaticText)</span></span>
+            - <span data-ttu-id="7036d-122">本文 (グループ)</span><span class="sxs-lookup"><span data-stu-id="7036d-122">Body (Group)</span></span>
 
-### <a name="core-components"></a><span data-ttu-id="efb03-123">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="efb03-123">Core components</span></span>
+### <a name="core-components"></a><span data-ttu-id="7036d-123">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="7036d-123">Core components</span></span>
 
-1.  <span data-ttu-id="efb03-124">**Form.Design** にウィザード パターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="efb03-124">Apply the Wizard pattern on **Form.Design**.</span></span>
-2.  <span data-ttu-id="efb03-125">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="efb03-125">Address BP Warnings:</span></span>
-    1.  <span data-ttu-id="efb03-126">**Design.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="efb03-126">**Design.Caption** isn't empty.</span></span>
-    2.  <span data-ttu-id="efb03-127">このフォームは少なくとも 1 つのメニュー項目で参照される必要があります。</span><span class="sxs-lookup"><span data-stu-id="efb03-127">The form must be referenced by at least one menu item.</span></span>
-    3.  <span data-ttu-id="efb03-128">**TabPage.Caption** は空ではありません (すべてのウィザードのコンテンツ ページで)。</span><span class="sxs-lookup"><span data-stu-id="efb03-128">**TabPage.Caption** isn't empty (for all wizard content pages).</span></span>
-    4.  <span data-ttu-id="efb03-129">**MainInstruction.Text** が空ではありません(すべてのウィザードのコンテンツ ページ)。</span><span class="sxs-lookup"><span data-stu-id="efb03-129">**MainInstruction.Text** isn't empty (for all wizard content pages).</span></span>
+1.  <span data-ttu-id="7036d-124">**Form.Design** にウィザード パターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="7036d-124">Apply the Wizard pattern on **Form.Design**.</span></span>
+2.  <span data-ttu-id="7036d-125">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="7036d-125">Address BP Warnings:</span></span>
+    1.  <span data-ttu-id="7036d-126">**Design.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="7036d-126">**Design.Caption** isn't empty.</span></span>
+    2.  <span data-ttu-id="7036d-127">このフォームは少なくとも 1 つのメニュー項目で参照される必要があります。</span><span class="sxs-lookup"><span data-stu-id="7036d-127">The form must be referenced by at least one menu item.</span></span>
+    3.  <span data-ttu-id="7036d-128">**TabPage.Caption** は空ではありません (すべてのウィザードのコンテンツ ページで)。</span><span class="sxs-lookup"><span data-stu-id="7036d-128">**TabPage.Caption** isn't empty (for all wizard content pages).</span></span>
+    4.  <span data-ttu-id="7036d-129">**MainInstruction.Text** が空ではありません(すべてのウィザードのコンテンツ ページ)。</span><span class="sxs-lookup"><span data-stu-id="7036d-129">**MainInstruction.Text** isn't empty (for all wizard content pages).</span></span>
 
-### <a name="commonly-used-subpatterns"></a><span data-ttu-id="efb03-130">一般的に使用されるサブパターン</span><span class="sxs-lookup"><span data-stu-id="efb03-130">Commonly used subpatterns</span></span>
+### <a name="commonly-used-subpatterns"></a><span data-ttu-id="7036d-130">一般的に使用されるサブパターン</span><span class="sxs-lookup"><span data-stu-id="7036d-130">Commonly used subpatterns</span></span>
 
--   [<span data-ttu-id="efb03-131">フィールドおよびフィールド グループ</span><span class="sxs-lookup"><span data-stu-id="efb03-131">Fields and Field Groups</span></span>](fields-field-groups-subpattern.md)
--   [<span data-ttu-id="efb03-132">ツールバーおよびリスト</span><span class="sxs-lookup"><span data-stu-id="efb03-132">Toolbar and List</span></span>](toolbar-list-subpattern.md)
--   [<span data-ttu-id="efb03-133">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="efb03-133">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)
--   [<span data-ttu-id="efb03-134">リスト パネル</span><span class="sxs-lookup"><span data-stu-id="efb03-134">List Panel</span></span>](list-panel-subpattern.md)
+-   [<span data-ttu-id="7036d-131">フィールドおよびフィールド グループ</span><span class="sxs-lookup"><span data-stu-id="7036d-131">Fields and Field Groups</span></span>](fields-field-groups-subpattern.md)
+-   [<span data-ttu-id="7036d-132">ツールバーおよびリスト</span><span class="sxs-lookup"><span data-stu-id="7036d-132">Toolbar and List</span></span>](toolbar-list-subpattern.md)
+-   [<span data-ttu-id="7036d-133">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="7036d-133">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)
+-   [<span data-ttu-id="7036d-134">リスト パネル</span><span class="sxs-lookup"><span data-stu-id="7036d-134">List Panel</span></span>](list-panel-subpattern.md)
 
-## <a name="ux-guidelines"></a><span data-ttu-id="efb03-135">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="efb03-135">UX guidelines</span></span>
-<span data-ttu-id="efb03-136">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="efb03-136">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="efb03-137">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="efb03-137">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="efb03-138">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="efb03-138">Open the form in the browser, and walk through these steps.</span></span> 
+## <a name="ux-guidelines"></a><span data-ttu-id="7036d-135">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="7036d-135">UX guidelines</span></span>
+<span data-ttu-id="7036d-136">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="7036d-136">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="7036d-137">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="7036d-137">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="7036d-138">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="7036d-138">Open the form in the browser, and walk through these steps.</span></span> 
 
-<span data-ttu-id="efb03-139">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="efb03-139">**Standard form guidelines:**</span></span>
+<span data-ttu-id="7036d-139">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="7036d-139">**Standard form guidelines:**</span></span>
 
--   <span data-ttu-id="efb03-140">標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="efb03-140">Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.</span></span>
+-   <span data-ttu-id="7036d-140">標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="7036d-140">Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.</span></span>
 
-<span data-ttu-id="efb03-141">**ウィザード** **ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="efb03-141">**Wizard** **guidelines:**</span></span>
+<span data-ttu-id="7036d-141">**ウィザード** **ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="7036d-141">**Wizard** **guidelines:**</span></span>
 
--   <span data-ttu-id="efb03-142">各タブ ページには、タイトルがあるべきです。</span><span class="sxs-lookup"><span data-stu-id="efb03-142">Each tab page should have a title.</span></span>
--   <span data-ttu-id="efb03-143">各タブ ページには、主な指示があるべきです。</span><span class="sxs-lookup"><span data-stu-id="efb03-143">Each tab page should have a main instruction.</span></span>
--   <span data-ttu-id="efb03-144">コンテンツは、ページあたりの論理グループに分割する必要があります。</span><span class="sxs-lookup"><span data-stu-id="efb03-144">Content should be subdivided into logical groups per page.</span></span>
--   <span data-ttu-id="efb03-145">ウィザードには、適切なページに **&lt; 次へ &gt;** および **&lt; 前へ &gt;** ボタンがあります。</span><span class="sxs-lookup"><span data-stu-id="efb03-145">A wizard should have **&lt;Next&gt;** and **&lt;Previous&gt;** buttons on the appropriate pages.</span></span>
--   <span data-ttu-id="efb03-146">ユーザーはウィザードをキャンセルすることもできます。キャンセルすると、ウィザードを開始する前の状態に戻ります。</span><span class="sxs-lookup"><span data-stu-id="efb03-146">The user should also be able to cancel the wizard, and cancellation should return to the state that existed before the wizard was started.</span></span>
--   <span data-ttu-id="efb03-147">各ウィザード ページ (タブ ページ) ごとに、質問が 1 つだけ尋ねられます。</span><span class="sxs-lookup"><span data-stu-id="efb03-147">Only one question should be asked per wizard page (tab page).</span></span>
--   <span data-ttu-id="efb03-148">一組の選択肢がユーザーに提示されたときは、チェック ボックスまたはコンボ ボックスが条件を満たしている場合でも、オプション ボタンを使用して代替を明確にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="efb03-148">When a set of choices is presented to the user, radio buttons should be used to make the alternatives clear, even if a check box or combo box is otherwise acceptable.</span></span>
--   <span data-ttu-id="efb03-149">ウィザード フォームには以下の要素を含め **ません**。</span><span class="sxs-lookup"><span data-stu-id="efb03-149">Wizard forms must **not** have these elements:</span></span>
-    -   <span data-ttu-id="efb03-150">情報ボックス</span><span class="sxs-lookup"><span data-stu-id="efb03-150">FactBoxes</span></span>
-    -   <span data-ttu-id="efb03-151">クイック タブ</span><span class="sxs-lookup"><span data-stu-id="efb03-151">FastTabs</span></span>
+-   <span data-ttu-id="7036d-142">各タブ ページには、タイトルがあるべきです。</span><span class="sxs-lookup"><span data-stu-id="7036d-142">Each tab page should have a title.</span></span>
+-   <span data-ttu-id="7036d-143">各タブ ページには、主な指示があるべきです。</span><span class="sxs-lookup"><span data-stu-id="7036d-143">Each tab page should have a main instruction.</span></span>
+-   <span data-ttu-id="7036d-144">コンテンツは、ページあたりの論理グループに分割する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7036d-144">Content should be subdivided into logical groups per page.</span></span>
+-   <span data-ttu-id="7036d-145">ウィザードには、適切なページに **&lt; 次へ &gt;** および **&lt; 前へ &gt;** ボタンがあります。</span><span class="sxs-lookup"><span data-stu-id="7036d-145">A wizard should have **&lt;Next&gt;** and **&lt;Previous&gt;** buttons on the appropriate pages.</span></span>
+-   <span data-ttu-id="7036d-146">ユーザーはウィザードをキャンセルすることもできます。キャンセルすると、ウィザードを開始する前の状態に戻ります。</span><span class="sxs-lookup"><span data-stu-id="7036d-146">The user should also be able to cancel the wizard, and cancellation should return to the state that existed before the wizard was started.</span></span>
+-   <span data-ttu-id="7036d-147">各ウィザード ページ (タブ ページ) ごとに、質問が 1 つだけ尋ねられます。</span><span class="sxs-lookup"><span data-stu-id="7036d-147">Only one question should be asked per wizard page (tab page).</span></span>
+-   <span data-ttu-id="7036d-148">一組の選択肢がユーザーに提示されたときは、チェック ボックスまたはコンボ ボックスが条件を満たしている場合でも、オプション ボタンを使用して代替を明確にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="7036d-148">When a set of choices is presented to the user, radio buttons should be used to make the alternatives clear, even if a check box or combo box is otherwise acceptable.</span></span>
+-   <span data-ttu-id="7036d-149">ウィザード フォームには以下の要素を含め **ません**。</span><span class="sxs-lookup"><span data-stu-id="7036d-149">Wizard forms must **not** have these elements:</span></span>
+    -   <span data-ttu-id="7036d-150">情報ボックス</span><span class="sxs-lookup"><span data-stu-id="7036d-150">FactBoxes</span></span>
+    -   <span data-ttu-id="7036d-151">クイック タブ</span><span class="sxs-lookup"><span data-stu-id="7036d-151">FastTabs</span></span>
 
-## <a name="examples"></a><span data-ttu-id="efb03-152">例</span><span class="sxs-lookup"><span data-stu-id="efb03-152">Examples</span></span>
-<span data-ttu-id="efb03-153">フォーム: **WrkCtrBulkResReqEditWizard**</span><span class="sxs-lookup"><span data-stu-id="efb03-153">Form: **WrkCtrBulkResReqEditWizard**</span></span> 
+## <a name="examples"></a><span data-ttu-id="7036d-152">例</span><span class="sxs-lookup"><span data-stu-id="7036d-152">Examples</span></span>
+<span data-ttu-id="7036d-153">フォーム: **WrkCtrBulkResReqEditWizard**</span><span class="sxs-lookup"><span data-stu-id="7036d-153">Form: **WrkCtrBulkResReqEditWizard**</span></span> 
 
 ![ウィザードの例](./media/wizard2.png)
 
-## <a name="appendix"></a><span data-ttu-id="efb03-155">付録</span><span class="sxs-lookup"><span data-stu-id="efb03-155">Appendix</span></span>
-### <a name="frequently-asked-questions"></a><span data-ttu-id="efb03-156">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="efb03-156">Frequently asked questions</span></span>
+## <a name="appendix"></a><span data-ttu-id="7036d-155">付録</span><span class="sxs-lookup"><span data-stu-id="7036d-155">Appendix</span></span>
+### <a name="frequently-asked-questions"></a><span data-ttu-id="7036d-156">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="7036d-156">Frequently asked questions</span></span>
 
-<span data-ttu-id="efb03-157">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="efb03-157">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
+<span data-ttu-id="7036d-157">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="7036d-157">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
 
-### <a name="open-issues"></a><span data-ttu-id="efb03-158">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="efb03-158">Open issues</span></span>
+### <a name="open-issues"></a><span data-ttu-id="7036d-158">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="7036d-158">Open issues</span></span>
 
--   <span data-ttu-id="efb03-159">なし</span><span class="sxs-lookup"><span data-stu-id="efb03-159">None</span></span>
+-   <span data-ttu-id="7036d-159">なし</span><span class="sxs-lookup"><span data-stu-id="7036d-159">None</span></span>
 
-### <a name="ax-2012-content"></a><span data-ttu-id="efb03-160">AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="efb03-160">AX 2012 content</span></span>
+### <a name="ax-2012-content"></a><span data-ttu-id="7036d-160">AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="7036d-160">AX 2012 content</span></span>
 
-#### <a name="ax-2012-links"></a><span data-ttu-id="efb03-161">AX 2012 リンク</span><span class="sxs-lookup"><span data-stu-id="efb03-161">AX 2012 links</span></span>
+#### <a name="ax-2012-links"></a><span data-ttu-id="7036d-161">AX 2012 リンク</span><span class="sxs-lookup"><span data-stu-id="7036d-161">AX 2012 links</span></span>
 
--   <span data-ttu-id="efb03-162">[Microsoft DynamicsAX\[AX 2012\] の MSDN ウィザード](/dynamicsax-2012/developer/wizards-in-microsoft-dynamics-ax)</span><span class="sxs-lookup"><span data-stu-id="efb03-162">[MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](/dynamicsax-2012/developer/wizards-in-microsoft-dynamics-ax)</span></span>
--   <span data-ttu-id="efb03-163">[ウィザード開発のための MSDN ガイドライン \[AX 2012\]](/dynamicsax-2012/developer/guidelines-for-wizard-development)</span><span class="sxs-lookup"><span data-stu-id="efb03-163">[MSDN Guidelines for Wizard Development \[AX 2012\]](/dynamicsax-2012/developer/guidelines-for-wizard-development)</span></span>
+-   <span data-ttu-id="7036d-162">[Microsoft DynamicsAX\[AX 2012\] の MSDN ウィザード](/dynamicsax-2012/developer/wizards-in-microsoft-dynamics-ax)</span><span class="sxs-lookup"><span data-stu-id="7036d-162">[MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](/dynamicsax-2012/developer/wizards-in-microsoft-dynamics-ax)</span></span>
+-   <span data-ttu-id="7036d-163">[ウィザード開発のための MSDN ガイドライン \[AX 2012\]](/dynamicsax-2012/developer/guidelines-for-wizard-development)</span><span class="sxs-lookup"><span data-stu-id="7036d-163">[MSDN Guidelines for Wizard Development \[AX 2012\]](/dynamicsax-2012/developer/guidelines-for-wizard-development)</span></span>
 
-#### <a name="ax-2012-example"></a><span data-ttu-id="efb03-164">AX 2012 の例</span><span class="sxs-lookup"><span data-stu-id="efb03-164">AX 2012 example</span></span>
+#### <a name="ax-2012-example"></a><span data-ttu-id="7036d-164">AX 2012 の例</span><span class="sxs-lookup"><span data-stu-id="7036d-164">AX 2012 example</span></span>
 
-<span data-ttu-id="efb03-165">[![以前のバージョンの例](./media/wizard3.png)](./media/wizard3.png)</span><span class="sxs-lookup"><span data-stu-id="efb03-165">[![Previous version example](./media/wizard3.png)](./media/wizard3.png)</span></span>
+<span data-ttu-id="7036d-165">[![以前のバージョンの例](./media/wizard3.png)](./media/wizard3.png)</span><span class="sxs-lookup"><span data-stu-id="7036d-165">[![Previous version example](./media/wizard3.png)](./media/wizard3.png)</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

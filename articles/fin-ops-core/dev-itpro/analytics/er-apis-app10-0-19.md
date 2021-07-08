@@ -2,7 +2,7 @@
 title: Application update 10.0.19 での電子申告フレームワーク API の変更
 description: このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.19 で電子申告 (ER) フレームワークの API がどのように変更されたのかについて説明します。
 author: NickSelin
-ms.date: 03/29/2021
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,24 +13,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: d9987cfa8adf1c3c485e96aa81c63e09158b66ec
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9e76af0a7de822dde2c8231f891d39d457afacd9
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018274"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270647"
 ---
-# <a name="electronic-reporting-framework-api-changes-for-application-update-10019"></a><span data-ttu-id="126bd-103">Application update 10.0.19 での電子申告フレームワーク API の変更</span><span class="sxs-lookup"><span data-stu-id="126bd-103">Electronic reporting framework API changes for Application update 10.0.19</span></span>
+# <a name="electronic-reporting-framework-api-changes-for-application-update-10019"></a><span data-ttu-id="9982f-103">Application update 10.0.19 での電子申告フレームワーク API の変更</span><span class="sxs-lookup"><span data-stu-id="9982f-103">Electronic reporting framework API changes for Application update 10.0.19</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="126bd-104">このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.19 で[電子申告 (ER)](general-electronic-reporting.md) フレームワークのアプリケーション プログラミング インターフェイス (API) がどのように変更されたかについて説明します。</span><span class="sxs-lookup"><span data-stu-id="126bd-104">This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.</span></span>
+<span data-ttu-id="9982f-104">このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.19 で[電子申告 (ER)](general-electronic-reporting.md) フレームワークのアプリケーション プログラミング インターフェイス (API) がどのように変更されたかについて説明します。</span><span class="sxs-lookup"><span data-stu-id="9982f-104">This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.</span></span>
 
-## <a name="api-to-extend-the-list-of-er-destinations"></a><a name="er-api-extend-destination"></a> <span data-ttu-id="126bd-105">ER 行先のリストを拡張する API</span><span class="sxs-lookup"><span data-stu-id="126bd-105">API to extend the list of ER destinations</span></span>
+## <a name="api-to-extend-the-list-of-er-destinations"></a><a name="er-api-extend-destination"></a> <span data-ttu-id="9982f-105">ER 行先のリストを拡張する API</span><span class="sxs-lookup"><span data-stu-id="9982f-105">API to extend the list of ER destinations</span></span>
 
-<span data-ttu-id="126bd-106">[カスタム](electronic-reporting-destinations.md#destination-types) ER [接続先](electronic-reporting-destinations.md) を実装するには、`ERIFormatFileDestinationSettings` パブリック インターフェイスを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="126bd-106">To implement a [custom](electronic-reporting-destinations.md#destination-types) ER [destination](electronic-reporting-destinations.md), you must use the `ERIFormatFileDestinationSettings` public interface.</span></span>
+<span data-ttu-id="9982f-106">[カスタム](electronic-reporting-destinations.md#destination-types) ER [接続先](electronic-reporting-destinations.md) を実装するには、`ERIFormatFileDestinationSettings` パブリック インターフェイスを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9982f-106">To implement a [custom](electronic-reporting-destinations.md#destination-types) ER [destination](electronic-reporting-destinations.md), you must use the `ERIFormatFileDestinationSettings` public interface.</span></span>
 
 ```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
@@ -99,14 +98,14 @@ public interface ERIFormatFileDestinationSettings extends SysPackable
 }
 ```
 
-<span data-ttu-id="126bd-107">このインターフェイスを使用すると、ER の接続先ダイアログ ボックスでカスタム接続先のパラメータを提供し、設計時に設定できます。</span><span class="sxs-lookup"><span data-stu-id="126bd-107">This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time.</span></span> <span data-ttu-id="126bd-108">その後、構成された接続先を実行時に使用して、生成された[送信](general-electronic-reporting.md#FormatComponentOutbound) ドキュメントを格納できます。</span><span class="sxs-lookup"><span data-stu-id="126bd-108">The configured destination can then be used at runtime to store generated [outbound](general-electronic-reporting.md#FormatComponentOutbound) documents.</span></span>
+<span data-ttu-id="9982f-107">このインターフェイスを使用すると、ER の接続先ダイアログ ボックスでカスタム接続先のパラメータを提供し、設計時に設定できます。</span><span class="sxs-lookup"><span data-stu-id="9982f-107">This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time.</span></span> <span data-ttu-id="9982f-108">その後、構成された接続先を実行時に使用して、生成された[送信](general-electronic-reporting.md#FormatComponentOutbound) ドキュメントを格納できます。</span><span class="sxs-lookup"><span data-stu-id="9982f-108">The configured destination can then be used at runtime to store generated [outbound](general-electronic-reporting.md#FormatComponentOutbound) documents.</span></span>
 
-<span data-ttu-id="126bd-109">このインターフェイスの詳細については、[生成されるドキュメントのカスタム送信先を実装する](er-custom-file-destination.md) の例を完了してください。</span><span class="sxs-lookup"><span data-stu-id="126bd-109">To learn more about this interface, complete the example in [Implement a custom destination for generated documents](er-custom-file-destination.md).</span></span>
+<span data-ttu-id="9982f-109">このインターフェイスの詳細については、[生成されるドキュメントのカスタム送信先を実装する](er-custom-file-destination.md) の例を完了してください。</span><span class="sxs-lookup"><span data-stu-id="9982f-109">To learn more about this interface, complete the example in [Implement a custom destination for generated documents](er-custom-file-destination.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="126bd-110">追加リソース</span><span class="sxs-lookup"><span data-stu-id="126bd-110">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="9982f-110">追加リソース</span><span class="sxs-lookup"><span data-stu-id="9982f-110">Additional resources</span></span>
 
-[<span data-ttu-id="126bd-111">電子申告 (ER) の概要</span><span class="sxs-lookup"><span data-stu-id="126bd-111">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
+[<span data-ttu-id="9982f-111">電子申告 (ER) の概要</span><span class="sxs-lookup"><span data-stu-id="9982f-111">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
 
-[<span data-ttu-id="126bd-112">電子申告 (ER) の送信先</span><span class="sxs-lookup"><span data-stu-id="126bd-112">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
+[<span data-ttu-id="9982f-112">電子申告 (ER) の送信先</span><span class="sxs-lookup"><span data-stu-id="9982f-112">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
