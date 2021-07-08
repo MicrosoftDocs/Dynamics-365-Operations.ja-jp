@@ -2,7 +2,7 @@
 title: Finance and Operations で最新の更新プログラムに移行するためのプロセス
 description: このトピックでは、Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
-ms.date: 10/09/2019
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,55 +14,55 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 67a538495dac70484d5103e3911aef41a6bfa187
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 752a984f111408296a2f9be98d3852f4e7bafdae
+ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743895"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6224518"
 ---
-# <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a><span data-ttu-id="82639-103">Finance and Operations で最新の更新プログラムに移行するためのプロセス</span><span class="sxs-lookup"><span data-stu-id="82639-103">Process for moving to the latest update of Finance and Operations</span></span>
+# <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a><span data-ttu-id="38088-103">Finance and Operations で最新の更新プログラムに移行するためのプロセス</span><span class="sxs-lookup"><span data-stu-id="38088-103">Process for moving to the latest update of Finance and Operations</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="82639-104">このトピックでは、Finance and Operations の最新のリリースに更新またはアップグレードするプロセスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="82639-104">This topic explains the process of updating or upgrading to the latest release of Finance and Operations.</span></span> <span data-ttu-id="82639-105">プロセス全体とサポートされるシナリオを説明しますが、プロセスの各ステップに関する詳細な指示は提示しません。</span><span class="sxs-lookup"><span data-stu-id="82639-105">It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.</span></span>
+<span data-ttu-id="38088-104">このトピックでは、Finance and Operations の最新のリリースに更新またはアップグレードするプロセスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="38088-104">This topic explains the process of updating or upgrading to the latest release of Finance and Operations.</span></span> <span data-ttu-id="38088-105">プロセス全体とサポートされるシナリオを説明しますが、プロセスの各ステップに関する詳細な指示は提示しません。</span><span class="sxs-lookup"><span data-stu-id="38088-105">It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.</span></span>
 
-<span data-ttu-id="82639-106">Finance and Operations の各リリースの内容の詳細については、[Finance and Operations ホーム ページの新機能と変更点](../../fin-ops/get-started/whats-new-changed.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="82639-106">For information about the contents of each release of Finance and Operations, see [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md).</span></span>
+<span data-ttu-id="38088-106">Finance and Operations の各リリースの内容の詳細については、[Finance and Operations ホーム ページの新機能と変更点](../../fin-ops/get-started/whats-new-changed.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38088-106">For information about the contents of each release of Finance and Operations, see [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md).</span></span>
 
-<span data-ttu-id="82639-107">1 つのバージョンのサービス更新の詳細については、[1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="82639-107">For information about One Version service updates, see the [One Version service updates overview](../lifecycle-services/oneversion-overview.md).</span></span>
+<span data-ttu-id="38088-107">1 つのバージョンのサービス更新の詳細については、[1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38088-107">For information about One Version service updates, see the [One Version service updates overview](../lifecycle-services/oneversion-overview.md).</span></span>
 
 > [!Note]
-> <span data-ttu-id="82639-108">Microsoft Dynamics AX 2012 から Finance and Operations へのアップグレードを検討している方は、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="82639-108">For those looking to upgrade to Finance and Operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md).</span></span>
+> <span data-ttu-id="38088-108">Microsoft Dynamics AX 2012 から Finance and Operations へのアップグレードを検討している方は、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38088-108">For those looking to upgrade to Finance and Operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md).</span></span>
 
-## <a name="definitions"></a><span data-ttu-id="82639-109">定義</span><span class="sxs-lookup"><span data-stu-id="82639-109">Definitions</span></span>
+## <a name="definitions"></a><span data-ttu-id="38088-109">定義</span><span class="sxs-lookup"><span data-stu-id="38088-109">Definitions</span></span>
 
-- <span data-ttu-id="82639-110">**アップグレード** – バージョン 8.0 より前のソース環境では、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。</span><span class="sxs-lookup"><span data-stu-id="82639-110">**Upgrade** – The process of moving from one official release of Finance and Operations to the next release, for source environments prior to version 8.0.</span></span> <span data-ttu-id="82639-111">例としては、7.1 から 7.3 または 7.3 から 10.0.1 への移行があります。</span><span class="sxs-lookup"><span data-stu-id="82639-111">Some examples are the move from 7.1 to 7.3, or from 7.3 to 10.0.1.</span></span> <span data-ttu-id="82639-112">プロセスには、無料サンド ボックス環境、コード アップグレード、およびデータ アップグレードの設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="82639-112">The process involves setup of a free sandbox environment, code upgrade, and data upgrade.</span></span>
-- <span data-ttu-id="82639-113">**更新** – バージョン 8.0 以降のソース環境で、バイナリ パッケージを環境に適用し、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。</span><span class="sxs-lookup"><span data-stu-id="82639-113">**Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0.</span></span> <span data-ttu-id="82639-114">このプロセスには、低いダウンタイム要件があり、データ アップグレードは含まれません。</span><span class="sxs-lookup"><span data-stu-id="82639-114">This process has lower downtime requirements and doesn't involve data upgrade.</span></span>
+- <span data-ttu-id="38088-110">**アップグレード** – バージョン 8.0 より前のソース環境では、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。</span><span class="sxs-lookup"><span data-stu-id="38088-110">**Upgrade** – The process of moving from one official release of Finance and Operations to the next release, for source environments prior to version 8.0.</span></span> <span data-ttu-id="38088-111">例としては、7.1 から 7.3 または 7.3 から 10.0.1 への移行があります。</span><span class="sxs-lookup"><span data-stu-id="38088-111">Some examples are the move from 7.1 to 7.3, or from 7.3 to 10.0.1.</span></span> <span data-ttu-id="38088-112">プロセスには、無料サンド ボックス環境、コード アップグレード、およびデータ アップグレードの設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="38088-112">The process involves setup of a free sandbox environment, code upgrade, and data upgrade.</span></span>
+- <span data-ttu-id="38088-113">**更新** – バージョン 8.0 以降のソース環境で、バイナリ パッケージを環境に適用し、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。</span><span class="sxs-lookup"><span data-stu-id="38088-113">**Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0.</span></span> <span data-ttu-id="38088-114">このプロセスには、低いダウンタイム要件があり、データ アップグレードは含まれません。</span><span class="sxs-lookup"><span data-stu-id="38088-114">This process has lower downtime requirements and doesn't involve data upgrade.</span></span> <span data-ttu-id="38088-115">詳細については、このトピックの後半の [再構築と更新](upgrade-latest-update.md#rebuild-and-update) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="38088-115">For more information, see the [Rebuild and update](upgrade-latest-update.md#rebuild-and-update) section later in this topic.</span></span>
 
-## <a name="paths-to-one-version"></a><span data-ttu-id="82639-115">1 つのバージョンへのパス</span><span class="sxs-lookup"><span data-stu-id="82639-115">Paths to One Version</span></span>
+## <a name="paths-to-one-version"></a><span data-ttu-id="38088-116">1 つのバージョンへのパス</span><span class="sxs-lookup"><span data-stu-id="38088-116">Paths to One Version</span></span>
 <img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />
-<span data-ttu-id="82639-116">Finance and Operations の最新バージョンを導入するには 3 つの基本パスがあります。</span><span class="sxs-lookup"><span data-stu-id="82639-116">There are three primary paths to get to the latest version of Finance and Operations.</span></span>  <span data-ttu-id="82639-117">各パスは、詳細な手順へのリンクとともに以下で参照されます。</span><span class="sxs-lookup"><span data-stu-id="82639-117">Each path is referenced below with a link to detailed steps.</span></span>
+<span data-ttu-id="38088-117">Finance and Operations の最新バージョンを導入するには 3 つの基本パスがあります。</span><span class="sxs-lookup"><span data-stu-id="38088-117">There are three primary paths to get to the latest version of Finance and Operations.</span></span>  <span data-ttu-id="38088-118">各パスは、詳細な手順へのリンクとともに以下で参照されます。</span><span class="sxs-lookup"><span data-stu-id="38088-118">Each path is referenced below with a link to detailed steps.</span></span>
 
-### <a name="self-service-upgrade"></a><span data-ttu-id="82639-118">セルフサービス アップグレード</span><span class="sxs-lookup"><span data-stu-id="82639-118">Self-service upgrade</span></span>
-<span data-ttu-id="82639-119">*適用可能な開始バージョン: Microsoft Dynamics 365 for Finance and Operations 7.0 (RTW)、7.1 (1611)、7.2 (2017 年 7 月)、7.3。*</span><span class="sxs-lookup"><span data-stu-id="82639-119">*Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*</span></span><br/>
-<span data-ttu-id="82639-120">*スコープ: 複雑*</span><span class="sxs-lookup"><span data-stu-id="82639-120">*Scope: Complex*</span></span><br/>
-<span data-ttu-id="82639-121">このパスには拡張機能へのコード リファクタリング、そして DevTest、サンドボックス、そして最終的には実稼働環境でのデータ アップグレードが含まれます。</span><span class="sxs-lookup"><span data-stu-id="82639-121">This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment.</span></span> 
+### <a name="self-service-upgrade"></a><span data-ttu-id="38088-119">セルフサービス アップグレード</span><span class="sxs-lookup"><span data-stu-id="38088-119">Self-service upgrade</span></span>
+<span data-ttu-id="38088-120">*適用可能な開始バージョン: Microsoft Dynamics 365 for Finance and Operations 7.0 (RTW)、7.1 (1611)、7.2 (2017 年 7 月)、7.3。*</span><span class="sxs-lookup"><span data-stu-id="38088-120">*Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*</span></span><br/>
+<span data-ttu-id="38088-121">*スコープ: 複雑*</span><span class="sxs-lookup"><span data-stu-id="38088-121">*Scope: Complex*</span></span><br/>
+<span data-ttu-id="38088-122">このパスには拡張機能へのコード リファクタリング、そして DevTest、サンドボックス、そして最終的には実稼働環境でのデータ アップグレードが含まれます。</span><span class="sxs-lookup"><span data-stu-id="38088-122">This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment.</span></span> 
 
-<span data-ttu-id="82639-122">[最新バージョンへのセルフサービス アップグレード](../migration-upgrade/self-service-upgrade.md)</span><span class="sxs-lookup"><span data-stu-id="82639-122">[Self-service upgrade to the latest version](../migration-upgrade/self-service-upgrade.md).</span></span>
+<span data-ttu-id="38088-123">[最新バージョンへのセルフサービス アップグレード](../migration-upgrade/self-service-upgrade.md)</span><span class="sxs-lookup"><span data-stu-id="38088-123">[Self-service upgrade to the latest version](../migration-upgrade/self-service-upgrade.md).</span></span>
 
-### <a name="rebuild-and-update"></a><span data-ttu-id="82639-123">再構築と更新</span><span class="sxs-lookup"><span data-stu-id="82639-123">Rebuild and update</span></span>
-<span data-ttu-id="82639-124">*適用可能な開始バージョン: Microsoft Dynamics 365 for Finance and Operations 8.0*</span><span class="sxs-lookup"><span data-stu-id="82639-124">*Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 8.0*</span></span><br/>
-<span data-ttu-id="82639-125">*スコープ: 中程度*</span><span class="sxs-lookup"><span data-stu-id="82639-125">*Scope: Moderate*</span></span><br/>
-<span data-ttu-id="82639-126">このパスは Microsoft X++ 修正プログラムを削除し、マージされた更新プログラム パッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="82639-126">This path involves removing Microsoft X++ hotfixes, and creating a merged update package.</span></span>
+### <a name="rebuild-and-update"></a><span data-ttu-id="38088-124">再構築と更新</span><span class="sxs-lookup"><span data-stu-id="38088-124">Rebuild and update</span></span>
+<span data-ttu-id="38088-125">*適用可能な開始バージョン: Microsoft Dynamics 365 for Finance and Operations 8.0*</span><span class="sxs-lookup"><span data-stu-id="38088-125">*Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 8.0*</span></span><br/>
+<span data-ttu-id="38088-126">*スコープ: 中程度*</span><span class="sxs-lookup"><span data-stu-id="38088-126">*Scope: Moderate*</span></span><br/>
+<span data-ttu-id="38088-127">このパスは Microsoft X++ 修正プログラムを削除し、マージされた更新プログラム パッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="38088-127">This path involves removing Microsoft X++ hotfixes, and creating a merged update package.</span></span>
 
-<span data-ttu-id="82639-127">[バージョン 8.0 から 10.0.X への環境の更新](../migration-upgrade/appupdate-80-81.md)</span><span class="sxs-lookup"><span data-stu-id="82639-127">[Update environments from version 8.0 to 10.0.X](../migration-upgrade/appupdate-80-81.md).</span></span>
+<span data-ttu-id="38088-128">[バージョン 8.0 から 10.0.X への環境の更新](../migration-upgrade/appupdate-80-81.md)</span><span class="sxs-lookup"><span data-stu-id="38088-128">[Update environments from version 8.0 to 10.0.X](../migration-upgrade/appupdate-80-81.md).</span></span>
 
-### <a name="automatic-update"></a><span data-ttu-id="82639-128">自動更新</span><span class="sxs-lookup"><span data-stu-id="82639-128">Automatic update</span></span>
-<span data-ttu-id="82639-129">*適用可能な開始バージョン: Finance and Operations 8.1.0+*</span><span class="sxs-lookup"><span data-stu-id="82639-129">*Applicable starting version: Finance and Operations 8.1.0+*</span></span><br/>
-<span data-ttu-id="82639-130">*スコープ: 簡易*</span><span class="sxs-lookup"><span data-stu-id="82639-130">*Scope: Simple*</span></span><br/>
-<span data-ttu-id="82639-131">このパスはプロジェクトを継続的に更新するように構成します。</span><span class="sxs-lookup"><span data-stu-id="82639-131">This path involves configuring your project for continuous updates.</span></span>
+### <a name="automatic-update"></a><span data-ttu-id="38088-129">自動更新</span><span class="sxs-lookup"><span data-stu-id="38088-129">Automatic update</span></span>
+<span data-ttu-id="38088-130">*適用可能な開始バージョン: Finance and Operations 8.1.0+*</span><span class="sxs-lookup"><span data-stu-id="38088-130">*Applicable starting version: Finance and Operations 8.1.0+*</span></span><br/>
+<span data-ttu-id="38088-131">*スコープ: 簡易*</span><span class="sxs-lookup"><span data-stu-id="38088-131">*Scope: Simple*</span></span><br/>
+<span data-ttu-id="38088-132">このパスはプロジェクトを継続的に更新するように構成します。</span><span class="sxs-lookup"><span data-stu-id="38088-132">This path involves configuring your project for continuous updates.</span></span>
 
-<span data-ttu-id="82639-132">[Lifecycle Services (LCS) によるサービスの更新の構成](../lifecycle-services/configure-service-updates.md)</span><span class="sxs-lookup"><span data-stu-id="82639-132">[Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md).</span></span>
+<span data-ttu-id="38088-133">[Lifecycle Services (LCS) によるサービスの更新の構成](../lifecycle-services/configure-service-updates.md)</span><span class="sxs-lookup"><span data-stu-id="38088-133">[Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md).</span></span>
 
 
 

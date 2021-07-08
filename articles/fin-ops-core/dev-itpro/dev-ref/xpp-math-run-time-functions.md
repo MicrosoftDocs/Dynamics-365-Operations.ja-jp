@@ -11,46 +11,45 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 584d5ec093650097ecde6efda436ec1fa4a2aded
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 7d25eba11ff1129b69ca3d07de9e6027c27deeeb
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923243"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193446"
 ---
-# <a name="x-math-runtime-functions"></a><span data-ttu-id="ec481-103">X++ 数学ランタイム関数</span><span class="sxs-lookup"><span data-stu-id="ec481-103">X++ math runtime functions</span></span>
+# <a name="x-math-runtime-functions"></a><span data-ttu-id="85b2b-103">X++ 数学ランタイム関数</span><span class="sxs-lookup"><span data-stu-id="85b2b-103">X++ math runtime functions</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ec481-104">このトピックでは、数学ランタイム関数について説明します。</span><span class="sxs-lookup"><span data-stu-id="ec481-104">This topic describes the math run-time functions.</span></span>
+<span data-ttu-id="85b2b-104">このトピックでは、数学ランタイム関数について説明します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-104">This topic describes the math run-time functions.</span></span>
 
-<span data-ttu-id="ec481-105">これらの関数は数学的な計算を実行します。</span><span class="sxs-lookup"><span data-stu-id="ec481-105">These functions perform mathematical calculations.</span></span>
+<span data-ttu-id="85b2b-105">これらの関数は数学的な計算を実行します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-105">These functions perform mathematical calculations.</span></span>
 
-<a name="abs"></a><span data-ttu-id="ec481-106">abs</span><span class="sxs-lookup"><span data-stu-id="ec481-106">abs</span></span>
----
+## <a name="abs"></a><span data-ttu-id="85b2b-106">abs</span><span class="sxs-lookup"><span data-stu-id="85b2b-106">abs</span></span>
 
-<span data-ttu-id="ec481-107">実数の絶対値を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-107">Retrieves the absolute value of a real number.</span></span> <span data-ttu-id="ec481-108">例</span><span class="sxs-lookup"><span data-stu-id="ec481-108">Examples:</span></span>
+<span data-ttu-id="85b2b-107">実数の絶対値を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-107">Retrieves the absolute value of a real number.</span></span> <span data-ttu-id="85b2b-108">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-108">Examples:</span></span>
 
--   <span data-ttu-id="ec481-109">**abs(-100.0)** は、値 **100.0** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-109">**abs(-100.0)** returns the value **100.0**.</span></span>
--   <span data-ttu-id="ec481-110">**abs(30.56)** は、値 **30.56** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-110">**abs(30.56)** returns the value **30.56**.</span></span>
+-   <span data-ttu-id="85b2b-109">**abs(-100.0)** は、値 **100.0** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-109">**abs(-100.0)** returns the value **100.0**.</span></span>
+-   <span data-ttu-id="85b2b-110">**abs(30.56)** は、値 **30.56** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-110">**abs(30.56)** returns the value **30.56**.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-111">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-111">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-111">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-111">Syntax</span></span>
 
 ```xpp
 real abs(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-112">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-112">Parameters</span></span>
 
-| <span data-ttu-id="ec481-113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-113">Parameter</span></span> | <span data-ttu-id="ec481-114">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-114">Description</span></span>                              |
+| <span data-ttu-id="85b2b-113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-113">Parameter</span></span> | <span data-ttu-id="85b2b-114">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-114">Description</span></span>                              |
 |-----------|------------------------------------------|
-| <span data-ttu-id="ec481-115">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-115">arg</span></span>       | <span data-ttu-id="ec481-116">絶対値を取得する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-116">The number to get the absolute value of.</span></span> |
+| <span data-ttu-id="85b2b-115">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-115">arg</span></span>       | <span data-ttu-id="85b2b-116">絶対値を取得する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-116">The number to get the absolute value of.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-117">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-117">Return value</span></span>
 
-<span data-ttu-id="ec481-118">*arg* の絶対値。</span><span class="sxs-lookup"><span data-stu-id="ec481-118">The absolute value of *arg*.</span></span>
+<span data-ttu-id="85b2b-118">*arg* の絶対値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-118">The absolute value of *arg*.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-119">例</span><span class="sxs-lookup"><span data-stu-id="ec481-119">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-119">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-119">Example</span></span>
 
 ```xpp
 static void absExample(Args _args)
@@ -68,29 +67,29 @@ static void absExample(Args _args)
 }
 ```
 
-## <a name="acos"></a><span data-ttu-id="ec481-120">acos</span><span class="sxs-lookup"><span data-stu-id="ec481-120">acos</span></span>
-<span data-ttu-id="ec481-121">実数の逆余弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-121">Retrieves the arc cosine of a real number.</span></span>
+## <a name="acos"></a><span data-ttu-id="85b2b-120">acos</span><span class="sxs-lookup"><span data-stu-id="85b2b-120">acos</span></span>
+<span data-ttu-id="85b2b-121">実数の逆余弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-121">Retrieves the arc cosine of a real number.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ec481-122">注記: 引数が -1 から 1 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="ec481-122">Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
+> <span data-ttu-id="85b2b-122">注記: 引数が -1 から 1 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="85b2b-122">Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-123">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-123">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-123">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-123">Syntax</span></span>
 
 ```xpp
 real acos(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-124">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-124">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-124">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-124">Parameters</span></span>
 
-| <span data-ttu-id="ec481-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-125">Parameter</span></span> | <span data-ttu-id="ec481-126">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-126">Description</span></span>                               |
+| <span data-ttu-id="85b2b-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-125">Parameter</span></span> | <span data-ttu-id="85b2b-126">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-126">Description</span></span>                               |
 |-----------|-------------------------------------------|
-| <span data-ttu-id="ec481-127">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-127">arg</span></span>       | <span data-ttu-id="ec481-128">逆余弦を取得するための数。</span><span class="sxs-lookup"><span data-stu-id="ec481-128">The number to retrieve the arc cosine of.</span></span> |
+| <span data-ttu-id="85b2b-127">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-127">arg</span></span>       | <span data-ttu-id="85b2b-128">逆余弦を取得するための数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-128">The number to retrieve the arc cosine of.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-129">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-129">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-129">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-129">Return value</span></span>
 
-<span data-ttu-id="ec481-130">*arg* の逆余弦。</span><span class="sxs-lookup"><span data-stu-id="ec481-130">The arc cosine of *arg*.</span></span>
+<span data-ttu-id="85b2b-130">*arg* の逆余弦。</span><span class="sxs-lookup"><span data-stu-id="85b2b-130">The arc cosine of *arg*.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-131">例</span><span class="sxs-lookup"><span data-stu-id="ec481-131">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-131">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-131">Example</span></span>
 
 ```xpp
 static void acosExample(Args _args)
@@ -105,56 +104,56 @@ static void acosExample(Args _args)
 }
 ```
 
-## <a name="asin"></a><span data-ttu-id="ec481-132">asin</span><span class="sxs-lookup"><span data-stu-id="ec481-132">asin</span></span>
-<span data-ttu-id="ec481-133">実数の逆正弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-133">Retrieves the arc sine of a real number.</span></span>
+## <a name="asin"></a><span data-ttu-id="85b2b-132">asin</span><span class="sxs-lookup"><span data-stu-id="85b2b-132">asin</span></span>
+<span data-ttu-id="85b2b-133">実数の逆正弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-133">Retrieves the arc sine of a real number.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ec481-134">注記: 引数が -1 から 1 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="ec481-134">Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
+> <span data-ttu-id="85b2b-134">注記: 引数が -1 から 1 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="85b2b-134">Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-135">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-135">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-135">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-135">Syntax</span></span>
 
 ```xpp
 real asin(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-136">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-136">Parameters</span></span>
 
-| <span data-ttu-id="ec481-137">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-137">Parameter</span></span> | <span data-ttu-id="ec481-138">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-138">Description</span></span>                               |
+| <span data-ttu-id="85b2b-137">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-137">Parameter</span></span> | <span data-ttu-id="85b2b-138">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-138">Description</span></span>                               |
 |-----------|-------------------------------------------|
-| <span data-ttu-id="ec481-139">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-139">arg</span></span>       | <span data-ttu-id="ec481-140">逆正弦を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-140">The number to calculate the arc sine for.</span></span> |
+| <span data-ttu-id="85b2b-139">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-139">arg</span></span>       | <span data-ttu-id="85b2b-140">逆正弦を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-140">The number to calculate the arc sine for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-141">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-141">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-141">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-141">Return value</span></span>
 
-<span data-ttu-id="ec481-142">指定した数の逆正弦。</span><span class="sxs-lookup"><span data-stu-id="ec481-142">The arc sine of the specified number.</span></span>
+<span data-ttu-id="85b2b-142">指定した数の逆正弦。</span><span class="sxs-lookup"><span data-stu-id="85b2b-142">The arc sine of the specified number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-143">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-143">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-143">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-143">Remarks</span></span>
 
-<span data-ttu-id="ec481-144">**aSin(0.36)** は **0.37** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-144">**aSin(0.36)** returns **0.37**.</span></span>
+<span data-ttu-id="85b2b-144">**aSin(0.36)** は **0.37** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-144">**aSin(0.36)** returns **0.37**.</span></span>
 
-## <a name="atan"></a><span data-ttu-id="ec481-145">atan</span><span class="sxs-lookup"><span data-stu-id="ec481-145">atan</span></span>
-<span data-ttu-id="ec481-146">実数の逆正接を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-146">Retrieves the arc tangent of a real number.</span></span>
+## <a name="atan"></a><span data-ttu-id="85b2b-145">atan</span><span class="sxs-lookup"><span data-stu-id="85b2b-145">atan</span></span>
+<span data-ttu-id="85b2b-146">実数の逆正接を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-146">Retrieves the arc tangent of a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-147">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-147">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-147">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-147">Syntax</span></span>
 
 ```xpp
 real atan(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-148">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-148">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-148">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-148">Parameters</span></span>
 
-| <span data-ttu-id="ec481-149">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-149">Parameter</span></span> | <span data-ttu-id="ec481-150">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-150">Description</span></span>                                  |
+| <span data-ttu-id="85b2b-149">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-149">Parameter</span></span> | <span data-ttu-id="85b2b-150">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-150">Description</span></span>                                  |
 |-----------|----------------------------------------------|
-| <span data-ttu-id="ec481-151">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-151">arg</span></span>       | <span data-ttu-id="ec481-152">逆正接を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-152">The number to calculate the arc tangent for.</span></span> |
+| <span data-ttu-id="85b2b-151">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-151">arg</span></span>       | <span data-ttu-id="85b2b-152">逆正接を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-152">The number to calculate the arc tangent for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-153">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-153">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-153">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-153">Return value</span></span>
 
-<span data-ttu-id="ec481-154">指定した数の逆正接。</span><span class="sxs-lookup"><span data-stu-id="ec481-154">The arc tangent of the specified number.</span></span>
+<span data-ttu-id="85b2b-154">指定した数の逆正接。</span><span class="sxs-lookup"><span data-stu-id="85b2b-154">The arc tangent of the specified number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-155">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-155">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-155">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-155">Remarks</span></span>
 
-<span data-ttu-id="ec481-156">**aTan(0.36)** は **0.35** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-156">**aTan(0.36)** returns **0.35**.</span></span>
+<span data-ttu-id="85b2b-156">**aTan(0.36)** は **0.35** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-156">**aTan(0.36)** returns **0.35**.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-157">例</span><span class="sxs-lookup"><span data-stu-id="ec481-157">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-157">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-157">Example</span></span>
 
 ```xpp
 static void atanExample(Args _args)
@@ -167,28 +166,28 @@ static void atanExample(Args _args)
 }
 ```
 
-## <a name="corrflagget"></a><span data-ttu-id="ec481-158">corrFlagGet</span><span class="sxs-lookup"><span data-stu-id="ec481-158">corrFlagGet</span></span>
-<span data-ttu-id="ec481-159">実数の修正フラグの状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-159">Retrieves the state of the correction flag for a real number.</span></span>
+## <a name="corrflagget"></a><span data-ttu-id="85b2b-158">corrFlagGet</span><span class="sxs-lookup"><span data-stu-id="85b2b-158">corrFlagGet</span></span>
+<span data-ttu-id="85b2b-159">実数の修正フラグの状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-159">Retrieves the state of the correction flag for a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-160">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-160">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-160">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-160">Syntax</span></span>
 
 ```xpp
 int corrFlagGet(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-161">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-161">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-161">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-161">Parameters</span></span>
 
-| <span data-ttu-id="ec481-162">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-162">Parameter</span></span> | <span data-ttu-id="ec481-163">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-163">Description</span></span>                         |
+| <span data-ttu-id="85b2b-162">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-162">Parameter</span></span> | <span data-ttu-id="85b2b-163">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-163">Description</span></span>                         |
 |-----------|-------------------------------------|
-| <span data-ttu-id="ec481-164">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-164">arg</span></span>       | <span data-ttu-id="ec481-165">状態を取得するためのフラグ。</span><span class="sxs-lookup"><span data-stu-id="ec481-165">The flag to retrieve the state for.</span></span> |
+| <span data-ttu-id="85b2b-164">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-164">arg</span></span>       | <span data-ttu-id="85b2b-165">状態を取得するためのフラグ。</span><span class="sxs-lookup"><span data-stu-id="85b2b-165">The flag to retrieve the state for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-166">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-166">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-166">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-166">Return value</span></span>
 
-<span data-ttu-id="ec481-167">フラグが **0** (ゼロ) に設定された場合、フラグがクリアされた場合はゼロ以外の値。</span><span class="sxs-lookup"><span data-stu-id="ec481-167">A non-zero value if the flag is set; **0** (zero) if the flag is cleared.</span></span>
+<span data-ttu-id="85b2b-167">フラグが **0** (ゼロ) に設定された場合、フラグがクリアされた場合はゼロ以外の値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-167">A non-zero value if the flag is set; **0** (zero) if the flag is cleared.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-168">例</span><span class="sxs-lookup"><span data-stu-id="ec481-168">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-168">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-168">Example</span></span>
 
-<span data-ttu-id="ec481-169">次の例は、**1** を表示します。</span><span class="sxs-lookup"><span data-stu-id="ec481-169">The following example displays **1**.</span></span>
+<span data-ttu-id="85b2b-169">次の例は、**1** を表示します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-169">The following example displays **1**.</span></span>
 
 ```xpp
 static void corrFlagGetExample(Args _args)
@@ -199,54 +198,54 @@ static void corrFlagGetExample(Args _args)
 }
 ```
 
-## <a name="corrflagset"></a><span data-ttu-id="ec481-170">corrFlagSet</span><span class="sxs-lookup"><span data-stu-id="ec481-170">corrFlagSet</span></span>
-<span data-ttu-id="ec481-171">実数の補正フラグをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="ec481-171">Controls the correction flag for a real number.</span></span>
+## <a name="corrflagset"></a><span data-ttu-id="85b2b-170">corrFlagSet</span><span class="sxs-lookup"><span data-stu-id="85b2b-170">corrFlagSet</span></span>
+<span data-ttu-id="85b2b-171">実数の補正フラグをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="85b2b-171">Controls the correction flag for a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-172">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-172">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-172">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-172">Syntax</span></span>
 
 ```xpp
 real corrFlagSet(real real, int arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-173">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-173">Parameters</span></span>
 
-| <span data-ttu-id="ec481-174">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-174">Parameter</span></span> | <span data-ttu-id="ec481-175">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-175">Description</span></span>                                                       |
+| <span data-ttu-id="85b2b-174">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-174">Parameter</span></span> | <span data-ttu-id="85b2b-175">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-175">Description</span></span>                                                       |
 |-----------|-------------------------------------------------------------------|
-| <span data-ttu-id="ec481-176">real</span><span class="sxs-lookup"><span data-stu-id="ec481-176">real</span></span>      | <span data-ttu-id="ec481-177">補正フラグをオンまたはオフにする番号。</span><span class="sxs-lookup"><span data-stu-id="ec481-177">The number in which to turn the correction flag on or off.</span></span>        |
-| <span data-ttu-id="ec481-178">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-178">arg</span></span>       | <span data-ttu-id="ec481-179">フラグを無効にするには **0**、フラグを有効にする場合は、0 以外の値。</span><span class="sxs-lookup"><span data-stu-id="ec481-179">**0** to turn the flag off; a non-zero value to turn the flag on.</span></span> |
+| <span data-ttu-id="85b2b-176">real</span><span class="sxs-lookup"><span data-stu-id="85b2b-176">real</span></span>      | <span data-ttu-id="85b2b-177">補正フラグをオンまたはオフにする番号。</span><span class="sxs-lookup"><span data-stu-id="85b2b-177">The number in which to turn the correction flag on or off.</span></span>        |
+| <span data-ttu-id="85b2b-178">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-178">arg</span></span>       | <span data-ttu-id="85b2b-179">フラグを無効にするには **0**、フラグを有効にする場合は、0 以外の値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-179">**0** to turn the flag off; a non-zero value to turn the flag on.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-180">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-180">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-180">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-180">Return value</span></span>
 
-<span data-ttu-id="ec481-181">**0** フラグが現在オフの場合。フラグがオンの場合はゼロ以外の値。</span><span class="sxs-lookup"><span data-stu-id="ec481-181">**0** if the flag is now off; a non-zero value if the flag is now on.</span></span>
+<span data-ttu-id="85b2b-181">**0** フラグが現在オフの場合。フラグがオンの場合はゼロ以外の値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-181">**0** if the flag is now off; a non-zero value if the flag is now on.</span></span>
 
-<a name="cos"></a><span data-ttu-id="ec481-182">cos</span><span class="sxs-lookup"><span data-stu-id="ec481-182">cos</span></span>
----
+## <a name="cos"></a><span data-ttu-id="85b2b-182">cos</span><span class="sxs-lookup"><span data-stu-id="85b2b-182">cos</span></span>
 
-<span data-ttu-id="ec481-183">実数の余弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-183">Retrieves the cosine of a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-184">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-184">Syntax</span></span>
+<span data-ttu-id="85b2b-183">実数の余弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-183">Retrieves the cosine of a real number.</span></span>
+
+### <a name="syntax"></a><span data-ttu-id="85b2b-184">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-184">Syntax</span></span>
 
 ```xpp
 real cos(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-185">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-185">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-185">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-185">Parameters</span></span>
 
-| <span data-ttu-id="ec481-186">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-186">Parameter</span></span> | <span data-ttu-id="ec481-187">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-187">Description</span></span>                        |
+| <span data-ttu-id="85b2b-186">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-186">Parameter</span></span> | <span data-ttu-id="85b2b-187">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-187">Description</span></span>                        |
 |-----------|------------------------------------|
-| <span data-ttu-id="ec481-188">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-188">arg</span></span>       | <span data-ttu-id="ec481-189">余弦を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-189">The number to find the cosine for.</span></span> |
+| <span data-ttu-id="85b2b-188">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-188">arg</span></span>       | <span data-ttu-id="85b2b-189">余弦を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-189">The number to find the cosine for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-190">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-190">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-190">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-190">Return value</span></span>
 
-<span data-ttu-id="ec481-191">指定した数のコサイン。</span><span class="sxs-lookup"><span data-stu-id="ec481-191">The cosine of the specified number.</span></span>
+<span data-ttu-id="85b2b-191">指定した数のコサイン。</span><span class="sxs-lookup"><span data-stu-id="85b2b-191">The cosine of the specified number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-192">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-192">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-192">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-192">Remarks</span></span>
 
-<span data-ttu-id="ec481-193">パラメーター *arg* の値はラジアンにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ec481-193">The value of the *arg* parameter must be in radians.</span></span>
+<span data-ttu-id="85b2b-193">パラメーター *arg* の値はラジアンにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="85b2b-193">The value of the *arg* parameter must be in radians.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-194">例</span><span class="sxs-lookup"><span data-stu-id="ec481-194">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-194">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-194">Example</span></span>
 
-<span data-ttu-id="ec481-195">次のコード例は、**0.76** を表示します。</span><span class="sxs-lookup"><span data-stu-id="ec481-195">The following code example displays **0.76**.</span></span>
+<span data-ttu-id="85b2b-195">次のコード例は、**0.76** を表示します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-195">The following code example displays **0.76**.</span></span>
 
 ```xpp
 static void cosExample(Args _arg)
@@ -259,33 +258,33 @@ static void cosExample(Args _arg)
 }
 ```
 
-## <a name="cosh"></a><span data-ttu-id="ec481-196">cosh</span><span class="sxs-lookup"><span data-stu-id="ec481-196">cosh</span></span>
-<span data-ttu-id="ec481-197">実数の双曲線余弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-197">Retrieves the hyperbolic cosine of a real number.</span></span>
+## <a name="cosh"></a><span data-ttu-id="85b2b-196">cosh</span><span class="sxs-lookup"><span data-stu-id="85b2b-196">cosh</span></span>
+<span data-ttu-id="85b2b-197">実数の双曲線余弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-197">Retrieves the hyperbolic cosine of a real number.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ec481-198">注記: 引数が -250 から 250 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="ec481-198">Argument values that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
+> <span data-ttu-id="85b2b-198">注記: 引数が -250 から 250 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="85b2b-198">Argument values that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-199">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-199">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-199">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-199">Syntax</span></span>
 
 ```xpp
 real cosh(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-200">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-200">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-200">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-200">Parameters</span></span>
 
-| <span data-ttu-id="ec481-201">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-201">Parameter</span></span> | <span data-ttu-id="ec481-202">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-202">Description</span></span>                                        |
+| <span data-ttu-id="85b2b-201">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-201">Parameter</span></span> | <span data-ttu-id="85b2b-202">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-202">Description</span></span>                                        |
 |-----------|----------------------------------------------------|
-| <span data-ttu-id="ec481-203">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-203">arg</span></span>       | <span data-ttu-id="ec481-204">余弦を計算する双曲線余弦。</span><span class="sxs-lookup"><span data-stu-id="ec481-204">The hyperbolic number to calculate the cosine for.</span></span> |
+| <span data-ttu-id="85b2b-203">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-203">arg</span></span>       | <span data-ttu-id="85b2b-204">余弦を計算する双曲線余弦。</span><span class="sxs-lookup"><span data-stu-id="85b2b-204">The hyperbolic number to calculate the cosine for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-205">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-205">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-205">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-205">Return value</span></span>
 
-<span data-ttu-id="ec481-206">指定した数の双曲線余弦。</span><span class="sxs-lookup"><span data-stu-id="ec481-206">The hyperbolic cosine of the specified number.</span></span>
+<span data-ttu-id="85b2b-206">指定した数の双曲線余弦。</span><span class="sxs-lookup"><span data-stu-id="85b2b-206">The hyperbolic cosine of the specified number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-207">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-207">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-207">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-207">Remarks</span></span>
 
-<span data-ttu-id="ec481-208">パラメーター *arg* の値はラジアンにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ec481-208">The value of the *arg* parameter must be in radians.</span></span>
+<span data-ttu-id="85b2b-208">パラメーター *arg* の値はラジアンにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="85b2b-208">The value of the *arg* parameter must be in radians.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-209">例</span><span class="sxs-lookup"><span data-stu-id="ec481-209">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-209">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-209">Example</span></span>
 
 ```xpp
 static void coshExample(Args _arg)
@@ -298,62 +297,61 @@ static void coshExample(Args _arg)
 }
 ```
 
-## <a name="decround"></a><span data-ttu-id="ec481-210">decRound</span><span class="sxs-lookup"><span data-stu-id="ec481-210">decRound</span></span>
-<span data-ttu-id="ec481-211">指定された小数点以下の桁数となるように数値の端数を丸めます。</span><span class="sxs-lookup"><span data-stu-id="ec481-211">Rounds a number to the specified number of decimal places.</span></span>
+## <a name="decround"></a><span data-ttu-id="85b2b-210">decRound</span><span class="sxs-lookup"><span data-stu-id="85b2b-210">decRound</span></span>
+<span data-ttu-id="85b2b-211">指定された小数点以下の桁数となるように数値の端数を丸めます。</span><span class="sxs-lookup"><span data-stu-id="85b2b-211">Rounds a number to the specified number of decimal places.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-212">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-212">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-212">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-212">Syntax</span></span>
 
 ```xpp
 real decRound(real figure, int decimals)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-213">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-213">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-213">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-213">Parameters</span></span>
 
-| <span data-ttu-id="ec481-214">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-214">Parameter</span></span> | <span data-ttu-id="ec481-215">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-215">Description</span></span>                               |
+| <span data-ttu-id="85b2b-214">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-214">Parameter</span></span> | <span data-ttu-id="85b2b-215">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-215">Description</span></span>                               |
 |-----------|-------------------------------------------|
-| <span data-ttu-id="ec481-216">figure</span><span class="sxs-lookup"><span data-stu-id="ec481-216">figure</span></span>    | <span data-ttu-id="ec481-217">切り上げ後の数。</span><span class="sxs-lookup"><span data-stu-id="ec481-217">The number to round.</span></span>                      |
-| <span data-ttu-id="ec481-218">decimals</span><span class="sxs-lookup"><span data-stu-id="ec481-218">decimals</span></span>  | <span data-ttu-id="ec481-219">丸められる小数点以下の桁数。</span><span class="sxs-lookup"><span data-stu-id="ec481-219">The number of decimal places to round to.</span></span> |
+| <span data-ttu-id="85b2b-216">figure</span><span class="sxs-lookup"><span data-stu-id="85b2b-216">figure</span></span>    | <span data-ttu-id="85b2b-217">切り上げ後の数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-217">The number to round.</span></span>                      |
+| <span data-ttu-id="85b2b-218">decimals</span><span class="sxs-lookup"><span data-stu-id="85b2b-218">decimals</span></span>  | <span data-ttu-id="85b2b-219">丸められる小数点以下の桁数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-219">The number of decimal places to round to.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-220">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-220">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-220">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-220">Return value</span></span>
 
-<span data-ttu-id="ec481-221">指定された数値の小数点以下の桁数を丸めた値。</span><span class="sxs-lookup"><span data-stu-id="ec481-221">The value of the specified number, rounded to the specified number of decimal places.</span></span>
+<span data-ttu-id="85b2b-221">指定された数値の小数点以下の桁数を丸めた値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-221">The value of the specified number, rounded to the specified number of decimal places.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-222">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-222">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-222">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-222">Remarks</span></span>
 
-<span data-ttu-id="ec481-223">*decimals* パラメーターの値は、正の値、0 (ゼロ)、負の値のいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="ec481-223">The value of the *decimals* parameter can be positive, 0 (zero), or negative.</span></span>
+<span data-ttu-id="85b2b-223">*decimals* パラメーターの値は、正の値、0 (ゼロ)、負の値のいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="85b2b-223">The value of the *decimals* parameter can be positive, 0 (zero), or negative.</span></span>
 
--   <span data-ttu-id="ec481-224">**decRound(1234.6574,2)** は、値 **1234.66** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-224">**decRound(1234.6574,2)** returns the value **1234.66**.</span></span>
--   <span data-ttu-id="ec481-225">**decRound(1234.6574,0)** は、値 **1235** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-225">**decRound(1234.6574,0)** returns the value **1235**.</span></span>
--   <span data-ttu-id="ec481-226">**decRound(1234.6574,-2)** は、値 **1200** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-226">**decRound(1234.6574,-2)** returns the value **1200**.</span></span>
--   <span data-ttu-id="ec481-227">**decRound(12345.6789,1)** は、値 **12345.70** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-227">**decRound(12345.6789,1)** returns the value **12345.70**.</span></span>
--   <span data-ttu-id="ec481-228">**decRound(12345.6789,-1)** は、値 **12350.00** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-228">**decRound(12345.6789,-1)** returns the value **12350.00**.</span></span>
+-   <span data-ttu-id="85b2b-224">**decRound(1234.6574,2)** は、値 **1234.66** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-224">**decRound(1234.6574,2)** returns the value **1234.66**.</span></span>
+-   <span data-ttu-id="85b2b-225">**decRound(1234.6574,0)** は、値 **1235** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-225">**decRound(1234.6574,0)** returns the value **1235**.</span></span>
+-   <span data-ttu-id="85b2b-226">**decRound(1234.6574,-2)** は、値 **1200** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-226">**decRound(1234.6574,-2)** returns the value **1200**.</span></span>
+-   <span data-ttu-id="85b2b-227">**decRound(12345.6789,1)** は、値 **12345.70** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-227">**decRound(12345.6789,1)** returns the value **12345.70**.</span></span>
+-   <span data-ttu-id="85b2b-228">**decRound(12345.6789,-1)** は、値 **12350.00** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-228">**decRound(12345.6789,-1)** returns the value **12350.00**.</span></span>
 
-<a name="exp"></a><span data-ttu-id="ec481-229">exp</span><span class="sxs-lookup"><span data-stu-id="ec481-229">exp</span></span>
----
+## <a name="exp"></a><span data-ttu-id="85b2b-229">exp</span><span class="sxs-lookup"><span data-stu-id="85b2b-229">exp</span></span>
 
-<span data-ttu-id="ec481-230">指定した実数の値の自然逆対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-230">Retrieves the natural antilogarithm of the specified real number.</span></span>
+<span data-ttu-id="85b2b-230">指定した実数の値の自然逆対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-230">Retrieves the natural antilogarithm of the specified real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-231">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-231">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-231">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-231">Syntax</span></span>
 
 ```xpp
 real exp(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-232">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-232">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-232">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-232">Parameters</span></span>
 
-| <span data-ttu-id="ec481-233">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-233">Parameter</span></span> | <span data-ttu-id="ec481-234">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-234">Description</span></span>                                                 |
+| <span data-ttu-id="85b2b-233">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-233">Parameter</span></span> | <span data-ttu-id="85b2b-234">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-234">Description</span></span>                                                 |
 |-----------|-------------------------------------------------------------|
-| <span data-ttu-id="ec481-235">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-235">arg</span></span>       | <span data-ttu-id="ec481-236">ナチュラル逆対数を計算する実数。</span><span class="sxs-lookup"><span data-stu-id="ec481-236">The real number to calculate the natural antilogarithm for.</span></span> |
+| <span data-ttu-id="85b2b-235">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-235">arg</span></span>       | <span data-ttu-id="85b2b-236">ナチュラル逆対数を計算する実数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-236">The real number to calculate the natural antilogarithm for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-237">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-237">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-237">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-237">Return value</span></span>
 
-<span data-ttu-id="ec481-238">指定した実数の値の自然逆対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-238">The natural antilogarithm of the specified real number.</span></span>
+<span data-ttu-id="85b2b-238">指定した実数の値の自然逆対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-238">The natural antilogarithm of the specified real number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-239">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-239">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-239">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-239">Remarks</span></span>
 
-<span data-ttu-id="ec481-240">計算されたナチュラル逆対数は、*引数* パラメーターによって示されるべき乗した自然対数 e です。</span><span class="sxs-lookup"><span data-stu-id="ec481-240">The calculated natural antilogarithm is the natural logarithm e raised to the power that is indicated by the *arg* parameter.</span></span>
+<span data-ttu-id="85b2b-240">計算されたナチュラル逆対数は、*引数* パラメーターによって示されるべき乗した自然対数 e です。</span><span class="sxs-lookup"><span data-stu-id="85b2b-240">The calculated natural antilogarithm is the natural logarithm e raised to the power that is indicated by the *arg* parameter.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-241">例</span><span class="sxs-lookup"><span data-stu-id="ec481-241">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-241">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-241">Example</span></span>
 
 ```xpp
 static void expExample(Args _arg)
@@ -369,26 +367,26 @@ static void expExample(Args _arg)
 }
 ```
 
-## <a name="exp10"></a><span data-ttu-id="ec481-242">exp10</span><span class="sxs-lookup"><span data-stu-id="ec481-242">exp10</span></span>
-<span data-ttu-id="ec481-243">指定した実数の値の常用逆対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-243">Retrieves the base-10 antilogarithm of the specified real number.</span></span>
+## <a name="exp10"></a><span data-ttu-id="85b2b-242">exp10</span><span class="sxs-lookup"><span data-stu-id="85b2b-242">exp10</span></span>
+<span data-ttu-id="85b2b-243">指定した実数の値の常用逆対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-243">Retrieves the base-10 antilogarithm of the specified real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-244">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-244">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-244">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-244">Syntax</span></span>
 
 ```xpp
 real exp10(real decimal)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-245">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-245">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-245">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-245">Parameters</span></span>
 
-| <span data-ttu-id="ec481-246">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-246">Parameter</span></span> | <span data-ttu-id="ec481-247">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-247">Description</span></span>                                                 |
+| <span data-ttu-id="85b2b-246">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-246">Parameter</span></span> | <span data-ttu-id="85b2b-247">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-247">Description</span></span>                                                 |
 |-----------|-------------------------------------------------------------|
-| <span data-ttu-id="ec481-248">decimal</span><span class="sxs-lookup"><span data-stu-id="ec481-248">decimal</span></span>   | <span data-ttu-id="ec481-249">10 進数の逆数を計算する実数。</span><span class="sxs-lookup"><span data-stu-id="ec481-249">The real number to calculate the base-10 antilogarithm for.</span></span> |
+| <span data-ttu-id="85b2b-248">decimal</span><span class="sxs-lookup"><span data-stu-id="85b2b-248">decimal</span></span>   | <span data-ttu-id="85b2b-249">10 進数の逆数を計算する実数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-249">The real number to calculate the base-10 antilogarithm for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-250">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-250">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-250">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-250">Return value</span></span>
 
-<span data-ttu-id="ec481-251">*decimal* パラメーターの値の 10 から始まる逆対数。</span><span class="sxs-lookup"><span data-stu-id="ec481-251">The 10-based antilogarithm of the value of the *decimal* parameter.</span></span>
+<span data-ttu-id="85b2b-251">*decimal* パラメーターの値の 10 から始まる逆対数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-251">The 10-based antilogarithm of the value of the *decimal* parameter.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-252">例</span><span class="sxs-lookup"><span data-stu-id="ec481-252">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-252">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-252">Example</span></span>
 
 ```xpp
 static void exp10Example(Args _arg)
@@ -404,125 +402,123 @@ static void exp10Example(Args _arg)
 }
 ```
 
-## <a name="frac"></a><span data-ttu-id="ec481-253">frac</span><span class="sxs-lookup"><span data-stu-id="ec481-253">frac</span></span>
-<span data-ttu-id="ec481-254">実数の小数部を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-254">Retrieves the decimal part of a real number.</span></span>
+## <a name="frac"></a><span data-ttu-id="85b2b-253">frac</span><span class="sxs-lookup"><span data-stu-id="85b2b-253">frac</span></span>
+<span data-ttu-id="85b2b-254">実数の小数部を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-254">Retrieves the decimal part of a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-255">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-255">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-255">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-255">Syntax</span></span>
 
 ```xpp
 real frac(real decimal)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-256">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-256">Parameters</span></span>
 
-| <span data-ttu-id="ec481-257">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-257">Parameter</span></span> | <span data-ttu-id="ec481-258">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-258">Description</span></span>                                       |
+| <span data-ttu-id="85b2b-257">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-257">Parameter</span></span> | <span data-ttu-id="85b2b-258">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-258">Description</span></span>                                       |
 |-----------|---------------------------------------------------|
-| <span data-ttu-id="ec481-259">decimal</span><span class="sxs-lookup"><span data-stu-id="ec481-259">decimal</span></span>   | <span data-ttu-id="ec481-260">小数部を取得する実数。</span><span class="sxs-lookup"><span data-stu-id="ec481-260">The real number to retrieve the decimal part for.</span></span> |
+| <span data-ttu-id="85b2b-259">decimal</span><span class="sxs-lookup"><span data-stu-id="85b2b-259">decimal</span></span>   | <span data-ttu-id="85b2b-260">小数部を取得する実数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-260">The real number to retrieve the decimal part for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-261">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-261">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-261">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-261">Return value</span></span>
 
-<span data-ttu-id="ec481-262">指定した数の小数部分。</span><span class="sxs-lookup"><span data-stu-id="ec481-262">The decimal part of the specified number.</span></span>
+<span data-ttu-id="85b2b-262">指定した数の小数部分。</span><span class="sxs-lookup"><span data-stu-id="85b2b-262">The decimal part of the specified number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-263">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-263">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-263">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-263">Remarks</span></span>
 
-<span data-ttu-id="ec481-264">**frac(12.345)** は、値 **0.345** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-264">**frac(12.345)** returns the value **0.345**.</span></span>
+<span data-ttu-id="85b2b-264">**frac(12.345)** は、値 **0.345** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-264">**frac(12.345)** returns the value **0.345**.</span></span>
 
-## <a name="log10"></a><span data-ttu-id="ec481-265">log10</span><span class="sxs-lookup"><span data-stu-id="ec481-265">log10</span></span>
-<span data-ttu-id="ec481-266">実数の 10 桁の対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-266">Retrieves the 10-digit logarithm of a real number.</span></span>
+## <a name="log10"></a><span data-ttu-id="85b2b-265">log10</span><span class="sxs-lookup"><span data-stu-id="85b2b-265">log10</span></span>
+<span data-ttu-id="85b2b-266">実数の 10 桁の対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-266">Retrieves the 10-digit logarithm of a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-267">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-267">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-267">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-267">Syntax</span></span>
 
 ```xpp
 real log10(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-268">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-268">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-268">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-268">Parameters</span></span>
 
-| <span data-ttu-id="ec481-269">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-269">Parameter</span></span> | <span data-ttu-id="ec481-270">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-270">Description</span></span>                                |
+| <span data-ttu-id="85b2b-269">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-269">Parameter</span></span> | <span data-ttu-id="85b2b-270">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-270">Description</span></span>                                |
 |-----------|--------------------------------------------|
-| <span data-ttu-id="ec481-271">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-271">arg</span></span>       | <span data-ttu-id="ec481-272">対数を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-272">The number to calculate the logarithm for.</span></span> |
+| <span data-ttu-id="85b2b-271">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-271">arg</span></span>       | <span data-ttu-id="85b2b-272">対数を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-272">The number to calculate the logarithm for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-273">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-273">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-273">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-273">Return value</span></span>
 
-<span data-ttu-id="ec481-274">指定した数の常用対数。</span><span class="sxs-lookup"><span data-stu-id="ec481-274">The base-10 logarithm of the specified number.</span></span>
+<span data-ttu-id="85b2b-274">指定した数の常用対数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-274">The base-10 logarithm of the specified number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-275">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-275">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-275">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-275">Remarks</span></span>
 
-<span data-ttu-id="ec481-276">**log10(200)** は、値 **2.30** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-276">**log10(200)** returns the value **2.30**.</span></span>
+<span data-ttu-id="85b2b-276">**log10(200)** は、値 **2.30** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-276">**log10(200)** returns the value **2.30**.</span></span>
 
-## <a name="logn"></a><span data-ttu-id="ec481-277">logN</span><span class="sxs-lookup"><span data-stu-id="ec481-277">logN</span></span>
-<span data-ttu-id="ec481-278">指定した実数の値の自然対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-278">Retrieves the natural logarithm of the specified real number.</span></span>
+## <a name="logn"></a><span data-ttu-id="85b2b-277">logN</span><span class="sxs-lookup"><span data-stu-id="85b2b-277">logN</span></span>
+<span data-ttu-id="85b2b-278">指定した実数の値の自然対数を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-278">Retrieves the natural logarithm of the specified real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-279">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-279">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-279">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-279">Syntax</span></span>
 
 ```xpp
 real logN(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-280">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-280">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-280">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-280">Parameters</span></span>
 
-| <span data-ttu-id="ec481-281">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-281">Parameter</span></span> | <span data-ttu-id="ec481-282">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-282">Description</span></span>                                        |
+| <span data-ttu-id="85b2b-281">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-281">Parameter</span></span> | <span data-ttu-id="85b2b-282">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-282">Description</span></span>                                        |
 |-----------|----------------------------------------------------|
-| <span data-ttu-id="ec481-283">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-283">arg</span></span>       | <span data-ttu-id="ec481-284">自然対数を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-284">The number to calculate the natural logarithm for.</span></span> |
+| <span data-ttu-id="85b2b-283">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-283">arg</span></span>       | <span data-ttu-id="85b2b-284">自然対数を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-284">The number to calculate the natural logarithm for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-285">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-285">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-285">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-285">Return value</span></span>
 
-<span data-ttu-id="ec481-286">指定した数の自然対数。</span><span class="sxs-lookup"><span data-stu-id="ec481-286">The natural logarithm of the specified number.</span></span>
+<span data-ttu-id="85b2b-286">指定した数の自然対数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-286">The natural logarithm of the specified number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-287">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-287">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-287">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-287">Remarks</span></span>
 
-<span data-ttu-id="ec481-288">**logN(45)** は、値 **3.81** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-288">**logN(45)** returns the value **3.81**.</span></span>
+<span data-ttu-id="85b2b-288">**logN(45)** は、値 **3.81** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-288">**logN(45)** returns the value **3.81**.</span></span>
 
-<a name="max"></a><span data-ttu-id="ec481-289">最大</span><span class="sxs-lookup"><span data-stu-id="ec481-289">max</span></span>
----
+## <a name="max"></a><span data-ttu-id="85b2b-289">最大</span><span class="sxs-lookup"><span data-stu-id="85b2b-289">max</span></span>
 
-<span data-ttu-id="ec481-290">2 つの指定した値の大きい方を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-290">Retrieves the larger of two specified values.</span></span>
+<span data-ttu-id="85b2b-290">2 つの指定した値の大きい方を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-290">Retrieves the larger of two specified values.</span></span>
 
 ```xpp
 anytype max(anytype object1, anytype object2)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-291">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-291">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-291">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-291">Parameters</span></span>
 
-| <span data-ttu-id="ec481-292">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-292">Parameter</span></span> | <span data-ttu-id="ec481-293">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-293">Description</span></span>       |
+| <span data-ttu-id="85b2b-292">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-292">Parameter</span></span> | <span data-ttu-id="85b2b-293">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-293">Description</span></span>       |
 |-----------|-------------------|
-| <span data-ttu-id="ec481-294">object1</span><span class="sxs-lookup"><span data-stu-id="ec481-294">object1</span></span>   | <span data-ttu-id="ec481-295">最初の値。</span><span class="sxs-lookup"><span data-stu-id="ec481-295">The first value.</span></span>  |
-| <span data-ttu-id="ec481-296">object2</span><span class="sxs-lookup"><span data-stu-id="ec481-296">object2</span></span>   | <span data-ttu-id="ec481-297">2 番目の値。</span><span class="sxs-lookup"><span data-stu-id="ec481-297">The second value.</span></span> |
+| <span data-ttu-id="85b2b-294">object1</span><span class="sxs-lookup"><span data-stu-id="85b2b-294">object1</span></span>   | <span data-ttu-id="85b2b-295">最初の値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-295">The first value.</span></span>  |
+| <span data-ttu-id="85b2b-296">object2</span><span class="sxs-lookup"><span data-stu-id="85b2b-296">object2</span></span>   | <span data-ttu-id="85b2b-297">2 番目の値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-297">The second value.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-298">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-298">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-298">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-298">Return value</span></span>
 
-<span data-ttu-id="ec481-299">*object1* および *object2* パラメーターで指定される 2 つの値のうちの大きい方。</span><span class="sxs-lookup"><span data-stu-id="ec481-299">The larger of the two values that are specified by the *object1* and *object2* parameters.</span></span>
+<span data-ttu-id="85b2b-299">*object1* および *object2* パラメーターで指定される 2 つの値のうちの大きい方。</span><span class="sxs-lookup"><span data-stu-id="85b2b-299">The larger of the two values that are specified by the *object1* and *object2* parameters.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-300">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-300">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-300">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-300">Remarks</span></span>
 
--   <span data-ttu-id="ec481-301">**最大 (12.0,12.1)** は、値 **12.1** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-301">**max(12.0,12.1)** returns the value **12.1**.</span></span>
--   <span data-ttu-id="ec481-302">**最大 (2,33)** は、値 **33** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-302">**max(2,33)** returns the value **33**.</span></span>
+-   <span data-ttu-id="85b2b-301">**最大 (12.0,12.1)** は、値 **12.1** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-301">**max(12.0,12.1)** returns the value **12.1**.</span></span>
+-   <span data-ttu-id="85b2b-302">**最大 (2,33)** は、値 **33** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-302">**max(2,33)** returns the value **33**.</span></span>
 
-<a name="min"></a><span data-ttu-id="ec481-303">最小</span><span class="sxs-lookup"><span data-stu-id="ec481-303">min</span></span>
----
+## <a name="min"></a><span data-ttu-id="85b2b-303">最小</span><span class="sxs-lookup"><span data-stu-id="85b2b-303">min</span></span>
 
-<span data-ttu-id="ec481-304">2 つの指定した値の小さい方を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-304">Retrieves the smaller of two specified values.</span></span>
+<span data-ttu-id="85b2b-304">2 つの指定した値の小さい方を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-304">Retrieves the smaller of two specified values.</span></span>
 
 ```xpp
 anytype min(anytype object1, anytype object2)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-305">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-305">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-305">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-305">Parameters</span></span>
 
-| <span data-ttu-id="ec481-306">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-306">Parameter</span></span> | <span data-ttu-id="ec481-307">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-307">Description</span></span>       |
+| <span data-ttu-id="85b2b-306">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-306">Parameter</span></span> | <span data-ttu-id="85b2b-307">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-307">Description</span></span>       |
 |-----------|-------------------|
-| <span data-ttu-id="ec481-308">object1</span><span class="sxs-lookup"><span data-stu-id="ec481-308">object1</span></span>   | <span data-ttu-id="ec481-309">最初の値。</span><span class="sxs-lookup"><span data-stu-id="ec481-309">The first value.</span></span>  |
-| <span data-ttu-id="ec481-310">object2</span><span class="sxs-lookup"><span data-stu-id="ec481-310">object2</span></span>   | <span data-ttu-id="ec481-311">2 番目の値。</span><span class="sxs-lookup"><span data-stu-id="ec481-311">The second value.</span></span> |
+| <span data-ttu-id="85b2b-308">object1</span><span class="sxs-lookup"><span data-stu-id="85b2b-308">object1</span></span>   | <span data-ttu-id="85b2b-309">最初の値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-309">The first value.</span></span>  |
+| <span data-ttu-id="85b2b-310">object2</span><span class="sxs-lookup"><span data-stu-id="85b2b-310">object2</span></span>   | <span data-ttu-id="85b2b-311">2 番目の値。</span><span class="sxs-lookup"><span data-stu-id="85b2b-311">The second value.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-312">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-312">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-312">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-312">Return value</span></span>
 
-<span data-ttu-id="ec481-313">*object1* パラメーターおよび *object2* パラメーターで指定される 2 つの値のうちの小さい方。</span><span class="sxs-lookup"><span data-stu-id="ec481-313">The smaller of the two values that are specified by the *object1* and *object2* parameters.</span></span>
+<span data-ttu-id="85b2b-313">*object1* パラメーターおよび *object2* パラメーターで指定される 2 つの値のうちの小さい方。</span><span class="sxs-lookup"><span data-stu-id="85b2b-313">The smaller of the two values that are specified by the *object1* and *object2* parameters.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-314">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-314">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-314">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-314">Remarks</span></span>
 
-<span data-ttu-id="ec481-315">**最小 (2,33**) は、値 **2** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-315">**min(2,33**) returns the value **2**.</span></span>
+<span data-ttu-id="85b2b-315">**最小 (2,33**) は、値 **2** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-315">**min(2,33**) returns the value **2**.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-316">例</span><span class="sxs-lookup"><span data-stu-id="ec481-316">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-316">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-316">Example</span></span>
 
 ```xpp
 static void minExample(Args _arg)
@@ -536,88 +532,87 @@ static void minExample(Args _arg)
 }
 ```
 
-## <a name="power"></a><span data-ttu-id="ec481-317">power</span><span class="sxs-lookup"><span data-stu-id="ec481-317">power</span></span>
-<span data-ttu-id="ec481-318">実数を別の実数でべき乗します。</span><span class="sxs-lookup"><span data-stu-id="ec481-318">Raises a real number to the power of another real number.</span></span>
+## <a name="power"></a><span data-ttu-id="85b2b-317">power</span><span class="sxs-lookup"><span data-stu-id="85b2b-317">power</span></span>
+<span data-ttu-id="85b2b-318">実数を別の実数でべき乗します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-318">Raises a real number to the power of another real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-319">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-319">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-319">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-319">Syntax</span></span>
 
 ```xpp
 real power(real arg, real exponent)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-320">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-320">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-320">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-320">Parameters</span></span>
 
-| <span data-ttu-id="ec481-321">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-321">Parameter</span></span> | <span data-ttu-id="ec481-322">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-322">Description</span></span>                                                                 |
+| <span data-ttu-id="85b2b-321">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-321">Parameter</span></span> | <span data-ttu-id="85b2b-322">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-322">Description</span></span>                                                                 |
 |-----------|-----------------------------------------------------------------------------|
-| <span data-ttu-id="ec481-323">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-323">arg</span></span>       | <span data-ttu-id="ec481-324">力を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-324">The number to calculate the power of.</span></span>                                       |
-| <span data-ttu-id="ec481-325">exponent</span><span class="sxs-lookup"><span data-stu-id="ec481-325">exponent</span></span>  | <span data-ttu-id="ec481-326">*arg* パラメーターで指定された数値を増やすための数。</span><span class="sxs-lookup"><span data-stu-id="ec481-326">The number to raise the number that is specified by the *arg* parameter to.</span></span> |
+| <span data-ttu-id="85b2b-323">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-323">arg</span></span>       | <span data-ttu-id="85b2b-324">力を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-324">The number to calculate the power of.</span></span>                                       |
+| <span data-ttu-id="85b2b-325">exponent</span><span class="sxs-lookup"><span data-stu-id="85b2b-325">exponent</span></span>  | <span data-ttu-id="85b2b-326">*arg* パラメーターで指定された数値を増やすための数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-326">The number to raise the number that is specified by the *arg* parameter to.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-327">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-327">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-327">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-327">Return value</span></span>
 
-<span data-ttu-id="ec481-328">*arg* パラメーターで指定された数の実数は、*exponent* パラメーターで指定された数の累乗になります。</span><span class="sxs-lookup"><span data-stu-id="ec481-328">The real number that is the number specified by the *arg* parameter to the power of the number specified by the *exponent* parameter.</span></span>
+<span data-ttu-id="85b2b-328">*arg* パラメーターで指定された数の実数は、*exponent* パラメーターで指定された数の累乗になります。</span><span class="sxs-lookup"><span data-stu-id="85b2b-328">The real number that is the number specified by the *arg* parameter to the power of the number specified by the *exponent* parameter.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-329">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-329">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-329">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-329">Remarks</span></span>
 
--   <span data-ttu-id="ec481-330">**パワー (5.0,2.0)** は、値 **25.0** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-330">**power(5.0,2.0)** returns the value **25.0**.</span></span>
--   <span data-ttu-id="ec481-331">**パワー (4.0,0.5)** は、値 **2.0** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-331">**power(4.0,0.5)** returns the value **2.0**.</span></span>
+-   <span data-ttu-id="85b2b-330">**パワー (5.0,2.0)** は、値 **25.0** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-330">**power(5.0,2.0)** returns the value **25.0**.</span></span>
+-   <span data-ttu-id="85b2b-331">**パワー (4.0,0.5)** は、値 **2.0** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-331">**power(4.0,0.5)** returns the value **2.0**.</span></span>
 
-## <a name="round"></a><span data-ttu-id="ec481-332">round</span><span class="sxs-lookup"><span data-stu-id="ec481-332">round</span></span>
-<span data-ttu-id="ec481-333">実数は別の実数の最も近い倍数に切り上げられます。</span><span class="sxs-lookup"><span data-stu-id="ec481-333">Rounds a real number to the nearest multiple of another real number.</span></span>
+## <a name="round"></a><span data-ttu-id="85b2b-332">round</span><span class="sxs-lookup"><span data-stu-id="85b2b-332">round</span></span>
+<span data-ttu-id="85b2b-333">実数は別の実数の最も近い倍数に切り上げられます。</span><span class="sxs-lookup"><span data-stu-id="85b2b-333">Rounds a real number to the nearest multiple of another real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-334">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-334">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-334">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-334">Syntax</span></span>
 
 ```xpp
 real round(real _arg, real _decimals)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-335">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-335">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-335">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-335">Parameters</span></span>
 
-| <span data-ttu-id="ec481-336">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-336">Parameter</span></span>  | <span data-ttu-id="ec481-337">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-337">Description</span></span>                                                                          |
+| <span data-ttu-id="85b2b-336">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-336">Parameter</span></span>  | <span data-ttu-id="85b2b-337">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-337">Description</span></span>                                                                          |
 |------------|--------------------------------------------------------------------------------------|
-| <span data-ttu-id="ec481-338">\_arg</span><span class="sxs-lookup"><span data-stu-id="ec481-338">\_arg</span></span>      | <span data-ttu-id="ec481-339">元の番号。</span><span class="sxs-lookup"><span data-stu-id="ec481-339">The original number.</span></span>                                                                 |
-| <span data-ttu-id="ec481-340">\_小数点以下</span><span class="sxs-lookup"><span data-stu-id="ec481-340">\_decimals</span></span> | <span data-ttu-id="ec481-341">*\_arg* パラメーターの値を倍数に丸める必要がある数。</span><span class="sxs-lookup"><span data-stu-id="ec481-341">The number that the value of the *\_arg* parameter must be rounded to a multiple of.</span></span> |
+| <span data-ttu-id="85b2b-338">\_arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-338">\_arg</span></span>      | <span data-ttu-id="85b2b-339">元の番号。</span><span class="sxs-lookup"><span data-stu-id="85b2b-339">The original number.</span></span>                                                                 |
+| <span data-ttu-id="85b2b-340">\_小数点以下</span><span class="sxs-lookup"><span data-stu-id="85b2b-340">\_decimals</span></span> | <span data-ttu-id="85b2b-341">*\_arg* パラメーターの値を倍数に丸める必要がある数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-341">The number that the value of the *\_arg* parameter must be rounded to a multiple of.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-342">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-342">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-342">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-342">Return value</span></span>
 
-<span data-ttu-id="ec481-343">*\_decimals* パラメーターで指定された値の倍数で *\_arg* パラメーターで指定された値に最も近い数。</span><span class="sxs-lookup"><span data-stu-id="ec481-343">The number that is a multiple of the value specified by the *\_decimals* parameter and is closest to the value specified by the *\_arg* parameter.</span></span>
+<span data-ttu-id="85b2b-343">*\_decimals* パラメーターで指定された値の倍数で *\_arg* パラメーターで指定された値に最も近い数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-343">The number that is a multiple of the value specified by the *\_decimals* parameter and is closest to the value specified by the *\_arg* parameter.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-344">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-344">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-344">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-344">Remarks</span></span>
 
-<span data-ttu-id="ec481-345">指定した小数点以下の桁数に実数を丸めるには、[decround 関数](/previous-versions/dynamics/ax-2012/reference/aa499511(v=ax.60))を使用します。</span><span class="sxs-lookup"><span data-stu-id="ec481-345">To round a real number to a specified number of decimal places, use the [decround function](/previous-versions/dynamics/ax-2012/reference/aa499511(v=ax.60)).</span></span>
+<span data-ttu-id="85b2b-345">指定した小数点以下の桁数に実数を丸めるには、[decround 関数](/previous-versions/dynamics/ax-2012/reference/aa499511(v=ax.60))を使用します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-345">To round a real number to a specified number of decimal places, use the [decround function](/previous-versions/dynamics/ax-2012/reference/aa499511(v=ax.60)).</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-346">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-346">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-346">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-346">Remarks</span></span>
 
--   <span data-ttu-id="ec481-347">**丸め (123.45,5.00)** は、値 **125.00** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-347">**round(123.45,5.00)** returns the value **125.00**.</span></span>
--   <span data-ttu-id="ec481-348">**丸め (7.45,1.05)** は、値 **7.35** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-348">**round(7.45,1.05)** returns the value **7.35**.</span></span>
--   <span data-ttu-id="ec481-349">**丸め (23.9,5.0)** は、値 **25.00** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-349">**round(23.9,5.0)** returns the value **25.00**.</span></span>
--   <span data-ttu-id="ec481-350">**丸め (26.1,5.0)** は、値 **25.00** を返します。</span><span class="sxs-lookup"><span data-stu-id="ec481-350">**round(26.1,5.0)** returns the value **25.00**.</span></span>
+-   <span data-ttu-id="85b2b-347">**丸め (123.45,5.00)** は、値 **125.00** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-347">**round(123.45,5.00)** returns the value **125.00**.</span></span>
+-   <span data-ttu-id="85b2b-348">**丸め (7.45,1.05)** は、値 **7.35** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-348">**round(7.45,1.05)** returns the value **7.35**.</span></span>
+-   <span data-ttu-id="85b2b-349">**丸め (23.9,5.0)** は、値 **25.00** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-349">**round(23.9,5.0)** returns the value **25.00**.</span></span>
+-   <span data-ttu-id="85b2b-350">**丸め (26.1,5.0)** は、値 **25.00** を返します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-350">**round(26.1,5.0)** returns the value **25.00**.</span></span>
 
-<a name="sin"></a><span data-ttu-id="ec481-351">sin</span><span class="sxs-lookup"><span data-stu-id="ec481-351">sin</span></span>
----
+## <a name="sin"></a><span data-ttu-id="85b2b-351">sin</span><span class="sxs-lookup"><span data-stu-id="85b2b-351">sin</span></span>
 
-<span data-ttu-id="ec481-352">実数の正弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-352">Retrieves the sine of a real number.</span></span>
+<span data-ttu-id="85b2b-352">実数の正弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-352">Retrieves the sine of a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-353">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-353">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-353">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-353">Syntax</span></span>
 
 ```xpp
 real sin(real _arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-354">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-354">Parameters</span></span>
 
-| <span data-ttu-id="ec481-355">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-355">Parameter</span></span> | <span data-ttu-id="ec481-356">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-356">Description</span></span>                           |
+| <span data-ttu-id="85b2b-355">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-355">Parameter</span></span> | <span data-ttu-id="85b2b-356">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-356">Description</span></span>                           |
 |-----------|---------------------------------------|
-| <span data-ttu-id="ec481-357">\_arg</span><span class="sxs-lookup"><span data-stu-id="ec481-357">\_arg</span></span>     | <span data-ttu-id="ec481-358">正弦を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-358">The number to calculate the sine for.</span></span> |
+| <span data-ttu-id="85b2b-357">\_arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-357">\_arg</span></span>     | <span data-ttu-id="85b2b-358">正弦を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-358">The number to calculate the sine for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-359">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-359">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-359">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-359">Return value</span></span>
 
-<span data-ttu-id="ec481-360">指定した実数のサイン。</span><span class="sxs-lookup"><span data-stu-id="ec481-360">The sine of the specified real number.</span></span>
+<span data-ttu-id="85b2b-360">指定した実数のサイン。</span><span class="sxs-lookup"><span data-stu-id="85b2b-360">The sine of the specified real number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-361">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-361">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-361">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-361">Remarks</span></span>
 
-<span data-ttu-id="ec481-362">パラメーター *\_arg* の値はラジアンにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ec481-362">The value of the *\_arg* parameter must be in radians.</span></span>
+<span data-ttu-id="85b2b-362">パラメーター *\_arg* の値はラジアンにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="85b2b-362">The value of the *\_arg* parameter must be in radians.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-363">例</span><span class="sxs-lookup"><span data-stu-id="ec481-363">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-363">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-363">Example</span></span>
 
 ```xpp
 static void sinExample(Args _arg)
@@ -637,32 +632,32 @@ static void sinExample(Args _arg)
 }
 ```
 
-## <a name="sinh"></a><span data-ttu-id="ec481-364">sinh</span><span class="sxs-lookup"><span data-stu-id="ec481-364">sinh</span></span>
-<span data-ttu-id="ec481-365">実数の双曲線正弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-365">Retrieves the hyperbolic sine of a real number.</span></span>
+## <a name="sinh"></a><span data-ttu-id="85b2b-364">sinh</span><span class="sxs-lookup"><span data-stu-id="85b2b-364">sinh</span></span>
+<span data-ttu-id="85b2b-365">実数の双曲線正弦を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-365">Retrieves the hyperbolic sine of a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-366">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-366">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-366">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-366">Syntax</span></span>
 
 ```xpp
 real sinh(real _arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-367">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-367">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-367">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-367">Parameters</span></span>
 
-| <span data-ttu-id="ec481-368">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-368">Parameter</span></span> | <span data-ttu-id="ec481-369">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-369">Description</span></span>                                      |
+| <span data-ttu-id="85b2b-368">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-368">Parameter</span></span> | <span data-ttu-id="85b2b-369">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-369">Description</span></span>                                      |
 |-----------|--------------------------------------------------|
-| <span data-ttu-id="ec481-370">\_arg</span><span class="sxs-lookup"><span data-stu-id="ec481-370">\_arg</span></span>     | <span data-ttu-id="ec481-371">双曲線正弦を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-371">The number to calculate the hyperbolic sine for.</span></span> |
+| <span data-ttu-id="85b2b-370">\_arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-370">\_arg</span></span>     | <span data-ttu-id="85b2b-371">双曲線正弦を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-371">The number to calculate the hyperbolic sine for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-372">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-372">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-372">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-372">Return value</span></span>
 
-<span data-ttu-id="ec481-373">指定された実数の双曲線正弦。</span><span class="sxs-lookup"><span data-stu-id="ec481-373">The hyperbolic sine of the specified real number.</span></span>
+<span data-ttu-id="85b2b-373">指定された実数の双曲線正弦。</span><span class="sxs-lookup"><span data-stu-id="85b2b-373">The hyperbolic sine of the specified real number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-374">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-374">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-374">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-374">Remarks</span></span>
 
-<span data-ttu-id="ec481-375">-250 から 250 の範囲外の *\_arg* パラメーターの値では、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="ec481-375">Values for the *\_arg* parameter that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
+<span data-ttu-id="85b2b-375">-250 から 250 の範囲外の *\_arg* パラメーターの値では、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="85b2b-375">Values for the *\_arg* parameter that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-376">例</span><span class="sxs-lookup"><span data-stu-id="ec481-376">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-376">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-376">Example</span></span>
 
-<span data-ttu-id="ec481-377">次の例は、**sinh** 関数を示しています。</span><span class="sxs-lookup"><span data-stu-id="ec481-377">The following example illustrates the **sinh** function.</span></span>
+<span data-ttu-id="85b2b-377">次の例は、**sinh** 関数を示しています。</span><span class="sxs-lookup"><span data-stu-id="85b2b-377">The following example illustrates the **sinh** function.</span></span>
 
 ```xpp
 static void sinhExample(Args _arg)
@@ -682,34 +677,33 @@ static void sinhExample(Args _arg)
 }
 ```
 
-<a name="tan"></a><span data-ttu-id="ec481-378">tan</span><span class="sxs-lookup"><span data-stu-id="ec481-378">tan</span></span>
----
+## <a name="tan"></a><span data-ttu-id="85b2b-378">tan</span><span class="sxs-lookup"><span data-stu-id="85b2b-378">tan</span></span>
 
-<span data-ttu-id="ec481-379">実数の正接を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-379">Retrieves the tangent of a real number.</span></span>
+<span data-ttu-id="85b2b-379">実数の正接を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-379">Retrieves the tangent of a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-380">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-380">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-380">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-380">Syntax</span></span>
 
 ```xpp
 real tan(real arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-381">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-381">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-381">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-381">Parameters</span></span>
 
-| <span data-ttu-id="ec481-382">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-382">Parameter</span></span> | <span data-ttu-id="ec481-383">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-383">Description</span></span>                                   |
+| <span data-ttu-id="85b2b-382">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-382">Parameter</span></span> | <span data-ttu-id="85b2b-383">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-383">Description</span></span>                                   |
 |-----------|-----------------------------------------------|
-| <span data-ttu-id="ec481-384">arg</span><span class="sxs-lookup"><span data-stu-id="ec481-384">arg</span></span>       | <span data-ttu-id="ec481-385">正接を計算する実数。</span><span class="sxs-lookup"><span data-stu-id="ec481-385">The real number to calculate the tangent for.</span></span> |
+| <span data-ttu-id="85b2b-384">arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-384">arg</span></span>       | <span data-ttu-id="85b2b-385">正接を計算する実数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-385">The real number to calculate the tangent for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-386">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-386">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-386">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-386">Return value</span></span>
 
-<span data-ttu-id="ec481-387">指定した実数の正接。</span><span class="sxs-lookup"><span data-stu-id="ec481-387">The tangent of the specified real number.</span></span>
+<span data-ttu-id="85b2b-387">指定した実数の正接。</span><span class="sxs-lookup"><span data-stu-id="85b2b-387">The tangent of the specified real number.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-388">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-388">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-388">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-388">Remarks</span></span>
 
-<span data-ttu-id="ec481-389">-250 から 250 の範囲外の *arg* パラメーターの値では、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="ec481-389">Values for the *arg* parameter that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
+<span data-ttu-id="85b2b-389">-250 から 250 の範囲外の *arg* パラメーターの値では、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。</span><span class="sxs-lookup"><span data-stu-id="85b2b-389">Values for the *arg* parameter that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-390">例</span><span class="sxs-lookup"><span data-stu-id="ec481-390">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-390">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-390">Example</span></span>
 
-<span data-ttu-id="ec481-391">次の例は、**tan** 関数を示しています。</span><span class="sxs-lookup"><span data-stu-id="ec481-391">The following example illustrates the **tan** function.</span></span>
+<span data-ttu-id="85b2b-391">次の例は、**tan** 関数を示しています。</span><span class="sxs-lookup"><span data-stu-id="85b2b-391">The following example illustrates the **tan** function.</span></span>
 
 ```xpp
 static void tanExample(Args _arg)
@@ -722,28 +716,28 @@ static void tanExample(Args _arg)
 }
 ```
 
-## <a name="tanh"></a><span data-ttu-id="ec481-392">tanh</span><span class="sxs-lookup"><span data-stu-id="ec481-392">tanh</span></span>
-<span data-ttu-id="ec481-393">実数の双曲線正接を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec481-393">Retrieves the hyperbolic tangent of a real number.</span></span>
+## <a name="tanh"></a><span data-ttu-id="85b2b-392">tanh</span><span class="sxs-lookup"><span data-stu-id="85b2b-392">tanh</span></span>
+<span data-ttu-id="85b2b-393">実数の双曲線正接を取得します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-393">Retrieves the hyperbolic tangent of a real number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-394">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-394">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-394">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-394">Syntax</span></span>
 
 ```xpp
 real tanh(real _arg)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-395">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-395">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-395">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-395">Parameters</span></span>
 
-| <span data-ttu-id="ec481-396">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-396">Parameter</span></span> | <span data-ttu-id="ec481-397">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-397">Description</span></span>                                         |
+| <span data-ttu-id="85b2b-396">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-396">Parameter</span></span> | <span data-ttu-id="85b2b-397">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-397">Description</span></span>                                         |
 |-----------|-----------------------------------------------------|
-| <span data-ttu-id="ec481-398">\_arg</span><span class="sxs-lookup"><span data-stu-id="ec481-398">\_arg</span></span>     | <span data-ttu-id="ec481-399">双曲線正接を計算する数。</span><span class="sxs-lookup"><span data-stu-id="ec481-399">The number to calculate the hyperbolic tangent for.</span></span> |
+| <span data-ttu-id="85b2b-398">\_arg</span><span class="sxs-lookup"><span data-stu-id="85b2b-398">\_arg</span></span>     | <span data-ttu-id="85b2b-399">双曲線正接を計算する数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-399">The number to calculate the hyperbolic tangent for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-400">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-400">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-400">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-400">Return value</span></span>
 
-<span data-ttu-id="ec481-401">指定された実数の双曲線正接。</span><span class="sxs-lookup"><span data-stu-id="ec481-401">The hyperbolic tangent of the specified real number.</span></span>
+<span data-ttu-id="85b2b-401">指定された実数の双曲線正接。</span><span class="sxs-lookup"><span data-stu-id="85b2b-401">The hyperbolic tangent of the specified real number.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-402">例</span><span class="sxs-lookup"><span data-stu-id="ec481-402">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-402">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-402">Example</span></span>
 
-<span data-ttu-id="ec481-403">次の例は、**tanh** 関数を示しています。</span><span class="sxs-lookup"><span data-stu-id="ec481-403">The following example illustrates the **tanh** function.</span></span>
+<span data-ttu-id="85b2b-403">次の例は、**tanh** 関数を示しています。</span><span class="sxs-lookup"><span data-stu-id="85b2b-403">The following example illustrates the **tanh** function.</span></span>
 
 ```xpp
 static void tanhExample(Args _arg)
@@ -757,32 +751,32 @@ static void tanhExample(Args _arg)
 }
 ```
 
-## <a name="trunc"></a><span data-ttu-id="ec481-404">trunc</span><span class="sxs-lookup"><span data-stu-id="ec481-404">trunc</span></span>
-<span data-ttu-id="ec481-405">小数点以下を削除して実数を切り捨てます。</span><span class="sxs-lookup"><span data-stu-id="ec481-405">Truncates a real number by removing any decimal places.</span></span>
+## <a name="trunc"></a><span data-ttu-id="85b2b-404">trunc</span><span class="sxs-lookup"><span data-stu-id="85b2b-404">trunc</span></span>
+<span data-ttu-id="85b2b-405">小数点以下を削除して実数を切り捨てます。</span><span class="sxs-lookup"><span data-stu-id="85b2b-405">Truncates a real number by removing any decimal places.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="ec481-406">構文</span><span class="sxs-lookup"><span data-stu-id="ec481-406">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="85b2b-406">構文</span><span class="sxs-lookup"><span data-stu-id="85b2b-406">Syntax</span></span>
 
 ```xpp
 real trunc(real _decimal)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="ec481-407">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-407">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="85b2b-407">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-407">Parameters</span></span>
 
-| <span data-ttu-id="ec481-408">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec481-408">Parameter</span></span> | <span data-ttu-id="ec481-409">説明</span><span class="sxs-lookup"><span data-stu-id="ec481-409">Description</span></span>             |
+| <span data-ttu-id="85b2b-408">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85b2b-408">Parameter</span></span> | <span data-ttu-id="85b2b-409">説明</span><span class="sxs-lookup"><span data-stu-id="85b2b-409">Description</span></span>             |
 |-----------|-------------------------|
-| <span data-ttu-id="ec481-410">\_小数点以下</span><span class="sxs-lookup"><span data-stu-id="ec481-410">\_decimal</span></span> | <span data-ttu-id="ec481-411">切り捨て後の数。</span><span class="sxs-lookup"><span data-stu-id="ec481-411">The number to truncate.</span></span> |
+| <span data-ttu-id="85b2b-410">\_小数点以下</span><span class="sxs-lookup"><span data-stu-id="85b2b-410">\_decimal</span></span> | <span data-ttu-id="85b2b-411">切り捨て後の数。</span><span class="sxs-lookup"><span data-stu-id="85b2b-411">The number to truncate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="ec481-412">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec481-412">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="85b2b-412">戻り値</span><span class="sxs-lookup"><span data-stu-id="85b2b-412">Return value</span></span>
 
-<span data-ttu-id="ec481-413">小数点以下桁数が削除された後の *\_decimal* パラメーターの値に等しい番号。</span><span class="sxs-lookup"><span data-stu-id="ec481-413">A number that is equivalent to the value of the *\_decimal* parameter after the decimal places have been removed.</span></span>
+<span data-ttu-id="85b2b-413">小数点以下桁数が削除された後の *\_decimal* パラメーターの値に等しい番号。</span><span class="sxs-lookup"><span data-stu-id="85b2b-413">A number that is equivalent to the value of the *\_decimal* parameter after the decimal places have been removed.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="ec481-414">備考</span><span class="sxs-lookup"><span data-stu-id="ec481-414">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85b2b-414">備考</span><span class="sxs-lookup"><span data-stu-id="85b2b-414">Remarks</span></span>
 
-<span data-ttu-id="ec481-415">この関数は、常に数値を完全な整数に四捨五入します。</span><span class="sxs-lookup"><span data-stu-id="ec481-415">This function always rounds numbers down to a complete integer.</span></span>
+<span data-ttu-id="85b2b-415">この関数は、常に数値を完全な整数に四捨五入します。</span><span class="sxs-lookup"><span data-stu-id="85b2b-415">This function always rounds numbers down to a complete integer.</span></span>
 
-### <a name="example"></a><span data-ttu-id="ec481-416">例</span><span class="sxs-lookup"><span data-stu-id="ec481-416">Example</span></span>
+### <a name="example"></a><span data-ttu-id="85b2b-416">例</span><span class="sxs-lookup"><span data-stu-id="85b2b-416">Example</span></span>
 
-<span data-ttu-id="ec481-417">次の例では、2.7147 を 2.00 に切り捨てます。</span><span class="sxs-lookup"><span data-stu-id="ec481-417">The following example truncates 2.7147 to 2.00.</span></span>
+<span data-ttu-id="85b2b-417">次の例では、2.7147 を 2.00 に切り捨てます。</span><span class="sxs-lookup"><span data-stu-id="85b2b-417">The following example truncates 2.7147 to 2.00.</span></span>
 
 ```xpp
 static void truncExample(Args _arg)

@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: プラットフォーム更新プログラム 10.0.18 (2021 年 5 月)
                   href: get-started/whats-new-platform-updates-10-0-18.md
-                - name: 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)
-                  href: get-started/whats-new-platform-updates-10-0-17.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -278,6 +276,8 @@
               href: data-entities/finance-data-azure-data-lake.md
             - name: エンティティ格納を Data Lake として使用可能にする
               href: data-entities/entity-store-data-lake.md
+            - name: Azure Data Lake でのデータの変更
+              href: data-entities/Azure-data-lake-Change-feeds.md
         - name: データベース移動操作
           items:
             - name: 概要

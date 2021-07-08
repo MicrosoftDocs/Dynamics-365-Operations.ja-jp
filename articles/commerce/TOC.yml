@@ -100,8 +100,6 @@
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (2021 年 5 月)
                       href: get-started/whats-new-commerce-10-0-18.md
-                    - name: Commerce 10.0.17 (2021 年 4 月)
-                      href: get-started/whats-new-commerce-10-0-17.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -244,7 +242,7 @@
                   href: arch-auth-flow.md
                 - name: Dynamics 365 Commerce コンポーネントのバージョン管理要件
                   href: arch-component-versioning.md
-                - name: ヘッドレス コマース エンジンのアーキテクチャ
+                - name: ヘッドレス コマース アーキテクチャ
                   href: dev-itpro/retail-server-architecture.md
                 - name: 店舗内トポロジの選択
                   href: dev-itpro/retail-in-store-topology.md
@@ -1234,7 +1232,7 @@
                   href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service - グローバリゼーション機能
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service で ER 構成を作成し、グローバル リポジトリにアップロードする
+                - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
                   href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
@@ -1248,11 +1246,21 @@
                   href: localizations/latam-bra-commerce-localization.md
                 - name: ブラジル向け Commerce ローカライズの設定と展開
                   href: localizations/latam-bra-deployment.md
-            - name: 西ヨーロッパ
+                - name: ブラジル向け Commerce POS の NFC-e 会計ドキュメント機能
+                  href: localizations/latam-bra-nfce.md
+                - name: ブラジル向け POS の顧客情報管理
+                  href: localizations/latam-bra-customer-information.md
+                - name: ブラジル向け Commerce POS の NFC-e ドキュメントのキャンセルと返品
+                  href: localizations/latam-bra-nfce-cancel-return.md
+                - name: オフライン代替モードで発行された NFC-e ドキュメントの登録延期
+                  href: localizations/latam-bra-nfce-contingency-mode.md
+                - name: Commerce 本社の小売明細書によるブラジルの会計ドキュメントの転記
+                  href: localizations/latam-bra-retail-statements.md
+            - name: 東ヨーロッパ
               items:
                 - name: 共通
                   items:
-                    - name: 西ヨーロッパ向け Commerce の高度な請求書
+                    - name: 東ヨーロッパ向け Commerce の高度な請求書
                       href: localizations/emea-eeu-advance-invoices-for-retail.md
                     - name: 東ヨーロッパにおける Commerce の小口現金管理
                       href: localizations/emea-eeu-petty-cash-for-retail.md
@@ -1418,7 +1426,7 @@
               items:
                 - name: コンフィギュレーションの作成
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
-                - name: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
+                - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
@@ -1458,11 +1466,17 @@
               items:
                 - name: フォーミュラ言語
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                - name: ER フォーミュラのサポートされるデータ型
+                  items:
+                    - name: プリミティブ データ型
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+                    - name: 複合データ型
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
                 - name: 関数
                   items:
                     - name: コンテナー
                       items:
-                        - name: コンテナーの機能
+                        - name: コンテナー関数
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/commerce/toc.json
                         - name: Base64StringToContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/commerce/toc.json
@@ -1740,7 +1754,7 @@
                   items:
                     - name: Word 形式のレポートを生成するための新しい ER コンフィギュレーションを設計する
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/commerce/toc.json
-                    - name: Excel テンプレートで電子申告コンフィギュレーションを再利用して Word 形式のレポートを生成する
+                    - name: Excel テンプレートで ER コンフィギュレーションを再利用して Word 形式のレポートを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: 生成されるレポートの Word コンテンツ コントロールを非表示にする
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/commerce/toc.json
@@ -1972,13 +1986,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: 印刷に対応した自由書式請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: 効率的な ER ソリューションを設計する
+                - name: 効率的な電子申告ソリューションをデザインする
                   items:
-                    - name: ER 形式の実行をトレースしてパフォーマンスの問題を解決する
+                    - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
-                    - name: ER 構成でパフォーマンス問題を解決する
+                    - name: ER コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: ビジネス ドキュメント管理 (BDM)
+                - name: ビジネス ドキュメントの管理 (BDM)
                   items:
                     - name: BDM 概要
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
@@ -2002,13 +2016,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Application update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
+                    - name: Application update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
                 - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: 電子申告の送信先の作成をカスタム送信先ファクトリに委任する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
-                - name: ユーザー入力パラメータタイプのデータ ソース値をソースコードから開始する
+                - name: 生成されるドキュメントに対するカスタム送信先の実装
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
+                - name: USER INPUT PARAMETER タイプのデータ ソース値をソースコードから開始する
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations (Dynamics 365) モバイル アプリ
           items:

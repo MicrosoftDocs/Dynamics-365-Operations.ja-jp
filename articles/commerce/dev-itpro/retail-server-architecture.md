@@ -1,87 +1,62 @@
 ---
-title: Commerce Scale Unit アーキテクチャ
-description: Commerce Scale Unit は、Modern 販売時点管理 (POS) および E コマース クライアントのステートレス サービスとビジネス ロジックを提供します。
-author: RobinARH
+title: ヘッドレス コマースのアーキテクチャ
+description: このトピックでは、ヘッドレス コマースのアーキテクチャについて説明します。
+author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 31521
-ms.assetid: 3a169648-592b-4616-9834-598c0244a852
 ms.search.region: Global
-ms.author: meeram
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3797f616137b7817cce019dca5e4888d898a076d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.author: mumani
+ms.search.validFrom: 2021-02-28
+ms.dyn365.ops.version: AX 10.0.16
+ms.openlocfilehash: f150089f9e3b1a664c959867d46ba3c4b1f075e5
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792981"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271115"
 ---
-# <a name="commerce-scale-unit-architecture"></a><span data-ttu-id="d97f4-103">Commerce Scale Unit アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="d97f4-103">Commerce Scale Unit architecture</span></span>
+# <a name="headless-commerce-architecture"></a><span data-ttu-id="90b59-103">ヘッドレス コマースのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="90b59-103">Headless commerce architecture</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d97f4-104">この記事では、Commerce Scale Unit のアーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d97f4-104">This article describes the architecture of Commerce Scale Unit.</span></span> <span data-ttu-id="d97f4-105">Commerce Scale Unit は、Modern 販売時点管理 (MPOS) および E コマース クライアントのステートレス サービスとビジネス ロジックを提供します。</span><span class="sxs-lookup"><span data-stu-id="d97f4-105">Commerce Scale Unit provides stateless services and business logic for  Modern Point of Sale (MPOS) and E-Commerce clients.</span></span>
+<span data-ttu-id="90b59-104">このトピックでは、ヘッドレス コマース (Commerce Scale Unit とも呼ばれる) のアーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="90b59-104">This topic describes the architecture of the headless commerce (also known as Commerce Scale Unit).</span></span> <span data-ttu-id="90b59-105">ヘッドレス コマースは、拡張可能で、カスタマイズされたフリクションフリーなコマース エクスペリエンス、および統合され最適化されたバック オフィス操作を可能にする API 駆動型のフレームワークです。</span><span class="sxs-lookup"><span data-stu-id="90b59-105">The headless commerce is an API-driven framework that enables extensible, personalized, friction-free commerce experiences, and integrated, optimized back-office operations.</span></span>
 
-<span data-ttu-id="d97f4-106">Commerce Runtime は Commerce Scale Unit レイヤーにラップされます。</span><span class="sxs-lookup"><span data-stu-id="d97f4-106">The commerce runtime is wrapped in a Commerce Scale Unit layer.</span></span> <span data-ttu-id="d97f4-107">Commerce Scale Unit は、タブレットや電話で店舗とオンラインの両方のシン クライアントをサポートするために、Web API および OData を使用します。</span><span class="sxs-lookup"><span data-stu-id="d97f4-107">Commerce Scale Unit uses a web API and OData to support thin clients both in the store and online on tablets and phones.</span></span> <span data-ttu-id="d97f4-108">Commerce Runtime は、Commerce Data Exchange サービスを通じて Headquarters と通信します。</span><span class="sxs-lookup"><span data-stu-id="d97f4-108">The commerce runtime communicates with Headquarters through Commerce Data Exchange services.</span></span> <span data-ttu-id="d97f4-109">次の図は、Commerce Scale Unit のアーキテクチャを示しています。</span><span class="sxs-lookup"><span data-stu-id="d97f4-109">The following diagram shows the architecture of Commerce Scale Unit.</span></span> 
+![Commerce Scale Unit アーキテクチャ](./media/CSU.PNG)
 
-<span data-ttu-id="d97f4-110">[![Commerce Scale Unit アーキテクチャ ダイアグラム](./media/retailserver.png)](./media/retailserver.png)</span><span class="sxs-lookup"><span data-stu-id="d97f4-110">[![Commerce Scale Unit architecture diagram](./media/retailserver.png)](./media/retailserver.png)</span></span> 
+## <a name="omnichannel-solution-provided-by-the-headless-commerce"></a><span data-ttu-id="90b59-107">ヘッドレス コマースが提供するオムニチャネル ソリューション</span><span class="sxs-lookup"><span data-stu-id="90b59-107">Omnichannel solution provided by the headless commerce</span></span>
 
-<span data-ttu-id="d97f4-111">Commerce Scale Unit は次の概念を使用します。</span><span class="sxs-lookup"><span data-stu-id="d97f4-111">Commerce Scale Unit uses the following concepts.</span></span>
+<span data-ttu-id="90b59-108">ヘッドレス コマースのコマース API は Microsoft Dynamics 365 Commerce によって使用され (バックオフィス、ストア内、コール センター、および e コマース)、完全なオムニチャネル ソリューションを提供します。</span><span class="sxs-lookup"><span data-stu-id="90b59-108">The commerce APIs of the headless commerce are consumed by Microsoft Dynamics 365 Commerce (back-office, in-store, call center, and e-commerce) and provide a complete omnichannel solution.</span></span> <span data-ttu-id="90b59-109">API は、サード パーティのアプリケーションおよび Microsoft Power Platform コネクタで使用できます。</span><span class="sxs-lookup"><span data-stu-id="90b59-109">The APIs can be consumed by third-party applications and Microsoft Power Platform connectors.</span></span>
 
-<table>
-<thead>
-<tr class="header">
-<th><span data-ttu-id="d97f4-112">概念</span><span class="sxs-lookup"><span data-stu-id="d97f4-112">Concept</span></span></th>
-<th><span data-ttu-id="d97f4-113">説明</span><span class="sxs-lookup"><span data-stu-id="d97f4-113">Description</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span data-ttu-id="d97f4-114">エンティティ タイプ</span><span class="sxs-lookup"><span data-stu-id="d97f4-114">Entity type</span></span></td>
-<td><span data-ttu-id="d97f4-115">エンティティ タイプは監視するライフ サイクルを持つエンティティです。</span><span class="sxs-lookup"><span data-stu-id="d97f4-115">An entity type is an entity that has a life cycle that you want to monitor.</span></span> <span data-ttu-id="d97f4-116">各エンティティ タイプには、キーがあります。</span><span class="sxs-lookup"><span data-stu-id="d97f4-116">Each entity type has a key.</span></span> <span data-ttu-id="d97f4-117">エンティティ タイプの例は<strong>顧客</strong>です。</span><span class="sxs-lookup"><span data-stu-id="d97f4-117">An example of an entity type is <strong>Customer</strong>.</span></span></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="d97f4-118">複合型</span><span class="sxs-lookup"><span data-stu-id="d97f4-118">Complex type</span></span></td>
-<td><span data-ttu-id="d97f4-119">複合型は、特定の関連プロパティをグループ化して重複を防止するよう設計された OData 概念です。</span><span class="sxs-lookup"><span data-stu-id="d97f4-119">A complex type is an OData concept that is designed to prevent duplication by grouping specific related properties.</span></span> <span data-ttu-id="d97f4-120">これらの関連するプロパティは、複数のエンティティで再利用できます。</span><span class="sxs-lookup"><span data-stu-id="d97f4-120">These related properties can be reused in multiple entities.</span></span> <span data-ttu-id="d97f4-121">たとえば、<strong>顧客</strong>は顧客のアドレスを持つエンティティ タイプです。</span><span class="sxs-lookup"><span data-stu-id="d97f4-121">For example, <strong>Customer</strong> is an entity type that has a customer address.</span></span> <span data-ttu-id="d97f4-122">この顧客アドレスは、アドレス行、市町村、都道府県、および郵便番号を含むラッパーです。</span><span class="sxs-lookup"><span data-stu-id="d97f4-122">This customer address is a wrapper that contains an address line, city, state, and ZIP/postal code.</span></span> <span data-ttu-id="d97f4-123">したがって、<strong>顧客の住所</strong>は、他のエンティティ タイプにより再利用できる複合型です。</span><span class="sxs-lookup"><span data-stu-id="d97f4-123">Therefore, <strong>Customer address</strong> is a complex type that can be reused by other entity types.</span></span> <span data-ttu-id="d97f4-124">たとえば、<strong>注文</strong>エンティティ タイプは、<strong>顧客</strong>エンティティ タイプに関連付けられている同じ住所情報を必要とし、したがって<strong>顧客住所</strong>複合型を再利用します。</span><span class="sxs-lookup"><span data-stu-id="d97f4-124">For example, the <strong>Order</strong> entity type requires the same address information that is associated with the <strong>Customer</strong> entity type and therefore reuses the <strong>Customer address</strong> complex type.</span></span></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="d97f4-125">コントローラー</span><span class="sxs-lookup"><span data-stu-id="d97f4-125">Controller</span></span></td>
-<td><span data-ttu-id="d97f4-126">コントローラーは、エンティティ タイプの作成、読み取り、更新、および削除 (CRUD) の動作とアクションをコントロールするエンティティ タイプのマッピングです。</span><span class="sxs-lookup"><span data-stu-id="d97f4-126">A controller is a mapping for an entity type that controls create, read, update, and delete (CRUD) behaviors and actions for the entity type.</span></span> <span data-ttu-id="d97f4-127">各 commerce エンティティに、コントローラーが用意されています。</span><span class="sxs-lookup"><span data-stu-id="d97f4-127">A controller is provided for each commerce entity.</span></span> <span data-ttu-id="d97f4-128">以下のコントローラーをカスタマイズすることができます。</span><span class="sxs-lookup"><span data-stu-id="d97f4-128">You can customize the following controllers:</span></span>
-<ul>
-<li><span data-ttu-id="d97f4-129">カート</span><span class="sxs-lookup"><span data-stu-id="d97f4-129">Carts</span></span></li>
-<li><span data-ttu-id="d97f4-130">カタログ</span><span class="sxs-lookup"><span data-stu-id="d97f4-130">Catalogs</span></span></li>
-<li><span data-ttu-id="d97f4-131">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="d97f4-131">Categories</span></span></li>
-<li><span data-ttu-id="d97f4-132">コマース</span><span class="sxs-lookup"><span data-stu-id="d97f4-132">Commerce</span></span></li>
-<li><span data-ttu-id="d97f4-133">コマース リスト</span><span class="sxs-lookup"><span data-stu-id="d97f4-133">Commerce Lists</span></span></li>
-<li><span data-ttu-id="d97f4-134">複合キー エンティティ</span><span class="sxs-lookup"><span data-stu-id="d97f4-134">Composite Key Entity</span></span></li>
-<li><span data-ttu-id="d97f4-135">コントローラ アセンブリ リゾルバー</span><span class="sxs-lookup"><span data-stu-id="d97f4-135">Controller Assembly Resolver</span></span></li>
-<li><span data-ttu-id="d97f4-136">顧客</span><span class="sxs-lookup"><span data-stu-id="d97f4-136">Customers</span></span></li>
-<li><span data-ttu-id="d97f4-137">従業員</span><span class="sxs-lookup"><span data-stu-id="d97f4-137">Employees</span></span></li>
-<li><span data-ttu-id="d97f4-138">バインドできないアクション</span><span class="sxs-lookup"><span data-stu-id="d97f4-138">Non-Bindable Action</span></span></li>
-<li><span data-ttu-id="d97f4-139">組織単位</span><span class="sxs-lookup"><span data-stu-id="d97f4-139">Org Units</span></span></li>
-<li><span data-ttu-id="d97f4-140">ピッキング リスト</span><span class="sxs-lookup"><span data-stu-id="d97f4-140">Picking Lists</span></span></li>
-<li><span data-ttu-id="d97f4-141">製品</span><span class="sxs-lookup"><span data-stu-id="d97f4-141">Products</span></span></li>
-<li><span data-ttu-id="d97f4-142">発注書</span><span class="sxs-lookup"><span data-stu-id="d97f4-142">Purchase Orders</span></span></li>
-<li><span data-ttu-id="d97f4-143">販売注文</span><span class="sxs-lookup"><span data-stu-id="d97f4-143">Sales Orders</span></span></li>
-<li><span data-ttu-id="d97f4-144">シフト</span><span class="sxs-lookup"><span data-stu-id="d97f4-144">Shifts</span></span></li>
-<li><span data-ttu-id="d97f4-145">在庫棚卸仕訳帳</span><span class="sxs-lookup"><span data-stu-id="d97f4-145">Stock Counts Journals</span></span></li>
-<li><span data-ttu-id="d97f4-146">移動オーダー</span><span class="sxs-lookup"><span data-stu-id="d97f4-146">Transfer Orders</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="d97f4-147">メタデータ</span><span class="sxs-lookup"><span data-stu-id="d97f4-147">Metadata</span></span></td>
-<td><span data-ttu-id="d97f4-148">メタデータは、クライアントとサーバーの間の契約を定義します。</span><span class="sxs-lookup"><span data-stu-id="d97f4-148">Metadata defines the contract between the client and the server.</span></span></td>
-</tr>
-</tbody>
-</table>
+![Commerce Scale Unit のプラットフォームの統合](./media/CSUConsumer.PNG)
 
-<span data-ttu-id="d97f4-149">自分自身のエンティティ タイプまたは複合タイプを作成して、既存のコントローラーを拡張し、新しいコントローラーを追加し、メタデータをカスタマイズすることができます。</span><span class="sxs-lookup"><span data-stu-id="d97f4-149">You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata.</span></span> <span data-ttu-id="d97f4-150">Commerce Runtime をカスタマイズする場合は、Commerce Scale Unit のさまざまなコンポーネントもカスタマイズし、これらの変更を Retail Modern POS クライアントに公開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d97f4-150">If you customize the commerce runtime, you must also customize various components in Commerce Scale Unit to expose those changes to your Retail Modern POS clients.</span></span>
+## <a name="components"></a><span data-ttu-id="90b59-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="90b59-111">Components</span></span>
 
+<span data-ttu-id="90b59-112">ヘッドレス コマースには、次のコンポーネントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="90b59-112">The headless commerce contains these components:</span></span>
 
++ <span data-ttu-id="90b59-113">コンシューマー API</span><span class="sxs-lookup"><span data-stu-id="90b59-113">Consumer APIs</span></span>
++ <span data-ttu-id="90b59-114">Commerce Runtime (CRT)</span><span class="sxs-lookup"><span data-stu-id="90b59-114">Commerce runtime (CRT)</span></span>
++ <span data-ttu-id="90b59-115">チャネル データベース</span><span class="sxs-lookup"><span data-stu-id="90b59-115">Channel database</span></span>
+
+### <a name="consumer-apis"></a><span data-ttu-id="90b59-116">コンシューマー API</span><span class="sxs-lookup"><span data-stu-id="90b59-116">Consumer APIs</span></span>
+
+<span data-ttu-id="90b59-117">ヘッドレス コマースでは、Dynamics 365 Commerce 用の Open Data Protocol (OData) API と使用できるサード パーティ アプリが公開されます。</span><span class="sxs-lookup"><span data-stu-id="90b59-117">The headless commerce exposes Open Data Protocol (OData) APIs for Dynamics 365 Commerce and third-party applications to consume.</span></span> <span data-ttu-id="90b59-118">API レイヤーは、ASP.NET コアを使用して作成されます。</span><span class="sxs-lookup"><span data-stu-id="90b59-118">The API layer is built by using ASP.NET Core.</span></span> <span data-ttu-id="90b59-119">クライアントが API を使用できるように異なった認証オプションが提供されます。</span><span class="sxs-lookup"><span data-stu-id="90b59-119">It provides different authentication options so that the clients can consume the APIs.</span></span> <span data-ttu-id="90b59-120">API は、ビジネス ロジックを公開するラッパーです。</span><span class="sxs-lookup"><span data-stu-id="90b59-120">The APIs are a wrapper that exposes the business logic.</span></span> <span data-ttu-id="90b59-121">詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="90b59-121">For more information, see the following topics:</span></span>
+
++ [<span data-ttu-id="90b59-122">Commerce Scale Unit の顧客およびコンシューマー API</span><span class="sxs-lookup"><span data-stu-id="90b59-122">Commerce Scale Unit customer and consumer APIs</span></span>](retail-server-customer-consumer-api.md)
++ [<span data-ttu-id="90b59-123">API の使用</span><span class="sxs-lookup"><span data-stu-id="90b59-123">Consume APIs</span></span>](consume-retail-server-api.md)
++ [<span data-ttu-id="90b59-124">カスタム API</span><span class="sxs-lookup"><span data-stu-id="90b59-124">Custom APIs</span></span>](retail-server-icontroller-extension.md)
+
+### <a name="commerce-runtime"></a><span data-ttu-id="90b59-125">Commerce Runtime</span><span class="sxs-lookup"><span data-stu-id="90b59-125">Commerce runtime</span></span>
+
+<span data-ttu-id="90b59-126">CRT は、コア コマース ビジネス ロジックを含むポータブル .NET ライブラリの集合です。</span><span class="sxs-lookup"><span data-stu-id="90b59-126">CRT is a collection of portable .NET libraries that contain the core commerce business logic.</span></span> <span data-ttu-id="90b59-127">コンシューマー API はクライアントに使用するビジネス ロジックを公開します。</span><span class="sxs-lookup"><span data-stu-id="90b59-127">The consumer APIs expose the business logic for clients to consume.</span></span> <span data-ttu-id="90b59-128">ビジネス ロジックを追加または変更するには、CRT をカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="90b59-128">To add or modify business logic, customize CRT.</span></span> <span data-ttu-id="90b59-129">詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="90b59-129">For more information, see the following topics:</span></span>
+
++ [<span data-ttu-id="90b59-130">Commerce Runtime (CRT) のサービス</span><span class="sxs-lookup"><span data-stu-id="90b59-130">Commerce runtime (CRT) services</span></span>](crt-services.md)
++ [<span data-ttu-id="90b59-131">CRT 拡張機能</span><span class="sxs-lookup"><span data-stu-id="90b59-131">CRT Extensions</span></span>](commerce-runtime-extensibility.md)
+
+### <a name="channel-database"></a><span data-ttu-id="90b59-132">チャネル データベース</span><span class="sxs-lookup"><span data-stu-id="90b59-132">Channel database</span></span>
+
+<span data-ttu-id="90b59-133">チャネル データベースは、オンライン ストアまたは従来型の店舗などの 1 つ以上のコマース チャネルからのトランザクション データおよびマスター データを保持します。</span><span class="sxs-lookup"><span data-stu-id="90b59-133">The channel database holds transactional data and master data from one or more commerce channels, such as an online store or a brick-and-mortar store.</span></span> <span data-ttu-id="90b59-134">マスター データは Commerce Data Exchange (CDX) を使用して、Commerce 本社からチャネル データベースにプッシュ ダウンされます。</span><span class="sxs-lookup"><span data-stu-id="90b59-134">Master data is pushed down from Commerce headquarters to the channel database by using Commerce Data Exchange (CDX).</span></span> <span data-ttu-id="90b59-135">チャネル データベースに格納されたトランザクション データは、CDX を使用して Commerce 本社に引き戻されます。</span><span class="sxs-lookup"><span data-stu-id="90b59-135">Transactional data that is stored in the channel database is pulled back to Commerce headquarters by using CDX.</span></span> <span data-ttu-id="90b59-136">詳細については、[チャネル データベース拡張機能](channel-db-extensions.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90b59-136">For more information, see [Channel database extensions](channel-db-extensions.md).</span></span>
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
