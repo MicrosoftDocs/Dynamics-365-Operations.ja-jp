@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48ec8e1c553e649b37b503c243bfbc483e3e6ab3
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 9655b1bf2993a5dee4b82155cf2eed4716bedfef
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909048"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193119"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
@@ -35,8 +35,7 @@ ms.locfileid: "5909048"
 ## <a name="control-block-diagram"></a>コントロール ブロック図
 この高度な図は、拡張可能なコントロールの主要コンポーネントと、それらが相互にやり取りする方法を示しています。 拡張可能なコントロール ソリューションには、コントロールを実装する 2 つの X++ クラスが含まれます。 ランタイム クラスは、ランタイム データ、プレゼンテーション、コントロールの動作を実装します。 ビルド クラスは、コントロールがフォーム デザイナー、プロパティ ウィンドウ、およびアプリケーション エクスプローラーでどのように表示されるかを定義します。 [![Extensibility アーキテクチャ](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
 
-<a name="x"></a>X++
----
+## <a name="x"></a>X++
 
 コントロールの X++ API は、フォーム開発者向けの API です。 コントロールの X++ API を設計する際には、フォーム開発者に提供する API とビヘイビアーを考慮してください。
 

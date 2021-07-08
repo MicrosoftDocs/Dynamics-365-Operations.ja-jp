@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdc156006b1a1c758fc3bc1c6931513967030155
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d1f0ecf0d9d178ad693d28090d897b1106ceeeb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745103"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189216"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5745103"
 
 このトピックでは、ネストされた簡易リストと詳細 (NSL+D) サブパターンについての情報を提供します。 このサブパターンは、子エンティティが別のフォーム タイプ内に存在するとき、セカンダリ エンティティ、すなわち、その子エンティティに関する情報を表示するために使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 この記事では、ネストされた簡易リストと詳細 (NSL + D) サブパターンという名前の簡易リストと詳細 (SL + D) パターンの変形について説明します。 SL&D フォーム パターンは、フォーム上の主エンティティに関する情報の表示に使用されます。一方、NSL + D サブパターンは、別のフォーム タイプ内にその子エンティティが表示される場合、セカンダリ エンティティまたは子エンティティに関する情報の表示に使用されます。 子エンティティに関連する情報は、グリッド (10 以上のフィールド) には多すぎるが、子エンティティ自体のフォームには足りない量である必要があります。 NSL+D サブパターンは、SL+D フォーム パターンを少し異なります。
 

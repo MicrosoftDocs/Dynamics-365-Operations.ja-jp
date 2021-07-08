@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3a2db97cfd5aa6210002bf3e6abb1d7a178623c4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: a2bcd7a1ce68dfd6c4c93d10561d58a42d30f611
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057361"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303247"
 ---
 # <a name="manage-leave-and-absence-requests"></a>休暇および欠勤要求の管理
 
@@ -34,11 +34,9 @@ ms.locfileid: "6057361"
 
 3. 必要に応じて自分のチーム メンバーの休暇申請を表示および承認します。
 
-## <a name="preview-leave-request-workflow-experience-enhancements"></a>(プレビュー) 休暇申請ワークフロー エクスペリエンス拡張機能
+## <a name="leave-request-workflow-experience-enhancements"></a>休暇申請ワークフロー エクスペリエンス拡張機能
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-このプレビュー機能は、次の拡張機能を提供します。
+この機能は、次の拡張機能を提供します。
 
 - 複数の休暇申請を選択し、すべての休暇申請に対して同じアクションを実行できます。
 - ページの上部に位置するリボンと新しいワークフロー ボタンには、休暇申請に対して実行できるアクションが表示されます。

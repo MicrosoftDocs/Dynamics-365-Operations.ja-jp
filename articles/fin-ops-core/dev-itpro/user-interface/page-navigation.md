@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cc72cccec50ea4567cade4c52713ef815c31ce5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6a117c4b25a597abbf88c4750084d1d9e33175c5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752932"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188396"
 ---
 # <a name="navigation-concepts"></a>ナビゲーション概念
 
@@ -27,8 +27,7 @@ ms.locfileid: "5752932"
 
 この記事では、ダッシュボード、新しいナビゲーション検索機能、ナビゲーション ペイン、ワークスペース、タイルなどの主要なナビゲーションの概念について説明します。
 
-<a name="navigation-concepts"></a>ナビゲーション概念
--------------------
+## <a name="navigation-concepts"></a>ナビゲーション概念
 
 プライマリ ナビゲーションの概念は次のとおりです。
 

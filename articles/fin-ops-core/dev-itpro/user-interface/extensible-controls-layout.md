@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc34cf91a944fca07f2c2e2cacf72029087216b2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 306c1345259b8194ede71d41c1eefc60eb825bf2
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745711"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193393"
 ---
 # <a name="extensible-control-layout-guidelines"></a>拡張可能なコントロール レイアウトのガイドライン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5745711"
 
 この記事では、拡張可能なコントロールのレイアウトとサイズを指定するときに従うガイドラインについて説明します。
 
-<a name="dos-and-donts-for-achieving-the-desired-layout"></a>目的のレイアウトを実現するための注意事項
------------------------------------------------
+## <a name="dos-and-donts-for-achieving-the-desired-layout"></a>目的のレイアウトを実現するための注意事項
 
 -   コントロールのレイアウト クラスを直接使用しないでください。 (たとえば、**layout-container** および **layout-horizontal** は、DOM のコントロールに表示されるクラスです。) 代わりに、レイアウト バインディング ハンドラーを使用して、これらのクラスを適用します。 Internet Explorer は異なるレイアウト フレームワークを使用しており、要素にいくつかのインライン スタイルを追加するには、このフレームワークにハンドラーが提供する予備のバインディング情報が必要です。 したがって、クラスがコントロールにハードコードされて **いない** ことを確認してください。
 -   レイアウト バインディング ハンドラーを使うコンテナーの子である要素に、絶対配置 (**position: absolute** and **top**/**bottom**/**left**/**right** positions) を使用しないでください。 これらの要素の絶対配置は、正しく物事をレイアウトすることに適用される CSS クラスを妨げます。
@@ -90,8 +89,7 @@ ms.locfileid: "5745711"
 <div data-dyn-role="Group" data-dyn-bind="ArrangeMethod: $dyn.layout.ArrangeMethod.vertical, Columns: $dyn.layout.Columns.fill, Height: $dyn.layout.Size.available"></div>
 ```
 
-<a name="faq"></a>よく寄せられる質問
----
+## <a name="faq"></a>よく寄せられる質問
 
 #### <a name="is-my-control-being-laid-out-as-expected"></a>自分のコントロールが期待どおりにレイアウトされているか。
 

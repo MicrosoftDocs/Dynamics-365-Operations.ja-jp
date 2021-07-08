@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f766334448fd364e1a4c14e355918a80615604a3
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 076b899abadd8de64e9dfc672793f1f03791f772
+ms.sourcegitcommit: 55ca275705a624d446d2abb60b5d676b86fe7240
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866126"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "6306794"
 ---
 # <a name="troubleshooting-guide-for-testing-with-the-performance-sdk"></a>パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
 
@@ -35,7 +35,7 @@ ms.locfileid: "5866126"
 
 ### <a name="solution"></a>ソリューション
 
-[パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト](multi-user-testing-local-test-controller.md) を参照してください。 リンク先セクションでは、このタイプのテストにおいて正しい証明書を作成する方法について説明しています。 証明書のサムプリントを wif.config ファイルに追加する方法についても説明します。
+[パフォーマンス SDK を使用したマルチユーザー テスト](perfsdk-multi-user-testing.md) を参照してください。 リンク先セクションでは、このタイプのテストにおいて正しい証明書を作成する方法について説明しています。 証明書のサムプリントを wif.config ファイルに追加する方法についても説明します。
 
 ## <a name="zoom-factor"></a>拡大率
 

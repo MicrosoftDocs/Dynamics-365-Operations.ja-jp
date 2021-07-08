@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: paulliew
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: 872c23448da3101c88d2e120f137256e4732dfa1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6e48143c8465a97eb9c878378b038a6042afd1d6
+ms.sourcegitcommit: 18ca2df785e9656fdd4e8c0734eca2b2624fda10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745906"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6293958"
 ---
 # <a name="set-the-session-inactivity-timeout"></a>セッション非活動タイムアウトの設定
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 セッション非活動タイムアウト設定は、ユーザーのセッションがタイムアウトして閉じる前にユーザーが非活動になれる時間の長さを表します。 ユーザーブラウザセッションにのみ影響します。
 

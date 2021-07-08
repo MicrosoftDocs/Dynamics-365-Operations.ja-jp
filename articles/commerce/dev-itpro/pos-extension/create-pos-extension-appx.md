@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: e8bf9753e87efeefda2e4714ac6d2d39d93eb5df
-ms.sourcegitcommit: d84329f903d359ae042e8c0a4594982a7e06756f
+ms.openlocfilehash: 820410933035d80b137fe4415bfb2c2be49d6588
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5984206"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193688"
 ---
 # <a name="create-an-appx-file-for-a-modern-pos-extension-package"></a>Modern POS 拡張パッケージの .appx ファイルの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、 Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。 これらの手順は、MPOS の拡張機能を開発する場合にのみ必要です。 MPOS 拡張機能パッケージ プロジェクトは、MPOS アプリを拡張する[MSIX Windows アプリ パッケージ](https://docs.microsoft.com/windows/msix/overview) を生成します。
+このトピックでは、 Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。 これらの手順は、MPOS の拡張機能を開発する場合にのみ必要です。 MPOS 拡張機能パッケージ プロジェクトは、MPOS アプリを拡張する[MSIX Windows アプリ パッケージ](/windows/msix/overview) を生成します。
 
 1. 新しい JavaScript Universal Windows Platform (UWP) アプリ プロジェクトを作成します。
 

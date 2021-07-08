@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b925dd1768334179a7ca85d7a6b9bdd36b4cef9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2093d07bd29648dcb288a9bd7c0786afd267e418
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749598"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188101"
 ---
 # <a name="simple-list-and-details-form-pattern"></a>簡易リストおよび簡易詳細のフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749598"
 
 このトピックでは、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 簡易リストと詳細 (SL+D) パターンは、中程度の複雑さのエンティティのデータを管理するために使用します。 中間の複雑度であるエンティティは、6 つ以上のフィールドを持つエンティティです。 簡易リスト パターンは、フィールドが 6 つ未満の単純なエンティティに使用してください。 依然として最大 15 フィールドのエンティティが単純なエンティティと見なされている場合、いくつかの例外があります。 簡易リストと詳細パターンは、これらの条件が満たされたときに規定されます。
 

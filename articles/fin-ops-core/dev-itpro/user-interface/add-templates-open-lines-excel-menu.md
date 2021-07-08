@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c1295b306bb75e731919e5951c0628a0b071a1b
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 88c54265f66cc2625b0cecfcde50c7237a7a07bb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015993"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189226"
 ---
 # <a name="add-templates-to-the-open-lines-in-excel-menu"></a>[Excel で明細行を開く] メニューへのテンプレートの追加
 
@@ -179,8 +179,7 @@ ms.locfileid: "6015993"
 5.  クライアントで、**共通** &gt; **共通** &gt; **Office 統合** &gt; **ドキュメント テンプレート** &gt; **システム テンプレートの再読み込み** と移動します。 一覧に新しいテンプレートが表示され、そのテンプレートを仕訳帳ページに追加した場合、そのテンプレートは **Excel で明細行を開く** メニューにも表示されます。
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)
 

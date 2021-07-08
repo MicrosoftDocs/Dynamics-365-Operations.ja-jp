@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5700e74f5367b9aebd49f3c6d72fe7eb878511cf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5df6aea1de9fde3661c9236a39025ad6d52110bb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745707"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189300"
 ---
 # <a name="list-panel-subpattern"></a>リスト パネルのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5745707"
 
 この記事では、リスト パネル フォームのサブパターンに関する情報を提供します。 アプリケーション チームはこのサブパターンを使用して相互にデータを移動する 2 つのリストを管理します。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 リスト パネルは、アプリケーション チームがそれぞれの間でデータを移動する 2 つのリストを管理するために使用するサブパターンです。 このパターンは、相互にデータを移動する 2 つのリストを管理する **SysListPanel** クラス (プログラム的) アプローチのモデル化バージョンを表すことを意図しています。 リスト パネル サブパターンは、次のコントロールに対して適用できます。
 

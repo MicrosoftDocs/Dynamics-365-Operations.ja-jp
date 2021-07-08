@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a9cf97395789d4338d26525a1507dcd1a53a25c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: afeb4e9958a4f14633cd27b0d85b9b1fc6ea933b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744179"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188095"
 ---
 # <a name="tabular-fields-subpattern"></a>表形式フィールドのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5744179"
 
 この記事では、表形式フィールドのサブパターンに関する情報を提供します。 このサブパターンは、情報を表形式で効率的に表示するために使用されます。 
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 このサブパターンは、情報を表形式で効率的に表示するために使用されます。 フィールドは、行と列を含む表に配置され、オプションで列ヘッダー、行ラベル、キャプション、およびフッターが含まれます。 表形式フィールド サブパターンは、次のコントロールに対して適用できます。
 

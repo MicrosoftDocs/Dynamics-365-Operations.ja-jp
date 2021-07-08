@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 958b604336e201582ca0d2686348e52b2fb0c8b4
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 57acfbffefd79d2639f15643e9f84f6beef63a3b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117195"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189535"
 ---
 # <a name="whats-new-and-changed-in-platform-updates"></a>プラットフォーム更新の新機能と変更された機能
 
@@ -27,9 +27,9 @@ ms.locfileid: "6117195"
 
 Finance and Operations アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。
 
-| **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細**                                                                                                                                                                                                                        |
+| **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細はこちら**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| プラットフォーム更新プログラム 10.0.20 | 7.0.6060    | 2021 年 7 月     | [Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-20.md)  |
+| プラットフォーム更新プログラム 10.0.20 | 7.0.6060    | 2021 年 8 月     | [Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-20.md)  |
 | プラットフォーム更新プログラム 10.0.19 | 7.0.6009    | 2021年 6 月     | [Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-19.md)  |
 | プラットフォーム更新プログラム 10.0.18 | 7.0.5968    | 2021 年 5 月     | [Finance and Operations アプリ バージョン 10.0.18 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-18.md)  |
 | プラットフォーム更新プログラム 10.0.17 | 7.0.5934    | 2021 年 4 月     | [Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-17.md)  |

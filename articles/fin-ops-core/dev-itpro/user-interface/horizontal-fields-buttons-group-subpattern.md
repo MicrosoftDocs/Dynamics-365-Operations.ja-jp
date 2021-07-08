@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0f79add42ef4a5183770b1edbb7f24d8035a48d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 65a4149dddca74b1dae02f334fb1c7158d5fbecb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749237"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189306"
 ---
 # <a name="horizontal-fields-and-buttons-group-subpattern"></a>水平フィールドおよびボタン グループのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749237"
 
 この記事では、水平フィールドおよびボタン グループ フォームのサブパターンに関する情報を提供します。 このサブパターンは、フォーム上の個々のフィールドのアクションを定義する必要があるときに使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 このサブパターンは、フォーム上の個々のフィールドのアクションを定義する必要があるときに使用されます。 これらのボタンはフィールドの右側に配置され、アクションをフィールドと視覚的に関連付けます。 ボタンには、アイコンのみ (テキストなし) が表示されます。 セクションまたはフォーム全体に関連付けられているアクションは、そのセクションまたはフォーム上にあるツールバーまたは ActionPane に配置する必要があります。
 

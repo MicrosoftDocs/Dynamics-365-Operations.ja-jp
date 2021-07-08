@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 71c7b63cf246ae07984d4a6a6508728871da5430
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c199868851a64dfedabf42ea6e55e33d6f0d2661
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749968"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303428"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 
@@ -35,7 +35,7 @@ ms.locfileid: "5749968"
 
 セルフ サービス機能を使用する顧客は、Lifecycle Services (LCS) エクスペリエンスにおいて次の変更が見られます。 
 
-- 配置はセルフ サービスであり、平均 30 分以内に完了することができます。 配置のリード タイムや待機時間はなくなります。 いつ配置するかを制御し、環境が展開されていることを確認できます。 このエクスペリエンスは、現在のエクスペリエンスと同じです。 詳細については、 [セルフサービス配置の FAQ](deploymentFAQ.md) を参照してください。
+- 配置はセルフサービスであり、環境のタイプ (サンドボックスまたは生産) に応じて、平均 1 ~ 2時間以内に完了できます。 配置のリード タイムや待機時間はなくなります。 いつ配置するかを制御し、環境が展開されていることを確認できます。 このエクスペリエンスは、現在のエクスペリエンスと同じです。 詳細については、 [セルフサービス配置の FAQ](deploymentFAQ.md) を参照してください。
 
    ![配置設定](media/deployment-settings.png)
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44b59d68039b52ebd67f2a8cb9950606b93df645
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d8e226474acb74f19ac367b18df0bde12e484a07
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865959"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189589"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
@@ -24,8 +24,7 @@ ms.locfileid: "5865959"
 
 このトピックには、X++ の構文リファレンスが含まれています。 
 
-<a name="x-keywords"></a>X++ キーワード
-------------
+## <a name="x-keywords"></a>X++ キーワード
 
 次の表に示す X++ キーワードは予約されています。 これらのキーワードは、他の目的に使用することはできません。
 
@@ -1474,8 +1473,7 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [X++ 言語リファレンス](xpp-language-reference.md)
 

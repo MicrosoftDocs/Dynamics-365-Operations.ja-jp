@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86ca63b1703faa6f57ed2e5591c89a5e84363481
-ms.sourcegitcommit: 318e406b84d43381d450272eb83c5eea9c5cf1c0
+ms.openlocfilehash: ddd4c55f6ebfbe91fb949a92cb379f51d826c465
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059476"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303467"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>休暇計画の見越計上
 
@@ -104,11 +104,9 @@ Dynamics 365 Human Resources において、複数の従業員または個々の
 
 2. **休暇の管理** で、**休暇発生の監査の削除** を選択します。
 
-## <a name="preview-leave-accrual-transaction-auditing"></a>(プレビュー) 休暇見越計上のトランザクション監査
+## <a name="leave-accrual-transaction-auditing"></a>休暇見越計上のトランザクション監査
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-このプレビュー機能は、休暇・欠勤管理者が、特定の休暇タイプの従業員の休暇残数に関連する休暇・欠勤の発生トランザクションを理解するのに役立ちます。
+この機能は、休暇・欠勤管理者が、特定の休暇タイプの従業員の休暇残数に関連する休暇・欠勤の発生トランザクションを理解するのに役立ちます。
 
 トランザクションの詳細を表示する方法:
 

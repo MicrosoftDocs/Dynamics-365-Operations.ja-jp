@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f38f9ae2406ea67d971c794d8b76e0882889992
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 62040659145062b07808a4332773ab0ed1bcf63c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866108"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188424"
 ---
 # <a name="x-reflection-runtime-functions"></a>X++ リフレクション ランタイム関数
 
@@ -24,8 +24,7 @@ ms.locfileid: "5866108"
 
 このトピックでは、リフレクション ランタイム関数について説明します。
 
-<a name="classidget"></a>classIdGet
-----------
+## <a name="classidget"></a>classIdGet
 
 初期化されるオブジェクトが属しているクラスの数値識別子 (クラス ID) を取得します。
 

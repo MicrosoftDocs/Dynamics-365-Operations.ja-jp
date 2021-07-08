@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d7aeb9d974d828f4afc631d30bec8d64ba5e63f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: dc1e6cecc28f4c0c0876ee5573dae28d18f8b765
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923241"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188426"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 
@@ -24,8 +24,7 @@ ms.locfileid: "5923241"
 
 このトピックでは、セッション ランタイム関数について説明します。
 
-<a name="curext"></a>curExt
-------
+## <a name="curext"></a>curExt
 
 現在の会社に使用できる拡張を取得します。
 

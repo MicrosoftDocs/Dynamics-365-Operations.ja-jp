@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d520a8bbbad32ad42f41c64280e77799168c69a3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 371671334925d52011634a2721a0100ff9c2cfdc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749595"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188099"
 ---
 # <a name="simple-list-form-pattern"></a>簡易リストのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749595"
 
 この記事では、簡易リストのフォームのパターンに関する情報を提供します。 このパターンは、単純なエンティティのデータを維持するために使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 簡易リスト パターンは簡易エンティティのデータを管理するために使用します。 簡易エンティティは、フィールドが 6 つ以下で、親/子関係のないエンティティです。 依然として最大 15 フィールドのエンティティが単純なエンティティと見なされている場合、いくつかの例外があります。
 

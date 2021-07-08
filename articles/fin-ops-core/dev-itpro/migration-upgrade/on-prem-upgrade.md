@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.x
-ms.openlocfilehash: e2e1c136d5c08ddef30d9193bf575a85445bb8d8
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 38117941ccfcd28f1ce70af2199815bbbad6d522
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921403"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193766"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -54,7 +54,7 @@ ms.locfileid: "5921403"
 
 4.  Hyper-V を使用して、仮想マシン (VM) を起動し、VHD を接続します。 (マシンはジェネレーション 1 である必要があります。)
 
-5.  VM に接続します。 資格情報を[仮想マシン (VM) をローカルで実行](../dev-tools/access-instances.md#running-the-virtual-machine-vm-locally)から見つけることができます。
+5.  VM に接続します。 資格情報を[仮想マシン (VM) をローカルで実行](../dev-tools/access-instances.md#running-the-virtual-machine-locally)から見つけることができます。
 
 6.  オンプレミスで予定されている 10.0.x のターゲット バージョンとダウンロードした VHD イメージによっては、 **アセットタイプの選択** と **ソフトウェアで展開可能なパッケージ** 配下にある共有アセット ライブラリから必要なアプリケーションとプラットフォーム更新プログラムをダウンロードして適用することが必要となる場合があります。 詳細な情報については、[コマンド ラインからの配置可能なパッケージのインストール](../deployment/install-deployable-package.md) を参照してください。
 
@@ -64,7 +64,7 @@ ms.locfileid: "5921403"
 
 1.  オンプレミス AOS、BI、および MR サーバーをシャットダウンするか、または各ノードで Service Fabric Host Service を停止し、無効にします。
 
-2.  オンプレミス環境 (通常は AXDB) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017)」を参照してください。
+2.  オンプレミス環境 (通常は AXDB) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)」を参照してください。
 
 3.  VHD で C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage に移動し、MinorVersionDataUpgrade zip ファイルをコピーします。
 
@@ -72,7 +72,7 @@ ms.locfileid: "5921403"
 
 5.  管理者としてコマンド プロンプトを開き、手順 4 で展開していないフォルダーへディレクトリを変更します。
 
-6.  Onebox VM に作成したバックアップを復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+6.  Onebox VM に作成したバックアップを復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 
 7.  オプション: 復元したデータベースの名前が AXDB ではない場合は、管理者権限を持つ PowerShell を使用して実行します。
     
@@ -114,9 +114,9 @@ ms.locfileid: "5921403"
 
     b.  **資産タイプを選択** 配下で、**モデル** を選択し、Dynamics 365 for Finance and Operations オンプレミスのバージョン 10.0.x デモ データをダウンロードします。 設置型のベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
 
-    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
      
-    d.  データベースを構成する必要があります。 [Finance and Operations データベースのコンフィギュレーション](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database) の手順に従います。
+    d.  データベースを構成する必要があります。 [Finance and Operations データベースのコンフィギュレーション](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database) の手順に従います。
 
     e.  LCS にて、新たな環境を設定し、バージョン 10.0.x (再展開) を展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
 
@@ -145,9 +145,9 @@ ms.locfileid: "5921403"
 
 1.  オンプレミス AOS、BI、および MR サーバーをシャットダウンするか、または Service Fabric ポータルからサービスを停止します。
 
-2.  オンプレミス環境 (通常は AXDB) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成 (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017)」を参照してください。
+2.  オンプレミス環境 (通常は AXDB) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成 (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)」を参照してください。
 
-3.  先ほど作成したバックアップをデータベース サーバーを復元し、別の名前 (AXDBtoupgrade) を付けます。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+3.  先ほど作成したバックアップをデータベース サーバーを復元し、別の名前 (AXDBtoupgrade) を付けます。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 
 4.  接続されたら、C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage に移動し、MinorVersionDataUpgrade zip ファイルをコピーします。
 
@@ -165,7 +165,7 @@ ms.locfileid: "5921403"
     > \<\*\> を必要な値に置き換えます。
 
     > [!NOTE]
-    > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017)」を参照してください。
+    > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](/sql/relational-databases/security/authentication-access/create-a-database-user)」を参照してください。
     >
     > - SQL Server 証明書に署名した証明書を、 OneBox の信頼された証明機関に追加する必要があります。 詳細については、「[信頼されたルート証明書をインストールする](/skype-sdk/sdn/articles/installing-the-trusted-root-certificate)」を参照します。
     >
@@ -197,7 +197,7 @@ ms.locfileid: "5921403"
 
     b.  **資産タイプを選択** 配下で、**モデル** を選択し、Dynamics 365 for Finance and Operations オンプレミスのバージョン 10.0.x デモ データをダウンロードします。 設置型のベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
 
-    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 
     d.  データベースを構成する必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1deb261f11f888df6b7fd7d7d149dd3e81802972
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63dfaa22d0c31026a2baa1a1047f3ecafabcb9a9
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749239"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189222"
 ---
 # <a name="control-checklist"></a>コントロールのチェックリスト
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749239"
 
 この記事では、コントロールのすべてのリリース条件を分類して説明しています。
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 通常、新しいコントロールを作成する場合、主にシナリオ機能と技術的な実装に焦点を当てます。 ただし、この記事で説明されているように、コントロールが出荷できる状態になったと見なされる前に、一連のベスト プラクティス、品質、および開発リリース基準に準拠している必要があります。
 

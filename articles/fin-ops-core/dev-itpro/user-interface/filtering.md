@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c328583a9c65b6138e30c9cb6e34538e78eb203
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4659953bca838b7cc86f947be6ec68fa8b772d13
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748159"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189316"
 ---
 # <a name="filtering-options"></a>フィルター処理のオプション
 
@@ -27,8 +27,7 @@ ms.locfileid: "5748159"
 
 このトピックでは、利用可能なフィルター処理オプションについて説明します。
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 Microsoft Dynamics AX 2012 には、次のフィルタ処理オプションが用意されています。
 

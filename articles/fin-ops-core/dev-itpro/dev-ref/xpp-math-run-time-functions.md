@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 584d5ec093650097ecde6efda436ec1fa4a2aded
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 7d25eba11ff1129b69ca3d07de9e6027c27deeeb
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923243"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193446"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 
@@ -26,8 +26,7 @@ ms.locfileid: "5923243"
 
 これらの関数は数学的な計算を実行します。
 
-<a name="abs"></a>abs
----
+## <a name="abs"></a>abs
 
 実数の絶対値を取得します。 例
 
@@ -219,8 +218,8 @@ real corrFlagSet(real real, int arg)
 
 **0** フラグが現在オフの場合。フラグがオンの場合はゼロ以外の値。
 
-<a name="cos"></a>cos
----
+## <a name="cos"></a>cos
+
 
 実数の余弦を取得します。
 
@@ -328,8 +327,7 @@ real decRound(real figure, int decimals)
 -   **decRound(12345.6789,1)** は、値 **12345.70** を返します。
 -   **decRound(12345.6789,-1)** は、値 **12350.00** を返します。
 
-<a name="exp"></a>exp
----
+## <a name="exp"></a>exp
 
 指定した実数の値の自然逆対数を取得します。
 
@@ -473,8 +471,7 @@ real logN(real arg)
 
 **logN(45)** は、値 **3.81** を返します。
 
-<a name="max"></a>最大
----
+## <a name="max"></a>最大
 
 2 つの指定した値の大きい方を取得します。
 
@@ -498,8 +495,7 @@ anytype max(anytype object1, anytype object2)
 -   **最大 (12.0,12.1)** は、値 **12.1** を返します。
 -   **最大 (2,33)** は、値 **33** を返します。
 
-<a name="min"></a>最小
----
+## <a name="min"></a>最小
 
 2 つの指定した値の小さい方を取得します。
 
@@ -592,8 +588,7 @@ real round(real _arg, real _decimals)
 -   **丸め (23.9,5.0)** は、値 **25.00** を返します。
 -   **丸め (26.1,5.0)** は、値 **25.00** を返します。
 
-<a name="sin"></a>sin
----
+## <a name="sin"></a>sin
 
 実数の正弦を取得します。
 
@@ -682,8 +677,7 @@ static void sinhExample(Args _arg)
 }
 ```
 
-<a name="tan"></a>tan
----
+## <a name="tan"></a>tan
 
 実数の正接を取得します。
 

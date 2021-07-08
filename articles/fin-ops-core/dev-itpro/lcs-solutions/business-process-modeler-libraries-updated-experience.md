@@ -12,12 +12,12 @@ ms.custom: 196953
 ms.assetid: 6e7h6896-edef-4739-98ad-c9ea12880972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: d7105bc2db0dd8c1be10269f7ea41f9e3307e8f5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7e0e6306cab292f15848bc48909894336ed6ba80
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749279"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189928"
 ---
 # <a name="business-process-modeler-library-updated-bpm-experience"></a>ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )
 
@@ -25,8 +25,7 @@ ms.locfileid: "5749279"
 
 このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
 
-<a name="create-a-business-process-library"></a>業務プロセス ライブラリの作成
----------------------------------
+## <a name="create-a-business-process-library"></a>業務プロセス ライブラリの作成
 
 BPM ライブラリを作成する 2 つの方法があります。 明細行記録またはタスク記録がない新しいライブラリを作成、または既存のライブラリをコピーすることができます。
 
@@ -132,8 +131,7 @@ LCS の業務プロセス ライブラリで記録するタスクを表示でき
 6.  完了したら、**タスク ガイドの停止** を選択します。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
 

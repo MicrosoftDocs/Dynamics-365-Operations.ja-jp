@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6f78441445baecba279f96eb3935d9ebbb4ff03f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 442a5f5b321833c170cfecc4069e62a1254605cd
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021911"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270483"
 ---
 # <a name="predefined-product-variants"></a>事前定義された製品バリアント
 
@@ -76,8 +76,6 @@ ms.locfileid: "6021911"
 1. **保存** を選択します。
 
 ## <a name="improved-variant-suggestions"></a>バリアント提案の改善
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 *バリアント提案ページの改善* 機能を使用すると、**バリアント提案** ページが改善され、製品分析コードの組み合わせが多い会社のパフォーマンスと操作性問題に対処できます。 バリアント提案を生成する製品分析コード値を選択するプロセスの強化により、関連する製品バリアントの識別とリリースをより迅速かつ簡単に行うことができます。
 

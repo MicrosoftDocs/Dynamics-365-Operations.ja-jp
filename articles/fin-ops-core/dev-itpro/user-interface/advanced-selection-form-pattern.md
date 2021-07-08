@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae0603ac60b6a06d9fa2574a2d3053d99990dde5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2093c74e302015b553cda92725a1c10b9abbab83
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745719"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189798"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5745719"
 
 この記事では、高度な選択フォーム パターンに関する情報を提供します。 このダイアログ フォーム パターンを使用すると、ユーザーは大規模な全体のリストから項目をフィルターして選択できます。 リスト パネルのパターンと同様に、このパターンは主要なユーザー タスクが項目のセットを選択するときに使用する必要があります。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 高度な選択フォーム パターンは、主要なユーザー タスクが項目のセットを選択するときに使用する必要があります。 このタスクは、通常、複数選択リストによって達成されます。 ただし、多くのシナリオでは、ユーザーは連続していない品目を選択する必要があり、同時に、選択する品目の一覧を表示する必要があります。 このパターンは、ユーザーが 1 つのリスト内の項目を選択して別のリストに追加する点において、リスト パネルのパターンと似ています。 ただし、このパターンにはカスタム フィルターおよび上部の「広い」リストがあり、およびページの画面「不動産」のほとんどを使用します (通常、大きなダイアログ)。 大規模かつ広範囲のリストでフィルター処理および選択しなければならない場合にこのパターンを使用します。
 

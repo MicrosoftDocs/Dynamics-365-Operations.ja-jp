@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22624c2952ca64bba53186d56d6dbf896e6a15dd
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 521a52428dd017913760c1fc673870be73a07b3e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920845"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189232"
 ---
 # <a name="lifecycle-services-lcs-user-guide"></a>Lifecycle Services (LCS) ユーザー ガイド
 
@@ -52,8 +52,7 @@ Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサ�
 | [ダウンロード可能なツール](ax-2012/lcs-downloadable-tools-formerly-informationsource.md)                       | **ダウンロード可能なツール** ページは、 Microsoft Dynamics InformationSource にホストされていたツールを提供します。                                      |
 | [ライセンス数見積もりツール](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)                 | ライセンス数見積もりツールは、必要なライセンスの数を予測するのに役立ちます。 これは、既定またはカスタマイズされたロールをモデル化して、必要なクライアント アクセス ライセンス (CAL) を自動的に計算できる共有ワークスペースを提供します。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 LCS チームは、 [Lifecycle Services エンジニアリング ブログ](https://cloudblogs.microsoft.com/dynamics365/?s=lcs) にも記事を執筆しています。 投稿やお知らせの最新情報を入手するため、RSS フィードを購読します。
 

@@ -2,7 +2,7 @@
 title: データベース移動 API - 参照 - v1 - 環境の開始および停止
 description: このトピックでは、データベース移動 API のバージョン 1 の参照資料を提供します。
 author: laneswenka
-ms.date: 02/11/2021
+ms.date: 03/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: fe5bcdc3d74f442cb7a485f2ad14c9cb791445ec
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1bc59c56f45025b413466a50a76656eb92707600
+ms.sourcegitcommit: e9b078cea2d7953fe4efaa065480cc9e5befbec8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753052"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "6277246"
 ---
 # <a name="start-and-stop-environments"></a>環境の開始および停止
 
@@ -90,7 +90,22 @@ POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+## <a name="rate-limits"></a>レート制限
 
+要求の負荷分散を向上させるために、スタート API とストップ API にはレート制限があります。 
+
+**スタート** API には、次の制限が適用されます。
+
+ * 各環境に対して 5 分間で 1 回の呼び出し 
+ * 各ユーザーに対して 30 分間で 30 回の呼び出し
+                
+**ストップ** API には、次の制限が適用されます。
+
+ * 各環境に対して 5 分間で 1 回の呼び出し 
+ * 各ユーザーに対して 30 分間で 30 回の呼び出し
+
+> [!NOTE]
+> 制限を超えた要求は、「HTTP 429 要求過多」 の応答で拒否されます。 **再試行** ヘッダーは、要求を再試行できる場合の秒数を示します。
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

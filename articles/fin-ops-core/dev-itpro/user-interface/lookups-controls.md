@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d650b9f8db1be06ea71c0e06391d99d04987a20
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b911e5f7e01d6ea06d8bd4220022679f5f103a6d
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751332"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189296"
 ---
 # <a name="lookup-controls"></a>ルックアップ コントロール
 
@@ -27,8 +27,7 @@ ms.locfileid: "5751332"
 
 この記事では、コントロールの検索動作を有効にする方法について説明します。 また、複数選択ルックアップを作成する方法について説明し、現在サポートされていないルックアップ シナリオの概要について説明します。
 
-<a name="enabling-lookup-behavior-in-controls"></a>コントロールのルックアップ動作を有効化
-------------------------------------
+## <a name="enabling-lookup-behavior-in-controls"></a>コントロールのルックアップ動作を有効化
 
 ### <a name="controls-bound-to-an-extended-data-type"></a>拡張データ型にバインドされたコントロール
 

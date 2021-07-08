@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 737c36e3b15c586b6e6c8ff982a61c90802b6919
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 5616488eeaaf8d7c7eca971a48142ce1814bf4c0
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937078"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193658"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -38,7 +38,7 @@ Xamarin の詳細については、[Xamarin のドキュメント](/xamarin/)を
 
 ## <a name="set-up-and-install-xamarin-on-windows"></a>Windows での Xamarin のセットアップとインストール
 
-Windows で Xamarin をセットアップしてインストールするには、<https://docs.microsoft.com/xamarin/android/get-started/installation/windows> にアクセスします。
+Windows で Xamarin をセットアップしてインストールするには、[Windows インストール](/xamarin/android/get-started/installation/windows) にアクセスします。
 
 ### <a name="update-xamarin"></a>Xamarin の更新
 
@@ -93,6 +93,15 @@ iOS で Xamarin をインストールに関する詳しい手順については�
        ![RS URL の POS iOS アプリ設定](./media/iOSRSURL.png)
       
   3.  MPOS アプリを起動します。 ログインして、デバイスをアクティブにすることができます。
+
+
+## <a name="hybrid-app-distribution"></a>ハイブリッド アプリの配布
+
+Android および iOS アプリを配布するには、Android および iOS アプリ チームによって推奨された次の配布オプションを参照してください。
+
+- [Android アプリの配布](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
+- [iOS アプリの配布](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
+
   
 ## <a name="dedicated-hardware-station-support-for-the-hybrid-android-app"></a>ハイブリッド Android アプリケーションに対応した専用ハードウェアステーション
   

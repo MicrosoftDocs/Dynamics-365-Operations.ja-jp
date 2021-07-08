@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 63351985f0a5d94a137ab28a2d01855fb0089329
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: 885badd98a552a31447d6d76a9f153c8550cbd75
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093904"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306403"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -30,6 +30,24 @@ ms.locfileid: "6093904"
 + [Dataverse のデータ - フェーズ 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
 + [Dataverse のデータ - フェーズ 1 と 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Dataverse の Finance and Operations データ – フェーズ 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+
+## <a name="june-2021-release"></a>2021 年 6 月リリース
+
+2021 年 6 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.98](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.27](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| バグ修正 | 2 分の時間制限を超えるトランザクションのロールバックを実装します。 | 一般提供 |
+| バグ修正 | キャッチアップ同期中に datetime フィールドの処理が修正されます。 | 一般提供 |
+| 追跡 | 中規模のトランザクション (5 つ以上のレコード) の重要ではないプラグイン トレース ログを制限します。 | 一般提供 |
+| バグ修正 | **共有製品の詳細** テーブルに保管および追跡用分析コード グループのルックアップ フィールドが追加されました。 これらのルックアップ フィールドが **リリース済み製品 V2" - > msdyn_sharedproductdetails** 二重書き込みマップに追加されました。 | 一般提供 |
+| バグ修正 | 販売注文では、既存の製品を選択した場合、**販売製品カテゴリ** の値が **製品カテゴリの割り当て** テーブルからの値への既定値となります。 ただし、既定値が販売階層の一部ではない場合は、品目の追加によってエラー メッセージが表示されます。 エラーを防ぎ、財務およびオペレーション アプリ内での割り当てを許可するには、**販売製品カテゴリ** フィールドを空白のままにできます。  | 一般提供 |
+| バグ修正 | 販売注文では、既存の製品を選択した場合、**販売製品カテゴリ** は読み取り専用です。 このファイルは、製品がリスト外に設定されている場合編集可能です。 | 一般提供 |
+| バグ修正 | 販売見積および販売注文の **税合計** フィールドは読み取り専用です。 **単位あたりの価格** が Finance and Operation アプリの販売見積明細行または販売注文明細行で変更される場合、Customer Engagement アプリの各販売見積明細行または販売注文明細行に逆同期する必要があります。  | 一般提供 |
+| バグ修正 | Finance and Operation アプリの **倉庫名** フィールドを更新すると、Dataverse の **名前** フィールドは空白になります。 | 一般提供 |
+| バグ修正 | ウクライナのためのローカライズの修正です。 | 一般提供 |
 
 ## <a name="may-2021-release"></a>2021 年 5 月リリース
 
@@ -113,6 +131,9 @@ ms.locfileid: "6093904"
 |------|---------|-------|
 | [販売見積のコマース価格エンジン](commerce-pricing.md) | コマース価格エンジンを使用した販売見積の価格を取得します。 | 一般提供 |
 | [メモの統合](notes-integration.md) | メモは、Customer Engagement アプリと、顧客、仕入先、販売注文、および発注書用の Finance and Operations アプリケーション間で統合されます。  | 一般提供 |
+
+> [!IMPORTANT]
+> メモの統合を必要としない場合は、二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.23 以降をインストールまたはアップグレードしないでください。 更新プログラムをインストールしている場合、メモ機能をアンインストールできません。 
 
 ## <a name="january-2021-release"></a>2021 年 1 月リリース
 

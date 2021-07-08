@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0ef37e50b84be3719ea71edb3b2a2e45a31cf88
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: dec805cb1b9f958b6f8881098ee1be882669619e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909219"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189310"
 ---
 # <a name="general-form-guidelines"></a>フォームの全般的なガイドライン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5909219"
 
 このトピックには、フォームのパターンに関係なく、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。
 
-<a name="verification-checklist"></a>検証のチェックリスト
-----------------------
+## <a name="verification-checklist"></a>検証のチェックリスト
 
 検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。 このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。 ブラウザーでフォームを開いて、これらの手順を確認します。
 

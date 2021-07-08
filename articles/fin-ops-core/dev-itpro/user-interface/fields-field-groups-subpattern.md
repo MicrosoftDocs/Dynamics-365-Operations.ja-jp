@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c647d7bf04bdd6f9de397040f5bfa6177df98218
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d47b613f97d3f1b43649bc580ce4c08e6d2fefd5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748163"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189322"
 ---
 # <a name="fields-and-field-groups-subpattern"></a>フィールドおよびフィールド グループのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5748163"
 
 このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。 これは、最も一般的なデータ入力サブパターンです。 複数のフィールドまたはフィールドのグループを表示するのに動的な数の列を使用します。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 フィールドおよびフィールド グループは最も一般的なデータ入力サブパターンであり、複数のフィールドまたはフィールドのグループを表示する動的列の数を使用します。 このサブパターンは、動的な高さや幅を持つコントロール (グリッド、ツリー、ラジオボタン、リストボックス、リストビューなどの)、または高さや幅の大きいコントロール (Chart など) では使用されません。 このパターン内のグループ コントロールを使用して、ラベルの下のフィールドをグループ化するか、テーブル フィールド グループにバインドすることができます。
 

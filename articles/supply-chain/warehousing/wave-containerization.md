@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c62e2d1b361e0ed1ab1ced42997add157b30c828
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 88e38989e3d3e46d0c43779659bc6ea2e29f08e2
+ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019054"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6292740"
 ---
 # <a name="containerization"></a>コンテナー化
 
@@ -108,6 +108,8 @@ ms.locfileid: "6019054"
 
       - **空のコンテナーすべてに梱包** システムによって、配賦ラインがコンテナー詰めのサイクル中に作成されたコンテナーに適合するかどうかが評価されます。
       - **現在のコンテナーにのみ梱包** – システムにより、配賦ラインが最近作成されたコンテナーに適合するかどうかが評価されます。
+
+    コンテナー梱包計画の使用方法を示す詳細と例については、[コンテナー梱包計画](container-packing-strategy-overview.md)を参照してください。
 
 1. コンテナーに配賦ラインを梱包するルールを設定するには、**混合ロジック ブレーク** を選択します。 たとえば、作業者が同じコンテナーの 2 種類の品目の配賦ラインを梱包できるようにするルールを作成できます。 混合ルールを定義するには、次の手順に従います。
 

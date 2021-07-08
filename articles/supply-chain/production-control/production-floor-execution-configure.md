@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 34d0f3a0ff2a2ce1efd52f7bad2367af5f2f371b
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115026"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271158"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
@@ -64,8 +64,6 @@ ms.locfileid: "6115026"
 - 画面ジョブカード デバイスとジョブ カード端末を除菌できるようにロックする機能
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>生産現場の実行インターフェースの資産管理機能
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 この機能により、生産フロア実行インターフェイスに資産管理タブが追加されます。 作業者は、このタブを使用して、ジョブ リストの選択したフィルター内のマシン リソースに接続されている資産を選択できます。 選択したマシン資産に対して、作業者は、カウンタの値から資産の状態と状態を最大 4 つのカウンタで表示できます。 この機能を使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で、次の機能を有効にします。
 

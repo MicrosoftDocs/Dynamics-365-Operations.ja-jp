@@ -2,7 +2,7 @@
 title: 休暇タイプのコンフィギュレーション
 description: Dynamics 365 Human Resources で、従業員が使用できる休暇のタイプを設定します。
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 098f614da80a1e7e3e31b30cea707ecfbd5b0a70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056615"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271130"
 ---
 # <a name="configure-leave-and-absence-types"></a>休暇タイプのコンフィギュレーション
 
@@ -71,7 +71,7 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
    
  3. 休暇タイプに **繰越休暇タイプ** を設定します。 このオプションを選択すると、繰越残日数は指定された休暇タイプに転送されます。 繰越休暇タイプも、休暇および不就業プランに含める必要があります。 
  
- 4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日を設定することもできます。 有効日は、休暇の有効期限を処理するバッチ ジョブの実行を開始する時期、またはルールが有効になる日付を決定するために使用されます。 有効期限自体は、バッチ ジョブが処理に設定された後、常に休暇計画の開始日に実行されます。 たとえば、計画の開始日は 2020 年 1 月 1 日の場合でも、ルールは 2020 年 6 月 1 日まで作成されませんでした。 有効日を 2020 年 6 月 1 日に設定すると、ルールは次の年の境界である、2021 年 1 月 1 日に処理されます。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。 
+4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日は、休暇の有効期限を処理するバッチ ジョブの実行を開始する時期、またはルールが有効になる日付を決定するために使用されます。 有効期間自体は、常に見越計上期間の開始日に発生します。 たとえば、見越計上期間の開始日が 2021 年 8 月 3 日で、有効期限ルールが 6 か月に設定されている場合、ルールは見越計上期間の開始日からの有効期限のオフセットに基づいて処理され、2022 年 2 月 3 日に実行されることになります。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。
  
 ## <a name="see-also"></a>参照
 
@@ -79,6 +79,7 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 - [休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
 - [作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)
 - [休暇の中断](hr-leave-and-absence-suspend-leave.md)
+- [休暇の売買申請ワークフローの作成](hr-leave-and-absence-buy-sell-workflow.md)
 
 
 

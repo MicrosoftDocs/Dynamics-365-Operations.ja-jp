@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 2164c07d1a179a0aa15611b742084d872f41bbfc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923310"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270816"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
@@ -160,8 +160,8 @@ ms.locfileid: "5923310"
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>特定の "必須の有効日" がないのはなぜですか? 
 更新リリースのタイミングは変動し、環境更新のタイミングは変動し、顧客は一部の更新をスキップすることもできます。 その結果、特定の日付を決定することは困難です。 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>必須になる機能のドキュメントはどこにありますか? 
-このドキュメントは、アプリケーション チームから提供されます。 多くの場合、これらは [削除済みまたは非推奨の機能](../../../dev-itpro/migration-upgrade/deprecated-features.md) に記載されています。 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>必須の機能のドキュメントはどこにありますか? 
+このドキュメントは、各 Dynamics 365 アプリケーション チームから提供されます。 多くの場合、これらの機能は、[クライアント機能の状態の更新](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states)または[削除済みまたは非推奨の機能](../../../dev-itpro/migration-upgrade/deprecated-features.md)に記載されています。 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>機能が必須で有効になるという製品内の通知またはシグナルはありますか? 
 機能の必須化に関連する通知メカニズムは、現在存在しません。

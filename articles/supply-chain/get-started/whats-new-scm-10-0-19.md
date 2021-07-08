@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.19 のプレビュー (2021 年 6 月)
+title: Dynamics 365 Supply Chain Management バージョン 10.0.19 (2021 年 6 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.19 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 7f98eee2a821191cefc27abbbd59373084c8b50c
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6114978"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271452"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>Dynamics 365 Supply Chain Management 10.0.19 のプレビュー (2021 年 6 月)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Management バージョン 10.0.19 (2021 年 6 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、バージョン 10.0.19 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.837 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.19 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.837 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 4 月
 - **リリースの一般提供 (手動更新):** 2021 年 6 月
@@ -32,7 +31,7 @@ ms.locfileid: "6114978"
 
 次の表に、このリリースに含まれる機能の一覧を示します。 *機能* 列には、[リリース計画](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクがあり、各機能の公式リリース日を確認できます。 *詳細情報* 列には、詳細情報や関連ドキュメントへのリンクが表示されます。
 
-これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。
+これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 | 機能領域 | 機能 | 詳細 |
 |---|---|---|

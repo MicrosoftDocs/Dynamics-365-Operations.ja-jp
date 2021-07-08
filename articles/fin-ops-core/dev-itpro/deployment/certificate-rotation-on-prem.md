@@ -2,7 +2,7 @@
 title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
-ms.date: 03/11/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: ec6bbd0ba6cbdf30c56cb89b235f6abd983830c1
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: e7df0b98559aecd9dac914b5a6cccb397ad98a87
+ms.sourcegitcommit: 55ca275705a624d446d2abb60b5d676b86fe7240
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941007"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "6306792"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -30,7 +30,6 @@ ms.locfileid: "5941007"
 > 
 > 古い証明書は、証明書ローテーションプロセスが完了するまでそのままにしておく必要があり、事前に削除すると回転プロセスが失敗します。
 
-> [!CAUTION]
 > この証明書ローテーション プロセスは、7.0.x および 7.1. x を実行する Service Fabric クラスターでは行わないでください。 
 >
 > 証明書ローテーションをする前に Service Fabric Cluster を 7.2.x 以降にアップグレードします。
@@ -109,7 +108,20 @@ ms.locfileid: "5941007"
 
 ### <a name="service-fabric-with-certificates-that-arent-expired"></a><a name="sfcertrotationnotexpired"></a>期限切れになっていない証明書を含む Service Fabric
 
-1. 編集するために **Clusterconfig.json** ファイルを開き、次のセクションを検索します。 セカンダリ サムプリントが定義されている場合は、先に進む前に、[古い Service Fabric 証明書をクリーンアップ](#cleanupoldsfcerts) に移動します。
+1. 編集用に **Clusterconfig.json** ファイルを検索します。 このファイルが見つからない場合は、手順 2 と 3 に従ってください。それ以外の場合は手順 4 に進みます。
+2. 次のコマンドを実行して Service Fabric Cluster に接続します。
+
+    ```powershell
+    #Connect to the Service Fabric Cluster from a node within the cluster
+    Connect-ServiceFabricCluster 
+    ```
+
+3. 次のコマンドを実行して、構成ファイルを C:\\Temp\\ClusterConfig.json に保存します。 （C:\\Temp のパスが存在することを確認してください）
+
+    ```powershell
+    Get-ServiceFabricClusterConfiguration >C:\Temp\ClusterConfig.json
+    ``` 
+4. 編集するために **Clusterconfig.json** ファイルを開き、次のセクションを検索します。 セカンダリ サムプリントが定義されている場合は、続行する前に、[古い Service Fabric 証明書をクリーンアップ](#cleanupoldsfcerts) に移動します。
 
     ```json
     "security": {
@@ -136,7 +148,7 @@ ms.locfileid: "5941007"
                 },
     ```
 
-2. ファイルのそのセクションを、次のセクションと置換します。
+5. ファイルのそのセクションを、次のコードと置換します。
 
     ```json
     "security":  {
@@ -169,9 +181,9 @@ ms.locfileid: "5941007"
                 },
     ```
 
-3. 新しいサムプリントと古いサムプリント値を編集します。 
+6. 新しいサムプリントと古いサムプリント値を編集します。 
 
-4. 2.0.0 などの clusterConfigurationVersion を新しいバージョンに変更します。
+7. 2.0.0 などの clusterConfigurationVersion を新しいバージョンに変更します。
 
     ```json
     {
@@ -180,12 +192,12 @@ ms.locfileid: "5941007"
     "apiVersion": "10-2017",
     ```
     
-5. Clusterconfig.json ファイルを保存します。
+8. Clusterconfig.json ファイルを保存します。
 
-6. 次の PowerShell コマンドを実行します。
+9. 次の PowerShell コマンドを実行します。
 
     ```powershell
-    # Connect to the Service Fabric cluster
+    # Connect to the Service Fabric Cluster
     Connect-ServiceFabricCluster
 
     # Get path of ClusterConfig.json for following command

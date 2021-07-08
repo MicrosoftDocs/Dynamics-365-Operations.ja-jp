@@ -12,12 +12,12 @@ ms.custom: 197063
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: b2d66039210c5f3db67f5a819ed8967e578b622c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c50bca1c01f7cdee2f7174634e01a8433d49dd5b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752750"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189656"
 ---
 # <a name="add-methodologies-to-solutions"></a>ソリューションへの方法論の追加
 
@@ -25,8 +25,7 @@ ms.locfileid: "5752750"
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。 また、方法の要件に関する情報も提供されます。
 
-<a name="methodology-requirements"></a>方法の要件
-------------------------
+## <a name="methodology-requirements"></a>方法の要件
 
 方法論の最初の 2 つのフェーズは、LCS ソリューションの消費方法論からの学習と消費のフェーズです。 
 
@@ -67,8 +66,7 @@ ms.locfileid: "5752750"
 4.  **確認** を選択します。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 4e3786e87c21179306c8f94ecc96d94f2d1471f3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ecc0b64193820e6a601ae1f4035c5edbe1a917a4
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745637"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193869"
 ---
 # <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 
@@ -37,7 +37,7 @@ ms.locfileid: "5745637"
 - SQL Server 認証は、SQL 認証と Microsoft Windows 認証の両方をサポートする必要があります。
 - 次の表のバージョン ガイダンスに従っている Microsoft Access データベース エンジン。
 
-    |                                   | SQL Server 2008                 | SQL Server 2012 以降 |
+    | Office バージョン                    | SQL Server 2008                 | SQL Server 2012 以降 |
     |-----------------------------------|---------------------------------|---------------------------|
     | **VM に Microsoft Office がない** | Access エンジン 32 ビット            | Access エンジン 64 ビット      |
     | **Microsoft Office 32 ビット**       | Access エンジン 32 ビット            | Access エンジン 64 ビット      |

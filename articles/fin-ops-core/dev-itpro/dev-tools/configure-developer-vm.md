@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 754621f215e34dbc334a7500d8dd519fb4e21098
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 4ebc1b9431f1b1d7cbc734e0e659e5941a46becc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866079"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189155"
 ---
 # <a name="configure-one-box-development-environments"></a>1 ボックス開発環境の構成
 
@@ -25,8 +25,7 @@ ms.locfileid: "5866079"
 
 この記事では、ワンボックス開発環境の推奨構成について説明します。
 
-<a name="setup"></a>セットアップ
------
+## <a name="setup"></a>セットアップ
 
 1. Visual Studio を起動し、ツール バーで <strong>Dynamics 365 **&gt;**オプション</strong>をクリックします。
 2. **Microsoft Dynamics** ノードを展開し、**プロジェクト** をクリックします。

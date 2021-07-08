@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ad48e188673a06156c20d2ca156562e5d594c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5a6f38de81101004a52518cdbf16a45775fcf99f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744187"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188103"
 ---
 # <a name="simple-details-form-pattern"></a>簡易詳細のフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5744187"
 
 この記事では、簡易詳細のフォーム パターンについて説明します。 このパターンは、フィールドの単純なセットだけがユーザーに提示されなければならない場合に使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 簡易詳細パターンは、フィールドの単純なセットだけがユーザーに提示されなければならない場合に使用されます。 例には、合計および顧客残高の表示が含まれます。 通常、シンプル・ディテール・パターンではビュー・モードが使用されます。 ただし、フォームが編集可能な情報を提供する場合、編集モードは親フォームに同期される必要があります。 このドキュメントでは、4 つのパターンについて説明します。
 

@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57dfe1c576b44ecad18a6f5e1a88a2aeeb38feb5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29560ae5b92a5ac4914ed919e7617677330cfc41
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749586"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188089"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749586"
 
 この記事では、タスク レコーダー メニュー内の各ボタンの動作を説明するクイック リファレンス シートを提供します。
 
-<a name="main-menu"></a>メイン メニュー
----------
+## <a name="main-menu"></a>メイン メニュー
 
 <table>
 <colgroup>

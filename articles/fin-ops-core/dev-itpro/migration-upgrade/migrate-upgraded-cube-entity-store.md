@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 135a2c747ebdb9e9ef59bb5dc4d6968e355402f7
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: d79104de03cfafc72292cdc2c9a8bbc1c5ac5889
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921405"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189924"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
@@ -201,8 +201,7 @@ Microsoft Dynamics Lifecycle Services (LCS) は、開発者から実稼働環境
 -   Power BI タイルまたはレポートを追加することによって、自分のワークスペースをパーソナライズできます。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [集計データのモデリング](../analytics/model-aggregate-data.md)
 

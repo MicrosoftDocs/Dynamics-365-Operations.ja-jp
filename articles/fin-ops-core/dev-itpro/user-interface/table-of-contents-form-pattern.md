@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64b5cf60299d008314af48c7dc583917a1a16486
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 80aea7823cba63a7de23157a8961a5d392c52480
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749592"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188093"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749592"
 
 この記事では、目次フォームのパターンに関する情報を提供します。 このパターンは、セットアップ構成に論理的に関連する 2 つ以上のフォームが必要な場合に使用します。 
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 目次パターンは、セットアップ構成に論理的に関連する 2 つ以上のフォームが必要な場合に使用します。 タブの垂直配置は、完了の順序を意味します。 このフォーム パターンは、タブごとに異なるルート エンティティを持つタブ ページなど、無関係なアイテムのコレクションにも使用されます。 このフォーム パターンには、ツールバーとリスト、ネストされた簡易リストと詳細、またはフィールドとフィールド グループなどのコンテナー サブパターンに続く小さなコンテンツ領域の集合が含まれています。
 

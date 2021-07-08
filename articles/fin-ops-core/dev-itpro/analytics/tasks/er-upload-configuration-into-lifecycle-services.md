@@ -2,7 +2,7 @@
 title: Lifecycle Services へのコンフィギュレーションのアップロード
 description: このトピックでは、新しい電子申告 (ER) のコンフィギュレーションを作成して、Microsoft Dynamics Lifecycle Services (LCS) にアップロードする方法について説明します。
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 06/17/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,18 +13,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0211fea7af303fe1dd7dce26f887bed4ed3b0f1e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 41a8fcf2592bde4901aba703e0cd124b1155dac6
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744918"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270562"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Lifecycle Services へのコンフィギュレーションのアップロード
 
 [!include [banner](../../includes/banner.md)]
 
 このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、新しい [電子申告 (ER) コンフィギュレーション](../general-electronic-reporting.md#Configuration) を作成し、Microsoft Dynamics Lifecycle Services (LCS) の [プロジェクト レベルのアセット ライブラリ](../../lifecycle-services/asset-library.md) にアップロードする方法について説明します。
+
+> [!IMPORTANT]
+> ER コンフィギュレーションの記憶域リポジトリとして LCS を使用することは[廃止される](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release)予定です。 詳細については、[Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md)を参照してください。
 
 この例では、コンフィギュレーションを作成し、それを Litware, Inc. という名前のサンプル会社の LCS にアップロードします。ER コンフィギュレーションはすべての会社間で共有されるため、これらの手順はどの企業でも完了できます。 これらの手順を完了するには、まず [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) の手順を完了する必要があります。 LCS へのアクセスも必要です。
 

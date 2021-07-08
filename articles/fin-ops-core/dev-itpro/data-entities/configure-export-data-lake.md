@@ -2,7 +2,7 @@
 title: Azure Data Lake へのエクスポートの構成
 description: このトピックでは、Azure Data Lake へのエクスポートの構成に関する情報を説明します。
 author: MilindaV2
-ms.date: 04/13/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,31 +14,32 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform Update 33
-ms.openlocfilehash: ef6bbccc4161812344b6055999941ac28e7271ee
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 52f87f4effc28ae45e0d829df961fc993229284b
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940908"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304381"
 ---
 # <a name="configure-export-to-azure-data-lake"></a>Azure Data Lake へのエクスポートのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> 制限されたプレビューでの **Azure Data Lake へのエクスポート** 機能は、Finance and Operations アプリで対応しているすべての地域および環境では使用できない場合があります。 Lifecycle Services (LCS)、または Finance and Operations アプリで **Azure Data Lake へのエクスポート** の機能が見つからない場合は、ご利用の環境でこの機能を使用できません。 
+> **Data Lake へのエクスポート** 機能は、米国、カナダ、英国、ヨーロッパ、南アジア、東アジア、オーストラリア、および日本の地域でパブリック プレビューで表示されます。 Finance and Operations 環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。
 >
-> 現在、プレビューは終了しています。 数か月後に、いくつかの地域で追加の環境を有効にします。 プレビューに参加したい顧客からの要求を承諾しています。 今後のプレビューに参加する場合は、[アンケートを完了します](https://aka.ms/FnODataLakePreviewSurvey)。 参加の準備ができ次第、ご連絡いたします。 [アンケートを完了](https://aka.ms/FnODataLakePreviewSurvey) すると、Yammer に参加することもできます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。  
+> 数か月後に、Microsoft は需要に基づいて、追加の地域でこの機能を有効にします。 環境がプレビューが有効になっている地域にない場合は、[アンケートを完了し、お知らせください](https://aka.ms/FnODataLakePreviewSurvey)。 [プレビュー Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) に参加できます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。 
 >
-> 環境でこの機能が有効になるまで、[GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md) を使用して機能の実装をプロトタイプ/計画するためのオプションがあります。 このツールを使用すると、機能によってエクスポートされたのと同じ形式で、サンドボックス環境のデータをストレージ アカウントにエクスポートすることができます。 
->
-> 現時点では、**Azure Data Lake へのエクスポート** 機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウド ベースの Tier 2 またはそれ以上の環境が必要です。
->
-> Data Lakeで集計測定を使用できるようにするには、[エンティティ ストアを Data Lake として使用可能とする](entity-store-data-lake.md)で説明されている方法でこの機能を引き続き使用します。
+> **Data Lake へのエクスポート** 機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウド ベースの Tier 2 またはそれ以上の環境が必要です。 
+> 
+> Tier 1 (開発者) 環境では、[GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md) を使用して機能の実装のプロトタイプを作成または計画できます。 このツールを使用すると、機能によってエクスポートされたのと同じ形式で、階層 1 またはサンドボックス環境のデータをストレージ アカウントにエクスポートすることができます。 
+> 
+> **プレビュー中は、運用環境ではこの機能がサポートされていません。** 運用環境では、この機能を有効にすることはできません。 サンドボックス (階層 2 以降) 環境でのみプレビューできます。
 
-## <a name="create-service-principle-for-microsoft-dynamics-erp-microservices"></a><a name="createServicePrinciple"></a> Microsoft Dynamics ERP Microservices のサービス プリンシプルの作成
 
-**Azure Data Lake へのエクスポート** 機能は、Finance and Operations アプリ データを Azure Data Lake へエクスポートしデータを最新の状態に維持するマイクロサービスを使用して構築されます。 マイクロサービスは、Azure サービス プリンシパル、**Microsoft Dynamics ERP Microservices** を使用して、Azure リソースに安全に接続します。 Data Lake にエクスポートする機能を構成する前に、**Microsoft Dynamics ERP Microservices** サービス プリンシプルを Azure Active Directory (Azure AD) に追加します。 この手順により Azure AD を有効にしてマイクロサービスを認証できます。 
+## <a name="create-service-principal-for-microsoft-dynamics-erp-microservices"></a><a name="createServicePrincipal"></a> Microsoft Dynamics ERP Microservices のサービス プリンシパルの作成
+
+**Azure Data Lake へのエクスポート** 機能は、Finance and Operations アプリ データを Azure Data Lake へエクスポートしデータを最新の状態に維持するマイクロサービスを使用して構築されます。 マイクロサービスは、Azure サービス プリンシパル、**Microsoft Dynamics ERP Microservices** を使用して、Azure リソースに安全に接続します。 Data Lake にエクスポートする機能を構成する前に、**Microsoft Dynamics ERP Microservices** サービス プリンシパルを Azure Active Directory (Azure AD) に追加します。 この手順により Azure AD を有効にしてマイクロサービスを認証できます。 
 
 > [!NOTE]
 > これらの手順を実行するには、**Azure Active Directory テナント管理者** の権限が必要です。
@@ -93,7 +94,7 @@ Azure portal で行われる手順は次のとおりです。
     -  **名前:** アプリの名前を入力します。
     -   **対応しているアカウントのタイプ** : 適切なオプションを選択します。
 
-3. アプリケーションの作成後は、これを選択し、<a name="appid"></a>アプリケーション (クライアント) IDをページの先頭に保存します。 これは後で必要になります。
+3. アプリケーションの作成後は、これを選択し、<a name="appid"></a> アプリケーション (クライアント) IDをページの先頭に保存します。 これは後で必要になります。
 4. 左のナビゲーション ウィンドウで、**API のアクセス許可** を選択します。
 5. **アクセス許可の追加** を選択し、**API アクセス許可の要求** ダイアログ ボックスで、**Azure キー コンテナー** を選択し ます。
 6. **委任されたアクセス許可** を選択し 、**user_impersonation** を選択します。続いて **アクセス許可の追加** を選択します。
@@ -177,7 +178,7 @@ Data Lake ストレージ アカウントは、Finance and Operations アプリ�
 4. **アクセス ポリシーの追加** ダイアログ ボックスの **プリンシパルの選択** フィールドで、**Microsoft Dynamics ERP マイクロサービス** を検索して選択し、**選択** をクリックします。 
 
 > [!NOTE]
-> **Microsoft Dynamics ERP Microservices** が見つからない場合は、このドキュメントの[サービス プリンシプルの作成](#createServicePrinciple) セクションを参照してください。
+> **Microsoft Dynamics ERP Microservices** が見つからない場合は、このドキュメントの[サービス プリンシパルの作成](#createServicePrincipal) セクションを参照してください。
 
 5. **シークレットのアクセス許可** フィールドで、**取得** と **リスト** を選択します。  
 6. **アクセスポリシー** ダイアログ ボックスで、**追加** を選択します。
@@ -197,6 +198,7 @@ Data Lake ストレージ アカウントは、Finance and Operations アプリ�
 
 LCS から Power Platform 統合を設定するには、[アドインの概要](../power-platform/add-ins-overview.md) を参照してください。
 
+
 ### <a name="option-2-set-up-power-platform-integration-using-the-dual-write-wizard"></a>オプション 2: 二重書き込みウィザードを使用して Power Platform 統合の設定
 
 **Power Platform 統合** を設定するもう 1 つの方法は、データベースで Power Platform 環境を作成し、二重書き込みの設定を使用します。 次の手順を実行して、Power Platform 環境を作成し、統合を完了します。 
@@ -205,6 +207,9 @@ LCS から Power Platform 統合を設定するには、[アドインの概要](
 2. [要件と前提条件を完了します](dual-write/requirements-and-prerequisites.md)。  
 3. [二重書き込みウィザードを使用して環境をリンクする](dual-write/link-your-environment.md) を使用します。
 4. Power Platform 統合が設定され、LCS 環境ページに追加されていることを確認します。  
+
+> [!NOTE]
+> このアプローチを使用する場合は、Finance and Operations 環境と同じリージョンにある Power Platform 環境を選択する必要があります。 別の地域の Power Platform 環境を選択した場合、アドインのインストールが失敗する場合があります。
 
 ## <a name="install-the-export-to-data-lake-add-in-in-lcs"></a><a name="installaddin"></a>LCS の Data Lake アドインへにエクスポート機能をインストールする 
 

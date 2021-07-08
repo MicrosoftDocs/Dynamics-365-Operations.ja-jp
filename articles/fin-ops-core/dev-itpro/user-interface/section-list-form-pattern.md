@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d006a860ccf89e6e2640e2dbed480c00f7468e4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e7168179dfd64173516e07396378f813a34e8559
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750944"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189910"
 ---
 # <a name="form-part-section-list-form-patterns"></a>フォーム パターン セクション リストのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5750944"
 
 このトピックでは、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 フォーム パターン セクション リストのフォーム パターンは、フィルター処理されたリストの表示に使用されるワークスペース固有のパターンです。 ワークスペースのタブ付きセクションには、一連の垂直タブが含まれています。 各タブはフォーム パーツ コントロールを含み、いずれかのフォーム パーツ セクション リスト パターンを含むフォームを指します。 この記事では、2 つのパターンについて説明します。
 

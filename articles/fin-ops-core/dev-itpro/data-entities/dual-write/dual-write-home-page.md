@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b241353f6230db2b50cbae4ba4070e8761521bf8
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 36ba04b68d02756b14bc52d81c739127a029a534
+ms.sourcegitcommit: 8c57c1b7968ea5542c241b15c85fb3d40e706ac5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088453"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "6308309"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -58,10 +58,10 @@ ms.locfileid: "6088453"
 
 + [テーブル マッピングと列マッピングのカスタマイズ](customizing-mappings.md)
 + [複数のテーブル マップの処理](multiple-entity-maps.md)
-+ [二重書き込み設定後にリーガル テーブルの編集](edit-legal-entity.md)
++ [二重書き込み設定後に法人を編集する](edit-legal-entity.md)
 + [エラー管理と警告通知](errors-and-alerts.md)
 + [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
-+ [ユーザー指定のチームの所有者](user-specified-team-owner.md)
++ [ユーザーが指定するチームの所有者](user-specified-team-owner.md)
 + [二重書き込み環境のリンク解除および再リンク](relink-environments.md)
 
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング

@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4c91f077ec9457b8228738ac2b1cdf8ab8c2cd16
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 35986690b94d09ce94a71e48ccfa79258a8927a9
+ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112551"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "6277397"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10019-june-2021"></a>Dynamics 365 Commerce 10.0.19 (2021 年 6 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.19 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.837 で、次のスケジュールで使用できます。
 
@@ -51,6 +51,8 @@ Dynamics 365 Commerce 10.0.19 には、プラットフォーム更新プログ�
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=575415&dbType=3&qc=762ace311d670d27275cb0b6e11d811e4222643ffccdc5681a42a580780b8337) を参照してください。
+
+Commerce 固有の重大な変更を加える場合は、[Dynamics 365 Commerce オンライン SDK に関するよく寄せられる質問](../e-commerce-extensibility/sdk-faq.md) を参照してください。
 
 ### <a name="dynamics-365-2021-release-wave-1-plan"></a>Dynamics 365: 2021 リリースのウェーブ 1 プラン
 

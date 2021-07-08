@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e4ecdab1fdee704e77549747b187b7fbcbee3432
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 40016f7b537c71c5ea891f38179f3c76d9bf7ebe
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018300"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193580"
 ---
 # <a name="implement-a-custom-destination-for-generated-documents"></a>生成されるドキュメントに対するカスタム 送信先の実装
 
@@ -230,7 +230,7 @@ ms.locfileid: "6018300"
     ```
 
     > [!NOTE]
-    > 上記のコードでは、`ERFormatDestinationSaveInFolderSettings` クラスが `static` クラスとして導入されます。 実装オブジェクトには、オブジェクトを作成し、オブジェクトが正しくパックおよび展開プロセスに必要なコンテナーを展開する `static create(container)` メソッドが必要です。 詳細については[パック-アンパック デザイン パターン](https://docs.microsoft.com/dynamicsax-2012/developer/pack-unpack-design-pattern#aa879675collapse_allen-usax60gifpublic-static-yourclass-createcontainer-_packedobject) を参照してください 。
+    > 上記のコードでは、`ERFormatDestinationSaveInFolderSettings` クラスが `static` クラスとして導入されます。 実装オブジェクトには、オブジェクトを作成し、オブジェクトが正しくパックおよび展開プロセスに必要なコンテナーを展開する `static create(container)` メソッドが必要です。 詳細については[パック-アンパック デザイン パターン](/dynamicsax-2012/developer/pack-unpack-design-pattern#aa879675collapse_allen-usax60gifpublic-static-yourclass-createcontainer-_packedobject) を参照してください 。
 
 3. Visual Studio プロジェクトで、`ERFormatDestinationSettings` フォームに新しい拡張子を追加し、カスタム送信先のカスタム UI を実装するコードを記述します。 次の図は、この UI が Visual Studio デザイナーでどのように表示されるかを示しています。
 
@@ -301,7 +301,7 @@ ms.locfileid: "6018300"
     ![送信先の設定ダイアログ ボックスでのフォルダーに保存の保存先を構成](media/er-custom-file-destination-destination-setting-custom.png)
 
     > [!NOTE] 
-    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したカスタム送信先フォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) 例外が実行時にスローされます。
+    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したカスタム送信先フォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) 例外が実行時にスローされます。
 
 ## <a name="run-the-er-format-that-you-created-or-imported"></a>作成またはインポートした ER フォーマットの実行
 

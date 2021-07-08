@@ -2,7 +2,7 @@
 title: データベース ポイントインタイム復元 (PITR)
 description: このトピックでは、Finance and Operations のデータベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 05/24/2021
+ms.date: 06/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f39905baad57a096f6b78aedc3c7ae3c2825056
-ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
+ms.openlocfilehash: 413ae2519c48b8f884e6eb479674e9ebd3bbabcd
+ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6092362"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "6277395"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行することができます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](/azure/sql-database/sql-database-automated-backups)を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 14 日間維持します。
+Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行することができます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](/azure/sql-database/sql-database-automated-backups) を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
 
 ## <a name="self-service-point-in-time-restore"></a>セルフサービスポイントインタイム復元
 [!include [pitr](../includes/dbmovement-pitr.md)]

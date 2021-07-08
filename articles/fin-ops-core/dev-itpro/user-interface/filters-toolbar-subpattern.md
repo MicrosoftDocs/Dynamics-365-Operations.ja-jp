@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4136c7cf41c2fd9f1c7fb241fb4952333448ebb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 175643724aba55079e6378e56bdaeb853f745624
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748157"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189314"
 ---
 # <a name="filters-and-toolbar-subpatterns"></a>フィルターおよびツールバーのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5748157"
 
 このトピックでは、フィルターおよびツール バーのサブパターンについて説明します。 これらのワークスペース固有のサブパターンは、リストやグラフをホストする、パノラマ セクション内のフィルターやアクションを表示するために開発されました。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 フィルターおよびツール バー サブパターンは、リストやグラフをホストする、パノラマ セクション内のフィルターやアクションを表示するために開発されたワークスペース固有のサブパターンです。 これらのサブパターンのフィルタ処理の一部のフィールドは、次のフィールド タイプに限定される必要があります。 これらすべてのフィールド タイプは入力の制約を持ちクエリに適用できます。
 

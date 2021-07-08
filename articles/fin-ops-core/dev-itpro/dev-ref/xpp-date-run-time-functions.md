@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 928eeb52a0f8a14c7b97544e29cb23cefb5fda38
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 24f19436632e1c274b25cf4fa64d9738c80fc687
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865904"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187954"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 
@@ -24,8 +24,7 @@ ms.locfileid: "5865904"
 
 このトピックでは、日付ランタイム関数について説明します。
 
-<a name="dayname"></a>dayName
--------
+## <a name="dayname"></a>dayName
 
 番号で指定されている曜日の名前を取得します。
 

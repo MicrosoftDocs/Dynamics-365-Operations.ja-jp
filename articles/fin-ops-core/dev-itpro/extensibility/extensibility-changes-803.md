@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-08-31
 ms.dyn365.ops.version: App 8.0.3
-ms.openlocfilehash: 5a5899bb7f0116b5307e759f785d40fd5132b9aa
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 37abf8e4e9d5f5493988859961a26657677024ff
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866264"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193085"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-update-803"></a>Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 の拡張機能の変更
 
@@ -31,8 +31,8 @@ ms.locfileid: "5866264"
 
 これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。
 
-| メソッド|
-| --------------- |
+| メソッド |
+|---------------|
 |AccountingSourceExplorerProcessor.filterEntries|
 |AgreementClassification.init|
 |AgreementConfirm.createLineVolumeCommittmentHistory|
@@ -166,7 +166,7 @@ ms.locfileid: "5866264"
 |ProjIntercompanyTransQuery.buildExpenseQuery|
 |ProjIntercompanyTransQuery.buildHoursQuery|
 |ProjIntercompanyTransQuery.buildVendorInvoiceLinesQuery|
-|ProjInventJournalTransMapForm.checkActivity||
+|ProjInventJournalTransMapForm.checkActivity|
 |projInvoiceChooose.setProposalJour|
 |ProjInvoiceChoose.doRevenue|
 |ProjInvoiceChoose.updateInvoiceTotal|

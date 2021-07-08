@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aff39abbb5222694dbbe8c29ea87499af62e6cf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c002e37d3c008ac6cbdd6f591308d7ed31efc93b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754840"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189734"
 ---
 # <a name="toolbar-and-list-subpattern"></a>ツールバーおよびリストのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5754840"
 
 この記事では、ツールバーとリストのフォームのサブパターンについて説明します。 このサブパターンは、親エンティティの子コレクションを表形式グリッドまたはツリーのいずれかとして表示するために使用されます。 
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 このサブパターンは、親エンティティの子コレクションを表形式グリッドまたはツリーのいずれかとして表示するために使用されます。 ツールバーに含まれるアクションは 10 個未満です。 グリッドを使用している場合は、10 未満のフィールドが含まれます。 この記事では、2 つのパターンについて説明します。
 

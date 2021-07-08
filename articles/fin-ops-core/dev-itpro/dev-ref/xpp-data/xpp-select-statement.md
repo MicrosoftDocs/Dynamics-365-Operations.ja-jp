@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: ec8eba1b738f30a171eb27ec967c41deae4127db
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 47248c3908c2b2162443b28e0f9b65ab5f335231
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865882"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193554"
 ---
 # <a name="select-statement"></a>明細書を選択
 
@@ -103,7 +103,7 @@ ttsCommit;
 + **\+** – プラス記号は、1回以上含めることができる要素を示します。
 + **|** – バーはオプションを示します。 
 
-| 記号                |   | 式 |
+| 記号                | &nbsp;  | 式 |
 |-----------------------|---|------------|
 | *SelectStatement*     | = | *パラメーター* を **選択する** |
 | *パラメーター*          | = | { *FindOption* } \[ *FieldList* **from** \] *TableBufferVariable* \[ *IndexClause* \] \[ *Options* \] \[ *WhereClause* \] \[ *JoinClause* \] |

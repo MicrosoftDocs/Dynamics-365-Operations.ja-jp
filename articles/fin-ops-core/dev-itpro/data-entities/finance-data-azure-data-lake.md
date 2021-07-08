@@ -14,72 +14,63 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: f15bb506aa3d1c71da5e4b3a7be7cd78221aa835
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a7cddfa2436a5aa240b5f6fa4e8481c6a5aa418c
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750550"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219775"
 ---
 # <a name="finance-and-operations-apps-data-in-azure-data-lake"></a>Azure Data Lake の Finance and Operations アプリ データ
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> 制限されたプレビューでの **Azure Data Lake へのエクスポート** 機能は、Finance and Operations アプリで対応しているすべての地域および環境では使用できない場合があります。 Lifecycle Services (LCS)、または Finance and Operations アプリで **Azure Data Lake へのエクスポート** の機能が見つからない場合は、ご利用の環境でこの機能を使用できません。 
+> **Data Lake へのエクスポート** 機能は、米国、カナダ、英国、ヨーロッパ、南アジア、東アジア、オーストラリア、および日本の地域でパブリック プレビューで表示されます。 Finance and Operations 環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。
 >
-> 現在、プレビューは終了しています。 数か月後に、いくつかの地域で追加の環境を有効にします。 プレビューに参加したい顧客からの要求を承諾しています。 今後のプレビューに参加する場合は、[アンケートを完了します](https://aka.ms/FnODataLakePreviewSurvey)。 参加の準備ができ次第、ご連絡いたします。 [アンケートを完了](https://aka.ms/FnODataLakePreviewSurvey) すると、Yammer に参加することもできます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。  
->
-> 環境でこの機能が有効になるまで、[GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md) を使用して機能の実装をプロトタイプ/計画するためのオプションがあります。 このツールを使用すると、機能によってエクスポートされたのと同じ形式で、サンドボックス環境のデータをストレージ アカウントにエクスポートすることができます。 
->
-> 現時点では、**Azure Data Lake へのエクスポート** 機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウド ベースの Tier 2 またはそれ以上の環境が必要です。
->
-> Data Lakeで集計測定を使用できるようにするには、[エンティティ ストアを Data Lake として使用可能とする](entity-store-data-lake.md)で説明されている方法でこの機能を引き続き使用します。
- 
- 
-**Azure Data lake にエクスポート** 機能を使用すると、アプリケーションのデータをご利用の Azure Data lake (Gen 2) の Finance and Operations アプリにコピーできます。 このシステムでは、含めるテーブルやエンティティを選択できます。 必要なデータを選択した後、システムが初期コピーを行います。 システムは、変更、削除、追加を適用することで、選択したデータを最新の状態に保ちます。 Finance and Operations アプリのインスタンスのデータを変更後、data lake でデータが使用可能になるまでには数分を要する場合があります。 
+> 数か月後に、Microsoft は需要に基づいて、追加の地域でこの機能を有効にします。 環境がプレビューが有効になっている地域にない場合は、[アンケートを完了し、お知らせください](https://aka.ms/FnODataLakePreviewSurvey)。 [プレビュー Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) に参加できます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。 
 
-この機能を使用するには、**Data Lake へのエクスポート** を構成する必要があります。 詳細については、[Azure Data Lake へのエクスポートの構成](configure-export-data-lake.md)を参照してください。
+**Data Lake へのエクスポート** 機能を使用すると、Finance and Operations アプリから自分の Data Lake にデータをコピーできます (Azure Data Lake Storage Gen2)。 このシステムでは、含めるテーブルやエンティティを選択できます。 必要なデータを選択した後、システムが初期コピーを行います。 システムは、変更、削除、追加を適用することで、選択したデータを最新の状態に保ちます。 Finance and Operations アプリのインスタンスのデータを変更後、Data Lake でデータが使用可能になるまでには数分を要する場合があります。
 
-
-## <a name="turn-on-the-export-data-to-azure-data-lake-feature"></a>Azure Data Lake へのデータのエクスポート機能を有効にします
-
-管理者は事前に、**Azure Data Lake へのエクスポート**  機能を有効化しておく必要があります。 これを行うには、**機能の管理** ワークスペースにアクセスし、**Azure Data Lake にデータをエクスポート** 機能を選択し、**有効化** を選択してください。
-
-この機能を有効化すると、**システムの管理** の配下に **Azure Data Lake にエクスポートする** オプションが表示されます。
+## <a name="turn-on-the-export-to-data-lake-feature"></a>Data Lake へのエクスポート 機能を有効にする
+この機能を使用するには、[Azure Data Lake へのエクスポートを構成](configure-export-data-lake.md) を参照してください。
 
 ## <a name="select-data"></a>データの選択
 
 > [!NOTE]
 > この機能 **Azure Data Lake へのエクスポート** がご利用中の環境内の **機能管理** モジュールで使用できない場合、環境にサインインし、ブラウザのアドレスに以下の URL を追加してください: &mi=DataFeedsDefinitionWorkspace たとえば、https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace。
 
-
 Data Lake にステージングする必要のあるテーブルとエンティティを選択することができます 。
 
-1. ご利用の環境で、**システム管理** \> **Azure Data Lake にエクスポートする** へと移動します。
-2. **Data Lake にエクスポートするデータフィードの構成** を選択します。
-3. **テーブルの選択** タブの、**Data Lake に対するデータフィードの構成** ページで、 Data Lake にステージングするデータ テーブルを選択します。 テーブルは、表示名またはシステム名で検索できます。 テーブルが既に同期されているかどうかを確認することもできます。 
-4. 完了後に、**テーブルの追加** を選択し、選択したテーブルを Data Lake に追加します。
+1. ご利用の環境で、**システム管理** \> **設定** \> **Data Lake にエクスポートする** へと移動します。
 
-    ![テーブルの選択](./media/Export-Tables-toData-lake-unselectedv2.png)
+    ナビゲーション バーの検索フィールドを使用して、**Data Lake にエクスポート** ページを開くこともできます。 検索フィールドで、**構成** と入力します。 検索結果にはページへのリンクが含まれる必要があります。
 
-5. **データフィードの有効化** を選択し 、**OK** を選択します。 テーブルを追加する際に、このテーブルの状態が **初期化中** と表示される場合があります。 これは、データの初期コピーを作成していることを意味します。 初期コピーが完了すると、状態が **実行中** に変更されます
+2. **テーブルの選択** タブの、**Data Lake へのエクスポート** ページで、 Data Lake にステージングするデータ テーブルを選択します。 テーブルは、表示名またはシステム名のいずれかで検索できます。 テーブルが既に同期されているかどうかを確認することもできます。 
+3. 完了後に、**テーブルの追加** を選択し、選択したテーブルを Data Lake に追加します。
 
-エラーが発生した場合は、状態が **無効** と表示されます。 **実行中** の状態を確認する際に、データ レイクのデータを使用でき ます。 **初期化** または **無効化** 状態の間にデータ レイクデータを使用している場合は、一部のデータが表示されないことがあります。 
+    ![テーブルの選択](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
 
-必要な特定のテーブルについて詳しくない場合は、エンティティを使用してテーブルを選択することができます。 エンティティはデータの抽象度が高く、複数のテーブルを含む場合があります。 エンティティを選択することで、それを構成するテーブルも選択することになります。
-    
-7. **使用するエンティティの選択** タブでエンティティを選択し、**エンティティを使用してテーブルを追加する** を選択します。
+4. **データフィードの有効化** を選択し 、**OK** を選択します。 テーブルを追加すると、システムのステータスが **初期化** として表示される場合があります。 この状態は、データの初期コピーを作成していることを示します。 初期コピーが完了すると、状態が **実行中** に変更されます。
 
-    ![エンティティを使用したテーブルの選択](./media/Export-Entities-toData-lake-unselectedv2.png)
-    
+    エラーが発生した場合は、状態が **無効** として表示されます。
+
+    状態が **実行中** の場合、Data Lake でデータを消費できます。 **初期化** または **無効化** 状態の間に Data Lake でデータを使用している場合は、一部のデータが表示されないことがあります。 
+
+    必要な特定のテーブルについて詳しくない場合は、エンティティを使用してテーブルを選択することができます。 エンティティはデータの抽象度が高く、複数のテーブルを含む場合があります。 エンティティを選択することで、それを構成するテーブルも選択することになります。
+
+    > [!NOTE]
+    > **エンティティを使用して選択** タブを初めて開いた場合、ページのエンティティの一覧が空白である場合があります。 システムは、エンティティの一覧に入力するのに時間がかかる場合があります。 アクション ウィンドウで **管理 \> データ フィード カタログの再構築** を選択すると、リストを強制的に更新できます。 
+
+5. **使用するエンティティの選択** タブでエンティティを選択し、**エンティティを使用してテーブルを追加する** を選択します。
+
+    ![エンティティを使用したテーブルの選択](./media/Export-Table-to-Data-lake-Entities-Running-state.png)
+
     テーブルを選択する方法を問わず、Data Lake ではテーブルがステージングされます。
 
 ## <a name="monitor-the-tables-in-data-lake"></a>Data Lake のテーブルを監視する
 
-システムが Data Lake でデータの更新を維持するため、データのエクスポートの監視や、スケジュールを設定する必要はありません。 **Data Lake に対するデータフィードの構成** ページの **アクティブ** タブで、進行中のデータ エクスポートの状態を確認することができます。
-
-![テーブルの監視の進行状況](./media/Export-Tables-toData-lake-monitorv2.png)
+システムが Data Lake でデータの更新を維持しているため、データのエクスポートの監視や、スケジュールを設定する必要はありません。 **Data Lake へのエクスポート** ページの **状態** 列で、進行中のデータ エクスポートの状態を確認することができます。
 
 ## <a name="troubleshooting-common-issues-and-errors"></a>一般的な問題とエラーに対するトラブルシューティング
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaa6c283fe5c307abff68bdd2664a70a78dbe653
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 783433f16dbf5a09c568b7f43c4483a79cdb1290
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923287"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216703"
 ---
 # <a name="build-automation-that-uses-microsoft-hosted-agents-and-azure-pipelines"></a>Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化
 
@@ -47,7 +47,11 @@ X++ コードをビルドするには、X++ コンパイラ (xppc.exe) などの
 
 - **Microsoft.Dynamics.AX.Platform.CompilerPackage** – このパッケージには、ビルドを実行するために必要な X++コンパイラおよび関連ツールが含まれています。
 - **Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp** – このパッケージには、アプリケーション プラットフォームおよび関連モジュールのコンパイル済み X++ コードが含まれています。 このコードは、ビルドに対して最適化されています。
-- **Microsoft.Dynamics.AX.Application.DevALM.BuildXpp** – このパッケージには、アプリケーション スイートおよび関連モジュールのコンパイル済み X++ コードが含まれています。 このコードは、ビルドに対して最適化されています。
+- **Microsoft.Dynamics.AX.Application.DevALM.BuildXpp** – このパッケージには、アプリケーションおよび関連モジュールのコンパイル済み X++ コードが含まれています。 このコードは、ビルドに対して最適化されています。
+
+バージョン 10.0.18 から、アプリケーション スイート パッケージは 2 つのパッケージに分割され、共有アセット ライブラリからダウンロードする追加のパッケージがあります。
+
+- **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** – このパッケージには、アプリケーション スイート モジュールのコンパイル済み X++ コードが含まれています。 このコードは、ビルドに対して最適化されています。
 
 これらのパッケージを LCS からダウンロードし、ビルドを実行する Azure DevOps 組織内の Azure コンポーネント フィードに追加し ます。 Azure コンポーネントを作成し、NuGet パッケージを追加する方法の詳細については、次のトピックを参照してください。
 
@@ -143,7 +147,7 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 
 ### <a name="creating-a-full-pipeline-that-includes-packaging"></a>パッケージを含む完全なパイプラインの作成
 
-利便性のため、パイプラインにはバージョン管理手順とパッケージ手順が含まれている必要があります。 これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[Azure DevOps のドキュメント](/azure/devops/marketplace/install-extension)を参照してください。
+利便性のため、パイプラインにはバージョン管理手順とパッケージ手順が含まれている必要があります。 これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) 拡張機能が有効になっていて、Azure DevOps 組織で Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[Azure DevOps のドキュメント](/azure/devops/marketplace/install-extension)を参照してください。
 
 パイプライン全体は、少なくとも次の手順で構成されている必要があります。
 
@@ -166,5 +170,5 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 
 [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub リポジトリでは、既存の Azure DevOps プロジェクトにインポートできるサンプル パイプラインを見つけることができます。
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

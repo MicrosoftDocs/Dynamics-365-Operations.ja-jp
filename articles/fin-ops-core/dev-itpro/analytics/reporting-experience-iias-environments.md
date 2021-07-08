@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 44c140748c1ba7dc6e5a532ac6f7c3c179c48fc9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f969d02d10075e9f91164450f277b266582f402
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893540"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193454"
 ---
 # <a name="document-reporting-service-in-dynamics-365-applications"></a>Dynamics 365 アプリケーションのドキュメント レポート サービス
 
@@ -44,11 +44,11 @@ Document Reporting Service は、ビジネス文書を一括生成するにあ�
 
 次の表では、2つのレポート作成経験の基本を比較しています。
 
-|                          | ドキュメントの生成 | BI と分析 |
+| 項目                     | ドキュメントの生成 | BI と分析 |
 |--------------------------|---------|------------------|
 | **表示の形式**       | PDF と Office ドキュメント | HTML |
 | **データ量**          | 1 から 数百規模の行 | 数万以上の行 |
-| **インタラクティブな機能** | 印刷、テキスト検索、共有 | [ドリルスルー、ドリルダウン、ネストされた領域](/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
+| **インタラクティブな機能** | 印刷、テキスト検索、共有 | [ドリルスルー、ドリルダウン、ネストされた領域](/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions) |
 | **データ ソース**          | トランザクションのデータベース | データ ウェアハウス |
 | **レポート作成者**        | 開発者 | パワー ユーザー |
 | **レイアウト**               | 構造化された定義済みのレイアウト | 適応性のある柔軟なレイアウト |

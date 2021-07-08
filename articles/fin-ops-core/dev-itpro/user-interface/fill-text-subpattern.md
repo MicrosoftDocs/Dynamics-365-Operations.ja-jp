@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c8794770aa5f119df7923bd3e40f867eccfa12c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a106e9806fa5b6e3a18e0a96a96b4e632cd35bcb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748763"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189318"
 ---
 # <a name="fill-text-subpattern"></a>テキスト入力のサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5748763"
 
 この記事では、テキスト入力のサブパターンについて説明します。 このサブパターンは、1 つの String コントロールまたは StaticText コントロールをコンテナーの全幅まで広げる必要があるときに使用されます。これにより、ユーザーはより多くの情報を入力する領域を獲得します。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 テキスト入力は、コンテナーの幅を最大限に拡大する単一の文字列または StaticText コントロールを必要とする場合に使用されます。 このサブパターンは、通常、ユーザーが情報を入力するために更なる領域を必要とする複数行文字列コントロールに使用されます。
 

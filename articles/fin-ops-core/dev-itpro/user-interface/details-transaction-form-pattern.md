@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45b0b4d4ad7223c33d4688a610118bcc2336887b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: aace598539f6b8da61702f61e9f3e951bbf2ad59
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907705"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189914"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5907705"
 
 このトピックでは、詳細トランザクション フォームのパターンについて説明します。 このパターンを使用するフォームには、ユーザーが切り替えることができる2 つの詳細ビューがあります - ヘッダー ビューおよび明細行ビュー
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 明細行 (フォームの詳細トランザクション) を含む詳細フォームは、ユーザーが切り替えることができる 2 つの詳細ビューを持てる 1 つのフォームで構成されます。 ヘッダー ビューには、ヘッダーに関連付けられているか一部となっているすべてのフィールドが含まれます。 行ビューには、行グリッド、行の詳細、および最も重要なヘッダー フィールドのコレクションを含むセクションが含まれています。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7208f8f19937251cf23df53866218f9f134ae8b6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7a3d8d2ee6b16ffcba1192961b6074dcccbeb54e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745987"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189800"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 
@@ -28,8 +28,7 @@ ms.locfileid: "5745987"
 
 このトピックでは、企業間のデータ共有について説明します。 会社間共有は、Finance and Operations 展開で、参照およびグループ データを会社間で共有するためのメカニズムです。 この機能は、Microsoft Dynamics AX 2012 の仮想会社機能に似ています。
 
-<a name="what-is-this-feature-and-how-does-it-work"></a>これはどういう機能で、どのように動作しますか ?
-------------------------------------------
+## <a name="what-is-this-feature-and-how-does-it-work"></a>これはどういう機能で、どのように動作しますか ?
 
 会社間のデータの共有を使用すると、会社間で参照およびグループのデータをレプリケート (共有) できます。 レプリケーションが行われる前にデータの整合性が確認されます。 
 
@@ -164,8 +163,7 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 </table>
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [会社間財務データ共有を構成する (タスクガイド)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md)
 

@@ -1,5 +1,5 @@
 ---
-title: タスクレコーダーおよびパフォーマンスSDKを使用したシングルユーザーテスト
+title: パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 description: このトピックでは、Microsoft Visual Studio、パフォーマンス SDK、およびタスク レコーダー パフォーマンス テスト スクリプトを使用してシングルユーザー テストを行う方法について説明します。
 author: hasaid
 ms.date: 05/28/2020
@@ -13,29 +13,24 @@ ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fed2cba913154eb504e566427d5a76d18806093d
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.dyn365.ops.version: AX 10.0.0
+ms.openlocfilehash: 46cb08ba53b64a0a4a2e9eef18d991f4896fa280
+ms.sourcegitcommit: 4fc5c8b278b2b492eea5a0bb136019d4c1eaceef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866142"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "6191366"
 ---
-# <a name="single-user-testing-with-task-recorder-and-the-performance-sdk"></a>タスク レコーダーおよびPerformance SDK を使用したシングル ユーザー テスト
+# <a name="single-user-testing-using-performance-sdk-and-task-recorder"></a>パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 
 [!include [banner](../includes/banner.md)]
 
 Visual Studio および パフォーマンス ソフトウェア デベロップメント キット (SDK) を使用し、タスク レコーダーにて生成されたパフォーマンス テスト スクリプトとともシングルユーザーテストを行うには、このトピックに記載の内容を参考にしてください。
 
- > [!IMPORTANT]
-  > Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。 将来的に、代替ソリューションの推奨を公開します。  
-  > - Visual Studio および、オンプレミスでの負荷テストに向けたテストコント ローラー/テストエージェントをご利用の場合、 Visual Studio 2019が最新のバージョンになります。 そのサポート サイクルが終了するまで継続して使用することができます。 
-  > - クラウド ベースの負荷テストサービスをご利用の場合、同サービスは 2020 年 3 月 31 日まで継続してご利用いただけます。 それまでの間は、同サービスの全機能を継続してご利用いただけます。 また、オンプレミス負荷テストに切り替えることがも可能です。 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
-## <a name="prerequisites"></a>必要条件
-
-このトピックで扱う手順を完了するには、プラットフォーム更新プログラム 21、またはそれ以降が設定された開発環境を用意する必要があります。
 > [!IMPORTANT]
-> Finance and Operations アプリが 21Vianet に配置されている場合は、10.0.11 またはそれ以降のプラットフォーム更新で開発する必要があります。
+> Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。
+> + Visual Studio および、オンプレミスでの負荷テストに向けたテストコント ローラー/テストエージェントをご利用の場合、 Visual Studio 2019が最新のバージョンになります。 そのサポート サイクルが終了するまで継続して使用することができます。 
+> + 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
 
 ## <a name="use-task-recorder-to-define-and-record-an-end-to-end-business-scenario"></a>タスクレコーダーを使用してエンドツーエンドの業務シナリオを定義し、記録します。
 
@@ -118,7 +113,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
 タスクレコーダーとパフォーマンスSDKを使用したシングルユーザーテストには、以下のヒントと秘訣を参照してください。
 
-- タスクレコーダーを使用して業務を取り込む前に、エンドツーエンドの業務シナリオを最初に実行します。
+- タスク レコーダーを使用して業務を取り込む前に、エンドツーエンドの業務シナリオを最初に実行します。
 - タスクレコーダーを使用してシナリオを記録する場合は、ドロップダウンリストから値を選択するのではなく、手動で値を入力します。
 - 記録したタスクを再生し、すべてが期待どおりに動作することを確認してください。
 - ソリューションをビルド後にテストケースが表示されない場合は、 Visual Studio を再起動します。

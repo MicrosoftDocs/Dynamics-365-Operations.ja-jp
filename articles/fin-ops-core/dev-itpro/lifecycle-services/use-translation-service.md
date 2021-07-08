@@ -2,7 +2,7 @@
 title: ユーザー インターフェイス ファイルを翻訳します
 description: このトピックでは、Microsoft Dynamics 365 製品における UI Translation service の使用方法について説明します。
 author: kfend
-ms.date: 03/29/2018
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 519c8a29d4418ac37bbc54e76eb0947a7b219989
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6bef9c93c59c37693122cf33ec087dcca2107fb1
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750536"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222574"
 ---
 # <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 
@@ -80,7 +80,7 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
 
 ファイルのアップロードが終了したら、**送信** を選択して翻訳プロセスを開始します。 
 
-要求を送信すると、新しい要求 ID が DTS ダッシュ ボードに作成されます。 複数のターゲット言語に要求を送信した場合は、同じ要求 ID を持つ個別の行に各ターゲット言語ステータスが表示されます。 ダッシュボードの行を選択することで、要求の概要情報を表示するためにダッシュボード ウィンドウを右に展開します。  
+要求を送信すると、新しい要求 ID が DTS ダッシュ ボードに作成されます。 複数のターゲット言語に要求を送信した場合は、同じ要求 ID を持つ個別の明細行に各ターゲット言語ステータスが表示されます。 ダッシュボードの明細行を選択した場合、要求の情報の概要を表示するためにダッシュボード ページを右に展開します。  
 
 要求のステータスを確認するには、ダッシュボードで要求 ID のリンクをクリックします。 **要求ステータス** タブは、要求の情報の概要と共にアップロードしたソース ファイル一覧を表示します。
 
@@ -95,7 +95,8 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
     + 一般的な MT システムを使用している場合、ファイル サイズに応じて要求を数分で実行することができます。
 
 ## <a name="after-translation-is-completed"></a>翻訳の完了後
-翻訳要求の処理が完了すると、DTS から電子メール通知を受信します。 結果を要求詳細ページの **要求の出力** タブ上に表示することができます。
+
+翻訳要求が処理されると、DTS から電子メール通知を受信します。 結果を **要求の詳細** ページの **要求出力** タブ上に表示することができます。
 
 ![出力タブの要求](./media/dts-output.png "出力タブの要求")
 

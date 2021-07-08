@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad1e318b774ac1eb1e9a6e9a663d4bec92be17fc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6ba681e69d576002501d458483473de8fc953842
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749600"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188105"
 ---
 # <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749600"
 
 このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。 
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 フォームパターンの選択は、フォームを移行するプロセスの重要なステップです。 ターゲット フォームに最適なパターンでは、必要な移行作業の量が減少します。 対照的に、適切ではないパターンは無駄な時間と労力を引き起こす可能性があります。 したがって、移行するフォームに最適なフォーム パターンを選択できるよう、調査を行うことが重要です。 フォームの適切なパターンを決定するためのガイダンスおよびヒントを次に示します。
 

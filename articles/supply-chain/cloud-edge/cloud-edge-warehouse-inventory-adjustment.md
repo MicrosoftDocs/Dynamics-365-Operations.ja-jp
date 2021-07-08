@@ -16,17 +16,16 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a451816078ca2e77f30379828777209dc48bd849
-ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
+ms.openlocfilehash: 1bf147ce430d84980516d8d4824081ee2a9321a2
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6026136"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271235"
 ---
 # <a name="warehouse-inventory-adjustment"></a>倉庫在庫調整
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 倉庫在庫調整機能は、[製造ワークロード](cloud-edge-workload-manufacturing.md)および[倉庫管理ワークロード](cloud-edge-workload-warehousing.md)に対してクラウドおよびエッジのスケール ユニットを実行している場合に使用します。
 

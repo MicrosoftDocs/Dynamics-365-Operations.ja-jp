@@ -1206,11 +1206,11 @@
               href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
             - name: データ マートをリセットするタイミング
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
-            - name: Financial Reporting に関するよく寄せられる質問
+            - name: 財務諸表に関するよく寄せられる質問
               href: general-ledger/financial-reporting-faq.md
-        - name: Finance 分析情報
+        - name: Finance Insights
           items:
-            - name: Finance 分析情報ホーム ページ
+            - name: Finance Insights ホーム ページ
               href: finance-insights/finance-insights-home-page.md
             - name: コンフィギュレーションと管理
               items:
@@ -1226,7 +1226,7 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: データ インテグレーター プロジェクトの作成
                   href: finance-insights/create-data-integrate-project.md
-            - name: Finance 分析情報の使用
+            - name: Finance Insights の使用
               items:
                 - name: 予算案
                   href: finance-insights/budget-proposals.md
@@ -1462,8 +1462,10 @@
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Regulatory Configuration Service - グローバリゼーション機能
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-                    - name: Regulatory Configuration Service で電子申告コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
+                    - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service - RCS 環境の削除
+                      href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: 電子請求
@@ -1524,6 +1526,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU 販売リスト
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: イギリスのレポート
+                          items:
+                            - name: VAT の MTD 統合の準備
+                              href: localizations/emea-gbr-mtd-vat-integration.md
             - name: 規制の更新
               href: localizations/regulatory-updates.md
             - name: オーストラリア
@@ -3176,11 +3182,13 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: 買掛金勘定負債の税登録および負債の損金処理
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
+                    - name: 売掛金勘定の貸倒損失引当
+                      href: localizations/rus-bad-debts.md
             - name: サウジアラビア
               items:
                 - name: サウジアラビアの概要
                   href: localizations/saudi-arabia.md
-                - name: 売上税
+                - name: 消費税
                   href: localizations/apac-sau-sales-tax.md
                 - name: サウジアラビアのザカート レポート
                   href: localizations/emea-sau-zakat-reporting.md
@@ -3292,8 +3300,6 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: 受取人払い VAT の消費税グループの設定
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: VAT に関する税のデジタル化
-                  href: localizations/emea-gbr-mtd-vat-integration.md
                 - name: 支払プラクティス レポートの統計
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: 米国
@@ -3625,7 +3631,7 @@
               items:
                 - name: コンフィギュレーションの作成
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
-                - name: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
+                - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
@@ -3665,11 +3671,17 @@
               items:
                 - name: フォーミュラ言語
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: ER フォーミュラのサポートされるデータ型
+                  items:
+                    - name: プリミティブ データ型
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                    - name: 複合データ型
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
                 - name: 関数
                   items:
                     - name: コンテナー
                       items:
-                        - name: コンテナーの機能
+                        - name: コンテナー関数
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/finance/toc.json
                         - name: Base64StringToContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
@@ -3929,12 +3941,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
             - name: さまざまな形式で送信ドキュメントを生成するための電子申告形式を設計する
               items:
+                - name: OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: 送信ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
                   items:
                     - name: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: OPENXML 形式でレポートを生成する例
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Excel テンプレートを再適用して電子申告形式を変更する
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
@@ -3947,7 +3959,7 @@
                   items:
                     - name: Word 形式のレポートを生成するための新しい ER コンフィギュレーションを設計する
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
-                    - name: Excel テンプレートで電子申告コンフィギュレーションを再利用して Word 形式のレポートを生成する
+                    - name: Excel テンプレートで ER コンフィギュレーションを再利用して Word 形式のレポートを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: 生成されるレポートの Word コンテンツ コントロールを非表示にする
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
@@ -4017,7 +4029,7 @@
                   items:
                     - name: RCS のグローバリゼーション機能
                       href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
-                    - name: Finance に電子申告コンフィギュレーションをダウンロードする
+                    - name: Finance に ER コンフィギュレーションをダウンロードする
                       items:
                         - name: RCS からコンフィギュレーションをダウンロードする
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
@@ -4175,7 +4187,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: 電子申告によるテストの自動化
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-                - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
+                - name: ER コンフィギュレーションを使用して業務プロセスを自動化する
                   items:
                     - name: Power BI にデータをプルするよう電子申告を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
@@ -4185,7 +4197,7 @@
                   items:
                     - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-                    - name: 電子申告コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
+                    - name: ER コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: ビジネス ドキュメントの管理 (BDM)
                   items:
@@ -4211,13 +4223,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                     - name: Application update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                    - name: Application update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                 - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
                     - name: 電子申告の送信先の作成をカスタム送信先ファクトリに委任する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
-                - name: ユーザー入力パラメータタイプのデータ ソース値をソースコードから開始する
+                    - name: 生成されるドキュメントに対するカスタム送信先の実装
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
+                - name: USER INPUT PARAMETER タイプのデータ ソース値をソースコードから開始する
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: モバイル アプリ
           items:

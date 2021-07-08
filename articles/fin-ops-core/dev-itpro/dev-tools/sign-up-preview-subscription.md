@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da1f7f2005c8a9ea55682570691bfad56a514fca
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 4d0f36c89f50014b1d9ce102fe3937634790dfca
+ms.sourcegitcommit: 4fc5c8b278b2b492eea5a0bb136019d4c1eaceef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866326"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "6191356"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
@@ -43,7 +43,7 @@ ms.locfileid: "5866326"
     > [!IMPORTANT]
     > このリリースでは、Microsoft 365 や Microsoft Dynamics CRM Online など、他のオンライン サービスに関連付けられている既存の資格情報を使用しないでください。
 
-- **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、Finance and Operations アプリケーション、Microsoft Dynamics 365 Commerce、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、CustomerSource、PartnerSource、ソース情報、および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
+- **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、Finance and Operations アプリケーション、Microsoft Dynamics 365 Commerce、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、Information Source および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して引き続き必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
 - **Microsoft 365 管理センター** – Microsoft 365 管理センターは、Microsoft 365 が管理者に提供するサブスクリプション管理ポータルです。 Microsoft 365 管理センターは、ユーザーおよびサブスクリプションの管理機能を提供するために使用されます。
 - **環境** - 必要に応じて、仮想マシン (VM) の単一インスタンスをいくつでも配置できます。 これらのインスタンスを *環境* と呼び出ます。
 

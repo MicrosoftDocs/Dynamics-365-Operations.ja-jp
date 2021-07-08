@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 647f1edc8a9ebdeeffdfbaad337cd10da84a9d30
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 3ba4bc2033a5c6435877262655b4bd55293dbdf2
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935899"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248558"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 
@@ -134,7 +134,7 @@ Commerce Data Exchange - リアル タイム サービスを拡張する方法�
 
 拡張子コードに `try...catch` ステートメントを追加して例外を処理し、それを Application Insights に記録するかクライアント アプリケーションに反映することができます。 エラー メッセージをクライアントに反映する場合は、CRT または Retail Server から集計された例外を返したりしません。 代わりに、個々のタスク レベルで例外を受け取り、再実行します。 詳細については、以下のトピックを参照してください:
 
-+ [例外処理 (タスク並列ライブラリ)](https://docs.microsoft.com/dotnet/standard/parallel-programming/exception-handling-task-parallel-library)。
++ [例外処理 (タスク並列ライブラリ)](/dotnet/standard/parallel-programming/exception-handling-task-parallel-library)。
 + [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
 + [Commerce の拡張リソースおよびラベル ファイルをローカライズ](extension-resource-localization.md) して、クライアント アプリケーション で CRT 例外を記録および表示します。
 
@@ -403,7 +403,9 @@ namespace Contoso
 
 また、**commerceRuntime.ext.Config** ファイルの登録は、上書きすべきサービスの登録より前にする必要があります。 この登録順序は、Managed Extensibility Framework (MEF) が拡張ダイナミック リンク ライブラリ (DLL) を読み込む方法のために重要です。 ファイルより高いタイプが優先されます。
 
-CRT 要求をオーバーライドするには、次の例にあるパターンに従って標準の **CreateOrUpdateCustomerDataRequest** 要求をオーバーライドします。
+ハンドラーを上書きするには、ハンドラー名に基づいてハンドラーを実行する場合に **SingleAsyncRequestHandler<TRequest>** または **INamedRequestHandlerAsync** を実装します。
+
+### <a name="sample-code-that-shows-how-to-override-createorupdatecustomerdatarequest-using-the-singleasyncrequesthandler"></a>SingleAsyncRequestHandler を使用した CreateOrUpdateCustomerDataRequestを 上書きする方法を示すサンプル コード 
 
 ```csharp
 namespace Contoso
@@ -438,6 +440,49 @@ namespace Contoso
     }
 }
 ```
+
+### <a name="sample-code-on-how-to-override-the-handlers-which-are-implemented-based-on-handler-name-implement-the-inamedrequesthandlerasync"></a>ハンドラー名に基づいて実装されたハンドラーを上書きする方法のサンプル コード、INamedRequestSyncrAsync を実装します。 
+
+```C#
+    public class SampleGetProductSearchResultshandler : INamedRequestHandlerAsync
+    {
+        /// <summary>
+        /// Gets the supported requests types.
+        /// </summary>
+        public IEnumerable<Type> SupportedRequestTypes
+        {
+            get
+            {
+                return new[] { typeof(GetProductSearchResultsServiceRequest), };
+            }
+        }
+
+        public string HandlerName
+        {
+            get
+            {
+                return "CommerceProductSearch";
+            }
+        }
+
+        public async Task<Response> Execute(Request request)
+        {
+            ThrowIf.Null(request, nameof(request));
+            Type requestType = request.GetType();
+            Response response = null;
+
+            if (requestType == typeof(GetProductSearchResultsServiceRequest))
+            {
+                //Implement the logic here
+            }
+
+            return response;
+        }
+    }
+
+```
+
+
 
 ## <a name="run-the-base-handler-in-the-extension"></a>拡張機能で基本ハンドラーを実行する
 

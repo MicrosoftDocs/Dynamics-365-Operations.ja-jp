@@ -2,7 +2,7 @@
 title: 予算案 (プレビュー)
 description: このトピックでは、組織の履歴データで機械学習モデルを使用して予算案を生成するプロセスについて説明します。
 author: panolte
-ms.date: 07/10/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region:
 ms.author: panolte
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: b38b9ee57fa319d2436507f52b896201cbafcef2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bce5a6df92e929ecbdba51d113720b14b58135c3
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811425"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186578"
 ---
 # <a name="budget-proposals-preview"></a>予算案 (プレビュー)
 
@@ -96,9 +96,5 @@ ms.locfileid: "5811425"
 **実績と予算 - 既定の財務** レポートを使用して、実績の概要および詳細なビューと予算案の比較を表示します。 既定のレポート デザインには、元の予算、修正された予算、実績、差異の量、差異の割合、および予算の割合の 1 つの年ごとのビューが含まれます。 差異を含む単一の量ではなく、対応する値を持つ 12 か月の列を含むようにレポートを簡単に更新できます。 **レポート オプション** を選択し、**シナリオ** ドロップダウン メニューから予算モデルを選択して、予算案予算モデルを設定することができます。 これにより、レポートが適切な予算モデルの情報に更新されます。 
 
 12 か月の財務諸表を Excel にエクスポートすると、折れ線グラフまたはスパーク線を簡単に挿入して、データのトレンドを表示するのに役立つ入力データまたは出力データのグラフィカル表示を提供できます。
-
-#### <a name="privacy-notice"></a>プライバシー通知
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

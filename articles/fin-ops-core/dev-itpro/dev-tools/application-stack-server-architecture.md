@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b56808c0ea8c2634551c15006eb7db004d3ff6f2
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: e9f678f3e4dac252b32d2474739d63e2999dcdb3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865954"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188824"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 
@@ -25,8 +25,7 @@ ms.locfileid: "5865954"
 
 アプリケーション スタックは、プラットフォーム モデルとアプリケーション固有のモデルに分割されます。 プラットフォーム モデルは、アプリケーション プラットフォーム、アプリケーション基準、そして Test Essentials です。 アプリケーション固有のモデルは多数存在します。 いくつかの例として、アプリケーション スイート、元帳、小売、そしてケース管理があります。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 アプリケーション スタックとサーバー アーキテクチャは、次の 3 本の主要な柱に対応します。
 

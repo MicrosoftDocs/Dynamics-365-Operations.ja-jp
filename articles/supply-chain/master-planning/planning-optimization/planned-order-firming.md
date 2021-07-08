@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193884"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271211"
 ---
 # <a name="firm-planned-orders"></a>計画オーダーの確定
 
@@ -123,8 +123,6 @@ ms.locfileid: "6193884"
 前述のタイム フェンスをすべて *0* (ゼロ) に設定すると、関連する補充済品目に対して自動確定は事実上無効になります。
 
 ## <a name="firm-planned-orders-by-using-a-query"></a>クエリを使用して計画オーダーを確定する
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 クエリ ベースの確定により、事前に定義された基準に基づいて確定を計画できます。 自動確定とは異なり、クエリ ベースの確定では、異なる時点での注文の異なるサブセットの自動確定を実行できます。 また、手動または自動のいずれかの操作を使用して、さまざまなタイプの計画オーダーを確定できます。 設定に基づいて選択された確定注文をプレビューすることもできます。 したがって、選択内容が予想に適合していることを確認できます。
 

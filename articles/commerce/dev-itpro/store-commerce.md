@@ -2,7 +2,7 @@
 title: Microsoft Dynamics 365 Commerce での Store Commerce アプリ (プレビュー)
 description: このトピックでは、Store Commerce アプリの設定および構成方法について説明します。
 author: mugunthanm
-ms.date: 05/26/2021
+ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-20-2020
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 8b7ba86d524735a4f986988d032e3b234ac17a1f
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: b5a218c885a9e3923f38c54ced466dd5aaf630ac
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103084"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216705"
 ---
 # <a name="store-commerce-app-in-microsoft-dynamics-365-commerce-preview"></a>Microsoft Dynamics 365 Commerce での Store Commerce アプリ (プレビュー)
 
@@ -25,89 +25,159 @@ ms.locfileid: "6103084"
 
 このトピックは、Dynamics 365 Commerce バージョン 10.0.20 およびそれ以降に適用されます。
 
-Microsoft Dynamics 365 Commerce の Store Commerce アプリは、レジ担当者、販売担当者、販売在庫担当者、在庫担当者、店長など第一線の作業者に、現金売りトランザクション、キャッシュ/シフト管理、顧客エンゲージメント、販売支援、クライアンテリング、エンドレス アイル、注文処理/フルフィルメント、在庫管理、レポートなどの豊富なコマース機能を提供します。
+Microsoft Dynamics 365 Commerce の Store Commerce アプリは、レジ担当者、販売担当者、販売在庫担当者、在庫担当者、および店舗管理者などの第一線の作業者に豊富なコマース機能を提供します。 これらの作業者は、現金売りトランザクション、現金/シフト管理、顧客契約、支援販売、クライアンテリング、エンドレス アイル、注文処理/フルフィルメント、在庫管理、レポートなどのコマース操作を実行することができます。
+
+Store Commerce は、Modern 販売時点管理 (MPOS) とクラウド販売時点管理 (CPOS) の両方の利点を提供します。
 
 > [!NOTE]
-> Store Commerceは、プレビュー アプリケーションとしてリリースされます。 Store Commerce では同じくプレビュー中の [Microsoft Edge WebView2](/microsoft-edge/webview2/) が使用されます。 したがって、運用環境では Store Commerce を使用しません。 Store Commerce は、一般に使用可能 (GA) になったら、運用環境で使用できます。
+> Store Commerceは、プレビュー アプリケーションとしてリリースされます。 同じくプレビュー中の [Microsoft Edge WebView2](/microsoft-edge/webview2/) コントロールが使用されます。 したがって、一般に使用可能 (GA) になるまで実稼働環境で Store Commerce を使用 **しません**。
 
-Store Commerce は、[Microsoft Edge WebView2](/microsoft-edge/webview2/) を使用してクラウド販売時点管理 (CPOS) を表示する Windows 用のシェル アプリです。 CPOS は Web ブラウザーでのみ実行できますが、Store Commerce は [Modern 販売時点管理](retail-modern-pos-architecture.md) のようなネイティブ WIndows アプリとして実行できます。 Store Commerce はローカル ハードウェア ステーションをサポートし、支払ターミナル、プリンター、キャッシュ ドロワーに直接統合できます。 ハードウェア デバイスを使用するために共有のハードウェア ステーションを設定する必要はありません。 
+Store Commerce は、[Microsoft Edge WebView2](/microsoft-edge/webview2/) コントロールを使用してクラウド販売時点管理 (CPOS) アプリを表示する Windows 用のシェル アプリです。 CPOS は Web ブラウザーでのみ実行できますが、Store Commerce は [Modern 販売時点管理 (MPOS)](retail-modern-pos-architecture.md) などのネイティブ WIndows アプリとして実行できます。
 
-Store Commerce は、UI を表示するために、ユニバーサル Windows プラットフォーム (UTC) アプリ表示フレームワークではなく、Chromium エンジンを使用します。 Chromium エンジンは、Windows の ネイティブの JavaScript UWP アプリよりも表示パフォーマンスが優れています。 MPOS と Store Commerce の主な違いは、Store Commerce がアプリを表示するのに Chromium エンジンを使用する点です。
+Store Commerce はローカル ハードウェア ステーションをサポートし、支払ターミナル、プリンター、キャッシュ ドロワーに直接統合できます。 ハードウェア デバイスを使用するために共有のハードウェア ステーションを設定する必要はありません。
 
-## <a name="application-lifecycle-management-alm"></a>アプリケーション ライフサイクル管理 (ALM)
+ユーザー インターフェイス (UI) を表示するために、Store Commerce は、ユニバーサル Windows プラットフォーム (UTC) アプリ表示フレームワークの代わりに Chromium エンジンを使用します。 Chromium エンジンは、Windows の ネイティブの JavaScript UWP アプリよりも表示パフォーマンスが優れています。 MPOS と Store Commerce の主な違いは、Store Commerce がアプリを表示するのに Chromium エンジンを使用する点です。
 
-Store Commerce は、Windows デバイスで実行するアプリケーションです。 このアプリは [WIndows アプリ - Microsoft Store](https://www.microsoft.com/store/r/9PGK1J3KQ8JB) から入手でき、検出、ダウンロード、および展開が容易なため、展開やサービスのライフサイクル全体を簡略化します。 Store Commerce は、上位と下位の両方の互換性があります。 このアプリは、クラウド スケール ユニットおよび拡張機能とは別に更新できます。 このアプリは、Windows ポリシーを設定するか、Microsoft Store のアプリでサポートされている更新プログラムや配置ツールを使用して簡単に更新できます。 Modern POS では、アプリを取得して拡張機能でパッケージ化するためには手動による管理が必要ですが、Store Commerce は、Microsoft Store から配置する機能なので、ALM を大幅に簡素化できます。  
+## <a name="benefits-of-store-commerce"></a>Store Commerce の利点
 
-Store Commerce は CPOS を表示するシェルなので、CPOS を更新して更新後の CPOS 機能を利用する必要があります。 CPOS は、クラウド スケール ユニット (CSU) から更新できます。 CSU の更新の詳細については、[Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md) を参照する
++ Microsoft Store を使用した、簡略化したアプリケーション ライフサイクル管理 (ALM)。
++ MPOS または CPOS 用に開発された拡張機能または ISV コードは、Store Commerce で再利用できます。
++ Store Commerce は、MPOSとCPOSの両方の利点を提供します。
++ パフォーマンス向上。
++ POS および拡張機能のアップグレードがより簡単になりました。
++ 専用のハードウェア ステーション (HWS) をサポートしています。
++ 将来オフラインでサポートされます。
+
+## <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
+
+Store Commerce は、Windows デバイスで実行するアプリです。 [Windows アプリ- Microsoft Store](https://aka.ms/StoreCommerceApp) から入手できるので、検索、ダウンロード、および配置が容易になります。 したがって、配置とサービスの全体的なライフサイクルは簡素化されます。
+
+Store Commerce には、上位互換性と下位互換性の両方があります。 このアプリは、Windows ポリシーを設定するか、Intune のような Microsoft Store のアプリでサポートされている更新プログラムや配置ツールを使用して簡単に更新できます。 このアプリは、Cloud Scale Unit (CSU) および拡張機能とは別に更新できます。
+
+MPOS の場合は、アプリを取得して拡張機能にパッケージ化するために、手動の管理が必要です。 ただし、Store Commerce は Microsoft Store を通じて配置されるので、アプリケーション ライフサイクル管理 (ALM) を大幅に簡素化できます。
+
+Store Commerce は、CPOS を表示するシェルです。 したがって、更新された CPOS 機能を取得するには、CPOS も更新する必要があります。 CPOS は CSU から更新できます。 CSU の更新方法の詳細については、[Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md) を参照してください。
 
 ![Store Commerce](media/StoreCommerce.PNG)
 
-## <a name="store-commerce-is-the-future-of-mpos"></a>Store Commerce は MPOS の未来である
 
-Store Commerce が MPOS と完全に同等の機能を持つようになった場合、MPOS は置き換えられます。 現時点では、Store Commerce はオフラインでの実行をサポートしません (Retail Server への接続がない場合)。 さまざまな POS アプリおよびトポロジの詳細については [Modern POS (MPOS) かクラウド POS かの選択](../mpos-or-cpos.md) を参照する
+## <a name="store-commerce-and-mpos-parity"></a>Store Commerce と MPOS の機能
+
+Store Commerce は、将来 MPOS と同等の機能を持つようになります。 現時点では、Store Commerce はオフラインでの実行をサポートしません (Headless Commerce への接続がない場合)。 さまざまな POS アプリおよびトポロジの詳細については [Modern POS (MPOS) かクラウド POS かの選択](../mpos-or-cpos.md) を参照する
+
+## <a name="store-commerce-and-cpos-parity"></a>Store Commerce と CPOS の機能
+
+Store Commerce では CPOS が表示され、CPOS と同等の機能を持つほか、Store Commerce は専用のハードウェア ステーションをサポートし、将来はオフラインでサポートすることができます。
 
 ## <a name="choosing-between-store-commerce-and-mpos"></a>Store Commerce か MPOS かの選択
 
 Store Commerce では CPOS が表示されますが、MPOS と同等の機能があります。 Store Commerce と MPOS はユニバーサル Windows プラットフォーム (UTC) アプリで、ローカル ハードウェア ステーションをサポートしています。 Store Commerce は現在、オフラインでサポートされていませんが、将来サポートされる予定です。 
 
-Store Commerce は、UI を表示するためにChromium エンジンを使用しますので、MPOS や Store Commerce を Microsoft Store を通じて配置する場合に比べてレンダリング パフォーマンスが向上し、ALM は大幅に簡素化されます。一方、MPOS は LCS および HQ を使用したセルフサービスです。 将来、MPOS は廃止され、Store Commerce に置き換えられる予定です。 
+Store Commerceでは、UI を表示するために Chromium エンジンが使用され、表示パフォーマンスが MPOS よりも向上します。 さらに、Store Commerce は Microsoft Store を通じて配置されるので、ALM を大幅に簡素化できます。 対照的に、MPOS は Microsoft Dynamics Lifecycle Service (LCS) と Commerce 本社を使用してセルフサービスを行います。
 
-店舗でオフライン サポートが不要な場合は、Store Commerce を選択します。 
+最終的には、MPOS は非推奨になり、Store Commerce に置き換えられる予定です。
 
-アプリケーション タイプ | Store Commerce (プレビュー) | MPOS
----|---|---
-操作環境 | Windows | Windows
-ALM | Microsoft Store および CPOSは、CSU を通じて配置されています。 | LCS、HQ を使用するセルフサービス、および MPOS インストーラーを使用してパッケージ化およびインストールされます。
-拡張子 | CPOS に配置されます。 | MPOS または独立した拡張機能パッケージと共にパッケージ化されています。
-オフラインのサポート | なし (将来サポートされます。) | あり
-ローカル ハードウェア ステーションのサポート | あり | あり
-UI レンダリング エンジン | UI を表示する Curomium エンジン。 | UI を表示するための UWP アプリ フレームワーク。
+店舗でオフライン サポートを必要としない場合は、MPOS の代わりに Store Commerce を選択する必要があります。
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Store Commerce (プレビュー)</th>
+<th>MPOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">操作環境</th>
+<td>Windows</td>
+<td>Windows</td>
+</tr>
+<tr>
+<th scope="row">ALM</th>
+<td>Store Commerce は Microsoft Store を通じて配置され、CPOS は CSU を通じて配置します。</td>
+<td>MPOS は、LCS および Commerce 本社を使用してセルフサービスを行います。 MPOS インストーラーを使用してパッケージ化され、インストールされます。</td>
+</tr>
+<tr>
+<th scope="row">拡張子</th>
+<td>拡張機能は CPOS に配置します。</td>
+<td>拡張機能が MPOS と共にパッケージ化されるか、あるいは独立した拡張パッケージが使用されます。</td>
+</tr>
+<tr>
+<th scope="row">オフライン モードでのサポート</th>
+<td>いいえ (将来追加する予定)</td>
+<td>あり</td>
+</tr>
+<tr>
+<th scope="row">ローカル ハードウェア ステーションのサポート</th>
+<td>あり</td>
+<td>あり</td>
+</tr>
+<tr>
+<th scope="row">UI レンダリング エンジン</th>
+<td>UI の表示には、Curomium エンジンが使用されます。</td>
+<td>UI の表示には UWP アプリの表示フレームワークが使用されます。</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="setup-and-installation"></a>設定およびインストール
 
 ### <a name="prerequisite"></a>前提条件
 
++ Windows 10 バージョン 17763.0 またはそれ以上、または Windows Server 2019。
 + Microsoft Edge、アプリは Microsoft Edge WebView2 コントロールを使用するためです。
++ Dynamics 365 Commerce (バック オフィスおよび CPOS)。
 
-### <a name="hq-device-setup"></a>HQ デバイスの設定
+### <a name="device-setup-in-commerce-headquarters"></a>Commerce 本社でのデバイスの設定
 
-Store Commerce のために、**Store Commerce** という名前の新しいアプリケーション タイプが **Retail と Commerce > POS セットアップ > デバイス>** に追加されます。 Store Commerce のデバイスを作成する場合は、**アプリケーションのタイプ** を **Store Commerce** に設定します。
+Store Commerce のために、**Store Commerce** という名前の新しいアプリケーション タイプが **デバイス** ページに追加されました (**Retail と Commerce \> チャネル設定 \> POS 設定 \> デバイス**)。 Store Commerce でデバイスを作成する場合、このアプリケーション タイプを選択します。
 
-Store Commerce のために[登録](../tasks/create-associate-registers.md) と[デバイス](../tasks/create-associate-device.md) を作成します。 その後、アプリを有効化し、デバイスの作成時に **アプリケーション タイプ** を **Store Commerce** に設定する前に、HQ の配送スケジュールからレジスター ジョブを実行します。
+Store Commerce アプリケーション タイプがドロップ ダウン メニューで表示されない場合は、Retail と Commerce > 本社設定 > パラメーター > コマース パラメーター > 一般 > **初期化子** から **初期化** 実行し、ページを更新します。
 
-Store Commerce は、Microsoft Store でダウンロードおよびインストールできます。 アプリをダウンロードするには、これらの手順に従います。
+Store Commerce のために[登録](../tasks/create-associate-registers.md) と[デバイス](../tasks/create-associate-device.md) を作成する必要があります。 その後、アプリを有効にする前に、Commerce 本社の配送スケジュールからレジスター ジョブを実行します。 デバイスの作成中に、**アプリケーション タイプ** フィールドを **Store Commerce** に設定します。
 
-1. [Windows アプリ- Microsoft Store](https://www.microsoft.com/store/r/9PGK1J3KQ8JB) を開き、**Store Commerce** を検索します。
-2. **入手** を選択し、アプリをインストールします。  
-3. Windows のスタート メニューで Store Commerce を検索し、アプリを開きます。
+Store Commerce は Microsoft Store で使用できます。 アプリをダウンロードおよびインストールするには、これらの手順に従います。
 
-Store Commerce の起動後、次の手順に従って、アプリを構成および有効化します。
+1. [Windows アプリ- Microsoft Store](https://aka.ms/StoreCommerceApp) を開き、**Store Commerce** を検索します。
+2. **入手** を選択し、アプリをインストールします。 
+3. Windows の **スタート** メニューで **Store Commerce** を検索し、アプリを開きます。
 
-1.  アプリの開始ページに、クラウド POS の URL を入力します。 クラウド POS の URL は、LCS 環境の詳細ページ、または **Dynamics 365 Commerce > チャネル設定 > チャネル プロフィール** を参照してください。
-2.  **保存** を選択します。
-3.  URL を保存した後、手順に従って Store Commerce を有効にしてください。 アプリを有効にする詳細な手順については、[POS の有効化ガイド](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation) を参照してください。
-4.  アプリが有効化された後、従業員アカウントでログインします。 これで、Commerce タスクを完了できます。
+アプリの起動後、次の手順に従って、アプリを構成および有効化します。
+
+1. アプリの開始ページに、CPOS の URL を入力します。 このURLは、LCSの環境詳細ページ、または Commerce の **チャネル プロファイル** ページで確認できます (**Dynamics 365 Commerce\> チャネル設定 \> チャネル プロファイル**)。
+2. **保存** を選択します。
+3. Store Commerce を有効にするには、POS有効化ガイドの [POS の有効ガイド](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation) の手順に従います。
+4. 従業員アカウントを使用してサイン インします。
+
+これで、コマース操作を完了できます。
 
 ### <a name="troubleshooting-setup-issues"></a> 設定の問題に関するトラブルシューティング
 
 #### <a name="reset-the-app"></a>アプリのリセット
 
-無効な CPOS URL を入力して、変更したい場合、または、有効化の際にアプリがエラー状態にある場合は、アプリをリセットしてプロセスを再開できます。
+入力した CPOS URL が無効で、変更したい場合、または、有効化の際にアプリがエラー状態にある場合は、アプリをリセットしてプロセスを再開できます。
 
-1. 開始メニューでアプリを右クリックし、**詳細 > アプリの設定** を選択します。
-2. アプリケーション設定ページを **リセット** ボタンまで下にスクロールします。
-3. **リセット** を選択し、確認メッセージを確認します。
+1. Windowsvの **スタート** メニューで、アプリを選択したまま (あるいは右クリックして) 、それから **詳細 \>アプリの設定** を選択します。
+2. アプリ設定ページを **リセット** ボタンが見つかるまで下にスクロールします。
+3. **リセット** を選択し、表示されたらアプリのリセットを確認します。
 
 ## <a name="customizing-the-app"></a>アプリのカスタマイズ
 
-Store Commerce アプリは、Retail SDK の POS 拡張機能サポートを使用してカスタマイズできます。 POS のユーザー エクスペリエンスの変更と作成、標準の機能拡張または変更の実行、検証の追加、カスタム機能の追加を行うことができます。 - 詳細については、[販売時点管理 (POS) の拡張機能の概要](pos-extension/pos-extension-overview.md) を参照してください。
+Retail ソフトウェア開発キット (SDK) が提供する POS 拡張機能サポートを使用して、Store Commerce をカスタマイズできます。 POS のユーザー エクスペリエンスの変更と作成、標準の機能拡張または変更、検証の追加、カスタム機能の追加を行うことができます。 - 詳細については、[販売時点管理 (POS) の拡張機能の概要](pos-extension/pos-extension-overview.md) を参照してください。
 
-Retail SDK を使用して開発された拡張機能は CPOS、MPOS、および Store Commerce で使用しますが、拡張機能をパッケージ化して配置する方法は MPOS と CPOS によって異なります。
+Retail SDK を使用して開発された拡張機能は、CPOS、MPOS、および Store Commerce で機能します。 ただし、MPOS と CPOSによって拡張機能をパッケージ化して配置する方法は異なります。
 
-Store Commerce では CPOS が表示されるので、CPOS のパッケージと配置のオプションに従って店舗のコマース拡張機能を配置します。
+Store Commerce では CPOS が表示されるので、CPOS のパッケージと配置のオプションに従って Store Commerce の拡張機能を配置する必要があります。
 
-### <a name="hardware-station-extensionhws"></a>ハードウェア ステーション拡張機能 (HWS)
+### <a name="hardware-station-extension"></a>ハードウェア ステーション拡張機能
 
-また、このアプリをハードウェア デバイスと統合するために拡張することができ、[Store Commerce HWS 拡張機能パッケージを生成するためにサンプル拡張機能コードを GitHub に追加することができます](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28/src/PosSample)。 詳細については [POS と新しいハードウェア デバイスの統合](hardware-device-extension.md) を参照してください。
+Store Commerceは、ハードウェア デバイスと統合できるよう拡張することができます。 GitHub で追加された[サンプル拡張機能コード](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28/src/PosSample) を使用して、Store Commerce ハードウェア ステーションの拡張機能 (HWS) のパッケージを生成できます。 詳細については [POS と新しいハードウェア デバイスの統合](hardware-device-extension.md) を参照してください。
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)] 
+## <a name="known-issues-with-the-microsoft-edge-webview2-control"></a>Microsoft Edge WebView2 コントロールに関する既知の問題
+
++ 有効化の際に、複数のオプションを使用して AAD パスワードを入力するように求めるメッセージが表示されたら、パスワードを選択します。 他のオプションが機能しない場合があります。
++ Tab キーを押すと、アプリ内のタブが機能しない場合があります。 代わりに、項目をクリックまたは選択します。
++ マウスを使用してドロップダウンを選択できない場合があります。 代わりに、キーボードを使用して選択します。
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

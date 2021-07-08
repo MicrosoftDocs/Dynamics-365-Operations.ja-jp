@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 511ca3879a26d15e27983e6963badc7c37b9a954
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 65ce8fdc0da2d0e5882622d63c18b3a70ffb9c39
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866100"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189932"
 ---
 # <a name="debug-x-code-by-using-the-debugger-in-visual-studio"></a>Visual Studio で、デバッガーを使用して X++ コードをデバッグする
 
@@ -55,8 +55,7 @@ X++ コードをデバッグするには、次の手順を実行します。
 7. アプリケーションのデバッグが終了した後、アプリケーションは終了します。 Visual Studio はデバッグ モードを終了します。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [開発およびカスタマイズのホーム ページ](developer-home-page.md)
 

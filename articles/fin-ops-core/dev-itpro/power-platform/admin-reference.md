@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: fc01a2e68c8713e2a39bd5434be034db043332e3
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 41d21d291040a4b72a7eadbbcb1b0d9cbe73b8cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909016"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189806"
 ---
 # <a name="finance-and-operations-and-dataverse-admin-reference"></a>Finance and Operations および Dataverse 管理リファレンス
 
@@ -146,8 +146,7 @@ Finance and Operations には多数の OData 対応エンティティが含ま�
 
 仮想エンティティ メタデータは、Finance and Operations のエンティティ メタデータが変更されたと想定される場合に、強制的に更新できます。 これを行うには、**更新** を **はい** に設定して保存します。 これにより、Finance and Operations の最新のエンティティ定義が Dataverse に同期され、仮想エンティティが更新されます。
 
-<a name="referencing-virtual-entities"></a>仮想エンティティの参照
-----------------------------
+## <a name="referencing-virtual-entities"></a>仮想エンティティの参照
 
 仮想エンティティはすべて MicrosoftOperationsERPVE ソリューションで生成され、API によって管理されます。 つまり、エンティティの表示/非表示を変更してもソリューションの項目は変化しますが、それでも依存できるマネージド ソリューションになります。 標準 ALM フローでは、ISV ソリューションの **既存の追加** オプションを使用して、このソリューションから仮想エンティティに対する標準参照を取得するだけです。 これにより、ソリューションの依存関係が見つからないと表示され、ソリューション インポート時にチェックされます。 インポート中に、指定された仮想エンティティがまだ存在しない場合は、追加の作業を必要とすることなく、自動的に表示されます。
 

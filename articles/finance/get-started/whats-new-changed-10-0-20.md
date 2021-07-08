@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Finance 10.0.20 (2021 年 7 月) の新機能または変更された機能
+title: Dynamics 365 Finance 10.0.20 (2021 年 8 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.20 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
 ms.date: 05/28/2021
@@ -14,23 +14,24 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: aab178ebf160048cccc651a6c56bd4bda46a8340
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.openlocfilehash: ca7321d26ef8dfcb6b456eec2374aec614b394d6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123543"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190249"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10020-july-2021"></a>Dynamics 365 Finance 10.0.20 (2021 年 7 月) の機能のプレビュー
+# <a name="preview-features-in-dynamics-365-finance-10020-august-2021"></a>Dynamics 365 Finance 10.0.20 (2021 年 8 月) の機能のプレビュー
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.20 の新機能または変更された機能について説明します。 このバージョンには 10.0.886 のビルド番号が含まれており、次のように使用できます。
 
-- **プレビュー リリース :** 2021 年 5 月
-- **一般提供 (自己更新):** 2021 年 6 月
-- **一般提供 (自動更新):** 2021 年 7 月
+- **リリースのプレビュー:** 2021 年 5 月
+- **リリースの一般提供 (手動更新):** 2021 年 7 月
+- **リリースの一般提供 (自動更新):** 2021 年 7 月
+
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
@@ -47,7 +48,7 @@ ms.locfileid: "6123543"
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
 
-次の表に、このリリースに含まれる機能拡張の一覧を示します。 これらの機能は、それぞれ既存の機能を段階的に改善します。 これらは拡張機能だけなので、[リリース計画](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) には記載されません。 ただし、これらの拡張機能が確実に既存のカスタマイズや基本設定と競合しないように、各機能は (特に断りのない限り) 既定でオフになっています。 これらの機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で明示的にそれらを有効にする必要があります。
+次の表に、このリリースに含まれる機能拡張の一覧を示します。 これらの機能は、それぞれ既存の機能を段階的に改善します。 これらは拡張機能にすぎないため、[リリース計画](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) には記載されません。 ただし、これらの拡張機能が既存のカスタマイズや基本設定と競合しないように、各機能は (特に断りのない限り) 既定でオフになっています。 これらの機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で明示的にそれらを有効にする必要があります。
 
 | 機能領域 | 機能 &nbsp; 名 &nbsp; 機能 &nbsp; 管理 | 詳細 |
 |---|---|---|

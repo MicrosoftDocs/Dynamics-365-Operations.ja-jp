@@ -1,8 +1,8 @@
 ---
 title: Human Resources のプロビジョニング
-description: この記事では、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングのプロセスについて説明します。
+description: このトピックでは、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングについて説明します。
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2632616834e405d31facdcf3853baaf96066e9aa
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193727"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248824"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -28,9 +28,15 @@ ms.locfileid: "6193727"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-この記事では、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングのプロセスについて説明します。 この記事では、Human Resources をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 Human Resources サービス プランがすでに含まれている既存の Microsoft Dynamics 365 ライセンスがあり、この記事の手順を完了できない場合は、サポートにお問い合わせください。
+このトピックでは、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングについて説明します。 このトピックでは、Human Resources をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 Human Resources サービス プランがすでに含まれている既存の Microsoft Dynamics 365 ライセンスがあり、この記事の手順を完了できない場合は、サポートにお問い合わせください。
 
 始めに、グローバル管理者は [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) にサインインし、新しい Human Resources プロジェクトを作成します。 ライセンスの問題で Human Resources プロビジョニングが妨げられない限り、サポートまたは Dynamics サービス エンジニアリング (DSE) の担当者に問い合わせる必要はありません。
+
+## <a name="provision-a-human-resources-trial-environment"></a>Human Resources 試用環境のプロビジョニング
+
+最初のサンドボックス環境または運用環境をプロビジョニングする前に、[Human Resources 試用環境](https://go.microsoft.com/fwlink/p/?LinkId=2115962)をプロビジョニングして、Human Resources の機能を検証することができます。 試用環境には、安全にプログラムを活用するために使用する架空のデータが含まれます。 試用環境は要求したユーザーにより所有されていますが、人事管理のシステム管理経験を通じて他のユーザーも招待できます。 
+
+使用環境は実稼動環境として使用するものではありません。 60 日間のトライアル期間に限定されています。 試用期限が切れると、環境とその中にあるすべてのデータが削除されて、復元できないことに注意してください。 環境をサンドボックスや運用環境に変換することはできません。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
 
 ## <a name="plan-human-resources-environments"></a>Human Resources の環境を計画する
 
@@ -94,8 +100,6 @@ LCS プロジェクトを作成した後は、環境に Human Resources をプ�
 
     > [!NOTE]
     > 最終要件をまだサインオフしていない場合、プロジェクトに Human Resources のテスト インスタンスを配置することができます。 サインオフするまで、ソリューションをテストするためにこのインスタンスを使用することができます。 テストのために新しい環境を使用する場合は、実稼動環境を作成するためにこの手順を繰り返す必要があります。
-
-    > この場合は、60日間の無料の [Human Resources 試用環境](https://go.microsoft.com/fwlink/p/?LinkId=2115962) を利用をご検討ください。 試用環境は要求したユーザーにより所有されていますが、人事管理のシステム管理経験を通じて他のユーザーも招待できます。 試用環境には、安全にプログラムを活用するために使用する架空のデータが含まれます。 これらは実稼動環境として使用するものではありません。 試用環境が 60 日後に期限が切れると、その中にあるすべてのデータが削除され復元できないことに注意してください。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
 
 ## <a name="select-a-power-apps-environment"></a>Power Apps 環境の選択
 

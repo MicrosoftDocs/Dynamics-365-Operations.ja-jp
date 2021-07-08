@@ -2,7 +2,7 @@
 title: クラウド展開の概要
 description: このトピックでは、クラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および管理する必要があるデータとカスタマイズについて説明します。
 author: LaneSwenka
-ms.date: 03/29/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: f6073703ca64052d23403718c51a6cd1352a0ae4
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: bd30a8906b09f899a30c9b069dc0b76c84bf5c1c
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941005"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216600"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -51,14 +51,17 @@ Microsoft は、すべての顧客がすべてのクラウド配置に対して�
 
 | ライフサイクルのフェーズ      | 環境の階層         | サブスクリプション            | 環境タイプ                 | 環境のサブタイプ 
 |-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|---------------------------------------------|
-| 評価および分析       | 階層 1のサンドボックス | クラウド ホスト | 顧客管理 | デモ
-| カスタマイズ                     | 階層 1のサンドボックス | クラウド ホスト または VHD | 顧客管理 | 開発
-| ゴールデン構成          | 階層 1のサンドボックス | クラウド ホスト | 顧客管理 | 開発
-| ユーザー受け入れテスト (UAT) | 階層 2-5 のサンドボックス | Microsoft                 | Microsoft による管理、またはセルフサービス | 適用できません
-| Go live                       | 実稼働 | Microsoft                    | Microsoft による管理、またはセルフサービス | 適用できません     
+| 評価および分析       | 階層 1 のサンドボックス | クラウド ホスト | 顧客管理 | デモ
+| カスタマイズ                     | 階層 1 のサンドボックス | クラウド ホスト または VHD | 顧客管理 | 開発
+| ゴールデン構成          | 階層 1 のサンドボックス | クラウド ホスト | 顧客管理 | 開発
+| ユーザー受け入れテスト (UAT) | 階層 2-5 のサンドボックス | Microsoft                 | Microsoft 管理、またはセルフサービス | 適用できません
+| Go live                       | 実稼働 | Microsoft                    | Microsoft 管理、またはセルフサービス | 適用できません     
 
 *環境のパフォーマンスを向上させるために、階層 2-5 を購入することも可能です。階層が増えるほど、演算およびデータベースの能力が確保されます。*
-*セルフサービス環境タイプの詳細については、[セルフサービス デプロイメントの概要](infrastructure-stack.md)を参照してください。*
+*セルフサービス環境タイプの詳細については、[セルフサービス デプロイメントの概要](infrastructure-stack.md) を参照してください。*
+
+> [!IMPORTANT]
+> 階層 1 のサンドボックス環境は、2020 年 11 月以降、Microsoft によって管理されなくなりました。 階層 1 環境は、デモ、構築、開発の目的で、Lifecycle Services (LCS) から顧客の Azure サブスクリプションに直接配置できます。
 
 ### <a name="environment-lifecycle-operations"></a>環境ライフサイクルの操作
 Lifecycle Services における環境管理者またはプロジェクト所有者のロールを持つユーザーは、それぞれの環境に対してさまざまなライフサイクルの操作を実行できます。  多くの場合、これらの操作には、タスクが完了するまでの環境でのダウンタイムが含まれます。  これらの操作は、**管理** ボタンの下または横に配置され、各環境の詳細ページに表示されます。
@@ -112,7 +115,7 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > Microsoft は、上記のガイドラインに違反した IP アドレスのセーフ リストのルールを、通知することなく直ちに削除する権利を保有しています。
  
 ### <a name="partnercustomer-managed-environments"></a>パートナー/お客様の管理環境 
-既定では、Microsoft 以外が管理するすべての環境でリモート デスクトップが有効になります。 顧客は自分たちのサブスクリプションに所属している環境へのアクセスを制限することをお勧めします。 これは、Azure ポータルの環境でネットワーク セキュリティ グループのルールを直接設定することで実行できます。
+既定では、Microsoft によって管理されていないすべての環境でリモート デスクトップが有効になります。 顧客は自分たちのサブスクリプションに所属している環境へのアクセスを制限することをお勧めします。 これは、Azure ポータルの環境でネットワーク セキュリティ グループのルールを直接設定することで実行できます。
 
 ## <a name="windows-remoting-winrm"></a>Windows Remoting (WinRM)
 Windows Remoting (WinRM) はすべての環境で無効です。 Azure ポータルを使用して、サブスクリプションに属する環境で WinRM を有効にすることはできますが、これを行わないことを強くお勧めします。
@@ -126,6 +129,9 @@ Finance and Operations アプリの保証稼働時間は 99.9% です。 計画�
 ### <a name="high-availability-features"></a>高可用性機能
 サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 単一障害点イベントを防止するために、Azure 使用可能性セットが使用されます。 Azure の可用性セットの詳細については、[可用性ゾーンを使用してデータセンター レベルの障害から保護する](/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures)を参照してください。
 データベースの高可用性は Azure SQL を通してサポートされます。 詳細については、[Azure SQL データベースの事業継続性の概要](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview) を参照してください。
+
+#### <a name="database-backup-retention"></a>データベースのバックアップ保持
+Microsoft 管理対象環境またはセルフサービスの階層 2 ~ 5 環境のデータベースでは、Azure SQL によって数分おきに自動バックアップが実行されます。 これらのバックアップは、Lifecycle Services の時点での復元機能を過去 14 日間まで使用することで復元できます。 実稼働タイプ環境の場合、バックアップを最大 28 日間復元できます。 階層 1 または顧客管理環境の場合は、データベース バックアップは自動的ではなく、必要に応じて手動で実行する必要があります。
 
 ### <a name="disaster-recovery-features"></a>障害復旧の機能
 実稼動環境は、以下のものを含む Azure 障害復旧サポートで構成されます。
@@ -165,7 +171,7 @@ Dynamics 365 または Power Platform ファミリーの一部ではないが、
 
 環境がこの状態になり、状態が [配置済] に戻るまでは、パッケージ アプリケーションなどのライフサイクル操作を実行することができません。 Finance and Operations アプリに対する影響はありません。 ユーザーはサービスが中断されることなく、通常の操作を続行できます。 管理操作により環境がこの状態になる前に電子メール通知が送信されます。
 
-### <a name="how-do-i-connect-to-the-sql-database-on-my-sandbox-environment"></a>サンドボックス環境で SQL データベースに接続するにはどうすればよいですか。
+### <a name="how-do-i-connect-to-the-sql-database-on-my-sandbox-environment"></a>サンドボックス環境で SQL データベースに接続するにはどうすればよいですか?
 サンドボックス環境で SQL データベースに接続するには、[ジャストインタイムのアクセスを有効にする](../database/database-just-in-time-JIT-access.md) の手順に従ってください。
 
 ### <a name="how-do-i-access-a-development-instance"></a>開発インスタンスにどのようにアクセスしますか。
@@ -183,11 +189,11 @@ Azure Active Directory (AAD) が実行中で、AAD インスタンスの管理�
 ### <a name="can-i-add-guest-aad-accounts-as-users"></a>ゲスト AAD アカウントをユーザーとして追加できますか。
 Azure Active Directory 内で適切に AAD アカウントを構成して、AAD 内で Finance and Operations アプリを有効にした場合は、ゲストの AAD アカウントを追加することができます。 
 
-### <a name="why-am-i-no-longer-able-to-see-the-private-aos-machines-in-one-or-more-of-my-tier-2-through-tier-5-sandbox-environments"></a>プライベート AOS マシンを Tier 2 から Tier 5 のサンドボックス環境の 1 つ以上で表示できなくなったのはなぜですか?
+### <a name="why-am-i-no-longer-able-to-see-the-private-aos-machines-in-one-or-more-of-my-tier-2-through-tier-5-sandbox-environments"></a>プライベート AOS マシンを 階層 2 から階層 5 のサンドボックス環境の 1 つ以上で表示できなくなったのはなぜですか?
 Private AOS VM は、かつて AOS と BI コンピューター間の通信を保護する必要があったため、環境構成の一部でした。 最新の更新プログラムでは、AOS と BI マシン間のすべての通信は直接セキュリティで保護され、中間プライベート AOS 機械は不要になりました。 したがって、プライベート AOS マシンを削除する段階にあります。 バッチでマシンを削除しているので、環境の一部だけがプライベート AOS 機械を削除したことが判明することがあります。 この変更は、機能性やセキュリティにいかなる影響も及ぼさず、お客様には透明になります。
 
-### <a name="why-am-i-no-longer-able-to-remote-desktop-into-one-or-more-of-my-tier-1-through-tier-5-microsoft-managed-sandbox-environments"></a>リモート デスクトップを自分の階層 1 から階層 5 のいずれかの Microsoft 管理サンドボックス環境で表示することができなくなったのはなぜですか。
-Microsoft が管理するレベル 1 から レベル 5 のサンドボックス環境では、 リモート デスクトップ管理のエンド ポイントを特定の IP アドレス セット (セーフ リスト) に制限する必要があります。 Microsoft は、定期的に環境が十分に制限されていることを検証します。 Microsoft は、上記のガイドラインに違反した IP アドレスのセーフ リストのルールを予告なしに直ちに削除する権利を保有しています。 これらの理由の 1 つのためにデスクトップを環境にリモートすることができない場合があります。 
+### <a name="why-am-i-no-longer-able-to-remote-desktop-into-one-or-more-of-my-tier-1-through-tier-5-microsoft-managed-sandbox-environments"></a>リモート デスクトップを自分の階層 1 から階層 5 のいずれかの Microsoft 管理サンドボックス環境で表示することができなくなったのはなぜですか?
+Microsoft が管理する階層 1 から階層 5 のサンドボックス環境では、 リモート デスクトップ管理のエンド ポイントを特定の IP アドレス セット (セーフ リスト) に制限する必要があります。 Microsoft は、定期的に環境が十分に制限されていることを検証します。 Microsoft は、上記のガイドラインに違反した IP アドレスのセーフ リストのルールを予告なしに直ちに削除する権利を保有しています。 これらの理由の 1 つのためにデスクトップを環境にリモートすることができない場合があります。 
 
 - ご自身が現在使用している IP アドレスはセーフ リストに含まれません。
 - ご利用の IP は、セーフ リストに記載されている IP アドレスから変更されています。 

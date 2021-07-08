@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08fbeff94462a7f72c0a930c68b934382e0b6f9e
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: adbdfad21ad1e9f681a001feb56372a067d3ed56
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015815"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189804"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 
@@ -27,8 +27,7 @@ ms.locfileid: "6015815"
 
 このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。
 
-<a name="prerequisites"></a>前提条件
--------------
+## <a name="prerequisites"></a>前提条件
 
 開発者トポロジを開発者およびビルト VM を使用して配置する必要があります。
 

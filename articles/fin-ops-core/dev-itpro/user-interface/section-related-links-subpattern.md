@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f36c2930d090b9c5bfe9b7aaf68436fe640f3fd2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d3a8047fb0a45f9ae350b05ed27909639aaf5047
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754844"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189292"
 ---
 # <a name="section-related-links-subpattern"></a>セクション関連リンクのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5754844"
 
 この記事では、関連リンクのサブパターンに関する情報を提供します。 このサブパターンは、他のフォームへのリンクのセットを含む最後のパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 セクション関連リンク サブパターンは、他のフォームへのリンクのセットを含む最後のパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。
 

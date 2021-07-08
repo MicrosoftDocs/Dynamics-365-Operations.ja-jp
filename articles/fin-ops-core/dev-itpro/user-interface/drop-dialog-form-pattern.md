@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd019e6a23b31a2a8c8140f51edda390e604f3f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ae81ee9214fe75cb343115f0df38467c06bb9722
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747969"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189328"
 ---
 # <a name="drop-dialog-form-pattern"></a>ダイアログ削除のフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5747969"
 
 このトピックでは、ドロップ ダイアログ フォームのパターンについて説明します。 このパターンは、フィールド数が 7 以下の場合にアクションを開始するために使用されます。 
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 ダイアログ削除パターンは、フィールド数が 7 以下の場合にアクションを開始するために使用されます。 ドロップ ダイアログはユーザーが使用するのが素早く簡単で、スライダーとして表示される完全なダイアログよりも軽量です。 ドロップ ダイアログは、メニューとして使うには軽量であることを示します。 このドキュメントでは、2 つのパターンについて説明します。
 

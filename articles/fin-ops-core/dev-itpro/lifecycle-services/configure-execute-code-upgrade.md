@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04edc715186f26eec718cda5a9fc7a43dd7e1584
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0a3be12ef1779380a933b563de0435fdfa0c14b5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752738"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189233"
 ---
 # <a name="configure-the-code-upgrade-service-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
 
@@ -27,8 +27,7 @@ ms.locfileid: "5752738"
 
 このトピックでは、Lifecycle Services (LCS) の<strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Dynamics 365 Finance and Operations アプリに移行する方法について説明します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 
 コードのアップグレード ツールは、Azure DevOps プロジェクトに接続し、トランク\\メイン ブランチを検索し、リリース\\\<version number\> という名前の新しいブランチに分岐してから、コードのアップグレードを実行します。 このプロセスが完了した後、開発環境を、リリース\\\<version number\> の下の新しいブランチに同期させ、競合を解決できます。 アップグレード後のコードをコンパイルしてテストしたとき、新しいブランチを Visual Studio のソース管理エクスプ ローラーを使用して Trunk\\Main にマージすると、プロセスが完了します。

@@ -1,6 +1,6 @@
 ---
 title: カスタマイズ分析のレポート (CAR)
-description: この記事では、モデルのカスタマイズ分析のレポートを生成する方法について説明し、レポートに含まれるいくつかのベスト プラクティス ルールについて説明します。
+description: このトピックでは、モデルのカスタマイズ分析のレポートを生成する方法について説明し、レポートに含まれるいくつかのベスト プラクティス ルールについて説明します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,24 +12,25 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98a50aae3d5e75ab6c56a424fd463cb68e30b61b
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 8b46ccb9f1705c8528e2a1ed50068dc9230ba4cb
+ms.sourcegitcommit: e9b078cea2d7953fe4efaa065480cc9e5befbec8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865942"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "6277243"
 ---
 # <a name="customization-analysis-report-car"></a>カスタマイズ分析のレポート (CAR)
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、モデルのカスタマイズ分析レポートを生成する方法について説明します。 また、レポートに含まれているベスト プラクティス ルールについて説明し、これらのルールに関連付けられているエラーおよび警告を解決するための推奨事項を示します。 
+このトピックでは、モデルのカスタマイズ分析レポートを生成する方法について説明します。 また、レポートに含まれているベスト プラクティス ルールについて説明し、これらのルールに関連付けられているエラーおよび警告を解決するための推奨事項を示します。 
 
 ## <a name="what-is-the-customization-analysis-report"></a>カスタマイズ分析レポートとは
 
 カスタマイズ分析レポートは、カスタマイズおよび拡張モデルを分析し、事前定義されたベスト プラクティスのルールを実行するツールです。 このレポートは、ソリューション認証プロセスの要件の 1 つです。 レポートは、Microsoft Excel のブック形式です。
 
 ## <a name="how-to-generate-the-report"></a>レポートを生成する方法
+xppbp.exe ツール、c:\\packages\\bin または I:\\AosService\\PackagesLocalDirectory\\bin にあります。
 カスタマイズ分析レポートを生成するには、開発環境で次のコマンドを実行します。
 
 ```Console
@@ -42,7 +43,6 @@ xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\B
 xppbp.exe -metadata=C:\Packages -all -model="MyAppSuiteCustomizations" -xmlLog=C:\temp\BPCheckLogcd.xml -module="ApplicationSuite" -car=c:\temp\CAReport.xlsx
 ```
 
-xppbp.exe ツール、c:\\packages\\bin または I:\\AosService\\PackagesLocalDirectory\\bin にあります。
 
 ## <a name="issues-list"></a>問題リスト
 このセクションでは、レポートの **問題リスト** ページに表示されるベスト プラクティスのルール (エラー、警告、または情報メッセージ) をすべて説明し、問題を解決するための提案を示します。 **メタデータ** または **コード** の型の問題です。 すべての **コード** 問題に関しては、重ねたメソッドで警告またはエラーが発生する場合、ルールに違反しているコードの明細行は下位レイヤーのモデルに属していることに留意してください。 その場合、自分のものではないコードの警告やエラーを修正する責任はありません。

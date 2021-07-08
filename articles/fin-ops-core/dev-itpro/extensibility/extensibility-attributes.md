@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: eb0ea981e0bc4eee1c2afacf2a868968a4a50408
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 705c6e16dde82771dadffcf9c057a1713fda5d14
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866280"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193632"
 ---
 # <a name="attributes-that-make-methods-extensible"></a>メソッドを拡張可能にする属性
 
@@ -29,7 +29,7 @@ ms.locfileid: "5866280"
 
 次の表は、メソッドの拡張性およびアクセシビリティの既定のサポートの概要を提供します。 さらに、メソッド シグネチャの変更に関するガイダンスも提供します。
 
-|   | フック可能 | 折り返し可能 | 置き換え可能 | ユーザー補助 | 署名 | 
+| 属性  | フック可能 | 折り返し可能 | 置き換え可能 | アクセシビリティ | 署名 | 
 |---|----------|-----------|-------------|---------------|-----------|
 | **プライベート** | 無 | 該当なし | 該当なし | 定義されているクラス内からアクセスできます。 | シグネチャは変更可能 |
 | **保護された内部** | いいえ | はい。プラットフォーム更新 25 以降から | いいえ | 定義されているクラスから、および同じモデル内の派生クラスからアクセス可能です。 | シグネチャでは互換性が維持されている必要があります |

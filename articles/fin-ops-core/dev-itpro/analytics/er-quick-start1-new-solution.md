@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224037"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304396"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>新しい ER ソリューションを設計してカスタム レポートを印刷する
 
@@ -185,7 +185,7 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>新しいデータ モデルのインポート
 
-1. [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) ファイルをダウンロードし、ご利用のコンピューターに保存してください。
+1. [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) ファイルをダウンロードし、ご利用のコンピューターに保存してください。
 2. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 3. **電子レポート** ワークスペースで、**レポートの構成** を選択します。
 4. 操作ウィンドウで、**交換** \> **XML ファイルからロード** を選択します。
@@ -300,7 +300,7 @@ ER の構成に関する詳細情報については、 [電子レポート (ER) 
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>新しいモデル マッピング構成をインポートする
 
-1. [アンケート mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) ファイルをダウンロードし、ご利用のコンピューターに保存してください。
+1. [アンケート mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) ファイルをダウンロードし、ご利用のコンピューターに保存してください。
 2. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 3. **電子レポート** ワークスペースで、**レポートの構成** を選択します。
 4. 操作ウィンドウで、**交換** \> **XML ファイルからロード** を選択します。
@@ -366,7 +366,7 @@ ER の構成に関する詳細情報については、 [電子レポート (ER) 
     2. **追加** を選択します。
     3. ダイアログ ボックスで、**名前** フィールドに **\$ResultGroup** と入力します。
     4. **式の編集** を選択します。
-    5. [ER 式エディター](general-electronic-reporting-formula-designer.md)で、 **式** フィールドに **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)**  と入力し、KMCollection テーブルと KMQuestionResultGroup テーブル間の一対多の関係の[パス](er-formula-language.md#paths)を使用します。
+    5. [ER 式エディター](general-electronic-reporting-formula-designer.md)で、 **式** フィールドに **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)**  と入力し、KMCollection テーブルと KMQuestionResultGroup テーブル間の一対多の関係の[パス](er-formula-language.md#Paths)を使用します。
     6. **保存** を選択し、式エディターを閉じます。
     7. **OK** を選択して新しい計算フィールドを追加します。
 
@@ -547,7 +547,7 @@ ER ラベルを追加して、モデル マッピングを呼び出すコンテ�
 
 ER フレームワークは、定義済みのテンプレートを使用して、Microsoft Office 形式 (Excel ワークブック、または Word ドキュメント) でレポートを生成します。 必要なレポートが生成されている間、構成されたデータフローに従って、テンプレートに必要なデータが入力されます。 ます、まずカスタム レポートデ使用するテンプレートを設計する必要があります。 このテンプレートは、カスタム レポートのレイアウトを表す構造を持つ Excel ワークブック形式で設計されている必要があります。 必要なデータを入力するすべての Excel 項目には名前を付ける必要があります。
 
-1. [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) ファイルをダウンロードし、ご利用のコンピューターに保存してください。
+1. [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) ファイルをダウンロードし、ご利用のコンピューターに保存してください。
 2. ファイルを Excel で開き、ブックの構造を確認します。
 
 以下の図に示すように、ダウンロードしたテンプレートは、特定のアンケートの質問とその適切な回答を印刷する意図で設計されています。
@@ -572,7 +572,7 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>設計済みフォーマットの構成をインポートする
 
-1. [アンケート format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) ファイルをダウンロードし、ご利用のコンピューターに保存してください。
+1. [アンケート format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) ファイルをダウンロードし、ご利用のコンピューターに保存してください。
 2. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 3. **電子レポート** ワークスペースで、**レポートの構成** を選択します。
 4. アクション ペインで、**変換** \> **XML ファイルから読み込む** を選択します。

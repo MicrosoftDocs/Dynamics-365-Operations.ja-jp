@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 13667a878b72e4f8cd3491b152a15b5d007ed0cd
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 131169b22be6a667706e8dad93dc0646dec0e402
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020850"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193456"
 ---
 # <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 
@@ -204,7 +204,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="requirements-for-development-on-local-vms"></a>ローカル VM の開発要件
 
-ローカル仮想マシン (VM) の開発要件については、[オンプレミスで実行されている VM](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises) を参照してください。
+ローカル仮想マシン (VM) の開発要件については、[オンプレミスで実行されている VM](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md#vm-that-is-running-locally) を参照してください。
 
 ## <a name="database-collation"></a>データベース照合順序
 

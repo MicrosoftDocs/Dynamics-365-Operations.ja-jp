@@ -15,17 +15,16 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e3776ef0b746074a869fa65af486be0f33bbbbb8
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: ed3e92c93a5e603c4f7d5c44e1767c289345b20a
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937548"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270521"
 ---
 # <a name="configure-gift-with-purchase-promotions"></a>購入プロモーションでギフトを構成する
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で「ギフトと購入」プロモーションを構成する方法について説明します 。
 

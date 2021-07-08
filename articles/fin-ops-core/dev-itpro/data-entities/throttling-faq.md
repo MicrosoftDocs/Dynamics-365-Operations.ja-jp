@@ -2,7 +2,7 @@
 title: 優先順位に基づく調整に関する FAQ
 description: このトピックでは、OData の優先度ベースのスロットリングとカスタムサービスベースの統合に関するよくある質問 (FAQ) に対する回答を提供します。
 author: hasaid
-ms.date: 05/19/2021
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: b1826ba6e151925983beab63a93e723d838060f1
-ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
+ms.openlocfilehash: b24cba0e46e2a156a2a289675e10fd14c7e0e7a6
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6075130"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270775"
 ---
 # <a name="priority-based-throttling-faq"></a>優先順位に基づく調整に関する FAQ
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Open Data Protocol (OData) およびカスタム サービス ベースの統合に関する [優先順位に基づく調整](priority-based-throttling.md) に関するよく寄せられる質問 (FAQ) に対する回答を提供します。
 
@@ -85,7 +85,7 @@ No. 対話型 (オンライン) ユーザーの要求には影響しません。
 **{0}** には，動的に計算された再試行サイクル間隔があります。
 
 ## <a name="does-throttling-apply-to-microsoft-services"></a>調整は Microsoft サービスに適用されますか?
-最初は除外される Microsoft サービスは次のサービスであり、調整はそのサービスには適用されません。 
+Finance バージョン 10.0.19 以降では、以下の Microsoft サービスが最初は除外され、スロットリングは適用されません。 
 
    - ドキュメント回覧エージェント (DRA)
    - 倉庫モバイル (WHSMobile)
@@ -97,7 +97,7 @@ No. 対話型 (オンライン) ユーザーの要求には影響しません。
    - Finance and Operations アプリ- Power Platform 統合 (仮想エンティティ)
    - Finance and Operations アプリケーション コネクタ 
 
-これらのサービスは除外されますが、テレメトリはこれらのサービスがシステム全体の正常性に与える影響とパフォーマンスで収集されます。 
+これらのサービスは除外されますが、テレメトリはこれらのサービスがシステム全体の正常性に与える影響とパフォーマンスについて収集されます。 
 
 除外サービスの所有者は、2021 年度末までに 429 のハンドラーを実装することを優先しています。 その時点で、サービスはもはや除外されず、調整が適用されます。 これらの変更に先立って通知がなされ、ドキュメントが更新されます。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9c1fc470a68dd35f480eb6d2926a4a56cd075dd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c3e45afcc574ef1bd176e78fe5a8cbc1d0229d35
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752664"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189218"
 ---
 # <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 
@@ -27,8 +27,7 @@ ms.locfileid: "5752664"
 
 フォームおよびレコードへの共有可能かつセキュリティで保護された URL を作成する方法について説明します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 URL ジェネレータにより、開発者はルート移動可能な特定のフォームへの共有可能およびセキュリティ保護される URL (ディープ リンクとも呼ばれる) を作成できます。 オプションのデータ コンテキストをフォームに渡すと、フォームを開いた場合にフィルターや固有のデータを表示することができます。 URL ジェネレーターにより、レポート、電子メール、および外部アプリケーションへのリンクの埋め込みなどのシナリオが可能になるため、生成されたリンクを使用して移動するだけで、指定されたフォームやデータを迅速かつ容易に見つけることができます。
 

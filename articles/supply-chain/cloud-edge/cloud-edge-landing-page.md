@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f231b9ae85d136b0e963757d9561a7abda4edc
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938303"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261749"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>製造および倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
 
@@ -24,7 +24,7 @@ ms.locfileid: "5938303"
 > [!IMPORTANT]
 > Microsoft Dynamics 365 Supply Chain Management のスケール ユニット機能は、サービスの使用を管理する条項に基づいて提供されます。 詳細については、[Microsoft Dynamics の法的情報](https://go.microsoft.com/fwlink/?LinkID=290927) を参照してください。
 >
-> クラウドおよびエッジのスケール ユニットを有効にすることにより、クラウドおよびエッジのスケール ユニットの構成と処理に関連するデータが米国にあるデータ センターに保存されることを理解できることを確認してください。 クラウドおよびエッジのスケール ユニットのデータ処理の詳細については、このトピックの後半の[スケール ユニットの管理中のデータ処理](#data-processing-management) セクションを参照してください。
+> クラウドおよびエッジのスケール ユニットを有効にする際、クラウドおよびエッジのスケール ユニットの構成と処理に関連するデータが米国にあるデータ センターに保存されることを理解できることを確認するよう求められます。 クラウドおよびエッジのスケール ユニットのデータ処理の詳細については、このトピックの後半の[スケール ユニットの管理中のデータ処理](#data-processing-management) セクションを参照してください。
 
 ## <a name="core-value-proposition-for-scale-units"></a>スケール ユニットの主な価値提案
 

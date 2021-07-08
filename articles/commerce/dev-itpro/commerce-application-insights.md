@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 59aa15b4a35a8e573d8dc9c55bf0f500719b1cad
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: a4a6f4573527263eed0387ee1af17c86de30436d
+ms.sourcegitcommit: 4fc5c8b278b2b492eea5a0bb136019d4c1eaceef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936998"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "6191354"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
@@ -37,38 +37,9 @@ ms.locfileid: "5936998"
 
 ## <a name="set-up-and-configure-application-insights-in-azure"></a>Azureでの Application Insights の設定と構成
 
-1. [Azure ポータル](https://portal.azure.com) を開き、Azure の サブスクリプション資格情報を使用してサイン インします。
-2. **リソースを作成する** を選択します。
+[Application Insights リソースの作成](/azure/azure-monitor/app/create-new-resource) の手順に従って、インストルメンテーション キーまたは接続文字列を生成します。
 
-    > [!div class="mx-imgBorder"]
-    > ![リソースの作成ボタン](media/NewResource.png)
-
-3. **Application Insights** を検索します。
-
-    > [!div class="mx-imgBorder"]
-    > ![検索フィールド](media/Search.png)
-
-4. Application Insights ページで **作成** をクリックします。
-
-5. **基本** タブで、 **サブスクリプション**、 **リソース グループ** 、 **名前**、 **地域** の各フィールドを設定します。
-
-    > [!div class="mx-imgBorder"]
-    > ![基本タブ](media/CreateNew.png)
-
-6. **レビュー + 作成** タブで、 **作成** を選択します。
-
-    > [!div class="mx-imgBorder"]
-    > ![作成 ボタン](media/CreateConf.png)
-
-7. 展開処理が完了するまで待機します。
-
-    > [!div class="mx-imgBorder"]
-    > ![作成されたリソース](media/Completed.png)
-
-8. リソースへと移動し、 **インストルメンテーション キー** の値をコピーします。 この値は、 CRT コードまたは CRT 拡張機能の構成ファイルで使用します。
-
-    > [!div class="mx-imgBorder"]
-    > ![インストルメンテーション キー フィールド](media/Resource.png)
+CRT で使用するインストルメンテーション キーをコピーします。 イベントを記録するための最新の更新と新しい推奨オプションについては、[Azure の Application Insights ドキュメント](/azure/azure-monitor/app/app-insights-overview) を参照してください。
 
 ## <a name="extend-the-crt-extension-project-to-log-events-to-application-insights"></a>CRT 拡張プロジェクトを拡張して、イベントを Application Insights に記録します。
 
@@ -77,7 +48,7 @@ ms.locfileid: "5936998"
     > [!div class="mx-imgBorder"]
     > ![新規 Contoso.Diagnostic プロジェクト](media/VSProject.png)
 
-2. 次のライブラリへの参照を追加します:
+2. NuGet パッケージ参照を次のライブラリに追加します。
 
     + Microsoft.ApplicationInsights
     + Netstandard
@@ -197,10 +168,13 @@ ms.locfileid: "5936998"
 4. このコマンドを実行して、JavaScript Application Insights パッケージの **Npm** パッケージをインストールします。
 
     ```console run the
-    npm i --save @microsoft/applicationinsights-web
+    npm i --save @microsoft/applicationinsights-web@2.5.8
     ```
+ 
+ > [!NOTE]
+ > ここに記載されているサンプルは、applicationinsights-web npm パッケージのバージョン 2.5.8 に基づいて作成されています。 このサンプルは、更新された applicationinsights-web パッケージでは動作しない可能性があります。
 
-    パッケージをインストールした後に、**POS/Extensions/ライブラリ** フォルダに **node_modules** フォルダが含まれている必要があります。 **node_modules** フォルダには Application Insights ライブラリ ファイルが含まれています。
+パッケージをインストールした後に、**POS/Extensions/ライブラリ** フォルダに **node_modules** フォルダが含まれている必要があります。 **node_modules** フォルダには Application Insights ライブラリ ファイルが含まれています。
 
 5. **POS/Extensions/Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web.js** ファイルがライブラリに存在することを確認してください。
 

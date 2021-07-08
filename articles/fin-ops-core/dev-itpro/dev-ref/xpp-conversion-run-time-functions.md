@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7378559b6d141378c04e8f10e133832ea7fe2186
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 8378eb745df6d88573bcbf1f451e9c76503e52a9
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866023"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188111"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 
@@ -24,8 +24,7 @@ ms.locfileid: "5866023"
 
 このトピックでは、変換ランタイム関数について説明します。
 
-<a name="any2date"></a>any2Date
---------
+## <a name="any2date"></a>any2Date
 
 **anytype** 値を **日付** 値に変換します。
 

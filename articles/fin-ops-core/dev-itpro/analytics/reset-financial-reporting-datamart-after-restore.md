@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 057acf9d68ef905687376a77e5f411f78f695537
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 9ae2328fe101a1286ea8790aeff8dd2472f47337
+ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890898"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6224576"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
@@ -554,7 +554,7 @@ services.msc を使用して、以前に停止したサービスを再起動し�
 -- Attempt to delete integrated users
     DECLARE @userId nvarchar(max)
     DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
-    select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
+    select UserID from Reporting.SecurityUser where UserID <> '00000000-0000-0000-0000-000000000002'
     OPEN removeUserCursor
     FETCH NEXT FROM removeUserCursor INTO @userId
     WHILE @@FETCH_STATUS = 0

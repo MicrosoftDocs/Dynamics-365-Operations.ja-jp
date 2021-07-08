@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fa6f4689f9bd8ae02adfa90b9fb1b01bec4b917
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1b43263dbd86e0205d6c9e9fba0f7645717c3d81
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923417"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189539"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 
@@ -25,8 +25,7 @@ ms.locfileid: "5923417"
 
 以下のトピックでは、ソリューションの継続的な配信に関連するツールとガイドラインについて説明します。
 
-<a name="faq-and-guidelines"></a>よく寄せられる質問とガイドライン
-------------------
+## <a name="faq-and-guidelines"></a>よく寄せられる質問とガイドライン
 
 - [開発と継続的な配信に関するよく寄せられる質問](continuous-delivery-faq.md)
 

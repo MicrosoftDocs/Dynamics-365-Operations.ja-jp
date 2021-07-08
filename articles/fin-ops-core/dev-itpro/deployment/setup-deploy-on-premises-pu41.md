@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 05/27/2021
+ms.date: 06/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 67fbffd6683a62ff8b65f8f44e839620627c66e6
-ms.sourcegitcommit: 9f8dccdbfa76f8be24e083dc69be718c2d5a2877
+ms.openlocfilehash: d9cffa6213208a0efde90546e6dddfd71142bd9e
+ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6114026"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "6277399"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
@@ -913,6 +913,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     > [!IMPORTANT]
     > - SSRS のインストール時にデータベース エンジンをインストールする必要があります。
     > - SSRS インスタンスを構成 **しない** でください。 レポート サービスは、すべてを自動的に構成されます。
+    > - Platform update 41 より古い基準トポロジが配置されている環境では、次の手順を実行する必要はありません。 このような環境では、[オンプレミス配置の SQL Server Reporing Services のコンフィギュレーション](../analytics/configure-ssrs-on-premises.md) に従って SSSR を手動で構成する必要があります。
 
 1. 各 BI ノードについては、次の手順を実行します。
 
@@ -934,6 +935,11 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
         Configure-Database.ps1 スクリプトは、以下のアクションを実行します:
 
         - **CREATE ANY DATABASE** 権限を **\[contoso\\svc-ReportSvc$\]** に付与します。
+    
+    > [!NOTE]
+    > これらのスクリプトは SSRS を構成 **できません**。 配置中に、そのノードに配置されたService Fabric サービス (ReportingService) によって SSRS が構成されます。
+    > 
+    > 代わりに、これらのスクリプトは、Service Fabric サービス (ReportingService) が必要なコンフィギュレーションを実行するために必要なアクセス許可を付与します。
 
 ### <a name="step-18-configure-ad-fs"></a><a name="configureadfs"></a>手順 18、 AD FS のコンフィギュレーション
 
@@ -952,7 +958,7 @@ Finance + Operations では、既定で標準のコンフィギュレーショ�
 
 2. 混在環境用に AD FS を構成していない限り、イントラネット認証接続用に Windows 統合認証 (WIA) を無効にする必要があります。 WIA を AD FS で使用できるように構成する方法の詳細については、[AD FS で Windows 統合認証 (WIA) を使用するようにブラウザを構成する](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia) を参照してください。
 
-    このコマンドは、Finance + Operations クライアントへのサインイン時のフォーム認証の使用に関連しています。 シングル サインオンなど、他のオプションも利用できる場合がありますが、追加の設定が必要です。
+    このコマンドは、Finance + Operations クライアントへのサインイン時のフォーム認証の使用に関連しています。 シングル サインインなどの他のオプションはサポートされていません。
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication

@@ -1,6 +1,6 @@
 ---
-title: Finance 分析情報のホーム ページ (プレビュー)
-description: Finance 分析情報には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。
+title: Finance insights のホーム ページ (プレビュー)
+description: Finance insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -15,35 +15,38 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
+ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222513"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261913"
 ---
-# <a name="finance-insights-home-page-preview"></a>Finance 分析情報のホーム ページ (プレビュー)
+# <a name="finance-insights-home-page-preview"></a>Finance insights のホーム ページ (プレビュー)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance 分析情報には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。 これらの新しい機能を、仕入先の支払および回収の自動化と組み合わせると、意思決定を推進し、現在および将来のビジネス課題に効果的に対応するための行動を取ることのできる、高度でインテリジェントな財務システムが提供されます。
+Finance insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。 これらの新しい機能を、仕入先の支払および回収の自動化と組み合わせると、意思決定を推進し、現在および将来のビジネス課題に効果的に対応するための行動を取ることのできる、高度でインテリジェントな財務システムが提供されます。
 
-Finance 分析情報のプレビューは、米国、ヨーロッパ、および英国での試用版の配置に使用できます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
+Finance insights のプレビューは、米国、ヨーロッパ、および英国での試用版の配置に使用できます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
 
 プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および人工知能 (AI) モデルは、運用環境に移行できません。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.) を参照してください。
 
+> [!NOTE]
+> この機能は、一連のプレビュー機能として提供されています。 プレビュー機能として、機械学習モデルの結果を使用してビジネス上の意思決定や予算案を促進したり、それらに影響を与えるようなことはしないでください。 この機能の使用は、[追加使用条件](https://go.microsoft.com/fwlink/?linkid=2105274)に基づきます。
+
 ## <a name="prerequisites"></a>必要条件
 
-このセクションでは、Finance 分析情報を使用するための要件を示します。 可能な限り、追加情報のソースへのリンクが提供されます。
+このセクションでは、Finance insights を使用するための要件を示します。 可能な限り、追加情報のソースへのリンクが提供されます。
 
 ### <a name="legal-requirements"></a>法的要件
 
-プレビュー プログラムを申請するには、[Dynamics 365 Finance 契約の Finance 分析情報プレビュー](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u) を記入してください。
+プレビュー プログラムを申請するには、[Dynamics 365 Finance 契約の Finance insights プレビュー](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u) を記入してください。
 
 ### <a name="system-requirements"></a>システム要件
 
-Finance 分析情報をプレビューするには、Tier 2 サンドボックス環境 (複数のボックス) が必要です。 環境に関するバックグラウンド情報については、[環境計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md) を参照してください。
+Finance insights をプレビューするには、Tier 2 サンドボックス環境 (複数のボックス) が必要です。 環境に関するバックグラウンド情報については、[環境計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md) を参照してください。
 
 ### <a name="version-requirements"></a>バージョン要件
 
@@ -66,9 +69,9 @@ Microsoft Dynamics 365 Finance、Microsoft Dynamics Lifecycle Services (LCS)、P
 
 Azure、Microsoft Dataverse、LCS のリソースを作成および管理するプロセスに関する知識は、このプロセスを完了するために役立ちます。
 
-## <a name="configure-finance-insights"></a>Finance 分析情報のコンフィギュレーション
+## <a name="configure-finance-insights"></a>Finance insights のコンフィギュレーション
 
-Finance 分析情報を使用する前に、いくつかのコンフィギュレーション ステップを完了する必要があります。 Finance Insights をコンフィギュレーションする方法の詳細については、次を参照してください。
+Finance insights を使用する前に、いくつかのコンフィギュレーション ステップを完了する必要があります。 Finance Insights をコンフィギュレーションする方法の詳細については、次を参照してください。
   - 10.0.19 までのバージョン : [Finance Insights のコンフィギュレーション - 最大 1 つのバージョン 10.0.19](configure-for-fin-insites.md)。
   - バージョン 10.0.20 以降: [Finance Insights のコンフィギュレーション (プレビュー) - バージョン10.0.20 以降](configure-for-fin-insites-PubPrvw.md)。
 
@@ -76,7 +79,7 @@ Finance 分析情報を使用する前に、いくつかのコンフィギュレ
 
 機械学習モデルで生成されるデータを Dynamics 365 Finance に渡すことができるように、データ インテグレーター プロジェクトを作成する必要があります。 そのプロジェクトを作成するステップについては、[データ インテグレーター プロジェクトの作成](create-data-integrate-project.md) を参照してください。
 
-## <a name="enable-finance-insights-capabilities"></a>Finance 分析情報機能を有効にする
+## <a name="enable-finance-insights-capabilities"></a>Finance insights の機能を有効にする
 
 コンフィギュレーション ステップを完了し、デモ データを設定したら、使用する各機能 (顧客支払予測、キャッシュフロー予測、および予算提案) を有効にして設定する必要があります。
 
@@ -92,7 +95,7 @@ Finance 分析情報を使用する前に、いくつかのコンフィギュレ
 
 予算案機能は、機械学習モデルと組織の履歴データを使用して予算案を生成します。 生成された提案は、手動のプロセスよりも効果的かつ効率的な予算編成プロセスを開始するのに役立ちます。 この機能を有効にするための具体的なステップについては、[予算提案の有効化](enable-budget-proposal.md) を参照してください。 
 
-## <a name="using-finance-insights-features"></a>Finance 分析情報機能の使用
+## <a name="using-finance-insights-features"></a>Finance insights の機能の使用
 
 ### <a name="using-customer-payment-predictions"></a>顧客支払予測の使用
 

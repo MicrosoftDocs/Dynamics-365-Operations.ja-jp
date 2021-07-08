@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55944441c36f2dcc36336bd329739d8810189ad3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9bd26e9515069ed3681c432487a5b73059a4e608
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752678"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188109"
 ---
 # <a name="build-navigation"></a>ナビゲーションの構築
 
@@ -27,8 +27,7 @@ ms.locfileid: "5752678"
 
 このチュートリアルでは、ワークスペースとナビゲーション ウィンドウにナビゲーション要素を追加します。
 
-<a name="prerequisites"></a>前提条件
--------------
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。
 

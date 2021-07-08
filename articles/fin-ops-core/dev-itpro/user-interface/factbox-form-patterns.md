@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f764b3ee1b20aedb31f8b2ef100b72acf0e2e006
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c03c1504da0c27c8195ac890d6a7fdb65bec8156
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909903"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189324"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5909903"
 
 このトピックでは、FactBox フォームのパターンについて説明します。 情報ボックスはレコードに関連情報を指定するために使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 一般に、情報ボックスはレコードに「関連情報」を指定するために使用されます。 これらは、合計、残高、期限切れの注文、メール アドレスなどの重要な情報を得るために、追加のフォームを開く必要がないことを保証するのに役立ちます。 情報ボックス グリッド パターンは、関連情報の子コレクション (複数行の可能性がある) がある場合に使用する必要があります。 このドキュメントでは、2 つのパターンについて説明します。
 

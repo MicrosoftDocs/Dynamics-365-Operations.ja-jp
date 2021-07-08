@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 18001e2227d4815c96343645fae786703aaf4b36
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 955dea2b463bb7b6df1be827353884f3e6d24439
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936768"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188428"
 ---
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
@@ -30,8 +30,7 @@ ms.locfileid: "5936768"
 
 このトピックでは、新規デバイスと既存デバイスの新規デバイス タイプのサポートを追加するために、Hardware Station を拡張する方法について説明します。
 
-<a name="hardware-station-overview"></a>Hardware Station の概要
---------------------------------
+## <a name="hardware-station-overview"></a>Hardware Station の概要
 
 Hardware Station は、プリンター、キャッシュ ドロワー、スキャナー、および支払ターミナルなどのハードウェア周辺機器に接続するために Modern POS および Cloud POS で使用されます。 
 

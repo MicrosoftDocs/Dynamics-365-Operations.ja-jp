@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 019fb42eaf522c9488abb35040565fd5d9b39893
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: fc3c046ae7d4ec615e00ef83d42c5a39ed333301
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923259"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189615"
 ---
 # <a name="system-tables"></a>システム テーブル
 
@@ -24,8 +24,7 @@ ms.locfileid: "5923259"
 
 このトピックでは、システム テーブルについて説明します。
 
-<a name="common"></a>共通
-----------
+## <a name="common"></a>共通
 
 共通テーブルとは、すべてのテーブルに対して基本クラスです。 これにデータは含まれていません。 多様な方法で任意のテーブルを参照するために主に X++ コードで使用されます。
 

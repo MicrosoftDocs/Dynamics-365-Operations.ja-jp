@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: aa7af067a2c8ec6840d5af69d65dc5ac39fbe55d
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 29f9fa2757910626da1585d5c37b03645b97ee92
+ms.sourcegitcommit: 18ca2df785e9656fdd4e8c0734eca2b2624fda10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112635"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6293960"
 ---
 # <a name="platform-updates-for-version-10019-of-finance-and-operations-apps-june-2021"></a>Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6009 で、次のスケジュールで使用できます。
 

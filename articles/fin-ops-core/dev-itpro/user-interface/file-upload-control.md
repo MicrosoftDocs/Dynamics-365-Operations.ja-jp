@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07ee00bc52606e2d09dfcff973e4dfa69ed8b955
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 477dfde9c1fdac6896f05e0ff73eb6d21b422721
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750524"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189320"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 
@@ -28,8 +28,7 @@ ms.locfileid: "5750524"
 
 このトピックでは、ファイル アップロード コントロールについて説明します。 このコントロールを使用して、ファイルをアップロードできます。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 ファイル アップロード コントロールを使用してユーザーはファイルをアップロードできます。 また、これにより開発者は要件に基づいてアップロード処理を制御し、アップロードされたファイルを管理します。 
 

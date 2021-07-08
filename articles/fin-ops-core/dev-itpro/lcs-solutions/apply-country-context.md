@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d804799239ebd53a367cfd7160e518fae145d484
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 03aee14229db03763c47cd56fbecc8b9343fe2bc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752274"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189930"
 ---
 # <a name="apply-countryregion-context"></a>国/地域コンテキストの適用
 
@@ -80,8 +80,7 @@ ms.locfileid: "5752274"
 
 この例では、顧客が制御エンティティになります。 顧客の住所が **CountryRegionCodes** フィールドの値と比較され、**GermanSpecifcSetting** フィールドが表示されているかどうかが判別されます。
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [ISO コード](https://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
 

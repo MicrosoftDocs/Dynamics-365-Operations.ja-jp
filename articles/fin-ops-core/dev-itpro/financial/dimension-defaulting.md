@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d85d9bb3729a1d92e5c355099bdc06d46827dbaf
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: f0f46658723404fff2a70af7695765e9ba0d9d9a
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111682"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193087"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]
@@ -239,7 +239,7 @@ WHERE V.DIMENSIONATTRIBUTEVALUESET = 68719490325
 
 - 注文ヘッダーの既定の分析コードが、注文明細行の既定の分析コードとマージされて、"結合結果1" の既定の分析コードが生成されます。
 
-    |                  | 注文明細行 | 注文ヘッダー | マージの結果 1 | 説明 |
+    | 項目             | 注文明細行 | 注文ヘッダー | マージの結果 1 | 説明 |
     |------------------|------------|--------------|-----------------|-------------|
     | **BusinessUnit** |            |              |                 | この値は、両方のソースで空白です。 |
     | **CostCenter**   |            |              |                 | この値は、両方のソースで空白です。 |
@@ -250,7 +250,7 @@ WHERE V.DIMENSIONATTRIBUTEVALUESET = 68719490325
 
 - 品目の既定の分析コードが、注文明細行の "結合結果1" とマージされて、"結合結果2" の既定の分析コードが生成されます。 以下の表では、マージ処理の際の論理ステップを示しています。 ただし、これらの手順は、実行時に、dimensionフレームワークによって提供されるAPIを使用してマージされます。
 
-    |                  | マージの結果 1 | 項目     | マージの結果 2 | 説明 |
+    | 項目             | マージの結果 1 | 項目     | マージの結果 2 | 説明 |
     |------------------|-----------------|----------|-----------------|-------------|
     | **BusinessUnit** |                 |          |                 | この値は、両方のソースで空白です。 |
     | **CostCenter**   |                 | 008      | 008             | ヘッダー行の結合結果の値が空白です。 結果として、この値は品目からコピーされます。 |

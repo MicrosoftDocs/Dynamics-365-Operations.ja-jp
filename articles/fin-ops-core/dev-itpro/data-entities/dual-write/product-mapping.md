@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941199"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306392"
 ---
 # <a name="unified-product-experience"></a>統一された製品経験
 
@@ -124,7 +124,7 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 
 1 つの製品に異なる製品分析コードが含まれている場合 (たとえば、製品マスターのサイズや色が製品分析コードと同じである場合)、個々の特徴的製品 (つまり、各製品バリアント) は、それらの製品分析コードの組み合わせとして定義されます。 たとえば、製品番号 B0001 は、XS サイズの黒い T シャツで、製品番号 B0002 は S サイズの黒い T シャツです。 この場合、製品分析コードの既存の組み合わせが定義されています。 たとえば、前の例の T シャツは、XS サイズの黒、S サイズの黒、M サイズの黒、L サイズの黒にすることができますが、XL サイズの黒にすることはできません。 つまり、製品マスターが実行できる製品分析コードは指定されており、これらの値に基づいてバリアントをリリースできます。
 
-製品マスターで実行できる製品分析コードを追跡するために、各製品分析コードに対して次のテーブルが Dataverseに作成され、マッピングされます。 詳細については、[製品情報の概要]../../../supply-chain/pim/product-information.md)を参照してください。
+製品マスターで実行できる製品分析コードを追跡するために、各製品分析コードに対して次のテーブルが Dataverseに作成され、マッピングされます。 詳細については、「[製品情報の概要](../../../../supply-chain/pim/product-information.md)」を参照してください。 
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 

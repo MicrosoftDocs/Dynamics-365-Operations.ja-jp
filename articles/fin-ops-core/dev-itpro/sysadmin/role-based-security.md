@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2fa57aff97e1938796fb52e8b94dac0eb81ff71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0e0a7a40e656e3f147fc630c8b90db9d02270fd8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745913"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189922"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 
@@ -34,8 +34,7 @@ Finance and Operations アプリでは、ロールベースのセキュリティ
 
 自動ロール割り当てのルールを設定できるため、ユーザーの責任が変更されるたびに管理者が関与する必要はありません。 セキュリティ ロールとルールが設定された後、業務管理者は、業務データに基づく日常的なユーザーのアクセスを制御できます。
 
-<a name="overview-of-role-based-security"></a>ロール ベースのセキュリティの概要
--------------------------------
+## <a name="overview-of-role-based-security"></a>ロール ベースのセキュリティの概要
 
 このセクションでは、ロールベースのセキュリティの要素の概要を提供します。 セキュリティ モデルは階層型であり、階層内の各要素は異なるレベルの詳細を表します。 アクセス許可は、メニュー項目やテーブルなどの個々のセキュリティ保護可能なオブジェクトへのアクセスを表します。 権限は、アクセス許可で構成されており、支払のキャンセルや預金残高の処理などのタスクへのアクセスを表します。 職務は特権で構成され、銀行取引の維持などビジネス プロセスの一部を表します。 職務と権限の両方をロールに割り当てて、Finance and Operations へのアクセスを許可することができます。 
 
@@ -43,8 +42,7 @@ Finance and Operations アプリでは、ロールベースのセキュリティ
 
 [![ロールベースのセキュリティ フレームワークの例](./media/rbs.png)](./media/rbs.png)
 
-<a name="security-roles"></a>セキュリティ ロール
---------------
+## <a name="security-roles"></a>セキュリティ ロール
 
 すべてのユーザーは Finance and Operations にアクセスするため少なくとも 1 つのセキュリティ ロールに割り当てられている必要があります。 ユーザーに割り当てられたセキュリティ ロールにより、ユーザーが実行できる職務と、ユーザーが表示できるユーザー インターフェイスの部分が決まります。 
 

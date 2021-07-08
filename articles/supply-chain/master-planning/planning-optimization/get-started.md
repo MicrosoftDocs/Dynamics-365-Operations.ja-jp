@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 2867a4f9418e9435e2980fc24314914595ec44d0
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103596"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301677"
 ---
 # <a name="get-started-with-planning-optimization"></a>計画最適化の開始
 
@@ -109,6 +109,8 @@ LCS プロジェクトからアドインをインストールし、Supply Chain 
 
 - **はい** – 計画の最適化がマスター プランに使用されます。
 - **いいえ** – 組み込み Supply Chain Management 計画エンジンがマスター プランに使用されます。
+
+この設定は、すべての法人 (会社) に適用されます。 一部の法人およびその他の法人の組み込みマスター プランで、計画の最適化を使用することはできません。
 
 > [!NOTE]
 > **計画の最適化の使用** オプションが **はい** に設定されているときに、組み込みの Supply Chain Management 計画エンジンに対して作成された既存の計画バッチ ジョブがトリガーされた場合、これらのジョブは失敗します。

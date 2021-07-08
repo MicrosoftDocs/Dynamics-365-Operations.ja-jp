@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a1268387d9067e8cc7838a088f4f70e48623f0f
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: a749bb30b946a7545abeaede83738953489ed5d2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866069"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189238"
 ---
 # <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 
@@ -26,8 +26,7 @@ ms.locfileid: "5866069"
 モデル ファイルは顧客およびパートナーにモデルを配布して、開発環境にインストールすることができます。 これらは Lifecycle Services (LCS) ソリューションの主要なコンポーネントです。 モデル ファイルには、モデル記述子ファイル、メタデータ、ソース コード、および参照先の .NET アセンブリ (ある場合) が含まれます。 この記事では、モデルをモデル ファイルにエクスポートし、モデル ファイルをインストールし、開発環境でモデルを削除する方法について説明します。
 
 
-<a name="export-a-model-into-a-model-file-for-distribution"></a>モデルを配布用のモデル ファイルにエクスポート
--------------------------------------------------
+## <a name="export-a-model-into-a-model-file-for-distribution"></a>モデルを配布用のモデル ファイルにエクスポート
 
 既存のモデルをモデル ファイルにエクスポートするには、ModelUtil.exe ツールと **-export** ディレクティブを使用します。 このツールは、パッケージの bin フォルダー (通常は、c:\\packages\\bin または i:\\AosService\\PackagesLocalDirectory\\bin) に配置されています。
 

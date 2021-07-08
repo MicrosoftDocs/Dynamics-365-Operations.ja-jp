@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4b4bf723c5c2af76bf2e637b613be1441245b08
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8feee2550a678e1024f38f8872b57b7768156690
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752654"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189918"
 ---
 # <a name="customize-field-descriptions"></a>フィールドの説明をカスタマイズする
 
@@ -49,8 +49,7 @@ Microsoft が提供するフィールドの説明は、別のラベル ファイ
 - @FieldDescriptions\_ProcurementAndSourcing:PurchLineBackOrder\_LinkViewCheckBox は、<strong>発注残購買注文明細行</strong> (PurchLineBackOrder) ページ内の<strong>変更ビューのリンク</strong> (LinkViewCheckBox) オプションのラベルの ID です。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [ローカライズ可能なラベルの作成](create-localizable-labels-client.md)
 

@@ -15,17 +15,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1fba966434b80c9b64c1f4d9b6b87993d59c0bf
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7d338ba207c9a101f5e224ca66555b16a457bcbc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022377"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271404"
 ---
 # <a name="apply-unit-of-measure-settings"></a>測定単位設定の適用
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは測定単位設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e8fb908f1f68531d3b7d16057b3c6217b140156
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0071a09d1c3e8df67edc5358b7eaf2faeed71146
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753854"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189308"
 ---
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 
@@ -27,8 +27,7 @@ ms.locfileid: "5753854"
 
 この記事では、HierarchyViewer コントロールについて説明します。このコントロールを使用して、人、製品、または組織の階層関係を表現できます。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 HierarchyViewer コントロールを使用して、人、製品、または組織の階層関係を表現できます。 これは主に、従来の上から順の階層構造の関係を理解するのに役立つ視覚的な方法、およびフォーカスされたノードで表されるエンティティに移動する方法として使用されます。 HierarchyViewer コントロールを使用すると、わずかなスペースで深く入れ子になった複数レベルの内容を精査できます。 コントロールは、表示されているツリー構造の部分を制御するために、ノードを展開したり折りたたんだりします。 非連結コントロールであるため、HierarchyViewer データは抽象化クラスによって管理され、主に単純なツリー リレーションシップでデータを視覚化する方法として使用されます。 従来のツリーでの階層データについては、標準のツリー コントロールがあります。 
 

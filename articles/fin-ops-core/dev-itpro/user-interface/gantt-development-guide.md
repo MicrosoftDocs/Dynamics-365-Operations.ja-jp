@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a5ebfb4b835e4220fed174d7b022490f942fdd1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 335a503c4bd1b8136a018560ffd38394269d2817
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748759"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189312"
 ---
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 
@@ -27,8 +27,7 @@ ms.locfileid: "5748759"
 
 このトピックでは、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。 Tutorial_Gantt フォームにあるコードを調べることを強くお勧めします。 このコードは、Gantt コントロールのすべての機能を示し、データをロードしてアプリケーション プログラミング インターフェイス (API) を操作する方法を示しています。
 
-<a name="whats-new-for-gantt"></a>ガント チャートの新機能
---------------------
+## <a name="whats-new-for-gantt"></a>ガント チャートの新機能
 
 Microsoft Dynamics AX 2012 では、クライアントは Win32 アプリケーションで、拡張機能は Microsoft ActiveX、WinForm、または Microsoft Windows Presentation Foundation (WPF) のコントロールを使用していました。 ActiveX と ManagedHost コントロールは、HTML ベースのプラットフォームと互換性がないため、カスタム コントロールを追加するためには使用できなくなります。 代わりに、新しい拡張可能コントロール フレームワークで HTML と JavaScript を使用してコントロールを追加することができます。 新しいガント管理は、このフレームワークを使用して実装されています。 以前のバージョンとは異なり、独自のフォームの使用およびコントロールの拡張に追加のライセンス手数料を支払う必要はないことに注意してください。
 

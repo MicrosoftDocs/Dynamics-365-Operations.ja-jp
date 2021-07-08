@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce 10.0.20 (2021 年 7 月) の機能のプレビュー
+title: Dynamics 365 Commerce 10.0.20 (2021 年 8 月) の機能のプレビュー
 description: このトピックでは、Dynamics 365 Commerce 10.0.20 の新機能または変更された機能について説明します。
 author: josaw1
 ms.date: 05/27/2021
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.209
-ms.openlocfilehash: 6fc250ca30333048fc80c4f062a1d4c966ea7e1c
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.openlocfilehash: d65d40b451e7ea885520f920e15797632551984f
+ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123378"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "6277401"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-commerce-10020-july-2021"></a>Dynamics 365 Commerce 10.0.20 (2021 年 7 月) の新機能と変更された機能
+# <a name="whats-new-and-changed-in-dynamics-365-commerce-10020-august-2021"></a>Dynamics 365 Commerce 10.0.20 (2021 年 8 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "6123378"
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.20 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.886 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 5 月
-- **リリースの一般提供 (手動更新):** 2021 年 6 月
+- **リリースの一般提供 (手動更新):** 2021 年 7 月
 - **リリースの一般提供 (自動更新):** 2021 年 7 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
@@ -64,6 +64,8 @@ Dynamics 365 Commerce 10.0.20 には、プラットフォーム更新プログ�
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8) を参照してください。
+
+Commerce 固有の重大な変更を加える場合は、[Dynamics 365 Commerce オンライン SDK に関するよく寄せられる質問](../e-commerce-extensibility/sdk-faq.md) を参照してください。
 
 ### <a name="dynamics-365-2021-release-wave-1-plan"></a>Dynamics 365: 2021 リリースのウェーブ 1 プラン
 

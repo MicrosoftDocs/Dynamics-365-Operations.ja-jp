@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 072ebac7e62e7da83dde5df0d7a75ef3b80b60d9
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 611059f24e6b1b1bf75c0a02385a7cf3650234cb
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6116965"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186336"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -35,8 +35,8 @@ ms.locfileid: "6116965"
 
 - [Commerce コンポーネント](/dynamics365/commerce/dev-itpro/commerce-architecture)
 - [Modern POS (MPOS) アーキテクチャ](retail-modern-pos-architecture.md)
-- [コマース スケール ユニット アーキテクチャ](retail-server-architecture.md)
-- [オンライン ストア発行アーキテクチャ](retail-online-store-publishing-architecture.md)
+- [ヘッドレス コマース エンジンのアーキテクチャ](retail-server-architecture.md)
+- [オンライン ストア チャネルの公開](retail-online-store-publishing-architecture.md)
 - [小売チャネルの実績 PowerBI.com ソリューション](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## <a name="deployment"></a>配置

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a759ede7fedb256a411a640d9db13653e812e416
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 30fbbd6c2609e6305df8c500335ce2e93c482969
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749588"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188091"
 ---
 # <a name="task-double-form-pattern"></a>タスク ダブルのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749588"
 
 この記事では、タスク ダブル フォームのパターンに関する情報を提供します。 このパターンは、以前は同じフォームに親エンティティと子エンティティを表示するために使用されていました。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 このタイプのフォームは、以前は親/子エンティティを同じフォームに表示する場合に使用されていました。 新しいフォームの推奨パターンではありません。 このパターンを使用する新しいフォームを作成する必要はありません。 このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。
 

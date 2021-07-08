@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63b7b7ab6a5cfa3335c1f1829cc6b19e763072b9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8cb4695a4a8b2a10d3d171256ffd2dd7e2a7e958
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752676"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188107"
 ---
 # <a name="build-the-rental-charge-type-form"></a>レンタル料金のタイプ フォームの構築
 
@@ -27,8 +27,7 @@ ms.locfileid: "5752676"
 
 このラボでは、簡易リストのフォームを作成します。 シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。 たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。 
 
-<a name="prerequisites"></a>前提条件
--------------
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。
 

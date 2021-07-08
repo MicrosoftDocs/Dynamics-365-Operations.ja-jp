@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3c9a80adaf7da2f9693727ded3fcf200a35a985
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a2372eab4ac0d8c534fdd0543d20e0e015df0316
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749584"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193448"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -51,7 +51,7 @@ Finance and Operations アプリのタスク レコーダーは、高い応答�
 タスク レコーダーはすべての Finance and Operations アプリに含まれており、ユーザーが初めてクライアントを開いた直後に業務プロセスの記録を開始できます。
 
 > [!IMPORTANT]
-> **タスク ガイド** タブは、現在のところ、コマースおよび人事管理では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 人事管理でのはじめにの経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 コマースおよび人事管理の両方に関する docs.microsoft.com サイト ([https://docs.microsoft.com/dynamics365/](../../fin-ops/index.md)) 上で手順を追ったヘルプを利用できます。
+> **タスク ガイド** タブは、現在のところ、コマースおよび人事管理では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 人事管理でのはじめにの経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 Commerce および Human Resources の両方に関する [Finance and Operations アプリケーションのドキュメント](../../fin-ops/index.md) で手順を追ったヘルプも利用できます。
 
 ## <a name="start-a-new-recording"></a>新しい記録を開始する
 次のステップでは、タスク レコーダーを使用して新しい記録を開始する方法を示します。
@@ -382,7 +382,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 新しい (Chromium ベースの) Microsoft Edge ブラウザーと Google Chrome の両方で機能する **プレリリース** の Chromium ブラウザー拡張機能を使用することにより、タスク レコーダーは、ユーザーが業務プロセスを記録するときにブラウザーのスクリーンショットを撮影することができます。 ユーザーが記録を完了すると、タスク レコーダーはこれらのスクリーンショットを使用して Microsoft Word ドキュメントを生成できます。 この機能を有効にするには、次の手順に従って、プレリリースの Chromium 拡張機能をインストールして、記録中にタスク レコーダーがスクリーンショットを撮影できるようにします。
 
 1.  <https://github.com/Microsoft/FMLab> で、GitHub から拡張機能を含む **FMLabTaskRecorderScreenshot** フォルダをダウンロードします。
-2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 \<hostname\> を環境のベース URL に置き換えます。
+2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。  \<hostname\> を環境のベース URL に置き換えます。
 
     ```xpp
     ...

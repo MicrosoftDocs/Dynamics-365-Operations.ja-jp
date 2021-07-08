@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91ae7a4878d5e1711998c7619ade909a85c5de1f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b4644247c033a42cfb34fcff376d1b06a4f1d0c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751334"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189298"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5751334"
 
 このトピックでは、ルックアップ フォームのパターンについて説明します。 標準フレームワークによって指定されたルックアップで正しいデータが提供されない場合や、データの高度な視覚化が必要な場合は、カスタム ルックアップ フォームを使用する必要があります。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 カスタム ルックアップ フォームは、標準フレームワークによって指定されたルックアップ (通常はテーブル定義で定義された AutoLookup フィールド グループを使用して生成される)、が正しいデータを提供しない場合、またはデータの高度な視覚化が必要な場合に使用する必要があります。 このドキュメントでは、3 つのパターンについて説明します。
 

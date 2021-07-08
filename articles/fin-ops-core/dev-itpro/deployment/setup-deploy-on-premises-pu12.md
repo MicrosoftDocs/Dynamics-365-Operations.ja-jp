@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 から 40 を計画、設定、展開する方法について説明します。
 author: PeterRFriis
-ms.date: 04/21/2021
+ms.date: 06/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: e6c083ce93327a64e38a210894345cd93943cbfb
-ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
+ms.openlocfilehash: 6d99a0b22a13530546e3a87cfaed0f183eb2a8cb
+ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5924418"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "6277403"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
 
@@ -143,9 +143,9 @@ VMWare を使用している場合は、次の Web ページに記載されて�
 
 次の必須ソフトウェアは、LCS からダウンロードされたインフラストラクチャ セットアップ スクリプトによって VM にインストールされます。
 
-| ノード タイプ | コンポーネント | 詳細情報 |
+| ノード タイプ | コンポーネント | 細目 |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC ドライバー 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
+| AOS       | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) |
 | AOS       | SNAC – ODBC ドライバー 17 | このドライバーは、PU15 以上へのアップグレードに必要です。<https://aka.ms/downloadmsodbcsql> |
 | AOS       | Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | AOS       | Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
@@ -258,7 +258,7 @@ Finance + Operations を機能させるために、いくつかのユーザー �
 | 財務レポート プロセス サービス アカウント             | gMSA           |         | Contoso\\svc-FRPS$ |
 | 財務レポート クリック ワンス デザイナー サービス アカウント | gMSA           |         | Contoso\\svc-FRCO$ |
 | AOS サービス アカウント                                     | gMSA           | このユーザーは、将来校正するために作成する必要があります。 今後のリリースでは、AOS を gMSA と連携させる予定です。 このユーザーを設定時に作成することで、gMSA へのシームレスな移行を確実にすることができます。\* | Contoso\\svc-AXSF$ |
-| AOS サービス アカウント                                     | ドメイン アカウント | AOS は、一般提供 (GA) リリースでこのユーザーを使用します。 | Contoso\\AXServiceUser |
+| AOS サービス アカウント                                     | ドメイン アカウント | AOS は、一般提供 (GA) リリースでこのユーザーを使用します。 | Contoso\\ AXServiceUser |
 | AOS SQL DB 管理者ユーザー                                   | SQL ユーザー       | Finance + Operations は、このユーザーを使用して SQL\*\* を認証します。 このユーザーは、今後のリリース \*\*\* で gMSA ユーザーにも置き換えられます。 | AXDBAdmin |
 | ローカル配置エージェント サービス アカウント                  | gMSA           | このアカウントは、ローカル エージェントによって、さまざまなノードでの展開を調整するために使用されます。 | Contoso\\Svc-LocalAgent$ |
 
@@ -450,9 +450,9 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
     | コンポーネント | リンクのダウンロード | 必要なファイル名 |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC ドライバー 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | Msodbcsql .msi |
+    | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | Msodbcsql .msi |
     | SNAC – ODBC ドライバー 17 | <https://aka.ms/downloadmsodbcsql> | msodbcsql\_17.msi |
-    | Microsoft SQL ServerManagement Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
+    | Microsoft SQL ServerManagement Studio 17.5 | [SSMS 17.5](/sql/ssms/download-sql-server-management-studio-ssms) | SSMS-Setup-\*.exe |
     | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual Studio 2017 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://lcs.dynamics.com/V2/SharedAssetLibrary>に移動して、資産タイプとして **モデル** を選択して、**VC++ 17 再配布可能ファイル** を選択します。 | vc\_redist.x64\_14\_16\_27024.exe |
     | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
@@ -905,7 +905,7 @@ Finance + Operations では、AD FS の既定で標準のコンフィギュレ�
 
 2. 混在環境用に AD FS を構成していない限り、イントラネット認証接続用に Windows 統合認証 (WIA) を無効にする必要があります。 WIA を AD FS で使用できるように構成する方法の詳細については、[AD FS で Windows 統合認証 (WIA) を使用するようにブラウザを構成する](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia) を参照してください。
 
-   このコマンドは、Finance + Operations クライアントへのログイン時のフォーム認証の使用に関連しています。 シングル サインオンなど、追加の設定が必要な他のオプションが使用可能な場合があります。
+   このコマンドは、Finance + Operations クライアントへのログイン時のフォーム認証の使用に関連しています。 シングル サインインなどの他のオプションはサポートされていません。
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication

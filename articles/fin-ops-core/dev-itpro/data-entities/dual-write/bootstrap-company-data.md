@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5340774a48735e7d5bf31638e99904a29d480b00
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 41bcbcee139a2c2095d7e6db6c8d9894c494a126
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941180"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216650"
 ---
 # <a name="initialize-company-data"></a>会社データの初期化
 
@@ -48,9 +48,12 @@ Finance and Operations アプリに **顧客** テーブル、および Datavers
 このシナリオは、次の前提に基づいています。
 
 - ソース データは Finance and Operations アプリにあります。
-- アカウントが Dataverse に存在し、Finance and Operations アプリに存在しない場合は、このフローの一部として初期化されません。
-- 顧客関与アプリのすべてのアカウント レコードには、Finance and Operations ナチュラル キーと一致するナチュラル キー (アカウント番号) が設定されています (**CustomerAccount**)。
+- アカウントが Dataverse に存在し、Finance and Operations アプリに存在しない場合は、このフローの一部として初期化されません。 Dataverse に保存されているデータの量に基づいて、DIXF または [初期同期](initial-sync-guidance.md) 機能を使用します。
+- 顧客関与アプリのすべてのアカウント レコードには、Finance and Operations ナチュラル キーと一致するナチュラル キー (アカウント番号) が設定されています (**CustomerAccount**)。 
 - 行には、アプリ全体での 1 対 1 (1:1) マッピングがあります。
+
+> [!NOTE]
+> Finance and Operations アプリと Dataverse の両方で、顧客レコードが作成されると、関係者レコードが暗黙的に作成されます。 
 
 ## <a name="prerequisites"></a>必要条件
 

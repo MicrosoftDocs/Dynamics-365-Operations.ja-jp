@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 9d9422e505ffa66cd131957ffa79019b1227f3f7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 46fe59a8a0a260e2ad9c5f3be96b822c8bcb35d2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743897"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189157"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムの環境への適用
 
@@ -187,8 +187,7 @@ if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\Dynami
 
 更新プログラムのビルド環境を準備した後、他の環境で使用する同じメソッドでプラットフォームの更新プログラム パッケージを適用します。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [Finance and Operationsで最新の更新プログラムに移行するためのプロセス](upgrade-latest-update.md)
 

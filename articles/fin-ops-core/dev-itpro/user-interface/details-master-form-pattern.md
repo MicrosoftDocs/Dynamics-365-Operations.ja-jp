@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a3e238d847499fa108e5849d5f5571355ef516a
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 409be9381bce12b9baa50f6945d86a24af1d3686
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909905"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189916"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5909905"
 
 このトピックでは、詳細マスター フォームのパターンについて説明します。 詳細フォームは、データ入力の基本方法です。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 詳細フォームは、データ入力の基本方法です。 これらのフォームにより、ユーザーはデータを表示、編集、および操作できます。 これらフォーム タイプのすべてのコンテンツは展開および折りたたむことのできるクイック タブとして構造化されているため、複数のクイック タブを同時に開くことができます。 クイック タブには、フィールドやグリッドを含めることができ、各クイック タブはローカル ツール バーを持つことができます。 このドキュメントでは、2 つのパターンについて説明します。
 

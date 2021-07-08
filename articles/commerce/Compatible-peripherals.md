@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3bd50fae93f8f73e2c4d647c00a61f87aebe5c50
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: feff9c5060800715651853e1f57b68589c3924e7
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796524"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193009"
 ---
 # <a name="peripheral-compatibility-for-commerce"></a>コマースの周辺機器の互換性
 
 [!include [banner](../includes/banner.md)]
 
-このページに挙げられたデバイスでは、[コマースの周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator) を使用して Dynamics 365 Commerce との互換性のテストが完了しています。 デバイスごとに、テストを実行し、Microsoft に成功結果を送信した関係者が、[テスト担当者] 列に表示されます。 "Microsoft Corp" によるテストとして表示されているデバイスについては、Microsoft にサポート要求を送信する必要があります。 Microsoft 以外の関係者によってテストされたデバイスに関する問題は、まずテストした関係者に報告する必要があります。
+このページに挙げられたデバイスでは、[コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を使用して Dynamics 365 Commerce との互換性のテストが完了しています。 デバイスごとに、テストを実行し、Microsoft に成功結果を送信した関係者が、[テスト担当者] 列に表示されます。 "Microsoft Corp" によるテストとして表示されているデバイスについては、Microsoft にサポート要求を送信する必要があります。 Microsoft 以外の関係者によってテストされたデバイスに関する問題は、まずテストした関係者に報告する必要があります。
 
 ## <a name="compatible-devices-by-type"></a>タイプ別の互換性のあるデバイス
 
@@ -56,7 +56,7 @@ ms.locfileid: "5796524"
 
 ## <a name="device-compatibility-testing"></a>デバイス互換性テスト
 
-デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 デバイスのテストおよび Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[コマースの周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator) を参照してください。
+デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 デバイスのテストおよび Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を参照してください。
 
 デバイスが正常にテストされたら、互換性を確認するため、テスト結果を <drpc@microsoft.com> に送信する必要があります。 このシミュレーターは、Dynamics 365 内のハードウェア プロファイルのダウンロード リンク経由で取得することができます。 デバイス メーカーは、Dynamics 365 にアクセスできない可能性があります。 周辺機器シミュレーターのコピーを入手するには、<drpc@microsoft.com> にお問い合わせください。
 
@@ -64,7 +64,7 @@ ms.locfileid: "5796524"
 
 ## <a name="supported-devices"></a>サポート対象デバイス
 
-既に互換性がテストされて Microsoft に結果が送信されたデバイスのみ、新しい実装でサポートされます。 これは、新しい実装が適切にテストされ、以前にテストされたデバイスのライブラリを作成するために必要です。 以前は、Microsoft がデバイスで内部テストを実施し、結果が [周辺機器](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-peripherals-overview) などの適切な場所に掲載されていました。 市場のデバイスにはさまざまなバリエーションがあるため、このプロセスでは対応できません。 そのため、今後は、テストの大半をパートナー、お客様、および (最も重要な点として) デバイスの製造元が行う必要があります。 原則的には、パートナーやお客様が互換性のあるデバイスの一覧に基づいて周辺機器を選択できるように、デバイスは製造元により事前にテストされます。
+既に互換性がテストされて Microsoft に結果が送信されたデバイスのみ、新しい実装でサポートされます。 これは、新しい実装が適切にテストされ、以前にテストされたデバイスのライブラリを作成するために必要です。 以前は、Microsoft がデバイスで内部テストを実施し、結果が [周辺機器](retail-peripherals-overview.md) などの適切な場所に掲載されていました。 市場のデバイスにはさまざまなバリエーションがあるため、このプロセスでは対応できません。 そのため、今後は、テストの大半をパートナー、お客様、および (最も重要な点として) デバイスの製造元が行う必要があります。 原則的には、パートナーやお客様が互換性のあるデバイスの一覧に基づいて周辺機器を選択できるように、デバイスは製造元により事前にテストされます。
 
 ## <a name="disclaimer"></a>免責事項
 

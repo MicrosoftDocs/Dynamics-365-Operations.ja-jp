@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 7 月)
+title: Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 05/27/2021
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: d939cc42e044f548e4696c420f4166427ed52848
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.openlocfilehash: b29ae4cb5498da3350ff62dbb86de67490bb7612
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123376"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188796"
 ---
-# <a name="platform-updates-for-version-10020-of-finance-and-operations-apps-july-2021"></a>Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 7 月)
+# <a name="platform-updates-for-version-10020-of-finance-and-operations-apps-august-2021"></a>Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -29,8 +29,9 @@ ms.locfileid: "6123376"
 このトピックでは、Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6060 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 5 月
-- **リリースの一般提供 (手動更新):** 2021 年 6 月
+- **リリースの一般提供 (手動更新):** 2021 年 7 月
 - **リリースの一般提供 (自動更新):** 2021 年 7 月
+
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 

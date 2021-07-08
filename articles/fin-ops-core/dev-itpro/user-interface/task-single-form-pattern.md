@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d090858c8cbbaa3a1ba594b191133848ba08a16
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d47c7ad919058d3578af7c4138a1b5ddb25348ba
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744151"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188063"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5744151"
 
 この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 このタイプのフォームは、データが複数のレコードを持つ単一のデータ ソースから発生したとユーザーが認識することを表す場合に使用されました。 新しいフォームの推奨パターンではありません。 このパターンを使用する新しいフォームを作成する必要はありません。 このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。
 

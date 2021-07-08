@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2756cb797e4c19ad14efab3fcc89ea7ca8913414
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b4b240c884777f3d00dd8fac6bc34ca023ab56fa
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751330"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193089"
 ---
 # <a name="document-reporting-services"></a>ドキュメント レポート サービス
 
@@ -37,7 +37,7 @@ ms.locfileid: "5751330"
 
 ### <a name="viewing-reports"></a>レポートを表示する 
 
-エンド ユーザーに提供される拡張レポート表示エクスペリエンスは、Microsoft Visual Studio のレポート プレビュー エクスペリエンスと同じものです。 Visual Studio で個別のデザインのプレビューは以後使用しません。 代わりに、Ctrl+F5 を押すだけで、Internet Explorer ウィンドウでレポートを作成してプレビューできます。 レポートはクライアントに表示されるとおりに表示されます。 ユーザーのパラメーターの経験さえ同じです。 次のスクリーン ショットは、Visual Studio から開いたレポート プレビューの例を示しています。
+エンド ユーザーに提供される拡張レポート表示エクスペリエンスは、Microsoft Visual Studio のレポート プレビュー エクスペリエンスと同じものです。 Visual Studio で個別のデザインのプレビューは以後使用しません。 代わりに、Ctrl+F5 を押すだけで、Internet Explorer ウィンドウでレポートを作成してプレビューできます。 レポートはクライアントに表示されるとおりに表示されます。 ユーザーのパラメーターの経験さえ同じです。 次の画像は、Visual Studio から開いたレポート プレビューの例を示しています。
 
 [![レポート プレビューの例](./media/2_report.png)](./media/2_report.png)
 

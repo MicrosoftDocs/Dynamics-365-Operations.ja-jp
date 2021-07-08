@@ -4,7 +4,7 @@
       items:
         - name: Dynamics 365 Supply Chain Management ホーム ページ
           href: index.md
-        - name: 開始する
+        - name: 使用開始
           items:
             - name: 購入する前に
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
@@ -78,8 +78,6 @@
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (2021 年 5 月)
                       href: get-started/whats-new-scm-10-0-18.md
-                    - name: Supply Chain Management 10.0.17 (2021 年 4 月)
-                      href: get-started/whats-new-scm-10-0-17.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -220,7 +218,7 @@
                       href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service - グローバリゼーション機能
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Regulatory Configuration Service で ER 構成を作成し、グローバル リポジトリにアップロードする
+                    - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
@@ -228,19 +226,19 @@
                   items:
                     - name: 電子請求の概要
                       href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 電子請求の管理コンポーネント
+                    - name: 電子請求管理コンポーネント
                       href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Services (RCS) での電子請求のコンフィギュレーション
                       href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Finance と Supply Chain Management で電子請求書を発行する
+                    - name: Finance および Supply Chain Management での電子請求書の発行
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Azure ストレージ アカウントと Key Vault の作成
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 使用状況の管理ダッシュボード
+                    - name: 使用状況管理ダッシュボード
                       href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 開始する
                       items:
-                        - name: 電子請求サービス管理の概要
+                        - name: 電子請求サービス管理の使用を開始する
                           href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 電子請求の使用を開始する
                           href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
@@ -603,6 +601,20 @@
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Finance and Operations モバイル アプリケーションでの原価管理ワークスペースの使用
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: グローバル在庫会計
+          items:
+            - name: グローバル在庫会計ホーム ページ
+              href: global-inventory-accounting/global-inventory-accounting-home.md
+            - name: グローバル在庫会計の使用を開始する
+              href: global-inventory-accounting/get-started-with-gia.md
+            - name: グローバル在庫会計でサポートされるビジネス ドキュメント
+              href: global-inventory-accounting/business-documents-supported.md
+            - name: グローバル在庫会計で Power BI を有効にする
+              href: global-inventory-accounting/enable-power-bi-for-gia.md
+            - name: 規則
+              href: global-inventory-accounting/conventions.md
+            - name: グローバル在庫会計元帳
+              href: global-inventory-accounting/global-inventory-accounting-ledger.md
         - name: 原価管理
           items:
             - name: 原価管理ホーム ページ
@@ -833,7 +845,7 @@
               items:
                 - name: コンフィギュレーションの作成
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
+                - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
@@ -873,11 +885,17 @@
               items:
                 - name: フォーミュラ言語
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER フォーミュラのサポートされるデータ型
+                  items:
+                    - name: プリミティブ データ型
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 複合データ型
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 関数
                   items:
                     - name: コンテナー
                       items:
-                        - name: コンテナーの機能
+                        - name: コンテナー関数
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Base64StringToContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
@@ -1155,7 +1173,7 @@
                   items:
                     - name: Word 形式のレポートを生成するための新しい ER コンフィギュレーションを設計する
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Excel テンプレートで電子申告コンフィギュレーションを再利用して Word 形式のレポートを生成する
+                    - name: Excel テンプレートで ER コンフィギュレーションを再利用して Word 形式のレポートを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 生成されるレポートの Word コンテンツ コントロールを非表示にする
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/supply-chain/toc.json
@@ -1387,13 +1405,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 印刷に対応した自由書式請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 効率的な ER ソリューションを設計する
+                - name: 効率的な電子申告ソリューションをデザインする
                   items:
-                    - name: ER 形式の実行をトレースしてパフォーマンスの問題を解決する
+                    - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: ER 構成でパフォーマンス問題を解決する
+                    - name: ER コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ビジネス ドキュメント管理 (BDM)
+                - name: ビジネス ドキュメントの管理 (BDM)
                   items:
                     - name: BDM 概要
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
@@ -1417,13 +1435,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Application update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Application update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 電子申告の送信先の作成をカスタム送信先ファクトリに委任する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ユーザー入力パラメータタイプのデータ ソース値をソースコードから開始する
+                - name: 生成されるドキュメントに対するカスタム送信先の実装
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
+                - name: USER INPUT PARAMETER タイプのデータ ソース値をソースコードから開始する
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: 在庫管理
           items:
@@ -1593,6 +1615,8 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: 安全マージン
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: 遅延許容範囲 (マイナス日数)
+                  href: master-planning/planning-optimization/delay-tolerance.md
                 - name: 購買要求
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: 生産計画
@@ -1603,6 +1627,8 @@
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: 特定の製品ライフサイクル状態の製品を除外する
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: 補充方法と数量の変更
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: 補充タイム フェンス
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: 計画オーダーの承認
@@ -3047,6 +3073,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: 品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録
                   href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: V2 データ エンティティによる入庫 ASN のインポート
+                  href: warehousing/import-asn-v2-data-entity.md
                 - name: 受入倉庫から店舗までのクロスドッキング製品
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: 発注書のプット アウェイ場所のディレクティブの設定
@@ -3215,6 +3243,8 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: 部分的な場所の循環棚卸プロセスの定義
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: 循環棚卸のシナリオ例
+                      href: warehousing/cycle-counting-scenarios.md
                     - name: 倉庫管理の手持在庫エントリのクリーンアップ ジョブ
                       href: warehousing/onhand-cleanup.md
                     - name: 在庫仕訳帳
@@ -3241,6 +3271,52 @@
                       href: warehousing/mhax.md
                     - name: 倉庫作業のトラブルシューティング
                       href: warehousing/troubleshoot-warehouse-work.md
+            - name: 倉庫アプリ
+              items:
+                - name: モバイル デバイスのインストール、設定、および使用
+                  items:
+                    - name: Warehouse Management モバイル アプリの新機能または変更された機能
+                      href: warehousing/whats-new-wma.md
+                    - name: Warehouse Management モバイル アプリのインストールと接続
+                      href: warehousing/install-configure-warehouse-management-app.md
+                    - name: 倉庫アプリのインストールと接続
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Warehouse Management モバイル アプリでカメラを使用してバーコードをスキャンする
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Warehouse Management モバイル アプリの接続に関する問題のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
+                - name: モバイル デバイス用のフィールドおよびメニューを設定する
+                  items:
+                    - name: Warehouse Management モバイル アプリのフィールドを構成する
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: 倉庫作業用のモバイル デバイスの設定
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Warehouse Management モバイル アプリで受信するライセンス プレート
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: 入庫済品目を登録するためのモバイル デバイスのメニュー項目の設定
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: 集荷明細行の概要を提供するためのモバイル デバイスのメニュー項目の設定
+                      href: warehousing/pick-line-overview.md
+                    - name: ライセンス プレートの連結用のモバイル デバイス メニュー項目の作成
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: モバイル デバイスでの混合ライセンス プレートの受取
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: モバイル デバイスで倉庫内の古いバッチの表示を構成する
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: モバイル デバイスで最も古いバッチをピッキングする
+                      href: warehousing/pick-oldest-batch.md
+                - name: モバイル デバイスのユーザー設定
+                  href: warehousing/mobile-device-user-settings.md
+                - name: 倉庫アプリのイベント処理
+                  href: warehousing/warehouse-app-events.md
+                - name: 倉庫アプリのカスタマイズ
+                  items:
+                    - name: プロセス ガイドのフレームワーク
+                      href: warehousing/process-guide-framework.md
+                    - name: ステップ アイコンとタイトルの割り当て
+                      href: warehousing/step-icons-titles.md
             - name: 倉庫の設定
               items:
                 - name: 倉庫のコンフィギュレーション
@@ -3275,10 +3351,14 @@
                           href: warehousing/configure-wave-schedule-work-creation.md
                         - name: ウェーブの実行通知
                           href: warehousing/wave-execution-notifications.md
-                        - name: ウェーブ ラベルの印刷
+                        - name: ウェーブ ラベル印刷
                           href: warehousing/configure-wave-label-printing.md
-                        - name: コンテナー詰め
+                        - name: ウェーブ中のウェーブ ラベル印刷をスケジュールする
+                          href: warehousing/configure-task-based-wave-label-printing.md
+                        - name: コンテナー化
                           href: warehousing/wave-containerization.md
+                        - name: コンテナー梱包戦略
+                          href: warehousing/container-packing-strategy-overview.md
                     - name: 出荷の自動更新
                       href: warehousing/auto-update-shipment.md
                     - name: 場所プロファイルの作成
@@ -3309,44 +3389,6 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: 倉庫コンフィギュレーションのトラブルシューティング
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Warehouse Management モバイル アプリのインストールとコンフィギュレーション
-                  items:
-                    - name: Warehouse Management モバイル アプリのインストールと接続
-                      href: warehousing/install-configure-warehouse-management-app.md
-                    - name: モバイル デバイスのユーザー設定
-                      href: warehousing/mobile-device-user-settings.md
-                    - name: 倉庫アプリのインストールと接続
-                      href: warehousing/install-configure-warehousing-app.md
-                    - name: Warehouse Management モバイル アプリでカメラを使用してバーコードをスキャンする
-                      href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Warehouse Management モバイル アプリのフィールドを構成する
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: 倉庫作業用のモバイル デバイスの設定
-                      href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: ステップ アイコンとタイトルの割り当て
-                      href: warehousing/step-icons-titles.md
-                    - name: 倉庫アプリのイベント処理
-                      href: warehousing/warehouse-app-events.md
-                    - name: Warehouse Management モバイル アプリで受信するライセンス プレート
-                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
-                      href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: 入庫済品目を登録するためのモバイル デバイスのメニュー項目の設定
-                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: 集荷明細行の概要を提供するためのモバイル デバイスのメニュー項目の設定
-                      href: warehousing/pick-line-overview.md
-                    - name: ライセンス プレートの連結用のモバイル デバイス メニュー項目の作成
-                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                    - name: モバイル デバイスでの混合ライセンス プレートの受取
-                      href: warehousing/mixed-license-plate-receiving.md
-                    - name: モバイル デバイスで倉庫内の古いバッチの表示を構成
-                      href: warehousing/display-older-batches-within-warehouses.md
-                    - name: モバイル デバイスで最も古いバッチをピッキング
-                      href: warehousing/pick-oldest-batch.md
-                    - name: プロセス ガイドのフレームワーク
-                      href: warehousing/process-guide-framework.md
-                    - name: Warehouse Management モバイル アプリの接続に関する問題のトラブルシューティング
-                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: アップグレードおよび移行
                   items:
                     - name: 倉庫管理プロセスを Microsoft Dynamics AX 2012 から Finance and Operations にアップグレードする
@@ -3393,6 +3435,22 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: マスター プラン
               items:
+                - name: 組み込みのマスター プラン エンジンを実行するとエラーが返される
+                  href: troubleshooting/planning/deprecated-master-planning-error.md
+                - name: 品目に BOM またはフォーミュラを使用できない
+                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
+                - name: マスター プランのパラメーターが存在しない
+                  href: troubleshooting/planning/no-parameters-for-master-plan.md
+                - name: 計画製造オーダーをスケジュールしてからでないと確定できない
+                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
+                - name: 製品がトランザクションで保留中
+                  href: troubleshooting/planning/product-is-on-hold.md
+                - name: 選択したフォーミュラ番号は、オーダー (バッチ) に承認されていません。
+                  href: troubleshooting/planning/selected-formula-not-approved.md
+                - name: 仕入先コードが特定の製品および日付に対して承認されていない
+                  href: troubleshooting/planning/vendor-code-not-authorized.md
+                - name: 計画オーダーの確定時に仕入先が指定されない
+                  href: troubleshooting/planning/vendor-not-specified.md
                 - name: 直接派生した確定注文がレビュー中のワークフローによって処理される
                   href: troubleshooting/planning/firmed-directly-deri.md
                 - name: 関連する補充グループの値でマスター プランの品目をフィルター処理できない
@@ -3441,9 +3499,9 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: 販売とマーケティング
               items:
-                - name: 販売注文のキャンセル時に数量を減らせません
+                - name: 販売注文のキャンセル時に数量を減らせない
                   href: troubleshooting/sales/quantity-cannot-be-reduced.md
-                - name: 未承認のため、システム管理者は注文保留を解除できません
+                - name: 未承認のため、システム管理者は注文保留を解除できない
                   href: troubleshooting/sales/system-administrator.md
             - name: 輸送管理
               items:
@@ -3451,6 +3509,20 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: 倉庫管理
               items:
+                - name: キャンセルされた製品受領書で、トランザクションの状態が登録済に更新されない
+                  href: troubleshooting/warehousing/canceled-product-receipts.md
+                - name: 物理的に更新している数量の小数丸めが間違っている
+                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+                - name: 単位内の物理的残余数量はゼロ以外でなければならない
+                  href: troubleshooting/warehousing/physical-remaining-q.md
+                - name: 梱包明細の生成時に、ピッキング済数量が不足している
+                  href: troubleshooting/warehousing/picked-quantity-is-n.md
+                - name: 梱包明細の生成中に数量が超過配送の割合を超えている
+                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+                - name: 更新しようとしている数量が、入庫/配送数量を超えている
+                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+                - name: 梱包明細の生成中に数量が過少配送の割合を超えている
+                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
                 - name: ピッキング リスト登録時に場所を選択するとエラーが発生する
                   href: troubleshooting/warehousing/error-cannot-update.md
                 - name: ピッキング ステーションに製品のメモが表示されない

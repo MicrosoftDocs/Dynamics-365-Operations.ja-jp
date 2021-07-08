@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ff1f13198a7acc35897252f3ca8f6c2b1f56852e
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 080d45170c726cd0351ab344254aa36c1c56ba55
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938279"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271259"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > スケール ユニット ワークロードが使用されている場合、すべてのビジネス機能がパブリック プレビューで完全にサポートされているわけではありません。 スケール ユニットを使用している場合、このトピックでサポート対象として明示的に説明したプロセスのみを使用してください。

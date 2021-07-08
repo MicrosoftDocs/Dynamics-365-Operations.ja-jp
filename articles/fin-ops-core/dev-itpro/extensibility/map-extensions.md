@@ -1,7 +1,7 @@
 ---
 title: テーブル マップ拡張
 description: テーブル マップを拡張するために、テーブル マップをモデルにリファクタリングしました。追加のフィールドとメソッドを使用してソリューションを拡張できます。
-author: LarsBlaaberg
+author: MichaelFruergaardPontoppidan
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
-ms.author: lolsen
+ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 6bbf1e1ef6a65bb30249de4817ecb546b5c9f051
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: fec5b918d2d35e70dadaf39cee73edb25cebe889
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866088"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193395"
 ---
 # <a name="table-map-extension"></a>テーブル マップ拡張
 

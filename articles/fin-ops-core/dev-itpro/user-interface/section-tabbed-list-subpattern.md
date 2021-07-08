@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97080ca0e09efaa92356f78a08e9bac28e62e2ff
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3911f1a5429fcd01369b1592488c10b1a7418e87
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754842"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188394"
 ---
 # <a name="section-tabbed-list-subpattern"></a>セクション タブ付きリストのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5754842"
 
 この記事では、セクション タブ付きリストのサブパターンに関する情報を提供します。 このサブパターンは、それぞれにデータのフィルタ処理されたリストを含む垂直タブセットが入ったパノラマ セクション専用の、運用ワークスペース パターンの一部として使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 セクション タブ付きリストのサブパターンは、それぞれにデータのフィルタ処理されたリストを含む垂直タブセットが入ったパノラマ セクション専用の、運用ワークスペース パターンの一部として使用されます。
 

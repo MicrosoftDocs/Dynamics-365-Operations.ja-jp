@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 269f70d9e0392491ed48a49f33508abc454cc3ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4ce2ce1d8aa2fd38e3d7d542b03b26ccaf0a2c03
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749235"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188392"
 ---
 # <a name="section-tiles-subpattern"></a>セクション タイルのサブパターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5749235"
 
 この記事では、セクション タイルのサブパターンに関する情報を提供します。 このサブパターンは、タイル、グラフ、および単一カードのセットを含む最初のパノラマ セクション (概要セクション) 専用の、運用ワークスペース パターンの一部として使用されます。 
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 セクション タイル サブパターンは、タイル、グラフ、および単一カードのセットを含む最初のパノラマ セクション (**概要** セクション) 専用の、運用ワークスペース パターンの一部として使用されます。
 

@@ -2,7 +2,7 @@
 title: Dynamics 365 Translation Service 概要
 description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) について説明します。
 author: ejcho
-ms.date: 07/23/2019
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad1b0e0a24a239795be6aad2e0de2e9093d17f6d
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: fd954f58b764c031432da0eb204590b3082c3189
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920619"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222572"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service の概要
 
@@ -39,8 +39,6 @@ DTS は、翻訳出力の品質を最大限に高めるために [Microsoft 一�
 ## <a name="custom-trained-mt-system"></a>カスタム トレーニングされた MT システム
 DTSは Microsoft Translator サービスとカスタム トランスレーターを使用して、Microsoft Dynamics 製品向けに Microsoft Translator の高度なニューラル機械翻訳をカスタマイズします。 カスタム トレーニングを受けた MT システムは、パートナーが 10,000 を超える翻訳単位 (TU) を含む XLIFF TM ファイルをアップロードしない限り、GA 言語でのみ使用できます。 (TU には、通常、ソース文字列、翻訳、状態、状態識別子、およびメモが含まれています。) そのような場合、DTS は、XLIFF TM ファイルが提出される翻訳要求に固有のカスタムトレーニング MT システムを作成します。
 
-> [!NOTE]
-> Microsoft Translator は Microsoft Translator テキスト API を介したテキスト翻訳をサポートしています。 [Microsoft Translator Hub](https://www.microsoft.com/translator/business/hub/) の廃止により、V2 も 2019 年 4 月 30 日に廃止されます。そのため DTS は V3 Translator API を使用します。 V3 のサポート言語についての詳細は [Translator テキスト API の言語と地域のサポート](/azure/cognitive-services/translator/language-support#customization) を参照してください。 
 
 ## <a name="supported-products"></a>サポートされている製品
 DTS では、現在次の製品バージョンがサポートされています。
@@ -81,14 +79,6 @@ LCS プロジェクトでは、プロジェクト所有者とユーザーに、D
 次の図は、LCS プロジェクト内から開いた DTS ダッシュボードの例を示しています。
 
 ![プロジェクト内から開いた DTS ダッシュ ボード](./media/dts-project-dashboard.png "プロジェクト内から開いた DTS ダッシュ ボード")
-
-## <a name="accessing-lcs-preview-features"></a>LCS プレビュー機能へのアクセス
-LCS はさまざまな理由から一部のサービスや機能をプレビュー機能としてのみ提供します。 利用可能なプレビュー機能の一覧を表示するには、LCS ホームページで **プレビュー機能の管理** タイルを選択します。 機能を有効にするには、機能を選択して、**プレビュー機能を有効にする** オプションを **はい** に設定します。
-
-DTS には 2 つのプレビュー機能があります。
-
-+ **Dynamics 365 Translation Service - ドキュメント翻訳サポート** - 製品またはソリューションのドキュメント (たとえば、Microsoft Word 文書など) を翻訳する場合は、この機能を有効にする必要があります。
-+ **NAV 製品使用可能性** – NAV 製品の LCS プロジェクトを作成し、プロジェクト内から DTS にアクセスするには、この機能を有効にする必要があります。
 
 ## <a name="glossary"></a>用語集
 

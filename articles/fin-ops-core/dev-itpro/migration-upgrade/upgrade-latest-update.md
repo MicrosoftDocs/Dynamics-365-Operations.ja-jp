@@ -2,7 +2,7 @@
 title: Finance and Operations で最新の更新プログラムに移行するためのプロセス
 description: このトピックでは、Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
-ms.date: 10/09/2019
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 67a538495dac70484d5103e3911aef41a6bfa187
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 752a984f111408296a2f9be98d3852f4e7bafdae
+ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743895"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6224518"
 ---
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>Finance and Operations で最新の更新プログラムに移行するためのプロセス
 
@@ -37,7 +37,7 @@ Finance and Operations の各リリースの内容の詳細については、[Fi
 ## <a name="definitions"></a>定義
 
 - **アップグレード** – バージョン 8.0 より前のソース環境では、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。 例としては、7.1 から 7.3 または 7.3 から 10.0.1 への移行があります。 プロセスには、無料サンド ボックス環境、コード アップグレード、およびデータ アップグレードの設定が含まれます。
-- **更新** – バージョン 8.0 以降のソース環境で、バイナリ パッケージを環境に適用し、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。 このプロセスには、低いダウンタイム要件があり、データ アップグレードは含まれません。
+- **更新** – バージョン 8.0 以降のソース環境で、バイナリ パッケージを環境に適用し、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。 このプロセスには、低いダウンタイム要件があり、データ アップグレードは含まれません。 詳細については、このトピックの後半の [再構築と更新](upgrade-latest-update.md#rebuild-and-update) セクションを参照してください。
 
 ## <a name="paths-to-one-version"></a>1 つのバージョンへのパス
 <img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />

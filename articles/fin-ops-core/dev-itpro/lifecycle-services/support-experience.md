@@ -14,18 +14,17 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70edd1d50b2e0dcbdbbc9b985d0c2e91d7fe5590
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 093e7ac36659ca72bc0058359e2c7d996ce29394
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748425"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189334"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations-apps"></a>Finance and Operations アプリのテクニカル サポートを設定する 
 [!include [banner](../includes/banner.md)]
 
-<a name="prerequisites"></a>必要条件
---------------
+## <a name="prerequisites"></a>必要条件
 
 テクニカル サポートの設定をする前に、Microsoft Azure Active Directory (Azure AD) アカウントを取得する必要があります。 このアカウントは、Microsoft Dynamics 365 Finance and Operations アプリのいずれかの定期売買を設定すると作成されます。
 

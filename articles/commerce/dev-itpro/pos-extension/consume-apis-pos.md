@@ -1,6 +1,6 @@
 ---
-title: POS でのカスタム ヘッドレス Commerce エンジン API の使用
-description: このトピックでは、プロキシを使用して POS のカスタム ヘッドレス Commerce エンジン API およびエンティティを消費する方法について説明します。
+title: POS でのカスタム ヘッドレス Commerce API およびエンティティの使用
+description: このトピックでは、プロキシを使用して POS のカスタム ヘッドレス Commerce API およびエンティティを消費する方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,24 +10,24 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 194ddc9e854190ee19286b5cd6666ae75ec47fd5
-ms.sourcegitcommit: d84329f903d359ae042e8c0a4594982a7e06756f
+ms.openlocfilehash: e2c1c7bbdaf6ea0f515126e9248ad57fdd86b0f2
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5984299"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271143"
 ---
-# <a name="consume-custom-headless-commerce-engine-apis-and-entities-in-pos"></a>POS でのカスタム ヘッドレス Commerce エンジン API の使用
+# <a name="consume-custom-headless-commerce-apis-and-entities-in-pos"></a>POS でのカスタム ヘッドレス Commerce API およびエンティティの使用
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックでは、プロキシを使用して POS のカスタム ヘッドレス Commerce エンジン API およびエンティティを消費する方法について説明します。 Retail SDK バージョン 10.0.18 以降に適用されます。
+このトピックでは、プロキシを使用して POS のカスタム ヘッドレス Commerce API およびエンティティを消費する方法について説明します。 Retail SDK バージョン 10.0.18 以降に適用されます。
 
 1. Commerce Runtime 拡張機能プロジェクトは **Microsoft.Dynamics.Commerce.Sdk.Runtime** NuGet パッケージを参照し、POS 拡張機能プロジェクトが **Microsoft.Dynamics.Commerce.Sdk.Pos** NuGet パッケージを参照することを確認する必要があります。
 
 2. POS 拡張機能プロジェクトから、API を定義する Commerce Runtime プロジェクトへの参照を追加します。
 
-3. ヘッドレス Commerce エンジン拡張機能の TypeScript を生成するために、POS 拡張機能プロジェクトを構築します。 ビルドでは、プロジェクト ルートの **DataService** という名のフォルダーで、2 つの TypeScript ファイルが作成されます。
+3. ヘッドレス Commerce 拡張機能の TypeScript を生成するために、POS 拡張機能プロジェクトを構築します。 ビルドでは、プロジェクト ルートの **DataService** という名のフォルダーで、2 つの TypeScript ファイルが作成されます。
 
     + **DataServiceEntities.g.ts**: Commerce Runtime 拡張機能プロジェクトの TypeScript エンティティが含まれます。
     + **DataServiceRequests.g.ts**: 参照されたすべての Commerce Runtime 拡張機能プロジェクトの TypeScript データ サービス要求が含まれます。

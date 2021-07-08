@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7c6bb1a8e86a141b34fcc50b430623c9773d592
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eec9186898e152f7713c56926813eccb483e0021
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744185"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188097"
 ---
 # <a name="input-controls-and-grid-column-sizes"></a>入力コントロールとグリッド列のサイズ
 
@@ -27,8 +27,7 @@ ms.locfileid: "5744185"
 
 このトピックでは、コントロールとグリッドのサイズを制御することによってフォームの一貫した概観を作成する方法について説明します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 多くのフレームワークでは、入力コントロールの幅が完全に自由にできます。 ただし、その自由度は、データの一貫しない表示および同様のフォームの一様でないレイアウトにつながる可能性があります。 たとえば、1 つのフォームでの顧客名は情報の 10 文字を表示する可能性があり、別のフォームでの顧客名は情報の 20 文字を表示する可能性があります。 合理化された読みやすいインターフェイスを提供するために、個別のサイズ変更により、データを一貫した形で表示できます。 個別のサイズ変更の導入は、基本的な入力コントロールにとって重要な変更です。 コントロール フレームワークは、シンプルさと一貫性を提供する新鮮でクリーンなユーザー エクスペリエンスを提供しようとします。 フォームの均一なレイアウトと一貫性を提供する試行の一環として、各入力コントロールは超小型 (XS)、小型 (S)、中型 (M)、または大型 (L) の 4 種類のサイズのいずれか 1 つに調整されます。 これらのサイズは、コントロールの **DisplayLength** プロパティまたは対応する拡張データ型 (EDT) で明示的に指定された幅を調べることによって決定されます。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acfa5be4d536b21edac0c556b5f4d87d215637be
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: de0e7048139ccb7e088f7dcf85e3deb7a978fdda
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908744"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189302"
 ---
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 
@@ -27,8 +27,7 @@ ms.locfileid: "5908744"
 
 この記事では、リスト ページのフォーム パターンに関する情報を提供します。 リスト ページには、レコードを参照するために最適化された UI の一連のデータが表示されるため、特定のレコードを検索して連携できます。 
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 リスト ページには、最適化されたユーザー インターフェイスの一連のデータが表示されるため、レコードの参照、適切なレコードの検索、そのレコードでのアクションを実行できます。 リスト ページでは、ユーザーはデータを検索、フィルタリング、並べ替えできます。 グリッドの右側にある情報ボックスは、有効なレコードの関連データを表示します。 レコードに関連するアクションは、ページの上部にある ActionPane に配置されます。 現在、このパターンの使用は、リスト ページと詳細ページの間に 1 対 1 の対応がある場合は推奨されません。 現在のガイダンスは、リスト ページにバッキングの詳細ページがない場合や複数のバッキングの詳細ページがある場合 (たとえば、プロジェクト見積と販売見積が同じリスト ページにまとめられている場合など) の場合のみ、このパターンを使用することです。
 

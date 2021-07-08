@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e17684a686b99187c32aeb9ec7b4beb855b1a528
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1ad38f211fa08e08c906135b7523772a059504d0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745293"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189264"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 
@@ -27,8 +27,7 @@ ms.locfileid: "5745293"
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 規制警告送信サービスを通じて警告を送信する方法について説明します。 このトピックは、計画およびリリースされた規制機能を、LCS 問題検索を使用して追跡する方法についても説明します。 
 
-<a name="accessing-the-regulatory-alert-submission-service"></a>規制の警告の送信サービスへのアクセス
--------------------------------------------------
+## <a name="accessing-the-regulatory-alert-submission-service"></a>規制の警告の送信サービスへのアクセス
 
 Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側までスクロールしてから、**追加ツール** の **警告サービス** タイルをクリックします。 
 

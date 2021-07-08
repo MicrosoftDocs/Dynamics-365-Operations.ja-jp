@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0b04ee246d4c28e934407ccb92d792692cc4347d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908883"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301653"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>需要予測の履歴データのインポート
 
@@ -39,26 +39,6 @@ ms.locfileid: "5908883"
 
 インポート後のデータのクリーンアップ方法など、データのインポート方法の詳細については、[データのインポートとエクスポートのジョブの概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) 、と関連トピックを参照してください。
 
-## <a name="example"></a>例
-
-次のファイルを例として使用できます。 [HistoricalDemandData](/dynamics/s-e/) をダウンロードします。 このファイルには、品目 D0001 の需要履歴データが含まれています。 また、次の必須フィールドのみが含まれています: サイト、数量、および需要の日付。
-
-1. 履歴需要データをインポートする会社を選択します。
-2. **データ管理** ワークスペースを開きます。
-3. **インポート** タイルを選択します。
-4. インポート プロジェクトの名前を入力します (たとえば、**品目 D0001 の履歴需要のインポート**)。
-5. **ソース データ形式** フィールドで、インポートするファイルのファイル形式を選択します。 この例の HistoricalDemandData ファイルをインポートするには、**CSV** を選択します。
-6. **エンティティ名** フィールドで、**履歴外需** を選択します。
-7. ファイルをコンピューターに保存して、アップロードします。
-8. **インポート** を選択します。
-9. **実行の要約** ページが自動的に開きます。 インポート データをページで確認します。
-
-履歴需要データをインポートした後、需要予測を生成できます。
-
-## <a name="additional-resources"></a>追加リソース
-
-[統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)  
-[データ インポート/エクスポート ジョブの概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
-
+[統計ベースライン予測を生成する](generate-statistical-baseline-forecast.md)も参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 5c87015ddc60e49e60135bd6dba224577e1f5394
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 87f4f88a8f088eb6ba06fb755d82096d1b0b9285
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752276"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189808"
 ---
 # <a name="validate-applications-for-finance-and-operations-apps"></a>Finance and Operations アプリのアプリケーションの検証
 
@@ -92,8 +92,7 @@ AppSource で発行されている生成されたソリューションを使用�
 | 1     | 1      | 顧客コードを検証します。 | CAR ツールを使用してすべての顧客モデル ファイルを実行し、レポートを生成します。 | ローカライズ、アクセシビリティ、パフォーマンス、セキュリティ上の問題なく CAR を正常に作成します。 最新のメジャー リリースにアップグレードした後、CAR が強調表示するすべてのメジャーな問題に対処する必要があります。 CAR は、春および秋の各メジャーリリース後から 8 週間以内に Microsoft に送信する必要があります。 |
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
 

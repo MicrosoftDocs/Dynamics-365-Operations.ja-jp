@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b23a1d3a90c436d169f8adaa818b7d3baf8bd41
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ca8e66fba5043c860498aa1367dd760f98fa9bf4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745705"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188398"
 ---
 # <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 
@@ -27,8 +27,7 @@ ms.locfileid: "5745705"
 
 このトピックでは、Web クライアントのレイアウトについて説明します。 レイアウトは、ページ上にコントロールを表示する方法を指定するデザイン プロセスです。 
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 レイアウトは、ページ上のコントロールを Web クライアントで表示する方法を指定するデザイン プロセスです。 レイアウトはコンテナー コントロール内で発生します。 次のテーブルに、コンテナー コントロールの一覧を示します。
 
@@ -217,8 +216,7 @@ Finance and Operations アプリでは、サイズ変更はサイズ プロパ�
 -    **WidthMode**=**SizeToAvailable** を使用する場合は、フォーム内の親コンテナーに、**WidthMode** を **SizeToContent** にではなく、**SizeToAvailable** に設定するよう確認します。 **SizeToContent** 内部のコンテナー **SizeToAvailable** コンテナー を上書きして **SizeToContent** コンテナーになります。
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [ユーザー インターフェイス開発ホーム ページ](user-interface-development-home-page.md)
 

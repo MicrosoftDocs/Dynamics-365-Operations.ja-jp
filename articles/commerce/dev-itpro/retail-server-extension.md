@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: bfdfcaaf20e931ec5b31a931a3e98b6b448d5dcb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ab4c56ab13f2c2e8f1ca693786ae41121e44e655
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019973"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193117"
 ---
 # <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10010-and-earlier"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.10 以前)
 
@@ -32,7 +32,7 @@ ms.locfileid: "6019973"
 Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) を含む、エンドツーエンドの Commerce Scale Unit 拡張機能のサンプルがいくつか用意されているのみです。 これらのサンプルをテンプレートとして使用して、拡張機能を起動できます。 サンプル拡張機能は、RetailSDK\\SampleExtensions\\RetailServer フォルダーで見つけることができます。
 
 > [!NOTE]
-> CommerceController の拡張モデルは、2021 年 4 月に廃止されました (アプリケーション リリース - 10.0.18)。 すべての Retail Sever 拡張機能を IController に移行する必要があります。 CommerceController と IController の両方を存在させることはサポートされていません。 IController の詳細については、新しい [新しい Retail Sever 拡張機能の作成 (Retail SDK バージョン 10.0.11 以降)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-server-icontroller-extension) を参照してください。
+> CommerceController の拡張モデルは、2021 年 4 月に廃止されました (アプリケーション リリース - 10.0.18)。 すべての Retail Sever 拡張機能を IController に移行する必要があります。 CommerceController と IController の両方を存在させることはサポートされていません。 IController の詳細については、新しい [新しい Retail Sever 拡張機能の作成 (Retail SDK バージョン 10.0.11 以降)](retail-server-icontroller-extension.md) を参照してください。
 
 
 ## <a name="end-to-end-sample-repository-in-the-retail-sdk"></a>Retail SDK のエンドツーエンド サンプル リポジトリ

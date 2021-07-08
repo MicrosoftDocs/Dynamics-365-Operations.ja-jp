@@ -2,7 +2,7 @@
 title: 新しい環境の配置
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。
 author: rashmansur
-ms.date: 12/03/2019
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 1d2fe3602369a198529fc7be4401012d6343caca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4642dc4c3277e16358324d906e3a5e4fca482ff3
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744823"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303396"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 
@@ -39,7 +39,7 @@ ms.locfileid: "5744823"
 10. 構成を検証した後、**送信** をクリックして配置をトリガーします。
 11. チャネルの使用を計画する場合は、[Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) も必要です。
 
-環境配置はすぐに開始され、完了までに **1 ～ 2 時間** かかることがあります。 
+環境の展開はすぐに開始され、サンドボックス環境の場合は **30 分から 1 時間**、実稼働環境の場合は **1-2 時間** かかる可能性があります。 
 
 配置の進行状況を常時監視するには、**環境の詳細** ページを表示できます。 環境の状態は、**配置中** または **配置済み/失敗** のいずれかに変更されます。
 

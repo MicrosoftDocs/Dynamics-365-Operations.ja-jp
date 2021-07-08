@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0d73e97da43f6b191d8f88754b0ba58180a2d6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 37662986f050bdea1d1fa166bacdfeb15e1e3ab3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752680"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188113"
 ---
 # <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
 
@@ -27,8 +27,7 @@ ms.locfileid: "5752680"
 
 このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
 
-<a name="prerequisites"></a>必要条件
--------------
+## <a name="prerequisites"></a>必要条件
 
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。
 
