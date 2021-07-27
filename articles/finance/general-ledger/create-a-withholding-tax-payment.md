@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 72d80fbb3b2448f4b89fa7d7fa580387e1a3621c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ffd426c893a93ffa02aa52a2d2bad39227f8dd35
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832949"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355110"
 ---
 # <a name="create-a-withholding-tax-payment"></a>源泉徴収税の支払を作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "5832949"
 6. **更新** を選択すると、源泉徴収税の支払伝票が源泉徴収税決済勘定に転記されます。
 7. **OK** をクリックします。
 
-![源泉徴収税支払に使用するパラメーター](media/withholding-tax-payment.png)
+![源泉徴収税支払に使用するパラメーター。](media/withholding-tax-payment.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

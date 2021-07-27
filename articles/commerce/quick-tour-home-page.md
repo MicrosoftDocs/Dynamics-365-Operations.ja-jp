@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f083115f5dc0cfe0e9ba4786bf79ec4083ab7e78
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cd179483458dd3da3b69afaa464c21a11c3df8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792198"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352015"
 ---
 # <a name="home-page-overview"></a>ホーム ページの概要
 
@@ -31,7 +32,7 @@ ms.locfileid: "5792198"
 
 以下の図は、モジュール ライブラリおよび 「Fabrikam」 のテーマを使用してビルドされたホーム ページの例を示します。
 
-![ホーム ページの例](./media/Homepage2.PNG)
+![ホーム ページの例。](./media/Homepage2.PNG)
 
 ホーム ページの上部には、小売業者が顧客に参照させたいすべての製品カテゴリおよび他のページを表示するヘッダーがあります。 ホーム ページの下部には、顧客が興味を持つさまざまなトピックへのクイック リンクを含むフッターがあります。
 
@@ -41,13 +42,13 @@ ms.locfileid: "5792198"
 
     以下の図は、主なセクションの最初の項目が "新着" と呼ばれるコンテンツ ブロック モジュールのヒーロー レイアウトであるホーム ページの例を示します。
 
-    ![ヒーロー モジュールの例](./media/Hero.PNG)
+    ![ヒーロー モジュールの例。](./media/Hero.PNG)
 
 - **機能** – 画像とテキストの組み合わせを使用して製品またはプロモーションをマーケティングするために、コンテンツ ブロック モジュールの機能レイアウトが使用されます。 機能レイアウトは個別に使用することができ、またカルーセル モジュールでホストすることもできます。
 
     以下の図は、ホーム ページ内におけるコンテンツ ブロック モジュールの機能レイアウトの例を示しています。
 
-    ![機能モジュールの例](./media/Feature.PNG)
+    ![機能モジュールの例。](./media/Feature.PNG)
 
 - **タイル** – コンテンツ ブロック モジュールのタイル レイアウトは、複数行レイアウトの画像とテキストの組み合わせを使用して、複数の製品または製品カテゴリを表示するために使用されます。 このトピックの前の部分で示したホーム ページの図において、タイル レイアウトは、**女性店員**、**男性店員**、および **店舗のアクセサリ** 項目の 3 列のレンダリングで使用されています。
 - **ビデオ プレーヤー** – ビデオ プレーヤー モジュールを使用して、ホーム ページにビデオ コンテンツを表示することができます。 このトピックの前の部分で示したホーム ページの図には、ビデオ プレーヤー モジュールが含まれます。
@@ -56,7 +57,7 @@ ms.locfileid: "5792198"
 
     以下の図は、ホーム ページ内における製品推奨モジュールの例を示しています。
 
-    ![製品推奨モジュールの例](./media/Recommendations.PNG)
+    ![製品推奨モジュールの例。](./media/Recommendations.PNG)
 
 > [!NOTE]
 > ここに一覧表示されているすべてのモジュールは、すべてのサイト ページで使用できます。 ただし、顧客がサイトで最初に対話するページなので、ホーム ページ上での配置は重要です。

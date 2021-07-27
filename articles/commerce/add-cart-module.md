@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ec8e89ed82bcdffdc21e62d24ad8c8a7d939cdf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76d4bea9ad25494015a7bfeb324cb0e84dd024b7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797866"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346855"
 ---
 # <a name="cart-module"></a>カート モジュール
 
@@ -35,11 +35,11 @@ ms.locfileid: "5797866"
 
 次の図は、Fabrikam のサイトにおける買い物カゴ ページの例を示しています。
 
-![Fabrikam サイトにおける買い物カゴ モジュールの例](./media/cart2.PNG)
+![Fabrikam サイトにおける買い物カゴ モジュールの例。](./media/cart2.PNG)
 
 次の図は、Fabrikam のサイトにおける買い物カゴ ページの例を示しています。 この例では、明細行品目の手数料があります。
 
-![品目に対する取扱手数料がある買い物カゴ モジュールの例](./media/ecommerce-handling-fee.png)
+![品目に対する取扱手数料がある買い物カゴ モジュールの例。](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>カート モジュール プロパティおよびスロット
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
-ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
+ms.openlocfilehash: a896953a5603d9766f2c4938158088fc9424d5bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "5911299"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343751"
 ---
 # <a name="work-with-location-directives"></a>場所のディレクティブを使って作業する
 
@@ -51,7 +51,7 @@ ms.locfileid: "5911299"
 
 場所のディレクティブに対して設定できるフィールドの多くは、すべての作業指示書タイプに共通です。 ただし、その他のフィールドは、特定の作業指示書タイプに固有です。
 
-![場所のディレクティブの作業指示書タイプ](media/Location_Directives_Work_Order_Types.png "場所のディレクティブの作業指示書タイプ")
+![場所のディレクティブの作業指示書タイプ。](media/Location_Directives_Work_Order_Types.png "場所のディレクティブの作業指示書タイプ")
 
 > [!NOTE]
 > 2 つの作業指示書タイプ、*キャンセル済の作業* と *循環棚卸* は、システムによってのみ使用されます。 この作業指示書タイプに対して場所のディレクティブを作成することはできません。

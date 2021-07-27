@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 3550b2b7b305702ffc337ba0a9bb79f60a9de120
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: db7bdfe102fa5e24816f2cfaf2b53351362cddd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023385"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358197"
 ---
 # <a name="set-up-tds-registration-numbers-for-legal-entities"></a>法人の TDS 登録番号の設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "6023385"
 
 1. **組織管理 \> 組織 \> 法人** の順に移動します。
 
-    [![法人ページ](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
+    [![法人ページ。](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
 
 2. **税金情報** クイック タブの **納税者番号** フィールドに、法人の納税者番号 (PAN) を入力します。
 3. **Circle 番号** フィールドに、TDS 当局の Circle 番号を入力します。
@@ -41,11 +41,11 @@ ms.locfileid: "6023385"
 7. アクション ペインで **登録 ID** を選択して、**住所の管理** ページを開きます。
 8. **税金情報** クイック タブで、**追加** または **編集** を選択して **税金情報の管理** ページを開き、税金登録エントリを管理できます。
 
-    [![住所の管理ページ](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
+    [![住所のページを管理します。](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
 
 9. **源泉徴収税** クイック タブの **税勘定番号 (TAN)** フィールドに、登録番号を入力します。 この番号は、4 文字のアルファベット、5 文字の数字、1 文字のアルファベットの順で構成する必要があります。 次に例を示します: **AXDF87645F**。
 10. **名前または説明** フィールドに、源泉徴収税登録番号の説明を入力します。
 
-    [![税金情報の管理ページ](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
+    [![税金情報のページを管理します。](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
 
 11. ページを閉じます。

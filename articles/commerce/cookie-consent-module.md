@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 2f0118b197f465113bb894e3e57b3e682e04ef36
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a277ef0634c4ddd5769d278ce6186aac5e84ebfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796006"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352521"
 ---
 # <a name="cookie-consent-module"></a>Cookie の同意モジュール
 
@@ -35,7 +35,7 @@ Cookie の同意モジュールは、ブラウザのクッキーを追跡する�
 Cookie の同意モジュールは、ページの読み込み時に適用できるよう、ページのヘッダー フラグメントに構成可能です。 cookie 同意モジュールは、サイト上での cookie の使用についてサイト利用者に通知する明示的ななメッセージを含み、かつサイトのプライバシー ページへのリンクを提供する必要があります。
 
 以下の図は、サイト ページのヘッダーに表示される、サイトの [プライバシーポリシー] ページへのリンクを含む cookie 同意メッセージの例を示しています。
-![Cookie 同意モジュールの例](./media/ecommerce-cookieconsent.png)
+![Cookie 同意モジュールの例。](./media/ecommerce-cookieconsent.png)
 
 ## <a name="cookie-consent-module-properties"></a>Cookie 同意モジュールのプロパティ
 

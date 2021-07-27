@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 14f0f2b1a4d63101d432b1361379c61a70ac9345
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1e20528cd0af00c46f1376e02097bf3171100769
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271186"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358698"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Lifecycle Services から電子申告コンフィギュレーションをダウンロードする
 
@@ -41,7 +41,7 @@ ms.locfileid: "6271186"
 3. **コンフィギュレーション プロバイダー** セクションで、**Microsoft** タイルを選択します。
 4. **Microsoft** タイルで **リポジトリ** を選択します。
 
-    [ローカライズ コンフィギュレーション ページ の ![Microsoft タイル](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![ローカライズ コンフィギュレーション ページ の Microsoft タイル。](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. **コンフィギュレーション リポジトリ** ページのグリッドで、**LCS** タイプの既存のリポジトリを選択します。 このリポジトリがグリッドに表示されない場合は、次の手順に従います。
 
@@ -55,7 +55,7 @@ ms.locfileid: "6271186"
 
 6. **開く** を選択して、選択したリポジトリの ER コンフィギュレーションの一覧を表示します。
 
-    [![コンフィギュレーション レポジトリ ページ](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![コンフィギュレーション レポジトリ ページ。](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
     > [!TIP]
     > LCS の共有アセット ライブラリからコンフィギュレーションをダウンロードするのに、LCS リポジトリへのアクセスに問題がある場合は、代わりに [グローバル リポジトリ](er-download-configurations-global-repo.md) からコンフィギュレーションをダウンロードできます。
@@ -67,7 +67,7 @@ ms.locfileid: "6271186"
     > [!NOTE]
     > **インポート** ボタンは、現在のインスタンスにある ER コンフィギュレーション バージョンでは使用できません。
 
-    [![レポジトリ ページのコンフィギュレーション](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![コンフィギュレーション レポジトリ ページ。](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
 > ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。 不整合の問題が検出されると、通知を受け取る場合があります。 インポートしたコンフィギュレーションのバージョンを使用する前に、それらの問題を解決する必要があります。 詳細については、このトピックの関連トピックの一覧を参照してください。

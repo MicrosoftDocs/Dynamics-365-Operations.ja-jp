@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e4aa941c57e8c31793d6db8ae87140cd1bb1a82b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 348643d7213b8c053d6a15b4b716a3ce75ba2fa2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021347"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346377"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>マスター データ検索用の環境の設定
 
@@ -69,16 +69,16 @@ ms.locfileid: "6021347"
 
 8. **接続の確認** を選択し、接続プロセスを完了します。 
 
-   [![接続の確認ボタン](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
+   [![接続の確認ボタン。](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
 
 9. **電子申告** > **税コンフィギュレーション** に移動し、[税コンフィギュレーション](https://go.microsoft.com/fwlink/?linkid=2158352)から税コンフィギュレーションをインポートします。
 
-   [![税コンフィギュレーション ページ、税データ モデル ツリー](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
+   [![税コンフィギュレーション ページ、税データ モデル ツリー。](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
 
 10. **課税対象ドキュメント モデル マッピング** または Microsoft コンフィギュレーションを使用している場合は **Dataverse モデル マッピング** に移動し、**接続アプリケーション** フィールドで、手順 7 で作成したレコードを選択します。
 11. **モデル マッピングの既定値** を **はい** に設定します。
 
-   [![モデル マッピング ページ](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
+   [![モデル マッピング ページ。](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,18 +13,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 227082358c59abddd63f4faa4536a8df270a4d80
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24f8af4d691c3085c36018c574fa3b917a3d6953
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059091"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314216"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>固定報酬の報酬計画
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources における固定報酬の報酬計画エンティティに対するクエリの詳細および例を示します。
+このトピックでは、Dynamics 365 Human Resources の固定報酬の報酬計画のエンティティについて説明します。
+
+### <a name="description"></a>説明
+
+このエンティティは、従業員の特定の職位に割り当てられた固定報酬プランを提供します。
+
+物理名: mshr_payrollfixedcompensationplanentity。
 
 ## <a name="properties"></a>プロパティ
 
@@ -37,11 +43,11 @@ ms.locfileid: "6059091"
 | **固定報酬の報酬計画エンティティ**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | 必須<br>システム生成 | システムで生成する、報酬計画を一意に識別する GUID 値です。 |
 | **支払頻度**<br>mshr_payfrequency<br>*文字列* | 読み取り専用<br>必須 |従業員に支払われる頻度。  |
 | **失効日**<br>mshr_validto<br>*日時オフセット* | 読み取り専用 <br>必須 | 従業員の固定報酬が有効な日付。 |
-| **職位 ID**<br>mshr_positionid<br>*文字列* | 読み取り専用 <br>必須 | 従業員および固定報酬計画の登録に関連付けられた転記 ID。 |
+| **職位 ID**<br>mshr_positionid<br>*文字列* | 読み取り専用 <br>必須 | 従業員および固定報酬計画の登録に関連付けられた職位 ID。 |
 | **通貨**<br>mshr_currency<br>*文字列* | 読み取り専用 <br>必須 |固定報酬計画に定義されている通貨   |
 | **個人番号**<br>mshr_personnelnumber<br>*文字列* | 読み取り専用<br>必須 |従業員の一意の職員番号。  |
 
-**クエリ**
+## <a name="example-query"></a>クエリの例
 
 **申請**
 
@@ -53,18 +59,24 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollfixedcompensationplanentities?$f
 
 ```json
 {
-            "mshr_planid": "GradeC",
-            "mshr_personnelnumber": "000041",
-            "mshr_payrate": 75200,
-            "mshr_positionid": "000276",
-            "mshr_validfrom": "2011-04-05T00:00:00Z",
-            "mshr_validto": "2154-12-31T00:00:00Z",
-            "mshr_payfrequency": "Annual",
-            "mshr_currency": "USD",
-            "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
-            "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
-            "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
-            "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
-            "_mshr_fk_payroll_id_value": null
+    "mshr_planid": "GradeC",
+    "mshr_personnelnumber": "000041",
+    "mshr_payrate": 75200,
+    "mshr_positionid": "000276",
+    "mshr_validfrom": "2011-04-05T00:00:00Z",
+    "mshr_validto": "2154-12-31T00:00:00Z",
+    "mshr_payfrequency": "Annual",
+    "mshr_currency": "USD",
+    "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
+    "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
+    "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
+    "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
+    "_mshr_fk_payroll_id_value": null
 }
 ```
+
+## <a name="see-also"></a>参照
+
+[給与統合 API の概要](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

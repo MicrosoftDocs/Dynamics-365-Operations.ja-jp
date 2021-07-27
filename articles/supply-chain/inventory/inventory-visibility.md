@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017009"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358101"
 ---
 # <a name="inventory-visibility-add-in"></a>在庫の視覚化アドイン
 
@@ -143,7 +143,7 @@ Dataverse の設定を開始する前に、次の手順に従って、テナン�
 
             この変数の詳細については、このトピックで後述する[在庫の視覚化統合の設定](#setup-inventory-visibility-integration) を参照してください。
 
-        ![構成トリガー](media/configuration-trigger.png "構成トリガー")
+        ![構成トリガー。](media/configuration-trigger.png "構成トリガー")
 
     1. **有効化** を選択します。
 
@@ -157,7 +157,7 @@ Inventory Visibility Add-in をインストールするには、以下を実行�
 1. 環境ページで、**Power Platform 統合** セクションの **環境アドイン** セクションが表示されるまで下にスクロールします。このセクションでは Dataverse 環境名を検索できます。
 1. **環境アドイン** セクションで、**新しいアドインのインストール** を選択します。
 
-    ![LCS の環境ページ](media/inventory-visibility-environment.png "LCS の環境ページ")
+    ![LCS の環境ページ。](media/inventory-visibility-environment.png "LCS の環境ページ")
 
 1. **新しいアドインのインストール** リンクを選択します。 使用可能なアドインの一覧が表示されます。
 1. 一覧で **在庫の視覚化** を選択します。
@@ -166,7 +166,7 @@ Inventory Visibility Add-in をインストールするには、以下を実行�
     - **AAD アプリケーション (クライアント) ID**
     - **AAD テナント ID**
 
-    ![セットアップ ページに追加](media/inventory-visibility-setup.png "アドイン セットアップ ページ")
+    ![セットアップ ページに追加。](media/inventory-visibility-setup.png "アドイン セットアップ ページ")
 
 1. **使用条件** チェック ボックスを選択して、使用条件に同意します。
 1. **インストール** を選択します。 アドインの状態は、**インストール中** として表示されます。 完了したらページを更新して、状態が **インストール済み** に変わっているかを確認します。

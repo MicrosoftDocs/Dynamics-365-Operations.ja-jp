@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9ced76e20a54d61fe96b5d2a5118adb0c5eb7ccf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187919"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355703"
 ---
 # <a name="budgeting-home-page"></a>予算作成用のホーム ページ
 
@@ -32,7 +34,7 @@ ms.locfileid: "6187919"
 
 通常、会社のリソース予定サイクルは、計画、予算作成、予測活動で構成されます。
 
-[![予算作成機能コンポーネント](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![予算作成機能コンポーネント。](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 長期戦略的計画と年間予算計画の両方のプロセスは、予算計画ドキュメント経由でサポートされます。 予算計画ドキュメントは、Microsoft Excel と密に統合されています。 ユーザーは、無制限な金額と定量的なシナリオを構成することができ、予算作成の組織階層も定義してトップダウンとボトムアップの両方の予算作成方法をサポートできます。 予算をアプリケーションで設定し、承認した後、予算計画を予算登録エントリに変換します。 予算登録エントリは、予算を管理し、予算コード経由で追跡できる金額を維持するためのツールを提供します。 予算登録エントリでは、元の予算の変更、転送の実行、予算金額の前年度からの繰り越しができます。 決定した予算に基づいて、会社は予算管理を有効にすることができます。 管理レベルは、組織の文化と組織の成熟度レベルに依存します。 成熟度レベルの低い組織は、予算が目標を満たしていない場合、予算を "現状のまま" とし、プロアクティブよりリアクティブです。 組織によっては、予算財源が使用できない場合に、ユーザーが購入することを妨げる予算管理ポリシーを有効にすることもあります。
 
@@ -46,7 +48,7 @@ ms.locfileid: "6187919"
 -   [Excel の予算計画テンプレート](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>予算作成ツール
-[![予算作成ツール](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![予算作成ツール。](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 追加の計画機能および予算作成機能は使用可能で、元帳予算に統合されます。
 

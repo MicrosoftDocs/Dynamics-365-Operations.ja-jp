@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 35db2eb3e0da91207f08d16b8fb1bfa6a6bb8607
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304396"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345963"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>新しい ER ソリューションを設計してカスタム レポートを印刷する
 
@@ -123,15 +125,15 @@ ms.locfileid: "6304396"
 
 1. 既存のレポートを実行するには、**アンケート** \> **設計** \> **アンケート レポート** に移動してください。
 
-    ![アンケート モジュールでアンケート レポートのメニュー項目を選択し、既存の SSRS レポートを実行する](./media/er-quick-start1-application-menu-origin.png)
+    ![アンケート モジュールでアンケート レポートのメニュー項目を選択し、既存の SSRS レポートを実行します。](./media/er-quick-start1-application-menu-origin.png)
 
 2. **アンケート レポート** のダイアログ ボックスで、選択基準を指定します。 フィルターを適用するとレポートに、アンケート **SBCCrsExam** のみを表示させることができます。
 
-    ![アンケート レポートのダイアログ ボックスで、選択基準を指定する](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![アンケート レポートのダイアログ ボックスで、選択基準を指定します。](./media/er-quick-start1-ssrs-report-dialog.png)
 
 以下の図では、 アンケート **SBCCrsExam** で使用する SSRS レポートが生成されたバージョンを示しています。
 
-![生成済みの SSRS レポート](./media/er-quick-start1-ssrs-report.png)
+![生成済みの SSRS レポートです。](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a> ER フレームワークを構成
 
@@ -271,7 +273,7 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 
     以下の図は、**データ モデル デザイナー** ページ上の完成した編集可能なデータ モデルを示して います。
 
-    ![ER データ モデル デザイナーで構成されたデータ モデル](./media/er-quick-start1-model2.png)
+    ![ER データ モデル デザイナーで構成されたデータ モデルです。](./media/er-quick-start1-model2.png)
 
 7. 変更を保存します。
 8. **データ モデル デザイナー** ページを閉じます。
@@ -285,7 +287,7 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 
 この構成のバージョン 1 の状態 **下書き** から **完了** に変更されます。 バージョン 1 を変更することはできなくなります。 このバージョンには、構成済みのデータ モデルが含まれており、その他の ER の構成の基礎として使用できます。 この構成のバージョン2が作成され、状態が **下書き** になります。 このバージョンを編集して、**アンケート** データ モデルを調整することができます。
 
-![[構成] ページの編集可能な ER 構成のバージョン](./media/er-quick-start1-model-configuration.png)
+![構成ページの編集可能な構成のバージョンです。](./media/er-quick-start1-model-configuration.png)
 
 ER の構成に関する詳細情報については、 [電子レポート (ER) の概要](general-electronic-reporting.md#component-versioning) を参照してください。
 
@@ -439,7 +441,7 @@ ER ラベルを追加して、モデル マッピングを呼び出すコンテ�
 5. **テキストの翻訳** ダイアログ ボックスを閉じます。
 6. **キャンセル** を選択します。
 
-![編集可能なモデル マッピングへの ER ラベルの追加](./media/er-quick-start1-adding-labels.png)
+![編集可能なモデル マッピングに ER ラベルを追加します。](./media/er-quick-start1-adding-labels.png)
 
 既定の言語に対してのみ ER ラベルを入力しました。 ER ラベルを他の言語に翻訳する方法については、[多言語のレポートを設計する](er-design-multilingual-reports.md)を参照してください。
 
@@ -473,7 +475,7 @@ ER ラベルを追加して、モデル マッピングを呼び出すコンテ�
     8. **保存** を選択し、式エディターを閉じます。
     9. **OK** を選択して新しいデータ ソースを追加します。
 
-![ER モデル マッピング デザイナーで構成されたモデル マッピング](./media/er-quick-start1-added-data-sources.png)
+![ER モデル マッピング デザイナーで構成されたモデル マッピングです。](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>データ ソースをデータ モデル フィールドにバインドする
 
@@ -524,7 +526,7 @@ ER ラベルを追加して、モデル マッピングを呼び出すコンテ�
 
     以下の画面は、**モデル マッピング デザイナー** のページ上で構成されたモデル マッピングの最終的な状態を示して います。
 
-    ![ER モデル マッピング デザイナーで構成が完了したモデル マッピング](./media/er-quick-start1-mapping2.png)
+    ![ER モデル マッピング デザイナーで構成が完了したモデル マッピングです。](./media/er-quick-start1-mapping2.png)
 
 7. 変更を保存します。
 8. **モデル マッピング デザイナー** ページを閉じます。
@@ -538,7 +540,7 @@ ER ラベルを追加して、モデル マッピングを呼び出すコンテ�
 
 この構成のバージョン 1.1 の状態 **下書き** から **完了** に変更されます。 バージョン 1.1 を変更することはできなくなります。 このバージョンには、構成済みのモデル マッピングが含まれており、その他の ER の構成の基礎として使用できます。 この構成のバージョン 1.2 が作成され、状態が **下書き** になります。 このバージョンを編集して、**アンケート マッピング** の構成を調整することができます。
 
-![[構成] ページの編集可能な ER 構成のバージョン](./media/er-quick-start1-mapping-configuration.png)
+![構成ページの編集可能な ER 構成のバージョンです。](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > ご利用の財務に固有となる実装となり、**アンケート** 業務ドメインを表わす抽象データ モデルです。
@@ -552,17 +554,17 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 
 以下の図に示すように、ダウンロードしたテンプレートは、特定のアンケートの質問とその適切な回答を印刷する意図で設計されています。
 
-![指定されたアンケートを印刷する Excel テンプレート](./media/er-quick-start1-template-layout.png)
+![指定されたアンケートを印刷する Excel テンプレートです。](./media/er-quick-start1-template-layout.png)
 
 このテンプレートに Excel 名が追加され、アンケートの詳細が入力されます。 名前マネージャを使用すると、Excel の名前を確認できます。
 
-![名前マネージャを使用して入力だれた Excel テンプレートの名前を確認する](./media/er-quick-start1-template-names.png)
+![名前マネージャを使用して、提供された Excel テンプレートの Excel の名前を確認します。](./media/er-quick-start1-template-names.png)
 
 レポート ラベルは、英語では固定テキストとして追加されています。 構成されたモデル マッピングの言語依存の式を使用した場合と同様に、ER フォーマット[ラベル](#AddMmLabels)を使用して、ラベルに入力する新しい Excel 名をレポート ラベルに置き換えることができます。 この場合、ER ラベルを編集可能な形式で追加する必要があります。
 
 以下の画像のように、カスタム レポートのヘッダーを指定して、Excel が呼び出しできるようになっています。
 
-![Excel テンプレートのカスタム レポート ヘッダー](./media/er-quick-start1-template-header.png)
+![Excel テンプレートのカスタム レポート ヘッダーです。](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>形式のデザイン
 
@@ -612,11 +614,11 @@ ER フレームワークは、定義済みのテンプレートを使用して�
     2. ローカルに保存した **アンケート レポート template.xslx** ファイルを検索して選択し、**開く** を選択します。
     3. テンプレートをインポートするには、**OK** を選択します。
 
-    ![レポートのテンプレートをインポートする](./media/er-quick-start1-template-import.png)
+    ![レポートのテンプレートをインポートします。](./media/er-quick-start1-template-import.png)
 
 **Excel \\ファイル** フォーマットの要素は、自動的にルート要素として編集可能なフォーマットに追加されます。 さらに、**Excel \\範囲** フォーマットの要素、または **Excel \\セル** フォーマット要素のいずれかが、インポートされたテンプレートの認識された Excel 名ごとに自動的に追加されます。 **Excel\\ヘッダー** フォーマットで、**文字列** 要素がネストされているものは、インポートしたテンプレートのヘッダーの設定を反映して自動的に追加されます。
 
-![ER 工程デザイナーに自動追加された要素を含むフォーマットの構成](./media/er-quick-start1-template-import2.png)
+![ER 操作デザイナーに自動追加された要素を含むフォーマットの構成です。](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>フォーマットを構成する
 
@@ -627,12 +629,12 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 
     ER プロセスで使用する言語と文化のコンテキストを指定する方法については、[多言語のレポートを設計する](er-design-multilingual-reports.md)を参照してください。
 
-    ![ER 操作デザイナーで設計されたレポートの言語と文化の設定を構成する](./media/er-quick-start1-template-format-structure1.png)
+    ![ER 操作デザイナーで設計されたレポートの言語と文化の設定を構成します。](./media/er-quick-start1-template-format-structure1.png)
 
 5. フォーマット ツリーで、ルート ノードを展開し、続いて **ResultsGroup** を選択します。
 6. **フォーマット** タブの **レプリケーションの方向** フィールドで、**レプリケーションなし** を選択してください。この場合は、1つのアンケートに複数の結果グループが存在することを想定していないためです。
 
-    ![ER 操作デザイナーで範囲フォーマット要素のレプリケーション方向を定義する](./media/er-quick-start1-template-format-structure2.png)
+    ![ER 操作デザイナーで範囲フォーマット要素のレプリケーション方向を定義します。](./media/er-quick-start1-template-format-structure2.png)
 
 7. **保存** を選択します。
 
@@ -652,7 +654,7 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 
 5. 式エディターを閉じます。
 
-    ![バインドを構成して生成されたレポートのタイトルを入力する](./media/er-quick-start1-add-report-title-label.png)
+    ![バインドを構成して、生成されたレポートのタイトルを入力します。](./media/er-quick-start1-add-report-title-label.png)
 
 この手法を使用して、現在のテンプレートの他のすべてのラベルを言語依存にすることができます。 1つの ER 構成の追加ラベルを対応しているすべての言語に翻訳する方法については、[多言語のレポートを設計する](er-design-multilingual-reports.md)を参照してください。
 
@@ -662,7 +664,7 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 2. **編集** を選択します。
 3. **データ ソース プロパティ** ダイアログ ボックスの情報をを確認します。 このデータソースは、**アンケート** モデルの ER 構成に存在する **アンケート** データ モデル コンポーネントのバージョン 1 を表しています。
 
-![ER 操作デザイナー モデルデータ ソースのプロパティ](./media/er-quick-start1-model-data-source.png)
+![ER 操作デザイナーのモデルデータ ソースのプロパティです。](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>フォーマットの要素をデータ ソース フィールドにバインドする
 
@@ -678,11 +680,11 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 
     **アンケート** 範囲フォーマット要素は、垂直方向に複製されるように構成されています。 **レコード リスト** 型のデータソースにバインドすると、Excel テンプレートの適切な **アンケート** の範囲が、バインドされたデータソースのすべてのレコードに対して繰り返されます。
  
-    ![ER 操作デザイナーの適切なレコード リストのデータ ソースにアンケート範囲のフォーマット要素をバインドする](./media/er-quick-start1-bindings1.png)
+    ![ER 操作デザイナーの適切なレコード リストのデータ ソースにアンケート範囲のフォーマット要素をバインドします。](./media/er-quick-start1-bindings1.png)
 
     Excel テンプレートの **アンケート** 範囲は 5 から 14 行目までの間の定義されているため、これらの行は提出されたアンケートごとに繰り返されます。
 
-    ![レコード リストのデータ ソースの各レコードに対して、生成されたレポートで繰り返される Excel テンプレートの行](./media/er-quick-start1-template-questionnaire-range.png)
+    ![レコード リストのデータ ソースの各レコードに対して、生成されたレポートで繰り返される Excel テンプレートの行です。](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. 以下の表に示すように、残りのフォーマット要素にも同様のバインディングを設定してください。
 
@@ -718,7 +720,7 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 
 以下の画面は、**フォーマット デザイナー** ページ上で構成されたデータ バインディングの最終的な状態を示して います。
 
-![ER 操作デザイナーで構成されたデータ バインディング](./media/er-quick-start1-bindings2.png)
+![ER 操作デザイナーで構成されたデータ バインディングです。](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > 指定されたデータソースとバインディングの全体のコレクションは、構成されたフォーマットのフォーマット マッピング コンポーネントを表します。 このフォーマット マッピングは、レポート生成に向けて構成されたフォーマットを実行する際に呼び出されます。
@@ -738,9 +740,9 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 
 [既定](electronic-reporting-destinations.md#default-behavior)では、生成されたレポートは、ダウンロード可能な Excel ファイル形式で配信されます。 次の図は、生成されたレポートの2つのページを Excel 形式で示しています。
 
-![Excel フォーマットで生成されたレポートの例 (ページ1)](./media/er-quick-start1-report1a.png)
+![Excel フォーマットで生成されたレポートの例 (ページ 1) です。](./media/er-quick-start1-report1a.png)
 
-![Excel フォーマットで生成されたレポートの例 (ページ2)](./media/er-quick-start1-report1b.png)
+![Excel フォーマットで生成されたレポートの例 (ページ 2) です。](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>設計済みのフォーマットを調整する
 
@@ -761,7 +763,7 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 1. **フォーマット デザイナー** ページで、ルート項目 **レポート** を選択します。
 2. **マッピング** タブのフォーマット ツリーで、**レポート\\アンケート\\質問** を展開します。
 
-    ![ER 作業工程デザイナーにおける範囲タイプの質問フォーマット要素](./media/er-quick-start1-bindings3.png)
+    ![ER 操作デザイナーにおける範囲タイプの質問フォーマット要素です。](./media/er-quick-start1-bindings3.png)
 
 3. **マッピング** タブで、**model.Questionnaire** を選択します。
 4. **追加**\>**関数\\計算フィールド** を選択し、**Name** フィールドに **OrderedQuestions** と入力します。
@@ -774,7 +776,7 @@ ER フレームワークは、定義済みのテンプレートを使用して�
 11. **Bind** を選択し、 入れ子になった要素のすべてのバインディングで、現在の **model.Questionnaire.Questions** パスが新しい **model.Questionnaire.OrderedQuestions** パスに置き換えられていることを確認します。
 12. **保存** を選択します。
 
-![ER 操作デザイナーで、構成された OrderedQuestions データソースに アンケート フォーマット要素をバインドする](./media/er-quick-start1-bindings4.png)
+![ER 操作デザイナーで、構成された OrderedQuestions データソースに質問フォーマット要素をバインドします。](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>ER から修正済みのフォーマットを実行する
 
@@ -788,7 +790,7 @@ ER フレームワークから、テスト用に変更されたフィーマッ�
 
 次の図は、質問が正しい順番に並べられた Excel 形式の生成レポートを示しています。
 
-![質問を正しく並べ替えた Excel 形式のレポートを生成する](./media/er-quick-start1-report2.png)
+![質問を正しく並べ替えた Excel 形式のレポートを生成しました。](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>フォーマットの設計を完了する
 
@@ -799,7 +801,7 @@ ER フレームワークから、テスト用に変更されたフィーマッ�
 
 この構成のバージョン 1.1 の状態 **下書き** から **完了** に変更されます。 バージョン 1.1 を変更することはできなくなります。 このバージョンには、構成済のフォーマットが含まれており、カスタム レポートの印刷に使用できます。 この構成のバージョン 1.2 が作成され、状態が **下書き** になります。 このバージョンを編集して、**アンケート** レポートのフォーマットを調整することができます。
 
-![[構成] ページの編集可能な ER 構成のバージョン](./media/er-quick-start1-format-configuration.png)
+![構成ページの編集可能な ER 構成です。](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > 構成されたフォーマットは、**アンケート** レポートのデザインであり、財務固有のアーティファクトとの関係はありません。
@@ -1049,7 +1051,7 @@ Visual Studio プロジェクトに新しい **QuestionnairesErReport** メニ�
 
 1. **アンケート** \> **デザイン** \> **アンケート レポート (ER による実行)** に移動します。
 
-    ![アンケート モジュールのアンケート レポート (ER による実行) メニュー項目を選択して、構成された ER フォーマットが実行する](./media/er-quick-start1-application-menu-modified.png)
+    ![アンケート モジュールのアンケート レポート (ER による実行) メニュー項目を選択して、構成された ER フォーマットが実行します。](./media/er-quick-start1-application-menu-modified.png)
 
 2. ダイアログボックスの **フォーマットのマッピング** フィールドで、**アンケート レポート** を選択します。
 3. **OK** を選択します。
@@ -1057,7 +1059,7 @@ Visual Studio プロジェクトに新しい **QuestionnairesErReport** メニ�
 5. **OK** を選択してオプションを確認します。
 6. **OK** を選択してレポートを実行します。
 
-    ![電子レポートのダイアログ ボックスで、選択基準を指定する](./media/er-quick-start1-report-run-dialog-page.png)
+    ![電子レポートのダイアログ ボックスで、選択基準を指定します。](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. 生成されたレポートを確認します。
 
@@ -1082,7 +1084,7 @@ Visual Studio プロジェクトに新しい **QuestionnairesErReport** メニ�
 
 追加されたデータソースは、実行中の ER フォーマット マッピングのレコード ID に関する情報を提供します。
 
-![ER モデル マッピング デザイナーにデータソースを追加する](./media/er-quick-start1-mapping3.png)
+![ER モデル マッピング デザイナーにデータソースを追加します。](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>データ ソースを追加して ER フォーマット マッピング レコードにアクセスする
 
@@ -1117,7 +1119,7 @@ ER フォーマットのマッピング レコードへのアクセスに使用�
 
 **FormatName** フィールドを使用したため、構成されたモデル マッピングでは、実行中にこのモデル マッピングの呼び出しを行う ER フォーマットの名前を公開するようになります。
 
-![ER モデル マッピング デザイナーで追加されたデータソースのメソッドにデータ モデル フィールドをバインドする](./media/er-quick-start1-mapping4.png)
+![ER モデル マッピング デザイナーで追加されたデータソースのメソッドにデータ モデル フィールドをバインドします。](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>モデル マッピングを完了する
 
@@ -1154,7 +1156,7 @@ ER フォーマットのマッピング レコードへのアクセスに使用�
 
 構成されたフォーマットが、**フッター\\文字列** 要素を使用して、生成されたレポートのフッターにその名前を入力するよう変更されます。
 
-![ER 操作デザイナーで設定したフォーマットにフッター フォーマットの要素を追加する](./media/er-quick-start1-template-format-structure3.png)
+![ER 操作デザイナーで設定したフォーマットにフッター フォーマットの要素を追加します。](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>フォーマットの設計を完了する
 
@@ -1176,7 +1178,7 @@ ER フォーマットのマッピング レコードへのアクセスに使用�
 
 生成されたレポートのフッターには、生成に使用した ER フォーマットの名前が含まれることに注意してください。
 
-![Excel フォーマットで生成されたレポート](./media/er-quick-start1-report4.png)
+![Excel フォーマットで生成されたレポートです。](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>ER からフォーマットを実行する
 
@@ -1197,7 +1199,7 @@ ER フォーマットのマッピング レコードへのアクセスに使用�
 3. **ファイルの送信先** クイックタブで、構成済み ER フォーマット **アンケート レポート** のルート要素として [追加された](#AddFormatRootElement)**レポート** フォーマット コンポーネントの [送信先](er-destination-type-screen.md)**画面** を設定します。
 4. **PDF 変換設定** ファストタブで、送信先の構成を行い、レポートの印刷の向きを **横方向** に設定した[PDF フォーマット](electronic-reporting-destinations.md#OutputConversionToPDF)へと変換します。
 
-![電子レポートのカスタム画面送信先を設定して ER フォーマットの送信先を構成する](./media/er-quick-start1-destination.png)
+![電子レポートの送信先ページで、ER フォーマットのカスタム画面の送信先を構成します。](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>アプリケーションからフォーマットを実行して、PDF ドキュメントでプレビューする
 
@@ -1209,12 +1211,12 @@ ER フォーマットのマッピング レコードへのアクセスに使用�
 
     **宛先** クイック タブで、**出力** フィールドが  **画面** に設定されていることを確認します。 構成済の送信先を変更する場合は、**変更** を選択し ます。
 
-    ![ER レポートのランタイム ダイアログ ボックスで構成された送信先を変更する](./media/er-quick-start1-run-settings.png)
+    ![設定された送信先を変更できる ER レポートのランタイム ダイアログ ボックスです。](./media/er-quick-start1-run-settings.png)
 
 6. **OK** を選択してレポートを実行します。
 7. PDF フォーマットで生成されたレポートを確認してください。
 
-    ![PDF フォーマットで生成されたレポートの画面上でのレビュー](./media/er-quick-start1-preview-PDF.png)
+    ![PDF フォーマットで生成されたレポートの画面上でのレビューです。](./media/er-quick-start1-preview-PDF.png)
 
 ## <a name="additional-resources"></a><a name="References"></a>追加リソース
 

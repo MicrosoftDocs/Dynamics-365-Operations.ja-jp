@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b58a9345b83219296a3570e7bf653ef8624b7a1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894175"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357645"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>電子申告で生成される大きなドキュメントを圧縮する 
 
@@ -55,7 +55,7 @@ ms.locfileid: "5894175"
 1. [インポートされた形式の実行](er-defer-xml-element.md#run-the-imported-format)。
 2. XML 形式で生成されたドキュメントのサイズが 3 キロバイト (KB) であることに注意してください。
 
-    ![非圧縮送信ドキュメントのプレビュー](./media/er-compress-outbound-files1.png)
+    ![非圧縮送信ドキュメントのプレビュー。](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>生成された出力を圧縮するように形式を変更する
 
@@ -80,7 +80,7 @@ ms.locfileid: "5894175"
     > [!NOTE] 
     > この ZIP ファイルが保持する XML ファイルの圧縮率は 87% です。 圧縮率は、圧縮するデータによって異なります。
 
-    ![圧縮送信ドキュメントのプレビュー](./media/er-compress-outbound-files2.png)
+    ![圧縮送信ドキュメントのプレビュー。](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > 出力を生成する形式要素 (この例では **レポート** 要素) に ER [出力先](electronic-reporting-destinations.md) が構成されている場合、出力の圧縮がバイパスされます。

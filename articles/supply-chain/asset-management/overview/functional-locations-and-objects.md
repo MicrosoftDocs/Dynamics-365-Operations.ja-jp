@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa61f9ab9d38a748742733a4143e6d50b82caf4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816752"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351588"
 ---
 # <a name="functional-locations-and-assets"></a>機能的な場所と資産
 
@@ -34,13 +34,13 @@ ms.locfileid: "5816752"
 
 資産管理は、Finance and Operations アプリでいくつかのモジュールとシームレスに統合されています。 次の図は、他のモジュールとのインターフェイスを示しています。
 
-![他のモジュールとの資産管理インターフェイスを示す図](media/01-overview-image.png)
+![他のモジュールとの資産管理インターフェイスを示す図。](media/01-overview-image.png)
 
 資産管理を使用すると、社内のさまざまな種類の設備の管理とサービスに関連するすべてのタスクを効率的に管理および実行できます。 この設備には、機械、生産施設、および車両が含まれます。 資産管理は、さまざまな業界にわたるソリューションもサポートしています。
 
 次の図は、資産管理で対象となる主な機能の概要を示しています。
 
-![資産管理の主要機能を示す図](media/02-overview-image.png)
+![資産管理の主要機能を示す図。](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>機能の場所と資産
 
@@ -50,11 +50,11 @@ ms.locfileid: "5816752"
 
 機能的な場所の階層を構築する方法は、内部設備の管理や顧客設備の管理に関する会社の要件によって異なります。 次の図は、地理的な場所に基づく機能的な場所の例を示しています。
 
-![地理的な場所に基づく機能上の場所を示す図](media/03-overview-image.png)
+![地理的な場所に基づく機能上の場所を示す図。](media/03-overview-image.png)
 
 次の図は、顧客に基づく機能的な場所の例を示しています。
 
-![顧客に基づく機能上の場所を示す図](media/04-overview-image.png)
+![顧客に基づく機能上の場所を示す図。](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

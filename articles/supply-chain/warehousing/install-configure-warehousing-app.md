@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 913b20d73b87f03b4b1f80efdcf6e60bd07ce270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909382"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359488"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>倉庫アプリのインストールと接続
 
@@ -64,28 +64,28 @@ ms.locfileid: "5909382"
 1. Azure のサブスクリプションにアクセス可能なユーザー名とパスワードを入力します。
 1. Azure ポータル左側のナビゲーション ウィンドウで、**Azure Active Directory** を選択します。
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Azure AD Supply Chain Management が使用するインスタンスで作業をしていることを確認してください。
 1. **管理** の一覧で、**アプリの登録** を選択します。
 
-    ![アプリの登録](media/app-connect-azure-register.png "アプリの登録")
+    ![アプリの登録。](media/app-connect-azure-register.png "アプリの登録")
 
 1. ツールバーの **新規登録** を選択して、**アプリケーションの登録** ウィザードを開きます。
 1. アプリケーションの名前を入力し、**この組織ディレクトリ内のアカウントのみ** オプションを選択し、続いて **登録** を選択します。
 
-    ![アプリケーション ウィザードを登録する](media/app-connect-azure-register-wizard.png "アプリケーション ウィザードを登録する")
+    ![アプリケーション ウィザードを登録する。](media/app-connect-azure-register-wizard.png "アプリケーション ウィザードを登録する")
 
 1. 新しいアプリの登録が開きます。 後の手順で必要となるため、**アプリケーション (クライアント) ID** の値をメモしておきます。 この ID は後の手順で、*クライアント ID* として参照されます。
 
-    ![アプリケーション (クライアント) ID](media/app-connect-azure-app-id.png "アプリケーション (クライアント) ID")
+    ![アプリケーション (クライアント) ID。](media/app-connect-azure-app-id.png "アプリケーション (クライアント) ID")
 
 1. **管理** リストにて、**証明書 & シークレット** を選択します。 続いて、アプリの認証の構成方法に応じて、次のいずれかのボタンを選択します。 (詳細については、本トピックの後半に記載の[証明書またはクライアントシークレットのセクションを使用して認証をする](#authenticate)を参照してください。)
 
     - **証明書のアップロード** – 秘密に使用する証明書をアップロードします。 この方法は安全性が高い上に、より完全な自動化もできるため、この方法を推奨します。 Windows デバイスで倉庫アプリを実行している場合は、証明書をアップロードした後に表示される **サムプリント** 値を書き留めておきます。 この値は、Windows デバイスで証明書を構成する際に必要になります。
     - **新しいクライアント シークレット** – **パスワード** セクションにキーの説明と期間を入力してキーを作成し 、**追加** を選択します。 キーのコピーを作成し、安全に保管します。
 
-    ![証明書 & シークレット](media/app-connect-azure-authentication.png "証明書 & シークレット")
+    ![証明書 & シークレット。](media/app-connect-azure-authentication.png "証明書 & シークレット")
 
 Azure ADでの web サービス アプリケーションの設定方法の詳細については、次のリソースを参照してください:
 
@@ -105,7 +105,7 @@ Supply Chain Management を有効にして Azure AD アプリケーションを�
     1. ユーザーを作成します。
     1. 倉庫のモバイル デバイス ユーザーを割り当てます。
 
-    ![倉庫モバイル デバイスのユーザーを割り当てます。](media/app-connect-app-users.png "倉庫モバイル デバイスのユーザーを割り当てる")
+    ![倉庫のモバイル デバイス ユーザーを割り当てます。](media/app-connect-app-users.png "倉庫モバイル デバイスのユーザーを割り当てる")
 
 1. Azure AD アプリケーションと倉庫アプリのユーザーを関連付けます:
 
@@ -113,7 +113,7 @@ Supply Chain Management を有効にして Azure AD アプリケーションを�
     1. 行の作成を行います。
     1. 前述のセクションでメモしたクライアント ID を入力し、名前を付けて、作成したユーザーを選択します。 すべてのデバイスにタグ付けすることをお勧めします。 破棄された場合は、このページから Supply Chain Management へのアクセス権を簡単に削除できます。
 
-    ![Azure Active Directory アプリケーション](media/app-connect-aad-apps.png "Azure Active Directory アプリケーション")
+    ![Azure Active Directory アプリケーション。](media/app-connect-aad-apps.png "Azure Active Directory アプリケーション")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>証明書またはクライアント シークレットを使用した認証
 
@@ -201,26 +201,26 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 1. **接続設定** に移動します。
 1. **デモ モードを使用する** オプションを _いいえ_ に設定します。
 
-    ![デモ モードのオプションを使用する](media/app-connect-app-demo-mode.png "デモ モードのオプションを使用する")
+    ![デモ モードのオプションを使用する。](media/app-connect-app-demo-mode.png "デモ モードのオプションを使用する")
 
 1. **ファイルの選択** または c **QR コードのスキャン** を選択します (これは設定のインポート方法によって異なります)。
 
     - ファイルから接続設定をインポートしている場合で、保存時に既定の名前と既定の場所が使われていた場合、アプリがすでにファイルを検出している可能性があります。 それ以外の場合は、**ファイルの選択** を選択し、ローカルデバイスのファイルを参照して選択します。 ユーザー定義の場所を選択した場合は、その場所が保管され、次回自動的に使用されます。
     - QR コードをスキャンして接続の設定をインポートする場合は、**QR コードをスキャンする** を選択します。 アプリ上に、デバイスのカメラを使用するかどうかを確認するメッセージが表示されます。 アクセス許可を付与すると、カメラが起動し、スキャンに使用できるようになります。 デバイスのカメラの品質および QR コードの複雑さによっては、正しいスキャンの取得が困難な場合があります。 その場合は、1 つの QR コードにつき 1 つだけの接続を生成することで、QR コードの複雑性を軽減することを試してください。 (現時点では、QR コードのスキャンにはデバイスのカメラのみを使用できます)
 
-    ![接続設定のインポート](media/app-connect-app-select-file.png "接続設定のインポート")
+    ![接続設定のインポート。](media/app-connect-app-select-file.png "接続設定のインポート")
 
 1. 接続設定が正常に読み込まれたら、ページの左上隅にある **戻る** (左矢印) ボタンを選択します。
 
-    ![読み込まれた接続設定](media/app-connect-app-settings-loaded.png "読み込まれた接続設定")
+    ![読み込まれた接続設定。](media/app-connect-app-settings-loaded.png "読み込まれた接続設定")
 
 1. Android デバイスを使用していて、かつ認証に証明書を使用している場合は、デバイスにで証明書の選択を促す画面が表示されます。
 
-    ![Android デバイス上の証明書プロンプトを選択する](media/app-connect-app-choose-cert.png "Android デバイス上の証明書プロンプトを選択する")
+    ![Android デバイス上の証明書プロンプトを選択する。](media/app-connect-app-choose-cert.png "Android デバイス上の証明書プロンプトを選択する")
 
 1. アプリケーションが Supply Chain Management サーバーに接続し、サイン インページが表示されます。
 
-    ![サインイン ページ](media/app-connect-sign-in.png "サインイン ページ")
+    ![サインイン ページ。](media/app-connect-sign-in.png "サインイン ページ")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>アプリケーションを手動で構成する
 
@@ -230,11 +230,11 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 1. **接続設定** に移動します。
 1. **デモ モードを使用する** オプションを _いいえ_ に設定します。
 
-    ![デモ モードがオフになっています](media/app-connect-app-select-file.png "デモ モードがオフになっています")
+    ![デモ モードがオフになっています。](media/app-connect-app-select-file.png "デモ モードがオフになっています")
 
 1. **接続の選択** フィールドをタップして、接続の詳細を手動で入力するために必要な設定を展開します。
 
-    ![手動接続フィールド](media/app-connect-manual-connect.png "手動接続フィールド")
+    ![手動接続フィールド。](media/app-connect-manual-connect.png "手動接続フィールド")
 
 1. 次の情報を入力します。
 

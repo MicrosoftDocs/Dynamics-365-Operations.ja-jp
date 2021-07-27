@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6fd08d9a2522bdf497b1926c884a4583065d9f19
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01f7f032915a5e4170cae5e28a445081aef075fa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754377"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355373"
 ---
 # <a name="base64stringtocontainer-er-function"></a>Base64StringToContainer ER 関数
 
@@ -73,7 +73,7 @@ BASE64STRINGTOCONTAINER (input)
 
 この例では、**\#MediaAsBase64String** データ ソースは、現在のメディア添付ファイルのバイナリ コンテンツを、バイナリからテキストへのエンコード スキームの Base64 グループを表すテキストとしてエンコードします。 **\#BlobFomBase64** データ ソースは、Base64 文字列をデコードし、BLOB 形式のバイナリ値を返します。
 
-![ER モデル マッピング デザイナー ページのサンプル データ ソース](./media/er-functions-container-base64stringtocontainer-1.png)
+![ER モデル マッピング デザイナー ページのサンプル データ ソース。](./media/er-functions-container-base64stringtocontainer-1.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

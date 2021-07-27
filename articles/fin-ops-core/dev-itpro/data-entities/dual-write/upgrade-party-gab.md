@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 6662b6cad53c832e15fb27b435e277840afd8097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112676"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346549"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>当事者およびグローバル アドレス帳モデルへのアップグレード
 
@@ -89,7 +89,7 @@ ms.locfileid: "6112676"
 
 10. 配置後に、データ ファクトリのデータセット、データ フロー、およびリンクされたサービスを検証します。
 
-   ![データセット、データ フロー、およびリンクされたサービス](media/data-factory-validate.png)
+   ![データセット、データ フロー、およびリンクされたサービス。](media/data-factory-validate.png)
 
 11. **管理** に移動します。 **接続** で、**リンクされたサービス** を選択します。 **DynamicsCrmLinkedService** を選択します。 **リンクされたサービスの編集 (Dynamics CRM)** フォームに、次の値を入力します。
 
@@ -154,7 +154,7 @@ ms.locfileid: "6112676"
 
 7. データ ファクトリーで、次の図に示すように **今すぐトリガーする** を選択してテンプレートを実行します。 このプロセスは、データ量に基づいて完了に数時間かかる場合があります。
 
-    ![トリガーの実行](media/data-factory-trigger.png)
+    ![トリガーの実行。](media/data-factory-trigger.png)
 
     > [!NOTE]
     > **取引先企業**、**連絡先**、および **仕入先** をカスタマイズする場合は、テンプレートを変更する必要があります。
@@ -164,7 +164,7 @@ ms.locfileid: "6112676"
     + Azure Blob Storage から `FONewParty.csv` ファイルをダウンロードします。 パスは `partybootstrapping/output/FONewParty.csv` です。
     + `FONewParty.csv` ファイルを Excel ファイルに変換し、Excel ファイルを Finance and Operations アプリにインポートします。 csv インポートが機能する場合は、csv ファイルを直接インポートできます。 データ量によっては、インポートの実行に数時間かかる場合があります。 詳細については、[データのインポート ジョブとエクスポート ジョブの概要](../data-import-export-job.md)を参照してください。
 
-    ![Datavers 当事者レコードのインポート](media/data-factory-import-party.png)
+    ![Datavers 当事者レコードのインポート。](media/data-factory-import-party.png)
 
 9. Customer Engagement アプリで、次のプラグイン ステップを有効にします:
 
@@ -199,7 +199,7 @@ ms.locfileid: "6112676"
 3. データ ファクトリは、コンマ区切りされた csv ファイルに基づいて実行されます。 コンマを含むフィールド値がある場合は、結果に影響が出る場合があります。 コンマを削除する必要があります。
 4. **監視** タブでは、すべてのステップおよび処理済みデータに関する情報が提供されます。 特定の手順を選択してデバッグします。
 
-    ![監視タブ](media/data-factory-monitor.png)
+    ![監視タブ。](media/data-factory-monitor.png)
 
 ## <a name="learn-more-about-the-template"></a>テンプレートの詳細を確認する
 

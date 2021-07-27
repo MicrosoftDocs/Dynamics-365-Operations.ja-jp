@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5ac36f536003b9945ffbdcae12de2582e80634a3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8642f7d92a9c0ca69ad4965fd3a8219e57278ed1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813366"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359176"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>有効な作業指示書メンテナンス ジョブの概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "5813366"
 
 次の図は、**有効な作業指示書のメンテナンス作業** リスト ページの例を示しています。
 
-![図 1](media/23-work-orders.png)
+![図 1。](media/23-work-orders.png)
 
 **有効な作業指示書のメンテナンス作業** リスト ページのボタンの簡単な説明に関しては、同じボタンについて説明されている[作業指示書の概要](../work-orders/introduction-to-work-orders.md) を参照してください。
 

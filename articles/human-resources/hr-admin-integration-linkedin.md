@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b8c1467368cbcbed5049561b52b29388ec21a5f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055103"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360595"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn タレント ハブとの統合
 
@@ -48,7 +48,7 @@ LinkedIn タレント ハブとの統合を有効にするには、システム�
 
 5. **Dynamics 365 Human Resources** ページで、LinkedIn タレント ハブをリンクする環境を選択し、**リンク** を選択します。
 
-    ![LinkedIn タレント ハブのオンボード](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn タレント ハブのオンボード。](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > ユーザー アカウントに Human Resources 環境と関連する Power Apps 環境の両方への管理者アクセス権がある環境にのみリンクできます。 Human Resources リンク ページに環境が表示されない場合は、テナントに Human Resources 環境のライセンスがあることと、リンク ページにサインインしたユーザーに Human Resources 環境と Power Apps 環境の両方に対する管理者権限があることを確認してください。
@@ -91,7 +91,7 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 
 6. 一覧上にあるドロップダウン メニューを使用して、ビューを既定の **有効なユーザー** ビューから **アプリケーション ユーザー** に変更します。
 
-    ![アプリケーション ユーザー ビュー](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![アプリケーション ユーザー ビュー。](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. ツール バーの **新規** を選択します。
 
@@ -163,7 +163,7 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
     - **場所** フィールドに、従業員が拠点とする場所を入力します。
     - 従業員の電子メール アドレスを入力または確認します。
 
-![LinkedIn タレント ハブの HRIS ペインにエクスポート](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![LinkedIn タレント ハブの HRIS ペインにエクスポート。](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Human Resources でのオンボードの完了
 

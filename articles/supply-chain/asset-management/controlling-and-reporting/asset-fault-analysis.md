@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a26ee80eb52e40b60ace9b1494b3512d85f04cfe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 913e5cf8d39dfe36efea0526d84808e7d736b030
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837876"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361159"
 ---
 # <a name="asset-fault-analysis"></a>資産エラー分析
 
@@ -60,7 +60,7 @@ ms.locfileid: "5837876"
 - エラー登録は、"空気漏れ"、"ヒューズが飛んだ"、および "機器が詰まった" という 3 つのエラー現象に関して行われました。  
 - **確度 %** 列では、すべての割合が 100% に設定されています。 確度は、このエラー分析内のすべての **現象** 登録に基づきます。
 
-![図 1](media/06-controlling-and-reporting.png)
+![図 1。](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>現象および期間別にグループ化
 
@@ -69,7 +69,7 @@ ms.locfileid: "5837876"
 - エラー現象が、年/月単位の登録として表示されます。  
 - **確度 %** 列では、各月のすべての割合を加算すると、合計 100% になります。 確度は、このエラー分析内の **現象** 登録に基づきます。 資産に多数の明細行があっても、1 つの明細行で大きな割合が目立っている場合、それはエラー現象の兆候であり、そのエラー現象に対する登録数を制限する方法を探すためのより詳細な調査が必要になります。
 
-![図 2](media/07-controlling-and-reporting.png)
+![図 2。](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>複数の現象および資産別にグループ化
 
@@ -84,7 +84,7 @@ ms.locfileid: "5837876"
 - エラー現象が **資産** / **資産タイプ** / **現象** の組み合わせで分割されるようになります。  
 - **確度 %** 列では、**資産** / **資産タイプ** / **現象** の組み合わせのすべての割合をそれぞれ加算すると、各々が 100% になります。 確度は、このエラー分析内の **現象** 登録に基づきます。 資産に多数の明細行があっても、1 つの明細行で大きな割合が目立っている場合、それはエラー現象の兆候であり、そのエラー現象に対する登録数を制限する方法を探すためのより詳細な調査が必要になります。
 
-![図 3](media/08-controlling-and-reporting.png)
+![図 3。](media/08-controlling-and-reporting.png)
 
 **2 つの現象、資産、および資産タイプ別にグループ化**
 
@@ -92,7 +92,7 @@ ms.locfileid: "5837876"
 
 - **確度 %** 列では、資産で **資産** / **資産タイプ** / **現象** の組み合わせのすべての割合を加算すると、それぞれが 100% になります。 確度は、このエラー分析内の **現象** および **領域** の組み合わせに基づきます。 資産に多数の明細行があっても、1 つの明細行で大きな割合が目立っている場合、それはエラー領域の兆候であり、そのエラー領域に対する登録数を制限する方法を探すためのより詳細な調査が必要になります。  
 
-![図 4](media/09-controlling-and-reporting.png)
+![図 4。](media/09-controlling-and-reporting.png)
 
 **3 つの現象、資産、および資産タイプ別にグループ化**
 
@@ -100,7 +100,7 @@ ms.locfileid: "5837876"
  
 - **確度 %** 列では、資産で **資産** / **資産タイプ** / **現象** の組み合わせのすべての割合を加算すると、それぞれが 100% になります。 確度は、このエラー分析内の **現象**、**領域**、および **タイプ** の組み合わせに基づきます。 資産に多数の明細行があっても、1 つの明細行で大きな割合が目立っている場合、それはエラー タイプの兆候であり、そのエラー タイプに対する登録数を制限する方法を探すためのより詳細な調査が必要になります。
 
-![図 5](media/10-controlling-and-reporting.png)
+![図 5。](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]

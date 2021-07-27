@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 33ed1c7f69fa92bbd123042a139dd8fd0ee3e73a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754091"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361404"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>二重書き込みの見込顧客を現金化
 
@@ -33,7 +33,7 @@ ms.locfileid: "5754091"
 
 アプリ インターフェイスでは、処理のステータスおよび請求書情報にリアル タイムでアクセスできます。 したがって、見積と注文を再作成することなく、Supply Chain Management の製品在庫、在庫処理、およびフルフィルメントなどの機能をより簡単に管理することができます。
 
-![見込顧客を現金化への二重書き込みデータフロー](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![見込顧客を現金化への二重書き込みデータフロー。](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 顧客と連絡先の統合については、[統合された顧客マスター](customer-mapping.md) を参照してください。 成果物統合については、[統一された製品経験](product-mapping.md) を参照してください。
 
@@ -48,7 +48,7 @@ ms.locfileid: "5754091"
 
 Sales で、**設定 \> 管理 \> システム設定 \> 販売** の順にクリックし、次の設定が使用されていることを確認してください。
 
-- **システム プライジング計算の使用** システム オプションが、**はい** に設定されています。
+- **システム価格計算を使用** システム オプションが、**はい** に設定されています。
 - **割引の計算方法** 列が、**明細行品目** に設定されている。
 
 ### <a name="sites-and-warehouses"></a>サイトと倉庫

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: Platform update 42
-ms.openlocfilehash: d0b12908993070a41d21ac57d6fb504fc6e3b06a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: f236f861434eb2eaa26eab92e25a0b83a8026972
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053518"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357340"
 ---
 # <a name="reset-stuck-batch-jobs"></a>行き詰まったバッチ ジョブのリセット
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Human Resources では、**実行中** または **キャ
 
 5. **新しいステータスの選択** ページで、**待機中** を選択してから、**OK** を選択します。
 
-   ![新しいバッチ ジョブ ステータスの選択](./media/hr-admin-reset-batch-job-status.png)
+   ![新しいバッチ ジョブ ステータスの選択。](./media/hr-admin-reset-batch-job-status.png)
 
 ## <a name="see-also"></a>参照
 

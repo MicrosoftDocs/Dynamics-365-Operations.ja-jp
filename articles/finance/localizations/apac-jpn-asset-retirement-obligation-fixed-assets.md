@@ -14,12 +14,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84484ec8317ab19f62fc0997d1e9874f789ab853
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 06c725dd885d7145f254074e160540948fb3f50c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834374"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359288"
 ---
 # <a name="set-up-asset-retirement-obligation-for-fixed-assets-for-japan"></a>日本の固定資産の資産償却責務を設定します。
 
@@ -40,7 +40,7 @@ ms.locfileid: "5834374"
 > [!NOTE]
 >\* 手順 2 と 3 が、固定資産の耐用年数全体に複数回繰り返されます。
 
-![ARO トランザクションの T 字勘定での表示](./media/aro-t-account.png) 
+![ARO トランザクションの T 字勘定での表示。](./media/aro-t-account.png) 
 
 ## <a name="setup-information"></a>設定情報
 ARO を使用するには、次の設定手順を完了する必要があります。

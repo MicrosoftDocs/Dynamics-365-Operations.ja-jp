@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: a138fd4b525077f12f6575f4b10f682728b71203
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b89c3feb9287b6f445b1dff7252899532df8819
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361222"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Regulatory Configuration Services (RCS) で ER の構成を作成し、グローバル リポジトリにアップロードする
 
@@ -51,7 +51,7 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 5. 名前と説明を入力し、**構成の作成** を選択して、新たな派生バージョンを作成します。
 6. 新たに派生した構成を選択し、バージョンの説明を追加して、**OK** を選択します。 構成先のステータスが **完了** に変更されます。
 
-![RCS における新たな構成のバージョン](media/RCS_CompleteConfig.JPG)
+![RCS における新たな構成のバージョン。](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > 構成のステータスが変更されると、接続されているアプリケーションに関連した検証のエラーメッセージが表示される場合があります。 検証を無効にするには、**構成** タブのアクション ウィンドウで、**ユーザーパラメーター** を選択し、**設定のステータス変更時に検証をスキップしてリベースする** オプションを **はい** に設定します 
@@ -63,7 +63,7 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 1. 構成の完成バージョンを選択し、**リポジトリにアップロード** を選択します。
 2. **グローバル (Microsoft)** オプションを選択し、**アップロード** を選択します。
 
-    ![リポジトリ オプションへのアップロード](media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![リポジトリ オプションへのアップロード。](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. 確認のメッセージ ボックスで、**はい** を選択します。 
 4. 必要に応じてバージョンの説明を更新し、**OK** を選択します。 
@@ -73,7 +73,7 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 - Dynamics 365 のインスタンスにインポートします。 詳細については、[(ER) RCS から構成をインポートする](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) を参照してください。
 - サード パーティや外部の組織と共有する場合は、[RCS 電子レポート (ER) の構成を外部組織と共有する](rcs-global-repo-share-configuration.md)を参照してください
 
-    ![グローバル リポジトリの イントラスタット Contoso の構成バージョンが派生されました](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![グローバル リポジトリのイントラスタット Contoso の構成バージョンが派生されました。](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## <a name="delete-a-configuration-from-the-global-repository"></a>グローバル リポジトリから構成を削除する
 組織で作成した構成を削除するには、次の手順を実行します。
@@ -84,11 +84,11 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 4. **フィルター** クイック タブで、**フィルター** 機能を使用して削除する構成を見つけます。
 5. **バージョン** クイック タブで、削除する構成のバージョンを選択し、**削除** を選択します。
 
-    ![グローバル リポジトリから構成を削除する](media/RCS_Delete_from_GlobalRepo.JPG)
+    ![グローバル リポジトリから構成を削除する。](media/RCS_Delete_from_GlobalRepo.JPG)
 
 6. 確認のメッセージ ボックスで、**はい** を選択します。
 
-    ![構成バージョン確認メッセージの削除](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+    ![構成バージョン確認メッセージの削除。](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
 構成バージョンが削除され、確認メッセージが表示されます。 
 

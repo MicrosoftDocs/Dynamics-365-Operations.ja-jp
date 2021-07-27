@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 742c6d1b713b8669dcc3544cf84eb340e3e9293b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015856"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360403"
 ---
 # <a name="set-up-consignment"></a>委託販売の設定
 
@@ -61,7 +61,7 @@ USMF は追加の定期的なプロセスを実行します:
 
 **所有者** 分析コードは、仕入先が所有する在庫および受領する法人によって所有される在庫に関する情報を区別するために使用されます。 委託販売補充明細行は、明細行の全数量を入庫またはキャンセルされない限り、**オープン注文** ステータスになります。 全数量を入庫またはキャンセルされた場合は、ステータスは **完了** に変更されます。 委託販売補充注文に関連する現物手持在庫は、製品受領更新プロセスと共に登録プロセスを使用して記録できます。 登録は品目到着プロセスの一部として、または手動で注文明細行を更新することができます。 製品受領更新プロセスを使用すると、レコードは仕入先に商品の受領を確認するのに使用できる製品受領書仕訳帳で作成されます。
 
-[![委託販売補充注文](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![委託販売補充注文。](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>在庫所有権変更仕訳
 
@@ -74,7 +74,7 @@ USMF は追加の定期的なプロセスを実行します:
 
 注文が作成された後、委託販売注文明細行の数量を更新することはできません。
 
-[![在庫所有権変更仕訳](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![在庫所有権変更仕訳帳。](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>委託販売プロセスでの仕入先コラボレーション
 
@@ -90,13 +90,13 @@ USMF は追加の定期的なプロセスを実行します:
 
 現物入庫の委託販売の在庫を記録するには、仕入先の所有者を定義する必要があります。 これは、**在庫所有者** のページで行われます。 **仕入先口座** を選択すると、**名前** と **所有者** のフィールドの規定値が生成されます。 **所有者** フィールドの値が仕入先に表示されるので、仕入先口座名が外部ユーザーに認識されにくい場合は変更することができます。 **所有者** フィールドを編集できますが、**在庫所有者** 記録を保存する時点までです。 **名前** フィールドには、仕入先口座が関連付けられている当事者名を入力できますが、変更できません。
 
-[![在庫所有者](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![在庫所有者。](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>追跡用分析コード グループ
 
 委託販売プロセスで使用される品目は、**所有者** 分析コードが **有効** に設定されている **追跡用分析コード グループ** に関連付けられている必要があります。 所有者分析コードは、常に **現物在庫** と **資産在庫** オプションが選択されます。 **分析コード別補充計画** は選択されません。
 
-[![追跡用分析コード グループ](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![追跡用分析コード グループ。](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

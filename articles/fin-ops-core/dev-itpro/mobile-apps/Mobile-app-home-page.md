@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 272853
+ms.custom: intro-internal
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 469b03151f3113f44d932a2d6f4bf3fcfa059133
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: e13e99515d52e1e24970908a106ae99a7e8b0d80
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188413"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360819"
 ---
 # <a name="mobile-app-home-page"></a>モバイル アプリのホーム ページ
 
@@ -39,7 +39,7 @@ ms.locfileid: "6188413"
 ## <a name="elements-of-the-mobile-app"></a>モバイル アプリの要素
 モバイル アプリのナビゲーションは、ダッシュボード、ワークスペース、ページ、およびアクションという 4 つの基本概念で構成されています。 
 
-[![モバイル アプリのナビゲーション概念](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![モバイル アプリのナビゲーション概念。](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. アプリを起動すると、**ダッシュボード** に移動します。
 2. ダッシュボードでは、公開された **ワークスペース** の一覧が表示されます。
@@ -53,7 +53,7 @@ ms.locfileid: "6188413"
 ## <a name="implementation-process"></a>実装プロセス
 次の図では、Microsoft に提供されるモバイル ワークスペースとカスタム モバイル ワークスペースの両方を実装するためのプロセスを表示します。 
 
-[![モバイル アプリの実装プロセス](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![モバイル アプリの実装プロセス。](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 次の表には、Microsoft によって提供されるモバイル ワークスペースとカスタム モバイル ワークスペースの両方を実装する際に役立つリソースへのリンクが含まれています。 最初の列の番号は、前述の図の番号付きの手順に対応します。
 

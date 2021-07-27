@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7d0f505ce49bc9be0d027cbb0d636c9de0600b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 75f41db74512ea758a83de56ffd2a9166712f5e2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804456"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352279"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>パーソナライズされた推奨事項のオプトアウト
 
@@ -44,11 +44,11 @@ Commerce バック オフィスのアカウント管理では、小売業者は�
 1. バックオフィスのホームページから、**すべての顧客** を検索します。
 1. 顧客を検索して選択し、**小売** クイックタブを選択します。
 
-    ![小売クイックタブ](./media/Disablepersonalizationpart1.png)
+    ![小売クイックタブ。](./media/Disablepersonalizationpart1.png)
 
 1. **プライバシー** で、**個人用設定を無効にする** オプションを **はい** に設定します。
 
-    ![プライバシー設定](./media/Disablepersonalizationpart2.png)
+    ![プライバシー設定。](./media/Disablepersonalizationpart2.png)
 
 1. **保存** を選択して、ページを閉じます。
 

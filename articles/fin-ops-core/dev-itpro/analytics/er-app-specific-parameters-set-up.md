@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9276a633d560bc95c868b9c12438b4f625ed169a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751157"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351893"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>法人ごとの ER 形式のパラメーターの設定
 
@@ -49,7 +49,7 @@ ms.locfileid: "5751157"
     
     次の図は、完了時に必要なコンフィギュレーションを示します。
 
-    ![ER コンフィギュレーション ページ](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![ER コンフィギュレーション ページ。](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## <a name="set-up-parameters-for-the-demf-company"></a>DEMF 会社のパラメーターの設定
 
@@ -59,7 +59,7 @@ ER フレームワークを使用して、ER 形式のアプリケーション�
 2.  コンフィギュレーション ツリーで、**LE データの参照方法を知るための形式** 形式を選択します。
 3.  アクション ウィンドウの、**コンフィギュレーション** タブの、**アプリケーション固有パラメーター** グループで、**設定** を選択します。
 
-    ![ER アプリケーション固有パラメーター ページ](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![ER アプリケーション固有パラメーター ページ。](./media/GER-AppSpecParms-LookupForm.PNG)
     
     **アプリケーション固有パラメーター** ページで、**LE データの参照方法を知るための形式** 形式の **セレクター** データソースに関するルールをコンフィギュレーションできます。
     
@@ -75,14 +75,14 @@ ER フレームワークを使用して、ER 形式のアプリケーション�
 
     ルックアップでは、選択する税コードの一覧が表示されます。 このリストは、基本の ER 形式でコンフィギュレーションされた **Model.Data.Tax** データ ソースにより返されます。 このデータ ソースには **名前** フィールドが含まれているため、各税コードの名前がルックアップに表示されます。
 
-    ![ER アプリケーション固有パラメーター ページ](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![ER アプリケーション固有パラメーター ページ。](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  **VAT19** 税コードを選択します。
 8.  新しいレコードの **ルックアップの結果** フィールドで、ドロップダウン矢印を選択し、ルックアップを開きます。 ルックアップにより、選択する TaxationLevel format 形式列挙の値の一覧が表示されます。
 
     サインインしているユーザーの優先言語としてドイツ語が選択されている場合、基本の ER 形式で翻訳されていれば、ルックアップの値のラベルはドイツ語になります。 さらに、ルックアップ データ ソースのラベルが翻訳されている場合、そのラベルは **ルックアップ** タブのユーザーの優先言語で表示されます。
 
-    ![ER アプリケーション固有パラメーター ページ](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![ER アプリケーション固有パラメーター ページ。](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  **通常の課税** 値を選択します。
 
@@ -120,7 +120,7 @@ ER フレームワークを使用して、ER 形式のアプリケーション�
     
     この最後のレコードを追加することにより、次のルールを定義します: 引数として渡された税コードが前述のルールのいずれも満たさない場合、ルックアップ データ ソースは、要求された課税レベルとして **その他** を返します。
 
-    ![ER アプリケーション固有パラメーター ページ](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![ER アプリケーション固有パラメーター ページ。](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. **ステータス** フィールドで **完了** を選択します。
 
@@ -144,7 +144,7 @@ ER フレームワークを使用して、ER 形式のアプリケーション�
 6.  **InVAT7** 税コードを選択します。
 7.  アクション ウィンドウの、**売上税コード** タブの、**照会** グループで、**転記済売上税** を選択して、税コードごとに適用された税額と税率に関する情報を表示します。
 
-    ![転記済売上税ページ](./media/GER-AppSpecParms-Statement.PNG)
+    ![転記済売上税ページ。](./media/GER-AppSpecParms-Statement.PNG)
 
 8.  転記済売上税ページを閉じます。
 
@@ -160,7 +160,7 @@ ER フレームワークを使用して、ER 形式のアプリケーション�
 
     このルックアップでは、選択する **USMF** 会社税の税コードの一覧が表示されるようになります。
 
-    ![ER アプリケーション固有パラメーター ページ](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![ER アプリケーション固有パラメーター ページ。](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  **EXEMPT** 税コードを選択します。
 9.  新しいレコードの **ルックアップの結果** フィールドで、**非課税** 値を選択します。
@@ -170,7 +170,7 @@ ER フレームワークを使用して、ER 形式のアプリケーション�
 13. **ステータス** フィールドで **完了** を選択します。
 14. **保存** を選択します。
 
-    ![ER アプリケーション固有パラメーター ページ](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![ER アプリケーション固有パラメーター ページ。](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15. **アプリケーション固有パラメーター** ページを閉じます。
 
@@ -225,13 +225,13 @@ ER 形式とアプリケーション固有のパラメーター間の関係は�
 
 1.  既存の **ERSolutionAppSpecificParametersDesigner** メニュー項目を再利用するか、または独自の **ERSolutionAppSpecificParametersDesigner** メニュー項目を実装します。
 
-    ![Visual Studio ページ](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual Studio ページ。](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  次の手順のいずれかを実行します。
 
     1.  新しいメニュー項目ボタンを作成し、**データ ソース** プロパティを **ERSolutionTable** に設定することにより **ERSolutionTable** テーブルから対応するレコードにリンクします。
     
-        ![Visual Studio ページ](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual Studio ページ。](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  簡易ボタンを作成し、次の例に示すように **クリック済** メソッドを上書きします。
     

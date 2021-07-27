@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: bdca4d63fbe04a01cf1bbf2ccd7b095d4718a115
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 1beb706812aea0898b2bce9fc9aefa4541bb8924
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910308"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360853"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 
@@ -38,7 +38,7 @@ ms.locfileid: "5910308"
 
 見込み客の現金化ソリューションは、Supply Chain Management と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Supply Chain Management と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。 次の図は、Supply Chain Management と Sales の間でデータを同期させる方法を示しています。
 
-[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![見込み客の現金化へのデータフロー。](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>テンプレートおよびタスク
 
@@ -130,15 +130,15 @@ Sales では、値が Supply Chain Management に同期されていないため�
 
 ### <a name="quoteheader"></a>QuoteHeader
 
-![データ インテグレーターでテンプレートのマッピング](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
+![データ インテグレーターのテンプレート マッピング。](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="quoteline"></a>QuoteLine
 
-![データ インテグレーターでテンプレートのマッピング](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
+![データ インテグレーターのテンプレート マッピング。](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
 ## <a name="related-topics"></a>関連トピック
 
-[見込顧客を現金化](prospect-to-cash.md)
+[見込顧客の現金化](prospect-to-cash.md)
 
 
 

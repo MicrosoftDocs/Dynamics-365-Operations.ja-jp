@@ -10,7 +10,7 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
             - name: プレビュー サブスクリプションのサインアップ
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
-            - name: One Version のサービス更新
+            - name: 1 つのバージョンのサービス更新
               items:
                 - name: 1 つのバージョンのサービス更新の概要
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
@@ -246,8 +246,6 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: エジプト用電子請求の使用を開始する
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: イタリア用電子請求の使用を開始する
-                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: メキシコ用電子請求の使用を開始する
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 電子請求の設定
@@ -1607,6 +1605,8 @@
                   href: master-planning/planning-optimization/get-started.md
                 - name: 計画最適化適合分析
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: 計画の最適化で使用されないパラメーター
+                  href: master-planning/planning-optimization/not-used-parameters.md
                 - name: 計画にフィルターを適用
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: 需要予測を使用したマスター プラン
@@ -1621,6 +1621,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: 生産計画
                   href: master-planning/planning-optimization/production-planning.md
+                - name: 無限能力を使用したスケジューリング
+                  href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: 計画最適化を使用した在庫マーキング
                   href: master-planning/planning-optimization/marking.md
                 - name: 会社間計画
@@ -1861,6 +1863,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 承認ステップのコンフィギュレーション
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 支出確認者のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 手動決定のコンフィギュレーション
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 条件付き意思決定のコンフィギュレーション

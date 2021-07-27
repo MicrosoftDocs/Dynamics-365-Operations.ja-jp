@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 31df79159caa1094a68743ba07f308a2029e4071
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0aa172550f86a9918a9aaa811e49cb20e7befcdb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832647"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359252"
 ---
 # <a name="rcs-enhanced-filtering-options-for-finding-configurations-in-the-rcsglobal-repository"></a>RCS では、RCS/グローバル リポジトリで構成を見つけるフィルタリング オプションを強化しました
 
@@ -36,11 +36,11 @@ ms.locfileid: "5832647"
 
 特定の構成や関連する構成を見つけやすくするために、個別に、またはグループとしてフィルタを適用することができます。 例えば、「仕入先請求書に関連する構成可能なビジネス文書」という単一のタイプの文書を検索するには、**ビジネス ドキュメント タイプ** のフィルタを適用することで、そのタイプの文書を検索することができます。 
 
-[![グローバル レポジトリのフィルター セクション](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG) 
+[![グローバル レポジトリのフィルター セクション。](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG) 
 
 [仕入先請求書] などのドキュメントタイプを選択し、**フィルターの適用** をクリックすることで、検索をさらに絞り込むことができます。 次の例では、**ビジネス ドキュメント タイプ** でフィルター処理した場合の結果を表示します。 
 
-[![フィルターを適用してビジネス ドキュメント タイプをインポートする](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
+[![フィルターを適用してビジネス ドキュメント タイプをインポートする。](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 フィルタ処理された結果は、個別に、またはセットとして、ユーザーの RCS リポジトリまたは Dynamics 365 Finance 環境にインポートできます。 これを行うには、構成のグループを選択し、**インポート** をクリックします。
 

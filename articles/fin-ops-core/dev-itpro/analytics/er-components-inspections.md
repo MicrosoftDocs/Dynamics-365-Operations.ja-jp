@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 309e613b707222920936d5af995ac57c4c423b40
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753843"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357669"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 
@@ -242,7 +242,7 @@ ER では、データ モデル フィールドのデータ型が、そのフィ
 1. ER データ モデルと ER モデル マッピング コンポーネントの構成を同時に開始します。
 2. データ モデル ツリーで、**X** という名前のフィールドを追加 し、データ型として **整数** を選択します。
 
-    ![データ モデル ページのデータ モード ツリーに追加された X フィールドおよび整数データ型](./media/er-components-inspections-01.png)
+    ![データ モデル ページのデータ モード ツリーに追加された X フィールドおよび整数データ型です。](./media/er-components-inspections-01.png)
 
 3. モデル マッピング デザイナーの、**データ ソース** ペインで、**計算済みフィールド** タイプのデータ ソースを追加します。
 4. 新しいデータソースに **Y** と名前を付けて、式 `INTVALUE(100)` を含むように構成します。
@@ -250,17 +250,17 @@ ER では、データ モデル フィールドのデータ型が、そのフィ
 6. データ モデル デザイナーで、**X** フィールドのデータ型を **整数** から **Int64** に変更します。
 7. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査します。
 
-    ![モデル マッピング デザイナー ページで編集可能なモデル マッピング コンポーネントを検証する](./media/er-components-inspections-01.gif)
+    ![モデル マッピング デザイナー ページで編集可能なモデル マッピング コンポーネントを検証します。](./media/er-components-inspections-01.gif)
 
 8. **検証** を選択して、**構成** ページで選択した ER 構成のモデル マッピング コンポーネントを検査します。
 
-    ![構成ページでモデル マッピング コンポーネントを検査する](./media/er-components-inspections-01a.png)
+    ![構成ページでモデル マッピング コンポーネントを検査します。](./media/er-components-inspections-01a.png)
 
 9. 検証エラーが発生することに注意してください。 このメッセージは、**Y** データ ソースの `INTVALUE(100)` 式が返す **整数** タイプの値を、**Int64** タイプの **X** データ モデル フィールドに格納できないことを示しています。
 
 次の図は、警告を無視し、**実行** を選択して、モデル マッピングを使用するように構成された形式を実行した場合に発生するランタイム エラーを示しています。
 
-![フォーマット デザイナー ページのランタイム エラー](./media/er-components-inspections-01b.png)
+![形式デザイナー ページのランタイム エラーです。](./media/er-components-inspections-01b.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 
@@ -290,7 +290,7 @@ ER では、形式要素のデータ型が、その形式要素のバインド�
 6. 形式構造ツリーで、**Y** 形式要素のデータ型を **整数** から **Int64** に変更します。
 7. **検証** を選択して、**形式デザイナー** ページで編集可能な形式コンポーネントを検査します。
 
-    ![形式デザイナー ページでタイプの互換性を検証する](./media/er-components-inspections-02.gif)
+    ![形式デザイナー ページでタイプの互換性を検証します。](./media/er-components-inspections-02.gif)
 
 8. 検証エラーが発生することに注意してください。 メッセージは、構成済みの式が **Int64** 値のみを受け入れることができることを示しています。 したがって、**整数** タイプの **X** データ モデル フィールドの値を **Y** 形式要素に入力することはできません。
 
@@ -317,7 +317,7 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 1. ER データ モデルと ER モデル マッピング コンポーネントの構成を同時に開始します。
 2. データ モデル ツリーで、**X** という名前のフィールドを追加 し、データ型として **整数** を選択します。
 
-    ![データ モデル ページに X フィールドと整数データ型があるデータ モード ツリー](./media/er-components-inspections-01.png)
+    ![データ モデル ページに X フィールドと整数データ型があるデータ モード ツリーです。](./media/er-components-inspections-01.png)
 
 3. モデル マッピング デザイナーの、**データ ソース** ペインで、**計算済みフィールド** タイプのデータ ソースを追加します。
 4. 新しいデータソースに **Y** と名前を付けて、式 `INTVALUE(100)` を含むように構成します。
@@ -325,7 +325,7 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 6. モデル マッピング デザイナーの、**データ ソース** ペインで、**Y** データ ソースを削除します。
 7. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査します。
 
-    ![モデル マッピング デザイナー ページで編集可能な ER モデル マッピング コンポーネントを検査する](./media/er-components-inspections-03.gif)
+    ![モデル マッピング デザイナー ページで編集可能な ER モデル マッピング コンポーネントを検査します。](./media/er-components-inspections-03.gif)
 
 8. 検証エラーが発生することに注意してください。 メッセージは、**X** データ モデル フィールドのバインドに **Y** データソースを参照するパスが含まれているが、このデータ ソースは見つからないことを示しています。
 
@@ -359,13 +359,13 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 8. 新しい入れ子になったフィールドに **$AccNumber** と名前を付けて、式 `TRIM(Vendor.AccountNum)` を含むように構成します。
 9. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査し、**Vendor** データ ソースの `FILTER(Vendor, Vendor.AccountNum="US-101")` 式を照会できることを確認します。
 
-    ![モデル マッピング デザイナー ページで式を照会できることを確認する](./media/er-components-inspections-04.gif)
+    ![モデル マッピング デザイナー ページで式を照会できることを確認します。](./media/er-components-inspections-04.gif)
 
 10. **Vendor** データ ソースには、**FilteredVendor** データソースの式を直接 SQL ステートメントに変換できない **計算済フィールド** タイプの入れ子になったフィールドが含まれているため、検証エラーが発生することに注意してください。
 
 次の図は、警告を無視し、**実行** を選択して、モデル マッピングを使用するように構成された形式を実行した場合に発生するランタイム エラーを示しています。
 
-![形式デザイナー ページで編集可能な形式を実行したときに発生するランタイム エラー](./media/er-components-inspections-04a.png)
+![形式デザイナー ページで編集可能な形式を実行したときに発生するランタイム エラーです。](./media/er-components-inspections-04a.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 
@@ -396,23 +396,23 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
     - グループ化するレコードのソースとして **Trans** データ ソースを選択します。
     - **実行場所** フィールドで **クエリ** を選択し、このデータ ソースをデータベース レベルで実行することを指定します。
 
-    !['Group By' パラメーターの編集ページでデータ ソースの構成](./media/er-components-inspections-05a.gif)
+    !['Group By' パラメーターの編集ページでデータ ソースを構成します。](./media/er-components-inspections-05a.gif)
 
 6. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査し、構成済み **GroupedTrans** データ ソースを照会できることを確認します。
 7. **計算済フィールド** タイプの入れ子になったフィールドを追加して、**Trans** データ ソースを変更し、トリムされた仕入先番号を取得します。
 8. 新しいデータ ソースに **$AccNumber** と名前を付けて、式 `TRIM(Trans.AccountNum)` を含むように構成します。
 
-    ![モデル マッピング デザイナー ページでのデータ ソースの構成](./media/er-components-inspections-05a.png)
+    ![モデル マッピング デザイナー ページでデータ ソースを構成します。](./media/er-components-inspections-05a.png)
 
 9. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査し、構成済み **GroupedTrans** データ ソースを照会できることを確認します。
 
-    ![ER モデル マッピング コンポーネントを検証し、GroupedTrans データ ソースをモデル マッピング デザイナ ページで照会できることを確認する](./media/er-components-inspections-05b.png)
+    ![ER モデル マッピング コンポーネントを検証し、GroupedTrans データ ソースをモデル マッピング デザイナ ページで照会できることを確認します。](./media/er-components-inspections-05b.png)
 
 10. **Trans** データ ソースには、**GroupedTrans** データソースの呼び出しを直接 SQL ステートメントに変換できない **計算済フィールド** タイプの入れ子になったフィールドが含まれているため、検証エラーが発生することに注意してください。
 
 次の図は、警告を無視し、**実行** を選択して、モデル マッピングを使用するように構成された形式を実行した場合に発生するランタイム エラーを示しています。
 
-![形式デザイナー ページで警告を無視したときに発生するランタイム エラー](./media/er-components-inspections-05c.png)
+![形式デザイナー ページで警告を無視したときに発生するランタイム エラーです。](./media/er-components-inspections-05c.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 
@@ -448,21 +448,21 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
     2. **Vendor.FilteredTrans** データ ソースを、結合するレコードの 2 番目のセットとして追加します。 タイプとして **INNER** を選択します。
     3. **実行** フィールドで **クエリ** を選択し、このデータ ソースをデータベース レベルで実行することを指定します。
 
-    ![Join デザイナー ページでのデータ ソースの構成](./media/er-components-inspections-06a.gif)
+    ![結合デザイナー ページでデータ ソースを構成します。](./media/er-components-inspections-06a.gif)
 
 10. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査し、構成済み **JoinedList** データ ソースを照会できることを確認します。
 11. **Vendor.FilteredTrans** データ ソースの式を `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` から `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` に変更します。
 12. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査し、構成済み **JoinedList** データ ソースを照会できることを確認します。
 
-    ![編集可能なモデル マッピング コンポーネントを検証し、モデル マッピング デザイナー ページで JoinedList データ ソースを照会できることを確認する](./media/er-components-inspections-06b.png)
+    ![編集可能なモデル マッピング コンポーネントを検証し、モデル マッピング デザイナー ページで JoinedList データ ソースを照会できることを確認します。](./media/er-components-inspections-06b.png)
 
 13. **Vendor.FilteredTrans** データ ソースの式を直接 SQL 呼び出しに変換できないため、検証エラーが発生することに注意してください。 さらに、直接 SQL 呼び出しでは、**JoinedList** データソースに対する呼び出しを、直接 SQL ステートメントに変換することはできません。
 
-    ![モデル マッピング デザイナー ページで JoinedList データ ソースの検証に失敗したため発生したランタイム エラー](./media/er-components-inspections-06c.png)
+    ![モデル マッピング デザイナー ページで JoinedList データ ソースの検証に失敗したため発生したランタイム エラーです。](./media/er-components-inspections-06c.png)
 
 次の図は、警告を無視し、**実行** を選択して、モデル マッピングを使用するように構成された形式を実行した場合に発生するランタイム エラーを示しています。
 
-![形式デザイナー ページで編集可能な形式を実行する](./media/er-components-inspections-06e.png)
+![形式デザイナー ページで編集可能な形式を実行します。](./media/er-components-inspections-06e.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 
@@ -474,7 +474,7 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 
 警告に従って、**Vendor.FilteredTrans** データ ソースの式を `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` から `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` に戻します。
 
-![モデル マッピング デザイナー ページでデータ ソースの式を更新](./media/er-components-inspections-06d.png)
+![モデル マッピング デザイナー ページでデータ ソースの式を更新しました。](./media/er-components-inspections-06d.png)
 
 #### <a name="option-2"></a>オプション 2
 
@@ -497,11 +497,11 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 9. 新しいデータ ソースに **FilteredVendor** と名前を付けて、式 `WHERE(Vendor, Vendor.AccountNum="US-101")` を含むように構成します。
 10. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査します。
 
-    ![モデル マッピング デザイナー ページで編集可能なモデル マッピング コンポーネントを検査する](./media/er-components-inspections-07a.png)
+    ![モデル マッピング デザイナー ページで編集可能なモデル マッピング コンポーネントを検査します。](./media/er-components-inspections-07a.png)
 
 11. 検証の警告は、**FilteredVendor** および **FilteredTrans** データソースに対して **WHERE** 関数ではなく **FILTER** 機能を使用することを推奨しています。
 
-    ![モデル マッピング デザイナー ページで、WHERE 関数の代わりに FILTER 関数を使用することへのレコメンデーション](./media/er-components-inspections-07b.png)
+    ![モデル マッピング デザイナー ページで、WHERE 関数の代わりに FILTER 関数を使用することへのレコメンデーションです。](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 
@@ -509,7 +509,7 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 
 または、グリッドで 1 つの警告の行を選択し、**選択した修正** を選択することもできます。 この場合、式は、選択された警告で説明されているデータ ソースでのみ自動的に変更されます。
 
-![モデル マッピング デザイナー ページで WHERE 関数が FILTER 関数に自動的に置き換えられるように修正を選択する](./media/er-components-inspections-07c.png)
+![モデル マッピング デザイナー ページで WHERE 関数が FILTER 関数に自動的に置き換えられるように修正を選択します。](./media/er-components-inspections-07c.png)
 
 ### <a name="manual-resolution"></a>手動解決
 
@@ -530,11 +530,11 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 7. 新しいデータ ソースに **FilteredVendorTrans** と名前を付けて、式 `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')` を含むように構成します。
 8. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査します。
 
-    ![モデル マッピング デザイナー ページで編集可能なモデル マッピング コンポーネントを検査する](./media/er-components-inspections-08a.png)
+    ![モデル マッピング デザイナー ページで編集可能なモデル マッピング コンポーネントを検査します。](./media/er-components-inspections-08a.png)
 
 9. 検証警告が発生することに注意してください。 このメッセージでは、**FilteredVendorTrans** データ ソースに **ALLITEMS** 関数の代わりに **ALLITEMSQUERY** 関数を使用することを推奨しています。
 
-    ![モデル マッピング デザイナー ページで、ALLITEMS 関数の代わりに ALLITEMSQUERY 関数を使用することへのレコメンデーション](./media/er-components-inspections-08b.png)
+    ![モデル マッピング デザイナー ページで、ALLITEMS 関数の代わりに ALLITEMSQUERY 関数を使用することへのレコメンデーションです。](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 
@@ -542,7 +542,7 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 
 または、グリッドで 1 つの警告の行を選択し、**選択した修正** を選択することもできます。 この場合、式は、選択された警告で説明されているデータ ソースでのみ自動的に変更されます。
 
-![モデル マッピング デザイナー ページで選択した修正を選択する](./media/er-components-inspections-08c.png)
+![モデル マッピング デザイナー ページで選択した修正を選択します。](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>手動解決
 
@@ -563,7 +563,7 @@ ER 形式またはモデル マッピング コンポーネントを構成して
     - **文字列** タイプの入れ子になったフィールドを追加し、**Name** と名前を付けます。
     - **文字列** タイプの入れ子になったフィールドを追加し、**AccountNumber** と名前を付けます。
 
-    ![データ モデル ページで入れ子になったフィールドの追加](./media/er-components-inspections-09a.png)
+    ![データ モデル ページで入れ子になったフィールドを追加します。](./media/er-components-inspections-09a.png)
 
 6. モデル マッピング デザイナーの、**データ ソース** ペインで、**Dynamics 365 for Operations \\ テーブル レコード** タイプのデータ ソースを追加します。
 7. 新しいデータ ソースに **Vendor** と名前を付けます。 **テーブル** フィールドで、**VendTable** を選択して、このデータ ソースが VendTable テーブルを要求するように指定します。
@@ -577,7 +577,7 @@ ER 形式またはモデル マッピング コンポーネントを構成して
     - **FilteredVendor.AccountNum** を **Vendor.AccountNumber** にバインドします。
     - **FilteredVendor.'name()'** を **Vendor.Name** にバインドします。
 
-    ![モデル マッピング デザイナー ページでのデータ モデル項目のバインド](./media/er-components-inspections-09b.png)
+    ![モデル マッピング デザイナー ページでデータ モデル項目をバインドします。](./media/er-components-inspections-09b.png)
 
 13. 形式構造ツリーで、次の項目を追加して、仕入先の詳細を含む送信ドキュメントを XML 形式で生成します:
 
@@ -595,15 +595,15 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 
 15. **検証** を選択して、**形式デザイナー** ページで編集可能な形式コンポーネントを検査します。
 
-    ![形式デザイナー ページでデータ ソースにバインドした形式要素を検証する](./media/er-components-inspections-09c.png)
+    ![形式デザイナー ページでデータ ソースにバインドした形式要素を検証します。](./media/er-components-inspections-09c.png)
 
 16. 検証エラーが発生することに注意してください。 メッセージは、`model.Vendor` リストが空の場合、実行時に、構成済みの **Statement\\Party\\Name** と **Statement\\Party\\AccountNum** に対してエラーがスローされる可能性があることを示しています。
 
-    ![構成済みの形式コンポーネントの潜在的なエラーに関する検証エラー](./media/er-components-inspections-09d.png)
+    ![構成済みの形式コンポーネントの潜在的なエラーに関する検証エラーです。](./media/er-components-inspections-09d.png)
 
 次の図は、警告を無視し、**実行** を選択して形式を実行し、存在しない仕入先のアカウント番号を選択した場合に発生するランタイム エラーを示しています。 要求された仕入先が存在しないため、`model.Vendor` リストは空になります (つまり、レコードが含まれていません)。
 
-![形式マッピングの実行中に発生するランタイム エラー](./media/er-components-inspections-09e.png)
+![形式マッピングの実行中に発生するランタイム エラーです。](./media/er-components-inspections-09e.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 
@@ -615,7 +615,7 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 
 **Statement\\Party\\Name** 形式要素を `model.Vendor` データ ソース項目にバインドできます。 実行時に、このバインドは `model.Vendor` データ ソースを最初に呼び出します。 `model.Vendor` が、空のレコード リストを返す場合、入れ子になった形式要素は実行されません。 したがって、この形式構成に対して検証警告は発生しません。
 
-![形式デザイナー ページで形式要素をデータ ソース項目にバインドする](./media/er-components-inspections-09e.gif)
+![形式デザイナー ページで形式要素をデータ ソース項目にバインドします。](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>オプション 2
 
@@ -626,7 +626,7 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 
 したがって、**Statement\\Party\\Name** の形式要素が、`FIRSTORNULL(model.Vendor).Name` 式にバインドされても、検証の警告は発生しません。
 
-![変更されたバインドにより、形式デザイナー ページで検証の警告を解決する](./media/er-components-inspections-09f.gif)
+![変更されたバインドにより、形式デザイナー ページで検証の警告を解決します。](./media/er-components-inspections-09f.gif)
 
 #### <a name="option-3"></a>オプション 3
 
@@ -653,17 +653,17 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 7. 新しいデータ ソースに **FilteredVendor** と名前を付けて、式 `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)` を含むように構成します。
 8. 構成済み **Vendor** データ ソースをキャッシュとしてマークします。
 
-    ![モデル マッピング デザイナー ページでモデル マッピング コンポーネントを構成する](./media/er-components-inspections-10a.gif)
+    ![モデル マッピング デザイナー ページでモデル マッピング コンポーネントを構成します。](./media/er-components-inspections-10a.gif)
 
 9. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査します。
 
-    ![モデル マッピング デザイナー ページで、キャッシュされた 仕入先のデータ ソースに適用された FILTER 機能を検証する](./media/er-components-inspections-10a.png)
+    ![モデル マッピング デザイナー ページで、キャッシュされた仕入先のデータ ソースに適用された FILTER 関数を検証します。](./media/er-components-inspections-10a.png)
 
 10. 検証エラーが発生することに注意してください。 このメッセージは、**FILTER** 関数が、キャッシュされた **Vendor** データ ソースに適用できないことを示しています。
 
 次の図は、警告を無視し **実行** を選択して、形式を実行した場合に、発生するランタイム エラーを示しています。
 
-![形式デザイナー ページで形式マッピングの実行中に発生するランタイム エラー](./media/er-components-inspections-10b.png)
+![形式デザイナー ページで形式マッピングの実行中に発生するランタイム エラーです。](./media/er-components-inspections-10b.png)
 
 ### <a name="automatic-resolution&quot;></a>自動解決
 
@@ -694,7 +694,7 @@ ER 形式コンポーネントを構成する場合、基本 ER データ モデ
     - **文字列** タイプの入れ子になったフィールドを追加し、**Name** と名前を付けます。
     - **文字列** タイプの入れ子になったフィールドを追加し、**AccountNumber** と名前を付けます。
 
-    ![データ モデル ページの仕入先項目に入れ子になったフィールドを追加する](./media/er-components-inspections-11a.png)
+    ![データ モデル ページの仕入先項目に入れ子になったフィールドを追加します。](./media/er-components-inspections-11a.png)
 
 6. モデル マッピング デザイナーの、**データ ソース** ペインで、**Dynamics 365 for Operations \\ テーブル レコード** タイプのデータ ソースを追加します。
 7. 新しいデータ ソースに **Vendor** と名前を付けます。 **テーブル** フィールドで、**VendTable** を選択して、このデータ ソースが VendTable テーブルを要求するように指定します。
@@ -710,7 +710,7 @@ ER 形式コンポーネントを構成する場合、基本 ER データ モデ
     > [!NOTE]
     > **Vendor.Name** データ モデル フィールドはバインド解除されたままです。
 
-    ![構成されたデータ ソースにバインドされたデータ モデル項目と、モデル マッピング デザイナー ページにバインドされていないデータ モード項目](./media/er-components-inspections-11b.png)
+    ![構成されたデータ ソースにバインドされたデータ モデル項目と、モデル マッピング デザイナー ページにバインドされていないデータ モード項目です。](./media/er-components-inspections-11b.png)
 
 13. 形式構造ツリーで、次の項目を追加して、照会される仕入先の詳細を含む送信ドキュメントを XML 形式で生成します:
 
@@ -729,15 +729,15 @@ ER 形式コンポーネントを構成する場合、基本 ER データ モデ
 
 15. **検証** を選択して、**形式デザイナー** ページで編集可能な形式コンポーネントを検査します。
 
-    ![形式デザイナー ページで ER 形式コンポーネントを検証する](./media/er-components-inspections-11c.png)
+    ![形式デザイナー ページで ER 形式コンポーネントを検証します。](./media/er-components-inspections-11c.png)
 
 16. 検証警告が発生することに注意してください。 メッセージは、**model.Vendor.Name** データ ソース フィールドが、形式で使用するように構成されているモデル マッピングのデータ ソースにバインドされていないことを示しています。 したがって、**Statement\\Party\\Name** 形式要素が実行時に入力されず、ランタイム例外が発生する可能性があります。
 
-    ![形式デザイナー ページで ER 形式コンポーネントを検証する](./media/er-components-inspections-11d.png)
+    ![形式デザイナー ページで ER 形式コンポーネントを検証します。](./media/er-components-inspections-11d.png)
 
 次の図は、警告を無視し **実行** を選択して、形式を実行した場合に、発生するランタイム エラーを示しています。
 
-![形式デザイナー ページでの編集可能な形式の実行](./media/er-components-inspections-11e.png)
+![形式デザイナー ページで編集可能な形式を実行します。](./media/er-components-inspections-11e.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 
@@ -766,7 +766,7 @@ ER 形式コンポーネントを構成する場合、基本 ER データ モデ
 5. **Excel\\File** 要素で 、ブック ファイル A を選択します。
 6. **検証** を選択して、**形式デザイナー** ページで編集可能な形式コンポーネントを検査します。
 
-    ![形式デザイナー ページでブック ファイルの編集可能な形式コンポーネントを検証する](./media/er-components-inspections-12a.gif)
+    ![形式デザイナー ページでブック ファイルの編集可能な形式コンポーネントを検証します。](./media/er-components-inspections-12a.gif)
 
 7. 検証警告が発生することに注意してください。 メッセージは、ブック ファイル B.xlsx がどのコンポーネントにもリンクされておらず、構成バージョンの状態が変更された後に削除されることを示しています。
 
@@ -794,11 +794,11 @@ Excel テンプレートを使用して送信ドキュメントを生成する�
 4. **Excel\\Cell** 要素 **Title** を **Report** 要素の入れ子になった要素として追加します。 **Excel の範囲** フィールドに、**ReportTitle** を入力します。
 5. **検証** を選択して、**形式デザイナー** ページで編集可能な形式コンポーネントを検査します。
 
-    ![形式デザイナー ページで入れ子になった要素とフィールドを検証する](./media/er-components-inspections-13a.png)
+    ![形式デザイナー ページで入れ子になった要素とフィールドを検証します。](./media/er-components-inspections-13a.png)
 
 6. 検証警告が発生することに注意してください。 メッセージは、名前 **ReportTitle** が、使用している Excel テンプレートのシート **Sheet1** に存在しないことを示しています。
 
-    ![Excel テンプレートの Sheet1 に名前 ReportTitle が存在しないという検証警告](./media/er-components-inspections-13b.png)
+    ![Excel テンプレートの Sheet1 に名前 ReportTitle が存在しないという検証警告です。](./media/er-components-inspections-13b.png)
 
 ### <a name="automatic-resolution"></a>自動解決
 

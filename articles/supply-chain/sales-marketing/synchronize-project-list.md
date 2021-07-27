@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5cb7f8b9a3107a7787c787ace71ab574457b1646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb98f266a217fc16c56c38e2480b85f529fb1862
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828494"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359840"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service へのプロジェクト リストの同期
 
@@ -29,7 +29,7 @@ ms.locfileid: "5828494"
 
 このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service にプロジェクトを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 次のテンプレートと基本的なタスクは、Supply Chain Management から Field Service にプロジェクトの同期を実行するために使用されます。
@@ -63,7 +63,7 @@ ms.locfileid: "5828494"
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>プロジェクト (Supply Chain Management から Field Service): プロジェクト
 
-[![データ統合のテンプレートのマッピング](./media/FSProject1.png)](./media/FSProject1.png)
+[![データ統合のテンプレートのマッピング。](./media/FSProject1.png)](./media/FSProject1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
-ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
+ms.openlocfilehash: d68587a88b52e95d1e11c64b9a2d51dbc8b70561
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5963242"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357417"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure ストレージ アカウントとキー コンテナーの作成
 
@@ -49,7 +49,7 @@ ms.locfileid: "5963242"
 5. **ポリシーの追加** を選択して、保存されているアクセス ポリシーを追加します。
 6. 必要に応じて、 **識別子** フィールドと **アクセス許可** フィールドを設定します。 **キーのアクセス許可** フィールドで、すべてのアクセス許可を選択します。
 
-    ![Blob ストレージのアクセス許可を付与する](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
+    ![Blob ストレージのアクセス許可を付与します。](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. 開始日と有効期限を入力します。 有効期限は未来の日付にする必要があります。
 8. **OK** をクリックしてポリシーを保存し、変更をコンテナーに保存します。
@@ -57,7 +57,7 @@ ms.locfileid: "5963242"
 10. コンテナーを右クリックし、**共有アクセス署名の取得** を選択します。
 11. **共有アクセス署名** ダイアログ ボックスで、**URI** フィールドに値をコピーして格納します。 この値は、次の手順で使用され、*共有アクセス署名 URI* として参照されます。
 
-    ![URI 値の選択とコピー](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+    ![URI 値を選択してコピーします。](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>キー コンテナーを設定し、ストレージ アカウントの URI を格納する
 
@@ -69,11 +69,11 @@ ms.locfileid: "5963242"
 6. アクセス ポリシーを設定して、作成したシークレットへの正しいレベルのセキュアなアクセスを電子請求に付与します。 **設定 \>アクセス ポリシー** に移動し 、**アクセス ポリシーの追加** を選択します。
 7. **取得** と **一覧** の操作に、秘密のアクセス許可を設定します。
 
-    ![サービス アクセスの付与](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
+    ![サービス アクセスを付与します。](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
 8. **取得** と **一覧** の操作に、証明書のアクセス許可を設定します。
 
-    ![証明書のアクセス許可の付与](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
+    ![証明書のアクセス許可を付与します。](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. **プリンシパルの選択** フィールドで、**選択なし** を選択します。
 10. **プリンシパル** ダイアログ ボックスで、**電子請求書サービス** を追加してプリンシパルを選択します。

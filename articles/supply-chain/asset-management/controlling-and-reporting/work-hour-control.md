@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ac64b0e40662f30cc615dfbd3f05aba5b37d862
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 88ae7faabe7af25f6e3b95c7217d91e440c94da2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838661"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346205"
 ---
 # <a name="work-hour-control"></a>作業時間の管理
 
@@ -66,7 +66,7 @@ ms.locfileid: "5838661"
 - **実際の時間** フィールドには、ワーク オーダーの転記済時間が表示されます。 
 - **確定済み時間** フィールドには、ワーク オーダーに関連して会社が確定した時間の合計量が表示されます。
 
-![資産時間管理計算の例](media/04-controlling-and-reporting.png)
+![資産時間管理計算の例。](media/04-controlling-and-reporting.png)
 
 時間計算を行う別の方法は、**すべての資産** または **有効な資産** で複数の資産を選択することです。 その後、**一般** クイック タブの **時間管理** ボタンをクリックします。 選択した資産は、**対象に含めるレコード** クイック タブの **資産** フィールドに自動的に挿入されます。 **資産時間管理** ダイアログで **OK** をクリックすると、選択した資産の計算が表示されます。 同じ手順を、**すべての機能的な場所** または **有効な機能的な場所** の機能的な場所、および **すべてのワーク オーダー** または **有効なワーク オーダー** のワーク オーダーに対して実行できます。
 

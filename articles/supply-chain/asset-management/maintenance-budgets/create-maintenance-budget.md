@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b91b398c4ef864a92a5318b7e80f71a5a572844e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 75deb3dcca2c5a7fd7341b30411e04715bf27c29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836761"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361189"
 ---
 # <a name="create-maintenance-budgets"></a>メンテナンス予算の作成
 
@@ -50,7 +50,7 @@ ms.locfileid: "5836761"
     > [!NOTE]
     > メンテナンス予算を承認した後、最初に承認を削除しない限り、**メンテナンス予算行** ページの関連する明細行を再計算または調整することはできません。 メンテナンス予算の承認を削除するには、**メンテナンス予算** ページで予算を選択し、**承認** を選択します。 次に、**予算の承認** ダイアログ ボックスで、**OK** を選択します。
 
-![メンテナンス予算](media/01-maintenance-budgets.png)
+![メンテナンス予算。](media/01-maintenance-budgets.png)
 
 既存の予算をコピーして新しいメンテナンス予算を作成することもできます。 **メンテナンス予算** ページで、コピーする予算を選択をし、次に **コピー** を選択します。 この方法は、たとえば、1 か月分の予算を作成していて、それを他の月にコピーする場合などに役立ちます。
 
