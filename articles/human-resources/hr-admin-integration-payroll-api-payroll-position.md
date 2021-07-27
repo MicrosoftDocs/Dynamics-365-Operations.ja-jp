@@ -13,18 +13,26 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8918044dbf84e79015dc3bca904f204123a37db8
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e13a6b3608802eb7bb2bc00686c2e914cc765587
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056783"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314168"
 ---
 # <a name="payroll-position"></a>給与職位
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources における職位エンティティの給与詳細に対するクエリの詳細および例を示します。
+このトピックでは、Dynamics 365 Human Resources の給与職位のエンティティについて説明します。
+
+物理名: mshr_payrollpositionentity。
+
+### <a name="description"></a>説明
+
+このエンティティは、特定の従業員の職位に関連する情報を提供します。
+
+現物名。 
 
 ## <a name="properties"></a>プロパティ
 
@@ -41,7 +49,7 @@ ms.locfileid: "6056783"
 | **失効日**<br>validto<br>*日時オフセット* | 読み取り専用<br>必須 |職位の詳細が有効になる日付。  |
 | **発効日**<br>validfrom<br>*日時オフセット* | 読み取り専用<br>必須 |職位の詳細が有効な日付。  |
 
-**クエリ**
+## <a name="example-query"></a>クエリの例
 
 **申請**
 
@@ -53,15 +61,21 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollpositionentities?$filter=mshr_po
 
 ```json
 {
-            "mshr_positionid": "000276",
-            "mshr_paycycleid": "w",
-            "mshr_annualregularhours": 3000,
-            "mshr_paidbylegalentity": "USMF",
-            "mshr_validfrom": "2021-03-14T00:00:00Z",
-            "mshr_validto": "2154-12-31T00:00:00Z",
-            "mshr_primaryfield": "000276 | 3/14/2021",
-            "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
-            "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
-            "mshr_payrollpositionentityid": "00010097-0000-0000-df00-014105000000"
+    "mshr_positionid": "000276",
+    "mshr_paycycleid": "w",
+    "mshr_annualregularhours": 3000,
+    "mshr_paidbylegalentity": "USMF",
+    "mshr_validfrom": "2021-03-14T00:00:00Z",
+    "mshr_validto": "2154-12-31T00:00:00Z",
+    "mshr_primaryfield": "000276 | 3/14/2021",
+    "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
+    "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
+    "mshr_payrollpositionentityid": "00010097-0000-0000-df00-014105000000"
 }
 ```
+
+## <a name="see-also"></a>参照
+
+[給与統合 API の概要](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

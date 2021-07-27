@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222615"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309668"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>パブリック プレビュー (プレビュー) で使用する Finance insights の構成 - バージョン 10.0.20 以降
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222615"
 Finance insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、強力な予測ツールを提供します。 このトピックでは、Dynamics 365 Finance のバージョン 10.0.20 を設定して、Finance Insights のパブリックプレビューで利用可能な機能をシステムで使用する方法について説明します。
 
 > [!NOTE]
-> このトピックで説明する構成手順は、Finance のバージョン 10.0.20 以降にのみ適用されます。 バージョン 10.0.19 およびそれ以前で Finance Insights を設定するには、[Finance Insights の構成 - バージョン 10.0.18 まで](configure-for-fin-insites.md)を参照してください。
+> このトピックで説明する構成手順は、Finance のバージョン 10.0.20 以降にのみ適用されます。 バージョン 10.0.19 およびそれ以前で Finance Insights を設定するには、[Finance Insights の構成 - バージョン 10.0.19 まで](configure-for-fin-insites.md)を参照してください。
 
 ## <a name="deploy-finance"></a>Finance のデプロイ
 
@@ -748,6 +748,8 @@ LCS を使用して Data Lake アドインを環境へのエクスポートを�
 2. **環境アドイン** セクションで、**新しいアドインのインストール** を選択します。
 3. **Finance insights** アドインを選択します。
 4. 条件に同意し、**インストール** を選択し ます。
+
+アドインのインストールに数分かかる場合があります。
 
 ## <a name="feedback-and-support"></a>フィードバックとサポート
 

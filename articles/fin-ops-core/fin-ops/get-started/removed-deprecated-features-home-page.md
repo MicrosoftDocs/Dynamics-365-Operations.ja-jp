@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b53b7c0577f7934e5bb7e03ce43cc66cafebee47
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 8d8d09ba4d2922852c62608afd2787d12765faa9
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112652"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336218"
 ---
 # <a name="removed-or-deprecated-features-home-page"></a>削除済みまたは非推奨のホーム ページの機能
 

@@ -355,6 +355,8 @@
           items:
             - name: 概要
               href: hr-admin-integration-ats-api-introduction.md
+            - name: ATS 統合のサーバー間認証
+              href: hr-admin-integration-ats-api-s2s-auth.md
             - name: 採用要求および関連エンティティ
               items:
                 - name: 採用要求
@@ -443,16 +445,40 @@
               href: hr-admin-integration-payroll-api-introduction.md
             - name: 給与エンティティの生成および確認
               href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: 給与従業員
-              href: hr-admin-integration-payroll-api-payroll-employee.md
-            - name: 給与作業者の住所
-              href: hr-admin-integration-payroll-api-payroll-worker-address.md
-            - name: 固定報酬の報酬計画
-              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-            - name: 給与職位職務
-              href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: 給与職位
-              href: hr-admin-integration-payroll-api-payroll-position.md
+            - name: 給与統合パラメーター
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: 給与エンティティ
+              items:
+                - name: 給与従業員
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: 給与作業者の住所
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: 固定報酬の報酬計画
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: 変動報酬の報酬計画
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: 給与職位
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: 給与職位職務
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: 休暇および欠勤に関連するエンティティ
+              items:
+                - name: 休暇残高
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: 休暇タイプ
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: 休暇申請
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: オプション セット
+              items:
+                - name: 性別
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: いいえ はい
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: 報奨タイプ
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: プロセスのタイプ
+                  href: hr-admin-integration-payroll-api-process-type.md
     - name: ユーザー ガイド
       items:
         - name: 概要
@@ -599,6 +625,8 @@
           items:
             - name: 従業員の編成
               href: hr-personnel-departments-jobs-positions.md
+            - name: 人事管理ワークスペース
+              href: hr-personnel-personnel-management-workspace.md
             - name: 職務のコンポーネントの設定
               href: hr-personnel-jobs.md
             - name: 部門の定義
@@ -607,6 +635,8 @@
               href: hr-personnel-add-department-hierarchy.md
             - name: 職務の定義
               href: hr-personnel-define-jobs.md
+            - name: 職位
+              href: hr-personnel-positions.md
             - name: 作業時間カレンダーの作成
               href: hr-personnel-create-working-time-calendar.md
             - name: 職務候補者の採用
@@ -837,3 +867,69 @@
               href: hr-employee-manager-self-service-edit-personal-information.md
             - name: 個人情報の編集の制限
               href: hr-employee-self-service-restrict-editing.md
+        - name: ワークフロー システムの使用
+          items:
+            - name: ワークフロー システムの概要
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー システムのアーキテクチャ
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー要素
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー アクション
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフローの作成
+              items:
+                - name: ワークフローの作成の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー プロパティのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: 手動タスクのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 自動化タスクのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 承認プロセスのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 承認ステップのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 支出確認者のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: 手動決定のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 条件付き意思決定のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 並列活動のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 並列分岐のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 品目ワークフローのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフローの作業項目をデリゲート
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー履歴の表示
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: ユーザーにワークフローに関連する電子メールを送信するシステムのコンフィギュレーション
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー タイプ
+              items:
+                - name: ワークフロー タイプの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー タイプのチェックリスト
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフローカテゴリの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー タイプのクエリの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: 新しいワークフロー タイプの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー ドキュメント クラスの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: SubmitToWorkflow クラスの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー ドキュメント クラスとワークフロー タイプの関連付け
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー タイプのレポート
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフローに関するよく寄せられる質問
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
