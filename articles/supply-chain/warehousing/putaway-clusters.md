@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f681d08268bdf92212eb5e0c99532bb0827afe7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840368"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344173"
 ---
 # <a name="putaway-clusters"></a>プットアウェイ クラスター
 
@@ -284,7 +284,7 @@ ms.locfileid: "5840368"
 
     この手順を上書きまたは実行するための標準のオプションがあります。
 
-    ![クラスター プットアウェイ: プット ページ](media/Cluster_putaway-Put.png "クラスター プットアウェイ: プット ページ")
+    ![クラスター プットアウェイ: プット ページ。](media/Cluster_putaway-Put.png "クラスター プットアウェイ: プット ページ")
 
 1. **OK** を選択して、クラスター プットアウェイを確認します。
 

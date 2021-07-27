@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1378ae652ea70cba941316f4667052dcb05f717
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 71aefbc9c041074225b379d90db5cecf3849cb59
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812911"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347713"
 ---
 # <a name="improve-scheduling-engine-performance"></a>スケジューリング エンジンのパフォーマンスの改善
 
@@ -66,11 +66,11 @@ ms.locfileid: "5812911"
 | 10 | 二次&nbsp;1 | | | | 1 | 20 |
 | 20 | 基本 | | 3.00 | 1.00 | 3 | 0 |
 
-![工順ダイアグラムの例](media/scheduling-engine-route.png "工順ダイアグラムの例")
+![工順ダイアグラムの例。](media/scheduling-engine-route.png "工順ダイアグラムの例")
 
 これをエンジンに送信すると、次の図に示すように 8 つのジョブに分割されます (画像を選択して拡大します)。
 
-[![エンジン ジョブのスケジューリング](media/scheduling-engine-jobs.png "エンジン ジョブのスケジューリング")](media/scheduling-engine-jobs-large.png)
+[![エンジン ジョブのスケジューリング](media/scheduling-engine-jobs.png "エンジン ジョブのスケジューリング。"](media/scheduling-engine-jobs-large.png)
 
 2 つのジョブ間の標準リンクは、`FinishStart` です。1 つのジョブの終了時刻を別のジョブの開始時刻よりも前にする必要があることを意味します。 この設定は、後でプロセスを実行する同じリソースによって実行される必要があるため、これらには `OnSameResource` 制約があります。 10 の基本工程と二次工程のジョブには、ジョブが両方同時に開始および終了する必要があることを意味する `StartStart` および `FinishFinish` リンクがあり、基本と二次で同じリソースを使用できないようにする `NotOnSameResource` 制約があります。
 

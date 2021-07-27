@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 65c174896bbee07514285d4d19e1693c13dd9697
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: db58e3d1a6665d15ad2f3ac25612ecbf448a9c17
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021519"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344199"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>材料取り扱い設備のインターフェイス (MHAX)
 
@@ -29,7 +29,7 @@ ms.locfileid: "6021519"
 
 次の図は、MHAX 統合を使用する際に発生するさまざまな要素およびプロセスの順序を示しています。
 
-![MHAX コンポーネントと相互作用](media/mhax-components.png "MHAX コンポーネントと相互作用")
+![MHAX コンポーネントと相互作用。](media/mhax-components.png "MHAX コンポーネントと相互作用")
 
 ここでは、前の図に示した相互作用について説明します。
 

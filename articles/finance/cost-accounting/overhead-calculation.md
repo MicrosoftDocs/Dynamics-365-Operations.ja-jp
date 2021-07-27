@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188000"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355038"
 ---
 # <a name="overhead-calculation"></a>間接費の計算
 
@@ -48,7 +48,7 @@ ms.locfileid: "6188000"
 
 間接費計算は、バージョンとは無関係に実行されます。 そのため、実際のバージョンの前に予算バージョンを計算することができます。 間接費計算は、次の図に示されているように 4 つのステップで構成されます。 各ステップで、仕訳入力のある仕訳ヘッダーが作成されます。 この仕訳ヘッダーは、各計算ステップの入力データを保持します。 ポリシーやルールが各仕訳帳明細行に適用され、コスト エントリが出力として生成されます。 そのため、常に完全なトレーサビリティがあります。 
 
-[![間接費計算](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![間接費の計算。](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>電気間接費の計算および配賦
 財務会計では、電気などの一部のコストは一括比例配分として登録されます。 したがって、コスト会計には詳細な管理情報は提供されません。 コスト会計では、すべての組織単位およびレベルに正確な管理情報を提供するために、コストが組織単位をフローする必要があります。 このフローは、正確な消費記録もしくは適正な評価のいずれかに基づいている必要があります。 一般会計では、電気コストは以下の表に示されているように転記できます。
@@ -618,7 +618,7 @@ ms.locfileid: "6188000"
 
 配賦は、配賦基準を適用することによって、コスト オブジェクトの残高を他のコスト オブジェクトに配賦するために使用します。 Finance では、相互配賦手法をサポートします。 相互配賦手法では、補助コスト オブジェクトが交換する相互サービスが完全に認識されます。 システムは、配賦を実行する正しい順序を自動的に決定します。 コスト オブジェクトの残高は 1 つの配賦基準によって配賦されます。 コスト オブジェクト分析コードとその各メンバーにまたがる配賦がサポートされています。 配賦の順序は、コスト制御ユニットによって制御されます。 
 
-[![相互手法](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![相互手法。](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>コスト配賦の定義
 

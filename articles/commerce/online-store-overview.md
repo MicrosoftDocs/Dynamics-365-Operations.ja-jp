@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b7050f954116213f700e4a2b3326547f4d070674
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022475"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353015"
 ---
 # <a name="e-commerce-site-overview"></a>eコマース サイトの概要
 
@@ -47,27 +47,27 @@ Dynamics 365 Commerce の使用を開始する前に、設定する必要があ�
 
 LC から Commerce サイト ビルダーを起動すると、**サイト** ページが表示されます。 このページには、次の図の例に示すように、**既定** と **fabrikam** の 2 つの事前構成されたサイトが含まれています。
 
-![Commerce サイト ビルダーのサイト ページ](media/e-commerce-site-01.png)
+![Commerce サイト ビルダーのサイト ページ。](media/e-commerce-site-01.png)
 
 これらのサイトのいずれかを選択すると、ドメイン名、既定のオンライン チャンネル、選択したチャンネルでサポートされている言語、およびパスを選択するように求められます。 1 つのチャネルだけを使用する場合は、パスを空白のままにしておくことができます。 後で、オンラインの店舗のチャネルまたは言語を Commerce サイト ビルダーで構成できます。 追加のチャネルまたは言語ごとに、固有のパスが必要です。 たとえば、1 つのサイトに関連付けられている 2 つのオンライン チャネルがあり、そのサイトのドメイン名は `www.fabrikam.com` であるとします。 この場合、1つのチャネルのパスをパスのない既定値 (`https://www.fabrikam.com`) にすることができ、2 番目のチャネルを **site2** などの新しいパスに設定できます。URL は `https://www.fabrikam.com/site2` になります。 次の図は、Commerce サイト ビルダーのサイトの初期化ダイアログ ボックスの例を示しています。
 
-![Commerce サイト ビルダーのサイトの初期化ダイアログ ボックス](media/e-commerce-site-02.png)
+![Commerce サイト ビルダーのサイトの初期化ダイアログ ボックス。](media/e-commerce-site-02.png)
 
 **サイト** ページには、**新しいサイト** ボタンも含まれています。 このボタンを選択したときに表示されるダイアログ ボックスは、サイトの初期化ダイアログ ボックスに似ていますが、新しいサイトを作成するために使用されます。 新しいサイトは空白になっています。 これには、**既定の** サイトと **fabrikam** サイトに用意されている既定のテンプレート、フラグメント、ページ、およびイメージは含まれません。 ただし、必要に応じて、サポート チケットを開いて、新しい空のサイトに既定のコンテンツのコピーを追加するように要求することができます。 詳細については、[E コマース サイトの作成](create-ecommerce-site.md)を参照してください。
 
 新しいサイトが初期化されると、Commerce サイト ビルダーの **ホーム** ページが表示されます。 このページには、次の図の例に示すように、一般的なアクションとガイダンスのコンテンツへのリンクが含まれています。
 
-![Commerce サイト ビルダーのホーム ページにあるリンク](media/e-commerce-site-03.png)
+![Commerce サイト ビルダーのホーム ページにあるリンク。](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>オンライン ストア チャネルの変更、または電子商取引サイトへのオンライン ストア チャネルの追加
 
 電子商取引サイトを作成した後、そのサイトに関連付けられているチャネルを変更するには、[電子商取引サイトをオンライン チャネルに関連付ける](associate-site-online-store.md)の手順に従ってください。 次の図の例は、**チャネル** ページ (**サイト設定 \> チャンネル**) でチャンネルの作業単位番号 (OUN) を変更する方法を示しています。 変更が完了したら、**保存して発行** をクリックします。 これにより、変更が確実に発行されます。
 
-![Commerce サイト ビルダーのチャネル ページ](media/e-commerce-site-04.png)
+![Commerce サイト ビルダーのチャネル ページ。](media/e-commerce-site-04.png)
 
 新しいチャネルを追加するには、**チャンネルの追加** を選択します。 チャネルに新しい言語を追加するには、チャネルを選択し、表示されるチャネル ダイアログ ボックスで **ロケールの追加** を選択します。 ダイアログ ボックスにロケールを表示するには、あらかじめロケールを設定しておく必要があります。
 
-![Commerce サイト ビルダーのチャネル ダイアログ ボックス](media/e-commerce-site-05.png)
+![Commerce サイト ビルダーのチャネル ダイアログ ボックス。](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Azure B2C テナントの設定
 

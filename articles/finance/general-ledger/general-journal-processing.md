@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dbf5f8f2fc3b33077d559ffcef580a5295adb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 59dda2207f002402f5153f9c77206b6c644f2679
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815575"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352861"
 ---
 # <a name="general-journal-processing"></a>一般仕訳帳の処理
 
@@ -42,14 +42,14 @@ ms.locfileid: "5815575"
 
 仕訳帳名は調整のためのみにに使用されます。 この場合、すべての会社で **元帳** 勘定タイプのみが有効であるように指定できます。 
 
-[![仕訳帳コントロール勘定タイプ](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![仕訳帳コントロール勘定タイプ。](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 仕訳帳名は、特定の区分のみまたは主勘定の範囲に対して使用できます。 
 
-[![仕訳帳コントロール区分](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![仕訳帳コントロール区分。](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 **自動取消** オプションは、一般仕訳帳で使用できます。 たとえば、次の図に示すように、実際のドキュメントがまだ処理されていない見越計上の調整が行われます。
-[![一般仕訳帳の取り消し](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![一般仕訳帳の取り消し。](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 仕訳帳入力のための Microsoft Excel アドインは、自動化の追加のレベルを提供し、データ入力をより簡単にします。 **Excel で明細行を開く** アクションは、**一般仕訳帳** および **仕訳伝票** ページで使用できます。 
 

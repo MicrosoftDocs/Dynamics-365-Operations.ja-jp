@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: a9b2e8d46debf8e065361d85f10162cda56b62e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222589"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349037"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>顧客支払予測の有効化 (プレビュー)
 
@@ -51,7 +51,7 @@ ms.locfileid: "6222589"
 
     1. **与信および回収 \> 設定 \> 財務インサイト \> 財務インサイト パラメーター** に移動します。
 
-        [![機能を構成する前の財務インサイト パラメーター ページ](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![機能を構成する前の財務インサイト パラメーター ページ。](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. **財務インサイト パラメーター** ページの **顧客支払に関するインサイト** タブで、**予測モデルに使用されるデータ フィールドの表示** リンクを選択して、**予測モデルのデータ フィールド** ページを開きます。 ここでは、顧客支払予測に対して人工知能 (AI) 予測モデルを作成するために使用されるフィールドの既定の一覧を表示できます。
 
@@ -77,7 +77,7 @@ ms.locfileid: "6222589"
 
 機能を有効にして構成し、予測モデルを作成して実行すると、次の図に示すように、**財務インサイト パラメーター** ページの **予測モデル** セクションにモデルの精度が表示されます。
 
-[![財務インサイト パラメーター ページの予測モデルの正確性](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![財務インサイト パラメーター ページの予測モデルの正確性。](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## <a name="release-details"></a>リリースの詳細
 

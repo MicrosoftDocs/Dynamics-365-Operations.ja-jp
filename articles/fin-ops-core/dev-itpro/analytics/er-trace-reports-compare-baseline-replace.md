@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 49ca9a878b9289b02f9bb9346190425197e0ceea
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: f6eaf5f9cbc6eed09f6a3067826f7fa15fb94b2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117038"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345867"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>生成された ER レポートの結果をベースライン値と比較して追跡する機能の向上
 
@@ -57,7 +57,7 @@ ms.locfileid: "6117038"
 
 選択した **ER ベースラインを学習するための形式** 形式にベースラインが追加されましたが、このベースラインにはまだベースライン ルールが追加されていません。
 
-![電子申告形式のベースライン ページ、ルールは未設定](media/GER-BaselineSample-AddBaseline2.PNG "電子申告形式のベースライン ページのスクリーンショット")
+![電子申告形式のベースライン ページ、ルールは未設定。](media/GER-BaselineSample-AddBaseline2.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
 ### <a name="make-a-new-baseline-rule"></a>新しいベースライン ルールの作成
 
@@ -70,7 +70,7 @@ ms.locfileid: "6117038"
 7. **OK** を選択します。
 8. **ベースライン** を選択します。
 
-    ![電子申告形式のベースライン ページ、選択したベースライン](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "電子申告形式のベースライン ページのスクリーンショット")
+    ![電子申告形式のベースライン ページ、選択したベースライン。](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
     生成された送信ファイルは、実行された ER 形式のベースラインに自動的に関連付けられています。 ベースライン ルールは、このベースラインに自動的に追加され、関連付けられたファイルへの参照も含まれます。
 
@@ -110,14 +110,14 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 13. **保存** を選択してから、**テスト** を選択します。
 14. 再度 **テスト** を選択して、構成されている式を再テストします。
 
-    ![フォーミュラ デザイナー ページ](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "フォーミュラ デザイナー ページのスクリーンショット")
+    ![フォーミュラ デザイナー ページ。](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "フォーミュラ デザイナー ページのスクリーンショット")
 
     > [!NOTE]
     > **テスト結果** タブは、構成された式が呼び出されるたびに、異なる日付と時刻の値を返すことを示します。
 
 15. **フォーミュラ デザイナー** ページを閉じて、**保存** を選択します。
 
-    ![形式デザイナーのページ](media/GER-BaselineSample-FormatMappingDesign2.PNG "形式デザイナー ページのスクリーンショット")
+    ![形式デザイナー ページ。](media/GER-BaselineSample-FormatMappingDesign2.PNG "形式デザイナー ページのスクリーンショット")
 
 16. **形式デザイナー** ページを閉じます。
 
@@ -128,7 +128,7 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 3. ベースラインの一覧で、**ER ベースラインを学習するための形式** 形式に対して構成されているベースラインを選択します。
 4. **ベースライン** クイックタブで、**削除** を選択して先ほど構成したベースライン ルールを削除します。
 
-![電子申告形式のベースライン ページ、削除済](media/GER-BaselineSample-AddBaseline3.PNG "電子申告形式のベースライン ページのスクリーンショット")
+![電子申告形式のベースライン ページ、削除済。](media/GER-BaselineSample-AddBaseline3.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>デザインされたER形式のバインドの置換を定義する
 
@@ -136,7 +136,7 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 2. 形式のコンポーネント ツリーで、**出力** を展開して、**出力\\ドキュメント** を展開し、**出力\\ドキュメント\\ProcessingDateTime** のチェック ボックスを選択します。
 3. **OK** を選択します。
 
-![電子申告形式のベースライン ページ、コンポーネント](media/GER-BaselineSample-AddBaseline4.PNG "電子申告形式のベースライン ページのスクリーンショット")
+![電子申告形式のベースライン ページ、コンポーネント。](media/GER-BaselineSample-AddBaseline4.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
 選択した ER 形式のコンポーネントが、**置換** クイックタブのコンポーネントの一覧に追加されました。 基本 ER 形式をデバッグ モードで実行すると、各コンポーネントの形式のバインドは、**バインド** 列に表示されるバインドによって置き換えられます。 **置換** クイックタブに表示されているコンポーネントの既定のバインドを変更するには、**編集** を選択します。
 
@@ -144,7 +144,7 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 
 このトピックで前述した「例: ベースライン ルールの設定の自動化」のステップに従ってください。 通知は、送信ファイルがベースライン設定を使用して生成されたこと、および形式バインドの強制的な置換が行われたことを警告します。
 
-![構成ページの通知](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "構成ページの通知のスクリーンショット")
+![構成ページの通知。](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "構成ページの通知のスクリーンショット")
 
 ### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a>形式バインドの置換に関する警告を非表示にする
 
@@ -192,11 +192,11 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 
 ローカルに保存されている XML ファイルからベースライン設定をインポートするには、**電子申告形式のベースライン** ページで **インポート** を選択して、その後 **参照** を選択して XML ファイルを選択します。
 
-![ベースライン設定のインポート ダイアログ ボックス](media/GER-BaselineSample-ImportBaseline1.PNG "ベースライン設定のインポート ダイアログ ボックスのスクリーンショット")
+![ベースライン設定のインポート ダイアログ ボックス。](media/GER-BaselineSample-ImportBaseline1.PNG "ベースライン設定のインポート ダイアログ ボックスのスクリーンショット")
 
 現在のドキュメント管理設定と選択したドキュメント タイプに基づいて、Microsoft SharePoint Server に保存されている XML ファイルからベースライン設定をインポートするには、**電子申告形式のベースライン** ページで、**ソースからインポート** を選択します。 その後、ドキュメント タイプと XML ファイルを選択します。 SharePoint フォルダーへのアクセスに必要なドキュメント タイプは事前に構成されている必要があります。
 
-![ソースからインポート ダイアログ ボックス](media/GER-BaselineSample-ImportBaseline2.PNG "ソースからインポート ダイアログ ボックスのスクリーンショット")
+![ソースからインポート ダイアログ ボックス。](media/GER-BaselineSample-ImportBaseline2.PNG "ソースからインポート ダイアログ ボックスのスクリーンショット")
 
 > [!NOTE]
 > **ソースからインポート** ダイアログ ボックスで、必要なドキュメント タイプおよびファイル名を選択するためのステップを、タスク レコーダーを使用して記録できます。 この方法により、必要なベースライン設定を SharePoint Server に保持した後、Regression Suite Automation Tool を使用して自動テストを実行する際に、タスク記録を再生することによって自動的にそれらをインポートすることができます。

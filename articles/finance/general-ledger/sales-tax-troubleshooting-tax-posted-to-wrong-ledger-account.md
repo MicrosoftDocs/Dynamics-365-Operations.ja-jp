@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 3d197046bd547757f32712a50949b41897f6fedf
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6834b460d3a78e47edb2edb7a72651e8454bf0ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020094"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343817"
 ---
 # <a name="tax-is-posted-to-the-wrong-ledger-account-in-the-voucher"></a>税金が伝票の間違った勘定科目に転記される
 
@@ -30,26 +30,26 @@ ms.locfileid: "6020094"
 
 1. **伝票トランザクション** ページで、使用するトランザクションを選択し、**転記済消費税** を選択します。
 
-    [![伝票トランザクション ページの転記済消費税ボタン](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
+    [![伝票トランザクション ページの転記済消費税ボタン。](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
 2. **消費税コード** フィールドの値を確認します。 この例の場合、**VAT 19** です。
 
-    [![転記済消費税ページの消費税コード フィールド](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+    [![転記済消費税ページの消費税コード フィールド。](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
 ## <a name="check-the-ledger-posting-group-of-the-tax-code"></a>税コードの元帳転記グループの確認
 
 1. **税** \> **間接税** \> **消費税** \> **消費税コード** の順に移動します。
 2. 税コードを検索して選択し、**元帳転記グループ** フィールドの値を確認します。 この例の場合、**VAT** です。
 
-    [![消費税コード ページの元帳転記グループ フィールド](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
+    [![消費税コード ページの元帳転記グループ フィールド。](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
 3. **元帳転記グループ** フィールドの値は、リンクです。 グループのコンフィギュレーションの詳細を表示するには、リンクを選択します。 または、フィールドを選択したまま (または右クリック) にして、**詳細の表示** を選択します。
 
-    [![詳細を表示コマンド](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
+    [![詳細を表示コマンド。](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
 4. **消費税支払** フィールドで、トランザクション タイプに従って勘定番号が正しいか確認します。 正しくない場合は、転記する適切な勘定を選択します。 この例では、販売注文の消費税は消費税支払の勘定 222200 に転記されます。
 
-    [![元帳転記グループ ページの消費税支払フィールド](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
+    [![元帳転記グループ ページの消費税支払フィールド。](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
 
     次の表に、**元帳転記グループ** ページの各フィールドに関する情報を示します。
 
@@ -71,11 +71,11 @@ ms.locfileid: "6020094"
 
 1. 販売注文の場合、**Tax::saveAndPost()** および **Tax::post()** メソッドにブレークポイントを追加します。 **\_ledgerDimension** の値に注意してください。
 
-    [![ブレークポイントが設定された販売注文コード サンプル](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
+    [![ブレークポイントが設定された販売注文コード サンプル。](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
     発注書の場合は、**TaxPost::saveAndPost()** および **TaxPost::postToTaxTrans()** メソッドにブレークポイントを追加します。 **\_ledgerDimension** の値に注意してください。
 
-    [![ブレークポイントが設定された発注書コード サンプル](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
+    [![ブレークポイントが設定された発注書コード サンプル。](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
 2. 次の SQL クエリを実行して、勘定分析コードで保存されるレコード ID に基づいて、データベース内の勘定の表示値を検索します。
 
@@ -83,7 +83,7 @@ ms.locfileid: "6020094"
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
     ```
 
-    [![レコード ID の表示値](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
+    [![レコード ID の表示値。](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
 3. コール スタックを確認して、**_ledgerDimension** の値が割り当てられている場所を検索します。 通常、この値は **TmpTaxWorkTrans** から取得されます。 この場合、**TmpTaxWorkTrans::insert()** および **TmpTaxWorkTrans::update()** にブレークポイントを追加して、値が割り当てられている場所を検索する必要があります。
 

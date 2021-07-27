@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5917d3f6acf6db6b5e3ceee1b399839542ce1f6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 99047bd30b04ccaaa24edbb2e28d5288ed2872f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811681"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350549"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>BOM とフォーミュラ明細行を倉庫にリリース
 
@@ -61,7 +61,7 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
 
 次の図は、10 と 20 の 2 つのジョブを持つ製造オーダーを示します。これらのジョブは、製造オーダーの組み立ておよび梱包をカバーします。 各ジョブは、多数の材料の消費に設定されます。 この図で、リリース タイム フェンスは、**(LessThanDate())** 条件で指定されている日数に等しい時刻行の下の緑の矢印で示されます。 たとえば **(LessThanDate(2))** は、ジョブが 2 日間のタイム フェンス内でのみリリースされていない数量を検索する必要があります。
 
-![2 つのバッチ ジョブをもつ製造オーダーの例](media/bach-job-setup.PNG)
+![2 つのバッチ ジョブをもつ製造オーダーの例。](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>工程番号ごと、または完成品の量に比例する材料をリリース
 
@@ -78,7 +78,7 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
 
 次の図は、10、20 の 2 つの工程をもつ製造オーダーを示します。 この例では、工程 10 へのリリースを制限する場合、材料 M9203 のみリリースされます。
 
-![工程番号ごとの材料のリリースの例](media/two-operations.PNG)
+![工程番号ごとの材料のリリースの例。](media/two-operations.PNG)
 
 完成品の量に比例して材料をリリースする方法の簡単なデモについては、[製造オーダー リリース プロセスの拡張機能](https://www.youtube.com/watch?v=Rm3ojAz6Zu0) に関する、この短い YouTube ビデオをご覧ください。
 

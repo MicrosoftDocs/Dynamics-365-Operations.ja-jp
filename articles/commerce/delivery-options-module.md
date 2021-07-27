@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 8342afefa6eeda3a53decb39caddb62d1e4e1963
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: af8cd65565a50341b0bf2dba84204d010486532c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270864"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350453"
 ---
 # <a name="delivery-options-module"></a>配送オプション モジュール
 
@@ -41,7 +41,7 @@ Fabrikam のテーマは、一部の品目が配送用に選択されていて�
 
 次の図は、Fabrikam のチェックアウト ページにおける配送オプション モジュールの例を示しています。
 
-![チェックアウトページにおける配送オプション モジュールの例](./media/ecommerce-deliveryoptions.PNG)
+![チェックアウトページにおける配送オプション モジュールの例。](./media/ecommerce-deliveryoptions.PNG)
 
 ## <a name="delivery-options-module-properties"></a>配送オプション モジュール プロパティ
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1fa55ab83562983273768895db61032ec7199fa6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 017cdc76368ae4f80131471a289aa03ab06c99bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793948"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350211"
 ---
 # <a name="work-with-fragments"></a>フラグメントで動作 
 
@@ -45,7 +45,7 @@ ms.locfileid: "5793948"
 
 次の図は、フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示しています。
 
-![フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示した図](./media/fragment-figure1.png)
+![フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示した図。](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>フラグメントの作成
 
@@ -62,7 +62,7 @@ ms.locfileid: "5793948"
 1. **フラグメントとして保存** ダイアログ ボックスで、フラグメントの名前を入力します。
 1. **OK** を選択すると、他のページに追加できるフラグメントとしてモジュール コンフィギュレーションが保存されます。
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>新しいフラグメントの作成
 
@@ -73,7 +73,7 @@ Commerce サイト ビルダーで新規フラグメントを作成するには�
 1. フラグメントのモジュール タイプを選択します。
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > 汎用コンテナー モジュール タイプを選択することで、後でフラグメントを更新およびコンフィギュレーションする必要がある場合に、最大の柔軟性を得ることができます。
 
@@ -88,14 +88,14 @@ Commerce サイト ビルダーでフラグメントをページに追加する�
 1. 左側のアウトライン ウィンドウで、またはビジュアル ページ ビルダーで直接、子モジュールを追加できるコンテナーまたはスロットを選択します。
 1. コンテナまたはスロットの名前の横にある省略符号 (**...**) を選択します。  または、ビジュアル ページ ビルダーを使用している場合は、プラス記号 (**+**) を選択します。  
 1. **フラグメントの追加** を選択します。
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > コンテナーまたはスロットが新しい子モジュールをサポートしていない場合、**フラグメントの追加** オプションは使用できません。
     
 1. **フラグメントの選択** ダイアログ ボックスで、追加するフラグメントを検索して選択します。 利用可能なフラグメントが一覧にない場合は、まず最初に、選択したコンテナーまたはスロットがサポートするモジュール タイプからフラグメントを作成する必要があります。
 1. 目的のフラグメントを選択して、ページのコンテナーまたはスロットに追加します。
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > コンテナーまたはスロットで許可されるモジュールは、ページのテンプレートまたはモジュール自体の定義によって定義されます。

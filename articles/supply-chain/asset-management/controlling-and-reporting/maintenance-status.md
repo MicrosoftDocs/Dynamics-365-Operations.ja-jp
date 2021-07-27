@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3d6f86c5052c845c9c8aad1e4437f4196f78b50
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b0c8b6a81fd863d66ca01689262f0ec08a94d76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808619"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354979"
 ---
 # <a name="maintenance-status"></a>メンテナンスの状態
 
@@ -57,13 +57,13 @@ ms.locfileid: "5808619"
 
 次のスクリーンショットでは、**年** および **月** ボタンが有効化されています。 これらの **グループ化** オプションを選択すると、メンテナンス要求と作業指示書に関連する月ごとのワークロードとスループットの一般的な概要を取得します。 
 
-![月ごとのワークロードの例](media/13-controlling-and-reporting.png)
+![月ごとのワークロードの例。](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>例 2
 
 次のスクリーンショットでは、機能の場所に関する情報が追加されています。 地理的な場所、工場、または作業領域を表す機能の場所間でワークロードおよびスループットを比較することができるようになりました。 
 
-![機能の場所を含む月ごとのワークロードの例](media/14-controlling-and-reporting.png)
+![機能の場所を含む月ごとのワークロードの例。](media/14-controlling-and-reporting.png)
 
 
 

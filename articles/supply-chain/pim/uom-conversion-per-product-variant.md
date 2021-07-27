@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ed28928b0f07833d5906a68f780e3bb5bbe0bfe9
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 03c9406d295fb0dbd22e8072c2695dbef419b706
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921220"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353543"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>製品バリアントごとの測定単位の変換
 
@@ -56,7 +56,7 @@ ms.locfileid: "5921220"
     - **製品** – この値を選択すると、商品マスタに単位変換を設定することができます。 この単位換算は、単位換算が定義されていないすべての製品バリアントの代替として使用されます。
     - **製品バリアント** – この値を選択すると、特定の製品バリアントに対して単位変換を設定することができます。 バリアントを選択するには、**製品バリアント** フィールドを使用します。
 
-    ![新たな単位換算を追加する](media/uom-new-conversion.png "新たな単位換算を追加する")
+    ![新たな単位換算を追加する。](media/uom-new-conversion.png "新たな単位換算を追加する")
 
 1. 単位換算の設定に用意されているその他のフィールドを使用します。
 1. **OK** を選択して、新しい単位換算を保存します。

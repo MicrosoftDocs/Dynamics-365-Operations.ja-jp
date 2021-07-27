@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dcede0818630329a5608c2d294c9c9f4f749f13
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3cbd4a034b89308c33651c5a923b67bc0eabf413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750135"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345765"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
@@ -58,11 +58,11 @@ ER フォーミュラ デザイナーを使用して、データ ソースから
 
 次の図は、このタイプの式の設計を示しています。 この例では、式はイントラスタット テーブルの **Intrastat.AmountMST** フィールドの値を小数点以下 2 桁に丸め、丸めた値を返します。
 
-[![データ バインド式](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![データ バインド式。](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 次の図は、このタイプの式を使用できる方法を示しています。 この例では、入力された式の結果が、**税申告モデル** データ モデルの **Transaction.InvoicedAmount** コンポーネントに反映されます。
 
-[![使用されているデータ バインド式](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![使用されているデータ バインド式。](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 実行時に、デザインされた計算式 `ROUND (Intrastat.AmountMST, 2)` は、イントラスタット テーブルの各レコードの **AmountMST** フィールドの値を小数点以下 2 桁に丸めます。 **税レポート** データ モデルの **Transaction.InvoicedAmount** コンポーネントで丸めの値を入力します。
 
@@ -72,17 +72,17 @@ ER フォーミュラ デザイナーは、電子ドキュメント生成の一�
 
 次の図は、このタイプの変換の設計を示しています。 この例では、**TrimmedString** 変換は、先頭および末尾にあるスペースを削除することにより *文字列* データ型の受信データを切り詰めます。 その後、切り詰めた文字列を返します。
 
-[![変換](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![変換。](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 次の図は、このタイプの変換を使用できる方法を示しています。 この例では、いくつかの形式のコンポーネントは、実行時に生成する電子ドキュメントにテキストを出力として送信します。 これらすべての形式のコンポーネントは、名前で **TrimmedString** 変換へと参照します。
 
-[![使用されている変換](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![使用されている変換。](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 前の図の **partyName** コンポーネントなどの形式コンポーネントが **TrimmedString** 変換を参照する場合、変換は生成する電子ドキュメントへの出力としてテキストを送信します。 このテキストには、先頭および末尾にあるスペースは含まれません。
 
 個別に適用する必要のある形式の場合、特定形式コンポーネントのバインディングの個別の式として導入できます。 次の図は、このタイプの式を示しています。 この例では、**partyType** の形式コンポーネントは、データ ソースの **Model.Company.RegistrationType** フィールドからの受信データを大文字テキストに変換する式を介してデータ ソースにバインドされます。 式は、そのテキストを出力として、電子ドキュメントに送信します。
 
-[![個々のコンポーネントに書式設定を適用](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![個々のコンポーネントに書式設定を適用。](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="process-flow-control"></a><a name="Validation"></a>プロセス フローの制御
 
@@ -98,7 +98,7 @@ ER フォーミュラ デザイナーは、電子ドキュメントを生成す�
 - トランザクションのリストが空である場合、検証の実行プロセスを停止し、**FALSE** を返します。
 - 検証では、ユーザーの優先的に使用する言語でラベル SYS70894 のテキストを含むエラー メッセージを返します。
 
-[![妥当性確認](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![検証。](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 ER フォーミュラ デザイナーを使用して、生成する電子ドキュメントのファイル名を生成し、ファイル作成プロセスを制御することもできます。 次の図は、このタイプのプロセス フロー制御の設計を示しています。 この例のコンフィギュレーションの説明を次に示します。
 
@@ -107,7 +107,7 @@ ER フォーミュラ デザイナーを使用して、生成する電子ドキ�
 - 式はファイル名とファイル名拡張子を連結して、生成する電子ドキュメントにファイル名を返します。 2 番目のバッチ以降すべてのバッチには、ファイル名の接尾語としてバッチ ID が表示されます。
 - 式は、(**TRUE** を返すことで) 少なくともレコードを 1 つ含むバッチのファイル作成プロセスを有効にします。
 
-[![プロセス フローの制御](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![プロセス フローの制御。](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="document-content-control"></a><a name="Enabled"></a>ドキュメント コンテンツ コントロール
 
@@ -121,18 +121,18 @@ ER フォーミュラ デザイナーを使用して、実行時に生成され�
 - **PaymentNotes** コンポーネントは、支払票のテキストを生成するために使用されます。
 - **DelimitedSequence** コンポーネントは、現在の口座振替の決済に使用されるコンマ区切りの請求書番号を生成します。
 
-[![PaymentNotes および DelimitedSequence コンポーネント](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![PaymentNotes および DelimitedSequence コンポーネント。](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > **PaymentNotes** および **DelimitedSequence** コンポーネントは疑問符を使用してラベル付けされます。 疑問符は、コンポーネントの使用が条件付きであることを示します。 この場合、コンポーネントの使用は次の条件に基づいています。
 >
 > - **PaymentNotes** コンポーネントに定義されている `@.PaymentsNotes <> ""` 式は、(**TRUE** を返すことにより) そのテキストが現在の口座振替に対して空白でない場合、**Ustrd** XML 要素に支払票のテキストを入力することができます。
 >
->    [![PaymentNotes コンポーネントの式](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![PaymentNotes コンポーネントの式。](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - **DelimitedSequence** コンポーネント用に定義された `@.PaymentsNotes = ""` 式により、(**TRUE** を返すことにより) その口座振替の支払票のテキストが空白の場合、現在の口座振替の決済に使用される請求書番号のコンマ区切りリストを **Ustrd** XML 要素に入力することができます。
 >
->    [![DelimitedSequence コンポーネントの式](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![DelimitedSequence コンポーネントの式。](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > この設定に基づいて、各債務者の支払いに対して生成されるメッセージ **Ustrd** XML 要素には、支払票のテキスト、またはそのテキストが空白の場合は、支払い決済に使用される請求書番号のコンマ区切りのリストが含まれます。
 
@@ -140,7 +140,7 @@ ER フォーミュラ デザイナーを使用して、実行時に生成され�
 
 **フォーミュラ デザイナー** ページで,  **テスト** を選択して、構成された式の動作を検証します。
 
-[![テストを選択して式を検証する](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![テストを選択して式を検証する。](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 式の引数の値が必要な場合、**フォーミュラ デザイナー** ページから **テスト式** ダイアログ ボックスを開くことができます。 ほとんどの場合、構成されたバインドは設計時に実行されないため、これらの引数は手動で定義する必要があります。 **フォーミュラ デザイナー** ページで,  **テスト結果** タブには、構成された式の実行結果が表示されます。
 
@@ -148,15 +148,15 @@ ER フォーミュラ デザイナーを使用して、実行時に生成され�
 
 この式をテストする場合、**テスト式** ダイアログ ボックスを使用して、テスト用のイントラスタット商品コードの値を指定できます。
 
-[![テスト用のイントラスタット商品コードを指定する](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![テスト用のイントラスタット商品コードを指定する。](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 イントラスタット商品コードを指定して **OK** を選択すると、**フォーミュラ デザイナー** ページの **テスト結果** タブには、構成された式の実行結果が表示されます。 その後、結果が受け入れられるかどうかを評価できます。 結果が受け入れられない場合は、式を更新して再度テストできます。
 
-[![テスト結果](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![テスト結果。](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 一部の数式は設計時にテストできません。 たとえば、式は、**テスト結果** タブに表示できないデータ種類の結果を返す場合があります。この場合、式をテストできないことを示すエラー メッセージが表示されます。
 
-[![エラー メッセージ](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![エラー メッセージです。](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

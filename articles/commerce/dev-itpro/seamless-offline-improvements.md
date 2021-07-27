@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8f5c8f104d8304cf9a54efcdf6e22efbc3b356b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019960"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348271"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
 
@@ -36,7 +36,7 @@ ms.locfileid: "6019960"
 
 オフライン モードに切り替えた後にギフト カード トランザクションを完了する機能を有効にするには、**コマース パラメーター** の **転記** タブに移動します。 このタブで、**ギフトカード** クイック タブを見つけ、**オフライン モードにおけるギフト カード トランザクションの実行を許可する** を **はい** に設定します。
 
-![オフラインのギフト カード設定](../media/gift.png)
+![オフラインのギフト カード設定。](../media/gift.png)
 
 通常、コマース パラメーターはキャッシュされます。 したがって、このパラメーターの設定が更新され、チャネルに変更を同期するために配布スケジュールが開始された後、変更が有効になるまでに最大 24 時間かかることがあります。 変更を直ちに有効にするには、Microsoft インターネット インフォメーション サービス (IIS) をリセットします。
 
@@ -46,7 +46,7 @@ ms.locfileid: "6019960"
 
 オフライン モードに切り替えた後にクレジット メモ トランザクションを完了する機能を有効にするには、**コマース パラメーター** ページの **転記** タブに移動します。 このタブで、**クレジット メモ** クイック タブを見つけ、**オフライン モードにおけるクレジット メモ トランザクションの実行を許可する** を **はい** に設定します。
 
-![オフラインのクレジット メモの設定](../media/creditmemo.png)
+![オフラインのクレジット メモの設定。](../media/creditmemo.png)
 
 通常、コマース パラメーターはキャッシュされます。 したがって、このパラメーターの設定が更新され、チャネルに変更を同期するために配布スケジュールが開始された後、変更が有効になるまでに最大 24 時間かかることがあります。 変更を直ちに有効にするには、IIS をリセットしてください。
 

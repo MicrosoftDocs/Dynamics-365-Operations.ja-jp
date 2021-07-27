@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 742d49b1b7b46952d0a8bb6c8a33cde2a35d124f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1abcc4befd1277d7f08d3dfa89cb76b0ee4a6178
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791705"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354568"
 ---
 # <a name="configure-task-management"></a>タスク管理のコンフィギュレーション
 
@@ -44,7 +44,7 @@ Dynamics 365 Commerce のマネージャーおよび従業員が Commerce のタ
 
 次の図は、店舗のマネージャーに対してタスク管理のアクセス許可をコンフィギュレーションする方法を示しています。
 
-![店舗のマネージャーに対するタスク管理のアクセス許可のコンフィギュレーション](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![店舗のマネージャーに対するタスク管理のアクセス許可のコンフィギュレーション。](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>従業員のアクセス許可のコンフィギュレーション
 
@@ -78,7 +78,7 @@ POS アプリケーションで通知を使用可能にするには、タスク�
 
 次の図は、**POS 操作** ページの **タスク管理** 操作を示しています。
 
-![POS 操作ページのタスク管理操作](media/HQ-POS-Tasks-Notifications.png)
+![POS 操作ページのタスク管理操作。](media/HQ-POS-Tasks-Notifications.png)
 
 POS 通知をコンフィギュレーションする方法の詳細については、[販売時点管理 (POS) の注文通知の表示](notifications-pos.md) を参照してください。
 
@@ -95,13 +95,13 @@ POS アプリケーションのホーム ページの **タスク** タイルを
 
 次の図は、POS ホーム ページの **タスク** タイルの例を示しています。
 
-![POS ホーム ページのタスク タイル](media/POS-home-screen-tasks-button-image.png)
+![POS ホーム ページのタスク タイル。](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [タスク管理の概要](task-mgmt-overview.md)
 
-[タスク リストの作成およびタスクの追加](task-mgmt-create-lists.md)
+[タスク リストの作成とタスクの追加](task-mgmt-create-lists.md)
 
 [店舗または従業員へのタスク リストの割り当て](task-mgmt-assign-lists.md)
 

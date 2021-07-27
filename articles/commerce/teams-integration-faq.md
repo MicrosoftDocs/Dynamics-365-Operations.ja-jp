@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3fc7cff0a3f8d0fbfb196ec5951b138088afece7
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 45decb55ce5cf3399f48034df367e1565ab689bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019473"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347443"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Dynamics 365 Commerce と Microsoft Teams の統合に関するよくあるご質問
 
@@ -45,7 +45,7 @@ Commerce Headquarters の従業員に小売作業マネージャ ロールを割
 
 Commerce Headquarters では、すべての組織の階層を 1 つ以上の目的に関連付けることができます。 次の例の図に示すように、Microsoft Teams にプロビジョニングする階層に **Retail レポート** 目的が関連付けられている必要があります。 
 
-![Commerce Headquarters での組織階層の目的の例](media/d365-commerce-organization-hierarchies-purpose.png)
+![Commerce Headquarters での組織階層の目的の例。](media/d365-commerce-organization-hierarchies-purpose.png)
 
 ### <a name="how-do-i-enable-retail-store-workers-to-sign-in-to-commerce-point-of-sale-pos-using-azure-active-directory-azure-ad"></a>小売用店舗の作業者が Azure Active Directory(Azure AD) を使用して販売時点管理 (POS) にログインするにはどのようにしますか 。
 

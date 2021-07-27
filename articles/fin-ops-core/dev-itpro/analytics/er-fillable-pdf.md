@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63994a4583e27b0197b9fc42c622f6c0e42c84ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355421"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 
@@ -115,11 +115,11 @@ ms.locfileid: "5753291"
 
 次の図は、レポートの最初のページの PDF テンプレートを示しています。
 
-![テンプレート 1](media/rcs-ger-filloutpdf-template1.png)
+![テンプレート 1。](media/rcs-ger-filloutpdf-template1.png)
 
 次の図は、レポートの他のページの PDF テンプレートを示しています。
 
-![テンプレート 2](media/rcs-ger-filloutpdf-template2.png)
+![テンプレート 2。](media/rcs-ger-filloutpdf-template2.png)
 
 1. **構成** ページで、**デザイナー** を選択します。
 2. **ルートの追加** を選択します。
@@ -146,7 +146,7 @@ ms.locfileid: "5753291"
 
 12. **OK** を選択します。
 
-    ![PDF ダイアログ ボックスからインポート](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![PDF ダイアログ ボックスからインポート。](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. ツリーで、**アウトプット** を展開します。
 
@@ -176,7 +176,7 @@ ms.locfileid: "5753291"
 
     読み込んだ PDF ドキュメントが編集した ER 形式で関連付けられていることを確認します。
 
-    ![PDF ファイルのプレビュー](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![PDF 添付ファイルのプレビュー。](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. この形式を引き続きデザインするには、2 番目の PDF テンプレートをインポートし、必要なバインドをデータ ソースに追加します。
 20. **保存** を選択します。
@@ -215,7 +215,7 @@ ms.locfileid: "5753291"
 1. **フォーマット デザイナー** ページで、**マッピング** タブを選択します。
 2. ツリーで、**ページング \> ページ** を展開します。
 
-    ![モデル ツリーが展開される数式デザイナーのページ](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![モデル ツリーが展開される数式デザイナーのページ。](media/rcs-ger-filloutpdf-reviewformat.png)
 
     次の詳細に留意してください。
 
@@ -238,7 +238,7 @@ ms.locfileid: "5753291"
 
     この形式要素の **名前** 属性は、**訂正 1** として定義されていることに注意してください。 また、書式要素の **名前** 式は、**ページング .FldName(「訂正」、\@. 番号)** で定義されていることに注意してください。
 
-![マッピングが選択されている形式デザイナー](media/rcs-ger-filloutpdf-reviewformat2.png)
+![マッピングが選択されている形式デザイナー。](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 **フィールド** の形式要素は、親の **PDF ファイル** 形式要素のテンプレートとして定義される入力可能な PDF ドキュメントの個々のフィールドに入力するために使用されます。 **PDF ファイル** 形式要素またはネストした要素のバインディングは、ネストした要素がある場合、対応する PDF フィールドに入力された値が指定されます。 個々の形式要素によって入力される PDF フィールドを指定するには、**フィールド** 形式要素のさまざまなプロパティを使用できます。
 
@@ -275,7 +275,7 @@ ms.locfileid: "5753291"
 
     **モデル マッピングの規定値** が **はい** に設定されている場合、インポートされた **イントラスタット (Excel からインポート)** ER 形式は、**イントラスタット レポート (PDF)** 形式コンフィギュレーションの規定値のデータ ソースとして割り当てられます。 その後、**イントラスタット レポート (PDF)** 形式のコンフィギュレーションが実行されると、**イントラスタット (Excel からインポート)** ER 形式によって解析された Excel ブックの内容により、外部取引トランザクションがシミュレーションされます。 次の図は、Excel ブックの例を示します。
 
-    ![サンプル データが含まれる Excel ブック](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![サンプル データが含まれる Excel ブック。](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>形式のコンフィギュレーションを実行
 
@@ -289,11 +289,11 @@ ms.locfileid: "5753291"
 
 次の図で、生成されるレポートの最初のページの例を示します。
 
-![生成されたレポートの最初のページ](media/rcs-ger-filloutpdf-generatedreport.png)
+![生成されたレポートの最初のページ。](media/rcs-ger-filloutpdf-generatedreport.png)
 
 次の図で、生成されるレポートの別のページの例を示します。
 
-![生成されたレポートの別のページ](media/rcs-ger-filloutpdf-generatedreport2.png)
+![生成されたレポートの別のページ。](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

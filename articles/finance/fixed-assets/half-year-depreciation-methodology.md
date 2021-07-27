@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d0e33128c37e970ebf5af87bd601ae30aef96952
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a8dd3d8c6b92be9f22573f463aa96b13d9e3418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818586"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355535"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>半期の減価償却方法
 
@@ -36,7 +36,7 @@ ms.locfileid: "5818586"
 > 年次減価償却 50,000/5 = 10,000 月次減価償却 10,000/12 = 833.33 <br>
 > 初年度減価償却 10,000/2 = 5,000、それ以降の月次減価償却 5,000/9 = 555.56
 
-   [![半期減価償却方法の減価償却スケジュール](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![半期減価償却方法の減価償却スケジュール。](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 半年簡便法によって追加された減価償却期間の延長は、減価償却のより正確な配賦を提供します。 半年簡便法では、減価償却がより均等になるため、損益計算書の報告に役立ちます。
 

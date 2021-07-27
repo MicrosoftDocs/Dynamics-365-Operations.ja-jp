@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a20cd71c9729b492403f02f3b5576351169a6e2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0b2e2ead990332f1afd338a430406e6d1db95347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754353"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350139"
 ---
 # <a name="report-designer-interface"></a>レポート デザイナー インターフェイス
 
@@ -171,24 +171,24 @@ ms.locfileid: "5754353"
 
 | ボタン                                                                                       | 説明 |
 |----------------------------------------------------------------------------------------------|-------------|
-| [![新しいボタン](./media/rowc130389.png)](./media/rowc130389.png)                              | 新しい (空の) レポート定義、行定義、列定義、またはレポート ツリー定義を作成します。 |
-| [![ボタンを開く](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | 既存の行定義、列定義、レポート ツリー定義、またはレポート定義を開きます。 |
-| [![保存ボタン](./media/savec130389.png)](./media/savec130389.png)                           | 現在の行定義、列定義、レポート ツリー定義、またはレポート定義を保存します。 |
-| [![コピー ボタン](./media/copyc130389.png)](./media/copyc130389.png)                           | 選択したテキストをクリップボードにコピーします。 |
-| [![切り取りボタン](./media/cutc130389.png)](./media/cutc130389.png)                              | 選択したテキストを削除してクリップボードにコピーします。 |
-| [![貼り付けボタン](./media/pastec130389.png)](./media/pastec130389.png)                        | クリップボードのテキストを挿入します。 |
-| [![取り消しボタン](./media/undoc130389.png)](./media/undoc130389.png)                           | 最後の操作を元に戻します。 |
-| [![やり直しボタン](./media/redoc130389.png)](./media/redoc130389.png)                           | 最後の元に戻した操作を取り消します。 |
-| [![検索ボタン](./media/findc130389.png)](./media/findc130389.png)                           | アクティブなウィンドウでテキストを検索し置き換えるための、**検索および置換** ダイアログ ボックスを開きます。 |
-| [![行の挿入ボタン](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | 行定義に空の行を、または列定義に空のヘッダー行を挿入します。 このボタンは行定義または列定義から使用できます。 |
-| [![列の挿入ボタン](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | 列定義に空の列を挿入します。 このボタンは列定義から使用できます。 |
-| [![ロック ボタン](./media/lockc130389.png)](./media/lockc130389.png)                           | 現在の構成要素にパスワードを適用します。 このボタンは、ロールが **デザイナー** または **管理者** であるユーザーであれば使用できます。 |
-| [![行のリンク ボタン](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | 行定義およびレポート ツリー定義でデータ リンクのソースを指定するための、**行リンク** ダイアログ ボックスを開きます。 このボタンは行定義から使用できます。 |
-| [![レベルを上げるボタン](./media/promotec130389.png)](./media/promotec130389.png)                  | レポート ツリー定義の単位のレベルを上げます。 子単位を選択し、**レベルを上げる** をクリックすると、その子単位は親単位と同じレベルに移動します。 |
-| [![レベルを下げるボタン](./media/demotec130389.png)](./media/demotec130389.png)                     | レポート ツリー定義の単位のレベルを下げます。 単位を選択し、**レベルを下げる** をクリックすると、その単位は前の単位の子単位になります。 |
-| [![展開ボタン](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | 選択した単位レベルで、すべてのレポート ツリー定義の単位を展開します。 |
-| [![折りたたみボタン](./media/collapsec130389.png)](./media/collapsec130389.png)               | レポート ツリーを折りたたみます。 |
-| [![ヘルプ ボタン](./media/helpc130389.png)](./media/helpc130389.png)                           | ヘルプを開きます。 |
+| [![新しいボタン。](./media/rowc130389.png)](./media/rowc130389.png)                              | 新しい (空の) レポート定義、行定義、列定義、またはレポート ツリー定義を作成します。 |
+| [![ボタンを開く。](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | 既存の行定義、列定義、レポート ツリー定義、またはレポート定義を開きます。 |
+| [![保存ボタン。](./media/savec130389.png)](./media/savec130389.png)                           | 現在の行定義、列定義、レポート ツリー定義、またはレポート定義を保存します。 |
+| [![コピー ボタン。](./media/copyc130389.png)](./media/copyc130389.png)                           | 選択したテキストをクリップボードにコピーします。 |
+| [![切り取りボタン。](./media/cutc130389.png)](./media/cutc130389.png)                              | 選択したテキストを削除してクリップボードにコピーします。 |
+| [![貼り付けボタン。](./media/pastec130389.png)](./media/pastec130389.png)                        | クリップボードのテキストを挿入します。 |
+| [![取り消しボタン。](./media/undoc130389.png)](./media/undoc130389.png)                           | 最後の操作を元に戻します。 |
+| [![やり直しボタン。](./media/redoc130389.png)](./media/redoc130389.png)                           | 最後の元に戻した操作を取り消します。 |
+| [![検索ボタン。](./media/findc130389.png)](./media/findc130389.png)                           | アクティブなウィンドウでテキストを検索し置き換えるための、**検索および置換** ダイアログ ボックスを開きます。 |
+| [![行の挿入ボタン。](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | 行定義に空の行を、または列定義に空のヘッダー行を挿入します。 このボタンは行定義または列定義から使用できます。 |
+| [![列の挿入ボタン。](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | 列定義に空の列を挿入します。 このボタンは列定義から使用できます。 |
+| [![ロック ボタン。](./media/lockc130389.png)](./media/lockc130389.png)                           | 現在の構成要素にパスワードを適用します。 このボタンは、ロールが **デザイナー** または **管理者** であるユーザーであれば使用できます。 |
+| [![行のリンク ボタン。](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | 行定義およびレポート ツリー定義でデータ リンクのソースを指定するための、**行リンク** ダイアログ ボックスを開きます。 このボタンは行定義から使用できます。 |
+| [![レベルを上げるボタン。](./media/promotec130389.png)](./media/promotec130389.png)                  | レポート ツリー定義の単位のレベルを上げます。 子単位を選択し、**レベルを上げる** をクリックすると、その子単位は親単位と同じレベルに移動します。 |
+| [![レベルを下げるボタン。](./media/demotec130389.png)](./media/demotec130389.png)                     | レポート ツリー定義の単位のレベルを下げます。 単位を選択し、**レベルを下げる** をクリックすると、その単位は前の単位の子単位になります。 |
+| [![展開ボタン。](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | 選択した単位レベルで、すべてのレポート ツリー定義の単位を展開します。 |
+| [![折りたたみボタン。](./media/collapsec130389.png)](./media/collapsec130389.png)               | レポート ツリーを折りたたみます。 |
+| [![ヘルプ ボタン。](./media/helpc130389.png)](./media/helpc130389.png)                           | ヘルプを開きます。 |
 
 ### <a name="formatting-toolbar"></a>[フォーマット] ツール バー
 
@@ -196,16 +196,16 @@ ms.locfileid: "5754353"
 
 | ボタン                                                                                                       | 説明                                             |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![フォント スタイル ボタン](./media/formattingc130389.png)](./media/formattingc130389.png)                         | 選択したフォント スタイルを現在のテキストに適用します。      |
-| [![フォント ボタン](./media/fonttype.png)](./media/fonttype.png)                                                 | 現在のテキストを選択したフォントに設定します。              |
-| [![フォント サイズ ボタン](./media/fontsize.png)](./media/fontsize.png)                                            | 現在のテキストを選択したフォント サイズ (ポイント) に設定します。 |
-| [![太字ボタン](./media/boldc130389.png)](./media/boldc130389.png)                                           | 現在のテキストを太字にします。                             |
-| [![斜体ボタン](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | 現在のテキストを斜体にします。                           |
-| [![下線ボタン](./media/underlinec130389.png)](./media/underlinec130389.png)                            | 現在のテキストに下線を付けます。                             |
-| [![インデントを減らすボタン](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | 現在のテキストのインデントを下げます。                |
-| [![インデントの増加ボタン](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | 現在のテキストのインデントを増やします。                |
-| [![背景色ボタン](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | 現在のセルの背景色を変更します。        |
-| [![フォントの色ボタン](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | 現在のテキストの色を変更します。                   |
+| [![フォント スタイル ボタン。](./media/formattingc130389.png)](./media/formattingc130389.png)                         | 選択したフォント スタイルを現在のテキストに適用します。      |
+| [![フォント ボタン。](./media/fonttype.png)](./media/fonttype.png)                                                 | 現在のテキストを選択したフォントに設定します。              |
+| [![フォント サイズ ボタン。](./media/fontsize.png)](./media/fontsize.png)                                            | 現在のテキストを選択したフォント サイズ (ポイント) に設定します。 |
+| [![太字ボタン。](./media/boldc130389.png)](./media/boldc130389.png)                                           | 現在のテキストを太字にします。                             |
+| [![斜体ボタン。](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | 現在のテキストを斜体にします。                           |
+| [![下線ボタン。](./media/underlinec130389.png)](./media/underlinec130389.png)                            | 現在のテキストに下線を付けます。                             |
+| [![インデントを減らすボタン。](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | 現在のテキストのインデントを下げます。                |
+| [![インデントの増加ボタン。](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | 現在のテキストのインデントを増やします。                |
+| [![背景色ボタン。](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | 現在のセルの背景色を変更します。        |
+| [![フォントの色ボタン。](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | 現在のテキストの色を変更します。                   |
 
 ### <a name="report-designer-toolbar"></a>レポート デザイナのツール バー
 
@@ -213,12 +213,12 @@ ms.locfileid: "5754353"
 
 | ボタン                                                                                              | 説明 |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![レポート定義ボタン](./media/reportc130389.png)](./media/reportc130389.png)                 | **ウィンドウ** メニューに表示されているレポート定義を表示します。 |
-| [![行定義ボタン](./media/rowc130389.png)](./media/rowc130389.png)                          | 有効なレポート定義に割り当てられている行定義を表示します。 |
-| [![列定義ボタン](./media/columnc130389.png)](./media/columnc130389.png)                 | 有効なレポート定義に割り当てられている列定義を表示します。 |
-| [![レポート ツリー定義ボタン](./media/treec130389.png)](./media/treec130389.png)             | 有効なレポート定義に割り当てられているレポート ツリー定義を表示します。 |
-| [![レポート ビューアー ボタン](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Report Viewer を起動し、生成されたレポートの最新バージョンを表示します。 少なくとも 1 つのレポートが生成されていれば、このボタンをレポート定義から使用できます。 |
-| [![レポート生成ボタン](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | 有効なレポート定義からレポートを生成します。 このボタンはレポート定義から使用できます。 |
+| [![レポート定義ボタン。](./media/reportc130389.png)](./media/reportc130389.png)                 | **ウィンドウ** メニューに表示されているレポート定義を表示します。 |
+| [![行定義ボタン。](./media/rowc130389.png)](./media/rowc130389.png)                          | 有効なレポート定義に割り当てられている行定義を表示します。 |
+| [![列定義ボタン。](./media/columnc130389.png)](./media/columnc130389.png)                 | 有効なレポート定義に割り当てられている列定義を表示します。 |
+| [![レポート ツリー定義ボタン。](./media/treec130389.png)](./media/treec130389.png)             | 有効なレポート定義に割り当てられているレポート ツリー定義を表示します。 |
+| [![レポート ビューアー ボタン。](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Report Viewer を起動し、生成されたレポートの最新バージョンを表示します。 少なくとも 1 つのレポートが生成されていれば、このボタンをレポート定義から使用できます。 |
+| [![レポート生成ボタン。](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | 有効なレポート定義からレポートを生成します。 このボタンはレポート定義から使用できます。 |
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e9c6423a7fb604005d4fb7f1eca05a1ef7d210e5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce0879565babfbf526e1aa6864482e60cbabd377
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817224"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345599"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>販売注文の収益認識
 
@@ -36,7 +36,7 @@ ms.locfileid: "5817224"
 
 次の販売注文が入力され、収益認識のために設定された 3 つの品目が含まれます。
 
-[![販売注文の入力](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
+[![販売注文の入力。](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
 
 収益認識の 2 つの概念を次に示します。
 
@@ -47,15 +47,15 @@ ms.locfileid: "5817224"
 
     2 番目の項目である S0008 は、契約の事後サポート (PCS) 品目として設定されたサービス品目です。 継続的なエンジニアリング サービスは、12 か月間にわたって顧客に提供されます。 したがって、既定では、**12M** の収益スケジュールが製品に割り当てられます。 この品目は PCS 品目なので、契約の開始日と終了日を定義する必要があります。 既定では、契約の開始日と終了日は品目の詳細の設定タブにあります。収益スケジュールでは、**12M** の設定が定義されており、次の図に示すように契約条件が自動的に入力されます。
 
-    [![収益スケジュール](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
+    [![収益スケジュール。](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
 
     3 番目の項目である S0012 はハードウェアであり、既定では収益スケジュールが割り当てられていません。 ハードウェアの収益は、品目が請求されるとすぐに認識されます。
 
 ## <a name="confirm-the-sales-order"></a>販売注文の確認
 
-収益価格と収益スケジュールに関する追加情報を表示するには、販売注文のアクション ペインの **管理** タブにある **収益認識** グループのボタンを使用します。 この時点では販売注文が確定されていないため、収益認識に使用されるボタンは使用できません。 これらのボタンは、販売注文がフルフィルメントを実行するステージを通じて進行するため、使用可能または使用不可になります。
+収益価格と収益スケジュールに関する追加情報を表示するには、販売注文の操作ウィンドウの **管理** タブにある **収益認識** グループのボタンを使用します。 この時点では販売注文が確定されていないため、収益認識に使用されるボタンは使用できません。 これらのボタンは、販売注文がフルフィルメントを実行するステージを通じて進行するため、使用可能または使用不可になります。
 
-[![販売注文ヘッダー](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
+[![販売注文ヘッダー。](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
 
 最初の 3 つのボタンを使用して、収益認識の設定での品目の収益価格の詳細を表示します。
 
@@ -70,11 +70,11 @@ ms.locfileid: "5817224"
 
 次の例では、販売注文が確認されたときに収益価格配賦が発生しています。 収益価格の配賦が異なる場合でも、**認識する収益** フィールドの合計金額は、顧客に請求される販売注文明細行の合計と同じである必要があることに注意してください。 たとえば、税を除く販売注文明細行の合計は、1,499 ドルになります。 したがって、**認識する収益** の合計も 1,499 ドルである必要があります。
 
-[![収益価格の配賦](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
+[![収益価格の配賦。](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
 
 予定の収益認識スケジュールも作成されます。 収益のスケジュールでは、**認識する収益** の値を繰り延べる金額として認識します。 品目 S0001 は 300 ドルではなく 321.21 ドルに繰り延べられ、品目 S0008 は 100 ドルではなく 160.61 ドルに繰り延べられます。 収益が繰り延べられていないため、品目 S0012 は予定スケジュールには表示されません。 転記が発生すると、品目 S0012 は収益勘定科目に直接 1,017.18 ドルで転記されます。
 
-[![予定収益認識スケジュール](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
+[![予定収益認識スケジュール。](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
 
 ## <a name="create-the-packing-slip"></a>梱包明細の作成
 
@@ -84,17 +84,17 @@ ms.locfileid: "5817224"
 
 最後の手順は、販売注文の請求です。 請求書の伝票を確認すると、品目 S0001 と S0008 の収益が繰延 (321.21 + 160.61 = 481.82 ドル) になり、品目 S0012 の残余金額が収益 (1017.18) に転記されたことがわかります。 これらの値は、販売注文明細行の合計に一致する 1,499 ドルに加算されます。
 
-[![伝票トランザクション](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
+[![伝票トランザクション。](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
 
 請求書が作成された後、収益認識のための **収益価格配賦**、**新しい注文明細行への価格再配賦**、および **収益認識スケジュール** ボタンが使用できるようになりますが、**収益価格配賦の更新** および **予定収益認識スケジュール** ボタンは使用できません。
 
-[![利用可能な収益認識ボタンの可用性](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
+[![利用可能な収益認識ボタンの可用性。](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
 
 **収益価格配賦** ボタンはまだ使用可能で、収益価格計算を表示できます。 販売注文を確認後に何も変更しなかった場合は、請求書を転記しても、**認識する収益** フィールドで計算された金額は変更されません。
 
 予定収益認識スケジュールが削除され、最終収益認識スケジュールに置き換えられます。 収益スケジュールの詳細は販売注文明細行ごとに管理され、契約上の責務が満たされたときに、繰延収益を実際の収益にリリースするために使用されます。
 
-[![最終収益認識スケジュール](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+[![最終収益認識スケジュール。](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

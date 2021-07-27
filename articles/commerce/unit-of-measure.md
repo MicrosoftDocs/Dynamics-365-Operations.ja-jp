@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d338ba207c9a101f5e224ca66555b16a457bcbc
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 076d4a68362dbf11c5fcf223a836f075d07e27a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271404"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350331"
 ---
 # <a name="apply-unit-of-measure-settings"></a>測定単位設定の適用
 
@@ -32,7 +32,7 @@ ms.locfileid: "6271404"
 
 次の図の例では、**ea** (それぞれ) の測定単位の販売は、Commerce 本部の製品用に構成されています。
 
-![Commerce 本部の測定単位で構成されている製品の例](./media/Productunit-headquarters.PNG)
+![Commerce 本部の測定単位で構成されている製品の例。](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > 測定単位の適用および表示のサポートは、Commerce のバージョン 10.0.19 リリース以降で利用できます。
@@ -54,11 +54,11 @@ ms.locfileid: "6271404"
 
 次の図の例では、製品の詳細ページ (PDP) は、製品の測定単位 (**ea**) を示しています。
 
-![測定単位を示す PDP の例](./media/Productunit-PDP.png)
+![測定単位を示す PDP の例。](./media/Productunit-PDP.png)
 
 次の図の例では、製品収集モジュールは、製品の測定単位 (**ea**) を示しています。
 
-![測定単位を示す製品収集モジュールの例](./media/Productunit-productcollection.png)
+![測定単位を示す製品収集モジュールの例。](./media/Productunit-productcollection.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

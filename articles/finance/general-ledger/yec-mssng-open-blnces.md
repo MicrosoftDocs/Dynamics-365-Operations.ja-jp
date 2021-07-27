@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 045d0bf11b11c9a353858ce3ca82c698dbceea7c
-ms.sourcegitcommit: 817716c2e96f24af0ef1d7d5323afdeccdc602f3
+ms.openlocfilehash: 4bebf35a8959d4f72d46d4b40e5487f499b2756d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "6028573"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356655"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>年度末決算に期首残高が表示されない
 
@@ -46,15 +46,15 @@ ms.locfileid: "6028573"
 
 最初にバッチ ジョブの状態を確認します。 年度末決算には複数の別々のタスクが含まれますが、最も重要なステップは、タスクの記述 **ステップ 5.0.0** のバッチ タスクです。 このステップで、開始トランザクションと、必要に応じて決算トランザクションを一般会計に転記します。 
 
-[![バッチ履歴リスト](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
+[![バッチ履歴リスト。](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
 
 このステップが正常に終了しても、**試算表の照会** ページ (**一般会計 > 照会とレポート > 試算表**) に期首残高が表示されない場合は、年度末決算バッチ ジョブの結果を確認し、残高の再構築ステップが正常に完了したどうか確認します。
 
-[![年度末決算バッチ ジョブの結果](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
+[![年度末決算バッチ ジョブの結果。](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
 
 何らかの理由でこのステップが失敗している場合は、開始 (およびオプションで決算) トランザクションが正常に転記されている可能性が高くなります。 **伝票トランザクションの照会** ページ (**一般会計 > 照会とレポート > 伝票トランザクション**) を使用して、決算した年度の年度末決算ダイアログに表示される伝票番号と日付を指定することで、一般会計トランザクションが正常に転記されたことを確認できます。
 
-[![伝票トランザクションの照会](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
+[![伝票トランザクションの照会。](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
 
 開始伝票 (および必要に応じて決算伝票) が存在する場合は、年度末決算を再度実行する必要はありません。 代わりに、次に進む方法ついて次のセクションを参照してください。
 
@@ -66,7 +66,7 @@ ms.locfileid: "6028573"
 
 残高の再構築ステップでは、試算表の生成時に使用される一般会計残高が更新されます。  これは、年度末決算プロセスの最後のステップです。  このステップしか失敗していない場合は、一般会計トランザクションは正常に転記されています。  年度末決算を再実行する必要はありません。 このプロセスを実行するには、**財務分析コード セット** ページ (**一般会計 > 勘定科目表 > 分析コード > 財務分析コード セット**) を使用して、残高を手動で再構築します。
 
-[![[財務分析コード セット] ページの [残高の再構築] ボタン](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
+[![[財務分析コード セット] ページの [残高の再構築] ボタン。](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
 
 このステップの処理に時間がかかる場合は、[財務分析コード セットの更新に関するベスト プラクティス](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/best-practices-for-updating-financial-dimension-set-dimension-sets)で説明されている手順に従って、財務分析コード セットのベスト プラクティスを確認することをお勧めします。 
 

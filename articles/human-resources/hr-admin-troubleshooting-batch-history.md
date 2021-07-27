@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 6a9e94e282aa8f101b42c1378ef21c6c1fe0477e
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5a4749e3234288927a781106dd4becebd5260084
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053494"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344667"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>自動クリーンアップ タスクを使用したパフォーマンスの最適化
 
@@ -41,23 +41,23 @@ Microsoft Dynamics 365 Human Resources では、バッチ ジョブ履歴が大�
 
 2. **検索** バーで、**バッチ ジョブ履歴のクリーンアップ** を入力します。
 
-   ![バッチ ジョブ履歴のクリーンアップを検索する](media/talent-batch-history-cleanup-search-bar.png)
+   ![バッチ ジョブ履歴のクリーンアップを検索する。](media/talent-batch-history-cleanup-search-bar.png)
 
 3. **履歴の範囲 (日数)** で、**30** と入力します。
 
-   ![履歴の範囲を 30 に設定](media/talent-batch-history-cleanup-history-limit.png)
+   ![履歴の範囲を 30 に設定。](media/talent-batch-history-cleanup-history-limit.png)
 
 4. **バックグラウンドで実行** を選択してから、**再実行** を選択します。
 
-   ![再実行の設定](media/talent-batch-history-cleanup-recurrence.png)
+   ![再実行の設定。](media/talent-batch-history-cleanup-recurrence.png)
 
 5. **再実行の定義** で、**開始日** および **開始時刻** を時間外または週末に実行するよう設定してから、**終了日なし** を選択します。 
 
-   ![再実行の開始日時の定義](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![再実行の開始日時の定義。](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. **再実行のパターン** で、**日数** を選択し、**指定した間隔で繰り返す** を **7** に設定します。
 
-   ![クリーンアップを週単位で繰り返すよう設定する](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![クリーンアップを週単位で繰り返すよう設定する。](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. **OK** を選択します。
 

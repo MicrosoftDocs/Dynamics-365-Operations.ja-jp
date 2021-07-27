@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 12de6d70243bdcda5fc7887f24eecb462de23683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937333"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351022"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>データ インポート/エクスポート ジョブの概要
 
@@ -106,7 +107,7 @@ ms.locfileid: "5937333"
 
 **ソース マッピングの生成** を選択すると、ページ上にマッピングを生成することができます。 生成されたマッピングは、自動マッピングと同様に動作します。 したがって、マップされていないフィールドは、手動でマップする必要があります。
 
-![データ マッピング](./media/dixf-map.png)
+![データ マッピング。](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>インポート/エクスポート ジョブのセキュリティを確認する
 管理者以外のユーザーは特定のデータ ジョブにのみアクセスできるよう、**データ管理** ワークスペースへのアクセスを制限することができます。 データ ジョブへのアクセスとは、そのジョブの実行履歴への完全なアクセス、またステージング テーブルへのアクセスを意味します。 そのため、データ ジョブの作成時に、適切なアクセス制御が設定されていることを確認する必要があります。
@@ -132,7 +133,7 @@ ms.locfileid: "5937333"
 ## <a name="validate-that-the-job-ran-as-expected"></a>ジョブが期待どおりに実行されたことを検証する
 ジョブの履歴は、インポートおよびエクスポート ジョブ両方のトラブルシューティングと調査に使用できます。 履歴ジョブの実行は、時間範囲別に整理されています。
 
-![ジョブ履歴範囲](./media/dixf-job-history.md.png)
+![ジョブ履歴範囲。](./media/dixf-job-history.md.png)
 
 各ジョブの実行により、次の詳細情報が提供されます。
 

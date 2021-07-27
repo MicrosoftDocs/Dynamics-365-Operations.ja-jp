@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f57a20ed56a761894b2cedf8835310dac098b098
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750621"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346499"
 ---
 # <a name="integrated-vendor-master"></a>統合された仕入先マスター
 
@@ -39,11 +39,11 @@ ms.locfileid: "5750621"
 
 仕入先データを Dataverse の **取引先企業/連絡先** テーブルに格納しない場合は、新規仕入先設計を使用できます。
 
-![仕入先データ フロー](media/dual-write-vendor-data-flow.png)
+![仕入先データ フロー。](media/dual-write-vendor-data-flow.png)
 
 **取引先企業/連絡先** テーブルで仕入先データを格納し続ける場合は、この拡張仕入先設計を使用できます。 拡張仕入先設計を使用するには、デュアル書き込みソリューション パッケージで仕入先ワークフローをコンフィギュレーションする必要があります。 詳細については、[仕入先設計間での切り替え](vendor-switch.md) を参照してください。
 
-![拡張された仕入先データ フロー](media/dual-write-vendor-detail.jpg)
+![拡張された仕入先データ フロー。](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
 > セルフサービス仕入先の Power Apps ポータルを使用している場合は、その仕入先情報は Finance and Operations アプリに直接フローできます。

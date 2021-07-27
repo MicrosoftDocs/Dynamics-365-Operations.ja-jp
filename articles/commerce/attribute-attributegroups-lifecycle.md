@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dce26087a81e38c5618b07a9341fee195e3c98c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936807"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346807"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>属性および属性グループの管理
 
@@ -70,7 +70,7 @@ ms.locfileid: "5936807"
     - 1 つの属性タイプを **レンズ図形** と名付け、**楕円** と **四角**、そして **長方形** の値を追加します。
     - その他の属性の型の名前を **サングラス ブランド** とし、**Ray ban** と **Aviator**、そして **Oakley** の値を追加します。
 
-![属性タイプ](media/AttributeType.png)
+![属性タイプ。](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>属性を設定します
 
@@ -79,7 +79,7 @@ ms.locfileid: "5936807"
 3. **レンズ** と名付けられた属性を作成します。
 4. **属性タイプ** フィールドを **レンズ図形** に設定します。
 
-![属性](media/Attribute.png)
+![属性。](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>属性メタデータ
 
@@ -134,7 +134,7 @@ ms.locfileid: "5936807"
     - 200 – 500
     - 500 回以上
 
-![属性のフィルター設定](media/AttributeFilterSettings.PNG)
+![属性のフィルター設定。](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>属性グループ
 
@@ -142,7 +142,7 @@ ms.locfileid: "5936807"
 
 属性グループに含まれている属性の既定値を設定することもできます。 例えば、属性グループに色の属性を追加し、既定の属性値として **青色** を選択します。 この場合、その属性グループの 1 つを含む製品に属性グループが追加されると、各製品の既定の色として **青色** が表示されます。
 
-![属性グループ](media/AttributeGroup.png)
+![属性グループ。](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>属性グループの作成
 
@@ -155,7 +155,7 @@ ms.locfileid: "5936807"
 
 1 つまたは複数の属性グループは、次のタイプのカテゴリ階層内のカテゴリ ノードを関連付けることができます。Commerce 製品階層、チャネル ナビゲーション カテゴリ階層、および補助製品カテゴリ階層。 そして、製品を分類されると、属性グループに含まれる属性を継承します。
 
-![製品階層 – 製品属性グループ](media/AGRetailProdHierarchy.PNG)
+![製品階層 – 製品属性グループ。](media/AGRetailProdHierarchy.PNG)
 
 この手順では、属性グループを Commerce 製品階層内のカテゴリに割り当てます。
 
@@ -200,7 +200,7 @@ ms.locfileid: "5936807"
     3. **ファッション アクセサリー** カテゴリ ノードを選び、**ファッション サングラス** カテゴリを選択し、**チャンネル製品属性** クイック タブで各属性の **属性を含む** を選択します。
     4. **紳士服** カテゴリ ノードを選び、**パンツ** カテゴリを選択し、**チャネル製品属性** クイック タブで各属性の **属性を含む** を選択します。
 
-![チャネル カテゴリと製品属性 – 属性グループ](media/CCPAttrGrp.png)
+![チャネル カテゴリと製品属性 – 属性グループ。](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>属性値の上書き
 
@@ -214,7 +214,7 @@ ms.locfileid: "5936807"
 4. グリッドで必要な製品を選択します。 そして、アクション ペイン、**製品** タブの、**設定** グループで、**製品属性** を選択します。
 5. 左側のペインで属性を選択し、右側のペインでその値を更新します。
 
-![製品詳細ページ – 製品属性グループ](media/ProdDetailsProdAttrValues.png)
+![製品詳細ページ – 製品属性グループ。](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>カタログ内の製品属性値を上書き
 
@@ -233,7 +233,7 @@ ms.locfileid: "5936807"
     > [!NOTE]
     > 共有製品メディアと共有製品属性が作成される場合、それらはすべての製品に適用されます。
 
-![カタログ製品属性グループ](media/CatalogProdAttrValues.png)
+![カタログ製品属性グループ。](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>チャネル内の製品属性値を上書き
 

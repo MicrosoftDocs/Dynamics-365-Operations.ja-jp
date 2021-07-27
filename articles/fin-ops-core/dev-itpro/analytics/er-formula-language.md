@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223989"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355397"
 ---
 # <a name="electronic-reporting-formula-language"></a>電子申告の数式言語
 
@@ -117,15 +117,15 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 構成されたデータ ソースのパスが "at" 記号 (@) で始まる場合は、相対パスとなります。 使用される階層ツリー構造の絶対パスの残り部分の代わりに、"at" 記号が表示されます。 次の図は、例を示します。 ここでは、絶対パス `Ledger.'accountingCurrency()'` は、**元帳** データ ソースからの会計通貨値がデータ モデルの **会計通貨** フィールドに入力されることを示します。
 
-![ER モデル マッピング デザイナー ページでの絶対パスの例](./media/ER-FormulaLanguage-AbsolutePath.png)
+![ER モデル マッピング デザイナー ページでの絶対パスの例。](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 次の図の例では、相対パスがどのように使用されるかを示します。 相対パス `@.AccountNum` は、**Intrastat** データ ソースの **AccountNum** フィールド (データモデルの階層ツリーの **AccountNum** フィールドの 1 レベル上に表示される) が、データモデルの **AccountNum** フィールドに顧客または仕入先勘定番号を入力して使用されることを示します。
 
-![ER モデル マッピング デザイナー ページでの相対パスの例](./media/ER-FormulaLanguage-RelativePath1.png)
+![ER モデル マッピング デザイナー ページでの相対パスの例。](./media/ER-FormulaLanguage-RelativePath1.png)
 
 絶対パスの残りの部分は、[ER フォーミュラ エディター](general-electronic-reporting-formula-designer.md) でも表示されます。
 
-![ER フォーミュラ デザイナー ページの絶対パスの残りの部分](./media/ER-FormulaLanguage-RelativePath2.png)
+![ER フォーミュラ デザイナー ページの絶対パスの残りの部分。](./media/ER-FormulaLanguage-RelativePath2.png)
 
 詳細については、[ER モデルと ER 形式のデータ バインディングに相対パスを使用する](relative-path-data-bindings-er-models-format.md) を参照してください。
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f94b054d213dc2b347f4e5a7b2f4c2a51d519f57
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 626393f0c07803eb944e9066c72a24d2cf9ea0ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824007"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356224"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>収益認識の再配賦 – シナリオ 1
 
@@ -26,27 +26,27 @@ ms.locfileid: "5824007"
 
 このトピックでは、2 つの販売注文が入力されたが、まだ確認済の状態である、再配賦シナリオについて説明します。 3 つ以上の販売注文が確認済の状態にある場合も、同じシナリオで、同様の結果となります。
 
-このシナリオでは、**総勘定元帳パラメーター** ページの **収益認識** タブの **請求書の修正を売掛金勘定に転記** オプション (**収益認識 \> 設定 \> 総勘定元帳パラメーター**) は **いいえ** に設定します。
+このシナリオでは、**一般会計パラメーター** ページの **収益認識** タブの **請求書の修正を売掛金勘定に転記** オプション (**収益認識 \> 設定 \> 一般会計パラメーター**) は **いいえ** に設定します。
 
-[![請求書の修正を売掛金勘定に転記のオプションをいいえに設定する](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
+[![請求書の修正を売掛金勘定に転記のオプションをいいえに設定する。](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
 
 顧客 US\_SI\_0003 の販売注文が作成されます。 顧客は、ラップトップ (品目番号 S0012) とそのサポート プラン (品目番号S0008、「継続的なエンジニアリング サービス」) を購入しています。 ラップトップの収益は直ちに認識されます (収益認識スケジュールはありません)。 サポート プランの収益は、契約の日付範囲で定義された 12 か月にわたって繰り延べて認識されます。
 
-[![ラップトップとサポート プランの販売注文明細行](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
+[![ラップトップとサポート プランの販売注文明細行。](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
 
 販売注文が確認済になりました。 両方の品目が収益価格配賦に設定されているため、販売注文が確認されたときに、収益価格が計算されます。 認識される収益は、**収益価格配賦** ページ (**販売注文** ページ、アクション ウィンドウ、**管理** タブの **収益認識** グループで、**収益価格の配賦** を選択) で表示されます。 ラップトップの収益は、1,008.01 ドルの金額で収益勘定に転記されます。 サポート プランの収益は、190.99 ドルの金額で、繰延収益勘定に転記されます。 収益価格の合計は、収益価格の配賦を取得するために設定された明細行の合計 (1,199.00 ドル) と等しくなければなりません。
 
-[![収益価格の配賦ページ](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
+[![収益価格の配賦ページ。](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
 
 顧客は、販売時にはインストール サービス (品目番号 S0001) を購入しない選択をしましたが、後で気が変わりました。 このため、同じ顧客に 2 つめの販売注文が入力されました。
 
-[![インストール サービスの販売注文明細行](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
+[![インストール サービスの販売注文明細行。](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
 
 2 つめの販売注文が確認済になりました。 この販売注文は 1 つの明細行のみであるため、販売注文の確認時には、収益価格の配賦は実行されません。 収益価格の配賦は、複数の固有品目があり、それらの品目が収益価格配賦用に設定されている場合にのみ行われます。
 
 この新しい販売注文が顧客の契約に対する唯一の変更である場合は、再配賦プロセスを実行できます。 2 つの販売注文の 1 つで、**新しい注文明細行で価格を再配賦** を選択して、**新しい注文明細行で価格を再配賦** ページを開きます。 または、**収益認識\> 定期処理のタスク \> 新しい注文明細行で価格を再配賦** に移動します。 2 つの販売注文と対応する販売注文明細行を選択し、**再配賦の更新** を選択します。 **再配賦金額** 列には、各販売注文明細行の新しい収益価格が表示されます。
 
-[![新しい注文明細行で価格を再配賦のページの新しい収益価格](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
+[![新しい注文明細行で価格を再配賦のページの新しい収益価格。](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
 
 **予想伝票** を選択した場合は、請求書が転記されていないため、何も表示されません。
 
@@ -55,7 +55,7 @@ ms.locfileid: "5824007"
 > [!TIP]
 > これらの追加の品目が表示される理由に関する背景を提供するため、**再配賦 ID** や **販売注文** などの他の列をグリッドに追加できます。
 > 
-> [![収益価格の配賦ページの追加列](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+> [![収益価格の配賦ページの追加列。](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

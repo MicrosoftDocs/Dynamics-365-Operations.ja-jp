@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9c19f999a94e6ad8451c208cf204d0b59306b77d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a447dee71e57df07d1e7709bc8e4d075fcc803b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837804"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343679"
 ---
 # <a name="schedule-maintenance-plans"></a>メンテナンス計画のスケジュール
 
@@ -52,14 +52,14 @@ ms.locfileid: "5837804"
 
 5. **OK** をクリックして、資産のメンテナンス スケジュール エントリの生成を開始します。 生成されたエントリは、**すべてのメンテナンス スケジュール** リストのページに表示されます。 次の図は、**メンテナンス計画のスケジュール** ダイアログの例を示します。
 
-![図 1](media/09-preventive-maintenance.png)
+![図 1。](media/09-preventive-maintenance.png)
 
 - **メンテナンス計画のスケジュール** ダイアログでは、**バックグラウンドで実行** クイック タブでバッチ ジョブを設定して、定期的にカレンダー エントリを自動的に生成することができます。  
 - 予防的メンテナンスをスケジュールすると、開始日がシステム日付と時刻よりも前のメンテナンス スケジュール行は作成されません。  
 
 次の図は、時間ベースのメンテナンス計画の計算を図解したものです。  
 
-![図 2](media/10-preventive-maintenance.jpg)
+![図 2。](media/10-preventive-maintenance.jpg)
 
 カウンターベースのメンテナンス計画について : 次の図では、2 つの異なるカウンター登録サイクルが示されています。 これらは、資産 V0001 に対して設定されたメンテナンス計画に基づいており、毎月約 2,000 km を走る資産 (自動車) を想定しています。
 
@@ -69,9 +69,9 @@ ms.locfileid: "5837804"
 
 これらの例は、資産に対してなされたすべてのカウンター登録が、資産の消耗を示す傾向を示していることを説明しています。 その傾向は、メンテナンス計画のスケジューリング時に計算基準として使用されます。
 
-![図 3](media/11-preventive-maintenance.png)
+![図 3。](media/11-preventive-maintenance.png)
 
-![図 4](media/12-preventive-maintenance.png)
+![図 4。](media/12-preventive-maintenance.png)
 
 
 

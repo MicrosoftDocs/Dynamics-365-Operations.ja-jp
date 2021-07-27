@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86e8787320721a58f449abcfba21c2c4c6b4caf9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 988340d9e5fc12c9329a587c7401fe039c8e5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751779"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350697"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>ワークフローでの承認ステップのコンフィギュレーション
 
@@ -156,7 +156,7 @@ ms.locfileid: "5751779"
 
     - **1 人の承認者** – ドキュメントに適用されるアクションは、最初に対応した人物によって決定されます。 たとえば、康介は USD 15,000 の経費精算書を送信済です。 その経費精算書は、現在は政美、健一郎、および隆志に割り当てられています。 このドキュメントに最初に対応するのが政美の場合は、彼女が行うアクションがドキュメントに適用されます。 たとえば、政美が経費報告書を却下した場合、ドキュメントは却下され、康介に送り返されます。 政美が経費精算書を承認した場合、ドキュメントは承認を受けるために綾に送信されます。
 
-        ![承認プロセスのあるワークフロー](./media/workflow_multipleusersinstep.gif)
+        ![承認プロセスのあるワークフロー。](./media/workflow_multipleusersinstep.gif)
 
     - **過半数の承認者** – ドキュメントに適用されるアクションは、過半数の承認者が対応したときに決定されます。 たとえば、康介は USD 15,000 の経費精算書を送信済です。 その経費精算書は、現在は政美、健一郎、および隆志に割り当てられています。 最初に対応する 2 人の承認者が政美と健一郎であれば、その 2 人の取るアクションがドキュメントに適用されます。
 

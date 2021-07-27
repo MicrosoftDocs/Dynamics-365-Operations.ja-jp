@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bda264a255a688d64e314d994dc281602c9324cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797818"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347593"
 ---
 # <a name="checkout-module"></a>チェックアウト モジュール
 
@@ -33,7 +33,7 @@ ms.locfileid: "5797818"
 
 以下の図は、Fabrikam の精算ページにおける精算モジュールの例を示しています。
 
-![精算モジュールの例](./media/Checkout.PNG)
+![精算モジュールの例。](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>チェックアウト モジュール プロパティ
 
@@ -52,13 +52,13 @@ ms.locfileid: "5797818"
 
     以下の図は、Fabrikam の精算ページにおける配送先住所モジュールの例を示しています。
 
-    ![配送先住所モジュールの例](./media/ecommerce-shippingaddress.PNG)
+    ![配送先住所モジュールの例。](./media/ecommerce-shippingaddress.PNG)
 
 - **配送オプション** – このモジュールにより、顧客は注文の配送モードを選択できます。 このモジュールの詳細については、[配送オプション モジュール](delivery-options-module.md) を参照してください。
 
     以下の図は、Fabrikam の精算ページにおける配送オプション モジュールの例を示しています。
  
-    ![配送オプション モジュールの例](./media/ecommerce-deliveryoptions.PNG)
+    ![配送オプション モジュールの例。](./media/ecommerce-deliveryoptions.PNG)
 
 - **チェックアウト セクション コンテナー** – このモジュールは、複数のモジュールを内側に配置して、チェックアウト フロー内にセクションを作成できるコンテナーです。 たとえば、すべての支払関連モジュールをこのコンテナー内に配置し、1 つのセクションとして表示することができます。 このモジュールは、フローのレイアウトにのみ影響します。
 
@@ -70,7 +70,7 @@ ms.locfileid: "5797818"
 
     次の図は、チェックアウト ページのギフト カード、ロイヤルティ ポイント、支払モジュールの例を示しています。
 
-    ![チェックアウト ページのギフト カード、ロイヤルティ ポイント、支払モジュールの例](./media/ecommerce-payments.PNG)
+    ![チェックアウト ページのギフト カード、ロイヤルティ ポイント、支払モジュールの例。](./media/ecommerce-payments.PNG)
 
 - **連絡先情報** – このモジュールにより、顧客は注文に対する連絡先情報 (電子メール アドレス) を追加または変更できます。
 
@@ -80,7 +80,7 @@ ms.locfileid: "5797818"
 
     次の図は、チェックアウト ページの使用条件の例を示しています。
 
-    ![チェックアウト ページの使用条件の例](./media/ecommerce-checkout-terms.PNG)
+    ![チェックアウト ページの使用条件の例。](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit インタラクション
 

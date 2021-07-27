@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: fb2651644efd2cadfccb91e48c34dfddc8383e1f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e813b4f0c6408a8046fa8203007a0a356ca2c794
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021419"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347811"
 ---
 # <a name="process-collection-letters-example"></a>督促状の処理の例
 
@@ -40,7 +40,7 @@ ms.locfileid: "6021419"
 
 次の図は、**督促状** ページに表示される表の情報を示しています。 
 
-[![督促状の順序の設定](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![督促状の順序の設定。](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  この例で必要な 2 つのパラメーターを設定する必要があります。
 
@@ -49,7 +49,7 @@ ms.locfileid: "6021419"
     1. **回収** タブで、**督促状コードを計算する時に支払とクレジット メモを無視する** オプションを **はい** に設定します。
     2. **次の単位別に督促状を作成** フィールドが **顧客** に設定されていることを確認します。
 
-    [![貸方転記取立の売掛金勘定パラメーターの設定](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![貸方転記取立の売掛金勘定パラメーターの設定。](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. **売掛金勘定 \> 請求書 \> すべての自由書式の請求書** に移動し、**新規** を選択して、次の手順に従います。
 
@@ -74,7 +74,7 @@ ms.locfileid: "6021419"
 5. 手順 4 を繰り返しますが、**単価** フィールドに **-200.00** と入力します。
 6. **売掛金勘定 \> 顧客 \> すべての顧客** に移動し、顧客 **US-045** を選択します。 その後、アクション ウィンドウで **トランザクション \> トランザクション** を選択して、先ほど転記した顧客トランザクションを確認します。
 
-    [![転記済の顧客トランザクションの確認](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![転記済の顧客トランザクションの確認。](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     ここで、顧客 US-045 の督促状を作成する必要があります。
 
@@ -93,7 +93,7 @@ ms.locfileid: "6021419"
 
     1. この督促状は順序内の最初の督促状であるため、ヘッダーとトランザクション明細行の督促状コードが **督促状 1** になっていることを確認します。 (トランザクション明細行を表示するために、**トランザクション** クイック タブの選択が必要な場合があります。)
 
-   [![ヘッダーと明細行に同じ督促状コードが表示されていることを確認する](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![ヘッダーと明細行に同じ督促状コードが表示されていることを確認する。](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. アクション ペインで、**転記** を選択します。
     3. **転記日付** フィールドに **1/19/2021** と入力します。
@@ -115,7 +115,7 @@ ms.locfileid: "6021419"
 
     1. ヘッダーの督促状コードが **督促状 1** になっていることを確認します。 ただし、トランザクション明細行のコードは、**督促状 2** です。
 
-   [![ヘッダーと明細行に異なる督促状コードが表示されていることを確認する](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![ヘッダーと明細行に異なる督促状コードが表示されていることを確認する。](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   **督促状コードを計算する時に支払とクレジット メモを無視する** オプションが **はい** であるため、コードは異なります。
 
@@ -123,7 +123,7 @@ ms.locfileid: "6021419"
 
 11. **貸方転記および取立 \> 設定 \> 売掛金勘定パラメーター** に移動し、**回収** タブの **督促状コードを計算する時に支払とクレジット メモを無視する** オプションを **いいえ** に設定します。
 
-    [![督促状コードを計算する時に支払とクレジット メモを無視するオプションをいいえに設定する](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![督促状コードを計算する時に支払とクレジット メモを無視するオプションをいいえに設定する。](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     ここで、顧客 US-045 の督促状を再度作成する必要があります。
 
@@ -140,6 +140,6 @@ ms.locfileid: "6021419"
 
 13. **貸方転記および取立 \> 督促状 \> 督促状の確認と処理** に移動して、ヘッダーとトランザクション明細行の督促状コードが **督促状 2** になっていることを確認します。
 
-    [![ヘッダーと明細行に同じ督促状コードを再度表示する](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![ヘッダーと明細行に同じ督促状コードを再度表示する。](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     **督促状コードを計算する時に支払とクレジット メモを無視する** オプションが **いいえ** に設定されているため、両方の場所に同じコードが表示されます。

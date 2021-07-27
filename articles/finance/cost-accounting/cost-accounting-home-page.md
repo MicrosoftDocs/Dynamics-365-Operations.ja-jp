@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace, CAMAXCostAccountingSetupWizard
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 256254
+ms.custom:
+- "256254"
+- intro-internal
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3485818ff67e20a5354e4bebc4903faaa36f6286
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3420c4074631749778ef0393642ade526fc0fc7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841120"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355254"
 ---
 # <a name="cost-accounting-home-page"></a>原価会計ホーム ページ
 
@@ -30,7 +32,7 @@ ms.locfileid: "5841120"
 
 次の学習マップは、原価会計モジュールのフレームワークを構成する主要な概念とタスクについて説明します。 「[クイック リンク](#quick-links)」セクションにあるリンクをクリックして、モジュールの使用方法について学習します。
 
-[![原価会計の学習マップ](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
+[![原価会計の学習マップ。](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>クイック リンク
 

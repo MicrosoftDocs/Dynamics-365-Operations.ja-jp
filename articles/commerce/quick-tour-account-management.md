@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027966"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352063"
 ---
 # <a name="account-management-pages-overview"></a>アカウント管理ページの概要
 
@@ -35,7 +36,7 @@ ms.locfileid: "6027966"
 
 次の図は、アカウント管理ランディング ページの例を示しています。
 
-![アカウント管理ランディング ページの例](./media/Account-Management.PNG)
+![アカウント管理ランディング ページの例。](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>プロファイル ページ
 
@@ -43,7 +44,7 @@ ms.locfileid: "6027966"
 
 以下の図は、モジュール ライブラリを使用してビルドされた **プロファイル** ページの例を示します。
 
-![マイ プロファイル ページの例](./media/Account-Management-MyProfile.PNG)
+![マイ プロファイル ページの例。](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>住所のページ
 
@@ -51,7 +52,7 @@ ms.locfileid: "6027966"
 
 次の図は、**住所** ページの例を表示しています。
 
-![住所ページの例](./media/Account-Management-Address.png)
+![住所ページの例。](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>注文履歴および注文詳細のページ
 
@@ -59,11 +60,11 @@ ms.locfileid: "6027966"
 
 次の図は、**注文履歴** ページの例を表示しています。
 
-![注文履歴ページの例](./media/Account-Management-OrderHistory.PNG)
+![注文履歴ページの例。](./media/Account-Management-OrderHistory.PNG)
 
 次の図は、**注文の詳細** ページの例を表示しています。
 
-![注文の詳細ページの例](./media/Account-Management-OrderDetails.PNG)
+![注文の詳細ページの例。](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>ロイヤルティ プログラムのページ
 
@@ -71,7 +72,7 @@ ms.locfileid: "6027966"
 
 次の図は、**ロイヤルティ プログラム** のページの例を示します。
 
-![ロイヤルティ プログラムのページの例](./media/Account-Management-Loyalty.PNG)
+![ロイヤルティ プログラムのページの例。](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>ホワイトリスト ページ
 
@@ -79,7 +80,7 @@ ms.locfileid: "6027966"
 
 次の図は、**欲しい物リスト** のページの例を示します。
 
-![欲しい物リストのページの例](./media/Account-Management-Wishlist.PNG)
+![欲しい物リストのページの例。](./media/Account-Management-Wishlist.PNG)
 
 アカウント管理モジュールおよびその作成方法の詳細については、[アカウント管理](account-management.md) を参照してください。
 

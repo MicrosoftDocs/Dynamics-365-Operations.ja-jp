@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39fae603a8ae34a7500ead1d2d1cecff6dc65f1e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 62cc0bb9d62b0ab90e212b03e6c4efd9734dadec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804044"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347419"
 ---
 # <a name="templates-and-layouts-overview"></a>テンプレートとレイアウトの概要
 
@@ -32,7 +33,7 @@ ms.locfileid: "5804044"
 
 次の図は、表示された Web ページの背後にあるページ モデル階層を示しています。
 
-![ページ モデルの図](../commerce/media/page-model-diagram.png)
+![ページ モデルの図。](../commerce/media/page-model-diagram.png)
 
 | エンティティ        | 基本機能 |
 |---------------|----------------|
@@ -98,7 +99,7 @@ ms.locfileid: "5804044"
 
 次の図は、プリセット レイアウトとカスタム レイアウトのシナリオを示しています。
 
-![プリセットおよびカスタム レイアウトのシナリオ](../commerce/media/template-figure1.png)
+![プリセットおよびカスタム レイアウトのシナリオ。](../commerce/media/template-figure1.png)
 
 プリセット レイアウトの使用を開始するには、[プリセット レイアウトの使用](work-with-layouts.md) を参照してください。
 

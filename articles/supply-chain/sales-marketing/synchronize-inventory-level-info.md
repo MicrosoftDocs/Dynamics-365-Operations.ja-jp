@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 15466699b94c284208330d50b840c874534b879c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ce5ddf863988475550584384f4cf26f1302768aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910283"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355904"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service への在庫レベル情報の同期 
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910283"
 
 このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫レベル情報を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 次のテンプレートと基本的なタスクは、Supply Chain Management から Field Service に手持在庫レベルの同期を実行するために使用されます。
@@ -89,7 +89,7 @@ Supply Chain Management は、在庫レベルのマスターとして機能し�
 
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>製品在庫 (Supply Chain Management から Field Service): 製品在庫
 
-[![データ統合のテンプレートのマッピング](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+[![データ統合のテンプレートのマッピング。](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

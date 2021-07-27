@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 056808b7d4d490bc4d60aa058108d159c1d4867c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b3a8fe37ae97cf3b14f5121274603cd30de3304b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826254"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356778"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>分割後の逓減残高による減価償却
 
@@ -37,7 +37,7 @@ ms.locfileid: "5826254"
 - 最初の会計年度の減価償却は USD18,000、月々の減価償却は USD150、そして資産は 2019 年 11 月まで USD738.75 の金額で償却されます。
 - 2019 年 11 月 には、資産の 80% が別の固定資産に分割されます。
 
-[![分割後の逓減残高による減価償却](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![分割後の逓減残高による減価償却。](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 元の資産に対して減価償却する金額は USD1,822.25 です。 この金額は、分割トランザクションが転記される前の (USD9,111.25) NBV、分割トランザクション (-USD8,000) の転記中に生成される取得原価調整、分割トランザクション中 (USD711) に生成される減価償却調整と等しくなります。 したがって、2 年目の減価償却は (1,822.25 × 18 パーセント) ÷ 12 = USD27.33です。
 

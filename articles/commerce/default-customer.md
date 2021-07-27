@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799182"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349605"
 ---
 # <a name="create-a-default-customer"></a>既定の顧客の作成
 
@@ -47,7 +47,7 @@ ms.locfileid: "5799182"
 
 次の図は、コンフィギュレーションされた複数の顧客グループを示しています。
 
-![顧客グループ](media/customer-groups.png)
+![顧客グループ。](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>顧客のアドレス帳の作成
 
@@ -63,7 +63,7 @@ ms.locfileid: "5799182"
 
 次の図は、アドレス帳の例を示しています。
 
-![アドレス帳](media/address-book.png)
+![アドレス帳。](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>既定の顧客の作成
 
@@ -86,11 +86,11 @@ ms.locfileid: "5799182"
 
 次の図は、顧客作成の例を示しています。
 
-![既定の顧客の作成](media/default-customer-creation.png)
+![既定の顧客の作成。](media/default-customer-creation.png)
 
 次の図は、既定の顧客のコンフィギュレーションを示しています。
 
-![顧客コンフィギュレーションのサンプル](media/default-customer-configuration1.png)
+![顧客コンフィギュレーションのサンプル。](media/default-customer-configuration1.png)
 
 顧客詳細画面の既定値のほとんどはそのままにすることができますが、2 つの値は変更する必要があります。
 
@@ -100,13 +100,13 @@ ms.locfileid: "5799182"
 
 次の図は、顧客のコンフィギュレーションの例を示しています。
 
-![顧客コンフィギュレーションの例](media/default-customer-configuration2.png)
+![顧客コンフィギュレーションの例。](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [チャネルの概要](channels-overview.md)
 
-[チャネル設定の前提条件](channels-prerequisites.md)
+[チャネルの設定の前提条件](channels-prerequisites.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

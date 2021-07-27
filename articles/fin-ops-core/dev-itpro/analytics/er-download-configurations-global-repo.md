@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6f74602cafe3f0848a9e03f17300ca6242fe1545
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 53d01756d803a0ebc9eb366deded4bf3bef3b1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351749"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする
 
@@ -40,7 +40,7 @@ ms.locfileid: "5893983"
 3. **コンフィギュレーション プロバイダー** セクションで、**Microsoft** タイルを選択します。
 3. **Microsoft** タイルで **リポジトリ** を選択します。
 
-    ![電子申告ワークスペース](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![電子申告ワークスペース。](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. **コンフィギュレーション リポジトリ** ページのグリッドで、**グローバル** タイプの既存のリポジトリを選択します。 このリポジトリがグリッドに表示されない場合は、次の手順に従います。
 
@@ -52,7 +52,7 @@ ms.locfileid: "5893983"
 
 5. **開く** を選択して、選択したリポジトリの ER コンフィギュレーションの一覧を表示します。
 
-    ![コンフィギュレーション レポジトリ ページ](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![コンフィギュレーション レポジトリ ページ。](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>単一のコンフィギュレーションをインポートする
 
@@ -63,7 +63,7 @@ ms.locfileid: "5893983"
     > [!NOTE]
     > **インポート** ボタンは、現在の Finance インスタンスにある ER コンフィギュレーション バージョンでは使用できません。
 
-    ![レポジトリ ページのコンフィギュレーション](./media/er-download-configurations-global-repo-repository-content.png)
+    ![コンフィギュレーション レポジトリ ページ。](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>フィルター処理されたコンフィギュレーションをインポートする
 
@@ -77,7 +77,7 @@ ms.locfileid: "5893983"
 4. **コンフィギュレーション** クイック タブで、**インポート** を選択し、フィルタ処理されたコンフィギュレーションをグローバル リポジトリから現在のインスタンスにダウンロードします。
 5. **コンフィギュレーション** クイック タブで、**フィルタのリセット** を選択し、指定された選択条件をクリーンアップします。
 
-    ![レポジトリ ページのコンフィギュレーション](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![コンフィギュレーション レポジトリ ページ。](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。 不整合の問題が検出されると、通知を受け取る場合があります。 インポートしたコンフィギュレーションのバージョンを使用する前に、問題を解決する必要があります。 詳細については、このトピックの関連リソースの一覧を参照してください。

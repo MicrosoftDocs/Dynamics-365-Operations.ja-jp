@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0d029773d9aa59b27f80d2f670984a352e163122
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6b8e3d129c40e33aeb91e823528a3bc89d2d9568
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743874"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351869"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>電子申告を使用したテストの自動化
 
@@ -59,7 +59,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 - テストの自動化をサポートするトポロジを配置します。 **システム管理者** ロールは、このトポロジのインスタンスへのアクセスが必要です。 このトポロジには、この例で使用するデモデータを含める必要があります。 詳細については、[継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md) を参照してください。
 - ユーザー受け入れと統合テストを自動的に実行するには、使用しているトポロジに RSAT をインストールし、適切な方法でコンフィギュレーションする必要があります。 RSAT をインストールして構成し、Finance and Operations アプリおよび Azure DevOpsと連携するように構成する方法の詳細については、[Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357) を参照してください。 このツールを使用するための前提条件に注意してください。 以下の図は、RSAT の設定の一例を表しています。 青い四角形は、Azure DevOpsへのアクセスを指定するパラメーターを囲みます。 緑色の四角形は、インスタンスへのアクセスを指定するパラメーターを囲みます。
 
-    ![RSAT 設定](media/GER-Configure.png "RSAT の設定ダイアログ ボックスのスクリーンショット")
+    ![RSAT 設定。](media/GER-Configure.png "RSAT の設定ダイアログ ボックスのスクリーンショット")
 
 - 正しい実行順序を保証するためにスイートでテスト ケースを整理し、さらにレポート作成および調査のためにテスト実行のログを収集するには、配置されたトポロジから Azure DevOps にアクセスできる必要があります。
 - このトピックの例を完了するには、[RSAT テストの ER 使用方法](https://go.microsoft.com/fwlink/?linkid=874684)をダウンロードしてください。 この zip ファイルには、次のタスク ガイドが含まれています。
@@ -78,7 +78,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     - **支払 モデル マッピング 1611** ER モデル マッピング コンフィギュレーション
     - **BACS (英国)** ER 形式のコンフィギュレーション
 
-    ![電子申告コンフィギュレーション](media/GER-Configurations.png "電子申告のンフィギュレーション ページのスクリーンショット")
+    ![電子申告コンフィギュレーション。](media/GER-Configurations.png "電子申告のンフィギュレーション ページのスクリーンショット")
 
 3. イギリスで国/地域のコンテキストを持つ **GBSI** デモ データの会社を選択してください。
 4. 買掛金勘定パラメーターのコンフィギュレーション
@@ -90,7 +90,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
         1. **ファイル形式** のクイック タブで、**一般的なエクスポート形式** のオプションを **はい** に設定します。
         2. **書式設定のコンフィギュレーションのエクスポート** フィールドで、**BACS (英国)** を選択します。
 
-    ![支払方法のページ](media/GER-APParameters.png "支払方法ページのスクリーンショット")
+    ![支払方法のページ。](media/GER-APParameters.png "支払方法ページのスクリーンショット")
 
     > [!NOTE]
     > カスタマイズをサポートするために作成された、この ER 形式の派生バージョンがある場合は、**電子** 支払方法でこのコンフィギュレーションを選択できます。
@@ -100,7 +100,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     1. **買掛金勘定 \> 支払 \> 支払仕訳帳** の順に移動します。
     2. 支払仕訳帳が転記されていないことを確認してください。
 
-        ![支払仕訳帳のページ](media/GER-APJournal.png "支払仕訳帳ページのスクリーンショット")
+        ![支払仕訳帳のページ。](media/GER-APJournal.png "支払仕訳帳ページのスクリーンショット")
 
     3. **明細行** を選択し、次の情報を含む行を入力します。
 
@@ -113,7 +113,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
         | 相手勘定      | GBSI OPER       |
         | 支払方法   | 電子      |
 
-    ![仕入先支払のページ](media/GER-APJournalLines.png "仕入先支払ページのスクリーンショット")
+    ![仕入先支払のページ。](media/GER-APJournalLines.png "仕入先支払ページのスクリーンショット")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>ER フレームワークを準備して仕入先支払処理をテストします。
 
@@ -122,7 +122,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 1. **組織管理 \> 電子申告 \> 電子申告パラメーター** の順に移動します。
 2. **添付ファイル** タブの **ベースライン** フィールドで、ドキュメント管理 (DM) フレームワークが DM 添付ファイルとしてベースライン機能に関連するドキュメントを保持するために使用するドキュメント タイプとして **ファイル** を選択します。
 
-    ![電子申告のパラメーター ページ](media/GER-ERParameters.png "電子申告パラメーター ページのスクリーンショット")
+    ![電子申告のパラメーター ページ。](media/GER-ERParameters.png "電子申告パラメーター ページのスクリーンショット")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>仕入先支払に関連するドキュメントのベースライン コピーの生成
 
@@ -139,7 +139,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     - **ファイル** テキスト形式の支払ファイル
     - **ERVendOutPaymControlReport** XLSX 形式の管理レポート ファイル
 
-    ![展開されたファイル](media/GER-APJournalProcessed.png "Windows エクスプローラーで展開されたファイル名のスクリーンショット")
+    ![展開されたファイル。](media/GER-APJournalProcessed.png "Windows エクスプローラーで展開されたファイル名のスクリーンショット")
 
 ### <a name="turn-on-the-er-baseline-feature"></a>ER ベースライン機能の有効化
 
@@ -177,7 +177,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     3. ローカルに XLSX 形式で保存された **ERVendOutPaymControlReport** 管理レポートを参照します。
     4. **説明** フィールドに、**支払 XLSX 管理レポート** と入力します。
 
-    ![仕入先支払ファイルと管理レポートのベースライン](media/GER-BaselineAttachments.png "支払 XLSX 管理レポートが選択されたコンフィギュレーション ページのスクリーンショット")
+    ![仕入先支払ファイルと管理レポートのベースライン。](media/GER-BaselineAttachments.png "支払 XLSX 管理レポートが選択されたコンフィギュレーション ページのスクリーンショット")
 
 8. ページを閉じます。
 9. **ベースライン** のクイックタブで、**新規** を選択して支払ファイルのベースラインをコンフィギュレーションします。
@@ -196,7 +196,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     4. **ファイル名マスク** フィールドに **\*.XLSX** と入力して、**.xslx** ファイル名拡張子を持つ **ERVendOutPaymControlReport** 形式コンポーネントの出力のみに、このベースラインを適用します。
     5. **ベースライン** フィールドで **支払 XLSX 管理レポート** を選択して、このベースラインが生成された出力との比較に使用できるようにします。
 
-    ![構成ページのベースライン クイック タブ](media/GER-BaselineRules.png "コンフィギュレーション ページのベースライン クイック タブのスクリーンショット")
+    ![構成ページのベースライン クイック タブ。](media/GER-BaselineRules.png "コンフィギュレーション ページのベースライン クイック タブのスクリーンショット")
 
 ## <a name="record-tests-to-validate-vendor-payment-processing"></a>仕入先支払処理を検証するテストの記録
 
@@ -226,15 +226,15 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 
 1. 処理された支払明細行の状態を **なし** に設定します。
 
-    ![タスク記録手順 3 から 4](media/GER-Recording1Review1.png "タスク記録手順 3 から 4 のスクリーンショット")
+    ![タスク記録手順 3 から 4。](media/GER-Recording1Review1.png "タスク記録手順 3 から 4 のスクリーンショット")
 
 2. **デバッグモードで実行** ER ユーザーパラメーターをオンにします。
 
-    ![タスク記録手順 9 から 10](media/GER-Recording1Review2.png "タスク記録手順 9 から 10 のスクリーンショット")
+    ![タスク記録手順 9 から 10。](media/GER-Recording1Review2.png "タスク記録手順 9 から 10 のスクリーンショット")
 
 3. 生成されたファイルとベースラインとの比較の結果を含む ER デバッグ ログをクリーンアップします。
 
-    ![タスク記録手順 13 から 15](media/GER-Recording1Review3.png "タスク記録手順 13 から 15 のスクリーンショット")
+    ![タスク記録手順 13 から 15。](media/GER-Recording1Review3.png "タスク記録手順 13 から 15 のスクリーンショット")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>仕入先支払処理をテストする手順の記録
 
@@ -253,21 +253,21 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 1. 仕入先支払の処理を開始します。
 2. 適切なランタイム パラメーターを選択し、管理レポートの生成をオンにします。
 
-    ![タスク記録手順 3 から 8](media/GER-Recording2Review1.png "タスク記録手順 3 から 8 のスクリーンショット")
+    ![タスク記録手順 3 から 8。](media/GER-Recording2Review1.png "タスク記録手順 3 から 8 のスクリーンショット")
 
 3. ER デバッグ ログにアクセスして、生成された出力を対応するベースラインと比較した結果を記録します。
 
     ER デバッグ ログでは、比較結果が **生成されたテキスト** フィールドに表示されます。 **形式コンポーネント** および **ログ エントリの原因となった形式パス** フィールドは、生成された出力とベースラインとが比較されたファイル コンポーネントを参照します。
 
-    ![電子申告実行ログ ページのエントリ](media/GER-ERDebugLog.png "電子申告実行ログ ページのエントリのスクリーンショット")
+    ![電子申告実行ログ ページのエントリ。](media/GER-ERDebugLog.png "電子申告実行ログ ページのエントリのスクリーンショット")
 
 4. 現在の出力とベースラインの比較は、**検証** タスク記録オプションを使用して **現在の値** を選択することによって記録されます。
 
-    ![現在の値と比較するための検証オプションの使用](media/GER-TRRecordValidation.png "現在の値と比較するための検証オプションの使用のスクリーンショット")
+    ![現在の値と比較するための検証オプションの使用。](media/GER-TRRecordValidation.png "現在の値と比較するための検証オプションの使用のスクリーンショット")
 
     次の図は、記録された検証手順がタスク記録でどのように表示されるかを示しています。
 
-    ![タスク記録手順 13 および 15](media/GER-Recording2Review2.png "タスク記録手順 13 および 15 のスクリーンショット")
+    ![タスク記録手順 13 および 15。](media/GER-Recording2Review2.png "タスク記録手順 13 および 15 のスクリーンショット")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>記録されたテストを Azure DevOps に追加する
 
@@ -284,7 +284,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     1. テスト ケースに **ER 形式 BACS (英国) を使用した仕入先支払のテスト処理** と名前を付けます。
     2. 以前にダウンロードした **処理** フォルダーから **記録 .xml** ファイルを添付します。
 
-    ![選択したテスト計画の新しいテスト ケース](media/GER-RSAT-DevOps-Tests-Passed.png "選択したテスト計画の新しいテスト ケースのスクリーンショット")
+    ![選択したテスト計画の新しいテスト ケース。](media/GER-RSAT-DevOps-Tests-Passed.png "選択したテスト計画の新しいテスト ケースのスクリーンショット")
 
 > [!NOTE]
 > 追加されたテストの正しい実行順序に注意してください。
@@ -296,14 +296,14 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 1. 現在のトポロジでローカル RSAT アプリケーションを開きます。
 2. **読み込み** を選択し、現在 Azure DevOps 内にあるテストを RSAT に読み込みます。
 
-    ![RSAT にロードされたテスト](media/GER-RSAT-RSAT-Tests-Loaded.png "RSAT にロードされたテストのスクリーンショット")
+    ![RSAT にロードされたテスト。](media/GER-RSAT-RSAT-Tests-Loaded.png "RSAT にロードされたテストのスクリーンショット")
 
 ### <a name="create-automation-and-parameters-files"></a>自動化とパラメーター ファイルの作成
 
 1. RSAT で、Azure DevOps から読み込んだテストを選択します。
 2. **新規** を選択して、RSAT の自動化とパラメーター ファイルを作成します。
 
-    ![RSAT で作成された RSAT の自動化およびパラメーター ファイル](media/GER-RSAT-RSAT-Tests-Initiated.png "RSAT で作成された RSAT の自動化およびパラメーター ファイルのスクリーンショット")
+    ![RSAT で作成された RSAT の自動化およびパラメーター ファイル。](media/GER-RSAT-RSAT-Tests-Initiated.png "RSAT で作成された RSAT の自動化およびパラメーター ファイルのスクリーンショット")
 
 ### <a name="modify-the-parameters-files"></a>パラメーター ファイルの変更
 
@@ -315,7 +315,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 6. 開いた Excel のブックの **一般** ワークシートで、会社コードを **GBSI** に変更します。
 7. **ERFormatMappingRunLogTable** ワークシートのセル A:3 および C:3 には、出力とベースラインの比較結果を検証するために使用される ER デバッグ ログ テーブル内のフィールドのテキストが含まれています。 これらのテキストは、テスト実行中に作成された ER デバッグ ログ レコードを評価するために使用されます。
 
-    ![ERFormatMappingRunLogTable ワークシート](media/GER-RSAT-RSAT-ExcelParameters.png "ERFormatMappingRunLogTable ワークシートのスクリーンショット")
+    ![ERFormatMappingRunLogTable ワークシート。](media/GER-RSAT-RSAT-ExcelParameters.png "ERFormatMappingRunLogTable ワークシートのスクリーンショット")
 
 ## <a name="run-the-tests-and-analyze-the-results"></a>テストの実行と結果の分析
 
@@ -330,11 +330,11 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 
 テストの実行結果は、RSAT に格納されます。 両方のテストが成功したことを確認します。
 
-![RSAT で成功したテスト](media/GER-RSAT-RSAT-Tests-Passed.png "RSAT で成功したテストのスクリーンショット")
+![RSAT で成功したテスト。](media/GER-RSAT-RSAT-Tests-Passed.png "RSAT で成功したテストのスクリーンショット")
 
 テストの実行結果は Azure DevOps にも送信されるので、さらに分析を行うことができます。
 
-![Azure DevOps でのテスト実行結果](media/GER-RSAT-DevOps-Tests-Added.png "Azure DevOps でのテスト実行結果のスクリーンショット")
+![Azure DevOps でのテスト実行結果。](media/GER-RSAT-DevOps-Tests-Added.png "Azure DevOps でのテスト実行結果のスクリーンショット")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>テストが失敗した場合のシミュレーション
 
@@ -357,15 +357,15 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 
 テストの実行結果は、RSAT に格納されます。 2 回目のテストは、2 回目の実行時に失敗していることを確認します。
 
-![RSAT で失敗したテスト結果](media/GER-RSAT-RSAT-Tests-Failed.png "RSAT で失敗したテスト結果のスクリーンショット")
+![RSAT で失敗したテスト結果。](media/GER-RSAT-RSAT-Tests-Failed.png "RSAT で失敗したテスト結果のスクリーンショット")
 
 テストの実行結果は Azure DevOps にも送信されるので、さらに分析を行うことができます。
 
-![Azure DevOps で失敗したテスト結果](media/GER-RSAT-DevOps-Tests-Failed.png "Azure DevOps で失敗したテスト結果のスクリーンショット")
+![Azure DevOps で失敗したテスト結果。](media/GER-RSAT-DevOps-Tests-Failed.png "Azure DevOps で失敗したテスト結果のスクリーンショット")
 
 各テストのステータスにアクセスできます。 実行ログにアクセスして、失敗の理由を分析することもできます。 次の図では、実行ログに、生成された支払ファイルとそのベースラインとの間のコンテンツの違いによって、エラーが発生したことが示されています。
 
-![Azure DevOps におけるエラー分析の実行ログ](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Azure DevOps におけるエラー分析の実行ログのスクリーンショット")
+![Azure DevOps におけるエラー分析の実行ログ。](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Azure DevOps におけるエラー分析の実行ログのスクリーンショット")
 
 したがって、既に説明したように、テスト プラットフォームとして RSAT を使用し、ER ベースライン機能を使用するタスク レコーダー ベースのテスト ケースを使用することで、あらゆる ER 形式の機能を自動的に評価できます。
 

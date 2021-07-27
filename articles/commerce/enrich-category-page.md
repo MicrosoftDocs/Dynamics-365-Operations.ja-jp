@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e18439fc0e91619cade33b83b87be0d5c4d1040
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d9470e4d517c5fb0b49ae2e26eb14220ea17aa3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799014"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349403"
 ---
 # <a name="enrich-a-category-landing-page"></a>カテゴリ ランディング ページの拡充
 
@@ -31,7 +31,7 @@ ms.locfileid: "5799014"
 
 ただし、既定のカテゴリ ページを使用する代わりに、コンテンツがより多く、より具体的な要素を持つ「拡充された」カテゴリのランディング ページを使用することもできます。 一般的な拡充には、カテゴリ固有のマーケティング コンテンツをカテゴリ ページに追加することが含まれます。 このコンテンツには、クロスセルを目的としたカテゴリ間の製品配置、編集リスト、画像、ビデオ、およびその他のテキストが含まれる場合があります。 既定のカテゴリ ページを変更するか、特定のカテゴリに対して別のカテゴリ ページを定義することができます。
 
-![拡充されたカテゴリ ランディング ページ](./media/CategoryLandingPages.png)
+![拡充されたカテゴリ ランディング ページ。](./media/CategoryLandingPages.png)
 
 Commerce のサイト ビルダーの **製品** ページには、サイトに割り当てられているチャネルのカテゴリの一覧が含まれています。 **拡充** ステータスがカテゴリ ページに選択されている場合は、そのカテゴリ ページは拡充されています。 それ以外の場合、カテゴリには既定のカテゴリ ページとコンテンツが使用されます。 カテゴリ名を選択して、カテゴリの拡充カテゴリ ページと非拡充カテゴリ ページの両方をプレビューできます。
 
