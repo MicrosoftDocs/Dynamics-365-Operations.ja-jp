@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 0956e7aa51973014ee474d97829d3d15dfdea3b3
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a641789adf27e51b7a3f8ab03269cc2e748eef96
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909946"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359814"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Field Service から Supply Chain Management へのプロジェクトの作業指示書の同期
 
@@ -29,7 +29,7 @@ ms.locfileid: "5909946"
 
 このトピックでは、Dynamics 365 Field Service から Dynamics 365 Supply Chain Management にワーク オーダーとプロジェクト番号を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
 使用されている **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)** テンプレートは、**ワーク オーダー (Field Service から Supply Chain Management)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Supply Chain Management の販売注文との同期](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
 
@@ -61,19 +61,19 @@ ms.locfileid: "5909946"
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderHeader
 
-[![データ統合のテンプレートのマッピング](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderHeaderProject
 
-[![データ統合のテンプレートのマッピング](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderProduct
 
-[![データ統合のテンプレートのマッピング](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderService
 
-[![データ統合のテンプレートのマッピング](./media/FSWOP4.png)](./media/FSWOP4.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWOP4.png)](./media/FSWOP4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

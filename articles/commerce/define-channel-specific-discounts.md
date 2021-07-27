@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4003bd78e400994f3c164d2f7e8e3aa5ce93146
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76b8111ddc9e634ce689999da7b8621f550afc5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802072"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349579"
 ---
 # <a name="define-channel-specific-discounts"></a>チャネル固有の割引の定義
 
@@ -37,7 +37,7 @@ Commerce は、チャネル固有の割引を定義するために価格グル�
 
 ## <a name="price-groups"></a>価格グループ
 
-[![価格グループ](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![価格グループ。](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 上記の図は、トランザクションで扱うことができるエンティティ (チャンネル、カタログ、加盟者、顧客、ロイヤルティ カード) とさまざまな設定可能な割引との間の関係を説明しています。 すべてのトランザクションはチャンネルで発生するため、あるトランザクションに対してチャンネルが存在することが保証されます。 残りのエンティティーはオプションです。 各マスター データ ページには、関連する価格グループのページへのリンクがあり、必要に応じて価格グループを表示および追加できます。 価格グループを使用すると、4 つの異なるエンティティ タイプを、割引、価格調整、売買契約に関連付けることができます。 価格グループの名前の付け方を戦略的に計画し、整理しておくことをお勧めします。 1 つの案は、文字または数字の接頭語や接尾辞を使用して、タイプを区別することです。 たとえば、1-xxxxx をチャンネルの価格グループに、2-xxxxx をカタログの価格グループに割り当てます。 4 つの照会ページが提供され、関連付いた割引がある可能性のある Commerce エンティティーをそれぞれ表示します。
 

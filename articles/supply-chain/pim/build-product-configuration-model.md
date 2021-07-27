@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 75083
+ms.custom:
+- "75083"
+- intro-internal
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d37b1c8ed23bf93f0480c76e10b8aaed86fe2a2
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: bbe809eb3c0149c907559a4b6c78e74159dcbcd5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347047"
 ---
 # <a name="product-configuration-overview"></a>製品コンフィギュレーションの概要
 
@@ -142,7 +144,7 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 
 次の API フロー ダイアグラムは、プロセスの概要を示します。  
 
-[![フロー図](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
+[![フロー図。](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
 ## <a name="configure-products"></a>製品のコンフィギュレーション
 

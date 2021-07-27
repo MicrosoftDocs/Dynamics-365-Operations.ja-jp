@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0462958d8225de145a8d886b096f96cd3f2cb5c5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b47f38375fc8925288db36f066ed7820bab3fe9b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799544"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353159"
 ---
 # <a name="create-a-variant-group"></a>バリアント グループの作成
 
@@ -61,7 +61,7 @@ Dynamics 365 Commerce は、製品に対して複数のバリアントをサポ�
 
 次の図は、「カジュアル シャツのサイズ」のサイズ グループの例を示しています。
 
-![サイズ グループの作成](media/create-variant-group.png)
+![サイズ グループを作成します。](media/create-variant-group.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

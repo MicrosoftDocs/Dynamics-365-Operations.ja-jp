@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 120a88790b7cdb6a8cfcf97cbafeced4685384f2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4795d11ac370003e48dc845c86ec8a5ba22aa86
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744666"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348658"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool を使用したデータ認識不可能テスト
 
@@ -30,7 +30,7 @@ ERP アプリケーションの機能の検証は、完全にデータ認識不�
 - ATL フレームワーク
 - Regression Suite Automation Tool (RSAT)
 
-[![テストの分類ピラミッド](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![テストの分類ピラミッド。](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>概要
 -   **SysTest フレームワーク** – SysTest フレームワークは、単体テストの書き込みに対して信頼性があります。 単体テストは一般にメソッドまたは関数のテストで、常にデータ認識不可能性があり、テストの一部として提供されている入力データにのみ依存しています。
@@ -42,7 +42,7 @@ ERP アプリケーションの機能の検証は、完全にデータ認識不�
     - o 請求書番号などを番号順序で、または =TEXT(NOW(),"yyyymmddhhmm") のような Microsoft Excel の関数により固有識別子入力をします。 この関数により、アクションが発生した時間を追跡できるように、毎分固有の番号が提供されます。 これは、製品受領書番号や仕入先請求書番号などの変数に使用することができます。 これらのテストは、復元を必要とせずに、同じデータベース上で幾度も継続して動作します。
     - 既定のオプションは **自動** であるため、常に環境の **編集モード** を設定して、最初のテスト ケースとして **読み取り** または **編集** を行います。**自動** オプションは常に以前の設定を使用することができ、信頼できないテストを引き起こすことがあります。 
  
-    [![オプション ページ、パフォーマンス タブ](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![オプション ページ、パフォーマンス タブ。](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - 一般的な検証の代わりに、特定のトランザクションに対するフィルター処理をした後にのみ検証します。 たとえば、レコード数について、検証が他のすべてのトランザクションを除外するように、トランザクション番号またはトランザクション日付に対してフィルター処理を行います。 
     - 顧客残高または予算チェックを確認している場合、値を先に保存してトランザクション値を追加することにより、固定の予測値を検証する代わりに、予測された結果を検証します。 

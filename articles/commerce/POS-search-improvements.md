@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796369"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345163"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>販売時点管理 (POS) での製品検索および顧客検索
 
@@ -36,7 +36,7 @@ Modern 販売時点管理 (MPOS) およびクラウド販売時点管理 (CPOS) 
 
 **カタログの変更** ページで、従業員が任意の店舗を容易に選択し、またはすべての店舗間で製品を検索することができます。
 
-![カタログを変更します](./media/Changecatalog.png "カタログを変更します")
+![カタログを変更します。](./media/Changecatalog.png "カタログを変更します")
 
 ローカル商品検索は、次の製品プロパティ内で検索します。
 
@@ -59,7 +59,7 @@ Modern 販売時点管理 (MPOS) およびクラウド販売時点管理 (CPOS) 
 - 小売業者は、ユーザーが製品名を入力すると検索候補を表示する製品検索をコンフィギュレーションできます。 この機能の新しい設定は、**製品検索** という名前のグループで、POS 機能プロファイルで使用できます。 設定は **入力中に検索提案を表示** と呼ばれます。 この機能は、全体の名前を手動で入力する必要がないため、従業員が検索している製品をすばやく見つけるのに役立ちます。
 - 製品検索アルゴリズムは、製品の **検索名** プロパティで検索された条件も検索するようになります。
 
-![製品候補](./media/Productsuggestions.png "製品候補")
+![製品候補。](./media/Productsuggestions.png "製品候補")
 
 ## <a name="customer-search"></a>顧客検索
 
@@ -83,7 +83,7 @@ Modern 販売時点管理 (MPOS) およびクラウド販売時点管理 (CPOS) 
 
 現在の会社でこれらの関係者用に顧客 ID が作成されていないため、他の法人から照会する顧客用に顧客 ID は表示されません。 ただし、従業員が顧客の詳細ページを開くと、システムは関係者の顧客 ID を自動的に生成し、また店舗の顧客アドレス帳を顧客に関連付けます。 したがって、後に行われるローカル店舗検索時には、顧客が表示されます。
 
-![グローバル顧客検索](./media/Globalcustomersearch.png "グローバル顧客検索")
+![グローバル顧客検索。](./media/Globalcustomersearch.png "グローバル顧客検索")
 
 ### <a name="additional-local-customer-search-capabilities"></a>ローカル顧客検索の追加機能
 
@@ -94,11 +94,11 @@ Modern 販売時点管理 (MPOS) およびクラウド販売時点管理 (CPOS) 
 
 従来の顧客検索は、複数のフィールド間で検索するため、時間がかかる場合があります。 代わりに、レジ担当者は名前、電子メール アドレス、または電話番号など、顧客の単一のプロパティで検索できます。 顧客検索アルゴリズムが使用するプロパティは *顧客検索条件* として総称されています。 システム管理者は、POS に表示されるショートカットとして 1 つまたは複数の条件を簡単にコンフィギュレーションできます。 検索は 1 つの条件に制限されているため、関連する検索結果のみが表示され、パフォーマンスは標準的な顧客検索のパフォーマンスに比べてより良いものです。 次の図に、POS での顧客検索ショートカットを示します。
 
-![顧客検索ショートカット](./media/SearchShortcutsPOS.png "顧客検索ショートカット")
+![顧客検索ショートカット。](./media/SearchShortcutsPOS.png "顧客検索ショートカット")
 
 ショートカットとして検索基準を設定するには、管理者がコマースで **コマース パラメーター** ページを開き、次に **POS 検索基準** タブで、ショートカットとして表示されるべきすべての基準を選択する必要があります。
 
-![検索ショートカットをコンフィギュレーション](./media/ConfigureShortcutsAX.png "検索ショートカットをコンフィギュレーション")
+![検索ショートカットをコンフィギュレーション。](./media/ConfigureShortcutsAX.png "検索ショートカットをコンフィギュレーション")
 
 > [!NOTE]
 > あまりに多くのショートカットを追加する場合は、POS の検索バーで、ドロップダウン メニューが雑然として、従業員の検索体験に影響する可能性があります。 必要な数のショートカットだけを追加するようお勧めします。

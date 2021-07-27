@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224100"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355349"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>電子レポートの式でサポートされる複合データ型
 
@@ -43,11 +43,11 @@ ER [マッピング](general-electronic-reporting.md#data-model-and-model-mappin
 
 次の図では、 **クラス** タイプの **System information(xInfo)** データソースを追加して **xInfo** アプリケーション クラスのインスタンスを作成し、その **productName()** メソッドを呼び出して現在のアプリケーションの名前を受け取る方法を表わしています。 現在のアプリケーションの名前は、ER データモデルの **ソフトウェア名 (SoftwareName)** フィールドに設定された `xInfo.productName` バインドの実行により、ランタイムに取得されます。 このバインドは、現在のモデル・マッピングで **システム情報 (xInfo)** データ ソースとして表現されている **xInfo** アプリケーション・クラスの `productName()` メソッドを呼び出します。
 
-[![ER モデル マッピング デザイナーでのクラス データ ソースの構成](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![ER モデル マッピング デザイナーでのクラス データ ソースの構成。](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 以下の図は、生成されたドキュメントに提供されたアプリケーション名を入れる ER フォーマットの設定です。 使用したデータモデルの **ソフトウェア名 (SoftwareName)** フィールドは、ER フォーマットの **softwareUsed** XML 要素の下に入れ子になっている **String** コンポーネントにバインドされます。 そのため、現在のアプリケーションの名前は、XML形式で生成されたドキュメントの **softwareUsed** XML要素にランタイムで配置されます。
 
-[![ER 形式デザイナでの電子発信ドキュメントの構造の構成](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![ER 形式デザイナでの電子発信ドキュメントの構造の構成。](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
 ## <a name="container"></a><a name="container"></a>コンテナー
 
@@ -60,7 +60,7 @@ ER [マッピング](general-electronic-reporting.md#data-model-and-model-mappin
 
 次の図は、**販売請求書** モデルのマッピングにおいて、*コンテナー* タイプの **ビットマップ (Image)** フィールドが、**コンテナー** タイプのデータモデル **ロゴ** フィールドにバインドされている様子を示しています。 このバインドにより、**SalesInvoice** ルート定義用に設計され、実行時にこのモデルマッピングを使用する任意の ER フォーマットで会社のロゴを使用できるようになります。
 
-[![ER モデル マッピング デザイナーでのコンテナー タイプのフィールドのバインド](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![ER モデル マッピング デザイナーでのコンテナー タイプのフィールドのバインド。](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>レコード
 
@@ -109,7 +109,7 @@ ER [マッピング](general-electronic-reporting.md#data-model-and-model-mappin
 
 次の図は、*オブジェクト* タイプの **ReportDataContract** データ ソースが、ソース コードから **プロジェクト請求書** モデル マッピングに生成された請求書に関する情報を渡すように追加する方法を示しています。 たとえば、請求書インスタンスのテキストは、実行コンテキストの一部として渡されます。 このテキストは、ER データモデルの **注記** フィールド用に設定された `ReportDataContract.parmInvoiceInstanceText` バインドの実行により、ランタイムにソースコードから取得されます。 このバインドは、現在のモデル・マッピングで **ReportDataContract** データ ソースとして表現されている **PSAProjInvoiceContract** アプリケーション・クラスの `parmInvoiceInstanceText()` メソッドを呼び出します。
 
-[![ER モデル マッピング デザイナーでのオブジェクト データ ソースの構成](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![ER モデル マッピング デザイナーでのオブジェクト データ ソースの構成。](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 実行コンテキストの詳細を、ソース コードから実行中の ER ソリューションに渡す方法については、 [設計されたレポートを呼び出すアプリケーション アーティファクトの開発](er-quick-start1-new-solution.md#DevelopCustomCode) を参照してください。
 

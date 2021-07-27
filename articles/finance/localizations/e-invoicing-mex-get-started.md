@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 26091a068ed15ec9ff14c9194c3e0e0ad0779351
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894886"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344785"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>メキシコ用電子請求の使用を開始する
 
@@ -56,7 +58,7 @@ RCS の設定を行う際には、次の作業を実行します :
     > [!NOTE]
     > 機能が一覧に表示されない場合は、**同期** を選択し、手順3 を繰り返します。
 
-![CFDI 請求書 (MX) 機能のインポート](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
+![CFDI 請求書 (MX) 機能をインポートします。](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
 
 グローバル レポジトリから **CFDI 請求書 (MX)** 機能をインポートすると、構成やアクションを含むすべての機能設定もインポートされます。
 
@@ -66,13 +68,13 @@ RCS の設定を行う際には、次の作業を実行します :
 
 - **電子請求機能** ページの **バージョン** タブで、**新規** を選択します。
 
-![新しい電子請求書機能のバージョンを追加する](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
+![新しい電子請求書機能のバージョンを追加します。](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
 
 ### <a name="update-the-configuration-version"></a>構成のバージョンを更新する
 
 1. **電子請求機能** ページの **構成** タブで、**追加** または **削除** を選択して、構成のバージョン (ER ファイル形式の構成) を管理します。
 
-    ![電子請求書機能の構成を管理する](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
+    ![電子請求書機能の構成を管理します。](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
 
     新しいバージョンを作成すると、すべての構成が最後に発行されたバージョンから継承されます。 CFDI 請求書を処理するには、次のコ構成が必要となります :
 
@@ -84,17 +86,17 @@ RCS の設定を行う際には、次の作業を実行します :
 
 2. 一覧で構成バージョンを選択し、**編集** または **表示** を選択すると、**形式デザイナ** ページが表示されます。このページで、構成の編集や表示をすることができます。
 
-    ![形式デザイナー ページを開く](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
+    ![形式デザイナー ページを開きます。](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
 3. **形式デザイナー** ページを使用して、ER 形式ファイルの構成を編集、確認します。 詳細については、[電子ドキュメントのコンフィギュレーションの作成](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md) を参照してください。
 
-    ![形式デザイナーのページ](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
+    ![形式デザイナー ページです。](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>電子請求書機能の設定を管理する
 
 - **電子請求機能**  ページの **設定** タブで、**追加** や **削除**、**編集** を選択して、電子請求機能の設定を管理します。
 
-![電子請求書機能の設定を管理する](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
+![電子請求書機能の設定を管理します。](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
 認証に使用する CFDI 請求書を送信するには (XML ファイルを生成し、XML ファイルを送信して応答を処理する) 、**売上請求書** 機能の設定が必要となります。
 
@@ -105,15 +107,15 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 1. **電子請求機能** ページ上の **設定** タブで、**機能の設定** 列で、**売上請求書** を選択します。
 2. **編集** を選択し、アクションや適用ルール、変数を構成します。
 
-    ![電子請求書機能の設定を編集する](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
+    ![電子請求書機能の設定を編集します。](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
 
 3. **機能のバージョン設定** ページで、**アクション** タブを選択してアクションの一覧を管理します。 アクションは、イベントを完全に実行するために、順番に従って実行する必要がある操作の一覧を定義します。
 
-    ![アクション タブ](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
+    ![アクション タブ。](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
 
-    | アクション ID | アクション                   | アクション名                                  | アクション説明                                          |
+    | アクション ID | 操作                   | アクション名                                  | アクション説明                                          |
     |-----------|--------------------------|----------------------------------------------|-------------------------------------------------------------|
-    | 1         | ドキュメントの変換       | CFDI デジタル署名を含まない電子請求書を生成する | CFDI 請求書を生成します。                                |
+    | 1         | ドキュメントを変換する       | CFDI デジタル署名を含まない電子請求書を生成する | CFDI 請求書を生成します。                                |
     | 2         | ドキュメントに署名            | デジタル署名                                 | 提出に使用する電子請求書にデジタル署名をします。                |
     | 3         | メキシコ PAC サービスの呼び出し | CFDI 電子請求書を送信する                        | Windows Communication Foundation (WCF) クライアントは、CFDI 電子請求書を送信します。 |
     | 4         | 応答の処理         | Web サービスの応答を分析する                 | Web サービスの応答を分析し、エラーログを返します。 |
@@ -133,7 +135,7 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 3. **有効開始** フィールドで、環境が有効になる日付を選択します。
 3. **有効化** を選択します。
 
-![電子請求書の環境を有効化する](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
+![電子請求書の環境を有効化します。](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
 
 ## <a name="change-the-version-status-to-completed"></a>バージョンの状態を完了に変更する
 
@@ -149,7 +151,7 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 1. **電子請求書機能**  ページで、 **バージョン** タブを選択して、**CFDI 請求書 (MX)** 機能の状態を管理します。
 2. **状態の変更** を選択して、機能の状態を変更します。
 
-![電子請求書機能の状態を変更する](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
+![電子請求書機能の状態を変更します。](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing--integration-in-finance"></a>財務における電子請求統合を設定する
 
@@ -171,7 +173,7 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 1. **組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動します。
 2. **機能** タブで、**MX-00010** と **MX-00016** の機能参照のそれぞれの行の **有効** チェック ボックスをオンにします。
 
-![CFDI の請求書の処理に使用する機能を有効にする](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
+![CFDI の請求書の処理に使用する機能を有効にします。](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
 
 ### <a name="import-er-configurations-and-set-up-the-response-types-for-updating-cfdi-invoices"></a>ER の構成をインポートして CFDI 請求書の更新に使用する応答タイプを設定する
 
@@ -221,7 +223,7 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 2. ドキュメントを初めて送信する場合は、必ず **ドキュメントの再送信** オプションを **いいえ** に設定してください。 サービスを使用してドキュメントを再送信する必要がある場合は、このオプションを **はい** に設定します。
 3. **含めるレコード** クイックタブで、**フィルター** を選択して **照会** ダイアログ ボックスを開きます。ここでは送信するドキュメントを選択するクエリを作成できます。
 
-![CFDI ドキュメントの送信](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
+![CFDI ドキュメントを送信します。](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
 > このサービスを利用して初めて書類を提出する際は、電子請求との接続を確認するように促されます。 **ここをクリックして電子ドキュメント送信サービスに接続する** を選択します。
@@ -237,11 +239,11 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 1. **組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの提出ログ** に移動します。
 2. **ドキュメント タイプ**  フィールドで、**顧客請求書仕訳帳** を選択して必要な電子ドキュメントをフィルター処理します。
 
-    ![提出書類のログを表示するドキュメント タイプの選択](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
+    ![提出書類のログを表示するドキュメント タイプを選択します。](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
 
 3. アクション ウィンドウで、**照会\> 提出の詳細** を選択して、提出実行ログの詳細を表示します。
 
-    ![提出書類ログの詳細を表示する](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
+    ![提出書類ログの詳細を表示します。](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
 
 提出書類ログの情報は、次の3つのクイック タブに分かれています :
 
@@ -259,7 +261,7 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 2. **設定可能な電子請求の統合** 機能が有効にした後に送信された CFDI 請求書を選択します。
 3. アクション ウィンドウの **履歴** タブで、**電子ドキュメント ログ** を選択します。
 
-![CFDI 請求書から送信ログを表示する](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
+![CFDI 請求書から送信ログを表示します。](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
 > **構成可能な電子請求の統合** 機能が有効になる前に送信された請求書の場合は、**履歴** ボタンを使用できます。 **構成可能な電子請求の統合** 機能が有効になった後に送信された請求書の場合は、**履歴** ボタンは使用できません。
@@ -282,11 +284,11 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 
     **関連する提出書類** ページには、特定の CFDI 請求書に関連する提出書類とその提出書類の状態が表示されます。 次の図では、最初の行は、CFDI 請求書の承認を要求する提出書類を表します。 2 行目は、その CFDI 請求書を取り消しした提出書類を表します。
 
-    ![取り消し提出ログを表示する](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
+    ![取り消し提出ログを表示します。](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
 
 4. アクション ウィンドウで、**照会\> 提出の詳細** を選択して、提出実行ログの詳細を表示します。
 
-    ![提出書類の取り消しログの詳細を表示する](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
+    ![提出書類の取り消しログの詳細を表示します。](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>プライバシー通知
 **CFDI メキシコの電子請求 (MX)** 機能を有効にするには、組織の税務登録 ID を含む一部のデータの送信が必要となる場合があります。 これは、政府の web サービスとの統合に必要な所定の形式で、この税務当局に電子請求書を送信する目的で、税務当局から権限を与えられた第三者機関に送信されます。 管理者は、**組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動して、**CFDI メキシコの電子請求 (MX)** 機能を有効または無効にすることができます。 **機能** タブを選択し、**CFDI メキシコの電子請求 (MX)** 機能を含む行を選択して、適切な選択を行います。 これらの外部システムから Dynamics 365 のオンライン サービスにインポートされたデータは、当社の [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=512132) の対象となります。 詳細については、各国固有の機能説明書のプライバシーに関する注意事項を参照してください。

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936783"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349653"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>ユーザーのサインインに対するカスタム ページの設定
 
@@ -40,7 +40,7 @@ Dynamics 365 Commerce で作成されたカスタム ページを利用してユ
 
 Azure AD B2C テナントを設定し、コマース環境に関連付けた後、Azure ポータル **Azure AD B2C** ページに移動し、メニューの **ポリシー** で、**ユーザー フロー (ポリシー)** を選択します。
 
-![メニューのユーザー フロー (ポリシー) コマンド](./media/B2C_CustomPage_PoliciesMenu.png)
+![メニューのユーザー フロー (ポリシー) コマンド。](./media/B2C_CustomPage_PoliciesMenu.png)
 
 「登録してサインイン」、「プロファイル編集」、および「パスワード リセット」 ユーザー サインイン フローをコンフィギュレーションできるようになりました。
 
@@ -54,13 +54,13 @@ Azure AD B2C テナントを設定し、コマース環境に関連付けた後�
 1. **属性の収集** の列で、**電子メール アドレス**、**指定された名前**、および **姓** のチェック ボックスをオンにします。
 1. **返品クレーム** の列で、**電子メール アドレス**、**指定された名前**、**ID プロバイダー**、**姓**、および **ユーザー オブジェクト ID** のチェック ボックスをオンにします。
 
-    ![選択された属性とクレーム](./media/B2C_SignInSignUp_Attributes.png)
+    ![選択された属性とクレーム。](./media/B2C_SignInSignUp_Attributes.png)
 
 1. **OK** を選択してポリシーを作成します。
 1. 新しいポリシー名をダブルクリックし、ナビゲーション ウィンドウで **プロパティ** を選択します。
 1. **JavaScript を使用したページ レイアウト (プレビュー) を有効にする** のオプションを **オン** に設定します。
 
-    ![新しいポリシーのプロパティ ページ](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![新しいポリシーのプロパティ ページ。](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > ポリシー名は、コマース環境で完全に参照されます。 (**B2C\_1\_** の接頭語は参照に含まれます。) 作成したポリシーの名前を変更することはできません。 既存のコマース環境のポリシーを置き換える場合は、元のポリシーを削除して、同じ名前の新しいポリシーを作成することができます。 または、環境が既にプロビジョニングされている場合は、サービス要求を通じて新しいポリシー名を送信することもできます。
@@ -150,7 +150,7 @@ Azure ポータルで、**Azure AD B2C** ページに戻り、メニューの **
     1. **電子メール アドレス**、**名**、**姓** の属性に対して、**オプション** 列で、**いいえ** を選択します。
 1. **保存** を選択します。
 
-    ![ローカル アカウントの登録ページ ポリシーの構成](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![ローカル アカウントの登録ページ ポリシーの構成。](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>カスタム ページ情報で「プロファイル編集」ポリシーを更新する
 
@@ -188,11 +188,11 @@ Azure ポータルで、**Azure AD B2C** ページに戻り、メニューの **
 
 たとえば、パスワード リンクを忘れた場合の既定のテキストは **パスワードをお忘れですか** です。 以下は、サインイン ページに表示される既定のテキストを示しています。
 
-![サインイン ページでパスワード リンクを忘れた場合の既定のテキスト](./media/B2C_SignUp_ModuleFace.png)
+![サインイン ページでパスワード リンクを忘れた場合の既定のテキスト。](./media/B2C_SignUp_ModuleFace.png)
 
 ただし、モジュール ライブラリ サインイン モジュールの global.json ファイルでは、次の図に示すように、**パスワードをお忘れですか？** のテキストを編集することができます。
 
-![サインイン モジュール global.json ファイルの更新されたリンク テキスト](./media/B2C_CustomizingStringsForModule.png)
+![サインイン モジュールの global.json ファイルの更新されたリンク テキスト。](./media/B2C_CustomizingStringsForModule.png)
 
 global.json ファイルを更新して変更内容を公開すると、コマースとライブ サインイン ページの両方のサイン イン モジュールに新しいリンク テキストが表示されます。
 

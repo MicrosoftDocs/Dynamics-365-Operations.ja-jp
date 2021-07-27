@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224101"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355325"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>電子レポート形式でサポートされるプリミティブ データ型
 
@@ -112,13 +112,13 @@ Datetimes は、次の関数を使用して開始できます。
 
 次の図は、編集可能なERデータ モデルに **CustVendCorrectiveReasonCode** モデル列挙体を追加する方法を示しています。
 
-[![ER データ モデル デザイナーでモデルの列挙を構成する](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![ER データ モデル デザイナーでモデルの列挙を構成する。](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 モデルの *列挙* は、*モデル* が導入されたデータ モデルの下で作成された ER モデル マッピングおよび ER 形式の式で使用できます 。
 
 次の図は、**編集可能な ER 形式に Natura 逆請求サブ カテゴリー** の一覧の書式列挙を追加する方法を示しています。
 
-[![ER 形式デザイナーで形式の列挙を構成する](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![ER 形式デザイナーで形式の列挙を構成する。](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 形式の *列挙* は、*列挙* が導入された ER 形式の式でのみ使用できます。
 
@@ -126,15 +126,15 @@ Datetimes は、次の関数を使用して開始できます。
 
 - アプリケーションの列挙には、**Dynamics 365 for Operations \ 列挙** と **一般 \ ユーザー入力パラメータ** のデータ ソースを使用してアクセスできます。 次の図は **NoYes** アプリケーションの列挙を参照する編集可能な ER 形式 **appenumNoYes** データソースと **uipNoYes** データソースに追加する方法を示しています。
 
-    [![ER 形式デザイナーでのアプリケーション列挙データ ソースの追加](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![ER 形式デザイナーでのアプリケーション列挙データ ソースの追加。](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - データ モデルの列挙には、データ **モデル \ 列挙** および **データ モデル \ 列挙のユーザー入力パラメーター** データ ソースを使用してアクセスできます。 次の図は **CustVendCorrectiveReasonCode** データモデルの列挙を参照する編集可能な ER 形式 **CustVendCorrectiveReasonCode** データソースに追加する方法を示しています。
 
-    [![ER 形式デザイナーでのアプリケーション列挙データ ソースの追加](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![ER 形式デザイナーでのアプリケーション列挙データ ソースの追加。](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - データ モデルの列挙には、データ **モデル \ 列挙** および **データ モデル \ 列挙のユーザー入力パラメーター** データ ソースを使用してアクセスできます。 次の図は **Natura reverse charge subcategories** 形式の列挙を参照する編集可能な ER 形式 **NaturaReverseCharge** データソースに追加する方法を示しています。
 
-    [![ER 形式デザイナーでのアプリケーション列挙データ ソースの追加](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![ER 形式デザイナーでのアプリケーション列挙データ ソースの追加。](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 *ブール値* に暗黙的な変換はありません。 [TEXT](er-functions-text-text.md) 変換関数を使用すると *列挙* をテキスト文字列に変換することができます。 この変換は言語に依存しません。 *列挙* 値を適切な言語固有のラベルに関連付ける方法については、[LISTOFFIELDS](er-functions-list-listoffields.md) 関数と [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md) 関数の使用例を参照してください。
 

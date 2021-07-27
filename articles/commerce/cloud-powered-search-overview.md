@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b5182df9d45a3b5d2572a5b6b391c924ef23bf9a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b7e8a37e31201845b94547850b8979a103f0729e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800424"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352667"
 ---
 # <a name="cloud-powered-search-overview"></a>クラウドを利用した検索の概要
 
@@ -41,7 +41,7 @@ Dynamics 365 Commerce 検索エクスペリエンスの機能が改善され、�
 
 次の図は、一般的な参照と検索の機能の例を示しています。
 
-![検索のランディング ページ](./media/SearchLanding.png)
+![ランディング ページを検索します。](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>ファセットナビゲーションと選択の概要 
 
@@ -51,7 +51,7 @@ Dynamics 365 Commerce 検索エクスペリエンスの機能が改善され、�
 
 次の図は、ファセット ナビゲーションが検索で使用されている例を示しています。
 
-![選択の概要](./media/ChoiceSummary.png)
+![選択の概要。](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>没入型の自動提案
 
@@ -61,7 +61,7 @@ Dynamics 365 Commerce では、さまざまなカテゴリでのキーワード�
 
 次の図は、没入型の自動提案が使用されている例を示しています。
 
-![没入型の自動提案](./media/ImmersiveAutoSuggestUX.png)
+![没入型の自動提案。](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>並べ替え
 
@@ -69,7 +69,7 @@ Dynamics 365 Commerce の強化された並べ替えにより、顧客は検索�
 
 >[!NOTE]
 >これらのクラウドを利用した検索機能は、バージョン 10.0.8 以降で使用できます。 **コマース パラメーター > コンフィギュレーション パラメーター** で、「ProductSearch.UseAzureSearch が "true" に設定」されたエントリがあることを確認します。 
-![クラウドを利用した検索のためのコンフィギュレーション パラメーター](./media/CloudPoweredSearchConfigurationParameters.png)
+![クラウドを利用した検索のためのコンフィギュレーション パラメーター。](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

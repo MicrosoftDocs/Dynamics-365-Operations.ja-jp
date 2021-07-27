@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188937"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350501"
 ---
 # <a name="routes-and-operations"></a>工順と工程
 
@@ -45,7 +45,7 @@ ms.locfileid: "6188937"
 
 簡易工順は連続しており、工順の開始点は 1 つだけです。  
 
-[![簡易工順](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![簡易工順。](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 生産管理パラメータで簡易工順のみを有効にすると、工順の定義時に Supply Chain Management により工程番号 (10、20、30 など) が自動的に生成されます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "6188937"
 
 生産管理パラメータでより複雑な工順ネットワークを有効にすると、複数の開始点がある工順および並行して実行可能な工程を定義できます。  
 
-[![工順ネットワーク](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![工順ネットワーク。](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - 各工程は後続工程を 1 つだけ使用でき、全体の工順は 1 つの工程で終了する必要があります。
@@ -64,7 +64,7 @@ ms.locfileid: "6188937"
 
 工程を実行するために、異なる特性を持つ複数の運営リソースの組み合わせが必要な場合もあります。 たとえば、ある組み立て工程では機械、工具、工程を監督する作業者が機械 2 台ごとに 1 人必要です。 この例は、1 つの工程を基本工程とし、その他を副次と指定する並行工程を用いてモデル化できます。  
 
-[![基本工程と二次工程がある工順](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![基本工程と二次工程がある工順。](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 通常、基本工程はボトルネック リソースを表し、二次工程の実行時間を決めます。 ただし、有限能力でスケジューリングする際には、基本工程と二次工程の両方にスケジューリングされたリソースが同時に利用可能で自由な機能を持っている必要があります。  
 

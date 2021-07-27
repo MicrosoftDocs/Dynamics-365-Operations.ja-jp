@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
-ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
+ms.openlocfilehash: 460297651f2766f96c34b258edbe94a7114ee090
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6168732"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343961"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定要件
 
@@ -36,7 +36,7 @@ ms.locfileid: "6168732"
 
 次の図に示すようにすべての要素は、サイズ設定に寄与します。 より詳細な情報が収集されるほど、より正確にサイジングを決定することができます。 ハードウェアのサイジングは、データをサポートしていないため、不正確になる可能性があります。 必要なデータの絶対最小要件は、1 時間あたりの見積ピーク トランザクション明細行数です。
 
-[![オンプレミス環境のハードウェアのサイズ設定](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![オンプレミス環境のハードウェアのサイズ設定。](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 左から右に見ると、サイジングを正確に推定するために必要な最初の最も重要な要素は、トランザクション プロファイルまたはトランザクション特性です。 1 時間あたりのピーク トランザクション量を常に検索することは重要です。 複数のピーク期間がある場合は、これらの期間を正確に定義する必要があります。
 

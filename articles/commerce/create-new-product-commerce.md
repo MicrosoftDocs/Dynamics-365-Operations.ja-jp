@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795718"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352425"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Commerce での新しい製品の作成
 
@@ -49,13 +49,13 @@ ms.locfileid: "5795718"
 
 次の図は、製品が追加された例を示しています。
 
-![製品の作成](media/create-new-product.png)
+![製品を作成します。](media/create-new-product.png)
 
 製品を追加すると、**製品説明**、**バリアント グループ**、**分析コードグループ**、**製品属性**、**関連製品** などの追加データを設定できます。
 
 次の図は、製品の詳細を示しています。
 
-![製品の詳細](media/create-new-product-2.png)
+![製品の詳細。](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>製品バリアントの作成
 
@@ -74,23 +74,23 @@ ms.locfileid: "5795718"
 
 1. 製品ページで、**リリース製品** を選択します。
 
-    ![製品をリリース](media/create-new-product-3.png)
+    ![リリース製品。](media/create-new-product-3.png)
 
 1. リリースする製品を選択し、**次へ** を選択します。
 
-    ![リリースする製品を選択](media/create-new-product-4.png)
+    ![リリースする製品を選択します。](media/create-new-product-4.png)
 
 1. リリースする製品バリアントのセットを選択し、**次へ** を選択します。
 
-    ![リリースするバリアントを選択](media/create-new-product-5.png)
+    ![リリースするバリアントを選択します。](media/create-new-product-5.png)
 
 1. 法人を選択し、**次へ** を選択します。
 
-    ![法人の選択](media/create-new-product-6.png)
+    ![法人を選択します。](media/create-new-product-6.png)
 
 1. **完了** を選択します。
 
-    ![製品リリース完了](media/create-new-product-7.png)
+    ![製品リリースを完了します。](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>リリースされた製品をコンフィギュレーションする
 
@@ -105,11 +105,11 @@ ms.locfileid: "5795718"
 
 次の図は、リリースされた製品のコンフィギュレーションの例を示しています。
 
-![リリースされた製品をコンフィギュレーションする](media/create-new-product-8.png)
+![リリースされた製品をコンフィギュレーションします。](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
-[法人の作成](channels-legal-entities.md)
+[法人を作成します](channels-legal-entities.md)
 
 [バリアント グループの作成](create-variant-group.md) 
 

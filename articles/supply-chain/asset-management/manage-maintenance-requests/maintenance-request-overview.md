@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c72a16b8f3865129ad737c511e50eb34c9f2e91
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 536f512abc2b7ce74ebc35dfdaf48e812a85cc2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015881"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344247"
 ---
 # <a name="maintenance-requests"></a>メンテナンス要求
 
@@ -40,7 +40,7 @@ ms.locfileid: "6015881"
 
 メンテナンス要求を表示するには、**資産管理**\>**共通**\>**メンテンナンス要求**\>**すべてのメンテナンス要求**、**有効なメンテナンス要求**、または **個人用の機能的な場所のメンテナンス要求** を選択します。 各リスト ページには、メンテナンス要求に関連する情報の一部が表示されます。
 
-![メンテナンス要求の表示](media/01-manage-maintenance-requests.png)
+![メンテナンス要求の表示。](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > **個人用の機能的な場所のメンテナンス要求** リスト ページを使用して、作業者として関連付けられている機能的な場所、またはその機能的な場所に導入されている資産を含むメンテナンス要求のリストを表示します。 (メンテナンス作業者の機能的な場所を設定する方法については、[メンテナンス作業者および作業者グループ](../setup-for-objects/workers-and-worker-groups.md) を参照してください。)
@@ -49,7 +49,7 @@ ms.locfileid: "6015881"
 
 レコードの詳細ビューを開くには、**すべてのメンテナンス要求** リスト ページのグリッド ビューで、**メンテナンス要求** 列のリンクを選択します。
 
-![メンテナンス要求の詳細の表示](media/02-manage-maintenance-requests.png)
+![メンテナンス要求の詳細の表示。](media/02-manage-maintenance-requests.png)
 
 アクション ウィンドウのボタンはタブで整理されます。 次のテーブルで、資産管理に関連するボタンについて簡単に説明します。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56319035ac092a376f0766c20eee71af6256b6f9
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 5f96302735e8aa1acf5c81992cb4cb49ff4a03ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352497"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境での BOPIS のコンフィギュレーション
 
@@ -54,7 +54,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 4. **ダウンロード** を選択し、**Retail Modern POS** を選択します。 
 5. **ModernPOSSetup** ファイルのダウンロードが完了したら、**ファイルを開く** を選択します。
 
-    ![ファイルを開きます](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![ファイルを開きます。](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. インストール プロセスを開始するには、**次へ** を選択します。 インストールが完了したら、**閉じる** を選択します。
 

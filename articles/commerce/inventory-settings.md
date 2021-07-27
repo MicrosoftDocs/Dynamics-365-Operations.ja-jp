@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3da447c298993794afa49a0fbaddb1c21cf6231a
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 46e59c8253ae5e4de54d56a45a142194ce38cf54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271308"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357861"
 ---
 # <a name="apply-inventory-settings"></a>在庫設定の適用
 
@@ -68,15 +68,15 @@ Commerce では、在庫設定はサイト ビルダーの **サイト設定 \> 
 
 次の図の例では、PDP に在庫あり (「利用可」) メッセージが示されています。
 
-![在庫ありメッセージがある PDP モジュールの例](./media/pdp-InStock.png)
+![在庫ありメッセージがある PDP モジュールの例。](./media/pdp-InStock.png)
 
 次の図の例では、PDP に「在庫なし」メッセージが示されています。
 
-![在庫切れメッセージがある PDP モジュールの例](./media/pdp-outofstock.png)
+![在庫切れメッセージがある PDP モジュールの例。](./media/pdp-outofstock.png)
 
 次の図の例では、カートに在庫あり (「利用可」) メッセージが示されています。
 
-![在庫ありメッセージがある買い物カゴモジュールの例](./media/cart-instock.png)
+![在庫ありメッセージがある買い物カゴモジュールの例。](./media/cart-instock.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

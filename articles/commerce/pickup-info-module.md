@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9428eda880d534c700646b52310c6b8befdebaf2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804408"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353807"
 ---
 # <a name="pickup-information-module"></a>集荷情報モジュール
 
@@ -40,7 +40,7 @@ Commerce 本社では、適切な店舗の集荷時間帯がコンフィギュ�
 
 次の図は、チェックアウト ページの集荷情報モジュールを使用した時間帯の選択例を示しています。
 
-![チェックアウト ページの集荷情報モジュールの例](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![チェックアウト ページの集荷情報モジュールの例。](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>モジュール プロパティ
 
@@ -56,7 +56,7 @@ Commerce 本社では、適切な店舗の集荷時間帯がコンフィギュ�
 
 次の図は、集配明細行品目の時間帯を含む電子商取引のチェックアウト ページの例を示しています。
 
-![集配明細行品目の時間帯を含む電子商取引のチェックアウト ページの例](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![集配明細行品目の時間帯を含む電子商取引のチェックアウト ページの例。](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>追加リソース
 

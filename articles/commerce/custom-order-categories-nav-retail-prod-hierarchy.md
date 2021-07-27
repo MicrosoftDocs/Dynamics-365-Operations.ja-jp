@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: de8840b92307ba63d6d0c2cfa90536bd00696ec3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937065"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349677"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>販売促進エンティティの並べ替え順序の変更
 
@@ -51,9 +51,9 @@ ms.locfileid: "5937065"
 
 チャネル ナビゲーション階層の表示順序は、Commerce 製品階層およびカテゴリ別のリリース済製品に対して HQ で反映されます。
 
-![負の値でカスタム並べ替えされた製品階層](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![負の値でカスタム並べ替えされた製品階層。](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![製品階層に基づいてカスタム並べ替えされた、カテゴリ別のリリース済製品](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![製品階層に基づいてカスタム並べ替えされた、カテゴリ別のリリース済製品。](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>チャネル ナビゲーション階層でのカテゴリに対する表示順序のコンフィギュレーション
 
@@ -77,11 +77,11 @@ ms.locfileid: "5937065"
 
 チャネル ナビゲーション階層の表示順序は HQ、カタログ、およびチャネルで反映されます。
 
-![カスタム並べ替えされたチャネル ナビゲーション階層](./media/ChannelNavCustomSorted.png)
+![カスタム並べ替えされたチャネル ナビゲーション階層。](./media/ChannelNavCustomSorted.png)
 
-![チャネル ナビゲーション階層に基づいてカスタム並べ替えされた、カタログ ナビゲーション階層](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![チャネル ナビゲーション階層に基づいてカスタム並べ替えされた、カタログ ナビゲーション階層。](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![カスタム並べ替えされたカテゴリを含む POS](./media/POSChannelCategoriesCustomSorted.png)
+![カスタム並べ替えされたカテゴリを含む POS。](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > 既定では、カスタム並べ替え順序機能が無効になっています。 この機能およびその他の機能を有効にする方法については、[機能管理](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview) を参照してください。

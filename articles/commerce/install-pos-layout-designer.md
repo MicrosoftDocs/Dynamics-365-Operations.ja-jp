@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e4d18d6fcf54fc74382f0d7d344de2aa74252ae4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7ac1495f12a51d72a90ad88fc2d8e0a574418467
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796999"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345137"
 ---
 # <a name="install-the-pos-layout-designer"></a>POS レイアウト デザイナーのインストール
 
@@ -40,7 +40,7 @@ MPOS、またはクラウド POS のグラフィカル デザイン インター
 5. インストールが完了したら、**サインイン** ページで Commerce のユーザー名とパスワードを入力し、**サインイン** をクリックしてデザイナーを開始します。
 6. ログイン情報が認証されデザイナーを開始した後に、独自のレイアウトを作成するか、または既存のレイアウトを変更することができます。
 
-    [![ワンクリック デザイナーでレイアウトする](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
+    [![ワンクリック デザイナーでレイアウトする。](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
 ## <a name="troubleshoot-the-installation-of-the-layout-designer"></a>レイアウト デザイナーのインストールに関するトラブルシューティング
 

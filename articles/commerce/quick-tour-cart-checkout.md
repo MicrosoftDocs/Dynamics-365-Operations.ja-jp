@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 81cbabb2499fc0fdf3c043c9b15e4429b036e3c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027942"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352039"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>買い物カゴとチェック アウト ページの概要
 
@@ -37,7 +38,7 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 
 以下の図は、モジュール ライブラリおよび 「Fabrikam」 のテーマを使用してビルドされた買い物カゴのページの例を示します。
 
-![買い物カゴのページの例](./media/cart2.PNG)
+![買い物カゴのページの例。](./media/cart2.PNG)
 
 買い物カゴ ページの本文には、顧客が買い物カゴに追加したすべての品目が表示されます。 適用できる割引すべてが表示されます。 これらの割引には、複雑な割引が含まれます。 例には、「3 つの品目を購入し、10% の割引」 または「ボトル 1 本とリュックサックを購入し、10% の割引」が含まれます。 注文集計モジュールは、割引、出荷、税などが適用された後の金額を表示します。 また、プロモーション コード モジュールにより、プロモーション コードの適用または削除ができます。
 
@@ -53,7 +54,7 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 
 以下の図は、モジュール ライブラリを使用してビルドされたチェックアウト ページの例を示します。
 
-![チェックアウト ページの例](./media/Checkout.PNG)
+![チェックアウト ページの例。](./media/Checkout.PNG)
 
 チェックアウト ページの本文では、すべての注文情報が収集されます。 この情報には、出荷先住所、出荷オプション、および支払情報が含まれます。 処理する特定の注文に情報を入力する必要があるため、チェックアウトにはステップバイステップ フローがあります。 たとえば、出荷コストを計算して支払を承認できるようにするために、出荷先住所を入力する必要があります。
 

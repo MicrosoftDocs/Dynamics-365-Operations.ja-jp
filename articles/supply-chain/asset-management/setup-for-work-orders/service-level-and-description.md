@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb342e700c9390e1eb9f2a9e9d67b874b3e19b8e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d50955d510dca21c3de160fd280ff53ba54926a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808259"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356467"
 ---
 # <a name="service-level-and-description"></a>サービス レベルと説明
 
@@ -45,7 +45,7 @@ ms.locfileid: "5808259"
 8. 終了日に加えてワーク オーダーに終了時刻を設定するには、**終了時刻の設定** オプションを **はい** に設定します。 次に、**終了時刻** フィールドに終了時刻を入力します。 このオプションを **いいえ** に設定した場合は、現在の時刻が使用されます。
 9. **保存** を選択します。
 
-![作業指示書サービス レベル ページ](media/19-setup-for-work-orders.png)
+![作業指示書サービス レベル ページ。](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>説明の作成
 

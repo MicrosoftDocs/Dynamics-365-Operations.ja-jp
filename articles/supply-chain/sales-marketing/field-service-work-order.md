@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 15a61b1fe4a267552708fa02fe482f7702668e06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc656c6339da92deceff2f8861fd8570171b7a2d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824969"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345551"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 
@@ -31,7 +31,7 @@ ms.locfileid: "5824969"
 
 このトピックでは、Dynamics 365 Field Service のワーク オーダーを Dynamics 365 Supply Chain Management の販売注文に同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
@@ -245,31 +245,31 @@ Field Service および Supply Chain Management の統合をサポートする�
 
 フィルター: (msdyn_systemstatus ne 690970005) および (msdyn_systemstatus ne 690970000) および (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![データ統合のテンプレートのマッピング](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderServiceLineEstimate
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および (msdyn_linestatus eq 690970000) および (msdynce_headersystemstatus ne 690970004)
 
-[![データ統合のテンプレートのマッピング](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderServiceLineUsed
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および ((msdyn_linestatus eq 690970001) または(msdynce_headersystemstatus eq 690970004))
 
-[![データ統合のテンプレートのマッピング](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderProductLineEstimate
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および (msdyn_linestatus eq 690970000) および (msdynce_headersystemstatus ne 690970004) および (msdyn_allocated eq true)
 
-[![データ統合のテンプレートのマッピング](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderProductLineUsed
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および ((msdyn_linestatus eq 690970001) または (msdynce_headersystemstatus eq 690970004) または (msdyn_allocated ne true))
 
-[![データ統合のテンプレートのマッピング](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

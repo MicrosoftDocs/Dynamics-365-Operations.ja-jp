@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a3b9a8b5775d2001f3384480e2f9593f2dfa8b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 74c845cf5ce361b0e9594863cdfca98d9cb9b0ca
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752415"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356322"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
 
@@ -92,7 +92,7 @@ ms.locfileid: "5752415"
 59. [属性を加える] をクリックします。
 60. [名称] フィールドに説明を入力します。
 61. [OK] をクリックします。
-![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format1.png)
+![ER Operations デザイナーのページ。](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>レポートエレメントをデータソースにマッピングする
 1. [マッピング] タブをクリックします。
@@ -139,9 +139,9 @@ ms.locfileid: "5752415"
 42. ツリーで、「Root: XML Element\Company: XML Attribute」を選択します。
 43. ツリーで、「model: Data model Financial dimensions sample model\Company: String」を選択します。
 44. [バインド] をクリックします。
-45. [保存] をクリックします。
+45. 保存 をクリックします。
 46. ページを閉じます。
-![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format2.png)
+![ER Operations デザイナーのページ。](../media/er-financial-dimensions-guides-format2.png)
 
 
 

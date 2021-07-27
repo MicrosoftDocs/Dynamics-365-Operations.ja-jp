@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21901
+ms.custom:
+- "21901"
+- intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 62e075fc26ee2e183cd859c5ec2c90faa3bfe3ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: e284e84c5f049c912d54d2c5ae72a622f5cfdbbd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897013"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344833"
 ---
 # <a name="accounts-payable-home-page"></a>買掛金勘定ホーム ページ
 
@@ -30,9 +32,9 @@ ms.locfileid: "5897013"
 
 仕入先請求書を手動で入力するか、またはデータ エンティティによって電子的にそれらを受け取ることができます。 請求書の入力または入庫後、請求書承認仕訳または **仕入先請求書** ページを使用して、請求書を確認および承認できます。 確認プロセスを自動化するために請求書照合、仕入先請求書ポリシー、およびワークフローを使用すると、特定の基準を満たす請求書は自動的に承認され、残りの請求書には承認されたユーザーが確認するようにフラグが設定されます。
 
-**業務プロセス**
+**ビジネス プロセス**
 
-[![業務プロセスのダイアグラム](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![ビジネス プロセスのダイアグラム。](./media/AP-process.PNG)](./media/AP-process.PNG)
 
 ## <a name="set-up-accounts-payable"></a>買掛金勘定の設定
 

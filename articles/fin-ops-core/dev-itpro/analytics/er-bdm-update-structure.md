@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 203c9f0990051c1618660959dad0e184add68ffa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3419d328e84c199fa32aeb13b54425a31e96ce7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750487"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350259"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>ビジネス ドキュメント テンプレートの構造の更新 
 
@@ -58,7 +58,7 @@ Office 365 オンライン機能を使用してテンプレートを変更する
 
     新しいテンプレートが、テンプレート エディター ページの Excel Online 埋め込みコントロールで編集するために開かれます。
 
-[![ビジネス ドキュメント管理ワークスペースを使用して、ビジネス ドキュメント テンプレートの編集を開始する](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![ビジネス ドキュメント管理ワークスペースを使用して、ビジネス ドキュメント テンプレートの編集を開始する。](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>編集可能なテンプレートの現在の構造の確認
 
@@ -68,7 +68,7 @@ Office 365 オンライン機能を使用してテンプレートを変更する
 4. **テンプレート構造** ペインで、**レポート \> 請求書 \> rptHeader \> rptHeaderPart1** の順に展開します。
 5. Finance のテンプレート構造では、**rptHeaderCompLogo** 項目が、**レポート \> 請求書 \> rptHeader \> rptHeaderPart1** の子項目として表示されていることに注意してください。
 
-[![ビジネス ドキュメント 管理ワークスペースを使用して編集可能なテンプレートの現在の構造を確認する](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![ビジネス ドキュメント 管理ワークスペースを使用して編集可能なテンプレートの現在の構造を確認する。](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>画像を削除して、ビジネス ドキュメント テンプレートの構造を更新する
 
@@ -85,7 +85,7 @@ Office 365 オンライン機能を使用してテンプレートを変更する
 4. **テンプレート構造** ペインで、**レポート \> 請求書 \> rptHeader \> rptHeaderPart1** の順に展開します。
 5. **rptHeaderCompLogo** 項目が Finance のテンプレート構造に含まれていないことに注意してください。
 
-[![ビジネス ドキュメント管理ワークスペースを使用して、ビジネス ドキュメント テンプレートから画像を削除する](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![ビジネス ドキュメント管理ワークスペースを使用して、ビジネス ドキュメント テンプレートから画像を削除する。](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>画像を追加して、ビジネス ドキュメント テンプレートの構造を更新する
 
@@ -97,7 +97,7 @@ Office 365 オンライン機能を使用してテンプレートを変更する
 6. **テンプレート構造** ペインで、**レポート \> 請求書 \> rptHeader \> rptHeaderPart1** の順に展開します。
 7. 新しい画像が Finance のテンプレート構造の項目として含まれていることに注意してください。
 
-[![ビジネス ドキュメント管理ワークスペースを使用して、ビジネス ドキュメント テンプレートに画像を追加する](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![ビジネス ドキュメント管理ワークスペースを使用して、ビジネス ドキュメント テンプレートに画像を追加する。](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>関連リンク
 

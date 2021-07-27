@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c0c584ed53dc4ec8a761065838127dc67cbc41e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09c20020e5e0b957785a88ad511cedfec50a5f29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813728"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344619"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>作業指示書のメンテナンス ダウンタイム
 
@@ -45,7 +45,7 @@ ms.locfileid: "5813728"
 
 次の図では、**メンテナンス ダウンタイムの理由コード** ページの例を示します。
 
-![図 1](media/15-work-orders.png)
+![図 1。](media/15-work-orders.png)
 
 使用するメンテナンス ダウンタイムの理由コードを作成したら、作業指示書および資産に対してメンテナンス ダウンタイムの登録を作成できます。
 
@@ -71,15 +71,15 @@ ms.locfileid: "5813728"
 
 下の図は、メンテナンス ダウンタイム登録の例を示します。
 
-![図 2](media/16-work-orders.png)
+![図 2。](media/16-work-orders.png)
 
 メンテナンス ダウンタイムの登録の計算に使用されるカレンダーは、資産とパラメーターの設定での選択によって異なります。 次の図に示すように、**リソース** フィールド (**固定資産** クイック タブ、**すべての資産** ページ) の資産に対してリソースが選択されている場合は、関連付けられているリソース グループに対して設定されているカレンダーが使用されます。
 
-![図 3](media/17-work-orders.png)
+![図 3。](media/17-work-orders.png)
 
 資産に対してリソースが選択されていない場合、次の図に示すように、**資産管理パラメーター** ページで選択された標準カレンダーが使用されます。
 
-![図 4](media/18-work-orders.png)
+![図 4。](media/18-work-orders.png)
 
 すべてのメンテナンス ダウンタイムの登録の概要を表示するには、**資産管理** > **照会** > **メンテナンス ダウンタイム** をクリックします。
 

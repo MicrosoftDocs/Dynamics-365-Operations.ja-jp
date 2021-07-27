@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6d8c1d4e7edc4b83e2489ac6a0bad18ab55c042b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792932"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348245"
 ---
 # <a name="create-and-update-store-hours"></a>店舗の営業時間の作成と更新
 
@@ -49,14 +49,14 @@ ms.locfileid: "5792932"
     > [!NOTE]
     > 開始日と終了日が重複する複数のテンプレートを作成できます。 したがって、たとえば、異なるタイム ゾーンの店舗の営業時間を定義できます。
 
-    ![範囲の追加ダイアログ ボックス](../dev-itpro/media/Storehours1.png "範囲の追加ダイアログ ボックス")
+    ![範囲の追加ダイアログ ボックス。](../dev-itpro/media/Storehours1.png "範囲の追加ダイアログ ボックス")
 
 4. 営業時間テンプレートを使用される店舗に関連付けます。 **組織ノードの選択** ダイアログ ボックスで、テンプレートが関連付けられている店舗、地域、および組織を選択します。
 
     - 各店舗に関連付けることができる店舗の営業時間のテンプレートは 1 つだけです。
     - 矢印ボタンを使用して、店舗、地域、または組織を選択します。 カレンダーは店舗または店舗グループで使用でき、POS で参照できるように表示されます。
 
-    ![組織ノード ダイアログ ボックスの選択](../dev-itpro/media/Storehours2.png "組織ノード ダイアログ ボックスの選択")
+    ![組織ノード ダイアログ ボックスの選択。](../dev-itpro/media/Storehours2.png "組織ノード ダイアログ ボックスの選択")
 
 5. **配送スケジュール** ページで **1070** および **1090** のジョブを実行して、POS で店舗の営業時間を使用できるようにします。
 
@@ -75,7 +75,7 @@ ms.locfileid: "5792932"
 
 POS レシートには、店舗の営業時間が含まれるようになります。 テンプレートに休日が含まれている場合は、レシートに表示されます。
 
-![レシート例](../dev-itpro/media/Storehours3.png "レシート例")
+![レシート例。](../dev-itpro/media/Storehours3.png "レシート例")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

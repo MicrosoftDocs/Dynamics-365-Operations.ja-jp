@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5b044e4616555559be51b0846327b1d55bfe47b3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 851cf6df576db303d9fefdcd0e732a92a019189a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822542"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354111"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>優先メンテナンス作業者の設定
 
@@ -59,7 +59,7 @@ ms.locfileid: "5822542"
 
     [!NOTE] 一般に、ワーク オーダーのスケジューリング中に優先メンテナンス作業者が選択されると、資産管理はすべての **優先メンテナンス作業者** のレコードから一致の可能性をチェックし、常に最も具体的な組み合わせを最初にチェックします。 もし一致するものが見つからない場合は、**優先メンテナンス作業者グループ** フィールドまたは **優先メンテナンス作業者** フィールドのいずれかが選択された「既定」レコードが使用されます。
 
-![図 1](media/02-work-order-scheduling.png)
+![図 1。](media/02-work-order-scheduling.png)
 
 また、メンテナンス要求または作業指示書を作成するときに、メンテナンス作業者の *責任者* を設定することもできます。 **すべての作業指示書** と **すべてのメンテナンス要求** にて、必要に応じて選択を編集できます。 詳細については、[メンテナンス作業者の責任者](../setup-for-maintenance-requests/responsible-workers.md) を参照してください。
 

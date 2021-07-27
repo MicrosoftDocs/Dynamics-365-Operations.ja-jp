@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b53ecec4bb7593cb0a0cae72e4132c49d6ec6a68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bcb242214efab3fd632ea0b9e0f3329bb7821dc0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826014"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354764"
 ---
 # <a name="inventory-journal-approval-workflows"></a>在庫仕訳帳の承認ワークフロー
 
@@ -55,7 +55,7 @@ ms.locfileid: "5826014"
     - **在庫 BOM 仕訳帳**
     - **在庫調整仕訳帳**
 
-    ![作成ワークフロー ダイアログ ボックス](media/journal-workflow-create-workflow.png "作成ワークフロー ダイアログ ボックス")
+    ![作成ワークフロー ダイアログ ボックス。](media/journal-workflow-create-workflow.png "作成ワークフロー ダイアログ ボックス")
 
 1. ワークフロー エディタ アプリがマシン上で起動します。 (このアクションの承認が要求される場合があります。)必要に応じてワークフローの設計に利用してください。 ワークフロー エディターの使用方法については、[ワークフロー システムの概要](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md)を参照してください。
 1. ワークフロー エディター アプリを保存して閉じた後、このワーク フローのバージョンをアクティブにするか、非アクティブのままにしておくかを選択する必要があります。
@@ -73,7 +73,7 @@ ms.locfileid: "5826014"
 1. リスト列から仕訳帳名を選択すると、設定ページが表示されます。
 1. **全般** クイック タブ で、**承認ワークフロー** を **はい** に設定します。 アクションの承認を求めるメッセージが表示されたら、**はい** を選択します。
 
-    ![仕訳帳名にワークフローを割り当てる](media/journal-workflow-journal-name.png "仕訳帳名にワークフローを割り当てる")
+    ![仕訳帳名にワークフローを割り当てる。](media/journal-workflow-journal-name.png "仕訳帳名にワークフローを割り当てる")
 
 1. **ワークフロー** のドロップダウン リストを開き、承認ワークフローを選択します。 このリストには、ワークフロー エディター アプリを使用して作成したそれぞれのアクティブなワークフローが表示されます。
 
@@ -87,7 +87,7 @@ ms.locfileid: "5826014"
 1. 必要に応じて仕訳帳を完成させます。
 1. 承認ワークフローに関連付けられた在庫仕訳帳を作成、または開くと、アクション ペインで **ワークフロー** ボタンがアクティブになります。 承認のために仕訳帳を送信する準備ができたら、**ワークフロー** ボタンを選択してドロップダウン ダイアログ ボックスを開き、**送信** を選択します。 承認要求が関連する承認者に送信されます。この承認者にはワークフローで設定された通知方法を使用して通知がされます。
 
-    ![承認のために仕訳帳を送信する](media/journal-workflow-inventory-journal.png "承認のために仕訳帳を送信する")
+    ![承認のために仕訳帳を送信する。](media/journal-workflow-inventory-journal.png "承認のために仕訳帳を送信する")
 
 承認要求を取り消すには、該当する仕訳帳を開き、**ワークフロー** ボタンを選択し、**取り消し** を選択します。 これにより、ワークフローがリセットされます。
 

@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e4a61383c790b63aa1c07f7004f264495171441a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3a1fbd6a71c8d00e862183c32fb9f7e17dcc5bd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792222"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351991"
 ---
 # <a name="product-details-pages-overview"></a>製品詳細ページの概要
 
@@ -31,9 +32,9 @@ PDP は、製品に関する詳細情報を提供し、顧客がサイズ、ス�
 
 次の図は、PDP の例を示します。
 
-![製品の詳細ページの例](./media/pdp.PNG)
+![製品の詳細ページの例。](./media/pdp.PNG)
 
-## <a name="header-and-footer-modules"></a>ヘッダーとフッター モジュール
+## <a name="header-and-footer-modules"></a>ヘッダー モジュールとフッター モジュール
 
 PDP の上部には、小売業者が顧客に参照させたいすべての製品カテゴリおよび他のページを表示するヘッダーがあります。 ページの下部には、顧客が興味を持つさまざまなトピックへのクイック リンクを含むフッターがあります。
 

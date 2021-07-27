@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38099909f169391c17760ac381af07f0848fc384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 219b82809087e3f5f185bc92836ca300d064fc71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797482"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348347"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>トランザクション画面への推奨事項の追加
 
@@ -43,7 +43,7 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 6. ログインすると、以下のものに類似したページが表示されます。 レイアウトは、店舗に対して行われたカスタマイズによって異なります。
 
 
-    [![レイアウト デザイナー](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![レイアウト デザイナー。](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>表示オプションを選択
 
@@ -58,11 +58,11 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 1. 左側が顧客パネルと同じ高さになるように、トランザクション明細行の詳細領域の高さを下げます。
 
 
-    [![トランザクション明細行の詳細領域の高さを減少](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![トランザクション明細行の詳細領域の高さを下げます。](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. 左側のメニューから、トランザクション明細行の詳細領域とトランザクション画面の中央下にあるボタン グリッドの間にレコメンデーション コントロールをドラッグ アンド ドロップします。 そのスペースに合うようにコントロールのサイズを変更します。
 
-    [![レイアウトに追加されたレコメンデーション コントロール](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![レコメンデーション コントロールがレイアウトに追加されました。](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. **X** をクリックして、レイアウト デザイナーを保存して終了します。
@@ -77,13 +77,13 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 
 2. **カスタマイズ** をクリックします。
 
-    [![カスタマイズ - タブコントロール ダイアログ ボックス](./media/pic-5.png)](./media/pic-5.png)
+    [![カスタマイズ - タブコントロール ダイアログ ボックス。](./media/pic-5.png)](./media/pic-5.png)
 
 3. **新しいタブ** をクリックします。
 4. さっき追加した新しいタブを探します。 スクロール ダウンしなければならない場合があります。
 5. **コンテンツ** のドロップダウンで、**お勧めの製品** を選択します。
 
-    [![コンテンツ フィールドのお勧め製品を選択](./media/pic-6.png)](./media/pic-6.png)
+    [![コンテンツ フィールドのお勧め製品を選択します。](./media/pic-6.png)](./media/pic-6.png)
 
 6. **ラベル** フィールドに、このレコメンデーション タブの名前を入力します。たとえば、「お勧めの製品」と入力します。
 7. **画像** フィールドで、タブで表示する画像を選択します。

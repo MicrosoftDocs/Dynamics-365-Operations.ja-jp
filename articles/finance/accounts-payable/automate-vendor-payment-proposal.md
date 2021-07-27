@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820814"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350649"
 ---
 # <a name="automate-vendor-payment-proposals"></a>仕入先の支払提案を自動化する
 
@@ -97,11 +97,11 @@ ms.locfileid: "5820814"
 
 一連の仕入先支払提案の自動化を作成後は、各支払の発生が自動化されたプロセスの週単位のビューに表示されます。 仕入先支払については、**仕入先支払** ワークスペースと **プロセスの自動化** ページの両方に、自動化されたプロセスの週単位のビューが追加されました。
 
-[![仕入先支払ワークスペースでの自動化されたプロセスの週単位のビュー](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![仕入先支払ワークスペースでの自動化されたプロセスの週単位のビュー。](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 **仕入先支払** ワークスペースのプロセス自動化に関する週単位のビューには、自動化された仕入先支払提案のみが表示されます。 ここには、サインインしたユーザーがセキュリティ権限を持つすべてのエンティティについて、その週に発生したすべての支払いを表示します。 たとえば、買掛金の支払係が USMF 社と USMF 社の支払を担当している場合、これら 2 つの会社に対して発生した自動化された仕入先支払提案が表示されますが、その他の会社に対しては表示されません。
 
-[![USMF 社および USMF 社のプロセス自動化週単位のビュー](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![USMF 社および USMF 社のプロセス自動化週単位のビュー。](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 それぞれの支払いが発生する度に、支払仕訳帳が作成された会社または作成される会社が表示されます。 支払の集約を使用して支払が作成される場合、表示されている会社は、支払いが作成される会社となります。 この発生によって、どの会社の請求書が支払われるかがわかるわけではありません。
 

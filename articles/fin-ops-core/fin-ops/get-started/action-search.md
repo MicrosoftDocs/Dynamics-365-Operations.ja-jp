@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41313dd1fde51cb84bc971bb7bb98841222259b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce10817d677f7e48194272b5ebb91b95d657441f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754829"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360290"
 ---
 # <a name="action-search"></a>アクション検索
 
@@ -31,7 +31,7 @@ ms.locfileid: "5754829"
 
 ページでは、ページの上部に表示される標準アクション ウィンドウおよびページのさまざまなセクションに表示されるツール バーの両方のアクション ウィンドウでコマンドが主として公開されます。 以前のバージョンでは、キー ヒント機能は、Alt キーおよび一連の文字を押して、アクション ウィンドウのボタンをすばやくアクセスできました。
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6。](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 アクション検索機能は、現在使用できないキー ヒントに代わるものです。 この新しい機能ですぐに検索でき、表示されているどのアクション ウィンドウのボタンからも実行できます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "5754829"
 
 ボタンの実行後、作業し続けることができるように、フォーカスはページの最後の位置に戻されます。
 
-[![アクション検索フィールド](./media/action-search-field.png)](./media/action-search-field.png)
+[![アクション検索フィールド。](./media/action-search-field.png)](./media/action-search-field.png)
 
 Ctrl + /、または Alt + Q を押しても、アクション検索を開始できます。 ページの最後の位置にフォーカスを返すには、キーボード ショートカットを再度押します。
 
@@ -61,11 +61,11 @@ Ctrl + /、または Alt + Q を押しても、アクション検索を開始で
 
 たとえば、**tot** と **アクション検索** フィールドに入力し、現在結果一覧を確認します。 最初の入力で、**合計** と名付けられるボタンが強調表示されます。 **販売注文** &gt; **ビュー** のボタンのパスも表示されます。 **販売注文** の部分は、アクション ウィンドウの **販売注文** タブに対応し、**ビュー** の部分は、そのタブの **ビュー** グループに対応します。同様に、**割引合計** ボタン (**販売** &gt; **計算**) は、このボタンがアクション ウィンドウの **販売** タブの **計算** グループに位置することを示します。 したがって、この情報はどのボタンがアクション検索にトリガされたかを理解するのに役立ちます (結果一覧でそのボタンを選択した場合)。
 
-[![データ付アクション検索フィールド](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![データ付アクション検索フィールド。](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 前の例では、アクション検索はページ上部の標準アクション ウィンドウから結果を表示しました。 ただし、アクション検索は、ページの他の領域にある表示されるツール バーの結果も表示します。 たとえば、**販売注文明細行** クイック タブにある **手持在庫** ボタンを検索しているとします。 この場合、結果一覧のボタンのパス (**販売注文明細行** &gt; **在庫** &gt; **ビュー**) はそのボタンが **販売注文明細行** クイック タブの、**在庫** メニュー ボタンの、**ビュー** ヘッダーにあることを示します。
 
-[![手持在庫](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![手持在庫。](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > アクション検索で表示されないボタンもあります。 これには、ドロップ ダイアログ ボタンとサブフォームのボタンが含まれます。 

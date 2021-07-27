@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8df8e6204e9c64305387e6aed304142d7f13b33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6affcc20c2c2e2b8fa9e38cb523e172bb2a79f22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808331"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349821"
 ---
 # <a name="asset-management-parameters"></a>資産管理パラメーター
 
@@ -99,7 +99,7 @@ ms.locfileid: "5808331"
 
 ## <a name="the-document-types-tab"></a>ドキュメント タイプ タブ
 
-ワーク オーダー レポートに関連する添付ファイルの印刷に使用できるドキュメントのタイプを選択します。 これは、**使用可能** なセクションのドキュメント タイプを選択し ![前方矢印](media/15-setup-for-objects.png) を選択することにより実行されます。 選択したドキュメント タイプを削除する場合、**選択済** のセクションでドキュメント タイプを選択し ![戻る矢印](media/16-setup-for-objects.png) ボタンを選択します。
+ワーク オーダー レポートに関連する添付ファイルの印刷に使用できるドキュメントのタイプを選択します。 これは、**使用可能** なセクションのドキュメント タイプを選択し ![前方矢印。](media/15-setup-for-objects.png) を選択することにより実行されます。 選択したドキュメント タイプを削除する場合、**選択済** のセクションでドキュメント タイプを選択し ![戻る矢印](media/16-setup-for-objects.png) ボタンを選択します。
 
 ## <a name="the-number-sequences-tab"></a>番号順序 タブ
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8b147c27b9309b1b3597f1194c415fbb2e2b7ad2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750815"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355301"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Dataverse の組織階層
 
@@ -37,7 +37,7 @@ Dataverse は組織階層の概念はないが、総売上高など、いくつ�
 
 Finance and Operations アプリと Dataverse を構成するビジネス エコシステムは、組織階層を持ち続けます。 この組織階層は Finance and Operations アプリに基づいて構築されていますが、情報と拡張目的のために Dataverse で公開されています。 次の図は、Finance and Operations アプリから Dataverse に一方向のデータ フローとして Dataverse 内に公開される、組織階層の情報を示します。
 
-![アーキテクチャ イメージ](media/dual-write-data-flow.png)
+![アーキテクチャ イメージ。](media/dual-write-data-flow.png)
 
 組織階層のテーブル マップは、Finance and Operations アプリから Dataverse へのデータの一方向の同期に使用できます。
 
