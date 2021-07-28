@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: dd07c9c95639c8e69e1013fd7da283cf51b60ed0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4d4f2ee97db52c055136912b237412b1148c26bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804530"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352351"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>レシートのない返品の支払方法の制限
 
@@ -38,7 +38,7 @@ ms.locfileid: "5804530"
 3. 店舗の支払方法を設定します。 支払方法を各店舗に関連付けて、各支払方法の店舗固有の設定を入力します。
 4. 店舗のカード支払方法の設定。 店舗で受け入れるカード支払方法について、カードの設定を行います。
 
-![店舗の設定](media/NoReceiptReturns1.png "小売店舗の設定") 
+![店舗の設定。](media/NoReceiptReturns1.png "小売店舗の設定") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>レシートのない返品の支払方法の制限
@@ -49,12 +49,12 @@ ms.locfileid: "5804530"
 
 **レシートなしの払戻の制限** が **はい** に設定されている場合、選択された支払方法は払戻に使用できません。 
 
-![店舗支払方法](media/NoReceiptReturns3.png "小売店舗の支払方法") 
+![店舗支払方法。](media/NoReceiptReturns3.png "小売店舗の支払方法") 
 
 > [!NOTE]
 > レジ担当者が、レシートなしでの払戻が制限されている支払方法を選択すると、許容されている支払方法を確認するメッセージが表示されます。
 
-![許容可能な支払方法](media/NoReceiptReturns4.png "許容可能な支払方法") 
+![許容可能な支払方法。](media/NoReceiptReturns4.png "許容可能な支払方法") 
 
 トランザクションにレシートありの返品とレシートなしの返品の両方がある場合、トランザクションはレシートありの返品ワークフローになるため、制限条件は適用されません。 
 

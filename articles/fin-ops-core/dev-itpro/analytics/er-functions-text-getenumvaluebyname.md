@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b5831e3d2bc2e839b0a569fb314a8ec074a5a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b652045b130eca7e8236b4952b7c829e53a2269e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746414"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352941"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER 機能
 
@@ -62,7 +62,7 @@ Nullable *列挙*
 
 次の図では、**ReportDirection** の列挙はデータ モデルで導入されます。 列挙型値のラベルが定義されていることに注意してください。
 
-![データ モデル列挙に使用可能な値](./media/ER-data-model-enumeration-values.PNG)
+![データ モデル列挙に使用可能な値。](./media/ER-data-model-enumeration-values.PNG)
 
 次の図は、これらの詳細について説明しています。
 
@@ -70,7 +70,7 @@ Nullable *列挙*
 - `$IsArrivals` 式は、この関数のパラメーターとして **$Direction** データ ソースに基づきモデル列挙型を使用するため設計されています。
 - この比較式の値は、**TRUE** です。
 
-![データ モデル列挙の例](./media/ER-data-model-enumeration-usage.PNG)
+![データ モデル列挙の例。](./media/ER-data-model-enumeration-usage.PNG)
 
 ## <a name="example-2"></a>例 2
 
@@ -78,14 +78,14 @@ Nullable *列挙*
 
 次の図では、**TransType** データ ソースはモデル マッピングで導入されます。 このデータ ソースは、**LedgerTransType** アプリケーション列挙を参照しています。
 
-![アプリケーション列挙を参照するモデル マッピングのデータ ソース](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+![アプリケーション列挙を参照するモデル マッピングのデータ ソース。](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
 次の図は、モデル マッピングで構成されている **TransTypeList** データ ソースを示しています。 このデータ ソースは、**TransType** アプリケーション列挙に基づいて構成されます。 この `LISTOFFIELDS` 関数は、すべての列挙値を、フィールドを含むレコードの一覧として返すために使用します。 このようにして、すべての列挙値の詳細が公開されます。
 
 > [!NOTE]
 > **EnumValue** フィールドは、`GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` 式を使用して **TransTypeList** データソースに対して構成されます。 このフィールドは、このリストのすべてのレコードの列挙値を返します。
 
-![選択した列挙のすべての列挙値をレコードの一覧として返すモデル マッピングのデータ ソース](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![選択した列挙のすべての列挙値をレコードの一覧として返すモデル マッピングのデータ ソース。](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 次の図は、モデル マッピングで構成されている **VendTrans** データ ソースを示しています。 このデータ ソースは、**VendTrans** アプリケーション テーブルから仕入先トランザクション レコードを返します。 すべてのトランザクションの元帳タイプは、**TransType** フィールドの値によって定義されます。
 
@@ -94,11 +94,11 @@ Nullable *列挙*
 >
 > **TransTypeTitle** フィールドは、データ モデルの **LedgerType** フィールドにバインドされ、データ ソースとしてデータモデルを使用するすべての ER 形式でこの情報を使用できます。
 
-![仕入先トランザクションを返すモデル マッピングのデータ ソース](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![仕入先トランザクションを返すモデル マッピングのデータ ソース。](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 次の図は、[データ ソース デバッガー](er-debug-data-sources.md) を使用して、構成済みモデル マッピングをテストする方法を示しています。
 
-![データ ソース デバッガーを使用して、構成済モデル マッピングをテストする](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![データ ソース デバッガーを使用して、構成済モデル マッピングをテストする。](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 データ モデルの **LedgerType** フィールドは、期待どおりにトランザクション タイプのラベルを公開します。
 

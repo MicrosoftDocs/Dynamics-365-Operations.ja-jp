@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9634612bcffbcf71b77dbb184e71367c67bac10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09dd9e2d648bec32d1504175dbb1470751e5c915
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822930"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355182"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>分析コードの作成と分析コード メンバーのインポート
 
@@ -36,7 +36,7 @@ ms.locfileid: "5822930"
 
 次の図は、原価会計で使用される分析コードを示します。
 
-[![原価会計分析コード](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
+[![原価会計分析コード。](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
 原価会計にデータをインポートすると、組織のすべてのレベルでマネージャーに洞察を提供するさまざまな分析視点を構築するためにそのデータを使用することができます。 以下のトピックでは、分析コードの作成および分析コード メンバーのインポートに関する情報を提供します。 
 

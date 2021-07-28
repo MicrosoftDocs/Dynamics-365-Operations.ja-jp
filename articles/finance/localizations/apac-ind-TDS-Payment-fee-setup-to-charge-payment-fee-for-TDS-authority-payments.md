@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9213827ea1ad342beb7ac2fe586606651cfdcfa1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023403"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358437"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>TDS 所轄官庁支払の支払手数料の設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "6023403"
 
 1. **買掛金勘定 \> 支払の設定 \> 支払手数料** の順に移動します。
 
-    [![支払手数料のページ](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![支払手数料のページ。](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. **新規** を支払手数料を作成し、必要な情報を入力してください。
 3. **支払いの種類** フィールドで、支払手数料の種類を選択します。
@@ -46,7 +46,7 @@ ms.locfileid: "6023403"
 5. 他に必要な詳細を入力します。
 6. アクション ウィンドウで、**支払手数料の設定** を選択して **支払手数料の設定** ページを開きます。このページでは、銀行、支払方法、支払仕様、通貨、および日付間隔の各種の組み合わせに対して支払手数料を設定できます。
 
-    [![支払手数料の設定ページ](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![支払手数料の設定ページ。](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. **概要** タブの **グループ化** フィールドで、支払手数料を設定する銀行を 指定します。
 
@@ -64,7 +64,7 @@ ms.locfileid: "6023403"
 15. **手数料の通貨** フィールドで、手数料の通貨コードを指定します。
 16. **全般** タブを選択して、選択した銀行口座の詳細を表示または変更します。
 
-    [![[全般] タブ](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![一般タブ。](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. **最小** フィールドに、手数料を有効にする最小トランザクション金額を入力します。
 17. **最大** フィールドに、手数料を有効にする最大トランザクション金額を入力します。
@@ -74,7 +74,7 @@ ms.locfileid: "6023403"
 21. **品目の売上税グループ** フィールドで、手数料金額に対する品目の売上税の計算に使用する品目の売上税グループを選択します。
 22. **間隔** タブを選択します。 
 
-    [![間隔タブ](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![間隔タブ。](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. **日数** フィールドで、支払いの計上日 (割引日) から約束手形の支払期日までの日数を入力します。
 24. **割合/金額** フィールドで、詳細が割合か設定金額かを選択します。

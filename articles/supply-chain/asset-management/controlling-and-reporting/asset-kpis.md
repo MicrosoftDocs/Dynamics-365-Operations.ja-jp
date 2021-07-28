@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90759931fcbdb1e5acbd62f8a40e5b37b918f31a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b2122cb123e041d2194fa1ef5fd8024ec4c1a2a0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813872"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361093"
 ---
 # <a name="asset-kpis"></a>資産 KPI
 
@@ -82,7 +82,7 @@ ms.locfileid: "5813872"
 
 次の図は、4 つの資産に対する KPI 計算のスクリーンショットを示します。
 
-![4 つの資産の KPI 計算のスクリーンショット](media/11-controlling-and-reporting.png)
+![4 つの資産の KPI 計算のスクリーンショット。](media/11-controlling-and-reporting.png)
 
 - **すべての資産** で複数の資産を選択し、**一般** タブの **資産 KPI** ボタンをクリックできます。次に、**資産 KPI の計算** ダイアログで **OK** をクリックして、選択した資産の KPI を計算します。  
 - KPI 計算の結果は、メンテナンス ダウンタイム理由コードの設定および使用に応じて、[メンテナンス ダウンタイム登録](../work-orders/maintenance-downtime.md) を含む場合と含まない場合があります。 

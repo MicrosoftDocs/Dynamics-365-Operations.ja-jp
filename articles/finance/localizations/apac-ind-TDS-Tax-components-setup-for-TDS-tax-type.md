@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023383"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358173"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>TDS の税タイプの税コンポーネントの設定
 
@@ -33,7 +33,7 @@ ms.locfileid: "6023383"
 
 1. **税 \> 設定 \> 源泉徴収税 \> 源泉徴収税のコンポーネント** に移動します。
 
-    [![源泉徴収税グループ コンポーネントのページ](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![源泉徴収税グループ コンポーネントのページ。](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. **税 タイプ** フィールドで、**TDS** を選択して、TDS 税タイプの源泉徴収税コンポーネントを設定します。
 3. アクション ウィンドウで **新規** を選択して、明細行を作成します。
@@ -50,7 +50,7 @@ ms.locfileid: "6023383"
 
     たとえば、例外のしきい値金額が 5,000 である場合、請求明細金額が 5,000 を超える場合 (つまり、5,001 以上の場合)、TDS が特定の請求明細に対して計算されます。
 
-    [![しきい値のページ](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![しきい値のページ。](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > 例外のしきい値の金額がしきい値以下である必要があります。
@@ -66,6 +66,6 @@ ms.locfileid: "6023383"
 
 14. **OK** を選択し、**源泉徴収票コンポーネント** ページでもう一方の TDS コンポーネント グループの TDS コンポーネントをコピー、作成します。
 
-    [![源泉徴収税コンポーネントのダイアログ ボックスをコピーする](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![源泉徴収税コンポーネントのダイアログ ボックスをコピーします。](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. ページを閉じます。

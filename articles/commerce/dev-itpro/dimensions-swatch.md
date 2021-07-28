@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 08564ce7af7412f2501b917b3496942004402611
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 513ec2f48a3c7c81a41fd64a9752067d12eb4ec8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117232"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353865"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>製品の分析コード値を見本として表示する設定
 
@@ -39,11 +39,11 @@ PDP に寸法が見本として表示されていれば、顧客は製品のバ�
 
 次の図は、Commerce PDP上で色が見本として表示される例です。
 
-![商品詳細ページの色見本の例](../dev-itpro/media/swatch_pdp.png)
+![商品詳細ページの色見本の例。](../dev-itpro/media/swatch_pdp.png)
 
 次の図は、Commerce の検索結果一覧ページで色が見本として表示される例です。
 
-![検索結果一覧ページの色見本の例](../dev-itpro/media/swatch_searchresults.PNG)
+![検索結果一覧ページの色見本の例。](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Commerce の見本として分析コード表示機能を有効にする
 
@@ -57,15 +57,15 @@ PDP に寸法が見本として表示されていれば、顧客は製品のバ�
 
 - **分析コード** -  Commerce 本部で、**色**、**サイズ**、 **スタイル** を検索して、分析コードのページを開きます。 各ページでは、グリッドに分析コード値が一覧表示されます。 表示順序、画面表示コード、画像 URL の値を管理できます。 次の図は、**色** ページの構成例を表示しています。
 
-    ![[色] ページでの分析コード構成の例](../dev-itpro/media/swatch_Color.PNG)
+    ![[色] ページでの分析コード構成の例。](../dev-itpro/media/swatch_Color.PNG)
 
 - **分析コード グループ** - Dynamics 365 Commerce では、**RefinerGroup** プロパティを使用して分析コード グループを作成できます。 分析コード グループが定義されている場合は、**色グループ**、**サイズ グループ**、**スタイル グループ** を検索して適切なページを開きます。 各ページでは、複数の画像コード、画像URL、絞り込みグループの値を管理できます。 次の図は、**色グループ** ページの構成例を表示しています。
 
-    ![[色グループ] ページでの分析コード構成の例](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![[色グループ] ページでの分析コード構成の例。](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **製品分析コード (製品の作成中)** - 新しい製品を作成する際に、**製品の分析コード** ページを使って分析コード値を入力することができます。 既存の製品の場合、**Hexcode**、**URL** (画像で使用)、**RefinerGroup** の各フィールドがすでに設定されている場合があります。 必要に応じて値を変更することもできます。 次の図は、**製品分析コード** ページの構成例を表示しています。
 
-    ![[製品分析コード] ページでの分析コード構成の例](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![[製品分析コード] ページでの分析コード構成の例。](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > 16進コードと画像 URL の設定を管理するプロセスは、分析コードの表示順を管理するのと同じパターンで行われます。
@@ -76,7 +76,7 @@ PDP に寸法が見本として表示されていれば、顧客は製品のバ�
 
 次の図は、色の分析コードを16進数の値で設定する例です。
 
-![16進コードを使用した分析コードの構成例](../dev-itpro/media/swatch_color_hexcode.png)
+![16 進コードを使用した分析コードの構成例。](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## <a name="configure-dimension-values-by-using-image-urls"></a>画像の URL を使用した分析コード値の構成
 
@@ -86,13 +86,13 @@ PDP に寸法が見本として表示されていれば、顧客は製品のバ�
 
 次の図は、**色** ページの構成に画像 URL を使用した例です。
 
-![画像 URL を使用した分析コードの構成例](../dev-itpro/media/swatch_color_urls.PNG)
+![画像 URL を使用した分析コードの構成例。](../dev-itpro/media/swatch_color_urls.PNG)
 
 メディア テンプレートを使用すると、製品イメージやカテゴリ イメージと同様に、画像のURLを定義できます。 サイト ビルダーに画像をアップロードする場合は、ファイル名の規則とファイル パスが一貫している必要があります。
 
 次の図は、メディア テンプレートの構成に画像 URL を使用した例です。
 
-![メディア テンプレートの構成例](../dev-itpro/media/swatch_media_template.PNG)
+![メディア テンプレートの構成例。](../dev-itpro/media/swatch_media_template.PNG)
 
 ## <a name="configure-dimension-values-by-using-both-hex-codes-and-image-urls"></a>16 進コードと画像の URL を使用した分析コード値の構成
 
@@ -100,7 +100,7 @@ PDP に寸法が見本として表示されていれば、顧客は製品のバ�
 
 次の図は、**色** ページの構成に 16 進コードと画像 URL を使用した例です。
 
-![16 進コードと画像 URL を使用した分析コードの構成例](../dev-itpro/media/swatch_color_hexandimage.png)
+![16 進コードと画像 URL を使用した分析コードの構成例。](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## <a name="configure-refiner-groups"></a>絞り込み条件グループの構成
 
@@ -110,7 +110,7 @@ PDP に寸法が見本として表示されていれば、顧客は製品のバ�
 
 次の図の例は、Commerce 本部の **色** と **RefinerGroup** のプロパティ間の関係を示しています。
 
-![絞り込み条件グループ管理の例](../dev-itpro/media/swatch_refiner_group.png)
+![絞り込み条件グループ管理の例。](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Commerce サイト ビルダーで画像を管理する
 
@@ -118,7 +118,7 @@ PDP に寸法が見本として表示されていれば、顧客は製品のバ�
 
 次の図に、**ファイルのアップロード** ダイアログ ボックスを使用して画像をサイト ビルダ メディア ライブラリにアップロードする例を示します。 選択可能な **サイズ**、**色**、**スタイル** のカテゴリが強調表示されます。
 
-![サイトビルダのメディア ライブラリにアップロードする際の画像ファイルのカテゴリーの例](../dev-itpro/media/swatch_sitebuilder.png)
+![サイトビルダのメディア ライブラリにアップロードする際の画像ファイルのカテゴリーの例。](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>eコマース サイトのページで見本の表示を可能にする
 

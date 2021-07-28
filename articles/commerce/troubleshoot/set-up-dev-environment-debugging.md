@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 38a616c418c3b32490c9adaf69a69af0d47d3478
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 892f8001c52cd40d748c81f27c2f83618b84e5c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019449"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350405"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>レべル 1 Retail Server 仮想マシンに対してデバッグする eコマースの開発環境の設定
 
@@ -38,13 +38,13 @@ Microsoft Dynamics 365 Commerce レベル 1 環境は、通常 Commerce Runtime 
 
 次の図は、製品の詳細ページでバリアントが選択されたときに発生する可能性があるエラーの例を示しています。
 
-![製品の詳細ページでバリアントが選択されたときのエラー](media/unhandled-rejection-error.jpg)
+![製品の詳細ページでバリアントが選択されたときのエラー。](media/unhandled-rejection-error.jpg)
 
 次の図では、ブラウザーのデバッガー ツール (F12 開発者ツール) における同様のエラーの例を示しています。 このエラー メッセージには、コンテンツ セキュリティ ポリシー ディレクティブの違反を示しています。
 
-![デバッガー ツールのエラー](media/debugger-tools-error.JPG)
+![デバッガー ツールのエラー。](media/debugger-tools-error.JPG)
 
-## <a name="resolution"></a>解像度
+## <a name="resolution"></a>解決策
 
 ### <a name="disable-the-content-security-policy-for-the-site-in-commerce-site-builder"></a>Commerce サイト ビルダーでサイトのコンテンツ セキュリティ ポリシーを無効にする
 

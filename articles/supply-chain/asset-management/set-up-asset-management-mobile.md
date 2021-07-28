@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9c8f202a813520129867b57e660e8d995c20ed87
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837780"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351516"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>資産管理モバイル ワークスペースの設定
 
@@ -47,7 +47,7 @@ Finance and Operations (Dynamics 365) モバイル アプリで資産管理機�
 1. Supply Chain Management で、**設定** ボタン (右上隅のギア記号) を選択し、メニューの **モバイル アプリ** を選択します。
 1. **モバイル アプリの管理** ダイアログ ボックスで、**資産管理** タイルを検索します。 "メタデータ内 - 未公開" というテキストが含まれている場合、ワークスペースはまだ公開されていません。 "メタデータ内 - 公開済" という文字列が含まれている場合、ワークスペースは既に発行済みで、この手順の残りを省略できます。
 
-    ![モバイル アプリの管理ダイアログ ボックス](media/mobile-workspaces.png "モバイル アプリの管理ダイアログ ボックス")
+    ![モバイル アプリの管理ダイアログ ボックス。](media/mobile-workspaces.png "モバイル アプリの管理ダイアログ ボックス")
 
 1. **資産管理** タイルを選択し、ツール バーの **発行** を選択します。 しばらくすると、ワークスペースが正常に発行されたことを示す通知が表示されます。 また、タイル上のテキストは "メタデータ内 - 公開済" に変更する必要があります。
 
@@ -60,22 +60,22 @@ Finance and Operations (Dynamics 365) モバイル アプリで資産管理機�
 
 1. Finance and Operations (Dynamics 365) アプリを開きます。 サインイン ページが表示されます。 **サインイン** フィールドに Supply Chain Management の URL を入力するか、**最新の環境** ボックスの一覧で最近の URL を選択して、**接続** をクリックします。
 
-    ![サインイン ページ](media/mobile-app-sign-in.png "サインイン ページ")
+    ![サインイン ページ。](media/mobile-app-sign-in.png "サインイン ページ")
 
 1. 接続を確認するメッセージが表示された場合は、**了解します** チェック ボックスをオンにし、**接続** をクリックします。
 1. **アカウントのピック** ページで、Microsoft アカウントを使用してモバイル アプリケーションにサインインします。
 
     **ワークスペース** ページが表示されます。 これには、Supply Chain Management インスタンスによって公開されたすべてのモバイル ワークスペースが一覧表示されます。
 
-    ![ワークスペースのリスト](media/mobile-app-workspaces.png "ワークスペースのリスト")
+    ![ワークスペースのリスト。](media/mobile-app-workspaces.png "ワークスペースのリスト")
 
 1. 法人 (会社) を変更する必要がある場合は、左上の角のメニュー ボタン (ハンバーガーまたはハンバーガー ボタンと呼ばれることもあります) をタップして、**会社の変更** をクリックします。
 
-    ![法人の変更](media/mobile-app-change-comp.png "法人の変更")
+    ![法人の変更。](media/mobile-app-change-comp.png "法人の変更")
 
 1. **ワークスペース** ページで、使用するワークスペースを選択して開きます。
 
-    ![資産管理モバイル ワークスペース](media/mobile-app-asset-workspace.png "資産管理モバイル ワークスペース")
+    ![資産管理モバイル ワークスペース。](media/mobile-app-asset-workspace.png "資産管理モバイル ワークスペース")
 
 ## <a name="work-with-the-asset-management-mobile-workspace"></a>資産管理モバイル ワークスペースを使って作業する
 

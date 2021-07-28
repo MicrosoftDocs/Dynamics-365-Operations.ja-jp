@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 5b4899cad01a0ed2424dcc5d29e9fb5cca65a6a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944729"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351100"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>電子申告 (ER) モデル マッピングで複数のアプリケーション テーブルからデータを取得するには、結合データ ソースを使用します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "5944729"
 | **コンテンツの説明**  | **ファイル名**   |
 |--------------------------|-----------------|
 | データ ソースとして使用される、サンプル **ER データ モデル** 構成ファイルの例を次に示します。| [結合データ ソース version.1.xml を知るためのモデル](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
-| ER データ モデルを実行する、サンプル **ER モデル マッピング** 構成ファイルの例を次に示します。 | [結合データ ソース version.1.xml を知るためのマッピング](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| ER データ モデルを実行する、サンプル **ER モデル マッピング** 構成ファイルの例を次に示します。 | [結合データ ソース version.1.xml を知るためのマッピング](https://download.microsoft.com/download/9/2/f/92f339ca-41fc-4f5e-b458-6983c957d3dd/MappingtolearnJOINdatasources.version.1.1.xml)|
 | サンプル **ER フォーマット** 構成ファイル。 このファイルでは、例として ER フォーマット コンポーネントを設定するデータについて説明します。 | [結合データ ソース version.1.xml を知るためのフォーマット](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>コンフィギュレーション プロバイダーの有効化
@@ -78,7 +78,7 @@ ms.locfileid: "5944729"
 2. **組織管理  \> ワークスペース \> 電子申告** の順に移動します。
 3. **ローカライズ構成** ページの **構成プロバイダー** セクションで、[Litware, Inc.](http://www.litware.com) サンプル会社の構成プロバイダーが一覧に表示されていること、および **有効** とマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)手順のステップに従います。
 
-    ![電子申告ワークスペース](./media/GER-JoinDS-ActiveProvider.PNG)
+    ![電子申告ワークスペース。](./media/GER-JoinDS-ActiveProvider.PNG)
 
 ### <a name="import-sample-er-configuration-files"></a>サンプル ER 構成ファイルのインポート
 
@@ -101,7 +101,7 @@ ms.locfileid: "5944729"
 5. 構成ツリーで、 **結合データ ソースを知るためのモデル** 項目を、その他のモデル項目 (使用可能な場合) と同様に展開します。
 6. **バージョン** クイック タブのバージョン詳細に加えて、ツリー内の ER 構成の一覧を確認します。これらはサンプル レポートのデータ ソースとして使用されます。
 
-    ![電子申告構成のページ](./media/GER-JoinDS-ConfigurationsTree.PNG)
+    ![電子申告構成のページ。](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
 ### <a name="turn-on-execution-trace-options"></a>実行追跡オプションを有効にする
 
@@ -109,7 +109,7 @@ ms.locfileid: "5944729"
 2. **ユーザー パラメーター** を選択します。
 3. 次のスクリーンショットのように、実行追跡パラメーターを設定します。
 
-    ![電子申告のユーザー パラメーター ページ](./media/GER-JoinDS-Parameters.PNG)
+    ![電子申告のユーザー パラメーター ページ。](./media/GER-JoinDS-Parameters.PNG)
 
     これらのパラメーターを有効にすると、インポートされた ER フォーマット ファイルを実行するたびに、実行追跡が生成されます。 生成された実行追跡の詳細を使用して、ER 形式と ER モデル マッピング コンポーネントの実行を分析できます。 ER 実行追跡機能についての詳細は、[ER 形式の実行を追跡してパフォーマンス問題をトラブルシュートする](trace-execution-er-troubleshoot-perf.md) ページを参照してください。
 
@@ -128,13 +128,13 @@ ER モデル マッピング コンポーネントの設定を確認します。
     3. **ConfigurationTitle: String = @.'>Relations'.Solution.Name** のバインドは、ER コンフィギュレーションの名前が **名前** フィールド (**ERSolutionTable** テーブルの) から取得され、多対一の関係 (**> 関係**、**ERSolutionVersionTable** および **ERSolutionTable** テーブル間) を使用して評価することを示します。 現在のアプリケーション インスタンスの ER コンフィギュレーション名は、**コンフィギュレーション** ページの構成ツリーに表示されます。
     4. **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** のバインドは、現在のコンフィギュレーションを所有するコンフィギュレーション プロバイダーの名前が、**名前** フィールド (**ERVendorTable** テーブルの) から取得され、多対一の関係 (**ERSolutionTable** および **ERVendorTable** テーブル間) を使用することで評価することを意味します。 ER コンフィギュレーション名は、各コンフィギュレーションのページ ヘッダーの、**コンフィギュレーション** ページの構成ツリーに表示されます。 ER コンフィギュレーション プロバイダーの一覧全体は、**組織管理\>電子申告\>コンフィギュレーション プロバイダー** テーブルページにあります。
 
-    ![ER モデル マッピング デザイナー ページ、バインド データ モデル項目のリスト](./media/GER-JoinDS-Set1Review.PNG)
+    ![ER モデル マッピング デザイナー ページ、バインド データ モデル項目のリスト。](./media/GER-JoinDS-Set1Review.PNG)
 
 6. 構成ツリーで、**Set1.Summary** データ モデル項目を展開します。
 
     1. **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** は、**Set1.Summary.VersionsNumber** 項目が **VersionsNumber** アグリゲーション フィールドにバインドされていることを示します。これは **VersionsSummary** データ ソースの、**GroupBy** タイプで、**ERSolutionVersionTable** テーブルのレコード数を **バージョン** データ ソース経由で返すように構成されています。
 
-    !['Group By' パラメーター ページの編集](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    !['Group By' パラメーター ページの編集。](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. ページを閉じます。
 
@@ -144,18 +144,18 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
 1. 構成ツリーで、**Set2** および **Set2.Details** データ モデル項目を展開します。 **Details: Record list = Details** のバインドは、**Set2.Details** 項目が **Join** タイプのデータ ソースとして構成された **詳細** データ ソースにバインドされていることを示します。
 
-    ![展開された Set2:Record データ モデル項目を表示する ER モデル マッピング デザイナー ページ](./media/GER-JoinDS-Set2Review.PNG)
+    ![展開された Set2:Record データ モデル項目を表示する ER モデル マッピング デザイナー ページ。](./media/GER-JoinDS-Set2Review.PNG)
 
     **結合** データ ソースは、**Functions\Join** データ ソースを選択することによって追加できます。
 
-    ![ER モデル マッピング デザイナー ページ、結合データ ソース タイプ](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![ER モデル マッピング デザイナー ページ、結合データ ソース タイプ。](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. **詳細** データ ソースを選択します。
 3. **編集** を、**データ ソース** ウィンドウで選択します。
 4. **結合を編集** を選択します。
 5. **詳細を表示** を選択します。
 
-    ![結合データ ソース パラメーター ページ](./media/GER-JoinDS-JoinDSEditor.PNG)
+    ![JOIN データ ソース パラメーター ページ。](./media/GER-JoinDS-JoinDSEditor.PNG)
 
     このページは、**結合タイプ** の必要なデータ ソースをデザインするために使用されます。 このデータ ソースは、実行時に、**結合リスト** グリッドのデータ ソースから 1 つの結合されたレコード リストを作成します。 レコードの結合は、グリッドで最初となる **ConfigurationProviders** データ ソースから始まります (**タイプ** 列はそのために空白)。 したがって、他のすべてのデータ ソースのレコードは、このグリッドでの順序に基づいて、親データ ソースのレコードに結合されます。 すべての結合データ ソースは、ターゲット データ ソースの下で入れ子になったデータ ソースとして構成される必要があります (`1Versions` データ ソースは `1Configurations` 1 の下で入れ子となっており、`1Configurations` データ ソースは、**ConfigurationProviders** 1 の下で入れ子になっています)。 構成された各データ ソースには、結合の条件が含まれている必要があります。 この特定の **結合** データ ソースでは、次の結合が定義されています:
 
@@ -178,7 +178,7 @@ ER モデル マッピング コンポーネントの設定を確認します。
     - **VersionsNumber: Integer = DetailsSummary.aggregated.VersionsNumber** は、**Set2.Summary.VersionsNumber** 項目が **VersionsNumber** アグリゲーション フィールドにバインドされていることを示します。これは **DetailsSummary** データ ソース (**GroupBy** タイプ) で、**詳細** データ ソース (**結合** タイプ) の結合されたレコードを返すように構成されています。
     - **実行** 場所オプションは、**クエリ** として構成され、この **GroupBy** データ ソースは、SQL の直接呼び出しとしてデータベース レベルで、実行時に実行されることを意味します。 この動作が可能なのは、**Join** タイプの基本データ ソース **Details** が、データベース レベルで実行されるように構成されているためです。
 
-    ![GROUPBY データ ソース パラメーター ページ](./media/GER-JoinDS-Set2GroupByReview.PNG)
+    ![GROUPBY データ ソース パラメーター ページ。](./media/GER-JoinDS-Set2GroupByReview.PNG)
 
 9. ページを閉じます。
 10. **キャンセル** を選択します。
@@ -196,21 +196,21 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
     この形式は、ER 構成のバージョン (**バージョン** 順序) ごとに、生成されたテキスト ファイルに新しい行を挿入するように設計されています。 生成される各行には、現在の構成を所有する構成プロバイダー名、構成名、およびセミコロン記号で区切られた構成バージョンが含まれます。 生成されるファイルの最終行には、ER コンフィギュレーションの検出されたバージョン数が含まれます (**集計** シーケンス) 。
 
-    ![ER 形式 デザイナー ページ、形式タブ](./media/GER-JoinDS-FormatReview.PNG)
+    ![ER 形式 デザイナー ページ、形式タブ。](./media/GER-JoinDS-FormatReview.PNG)
 
     **データ** および **集計** データ ソースは、生成されたファイルにコンフィギュレーション バージョンの詳細を設定するために使用されます:
 
     - **Set1** データ モデルの情報は、ER 形式実行時に、ユーザー ダイアログ ページで **いいえ** を **セレクター** データ ソースに対して選択する際に使用されます。
     - **Set2** データ モデルの情報は、ユーザー ダイアログ ページで **はい** を **セレクター** データ ソースに対して選択する際に使用されます。
 
-    ![ER 形式 デザイナー ページ、マッピング タブ](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![ER 形式 デザイナー ページ、マッピング タブ。](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. **実行** を選択します。
 10. ダイアログ ページで、**いいえ** を **結合データ ソースの使用** フィールドで選択します。
 11. **OK** を選択します。
 12. 生成されたファイルを確認します。
 
-    ![電子申告パラメーターが JOIN データ ソースを使用しないで生成したファイル](./media/GER-JoinDS-Set1Run.PNG)
+    ![電子申告パラメーターが JOIN データ ソースを使用しないで生成したファイル。](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>ER 形式実行追跡の分析
 
@@ -224,7 +224,7 @@ ER モデル マッピング コンポーネントの設定を確認します。
     - **ERSolutionTable** は、**ERSolutionVersionTable** テーブルに含まれるコンフィギュレーション バージョン レコードの数だけ呼び出されますが、そのような呼び出しの数はパフォーマンス向上のため、所用時間が減ることがあります。
     - **ERVendorTable** は、**ERSolutionVersionTable** テーブルで検出されるコンフィギュレーション バージョン レコードの 2 倍呼び出されますが、そのような呼び出しの数も減ることがあります。
 
-    ![ER モデル マッピング デザイナー ページでの実行の統計](./media/GER-JoinDS-Set1Run2.PNG)
+    ![ER モデル マッピング デザイナー ページでの実行の統計。](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. ページを閉じます。
 
@@ -236,7 +236,7 @@ ER モデル マッピング コンポーネントの設定を確認します。
 4. **OK** を選択します。
 5. 生成されたファイルを確認します。
 
-    ![電子申告パラメーターが JOIN データ ソースを使用して生成したファイル](./media/GER-JoinDS-Set2Run.PNG)
+    ![電子申告パラメーターが JOIN データ ソースを使用して生成したファイル。](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> ER 形式実行追跡の分析
 
@@ -249,11 +249,11 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
     - 必須フィールドにアクセスする、**ERVendorTable**、**ERSolutionTable**、および **ERSolutionVersionTable** テーブルからレコードを取得するため、アプリケーション データベースが 1 回呼び出されます。
 
-    ![ER モデル マッピング デザイナー ページのパフォーマンス統計の詳細](./media/GER-JoinDS-Set2Run2.PNG)
+    ![ER モデル マッピング デザイナー ページのパフォーマンス統計の詳細。](./media/GER-JoinDS-Set2Run2.PNG)
 
     - **詳細** データ ソースで構成された結合を使用して、コンフィギュレーション バージョン数を計算するのに、アプリケーション データベースが 1 回呼び出されます。
 
-    ![アプリケーション データベース呼び出しを示す ER モデル マッピング デザイナー ページ](./media/GER-JoinDS-Set2Run3.PNG)
+    ![アプリケーション データベース呼び出しを示す ER モデル マッピング デザイナー ページ。](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>制限
 

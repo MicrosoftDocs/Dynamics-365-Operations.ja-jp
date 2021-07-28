@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e067c9df91894c5d2ce05a6afb92d1fadc954531
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: d8bde73d424e72ad66c27decd11a3b866d02b48c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188200"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349797"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
@@ -47,7 +49,7 @@ ms.locfileid: "6188200"
 
 次の図は、購買要求と購買要求明細行がワークフロー プロセス内を移動するときに割り当てられるステータスを示しています。  
 
-[![購買要求のヘッダーと明細行のステータス](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![購買要求のヘッダーと明細行のステータス。](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>購買要求のヘッダーと明細行の状態の関係
 
@@ -179,7 +181,7 @@ ms.locfileid: "6188200"
 
 予算管理が組織用に構成されている場合、かつ予算引当や事前債務が記録され、購買要求がワークフローで承認されている場合、需要連結のプロセスが開始されます。 次の図は、需要連結のプロセス フローを示しています。  
 
-[![需要連結のプロセス フロー](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![需要連結のプロセス フロー。](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 承認済購買要求明細行を連結するには、次の手順に従います。
 

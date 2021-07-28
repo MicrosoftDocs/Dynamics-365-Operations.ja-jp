@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4c9c9463162f21cdaf40f1c4ed6d5ae51e97cb88
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4dbfa96e6393bae6ad4ffa642b39a5d04c596c29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799087"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349379"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>実験に接続しバリエーションを編集する
 
@@ -28,7 +28,7 @@ ms.locfileid: "5799087"
 
 次の図は、Dynamics 365 Commerce の電子商取引 web サイトでの実験の設定と実行に関連するすべての手順を示しています。 追加の手順については、個別のトピックで説明します。
 
-[![実験ユーザー体験 - 接続と編集](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[![実験ユーザー体験 - 接続と編集。](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 サードパーティ サービスで[実験を設定](experimentation-setup.md) した後、Dynamics 365 Commerce で実験を接続し、実験バリエーションを編集します。
 

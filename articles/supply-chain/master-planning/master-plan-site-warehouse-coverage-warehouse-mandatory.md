@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 132a7171488b3c4da8ef13e11bed87c78071744d
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32e88b351b33bb9ada3833be0f5f9267dffc39fb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187461"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357050"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>マスター プラン - サイトと倉庫の補充、倉庫は必須
 
@@ -41,7 +41,7 @@ ms.locfileid: "6187461"
 -   倉庫に対して補充関係が定義されています。 **在庫管理] &gt; [設定] &gt; [在庫詳細] &gt; [倉庫** の順にクリックします。 **マスター計画** クイック タブに、**主要倉庫** フィールド グループが表示されます。
 -   既定の注文タイプには [生産]、[発注書] または [かんばん] が設定されます。 **製品情報管理] &gt; [製品] &gt; [リリースされた製品** の順にクリックします。 品目を選択し、[アクション ウィンドウ] の **計画** タブで、**既定の注文設定** をクリックします。 **既定の注文設定** フォームの **既定の注文タイプ** を参照してください。
 
-![サイトと倉庫の補充が必要、倉庫は必須    ](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousemandatory.jpg)
+![サイトと倉庫の補充が必要、倉庫は必須。](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousemandatory.jpg)
 
 
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 873266405638cd277eb748ad7e966ba8a4976b13
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0a94a74f4eb00c24142f0390bcf352db0594ca0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019862"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349475"
 ---
 # <a name="enable-product-recommendations"></a>製品推奨事項の有効化
 
@@ -68,7 +68,7 @@ ms.locfileid: "6019862"
 1. **製品推奨事項** 機能を選択します。
 1. **製品推奨事項** プロパティ ペインで、**直ちに有効化** を選択します。
 
-![推奨事項の有効化](./media/FeatureManagement_Recommendations.PNG)
+![推奨事項の有効化。](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > この手順では、製品推奨リストを生成するプロセスを開始します。 リストが有効になり、販売時点管理 (POS) または Dynamics 365 Commerce で表示できるようになるまでに、数時間かかる場合があります。

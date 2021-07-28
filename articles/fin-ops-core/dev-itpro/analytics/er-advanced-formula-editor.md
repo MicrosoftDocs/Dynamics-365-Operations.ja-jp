@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f7f80928e1d3f5d4892f72d4bd2fd09b70a26c1f
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: ddee15c28455dc1736e37ff6132e1360e2d135ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270710"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351943"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>電子申告の高度なフォーミュラ エディター
 
@@ -45,7 +45,7 @@ Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュ�
 2.  **構成** ページ、アクション ウィンドウ、**構成** タブ、**詳細設定** グループで、**ユーザー パラメーター** を選択します。
 3.  **ユーザー パラメーター** ダイアログ ボックスの **実行トレース** セクションで、**詳細フォーミュラ エディターの有効化** パラメーターを **はい** に設定します。
 
-[![ユーザー パラメーター ダイアログ ボックス、高度なフォーミュラ エディターの有効化が強調表示されている](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
+[![ユーザー パラメーター ダイアログ ボックス、高度なフォーミュラ エディターの有効化が強調表示されている。](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 
 > [!NOTE]
 > このパラメーターはユーザー固有であり、また会社固有であることに注意してください。
@@ -58,7 +58,7 @@ Microsoft Dynamics 365 Finance バージョン 10.0.19 以降は、既定で提�
 4.  **構成** ページ、アクション ウィンドウ、**構成** タブ、**詳細設定** グループで、**ユーザー パラメーター** を選択します。
 5.  **ユーザー パラメーター** ダイアログ ボックスで、**高度なフォーミュラ エディターの無効化** のパラメーターを見つけて、**いいえ** に設定されていることを確認します。
 
-[![ユーザー パラメーター ダイアログ ボックス、高度なフォーミュラ エディターの無効化が強調表示されている](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
+[![ユーザー パラメーター ダイアログ ボックス、高度なフォーミュラ エディターの無効化が強調表示されている。](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
 
 > [!NOTE]
 > **高度なフォーミュラ エディターの有効化** と **高度なフォーミュラ エディターの無効化** のパラメーターの値は、各ユーザーごとに分離され、**ER 高度なフォーミュラ エディターをすべてのユーザーに対して既定として設定する** の機能の状態に応じて、**ユーザー パラメーター** ダイアログボックスで表示されます。
@@ -67,7 +67,7 @@ Microsoft Dynamics 365 Finance バージョン 10.0.19 以降は、既定で提�
 
 複数のコード行で構成される複雑な式を記述する場合、新しく入力された行のインデントは前の行のインデントに基づいて自動的に設定されます。 行を選択し、**タブ** または **Shift+Tab** を押して、インデントを変更することができます。
 
-[![明細行の選択とインデントの変更を示す ER フォーミュラ エディターの gif](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+[![明細行の選択とインデントの変更を示す ER フォーミュラ エディターの gif。](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
 
 オートフォーマットにより、式全体を適切な形式にしてより簡単にメンテナンスできるようにし、構成されたロジックを理解しやすくできます。
 
@@ -75,7 +75,7 @@ Microsoft Dynamics 365 Finance バージョン 10.0.19 以降は、既定で提�
 
 エディターは単語補完を提供し、迅速な式の記述および入力ミスを回避するのに役立ちます。 新しいテキストの追加を開始すると、入力した文字を含む ER 関数でサポートされている機能のリストがエディターにより自動的に提供されます。 また、**Ctrl+Space** キー押すことにより、コンフィギュレーションされた式の任意の場所で IntelliSense をトリガーすることもできます。
 
-[![IntelliSense のトリガーを示す ER フォーミュラ エディターの gif](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![IntelliSense のトリガーを示す ER フォーミュラ エディターの gif。](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
 ## <a name=""></a><a name="CodeCompletion">コードの完了</a>
 
@@ -85,7 +85,7 @@ Microsoft Dynamics 365 Finance バージョン 10.0.19 以降は、既定で提�
 - 最初の引用符が入力された時に 2 番目の引用符を挿入し、カーソルを引用符内に保持します。
 - 最初の二重引用符が入力された時に 2 番目の二重引用符を挿入し、カーソルを引用符内に保持します。
 
-[![エディターが自動的にコード補完を行っていることを示す ER フォーミュラ エディターの gif](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+[![エディターが自動的にコード補完を行っていることを示す ER フォーミュラ エディターの gif。](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
 
 入力したかっこをポイントすると、サポートするコンストラクトを示すために、このペアの 2 つ目のかっこが自動的に強調表示されます。
 
@@ -101,7 +101,7 @@ Microsoft Dynamics 365 Finance バージョン 10.0.19 以降は、既定で提�
 
 - **F1** キーを押して **G** を入力し、**行に移動** を選択して、**8** を入力し、**Enter** キーを押します。
 
-[![コマンド パレットを使用して式の一部を検索する方法を示す ER フォーミュラ エディターの gif](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+[![コマンド パレットを使用して式の一部を検索する方法を示す ER フォーミュラ エディターの gif。](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
 ## <a name=""></a><a name="CodeStructuring">コードの構築</a>
 
@@ -123,7 +123,7 @@ Microsoft Dynamics 365 Finance バージョン 10.0.19 以降は、既定で提�
   
 - **F1** キーを押して、**UN** キーを入力し、**すべてを展開する** を選択し、**Enter** キーを押します
 
-[![コードが展開されていることを示す ER フォーミュラ エディターの gif](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+[![コードが展開されていることを示す ER フォーミュラ エディターの gif。](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
 ## <a name=""></a><a name="FindAndReplace">検索および置換</a>
 
@@ -151,13 +151,13 @@ Microsoft Dynamics 365 Finance バージョン 10.0.19 以降は、既定で提�
   
 - **F1** キーを押し、**C** を入力して、選択したテキストを変更するのに必要なオプションを選択します。 代替テキストを入力します。
 
-[![検索および置換を示す ER フォーミュラ エディターの gif](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+[![検索および置換を示す ER フォーミュラ エディターの gif。](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
 ## <a name=""></a><a name="DataPasting">データ ソースと関数の貼り付け</a>
 
 **データ ソースの追加** を選択すると、現在、左の **データ ソース** パネルで選択されているデータ ソースが、現在の式に貼り付けられます。 同様に、**関数の追加** を選択すると、現在、右の **関数** パネルで選択されている関数が、現在の式に貼り付けられます。 ER フォーミュラ エディターを使用する場合、選択した関数また選択したデータ ソースは常にコンフィギュレーションされた式の末尾に貼り付けられます。 高度な ER フォーミュラ エディターを使用する場合、選択した関数また選択したデータ ソースはコンフィギュレーションされた式のどこにでもに貼り付けられます。 カーソルを使用して、データを貼り付ける場所を指定する必要があります。
 
-[![データ ソースの追加と機能の貼り付けを示す ER フォーミュラ エディターの gif](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+[![データ ソースの追加と機能の貼り付けを示す ER フォーミュラ エディターの gif。](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
 ## <a name=""></a><a name="SyntaxColorization">構文の色付け</a>
 
@@ -165,7 +165,7 @@ Microsoft Dynamics 365 Finance バージョン 10.0.19 以降は、既定で提�
 
 - テキスト定数のラベル ID を表す 2 つのかっこ内のテキスト。
 
-[![ER フォーミュラ エディター](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+[![ER フォーミュラ エディター。](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
 
 ## <a name="limitations"></a>制限
 

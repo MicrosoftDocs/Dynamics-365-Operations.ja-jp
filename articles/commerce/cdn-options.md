@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6e8fb2baf85be0eaecfffcc7ec6cbb457c3bb04
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021893"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351252"
 ---
 # <a name="content-delivery-network-implementation-options"></a>コンテンツ配信ネットワークの実装オプション
 
@@ -40,7 +40,7 @@ ms.locfileid: "6021893"
 
 次の図では、コマース アーキテクチャの概要を表示します。
 
-![コマース アーキテクチャの概要](media/Commerce_CDN-Option_ComparisonModels.png)
+![コマース アーキテクチャの概要。](media/Commerce_CDN-Option_ComparisonModels.png)
 
 コマース サイトの Azure Front Door インスタンスを設定する方法については、[CDN サポートを追加](add-cdn-support.md) を参照してください。
 
@@ -54,7 +54,7 @@ ms.locfileid: "6021893"
 
 次の図は、コマースが提供する Azure Front Door インスタンスのアーキテクチャを示しています。
 
-![コマース提供 Azure Front Door インスタンス](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+![コマース提供 Azure Front Door インスタンス。](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## <a name="use-a-customer-owned-azure-front-door-instance"></a>顧客所有 Azure Front Door インスタンスの使用
 
@@ -66,7 +66,7 @@ ms.locfileid: "6021893"
 
 次の図は、顧客所有 Azure Front Door インスタンスを含むコマース インフラストラクチャを示しています。
 
-![顧客所有 Azure Front Door インスタンスを含むコマース インフラストラクチャ](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
+![顧客所有 Azure Front Door インスタンスを含むコマース インフラストラクチャ。](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
 
 ## <a name="use-an-external-cdn-service"></a>外部 CDN サービスの使用
 
@@ -78,7 +78,7 @@ ms.locfileid: "6021893"
 
 次の図は、外部の CDN サービスを含むコマース インフラストラクチャを示しています。
 
-![外部の CDN サービスを含むコマース インフラストラクチャ](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+![外部の CDN サービスを含むコマース インフラストラクチャ。](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

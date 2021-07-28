@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830837"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358005"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録
 
@@ -53,14 +53,14 @@ ms.locfileid: "5830837"
 1. **アカウント番号** を *1001* を設定します。
 1. **番号** をこの演習で指定した発注書の番号に設定します。
 
-    ![着荷仕訳帳](../media/item-arrival-journal-header.png "着荷仕訳帳")
+    ![着荷仕訳帳。](../media/item-arrival-journal-header.png "着荷仕訳帳")
 
 1. 仕訳帳ヘッダーを作成するには、**OK** を選択します。
 1. **仕訳帳明細行** セクションで、**行の追加** を選択 し、次のデータを入力します。
     - **品目番号** - *M9200* に設定します。 **サイト**、**倉庫**、および **数量** は、10 パレット (各 1000) の在庫トランザクション データに基づいて設定されます。
     - **場所** - *001* に設定します。 この特定の場所はライセンス プレートを追跡しません。
 
-    ![品目到着の仕訳帳明細行](../media/item-arrival-journal-line.png "品目到着の仕訳帳明細行")
+    ![品目到着の仕訳帳明細行。](../media/item-arrival-journal-line.png "品目到着の仕訳帳明細行")
 
     > [!NOTE]
     > **日付** フィールドは、この品目の手持在庫数量が在庫に登録される日付を決定します。  

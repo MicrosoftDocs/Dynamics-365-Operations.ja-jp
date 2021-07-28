@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 35ceb14d4d048959ae6a1740791bd4d57f33b34c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102809"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359536"
 ---
 # <a name="trade-allowance-management"></a>取引割引管理
 
@@ -59,7 +59,7 @@ ms.locfileid: "6102809"
 
 取引割引契約に割り当てられる資金は、**資金** ページに記録されます。 **資金** ページを開くには、**販売およびマーケティング** \> **取引割引** \> **資金** \> **資金** の順に選択します。
 
-![資金ページ](./media/trade-allowance-management-funds-page.png "資金ページ")
+![資金ページ。](./media/trade-allowance-management-funds-page.png "資金ページ")
 
 **資金** ページで、プロモーション資金の詳細を表示できます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "6102809"
 
 取引割引契約は **取引割引契約** ページに記録されます。 **取引割引契約** ページを開き、**販売およびマーケティング** \> **取引割引** \> **取引割引契約** の順に選択します。
 
-![取引割引契約のページ](./media/trade-allowance-management-agreements-page.png "取引割引契約のページ")
+![取引割引契約のページ。](./media/trade-allowance-management-agreements-page.png "取引割引契約のページ")
 
 #### <a name="header"></a>表題
 
@@ -103,7 +103,7 @@ ms.locfileid: "6102809"
 
 販売促進イベントを選択し **金額** タブを選択すると、イベントの詳細が検出されます。
 
-![取引割引契約明細行](./media/trade-allowance-management-agreements-lines.png "取引割引契約明細行")
+![取引割引契約明細行。](./media/trade-allowance-management-agreements-lines.png "取引割引契約明細行")
 
 **取引割引明細行** セクションで、報奨を取得するための定義に対して顧客が達成する必要がある数量または金額の範囲を指定します。
 

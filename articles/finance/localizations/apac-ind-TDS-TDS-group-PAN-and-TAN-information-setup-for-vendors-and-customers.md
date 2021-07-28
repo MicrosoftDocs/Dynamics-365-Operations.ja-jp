@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023389"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358269"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>顧客および仕入先の TDS グループ、PAN、TAN 情報の設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "6023389"
 
 1. **買掛金勘定 \> 仕入先 \> すべての仕入先** または **売掛金勘定 \> 顧客 \> すべての顧客** に移動します。
 
-    [![すべての仕入先ページ](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![すべての仕入先ページ。](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. アクション ペインで、**新規** を選択して、仕入先または顧客を作成し、必要な詳細を入力します。 または、既存の仕入先または顧客を選択します。
 3. **請求書と配送** クイック タブの **源泉徴収税** セクションで、**源泉徴収税の計算** オプションを **はい** に設定して、仕入先または顧客の源泉徴収税、TDS、または源泉徴収 (TSC) を計算します。
@@ -60,7 +60,7 @@ ms.locfileid: "6023389"
     - 地方自治体
     - その他
 
-    [![税金情報クイック タブ](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![税金情報クイック タブ。](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. アクション ペインの **仕入先** タブにある **登録** グループで、**登録 ID** を選択して、**住所の管理** ページを開きます。
 10. **住所の管理** ページの **税金情報** クイック タブで、**追加** または **編集** を選択して **税金情報の管理** ページを開き、税金登録エントリを管理できます。

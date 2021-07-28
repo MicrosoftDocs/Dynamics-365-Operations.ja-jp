@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26f0dc3b128daf8c7d8a05d6f3cacc5b7de0c756
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 964c54ba85f585bc90c5f7d78b2393195dd664bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909111"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353495"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>発注書の承認モバイル ワークスペース
 
@@ -83,7 +83,7 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 3. 初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 4. サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-![使用可能なワークスペースの一覧の発注書の承認ワークスペース](./media/po-workspaces.png)
+![使用可能なワークスペースの一覧の発注書の承認ワークスペース。](./media/po-workspaces.png)
 
 ## <a name="view-orders-that-are-assigned-to-you"></a>自分に割り当てられている注文の表示
 1. モバイル デバイスで、**発注書の承認** ワークスペースを選択します。

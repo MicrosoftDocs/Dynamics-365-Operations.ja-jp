@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adb8e1a0fef93fdd66a4cbac82689ff7a19aca4a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2672520ddf21e565edee5024d6886cabb18d6e94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754779"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348632"
 ---
 # <a name="find-information-by-using-lookups"></a>ルックアップを使用した情報の検索
 
@@ -44,15 +44,15 @@ ms.locfileid: "5754779"
 
 **市町村** フィールドにフォーカスを置くと、「col」のように複数の文字を入力して目的の市町村の検索ができるようになります。 入力後、「col」で始まる市町村がフィルタ処理されてルックアップが自動的に開きます。
 
-[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+[![typeaheadLookupExample。](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
 
 この時点で、カーソルがまだルックアップ フィールド上にあります。 値を「colum」のように入力を続けると、ルックアップ コンテンツは自動的にコントロールの最新の値を反映するように調整されます。
 
-![updateFilterLookupExample](./media/updatefilterlookupexample.png)
+![updateFilterLookupExample。](./media/updatefilterlookupexample.png)
 
 ルックアップ コントロールにフォーカスを置いてあっても、選択したい行を強調表示するために **上矢印** または **下矢印** キーを使用することができます。 **Enter** を押すと、強調表示された行がルックアップから選択され、コントロールの値が更新されます。
 
-![changingSelectionLookup](./media/changingselectionlookup.png)
+![changingSelectionLookup。](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>詳細 ID の入力
 
@@ -62,25 +62,25 @@ ms.locfileid: "5754779"
 
 ユーザーがルックアップ制御に **口座 ID** を入力し始めると、前のセクションで説明されている通りドロップダウンメニューが自動的に開き、ユーザーには次に表示されるようにルックアップが表示されます。
 
-[![顧客 ID が入力されたときのコンテキスト ルックアップ](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![顧客 ID が入力されたときのコンテキスト ルックアップ。](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
 ただし、ユーザーは **口座名** を入力し始めることもできます。 これが検出された場合は、次のルックアップを表示します。 **名前** 列がルックアップの最初の列に移動する方法と、ルックアップが **名前** 列に基づいて並べ替えおよびフィルタ処理される方法に注意してください。
 
-[![顧客名が入力されるときのコンテキスト ルックアップ](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![顧客名が入力されるときのコンテキスト ルックアップ。](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>より高度なフィルタおよび並べ替えのグリッド列ヘッダーを使用する
 
 前の 2 つのセクションで説明したルックアップの拡張機能は、ユーザーがルックアップの **ID** または **名前** フィールドで「Begins with」検索に基づいてルックアップの行を移動するのにとても役立ちます。 ただし、適切な行を検索するために、より高度なフィルタ処理をするか (または並べ替え) が必要な場合があります。 この場合、ユーザーはルックアップ内のグリッド列ヘッダーで、フィルター処理および並べ替えのオプションを使用する必要があります。 たとえば、製品として正しい「ケーブル」を指定する必要がある販売注文明細行を入力する従業員について考えます。 「ケーブル」から始まる製品名がないため、**品目番号** 管理に「ケーブル」を入力しても役立ちません。
 
-![emptyitemlookup](./media/emptyitemlookup.png)
+![emptyitemlookup。](./media/emptyitemlookup.png)
 
 これに代わる方法として、ユーザーはルックアップ コントロールの値をオフにして、ルックアップのドロップダウンメニューを開き、次に示すようにグリッド列ヘッダーを使用して、ドロップダウン メニューをフィルタリングします。 マウス (またはタッチ) ユーザーはその列のフィルタリングおよび並べ替えのオプションにアクセスするために、任意の列ヘッダーをクリック (またはタッチ) します。 キーボードユーザーの場合、ドロップダウン メニューにフォーカスを移動するために **Alt**+**↓** **矢印** を 2 回目に押し、正しい列にタブした後に、**Ctrl**+**G** を押して、グリッド列のヘッダーのドロップダウン メニューを開きます。
 
-[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+[![gridfilteritemlookup。](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
 
 フィルターが適用された後 (以下の画像を参照)、ユーザーは通常通り行を検索して選択できます。
 
-![filtereditemlookup](./media/filtereditemlookup.png)
+![filtereditemlookup。](./media/filtereditemlookup.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

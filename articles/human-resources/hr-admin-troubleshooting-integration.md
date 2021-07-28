@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 946d0433df41ce7067b8b0673db680abb42b7792
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053398"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357292"
 ---
 # <a name="integration-with-finance-faq"></a>Finance FAQ との統合
 
@@ -37,7 +37,7 @@ No. Human Resources アプリケーションのユーザーを編集すると、
 | --- | --- | --- | --- |
 | Dynamics 365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Talent アプリケーション ユーザーに対する既定の設定](media/DynamicsApplicationUser.png)
+![Talent アプリケーション ユーザーに対する既定の設定。](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>すべてのデータが同期された、または一部のデータ エンティティだけが同期されましたか。
 
@@ -57,7 +57,7 @@ No. Human Resources アプリケーションのユーザーを編集すると、
 
 Finance and Operations で存在しますが、人事管理では存在しないデータに関しては、人事管理 **リンクの構成** を使用して 2 つのシステムを相互にリンクします。
 
-![財務分析コードのマップ](media/MapFinancialDimensions.png)
+![財務分析コードのマップ。](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>場合によっては、従業員をインポートする場合 Finance の無効な作業者に入ってしまいます。 なぜですか。
 
@@ -71,14 +71,14 @@ Finance and Operations で存在しますが、人事管理では存在しない
 
 「高度なクエリ」を使用して、ソースデータを送信先に渡す前に、フィルター処理して再作成できます。
 
-![有効な作業者の高度なクエリ](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![有効な作業者の高度なクエリ。](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>特定のエンティティの Finance に送信するフィールドを指定できますか。
 
 フィールドは、統合タスクから追加または削除できます。 Dataverse テーブルに存在するすべてのデータ フィールドが、Human Resources から入力されるわけではありません。
 追加のデータは、Power Apps 経由で入力されます。
 
-![統合タスクへ (から) フィールドを追加または削除します](media/SpecifyFieldsIncludedInIntegration.png)
+![統合タスクへ (から) フィールドを追加または削除します。](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>バッチ ジョブとしての統合を設定しましたが、人事管理は宛先システムへの接続を失いました。 宛先システムに同じ一連の変更をどのように送信しますか。
 
@@ -130,17 +130,17 @@ Finance and Operations で存在しますが、人事管理では存在しない
 
 2. プロジェクトの実行時間を追跡します。
 
-    ![プロジェクトの実行時間の追跡](media/CaptureTimeOfExecution.png)
+    ![プロジェクトの実行時間の追跡。](media/CaptureTimeOfExecution.png)
 
 3. Finance では、インデックス - 1 を識別します。 この例では、接尾語「8」でインデックス「0」プロジェクトの実行時間を持つプロジェクトは、ステップ 2 の実行時間と一致します。
 
-    ![インデックスの識別](media/IdentifyIndex.png)
+    ![インデックスの識別。](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-human-resources-and-finance-i-dont-see-my-human-resources-data-in-finance-what-do-i-do"></a>人事管理と Finance を統合した後、財務の人事管理データは表示されません。 何をしたらいいですか ?
 
 Finance への統合には 2 つのステップがあります。 まず、人事管理データが更新済で、Dataverse で利用可能であることを確認します。 これはほぼリアルタイムの同期であり、データ テーブル内のデータを参照して Power Apps で検証できます。
 
-![Dataverse 内のデータ](media/DataInCDS.png)
+![Dataverse 内のデータ。](media/DataInCDS.png)
 
 Dataverse で予定どおりにデータが表示されない場合は、エンティティが統合でサポートされていることを確認します。 Dataverse に追加データを含めるには、Microsoft 側で変更が必要です。
 
@@ -165,7 +165,7 @@ Dataverse で予定どおりにデータが表示されない場合は、エン�
 
 **データ管理 \> フレームワーク パラメーター \> エンティティ設定 \> エンティティ リストの更新** に移動して、Finance のデータ エンティティを更新します。 これは数分で完了し、それらのマッピングを表示できます。 新しいプロジェクトが作成されたときに、この問題が発生します。
 
-![フィールド マッピングがありません](media/MissingFieldMapping.png)
+![フィールド マッピングがありません。](media/MissingFieldMapping.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 71ec26bea2063bcf8b6d302a7ece804b3ac934b3
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 94ecd623d445e23cc41829c51429e4783daa49f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304370"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355976"
 ---
 # <a name="view-manage-and-approve-planned-orders"></a>計画オーダーの表示、管理、および承認
 
@@ -65,7 +65,7 @@ ms.locfileid: "6304370"
 
 次の図で、各計画オーダーに割り当てられている **状態** の値を使用して承認ワークフローを実装する方法を示します。 承認プロセスを実装するには、前のセクションでの記載に従って、各計画オーダーの **状態** の値を手動で調整します。
 
-![計画された注文フロー](media/approved-planned-orders-1.png)
+![計画された注文フロー。](media/approved-planned-orders-1.png)
 
 > [!TIP]
 > 変更された計画オーダーのいずれかを承認することをお勧めします。 それ以外の場合は、編集は次の計画の実行により無視され、上書きされます。

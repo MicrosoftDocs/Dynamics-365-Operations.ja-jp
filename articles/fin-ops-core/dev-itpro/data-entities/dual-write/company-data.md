@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: ab063c66712b43818f58eee1493ec168771ae97a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941032"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350962"
 ---
 # <a name="company-concept-in-dataverse"></a>Dataverse の企業概念
 
@@ -43,7 +43,7 @@ Dataverse は、同等の概念を持っていません。 最も近い概念は
 
 次の図では、Dataverse のデータ設定の例を示します。
 
-![Dataverse のデータ設定](media/dual-write-company-1.png)
+![Dataverse のデータ設定。](media/dual-write-company-1.png)
 
 この構成により、USMF 社に関連する行は、Dataverse の USMF 事業単位にリンクされているチームが所有します。 したがって、事業単位レベルの可視性に設定されたセキュリティ ロールを通じて、その事業単位にアクセスできるユーザーは、これらの行を表示できるようになります。 次の例は、チームを使用してこれら行への正しいアクセスを提供する方法を示しています。
 
@@ -52,21 +52,21 @@ Dataverse は、同等の概念を持っていません。 最も近い概念は
 + 「USMF セールス」チームは、前述の USMF 事業単位にリンクされています。
 + したがって、「USMF セールス」チームのメンバーは、Finance and Operations の USMF 会社テーブルから来た「USMF DW」ユーザーが所有するアカウントを確認できます。
 
-![チームの使用方法](media/dual-write-company-2.png)
+![チームの使用方法。](media/dual-write-company-2.png)
 
 前の図に示すように、事業単位、企業、およびチーム間の 1:1 マッピングは、出発点に過ぎません。 この例では、新しい「ヨーロッパ」の事業単位が DEMF と ESMF の両方の Dataverse にて手動で作成されます。 この新しいルートの事業単位は、デュアル書き込みとは無関係です。 ただし、関連するセキュリティー ロールの **親 / 子 BU** にデータの可視性を設定することにより、DEMF および ESMF の両方のアカウント データに対する「EUR 営業」チームのメンバーにアクセスできるよう使用できます。
 
 最後に、デュアル書き込みによって、どの所有者チームに行の割り当てが決定されるかについて説明します。 この動作は、cdm\_Company 行の **既定の所有チーム** 列で制御します。 cdm\_Company 行がデュアル書き込みに有効となっている場合、プラグインは関連付けられた事業単位と所有者チームを自動的に作成し (存在しない場合)、**既定の所有チーム** 列を設定します。 管理者は、この列を別の値に変更できます。 ただし、テーブルがデュアル書き込みを有効にしている限り、管理者は列をクリアできません。
 
 > [!div class="mx-imgBorder"]
-![既定の所有チーム列](media/dual-write-default-owning-team.jpg)
+![既定の所有チーム列。](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>企業のストライピングとブートストラップ
 
 Dataverse 統合は、企業の識別子を使用してデータをストライプすることにより、企業パリティをもたらします。 次の図に示すように、すべての企業の固有のテーブルは、cdm\_Company テーブルと多対1 (N:1) の関係を持つよう拡張されます。
 
 > [!div class="mx-imgBorder"]
-![企業の固有テーブルと cdm_Company テーブル間の N:1 関係](media/dual-write-bootstrapping.png)
+![企業の固有テーブルと cdm_Company テーブル間の N:1 関係。](media/dual-write-bootstrapping.png)
 
 + 行の場合、企業が追加、保存された後で、値が読み取り専用になります。 したがって、ユーザーは正しい企業を選択する必要があります。
 + 企業データを持つ行のみが、アプリケーションと Dataverse 間のデュアル書き込みの対象となります。
@@ -98,7 +98,7 @@ Customer Engagement アプリで会社名を自動入力するには、いくつ
 
 カスタム フォーム、または標準フォームに追加されたカスタム ルックアップ列の会社コンテキストに基づいてフィルター処理を適用するには、フォームを開き、**関連レコードのフィルター処理** セクションを使用して、会社フィルターを適用します。 この設定は、指定された行の基礎となる会社に基づくフィルター処理が必要となる各ルックアップ列に対して行う必要があります。 次の図に **アカウント** の設定を示します。
 
-:::image type="content" source="media/apply-company-context.png" alt-text="会社コンテキストの適用":::
+:::image type="content" source="media/apply-company-context.png" alt-text=" 会社コンテキストの適用。":::
 
 
 

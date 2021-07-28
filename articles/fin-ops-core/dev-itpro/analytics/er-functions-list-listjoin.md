@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b300cef0a508f7cc37397480738091158efdead
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 5fe49184ee4023e8b4f54dd7f5107be8c711d4b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027918"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353733"
 ---
 # <a name="listjoin-er-function"></a>LISTJOIN ER 関数
 
@@ -66,15 +66,15 @@ LISTJOIN (list 1 [, list 2, …, list N])
 - **量**: このフィールドには、`Real` タイプの値を返す式が含まれています。
 - **IsValid**: このフィールドには、`Boolean` タイプの値を返す式が含まれています。
 
-![ER モデル マッピング デザイナーのページ](./media/er-functions-list-listjoin-image1.gif)
+![ER モデル マッピング デザイナーのページ。](./media/er-functions-list-listjoin-image1.gif)
 
 この場合、式 `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` は 2 つのレコードを含む新しいリストを返します。
 
-![2 つのレコードを持つ ER モデル マッピング デザイナー ページ](./media/er-functions-list-listjoin-image2.gif)
+![2 つのレコードを持つ ER モデル マッピング デザイナー ページ。](./media/er-functions-list-listjoin-image2.gif)
 
 このフィールドは、呼び出された関数のすべての引数に表示される唯一のフィールドであるため、`Real` タイプの 1 つの **量** フィールドで構成されます。
 
-![ER モデル マッピング デザイナー ページの量フィールド](./media/er-functions-list-listjoin-image3.gif)
+![ER モデル マッピング デザイナー ページの量フィールド。](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>追加リソース
 

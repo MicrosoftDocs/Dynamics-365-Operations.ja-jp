@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8b288a0d6b7516faf635486fbaad885344d2cc6f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022425"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352087"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のプロビジョニング
 
@@ -90,16 +90,16 @@ Azure コネクタ を LCS プロジェクトに追加するには、[Azure Reso
 1. **アプリケーション バージョン** フィールドで、最新のバージョンを選択します。 最新バージョン以外のアプリケーション バージョンを特定する必要がある場合は、**10.0.14** より前のバージョンを選択しないでください。
 1. **プラットフォーム バージョン** フィールドで、選択したアプリケーション バージョンに対して自動的に選択されたプラットフォーム バージョンを使用します。 
 
-    ![アプリケーションとプラットフォーム バージョンを選択する](./media/project1.png)
+    ![アプリケーションとプラットフォーム バージョンを選択する。](./media/project1.png)
 
 1. **次へ** を選択します。
 1. 環境のトポロジとして **デモ** を選択します。
 
-    ![環境トポロジ 1 を選択する](./media/project2.png)
+    ![環境トポロジ 1 を選択する。](./media/project2.png)
 
 1. **環境の配置** のページで、環境名を入力します。 詳細設定はそのままにしておきます。
 
-    ![環境の配置のページ](./media/project4.png)
+    ![環境の配置のページ。](./media/project4.png)
 
 1. VM サイズを必要に応じて調整します。 (VM 最小在庫管理単位をお勧めします \[SKU\] **D13 v2**。)
 1. 価格決定およびライセンス条件を確認、チェック ボックスをオンにして同意したことを示します。

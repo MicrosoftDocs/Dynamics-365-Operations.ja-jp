@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 61943
+ms.custom:
+- "61943"
+- intro-internal
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 15595c46f9d6ff91f6fd618859e9f059ae88bd78
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d172e3dfcb9ca70e1047a174040e7940bdd25296
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910092"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354015"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>生産での作業者への Mixed-reality ガイドの提供
 
@@ -57,7 +59,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 
 ### <a name="assembly"></a>組み立て
 
-![アセンブリ タスクのガイドの使用](media/instruction-guides-hero-assembly.png "サービス タスクのガイドの使用")
+![アセンブリ タスクのガイドの使用。](media/instruction-guides-hero-assembly.png "サービス タスクのガイドの使用")
 
 組み立て操作の手順では、作業者が必要なツールとパーツ、および実際の作業状況での使用方法が示されます。
 
@@ -65,7 +67,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 
 ### <a name="service"></a>サービス
 
-![サービス タスクのガイドの使用](media/instruction-guides-hero-service.png "サービス タスクのガイドの使用")
+![サービス タスクのガイドの使用。](media/instruction-guides-hero-service.png "サービス タスクのガイドの使用")
 
 技術者には、現場でのガイド付き指示事項が提供されるため、追加の訪問をスケジュールする必要がありません。
 
@@ -73,7 +75,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 
 ### <a name="quality"></a>品質
 
-![品質保証タスクでのガイドの使用](media/instruction-guides-hero-quality.png "品質保証タスクのガイドの使用")
+![品質保証タスクでのガイドの使用。](media/instruction-guides-hero-quality.png "品質保証タスクのガイドの使用")
 
 従業員の知識を反復可能なツールに変えることにより、新しいプロセスをロールアウトし、一貫性を高めることができます。
 
@@ -81,13 +83,13 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 
 ### <a name="certifications"></a>証明書
 
-![認定に関連したタスクのガイドを使用](media/instruction-guides-hero-certification.png "認定に関連したタスクのガイドの使用")
+![認定に関連したタスクのガイドを使用。](media/instruction-guides-hero-certification.png "認定に関連したタスクのガイドの使用")
 
 支援を必要とする人物をすばやく特定して、すべての従業員が高い基準を満たすようにします。
 
 ### <a name="safety"></a>安全
 
-![作業安全手順のガイドの使用](media/instruction-guides-hero-safety.png "作業安全手順のガイドの使用")
+![作業安全手順のガイドの使用。](media/instruction-guides-hero-safety.png "作業安全手順のガイドの使用")
 
 物理環境で試みる前に、危険な手順を仮想的に実行する手順を説明します。 Mixed reality アプローチでは、作業者が危険な手順を仮想的に経験できます。
 
@@ -119,7 +121,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 
 作業現場でのガイドの表示方法を構成するには、**Mixed Reality \> Dynamics 365 Guides \> 構成ガイドの統合** へ移動します。
 
-![製造用構成ガイドの統合](media/instruction-guides-configure-integration.png "製造用ガイド統合の構成")
+![製造用構成ガイドの統合。](media/instruction-guides-configure-integration.png "製造用ガイド統合の構成")
 
 次のフィールドを設定します。
 
@@ -136,7 +138,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 
 **すべてのガイド** ページを使用すると、組織で使用可能なすべてのガイドの一覧を表示したり、生産プロセスやリソースに対するすべての割り当てを表示したりできます。 これを開くには、**Mixed reality \> ガイド \> すべてのガイド** に移動します。 上部の一覧には使用可能なすべてのガイドが表示され、ここでフィールドを使用して一覧をフィルタリングできます。 下部の一覧には、すべてのガイドの割り当てが表示され、それらを管理するためのツールバーが表示されます。
 
-![ガイドの管理](media/instruction-guides-allguides.png "ガイドの管理")
+![ガイドの管理。](media/instruction-guides-allguides.png "ガイドの管理")
 
 次のセクションでは、ガイドを割り当てることができるオブジェクトのタイプについて説明します。 各割り当てガイドには、それぞれの生産ジョブに自動的に関連付けられた手順が表示され、作業現場で使用できるようになります。
 
@@ -157,7 +159,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 1. **関連するガイド** のクイック タブを展開します。
 1. **関連するガイド** ツールバーから **追加** を選択します。 新しい行がグリッドに追加されます。
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。 ガイドの数が多い場合は、一覧をフィルタリングして目的のガイドを見つけることができます。
-    ![ガイドの管理](media/instruction-guides-allguides.png "ガイドの管理")
+    ![ガイドの管理。](media/instruction-guides-allguides.png "ガイドの管理")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>リソース グループへのガイドの関連付け
 
@@ -178,7 +180,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 1. **関連するガイド** のクイック タブを展開します。
 1. **関連するガイド** ツールバーから **追加** を選択します。 新しい行がグリッドに追加されます。
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。 ガイドの数が多い場合は、一覧をフィルタリングして目的のガイドを見つけることができます。
-    ![リソース グループへのガイドの追加](media/instruction-guides-resourcegroup.png "リソース グループへガイドを追加する")
+    ![リソース グループへのガイドの追加。](media/instruction-guides-resourcegroup.png "リソース グループへガイドを追加する")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>リリース済製品へのガイドの関連付け
 
@@ -198,7 +200,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 1. 選択したプロダクトの **関連ガイド** ページが開きます。
 1. アクション ウィンドウで **追加** を選択して、新しい行をグリッドに追加します。 
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。
-    ![リリース済製品へガイドを追加する](media/instruction-guides-ReleasedProduct-AddGuides.png "リリース済製品へガイドを追加する")
+    ![リリース済製品へガイドを追加する。](media/instruction-guides-ReleasedProduct-AddGuides.png "リリース済製品へガイドを追加する")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>フォーミュラへのガイドの関連付け
 
@@ -223,7 +225,7 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 1. **関連するガイド** のクイック タブを展開します。
 1. **関連するガイド** ツールバーから **追加** を選択します。 新しい行がグリッドに追加されます。
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。
-    ![フォーミュラへガイドを追加する](media/instruction-guides-Formula.png "フォーミュラへガイドを追加する")
+    ![フォーミュラへガイドを追加する。](media/instruction-guides-Formula.png "フォーミュラへガイドを追加する")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>フォーミュラ バージョンへのガイドの関連付け
 
@@ -248,11 +250,11 @@ Dynamics 365 Guides は、実践的な学習によって従業員を支援する
 1. 上部クイックタブの上にある **ヘッダー** タブを開きます。
 1. **フォーミュラ バージョン** クイックタブで、ガイドを割り当てるバージョンを選択します。
 1. **フォーミュラ バージョン** ツールバーで、**関連するガイド** を選択します。
-    ![選択したフォーミュラ バージョンに関連付けられているガイドの表示](media/instruction-guides-FormulaVersion.png "選択したフォーミュラ バージョンに関連付けられているガイドの表示")
+    ![選択したフォーミュラ バージョンに関連付けられているガイドの表示。](media/instruction-guides-FormulaVersion.png "選択したフォーミュラ バージョンに関連付けられているガイドの表示")
 1. フォーミュラ バージョンの **関連ガイド** ページが開きます。
 1. アクション ウィンドウで **追加** を選択して、新しい行をグリッドに追加します。 
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。
-    ![フォーミュラ バージョンへガイドを追加する](media/instruction-guides-FormulaVersionAddGuide.png "フォーミュラ バージョンへガイドを追加する")
+    ![フォーミュラ バージョンへガイドを追加する。](media/instruction-guides-FormulaVersionAddGuide.png "フォーミュラ バージョンへガイドを追加する")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>部品表へのガイドの関連付け
 
@@ -275,7 +277,7 @@ BOM に関連付けられているガイドには、BOM から材料を準備お
 1. **関連するガイド** のクイック タブを展開します。
 1. **関連するガイド** ツールバーから **追加** を選択します。 新しい行がグリッドに追加されます。
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。
-    ![BOM へガイドを追加する](media/instruction-guides-BOM.png "BOM へガイドを追加する")
+    ![BOM へガイドを追加する。](media/instruction-guides-BOM.png "BOM へガイドを追加する")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>部品表バージョンへのガイドの関連付け
 
@@ -297,11 +299,11 @@ BOM に関連付けられているガイドには、BOM から材料を準備お
 1. 上部クイックタブの上にある **ヘッダー** タブを開きます。
 1. **BOM バージョン** クイックタブで、ガイドを割り当てるバージョンを選択します。
 1. **BOM バージョン** ツールバーで、**関連するガイド** を選択します。
-    ![選択した BOM バージョンに関連付けられているガイドの表示](media/instruction-guides-BOMVersion.png "選択した BOM バージョンに関連付けられているガイドの表示")
+    ![選択した BOM バージョンに関連付けられているガイドの表示。](media/instruction-guides-BOMVersion.png "選択した BOM バージョンに関連付けられているガイドの表示")
 1. BOM バージョンの **関連ガイド** ページが開きます。
 1. アクション ウィンドウで **追加** を選択して、新しい行をグリッドに追加します。
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。
-    ![BOM バージョンへガイドを追加する](media/instruction-guides-BOMVersionAddGuide.png "BOM バージョンへガイドを追加する")
+    ![BOM バージョンへガイドを追加する。](media/instruction-guides-BOMVersionAddGuide.png "BOM バージョンへガイドを追加する")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>工順へのガイドの関連付け
 
@@ -322,7 +324,7 @@ BOM に関連付けられているガイドには、BOM から材料を準備お
 1. **関連するガイド** のクイック タブを展開します。
 1. **関連するガイド** ツールバーから **追加** を選択します。 新しい行がグリッドに追加されます。
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。
-    ![工順へガイドを追加する](media/instruction-guides-Route.png "工順へガイドを追加する")
+    ![工順へガイドを追加する。](media/instruction-guides-Route.png "工順へガイドを追加する")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>工順バージョンへのガイドの関連付け
 
@@ -340,11 +342,11 @@ BOM に関連付けられているガイドには、BOM から材料を準備お
 1. ガイドを割り当てる工順を開きます。
 1. **バージョン** クイック タブで、ガイドを割り当てるバージョンを選択します。
 1. **バージョン** ツールバーで、**関連するガイド** を選択します。
-    ![選択した工順バージョンに関連付けられているガイドの表示](media/instruction-guides-RouteVersion.png "選択した工順バージョンに関連付けられているガイドの表示")
+    ![選択した工順バージョンに関連付けられているガイドの表示。](media/instruction-guides-RouteVersion.png "選択した工順バージョンに関連付けられているガイドの表示")
 1. BOM バージョンの **関連ガイド** ページが開きます。
 1. アクション ウィンドウで **追加** を選択して、新しい行をグリッドに追加します。
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。
-    ![工順バージョンへガイドを追加する](media/instruction-guides-RouteVersionAddGuide.png "工順バージョンへガイドを追加する")
+    ![工順バージョンへガイドを追加する。](media/instruction-guides-RouteVersionAddGuide.png "工順バージョンへガイドを追加する")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>工順工程関連へのガイドの関連付け
 
@@ -367,8 +369,8 @@ BOM に関連付けられているガイドには、BOM から材料を準備お
 1. 選択した工順の **工順の詳細** ページが開きます。
 1. 上部グリッドで、ガイダンスを提供する工程を選択します。
 1. 下部グリッドで、特定の関係 (汎用的な **すべて** の関係) を選択します。
-    ![工程を選択してから、関係を選択](media/instruction-guides-RouteOperationRelation.png "工程を選択してから、関係を選択")
-1. 下段の上にある **関連するガイド** タブを開きます。![関連するガイド タブ](media/instruction-guides-RouteOperationRelation-AddGuide.png "関連するガイド タブ")
+    ![工程を選択してから、関係を選択。](media/instruction-guides-RouteOperationRelation.png "工程を選択してから、関係を選択")
+1. 下段の上にある **関連するガイド** タブを開きます。![関連するガイド タブ。](media/instruction-guides-RouteOperationRelation-AddGuide.png "関連するガイド タブ")
 1. 下部のグリッドの一番上にあるツールバーの **追加** を選択して、グリッドに新しい行を追加します。
 1. 新しい行の場合は、**名前** 列のドロップダウン リストを使用して、割り当てるガイドを選択します。 行の残りの部分で、選択したガイドを使用できるようにする各コンテキストのチェックボックスをオンにします。
 
@@ -379,11 +381,11 @@ BOM に関連付けられているガイドには、BOM から材料を準備お
 
 作業者が作業現場の実行インターフェイスでジョブリストを開くと、Supply Chain Management によって表示されているジョブに関連するガイドが検出されます。 **ガイド** ボタンを使用して、関連するガイドを表示します。
 
-![作業現場の実行インターフェイスでのガイド ボタン](media/instruction-guides-Shopfloor1.png "作業現場の実行インターフェイスでのガイド ボタン")
+![作業現場の実行インターフェイスでのガイド ボタン。](media/instruction-guides-Shopfloor1.png "作業現場の実行インターフェイスでのガイド ボタン")
 
 次に、HoloLens を装着し、QR コードを確認してそれぞれのガイドを有効化することによりガイドにアクセスします。
 
-![QR コードで HoloLens を使用してガイドにアクセスする](media/instruction-guides-Shopfloor2.png "QR コードで HoloLens を使用してガイドにアクセスする")
+![QR コードで HoloLens を使用してガイドにアクセスする。](media/instruction-guides-Shopfloor2.png "QR コードで HoloLens を使用してガイドにアクセスする")
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>ガイドを選択するためのロジックを解決する
 
@@ -406,7 +408,7 @@ Supply Chain Management では、生産フロアのジョブを生成すると�
 - 工順 バージョンを製造オーダーに関連付けた場合、そのバージョンに関連付けられているすべてのガイドと、そのバージョンの親工順に関連付けられているガイドもジョブに表示されます。
 - *すべて* の関係を含む工順工程関係を定義し、それらの関係にガイドを割り当てると、ジョブには最も具体的な関係のあるガイドのみが表示されます。  
 
-![関連するガイドを解決する図](media/instruction-guides-Resolve.png "関連するガイドを解決する図")
+![関連するガイドを解決する図。](media/instruction-guides-Resolve.png "関連するガイドを解決する図")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

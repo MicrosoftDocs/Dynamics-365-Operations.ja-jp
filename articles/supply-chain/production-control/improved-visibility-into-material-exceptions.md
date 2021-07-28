@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: beacff21c6468e9c4b387a654e95f25572c0ede9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831989"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348371"
 ---
 # <a name="visibility-into-material-exceptions"></a>材料の例外の把握
 
@@ -37,7 +37,7 @@ ms.locfileid: "5831989"
 
 次の図の青色のバーは、リソース上でスケジュールされた生産ジョブを表しています。 ジョブは、2017 年 5 月 1 日 (2017/05/01) に開始する予定です。 この日付は原材料の日付です。 つまり、BOM およびフォーミュラ明細行でのジョブに割り当てられた材料は、この日付に準備を完了する必要があります。 図のもう一方の日付、2017 年 5 月 6 日 (2017/05/06) は、ワークスペースの日付を表します。 この例では、原材料の日付はワークスペースの日付よりも前です。 したがって、原材料の消費が開始予定日を過ぎ、BOM およびフォーミュラ明細行が注意を要する基準を満たしています。
 
-![原材料日付がワークスペース日付より前の生産ジョブの例](./media/improved-visibility.png)
+![原材料日付がワークスペース日付より前の生産ジョブの例。](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>注意が必要な未リリースの材料明細行
 

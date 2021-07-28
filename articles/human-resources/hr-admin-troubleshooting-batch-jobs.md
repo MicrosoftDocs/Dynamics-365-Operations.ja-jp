@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a5aeaeb7311d87a154882b7058b6da430900bd56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 13482ab7b9ee6303138a7a5e82dce78138e0b8ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053470"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357316"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>数時間後にバッチ ジョブのスケジュールを設定して、パフォーマンスを最適化する
 
@@ -51,11 +51,11 @@ Microsoft Dynamics 365 Human Resources は、通常の営業時間中に実行�
 
 3. **バックグラウンドで実行** を選択して、**再実行** を選択します。
 
-   ![再実行の設定](media/talent-batch-history-cleanup-recurrence.png)
+   ![再実行の設定。](media/talent-batch-history-cleanup-recurrence.png)
 
 4. **再実行の定義** で、**開始日** および **開始時刻** を時間外または週末に発生するよう設定します。 **終了日なし** を選択します。 
 
-   ![再実行の開始日時の定義](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![再実行の開始日時の定義。](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. **OK** を選択します。
 

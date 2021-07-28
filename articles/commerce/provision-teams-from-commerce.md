@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 39dabeb8bacc4ebc3376f53f15c7fb292c8d301c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022449"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352111"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Dynamics 365 Commerce から Microsoft Teams へのプロビジョニング
 
@@ -49,7 +49,7 @@ Commerce 本部で Teams をプロビジョニングするには、次の手順�
 > [!TIP]
 > 地域マネージャー、店舗マネージャー、店舗従業員のいずれもが Teams のライセンスに関連付けられていない場合、次のエラーメッセージが表示される場合があります : 「ユーザーの適用可能な Sku カテゴリの取得に失敗しました」 この問題を修正するには、アクション ペインの **チームとメンバーの同期** を選択します。
 
-<!-- ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
+<!-- ![Dynamics 365 Commerce - Teams integration configuration.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
 
 ## <a name="validate-teams-provisioning-in-the-teams-admin-center"></a>Teams 管理センターでTeams のプロビジョニングを検証する
 
@@ -63,7 +63,7 @@ Microsoft Teams 管理センターで Microsoft Teams のプロビジョニン�
 
 次の図は、Teams 管理センターの **チームの管理** ページの例を示しています。
 
-![Teams 管理センターの [チームの管理] ページの例](media/Teams-FLW-Admin-Teams.png)
+![Teams 管理センターのチームの管理ページの例。](media/Teams-FLW-Admin-Teams.png)
 
 ## <a name="upload-a-commerce-organizational-hierarchy-to-teams"></a>Commerce の組織階層を Teams にアップロードする
     
@@ -86,7 +86,7 @@ Microsoft Teams に組織階層がアップロードされたことを確認す�
 1. **公開済 リスト** タブで、ダミーのタスクを含む新しいリストを作成します。
 1. **公開** を選択します。 次の図の例のように、**公開対象者** ダイアログ ボックスに組織階層が表示されます。
 
-![公開対象者のダイアログボックスに表示される組織階層の例](media/Microsoft-teams-verify-org-hierarchy.png)
+![公開対象者のダイアログボックスに表示される組織階層の例。](media/Microsoft-teams-verify-org-hierarchy.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

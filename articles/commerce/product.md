@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1a25e3d5bc1cc5c1c7509186451fdfef50dd6cf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c8a22a356053789f97fd4f3f9437d57978a67943
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792342"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352135"
 ---
 # <a name="add-product-recommendations-on-pos"></a>POS で製品推奨事項を追加する
 
@@ -39,7 +39,7 @@ ms.locfileid: "5792342"
 
     - 店舗スタッフが、異なるチャネル間で以前のトランザクションを調べるときに **製品の詳細** ページを参照する場合、推奨サービスは、一緒に購入される可能性が高い追加アイテムを提案します。
 
-    [![製品詳細ページの推奨事項](./media/proddetails.png)](./media/proddetails.png)
+    [![製品詳細ページの推奨事項。](./media/proddetails.png)](./media/proddetails.png)
 
 2. **トランザクション** ページ:
 
@@ -48,7 +48,7 @@ ms.locfileid: "5792342"
     > [!NOTE]
     > **トランザクション** ページに推奨事項を表示するには、小売業者は Dynamics 365 Commerce の画面レイアウトを更新する必要があります。 **推奨事項** コントロールは、**トランザクション** ページにドロップする必要があります。
 
-    [![トランザクション ページの推奨事項](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![トランザクション ページの推奨事項。](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>コマースをコンフィギュレーションして POS 推奨事項を有効化する
 

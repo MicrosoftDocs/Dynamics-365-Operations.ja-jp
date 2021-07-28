@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b41760bb58cbef66146b3f1af6f30c6a35a18727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 305576b79fdb11f29de9207662de0fe4b4dd6eb5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743850"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351845"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER テンプレートのバックアップストレージ
 
@@ -65,19 +65,19 @@ ER テンプレート機能のバックアップ ストレージを使用する�
 > [!NOTE]
 > このパラメーターは、アプリケーションユーザーとして定義され、会社に固有のログに記録されます。
 
-![ER コンフィギュレーション ページ](./media/GER-BackupTemplates-1.png)
+![ER コンフィギュレーション ページ。](./media/GER-BackupTemplates-1.png)
 
 次の図は、**破損したテンプレートをバッチで復元する手順を自動的に実行する** パラメーターが **On** に設定されている場合に表示されるメッセージの例を示しています。
 
-![仕入先支払仕訳帳明細ページ](./media/GER-BackupTemplates-2.png)
+![仕入先支払仕訳帳明細ページ。](./media/GER-BackupTemplates-2.png)
 
 次の図は、**バッチ ジョブ** ページの **破損したテンプレートの内部データベース バックアップからの復元** バッチ処理を示しています。
 
-![バッチ ジョブのページ](./media/GER-BackupTemplates-3.png)
+![バッチ ジョブのページ。](./media/GER-BackupTemplates-3.png)
 
 完了した **破損したテンプレートの内部データベース バックアップからの復元** バッチ処理の実行ログには、バックアップの保存場所からプライマリ ストレージの場所に復元されたテンプレートに関する情報が含まれます。
 
-![バッチ ジョブ履歴ページ](./media/GER-BackupTemplates-4.png)
+![バッチ ジョブ履歴ページ。](./media/GER-BackupTemplates-4.png)
 
 既定では、ER 形式の構成に存在するテンプレートのバックアップ コピーを自動的に作成するプロセスが有効になっています。 テンプレートのバックアップ コピーを停止するには、**電子申告のパラメーター** ページの **添付** タブで、**テンプレートのバックアップ コピーの作成を停止する** オプションを **はい** に設定します。 **電子申告** ワークスペースから、このページを開くことができます。
 
@@ -85,7 +85,7 @@ ER テンプレート機能のバックアップ ストレージを使用する�
 
 環境を Finance and Operations  バージョン 10.0.5 (2019 年 10 月) にアップグレードして、実行可能な ER 形式の構成を含む新しい環境に移行する場合は、移行をする前に **電子申告のパラメーター** ページで **バックアップ ストレージに入力する** を選択します。 このボタンをクリックすると、使用可能なすべてのテンプレートのバックアップ コピーを作成するプロセスが開始され、テンプレートの ER バックアップ保存場所に保存できるようになります。
 
-![電子申告のパラメーター ページ](./media/GER-BackupTemplates-5.png)
+![電子申告のパラメーター ページ。](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>手動による回復
 

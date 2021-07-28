@@ -8,7 +8,7 @@
           items:
             - name: 購入する前に
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-            - name: One Version のサービス更新
+            - name: 1 つのバージョンのサービス更新
               items:
                 - name: 1 つのバージョンのサービス更新の概要
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
@@ -932,6 +932,8 @@
                   href: manage-ecommerce-users-roles.md
                 - name: 在庫設定の適用
                   href: inventory-settings.md
+                - name: カートに製品を追加する設定の適用
+                  href: add-cart-settings.md
                 - name: サイトにおける検索エンジンの最適化 (SEO) の考慮事項
                   href: search-engine-optimization-considerations.md
                 - name: コンテンツ セキュリティ ポリシー (CSP) の管理
@@ -1016,6 +1018,10 @@
                       href: customize-site-navigation.md
                     - name: ページ URL の作成
                       href: create-page-URL.md
+                - name: Adventure Works のテーマ
+                  items:
+                    - name: Adventure Works のテーマの概要
+                      href: adventure-works-theme.md
             - name: デジタル資産の管理
               items:
                 - name: デジタル資産管理の概要
@@ -1070,6 +1076,16 @@
                       href: add-hero-module.md
                     - name: ビデオ プレーヤー モジュール
                       href: add-video-player.md
+                    - name: 有効な画像モジュール
+                      href: active-image-module.md
+                    - name: 画像リスト モジュール
+                      href: image-list-module.md
+                    - name: 対話型機能モジュール
+                      href: interactive-feature-module.md
+                    - name: 購読モジュール
+                      href: subscribe-module.md
+                    - name: タイトル リスト モジュール
+                      href: tile-list-module.md
                 - name: ヘッダー モジュールとフッター モジュール
                   items:
                     - name: ヘッダー モジュール
@@ -1314,6 +1330,10 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: キャッシュ レジスターの配置ガイドライン
                   href: localizations/emea-nor-loc-deployment-guidelines.md
+            - name: ロシア
+              items:
+                - name: ロシア向け Commerce ローカライズ
+                  href: localizations/rus-commerce-localization.md
             - name: スウェーデン
               items:
                 - name: キャッシュ レジスター機能
@@ -2146,6 +2166,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: 承認ステップのコンフィギュレーション
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: 支出確認者のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
                     - name: 手動決定のコンフィギュレーション
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: 条件付き意思決定のコンフィギュレーション
@@ -2558,6 +2580,8 @@
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: チャネル データベース拡張機能
                   href: dev-itpro/channel-db-extensions.md
+                - name: Cloud Scale Unit 拡張機能の削除
+                  href: dev-itpro/retail-sdk/remove-csu-package.md
                 - name: 拡張機能を介したカスタム CDX 同期の有効化
                   href: dev-itpro/cdx-extensibility.md
                 - name: 注文属性の定義および設定

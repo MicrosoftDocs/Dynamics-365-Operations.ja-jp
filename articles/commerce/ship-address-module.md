@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: fd48a04612159cbe29a2cc7cafea1c9c4c8745b4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b46f2d08c8cee14baa1879b4fd2c02a2e0432f1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795432"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357813"
 ---
 # <a name="shipping-address-module"></a>出荷先住所モジュール
 
@@ -37,7 +37,7 @@ Commerce 本社では、国や地域ごとに送付先住所の形式を定義�
 
 以下の図は、精算ページのす新規送付先住所モジュールの例を示しています。
 
-![精算ページの出荷先住所モジュールの例](./media/ecommerce-shippingaddress.PNG)
+![精算ページの出荷先住所モジュールの例。](./media/ecommerce-shippingaddress.PNG)
 
 ## <a name="module-properties"></a>モジュール プロパティ
 

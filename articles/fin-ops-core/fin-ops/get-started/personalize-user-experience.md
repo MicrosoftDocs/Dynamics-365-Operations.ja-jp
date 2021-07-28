@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944536"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348682"
 ---
 # <a name="personalize-the-user-experience"></a>ユーザー エクスペリエンスのパーソナライズ
 
@@ -85,7 +85,7 @@ ms.locfileid: "5944536"
 
 さらに、明示的なパーソナル化の最も基本的なタイプは、要素を右クリックし、**パーソナライズ** を選択することで利用可能です。 (ページ上のすべての要素が個人用に設定できるわけではないことに注意してください。) この個人用設定の方法を使用すると、要素の *プロパティ ウィンドウ* が表示されます。
 
-![要素のプロパティの個人用設定](./media/cli-element-property-window.png)
+![要素のプロパティの個人用設定。](./media/cli-element-property-window.png)
 
 プロパティ ウィンドウを使用して、次の方法で、要素を個人用に設定できます。
 
@@ -107,7 +107,7 @@ ms.locfileid: "5944536"
 - ページのアクション ウィンドウの **オプション** タブ上の **個人用設定** グループで、**このフォームのパーソナライズ** を選択します。
 - ナビゲーションバーの **設定** ボタン (歯車記号) を選択し、**パーソナライズ** を選択します。
 
-[![個人用設定ツールバー](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![個人用設定ツールバー。](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>ページのナビゲーション
 
@@ -147,7 +147,7 @@ ms.locfileid: "5944536"
 > [!NOTE]
 > [保存されているビュー](saved-views.md) 機能がオンになっている場合は、ワークスペースにプッシュしたコンテンツがビューに直接リンクされます。 ビューのクエリはデータをワークスペースに取得するために使用され、ワークスペース内の対応するタイルまたはリンクによってそのビューにページが表示されるので、ビューのクエリとパーソナル化に適用されます。 ビューが更新されると、対応するワークスペースの要素が新しいビュー定義に対して調整されます。
 
-[![ワークスペースに追加](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![ワークスペースに追加。](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - ワークスペースに一覧を追加するには、まずページで一覧を並べ替えるかフィルター処理します。そうすることで、ワークスペースに表示したい情報が表示されます。 (**保存されているビュー** 機能がオンになっている場合は、これらの条件を満たすビューを保存するまで続行できません。) その後、 **ワークスペースに追加** を選択します。 ワークスペースを選択して、**プレゼンテーション** フィールドで、**リスト** を選択します。 **構成** を選択すると、ダイアログ ボックスが表示され、ワークスペースの一覧に表示される列を選択できます。 ワークスペースの一覧に使用されるラベルを指定することもできます。
 - ワークスペースにタイルを追加するには、最初にページのリストをフィルター処理します。そうすることで、集計する必要がある、あるいはすばやくアクセスしたいデータを表示できます。 (**保存されているビュー** 機能がオンになっている場合は、これらの条件を満たすビューを保存するまで続行できません。) その後、 **ワークスペースに追加** を選択します。 ワークスペースを選択して、**プレゼンテーション** フィールドで、**タイル** を選択します。 **構成** を選択すると、ダイアログ ボックスが表示され、ワークスペースでタイルに使用するラベルを指定できます。 タイルがカウントを表示するかどうかを指定することもできます。 タイルがワークスペースに追加されたら、タイルを選択してワークスペースから現在のページを開くことができます。 その後、そのタイルに関連付けられているフィルター処理されたリストを表示できます。

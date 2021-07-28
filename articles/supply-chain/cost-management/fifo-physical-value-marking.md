@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 393239571de8a8d845107a8a8a151748c6b963c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821612"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356000"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>現物価格とマーキングを使用した FIFO
 
@@ -51,7 +51,7 @@ FIFO を使用する場合、LIFO ルールを使用する必要はありませ�
 
 新しい移動平均原価価格は、財務更新されたトランザクションを反映します。 次の図は、**現物価格を含める** オプションを使用しない場合の、この一連のトランザクションでの FIFO 在庫モデルの影響について説明しています。 
 
-![[現物価格を含める] がオフの場合の FIFO](./media/fifowithoutincludephysicalvalue.gif) 
+![現物価格を含めるがオフの場合の FIFO。](./media/fifowithoutincludephysicalvalue.gif) 
 
 **図の説明**
 
@@ -83,7 +83,7 @@ FIFO を使用する場合、LIFO ルールを使用する必要はありませ�
 
 トランザクション 5b は、受入トランザクション 1b に対して決済されます。 この払出トランザクションに対して USD –11.25 の調整が行われます。 新しい移動平均原価価格は、USD 27.50 での財務および現物更新済トランザクションの平均を反映しています。 次の図は、**現物価格を含める** オプションを使用した場合の、この一連のトランザクションでの FIFO 在庫モデルの影響について説明しています。 
 
-![[現物価格を含める] がオンの場合の FIFO](./media/fifowithincludephysicalvalue.gif) 
+![現物価格を含めるがオンの場合の FIFO。](./media/fifowithincludephysicalvalue.gif) 
 
 **図の説明**
 
@@ -115,7 +115,7 @@ FIFO を使用する場合、LIFO ルールを使用する必要はありませ�
 
 新しい移動平均原価価格は、USD 27.50 での財務および現物更新済トランザクションの平均を反映しています。 次の図は、払出と受入との間でマーキングを使用した場合の、この一連のトランザクションでの FIFO 在庫モデルの影響について説明しています。 
 
-![[マーキング] が有効な場合の FIFO](./media/fifowithmarking.gif) 
+![マーキングが有効な場合の FIFO。](./media/fifowithmarking.gif) 
 
 **図の説明**
 

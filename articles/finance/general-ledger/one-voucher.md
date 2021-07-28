@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897771"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356706"
 ---
 # <a name="one-voucher"></a>1 つの伝票
 
@@ -33,18 +33,18 @@ ms.locfileid: "5897771"
 
 - 仕訳帳名を設定し (**総勘定元帳** \> **仕訳帳の設定** \>**仕訳帳名**) **新しい伝票** フィールドを **1 つの伝票番号のみ** に設定します。 仕訳帳に追加するすべての明細行が、同じ伝票に含まれるようになります。 したがって、伝票は、複数行の伝票、同じ明細行の勘定/相手勘定、または組み合わせとして入力することができます。
 
-    [![単一明細行](./media/same-line.png)](./media/same-line.png)
+    [![単一明細行。](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > 1 つの伝票の定義は、仕訳帳名が **1 つの伝票番号のみ** として設定されている場合には対応 **しません**。ユーザーは勘定タイプのみを含む伝票に入力します。 このトピックでは、1 つの伝票は、複数の仕入先、顧客、銀行、固定資産、またはプロジェクトを含む 1 つの伝票があることを意味します。
 
 - 相手勘定が存在しない複数行の伝票を入力します。
 
-    [![複数行の伝票](./media/Multi-line.png)](./media/Multi-line.png)
+    [![複数行の伝票。](./media/Multi-line.png)](./media/Multi-line.png)
 
 - 勘定と相手勘定の両方に、**仕入先**/**仕入先**、**顧客**/**顧客**、 **仕入先**/**顧客**、または **銀行**/**銀行** などの補助元帳勘定タイプが含まれる伝票を入力します。
 
-    [![補助元帳伝票](./media/subledger.png)](./media/subledger.png)
+    [![補助元帳伝票。](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>1 つの伝票に関する問題
 
@@ -52,11 +52,11 @@ ms.locfileid: "5897771"
 
 たとえば、次の複数行の伝票を転記します。
 
-[![複数の行が存在する伝票の例](./media/example.png)](./media/example.png)
+[![複数の行が存在する伝票の例。](./media/example.png)](./media/example.png)
 
 そして、**財務インサイト** ワークスペースの **仕入先** レポートを生成します。 このレポートでは、経費勘定残高が仕入先グループと仕入先別にグループ化されています。 レポートを生成する際、システムは 250.00 の費用を負担した仕入先グループ/仕入先を特定できません。 トランザクションの詳細が欠落しているため、システムは、伝票に記載された最初の仕入先によって 250.00 の費用が発生したものと見なします。 したがって、主勘定 600120 の残高に含まれている費用 250.00 は、仕入先グループ/仕入先の下に表示されます。 ただし、伝票の最初の仕入先が正しい仕入先ではない可能性が非常に高いです。 したがって、レポートが正しくない可能性があります。
 
-[![仕入先レポートの経費](./media/expenses.png)](./media/expenses.png)
+[![仕入先レポートの経費。](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>1 つの伝票の今後
 

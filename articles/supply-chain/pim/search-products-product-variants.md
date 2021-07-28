@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b99f668061f429baf56cddb957049833bd74939
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8867eabde5fb0999e0a67f11cfa29e1e4fbc6855
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812742"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359984"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>注文入力時に製品および製品のバリアントを検索する
 
@@ -58,7 +58,7 @@ ms.locfileid: "5812742"
 **販売とマーケティング &gt; 設定 &gt; 検索 &gt; 検索パラメーター** ページの **結果の件数** フィールドを使用して検索結果数を制限します。 このフィールドを 0 に設定すると、すべての検索結果が返されます。 例えば 10 に設定すると、最大 10 の検索結果を返します。
 
 ## <a name="configure-the-product-search"></a>製品検索を設定する
-製品および製品バリアントの検索機能を使用する前に、製品検索を設定するには、次の手順に従います。 [![製品検索\_AXAppFall をコンフィギュレーションするための 3 つのステップ](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
+製品および製品バリアントの検索機能を使用する前に、製品検索を設定するには、次の手順に従います。 [![製品検索 \_AXAppFall をコンフィギュレーションするための 3 つのステップ。](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
 ### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>手順 1: 検索基準にすべての関連する製品、および製品バリアント識別子を含めます
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
-ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
+ms.openlocfilehash: 115eaad4f11fc4fb5321f0d8bb9d4f5a9f2f2c7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306392"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358596"
 ---
 # <a name="unified-product-experience"></a>統一された製品経験
 
@@ -33,15 +33,15 @@ ms.locfileid: "6306392"
 
 Sales の製品データ モデルを次に示します。
 
-![CE の製品データ モデル](media/dual-write-product-4.jpg)
+![CE の製品データ モデル。](media/dual-write-product-4.jpg)
 
 Finance and Operations アプリからの製品データ モデルを次に示します。
 
-![Finance and Operations の製品データ モデル](media/dual-write-products-5.jpg)
+![Finance and Operations の製品データ モデル。](media/dual-write-products-5.jpg)
 
 次に示すように、この 2 つの製品データ モデルは、Dataverse に統合されています。
 
-![Dynamics 365 アプリの製品データ モデル](media/dual-write-products-6.jpg)
+![Dynamics 365 アプリの製品データ モデル。](media/dual-write-products-6.jpg)
 
 製品のデュアル書き込みテーブル マップは、データを一方向にのみ、Finance and Operations アプリから Dataverse にほぼリアルタイムでフローするように設計されています。 ただし、製品のインフラストラクチャは開かれており、必要に応じて双方向で使用できるようになっています。 ユーザーは自己責任でカスタマイズできますが、Microsoft では、この方法を推奨していません。
 
@@ -86,7 +86,7 @@ Dataverse リリース済特徴的製品 | 品目 | **製品** テーブルに�
 - **製品マスター** は、業務プロセスの動作を決定する定義とルールを保持する汎用製品として使用されます。 これらの定義に基づいて、製品バリアントと呼ばれる特徴的製品を生成することができます。 たとえば、T シャツは製品マスターであり、色とサイズを分析コードとして持つことができます。 この分析コードの組み合わせが異なるバリアント (S サイズの青い T シャツまたは M サイズの緑の T シャツなど) をリリースすることができます。 統合では、バリアントごとに 1 つの行が製品テーブルに作成されます。 この行には、さまざまな分析コードなど、バリアント固有の情報が含まれています。 製品の一般情報は、**msdyn\_sharedproductdetails** テーブルに格納されています。 (この汎用情報は製品マスターに保持されます。) 製品マスター情報は、リリースされた製品マスターが作成されるとすぐに (ただし、バリアントがリリースされる前に)  Dataverse に同期されます。
 - **特徴的製品** は、製品サブタイプのすべての製品とすべての製品バリアントを参照します。 
 
-![製品のデータ モデル](media/dual-write-product.png)
+![製品のデータ モデル。](media/dual-write-product.png)
 
 デュアル書き込み機能が有効になっている場合、Finance and Operations からの製品が他の Dynamics 365 製品に **下書き** 状態で同期されます。 同期の内容は、同じ通貨の最初の価格表に追加されます。 これは、同期の内容が、製品が Finance and Operations アプリでリリースされている法人の通貨と一致する Dynamics 365 アプリの最初の価格表に追加されるという意味です。 指定した通貨の価格リストがない場合は、価格リストが自動的に作成され、製品が割り当てられます。 
 
@@ -112,7 +112,7 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 
 製品分析コードは、製品バリアントを識別する特性です。 また、4 つの製品分析コード (色、サイズ、スタイル、コンフィギュレーション) が Dataverse にマップされて、製品バリアントを定義します。 次の図は、製品分析コードの色のデータ モデルを示しています。 サイズ、スタイル、およびコンフィギュレーションに同じモデルが適用されます。 
 
-![製品ディメンションのデータ モデル](media/dual-write-product-two.png)
+![製品ディメンションのデータ モデル。](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -148,7 +148,7 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 
 次の図のデータ モデルで示すように、測定単位と対応する変換は Dataverse で利用できます。
 
-![測定単位のデータ モデル](media/dual-write-product-three.png)
+![測定単位のデータ モデル。](media/dual-write-product-three.png)
 
 測定単位の概念は、Finance and Operations アプリとその他の Dynamics 365 アプリの間で統合されています。 Finance and Operations アプリの各単位クラスでは、単位グループは、単位クラスに属している単位を含む Dynamics 365 アプリで作成されます。 また、既定の基本単位は、すべての単位グループに対して作成されます。 
 

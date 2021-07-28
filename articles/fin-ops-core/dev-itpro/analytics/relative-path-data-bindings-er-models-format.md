@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 141d58c2183c386584b0b974f4997e7a81ef3109
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b9d072914b5effdd733ec2c18e4ada877f932ba8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749989"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350163"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>ER モデルおよび形式のデータ バインディングにおける相対パスの使用
 
@@ -31,20 +31,20 @@ ms.locfileid: "5749989"
 
 ER マッピング デザイナーの使用可能性を改善する目的でに、[相対パス](er-formula-language.md#relative-path)機能がリリースされました。 既定では、ER デザイン エクスペリエンスが有効になっているアプリケーションのすべての新しいインスタンスに対して、相対パスの表示オプションが有効になっています (Microsoft Dynamics 365 Finance、Microsoft Regulatory Configuration Service)。 この ER バインディングのプレゼンテーションと共に動作している時に、フル パスを使用しつづけられるように、相対パス パラメータを実装しています。
 
-[![ユーザー パラメーター](./media/relative-path-01.png)](./media/relative-path-01.png)
+[![ユーザー パラメーター。](./media/relative-path-01.png)](./media/relative-path-01.png)
 
  
 相対パス使用パラメーターが有効になっている場合、1 つの文字 @ は現在のモデル要素のバインドの親項目へのパスに置き換えられます。 バインド パス全体が短くなり、マッピング全体がより明確で、理解しやすくなります。 ほとんどの場合、データ モデルのすべてのバインドを表示するために ER デザイナーにおいて追加でスクロールする必要はありません。
 
-[![モデル マッピング デザイナー](./media/relative-path-02.png)](./media/relative-path-02.png)
+[![モデル マッピング デザイナー。](./media/relative-path-02.png)](./media/relative-path-02.png)
  
 新しい ER 式のデザインを開始する場合、文字を 1 つ入力するだけで親項目のフィールドへのバインドを定義することができます。
 
-[![フォーミュラ デザイナー](./media/relative-path-03.png)](./media/relative-path-03.png)
+[![フォーミュラ デザイナー。](./media/relative-path-03.png)](./media/relative-path-03.png)
  
 絶対パスを使用して親モデル項目のデータ ソースを変更する場合、入れ子になったすべての項目と共に、このモデル項目を新しいデータ ソースに手動で再バインドする必要があります。 相対パスの使用が有効になっていて、親項目にバインドされる新しいデータ ソースを選択した場合、この親項目に入れ子になっているすべての要素をワン クリックで自動的に再バインドできるオプションが提供されます。
 
-[![既存のパス メッセージの置換](./media/relative-path-04.png)](./media/relative-path-04.png)
+[![既存のパス メッセージの置換。](./media/relative-path-04.png)](./media/relative-path-04.png)
  
 入れ子になった項目の再バインドを確定すると、既存の親項目も含め、入れ子になった各項目のパスに新しい親項目が配置されます。
 この機能は ER フレームワークの下位互換性を損なうことはありません。 以前に設計されたすべての ER コンフィギュレーションは、この新しい機能と共に動作し、アップグレードや変換は必要ありません。

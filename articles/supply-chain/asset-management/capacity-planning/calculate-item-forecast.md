@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9392245abe5858b03b8324dcb471f5652aed7cd6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c2d88315d95d8376cd1b00ddb11ba008f11a98c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813896"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351612"
 ---
 # <a name="calculate-item-forecast"></a>品目予測の計算
 
@@ -56,7 +56,7 @@ ms.locfileid: "5813896"
 
 8. 品目に製品、保管、または追跡用分析コードを表示する場合は、**分析コードの表示** ボタンをクリックします。 該当するチェック ボックスを選択して、**OK** をクリックします。
 
-![図 1](media/02-capacity-planning.png)
+![図 1。](media/02-capacity-planning.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

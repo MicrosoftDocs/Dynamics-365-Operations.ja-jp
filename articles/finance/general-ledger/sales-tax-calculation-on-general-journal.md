@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937309"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358836"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>一般仕訳帳明細行での消費税計算
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "5937309"
 
 次の図では、ルールをグラフィック表示しています。
 
-![プロジェクト勘定に対する税提示方法の可能性](media/Sales-Tax-Direction-Vendor.jpg)
+![プロジェクト勘定に対する税提示方法の可能性。](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>勘定タイプが仕入先の場合
 
@@ -73,7 +73,7 @@ ms.locfileid: "5937309"
 
 次の図では、ルールをグラフィック表示しています。
 
-![仕入先勘定に対する税提示方法の可能性](media/Sales-Tax-Direction-Vendor.jpg)
+![仕入先勘定に対する税提示方法の可能性。](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>勘定タイプが顧客の場合
 
@@ -89,7 +89,7 @@ ms.locfileid: "5937309"
 
 次の図では、ルールをグラフィック表示しています。
 
-![顧客勘定に対する税提示方法の可能性](media/Sales-Tax-Direction-Customer.jpg)
+![顧客勘定に対する税提示方法の可能性。](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>勘定タイプが元帳の場合
 
@@ -103,7 +103,7 @@ ms.locfileid: "5937309"
 
 次の図では、ルールをグラフィック表示しています。
 
-![元帳勘定に対する税提示方法の可能性](media/Sales-Tax-Direction-Ledger.jpg)
+![元帳勘定に対する税提示方法の可能性。](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>消費税提示方法を上書きする
 
@@ -115,7 +115,7 @@ ms.locfileid: "5937309"
 
 このセクションでは、消費税金額の符号の計算方法について説明します。
 
-![消費税トランザクション ページ](media/sales-tax-amount-sign.jpg)
+![消費税トランザクション ページ。](media/sales-tax-amount-sign.jpg)
 
 次の表では、一時的な消費税テーブルで消費税提示方法および消費税金額の符号を決定する一般的なルールを示します。
 

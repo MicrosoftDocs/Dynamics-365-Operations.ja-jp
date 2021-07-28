@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 76c2f07ac5c25eea576cbb69256e76fbef4d86ca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6fb4e91f00163f5280d2c767843afd5c7a33712d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754115"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350888"
 ---
 # <a name="dual-write-overview"></a>二重書き込みの概要
 
@@ -37,7 +37,7 @@ ms.locfileid: "5754115"
 
 二重書き込みは、Finance and Operations アプリと Dataverse の間で密に結合された双方向の統合を提供します。 Finance and Operations アプリでのデータの変更によって Dataverse 書き込みが行われ、Dataverse のデータの変更によって Finance and Operations アプリケーションへの書き込みが行われます。 この自動化されたデータ フローによって、アプリ間で統合されたユーザー エクスペリエンスが提供されます。
 
-![アプリ間のデータの関係](media/dual-write-overview.jpg)
+![アプリ間のデータの関係。](media/dual-write-overview.jpg)
 
 二重書き込みには、*インフラストラクチャ* の側面と *アプリケーション* の側面の 2 つの側面があります。
 

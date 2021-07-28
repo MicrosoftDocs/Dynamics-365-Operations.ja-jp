@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e89c63c90aa8d46fd23900897a54165e14fb635d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 34fa845c72f23485a2573d6bb4cf38b66c7adb7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800666"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351203"
 ---
 # <a name="set-up-a-call-center-channel"></a>コール センター チャネルの設定
 
@@ -54,11 +54,11 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、新しいコール センター チャネルの作成を示しています。
 
-![新しいコール センター チャネル](media/channel-setup-callcenter-1.png)
+![新しいコール センター チャネル。](media/channel-setup-callcenter-1.png)
 
 次の図は、コール センター チャネルの例を示しています。
 
-![コール センター チャネルの例](media/channel-setup-callcenter-2.png)
+![コール センター チャネルの例。](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>追加のチャネル設定
 
@@ -66,7 +66,7 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、**設定** タブの **荷渡方法** および **支払方法** の設定オプションを示しています。
 
-![追加のコール センター チャネル設定アクション](media/channel-setup-callcenter-3.png)
+![追加のコール センター チャネル設定アクション。](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>支払方法の設定
 
@@ -81,7 +81,7 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、現金支払い方法の例を示しています。
 
-![支払方法の例](media/channel-setup-callcenter-payments.png)
+![支払方法の例。](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>荷渡方法の設定
 
@@ -97,7 +97,7 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、デリバリー モードの例を示しています。
 
-![荷渡方法の設定](media/channel-setup-retail-7.png)
+![荷渡方法を設定します。](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>チャネルのユーザーの設定
 

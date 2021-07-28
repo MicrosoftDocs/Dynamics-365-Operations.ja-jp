@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 18556e35d63ea20b181c525b758788dc0f89f701
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f3e01dd85cbe8e2b2c9095431f3e0aead817a5a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842228"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352765"
 ---
 # <a name="procurement"></a>調達
 
@@ -36,7 +36,7 @@ ms.locfileid: "5842228"
 
 次の図は、**作業指示書の購買要求** の一覧ページの例を示しています。
 
-![図 1](media/08-work-orders.png)
+![図 1。](media/08-work-orders.png)
 
 
 **作業指示書の購買** の一覧ページ (**資産管理** > **共通** > **調達** > **作業指示購買要求**) で、作業指示書に関連する発注書の一覧を表示します。 このページで作業指示書のジョブを選択すると、Action Pane **作業指示書の購買** タブにある **表示** グループのボタンを使い、様々なアクションを実行できます。
@@ -47,7 +47,7 @@ ms.locfileid: "5842228"
 
 次の図は、**作業指示書の購買** の一覧ページの例を示しています。
 
-![図 2](media/09-work-orders.png)
+![図 2。](media/09-work-orders.png)
 
 
 **作業指示書の購買** の一覧 ページと **作業指示書の購買要求** の一覧ページの両方で、配送日の管理に関する記号が各行の右側に表示されます。 記号に赤い丸の感嘆符が表示されている場合、関連する発注書または購買要求の配送が遅延する可能性があります。
@@ -93,7 +93,7 @@ ms.locfileid: "5842228"
 
 次の図では **発注書** ページの例を示しており、**活動番号** に焦点を合わせています。
 
-![図 3](media/10-work-orders.png)
+![図 3。](media/10-work-orders.png)
 
 同様に、作業指示書における購買要求の明細行に関連付けられている活動番号を表示または入力するには、**作業指示書の購買要求** 一覧ページで購買要求の記録を選び、**購買要求** の列で購買要求のリンクを選択します。 **明細行の詳細** クイックタブの **プロジェクト** タブで、**活動番号** フィールドを参照してください。
 

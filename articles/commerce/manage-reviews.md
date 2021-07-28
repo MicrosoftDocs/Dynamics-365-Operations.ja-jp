@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94abcf7189dc7c1f5587eb06d47650dc707c5007
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794262"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352401"
 ---
 # <a name="manage-ratings-and-reviews"></a>評価とレビューの管理
 
@@ -45,7 +45,7 @@ Commerce サイト ビルダーのレビューを読むには、次の手順を�
 
 追加のフィルターを使用すると、期間、評価、チャネル、または関連する状態 (停止、回答済、または報告済) によってレビューを制限することができます。
 
-![ホーム ページの管理](media/rnr-moderation-home.png) 
+![ホーム ページの管理。](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>レビューへの応答 
 
@@ -59,7 +59,7 @@ Commerce サイト ビルダーでレビューに返信するには、次の手�
 1. 応答テキストと、応答者に表示される名前を入力します。 既定の応答者の名前は **モデレーター** です。
 1. 完了したら、**応答を投稿** を選択します。
 
-![レビューへの応答](media/rnr-moderation-response.png) 
+![レビューへの応答。](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>レビューの削除 
 
@@ -82,7 +82,7 @@ Commerce サイト ビルダーで顧客データを検索したり削除した�
 1. 顧客にレビュー活動 (たとえば、レビューの送信、別の顧客のレビューの有用性に関する投票、または別の顧客のレビューに関するコメント) がある場合、その結果が表示されます。 各品目には、**削除** ボタンがあります。
 1. 削除する必要がある各品目について、**削除** を選択します。 確認が求められたら、**はい** を選択します。 
     
-![顧客データの削除](media/rnr-moderation-delete-reviews.png) 
+![顧客データの削除。](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - データがシステムから完全に削除されるまでに最大 7 日かかる場合があります。 モデレーターは、この遅延を顧客に通知する必要があります。
@@ -106,19 +106,19 @@ Commerce サイト ビルダーの評価とレビューの傾向を表示する�
 1. **ホーム \> レビュー \> レポート** に移動します。
 1. **PowerBI テンプレート** を選択し、テンプレートをダウンロードします。
 
-    ![Power BI テンプレートをダウンロードする](media/rnr-moderation-reports.png) 
+    ![Power BI テンプレートをダウンロードする。](media/rnr-moderation-reports.png) 
 
 1. Power BI アプリを使用して、ダウンロードしたテンプレートを開きます。 表示される **Web コンテンツへのアクセス** ダイアログ ボックスを閉じ、表示される更新エラー メッセージを閉じます。
 1. **ホーム** に移動し、**クエリの編集** を選択し、**データ ソースの設定** を選択します。
 1. **データ ソースの設定** ダイアログ ボックスで、**ソースの変更** を選択します。
 1. **URL** フィールドに、前の手順でダウンロードしたレビュー データのパスを入力します (たとえば、**c:\\reviews\\ReviewsData.csv**)。
 
-    ![コンマ区切り値ダイアログ ボックスの URL フィールド](media/rnr-powerbi-datasource-settings.png) 
+    ![コンマ区切り値ダイアログ ボックスの URL フィールド。](media/rnr-powerbi-datasource-settings.png) 
 
 1. **OK** を選択し、**変更の適用** を選択します。 データ ソースに変更を適用するには、1 ~ 2 分かかります。
 1. 評価とレビューの傾向を表示するには、**傾向シート** を選択します。
 
-    ![評価とレビューの傾向](media/rnr-powerbi-dashboard-template.png) 
+    ![評価とレビューの傾向。](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>追加リソース
 

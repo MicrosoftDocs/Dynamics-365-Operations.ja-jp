@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f35adab3075ba810964a41899ba95ae40c115e83
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 0ebb34f58a4bfbe8bda935d7b40e9d89c3dacd03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115198"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353991"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>プロセス自動化フローを呼び出して品質指示を作成する
 
@@ -30,7 +30,7 @@ Supply Chain Management のダウンロード可能な自動化ソリューシ�
 
 このフィーチャーの概要とその機能については、次のビデオを参照してください: [RPAを使用した Dynamics 365 Supply Chain Management での品質指示の作成](https://www.youtube.com/watch?v=LFbzJ6-H89w)
 
-![RPA を使用した自動化オプション](media/rpa-automation-options.png "RPA を使用した自動化オプション")
+![RPA を使用した自動化オプション。](media/rpa-automation-options.png "RPA を使用した自動化オプション")
 
 Power Automate ソリューション テンプレートには、Supply Chain Management での品質指示の作成を自動化する、クラウド自動化フローとデスクトップ自動化フローが含まれています。
 
@@ -38,7 +38,7 @@ Power Automate ソリューション テンプレートには、Supply Chain Man
 
 ソリューション パラメータは、生産施設の特定のユース ケースに対して自動化を構成するために含まれています。
 
-![品質指示の作成](media/rpa-create-quality-roder.png "品質指示の作成")
+![品質指示の作成。](media/rpa-create-quality-roder.png "品質指示の作成")
 
 サンプル ソリューションをダウンロード、インストール、および使用して品質指示の作成を自動化する方法に関する完全なステップ バイ ステップ ガイドについては、[Power Automate Desktop を使用したロボティック プロセス オートメーションによる Dynamics 365 Supply Chain Management での品質指示作成の自動化](/power-automate/desktop-flows/dynamics365-scm-rpa) を参照してください。
 
