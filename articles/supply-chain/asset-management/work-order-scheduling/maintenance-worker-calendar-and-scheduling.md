@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e1abf029e6f72c1c6a827a00483bb34c4abcaec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3e5cc7d21a9993985d1ad1fc2684777ff7ceb138
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808139"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354135"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>メンテナンス作業者のカレンダーとスケジューリング
 
@@ -32,7 +32,7 @@ ms.locfileid: "5808139"
 
 次のスクリーンショットは、「生産」の作業時間カレンダーを使用するリソースに関連付けられているメンテナンス作業者の例を示しています。
 
-![図 1](media/01-work-order-scheduling.png)
+![図 1。](media/01-work-order-scheduling.png)
 
 ツールと資産のカレンダー設定は、作業指示書のスケジューリングに関連付けられている必要はありません。 メンテナンスに対してツールと資産が 24 時間利用可能であることを前提としています。
 

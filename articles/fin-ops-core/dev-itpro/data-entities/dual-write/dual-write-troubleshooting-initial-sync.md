@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 9a6be5f4e08a92171892549c017c15c66b1bde2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941058"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350815"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>初めて同期をする際に発生する問題のトラブルシューティング
 
@@ -38,7 +38,7 @@ ms.locfileid: "5941058"
 
 マッピングのテンプレートを有効にすると、マッピングの状態が **実行中** になります。 状態が **非実行中** のとなっている場合、初回の同期中にエラーが発生しています。 エラーを表示するには、**デュアル書き込み** ページの **初回同期の詳細** タブを選択し ます。
 
-![[初期同期の詳細] タブでのエラー](media/initial_sync_status.png)
+![[初期同期の詳細] タブでのエラー。](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>初回同期を完了できません：400 要求が不正です
 
@@ -85,7 +85,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 1. Finance and Operations アプリにサインインします。
 2. **Azure Active Directory アプリケーション** のページで、**DtAppID** クライアントを削除し、再度追加します。
 
-![Azure AD アプリケーションの一覧の DtAppID クライアント](media/aad_applications.png)
+![Azure AD アプリケーションの一覧の DtAppID クライアント。](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>初回の同期中の自己参照または循環参照エラー
 
@@ -115,11 +115,11 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     2. **primarycontactperson** を検索して、**PrimaryContactPersonId** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
-        ![PrimaryContactPersonId 列の削除](media/vend_selfref3.png)
+        ![PrimaryContactPersonId 列を削除します。](media/vend_selfref3.png)
 
     4. これらの手順を繰り返して、**InvoiceVendorAccountNumber** 列を削除します。
 
-        ![InvoiceVendorAccountNumber 列の削除](media/vend-selfref4.png)
+        ![InvoiceVendorAccountNumber 列を削除します。](media/vend-selfref4.png)
 
     5. マッピングへの変更を保存します。
 
@@ -129,11 +129,11 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     2. **仕入先 V2** テーブルを選択します。
     3. 操作ウィンドウで、**オプション** を選択し、**Change Tracking** を選択します。
 
-        ![Change Tracking オプションの選択](media/selfref_options.png)
+        ![Change Tracking オプションを選択します。](media/selfref_options.png)
 
     4. **Change Tracking を無効にする** を選択します。
 
-        ![Change Tracking を無効にする選択](media/selfref_tracking.png)
+        ![Change Tracking を無効にするを選択します。](media/selfref_tracking.png)
 
 3. **仕入先 V2 (msdyn\_vendors)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
 4. **CDS 連絡先 V2 (連絡先)** マッピングの初期同期を実行します。 連絡先行に対しても初期同期する必要があるため、仕入先テーブルの基本連絡先列を同期する場合は、このマッピングを同期する必要があります。
@@ -162,11 +162,11 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     2. **contactperson** を検索して、**ContactPersonID** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
-        ![ContactPersonID 列の削除](media/cust_selfref3.png)
+        ![ContactPersonID 列を削除します。](media/cust_selfref3.png)
 
     4. これらの手順を繰り返して、**InvoiceAccount** 列を削除します。
 
-        ![InvoiceAccount 列の削除](media/cust_selfref4.png)
+        ![InvoiceAccount 列を削除します。](media/cust_selfref4.png)
 
     5. マッピングへの変更を保存します。
 
@@ -176,11 +176,11 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     2. **顧客 V3** テーブルを選択します。
     3. 操作ウィンドウで、**オプション** を選択し、**Change Tracking** を選択します。
 
-        ![Change Tracking オプションの選択](media/selfref_options.png)
+        ![Change Tracking オプションを選択します。](media/selfref_options.png)
 
     4. **Change Tracking を無効にする** を選択します。
 
-        ![Change Tracking を無効にする選択](media/selfref_tracking.png)
+        ![Change Tracking を無効にするを選択します。](media/selfref_tracking.png)
 
 3. **顧客 V3 (アカウント)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
 4. **CDS 連絡先 V2 (連絡先)** マッピングの初期同期を実行します。
@@ -196,7 +196,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
         次の図は、**CustomerAccount** と **ContactPersonId** を更新するプロジェクトを示しています。
 
-        ![CustomerAccount と ContactPersonId を更新するためのデータ統合プロジェクト](media/cust_selfref6.png)
+        ![CustomerAccount と ContactPersonId を更新するためのデータ統合プロジェクト。](media/cust_selfref6.png)
 
     2. Finance and Operations アプリではフィルター基準と一致する行のみが更新されるため、Dataverse 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] ボタンを選択します。 その後、**クエリの編集** ダイアログ ボックスで、**\_msdyn\_company\_value eq '\<guid\>'** のようなフィルター クエリを追加できます。 
 
@@ -204,7 +204,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
         **\_msdyn\_company\_value** のフィルター クエリを入力しない場合、すべての行が同期されます。
 
-        ![フィルタ クエリの追加](media/cust_selfref7.png)
+        ![フィルタ クエリを追加します。](media/cust_selfref7.png)
 
     行の初期同期が完了しました。
 

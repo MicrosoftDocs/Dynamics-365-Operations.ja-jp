@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 3774a6258fcefb361c5c2ed709dd7700b1dc071d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085503"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351155"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -62,7 +62,7 @@ ER フォーマット構成の既定の動作は、ERフォーマットの開始
 > [!NOTE]
 > ジョブ記述は、ER 形式マッピングの実行について通知します。 また、実行される ER コンポーネントの名前も含まれています。
 
-[![ER 形式の実行](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+[![ER 形式の実行。](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
 このジョブの詳細については、次のいずれかの場所で確認できます：
 
@@ -74,17 +74,17 @@ ER フォーマット構成の既定の動作は、ERフォーマットの開始
 
 - **電子レポート ジョブ** ページで、**ファイルの表示** を選択し、ジョブの実行中に生成されたエラーと警告の一覧を表示します。
 
-    [![ER ジョブリストの確認](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+    [![ER ジョブリストの確認。](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
 
 ### <a name="user-configured-behavior"></a>ユーザー構成の動作
 
 **電子申告の送信先** ページで、コンフィギュレーションの既定の動作をオーバーライドできます。 **新規** を選択し、**参照** フィールドで送信先の設定を作成する構成を選択するまで、インポートされた構成はこのページには表示されません。
 
-[![参照フィールドで構成を選択する](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+[![参照フィールドで構成を選択する。](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
 参照を作成した後、参照している ER 形式の各 **フォルダー** または **ファイル** 出力コンポーネントに対して、ファイル送信先を作成できます。
 
-[![ファイル移動先を作成](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+[![ファイル移動先を作成。](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
 次に、**送信先の設定** ダイアログ ボックスで、ファイル送信先に対して個別の送信先の有効化および無効化を行えます。 **設定** ボタンは選択したファイルの送信先のすべての送信先を制御するために使用します。 **送信先の設定** ダイアログ ボックスで、 **有効** オプションを設定して各送信先を個別に制御できます。
 
@@ -92,7 +92,7 @@ ER フォーマット構成の既定の動作は、ERフォーマットの開始
 
 たとえば、この機能を使用して、Excel 形式で送信ドキュメントを生成するために使用されるファイル コンポーネントのファイル送信先をコンフィギュレーションできます。 ER ジョブ アーカイブに元の Excel ファイルを保存するために 1 つの送信先 ([アーカイブ](er-destination-type-archive.md)) をコンフィギュレーションすることができ、同時に Excel ファイルを PDF 形式に [変換](#OutputConversionToPDF) して電子メールで送信するように他の送信先 ([電子メール](er-destination-type-email.md)) をコンフィギュレーションすることができます。
 
-[![1 つの形式要素に対する複数の送信先のコンフィギュレーション](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+[![1 つの形式要素に対する複数の送信先のコンフィギュレーション。](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
 ER 形式を実行すると、その形式のコンポーネントに対して構成されている送信先すべてが常に実行されます。 さらに、Finance **バージョン 10.0.17以降** では、ER の送信先機能が強化され、1 つの ER 形式に対してさまざまな送信先セットを構成できるようになりました。 このコンフィギュレーションは、各セットを特定のユーザー アクションに対してコンフィギュレーション済みとしてマークします。 ER API は [拡張](er-apis-app10-0-17.md) され、ER 形式を実行することでユーザーが実行するアクションを提供できるようになりました。 指定されたアクション コードは、ER の送信先に渡されます。 提供されているアクション コードに応じて、ER 形式のさまざまな出力先を実行できます。 詳細については、[アクション依存の ER 送信先を構成する](er-action-dependent-destinations.md) を参照してください。
 
@@ -116,11 +116,11 @@ ER 形式では、現在、次の送信先がサポートされています。 �
 
 選択した形式に対してファイル送信先をコンフィギュレーションする場合、形式全体に対してコンフィギュレーションすることになります。
 
-[![コンフィギュレーション リンク](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
+[![コンフィギュレーション リンク。](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
 同時に、現在の Finance インスタンスにインポートされた形式の [バージョン](general-electronic-reporting.md#component-versioning) が複数あることがあります。 それらは、参照フィールドを選択した **時** に提供される **コンフィギュレーション** リンクを選択した場合に表示できます。
 
-[![コンフィギュレーション バージョン](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+[![コンフィギュレーション バージョン。](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
 既定では、コンフィギュエーションされた送信先は、**完了** または **共有** の状態にある ER 形式バージョンを実行した場合にのみ適用されます。 ただし、ER 形式のドラフト バージョンが実行されている場合、コンフィギュレーションされた送信先を使用する必要がある場合があります。 たとえば、形式のドラフト バージョンを変更し、生成された出力がどのように配信されるかテストするためにコンフィギュレーションされた送信先を使用したい場合です。 ドラフト バージョンを実行する時に ER 形式の送信先を適用するには、次の手順に従います。
 
@@ -128,7 +128,7 @@ ER 形式では、現在、次の送信先がサポートされています。 �
 2. **構成** ページ、アクション ウィンドウ、**構成** タブ、**詳細設定** グループで、**ユーザー パラメーター** を選択します。
 3. **ドラフト状態で送信先を使用する** のオプションを **はい** に設定します。
 
-[![ドラフト状態で送信先を使用するオプション](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+[![ドラフト状態で送信先を使用するオプション。](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
 ER 形式のドラフト バージョンを使用するには、適宜 ER 形式をマークする必要があります。
 
@@ -136,11 +136,11 @@ ER 形式のドラフト バージョンを使用するには、適宜 ER 形式
 2. **構成** ページ、アクション ウィンドウ、**構成** タブ、**詳細設定** グループで、**ユーザー パラメーター** を選択します。
 3. **実行設定** オプションを **はい** に設定します。
 
-[![実行設定オプション](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+[![実行設定オプション。](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
 この設定を完了した後、**ドラフトの実行** オプションが変更する ER 形式に対して使用可能になります。 このオプションを **はい** に設定し、形式を実行する時に形式のドラフト バージョンの使用を開始することができます。
 
-[![ドラフトの実行オプション](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+[![ドラフトの実行オプション。](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>送信先失敗の処理
 
@@ -148,7 +148,7 @@ ER 形式のドラフト バージョンを使用するには、適宜 ER 形式
 
 たとえば、仕入先支払処理をコンフィギュレーションして、**ISO20022 口座振替** ER 形式を実行して支払ファイルおよび補足ドキュメント (たとえば、送付状および管理レポート) を生成します。 送付状が電子メールによって正常に配信された場合にのみ支払が正常に処理されたと見なすには、次の図に示すように、適切なファイル送信先の **CoveringLetter** コンポーネントに対する **失敗時に処理を停止** チェック ボックスをオンにする必要があります。 この場合、処理用に選択されている支払の状態が **なし** から **送信済** に変更されるのは、生成された送付状が Finance インスタンスでコンフィギュレーションされた電子メール プロバイダーによって配信用に承認された場合に限られます。
 
-[![ファイル送信先の失敗に対するプロセス処理のコンフィギュレーション](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+[![ファイル送信先の失敗に対するプロセス処理のコンフィギュレーション。](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
 送信先の **CoveringLetter** コンポーネントに対する **失敗時に処理を停止** チェック ボックスをオフにした場合、支払は送付状が電子メールによって正常に配信されていない場合でも正常に処理されたと見なされます。 たとえば、受取人または送信者の電子メール アドレスが見つからないか正しくないなどの理由で、送付状を送信できない場合でも、その支払の状態は **なし** から **送信済** に変更されます。
 
@@ -160,9 +160,9 @@ PDF への変換オプションを使用して、Microsoft Office (Excel また�
 
 現在の Finance インスタンスで PDF 変換オプションを使用可能にするには、**機能管理** ワークスペースを開き、**Microsoft Office 形式から PDF に電子申告送信ドキュメントを変換** 機能を有効にします。
 
-[![機能管理における送信ドキュメントの PDF 変換機能の有効化](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+[![機能管理における送信ドキュメントの PDF 変換機能の有効化。](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
-### <a name="applicability"></a>適合性
+### <a name="applicability"></a>適用性
 
 PDF への変換オプションは、Office (Excel または Word) 形式 (**Excel ファイル**) で出力を生成するのに使用されるファイル コンポーネントに対してのみ有効にすることができます。 このオプションをオンにすると、Office 形式で生成された出力は自動的に PDF 形式に変換されます。 **バージョン 10.0.18 より前** の Finance では、[Excel](er-fillable-excel.md) または [Word](er-design-configuration-word.md) 形式で出力を生成するために使用される **Excel\\File** タイプのコンポーネントに対してのみこのオプションをオンにできます。 ただし、**バージョン 10.0.18 以降** では、**Common\\File** タイプのコンポーネントに対してのみこのオプションをオンにすることもできます。
 
@@ -185,13 +185,13 @@ Finance **バージョン 10.0.9** では、Excel 出力から生成される PD
 
 ファイル送信先に対して PDF 変換を有効にするには、**PDF に変換** チェック ボックスをオンにします。
 
-[![ファイル送信先への PDF 変換の有効化](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+[![ファイル送信先への PDF 変換の有効化。](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">PDF 変換で使用するページの向きを選択する</a>
 
 ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、PDF ドキュメントの印刷の向きを指定できます。 ファイルの保存先の指定時にExcel フォーマットを指定し、 **PDF に変換する** チェック ボックスを選択して PDF 変換を有効化すると、**ページの向き** フィールドが **PDF conversion settings** ファストタブで利用可能になります。 **ページの方向** フィールドで、ページの向きを選択します。
 
-[![PDF 変換の対象とするページの方向を選択する](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![PDF 変換の対象とするページの方向を選択する。](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
 > PDF の印刷の向きを選択するオプションを使用するには、Finance バージョン 10.0.10 以降をインストールする必要があります。
@@ -222,7 +222,7 @@ ER フォーマットの **フォルダ** コンポーネントの配信先を�
     > [!NOTE]
     > **個別のファイル** を選択 した場合、生成された出力はZIP状態でメモリに収集されます。 そのため、実際のファイルサイズがこの上限を超える可能性がある場合には、ZIP 出力に対して最大の[ファイルサイズの上限](er-compress-outbound-files.md)が適用されます。 生成される出力のサイズがかなり大きくなることが予想される場合は、この値を選択することをお勧めします。
 
-[![フォルダ形式コンポーネントの出力先を構成する](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+[![フォルダ形式コンポーネントの出力先を構成する。](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### <a name="limitations"></a>制限
 

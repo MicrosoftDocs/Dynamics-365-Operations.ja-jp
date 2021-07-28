@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 20671
+ms.custom:
+- "20671"
+- intro-internal
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 799619e6fc03174c8ad47512ea839ca7b2aab20e
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 931339ea42d0ce504f61d7bc3de4bec876fc22ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898139"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348532"
 ---
 # <a name="accounts-receivable-home-page"></a>売掛金勘定ホーム ページ
 
@@ -31,9 +33,9 @@ ms.locfileid: "5898139"
 販売注文や梱包明細に基づいて顧客請求書を作成できます。 また、販売注文に関連付けられていない自由書式の請求書を入力することもできます。 複数の異なる支払タイプを使用して、支払を受け取ることができます。 これには、受取手形、現金、小切手、クレジット カード、電子支払が含まれます。 組織に複数の法人が含まれている場合、集中支払を使用して、その他の法人に代わって 1 つの法人で支払を記録することができます。
 
 
-**業務プロセス**
+**ビジネス プロセス**
 
-[![業務プロセス](./media/AR-process.PNG)](./media/AR-process.PNG)
+[![ビジネス プロセス。](./media/AR-process.PNG)](./media/AR-process.PNG)
 
 ## <a name="set-up-accounts-receivable"></a>売掛金勘定の設定
 

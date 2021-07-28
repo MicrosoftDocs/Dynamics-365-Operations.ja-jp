@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 872f4cfd968b70cb8a2087822870dcc76e83e92b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186741"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349013"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>初期の顧客支払予測モデルを評価する (プレビュー)
 
@@ -33,32 +33,32 @@ ms.locfileid: "6186741"
 
 Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** ページで、**モデル精度の改善** リンクが精度スコアの横に表示されます。
 
-[![モデル精度の改善リンク](./media/prediction-model.png)](./media/prediction-model.png)
+[![モデル精度の改善リンク。](./media/prediction-model.png)](./media/prediction-model.png)
 
 このリンクは、AI Builder へのリンクであり、現在のモデルについての詳細を確認したり、改善するための手順を実行することもできます。 次の図は、開いたページを示しています。
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder。](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 開いたページには、次の情報が表示されます:
 
 - **パフォーマンス** セクションでは、モデル パフォーマンスの等級は、モデルの品質に関する分析視点を提供します。 この等級の詳細については、AI Builder ドキュメントの [予測モデルのパフォーマンス](/ai-builder/prediction-performance) を参照してください。
 - **最も影響力のあるデータ** セクションでは、モデルに対して異なる入力タイプのデータの重要性を示します。 このリストと対応する割合を評価して、情報がビジネスと市場に関する知識と一致しているかどうかを判断できます。
 
-    [![予測モデルのパフォーマンスと最も影響力のあるデータセクション](./media/models.png)](./media/models.png)
+    [![予測モデルのパフォーマンスと最も影響力のあるデータ セクション。](./media/models.png)](./media/models.png)
 
 - **パフォーマンス** セクションで **詳細を表示** を選択して、等級やその他の考慮事項の詳細を表示します。 次の図では、モデルが推奨されている情報よりも少ない情報を使用していることを詳細に示しています。 したがって、システムは警告メッセージを生成しました。
 
-    [![モデルのパフォーマンスに関する警告](./media/details.png)](./media/details.png)
+    [![モデルのパフォーマンスに関する警告。](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>専門的な情報
 
 精度はモデルを評価するための良い出発点であり、パフォーマンスの等級は分析視点を提供しますが、AI Builder は評価に使用できるより詳細なメトリックを提供します。 詳細をダウンロードするには、**パフォーマンス** セクションで **モデルの使用** ボタンの横にある省略記号ボタン (**...**) ボタンを選択し、**詳細なメトリックをダウンロード** を選択します。
 
-[![詳細なメトリックスのダウンロード コマンド](./media/performance.png)](./media/performance.png)
+[![詳細なメトリックスのダウンロード コマンド。](./media/performance.png)](./media/performance.png)
 
 次の図は、データをダウンロードできる形式を示します。
 
-[![ダウンロードしたデータの形式](./media/data-format.png)](./media/data-format.png)
+[![ダウンロードしたデータの形式。](./media/data-format.png)](./media/data-format.png)
 
 結果をより詳細に分析するには、"混同行列" メトリックを確認することが出発点になります。 たとえば、前述の図で、このメトリックに対して示されているデータは次のとおりです。
 

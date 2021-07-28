@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9990df3e57d65c77a75913efaf30675528d411b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821300"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343703"
 ---
 # <a name="weighted-average-date"></a>加重平均日付
 
@@ -39,7 +39,7 @@ ms.locfileid: "5821300"
 
 次の図のように、在庫決算中は期間を通して毎日計算が行われています。 
 
-![加重平均日の日々計算モデル](./media/weightedaveragedatedailycalculationmodel.gif) 
+![加重平均日の日々計算モデル。](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 購買注文、在庫仕訳帳、製造オーダーなど、在庫払出から発する在庫トランザクションは、転記日の見積原価価格で発生します。 この見積原価価格は、移動平均原価価格とも呼ばれます。 在庫原価計算日に、そのシステムが前の期間、前の日付、および現在の日付の在庫トランザクションを分析します。 この分析を使用して、次の在庫計算原則のどちらを使用する必要があるかを決定します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "5821300"
 -   2b. 数量 2 の在庫財務払出を、それぞれの原価 USD 10.00 で更新します。
 -   3. 在庫原価計算は直接決済方式を使用して実行され、在庫財務払出に対して在庫財務入庫を決済します。
 
-![[現物価格を含める] オプションを使用しない加重平均日直接決済](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![[現物価格を含める] オプションを使用しない加重平均日直接決済。](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **図の説明:**
 
@@ -126,7 +126,7 @@ ms.locfileid: "5821300"
 
 次の図は、この一連のトランザクションを示しています。また、加重平均在庫モデルと集計決済原則を使用し、**現物価格を含める** オプションを使用しない場合の影響を示しています。 
 
-![[現物価格を含める] オプションを使用しない加重平均日集計決済](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![現物価格を含めるオプションを使用しない加重平均日集計決済。](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **図の説明:**
 
@@ -175,7 +175,7 @@ ms.locfileid: "5821300"
 
 新しい移動平均原価価格は、USD 27.50 での財務および現物更新済トランザクションの平均を反映しています。 次の図は、この一連のトランザクションを示しています。また、加重平均日付の在庫モデルとマーキングを使用した影響を示しています。
 
-![マーキングを使用した加重平均日](./media/weightedaveragedatewithmarking.gif) 
+![マーキングを使用した加重平均日。](./media/weightedaveragedatewithmarking.gif) 
 
 **図の説明:**
 

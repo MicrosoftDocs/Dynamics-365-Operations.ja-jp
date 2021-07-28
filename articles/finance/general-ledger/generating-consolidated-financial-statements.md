@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: dce0dd216d552d956ba7fdbcb4eebb6ed85b7115
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897867"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348965"
 ---
 # <a name="generate-consolidated-financial-statements"></a>連結財務諸表の生成
 
@@ -38,19 +38,19 @@ ms.locfileid: "5897867"
 
 次の図は、連結する各会社を識別するために、財務諸表でレポート ツリー定義を使用する方法を示します。
 
-![レポート ツリー定義](./media/reporting-tree-definition.png "レポート ツリー定義")
+![レポート ツリー定義。](./media/reporting-tree-definition.png "レポート ツリー定義")
 
 次の連結レポートの図に示すように、レポートの定義と共にレポート ツリーを使用する場合は、各会社を個別に表示できます。 連結金額は、集計レベルで表示されます。
 
-![集計レベルの連結金額](./media/consolidate-amount-summary-level.png "集計レベルの連結金額")
+![集計レベルの連結金額。](./media/consolidate-amount-summary-level.png "集計レベルの連結金額")
 
 また、必要な数のレベルを含む複数レベルのレポート ツリーを作成することもできます。 次の図は、世界中の地域ごとにロール アップのある複数レベル レポート ツリー定義を示します。
 
-![地域ごとのロール アップによる複数レベルのレポート ツリー定義](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "地域ごとのロール アップによる複数レベルのレポート ツリー定義")
+![地域ごとのロール アップによる複数レベルのレポート ツリー定義。](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "地域ごとのロール アップによる複数レベルのレポート ツリー定義")
 
 次の図は、関数ごとのロール アップのある複数レベルのレポート ツリー定義を示します。
 
-![関数ごとのロール アップによる複数レベルのレポート ツリー定義](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "関数ごとのロール アップによる複数レベルのレポート ツリー定義")
+![関数ごとのロール アップによる複数レベルのレポート ツリー定義。](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "関数ごとのロール アップによる複数レベルのレポート ツリー定義")
 
 ### <a name="viewing-companies-side-by-side"></a>会社を並べて表示
 多くの顧客は、会社が並べて表示されているレポートと、列に連結合計が表示されているレポートを使用します。 この形式は、レポート ツリーを作成した後で簡単に実現します。 連結財務諸表上で、会社を並べて表示する大まかな手順を示します。
@@ -61,19 +61,19 @@ ms.locfileid: "5897867"
 
 次の図は、列定義をステップバイステップ形式で表示します。
 
-![ステップバイステップ形式での列定義](./media/column-definition-side-by-side-format.png "ステップバイステップ形式での列定義")
+![ステップバイステップ形式での列定義。](./media/column-definition-side-by-side-format.png "ステップバイステップ形式での列定義")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>法人から作成された組織構造を使用する連結
 分析コードまたは法人が含まれる組織階層では、動的に財務諸表でレポート ツリー定義が作成されます。 連結を簡素化する簡単な方法は、財務諸表でレポートに組織階層を追加することです。 報告日に基づいて、Financial Reporting は次の図に示すように、有効日前に組織階層を選択します。
 
-[![レポート ツリー定義を動的に作成](./media/dynamically-create-reporting-tree-definitions.png "レポート ツリー定義を動的に作成")]
+[![レポート ツリー定義を動的に作成。](./media/dynamically-create-reporting-tree-definitions.png "レポート ツリー定義を動的に作成")]
 
 ## <a name="consolidations-that-involve-eliminations"></a>削除を含む連結
 削除トランザクションは、連結プロセスの共通パーツです。 この例では、連結時に 5 つのアカウントを削除します: 142600、211400、401420、401180、および 510820。 会社は、会社間勘定を別に設定できます。 たとえば、会社間トランザクションで勘定を使用している場合、最後の桁を 9 に設定する会社もあります。 その方法にかかわらず、会社間勘定を知っている場合は、連結された財務諸表に消去を表示することができます。
 
 次の図は、連結損益計算書の列定義を示しています。 3 つの損益の会社間勘定は、分析コード フィルターを使用して各会社ごとに定義されます。 列 F、G、H には、USMF、USRT、DEMF の各会社についてのみ削除勘定が含まれます。 これらの列は財務諸表に印刷 **されない** ように設定されています。
 
-![列定義の連結損益計算書](./media/column-definition-consolidated-income-statement.png "列定義の連結損益計算書")
+![列定義の連結損益計算書。](./media/column-definition-consolidated-income-statement.png "列定義の連結損益計算書")
 
 レポートが生成されると、削除金額は F、G、H 列で計算され、列 I に合計されます。列 J は連結金額を示します。 これらの連結金額は、USMF、USRT、および DEMF 社の消去を除外します。
 
@@ -82,7 +82,7 @@ ms.locfileid: "5897867"
 
 次の図は、連結レポートを示しています。
 
-![連結レポートの損益計算書](./media/consolidated-report-income-statement.png "連結レポートの損益計算書")
+![連結レポートの損益計算書。](./media/consolidated-report-income-statement.png "連結レポートの損益計算書")
 
 勘定、分析コード、またはその両方を使用する場合でも、財務諸表では分析コードのフィルタ処理機能を使用して消去エントリを除外できます。
 
@@ -95,20 +95,20 @@ ms.locfileid: "5897867"
 > [!NOTE]
 > この所有権割合は、会社レベルだけでなく、すべてのレポート ユニットにも適用できます。 
 
-![レポート ツリー定義の割合を使用](./media/Using-reporting-tree-definition-percentage.png "レポート ツリー定義の割合を使用")
+![レポート ツリー定義の割合を使用。](./media/Using-reporting-tree-definition-percentage.png "レポート ツリー定義の割合を使用")
 
 レポートが生成されると、Contoso ドイツのレポートには売上金額の 100% が表示され、金額の 80% が販売の連結レベルに割り当てられロール アップされます。
 
 会社の 1% 未満を所有している場合、次の図に示すように、**レポート設定** ページの **追加のオプション** タブで **1% 未満のロールアップを許可** チェック ボックスをオンにします。 この場合、レポート ツリーの **ロールアップ %** 列の値が 1% 未満として扱われます。 たとえば、**.8** と入力すると、0.8% は連結レベルにロール アップされ、80% はロール アップされません。 または、**1% 未満のロールアップを許可** チェック ボックスをオフにし、**ロールアップ %** 列に **.008** を入力しても同じ結果を得ることができます。
 
-![レポートの設定オプション](./media/reporting-setting-options.png "レポートの設定オプション")
+![レポートの設定オプション。](./media/reporting-setting-options.png "レポートの設定オプション")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>連結レポートに所有権を別の行として表示
 少数株主持分の別のオプションは、レポートのすべての行について関連会社の 100% を表示することですが、純利益から非支配持分を差し引くことです。
 
 次の図に示されているように、行定義での **IF THEN ELSE** ステートメントおよび列の制限は、財務諸表の少数株主持分を計算するために使用できます。
 
-![連結レポートに所有権を別の行として表示](./media/Showing-ownership-separate-row-consolidated-report.png "連結レポートに所有権を別の行として表示")
+![連結レポートに所有権を別の行として表示。](./media/Showing-ownership-separate-row-consolidated-report.png "連結レポートに所有権を別の行として表示")
 
 ## <a name="multiple-charts-of-accounts-across-legal-entities"></a>法人間での複数の勘定科目表
 多くの場合、別の法人はさまざまな勘定科目表を持っていますが、引き続き連結財務諸表を作成します。 この場合、財務諸表を使用してデータを連結できるように、連結財務レポートを生成できます。 さまざまな勘定科目表が法人間で存在する場合に連結するための、高レベルの手順を示します。
@@ -122,11 +122,11 @@ ms.locfileid: "5897867"
 > [!TIP]
 > **財務分析コードへのリンク** セルの詳細については、財務分析コード セルへのリンクの指定を参照してください。
 
-![勘定を最初に財務分析コードへのリンクに設定](./media/set-accounts-first-Link-to-Financial-Dimensions.png "勘定を最初に財務分析コードへのリンクに設定")
+![勘定を最初に財務分析コードへのリンクに設定。](./media/set-accounts-first-Link-to-Financial-Dimensions.png "勘定を最初に財務分析コードへのリンクに設定")
 
 レポート ツリーを使用して、各会社で使用される行定義から財務分析コードへのリンクを定義することができます。 次の図に示すように、列 E で行定義を選択し、列 F で適切な行リンクを選択します。
 
-![財務分析コードの行定義の使用をリンク](./media/link-financial-dimensions-row-definition-used.png "財務分析コードの行定義の使用をリンク")
+![財務分析コードの行定義の使用をリンク。](./media/link-financial-dimensions-row-definition-used.png "財務分析コードの行定義の使用をリンク")
 
 > [!TIP]
 > 財務分析コードへのリンクを作成する場合は、その説明を使用して各リンクが適用される会社を識別します。 これにより、レポート ツリーを作成するときに、正しい会社をより簡単に選択できます。 列定義では、**レポート ユニット** フィールドを使用して各列をレポート ツリーの単位へ制限し、データを並べて表示できます。 列に特定の会社を指定しない場合は、すべての会社の連結データが表示されます。
@@ -146,16 +146,16 @@ ms.locfileid: "5897867"
 
 次の図で、USMF 社はレポート定義の **会社名** フィールドに指定されています。 したがって、USMF 社の会計カレンダーは、基本会計カレンダーとして使用されます。 この例では、2018 年 6 月 30 日にレポートが生成されると、USMF 社は BASE 期間を使用し、レポート定義で期間 12 と定義されます。 INMF 社は期間 6 の BASE–6 を使用します。 両方の列には 2018 年 6 月のデータが含まれます。
 
-![レポートの基準期間](./media/report-base-period.png "レポートの基準期間")
+![レポートの基準期間。](./media/report-base-period.png "レポートの基準期間")
 
 次の図は、連結の期間番号または期間終了日を使用するかどうかを選択できるレポート定義のオプションを示しています。
 
-![オプションのレポート定義の期間番号](./media/options-report-definition-period-number.png "オプションのレポート定義の期間番号")
+![オプションのレポート定義の期間番号。](./media/options-report-definition-period-number.png "オプションのレポート定義の期間番号")
 
 ## <a name="business-unit-consolidations"></a>事業単位の連結
 このトピックでは、連結用の財務諸表にレポート ツリー定義と組織階層を使用することについて説明しています。 レポート ツリーを使用して、世界中の販売または工程に関するレポートなどの事業単位連結レポートを作成することもできます。 これらのレポートは、一般的な要件です。 それらを作成するには、連結したい各単位の会社と分析コードを選択します。 たとえば、次の図で業務単位のロールアップは **会社** 列 (列 A) で各会社を繰り返し、**分析コード** 列 (列 D) で会社ごとに部門分析コード値のグループを識別します。
 
-![業務単位の連結レポート](./media/business-unit-consolidation-reports.png "業務単位の連結レポート")
+![業務単位の連結レポート。](./media/business-unit-consolidation-reports.png "業務単位の連結レポート")
 
 ## <a name="consolidations-that-involve-multiple-reporting-currencies"></a>複数のレポート通貨が含まれる連結
 実績、予算、予算の管理、および予算計画のデータを複数の通貨で表示するときに、財務諸表の柔軟性が向上します。 主設定のデータを取り込むことで、すべてのユーザーは、いつでも任意の通貨で、どのレポートを表示するためにも、財務諸表で追加のセットアップを行なうは必要はありません。
@@ -168,7 +168,7 @@ ms.locfileid: "5897867"
 - **財務報告の為替レート タイプ** フィールドで、勘定に適用される通貨および為替レートを含む為替レート タイプを選択します。 この通貨および為替レートの表は、財務諸表の実際のデータに適用されます。
 - **為替換算タイプ** フィールドで、勘定の為替レートを計算するために使用される方法を選択します。 この通貨方法は、財務諸表の実績データと予算データの両方に使用されます。
 
-![財務諸表の主勘定](./media/Financial-reporting-main-accounts.png "財務諸表の主勘定")
+![財務諸表の主勘定。](./media/Financial-reporting-main-accounts.png "財務諸表の主勘定")
 
 予算、予算管理、および予算計画のデータの場合、為替レート タイプは **元帳** ページで定義されます。 そのテーブルは為替レートをプルするように使用され、その勘定に割り当てられている為替換算タイプが使用されます。
 
@@ -199,15 +199,15 @@ ms.locfileid: "5897867"
 
 - 次の図に示すように、行定義の **丸め調整** ページを使用します。
 
-    ![為替換算調整の丸め調整](./media/Currency-translation-adjustment-rounding-adjustments.png "為替換算調整の丸め調整")
+    ![為替換算調整の丸め調整。](./media/Currency-translation-adjustment-rounding-adjustments.png "為替換算調整の丸め調整")
 
     丸め調整 (CTA)、資産合計行、負債合計および資本の行および使いやすいしきい値を表示する行を指定すると、財務諸表で差額が計算され、目的の行に配置されます。 次の図に示すように、**丸め調整** という名前の行が作成され、ドリルダウン時に表示されます。
 
-    ![丸め調整のドリルダウン](./media/rounding-adjustment-drill-down.png "丸め調整のドリルダウン")
+    ![丸め調整のドリルダウン。](./media/rounding-adjustment-drill-down.png "丸め調整のドリルダウン")
 
 - すべての勘定を資産から経費までの範囲にプットします。 次の図に示すように、差額は丸め調整 (CTA) と同じ金額になります。 したがって、それを合計の確認として使用し、丸め調整ページに見落とされた勘定残高が含まれていないことを確認することができます。
 
-    ![丸め調整フォームのチェック](./media/rounding-adjustment-form-check.png "丸め調整フォームのチェック")
+    ![丸め調整フォームのチェック。](./media/rounding-adjustment-form-check.png "丸め調整フォームのチェック")
 
 ### <a name="balance-calculation-approach"></a>残高の計算方法
 通貨が使用されてるときに正しく翻訳された金額を取得するために、財務諸表では残高に対して次の計算方法が使用されます。

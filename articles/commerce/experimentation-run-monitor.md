@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4afc19ed103f204fec61ab20b88f767ad5f05b38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1af5676511c16d0492a7c3a61b7bf3a88b43758a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792538"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349259"
 ---
 # <a name="run-and-monitor-an-experiment"></a>実験の実行と監視
 
@@ -28,7 +28,7 @@ ms.locfileid: "5792538"
 
 次の図は、Dynamics 365 Commerce の電子商取引 web サイトでの実験の設定と実行に関連するすべての手順を示しています。 追加の手順については、個別のトピックで説明します。
 
-[![実験ユーザー体験 - 実行と監視](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
+[![実験ユーザー体験 - 実行と監視。](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
 バリエーションを公開すると、Commerce で実験を実行するために必要となるすべての手順が完了します。 次の手順では、ユーザーがページを要求したときに各ユーザーに表示するバリエーションを決定します。 サードパーティ サービスがその決定を行いますが、最初にサービス内で実験を有効にする必要があります。 実験を有効化する手順はサービスによって異なるため、サービスまたはプロバイダーに含まれている手順に従う必要があります。 実験が有効化されていない場合、ユーザーにはページの既定のバージョンのみが表示されます (バリエーションは表示されません)。
 

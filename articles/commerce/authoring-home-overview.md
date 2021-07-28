@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b5e1e7dd669a9608d385086cf24d388b065c9ca6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: abd534035a75d5d63b972c7d6668c9dc766b019a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799880"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349749"
 ---
 # <a name="authoring-page-overview"></a>作成ページの概要
 
@@ -40,7 +40,7 @@ Dynamics 365 Commerce は、複数の Web サイトの作成と管理をサポ�
 
 次の図は、作成ページを示しています。
 
-![Dynamics 365 Commerce 作成ページ](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce 作成ページ。](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>ホーム ボタンを使用してツールを選択する
 

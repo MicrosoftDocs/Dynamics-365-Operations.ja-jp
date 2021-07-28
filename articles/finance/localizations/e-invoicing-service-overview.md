@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344761"
 ---
 # <a name="electronic-invoicing-overview"></a>電子請求の概要
 
@@ -98,7 +100,7 @@ LCS から電子請求をインストールし、必要となるアプリケー�
 
 次の図は、電子請求のデータの流れを示しています。
 
-![電子請求のデータ フロー](media/e-invoicing-service-data-flow-diagram-overview.png)
+![電子請求のデータ フロー。](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>プライバシー通知
 電子請求書を有効化して使用するには、税務登録 ID を含む一部のデータの送信が必要となる場合があります。 これは、政府の web サービスとの統合に必要となる事前定義された形式で電子請求書を送信する目的で、税務当局によって認可された第三者機関に送信されます。 これらの外部システムから Dynamics 365 のオンライン サービスにインポートされたデータは、当社の [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=512132) の対象となります。 詳細については、各国固有の機能説明書のプライバシーに関する注意事項を参照してください。

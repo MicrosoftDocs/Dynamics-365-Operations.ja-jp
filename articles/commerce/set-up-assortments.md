@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bbe7749e6c8293ded933611d6f1084b89223302c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 447c5f580e5d925efbfeaabc3890e2d67f9688f5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790985"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344350"
 ---
 # <a name="set-up-assortments"></a>品揃えの設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "5790985"
 
 品揃えとは、従来型の店舗、オンライン ストアなどのコマース チャネルに割り当てられた関連する製品の集まりです。 各店舗で利用できる製品を識別するために品揃えを使用します。 品揃えには、製品のカテゴリを含めることができます。 したがって、特定のカテゴリに割り当てられているすべての製品が品揃えに含まれます。 また、品揃えには、製品の特定の製品および特定のバリアントを含めることもできます。 品揃えを設定することで、店舗で必要なあらゆる組み合わせで何千もの製品をチャネルに同時に割り当てることができます。 製品の品揃えは必要なだけ設定できます。 各製品を 1 つまたは複数の品揃えに含めて、各カテゴリを 1 つまたは複数のチャネルに割り当てることができます。 たとえば、製品の基準セットが含まれる 1 つの品揃えを定義します。 すべての店舗はこの品揃えを受入します。 その後、大きいスポーツ用品のみが含まれる別の品揃えを定義します。 大規模な店舗のみこの品揃えを受入します。 次の図は、製品を品揃えに割り当てる方法とそれらの品揃えをチャネルに割り当てる方法を示します。
 
-![製品品揃えリレーションシップ](./media/assortments_relationship.gif)
+![製品品揃えリレーションシップ。](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>必要条件
 

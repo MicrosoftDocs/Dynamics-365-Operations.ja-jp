@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261699"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347761"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>補充方法と数量変更
 
@@ -34,15 +34,15 @@ ms.locfileid: "6261699"
 
 - **期間** – 補充方法では、ある期間のすべての需要を 1 つの製品の注文にまとめます。 この注文はその期間の初日に対して計画され、その数量が設定された期間における正味必要量となります。 この期間は、製品の最初の需要から始まり、定義された期間の長さを対象としています。 次の期間は、製品の次の要件から開始されます。 *期間* 補充コードは多くの場合、予測できない在庫振出、季節影響を受ける製品、または高コスト製品に使用されます。 次の図は、例を示します。
 
-    ![期間補充コードの使用例](./media/coverage-code-period.png "期間補充コードの使用例")
+    ![期間補充コードの使用例。](./media/coverage-code-period.png "期間補充コードの使用例")
 
 - **要求** – 補充方法では、製品の要求ごとに計画購買、移動、または製造オーダーが作成されます。 この方法は、断続的な需要がある高価な製品に使用されます。 *要求* 補充コードは多くの場合、コンフィギュレーション可能な製品や受注生産シナリオで使用されます。 次の図は、例を示します。
 
-    ![要求補充コードの使用例](./media/coverage-code-requirement.png "要求補充コードの使用例")
+    ![要求補充コードの使用例。](./media/coverage-code-requirement.png "要求補充コードの使用例")
 
 - **最小/最大** – 補充方法は、在庫レベルに基づきます。 予測手持在庫レベルが特定のしきい値を下回った場合に、在庫の補充を特定のレベルまで定義します。 補充数量は、最大レベルと予測手持在庫レベルの差額になります。 *最小/最大* 補充コードは多くの場合、予測可能な在庫振出、高ランナー、またはより安価な製品に使用されます。 次の図は、例を示します。
 
-    ![最小/最大補充コードの使用例](./media/coverage-code-min-max.png "最小/最大補充コードの使用例")
+    ![最小/最大補充コードの使用例。](./media/coverage-code-min-max.png "最小/最大補充コードの使用例")
 
 - **手動** – 補充方法では、製品に対する購入、移動、または製造オーダーは提案されません。 代わりに、製品のプランナーが製品の補充に必要な注文の作成を担当します。 *手動* 補充コードは、多くの場合、システム生成された計画オーダーが不要な製品に使用されます。
 

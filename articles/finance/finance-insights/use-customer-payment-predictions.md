@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186567"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355630"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>顧客支払予測の使用 (プレビュー)
 
@@ -38,13 +38,13 @@ ms.locfileid: "6186567"
 - **トランザクションごとの支払予測** タイルには、**期限内** バケットで支払の確度が 50% 未満の未処理の顧客トランザクションの発生数が時系列で表示されます。 このタイルを選択して、**トランザクションリストごとの支払予測** リスト ページを開くことができます。
 - **高い遅延残高が予測される顧客** タイルには、合計残高の半分 (50%) 超の支払いが遅れるか非常に遅くなると予測されている顧客の数が表示されます。 このタイルを選択して、**顧客ごとの支払予測** リスト ページを開くことができます。
 
-[![顧客の与信および回収の管理ワークスペース](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![顧客の与信および回収の管理ワークスペース。](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### <a name="payment-predictions-per-transaction-list-page"></a>[トランザクションごとの支払予測] リスト ページ
 
 **トランザクションごとの支払予測** リスト ページでは、未処理トランザクションの支払の確率を、**期限内**、**遅延**、および **かなりの遅延** の各バケットに表示できます。 グリッド内のトランザクションごとに、**期限内の確度** 列には、請求書が期日までに支払われる可能性が示されます。 期限内の支払の確率が 50% 未満の場合、**期限内の確率** 列のパーセンテージの横に赤い円が表示されて、遅延支払のリスクを示します。
 
-[![トランザクションごとの支払予測リスト ページ](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![トランザクションごとの支払予測リスト ページ。](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 ページの右側にある **関連情報** ウィンドウには、予測に関する詳細が表示されます。
 
@@ -54,13 +54,13 @@ ms.locfileid: "6186567"
 
 **トップ要素** セクションのデータ、および **顧客インサイト** と **顧客履歴** クイックタブには、支払予測を説明するのに役立つデータが含まれています。 これにより、予測の有効性に対する信頼度を高めることができます。
 
-[![関連情報ウィンドウの支払予測のグラフィカル インジケーター](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![関連情報ウィンドウの支払予測のグラフィカル インジケーター。](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="payment-prediction-per-customer-list-page"></a>[顧客ごとの支払予測] リスト ページ
 
 **顧客ごとの支払予測** リスト ページでは、未処理残高の合計と、**期限内**、**遅延**、および **かなり遅延** バケットに支払額が表示され ます。
 
-[![顧客ごとの支払予測ページ](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![顧客ごとの支払予測ページ。](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 各バケットの支払金額は、トランザクション残高の加重平均の合計として計算されます。 この金額は、各バケットの支払確度に基づいて計算されます。
 
@@ -92,11 +92,11 @@ ms.locfileid: "6186567"
 
 支払予測の精度を表示するには、**与信および回収 \> 設定 \> Finance 分析情報 \> Finance 分析情報パラメーター** を使用します。 **顧客支払に関するインサイト** タブの **予測モデル** セクションに、予測モデルの精度が割合として表示されます。
 
-[![支払予測の正確性](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![支払予測の正確性。](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 精度に満足していない場合は、**モデル精度の改善** リンクを選択して、AI Builder の拡張エクスペリエンスを開きます。 AI Builder の拡張エクスペリエンスでは、支払確度を正確に予測するために最も重要と思われるフィールドを選択するまで、選択したフィールドを選択またはキャンセルすることができます。 完了したら、予測モデルを簡単に再トレーニングして、変更を公開できます。 新しくトレーニングした予測モデルは、Dynamics 365 Finance で予測のために自動的に選択されます。
 
-[![AI Builder 拡張エクスペリエンス](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder 拡張エクスペリエンス。](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## <a name="release-details"></a>リリースの詳細
 

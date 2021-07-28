@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: f9953d1a996f6f68600a7fd04719e9b112494175
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186617"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349900"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>エジプトの VAT 申告 (EG-00002)
 
@@ -77,7 +77,7 @@ Lifecycle Services (LCS) またはグローバル リポジトリから電子申
 
 エジプトの売上帳簿および購買帳簿レポートには、特定のトランザクション分類に対応する一連の列が、エジプトに固有の操作、製品およびドキュメントのタイプとして含まれます。 これらの新しい分類をトランザクションの転記時に新しいエントリ データとして含める代わりに、エジプトの VAT レポートの要件を満たすため、**構成** > **アプリケーション固有のパラメーターの設定** > **設定** で紹介された異なるルックアップに基づいて分類が決定されます。 
 
-![アプリケーション固有のパラメーター ページ](media/egypt-vat-declaration-setup1.png)
+![アプリケーション固有のパラメーター ページ。](media/egypt-vat-declaration-setup1.png)
 
 次のルックアップ構成を使用して、購買および売上 VAT 帳簿レポートのトランザクションを分類します。
 
@@ -206,7 +206,7 @@ Microsoft Excel 形式で VAT 還付フォーム レポートを生成するに�
 2. **消費税** タブの **税のオプション** セクションの **VAT 明細書の形式マッピング** フィールドで、**VAT 申告 Excel (EG)** を選択します。 フィールドを空白のままにすると、標準消費税レポートが SSRS 形式で生成されます。
 3. **カテゴリ階層** を選択します。 このカテゴリにより、対外貿易のタブ トランザクションの商品コードを使用してユーザーが商品やサービスを選択および分類できるようにします。 この分類の説明は、販売および購買トランザクション レポートで詳細に表示されます。 この構成はオプションです。
 
-![申告 フォーム](media/egypt-vat-declaration-setup2.png)
+![申告フォーム。](media/egypt-vat-declaration-setup2.png)
 
 
 ## <a name="generate-a-vat-return-report"></a>VAT 還付レポートの生成

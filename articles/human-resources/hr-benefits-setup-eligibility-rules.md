@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093923"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351660"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>適格性ルールとオプションを構成する
 
@@ -137,20 +137,20 @@ Microsoft Dynamics 365 Human Resources の給付金管理に必要なパラメ�
 
 たとえば、前述の **有効な従業員** ルールは、次の基準で構成されています。 従業員が **有効な従業員** ルールに基づいて資格を得るには、その従業員が法人USIMで雇用されており、*かつ* 職位タイプがフルタイムである必要があります。  
 
-![適格性ルール内の基準](media/CriteriaWithinAnEligibilityRule.png) 
+![適格性ルール内の基準。](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>基準内の複数の条件
 
 ルールをさらに展開して、1つの基準の中で複数の条件を使用することができます。 従業員が適格な条件を満たす必要があります。 上記の例を基に、**有効な従業員** のルールをさらに拡張して、パートタイムの従業員も含めることができます。 その結果、USMFの従業員で、*かつ*、フルタイムまたはパートタイムの従業員である必要があります。  
 
-![基準内の複数の条件](media/MultipleConditionsWithinCriteria.png) 
+![基準内の複数の条件。](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>カスタム フィールド基準内の適格性条件 
 上記と同様に、カスタム フィールドは適格性規則を作成する際に使用でき、同様に機能します。 例えば、自宅で仕事をしているファーゴとコペンハーゲンの社員には、インターネットの費用が高いため、インターネットの経費を支給したいと考えています。 これを行うには、**オフィスの場所** (ピックリスト) と **自宅での作業** (チェック ボックス) の2つのカスタム フィールドを作成します。 続いて、**WFH 従業員** というルールを作成します。 このルールの基準は、**オフィスの場所 = ファーゴ**、または **コペンハーゲン** *かつ*  、**自宅で作業 = はい** となっていることです。
 
 次の図のように、カスタムの適格性規則を設定する必要があります。 
 
-![カスタム フィールドの基準における適格性の条件](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![カスタム フィールドの基準における適格性の条件。](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>バンドルを構成する
 

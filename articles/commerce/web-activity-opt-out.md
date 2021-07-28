@@ -14,12 +14,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 86f475cc0b78c620309301516b6c3b525b640637
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 25464c89352f44a77a96dee6ad2f633b7a55669e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791560"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350283"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Web アクティビティ イベント コレクションのオプトアウト
 [!include [banner](includes/banner.md)]
@@ -40,7 +40,7 @@ Commerce 本部のアカウント管理では、管理者はユーザーに代�
 1. HQ クライアントで **すべての顧客** ページで、顧客を検索して選択します。
 1. [顧客の詳細] ページにて、 **小売** クイックタブの **プライバシー** セクションで、**アクティビティの追跡をしない** オプションを **はい** に設定します。
 
-    ![プライバシー設定](media/Disablepersonalizationpart2.png)
+    ![プライバシー設定。](media/Disablepersonalizationpart2.png)
 
 1. **保存** を選択し、ページを閉じます。
 

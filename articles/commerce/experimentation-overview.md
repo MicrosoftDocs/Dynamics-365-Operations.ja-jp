@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e415bc0a4ced11c5bb8393fe5dfe03a5f7cdd6c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798990"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349331"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Dynamics 365 Commerce での実験
 Dynamics 365 Commerce での実験を使用して、E コマース ページの有効性についての仮想を検証し、データ駆動型信頼とともに決定を行います。 Commerce では、ページ、モジュール、およびフラグメントの A/B テストをサポートしており、Web サイトに提案された変更の影響を測定できます。
@@ -39,7 +39,7 @@ Dynamics 365 Commerce での実験を使用して、E コマース ページの�
 ## <a name="experimentation-lifecycle"></a>実験ライフサイクル
 実験の設定、バリエーションの作成、および実験の実行は、反復プロセスです。 次の図は、Commerce およびサード パーティ サービスでの実験ライフサイクルを示しています。 
 
-[ ![実験ライフサイクル](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![実験ライフサイクル。](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 実験プロセスの各手順の詳細については、次のトピックを参照してください。
 - [仮説を識別して実験のメトリックスを決定する](experimentation-identify.md)

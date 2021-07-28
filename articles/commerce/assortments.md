@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 74df8ac27c2028582b8909db0a7260b9b0ed38f5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a81a779dd484d30397c89076d081413a72560f0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797284"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348710"
 ---
 # <a name="assortment-management"></a>品揃え管理
 
@@ -35,27 +35,27 @@ Commerce で、品揃えは 1 つまたは複数のチャネル (または組織
 
 次の例では、店舗ごとに固有の品揃えを構成します。 この場合は、店舗 1 で製品 1 のみが使用可能であり、店舗 2 で製品 2 のみが使用可能です。
 
-![各製品は、1 つの店舗で使用可能です](./media/Managing-assortments-figure1.png)
+![各製品は、1 つの店舗で使用可能です。](./media/Managing-assortments-figure1.png)
 
 店舗 1 で製品 2 を利用するために、品揃え 1 に製品を追加することができます。
 
-![製品 2 が品揃え 1 に追加されます](./media/Managing-assortments-figure2.png)
+![製品 2 が品揃え 1 に追加されます。](./media/Managing-assortments-figure2.png)
 
 または、品揃え 2 に、店舗 1 を追加できます。
 
-![店舗 1 が品揃え 2 に追加されます](./media/Managing-assortments-figure3.png)
+![店舗 1 が品揃え 2 に追加されます。](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>組織階層
 
 複数のチャネルが同じ製品の品揃えを共有する場合、Commerce の品揃えの組織階層を使用して、品揃えを設定できます。 この階層のノードが追加されると、そのノードとその子ノード内のすべてのチャネルが含まれます。
 
-![組織階層](./media/Managing-assortments-figure4.png)
+![組織階層。](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>製品カテゴリ
 
 同様に、製品側では、製品カテゴリ階層を使用して製品のグループを含めることができます。 1 つ以上のカテゴリ階層ノードを含めることにより、品揃えをコンフィギュレーションできます。 この場合、品揃えでは、そのカテゴリ ノードとその子ノードにすべての製品が含まれます。
 
-![製品カテゴリ](./media/Managing-assortments-figure5.png)
+![製品カテゴリ。](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>除外した製品またはカテゴリ
 
@@ -64,7 +64,7 @@ Commerce で、品揃えは 1 つまたは複数のチャネル (または組織
 > [!NOTE]
 > 製品が定義ごと 1 つ以上の品揃えに含まれているか除外されている場合、製品は常に除外されたものとみなされます。
 
-![除外された製品](./media/Managing-assortments-figure6.png)
+![除外された製品。](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>グローバルおよびリリースされた製品
 

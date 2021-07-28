@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 3340ea07414eb92997ab4a9d6fa46cd075f8f9db
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ea0f60424ff1ee40a4231aa9cc129bb942fca519
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021010"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353567"
 ---
 # <a name="landed-cost-parameters-setup"></a>陸揚原価パラメーターの設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "6021010"
 
 パラメーターを使用するには、**陸揚原価 \> 設定 \> 陸揚原価パラメーター** の順に移動してから、次のセクションの説明に従ってフィールドを設定します。
 
-![陸揚原価パラメーター ページ](media/landed-cost-parameters.png "陸揚原価パラメーター ページ")
+![陸揚原価パラメーター ページ。](media/landed-cost-parameters.png "陸揚原価パラメーター ページ")
 
 ## <a name="general-tab"></a>[全般] タブ
 

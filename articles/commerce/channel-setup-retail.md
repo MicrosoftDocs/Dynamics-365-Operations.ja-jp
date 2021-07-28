@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937537"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346061"
 ---
 # <a name="set-up-a-retail-channel"></a>小売チャネルの設定
 
@@ -50,11 +50,11 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、新しい小売チャネルの作成を示しています。
 
-![新しい小売チャネル](media/channel-setup-retail-1.png)
+![新しい小売チャネル。](media/channel-setup-retail-1.png)
 
 次の図は、小売チャネルの例を示しています。
 
-![小売チャネルの例](media/channel-setup-retail-2.png)
+![小売チャネルの例。](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>その他の設定
 
@@ -64,7 +64,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、小売チャネルの設定構成の例を示しています。
 
-![小売チャネル構成の例](media/channel-setup-retail-3.png)
+![小売チャネル構成の例。](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>追加チャネルの設定
 
@@ -74,7 +74,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、**設定** タブのさまざまな追加の小売チャネル設定オプションを示します。
 
-![チャネルの設定](media/channel-setup-retail-4.png)
+![チャネルを設定します。](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>支払方法の設定
 
@@ -89,7 +89,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、現金支払い方法の例を示しています。
 
-![支払方法の例](media/channel-setup-retail-5.png)
+![支払方法の例。](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>現金申告の設定
 
@@ -98,7 +98,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、現金申告の例を示しています。
 
-![現金申告の設定](media/channel-setup-retail-6.png)
+![現金申告を設定します。](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>荷渡方法の設定
 
@@ -112,7 +112,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、デリバリー モードの例を示しています。
 
-![荷渡方法の設定](media/channel-setup-retail-7.png)
+![荷渡方法を設定します。](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>収入/経費勘定の設定
 
@@ -129,7 +129,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 以下の図は、収入/経費勘定の例を示します。
 
-![収入/経費勘定の設定](media/channel-setup-retail-8.png)
+![収入/経費勘定を設定します。](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>セクションの設定
 
@@ -155,7 +155,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、フルフィルメント グループの割り当ての設定の例を示しています。
 
-![フルフィルメント グループの割り当ての設定](media/channel-setup-retail-9.png)
+![フルフィルメント グループの割り当てを設定します。](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>安全の設定
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8c9aaa3868167806ce3189d724621991ec7e53eb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: afb9f95458089e854335399ea3d14ba229c02bbd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022814"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349876"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>エジプトの源泉徴収税申告 (EG-00005)
 
@@ -103,7 +103,7 @@ Microsoft Excel で WHT 申告フォーム レポートを生成するには、*
 2. **源泉徴収税** タブの **WHT 申告フォーマット マッピング** フィールドで、**WHT 申告 Excel (EG)** を選択します。 フィールドを空白のままにすると、標準消費税レポートが SSRS 形式で生成されます。
 
 
-![申告 フォーム](media/egypt-wht-declaration-setup1.png)
+![申告フォーム。](media/egypt-wht-declaration-setup1.png)
 
 ## <a name="generate-the-withholding-declaration-forms"></a>源泉徴収申告フォームの生成
 特定の期間の源泉徴収申告フォームを準備および送信するプロセスは、支払税の決済および転記ジョブ中に転記された源泉徴収税トランザクションに基づいています。 グローバル源泉徴収税の詳細については、[グローバル源泉徴収税](../general-ledger/global-withholding-tax-overview.md) を参照してください。

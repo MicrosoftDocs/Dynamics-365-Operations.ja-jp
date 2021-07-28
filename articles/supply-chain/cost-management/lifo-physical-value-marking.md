@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dcac72a60eac6abb29a017eb4ce02a71dca572d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809737"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344547"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>現物価格とマーキングを使用した LIFO
 
@@ -53,7 +53,7 @@ ms.locfileid: "5809737"
 
 新しい移動平均原価価格は、USD 15.00 での財務更新済トランザクションの平均を反映しています。 次の図は、**現物価格を含める** オプションを使用しない場合の、この一連のトランザクションでの LIFO 在庫モデルの影響について説明しています。 
 
-![[現物価格を含める] がオフの場合の LIFO](./media/lifowithoutincludephysicalvalue.gif) 
+![現物価格を含めるがオフの場合の LIFO。](./media/lifowithoutincludephysicalvalue.gif) 
 
 **図の説明**
 
@@ -89,7 +89,7 @@ ms.locfileid: "5809737"
 
 次の図は、**現物価格を含める** オプションを使用した場合の、この一連のトランザクションでの LIFO 在庫モデルの影響について説明しています。 
 
-![[現物価格を含める] がオンの場合の LIFO](./media/lifowithincludephysicalvalue.gif) 
+![現物価格を含めるがオンの場合の LIFO。](./media/lifowithincludephysicalvalue.gif) 
 
 **図の説明**
 
@@ -133,7 +133,7 @@ ms.locfileid: "5809737"
 
 次の図は、払出と受入との間でマーキングを使用した場合の、この一連のトランザクションでの LIFO 在庫モデルの影響について説明しています。 
 
-![[マーキング] が有効な場合の LIFO](./media/lifowithmarking.gif) 
+![マーキングが有効な場合の LIFO。](./media/lifowithmarking.gif) 
 
 **図の説明**
 

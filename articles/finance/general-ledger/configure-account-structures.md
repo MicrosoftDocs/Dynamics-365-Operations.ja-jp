@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22123eb7a46910a2bc68a85b57271cfa2f3eb41e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8d4d3ebed7cf3f006672454e086fc0f918f2418d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193809"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360667"
 ---
 # <a name="configure-account-structures"></a>勘定構造のコンフィギュレーション
 
@@ -65,7 +65,7 @@ ms.locfileid: "6193809"
 
 **許可された値の詳細** セクションを使用すると、開始点、相互間、包含点などの **演算子** を使用する基準を作成できます。
 
-[![許可された値](./media/account.png)](./media/account.png) 
+[![許可された値。](./media/account.png)](./media/account.png) 
 
 許可される値は、勘定構造の設定に従って他に選択できる値がない場合に、仕訳帳または勘定配布エントリ ページに既定で設定されます。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5204fb80dcf3dc2342e9d37f18b9d4f587de1808
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e84f882f69fbc7fceae8a6e0332716a82830dfdc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754297"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344051"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>財務諸表デザイナーでの行の定義
 
@@ -158,7 +158,7 @@ ms.locfileid: "5754297"
 
 1. レポート デザイナーで、変更する行定義を開きます。
 2. 書式を設定するセルを選択します。 複数のセルを選択する場合は、Ctrl キーを押しながらセルを選択します。
-3. 適用するフォーマットのツール バーのボタンをクリックします。 たとえば行をインデントにするには、行を選択し、ツール バーの **インデントの増加** ![インデントの増加](media/indent.gif "インデントの増加") をクリックします。
+3. 適用するフォーマットのツール バーのボタンをクリックします。 たとえば行をインデントにするには、行を選択し、ツール バーの **インデントの増加** ![インデントの増加。](media/indent.gif "インデントの増加") をクリックします。 ツールバーにある。
 
 ### <a name="adjust-columns-while-you-design-reports"></a>レポートのデザイン中に列を調整
 

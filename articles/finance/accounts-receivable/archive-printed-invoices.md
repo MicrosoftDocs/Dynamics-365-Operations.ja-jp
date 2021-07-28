@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-05
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 841e6059f5b0d70dbd1fe12a1f8910bbb31ddc86
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c627b6238a5c0ec1a45ebd9692aae7c634c4952e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018981"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356802"
 ---
 # <a name="archive-printed-customer-invoices-with-hash-numbers"></a>印刷された顧客請求書にハッシュ番号を付けてアーカイブする
 
@@ -60,5 +60,5 @@ ms.locfileid: "6018981"
 
 印刷された請求書の **添付ファイル** ページを開きます。 **ドキュメント ハッシュ番号** フィールドの **追加の詳細** フィールド グループから、**添付ファイル** FastTab で、印刷済み請求書の計算された保存済ハッシュ番号を探します。
 
-![添付ファイル のハッシュ番号](media/attach-hash-num.jpg)
+![添付ファイル のハッシュ番号。](media/attach-hash-num.jpg)
 

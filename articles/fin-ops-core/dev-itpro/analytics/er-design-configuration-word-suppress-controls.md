@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753604"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348047"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>生成されたレポートの Word コンテンツ コントロールを非表示にする
 
@@ -63,7 +63,7 @@ Dynamics 365 Finance のバージョン 10.0.6 以降のバージョンでは、
     > [!NOTE]
     > 繰り返しコンテンツ コントロールは、マップされているカスタム XML パーツのフィールドに一致する **SummaryLines** キーによってタグ付けされます。
 
-    ![Word テンプレート レイアウト](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Word テンプレート レイアウト。](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>既存の ER レポート コンフィギュレーションを選択します
 
@@ -98,7 +98,7 @@ Dynamics 365 Finance のバージョン 10.0.6 以降のバージョンでは、
 7. **OK** を選択します。
 8. **電子申告パラメーター** ダイアログ ボックスで、**OK** を選択し、生成された出力を分析します。
 
-    ![仕入先支払ページでの処理に対する支払](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![仕入先支払ページでの処理に対する支払。](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     出力は Word 形式で表示され、概要セクションを含みます。
 
@@ -149,7 +149,7 @@ Dynamics 365 Finance のバージョン 10.0.6 以降のバージョンでは、
 
 9. **保存** を選択し、編集可能な形式への変更を保存します。
 
-    ![Word 形式で生成された出力](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![Word 形式で生成された出力。](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>修正済みのフォーマットを実行して Word 出力を作成する
 
@@ -163,7 +163,7 @@ Dynamics 365 Finance のバージョン 10.0.6 以降のバージョンでは、
 8. **電子申告パラメーター** ダイアログ ボックスの **概要セクションの非表示** フィールドで **はい** を選択します。
 9. **OK** を選択し、生成された出力を分析します。
 
-    ![Word 形式で生成された出力](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Word 形式で生成された出力。](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     出力が非表示なので、概要セクションが含まれていないことに注意してください。
 

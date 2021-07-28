@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188176"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353471"
 ---
 # <a name="purchase-requisition-workflow"></a>購買要求ワークフロー
 
@@ -51,7 +51,7 @@ ms.locfileid: "6188176"
 -   **購買担当者** – 調達の確認を実行し、ドキュメントを承認できるユーザー。
 -   **要求者のマネージャー** – 経営上の確認を実行し、ドキュメントを承認できるユーザー。
 
-![購買要求ワークフロー確認プロセス](./media/purchreqworkflowoverview_submission.gif)  
+![購買要求ワークフロー確認プロセス。](./media/purchreqworkflowoverview_submission.gif)  
 この例では、購買要求のワークフロー プロセスに次の手順が含まれます。
 
 1.  作成者はレビューのために購買要求を送信します。
@@ -74,7 +74,7 @@ ms.locfileid: "6188176"
 -   **部門マネージャー**  – 経費の確認を実行し、ドキュメントを承認できるユーザー。
 -   **グループ マネージャー** – 署名権限上の確認を実行し、ドキュメントを承認できるユーザー。
 
-![購買要求明細行のワークフロー確認プロセス](./media/purchreqlineworkflowoverview.gif)  
+![購買要求明細行のワークフロー確認プロセス。](./media/purchreqlineworkflowoverview.gif)  
 この例では、購買要求明細行のワークフロー プロセスに次の手順が含まれます。
 
 1.  作成者はレビューのために購買要求を送信します。 各行は、受け取るようにワークフロー プロセスで構成されたレビュー担当者にルーティングされます。

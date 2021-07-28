@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188128"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359864"
 ---
 # <a name="sales-and-marketing-overview"></a>販売とマーケティングの概要
 
@@ -29,18 +31,18 @@ ms.locfileid: "6188128"
 
 ## <a name="marketing"></a>マーケティング
 
-マーケティング キャンペーンや活動を使用して、潜在的な顧客との関係を模索して構築し、初期の相互作用を販売関係へと発展させることができます。 次のプロセス フローは、マーケティングの業務プロセスを表しています。 [![マーケティングの業務プロセス](./media/marketing01.jpg)](./media/marketing01.jpg)
+マーケティング キャンペーンや活動を使用して、潜在的な顧客との関係を模索して構築し、初期の相互作用を販売関係へと発展させることができます。 次のプロセス フローは、マーケティングの業務プロセスを表しています。 [![マーケティングの業務プロセス。](./media/marketing01.jpg)](./media/marketing01.jpg)
 
-### <a name="relationships"></a>リレーションシップ
+### <a name="relationships"></a>関係
 
-販売およびマーケティングでは、潜在的な顧客との初期の相互作用がさまざまな状況で発生します。 たとえば、トレード ショーに参加しているとき見込みのある顧客を見つけたり、組織が大量のキャンペーン メールの送信を実行した後、可能性のある潜在顧客を獲得するかもしれません。 その相手が顧客になる前に、相手のエンティティの流れを理解することが重要です。 次の図は、潜在的な顧客が実際の顧客になる場合の、エンティティの関連付けのフローを示します。 [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+販売およびマーケティングでは、潜在的な顧客との初期の相互作用がさまざまな状況で発生します。 たとえば、トレード ショーに参加しているとき見込みのある顧客を見つけたり、組織が大量のキャンペーン メールの送信を実行した後、可能性のある潜在顧客を獲得するかもしれません。 その相手が顧客になる前に、相手のエンティティの流れを理解することが重要です。 次の図は、潜在的な顧客が実際の顧客になる場合の、エンティティの関連付けのフローを示します。 [![SalesandMarketing01。](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>キャンペーン
 
 キャンペーンは、見込顧客、潜在顧客、営業案件、およびキャンペーンに参加するように選択されているお客様の連絡先をターゲットとします。 Supply Chain Management では、潜在的な顧客を最大化するため、テレマーケティング、メーリングおよびメールでのキャンペーンなどのキャンペーンのいくつかの種類を作成できます。 キャンペーンが進行して積極的な反応を受け取ると、キャンペーンに積極的に反応したこれらの受信者への営業プロセスを開始できます。
 
 ## <a name="sales"></a>販売注文
-販売機能を使用して、見積、新規および既存のお客様のアップセル/クロスセルを作成し、販売注文の作成および顧客の売上請求書を作成します。 次のプロセス フローは、販売の業務プロセスを表しています。 [![販売の業務プロセス](./media/sales01.jpg)](./media/sales01.jpg)
+販売機能を使用して、見積、新規および既存のお客様のアップセル/クロスセルを作成し、販売注文の作成および顧客の売上請求書を作成します。 次のプロセス フローは、販売の業務プロセスを表しています。 [![販売の業務プロセス。](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>販売見積
 

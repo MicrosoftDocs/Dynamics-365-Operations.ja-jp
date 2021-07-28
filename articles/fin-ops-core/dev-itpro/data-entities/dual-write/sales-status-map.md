@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a1f85c100f1d062517c14d31a19838cc4af18f10
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750717"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346573"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>販売注文の状態列のマッピングを設定する
 
@@ -100,7 +100,7 @@ Sales では、2 つの列が注文の状態を示します。 マップする�
 1. ブラウザーで `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations` に移動します。 **\<test-name\>** を会社の Sales リンクに置き換えます。
 2. 開いたページで、**organizationid** を検索し、値をメモします。
 
-    ![organizationid の検索](media/sales-map-orgid.png)
+    ![organizationid の検索。](media/sales-map-orgid.png)
 
 3. Sales では、ブラウザー コンソールを開き、次のスクリプトを実行します。 手順 2 の **organizationid** 値を使用します。
 
@@ -119,33 +119,33 @@ Sales では、2 つの列が注文の状態を示します。 マップする�
     );
     ```
 
-    ![ブラウザー コンソールの JavaScript コード](media/sales-map-script.png)
+    ![ブラウザー コンソールの JavaScript コード。](media/sales-map-script.png)
 
 4. **IsSOPIntegrationEnabled** が **true** に設定されていることを確認します。 手順 1 の URL を使用して、値を確認します。
 
-    ![IsSOPIntegrationEnabled を true に設定](media/sales-map-integration-enabled.png)
+    ![IsSOPIntegrationEnabled を true に設定。](media/sales-map-integration-enabled.png)
 
 **isIntegrationUser** 属性を有効にするには、次の手順を実行します。
 
 1. Sales では **設定 \> カスタマイズ \> システムのカスタマイズ** に移動し、**ユーザー テーブル** を選択して、**フォーム \> ユーザー** を開きます。
 
-    ![ユーザー フォームを開く](media/sales-map-user.png)
+    ![ユーザー フォームを開く。](media/sales-map-user.png)
 
 2. フィールド エクスプローラーで **統合ユーザーモード** を検索し、それをダブルクリックして、フォームに追加します。 変更を保存します。
 
-    ![統合ユーザーモード列のフォームへの追加](media/sales-map-field-explorer.png)
+    ![統合ユーザーモード列のフォームへの追加。](media/sales-map-field-explorer.png)
 
 3. Sales では、**設定 \> セキュリティ \> ユーザー** に移動し、表示を **有効なユーザー** から **アプリケーション ユーザー** に変更します。
 
-    ![表示を有効なユーザーからアプリケーション ユーザーに変更](media/sales-map-enabled-users.png)
+    ![表示を有効なユーザーからアプリケーション ユーザーに変更。](media/sales-map-enabled-users.png)
 
 4. **DualWrite IntegrationUser** の 2 つのエントリを選択します。
 
-    ![アプリケーション ユーザーの一覧](media/sales-map-user-mode.png)
+    ![アプリケーション ユーザーの一覧。](media/sales-map-user-mode.png)
 
 5. **統合ユーザー モード** 列の値を **はい** に変更します。
 
-    ![統合ユーザー モード列の値の変更](media/sales-map-user-mode-yes.png)
+    ![統合ユーザー モード列の値の変更。](media/sales-map-user-mode-yes.png)
 
 これで、販売注文がマップされました。
 

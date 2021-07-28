@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9430bc1386f127d02b598d6cad1b53f66e0cf2ba
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 12ba639ccf670997d4f16325172aa351732a5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023375"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348912"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>TDS 税タイプに対する源泉徴収税精算期間の設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "6023375"
 
 1. **税 \> 間接税 \> 源泉徴収税 \> 源泉徴収税決済期間** の順に移動します。
 
-    [![源泉徴収税の決済期間ページ](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
+    [![源泉徴収税の背取るメント期間ページ。](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. **税タイプ** フィールドで、**TDS** を選択して、TDS 税タイプの源泉徴収税決済期間を設定します。
 3. **新規** を選択して、明細行を作成します。
@@ -47,6 +47,6 @@ ms.locfileid: "6023375"
     > [!NOTE]
     > 定期的な TDS 決済プロセスを実行するには、**一般会計 \> 定期 \> 源泉徴収税 \> 源泉徴収税の支払** に移動します。
 
-    [![源泉徴収税支払のページ](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
+    [![源泉徴収税支払のページ。](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
 12. ページを閉じます。

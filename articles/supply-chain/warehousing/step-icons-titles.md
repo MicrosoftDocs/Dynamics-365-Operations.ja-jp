@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049367"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344498"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのステップ アイコンとタイトルの割り当て
 
@@ -25,7 +25,7 @@ ms.locfileid: "6049367"
 
 次の図は、Warehouse Management モバイル アプリにステップ アイコンとタイトルがどのように表示されるかを示しています。
 
-![Warehouse Management モバイル アプリのステップ アイコンとステップ タイトルの例](media/step-icon-example.png "Warehouse Management モバイル アプリのステップ アイコンとステップ タイトルの例")
+![Warehouse Management モバイル アプリのステップ アイコンとステップ タイトルの例。](media/step-icon-example.png "Warehouse Management モバイル アプリのステップ アイコンとステップ タイトルの例")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>システムでこの機能を有効にする
 
@@ -350,13 +350,13 @@ ms.locfileid: "6049367"
 
 次の図は、このタスク フローを示します。
 
-![タスク フロー図](media/step-icons-example-task-flow.png "タスク フロー図")
+![タスク フロー図。](media/step-icons-example-task-flow.png "タスク フロー図")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>コンテナー入力ページ用のステップ クラスの作成
 
 コンテナー入力ページでは、作業者がコンテナー ID をスキャンまたは入力できます。
 
-![コンテナー入力ページ](media/step-icons-example-container-input.png "コンテナー入力ページ")
+![コンテナー入力ページ。](media/step-icons-example-container-input.png "コンテナー入力ページ")
 
 コンテナー入力ページでは、入力フィールドのコントロール名は `ContainerId` です。 このコントロール名は [ステップ ID の一覧](#step-ids-classes) にないため、このコントロール名に基づく既存のステップは見つかりません。 したがって、ステップを表すステップ クラスを作成する必要があります。 次に例を示します。
 
@@ -382,7 +382,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 重量入力ページでは、作業者が重量を入力できます。
 
-![重量入力ページ](media/step-icons-example-weight-input.png "重量入力ページ")
+![重量入力ページ。](media/step-icons-example-weight-input.png "重量入力ページ")
 
 重量入力ページでは、入力フィールドのコントロール名は [ステップ ID の一覧](#step-ids-classes) にある `Weight` です。 したがって、`WHSMobileAppStepWeight` クラスで定義されているステップ アイコンとタイトルが適切であれば、このステップで何も変更する必要はありません。
 

@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: c3da7474f9a61e97ee11688a18cb91a5ad1ccb5c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e2369b17244525023541cdbd0a0da3f2a2a09b30
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791168"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355455"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>顧客集荷の時間帯の作成と更新
 
@@ -34,7 +34,7 @@ ms.locfileid: "5791168"
 
 次の図は、電子商取引のチェックアウト時に選択される時間帯の例を示しています。
 
-![電子商取引のチェックアウト時の時間帯の選択例](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![電子商取引のチェックアウト時の時間帯の選択例。](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>時間帯のプロパティ
 
@@ -60,7 +60,7 @@ ms.locfileid: "5791168"
 - **有効日** – 集荷時間帯が有効な曜日を指定します。 このプロパティを使用すると、集荷注文をサポートする必要がある日を小売業者が定義できます。
 - **小売チャネル** – 小売チャネルを指定します。 各時間帯は、1 つ以上の小売ストアに関連付けることができます。 各ストアの工程時間に応じて、1 つ以上の時間帯エントリを作成し、チャネルに関連付けることができます。 
 
-<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 チャネルごとに 1 つの時間帯テンプレートのみをコンフィギュレーションできます。 これらチャネルには、従来型の店舗、コール センター、モバイル デバイス、および電子商取引サイトが含まれます。
 
@@ -85,14 +85,14 @@ Commerce 本社の時間帯機能を構成するには、次の手順に従い�
     > [!NOTE]
     > 複数のテンプレートを作成できますが、1 つのチャネルまたはストアに関連付けることができるテンプレートは 1 つだけです。
 
-    ![注文の集荷 - 時間設定ダイアログ ボックス](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![注文の集荷 - 時間設定ダイアログ ボックス。](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. 完了したら、**OK** を選択します。
 1. 1 日の時間帯が異なる場合は、**注文の集荷 - 時間の設定** クイック タブで追加のエントリを作成して、日付と時刻が重複しないようにします。
 1. **小売チャネル** クイック タブで **追加** を選択し、使用するストアまたはチャネルに時間帯テンプレートを関連付けます。
 1. **組織ノードの選択** ダイアログ ボックスで、矢印ボタンを使用してテンプレートが関連付けられているストア、地域、および組織を選択 (または選択を解除) します。
 
-    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. 完了したら、**OK** を選択します。
 1. **配送スケジュール** ページで、**1070** および **1135** ジョブを実行してチャネル データベースにデータを同期します。
@@ -103,7 +103,7 @@ POS で注文または注文明細行が集荷に対して識別されると、�
 
 次の図は、POS 注文で選択された時間帯の例を示しています。
 
-![POS 注文の時間帯の選択例](../dev-itpro/media/Curbside_timeslot_POS.png)
+![POS 注文の時間帯の選択例。](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>電子商取引注文の時間帯の選択
 
@@ -114,13 +114,13 @@ POS で注文または注文明細行が集荷に対して識別されると、�
 
 次の図は、集荷時間帯が選択されている電子商取引の注文の例を示しています。
 
-![集荷時間帯が選択されている e コマース注文の例](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![集荷時間帯が選択されている e コマース注文の例。](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>コールセンター注文の時間帯の選択
 
 コール センター アプリでは、コール センターの担当者が、次の図で強調表示されている集荷店舗または場所、および日付とタイム スロットを選択できます。
 
-![集荷時間帯が選択されているコールセンター注文の例](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![集荷時間帯が選択されているコールセンター注文の例。](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

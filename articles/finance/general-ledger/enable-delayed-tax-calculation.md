@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: acf5ead6ed90d4dbb41de08520cde8085a7f3935
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c58a5bfbc140eb770415a96d1d9c5748e3e2d132
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823719"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350027"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>仕訳帳の税金計算遅延の有効化
 [!include [banner](../includes/banner.md)]
@@ -45,14 +45,14 @@ ms.locfileid: "5823719"
 1. **一般会計 \> 元帳の設定 \> 一般会計パラメーター** の順に移動します。
 2. **消費税** タブの **全般** クイック タブで、**税金計算遅延** オプションを **はい** に設定します。
 
-![一般会計パラメーターの画像](media/delayed-tax-calculation-gl.png)
+![一般会計パラメーターの画像。](media/delayed-tax-calculation-gl.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>仕訳帳名レベルでの税金計算遅延の有効化
 
 1. **一般会計 \> 仕訳帳の設定 \> 仕訳帳名** の順に移動します。
 2. **消費税** セクションの **全般** クイック タブで、**税金計算遅延** オプションを **はい** に設定します。
 
-![仕訳帳名の画像](media/delayed-tax-calculation-journal-name.png)
+![仕訳帳名の画像。](media/delayed-tax-calculation-journal-name.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>仕訳帳ヘッダー レベルでの税金計算遅延の有効化
 
@@ -61,7 +61,7 @@ ms.locfileid: "5823719"
 3. 仕訳帳名を選択します。
 4. **設定** タブで、**税金計算遅延** オプションを **はい** に設定します。
 
-![一般仕訳帳ページの画像](media/delayed-tax-calculation-journal-header.png)
+![一般仕訳帳ページの画像。](media/delayed-tax-calculation-journal-header.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

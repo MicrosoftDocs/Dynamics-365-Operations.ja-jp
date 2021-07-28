@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 1c8a6b4152215bc912d99f2f4c250defa75278c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189947"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356930"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>引き取りかんばんを使用した補充
 
@@ -35,7 +35,7 @@ ms.locfileid: "6189947"
 
 次のシナリオでは、プル信号が生産プロセスの材料補充を行うかんばんの作成をトリガーする、プル ベース補充システムを示します。 
 
-[![プル信号が生産プロセスの材料補充を行うかんばんの作成をトリガーします](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![プル信号が生産プロセスの材料補充を行うかんばんの作成をトリガーします。](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  引き取りかんばん
 2.  「開始」場所と倉庫作業用のプット場所のかんばん
@@ -72,7 +72,7 @@ ms.locfileid: "6189947"
 
 次のシナリオでは、引き取りかんばんの転送活動は同じ倉庫内の 2 つの場所の間で転送するように構成されています。 引き取りかんばんの転送活動は、自動的に完了すように設定されます。 
 
-[![かんばんピッキング作業が処理されると、転送活動は自動的に完了します](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![かんばんピッキング作業が処理されると、転送活動は自動的に完了します。](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  原材料と生産の倉庫を共有
 2.  原材料の倉庫の場所

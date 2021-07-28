@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ccc2cbf11e405facf310d93e5458cfe12a43146d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c75525749d9015387cc112beda104238a93698e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020222"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346695"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Microsoft Teams に既存のチームがある場合は、店舗とチームをマッピングします
 
@@ -57,7 +57,7 @@ Commerce 本部で店舗と対応するチームをマッピングするには�
 
 次のイメージ例では、Commerce の **チームのマッピングのエクスポート** グループで、**エンティティの追加** 要素とエクスポートされた CSV ファイルのヘッダーが強調表示されています。
 
-![Commerce の チームのマッピングのエクスポート グループで、エンティティの追加 要素とエクスポートされた CSV ファイルのヘッダーが強調表示されています](media/d365-commerce-data-mgmt-export-entity.png)
+![Commerce の チームのマッピングのエクスポート グループで、エンティティの追加 要素とエクスポートされた CSV ファイルのヘッダーが強調表示されている。](media/d365-commerce-data-mgmt-export-entity.png)
 
 > [!NOTE]
 > 上記手順の完了後は、[Microsoft Teams と POS 間のタスク管理を同期する](synchronize-tasks-teams-pos.md) に記載の手順に従い、タスク管理を同期します。 

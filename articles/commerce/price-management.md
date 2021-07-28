@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85f6188bff4d3535369e4af145f8f55a3263c4a3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794166"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352231"
 ---
 # <a name="retail-sales-price-management"></a>Retail 販売価格の管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "5794166"
 
 次の図では、価格グループを使用する方法を示します。 この図では、「価格グループ」が文字どおりに価格決定および割引管理の中心であることに注目してください。 価格および割引の差異を管理するのに使用する Commerce エンティティは左側に、実際の価格および割引レコードは右側になります。
 
-![価格グループ](./media/PriceGroups.png "価格グループ")
+![価格グループ。](./media/PriceGroups.png "価格グループ")
 
 価格グループを作成するときに、Commerce エンティティの複数のタイプ用に単一の価格グループを使用するべきではありません。 それ以外の場合、なぜ特定の価格または割引がトランザクションに適用されるかを特定することは難しくなります。
 

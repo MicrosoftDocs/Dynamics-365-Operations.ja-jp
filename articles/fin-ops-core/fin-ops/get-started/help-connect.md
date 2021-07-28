@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745692"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343937"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations アプリのヘルプ エクスペリエンスを構成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "5745692"
 
 Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365](/dynamics365/) サイトにて公開されている概要やその他のトピックが含まれています。 このコンテンツには、製品内の **ヘルプ** ウィンドウからアクセスできます。 次の図は、ヘルプ システムの一部を示します。
 
-[![ヘルプ アーキテクチャ](./media/help-architecture.png)](./media/help-architecture.png)
+[![ヘルプ アーキテクチャ。](./media/help-architecture.png)](./media/help-architecture.png)
 
 製品内のヘルプ システムでは、docs.microsoft.com やその他の接続 web サイトから記事を取得しています。 また、Microsoft Dynamics Lifecycle Services (LCS) 内の業務プロセス (BPM) にて保管されているタスクガイドも取得しています。
 
@@ -47,14 +47,14 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 > - ヘルプを構成するには、アプリを導入しているテナントと同じアカウントを使用してサイン インする必要があります。
 > - ローカル仮想ハード ドライブ (VHD) で実行されているアプリのインスタンスからは、LCS ライブラリに接続することはできません。
 
-[![システム パラメーター フォームとヘルプ設定](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![システム パラメーター フォームとヘルプ設定。](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 ソリューションの作業ガイドを構成するには、**システム パラメーター** のページで次の手順を実行 します。
 
 > [!IMPORTANT]
 > 初めて **ヘルプ** タブを開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクを選択し、接続されるまで待機します。ダイアログ ボックスを閉じ、**OK** を選択して **システム パラメーター** ページを取得します。
 >
-> [![LCS に接続](./media/connect-to-lcs-crop-1024x365.png "LCS に接続")](./media/connect-to-lcs-crop.png)
+> [![LCS への接続](./media/connect-to-lcs-crop-1024x365.png "LCS への接続。"](./media/connect-to-lcs-crop.png)
 
 1. 接続する Lifecycle Services プロジェクトを選択します。
 2. タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。

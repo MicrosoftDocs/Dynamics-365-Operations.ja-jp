@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5be19949e9d1dbc43fdd3e6def119effa50a34d0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1d6813a642aefa59e20a7c77ddcf53ce7d3625eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018413"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347347"
 ---
 # <a name="payment-type-must-be-credit-card-error-on-the-sales-order-page"></a>販売注文ページで、"支払タイプが、クレジット カード" エラーである必要があります
 
@@ -32,9 +32,9 @@ ms.locfileid: "6018413"
 
 注文を同期した後に販売注文ページを開くと、"クレジット カード番号が指定されているので、支払タイプはクレジット カードである必要があります。" というエラー メッセージが表示されます
 
-![支払タイプはクレジット カード エラーである必要があります](media/payment-type-must-be-credit-card.jpg)
+![支払タイプはクレジット カードである必要がありますというエラー。](media/payment-type-must-be-credit-card.jpg)
 
-## <a name="resolution"></a>解像度
+## <a name="resolution"></a>解決策
 
 ### <a name="set-the-payment-type-in-commerce-headquarters"></a>Commerce 本社での支払タイプの設定
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ce01ef1d4b916d955685b4d01dafd3d54d6fcebd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: baf6064fbddc3b49cfb0d950896c0b448bddb560
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795408"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357789"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>"同じような説明を探す" 推奨事項の有効化
 
@@ -79,7 +79,7 @@ Commerce サイト ビルダーを使用することで、**類似した説明�
 
 次の図は、サイト ビルダーの PDP 例上の **類似した説明を探すリンク** チェック ボックスと **類似した説明を探す** ボタンを示しています。
 
-![サイト ビルダーの PDP 上で、[類似した説明を探すリンク] チェック ボックスと [類似した説明を探す] ボタンを有効化します](./media/ter_site_builder_buybox_button.png)
+![サイト ビルダーの PDP 上で、類似した説明を探すリンク チェック ボックスと類似した説明を探すボタンを有効化します。](./media/ter_site_builder_buybox_button.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 09c7504eda0d389738b9d13b73f33472dc8f5fe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d4aaa40ee0128a281fe76072e021774a52c9a9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804482"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352327"
 ---
 # <a name="payment-module"></a>支払モジュール
 
@@ -46,7 +46,7 @@ Adyen 支払いコネクタは強力な顧客認証 (SCA) もサポートしま�
 
 次の図は、チェックアウト ページのギフト カード、ロイヤルティ ポイント、Adyen 支払モジュールの例を示しています。
 
-![チェックアウト ページのギフト カード、ロイヤルティ ポイント、Adyen 支払モジュールの例](./media/ecommerce-payments.PNG)
+![チェックアウト ページのギフト カード、ロイヤルティ ポイント、Adyen 支払モジュールの例。](./media/ecommerce-payments.PNG)
 
 ## <a name="dynamics-365-payment-connector-for-paypal"></a>PayPal 向け Dynamics 365 Payment Connector
 
@@ -59,10 +59,10 @@ PayPal 支払コネクタを使用するように支払モジュールがコン�
 PayPal 支払コネクタは、すべての請求書関連情報が、その iFrame 内の PayPal によって処理されるため、請求先住所のモジュールを必要としません。 ただし、送付先住所と配送オプションの各モジュールが必要です。
 
 次の図は、チェックアウト ページにある 2 つの支払モジュール (Adyen コネクタと PayPal 支払コネクタで構成された支払方法の例) を示しています。
-![チェックアウト ページのAdyen 支払モジュールと PayPal モジュールの例](./media/ecommerce-paypal.png)
+![チェックアウト ページのAdyen 支払モジュールと PayPal モジュールの例。](./media/ecommerce-paypal.png)
 
 次の図は、PayPal ボタンを使用して起動された PayPal iFrame の例を示しています。 
-![チェックアウト ページの Paypal iFrame の例](./media/ecommerce-paypal-iframe.png)
+![チェックアウト ページの Paypal iFrame の例。](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>支払モジュールのプロパティ
 
@@ -76,7 +76,7 @@ PayPal 支払コネクタは、すべての請求書関連情報が、その iFr
 |基本支払|  **True** または **False** | **True** の場合、すべてのエラー メッセージは、チェックアウト ページの基本支払コネクタから生成されます。 Adyen と PayPal の両方の支払コネクタがコンフィギュレーションされている場合は、Commerce リリース 10.0.14 で追加された Adyen を **True** に設定します。|
 
 次の図は、Commerce 本社の支払コネクタのコンフィギュレーションで "PayPal" に設定されている、**サポートされている支払/入金タイプ** の値の例を示しています。
-![Commerce 本社でサポートされている支払/入金タイプの例](./media/ecommerce-paymenttendertypes.png)
+![Commerce 本社でサポートされている支払/入金タイプの例。](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>請求先住所
 

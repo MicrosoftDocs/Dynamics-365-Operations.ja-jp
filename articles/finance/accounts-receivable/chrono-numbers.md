@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1bddb76d17b65e3485680675b77750fca714407d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838864"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350075"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>ドキュメントや伝票に時系列に採番する
 
@@ -69,7 +69,7 @@ ms.locfileid: "5838864"
 
 番号順序ごとに会社を指定します。 番号順序の区分は、期間の時系列順を示すように定義する必要があります。 たとえば、区分名に特定の期間を識別する特別な接頭語を含めることができます。
 
-![番号順序の設定](media/chrono-num-sequence.jpg)
+![番号順序の設定。](media/chrono-num-sequence.jpg)
 
 ### <a name="configure-number-sequence-groups"></a>番号順序のグループを構成する
 
@@ -77,7 +77,7 @@ ms.locfileid: "5838864"
 
 それぞれのグループの **参照** セクションで、サポートされているドキュメント参照のいずれかを選択し、**番号順序コード** フィールドで、関連する期間に対して以前に作成された番号順序を参照します。
 
-![番号順序グループの設定](media/chrono-num-sequence-group.jpg)
+![番号順序グループの設定。](media/chrono-num-sequence-group.jpg)
 
 同様に、**売掛金** と **プロジェクト管理と会計** モジュールで、番号順序グループを構成します。
 
@@ -85,7 +85,7 @@ ms.locfileid: "5838864"
 
 番号順序グループの時系列を構成するには、**組織管理** > **番号順序** > **時系列番号順序グループ** に移動します。 番号順序グループに使用する適用条件を定義します。
 
-![時系列番号の設定](media/chrono-num-sequence-group-period.jpg)
+![時系列番号の設定。](media/chrono-num-sequence-group-period.jpg)
 
 | フィールド            | 説明                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -98,7 +98,7 @@ ms.locfileid: "5838864"
 ## <a name="document-posting"></a>ドキュメントの転記
 ドキュメントを転記すると、ドキュメントを転記した日に基づいて適切な番号順序グループがドキュメントに割り当てられ、検出された番号順序に基づいてドキュメント番号を生成します。 番号順序グループの割り当てに関するメッセージが表示されます。
 
-![ドキュメント番号](media/chrono-num-sequence-fti.jpg)
+![文書番号。](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
 > 一部の国では、ドキュメントの番号付けに対して既に特定のロジックが実装されています。 この場合、国固有のロジックは、**時系列番号付け** 機能よりも優先されます。

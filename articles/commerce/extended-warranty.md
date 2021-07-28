@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 567f102cfe78a92e2e6f1243fb531dd3366c9bf2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 699c285ba0f92df4ccc05790b813ff423c01b62a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792466"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353831"
 ---
 # <a name="create-and-configure-extended-warranties"></a>延長保証の作成と構成
 
@@ -81,7 +81,7 @@ Commerce で保証品目を作成するには、次の手順を実行します�
 
     たとえば、2 年保証の場合、**時間の単位** フィールドを **年** に、**時間の長さ** フィールドを **2** に設定します。 または、次の図に示すように、**時間の単位** フィールドを **月** に、**時間の長さ** フィールドを **24** に設定します。
 
-    ![保証品目の製品詳細ページ](./media/ew-time-properties.png)
+    ![保証品目の製品詳細ページ。](./media/ew-time-properties.png)
 
 1. **保存** を選択して、保証品目を保存します。
 1. 保証製品を販売できるように会社にリリースします。 詳細については、[小売製品の設定](set-up-retail-products.md) を参照してください。
@@ -94,7 +94,7 @@ Commerce で保証品目を作成するには、次の手順を実行します�
 
     たとえば、次の図は、**価格範囲の基準** フィールドが **基準価格** に設定され、**下限** フィールドが $500、**上限** フィールドが $1000 に設定されている場合を示しています。
     
-    ![保証品目のリリース済製品詳細ページ](./media/ew-release-product-details.png)
+    ![保証品目のリリース済製品詳細ページ。](./media/ew-release-product-details.png)
 
 1. 保証品目を販売するチャネルに分類します。 詳細については、[品揃えの設定](set-up-assortments.md) 参照してください。
 
@@ -161,11 +161,11 @@ Commerce で保証グループを設定するには、次の手順を実行し�
 
 次の図は、現在購入している保証対象品目に保証品目を追加するプロンプトが表示された POS 端末ページの例を示しています。
 
-![現在の購入に保証品目を追加するプロンプトの例](./media/ew-sell-warranty.png)
+![現在の購入に保証品目を追加するプロンプトの例。](./media/ew-sell-warranty.png)
 
 次の図は、以前に販売した保証対象品目に保証品目を追加する機能の例を示しています。
 
-![以前に販売した保証対象品目に保証品目を追加する機能の例](./media/ew-add-warranty-existing.png)
+![以前に販売した保証対象品目に保証品目を追加する機能の例。](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>プロセス保証トランザクション
 
