@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52baa707c36f3468263782dc8ec735e44af88e38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 422b1f7f8dc99e1c96da9e266cadcdc09e7aac71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804236"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347469"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>明細書を転記するジョブの構成および実行
 
@@ -31,9 +31,9 @@ ms.locfileid: "5804236"
 2. 明細書のバッチ転記をクリックします。
     * 組織階層を選択し、次に組織ノード ツリーで、個々の店舗またはノードを選択します。 店舗グループのバッチ ジョブを作成する場合は、ノードを選択します。  
     * 選択した項目を追加するには、矢印をクリックします。  
-3. バックグラウンド タブで実行をクリックします。![バックグラウンドで実行](../dev-itpro/media/runbackground.png "バックグラウンドで実行") 
+3. バックグラウンド タブで実行をクリックします。![バックグラウンドで実行。](../dev-itpro/media/runbackground.png "バックグラウンドで実行") 
 4. [バッチ処理] チェック ボックスをオンまたはオフにします。
-![バッチ処理](../dev-itpro/media/batchprocessing.png "バッチ処理 & 再実行") 
+![バッチ処理。](../dev-itpro/media/batchprocessing.png "バッチ処理 & 再実行") 
 5. [再実行] をクリックします。
 6. [開始日] フィールドに日付を入力します。
 7. [開始時刻] フィールドに時刻を入力します。

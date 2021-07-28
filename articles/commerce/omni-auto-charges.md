@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022710"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353063"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>オムニ チャネルの高度な自動請求
 
@@ -43,7 +43,7 @@ Retail バージョン 10.0 より前のリリースでは、[自動請求](/dyn
 
 **Retail および Commerce\> Headquarters 設定 \> パラメーター \> Commerce パラメーター** ページで、**顧客注文** タブに移動します。**請求金額** クイック タブで、**高度な自動請求を使用する** を **はい** に設定します。
 
-![高度な自動請求パラメーター](media/advancedchargesparameter.png)
+![高度な自動請求パラメーター。](media/advancedchargesparameter.png)
 
 高度な自動請求を有効にすると、すべて出荷または選択された出荷の顧客注文を作成する時に、ユーザーは POS 端末で手動で出荷費用を入力するよう求められることはなくなります。 POS 注文諸費用は体系的に計算され、POS トランザクションに追加されます (作成する注文の条件に一致する自動請求テーブルが見つかる場合)。 ユーザーは、POS 画面レイアウトに追加できる新規に追加されたPOS操作を使用して、ヘッダーまたは明細行レベルの請求を手動で追加または維持することもできます。
 
@@ -86,7 +86,7 @@ POS アプリケーション環境で高度な自動請求が正しく機能す�
 
 陸送便の料金については、**自動請求** ページの明細行セクションで、.01 ドル と 100 ドルの間の注文に対して適用されるであろう料金を 10.00 ドルとして定義してください。 100.01 ドル以上の注文には費用がかからないことを示すために別の請求金額の明細行を作成します。
 
-![自動請求テーブルの 2 つの例](media/headerchargesexample.png)
+![自動請求テーブルの 2 つの例。](media/headerchargesexample.png)
 
 航空便の料金については、自動請求フォームの明細行セクションで、すべての注文 (0.01 ドルから 9,999,999 ドルの間) に適用される 20.00 ドルの費用を定義します。
 
@@ -116,7 +116,7 @@ POS および E コマースのシナリオでは、これらの注文に明確�
 
 **レベル** ドロップダウン メニューを **明細行** に設定し、すべての顧客および設定料金が請求される特定の製品または製品グループに対して、新しい自動請求レコードを作成します。
 
-![1 つの明細行レベルの自動請求テーブルの例](media/linechargesexample.png)
+![1 つの明細行レベルの自動請求テーブルの例。](media/linechargesexample.png)
 
 **1040 配送スケジュール** ジョブを実行して、POS がそれらを利用できるように Commerce Scale Unit/Channel DB に請求金額を送信します。
 
@@ -136,7 +136,7 @@ POS および E コマースのシナリオでは、これらの注文に明確�
 
 **売掛金\>諸費用の設定\>請求金額** に移動して、このシナリオで使用される請求コードが正しく設定されていることを確認してください。
 
-![請求の例](media/chargesexample.png)
+![請求の例。](media/chargesexample.png)
 
 配送関係の割引やプロモーションの目的で、請求金額を「配送」関係のものとみなす場合は、請求コードの **出荷費用** を **はい** に設定します。 この請求金額が POS アプリケーションでの返品トランザクションの処理中に体系的に払い戻されることも許可されている場合は、**払戻可能** を **はい** に設定します。 **払戻可能** フラグは、**高度な自動請求を使用する** のパラメーターが **はい** に設定されている場合にのみ適用されます。
 

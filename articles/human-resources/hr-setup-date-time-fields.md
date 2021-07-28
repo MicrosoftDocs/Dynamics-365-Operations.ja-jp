@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e5726f7e4beea1584b9a8e142212531ba1db56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e87781762112955902d8a5807092a842f53f6af
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051740"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356563"
 ---
 # <a name="understand-date-and-time-fields"></a>日付と時刻のフィールドの理解
 
@@ -36,13 +36,13 @@ ms.locfileid: "6051740"
 
 **日付と時刻** フィールドにデータを表示する場合、**ユーザー オプション** フォームで設定されたユーザーのタイム ゾーンに基づいて、Human Resources によって日付と時刻が調整されます (**共通 > 設定 > ユーザー オプション**)。 フィールドに入力した日付と時刻の情報は、データベースに書き込まれた情報とは異なる場合があります。
 
-[![ユーザー オプション フォーム](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![ユーザー オプション フォーム。](./media/useroptionsform.png)](./media/useroptionsform.png)
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>フォームの日付と時刻のフィールドを理解する 
 
 ユーザーのタイムゾーンが協定世界時 (UTC) に設定されていない場合、画面に表示される **日付と時刻** データはデータベースに保存されているデータとは異なります。 **日付と時刻** フィールドのデータは、常に UTC として保存されます。
 
-[![作業者フォーム UTC](./media/worker-form.png)](./media/worker-form.png)
+[![作業者フォーム UTC。](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>データベースの日付と時刻のフィールドを理解する 
 
@@ -52,7 +52,7 @@ Human Resources が **日付と時刻** の値をデータベースに書き込�
   
 次の例では、従業員 000724 の雇用が、タイム ゾーンに関係なく同時に有効になります。 従業員は GMT タイム ゾーンの 04/30/2019 で有効になり、GMT + 12:00 タイムゾーンの 05/01/2019 と同じになります。 どちらも、特定の日付ではなく、同じ特定時点を参照します。 
 
-[![作業者フォーム GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![作業者フォーム GMT。](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>データ管理フレームワーク、Excel、Dataverse、および Power BI における日付と時刻のデータ 
 
@@ -68,27 +68,27 @@ DMF などの外部ソースを使用してデータを表示または作成す�
 
 **UTC に設定されているユーザー タイム ゾーンのある Human Resources**
 
-[![ワーカーのフォームを UTC に設定](./media/worker-form3.png)](./media/worker-form3.png)
+[![作業者フォームを UTC に設定。](./media/worker-form3.png)](./media/worker-form3.png)
 
 **GMT +12:00 に設定されているユーザー タイム ゾーンのある Human Resources** 
 
-[![ワーカーのフォームを GMT に設定](./media/worker-form4.png)](./media/worker-form4.png)
+[![作業者フォームを GMT に設定。](./media/worker-form4.png)](./media/worker-form4.png)
 
 **OData を介した Excel**
 
-[![OData を介した Excel](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![OData を介した Excel。](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **DMF ステージング**
 
-[![DMF ステージング](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![DMF ステージング。](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **DMF エクスポート**
 
-[![DMF エクスポート](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF エクスポート。](./media/DMFexport.png)](./media/DMFexport.png)
 
 **Dataverse を介した Excel**
 
-[![Dataverse を介した Excel](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Dataverse を介した Excel。](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>参照
 

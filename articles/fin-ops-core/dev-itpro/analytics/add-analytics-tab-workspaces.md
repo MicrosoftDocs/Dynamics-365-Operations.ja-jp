@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e82c9a5ff4b6d7db1a808e5a94206628cdf0930
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14c8c36b90caa3a9378a739932d734b94985b46c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754601"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354448"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Power BI Embedded を使用したワークスペースへの分析の追加
 
@@ -54,7 +54,7 @@ ms.locfileid: "5754601"
 3. **新しい項目の追加** ダイアログ ボックスの **工程コンポーネント** で **リソース** テンプレートを選択します。
 4. X++ メタデータのレポートを参照するために使用する名前を入力し、**追加** をクリックします。
 
-    ![[新しい項目の追加] ダイアログ ボックスの追加](media/analytical-workspace-add.png)
+    ![[新しい項目] の追加ダイアログ ボックスを追加します。](media/analytical-workspace-add.png)
 
 5. 分析のレポートの定義を含む .pbix ファイルを見つけて、**未処理** をクリックします。
 
@@ -67,7 +67,7 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 
 次の図は、**FMClerkWorkspace** フォームが Microsoft Visual Studio のデザイナーにどのように表示されるかを示しています。
 
-![変更する前の FMClerkWorkspace フォーム](media/analytical-workspace-definition-before.png)
+![変更する前の FMClerkWorkspace フォーム。](media/analytical-workspace-definition-before.png)
 
 次の手順に従って、**引当管理** ワークスペースの定義を拡張します。
 
@@ -92,7 +92,7 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 
 次の図は、これらの変更が適用された後に設計がどのように表示されるかを示します。
 
-![変更後の FMClerkWorkspace](media/analytical-workspace-definition-after.png)
+![変更後の FMClerkWorkspace。](media/analytical-workspace-definition-after.png)
 
 ワークスペース レポートの埋め込みに使用するフォーム コントロールを追加したため、親コントロールのサイズがレイアウトに対応できるように、それを定義する必要があります。 既定では、**フィルタ ウィンドウ** ページと **タブ** ページの両方がレポートに表示されます。 ただし、これらのコントロールの表示/非表示を、レポートの対象となる消費者の必要に応じて変更することができます。
 
@@ -142,7 +142,7 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 
 これで、埋め込みレポート ビューアー コントロールを初期化するビジネス ロジックを追加するタスクを完了しました。 次の図は、これらの変更が適用された後にワークスペースがどのように表示されるかを示します。
 
-![ワークスペースに埋め込まれているレポート](media/analytical-workspace-final.png)
+![ワークスペースに埋め込まれているレポート。](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > 既存の操作ビューは、ページのタイトルの下のワークスペース タブを使用してアクセスできます。

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 42280c811e1f4ed5d33c66f5a8634417a61be905
-ms.sourcegitcommit: f9b145ef4a81cec81f420871b4130b05db4f4500
+ms.openlocfilehash: 79eb7d750869ef365ad117ecc024afc8db2edbf7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301332"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348832"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>倉庫プロセスに対する品質管理
 
@@ -43,7 +43,7 @@ _倉庫プロセスの品質管理_ 機能は、入庫プロセスの一部と�
 
 _倉庫プロセスの品質管理_ 機能がオンになっている場合は、主要な倉庫管理および品質管理エンティティの設定が変更されます。 次の図は、倉庫プロセスの品質指示を有効にするエンティティの概要を示しています。 かっこ内のテキストは、_倉庫管理プロセスの品質管理_ 機能がオンになる前に品質管理が適用された場合の、推奨されるアクションを示します。
 
-![品質管理エンティティ](media/quality-management-entity-diagram.png "品質管理エンティティ")
+![品質管理エンティティ。](media/quality-management-entity-diagram.png "品質管理エンティティ")
 
 ## <a name="enablers-the-quality-item-sampling-and-quality-order-work-order-types"></a>イネーブラー: 品質の品目サンプリングと品質指示の作業指示書タイプ
 

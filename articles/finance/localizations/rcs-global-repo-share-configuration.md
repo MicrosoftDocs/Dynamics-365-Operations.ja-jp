@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ace62319bbfa38bcf4be7157882dd0c8989e25bc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 530cb77ccbca1b6946b5a96cee4e6226ed3467e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838748"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361261"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Microsoft Regulatory Configuration Service (RCS) のグローバル レポジトリの電子レポート (ER) の構成を外部組織と共有する
 
@@ -47,7 +47,7 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 
 1. **電子レポート** ワークスペースで、超す営プロバイダーの **リポジトリ** を選択します。
 
-    ![コンフィギュレーション プロバイダー](media/1_RCS_Repo_for_config_provider.JPG)
+    ![コンフィギュレーション提供者。](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. **グローバル リポジトリ** \>**開く** を選択します。
 3. 共有する構成を検索します。 フィルターのフィールドを使用して検索を絞り込むことができます。 グローバル リポジトリに構成が見つからない場合は、[新しいバージョンの電子レポート (ER) 構成の作成とアップロード](rcs-global-repo-upload.md)に記載の手順に従ってください。
@@ -61,11 +61,11 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 3. 共有する構成を選択します。
 4. **共有** クイック タブで、**組織** を選択します。
 
-    ![クイック タブで共有する](media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![クイック タブで共有する。](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. ダイアログ ボックスで、外部組織のドメイン名を入力し、**OK** を選択し ます。
 
-    ![外部組織との構成バージョンを共有するダイアログボックス](media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![外部組織との構成バージョンを共有するダイアログ ボックス。](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 構成が外部組織と共有され、その組織ではグローバルリポジトリで利用できるようになります。 そこから RCS の組織のインスタンスにインポートをする、または組織の Finance and Operations アプリのインスタンスにインポートすることができます。
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103171"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359790"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
@@ -30,7 +30,7 @@ ms.locfileid: "6103171"
 
 次の図は、倉庫に到着したときに発注書数量がある入庫積荷を処理するための一般的なフローを示しています。
 
-![入庫積荷の処理プロセス](media/inbound-process.png "入庫積荷の処理プロセス")
+![入庫積荷の処理プロセス。](media/inbound-process.png "入庫積荷の処理プロセス")
 
 1. **仕入先が発注書を確定します。**
 
@@ -293,7 +293,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
     その他のすべての設定は、既定値のままにすることができます。
 
-    ![モバイル デバイス メニュー項目の設定](media/inbound-mobile-menu-items.png "モバイル デバイス メニュー項目の設定")
+    ![モバイル デバイス メニュー項目の設定。](media/inbound-mobile-menu-items.png "モバイル デバイス メニュー項目の設定")
 
     モバイル デバイス メニュー項目の設定方法の詳細については、[倉庫作業用のモバイル デバイスの設定](configure-mobile-devices-warehouse.md) を参照してください。
 
@@ -328,7 +328,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
     - **積荷** クイックタブでは、**積荷の状態** フィールドが _未処理_ に設定されます。
     - **積荷明細行** セクションには、**数量** フィールドが _10_ に設定され、**作業作成数量** フィールドが _0_ (ゼロ) に設定されている単一明細行があります。
 
-    ![貨物の詳細](media/inbound-load-details.png "貨物の詳細")
+    ![貨物の詳細。](media/inbound-load-details.png "貨物の詳細")
 
 1. アクション ウィンドウの **出荷と入荷** タブで、**確定 \> インバウンド出荷** を選択します。 **積荷の状態** が _出荷済_ に変更されていることに注意してください。
 1. 次の手順で使用できるように、**積荷 ID** の値をメモしておきます。

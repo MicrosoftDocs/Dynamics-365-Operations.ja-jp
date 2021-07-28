@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 3e72959d79e9b3b03e061a0f26750e3bd025219e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d6b24446a5944eb82334dc5dc1f0b15656f83a12
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910212"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358029"
 ---
 # <a name="small-parcel-shipping"></a>小型パーセルの出荷
 
@@ -274,7 +274,7 @@ SPS のレート エンジンを作成して配置したら、次の手順に従
 
     先に選択した ZPL プリンターに出荷ラベルが印刷されます。 これは次の例に類似しているはずです。
 
-    ![出荷ラベルの例](media/sps-label-example.png "出荷ラベルの例")
+    ![出荷ラベルの例。](media/sps-label-example.png "出荷ラベルの例")
 
 1. **コンテナーのマニフェスト ID** と **運賃合計** の値が、配送業者から受信したとして追加されました。
 

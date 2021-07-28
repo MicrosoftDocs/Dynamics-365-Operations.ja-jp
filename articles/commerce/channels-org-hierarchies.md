@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4238d1aa277bf2f1df30825ef20dbf3095d13ebc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f6e791ffd15128d2076340515a08b5ea6be70dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800570"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346011"
 ---
 # <a name="set-up-organization-hierarchies"></a>組織階層の設定
 
@@ -54,7 +54,7 @@ ms.locfileid: "5800570"
 
 次の図は、架空の「Adventure Works」店舗のセットのために作成された組織階層の例を示しています。
 
-![組織階層の例](media/organizational-hierarchies.png)
+![組織階層の例。](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>階層への組織の追加
 
@@ -67,7 +67,7 @@ ms.locfileid: "5800570"
 
 次の図は、「モール」、「アウトレット」、「オンライン」、および「コール センター」チャネルの 4 つの原価部門が追加された階層ルートに追加された法人を示しています。 その後、さまざまな小売、コール センター、およびオンライン チャネルをそれぞれに追加できます。
 
-![階層デザイナーの例](media/hierarchy-designer.png)
+![階層デザイナーの例。](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

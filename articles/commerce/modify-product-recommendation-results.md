@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfe04881e71558ed326025d8f2545c3c611df3aa
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a319007b32a8a52bd4a0c0af337ed8fd4062cfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796973"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346671"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML ベースの製品推奨事項結果の調整
 
@@ -51,7 +51,7 @@ ms.locfileid: "5796973"
 
 「ベスト セラー」製品リストには、変更可能なパラメーターが 1 つあります。
 
-![ベスト セラー リストの既定パラメーターの例](./media/examplebestsellingparameters.PNG)
+![ベスト セラー リストの既定パラメーターの例。](./media/examplebestsellingparameters.PNG)
 
 1. **過去 X 日間の販売を含める** - 現在の日付を使用して製品を注文できるようになるまで、指定した日数以内に発生した販売取引を表示します。 この既定値では、過去 30 日以内の製品に対して行われたすべての購買が、ベスト セラー製品リストでの製品の配置を決定するために使れることが提案されます。 
 
@@ -65,13 +65,13 @@ ms.locfileid: "5796973"
 1.  テーブルに製品を追加するには、**行の追加** を選択します。 
 1.  製品列で、**名前** または **製品番号** で製品を検索します。
 
-    ![新しい製品リストでの製品の検索例](./media/examplenewlistconfiguration1.png)
+    ![新しい製品リストでの製品の検索例。](./media/examplenewlistconfiguration1.png)
 
 1.  行タイプ列で、次の 2 つのオプションのいずれかを選択します。
     -   **含める**: 製品をリストの先頭に強制的に追加
     -   **除外** - リストに表示される製品を削除
     
-    ![新しい製品リストに製品を含めるまたは除外する例](./media/examplenewlistconfiguration2.png)
+    ![新しい製品リストに製品を含めるまたは除外する例。](./media/examplenewlistconfiguration2.png)
 
 1.  **表示順序** を変更して、**含める** とマークされた製品がリストに表示される順序を変更します。
     - 2 つの製品が同じ **表示順序** の値を持つ場合、これら 2 つの結果の最終的な順序は、バック オフィスとは異なる場合があります。
@@ -87,11 +87,11 @@ ms.locfileid: "5796973"
 シード製品の結果を手動で追加または削除するには、次の手順に従います。
 1.  **シード製品** を選択します。 
 1.  **製品** 列の下で、**名前** または **製品番号** で製品を検索します。
-![よく一緒に購入したリストで製品検索の例](./media/exampleFBTlistconfiguration1.png)
+![よく一緒に購入したリストで製品検索の例。](./media/exampleFBTlistconfiguration1.png)
 1. **行タイプ** 列で、次の 2 つのオプションのいずれかを選択します。
     - **含める**: 製品をリストの先頭に強制的に追加
     - **除外** - リストに表示される製品を削除     
-![よく一緒に購入したリストの製品を含める、または除外する例](./media/exampleFBTlistconfiguration2.png)
+![よく一緒に購入したリストの製品を含める、または除外する例。](./media/exampleFBTlistconfiguration2.png)
 1.  テーブルから製品を削除するには: 削除する行を選び、削除を選択します。
 
 

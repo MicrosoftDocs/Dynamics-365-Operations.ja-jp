@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: d132ed979a84c2906298c05708cef1ee87f47078
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fb5b851c71ac632a045cf09c725a088d13f21ad
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752917"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360261"
 ---
 # <a name="client-alert-notifications-by-email"></a>電子メールによるクライアント警告通知
 
@@ -36,7 +36,7 @@ ms.locfileid: "5752917"
 
 次の図は、**電子メールの送信** オプションを含む **警告ルールの作成** ダイアログ ボックスを示しています。
 
-[![ 電子メールの送信オプションがはいに設定されている警告ルールの作成ダイアログ ボックス](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
+[![ 電子メールの送信オプションがはいに設定されている警告ルールのダイアログ ボックスを作成します。](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
 
 > [!NOTE]
 > **電子メールの送信** オプションが **はい** に設定されている場合、警告通知はアクション センターから配信され続けます。
@@ -47,7 +47,7 @@ ms.locfileid: "5752917"
 
 次の図は、電子メールで受信された時の警告通知の構造を表示します。
 
-[![レコードの作成、フィールドの変更、およびテンプレート削除のためのテンプレートに基づく警告通知](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+[![レコードの作成、フィールドの変更、およびテンプレート削除のためのテンプレートに基づく警告通知。](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

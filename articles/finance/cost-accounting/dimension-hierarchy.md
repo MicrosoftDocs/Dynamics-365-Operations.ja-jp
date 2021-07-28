@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e7cadc20cc8fd52ecc8c4ab5c2f6c9dc62c2f68b
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: b6feb5319290cc53d82feb28ffa8c049bfadd29b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897579"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355086"
 ---
 # <a name="dimension-hierarchy"></a>分析コード階層
 
@@ -39,7 +39,7 @@ ms.locfileid: "5897579"
 
 分析コード階層の例を次に示します。
 
-![分析コード階層の例](./media/dimension-hierarchy.png)
+![分析コード階層の例。](./media/dimension-hierarchy.png)
 
 次のタイプの分析コードに対して分析コード階層を作成することができます。
 
@@ -80,7 +80,7 @@ ms.locfileid: "5897579"
 
 小規模の会社が次の組織構造を持っています。「財務」および「人事管理」は「管理」の下にある部署、また「組み立て」および「梱包業」は「生産」の下にある部署です。
 
-![組織構造の例](./media/dimension-hierarchy-org.png)
+![組織構造の例。](./media/dimension-hierarchy-org.png)
 
 コスト オブジェクト分析コードは、組織内のすべてのコスト センターを表します。
 

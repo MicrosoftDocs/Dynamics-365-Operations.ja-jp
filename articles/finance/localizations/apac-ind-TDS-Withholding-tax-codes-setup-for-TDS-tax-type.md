@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d56a23f7af7633e1761a8a7c48f71381d6f14df2
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 57de382c6d363a6c1d87cf734e9aedb32d6009a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023400"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349931"
 ---
 # <a name="set-up-withholding-tax-codes-for-the-tds-tax-type"></a>TDS 税タイプに対する源泉徴収税コードの設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "6023400"
 
 1. **税 \> 間接税 \> 源泉徴収税 \> 源泉徴収税コード** に移動します。
 
-    [![源泉徴収税コード ページ](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
+    [![源泉徴収税コード ページ。](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
 
 2. アクション ペインで、**新規** を選択して、 TDS の源泉徴収税コードを作成し、必要な詳細を入力します。
 3. **一般** クイック タブの **税タイプ** フィールドで、**TDS** を選択して、税コードを TDS 税コードとして分類します。

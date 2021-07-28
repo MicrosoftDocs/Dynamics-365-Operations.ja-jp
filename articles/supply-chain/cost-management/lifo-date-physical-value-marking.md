@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 744111a28256bb737246605ca8a259ff5a3d2b5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821540"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344571"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>現物価格とマーキングを使用した LIFO 日付
 
@@ -55,7 +55,7 @@ LIFO 日付在庫モデルを使用する場合は、在庫原価計算を定期
 
 新しい移動平均原価価格は、USD 15.00 での財務更新済トランザクションの平均を反映しています。 
 
-次の図は、**現物価格を含める** オプションを使用しない場合の LIFO 日付在庫モデルの影響について説明しています。 ![[現物価格を含める] がオンの場合の LIFO 日付](./media/lifodatewithoutincludephysicalvalue.gif) 
+次の図は、**現物価格を含める** オプションを使用しない場合の LIFO 日付在庫モデルの影響について説明しています。 ![現物価格を含めるがオンの場合の LIFO 日付。](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **図の説明**
 
@@ -90,7 +90,7 @@ LIFO 日付在庫モデルを使用する場合は、在庫原価計算を定期
 
 新しい移動平均原価価格は、USD 20.00 での財務更新済トランザクションの平均を反映しています。 
 
-次の図は、**現物価格を含める** オプションを使用した LIFO 在庫モデルの影響について説明しています。 ![[現物価格を含める] がオンの場合の LIFO 日付](./media/lifodatewithincludephysicalvalue.gif) 
+次の図は、**現物価格を含める** オプションを使用した LIFO 在庫モデルの影響について説明しています。 ![現物価格を含めるがオンの場合の LIFO 日付。](./media/lifodatewithincludephysicalvalue.gif) 
 
 **図の説明**
 
@@ -136,7 +136,7 @@ LIFO 日付在庫モデルを使用する場合は、在庫原価計算を定期
 
 新しい移動平均原価価格は、USD 27.50 での財務および現物更新済トランザクションの平均を反映しています。 
 
-次の図は、払出と入庫の間でマーキングを使用するときの LIFO 在庫モデルの影響を示しています。 ![[マーキング] が有効な場合の LIFO 日付](./media/lifodatewithmarking.gif) 
+次の図は、払出と入庫の間でマーキングを使用するときの LIFO 在庫モデルの影響を示しています。 ![マーキングが有効な場合の LIFO 日付。](./media/lifodatewithmarking.gif) 
 
 **図の説明**
 

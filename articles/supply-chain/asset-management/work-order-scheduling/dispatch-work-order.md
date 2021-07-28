@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bd3bea647698f76efa5831d0b8b34d3cb0ad479a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 344f015b5d2de45e3eca1eb8c0f3b1676da945d2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825545"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354159"
 ---
 # <a name="dispatch-work-order"></a>作業指示の派遣
 
@@ -52,7 +52,7 @@ ms.locfileid: "5825545"
 
 次の図は、**作業指示のスケジュール** ダイアログでの派遣選択の例を示します。
 
-![図 1](media/04-work-order-scheduling.png)
+![図 1。](media/04-work-order-scheduling.png)
 
 [!NOTE]
 作業指示のスケジュールを削除する場合は、**すべての作業指示** で作業指示を選択し、**一般** タブの **スケジュールの削除** をクリックします。スケジュールを削除した場合、作業指示ライフサイクル状態を手動で更新することを忘れないでください。

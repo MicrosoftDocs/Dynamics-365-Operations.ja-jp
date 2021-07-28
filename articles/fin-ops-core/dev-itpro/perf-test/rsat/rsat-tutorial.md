@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: a194e14c76827650e6752f331081ebe0c2130a13
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d932a0c10df72dbadcc65d7ef78eb8ad05645bd5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866159"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357521"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool のチュートリアル
 
@@ -67,11 +67,11 @@ RSAT を使用すると、複数のテスト ケースで同じタスク レコ�
 
 この機能は、アクションが実行されたかどうかを検証するために使用できます。 たとえば、製造オーダーが作成、見積り、開始された時に、アプリは製造オーダーが開始されたことを通知する "生産 – 開始" メッセージを表示します。
 
-![生産 – 開始通知](./media/use_rsa_tool_05.png)
+![生産 – 開始通知。](./media/use_rsa_tool_05.png)
 
 RSAT を使用してこのメッセージを検証するには、該当する記録の Excel パラメーター ファイルにある **メッセージ検証** タブにメッセージ テキストを入力します。
 
-![メッセージ検証タブ](./media/use_rsa_tool_06.png)
+![メッセージ検証タブ。](./media/use_rsa_tool_06.png)
 
 テスト ケースを実行すると、Excel パラメーター ファイル内のメッセージが、表示されるメッセージと比較されます。 メッセージが一致しない場合、テストケースは失敗します。
 
@@ -104,11 +104,11 @@ RSAT を使用してこのメッセージを検証するには、該当する記
 
 次の図は、このシナリオのフローを示しています。
 
-![デモ シナリオのフロー](./media/use_rsa_tool_14.png)
+![デモ シナリオのフロー。](./media/use_rsa_tool_14.png)
 
 次の図は、LCS ビジネス プロセス モデラーでのこのシナリオの業務プロセスの階層を示しています。
 
-![デモ シナリオの業務プロセス](./media/use_rsa_tool_15.png)
+![デモ シナリオの業務プロセス。](./media/use_rsa_tool_15.png)
 
 ## <a name="strategy--key-learning"></a>戦略 – キー学習
 

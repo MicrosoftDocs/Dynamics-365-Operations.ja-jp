@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822470"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344223"
 ---
 # <a name="vendor-rebates"></a>仕入先リベート
 
@@ -53,7 +53,7 @@ ms.locfileid: "5822470"
 
 **仕入先のリベート契約** ページを開き、**調達**&gt;**仕入れ先のリベート**&gt;**リベート契約** を選択します。
 
-![購買契約](media/purchase-agreement.PNG)
+![購買契約。](media/purchase-agreement.PNG)
 
 **仕入先リベート契約** ページで、仕入先契約の交渉による条件に関する詳細を表示することができます。
 
@@ -129,7 +129,7 @@ ms.locfileid: "5822470"
 
     リベート見越計上仕訳帳が請求金額に転記されます。 この転記は、予定仕入先貸方の見越計上仕入先リベートの未収勘定の借方に記入し、予定利益の中間見越計上仕入先リベートを適用した勘定の貸方に記入します。
 
-    ![メッセージ](media/message.png)
+    ![メッセージ。](media/message.png)
 
 5. リベートの一覧から明細行を選択します。次に、アクション ペインで **リベート トランザクション** を選択し、リベート見越計上の転記用の仕分けバッチ番号の参照、および移動を行います。
 

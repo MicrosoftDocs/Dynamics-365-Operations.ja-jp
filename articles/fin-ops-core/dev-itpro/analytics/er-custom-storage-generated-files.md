@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c9dfad3615cfe4f9937f0dc30c4684cd14f420c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894151"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348143"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>生成されるドキュメントに対するカスタム ストレージの場所を指定する
 
@@ -41,7 +41,7 @@ ms.locfileid: "5894151"
 
 カスタム ストレージの場所を追加する予定のドキュメントを生成するには、**固定資産ロール フォワード** ER 形式の構成を現在のトポロジに [インポート](er-download-configurations-global-repo.md) します。
 
-![レポジトリ ページの構成](./media/er-custom-storage-generated-files-import-format.png)
+![構成レポジトリ ページ。](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>固定資産ロール フォワード レポートの実行
 
@@ -52,7 +52,7 @@ ms.locfileid: "5894151"
 5. **形式マッピング** フィールドで、**固定資産ロール フォワード** を選択します。
 6. **OK** を選択します。
 
-![固定資産ロール フォワード レポートのランタイム ダイアロボックス](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![固定資産ロール フォワード レポートのランタイム ダイアロボックス。](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 Microsoft Excel で、生成されてダウンロード可能な送信ドキュメントを確認します。 この動作は、[送信先](electronic-reporting-destinations.md) が設定されておらず、対話モードで実行されている ER フォーマットの [既定の動作](electronic-reporting-destinations.md#default-behavior) です。
 

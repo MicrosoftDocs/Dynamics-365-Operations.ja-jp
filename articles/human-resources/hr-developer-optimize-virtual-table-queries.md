@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054911"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346277"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Dataverse 仮想テーブル クエリの最適化
 
@@ -50,13 +50,13 @@ Human Resources の Dataverse 仮想テーブルでパフォーマンスが低�
 - **クエリのタイムアウト**: クエリがタイムアウトし、「Finance and Operations を呼び出すためのトークンが取得されましたが、Finance and Operations はタイプ InternalServerError のエラーを返す」場合があります。
 - **予期しないエラー**: クエリは、「予期しないエラーが発生しました」というメッセージとともにエラー タイプ 400 を返す場合があります。
 
-  ![HcmWorkerBaseEntity のエラー タイプ 400](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![HcmWorkerBaseEntity のエラー タイプ 400。](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **調整**: クエリはサーバー リソースを過剰に使用し、調整の対象になる可能性があります。 この場合、クエリは次のエラーを返します: 「Finance and Operations を呼び出すためのトークンが取得されましたが、Finance and Operations はタイプ 429 のエラーを返しました。」 Human Resources の調整の詳細については [スロットリングに関するよく寄せられる質問](./hr-admin-integration-throttling-faq.md) を参照してください。
 
-  ![HcmWorkerBaseEntity のエラー タイプ 429](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![HcmWorkerBaseEntity のエラー タイプ 429。](./media/HcmWorkerBaseEntityErrorType429.png)
 
-## <a name="resolution"></a>解像度
+## <a name="resolution"></a>解決策
 
 ### <a name="limit-the-number-of-columns-included-in-your-data-query"></a>データ クエリに含める列の数の制限
 
@@ -96,7 +96,7 @@ Dataverse 仮想テーブルに対して Power BI レポートを構築する際
 2. **データの取得** ウィンドウで、検索ボックスの **Common Data Service** に入力し、**Common Data Service** コネクタを選択して、**接続** を選択します。
 3. Common Data Service ウィンドウの **サーバーの URL** に Dataverse 環境の組織 URI を入力し **OK** を選択します。
   
-   ![Dataverse 環境の URI を入力](./media/PowerBIDataverseURLSetup.png)
+   ![Dataverse 環境の URI を入力。](./media/PowerBIDataverseURLSetup.png)
   
 4. ナビゲーター ウィンドウで、**エンティティ** ノードを展開します。
 5. 検索ボックスに **mshr_hcmworkerbaseentity** を入力し、エンティティを選択します。
@@ -113,7 +113,7 @@ Dataverse 仮想テーブルに対して Power BI レポートを構築する際
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![高度なクエリ エディターの詳細エディターでクエリを更新します](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![高度なクエリ エディターの詳細エディターでクエリを更新します。](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. **完了** を選択します。
 
@@ -138,7 +138,7 @@ Dataverse Web API クエリおよび Power BI と同様に、関連するテー�
 
 [Power Apps 監視](/powerapps/maker/monitor-overview) を使用すると、必要な列だけが Power App のデータを取得するためにクエリに含まれている必要があります。 getRows 操作用に作成された URL を表示して、アプリ用に選択した列がデータの取得に最適であることを確認できます。
 
-![Power Apps 監視を使用した getData 操作の分析](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![Power Apps 監視を使用して getData 操作を分析します。](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### <a name="filtering-the-data-query"></a>データ クエリのフィルター処理
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 13111
+ms.custom:
+- "13111"
+- intro-internal
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41c64607f5dfbe00bd8a2e7cc80fb4771f11a6d1
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 12e776a83e00c669984a278ab06b913743d6e544
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188443"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348941"
 ---
 # <a name="sales-tax-overview"></a>消費税の概要
 
@@ -34,7 +36,7 @@ ms.locfileid: "6188443"
 
 次の図は、税設定のエンティティとそのの関連付けを表示します。
 
-[![税設定のエンティティの概要を示す図](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![税設定のエンティティの概要を示す図。](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 会社が会計処理しなければならないすべての売上税について、売上税コードを定義する必要があります。 売上税コードは、売上税の税率および計算ルールを格納します。 
 

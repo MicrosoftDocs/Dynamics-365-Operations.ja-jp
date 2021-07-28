@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c043ac9c19a810d1718f0d4907cd5e9d651d778f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5038a1a1b3fa4c32f54ea87b03f886504e0b004f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055295"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357391"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>申請者追跡システム統合APIの概要
 
@@ -26,7 +26,7 @@ ms.locfileid: "6055295"
 
 このトピックでは、Dynamics 365 Human Resources 申請者追跡システム (ATS) 統合 API について説明します。 API の目的は、ATS 間およびパートナー間の合理化された Dynamics 365 Human Resources 統合を実現することです。
 
-![ATS 統合のフロー](media/hr-admin-integration-ats-api-introduction-flow.png)
+![ATS 統合のフロー。](media/hr-admin-integration-ats-api-introduction-flow.png)
 
 統合されたエクスペリエンスは、採用マネージャーが採用要求を作成する際に Human Resources で開始されます。 要求が有効化されると、ATS によって要求の詳細が引き出され、採用プロジェクトが作成されます。 その後、採用パイプラインに従ってポジションの候補者を選択・採用します。 ATSは最後に、選択した候補者のレコードを Human Resources に送信することで、ラウンド トリップの統合を完了します。 その後、その候補者レコードに対して、多くの修正の検証およびワークフローを実行して、従業員レコードを作成できます。
 
@@ -69,7 +69,7 @@ API 用の仮想テーブルの生成の詳細については、[Dataverse 仮�
 
 次の図では、API 内の関係性を示しています。 Human Resources 内の既存のエンティティには、その他のエンティティに対する外部キーがあり、それについてはここでは示されていません。 このドキュメントでは、統合の採用のシナリオに固有のエンティティに関する情報を提供します。 しかし、Dynamics 365 Human Resources 向け Dataverse Web API には他にも多くのエンティティが存在しており、これらのエンティティも統合に関連している可能性があります。 たとえば、ここで定義していない作業者、ジョブ、職位、または他のエンティティの詳細が必要な場合があります。 これらのエンティティの多くは、外部キーとの関係性やナビゲーション プロパティで参照されます。
 
-![ATS 統合の API データ モデル](media/hr-admin-integration-ats-api-data-model.png)
+![ATS 統合の API データ モデル。](media/hr-admin-integration-ats-api-data-model.png)
 
 ## <a name="recruiting-request-and-related-entities-and-option-sets"></a>採用要求と関連するエンティティとオプション セット
 

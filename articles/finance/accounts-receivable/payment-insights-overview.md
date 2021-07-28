@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a1b3b6540a03dc85d5dcd813e8c41ac49ab36728
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82b301b4b8ba61375a53a8fe6220628500f6cf3d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822398"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359320"
 ---
 # <a name="customer-payment-insights-preview"></a>顧客支払に関するインサイト (プレビュー)
 
@@ -47,11 +49,11 @@ ms.locfileid: "5822398"
 
 3 つのバケットである期日通り、遅延、かなりの遅延のいずれかで顧客が支払う合計支払額を組織が理解できるようにするため、顧客支払インサイト (プレビュー) は予期される支払いの集計ビューも提供します。
 
-[![支払予測の集計ビュー](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![支払予測の集計ビュー。](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 また、各請求書には期限厳守の支払いの確度が割り当てられます。 期限厳守の支払の確度が 50% 未満の場合、請求書は赤い丸でタグ付けられ、これらの請求書にコレクション注意を払う必要があることを示します。 
 
-[![支払確度の一覧](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![支払確度の一覧。](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 顧客支払インサイト (プレビュー) は、予測の影響を受ける上位要因、顧客とのビジネスの現在の状態、および顧客の支払動作履歴に関する詳細など、予測を説明するためのコンテキスト情報も提供します。 多くのビジネスでは、コレクション プロセスはリアクティブな活動です。請求書の期日が来るまでコレクション プロセスは開始されません。 
 

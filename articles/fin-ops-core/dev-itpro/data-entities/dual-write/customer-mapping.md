@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 0015ca2ccbb0098a5a96bf56ff355fb2f9f8f626
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5af584eb0bdb65942921847219b46b8f93dae79d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350914"
 ---
 # <a name="integrated-customer-master"></a>統合された顧客マスター
 
@@ -36,7 +36,7 @@ ms.locfileid: "5748926"
 
 *顧客* は、アプリケーションで明確に定義された概念です。 したがって、顧客データの統合は、2 つのアプリケーションの間で顧客の概念を調和させるだけです。 次の図は、顧客データ フローを示します。
 
-![顧客データ フロー](media/dual-write-customer-data-flow.png)
+![顧客データ フロー。](media/dual-write-customer-data-flow.png)
 
 顧客は、商用 / 組織の顧客および消費者 / エンド ユーザーの 2 種類に大きく分類できます。 これら 2 種類の顧客は、Finance and Operations と Dataverse にて、異なる方法で格納および処理されます。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9e64899e0bbdb5a9d8899e865de9ee32aae59382
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f5556195a1a787420061fbcaef5d97ac47823221
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751659"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359008"
 ---
 # <a name="generate-printable-fti-forms"></a>印刷可能な FTI フォームを生成する
 
@@ -77,7 +77,7 @@ ER フレームワークを使用して FTI フォームを生成するために
 3. 処理する請求書のスコープを指定するドキュメント レベルを選択します。
 4. 指定されたドキュメント レベルの ER 形式を選択します。
 
-![印刷管理設定](media/FTIbyGER-PMSetting.png)
+![印刷管理設定。](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
 > **CustomersInvoicing** データ モデルの **FreeTextInvoice** ルート記述子を使用している ER 形式のみが、選択された形式の **レポート形式の検索** フィールドに表示されます。
@@ -87,9 +87,9 @@ FTI フォームは、SSRS レポートが生成される場合と同じ方法�
 
 FTI フォームを生成するために、範囲または選択のいずれかによって請求書を選択できます。 
 
-![請求書の選択](media/FTIbyGER-InvoiceSelection.png)
+![請求書の選択。](media/FTIbyGER-InvoiceSelection.png)
 
-![請求書の確認](media/FTIbyGER-InvoiceExcelPreview.png)
+![請求書の確認。](media/FTIbyGER-InvoiceExcelPreview.png)
 
 この方法で FTI フォームを印刷するために ER 形式を使用する場合、既定の ER ファイル出力先が使用されます。 出力先は変更できません。 ER 形式の ER 出力先をコンフィギュレーションする方法の詳細については、[電子申告 (ER) の出力先](electronic-reporting-destinations.md) を参照してください。
 
@@ -101,9 +101,9 @@ FTI フォームを生成するために、範囲または選択のいずれか�
 > - **名前:** ERFormatDestinationRuntimeMaintain
 > - **ラベル:** 実行時に電子申告形式の出力先を管理
 
-![電子申告の送信先](media/FTIbyGER-ERFileDestinationSetting.png)
+![電子申告の送信先。](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![電子申告形式の出力先](media/FTIbyGER-ERFileDestinationUsage.png)
+![電子申告形式の出力先。](media/FTIbyGER-ERFileDestinationUsage.png)
 
 ER フレームワークは現在、生成されたドキュメントのために次の出力先をサポートしています。
 
@@ -128,7 +128,7 @@ ER フレームワークは現在、生成されたドキュメントのため�
 ### <a name="features-that-are-implemented-in-the-sample-er-format"></a>サンプル ER 形式に実装されている機能
 サンプル ER 形式のコンフィギュレーションでは、FTI フォームを生成するためのテンプレートとして Excel ファイルが使用されています。
 
-![形式デザイナー](media/FTIbyGER-ERFormat.png)
+![形式デザイナー。](media/FTIbyGER-ERFormat.png)
 
 現在、このサンプル ER 形式では、FTI フォームを生成するために次の機能がサポートされています。
 
@@ -179,7 +179,7 @@ ER フレームワークは現在、生成されたドキュメントのため�
 - フィンランド用の国/地域コンテキストを使用しており、**振替口座** および **銀行のバーコード** としてマークされている銀行口座を少なくとも 1 つ所有している法人に対して。 
 - **フィンランド** の関連する支払添付書類に対して必要であるとマークされている請求書に対して。
 
-![振替伝票](media/FTIbyGER-GiroSlip.PNG)
+![振替伝票。](media/FTIbyGER-GiroSlip.PNG)
 
 > [!NOTE]
 > サンプル ER 形式は、必要に応じて別のワークシートに振替送金伝票を生成するようにコンフィギュレーションされています。
@@ -194,7 +194,7 @@ ER フレームワークは現在、生成されたドキュメントのため�
 - 電子メールの件名のテキストは、次の ER 式からアクセスできます: **Emailing.TxtToUse.Subject**。
 - 電子メールの本文のテキストは、次の ER 式からアクセスできます: **Emailing.TxtToUse.Body**。
 
-![宛先設定](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+![宛先設定。](media/FTIbyGER-ERFileDestinationSettingEmail.png)
 
 電子メールの件名と本文の既定のテキストは、サンプル ER 形式で定義されています。 言語は形式のラベルによって異なります。 事前定義された **ERFTITMP** ID を持つ組織電子メールのカスタム テンプレートが追加されていない場合、既定のテキストが電子メールに使用されます。
 
@@ -203,9 +203,9 @@ ER フレームワークは現在、生成されたドキュメントのため�
 
 事前定義された **ERFTITMP** ID を持つ組織の電子メールが、請求書を処理する法人に対して追加されている場合、電子メールの件名および本文のテキストのテンプレートが電子メールを生成するために使用されます。 
 
-![組織の電子メール テンプレート](media/FTIbyGER-EmailTemplate.png)
+![組織の電子メール テンプレート。](media/FTIbyGER-EmailTemplate.png)
 
-![電子メール テンプレートのアップロード](media/FTIbyGER-EmailTemplateBody.png)
+![電子メール テンプレートのアップロード。](media/FTIbyGER-EmailTemplateBody.png)
 
 サンプル ER 形式の ER 式 **Emailing.TxtToUse.Subject** は、すべてのプレースホルダー %1 を請求書処理 ID によって置換するようコンフィギュレーションされています。
 
@@ -218,7 +218,7 @@ ER フレームワークは現在、生成されたドキュメントのため�
 - 「%5」は会社の連絡担当者の肩書きに置き換えられます。
 - 「%6」は会社の連絡担当者の電子メール アドレスに置き換えられます。
 
-![電子メール](media/FTIbyGER-Email.PNG)
+![電子メール。](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>追加リソース
 [電子申告 (ER) の概要](general-electronic-reporting.md)

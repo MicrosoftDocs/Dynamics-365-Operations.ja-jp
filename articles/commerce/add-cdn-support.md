@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936833"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346831"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>コンテンツ配信ネットワーク (CDN) のサポートの追加
 
@@ -74,11 +74,11 @@ Azure Front Door Service のバック エンド プールを構成するには�
 
 次の図は、バック エンド ホスト名が入力された Azure Front Door Service の **バックエンドの追加** ダイアログ ボックスを示します。
 
-![バックエンド プール ダイアログ ボックスを追加する](./media/CDN_BackendPool.png)
+![バックエンド プール ダイアログ ボックスを追加します。](./media/CDN_BackendPool.png)
 
 次の図は、既定の負荷分散値が入力された Azure Front Door Service の **バックエンド プール の追加** ダイアログ ボックスを示します。
 
-![バックエンド プールのダイアログ ボックスを継続して追加する](./media/CDN_BackendPool_2.png)
+![バックエンド プールのダイアログ ボックスを継続して追加します。](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Commerce に対して独自の Azure Front Door Service サービスを設定する際は、 **正常性の検査** を無効にしてください。
@@ -107,13 +107,13 @@ Azure Front Door Service でルート指定ルールを設定するには、次�
 
 次の図は、Azure Front Door Service の **CNAME コンフィギュレーション** ダイアログ ボックスを示します。
 
-![CNAME コンフィギュレーション ダイアログ ボックス](./media/CNAME_Configuration.png)
+![CNAME コンフィギュレーション ダイアログ ボックス。](./media/CNAME_Configuration.png)
 
 Azure Front Door Service を使用して証明書を管理したり、カスタム ドメインに対して独自の証明書を使用したりできます。
 
 次の図は、Azure Front Door Service の **カスタム ドメイン HTTPS** ダイアログ ボックスを示します。
 
-![カスタム ドメイン HTTPS ダイアログ ボックス](./media/Custom_Domain_HTTPS.png)
+![カスタム ドメイン HTTPS ダイアログ ボックス。](./media/Custom_Domain_HTTPS.png)
 
 Azure Front Door にカスタムドメインを追加する方法の詳細については、[フロント ドアにカスタム ドメインを追加する](/azure/frontdoor/front-door-custom-domain)を参照してください。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749492"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349163"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 
@@ -86,7 +86,7 @@ ms.locfileid: "5749492"
 
     このコンフィギュレーションのモデル マッピングは、このモデルに対して作成され Finance and Operations で実行される、すべての ER フォーマットの基本データ モデルを実装します。 その結果、**税** および **Gr** データ ソースの内容は、抽象データ ソースなどの ER フォーマットに対して公開されます。
 
-    ![税および Gr データ ソースを表示するモデル マッピング デザイナー ページ](media/er-calculated-field-type-01.png)
+    ![税および Gr データ ソースを表示するモデル マッピング デザイナー ページ。](media/er-calculated-field-type-01.png)
 
 5.  **モデル マッピング デザイナー** ページを閉じます。
 6.  **モデル マッピング** ページを閉じます。
@@ -101,21 +101,21 @@ ms.locfileid: "5749492"
     - 税明細書に以下の課税レベルを提示します。標準、減額、なし。
     - 各レベルで詳細条件を持つ、各課税レベルにおける複数の詳細を提示します。
 
-    ![形式デザイナーのページ](media/er-calculated-field-type-02.png)
+    ![形式デザイナー ページ。](media/er-calculated-field-type-02.png)
 
 4. **マッピング** を選択します。
 5. **モデル**、**データ、** および **集計** 項目を展開します。 
 
     計算済みフィールド **モデル.データ.集計.レベル** は、その **モデル.データ.集計** データ ソースから実行時に取得できるすべての税コードのテキスト値として、(**標準**、**減額**、**なし、** または **その他**) の課税レベル コードを返す式が含まれます。
 
-    ![パラメーター化された呼び出しを知るためのモデルの、データ モデル詳細を表示するフォーマット デザイナー ページ](media/er-calculated-field-type-03.png)
+    ![パラメーター化された呼び出しを知るためのモデルのデータ モデル詳細を表示するフォーマット デザイナー ページ。](media/er-calculated-field-type-03.png)
 
 6. **モデル**.**データ 2** 項目を展開します。
 7. **モデル**.**データ 2. 集計 2** 項目を展開します。
    
     この **モデル**.**データ2.集計2** データ ソースは、課税レベル (**モデル.データ.集計.レベル** 計算済みフィールドによって返されます) によって **モデル.データ.集計** データ ソース トランザクション の詳細をグループ化し、集計を計算するようにコンフィギュレーションされています。
 
-    ![モデル.データ 2.集計 2 データ ソースの詳細を表示する形式デザイナー ページ](media/er-calculated-field-type-04.png)
+    ![モデル.データ 2.集計 2 データ ソースの詳細を表示する形式デザイナー ページ。](media/er-calculated-field-type-04.png)
 
 8. 計算済みフィールドの **モデル**.**データ 2.レベル 1** 、**モデル**.**データ 2.レベル 2** 、および **モデル**.**データ 2.レベル 3** を確認します。 これらの計算済みフィールドは、**モデル**.**データ 2.集計 2** レコード リストをフィルターするために使用され、特定の課税レベルを表すレコードだけを返します。
 9. **形式デザイナー** ページを閉じます。
@@ -155,7 +155,7 @@ ms.locfileid: "5749492"
 
     1 つの計算済みフィールドに対して指定できるパラメーターの最大数は、8 です。
 
-    ![パラメーター データ ソース リスト](media/er-calculated-field-type-05.png)
+    ![パラメーター データ ソース リスト。](media/er-calculated-field-type-05.png)
 
 5. **OK** を選択します。
 
@@ -165,7 +165,7 @@ ms.locfileid: "5749492"
 
    コンフィギュレーションされたパラメーターは、この計算済みフィールドのためのデータ ソースのリスト内で使用できます。 **データソースの追加** を選択すると、コンフィギュレーションされた式にパラメーターを追加できます。
 
-   ![データ ソース フィールド](media/er-calculated-field-type-06.png)
+   ![データ ソース フィールド。](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>計算済みフィールドを追加するために式を定義する
 
@@ -181,7 +181,7 @@ ms.locfileid: "5749492"
 
 5. **保存** を選択します。
 
-    ![データ ソース フィールドの情報](media/er-calculated-field-type-07.png)
+    ![データ ソース フィールドの情報。](media/er-calculated-field-type-07.png)
 
 6. **フォーミュラ デザイナー** ページを閉じます。
 
@@ -191,7 +191,7 @@ ms.locfileid: "5749492"
 
 **フォーマット デザイナー** ページ上で、コンフィギュレーションされパラメーター化された計算済みフィールド **レベル** には、**文字列** 引数が必要です。
 
-![計算済みフィールド レベルの展開されたリスト](media/er-calculated-field-type-08.png)
+![計算済みフィールド レベルの展開されたリスト。](media/er-calculated-field-type-08.png)
 
 ### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>バインディング フォーマット要素のため、コンフィギュレーションされた計算済みフィールドを使用する
 
@@ -220,7 +220,7 @@ ms.locfileid: "5749492"
 
 **式の編集** を選択して、選択したバインドの中でパラメーター化された計算済みフィールドの既定で適用される引数を変更できます。 この引数が見つからない場合、実行時にエラーが発生する可能性があります。そのような状況は、現在の形式が検証されたときに、ユーザーに通知されます。
 
-![検証時の警告の通知](media/er-calculated-field-type-10.png)
+![検証時の警告の通知。](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>パラメーター化された計算済みフィールドをコンフィギュレーションし、レコードを返す
 パラメーター化された計算済みフィールドがレコードを返す場合、このレコードの個々のフィールド バインドを形式要素にサポートする必要があります。 そのような場合、パラメーター化された計算済みフィールドを呼び出す、引数の値を含む親バインドがありません。この値は、1 つのレコード フィールドのバインドで定義する必要があります。
@@ -272,7 +272,7 @@ ms.locfileid: "5749492"
 8. **式の編集** を選択します。
 9. 式を、**モデル.データ 2.レベル レコード (" なし ") 集計された.ベース** に変更します。
 
-![更新された式](media/er-calculated-field-type-11.png)
+![更新された式。](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>使用されていない計算済みフィールドを削除する
 

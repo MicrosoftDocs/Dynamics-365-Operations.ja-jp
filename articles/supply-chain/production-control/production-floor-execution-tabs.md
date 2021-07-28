@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 4e2b3746e690623e347e0319ab1b55f2645a5e23
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5bf8ce93d2c804325305672d79b633210a790cf0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814683"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347665"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスをデザインする
 
@@ -32,7 +32,7 @@ ms.locfileid: "5814683"
 
 各タブは、次の図に示すように 4 つのセクションに分かれています。
 
-![タブのレイアウト](media/pfe-tab-layout.png "タブのレイアウト")
+![タブのレイアウト。](media/pfe-tab-layout.png "タブのレイアウト")
 
 次の要素が図に示されています:
 
@@ -47,7 +47,7 @@ ms.locfileid: "5814683"
 
 1. アクション ウィンドウの **タブのデザイン** を選択して、**タブのデザイン** ページを開きます。
 
-    ![タブのデザイン ページ](media/pfe-design-tabs.png "タブのデザイン ページ")
+    ![タブのデザイン ページ。](media/pfe-design-tabs.png "タブのデザイン ページ")
 
 1. アクション ウィンドウで、**新規** を選択します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "5814683"
 
 1. **生産管理 \> 設定 \> 製造実行 \> 生産現場の実行を構成** に移動します。
 
-    ![生産フロア実行の構成](media/pfe-config-prod-floor-execution.png "生産フロア実行の構成")
+    ![生産フロア実行の構成。](media/pfe-config-prod-floor-execution.png "生産フロア実行の構成")
 
 1. **タブの選択** クイック タブで **追加** を選択します。
 

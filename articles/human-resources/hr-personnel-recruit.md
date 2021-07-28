@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051812"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359680"
 ---
 # <a name="recruit-job-candidates"></a>職務候補者の採用
 
@@ -61,13 +61,13 @@ Human Resources に採用要求を送信する場合は、まず **Human Resourc
 
 3. **採用要求の勤務場所** フィールドに、勤務場所の名前を入力します。
 
-   ![採用要求の勤務場所の追加](./media/hr-recruit-0a-add-location.png)
+   ![採用要求の勤務場所の追加。](./media/hr-recruit-0a-add-location.png)
 
 4. **説明** フィールドに、勤務場所の説明を入力します。
 
 5. **勤務場所** で、**追加** を選択します。 **新しい住所** と表示された場合は、その勤務場所の住所を入力します。
 
-   ![住所の入力](./media/hr-recruit-0b-address.png)
+   ![住所の入力。](./media/hr-recruit-0b-address.png)
 
 6. **連絡先情報** で、勤務場所の連絡先の情報を入力します。
 
@@ -83,11 +83,11 @@ Human Resources に採用要求を送信する場合は、まず **Human Resourc
 
 3. **採用を要求** を選択します。
 
-   ![採用要求の開始](./media/hr-recruit-1-request-to-recruit.png)
+   ![採用要求の開始。](./media/hr-recruit-1-request-to-recruit.png)
 
 4. **説明**、**職務**、および **予想開始日** フィールドに入力します。
 
-   ![採用要求の完了](./media/hr-recruit-2-request-to-recruit.png)
+   ![採用要求の完了。](./media/hr-recruit-2-request-to-recruit.png)
 
 5. **続行** を選択します。 希望する職務の採用要求が表示されます。
 
@@ -95,7 +95,7 @@ Human Resources に採用要求を送信する場合は、まず **Human Resourc
 
 7. **職務** で、必要に応じて情報を変更し、**職務から詳細を作成** を選択します。
 
-   ![職務から詳細を作成](./media/hr-recruit-3-create-details-from-job.png)
+   ![職務から詳細を作成。](./media/hr-recruit-3-create-details-from-job.png)
 
    採用要求の残りの部分には、入力した職務の既定の情報が入力されます。
 
@@ -103,13 +103,13 @@ Human Resources に採用要求を送信する場合は、まず **Human Resourc
 
 9. **職位** で **追加** を選択してから、この採用要求の職位を選択します。
 
-   ![職位の追加](./media/hr-recruit-4-select-position.png)
+   ![職位の追加。](./media/hr-recruit-4-select-position.png)
 
 10. **スキル** で **追加** を選択してからスキルを選択します。
 
 11. **学歴要件** で **追加** を選択してから、**学歴** および **最終学歴** ドロップダウンから学歴を選択します。
 
-   ![学歴要件の追加](./media/hr-recruit-5-select-educational-requirements.png)
+   ![学歴要件の追加。](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. **コメント** で、必要に応じてコメントを追加します。
 
@@ -117,7 +117,7 @@ Human Resources に採用要求を送信する場合は、まず **Human Resourc
 
 14. 採用要求が完了し採用プロセスを開始する準備ができたら、メニュー バーの **有効化** を選択します。
 
-   ![採用要求の有効化](./media/hr-recruit-6-activate-recruit-request.png)
+   ![採用要求の有効化。](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. **保存** を選択します。
 
@@ -131,7 +131,7 @@ Human Resources に採用要求を送信する場合は、まず **Human Resourc
 
 3. **自分のチームの情報** で、**採用要求** タブを選択します。
 
-   ![[採用要求] タブの選択](./media/hr-recruit-7-recruiting-requests.png)
+   ![採用要求タブの選択。](./media/hr-recruit-7-recruiting-requests.png)
 
 4. 採用要求を表示または編集するには、グリッドで選択します。
 
@@ -141,7 +141,7 @@ HR のプロフェッショナルにすべての採用要求を表示するに�
 
 2. **採用要求** を選択する。
 
-   ![人事管理で採用要求を表示する](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![人事管理で採用要求を表示する。](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. 採用要求を表示または編集するには、グリッドで選択します。
 
@@ -155,7 +155,7 @@ HR のプロフェッショナルにすべての採用要求を表示するに�
 
 3. **採用** で **候補者** を選択します。
 
-   ![候補者の表示](./media/hr-recruit-9-candidates.png)
+   ![候補者の表示。](./media/hr-recruit-9-candidates.png)
 
 4. 候補者を追加するには、**新規** を選択します。 既存の候補者を編集するには、リストから候補者を選択し、**編集** を選択します。 候補者のプロファイルが表示されます。
 
@@ -163,7 +163,7 @@ HR のプロフェッショナルにすべての採用要求を表示するに�
 
 6. **採用要求** で、候補者にリンクする採用要求を選択します。 **開始予定日**、**採用マネージャー**、**職位**、**フィールド説明** に適当な情報を入力します。
 
-   ![採用要求へのリンク](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![採用要求へのリンク。](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. 候補者のレコードに含める次の領域のすべての情報を入力します。
    - **備考**
@@ -182,11 +182,11 @@ HR のプロフェッショナルにすべての採用要求を表示するに�
 
 1. 候補者フォームで、**採用** を選択します。
 
-   ![候補者の採用](./media/hr-recruit-11-hire.png)
+   ![候補者の採用。](./media/hr-recruit-11-hire.png)
 
 2. **新規採用** フォームにある **詳細** で、すべてのフィールドに入力します。
 
-   ![新入社員の詳細の入力](./media/hr-recruit-12-hire-new-worker.png)
+   ![新入社員の詳細の入力。](./media/hr-recruit-12-hire-new-worker.png)
 
 3. **職位の詳細** で、必要に応じて情報を確認および変更します。
 
@@ -203,7 +203,7 @@ HR のプロフェッショナルにすべての採用要求を表示するに�
 
 1. 候補者フォームで、**不採用** を選択します。
 
-   ![候補者の不採用](./media/hr-recruit-13-do-not-hire.png)
+   ![候補者の不採用。](./media/hr-recruit-13-do-not-hire.png)
 
 2. **理由コード** を選択し、コメントを記入します。
 
@@ -215,7 +215,7 @@ HR のプロフェッショナルにすべての採用要求を表示するに�
 
 - 候補者フォームで、**候補を消去** を選択します。
 
-  ![候補の消去](./media/hr-recruit-14-dismiss-candidate.png)
+  ![候補の消去。](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>参照
 

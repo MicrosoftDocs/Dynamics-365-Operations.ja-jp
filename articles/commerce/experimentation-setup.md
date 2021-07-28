@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9976ca461f7e988c32b81565fa2d084709e5ad6e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7453f0780d46ec1b3a09fe122938c8729c35aef6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792513"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349235"
 ---
 # <a name="set-up-an-experiment"></a>実験の設定
 
 [仮説を定義し、使用する成功メトリックスを決定](experimentation-identify.md) したら、サードパーティ サービスで実験を設定する必要があります。 次の図は、Dynamics 365 Commerce の電子商取引 web サイトでの実験の設定と実行に関連するすべての手順を示しています。 追加の手順については、個別のトピックで説明します。
 
-[![実験ユーザー体験 - 設定](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
+[![実験ユーザー体験 - 設定。](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
 
 
 ## <a name="set-up-your-experiment-in-the-third-party-service"></a>サードパーティ サービスで実験を設定する

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RCS, Regulatory Configuration Services, Localization
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216565"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358125"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -41,7 +43,7 @@ RCS は次の機能を提供します。
 
 [Regulatory Configuration Service page](https://marketing.configure.global.dynamics.com/) から RCS に登録またはサインインできます。
 
-![RSC 登録/サインイン](media/202103_RCS%20Marketing%20page_updated_1.jpg)
+![RSC 登録/サインイン。](media/202103_RCS%20Marketing%20page_updated_1.jpg)
 
 **Regulatory Configuration Service** ページで、サービスの使用に関する追加の条件を確認して承認し、次のいずれかのボタンを選択します。
 
@@ -91,7 +93,7 @@ RCS で使用される設計時間機能は、すべての会社間で共有さ�
 
 サービス ページから RCS にサインアップすると、Azure Active Directory (Azure AD) に関連した問題が発生する 場合があります。 表示されるエラー メッセージは、RCS のサインアップが現在オフであり、サインアップ プロセスを完了する前に有効になっていることを示します。
 
-![RCS サインアップのエラー メッセージ](media/01_RCSSignUpError.jpg)
+![RCS サインアップのエラー メッセージ。](media/01_RCSSignUpError.jpg)
 
 問題が発生するのは、アドホック サブスクリプションへのサインアップがブロックされ、`AllowAdHocSubscriptions` プロパティがテナントで有効になっている必要があるためです。 
 

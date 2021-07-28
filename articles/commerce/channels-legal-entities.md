@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 225fd6a07fee29414ac30a4602b4dfccdc4d742b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 698c556b8839ae1d657ef02796fe08ab9cd3621e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800618"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346037"
 ---
 # <a name="create-legal-entities"></a>法人を作成します
 
@@ -44,7 +44,7 @@ Dynamics 365 Commerce に新しい法人を作成するには、次の手順を�
 1. **国/地域** フィールドで、値を入力または選択します。
 1. **OK** を選択します。 
 
-   ![法人の作成](media/legal-entities.png)
+   ![法人の作成。](media/legal-entities.png)
 
 1. **一般** セクションで、法人に関する次の一般情報を提供します。 
    1. 検索名が必要な場合、検索名を入力します。 検索名は、この法人を検索するために使用できる代替名です。 
@@ -67,7 +67,7 @@ Dynamics 365 Commerce に新しい法人を作成するには、次の手順を�
 
 次の図は、法人の例の詳細を示しています。
 
-![法人の一般セクション](media/legal-entities-general.png)
+![法人の一般セクション。](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>追加リソース
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f543adc8bab5ca224bdb672d6b3c282c2d8531d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 97fce25ea8c556f001c84f6836a0a270a9f3524f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023376"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358389"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>TDS 特約証明書番号を記録する
 
@@ -33,7 +33,7 @@ ms.locfileid: "6023376"
 2. **税タイプ** フィールドで、TDS 税タイプの特約証明書を記録する **TDS** を選択します。
 3. **概要** タブ で 、**Alt+N** キーを押して明細行を作成します。
 
-    [![新しい明細行のヘッダー](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
+    [![新しい明細行のヘッダー。](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
 
 4. **源泉徴収税コード** フィールドで、仕入先特約証明書の発行対象である TDS 税コードを選択します。 **源泉徴収税コード名** フィールドに、源泉徴収税コードの名前が表示されます。
 5. **開始日** フィールドと **終了日** フィールドで 、TDS税コードを使用して特約ベースで仕入先の TDS を計算する特約証明書の有効期間を定義します。
@@ -50,6 +50,6 @@ ms.locfileid: "6023376"
 
 11. **証明書** フィールドに、TDS特約証明書番号を入力します。
 
-    [![証明書クイック タブ](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
+    [![証明書クイック タブ。](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
 
 12. ページを閉じます。

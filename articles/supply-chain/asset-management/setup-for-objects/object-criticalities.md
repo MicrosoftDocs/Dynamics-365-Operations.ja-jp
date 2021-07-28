@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb2da2d58b7f98fad80d0ea63bf4445ec4d08163
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: baf2c279a656bd67a0850ef9178e1bc984bb9b8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808355"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351492"
 ---
 # <a name="asset-criticality-types"></a>資産の重要度タイプ
 
@@ -40,7 +40,7 @@ ms.locfileid: "5808355"
 4. **名前** フィールドに、重要度タイプの名前を入力します。
 5. **係数** フィールドに係数を入力します。 この係数は、ワーク オーダー スケジューリングの計算中に使用され、重要度レコードが使用されるべきかを決定します。 (最も高い係数を持つレコードは常に使用されます。) この設定は、次の図に示すように、同じ重要度値を持つ重要度明細行が作成されている場合に関係します。
 
-    ![重大度タイプ ページ](media/23-setup-for-objects.png)
+    ![重大度タイプ ページ。](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>資産の重要度の設定
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4ff6b8495f3ef0d75ffc8f829a9f332f507789d0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838229"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358053"
 ---
 # <a name="quality-check"></a>品質チェック
 
@@ -310,7 +310,7 @@ ms.locfileid: "5838229"
 
     表示される **品質チェック** ページには入力フィールドがありません。 一番下にある確認 (チェック マーク) ボタンと、上部にあるメニューボタン (**≡**) のみが含まれます。 (メニュー ボタンは、ハンバーガーまたはハンバーガー ボタンと呼ばれることがあります。) 品質チェック プロセスを早めるために、パレットが品質チェックに合格した場合、ユーザーは **品質チェック** ページを確認するだけです。
 
-    ![品質チェック ページ](media/quality-check.png "品質チェック ページ")
+    ![品質チェック ページ。](media/quality-check.png "品質チェック ページ")
 
 1. [確認] ボタンをクリックして、1 行目からパレット 1 の品質チェックを渡します。
 

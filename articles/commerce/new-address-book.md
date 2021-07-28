@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e963cf8cbae4651ad05126cdf465a386dea2d7a5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 052ac3291ea6d2984c25445b7165284dfdcfa2b2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798732"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353087"
 ---
 # <a name="create-new-address-book"></a>新しいアドレス帳の作成
 
@@ -40,7 +40,7 @@ Commerce では、顧客リストやチャネルの従業員リストを保存�
 
 次の図は、小売店舗の従業員アドレス帳の作成を示しています。
 
-![従業員のアドレス帳の例](media/address-books.png)
+![従業員のアドレス帳の例。](media/address-books.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

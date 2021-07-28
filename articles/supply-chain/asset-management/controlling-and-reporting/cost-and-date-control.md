@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016137"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354956"
 ---
 # <a name="cost-and-date-control"></a>原価および日付の管理
 
@@ -58,7 +58,7 @@ ms.locfileid: "6016137"
 
     次の図は、**資産原価管理** ダイアログの例を示します。
 
-    ![資産原価管理ダイアログ ボックス](media/01-controlling-and-reporting.png)
+    ![資産原価管理ダイアログ ボックス。](media/01-controlling-and-reporting.png)
 
 10. **資産原価管理** ページの、**グループ化** ボタンをクリックすると、計算の必要な詳細レベルが表示されます。 選択した **グループ化** ボタンが強調表示されます。 ボタンをクリックして、有効または無効にします。
 
@@ -71,7 +71,7 @@ ms.locfileid: "6016137"
 - **オープン状態の確定済み費用** フィールドでは、注文または入庫したもののまだ支払われていない品目、時間、およびサービスに対する支払の確定が表示されます。 
 - すべての消費登録が転記された後、**実際原価** フィールドでは関連する原価が表示されます。
 
-![資産原価管理での計算結果の例](media/02-controlling-and-reporting.png)
+![資産原価管理での計算結果の例。](media/02-controlling-and-reporting.png)
 
 原価計算を行う別の方法は、**すべての資産** または **有効な資産** で複数の資産を選択することです。 その後、**一般** タブで **原価管理** ボタンをクリックします。**資産原価管理** ダイアログでは、選択された資産が **対象に含めるレコード** クイック タブの **資産** フィールドに自動的に挿入されます。 **OK** をクリックすると、選択された資産に対する原価計算が表示されます。 同じ手順を、**すべての機能的な場所** または **有効な機能的な場所** の機能的な場所、および **すべてのワーク オーダー** または **有効なワーク オーダー** のワーク オーダーに対して実行できます。
 
@@ -99,7 +99,7 @@ ms.locfileid: "6016137"
 - **平均終了遅延** フィールドには、実際の終了日と比較した作業指示書での終了予定日との日数の差が表示されます。 たとえば、実際の終了日が終了予定日の 3 日後だった場合、このフィールドに "3" が表示されます。  
 - **発生回数** フィールドには、作業指示書での開始予定日と実際の開始日、および終了予定日と実際の終了日に関連して誤差が発生した回数が表示されます。
 
-![作業指示書日付管理での計算結果の例](media/03-controlling-and-reporting.png)
+![作業指示書日付管理での計算結果の例。](media/03-controlling-and-reporting.png)
 
 
 

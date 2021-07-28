@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4e2843ecb30b75d2a8d97ceff5b5825e0bd704
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837948"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360128"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>資産管理モバイル ワークスペースの使用
 
@@ -60,7 +60,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 1. サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-    ![ワークスペースの選択](media/am-mobile-01.png "ワークスペースの選択")
+    ![ワークスペースを選択します。](media/am-mobile-01.png "ワークスペースの選択")
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>カレンダー表示の割り当てられた作業指示書ジョブの表示
 
@@ -72,7 +72,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 1. ジョブの詳細を表示するには、一覧の作業指示書ジョブを選択します。資産と機能的な場所の詳細、および **添付ファイル**、**チェックリスト**、**ツール**、**資産カウンター**、**メモ**、**仕訳帳** を表示する、その他のナビゲーションリンクなどがあります。
 
-    ![カレンダー表示の割り当てられた作業指示書ジョブの表示](media/am-mobile-02.png "カレンダー表示の割り当てられた作業指示書ジョブの表示")
+    ![カレンダー表示の割り当てられた作業指示書ジョブを表示します。](media/am-mobile-02.png "カレンダー表示の割り当てられた作業指示書ジョブの表示")
 
 ## <a name="create-a-work-order-job"></a>作業指示書ジョブの作成
 
@@ -90,7 +90,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 1. **完了** を選択します。
 
-    ![明細行の追加画面](media/am-mobile-03.png "明細行の追加画面")
+    ![明細行の追加画面。](media/am-mobile-03.png "明細行の追加画面")
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>作業指示書ジョブへの添付ファイルの追加
@@ -112,7 +112,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 1. **完了** を選択します。
 
-    ![作業指示書ジョブの添付ファイルの表示と追加](media/am-mobile-04.png "作業指示書ジョブの添付ファイルの表示と追加")
+    ![作業指示書ジョブの添付ファイルを表示および追加します。](media/am-mobile-04.png "作業指示書ジョブの添付ファイルの表示と追加")
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>作業指示書ジョブのメンテナンス チェックリストの表示
 
@@ -129,7 +129,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 1. 戻るボタン (**<**) を選択し、前のページに戻ります。
 
-    ![管理チェックリストと明細行の詳細](media/am-mobile-05.png "管理チェックリストと明細行の詳細")
+    ![メンテナンス チェックリストと明細行の詳細。](media/am-mobile-05.png "管理チェックリストと明細行の詳細")
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>作業指示書ジョブの資産カウンターの表示と更新
 
@@ -146,7 +146,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 1. 新しいカウンター値を入力し、**完了** を選択します。
 
-    ![資産カウンターの表示および更新](media/am-mobile-06.png "資産カウンターの表示および更新")
+    ![資産カウンターを表示および更新します。](media/am-mobile-06.png "資産カウンターの表示および更新")
 
 ## <a name="register-consumption-on-a-work-order-job"></a>作業指示書ジョブに関する消費の登録
 
@@ -178,7 +178,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
     1. 経費の登録の **原価価格** を入力します。
     1. **完了** を選択します。
 
-    ![作業指示書の仕訳帳の更新](media/am-mobile-07.png "作業指示書の仕訳帳の更新")
+    ![作業指示書の仕訳帳を更新します。](media/am-mobile-07.png "作業指示書の仕訳帳の更新")
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>作業指示書のライフサイクルの状態を更新します。
 
@@ -216,7 +216,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 1. **完了** を選択します。
 
-    ![メンテナンス要求の作成](media/am-mobile-09.png "メンテナンス要求の作成")
+    ![メンテナンス要求を作成します。](media/am-mobile-09.png "メンテナンス要求の作成")
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>メンテナンス要求に添付ファイルを追加する
 
@@ -236,7 +236,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 1. **完了** を選択します。
 
-    ![メンテナンス要求への添付ファイルの追加](media/am-mobile-10.png "メンテナンス要求への添付ファイルの追加")
+    ![メンテナンス要求への添付ファイルを追加します。](media/am-mobile-10.png "メンテナンス要求への添付ファイルの追加")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 61f96dae0643e3383afd91864e4c145f3b5c04c8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9ac440362379475b05c6a37019c25e3a96be3739
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792610"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349499"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Dynamics 365 Commerce 環境での Azure Data Lake Storage の有効化
 
@@ -59,7 +59,7 @@ Azure Data Lake Storage を有効にするために必要な手順の詳しい�
 
 次の図は、Azure Data Lake Storage コンフィギュレーションの例を示しています。
 
-![Azure Data Lake Storage コンフィギュレーションの例](./media/exampleADLSConfig1.png)
+![Azure Data Lake Storage コンフィギュレーションの例。](./media/exampleADLSConfig1.png)
 
 ### <a name="test-the-azure-data-lake-storage-connection"></a>Azure Data Lake Storage 接続のテスト
 
@@ -79,7 +79,7 @@ Azure Data Lake Storage を有効にするために必要な手順の詳しい�
 
 次の図は、自動更新が有効になっているエンティティ格納の例を示しています。
 
-![自動更新が有効になっているエンティティ格納の例](./media/exampleADLSConfig2.png)
+![自動更新が有効になっているエンティティ格納の例。](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage が環境に対してコンフィギュレーションされました。 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50ace9a2f8f5fa39dc927e11f0acd707167ef126
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837900"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346229"
 ---
 # <a name="register-consumption"></a>消費の登録
 
@@ -54,7 +54,7 @@ ms.locfileid: "5837900"
 
 次のスクリーンショットは、**ワーク オーダー仕訳帳** のワーク オーダーにおける時間と品目の登録の例を示しています。
 
-![図 1](media/01-consumption.png)
+![図 1。](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>複数のワーク オーダー ジョブを含むワーク オーダーの時間分割
@@ -73,13 +73,13 @@ ms.locfileid: "5837900"
 
 6. **時間** フィールドに、分割する作業時間を挿入します。
 
-    ![図 2](media/02-consumption.png)
+    ![図 2。](media/02-consumption.png)
 
 7. **OK** をクリックします。
 
 *例 :* 下のスクリーンショットには、3 つのワーク オーダー ジョブを含むワーク オーダーの仕訳帳明細行が表示されます。 3 つの作業時間を含む最初の明細行が分割され、各ワーク オーダー ジョブに 1 つの作業時間が登録されます。 3 つの時間登録明細行を作成した後で、元の時間登録明細行 (例の最初の明細行) をどうするか決定します。 そのままにすることも、削除することもできます。 
 
-![図 3](media/03-consumption.png)
+![図 3。](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>消費登録の財務分析コード
 

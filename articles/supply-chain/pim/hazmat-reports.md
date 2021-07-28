@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 07f103680cacc1273b2b28f6e4e905d6dabb006a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14de281927fa3e6410627839005c6b81a93d89bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820325"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347023"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>危険物の照会とレポート
 
@@ -29,7 +29,7 @@ Microsoft Dynamics 365 Supply Chain Management では、危険物に関連する
 
 次の図は、システムが危険物レポートを生成するときに発生する一連の活動を示しています。
 
-![危険物レポートの一連の活動](media/hazmat-report-sequence.png "危険物レポートの一連の活動")
+![危険物レポートの一連の活動。](media/hazmat-report-sequence.png "危険物レポートの一連の活動")
 
 ## <a name="set-up-hazardous-materials-reporting"></a><a name="set-up"></a>危険物レポートの設定
 

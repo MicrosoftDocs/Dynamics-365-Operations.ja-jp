@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f05f5af76aeb037d606d38a368a49d011f0d2bd6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 27a079e0fdc0fe1644e59a454659d77ec0eb416b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825569"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354207"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>資産および資産タイプに対する保証
 
@@ -47,7 +47,7 @@ ms.locfileid: "5825569"
     > [!IMPORTANT]
     > ワーク オーダーの **保証開始日** フィールドで日付が選択されている場合、保証はその日付のワーク オーダーに対して有効になります。 ワーク オーダーを作成すると、**保証開始日** フィールドは自動的に作成日に設定されます。 ただし、この日付は、保証契約の開始日などに変更することができます。
     >
-    > ![ワーク オーダー ページ](media/02-warranty.png)
+    > ![ワーク オーダー ページ。](media/02-warranty.png)
 
 > [!NOTE]
 > 仕入先保証の対象となる資産のワーク オーダーを作成する場合、そのワーク オーダーの期間中に予定された開始日があると、保証契約に関する通知が表示されます。 その後、必要に応じて、ワーク オーダーをキャンセルできます。

@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 06b5721c423330b8840bb546bdb144c3189c25bb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c350e6d6bfd4e699c55a4c0a57695b1b718b7167
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795384"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357765"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>"同じような商品を探す" 推奨事項の有効化
 
@@ -68,7 +68,7 @@ Commerce本社で"同様のスタイルを探す" 推奨機能を有効にする
 
 次の図は、Commerce本社の **機能管理** ページの **類似したスタイルを探す** 機能を示しています。
 
-![次の図は、Commerce 本社の [機能管理] ページの [類似したスタイルを探す] 機能を示しています。](./media/enableshopsimilarlooks.png)
+![次の図は、Commerce 本社の機能管理ページの類似したスタイルを探す機能を示しています。](./media/enableshopsimilarlooks.png)
 
 上記のタスクが完了すると、POS ターミナルは、**類似した製品を探す** パネルで自動的に拡張されます。 **詳細を表示** を選択すると、POS 端末のユーザーは、さらに絞り込むことができる、専用の "類似したスタイルを探す" ページに移動できます。
 
@@ -88,7 +88,7 @@ Commerce サイト ビルダーを使用することで、**類似したスタ�
 
 次の図は、サイト ビルダーの PDP 例上の **類似したスタイルを探すリンクを有効にする** チェック ボックスと **類似したスタイルを探す** ボタンを示しています。
 
-![サイト ビルダーの PDP 上で、[類似したスタイルを探すリンク] チェック ボックスと [類似したスタイルを探す] ボタンを有効化します。](./media/SSLecomtooling.png)
+![サイト ビルダーの PDP 上で、類似したスタイルを探すリンク チェック ボックスと類似したスタイルを探すボタンを有効化します。](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

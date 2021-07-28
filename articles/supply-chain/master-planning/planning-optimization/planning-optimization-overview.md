@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 5ecfa8ac4db050ee1e38f3b420d81beba19b9409
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9b55a48847e9c6201e7a93a2fb5d6622b581d785
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812958"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354716"
 ---
 # <a name="planning-optimization-overview"></a>計画の最適化の概要
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Supply Chain Management の計画の最適化アドイン
 
 次の図は、営業時間内に計画の最適化を実行する利点を示しています。
 
-![営業時間内に計画の最適化を実行する利点](media/PlanningOptimization1.png)
+![営業時間内に計画の最適化を実行する利点。](media/PlanningOptimization1.png)
 
 ## <a name="improved-performance"></a>パフォーマンスの向上
 
@@ -62,11 +62,11 @@ LCS から計画の最適化アドインをインストールすると、計画�
 
 次の図はデータ フローを示します。
 
-![再生成実行のためのデータ フロー](media/PlanningOptimization2.png)
+![再生成実行のためのデータ フロー。](media/PlanningOptimization2.png)
 
 ## <a name="related-resources"></a>関連するリソース
 
-[計画の最適化を開始する](get-started.md)
+[計画最適化の開始](get-started.md)
 
 [計画の最適化フィット分析](planning-optimization-fit-analysis.md)
 

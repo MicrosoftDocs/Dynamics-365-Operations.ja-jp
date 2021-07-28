@@ -2,7 +2,7 @@
 title: Human Resources パラメーターのコンフィギュレーション
 description: このトピックでは、Dynamics 365 Human Resources で会社固有のパラメーターを設定する方法を説明します。
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4c93e3d2644a380e3d5d2247961a8b6fb34568
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24d30aa06805b530cc069be0517279a11dff9ed4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052412"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356539"
 ---
 # <a name="configure-human-resources-parameters"></a>Human Resources パラメーターのコンフィギュレーション
 
@@ -30,7 +30,7 @@ ms.locfileid: "6052412"
 
 2 つのページが人事管理のパラメータの設定に使用されます。 会社間で共有されるパラメータに、**人事管理の共有パラメーター** ページを使用します。 会社固有のパラメータ (つまり、設定を単一の会社に適用する場合) に、**人事管理パラメータ** ページを使用します。
 
-![人事管理パラメーターに移動する](./media/hr-employee-self-service-human-resources-parameters.png)
+![人事管理パラメーターに移動する。](./media/hr-employee-self-service-human-resources-parameters.png)
 
 **人事管理パラメーター** ページで、設定は 6 つのタブに分割されます:
 
@@ -51,14 +51,15 @@ ms.locfileid: "6052412"
 
 **概要** タブの設定は、休暇、傷害と疾病、新規採用に関する情報の外観を定義します。 このタブの設定は、作業中と表示される既定のエントリも定義します。 特に、このタブでは次のことができます。
 
-- 未処理の休暇トランザクションに適用する色を選択します
-- レポートに使用するスタイル シートを指定します
-- トレーニング コースと休暇登録間の統合を有効にします
+- 未処理の休暇トランザクションに適用する色を選択します。
+- レポートに使用するスタイル シートを指定します。
+- トレーニング コースと休暇登録間の統合を有効にします。
 - この統合を制御するために使用する休暇コードを選択します。
 - けが/病気のケース インシデントを保持する期間を示します。
 - 新しい従業員の雇用時に表示される既定の ID 番号を指定します。
+- 勤続年数の計算に使用する日付を指定します。 
 
-![[全般] タブ](./media/hr-setup-parameters-general.png)
+![一般タブ。](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>採用
 
@@ -76,7 +77,7 @@ Dynamics 365 Finance では、**報酬** タブの設定は、ユーザーが固
 
 報酬の詳細については、[報酬プランの概要](hr-compensation-overview.md)を参照してください。
 
-![報酬タブ](./media/hr-setup-parameters-compensation.png)
+![報酬タブ。](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>番号順序
 
@@ -96,13 +97,13 @@ Dynamics 365 Finance では、**報酬** タブの設定は、ユーザーが固
 > [!NOTE]
 > 作業時間数は 1,250 を超えることはできず、雇用期間は 12 か月を超えることはできません。 これらの最大値は米国の連邦法に従います。
 
-![番号順序タブ](./media/hr-setup-parameters-number-sequences.png)
+![番号順序タブ。](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>FMLA
 
 FMLA タブでは、FMLA 資格条件と、FMLA 資格付与時間を設定します。 詳細については、[休暇および欠勤パラメーターのコンフィギュレーション](hr-leave-and-absence-parameters.md) を参照してください。
 
-![FMLA タブ ](./media/hr-setup-parameters-fmla.png)
+![FMLA タブ。](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>従業員セルフ サービス
 
@@ -115,7 +116,7 @@ FMLA タブでは、FMLA 資格条件と、FMLA 資格付与時間を設定し�
 
 従業員セルフ サービスの設定の詳細については、[従業員およびマネージャー セルフ サービスの概要](hr-employee-manager-self-service-overview.md)を参照してください。
 
-![従業員セルフ サービス タブ](./media/hr-setup-parameters-employee-self-service.png)
+![従業員セルフ サービス タブ。](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>マネージャー セルフ サービス
 
@@ -129,13 +130,13 @@ FMLA タブでは、FMLA 資格条件と、FMLA 資格付与時間を設定し�
 
 マネージャー セルフ サービスの設定の詳細については、[従業員およびマネージャー セルフ サービスの概要](hr-employee-manager-self-service-overview.md)を参照してください。
 
-![マネージャー セルフ サービス タブ](./media/hr-setup-parameters-manager-self-service.png)
+![マネージャー セルフ サービス タブ。](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>給付金管理
 
 給付金管理タブで、給付金管理の電子メール オプションを構成できます。 給付金管理の設定および使用の詳細については、[給付金管理の概要](hr-benefits-management-overview.md)を参照してください。
 
-![給付金管理タブ](./media/hr-setup-parameters-benefits-management.png)
+![給付金管理タブ。](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>休暇
 
@@ -145,7 +146,7 @@ FMLA タブでは、FMLA 資格条件と、FMLA 資格付与時間を設定し�
 
 **支払方法** タブで、組織でサポートされている支払方法を選択できます。 報酬の構成の詳細については、[報酬プランの概要](hr-compensation-overview.md)を参照してください。
 
-![支払方法タブ](./media/hr-setup-parameters-payment-methods.png)
+![支払方法タブ。](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

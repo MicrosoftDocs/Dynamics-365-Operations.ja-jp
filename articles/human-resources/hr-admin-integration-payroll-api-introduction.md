@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058563"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360571"
 ---
 # <a name="payroll-integration-api-introduction"></a>給与統合 API の概要
 
@@ -26,7 +26,7 @@ ms.locfileid: "6058563"
 
 このドキュメントでは、Dynamics 365 Human Resources 給与統合 API について説明します。 API を使用すると、人事管理と給与システム パートナー間のエンド ツー エンドの統合を合理化できます。 統合された経験は、Human Resources で、従業員のプロファイル、給与と控除、および貢献度情報で始まります。 従業員を雇用し、必要なプロファイルと給与情報を Human Resources に入力すると、給与システムはこの情報を取得して、給与の処理時に使用します。 従業員に対して行われた更新や支払情報も、後で支払の実行で使用されます。
 
-![給与統合フロー](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![給与統合フロー。](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 統合を有効にするため、Human Resources は、次のコンポーネントが含まれます。
 
@@ -60,7 +60,7 @@ API 用の仮想テーブルの生成の詳細については、[Dataverse 仮�
 
 次の図では、API 内の関係性を示しています。 Human Resources 内の既存のエンティティには、その他のエンティティに対する外部キーがあり、それについてはここでは示されていません。 このドキュメントでは、給与統合のシナリオに固有のエンティティに関する情報を提供します。 しかし、Human Resources 向け Dataverse Web API には他にも多くのエンティティが存在しており、これらのエンティティも統合に関連している可能性があります。 これらのエンティティの一部は、外部キーとの関係性やナビゲーション プロパティで参照されます。
 
-![給与統合の API データ モデル](media/hr-admin-payroll-api-data-model.png)
+[![給与統合の API データ モデル。](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## <a name="payroll-employee-and-related-entities"></a>給与従業員および関連エンティティ
 
@@ -68,7 +68,8 @@ API 用の仮想テーブルの生成の詳細については、[Dataverse 仮�
 
 - [給与従業員](hr-admin-integration-payroll-api-payroll-employee.md)
 - [給与作業者の住所](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [固定報酬の報酬計画](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [固定報酬の報酬計画](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [固定報酬の報酬計画](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [給与職位職務](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [給与職位](hr-admin-integration-payroll-api-payroll-position.md)
 

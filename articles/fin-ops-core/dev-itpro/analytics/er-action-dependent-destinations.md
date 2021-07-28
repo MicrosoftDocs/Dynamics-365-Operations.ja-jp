@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893581"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358672"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>アクション依存の ER 送信先を構成する
 
@@ -69,11 +69,11 @@ Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その
 
 次の図は、各レコードが個別のユーザー アクションに構成されている場合に、この ER 送信先を個別の送信先レコードのセットとして構成を行う方法を示しています:
 
-![1 つのユーザー アクションに対してすべての送信先レコードが構成されている場合に、ER 形式のアクション依存の送信先設定を持つ電子申告の送信先ページ](./media/er-destination-action-dependent-01.png)
+![1 つのユーザー アクションに対してすべての送信先レコードが構成されている場合に、ER 形式のアクション依存の送信先設定を持つ電子申告の送信先ページ。](./media/er-destination-action-dependent-01.png)
 
 次の図は、各レコードが個別の送信先に構成されている場合に、ER 送信先を個別の送信先レコードのセットとして代わりに同じ構成を行う方法を示しています:
 
-![1 つの送信先に対してすべての送信先レコードが構成されている場合に、ER 形式のアクション依存の送信先設定を持つ電子申告の送信先ページ](./media/er-destination-action-dependent-01a.png)
+![1 つの送信先に対してすべての送信先レコードが構成されている場合に、ER 形式のアクション依存の送信先設定を持つ電子申告の送信先ページ。](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > 実行している ER 形式のアクション コードが指定されている一方で、そのアクション コードに送信先が構成されていない場合は、[既定](electronic-reporting-destinations.md#default-behavior) の送信先の動作が適用されます。
@@ -84,7 +84,7 @@ ER 形式を実行するときに、構成済の送信先設定を実行時に�
 
 次の図では、このトピックで前述したように、**プリンター** アクションがプロビジョニングされ、ER 送信先がこの形式に対して構成されている場合に、自由書式の請求書が [転記](../../../finance/accounts-receivable/create-free-text-invoice-new.md) され、**自由書式の請求書 (Excel)** ER 形式が実行されて、このドキュメントが生成されるときに表示される **電子申告形式の送信先** ダイアログ ボックスの例を示しています。
 
-![実行中の ER 形式に対して初期構成された ER 送信先を変更するオプションを表示するダイアログ ボックス](./media/er-destination-action-dependent-02.gif)
+![実行中の ER 形式に対して初期構成された ER 送信先を変更するオプションを表示するダイアログ ボックス。](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > 実行中の ER 形式の複数のコンポーネントに ER 送信先を構成した場合、ER 形式の構成済コンポーネントごとにオプションが個別に提供されます。
@@ -103,7 +103,7 @@ ER 形式を実行するときに、構成済の送信先設定を実行時に�
 6. **構成デバッグ ログ** ページで、ER の実行ログをフィルター処理して、ER 形式の実行のログを検索します。
 7. ER 形式の実行にアクションが指定されている場合は、指定されたユーザー アクション コードを示すレコードを含む必要があるログのエントリを確認します。
 
-    ![ER 形式のフィルター処理された実行に対して指定されたユーザー アクション コードに関する情報を含む電子申告実行ログ ページ](./media/er-destination-action-dependent-03.png)
+    ![ER 形式のフィルター処理された実行に対して指定されたユーザー アクション コードに関する情報を含む電子申告実行ログ ページ。](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">ビジネス ドキュメントの一覧 (ウェーブ 1)</a>
 

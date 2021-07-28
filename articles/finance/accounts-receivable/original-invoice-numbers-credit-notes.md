@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 798e38d7fea53a13d713734dd0521552974176ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897335"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347837"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>貸方票での元の請求書への参照
 
@@ -51,7 +51,7 @@ ms.locfileid: "5897335"
 1. **売掛金勘定** \> **設定** \> **売掛金勘定パラメーター** に移動します。
 2. **更新** タブの **請求書** クイックタブで、**クレジット請求書のレイアウトを販売請求書とプロジェクト請求書レポートに適用する** オプションを **はい** に設定します。
 
-![売掛金のパラメーターを構成する](media/original-invoice-number-in-credit-note.jpg)
+![売掛金のパラメーターを構成する。](media/original-invoice-number-in-credit-note.jpg)
 
 ## <a name="define-references-to-original-invoices"></a>元の請求書への参照を定義する
 
@@ -65,7 +65,7 @@ ms.locfileid: "5897335"
 4. アクション ペインの、**請求書** タブで、**機能** グループから **貸方請求書** を選択します。
 5. 元の請求書への参照を入力し、修正の理由を選択します。
 
-![自由形式請求書の参照の定義](media/reference-original-invoice-FTI.jpg)
+![自由形式請求書の参照の定義。](media/reference-original-invoice-FTI.jpg)
 
 ### <a name="customer-credit-note"></a>顧客訂正票
 
@@ -74,7 +74,7 @@ ms.locfileid: "5897335"
 3. [アクション ウィンドウ] の **販売** タブで、 **訂正票** グループで、**訂正票** を選択します。
 4. 修正の理由を入力します。 請求書の原本への参照が自動的に確立されます。
 
-![販売注文の参照を定義する](media/reference-original-invoice-SO.jpg)
+![販売注文の参照を定義する。](media/reference-original-invoice-SO.jpg)
 
 ### <a name="project-credit-note"></a>プロジェクト訂正票
 
@@ -84,13 +84,13 @@ ms.locfileid: "5897335"
 4. **貸方請求書** を選択します。
 5. 修正の理由を入力します。 請求書の原本への参照が自動的に確立されます。
 
-![プロジェクト請求書の参照の定義](media/reference-original-invoice-project.jpg)
+![プロジェクト請求書の参照の定義。](media/reference-original-invoice-project.jpg)
 
 ## <a name="printing-credit-notes"></a>訂正票の印刷
 
 自由形式、顧客、プロジェクトの貸方伝票を印刷する場合は、元の請求書への参照、修正理由が含まれます。
 
-![印刷された訂正票](media/credit-note-FTI.jpg)
+![印刷された訂正票。](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > 請求書の原本への参照が印刷されることを前提として、文書の印刷可能な形式が正しく設定されていることを確認してください。

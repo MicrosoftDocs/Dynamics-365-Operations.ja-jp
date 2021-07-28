@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 712f3e7cdfb8d521ae2afb59d90bc5102da53cb7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9be41f459b8ec8ca8ccad2360218b32299cb319e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813390"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354932"
 ---
 # <a name="asset-loans"></a>資産ローン
 
@@ -44,7 +44,7 @@ ms.locfileid: "5813390"
 
 他の場所または顧客に貸与したすべての資産の一覧を表示するには、**資産管理** \> **共通** \> **資産ローン** \> **すべての資産ローン** を選択します。 資産に対して **終了** チェック ボックスがオンの場合、資産は会社に返却済として登録されています。
 
-![メンテナンス要求の管理](media/06-manage-maintenance-requests.png)
+![メンテナンス要求を管理します。](media/06-manage-maintenance-requests.png)
 
 **有効な資産ローン** ページで、会社に返却されていないすべてのローン資産の一覧を表示できます。
 
