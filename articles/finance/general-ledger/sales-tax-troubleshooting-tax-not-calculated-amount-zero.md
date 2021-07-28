@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c398579a0a408e7f5625a3e801a967955c4b1e5b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c731e0284b720394059384e21deea1ea4407718c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020118"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352813"
 ---
 # <a name="tax-isnt-calculated-or-the-tax-amount-is-zero"></a>税金が計算されない、または税額がゼロになる
 
@@ -32,17 +32,17 @@ ms.locfileid: "6020118"
 
 1. トランザクション明細行で、**明細行の詳細** クイック タブの、**設定** タブの、**消費税** セクションで、**品目消費税グループ** フィールドと **消費税グループ** フィールドに正しい税グループが選択されていることを確認します。 正しい税グループが選択されていない場合は、選択します。
 
-    [![品目消費税グループと消費税グループフィールド](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
+    [![品目消費税グループと消費税グループフィールド。](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
 
 2. **税** \> **間接税** \> **消費税** \> **消費税グループ** の順に移動します。
 3. 適切な消費税グループを選択し、**設定** クイック タブで、**消費税コード** フィールドの税コードをメモします。
 
-    [![消費税グループ ページ](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
+    [![消費税グループ ページ。](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
 
 4. **税** \> **間接税** \> **消費税** \> **品目消費税グループ** の順に移動します。
 5. 適切な品目消費税グループを選択し、**設定** クイック タブで、**消費税コード** フィールドの税コードが消費税グループの税コードと一致しているかを確認します。
 
-    [![品目消費税グループ ページ](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
+    [![品目消費税グループ ページ。](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
 
 6. 税コードが一致しない場合は、消費税コードをグループのいずれかに更新します。
 
@@ -53,12 +53,12 @@ ms.locfileid: "6020118"
 1. **税** \> **間接税** \> **消費税** \> **消費税グループ** の順に移動します。
 2. 適切な消費税グループを選択し、**設定** クイック タブで、**免税** チェック ボックスがオフになっていることを確認します。 選択されている場合はオフにしてください。
 
-    [![消費税グループ ページの免税チェック ボックス](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
+    [![消費税グループ ページの免税チェック ボックス。](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
 
 3. **税** \> **間接税** \> **消費税** \> **消費税コード** の順に移動します。
 4. 適切な消費税コードを選択し、**値** フィールドの税率の値が 0 (ゼロ) でないかを確認します。 0 の場合は、フィールドを更新して、正確な税率を設定します。
 
-    [![消費税コード値ページの値フィールド](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
+    [![消費税コード値ページの値フィールド。](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
 ## <a name="determine-whether-zero-is-the-correct-tax-amount"></a>ゼロが正しい税額かどうかを判断する
 
@@ -67,7 +67,7 @@ ms.locfileid: "6020118"
 1. **一般会計** \> **元帳の設定** \> **総勘定元帳パラメーター** の順に移動します。
 2. **消費税** タブの、**計算方法** フィールドで、**合計** が選択されていることを確認します。
 
-    [![総勘定元帳パラメーター ページの計算フィールド](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
+    [![総勘定元帳パラメーター ページの計算フィールド。](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
 
 3. **税** \> **間接税** \> **消費税** \> **消費税コード** の順に移動します。
 4. 適切な消費税コードを選択し、**計算** \> **基準金額** を選択して、基準金額が **請求書残高の正味金額** または **その他の売上税金額を含む請求合計** に設定されていることを確認します。 詳細については、[その他の売上税金額を含む請求合計](marginal-base-field.md#invoice-total-incl-other-sales-tax-amounts)を参照してください。

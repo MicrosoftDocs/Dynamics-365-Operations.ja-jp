@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890834"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348489"
 ---
 # <a name="set-up-electronic-invoicing"></a>電子請求の設定
 
@@ -37,7 +37,7 @@ ms.locfileid: "5890834"
 
 次の図は、電子請求機能の主要なコンポーネントを示しています。
 
-![電子請求機能の概要](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![電子請求機能の概要。](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 請求書の形式やアクション フローが異なるため、機能の設定は国や地域、または業務上の要件によって異なる場合があります。
 
@@ -50,7 +50,7 @@ ms.locfileid: "5890834"
 3. **電子請求機能** ページで、**インポート** を選択し、ER データ モデル コンフィギュレーションをグローバル リポジトリからインポートします。
 4. **追加** を選択し、電子請求機能を作成します。 機能を最初から作成することも、既存の電子請求機能から派生させることもできます。
 
-    ![電子請求機能の追加](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![電子請求機能を追加します。](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > 新しい電子請求機能を作成すると、バージョン番号が付与され、その既定のステータスが **ドラフト** に設定されます。
@@ -63,21 +63,21 @@ ms.locfileid: "5890834"
 
 1. **電子請求機能** ページの **コンフィギュレーション** タブで **追加** を選択して、電子請求機能の ER ファイル形式のコンフィギュレーションを追加します。
 
-    ![電子請求機能のコンフィギュレーションの追加](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![電子請求機能のコンフィギュレーションを追加します。](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > 電子請求機能を最初から作成する場合は、すべての ER ファイル形式のコンフィギュレーションを手動で追加する必要があります。 既存の機能から電子請求機能を派生させる場合は、ER ファイル形式のコンフィギュレーションが、元の電子請求機能から継承されるため、自動的に作成されます。
 
 2. **編集** を選択して、ER ファイル形式のコンフィギュレーションを編集できる **形式デザイナー** ページを開きます。
 
-    ![電子請求機能のコンフィギュレーションの編集](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![電子請求機能のコンフィギュレーションを編集します。](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > 形式を編集している間、コンフィギュレーション バージョンのステータスは **ドラフト** に設定されます。
 
 3. ファイル形式のコンフィギュレーションを変更するには、**形式デザイナー** ページを使用します。 詳細については、[電子ドキュメントのコンフィギュレーションの作成](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md) を参照してください。
 
-    ![形式デザイナーのページ](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![形式デザイナー ページです。](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>機能設定
 
@@ -87,18 +87,18 @@ ms.locfileid: "5890834"
 
 1. **電子請求機能** ページの **設定** タブで **追加** を選択して、電子請求機能に機能設定を追加します。
 
-    ![電子請求機能設定の追加](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![電子請求機能設定を追加します。](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > 電子請求機能を最初から作成する場合は、必要なすべての機能設定を手動で追加する必要があります。 既存の機能から電子請求機能を派生させる場合は、すべての機能設定が、元の電子請求機能から継承されるため、自動的に作成されます。
 
 2. 機能バージョンの設定を編集するには、**編集** を選択します。
 
-    ![電子請求機能設定の編集](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![電子請求機能設定を編集します。](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. **機能バージョン設定** ページを使用して、アクション、適用ルール、および変数をコンフィギュレーションします。
 
-    ![アクション、適用ルール、変数](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![アクション、適用ルール、および変数。](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>アクション
 
@@ -113,7 +113,7 @@ ms.locfileid: "5890834"
 - **新規** または **削除** を選択して、新しいアクションを追加するか、既存のアクションを削除します。
 - **上へ** または **下へ** を選択して、グリッド内で選択したアクションを上下に移動し、実行順序を変更します。 アクションは、グリッドに表示されている順序で上から下に実行されます。
 
-![アクションの管理](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![アクションを管理します。](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 次の表では、**アクション** クイック タブで使用できるフィールドについて説明します。
 
@@ -129,7 +129,7 @@ ms.locfileid: "5890834"
 
 **パラメーター** クイック タブは、**アクション** クイック タブで選択されたアクションのパラメータを一覧表示します。
 
-![パラメーター クイック タブ](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![パラメーター クイック タブ。](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 次の表では、**パラメーター** クイック タブで使用できるフィールドについて説明します。
 
@@ -259,20 +259,20 @@ ms.locfileid: "5890834"
 
 1. **機能バージョン設定** ページの **適用ルール** タブで **新規** を選択して、適用ルールを追加します。
 
-    ![適用ルールの管理](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![適用ルールを管理します。](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. グリッドで、グループ化する句を選択します。
 3. **句のグループ化** を選択します。
 
-    ![句のグループ化](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![句のグループ化。](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     句をグループ化すると、新しい列がグリッドに追加されます。 この列は、グループ化された句の論理演算子を指定します。
 
-    ![グループ化された句の論理演算子](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![グループ化された句の論理演算子。](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 句をグループ化を解除するには、グループ化を解除するグループ化された句を選択し、**句のグループ化解除** を選択します。
 
-![句のグループ化解除](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![句のグループ化解除。](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > 句のグループ化を解除するときは、常に最も内側のグループ化レベルから開始します。
@@ -294,7 +294,7 @@ ms.locfileid: "5890834"
 
 - **機能バージョン設定** ページの **変数** タブで **新規** または **削除** を選択して、変数を管理します。
 
-    ![変数の管理](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![変数を管理します。](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 次の表では、**変数** タブで使用できるフィールドについて説明します。
 
@@ -310,7 +310,7 @@ ms.locfileid: "5890834"
 
 - **機能バージョン設定** ページのアクション ペインで **検証** を選択して、機能バージョンの設定を検証します。
 
-   ![[検証] ボタンの選択](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![[検証] ボタンを選択します。](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 検証では、コンフィギュレーション全体の整合性が確認されます。 たとえば、アクションの特定のパラメーターが必須であるが、その値が空白のままである場合、検証ではこの不整合が検出され、警告が表示されます。
 
@@ -323,7 +323,7 @@ ms.locfileid: "5890834"
 1. **電子請求機能** ページの **環境** タブで **有効化** を選択して、電子請求アドオン環境を追加します。
 2. **有効開始** フィールドに、新しい環境が有効になる日付を入力します。
 
-![電子請求環境の有効化](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![電子請求環境を有効化します。](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>組織
 

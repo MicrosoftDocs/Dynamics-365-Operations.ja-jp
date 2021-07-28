@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62f812c7c7fa06deb5f41508044b029e6c5ca4a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 24f019547b9edc932c203d5dc8c73013007af599
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825737"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361045"
 ---
 # <a name="maintenance-rounds"></a>メンテナンス ラウンド
 
@@ -80,7 +80,7 @@ ms.locfileid: "5825737"
 
 次の図は、3 つの資産を含むメンテナンス ラウンドの例を表示します。
 
-![図 1](media/13-preventive-maintenance.png)
+![図 1。](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>メンテナンス ラウンドのスケジュール
@@ -106,9 +106,9 @@ ms.locfileid: "5825737"
 
 以下の 2 つの図では、**メンテナンス ラウンドのスケジュール** ダイアログのスケジュール ジョブと、そのスケジュールジョブに基ずく **全てのメンテナンス スケジュール** で作成されたメンテナンス スケジュールの明細行を表示します。
 
-![図 2](media/14-preventive-maintenance.png)
+![図 2。](media/14-preventive-maintenance.png)
 
-![図 3](media/15-preventive-maintenance.png)
+![図 3。](media/15-preventive-maintenance.png)
 
 - 仕入先保証の対象となる資産に作業指示書を手動で作成した場合、ユーザーに保証を確認するためのダイアログ ボックスが表示されます。 次に、作業指示書の作成をキャンセルできます。 自動的に作成される作業指示書については、保証関係のチェックは省略されます。  
 - **バックグラウンドで実行** クイック タブでバッチ ジョブを設定し、定期的にラウンドをスケジュールすることができます。  

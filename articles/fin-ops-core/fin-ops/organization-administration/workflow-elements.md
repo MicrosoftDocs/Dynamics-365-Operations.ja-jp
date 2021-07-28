@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20f320e84d5faaf964585f30581d24996131031c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e895c2d337139aa9a2b1f21b60675f956da9c7f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747154"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348556"
 ---
 # <a name="workflow-elements"></a>ワークフロー要素
 
@@ -60,7 +60,7 @@ ms.locfileid: "5747154"
 
 ワークフローを作成して、ドキュメントやドキュメントの行項目を処理できます。 たとえば、タイムシートの承認ワークフローが作成済みであるとします。 (このワークフローを *ドキュメント ワークフロー* と呼びます。) そのドキュメント ワークフローには、*行項目 ワークフロー* 要素を追加できます。 行項目要素の実行時には、ドキュメントの各行項目が処理のために送信されます。 すべての行項目を同じ行項目ワークフローで処理することも、各行項目を異なる行項目ワークフローで処理することもできます。 従業員が、次の図のようなタイム シートを提出したとします。
 
-![行項目を含むワークフロー](./media/workflow_lineitemworkflow.gif)
+![行項目を含むワークフロー。](./media/workflow_lineitemworkflow.gif)
 
 このシナリオの場合は、次のような行項目ワークフローを作成することもできます。
 

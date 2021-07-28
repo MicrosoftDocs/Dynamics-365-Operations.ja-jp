@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: f7bdd292893ee42d49bdf977a55d8b10896ca1cd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bb9d0e96f8bbdb49408b232eb0405a22d6f478bb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792442"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349211"
 ---
 # <a name="review-the-status-of-an-experiment"></a>実験のステータスを確認する
 Dynamics 365 Commerce の実験の設定と実行には、多くの手順が含まれます。 実験のライフサイクルの詳細については、[Dynamics 365 Commerce での実験](experimentation-overview.md) を参照してください。
@@ -41,7 +41,7 @@ Dynamics 365 Commerce の実験の設定と実行には、多くの手順が含�
 
 次の図は、両方の状態のセットと、それらが互いにどのように関連しているかを示します。
 
-[![実験の状態](./media/experimentation_statuses.svg)](./media/experimentation_statuses.svg#lightbox)
+[![実験の状態。](./media/experimentation_statuses.svg)](./media/experimentation_statuses.svg#lightbox)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

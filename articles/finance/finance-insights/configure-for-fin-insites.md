@@ -1,6 +1,6 @@
 ---
-title: Finance Insights の構成 (10.0.19 までのバージョン)
-description: このトピックでは、Finance Insights (10.0.19 までのバージョン) で使用できる機能をシステムで使用するための構成手順について説明します。
+title: Finance Insights の構成 (10.0.19 以前のバージョン)
+description: このトピックでは、Finance Insights (10.0.19 以前のバージョン) で使用できる機能をシステムで使用するための構成手順について説明します。
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 6b578962839a34a1e2ce0311f7d8e7ee57a10927
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186423"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357441"
 ---
-# <a name="configuration-for-finance-insights-preview"></a>Finance Insights の構成 (プレビュー版)
+# <a name="configuration-for-finance-insights-for-private-preview-preview---before-version-10019"></a>プライベート プレビュー (プレビュー) で使用する Finance insights の構成 - バージョン 10.0.19 以前
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "6186423"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> 次の Finance Insights の設定方法は、Microsoft Dynamics 365 Finance の 10.0.19 までのバージョンに有効です。 バージョン 10.0.20 以降で Finance Insights を設定するには、[Finance Insights の構成 (プレビュー) - バージョン 10.0.20 以降](configure-for-fin-insites-PubPrvw.md)を参照してください。
+> 次の Finance Insights の設定方法は、Microsoft Dynamics 365 Finance の 10.0.19 以前のバージョンに有効です。 バージョン 10.0.20 以降で Finance Insights を設定するには、[Finance Insights の構成 (プレビュー) - バージョン 10.0.20 以降](configure-for-fin-insites-PubPrvw.md)を参照してください。
 
 Finance insights では、Microsoft Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、強力な予測ツールを提供します。 このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。
 
@@ -59,7 +59,7 @@ Finance Insights の Dataverse のコンフィギュレーションを行うに�
 
     1. **環境** ページを開きます。
 
-        [![ 環境ページ](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        [![ 環境ページ。](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
     2. 上記で作成した Dataverse 環境を選択してから、**設定** を選択します。
     3. **リソース \> すべてのレガシー設定** を選択します。
@@ -792,6 +792,8 @@ LCS を使用して Azure Data Lake アドインを環境に追加するには�
     | CDS 組織の URL                                     | 上記からコピーした Dataverse 組織の URL です。 |
     | CDS Org ID                                               | 上記からコピーした Dataverse 組織の ID です。 |
 5. 有効化 **これはテナントの既定の環境ですか**。
+
+アドインのインストールに数分かかる場合があります。
     
 ## <a name="configure-the-entity-store"></a>エンティティの保存を構成する
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 94d38c5c3a091263b310f346f839e1a67d6c0609
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 79054573fa6f86bea5c4fe014233d71c01020348
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796127"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352593"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>チャンネル ナビゲーション階層を使用するようにチャンネルをコンフィギュレーションする
 
@@ -45,7 +45,7 @@ ms.locfileid: "5796127"
 
 次の図は、チャンネル ナビゲーション階層を使用するようにチャンネルをコンフィギュレーションする方法を示しています。
 
-![チャネル コンフィギュレーションの例](media/configure-channel-hierarchy-1.png)
+![チャネル コンフィギュレーションの例。](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>属性メタデータの設定
 
@@ -61,7 +61,7 @@ ms.locfileid: "5796127"
 
 次の図は、チャンネル カテゴリ ノードにコンフィギュレーションされているチャンネル製品属性の例を示しています。
 
-![チャンネル カテゴリ ノードのチャンネル属性](media/configure-channel-hierarchy-2.png)
+![チャンネル カテゴリ ノードのチャンネル属性。](media/configure-channel-hierarchy-2.png)
 
 ## <a name="publish-changes"></a>変更の公開
 
@@ -74,11 +74,11 @@ ms.locfileid: "5796127"
 
 次の図は、チャンネルの更新を公開する方法を示しています。
 
-![チャネル更新の公開](media/configure-channel-hierarchy-3.png)
+![チャネル更新を公開します。](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
-[チャンネル ナビゲーション階層を作成する](create-channel-hierarchy.md)
+[チャネル ナビゲーション階層の作成](create-channel-hierarchy.md)
 
 
 

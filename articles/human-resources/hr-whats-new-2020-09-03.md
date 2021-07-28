@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c8ad853b8d1f8383b23f2ac4341a5f37a904795
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: eae89e9c3bf32ab5a4c4e6c497c9d3baa5b75fde
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054455"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359224"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Dynamics 365 Human Resources (2020 年 9 月 3 日) の新機能および変更された機能
 
@@ -99,9 +99,9 @@ Human Resources の今後の機能の詳細については、[Dynamics 365 Human
 
 - Dynamics 365 2020 のリリース ウェーブ 2 プランの [組織および人事管理ワークフロー エクスペリエンスの機能強化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements)
 
-![自分自身に割り当てられた作業項目](./media/hr-workflow-work-items-assigned-to-me.png)
+![自分自身に割り当てられた作業項目。](./media/hr-workflow-work-items-assigned-to-me.png)
 
-![ワークフロー項目のクイックアクセス](./media/hr-workflow-quick-access.png)
+![ワークフロー項目のクイック アクセス。](./media/hr-workflow-quick-access.png)
 
 ## <a name="coming-soon"></a>間もなく公開
 

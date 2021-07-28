@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796151"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352617"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>コール センターの配送モードと費用の構成
 
@@ -65,11 +65,11 @@ Dynamics 365 Commerce で販売注文が発注される時、販売注文を入�
 
 通常、企業は階層化された費用をコンフィギュレーションします。 この場合、顧客が配送のために支払う金額は発注金額に基づきます。 階層化された費用をコンフィギュレーションするには、**請求金額** フィールドの費用を定義することに加え、**開始金額** および **終了金額** に値を入力します。 たとえば、50 ドルより小さい値の注文について、小売業者は陸上出荷のために 5.95 ドルを請求します。 50 ドル以上、100 ドル未満の注文については、小売業者は 7.95 ドルを請求します。 最後に、100 ドル以上の注文については、小売業者は無料配送を提供します。 次の図は、これらの費用のコンフィギュレーションを示します。
 
-![固定階層型の費用の例](media/fixedtieredcharges.png)
+![固定階層型の費用の例。](media/fixedtieredcharges.png)
 
 業務の要件に応じて、費用のカテゴリを混在させることができます。 たとえば、100 ドルより小さい値の注文について、出荷のために 9.95 ドルの固定費用がかかります。 次に、100 ドル以上の値の注文については、発注金額の 5 パーセントの割合で配送費用が計算されます。 次の図は、これらの費用のコンフィギュレーションを示します。
 
-![混合階層型の費用の例](media/mixedtieredcharges.png)
+![混合階層型の費用の例。](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>コール センターの注文入力時の配送モードの適用
 

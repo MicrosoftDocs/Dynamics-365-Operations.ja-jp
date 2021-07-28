@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f302f780fa8ba3d387a71770024a1bf7ad42c4ef
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e69c35745959c6f3a90a7c597d37316e9da5358e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910261"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359560"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service への倉庫の同期
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910261"
 
 このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に倉庫を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 次のテンプレートと基本的なタスクは、Supply Chain Management から Field Service への倉庫の同期を実行するために使用されます。
@@ -77,7 +77,7 @@ Field Service および Supply Chain Management の統合をサポートする�
 
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>倉庫 (Supply Chain Management から Field Service): 倉庫
 
-[![データ統合のテンプレートのマッピング](./media/Warehouse1.png)](./media/Warehouse1.png)
+[![データ統合のテンプレートのマッピング。](./media/Warehouse1.png)](./media/Warehouse1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

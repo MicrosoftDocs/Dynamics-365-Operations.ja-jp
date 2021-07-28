@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c31564fdc40cb0cba82b9ab8fbfdfee7adf4f4ee
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 579f2946bceceaacc3e4f1d664a5211ce40f705e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053012"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353689"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>福利厚生プログラムの定義および管理
 
@@ -32,7 +32,7 @@ Human Resources は、組織が従業員に対して提供または処理する�
 
 作業者を給付金に登録する前に、各給付金の要素を作成する必要があります。 これらの要素は同様の給付金計画を組み合わせて、控除割合と計算の詳細などの既定の設定を定義します。 これらの設定の多くは、作業者が給付金に後で登録されたときに調整できます。 各給付金計画に対して、組織が複数の登録オプションを提供するか、作業者が計画への登録を免除できます。 
 
-[![給付金プロセス フロー](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![給付金プロセス フロー。](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>給付金の要素
 
@@ -44,7 +44,7 @@ Human Resources は、組織が従業員に対して提供または処理する�
 
 視力または歯科などの各給付金のタイプごとに、組織は作業者に複数の計画を提供できます。 各計画ごとに、組織はさまざまなオプションを提供できます。 たとえば、作業者は年間の給与から、1 回 2 回または 3 回追加の定期生命保険の補充を購入できます。 計画とオプションの各組み合わせが、作業者が登録する給付金になります。 
 
-[![給付金の図](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![給付金の図。](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>適格性
 さまざまな要因により、雇用主が提供する給付金のさまざまなタイプに対する作業者の適格性が決定します。 Dynamics 365 Human Resources を使用して給付金を作成すると、その給付金が適用される適格性のタイプを設定できます。 

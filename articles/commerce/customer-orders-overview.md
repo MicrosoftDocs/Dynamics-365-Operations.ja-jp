@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936733"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349629"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>販売時点管理 (POS) の顧客注文
 
@@ -44,7 +46,7 @@ POS で顧客注文機能を使用する前に、コマース本部で必要な�
 
 顧客注文を使用するには、店舗チャネルで使用できる配送モードを構成する必要があります。 少なくとも1つの出荷モードを定義して、注文明細行が店舗から顧客に出荷される際に利用できるようにする必要があります。 また、注文明細行が店舗から集荷される際に使用可能な、少なくとも1つの出荷の集荷モードを定義する必要があります。 出荷モードは、コマース本部の **出荷モード** ページで定義されます。 コマース チャネルの出荷モードの設定方法については、[出荷モードの定義](./configure-call-center-delivery.md#define-delivery-modes)を参照してください。
 
-![出荷モードのページ](media/customer-order-modes-of-delivery.png)
+![出荷モードのページ。](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>フルフィルメント グループの設定
@@ -53,7 +55,7 @@ POS で顧客注文機能を使用する前に、コマース本部で必要な�
 
 Commerce のバージョン 10.0.12 およびそれ以降では、フルフィルメント グループで定義された倉庫、または倉庫/店舗の組み合わせが、出荷、集荷、出荷と集荷の両方に使用できるかどうかを定義することができます。 これによりビジネスに柔軟性が加わり、 出荷する商品の顧客注文を作成する際に選択できる倉庫と、集荷する商品の顧客注文を作成する際に選択できる店舗を決定できるようになります。 これらの構成オプションを利用するには、**フルフィルメント グループ内で「出荷」または「集荷」の場所を指定する** 機能を有効にする必要があります。 フルフィルメント グループにリンクされている倉庫が店舗でない場合は、出荷場所としてのみ構成できます。 集荷の注文が POS で構成されている場合は使用できません。
 
-![フルフィルメント グループのページ](media/customer-order-fulfillment-group.png)
+![フルフィルメント グループのページ。](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>チャネル設定の構成
 
@@ -65,7 +67,7 @@ POS で顧客注文を処理する場合は、店舗チャネルの設定をい�
 - **宛先に基づく税を使用する** - このオプションは、顧客の住所に出荷される注文明細行に適用される税金のグループを決定するために、出荷先の住所を使用するかどうかを示します。
 - **顧客に基づく税を使用する** - 顧客の自宅に出荷するためにPOSで作成された顧客注文に課税するために、顧客の配送先に定義されている課税グループを使用するかどうかを示します。
 
-![Microsoft Store ページにおける店舗のチャネル設定](media/customer-order-all-stores.png)
+![Microsoft Store ページにおける店舗のチャネル設定。](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>顧客オーダーのパラメータを設定する
 
@@ -80,7 +82,7 @@ POS で顧客注文を作成する前に、コマース本部で適切なパラ�
 - **出荷費用コード** ー **高度な自動請求を使用する** が  **はい** に設定されている場合、このパラメータ設定は無効です。 このオプションを  **いいえ** に設定すると、POS で顧客注文を作成する際に送料を手動で入力するように求めるメッセージが表示されます。 このパラメーターを使用して、ユーザーが出荷費用を入力した際に注文に適用される売掛金勘定費用コードをマッピングします。 請求金額コードは、配送料の財務計上ロジックを定義します。
 - **高度な自動請求の使用** - 顧客注文が POS で作成された際に、システムが計算する自動請求を使用する場合は、このオプションを **はい** に設定します。 これらの自動請求は、出荷手数料、またはその他の注文、または品目固有の請求費用を計算するために使用できます。 高度な自動請求機能を有効にする方法については、[オムニ チャネルの高度な自動請求](./omni-auto-charges.md) を参照してください。
 
-![コマース パラメーター ページの顧客注文タブ](media/customer-order-parameters.png)
+![コマース パラメーター ページの顧客注文タブ。](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>POS のトランザクション画面のレイアウトを更新する
 
@@ -95,7 +97,7 @@ POS [画面のレイアウト ](./pos-screen-layouts.md)が、顧客注文の作
 - **配送モードの変更** - この操作を使用すると、すでに出荷用に設定されている明細行の配送モードを迅速に変更することができるため、ユーザーは「すべての製品を出荷する」または「選択した製品を出荷する」フローを再度実行する必要はありません。
 - **保証金の上書き** - この操作は、選択された顧客注文に対して顧客が支払う保証金の金額を変更するために使用することができます。
 
-![POS トランザクション画面の操作](media/customer-order-screen-layout.png)
+![POS トランザクション画面の操作。](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>POS で顧客注文の作業を行う
 

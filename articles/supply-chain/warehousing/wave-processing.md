@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 4bf47b15b668a37f12edb3dbb842d19655fac97a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 76b11eaec0f22393e877c2837e2533a176018f2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019030"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355485"
 ---
 # <a name="wave-creation-and-processing"></a>ウェーブの作成と処理
 
@@ -42,7 +42,7 @@ ms.locfileid: "6019030"
 
 次の図は、出荷のウェーブの作成、処理、およびリリース方法を表しています。 番号は、このセクションの後のセクションに対応します。
 
-![ウェーブ作成の処理](media/wave-processing-diagram.png "ウェーブ作成の処理")
+![ウェーブ作成の処理。](media/wave-processing-diagram.png "ウェーブ作成の処理")
 
 ### <a name="prerequisites"></a>必要条件
 
@@ -158,7 +158,7 @@ ms.locfileid: "6019030"
 
 次のフローチャートは、ウェーブ処理中に計画作業がどのように作成されるかを示しています。
 
-![作業作成のスケジュール](media/schedule-work-creation-process.png)
+![作業作成のスケジュール。](media/schedule-work-creation-process.png)
 
 ### <a name="planned-work"></a>計画作業
 

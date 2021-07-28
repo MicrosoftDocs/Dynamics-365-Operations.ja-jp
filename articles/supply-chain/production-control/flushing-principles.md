@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b9ef6dfe3fe8b768c2535e2a185442cb99217fe2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 360172b8029faf128e9ab7e4eb34dfbed3cb3e21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809185"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354039"
 ---
 # <a name="flushing-principles"></a>部品消費ルール
 
@@ -30,7 +30,7 @@ ms.locfileid: "5809185"
 
 材料消費の前に、材料は、入庫場所に移動されます。 次の図がプロセスを示します。
 
-[![scenario4a](./media/scenario4a.png)](./media/scenario4a.png)
+[![scenario4a。](./media/scenario4a.png)](./media/scenario4a.png)
 
 1. 材料倉庫
 2. 原材料のピッキング

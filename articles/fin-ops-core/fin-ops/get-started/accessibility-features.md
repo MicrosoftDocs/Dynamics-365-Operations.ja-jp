@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5e9d1f33102ed08d9e5c486d4d1490d4b278a28e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744126"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360304"
 ---
 # <a name="accessibility-features"></a>ユーザー補助機能
 
@@ -52,13 +52,13 @@ ms.locfileid: "5744126"
 
 アクション ウィンドウの **販売注文** タブの **電子メール通知** グループで表示される **電子メール通知ログ** アクションを実行します。
 
-![アクション ウィンドウでの電子メール通知ログ アクション](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "アクション ウィンドウでの '電子メール通知ログ' アクション")
+![アクション ウィンドウでの電子メール通知ログ アクション。](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "アクション ウィンドウでの '電子メール通知ログ' アクション")
 
 1 つのオプションは、キーボードを使用することです。 Ctrl + F6 キーを押してアクション ウィンドウにフォーカスを移動し、タブ キーを繰り返し押してすべてのタブおよびアクションを移動して、**電子メール通知ログ** アクションがフォーカスされるようにします。
 
 ただし、アクションをさらに直接的に実行することもできます。 ページの任意の場所から、Ctrl + アポストロフィ (') キーを押してアクションの検索ボックスを表示します。
 
-![アクションの検索ボックス](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "アクションの検索ボックス")
+![アクションの検索ボックス。](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "アクションの検索ボックス")
 
 検索ボックスで、アクションを説明する記述を入力します。 アクションが利用可能になると、直接実行できます。 たとえば、**電子メール**、**notific** (単語の一部)、または **ログ** を入力して、電子メール通知ログ機能に "ジャンプ" できます。
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fe387631a1716c6612f9d475faff56d0aef3fdc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791683"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354616"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の製品評価の同期
 
@@ -59,7 +59,7 @@ ms.locfileid: "5791683"
 
 次の図は、コマースのサブジョブの詳細ページの例を表示しています。
 
-![RetailProductRating サブジョブの詳細](media/rnr-hq-ratings-sub-job.png)
+![RetailProductRating サブジョブの詳細。](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > **RetailProductRating** サブジョブを検索できない場合、コマース スケジューラを初期化する前に、**同期製品の評価** ジョブおよび **1040 CDX** ジョブが既に実行されている可能性があります。 この場合、次の手順に従って **完全データ同期** ジョブを実行します。
@@ -83,7 +83,7 @@ ms.locfileid: "5791683"
 
 次の図は、コマースのバッチ ジョブ コンフィギュレーションの例を表示しています。
 
-![製品評価の同期バッチ ジョブのコンフィギュレーション](media/rnr-hq-batchjob-recurrence.png)
+![製品評価の同期バッチ ジョブのコンフィギュレーション。](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>製品評価の同期のバッチ ジョブが正常に行われたことの確認
 
@@ -95,7 +95,7 @@ ms.locfileid: "5791683"
 
 次の図は、バッチ ジョブが 2 時間間隔で実行するようにスケジュールされている場合の、コマースでのバッチ ジョブの詳細の例を表示しています。
 
-![製品評価の同期バッチ ジョブの詳細](media/rnr-hq-batchjob-status-checking.png)
+![製品評価の同期バッチ ジョブの詳細。](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>POS で製品評価を使用可能にする
 
@@ -113,15 +113,15 @@ POS で製品の評価を有効にするには、次の手順に従います。
 
 次の図は、POS で製品評価を有効にするためのコマース パラメーターのコンフィギュレーションの例を表示しています。
 
-![POS での製品評価のコマース パラメーターのコンフィギュレーション](media/rnr-hq-enable-ratings-in-pos.png)
+![POS での製品評価のコマース パラメーターのコンフィギュレーション。](media/rnr-hq-enable-ratings-in-pos.png)
 
 以下の図は、POS の製品評価の例を表示しています。
 
-![POS での製品評価](media/rnr-pos-catalog-ratings.png)
+![POS での製品評価。](media/rnr-pos-catalog-ratings.png)
 
 次の図は、コール センター チャネルの製品評価の例を表示しています。
 
-![コール センター チャネルの製品評価](media/rnr-call-center-ratings.png)
+![コール センター チャネルの製品評価。](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

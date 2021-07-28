@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 16381
+ms.custom:
+- "16381"
+- intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: c6f4c9ad36eb2f1abfc9225f1e62e635cebacd47
+ms.sourcegitcommit: 42a93a96565c56c9c64642ed6e6e302b3fbfcd85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923449"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "6373370"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -35,7 +37,7 @@ ms.locfileid: "5923449"
 
 これらすべてのアプリでは、**ヘルプ** ウィンドウから製品固有のヘルプにアクセスできます。
 
-![[ヘルプ] ウィンドウ](./media/help-pane-ops-help.png)
+![ヘルプ ウィンドウ。](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
 
@@ -46,12 +48,23 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](/dynamics365/)) 
 
 docs.microsoft.com のコンテンツは、任意の検索エンジンを使用して検索できます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: **site:docs.microsoft.com dynamics 365 "検索する語句"**。
 
-## <a name="get-notified-about-changes-through-an-rss-feed"></a>RSS フィードを通じて変更の通知を受け取る
+<!--## Get notified about changes through an RSS feed
 
-docs.microsoft.com 上のコンテンツにおけるすべての更新について、Really Simple Syndication (RSS) フィードを購読するには、次のリンクを使用します:
+To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
 
-[RSS フィード](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
+[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
+> [!NOTE]
+> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+
+Alternatively, you can subscribe to an RSS feed by app:
+
+- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
+- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
+- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
+- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
 ### <a name="leave-us-feedback"></a>フィードバックをお送りください
 
 フィードバックまたはトピックに関するご質問がある場合は、ページ下部にコメントを記入してください。
@@ -60,7 +73,7 @@ docs.microsoft.com 上のコンテンツにおけるすべての更新につい�
 
 2. コメントを入力して、**フィードバックを送信する** を選択します。
 
-    ![コメントを投稿](./media/feedback.png)
+    ![コメントを投稿。](./media/feedback.png)
 
 > [!NOTE]
 > ドキュメントのフィードバックを送信する場合は、GitHub アカウントを使用してログインする必要があります。 詳細については、[GitHub プロファイルの設定と管理](https://help.github.com/github/setting-up-and-managing-your-github-profile)を参照してください 。
@@ -84,11 +97,11 @@ docs.microsoft.com 上のコンテンツにおけるすべての更新につい�
 
 Microsoft は、2017年12月の Dynamics 365 for Finance and Operations のリリースを介して製品バージョンのタスク ガイド ライブラリをリリースしました。 [ヘルプ ウィンドウからタスク ガイドにアクセスする](#accessing-task-guides-from-the-help-pane) セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。
 
-![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
+![タスク ガイドの読み取りビュー。](./media/task-guide-ops.png)
 
 ガイドのあるインタラクティブな経験を開始するには、**ヘルプ** ウィンドウ下部の **タスク ガイドの開始** を選択します。 進むべき箇所が黒いポインターで示されます。 ユーザー インターフェース (UI) に表示される指示に従い、指示されたデータを入力します。
 
-![タスク ガイドの手順書](./media/task-guide-step-1-ops.png)
+![タスク ガイドの手順書。](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > タスク ガイドの再生時には、実際のデータを入力します。 実稼働環境である場合、データは現在使用している会社で入力されます。
@@ -101,7 +114,7 @@ Microsoft は、2017年12月の Dynamics 365 for Finance and Operations のリ�
 
 ヘルプ コンテンツにアクセスするには、 **ヘルプ** ボタン ( **?**) を選択し、 **ヘルプ** を選択します。 または、**Ctrl+Shift+?** を押します。 どちらの場合も、**ヘルプ** ウィンドウが表示されます。 **ヘルプ** ウィンドウから 、現在使用している製品の領域に関連する概念的なトピックやタスクガイドにアクセスすることができます。
 
-![[ヘルプ] ウィンドウ](./media/help-pane-ops-help.png)
+![ヘルプ ウィンドウ。](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>ヘルプ ウィンドウからヘルプ トピックにアクセスする
 
@@ -118,13 +131,13 @@ Microsoft は、2017年12月の Dynamics 365 for Finance and Operations のリ�
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -132,7 +145,7 @@ On the **System parameters** page, follow these steps:
 
 システム管理者がこれらの手順を完了すると、**ヘルプ** ウィンドウを開いて **タスク ガイド** タブをクリックすることができます。そして現在表示しているページに対応したタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。 **ヘルプ** ウィンドウでタスク ガイドをクリックした後は、**ヘルプ** ウィンドウに段階を追った指示が表示され、タスク ガイドを再生できます。
 
-![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
+![タスク ガイドの読み取りビュー。](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Microsoft ライブラリの翻訳されたタスク ガイドはどこにありますか？
 

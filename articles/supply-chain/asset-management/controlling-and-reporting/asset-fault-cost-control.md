@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 44b101c3b386c3edd8aec4c44e8ee834519718ec
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bbf2d6b8e22981db76ca028073f8170cbe7f40b2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811185"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361069"
 ---
 # <a name="asset-fault-cost-control"></a>資産エラー原価管理
 
@@ -56,7 +56,7 @@ ms.locfileid: "5811185"
 - **実際原価** フィールドには、作業指示書の転記済原価が表示されます。 
 - **確定済み費用** フィールドには、作業指示書に関連して会社が確定した原価合計が表示されます。
 
-    ![図 1](media/05-controlling-and-reporting.png)
+    ![図 1。](media/05-controlling-and-reporting.png)
 
 エラーの設定方法に関しては、[エラー管理](../setup-for-work-orders/fault-management.md) トピックを参照してください。
 

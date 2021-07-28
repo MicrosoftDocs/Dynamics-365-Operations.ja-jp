@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e44e0ff5c36190d0f66afb6a59389fee826d8214
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823839"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360715"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>CFO ワークスペースへの財務分析コードの追加
 
@@ -45,14 +45,14 @@ ms.locfileid: "5823839"
 11. **クロス フィルター方向** 値を **単一** に変更します。
 12. **この関係を有効にする** および **参照整合性を仮定する** の両方を選択し、**OK** を選択し、次に **閉じる** を選択します。
 
-    [![リレーションシップを作成](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![リレーションシップを作成します。](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. **フィールド** 一覧で、表および使用可能な財務分析コードが表示されるべきです。 レポート レベルのフィルターに、使用する財務分析コードをドラッグします。
 14. 変更を保存します。
 15. アプリケーション オブジェクト ツリー (AOT) で、プロジェクトを右クリックし、**同期** を選択します。
 16. プロジェクトを構築して、結果を表示するアプリケーションを開きます。
 
-    [![完了済ワークスペース](./media/workspace.png)](./media/workspace.png)
+    [![完了済ワークスペース。](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

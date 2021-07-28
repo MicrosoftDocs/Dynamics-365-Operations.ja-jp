@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c5528545e0215b3a3f92b7bd5b492f82274d35a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6fd2a8548d4929a7a3b3b6d20adbc230c5edf6ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833045"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355230"
 ---
 # <a name="cost-control-workspace"></a>原価管理ワークスペース 
 
@@ -116,7 +116,7 @@ ms.locfileid: "5833045"
 
 マネージャなどのユーザーが使用可能なレポートの一覧は、**原価管理ワークスペースのコンフィギュレーション** ページの **公開済** オプションの設定によって制御します。
 
-![原価管理ワークスペースで表示できるレポート](./media/report-cost-control.png)
+![原価管理ワークスペースで表示できるレポート。](./media/report-cost-control.png)
 
 マネージャーは、表示する会計カレンダー期間を選択できます。 セッション日付を使用して既定の現在の期間を決定します。
 
@@ -140,7 +140,7 @@ ms.locfileid: "5833045"
 
 ユーザーは **コスト エントリ** をクリックして、必要に応じてエントリの詳細にドリルダウンします。
 
-![原価エントリ](./media/cost-entries.png)
+![原価エントリ。](./media/cost-entries.png)
 
 たとえば、賃借料はコスト センターに配分される経費です。 自分のコスト センターが維持する賃借料コストを把握する必要のあるユーザーは、ドリルダウンして賃借料の計算方法を参照することができます。
 
@@ -148,9 +148,9 @@ ms.locfileid: "5833045"
 
 次の例では、配賦基準は **フォーミュラの配賦基準** タイプで、そのフォーミュラが表示されます。 そのフォーミュラを定義する要素が一覧表示されます。 また、グリッドはコスト オブジェクトあたりに行われる計算を示します。
 
-![コスト オブジェクトあたりの計算](./media/cost-entries-allocation-base.png)
+![コスト オブジェクトあたりの計算。](./media/cost-entries-allocation-base.png)
 
-その他のリソース 
+追加リソース 
 
 [コスト オブジェクト コントローラーのアクセス権の定義](access-rights-cost-object-controller.md)
 

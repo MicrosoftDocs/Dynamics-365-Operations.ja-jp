@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: b285cefc35654695ee631cc73baa0ccc2c1b5ac9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102713"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359888"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>顧客ポータルをカスタマイズして使用する
 
@@ -27,7 +27,7 @@ ms.locfileid: "6102713"
 
 顧客 ポータルでは、既成 の Web ページとアクションが用意されています。 次のサイトマップは、これら Web ページとアクションの概要と、アクションを実行できるロールを示しています。
 
-![顧客ポータルのサイトマップ](media/customer-portal-site-map.png "顧客ポータルのサイトマップ")
+![顧客ポータルのサイトマップ。](media/customer-portal-site-map.png "顧客ポータルのサイトマップ")
 
 ## <a name="typical-customizations"></a>一般的なカスタマイズ
 
@@ -61,12 +61,12 @@ ms.locfileid: "6102713"
     - **要求番号** - 注文の要求番号を入力します。 このフィールドは必須ではありません。
     - **配送先の国/地域** - 品目が配送される国または地域を入力します。 このフィールドは、管理者以外のユーザーには自動的に設定されます。
 
-    ![注文情報のページ](media/customer-portal-order-information.png "注文情報のページ")
+    ![注文情報のページ。](media/customer-portal-order-information.png "注文情報のページ")
 
 1. **次へ** を選択します。
 1. **品目** ページで、**品目の追加** を選択します。
 
-    ![品目ページ](media/customer-portal-items.png "品目ページ")
+    ![品目ページ。](media/customer-portal-items.png "品目ページ")
 
 1. **品目情報** のダイアログ ボックスで、次のフィールドを設定します :
 
@@ -75,14 +75,14 @@ ms.locfileid: "6102713"
     - **単位** - 測定単位を指定します ( **個**、**kg**、**箱** など )。
     - **見積正味金額** - この値は、選択された単位の品目の見積価格 × 数量で計算されます。
 
-    ![品目情報のダイアログ ボックスの追加](media/customer-portal-item-information.png "品目情報のダイアログ ボックスの追加")
+    ![品目情報のダイアログ ボックス。](media/customer-portal-item-information.png "品目情報のダイアログ ボックスの追加")
 
 1. **送信** を選択して、品目を注文に追加します。
 1. 手順 4 から 6 を繰り返して、注文するすべての品目を追加します。
 1. 品目の追加の完了後は、**品目** ページで **次へ** を選択します。
 1. **注文情報** ページに注文の概要が表示されます。 注文内容と配送の詳細を確認します。 すべてが正しい場合は、**送信** を選択して注文を送信します。
 
-    ![完了した注文情報のページ](media/customer-portal-order-submit.png "完了した注文情報のページ")
+    ![完了した注文情報のページ。](media/customer-portal-order-submit.png "完了した注文情報のページ")
 
 ### <a name="standard-data-setup"></a>標準データの設定
 
@@ -147,19 +147,19 @@ ms.locfileid: "6102713"
 
 ホームページのタイル作成には、顧客ポータルのテンプレートに含まれるカスタム コントロールのみが使用されます。
 
-![ホームページのタイル](media/customer-portal-home-page-tiles.png "ホームページのタイル")
+![ホームページのタイル。](media/customer-portal-home-page-tiles.png "ホームページのタイル")
 
 タイルを変更するには、次の手順を実行します。
 
 1. [ポータル管理アプリ](/powerapps/maker/portals/configure/configure-portal)を開きます。
 1. 左のナビゲーション ウィンドウで、**ページ テンプレート** を選択します。
 
-    ![ポータル管理ナビゲーション ウィンドウ](media/customer-portal-nav.png "ポータル管理ナビゲーション ウィンドウ")
+    ![ポータル管理ナビゲーション ウィンドウ。](media/customer-portal-nav.png "ポータル管理ナビゲーション ウィンドウ")
 
 1. **ホーム** という名前のページ テンプレートを選択します。
 1. **Web テンプレート** フィールドで、**ホーム** リンクを選択して、そのページのソース コードを開きます。
 
-    ![Web テンプレートのフィールド](media/customer-portal-web-template.png "Web テンプレートのフィールド")
+    ![Web テンプレートのフィールド。](media/customer-portal-web-template.png "Web テンプレートのフィールド")
 
 1. ホーム ページのすべてのソース コードが表示され、必要に応じて変更できるようになります。
 

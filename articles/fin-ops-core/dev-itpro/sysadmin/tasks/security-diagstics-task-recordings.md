@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cb14a22a231d3fcc139228b59af00d405626cd2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745768"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358552"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>タスク記録のセキュリティ診断
 
@@ -39,7 +39,7 @@ ms.locfileid: "5745768"
 
 4. **ユーザー ID** フィールドでユーザー を選択します。 ユーザーが一部のメニュー項目に対するアクセス許可を持っていない場合、**不足しているアクセス許可** フィールドが **はい** に更新されます。
   
-  ![セキュリティ メニュー項目の詳細ページ](../media/Security-Menu-Item-Details.png)
+  ![セキュリティ メニュー項目の詳細ページ。](../media/Security-Menu-Item-Details.png)
 
 5. **参照の追加** を選択すると、欠落して いるアクセス許可を付与するロール、職務、特権などのセキュリティ オブジェクトの一覧が表示されます。
 6. リストからセキュリティ オブジェクトを選択します：

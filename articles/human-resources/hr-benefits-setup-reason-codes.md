@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6fc641233a1bd217de5b9eb6e06560b989f91c7b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 176ce59547456a14b494caa4dc3c2d8251920fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056351"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360547"
 ---
 # <a name="set-up-reason-codes"></a>理由コードの設定
 
@@ -56,15 +56,15 @@ Dynamics 365 Human Resources は、理由コードを使用して、従業員の
 
 1. 移行ステータスに関する詳細を示す **理由コード** を選択します。
 
-   [![理由コード](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+   [![理由コード。](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
 
 2. 移行に失敗した理由コードを選択します。
 
-   [![理由コードの移行状態](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+   [![理由コードの移行状態。](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
 
 3. **理由コードの移行** を選択します 。
 
-   [![理由コードを移行する](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+   [![理由コードを移行する。](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
 
 4. **福利厚生理由コード移行** ペインでは、Human Resources の理由コードにマッピングする 2 つのオプションがあります。
 
@@ -73,10 +73,10 @@ Dynamics 365 Human Resources は、理由コードを使用して、従業員の
      > 従業員管理で既存の理由コードを使用できるのは、別の福利厚生管理理由コードにまだ移行していない場合のみです。
    - 従業員管理に新しい理由コードを作成するには、**新しい理由コード** に新たな理由コードを入力し、**新しい説明** に説明を入力します。
 
-   [![従業員管理の理由コードへのマッピング](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+   [![従業員管理の理由コードへのマッピング。](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
 
 理由コードが Human Resources に移行した後で、福利厚生管理でそれらを使用するオプションは自動的に **はい** に設定 されます。
 
-[![福利厚生管理で理由コードを使用する](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+[![福利厚生管理で理由コードを使用する。](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
