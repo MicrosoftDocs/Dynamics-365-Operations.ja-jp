@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a575c04a5042e4db08f387bc7bce46225c109844
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753507"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347999"
 ---
 # <a name="email-er-destination-type"></a>ER 電子メール送信先のタイプ
 
@@ -48,13 +48,13 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 2 つの方法で ER の電子メール アドレスを構成できます。 構成は、印刷管理機能が完了するのと同じ方法で完了させることも、またフォーミュラでER 構成への直接参照を使用してメール アドレスを解決することもできます。
 
-[![電子メールの送信先に対して有効オプションを "はい" に設定する](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+[![電子メールの送信先に対して有効オプションをはいに設定する。](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
 ## <a name="email-address-types"></a>電子メール アドレス タイプ
 
 **送信先設定** ダイアログ ボックスの **To** フィールドまたは **Cc** フィールドの横にある **編集** を選択すると、**電子メールの送信先** ダイアログ ボックスが表示されます。 **追加** を選択して、使用するメール アドレスのタイプを選択します。 現在、次の 2 つのタイプがサポートされています: **印刷管理メール** および **構成メール**。
 
-[![メール アドレスのタイプの選択](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![メール アドレスのタイプの選択。](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>管理電子メールの印刷
 
@@ -84,7 +84,7 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 **フォーミュラ デザイナー** ページの **フォーミュラ** フィールドに、サポートされているロールへのドキュメント固有の参照を入力します。 参照を入力する代わりに、**データ ソース** ペインで、構成されたロールのアカウントを表すデータ ソース ノードを検索して選択し、**データ ソースの追加** を選択して、フォーミュラを更新します。 たとえば、仕入先の支払処理に使用する **ISO 20022 の口座振替** 構成の電子メールの送信先を構成する場合、仕入先アカウントを表すノードは `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID` です。
 
-![電子メールの送信元アカウントの構成](./media/er_destinations-emaildefineaddresssource.gif)
+![電子メールの送信元アカウントの構成。](./media/er_destinations-emaildefineaddresssource.gif)
 
 構成されたロールのアカウント番号が、Microsoft Dynamics 365 Finance のインスタンス全体に対して一意である場合、**電子メールの送信先** ダイアログ ボックスの **電子メールの送信元の会社** フィールドは、空白のままにできます。
 
@@ -108,7 +108,7 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 使用する構成が、1 つのメール アドレスまたはセミコロン (;) で区切られた複数のメール アドレスを返すデータ ソース内のノードを持つ場合は、**構成メール** をメール アドレス タイプとして選択します。 フォーミュラ デザイナーの [データ ソース](general-electronic-reporting.md#FormatComponentOutbound) と [関数](er-formula-language.md#functions) を使用して、正しく書式設定されたメール アドレス、または、セミコロンで区切られた正しく書式設定されたメール アドレスを取得できます。 たとえば、**ISO 20022 の口座振替** の構成を使用する場合は、送付状の送付先となる仕入先の連絡先情報から仕入先の基本メール アドレスを表すノードは `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email` です。
 
-[![メール アドレスの送信元の構成](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![メール アドレスの送信元の構成。](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>形式コンポーネントのグループ化
 
@@ -126,11 +126,11 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 次の図は、督促状と適切な顧客の請求書を PDF 形式で含む、zip 形式の送信ファイルを生成するように構成された ER 形式の構造を示しています。
 
-[![送信ドキュメントを生成する ER 形式の構造](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![送信ドキュメントを生成する ER 形式の構造。](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 次の図は、このトピックで説明されているように、個々のコンポーネントをグループ化し、新しいグループの **電子メール** の送信先を有効にして、適切な顧客の請求書と共に督促状が電子メールの添付ファイルとして送信されるプロセスを示しています。
 
-[![個々のコンポーネントのグループ化と電子メールの送信先の有効化](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![個々のコンポーネントのグループ化と電子メールの送信先の有効化。](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>追加リソース
 

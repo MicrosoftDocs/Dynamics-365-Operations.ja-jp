@@ -13,37 +13,43 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3407128b0172f0e253d51bcfa23a894f981e21e2
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1ff65a0518232275f7c5d0b4a70d04f77e4936c5
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052292"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314116"
 ---
 # <a name="payroll-worker-address"></a>給与作業者の住所
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources における給与作業者の住所エンティティに対するクエリの詳細および例を示します。
+このトピックでは、Dynamics 365 Human Resources の給与作業者の住所のエンティティについて説明します。
+
+物理名: mshr_payrollworkeraddressentity。
+
+### <a name="description"></a>説明
+
+このエンティティは、特定の従業員の給与居住の場所と給与作業の場所を提供します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ<br>**現物名**<br>**_種類_** | 使用 | 説明 |
+| プロパティ</br>**現物名**</br>**_種類_** | 使用 | 説明 |
 | --- | --- | --- |
-| **市町村**<br>mshr_city<br>*文字列* | 読み取り専用<br>必須 | 住所に定義されている市町村。   |
-| **個人番号**<br>mshr_personnelnumber<br>*文字列* | 読み取り専用<br>必須 | 従業員の一意の職員番号。  |
-| **国地域**<br>mshr_countryregionid<br>*文字列* | 読み取り専用<br>必須 | 住所に定義されている国の地域  |
-| **発効日**<br>mshr_postaladdressvalidfrom<br>*日時オフセット* | 読み取り専用 <br>必須 | 住所が有効な日付。 |
-| **住所で作業**<br>mshr_isworkedinaddressbr>*Int32* | 読み取り専用<br>必須 | 住所が従業員の勤務地であるかどうかを表します。 |
-| **郡**<br>mshr_county<br>*文字列* | 読み取り専用<br>必須 | 住所に定義されている国。  |
-| **給与作業者の住所 ID**<br>mshr_payrollworkeraddressentityid<br>*GUID* | 必須<br>システム生成 | 住所を一意に識別するためのシステム生成の GUID 値。  |
-| **基本フィールド**<br>mshr_primaryfield<br>*文字列* | 読み取り専用<br>必須 |  |
-| **住所**<br>mshr_street<br>*文字列* | 読み取り専用<br>必須 | 住所に定義されている番地。 |
-| **失効日**<br>mshr_postaladdressvalidto<br>*日時オフセット* | 読み取り専用 <br>必須 | 住所が有効な日付。  |
-| **場所 ID**<br>mshr_locationidbr>*文字列* | 読み取り専用 <br>必須 | 住所の ID。  |
-| **郵便番号**<br>mshr_zipcode<br>*文字列* | 読み取り専用 <br>必須 |従業員に対して定義される ID 番号。  |
-| **住所に住んでいた**<br>mshr_islivedinaddressbr>*文字列* | 読み取り専用<br>必須 | 住所が従業員の居住地であるかどうかを表します。 |
-| **行政単位 (区画)**<br>mshr_state<br>*文字列* | 読み取り専用<br>必須 | 住所に定義されている状態。  |
+| **市区町村**</br>mshr_city</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている市町村。   |
+| **個人番号**</br>mshr_personnelnumber</br>*文字列* | 読み取り専用</br>必須 | 従業員の一意の職員番号。  |
+| **国地域**</br>mshr_countryregionid</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている国の地域。  |
+| **発効日**</br>mshr_postaladdressvalidfrom</br>*日時オフセット* | 読み取り専用 </br>必須 | 住所が有効な日付。 |
+| **住所で作業** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes オプション セット](hr-admin-integration-payroll-api-no-yes.md)* | 読み取り専用</br>必須 | 住所が従業員の勤務地であるかどうかを表します。 |
+| **郡**</br>mshr_county</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている国。  |
+| **給与作業者の住所 ID**</br>mshr_payrollworkeraddressentityid</br>*GUID* | 必須</br>システム生成 | 住所を一意に識別するためのシステム生成の GUID 値。  |
+| **基本フィールド**</br>mshr_primaryfield</br>*文字列* | 読み取り専用</br>必須 |  |
+| **住所**</br>mshr_street</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている番地。 |
+| **失効日**</br>mshr_postaladdressvalidto</br>*日時オフセット* | 読み取り専用 </br>必須 | 住所が有効な日付。  |
+| **場所 ID**</br>mshr_locationidbr>*文字列* | 読み取り専用 <br>必須 | 住所の ID。  |
+| **郵便番号**</br>mshr_zipcode<br>*文字列* | 読み取り専用 <br>必須 |従業員に対して定義される ID 番号。  |
+| **住所に住んでいた**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes オプション セット](hr-admin-integration-payroll-api-no-yes.md)* | 読み取り専用</br>必須 | 住所が従業員の居住地であるかどうかを表します。 |
+| **行政単位 (区画)**</br>mshr_state</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている状態。  |
 
 ## <a name="example-query"></a>クエリの例
 
@@ -57,21 +63,27 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollworkeraddressentities?$filter=ms
 
 ```json
 {
-            "mshr_personnelnumber": "000041",
-            "mshr_locationid": "000000538",
-            "mshr_islivedinaddress": 200000001,
-            "mshr_isworkedinaddress": 200000000,
-            "mshr_countryregionid": "USA",
-            "mshr_zipcode": "99025",
-            "mshr_street": "6543 Cypress Ave",
-            "mshr_city": "Tacoma",
-            "mshr_state": "WA",
-            "mshr_county": "KING",
-            "mshr_postaladdressvalidfrom": "2012-09-20T20:14:27Z",
-            "mshr_postaladdressvalidto": "2154-12-31T23:59:59Z",
-            "mshr_primaryfield": "000041 | 000000538 | 9/20/2012 08:14:27 pm",
-            "_mshr_fk_worker_id_value": "00000d3c-0000-0000-d5ff-004105000000",
-            "mshr_payrollworkeraddressentityid": "000006f0-0000-0000-f90f-014105000000"
+    "mshr_personnelnumber": "000041",
+    "mshr_locationid": "000000538",
+    "mshr_islivedinaddress": 200000001,
+    "mshr_isworkedinaddress": 200000000,
+    "mshr_countryregionid": "USA",
+    "mshr_zipcode": "99025",
+    "mshr_street": "6543 Cypress Ave",
+    "mshr_city": "Tacoma",
+    "mshr_state": "WA",
+    "mshr_county": "KING",
+    "mshr_postaladdressvalidfrom": "2012-09-20T20:14:27Z",
+    "mshr_postaladdressvalidto": "2154-12-31T23:59:59Z",
+    "mshr_primaryfield": "000041 | 000000538 | 9/20/2012 08:14:27 pm",
+    "_mshr_fk_worker_id_value": "00000d3c-0000-0000-d5ff-004105000000",
+    "mshr_payrollworkeraddressentityid": "000006f0-0000-0000-f90f-014105000000"
 
 }
 ```
+
+## <a name="see-also"></a>参照
+
+[給与統合 API の概要](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

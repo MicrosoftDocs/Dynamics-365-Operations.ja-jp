@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 88e6d5470ff7808a9b6263b6426e19f6ea11493d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e8046ce0926a4da6c20b4beb28b4e10aa3fa054c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755527"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344909"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
 
@@ -31,66 +31,66 @@ ms.locfileid: "5755527"
 2. **サーバー名** を既定のままにし、現在のコンピューターの名前、および **レポート サーバーのインスタンス**、**MSSQLSERVER** にします。
 3. **接続** をクリックします。
 
-    [![サービス コンフィグレーション コネクションのレポート](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
+    [![サービス コンフィグレーション コネクションのレポート。](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
 
 4. **サービス アカウント** タブをクリックし、設定が次の図と一致しているかを確認します。
 
-    [![サービス アカウント タブ](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
+    [![サービス アカウント タブ。](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
 
 5. **Web サービス URL** タブをクリックし、設定が次の図と一致しているかを確認します。
 
-    [![Web サービス URL タブ](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)
+    [![Web サービス URL タブ。](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)
 
 6. **データベース** タブをクリックし、**データベース名** および **資格情報の設定** が次の図と一致しているかを確認します。
 
     > [!NOTE]
     > 新しいデータベースを作成する必要があります。 これを行うには **データベースの変更** をクリックし、新しいデータベース名が **DynamicsAxReportServer** であることを確認します。
 
-    [![データベース タブ](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)
+    [![データベース タブ。](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)
 
 7. **Web ポータル URL** タブをクリックし、設定が次の図と一致しているかを確認します。
 
     > [!NOTE]
     > **適用** をクリックし、ポータルの作成および適切なコンフィギュレーションを行う必要があります。
 
-    [![web ポータル url タブ](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
+    [![Web ポータル URL タブ。](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
 
     ポータルを設定すると、**Web ポータル** タブは次の図と一致するようになります。
 
-    [![web ポータル タブ](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
+    [![Web ポータル タブ。](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
 
 8. レポートの URL をクリックし、SQL Server Reporting Services web ポータルを表示します。
 9. ポータルにアクセスしたら、**Dynamics** という名前の新規フォルダーを作成します。
 
-    [![ダイナミクス フォルダー](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+    [![ダイナミクス フォルダー。](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
 
 10. **Reporting Services 構成マネージャー** で **電子メール設定** タブをクリックし、設定が次の図に一致しているかを確認します。
 
-    [![電子メール設定タブ](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)
+    [![電子メール設定タブ。](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)
 
 11. **実行アカウント** タブをクリックし、設定が次の図と一致しているかを確認します。
 
-    [![実行アカウント タブ](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
+    [![実行アカウント タブ。](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
 
     **暗号化キー** タブでは既定の設定を変更しません。
 
-    [![暗号化キー タブ](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    [![暗号化キー タブ。](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
 
 12. **定期売買の設定** タブをクリックし、設定が次の図と一致しているかを確認します。
 
-    [![定期売買の設定タブ](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
+    [![定期売買の設定タブ。](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
 
     **スケール アウト配置** タブでは既定の設定を変更しません。
 
-    [![スケール アウト配置タブ](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    [![スケール アウト配置タブ。](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
 
     **Power BI 統合** タブで既定の設定を変更しないでください。
 
-    [![Power BI 統合タブ](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)
+    [![Power BI 統合タブ。](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)
 
 13. **終了** をクリックし、**Reporting Services 構成マネージャー** を閉じます。
 
-    [![reporting services 構成マネージャーの終了](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+    [![Reporting Services 構成マネージャーの終了。](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

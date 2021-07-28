@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893279"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345891"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>生成されたファイルの BOM 文字を非表示にする ER 構成の設計
 
@@ -29,14 +29,14 @@ ms.locfileid: "5893279"
 > [!NOTE]
 > 形式に誤ったエンコード名が含まれている場合、形式の設定に対する変更を保存すると、エラーがスローされます。
 
-![形式デザイナー ページでルート要素を追加する](./media/er-suppress-bom-characters-image1.gif)
+![形式デザイナー ページでルート要素を追加する。](./media/er-suppress-bom-characters-image1.gif)
 
 エンコードとして **UTF-8**、**UTF-16**、または **UTF-32** を指定すると、**BOM 文字の非表示** オプションが使用可能になります。 このオプションを **はい** に設定して、編集可能な ER 形式の実行時に、実行時に生成される発信ファイルで [バイト オーダー マーク (BOM) 文字](/globalization/encoding/byte-order-mark) を非表示にします。
 
 > [!NOTE]
 > **エンコード** フィールドを空白のままにすると、既定の **UTF-8** エンコードが使用されます。
 
-![形式デザイナー ページで BOM 文字の非表示オプションを設定する](./media/er-suppress-bom-characters-image2.gif)
+![形式デザイナー ページで BOM 文字の非表示オプションを設定する。](./media/er-suppress-bom-characters-image2.gif)
 
 実行時に機能を確認するには、適切な手順を実行します。 たとえば、[ER 形式における XML 要素の実行の延期](er-defer-xml-element.md) トピックの手順を実行します。 そのトピックにある [計算が生成された出力に基づくように形式を変更する](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) セクションの手順を完了したら、次の追加手順に従います。
 
@@ -59,7 +59,7 @@ ms.locfileid: "5893279"
 
     最初に気付く違いは、ファイル ヘッダーにあります。 SampleXmlReport.xml ファイルには BOM 文字が含まれていますが、SampleXmlReport (1).xml ファイルには含まれていません。
 
-    ![ファイル比較ユーティリティを使用して生成されたファイルを比較する](./media/er-suppress-bom-characters-image3.png)
+    ![ファイル比較ユーティリティを使用して生成されたファイルを比較する。](./media/er-suppress-bom-characters-image3.png)
 
 ## <a name="see-also"></a>参照
 

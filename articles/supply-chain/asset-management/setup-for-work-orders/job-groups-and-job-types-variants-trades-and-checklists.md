@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2a2bcff302814903959f78d6435abd540b46ef5
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 252829ac2d070833023f1b49aef615cc376f37b6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117086"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344643"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>管理ジョブ タイプ、カテゴリ、バリエーション、取引、チェックリスト
 
@@ -54,7 +54,7 @@ ms.locfileid: "6117086"
 
     メンテナンス作業タイプ カテゴリをメンテナンス作業タイプに関連付けると、**作業タイプ** フィールドに、このメンテナンス作業タイプ カテゴリに関連付けられているメンテナンス作業タイプの数が表示されます。
 
-![メンテナンス作業タイプのカテゴリのページ](media/01-setup-for-work-orders.png)
+![メンテナンス作業タイプのカテゴリのページ。](media/01-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type-variant"></a>メンテナンス作業タイプ バリアントの作成
 
@@ -68,7 +68,7 @@ ms.locfileid: "6117086"
 
     **詳細** クイック タブの **作業タイプ** フィールドに、このメンテナンス作業タイプ バリアントに追加されたメンテナンス作業タイプの数が表示されます。
 
-![メンテナンス作業タイプのバリアントのページ](media/02-setup-for-work-orders.png)
+![メンテナンス作業タイプのバリアントのページ。](media/02-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-trade"></a>メンテナンス作業取引の作成
 
@@ -89,7 +89,7 @@ ms.locfileid: "6117086"
 
     **詳細** クイック タブの **証明書** フィールドに、このメンテナンス作業取引に追加された証明書の数が表示されます。
 
-![メンテナンス作業取引のページ](media/03-setup-for-work-orders.png)
+![メンテナンス作業取引のページ。](media/03-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-variable"></a>メンテナンス チェックリストの変数の作成
 
@@ -110,7 +110,7 @@ ms.locfileid: "6117086"
 6. **値** フィールドで、値の説明を入力します。
 7. **結果** フィールドで、明細行の結果を選択します。
 
-![メンテナンス チェックリストの変数のページ](media/04-setup-for-work-orders.png)
+![メンテナンス チェックリストの変数のページ。](media/04-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-template"></a>メンテナンス チェックリスト テンプレートの作成
 
@@ -139,7 +139,7 @@ ms.locfileid: "6117086"
 
     **詳細** クイック タブの **チェック** フィールドに、テンプレートのチェックリストの明細行の合計数が表示されます。 この番号には、テンプレートで参照した既存のテンプレートの入れ子になった行が含まれます。
 
-![メンテナンス チェックリストのテンプレートのページ](media/05-setup-for-work-orders.png)
+![メンテナンス チェックリストのテンプレートのページ。](media/05-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type"></a>メンテナンス作業タイプの作成
 
@@ -162,7 +162,7 @@ ms.locfileid: "6117086"
 
 11. **資産タイプ** クイック タブで、メンテナンス作業タイプに資産タイプを追加できます。
 
-![メンテナンス作業タイプのページ](media/06-setup-for-work-orders.png)
+![メンテナンス作業タイプのページ。](media/06-setup-for-work-orders.png)
 
 ## <a name="create-maintenance-job-type-default-lines-and-related-forecasts-maintenance-checklists-tools-description-and-attachments"></a>メンテナンス作業タイプの既定の明細行と関連する予測、メンテナンス チェックリスト、ツール、説明、および関連付けの作成
 
@@ -231,7 +231,7 @@ ms.locfileid: "6117086"
 31. メンテナンス作業タイプの既定を別のメンテナンス作業タイプにコピーするには、別の設定をコピーするメンテナンス作業タイプの既定の明細行を選択してから、**設定のコピー** を選択し、コピーするメンテナンス作業タイプの既定を選択します。
 32. 現在メンテナンス作業タイプの既定の明細行を使用している資産、メンテナンス計画、またはメンテナンス ラウンドの一覧を表示するには、その明細行を選択し、**使用先** を選択します。
 
-![メンテナンス作業タイプの既定値のページ](media/07-setup-for-work-orders.png)
+![メンテナンス作業タイプの既定値のページ。](media/07-setup-for-work-orders.png)
 
 システムが作業指示明細行で使用する必要がある利用可能なメンテナンス作業タイプの既定を選択する場合、選択は資産および関連する資産タイプの設定に基づきます。 資産管理は、資産タイプに関連するメンテナンス作業タイプに関連するすべてのメンテナンス作業タイプの既定のレコードを調べて、一致の可能性を確認します。 常に最も限定的な組み合わせを最初にチェックします。 つまり、最も具体的な組み合わせを見つけるために、資産管理は、最初に **取引** フィールドの一致の可能性を確認します。 一致が見つからない場合は、**メンテナンス作業タイプ バリアント** フィールドの一致がチェックされます。 一致が見つからなかった場合は、**メンテナンス作業タイプ** フィールドなど (**取引**、**メンテナンス作業タイプ バリアント**、**メンテナンス作業タイプ**、**資産**、**モデル**、**メーカー**、**資産タイプ**) の一致がチェックされます。 一致するものが見つからなかった場合は、メンテナンス作業タイプのみが使用された既定のレコードが使用されます。
 
@@ -252,7 +252,7 @@ ms.locfileid: "6117086"
 4. メンテナンス作業タイプの組み合わせを選択して、メンテナンス チェックリスト、予測、およびツールに対する関連する設定を表示します。 **メンテナンス作業タイプの規定** クイック タブの **詳細** セクションには、選択したメンテナンス作業タイプの組み合わせに関連する、関連するメンテナンス チェックリスト、予測時間、品目などの数が表示されます。
 5. 選択したメンテナンス作業タイプの詳細を表示するには、**メンテナンス作業タイプ** を選択します。
 
-![資産メンテナンス作業タイプのページ](media/08-setup-for-work-orders.png)
+![資産メンテナンス作業タイプのページ。](media/08-setup-for-work-orders.png)
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>メンテナンス作業タイプの予測の自動更新
 

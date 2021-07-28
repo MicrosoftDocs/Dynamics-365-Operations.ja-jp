@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 11124
+ms.custom:
+- "11124"
+- intro-internal
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 03732ecd5a0cd59d15fa1f9f0691571bd0a19606
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897165"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346453"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA 口座振替の概要
 
@@ -30,7 +32,7 @@ ms.locfileid: "5897165"
 
 ## <a name="what-is-a-credit-transfer-message"></a>口座振替メッセージとは何ですか。
 口座振替メッセージとは、開始側 (会社) が自身の口座から債権者に資金移動を送信する要求です。 口座振替メッセージの国/地域固有のおよび銀行固有の実装が数多くあります。 そのいくつかは 1 つの国/地域内で使用され、いくつかは標準となります。 1 つの確立されているグローバル基準は、口座振替などの ISO 20022 およびその起動開始メッセージです。 次の図は、選択された口座振替メッセージの関係と補償を示します。 
-![口座振替](./media/credit-transfer.jpg) 口座振替メッセージ 
+![口座振替。](./media/credit-transfer.jpg) 口座振替メッセージ 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>ISO 20022 および SEPA 支払とは何ですか。
 単一ユーロ支払地域 (SEPA) は欧州委員会によって設定され、個人、事業または組織および銀行がどの国または地域にあるかに関係なく、すべての電子支払は国内と見なされます。 国内支払と国境を越えた支払の間に違いはありません。 SEPA には、28 の欧州連合 (EU) の加盟国とアイスランド、リヒテンシュタイン、ノルウェー、スイス、およびモナコとサンマリノが含まれます。 SEPA により、欧州経済領域 (EEA) 内の支払トランザクションの単一市場が形成されます。 最終的に、SEPA により、銀行、事業、および個人が扱う支払形式の数を減らすと予想されます。 指令への支払サービス ディレクティブ (PSD) を介した SEPA 支払の法的根拠は欧州委員会が設定しました。 欧州決済協議会 (EPC) は、次の活動で SEPA をサポートしています。

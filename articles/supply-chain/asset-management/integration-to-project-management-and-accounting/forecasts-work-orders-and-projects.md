@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf211e9f256a7489cdc3c38ed2d2198bd1dd6789
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86474d22f7a1426ed1c8f61c346ac7a6f67173f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813824"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345431"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>予測、作業指示書、およびプロジェクト
 
@@ -58,13 +58,13 @@ ms.locfileid: "5813824"
 
 たとえば、次の図では、**トラック エンジン** 資産タイプが設定されているため、**トラック エンジン** 資産タイプで作成されたすべての作業指示書ジョブが、プロジェクト ID 000186 のサブ プロジェクトであることを意味します。
 
-![図 1](media/01-integration-to-pma.png)
+![図 1。](media/01-integration-to-pma.png)
 
 作業指示書ジョブのプロジェクト ID、および関連する活動番号の目的は、**プロジェクト管理および会計** モジュールで、作業指示書ジョブに関連する原価と、そのジョブで選択された資産を追跡することです。 (プロジェクト ID および活動番号を表示するには、**資産管理** > **共通** > **作業指示書** > **すべての作業指示書** を選択してから、作業指示書を選択します。 **行の詳細** クイック タブでは、**プロジェクト ID** フィールドにプロジェクト ID が表示され、**活動番号** フィールドには活動番号が表示されます。) 資産管理の原価管理の詳細については [原価および日付の管理](../controlling-and-reporting/cost-and-date-control.md) を参照してください。
 
 下の図では、作業指示書プロジェクトおよび関連するプロジェクト活動の概要をグラフィカルに表示しています。
 
-![図 2](media/02-integration-to-pma.png)
+![図 2。](media/02-integration-to-pma.png)
 
 作業指示書に新しい作業指示書ジョブが作成されると、そのジョブの作業指示書プロジェクトが自動的に作成されます。 作業指示書ジョブに関連する資産の財務分析コードが自動的に作業指示書プロジェクトに転送されます。
 
@@ -86,17 +86,17 @@ ms.locfileid: "5813824"
 
 次の図は、作業指示書プロジェクト グループ、関連するプロジェクト タイプ、プロジェクト ステージ、および作業指示書ライフサイクルの状態の間の関連付けを示しています。
 
-![図 3](media/03-integration-to-pma.png)
+![図 3。](media/03-integration-to-pma.png)
 
-![図 4](media/04-integration-to-pma.png)
+![図 4。](media/04-integration-to-pma.png)
 
-![図 5](media/05-integration-to-pma.png)
+![図 5。](media/05-integration-to-pma.png)
 
 作業指示書プロジェクト設定方法の詳細については、[作業指示書プロジェクト設定](../setup-for-work-orders/work-order-project-setup.md) を参照してください。 作業指示書ライフサイクル状態の作成方法の詳細については、[作業指示書ライフサイクルの状態](../setup-for-work-orders/work-order-lifecycle-states.md) を参照してください。
 
 次の図は、**資産管理** モジュールで作成された各種プロジェクトの概要をグラフィカルに表示して、**プロジェクト管理および会計** モジュールと統合できるようにしたものです。 プロジェクトが関連付けられている作業プロセスも表示されます。
 
-![図 6](media/06-integration-to-pma.png)
+![図 6。](media/06-integration-to-pma.png)
 
 
 

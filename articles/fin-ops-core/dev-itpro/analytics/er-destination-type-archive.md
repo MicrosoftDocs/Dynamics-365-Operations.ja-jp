@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 079eda04fcc41fc637419a83452db10b89ed1ab9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a9e0f07241de003dd2971e0d336f89795ad1319b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894031"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348023"
 ---
 # <a name="archive-er-destination-type"></a>ER アーカイブ送信先のタイプ
 
@@ -30,7 +30,7 @@ ms.locfileid: "5894031"
 
 このオプションを使用して、生成したドキュメントを Microsoft SharePoint フォルダーまたは Microsoft Azure ストレージに送信することができます。 **有効** を **はい** に設定し、選択したドキュメント タイプで定義されている変換先に出力を送信します。 グループが **ファイル** に設定されているドキュメントタイプのみ選択できます。 **組織管理** \> **ドキュメント管理** \> **ドキュメント タイプ** で、ドキュメント [タイプ](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) を定義します。 電子申告の送信先への構成は、ドキュメント管理システムの構成と同じです。
 
-[![ドキュメント タイプ ページ](./media/ER_Destinations-SharePointDocuType.png)](./media/ER_Destinations-SharePointDocuType.png)
+[![ドキュメント タイプ ページ。](./media/ER_Destinations-SharePointDocuType.png)](./media/ER_Destinations-SharePointDocuType.png)
 
 場所は、ファイルの保存場所を決定します。 **アーカイブ** 先を有効にすると、結果をジョブ アーカイブに保存できます。 結果は、**組織管理** \> **電子申告** \> **電子申告アーカイブ済ジョブ** で表示できます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "5894031"
 
 指定された SharePoint フォルダーにファイルを保存することができます。 既定の SharePoint サーバーを定義するには、**組織管理** \> **ドキュメント管理** \> **ドキュメント管理パラメーター** に移動します。 **SharePoint** タブで、SharePoint フォルダーをコンフィギュレーションします。 ER 出力を保存するフォルダーとして選択できます。 **SharePoint** の場所は、このドキュメント タイプで選択する必要があります。
 
-[![SharePoint フォルダーの選択](./media/ER_Destinations-SharePointDocuTypeLocation.png)](./media/ER_Destinations-SharePointDocuTypeLocation.png)
+[![SharePoint フォルダーの選択。](./media/ER_Destinations-SharePointDocuTypeLocation.png)](./media/ER_Destinations-SharePointDocuTypeLocation.png)
 
 ## <a name="azure-storage"></a>Azure ストレージ
 

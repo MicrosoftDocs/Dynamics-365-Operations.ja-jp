@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b4fd37a3c45f2559c9659f072ca0b6f02e712f53
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 79300c84b07db23ad387e0f3e475ca1707c79548
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018263"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347371"
 ---
 # <a name="payments-are-automatically-settled-before-orders-are-invoiced-or-shipped"></a>支払は、注文が請求または出荷される前に自動的に決済されます
 
@@ -43,7 +43,7 @@ Adyen ポータルで eコマース支払の手動取得を構成するには、
 1. ナビゲーション上部で、**アカウント** を選択し、**設定** を選択します。
 1. **キャプチャの遅延** フィールドで、**手動** を選択します。
 
-    ![Adyen ポータルの キャプチャの遅延の設定](media/adyen-capture-delay.jpg)
+    ![Adyen ポータルの キャプチャの遅延の設定。](media/adyen-capture-delay.jpg)
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796489"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345211"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>販売時点管理 (POS) での注文通知の表示
 
@@ -72,14 +72,14 @@ ms.locfileid: "5796489"
 
 次の図は、ボタン グリッド デザイナーでのライブ コンテンツ設定を示します。
 
-![ボタン グリッド デザイナーのライブ コンテンツの設定](./media/ButtonGridDesigner.png "ボタン グリッド デザイナーのライブ コンテンツの設定")
+![ボタン グリッド デザイナーのライブ コンテンツの設定。](./media/ButtonGridDesigner.png "ボタン グリッド デザイナーのライブ コンテンツの設定")
 
 ボタンに通知カウントを表示するには、正しい画面レイアウトが更新されていることを確認する必要があります。 POS によって使用されている画面レイアウトを確認するには、右上隅の **設定** アイコンを選択し、**画面レイアウト ID** と **レイアウトの解像度** を確認します。 Edge ブラウザを使用して、**画面レイアウト** ページに移動し、上記で特定した **画面レイアウト ID** および **レイアウト解像度** を見つけて、**ライブ コンテンツを有効化** チェック ボックスを選択します。 **Retail および Commerce\> Retail および Commerce IT\> 配送スケジュール** に移動し、レイアウトの変更を同期するために 1090 (レジスター) ジョブを実行します。
 
-![POSで使用される画面レイアウトの検索](./media/Choose_screen_layout.png "画面レイアウトの検索")
+![POS で使用される画面レイアウトの検索。](./media/Choose_screen_layout.png "画面レイアウトの検索")
 
 次の図は、さまざまなサイズのボタンに対する **コンテンツの配置** フィールドで、**右上** と **センター** を選択することによる結果を示します。
 
-![POS ボタンのライブ コンテンツ](./media/ButtonsWithLiveContent.png "POS ボタンのライブ コンテンツ")
+![POS ボタンのライブ コンテンツ。](./media/ButtonsWithLiveContent.png "POS ボタンのライブ コンテンツ")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1351b9f22416e8ce6d90022997f0a15e9eb4042a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018583"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344374"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
@@ -40,7 +40,7 @@ Dynamics 365 Commerce は Azure AD B2C を使用して、ユーザーの資格�
 1. [Azure ポータル](https://portal.azure.com/)にサインインします。
 1. Azure ポータル メニューから、**リソースの作成** を選択します。 Commerce 環境に関連付けられているサブスクリプションとディレクトリを使用してください。
 
-    ![Azure ポータルでのリソースの作成](./media/B2CImage_1.png)
+    ![Azure ポータルでのリソースの作成。](./media/B2CImage_1.png)
 
 1. **ID \> Azure Active Directory B2C** に移動します。
 1. **新しい B2C テナントの作成または既存のテナントへのリンク** のページで、会社のニーズに適した以下のオプションのいずれかを使用します。
@@ -52,25 +52,25 @@ Dynamics 365 Commerce は Azure AD B2C を使用して、ユーザーの資格�
         1. **国/地域** では、国または地域を選択します。
         1. **作成** を選択して、テナントを作成します。
 
-     ![新しい Azure AD テナントの作成](./media/B2CImage_2.png)
+     ![新しい Azure AD テナントの作成。](./media/B2CImage_2.png)
 
      - **既存の Azure AD B2C テナントを Azure サブスクリプションにリンクする**: リンクする Azure AD テナントが既にある場合は、このオプションを使用します。
         1. **既存の Azure AD の B2C テナントを Azure サブスクリプションにリンクする** を選択します。
         1. **Azure AD B2C テナント** には、適切な B2C テナントを選択します。 選択ボックスに「適格な B2C テナントが見つかりません」というメッセージが表示された場合は、適格な B2C テナントが存在しないので、新しいテナントを作成する必要があります。
         1. **リソース グループ** で、**新規作成** を選択します。 テナントを格納するリソース グループの **名前** を入力し、**リソース グループの場所** を選択して、**作成** を選択します。
 
-    ![既存の Azure AD B2C テナントを Azure サブスクリプションにリンクする](./media/B2CImage_3.png)
+    ![既存の Azure AD B2C テナントを Azure サブスクリプションにリンクする。](./media/B2CImage_3.png)
 
 1. 新しい Azure AD B2C ディレクトリが作成されると (しばらく時間がかかる場合があります)、新しいディレクトリへのリンクがダッシュボードに表示されます。 このリンクを使用すると、「Azure Active Directory B2C へようこそ」のページに移動します。
 
-    ![新しい AAD ディレクトリへのリンク](./media/B2CImage_4.png)
+    ![新しい AAD ディレクトリへのリンク。](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Azure アカウント内に複数のサブスクリプションがある場合、または有効なサブスクリプションにリンクせずに B2C テナントを設定している場合、**トラブルシューティング** バナーは、テナントをサブスクリプションにリンクするよう指示します。 トラブルシューティングのメッセージを選択し、指示に従ってサブスクリプションの問題を解決します。
 
 次の図は、Azure AD B2C **トラブルシューティング** バナーの例を示しています。
 
-![ディレクトリに有効なサブスクリプションがないことを示す警告](./media/B2CImage_5.png)
+![ディレクトリに有効なサブスクリプションがないことを示す警告。](./media/B2CImage_5.png)
 
 ## <a name="create-the-b2c-application"></a>B2C アプリケーションを作成する
 
@@ -136,11 +136,11 @@ Dynamics 365 Commerce に組み込まれたページでユーザー ポリシー
 
 次の図は、ユーザー フローにおける Azure AD B2C の登録とサインインの例です。
 
-![登録とサインイン ポリシーの設定](./media/B2CImage_11.png)
+![登録とサインイン ポリシーの設定。](./media/B2CImage_11.png)
 
 次の図は、ユーザー フローの Azure AD B2C 登録とサインインにおける **ユーザー フローの実行** オプションを示しています。
 
-![ポリシー フローでのユーザー フロー オプションの実行](./media/B2CImage_23.png)
+![ポリシー フローでのユーザー フロー オプションの実行。](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>プロファイル編集ユーザー フロー ポリシーの作成
 
@@ -161,7 +161,7 @@ Dynamics 365 Commerce に組み込まれたページでユーザー ポリシー
 
 次の図は、Azure AD B2C プロファイル編集ユーザー フローの例を示しています。
 
-![プロファイル編集ユーザー フローの作成](./media/B2CImage_12.png)
+![プロファイル編集ユーザー フローの作成。](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>パスワード リセット ユーザー フロー ポリシーの作成
 
@@ -225,18 +225,18 @@ Dynamics 365 Commerce に組み込まれたページでユーザー ポリシー
 
 次の図は、Azure AD B2C での **ID プロバイダーの追加** および **ソーシャル ID プロバイダーの設定** 画面の例を示しています。
 
-![アプリケーションへのソーシャル ID プロバイダーの追加](./media/B2CImage_14.png)
+![アプリケーションへのソーシャル ID プロバイダーの追加。](./media/B2CImage_14.png)
 
 次の図は、Azure AD B2C **ID プロバイダー** ページで ID プロバイダーを選択する方法の例を示しています。
 
-![各ソーシャル ID プロバイダーを選択して、ポリシーを有効にする](./media/B2CImage_16.png)
+![各ソーシャル ID プロバイダーを選択して、ポリシーを有効にする。](./media/B2CImage_16.png)
 
 次の図は、ソーシャル ID プロバイダーのサインイン ボタンが表示された既定のサインイン画面の例を示しています。
 
 > [!NOTE]
 > ユーザー フローに対して Commerce に組み込みのカスタム ページを使用する場合は、Commerce モジュール ライブラリの機能拡張機能を使用して、ソーシャル ID プロバイダ用のボタンを追加する必要があります。 また、特定のソーシャル ID プロバイダを使用してアプリケーションを設定する際に、URL や構成文字列で大文字と小文字が区別される場合があります。 詳細については、ソーシャル ID プロバイダの接続手順を参照してください。
  
-![ソーシャル ID プロバイダーのサインイン ボタンが表示された既定のログイン画面の例](./media/B2CImage_17.png)
+![ソーシャル ID プロバイダーのサインイン ボタンが表示された既定のログイン画面の例。](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>新しい Azure AD B2C 情報でコマース本社を更新する
 
@@ -291,15 +291,15 @@ Azure AD B2C テナントの設定が完了したら、コマース サイト �
 
 次の図は、**Azure AD B2C - アプリケーション** ページの例を示しています。
 
-![テナント内の B2C アプリケーションに移動する](./media/B2CImage_19.png)
+![テナント内の B2C アプリケーションに移動する。](./media/B2CImage_19.png)
 
 次の図は、Azure AD B2C におけるアプリケーション **プロパティ** ページの例を示しています。 
 
-![B2C アプリケーションのプロパティからアプリケーション ID をコピーする](./media/B2CImage_21.png)
+![B2C アプリケーションのプロパティからアプリケーション ID をコピーする。](./media/B2CImage_21.png)
 
 次の図は、**Azure AD B2C – ユーザー フロー (ポリシー)** ページのユーザー フロー ポリシーの例を示しています。
 
-![各 B2C ポリシー フローの名前の収集](./media/B2CImage_22.png)
+![各 B2C ポリシー フローの名前の収集。](./media/B2CImage_22.png)
 
 ### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>コマースに AAD B2C テナント アプリケーションの情報を入力する
 

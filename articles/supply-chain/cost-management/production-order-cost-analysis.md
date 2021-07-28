@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4d0a298a8f782ae318971e99c03e864fa5a4ef88
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187701"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343653"
 ---
 # <a name="production-order-cost-analysis"></a>製造オーダーの原価分析
 
@@ -41,7 +41,7 @@ ms.locfileid: "6187701"
 
 次の図に、製造オーダーの終了時の品目の原価レコード内の製造オーダーの実績原価と算出原価の差異を説明する 4 つの差異を示します。 
 
-![完了した製造オーダーの差異を説明する差異](./media/control.jpg) 
+![完了した製造オーダーの差異を説明する差異。](./media/control.jpg) 
 
 **差異** ページまたは **製造差異** レポートを使用して製造差異を分析できます。 表示オプションを使用して、品目および運営リソース別または原価グループ別の詳細な差異を表示します。 在庫パラメータ内の原価内訳ポリシーは、差異が原価グループ別に追跡されるかどうかを決定します。 また、**単一**、**複数**、および **合計** 表示オプションを使用して、要約された差異を表示することもできます。 詳細な差異に関する情報は、各差異のソースを理解するのに役立ちます。 製造オーダーが終了する前に差異を予期するには、**原価見積** レポートで提供される詳細情報を分析します。
 

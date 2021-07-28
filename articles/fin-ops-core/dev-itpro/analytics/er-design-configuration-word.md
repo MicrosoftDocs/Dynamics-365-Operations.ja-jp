@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 7bc02a97005f84f7ac01f9fd9371f2a0a29314c4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894079"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346647"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための新しい ER 構成を設計する
 
@@ -26,37 +26,37 @@ ms.locfileid: "5894079"
 
 レポートを Microsoft Word ドキュメントとして生成するには、Word デスクトップ アプリケーションなどを使用して、レポートのテンプレートをデザインする必要があります。 次の図は、処理済仕入先支払の詳細を表示するために生成できる管理レポートのサンプル テンプレートを示しています。
 
-![Word デスクトップ アプリケーションの管理レポートのサンプル テンプレート](./media/er-design-configuration-word-image1.png)
+![Word デスクトップ アプリケーションの管理レポートのサンプル テンプレート。](./media/er-design-configuration-word-image1.png)
 
 Word ドキュメントを Word 形式のレポートのテンプレートとして使用するには、新しい [電子申告 (ER)](general-electronic-reporting.md) [ソリューション](er-quick-start1-new-solution.md) を構成できます。 このソリューションには、ER [形式](general-electronic-reporting.md#FormatComponentOutbound) コンポーネントを含む ER [構成](general-electronic-reporting.md#Configuration) を含める必要があります。
 
 > [!NOTE]
 > Word 形式でレポートを生成するために新しい ER 形式の構成を作成する場合は、**構成の作成** ドロップダウン ダイアログ ボックスで形式タイプとして **Word** を選択するか、**形式タイプ** フィールドを空白のままにする必要があります。
 
-![構成ページで形式構成を作成](./media/er-design-configuration-word-image2.gif)
+![構成ページで形式構成を作成。](./media/er-design-configuration-word-image2.gif)
 
 ソリューションの ER 形式コンポーネントには **Excel\\File** 形式要素を含む必要があり、その形式要素は、実行時に生成されるレポートのテンプレートとして使用される Word ドキュメントにリンクされている必要があります。 ER 形式コンポーネントを構成するには、ER 形式デザイナーで作成された ER 構成の [ドラフト](general-electronic-reporting.md#component-versioning) バージョンを開く必要があります。 その後、**Excel\\File** 要素を追加し、編集可能な ER 形式に Word テンプレートを添付し、そのテンプレートを追加した **Excel\\File** 要素にリンクします。
 
 > [!NOTE]
 > テンプレートを添付する場合、ER パラメーターで事前に [構成](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) されている [ドキュメント タイプ](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) を使用して、ER 形式のテンプレートを保存する必要があります。
 
-![形式デザイナー ページでテンプレートを添付](./media/er-design-configuration-word-image3.gif)
+![形式デザイナー ページでテンプレートを添付。](./media/er-design-configuration-word-image3.gif)
 
 **Excel\\File** 要素に **Excel\\Range** と **Excel\\Cell** の入れ子になった要素を追加して、実行時に生成されるレポートに入力されるデータの構造を指定できます。 次に、これらの要素を編集可能な ER 形式のデータ ソースにバインドして、実行時に生成されるレポートに入力される実際のデータを指定する必要があります。
 
-![形式デザイナー ページで入れ子になった要素を追加](./media/er-design-configuration-word-image4.gif)
+![形式デザイナー ページで入れ子になった要素を追加。](./media/er-design-configuration-word-image4.gif)
 
 ER 形式への変更をデザイン時に保存すると、階層形式の構造は、添付された Word テンプレートに、**レポート** という名前の [カスタム XML パーツ](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) として保存されます。 変更したテンプレートにアクセスし、Finance からダウンロードして、ローカルに保存して、Word デスクトップ アプリケーションで開く必要があります。 次の図は、**レポート** カスタム XML パーツを含む管理レポートのローカルに保存されているサンプル テンプレートを示します。
 
-![Word デスクトップ アプリケーションでサンプル レポート テンプレートをプレビュー](./media/er-design-configuration-word-image5.gif)
+![Word デスクトップ アプリケーションでサンプル レポート テンプレートをプレビュー。](./media/er-design-configuration-word-image5.gif)
 
 **Excel\\Range** と **Excel\\Cell** 形式要素のバインドが実行時に実行される場合、すべてのバインドによって提供されるデータは、**レポート** のカスタム XML パーツの個別のフィールドとして、生成された Word ドキュメントに取り込まれます。 生成されるドキュメントでカスタム XML パーツのフィールドから値を入力するには、実行時に入力されるデータのプレースホルダーとして機能させるために、適切な Word [コンテンツ コントロール](/office/client-developer/word/content-controls-in-word) を Word テンプレートに追加する必要があります。 コンテンツ コントロールの入力方法を指定するには、すべてのコンテンツ コントロールを **レポート** カスタム XML パーツの適切なフィールドにマップします。
 
-![Word デスクトップ アプリケーションでコンテンツ コントロールを追加およびマッピング](./media/er-design-configuration-word-image6.gif)
+![Word デスクトップ アプリケーションでコンテンツ コントロールを追加およびマッピング。](./media/er-design-configuration-word-image6.gif)
 
 次に、編集可能な ER 形式の元の Word テンプレートを、**レポート** カスタム XML パーツのフィールドにマップされた Word コンテンツ コントロールを含む変更されたテンプレートに置き換える必要があります。
 
-![形式デザイナー ページでテンプレートを置換](./media/er-design-configuration-word-image7.gif)
+![形式デザイナー ページでテンプレートを置換。](./media/er-design-configuration-word-image7.gif)
 
 構成された ER 形式を実行すると、添付された Word テンプレートを使用して新しいレポートが生成されます。 実際のデータは、**レポート** という名前のカスタム XML パーツとして Word レポートに格納されます。 生成されたレポートを開くと、Word コンテンツ コントロールに **レポート** カスタム XML パーツからデータが入力されます。
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 428de5304b3f6f9b861e765d5084d5573b79df90
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908296"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347737"
 ---
 # <a name="safety-margins"></a>安全マージン
 
@@ -41,7 +41,7 @@ ms.locfileid: "5908296"
 
 次の図は、これらの安全マージンが時間の経過と共に適用される方法を示しています。
 
-![安全マージン](media/safety-margins-1.png)
+![安全マージン。](media/safety-margins-1.png)
 
 すべてのマージンは日数で定義されます。 *0* (ゼロ) の規定値は、マージンが適用されていないことを示しています。 複数のマージンを設定すると、それらは供給の *注文日* から需要の *要求日* までの合計時間に加算されます。 たとえば、設定にリードタイムがなく、3 種類すべてのマージンが 1 日に設定されているとします。 この場合、供給の注文日と需要要求日の間に 3 日間の日数があります。そのため、注文日が 7 月 1 日であれば、要求日は 7 月 4 日になります。
 
@@ -51,7 +51,7 @@ ms.locfileid: "5908296"
 
 次の図では、入庫幅を強調表示しています。
 
-![入庫幅](media/safety-margins-2.png)
+![入庫幅。](media/safety-margins-2.png)
 
 通常、入庫幅は、システムの一般リードタイムの一部としては獲得されない、倉庫登録またはその他の時間がかかるプロセスのための時間を確保するためのバッファーとして使用されます。 購入の場合、発注書の *出荷日* がそれに応じて移動することが 1 つのベネフィットになります。 安全マージンを使用するのではなく、リードタイムを延長した場合でも、仕入先は最後に出荷するように求められます。
 
@@ -66,7 +66,7 @@ ms.locfileid: "5908296"
 
 次の図では、再注文マージンを強調表示しています。
 
-![再発注マージン](media/safety-margins-3.png)
+![再発注マージン。](media/safety-margins-3.png)
 
 再注文マージンは、マスター プラン中のすべての計画オーダーについて、品目のリードタイムの前に追加されます。 したがって、供給オーダーを配置するための時間が余分に必要になります。 このマージンは、通常、注文の作成時に承認プロセスまたはその他の内部プロセスに必要な時間を確保するためにバッファーとして使用されます。 再注文マージンは、供給の *注文日* と *開始日* の間に置かれます。
 
@@ -77,7 +77,7 @@ ms.locfileid: "5908296"
 
 次の図では、払出安全日数を強調表示しています。
 
-![払出安全日数](media/safety-margins-4.png)
+![払出安全日数。](media/safety-margins-4.png)
 
 払出安全日数は、マスター プラン時に需要要求日から差し引かれます。 この機能を使用すると、需要注文に反応して出荷できるように時間を確保することができます。 このマージンは、通常、出荷と関連する出庫倉庫プロセスの時間を保証するためのバッファーとして使用されます。
 
@@ -165,7 +165,7 @@ ms.locfileid: "5908296"
 - **倉庫 (WH):** イエロー
 - **仕入先 (V):** ブルー
 
-[![カレンダー設定の概要マトリックス](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![カレンダー設定の概要マトリックス。](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>計算遅延
 
@@ -173,7 +173,7 @@ ms.locfileid: "5908296"
 
 たとえば、ある品目のリードタイムが 3 日で、入庫幅が 3 日であるとします。 この品目の販売注文は、今日必要として設定されます。 この場合、*リードタイム* + *入庫幅* = 4 日として計算されます。 したがって、今日が 8 月 14 日であれば、4 日間の遅延では 8 月 18 日の出荷が生成されます。 次の図は、この例を示しています。
 
-![遅延計算の例](media/safety-margins-delays.png)
+![遅延計算の例。](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

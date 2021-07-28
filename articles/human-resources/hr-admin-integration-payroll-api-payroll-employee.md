@@ -13,18 +13,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87efbf7063de373e1e0b844ff1b942cdaab4a021
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 57501d07f6b9cffdff9f37737df8c278c574cf30
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055055"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314288"
 ---
 # <a name="payroll-employee"></a>給与従業員
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources における給与従業員エンティティに対するクエリの詳細および例を示します。
+このトピックでは、Dynamics 365 Human Resources の給与従業員のエンティティについて説明します。
+
+物理名: mshr_payrollemployeeentity。
+
+### <a name="description"></a>説明
+
+このエンティティは、従業員に関する情報を提供します。 このエンティティを使用する前、[給与統合のパラメーター](hr-admin-integration-payroll-api-parameters.md) を設定する必要があります。
 
 ## <a name="properties"></a>プロパティ
 
@@ -35,7 +41,7 @@ ms.locfileid: "6055055"
 | **姓**<br>mshr_lastname<br>*文字列* | 読み取り専用<br>必須 | 従業員の姓。 |
 | **法人 ID**<br>mshr_legalentityID<br>*文字列* | 読み取り専用<br>必須 | 法人 (会社) を指定します。 |
 | **発効日**<br>mshr_namevalidfrom<br>*日時オフセット* | 読み取り専用 <br>必須 | 従業員情報の有効日。  |
-| **種類**<br>mshr_gender<br>*Int32* | 読み取り専用<br>必須 | 従業員の性別。 |
+| **種類**<br>mshr_gender<br>[mshr_hcmpersongender オプション セット](hr-admin-integration-payroll-api-gender.md) | 読み取り専用<br>必須 | 従業員の性別。 |
 | **給与従業員エンティティ ID**<br>mshr_payrollemployeeentityid<br>*GUID* | 必須<br>システム生成 | 従業員を一意に識別するためのシステム生成の GUID 値。 |
 | **雇用開始日**<br>mshr_employmentstartdate<br>*日時オフセット* | 読み取り専用<br>必須 | 従業員の雇用開始日。 |
 | **識別タイプ ID**<br>mshr_identificationtypeid<br>*文字列* |読み取り専用<br>必須 | 従業員に対して定義される ID タイプ。 |
@@ -59,25 +65,30 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
 
 ```json
 {
-         "mshr_legalentityid": "USMF",
-            "mshr_personnelnumber": "000041",
-            "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
-            "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-            "mshr_firstname": "Cassie",
-            "mshr_middlename": "Lassie",
-            "mshr_lastname": "Hicks",
-            "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-            "mshr_namevalidto": "2154-12-31T23:59:59Z",
-            "mshr_birthdate": "1987-09-12T00:00:00Z",
-            "mshr_gender": 200000002,
-            "mshr_identificationtypeid": "SSN",
-            "mshr_identificationnumber": "888-99-9342",
-            "mshr_dataareaid": "USMF",
-            "mshr_primaryfield": "000041 | USMF | 4/5/2011 07:00:00 am",
-            "_mshr_fk_worker_id_value": "000000ad-0000-0000-d5ff-004105000000",
-            "_mshr_fk_employment_id_value": "00000d0d-0000-0000-0600-014105000000",
-            "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
-            "mshr_payrollemployeeentityid": "00000d3c-0000-0000-d5ff-004105000000",
-            "_mshr_dataareaid_id_value": null
+    "mshr_legalentityid": "USMF",
+    "mshr_personnelnumber": "000041",
+    "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
+    "mshr_employmentenddate": "2154-12-31T23:59:59Z",
+    "mshr_firstname": "Cassie",
+    "mshr_middlename": "Lassie",
+    "mshr_lastname": "Hicks",
+    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
+    "mshr_namevalidto": "2154-12-31T23:59:59Z",
+    "mshr_birthdate": "1987-09-12T00:00:00Z",
+    "mshr_gender": 200000002,
+    "mshr_identificationtypeid": "SSN",
+    "mshr_identificationnumber": "888-99-9342",
+    "mshr_dataareaid": "USMF",
+    "mshr_primaryfield": "000041 | USMF | 4/5/2011 07:00:00 am",
+    "_mshr_fk_worker_id_value": "000000ad-0000-0000-d5ff-004105000000",
+    "_mshr_fk_employment_id_value": "00000d0d-0000-0000-0600-014105000000",
+    "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
+    "mshr_payrollemployeeentityid": "00000d3c-0000-0000-d5ff-004105000000",
+    "_mshr_dataareaid_id_value": null
 }
 ```
+## <a name="see-also"></a>参照
+
+[給与統合 API の概要](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

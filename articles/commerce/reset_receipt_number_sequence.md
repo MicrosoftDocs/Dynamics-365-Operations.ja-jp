@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: cabce32a43e55f3a3f19bc2d78547d9bab0d89a2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a08d14369057ceb9b23e9d6f9a79847c6175f88e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792052"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345085"
 ---
 # <a name="reset-receipt-numbers"></a>レシート番号のリセット 
 
@@ -55,7 +55,7 @@ ms.locfileid: "5792052"
 1. **レシート タイプのリセット** フィールドで、**1 回のみ** または **年 1 回** を選択します。
 1. **OK** を選択します。
 
-![レシートのリセット日付の選択](media/Enable_receipt_reset.png "レシートのリセット日付の選択")
+![レシートのリセット日付の選択。](media/Enable_receipt_reset.png "レシートのリセット日付の選択")
 
 日付を選択したら、**次のレシート番号リセット日付** 列に表示されます。 リセット日付は、すべてのレシート トランザクション タイプに適用可能です。 したがって、レシートの番号順序はすべてのレシート タイプに対してリセットされます。
 

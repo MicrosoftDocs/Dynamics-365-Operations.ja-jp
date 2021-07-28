@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 97ecd7996ed2d8fb12c1038aa296450d3481e6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866305"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345789"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>財務諸表のレポート ツリー定義
 
@@ -170,23 +170,23 @@ ms.locfileid: "5866305"
 - 最下位レベルの詳細レポート単位 (国内販売、自動販売、クライアント サービス、および工程) は、財務データの部門を表します。 これらのレポート単位は、ダイアグラムの影付き領域にあります。
 - 上位レベルの集計単位は、詳細単位から情報を集計します。
 
-[![Contoso 集計レポート構造 - 例 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso 集計レポート構造 - 例 1。](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>[レポート単位の構造 – 例 2]
 
 次の図では、レポート ツリーに業務機能で分割された組織構造が含まれています。
 
-[![Contoso 集計レポート構造 - 例 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso 集計レポート構造 - 例 2。](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>[分析コードからレポート単位を挿入] ダイアログ ボックスの例
 
 次の図は、**分析コードからレポート単位を挿入** ダイアログ ボックスの例を示しています。 この例では、事業単位、原価部門、および部門の組み合わせの結果を返します。
 
-[![レポート ユニットの挿入](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![レポート ユニットの挿入。](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 最終的なレポート ツリー定義は事業単位、原価部門、部門別に並べ替えられます。 5 番目のレポート単位の分析コードは、**事業単位 = \[001\]、原価部門 =\[\]、部門 = \[022\]** で、事業単位 001 と部門 022 に対して固有のアカウントのレポート単位を識別します。
 
-[![レポート ツリーの図](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![レポート ツリーの図。](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>データ ロールアップの例
 
@@ -194,11 +194,11 @@ ms.locfileid: "5866305"
 
 #### <a name="example-1"></a>例 1
 
-[![複数会社のロールアップ](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![複数会社のロールアップ。](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>例 2
 
-[![会社間部署ロールアップ](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![会社間部署ロールアップ。](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

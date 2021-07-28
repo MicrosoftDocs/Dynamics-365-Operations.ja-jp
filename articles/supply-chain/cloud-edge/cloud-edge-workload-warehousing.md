@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184025"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345503"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
 
@@ -73,7 +73,7 @@ ms.locfileid: "6184025"
 
 スケール ユニットは、ウェーブのリリース後の実際のウェーブ処理 (作業の割り当て、補充作業、需要作業の作成など) を所有します。 したがって、倉庫の作業者は、スケール ユニットに接続された倉庫管理モバイル アプリを使用して出荷作業を処理できます。
 
-![ウェーブ処理フロー](./media/wes-wave-processing-ga.png "ウェーブ処理フロー")
+![ウェーブ処理フロー。](./media/wes-wave-processing-ga.png "ウェーブ処理フロー")
 
 ### <a name="process-work-and-ship"></a>作業と出荷の処理
 
@@ -81,7 +81,7 @@ ms.locfileid: "6184025"
 
 ハブがトランザクションを *ピッキング済* に更新するとすぐに、出荷確認および関連付けられている販売梱包明細または積荷に対する移動オーダー出荷を処理することができます。
 
-![出荷プロセス フロー](./media/WES-outbound-processing-19.png "出荷プロセス フロー")
+![出荷プロセス フロー。](./media/WES-outbound-processing-19.png "出荷プロセス フロー")
 
 ## <a name="inbound-process-flow"></a>入庫プロセス フロー
 
@@ -107,11 +107,11 @@ ms.locfileid: "6184025"
 
 *倉庫へのリリース* プロセスを使用していないため、*倉庫オーダー* を使用していない場合は、倉庫 の入荷と作業の処理をスケール ユニットから独立して処理できます。
 
-![入庫プロセス フロー](./media/wes-inbound-ga.png "入庫プロセス フロー")
+![入庫プロセス フロー。](./media/wes-inbound-ga.png "入庫プロセス フロー")
 
 倉庫アプリの受信処理を介してスケール ユニットの倉庫オーダーに入庫登録を実行する場合、スケール ユニットのワークロードは、関連する発注書明細行のトランザクションを *登録済* に更新するようハブに信号を出力します。 これで完了すると、発注書の製品受領書の処理をハブ上で開始することができます。
 
-![入庫プロセス フロー](./media/WES-inbound-processing-19.png "入庫プロセス フロー")
+![入庫プロセス フロー。](./media/WES-inbound-processing-19.png "入庫プロセス フロー")
 
 ## <a name="supported-processes-and-roles"></a>サポートされているプロセスとロール
 

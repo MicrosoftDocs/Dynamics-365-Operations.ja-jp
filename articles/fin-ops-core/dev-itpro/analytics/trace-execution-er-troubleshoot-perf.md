@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: 23b965bb51a4323164ae52bf70050133c9c9c9da
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295576"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344885"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>パフォーマンス上の問題をトラブルシューティングするため ER 形式の実行を追跡します
 
@@ -56,14 +56,14 @@ ms.locfileid: "6295576"
 
 アプリケーションで生成された各 ER パフォーマンス追跡は、実行ログ レコードの添付ファイルとして保管されます。 これらの添付ファイルを管理するには、ドキュメント管理 (DM) フレームワークを使用します。 ER パラメーターを事前にコンフィギュレーションして、パフォーマンス追跡を添付するのに使用する DM ドキュメント タイプを指定する必要があります。 **電子申告** ワークスペースで、**電子申告パラメーター** を選択します。 次に、**電子申告パラメーター** ページの **添付ファイル** タブの **その他** フィールドで、パフォーマンス追跡に使用する DM ドキュメント タイプを選択します。
 
-![電子申告のパラメーター ページ](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![電子申告のパラメーター ページ。](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 **その他** ルックアップ フィールドで使用可能にするには、DM ドキュメント タイプを **ドキュメント タイプ** ページ (**組織管理 \> ドキュメント管理 \> ドキュメント タイプ**): で次のようにコンフィギュレーションする必要があります。
 
 - **クラス:** 添付ファイル
 - **グループ:** ファイル
 
-![ドキュメント タイプ ページ](./media/GER-PerfTrace-DM-DocumentType.png)
+![ドキュメント タイプ ページ。](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > DM 添付ファイルは会社固有であるため、選択したドキュメント タイプは、現在のインスタンスのすべての会社で使用可能である必要があります。
@@ -72,7 +72,7 @@ ms.locfileid: "6295576"
 
 生成される ER パフォーマンス追跡は、ER 形式デザイナーと ER マッピング デザイナーを使用して、分析用に RCS にインポートされます。 ER パフォーマンス追跡は ER 形式に関連する実行ログ レコードの添付ファイルとして格納されるため、RCS パラメーターを事前にコンフィギュレーションして、パフォーマンス追跡の添付に使用する DM ドキュメント タイプを指定する必要があります。 会社用にプロビジョニングされた RCS のインスタンスの、**電子申告** ワークスペースで、**電子申告パラメーター** を選択します。 次に、**電子申告パラメーター** ページの **添付ファイル** タブの **その他** フィールドで、パフォーマンス追跡に使用する DM ドキュメント タイプを選択します。
 
-![RCS の電子申告パラメーター ページ](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![RCS の電子申告パラメーター ページ。](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 **その他** ルックアップ フィールドで使用可能にするには、DM ドキュメント タイプを **ドキュメント タイプ** ページ (**組織管理 \> ドキュメント管理 \> ドキュメント タイプ**): で次のようにコンフィギュレーションする必要があります。
 
@@ -92,7 +92,7 @@ ms.locfileid: "6295576"
     2. **参照** を選択して、必要な ER コンフィギュレーションに適したファイルを XML 形式で選択します。
     3. **OK** を選択します。
 
-    ![RCS の構成ページ](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![RCS の構成ページ。](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## <a name="run-the-er-solution-to-trace-execution"></a>ER ソリューションを実行して追跡実行する
 
@@ -109,7 +109,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
     3. **コンフィギュレーション** クイック タブで、**パフォーマンス追跡形式** コンフィギュレーションを選択します。
     4. **バージョン** クイック タブで、選択したコンフィギュレーションのバージョン **1.1** を選択し、**インポート** を選択します。
 
-    ![レポジトリ ページのコンフィギュレーション](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![コンフィギュレーション レポジトリ ページ。](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 データ モデルとモデル マッピングコン フィギュレーションの対応するバージョンは、インポートされた ER 形式コンフィギュレーションの前提条件として自動的にインポートされます。
 
@@ -156,7 +156,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
     > [!NOTE]
     > **ユーザー パラメーター** ダイアログ ボックスのパラメーターは、ユーザーと現在の会社に固有です。
 
-    ![ユーザー パラメーター ダイアログ ボックス](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![ユーザー パラメーター ダイアログ ボックス。](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a name="run-the-er-format"></a><a id='run-format'></a>ER 形式を実行する
 
@@ -177,11 +177,11 @@ ER ソリューションの最初のバージョンのデザインが完了し�
 2. **電子申告実行ログ** ページ、左ウィンドウの、**コンフィギュレーション名** フィールドで、**パフォーマンス追跡形式** を選択し、**パフォーマンス追跡形式** コンフィギュレーションの実行によって生成されたログ レコードを検索します。
 3. ページの右上隅にある **添付ファイル** ボタン (紙クリップ記号) を選択するか、**Ctrl + Shift + A** を押します。
 
-    ![電子申告実行ログ ページの添付ファイル ボタン](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![電子申告実行ログ ページの添付ファイル ボタン。](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. **電子申告実行ログの添付ファイル** ページの、アクション ウィンドウで、**開く** を選択してパフォーマンス追跡を zip ファイルとして取得し、ローカルに保管します。
 
-    ![電子申告実行ログの添付ファイル](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![電子申告実行ログの添付ファイル。](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > 生成されるトレースは、**GUID** 形式のみの固有のレポート ID を通じて、ソース ER レポートを参照しています。 形式のバージョン番号付けは考慮されません。
@@ -198,7 +198,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
 6. **参照** を選択し、先ほどインポートした zip ファイルを選択します。
 7. **OK** を選択します。
 
-    ![RCS のパフォーマンス追跡結果の設定ダイアログ ボックス](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![RCS のパフォーマンス追跡結果の設定ダイアログ ボックス。](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a>RCS での分析に対するパフォーマンス追跡の使用 – 形式実行
 
@@ -209,7 +209,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
     - 形式項目を使用して生成された出力にデータを入力するのに費やした実際の時間
     - 出力全体の生成に費やされた合計時間の割合で表される同じ時間
 
-    ![RCS の形式デザイナー ページ](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![RCS の形式デザイナー ページ。](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. **形式デザイナー** ページを閉じます。
 
@@ -232,7 +232,7 @@ VendTable/\<Relations/VendTrans.VendTable\_AccountNum データ ソースの実�
 - 1 回の呼び出しでは、構成されたバインディングに基づいて、データ モデルの各トランザクションの詳細を入力します。
 - もう 1 回の呼び出しで、データ モデルの仕入先ごとに計算されたトランザクション数を入力します。
 
-![RCS のモデル マッピング デザイナー ページで重複したデータベース要求に関するメッセージ](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+![RCS のモデル マッピング デザイナー ページで重複したデータベース要求に関するメッセージ。](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
 
 **\[Q:530\]** の値は、テーブルから VendTable/\<Relations/VendTrans.VendTable\_AccountNum データ ソースにレコードを返すため、VendTrans テーブルが 530 回呼び出されたことを示します。 **\[530\]** の値は、VendTable/\<Relations/VendTrans.VendTable\_AccountNum データ ソースが、そのデータ ソースからレコードを返し、データ モデルで詳細を入力するために 530 回呼び出されたことを示します。
 
@@ -240,7 +240,7 @@ VendTable/\<Relations/VendTrans.VendTable\_AccountNum データ ソースの実�
 
 それは LedgerTransTypeList データ ソースに対して行われる呼び出し数を減らすのにも役立ちます。 このデータ ソースは、**LedgerTransType** 列挙の各値をラベルに関連付けるために使用されます。 このデータ ソースを使用すると、適切なラベルを検索して、各仕入先トランザクションのデータ モデルに入力できます。 このデータ ソースへの現在の呼び出し数 (9,027) は、265 トランザクションに対して非常に高くなっています。
 
-![データ ソースへの 9,027 の呼び出しを示す、RCS のモデル マッピング デザイナー ページ](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+![データ ソースへの 9,027 の呼び出しを示す、RCS のモデル マッピング デザイナー ページ。](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
 
 ## <a name="improve-the-model-mapping-based-on-information-from-the-execution-trace"></a>実行追跡からの情報に基づいてモデル マッピングを改善する
 
@@ -253,7 +253,7 @@ VendTable/\<Relations/VendTrans.VendTable\_AccountNum データ ソースの実�
     3. **VendTable** 項目を展開し、VendTable データ ソース (**\<関係** 項目) の一対多の関係の一覧を展開してから、**VendTrans.VendTable\_AccountNum** 項目を選択します。
     4. **キャッシュ** を選択します。
 
-    ![重複呼び出しを防ぐためのキャッシュ設定](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![重複呼び出しを防ぐためのキャッシュ設定。](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. LedgerTransTypeList データ ソースを VendTable データ ソースのスコープに移動するには、次の手順に従います。
 
@@ -274,7 +274,7 @@ VendTable/\<Relations/VendTrans.VendTable\_AccountNum データ ソースの実�
     3. **VendTable.\$TransType** 項目を選択します。
     4. **キャッシュ** を選択します。
 
-    ![$TransType フィールドのキャッシュ設定](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![$TransType フィールドのキャッシュ設定。](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. 次の手順に従って **\$TransTypeRecord** フィールドを変更し、キャッシュされた **\$TransType** フィールドを使用開始できるようにします。
 
@@ -341,7 +341,7 @@ LedgerTransTypeList データソースへの呼び出し数が 9,027 から 240 
 
 RCS に加えて、一部のバージョンでは ER フレームワーク デザイナー経験に対する機能が提供される場合があります。 これらのバージョンには **デザイン モードを有効にする** オプションがあり、有効にすることができます。 このオプションは **電子申告パラメーター** ページの **一般** タブで検索できます。このページは **電子申告** ワークスペースから開くことができます。
 
-![電子申告パラメーター ページでデザイン モード オプションを有効にする](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![電子申告パラメーター ページでデザイン モード オプションを有効にする。](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 これらのいずれかのバージョンを使用する場合は、生成されたパフォーマンス追跡の詳細をアプリケーションで直接分析できます。 アプリケーションからエクスポートして RCS にインポートする必要はありません。
 
@@ -359,7 +359,7 @@ RCS に加えて、一部のバージョンでは ER フレームワーク デ�
 
 Web ブラウザーによって、ダウンロード用の zip ファイルが提供されていることに注意してください。 このファイルには、PerfView 形式のパフォーマンス追跡が含まれています。 次に、PerfView パフォーマンス分析ツールを使用して ER 形式実行の詳細を分析できます。
 
-![PerfView 形式のパフォーマンス トレース情報](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![PerfView 形式のパフォーマンス トレース情報。](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>外部ツールを使用してデータベース クエリを含む実行トレースを確認する
 
@@ -375,7 +375,7 @@ ER フレームワークに行われた改善のため、PerfView 形式で生�
     - **クエリ統計情報の収集** オプションを **はい** に設定します。
     - **クエリの追跡** オプションを **はい** に設定します。
 
-    ![トレースの実行セクション、ユーザー パラメータ ダイアログボックス](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![トレースの実行セクション、ユーザー パラメータ ダイアログ ボックス。](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>ER 形式を実行する
 
@@ -383,7 +383,7 @@ ER フレームワークに行われた改善のため、PerfView 形式で生�
 
 Web ブラウザーによって、ダウンロード用の zip ファイルが提供されていることに注意してください。 このファイルには、PerfView 形式のパフォーマンス追跡が含まれています。 次に、PerfView パフォーマンス分析ツールを使用して ER 形式実行の詳細を分析できます。 この追跡に、ER 形式の実行中における SQL データベース アクセスに関する詳細が含まれるようになりました。
 
-![PerfView で実行された ER 形式のトレース情報](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![PerfView で実行された ER 形式のトレース情報。](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## <a name="additional-resources"></a>追加リソース
 

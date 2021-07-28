@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830765"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344149"
 ---
 # <a name="work-split"></a>作業の分割
 
@@ -51,7 +51,7 @@ ms.locfileid: "5830765"
 - **作業分割**: 現在の作業 ID を別々の作業員が処理できる複数の小さい作業 ID に分割します。
 - **作業分割セッションのキャンセル**: 作業分割セッションをキャンセルし、作業を処理できるようにします。
 
-![作業分割と作業分割セッションのキャンセル ボタン](media/Work_split_buttons.png "作業分割と作業分割セッションのキャンセル ボタン")
+![作業分割と作業分割セッションのキャンセル ボタン。](media/Work_split_buttons.png "作業分割と作業分割セッションのキャンセル ボタン")
 
 > [!IMPORTANT]
 > **作業分割** ボタンは、次のいずれかの条件が満たされている場合には使用できません。
@@ -94,7 +94,7 @@ ms.locfileid: "5830765"
 
     現在の作業の **作業ブロック理由** フィールドが *作業分割* に設定され、その作業がブロックされます。
 
-    ![ブロックの理由](media/Blocking_reason.png "ブロックの理由")
+    ![ブロックの理由。](media/Blocking_reason.png "ブロックの理由")
 
 1. 現在の作業 ID から削除する明細行を選択し、新しい作業 ID に追加します。 以下のイベントが発生します :
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 721799c9a6fafe0a809f447189ce6814b30ca863
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1a1ee5345e2d6b3736d45e233a59ac4009a9f1c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052460"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344691"
 ---
 # <a name="configure-dataverse-integration"></a>Dataverse 統合のコンフィギュレーション
 
@@ -48,15 +48,15 @@ Microsoft Dataverse と Dynamics 365 Human Resources の統合を有効化また
 
 1. Dataverse による統合の設定を表示または構成を希望する Human Resources インスタンスで、**システム管理** のタイルを選択します。
 
-    [![システム管理のタイル](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![システム管理のタイル。](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. **リンク** タブを選択します。
 
-    [![リンク タブ](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![リンク タブ。](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
 3. **統合** で、**Dataverse 統合** を選択します。
 
-    [![Dataverse コンフィギュレーション リンク](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Dataverse コンフィギュレーション リンク。](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Human Resources とDataverse 間でのデータ統合を有効化また無効化
 
@@ -67,7 +67,7 @@ Microsoft Dataverse と Dynamics 365 Human Resources の統合を有効化また
 
 - 統合を無効にするには、オプションを **いいえ** に設定します。
 
-[![Dataverse 統合を有効化または無効化](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Dataverse 統合を有効化または無効化。](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
 > データ移行タスクの実行中は、 Dataverse 統合をオフにすることを強くお勧めします。 大規模なデータのアップロードはパフォーマンスに大きな影響を与える可能性があります。 たとえば、2000 件の作業者をアップロードすると、統合が有効になっている場合には数時間かかりますが、無効になっている場合は1時間もかかりません。 この例で示している数値は、デモンストレーションの目的でのみ使用されます。 レコードのインポートにかかる正確な時間は、さまざまな要因によって多くの影響を受けます。
@@ -98,7 +98,7 @@ Human Resources と Dataverse 間のデータ同期中に問題が発生した�
 
 - Human Resources レコードと Dataverse の行関連付けを削除するには、**Dataverse テーブル** のフィールドでテーブルを選択し、**追跡情報の削除** を選択します。
 
-[![追跡情報をクリア](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![追跡情報をクリア。](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 追跡を削除した後、テーブルの完全同期を実行するには、次の手順を参照してください。
 
@@ -116,7 +116,7 @@ Human Resources と Dataverse の間のテーブルで完全同期を実行す�
 
 2. **今すぐ同期** を選択します。
 
-[![完全同期の実行](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![完全同期の実行。](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## <a name="see-also"></a>参照
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
+ms.custom:
+- "58941"
+- intro-internal
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944368"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345693"
 ---
 # <a name="electronic-reporting-er-overview"></a>電子申告 (ER) の概要
 
@@ -101,7 +103,7 @@ ER では **データ モデル** および **形式** の 2 つのコンポー�
 
 次の図は、データがこれらの形式にどのようにフローするかを示します。
 
-[![送信する形式コンポーネントのデータ フロー](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![送信する形式コンポーネントのデータ フロー。](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 1 つの ER 書式設定コンフィギュレーションを実行し、送信する電子ドキュメントを生成するには、書式設定コンフィギュレーションのマッピングを識別する必要があります。
 
@@ -115,7 +117,7 @@ ER では **データ モデル** および **形式** の 2 つのコンポー�
 
 次の図は、データがこれらの形式にどのようにフローするかを示します。
 
-[![受信する形式コンポーネントのデータ フロー](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![受信する形式コンポーネントのデータ フロー。](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 受信する電子ドキュメントからデータをインポートする 1 つの ER 書式設定のコンフィギュレーションを実行するには、書式設定のコンフィギュレーションの必要なマッピング、およびモデル マッピングの統合ポイントも識別する必要があります。 受信したドキュメントの異なるタイプに対する異なる形式と組み合わせて、同じモデル マッピングおよび宛先を使用できます。
 
@@ -290,7 +292,7 @@ ER により、現在の派生コンポーネントのドラフト バージョ�
 
 Finance の ER 構成の一覧が更新されました。 [グローバル リポジトリ](er-download-configurations-global-repo.md) を開き、現在サポートされている ER コンフィギュレーションの一覧を確認します。 **中止の詳細** クイック タブで、中止された構成や管理されなくなった構成に関する情報を確認できます。 
 
-![[構成 リポジトリ] ページのグローバル リポジトリのコンテンツ](./media/er-overview-03.gif)
+![構成 リポジトリ ページのグローバル リポジトリのコンテンツ。](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>追加リソース
 

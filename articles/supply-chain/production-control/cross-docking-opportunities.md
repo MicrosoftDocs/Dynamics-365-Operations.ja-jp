@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32a1acba8b4ca9484cbbc4b23ba496521ec4f61b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190091"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347689"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>製造オーダーから出荷ドックへのクロスドッキング
 
@@ -42,7 +42,7 @@ ms.locfileid: "6190091"
 -   既にトレーラーがそのベイ ドアに割り当てられている場合、トラック ドライバーはそのトレーラーに直接製品を積み込むよう指示されます。
 -   製品を移す計画活動がない場合、フォーク リフト ドライバーは製品を内部倉庫 (5) 内の場所に保管するよう指示されます。
 
-[![便乗クロスドッキング](./media/scenario1.png)](./media/scenario1.png)
+[![便乗クロスドッキング。](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>クロスドッキングのコンフィギュレーション
 **作業ポリシー** でクロスドッキング プロセスをコンフィギュレーションします。 作業ポリシーには、ワーク オーダー タイプ、場所、および製品が含まれます。 次の例では、クロスドッキングは製品 X と場所 Y 用にコンフィギュレーションされています。

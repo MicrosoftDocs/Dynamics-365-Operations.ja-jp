@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e84a8c3f69bb1a429c6fd9679ba671a185cf6378
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d86c16ecd2105a7f118cf77aa078f553feb2d933
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838349"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345261"
 ---
 # <a name="cycle-counting"></a>循環棚卸
 
@@ -34,7 +34,7 @@ ms.locfileid: "5838349"
 2.  **プロセス循環棚卸** – 循環棚卸作業の作成後、倉庫の場所の品目の棚卸をし、Dynamics 365 Supply Chain Management への結果の入力にモバイル デバイスを使用して、循環棚卸作業を実行します。 または、循環棚卸作業を作成せずに、倉庫の場所の品目を棚卸できます。 このプロセスは *スポット循環棚卸* と呼ばれます。
 3.  **循環棚卸値の差異の解決** – 循環棚卸後、棚卸値の差異がある品目は、**すべての作業** ページの作業状態が **検討保留** です。 これらの差異は **循環棚卸作業が検討保留** ページで解決できます。
 
-次の図は、循環棚卸プロセスを示します。 ![循環棚卸のプロセス フロー](./media/performcyclecountinginawarehouselocation.jpg)
+次の図は、循環棚卸プロセスを示します。 ![循環棚卸のプロセス フロー。](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>循環棚卸計画の前提条件
 次の表に、循環棚卸を使用する前に準備が整っている必要のある前提条件を示します。

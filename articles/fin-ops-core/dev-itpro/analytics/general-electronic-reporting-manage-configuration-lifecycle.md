@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893204"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345741"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>電子申告 (ER) コンフィギュレーション ライフサイクルの管理
 
@@ -80,7 +80,7 @@ ER に関連する次の理由から、個別の Finance and Operations イン�
 
 開発環境で設計された ER コンフィギュレーションは、コンフィギュレーション評価 (適切な統合プロセス、結果の正確性、パフォーマンス)、およびロールにおけるアクセス権の正確性、職務分掌など品質保証のために、テスト環境に [アップロード](#data-persistence-consideration) できます。 ER コンフィギュレーションの交換を可能にする機能は、この目的に使用できます。 認定された ER コンフィギュレーションは、LCS にアップロードしてサービスのサブスクライバーと共有するか、または内部で使用する実稼働環境に [インポート](#data-persistence-consideration) することができます。
 
-![ER コンフィギュレーション ライフサイクル](./media/ger-configuration-lifecycle.png)
+![ER コンフィギュレーション ライフサイクル。](./media/ger-configuration-lifecycle.png)
 
 ## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" /> データ持続性の考慮事項
 

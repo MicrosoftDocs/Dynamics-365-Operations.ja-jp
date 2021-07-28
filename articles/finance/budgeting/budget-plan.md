@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 3673705ba4a8d69c32848881d6a280a09047d1e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188024"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343889"
 ---
 # <a name="budget-planning"></a>予算計画
 
@@ -47,11 +47,11 @@ ms.locfileid: "6188024"
 
 このシナリオの予算計画コンフィギュレーションのスキーマは次のようになります:
 
-![予算計画のコンフィギュレーション スキーマ](./media/screenshot1-300x152.png)
+![予算計画のコンフィギュレーション スキーマ。](./media/screenshot1-300x152.png)
 
 ジュリアは、予算を設定するために、Excel の次のテンプレートを使用します:
 
-[![Excel テンプレート](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
+[![Excel テンプレート。](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
 ## <a name="exercise-1-configuration"></a>練習 1: コンフィギュレーション
 
@@ -60,27 +60,27 @@ ms.locfileid: "6188024"
 
 1.1。 組織階層 (組織の管理 &gt; 組織 &gt; 組織階層) の順に移動し、新規ボタンをクリックします。
 
-![組織階層](./media/screenshot3.png) 
+![組織階層。](./media/screenshot3.png) 
 
 1.2。 名前ボックスに組織階層の名前を入力し、目的の割り当てボタンをクリックします。
 
 1.3。 予算計画目的を選択し、追加ボタンをクリックし、新しく作成された組織階層を割り当てます。 
 
-[![目的の割り当て](./media/screenshot5.png)](./media/screenshot5.png)
+[![目的を割り当てます。](./media/screenshot5.png)](./media/screenshot5.png)
 
 1.4。 セキュリティの組織のために上記の手順を繰り返します。 終了した際にフォームを閉じます。
 
 1.5。 組織階層フォームで、表示のボタンをクリックします。 階層構造デザイナーの編集をクリックし、挿入のボタンをクリックして階層を作成します。
 
-[![挿入](./media/screenshot7.png)](./media/screenshot7.png) 
+[![挿入。](./media/screenshot7.png)](./media/screenshot7.png) 
 
 1.6。 予算の階層の [財務部門] を選択します。 
 
-[![財務](./media/screenshot8.png)](./media/screenshot8.png)
+[![財務。](./media/screenshot8.png)](./media/screenshot8.png)
 
 1.7。 終了後、公開および終了をクリックします。 階層の発行の有効日として 2015 年 1 月 1 日を選択します。
 
-[![有効日](./media/screenshot9.png)](./media/screenshot9.png)
+[![有効日。](./media/screenshot9.png)](./media/screenshot9.png)
 
 ### <a name="task-2-configure-user-security"></a>タスク 2: ユーザーのセキュリティのコンフィギュレーション
 予算計画は、予算計画のデータへのアクセスを構成する際に特別なセキュリティ ポリシーを使用します。 ジュリアは、自分自身に対して、財務予算計画へのアクセス権を与える必要があります。 
@@ -90,15 +90,15 @@ ms.locfileid: "6188024"
 
 2.2. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。 パラメータータブで、セキュリティ モデルの値を、セキュリティの組織に基づいて設定します。 
 
-[![パラメーター](./media/screenshot11.png)](./media/screenshot11.png) 
+[![パラメーター。](./media/screenshot11.png)](./media/screenshot11.png) 
 
 2.3. [システム管理] &gt; [ユーザー] &gt; [ユーザー] の順に移動します。 管理者 (ジュリア ファンダーバーク) の予算マネージャーのロールをユーザーに付与します。 
 
-[![予算マネージャー](./media/screenshot12.png)](./media/screenshot12.png) 
+[![予算マネージャー。](./media/screenshot12.png)](./media/screenshot12.png) 
 
 2.4. ユーザー ロールを選択し、組織の割り当てをクリックします。 
 
-[![組織の割り当て](./media/screenshot13.png)](./media/screenshot13.png)
+[![組織を割り当てます。](./media/screenshot13.png)](./media/screenshot13.png)
 
 2.5. 「特定の組織にアクセス許可を付与」を選択します。 最初の手順で作成した組織階層を選択します。 財務のノードを選択し、子を含むアクセス許可のボタンをクリックします 
 
@@ -109,7 +109,7 @@ ms.locfileid: "6188024"
 
 *注: 必要であれば、この練習用の新しいシナリオを作成し、それらを代わりに使用します。* 
 
-[![新しいシナリオ](./media/screenshot15.png)](./media/screenshot15.png) 
+[![新しいシナリオ。](./media/screenshot15.png)](./media/screenshot15.png) 
 
 *注: ジュリアは予算計画に正式な承認プロセスを使用していないため、ワークフロー、ステージおよびこの実習でのワークフロー ステージの設定を省き、既存の自動的に承認する設定を使用します。このワークフロー コンフィギュレーションについては付録を参照してください。*
 
@@ -118,17 +118,17 @@ ms.locfileid: "6188024"
 
 4.1。 予算作成 &gt; 設定 &gt; 予算計画 &gt; 予算計画のコンフィギュレーションで、列ページを開きます。 フォームの右上隅にある Office ボタンをクリックして、列 (フィルター処理なし) を選択します。 
 
-[![列のフィルターなし](./media/screenshot16.png)](./media/screenshot16.png) 
+[![列のフィルターなし。](./media/screenshot16.png)](./media/screenshot16.png) 
 
 4.2. システムは、値を入力するために使用する Excel ブックを開きます。 メッセージが表示されたら、編集機能を有効にする、次いでこのアプリを信頼するをクリックします。 
 
 4.3. 値を入力するために、より多くの列が必要です。 右側のウィンドウでデザインをクリックして、グリッドに列を追加します。 
 
-[![デザイン](./media/screenshot19.png)](./media/screenshot19.png) 
+[![デザイン。](./media/screenshot19.png)](./media/screenshot19.png) 
 
 4.4. PlanColumns の横にある小さい鉛筆のボタンをクリックして、グリッドに追加する使用可能な列を表示します。 
 
-[![編集](./media/screenshot20.png)](./media/screenshot20.png) 
+[![編集。](./media/screenshot20.png)](./media/screenshot20.png) 
 
 4.5. 使用可能な各フィールドをダブルクックし、それらを選択したフィールドに追加し、更新をクリックします。 
 
@@ -136,7 +136,7 @@ ms.locfileid: "6188024"
 
 4.7. アプリケーションに戻り、ページを更新します。 公開された値が表示されます。 
 
-[![更新反映](./media/screenshot23.png)](./media/screenshot23.png)
+[![更新反映。](./media/screenshot23.png)](./media/screenshot23.png)
 
 ### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>タスク 5: 予算計画のドキュメント レイアウトおよびテンプレートの作成
 レイアウトは、ユーザーが予算計画のドキュメントを開いたときに、予算計画ドキュメントの行グリッドが、どのように表示されるかを定義します。 さまざまな角度で同じデータを表示するように予算計画のドキュメントのレイアウトを切り替えることもできます。 ここでは、ジュリアが予算計画のドキュメントで使用するために定義した列があるため、ジュリアは、予算データ (このラボのシナリオの概要セクションを参照) を作成するために使用する Excel の表に似た、予算計画のドキュメント レイアウトを作成する必要があります。 
@@ -147,14 +147,14 @@ ms.locfileid: "6188024"
 -   [要素] セクションの前の手順で作成された、すべての予算計画の列を一覧表示します。 前年度の実績を除くすべてを編集可能にします。
 -   どの財務分析コードをグリッドの説明に表示するかを選択するには、[説明] ボタンをクリックします。
 
-[![説明](./media/screenshot24.png)](./media/screenshot24.png) 
+[![説明。](./media/screenshot24.png)](./media/screenshot24.png) 
 
 予算計画レイアウト定義に基づいて、予算データを編集する代替方法として Excel テンプレートを作成できます。 Excel テンプレートは、予算計画のレイアウト定義と一致している必要があるために、Excel テンプレートの生成後に予算計画のレイアウトは編集できません。したがって、すべてのレイアウトのコンポーネントが定義された後に、このタスクは実行される必要があります。 
 
 5.2。 5.1 ステップで作成されたレイアウトを表示するには、 [テンプレート] &gt; [生成] の順にボタンをクリックします。 警告メッセージを確認します。 テンプレートを表示するには、[テンプレート] &gt; [ビュー] の順にクリックします。 
 
 *注: 名前を付けて保存を選択し、編集できるようにテンプレートを保存する場所を選択してください。ユーザーが、保存しないでダイアログで開くを選択した場合、ファイルへの変更は、ファイルを閉じたときに残りません。* 
-[![テンプレート ビュー](./media/screenshot25.png)](./media/screenshot25.png) 
+[![テンプレート ビュー。](./media/screenshot25.png)](./media/screenshot25.png) 
 
 5.3. &lt; オプションのステップ &gt; Excel テンプレートを変更して、フォーミュラの合計、ヘッダー フィールド、書式などの追加により、より使いやすくすることができます。変更を保存し、レイアウト  &gt; アップロードの順にクリックして、予算計画レイアウトにファイルをアップロードします。 
 
@@ -174,11 +174,11 @@ ms.locfileid: "6188024"
 
 *注: 追加のドキュメント レイアウトを作成し、それらを [代替レイアウト] ボタンをクリックして、予算計画のワークフロー ステージで使用できるように割り当てることができます。* 
 
-[![代替レイアウト](./media/screenshot27.png)](./media/screenshot27.png) 
+[![代替レイアウト。](./media/screenshot27.png)](./media/screenshot27.png) 
 
 6.2. アクション &gt; 有効化を選択して、この予算計画ワークフローを有効化します。 
 
-[![アクティブ化](./media/screenshot28.png)](./media/screenshot28.png)
+[![アクティブ化。](./media/screenshot28.png)](./media/screenshot28.png)
 
 ## <a name="exercise-2-process-simulation"></a>練習 2: プロセスのシミュレーション
 
@@ -187,26 +187,26 @@ ms.locfileid: "6188024"
 
 7.2. 予算作成 &gt; 予算計画の順に移動し、プロセスの生成で作成された予算計画を見つけます。 
 
-[![予算計画](./media/screenshot30.png)](./media/screenshot30.png) 
+[![予算計画。](./media/screenshot30.png)](./media/screenshot30.png) 
 
 7.3. [文書番号] のハイパーリンクをクリックしてドキュメントの詳細を開きます。 予算計画は、このラボで作成されたレイアウトで定義されたように表示されます。 
 
-[![予算計画表示](./media/screenshot31.png)](./media/screenshot31.png)
+[![予算計画表示。](./media/screenshot31.png)](./media/screenshot31.png)
 
 ### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>タスク 8: 前年度の実績に基づく今年度の予算の作成
 配賦方法を予算計画で使用できます。これにより、1 つのシナリオから別のシナリオに予算計画を簡単にコピーする、それらを複数の期間に分割する、または分析コードに配賦することができます。 前年度の実績からの今年度の予算を作成するために配賦を使用します。 
 
 8.1。 予算計画ドキュメント グリッドのすべての行を選択し、予算の配賦ボタンをクリックします。 
 
-[![すべての行](./media/screenshot32.png)](./media/screenshot32.png) 
+[![すべての行。](./media/screenshot32.png)](./media/screenshot32.png) 
 
 8.2. 配賦方法、期間キー、ソース シナリオとターゲット シナリオを選択し、配賦をクリックします。 
 
-[![配賦](./media/screenshot33.png)](./media/screenshot33.png)
+[![配賦。](./media/screenshot33.png)](./media/screenshot33.png)
 
 前年の実績金額が今年度の予算にコピーされ、販売曲線期間キーを使用して、それらを複数の期間に割り当てます。 
 
-[![販売曲線](./media/screenshot34.png)](./media/screenshot34.png)
+[![販売曲線。](./media/screenshot34.png)](./media/screenshot34.png)
 
 ### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>タスク 9: 予算計画ドキュメントを Excel を使用して調整し、ドキュメントを確定する
 9.1。 ワークシート ボタンをクリックして、Excel でドキュメントの内容を開きます。
@@ -215,9 +215,9 @@ ms.locfileid: "6188024"
 
 9.3。 予算計画ドキュメントに戻ります。 ワークフロー &gt; 提出 の順にクリックして、ドキュメントを自動承認します。
 
-[![自動承認](./media/screenshot37.png)](./media/screenshot37.png) 
+[![自動承認。](./media/screenshot37.png)](./media/screenshot37.png) 
 
-ワークフローが完了すると、予算計画ドキュメント ステージは承認済に変更します。 [![承認済](./media/screenshot38.png)](./media/screenshot38.png)
+ワークフローが完了すると、予算計画ドキュメント ステージは承認済に変更します。 [![承認済。](./media/screenshot38.png)](./media/screenshot38.png)
 
 ## <a name="appendix"></a>付録
 
@@ -225,21 +225,21 @@ ms.locfileid: "6188024"
 
 A. 予算作成 &gt; 設定 &gt; 予算計画 &gt; 予算作成ワークフロー。 予算計画ワークフローのテンプレートを使用して、新しいワークフローを作成します。
 
-[![新しいワークフローの作成](./media/screenshot39.png)](./media/screenshot39.png)
+[![新しいワークフローを作成します。](./media/screenshot39.png)](./media/screenshot39.png)
 
 このワークフローは、予算計画のステージ移行という 1 つのタスクだけを含みます。 
 
-[![予算計画のステージ移行](./media/screenshot40.png)](./media/screenshot40.png) 
+[![予算計画のステージ移行。](./media/screenshot40.png)](./media/screenshot40.png) 
 
 保存してワークフローを有効化します。 
 
 B. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。 ステージ タブで、初期および送信済という、2 つのステージを作成します。 
 
-[![初期および送信済](./media/screenshot41.png)](./media/screenshot41.png)
+[![初期および送信済。](./media/screenshot41.png)](./media/screenshot41.png)
 
 C. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。 ワークフロー ステージ タブで、初期および送信済というステージと共に、A ステップで作成された自動承認ワークフローを関連付けます。
 
-[![予算作成および予算計画](./media/screenshot42.png)](./media/screenshot42.png)  
+[![予算作成および予算計画。](./media/screenshot42.png)](./media/screenshot42.png)  
 
 
 

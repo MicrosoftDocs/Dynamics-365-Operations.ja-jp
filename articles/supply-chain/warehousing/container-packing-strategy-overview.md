@@ -7,16 +7,17 @@ ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f481f6ca047ee0285fe0e81d8fa96665e9d27cee
-ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
+ms.openlocfilehash: d39283dea37c0e0fbf432aae8b1a30a87198f9f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6292764"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343727"
 ---
 # <a name="container-packing-strategies"></a>コンテナー梱包計画
 
@@ -251,7 +252,7 @@ ms.locfileid: "6292764"
 1. 一覧で、**既定** ポリシーを選択します。
 1. アクション ウィンドウで、**編集** を選択します。
 1. **連結フィールド** クイックタブの **選択したフィールド** の一覧で、**フィールド名** フィールドが *注文番号* に設定されている行を選択します。
-1. **削除** ボタンの ![左矢印](media/backward-button.png) を選択して、フィールドを **残りのフィールド** 一覧に移動します。
+1. **削除** ボタンの ![左方向キー。](media/backward-button.png) を選択する フィールドを **残りのフィールド** の一覧に移動するには。
 1. アクション ウィンドウで、**保存** を選択します。
 
 ### <a name="set-up-physical-dimensions-for-the-product"></a>製品の現物分析コードの設定

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d92427c1aeee92921b5b817b67530cf8aeddbbfb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29b9e920744296d458e74ff3990191bde72b9e58
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744030"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344300"
 ---
 # <a name="configure-and-filter-workspaces"></a>ワークスペースのフィルター処理およびコンフィギュレーション
 
@@ -32,11 +32,11 @@ ms.locfileid: "5744030"
 
 ワークスペース全体に適用される設定を変更することにより、ワークスペースの外観と動作を変更できます。 ワークスペースが構成できる場合、[アクション] ウィンドウには設定を変更するボタンがあり、これをクリックするように指示が表示されます。 たとえば次の図では、**自分のワークスペースのコンフィギュレーション** というボタンが表示されています。
 
-[![ワークスペースの構成とフィルター](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![ワークスペースの構成とフィルター。](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 ボタンをクリックすると、ワークスペースの定義済設定を変更できるダイアログが表示されます。 このダイアログに表示される特定の設定は、各ワークスペースによって異なり、ワークスペースで使用できる特定のコントロールや業務データによっても異なります。
 
-[![マイ ワークスペースの構成](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![マイ ワークスペースの構成。](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>ワークスペースのフィルタ処理
 
@@ -46,11 +46,11 @@ ms.locfileid: "5744030"
 
 ワークスペース全体のフィルターを使用すると、ワークスペース全体をフィルター処理できます。 ワークスペース全体のフィルターは、ワークスペースの左上隅にあります。 ドロップダウン リストで特定の値を選択すると、その選択内容に基づいてワークスペースのコンテンツがフィルター処理されます。
 
-[![ワークスペース フィルター](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![ワークスペース フィルター。](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 クリックしてフィルターを開くと、複数のオプションが表示されます。
 
-[![展開済ワークスペース フィルター](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![展開済ワークスペース フィルター。](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 オプションに基づいワークスペースのてフィルターを適用するオプションを選択します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "5744030"
 
 ワークスペースのそれぞれのセクションにフィルタが存在する場合は、各セクションを個別にフィルタ処理できます。 次の図では、フィルター (テキスト「フィルター」を含むフィールド) は自由書式のテキスト フィールドのフィルターの例です。
 
-[![ワークスペース セクション フィルター](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![ワークスペース セクション フィルター。](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 ワークスペース全体のフィルターと同じように、希望のフィルター値を選択または入力して、セクションのコンテンツを絞り込みます。
 

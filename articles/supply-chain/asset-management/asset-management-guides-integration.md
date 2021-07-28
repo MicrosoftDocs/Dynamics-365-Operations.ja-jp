@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908570"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344273"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Dynamics 365 Supply Chain Management（資産管理）と Dynamics 365 Guides を統合する
 
@@ -56,38 +56,38 @@ Dynamics 365 Supply Chain Management の **資産管理** モジュールを Mic
     1. **メンテナンス チェックリスト** のクイックタブで、ガイドを関連付ける明細行を選択します。
     1. **関連するガイド** のクイックタブで、**ガイドの追加** を選択します。
 
-        ![メンテナンス チェックリストのテンプレートをガイドに関連付ける](media/am-guides-integration-add-guide.png "メンテナンス チェックリストのテンプレートをガイドに関連付ける")
+        ![メンテナンス チェックリストの明細行をガイドに関連付けます。](media/am-guides-integration-add-guide.png "メンテナンス チェックリストのテンプレートをガイドに関連付ける")
 
     1. **名前** フィールドで、ガイドを選択し、**保存** を選択します。
 
-        ![名前フィールドでガイドを選択します](media/am-guides-integration-select-guide.png "名前フィールドでガイドを選択します")
+        ![名前フィールドでガイドを選択します。](media/am-guides-integration-select-guide.png "名前フィールドでガイドを選択します")
 
 1. メンテナンス チェックリストのテンプレートを作業タイプに関連付ける：
 
     1. [メンテナンス作業タイプを作成する](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type)か、既存のメンテナンス作業タイプを選択します。
     1. アクション ウィンドウで、**メンテナンス作業タイプの既定値** を選択します。
 
-        ![メンテナンス作業タイプの既定値のページ](media/am-guides-integration-job-defaults.png "メンテナンス作業タイプの既定値のページ")
+        ![メンテナンス作業タイプの既定値のページ。](media/am-guides-integration-job-defaults.png "メンテナンス作業タイプの既定値のページ")
 
     1. 行を作成し、**保存** を選択します。
 
-        ![行の作成](media/am-guides-integration-add-line.png "行の作成を行います") を行います
+        ![行の作成を行います。](media/am-guides-integration-add-line.png "行の作成を行います")
 
     1. アクション ウィンドウで、**メンテナンス チェックリスト** を選択します。
 
-        ![メンテナンス チェックリスト ボタン](media/am-guides-integration-maintenance-checklist.png "メンテナンス チェックリスト ボタン")
+        ![メンテナンス チェックリスト ボタン。](media/am-guides-integration-maintenance-checklist.png "メンテナンス チェックリスト ボタン")
 
     1. **メンテナンス チェックリスト** のクイックタブで、行を追加し、**タイプ** フィールドの値を **テンプレート** に変更し ます。
 
-        ![種別の値を変更する](media/am-guides-integration-checklist-lines.png "種別の値を変更する")
+        ![種別の値を変更します。](media/am-guides-integration-checklist-lines.png "種別の値を変更する")
 
     1. **行の詳細** クイックタブの **テンプレート** フィールドで、ガイドを関連付けたテンプレートを選択し、**保存** を選択します。
 
-        ![テンプレートを選択します](media/am-guides-integration-checklist-line-details.png "テンプレートを選択します")
+        ![テンプレートを選択します。](media/am-guides-integration-checklist-line-details.png "テンプレートを選択します")
 
 1. [作業指示書を作成](work-orders/manually-created-workorders.md#create-work-order) し、ガイドに関連付けられているメンテナンス チェックリストのテンプレートを使用するメンテナンス作業タイプを選択します。 ガイドが自動的に作業指示書に関連付けられます。
 
-    ![メンテナンス作業タイプを選択する](media/am-guides-integration-create-work-order.png "メンテナンス作業タイプを選択する")
+    ![メンテナンス作業タイプを選択します。](media/am-guides-integration-create-work-order.png "メンテナンス作業タイプを選択する")
 
 1. 作業指示書と作業者に関連付けられているガイドを表示します。
 
@@ -95,11 +95,11 @@ Dynamics 365 Supply Chain Management の **資産管理** モジュールを Mic
     1. 作業指示書の [メンテナンス チェックリストを開きます](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job)。
     1. チェックリストの明細行を選択して、関連するガイドを表示します。
 
-        ![チェックリスト明細行に関連付けられているガイド](media/am-guides-integration-show-guide.png "チェックリスト明細行に関連付けられているガイド")
+        ![チェックリスト明細行に関連付けられているガイド。](media/am-guides-integration-show-guide.png "チェックリスト明細行に関連付けられているガイド")
 
     1. HoloLens のガイドを開きます。
 
-        ![HoloLens のガイドを開く](media/am-guides-integration-hololens-select.png "HoloLens のガイドを開きます")
+        ![HoloLens のガイドを開きます。](media/am-guides-integration-hololens-select.png "HoloLens のガイドを開きます")
 
 > [!NOTE]
 > また、作業指示書や作業タイプのメンテナンス チェックリストにガイドを直接関連付けることもできます。

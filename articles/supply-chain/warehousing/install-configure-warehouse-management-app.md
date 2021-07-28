@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: 5aa67673fe05394f498d0844b8e58ba6f0ec1d85
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049319"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346085"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションのインストールと接続
 
@@ -78,28 +78,28 @@ ms.locfileid: "6049319"
 1. Azure のサブスクリプションにアクセス可能なユーザー名とパスワードを入力します。
 1. Azure ポータル左側のナビゲーション ウィンドウで、**Azure Active Directory** を選択します。
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory。](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Azure AD Supply Chain Management が使用するインスタンスで作業をしていることを確認してください。
 1. **管理** の一覧で、**アプリの登録** を選択します。
 
-    ![アプリの登録](media/app-connect-azure-register.png "アプリの登録")
+    ![アプリの登録。](media/app-connect-azure-register.png "アプリの登録")
 
 1. ツールバーの **新規登録** を選択して、**アプリケーションの登録** ウィザードを開きます。
 1. アプリケーションの名前を入力し、**この組織ディレクトリ内のアカウントのみ** オプションを選択し、続いて **登録** を選択します。
 
-    ![アプリケーション ウィザードを登録する](media/app-connect-azure-register-wizard.png "アプリケーション ウィザードを登録する")
+    ![アプリケーション ウィザードを登録する。](media/app-connect-azure-register-wizard.png "アプリケーション ウィザードを登録する")
 
 1. 新しいアプリの登録が開きます。 後の手順で必要となるため、**アプリケーション (クライアント) ID** の値をメモしておきます。 この ID は後の手順で、*クライアント ID* として参照されます。
 
-    ![アプリケーション (クライアント) ID](media/app-connect-azure-app-id.png "アプリケーション (クライアント) ID")
+    ![アプリケーション (クライアント) ID。](media/app-connect-azure-app-id.png "アプリケーション (クライアント) ID")
 
 1. **管理** リストにて、**証明書 & シークレット** を選択します。 続いて、アプリの認証の構成方法に応じて、次のいずれかのボタンを選択します。 (詳細については、本トピックの後半に記載の[証明書またはクライアントシークレットのセクションを使用して認証をする](#authenticate)を参照してください。)
 
     - **証明書のアップロード** – 秘密に使用する証明書をアップロードします。 この方法は安全性が高い上に、より完全な自動化もできるため、この方法を推奨します。 Windows デバイスで倉庫管理モバイル アプリを実行している場合は、証明書をアップロードした後に表示される **サムプリント** 値を書き留めておきます。 この値は、Windows デバイスで証明書を構成する際に必要になります。
     - **新しいクライアント シークレット** – **パスワード** セクションにキーの説明と期間を入力してキーを作成し 、**追加** を選択します。 キーのコピーを作成し、安全に保管します。
 
-    ![証明書 & シークレット](media/app-connect-azure-authentication.png "証明書 & シークレット")
+    ![証明書 & シークレット。](media/app-connect-azure-authentication.png "証明書 & シークレット")
 
 Azure ADでの web サービス アプリケーションの設定方法の詳細については、次のリソースを参照してください:
 
@@ -119,7 +119,7 @@ Supply Chain Management を有効にして Azure AD アプリケーションを�
     1. ユーザーを作成します。
     1. 倉庫のモバイル デバイス ユーザーを割り当てます。
 
-    ![倉庫モバイル デバイスのユーザーを割り当てます。](media/app-connect-app-users.png "倉庫モバイル デバイスのユーザーを割り当てる")
+    ![倉庫のモバイル デバイス ユーザーを割り当てます。](media/app-connect-app-users.png "倉庫モバイル デバイスのユーザーを割り当てる")
 
 1. Azure AD アプリケーションと倉庫管理モバイル アプリのユーザーを関連付けます。
 
@@ -127,7 +127,7 @@ Supply Chain Management を有効にして Azure AD アプリケーションを�
     1. 行の作成を行います。
     1. 前述のセクションでメモしたクライアント ID を入力し、名前を付けて、作成したユーザーを選択します。 すべてのデバイスにタグ付けすることをお勧めします。 デバイスを損失した場合は、このページから Supply Chain Management へのアクセス権を簡単に削除できます。
 
-    ![Azure Active Directory アプリケーション](media/app-connect-aad-apps.png "Azure Active Directory アプリケーション")
+    ![Azure Active Directory アプリケーション。](media/app-connect-aad-apps.png "Azure Active Directory アプリケーション")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>証明書またはクライアント シークレットを使用した認証
 
@@ -213,30 +213,30 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 
 1. モバイル デバイスで倉庫管理モバイル アプリを起動します。 アプリを初めて起動すると、ようこそメッセージが表示されます。 **接続の選択** を選択します。
 
-    ![ようこそメッセージ](media/app-configure-welcome-screen.png "ようこそメッセージ")
+    ![ようこそメッセージ。](media/app-configure-welcome-screen.png "ようこそメッセージ")
 
 1. ファイルから接続設定をインポートしている場合で、ファイル保存時に既定の名前と既定の場所が使われていた場合、アプリがすでにファイルを検出している可能性があります。 この場合は手順4. に進みます。 接続していない場合は、**接続の設定** を選択して、手順3 に進みます。
 
-    ![接続を設定](media/app-configure-set-up-connection.png "接続を設定")
+    ![接続を設定。](media/app-configure-set-up-connection.png "接続を設定")
 
 1. **接続の設定** ダイアログ ボックスで、設定のインポート方法に応じて **ファイルから追加** または **QR コードから追加** を選択します。
 
     - 接続設定をファイルからインポートする場合は、**ファイルから追加** を選択し、ローカル デバイスのファイルを参照して選択します。 ユーザー定義の場所を選択した場合は、その場所が保管され、次回自動的に使用されます。
     - QR コードをスキャンして接続の設定をインポートする場合は、**QR コードから追加** を選択します。 アプリ上に、デバイスのカメラを使用するかどうかを確認するメッセージが表示されます。 アクセス許可を付与すると、カメラが起動し、スキャンに使用できるようになります。 デバイスのカメラの品質および QR コードの複雑さによっては、正しいスキャンの取得が困難な場合があります。 その場合は、1 つの QR コードにつき 1 つだけの接続を生成することで、QR コードの複雑性を軽減することを試してください。 (現時点では、QR コードのスキャンにはデバイスのカメラのみを使用できます)
 
-    ![接続の設定メニュー](media/app-configure-connection-setup-flyout.png "接続の設定メニュー")
+    ![接続の設定メニュー。](media/app-configure-connection-setup-flyout.png "接続の設定メニュー")
 
 1. 接続設定が正常に読み込まれると、選択した接続が表示されます。
 
-    ![読み込まれた接続設定](media/app-configure-select-connection.png "読み込まれた接続設定")
+    ![読み込まれた接続設定。](media/app-configure-select-connection.png "読み込まれた接続設定")
 
 1. Android デバイスを使用していて、かつ認証に証明書を使用している場合は、デバイスにで証明書の選択を促す画面が表示されます。
 
-    ![Android デバイス上の証明書プロンプトを選択する](media/app-configure-select-certificate.png "Android デバイス上の証明書プロンプトを選択する")
+    ![Android デバイス上の証明書プロンプトを選択する。](media/app-configure-select-certificate.png "Android デバイス上の証明書プロンプトを選択する")
 
 1. アプリケーションが Supply Chain Management サーバーに接続し、サイン インページが表示されます。
 
-    ![サインイン ページ](media/app-configure-sign-in-page.png "サインイン ページ")
+    ![サインイン ページ。](media/app-configure-sign-in-page.png "サインイン ページ")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>アプリケーションを手動で構成する
 
@@ -246,15 +246,15 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 1. アプリが **デモ モード** で開始された場合は、**接続設定** を選択します。 アプリの起動時に **サインイン** ページが表示される場合は、**接続の変更** を選択します。
 1. **接続設定** タブを選択します。
 
-    ![接続を設定](media/app-configure-set-up-connection.png "接続を設定")
+    ![接続を設定。](media/app-configure-set-up-connection.png "接続を設定")
 
 1. **手動で入力** を選択します。
 
-    ![接続の設定メニュー](media/app-configure-connection-setup-flyout.png "接続の設定メニュー")
+    ![接続の設定メニュー。](media/app-configure-connection-setup-flyout.png "接続の設定メニュー")
 
     **新規接続** ページが表示され、接続の詳細を手動で入力するために必要な設定が表示されます。
 
-    ![手動接続フィールド](media/app-configure-input-manually.png "手動接続フィールド")
+    ![手動接続フィールド。](media/app-configure-input-manually.png "手動接続フィールド")
 
 1. 次の情報を入力します。
 

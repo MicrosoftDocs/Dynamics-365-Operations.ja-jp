@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894127"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348167"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されたドキュメント用にカスタマイズされた保存先を指定します
 
@@ -39,7 +39,7 @@ ms.locfileid: "5894127"
 
 現在のトポロジでは、[新しい ER フォーマットを作成して](tasks/er-format-configuration-2016-11.md)、カスタマイズされた保存先を追加したいドキュメントを生成します。 または、[既存の ER フォーマットをこのトポロジにインポートします](general-electronic-reporting-manage-configuration-lifecycle.md)。
 
-![形式デザイナーのページ](media/er-extend-file-storages-format.png)
+![形式デザイナー ページ。](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > 作成またはインポートする ER フォーマットには、次のフォーマット エレメントのうち少なくとも 1 つを含める必要があります。
@@ -58,7 +58,7 @@ ER フォーマットが生成するドキュメントのルーティング方�
 3. **クラス** フィールドには、**ファイルの添付** を指定します。
 4. **グループ** フィールドには、**ファイル** を指定します。
 
-![ドキュメント タイプ ページ](media/er-extend-file-storages-document-type.png)
+![ドキュメント タイプ ページ。](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > ドキュメント タイプは会社固有のものです。 複数の会社で構成されている送信先と ER フォーマットを使用するには、各会社ごとに個別のドキュメント タイプを構成する必要があります。
@@ -113,14 +113,14 @@ public DocuRef insertFile(
 - **アーカイブ** – この送信先が使用される場合、実行される ER フォーマット用の新しいレコードが ERFormatMappingRunJobTable テーブルに作成されます。 このレコードの **Archived** フィールドが、**False** に設定されます。 ER フォーマットが正常に実行されると、生成されるドキュメントがこのレコードに関連付けられ、**AttachingFile()** イベントが発生します。 この ER 送信先で選択したドキュメント タイプにより、添付ファイルの保存先が決定されます (Microsoft Azure ストレージまたは Microsoft SharePoint フォルダー)。
 - **ジョブ アーカイブ** – この送信先が使用される場合、実行される ER フォーム用の新しいレコードが ERFormatMappingRunJobTable テーブルに作成されます。 このレコードの **Archived** フィールドが、**True** に設定されます。 ER フォーマットが正常に実行されると、生成されるドキュメントがこのレコードに関連付けられ、**AttachingFile()** イベントが発生します。 ER パラメーターで構成されるドキュメント タイプにより、添付ファイルの保存先が決定されます (Azure ストレージまたは SharePoint フォルダー)。
 
-![電子申告のパラメーター ページ](media/er-extend-file-storages-parameters.png)
+![電子申告のパラメーター ページ。](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>ER 送信先の構成
 
 1. 作成またはインポートした ER フォーマットについて、前述の要素 (ファイル、フォルダー、マージ、または添付ファイル) の 1 つに対してアーカイブされた送信先を構成します。 ガイダンスについては、[ER コンフィギュレーション先](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11) を参照してください。
 2. 構成された送信先用にすでに追加したドキュメント タイプを使用します。 (このトピックの例では、ドキュメント タイプは **FileX** です。)
 
-![送信先設定ダイアログ ボックス](media/er-extend-file-storages-destination.png)
+![送信先設定ダイアログ ボックス。](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>ソース コードの修正
 

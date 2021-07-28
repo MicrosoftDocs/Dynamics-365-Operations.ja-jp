@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba973299291276fe48d82360e203ca28f02aaffb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9ddca8a3cc136080aa63f58cda3ba32bf6d2ca37
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796273"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346975"
 ---
 # <a name="accordion-module"></a>アコーディオン モジュール
 
@@ -34,7 +34,7 @@ ms.locfileid: "5796273"
 
 次の図は、ストアのよく寄せられる質問 (FAQ) ページで情報を整理する目的で使用するアコーディオン モジュールの例を示しています。
 
-![アコーディオン モジュールの例](./media/ecommerce-accordion.PNG)
+![アコーディオン モジュールの例。](./media/ecommerce-accordion.PNG)
 
 ## <a name="accordion-module-properties"></a>アコーディオン モジュールのプロパティ
 

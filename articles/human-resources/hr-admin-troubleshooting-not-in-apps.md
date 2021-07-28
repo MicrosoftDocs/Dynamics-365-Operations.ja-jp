@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17a454cd32a08db105a13577c32368ad819bed1c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 292db7e430bf0f2171f2b0a482ad70250774caec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053379"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346349"
 ---
 # <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Microsoft Dynamics 365 アプリでは、人事管理が表示されない
 
@@ -39,11 +39,11 @@ ms.locfileid: "6053379"
 
 3. **セキュリティ** タブの、**環境ロール** タブで、**環境メーカー** を選択します。
 
-    ![環境ロール タブ](media/environment-roles.png)
+    ![環境ロール タブ。](media/environment-roles.png)
 
 4. **ユーザー** タブで、ユーザーまたは組織を追加します。
 
-    ![ユーザー タブ](media/environment-maker.png)
+    ![ユーザー タブ。](media/environment-maker.png)
 
 5. **保存** を選択します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "6053379"
 
 7. **同期** を選択してユーザー アプリを更新します。
 
-    ![同期ボタン](media/get-more.png)
+    ![同期ボタン。](media/get-more.png)
 
     同期が完了した後、人事管理はホーム ページに表示されます。
 

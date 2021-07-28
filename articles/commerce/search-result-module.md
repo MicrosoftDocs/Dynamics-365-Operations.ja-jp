@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 04ffa8e56b72727c079db07f38bfae675ae2abb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117136"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344959"
 ---
 # <a name="search-results-module"></a>検索結果モジュール
 
@@ -38,7 +38,7 @@ ms.locfileid: "6117136"
 
 以下の図は、Fabrikam のウェブ サイトのカテゴリの検索結果ページの例です。
 
-![Fabrikam のウェブサイトにおける検索結果ページの例](./media/SimpleCategoryLandingDressCategory.png)
+![Fabrikam のサイトにおける検索結果ページの例。](./media/SimpleCategoryLandingDressCategory.png)
 
 ## <a name="search-results-module-properties"></a>検索結果モジュールのプロパティ
 

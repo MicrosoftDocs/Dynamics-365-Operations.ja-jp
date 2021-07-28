@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c2e207efe0eeec6fc7e679a6ae12edcb21b291f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: f0dac25ede6c9b9dfcfa1be1f1a5f4d7a7752112
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058587"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344717"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Dataverse の仮想テーブルを構成する
 
@@ -41,7 +41,7 @@ Human Resources のすべての Open Data Protocol (OData) テーブルは、Dat
 
 環境で有効になっている仮想テーブルの一覧を表示し、**Dynamics 365 HR 仮想テーブル** ソリューションで [Power Apps](https://make.powerapps.com) のテーブルの操作を開始できます。
 
-![Power Apps の Dynamics 365 HR 仮想テーブル](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Power Apps の Dynamics 365 HR 仮想テーブル。](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## <a name="virtual-tables-versus-native-tables"></a>仮想テーブルとネイティブ テーブルの対比
 
@@ -147,7 +147,7 @@ Power Apps 環境に Dynamics 365 HR Virtual テーブルアプリをインス�
 
    - **AAD アプリケーション シークレット**: Microsoft Azure ポータルに登録されているアプリケーションに対して作成されたクライアント シークレット。 この情報は、[アプリを Microsoft Azure に登録する](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure)のステップで先に取得しました。
 
-   ![Microsoft HR データ ソース](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR データ ソース。](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. **保存して閉じる** を選択します。
 
@@ -187,7 +187,7 @@ Human Resources でアクセス許可を付与するのは、次の 2 つの Azu
 
 4. **生成/更新** を選択します。
 
-![Dataverse の統合](./media/hr-admin-integration-dataverse-integration.png)
+![Dataverse の統合。](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>テーブルの生成状態の確認
 

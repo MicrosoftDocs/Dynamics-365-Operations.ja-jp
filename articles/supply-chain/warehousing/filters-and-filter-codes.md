@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: c3648a2d9df300ecd0c26a12db8093babb3db48f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c5574efeb1dee372a8ecf8ddb1d1710f63b73a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838253"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345237"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>倉庫トランザクション用製品フィルターの構成
 
@@ -46,11 +46,11 @@ ms.locfileid: "5838253"
 1. **フィルター タイトル** フィールドで、値を選択します。
 1. **フィルター コード** フィールドに値を入力します。
 
-    ![製品フィルターを設定する](media/Product_Filters10.png "製品フィルターを設定する")
+    ![製品フィルターを設定する。](media/Product_Filters10.png "製品フィルターを設定する")
 
 1. **説明** フィールドに、コードの名前を入力します。 たとえば、*コード 2* は仕入先を表すことができます。 その後、特定の仕入先または仕入先グループに対して製品フィルターを作成できます。 詳細については、このトピックの後半の [仕入先フィルター コードの設定](#vendor-product-filters) セクションを参照してください。
 
-    ![製品フィルターのセット](media/Product_Filters.png "製品フィルターのセット")
+    ![製品フィルターのセット。](media/Product_Filters.png "製品フィルターのセット")
 
 ## <a name="set-up-product-filter-groups"></a>製品フィルター グループの設定
 
@@ -69,7 +69,7 @@ ms.locfileid: "5838253"
 1. **品目グループ** フィールドで、製品フィルターを適用する品目グループを選択します。
 1. **コード 1** から **コード 10** のフィールドで、必要に応じて、グループに含めるフィルター コードを選択します。
 
-    ![品目グループ](media/ProdFilterGroup.png "品目グループ")
+    ![品目グループ。](media/ProdFilterGroup.png "品目グループ")
 
 > [!NOTE]
 > ページを閉じる際にエラー メッセージが表示された場合は、コード設定が存在しない可能性があります。 **品目グループ** ページで、**品目グループにフィルタ コード1を割り当てる**、**品目グループにフィルタ コード 2を割り当てる** などのチェック ボックスを選択して、品目グループに対してコードを必須にすることができます。
@@ -88,7 +88,7 @@ ms.locfileid: "5838253"
 
     リリースされた製品を更新するには、**リリース済製品の詳細** ページを開き、アクション ペインで **編集** を選択します。 その後、コードに関連付けられたフィルターは、**倉庫** クイックタブで使用可能になります。
 
-    ![品目グループ](media/ItemGroup10.png "品目グループ")
+    ![品目グループ。](media/ItemGroup10.png "品目グループ")
 
 1. **品目グループ フィルター** セクションで、品目の既定フィルター グループであるフィルター グループと一致する必要があるフィルターのチェック ボックスを選択します。
 

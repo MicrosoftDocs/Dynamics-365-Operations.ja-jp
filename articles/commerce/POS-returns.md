@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: c7be9e2d32384df23a4609d82216804fc945061a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129818"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345187"
 ---
 # <a name="create-returns-in-pos"></a>POS での返品の作成
 
@@ -48,7 +48,7 @@ POS [画面レイアウト](pos-screen-layouts.md) に返品トランザクシ�
 
 返品可能製品リストの各注文明細行について、POS は元の購買数量と、以前に処理された返品の数量に関する情報を表示します。 ユーザーが注文明細行に対して入力する返品数量は、**返品可能** フィールドの値以下である必要があります。
 
-![返品可能な製品ページ](media/returnslist.png)
+![返品可能な製品ページ。](media/returnslist.png)
 
 返品処理中に、ユーザーが物理的製品を持ち、その製品にバーコードがあれば、ユーザーは返品を登録するために、バーコードをスキャンできます。 バーコードをスキャンするごとに、返品数量が 1 品目増加します。 ただし、バーコード ラベルに数量が埋め込まれている場合は、その数量が **今すぐ返品** フィールドに入力されます。
 
@@ -97,6 +97,13 @@ RTS 呼び出しが実行できず、POS が返品検証にチャネル側のデ
 
 > [!NOTE]
 > **POS での統合返品処理エクスペリエンス** 機能が有効になると、シリアル化された製品の返品検証をサポートする新しいオプション機能が使用可能になります。 詳細については、[販売時点管理 (POS) でシリアル番号管理された製品の返品](POS-serial-returns.md) を参照してください。
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>一部の数量を使用して、返品の適切な税計算を有効にします
+
+この機能により、複数の請求書を使用して注文が返品された場合、最終的に税金は最初に請求された税額と等しくなります。
+1.  **機能管理** ワークスペースに移動して、**Enable proper tax calculation for returns with partial quantity (一部の数量を使用して、返品の適切な税計算を有効にする)** を検索します。
+2.  **Enable proper tax calculation for returns with partial quantity (一部の数量を使用して、返品の適切な税計算を有効にする)**、**有効にする** をクリックします。
+
 
 ## <a name="additional-resources"></a>追加リソース
 
