@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 78ab17952801a1d77f321e212bb61e9b45d93216
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 2406df379084fefd4e1ca33c271b69f4dafeb5b5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189205"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358908"
 ---
 # <a name="mobile-invoice-approvals"></a>モバイルによる請求書承認
 
@@ -136,7 +136,7 @@ ms.locfileid: "6189205"
 
 1.  URL で、メニューの名前を **VendMobileInvoiceAssignedToMeListPage** に置き換え、**買掛金勘定** モジュールの **私に割り当てられた保留中の仕入先請求書** リスト ページのモバイル版を開きます。 システムに割り当てられている請求書の数に応じて、このページにこれらの請求書が表示されます。 特定の請求書を検索するには、左側のフィルターを使用します。 ただし、この例では特定の請求書は必要ありません。 割り当てられた請求書を要求するだけで、モバイル ページをデザインすることができます。 利用可能な新しいページは、ベンダーの請求書のモバイル シナリオを開発するために特別に設計されています。 したがって、これらのページを使用する必要があります。 URL は次の URL のようになります。また、入力後、図に示されているページが表示されます: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
 
-    [![自分に割り当てられた保留中の仕入先請求書ページ](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    [![自分に割り当てられた保留中の仕入先請求書ページ。](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
     
 2.  ページの右上角にある **設定** (歯車) ボタンをクリックし、次に **モバイル アプリ** をクリックします
 3.  ワークスペースを選択し、**編集** をクリックします。
@@ -145,7 +145,7 @@ ms.locfileid: "6189205"
 6.  **完了** をクリックします。
 7.  モバイル デザイナーの **フィールド** タブで **フィールドの選択** をクリックします。 リスト ページの列は、次の図のようにする必要があります。 
 
-    [![自分に割り当てられた保留中の仕入先請求書ページ](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    [![自分に割り当てられた保留中の仕入先請求書ページ。](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
     
 8.  リスト ページから、モバイル ページのユーザーに表示する必要がある列を追加します。 追加する順序は、フィールドがエンド ユーザーに表示される順序です。 フィールドの順序を変更する唯一の方法は、すべてのフィールドを再選択することです。 このシナリオの要件に基づいて、次の 8 つのフィールドが必要です。 しかし、一部のユーザは、8 つのフィールドが多くの情報をモバイル デバイス上に持つと考える可能性があります。 したがって、モバイル リスト ビューで最も重要なフィールドのみを表示します。 残りのフィールドは、後で設計する詳細ビューに表示されます。 今のところ、次のフィールドを追加します。 モバイル ページに追加するには、これらの列のプラス記号 (**+**) をクリックします。
     - 仕入先名
@@ -156,7 +156,7 @@ ms.locfileid: "6189205"
 
     フィールドが追加されると、モバイル ページは次の図のようになります。 
     
-    [![フィールドの後ページが表示される](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![フィールドの後ページが表示される。](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  ワークフロー アクションを後で有効にできるように、次の列も追加する必要があります。
     - 完了したタスクを表示する
@@ -175,7 +175,7 @@ ms.locfileid: "6189205"
 
 モバイル用の請求書の詳細ページを設計するには、**VendMobileInvoiceHeaderDetails** ページを使用します。 システムに登録されている請求書の数に応じて、このページには最も古い請求書（最初に作成された請求書）が表示されます。 特定の請求書を検索するには、左側のフィルターを使用します。 ただし、この例では特定の請求書は必要ありません。 モバイルページを設計できるように、請求書データが必要です。 
 
-[![ワークフロー ページ](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+[![ワークフロー ページ。](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. URL で、メニュー アイテムの名前を **VendMobileInvoiceHeaderDetails** に置き換えてフォームを開きます。
 
@@ -212,7 +212,7 @@ ms.locfileid: "6189205"
 
 11. 前の 2 つの手順のすべてのフィールドが追加されたら、**完了** をクリックします。 ページは次の図のようにする必要があります。
     
-    [![追加されたフィールドを示す図](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![追加されたフィールドを示す図。](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. **完了** をクリックして、編集モードを終了します。
 
@@ -322,7 +322,7 @@ ms.locfileid: "6189205"
 
 4. 以下のように、**文書管理** オプションを **はい** に設定します。 **注:** モバイル デバイスに添付ファイルを表示する必要がない場合は、このオプションをデフォルト設定の **いいえ** に設定しておくことができます。
    
-   ![ドキュメント管理](./media/docmanagement-216x300.png)
+   ![ドキュメント管理。](./media/docmanagement-216x300.png)
 
 5. **完了** をクリックして、編集モードを終了します。
 
@@ -339,7 +339,7 @@ ms.locfileid: "6189205"
 
 1.  URL で、前と同じように、メニュー項目の名前を置き換えます。 表示されるページは、次の図のようになります。
 
-    [![すべての配分ページ](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![すべての配分ページ。](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  **設定** (ギア) ボタンからモバイル デザイナーを開きます。
 

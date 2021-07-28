@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b112bb453e0840120c63038bf8d6897fbf5ff288
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 637d8d211f59711aafe9357dcd48d48f861f722d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798756"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353111"
 ---
 # <a name="navigation-menu-module"></a>ナビゲーション メニュー モジュール
 
@@ -33,7 +33,7 @@ ms.locfileid: "5798756"
 ナビゲーション メニュー モジュールは、ページのヘッダー モジュールに追加できます。 Fabrikam テーマでは、ナビゲーション メニューは既定では 2 つのレベルで表示されます。 Starter テーマでは、ナビゲーション メニューは既定では 3 つのレベルで表示されます。 レベル数を変更するには、テーマにビュー拡張機能が必要です。
 
 次の図は、カテゴリ階層の 2 つのレベルと、いくつかの静的メニュー項目を含む、Fabrikam サイトのナビゲーション メニューの例を示しています。
-![ナビゲーション メニュー モジュールの例](./media/ecommerce-header.png)
+![ナビゲーション メニュー モジュールの例。](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>ナビゲーション メニュー モジュールのプロパティ
 
@@ -50,7 +50,7 @@ ms.locfileid: "5798756"
 | ルート メニュー | 文字列 | **ルート メニューを表示** プロパティが **True** に設定されている場合、このプロパティを使用してカスタム ルートのテキストを定義できます。 |
 
 次の図は、Fabrikam サイトのナビゲーション メニューに表示されるカテゴリ イメージの例を示しています。
-![カテゴリ イメージを含むナビゲーション メニュー モジュールの例](./media/ecommerce-categoryimages.PNG)
+![カテゴリ イメージを含むナビゲーション メニュー モジュールの例。](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>ヘッダー モジュールへのナビゲーション メニュー モジュールの追加
 

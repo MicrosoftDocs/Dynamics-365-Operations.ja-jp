@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053566"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357364"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053566"
 
 Microsoft Teams の Microsoft Dynamics 365 Human Resources アプリを使用すると、従業員は簡単に休暇を申請することができ、Microsoft Teams にて休暇の残日数情報を表示することができます。 従業員は bot と対話して情報を要求できます。 **休暇** タブには、より詳細な情報が表示されます。 さらに、Human Resources アプリの外部で、チームやチャットで今後の休暇に関する情報を送信できます。
 
-![Teams Human Resources の休暇アプリ ボット](./media/hr-teams-leave-app-bot.png)
+![Teams Human Resources の休暇アプリ ボット。](./media/hr-teams-leave-app-bot.png)
 
-![Teams Human Resources 休暇アプリの休暇タブ](./media/hr-teams-leave-app-timeoff-tab.png)
+![Teams Human Resources 休暇アプリの休暇タブ。](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Human Resources の休暇申請カード](./media/hr-teams-leave-app-chat-card.png)
+![Human Resources の休暇申請カード。](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>インストールと設定
 
@@ -57,11 +57,11 @@ Teams におけるアプリのアクセス許可の管理については、[Micr
 
 4. **一般** タブで **Teams アプリの通知を有効にする** を **はい** に設定します。
 
-   ![システム パラメータで Teams アプリの通知を有効にする](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![システム パラメータで Teams アプリの通知を有効にする。](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. すべてのユーザーに対して Teams の通知をオンにするには、プロンプトで **はい** を選択します。
 
-   ![すべてのユーザーに対して Teams の通知を有効にする](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![すべてのユーザーに対して Teams の通知を有効にする。](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>個々のユーザーの Teams の通知をオンまたはオフにする
 
@@ -77,7 +77,7 @@ Teams の Dynamics 365 Human Resources アプリの通知を有効にした後�
 
 5. **Teams アプリの通知を有効にする** を **はい** に設定するとユーザーへの通知が有効になり、**いいえ** に設定するとユーザーへの通知が無効になります。
 
-   ![ユーザー オプションのワークフロー タブで Teams アプリの通知を有効にする](./media/hr-admin-teams-leave-app-notifications.png)
+   ![ユーザー オプションのワークフロー タブで Teams アプリの通知を有効にする。](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. **保存** を選択します。
 

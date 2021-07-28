@@ -2,7 +2,8 @@
 title: 店舗セレクター モジュール
 description: このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-ms.date: 04/02/2021
+manager: annbe
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +16,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 341312758e0a6da2e918406e09df618e2475811f
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021467"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479379"
 ---
 # <a name="store-selector-module"></a>店舗セレクター モジュール
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
@@ -50,12 +52,12 @@ Commerce 本社の店舗の場所の経度と緯度値を入力するには次�
 1. 左ウィンドウで、倉庫の場所を選択します。
 1. **住所** クイックタブで、**詳細** を選択します。
 
-    ![本社の店舗詳細の例](./media/Store-address.png)
+    ![本社の店舗詳細の例です。](./media/Store-address.png)
 
 1. アクション ウィンドウで、**編集** を選択します。
 1. **一般** クイックタブで、**緯度** および **軽度** の値を入力します。
 
-    ![本社の店舗に対する緯度と経度設定の例](./media/Store-latitude-longitude.png)
+    ![本社の店舗に対する緯度と経度設定の例です。](./media/Store-latitude-longitude.png)
 
 1. アクション ウィンドウで、**保存** を選択します。 
 
@@ -70,7 +72,6 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 - **script-src** ディレクティブに、**&#42;.bing.com, &#42;.virtualearth.net** を追加します。
 - **script style-src** ディレクティブに、**&#42;.bing.com** を追加します。
 
- 
 ## <a name="pickup-in-store-mode"></a>店舗で受け取りモード
 
 店舗セレクター モジュールでは、製品を受け取ることができる店舗の一覧を表示する **店舗で受け取り** モードをサポートしています。 また、この一覧には店舗の営業時間と店舗ごとの製品在庫も表示されます。 店舗セレクター モジュールでは、製品の利用可能性を表示するためと、選択した店舗で製品の配送モードが **受け取り** に設定されている場合はユーザーが製品を買い物カゴに追加できるように、製品のコンテキストが必要です 。 詳細については、[在庫設定](inventory-settings.md)を参照してください。 
@@ -81,7 +82,7 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 
 次の図は、PDP で使用される店舗セレクター モジュールの例を示しています。
 
-![PDP で使用される店舗セレクター モジュールの例](./media/BOPIS.PNG)
+![PDP で使用される店舗セレクター モジュールの例です。](./media/BOPIS.PNG)
 
 > [!NOTE]
 > バージョン 10.0.16 では、新しい機能を有効にして、組織が顧客に対して複数のピッキング モードを定義できるようにすることができます。  この機能が有効になっている場合、電子商取引の店舗セレクターとその他のモジュールが強化され、複数の集荷配送オプション (コンフィギュレーションされている場合) の中から買い物客が選択できるようになります。  この機能の詳細については、[このドキュメント](./multiple-pickup-modes.md)を参照してください。 
@@ -92,7 +93,7 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 
 次の図は、店舗の場所ページのマップ モジュールと共に使用される店舗セレクター モジュールの例を示しています。
 
-![保管場所ページの店舗セレクター モジュールとマップ モジュールの例](./media/ecommerce-Storelocator.PNG)
+![店舗の場所ページの店舗セレクター モジュールとマップ モジュールの例です。](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>マップのレンダリング
 
@@ -110,6 +111,10 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 | Autosuggest オプション: 最大結果 | 番号 | このプロパティは、Bing Autosuggest API を介して表示できる Autosuggest 結果の最大数を定義します。 |
 | 検索半径 | 番号 | このプロパティは、店舗の検索半径をマイル単位で定義します。 値が指定されていない場合は、既定の検索半径 (50マイル) が使用されます。 |
 | サービス条件 | URL |  このプロパティは、Bing Maps サービスを使用するために必要なサービス URL の条件を指定します。 |
+
+## <a name="site-settings"></a>サイトの設定
+
+店舗のセレクター モジュールでは、[カートに製品を追加の設定](add-cart-settings.md) を遵守します。 店舗のセレクター モジュールから品目がカートに追加されると、サイト ユーザーに適切な構成済ワークフローが表示されます。
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>店舗セレクター モジュールをページに追加する
 

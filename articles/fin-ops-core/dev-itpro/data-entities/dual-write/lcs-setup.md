@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359366"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Lifecycle Services からの二重書き込みの設定
 
@@ -40,7 +40,7 @@ Power Platform の統合を完了する必要があります。次のトピッ�
 
 2. **二重書き込みアプリケーション** ボタンを選択します。
 
-    ![Power Platform 統合](media/powerplat_integration_step2.png)
+    ![Power Platform 統合。](media/powerplat_integration_step2.png)
 
 3. 条件を確認して、**構成** を選択します。
 
@@ -52,7 +52,7 @@ Power Platform の統合を完了する必要があります。次のトピッ�
 
 7. **Power Platform 環境へのリンク** を選択して、Dataverse と現在の環境のデータベースとのリンクを作成します。 通常、所要時間は 5 分以下です。
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Power Platform 環境へのリンク":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Power Platform 環境へのリンク。":::
 
 8. リンクが完了すると、ハイパーリンクが表示されます。 このリンクを使用して、Finance and Operations 環境内の二重書き込み管理領域にログインします。 そこから、エンティティ マッピングを設定します。
 

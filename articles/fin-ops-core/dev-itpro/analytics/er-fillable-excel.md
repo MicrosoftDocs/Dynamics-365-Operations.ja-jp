@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893911"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359032"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel 形式でドキュメントを生成する構成を設計する
 
@@ -39,7 +39,7 @@ ER [フォーマットのコンポーネント](general-electronic-reporting.md#
 
 ER 形式のコンポーネントを構成するには、アクション ウィンドウで **デザイナー** を選択し、ER オペレーション デザイナーで編集用の ER 形式のコンポーネントを開きます。
 
-![構成ページ](./media/er-excel-format-add-format.png)
+![構成ページ。](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Excel ファイル コンポーネント
 
@@ -47,14 +47,14 @@ ER 形式のコンポーネントを構成するには、アクション ウィ�
 
 出力ドキュメントを Excel 形式で生成するには、**Excel\\ファイル** コンポーネントを、構成されたER形式に追加する必要があります。
 
-![Excel\ファイル コンポーネント](./media/er-excel-format-add-file-component.png)
+![Excel\ファイル コンポーネント。](./media/er-excel-format-add-file-component.png)
 
 送信ドキュメントのレイアウトを指定するには、 **Excel\\ファイル** コンポーネントに拡張子 .xlsx の Excel ワークブックを 出力ドキュメントのテンプレートとして添付します。
 
 > [!NOTE]
 > テンプレートを手動で関連付ける場合は、[ER パラメータ](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) でこの目的に対して構成されている[ドキュメント タイプ](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types)を使用する必要があり ます。
 
-![Excel\ファイル コンポーネントに添付ファイルを追加する](./media/er-excel-format-add-file-component2.png)
+![Excel\ファイル コンポーネントに添付ファイルを追加する。](./media/er-excel-format-add-file-component2.png)
 
 構成された ER 形式を実行する際に添付のテンプレートがどのように入力されるかを指定するには、**Excel\\ファイル** コンポーネントに入れ子になった **シート**、**範囲**、**セル** コンポーネントを追加する必要があります。 入れ子になった各コンポーネントは、Excel の名前付きアイテムに関連付けられている必要があります。
 
@@ -62,7 +62,7 @@ ER 形式のコンポーネントを構成するには、アクション ウィ�
 
 新しいテンプレートを空の ER 形式にインポートするには、アクションウィンドウの **インポート** タブの **Excel からインポート** を選択します。 この例では、**Excel \\ファイル** コンポーネントが自動的に作成され、インポートされたテンプレートがそのコンポーネントに関連付けられます。 検出された Excel の名前付きアイテムの一覧に基づき、必要な ER コンポーネントもすべて自動的に作成されます。
 
-![[Excel からインポート] を選択します](./media/er-excel-format-import-template.png)
+![Excel からインポートを選択します。](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > オプションの **シート** 要素を編集可能な形式で作成する場合は、 **Excel シート形式の要素の作成** オプションを **はい** に設定します。
@@ -79,7 +79,7 @@ ER オペレーション デザイナーの **マッピング** タブで、**�
 - **有効化** プロパティの式が実行時に **True** を返すように設定されている場合、または式が全く設定されていない場合は、適切なワークシートが生成されたドキュメントに配置されます。
 - 実行時に **有効化** プロパティの式が **False** を返すように構成されている場合、生成されたドキュメントにはワークシートが含まれません。
 
-![シート コンポーネントの例](./media/er-excel-format-sheet-component.png)
+![シート コンポーネントの例。](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>範囲コンポーネント
 
@@ -182,7 +182,7 @@ ER オペレーション デザイナーの **マッピング** タブで、**�
 >
 > 編集可能な ER 形式に元の **シート** 要素が含まれている場合は、更新した テンプレートをインポートする際に、**Excel シート形式の要素の作成**  オプションを **はい** に設定することを推奨します。 それ以外の場合、元の **シート** 要素の入れ子になった要素はすべて最初から作成されます。 したがって、再作成された形式要素のすべてのバインドは、更新された ER 形式では失われます。
 
-![[Excelから更新] ダイアログ ボックスの [Excel シート形式の要素] オプションの作成](./media/er-excel-format-update-template.png)
+![Excel から更新ダイアログ ボックスの Excel シート形式の要素オプションの作成。](./media/er-excel-format-update-template.png)
 
 この機能の詳細については、[Excel のテンプレートを再適用することで、電子レポートの形式を変更する](modify-electronic-reporting-format-reapply-excel-template.md) に記載の手順に従っ てください。
 
@@ -190,7 +190,7 @@ ER オペレーション デザイナーの **マッピング** タブで、**�
 
 編集可能な ER 形式を検証する場合は、現在使用している Excel のテンプレートに Excel 名が存在することを確認する整合性チェックが行われます。 不整合性がある場合には通知されます。 不整合がある場合は、自動的に問題を修正するオプションが表示されます。
 
-![検証エラー メッセージ](./media/er-excel-format-validate.png)
+![検証エラー メッセージ。](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Excel の数式の計算の制御
 
@@ -209,7 +209,7 @@ Microsoft Excel ブック形式の送信ドキュメントが生成された場�
 1. 提供されている ER コンフィギュレーションを使用して、自由書式のドキュメントを[生成](er-generate-printable-fti-forms.md) します。
 2. 生成されたドキュメントのフッターを確認します。 ドキュメントの現在のページ番号とページの合計数に関する情報が含まれることに注意してください。
 
-    ![生成されたドキュメントのフッターを Excel 形式で確認する](./media/er-fillable-excel-footer-1.gif)
+    ![生成されたドキュメントのフッターを Excel 形式で確認する。](./media/er-fillable-excel-footer-1.gif)
 
 3. ER 形式デザイナーで、確認のためにサンプルの ER 形式を[開き](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) ます。
 
@@ -222,7 +222,7 @@ Microsoft Excel ブック形式の送信ドキュメントが生成された場�
 
     - 2 番目の **文字列** コンポーネントは、現在のドキュメントの現在のページ数とページの合計数を含むテキストを入力します。
 
-    ![形式デザイナーのページでフッター ER 形式コンポーネントを確認する](./media/er-fillable-excel-footer-2.png)
+    ![形式デザイナーのページでフッター ER 形式コンポーネントを確認する。](./media/er-fillable-excel-footer-2.png)
 
 4. サンプル ER 形式をカスタマイズして、現在のページ フッターを変更します。
 
@@ -237,20 +237,20 @@ Microsoft Excel ブック形式の送信ドキュメントが生成された場�
         1. 右側の処理日に対応し、8 ポイントの "Segoe UI Regular" フォント (**"&R&"Segoe UI,Regular"&8"**) で表示される **文字列** コンポーネントを追加します。
         2. カスタム形式で処理日を入力する **文字列** コンポーネント を追加します (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**)。
 
-        ![形式デザイナーのページでフッター ER 形式コンポーネントを確認する](./media/er-fillable-excel-footer-3.png)
+        ![形式デザイナーのページでフッター ER 形式コンポーネントを確認する。](./media/er-fillable-excel-footer-3.png)
 
     4. 派生 ER 形式の **自由書式の請求書 (Excel)** のドラフト バージョンを[完了](er-quick-start2-customize-report.md#CompleteDerivedFormat) します。
 
 5. 印刷管理を [コンフィギュレーション](er-generate-printable-fti-forms.md#configure-print-management) して、サンプル ER 形式の代わりに派生 ER 形式の **自由書式の請求書 (Excel)** を使用します。
 6. 印刷可能な FTI ドキュメントを生成し、生成されたドキュメントのフッターを確認します。
 
-    ![生成されたドキュメントのフッターを Excel 形式で確認する](./media/er-fillable-excel-footer-4.gif)
+    ![生成されたドキュメントのフッターを Excel 形式で確認する。](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [電子申告の概要](general-electronic-reporting.md)
 
-[OPENXML 形式のレポートを生成するコンフィギュレーションを設計する](tasks\er-design-reports-openxml-2016-11.md)
+[OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する](tasks\er-design-reports-openxml-2016-11.md)
 
 [Excel テンプレートを再適用して電子申告形式を変更する](modify-electronic-reporting-format-reapply-excel-template.md)
 

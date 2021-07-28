@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 06ddad1f2df895da4819a06e3552acab8e9aff78
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5ce0da7eb99d6da876362bb7e3f2cfbb9e561cfd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358944"
 ---
 # <a name="my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペース
 
@@ -78,7 +78,7 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![プルして更新。](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペースを使用して、チーム メンバーを表示
 1.  モバイル アプリで、**自分のチーム** ワークスペースを選択します。 チーム メンバーの一覧が表示されます。 一覧では、各チーム メンバーのタイトル、およびそのメンバーの直属の部下にも表示されます。

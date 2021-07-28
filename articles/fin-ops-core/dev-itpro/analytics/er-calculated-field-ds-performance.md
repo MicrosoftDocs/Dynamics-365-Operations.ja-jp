@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: e3dc83b71300387c8123f5533522c5ead7d86333
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944843"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349187"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>パラメーター化された計算フィールドのデータ ソースを追加して、ER ソリューションのパフォーマンスを向上させる
 
@@ -56,7 +56,7 @@ ms.locfileid: "5944843"
     2. **参照** を選択して、ER コンフィギュレーションに適したファイルを XML 形式で選択します。
     3. **OK** を選択します。
 
-![コンフィギュレーション ページでインポートされたコンフィギュレーション](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![コンフィギュレーション ページでインポートされたコンフィギュレーション。](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>サンプル ER ソリューションのレビュー
 
@@ -76,7 +76,7 @@ ms.locfileid: "5944843"
 
     このコンフィギュレーションのモデル マッピングは、このモデルに対して作成され Finance で実行される、すべての ER 形式の基本データ モデルを実装します。 したがって、**Trans** データ ソースの内容は、抽象 **モデル** データ ソースなどの ER 形式に対して公開されます。
 
-    ![モデル マッピング デザイナー ページの Trans データ ソース](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![モデル マッピング デザイナー ページの Trans データ ソース。](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. **モデル マッピング デザイナー** ページを閉じます。
 5. **モデルからデータ ソースへのマッピング** ページを閉じます。
@@ -90,7 +90,7 @@ ms.locfileid: "5944843"
 
     この ER 形式は、仕入先トランザクション レポートを XML 形式で生成するように設計されています。
 
-    ![形式デザイナー ページでの形式要素の形式データ ソースと構成済みバインディング](media/er-calculated-field-ds-performance-format.png)
+    ![形式デザイナー ページでの形式要素の形式データ ソースと構成済みバインディング。](media/er-calculated-field-ds-performance-format.png)
 
 5. **形式デザイナー** ページを閉じます。
 
@@ -103,7 +103,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 1. **DEMF** 会社を選択します。
 2. [ER パフォーマンス追跡を有効にする](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) の手順に従って、ER 形式の実行中にパフォーマンス追跡を生成します。
 
-    ![ユーザー パラメーター ダイアログ ボックス](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![ユーザー パラメーター ダイアログ ボックス。](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>ER 形式を実行する
 
@@ -124,7 +124,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 - データ ソースを使用してデータの取得に費やした実際の時間
 - モデル マッピング全体の実行に費やされた合計時間の割合で表される同じ時間
 
-![モデル マッピング デザイナー ページの実行時間の詳細](./media/er-calculated-field-ds-performance-mapping-2.png)
+![モデル マッピング デザイナー ページの実行時間の詳細。](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 **パフォーマンス統計** グリッドは、**Trans** データ ソースが VendTrans テーブルを 1 回呼び出すことを示しています。 **Trans** データ ソースの値 **\[265\]\[Q:265\]** は、265 個の仕入先トランザクションがアプリケーション テーブルから取得された、データ モデルに返されたことを示します。
 
@@ -137,7 +137,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 
 - 仕入先テーブルは、取得したトランザクションが 5 つの仕入先に対してのみ転記されている場合でも、反復された仕入先トランザクションごとに呼び出されます。 530 回の呼び出しのうち、525 回は重複しています。 次の図は、重複する呼び出し (データベース要求) についてのメッセージを示しています。
 
-![モデル マッピング デザイナー ページの重複データベース要求に関するメッセージ](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![モデル マッピング デザイナー ページの重複データベース要求に関するメッセージ。](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 モデル マッピングの合計実行時間 (約 8 秒) のうち、80% (約 6 秒) 以上が VendTable アプリケーション テーブルから値を取得するために費やされたことに注目してください。 この割合は、VendTransアプリケーション テーブルからの情報量と比較して、5 つの仕入先の 2 つの属性に対して大きすぎます。
 
@@ -172,7 +172,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
     3. ダイアログ ボックスで、**名前** フィールドに **Box** と入力します。
     3. **OK** を選択します。
 
-    ![モデル マッピング デザイナー ページの Box データ ソース](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![モデル マッピング デザイナー ページの Box データ ソース。](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. **計算フィールド** 型のパラメーター化されたデータ ソースを追加するには、次の手順に従います:
 
@@ -208,7 +208,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 
 9. **保存** を選択します。
 
-    ![モデル マッピング デザイナー ページの Vend データ ソース](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![モデル マッピング デザイナー ページの Vend データ ソース。](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. **モデル マッピング デザイナー** ページを閉じます。
 11. **モデル マッピング** ページを閉じます。
@@ -232,11 +232,11 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 
 モデル マッピングに対して行った調整によって、データベースへの重複するクエリが消去されたことに注意してください。 このモデル マッピングのデータベース テーブルおよびデータ ソースへの呼び出し数も減少しました。
 
-![モデル マッピング デザイナー ページ 1 の追跡情報](./media/er-calculated-field-ds-performance-mapping-5.png)
+![モデル マッピング デザイナー ページ 1 の追跡情報。](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 合計実行時間は約 20 倍 (約 8 秒から約 400 ミリ秒) に短縮されました。 したがって、ER ソリューション全体のパフォーマンスが向上しました。
 
-![モデル マッピング デザイナー ページ 2 の追跡情報](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![モデル マッピング デザイナー ページ 2 の追跡情報。](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>付録 1: サンプル Microsoft ER ソリューションのコンポーネントのダウンロード
 

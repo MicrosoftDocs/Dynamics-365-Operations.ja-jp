@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753993"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350839"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>初期セットアップ中の問題のトラブルシューティング
 
@@ -42,7 +42,7 @@ ms.locfileid: "5753993"
 
 一般的には、 **Dataverseへのリンク設定** ページで発生するエラーは、設定が不完全な場合やアクセス権限の問題が原因で発生するします。 次の図に示すように、**Dataverseへのリンク設定** ページで正常性チェック全体が合格になっていることを確認してください。 正常性チェック全体で合格しない限りは、デュアル書き込みをリンクすることはできません。
 
-![正常性チェックの成功](media/health_check.png)
+![正常性チェックの成功。](media/health_check.png)
 
 Azure AD 環境と Finance and Operations 環境えおリンクするには、Dataverse テナント管理者の資格情報が必要です。 環境をリンクした後、ユーザーはアカウントの資格情報を使用してログインし、既存のテーブル マップを更新できます。
 
@@ -77,7 +77,7 @@ Finance and Operations アプリで **Dataverseへのリンク** を開いた際
 4. デュアル書き込みの構成時にリンクしていた会社を選択します。
 5. **既定の所有チーム** 列に値が設定されていることを確認します。 次の図では、**既定の所有チーム** 列が **USMF デュアル書き込み** に設定されています。
 
-    ![既定の所有チームを確認する](media/default_owning_team.png)
+    ![既定の所有チームを確認します。](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>デュアル書き込み対してにリンク可能な、リーガル テーブルまたは会社数の制限を確認する
 

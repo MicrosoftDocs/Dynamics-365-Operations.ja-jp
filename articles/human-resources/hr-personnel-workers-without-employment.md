@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6fbada6feb55b8627b1aa1ddfe367177edb7a0a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 71cb119e533e64b14badf65f55e8c4d5aa4c4b2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051716"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356587"
 ---
 # <a name="workers-without-employment"></a>雇用されていない作業者
 
@@ -42,13 +42,13 @@ ms.locfileid: "6051716"
 
 2. **権限** タブで、**権限** リストを **作業者の管理** にフィルター処理します。
 
-   [![特権リストのフィルター処理](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
+   [![特権リストのフィルター処理。](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
 
 3. **参照** 列で、**メニュー項目の表示** を選択します。
 
 4. **メニュー項目の表示** で、**HcmWorkersWithoutEmployment** を選択します。
 
-   [![フォームの選択](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
+   [![フォームの選択。](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
 
 5. **削除** のアクセス許可を **付与** に設定します。
 
@@ -56,6 +56,6 @@ ms.locfileid: "6051716"
 
 7. **すべて公開** を選択します。
 
-   [![変更の公開](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
+   [![変更の公開。](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

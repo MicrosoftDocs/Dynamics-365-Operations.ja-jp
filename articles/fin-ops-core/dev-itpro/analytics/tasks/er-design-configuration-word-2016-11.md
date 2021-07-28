@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944295"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359414"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成
 
@@ -54,14 +54,14 @@ GBSI 社を例に使用して、これらの手順について解説します。
 5. **デザイナー** をクリックします。
 6. **形式デザイナー** ページで、ルート形式要素のタイトルが、Excel テンプレートが現在使用されていることを示していることに注意してください。
 
-![既存の構成の選択](../media/er-design-configuration-word-2016-11-image01.gif)
+![既存の構成の選択。](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>ダウンロードした Word テンプレートの確認
 
 1. Word デスクトップ アプリケーションで、先にダウンロードした **SampleVendPaymDocReport.docx** テンプレート ファイルを開きます。
 2. テンプレートに、ER 出力として生成するドキュメントのレイアウトのみが含まれていることを確認します。
 
-![デスクトップ アプリケーションの Word テンプレート レイアウト](../media/er-design-configuration-word-2016-11-image02.png)
+![デスクトップ アプリケーションの Word テンプレート レイアウト。](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Excel テンプレートを Word テンプレートに置き換え、カスタム XML パーツを追加する
 
@@ -84,7 +84,7 @@ GBSI 社を例に使用して、これらの手順について解説します。
 
 9. ルート形式要素のタイトルが、Word テンプレートが現在使用されていることを示していることに注意してください。
 
-    ![Excel テンプレートを Word テンプレートに置き換え、カスタム XML パーツを追加する](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Excel テンプレートを Word テンプレートに置き換え、カスタム XML パーツを追加する。](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. **形式** タブで、**添付ファイル** を選択します。
 
@@ -110,7 +110,7 @@ GBSI 社を例に使用して、これらの手順について解説します。
 1. Word デスクトップ アプリケーションで、**SampleVendPaymDocReportBounded.docx** テンプレート ファイルを開きます。
 2. テンプレートに、ER 出力として生成するドキュメントのレイアウトが含まれていることを確認します。 このテンプレートで実行時に ER が入力するデータのプレースホルダーとして使用されるコンテンツ コントロールは、**レポート** カスタム XML パーツの要素と Word ドキュメントのコンテンツ コントロールの間で構成されるマッピングに基づきます。
 
-![デスクトップ アプリケーションの Word テンプレート プレビュー](../media/er-design-configuration-word-2016-11-image04.png)
+![デスクトップ アプリケーションの Word テンプレート プレビュー。](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>カスタム XML パーツがコンテンツ コントロールにマップされている Word テンプレートを更新
 
@@ -144,7 +144,7 @@ GBSI 社を例に使用して、これらの手順について解説します。
 3. **仕入先支払** ページ で、グリッド内のすべての行を選択します。
 4. **支払ステータス** \> **なし** を選択します。
 
-    ![仕入先支払ページでの処理に対する支払](../media/er-design-configuration-word-2016-11-image05.png)
+    ![仕入先支払ページでの処理に対する支払。](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. アクション ペインで **支払の生成** を選択します。
 6. 表示されるダイアログ ボックスで、次の手順に従います:
@@ -156,11 +156,11 @@ GBSI 社を例に使用して、これらの手順について解説します。
 7. **電子レポート パラメーター** ダイアログ ボックスで、**OK** を選択します。
 8. 作成された出力は、Word 形式で表示され、処理済みの支払の詳細が含まれます。 生成された出力を解析します。
 
-    ![Word 形式で生成された出力](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Word 形式で生成された出力。](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [Word 形式でレポートを生成するための新しい ER 構成を設計する](../er-design-configuration-word.md)
+- [Word 形式のレポートを生成するための新しい ER コンフィギュレーションを設計する](../er-design-configuration-word.md)
 - [ER を使用して生成されるドキュメントへの画像や図形の埋め込み](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
 
 

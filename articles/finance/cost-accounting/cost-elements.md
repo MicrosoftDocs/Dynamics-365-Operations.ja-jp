@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 067d7035cdb9c8f4bcb2bdac9cf0a33cd4e01079
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2fa602d01cadecbf24c2433360f7b2a8ebb0854a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811440"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355158"
 ---
 # <a name="cost-element-dimensions"></a>原価要素分析コード
 
@@ -63,7 +63,7 @@ ms.locfileid: "5811440"
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>原価要素分析コードと原価要素分析コード メンバー
 原価要素は、*原価要素分析コード* と呼ばれます。 個別の分析コード値は、*原価要素分析コード メンバー* と呼ばれます。 たとえば、法定レポートの基準となる米国の勘定科目表の構造 (COA) があります。 この COA は、原価要素分析コードとして使用されます。 主要原価要素である勘定は、原価計算の原価要素分析コード メンバーとして表されます。 次のスクリーン ショットは、原価要素分析コード メンバーとしての実際の主勘定である原価要素分析コードとしての主勘定の例を示しています。 
 
-[![原価要素分析コードとしての主勘定のスクリーンショット](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![原価要素分析コードとしての主勘定のスクリーンショット。](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>データ コネクタを使用して原価要素分析コード メンバーのインポート
 原価計算の原価要素分析コード メンバーの設定を容易にするために、ビルド済みの、またはカスタム ビルドのいずれかのデータ コネクタを使用して、1 つ以上のソース システムから主要原価要素を取得できます。

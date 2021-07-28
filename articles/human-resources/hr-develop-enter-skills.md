@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8a6b36314d9d98f971cd1619dd3604f20a3770b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360523"
 ---
 # <a name="enter-skills"></a>スキルの入力
 
@@ -45,17 +45,17 @@ Dynamics 365 Human Resourcesでは、作業者、申請者、連絡担当者の�
 
 4. **ワークフローの作成** ウィンドウで、**作業者のスキル** を選択します。
 
-   [![作業者のスキル ワークフローの選択](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![作業者のスキル ワークフローの選択。](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. **このファイル を開きますか？** というダイアログで、**開く** を選択します。 メッセージが表示されたら、 資格情報を入力します。
 
 6. ワークフロー エディタで、**スキルの承認** ワークフローの要素を 選択し、その要素をドラッグします。
 
-   [![スキルの承認ワークフロー要素の選択](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![スキルの承認ワークフロー要素の選択。](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. **開始** 要素を **スキル 1 の承認** 要素に関連付け、**スキル1の承認** 要素を **終了** に関連付けます。 **終了** 要素を表示するには、下部までスクロールする必要があるかもしれません。 他の要素の近くまでドラッグできます。
 
-   [![ワークフロー要素の関連付け](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![ワークフロー要素の関連付け。](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. **スキル 1 の承認** ワークフロー要素をダブルクリックし、**手順 1** の要素を右クリックします。 **ステップ 1** の要素を右クリックし、**プロパティ** を選択します。
 
@@ -65,7 +65,7 @@ Dynamics 365 Human Resourcesでは、作業者、申請者、連絡担当者の�
 
 11. **条件の追加** を選択します。 **場所** の後で、**従業員セルフサービス スキル** を選択し、**従業員セルフサービス skills.Person** を選択します。 **である** の後に、**フィールド** を選択し、**ユーザーと相手方の relationship.Person** を選択します。
 
-    [![ 条件の指定](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![ 条件の指定。](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. 左側のナビゲーション バーで **割り当て** を選択します。
 
@@ -73,7 +73,7 @@ Dynamics 365 Human Resourcesでは、作業者、申請者、連絡担当者の�
 
 14. **階層タイプ:** フィールドの **階層の選択** タブで、**管理者階層** を選択します 。
 
-    [![管理階層の指定](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![管理階層の指定。](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. **閉じる** を選択し、パンくずキャンバスで **ワークフロー** を選択し、**保存して終了** を選択します。
 

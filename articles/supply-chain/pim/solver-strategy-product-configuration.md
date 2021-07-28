@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82332a8ac8a68f5a9092ae08a094514827f39113
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d351066b0092318275491d933b7b90089c6855b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812718"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359936"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>製品コンフィギュレーションのソルバー戦略
 
@@ -50,7 +50,7 @@ ms.locfileid: "5812718"
 
 ソルバー戦略を変更するには、アクション ペイン上の **製品コンフィギュレーション モデル** ページで、**モデルのプロパティ** を選びます。 そして、**モデルの詳細の編集** ダイアログ ボックスで、ソルバー戦略を選択します。
 
-[![ソルバー戦略を変更](./media/solver-strategy.png)](./media/solver-strategy.png)
+[![ソルバー戦略を変更。](./media/solver-strategy.png)](./media/solver-strategy.png)
 
 現時点では、どのソルバー戦略が制約ベースの製品コンフィギュレーションの最も効率的な戦略になるかを自動的に検出するロジックはありません。 そのため、1 つずつソルバー戦略を試みる必要があります。
 

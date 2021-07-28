@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097262"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356515"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -61,7 +61,7 @@ Dynamics 365 Human Resources アプリは、Teams ストアにあります。
 
 - 休暇申請を開始する。 たとえば、「休暇を取ってください」や「来週の木曜と金曜に休暇を取りたいのですが」というメッセージを送信すると、休暇の種類に応じた休暇申請がより具体的にできます。 
 
-  ![Teams チャットでの休暇申請の開始](./media/hr-teams-leave-app-initiate.png)
+  ![Teams チャットでの休暇申請の開始。](./media/hr-teams-leave-app-initiate.png)
 
 - チャット ボットでユーザーの休暇申請を入力します。 **休暇申請** を選択し、申請の詳細を編集します。
 
@@ -69,11 +69,11 @@ Dynamics 365 Human Resources アプリは、Teams ストアにあります。
 
    休暇申請の単位が日数の場合に半日休暇を選択した場合は、**その他のオプション** メニューから **半日の定義** を選択することで、最初の半日と後半の半日のどちらに休暇を申請するかを指定できます。
    
-   ![半日の定義](./media/HalfDayDefinitions.png)
+   ![半日の定義。](./media/HalfDayDefinitions.png)
 
 - 休暇申請詳細情報の編集が完了したら、**送信** を選択して、承認を依頼します。
 
-  ![休暇申請の送信](./media/hr-teams-leave-app-submit.png)
+  ![休暇申請の送信。](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Teams で休暇を管理する
 
@@ -93,7 +93,7 @@ Dynamics 365 Human Resources アプリは、Teams ストアにあります。
 
 2. 休暇の日付または日数を入力し、**追加** を選択します。
 
-   ![Teams Human Resources 休暇アプリが休暇を追加します](./media/TimeOffHours.png)
+   ![Teams Human Resources 休暇アプリが休暇を追加します。](./media/TimeOffHours.png)
 
 3. 必要に応じて、理由コードを入力します。 また、コメントを入力して添付ファイルを追加します。
 
@@ -123,7 +123,7 @@ Teams 向けの Human Resources アプリをインストールすると、チー
 
 1. チームまたは Teams のチャットで、チャット ウィンドウの下にある人事管理ボタンを選択します。
 
-   ![チャット ウィンドウの下の人事管理ボタン](./media/hr-teams-leave-app-chat-button.png)
+   ![チャット ウィンドウの下の人事管理ボタン。](./media/hr-teams-leave-app-chat-button.png)
 
 2. 共有する休暇申請を選択します。 休暇申請の下書きを共有する場合は、まず **下書き** を選択します。
 
@@ -173,11 +173,11 @@ Dynamics 365 Human Resources Teams アプリへのサインインまたは使用
 
 Teams で、**設定** の **アプリ言語** を確認します。
 
-![Teams の設定](./media/hr-teams-leave-app-settings.png)
+![Teams の設定。](./media/hr-teams-leave-app-settings.png)
 
 Human Resources で、**設定** を選択してから、**ユーザー オプション** を選択します。 **言語** フィールドが Teams の **アプリ言語** フィールドと一致していることを確認します。
 
-![Human Resources ユーザー オプション](./media/hr-teams-leave-app-user-options.png)
+![Human Resources ユーザー オプション。](./media/hr-teams-leave-app-user-options.png)
 
 それでも翻訳の問題が発生する場合は、お知らせください。 詳細については、[Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートを得る](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
 

@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 73d20958d0efadefc709db524fe16ed85d1ea33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ceb95198332d6a9da057d657771fe6fcca5c5b9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824897"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359608"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Microsoft Dynamics 365 Field Service との統合の概要
 
@@ -34,7 +34,7 @@ Supply Chain Management により、Dynamics 365 Supply Chain Management およ�
 
 Field Service 統合は、既存の見込顧客の現金化機能の上に構築します。
 
-![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/field-service-integration.png)
+![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/field-service-integration.png)
 
 Field Service および Supply Chain Management の統合の第 1 のフェーズは、Field Service のワーク オーダーおよび契約を Supply Chain Management で請求できるようにすることに重点を置いています。 Field Service でサポートされているフローが開始され、ワーク オーダーの情報が Supply Chain Management に販売注文として同期されます。 Supply Chain Management では、販売注文は請求書請求書ドキュメントを生成するために請求されます。 さらに、Field Service 契約請求書からの情報は Supply Chain Management に同期されます。 Microsoft Dynamics 365 データ インテグレーターは、カスタマイズ可能なプロジェクトを使用してデータを同期します。 標準テンプレートを使用してカスタム統合プロジェクトを作成し、追加の標準フィールドとカスタム列、およびテーブルをマップして統合を調整し、特定の要件を満たすことができます。
 
@@ -58,7 +58,7 @@ Field Service および Supply Chain Management 間のワーク オーダーを�
 - Dynamics 365 Field Service ワーク オーダーに関連付けられた Supply Chain Management のプロジェクト
 - Supply Chain Management プロジェクトへのリンクを含む Dynamics 365 Field Service ワーク オーダーは、このプロジェクト番号を販売注文に適用して、プロジェクトからの請求を可能にします。 
 
-![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSv2overview.png)
+![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Field Service および Supply Chain Management 統合の第 2 のフェーズは、次のテンプレートとの同期を有効にします:
 - 倉庫 (Supply Chain Management から Field Service) - Supply Chain Management の倉庫から Field Service [高度なクエリ] 

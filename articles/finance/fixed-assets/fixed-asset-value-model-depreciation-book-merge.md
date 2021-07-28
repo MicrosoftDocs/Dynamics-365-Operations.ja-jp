@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 32dfcc65d8b76f7314dcc348299c29d4ccff8d91
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826741"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355583"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>固定資産価値モデルと減価償却簿の結合
 
@@ -27,7 +27,7 @@ ms.locfileid: "5826741"
 
 以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations (1611) のリリースでは、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。
 
-新しい帳簿機能は、以前の価値モデル機能に基づいていますが、前に減価償却簿でのみ提供されたすべての機能も含まれます。 [![価値モデルと減価償却簿機能の統合の帳簿](./media/fixed-assets.png)](./media/fixed-assets.png) この結合のため、すべての固定資産プロセスのためのページ、照会、およびレポートの単一のセットを使用できるようになりました。 このトピックの表は、帳簿の新しい機能とともに、減価償却簿および価値モデルの以前の機能について説明しています。
+新しい帳簿機能は、以前の価値モデル機能に基づいていますが、前に減価償却簿でのみ提供されたすべての機能も含まれます。 [![価値モデルと減価償却簿機能の統合の帳簿。](./media/fixed-assets.png)](./media/fixed-assets.png) この結合のため、すべての固定資産プロセスのためのページ、照会、およびレポートの単一のセットを使用できるようになりました。 このトピックの表は、帳簿の新しい機能とともに、減価償却簿および価値モデルの以前の機能について説明しています。
 
 ## <a name="setup"></a>段取り
 既定では、帳簿は総勘定元帳 (GL) および固定資産の補助元帳の両方に転記します。 帳簿には、GL への転記を無効にして固定資産の補助元帳にのみ転記する新しい **総勘定元帳への転記** オプションがあります。 この機能は、減価償却簿の以前の転記の動作に似ています。 仕訳帳名の設定には、「なし」という名前の新しい転記階層があります。 この転記階層は、固定資産トランザクションに対して専用に追加されました。 GL に転記しない帳簿のトランザクションを転記するには、転記階層が **なし** に設定されている仕訳名を使用する必要があります。

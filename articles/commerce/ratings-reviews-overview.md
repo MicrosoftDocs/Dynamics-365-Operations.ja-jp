@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0788091755fb784621e972a0573f7004952e8e11
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4622b2a26ac6193b1408c029389e4d9f55162418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792102"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355808"
 ---
 # <a name="ratings-and-reviews-overview"></a>評価とレビューの概要
 
@@ -39,7 +39,7 @@ Dynamics 365 Commerce の評価とレビュー機能は、オムニチャネル 
 
 次の図で、評価とレビュー ソリューションが Dynamics 365 Commerce でどのように機能するかを示します。
 
-![Dynamics 365 for Commerce の評価とレビュー](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+![Dynamics 365 for Commerce の評価とレビュー。](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 Dynamics 365 Commerce の評価とレビュー ソリューションは、Azure Cognitive Services を使用し、自動的に 40 の言語で俗語をモデレーションします。 人間による承認は必要ではないので、モデレーション費を減少できます。 また、システムは、顧客の懸念事項、フィードバック、および要求の取り下げに応答し、ユーザーからのデータ要求処理を行うために使用できるモデレーター ツールも提供します。
 

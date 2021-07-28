@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 1f9325d182f89b98e8b943ae047c55e7e1aeb02f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c74132af95f088ea88155b722a8270861fba50e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023398"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361289"
 ---
 # <a name="set-up-withholding-tax-reporting-codes-for-the-tds-tax-type"></a>TDS 税タイプに対する源泉徴収税レポートの設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "6023398"
 
 1. **税 \> 設定 \> 源泉徴収税 \> 源泉徴収税レポート コード** に移動します。
 
-    [![源泉徴収税レポート コード ページ](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
+    [![源泉徴収税レポート コード ページ。](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
 
 2. **税タイプ** フィールドで、**TDS** を選択して、TDS 税タイプの源泉徴収税レポート コードを定義します。
 3. **源泉徴収税コンポーネント** フィールドで、源泉徴収税のレポート コードを定義する TDS コンポーネントを選択します。 **源泉徴収税コンポーネント グループ** フィールドには、定義している TDS コンポーネントに対して定義された TDS コンポーネント グループ が表示されます。

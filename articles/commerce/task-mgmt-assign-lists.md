@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0c4f028367c894c54392963ffc4f6a0f0c04c03a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 85b021f99a1260e4ed640764e4a3e96a80197768
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795264"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354592"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>タスク リストを店舗または従業員に割り当てる
 
@@ -45,7 +45,7 @@ Dynamics 365 Commerce のタスク管理では、タスク リストを複数の
 
 次の図は、**処理の開始** ダイアログ ボックスで店舗を検索および選択する方法の例を示しています。
 
-![プロセスの開始ダイアログ ボックスでの店舗の検索と選択](media/HQ-Assign-Tasks-Lists.png)
+![プロセスの開始ダイアログ ボックスでの店舗の検索と選択。](media/HQ-Assign-Tasks-Lists.png)
 
 ## <a name="assign-task-lists-on-a-recurring-basis"></a>定期的なタスク リストの割り当て
 
@@ -62,7 +62,7 @@ Dynamics 365 Commerce のタスク管理では、タスク リストを複数の
 
 次の図は、**定期的なアイテムの定義** ダイアログ ボックスで頻度の条件を入力する方法の例を示しています。
 
-![定期的なアイテムの定義のダイアログ ボックスで、頻度条件を入力する](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![定期的なアイテムの定義のダイアログ ボックスで、頻度条件を入力する。](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>タスク リストのステータスの追跡
 

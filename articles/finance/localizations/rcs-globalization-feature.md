@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: cbb1d9a53a7a09ab525532f08553898c4e40223a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7faa9a3cf6a29d8ed126cfcb0e2902b2016d03ff
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822784"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358149"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Service (RCS) - グローバリゼーション機能
 
@@ -53,7 +53,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 1. RCS インスタンスで、**機能管理** タイルを選択します。
 2. **機能の管理** ワークスペースで、一覧から **グローバリゼーション** 機能を選択し、**今すぐ有効にする** を選択します。
 
-    ![機能管理のグローバリゼーション機能](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
+    ![機能管理のグローバリゼーション機能。](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
 ## <a name="globalization-features"></a>グローバリゼーション機能
 
@@ -67,11 +67,11 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 1. このトピックで既に説明したように、機能の管理については、**グローバリゼーション機能** 機能が有効になっていることを確認してください。
 2. 新しい **グローバリゼーション機能** ワークスペースを開き、**機能** で、**電子請求** タイルを選択します。
 
-    ![グローバル機能ワークスペース](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+    ![グローバル機能ワークスペース。](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
     **電子請求機能** ページが開きます。
 
-    ![電子請求機能ページ](./media/RCS_GlobalF_3%20Feature%20form.JPG)
+    ![電子請求機能ページ。](./media/RCS_GlobalF_3%20Feature%20form.JPG)
 
 ## <a name="add-a-derived-globalization-feature"></a>派生グローバリゼーション機能の追加
 
@@ -79,27 +79,27 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 
 1. **インポート** を選択すると、**グローバル リポジトリからのインポート機能** ページが表示されます。
 
-    ![グローバルリポジトリ ページから機能をインポートする](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
+    ![グローバル リポジトリ ページから機能をインポートする。](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
 
 2. **同期** を選択して、最新の機能を取得します。
 
     同期されたリストには、Microsoft によって発行されたもの、または他の構成プロバイダーによって共有されたものによって、使用できる機能が含まれています。
 
-    ![機能の同期リスト](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
+    ![機能の同期リスト。](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
 
 3. 一覧でインポートする機能を選択し、**インポート** を選択します。 選択した機能が正常にインポートされた場合は、メッセージを受信します。
 
-    ![ファイルのインポートに成功したことを示すメッセージ](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
+    ![ファイルのインポートに成功したことを示すメッセージ。](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
 
 4. **追加** をクリックし、ドロップダウン ダイアログボックスで、**既存のバージョンに基づく** オプションを選択します。
 5. 機能の名前と説明を入力します。
 6. 使用可能な機能の一覧で、機能の基本バージョンを選択し、**機能の作成** を選択します。
 
-    ![派生機能の追加](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
+    ![派生機能の追加。](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
 
     追加した機能が作成され、ステータスが **ドラフト** になります。
 
-    ![ドラフト ステータスのある派生機能](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
+    ![ドラフト ステータスのある派生機能。](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
 
 7. 機能コンポーネントを確認して、更新が必要かどうかを判断します。
 
@@ -120,7 +120,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 2. 機能の名前と説明を入力します。
 3. **機能の作成** を選択します。
 
-    ![新機能の追加](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
+    ![新機能の追加。](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
 
 4. **バージョン** タブで、**有効期間** を選択し、**ステータスの変更** を選択して機能を完了します。 完成した機能は、特定の環境に対して使用できるようにするため、グローバリゼーション サービスで使用できる、または、グローバル リポジトリに発行することができます。
 
@@ -176,7 +176,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
     - 適合性ルール
     - 変数
 
-![機能バージョン設定ページ](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
+![機能バージョン設定ページ。](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
 
 ### <a name="environments"></a>環境
 
@@ -193,7 +193,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 2. **組織** タブで、**共有** を選択し、ドロップダウン ダイアログボックスで組織のドメイン名を入力します。
 3. **共有** を選択します。
 
-    ![機能をその他の組織と共有する](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
+    ![機能をその他の組織と共有する。](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
 
 機能が選択した組織と共有され、その組織ではグローバル リポジトリで利用できるようになります。 この機能は、組織の RCS のインスタンス、または Dynamics 365 Finance にインポートしたり、使用できるようにしたりすることができます。
 
@@ -201,7 +201,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 
 新しい基本機能バージョンまたは更新された基本機能バージョンに、派生したグローバリゼーション機能をリベースできます。 これにより、基本バージョンで発生した変更が自動的に更新されるようにすることができます。 更新された基本機能バージョンは、元の構成プロバイダーによって作成された後、発行または共有されます。
 
-![更新された基本機能バージョン](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
+![更新された基本機能バージョン。](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
 
 たとえば、作成した機能の派生バージョンをリベースする場合は、最初にグローバル リポジトリからその機能をインポートして最新バージョンを取得します。
 
@@ -209,23 +209,23 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 2. **同期** を選択して、最新の機能を取得します。
 3. 機能の一覧で、インポートする機能を選択し、**インポート** を選択します。
 
-    ![機能の最新バージョンのインポート](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
+    ![機能の最新バージョンのインポート。](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
 
 4. 機能の一覧で、リベースする機能を選択します。
 5. **バージョン** タブで、**新規** を選択して、下書きバージョンを作成します。
 
-    ![新規下書きバージョンが作成されました](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
+    ![新規下書きバージョンが作成されました。](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
 
 6. **リベース** を選択します。
 7. **リベース** ダイアログボックスで、リベース先となる機能の最新バージョンを選択します。
 
-    ![ダイアログ ボックスのリベース](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
+    ![ダイアログ ボックスのリベース。](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
 
 8. **OK** を選択します。
 9. 機能コンポーネントを確認し、必要な変更を行います。
 10. リベースされた機能を完了するには、**ステータスの変更** を選択します。 リベースが完了したら、追加のアクションを実行できます。 たとえば、機能を公開して、グローバリゼーション サービスで使用できるようにすることができます。
 
-    ![機能のステータスが完了に更新されました](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
+    ![機能のステータスが完了に更新されました。](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
 
 ## <a name="configure-environments-for-globalization-features"></a><a name="configureenvironment"></a>グローバリゼーション機能のための環境の構成
 
@@ -233,13 +233,13 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 
 1. **グローバリゼーション機能** ワークスペースで、**環境** から、**電子請求** タイルを選択します。
 
-    ![グローバリゼーション機能ワークスペース](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
+    ![グローバリゼーション機能ワークスペース。](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
 
 2. **Key Vault パラメータ** を選択し、**新規** を選択して、Azure Key Vault シークレットを作成します。
 3. Key Vaultの名前と説明を入力し、**Key Vault の URI** フィールドに Azure での Key Vault リソースを識別する URL を入力します。
 4. **証明書** クイックタブで、**追加** をクリックして証明書を追加し、各証明書の名前と説明を入力します。
 
-    ![追加された証明書](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
+    ![追加された証明書。](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
 
 5. **新規** を選択して、新しい環境を作成します。
 6. ストレージに必要な名前、説明、および共有アクセス署名トークンのシークレットを入力します。
@@ -248,7 +248,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 9. さらにユーザーを追加するには、手順 7. と 8. を繰り返します。
 10. **公開** を選択して、環境を公開します。
 
-    ![公開された環境](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+    ![公開された環境。](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

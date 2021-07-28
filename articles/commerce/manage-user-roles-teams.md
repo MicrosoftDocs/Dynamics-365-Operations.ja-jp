@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7b4734fd363cd5ee44f228e0c0f9ce73abad1aaa
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 633717d77f4d31463d51c575d837a65dbb0e5ce2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021855"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358730"
 ---
 # <a name="manage-user-roles-in-microsoft-teams"></a>Microsoft Teams でユーザーとロールを管理する
 
@@ -30,7 +30,7 @@ Teams 内の各店舗またはチャネルに対してチームを作成する�
 
 次の図は、チーム メンバーの一覧と、Microsoft Teams 管理センターでのユーザー ロールの例を示しています。
 
-![Microsoft Teams 管理センターのチーム メンバーとユーザー ロール](media/d365-commerce-teams-integration-user-roles.png)
+![Microsoft Teams 管理センターのチーム メンバーとユーザー ロール。](media/d365-commerce-teams-integration-user-roles.png)
 
 詳細については、[Microsoft Teams におけるチームの所有者とメンバーの割り当て](/microsoftteams/assign-roles-permissions)を参照してください。
 

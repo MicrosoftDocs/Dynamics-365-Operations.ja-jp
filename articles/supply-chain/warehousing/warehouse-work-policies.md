@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838133"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353375"
 ---
 # <a name="work-policies"></a>作業ポリシー
 
@@ -200,7 +200,7 @@ ms.locfileid: "5838133"
 
 次の例では、2 つの製造オーダー、*PRD-001* と *PRD-002* があります。 製品オーダー *PRD-001* は、製品 *SC1* が場所 *001* に完了済として報告される *組み立て* として名付けられた工程があります。 製造オーダー *PRD-002* には、*塗装* と名付けられた、および場所 *001* から製品 *SC1* の消費の工程があります。 製造オーダー *PRD-002* は、場所 *001* からの原材料消費 *RM1* も消費します。 原材料 *RM1* は、倉庫の場所 *BULK-001* に保存され、原材料のピッキングの倉庫作業によって場所 *001* がピッキングされます。 ピッキング作業は、生産 *PRD-002* がリリースされるときに生成されます。
 
-[![倉庫作業ポリシー](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![倉庫作業ポリシー。](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 このシナリオの倉庫作業ポリシーをコンフィギュレーションする計画の場合、次の点を考慮する必要があります:
 

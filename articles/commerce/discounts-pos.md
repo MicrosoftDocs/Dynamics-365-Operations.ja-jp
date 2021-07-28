@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d251eb02e7d9db1e61ba8bb6531c90e0e23717b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792850"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356881"
 ---
 # <a name="show-discounts-in-pos"></a>POS に割引を表示
 
@@ -33,7 +33,7 @@ ms.locfileid: "5792850"
 
 コマースには、「すべての割引の表示」という名前の操作が含まれます。 この操作では、店舗で現在実行中のすべての割引が表示されます。 「すべての割引の表示」操作は、販売時点管理 (POS) にマップできます。このボタンは、**ようこそ** ページまたは **トランザクション** ページに追加できます。 次の図は、開かれた **すべての割引** ページを示しています。
 
-![すべての割引ページ](./media/View_all_discounts.png "すべての割引ページ")
+![すべての割引ページ。](./media/View_all_discounts.png "すべての割引ページ")
 
 割引を表示するために、システムは次のいずれかの条件に一致するすべての割引を検索します。
 
@@ -61,11 +61,11 @@ ms.locfileid: "5792850"
 
 次の図は、割引同時実行管理時に使用するロジックが **優先順位内のみの最良価格と組み入れ、優先順位間で組み入れない** に設定を表示しています。
 
-![優先順位内のみの最良価格と組み入れ、優先順位間で組み入れないロジック](./media/Model_1.png "優先順位内のみの最良価格と組み入れ、優先順位間で組み入れないロジック")。
+![優先順位内のみの最良価格と組み入れ、優先順位間で組み入れないロジック。](./media/Model_1.png "優先順位内のみの最良価格と組み入れ、優先順位間で組み入れないロジック")。
 
 次の図は、割引同時実行管理時に使用するロジックが **優先順位内のみの最良価格、常に優先順位間で組み入れ** に設定を表示しています。
 
-![優先順位内のみの最良価格、常に優先順位間で組み入れロジック](./media/Model_2.png "優先順位内のみの最良価格、常に優先順位間で組み入れロジック")。
+![優先順位内のみの最良価格、常に優先順位間で組み入れロジック。](./media/Model_2.png "優先順位内のみの最良価格、常に優先順位間で組み入れロジック")。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

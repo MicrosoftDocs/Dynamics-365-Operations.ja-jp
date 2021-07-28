@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21941
+ms.custom:
+- "21941"
+- intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5abef8a25513898d6dbef2604d10373394c95c6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: c948cf34b198769a67c9e6981ab49c9d4482ef25
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897431"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352885"
 ---
 # <a name="cash-and-bank-management-home-page"></a>現金および銀行管理ホーム ページ
 
@@ -30,9 +32,9 @@ ms.locfileid: "5897431"
 
 財務証書には、預金伝票、小切手、受取手形、支払手形が含まれます。 口座取引明細書を調整したり、標準レポートに銀行データを印刷したりもできます。
 
-**業務プロセス**
+**ビジネス プロセス**
 
-[![業務プロセス](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![ビジネス プロセス。](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [現金割引](cash-discounts.md)
 -   [決済の概要](settlement-overview.md)

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dcec7963bdf70f848249bb2ca5e2208e09f49548
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: ece4875b69d3cf797ab90e54f0cc0fda317cc931
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054791"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359656"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Human Resources - Go Live の準備
 
@@ -32,7 +32,7 @@ ms.locfileid: "6054791"
 
 この図には、Go-Live プロセスのフェーズが表示しています。 
 
-![Go-live プロセス](./media/hr-admin-go-live-prepare-process.png)
+![Go-live プロセス。](./media/hr-admin-go-live-prepare-process.png)
 
 次のテーブルでは、プロセスのすべてのステップと、予定期間と、誰が処理を実行するのかについて示しています。
 

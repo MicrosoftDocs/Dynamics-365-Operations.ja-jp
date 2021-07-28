@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831389"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359766"
 ---
 # <a name="location-license-plate-positioning"></a>場所ライセンス プレートの配置
 
@@ -88,7 +88,7 @@ ms.locfileid: "5831389"
 1. **ライセンス プレート** を選択したままで、**テーブル結合の追加** を選択します。
 1. 表示されるテーブルの一覧で、**関係** 列の **場所ライセンス プレートの配置 (ライセンス プレート)** を選択します。 次に、**選択** を選択して、**場所ライセンス プレートの配置** を **在庫分析コード** テーブル結合に追加します。
 
-    ![テーブル結合](media/LpTableJoin.png "テーブル結合")
+    ![テーブル結合。](media/LpTableJoin.png "テーブル結合")
 
 1. **OK** を選択して 、更新された結合テーブルを確認し、クエリ エディターを閉じます。
 1. **場所ディレクティブ アクション** クイック タブで、**クエリの編集** を再度選択してクエリ エディターを開きます。
@@ -100,7 +100,7 @@ ms.locfileid: "5831389"
     - **フィールド :** *LP の位置*
     - **基準 :** *1*
 
-    ![新しい範囲](media/LpPositionCriteria.png "新しい範囲")
+    ![新しい範囲。](media/LpPositionCriteria.png "新しい範囲")
 
 1. **OK** を選択して変更を確認し、クエリ エディターを閉じます。
 
@@ -275,7 +275,7 @@ ms.locfileid: "5831389"
 1. **作業 ID のスキャン / ライセンス プレート ID** ページで、**ID** フィールドを選択して、販売明細行から作業 ID を入力します。
 1. このピッキング作業では、品目 *A0002* を場所 *01A01R1S2B* からピッキングするように指示されます。 この指示は、品目 *A0002* が その場所の位置 *1* のライセンス プレート上にあるために表示されます。
 
-    ![位置 1 の場所](media/LocationLicensePlatePositioning.png "位置 1 の場所")
+    ![位置 1 の場所。](media/LocationLicensePlatePositioning.png "位置 1 の場所")
 
 1. 場所に対して作成したライセンス プレートの ID を入力し、プロンプトに従って販売注文を選択します。
 

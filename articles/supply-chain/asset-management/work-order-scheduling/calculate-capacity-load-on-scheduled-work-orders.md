@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09e0fc17a288a278b7b1feaba8c7b73425aa2d52
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 164ae10eef8ef3692cd3a8b5232de64ec3d83b1b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808163"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354183"
 ---
 # <a name="calculate-capacity-load-on-scheduled-work-orders"></a>スケジュール済み作業指示書の最大能力負荷の計算
 
@@ -48,7 +48,7 @@ ms.locfileid: "5808163"
 
 次の図は、負荷タイプ **引当済** に対する 3 週間の計算の結果を示します。
 
-![図 1](media/08-work-order-scheduling.png)
+![図 1。](media/08-work-order-scheduling.png)
 
 [!NOTE]
 負荷タイプ **能力** または **剰余** を選択した計算では、選択した期間のリソースに対して引当が行われていない場合、同じ結果が表示されます。

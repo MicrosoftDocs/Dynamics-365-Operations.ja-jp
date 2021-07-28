@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b501c331cccc6d030f36d0a13ba0a6a13c08c733
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2c7fe2e1050053fb2ddaf85854e7ac46dd6912a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023374"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358365"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>TDS 復元可能証明書番号の記録
 
@@ -33,7 +33,7 @@ TDS 証明書番号と日付けを取得して記録するには、次の手順�
 
 1. **税 \> 間接税 \> 源泉徴収税 \> 復元可能証明書** の順に移動します。
 
-    [![復元可能な証明書ページ](./media/apac-ind-TDS-49.png)](./media/apac-ind-TDS-49.png) 
+    [![復元可能な証明書ページ。](./media/apac-ind-TDS-49.png)](./media/apac-ind-TDS-49.png) 
 
 2. **回収可能な証明書** ページの **税タイプ** フィールドで 、**TDS** を選択します。
 3. **新規** を選択してレコードを作成します。

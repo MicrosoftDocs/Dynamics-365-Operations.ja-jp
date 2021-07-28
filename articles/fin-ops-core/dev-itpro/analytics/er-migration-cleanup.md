@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 97dbb625fc312548fb266b2ef6643a2b8e2b0f81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b6e81e47cd781bbe856676b1cecb50b8ee1adfc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750889"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351052"
 ---
 # <a name="er-migration-cleanup"></a>ER 移行クリーンアップ 
 
@@ -30,11 +30,11 @@ Finance インスタンスを管理する場合、現在のインスタンスを
 
 したがって、テンプレートを使用して ER 形式を実行してビジネス ドキュメントを生成すると、例外が発生し、テンプレートが欠落していることが通知されます。 また、ER 移行クリーンアップ オプションを使用して、テンプレートを含む ER 形式の構成を削除してから再インポートする方法も紹介しています。
 
-[![ER 形式の実行](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![ER 形式の実行。](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 **構成** ページ（**組織管理の** \> **電子レポートの構成** \> **構成**）に移動し、構成ツリーでテンプレートを使用したER 形式の構成を削除しようとした際には、同様のエラーが発生します。
 
-[![ER 形式の削除](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![ER 形式の削除。](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 アクセスできない ER テンプレートの問題を解決するには、次の手順を実行してください。
 
@@ -50,7 +50,7 @@ Finance インスタンスを管理する場合、現在のインスタンスを
 >
 > 参照されたテンプレートが Blob ストレージで利用可能な場合に ER 形式の構成を削除する目的で **移行クリーンアップ**  オプションを使用すると、アプリケーション データベース内の関連する構成アーティファクトのみが削除されます。 Blob ストレージのテンプレートの物理ファイルは残ります。 Blob ストレージにおけるファイルの上書きは許可されなくなりました。 詳細については、[KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217) を参照してください。 また、この環境で移行のクリーンアップを使用して削除した構成を再度インポートすることもできなくなります。 この問題を解決するには、対応するファイルを Blob ストレージで検索し、手動で削除する必要があります。
 
-[![ER 形式のインポート](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![ER 形式のインポート。](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 アプリケーション インスタンスを移行対象として複数回使用されている場所に移行した場合で、Blob ストレージに ER のテンプレート ファイルがすでに含まれている場合にも、同様の問題が発生する可能性があります。
 

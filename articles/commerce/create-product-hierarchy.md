@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8aef33a501f43105730eaa21a9159eb1398a1b36
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fe1f194868ad04d8b64218186b2eb90cb34988c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799568"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352377"
 ---
 # <a name="create-a-new-product-hierarchy"></a>新しい製品階層の作成
 
@@ -64,7 +64,7 @@ Commerce 製品階層を作成してコンフィギュレーションするに�
 
 次の図は、新しい製品階層ノードの作成を示しています。
 
-![製品階層の作成](media/create-product-hierarchy.png)
+![製品階層を作成します。](media/create-product-hierarchy.png)
 
 ## <a name="other-settings"></a>その他の設定
 

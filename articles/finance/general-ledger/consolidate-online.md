@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 8a946a8325afebf76639991c60135d7425f5f211
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eca0d30903985126412e1ae0b8e3232c3e4700f4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826765"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351687"
 ---
 # <a name="online-financial-consolidations"></a>オンライン財務連結
 
@@ -31,7 +31,7 @@ ms.locfileid: "5826765"
 ## <a name="criteria"></a>基準
 **連結 [オンライン]** ページの **基準** タブで、アカウント、期間、および連結されるデータのタイプを定義します。
 
-![基準タブ](./media/criteria-consolidate-online.png "基準タブ")
+![基準タブ。](./media/criteria-consolidate-online.png "基準タブ")
 
 このタブのさまざまなフィールドの説明を次に示します。
 
@@ -57,16 +57,16 @@ ms.locfileid: "5826765"
 ## <a name="financial-dimensions"></a>財務分析コード
 **財務分析コード** タブで、連結会社に含まれる必要のある分析コードを定義します。 分析コードを選択するには、**詳細** フィールドを **分析コード** に設定し、それから連結会社の分析コードの順序を定義します。
 
-![財務分析コード タブ](./media/financial-dimensions-cons.png "財務分析コード タブ")
+![財務分析コード タブ。](./media/financial-dimensions-cons.png "財務分析コード タブ")
 
 定義した順序に関係なく、**主勘定** は常に最初のセグメントになります。
 
 ## <a name="legal-entities"></a>法人
 **法人** タブで、連結会社に含まれる必要のある会社を定義します。 会社の所有権割合を定義することもできます。 100 パーセント未満の所有権を指定する場合、連結会社に指定した割合がロールアップされます。 すべての換算の差額について、**自動トランザクションの勘定** ページの設定から主勘定を選択するのに **換算差額の勘定タイプ** フィールドが使用されます。
 
-![法人タブ](./media/legal-entities-cons.png "法人タブ")
+![法人タブ。](./media/legal-entities-cons.png "法人タブ")
 
-![自動トランザクション ページの勘定](./media/accounts-for-automatic-cons.png "自動トランザクション ページの勘定")
+![自動トランザクション ページの勘定。](./media/accounts-for-automatic-cons.png "自動トランザクション ページの勘定")
 
 ## <a name="elimination"></a>消去
 **消去** タブには、消去を処理するための 3 つのオプションがあります。
@@ -75,7 +75,7 @@ ms.locfileid: "5826765"
 - 消去ルールを選択し、それから **提案オプション** フィールドで **転記のみ** を選択します。 このオプションにより、連結プロセス中に消去が処理され、1 つのステップですべてが転記されます。
 - 消去仕訳帳を使用し、連結プロセスから消去提案を個別に実行します。
 
-![消去タブ](./media/elimination-cons-onl.png "消去タブ")
+![消去タブ。](./media/elimination-cons-onl.png "消去タブ")
 
 消去の詳細については、[消去ルール](./elimination-rules.md) を参照してください。
 
@@ -86,7 +86,7 @@ ms.locfileid: "5826765"
 - **トランザクション日付** – 各トランザクションの日付は、為替レートを選択するのに使用されます。 ほとんどの場合、このオプションは固定資産に使用され、多くの場合、過去のレートとして参照されます。 勘定範囲内のさまざまなトランザクションには多くのレートがあるため、レートのプレビューは表示できません。
 - **ユーザー定義レート** – このオプションを選択した後、為替レートを入力することができます。 このオプションは平均為替レートに対して、または固定為替レートと引き換えに連結する場合に役立ちます。
 
-![為替換算タブ](./media/currency-translation-cons-online.png "為替換算タブ")
+![為替換算タブ。](./media/currency-translation-cons-online.png "為替換算タブ")
 
 ## <a name="additional-resources"></a>追加リソース
 

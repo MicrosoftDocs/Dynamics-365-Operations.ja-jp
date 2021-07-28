@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799520"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349725"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>クロスチャネル共有の有効化と使用
 
@@ -48,15 +48,15 @@ ms.locfileid: "5799520"
 1. **サイト設定 \> 機能** に移動します。
 1. **クロス チャンネル** 機能のオプションを **オン** にします。
 
-    ![クロス チャンネル オプションをコマース サイト ビルダーでオンに設定](./media/enabling-cross-channel-sharing.png)
+    ![クロスチャンネル オプションをコマース サイト ビルダーでオンに設定します。](./media/enabling-cross-channel-sharing.png)
 
 クロスチャンネル共有を有効にした後、次の図に示す例のように、クロスチャンネルの情報は **サイト設定 \> 機能** で、**チャンネル** セクションに表示されます。
 
-![クロスチャンネル共有が有効になった後、チャンネル情報は表示されます](./media/channels-cross-channel.png)
+![クロスチャンネル共有が有効になった後、チャンネル情報は表示されます。](./media/channels-cross-channel.png)
 
 さらにクロスチャンネル共有を有効にすると、コマース サイト ビルダーの右上隅の **チャンネル** フィールドでは、次の図で示すように、クロスチャンネル コンテンツを管理するために使用できる **クロス チャンネル オンライン サイト** オプションが含まれます。
 
-![クロスチャンネル共有の有効後、チャンネル フィールドのクロス チャンネル オンライン ストアのオプション](./media/cross-channel-dropdown.png)
+![クロスチャンネル共有の有効後、チャンネル フィールドのクロス チャンネル オンライン ストアのオプション。](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>クロスチャンネル コンテンツの作成および使用
 

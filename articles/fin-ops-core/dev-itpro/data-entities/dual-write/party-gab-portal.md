@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: a2ea914344341ee26138e853727c551bdd5d733e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833093"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358620"
 ---
 # <a name="using-power-portal-with-the-party-data-model"></a>Power Portal を当事者のデータ モデルで使用する
 
@@ -28,11 +28,11 @@ ms.locfileid: "5833093"
 
 次の図は、当事者とグローバル アドレス帳データ モデルを **持たない** テーブル リレーションシップを示しています。
 
-   ![当事者モデルを使用しない](media/without-party-model.PNG)
+   ![当事者モデルを使用しない。](media/without-party-model.PNG)
 
 次の図は、当事者とグローバル アドレス帳データ モデルを **持つ** テーブル リレーションシップを示しています。
 
-   ![当事者モデルを使用する](media/with-party-model.png)
+   ![当事者モデルを使用する。](media/with-party-model.png)
 
 ## <a name="create-a-new-table-permission"></a>テーブルの新しいアクセス許可を作成する
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186645"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355679"
 ---
 # <a name="improve-the-prediction-model-preview"></a>予測モデルの改善 (プレビュー)
 
@@ -33,7 +33,7 @@ ms.locfileid: "6186645"
 
 **期限遵守**、**遅延**、**非常に遅い** の 3 つの結果から、請求書に対して可能な 3 つの結果を最初に選択します。 3 つの結果をすべて選択する必要があります。 いずれかの結果の選択を解除すると、請求書がトレーニング プロセスからフィルターで除外され、予測の精度が低下します。
 
-[![実績の確認](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![実績を確認します。](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 組織で 2 つの結果しか必要としない場合は、**遅延** と **非常に遅い** のしきい値を 0 (ゼロ) 日に変更します。 このようにして、予測を効果的に、**期限遵守** または **遅延** のバイナリ状態に効果的に折りたたむことができ ます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "6186645"
 
 次の図は、請求書テーブルで使用できるフィールドを示しています。
 
-[![請求書テーブルで使用できるフィールド](./media/available-fields.png)](./media/available-fields.png)
+[![請求書テーブルで使用できるフィールドです。](./media/available-fields.png)](./media/available-fields.png)
 
 次のフィールドは、トレーニング対象として選択しないでください。
 
@@ -66,7 +66,7 @@ ms.locfileid: "6186645"
 
 次の図は、顧客テーブルで使用できるフィールドを示しています。
 
-[![顧客テーブルで使用できるフィールド](./media/related-entities.png)](./media/related-entities.png)
+[![顧客テーブルで使用できるフィールドです。](./media/related-entities.png)](./media/related-entities.png)
 
 次のフィールドは、トレーニング対象として選択しないでください。
 
@@ -74,8 +74,8 @@ ms.locfileid: "6186645"
 
 ## <a name="filters"></a>フィルター
 
-現在、フィルターでは顧客支払予測シナリオはサポートしていません。 したがって、**このステップをスキップ** を選択して、概要ページに進みます。
+トレーニングに使用される請求書をフィルター処理するには、請求書または顧客テーブルのフィールドでフィルター規準を設定します。 たとえば、合計が特定の金額以上の請求書のみを含むしきい値を設定できます。 また、特定の顧客グループの顧客に関連付けられている請求書を除外できます。
 
-[![フィルターを使用したフォーカス モデル](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+データのフィルター処理の詳細については、[予測モデルの作成](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

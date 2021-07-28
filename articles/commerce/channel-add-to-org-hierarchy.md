@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7ff6d8ee7e526e45975cfa500b5e6d6079054dc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f20b5c36b45fc0d242edb4e5305a4195d6dfbe94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800690"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351228"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>組織階層へのチャネルの追加
 
@@ -44,7 +44,7 @@ ms.locfileid: "5800690"
 
 次の図は、選択した階層の組織階層の詳細を示しています。
 
-![選択した階層の組織階層の詳細](media/channel-add-to-org-hierarchy-1.png)
+![選択した階層の組織階層の詳細。](media/channel-add-to-org-hierarchy-1.png)
 
 ## <a name="add-a-channel-to-a-hierachy-node"></a>階層ノードへのチャネルの追加
 
@@ -58,17 +58,17 @@ ms.locfileid: "5800690"
 
 次の図は、チャネルを選択して階層ノードに追加する方法を示しています。
 
-![チャネルを選択して階層ノードを追加する](media/channel-add-to-org-hierarchy-2.png)
+![チャネルを選択して階層ノードを追加します。](media/channel-add-to-org-hierarchy-2.png)
 
 次の図は、さまざまなチャネルが追加された階層を示しています。
 
-![さまざまなチャネルが追加された階層](media/channel-add-to-org-hierarchy-3.png)
+![さまざまなチャネルが追加された階層。](media/channel-add-to-org-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [チャネルの概要](channels-overview.md)
 
-[チャネル設定の前提条件](channels-prerequisites.md)
+[チャネルの設定の前提条件](channels-prerequisites.md)
 
 [組織と組織階層の概要](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 

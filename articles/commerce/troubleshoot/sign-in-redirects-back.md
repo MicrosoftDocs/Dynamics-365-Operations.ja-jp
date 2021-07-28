@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a1d0ae4e487c391020947c607d5d7cb5d1ba6af4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e83b381e73d28dce0a438a37d5f8ed23b4957adf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020606"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350381"
 ---
 # <a name="sign-in-link-redirects-back-to-an-e-commerce-site"></a>サインイン リンクが eコマース サイトにリダイレクトする
 
@@ -43,7 +43,7 @@ Azure AD B2C アプリケーションで返信 URL が正しく構成されて�
 1. Azure AD B2C の設定中に作成したアプリケーションを選択します。
 1. 次の図の例に示すように、**返信 URL** で、リストにサイト ドメイン URL と eコマースが生成した URL の両方のエントリが含まれていることを確認します。
 
-    ![Azure AD B2C 返信 URL エントリ](media/aad-b2c-reply-url.jpg)
+    ![Azure AD B2C 返信 URL エントリ。](media/aad-b2c-reply-url.jpg)
 
 > [!NOTE]
 > サイト ドメイン URL と eコマースで生成された URL の両方が、先頭または末尾のスラッシュを含まない有効な URL 形式である必要があります。

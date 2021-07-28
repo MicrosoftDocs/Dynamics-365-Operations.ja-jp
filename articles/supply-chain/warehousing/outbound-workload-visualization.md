@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810489"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351420"
 ---
 # <a name="outbound-workload-visualization"></a>出庫ワークロードの視覚化
 
@@ -60,7 +60,7 @@ ms.locfileid: "5810489"
     - **含める日数** – グラフを生成する過去の日数を入力します。
     - **作業指示書タイプ** – フィルター処理する出庫作業指示書タイプを選択します。
 
-    ![フィルターの構成ページ](media/work-viz-filters-1.png "フィルターの構成ページ")
+    ![フィルターの構成ページ。](media/work-viz-filters-1.png "フィルターの構成ページ")
 
 1. **フィルターの構成** ページを閉じて、**出庫ワークロードの視覚化** ページに戻ります。
 
@@ -70,11 +70,11 @@ ms.locfileid: "5810489"
     - **最終更新日時** – このフィールドは、グラフの情報が最後に更新された日時を表示します。
     - **見積済/実際の時間** – 労働基準がシステムで設定されている場合、このオプションを *はい* に設定すると、計算された集荷時間の累計がグラフの各列の上部に表示されます。 労働基準を使用していない場合、このオプションは使用できません。
 
-    ![視覚化の例](media/work-viz-chart.png "視覚化の例")
+    ![視覚化の例。](media/work-viz-chart.png "視覚化の例")
 
 1. グラフ内の任意のバーを選択して、関連する作業明細行の詳細を表示します。
 
-    ![作業ラインの詳細](media/work-viz-work-details.png "作業ラインの詳細")
+    ![作業ラインの詳細。](media/work-viz-work-details.png "作業ラインの詳細")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>例: ゾーンの出庫ワークロードの視覚化
 
@@ -92,7 +92,7 @@ ms.locfileid: "5810489"
 
 以下の図は、結果としてのグラフの一例を表しています。
 
-![ゾーンと作業状態の視覚化](media/work-viz-chart.png "ゾーンと作業状態の視覚化")
+![ゾーンと作業状態の視覚化。](media/work-viz-chart.png "ゾーンと作業状態の視覚化")
 
 このグラフには、**FLOOR** および **BULK** という名前の 2 つのゾーンと **空白** のゾーンが示されています。 **空白** のゾーンは、ゾーンのメンバーではないすべての作業明細行を表します。 グラフには、関係のないすべてのフィルター処理されたデータが常に **空白** として表示され、できるだけ視覚化できるようになっています。 **FLOOR** ゾーンでは、グラフに 3 つの終了した明細行と 4 つの未処理の明細行が表示されています。 **BULK** ゾーンでは、グラフに 4 つの終了した明細行と 1 つの未処理の明細行、24 のキャンセルされた明細行が表示されています。 最後に、ゾーンに含まれていない 8 つの終了した明細行がグラフに表示されるため、**空白** として一覧されます。
 

@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f7ad4f53917bb607afe84a2c457518c3f8f7a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a9507cd7f2a1612ab4063d6307b72d8522619ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799109"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349427"
 ---
 # <a name="recall-order-operation-in-pos"></a>POS での注文の取り消し操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "5799109"
 
 **注文の取り消し** 操作ボタンの構成により、組織が事前定義された表示で操作を展開できるようにします。
 
-![ボタン グリッド構成](media/recallorderbuttongrid.png)
+![ボタン グリッド構成。](media/recallorderbuttongrid.png)
 
 表示オプションは以下の通りです。
 - **なし** – このオプションは、特定表示なしで操作を展開します。 ユーザーがこの構成で工程を開くと、注文を検索して見つけるか、定義済みの注文フィルターから選択するかを確認するメッセージが表示されます。
@@ -42,11 +42,11 @@ POS から **注文の取消し** 操作を開始すると、表示が **なし*
 - AppBar で **注文の検索** または **検索およびフィルター** アイコンを選択し、フィルタ条件を満たす注文を見つけるためにフィルタリング機能を使用します。
 - **注文の表示** ドロップダウン メニューから定義済みのフィルターを選択します (フルフィルメントの注文、集荷の注文、出荷の注文)。
 
-![RecallOrderMainMenu](media/recallordermain.png)
+![RecallOrderMainMenu。](media/recallordermain.png)
 
 検索基準を適用すると、アプリケーションにより、一致する販売注文の一覧が表示されます。 検索/フィルター オプションを使用する場合、取得された注文は、ユーザーの現在の店舗にリンクされた注文である必要がないことに注意する必要があります。 この検索プロセスでは、注文が他の店舗/チャンネルまたは倉庫の場所によって作成またはフルフィルメントされた場合でも、検索基準に一致する顧客注文が取得および表示されます。
 
-![RecallOrderDetail](media/orderrecalldetail.png)
+![RecallOrderDetail。](media/orderrecalldetail.png)
 
 ユーザーは、一覧で注文を選択して追加の詳細を表示できます。 画面右側の情報パネルには、注文明細行の詳細、配送の詳細、フルフィルメントの詳細を含む、選択した注文の詳細が表示されます。
 

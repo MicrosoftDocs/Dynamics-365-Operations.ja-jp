@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: bc33a8b21c75a308aea738f0db1f3786695f0633
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ffe85a028f7bfda971157b376e82ea86b81fe11b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791729"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354520"
 ---
 # <a name="task-management-overview"></a>タスク管理の概要
 
@@ -37,13 +38,13 @@ ms.locfileid: "5791729"
 
 次の図は、Commerce におけるタスク管理の概念アーキテクチャを示しています。
 
-![タスク管理の概念アーキテクチャ](media/Tasks-management-conceptual-architecture.png)
+![タスク管理の概念アーキテクチャ。](media/Tasks-management-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [タスク管理のコンフィギュレーション](task-mgmt-configure.md)
 
-[タスク リストの作成およびタスクの追加](task-mgmt-create-lists.md)
+[タスク リストの作成とタスクの追加](task-mgmt-create-lists.md)
 
 [店舗または従業員へのタスク リストの割り当て](task-mgmt-assign-lists.md)
 

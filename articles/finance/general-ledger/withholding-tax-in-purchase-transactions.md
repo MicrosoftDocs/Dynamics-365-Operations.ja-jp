@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: faeaf0746532875d3517a208c9c338c112bf2c77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d605ac0b6e4190f0c0f576d402c9b101d754b347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816886"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356679"
 ---
 # <a name="withholding-tax-in-purchase-transactions"></a>購買トランザクションの源泉徴収税
 
@@ -64,15 +64,15 @@ ms.locfileid: "5816886"
 
 源泉徴収税の一時的な金額は、**発注書** ページの **合計** タブの **調整済源泉徴収税** フィールド で使用 きます。
 
-![発注書には源泉徴収税が含まれます](media/withholding-tax-adjusted.png)
+![発注書には源泉徴収税が含まれます。](media/withholding-tax-adjusted.png)
 
 源泉徴収税は、**仕入先支払仕訳帳** で計算されます。 **トランザクションの決済** ページの **源泉徴収税** タブにある実際の源泉徴収税額と同様に、該当する源泉徴収税コードを手動で調整できます。
 
-![源泉徴収は、[トランザクションの決済] ページで手動で調整できます](media/withholding-tax-vendor-payment-tab.png)
+![源泉徴収は、トランザクションの決済ページで手動で調整できます。](media/withholding-tax-vendor-payment-tab.png)
 
 派生した源泉徴収税額は仕入先支払から差し引き、関連する伝票の **源泉徴収税勘定** に転記されます。
 
-![関連する伝票が表示される源泉徴収税勘定](media/withholding-tax-adjusted.png)
+![関連する伝票が表示される源泉徴収税勘定。](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b901622bbfc8d6b3066879f6456a4ab618ca4076
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: d6854c11822e07ff06426b7a35eac86cdc0e9b06
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117233"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356905"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>製品分析コードの表示設定を適用する
 
@@ -33,7 +33,7 @@ Dynamics 365 Commerce では、製品のバリエーションを区別するた�
 
 分析コードの定義は、Commerce のサイトビルダーの、**サイト設定 \> 拡張機能 \> 分析コードの設定** で行います。 以下の図は、サイト ビルダー内における分析コードの表示例を示しています。
 
-![Commerce サイト ビルダーでのサイト設定例](./dev-itpro/media/swatch_site_settings.PNG)
+![Commerce サイト ビルダーでのサイト設定例。](./dev-itpro/media/swatch_site_settings.PNG)
 
 次の 2 つの分析コード設定を使用できます:
 
@@ -41,13 +41,13 @@ Dynamics 365 Commerce では、製品のバリエーションを区別するた�
 
     次の図は、eコマースの PDP に色見本やサイズ見本が含まれている例です。 この例では、カラー分析コードに調整コードが構成されています。 そのため、見本は色として表示されています。 しかし、サイズの分析コードには 16 進数も画像 URL も構成されていません。 そのため、テキストは表示されます。
 
-    ![eコマースの商品詳細ページに色見本として表示されるカラー分析コードの例](./dev-itpro/media/swatch_pdp.png)
+    ![eコマースの商品詳細ページに色見本として表示されるカラー分析コードの例。](./dev-itpro/media/swatch_pdp.png)
 
 - **製品カードに表示する分析コード** - リストやリストページに表示される商品カードに表示する分析コードを指定します。 分析コードを製品カードに表示する前に、その分析コードに対してこの設定を有効にする必要があります。 **画像として表示する分析コード** も有効にする必要があります。 商品カードの見本選択の動作は、カラー分析コードに合わせて最適化されています。 他の分析コードの場合、見本の選択動作をカスタマイズするために、ビューの拡張機能が必要となる場合があります。
 
     次の図は、電子コマース サイトのリスト ページに色見本を含む商品カードがある場合の例です。
 
-    ![eコマースの一覧ページに色見本として表示されるカラー分析コードの例](./dev-itpro/media/swatch_searchresults.PNG)
+    ![eコマースの一覧ページに色見本として表示されるカラー分析コードの例。](./dev-itpro/media/swatch_searchresults.PNG)
 
 サイトのページに見本として表示されるように製品の分析コードを設定する方法については、[製品の分析コード値を見本として表示する設定](./dev-itpro/dimensions-swatch.md)をご覧ください。
 

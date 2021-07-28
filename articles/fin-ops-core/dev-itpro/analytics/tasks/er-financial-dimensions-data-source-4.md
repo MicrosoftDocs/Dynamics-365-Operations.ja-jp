@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a06936da71d7b05f312a99c8c11d148403d29c3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 11d15a9e932eb02fc1bc8960d9c7ecbf4b57a4e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752391"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356298"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER 財務分析コードをデータ ソースとして使用する (第 4 部 - レポートの実行)
 
@@ -34,19 +34,19 @@ ms.locfileid: "5752391"
 2. [ツリー] フィールドで、「Financial dimensions sample model」を展開します。
 3. ツリーで、「Financial dimensions sample model\Ledger journal report」を選択します。
 4. [実行] をクリックします。
-![ER コンフィギュレーション ページ](../media/er-financial-dimensions-guides-run1.png)
+![ER コンフィギュレーション ページ。](../media/er-financial-dimensions-guides-run1.png)
 5. [分析コード名] フィールドで、値を入力または選択します。
     * 現在の会社のすべての分析コードを選択するには、次の情報を入力します: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
-![ER コンフィギュレーション ページ](../media/er-financial-dimensions-guides-run2.png)
+![ER コンフィギュレーション ページ。](../media/er-financial-dimensions-guides-run2.png)
 6. [対象に含めるレコード] セクションを展開します。
 7. [フィルター] をクリックします。
 8. 仕訳元帳表および仕訳バッチ番号フィールドの行を選択します。
 9. [基準] フィールドで、「00057」と入力します。
 10. [OK] をクリックします。
 11. [OK] をクリックします。
-![ER コンフィギュレーション ページ](../media/er-financial-dimensions-guides-run3.png)
+![ER コンフィギュレーション ページ。](../media/er-financial-dimensions-guides-run3.png)
     * 生成された出荷を確認します。 選択したバッチの各トランザクションについては、対応する分析コードの財務分析コードが表示されます。 このレポートを実行して、レポートが選択した分析コード数またはインスタンスに構成した分析コード数に依存していないことを確認するために異なる分析コードを選択します。  
-![ER コンフィギュレーション ページ](../media/er-financial-dimensions-guides-run4.png)
+![ER コンフィギュレーション ページ。](../media/er-financial-dimensions-guides-run4.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

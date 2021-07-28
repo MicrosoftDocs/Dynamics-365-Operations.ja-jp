@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892436"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360739"
 ---
 # <a name="asset-leasing-get-started"></a>資産リースを開始する
 
@@ -35,7 +37,7 @@ ms.locfileid: "5892436"
 ## <a name="asset-leasing-elements"></a>資産リースの要素
 次の図は、リースの業務プロセスの主要な要素を示しています。
 
-[![資産リースの要素](./media/overview-01.png)](./media/overview-01.png)
+[![資産リースの要素。](./media/overview-01.png)](./media/overview-01.png)
 
 リース資産には、次の主要コンポーネントが含まれます:
 
@@ -54,7 +56,7 @@ ms.locfileid: "5892436"
 
 次の図は、リース帳簿、リース、計算された支払スケジュール、リースとリース帳簿の分類テスト、およびそれに対応する会計トランザクションを示します。
 
-[![リース、リース帳簿、および支払スケジュール](./media/overview-02.png)](./media/overview-02.png)
+[![リース、リース帳簿、および支払スケジュール。](./media/overview-02.png)](./media/overview-02.png)
 
 - **リース帳簿** - リース帳簿にはリース期間、公正価額、リース料などリース契約のすべての情報が含まれます。 また、従う会計基準、リースの種類、およびリース分類テストで考慮されるリースの種類としきい値も含まれます。 また、このリース帳簿には総勘定元帳に転記されたリース取引も含まれます。 
   
@@ -117,7 +119,7 @@ ms.locfileid: "5892436"
 
 分類テストには、所有権の委譲、購入オプション、リース期間、正味現在価値、固有資産などが含まれます。 次の図は、リース分類テストを示します。
 
-[![リース分類テスト](./media/overview-03.png)](./media/overview-03.png)
+[![リース分類テスト。](./media/overview-03.png)](./media/overview-03.png)
 
 リースの種類ごとに、異なるリース取引に対して異なる方法で会計を処理します。 トランザクションには、初期認識、支払利息、リース支払期日とリース償却が含まれ、従う会計基準 (IFRS 第 16 号または ASC 第 842 号) に基づいています。 勘定科目は、各トランザクションの種類および会計フレームワークのリース転記プロファイルの下で定義されます。
 
@@ -232,7 +234,7 @@ ms.locfileid: "5892436"
 
    **支払スケジュール** ページには、リース ID の将来の支払スケジュールが一覧表示されます。 **スケジュールの確認** を選択して、**初期認識** トランザクションを転記できるようにします。 
 
-[![初期認識関数](./media/overview-13.png)](./media/overview-13.png)
+[![初期認識関数。](./media/overview-13.png)](./media/overview-13.png)
 
 8. **初期認識** を選択して、初期認識仕訳帳を作成します。 
 
@@ -246,7 +248,7 @@ ms.locfileid: "5892436"
 
    **資産減価償却スケジュール** ページには、選択したリース ID の減価償却トランザクションが表示されます。 
 
-   [![使用権資産トランザクション ページ](./media/overview-20.png)](./media/overview-20.png)
+   [![使用権資産トランザクション ページ。](./media/overview-20.png)](./media/overview-20.png)
 
    **使用権資産トランザクション** ページには、初期認識、累計減価償却、および資産残高が一覧表示されます。 
 

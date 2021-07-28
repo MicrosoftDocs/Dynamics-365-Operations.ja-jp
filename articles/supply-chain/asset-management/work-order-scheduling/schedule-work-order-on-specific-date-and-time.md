@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 827f4ca16341d29413f1b1d928965aa1919abf59
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c28ade5bb6a22b9d15380085ea479e79ba246c1e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822518"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354063"
 ---
 # <a name="schedule-work-order-on-specific-date-and-time"></a>特定の日時のワーク オーダーのスケジュール設定
 
@@ -38,13 +38,13 @@ ms.locfileid: "5822518"
 
 4. **ワーク オーダー ヘッダー** クイック タブで、**予定開始** および **予定終了** フィールドに、開始日時と終了日時を挿入します。
 
-    ![図 1](media/05-work-order-scheduling.png)
+    ![図 1。](media/05-work-order-scheduling.png)
 
 5. **全般** タブで、**スケジュール** をクリックして標準スケジュール プロセスを使用するか、特定の作業者にワーク オーダーを割り当てる場合は、**派遣** をクリックします。
 
 6. 既定の確保済能力を上書きして、ワーク オーダーが予定期間内にスケジュールされるようにするには、**ワーク オーダーのスケジュール設定** ダイアログ > **無限能力** セクションで下の図が示すように選択を行います。 これは、予定された開始時刻にワーク オーダーを開始する必要があるため、スケジューリング プロセスは既存の確保済能力を無視することを意味します。
 
-    ![図 2](media/06-work-order-scheduling.png)
+    ![図 2。](media/06-work-order-scheduling.png)
 
 7. **OK** をクリックしてスケジューリングを開始します。
 
