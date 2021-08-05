@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 191453
+ms.custom: intro-internal
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa8cc7331492b8f4c3d1a50691421352467e031c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e00998d4d2fbd42c45b9ba586bb87dc5fcfc4ca4
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744145"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336229"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 

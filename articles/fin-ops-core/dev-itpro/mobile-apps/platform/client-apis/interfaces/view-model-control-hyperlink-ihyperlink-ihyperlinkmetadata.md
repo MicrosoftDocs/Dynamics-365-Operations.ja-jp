@@ -3,21 +3,16 @@ title: HyperLinkMetadata タイプ
 description: HyperLink メタデータ タイプ。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba944727abf943db33bcd3672db4f7f9327edbeb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1ea330bf4dd2ab0061a0d6df60df18a89251fe6e
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754868"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661592"
 ---
 # <a name="hyperlinkmetadata-type"></a>HyperLinkMetadata タイプ
 
@@ -46,7 +41,7 @@ HyperLink メタデータ タイプ。
 * [名前](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#name)
 * [NumSequence](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#numsequence)
 * [注文](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#order)
-* [[タイプ](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#type)]
+* [タイプ](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#type)
 
 ## <a name="properties"></a>プロパティ
 

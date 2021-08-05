@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adbdfad21ad1e9f681a001feb56372a067d3ed56
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c865a7028d76b7f4ea057b403f188f527e3d59a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189804"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357498"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 
@@ -38,7 +38,7 @@ ms.locfileid: "6189804"
 -   テスト コードを生成するために Visual Studio に記録しているタスク レコーダーをインポートします。
 -   ビルド マシンとテスト モジュールを統合します。
 
-[![テスト モジュールの統合](./media/54.png)](./media/54.png)  
+[![テスト モジュールの統合。](./media/54.png)](./media/54.png)  
 
 ## <a name="use-systest-framework-to-author-unitcomponent-test-code"></a>SysTest フレームワークを使用して単位またはコンポーネントのテスト コードを作成
 新しいテスト ケースを作成して、アプリケーションで機能をテストすることができます。
@@ -51,12 +51,12 @@ ms.locfileid: "6189804"
 1.  **ソリューション エクスプローラー** で、新規プロジェクトを右クリックしてから **プロパティ** をクリックします。
 1.  **Model** プロパティを **FleetManagementUnitTests** に設定し、**OK** をクリックします。 
 
-    [![モデル プロパティ](./media/56.png)](./media/56.png)
+    [![モデル プロパティ。](./media/56.png)](./media/56.png)
 
 1.  FleetManagementUnitTestSample プロジェクトを右クリックして **追加** をポイントしてから **新しい項目** をクリックします。
 1.  **新しい項目の追加** ウィンドウで、追加する要素のタイプとして **クラス** を選択します。 新しいクラスに FMUnitTestSample と名前を付けてから、**追加** をクリックします。 
 
-    [![新しい品目を追加](./media/57.png)](./media/57.png)
+    [![新しい品目の追加。](./media/57.png)](./media/57.png)
 
 1. 新しいクラスのコードの最初の行で、クラスが SysTestCase クラスを拡張していることを示します。
 1. クラスのメソッドを定義する次のコードを追加します。 これらのメソッドは、2 つの追加テストを定義します。
@@ -119,7 +119,7 @@ ms.locfileid: "6189804"
 1. 特定のテスト ケースを実行するには、**選択したテストの実行** をクリックします。
 1. 完了した後、テスト エクスプローラーにテストの結果が表示されます。 
 
-    [![完了したテスト](./media/59-300x290.png)](./media/59.png)
+    [![完了したテスト。](./media/59-300x290.png)](./media/59.png)
 
 ## <a name="test-isolation"></a>テストの分離
 テストが高い価値を持つためには、信頼できるものでなければなりません。 テストは、他のテストなどの他の要因に関係なく、常に成功または失敗します。 信頼性の低いテストの典型的な原因の 1 つとして、ダウンストリーム テストに影響を与えるデータベースに残されたデータなどのリーク状態があります。 このタイプの問題を回避するには、```SysTestTransaction``` 属性を使用できます。
@@ -147,7 +147,7 @@ ms.locfileid: "6189804"
    
 3. このモデルは Application Platform/Foundation からのフォームを保持するため、以下に示すモデルへの参照を追加します。
 
-    [![モデル参照](./media/62-1024x786.png)](./media/62.png)
+    [![モデル参照。](./media/62-1024x786.png)](./media/62.png)
 
 基本テスト モジュールを配置した後、タスク レコーダーの記録をインポートしてテスト コードを生成することができます。 タスク レコーダーの記録の XML をインポートするとき、FormAdaptors を使用してテスト コードが生成されます。 フォーム アダプターは、フォーム機能をテストするために使用される、強く定型化された API を提供するフォーム上のラッパー クラスです。 組み込みのフォームの各パッケージの事前に生成した FormAdapters を含めました。 テスト モジュールで、テスト コードを実行するヘルパー メソッドがある、パッケージおよび Test Essentials に対応するフォーム アダプタへの参照を追加します。
 
@@ -160,7 +160,7 @@ ms.locfileid: "6189804"
 
 3. **タスクの記録をインポート** ダイアログで、タスクの記録をインポートするテスト モジュール (ISVTestModule) を選択し、記録している xml ファイルを参照します。 
 
-    [![テスト モジュール](./media/64-249x300.png)](./media/64.png)
+    [![テスト モジュール。](./media/64-249x300.png)](./media/64.png)
 
 4. タスクの記録インポート プロセスは、Visual Studio IDE で表示できる SysTestAdapter および FormAdaptor に基づいてテスト コードを生成します。 このステップの一部として生成されるテスト ソース コードをお客様が変更することを予定していません。
   
@@ -172,16 +172,16 @@ ms.locfileid: "6189804"
 
 6. メニュー オプションから、**テスト** &gt; **Windows** を選択し、**テスト エクスプ ローラー** をクリックします。 テスト エクスプローラー ウィンドウが開いた後、テスト コードからテストを検出し、次のように使用可能なすべてのテストを一覧表示します。
 
-    [![テスト エクスプローラー](./media/67-1024x658.png)](./media/67.png)
+    [![テスト エクスプローラー。](./media/67-1024x658.png)](./media/67.png)
 
 7. テストを選択し、**実行** &gt; **選択されている実行** をクリックします。 これにより、ローカルに展開された環境に対してテストが実行されます。 
 
-    [![選択の実行](./media/68-1024x652.png)](./media/68.png)
+    [![選択の実行。](./media/68-1024x652.png)](./media/68.png)
 
 ## <a name="integration-of-the-test-module-with-build-process"></a>ビルド プロセスのあるテスト モジュールの統合
 テスト モジュールがソース管理の一部である場合、ビルド プロセス テンプレートは、名前に **テスト** という単語を含むすべてのテスト モジュールを検出します。 次の図は、Visual Studio Online の一部としてのビルドとテストの実行を示しています。 
 
-[![ビルドおよびテストの実行](./media/69.png)](./media/69.png)
+[![ビルドおよびテストの実行。](./media/69.png)](./media/69.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

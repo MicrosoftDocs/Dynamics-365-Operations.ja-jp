@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2020-06-21
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: a786d6ef6972a98aa6bc465006c4cfccc574f89c
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 4a5ab2341c12ca2ea8fd0669f697f3f3f34a7119
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893538"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350122"
 ---
 # <a name="document-reporting-preview-options"></a>ドキュメント レポートのプレビュー オプション
 
@@ -29,7 +29,7 @@ Finance and Operations アプリは、埋め込み PDF ビューアーでのド�
 ## <a name="overview"></a>概要
 ドキュメントの発行と配分を効率的に行うことは、多くの業務にとって重要なコンポーネントであるだけでなく、日々のビジネス機能にとっても重要です。 ドキュメントは、トランザクションの詳細を把握するために使用されます。また、2 当事者間の合意を表す場合もあります。 見積書から最終的な領収書と顧客明細書が発生する梱包明細プロセスで使用された売上請求書に至るまで、ビジネス ドキュメントはさまざまな形式で使用されます。 ドキュメントのレポート プレビュー オプションを使用すると、ドキュメントに対して適切なアクションをすばやく実行することができます。
 
-![ドキュメントのプレビューアー ユーザー オプション](./media/Document-preview-options-toolbar.png)
+![ドキュメントのプレビューアー ユーザー オプション。](./media/Document-preview-options-toolbar.png)
 
 ドキュメントすべての相互作用のほぼ半数は、画面プレビューに関連しています。 使用可能なツールバー オプションは、サポートされているすべてのデバイスに対応しており、Finance and Operations アプリケーションによって表示されるドキュメントをエクスポートおよび印刷するためのシンプルで直観的なソリューションを提供します。
 
@@ -41,7 +41,7 @@ Finance and Operations アプリは、埋め込み PDF ビューアーでのド�
 
 ツールバー オプションを使用して、ネットワーク プリンターを選択し、印刷設定を確立します。
 
-![出力先設定へのアクセス](./media/Document-preview-network-print-options.png)
+![出力先設定にアクセスします。](./media/Document-preview-network-print-options.png)
 
 ## <a name="access-preview-options"></a>プレビュー オプションへのアクセス
 機能管理領域を使用して、ドキュメント プレビュー オプションにアクセスします。 次の 2 つの追加機能があります。

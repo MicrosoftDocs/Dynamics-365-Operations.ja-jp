@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2093d07bd29648dcb288a9bd7c0786afd267e418
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 49b968b6ad7bd318dc386e53028ee80e604e5e99
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188101"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350090"
 ---
 # <a name="simple-list-and-details-form-pattern"></a>簡易リストおよび簡易詳細のフォーム パターン
 
@@ -42,7 +42,7 @@ ms.locfileid: "6188101"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![簡易リストおよび詳細のワイヤーフレーム](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
+[![簡易リストおよび詳細のワイヤーフレーム。](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -123,19 +123,19 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 フォーム: **PaymTerm** 
 
-[![簡易リストおよび簡易詳細 – リスト グリッドの例](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
+[![簡易リストおよび簡易詳細 – リスト グリッドの例。](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
 
 ### <a name="simple-list-and-details--tabular-grid"></a>簡易リストと詳細 – 表形式のグリッド
 
 フォーム: **ExchangeRate** 
 
-[![簡易リストおよび簡易詳細 - 表形式のグリッドの例](./media/sldGridExample.png)](./media/sldGridExample.png)
+[![簡易リストおよび簡易詳細 - 表形式のグリッドの例。](./media/sldGridExample.png)](./media/sldGridExample.png)
 
 ### <a name="simple-list-and-details--tree"></a>簡易リストと詳細 – ツリー
 
 フォーム : **CaseCategorySetup** 
 
-[![簡易リストおよび簡易詳細 – 表形式のグリッドの例](./media/sldTreeExample.png)](./media/sldTreeExample.png)
+[![簡易リストおよび簡易詳細 – 表形式のグリッドの例。](./media/sldTreeExample.png)](./media/sldTreeExample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -158,7 +158,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![AX 2012 の例](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
+[![AX 2012 例。](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

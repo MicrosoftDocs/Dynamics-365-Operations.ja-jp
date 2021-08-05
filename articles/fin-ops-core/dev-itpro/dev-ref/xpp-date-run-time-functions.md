@@ -3,20 +3,18 @@ title: X++ 日付ランタイム関数
 description: このトピックでは、日付ランタイム関数について説明します。
 author: RobinARH
 ms.date: 11/03/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31341
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24f19436632e1c274b25cf4fa64d9738c80fc687
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 19937cc75fec5148cb3158ebc94a320f3a5e5f3b
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187954"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661486"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 

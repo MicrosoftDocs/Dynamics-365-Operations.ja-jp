@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 5616488eeaaf8d7c7eca971a48142ce1814bf4c0
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4ba7c66f9fb567d32c7ce209a63b639e848fe1a8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193658"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346740"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -84,13 +84,13 @@ iOS で Xamarin をインストールに関する詳しい手順については�
   1.  Retail SDK フォルダーで、SampleExtensions\HybridApp\iOS\solution を開きます。
       Mac に接続して Visual Studio でアプリケーションを構築したら、iOS デバイスの種類を選択し、選択したデバイス上にアプリケーションを展開します。
       
-       ![展開用 POS iOS アプリ VS 設定](./media/iOSSetting.png)
+       ![展開用 POS iOS アプリ VS 設定。](./media/iOSSetting.png)
       
   2.  エミュレーターを使用して、**設定 > RetailMPOS** に移動します。 Commerce Scale Unit URL を入力します。
       
-       ![POS iOS アプリ設定](./media/iOSApp.png)
+       ![POS iOS アプリ設定。](./media/iOSApp.png)
       
-       ![RS URL の POS iOS アプリ設定](./media/iOSRSURL.png)
+       ![RS URL の POS iOS アプリ設定。](./media/iOSRSURL.png)
       
   3.  MPOS アプリを起動します。 ログインして、デバイスをアクティブにすることができます。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 56c55338a2cf97ae367f4bd75472f14931aa7815
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: bd9c29a78c0b650b31b7c2c32413ef0e415b24b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866252"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355272"
 ---
 # <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 
@@ -36,7 +36,7 @@ X++ では、ファクトリはリフレクションを使用して、次のタ�
 
 次の図は、一般的な装飾階層を示しています。
 
-![各サブクラスが属性で装飾されている、3 つのサブクラスを持つクラス階層](media/hierarchy.png)
+![各サブクラスが属性で装飾されている、3 つのサブクラスを持つクラス階層。](media/hierarchy.png)
 
 X++ では、2 つの拡張フレームワークは同じ目的で機能します。 ファクトリ メソッドの実装担当者は、使用する拡張フレームワークを決定します。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e05868618113c79a00c07fb4fc36aab1fe58b236
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: bf7b5accfa487594800515e1ee3bd8c1fe83e776
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111676"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347227"
 ---
 # <a name="dimension-entry-control-subpattern"></a>分析コード エントリ コントロールのサブパターン
 
@@ -33,7 +33,7 @@ ms.locfileid: "6111676"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-![分析コード エントリ コントロールのサブパターンのワイヤーフレーム](media/decwireframe.png)
+![分析コード エントリ コントロールのサブパターンのワイヤーフレーム。](media/decwireframe.png)
 
 ## <a name="model"></a>モデル
 
@@ -55,7 +55,7 @@ TabPage | Group *TopFieldGroup (グループ) \[オプション\]* – **注:** 
 
 フォーム: **CustTable (TabFinancialDimensions)**
 
-![TabFinancialDimensions を使用した CustTable の例](media/decexample.png)
+![TabFinancialDimensions を使用した CustTable の例。](media/decexample.png)
 
 ## <a name="appendix"></a>付録
 

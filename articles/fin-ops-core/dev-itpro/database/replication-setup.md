@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 1bf830496923bf776e74a8e431a36f2be2249824
-ms.sourcegitcommit: cf8d87ea9333ae2af7db5887771df33b059cf34a
+ms.openlocfilehash: eccbd553702e128f8c7c8fff6177d3a81dc5c5a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5979819"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347858"
 ---
 # <a name="upgrade-from-ax-2012---sql-transactional-replication"></a>AX 2012 からのアップグレード - SQL トランザクション レプリケーション 
 
@@ -140,7 +140,7 @@ RECONFIGURE WITH OVERRIDE
 
 レプリケーション設定時に、ソース データベースに次のパブリケーションが作成されます。
 
-![レプリケーション設定時に、ソース データベースに作成されるパブリケーション](media/Replication.png)
+![レプリケーション設定時に、ソース データベースに作成されるパブリケーション。](media/Replication.png)
 
 ## <a name="find-the-replication-status-and-get-an-exception"></a>レプリケーション ステータスの検索と例外の取得
 
@@ -162,27 +162,27 @@ SQL Server Management Studio を使用してレプリケーション ステー�
 
 - レプリケーション機能が使用可能でサーバーにインストールされているかどうかを判断するには、オブジェクト エクスプローラーのレプリケーション フォルダーを表示する必要があります。
    
-   ![レプリケーション フォルダー](media/Replication1.png)
+   ![レプリケーション フォルダー。](media/Replication1.png)
 
 - **Replication_03_PublisherTables.ps1** スクリプトを実行した後、レプリケーション フォルダーの下に構成済みのパブリッシャーを表示する必要があります。
     
-    ![レプリケーション フォルダーの下のパブリッシャーを表示する](media/Replication2.png)
+    ![レプリケーション フォルダーの下のパブリッシャーを表示します。](media/Replication2.png)
 
 - レプリケーション ステータスを確認するには、**レプリケーション** フォルダーを右クリックし、**レプリケーション モニターの起動** を選択します。
    
-   ![メニューのレプリケーション モニターの起動を選択する](media/Replication3.png)
+   ![メニューのレプリケーション モニターの起動を選択します。](media/Replication3.png)
 
 - **レプリケーション モニター** ウィンドウでは、レプリケーション用に作成されたすべてのパブリッシャーを表示できます。
     
-    ![レプリケーション用に作成されたすべてのパブリッシャー](media/Replication4.png)
+    ![レプリケーション用に作成されたすべてのパブリッシャー。](media/Replication4.png)
 
 - **スナップショット** タブを選択すると、スナップショットのステータスが表示されます。
   
-  ![スナップショット タブを選択して、スナップショットのステータスを表示する](media/Replication5.png)
+  ![スナップショット タブを選択すると、スナップショットのステータスが表示されます。](media/Replication5.png)
 
 - 詳細ログ/トランザクションを表示するには、品目をダブルクリックします。
    
-   ![詳細ログ/トランザクションを表示するには、品目をダブルクリックする](media/Replication6.png)
+   ![詳細ログ/トランザクションを表示するには、品目をダブルクリックします。](media/Replication6.png)
 
 - ターゲットへのデータ レプリケーションを表示するには、**すべてのサブスクリプション** タブを選択し、品目のサブスクリプションをダブルクリックします。 
 

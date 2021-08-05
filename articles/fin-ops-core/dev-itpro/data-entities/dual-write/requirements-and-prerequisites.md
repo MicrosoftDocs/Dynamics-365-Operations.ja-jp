@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c91c950c215342f5737e3667eac52b154b1dfdc
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: f5df7f10bc5085d87012f19d5e5c268d56ff1582
+ms.sourcegitcommit: d188d6621db8a92b59bf2b4102d573b161ad770f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6016970"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6649559"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -40,6 +40,7 @@ ms.locfileid: "6016970"
    + インド
    + 日本
    + 南アフリカ
+   + アラブ首長国連邦
    + 英国
    + 米国
 
@@ -48,9 +49,9 @@ ms.locfileid: "6016970"
 
 二重書き込みを有効にする前に、次の手順に従って、最小システム要件を満たしていることを確認し、相互に接続する必要があるアプリへのアクセスを許可します。 二重書き込み正常性チェックは、Finance and Operations アプリ環境と Dataverse 環境をリンクする二重書き込みウィザードを完了すると、前提条件を検証します。
 
-次の図に示すように、環境の設定時に **Dynamics 365 アプリ** を **はい** に設定する必要があります。 または、Dataverse に付属している Dynamics 365 環境で、すでに **Dynamics 365 アプリを有効化する** が **はい** に設定されているモデル駆動型アプリを選択することもできます。
+次の図に示すように、環境の設定時に **Dynamics 365 アプリ** を **はい** に設定する必要があります。 または、Dataverse に付属し、**Dynamics 365 アプリを有効化する** が **はい** に設定されている Customer Engagement アプリを選択することもできます。
 
-:::image type="content" source="media/add_database_expanded2.png" alt-text="アプリ切り替えの有効化":::
+:::image type="content" source="media/add_database_expanded2.png" alt-text="アプリの切り替えを有効にします。":::
 
 1. プラットフォーム更新プログラムとアプリのバージョンを検証します。
 
@@ -71,7 +72,7 @@ ms.locfileid: "6016970"
     3. **二重書き込みコア** ソリューションを選択します。
     4. プロンプトに従ってソリューションをインポートします。
 
-    ![二重書き込みコア ソリューションのインストール](media/dual-write-core-solution.png)
+    ![二重書き込みコア ソリューションのインストール。](media/dual-write-core-solution.png)
 
     **関連する正常性チェックの結果:**
 
@@ -88,8 +89,8 @@ ms.locfileid: "6016970"
 
     完了したら、次の手順に従ってテーブルの一覧を更新します:
 
-    1. **ワークスペース \> データ管理** に移動し、**データ テーブル** タイルを選択して、テーブル リストが入力されていることを確認します。
-    2. **ワークスペース \> データ管理** に移動して、**フレームワーク パラメーター** タイルを選択します。 次に、**エンティティ** タブ (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`) で、**テーブル リストの更新** を選択します。
+    1. **ワークスペース \> データ管理** に移動し、**データ エンティティ** タイルを選択して、エンティティ リストが入力されていることを確認します。
+    2. **ワークスペース \> データ管理** に移動して、**フレームワーク パラメーター** タイルを選択します。 次に、**エンティティ設定** タブ (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`) で、**エンティティ リストの更新** を選択します。
 
     **関連する正常性チェックの結果:**<br>
     *Dataverse は Finance and Operations アプリに接続できます*<br>
@@ -99,24 +100,24 @@ ms.locfileid: "6016970"
 
     1. Power Apps で、右上隅にある **設定** ボタン (ギヤ記号) を選択し、**詳細設定 \> セキュリティ** に移動して、**ユーザー** を選択します。
 
-        ![ユーザー](media/selecting-users.png)
+        ![ユーザー。](media/selecting-users.png)
 
     2. ドロップダウン メニューを使用して、ビューを **有効なユーザー** から **アプリケーション ユーザー** に変更します。
 
-        ![アプリケーション ユーザー ビューへの切り替え](media/selecting-application-users.png)
+        ![アプリケーション ユーザー ビューへの切り替え。](media/selecting-application-users.png)
 
     3. 新しいユーザーを作成し、**ユーザー** メニューで **アプリケーション ユーザー** を選択します。
 
-        ![アプリケーション ユーザーへの切り替え](media/create-new-user.png)
+        ![アプリケーション ユーザーへの切り替え。](media/create-new-user.png)
 
     4. **アプリケーション ID** 列に、**00000015-0000-0000-c000-000000000000** と入力します。 このアプリケーション ID は Finance and Operations アプリ用で、アプリを Dataverse に接続できるようにします。 完了したら、プロンプトに従って他の列に入力し、ユーザー アカウントを保存します。
 
-        ![アプリケーション ID の入力](media/add-application-id.png)
+        ![アプリケーション ID の入力。](media/add-application-id.png)
 
     5. 基本電子メール アドレスを入力します。
     6. **ロールの管理** を選択し、**ユーザー ロールの管理** ダイアログ ボックスで **システム管理者** チェック ボックスを選択して、選択したアプリケーション ユーザーにシステム管理者権限を付与します。
 
-        ![システム管理者ロールの割り当て](media/manage-user-roles.png)
+        ![システム管理者ロールの割り当て。](media/manage-user-roles.png)
 
     7. **Dynamics 365 \> 設定 \> セキュリティ** に移動し、**チーム** を選択して、**すべての所有者チーム** にビューを変更します。
     8. **ルートの事業単位の既定のチーム** を選択し、**ロールの管理** を選択して、**チーム ロールの管理** ダイアログ ボックスで事前にコンフィギュレーションされた **セキュリティ ロール** を選択し、二重書き込みを通して統合された各テーブルの **ユーザー** スコープに対して **読み取り** 権限を付与します。 
@@ -130,7 +131,7 @@ ms.locfileid: "6016970"
 
     9. アプリケーションID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b** について前の 5 つの手順を繰り返します。
 
-        ![アプリケーション ID の割り当て](media/assign-application-id.png)
+        ![アプリケーション ID の割り当て。](media/assign-application-id.png)
 
     **関連する正常性チェックの結果:**<br>
     *Finance and Operations アプリは Dataverse に接続できます*<br>
@@ -153,7 +154,7 @@ ms.locfileid: "6016970"
 
     2. ステップを有効にするには、ステップを選択したまま (または右クリック) にし、**有効** を選択します。 **有効** オプションがなく、**無効** オプションのみの場合、ステップは既に有効になっており、変更する必要はありません。
 
-        ![Plugin Registration Tool の使用](media/plugin-registration-tool.png)
+        ![Plugin Registration Tool の使用。](media/plugin-registration-tool.png)
 
     > [!NOTE]
     > 二重書き込みプラグイン アセンブリが見つからない場合は、二重書き込みコア ソリューションの最新バージョンをインポートします。

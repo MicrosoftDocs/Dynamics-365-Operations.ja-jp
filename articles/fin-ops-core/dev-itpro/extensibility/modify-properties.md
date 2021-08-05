@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 825563ebf7d1ea7f5f389d3533687c801ed0c7d6
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 17deb284177541fd0c9abb1955e1fdde07c03e62
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865874"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344852"
 ---
 # <a name="modify-table-properties-through-extension"></a>拡張機能を使用して、テーブルのプロパティを変更する
 
@@ -27,7 +27,7 @@ ms.locfileid: "5865874"
 
 テーブルのプロパティを変更するには、そのテーブルの拡張を作成する必要があります。 アプリケーション エクスプローラーで、テーブルを右クリックしてから **拡張機能を作成** を選択します。 次の図に示すとおり、新しいテーブル拡張機能は、選択したプロジェクトに作成されます。
 
-![テーブル拡張子の作成](media/ModifyPropertiesOnTable.jpg) 
+![テーブル拡張子を作成します。](media/ModifyPropertiesOnTable.jpg) 
 
 プロパティ シートで、次のプロパティを変更することができるようになりました。
 

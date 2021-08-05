@@ -3,21 +3,16 @@ title: 参照モジュール
 description: ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 72d98f4505c8f71eb507cceacbd9113591fed877
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 750ff7e638648f83aeaff2ca6af790bcd8e9cca4
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749245"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661572"
 ---
 # <a name="lookup-module"></a>参照モジュール
 
@@ -134,7 +129,7 @@ ms.locfileid: "5749245"
 | [注文](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#order) |注文: 番号 (オプション)  <br>|コントロールがページに表示される順序を示す番号。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) から継承 <br> |
 | [ReferenceAppId](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#referenceappid) |ReferenceAppId: 文字列 (オプション)  <br>|  |
 | [ShowLookupPage](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#showlookuppage) |ShowLookupPage: ブール値 (省略可)  <br>|  |
-| [[タイプ](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
+| [タイプ](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
 | [ValueField](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#valuefield) |ValueField: 文字列 (オプション)  <br>|ページ上のコントロールの名前。その値はデータをコミットする際に使用する必要があります。 通常、この値は固有キーです。<br>  |
 | [ValueKey](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#valuekey) |ValueKey: 文字列 (オプション)  <br>|  |
 

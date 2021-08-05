@@ -3,21 +3,16 @@ title: InputControlMetadata タイプ
 description: 入力コントロールのメタデータ。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: c6ef58e4553e258b6861b7b43bb57a80f0ed41fc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 030ce7a90e258d6cd7450f4f099c54aad787b6d2
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744203"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661364"
 ---
 # <a name="inputcontrolmetadata-type"></a>InputControlMetadata タイプ
 
@@ -46,7 +41,7 @@ ms.locfileid: "5744203"
 * [名前](view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#name)
 * [NumSequence](view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#numsequence)
 * [注文](view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#order)
-* [[タイプ](view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#type)]
+* [タイプ](view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#type)
 
 ## <a name="properties"></a>プロパティ
 

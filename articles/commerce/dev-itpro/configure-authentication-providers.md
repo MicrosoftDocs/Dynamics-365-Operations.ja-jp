@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4477499686bf37610e1c44e9db5e11e4d61eb3f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8f470ece92da730e07cb2af3a04f6a02fda4ba61
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791217"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354661"
 ---
 # <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 
@@ -29,7 +29,7 @@ ms.locfileid: "5791217"
 
 E コマース プラットフォームは、認証のためのメカニズムとして業界標準の [OpenID Connect](https://openid.net/connect/) を使用します。 この記事では、オンライン ストアで使用される OpenID プロバイダーを登録するために使用するページについて説明します。 Commerce Scale Unit は、認証された顧客をサポートするメカニズムとして OpenID Connect を使用します。 OpenID 接続は、シンプルで発展した ID プロバイダーとして、OAuth 2.0 に加えて広く受け入れられている標準です。 Commerce Scale Unit は、Microsoft Azure アクセス制御サービスを通じてすぐに使用できる OpenID プロバイダー、およびその他の個別に使用可能なプロバイダーの両方と統合することができます。 さらに、OpenID 接続をサポートするカスタム プロバイダーを統合および登録できます。 次の図は、Commerce Scale Unit と電子商取引のフロント エンド サーバーの間で発生し、後続の呼び出しで認証トークンを渡すステップ バイ ステップのハンドシェイクを示しています。 
 
-[![OpenId](./media/openid-1024x540.png)](./media/openid.png) 
+[![OpenId。](./media/openid-1024x540.png)](./media/openid.png) 
 
 Commerce Scale Unit で使用できるようにするため、OpenID プロバイダーを登録するプロセスのチュートリアルを次に示します。
 

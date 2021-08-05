@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b57ec42365074f30c4627e088ffa31b7ebc43e6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1daab6e2c5a702c47321833181d61f4d6113fa76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744227"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344870"
 ---
 # <a name="update-the-document-routing-agent"></a>ドキュメント回覧エージェントの更新
 
@@ -39,16 +39,16 @@ IT 管理者は、DRA をホストするために使用される各ドメイン 
 ## <a name="get-started"></a>はじめに
 DRA を Microsoft Windows サービスとして引き続き実行するには、サービスを実行するために使用されるドメイン アカウントのユーザー名とパスワードの両方が必要です。 この情報は、更新プログラム完了後に使用可能になっている必要があります。 有効なサービス アカウントの情報を検索するには、Microsoft 管理コンソール (MMC) サービス スナップインを起動し、一覧から **Microsoft Dynamics 365 ドキュメント回覧サービス** を選択します。
 
-![マネージャー スナップイン](media/Services_dialog.png)
+![マネージャー スナップイン。](media/Services_dialog.png)
 
 ## <a name="uninstall-an-existing-document-routing-agent"></a>既存のドキュメント回覧エージェントのアンインストール
 **プログラムと機能** を開き、**Microsoft Dynamics 365 for Finance and Operations: ドキュメント回覧** を検索し、削除します。
 
-![プログラム ウィンドウのアンインストールまたは変更](media/Programs_and_Features_dialog.png)
+![プログラム ウィンドウをアンインストールまたは変更します。](media/Programs_and_Features_dialog.png)
 
 アンインストールのプロセス中に、Microsoft Dynamics 365 ドキュメント回覧サービス アプリケーションを終了するメッセージが表示された場合は、**セットアップが完了したら、アプリケーションを自動的に閉じて再起動します。** を選択します。
 
-![アプリケーションの終了を促すダイアログ ボックス](media/Uninstall_DRA_services.png)
+![アプリケーションの終了を促すダイアログ ボックス。](media/Uninstall_DRA_services.png)
 
 ## <a name="install-the-latest-document-routing-agent"></a>最新のドキュメント回覧エージェントのインストール
 定期売買で使用可能な最新の DRA をインストールする方法の詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) を参照してください。

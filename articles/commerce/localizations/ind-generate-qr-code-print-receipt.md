@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fd938f76a31c329aa4aa2f1000f9a59624ec7d1b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6e7794e944ce2f10ae32f7bd9259899c3dae1858
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021867"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346730"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts"></a>QR コードの生成とレシートへの印刷
 
@@ -44,7 +44,7 @@ Commerce バージョン 10.0.17 以降では、Retail Hardware Station を使�
     4. **テキスト ID** フィールドに、新しい言語テキストの識別子を入力します。
     5. **テキスト** フィールドに、新しい言語テキスト (たとえば、**税金請求書 QR コード**) を入力します。
 
-       ![QR コード レシート フィールドの言語テキストを作成する](media/language-text-page.png)
+       ![QR コード レシート フィールドの言語テキストの作成。](media/language-text-page.png)
 
 2.  QR コードの新しいカスタム レシート フィールドを作成します。
 
@@ -54,7 +54,7 @@ Commerce バージョン 10.0.17 以降では、Retail Hardware Station を使�
     4. **タイプ** フィールドで、**レシート** を選択します。
     5. **キャプション テキスト ID** フィールドに、以前に作成した言語テキストの **テキスト ID** 値を入力します。
 
-        ![QR コードのレシート カスタム フィールドを作成する](media/custom-fields.png)
+        ![QR コードのレシート カスタム フィールドの作成。](media/custom-fields.png)
 
 3.  QR コードのカスタム フィールドをレシートに追加します。
 

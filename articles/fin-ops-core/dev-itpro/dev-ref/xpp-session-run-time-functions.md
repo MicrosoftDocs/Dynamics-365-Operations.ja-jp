@@ -3,20 +3,18 @@ title: X++ セッション ランタイム関数
 description: このトピックでは、セッション ランタイム関数について説明します。
 author: RobinARH
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31421
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc1e6cecc28f4c0c0876ee5573dae28d18f8b765
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 11fe4c184659b86572b266f7ad3f063a6e7b41c9
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188426"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661346"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 

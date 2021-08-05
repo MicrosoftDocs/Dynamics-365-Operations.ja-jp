@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 1a08c00b0d7dd649350e6cb149067a0f97e60dbb
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d41ea0b5a88d00541b5633a7d2c2997c50b3281f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866220"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360328"
 ---
 # <a name="add-fields-to-tables-through-extension"></a>拡張機能を使用してテーブルにフィールドを追加
 
@@ -27,7 +27,7 @@ ms.locfileid: "5866220"
 
 既存のテーブルに新しいフィールドを追加するには、まずテーブル拡張を作成する必要があります。 たとえば、リリース済製品の半径を持つフィールドを追加するには、次の図に示すように、モデル内で InventTable テーブルの拡張機能を作成する必要があります。
 
-![拡張子の作成](media/TableNewField01.jpg) 
+![拡張子を作成します。](media/TableNewField01.jpg) 
 
 モデル内でフィールドをテーブルに追加するのと同様に、フィールドを拡張機能に追加することができるようになりました。 2 つの方法を使用することができます。
 
@@ -36,15 +36,15 @@ ms.locfileid: "5866220"
 
 完了したら、新しいフィールドのプロパティを変更できます。 次の図では、**ラベル** プロパティのみが変更されました。
 
-![新しいフィールドのプロパティの変更](media/TableNewField02.jpg)
+![新しいフィールドのプロパティを変更します。](media/TableNewField02.jpg)
 
 必要に応じて、新しいフィールドを既存のフィールド グループのいずれか、または作成する新しいフィールド グループに追加することができるようになりました。 次の図では、**半径** フィールドが **PhysicalDimensions** フィールド グループに追加されました。
 
-![フィールド グループへの新しいフィールドの追加](media/TableNewField03.jpg)
+![フィールド グループに新しいフィールドを追加します。](media/TableNewField03.jpg)
 
 コンパイルとデータベースの同期の後、ユーザー インターフェイスで新しいフィールドを表示および編集することができます。
 
-![ユーザー インターフェイスの新しいフィールド](media/TableNewField04.jpg)
+![ユーザー インターフェイスの新しいフィールド。](media/TableNewField04.jpg)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

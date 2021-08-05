@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb6a6a54580f2150071f356f0491b040cb3084fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2b0e418eca10c800d25f801f28611d2dd6b427d2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748761"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354335"
 ---
 # <a name="form-styles-and-patterns"></a>フォームのスタイルとパターン
 
@@ -109,7 +109,7 @@ Microsoft Dynamics AX 2012 では、いくつかのフォームのスタイル�
 
 開いているフォームでさらにパターン作業を行う必要があるかどうかを確認するには、デザイナーでフォームを右クリックし、**アドイン**&gt;**フォーム統計情報** を選択します。 **Pattern = Unspecified** カウントが 0 (ゼロ) を超える場合、フォームには適用されるパターンに必要なコンテナーがまだ含まれています。 理想的には、すべてのフォームには **パターン = カスタム** のカウントが 0 (ゼロ)、**パターン カバレッジ** の値が 100 パーセントである必要があります。 これらの値は、フォームがパターンによって完全にカバーされていることを示します。 
 
-![パターンによって完全にカバーされているフォームを示す値のダイアログ ボックス](media/formstatistics.png)
+![パターンによって完全にカバーされているフォームを示す値のダイアログ ボックス。](media/formstatistics.png)
 
 ### <a name="why-isnt-static-text-allowed-inside-the-fields-and-field-groups-subpattern-isnt-static-text-allowed-in-forms-any-longer-what-do-i-do-with-the-static-text-that-the-fields-and-field-groups-subpattern-doesnt-accept-how-can-i-show-user-help-instead-of-static-text"></a>フィールドおよびフィールド グループのサブパターン内で静的テキストが使用できないのはなぜですか。 今後フォームで静的テキストは許可されませんか。 フィールドおよびフィールド グループのサブパターンが受け入れない静的テキストは、どうすればよいでしょうか。 静的テキストではなく、ユーザー ヘルプを表示する方法はありますか。
 
@@ -139,7 +139,7 @@ Microsoft Dynamics AX 2012 では、いくつかのフォームのスタイル�
 
 グループとコントロールまたは、任意のコントロールがパターンにより許可されていない場合、それらは **パターン情報** パネルで「不一致」と表示されます。 
 
-![一致しないコントロールの例](media/formfaq5.png)
+![一致しないコントロールの例。](media/formfaq5.png)
 
 フィールドとフィールド グループの各サブパターンに、グループが「一致しない」と表示される典型的な理由は 2 つあります。
 

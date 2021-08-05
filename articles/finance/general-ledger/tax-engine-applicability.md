@@ -13,12 +13,12 @@ ms.search.region: India
 ms.author: pacheren
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 155dfd637d64950e86b75375273896aa196dbb7a
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 026274ec331782cdedbb5fee506a82ed2e1e563f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897492"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343800"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
@@ -54,11 +54,11 @@ ms.locfileid: "5897492"
 
 **デザイナー** ボタンをクリックして税 (インドの GST) を開きます。 
 
-![CGST 条件](media/gte-tax-document-applicability-cgst.png)
+![CGST 条件。](media/gte-tax-document-applicability-cgst.png)
 
 CGST、税コンポーネント CGST を選択し、鉛筆アイコンをクリックして、詳細な条件をチェックします。 
 
-![CGST 条件の詳細](media/gte-tax-document-applicability-cgst-condition.png)
+![CGST 条件の詳細。](media/gte-tax-document-applicability-cgst-condition.png)
 
 条件は、実際には、[電子申告](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) 式です。 これは **データ ソース** の左側のフィールドと右側の **関数** で構成されています。 サポートされている機能の一覧については、[電子申告 (ER) のフォーミュラ デザイナー](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md) を参照してください。 
 
@@ -123,7 +123,7 @@ AND(
 ### <a name="lookup-for-static-applicability-rules"></a>静的適用ルールのルックアップ
 **GST** を選択して、**ルックアップ** をクリックします。
 
-![ルックアップの CGST 条件](media/gte-tax-document-applicability-static-lookups.png)
+![ルックアップの CGST 条件。](media/gte-tax-document-applicability-static-lookups.png)
 
 ルックアップは静的適用ルールと動的適用ルールの両方を処理できるので、**ソース タイプ** ドロップダウンリストはこの目的のためにあります。 静的適用ルールには **コンフィギュレーション** を使用します。これは、ルックアップで使用されるデータがコンフィギュレーションから取得されることを意味します。 動的適用ルールには **ユーザー データ** を使用します。これは、ルックアップに使用されるデータがランタイム環境から取得されることを意味します。
 
@@ -161,7 +161,7 @@ OR(
 
 ここでは、CGST レートを決定する方法を確認しましょう。 **CGST > レート** の順に選択し、**ルックアップ** をクリックします。
 
-![CGST、レート、ルックアップの選択](media/gte-tax-document-applicability-dynamic-lookups.png)
+![CGST、レート、ルックアップを選択します。](media/gte-tax-document-applicability-dynamic-lookups.png)
 
 ランタイム データは税率を決定するために必要なので、システムは **ソース タイプ** と **ユーザー データ** の値を隠します。
 
@@ -172,7 +172,7 @@ OR(
 
 **列** をクリックします。 左側に **使用可能な列** がすべてあります。 構造は、参照モデルがないことを除けば、フォーミュラ デザイナーの **データ ソース** と同じです。
 
-![ルックアップ列](media/gte-tax-document-applicability-change-lookups.png)
+![ルックアップ列。](media/gte-tax-document-applicability-change-lookups.png)
 
 **使用可能な列** で **品目 ID** を選択し、商品を一意に決定します。 右矢印アイコンをクリックして、**選択された列** 側に追加します。 HSN が不要な場合は、**選択された列** で **HSN コード** を選択し、左矢印アイコンをクリックして削除できます。 
 

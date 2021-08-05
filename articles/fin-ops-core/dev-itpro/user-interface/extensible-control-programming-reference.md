@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9655b1bf2993a5dee4b82155cf2eed4716bedfef
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 10447ea82a43117fd42f106e0bc65b46e86a0b68
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193119"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354353"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
@@ -33,7 +33,7 @@ ms.locfileid: "6193119"
 このドキュメントには、文書化されている各 API の使用方法を示す小さなコード スニペットが含まれています。 これらの API の多くを活用する完成したコントロールのより完全な例は Github で確認できます。 [Github での拡張可能コントロールの例](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
 
 ## <a name="control-block-diagram"></a>コントロール ブロック図
-この高度な図は、拡張可能なコントロールの主要コンポーネントと、それらが相互にやり取りする方法を示しています。 拡張可能なコントロール ソリューションには、コントロールを実装する 2 つの X++ クラスが含まれます。 ランタイム クラスは、ランタイム データ、プレゼンテーション、コントロールの動作を実装します。 ビルド クラスは、コントロールがフォーム デザイナー、プロパティ ウィンドウ、およびアプリケーション エクスプローラーでどのように表示されるかを定義します。 [![Extensibility アーキテクチャ](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
+この高度な図は、拡張可能なコントロールの主要コンポーネントと、それらが相互にやり取りする方法を示しています。 拡張可能なコントロール ソリューションには、コントロールを実装する 2 つの X++ クラスが含まれます。 ランタイム クラスは、ランタイム データ、プレゼンテーション、コントロールの動作を実装します。 ビルド クラスは、コントロールがフォーム デザイナー、プロパティ ウィンドウ、およびアプリケーション エクスプローラーでどのように表示されるかを定義します。 [![拡張性アーキテクチャ。](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
 
 ## <a name="x"></a>X++
 
@@ -541,7 +541,7 @@ self.elementHovered = function (event) { alert($dyn.format('{0}',$(event.target)
 
 ##### <a name="behavior"></a>動作
 
-渡されたデータに基づいて各子のバインド コンテキストを更新して、子要素の内容を繰り返します。 _ *foreach** バインディングを持つ要素内の子要素_ を ***1 つだけ** 指定します。 この 1 つの要素は、複製され、繰り返される要素です。 バインディングが適用される場合に、その他の追加要素またはコンテンツは削除されます。 要素に表示される順序でバインディング ハンドラーが実行されます。 **foreach** バンディングによりバインディング コンテキストが変わるため、必ず **foreach** バインディングは要素の他のすべてのバインディングより後に配置することをお勧めします。 これにより、先行するバインドは、**foreach** バインドによって作成されたバインド コンテキストの影響を受けないことが保証されます。 パフォーマンスの問題を避けるために、**foreach** 内の observable に意図しない依存関係を生成しないように注意してください。 **foreach** バインドが配列内の監視可能にすでにサブスクライブされている際は、**foreach** の子要素の中から **$dyn.value** を使って配列内の監視可能にアクセスしないでください。 代わりに、**$dyn.peek** を使用してサブスクリプションを作成せずにオブザーバブルの値に一度アクセスします。
+渡されたデータに基づいて各子のバインド コンテキストを更新して、子要素の内容を繰り返します。 *foreach* バインディングを持つ要素内の子要素を **1 つだけ** 指定します。 この 1 つの要素は、複製され、繰り返される要素です。 バインディングが適用される場合に、その他の追加要素またはコンテンツは削除されます。 要素に表示される順序でバインディング ハンドラーが実行されます。 **foreach** バンディングによりバインディング コンテキストが変わるため、必ず **foreach** バインディングは要素の他のすべてのバインディングより後に配置することをお勧めします。 これにより、先行するバインドは、**foreach** バインドによって作成されたバインド コンテキストの影響を受けないことが保証されます。 パフォーマンスの問題を避けるために、**foreach** 内の observable に意図しない依存関係を生成しないように注意してください。 **foreach** バインドが配列内の監視可能にすでにサブスクライブされている際は、**foreach** の子要素の中から **$dyn.value** を使って配列内の監視可能にアクセスしないでください。 代わりに、**$dyn.peek** を使用してサブスクリプションを作成せずにオブザーバブルの値に一度アクセスします。
 
 ##### <a name="arguments"></a>引数
 
@@ -1120,7 +1120,7 @@ console.log($dyn.label("greeting"));
 ## <a name="control-lifecycle-diagrams"></a>制御ライフサイクル図
 
 ### <a name="control-instantiation"></a>インスタンス化の制御
-[![Extensibility プロセス](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+[![拡張性プロセス。](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

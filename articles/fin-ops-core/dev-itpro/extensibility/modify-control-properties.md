@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 01e2de54acb418b44d01f7a3e345ee5081aa31a3
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: afeb27969390c22d0132d07bd9a769ab0361a5f4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866256"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349138"
 ---
 # <a name="modify-the-properties-of-form-controls-through-extension"></a>拡張機能を使用して、フォーム コントロールのプロパティを変更する
 
@@ -40,27 +40,27 @@ ms.locfileid: "5866256"
 2. フォーム デザイン ツリーを通じて、**TabPageInventory** タブ ページ (**デザイン** &gt; **タブ** &gt; **詳細** &gt; **GroupDetails** &gt; **TabHeader** &gt; **TabPageInventory**) に移動し、デザイナーでそれを選択して、**プロパティ** シートを開きます。
 3. **キャプション** プロパティを目的の値に更新します。
 
-    ![キャプション プロパティ](media/ModifyControlProperties01.jpg)
+    ![キャプション プロパティ。](media/ModifyControlProperties01.jpg)
 
 4. タブ ページを右クリックし、**新規** を選択します。 新しいコントロールで必要なプロパティを設定します。 また、すぐそばのコンテナでコントロールを上下に移動して、適切に配置することができます。
 
     > [!NOTE]
     > または、新しいコントロールに表示するサブノードを右クリックし、**Insert sibling** を選択し、追加するコントロールのタイプを選択します。
 
-    ![兄弟コマンドの挿入](media/ModifyControlProperties02.jpg)
+    ![兄弟コマンドを挿入します。](media/ModifyControlProperties02.jpg)
 
     もちろん、対応するデータ ソースからバインドされたコントロールをドラッグすることもできます。
 
 5. **PdsCatchWeight** グループ コントロールをオンにし、**有効** プロパティを **いいえ** に変更します。
 
-    ![PdsCatchWeight グループ コントロールのプロパティを有効化](media/ModifyControlProperties03.jpg)
+    ![PdsCatchWeight グループ コントロールのプロパティを有効にします。](media/ModifyControlProperties03.jpg)
 
     > [!NOTE]
     > **有効** および **表示** のようにメタデータのプロパティを変更した場合、実行時にその状態のままでコントロールの保証はありません。 フォームが読み込まれた後、そのフォームのビジネス ロジックは、コードを使用してコントロールの状態を変更できます。
 
 完了したら、ページには追加のフィールドが含まれ、CW 情報を編集することはできず、クイック タブ全体のキャプションが異なります。 
 
-![変更されたクイック タブ](media/ModifyControlProperties04.jpg)
+![変更されたクイック タブ。](media/ModifyControlProperties04.jpg)
 
 > [!NOTE]
 > コントロールで **AutoDeclaration** プロパティを変更することはできません。 ただし、コードから名前でコントロールにアクセスすることはできます。 

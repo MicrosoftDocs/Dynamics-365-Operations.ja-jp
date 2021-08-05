@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 24411
+ms.custom: intro-internal
 ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 611059f24e6b1b1bf75c0a02385a7cf3650234cb
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 5312b4fb8acd58aabf1692727208200d99a0dd1e
+ms.sourcegitcommit: c1aaa0475304d239f8ad5150fdb150cf74e13c95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186336"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6511659"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -138,6 +138,7 @@ ms.locfileid: "6186336"
 - [Retail ソフトウェア開発キット (SDK) のサンプル](retail-sdk/retail-sdk-samples.md)
 - [GitHub および NuGet からサンプルとパッケージのダウンロード](retail-sdk/sdk-github.md)
 - [チャネル データベース拡張機能](channel-db-extensions.md)
+- [Cloud Scale Unit 拡張機能の削除](retail-sdk/remove-csu-package.md)
 - [拡張機能を介したカスタム Commerce Data Exchange 同期の有効化](cdx-extensibility.md)
 - [注文属性の定義および設定](order-attributes.md)
 - [顧客属性](customer-attributes.md)

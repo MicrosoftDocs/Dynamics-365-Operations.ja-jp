@@ -8,17 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 10031
+ms.custom:
+- "10031"
+- intro-internal
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29c64d6b6209783a6d70035d4bd855b15d03c153
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 3d87a60f3d0b0bc08f4b8ead44d1bd0ca5844eaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923554"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360322"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -57,7 +59,7 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 
 次の図は、顧客からアプリケーション データベースへのデータの流れ、およびお客様と Microsoft がそのプロセスで果たすロールを示しています。 それぞれのアプリケーションで、コントローラーはテナント管理者、Microsoft はプロセッサです。 このシナリオでは、データを保管、取得、並べ替えなどを行うことでデータを処理するプロセッサ (Microsoft) にデータが送信されます。
 
-![顧客からのデータ フロー](../media/gdpr-customers-controller-processor.jpg)
+![顧客からのデータ フロー。](../media/gdpr-customers-controller-processor.jpg)
 
 データ主体が DSR の送信を選択すると、そのデータ主体はコントローラーに要求を出します。 データ主体は、ビジネスで収集したデータに対する Microsoft の権限を行使することはありません。 プロセッサとして、Microsoft は機能を提供することによって、またはアクションが可能であることを確認することによってコントローラを支援します。 つまり、コントローラーは DSR 要求の受け入れて応答し、プロセッサはコンプライアンス要求を扱ったり有効化したりします。 以下のテーブルは、関連するいくつかのロールと職責の概要を示しています。
 
@@ -252,7 +254,7 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 
 Finance and Operations には共通の [グローバル アドレス帳](../../fin-ops/organization-administration/overview-global-address-book.md) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
 
-![グローバル アドレス帳のデータ モデル](../media/gdpr-address-data-model.jpg)
+![グローバル アドレス帳のデータ モデル。](../media/gdpr-address-data-model.jpg)
 
 ### <a name="each-person-is-a-type-of-party"></a>各担当者は、関係者のタイプです。
 
@@ -333,7 +335,7 @@ Finance and Operations アプリを使用する場合は、複数のデータ �
 
 <Link to form that prints the full inventory>
 
-![プロパティに AssetClassification フィールドを示しているソリューション エクスプローラー](../media/gdpr-asset-classification-detail-invent-section.jpg)
+![プロパティの AssetClassification フィールドを示すソリューション エクスプローラー。](../media/gdpr-asset-classification-detail-invent-section.jpg)
 
 ## <a name="age-gating-preventing-minors-from-using-the-service"></a>年齢ゲーティング: 未成年がサービスを利用できないようにします。
 
@@ -359,15 +361,15 @@ GDPR は、未成年者に保護者の同意がない場合、システムがそ
 
 **情報** ボックスに、Microsoft のユーザー権利のドキュメントおよび Microsoft のプライバシーと Cookie のドキュメントへのリンクが表示されます。 また、組織のプライバシーに関する声明にリンクを追加することができます。
 
-![資産を示すソリューション エクスプローラー](../media/gdpr-privacy-01-w-note.jpg)
+![資産を示すソリューション エクスプローラー。](../media/gdpr-privacy-01-w-note.jpg)
 
 **システム パラメーター** ページで、システム管理者は、組織のユーザー権限およびプライバシーに関する通知へのリンクを追加できます。 通知タイプのいずれかまたは両方に、有効な URL を追加することができます。
 
-![組織のプライバシーに関する声明にリンクを追加するシステム パラメーター](../media/gdpr-privacy-02.jpg)
+![組織のプライバシーに関する声明にリンクを追加するシステム パラメーター。](../media/gdpr-privacy-02.jpg)
 
 システム パラメーターへの入力が完了したら、次の図に示されているように、組織のプライバシー通知へのリンクが **情報** ボックスに表示されます。
 
-![組織のプライバシーに関する通知へのリンクがある変更詳細ボックス](../media/gdpr-privacy-03-w-note.jpg)
+![組織のプライバシーに関する通知へのリンクがある変更詳細ボックス。](../media/gdpr-privacy-03-w-note.jpg)
 
 ## <a name="clarification-of-the-scope-of-this-content"></a>このコンテンツのスコープの明確化
 

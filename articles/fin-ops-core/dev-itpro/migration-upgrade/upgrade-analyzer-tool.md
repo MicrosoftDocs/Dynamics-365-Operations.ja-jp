@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c066f4a30c69dcb105c7806113f4a6e38e6e46be
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e9f1fb7e62b8a5ad8f4973f1e1edaf2c303e3b9f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743909"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347848"
 ---
 # <a name="upgrade-from-ax-2012---plan-by-using-the-upgrade-analyzer-tool"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 
@@ -37,7 +37,7 @@ LCS の Microsoft Power BI レポートでは、システム診断サービス�
 
 次の図は、アップグレード アナライザーを使用する手順の概要を示しています。
 
-![アナライザー プロセスのアップグレード](media/upgradeAnalyzerProcess.png)
+![アナライザー プロセスのアップグレード。](media/upgradeAnalyzerProcess.png)
 
 AX 2012 環境内のシステム診断サービスを既に使用している場合は、既存のコンピューターとは異なるコンピューターで、サービスの新しいインスタンスをコンフィギュレーションする必要があります。
 

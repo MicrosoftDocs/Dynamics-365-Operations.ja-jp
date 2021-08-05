@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 291170f4581e40d294394644e871cdbfda57ea99
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9b0a2a9861da278a28df1f45ded69b7d8c51d70b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751354"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359739"
 ---
 # <a name="ax-2009-upgrade---use-the-data-migration-tool-to-migrate-from-dynamics-ax-2009-to-finance-and-operations"></a>AX 2009 アップグレード - データ移行ツールを使用して、Dynamics AX 2009から Finance and Operations へ移行します。 
 
@@ -31,13 +31,13 @@ AX 2009 から Finance and Operations へデータを移行するため Microsof
 ## <a name="architecture"></a>アーキテクチャ
 次の図では、DMT のアーキテクチャ、また、ソース システム (AX 2009) のデータの処理方法とターゲット システム (Finance and Operations) への移動方法について説明します。
 
-![データ移行の技術フロー](media/dmt_technical_flow.png)
+![データ移行の技術フロー。](media/dmt_technical_flow.png)
 
 ## <a name="data-migration-process"></a>データ移行プロセス
 
 次の図で、AX 2009 インスタンスでデータを収集して準備し、新しい環境にそのデータをインポートする全体的なプロセスを示します。
 
-![データ移行プロセス](media/dmt_process_flow.PNG)
+![データ移行プロセス。](media/dmt_process_flow.PNG)
 
 DMT を使用してソース環境 (AX 2009) からデータをエクスポートする前に、次の前処理のタスクを完了させておく必要があります。
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: bfe3df6ea19420ea1011171f2f55175cb685496c
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 0ff97aa3a26743254e10be269a303eb22171b9d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937346"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351007"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
@@ -441,11 +441,11 @@ BODY
 
 次の図は、データ管理パッケージ メソッドを使用してデータ パッケージをインポートする方法を示しています。
 
-![データ管理パッケージ メソッドを使用するデータ パッケージ ファイルのインポート](./media/data-package-import.png)
+![データ管理パッケージ メソッドを使用するデータ パッケージ ファイルをインポートします。](./media/data-package-import.png)
 
 次の図は、データ管理パッケージ メソッドを使用してデータ パッケージをエクスポートする方法を示しています。
 
-![データ管理パッケージ メソッドを使用するデータ パッケージ ファイルのエクスポート](./media/data-package-export.png)
+![データ管理パッケージ メソッドを使用するデータ パッケージ ファイルをエクスポートします。](./media/data-package-export.png)
 
 データのインポートとデータのエクスポートのメソッドを紹介するサンプルのコンソール アプリケーションは、 GitHub から入手できます。 詳細については、「<https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples>」に移動してください。
 

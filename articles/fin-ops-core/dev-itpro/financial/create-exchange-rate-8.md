@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 28d2cf1a7861c432d2fd35c719ff10e32eb2faba
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: d10ae32efe6f7b759414c825de4d2ac443185eef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111586"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347236"
 ---
 # <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成
 
@@ -42,7 +42,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 ## <a name="conceptualclass-model"></a>概念/クラス モデル
 次の図は、為替レート プロバイダーのフレームワークを構成する主なインターフェイスとクラス、およびそれらの関係を示しています。 新しい為替レート プロバイダーは、**IExchangeRateProvider** インターフェイスから実装されている必要があります。 為替レート プロバイダーは、X++ または C# で記述されます。 X++ は .NET 言語なので、 Microsoft .NET Framework を簡単に使用できます。 C# で記述されているすべてのプロバイダーは C# プロバイダーとして認識された X++ クラスでラップする必要があります。 たとえば、ヨーロッパ為替レート プロバイダーの中央銀行は Microsoft が C# で書き出したプロバイダーです。 **ExchangeRateProviderCBOE** X++ クラスによってラップされます。
 
-[![為替レート プロバイダー フレームワークの概念/クラス モデル](./media/exchangerates.png)](./media/exchangerates.png)
+[![為替レート プロバイダー フレームワークの概念/クラス モデル。](./media/exchangerates.png)](./media/exchangerates.png)
 
 図で表示されるインターフェイスおよびクラスを次に示します。
 

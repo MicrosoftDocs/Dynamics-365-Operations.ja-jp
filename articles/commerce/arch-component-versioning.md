@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 88ecbf6998d29d93f32bcbf637c10f120350ce83
-ms.sourcegitcommit: 229350ea9b25ee63c84e08bd6f96775019d47e06
+ms.openlocfilehash: d7bd5dd31afaab2ef3fea2aedd3d9de48875e38a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "6272597"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348721"
 ---
 # <a name="dynamics-365-commerce-component-versioning-requirements"></a>Dynamics 365 Commerceコンポーネント バージョンの管理要件
 
@@ -31,7 +31,7 @@ ms.locfileid: "6272597"
 
 次の図は、Dynamics 365 Commerce コンポーネントの概要、それに対応するバージョン要件および依存関係を示しています。
 
-<a href="/dynamics365/commerce/media/commerce-component-versioning.jpg" target="_blank">![Dynamics 365 Commerce コンポーネント バージョン要件および依存関係](./media/commerce-component-versioning.jpg)</a>
+<a href="/dynamics365/commerce/media/commerce-component-versioning.jpg" target="_blank">![Dynamics 365 Commerce コンポーネント バージョン要件および依存関係。](./media/commerce-component-versioning.jpg)</a>
 
 ## <a name="component-dependencies"></a>コンポーネントの依存関係
 

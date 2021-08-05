@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f099ddb115bf59418e29963414e491f78cd92d83
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ed85aa5b489ed383db6a6754ed38a0496bc9f0f7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804295"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353768"
 ---
 # <a name="offline-point-of-sale-pos-functionality"></a>オフライン販売時点管理 (POS) の機能
 
@@ -37,15 +37,15 @@ Modern POS では、Commerce Scale Unit が利用できないときはいつで�
 
 Modern POS のステータス ヘッダーは現在の接続ステータスを表示し、**接続ステータス** ウィンドウはオフライン データベースと同期する最後の試行のステータスを表示します。
 
-[![接続ステータス](./media/status.png)](./media/status.png)
+[![接続ステータス。](./media/status.png)](./media/status.png)
 
 ### <a name="creating-a-button-to-manually-switch-between-online-and-offline-modes"></a>手動でオンラインとオフライン モードを切り替えるためのボタンを作成
 
 Modern POS にオンラインとオフライン モードを手動で切り替えるボタンを追加できます。 POS 操作 **917 – データベース接続ステータス** のボタンを作成します。 このボタンの名前は、POS が Commerce Scale Unit に接続されている場合は **接続解除** となり、接続解除されている場合は **接続** となります。 このボタンは接続の表示、Commerce Scale Unit との接続解除および接続に使用できます。
 
-[![Retail Modern POS の接続解除ボタン](./media/details-1024x537.png)](./media/details.png)
+[![Retail Modern POS の接続解除ボタン。](./media/details-1024x537.png)](./media/details.png)
 
-## <a name="setup"></a>セットアップ
+## <a name="setup"></a>段取り
 
 POS のデバイス (登録) のオフライン サポートを有効にするには、**登録** ページで、**オフラインのサポート** オプションを **はい** に設定します。 新しいチャンネル データベース エンティティが作成され、店舗のチャンネル データ グループに追加されます。 その後、オフライン データベースのデータ パッケージを生成するためにすべての配送スケジュールを実行します。 次に、Modern POS のオフライン バージョンをインストールします。 インストール プロセスでは、オフライン データベースが作成されます。 さらに、必要な場合は、Microsoft SQL Server 2014 Express をインストールします。 Modern POS への最初のサインイン後にオフライン データの同期が開始されます。
 
@@ -53,7 +53,7 @@ POS のデバイス (登録) のオフライン サポートを有効にする�
 
 コマース スケジューラはオフライン データベースにマスター データを送信するのに使用されます。 既定では、配送スケジュールの実行時に、データの変更がチャンネルのデータベースとオフライン データベースの両方に送信されます。 Modern POS には、使用可能なすべてのデータ パッケージをダウンロードし、オフライン データベースに挿入する async sync ライブラリが含まれます。 トランザクションがオフラインで作成された場合、POS はそれらを Commerce Scale Unit にアップロードし、チャンネル データベースに挿入できるようにします。 オフラインのデータ同期は、Modern POS の実行時にのみ実行できます。
 
-[![オフライン同期](./media/offline-sync-1024x521.png)](./media/offline-sync.png)
+[![オフライン同期。](./media/offline-sync-1024x521.png)](./media/offline-sync.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

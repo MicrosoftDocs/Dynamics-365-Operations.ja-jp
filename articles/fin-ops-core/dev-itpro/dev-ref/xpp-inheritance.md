@@ -3,20 +3,18 @@ title: X++ 継承
 description: このトピックでは、X++ の継承について説明します。
 author: robinarh
 ms.date: 06/18/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150303
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb33670fbe15d31431ec7fd155453470d934fb1b
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 222127822f564a87e73569faa180e9d264f49943
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865898"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661354"
 ---
 # <a name="x-inheritance"></a>X++ 継承
 

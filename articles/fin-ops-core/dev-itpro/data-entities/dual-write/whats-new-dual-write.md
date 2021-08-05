@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 885badd98a552a31447d6d76a9f153c8550cbd75
-ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
+ms.openlocfilehash: e36600e3594fae96e1efb0acff20db0bf3fd024a
+ms.sourcegitcommit: d188d6621db8a92b59bf2b4102d573b161ad770f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306403"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6649585"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -30,6 +30,27 @@ ms.locfileid: "6306403"
 + [Dataverse のデータ - フェーズ 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
 + [Dataverse のデータ - フェーズ 1 と 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Dataverse の Finance and Operations データ – フェーズ 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+
+## <a name="august-2021-release"></a>2021 年 8 月リリース
+
+2021 年 8 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service)は、[二重書き込みコア ソリューション バージョン 1.0.29](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+|バグ修正 | 二重書き込み警告の送信に失敗した場合の問題が修正されます。 |   一般提供 |
+| システム テーブル |   システム テーブルの二重書き込みを有効にするためのサポートが追加されます。 |   一般提供 |
+
+## <a name="july-2021-release"></a>2021 年 7 月リリース
+
+2021 年 7 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.28](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| 追跡 | 分析およびエラー検出で使用するために、基本トランザクション プロパティをリモート データベースにログ記録します。 | 一般提供 |
 
 ## <a name="june-2021-release"></a>2021 年 6 月リリース
 

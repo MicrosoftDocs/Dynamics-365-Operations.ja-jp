@@ -2,7 +2,7 @@
 title: Adyen 向け Dynamics 365 Payment Connector
 description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
-ms.date: 06/03/2021
+ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00fe3de19aa9fbade5c140298dcb3ebe6faa0c50
-ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
+ms.openlocfilehash: da33ee2ecaffcfe464985d617f45dc4d7683a6a3
+ms.sourcegitcommit: 73d320d2103f2b0c6ecbb2b9df746469bc544ea2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184139"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "6433682"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -117,14 +117,21 @@ ms.locfileid: "6184139"
 ### <a name="dynamics-365-retail-pos-version-10018"></a>Dynamics 365 Retail POS バージョン 10.0.18
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
-| adyen_v1_59p7 | adyen_v1_62p9 |
+| adyen_v1_59p7 | adyen_v1_64p7 |
 | | *注: ギフト カードのキャッシュ アウトに関する詳細については、以下を参照してください* |
 
 # <a name="10019"></a>[10.0.19](#tab/10-0-19)
 ### <a name="dynamics-365-retail-pos-version-10019"></a>Dynamics 365 Retail POS バージョン 10.0.19
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
-| adyen_v1_59p7 | adyen_v1_62p9 |
+| adyen_v1_59p7 | adyen_v1_64p7 |
+| | *注: ギフト カードのキャッシュ アウトに関する詳細については、以下を参照してください* |
+
+# <a name="10020"></a>[10.0.20](#tab/10-0-20)
+### <a name="dynamics-365-retail-pos-version-10020"></a>Dynamics 365 Retail POS バージョン 10.0.20
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_62p9 | adyen_v1_64p7 |
 | | *注: ギフト カードのキャッシュ アウトに関する詳細については、以下を参照してください* |
 
 ---
@@ -250,7 +257,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 次の国では、カードが存在しない取引の場合は Adyen がサポートします。 特定の国のサポートの詳細については、[Adyen 連絡先 ](https://www.adyen.com/contact/sales) に問い合わせください。 コマースの現在の国際的な利用可能性については、[国際的な利用可能性ページ](/dynamics365/get-started/availability) を参照してください。
 
 | 国 | 
-| --- | --- |
+| --- |
 | アルゼンチン |
 | アルメニア |
 | オーストラリア |
@@ -389,6 +396,8 @@ POS 端末、コール センター、または電子商取引で支払を処理
     | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | 有 | 有 | True/False |
     | 承認失効期間 (日数) | *POS のみ* 承認が失効していると見なされ、取得のためにプロセッサにアクセスする前に拒否されるまでの日数。 | あり | あり | "7" |
     | 元のキー | バージョンに 「V002」 が指定されている場合は必須です。 このキーは Adyen Web サイトの [発生元キーを取得する方法](https://docs.adyen.com/user-management/how-to-get-an-origin-key) ページの指示に従い取得することができます。 |
+    | EnableRequestProtection | 「カードなし」支払呼び出しに再試行ロジックを追加し、相関する ID を使用した呼び出しの潜在的な重複を減少させます。 「True」の場合、プロバイダー要求に相関する ID が追加され、重複を防ぎます。 「False」の場合、呼び出しは相関する ID または重複保護ロジックなしでプロバイダーに送信されます。 | なし | なし | True/False |
+    | 増分取得以外の支払方法 | 承認応答で増分取得をサポートしないカードの種類を識別するために Adyen が使用する支払方法バリアントまたはカードの名前。 [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant) に記載されているように、入力された値は、Adyen で参照するために使用される支払方法バリアントまたはカードの種類の文字列と一致している必要があります 。  | なし | なし | "amexcommercial" |
 
 4. **カードの検証値** タブで、**カードの検証値を行う** はそのままで、**カードの検証値を空白とする** を **いいえ** に設定します。 
 
@@ -448,6 +457,8 @@ Adyen 支払コネクタは、ローカル ネットワーク経由または Ady
     | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | 有 | 有 | True/False |
     | 承認失効期間 (日数) | *POS のみ* 承認が失効していると見なされ、取得のためにプロセッサにアクセスする前に拒否されるまでの日数。 | あり | あり | "7" |
     | 元のキー | *カードは存在しません*  |
+    | EnableRequestProtection | 「カードなし」支払呼び出しに再試行ロジックを追加し、相関する ID を使用した呼び出しの潜在的な重複を減少させます。 「True」の場合、プロバイダー要求に相関する ID が追加され、重複を防ぎます。 「False」の場合、呼び出しは相関する ID または重複保護ロジックなしでプロバイダーに送信されます。 | なし | なし | True/False |
+    | 増分取得以外の支払方法 | 承認応答で増分取得をサポートしないカードの種類を識別するために Adyen が使用する支払方法バリアントまたはカードの名前。 [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant) に記載されているように、入力された値は、Adyen で参照するために使用される支払方法バリアントまたはカードの種類の文字列と一致している必要があります 。  | なし | なし | "amexcommercial" |
 
 4. アクション ウィンドウで、**保存** を選択します。
 
@@ -479,6 +490,8 @@ Adyen 支払コネクタは、ローカル ネットワーク経由または Ady
     | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | 有 | 有 | True/False |
     | 承認失効期間 (日数) | *POS のみ* 承認が失効していると見なされ、取得のためにプロセッサにアクセスする前に拒否されるまでの日数。 | あり | あり | "7" |
     | 元のキー | *カードは存在しません* |
+    | EnableRequestProtection | 「カードなし」支払呼び出しに再試行ロジックを追加し、相関する ID を使用した呼び出しの潜在的な重複を減少させます。 「True」の場合、プロバイダー要求に相関する ID が追加され、重複を防ぎます。 「False」の場合、呼び出しは相関する ID または重複保護ロジックなしでプロバイダーに送信されます。 | なし | なし | True/False |
+    | 増分取得以外の支払方法 | 承認応答で増分取得をサポートしないカードの種類を識別するために Adyen が使用する支払方法バリアントまたはカードの名前。 [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant) に記載されているように、入力された値は、Adyen で参照するために使用される支払方法バリアントまたはカードの種類の文字列と一致している必要があります 。  | なし | なし | "amexcommercial" |
 
 4. アクション ウィンドウで、**保存** を選択します。
 
@@ -560,6 +573,8 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
     | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | 有 | 有 | True/False |
     | 承認失効期間 (日数) | *POS のみ* 承認が失効していると見なされ、取得のためにプロセッサにアクセスする前に拒否されるまでの日数。 | 有 | 有 | "7" |
     | 発生元キー | *電子商取引のみ* バージョンに "V002" が指定されている場合にのみ必要です。 このキーは Adyen Web サイトの [発生元キーを取得する方法](https://docs.adyen.com/user-management/how-to-get-an-origin-key) ページの指示に従い取得することができます。 |
+    | EnableRequestProtection | 「カードなし」支払呼び出しに再試行ロジックを追加し、相関する ID を使用した呼び出しの潜在的な重複を減少させます。 「True」の場合、プロバイダー要求に相関する ID が追加され、重複を防ぎます。 「False」の場合、呼び出しは相関する ID または重複保護ロジックなしでプロバイダーに送信されます。 | なし | なし | True/False |
+    | 増分取得以外の支払方法 | 承認応答で増分取得をサポートしないカードの種類を識別するために Adyen が使用する支払方法バリアントまたはカードの名前。 [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant) に記載されているように、入力された値は、Adyen で参照するために使用される支払方法バリアントまたはカードの種類の文字列と一致している必要があります 。  | なし | なし | "amexcommercial" |
 
 6. アクション ウィンドウで、**保存** を選択します。
 
@@ -647,7 +662,7 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 #### <a name="invoicing-sales-orders-failed-due-to-stale-authorization"></a>古い承認のため、販売注文の請求に失敗
 
 | 肩書き | 古い認証のため、キャプチャに失敗 |
-|---|---|---|
+|---|---|
 | 現象 | 以下の理由で販売注文の請求に失敗しました。「呼び出しのターゲットによって例外がスローされました。 System.ArgumentException: 値を NULL にすることはできません。」 ログの基になるエラーは次の通りです。「キャプチャ呼び出しの間に次のエラーが発生しました - Adyen 用 Dynamics 365 Payment Connector: 古い認証のため、エラー コードの拒否メッセージのキャプチャに失敗しました。」 |
 | 根本原因 | このエラーは、**認証の対象期間 (日数)** よりも古い認証を支払コネクタに送信してキャプチャするときに発生します。 |
 | 固定 | **売掛金パラメータ、クレジット カード** の **期限切れから日数** の値が、すべてのチャンネルの販売プロパティで設定されている値よりも **1 日少ない日数** に設定され、請求を再試行することを確認します。 **認証の対象期間 (日数)** の推奨値は、Adyen の販売プロパティで 14、売掛金管理パラメータで 13 になります。 |

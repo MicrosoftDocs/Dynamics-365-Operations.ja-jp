@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 955dea2b463bb7b6df1be827353884f3e6d24439
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 94677614c196a25aea90f57a367eef1dfed985cd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188428"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346742"
 ---
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
@@ -34,9 +34,9 @@ ms.locfileid: "6188428"
 
 Hardware Station は、プリンター、キャッシュ ドロワー、スキャナー、および支払ターミナルなどのハードウェア周辺機器に接続するために Modern POS および Cloud POS で使用されます。 
 
-[![HWS-Local-Traditional](./media/hws-local-300x236.png)](./media/hws-local.png)
+[![HWS-Local-Traditional。](./media/hws-local-300x236.png)](./media/hws-local.png)
 
-[![HWS-Shared](./media/hws-shared-300x224.png)](./media/hws-shared.png)
+[![HWS-Shared。](./media/hws-shared-300x224.png)](./media/hws-shared.png)
 
 ## <a name="hardware-station-setup"></a>Hardware Station 設定
 開始する前に、 [Retail ハードウェア ステーションのコンフィギュレーションとインストール](../retail-hardware-station-configuration-installation.md) の情報を使用してハードウェア ステーションをインストールし、ハードウェアがどのようなものでインストールがどのようにされているかを知ることができます。
@@ -44,7 +44,7 @@ Hardware Station は、プリンター、キャッシュ ドロワー、スキ�
 ## <a name="hardware-station-architecture"></a>Hardware Station アーキテクチャ
 ハードウェア ステーションは、ハードウェア ステーション アプリケーション プログラミング インターフェイス (API) 用の Web API を公開します。 新しいデバイス (たとえば、現金自動支払機) の新しいコントローラーを実装するか、または既存のデバイス タイプ (たとえば、新しいオーディオ ジャック磁気ストライプ リーダー (MSR) の実装) の既存のコント ローラーを上書きするかのいずれかによって、ハードウェア ステーションを拡張できます。
 
-[![ハードウェア ステーション アーキテクチャ](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png)
+[![ハードウェア ステーション アーキテクチャ。](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png)
 
 ## <a name="hardware-station-extensibility-scenarios"></a>Hardware Station 拡張性シナリオ
 .NTE にサポートされている [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/) を使用して、ハードウェア ステーションの拡張性が獲得されます。 **拡張性の規定:** 拡張機能アセンブリで、常に、拡張機能の書き込みをします。 そのようにして、実際の拡張機能を記述し、アップグレードがかなり簡単になります。 拡張のための 2 つの基本的なシナリオがあります。
@@ -118,13 +118,13 @@ namespace Contoso
 
 ハードウェア ステーションが拡張機能を使用する前に、拡張機能のエントリが含まれるようにハードウェア ステーション Web.config ファイルの **合成** セクションを更新する必要があります。 コンフィギュレーション ファイルの構成ターゲットの順序によって優先順位が決まります。 
 
-[![ハードウェア ステーション Web コンフィギュレーション](./media/hws-webconfig.png)](./media/hws-webconfig.png)
+[![ハードウェア ステーション Web コンフィギュレーション。](./media/hws-webconfig.png)](./media/hws-webconfig.png)
 
 ### <a name="configuration-for-local-ipc-based-hardware-station"></a>ローカル IPC ベースのハードウェア ステーションのコンフィギュレーション
 
 ローカルのハードウェア ステーションが拡張機能を使用する前に、拡張機能用のエントリが含まれるように Modern POS DllHost.exe.config ファイル (C:\\Program Files (x86)\\Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker) の **合成** セクションを更新する必要があります。 コンフィギュレーション ファイルの構成ターゲットの順序によって優先順位が決まります。
 
-[![ローカル ハードウェア ステーションのコンフィギュレーション](./media/hws-dll-host-local-config.png)
+[![ローカル ハードウェア ステーションのコンフィギュレーション。](./media/hws-dll-host-local-config.png)
 
 
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41bcbcee139a2c2095d7e6db6c8d9894c494a126
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 98976ba337211c4257b6279e7c4df229f0d37dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216650"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350973"
 ---
 # <a name="initialize-company-data"></a>会社データの初期化
 
@@ -43,7 +43,7 @@ Finance and Operations アプリに **顧客** テーブル、および Datavers
 
 次の図はワークフローを示します。
 
-:::image type="content" source="media/boot-process-flow.png" alt-text="高レベル フロー":::
+:::image type="content" source="media/boot-process-flow.png" alt-text="高レベル フロー。":::
 
 このシナリオは、次の前提に基づいています。
 
@@ -70,7 +70,7 @@ Finance and Operations アプリに **顧客** テーブル、および Datavers
 
 Azure ストレージ アカウントを持っていない場合は、[Azure ストレージ アカウントを作成](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) の手順に従ってください。 ストレージ アカウントで、**ce-data** という名前のコンテナーを 1 つ作成します。 このコンテナには、すべてのデータ ファイルが格納されます。 データセットおよびパイプライン内のコンテナは、必要に応じ変更できます。 次の図に示すように、**アクセス キー** に移動し、**接続文字列** 値をコピーします。 この値は、Azure Data Factory テンプレートをインポートする際に必須です。
 
-:::image type="content" source="media/boot-storage-account.png" alt-text="アクセス キーの設定":::
+:::image type="content" source="media/boot-storage-account.png" alt-text="アクセス キーの設定。":::
 
 ### <a name="deploy-an-azure-data-factory-template"></a>Azure Data Factory テンプレートの配置
 
@@ -94,7 +94,7 @@ Azure ストレージ アカウントを持っていない場合は、[Azure ス
 7. **ファイルの読み込み** を選択し、先にダウンロードした ARM テンプレート ファイルを検索して選択します。 その後、**保存** を選択します。
 8. 必要なパラメータを指定し、**確認** を選び、**作成** を選択します。
 
-    :::image type="content" source="media/boot-custom-deployment.png" alt-text="テンプレートのカスタマイズ":::
+    :::image type="content" source="media/boot-custom-deployment.png" alt-text="テンプレートのカスタマイズ。":::
 
 9. デプロイ後、リスト ウィンドウに **パイプライン**、**データセット** および **データ フロー** セクションが表示されます。
 
@@ -104,7 +104,7 @@ Azure ストレージ アカウントを持っていない場合は、[Azure ス
 
 1. Finance and Operations アプリで、データ管理フレームワークを使用して、CSV 形式でデータをエクスポートします。 詳細については、 [データ管理の概要](../data-entities-data-packages.md) を参照してください。 このテンプレートでは、顧客データが **CustCustomerV3Entity** テーブルからエクスポートされます。 **CustCustomerV3Entity** を設定し、**FullPripriyAdtomer** フィールド マップをマッピングから削除します。 **DataAreaId** フィールドを CSV ファイルに追加します。 エクスポートしたファイル名を **01-CustomersV3Export-Customers V3.csv** にして、**ce-data** と名前をつけた Azure ストレージ アカウントにアップロードします。
 
-    :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations顧客ファイル":::
+    :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations顧客ファイル。":::
 
 2. [サンプル顧客ファイル](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv) をダウンロードします。
 

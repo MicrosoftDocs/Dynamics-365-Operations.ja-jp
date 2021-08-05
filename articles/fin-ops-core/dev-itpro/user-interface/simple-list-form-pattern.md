@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 371671334925d52011634a2721a0100ff9c2cfdc
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 48f77e55d88582bd0d5b35dc39c1f26f44ceb580
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188099"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350086"
 ---
 # <a name="simple-list-form-pattern"></a>簡易リストのフォーム パターン
 
@@ -33,7 +33,7 @@ ms.locfileid: "6188099"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ワイヤーフレーム](./media/simplelist1-1024x578.png)](./media/simplelist1.png)
+[![ワイヤーフレーム。](./media/simplelist1-1024x578.png)](./media/simplelist1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -97,7 +97,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **CustGroup** 
 
-[![簡易リストの例](./media/simplelist2-1024x524.png)](./media/simplelist2.png) 
+[![簡易リストの例。](./media/simplelist2-1024x524.png)](./media/simplelist2.png) 
 
 **注記:** 将来のクライアントの成果物では、グリッド線を右端と下端に延長する予定です。
 
@@ -112,7 +112,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![AX 2012 の例](./media/simplelist3.png)](./media/simplelist3.png)
+[![AX 2012 例。](./media/simplelist3.png)](./media/simplelist3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

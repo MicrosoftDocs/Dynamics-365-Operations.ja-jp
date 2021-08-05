@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: DirPartyTable, DirPartyTableRoles
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: 23521
+ms.custom:
+- "23521"
+- intro-internal
 ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
 ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3467a0d748328b575643b59140b50bcbead4d96f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 042afd16a29c1fdddaa8a03cc116f981de6cc083
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747649"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347214"
 ---
 # <a name="global-address-book-overview"></a>グローバル アドレス帳の概要
 
@@ -35,7 +37,7 @@ ms.locfileid: "5747649"
 
 次の図は、関係者レコード、関係者ロール、場所、およびトランザクションがアドレス帳とどのようにやり取りし、関連するかを示しています。 図が示すように、関係者レコードは 1 つ以上のアドレス帳に含めることができます。 各関係者レコードは、1 つ以上の場所や住所に格納でき、関係者ロールが割り当てられます。 パーティ レコードに割り当てられているロールには、それに関連付けられた特定のトランザクション タイプを割り当てることができます。 次のセクションでは、関係者ロール、場所、およびトランザクション タイプについて詳しく説明します。 次の図は、グローバル アドレス帳に関連して関係者、関係者の役割、場所、およびトランザクションが対話する方法をグラフで表したものです。
 
-[![AX エンティティおよびトランザクションのグローバル アドレス帳の相互作用](./media/address-book-structure-300x157.png)](./media/address-book-structure.png)
+[![AX エンティティおよびトランザクションのグローバル アドレス帳の相互作用。](./media/address-book-structure-300x157.png)](./media/address-book-structure.png)
 
 ### <a name="party-roles"></a>関係者ロール
 

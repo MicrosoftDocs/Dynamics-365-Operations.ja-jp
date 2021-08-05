@@ -2,7 +2,7 @@
 title: Dynamics 365 Finance 10.0.20 (2021 年 8 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.20 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
-ms.date: 05/28/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: ca7321d26ef8dfcb6b456eec2374aec614b394d6
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c1123e84616be2aab6832839b8b1619a172e33f2
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190249"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638332"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10020-august-2021"></a>Dynamics 365 Finance 10.0.20 (2021 年 8 月) の機能のプレビュー
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.20 の新機能または変更された機能について説明します。 このバージョンには 10.0.886 のビルド番号が含まれており、次のように使用できます。
 

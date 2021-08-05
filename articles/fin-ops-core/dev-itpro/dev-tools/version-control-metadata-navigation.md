@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ac7c814f3c76e10ffe60f6d861865c04957c9aa
-ms.sourcegitcommit: a0690817a0787795d7bc5bc7781780da8ef701e5
+ms.openlocfilehash: f10d6ad7c4fd1714bae5ba6502a6bc0db9c204ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6050596"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360340"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
@@ -40,12 +40,12 @@ ms.locfileid: "6050596"
 
 2. Azure DevOps 組織を作成し、アカウントの URL を選択します。 Visual Studio でソース管理を設定するときに、開発用コンピューターから接続する URL を使用します。 次の図は、アカウント URL の例です。
 
-    ![アカウントの URL を選択する](./media/accounturl_usingdevotools.png)
+    ![アカウントの URL を選択します。](./media/accounturl_usingdevotools.png)
 
     アカウントが作成されると、アカウントのメイン ページに進むように指示され、そこで最初のプロジェクトの作成を求められます。
 3. デモ **フリート管理** プロジェクトを作成します。
 
-    ![最初のプロジェクトを作成する](./media/firstproject_usingdevotools.png)
+    ![最初のプロジェクトを作成します。](./media/firstproject_usingdevotools.png)
 
 ### <a name="create-a-azure-devops-team-project"></a>Azure DevOps チーム プロジェクトの作成
 
@@ -54,7 +54,7 @@ Azure DevOps 組織を既に持っている場合は、Internet Explorer を使�
 1. <https://www.visualstudio.com/> に移動します。
 2. **最近使用したプロジェクトとチーム** で **新規** をクリックして新しいプロジェクトを作成します。
 
-   ![新しいプロジェクトの作成](./media/clicknew_usingdevotools.png)
+   ![新しいプロジェクトを作成します。](./media/clicknew_usingdevotools.png)
 
 3. **プロジェクト名** フィールドに、**フリート管理** と入力し、**説明** を入力してから **プロジェクトの作成** をクリックします。
 
@@ -62,7 +62,7 @@ Azure DevOps 組織を既に持っている場合は、Internet Explorer を使�
 
 Lifecycle Services (LCS) 自動化コードのアップグレード ツールを使用して以前のバージョンからコードを移行した場合、以下のフォルダ構造は、Azure DevOps チーム プロジェクトで自動的に作成されます。
 
-![既定のフォルダー構造](./media/vsofolders1.png)
+![既定のフォルダー構造。](./media/vsofolders1.png)
 
 **メタデータ** フォルダーには、パッケージとモデルによって整理されたソース XML ファイルがあり、**プロジェクト** フォルダーには Visual Studio プロジェクトが含まれています。 コードを移行せず、最初から開始している場合、開発を開始する前に、チーム プロジェクト内のサーバーに類似したフォルダ構造を作成します。
 
@@ -81,7 +81,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 7. **チーム プロジェクト** で **フリート管理** チェック ボックスをオンにし、**接続** をクリックします。
 
-    ![Team Foundation Serverに 接続する](./media/connecttfsserver_usingdevotools.png)
+    ![Team Foundation Server に接続します。](./media/connecttfsserver_usingdevotools.png)
 
 ### <a name="map-your-azure-devops-project-to-your-local-model-store-and-projects-folder"></a>Azure DevOps プロジェクトをローカルのモデル ストアとプロジェクト フォルダーにマップ
 
@@ -94,7 +94,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
     > [!NOTE]
     > マシンの構成によっては、モデル ストアが I:\\AosService\\PackagesLocalDirectory または別のドライブの配下にある場合があります。
 
-    ![ワークスペース マッピングの作成](./media/vsofolders21.png)
+    ![ワークスペース マッピングを作成します。](./media/vsofolders21.png)
 
 4. **マップ** をクリックし、次のダイアログ ボックスで、**No** をクリックします。
 5. 同様に、**/Trunk/Main/Projects** サーバー フォルダーを、Visual Studio ソリューションとプロジェクト ファイルを保持する **ローカル プロジェクト フォルダー** にマッピングします。
@@ -122,7 +122,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
     > [!NOTE]
     > サーバープロジェクト フォルダ を FleetManagement ソリューションを含むローカルフォルダに既にマッピングしている場合は、手順2 と 3 を省略します。
 
-    ![Team Foundation Server のフォルダー構造](./media/vsofolders31.png)
+    ![Team Foundation Server のフォルダー構造。](./media/vsofolders31.png)
 
 4. [OK] をクリックします。
 5. **チーム エクスプ ローラー &gt; 保留中の変更** に移動し、**チェックイン** をクリックして、ソリューションおよびモデル要素が Azure DevOps ソース管理にチェックインするようにします。
@@ -138,7 +138,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
     > [!NOTE]
     > マシンの構成によっては、モデル ストアが、K:\AosService\PackagesLocalDirectory、c:\AosService\PackagesLocalDirectory、または別のドライブの下にある場合があります。
 
-    [![ソース コントロールへの FleetManagement.xml の追加](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
+    [![ソース コントロールへの FleetManagement.xml の追加。](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 
 4. **完了** をクリックします。
 
@@ -155,7 +155,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 2. デザイナーを開けるには、**FMRental** をダブルクリックします。
 3. **フィールド** ノードを右クリックし、**新規 &gt; 整数** をクリックします。
 
-    [![新しい整数の追加](./media/newinteger_usingdevotools.png)](./media/newinteger_usingdevotools.png)
+    [![新しい整数の追加。](./media/newinteger_usingdevotools.png)](./media/newinteger_usingdevotools.png)
 
 4. **メソッド** を右クリックして、新しいメソッドを追加します。
 5. X++ コード エディターで、新たなメソッドにコメントを入力します。
@@ -163,12 +163,12 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 7. **FMRental** を保存します。
 8. **チーム エクスプローラー** で、**FMRental.xml** を右クリックして **最新バージョンと比較** を選択します。
 
-    [![バージョン間の比較](./media/compareversions_usingdevotools.png)](./media/compareversions_usingdevotools.png)
+    [![バージョン間の比較。](./media/compareversions_usingdevotools.png)](./media/compareversions_usingdevotools.png)
 
 9. **比較 (差異)** ウィンドウの違いを参照してください。
 10. **ソリューション エクスプローラー** で **FMRental** テーブルを右クリックし、**ソース管理 &gt; 元に戻す &gt; 保留中の変更** を選択して変更を元に戻します。
 
-    [![保留中の変更を元に戻す](./media/undo_usingdevotools.png)](./media/undo_usingdevotools.png)
+    [![保留中の変更を元に戻す。](./media/undo_usingdevotools.png)](./media/undo_usingdevotools.png)
 
 11. 次のダイアログで取り消しを確認し、**差異** ウィンドウを閉じます。
 
@@ -179,7 +179,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 1. ソース管理エクスプローラーで、メタデータを右クリックして **最新バージョンの取得** を選択します。 最新バージョンを取得することにより、ローカル パッケージ フォルダーと最新のコードが同期されます。
 2. 別の方法として、**詳細** メニューを使用して固有のビルド バージョンまたは変更セットを同期することができます。
 
-    ![最新バージョンの取得](./media/getlatest.png)
+    ![最新バージョンの取得。](./media/getlatest.png)
 
 3. 同期が完了し、新しいモデルを環境に同期させる場合は、Visual Studio からメタデータを更新する必要があります。
 4. **Dynamics 365 &gt; モデル管理 &gt; モデルの更新** の順に移動します。
@@ -191,27 +191,27 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 1. **ソリューション エクスプローラー** で、**移行されたフリート管理 &gt; コード &gt; クラス &gt; FMDataHelper** を選択してから、**FMDataHelper** をダブルクリックします。 X++ コード エディターが開きます。
 2. 任意のメソッド内に、TODO コメント (//TODO: my comment) を入力します。
 
-    [![TODO コメントの例](./media/code_usingdevotools.png)](./media/code_usingdevotools.png)
+    [![TODO コメントの例。](./media/code_usingdevotools.png)](./media/code_usingdevotools.png)
 
 3. 他のフリート管理のクラスやテーブルを開き、さらに TODO コメントを追加します。
 4. **FleetManagement Migrated** プロジェクトをリビルドします。
 5. **表示 &gt; タスク一覧** を選択し、Visual Studio **タスク一覧** ウィンドウを開きます。
 
-    [![タスク一覧を開く](./media/tasklist_usingdevotools.png)](./media/tasklist_usingdevotools.png)
+    [![タスク一覧を開く。](./media/tasklist_usingdevotools.png)](./media/tasklist_usingdevotools.png)
 
 6. ドロップダウン リストから **コメント** を選択します。
 
-    [![コメントの表示](./media/tasklistcomments_usingdevotools.png)](./media/tasklistcomments_usingdevotools.png)
+    [![コメントの表示。](./media/tasklistcomments_usingdevotools.png)](./media/tasklistcomments_usingdevotools.png)
 
 7. すべての作業項目を選択して右クリックし、**新しいプロジェクトに追加** を選択します。
 
-    [![TODO コメントの選択](./media/addnewproject_usingdevotools.png)](./media/addnewproject_usingdevotools.png)
+    [![TODO コメントの選択。](./media/addnewproject_usingdevotools.png)](./media/addnewproject_usingdevotools.png)
 
 8. 品目を追加することにより、**新規プロジェクト** ダイアログが開き、すべての TODO を含む新しいプロジェクトを作成できます。
 9. このプロジェクトを作業プロジェクトとして保存し、TODO リストを管理することができます。
 10. 完了したら、**チーム エクスプ ローラー** ですべての保留中の変更を元に戻します。
 
-    [![すべての変更を元に戻す](./media/undoall_usingdevotools.png)](./media/undoall_usingdevotools.png)
+    [![すべての変更を元に戻す。](./media/undoall_usingdevotools.png)](./media/undoall_usingdevotools.png)
 
 11. FleetManagement ソリューションを閉じるには、**ファイル &gt; ソリューションを閉じる** をクリックします。
 
@@ -225,7 +225,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 2. **メタデータ検索** ウィンドウの **検索** フィールドに、次のテキストを入力して会社間クエリを含むアプリケーション スイート モデルのすべてのテーブル挿入メソッドを検索します。 `type:table,method name:insert code:"crosscompany" model:"Application Suite"`。
 3. 検索が完了するまで待ちます。 これにはしばらく時間がかかる場合があります。
 
-   ![メタデータの検索結果](./media/metadatasearchresults_usingdevotools.png)
+   ![メタデータの検索結果。](./media/metadatasearchresults_usingdevotools.png)
 
 4. リスト内の結果をダブルクリックします。 コード エディターが開き、検索条件に一致する行にカーソルを移動します。
 5. Ctrl キーを押しながら複数選択することで結果リストで複数の要素を選択し、右クリックして **新しいプロジェクトに追加** を選択します。 要素を追加することにより、選択した要素を含む新しいソリューションとプロジェクトを作成できます。
@@ -252,7 +252,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 - 以前の検索条件にアクセスするには、検索バーのドロップダウン メニューを使用します。
 
-    [![ドロップダウン メニューの使用](./media/accessprevious_usingdevotools.png)](./media/accessprevious_usingdevotools.png)
+    [![ドロップダウン メニューの使用。](./media/accessprevious_usingdevotools.png)](./media/accessprevious_usingdevotools.png)
 
 ## <a name="navigate-to-related-elements"></a>関連する要素への移動
 
@@ -260,28 +260,28 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 1. **アプリケーション エクスプローラー** を開き、**モデル ビュー** に切り替えます。
 
-    [![モデル ビューでアプリケーション エクスプローラーを開く](./media/modelview_usingdevotool1.png)](./media/modelview_usingdevotool1.png)
+    [![モデル ビューでアプリケーション エクスプローラーを開く。](./media/modelview_usingdevotool1.png)](./media/modelview_usingdevotool1.png)
 
 2. **フリート管理** モデルで、**ユーザー インターフェイス&gt;メニュー項目&gt;メニュー項目を表示&gt;FMCustomer** をクリックします。
 
-    [![アプリケーション エクスプローラーで FMCustomer を選択する](./media/fmcustomerisv_usingdevotools.png)](./media/fmcustomerisv_usingdevotools.png)
+    [![アプリケーション エクスプローラーで FMCustomer を選択する。](./media/fmcustomerisv_usingdevotools.png)](./media/fmcustomerisv_usingdevotools.png)
 
 3. **FMCustomer** を右クリックし、**デザイナーを開く** を選択します。
 4. **FMCustomer** メニュー項目デザイナーでルート ノードを右クリックし、**フォーム FMCustomer に移動する** を選択します。
 
-    [![アプリケーション エクスプローラーを使用したフォームへの移動](./media/goformfmcustomer_usingdevotools.png)](./media/goformfmcustomer_usingdevotools.png)
+    [![アプリケーション エクスプローラーを使用したフォームへの移動。](./media/goformfmcustomer_usingdevotools.png)](./media/goformfmcustomer_usingdevotools.png)
 
     **FMCustomer** フォーム デザイナーが開きます。
 
 5. **FMCustomer** フォームのデザイナーで、**データ ソース** を展開して、**FMCustomer** を右クリックしてから **テーブル FMCustomer へ移動** を選択します。
 
-    [![アプリケーション エクスプローラーを使用したテーブルへの移動](./media/gotablefmcustomer_usingdevotools.png)](./media/gotablefmcustomer_usingdevotools.png)
+    [![アプリケーション エクスプローラーを使用したテーブルへの移動。](./media/gotablefmcustomer_usingdevotools.png)](./media/gotablefmcustomer_usingdevotools.png)
 
     **FMCustomer** テーブル デザイナーが開きます。
 
 6. 同じ方法を使用すると、テーブル フィールドが参照する EDT 要素に移動できます。 **ヒント**: コンテキスト メニューを開くのではなく F9 キーを押します。 F9 キーを押すと、参照要素のデザイナーが開きます。 **ヒント**: 現在のプロジェクトに要素を追加するには、ドキュメント タブを右クリックし、**プロジェクトへの追加** を選択します。
 
-    ![プロジェクトへの追加を使用する](./media/addtoproject_usingdevotools.png)
+    ![プロジェクトへの追加を使用する。](./media/addtoproject_usingdevotools.png)
 
 ## <a name="use-application-explorer-to-create-a-project-from-a-model"></a>アプリケーション エクスプローラーを使用してモデルからプロジェクトを作成
 
@@ -290,11 +290,11 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 1. 要素のタイプでプロジェクトを整理するためのオプションがオンになっていることを確認します。 **Dynamics 365** \> **オプション** \> **プロジェクト** の順に移動します。
 2. アプリケーション エクスプローラーに移動し、目的のモデル内の要素を検索します。 たとえば、*モデル: "フリート管理"* を入力し、**入力** をクリックします。
 
-    [![アプリケーション エクスプローラーでモデルを検索する](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
+    [![アプリケーション エクスプローラーでモデルを検索する。](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
 
 3. 検索が完了したら、AOT ルート ノードを右クリックし、**新しいプロジェクトへの検索結果の追加** を選択します。
 
-    [![新しいモデルに品目を追加する](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)
+    [![新しいモデルに品目を追加する。](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)
 
 4. 新しいプロジェクト ダイアログ ボックスでプロジェクトのプロパティを指定し、**OK** をクリックしてプロジェクトを作成します。
 

@@ -3,21 +3,16 @@ title: ページリンク モジュール
 description: ページリンクは、別のページに移動するコントロールです。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: ff36c03115d16371dab090a1ac94ecc404d31fdd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 97126f5630b1a27abf8a05990e362a817d2c0094
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744189"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661558"
 ---
 # <a name="pagelink-module"></a>ページリンク モジュール
 
@@ -98,7 +93,7 @@ ms.locfileid: "5744189"
 | [ナビゲーション](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#navigation) |navigation: [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md) (省略可)  <br>|ページリンクのナビゲーション オブジェクト。<br>  |
 | [スペース](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#padding) |padding: "none" &#124; "small" &#124; "std" (省略可)  <br>|コンポーネントのスペース動作を指定できるように許可します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[padding](../interfaces/view-model-ipage-idesign.md#padding) から継承 <br> |
 | [showCount](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#showcount) |showCount: boolean (省略可)  <br>|True の場合、ターゲット ページのリストに存在するレコードの数を表示します。<br>  |
-| [スタイル](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#style) |style: string (省略可)  <br>|ページリンク コントロールのビジュアル スタイルを指定します。 オプション: * "inline": は、アイコンをインラインに含むラベルによってそのコンテナーの幅全体を示します。* "button": は、アイコンの下のラベルによって、ラベル必要な幅だけを示します。<br>  |
+| [スタイル](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#style) |style: string (省略可)  <br>|ページリンク コントロールのビジュアル スタイルを指定します。 オプション: *"inline": は、アイコンをインラインに含むラベルによってそのコンテナーの幅全体を示します。*"button": は、アイコンの下のラベルによって、ラベル必要な幅だけを示します。<br>  |
 | [タイプ](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#type) |type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|文字列としてのコントロールのタイプ。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[type](../interfaces/view-model-ipage-idesign.md#type) から継承 <br> |
 
 
@@ -130,7 +125,7 @@ ms.locfileid: "5744189"
 | [ShowCount](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#showcount) |ShowCount: ブール値 (省略可)  <br>|True の場合、ターゲット ページのリストに存在するレコードの数を表示します。<br>  |
 | [スタイル](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#style) |スタイル: 文字列 (省略可)  <br>|ページリンク コントロールのビジュアル スタイルを指定します。<br>  |
 | [ターゲット](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#target) |ターゲット: string (省略可)  <br>|ページリンクが選択されたときに移動するターゲット アクションまたはページの名前。<br>  |
-| [[タイプ](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
+| [タイプ](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
 | [UseDataContext](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#usedatacontext) |UseDataContext: boolean (オプション)  <br>|  |
 
 #### <a name="events"></a>イベント

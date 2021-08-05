@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 06/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: d9cffa6213208a0efde90546e6dddfd71142bd9e
-ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
+ms.openlocfilehash: 3fa4eb3ebb30a4032d29c09746b43cb079c3cfe0
+ms.sourcegitcommit: 41a5d18552bcc94cb1ddbbe3f3278eaf9d05f418
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "6277399"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "6617058"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
@@ -39,8 +39,8 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
 
 これらのコンポーネントは、次のシステム ソフトウェアによって異なります。
 
-- Microsoft Windows Server 2019 または Microsoft Windows Server 2016 (英語オペレーティング システムのインストールのみがサポートされます。)
-- Microsoft SQL Server 2016 SP2
+- Microsoft Windows Server (英語オペレーティング システムのインストールのみがサポートされます。)
+- Microsoft SQL Server
 
     > [!IMPORTANT]
     > フルテキスト検索を有効にする必要があります。
@@ -54,9 +54,9 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
     SSIS は AOS VM に展開されます。
 
 - SQL Server Management Studio
-- スタンドアロン Microsoft Azure Service Fabric 7.2 以降
+- スタンドアロン Microsoft Azure Service Fabric
 - Microsoft Windows PowerShell 5.0 以降
-- Windows Server 2019 または Windows Server 2016 での Active Directory フェデレーション サービス (AD FS)
+- Windows Server での Active Directory Federation Services (AD FS)
 - ドメイン コントローラー
 
     > [!IMPORTANT]
@@ -66,7 +66,10 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
     > - [Active Directory Domain Services (AD DS) 機能のレベルを理解する](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))
     > - [双方向の完全な信頼](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
-- 次はオプションですが、**強く** お勧めします: Windows Server 2019 または Windows Server 2016 の Active Directory 証明書サービス (AD CS)
+- 次はオプションですが、**強く** お勧めします: Windows Server の Active Directory Certificate Services (AD CS)
+
+> [!IMPORTANT]
+> サポートされているバージョンについては、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](./onprem-compatibility.md)を参照してください。
 
 ## <a name="lcs"></a>LCS
 
@@ -96,18 +99,21 @@ VMware を使用している場合は、次の Web ページに記載されて�
 - [仮想マシンをハードウェア バージョン 11 にアップグレード後、ネットワーク依存ワークロードのパフォーマンスが低下する (2129176)](https://kb.vmware.com/s/article/2129176)
 - [vmxnet3 仮想アダプターのいくつかの問題](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
- > [!WARNING]
- > Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure スタック ハブ](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> [!WARNING]
+> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure スタック ハブ](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
-- Windows Server 2019 または Windows Server 2016 VM に基づく スタンドアロン Service Fabric Cluster
+- Windows Server VM に基づく スタンドアロン Service Fabric Cluster
 - SQL Server (Clustered SQL と Always-On の両方がサポートされます。)
 - 認証のための AD FS
 - ストレージ用の Server Message Block (SMB) バージョン 3 のファイル共有
-- オプション: Microsoft Office Server 2017
+- オプション: Microsoft Office Server
 
 詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md) を参照してください。
+
+> [!IMPORTANT]
+> サポートされているバージョンについては、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](./onprem-compatibility.md)を参照してください。
 
 ### <a name="hardware-layout"></a>ハードウェア レイアウト
 
@@ -194,8 +200,8 @@ Finance + Operations のインフラストラクチャを設定するには、�
 
 - Active Directory Domain Services (AD DS) は、ネットワークにインストールして構成する必要があります。
 - AD FS は、展開する必要があります。
-- SQL Server 2016 SP2 は SSRS コンピューターにインストールされている必要があります。
-- SQL Server Reporting Services 2016 は、SSRS コンピューターに **ネイティブ** モードでインストールされる (コンフィギュレーションはされない) 必要があります。
+- SQL Server は SSRS コンピューターにインストールされている必要があります。
+- SSRS は、SSRS コンピューターに **ネイティブ** モードでインストールされる (コンフィギュレーションはされない) 必要があります。
 - オプション: AD CS がネットワークにインストールおよびコンフィギュレーションされます。
 
 次の表は、LCS からダウンロードされたインフラストラクチャ セットアップ スクリプトによって VM にインストールされる必須ソフトウェアを示します。
@@ -316,7 +322,7 @@ DNS は AD DS と統合されており、ネットワーク内のリソースを
 1. ドメイン コントローラー コンピューターにサインインして、**スタート** を選択します。 次に、**dnsmgmt.msc** を入力し **dnsmgmt (DNS)** アプリケーションを選択して、DNS マネージャーを開きます。
 2. コンソール ツリーでドメイン コントローラー名を右クリックし、**新しいゾーン** \> **次へ** の順に選択します。
 3. **プライマリ ゾーン** を選択します。
-4. **Active Directory にゾーンを保存 (DNS サーバーが書き込み可能なドメイン コントローラーの場合にのみ使用可能)** のチェック ボックスが選択されたままの状態で、**次へ** を選択します。
+4. **Active Directory にゾーンを保存 (DNS サーバーが書き込み可能なドメイン コントローラーの場合にのみ使用可能)** が選択されたままの状態で、**次へ** を選択します。
 5. **このドメインのドメイン コントローラーで実行されているすべての DNS サーバーに対して : Contoso.com** を選択し、**次へ** を選択します。
 6. **前方参照ゾーン** を選択し、**次へ** を選択します。
 7. 設定するゾーン名を入力し、**次へ** をクリックします。 たとえば、**d365ffo.onprem.contoso.com** と入力します。
@@ -330,7 +336,7 @@ DNS は AD DS と統合されており、ネットワーク内のリソースを
 1. DNS マネージャーの **前方参照ゾーン** フォルダーで、新しく作成したゾーンを検索します。
 2. 新しいゾーンを選択したまま (または右クリック) にしてから、**新しいホスト** を選択します。
 3. Service Fabric ノードの 名前および IP アドレスを入力します。 (たとえば、**ax** を名前として、**10.179.108.12** を IP アドレスとして入力します。) 次に **ホストの追加** を選択します。
-4. 両方のチェック ボックスをオフのままにします。
+4. 両方のチェックボックスをオフのままにします。
 5. 追加の AOS ノードごとに手順 1 から 4 を繰り返します。
 
 #### <a name="set-up-an-a-record-for-the-orchestrator"></a>Orchestrator の A レコードを設定する
@@ -339,7 +345,7 @@ DNS は AD DS と統合されており、ネットワーク内のリソースを
 
 1. 新しいゾーンを選択したまま (または右クリック) にしてから、**新しいホスト** を選択します。
 2. Service Fabric ノードの 名前および IP アドレスを入力します。 (たとえば、**sf** を名前として、**10.179.108.15** を IP アドレスとして入力します。) 次に **ホストの追加** を選択します。
-3. 両方のチェック ボックスをオフのままにします。
+3. 両方のチェックボックスをオフのままにします。
 4. 追加のオーケストレーター ノードごとに手順 1 から 3 を繰り返します。
 
 ### <a name="step-5-join-vms-to-the-domain"></a><a name="joindomain"></a>手順 5、 VM のドメインへの参加
@@ -365,7 +371,7 @@ Microsoft ではセットアップ エクスペリエンスを向上させるた
 2. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
 3. **モデル** を資産タイプとして選択してから、グリッドで、**Dynamics 365 for Operations オンプレミス - 展開スクリプト** の行を選択します。
 4. **バージョン** を選択し、スクリプトの zip ファイルの最新版をダウンロードします。
-5. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェック ボックスを選択します。
+5. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
 6. zip ファイルをスクリプトの実行に使用するコンピューターにコピーします。
 7. **infrastructure** という名前のフォルダーにファイルを解凍します。
 
@@ -538,7 +544,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 ### <a name="step-10-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a>手順 10、 スタンドアロン Service Fabric クラスターの設定
 
 1. [Service Fabric スタンドアロン インストール パッケージ](https://go.microsoft.com/fwlink/?LinkId=730690) を Service Fabric ノードのいずれかにダウンロードします。
-2. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェック ボックスを選択します。
+2. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
 3. ZIP ファイルを Service Fabric クラスター内のいずれかのノードにコピーし、解凍します。 **インフラストラクチャ** フォルダーが、このフォルダーにアクセスすることを確認します。
 3. **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行して Service Fabric **ClusterConfig.json** ファイルを生成します。
 
@@ -566,7 +572,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 8. クラスターが作成された後、任意のクライアント コンピューターで Service Fabric Explorer を開き、インストールを検証します。
 
     1. まだインストールされていない場合、**CurrentUser\\My** 証明書ストアで Service Fabric クライアント証明書をインストールします。
-    2. Internet Explorer で、**ツール** (ギヤ記号) を選択してから、**互換性表示の設定** を選択します。 **互換性表示でイントラネット サイトを表示する** チェック ボックスをオフにします。
+    2. Internet Explorer で、**ツール** (ギヤ記号) を選択してから、**互換性表示の設定** を選択します。 **互換性表示でイントラネット サイトを表示する** チェックボックスをオフにします。
     3. `https://sf.d365ffo.onprem.contoso.com:19080` に移動します。**sf.d365ffo.onprem.contoso.com** は、ゾーンで指定されている Service Fabric Cluster のホスト名です。 DNS 名前解決が設定されていない場合は、マシンの IP アドレスを使用します。
     4. クライアントの証明書を選択します。 **Service Fabric Explorer** ページが表示されます。
     5. すべてのノードが緑で表示されることを確認します。
@@ -642,7 +648,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
     2. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **aos-storage** と名前を付けます。
     3. **共有のキャッシュを許可** を選択したままにします。
-    4. **データ アクセスを暗号化** チェック ボックスをオンにします。
+    4. **データ アクセスを暗号化** チェックボックスをオンにします。
     5. **OrchestratorType** を除いて、Service Fabric cluster 内のすべてのマシンに対して **変更** 許可を与えます。
     6. AOS ドメイン ユーザー (**contoso\\AXServiceUser**) と gMSA ユーザー (**contoso\\svc-AXSF$**) に対して、**変更** 許可を与えます。
 
@@ -687,7 +693,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 ### <a name="step-13-set-up-sql-server"></a><a name="setupsql"></a>手順 13、 SQL Server の設定
 
-1. SQL Server のインスタンスが 1 つでも十分なサンドボックス環境に展開する場合を除いて、高可用性を備えた SQL Server 2016 SP2 をインストールします。 (ただし、高可用性シナリオをテストするため、サンドボックス環境に高可用性を備えた SQL Server をインストールすることもできます。)
+1. SQL Server のインスタンスが 1 つでも十分なサンドボックス環境に展開する場合を除いて、高可用性を備えた SQL Server をインストールします。 (ただし、高可用性シナリオをテストするため、サンドボックス環境に高可用性を備えた SQL Server をインストールすることもできます。)
 
     > [!IMPORTANT]
     > [SQL Server および Windows 認証モード](/sql/database-engine/configure-windows/change-server-authentication-mode) を有効にする必要があります。
@@ -758,16 +764,17 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 ### <a name="step-14-configure-the-databases"></a><a name="configuredb"></a>手順 14、 データベースを構成する
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
-2. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
-3. 資産タイプとして **モデル** を選択します。 次にグリッドで、必要なリリースのデータ タイプを選択し、zip ファイルをダウンロードします。
+1. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
+1. 資産タイプとして **モデル** を選択します。 次にグリッドで、必要なリリースのデータ タイプを選択し、zip ファイルをダウンロードします。
 
     | リリース |  データベース |
     |---------|----------|
     | オンプレミス プラットフォーム更新プログラム 41 | Dynamics 365 for Operations オンプレミス、バージョン 10.0.17 デモ データ |
     | オンプレミス プラットフォーム更新プログラム 41 | Dynamics 365 for Operations オンプレミス、バージョン 10.0.17 空のデータ |
 
-4. zip ファイルには、単一のバックアップ (.bak) ファイルが含まれます。 必要に応じて、ダウンロードするファイルを選択します。
-5. **infrastructure\\ConfigTempate.xml** ファイルのデータベース セクションが、次の情報と共に正しく構成されているか確認します。
+1. zip ファイルには、単一のバックアップ (.bak) ファイルが含まれます。 必要に応じて、ダウンロードするファイルを選択します。
+1. zip ファイルのダウンロード後、そのファイルがブロックされていないことを確認します。 ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
+1. **infrastructure\\ConfigTempate.xml** ファイルのデータベース セクションが、次の情報と共に正しく構成されているか確認します。
 
     - データベース名。
     - データベース ファイルとログ設定。 データベース設定は、指定された既定値以上にする必要があります。
@@ -777,7 +784,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     > - SQL サービスを実行しているユーザーとスクリプトを実行しているユーザーは、バックアップ ファイルが格納されているフォルダーまたは共有に対して **読み取り** アクセス権を持っている必要があります。
     > - 既に既存のデータベースの名前が同じである場合は、上書きされません。
 
-6. **インフラストラクチャ** フォルダーを SQL Server コンピューターにコピーします。 次に、管理者特権モードで Windows PowerShell を開き、フォルダーに移動します。
+1. **インフラストラクチャ** フォルダーを SQL Server コンピューターにコピーします。 次に、管理者特権モードで Windows PowerShell を開き、フォルダーに移動します。
 
 #### <a name="configure-the-orchestratordata-database"></a>OrchestratorData データベースのコンフィギュレーション
 
@@ -899,7 +906,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 データ管理と SSIS ワークロードを有効にするには、各 AOS VM に SSIS をインストールする必要があります。 各 AOS VM で、次の手順に従います。
 
 1. コンピューターに SSIS インストールへのアクセス許可があることを確認し、**SSIS セットアップ** ウィザードを開きます。
-2. **機能の選択** ページの **機能** ウィンドウで、**Integration Services** および **SQL クライアント接続 SDK** のチェック ボックスをオンにします。
+2. **機能の選択** ページの **機能** ウィンドウで、**Integration Services** および **SQL クライアント接続 SDK** のチェックボックスをオンにします。
 3. セットアップを完了し、インストールが正常に完了したことを確認します。
 
 詳細については、[統合サービス (SSIS) のインストール](/sql/integration-services/install-windows/install-integration-services)を参照してください。
@@ -943,7 +950,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 ### <a name="step-18-configure-ad-fs"></a><a name="configureadfs"></a>手順 18、 AD FS のコンフィギュレーション
 
-この手順を完了する前に、AD FS を Windows Server 2019 または Windows Server 2016 に展開する必要があります。 AD FS を展開する方法については、[Windows Server 2016 配置ガイドおよび 2012 R2 AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
+この手順を完了する前に、AD FS を Windows Server に展開する必要があります。 AD FS を展開する方法については、[Windows Server 2016 配置ガイドおよび 2012 R2 AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
 
 Finance + Operations では、既定で標準のコンフィギュレーション以外の、AD FS の追加のコンフィギュレーションが必要です。 以下の Windows PowerShell コマンドを、AD FS ロール サービスがインストールされているマシン上で実行する必要があります。 ユーザー アカウントには、AD FS を管理するための十分なアクセス許可が必要です。 たとえば、ユーザーには、ドメイン管理者アカウントが必要です。 複雑な AD FS シナリオでは、ドメイン管理者に問い合わせてください。
 
@@ -987,7 +994,7 @@ AD FS が認証を交換するために Finance + Operations を信頼できる�
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
 ```
 
-![アプリケーション グループのプロパティ](./media/OPSetup_05_ApplicatioGroupProperties.png)
+![アプリケーション グループのプロパティ。](./media/OPSetup_05_ApplicatioGroupProperties.png)
 
 最後に、**AOSNodeType** タイプの Service Fabric ノード上の AD FS OpenID コンフィギュレーション URL にアクセスできることを確認します。 このチェックを行うには、Web ブラウザーで `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` を開きます。 サイトが安全でないことを示すメッセージが表示された場合は、AD FS SSL 証明書が信頼済ルート証明機関ストアに追加されていません。 この手順については、「AD FS 展開ガイド」で説明されています。 リモート処理を使用している場合は、次のコマンドを実行して Service Fabric Cluster のすべてのノードに証明書をインストールできます。
 
@@ -1007,7 +1014,7 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 3. **オンプレミス コネクタ** を選択します。
 4. **追加** を選択して、新しいオンプレミス コネクタを作成します。 
 5. **1: ホスト インフラストラクチャ設定** タブで、**エージェント インストーラーをダウンロードする** を選択します。
-6. zip ファイルのダウンロード後、そのファイルがブロックされていないことを確認します。 ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェック ボックスを選択します。
+6. zip ファイルのダウンロード後、そのファイルがブロックされていないことを確認します。 ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
 7. **OrchestratorType** タイプの Service Fabric ノードの 1 つでエージェント インストーラーを解凍します。
 8. ファイルの解凍後、LCS のオンプレミス コネクタに戻ります。
 9. **2: エージェントのコンフィギュレーション** タブで、**コンフィギュレーションの入力** を選択し、コンフィギュレーション設定を入力します。 必要な値を取得するには、**インフラストラクチャ** フォルダーと最新のコンフィギュレーション ファイルを持つすべてのコンピューターで次のコマンドを実行します。
@@ -1053,29 +1060,29 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 
     準備フェーズ中に、LCS は環境の Service Fabric アプリケーション パッケージを組み立てます。 配置を開始するローカル エージェントにメッセージを送信します。 環境ステータスが **準備中** であることに注意します。
 
-    ![準備状態の環境](./media/Preparing2021.png)
+    ![準備状態の環境。](./media/Preparing2021.png)
 
 4. 環境の詳細ページで、**完全な詳細** を選択します。 ページの右上隅には、環境ステータスが **準備中** として表示されることを確認します。
 
-    ![準備中ステータスを表示する環境の詳細ページ](./media/Details_Preparing2021.png)
+    ![準備中ステータスを表示する環境の詳細ページ。](./media/Details_Preparing2021.png)
 
     ローカル エージェントは展開要求を受け取り、展開を開始し、環境の準備ができたら LCS に再度通知します。 展開を開始すると、環境の状態が **展開中** に変わることに注意します。
 
-    ![展開状態の環境](./media/Deploying2021.png)
+    ![展開状態の環境。](./media/Deploying2021.png)
 
 5. 環境の詳細ページで、**完全な詳細** を選択します。 ページの右上隅には、環境ステータスが **展開中** として表示されることを確認します。
 
-    ![展開中ステータスを表示する環境の詳細ページ](./media/Details_Deploying2021.png)
+    ![展開中ステータスを表示する環境の詳細ページ。](./media/Details_Deploying2021.png)
 
 6. 展開に失敗すると、環境の状態が **失敗** に変更され、**再構成** ボタンが環境で使用可能になります。 基になる問題を修正し、**再構成** を選択して、任意のコンフィギュレーションの変更を更新してから、**展開** の再試行を選択します。
 
-    ![失敗状態の環境で使用する再構成ボタン](./media/Failed2021.png)
+    ![失敗状態の環境で使用する再構成ボタン。](./media/Failed2021.png)
 
     環境を再構成する方法の詳細については、[環境を再構成して、新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md)を参照してください。
 
 次の図は、正常な展開を示します。 ページの右上隅には、環境ステータスが **展開済** として表示されることを確認します。
 
-![環境が正常に展開された](./media/Deployed2021.png)
+![正常に展開された環境。](./media/Deployed2021.png)
 
 ### <a name="step-22-connect-to-your-finance--operations-environment"></a><a name="connect"></a>手順 22、 Finance + Operations 環境への接続
 

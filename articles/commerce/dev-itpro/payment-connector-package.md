@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 869f7a86991c8befc3cfd3db55d1a96f4b350d75
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 23990049a4518a1cf6dc55b645eed56716223a9d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959985"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355466"
 ---
 # <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations のデプロイのための Commerce 支払パッケージの作成
 
@@ -44,7 +44,7 @@ ms.locfileid: "5959985"
 
     モデル名には、**RetailPaymentConnectors** の接頭語を付ける必要があります。 この接頭語の後に、カスタム モデル名に関する情報を追加します。 たとえば、作成するモデルには **RetailPaymentConnectorsCustomConnector** という名前が付けられます。 **RetailPaymentConnectors** の接頭語で始まるモデル名のみが、コマース支払コネクタ オプションに読み込まれます。
 
-    ![モデルの作成ウィザードでのパラメーター ページの追加](./media/CreateModel.png)
+    ![モデルの作成ウィザードにパラメーター ページを追加します。](./media/CreateModel.png)
 
 3. **新しいパッケージの作成** オプションを選択し、**次へ** を選択します。
 4. 必要な参照パッケージを選択し、**次へ** を選択します。
@@ -52,7 +52,7 @@ ms.locfileid: "5959985"
 6. ソリューション エクスプローラーで、プロジェクトを選択し、**参照** を右クリックしてから、**参照の追加** を選択します。
 7. すべての支払コネクタ アセンブリとその依存関係を、プロジェクトに参照として追加します。
 
-    ![参照ダイアログ ボックスの追加](./media/Reference.png)
+    ![参照ダイアログ ボックスを追加します。](./media/Reference.png)
     
 [!NOTE]
 > すべての支払いコネクタ dll は移動可能である必要があります。移動可能および移動不可の支払いコネクタ dll があると、コネクタの読み取り時に問題が発生します。
@@ -77,7 +77,7 @@ https://AOSUrl/resources/styles/Mycss.css
 11. 以前に作成したモデルを選択し、パッケージ ファイルの場所を指定してから、**作成** を選択します。
 
 
-    ![配置パッケージ ダイアログ ボックスの作成](./media/Create.png)
+    ![配置パッケージ ダイアログ ボックスを作成します。](./media/Create.png)
 
     Visual Studio はモデルをビルドし、配置可能なパッケージを作成します。
 

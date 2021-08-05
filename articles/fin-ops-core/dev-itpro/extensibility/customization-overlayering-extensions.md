@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f00a38a299f8f8dfbf78a71f1a98e3ec021738ae
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 6ec90084ffc13bdde8c2f34f4c6d7ebb30148722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865847"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346480"
 ---
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能およびオーバーレイによるカスタマイズ
 
@@ -47,7 +47,7 @@ Microsoft またはサードパーティの Microsoft パートナーによっ�
 ## <a name="extension-models-and-packages"></a>拡張モデルおよびパッケージ
 新しいモデル要素、新しいコード、または拡張機能のみを含むモデルを作成することができます。 このモデルは独自の独立したアセンブリにコンパイルされます。 これらのアセンブリは、関連するメタデータおよびランタイム コンポーネントと一緒に (展開可能なパッケージ ファイルとして) パッケージ化し、ランタイム サンドボックスまたは実稼働環境に展開することができます。 拡張モデルを作成するには、モデルの作成ウィザードを開き、2番目のステップで **新しいパッケージを作成** を選択します。
 
-![./media/1_cust.png](./media/1_cust.png)
+![./media/1_cust.png.](./media/1_cust.png)
 
 拡張モデルの使用には、以下を含むいくつかの利点があります。
 
@@ -58,7 +58,7 @@ Microsoft またはサードパーティの Microsoft パートナーによっ�
 
 次の図は、拡張がアセンブリでどのように分離されるかを示しています。
 
-![media/ax7customization1.png](media/ax7customization1.png)
+![media/ax7customization1.png.](media/ax7customization1.png)
 
 ## <a name="code-extensions"></a>コードの拡張子
 3 つの方法でソース コードを拡張することができます。
@@ -173,7 +173,7 @@ Microsoft Dynamics AX 2012 では、テーブルの基本クラスの仮想メ�
 ## <a name="enum-extensions"></a>列挙拡張子
 拡張可能とマークされている (IsExtensible=True) 任意の列挙値を拡張することができます。
 
-[![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png)
+[![extensibleenums。](./media/extensibleenums-300x158.png)](./media/extensibleenums.png)
 
 列挙型を拡張することによって、新しい列挙値を追加することができます。 拡張可能な列挙を処理するとき、次のことに留意することが重要です。
 
@@ -203,7 +203,7 @@ Microsoft Dynamics AX 2012 では、テーブルの基本クラスの仮想メ�
 1.  新しいメニュー項目、サブメニュー、メニューの参照を追加し、既存のメニューへの参照を並べて表示します。
 2.  **表示** プロパティをいいえに設定して、既存のメニュー項目、タイル、またはメニュー内のサブメニューを非表示にします。
 
-#### <a name="menuextensionsmediamenuextensionspng"></a>[![menuextensions](./media/menuextensions-300x137.png)](./media/menuextensions.png)
+#### <a name="menuextensionsmediamenuextensionspng"></a>[![menuextensions。](./media/menuextensions-300x137.png)](./media/menuextensions.png)
 
 ## <a name="security-role-and-duty-extensions"></a>セキュリティ ロールおよび職務権限拡張機能
 セキュリティ ロールまたはセキュリティ職務権限を拡張して、これらの要素に新しい職務/特権を追加することができます。
@@ -293,11 +293,11 @@ Microsoft Dynamics AX 2012 では、テーブルの基本クラスの仮想メ�
 ## <a name="development-tools-support"></a>開発ツール サポート
 Visual Studio の開発ツールは、拡張機能を作成して作業するための統合された機能を提供します。 たとえば、**アプリケーション エクスプ ローラー** で要素名を右クリックするときに、その要素の拡張機能を作成することができます。
 
-![コンテキスト メニューでの拡張機能の作成](./media/3_cust.png)
+![コンテキスト メニューでの拡張機能を作成します。](./media/3_cust.png)
 
 拡張機能を作成するには、**ソリューション エクスプローラー** の現在のプロジェクトが、**アプリケーション エクスプ ローラー** で選択された要素のモデルを参照するモデルに属している必要があります。 特定のプロジェクトのモデルを表示するには、プロジェクトのプロパティを表示します。
 
-![プロジェクトのプロパティ ページ](./media/4_cust.png)
+![プロジェクトのプロパティ ページです。](./media/4_cust.png)
 
 Visual Studio は、現在のプロジェクトまたは新しいプロジェクトのいずれかで、拡張機能ファイルを作成します。 ソース コードとして、またはデザイナーを使用することにより、拡張ファイルで作業することができます。 他の任意のモデルをパッケージ化するのとまったく同じように、コード拡張モデルをパッケージ化し展開してください。 **Dynamics 365** メニューで、**配置** をポイントし、**配置パッケージの作成** をクリックして、パッケージ名のチェック ボックスを選択します。
 
@@ -305,11 +305,11 @@ Visual Studio は、現在のプロジェクトまたは新しいプロジェク
 
 テーブル、フォーム データ ソース、フォーム コントロール、拡張イベントをサポートする他の要素タイプは、**イベント** コレクション ノードの下に使用可能なイベント (およびデリゲート) をリストします。 たとえば、テーブル拡張機能の **イベント** ノードの表示は、フレームワークによって定義されるイベントを表示し、アプリケーション開発者により定義されるメソッドを委任します。
 
-![フレームワーク イベントの一覧](./media/5_cust.png)
+![フレームワーク イベントの一覧です。](./media/5_cust.png)
 
 **注記**: テーブルのイベント、フォームイベント、フォーム データ ソース イベント、フォーム コントロール イベントなどのイベントが、さまざまな要素タイプとサブ要素タイプのデザイナーに公開されています。 イベントを操作するイベント ノードのコンテキスト メニューを開きます。
 
-![コンテキスト メニューのイベント ハンドラー メソッドのコピー](./media/6_cust.png)
+![コンテキスト メニューのイベント ハンドラー メソッドをコピーします。](./media/6_cust.png)
 
 - **イベント ハンドラー メソッドのコピー**: このオプションは、メソッドシグネチャをクリップボードにコピーします。 任意の X++ コード エディターに貼り付けて、選択したイベントをサブスクライブするメソッドを定義することができます。
 - **イベント ハンドラーの検索** – 選択したイベントに登録されているすべてのメソッドを検索して一覧表示します。

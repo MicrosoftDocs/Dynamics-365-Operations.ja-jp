@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65a4149dddca74b1dae02f334fb1c7158d5fbecb
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 83cc3d6874a6cc4189fc39312c14bc05d62cd862
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189306"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350714"
 ---
 # <a name="horizontal-fields-and-buttons-group-subpattern"></a>水平フィールドおよびボタン グループのサブパターン
 
@@ -37,7 +37,7 @@ ms.locfileid: "6189306"
 -   1-3 ボタン
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![水平フィールドとボタン グループ フォーム サブパターンのワイヤーフレーム](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
+[![水平フィールドとボタン グループ フォーム サブパターンのワイヤーフレーム。](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -79,7 +79,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **SalesTable (GroupHeaderAddressHeaderOverview)** 
 
-[![フォーム例](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
+[![フォームの例。](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -96,12 +96,12 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   なし
+-   None
 
 ### <a name="dynamics-ax-2012-content"></a>Dynamics AX 2012 コンテンツ
 **SalesTable** 
 
-[![フォーム例](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+[![フォームの例。](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

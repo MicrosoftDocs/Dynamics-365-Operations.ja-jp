@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58e3937a44ae278c4a4f4d78ed597b55bf69026b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 1d584a2d421360ee8fb2ed1c62d59fe430872abd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893314"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358711"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 
@@ -61,11 +61,11 @@ ms.locfileid: "5893314"
 
 1. サインインし、カスタマイズするアプリケーション ワークスペースを開きます。 この例では、 **報酬管理** ワークスペースに埋め込まれている標準分析レポートを置換します。
 
-    ![報酬管理ワークスペース](media/compensation-management-workspace.png)
+    ![報酬管理ワークスペースです。](media/compensation-management-workspace.png)
 
 2. **分析** タブを選択すると、ワークスペースの埋め込み分析レポートにアクセスできます。
 
-    ![報酬管理分析ワークスペースの [分析] タブ](media/compensation-management-analytics.png)
+    ![報酬管理分析ワークスペースの [分析] タブ。](media/compensation-management-analytics.png)
 
     デフォルトでは、アプリケーションと共にパッケージ化された標準分析ワークスペース ソリューションが表示されます。 このソリューションのレポートは、プロビジョニング プロセス中に環境に合わせて自動的に配置および設定されます。
 
@@ -74,11 +74,11 @@ ms.locfileid: "5893314"
 
 3. アクション ペインの **オプション** タブの **Power BI** グループで **Edit Analytics** を選択してください。
 
-    ![Analytics Analytics ボタンを編集します](media/analytical-workspace-edit-entry.png)
+    ![Analytics Analytics ボタンを編集します。](media/analytical-workspace-edit-entry.png)
 
     編集モードで分析ワークスペースが開き、Power BI web デザイナー ツールに直接アクセスできます。
 
-    ![分析ワークスペース レポート エディター](media/analytical-workspace-edit-view.png)
+    ![ワークスペース レポート エディターを分析します。](media/analytical-workspace-edit-view.png)
 
 4. レポート キャンバスPower BIをカスタマイズするには、web デザイナー ツールを使用します。 直感的な web コントロールを使用すると、ビジュアルの追加および削除、ビジュアル型の変更、コンテンツの書式設定などの一般的なアクションを実行できます。 視覚エフェクト レポートのソースを調査して、システムで利用可能な最も関連性のあるデータに基づいて意思決定を行うこともできます。 詳細については、「[Power BIレポートへの視覚エフェクトの追加](/power-bi/visuals/power-bi-report-add-visualizations-i)」を参照してください。
 5. レポートのカスタマイズが完了したら、 **保存** ボタンを選択してレポート編集のレベルを上げます。 レポートへのカスタマイズは、サービスにすぐに反映されます。 したがって、組織のユーザーは最新のイノベーションにアクセスできます。

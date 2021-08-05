@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 380069b50f57be1639e40ad8556c8bfc161549d4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e43e559d2038415e20d42f4f3548003ffa16756
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751014"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351035"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 
@@ -100,12 +100,12 @@ ms.locfileid: "5751014"
 2. ソリューション エクスプローラーで、**FMCustomerEntity** ノードを右クリックしてから **開く** をクリックします。
 3. **FMCustomerEntity** のデザイナービューで、 **Fields** ノードを右クリックし、 **New** &gt; **String Unmapped Field** とクリックします。
 
-    [![新しくマップされていない文字列フィールドを作成](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
+    [![新しくマップされていない文字列フィールドを作成。](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
 
 4. 新しいフィールドの名前を **NameAndAddress** に変更します。
 5. 次のスクリーンショットに示すように、マッピングされていない **NameAndAddress** フィールドのプロパティを更新します。
 
-    [![NameAndAddress のマップされていないフィールドのプロパティの更新](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
+    [![NameAndAddress のマップされていないフィールドのプロパティの更新。](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
 
 6. **FMCustomerEntity** &gt; **メソッド** に移動します。 **メソッド** ノードを右クリックし、**新規** をクリックします。 メソッド名が、マップされていない計算されたフィールドの **DataEntityView方法** のプロパティ値と一致していることを、確認します。
 7. 次の X++ コードをメソッドに貼り付けます。 このメソッドは、結合されて書式設定された **NameAndAddress** 値を返します。
@@ -161,7 +161,7 @@ ms.locfileid: "5751014"
 2. マップされていないフィールドのプロパティ ウィンドウで、**名前** プロパティを **FullName** に設定します。
 3. **計算フィールドかどうか** プロパティ **いいえ** に設定します。 **DataEntityView メソッド** が空のままであることを確認します。
 
-    [![マップされていないフィールドのプロパティの設定](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
+    [![マップされていないフィールドのプロパティの設定。](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
 
 4. **FMCustomerEntity** デザイナーで、**メソッド** ノードを右クリックしてから、**オーバーライド &gt; postLoad** とクリックします。 このメソッドの X++ コードは、仮想フィールドの値を生成します。
 5. 次の X++ コードを **postLoad** オーバーライドに貼り付けます。 **postLoad** メソッドが **void** を返すことに注意します。

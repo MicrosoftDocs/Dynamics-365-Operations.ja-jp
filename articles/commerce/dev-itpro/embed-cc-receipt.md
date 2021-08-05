@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ec874531288187ccd95f9c2a1e08dd8ed738b542
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3326332eab1bd0bd8adbad72ce27f598271e57ad
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793009"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353848"
 ---
 # <a name="embed-processor-credit-card-receipts-in-customer-receipts"></a>顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 
@@ -57,21 +57,21 @@ ms.locfileid: "5793009"
 
 5. 左ウィンドウの下部にある **ヘッダー** セクションを選択し、**EFTメッセージ** のレシートの変数をヘッダーにドラッグします。
 
-    ![カード所有者のレシートのヘッダにおける EFT メッセージ変数](media/Cardholders.png)
+    ![カード所有者のレシートのヘッダーにおける EFT メッセージ変数。](media/Cardholders.png)
 
 6. **保存** を選択します。
 7. レシート デザイナーがまだ開いている場合は、左上隅にある **形式の選択** を選択してレシート セレクターを開きます。
 8. レシート セレクターで、 POS で使用する **レシート** の形式を選択します。 デモ データを使用している場合は、レシート形式に **1\_p**  を選択します。
 9. レシート デザイナーで、左ウィンドウの **下部** にあるフッター セクションを選択し、**カード支払/入金明細** のレシート変数をフッターにドラッグします。
 
-    ![顧客のレシートのフッターにおけるカードの支払/入金の詳細変数](media/customersreceipt.png)
+    ![顧客のレシートのフッターにおけるカードの支払/入金詳細の変数。](media/customersreceipt.png)
 
 10. **保存** を選択します。
 11. **1090** 配送スケジュールを使用して、変更をPOSに同期します。
 12. POS のシフトを閉じ、新しいシフトを開きます。
 13. クレジットカード取引を実行して、決済処理業者のクレジット カード レシートが顧客のレシートに埋め込まれていることを確認します。
 
-    ![クレジットカード情報が記載された顧客のレシート](media/receipt_w_cc.png)
+    ![クレジット カード情報が記載された顧客のレシート。](media/receipt_w_cc.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

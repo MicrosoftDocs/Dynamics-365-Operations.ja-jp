@@ -3,20 +3,18 @@ title: X++ 静的クラス
 description: このトピックでは、 X++ の静的クラスについて説明します。
 author: RobinARH
 ms.date: 12/02/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150303
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422c3a304e81b3a2bf7c21e8249fc3003b551dfb
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 461394e375626c470a5ef23286b4edd129e8dbea
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865963"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661360"
 ---
 # <a name="x-static-classes"></a>X++ 静的クラス
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: d2c6b27653561c6d018a67f90f3a812172b1e730
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9db2bc4fa5b852a24a26c5fa140863a352304588
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923420"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357480"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 
@@ -44,11 +44,11 @@ ms.locfileid: "5923420"
 
 - ナビゲーション バーには製品名の接尾語として「プレビュー」という単語が表示されます。  
 
-    ![ナビゲーション バーのプレビュー インジケーター](media/previewCallout.png  "ナビゲーション バーのプレビュー インジケーター")  
+    ![ナビゲーション バーのプレビュー インジケーター。](media/previewCallout.png  "ナビゲーション バーのプレビュー インジケーター")  
 
 - **情報** ボックスのタイトルには、「プレビュー」という単語が含まれます。 
 
-    ![プレビューは情報ボックスにも表示されます](media/previewAboutBox.png  "プレビューは情報ボックスにも表示されます")
+    ![プレビューは情報ボックスにも表示されます。](media/previewAboutBox.png  "プレビューは情報ボックスにも表示されます")
     
 
 ## <a name="updated-navigation-bar-that-aligns-with-the-office-header"></a>Office のヘッダーに対応した更新済みのナビゲーション バー
@@ -58,11 +58,11 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 次の図は、プラットフォーム更新プログラム 24 の更新済のナビゲーション バーを表示します。
 
-![プラットフォーム更新プログラム 24 の更新済のナビゲーション バー](media/updatedNavBar.png  "プラットフォーム更新プログラム 24 の更新済のナビゲーション バー")
+![プラットフォーム更新プログラム 24 の更新済のナビゲーション バー。](media/updatedNavBar.png  "プラットフォーム更新プログラム 24 の更新済のナビゲーション バー")
 
 次の図は、プラットフォーム更新プログラム 23 でナビゲーション バーがどのように表示されるかを示します。
 
-![プラットフォーム更新プログラム 23 のナビゲーション バー](media/existingNavBar.png  "プラットフォーム更新プログラム 23 のナビゲーション バー")
+![プラットフォーム更新プログラム 23 のナビゲーション バー。](media/existingNavBar.png  "プラットフォーム更新プログラム 23 のナビゲーション バー")
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 

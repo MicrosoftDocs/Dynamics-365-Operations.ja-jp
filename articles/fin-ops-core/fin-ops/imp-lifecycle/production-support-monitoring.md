@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: v-petbal
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 72b9dab03a28b73d81bd2e3999232da47d1604a8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c4bd0b43ddded65a4e115e3930e90e09eb11c064
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018894"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346466"
 ---
 # <a name="production-support-and-monitoring"></a>運用サポートと監視
 
@@ -27,7 +27,7 @@ ms.locfileid: "6018894"
 
 Microsoft のツールおよびサポートは、インフラストラクチャとアプリケーションのサポートを提供することにより、環境の安定性および有効性に役立ちます。 ただし、このサポートは、実装されているシステムとその環境をパートナーおよびクライアントが正しく開発、テスト、構成、管理、および監視している場合にのみ有効です。
 
-![Microsoft が提供するサポート](./media/support-provided-microsoft.png)
+![Microsoft が提供するサポート。](./media/support-provided-microsoft.png)
 
 ## <a name="supporting-actions"></a>サポート アクション
 
@@ -144,7 +144,7 @@ Microsoft 365 サービスの問題が発生しているのに、**サービス�
 
 さらに、独自のカスタム フィルターを追加し、分析のためにログをコンマ区切り値 (CSV) ファイルにエクスポートすることもできます。
 
-![活動タブ](./media/activity.png)
+![活動タブ。](./media/activity.png)
 
 #### <a name="health-metrics"></a>正常性指標
 

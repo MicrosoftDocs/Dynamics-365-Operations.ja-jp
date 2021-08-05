@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ed3e92c93a5e603c4f7d5c44e1767c289345b20a
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 352e39f980d361f122d2c70114a24e22e262e593
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270521"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348228"
 ---
 # <a name="configure-gift-with-purchase-promotions"></a>購入プロモーションでギフトを構成する
 
@@ -42,7 +42,7 @@ Commerce Version 10.0.19 のリリース以降、コマース本社 (**Retail �
 
 次の図は、Commerce 本社での「ドレス シャツに $200 を費やし、2 つのネクタイを無料で入手する」プロモーションの例の構成を示しています。 
 
-![Commerce 本社での購入例の構成を含むギフト](./media/gift-with-purchase.png)
+![Commerce 本社での購入例のコンフィギュレーションを含むギフト。](./media/gift-with-purchase.png)
 
 前述のように、**しきい値割引明細行** クイック タブの **数量制限** のフィールドを使用して、割引する必要のある品目の数を制限できます。 このフィールドが **0.00** に設定されている場合、割引できる品目の数に制限はありません。 したがって、前の例では、**ネクタイ** カテゴリの **数量制限** フィールドが **0.00** に設定されている場合、特定のしきい値を満たす顧客は、任意の数のネクタイを無料で入手できます。 
 

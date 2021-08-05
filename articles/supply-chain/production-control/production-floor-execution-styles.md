@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3ff7187bdd035a639ed8bb1eb61d643136db76c4
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: ebb1f54d3edb55b388b5f710f8906e693c55858f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115037"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353952"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>生産現場の実行インターフェースのスタイル
 
@@ -60,13 +60,13 @@ ms.locfileid: "6115037"
 
 次の図は、その中にコントロールがないカード ビューを示しています。
 
-![要素のないカード ビュー](media/pfe-styles-empty-card.png)
+![要素のないカード ビュー。](media/pfe-styles-empty-card.png)
 
 次の図は、その中にコントロールを含んでいるカード ビューを示しています。
 
-![Hz を示す要素を含むカード](media/pfe-styles-elements.png)
+![Hz を示す要素を含むカード。](media/pfe-styles-elements.png)
 
-![メンテナンス要求の要素を含むカード](media/pfe-styles-elements-maintenance.png)
+![メンテナンス要求の要素を含むカード。](media/pfe-styles-elements-maintenance.png)
 
 ## <a name="business-card"></a>ビジネス カード
 
@@ -82,7 +82,7 @@ ms.locfileid: "6115037"
 - **複数選択**: **いいえ**
 - **列ラベルの表示**: **いいえ**
 
-![ビジネス カード](media/pfe-styles-business-card.png)
+![ビジネス カード。](media/pfe-styles-business-card.png)
 
 ## <a name="radio-button"></a>オプション ボタン
 
@@ -98,17 +98,17 @@ ms.locfileid: "6115037"
 
 次の図は、テキストがラジオ ボタンの下に表示される例を示しています。
 
-![下にテキストが表示されているラジオ ボタン](media/pfe-styles-radio-text-below.png)
+![下にテキストが表示されているラジオ ボタン。](media/pfe-styles-radio-text-below.png)
 
 次の図は、テキストがラジオ ボタンの右に表示される例を示しています。
 
-![右にテキストが表示されているラジオ ボタン](media/pfe-styles-radio-text-right.png)
+![右にテキストが表示されているラジオ ボタン。](media/pfe-styles-radio-text-right.png)
 
 ### <a name="radio-buttons-in-internet-explorer"></a>Internet Explorer のラジオ ボタン
 
 ラジオ ボタン スタイルは Internet Explorer ではサポートされません。 次の図は、ラジオ ボタンが Internet Explorer でどのように表示されるかを示しています。
 
-![Internet Explorer のラジオ ボタン](media/pfe-styles-browser.png)
+![Internet Explorer のラジオ ボタン。](media/pfe-styles-browser.png)
 
 ## <a name="buttons"></a>ボタン
 
@@ -132,7 +132,7 @@ ms.locfileid: "6115037"
 - ボタンはフォーム グループに含まれています。
 - グループ名が **DefaultButtonGroup** または **PrimaryButtonGroup** で始まる (**DefaultButtonGroup10** など)。
 
-![プライマリ ボタン](media/pfe-styles-first.png)
+![プライマリ ボタン。](media/pfe-styles-first.png)
 
 ### <a name="secondary-button"></a>セカンダリ ボタン
 
@@ -141,7 +141,7 @@ ms.locfileid: "6115037"
 - ボタンはフォーム グループに含まれています。
 - グループが **右側のパネル** と名前が付けられている、またはグループ名が **SecondaryButtonGroup** で始まる。
 
-![セカンダリ ボタン](media/pfe-styles-second.png)
+![セカンダリ ボタン。](media/pfe-styles-second.png)
 
 ### <a name="third-group-button"></a>3 番目のグループ ボタン
 
@@ -150,7 +150,7 @@ ms.locfileid: "6115037"
 - ボタンはフォーム グループに含まれています。
 - グループが **左側のパネル** と名前が付けられている、またはグループ名が **ThirdButtonGroup** で始まる。
 
-![3 番目のグループのボタン](media/pfe-styles-third.png)
+![3 番目のグループのボタン。](media/pfe-styles-third.png)
 
 ### <a name="fourth-group-button"></a>4 番目のグループのボタン
 
@@ -167,7 +167,7 @@ ms.locfileid: "6115037"
 - **幅**: **自動**。
 - **高さ**: **自動**。
 
-![4 番目のグループ ボタン](media/pfe-styles-fourth.png)
+![4 番目のグループ ボタン。](media/pfe-styles-fourth.png)
 
 ### <a name="flat-button"></a>フラット ボタン
 
@@ -184,7 +184,7 @@ ms.locfileid: "6115037"
 - **幅**: **自動**。
 - **高さ**: **自動**。
 
-![フラット ボタン](media/pfe-styles-flat-button.png)
+![フラット ボタン。](media/pfe-styles-flat-button.png)
 
 ## <a name="combo-box"></a>コンボ ボックス
 
@@ -236,7 +236,7 @@ ms.locfileid: "6115037"
 
 次の図は、2 つのコンボ ボックス コントロールを示します。 左側のコンボ ボックスには空のテキスト ボックスがあり、**クリア** ボタンは無効になっています。 右側のコンボ ボックスにはテキスト ボックスにテキストがあり、**クリア** ボタンが有効になっています。
 
-![クリア ボタン付き、またはなしのコンボ ボックス](media/pfe-styles-combo.png)
+![クリア ボタン付き、またはなしのコンボ ボックス。](media/pfe-styles-combo.png)
 
 ## <a name="quick-filter"></a>クイック フィルター
 
@@ -250,7 +250,7 @@ ms.locfileid: "6115037"
 
 次の図は、2 つのクイック フィルター コントロールを示します。 左側のクイック フィルターは空になっており、結果の数は表示されません。 右側のクイック フィルターには検索文字列が含まれるので、結果の数が表示されます。
 
-![検索文字列を使用した場合および使用しない場合のクイック フィルター コントロールの例](media/pfe-styles-quick-filter.png "検索文字列を使用した場合および使用しない場合のクイック フィルター コントロールの例")
+![検索文字列を使用した場合、および使用しない場合のクイック フィルター コントロールの例。](media/pfe-styles-quick-filter.png "検索文字列を使用した場合および使用しない場合のクイック フィルター コントロールの例")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

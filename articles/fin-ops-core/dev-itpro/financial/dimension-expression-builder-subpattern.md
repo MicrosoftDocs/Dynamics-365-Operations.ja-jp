@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c62be62586f2e894d12207d3a9c11a71d75d494
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: d61a131c15f7ae705522733ea0fad41206ddc28e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111648"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347224"
 ---
 # <a name="dimension-expression-builder-subpattern"></a>分析コード式ビルダーのサブパターン
 
@@ -33,7 +33,7 @@ ms.locfileid: "6111648"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![コンテナーのワイヤーフレーム](media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
+[![コンテナーのワイヤーフレーム。](media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
 
 ## <a name="model"></a>モデル
 ### <a name="high-level-structure"></a>高レベル構造体
@@ -56,7 +56,7 @@ TabPage | Group
 None
 
 ## <a name="examples"></a>例
-フォーム: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**予算作成** &gt; **設定** &gt; **予算管理** &gt; **予算管理コンフィギュレーション**) [![フォーム例](media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
+フォーム: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**予算作成** &gt; **設定** &gt; **予算管理** &gt; **予算管理コンフィギュレーション**) [![フォーム例。](media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

@@ -12,12 +12,12 @@ ms.custom: 196953
 ms.assetid: 6e7h6896-edef-4739-98ad-c9ea12880972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 7e0e6306cab292f15848bc48909894336ed6ba80
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 46d0897e526da9415e1482696c8fffa733a6989d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189928"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354373"
 ---
 # <a name="business-process-modeler-library-updated-bpm-experience"></a>ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )
 
@@ -35,15 +35,15 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
     -   **コーポレート ライブラリ** - 組織内のユーザーがアップロードした独自の業務プロセス。
     -   **グローバル ライブラリ** – 産業間の標準の業務プロセス。
 
-    [![業務プロセス ライブラリページの 3 種類のライブラリ](./media/bpm_02.png)](./media/bpm_02.png)
+    [![業務プロセス ライブラリページの 3 種類のライブラリ。](./media/bpm_02.png)](./media/bpm_02.png)
 
 2.  新しいライブラリを作成するには、任意のライブラリを右クリックし、ウィンドウの左下隅にある **作成** を選択します。 既存のライブラリをコピーするには、そのライブラリを右クリックし、ウィンドウの左下隅にある **コピー** を選択します。
 
-    [![コピー ボタンの場所](./media/bpm_03.png)](./media/bpm_03.png)
+    [![コピー ボタンの場所。](./media/bpm_03.png)](./media/bpm_03.png)
 
     -   **グローバル ライブラリ** – 産業間の標準の業務プロセス。 
     
-    [![業務プロセス ライブラリページの 3 種類のライブラリ](./media/bpm_02.png)](./media/bpm_02.png)
+    [![業務プロセス ライブラリページの 3 種類のライブラリ。](./media/bpm_02.png)](./media/bpm_02.png)
 
 3.  ライブラリ名を入力します。
 
@@ -69,7 +69,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
     -   ノードを削除するには、中央ウィンドウでビジネス プロセスを選択し、右ウィンドウで **削除** を選択します。
     -   新しいノードを作成するには、中央ウィンドウの上部にある **新規ビジネス プロセス** フラグを、新しいノードが表示される階層内の場所にドラッグします。
 
-        [![新しい業務プロセス フラグ](./media/bpm_06.png)](./media/bpm_06.png)
+        [![新しい業務プロセス フラグ。](./media/bpm_06.png)](./media/bpm_06.png)
 
     -   既存の業務プロセス ライブラリから業務プロセスをインポートするには、次の手順を実行します。
 
@@ -82,7 +82,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 2.  関連付けられたタスク記録がある業務プロセスの明細行に移動し、リンクを選択します。
 3.  手動でフロー チャートを変更するには、**Activities** の下にタイルをドラッグします。
 
-    [![フロー チャートを手動で変更](./media/bpm_09.png)](./media/bpm_09.png)
+    [![フロー チャートを手動で変更。](./media/bpm_09.png)](./media/bpm_09.png)
 
 4.  変更されたフローチャートの Microsoft Visio 図をアップロードするには、**Visio** タブを選択します。
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 562f2a0d7d50253401eb3429b23a4d5744e98bea
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: f746e52da3c95e53082da471e577c9638eff2299
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920975"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359743"
 ---
 # <a name="delivering-isv-solutions-using-one-version"></a>1 つのバージョンを使用した ISV ソリューションの提供
 
@@ -117,7 +117,7 @@ ISV ソリューションでも同様のアプローチに従うことを推奨�
 
 次の図に示すように、独自の新しいリリースの頻度は Microsoft のリリースに依存しないようにできます。 このトピックの [分岐とビルド](#branches-and-builds) セクションで説明されているように、ソースコード分岐の戦略の採用を検討する必要があります。
 
-![分岐戦略](media/oneversion-isv-branch.png)
+![分岐戦略。](media/oneversion-isv-branch.png)
 
 重要なのは、リリースされた各更新プログラムの品質です。 テストは品質を保証するのに役立ちますが、一方で品質は設計と実装のフェーズで構築されるべきです。 次のセクションで説明するように、1 つのバージョンのモデルでは、考慮すべき新しい分析コードがいくつかあります。
 

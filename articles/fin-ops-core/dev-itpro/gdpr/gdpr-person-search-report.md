@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dadb00a9afc4008c734f895e83476911ecb3b786
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fd625acd25f29eaabe043ca98f95847e41d979cf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750292"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360318"
 ---
 # <a name="person-search-report"></a>個人検索レポート
 
@@ -32,7 +32,7 @@ ms.locfileid: "5750292"
 
 Finance and Operations データに、連絡先、顧客、ユーザー、作業者、またはその他の担当者を追加するとき、通常、その担当者のアドレス帳エントリの作成から開始します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID、および場合によりその他の ロール ID を持ちます。
 
-![アドレス帳の構成](../../fin-ops/organization-administration/media/address-book-structure.png)
+![アドレス帳の構造。](../../fin-ops/organization-administration/media/address-book-structure.png)
 
 時には、入力して説明するのに使用されている情報を確認したり、またはユーザーが正しいことを識別する場合があります。 データを要求したデータ件名と情報を共有すると便利な状況が生じることもあります。 個人検索レポートは、これらの両方のタスクに役立ちます。
 
@@ -75,21 +75,21 @@ LCS からテンプレートをダウンロードすることも、7.1 以降の
 
 1.  システム管理メニューから個人検索リスト ページを開き、新しい検索を作成します。
 
-    ![個人の検索リスト ページ](../media/gdpr-person-search-list-page.png)
+    ![個人検索リスト ページ。](../media/gdpr-person-search-list-page.png)
 
 2.  検索には、ID、名前、アドレスの 3 つのオプションがあります。 必要な検索のタイプを追加します。
 
-    ![検索の定義](../media/gdpr-define-search.png)
+    ![検索の定義。](../media/gdpr-define-search.png)
 
 3.  結果を表示するために検索を実行します。
 
 4.  結果が有効であることを確認します。 レポートに含めたくない情報を返してくる選択を解除します。
 
-    ![検索結果の確認](../media/gdpr-review-search-results.png)
+    ![検索結果の確認。](../media/gdpr-review-search-results.png)
 
 5.  **プロセス レポート** を選択し、担当者検索テンプレートを選択します。
 
-    ![レポートを処理する](../media/gdpr-process-report.png)
+    ![レポートの処理。](../media/gdpr-process-report.png)
 
 6.  **OK** を選択します。 データ パッケージが生成されます。
 

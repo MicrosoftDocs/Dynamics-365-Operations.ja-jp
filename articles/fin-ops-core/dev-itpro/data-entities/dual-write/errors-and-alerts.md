@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 760f7253e870a22d732c04633815a521b37f061d
-ms.sourcegitcommit: d13c0ff34f52ea0453d281fed643bc9a983fb7e8
+ms.openlocfilehash: 9c0f09ca449e7ee4f35e78a7747b29ce9aa8313b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6033283"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359825"
 ---
 # <a name="error-management-and-alert-notifications"></a>エラー管理と警告通知
 
@@ -29,21 +29,21 @@ Microsoft は、エラーに強い二重書き込みを実現するために、�
 
 アクティビティ ログは、特定のテーブル マップが **実行していません** の状態から **実行中** 状態に移行するイベントの時系列一覧を提供します。 たとえば、一覧には、作成されたマッピング、列マッピングの更新、実行されたマッピングを含めることができます。 さらに、エラーが発生した場合は、ログをダウンロードして、次のレベルの詳細を取得できます。
 
-![アクティビティ ログの表示](media/activity-log.png)
+![活動ログの表示。](media/activity-log.png)
 
 ## <a name="re-running-execution-for-initial-sync"></a>初期同期の実行の再実行
 
 Finance and Operations アプリ と Dataverse の間で既存のデータをコピーしているときに問題が発生した場合、**初回同期の詳細** タブにエラー数が表示されます。 
 
-![初期同期エラー](media/Initial-sync-rerun-1.png)
+![初期同期エラー。](media/Initial-sync-rerun-1.png)
 
 個々のプロジェクトをクリックすると、同期が失敗した方向 (Finance and Operations アプリから Dataverse またはその逆) と、失敗した理由の詳細が表示されます。 基になる問題を修正することを選択してから、最後の同期で失敗またはエラーが発生したレコードとともに、に実行全体を再試行する **実行の再実行** を選択できます。これが完了すると、初期同期が完了し、テーブルは **実行中** の状態に戻ります。 エラーを無視して新しい増分データを追加する場合があります。 この場合は、**エラーなしで再実行** を選択できます。これにより、新しいデータを追加し、エラーが発生したレコードを再試行する必要がなくなります。 
 
-![エラーのある初期同期再試行](media/Initial-sync-rerun-3.png)
+![エラーのある初期同期再試行。](media/Initial-sync-rerun-3.png)
 
 完了すると、状態が **完了** とマークされ、テーブルを **実行中** の状態に変更できます。 
 
-![エラーのない初期同期再試行](media/Initial-sync-rerun-4.png)
+![エラーのない初期同期再試行。](media/Initial-sync-rerun-4.png)
 
 ## <a name="queued-records-insights-and-error-management&quot;></a>キューに入れられたレコードのインサイトとエラー管理
 
@@ -56,17 +56,17 @@ Finance and Operations アプリ と Dataverse の間で既存のデータをコ
 
 **一時停止** 状態のテーブル マップ用に作成または更新されたレコードは、テーブル マップの **キューに入れられたレコード** で表示できます。
 
-![キューに入れられたレコードのインサイト](media/Queued-Insights1.png &quot;キューに入れられたレコードのインサイト")
+![キューに入っているレコードのインサイト。](media/Queued-Insights1.png &quot;キューに入れられたレコードのインサイト")
 
 **キューに入れられたレコード数の合計** は、特定のテーブル マップに対してキューに入れられているレコードの合計数を示します。 **さらに読み込む** をクリックすると、ページ設定された表示内で追加のレコードを表示できます。 統合キーでレコードのフィルタ処理もできます。
 
 テーブル マップを再開すると、**一時停止** 状態から **実行中** の状態に切り替わり、キューから送信先アプリケーションにレコードが書き込まれます。 送信先アプリでのビジネス検証など、さまざまな理由により、一部のレコードがエラーが発生し、書き込みに失敗する可能性があります。 このような場合、レコードは引き続きキューに残り、**キャッチ アップ エラー** タブに表示されます。
 
-![キューに入れられたレコードの再試行を選択](media/Queued-Insights-retry-selected3.png "キューに入れられたレコードの再試行を選択")
+![キューに入っているレコードの再試行の選択。](media/Queued-Insights-retry-selected3.png "キューに入れられたレコードの再試行を選択")
 
 詳細なエラー メッセージは、基になる問題を修正するのに役立ちます。その後、**再試行の選択** レコードまたは **すべて再試行** レコードを選択できます。 再試行が成功すると、**再試行の状態** が **完了** とマークされます。
 
-![キューに入れられたレコードが完了](media/Queued-Insights-retry-selected4.png "キューに入れられたレコードの再試行を選択")
+![キューに入っているレコードの完了。](media/Queued-Insights-retry-selected4.png "キューに入れられたレコードの再試行を選択")
 
 > [!NOTE]
 > エラーが発生したレコードは、7 日間キューで使用可能になり、その後キューは削除されます。 場合によっては、これらのレコードが不要になり、キューから削除できることがあります。
@@ -77,11 +77,11 @@ Finance and Operations アプリ と Dataverse の間で既存のデータをコ
 
 次の図は、**アプリケーション エラー** タイプのエラーが 15 分以内に 10 回発生した場合に、二重書き込みが一時停止する例を示しています。
 
-![1 つ以上の警告設定の作成](media/create-alert-settings.png)
+![1 つ以上の警告設定の作成。](media/create-alert-settings.png)
 
 **警告設定の作成** を選択することにより、追加の警告を作成できます。 また、個人またはグループのどちらに通知を送信するかを選択したり、二重書き込みシステムがユーザーに代わりにアクションを実行するかどうかを選択することもできます。 警告をグループに送信するには、コンマで区切られた値、例えば "id1@contoso.com, id2@contoso.com" を入力します。
 
-![警告の作成と通知の送信](media/create-alert-notification.png)
+![警告の作成と通知の送信。](media/create-alert-notification.png)
 
 > [!NOTE]
 > 警告を有効にするには、テーブル マップを再起動する必要があります

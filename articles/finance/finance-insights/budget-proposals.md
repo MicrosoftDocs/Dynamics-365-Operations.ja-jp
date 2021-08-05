@@ -2,7 +2,7 @@
 title: 予算案 (プレビュー)
 description: このトピックでは、組織の履歴データで機械学習モデルを使用して予算案を生成するプロセスについて説明します。
 author: panolte
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region:
 ms.author: panolte
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: bce5a6df92e929ecbdba51d113720b14b58135c3
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 8c546a8d3bd625d06df5afe19e66d5c9d4e3e2b7
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186578"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638790"
 ---
 # <a name="budget-proposals-preview"></a>予算案 (プレビュー)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 組織では、予算の準備にかなりの時間とリソースを費やします。 この作業の多くは、予算作成プロセスで使用されるデータの収集など、反復的な付加価値の低い作業です。 部署ごとの明細行ごとの予算を準備するには、追加の作業が必要です。 
 

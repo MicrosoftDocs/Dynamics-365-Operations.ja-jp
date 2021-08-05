@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: 57201
+ms.custom:
+- "57201"
+- intro-internal
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26b685f16c1d18ed93710ebb12b0b4826ca2764d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a73b3ae727a9f50a39698d641f5b5fcc30d155f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746021"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361304"
 ---
 # <a name="batch-processing-and-batch-servers"></a>バッチ処理とバッチ サーバー
 
@@ -57,7 +59,7 @@ ms.locfileid: "5746021"
 
 この例では、ジョブ 1 と呼ばれるジョブを作成しました。 次の図に示すように、職務には 7 つのタスクがあります。タスク 1、タスク 2、タスク 3、タスク 4、タスク 5、タスク 6、およびタスク 7 です。 
 
-![依存タスクのジョブ](./media/batch_framework_programmability.gif) 
+![依存タスクのジョブ。](./media/batch_framework_programmability.gif) 
 
 タスクには次の依存関係があります。
 

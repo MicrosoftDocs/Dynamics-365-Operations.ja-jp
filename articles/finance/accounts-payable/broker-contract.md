@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6074a615627aa25643ad9a4e3eedaaee5877a61b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2630e53ada8272a93372e764412ffc0717df79ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820799"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360190"
 ---
 # <a name="broker-contract-management"></a>ブローカー契約管理
 
@@ -53,7 +53,7 @@ ms.locfileid: "5820799"
 ブローカー契約は、**ブローカー契約** ページで登録されます。 **ブローカー契約** ページを開くには、**買掛金勘定** \> **ブローカーおよびロイヤルティ** \> **ブローカー契約** を選びます。
 
 
-![ブローカー請求ページ](./media/broker-contract-management-contract-page.png "ブローカー請求ページ")
+![ブローカー請求ページ。](./media/broker-contract-management-contract-page.png "ブローカー請求ページ")
 
 契約には、ブローカー手数料を支払う当事者 (製品を購入する顧客または販売会社) に関する取り決め条件が含まれています。 この条件は、**諸費用コード** ページで設定されます。
 
@@ -90,7 +90,7 @@ ms.locfileid: "5820799"
 
 すべての請求は、**ブローカー請求** ページで表示できます。 手数料ごとに、**修飾** フィールドは、承認された後に仲介サービスのベンダーに支払われる手数料の金額を指定します。
 
-![ブローカー請求ページ](./media/broker-contract-management-contract-page.png "ブローカー請求ページ")
+![ブローカー請求ページ。](./media/broker-contract-management-contract-page.png "ブローカー請求ページ")
 
 ページの下部セクションのフィールドは、請求書番号、請求書明細行の正味金額、および関連付けられている顧客トランザクションなど、発生元となる販売の請求書に関する詳細を指定することに注意してください。
 
@@ -117,7 +117,7 @@ ms.locfileid: "5820799"
 
 顧客が販売注文の一部の単位を返品した場合、ブローカーは返品された数量に関連する手数料を得る資格を失った可能性があります。 この場合、一部の金額の 2 つ目の請求を承認する必要があります。 **買掛金管理** \> **ブローカーおよびロイヤリティ** \> **ブローカー請求** を選択し、請求を選択します。 **承認** フィールドに、合計数量から返品単位を引いた数を入力します。 アクション ウィンドウで、**承認** を選択します。
 
-![請求の部分処理](./media/broker-contract-management-process-claim.png "請求の部分処理")
+![請求の部分処理。](./media/broker-contract-management-process-claim.png "請求の部分処理")
 
 **承認済** フィールドの値と **修飾** フィールドの値の間に違いがある場合、**差額** フィールドに記録されます。 これらの値は、請求がまだ未決済であることと、請求が終了と見なされる前に差額を処理する必要があることを示しています。
 

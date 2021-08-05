@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ce2ce1d8aa2fd38e3d7d542b03b26ccaf0a2c03
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 974e6debb4ed2656e9f470bb95e62bf2b19d92fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188392"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350096"
 ---
 # <a name="section-tiles-subpattern"></a>セクション タイルのサブパターン
 
@@ -32,7 +32,7 @@ ms.locfileid: "6188392"
 セクション タイル サブパターンは、タイル、グラフ、および単一カードのセットを含む最初のパノラマ セクション (**概要** セクション) 専用の、運用ワークスペース パターンの一部として使用されます。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![セクション タイルのワイヤーフレーム](./media/sectiontileswireframe.png)](./media/sectiontileswireframe.png)
+[![セクション タイルのワイヤーフレーム。](./media/sectiontileswireframe.png)](./media/sectiontileswireframe.png)
 
 ## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
@@ -68,7 +68,7 @@ ms.locfileid: "6188392"
 ## <a name="examples"></a>例
 フォーム: **PurchOrderMaintainWorkspace** (**すべてのワークスペース** &gt; **発注書の準備** (**集計** セクションを参照してください)
 
-[![セクション タイルの例](./media/sectiontilesexample.png)](./media/sectiontilesexample.png)
+[![セクション タイルの例。](./media/sectiontilesexample.png)](./media/sectiontilesexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

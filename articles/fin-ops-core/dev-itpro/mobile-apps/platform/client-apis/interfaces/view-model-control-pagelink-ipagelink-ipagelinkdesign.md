@@ -3,21 +3,16 @@ title: PageLinkDesign タイプ
 description: Pagelink デザイン オブジェクトの種類。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9ba36fa48e4c7a2859141b3abe359372f6f89eb6
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 699aa556d2c73093430349dc0d35dfdc3682f227
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909270"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661528"
 ---
 # <a name="pagelinkdesign-type"></a>PageLinkDesign タイプ
 
@@ -83,7 +78,7 @@ background: string (optional)
 
 背景色を設定します。
 「テーマ」を使用している場合、色はアプリケーションのテーマの色と一致します。 <br>
-![使用可能な背景色の画像](../../../platform/media/colors_pagelink.PNG)
+![使用可能な背景色の画像。](../../../platform/media/colors_pagelink.PNG)
 
 
 ### <a name="bindings"></a>bindings
@@ -113,7 +108,7 @@ color: string (optional)
 この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。<br>
 注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。<br>
 使用可能な色は次のとおりです。 <br>
-![使用可能な前景色の画像](../../../media/colors.PNG)
+![使用可能な前景色の画像。](../../../media/colors.PNG)
 
 > [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color) から継承
 

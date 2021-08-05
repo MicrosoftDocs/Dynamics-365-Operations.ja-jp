@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c07f9bb6d8b8613757cb2098865cff88072885d1
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 0f44f33d9e086e9b15fcc7b78ded0a042d885760
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5919783"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345320"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 
@@ -36,19 +36,19 @@ ms.locfileid: "5919783"
 
 1. 新しいエンジンを配置するには、エンジンを含めるモデルが必要です。 **Dynamics 365**&gt; **モデル管理** メニューで、**モデルの作成** をクリックして、新しいモデルを作成します。 **モデルの作成** ウィザードの最初のページで、モデル名を **TMSEngines** にします。 
 
-   [![モデルの作成](./media/012.png)](./media/012.png)
+   [![モデルの作成。](./media/012.png)](./media/012.png)
 
 2. 次のページで、**新しいパッケージの作成** を選択します。 
 
-   [![新規パッケージの作成](./media/021.png)](./media/021.png)
+   [![新規パッケージの作成。](./media/021.png)](./media/021.png)
 
 3. 次のページで、参照する **ApplicationSuite** モデルを選択します。 (**ApplicationPlatform** モデルが事前に選択されています)。 
 
-   [![参照するモデルの選択](./media/032.png)](./media/032.png)
+   [![参照するモデルの選択。](./media/032.png)](./media/032.png)
 
 4. 次のページで、**完了** をクリックして新しいモデルの作成を確認します。 
 
-   [![モデル作成の完了](./media/042.png)](./media/042.png)
+   [![モデル作成の完了。](./media/042.png)](./media/042.png)
 
 5. 新しいソリューションで、新しい Supply Chain Management プロジェクトを作成し、**TMSThirdParty** と名前を付けます。 プロジェクト プロパティで、プロジェクトのモデルを **TMSEngines** に設定します。
 6. ソリューションに新しい C\# クラス ライブラリを追加し、**ThirdPartyTMSEngines** という名前をつけます。
@@ -107,11 +107,11 @@ ms.locfileid: "5919783"
 10. ソリューションをビルドします。
 11. TMSThirdParty プロジェクトに新しい参照を追加します。 参照は、ThirdPartyTMSEngines プロジェクトを指す必要があります。 完了したら、ソリューションは次のようになります。 
 
-    [![TMSThirdParty プロジェクトへの参照を含むソリューション](./media/052.png)](./media/052.png)
+    [![TMSThirdParty プロジェクトへの参照を含むソリューション。](./media/052.png)](./media/052.png)
 
 12. ソリューションをビルドします。 アプリケーション エクスプ ローラーの **参照** ノードに新しいライブラリが表示されていることを確認します。 
 
-    [![アプリケーション エクスプ ローラーの参照ノード内の新しいライブラリ](./media/061.png)](./media/061.png)
+    [![アプリケーション エクスプ ローラーの参照ノード内の新しいライブラリ。](./media/061.png)](./media/061.png)
 
 ## <a name="deploy-the-tms-engine-as-a-package"></a>TMS エンジンをパッケージとして配置する
 
@@ -120,7 +120,7 @@ ms.locfileid: "5919783"
 1. **Dynamics 365** &gt; **配置** メニューで、<strong>配置パッケージの作成</strong> をクリックします。
 2. **配置パッケージの作成** ダイアログ ボックスで、TMSEngines モデルを選択し、パッケージ ファイルを格納する場所のパスを入力します。 
 
-   [![TMSEngines モデルの選択](./media/071.png)](./media/071.png)
+   [![TMSEngines モデルの選択。](./media/071.png)](./media/071.png)
 
 3. パッケージをターゲット環境に展開することができるようになりました。 チュートリアルについては、[配置可能パッケージのインストール](../../fin-ops-core/dev-itpro/deployment/install-deployable-package.md) を参照してください。
 
@@ -133,15 +133,15 @@ ms.locfileid: "5919783"
 3. 結果のアセンブリを Supply Chain Management サーバーのバイナリの場所、\[AOSWebRoot\]bin にコピーします。 **注記:** このステップは、開発環境にのみ関連します。 実稼働環境では、配置パッケージを介して配置する必要があります。 手順については、前のセクションの「パッケージとして TMS エンジンを配置する」を参照してください。
 4. Supply Chain Management では、**レート エンジン** ページで新しい評価エンジンを作成します。 エンジンは、実装したエンジン クラス ライブラリとエンジン クラスを作成して生成されたエンジン アセンブリを指す必要があります。 
 
-   [![レート エンジン ページで新規評価エンジンの作成](./media/081.png)](./media/081.png)
+   [![レート エンジン ページで新規評価エンジンの作成。](./media/081.png)](./media/081.png)
 
 5. サンプル レート エンジンを使用する配送業者を作成します。 当社のエンジンはいかなるデータも使用しないため、レート マスターを割り当てる必要はありません。 
 
-   [![新規出荷の配送業者の作成](./media/092.png)](./media/092.png)
+   [![新規出荷の配送業者の作成。](./media/092.png)](./media/092.png)
 
 6. **工順ワークベンチの評価** ページで、**レート ショップ** をクリックします。 次のスクリーン ショットに示すように、SampleCarrier から 100.00 のレートが表示されます。 この例では、倉庫 24 から顧客 US-004 へのルートの輸送料を検索しています。 ただし、料金がハードコーディングされているために、100.00 の料金が常に表示されます。
 
-   [![工順ワークベンチの評価](./media/101.png)](./media/101.png)
+   [![工順ワークベンチの評価。](./media/101.png)](./media/101.png)
 
 ## <a name="tips-and-tricks"></a>ヒントや秘訣
 

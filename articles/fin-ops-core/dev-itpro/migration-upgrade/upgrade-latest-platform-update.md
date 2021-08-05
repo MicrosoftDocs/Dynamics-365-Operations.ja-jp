@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 46fe59a8a0a260e2ad9c5f3be96b822c8bcb35d2
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 10a4af8ca5eb586fda8ae5c9065873c76143c0f5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189157"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360832"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムの環境への適用
 
@@ -43,11 +43,11 @@ Finance and Operations では、プラットフォームは次のコンポーネ
 ## <a name="overall-flow"></a>全体的な流れ
 次の図は、プラットフォームを最新の更新プログラムにアップグレードするための全体的なプロセスを示しています。
 
-[![プラットフォームのカスタマイズがない実装のアップグレード プロセス](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
+[![プラットフォームのカスタマイズがない実装のアップグレード プロセス。](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
 
 既にプラットフォーム更新プログラム 4 以降で実行している場合は、最新のリリースに更新することが単純なサービス工程となります。 プラットフォーム更新プログラム パッケージが LCS アセット ライブラリに含まれた後、フローに従って LCS 環境ページから更新を適用します。 **メンテナンス** で **更新プログラムの適用** を選択してから、プラットフォーム更新プログラム パッケージを選択します。
 
-[![更新プログラムの適用](./media/applyupdates.jpg)](./media/applyupdates.jpg)
+[![更新プログラムの適用。](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
 次のセクションでは **最新のプラットフォーム パッケージを取得して、LCS を通じて配置された環境に適用する** 方法について説明します。
 
@@ -65,7 +65,7 @@ LCS で、環境ページから最新のプラットフォーム更新パッケ�
 
 -   クラウド開発、ビルド、デモ、第 2 層サンド ボックス、または実稼働環境にプラットフォーム更新パッケージを適用するには、LCS から直接更新します。
 
-    [![更新プログラムの適用](./media/applyupdates.jpg)](./media/applyupdates.jpg)
+    [![更新プログラムの適用。](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
 詳細については、[クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md) で、バイナリ修正プログラムを適用するための指示に従って下さい。
 
@@ -81,7 +81,7 @@ LCS で、環境ページから最新のプラットフォーム更新パッケ�
 1.  LCS プロジェクトの資産ライブラリに移動します。
 2.  **ソフトウェア配置可能パッケージ** タブで、**インポート** をクリックし、プラットフォーム更新プログラム パッケージへの参照を作成します。 
 
-    [![ボタンのインポート](./media/importupgradepackage.png)](./media/importupgradepackage.png)
+    [![ボタンのインポート。](./media/importupgradepackage.png)](./media/importupgradepackage.png)
 
 3.  目的のプラットフォーム更新プログラム パッケージを選択します。
 

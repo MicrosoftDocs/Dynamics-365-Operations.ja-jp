@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0224197a3ef8f1a79da9bd5186309e68dd388c64
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 6212547759d312f18ca38f751e0a72198fb77097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111680"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356247"
 ---
 # <a name="financial-dimension-activation"></a>財務分析コードの有効化
 
@@ -35,7 +35,7 @@ ms.locfileid: "6111680"
 
 財務分析コードを追加することは、通常、意図的なビジネス プロセスです。 ユーザー受け入れテストなどのマルチ ユーザー環境またはトレーニング環境がある場合、1 人だけがこのプロセスを試行する必要があります。 2 番目のオプションは、有効化オプション、**財務分析コードの再構築** を選択したときに使用できます。 
 
-[![財務分析コードの有効化](./media/actwiki2.png)](./media/actwiki2.png) 
+[![財務分析コードの有効化。](./media/actwiki2.png)](./media/actwiki2.png) 
 
 **財務分析コードを再構築** オプションは、初期有効化プロセス中予期しない結果が発生した場合にのみ実行されるプロセスであるため、既定で **いいえ** に設定されます。 再構成することにより、テーブルにすべての財務分析コードと値がドロップされ、再追加されます。
 

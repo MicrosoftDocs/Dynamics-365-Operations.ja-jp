@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: 76a5ed872d9e4efd98ce002c8dd0f7c2552e215e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a319478d261c43c067b13bf94a36626cb742c828
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752200"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357476"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-6-april-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 
@@ -66,7 +66,7 @@ Dynamics AX 7.0 がリリースされたとき、添付ファイル用のデー�
 
 Dynamics 365 for Operations アイデア フォーラムは、 [アイデア ポータル](https://experience.dynamics.com/ideas/) にて使用可能となっています。 アイデア ポータルでは、すべての Dynamics 365 for Operations ユーザーは、定期的に新しいアイデアを送信、既存のアイデアを採決、およびそのアイデアの状態を追跡することができます。 これは、現在、製品の外部 ([https://experience.dynamics.com/ideas](https://experience.dynamics.com/ideas/)) およびアプリケーション内の両方から達成できます。 このスクリーンショットは、Dynamics 365 for Operations からアイデア ポータルにナビゲートする方法を示しています。
 
-[![ideas-menu](./media/ideas-menu.png)](./media/ideas-menu.png)
+[![ideas-menu.](./media/ideas-menu.png)](./media/ideas-menu.png)
 
 Dynamics 365 for Operations フォーラムに移動するには **アイデア** のリンクをクリックします。
 
@@ -77,7 +77,7 @@ Dynamics 365 for Operations フォーラムに移動するには **アイデア*
 - 特定のアイデアにアップ投票またはダウン投票することができます (アイデアごとに 1 票)。 新しいアイディアを投票したり提案したりするには、Microsoft アカウントを使用してサインインする必要があります。
 - **個人用フィードバック** 機能を使用すると、提出された提案、提案のステータス、受け取った合計投票数の詳細なビューを表示できます。
 
-[![ideas-options](./media/ideas-options.png)](./media/ideas-options.png)
+[![ideas-options.](./media/ideas-options.png)](./media/ideas-options.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

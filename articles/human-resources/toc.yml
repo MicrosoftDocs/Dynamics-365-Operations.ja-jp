@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 7 月 12 日
+          href: hr-whats-new-2021-07-12.md
         - name: 2021 年 6 月 22 日
           href: hr-whats-new-2021-06-22.md
         - name: 2021 年 5 月 20 日
@@ -255,6 +257,8 @@
           href: hr-admin-go-live-prepare.md
         - name: Go Live に関するよく寄せられる質問
           href: hr-admin-go-live-faq.md
+        - name: Human Resources インフラストラクチャの統合に関するよく寄せられる質問
+          href: hr-infrastructure-merge-faq.md
         - name: ドキュメント リソース
           items:
             - name: ヘルプ システム
@@ -691,9 +695,11 @@
               href: hr-compensation-define-process.md
             - name: 報酬プランの処理
               href: hr-compensation-process.md
+            - name: 従業員を支払準備完了とマークする
+              href: hr-compensation-payroll.md
         - name: 福利厚生の管理
           items:
-            - name: 給付金管理
+            - name: 福利厚生の管理
               items:
                 - name: 福利厚生の管理の概要
                   href: hr-benefits-management-overview.md
@@ -715,11 +721,11 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: ライフ イベント タイプのコンフィギュレーション
                       href: hr-benefits-setup-life-event-types.md
-                    - name: 計画タイプの作成
+                    - name: 計画タイプの概要
                       href: hr-benefits-setup-plan-types.md
                     - name: 理由コードの設定
                       href: hr-benefits-setup-reason-codes.md
-                    - name: 層コードの設定
+                    - name: 階層コードの設定
                       href: hr-benefits-setup-tier-codes.md
                     - name: レートのコンフィギュレーション
                       href: hr-benefits-setup-rates.md
@@ -807,6 +813,8 @@
               href: hr-employee-self-service-request-time-off.md
             - name: チームおよび会社のカレンダーの表示
               href: hr-employee-self-service-calendar.md
+            - name: 休暇マネージャー ロールのコンフィギュレーション
+              href: hr-configure-absence-manager.md
             - name: 休暇の売買ポリシーの管理
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: 休暇の売買ワークフローの作成

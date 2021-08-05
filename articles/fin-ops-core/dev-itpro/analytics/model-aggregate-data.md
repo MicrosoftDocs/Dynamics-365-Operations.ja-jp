@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91fdfe7a2cde44906939ca578fc6882f8cd6fd20
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: fc9093d490e99dacb71a3e4599f90d50655b02ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193660"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344062"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 
@@ -82,7 +82,7 @@ ms.locfileid: "6193660"
 
 1. **ソリューション エクスプローラー** でプロジェクトの **分析** フォルダーを展開してから、集計の測定 **FMTAggregateMeasurement** をダブルクリックします。 集計の測定はデザイナーで起動されます。 既存の集計の測定に、車両の在庫やレンタルの詳細に関連する 2 つのメジャー グループが含まれていることを確認します。 レンタル料金に関連する新しいメジャー グループを作成します。
 
-    [![AOT の集計メジャー](./media/fmtaggregatemeasurement.png)](./media/fmtaggregatemeasurement.png)
+    [![AOT の集計メジャー。](./media/fmtaggregatemeasurement.png)](./media/fmtaggregatemeasurement.png)
 
 2. **ソリューション エクスプローラー** でプロジェクトの **表示** フォルダーを展開してから、**FMTRentalChargeExtendedView** の表示を選択します。
 3. **FMTRentalChargeExtendedView** をデザイナーの **FMTAggregateMeasurement** 集計測定のルート ノードにドラッグ アンド ドロップします。 新しいメジャー グループが作成され、プロパティの値が次のように適用されたことに注意します。
@@ -120,7 +120,7 @@ ms.locfileid: "6193660"
 4. **アプリケーション エクスプローラー** で、**AOT** を展開して **データ モデル** &gt; **テーブル** とクリックします。 **FMTChargeType** テーブルを **Application Explorer** からデザイナーで新しく作成された **FMTChargeType** 分析コードのルート ノードにドラッグ アンド ドロップします。 分析コードの属性と対応するキーがテーブルの AutoReport フィールド グループを使用して追加されたことに注意します。
 5. 新しい分析コードの **属性** ノードを展開します。 いくつかの属性は既定で作成されていることに注意します。 また、テーブルの一意のインデックスに基づいて分析コード キーが作成されました。 **フィールド** ノードにドラッグ アンド ドロップすることにより、さらにフィールドを追加することができます。
 
-    [![FMTChargeType の属性リスト](./media/fmtchargetype.png)](./media/fmtchargetype.png)
+    [![FMTChargeType の属性リスト。](./media/fmtchargetype.png)](./media/fmtchargetype.png)
 
 6. 新しい分析コードを保存します。
 7. MDX 予約ワードを回避するためにフィールド名の説明を変更するように求める警告が表示される場合があります。 集約分析コードは、集計測定で SSAS に配置されない場合がありますが、今後 SSAS に配置される集計測定でこの分析コードが使用される可能性があります。 将来の潜在的な問題を避けるために、フィールド名 **Description** の名前を **ChargeDescription** に変更します。
@@ -134,7 +134,7 @@ ms.locfileid: "6193660"
 3. **FMTRentalChargeExtendedView** 測定グループの **分析コード** ノードにドラッグ アンド ドロップします。 分析コードの参照が関係とともに作成されていることに注意します。
 4. **FMTAggregateMeasurement** の変更を保存します。 分析コードの関係のプロパティ シートを確認して、**テーブル関係の使用** プロパティが **はい** に設定されていることを確認します。 ドラッグ アンド ドロップ操作によって、メジャー グループ分析コード **FMTRentalChargeExtendedView** および **FMTChargeType**、**FMTCustomerProfile** の間に関係が作成されたことに注意します。 分析コードの関係のプロパティ シートを確認して、**テーブル関係の使用** プロパティが **はい** に設定されていることを確認します。
 
-    [![分析コード FMTChargeType のプロパティ ウィンドウ](./media/fmtchargetype2.png)](./media/fmtchargetype2.png)
+    [![分析コード FMTChargeType のプロパティ ウィンドウ。](./media/fmtchargetype2.png)](./media/fmtchargetype2.png)
 
     > [!NOTE]
     > プラットフォーム更新プログラム 1611 以降では、**UseTableRelations** プロパティが削除されました。 新しい分析コード参照が作成されるとき、既存のリレーションシップが既定値に設定されます。 既定に設定されているリレーションシップ フィールドを変更することにより、明示的リレーションシップの提供を継続することができます。 明示的な関係を提供することは、**UseTableRelationship** を **No** に設定することと同じです。
@@ -144,7 +144,7 @@ ms.locfileid: "6193660"
 7. プロパティ **DimensionAttribute** の値として **CustomerID** を選択します。 以下に表示された関係を選択します。 プロパティ値 **RelatedField** に **顧客** を選択します。
 8. **FMTAggregateMeasurement** の変更を保存します。
 
-    [![DimensionRelationConstraint のプロパティ ウィンドウ](./media/fmt4.png)](./media/fmt4.png)
+    [![DimensionRelationConstraint のプロパティ ウィンドウ。](./media/fmt4.png)](./media/fmt4.png)
 
 9. このシナリオでは、システムが関係を検出できなかったため、関係を指定しました。 **テーブル関係プロパティを使用する** を **いいえ** に設定してシステムの選択をオーバーライドする場合、異なるリレーションシップを指定することもできました。
 
@@ -157,7 +157,7 @@ ms.locfileid: "6193660"
     > [!NOTE]
     > メジャー グループをモデル化するために使用されるテーブルまたはビューが会社固有のテーブル、たとえば、キーの一部として DATAAREAID を含む場合、既定では、**会社** 分析コードの関係が作成されます。 この場合、使用したビューは会社固有のものではありません。
 
-    [![AOT の分析コードの一覧](./media/fmt5.png)](./media/fmt5.png)
+    [![AOT の分析コードの一覧。](./media/fmt5.png)](./media/fmt5.png)
 
 2. **日付** 分析コードを選択し、次のプロパティを指定します。
 
@@ -170,7 +170,7 @@ ms.locfileid: "6193660"
 4. 表示された関係を選択します。 右クリックし、プロパティ シートを選択します。 **Related field** プロパティの値として **StartDate** を選択します。
 5. 定義した関係は、次のスクリーン ショットのようになります。
 
-    ![BIDateDimensionsView.Date==FMTRentalChargeExtendedView.StartDate](./media/fmt6.png)
+    ![BIDateDimensionsView.Date==FMTRentalChargeExtendedView.StartDate.](./media/fmt6.png)
 
 6. 次に、TransactionDate 分析コード別のメジャーのスライスを有効にします。 TransactionDate は日付分析コードでもあるため、日付分析コードに別の参照を追加し、トランザクション日付を含む対応するフィールドに関連付けます。 複数の日付分析コードがスライサーとして使用されるとき、各日付分析コードは **ロールプレイング日付分析コード** と呼ばれます。
 7. **FMTRentalChargeExtendedView** メジャー グループで、**分析コード** ノードを右クリックし、**新しい分析コード** をクリックします。 新しい分析コードが分析コード参照のリストに追加されます。
@@ -196,7 +196,7 @@ ms.locfileid: "6193660"
 
     定義した関係は、次のスクリーン ショットのようになります。
 
-    [![FMTRentalChargeExtendedView のリレーションシップ](./media/fmy7.png)](./media/fmy7.png)
+    [![FMTRentalChargeExtendedView のリレーションシップ。](./media/fmy7.png)](./media/fmy7.png)
 
 12. 集計測定を保存します。
 
@@ -214,7 +214,7 @@ ms.locfileid: "6193660"
 
 1. **FMTAggregateMeasurement** ノードを選択します。 右クリックし、**プロパティ** を選択します。 プロパティ **Usage** の値として **InMemoryRealTime** を選択します。
 
-    [![プロパティ ウィンドウで選択された使用状況と SSASCube](./media/fmt9.png)](./media/fmt9.png)
+    [![プロパティ ウィンドウで選択された使用状況と SSASCube。](./media/fmt9.png)](./media/fmt9.png)
 
 2. InMemoryRealTime 集計モデルは、非集合縦棒ストア インデックス (NCCI) 技術を使用して SQL Server に配置されます。 NCCI は、分析および運用のワークロードを SQL Server データベースから供給できるメモリ内テクノロジーです。 NCCI インデックスは、他のインデックスのようなテーブルで定義することができます。 NCCI インデックスは手動で定義することができますが、フレームワークにはインデックスの要件を分析して必要に応じて基になるテーブルに追加する機能があります。
 3. ソリューション エクスプローラーで **FMAggregateMeasurement** を右クリックし、**列ストア インデックス オプション** をクリックします。 複数の新しいインデックスがシステムによって追加されていることが分かります。

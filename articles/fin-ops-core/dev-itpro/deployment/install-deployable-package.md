@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46b8ad7a58cfa936fb04cb166245a9b25db869c6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d558c5b533c2005cc33a8bed65e51099bd86ba1a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745651"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361316"
 ---
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能なパッケージのインストール
 
@@ -88,7 +88,7 @@ AOT 配置可能パッケージはアプリケーションのカスタマイズ�
 
      VM 名とインストールされているコンポーネントの指定が完了したら、DefaultTopologyData.xml ファイルは次の図のようになります。
     
-     ![トポロジ構成データ](./media/defaulttopology.png)
+     ![トポロジ構成データ。](./media/defaulttopology.png)
 
 5. **環境** ページに記載されているその他のすべて VM に対して 手順 1 ～ 4 を繰り返します。
 
@@ -116,7 +116,7 @@ DefaultTopologyData.xml ファイルのトポロジの情報に基づいて、�
 
 Runbook には、環境を更新するために実行する必要がある一連のステップが備わっています。 次の図は、Runbook ファイルの例を示します。 Runbook の各ステップは、ID、マシン名、およびステップ実行の詳細に関連付けられます。
 
-[![Runbook ファイルの例](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
+[![Runbook ファイルの例。](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
 
 ## <a name="install-a-deployable-package"></a>配置可能パッケージのインストール
 1. Runbook ファイルに記載されている最初のマシン (VM) で、次の手順に従います。
@@ -190,7 +190,7 @@ Runbook には、環境を更新するために実行する必要がある一連
 
 2. Runbook を表示して、完了したステップを確認します。 手順が完了した runbook ファイルの例を次に示します。
 
-    [![runbook の完了したステップの例](./media/image013-1024x978.png)](./media/image013.png)
+    [![Runbook の完了したステップの例。](./media/image013-1024x978.png)](./media/image013.png)
 
 ## <a name="backup-the-runbook-file"></a>Runbook ファイルをバックアップします
 - Runbook のすべての手順を完了した後、Runbook をエクスポートし、後で参照できるようにファイルをコンピューターの外部に保存します。 たとえば、このような状況で Runbook ファイルを使用する必要が生じる場合があります。

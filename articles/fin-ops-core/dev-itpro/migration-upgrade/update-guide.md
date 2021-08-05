@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 72b09c1ee1d5026c72428ec83f2ba58a88931537
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c07cc3846e14486d9e363d393b75d7253d248588
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908252"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347220"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>Finance and Operations の更新とカスタム コード ライフサイクルの管理
 
@@ -111,7 +111,7 @@ ms.locfileid: "5908252"
 + **UAT** – ユーザー受け入れテストに使用される実稼働前の環境。 UAT 環境は、レベル 2 (標準承認テスト) またはそれ以上の環境です。 実稼働環境と同じバージョンの Finance and Operations アプリを実行します。 また、カスタム コード拡張機能の最新のリリースバージョンも実行します。 この環境は通常、運用データベースのコピーに接続されています。
 + **生産** – 運用データベースで実行される実際の実稼動環境。
 
-:::image type="content" source="media/uguide-environments.png" alt-text="現在のリリースを実行する環境":::
+:::image type="content" source="media/uguide-environments.png" alt-text="現在のリリースを実行する環境。":::
 
 ### <a name="environments-that-run-the-next-version-of-your-custom-code"></a><a id="next-environments"></a>カスタム コードの次のバージョンを実行する環境
 
@@ -120,13 +120,13 @@ ms.locfileid: "5908252"
 - **開発 2** – カスタム コード拡張機能の次のバージョンの開発に使用される開発環境。 カスタム コードのバージョン 管理に Azure DevOps を使用します。 これは、カスタム コードの現在の開発分岐 (**メイン** ブランチ) に接続されています。 詳細については、[ソース コード分岐の管理](#manage-source-code-branches) セクションを参照してください。
 - **テスト 2** – カスタム コード拡張機能の次のバージョンのテストに使用される機能テスト環境。
 
-:::image type="content" source="media/uguide-next-environments.png" alt-text="カスタム コードの次のバージョンを実行する環境":::
+:::image type="content" source="media/uguide-next-environments.png" alt-text="カスタム コードの次のバージョンを実行する環境。":::
 
 ## <a name="manage-source-code-branches"></a>ソース コード分岐の管理
 
 カスタム コード分岐を管理する場合は、ベスト プラクティスに従うことが重要です。 これにより、原価を最小限に抑え、リリースと更新の品質を保証するのに役立ちます。
 
-:::image type="content" source="media/uguide-branches.png" alt-text="ソース コード分岐の管理":::
+:::image type="content" source="media/uguide-branches.png" alt-text="ソース コード分岐の管理。":::
 
 **メイン** 分岐 (開発分岐) には、コードの次期リリースの最新の機能バージョンが含まれています。
 
@@ -385,7 +385,7 @@ UAT 環境を指すクライアントは、リリース 10.0.7 (実稼働環境�
 
 UAT または製品環境で重大なバグが見つかった場合は、リリース分岐 (**メイン** 分岐または開発分岐にはない) のバグを修正し、標準プロセスを使用して配置可能なパッケージを UAT と製品に適用します。
 
-:::image type="content" source="media/uguide-hotfix.png" alt-text="修正プログラムのプロセス":::
+:::image type="content" source="media/uguide-hotfix.png" alt-text="修正プログラムのプロセス。":::
 
 1. 開発 1 では、リリース分岐でコードの修正を行います。 必要な修正が ISV コードにある場合は、ソリューションの次のバージョンではなく、現在のリリースの新しいビルドを ISV に送信するよう依頼します。
 2. コンパイルしてテストします。

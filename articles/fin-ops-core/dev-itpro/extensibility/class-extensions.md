@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 0c8a28f108a41cd50df10f9d59aaf4d012bfd272
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d383e1818c933dd110d2dcd145595ee593b450c0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865922"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346482"
 ---
 # <a name="class-extension-model-in-x"></a>X++ の拡張モデルのクラス
 
@@ -32,11 +32,11 @@ ms.locfileid: "5865922"
 ## <a name="the-effective-class-concept"></a>有効なクラスの概念
 強化されたコンポーネントのパブリック メンバー、およびそのコンポーネントを強化するすべてのクラスの拡張機能のすべてのパブリック メンバーで構成されるクラスに条件を設けるために役立ちます。 このクラスは、指定されたモデルの有効なクラスと呼ばれます。 次の図は、基本モデルで定義された、**MyArtifact** および **MyArtifact** の拡張クラスを持つ 2 つの依存モデルで定義されたコンポーネント **MyModel** を示しています。
 
-[![ベースモデル MyModel で定義されているコンポーネント MyArtifact、および MyArtifact の拡張クラスを持つ 2 つの依存モデル](./media/extensions-11.png)](./media/extensions-11.png)
+[![ベースモデル MyModel で定義されているコンポーネント MyArtifact、および MyArtifact の拡張クラスを持つ 2 つの依存モデル。](./media/extensions-11.png)](./media/extensions-11.png)
 
 この例では、有効なクラスはすべてのオリジナルのメソッドおよび拡張クラスからのすべてのパブリック コンポーネントを含む拡張モデルのクラスです。 有効なクラスは、特定のモデルで定義されたクラスの拡張のみを含むため、すべてのモデルで同じではありません。 次の図は、**MyExtensionModel** モデルの **MyArtifact** の有効クラスを示しています。
 
-[![MyExtensionModel の MyArtifact の有効クラス](./media/extensions-21.png)](./media/extensions-21.png)
+[![MyExtensionModel の MyArtifact の有効クラス。](./media/extensions-21.png)](./media/extensions-21.png)
 
 **MyModel** という名前のモデル内の **MyClass** という名前のクラスを使用して、クラス拡張について説明します。
 

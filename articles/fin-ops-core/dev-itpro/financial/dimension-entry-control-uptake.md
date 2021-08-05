@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b480a6e563425f66de6f797ac0969fb1649d9d6
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 06ebb795eb34b22c62f1c977fb83e6cb25ef9c03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111678"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347226"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
@@ -39,12 +39,12 @@ ms.locfileid: "6111678"
 -   Dynamics AX 2012 では、parmAttributeSetDataSource および parmAttributeValueSetDataSource がデータ ソースと既定の分析コード コントロールに関連付けられたデータ ソースのフィールドを設定するために使用されていました。  これらは通常、DimensionDefaultingController インスタンスを作成した直後にフォームの init メソッドで設定されていました。  すべての呼び出し parmAttributeSetDataSource および parmAttributeValueSetDataSource はアップグレード後に削除されます。  これらの呼び出しの値を使用して、アップグレードされたコントロールのメタデータを設定します。  アップグレード後、これらの呼び出しをすべて削除した後、フォームが正常に機能していることを確認するために、フォームをチェックする必要があります。
 -   ディメンション入力コントロールはフォーム デザインでモデル化されるようになりました。 分析コードの入力管理を検索するには、デザイン要素を展開するか、フォーム デザインで "DimensionEntry" を検索します。 デザイン時に新しいコントロールがどのようなものかを次に示します。
 
-[![新しいプロジェクト ダイアログ](./media/1.png)](./media/1.png)
+[![新しいプロジェクト ダイアログ。](./media/1.png)](./media/1.png)
 
 ## <a name="properties"></a>プロパティ
 分析コード エントリ コントロールのカスタム プロパティは、**コントローラー** グループの下にあります。
 
-[![コントローラーのプロパティ](./media/capture1.png)](./media/capture1.png)
+[![コントローラーのプロパティ。](./media/capture1.png)](./media/capture1.png)
 
 #### <a name="details-on-the-properties"></a>プロパティの詳細
 
@@ -73,9 +73,9 @@ ms.locfileid: "6111678"
 
 いくつかの分析コード入力コントロールには、コントローラー プロパティが設定されていない可能性があります。 この場合、コントローラーはコントロールの値データ フィールドの EDT から推測されます。 一連の分析コード エントリ コントロールの特定のプロパティを以下に示します。 これらのプロパティは、上記の一般的なアプローチのセクション (DimensionEntryControlHeader) で選択した、分析コード入力コントロールの PurchTable フォームのプロパティです。 この分析コード エントリ コントロールは、PurchTableのTable テーブルの DefaultDimension フィールドを使用しています。 PurchTable の DefaultDimension フィールドの拡張データ型プロパティは、LedgerDefaultDimensionValueSet (以下を参照) に設定されます。 実行時に、この EDT は LedgerDefaultDimensionEntryController にマップされます。 したがって、この場合 DimensionEntryControlHeader コントロールは LedgerDefaultDimensionEntryController を使用します。 次の例は、EDT とそれがマップされているコントローラーを示しています。
 
-![新しい品目を追加](./media/3.png)
+![新しい品目を追加。](./media/3.png)
 
-![リソース ファイルの選択](./media/4.png)
+![リソース ファイルの選択。](./media/4.png)
 
 #### <a name="extended-data-types-and-the-controllers-they-are-mapped-to"></a>拡張データ型およびマップされるコントローラー
 

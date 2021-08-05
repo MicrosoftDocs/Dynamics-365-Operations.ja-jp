@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed2228b72f374d140e3f192daeefaeff6297ffa2
-ms.sourcegitcommit: 34fe22eab1154e3d2f1e5070bc0e88942f197220
+ms.openlocfilehash: 895b39af8c87943fb9b7b397d1bf22fd2477cbf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6277590"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345666"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -46,16 +46,16 @@ LCS プロジェクトにクラウドの開発環境を配置する:
 1. LCS プロジェクトと Azure サブスクリプションの間に接続を作成します。 Azure サブスクリプション ID が必要であり、サブスクリプションの使用を承認します。
 2. 配置する **環境** の下で **+** を選択します。
 
-    ![LCS Onboard の方法](media/access-instances-5.jpeg)
+    ![LCS Onboard の方法。](media/access-instances-5.jpeg)
     
 3. アプリケーションとプラットフォーム バージョンを選択します。
 4. 環境のトポロジを選択します。 詳細については、[プレビュー サブスクリプションのサインアップ](sign-up-preview-subscription.md) を参照してください。
     
 5. クラウドでホストされている環境を選択した場合は、使用する Azure コネクタを選択します。 **配置** を選択します。
 
-    ![環境の配置](media/access-instances-3.jpeg)
+    ![環境を配置します。](media/access-instances-3.jpeg)
     
-![クラウド ホスト インスタンス](media/CloudHostedPicture.jpg)
+![クラウド ホスト インスタンス。](media/CloudHostedPicture.jpg)
 
 ## <a name="cloud-environment-that-is-provisioned-through-lcs"></a>LCS を通じてプロビジョニングされるクラウド環境
 
@@ -77,7 +77,7 @@ LCS プロジェクトにクラウドの開発環境を配置する:
 
 クラウド環境は、エンド ユーザーおよび開発者の両方としてアクセスできます。 開発者は、リモート デスクトップの資格情報を使用してシステムにアクセスできます。 リモート デスクトップの資格情報は、LCS プロジェクト サイトの環境ページから取得されます (このトピックの前の図を参照してください)。
 
-![制限された管理者アクセス](media/restricted-admin.png)
+![制限された管理者アクセス。](media/restricted-admin.png)
 
 配置された **プラットフォーム更新プログラム 12 以前** の環境の対象:
 1.  VM 名をクリックします。
@@ -176,7 +176,7 @@ POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要
     }
     ```
         
-    [![Windows PowerShell ISE ウィンドウのコマンド](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
+    [![Windows PowerShell ISE ウィンドウのコマンド。](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
 
 4.  次の SQL スクリプトを更新し、その環境の AXDB で実行します。 上記の Windows PowerShell スクリプト出力から次のパラメーターの値を指定します。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 6d99a0b22a13530546e3a87cfaed0f183eb2a8cb
-ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
+ms.openlocfilehash: 392eaf36c601e0e227113853a044362cb825de4e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "6277403"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344024"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
 
@@ -934,7 +934,7 @@ AD FS が認証を交換するために Finance + Operations を信頼するた�
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
 ```
 
-![アプリケーション グループのプロパティ](./media/OPSetup_05_ApplicatioGroupProperties.png)
+![アプリケーション グループのプロパティ。](./media/OPSetup_05_ApplicatioGroupProperties.png)
 
 最後に、**AOSNodeType** タイプの Service Fabric ノード上の AD FS OpenID コンフィギュレーション URL にアクセスできることを確認します。 このチェックを行うには、Web ブラウザーで `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` を開きます。 サイトが安全でないことを示すメッセージが表示された場合は、AD FS SSL 証明書が信頼済ルート証明機関ストアに追加されていません。 このステップについては、「AD FS 展開ガイド」で説明されています。リモーティングを使用している場合は、次のスクリプトを使用して、Service Fabric クラスター内のすべてのノードに証明書をインストールできます。
 
@@ -952,13 +952,13 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 1. [LCS](https://lcs.dynamics.com/) にサインインし、オンプレミスの実装プロジェクトを開きます。
 2. ハンバーガー メニューで、**プロジェクト設定** を選択します。
 
-    ![プロジェクト設定コマンド](./media/OPSetup_06_ProjectSettings.png)
+    ![プロジェクト設定コマンドです。](./media/OPSetup_06_ProjectSettings.png)
 
 3. **オンプレミス コネクタ** を選択します。
 4. 新しいコネクタを作成するには、**追加** を選択します。 
 5. **ホスト インフラストラクチャ設定** タブで、エージェント インストーラーをダウンロードします。
 
-    ![[ホスト インフラストラクチャ設定] タブで、エージェント インストーラー ボタンをダウンロードする](./media/OPSetup_07_DownloadAgentInstaller.png)
+    ![[ホスト インフラストラクチャ設定] タブで、エージェント インストーラー ボタンをダウンロードします。](./media/OPSetup_07_DownloadAgentInstaller.png)
     
 6. zip ファイルがブロックされていないことを確認します。 ファイルを右クリックし、**プロパティ** を選択します。 ダイアログ ボックスで **ブロック解除** を選択します。
 7. **OrchestratorType** タイプの Service Fabric ノードの 1 つでエージェント インストーラーを解凍します。
@@ -970,7 +970,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 9. コンフィギュレーションを保存し、**コンフィギュレーションのダウンロード** を選択して、localagent-config.json コンフィギュレーション ファイルをダウンロードします。
 
-    ![[エージェントの設定] タブの [コンフィギュレーションのダウンロード] ボタン](./media/OPSetup_08_DownloadConfigurations.png)
+    ![[エージェントの設定] タブの [コンフィギュレーションのダウンロード] ボタン。](./media/OPSetup_08_DownloadConfigurations.png)
 
 10. localagent-config.json ファイルを、エージェント インストーラー パッケージが配置されているマシンにコピーします。
 11. **コマンド プロンプト** ウィンドウで、エージェント インストーラーを含むフォルダーに移動して、次のコマンドを実行します。
@@ -985,7 +985,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 12. ローカル エージェントが正常にインストールされると、LCS のオンプレミス コネクタに戻るようにします。
 13. **設定の検証** タブで、**メッセージ エージェント** を選択して、ローカル エージェントへの LCS 接続をテストします。 接続が正常に確立されると、ページは下図のようになります。
 
-    ![エージェントの検証](./media/ValidateAgent.PNG)
+    ![エージェントを検証します。](./media/ValidateAgent.PNG)
 
 ### <a name="20-tear-down-credssp-if-remoting-was-used"></a><a name="teardowncredssp"></a> 20. リモート処理が使用された場合、CredSSP を終了処理する
 
@@ -1007,7 +1007,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 2. 新しい展開では、環境のトポロジを選択し、展開を開始するウィザードを完了します。
 
-    ![環境の配置](./media/Deploy.png)
+    ![環境を配置します。](./media/Deploy.png)
 
 3. 既存のプラットフォーム更新プログラム 8 またはプラットフォーム更新プログラム 11 を展開する場合: 
     - ローカル エージェントを更新します。 詳細については、[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md) を参照してください。
@@ -1015,25 +1015,25 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
     - [環境を再構成して新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) の手順を実行している間に、プラットフォーム更新 12 を配置します。
 4. LCS は準備フェーズ中に環境の Service Fabric アプリケーション パッケージを組み立てます。 配置を開始するローカル エージェントにメッセージを送信します。 下記のように、**準備中** ステータスが表示されます。
 
-    ![準備フェーズ](./media/Preparing.png)
+    ![準備フェーズ。](./media/Preparing.png)
 
     以下に示すような環境の詳細ページに移動するには、**完全な詳細** をクリックします。
 
-    ![環境の詳細ページ](./media/Details_Preparing.png)
+    ![環境の詳細ページ。](./media/Details_Preparing.png)
 
 5. ローカル エージェントは配置要求を受け取り、配置を開始し、環境の準備ができたら LCS に再度通知します。 表示されているとおりに、配置の開始がしたときに、ステータスは **配置** に変更します。
 
-    ![ステータスを展開に変更する](./media/Deploying.png)
+    ![ステータスを展開に変更します。](./media/Deploying.png)
 
-    ![環境を展開する](./media/Details_Deploying.png)
+    ![環境を展開しています。](./media/Details_Deploying.png)
 
     展開に失敗した場合、LCS のお客様の環境では、**再設定** ボタンは次のように利用可能になります。 基になる問題を修正し、**再コンフィギュレーション** をクリックして、任意のコンフィギュレーションの変更を更新し、**配置** をクリックして配置を再試行します。
 
-    ![再構成ボタンが使用可能になる](./media/Failed.png)
+    ![再構成ボタンが使用可能になります。](./media/Failed.png)
 
     再構成の方法の詳細については、[環境を再構成して、新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) のトピックを参照してください。 次の図は、正常な配置を示します。
 
-    ![環境が正常に配置された](./media/Deployed.png)
+    ![環境が正常に配置されました。](./media/Deployed.png)
 
 ### <a name="22-connect-to-your-finance--operations-environment"></a><a name="connect"></a> 22. Finance + Operations 環境への接続
 ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのトピックの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。

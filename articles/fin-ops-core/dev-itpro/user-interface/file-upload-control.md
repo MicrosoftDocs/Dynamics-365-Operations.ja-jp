@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 477dfde9c1fdac6896f05e0ff73eb6d21b422721
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 55a14780438c21aa18df4cf7b7c3e6fca384e5ec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189320"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354345"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 
@@ -32,7 +32,7 @@ ms.locfileid: "6189320"
 
 ファイル アップロード コントロールを使用してユーザーはファイルをアップロードできます。 また、これにより開発者は要件に基づいてアップロード処理を制御し、アップロードされたファイルを管理します。 
 
-[![ファイル アップロード コントロールの図](./media/fileupload001.png)](./media/fileupload001.png) 
+[![ファイル アップロード コントロールの図。](./media/fileupload001.png)](./media/fileupload001.png) 
 
 ファイル アップロード コントロールには 3 つのスタイルがあります。 スタイルを制御するには、**スタイル** プロパティを使用します。
 
@@ -62,7 +62,7 @@ ms.locfileid: "6189320"
 ## <a name="sequence-diagram"></a>シーケンス図
 ファイル アップロード コントロールは、クライアントのファイルとアップロード方法を受け入れ、ファイル サービスに送信します。 ファイル サービスは新しいセッションを開始し、戦略クラスのインスタンスを作成し、**uploadFile** メソッドを呼び出します。 **uploadFile** メソッドがデータ ソース内へのファイルの格納を完了したとき、ファイルのアップロード結果クラスがファイル サービスへを返されます。 このクラスはクライアントに送り返され、後処理に対処する **OnUploadCompleted** イベントをトリガーする可能性があります。 
 
-[![ファイル アップロード シーケンス ダイアグラム](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
+[![ファイル アップロード シーケンス図。](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 ## <a name="scanning-uploaded-files-for-viruses-and-malicious-code"></a>アップロードされたファイルでのウイルスおよび悪意のあるコードのスキャン
 ファイルをシステムにアップロードする前に、ウイルスや悪質なコードをスキャンすることをお勧めします。 したがって、バージョン10.0.12 以降では、ユーザーが選択したファイル スキャン ソフトウェアをファイル アップロード プロセスに統合できるように、拡張ポイントを使用できます。 添付ファイルのスキャンにも、同様の拡張ポイントが使用可能です。 これらの拡張ポイントの詳細については、[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md) を参照してください。 

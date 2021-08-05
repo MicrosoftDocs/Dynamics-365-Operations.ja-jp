@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8520034f5acc32e1de8139ce31cdaed456ffb0
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 084d5330b806fc9e21b4cc58e0058d76a8755a85
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016019"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358961"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 
@@ -29,11 +29,11 @@ ms.locfileid: "6016019"
 
 - **共有資産ライブラリ** – 共有資産ライブラリは、Microsoft およびパートナーによって資産を共有するために複数のテナント、プロジェクト、および LCS の環境の間で 使用されます。 このライブラリは、LCS にサインインするすべてのユーザーがアクセスできます。 共用資産ライブラリにアクセスするには、LCS にサイン インして、**共用資産ライブラリ** タイルをクリックします。
 
-    [![共有アセット ライブラリ タイル](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
+    [![共有アセット ライブラリ タイル。](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
 
 - **プロジェクト レベルのアセット ライブラリ** – プロジェクト レベルの資産ライブラリは、LCS のプロジェクト内の環境全体で資産を共有するために使用されます。 このライブラリはプロジェクト内のすべてのユーザーがアクセスできます。 。プロジェクト レベルのアセット ライブラリにアクセスするには、LCS にサイン インし、プロジェクトを開きます。 ハンバーガー メニューで、**アセット ライブラリ** をクリックします。
 
-    [![プロジェクト レベル資産ライブラリを開きます](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+    [![プロジェクト レベルのアセット ライブラリを開きます。](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
     
     > [!NOTE]
     > プロジェクト アセット ライブラリ内で同じアセットのバージョンのアップロードはサポートされていません。 

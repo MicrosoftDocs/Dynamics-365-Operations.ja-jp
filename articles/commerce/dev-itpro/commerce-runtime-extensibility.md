@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3ba4bc2033a5c6435877262655b4bd55293dbdf2
-ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
+ms.openlocfilehash: c4cf760e51758806d679c2bc825a4b8b056eba29
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "6248558"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309679"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 
@@ -508,7 +508,7 @@ public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncReques
         ThrowIf.Null(request, "request");
 
         using (var databaseContext = new DatabaseContext(request.RequestContext))
-        using (var transactionScope = new TransactionScope())
+        using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
         {
             // Execute original functionality to save the customer.
             var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
@@ -549,7 +549,7 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
     NullResponse response;
 
     using (var databaseContext = new DatabaseContext(request.RequestContext))
-    using (var transactionScope = CreateReadCommittedTransactionScope())
+    using (var transactionScope = CreateReadCommittedTransactionScope(TransactionScopeAsyncFlowOption.Enabled))
     {
         // Execute original logic.
         var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
@@ -894,7 +894,7 @@ namespace Contoso
                 ThrowIf.Null(request, "request");
 
                 using (var databaseContext = new DatabaseContext(request.RequestContext))
-                using (var transactionScope = new TransactionScope())
+                using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
                 {
                     // Execute original functionality to save the customer.
                     var requestHandler = new Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer.CustomerSqlServerDataService();

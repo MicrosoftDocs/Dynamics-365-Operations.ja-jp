@@ -3,21 +3,16 @@ title: InputControl タイプ
 description: すべてのコントロールのメソッドと属性を持つ入力コントロール インターフェイス。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 32e902a9a113f0f4735ce63bb10d5cefecf0f9a8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ee8571619d0065a465051dddfa2b1b90b5ab2091
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748085"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661494"
 ---
 # <a name="inputcontrol-type"></a>InputControl タイプ
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 093e7ac36659ca72bc0058359e2c7d996ce29394
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 8e9ba01d924c12bb9a5c8d6f2441536085c72c05
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189334"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357572"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations-apps"></a>Finance and Operations アプリのテクニカル サポートを設定する 
 [!include [banner](../includes/banner.md)]
@@ -74,9 +74,9 @@ Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、A
 2.  LCS でプロジェクトを開きます。
 3.  **プロジェクト設定** をクリックし、**Azure DevOps** リンクをクリックします。
 
-    [![LCS-プロジェクト-タイル](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
+    [![LCS-Project-Tiles.](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
     
-    [![LCS-プロジェクト-設定-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
+    [![LCS-Project-Settings-VSO.](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
 4.  **Azure DevOps の設定** をクリックします。
 5.  **Azure DevOps サイトの URL** フィールドに、前のセクションで作成した Azure DevOps プロジェクトの URL を入力します。
@@ -98,7 +98,7 @@ Microsoft によって公開されている更新プログラムを表示する�
 > [!WARNING]
 > オンプレミスで配置している場合、既存の問題を検索してオンプレミス クライアントから Azure DevOps プロジェクトにサポート インシデントを送信することはできません。
 
-[![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
+[![wiki1.](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
 > [!NOTE]
 > Lifecycle Services (LCS) にまだ接続していない場合は、ダイアログ ボックスに接続できる場所が表示されます。 続行する前に、接続するリンクをクリックしてください。 
@@ -125,11 +125,11 @@ LCS に接続した後は、既存の Microsoft 更新プログラムおよび�
 
 Azure DevOps 管理者は、**#SearchableInFinanceAndOperations** を作業項目にタグ付けすることによって、プロジェクトの作業項目を組織のユーザーに発行することができます。 タグ付けされた作業項目は、クライアント サポート検索ボックスからユーザーに対して検索可能になります。 検索結果には、Microsoft が公開した更新プログラムや修正プログラムに加えて、タグ付きの Azure DevOps 作業項目が含まれます。 次のグラフィックは、公開用のタグ付きの Azure DevOps 作業項目を示しています。
 
-[![vstsTag](./media/VSTS-Tagging.png)](./media/VSTS-Tagging.png)
+[![vstsTag.](./media/VSTS-Tagging.png)](./media/VSTS-Tagging.png)
 
 サポート検索ボックスを使用して公開済みの Azure DevOps 作業項目を検索するとき、検索結果は、新しいブラウザー タブに **表示** モードで、作業項目のタイプ、タイトル、状態、および説明が表示されます。  適切なアクセス許可を持つユーザーが、Azure DevOps の作業項目を編集できます。 次のグラフィックは、公開された Azure DevOps 作業項目の検索結果を示しています。
 
-[![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
+[![ViewVSTS.](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
 > [!NOTE]
 > 発行済みの Azure DevOps 作業項目は、組織のユーザーにのみ表示されます。  
@@ -146,7 +146,7 @@ LCS **サポート** タイルでは、問題が LCS プロジェクトに関連
 2.  払出を表示する環境に関連付けられている LCS プロジェクトを開きます。
 3.  **サポート** タイルをクリックします。 作成された問題の一覧を表示します。
 
-    [![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
+    [![LCS-CPS-list.](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
 
 ### <a name="edit-issues"></a>項目を編集
 1.  **問題** グリッドで、問題のタイトルをクリックします。

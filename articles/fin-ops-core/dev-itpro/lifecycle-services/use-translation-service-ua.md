@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: cee70eb7dac055cd4a589210e67a724c14bf6af1
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 6e9521370c0974a02c4acbac66d5ca104ef6fe7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222600"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349130"
 ---
 # <a name="translate-documentation-files"></a>ドキュメント ファイルの翻訳
 
@@ -30,7 +30,7 @@ ms.locfileid: "6222600"
 ## <a name="create-a-translation-request"></a>翻訳要求を作成する
 1. Microsoft Dynamics Lifecycle Services (LCS) で、DTS ダッシュボードの **追加** を選択して新しい翻訳要求を作成します。
 
-    ![ボタンの追加](./media/dts-request1.png "ボタンの追加")
+    ![追加ボタン。](./media/dts-request1.png "ボタンの追加")
 
     LCS ホーム ページから、またはプロジェクト内から、DTS ダッシュ ボードを開くことができます。 詳細については、[DTS にアクセス](./translation-service-overview.md#accessing-dts) を参照してください。
 
@@ -44,7 +44,7 @@ ms.locfileid: "6222600"
     | 製品バージョン | 製品バージョンを選択します。 LCS プロジェクト内から DTS にアクセスする場合、このフィールドではプロジェクトからの既定の製品バージョン情報を表示されます。 ただし、別のバージョンを選択できます。 |
     | 翻訳元言語、翻訳先言語 | 翻訳対象のソース言語とターゲット言語のセットを選択します。 業務で同じソース言語から複数のターゲット言語に翻訳する必要がある場合、1 つの要求ですべてのターゲット言語を選択できます。 言語名の横にあるチェック ボックスを使用してターゲット言語を実際に選択してください。 これにより、複数の翻訳要求を個別に送信する時間が節約され、1 つの要求ですべてのターゲット言語翻訳ステータスを追跡することもできます。 **太字** タイプで表示される言語名は、Microsoft Dynamics 製品の一般提供 (GA) 言語です。 したがって、Microsoft で訓練された機械翻訳 (MT) システムは、これらの言語で使用できます。 つまり、MT システムは Microsoft Dynamics の用語でトレーニングされます。 GA 言語以外の場合、MT システムは一般的なドメイン トレーニングを使用します。 |
 
-    ![言語を選択する](./media/dts-target-lang.png "言語を選択する")
+    ![言語を選択する。](./media/dts-target-lang.png "言語を選択する")
 
 3. **作成** を選択します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "6222600"
 ### <a name="upload-xliff-or-tmx-translation-memory-files-optional"></a>XLIFF または TMX 翻訳メモリ ファイルのアップロード (オプション)
 以前の DTS リクエストからの Translation Memory eXchange (TMX) 形式の TM を使用している場合、または UI ファイル変換の XLIFF TM を使用している場合、これらの TM が、再提出する新しいドキュメントにリサイクルできるようにするために、これらの TM を添付できます。 すべての TM ファイルを含む ZIP ファイルを作成します。 zip ファイルは 1 つのみアップロードすることができます。 複数のターゲット言語の翻訳依頼を作成した場合は、TM ファイルがどのターゲット言語用であるかを選択する必要があります。 
 
-![TM アップロード:](./media/dts-tm-upload-ua.png "TM アップロード:")
+![TM アップロード。](./media/dts-tm-upload-ua.png "TM アップロード:")
 
 指定した翻訳メモリ ファイルを使用して、それでトレーニングされたカスタム MT システムを作成するかどうかを決定できます。 このオプションでは、要求を完了するまで時間がかかることがあります。 TM ファイルのアップロードを続行するには、[はい] または [いいえ] を選択する必要があります。  
 
@@ -79,14 +79,14 @@ ms.locfileid: "6222600"
 
 要求のステータスを表示するには、ダッシュボードで要求 ID のリンクを選択します。 **要求ステータス** タブは、要求の情報の概要と共にアップロードしたソース ファイル一覧を表示します。
 
-![ステータス タブの要求](./media/dts-request-status-ua.png "ステータス タブの要求")
+![ステータス タブの要求。](./media/dts-request-status-ua.png "ステータス タブの要求")
 
 処理時間は、DTS キューに入っている要求の数と、送信するソース ファイルの文字数に依存することに注意してください。
 
 ## <a name="after-translation-is-completed"></a>翻訳の完了後
 翻訳要求の処理が完了すると、DTS から電子メール通知を受信します。 結果を要求詳細ページの **要求の出力** タブ上に表示することができます。 複数のターゲット言語の要求が送信された場合、各言語の処理が行われたときに言語間に違いがある可能性があります。 各言語名を展開してステータスを表示します。 
 
-![出力タブの要求](./media/dts-output-ua.png "出力タブの要求")
+![出力タブの要求。](./media/dts-output-ua.png "出力タブの要求")
 
 文書翻訳の要求では、翻訳プロセスが完了した後、出力ファイルの 3 つのタイプが使用できます。
 
@@ -97,7 +97,7 @@ ms.locfileid: "6222600"
 ### <a name="review-and-edit-the-translations"></a>翻訳を確認および編集
 DTS は .docx 形式の翻訳レビュー ファイルを提供します。 要求の詳細ページの **要求の出力** タブからファイルをダウンロードして、Word で開くことができます。 ファイルは、次の図に示すように、便利なテーブルビューを提供します。 したがって、ソース言語とターゲット言語のテキストを簡単に比較することができます。 ファイルを確認した後は、ファイルを保存し DTS にアップロードして、送信した元の書式スタイルで更新された .docx ファイルの出力を生成します。
 
-![確認用の .docx ファイル](./media/dts-doc-review.png "翻訳レビュー対象 .docx ファイル")
+![確認用の .docx ファイル。](./media/dts-doc-review.png "翻訳レビュー対象 .docx ファイル")
  
 .docx レビュー ファイルを編集するときは、次のガイドラインに注意してください。
 

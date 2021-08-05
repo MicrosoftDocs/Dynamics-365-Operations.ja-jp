@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kesaelen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 132629a82d03f915884d44ad62080c8fc4d17630
-ms.sourcegitcommit: 55ca275705a624d446d2abb60b5d676b86fe7240
+ms.openlocfilehash: 92d660d27bbacce6c8513d23fdc6da557c22c09e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "6306788"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344006"
 ---
 # <a name="run-multi-user-testing-by-using-the-performance-sdk"></a>パフォーマンス SDK によるマルチユーザー テストを実行する
 
@@ -62,7 +62,7 @@ ms.locfileid: "6306788"
     - RSAT 証明書のダウンロード
     - RSAT 証明書を再生成する
 
-    ![RSAT 証明書のダウンロードと RSAT 証明書の再生成コマンド](rsat/media/rsat-lcs1.png)
+    ![RSAT 証明書のダウンロードと RSAT 証明書の再生成コマンド。](rsat/media/rsat-lcs1.png)
 
 3. **RSAT 証明書をダウンロード** を選択して、証明書バンドルを ZIP ファイルとして取得します。
 4. クリアテキストのパスワードが画面に表示されるという警告が表示されます。 **はい** を選択して続行します。
@@ -88,7 +88,7 @@ ms.locfileid: "6306788"
 
     次の図は、サンプル結果を示します。 以前に保存した拇印がリストにあることを確認してください。
 
-    ![コマンド プロンプト ウィンドウの拇印](media/perfsdk-multi-user-testing-01.png)
+    ![コマンド プロンプト ウィンドウの拇印。](media/perfsdk-multi-user-testing-01.png)
 
 2. Performance SDK フォルダーの **CloudEnvironment.config** 構成ファイルを更新し、対象の環境を記述します。 この更新プログラムの一部として、次の手順を実行します。
 
@@ -104,7 +104,7 @@ ms.locfileid: "6306788"
 
     結果は次の例のようになります。
 
-    ![更新された CloudEnvironment.config ファイル](./media/perfsdk-multi-user-testing-02.png)
+    ![更新された CloudEnvironment.config ファイル。](./media/perfsdk-multi-user-testing-02.png)
 
 3. **vsonline.testsettings** ファイルの名前を **local.testsettings** に変更します。
 4. Visual Studio で **local.testsettings** ファイルを開き、次の手順に従って変更します。
@@ -112,7 +112,7 @@ ms.locfileid: "6306788"
     1. **テストの設定** ダイアログ ボックスの **一般** タブの **テストの実行場所** フィールド グループで **ローカル コンピューターまたはテスト コント ローラーを使用してテストを実行** オプションを選択します。
     2. **配置** タブで **配置を有効にする** チェック ボックスを選択し、**ディレクトリの追加** ボタンを使用して **bin\debug** を **配置する追加のファイルやディレクトリ** フィールドに追加します。
 
-        ![[テストの設定] ダイアログ ボックスの [配置] タブ](./media/perfsdk-multi-user-testing-04.png)
+        ![[テストの設定] ダイアログ ボックスの [配置] タブ。](./media/perfsdk-multi-user-testing-04.png)
 
     3. **ホスト** タブの **32 ビットまたは 64 ビット プロセスでテストを実行** フィールドで、**64 ビット コンピューターで 64 ビット プロセスのテストを実行** を選択します。
     4. **適用** を選択して **テストの設定** ダイアログ ボックスを閉じます。
@@ -173,15 +173,15 @@ ms.locfileid: "6306788"
 2. **テスト ミックス** ノードを選択し、保留 (または右クリック) し、**テスト ミックスの編集** を選択します。
 3. **テスト ミックスの編集** ダイアログ ボックスで、**追加** を選択してテストをミックスに追加します。
 
-    ![[テスト ミックスの編集] ダイアログ ボックス](./media/perfsdk-multi-user-testing-06.png)
+    ![[テスト ミックスの編集] ダイアログ ボックス。](./media/perfsdk-multi-user-testing-06.png)
 
 4. **実行設定** ノードで、プロパティを変更し、**実行設定 1** の **タイミング** フィールドを更新します。 これらのフィールドは **ウォームアップ期間**、**実行期間**、**クールダウン期間** を含みます。
 
-    ![タイミング フィールド](./media/perfsdk-multi-user-testing-07.png)
+    ![タイミング フィールド。](./media/perfsdk-multi-user-testing-07.png)
 
 5. **シナリオ** ノードで、必ず **負荷パターン** プロパティを更新し、**定数ユーザー数** パラメーターをテストの実行に使用するユーザーの総数に設定してください。
 
-    ![定数ユーザー数パラメーター](./media/perfsdk-multi-user-testing-08.png)
+    ![定数ユーザー数パラメーター。](./media/perfsdk-multi-user-testing-08.png)
 
 ## <a name="create-test-users"></a>新規ユーザーのテスト
 
@@ -196,7 +196,7 @@ ms.locfileid: "6306788"
 1. Visual Studio プロジェクトで、**SampleLoadTest.loadtest** ファイルを開き、**負荷テストを実行** を選択します。
 2. テスト出力を確認します。
 
-    ![テストの出力](./media/perfsdk-multi-user-testing-10.png)
+    ![テスト出力。](./media/perfsdk-multi-user-testing-10.png)
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

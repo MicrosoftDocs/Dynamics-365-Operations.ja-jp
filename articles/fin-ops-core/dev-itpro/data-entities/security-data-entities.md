@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcf99995d9334be1820444979431ea1924663115
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9f532db9be4a63bade807b2a78761e66526472de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749688"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344862"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 
@@ -231,7 +231,7 @@ ms.locfileid: "5749688"
     - **データ管理** - データのインポート/エクスポートおよびコネクタの統合のみに適用されます。
     - **データ サービス** - OData サービスにのみ適用されます。
 
-[![RolebasedSecurity](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
+[![RolebasedSecurity.](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
 
 ## <a name="sensitive-data"></a>機密データ
 テーブル保護フレームワーク (TPF) は、Finance and Operations に格納されているデータへの厳密なアクセス制御を使用できます。 この機能は、テーブルおよびテーブルのフィールドの AOSAuthorization プロパティを介して公開されます。 AOSAuthorization を使用してテーブルまたはフィールドにマークを付ける場合、セキュリティ フレームワークでは、そのリソースへの明示的なアクセス権がユーザーに付与されている必要があります。 この要件は、テーブルまたはフィールドにデータエンティティでアクセスする場合にも適用されます。 この項では、データ エンティティの TPF アクセス許可を付与するためのガイドラインについて説明します。

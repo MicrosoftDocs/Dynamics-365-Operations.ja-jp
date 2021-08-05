@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a5aea0e6689c11aa567a89fe654bc085d7ec2bc0
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: df173456a9d5535342f7b89b0b7e5448d0e10ef0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891733"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354433"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -47,7 +47,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
 次の図は、集計モデルの更新頻度を設定するために使用する管理者ダイアログ ボックスを示しています。
 
-![更新ダイアログ ボックスのコンフィギュレーション](media/Configure-refresh.png)
+![更新ダイアログ ボックスを構成します。](media/Configure-refresh.png)
 
 データをステージングするジョブの進行状況を監視するには、バッチ ジョブ監視ページを使用します。 (**システム管理** \> **データベース** \> **バッチ ジョブ** の順に選択します。) デモ データを使用している場合、ジョブは 1 分ほどかかります。 データがエンティティ格納に格納された後、レポートを作成できます。 
 
@@ -57,13 +57,13 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
     または、Power BI Desktop が開始するとき、**データの取得** \> **SQL Server** を選択することができます。 
 
-    ![Power BI Desktop でデータ メニューを取得する](media/Power-BI-Desktop-Get-Data.png)
+    ![Power BI Desktop でデータ メニューを取得する。](media/Power-BI-Desktop-Get-Data.png)
 
 3. **SQL Server データベース** ダイアログ ボックスに **.** と入力します。 サーバー名として、および **AxDW** をデータベースとして。 その後、**DirectQuery** オプションを選択します。 
 
     次の図は、Power BI Desktop がローカルのエンティティ格納データベースにアクセスするための設定を示しています。
 
-    ![ローカル エンティティ格納データベースにアクセスするための設定](media/Connect-to-SQL-Database.png)
+    ![ローカル エンティティ格納データベースにアクセスするための設定。](media/Connect-to-SQL-Database.png)
 
     > [!NOTE]
     > **インポート** オプションは現在サポートされていません。
@@ -79,7 +79,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
 次の図は、ローカルの Entity Store データベースをソースとして使用する基本レポートを示しています。
 
-![Power BI Desktop レポート](media/Power-BI-Desktop-Report.png)
+![Power BI Desktop レポート。](media/Power-BI-Desktop-Report.png)
 
 Power BI Desktop でも計算の作成がサポートされ、複数の集計測定のデータを組み合わせることができます。 数分で、ローカルの開発環境でデータを使用することにより分析レポートを作成することができます。 レポートに問題がなければ、それを実稼働環境に移行できます。これにより、ユーザーは、そのレポートを使用して、実稼働データにかかわることができます。
 

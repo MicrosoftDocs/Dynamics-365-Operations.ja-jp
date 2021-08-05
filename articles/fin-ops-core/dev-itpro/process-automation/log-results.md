@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 569c3f27a7d3aba05c3ee3ea00066c4cf0aed5ef
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d529f59728fe034acca0f5afb80cc56923595ef6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866128"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349122"
 ---
 # <a name="log-results-and-messages"></a>結果とメッセージを記録する
 
@@ -35,11 +35,11 @@ ms.locfileid: "5866128"
 
 次の図は、結果ビューを示しています。
 
-![結果の状態、時間、およびメッセージ](media/execution-results.png)
+![結果の状態、時間、およびメッセージ。](media/execution-results.png)
 
 次の図は、メッセージ ビューを示しています。 このビューを開くには、結果ビューで **ログ** 列の **ログの表示** を選択します。
 
-![個々のメッセージの例外タイプとメッセージ](media/execution-message-log.png)
+![個々のメッセージの例外タイプとメッセージ。](media/execution-message-log.png)
 
 ## <a name="processexecutionsourcelink-table"></a>ProcessExecutionSourceLink テーブル
 

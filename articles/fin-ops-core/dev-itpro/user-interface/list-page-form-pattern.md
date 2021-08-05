@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de0e7048139ccb7e088f7dcf85e3deb7a978fdda
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 3b33f9176ce50259dd7a9b1a21c30c748fde3998
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189302"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350712"
 ---
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 
@@ -32,7 +32,7 @@ ms.locfileid: "6189302"
 リスト ページには、最適化されたユーザー インターフェイスの一連のデータが表示されるため、レコードの参照、適切なレコードの検索、そのレコードでのアクションを実行できます。 リスト ページでは、ユーザーはデータを検索、フィルタリング、並べ替えできます。 グリッドの右側にある情報ボックスは、有効なレコードの関連データを表示します。 レコードに関連するアクションは、ページの上部にある ActionPane に配置されます。 現在、このパターンの使用は、リスト ページと詳細ページの間に 1 対 1 の対応がある場合は推奨されません。 現在のガイダンスは、リスト ページにバッキングの詳細ページがない場合や複数のバッキングの詳細ページがある場合 (たとえば、プロジェクト見積と販売見積が同じリスト ページにまとめられている場合など) の場合のみ、このパターンを使用することです。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![ワイヤーフレーム](./media/listpage1-1024x576.png)](./media/listpage1.png)
+[![ワイヤーフレーム。](./media/listpage1-1024x576.png)](./media/listpage1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -102,7 +102,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   **情報ボックス** ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
 
 ## <a name="examples"></a>例
-フォーム: **SalesTableListPage** [![リスト ページの例](./media/listpage2-1024x510.png)](./media/listpage2.png)
+フォーム: **SalesTableListPage** [![リスト ページの例。](./media/listpage2-1024x510.png)](./media/listpage2.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -134,7 +134,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
-[![例](./media/listpage3-1024x671.png)](./media/listpage3.png)
+[![例。](./media/listpage3-1024x671.png)](./media/listpage3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a63aebbdca05d2bba1377328db3c23cb254a27a9
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 2c54d0371c6e3c94b4713620445bef9cfb764aaa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921437"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358959"
 ---
 # <a name="manage-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する
 [!include [banner](../includes/banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "5921437"
 
 2. **サポート** タイルをクリックします。
 
-   ![サポート メニュー](media/CPS1.png)
+   ![サポート メニュー。](media/CPS1.png)
 
 3. **Microsoft に送信** タブで、**インシデントの送信** ボタンをクリックします。
 
-   ![サポート ボタン](media/CPS2.png)
+   ![サポート ボタン。](media/CPS2.png)
 
 4. 問題のカテゴリを選択します。
 
@@ -84,11 +84,11 @@ ms.locfileid: "5921437"
 1. プロジェクト内から選択 **サポート** し、メイン メニューなどの選択から **管理サポート プラン** します。 
 2. **契約の追加** を選択します
 
-   ![契約の追加](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+   ![契約の追加。](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 3. アクセスIDと、パスワードまたは契約IDを入力し、 **契約の追加** を選択します。
 
-   ![契約の資格情報の追加](media/4abba1127549ef484a58daf51609d924.png)
+   ![契約の資格情報の追加。](media/4abba1127549ef484a58daf51609d924.png)
 
 ### <a name="partnersource-business-center-account"></a>PartnerSource Business Center アカウント
 利用可能な場合は、次のサポートプランインシデントがPartnerSource業務部門 (PSBC) アカウントの一部として使用できます。 
@@ -102,7 +102,7 @@ ms.locfileid: "5921437"
 
 PartnerSourceビジネス センター アカウントが見つからない場合は、PSBCの組織でサインインがプロフェッショナルとして追加されているか確認してください。 同一のMicrosoftアカウントまたは職場アカウントを使用してログインしていることを確認します。 このアカウントは、オンプレミスプロジェクトにのみ有効です。
 
-![契約の追加](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+![契約の追加。](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 ### <a name="sign-in-specific-options"></a>サインインの特定のオプション
 該当するものがある場合、ログインのアカウントに基づき次の問題とサポートの特典が表示されます。
@@ -127,7 +127,7 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 
 サポート インシデントを作成する際に **ソフトウェア保証プラン追加** することで追加します。 定期売買番号および連絡先の電子メールを入力し、 **続行します** をクリックします。
 
-![ソフトウェア保証プラン](media/cd8f65a32c30722ea687dfbc5cc30874.png)
+![ソフトウェア保証プラン。](media/cd8f65a32c30722ea687dfbc5cc30874.png)
    
 ## <a name="report-production-outage"></a>稼働停止のレポート
 プロダクション環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [稼働停止をレポート](report-production-outage.md) をご確認ください。

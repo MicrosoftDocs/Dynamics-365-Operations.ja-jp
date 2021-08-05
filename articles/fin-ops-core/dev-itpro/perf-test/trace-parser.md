@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2dcdc54605bf7488bf8452a2f145f6201a2c57c
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: d47d14261a5ea444b33752b7621c92c4dfb49580
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189802"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357496"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 
@@ -40,12 +40,12 @@ ms.locfileid: "6189802"
     -   **トレースの選択** ウィンドウが開いていない場合、**ファイル** メニューに移動し、**トレースを開く** をクリックします。 **追跡の選択** ウィンドウで、**イベントのキャプチャ** をクリックします。 プロバイダーを選択して、**開始** をクリックします。 Trace Parser ツールは、すべてのプロバイダーのリッスンとイベントのキャプチャを開始します。 **停止およびインポート** をクリックするとキャプチャは停止します。
 -   Logman などのツールを使用してキャプチャされた、既存の ETL(Windows イベント) ファイルを開きます。 
 
-    [![開いている Windows イベントのファイルの例](./media/1_desktop.png)](./media/1_desktop.png)
+    [![開いている Windows イベントのファイルの例。](./media/1_desktop.png)](./media/1_desktop.png)
 
 ## <a name="viewing-traces"></a>トレースの表示
 **タイムライン ビュー** タイムライン タブは、Trace Parser にトレースをインポートした後に表示される最初のタブです。 このタブは、次の図に表示されます。 
 
-[![[タイムライン] タブの情報の例](./media/2_desktop.png)](./media/2_desktop.png) 
+[![タイムライン タブの情報の例。](./media/2_desktop.png)](./media/2_desktop.png) 
 
 **タイムライン** タブには、次の主要なコンポーネントがあります。
 
@@ -58,7 +58,7 @@ ms.locfileid: "6189802"
 
 **呼び出しツリーの表示** **呼び出しツリー** タブを選択すると、すべての X++ メソッドの呼び出しツリーが表示されます。 タブは、次に示します。 
 
-[呼び出しツリー タブに表示される情報の例](./media/3_desktop.png)](./media/3_desktop.png) 
+[![呼び出しツリー タブに表示される情報の例](./media/3_desktop.png)](./media/3_desktop.png) 
 
 デスクトップ同様に、**X++** タブを表示し、すべての X++ メソッドの一覧を表示することができます。 包括的/排他的な期間、RPC、データベース呼び出しなどのフィールドでソートされます。 これらは Trace Parser の対応するタブに類似しており、同じ動作をすることに注意してください。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30fbbd6c2609e6305df8c500335ce2e93c482969
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4fe910d81218c3a4b0461f1d9a9208cfd4821019
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188091"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359723"
 ---
 # <a name="task-double-form-pattern"></a>タスク ダブルのフォーム パターン
 
@@ -33,7 +33,7 @@ ms.locfileid: "6188091"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-![タスク ダブルのフォームのワイヤーフレーム](./media/patterntaskdouble.png)]
+![タスク ダブルのフォームのワイヤーフレーム。](./media/patterntaskdouble.png)]
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -104,7 +104,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="example"></a>例
 フォーム: **HRMAbsenceTableHistory** 
 
-[![タスク ダブルの例](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
+[![タスク ダブルの例。](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -113,11 +113,11 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   なし
+-   None
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![AX 2012 視覚例](./media/taskdouble3.png)](./media/taskdouble3.png)
+[![AX 2012 視覚例。](./media/taskdouble3.png)](./media/taskdouble3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a8696dd4934ed6f495c5add98b5b8070c56427ea
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 48ad16a5b53ab3070c07721e28fbb3a640cd0ad4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791223"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354671"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -101,7 +101,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 4. プロジェクトを右クリックし、**追加** &gt; **新しい項目** を選択します。
 5. **新しい項目の追加** ダイアログ ボックスで、**リソース** を選択し、リソース ファイルに **RetailCDXSeedDataAX7_Custom** と名前を付けてから、**追加** を選択します。
 
-    ![新しい品目の追加](media/cdx-ext-1.png)
+    ![新しい品目を追加します。](media/cdx-ext-1.png)
 
 6. **リソース ファイルの選択** ダイアログ ボックスで、手順 2 で作成したリソース ファイルを検索し、**開く** を選択します。
 7. **registerCDXSeedDataExtension** イベントを処理するために使用する新しいクラスを追加します。 **RetailCDXSeedDataBase** クラスを検索し、デザイナーで開きます。 **registerCDXSeedDataExtension** デリゲートを右クリックし、**イベント ハンドラーをコピー** を選択します。

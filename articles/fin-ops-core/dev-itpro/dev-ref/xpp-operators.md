@@ -3,20 +3,18 @@ title: X++ 演算子
 description: このトピックでは、X++ でサポートされている演算子について説明します。
 author: RobinARH
 ms.date: 12/02/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150373
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2e8fde8fae0a41446c00717611de2be6f5fc019
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: a30c65359c7d9d27e674e37ab9d174e1a66f8d20
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866110"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661546"
 ---
 # <a name="x-operators"></a>X++ 演算子
 

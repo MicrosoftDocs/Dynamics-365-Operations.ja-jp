@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f28dfb115b3f1cd2b27415a6f74880db894a65ef
-ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
+ms.openlocfilehash: 32d8a2820a6b138b703e96005a70a7162fd6053e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "6224580"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355266"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -41,7 +41,7 @@ ms.locfileid: "6224580"
 
 ## <a name="end-to-end-data-upgrade-process"></a>エンド ツー エンド データのアップグレード プロセス
 
-![データ アップグレード プロセス](media/endToEndDataUpgradeProcess.png)
+![データ アップグレード プロセス。](media/endToEndDataUpgradeProcess.png)
 
 ### <a name="back-up-your-ax-2012-database"></a>AX 2012 データベースをバックアップします
 

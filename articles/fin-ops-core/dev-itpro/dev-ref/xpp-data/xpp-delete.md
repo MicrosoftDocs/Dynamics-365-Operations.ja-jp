@@ -3,20 +3,18 @@ title: データの削除
 description: このトピックでは、X++ 言語での delete および doDelete メソッドについて説明します。
 author: RobinARH
 ms.date: 06/16/2020
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 55ac358b36f98afeed9c7d69dbf189b98eb2b711
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 817cb32801d7f5f981bb9c9a7746e5326de6cd9f
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865971"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661340"
 ---
 # <a name="delete-data"></a>データの削除
 

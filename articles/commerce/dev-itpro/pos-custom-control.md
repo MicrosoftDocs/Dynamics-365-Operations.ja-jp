@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: e25e4fa4c5c187081e1eda1bcfc1cb88b07f2395
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d4d1c9d3eab92d25f40495b7b5431b9150512b18
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791147"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355436"
 ---
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 
@@ -30,7 +30,7 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 たとえば、次の図では、3 つのカスタム コントロールは画面レイアウト デザイナーを使用して追加されました。
 
-![買い物カゴでの POS 画面レイアウト デザイナー](media/pos-custom-control-1.png)
+![カード ビューでの POS 画面レイアウト デザイナー。](media/pos-custom-control-1.png)
 
 現在、カート ビューのみでスクリーン レイアウ トデザイナーを使用してカスタム コントロールを追加できます。 その他のすべての画面については、拡張機能プロジェクトでレイアウトを行う必要があります。 画面レイアウト デザイナーを使用するメリットの 1 つは、画面の任意の場所にカスタム コントロールをドラッグできることです。 他の画面では、位置は固定されていますが、高さと幅を指定することで位置を変更できます。
 
@@ -190,7 +190,7 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 1. F5 キーを押し、POS を展開してカスタマイズをテストします。
 2. POS が開始された後にサインインします。 次に、任意の製品を検索し、製品詳細ビューを開きます。 追加したカスタム コントロールが表示されました。 次に例を示します。
 
-    ![製品の詳細ビューに表示された製品の可用性情報](media/pos-custom-control-2.png)
+    ![製品の詳細ビューに表示された製品の可用性情報。](media/pos-custom-control-2.png)
 
 このサンプルの完全なコードは RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails からコピーすることができます。
 

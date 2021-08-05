@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: rapraj
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.openlocfilehash: f81c3be5fa5b664c870e84ce7c5f862c06619411
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 661c9ceaadba302836d632ce30891fb7b232ae54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792995"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355496"
 ---
 # <a name="cash-out-gift-card-balance-for-a-retail-customer"></a>小売顧客のギフト カードの残高を清算します。
 
@@ -50,14 +50,14 @@ ms.locfileid: "5792995"
     2. **ギフト カードを清算** フィールドに、**ギフト カード清算しきい値** の額を入力します。
     3. **保存** を選択します。
 
-    ![ギフト カードのしきい値を設定](./media/GiftCardCashout01.png)
+    ![ギフト カードのしきい値の設定。](./media/GiftCardCashout01.png)
 
 6. **ボタン グリッド** ページを開きます。
 7. ページの左側にあるナビゲーション バーで、**F2S1M** を検索してフィルター処理オプションを選択します。
 8. **アクション ウィンドウ** で、**デザイナー** を選択し、ボタン デザイナー アプリケーションをダウンロードします。
 9. グリッド デザイナーが表示されたら、空の (灰色) 領域を右クリックして、**新規作成ボタン** を選択します。
 
-    ![新しいボタン](./media/07.png)
+    ![新しいボタン。](./media/07.png)
 
 10. 新しいボタンを右クリックし、**ボタン プロパティ** を選択します。
 11. 次のマトリックスに従って **アクション**、**支払タイプ**、および **ボタンのテキスト** プロパティを設定します。

@@ -2,7 +2,7 @@
 title: Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 04/22/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 29f9fa2757910626da1585d5c37b03645b97ee92
-ms.sourcegitcommit: 18ca2df785e9656fdd4e8c0734eca2b2624fda10
+ms.openlocfilehash: d0e94d177ef47e1530b7bb08438edd3f478c5c65
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6293960"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309623"
 ---
 # <a name="platform-updates-for-version-10019-of-finance-and-operations-apps-june-2021"></a>Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)
 
@@ -35,9 +35,9 @@ ms.locfileid: "6293960"
 
 このリリースでは次の機能が含まれています。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。 各機能の公式リリース日については、[リリース計画](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) を参照してください。
 
--  法人コンテキストを埋め込みキャンバス アプリに渡す<br> - この機能は、以前に選択したコンテキスト フィールドに加えて、ユーザーの現在の法人を埋め込みキャンバス アプリに自動的に渡すことにより、Finance and Operations 及び Power Apps の統合を改善します。 詳細については、[Power Apps](../../fin-ops/get-started/embed-power-apps.md) からキャンバス アプリの埋め込むを参照してください。
+-  [法人コンテキストを埋め込みキャンバス アプリに渡す](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/pass-legal-entity-context-embedded-canvas-apps)<br>詳細については、[Power Apps](../../fin-ops/get-started/embed-power-apps.md) からキャンバス アプリの埋め込むを参照してください。
 
--  ウィザードの表示の更新<br> - この機能は、Finance and Operations アプリのウィザードの外観を近代化し、ウィザードのユーザー エクスペリエンスを他の Dynamics 365 製品とより緊密に連携させます。
+-  [ウィザードの表示の更新](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/visual-update-wizards)
 
 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 

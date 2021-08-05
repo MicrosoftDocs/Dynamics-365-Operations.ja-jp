@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec805cb1b9f958b6f8881098ee1be882669619e
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: ccfec9625d9f315e759ae999865529fe503b32f3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189310"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360754"
 ---
 # <a name="general-form-guidelines"></a>フォームの全般的なガイドライン
 
@@ -57,7 +57,7 @@ ms.locfileid: "6189310"
 - 国/地域コードが適用される場合に違反する UX ガイドラインはありません。
 - 2 つのフィールドで 1 つのラベルを共有できます。 フィールドにグループをグループ化し、グループの **FrameType** プロパティを **GroupedFieldsLabel** に設定します。
 
-  [![単一のラベルを共有する 2 つのフィールド例](./media/generalform1.jpg)](./media/generalform1.jpg)
+  [![単一のラベルを共有する 2 つのフィールドの例。](./media/generalform1.jpg)](./media/generalform1.jpg)
 
 ## <a name="other-form-guidelines"></a>その他のフォーム ガイドライン
 -   複数行の読み取り専用テキストには、StringEdit ではなく StaticText コントロールを使用します。 StringEdit コントロールは、編集できないため、情報テキストとして意味的に正しくありません。 加えて、StringEdit コントロールは、StaticText コントロールよりも罫線と異なるレイアウト特性を持ち、これらの違いによりユーザー エクスペリエンスが低下します。
@@ -127,7 +127,7 @@ ms.locfileid: "6189310"
 ## <a name="fasttabs-guidelines"></a>FastTabs ガイドライン
 -   グループ内のフィールドは、FastTab を越えて移動する必要があります。 
 
-    [![クイック タブ間を通過するフィールド例](./media/generalform2.jpg)](./media/generalform2.jpg)
+    [![クイック タブ間を通過するフィールドの例。](./media/generalform2.jpg)](./media/generalform2.jpg)
 
 -   最初のクイック タブのコンテンツは、スクロールせずに完全に表示される必要があります。 FastTabs では、フィールドが表示される際、水平にスクロールしないでください。
 -   最初のクイック タブには、このエンティティにとって最も重要なフィールド (編集頻度が最も高いフィールド) が含まれている必要があります。
@@ -158,7 +158,7 @@ ms.locfileid: "6189310"
 ## <a name="check-box-and-toggle-guidelines"></a>チェック ボックスとガイドラインの切り替え
 従来のチェック ボックスの代わりに通常はトグル ボタンが使用されます。 
 
-[![チェック ボックスと切替のイメージ](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
+[![チェック ボックスと切替の画像。](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
 -   すべての [チェック ボックスに対する Microsoft の標準ガイドライン](/windows/desktop/uxguide/ctrl-check-boxes) に従います。 具体的には、次のガイドラインを遵守します。
     -   既定では、フォームのチェック ボックスの代わりにトグル ボタンを使用します。 ラベルは、Microsoft のチェックボックス ラベルのガイドラインに従う必要があります。

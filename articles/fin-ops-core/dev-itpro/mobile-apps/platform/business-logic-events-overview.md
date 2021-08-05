@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 255544
+ms.custom:
+- "255544"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: d35f1815ff304a5ab1cf0b81494a98ddf7725b47
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b835445ad9b41bd7c92056487d1ae17a7d6a69d9
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743893"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336231"
 ---
 # <a name="business-logic-events"></a>ビジネス ロジック イベント
 

@@ -3,20 +3,18 @@ title: 明細書を選択
 description: このトピックでは、X++ 言語での select ステートメントについて説明します。
 author: robinarh
 ms.date: 06/16/2020
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 47248c3908c2b2162443b28e0f9b65ab5f335231
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 49a17175fd6541e0ec00ca63f1c8c1eafc56da43
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193554"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661342"
 ---
 # <a name="select-statement"></a>明細書を選択
 

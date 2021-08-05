@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 698836083a540d48f29cf3a4399cf8a583707f2d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b64db25349fdd2d07413f4eae39eb23bddecf5c4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743939"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345646"
 ---
 # <a name="ax-2009-migration--create-package-templates"></a>AX 2009 の移行 － パッケージ テンプレートの作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "5743939"
 
 データ移行ツール (DMT) には、次の図に示すように、20 の事前に定義されたテンプレートが用意されています。
 
-[![データ エンティティ インポート テンプレートの一覧](./media/data-entity-templates.png)](./media/data-entity-templates.png)
+[![データ エンティティ インポート テンプレートの一覧。](./media/data-entity-templates.png)](./media/data-entity-templates.png)
 
 既存のテンプレートをカスタマイズできます。または、必要に応じて、独自のテンプレートを作成することができます。
 

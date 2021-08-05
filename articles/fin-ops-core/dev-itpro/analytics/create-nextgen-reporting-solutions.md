@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2db2a5f5f60f1a4f1600b9e0605e2efa8f8bc8a8
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b2d242794368c8d2d892469cec71dfec48949bb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893316"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358715"
 ---
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 
@@ -93,11 +93,11 @@ ms.locfileid: "5893316"
 6. 状態フィルター フィールドの **完了** を入力し、**適用** をクリックします。
 7. ページの操作バーを展開し、**Office で開く** をクリックして、次に **レンタル** を選択します。
 
-    [![FMRentals エクスポート](./media/fmrentals-export.png)](./media/fmrentals-export.png) 
+    [![FMRentals エクスポート。](./media/fmrentals-export.png)](./media/fmrentals-export.png) 
 
     データをエクスポートした後、Excel ツールのパワーと柔軟性を使用して、プレゼンテーション、または追加の分析のレポートを作成できます。 Excel で作成したセルフサービス レポートの例を次に示します。
 
-    [![FMRentals 分析](./media/fmrentals-analysis-1024x775.png)](./media/fmrentals-analysis.png)
+    [![FMRentals 分析。](./media/fmrentals-analysis-1024x775.png)](./media/fmrentals-analysis.png)
 
 8. ブラウザー セッションおよびエクスポートされた Excel ファイルを閉じます。
 
@@ -121,7 +121,7 @@ ms.locfileid: "5893316"
 7. Ctrl+Shift+B キーを押して、プロジェクトを保存およびビルドします。
 8. Ctrl + F5 キーを押して、レポートを含むフォームを読み込みます。
 
-    [![FMCustomer アクティビティ](./media/fmcustomer-activity-300x224.png)](./media/fmcustomer-activity.png) 
+    [![FMCustomer アクティビティ。](./media/fmcustomer-activity-300x224.png)](./media/fmcustomer-activity.png) 
 
 この時点で、集計データの事前に定義されたグラフのビジュアル化のコレクションがあります。 コントロールは、ホバー テキスト、シリーズ フィルタリング、タッチ拡張などの基本的な対話型機能を提供します。 ただし、より良いユーザー対話が要求されるのは、多くの場合適切なことです。
 
@@ -139,7 +139,7 @@ ms.locfileid: "5893316"
 
 **顧客別引当** ビューは、顧客間のレンタル活動を比較するタスクを簡略化するため、円グラフを使用して集計データ セットを視覚化するようになりました。 
 
-[![FMCustomer アクティビティ 2](./media/fmcustomer-activity-2-1024x733.png)](./media/fmcustomer-activity-2.png) 
+[![FMCustomer アクティビティ 2。](./media/fmcustomer-activity-2-1024x733.png)](./media/fmcustomer-activity-2.png) 
 
 追加の機能を以下に示します。
 
@@ -167,7 +167,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 8. デザイナー定義のリストを表示するには、デザイナーの **デザイナー** コレクションを展開します。
 9. 精密なデザイナーを使いレポート定義を表示するには、**Report** デザインをダブルクリックします。
 
-[![レポート デザイナー](./media/report-designer-1024x665.png)](./media/report-designer.png) 
+[![レポート デザイナー。](./media/report-designer-1024x665.png)](./media/report-designer.png) 
 
 上図は、Visual Studio Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は、AX EDT に基づいてレポート本文のデータをフォーマットするために、AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs) を参照してください。
 
@@ -201,7 +201,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 3. Ctrl+Shift+B キーを押して、プロジェクトを保存およびリビルドします。
 4. Ctrl + F5 キーを押してレポートを実行します。
 
-[![FMRentalsByCust コントロール](./media/fmrentalsbycust-controls-1024x691.png)](./media/fmrentalsbycust-controls.png) 
+[![FMRentalsByCust コントロール。](./media/fmrentalsbycust-controls-1024x691.png)](./media/fmrentalsbycust-controls.png) 
 
 上記のパラメーター初期化コードは、今日の日付に関連したレポート実行の既定値を設定します。 フレームワークのレポート パラメーターの既定処理をオーバーライドするには UIBuilder クラスを使用します。 追加の拡張機能のシナリオがサポートされています。
 
@@ -234,7 +234,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 9. ソリューション エクスプローラーでプロジェクトを選択し、右クリックしてから **レポートの展開** を選択します。
 10. Ctrl + F5 キーを押してレポートを表示します。
 
-[![FMRentalDetails レポート](./media/fmrentaldetails-report.png)](./media/fmrentaldetails-report.png) 
+[![FMRentalDetails レポート。](./media/fmrentaldetails-report.png)](./media/fmrentaldetails-report.png) 
 
 このレポートでは、埋め込み VB スクリプトを使用して、実行中の合計を追跡し、前のページの残高を有効なページで参照できるようにします。 レポートの VB コードを検査するには、Precision Designer でレポート デザインを読み込み、**レポート プロパティ** にアクセスし、**コード** セクションを選択します。 ここで、レポートのヘッダーおよびフッター内で実行されているバランスを表すレポート デザインによって参照されるいくつかの機能が表示されます。
 

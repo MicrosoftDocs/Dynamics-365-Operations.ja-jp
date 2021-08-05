@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 88a09c28477a36c5581956e4c2f82db3c54258c0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b35213f2364104777465b5cb069b049ac0447c3b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022534"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346738"
 ---
 # <a name="commerce-data-exchange-implementation-guidance"></a>Commerce Data Exchange 実装ガイダンス
 
@@ -55,11 +55,11 @@ Scheduler ジョブが実行されると、チャネル データベース グ�
 
 次の図は、Commerce Headquarters のさまざまなページと、それらが互いにどのように関連しているかを示しています。 (これらのページの説明については、前のセクションを参照してください。) CDX データの生成は、これらすべてのページで完全に構成されている場合にのみ発生します。 データは、ダウンロードまたはアップロードできます。 データ同期の状態は、Headquarters の 2 つの異なるページ: ダウンロード セッションおよびアップロード セッションに表示されます。 CDX データの生成は、Headquarters を通じて行われ、同期 (ダウンロード) されます。 オフライン中に生成される Modern Point of Sale (POS) トランザクション データは、データを同期 (アップロード) する必要があります。
 
-![Commerce Data Exchange 関連マップ](./media/CommerceDataExchange-AssociationMap.png)
+![Commerce Data Exchange 関連マップ。](./media/CommerceDataExchange-AssociationMap.png)
 
 次の図は、ダウンロードとアップロードのデータ フローを示しています。 CDX を使用して生成されたデータ パッケージは下向にフローします。 生成されたデータ パッケージは、設定されたチャネル データベース グループに基づいて、Commerce Scale Unit と Modern POS オフライン データベースに適用できます。 トランザクション データは、Modern POS オフライン データベースから Commerce Scale Unit のチャネル データベースに上向きにフローします。  チャネル データベースに格納されたすべてのトランザクション データは、Headquarters データベースにアップロードされます。
 
-![データ フローのダウンロードとアップロード](./media/CommerceArchitecture-DataSynchronization.jpg)
+![データ フローのダウンロードとアップロード。](./media/CommerceArchitecture-DataSynchronization.jpg)
 
 ### <a name="overview-of-package-management"></a>Package Management の概要
 

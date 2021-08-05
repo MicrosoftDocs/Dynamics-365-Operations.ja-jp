@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: d9d85e3e510abeee309a949987904f6a06de0536
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 39f86d44ed54304c472215b2f4941f2a01fbd0f3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754130"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344866"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -673,17 +673,17 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
 
 各エンドポイント タイプは、列挙 **BusinessEventsEndpointType** によって表されます。 新しいエンドポイントを追加するプロセスの最初のステップは、次の図に示すように、この列挙を拡張することです。
 
-![列挙拡張子](../media/customendpoint1.png)
+![列挙拡張子。](../media/customendpoint1.png)
 
 ### <a name="step-2-add-a-new-endpoint-table-to-the-hierarchy"></a>ステップ 2: 新しいエンドポイント テーブルを階層に追加します
 
 すべてのエンドポイント データは階層テーブルに保存されます。 このテーブルのルートは、BusinessEventsEndpoint テーブルです。 新しいエンドポイント テーブルは、**サポート継承** プロパティを **Yes** に、**拡張** プロパティを **"BusinessEventsEndpoint"** (または BusinessEventsEndpoint 階層内の他の任意のエンドポイント) に設定して、このルート テーブルを拡張する必要があります。
 
-![テーブルは BusinessEventsEndpoint を拡張](../media/customendpoint2.png)
+![テーブルは BusinessEventsEndpoint を拡張します。](../media/customendpoint2.png)
 
 その後、新しいテーブルに、初期化およびコード内でのエンドポイントとの通信に必要なカスタム フィールドの定義が保持されます。 競合を回避するには、属している特定のエンドポイントに対してフィールド名を限定する必要があります。 たとえば、2 つのエンドポイントは、**URL** フィールドの概念を持つことができます。 フィールドを区別するために、名前はカスタム エンドポイントに対して固有である必要があります。 たとえば、カスタム エンドポイントの **CustomURL** のフィールドに名前を付けます。
 
-![カスタム フィールドを含む新しいテーブル](../media/customendpoint3.png)
+![カスタム フィールドを含む新しいテーブル。](../media/customendpoint3.png)
 
 ### <a name="step-3-add-a-new-endpoint-adapter-class-that-implements-the-ibusinesseventsendpoint-interface"></a>ステップ 3: IBusinessEventsEndpoint インターフェイスを実装する新しいエンドポイント アダプター クラスを追加します
 
@@ -717,11 +717,11 @@ if (!customField)
 
 カスタム フィールド入力を保持するには FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ の下に新しいグループ コントロールを追加します。
 
-![カスタム フィールド入力用の新しいグループ コントロール](../media/customendpoint4.png)
+![カスタム フィールド入力用の新しいグループ コントロール。](../media/customendpoint4.png)
 
 カスタム フィールドの入力は、前の手順で作成した新しいテーブルとフィールドにバインドする必要があります。 次の例に示すように、**BusinessEventsEndpointConfiguration** フォームの **getConcreteType** と **showOtherFields** メソッドを拡張するクラス拡張機能を作成します。
 
-![データ ソースのクラス拡張](../media/customendpoint5.png)
+![データ ソースのクラス拡張。](../media/customendpoint5.png)
 
 ```xpp
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]

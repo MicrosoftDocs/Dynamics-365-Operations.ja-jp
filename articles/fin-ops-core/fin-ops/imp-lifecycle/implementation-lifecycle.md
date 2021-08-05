@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: cadd3a0cdc4dfb0930e0be19e2345a732a9c24f5
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 4e987a94bd4638d5dbc8f30a79d63eba184d6715
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923462"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337736"
 ---
 # <a name="implementation-lifecycle-management-home-page"></a>実装ライフサイクル管理ホーム ページ
 

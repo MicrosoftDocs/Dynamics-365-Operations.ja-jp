@@ -3,21 +3,16 @@ title: ValueMetadata タイプ
 description: 値 メタデータ タイプ
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 399f184c642e7e3606bc9570a47302509886787d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8dac25807d1c6f35eca78f1f5c9a195833224125
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750956"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661476"
 ---
 # <a name="valuemetadata-type"></a>ValueMetadata タイプ
 
@@ -46,7 +41,7 @@ ms.locfileid: "5750956"
 * [名前](view-model-control-value-ivalue-ivaluemetadata.md#name)
 * [NumSequence](view-model-control-value-ivalue-ivaluemetadata.md#numsequence)
 * [注文](view-model-control-value-ivalue-ivaluemetadata.md#order)
-* [[タイプ](view-model-control-value-ivalue-ivaluemetadata.md#type)]
+* [タイプ](view-model-control-value-ivalue-ivaluemetadata.md#type)
 
 ## <a name="properties"></a>プロパティ
 

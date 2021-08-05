@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a6f38de81101004a52518cdbf16a45775fcf99f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 356f9350dd4da5a2a25c2fbb2bc4ba8ebab42294
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188103"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350092"
 ---
 # <a name="simple-details-form-pattern"></a>簡易詳細のフォーム パターン
 
@@ -38,7 +38,7 @@ ms.locfileid: "6188103"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![簡易詳細のワイヤーフレーム](./media/simpledetails1-1024x578.png)](./media/simpledetails1.png)
+[![簡易詳細のワイヤーフレーム。](./media/simpledetails1-1024x578.png)](./media/simpledetails1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 現在のバージョンの Microsoft Dynamics AX にこのパターンを使用するための計画された変更はありません。
@@ -117,25 +117,25 @@ ms.locfileid: "6188103"
 
 フォーム: **AgreementLine** 
 
-[![ツールバーおよびフィールド付き簡易詳細](./media/simpledetails2-1024x688.png)](./media/simpledetails2.png)
+[![ツールバーおよびフィールド付き簡易詳細。](./media/simpledetails2-1024x688.png)](./media/simpledetails2.png)
 
 ### <a name="simple-details-wfasttabs"></a>クイック タブ付き簡易詳細
 
 フォーム: **PlanActivityServiceDetails** 
 
-[![クイック タブ付き簡易詳細](./media/simpledetails3-1024x587.png)](./media/simpledetails3.png)
+[![クイック タブ付き簡易詳細。](./media/simpledetails3-1024x587.png)](./media/simpledetails3.png)
 
 ### <a name="simple-details-wstandard-tabs"></a>標準タブ付き簡易詳細
 
 フォーム: **HcmEmploymentDateManager** (**人事管理** &gt; **共通** &gt; **作業者** &gt; **作業者** の順にクリックし、**一般** &gt; **バージョン** &gt; **職歴** の順にクリックし、それから **日付マネージャー** をクリックします。) 
 
-[![標準タブ付き簡易詳細](./media/simpledetails4-1024x588.png)](./media/simpledetails4.png)
+[![標準タブ付き簡易詳細。](./media/simpledetails4-1024x588.png)](./media/simpledetails4.png)
 
 ### <a name="simple-details-wpanorama"></a>パノラマ付き簡易詳細
 
 フォーム: **PdsMRCEventTracker** 
 
-[![パノラマ付き簡易詳細](./media/simpledetails5-1024x510.png)](./media/simpledetails5.png)
+[![パノラマ付き簡易詳細。](./media/simpledetails5-1024x510.png)](./media/simpledetails5.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

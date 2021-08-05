@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: rhaertle
-ms.custom: 62303
+ms.custom: intro-internal
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27448c0ce06e018b4c9f40397eb2ffd1f6aea2aa
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: f265939239fb2c287b1086b2dbb1ebe62de23314
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920491"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6339619"
 ---
 # <a name="development-and-administration-for-finance-and-operations-apps"></a>Finance and Operations アプリの開発と管理
 

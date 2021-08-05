@@ -1,7 +1,7 @@
 ---
 title: ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 description: このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
-author: v-ankvik
+author: akviklis@microsoft.com
 ms.date: 06/10/2021
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Developer
 ms.reviewer: v-chgri
 ms.search.region: Brazil
 ms.search.industry: Retail
-ms.author: v-ankvik
+ms.author: akviklis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7263a25cc50f2f4f785ed30aa11edd08a5913ac3
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: 4e1193c7c93a5f087e96e0c7cc8a0c2d3d871b26
+ms.sourcegitcommit: 3a9599e9b9458434c0e44d295eabd2304c5650be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303398"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "6334467"
 ---
 # <a name="set-up-and-deploy-the-dynamics-365-commerce-localization-for-brazil"></a>ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 
@@ -120,13 +120,13 @@ Commerce 本社で POS の消費税を設定するには、次の手順を実行
 1. **Retail と Commerce \> チャンネル \> 店舗 \> すべての店舗** の順に移動します。
 1. **消費税グループ** および **返品用の消費税グループ** フィールドで、作成した消費税グループを選択します。
 1. **税 \> 間接税 \> 消費税 \> 品目消費税グループ** の順に移動します。
-1. **小売の品目消費税グループ** という名前の品目消費税グループを作成し、既に作成した消費税コードを追加します。
+1. 小売用の品目消費税グループを作成し、作成した消費税コードを追加します。
 1. **組織管理 \> セットアップ \> 会計ドキュメント ソース テキスト** へ移動します。
 1. 小売税の負担に対する会計ドキュメント ソース テキストを作成します。 **制限** フィールドを **外部** に設定し、**会計情報** オプションを **いいえ** に設定します。
 1. **組織管理 \> 設定 \> ブラジル パラメーター** の順に移動します。
 1. **小売** タブの **テキスト ID** フィールドで、小売税の負担のソース テキストを指定します。
 1. **Retail と Commerce \> 製品とカテゴリ \> カテゴリ別リリース済製品** の順に移動します。
-1. 必要な製品を選択し、ブラジル固有の次のフィールドを設定します。
+1. 必要な製品を選択し、次のフィールドを設定します。
 
     - **販売** タブで、次の操作を行います。
 
@@ -151,7 +151,7 @@ Commerce 本社で小売店舗を設定するには、次の手順を実行し�
 1. **在庫管理 \> 設定 \> 在庫詳細 \> 倉庫** の順に移動します。
 1. 店舗の倉庫を作成し、住所を指定します。
 1. **Retail と Commerce \> チャンネル \> 店舗 \> すべての店舗** の順に移動します。
-1. 店舗を選択し、ブラジル固有の次のフィールドを設定します。
+1. 店舗を作成し、次のフィールドを設定します。
 
     - 税込価格
     - 売上税グループ
@@ -207,13 +207,13 @@ Commerce 本社で会計登録プロセスを設定するには、次の手順�
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> コネクタ機能プロファイル** の順に移動します。
 1. コンフィギュレーションを読み込んだばかりのドキュメント プロバイダーごとに、コネクタ機能プロファイルを作成し、既にコンフィギュレーションを読み込んだ会計コネクタを選択します。 必要に応じて、データ マッピング設定を更新します。
 1. **Retail とコマース \> チャネル設定 \> 会計統合 \> コネクタ技術プロファイル** の順に移動します。
-1. 3 つのコネクタ技術プロファイルを作成し、既にコンフィギュレーションを読み込んだ会計コネクタを選択します。 必要に応じて、接続設定を更新します。
+1. コネクタ技術プロファイルを作成し、既にコンフィギュレーションを読み込んだ会計コネクタを選択します。 必要に応じて、接続設定を更新します。
 1. **Retail と Commerc \> チャネル設定 \> 会計統合 \> 会計コネクタ グループ** の順に移動します。
-1. 既に作成した各コネクタ機能プロファイル用に 3 つの会計コネクタ グループを作成します。
+1. 既に作成した各コネクタ機能プロファイル用に、会計コネクタ グループを作成します。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 登録プロセス** の順に移動します。
 1. 登録プロセスを作成します。 登録手順として、作成した会計コネクタ グループを選択します。
 1. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> 機能プロファイル** の順に移動します。
-1. 登録プロセスを有効化する店舗にリンクされている機能プロファイルを選択し、**会計登録プロセス** のクイック タブで、作成した登録プロセスを選択します。 POS での非会計イベントの登録を有効にするには、**機能** クイック タブで、**監査** オプションを **いいえ** に設定します。
+1. 登録プロセスを有効化する店舗にリンクされている機能プロファイルを選択し、**会計登録プロセス** のクイック タブで、作成した登録プロセス番号を選択します。
 1. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル** の順に移動します。
 1. 会計プリンターの接続先のハードウェア ステーションにリンクされているハードウェア プロファイルを選択します。
 1. **会計周辺機器** クイック タブで、コネクタの技術的なプロファイルを選択します。
@@ -254,7 +254,7 @@ Commerce 本社で **顧客住所の追加** を構成するには、次の手�
 このセクションは、ブラジル向け Commerce のローカライズの Commerce コンポーネントを有効にするための配置ガイドを提供します。
 
 > [!NOTE]
-> これらの手順の一部の手順は、使用している製品バージョンによって異なります。 詳細については、 [Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
+> これらの手順の一部の手順は、使用している製品バージョンによって異なります。 詳細については、 [Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new-home-page.md) を参照してください。
 
 ### <a name="use-certificates-for-authentication-with-the-tax-authority-service-and-digital-signing-of-fiscal-documents"></a>税務当局サービスによる認証と会計ドキュメントのデジタル署名に証明書を使用する
 
@@ -313,12 +313,24 @@ CRT 拡張コンポーネントを構成するには、次の手順に従いま�
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
  ```
+ 
+3. CRT の Web.config ファイルを検索します。
 
-3. Local CRT on Modern POS の拡張コンフィギュレーション ファイルを検索します。
+    - **Commerce Scale Unit:** ファイル名は **Web.config** で、**\RetailServer\webroot** フォルダーにあります。
+
+4. extensionComposition セクションに新しい拡張ライブラリ名を追加して、この Web.config ファイルを更新します。
+ 
+```xml
+<extensionComposition>
+ <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.ElectronicFiscalDocumentBrazil" />
+</extensionComposition>
+```
+
+5. Local CRT on Modern POS の拡張コンフィギュレーション ファイルを検索します。
 
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーの場所にあります。
 
-4. 拡張コンフィギュレーション ファイルで Local CRT on Modern POS の変更を登録します。
+6. 拡張コンフィギュレーション ファイルで Local CRT on Modern POS の変更を登録します。
 
  ```xml
  <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
@@ -330,7 +342,7 @@ CRT 拡張コンポーネントを構成するには、次の手順に従いま�
 
 > [!WARNING]
 > **Commerceruntime.config** および **CommerceRuntime.MPOSOffline.config** ファイルを編集してはいけません。 これらのファイルはカスタマイズのためのものではありません。
-
+ 
 ### <a name="enable-modern-pos-extension-components"></a>Modern POS 拡張コンポーネントの有効化
 
 Modern POS 拡張コンポーネントを有効にするには、次の手順に従います。
@@ -384,10 +396,10 @@ Cloud POS の拡張機能コンポーネントを **extensions.json** ファイ�
 
 [ブラジル向け Commerce POS の NFC-e 電子会計ドキュメント](latam-bra-nfce.md)
 
-[ブラジルの POS で顧客情報を管理](latam-bra-customer-information.md)
+[ブラジル向け POS の顧客情報管理](latam-bra-customer-information.md)
 
-[ブラジルの Commerce POS での NFC-e ドキュメントのキャンセルと返却](latam-bra-nfce-cancel-return.md)
+[ブラジル向け Commerce POS の NFC-e ドキュメントのキャンセルと返品](latam-bra-nfce-cancel-return.md)
 
-[オフライン代替モードで発行された NFC-e ドキュメントの登録の延期](latam-bra-nfce-contingency-mode.md)
+[オフライン代替モードで発行された NFC-e ドキュメントの登録延期](latam-bra-nfce-contingency-mode.md)
 
 [Commerce 本社の小売明細書を介してブラジルの会計ドキュメントを投稿](latam-bra-retail-statements.md)

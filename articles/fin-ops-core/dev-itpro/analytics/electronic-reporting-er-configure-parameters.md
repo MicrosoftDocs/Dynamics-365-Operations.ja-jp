@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 629f2ecf4ccd7aee389b495be9b13fccb7dbc97a
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b696336117f6957afd15a070ad21c2cfe44f0f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893592"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351138"
 ---
 # <a name="configure-the-electronic-reporting-er-framework"></a>電子申告 (ER) フレームワークの構成
 
@@ -65,7 +65,7 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
     - このオプションを **いいえ** に設定すると、Microsoft Telemetry は単一の着信または送信レコードを ER コンフィギュレーションとして処理するために必要な平均時間に関する情報を収集できます。 この情報は、環境の特定の正常性指標として追跡され、Microsoft が ER フレームワークを使用するお客様に影響する問題をすばやく特定して対処するのに役立ちます。
     - テレメトリ情報の収集を停止するには、このオプションを **はい** に設定します。
 
-[![電子申告パラメーター ページの一般タブ](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
+[![電子申告パラメーター ページの一般タブ。](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
 
 ## <a name=""></a><a name="ManageDocumentsParameters">ドキュメントを管理するためのパラメーター</a>
 
@@ -83,19 +83,19 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
 
     詳細については、[ER テンプレートのバックアップストレージ](er-backup-storage-templates.md) を参照してください。
 
-[![電子申告パラメーター ページの添付ファイル タブ](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
+[![電子申告パラメーター ページの添付ファイル タブ。](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
 
 ## <a name="lcs-parameters"></a>LCS パラメーター
 
 **電子申告のパラメーター** ページの **LCS** タブで、Microsoft Dynamics Lifecycle Services (LCS) のリポジトリから ER コンフィギュレーションの読み込みに使用する必要がある並列スレッドの数を定義し、最も効率的な方法でコンフィギュレーションが読み込まれます。 値の範囲は、現在のプログラムで使用可能なリソースに応じて、**1** から **15** です。 この設定とその他のタスクの数とその優先順位に基づいて、スレッドの実際の数が自動的に定義されます。
 
-[![電子申告パラメーター ページの LCS タブ](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
+[![電子申告パラメーター ページの LCS タブ。](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
 
 ## <a name="rcs-parameters"></a>RCS パラメーター
 
 **電子申告のパラメーター** ページの **RCS** タブで、[コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップします。
 
-[![電子申告パラメーター ページの RCS タブ](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
+[![電子申告パラメーター ページの RCS タブ。](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
 
 ## <a name="active-er-configurations-provider"></a>アクティブな ER コンフィギュレーション プロバイダー
 

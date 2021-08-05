@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9f678f3e4dac252b32d2474739d63e2999dcdb3
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 438d7bb51d19947bfb0aa3a97a1a937180952ba0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188824"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345662"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 
@@ -47,7 +47,7 @@ ms.locfileid: "6188824"
 
 次の図の左側に、アプリケーション スタックが個別のモデルに分割されている様子が示されています。 右側には、主要なコンポーネントがサーバーにどのように積み重ねられているかが示されています。 
 
-[![アーキテクチャ図面](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
+[![アーキテクチャ図面。](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
 
 Finance and Operations アプリケーションは、エントリ ポイントのセキュリティ モデルを使用します。 メニュー項目が読み取りアクセス許可のみのフォームへの移動に使用される場合、フォームは読み取り専用アクセスを許可します。 ただし、アクセス許可の作成、アクセス許可の削除、アクセス許可の更新を提供する別のメニュー項目から同じフォームに移動すると、フォームへの書き込み操作が可能になります。 開発者は、特定のエントリ ポイントからフォームの動作を指定できるため、この動作は開発の経験を簡素化します。
 
@@ -63,7 +63,7 @@ Microsoft Azure ストレージ、ネットワーク、監視、SQL Azure など
 ## <a name="development-environment"></a>開発環境
 開発環境のアーキテクチャは、クラウド インスタンスのアーキテクチャに似ています。 また、Visual Studio 開発ツールとその他のコンポーネントで構成されるソフトウェア開発キット (SDK) も含まれます。 Team Foundation Server または Visual Studio Online を介したソース管理により、複数開発者のシナリオが可能になります。このシナリオでは、各開発者が別個の開発環境を使用できます。 配置パッケージは、開発環境でコンパイルおよび生成し、LCS を使用してクラウド インスタンスに展開できます。 次の図は、主要なコンポーネントが開発環境でどのようにやり取りするかを示しています。
 
-![開発アーキテクチャ、Visual Studio、ローカル ランタイム、およびクラウド配置](./media/dev-environ.png)
+![開発アーキテクチャ、Visual Studio、ローカル ランタイム、およびクラウド配置。](./media/dev-environ.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

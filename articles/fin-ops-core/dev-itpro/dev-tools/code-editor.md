@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdbe8994a2f6ad08b3ad9ab3a71a611ac68375aa
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: c81c51c8432441f687b6815e140ded074054aedb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866077"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345656"
 ---
 # <a name="code-editor-features"></a>コード エディター機能
 
@@ -29,7 +29,7 @@ ms.locfileid: "5866077"
 
 アプリケーションの X++ コードを記述するには、Microsoft Visual Studio のコード エディタを使用します。 X++ 言語は、Visual Studio 環境に完全に統合されています。 X++ コードを書くとき、Visual Studio コード エディターの使い慣れた機能が表示されます。 たとえば、コードを記述するよう IntelliSense が表示されます。 また、コード エディタ ウィンドウの上部にあるナビゲーション ドロップダウン メニューを使用して、コード エディター内のメソッドおよびクラスに移動することができます。
 
-![FMVehicle クラスを含むコード エディター](./media/31_devotoolsconcept.png)
+![FMVehicle クラスを含むコード エディター。](./media/31_devotoolsconcept.png)
 
 折りたたみ可能なセクションなどの他の機能も使用できます。
 
@@ -37,7 +37,7 @@ ms.locfileid: "5866077"
 
 コード エディターを右クリックしてから **デザイナーを開く** を選択することにより、現在の X++ ソース コードに対応する要素デザイナーを開くことができます。
 
-![コード エディターを開いたときのメニュー項目](./media/opendesigner.jpg)
+![コード エディターを開いたときのメニュー項目。](./media/opendesigner.jpg)
 
 ## <a name="additional-resources"></a>追加リソース
 

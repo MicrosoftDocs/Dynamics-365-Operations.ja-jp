@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: a681307c00cf027e7633e16b12334688e15f3a8d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a0ff454d294f0bbd4d9bc7e51d66e8ee53dfba1b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752758"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360246"
 ---
 # <a name="custom-help-overview"></a>カスタム ヘルプの概要
 
@@ -30,7 +31,7 @@ Finance and Operationsアプリは、多くの場合、組織のニーズに合�
 
 次の図およびこのトピック一般では、*ヘルプ* という用語を使用して、ハウツー ガイドを含めるか除外するかを概念的に説明します。 *タスク ガイド* という用語は、製品内のタスク ガイドを指します。
 
-![カスタマイズされたヘルプ ソリューションと [ヘルプ] ウィンドウ](../../fin-ops/get-started/media/help-architecture.png)
+![カスタマイズされたヘルプ ソリューションと [ヘルプ] ウィンドウです。](../../fin-ops/get-started/media/help-architecture.png)
 
 ## <a name="custom-help-content"></a>カスタム ヘルプ コンテンツ
 

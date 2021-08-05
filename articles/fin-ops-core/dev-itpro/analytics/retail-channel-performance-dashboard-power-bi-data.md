@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54b954b527d49f95e1b1289e76f56b7a3f3f45a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8dae0322c0ba3719b69db4e79f8e97b607ea3056
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754308"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344036"
 ---
 # <a name="retail-channel-performance-powerbicom-solution"></a>小売チャネルの実績 PowerBI.com ソリューション
 
@@ -48,11 +48,11 @@ Retail チャンネル パフォーマンス PowerBI.com ソリューション�
 8. サインインするには、Dynamics AX 環境にアクセスするアクセス許可を持つ Microsoft 365 のアカウントを入力します。
 9. データが Dynamics AX から Power BI に正常にプルされた後、左のナビゲーション ウィンドウで **小売チャンネル パフォーマンス ダッシュボード** をクリックして、Power BI の個人の **小売チャンネル パフォーマンス** ダッシュボードを表示することができます。
 
-    [![小売チャンネル パフォーマンス ダッシュボード](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
+    [![Retail Channel Performance ダッシュボード。](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
 
 10. 自然言語を使用することにより、Power BI 内の Q&A フィーチャーを活用して Dynamics AX の営業データのクエリを実行することができます。
 
-    [![Power BI の Q&A 機能](./media/qnapbiretailchannelperformance.png)](./media/qnapbiretailchannelperformance.png)
+    [![Power BI の Q&A 機能。](./media/qnapbiretailchannelperformance.png)](./media/qnapbiretailchannelperformance.png)
 
 ## <a name="view-a-list-of-reports"></a>レポートの一覧の表示
 ダッシュボードに固定されたタイルのいずれかをクリックすると、小売チャンネル パフォーマンス ダッシュボードに関するインサイトを提供する次の一覧に移動できます。
@@ -66,31 +66,31 @@ Retail チャンネル パフォーマンス PowerBI.com ソリューション�
 
 たとえば、地理的な販売流通のより深い分析を実行する場合があります。
 
-[![地理的販売配送レポート](./media/slicendicegeographicalsalesdata-1024x715.png)](./media/slicendicegeographicalsalesdata.png)
+[![地理的販売配送レポート。](./media/slicendicegeographicalsalesdata-1024x715.png)](./media/slicendicegeographicalsalesdata.png)
 
 ## <a name="modify-an-existing-report-in-the-powerbicom-solution-to-make-it-self-authored"></a>PowerBI.com ソリューションの既存のレポートを変更して自分で作成します
 ここでは、PowerBI.com ソリューションで既存のレポートを変更して自己作成することがいかに簡単かを示す例を示します。 この例では、**カテゴリおよび製品のパフォーマンス** という名前の既存のレポートを、そのレポートの **カテゴリ レベル 1** を **月 / 年ごとの合計金額** グラフに追加することで変更します。
 
 1. ウィンドウの下部にある **CategoryProductPerformance** タブをクリックし、**カテゴリ、および製品のパフォーマンス** レポートを開きます。次に、**レポートの編集** をクリックします。
 
-    [![レポートの編集](./media/editreport-1024x580.png)](./media/editreport.png)
+    [![レポートを編集する。](./media/editreport-1024x580.png)](./media/editreport.png)
 
 2. **月/年ごとの合計金額** というグラフを選択します。 その後、ウィンドウの右側の **Fields** ウィンドウで、**既定小売品目カテゴリ階層** ノードを展開します。
 
-    [![月/年グラフによる合計金額の既定小売品目カテゴリ階層ノード](./media/editreportstep2-1024x624.png)](./media/editreportstep2.png)
+    [![月/年グラフによる合計金額の既定小売品目カテゴリ階層ノード。](./media/editreportstep2-1024x624.png)](./media/editreportstep2.png)
 
 3. この階層のカテゴリ レベルの一覧で **カテゴリ レベル 1** を選択します。 **月/年とカテゴリ レベル 1 グラフごとの合計金額** に変更するためにこの属性を選択したグラフの名前。このグラフでは、各カテゴリの売上シェアを毎月表示します。
 
-    [![月 / 年とカテゴリレベル 1 グラフごとの合計金額](./media/editreportstep3-1024x625.png)](./media/editreportstep3.png)
+    [![月/年およびカテゴリ レベル 1 グラフごとの合計金額。](./media/editreportstep3-1024x625.png)](./media/editreportstep3.png)
 
 4. 最後に、視覚化自体を変更するようにしてください。 **月/年とカテゴリ レベル 1 ごとの合計金額** グラフを選択し、**ビジュアル化** ウィンドウで **面グラフ** または **積み上げ面グラフ** をクリックして結果を確認します。
 
-    [![月/年およびカテゴリレベル 1 のグラフによる合計金額の視覚化の変更](./media/editreportstep4-1024x630.png)](./media/editreportstep4.png)
+    [![月/年およびカテゴリ レベル 1 のグラフによる合計金額の視覚化の変更。](./media/editreportstep4-1024x630.png)](./media/editreportstep4.png)
 
 ## <a name="get-a-glimpse-of-the-actual-data-model"></a>実際のデータ モデルのほんの一部を取得します
 Dynamics AX データ エンティティおよび集約データ エンティティの PowerBI.com ソリューションに含まれているデータ モデルを使用すると、さまざまな分析コードを使用してさまざまな測定間でスライスおよびダイスすることができます。
 
-[![データ モデル](./media/datamodeltomakeslicingndicingpossibleinrcm-1024x600.png)](./media/datamodeltomakeslicingndicingpossibleinrcm.png)
+[![データ モデル。](./media/datamodeltomakeslicingndicingpossibleinrcm-1024x600.png)](./media/datamodeltomakeslicingndicingpossibleinrcm.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

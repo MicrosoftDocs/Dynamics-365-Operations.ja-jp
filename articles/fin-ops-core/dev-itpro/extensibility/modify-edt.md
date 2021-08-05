@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 37e9ae8a1a2fa0320c381c9cd8cd0c67fdfa8fa4
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 5f8bdbffdcdc64d7bb9f8ca087e12dec8df36a14
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866254"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349136"
 ---
 # <a name="modify-extended-data-types-edts-through-extension"></a>拡張機能を通じて拡張データ型 (EDT) を変更する
 
@@ -38,15 +38,15 @@ ms.locfileid: "5866254"
 
 プロパティ シートを使用して、新たに追加された要素のと同様にプロパティを変更します。
 
-![EDT の変更](media/EDT01.jpg) 
+![EDT を変更します。](media/EDT01.jpg) 
  
 コードをコンパイルした後、アプリケーションで変更を確認できます。
 
-![EDT の変更](media/EDT02.jpg) 
+![EDT を変更します。](media/EDT02.jpg) 
 
 Visual Studio のアプリケーション エクスプローラーでは作成された拡張機能を表示できます。
 
-![EDT の変更](media/EDT03.jpg) 
+![EDT を変更します。](media/EDT03.jpg) 
 
 ## <a name="if-the-edt-is-modified-in-more-than-one-model"></a>1 つ以上のモデルで EDT が変更される場合
 複数の ISV が同じ拡張データ型を拡張した場合は、モデル ID が最も高い (USR に最も近い) モデルの EDT のプロパティが使用されます。 同じレイヤーに変更を加えた複数のモデルがある場合は、モデル ID の最も高いモデルからの変更が使用されます。 たとえば、ISV 1 が モデル AwesomeModel (USR レイヤー) with ID 15 で「Awesome 品目番号」に ItemId のラベルを変更し、ISV 2 がモデル SuperModel (USR レイヤー) with ID 12 で「Super 品目番号」に ItemId のラベルを変更した場合、エンドユーザーにはユーザー インターフェイスで「品目番号」の代わりに「Awesome 品目番号」と表示されます。

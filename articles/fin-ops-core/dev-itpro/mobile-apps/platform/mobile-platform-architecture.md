@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: ee69b3b33b3fcbff50803c7a8a1c4a7b83d1acd2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b7ad980db3d0eafa557f0865ed12ff6ba4e87b71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752234"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344008"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 
@@ -27,14 +27,14 @@ ms.locfileid: "5752234"
 
 モバイル アプリは、モバイル ワークスペース (およびページに表示されるページとフィールド) のメタデータを取得し、ページのフィールドのデータを取得するために Application Object Server (AOS) と通信します。 モバイル アプリがページのデータを要求するたびに、AOS では、モバイル アプリを使うユーザーのコンテキストで使用している新しいセッションを作成します。 AOSは、次にユーザーのコンテキストを使用して、対応するフォーム (対応するメニュー項目を使用) を開きます。 AOS は、すばやく連続して複数のフォームを開くことができ、それらのフォーム (フィルター処理、情報ボックスを開く、タブ ページの変更、ボタンのクリック) に対してアクションを実行できます。 フォーム上のビジネス ロジックも通常どおり実行されます。 そのプロセスを通じて AOS は要求されたフィールドからデータ値を収集し、そのデータをモバイル アプリに送り返します。 
 
-![モバイル アーキテクチャ](media/mobilearchitecture.png)
+![モバイル アーキテクチャ。](media/mobilearchitecture.png)
 
 モバイル アプリ プラットフォームは、Finance and Operations アプリへの接続を想定していません。 ナビゲーション、データの表示、データ入力などの活動は、データがキャッシュされた後にサーバー接続の必要はありません。
 
 ## <a name="understanding-navigation-in-the-mobile-app"></a>モバイル アプリでのナビゲーションを理解する
 モバイル アプリのナビゲーションは、ダッシュボード、ワークスペース、ページ、およびアクションという 4 つの簡単な概念で構成されています。 
 
-![モバイル アプリのナビゲーション概念](media/mobilephoneapp1.png)
+![モバイル アプリのナビゲーション概念。](media/mobilephoneapp1.png)
 
 -   アプリを起動すると、**ダッシュボード** が表示されます。 **ダッシュボード** には、環境で公開されている **ワークスペース** の一覧が表示されます。
 -   各 **ワークスペース** では、そのワークスペースで使用可能な **ページ** の一覧が表示されます。
@@ -52,7 +52,7 @@ ms.locfileid: "5752234"
 
 **モバイル ワークスペースは、デザイナーを通じて、X++ 属性 API、またはその両方の組み合わせを使用して作成することができます。モバイルワークスペースの構築に X++ API を使用する方法の詳細については、 [SysAppWorkspace クラスを使用したワークスペースのコンフィギュレーション](scenarios/mobile-workspace-configuration.md) を参照してください。**
 
-![モバイル アプリ デザイナー](media/mobileappdesigner.png)
+![モバイル アプリ デザイナー。](media/mobileappdesigner.png)
 
 1.  クライアントを開きます。 
 2.  **設定** &gt; **モバイル アプリ** に移動します。
@@ -72,10 +72,10 @@ ms.locfileid: "5752234"
 
 | 変更のタイプ     | 説明                      |
 |-------|----------------------------------------------|
-| 新しいワークスペース、削除されたワークスペース、またはワークスペースの名前、色、またはアイコンへの変更 | ワークスペースの一覧が表示される、アプリの主要なランディング ページ (ダッシュボード) からプルして更新します。<br>![ダッシュボードからプルして更新](media/refreshworkspaces.png) |
-| その他のすべての変更 (新しいまたは変更されたページまたはアクション、またはビジネス ロジックへ変更)         | 編集されたページまたはアクションを持つワークスペースからプルして更新します。<br>![ワークスペースからプルして更新](media/refreshpages.png)                                             |
+| 新しいワークスペース、削除されたワークスペース、またはワークスペースの名前、色、またはアイコンへの変更 | ワークスペースの一覧が表示される、アプリの主要なランディング ページ (ダッシュボード) からプルして更新します。<br>![ダッシュボードからプルして更新します。](media/refreshworkspaces.png) |
+| その他のすべての変更 (新しいまたは変更されたページまたはアクション、またはビジネス ロジックへ変更)         | 編集されたページまたはアクションを持つワークスペースからプルして更新します。<br>![ワークスペースからプルして更新します。](media/refreshpages.png)                                             |
 
-### <a name="additional-resources"></a>その他のリソース
+### <a name="additional-resources"></a>追加リソース
 
 [ページ デザインのガイドライン](page-design-guidelines.md)
 

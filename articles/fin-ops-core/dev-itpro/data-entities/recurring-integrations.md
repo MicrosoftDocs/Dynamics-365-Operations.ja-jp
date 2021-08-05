@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12f45ed7bb751325bfd02f1e18ce202a219dbe00
-ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
+ms.openlocfilehash: 9278d65faf600b7b61826863ab624065e3a3c6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5864340"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344864"
 ---
 # <a name="recurring-integrations"></a>定期統合
 
@@ -31,11 +31,11 @@ ms.locfileid: "5864340"
 - Finance and Operations とあらゆるサード パーティ製アプリケーションやサービスで、ドキュメントまたはファイルの交換を可能にします。
 - 複数のドキュメント形式、ソース マッピング、XSLT (Extensible Stylesheet Language Transformations)、およびフィルターをサポートします。
 
-    ![複数の文書形式のドキュメントまたはファイルを交換](./media/recurring-integrations.png)
+    ![複数の文書形式のドキュメントまたはファイルを交換。](./media/recurring-integrations.png)
 
 - セキュリティで保護された REST のアプリケーション プログラミング インターフェイス (API) と認証メカニズムを使用して、統合システムからデータを受信し、データを送り返します。
 
-    ![繰り返し実行される統合を設定](./media/set-up-recurring.png)
+    ![繰り返し実行される統合を設定します。](./media/set-up-recurring.png)
 
 ## <a name="authorization-for-the-integration-rest-api"></a>REST API 統合の承認
 REST API の統合は、その他の サービス エンドポイント と同じ OAuth 2.0 認証モデルを使用しています。 統合クライアント アプリケーションがこのエンドポイントを使用する前に、Microsoft Azure Active Directory (Azure AD) にアプリケーション ID を作成し、アプリケーションに適切なアクセス許可を付与する必要があります。 定期的なジョブを作成して有効にするとき、その定期的なジョブとやり取りする Azure AD アプリケーション ID を入力するように求められます。 したがって、アプリケーション ID をメモしておいてください。
@@ -83,7 +83,7 @@ REST API の統合は、その他の サービス エンドポイント と同�
 1. **システム管理** ワークスペース (**システム管理** モジュールではない) で、**データ管理 IT** ワークスペースを選択します。
 2. ワークスペースの **定期的なデータ ジョブ** タブで、定期的なジョブを選択して詳細を表示します。 **スケジュールされたデータ ジョブを管理** ページには、キューに待機しているすべてのメッセージを一覧表示するグリッドが含まれています。 したがって、メッセージと処理ステータスを監視できます。
 
-    ![スケジュール済みデータ ジョブの管理](./media/image013.jpg)
+    ![スケジュール済みデータ ジョブを管理します。](./media/image013.jpg)
 
 ## <a name="submitting-data-to-recurring-data-jobs"></a>定期的なデータ ジョブにデータを送信
 統合 REST エンドポイントを使用して、クライアントと統合、ドキュメントの送信 (インポート)、またはダウンロードに使用可能なドキュメントのプル (エクスポート) を実行することができます。 これらのエンドポイントは OAuth をサポートします。
@@ -108,7 +108,7 @@ POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D
 
 アクティビティ ID を取得するには、**スケジュールされたデータ ジョブの管理** ページの **ID** フィールドで、グローバルで一意の識別子 (GUID) をコピーします。
 
-![スケジュール済みデータ ジョブ ページの管理での GUID](./media/image015.jpg)
+![スケジュール済みデータ ジョブ ページの管理での GUID。](./media/image015.jpg)
 
 ### <a name="api-for-export-dequeue"></a>エクスポート (デキュー) のAPI
 データ プロジェクトで定義されたすべてのデータ エンティティを含むデータ パッケージを返し、クライアント アプリケーションで解凍して使用できるようにするには、次の構造を使用します。
@@ -193,14 +193,14 @@ BODY
 > [!NOTE]
 > バッチ履歴のレコードが削除された場合、**定期的なデータ ジョブの処理ステータス** ページにあるバッチ ジョブのステータスは空白になります。
 
-![バッチ ジョブ ステータス](./media/show-batch-status.png)
+![バッチ ジョブの状態。](./media/show-batch-status.png)
 
 ### <a name="preventing-uploads-when-there-are-no-records"></a>レコードがない場合は、アップロードを禁止する
 定期的なエクスポートを使用するとき、そのファイルまたはパッケージ内の合計のレコード数が 0 (ゼロ) である場合、生成されるファイルまたはパッケージをアップロードしないように選択できます。
 
 **レコード数が 0 の場合にアップロードしない** オプションは、定期的なエクスポート ジョブを構成するとき、またはジョブが作成済みのいずれかの場合に設定することができます。 このオプションは、データ ソースとしてファイルまたはパッケージを使用する場合にのみ使用できます。
 
-![レコード数が 0 の場合にアップロードしない](./media/prevent-file-upload.png)
+![レコード数が 0 の場合にはアップロードしません。](./media/prevent-file-upload.png)
 
 実装に、ファイルまたはパッケージをアップロードした、定期的なジョブの実行が含まれている可能性があります。 ご使用の実装には、アップロードするものがないため、ファイルまたはパッケージがアップロードされなかった実行が含まれていることがあります。 アップロードする必要のあるファイルがアップロードされていない、またはアップロードする必要がないファイルがアップロードされていた場合は、定期的なエクスポート ジョブに対して **メッセージの管理** ページを使用して、デバッグ プロセスを支援することができます。
 
@@ -214,7 +214,7 @@ BODY
 ### <a name="http-vs-https"></a>Http 対 Https
 デキュー API は、HTTPS ではなく HTTP を返します。 この動作は、運用環境などのロード バランサーを使用するアプリケーション環境で確認できます。 (1 つのボックス環境で動作を表示ことはできません)。 アプリケーションからキューから削除しようとするミドルウェア アプリケーションで、URI スキームを HTTPS に変更することをお勧めします。
 
-![バッチ ジョブの状態](./media/show-batch-status.png)
+![バッチ ジョブの状態。](./media/show-batch-status.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,21 +3,16 @@ title: PartMetadata タイプ
 description: パーツ メタデータ タイプ。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: d8620de61d5fdfb34266ecd723acba767d8166ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a11762e0a11aeb2fd6d7d851feeee1581b341c23
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752992"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661374"
 ---
 # <a name="partmetadata-type"></a>PartMetadata タイプ
 
@@ -46,7 +41,7 @@ ms.locfileid: "5752992"
 * [名前](view-model-control-part-ipart-ipartmetadata.md#name)
 * [注文](view-model-control-part-ipart-ipartmetadata.md#order)
 * [ターゲット](view-model-control-part-ipart-ipartmetadata.md#target)
-* [[タイプ](view-model-control-part-ipart-ipartmetadata.md#type)]
+* [タイプ](view-model-control-part-ipart-ipartmetadata.md#type)
 
 ## <a name="properties"></a>プロパティ
 

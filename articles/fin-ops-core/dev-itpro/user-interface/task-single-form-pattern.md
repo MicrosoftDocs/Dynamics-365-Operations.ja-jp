@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d47c7ad919058d3578af7c4138a1b5ddb25348ba
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: f8536d7a95e9c2527cdab91b6d92042a8895f869
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188063"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359339"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 
@@ -32,7 +32,7 @@ ms.locfileid: "6188063"
 このタイプのフォームは、データが複数のレコードを持つ単一のデータ ソースから発生したとユーザーが認識することを表す場合に使用されました。 新しいフォームの推奨パターンではありません。 このパターンを使用する新しいフォームを作成する必要はありません。 このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![タスク シングルのフォームのワイヤーフレーム](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
+[![タスク シングルのフォームのワイヤーフレーム。](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -96,9 +96,9 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **LedgerJournalTable** 
 
-[![タスク シングルの例 1](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png) 
+[![タスク シングルの例 1。](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png) 
 
-[![タスク シングルの例 2](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)
+[![タスク シングルの例 2。](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -107,11 +107,11 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   なし
+-   None
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![前のバージョンのビジュアルの例](./media/tasksingle4.png)](./media/tasksingle4.png)
+[![前のバージョンのビジュアルの例。](./media/tasksingle4.png)](./media/tasksingle4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

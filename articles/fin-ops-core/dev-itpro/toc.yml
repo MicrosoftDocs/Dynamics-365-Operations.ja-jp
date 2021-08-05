@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.19 (2021 年 6 月)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: プラットフォーム更新プログラム 10.0.18 (2021 年 5 月)
-                  href: get-started/whats-new-platform-updates-10-0-18.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -366,7 +364,9 @@
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: セルフサービス環境の計画メンテナンスに関する FAQ
                       href: deployment/plannedmaintenance-selfservice.md
-                - name: Azure Resource Manager の研修の完了
+                    - name: 事業継続とディザスター リカバリー
+                      href: sysadmin/business-continuity-disaster-recovery.md
+                - name: Azure Resource Manager オンボードの完了
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute および Finance and Operations
                   href: deployment/expressroute.md
@@ -376,6 +376,8 @@
                   href: deployment/apply-deployable-package-system.md
                 - name: Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
                   href: deployment/Update-retail-channel.md
+                - name: Commerce Scale Unit (クラウド) の自動更新
+                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
                 - name: Commerce Scale Unit (クラウド) の初期化
                   href: deployment/Initialize-Retail-Channels.md
                 - name: チャネルを別の Commerce Scale Unit に移行する
@@ -392,6 +394,8 @@
                       href: deployment/on-premises-overview.md
                     - name: オンプレミス配置の計画および準備
                       href: deployment/plan-onprem-deployment.md
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされるソフトウェア
+                      href: deployment/onprem-compatibility.md
                     - name: ハードウェアのサイズ要件
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Dynamics 365 Finance + Operations (on-premises) での認証
@@ -502,8 +506,6 @@
                   href: dev-tools/access-instances.md
                 - name: 1 ボックス開発環境のコンフィギュレーション
                   href: dev-tools/configure-developer-vm.md
-                - name: 開発マシンでの新しいユーザーの作成
-                  href: dev-tools/enable-development-machine.md
                 - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Azure DevOps にアクセスするためのローカル環境の名前変更
@@ -1116,7 +1118,7 @@
                       href: data-entities/dual-write/integrated-hr.md
                     - name: 当事者およびグローバル アドレス帳
                       href: data-entities/dual-write/party-gab.md
-                    - name: Power Portal を当事者のデータ モデルで使用する
+                    - name: Microsoft Power Apps ポータルを当事者のデータ モデルで使用する
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: 当事者およびグローバル アドレス帳モデルへのアップグレード
                       href: data-entities/dual-write/upgrade-party-gab.md
@@ -1604,6 +1606,8 @@
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012 アップグレード - Go-Live
                   href: migration-upgrade/2012-upgrade-cutover.md
+                - name: AX 2012 からのアップグレード - データ アップグレード FAQ
+                  href: migration-upgrade/upgrade-faq.md
                 - name: AX 2012 からのアップグレードに影響する変更
                   items:
                     - name: 勘定科目表の区切り記号を一意にする

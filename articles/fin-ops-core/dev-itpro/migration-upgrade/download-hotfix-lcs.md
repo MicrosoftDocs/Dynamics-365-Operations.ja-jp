@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c70e8fbb42b527ce5831d706ad16041bf65a526b
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: a84939118d786d243adc084a8c48e68af9f934bb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921407"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358571"
 ---
 # <a name="download-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムをダウンロード
 
@@ -95,7 +95,7 @@ ms.locfileid: "5921407"
    > [!NOTE]
    > 保存するサポート技術情報 (KB) の記事を選択できません。これは、バイナリ更新プログラムですべての KB が更新パッケージに自動的に保存されるためです。        
    
-   ![バイナリ パッケージの保存](./media/ReviewAndSaveBinaryPackage.jpg)
+   ![バイナリ パッケージを保存します。](./media/ReviewAndSaveBinaryPackage.jpg)
 
 3. **更新プログラムの確認と保存** ページで、**パッケージの保存** を選択します。
 

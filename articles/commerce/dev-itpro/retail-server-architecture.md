@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: f150089f9e3b1a664c959867d46ba3c4b1f075e5
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2846b13b735bdef081aba7cc1b44086085a691ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271115"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347480"
 ---
 # <a name="headless-commerce-architecture"></a>ヘッドレス コマースのアーキテクチャ
 
@@ -23,13 +23,13 @@ ms.locfileid: "6271115"
 
 このトピックでは、ヘッドレス コマース (Commerce Scale Unit とも呼ばれる) のアーキテクチャについて説明します。 ヘッドレス コマースは、拡張可能で、カスタマイズされたフリクションフリーなコマース エクスペリエンス、および統合され最適化されたバック オフィス操作を可能にする API 駆動型のフレームワークです。
 
-![Commerce Scale Unit アーキテクチャ](./media/CSU.PNG)
+![Commerce Scale Unit アーキテクチャ。](./media/CSU.PNG)
 
 ## <a name="omnichannel-solution-provided-by-the-headless-commerce"></a>ヘッドレス コマースが提供するオムニチャネル ソリューション
 
 ヘッドレス コマースのコマース API は Microsoft Dynamics 365 Commerce によって使用され (バックオフィス、ストア内、コール センター、および e コマース)、完全なオムニチャネル ソリューションを提供します。 API は、サード パーティのアプリケーションおよび Microsoft Power Platform コネクタで使用できます。
 
-![Commerce Scale Unit のプラットフォームの統合](./media/CSUConsumer.PNG)
+![Commerce Scale Unit のプラットフォームの統合。](./media/CSUConsumer.PNG)
 
 ## <a name="components"></a>コンポーネント
 

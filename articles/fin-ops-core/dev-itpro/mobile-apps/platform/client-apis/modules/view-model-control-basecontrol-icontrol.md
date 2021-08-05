@@ -3,21 +3,16 @@ title: 管理モジュール
 description: コントロールは、ページのコンテンツを構成するものです。
 author: robinarh
 ms.date: 11/10/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 778ca41d66e0d3ea70cb9c1ad678eba8d0c60486
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6c1a7eb6cc153c98fc521bbd7797a52b2fd2e1d4
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748079"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661480"
 ---
 # <a name="control-module"></a>管理モジュール
 

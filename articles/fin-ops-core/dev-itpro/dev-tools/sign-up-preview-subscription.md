@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d0f36c89f50014b1d9ce102fe3937634790dfca
-ms.sourcegitcommit: 4fc5c8b278b2b492eea5a0bb136019d4c1eaceef
+ms.openlocfilehash: 90fb75f301d3767674716dbd8df0efbac1c0523f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "6191356"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358569"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
@@ -62,7 +62,7 @@ ms.locfileid: "6191356"
 2. **アカウント設定** ページの、**国または地域** フィールドで、国または地域の選択をします。
 3. 最後のステップに到達するまで、サインアップを完了するウィザードおよびプロンプトに従います。
 
-    [![準備ができました](./media/wizardprompt.png)](./media/wizardprompt.png)
+    [![準備ができました。](./media/wizardprompt.png)](./media/wizardprompt.png)
 
 ## <a name="start-a-new-project-in-lcs"></a>LCS で新しいプロジェクトを開始
 
@@ -73,7 +73,7 @@ LCS を使用して環境を管理するには、新しいプロジェクトを�
 3. サブスクライブするために使用したアカウントを使用してサインインします。
 4. プラス記号 (**+**) を選択して新しいプロジェクトを作成します。
 
-    [![プロジェクトの作成](./media/11.jpg)](./media/11.jpg)
+    [![プロジェクトを作成します。](./media/11.jpg)](./media/11.jpg)
 
 5. プロジェクト タイプを選択します。
 6. プロジェクト情報を入力し、**作成** を選択します。
@@ -82,7 +82,7 @@ LCS を使用して環境を管理するには、新しいプロジェクトを�
 
     インスタンスを管理するための新しいプロジェクトが作成されます。
 
-    ![新規プロジェクト](./media/projectworkspace.jpg)
+    ![新規プロジェクト。](./media/projectworkspace.jpg)
 
 ## <a name="add-users-to-lcs"></a>LCS へのユーザーの追加
 
@@ -127,7 +127,7 @@ LCS でプロジェクト ページを開始します。
 
     環境を配置した後、**環境** セクションは使用可能です。
 
-    [![環境セクションにある新規環境](./media/pic7.jpg)](./media/pic7.jpg)
+    [![環境セクションにある新しい環境。](./media/pic7.jpg)](./media/pic7.jpg)
 
 13. 配置のステータスに関する詳細を表示するための環境を選択します。 最初の配置には数時間かかりますが、その後の配置はずっと高速になります。
 14. 配置状態が **配置済み** に変わったときに、**ログイン** を選択してクライアントに接続するか、または VM の名前を選択して、リモート デスクトップを使用して開発マシンに接続します。 配置が完了した後、リモート デスクトップ経由で環境に接続するために必要な基本 URL と情報を見つけることができます。
@@ -146,7 +146,7 @@ LCS は、オンライン管理アクティビティを実行するための出�
 
 2. 右にスクロールし、タイルを確認します。
 
-    ![タイル](./media/pic9.jpg)]
+    ![タイル。](./media/pic9.jpg)]
 
     使用可能なタイルには、LCS のさまざまなツールとサービスがあります。 次の追加のタイトルも含まれます。
 
@@ -161,7 +161,7 @@ LCS は、オンライン管理アクティビティを実行するための出�
         > [!NOTE]
         > このページにアクセスするには、組織の Microsoft Online Services テナントにおいて **グローバル管理者** ロールのメンバーである必要があります。 インストール ユーザーは常にグローバル管理者ですが、他のユーザーをこのロールに追加する必要があります。
 
-        [![Microsoft 365 管理センターの有効なユーザー](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+        [![Microsoft 365 管理センターの有効なユーザー。](./media/activeusersadmin.png)](./media/activeusersadmin.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

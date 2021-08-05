@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: 56551
+ms.custom:
+- "56551"
+- intro-internal
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4569490b68507a64813c24500f08b1f6a5b4d6f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 18a001e08aabf43d51563984c7890b6d12bc19fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745703"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344284"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 
@@ -43,12 +45,12 @@ ms.locfileid: "5745703"
 | CNMF         | Contoso エンターテインメント中国          |
 | DAT          | 既定の会社                      |
 | DEMF         | Contoso エンターテインメント システム ドイツ |
-| FRRT         | Contoso 小売 FR                    |
+| FRRT         | Contoso Retail FR                    |
 | FRSI         | Contoso コンサルティング FR                |
 | GBSI         | Contoso コンサルティング GB                |
 | GLCO         | Contoso グループ                        |
 | GLMF         | Contoso エンターテインメント システム         |
-| GLRT         | Contoso 小売                       |
+| GLRT         | Contoso Retail                       |
 | GLSI         | Contoso コンサルティング                   |
 | INMF         | Contoso インド                        |
 | ITCO         | Contoso イタリア                        |
@@ -56,12 +58,12 @@ ms.locfileid: "5745703"
 | MXMF         | Contoso エンターテインメント システム メキシコ  |
 | MYMF         | Contoso エンターテインメント システム MYMF    |
 | RUMF         | Contoso エンターテインメント システム ロシア  |
-| RURT         | Contoso 小売 RUS                   |
+| RURT         | ContosoRetail RUS                   |
 | US01         | Contoso US01                         |
 | USMF         | Contoso エンターテインメント システム USA     |
 | USP2         | Contoso オレンジ ジュース                 |
 | USPI         | Contoso プロセス産業             |
-| USRT         | Contoso 小売 USA                   |
+| USRT         | ContosoRetail USA                   |
 | USSI         | Contoso コンサルティング USA               |
 
 ## <a name="embedded-analytics"></a>埋め込み分析
@@ -73,7 +75,7 @@ ms.locfileid: "5745703"
 | DEMF         | Contoso エンターテインメント システム ドイツ |
 | GLMF         | Contoso エンターテインメント                |
 | USMF         | Contoso エンターテインメント システム USA     |
-| USRT         | Contoso 小売 USA                   |
+| USRT         | ContosoRetail USA                   |
 | USSI         | Contoso コンサルティング USA               |
 
 現金の概要 Power BI コンテンツからのレポートが、**現金の概要** および **銀行管理** ワークスペースで表示されます。
@@ -112,15 +114,15 @@ USMF というデモ会社には、承認すべき INGA についての 2 つの
 
 補助元帳仕訳帳勘定項目のバッチ転送ルールが **スケジュール済バッチ** に変更され、ベスト プラクティスが反映されます。 バッチは、10 分ごとに実行されるように構成されています。 バッチ処理が実行されるまで、すべてのソース ドキュメントの勘定項目が反映されないことを理解することが重要です。 総勘定元帳の即時効果を確認する必要がある場合は、**総勘定元帳** パラメータの **バッチ転送ルール** ページで **転送モード** を **同期** に設定します。 製品デモおよびトランザクション量が低い環境では同期が動作しても、大容量トランザクション環境ではパフォーマンスの問題が生じる可能性があります。
 
-[![一般会計パラメータ](./media/GL-parameters.PNG)](./media/GL-parameters.PNG)
+[![一般会計パラメータ。](./media/GL-parameters.PNG)](./media/GL-parameters.PNG)
 
-## <a name="cost-accounting"></a>原価計算
+## <a name="cost-accounting"></a>原価会計
 
 3 つの原価計算元帳がデモ データで作成されます。 原価計算元帳 USP2 は、法人 USP2 からのデータに基づく E2E デモ経験を提供します。 原価管理単位は、2 つの原価オブジェクト分析コード (原価部門と製品グループ) で構成されています。 実際原価、予算原価、統計測定は、2017 年の 12 会計年度期間すべてに転送されます。 2017 年のすべての会計年度期間に間接費計算も実行されました。
 
 アクセス レベルのセキュリティは、コンフィギュレーションされていますが、有効になっていません。 これは、**原価会計パラメーター** ページで有効になります。
 
-[![原価会計パラメーター](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
+[![原価会計パラメーター。](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
 
 アクセス レベルのセキュリティを有効にした後、従業員を原価オブジェクト コントローラーのロールに割り当てることができます。 従業員としてログインして **原価管理** ワークスペースにアクセスできます。 従業員はコスト センターのパフォーマンスを参照し、これらの計算がどのようにされたのか細部まで掘り下げて調べることができます。
 

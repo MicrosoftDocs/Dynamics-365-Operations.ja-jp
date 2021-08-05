@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 3db8c961591093626698205dba524db6b821307f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0cba693217aad2d9d1a05c47c8a291e72aacbc06
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745211"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355763"
 ---
 # <a name="make-fields-on-mobile-app-pages-clickable"></a>モバイル アプリ ページのフィールドをクリック可能にする
 
@@ -47,7 +47,7 @@ ms.locfileid: "5745211"
 
 フィールドをカスタマイズする前に、次のイメージに示すように、フィールドをクリックすることはできません。
 
-![変更される前の、顧客の詳細ページ](media/workspace-api/FieldAsURLOriginal.png)
+![変更される前の、顧客の詳細ページ。](media/workspace-api/FieldAsURLOriginal.png)
 
 フィールドがリンクであることを指定するには、これらの手順に従います。
 
@@ -64,7 +64,7 @@ ms.locfileid: "5745211"
 
 フィールドはリンクとして表示されるようになりました。
 
-![変更後の顧客詳細ページ](media/workspace-api/FieldAsURLFinal.png)
+![変更後の顧客詳細ページ。](media/workspace-api/FieldAsURLFinal.png)
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

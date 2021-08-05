@@ -3,20 +3,18 @@ title: X++ 数学ランタイム関数
 description: このトピックでは、数学ランタイム関数について説明します。
 author: RobinARH
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31361
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d25eba11ff1129b69ca3d07de9e6027c27deeeb
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: b98f09b16ac27ba19f8cbb0910ba1c347c541ba6
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193446"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661550"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 

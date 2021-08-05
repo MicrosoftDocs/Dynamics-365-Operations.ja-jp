@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9e33a16ffe865ecb3af14e28d2f221d7f23f76fa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f3def868dc9c90829348a6607a1d1444e899795a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745989"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359731"
 ---
 # <a name="create-a-security-policy"></a>セキュリティ ポリシーを作成する
 [!include [banner](../includes/banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "5745989"
 
 1.  Visual Studio にて、プロジェクト/ソリューションに XDSQCustGroup10 などの新しいクエリを追加します。 クエリは、**制約** テーブルからのデータ アクセスを制限するために使用されます。
 
-    ![新しいクエリの追加](media/71c5206330564e8c2612a61a5a211dba.png)
+    ![新しいクエリを追加します。](media/71c5206330564e8c2612a61a5a211dba.png)
 
 2.  **データ ソース** を右クリックし、**新しいデータ ソース** を選択します。
 
@@ -44,13 +44,13 @@ ms.locfileid: "5745989"
 
 7.  **値フィールド** で **10** と入力して、CustGroup フィールドの範囲を定義することで、CustGroup の値が 10 であるデータへアクセスを制限します。
 
-    ![値フィールドで、10 と入力](media/c970ccc0649fcd2ee4e2b9a9819eb2fc.png)
+    ![値フィールドで、10 を入力します。](media/c970ccc0649fcd2ee4e2b9a9819eb2fc.png)
 
 ## <a name="add-a-new-security-policy"></a>新しいセキュリティ ポリシーの追加
 
 1.  XDSCustTableOnCustGroup10 などの新しいセキュリティ ポリシーを追加します。
 
-    ![セキュリティ ポリシーの追加](media/118355845fa679f8f004e516f0691cff.png)
+    ![セキュリティ ポリシーを追加します。](media/118355845fa679f8f004e516f0691cff.png)
 
 2.  **制約付きテーブル** を **はい** に設定します。 これにより、プライマリ テーブルへのアクセスもセキュリティで保護されます。 この例では、これが **CustGroup** テーブルです。
 
@@ -66,11 +66,11 @@ ms.locfileid: "5745989"
 
 8.  **ロール名** フィールドを 「TradeSalesClerk」に設定します。 **コンテキスト タイプ** がこのポリシーの RoleName に設定されているため、ユーザー ロールの AOT 名を入力する必要があります。
 
-    ![ロール名フィールドで、TradeSalesClerk を入力](media/9ad07f1e403cadfc3f1a52c2433e42c7.png)
+    ![ロール名フィールドで、TradeSalesClerk を入力します。](media/9ad07f1e403cadfc3f1a52c2433e42c7.png)
 
 8.  次に、制約されたテーブルを追加します。 この簡単な例では、テーブルを 1 つ追加します。
 
-    ![制約付きテーブルの追加](media/e366725fa084d308b7f02a89a3e6175b.png)
+    ![制約付きテーブルを追加します。](media/e366725fa084d308b7f02a89a3e6175b.png)
 
     a.  **制約付きテーブル** を右クリックし、**新しい \> 制約付きテーブル** を選択します。
 

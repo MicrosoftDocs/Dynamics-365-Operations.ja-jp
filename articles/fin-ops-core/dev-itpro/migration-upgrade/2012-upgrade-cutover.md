@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 4c1a5e659e32e157135db243c52a0954fe53c666
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dfb74ae2026ea40ebf5d29e531f52646084ccba4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745639"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357568"
 ---
 # <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 
@@ -31,7 +31,7 @@ ms.locfileid: "5745639"
 
 次の図は、実稼動環境で発生するような、切替中の全体的なプロセスを示しています。
 
-![切替プロセス](./media/cutover_1.png)
+![切替プロセス。](./media/cutover_1.png)
 
 > [!NOTE]
 > このトピックでは、*サンドボックス* という用語は、SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2 または 3)、またはより高度な環境を示します。

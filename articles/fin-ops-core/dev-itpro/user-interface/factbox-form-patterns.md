@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c03c1504da0c27c8195ac890d6a7fdb65bec8156
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: b5756a5024b09c29f8b081c0b4c6d07520cfb6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189324"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354349"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
@@ -40,11 +40,11 @@ ms.locfileid: "6189324"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="form-part-factbox-grid"></a>フォーム パート 情報ボックス グリッド
 
-[![フォーム パート情報ボックス グリッドの図](./media/factbox1.png)](./media/factbox1.png)
+[![フォーム パート情報ボックス グリッドの図。](./media/factbox1.png)](./media/factbox1.png)
 
 ### <a name="form-part-factbox-card"></a>フォーム パート 情報ボックス カード
 
-[![フォーム パート情報ボックス カードの図](./media/factbox2.png)](./media/factbox2.png)
+[![フォーム パート情報ボックス カードの図。](./media/factbox2.png)](./media/factbox2.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -111,13 +111,13 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 フォーム: **CustTable** &gt; **ContactsInfoPart** 
 
-[![フォーム パート情報ボックス グリッドの例](./media/factbox3.png)](./media/factbox3.png)
+[![フォーム パート情報ボックス グリッドの例。](./media/factbox3.png)](./media/factbox3.png)
 
 ### <a name="form-part-factbox-card"></a>フォーム パート 情報ボックス カード
 
 フォーム: **CustTable** &gt; **CustStatisticsStatistics** 
 
-[![フォーム パート情報ボックス カードの例](./media/factbox4.png)](./media/factbox4.png)
+[![フォーム パート情報ボックス カードの例。](./media/factbox4.png)](./media/factbox4.png)
 
 ## <a name="appendix&quot;></a>付録
 ### <a name=&quot;frequently-asked-questions&quot;></a>よく寄せられる質問
@@ -154,7 +154,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 **CustTable** &gt; **ContactsInfoPart** 
 
-[![情報ボックスの例](./media/factbox5.png)](./media/factbox5.png)
+[![情報ボックスの例。](./media/factbox5.png)](./media/factbox5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

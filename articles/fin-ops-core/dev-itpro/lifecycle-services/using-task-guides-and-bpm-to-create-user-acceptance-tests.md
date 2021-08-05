@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: a08117f5dcf1b53fa519a0b16d8fb58b7a8a01c9
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 249185ccf9ac026b2d2ec48cd7c85ff69e578bad
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921409"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349124"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -39,7 +39,7 @@ BPM は、業務プロセスおよびユーザー タスクの階層を記述す
 
 説明目的で、このトピックでは、経費精算書の作成および注文要求の承認などの一般的な業務プロセスを含むライブラリを使用します。 Excel インポート機能を使用してライブラリを作成しました。  
 
-![Excel からインポート](./media/import-from-excel.PNG "Excel からインポート")
+![Excel からインポート。](./media/import-from-excel.PNG "Excel からインポート")
 
 ### <a name="record-test-cases-and-save-to-bpm"></a>テスト ケースを記録して BPM に保存 
 
@@ -52,14 +52,14 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 2. 記録中に使用する会社を選択します。
 3. **設定** > **タスク レコーダー** に移動します。
 
-    ![タスク レコーダーの選択](./media/select_task_recorder.PNG "タスク レコーダーの選択。")。
+    ![タスク レコーダーの選択。](./media/select_task_recorder.PNG "タスク レコーダーの選択。")
 
 4. **新しい記録の作成** をクリックします。
 5. コンフィギュレーション名を入力し、**開始** をクリックします。 記録は、**開始** をクリックすると開始されます。
 6. 記録が完了したら、タスク レコーダー ウィンドウで、**停止** をクリックします。
 7. 添付された BPM にタスク記録を保存するには、**Lifecycle Services に保存** をクリックします。
 
-    ![タスク レコーダー オプション](./media/task_recorder_options.PNG "タスク レコーダー オプション")
+    ![タスク レコーダー オプション。](./media/task_recorder_options.PNG "タスク レコーダー オプション")
 
 8. 記録を保存するライブラリを選択し、**保存** をクリックします。 それ以外の場合、**ディスクに保存** を選択し、次のセクション「BPM に AXTR ファイルをアップロードする」の手順に従います。
 
@@ -74,11 +74,11 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 2. **作成と編集** をクリックして、明細行内で、タスク記録をアップロードするプロセスを特定し選択します。
 3. 右ウィンドウで **アップロード** をクリックします。 
 
-    ![AXTR 1 のアップロード:](./media/upload_axtr_1.PNG "AXTR 1 のアップロード:")
+    ![AXTR 1 のアップロード。](./media/upload_axtr_1.PNG "AXTR 1 のアップロード:")
 
 4. **参照** をクリックして、アップロードするファイルを検索して選択し、次に **アップロード** をクリックします。
 
-    ![AXTR 2 のアップロード:](./media/upload_axtr_2.PNG "AXTR 2 のアップロード:")
+    ![AXTR 2 のアップロード。](./media/upload_axtr_2.PNG "AXTR 2 のアップロード:")
 
 #### <a name="save-an-existing-task-recording-to-bpm"></a>既存のタスク記録を BPM を保存
 1. 既存のタスクの記録を添付するには、クライアントにサインインします。
@@ -109,19 +109,19 @@ Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳�
 コンフィギュレーションが完了した後、Azure DevOps プロジェクトと BPM ライブラリを同期します。
 1. **業務プロセス ライブラリ** ページで、同期するライブラリのタイルの省略記号ボタン (...) を選択し、**Azure DevOps 同期** を選択します。
 
-    ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
+    ![VSTS Sync1.](./media/vsts_sync_1.png "VSTS Sync1")
 
     また、BPM ライブラリ内のツールバーから Azure DevOps 同期を開始することができます。 省略記号ボタン (...) を選択し、**Azure DevOps の同期** を選択します。
 
-    ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
+    ![VSTS Sync2.](./media/vsts_sync_2.png "VSTS Sync2")
 
 2. Azure DevOps の同期が完了した後、省略記号ボタン (…) を選択し、**テスト ケースの同期** を選択します。
 
-    ![テスト ケースの同期](./media/sync_test_case.PNG "テスト ケースの同期")
+    ![テスト ケースの同期。](./media/sync_test_case.PNG "テスト ケースの同期")
 
 3. このステップが完了したら、タスク記録は Azure DevOps のテスト ケースになり、**要件** タブの下にリンクが表示されます。 
 
-    ![テスト ケースの表示](./media/view_test_case.PNG "テスト ケースの表示")
+    ![テスト ケースの表示。](./media/view_test_case.PNG "テスト ケースの表示")
 
 
 テスト ステップに加えて、タスクを記録する XML ファイルが Azure DevOps テスト ケースに付属します。 テストの実行を自動化する場合、このファイルを必要とします。 
@@ -136,11 +136,11 @@ Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳�
 5. **既存の追加** をクリックし、**LCS:Test Cases** タグを照会します。
 6. **実行** > **テスト ケースの追加** の順にクリックします。
 
-    ![テスト ケースの追加](./media/add_test_cases.PNG "テスト ケースの追加")
+    ![テスト ケースの追加。](./media/add_test_cases.PNG "テスト ケースの追加")
  
 7. 詳細と関連付けられている XML ファイルを表示するには、テスト ケースを選択します。   
 
-    ![テスト ケースの詳細](./media/test_case_details.PNG "テスト ケースの詳細")
+    ![テスト ケースの詳細。](./media/test_case_details.PNG "テスト ケースの詳細")
 
  >[!NOTE]
  > この例は、すべてのテスト ケースが追加された 1 つの包括的受入れテスト スイートを作成する方法を示しています。 代わりに、同じテスト計画下にさまざまなテスト スイートを作成し、カスタム クエリを使用してテスト スイートに特定のテスト ケースを追加する必要があります。 テスト ケースは、1 つ以上のテスト スイートに属することができます。
@@ -150,7 +150,7 @@ Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳�
 ### <a name="run-manual-test-cases"></a>手動テスト ケースを実行
 テスト スイートがある場合、サンドボックスおよびテスト環境で アプリケーションが更新された後、回帰テストを使用する準備ができるようになります。 テスト スイートで手動でテスト ケースを実行、またはテスト スイートの一部であるタスク記録を再生し、Azure DevOps を使用してテスト ケースを成功または失敗としてマークすることができます。
 
-![マーク済み VSTS テスト](./media/vsts_test_marked.png "マーク済み VSTS テスト")
+![マーク済み VSTS テスト。](./media/vsts_test_marked.png "マーク済み VSTS テスト")
 
 Azure DevOps は、**テスト ランナー** というツールを提供して、手動テスト ケースの実行も管理します。 テスト ランナーの使用の詳細については、[手動テストの実行](/vsts/manual-test/getting-started/run-manual-tests) を参照してください。
 

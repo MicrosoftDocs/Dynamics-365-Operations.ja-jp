@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aace598539f6b8da61702f61e9f3e951bbf2ad59
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9ed2f9d7474073bd6866450ef9f50cd756971a45
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354359"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 
@@ -34,15 +34,15 @@ ms.locfileid: "6189914"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="line-view"></a>明細行の表示
 
-[![ワイヤーフレーム: 行の表示](./media/detailstransaction1-1024x575.png)](./media/detailstransaction1.png)
+[![ワイヤーフレーム: 行の表示。](./media/detailstransaction1-1024x575.png)](./media/detailstransaction1.png)
 
 ### <a name="header-view"></a>ヘッダーの表示
 
-[![ワイヤーフレーム: ヘッダー表示](./media/detailstransaction2-1024x576.png)](./media/detailstransaction2.png)
+[![ワイヤーフレーム: ヘッダー表示。](./media/detailstransaction2-1024x576.png)](./media/detailstransaction2.png)
 
 ### <a name="grid-view"></a>グリッド ビュー
 
-[![ワイヤーフレーム: グリッド ビュー](./media/detailstransaction3-1024x575.png)](./media/detailstransaction3.png)
+[![ワイヤーフレーム: グリッド ビュー。](./media/detailstransaction3-1024x575.png)](./media/detailstransaction3.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -164,15 +164,15 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="line-view"></a>明細行の表示
 
-[![詳細トランザクションの例: 明細行の表示](./media/detailstransaction4-1024x508.png)](./media/detailstransaction4.png)
+[![詳細トランザクションの例: 明細行の表示。](./media/detailstransaction4-1024x508.png)](./media/detailstransaction4.png)
 
 #### <a name="header-view"></a>ヘッダーの表示
 
-[![詳細トランザクションの例: ヘッダーの表示](./media/detailstransaction5-1024x509.png)](./media/detailstransaction5.png)
+[![詳細トランザクションの例: ヘッダーの表示。](./media/detailstransaction5-1024x509.png)](./media/detailstransaction5.png)
 
 #### <a name="grid-view"></a>グリッド ビュー
 
-[![詳細トランザクションの例: グリッド ビュー](./media/detailstransaction6-1024x509.png)](./media/detailstransaction6.png)
+[![詳細トランザクションの例: グリッド ビュー。](./media/detailstransaction6-1024x509.png)](./media/detailstransaction6.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -197,15 +197,15 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ##### <a name="line-view"></a>明細行の表示
 
-[![AX 2012 の例: 明細行の表示](./media/detailstransaction7-1024x727.png)](./media/detailstransaction7.png)
+[![AX 2012 の例: 明細行の表示。](./media/detailstransaction7-1024x727.png)](./media/detailstransaction7.png)
 
 ##### <a name="header-view"></a>ヘッダーの表示
 
-[![AX 2012 の例: ヘッダーの表示](./media/detailstransaction8-1024x727.png)](./media/detailstransaction8.png)
+[![AX 2012 の例: ヘッダーの表示。](./media/detailstransaction8-1024x727.png)](./media/detailstransaction8.png)
 
 ##### <a name="grid-view"></a>グリッド ビュー
 
-[![AX 2012 の例: グリッド ビュー](./media/detailstransaction9-1024x727.png)](./media/detailstransaction9.png)
+[![AX 2012 の例: グリッド ビュー。](./media/detailstransaction9-1024x727.png)](./media/detailstransaction9.png)
 
 
 

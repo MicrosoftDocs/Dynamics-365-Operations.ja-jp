@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e0ea06723d9d610af2b018561ade33c5a6810940
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 4eb2f63ee9dea74e56568627ac3f7f1390cb1056
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936996"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354665"
 ---
 # <a name="omni-channel-commerce-order-payments"></a>オムニチャネル Commerce 注文支払
 
@@ -43,17 +43,17 @@ Dynamics 365 Commerce は、POS、電子商取引、コール センターの3�
 
 次の図は、コール センターで作成された注文を示しています。 この注文の行が選択されている場合は、**決済** ボタンが使用できます。 
 
-![決済ボタンが利用可能なコールセンターの注文](../dev-itpro/media/COP_CC_PAY.png)
+![決済ボタンが利用可能なコールセンターの注文。](../dev-itpro/media/COP_CC_PAY.png)
 
 次の図は、POS で作成された注文を示しています。 この注文の行が選択されている場合は、**決済** ボタンが使用できません。
 
-![決済ボタンが利用できない POS の注文](../dev-itpro/media/COP_NONCC_PAY.png)
+![決済ボタンが利用できない POS の注文。](../dev-itpro/media/COP_NONCC_PAY.png)
 
 商取引バージョン 10.0.13 およびそれ以降では、電子商取引および POS で作成された注文の **決済** ページにアクセスできます。 また、[オムニチャネル コマース注文決済] 機能を有効にすると、コール センターの注文に対してのみ使用可能だった注文完了機能を利用して編集することができます。
 
 この機能を有効にすると、**販売注文の集計** ダイアログを使用して、POS および電子商取引で発生した注文の決済を編集することができます。  
 
-![この機能が有効になった際に作成された POS または電子商取引の注文で使用できる決済ボタン](../dev-itpro/media/COP_ORDERCOMPLETION.png)
+![この機能が有効になった際に作成された POS または電子商取引の注文で使用できる決済ボタン。](../dev-itpro/media/COP_ORDERCOMPLETION.png)
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -61,7 +61,7 @@ Dynamics 365 Commerce は、POS、電子商取引、コール センターの3�
 
 オムニチャネル コマース注文決済機能を有効にする際に、前提条件のいずれかが満たされていない場合は、前提条件の機能と構成が整うまでは続行できない旨のメッセージが表示されます。
 
-![前提条件となる機能と構成についてのメッセージ](../dev-itpro/media/COP_PRE.png)
+![前提条件となる機能と構成についてのメッセージ。](../dev-itpro/media/COP_PRE.png)
 
 ### <a name="prerequisite-features"></a>前提条件となる機能
 
@@ -83,7 +83,7 @@ Dynamics 365 Commerce は、POS、電子商取引、コール センターの3�
 
 次の図は、コールセンターのオペレーションに対する決済方法のマッピングを示しています。
 
-![コールセンターのオペレーションにマッピングされた決済方法](../dev-itpro/media/COP_OPERATION.png)
+![コールセンターのオペレーションにマッピングされた決済方法。](../dev-itpro/media/COP_OPERATION.png)
 
 #### <a name="configure-a-call-center"></a>コール センターの構成
 
@@ -107,7 +107,7 @@ POS で顧客の注文が作成されると、店舗はフルフィルメント�
 
 1. **機能管理** ワークスペースで、**すべて** タブを選択してすべての機能の一覧を表示します。その後、**オムニチャネル コマース注文決済** を検索します。
 
-    ![機能管理ワークスペースのオムニチャネル コマース注文決済機能](../dev-itpro/media/COP_ENABLE.png)
+    ![機能管理ワークスペースのオムニチャネル コマース注文決済機能。](../dev-itpro/media/COP_ENABLE.png)
 
 2. 機能を選択し、**直ちに有効化** を選択します。
 
@@ -117,7 +117,7 @@ POS で顧客の注文が作成されると、店舗はフルフィルメント�
 
 オムニチャネル コマースの注文決済機能がオンになっている時に作成されたチャネルの注文を他の注文と区別する方法としては、この機能がオンになっている場合は、注文のヘッダーに **決済タイプ** フィールドが表示されます。 POS 注文および電子商取引の注文では、このフィールドは **コマース** に設定されます。
 
-![決済タイプ フィールドがコマースに設定されている注文](../dev-itpro/media/COP_HEADERCOM.png)
+![決済タイプ フィールドがコマースに設定されている注文。](../dev-itpro/media/COP_HEADERCOM.png)
 
 コール センター注文の場合は、**決済タイプ** フィールドが **コールセンター** に設定されます。 売掛金勘定で作成された販売注文の場合は、このフィールドは表示されません。
 
@@ -210,7 +210,7 @@ POS で顧客の注文が作成されると、店舗はフルフィルメント�
 
 コマース バージョン 10.0.12 までは、支払仕訳帳の割り当てがチャネル間で一貫していません。 コマース バージョン 10.0.13 およびそれ以降では、オムニチャンネルのコマース注文決済機能を有効にすると、すべてのチャンネルで **コマース パラメータ** ページの **転記** タブに指定されている支払伝票が使用されます。
 
-![コマース パラメータ ページにおける支払伝票の割り当て](../dev-itpro/media/COP_VOUCH.png)
+![コマース パラメーター ページにおける支払伝票の割り当て。](../dev-itpro/media/COP_VOUCH.png)
 
 ### <a name="check-payment-method"></a>小切手の支払方法
 

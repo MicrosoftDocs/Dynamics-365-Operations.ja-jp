@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 60373
+ms.custom:
+- "23401"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 4f75940af9dfcd5e91ba8de32b12f4845868fe42
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a3f357018ef55df6170dd529790126bd2df2cb63
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344032"
 ---
 # <a name="on-premises-deployment-overview"></a>オンプレミス配置の概要
 
@@ -43,11 +45,11 @@ Microsoft Dynamics 365 Finance + Operations (オンプレミス) は、顧客デ
 
 図 1 は、Service Fabric スタンドアロン クラスターで配置されるノード タイプの論理的な図を示します。 
 
-[![Service fabric スタンドアロン クラスター](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)
+[![Service fabric スタンドアロン クラスター。](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)
 
 オンプレミス配置のアプリケーション ライフサイクル管理は、LCS を通じて調整されます。 顧客は、LCS の実績のあるツールと方法を使用して、社内展開を管理することができます (図2)。 開発経験は、1 ボックス VHD によるクラウド配置と同じです。 
 
-[![ローカル ビジネス データ展開のアプリケーション ライフ サイクル管理](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)
+[![ローカル ビジネス データ展開のアプリケーション ライフサイクル管理。](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)
 
 ## <a name="data-storage"></a>データ ストレージ 
 オンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。 コア顧客データは、[Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data) で提供される顧客データ定義のサブセットです。 表 1 では、LCS、Azure Active Directory、および Microsoft Office のサインアップ ポータルなどのサービスにより、米国内にある Microsoft Azure データ センターに格納されている顧客データのカテゴリについて説明します。 コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。  

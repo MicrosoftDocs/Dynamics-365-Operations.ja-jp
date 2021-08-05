@@ -3,21 +3,16 @@ title: LookupMetadata タイプ
 description: ルックアップ メタデータの種類。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: eaebde03b6780e9954ad07db716ebef2e4ba29ba
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 52477d01e32a4d8d122b54cdfd653704c67e0a39
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745635"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661414"
 ---
 # <a name="lookupmetadata-type"></a>LookupMetadata タイプ
 
@@ -55,7 +50,7 @@ ms.locfileid: "5745635"
 * [注文](view-model-control-lookup-ilookup-ilookupmetadata.md#order)
 * [ReferenceAppId](view-model-control-lookup-ilookup-ilookupmetadata.md#referenceappid)
 * [ShowLookupPage](view-model-control-lookup-ilookup-ilookupmetadata.md#showlookuppage)
-* [[タイプ](view-model-control-lookup-ilookup-ilookupmetadata.md#type)]
+* [タイプ](view-model-control-lookup-ilookup-ilookupmetadata.md#type)
 * [ValueField](view-model-control-lookup-ilookup-ilookupmetadata.md#valuefield)
 * [ValueKey](view-model-control-lookup-ilookup-ilookupmetadata.md#valuekey)
 

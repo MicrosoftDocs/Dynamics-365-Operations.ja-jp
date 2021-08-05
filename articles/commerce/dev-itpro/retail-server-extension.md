@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: ab4c56ab13f2c2e8f1ca693786ae41121e44e655
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4513c1af9cefc4c246b9b3e822e78fd7e9ed643c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193117"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353844"
 ---
 # <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10010-and-earlier"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.10 以前)
 
@@ -52,13 +52,13 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 
 次の図は、拡張機能のフローを示しています。
 
-![Commerce Scale Unit の拡張機能フロー](media/RSExtensionFlow.png)
+![Commerce Scale Unit の拡張機能フロー。](media/RSExtensionFlow.png)
 
 ### <a name="extension-class-diagram"></a>拡張機能クラス ダイアグラム
 
 次の図は、拡張機能のクラス ダイアグラムを示しています。
 
-![Commerce Scale Unit の拡張機能クラス ダイアグラム](media/RSClassFlow.png)
+![Commerce Scale Unit の拡張機能クラス ダイアグラム。](media/RSClassFlow.png)
 
 > [!NOTE]
 > Retail サーバーでは、IController と CommerceController の両方の拡張機能の読み込みはサポートされていません。 両方のタイプの拡張機能を含めると、Retail サーバーの負荷は失敗します。 拡張機能は IController または CommerceController のいずれかである必要があります。 IController 拡張機能に移行する場合は、すべての Retail サーバー拡張機能を IController に移行します。

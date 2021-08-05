@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29a85dda7659be3b16e957fa64a7a12f49cd9ba4
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 0ea51d74453ac84ba53479877d35a5debaf5b363
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866232"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358575"
 ---
 # <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations プロジェクト タイプ
 
@@ -92,7 +92,7 @@ Finance and Operations プロジェクト タイプは開発ツールの一部�
 4. プロジェクトを現在の選択で開くのか、新しいソリューションで開くのか、まったく開かないのかを指定します。
 5. **詳細** フィールドで、インポートされる要素を確認します。 インポートしない任意の要素の横にあるチェック ボックスをクリアすることができます。
 
-    [![プロジェクトのインポート ダイアログ](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
+    [![プロジェクト ダイアログをインポートします。](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
 
 6. **OK** をクリックしてインポート プロセスを完了します。
 

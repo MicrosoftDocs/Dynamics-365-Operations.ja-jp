@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29560ae5b92a5ac4914ed919e7617677330cfc41
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: b78c13ab2dd42d90df25c5ab50ebc216c09e401e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188089"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354331"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 
@@ -114,7 +114,7 @@ ms.locfileid: "6188089"
 
 ## <a name="steps-list"></a>ステップ リスト
 
-![ステップ一覧の例](media/example-step-list.png)
+![ステップ一覧の例。](media/example-step-list.png)
 
 ### <a name="step-counter"></a>ステップ カウンター
 <img src="media/step-counter.png" alt="Step counter"/>

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 2ec877379a7ce749d8ccd716316b9f61ef415939
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: f7fcd579c36fd215847f2a02e3c54ba61a9be6db
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923275"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352900"
 ---
 # <a name="on-premises-disaster-recovery-configuration"></a>オンプレミス障害復旧コンフィギュレーション
 ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
@@ -48,7 +48,7 @@ Microsoft が指定した新しい前提条件を適用していることを確�
 
 以下の図では、必要となる設定の詳細を示しています。
 
-![ディザスター リカバリー アーキテクチャ](media/DRArchitecture.png)
+![ディザスター リカバリー アーキテクチャ。](media/DRArchitecture.png)
 
 ## <a name="environment-configuration"></a>環境のコンフィギュレーション
 
@@ -115,7 +115,7 @@ Finance and Operations AOS ノードと SQL Server は、同じデータセン�
 
 障害イベントが発生した場合、プライマリ データセンターが使用できなくなった場合であっても、セカンダリ データセンター内では、以下のコンポーネントが使用できます。
 
-![配置設定の拇印の例](media/DRArchitectureSingle.png)
+![配置設定におけるサムプリントの例。](media/DRArchitectureSingle.png)
 
 障害が発生した最初の時点では、ディザスター リカバリー環境は空になります。 ここで存在するのは、複製された本番データのすべてを含む、構成済みの Service Fabric Cluster と SQL Server になります。 
 
@@ -230,13 +230,13 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
 
 1. **管理** を選択し、**更新の設定** を選択します。
 
-    ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
+    ![更新設定を適用します。](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 1. 値を変更しないでください。 **準備** を選択します。
 
 1. ダウンロードと準備が完了後は、**環境の更新** ボタンが表示されます。 このボタンを選択して、環境の更新を開始します
 
-    ![環境の更新ボタン](media/0a9d43044593450f1a828c0dd7698024.png)
+    ![環境の更新ボタン。](media/0a9d43044593450f1a828c0dd7698024.png)
 
 1. 環境が配置されると、ディザスター リカバリー環境を使用できるようになります。 
 

@@ -3,21 +3,16 @@ title: AsyncService タイプ
 description: ビジネス ロジック コードから非同期操作を実行する機能を提供します。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 88f4f7fa3996153cebc2eac44d3760b5c5498b4c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7fc425d2f36d440c6da710954e13347fd0bc8036
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745217"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661510"
 ---
 # <a name="asyncservice-type"></a>AsyncService タイプ
 

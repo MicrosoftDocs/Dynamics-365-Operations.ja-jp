@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 6e7ba56b295c41fe7e28f74c95f50275008ce9da
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 78b40e39a2eca0028c428d357fbddbc52b74873c
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794337"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558407"
 ---
 # <a name="pos-triggers"></a>POS トリガー
 
@@ -116,6 +116,7 @@ ms.locfileid: "5794337"
 | PostPaymentTrigger      | キャンセル不可 | すべての支払い処理が完了した後に実行されます。  |
 | PreVoidPaymentTrigger   | 解約可能     | POS で支払行が無効になる前に実行されます。  |
 | PostVoidPaymentTrigger  | キャンセル不可 | POS で支払行が無効になった後に実行されます。   |
+| PreTenderPaymentTrigger (10.0.21)  | 解約可能 | 支払ビューで支払/入金金額が選択された後に実行されます。   |
 
 ## <a name="printing-triggers"></a>印刷トリガー
 
@@ -440,7 +441,7 @@ ms.locfileid: "5794337"
 2. **ファイル** メニューで、**開く \> プロジェクト/ソリューション** を選択します。 テンプレート プロジェクト (**SampleCRTExtension.csproj**) を検索します。
 3. テンプレート プロジェクト **Runtime.Extensions.SuspendReceiptSample** を名前変更します。
 4. オプション: 既定の名前空間を変更します。
-5. 出力アセンブリ **Contoso.Commerce.Runtime.SuspendReceiptSample** を名前変更します。
+5. 出力アセンブリ **Contoso.Commerce.Runtime.SuspendReceiptSample** の名前を変更します。
 6. プロジェクト内で、新しい要求クラス ファイルを追加し、**GetCustomReceiptsRequestHandler.cs** いう名前をつけます。
 7. 次のコードをコピーして、クラスに貼り付けます。 コピーする前に、自動的に生成されたコードを削除します。
 

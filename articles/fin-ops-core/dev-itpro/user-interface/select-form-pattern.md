@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ba681e69d576002501d458483473de8fc953842
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4cb2b5f127a0ba20a36c0231e74dc7b74ae15bff
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188105"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350094"
 ---
 # <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 
@@ -120,17 +120,17 @@ ms.locfileid: "6188105"
 
 フォーム: CustTable 
 
-![詳細マスター フォーム](./media/image001.jpg)
+![詳細マスター フォーム。](./media/image001.jpg)
 
-![詳細マスター フォーム](./media/image002.jpg)
+![詳細マスター フォーム。](./media/image002.jpg)
 
 [詳細マスター / 標準タブ](details-master-form-pattern.md) フォームに多数のクイック タブ (>15) があり、カテゴリにグループ化できる場合は、この詳細マスター バリアントを使用します。
 
 フォーム: HcmWorker 
 
-[![詳細マスター、標準タブフォーム付き](./media/image003.jpg)](./media/image003.jpg)
+[![標準タブ フォーム付きの詳細マスター。](./media/image003.jpg)](./media/image003.jpg)
 
-[![詳細マスター、標準タブフォーム付き](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)
+[![標準タブ フォーム付きの詳細マスター。](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)
 
 
 
@@ -140,9 +140,9 @@ ms.locfileid: "6188105"
 
 フォーム: SalesTable 
 
-[![詳細トランザクション フォーム](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)
+[![詳細トランザクション フォーム。](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)
 
-[![詳細トランザクション フォーム](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)
+[![詳細トランザクション フォーム。](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)
 
 
 
@@ -152,31 +152,31 @@ ms.locfileid: "6188105"
 
 フォーム: ProjTableCreate
 
-[![ダイアログ - 基本フォーム](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)
+[![ダイアログ - 基本フォーム。](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)
 
 [ダイアログ – 読み取り専用](dialog-form-pattern.md) ダイアログが編集できない情報だけを表示する場合は、このダイアログバリアントを使用します。 **閉じる** ボタンだけがあります。
 
 フォーム: SalesTablePostings
 
-[![ダイアログ - 読み取り専用フォーム](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)
+[![ダイアログ - 読み取り専用フォーム。](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)
 
 [ダイアログ – クイック タブ](dialog-form-pattern.md) ダイアログの内容がクイック タブにグループ化されている場合は、このダイアログ バリアントを使用します。
 
 現在、製品にはありません。
 
-[![ダイアログ - FastTabs フォーム](./media/howtoselectaformpattern-36.jpg)](./media/howtoselectaformpattern-36.jpg)
+[![ダイアログ - FastTabs フォーム。](./media/howtoselectaformpattern-36.jpg)](./media/howtoselectaformpattern-36.jpg)
 
 [ダイアログ – タブ](dialog-form-pattern.md) ダイアログの内容をタブにグループ化する必要がある場合は、このダイアログ バリアントを使用します。
 
 フォーム: CaseDetailCreate
 
-![ダイアログ - タブ フォーム](./media/howtoselectaformpattern-37.jpg)
+![ダイアログ - タブ フォーム。](./media/howtoselectaformpattern-37.jpg)
 
 [ダイアログ – 二重タブ](dialog-form-pattern.md) ダイアログコンテンツに2つのタブが重ねて表示されている場合は、このダイアログバリアントを使用します。
 
 フォーム: PurchTableReferences
 
-![ダイアログ - 二重タブフォーム](./media/howtoselectaformpattern-38.jpg)
+![ダイアログ - 二重タブ フォーム。](./media/howtoselectaformpattern-38.jpg)
 
 
 
@@ -186,7 +186,7 @@ ms.locfileid: "6188105"
 
 フォーム: CustCollectionsNewActivityAction
 
-[![ドロップ ダイアログ フォーム](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)
+[![ドロップ ダイアログ フォーム。](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)
 
 [ドロップ ダイアログ – 読み取り専用](drop-dialog-form-pattern.md) ドロップ ダイアログのフィールドが編集できない場合は、このドロップ ダイアログ バリアントを使用します。 **OK**/**閉じる** ボタンはモデル化されません。
 
@@ -198,13 +198,13 @@ ms.locfileid: "6188105"
 
 フォーム: ContactsInfoPart
 
-![FactBox フォーム](./media/howtoselectaformpattern-40.jpg)
+![FactBox フォーム。](./media/howtoselectaformpattern-40.jpg)
 
 [情報ボックス カード](factbox-form-patterns.md) この情報ボックス バリアントを使用して、一連の関連フィールドを表示します。
 
 フォーム: CustStatisticsStatistics
 
-![FactBox カード](./media/howtoselectaformpattern-41.jpg)
+![FactBox カード。](./media/howtoselectaformpattern-41.jpg)
 
 #### <a name="list-page"></a>リスト ページ
 
@@ -212,7 +212,7 @@ ms.locfileid: "6188105"
 
 フォーム: SalesTableListPage
 
-![リスト ページ フォーム](./media/howtoselectaformpattern-42.jpg)
+![リスト ページ フォーム。](./media/howtoselectaformpattern-42.jpg)
 
 #### <a name="lookup"></a>ルックアップ
 
@@ -220,19 +220,19 @@ ms.locfileid: "6188105"
 
 フォーム: SysLanguageLookup
 
-[![ルックアップの基本フォーム](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)
+[![ルックアップの基本フォーム。](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)
 
 [プレビュー付きのルックアップ](lookup-form-pattern.md) このルックアップ バリアントを使用して、ときに、基本的なパターンだけでなく、現在のレコードのプレビューが表示されます。
 
 フォーム: HcmWorkerLookup
 
-![プレビュー フォーム付きルックアップ](./media/howtoselectaformpattern-44.jpg)
+![プレビュー フォーム付きルックアップ。](./media/howtoselectaformpattern-44.jpg)
 
 [タブ付きのルックアップ](lookup-form-pattern.md) ルックアップの複数のビュー (グリッドビュー / ツリービュー、複数のフィルタリングされたリストなど) がある場合は、このルックアップ バリアントを使用します。
 
 フォーム: CaseCategoryLookup
 
-![タブ フォーム付きルックアップ](./media/howtoselectaformpattern-45.jpg)
+![タブ フォーム付きルックアップ。](./media/howtoselectaformpattern-45.jpg)
 
 
 
@@ -246,7 +246,7 @@ ms.locfileid: "6188105"
 
 フォーム: VendInvoiceJourCountChart
 
-[![例](./media/howtoselectaformpattern-1.jpg)](./media/howtoselectaformpattern-1.jpg)
+[![例。](./media/howtoselectaformpattern-1.jpg)](./media/howtoselectaformpattern-1.jpg)
 
 
 
@@ -256,25 +256,25 @@ ms.locfileid: "6188105"
 
 フォーム: AgreementLine
 
-![ツールバーおよびフィールド フォーム付き簡易詳細](./media/howtoselectaformpattern-2.jpg)
+![ツールバーおよびフィールド フォーム付き簡易詳細。](./media/howtoselectaformpattern-2.jpg)
 
 [クイック タブ付き簡易詳細](simple-details-form-pattern.md) レコードの情報がクイック タブにまとめられている場合は、この簡易詳細バリアントを使用します。
 
 フォーム: PlanActivityServiceDetails
 
-![FastTabs フォーム付き簡易詳細](./media/howtoselectaformpattern-3.jpg)
+![FastTabs フォーム付き簡易詳細。](./media/howtoselectaformpattern-3.jpg)
 
 [標準タブ付き簡易詳細](simple-details-form-pattern.md) レコードの情報が通常のタブにまとめられている場合は、この簡易詳細バリアントを使用します。
 
 フォーム: HcmEmploymentDateManager
 
-![標準タブ フォーム付き簡易詳細](./media/howtoselectaformpattern-4.jpg)
+![標準タブ フォーム付き簡易詳細。](./media/howtoselectaformpattern-4.jpg)
 
 [パノラマ付き簡易詳細](simple-details-form-pattern.md) この簡易詳細バリアントを使用して、水平方向にスクロールするパノラマにレコードの情報を表示します。
 
 フォーム: PdsMRCEventTracker
 
-![Panorama フォーム付き簡易詳細](./media/howtoselectaformpattern-5.jpg)
+![パノラマ フォーム付き簡易詳細。](./media/howtoselectaformpattern-5.jpg)
 
 
 #### <a name="simple-list"></a>簡易リスト
@@ -283,7 +283,7 @@ ms.locfileid: "6188105"
 
 フォーム: CustGroup
 
-![簡易リスト フォーム](./media/howtoselectaformpattern-6.jpg)
+![簡易リスト フォーム。](./media/howtoselectaformpattern-6.jpg)
 
 
 
@@ -293,19 +293,19 @@ ms.locfileid: "6188105"
 
 フォーム: PaymTerm
 
-![HowToSelectAFormPattern (7)](./media/howtoselectaformpattern-7.jpg)
+![HowToSelectAFormPattern (7).](./media/howtoselectaformpattern-7.jpg)
 
 [簡易リストと詳細 – 表形式のグリッド](simple-list-details-form-pattern.md) この簡易リストと詳細のバリアントは、フォームのリスト部分に 3 つ以上のフィールドが必要な場合に使用します。
 
 フォーム: ExchangeRate
 
-![簡易リストと詳細 – 表形式のグリッド フォーム](./media/howtoselectaformpattern-8.jpg)
+![簡易リストと詳細 – 表形式のグリッド フォーム。](./media/howtoselectaformpattern-8.jpg)
 
 [簡易リストと詳細 – ツリー](simple-list-details-form-pattern.md) フォームのリスト部分がツリーの場合は、この簡易リストと詳細のバリアントを使用します。
 
 フォーム: FiscalCalendars
 
-![簡易リストおよび詳細 - ツリー フォーム](./media/howtoselectaformpattern-9.jpg)
+![簡易リストおよび詳細 - ツリー フォーム。](./media/howtoselectaformpattern-9.jpg)
 
 
 
@@ -315,7 +315,7 @@ ms.locfileid: "6188105"
 
 フォーム: CustParameters
 
-![目次フォーム](./media/howtoselectaformpattern-10.jpg)
+![目次フォーム。](./media/howtoselectaformpattern-10.jpg)
 
 
 
@@ -325,13 +325,13 @@ ms.locfileid: "6188105"
 
 フォーム: LedgerJournalTable
 
-![タスク シングル フォーム](./media/howtoselectaformpattern-11.jpg)
+![タスク シングル フォーム。](./media/howtoselectaformpattern-11.jpg)
 
 [タスク ダブル](task-double-form-pattern.md) このレガシ フォーム パターンは、トランザクション エンティティを表示するために使用します。 これは、新しいフォームではなく、移行にのみ使用する必要があります。
 
 フォーム: HRMAbsenceTableHistory
 
-![タスク ダブル フォーム](./media/howtoselectaformpattern-12.jpg)
+![タスク ダブル フォーム。](./media/howtoselectaformpattern-12.jpg)
 
 
 
@@ -341,7 +341,7 @@ ms.locfileid: "6188105"
 
 フォーム: WrkCtrBulkResReqEditWizard
 
-![ウィザード フォーム](./media/howtoselectaformpattern-13.jpg)
+![ウィザード フォーム。](./media/howtoselectaformpattern-13.jpg)
 
 
 
@@ -351,7 +351,7 @@ ms.locfileid: "6188105"
 
 フォーム: FmClerkWorkspace
 
-![運用ワークスペース フォーム](./media/howtoselectaformpattern-1.png)
+![運用ワークスペース フォーム。](./media/howtoselectaformpattern-1.png)
 
 ワークスペース: これは古いワークスペース パターンです。 これはまもなく削除されるため、使用しないでください。 ここでは完全を期すためだけに含まれています。
 
@@ -376,7 +376,7 @@ ms.locfileid: "6188105"
 
 フォームが Visual Studio デザイナーで開かれていると、デザイナーの上部にあるコントロール検索ボックスで「指定されていません」を検索することによって、まだサブパターンを適用する必要のあるコンテナーを簡単に検索できます (次のスクリーン ショットに図示)。
 
-[![コンテナーの検索](./media/howtoselectaformpattern-15.jpg)](./media/howtoselectaformpattern-15.jpg)
+[![コンテナーを検索する。](./media/howtoselectaformpattern-15.jpg)](./media/howtoselectaformpattern-15.jpg)
 
 ### <a name="subpattern-visuals-and-descriptions"></a>サブパターンのビジュアルと説明
 
@@ -388,13 +388,13 @@ ms.locfileid: "6188105"
 
 フォーム: LedgerJournalTable (TopFields)
 
-![カスタム フィルター フォーム](./media/howtoselectaformpattern-16.jpg)
+![カスタム フィルター フォーム。](./media/howtoselectaformpattern-16.jpg)
 
 [カスタムと クイック フィルター](../financial/dimension-entry-control-subpattern.md) QuickFilter が必要な場合は、このバリアントを使用します。
 
 フォーム: CustTable (CustomFilterGroup)
 
-![カスタムおよびクイック フィルター フォーム](./media/howtoselectaformpattern-17.jpg)
+![カスタムおよびクイック フィルター フォーム。](./media/howtoselectaformpattern-17.jpg)
 
 
 
@@ -404,31 +404,31 @@ ms.locfileid: "6188105"
 
 フォーム: InventLocation (LocationNames)
 
-![フィールドおよびフィールド グループ フォーム](./media/howtoselectaformpattern-18.jpg)
+![フィールドおよびフィールド グループ フォーム。](./media/howtoselectaformpattern-18.jpg)
 
 [表形式フィールド](tabular-fields-subpattern.md) このフォーム パターンを使用して、フィールドの構造化されたレイアウトを取得します。 主に合計のためです。
 
 フォーム: LedgerJournalTransVendPaym (残高)
 
-![表形式フィールド フォーム](./media/howtoselectaformpattern-19.jpg)
+![表形式フィールド フォーム。](./media/howtoselectaformpattern-19.jpg)
 
 [テキスト入力](fill-text-subpattern.md) このフォーム パターンは、単一入力コントロールで全幅が必要な場合に使用します。
 
 フォーム: FmRental (メモ)
 
-![テキスト フォームの入力](./media/howtoselectaformpattern-20.jpg)
+![テキスト フォームの入力。](./media/howtoselectaformpattern-20.jpg)
 
 [水平フィールドおよびボタン グループ](horizontal-fields-buttons-group-subpattern.md) フィールドにインライン アクションがある場合は、このフォーム パターンを使用します。
 
 フォーム: SalesTable (GroupHeaderAddressHeaderOverview)
 
-![水平フィールドおよびボタン グループ フォーム](./media/howtoselectaformpattern-21.jpg)
+![水平フィールドおよびボタン グループ フォーム。](./media/howtoselectaformpattern-21.jpg)
 
 [画像のプレビュー](image-preview-subpattern.md) このフォーム パターンは、イメージ コントロール (およびオプションの関連フィールド) を持つコンテナーに使用します。
 
 フォーム: RetailVisualProfile (ログイン)
 
-![画像のプレビュー フォーム](./media/howtoselectaformpattern-22.jpg)
+![画像のプレビュー フォーム。](./media/howtoselectaformpattern-22.jpg)
 
 
 
@@ -438,13 +438,13 @@ ms.locfileid: "6188105"
 
 フォーム: VendTable (TabCommunication)
 
-![ツールバーおよびリスト フォーム](./media/howtoselectaformpattern-23.jpg)
+![ツールバーおよびリスト フォーム。](./media/howtoselectaformpattern-23.jpg)
 
 [ツールバーおよびリスト: 二重](toolbar-list-subpattern.md) コンテナーに2 つのグリッドがある場合、このツールバーおよびリスト バリアントを使用します。
 
 フォーム: SalesQuickQuote (TabPageExistingItems)
 
-![ツールバーおよびリスト - ダブル フォーム](./media/howtoselectaformpattern-24.jpg)
+![ツールバーおよびリスト - ダブル フォーム。](./media/howtoselectaformpattern-24.jpg)
 
 
 
@@ -454,13 +454,13 @@ ms.locfileid: "6188105"
 
 フォーム: SalesOrderProcessingWorkspace
 
-![セクション タイル フォーム](./media/howtoselectaformpattern-25.jpg)
+![セクション タイル フォーム。](./media/howtoselectaformpattern-25.jpg)
 
 [セクション関連リンク](section-related-links-subpattern.md) このバリアントを使用して、ワークスペースのセクションに一連のハイパーリンクを表示します。 これは、ワークスペース フォームのタブ ページでモデル化する必要があります。
 
 フォーム: SalesOrderProcessingWorkspace
 
-![セクション関連リンク フォーム](./media/howtoselectaformpattern-26.jpg)
+![セクション関連リンク フォーム。](./media/howtoselectaformpattern-26.jpg)
 
 [セクション タブ付きリスト](section-tabbed-list-subpattern.md) 複数のリスト バリアントを含める必要がある場合に、このバリアントを使用します。 一度に 1 つだけ表示されます。
 
@@ -482,25 +482,25 @@ ms.locfileid: "6188105"
 
 フォーム: HcmJob (TaskTabPage)
 
-![入れ子になった簡易リストおよび詳細フォーム](./media/howtoselectaformpattern-27.jpg)
+![入れ子になった簡易リストおよび詳細フォーム。](./media/howtoselectaformpattern-27.jpg)
 
 [リスト パネル](list-panel-subpattern.md) このフォーム パターンは、ユーザーが 2 つのリストの間でアイテムを前後に移動する必要がある場合に使用します。
 
 フォーム: CLIControls\_ListPanel (FormTabPageControl1)
 
-![リスト パネル フォーム](./media/howtoselectaformpattern-28.jpg)
+![リスト パネル フォーム。](./media/howtoselectaformpattern-28.jpg)
 
 [ツールバーおよびフィールド](toolbar-fields-subpattern.md) アクションとフィールドのみを持つコンテナーでこのフォーム パターンを使用します。
 
 フォーム: HcmPosition (WorkerAssignmentTabPage)
 
-![ツールバーおよびフィールド フォーム](./media/howtoselectaformpattern-29.jpg)
+![ツールバーおよびフィールド フォーム。](./media/howtoselectaformpattern-29.jpg)
 
 [分析コード エントリ コントロール](../financial/dimension-entry-control-subpattern.md) 分析コード エントリ コントロールのみを持つタブページにこのフォームパターンを使用します。
 
 フォーム: CustTable (TabFinancialDimensions)
 
-![分析コード エントリ コントロール フォーム](./media/howtoselectaformpattern-30.jpg)
+![分析コード エントリ コントロール フォーム。](./media/howtoselectaformpattern-30.jpg)
 
 [分析コード式ビルダー](../financial/dimension-expression-builder-subpattern.md) このフォーム パターンは、分析コード式ビルダー コントロールを含むコンテナーで使用します。
 

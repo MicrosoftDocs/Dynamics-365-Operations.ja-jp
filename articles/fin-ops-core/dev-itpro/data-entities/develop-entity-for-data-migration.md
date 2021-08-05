@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bc8b19357e482c35b05b066b2f02d87cec7a95
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7af29ec52d3989b57ce29b9bb6af2cc1f229bc07
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744831"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350975"
 ---
 # <a name="develop-entities-for-data-migration"></a>データ移行のエンティティの開発
 
@@ -91,7 +91,7 @@ ms.locfileid: "5744831"
 6. 名前を入力し、次に **追加** をクリックすると **データ** **エンティティ** ウィザードが開始されます。
 7. ウィザードの最初のページで、この練習の前の表を使用して、エンティティのプロパティのセットを指定します。 **次へ** をクリックします。
 
-    [![プロパティ ページの指定](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)
+    [![プロパティ ページの指定。](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)
 
 8. 次のページで、プライマリ データ ソースからフィールドを追加します。 フィールド名ごとに、パブリック契約が反映されていることを確認します (この練習では前の表を参照してください)。 フィールドのラベルをフィールド名として使用するには、**ラベルをフィールド名に変換** オプションを選択します。 エンティティに必須ではないフィールドのオプションをクリアします。
 9. ウィザードを完了し、エンティティとそのコンポーネントをプロジェクトに追加するには、**完了** をクリックします。
@@ -101,7 +101,7 @@ ms.locfileid: "5744831"
 
 - Visual Studio で、**データ エンティティ** ウィザードを完了すると、次のコンポーネントがプロジェクトに表示されます。
 
-    [![新規プロジェクト コンポーネント](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
+    [![新規プロジェクト コンポーネント。](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
 
 - データ エンティティを右クリックし、**テーブル ブラウザーを開く** を選択します。
 
@@ -119,7 +119,7 @@ ms.locfileid: "5744831"
 3. **データ管理** ワークスペースで、**エクスポート** をクリックしてデータの抽出を開始します。
 4. エンティティ名およびターゲット データ形式などのエクスポートの詳細を入力します。
 
-    [![エクスポートの詳細の入力](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png)
+    [![エクスポートの詳細の入力。](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png)
 
     XML のサンプル ファイル形式として、[ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209) ファイルを使用します。
 
@@ -127,7 +127,7 @@ ms.locfileid: "5744831"
 
 5. **フィルター** をクリックし、フィルター条件として **プロジェクト** を指定すると、限定されたデータのみがエクスポートされます。
 
-    [![プロジェクトによるフィルター処理](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
+    [![プロジェクトによるフィルター処理。](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
 
 6. **エクスポート** ダイアログ ボックスで、**OK** をクリックします。
 
@@ -189,7 +189,7 @@ ms.locfileid: "5744831"
 8. **データをターゲットにコピー** をクリックします。
 9. **実行するジョブ ID の選択** ダイアログ ボックスの **実行** フィールドで **基準** を選択して、**ユーザーによって選択された行** を **はい** に設定します。 **OK** をクリックします。
 
-    [![実行するジョブの選択](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
+    [![実行するジョブの選択。](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
 
 10. **ターゲット データ実行** ページで、**実行** をクリックします。
 11. 実行が完了したら、ページを更新して、最新のステージングの状態を確認します。

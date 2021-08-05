@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: de39f77857dffa22a10a1d7833d70730943938cf
-ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
+ms.openlocfilehash: 5bc09f2b407ab646a1c540c2c958c81cdde66cf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2021
-ms.locfileid: "6048856"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344411"
 ---
 # <a name="update-code-and-environments-for-commerce-projects"></a>Commerce プロジェクトのコードと環境の更新
 
@@ -33,7 +33,7 @@ ms.locfileid: "6048856"
 
 他の更新プログラムは、コードの更新プログラムです。 Microsoft Dynamics Lifecycle Services (LCS) の環境ページでは、適用された更新プログラムおよび適用が必要な更新プログラムを追跡します。 次の図は、79 の未処理 X++ ファイル、14 の未処理のバイナリ更新プログラムおよび 9 の未処理プラットフォーム バイナリ 更新プロセスを持つ環境を示しています。
 
-![LCS 環境ページ](./media/17-LCS-environment-page.png)
+![LCS 環境ページ。](./media/17-LCS-environment-page.png)
 
 プラットフォーム コードは、非常に低いレベルであり、Microsoft Dynamics 365 Commerce 機能はプラットフォームに実装されません。 したがって、スタンドアロン プラットフォームのバイナリ アップデート プログラムでは、コマース固有のコードを再テストすることは不要です。 プラットフォームに実装されている機能の例としては、データのインポート/エクスポート フレームワーク (DIXF) およびバッチ フレームワークです。
 
@@ -83,7 +83,7 @@ ms.locfileid: "6048856"
 
 分岐戦略がプロジェクト、チーム、またはその他の制約によって決まるのと同様に、プロジェクトは分岐を通じてどのように変更が反映するかについて柔軟に対応します。 次の図は、プロセスの例を表示しています。 ただし、この例は、いくつかのプロジェクトには単純過ぎ、また他のプロジェクトには複雑過ぎるかもしれません。 重要な点は、プロジェクトが計画を用意する必要があります。 チーム内の異なる人が異なる責任 (開発、配置、コード マージ、サインオフなど) を持ち、ロールの所有権を明確に定義する必要があります。
 
-![分岐図](./media/1-1-diagram.png)
+![分岐図。](./media/1-1-diagram.png)
 
 ### <a name="steps-13-obtain-and-apply-updates"></a>手順 1–3: 更新プログラムを取得および適用
 
@@ -99,7 +99,7 @@ X ++ コードの場合、開発者はメタデータ フォルダを同期し�
 
 チームの他のメンバーが、新しいファイル、コンフィギュレーションの変更、または新しい Retail SDK など、大きく新しい変更を実施した場合、新しいファイルを同期してビルドするだけでは不十分です。 開発者のマシンにインストールされているいくつかの Web アプリケーションは、コンパイルでは更新されませんので注意してください。 それらの Web アプリケーションは、展開する必要があります。 LCS パッケージ配置を使用して、MSBuild コマンド プロンプトで生成できるコマース パッケージを配置します。 より小規模なコード変更の際、増分変更がインストール先から削除されているなら、開発環境の同期を保つために新しいパッケージの展開は必要ありません。 
 
-![環境の変更履歴](./media/1-2-environment-change-history.png)
+![環境の変更履歴。](./media/1-2-environment-change-history.png)
 
 ### <a name="step-4-move-changes-from-the-dev-branch-to-the-main-branch"></a>手順 4: Dev ブランチから Main ブランチへの変更を移動
 
@@ -109,19 +109,19 @@ X ++ コードの場合、開発者はメタデータ フォルダを同期し�
 
 ビルド環境を使用して、Main ブランチのコードから正式に構築されたパッケージを作成します。
 
-![ビルド定義の Unified Operations](./media/1-3-build-definition-unified-operations.png)
+![ビルド定義の Unified Operations。](./media/1-3-build-definition-unified-operations.png)
 
 ビルドが完了したら、ビルドされたパッケージを見つけてダウンロードし、名前付け規則に従って名前を変更します。
 
-![コンポーネント エクスプ ローラー](./media/1-4-artifacts-explorer.png)
+![コンポーネント エクスプ ローラー。](./media/1-4-artifacts-explorer.png)
 
 次に、LCS アセット ライブラリにパッケージをアップロードします。
 
-![アセット ライブラリ](./media/1-5-asset-library.png)
+![資産ライブラリ。](./media/1-5-asset-library.png)
 
 最後に、テスト環境にパッケージを配置します。
 
-![環境の変更履歴 UAT](./media/1-6-environment-change-history-UAT.png)
+![環境の変更履歴 UAT。](./media/1-6-environment-change-history-UAT.png)
 
 ### <a name="step-43-deploy-packages-to-the-production-environment"></a>手順 4.3: パッケージを運用環境に展開
 
@@ -141,7 +141,7 @@ LCS パッケージ配置を使用して、常にバイナリ更新プログラ�
 
 Finance およびコマース カスタマイズ パッケージは、ビルド環境に配置することはできません。
 
-![環境の変更履歴のビルド](./media/1-7-environment-change-history-build.png)
+![環境の変更履歴のビルド。](./media/1-7-environment-change-history-build.png)
 
 ## <a name="compare-lcs-tile-counts"></a>LCS タイル カウントの比較
 
@@ -154,7 +154,7 @@ Finance およびコマース カスタマイズ パッケージは、ビルド�
 
 環境の更新が完了すると、利用可能な更新プログラムのタイル カウントが、開始時よりも大幅に少なくなります。
 
-![LCS 開発環境](./media/LCSDevEnvironmentpage.png)
+![LCS 開発環境。](./media/LCSDevEnvironmentpage.png)
 
 ## <a name="move-to-a-new-version"></a>新しいバージョンへの移動
 

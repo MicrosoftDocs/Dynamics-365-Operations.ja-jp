@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a93e7a7abcfbd1a28fc97d3042968661c953a524
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: f1eb192a0ab3cbd9cf81384b14d6e9a8db89d4b6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936932"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352652"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "5936932"
 
 次の図は、Dynamics 365 Commerce コンポーネントの概要を示します。
 
-<a href="/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerceコンポーネントの概要](./media/commerce-component-overview.jpg)</a>
+<a href="/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerceコンポーネントの概要。](./media/commerce-component-overview.jpg)</a>
 
 ## <a name="architecture-benefits"></a>アーキテクチャのメリット
 

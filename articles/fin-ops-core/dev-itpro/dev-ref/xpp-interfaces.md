@@ -3,20 +3,18 @@ title: X++ インターフェイス
 description: このトピックでは、X++ のインターフェイスについて説明します。
 author: RobinARH
 ms.date: 06/17/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150303
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2aff15ba1b965a3663aa292f9b2ab990f486a2f0
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: e601582623291433943dbc4d200a9782e4221907
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866316"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661352"
 ---
 # <a name="x-interfaces"></a>X++ インターフェイス
 

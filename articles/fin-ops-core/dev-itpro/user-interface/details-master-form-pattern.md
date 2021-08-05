@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 409be9381bce12b9baa50f6945d86a24af1d3686
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: d6125d9c02d5c0a5013077ea1947b3d358a383d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189916"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354361"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 
@@ -41,21 +41,21 @@ ms.locfileid: "6189916"
 
 #### <a name="details-view"></a>詳細ビュー
 
-[![詳細マスター ワイヤーフレーム: 詳細ビュー](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)
+[![詳細マスター ワイヤーフレーム: 詳細ビュー。](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)
 
 #### <a name="grid-view"></a>グリッド ビュー
 
-[![詳細マスター ワイヤーフレーム: グリッド ビュー](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)
+[![詳細マスター ワイヤーフレーム: グリッド ビュー。](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)
 
 ### <a name="details-master-with-standard-tabs"></a>標準タブによる詳細マスター
 
 #### <a name="details-view"></a>詳細ビュー
 
-[![標準タブ ワイヤーフレームによる詳細マスター: 詳細ビュー](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)
+[![標準タブ ワイヤーフレームによる詳細マスター: 詳細ビュー。](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)
 
 #### <a name="grid-view"></a>グリッド ビュー
 
-[![標準タブ ワイヤーフレームによる詳細マスター: グリッド ビュー](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)
+[![標準タブ ワイヤーフレームによる詳細マスター: グリッド ビュー。](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -203,15 +203,15 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="details-view-navigation-list-off"></a>詳細ビュー (ナビゲーション リスト オフ)
 
-[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オフ)](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)
+[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オフ)。](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)
 
 #### <a name="details-view-navigation-list-on"></a>詳細ビュー (ナビゲーション リスト オン)
 
-[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)
+[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オン)。](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)
 
 #### <a name="grid-view"></a>グリッド ビュー
 
-[![詳細マスター (基本) の例: グリッド ビュー](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)
+[![詳細マスター (基本) の例: グリッド ビュー。](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)
 
 ### <a name="details-master-with-standard-tabs"></a>標準タブによる詳細マスター
 
@@ -219,15 +219,15 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="details-view-navigation-list-off"></a>詳細ビュー (ナビゲーション リスト オフ)
 
-[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オフ)](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)
+[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オフ)。](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)
 
 #### <a name="details-view-navigation-list-on"></a>詳細ビュー (ナビゲーション リスト オン)
 
-[![標準タブの例による詳細マスター: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)
+[![標準タブの例による詳細マスター: 詳細ビュー (ナビゲーション リスト オン)。](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)
 
 #### <a name="grid-view"></a>グリッド ビュー
 
-[![標準タブ例による詳細マスター: グリッド ビュー](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)
+[![標準タブ例による詳細マスター: グリッド ビュー。](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -247,15 +247,15 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ##### <a name="details-master-basic"></a>詳細マスター (基本)
 
-[![AX 2012 の例: 詳細マスター (基本) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png) 
+[![AX 2012 の例: 詳細マスター (基本) 1。](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png) 
 
-[![AX 2012 の例: 詳細マスター (基本) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
+[![AX 2012 の例: 詳細マスター (基本) 2。](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
 
 ##### <a name="details-master-with-standard-tabs"></a>標準タブによる詳細マスター
 
-[![AX 2012 の例: 標準タブ 1 による詳細マスター](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
+[![AX 2012 の例: 標準タブ 1 による詳細マスター。](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
 
-[![AX 2012 の例: 標準タブ 2 による詳細マスター](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
+[![AX 2012 の例: 標準タブ 2 による詳細マスター。](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
 
 
 

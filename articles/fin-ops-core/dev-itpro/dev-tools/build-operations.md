@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 772fd4e8beee7043ad0952d58fbd5bc426c34fb8
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 802b4130d51796505bec6c535e702508d1493762
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865948"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345658"
 ---
 # <a name="build-operations"></a>ビルド操作
 
@@ -74,7 +74,7 @@ ms.locfileid: "5865948"
 
 3. 依存パッケージを最初に作成する場合は、**参照パッケージのビルド** を選択します。 構築する必要のある依存パッケージが一覧表示されます。
 
-    [![モデル ダイアログを構築](./media/buildmodelsdialog.png)](./media/buildmodelsdialog.png)
+    [![モデル ダイアログを構築。](./media/buildmodelsdialog.png)](./media/buildmodelsdialog.png)
 
 4. **オプション** タブで、ビルド プロセスのオプションを確認します。 次のオプションを使用できます。
 
@@ -94,11 +94,11 @@ ms.locfileid: "5865948"
 
 ビルド操作が完了した後、Microsoft Visual Studio で結果が表示されます。 Visual Studio の **出力** ウィンドウには、ビルドのステータスが表示されます。 **出力元の表示** フィールドを使用すると、標準的なビルド情報とビルド詳細を切り替えることができます。
 
-[![出力ウィンドウ](./media/27_devotoolsconcept.png)](./media/27_devotoolsconcept.png)
+[![出力ウィンドウ。](./media/27_devotoolsconcept.png)](./media/27_devotoolsconcept.png)
 
 Visual Studio の **エラー一覧** ウィンドウには、ビルド プロセス中に発生したビルド エラーおよび警告が表示されます。 ビルド エラーが表示された場合は、それらを修正してから再ビルドし、アプリケーション用の有効なアセンブリを作成する必要があります。 **エラー一覧** ウィンドウに表示される警告の多くは、アプリケーション開発のベスト プラクティスに適合するように、アプリケーションに加える必要がある変更を通知する推奨チェックです。 原則的には、アプリケーションのすべてのベスト プラクティス警告に対処する必要があります。
 
-[![エラー一覧](./media/28_devotoolsconcept.png)](./media/28_devotoolsconcept.png)
+[![エラー一覧。](./media/28_devotoolsconcept.png)](./media/28_devotoolsconcept.png)
 
 ほとんどのエラーや警告をダブルクリックして、問題の原因を表示することができます。 要素デザイナーまたはコード エディターが開き、エラーまたは警告の原因となっているプロパティ設定やコードを確認できます。 Visual Studio の **タスク一覧** ウィンドウには、コード内ので "TODO" とフラグが付けられたタスクが表示されます。 たとえば、次のコメントは、一部のオブジェクト参照がまだ検証を要求することを示します。
 
@@ -108,11 +108,11 @@ Visual Studio の **エラー一覧** ウィンドウには、ビルド プロ�
 
 コードが作成されるとき、"TODO" コメントが **タスク一覧** ウィンドウに表示されます。 **作業一覧** ウィンドウを表示するには、**表示** メニューで **作業一覧** をクリックします。
 
-[![作業リスト](./media/29_devotoolsconcept.png)](./media/29_devotoolsconcept.png)
+[![作業リスト。](./media/29_devotoolsconcept.png)](./media/29_devotoolsconcept.png)
 
 解決を容易にするために、エラーまたはタスクの影響を受ける要素を現在のプロジェクトまたは新しいプロジェクトに追加できます。 **エラー一覧** ウィンドウまたは **タスク一覧** ウィンドウで、修正するエラーまたはタスクの行を選択して右クリックし、**プロジェクトに追加** または **新しいプロジェクトに追加** をクリックします。 これにより、影響を受ける要素をアプリケーションで見つける手間を省くことができます。
 
-[![行の選択](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)
+[![行の選択。](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

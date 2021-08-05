@@ -3,21 +3,16 @@ title: ListMetadata タイプ
 description: リスト コントロールのメタデータ。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23ed7c917bed075023af9b9b4dd8271ff15ffcbf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 949059e85eb984e2d844ef38601c64b2b233aa66
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749249"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661406"
 ---
 # <a name="listmetadata-type"></a>ListMetadata タイプ
 
@@ -55,7 +50,7 @@ ms.locfileid: "5749249"
 * [名前](view-model-control-list-ilist-ilistmetadata.md#name)
 * [NonEntityProjection](view-model-control-list-ilist-ilistmetadata.md#nonentityprojection)
 * [注文](view-model-control-list-ilist-ilistmetadata.md#order)
-* [[タイプ](view-model-control-list-ilist-ilistmetadata.md#type)]
+* [タイプ](view-model-control-list-ilist-ilistmetadata.md#type)
 
 ### <a name="methods"></a>メソッド
 

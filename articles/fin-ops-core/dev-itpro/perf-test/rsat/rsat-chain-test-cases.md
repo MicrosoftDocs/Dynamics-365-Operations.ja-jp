@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 317b428aa1601a35ff383408906cca86434896b1
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 727325af81053ab87eb18b8c31a3c3dcaaebca72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865936"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346474"
 ---
 # <a name="copy-variables-to-chain-test-cases"></a>テスト ケースのチェーンへの変数のコピー
 
@@ -28,15 +28,15 @@ Regression Suite Automation Tool の主要な機能の１つとして、テス�
 
 タスク レコーダーでテストを記録しながら変数の値を保存するには、次の図に示すように、フィールドを右クリックして **タスク レコーダー > コピー** を選択します。 コピーすると、変数は記録ファイルに保存されます。 この変数は、後続のテストで使用できます。
 
-:::image type="content" source="media/task-recorder-copy.png" alt-text="タスク レコーダーのメニュー項目のコピー":::
+:::image type="content" source="media/task-recorder-copy.png" alt-text="タスク レコーダーのメニュー項目をコピーします。":::
 
 RSAT が Excel パラメーター ファイルを生成する場合、保存された変数は **一般** タブの **保存された変数** テーブルに表示されます。これらの変数は、**TestCaseSteps** タブのテスト ケース ステップのコンテキストにも表示されます。次の画像内では、テスト ケースの記録中に発注書 ID の値がコピーされています (手順 5)。 この値は **{{PurchCreateOrder_PurchTable_PurchId_86_Copy}}** という名前の変数に格納されます 。
 
-![Excel に保存された変数](media/saved-variables.png)
+![Excel に保存された変数。](media/saved-variables.png)
 
 これらの変数をテスト再生中に再利用するには、次に示すように、変数名をコピーして、別のテスト (または同じテスト) のデータ ファイルでパラメーター値の代わりに使用します。
 
-![Excel での変数の再利用](media/reuse-variables.png)
+![Excel での変数の再利用。](media/reuse-variables.png)
 
 変数は、定義されている同じテストケースで使用できます。また、同じテストの実行中にテスト間で渡すこともできます。
 
@@ -46,7 +46,7 @@ RSAT が Excel パラメーター ファイルを生成する場合、保存さ�
 
 次の図では、2つの異なる変数が式で使用されています。
 
-![Excelでの式の作成](media/formulas.png)
+![Excel での式の作成。](media/formulas.png)
 
 RSAT バージョン 1.220 の時点では、**ROUND**、**CONCAT**、**UPPER** などの Excel 関数を使用して、RAST 変数を使用した式を作成することもできます。 この機能は、Excel 式評価機能を使用して実装されるため、Excel でサポートされている関数は RSAT でサポートされています。
 
@@ -68,7 +68,7 @@ RSAT バージョン 1.220 の時点では、**ROUND**、**CONCAT**、**UPPER** 
 
 RSAT では、テストの実行中にこれらの式が評価されるため、式の前に単一引用符 **\'** を付ける必要があります。これにより、Excel で式が不完全に計算されるのを防ぐことができます。 この図には、例が示されています。
 
-![Excel 2 での式の作成](media/formulas-2.png)
+![Excel 2 での式の作成。](media/formulas-2.png)
 
 ## <a name="use-variables-in-message-validation"></a>メッセージ検証での変数の使用
 
@@ -76,7 +76,7 @@ RSAT では、テストの実行中にこれらの式が評価されるため、
 
 保存済 (コピー済) 変数は、同じテスト ケース内で、または同じテスト スイート内の複数のテスト ケース間で使用できます。
 
-![変数を含むメッセージ](media/rsat-message-with-variable.png)
+![変数を含むメッセージ。](media/rsat-message-with-variable.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

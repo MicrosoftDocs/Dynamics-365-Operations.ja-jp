@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 59c343b7e23d053d0b0411cd86a78063ced8c8cb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 426fa55aa150c9475cc0b058c178e90a67a013eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354669"
 ---
 # <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジットカードの処理
 
@@ -77,7 +77,7 @@ ms.locfileid: "5936926"
 2. 該当のレジを選択し、**編集** を選択します。
 3. **全般** クイックタブの **カードが存在しない処理** フィールドで、**小売サーバーを使用する** を選択します。 (既定では、このフィールドは **ハードウェア ステーションを使用する** に設定されています。)
 
-    ![カードが存在しない処理フィールド](media/PAYMENTS/CNP-POS.png)
+    ![カードが存在しない処理フィールド。](media/PAYMENTS/CNP-POS.png)
 
 4. **保存** を選択します。
 5. 変更を保存した後で、**1090** の配送スケジュールを実行して変更を POS に同期します。

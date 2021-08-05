@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: 1d38f45af1d01d467d2d54e0547bcdf7bb888122
-ms.sourcegitcommit: f11789159294b99900f502432ab3d2c7d474b73b
+ms.openlocfilehash: d472a3fd0c7234447146e5e704baa9c0415267c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "5854957"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344858"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 
@@ -178,7 +178,7 @@ Kibana から、Microsoft は **管理** タブでインデックス パター�
 
 Microsoft は、既定のパターンとしてランタイム -\* インデックス パターンを設定しました。 **管理** タブのインデックス パターンを確認するときは、アスタリスク (\*) をクリックします。 インデックス パターンが、**Discover** タブに表示されます。
 
-[![ランタイム インデックス パターン](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
+[![ランタイム インデックス パターン。](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
 
 Microsoft は Kibana を Logstash と同じ方法でサービスとして実行し、Kibana が OS の起動時に起動されるようにしました。 Logstash とは異なり、kibana.bat は、コンフィギュレーション ファイルのパスは必要ありません。 したがって、C:\\ELK\\Kibana\\6.2.4\\bin\\kibana.bat を参照する NSSM サービスをインストールできます。
 
@@ -190,12 +190,12 @@ Microsoft は Kibana を Logstash と同じ方法でサービスとして実行�
 - **低速データベース クエリの検索:** 検索フィールドに **低速** と入力して、イベント データのどこかに「低速」という単語が含まれているイベントを検索します。 より正確にするには、**AosDatabaseSlowQuery** のタスク名を持つイベントを検索し、検索フィールドに **TaskName:AosDatabaseSlowQuery** と入力します。
 - **最新の例外を見つける:** **例外** を検索フィールドに入力して、例外をスローしたイベント、または例外を処理してログに記録したイベントを探します。 Kibana の右上隅で、検索を制限する必要がある期間を選択します。 そこで設定したタイム フレームは、タブの間で保持されます。 したがって、**視覚化** タブ上のデータは選択されているタイム フレームに反映されます。
 
-    [![検索の時間枠](./media/time-visualize.png)](./media/time-visualize.png) 
+    [![検索の時間枠。](./media/time-visualize.png)](./media/time-visualize.png) 
 
 - **AOS ノードからイベントを検索:** ノードからすべてのイベントを検索するために、検索フィールドに **host:AOS1** と入力します。
 - **他のイベントと最も近い、特定のイベントを見つける:** 興味のあるイベントが見つかったら、そのイベントのヘッダーの横にある **関連するドキュメントを表示します** をクリックして、同時に発生したイベントを見つけます。 同時に発生した、異なる Application Object Server (AOS) ノードからのイベントが表示されている場合、追加のフィルターを追加して、必要なノードからのイベントのみを表示できます。
 
-    [![関連するドキュメントを表示します](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
+    [![関連するドキュメントを表示します。](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
 
 #### <a name="thirty-day-data-retention"></a>30 日間のデータの保持
 古いデータからハード ディスクを保持するために、Microsoft は Curator v5.5 を使用して 30 日以上経過したインデックスをクリーンアップしました。

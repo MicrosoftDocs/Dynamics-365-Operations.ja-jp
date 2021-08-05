@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 857d93d0ed9ee11615269d314ca4ed54a6ce4410
-ms.sourcegitcommit: d84329f903d359ae042e8c0a4594982a7e06756f
+ms.openlocfilehash: d6395b55469434bddfeca840c93c32588bd1af8a
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5984264"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6335645"
 ---
 # <a name="pos-extension-overview"></a>POS 拡張機能の概要
 

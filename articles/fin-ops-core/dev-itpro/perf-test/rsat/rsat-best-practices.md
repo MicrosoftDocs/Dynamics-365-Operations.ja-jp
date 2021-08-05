@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91bf2922df7fb063b1bf217551404589ac0eb313
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 88c6f79eeed710cc421efd0ac0864ec4784ce9e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866348"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356813"
 ---
 # <a name="regression-suite-automation-tool-best-practices"></a>Regression Suite Automation Tool ベスト プラクティス
 
@@ -43,7 +43,7 @@ RSAT のタスク記録を作成する場合は、次の方法を使用します
 2. ツールの新しいバージョンをインストールする前に、旧バージョンを終了して、アンインストールすることをお勧めします。
 3. ツールの新しいバージョンをインストールするときに、 **すべて** のテストの実行ファイルを再生成します。
 
-    ![実行ファイル メニュー項目を生成する](media/generate-execution-files.png)
+    ![実行ファイル メニュー項目を生成します。](media/generate-execution-files.png)
 
     パラメータ ファイルの新しい形式で使用できる新しい機能を利用する場合を除いて、 Microsoft Excel パラメータ ファイルを再生成する必要はありません。
 
@@ -51,7 +51,7 @@ RSAT のタスク記録を作成する場合は、次の方法を使用します
 5. Excel の既定値は、タスクの記録から取得されます。 保管分析コードや追跡用分析コードなどの **参照グループ** コントロールでは、たとえば、 **SiteWH** の代わりに **2** のように、値の代わりにルックアップのキーを格納します。 Excelでこれらのフィールドを実際の値で更新して、テストの堅牢性と変更に対する耐性を高めることをお勧めします。
 6. RSAT を実行する前に、環境の **言語** および **日付、時刻、数字の形式** の設定に対して同じロケールを設定することをお勧めします。 これらの値に不整合があると、検証エラーが発生する可能性があります。
 
-    ![ロケール、日付、時刻、数字の形式を設定する](media/locale.png)
+    ![ロケール、日付、時刻、数字の形式を設定します。](media/locale.png)
 
 ## <a name="manage-local-recording-files"></a>ローカル記録ファイルの管理
 
@@ -59,17 +59,17 @@ RSATは、Azure DevOpsを使用して、テスト記録ファイル (タスク�
 
 バージョン 1.200.42264.6 以降では、ローカルの記録ファイルの管理が容易になります。 ビジネス プロセス モデラー (BPM) または Azure DevOps を介さずに、タスク レコーダーで変更を行ってから RSAT を使用して変更をテストできます。 タスク レコーダーを使用する場合は、記録の作成または変更を終えた後で、開発者の記録として直接ローカル ディスクに保存することができます。
 
-![開発者の記録としてタスク記録を保存する](media/rsat-save-as-developer-recording.png)
+![開発者の記録としてタスク記録を保存する。](media/rsat-save-as-developer-recording.png)
 
 テスト ケースに関連付けられている作業ディレクトリの下に記録ファイルを配置します。 たとえば、構成された作業ディレクトリが `C:\Users\<username>\Documents\RSAT` である場合、テスト ケース 1234 の記録ファイルを `C:\Users\<username>\Documents\RSAT\1234\attachments` の下に配置します。 開発者の記録ファイルには、**Recording.xml** という名前を付ける必要があります。 または、記録ファイル **-テスト ケース タイトル-.xml** という名前を付けることもできます。**-テスト ケース タイトル-** は Azure DevOps のテスト ケースのタイトルです。
 
 次の図は、作業ディレクトリのフォルダー構造の例を示しています。 フォルダー記号をクリックして、RSAT から直接ディレクトリを開くことができます。
 
-![作業ディレクトリの例](media/rsat-working-directory-example.png)
+![作業ディレクトリの例。](media/rsat-working-directory-example.png)
 
 各テスト ケースには独自のフォルダーがあり、テスト ケースの ID に基づいた名前が付けられています。 テスト ケースの添付ファイル (記録ファイル、自動化ファイル、および Excel パラメーター ファイル) は、添付ファイル フォルダーにダウンロードされます。 次に例を示します。
 
-![テスト ケースの添付ファイル](media/rsat-test-case-attachments.png)
+![テスト ケースの添付ファイル。](media/rsat-test-case-attachments.png)
 
 GeneratorLogs ディレクトリには、ログ ファイルが含まれています。 ユーザーが変更できるファイルは含まれていません。 RSAT サポートからログ ファイルの提供を明示的に求められない限り、このディレクトリは無視できます。
 
@@ -88,11 +88,11 @@ GeneratorLogs ディレクトリには、ログ ファイルが含まれてい�
 
 Web クライアントで、タスク レコーダー ウィンドウを開き、**記録の編集** オプションを使用して記録の編集を開始します。
 
-![記録の編集オプション](media/edit-recording.png)
+![記録の編集オプション。](media/edit-recording.png)
 
 編集が終了したら、クライアントで再生し、すべての手順が正常に動作することを確認します。 再生が必要です。
 
-![記録の再生オプション](media/playback-recording.png)
+![記録の再生オプション。](media/playback-recording.png)
 
 編集した記録を再生し終わったら、保存します。 これで、RSAT で使用できるようになります。
 
@@ -101,11 +101,11 @@ Web クライアントで、タスク レコーダー ウィンドウを開き�
 Azure DevOps でテスト スイートを作成するとき、テスト ケースとその添付ファイルが重複することがよくあります。 コピーしたテスト ケースに既存の Excel パラメーター ファイルが添付されている場合、RSAT では、Excel ファイルを手動で編集することなく、それを実行することはできません。 Excel パラメーター ファイルの **テスト ケース ID** は、Azure DevOps テスト ケース ID と一致している必要があります。
 コピーされたすべての Excel パラメーター ファイルを編集する必要があります。 次の図では、Excel ファイルが Azure DevOps のテスト ケース番号 53 に関連付けられています。
 
-![コピーされたテスト ケースの編集](media/copy-test-cases.png)
+![コピーされたテスト ケースの編集。](media/copy-test-cases.png)
 
 RSAT バージョン 1.210 では、このプロセスが簡単になりました。 不一致のすべての事例を自動的に修正するには、グリッドで目的のテスト ケースを選択し、**新規** メニューで **テスト ケース ID の不一致を解決** を選択します。
 
-![不一致の解決](media/resolve-test-case-id-mismatch.png)
+![不一致の解決。](media/resolve-test-case-id-mismatch.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

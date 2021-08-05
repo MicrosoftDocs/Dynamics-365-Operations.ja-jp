@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac00cef84f94a582e1089c68203a600365749db0
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 25388c2a9b6dbb0134a16825542da1fa8dbfe53c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866067"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348693"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 
@@ -61,9 +61,9 @@ ms.locfileid: "5866067"
 
 選択したモデルが依存するすべてのパッケージのグラフが生成されます。 
 
-![ビューの相互関係](./media/viewdependencies2.png) 
+![依存関係を表示します。](./media/viewdependencies2.png) 
 
-![ディレクトリ依存関係](./media/directorydependencies.png)
+![ディレクトリ依存関係。](./media/directorydependencies.png)
 
 ## <a name="deleting-a-model"></a>モデルの削除
 開発またはテスト環境では、次の手順に従ってモデルを削除します。

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 28
 ms.dyn365.ops.version: 2019-07-31
-ms.openlocfilehash: 289a4185da6bd51717697628f85c275ac6c3ff3d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce731861e70a518d511fbd2fd0cc9bd4cb005982
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745363"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344868"
 ---
 # <a name="business-events-and-azure-event-hubs"></a>ビジネス イベント と Azure イベントのハブ
 
@@ -27,27 +27,27 @@ ms.locfileid: "5745363"
 
 1. Azure ポータルで、 Active Directory アプリケーションの登録を行います。 アプリケーション ID をメモします。
 
-    ![アプリケーション (クライアント) ID の値](../../media/BE_EH_aad.PNG)
+    ![アプリケーション (クライアント) ID の値。](../../media/BE_EH_aad.PNG)
 
 2. アプリケーションに Azure Key Vault アプリケーション プログラミング インタフェース (API) の許可を付与します。
 
-    ![アプリケーションに Azure Key Vault API の許可を付与します。](../../media/BE_EH_api.png)
+    ![Azure Key Vault API にアプリのアクセス許可を付与する。](../../media/BE_EH_api.png)
 
 3. アプリケーションの登録で、アプリケーションの秘密を作成します。 値をメモします。
 
-    ![アプリケーションの秘密の作成](../../media/BE_EH_secret.jpg)
+    ![アプリケーションのシークレットの作成。](../../media/BE_EH_secret.jpg)
 
 4. key vaultにて、新規アプリの登録に許可を付与します。
 
-    ![アプリケーションにアプリの登録の許可を付与する](../../media/BE_EH_permission.jpg)
+    ![アプリ登録に Key Vault のアクセス許可を付与する。](../../media/BE_EH_permission.jpg)
 
 5. key vault にて、新たな秘密を作成します。 この秘密に格納される値は、ご利用のイベントハブへの接続文字列である必要があります。 値をメモします。
 
-    ![接続文字列](../../media/BE_EH_connectionstring.jpg)
+    ![接続文字列。](../../media/BE_EH_connectionstring.jpg)
 
 6. イベント ハブのエンドポイント構成を作成します。 **システム管理 \> 設定 \> ビジネス イベント \> ビジネス イベント カタログ** へと移動し、 **エンドポイント** タブにて、 **新規** を選択して **新規エンドポイントの構成** ウィザードを起動します。
 
-    ![新規エンドポイントウィザードの構成をする](../../media/BE_EH_endpointconfig.jpg)
+    ![新規エンドポイント ウィザードを構成します。](../../media/BE_EH_endpointconfig.jpg)
 
 7. **エンドポイントの種類** フィールドで、 **Azure イベント ハブ** を選択します。
 8. **次へ** を選択します。

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 38ff72acdefb8898624dc014d9d4cd1b02ef8676
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 05cf1f0677244b5de93deac0291cd674018f6623
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111738"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360320"
 ---
 # <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
 
@@ -74,7 +74,7 @@ ms.locfileid: "6111738"
 ## <a name="properties"></a>プロパティ
 **セグメント化エントリ** コントロールのカスタム プロパティは、**コントローラー** の下にあります。 次のスクリーン ショットは、例を示します。 
 
-![セグメント化されたエントリ コントロールのカスタム プロパティ](./media/111.png)
+![セグメント化されたエントリ コントロールのカスタム プロパティ。](./media/111.png)
 
 すべてのプロパティがすべての **コントローラー** クラス タイプに適用されるわけではありません。 選択したコントローラー クラスに適用されないプロパティは無効になります。 次のテーブルは、それぞれのプロパティに関する詳細を示します。
 
@@ -110,7 +110,7 @@ ms.locfileid: "6111738"
 
 **SegmentedEntry** は任意のコントロールの横にあるタイプとして表示され、**SegmentedEntryControl** と変更します。 
 
-[![SegmentedEntry コントロール タイプ](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
+[![SegmentedEntry コントロール タイプ。](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
@@ -119,11 +119,11 @@ ms.locfileid: "6111738"
 > [!NOTE] 
 > コントロールを参照するテストおよび他のコードが破損しないようにするには、新しいコントロールが古いコントロールと同じ名前であることを確認します。 新しいコントロールを追加するには、**Segmented Entry** コントロールを含む親コントロールを右クリックし、**New** &gt; **SegmentedEntryControl** を選択します。 
 
-[![新しい SegmentedEntryControl](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
+[![新しい SegmentedEntryControl。](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
 
 次のスクリーンショットは、新しいコントロールの外観を示しています。 
 
-[![リストの新しいコントロール](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
+[![リストの新しいコントロール。](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
 
 ### <a name="step-2"></a>ステップ２
 
@@ -548,9 +548,9 @@ ledgerDimensionDefaultAccountController = LedgerDimensionDefaultAccountControlle
 -   **参照フィールド**
 -   **コントローラー クラス**
 
-[![コントローラー クラスの設定](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
+[![コントローラー クラスを設定します。](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
 
-[![参照フィールドの設定](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
+[![参照フィールドを設定します。](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
 
 > [!NOTE]
 > コントロールが機能するには、コントローラクラスが必要です。 したがって、**Controller Class** プロパティが設定されていないと、ランタイム エラーがスローされます。
@@ -604,7 +604,7 @@ ledgerDimensionDefaultAccountController.parmFilterLedgerPostingType(LedgerPostin
 
 これは、コントロールの **転記タイプ** プロパティです。 **PostingType** プロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判別できます。 
 
-[![転記タイプ プロパティ](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
+[![転記タイプ プロパティ。](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
 
 これらのプロパティは、コントロール インスタンスで **parm** メソッドを介してコードで設定することもできます。 次に例を示します。
 
@@ -618,7 +618,7 @@ ClearingAccount.parmPostingType(LedgerPostingType::VendSettlement);
 
 元帳分析コードのデータ ソース フィールドで **resolveReference()** をオーバーライドします。 
 
-[![resolveReference メソッド](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
+[![resolveReference メソッド。](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 

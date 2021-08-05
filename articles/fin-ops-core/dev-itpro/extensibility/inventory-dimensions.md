@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 6b94610aab3cd88403f1467b902c9031724b7c09
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 10a8286ffba37d853ffb4494419ae5656396575f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866090"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349146"
 ---
 # <a name="add-new-inventory-dimensions-through-extension"></a>拡張機能を通じた新しい在庫分析コードの追加
 
@@ -61,7 +61,7 @@ VAR により、物理的データ モデルと論理的実装が結合されま
 ## <a name="details"></a>細目
 ソリューションの前半はシンプルです。 新しいクラス階層が導入されています。 それぞれの新しい分析コードは、InventProductDimension または InventTrackingDimension のいずれかから派生する新しいクラスに実装する必要があります。 現在、保管分析コードのサポートがされていません。 これを使用すると、ISV は InventDim テーブルのロジックを変更せずに新しい分析コードを導入することができます。 
 
-![InventDimensionClassHierarchy](media/InventDimensions1.png)
+![InventDimensionClassHierarchy.](media/InventDimensions1.png)
 
 厳密に型指定された新しい分析コードを参照するために、ISV では InventDim テーブルにテーブル拡張クラスが導入されました。 スタイル、色、サイズの拡張クラスをテンプレートとして使用できます。
  
@@ -123,7 +123,7 @@ VAR の職務は、特定の顧客の InventDim の分析コード フィール�
 - InventDim の ProductDimensions または TrackingDimensions フィールド グループおよび分析コードのタイプに応じていくつかの他のテーブルを拡張します。
 - 関係およびインデックスを必要に応じて、InventDim で拡張します。
 
-![InventDimensionISVVARExtensions](media/InventDimensions4.png)
+![InventDimensionISVVARExtensions.](media/InventDimensions4.png)
 
 ## <a name="known-issues"></a>既知の問題
 
@@ -146,7 +146,7 @@ VAR の職務は、特定の顧客の InventDim の分析コード フィール�
 
 必要な場合は、問題を GitHub に直接記録し、追加の補充を提供するサンプル アプリケーションへ自由に投稿してください。
  
-![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
+![InventDimensionFlavorScreenshot.](media/InventDimensions5.jpg)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

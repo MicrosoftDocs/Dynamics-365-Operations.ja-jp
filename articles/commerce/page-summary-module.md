@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f1adae7169b210f21fe8b95e2c35b6051d4edd6d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ba4afde67c7871ddefeb7eb9dd9360aaadd2ad8e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022852"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352976"
 ---
 # <a name="page-summary-modules"></a>ページ集計モジュール
 
@@ -56,11 +56,11 @@ Dynamics 365 Commerce モジュール ライブラリには、ページ集計、
 1. **HTML ヘッド** スロットで省略 (**...**) を選択し、**モジュールの追加** を選択します。
 1. **モジュールの追加** ダイアログ ボックスで、**ページ集計モジュール** (または、**リスト ページ集計** などの、別のページ集計モジュール) を選択し、**OK** を選択します。 テンプレートを使用するページ タイプ用の適切なページ集計モジュールが追加されていることを確認してください。
 
-    ![新しいモジュールの追加](media/page-summary-1.png)
+    ![新しいモジュールの追加。](media/page-summary-1.png)
 
 集計モジュールを追加した後、次の図の例のようになります。 これでモジュールが構成され、テンプレートを保存および公開できます。
 
-![追加されたページ集計モジュール](media/page-summary-2.png)
+![追加されたページ集計モジュール。](media/page-summary-2.png)
 
 > [!NOTE]
 > テンプレートで既定値を設定できますが、これらの値はテンプレートを使用するページ上で上書きできます。

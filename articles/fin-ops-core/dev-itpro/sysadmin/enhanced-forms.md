@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: a19373ff546982b59d23bfe65ed4074edf070602
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 275453815a73d3b71f4816686966afa89c4f1769
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359729"
 ---
 # <a name="enhanced-batch-forms"></a>拡張バッチ フォーム
 
@@ -36,13 +36,13 @@ ms.locfileid: "5745983"
 
     拡張フォームに関する通知を受信します。 通知には、[アクション] ウィンドウの **拡張フォームに切り替える** ボタンの位置が示されています。
 
-    ![[拡張フォームに切り替える] ボタン](./media/batch-popup.png)
+    ![拡張フォームに切り替えるボタン。](./media/batch-popup.png)
 
 2. **拡張フォームに切り替える** を選択します。
 
 通常のフォームに戻るには、拡張フォームのアクション ペインで **レガシー フォームに切り替える** を選択します。
 
-![[レガシー フォームに切り替える] ボタン](./media/enhanced-form.png)
+![レガシー フォームに切り替えるボタン。](./media/enhanced-form.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

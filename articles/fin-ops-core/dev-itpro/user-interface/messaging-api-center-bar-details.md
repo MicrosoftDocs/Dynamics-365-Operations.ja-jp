@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a37a4792ed44420a5cf380c4343933385e3aa83b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 04608bdb85e4900c63d2f34d27551f6b7b4fc060
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749602"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343972"
 ---
 # <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 
@@ -41,14 +41,14 @@ ms.locfileid: "5749602"
 
 次の図は、ページ アクションに対応する **情報**、**警告**/**checkfailed**、**エラー** メッセージ バー、または **info()**、**warning()**、**error()** からの同期作成メッセージを示しています。 
 
-[![情報、警告/checkfailed、エラー メッセージを示すスクリーン ショット](./media/cli-legacyMessages.png)](./media/cli-legacyMessages.png)
+[![情報、警告/checkfailed、エラー メッセージを示すスクリーン ショット。](./media/cli-legacyMessages.png)](./media/cli-legacyMessages.png)
 
 > [!NOTE]
 > スライダー ダイアログからこれらの API が呼び出されても、メッセージが表示される前にそのスライダー ダイアログが閉じられると、メッセージはスライダー ダイアログの親ページのメッセージ バーに表示されます。 メッセージが表示される前にそのスライダー ダイアログ ボックスが閉じられ、親ページが存在しない場合、メッセージは、アクション センターにルーティングされます。 メッセージング API は必ずメッセージを表示します。 適切なホスト ページが見つからない場合は、メッセージがアクション センターに送信されます。
 
 **info()**、**warning()**/**checkfailed()**、または **error()** が非同期プロセス (たとえば、バッチ) から呼び出された場合、考慮するフォーム コンテキストはなく、メッセージはアクション センターに送信されます。 (アクション センターを開くには、ナビゲーションバーの **メッセージを表示** ボタンをクリックします。) 次の図は、アクション センターの各種メッセージの例を示しています。 
 
-[![アクション センターのメッセージ](./media/2_api.png)](./media/2_api.png)
+[![アクション センターのメッセージ。](./media/2_api.png)](./media/2_api.png)
 
 > [!NOTE]
 > **Box()** API を使用して、ユーザーに中断エラーを表します。                                                               
@@ -56,16 +56,16 @@ ms.locfileid: "5749602"
 ## <a name="backwards-compatibility-of-setprefix"></a>SetPrefix() の下位互換性 
 Finance and Operations アプリは、下位互換性のために **SetPrefix()** API もサポートしています。 ただし、メッセージング システムでは、**SetPrefix()** の結果は、積極的にユーザーを中断しません; 代わりに、結果が (以前のバージョンと同様に) 収集および保存され、メッセージ バーまたはアクション センターの通知がユーザーに表示されます。 この通知は、関連するタスクが完了し、ユーザーが確認する必要のあるメッセージがある可能性があることを示します。 「結果の通知」メッセージは、実際にはタスクによる **SetPrefix()** の最初の呼び出しを使ってメッセージをフレーム化します。 この動作は、最初の呼び出しが結果の「タイトル」であった以前のバージョンの動作に類似しています。 この例では、「転記の結果」が **SetPrefix()** への最初の呼び出しのアプリケーションから取得されます。
 
-[![SetPrefix の例](./media/3_api.png)](./media/3_api.png) 
+[![SetPrefix の例。](./media/3_api.png)](./media/3_api.png) 
 
 ユーザーは、**メッセージの詳細** をクリックして、新しい **メッセージの詳細** ウィンドウを開くことができます。 
 
-[![メッセージの詳細ウィンドウ](./media/4_api.png)](./media/4_api.png)
+[![メッセージの詳細ウィンドウ。](./media/4_api.png)](./media/4_api.png)
 
 ## <a name="message"></a>Message() 
 **メッセージ** API には、いくつかの便利なメッセージング機能があります。 **Message ()** API を使用すると、メッセージを明示的に追加および削除できるため、メッセージのライフサイクルをより詳細に制御できます。 この API は、保存境界を超えたとき以外に検証メッセージを削除する必要がある場合や、データ検証に必ずしも関連しないユーザー エクスペリエンスの側面に関する情報メッセージを表示する場合に役立ちます。 この例では、現在のレコードが表示されるときにメッセージは表示されます。
 
-![メッセージの例::情報メッセージに使用される API を追加する](./media/cli-legacyInfo.png)
+![メッセージの例::情報メッセージに使用される API を追加します。](./media/cli-legacyInfo.png)
 
 ```xpp
 messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
@@ -81,7 +81,7 @@ Message::Remove(messageId);
 
 この例では、システム管理者に特定の必要なバッチ ジョブが実行されていないことを示すメッセージがトリガーされ、**バッチ ジョブ** ページに直接移動するアクションが表示されます。  
 
-![メッセージの例: アクションをメッセージに埋め込むために使用する AddAction API](./media/cli-messageAddAction.png)
+![メッセージの例: アクションをメッセージに埋め込むために使用する AddAction API。](./media/cli-messageAddAction.png)
 
 ```xpp
 MenuItemMessageAction actionData = new MenuItemMessageAction();
@@ -104,7 +104,7 @@ int64 messageId = Message::AddAction(MessageSeverity::Informational, "The Test b
 
 この例では、ユーザーが Excel へのエクスポートを完了した後に通知が発生します。 このメッセージは、エクスポートされたファイルへのリンクが使用できなくなるまで、アクション センターで今後 48 時間使用できるようになります。   
 
-![SystemNotificationsManager APIを使用して送信されたメッセージの例](./media/cli-systemNotification.png)
+![SystemNotificationsManager API を使用して送信されたメッセージの例。](./media/cli-systemNotification.png)
 
 ```xpp
 // Set up the notification 

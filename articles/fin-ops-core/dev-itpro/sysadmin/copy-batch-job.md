@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: fc952d18cea18119d64ac931ed7159834b04c6fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 96533bbcc22cf5e09a6b9630145870c37e50357d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746015"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359735"
 ---
 # <a name="copy-a-batch-job"></a>バッチ ジョブのコピー
 
@@ -38,11 +38,11 @@ ms.locfileid: "5746015"
 1.  **システム管理** > **照会** > **バッチ ジョブ** をクリックします。
 2.  コピーするジョブを選択し、アクション ペインで **バッチ ジョブ** > **バッチ ジョブのコピー** をクリックします。
 
-![バッチ関数のコピー](./media/copy-batch-function.png) 
+![バッチ関数をコピーします。](./media/copy-batch-function.png) 
  
 4.  変更を入力または追加します。 **タスクの表示** を **はい** に設定した場合、**OK** をクリックすると、コピーしたジョブの **バッチ タスク** ページに直接移動します。
 
-![バッチ フォームのコピー](./media/copy-batch-form.png) 
+![バッチ フォームをコピーします。](./media/copy-batch-form.png) 
 
 >[!IMPORTANT] 
 >コピーされたバッチ ジョブは、**保留** 状態で作成されるため、有効にする必要があります。 **実行者** ユーザーを設定することもできます。設定すると、そのユーザーは、システム管理者でなくてもジョブを実行する権限が付与されます。

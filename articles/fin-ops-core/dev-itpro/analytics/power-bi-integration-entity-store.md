@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 11a85cae0bf0ef7a3398e5ba5ee4da653c744202
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e021f6147a647dd67d7575d4f7e6142ac0533aa7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893063"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347862"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
@@ -33,7 +33,7 @@ ms.locfileid: "5893063"
 ## <a name="power-bi-directquery-mode"></a>Power BI DirectQuery モード
 Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エンティティ (集計データのエンティティと、詳細または通常のデータ エンティティの両方) で公開される OData エンドポイントを使用して Power BI レポートを作成することができました。 この方法は引き続き サポートされていますが、エンティティ格納でもパワー ユーザーは Power BI DirectQuery レポートを作成できます。
 
-[![DirectQuery モード](./media/entity-store-architecture-1024x587.jpg)](./media/entity-store-architecture.jpg)
+[![DirectQuery モード。](./media/entity-store-architecture-1024x587.jpg)](./media/entity-store-architecture.jpg)
 
 前の図に示すように、DirectQuery はエンティティ格納で直接レポートを実行するレポート モードです。 このレポート モードでは、データは Power BI のキャッシュにステージングされません。 このモードでは、2 つの直接的な利点があります。
 
@@ -45,7 +45,7 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 ## <a name="stage-aggregate-measurements-in-entity-store"></a>エンティティ格納における集計測定のステージング
 集計測定は分析シナリオのためにモデル化されたスター スキーマです。 2016 年 2 月のリリースでは、リアルタイムなメモリ内集計の測定が有効になりました。 リアルタイムの集計測定を使用することにより、データのリアルタイム操作に対応する埋め込みチャートおよび主要業績評価指標 (KPI) を有効にすることができます。 詳細については、 [Analysis Services キューブから集計モデルへの移行](../migration-upgrade/in-memory-real-time-aggregate-models.md) を参照してください。 リアルタイム集計測定は、インメモリの非クラスター化縦棒ストア インデックス (NCCI) の技術を活用します。 リアルタイムの集計の測定で作成されたビジュアルおよび集計計算に数秒以内のトランザクションが反映されます。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定を有効にしました。 エンティティ ストアで実施された集計測定は、Power BI を使用して大量のデータを調べる必要がある、ほぼリアルタイムの分析シナリオで使用できます。 開発者として、 [集計データのモデリング](model-aggregate-data.md) でリアルタイム分析の集計測定をモデル化する方法について確認することができます。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定をモデル化する機能も追加しました。 Microsoft Visual Studio で、**StagedEntityStore** を集計の測定の用途プロパティとして指定します。 この新しいプロパティは、2016 年 5 月で追加されました。 以前は、**InMemoryRealTime** は用途プロパティとして使用できました。
 
-![Visual Studio にある新しい StagedEntityStore の使用プロパティ](media/new-usage-property-in-VS.png)
+![Visual Studio にある新しい StagedEntityStore の使用プロパティ。](media/new-usage-property-in-VS.png)
 
 ただし、ステージングできるように集計測定をモデル化するのはなぜかと疑問に思われるかもしれません。 メモリ内リアルタイム集計測定を常に使用しないのはなぜですか。 **StagedEntityStore** パターンを使用する理由はいくつかあります。
 

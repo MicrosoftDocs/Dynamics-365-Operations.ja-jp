@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 023c570669930a0b6c9336da47cb3081c61d099c
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 1efa69f3f44fe6d0fae0ce49ad20fb1a2f816057
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6087031"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350342"
 ---
 # <a name="wallet-payment-support"></a>Wallet 支払サポート
 
@@ -68,15 +68,15 @@ Commerce 本店でウォレット支払サポートを有効にするには、**
 
 **プロセッサ支払方法のマッピング** ページを使用して、設定済みのカードまたはウォレットのタイプにプロセッサ支払方法をマップできます。 このページにアクセスするには、**カード タイプ** ページの **プロセッサ マッピング** リンクを選択します。
 
-![プロセッサ支払のマッピング リンク](media/Payments/ProcPmtMap.png)
+![プロセッサ支払のマッピング リンク。](media/Payments/ProcPmtMap.png)
 
 このページが開くと、使用可能な支払コネクタにクエリを実行して、**PaymentMethodVariant** フィールドに入力された一連の設定済みの支払方法を収集します。 次に、これらの支払方法にカードまたはウォレットへの既存のマッピングがあるかどうかを確認します。 マッピングを持たない支払方法は、ページの中央列に一覧表示されます。 
 
-![マップされていないプロセッサ支払方法](media/Payments/Unmapped.png)
+![マップされていないプロセッサ支払方法。](media/Payments/Unmapped.png)
 
 プロセッサの支払方法をカードまたはウォレットにマップするには、カードまたはウォレットを選択し、プロセッサ支払方法を選択して、**追加** を選択します。 プロセッサ支払方法が **マップ済み** 列に移動します。 一致する支払承認を受け取ると、選択したカードまたはウォレットにマッピングされます。
 
-![マップ済みのプロセッサ支払方法](media/Payments/Mapped.png)
+![マップ済みのプロセッサ支払方法。](media/Payments/Mapped.png)
 
 > [!NOTE]
 > **プロセッサの支払方法のマッピング** 機能により、チャネル データベースに同期する必要がある新しいテーブルを追加します。 このデータを Commerce スケジューラに追加するには、Commerceスケジューラを初期化する必要があります。 詳細については、[commerce スケジューラのコンフィギュレーションの更新](./dev-itpro/cdx-best-practices.md#updating-configurations) に関連するドキュメントを参照してください。 
@@ -89,7 +89,7 @@ Commerce 本店でウォレット支払サポートを有効にするには、**
 
 一部のシナリオでは、支払コネクタは、BIN 範囲またはプロセッサ支払方法のマッピングを持たないカードを返す場合があります。 この場合、支払は支払ターミナルによって承認されますが、販売時点管理 (POS) が承認応答を特定のカード タイプにマップできない場合は、支払が取り消されます。 これに対処するために、不明の承認応答を既定のカード タイプにマップする機能が提供されます。 
 
-![マップされていないカードの既定](media/Payments/DefaultUnmapped.png)
+![マップされていないカードの既定。](media/Payments/DefaultUnmapped.png)
 
 この機能により、支払がターミナルによって承認されず、POS によって取り消されるようになります。 これにより、顧客や店舗の関係者の混乱を避けることができます。 この設定を使用する場合、不明な認証の既定のカードを定期的にチェックして、必要なカード タイプが誤って不明なカード タイプのデフォルトにマップされていないことを確認する必要があります。 カード タイプが処理に本当に不要な場合は、プロセッサ レベルでオフにする必要があります。
 

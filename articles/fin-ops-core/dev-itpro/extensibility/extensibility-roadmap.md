@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 3446a066db09d6e1a53ae2c13e19c48e5e816e42
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 69cc7c18d5749f23a6502e638164bc35437598cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866053"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344856"
 ---
 # <a name="application-extensibility-roadmap"></a>アプリケーション拡張機能ロードマップ
 
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 for Finance and Operations リリース 8.0 では、す�
 
 次の図は、オーバーレイから、拡張機能に移動したときに従ったロードマップを示しています。
 
-![拡張性ロードマップ](media/extensibility-roadmap.jpg)
+![拡張性ロードマップ。](media/extensibility-roadmap.jpg)
 
 > [!NOTE]
 > ソフト シールは、オーバーレイ時にコンパイラの警告を表示します。 ハード シールは、オーバーレイ時にコンパイラのエラーを表示します。 

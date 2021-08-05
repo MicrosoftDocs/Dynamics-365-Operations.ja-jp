@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 938617e67b8bcb954f2d5c8662ec00e323dcc07b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 55cd11e6bcae11745417001c8d5ea82a951f283b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744503"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360750"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
@@ -34,7 +34,7 @@ ms.locfileid: "5744503"
 
 定期購読および関連するすべてのコンポーネントの移動のプロセスには、次の図に示すように、次の 4 つの主要なステップがあります。
 
-![定期売買を移動するためのプロセス](./media/move-subscription-process.png)
+![定期売買契約を移動するためのプロセス。](./media/move-subscription-process.png)
 
 ## <a name="activate-subscriptions-on-the-new-tenant"></a>新しいテナントのサブスクリプションを有効化
 

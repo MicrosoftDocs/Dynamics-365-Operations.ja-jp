@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8bfe4b93ec81b1394832b60f688117820888a3c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 16dad65dba516b04a16406306a1e55bf0268aa56
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744183"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358923"
 ---
 # <a name="font-and-background-colors-for-input-table-and-grid-controls"></a>入力、テーブル、およびグリッド コントロール用のフォントと背景
 
@@ -113,7 +113,7 @@ public FormControl editControl(int column, int row)
 }
 ```
 
-[![色分けされたセルのあるテーブル コントロールの例](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
+[![色分けされたセルのあるテーブル コントロールの例。](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
 
 ## <a name="using-color-in-a-grid-control"></a>グリッド コントロールでの色の使用
 

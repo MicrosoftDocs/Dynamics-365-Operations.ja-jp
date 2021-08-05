@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: f19806b7a0799d73166137bc9bc5f7ed22059faf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bbcdd94c8f9575bd3c520cc4e395f988368eec34
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745911"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345640"
 ---
 # <a name="batch-manager-security-role"></a>バッチ マネージャーのセキュリティ ロール
 
@@ -36,11 +36,11 @@ ms.locfileid: "5745911"
 
 1. **システム管理** > **セキュリティ** > **ユーザーをロールに割り当てる** を選択します。
 
-![ロールへのユーザーの割り当て](./media/assign-batchmanager-role.png) 
+![ロールにユーザーを割り当てます。](./media/assign-batchmanager-role.png) 
 
 2. **バッチ ジョブ マネージャー** をクリックし、左ウィンドウで **ユーザーを手動で割り当てる/除外する** を選択します。
 
-![バッチ マネージャー ロール](./media/assign-batchmanager-role-2.png) 
+![バッチ マネージャー ロール。](./media/assign-batchmanager-role-2.png) 
 
 3. 一覧からユーザーを選択し、**ロールに割り当て** を選択します。
 4. ページを閉じます。 
@@ -49,7 +49,7 @@ ms.locfileid: "5745911"
 
 **実行者ユーザー** 機能により、バッチ管理者は、バッチ ジョブを実行するユーザーを指定できます。 この機能は、現在ジョブの実行が割り当てられているユーザーを変更する場合、または別の会社にバッチ ジョブをコピーするときにユーザーをすばやく設定する場合に便利です。 この機能は、バッチ ジョブをコピーするのにも使用できます。
 
-![実行者ユーザー](./media/runby-user.png)  
+![実行者ユーザー。](./media/runby-user.png)  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

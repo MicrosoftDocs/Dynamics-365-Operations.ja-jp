@@ -2,7 +2,7 @@
 title: エンティティ ストアのメンテナンス後に問題を解決
 description: このトピックでは、エンティティ ストアのメンテナンス後に完了する必要のある手順について説明します。
 author: sarvanisathish
-ms.date: 05/01/2018
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region:
 ms.author: sarvanis
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 8bb1b47b6dd433a3dff0da6d95aa5ad3b320083a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 77afc315318a4f2590c14ac2f97517f3f6a7000d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751248"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361318"
 ---
 # <a name="resolve-issues-after-entity-store-maintenance"></a>エンティティ ストアのメンテナンス後に問題を解決
 
@@ -38,19 +38,19 @@ ms.locfileid: "5751248"
 
 アプリケーション分析ワークスペースおよびレポートは、特定の保守操作が完了した後データを表示しない可能性があります。 次のスクリーン ショットはその例です。
 
-![分析レポートは空白](media/blank-powerbi.png)
+![分析レポートは空白です。](media/blank-powerbi.png)
 
 この問題を解決するには、次のようにします。
 
 1. アプリケーションにログインします。
-2. **バッチ ジョブ** ページ (**システム管理 \> 照会 \> バッチ ジョブ**) に移動します。
-3. エンティティ格納に関連付けられているすべての保留中のバッチ ジョブを削除します。 これらのバッチ ジョブには次がふくまれます。
+2. **システム管理** > **照会** > **バッチ ジョブ** の順に移動します。
+3. **バッチ ジョブ** ページで、エンティティ格納に関連付けられているすべての保留中のバッチ ジョブを削除します。 これらのバッチ ジョブには次がふくまれます。
 
     - **待機中** の状態になります。
-    - 通常は **測定の配置** の説明があります。
+    - 通常は、**測定の配置**、**完全なリセット**、**差分更新** の説明があります。
 
     > [!NOTE]
-    > 既定の説明は、**測定の配置** です。 説明がカスタマイズされている場合は、クラス名を参照して、バッチ ジョブがエンティティの店舗に関連付けられているかどうかを確認できます。 エンティティ格納に関連付けられているバッチ ジョブのクラス名は **BIMeasurementDeployManagementEntityBatchJob** になります。
+    > 既定の説明は、以前のバージョンでは **測定の配置**、新しいバージョンでは **完全なリセット** です。 **Data Lake のトリクル更新** オプションを使用して Data Lake の統合を有効にすると、**差分更新** という説明のバッチ ジョブが作成されます。 説明がカスタマイズされている場合は、クラス名を参照して、バッチ ジョブがエンティティの店舗に関連付けられているかどうかを確認できます。 エンティティ格納に関連付けられているバッチ ジョブのクラス名は **BIMeasurementDeployManagementEntityBatchJob**、**BIMeasurementProcessorFull** または **BIMeasurementProcessorIncremental** になります。
 
 4. **エンティティ格納** ページ (**システム管理 \> 設定 \> エンティティ格納**) に移動します。
 5. 更新する必要があるすべての測定を選択します。

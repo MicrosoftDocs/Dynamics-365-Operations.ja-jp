@@ -3,20 +3,18 @@ title: X++ 構文
 description: このトピックには、X++ の構文リファレンスが含まれています。
 author: RobinARH
 ms.date: 07/22/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 72211
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8e226474acb74f19ac367b18df0bde12e484a07
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 6e2eec3defb10acd986fe0ac6e13250e44a30a67
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189589"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661384"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
@@ -728,7 +726,7 @@ ms.locfileid: "6189589"
 </tr>
 <tr class="even">
 <td><strong>validTimeState</strong></td>
-<td>X++ SQL <code>select</code> 明細書により有効時間状態テーブルから取得される行をフィルター処理します。 例: <span class="code">xMyTable; から validTimeState(myDateEffective) *を選択</span> ... または ...  <span class="code">xMyTable; から validTimeState(myDateFrom, myDateTo)* を選択</span></td>
+<td>X++ SQL <code>select</code> 明細書により有効時間状態テーブルから取得される行をフィルター処理します。 例: <span class="code">xMyTable; から validTimeState(myDateEffective) *を選択</span> ...または...  <span class="code">xMyTable; から validTimeState(myDateFrom, myDateTo)* を選択</span></td>
 <td>有効時間状態テーブルが読み取りおよび書き込み操作に及ぼす影響</td>
 </tr>
 <tr class="odd">

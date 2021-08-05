@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f7e0b048b8b3bb698ec9a49a555a58cfffd87dd4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6c012774d3fb8fc19d2db7fbc5a83f80b2c2dc43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748411"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345652"
 ---
 # <a name="upgrade-from-ax-2012---estimate-effort-by-using-the-code-upgrade-service"></a>AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積
 
@@ -41,7 +41,7 @@ ms.locfileid: "5748411"
 
 次の図は、コードのアップグレード サービスを構成するプロセスの概要を示しています。
 
-![コード アップグレード サービスのコンフィギュレーション プロセス](media/codeUpgradeConfigurationProcess.png)
+![コード アップグレード サービスのコンフィギュレーション プロセス。](media/codeUpgradeConfigurationProcess.png)
 
 コード アップグレード サービスを構成する方法については、 [Lifecycle Services (LCS) で、コード アップグレード サービスを構成する](../lifecycle-services/configure-execute-code-upgrade.md) を参照してください。
 

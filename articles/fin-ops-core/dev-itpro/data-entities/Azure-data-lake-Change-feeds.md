@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2021-06-10
-ms.openlocfilehash: a45234ba97b9bf59e71a933fcf16198b2257ccb8
-ms.sourcegitcommit: 7b319d32cb4285bb7cea43280c3e2f5c0b4e8d57
+ms.openlocfilehash: ab65370bac5fdb55f6c360b2a73554fa01e89e2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "6274282"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353718"
 ---
 # <a name="change-data-in-azure-data-lake"></a>Azure Data Lake の変更データ
 
@@ -45,7 +45,7 @@ Data Lake のテーブル データが更新される場合は、対応するフ
 
 次の図は、Finance and Operations アプリケーションでの変更フィードの機能を示しています。
 
-![Finance and Operations アプリケーションでの変更フィードがどのように機能するか](media/Change-feed-overview-picture.png)
+![Finance and Operations アプリケーションでの変更フィードがどのように機能するか。](media/Change-feed-overview-picture.png)
 
 1. Finance and Operations アプリケーションでデータが変更されるたびに、基になるデータベース (AXDB) が更新されます。 CDC 機能は、更新がデータベースに反映されることを保証します。 CDC は、論理シーケンス番号 (**LSN** 値)、日付/タイム スタンプ (**日時変更** 値)、および変更されたデータを識別する **ペイロード変更** 値とともに、ログ (変更ログ) に変更をキャプチャします。
 2. **Data Lake へのエクスポート** マイクロサービスはデータベース内の変更をキャプチャし、変更ログを顧客の Data Lake に書き込みます。 Data Lake 内の変更フィード フォルダーには、フォルダーに編成された変更ログが含まれています。
@@ -61,19 +61,19 @@ Data Lake にテーブルを追加する場合、または非アクティブ化�
 
 変更フォルダーにアクセスするには、Azure ポータルを開き、Finance and Operations 環境に関連付けられているストレージ アカウントを見つけて選択します。 Data Lake 構造内の **変更フィード** フォルダーが表示されます。 次の図は、例を示します。
 
-![Data Lake フォルダー構造内の変更フィード フォルダー](media/Change-feed-folders-rootfolder-top-level.png)
+![Data Lake フォルダー構造内の変更フィード フォルダー。](media/Change-feed-folders-rootfolder-top-level.png)
 
 **変更フィード** フォルダーを開くと、Data Lake に追加したテーブルに対応するフォルダーが表示されます。 変更フォルダー データを説明する CDM メタデータ ファイルも表示されます。 次の図は、例を示します。
 
-![変更フィード フォルダー内のフォルダーと CDM メタデータ ファイル](media/Change-feed-folders-table-level-with-metadata.png)
+![変更フィード フォルダー内のフォルダーと CDM メタデータ ファイル。](media/Change-feed-folders-table-level-with-metadata.png)
 
 CDM メタデータ ファイルは、フォルダーに含まれる変更フィード データの構造を記述します。 CDM メタデータ ファイルや Data Factory などのデータ変換ツールを使用すると、生のカンマ区切り値 (CSV) ファイルを読み取ることなく、変更フィード データを読み取ることができます。 メタデータを調べるには、メタデータ ファイルを選択し、テキスト エディターで開きます。
 
-![テキスト エディターで開いた CDM メタデータ ファイル](media/Change-feed-folders-examine-metadata.png)
+![テキスト エディターで開いた CDM メタデータ ファイル。](media/Change-feed-folders-examine-metadata.png)
 
 メタデータ定義から通知されるので、**変更フィード** フォルダーには、追加のフィールドとともに CDC 変更ログの詳細が含まれています。 次の図と表は、変更フォルダーの変更の形式に関する詳細を示しています。
 
-![変更フォルダの変更の形式](media/Change-feed-folders-change-data-format2.png)
+![変更フォルダーの変更の形式。](media/Change-feed-folders-change-data-format2.png)
 
 | フィールド名                    | コンテンツ |
 |-------------------------------|----------|

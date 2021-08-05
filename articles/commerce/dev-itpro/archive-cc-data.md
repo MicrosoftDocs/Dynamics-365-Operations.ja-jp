@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4150428358967da9ca61a4e09dd2d71a480d807c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 1773a7ca07cf9af1ebb400283e653c362f574e13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936964"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354673"
 ---
 # <a name="archive-credit-card-transaction-data"></a>クレジット カード トランザクション データのアーカイブ
 
@@ -63,18 +63,18 @@ ms.locfileid: "5936964"
 
 次の図では、**クレジット カード トランザクション データをアーカイブ** ダイアログ ボックスのパラメータ設定例を示しています。
 
-![クレジット カード トランザクション データのアーカイブ ダイアログ ボックスのパラメータ設定](media/PAYMENTS/Batch1.png)
+![クレジット カード トランザクション データのアーカイブ ダイアログ ボックスのパラメーター設定。](media/PAYMENTS/Batch1.png)
 
 **最小トランザクションの日数** フィールドおよびバッチ詳細が設定された後、**次へ** を選び、エクスポートされるデータ サンプルを表示します。 次の図は、例を示します。 このサンプルのデータは限られていますが、アーカイブの対象となるすべてのデータをエクスポートできます。
 
-![エクスポートされるデータのサンプル](media/PAYMENTS/Batch2.png)
+![エクスポートされるデータのサンプル。](media/PAYMENTS/Batch2.png)
 
 > [!IMPORTANT]
 > アーカイブの対象となるデータには、カード所有者の名前など、個人を特定できる顧客情報が含まれます。 この機密データは、地域の規制要件に従って処理する必要があります。
 
 次の図に示すように、アーカイブする必要があるデータのパラメータを確認した後、アーカイブされているデータを簡単に復元できないという確認を求めるメッセージが表示されます。
 
-![確認用メッセージボックス](media/PAYMENTS/Batch3.png)
+![確認用メッセージボックス。](media/PAYMENTS/Batch3.png)
 
 **はい** を選び、アーカイブ ジョブが有効になると、**トランザクションの最小日数** 値よりも古いクレジット カードの認証に関するすべての XML データはアーカイブの対象になります。
 

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 21631
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b45a05adb79eb9e9232b09a133306e7798a64db
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 7eafd281c872eb2ab0f075cb39dbb95dcdcab6a0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935767"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357536"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -74,7 +74,7 @@ RSAT の使用についての定義。
 
 RSAT は、次に定義するエンド ツー エンド フローのパーツに含まれています。 RSAT、Microsoft Dynamics Lifecycle Services (LCS) および Azure DevOps は、テスト ケースの作成 (タスク レコーダーを使用)、配布、構成、実行、調査、および報告に対する一連のツールを提供します。
 
-![作成、構成、実行](media/end-to-end.png)
+![作成し、構成し、実行します。](media/end-to-end.png)
 
 このプロセスの詳細については、[ユーザー受け入れテストを作成して自動化する](../../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)を参照してください。
 
@@ -84,11 +84,11 @@ LCS でビジネス プロセス モデラー (BPM) ツールを使用する必�
 
 BPM を使用していない場合は、Azure DevOps で手動でテスト ケースを作成し、開発者記録ファイルを Azure DevOps テスト ケースに添付できます。 開発者記録ファイルは、タスク レコーダー ウィンドウから直接作成できます。
 
-![開発者としてタスク レコードを保存](media/save-as-developer.png)
+![開発者としてタスク レコードを保存します。](media/save-as-developer.png)
 
 開発者記録ファイルに **Recording.xml** という名前を付けてから、Azure DevOps テスト ケースに添付する必要があります。 または、記録ファイル **-テスト ケース タイトル-.xml** という名前を付けることもできます。これは、**-テスト ケース タイトル-** はテスト ケースの DevOps タイトルになります。
 
-![添付ファイルの追加](media/attachments.png)
+![添付ファイルを追加します。](media/attachments.png)
 
 ## <a name="intended-usage-and-test-classification"></a>使用目的およびテストの分類
 
@@ -96,7 +96,7 @@ BPM を使用していない場合は、Azure DevOps で手動でテスト ケ�
 
 Regression Suite Automation Tool は、ビジネス サイクル テストおよびシナリオ テスト (複数のコンポーネントのテスト) を使用目的としており、通常は開発ライフ サイクルの終了時に発生します。 これは、*ユーザー受け入れテスト* とも呼ばれます。 ビジネス サイクルのテストは、コンポーネントまたは単体テストよりも少ない数のテスト ケースで構成されます。 これを下の図に示します。
 
-![単体テスト、コンポーネント テスト、複数のコンポーネントテスト、ビジネス サイクルテスト](media/business-cycle.png)
+![単体テスト、コンポーネント テスト、複数のコンポーネントテスト、ビジネス サイクル テスト。](media/business-cycle.png)
 
 ### <a name="cloud-pos"></a>クラウド POS
 
@@ -132,25 +132,25 @@ RSAT 2.1 により、**クイック リンク** タブおよび DevOps のテス
 
 **テスト計画** タブは、テスト ケースを操作し、実行するメインのタブです。
 
-![UI テスト計画 タブ](media/UI-test-plans-tab.png)
+![UI テスト計画 タブ。](media/UI-test-plans-tab.png)
 
 ### <a name="settings"></a>設定
 
 **設定** タブを選択して、RSAT の設定を構成します。 トップ バーを使用して、一般、オプション、およびプロセス設定の間を移動します。 設定を保存する必要はなく、設定ページから移動するとすぐに、自動的に保存されます。 設定を RSAT 設定ファイルに保存したり、既存の設定ファイルを開いたりすることもできます。
 
-![UI 設定タブ](media/UI-settings-tab.png)
+![UI 設定タブ。](media/UI-settings-tab.png)
 
 ### <a name="cloud-pos-settings"></a>Cloud POS の設定
 
 **Cloud POS 設定** タブを選択し、Cloud POS のテスト ケースを実行する RSAT を構成します。 設定を保存する必要はなく、設定ページから移動するとすぐに、自動的に保存されます。
 
-![UI Cloud POS タブ](media/UI-cloud-POS-tab.png)
+![UI Cloud POS タブ。](media/UI-cloud-POS-tab.png)
 
 ### <a name="useful-links"></a>役に立つリンク
 
 **リンク** タブで、新しい機能が提供されます。 **リンク** タブを選択すると、Finance and Operations 環境にすばやく移動するか、最近のテスト実行、最後のテスト実行、および現在のテスト計画を表示するのに役立つ Azure DevOps ページに移動することができます。 RSAT ドキュメント ページへのリンクもあります。
 
-![UI リンク タブ](media/UI-links-tab.png)
+![UI リンク タブ。](media/UI-links-tab.png)
 
 ### <a name="quick-navigation-to-azure-devops"></a>Azure DevOps にすばやく移動する機能
 
@@ -162,7 +162,7 @@ RSAT 2.1 により、**クイック リンク** タブおよび DevOps のテス
 
 このタブで、Azure DevOps で最も関連性の高いページへのクイック アクセスが提供されます。
 
-![UI DevOps の移動](media/UI-DevOps-navigate.png)
+![UI DevOps の移動。](media/UI-DevOps-navigate.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

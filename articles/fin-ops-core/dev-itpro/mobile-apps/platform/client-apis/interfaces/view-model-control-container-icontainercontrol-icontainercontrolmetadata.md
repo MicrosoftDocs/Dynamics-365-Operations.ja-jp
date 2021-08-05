@@ -3,21 +3,16 @@ title: ContainerControlMetadata タイプ
 description: コンテナー コントロール メタデータ タイプ。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 328d6aaa90ce3b4da4326ea1a8b8ef5b760cf663
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 857572f595331bd5a205e80408fc9be36cfc7026
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752694"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661426"
 ---
 # <a name="containercontrolmetadata-type"></a>ContainerControlMetadata タイプ
 
@@ -44,7 +39,7 @@ ms.locfileid: "5752694"
 * [ラベル](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#label)
 * [名前](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#name)
 * [注文](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#order)
-* [[タイプ](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#type)]
+* [タイプ](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#type)
 
 ## <a name="properties"></a>プロパティ
 

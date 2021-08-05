@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ecb4375a6d20c21acd59d0221e4a2a1ce6ab7e3
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 7cb1788ec5a98dd01a79fc0fd1b8b7f860c6e046
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866170"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357532"
 ---
 # <a name="troubleshoot-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool のトラブルシューティング
 
@@ -63,7 +63,7 @@ Cannot access Finance and Operations environment. Verify your settings and make 
 
 ブラウザーに Internet Explorer を使用している場合、テストを正常に実行するには、デスクトップの解像度を100% に設定している必要があります。 設定を変更するには、次の図に示すように、Windows の **ディスプレイ設定 > 拡大縮小とレイアウト** を使用します。
 
-![画面の解像度の設定](media/screen-resolution.png)
+![画面の解像度の設定。](media/screen-resolution.png)
 
 ## <a name="test-playback-errors"></a>再生エラーのテスト
 
@@ -96,7 +96,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))  
 <Message>Could not enumerate AX users</Message>  (InnerError)`
 ```
 
-![エラー メッセージ列挙ボックス](media/cannot-enumerate.png)
+![エラー メッセージ列挙ボックス。](media/cannot-enumerate.png)
 
 このエラーを解決するには、RSAT の設定ダイアログ ボックスで指定されている **管理ユーザー名** を確認します。 **管理者ユーザー名** は、RSAT が接続している Finance and Operations テスト環境でのシステム管理者ロールに属しているユーザーの電子メール アドレスである必要があります。 また、ユーザー アカウント (電子メール アドレス) は、テスト環境と同じテナントに属している必要があります。 たとえば、テスト環境のテナントが **contoso.com** 場合、管理ユーザーは **\@constoso.com** で終了する必要があります。
 

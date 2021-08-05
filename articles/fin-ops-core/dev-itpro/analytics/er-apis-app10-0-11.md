@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: f0e5a27cb53904f87e0c8c27b354550688784592
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 008a75ca1621de6558b4b049062ab7dc94b46b17
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751196"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351928"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10011"></a>Application update 10.0.11 での電子申告フレームワーク API の変更
 
@@ -39,7 +39,7 @@ ER フレームワークの [初期](er-apis-app73.md#code-to-run-a-format-mappi
 
 **データソースのプロパティ** ダイアログ ボックスで、**統合ポイント** オプションを **はい** に設定すると、データソースを統合ポイントのコンポーネントとしてマークできます。
 
-![統合ポイント オプションの設定](./media/er-api-ds-integration-point2.png)
+![統合ポイント オプションの設定。](./media/er-api-ds-integration-point2.png)
 
 ER フレームワークの新しい API を使用して ER 形式のマッピングを呼び出し、特定の統合ポイントを含むように設定されたモデル マッピングを強制的に使用することができます。 次の例では、この新しい API の使用方法を解説します。
 

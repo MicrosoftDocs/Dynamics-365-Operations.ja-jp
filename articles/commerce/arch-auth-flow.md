@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 765f60990aaca3cbb4fbcc1d25cff458344bd4d9
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 09f8d4368c5e75aaa8f68a9370c47d1a814524ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936960"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348284"
 ---
 # <a name="dynamics-365-commerce-authentication-flows"></a>Dynamics 365 Commerce 認証フロー
 
@@ -67,25 +67,25 @@ Commerce Scale Unit API とそのアクセス制限の完全な一覧につい�
 
 次の図は、Commerce の POS 従業員認証フローを示しています。
 
-<a href="/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS 従業員認証フロー](./media/arch-auth-flow-1.jpg)</a>
+<a href="/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS 従業員認証フロー。](./media/arch-auth-flow-1.jpg)</a>
 
 ## <a name="dynamics-365-e-commerce-customer-authentication-flows"></a>Dynamics 365 E コマース顧客認証フロー
 
 次の図は、Commerce の E コマース フローを示しています。
 
-<a href="/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 E コマース顧客認証フロー](./media/arch-auth-flow-2.jpg)</a>
+<a href="/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 E コマース顧客認証フロー。](./media/arch-auth-flow-2.jpg)</a>
 
 ## <a name="third-party-e-commerce-customer-authentication-flows"></a>サード パーティ E コマースの顧客認証フロー
 
 次の図は、Commerce のサード パーティ E コマースの顧客認証フローを示しています。
 
-<a href="/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![サード パーティ E コマースの顧客認証フロー](./media/arch-auth-flow-3.jpg)</a>
+<a href="/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![サード パーティ E コマースの顧客認証フロー。](./media/arch-auth-flow-3.jpg)</a>
 
 ## <a name="third-party-application-authentication-flows"></a>サード パーティ製アプリケーションの認証フロー
 
 次の図は、Commerce のサード パーティ製アプリケーションの認証フローを示しています。
 
-<a href="/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![サード パーティ製アプリケーションの認証フロー](./media/arch-auth-flow-4.jpg)</a>
+<a href="/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![サード パーティ製アプリケーションの認証フロー。](./media/arch-auth-flow-4.jpg)</a>
 
 ## <a name="additional-resources"></a>追加リソース
 

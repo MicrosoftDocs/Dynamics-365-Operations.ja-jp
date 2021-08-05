@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: bb0c658deb5d4c674613dc7ea52b97fe354a19b8
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: a677e58403b548d5d131a4925c92ae00c42df67f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956120"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358581"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 
@@ -40,7 +40,7 @@ ms.locfileid: "5956120"
 
 デモ データ パッケージは、次の図に示すように、お互いの最上部に重ねて表示されるように設計されています。
 
-![デモ データ パッケージ](./media/demodatapackages_layers.png)
+![デモ データ パッケージ。](./media/demodatapackages_layers.png)
 
 ただし、1 つのデモ シナリオのグローバル情報には、別のデモ シナリオのグローバル情報とは全く異なる要求がある場合があります。 たとえば、1 つのシナリオの分析コードは、別のシナリオの分析コードを妨げます。 この場合、個別のグローバル情報パッケージが作成され、グローバル情報に関連するパッケージのみをパッケージの最上部に重ねることができます。
 

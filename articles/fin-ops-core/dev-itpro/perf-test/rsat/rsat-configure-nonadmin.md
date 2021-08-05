@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-03-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d477ca0326911cd4d5b60b94fd57fd76863a643
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4ec977c0db9529a504a85d96efb0c099b25413dd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752682"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346472"
 ---
 # <a name="configure-non-administrator-users-to-use-rsat"></a>管理者以外のユーザーが RSAT を使用するように構成する
 
@@ -37,7 +37,7 @@ Regression suite automation tool (RSAT) は、実行しているコンピュー�
 1. Windows PowerShell を管理者として開きます。
 2. フォルダーを RSAT インストール フォルダーの **管理者以外を有効にする** に変更します。 インストール フォルダーは、コンピューターで実行しているローカライズされた Windows にしたがって、**C:\Program Files (x86)\Regression Suite Automation Tool\Enable non admin** のように名前が付けられます。
 
-    ![PowerShell のファイルの一覧](media/config-file-list.png)
+    ![PowerShell のファイルの一覧。](media/config-file-list.png)
 
 3. **管理者以外を有効にする** フォルダーに、これらのファイルが表示されます。
 

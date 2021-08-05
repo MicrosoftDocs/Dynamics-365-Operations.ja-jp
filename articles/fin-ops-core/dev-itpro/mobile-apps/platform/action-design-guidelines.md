@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 23f6448749ff66451b2e881ed732fe028b89b38d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 08e5d6a0d3a45ec6c5427f7347b1f5220558f61d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745221"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355769"
 ---
 # <a name="action-design-guidelines"></a>アクション デザインのガイドライン
 
@@ -62,7 +62,7 @@ ms.locfileid: "5745221"
 2.  アクションのデザインが終了した後、フィールドを選択して豊富なルックアップ機能を追加し、**プロパティ** をクリックします。
 3.  **コントロールのプロパティ** ダイアログ ボックスで、手順 1 で指定または作成したリスト ビュー ページを選択し、その他の関連するプロパティを設定します。 
 
-![コントロール プロパティの設定](media/lookupdesigner.png)
+![コントロール プロパティの設定。](media/lookupdesigner.png)
 
 4.  アクションに変更内容を保存して公開します。
 

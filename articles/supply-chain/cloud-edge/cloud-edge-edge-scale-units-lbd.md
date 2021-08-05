@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 23ae1892f410dcbf0de5e656e35b0291372877dc
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 89d664cfa207b4d32153433d2cec6e4d55f12943
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938264"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352750"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>LBD を使用してカスタム ハードウェアにエッジのスケール ユニットを配置する (プレビュー)
 
@@ -116,9 +116,9 @@ ms.locfileid: "5938264"
 1. 前の手順でアップロードした結合されたアプリケーション/プラットフォーム パッケージを使用して、LBD 環境にサービスを提供します。
 1. 前の手順でアップロードしたカスタム配置可能パッケージを使用して、LBD 環境にサービスを提供します。
 
-    ![管理を選択 > LCS で更新プログラムを適用](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "管理を選択 > LCS で更新プログラムを適用")
+    ![管理を選択 > LCS で更新プログラムを適用。](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "管理を選択 > LCS で更新プログラムを適用")
 
-    ![カスタマイズ パッケージの選択](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "カスタマイズ パッケージの選択")
+    ![カスタマイズ パッケージの選択。](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "カスタマイズ パッケージの選択")
 
 ## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a> LBD エッジ スケール ユニットをハブに割り当てる
 

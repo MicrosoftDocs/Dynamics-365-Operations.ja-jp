@@ -3,20 +3,18 @@ title: SQL インジェクション攻撃の緩和
 description: このトピックでは、X++ で SQL インジェクション攻撃を緩和する方法について説明します。
 author: pvillads
 ms.date: 12/01/2020
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31301
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf389415b52c95873a27c68d0d846b62dba69009
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: a252696a34f965810e363aab73d49717e72172f9
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865841"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661370"
 ---
 # <a name="mitigate-a-sql-injection-attack"></a>SQL インジェクション攻撃の緩和
 

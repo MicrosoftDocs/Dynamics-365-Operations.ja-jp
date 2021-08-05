@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 393a0297fe7994552636c8b1b4efd98b26443512
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 795a6b00ea02070faa15c635d9c2dc9bdcc7fd56
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866338"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355278"
 ---
 # <a name="exclude-test-packages-from-build-output"></a>ビルド出力からテスト パッケージを除外
 
@@ -31,11 +31,11 @@ ms.locfileid: "5866338"
 
 1. Microsoft Azure DevOps で、**ビルドおよびリリース** ページの **ビルド** にある **すべての定義タブ** でビルド定義を検索します。 省略記号 (...)、**編集** の順にクリックします。
 
-    ![ビルド定義を編集](media/builddef_edit.png)
+    ![ビルド定義を編集します。](media/builddef_edit.png)
 
 1. **変数** タブで、新しいビルド定義が **PackagingExclusions** という名前の変数を持つこと通知します。
 
-    ![PackagingExclusions 変数](media/builddef_packexclvariable.png)
+    ![PackagingExclusions 変数。](media/builddef_packexclvariable.png)
 
 1. **PackagingExclusions** 変数で、配置可能パッケージにパッケージする必要がないパッケージの名前をコンマで区切ったリストで指定します。
 
@@ -44,7 +44,7 @@ ms.locfileid: "5866338"
 
     たとえば、MyCompanysAwesomeTests という名前の 1 つのパッケージおよび ContosoTaskRecordingTests という名前の別のパッケージがあり、配置可能なパッケージからこれら両方のパッケージを除外します。 この場合、**PackagingExclusions** 変数の値はこのようになります。
 
-    ![PackagingExclusions の例](media/builddef_packexclexample.png)
+    ![PackagingExclusions の例。](media/builddef_packexclexample.png)
 
     この設定を完了すると、ビルド プロセスはコードをビルドしながらパッケージに含まれているすべてのテストを実行します。 ただし、ビルドが作成する配置可能なパッケージには、それらのパッケージは含まれません。
 
@@ -62,7 +62,7 @@ ms.locfileid: "5866338"
 
     **引数** テキスト ボックスは次のようになります。
 
-    ![パッケージ タスクを生成します](media/builddef_generatepack.png)
+    ![パッケージ タスクの生成。](media/builddef_generatepack.png)
 
 1. **保存** をクリックします。
 

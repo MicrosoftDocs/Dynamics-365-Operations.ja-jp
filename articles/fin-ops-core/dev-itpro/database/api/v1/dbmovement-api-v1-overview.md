@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: e61fa5d66535c921ad5079498c3d0028c8f5692f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d2887611172ee93c673a112c701c85af31d8ec69
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752770"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6339805"
 ---
 # <a name="api-v1-reference-overview"></a>API v1 参照の概要
 

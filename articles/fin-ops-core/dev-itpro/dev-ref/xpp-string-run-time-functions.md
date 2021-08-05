@@ -3,20 +3,18 @@ title: X++ 文字列ランタイム関数
 description: このトピックでは、文字列ランタイム関数について説明します。
 author: RobinARH
 ms.date: 08/15/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31401
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cd0d6cc9bbafd960fbfb88848f16abd7a02abaa
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: f8ed6d1d2c17f272b081f78f720b521aa4301ac9
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190327"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661344"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 
@@ -99,7 +97,7 @@ int match(str pattern, str text)
 
 + **\** _: アスタリスク (「\_」) の後に続く式には、前の式に 0、1、またはそれ以上の一致が必要です。 例
 
-    + **照合("abc\*d","abd");**  は、**1** を返します。 
+    + **照合("abc\*d","abd");** は、**1** を返します。 
     + **照合("abc\*d","abcd");** は、**1** を返します。 
     + **照合("abc\*d","abcccd");** は、**1** を返します。 
     + **照合("abc\*d","abxd");** は、**0** を返します。 

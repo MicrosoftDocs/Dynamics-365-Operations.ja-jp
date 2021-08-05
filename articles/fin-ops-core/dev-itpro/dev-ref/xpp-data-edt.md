@@ -3,20 +3,18 @@ title: X++ 拡張データ型
 description: このトピックでは、X++の拡張データ型について説明します。
 author: RobinARH
 ms.date: 06/17/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150183
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aee2caa5133092a9b55ad5b36041a21cec4e0340
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: e7d6ed3683cf1095bc6361062b0ce95db10537bc
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866013"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661432"
 ---
 # <a name="x-extended-data-types"></a>X++ 拡張データ型
 

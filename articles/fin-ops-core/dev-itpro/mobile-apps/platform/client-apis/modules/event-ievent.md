@@ -3,21 +3,16 @@ title: イベント モジュール
 description: イベント モジュール
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: e750ba8e13ceb01844b6d9fb36bbf0cf2fb14f60
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3ad18c8f61ccc6a26c1bd6cfeaed84f5825a0119
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748081"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661386"
 ---
 # <a name="event-module"></a>イベント モジュール
 

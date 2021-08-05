@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 640e110478a7abfc349953ccbf4ee200cd2664b7
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 5d4cede28d79d5051a0bf0a01374f273b82475fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866176"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357540"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -44,7 +44,7 @@ ms.locfileid: "5866176"
 
 RSAT は、任意の Windows 10 コンピュータにインストールされ、Web ブラウザーを介して環境にリモート接続するように設計されています。
 
-![クライアント コンピュータと環境](media/client-environment.png)
+![クライアント コンピュータと環境。](media/client-environment.png)
 
 セキュリティで保護された認証を有効にするには、RSATでは、RSAT クライアント コンピューターに証明書をインストールする必要があります。 RSAT 設定 ダイアログ ボックスでは、認証証明書を自動的に作成およびインストールできます。 また、接続を信頼するように仮想マシン (VM) をコンフィギュレーションする必要があります。 RSATをインストールして構成するには、次のセクションの指示に従ってください。
 
@@ -61,9 +61,9 @@ RSAT は、任意の Windows 10 コンピュータにインストールされ、
 
 RSATには、Selenium および Web ブラウザー ドライバー ライブラリが必要です。 RSATでは、必要なライブラリが見つからない場合は、プロンプトが表示され、自動的にインストールされます。 次の (または類似の) メッセージが表示されたら、はい を選択します。
 
-![Selenium ドライバー](media/driver-1.png)
+![Selenium ドライバー。](media/driver-1.png)
 
-![ブラウザー ドライバー](media/driver-2.png)
+![ブラウザー ドライバー。](media/driver-2.png)
 
 RSAT は [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip) を使用します。 WebDriver ライブラリおよびブラウザー固有のドライバーは **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium** にダウンロードされます。
 
@@ -71,11 +71,11 @@ RSAT は [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/
 
 1. デスクトップから RSAT を開きます。
 
-    ![RSAT デスクトップ アイコン](media/desktop-icon.png)
+    ![RSAT デスクトップ アイコン。](media/desktop-icon.png)
 
 2. 右上にある **設定** ボタンを選択して、RSAT を構成します。
 
-    ![RSAT 設定](media/rsat-settings.png)
+    ![RSAT 設定。](media/rsat-settings.png)
 
 ### <a name="general-settings"></a>一般設定
 
@@ -157,12 +157,12 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 1. AOSマシンへのリモート デスクトップ接続を開きます。
 2. IIS を開き、サイトの一覧で AOSService を見つけます。
 
-    ![IISでのAOSの検索](media/configure-aos.png)
+    ![IISで AOS を検索します。](media/configure-aos.png)
 
 3. **AOSService** を右クリックし、**エクスプローラー** を選択します。
 4. ファイル **wif.config** を開き、検索します。
 
-    ![wif.config を開く](media/open-wif-config.png)
+    ![wif.config を開きます。](media/open-wif-config.png)
 
 5. 次の例に示すように、新しい機関のエントリを追加して、 **wif.config** ファイルを更新します。 機関名に **127.0.0.1** を使用し、証明書の拇印を貼り付けます。
 
@@ -187,7 +187,7 @@ Microsoft が管理するサンドボックス、またはセルフ サービス
     - RSAT 証明書のダウンロード
     - RSAT 証明書を再生成する
 
-![RSAT 証明書のオプションのダウンロードと再生成](media/rsat-lcs1.png)
+![RSAT 証明書のオプションをダウンロードして再生成します。](media/rsat-lcs1.png)
 
 **ダウンロード** ボタンを使用して、証明書バンドルを .zip ファイルとして取得します。
 
@@ -204,7 +204,7 @@ Microsoft が管理するサンドボックス、またはセルフ サービス
    + 手順 2 で保存したパスワードを入力し、**個人** ストアを参照します。
 
 6. 証明書ファイルをダブルクリックして、開きます。 **詳細** タブを参照し、**拇印** セクションが表示されるまで下にスクロールします。 **拇印** を選択し、テキスト ボックスの ID に注意します。 この捺印を選択するか、RSAT 設定に貼り付けます。
-![拇印の設定](media/rsat-lcs4.png)
+![拇印の設定。](media/rsat-lcs4.png)
 
 これで、この証明書を使用して環境に対してテストを実行できます。 証明書は期限が切れる前に Microsoft によって自動的にローテーションされます。その後、上記の手順 1 からこの証明書の新しいバージョンをダウンロードする必要があります。 セルフ サービス環境では、有効期限に最も近いダウンタイム ウィンドウで 90 日ごとにローテーションされます。 これらのダウンタイム ウィンドウには、顧客が開始したパッケージ展開、および環境を対象とするデータベース移動操作が含まれます。
 
@@ -245,7 +245,7 @@ RSAT クライアント コンピュータで証明書ファイルを生成す�
 4. **パスワード** フィールドは空白のままにします。
 5. **証明書** ダイアログ ボックスで、 **詳細** を参照し、 **拇印** を探します。
 
-    ![拇印の一覧を示す証明書ダイアログ](media/certificate-dialog.png)
+    ![拇印の一覧を示す証明書ダイアログ。](media/certificate-dialog.png)
 
 6. 拇印をコピーして保存します。 このトピックで前述されているように、AOS をコンフィギュレーションする必要があります。
 

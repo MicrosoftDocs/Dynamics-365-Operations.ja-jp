@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: ea26bbb79c4ff6a7941519dba41daa525f729ae6
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: bcccc218cccbfb8558c3611ed3b9b963c56eae55
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193450"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349140"
 ---
 # <a name="extend-table-maps-that-are-used-for-versioning"></a>バージョン管理で使用されるテーブル マップの拡張
 
@@ -29,13 +29,13 @@ ms.locfileid: "6193450"
 
 テーブル拡張機能を使用して新しいフィールドが **PurchLine** および **PurchLineHistory** テーブルに追加された場合、発注書のバージョンが更新されるときに、新しいフィールドをテーブル間でコピーする必要があります。 **PurchLineMap** テーブル マップは、新しい購買注文バージョンが作成または編集されたときに **PurchLine** テーブルおよび **PurchLineHistory** テーブルの間でコピーする必要があるフィールドを指定します。 これを行うためには、**PurchLineMap** マップ テーブルを拡張してフィールドを追加します。 また、**PurchLineMap** は、購買注文明細行をアーカイブするとき、**VersioningPurchaseOrder** によって使用されます。 このモデルを次の図に示します。
 
-![VersioningPurchaseOrder](media/MapsWithVersioning1.png)
+![VersioningPurchaseOrder.](media/MapsWithVersioning1.png)
 
 コピーする新しいフィールドを指定できるようにするため、**PurchLineMap** テーブル マップ ロジックとその使用がリファクタリングされています。 コピー ロジックが **PurchLineVersioning** 移動されているため、**VersioningPurchaseOrder** クラスは **PurchLineMap** テーブルマップの代わりに、**PurchLineVersioning** を参照します。 **PurchLineVersioning** クラスは、フィールドをコピーするロジックや、**PurchLineIVersioningFieldSet** インターフェイス を実行するクラスからの確認が必須かどうかを決定するロジックを委任します。 インターフェイスを実装する各クラスは、コピーするフィールドを指定するテーブル マップに関連付けられます。
 
 **PurchLineDictVersioning** クラスは、リフレクションを使用して **PurchLineIVersioningFieldSet** オブジェクトをインスタンス化します。 **PurchLineDictVersioning** クラスは、コピーする必要があるフィールドのセット全体を収集します。 フィールドデータは、**PurchLineIVersioningFieldSet** を実装するクラスに関連付けられているすべてのテーブル マップに基づいて収集されます。 次の図は、新しいクラスとその依存関係を示しています。
 
-![ソリューション](media/MapsWithVersioning2.png)
+![ソリューション。](media/MapsWithVersioning2.png)
 
 ## <a name="how-to-extend-purchline-and-purchlinehistory-tables-with-new-fields"></a>新しいフィールドで PurchLine および PurchLineHistory テーブルを拡張する方法
 
@@ -54,7 +54,7 @@ ms.locfileid: "6193450"
 
 これらの手順で説明するクラス、インターフェイス、および拡張機能を次の図に示します。
 
-![MapClassExtensions](media/TableMaps.png)
+![MapClassExtensions.](media/TableMaps.png)
 
 
 

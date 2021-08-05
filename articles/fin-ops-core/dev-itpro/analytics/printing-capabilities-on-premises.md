@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 52c40d511bc75f439cf341a252e7a1fc06629ac8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f590a80e83237c1e93492b239b289ac5e56481ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749357"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345672"
 ---
 # <a name="document-generation-publishing-and-printing-in-on-premises-deployments"></a>オンプレミス配置でのドキュメントの生成、発行、および印刷
 
@@ -40,7 +40,7 @@ Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構
 - **ファイル** – ローカル印刷用にブラウザに直接ダウンロードされる PDF ファイルを作成します。
 - **印刷** – サポートされているすべてのプラットフォームからネットワーク プリンターに直接ドキュメントを送信します。 これらのプラットフォームにはモバイル デバイスが含まれています。
 
-![ドキュメント公開サービス](media/document-publishing-services.png)
+![ドキュメント公開サービス。](media/document-publishing-services.png)
 
 クラウド ホスト型ソリューションで使用できる情報アクセスのオプションの高いレベルの概要については、[ドキュメント印刷の概要](print-documents.md) を参照してください。
 
@@ -49,7 +49,7 @@ Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構
 
 次の図は、ドキュメントの印刷に関係するコンポーネントを示しています。
 
-![ドキュメント印刷](media/Cloud-vs-on-premises.png)
+![ドキュメント印刷。](media/Cloud-vs-on-premises.png)
 
 拡張機能を使用して、アプリケーション レポートで埋め込みドリルスルー リンクの可用性を管理する方法の詳細については、付録を参照してください。
 
@@ -58,7 +58,7 @@ Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構
 
 次の図は、ネットワーク プリンターの管理に使用されるページを示しています。
 
-![ネットワーク プリンターのページの管理](media/manage-network-printers.png)
+![ネットワーク プリンターのページを管理します。](media/manage-network-printers.png)
 
 ## <a name="appendix"></a>付録
 

@@ -3,21 +3,16 @@ title: マルチ参照モジュール
 description: 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 219d44debfcb167a1e93052f436c481980cef0d9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ec1a00204f575eff9cb2f1136a912174e06f7b72
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748167"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661568"
 ---
 # <a name="multi-lookup-module"></a>マルチ参照モジュール
 
@@ -130,7 +125,7 @@ ms.locfileid: "5748167"
 | [ReferenceAppId](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#referenceappid) |ReferenceAppId: 文字列 (オプション)  <br>|  |
 | [ReverseLookupRelation](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#reverselookuprelation) |ReverseLookupRelation: ブール値 (省略可)  <br>|  |
 | [ShowPending](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#showpending) |ShowPending: ブール値 (省略可)  <br>|  |
-| [[タイプ](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
+| [タイプ](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
 
 #### <a name="events"></a>イベント
 

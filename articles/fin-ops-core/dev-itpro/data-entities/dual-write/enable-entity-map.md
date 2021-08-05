@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ededb77cdd0b58f0c073aebc61620beaf4fbd2b2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 99846192032e5ed6b4ca12ea1ed400ca47785270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748811"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345670"
 ---
 # <a name="enable-table-maps-for-dual-write"></a>テーブル マップの二重書き込みの有効化
 
@@ -30,13 +30,13 @@ ms.locfileid: "5748811"
 
 テーブル マップの二重書き込みを有効にすると、**実行していません** 状態で開始されます。 次に、テーブル マップは初期化フェーズを実行し、両側のテーブルに既存のデータをコピーすることにより初期書き込みを行います。 最後に、テーブルが完全に有効化されると、テーブル マップは状態を **実行中** に設定します。
 
-![テーブル マップの有効化](media/enabling-entity-map.png)
+![テーブル マップの有効化。](media/enabling-entity-map.png)
 
 状態が **実行中** の間、テーブルを一時停止できます。 その後、すべての変更は、再開するまでキューに配置されます。 再開すると、テーブルは "キャッチ アップ モード" になり、キューに入れられたすべての変更が再生されます。
 
 次の図で、一時停止しているテーブルの例を示します。
 
-![一時停止したテーブル](media/stop-pause-entity.png)
+![一時停止したテーブル。](media/stop-pause-entity.png)
 
 | 状態 | 説明 | 使用可能なアクション |
 |---|---|---|
@@ -48,11 +48,11 @@ ms.locfileid: "5748811"
 
 初期化フェーズでは、既存のデータが初期書き込みフェーズの一部としてコピーされます。
 
-![既存のデータのコピー](media/initial-write-phase.png)
+![既存のデータのコピー。](media/initial-write-phase.png)
 
 エンティティには複数の依存テーブルがあります。 たとえば、顧客-連絡先テーブルには、顧客グループと通貨が依存テーブルとしてあります。
 
-![依存テーブル](media/dependent-or-related-entities.png)
+![依存テーブル。](media/dependent-or-related-entities.png)
 
 これらはリレーショナル データを持つリレーショナル アプリであるため、依存テーブルを有効にしないと、後でエラーが発生する可能性があります。 これらのエラーを防ぐために、テーブル マップを有効にする前に、有効にすることを推奨する関連テーブルの一覧が提供されます。
 
@@ -63,13 +63,13 @@ ms.locfileid: "5748811"
 > [!NOTE]
 > テーブルを一時停止したときの動作も同様です。 その場合は、すべての関連するテーブルを一時停止することもできます。
 
-![すべての依存テーブルの一覧表示](media/related-entity-maps.png)
+![すべての依存テーブルの一覧表示。](media/related-entity-maps.png)
 
 競合を解決するために使用する別のマスターを指定することによって、これをさらにカスタマイズできます。 (既定では、Dataverse が使用されます。) 既存のデータをコピーしない場合は、**初期同期** チェック ボックスをオフにして、初期同期をスキップします。 または、1 つ以上の関連テーブルの選択をキャンセルして、それらを解除します。 テーブル マップをドラッグして、同期される順序を変更することもできます。
 
 ダイアログ ボックスで選択を完了し、**実行** を選択すると、テーブル マップおよび関連するすべてのテーブルが初期書き込みフェーズを実行します。 テーブル マップ一覧ページにリダイレクトされます。 エラーが発生した場合は、**初回同期の詳細** タブで詳細を確認できます。このタブでは、既存のデータのコピー中に発生するすべてのエラーの詳細を表示します。 原因となっているエラーを修正した後、実行を再実行し、結果を監視できます。 または、既存のデータを同期する必要がなくなった場合や、基になるデータが原因で繰り返し問題が発生する場合は、初期書き込みフェーズをスキップできます。 代わりに、**初期同期をスキップ** を選択して、ライブ書き込みを有効にできます。
 
-![初期書き込みのスキップ](media/skip-initial-writes.png)
+![初期書き込みのスキップ。](media/skip-initial-writes.png)
 
 ## <a name="criteria-for-linking-tables"></a><a id="criteria-for-linking"></a> テーブルをリンクするための基準
 
@@ -77,15 +77,15 @@ ms.locfileid: "5748811"
 
 たとえば、Finance and Operations アプリでは、**CustomerAccount** がアカウント テーブルのキーです。
 
-![Finance and Operations アプリでのアカウント テーブルのキー](media/define-alternative-key.png)
+![Finance and Operations アプリでのアカウント テーブルのキー。](media/define-alternative-key.png)
 
 Dataverse では、**accountnumber** はアカウント テーブルのキーとして定義されます。
 
-![Dataverse で定義されたアカウント テーブル](media/define-account-entity.png)
+![Dataverse で定義されたアカウント テーブル。](media/define-account-entity.png)
 
 顧客 V3 テーブル マップでは、**accountnumber** が **CustomerAccount** にマップされていることがわかります。
 
-![テーブル マップでのマッピング](media/mapped-to-entity-map.png)
+![テーブル マップでのマッピング。](media/mapped-to-entity-map.png)
 
 ## <a name="next-steps"></a>次のステップ
 

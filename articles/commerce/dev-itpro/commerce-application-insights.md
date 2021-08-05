@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: a4a6f4573527263eed0387ee1af17c86de30436d
-ms.sourcegitcommit: 4fc5c8b278b2b492eea5a0bb136019d4c1eaceef
+ms.openlocfilehash: 08446aba3256e662a072c03c3ffdd240839e2432
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "6191354"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354667"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
@@ -46,7 +46,7 @@ CRT で使用するインストルメンテーション キーをコピーしま
 1. 新しい C\# クラス ライブラリ プロジェクトを作成し、**Contoso.Diagnostic** という名前を付けます。
 
     > [!div class="mx-imgBorder"]
-    > ![新規 Contoso.Diagnostic プロジェクト](media/VSProject.png)
+    > ![新規 Contoso.Diagnostic プロジェクト。](media/VSProject.png)
 
 2. NuGet パッケージ参照を次のライブラリに追加します。
 
@@ -121,17 +121,17 @@ CRT で使用するインストルメンテーション キーをコピーしま
 2. Application Insights インスタンスに移動し、 **監視** 配下の **ログ (分析)** を選択して、新しいクエリ エディターを開きます。
 
     > [!div class="mx-imgBorder"]
-    > ![ログ分析オプション](media/AppInsightQuery.png)
+    > ![ログ分析オプション。](media/AppInsightQuery.png)
 
 3. **スキーマ** タブで、 **追跡** をダブル クリックしてクエリ エディターに追加します。 既定ては時間の範囲は、**直近の24時間** となっています。
 
     > [!div class="mx-imgBorder"]
-    > ![クエリ エディター に 追加されたトレース](media/Trace.png)
+    > ![クエリ エディター に 追加されたトレース。](media/Trace.png)
 
 4. **実行** を選択してクエリを実行してください。 記録されたイベントが結果として表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![ログ詳細](media/TraceDetails.png)
+    > ![ログ詳細。](media/TraceDetails.png)
 
 ## <a name="build-the-deployable-package"></a>配置可能なパッケージを作成します。
 

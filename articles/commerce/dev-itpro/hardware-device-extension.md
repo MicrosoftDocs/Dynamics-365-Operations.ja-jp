@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-ms.openlocfilehash: 3fa4c4465159481c7159b61d50864556454d23b8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: be95ac08b087accb633e77983368b7c681110210
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797219"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346792"
 ---
 # <a name="integrate-the-pos-with-a-new-hardware-device"></a>POS と新しいハードウェア デバイスの統合
 
@@ -90,7 +90,7 @@ class HardwareStationDeviceActionResponse extends Response {
 
 次の図は、POS、ハードウェア ステーション、およびハードウェア デバイス間のフローを示しています。
 
-![フロー図](./media/POSDeviceExtension.png)
+![フロー図。](./media/POSDeviceExtension.png)
 
 ## <a name="hardware-station-extension"></a>ハードウェア ステーション拡張機能
 

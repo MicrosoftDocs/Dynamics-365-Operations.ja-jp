@@ -2,22 +2,23 @@
 title: AX 2012 から Finance and Operations へのアップグレード
 description: このトピックでは、現在 Microsoft Dynamics AX 2012 を実行している顧客が、データとコードを Finance and Operations に移動するために使用できるプロセスについて説明します。
 author: LaneSwenka
-ms.date: 06/22/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 23ebe7216258a507c15fd3b5985f0385800a6333
-ms.sourcegitcommit: f9b145ef4a81cec81f420871b4130b05db4f4500
+ms.openlocfilehash: 093894c5613ace3daf07c0052b09536bced44faf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301293"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360830"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
@@ -33,7 +34,6 @@ Finance and Operations アプリは、Microsoft Dynamics AX 2012 を実行して
 > [!IMPORTANT]
 > 一部の [推奨されない機能](deprecated-features.md) を実行している Dynamics AX 2012 の実装は、現在アップグレードできません。 たとえば、仮想会社またはデータ パーティションのいずれかを使用しているシステムからのアップグレードはできません。 システムがアップグレードできるかどうか分からない場合は、アップグレード アナライザー ツールを実行します。 
 
-> [!NOTE]
 > クラウドへの移行を開始するときは、[Dynamics 365移行プログラム](https://dynamics.microsoft.com/migration-program/)を使用した場合でも、無料で義務なしの移行評価を使用します。
 
 ## <a name="overview"></a>概要
@@ -42,7 +42,7 @@ Finance and Operations アプリは、Microsoft Dynamics AX 2012 を実行して
 
 次の図は、エンド ツー エンドのアップグレード プロセス、および各フェーズの一部とみなす活動を示します。 
 
-![アップグレード プロセス](./media/upgrade-process.png)
+![アップグレード プロセス。](./media/upgrade-process.png)
 
 Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについては、[Dynamics AX 2012 を Finance and Operations アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/) を参照してください。
 
@@ -127,7 +127,7 @@ LCS 実装プロジェクトに初めてサインインすると、**プロジ�
 
 次の図がプロセスを示します。 AX 2012 データベースをバックアップして、それを Azure にアップロードし、Finance and Operations 環境に復元してからデータ アップグレードを実行するだけです。
 
-![開発環境でのデータ アップグレード](./media/data-upgrade-dev.png)
+![開発環境でのデータ アップグレード。](./media/data-upgrade-dev.png)
  
 データ アップグレードは、特殊なタイプの配置可能パッケージを介して行われます。 同じメカニズムを使用して、新しいコードを 1 つの環境から別の環境へと配置します。
 
@@ -135,14 +135,20 @@ LCS 実装プロジェクトに初めてサインインすると、**プロジ�
 
 詳細については、[AX 2012 からのアップグレード - 開発環境でのデータ アップグレード](data-upgrade-2012.md) を参照してください。
 
+> [!NOTE]
+> AX 2012 R3 アップグレードの一部として Commerce 機能とストア内コンポーネントを使用している場合は、Dynamics 365 Commerce [段階的なロールアウト (N-1) のインストール、コンフィギュレーション、および切替のガイド](../../../commerce/dev-itpro/n-1-installation-configuration.md)を確認することをお勧めします。 開発環境では、小売パラメーターを初期化し、CDX スケジュールを再初期化し、データ アップグレード パッケージを適用した後、最新の品質更新およびチャネル拡張機能を環境に適用する必要があります。 
+
 ### <a name="data-upgrade-sandbox-environments"></a>データ アップグレード (サンドボックス環境)
 開発環境でのデータ アップグレードが完了したら、サンドボックス環境で同じプロセスを実行できます。 サンドボックス環境とは、アップグレードした AX 2012 のデータとコードを使用して、ビジネス ユーザーと機能チームのメンバーが業務プロセスをテストできる環境のことです。
 
 次の図では、サンドボックス環境でデータ アップグレードを実行するためのプロセスを示します。 ここでの違いは、従来の SQL バックアップに代わって bacpac ツールが使用されることです。 Microsoft SQL Server と Azure SQL データベース間の変換には、このツールが必要です。 これは標準 SQL ツールであり、Finance and Operations に固有のものではありません。
 
-![サンドボックス環境でのデータ アップグレード](./media/data-upgrade-sandbox.png)
+![サンドボックス環境でのデータ アップグレード。](./media/data-upgrade-sandbox.png)
 
 詳細については、[AX 2012 からのアップグレード - セルフサービス環境でのデータ アップグレード](data-upgrade-self-service.md) を参照してください。
+
+> [!NOTE]
+> AX 2012 R3 アップグレードの一部として Commerce 機能とストア内コンポーネントを使用している場合は、Dynamics 365 Commerce [段階的なロールアウト (N-1) のインストール、コンフィギュレーション、および切替のガイド](../../../commerce/dev-itpro/n-1-installation-configuration.md)を確認することをお勧めします。 サンドボックス環境および開発環境では、小売パラメーターを初期化し、CDX スケジュールを再初期化し、データ アップグレード後に CSU を再初期化する必要があります。 CSU の再設定の詳細については、[Commerce Scale Unit (クラウド) の初期化](../deployment/Initialize-Retail-Channels.md)を参照してください。
  
 ## <a name="validate"></a>検証
 検証フェーズを入力すると、アップグレード済カスタム コードとアップグレード済データを含む環境が使用できるようになります。 このフェーズでは、アップグレード済の環境が要求通りに動作することを検証してテストするプロセスを説明します。 また、稼働準備のプロセスについても説明します。

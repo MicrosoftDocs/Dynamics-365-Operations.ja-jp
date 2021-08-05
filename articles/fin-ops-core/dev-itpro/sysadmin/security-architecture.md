@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a23884aad5225d524844a1fa8339feb90552eb88
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b13b0462718d2b49f92c3c1bfa798e075c221c78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745909"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345614"
 ---
 # <a name="security-architecture"></a>セキュリティ アーキテクチャ
 [!include [banner](../includes/banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "5745909"
 
 セキュリティ アーキテクチャを理解すると、業務の要件に合わせてセキュリティを容易にカスタマイズできます。 次の図は、セキュリティ アーキテクチャの高レベルな概要を示しています。 
 
-[![セキュリティ アークテクチャの概要を示す図](./media/security-architecture.png)](./media/security-architecture.png)
+[![セキュリティ アークテクチャの概要を示す図。](./media/security-architecture.png)](./media/security-architecture.png)
 
 ## <a name="authentication"></a>認証
 既定では、ユーザー権利を持つ認証済みユーザーのみが接続を確立できます。 

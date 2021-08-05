@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea6e8b13fd2efb0c7ad807cf3537c1d3c3a47650
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 09be4f757323727be0337ea51ef8ea97d96cf62e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752778"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359349"
 ---
 # <a name="validations-default-values-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
 
@@ -38,27 +38,27 @@ ms.locfileid: "5752778"
 
 テーブルの検証は CUD 操作の一部として自動的に実行されます。 **Table.ValidateField、AllowEdit、AllowEditOnCreate** フィールド レベルの検証は、データ エンティティで挿入または更新を実行する時に、自動的に発生します。 これは、すべてのパス (X++、OData など) に当てはまります。 これらの検証は、エンティティから個々のデータ ソースにフィールドがマップされるマッピング処理中に行われます。
 
-[![redo1](./media/redo1-1024x582.png)](./media/redo1.png)
+[![redo1.](./media/redo1-1024x582.png)](./media/redo1.png)
 
 データ エンティティからフィールド値がマップされたデータ ソース フィールドにコピーされた後、フィールドの検証は設定されたフィールドで実行されます。 検証にはテーブル レベルの **validateField** が含まれ、**AllowEdit** および **AllowEditOnCreate** を検証します。 エラーにより検証が失敗した場合、残りのフィールドの検証が続行されます。 最後に、データ ソースのいずれかの検証プロセス中に発生したエラーが発生したかどうかを、検証によって確認します。 エラーがあった場合、この時点でプロセス エラーが発生するようになり、テーブル レベルの **validateWrite()** は呼び出されません。 バックエンド テーブルに対して **validateField** をスキップするには、コンシューマーは **DataEntity.skipDataSourceValidateField(Int \_DataEntityFieldId, ブール値 \_skip)** を呼び出します。 このメソッドのフィールド ID は、データ エンティティにマップされたフィールドのフィールド ID であり、フィールドに、バックエンド テーブルのフィールドではないことに注意してください。 次の API を使用することによって、コンシューマーに関係なく、特定のフィールドの検証をスキップできます。
 
-[![Over9](./media/over9.png)](./media/over9.png)
+[![Over9.](./media/over9.png)](./media/over9.png)
 
 **Table.ValidateWrite** レコード レベル **Table.ValidateWrite** バックエンドテーブルに定義されている検証は、データ エンティティの挿入および更新を実行すると自動的に発生します。 これは、すべてのパス (X++、OData など) に当てはまります。 これらの検証は、実際の挿入または更新がデータ ソースに適用される直前に行われます。 検証が失敗すると、エラーが発生し、その他のデータ ソースのプロセスが停止されます。 
 
-![redo2](./media/redo2-1024x636.png)
+![redo2.](./media/redo2-1024x636.png)
 
 データ エンティティのすべてのバックエンド テーブルに対して **validateWrite** をスキップするには、コンシューマーは **DataEntity.skipDataSourceValidateWrite(ブール値 \_skip)** を呼び出します。 このメソッドは、すべてのデータソースに対して **validateWrite** をオンまたはオフにします。 次の API を使用すると、コンシューマーに関係なく、特定のデータ ソースの検証をスキップできます。
 
-[![Over10](./media/over10.png)](./media/over10.png)
+[![Over10.](./media/over10.png)](./media/over10.png)
 
 バック エンド テーブルに定義されている **Table.ValidateDelete** レコード レベル **ValidateDelete** 検証は、データ エンティティの削除を実行すると自動的に発生します。 これは、すべてのパス (X++、OData など) に当てはまります。 これらの検証は、削除がデータ ソースに適用される直前に行われます。 検証が失敗すると、エラーが発生し、その他のデータ ソースのプロセスが停止されます。
 
-[![Over11](./media/over11.png)](./media/over11.png)
+[![Over11.](./media/over11.png)](./media/over11.png)
 
 データ エンティティのすべてのバックエンド テーブルに対して **validateDelete** をスキップするには、コンシューマーは **DataEntity.skipDataSourceValidateDelete(ブール値 \_skip)** を呼び出します。 このメソッドは、すべてのデータソースに対して **validateDelete** をオンまたはオフにします。 次の API を使用すると、コンシューマーに関係なく、特定のデータ ソースの検証をスキップできます。
 
-[![Over12](./media/over12.png)](./media/over12.png)
+[![Over12.](./media/over12.png)](./media/over12.png)
 
 ### <a name="entity-based-validation-behavior"></a>エンティティ ベースの検証動作
 
@@ -66,7 +66,7 @@ ms.locfileid: "5752778"
 <thead>
 <tr>
 <th>検証</th>
-<th>ターゲット</th>
+<th>目標</th>
 <th>呼び出し側</th>
 </tr>
 </thead>
@@ -122,17 +122,17 @@ ms.locfileid: "5752778"
 
 **DataEntity.initValue:** データ エンティティは、既定値で、エンティティ レベル **initValue** に存在するカスタム ロジックを使用して初期化されます。 このメソッドは、X++ からのデータ エンティティに対して挿入または更新が実行されたときに自動的に呼び出されることはありません。 必要な場合に明示的に呼び出す必要があります。 このメソッドは、新しいレコードが作成されるときにフォーム エンジンによって自動的に呼び出されます。 **DataEntity.initValue** は、データ エンティティで使用されるバック エンド テーブルの **initValue** メソッドを呼び出しません。 **Table.initValue:** テーブル レベル **initValue** は、バック エンド テーブル定義に従って、データ エンティティの挿入を実行するときに発生します。 これは、すべてのパス (X++、OData など) に当てはまります。 **Table.initValue** はエンティティがデータ ソース フィールドにマップされる直前に実行されます。
 
-[![Over13](./media/over13.png)](./media/over13.png)
+[![Over13.](./media/over13.png)](./media/over13.png)
 
 データ エンティティのすべてのバックエンド テーブルに対してエンティティ レベルの **initValue** をスキップするには、コンシューマーは **DataEntity.skipDataSourceInitValue(ブール値 \_skip)** を呼び出します。 このメソッドは、すべてのデータソースに対して **initValue** をオンまたはオフにします。 次の API を使用することによって、コンシューマーに関係なく、特定のフィールドの **initValue** をスキップできます。
 
-[![Capturea](./media/capturea.png)](./media/capturea.png)
+[![Capturea.](./media/capturea.png)](./media/capturea.png)
 
 ### <a name="defaultrow"></a>DefaultRow
 
 **DataEntity.DefaultRow: DataEntity.DefaultRow** は、**defaultField** および **getDefaultingDependencies** と組み合わせて使用され、既定値を提供します。 X++ またはフォーム エンジンによって自動的に呼び出されません。 **Table.DefaultRow: Table.DefaultRow** は、データソースの挿入と検証の前に、マッピングが完了した後データソースに対して自動的に呼び出されます。
 
-[![Captureb](./media/captureb.png)](./media/captureb.png)
+[![Captureb.](./media/captureb.png)](./media/captureb.png)
 
 ## <a name="unmapped-fields"></a>マップされていないフィールド
 データ エンティティは、データ ソースのフィールドに直接マップされているフィールドに *マップされていない* フィールドを追加できます。 マップされていないフィールドの値を生成するメカニズムは 2 つあります。

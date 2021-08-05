@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a749bb30b946a7545abeaede83738953489ed5d2
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 272bc074dd194f4a03046f7b9810b50ae3b6e547
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189238"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358573"
 ---
 # <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 
@@ -65,7 +65,7 @@ ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname
 2. ダイアログ ボックスで、モデルを選択して競合を確認します。 これは、新しくインストールされたベースライン モデルの要素に対するカスタマイズを含まれるモデルです。
 3. **プロジェクトの作成** をクリックします。 競合するモデルの要素のみを含むプロジェクトが生成されます。 
 
-    [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
+    [![AddUpdate\_MetaHotfix.](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 
 4. 競合する要素のデザイナーを開いて、表示されたツールを使って競合を表示し、解決します。 
 

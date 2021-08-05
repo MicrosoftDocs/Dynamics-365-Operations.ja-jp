@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9451a56f662df90b747ba9323612b83d24ccafa
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 397a594b96f4e11c8f58a986d6a2b7093d0618e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189304"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358925"
 ---
 # <a name="image-preview-subpattern"></a>画像のプレビューのサブパターン
 
@@ -40,7 +40,7 @@ ms.locfileid: "6189304"
     -   テキスト入力
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![画像プレビューのワイヤーフレーム](./media/imagepreview1.png)](./media/imagepreview1.png)
+[![画像プレビューのワイヤーフレーム。](./media/imagepreview1.png)](./media/imagepreview1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -87,7 +87,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **RetailVisualProfile** **(ログイン)** 
 
-[![画像プレビューの例](./media/imagepreview2.png)](./media/imagepreview2.png)
+[![画像プレビューの例。](./media/imagepreview2.png)](./media/imagepreview2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -109,7 +109,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![画像プレビューの例](./media/imagepreview3.png)](./media/imagepreview3.png)
+[![画像プレビューの例。](./media/imagepreview3.png)](./media/imagepreview3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

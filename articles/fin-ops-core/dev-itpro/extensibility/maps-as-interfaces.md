@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: e72203ba2166d04fca60a36ba8797847ed7400e9
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 136d03d58fce63bcd4cfbfc42720832d1a5cc4d0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193768"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349142"
 ---
 # <a name="extend-table-maps-that-are-used-as-interfaces"></a>インターフェイスとして使用されるテーブル マップの拡張
 
@@ -35,7 +35,7 @@ ms.locfileid: "6193768"
 
 新しい **SalesPurchTableInterface** クラスは、**SalesPurchTable** テーブル マップのリファクタリングによって導入された ApplicationSuite 機能の抽象基本クラスです。 このクラスにはフィールドとメソッドの抽象メソッドが含まれています。これらはインターフェイスを実装する各テーブルに存在している必要があります。 これにより、メソッドに既定のロジックを含めることができ、すべての実装においてよく用いられます。 **SalesPurchTable** テーブル マップを実装する各テーブルは、**SalesPurchTableInterface** クラスの階層の派生クラスとして表す必要があります。 各派生クラスは、**SalesPurchTableInterfaceFactory** 属性クラスで修飾される必要があります。 属性を使用して派生クラスをテーブルに関連付けます。これで、**SalesPurchTable** レコードに応じて、適切なタイプのクラスのインスタンスを作成できるようになります。
 
-![MapsAsInterfaces](media/MapsAsInterfaces1.png)
+![MapsAsInterfaces.](media/MapsAsInterfaces1.png)
 
 テーブル マップ メソッドが廃止されたにもかかわらず、対応するメソッドはまだ実装テーブルに存在します。 これらのメソッドのロジックは、テーブル マップのメソッドへの呼び出しを階層の基本クラスの対応するメソッドにデリゲートすることからリファクタリングされています。
 
@@ -51,7 +51,7 @@ ms.locfileid: "6193768"
     
 上記のクラスと拡張機能は、次の図に示されています。
 
-![MapsAsInterfacesWalkThrough](media/MapsAsInterfaces2.png)
+![MapsAsInterfacesWalkThrough.](media/MapsAsInterfaces2.png)
 
 この図には、**SalesPurchTable** を実装する **ISV1Header** テーブルを含み、独自の **SalesPurchTableInterface** 派生クラスを含む ISVModule1 モデルが含まれています。 このモデルは ISVModule2 から独立しているため、ISVModule2 のロジックが、**ISV2SalesPurchTableInterface** クラス階層からインスタンスを作成すると、**SalesPurchTable** レコードが **ISV1Header** タイプの場合に基本クラスのインスタンスが返されます。 基本クラスのメソッドが、未知のテーブルに対して適切な結果を返す場合、同じインストール内で 2 つの ISV モデルが共存します。
 

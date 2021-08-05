@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0ffdf123a09c0f673c46f175facac943a21e8cbb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c37ec0fed301b2d62c4f219c9ae98c229b3b372e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790946"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347454"
 ---
 # <a name="calculation-of-tax-exemption"></a>非課税の計算
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.13 以降には、**消費�
 
 この設定は、コール センターまたは店舗で作成された注文でもサポートされます。
 
-![非課税シナリオで価格を調整するための、非課税を含む価格の計算オプションの設定](media/CalcPriceInc.png)
+![非課税シナリオで価格を調整するための、非課税を含む価格の計算オプションの設定。](media/CalcPriceInc.png)
 
 ## <a name="set-up-price-reductions-for-tax-exemptions"></a>非課税の価格下方修正を設定する
 

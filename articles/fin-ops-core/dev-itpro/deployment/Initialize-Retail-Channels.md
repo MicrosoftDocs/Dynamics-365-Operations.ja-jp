@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 75948fa45002b7e5f56a9fdd5da168641ef8fbb8
-ms.sourcegitcommit: cf8d87ea9333ae2af7db5887771df33b059cf34a
+ms.openlocfilehash: 5b75e15f5638fc216f20b57dd2126b7c7a7aeaea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5979815"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347859"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -76,7 +76,7 @@ Commerce Scale Unit は、次の地域に配置することができます。
 
 制限能力地域での配置の許容範囲にはかなり制約があります。 配置要求は、状況に応じて評価されます。 制限されたキャパシティ地域での配置に関して説得力のあるビジネス ニーズがある場合は、待機リストに追加するサポート要求を提出することができます。
 
-![地域の利用可能性を示すマップ](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")
+![地域の可用性を示すマップ。](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")
 
 ## <a name="initialize-commerce-scale-unit-as-part-of-a-new-environment-deployment"></a>Commerce Scale Unit を新しい環境の展開の一部として初期化します
 

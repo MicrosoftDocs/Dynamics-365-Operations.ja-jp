@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d23bf206018e9077d2f290af6d32901d60418161
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 463e44694707c0553fce1941fae61842e7c92b6a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748093"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356239"
 ---
 # <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 
@@ -67,7 +67,7 @@ AX 2012 では、ユーザーはオンプレミスの Active Directory サーバ
        1. **AX からインポート** をクリックします。 グリッドには既存のユーザーが入力されます
        1. 各ユーザーについては、次の図に示すように、対応する Azure AD 電子メール アドレスを入力します。
 
-           ![AX 2012 ユーザーの Azure AD 電子メール アドレス](media/userInfoEmailMapping.png)
+           ![AX 2012 ユーザーの Azure AD 電子メール アドレス。](media/userInfoEmailMapping.png)
 
    - ファイルからユーザーをインポートします。 このオプションは高速です。 多くのユーザーを更新する必要があるときは、このオプションを使用することをお勧めします。
 

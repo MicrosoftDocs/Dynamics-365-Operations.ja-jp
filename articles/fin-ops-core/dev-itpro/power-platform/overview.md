@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 1c98ec12ade16e4850b624fdec69681b16b357c9
-ms.sourcegitcommit: 6884d9c845a8d16e7a18d5a3880606e3cbe78b95
+ms.openlocfilehash: 20fb15727448f157c747c6a5eff353029fe6433c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111368"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345644"
 ---
 # <a name="microsoft-power-platform-integration-with-finance-and-operations-apps"></a>Finance and Operations アプリと Microsoft Power Platform の統合
 
@@ -110,14 +111,14 @@ Microsoft Power Platform、Dataverse、二重書き込み、および Finance an
 
 - Finance and Operations 環境管理者を識別します。 **環境の詳細** セクションにて、情報を確認できます。
 
-    ![環境の詳細タブ](media/EnvironmentDetails.png)
+    ![環境の詳細タブ。](media/EnvironmentDetails.png)
 
 - Microsoft Power Platform 環境ガバナンス ポリシーを検証します。 検証するには、**グローバル管理者** または **Power Platform 管理者** である必要があります。
 
     1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com) にサイン インします。
     2. ページの右上隅にある **設定** ボタン (ギヤ記号) を選択して、**Power Platform 設定** ウィンドウを開きます。
 
-        ![Power Platform 設定ウィンドウ](media/PowerPlatformSettings.png)
+        ![Power Platform 設定ウィンドウ。](media/PowerPlatformSettings.png)
 
 - 全員に Microsoft Power Platform 実稼働環境の作成を **許可しない** 組織のために、Finance and Operations 環境管理者のアカウントを次の Microsoft Power Platform 管理ロールの 1 つを追加する必要があります。 この変更を行うには、**グローバル管理者** が必要です。
 
@@ -138,7 +139,7 @@ Microsoft Power Platform 統合は、LCS で新しい Finance and Operations 環
 
 LCS に新しい Finance and Operations 環境を設定する場合、配置ウィザードには値を設定することができる複数のセクションが含まれています。 それらセクションの 1 つが **Power Platform 統合** という名前です 。
 
-![配置ウィザードの Power Platform 統合セクション](media/powerplat_integration_step0.png)
+![配置ウィザードの Power Platform 統合セクション。](media/powerplat_integration_step0.png)
 
 **Power Platform 統合** セクションを構成するには、次の手順に従います。
 
@@ -162,7 +163,7 @@ Finance and Operations 環境が配置された後に設定するには、次の
 1. Finance and Operations 環境が LCS を通じて展開された後、LCS の **環境詳細** ページが開きます。
 2. **Power Platform 統合** セクションで、**設定** を選択します。
 
-    ![Power Platform 統合セクションの設定ボタン](media/powerplat_integration_step1.png) 
+    ![Power Platform 統合セクションの設定ボタン。](media/powerplat_integration_step1.png) 
 
 3. **Power Platform 環境の設定** ダイアログ ボックスで契約条件に同意し、ダイアログ ボックスの下部にある **設定** を選択します。
 
@@ -180,9 +181,9 @@ Finance and Operations 環境が配置された後に設定するには、次の
 
     Dataverse 環境がプロビジョニングされた後、**新しいアドインのインストール** と **二重書き込みアプリケーション** ボタンが **Power Platform 統合** セクションで利用できます。
 
-    ![新しいアドイン ボタンのインストール](media/InstallANewAddIn.png)
+    ![新しいアドイン ボタンをインストールします。](media/InstallANewAddIn.png)
 
-    ![二重書き込みアプリケーション ボタン](media/powerplat_integration_dwApp_button.png)
+    ![二重書き込みアプリケーション ボタン。](media/powerplat_integration_dwApp_button.png)
 
 > [!IMPORTANT]
 > Finance and Operations 環境に作成およびリンクされる Dataverse 環境の **言語** および **通貨** の値は、Azure AD テナントの物理的なアドレスに基づいて自動的に決定されます。 たとえば、住所が米国ワシントン州 Redmond である場合、既定では言語は英語で、通貨は米ドル (USD) になります。
@@ -194,7 +195,7 @@ Finance and Operations 環境が配置された後に設定するには、次の
 
 設定は、Dataverse ベースの環境を配置するさまざまなステージで失敗する可能性があります。 
 
-![デュアル書き込みの失敗](media/Error.png)
+![二重書き込み設定の失敗。](media/Error.png)
 
 - 設定が失敗すると、エラー メッセージが表示されます。 エラー メッセージに基づいて、ライセンスや容量の問題に対処する必要がある場合があります。 これらが解決されたら、LCS の **環境の詳細** ページの **Power Platform 統合** セクションにある **再開** ボタンを使用して設定を完了することができます。
 

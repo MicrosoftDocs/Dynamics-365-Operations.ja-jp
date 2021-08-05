@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 63044254730d6fea6eee064475d0307872189a97
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 570727a69b145cdae87e3082a9c2b886f3a2d0b1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923321"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348567"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -103,13 +103,13 @@ ms.locfileid: "5923321"
 
 次の図は、環境計画プロセスを示しています。
 
-![環境計画プロセス フロー](./media/environment-planning-1-process-flow.png)
+![環境計画プロセス フロー。](./media/environment-planning-1-process-flow.png)
 
 ## <a name="additional-environments"></a>追加の環境
 
 追加の環境は、アドオンとして購入するか、クラウド ホスト環境として展開することができます。 次の図は、実装の複雑さに基づく標準および追加の環境の *サンプル* 概要を示しています。
 
-![環境の目的と複雑度](./media/environment-planning-2-purpose-complexity-matrix.png)
+![環境の目的と複雑度。](./media/environment-planning-2-purpose-complexity-matrix.png)
 
 > [!IMPORTANT]
 > 常に、`dynadmin@customer.com` などの **名前のない** アカウントを使用して環境を配置します。 環境に、ステータスと保守を担当する所有者を割り当てます。 すべての環境で、同じ専用の環境の管理者アカウントを使用することを強くお勧めします。 Go-Live 後、新しいリリースで作業する場合、生産をサポートするために追加のレベル 2 以上の環境を取得します。
@@ -141,11 +141,11 @@ ms.locfileid: "5923321"
 
 環境の用途によって、正しいレベル 2 以上の環境を選択することが重要です。 次の図に記載されているガイダンスは、*ベースライン* です。 特定のビジネス シナリオと、ユーザーの種類、複雑さ、およびボリュームなどの要因に基づいて、実装パートナーと協力してこのガイドを調整してください。
 
-![環境レベル](./media/environment-planning-3-environment-tiers.png)
+![環境レベル。](./media/environment-planning-3-environment-tiers.png)
 
 サブスクリプション見積が有効になると、次の図に示すように、LCS で 1 時間あたりのトランザクション明細行を表示できます。
 
-![サブスクリプション見積](./media/environment-planning-4-subscription-estimate.png)
+![サブスクリプション見積。](./media/environment-planning-4-subscription-estimate.png)
 
 ### <a name="purchasing-add-on-environments"></a>アドオン環境の購入
 
@@ -153,7 +153,7 @@ ms.locfileid: "5923321"
 
 次の図では、アドオン環境を購入するためのプロセスを表示します。
 
-![アドオンの調達](./media/environment-planning-5-procuring-add-on.png)
+![アドオンの調達。](./media/environment-planning-5-procuring-add-on.png)
 
 > [!IMPORTANT]
 > マイクロソフト ボリューム ライセンス契約をお持ちの場合、Microsoft の製品およびサービス契約 (MPSA) ライセンス プログラムを通じて月間ベースでアドオン環境にサブスクライブできます。 または、Microsoft クラウド ソリューション プロバイダー (CSP) プログラムからサブスクライブすることができます。 さまざまな環境と層の詳細については、[Dynamics 365 の価格設定](https://dynamics.microsoft.com/pricing/)から最新の *Microsoft Dynamics 365 ライセンス ガイド* をダウンロードしてください。

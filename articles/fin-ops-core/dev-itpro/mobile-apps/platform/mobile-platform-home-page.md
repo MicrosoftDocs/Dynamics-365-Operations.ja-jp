@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 255544
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 9f72aa41e107b49f6e4719275dd341833dc23c28
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: f930e9c38a8b54d5510c462d746eabef63aed9f5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908844"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344850"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -106,7 +106,7 @@ ms.locfileid: "5908844"
 
     **ファイル** > (ドメインなし) > **ExpenseMobile.js** などのワークスペース JavaScript を表示するには、ノードを展開します。 JavaScript ファイルをクリックして表示し、ブレークポイントを追加します。
     
-    ![経費管理モバイル ワークスペース](./media/expense-management-mobile-workspace.png)
+    ![経費管理モバイル ワークスペース。](./media/expense-management-mobile-workspace.png)
     
 5. デスクトップ画面に操作できるように、デスクトップにモバイル デバイスを反映します。 
 

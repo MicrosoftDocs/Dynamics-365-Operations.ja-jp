@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 89ae67fc4c2766ede9908280662bd880ab00db96
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ee7742baec0d0e3d183a8876fd4e670a46f185e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751250"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351136"
 ---
 # <a name="analytical-workspaces-using-power-bi-embedded"></a>分析ワークスペース (Power BI Embedded を使用)
 
@@ -36,14 +36,14 @@ Dynamics Finance and Operations アプリは、アプリケーション ワー�
 
 次のスクリーン ショットは、ワークスペース内の Power BI を示しています。
 
-![ワークスペースでの Power BI](./media/Power-BI-in-D365-Workspace.png)
+![ワークスペースでの Power BI。](./media/Power-BI-in-D365-Workspace.png)
 
 ## <a name="power-bi-vs-operational-workspaces"></a>Power BI 対 運用ワークスペース
 Power BI ワークスペースは、ほぼリアルタイムの情報に基づく分析インサイトによって運用ビューを補完します。 次は、Power BI ワークスペースと運用ワークスペースを視覚的に比較したものです。
 
 次のスクリーン ショットは、操作可能なワークスペースを示しています。
 
-![運用ワークスペース](./media/D365-Operational-Workspace.png)
+![運用ワークスペース。](./media/D365-Operational-Workspace.png)
 
 ## <a name="edit-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースで埋め込みレポートを編集する
 

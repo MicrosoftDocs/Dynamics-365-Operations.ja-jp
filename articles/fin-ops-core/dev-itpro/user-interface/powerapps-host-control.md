@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57087a4fa68051c765f463df970df0b6e55dc9f2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7acc4b256e2b945f4dc06b2b1048994aadb68480
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752930"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350110"
 ---
 # <a name="power-apps-host-control"></a>Power Apps ホスト コントロール
 
@@ -31,13 +31,13 @@ Microsoft Power Apps では、作成したアプリ、または別の人が作�
 
 1.  Power Apps で、ホストする Web ベースのアプリを検索し、**アプリ ID** 値を記録またはコピーします。
   
-    ![アプリ ID](media/powerapps-appid.png)
+    ![アプリ ID。](media/powerapps-appid.png)
   
 2.  Visual Studio でプロジェクトを開き、フォーム デザイナーで、Power Apps ホスト コントロールのインスタンスをページに追加します。
 3.  **プロパティ** ウィンドウに **アプリ ID** の値を入力します。
 4.  ページでアプリが現在のデータ ソースを共有、またはそこにリンクされている場合、アプリで表示するデータのプライマリまたはリンクされたキー フィールドの ID を渡すことができます。 この場合、ID を **エンティティ ID**、**エンティティ ID データ ソース/フィールド**、または **DataMethod** プロパティの値で指定します。 この値は、アプリにパラメーター値として渡され、アプリはその値を使用して、リンクされているデータを取得する必要があります。 
     
-    ![Power Apps ホスト コントロールのプロパティ ウィンドウ](media/powerapps-properties.png)
+    ![Power Apps ホスト コントロールのプロパティ ウィンドウ。](media/powerapps-properties.png)
     
 5.  場合によっては、Microsoft によって提供される開発またはサンドボックス Power Apps 環境でアプリをホストする場合があります。 この場合、**Power Apps 環境のオーバーライド** プロパティの値としてそのオーバーライド URL を指定する必要があります。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2093c74e302015b553cda92725a1c10b9abbab83
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 98ecec333c4acb9c70f41c6405a5d1d012d4b5d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189798"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358535"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 
@@ -33,7 +33,7 @@ ms.locfileid: "6189798"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![高度な選択パターン ワイヤーフレーム](./media/advancedselection1.png)](./media/advancedselection1.png)
+[![高度な選択パターン ワイヤーフレーム。](./media/advancedselection1.png)](./media/advancedselection1.png)
 
 ### <a name="related-patterns"></a>関連するパターン
 
@@ -56,7 +56,7 @@ ms.locfileid: "6189798"
 
 > [注記] ごのフォームでは、このパターンが利用できません。ここで表示している画像では、一般的な拡張選択フォームパターンの例を示しています。
 
-[![高度な選択の例](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
+[![高度な選択の例。](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
 
 

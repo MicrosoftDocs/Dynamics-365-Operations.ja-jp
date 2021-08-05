@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5765422fbcc963f96406c6614074b0b5826ff03
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0c5f272cae288989f03ab9b8ef190cf002fca46d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747971"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358563"
 ---
 # <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 
@@ -32,7 +32,7 @@ ms.locfileid: "5747971"
 ## <a name="overall-flow"></a>全体的な流れ
 次の図は、全体的なフローを示しています。 
 
-[![メタデータ修正プログラムのパッケージをインストールするためのプロセス](./media/configureinstallhotfix-1.png)](./media/configureinstallhotfix-1.png)
+[![メタデータ修正プログラムのパッケージをインストールするためのプロセス。](./media/configureinstallhotfix-1.png)](./media/configureinstallhotfix-1.png)
 
 ## <a name="download-the-hotfix-from-lcs"></a>修正プログラムを LCS からダウンロード
 修正プログラムをダウンロードする方法の詳細については、 [Lifecycle Services (LCS) から更新プログラムのダウンロード](download-hotfix-lcs.md) を参照してください。 ZIP ファイルをダウンロードした後は、そこから SCDP メタデータの修正プログラム パッケージを抽出し、ローカル フォルダーに保存できます。
@@ -104,7 +104,7 @@ Azure DevOps/TFS パラメーターを使用して、パッケージによって
 
 インストール コマンドが呼び出されると、パッケージのインストール プロセスが開始されます。 インストール プロセスの一環として、メタデータ ストア フォルダ内の一部の XML ファイルはそれ自体の修正で加えられた変更を反映するように更新されます。 Azure DevOps または TFS を使用している場合、これらのファイルがチーム エクスプローラーの **保留中の変更** ウィンドウに含まれた変更のリストに追加されます。 
 
-[![保留中の変更ウィンドウに含まれている変更の一覧](./media/configureinstallhotfix-2.png)](./media/configureinstallhotfix-2.png)
+[![保留中の変更ウィンドウに含まれている変更の一覧。](./media/configureinstallhotfix-2.png)](./media/configureinstallhotfix-2.png)
 
 ## <a name="resolve-conflicts-that-are-generated-by-the-installation-of-the-hotfix"></a>修正プログラムのインストールによって生成された競合を解決
 場合によっては、メタデータ修正プログラム パッケージに、上位モデルでカスタマイズされていたオブジェクトへの変更が含まれています。 この場合、インストール プロセスは修正プログラムのインストール後に解決する必要がある競合を自動的に生成します。 開発ツールを使用すると、競合しているすべての品目をグループ化するプロジェクトを作成することができます。 たとえば、VendTable フォームをカスタマイズするアプリケーション スイート パッケージに VAR レイヤー モデルがあり、SYS レイヤ モデルで VendTable フォームを変更する修正プログラムをインストールする場合、VAR レイヤ モデルで競合が発生する可能性があります。
@@ -123,7 +123,7 @@ Azure DevOps/TFS パラメーターを使用して、パッケージによって
 > [!NOTE]
 > ビルドとテストの自動化にビルド環境を使用する場合、ビルドの自動化プロセスは、Azure DevOps プロジェクトにあるメタデータの修正プログラム ファイルを作成できます。 それが属しているモデルの記述子ファイルがバージョン管理にチェックインする場合にのみ、修正プログラムを構築できます。 たとえば、修正プログラムのインストール プロセスがディレクトリ モデル (このファイルは保留中の変更の一覧に表示されます) が属しているファイルを変更した場合、ディレクトリ モデル (c:\\AOSService\\PackagesLocalDirectory\\ディレクトリ\\記述子\\Directory.xml) の記述子ファイルが既に Azure DevOps プロジェクトにチェックインされていることを確認します。 チェックインされていない場合は、ソース管理エクスプローラーを使用してチェックインする前に、追加保留中の変更の一覧に追加します。 
 
-[![保留中の変更のリストに記述子ファイルを手動で追加します](./media/configureinstallhotfix-8.png)](./media/configureinstallhotfix-8.png)
+[![保留中の変更のリストに記述子ファイルを手動で追加します。](./media/configureinstallhotfix-8.png)](./media/configureinstallhotfix-8.png)
 
 ## <a name="synchronize-other-development-vms"></a>その他の開発 VM を同期
 この記事で記載されているように、修正プログラムが開発 VM でインストールされた後、再インストール、競合の解決、同じ Azure DevOps プロジェクトに接続されている他の開発 VMでの検証をする必要はありません。 同じ Azure DevOps プロジェクトに接続されている開発者とテスターは、ローカル VM に変更を同期させてビルドするだけで済みます。

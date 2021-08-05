@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-20-2020
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: b5a218c885a9e3923f38c54ced466dd5aaf630ac
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: ccda3518cefa47c52f616b783a65359e98fee0d8
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216705"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638231"
 ---
 # <a name="store-commerce-app-in-microsoft-dynamics-365-commerce-preview"></a>Microsoft Dynamics 365 Commerce での Store Commerce アプリ (プレビュー)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックは、Dynamics 365 Commerce バージョン 10.0.20 およびそれ以降に適用されます。
 
@@ -58,7 +58,7 @@ MPOS の場合は、アプリを取得して拡張機能にパッケージ化す
 
 Store Commerce は、CPOS を表示するシェルです。 したがって、更新された CPOS 機能を取得するには、CPOS も更新する必要があります。 CPOS は CSU から更新できます。 CSU の更新方法の詳細については、[Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md) を参照してください。
 
-![Store Commerce](media/StoreCommerce.PNG)
+![Store Commerce。](media/StoreCommerce.PNG)
 
 
 ## <a name="store-commerce-and-mpos-parity"></a>Store Commerce と MPOS の機能

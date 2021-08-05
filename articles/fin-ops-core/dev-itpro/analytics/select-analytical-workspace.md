@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 875d06e74e31ae5f0739e691335968514195e8bc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0271a534863a9159dbdad84838575c21460d5cc0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893536"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359473"
 ---
 # <a name="select-analytical-workspaces-from-power-bi"></a>Power BI から分析ワークスペースを選択する
 
@@ -52,11 +52,11 @@ PowerBI.comが提供するワールドクラスのツールを使用すると、
 
 1. サインインし、カスタマイズするアプリケーションのレポートを開きます。 この例では、 **報酬管理** ワークスペースに埋め込まれている標準分析レポートを置換します。
 
-    ![報酬管理ワークスペース](media/compensation-management-workspace.png)
+    ![報酬管理ワークスペースです。](media/compensation-management-workspace.png)
 
 2. **分析** タブを選択すると、ワークスペースの埋め込み分析レポートにアクセスできます。
 
-    ![報酬管理分析ワークスペースの [分析] タブ](media/compensation-management-analytics.png)
+    ![報酬管理分析ワークスペースの [分析] タブ。](media/compensation-management-analytics.png)
 
     デフォルトでは、アプリケーションと共に含まれる標準分析ワークスペース ソリューションが表示されます。 このソリューションのレポートは、プロビジョニング プロセス中に環境に合わせて自動的に配置および設定されます。
 
@@ -65,7 +65,7 @@ PowerBI.comが提供するワールドクラスのツールを使用すると、
 
 3. アクション ペインの **オプション** タブの **Power BI** グループで、 **分析の選択** を選択して **Power BIレポート** ダイアログボックスを開きます。
 
-    ![Power BIレポート ダイアログ ボックス](media/select-powerbi-report-analytics.png)
+    ![Power BIレポート ダイアログ ボックス。](media/select-powerbi-report-analytics.png)
 
     このダイアログボックスでは、PowerBI.comサービスで共有されているレポートの中から選択することができます。 レポートはワークスペース毎に編成されています。
 
@@ -74,7 +74,7 @@ PowerBI.comが提供するワールドクラスのツールを使用すると、
 6. ワークスペースの更新を表示するには、ページを再度読み込む必要があります。 ワークスペースから移動して戻ってくるか、ブラウザーを更新します。
 7. **報酬管理** ワークスペースで、 **分析** タブを選択し、分析ワークスペースに埋め込まれた PowerBI.com レポートにアクセスします。
 
-    ![カスタム分析ワークスペース](media/custom-powerbi-report-analytics.png)
+    ![カスタム分析ワークスペース。](media/custom-powerbi-report-analytics.png)
 
 ### <a name="revert-to-the-standard-solution"></a>標準ソリューションに戻す
 
@@ -82,7 +82,7 @@ PowerBI.com レポートをアプリケーション ワークスペースに埋�
 
 1. アクション ペインの **オプション** タブの **Power BI** グループで **分析の復元** を選択してください。
 
-    ![[分析の復元] ボタン](media/restore-powerbi-report-analytics.png)
+    ![[分析の復元] ボタン。](media/restore-powerbi-report-analytics.png)
 
 2. ワークスペースの更新を表示するには、ページを再度読み込む必要があります。 ワークスペースから移動して戻ってくるか、ブラウザーを更新します。
 3. **報酬管理** ワークスペースで、**分析** タブを選択し、分析ワークスペースに埋め込まれた 標準ソリューション にアクセスします。

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 702254c8e9f4ca1dc1f185e70e82c6f552dcd06f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a0ea16941394d652b61373e23a9e54c0e70be398
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743991"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358993"
 ---
 # <a name="initiate-data-source-values-of-the-user-input-parameter-type-from-source-code"></a>ソース コードからユーザー入力パラメーターのデータ ソース値を開始する
 
@@ -74,11 +74,11 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(formatMappingID, fileN
 
 `email`、`fromDate`、および `toDate` 変数は、ER 形式が呼び出される前に ER ダイアログ ボックス以外のページに入力された値を格納するために使用されます。 このクラスの `runER()` メソッドは、これらの変数を使用して複数のデータ ソースの値を開始する ER 形式のマッピングを[実行](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export)します。 このようなデータ ソースのすべてのパスの接頭語 (サンプル コードの `erParmEmail`、`erParmFromDate`、または `erParmToDate` 定数など) は、*モデル* タイプ (**モデル** 値) の形式データ ソースの名前として定義されます。
 
-![「モデル」 データ ソースを含む「BLWI 形式 (BE)」 コンフィギュレーションのデータ ソースの一覧を示す ER 形式デザイナー](./media/er-initiate-uip-data-source-value-from-source-code-1.png)
+![「モデル」 データ ソースを含む「BLWI 形式 (BE)」コンフィギュレーションのデータ ソースの一覧を示す ER 形式デザイナー。](./media/er-initiate-uip-data-source-value-from-source-code-1.png)
 
 このようなデータ ソースのすべてのパスの接尾語は、実行時に使用されるモデル マッピングの関連データ ソースへのパスとして定義されます。 サンプル コードでは、`parameters.Email`、`parameters.FromDate`、または `parameters.ToDate` を含めることができます。
 
-![「ユーザー入力パラメーター」 タイプのデータ ソースを含む「BLWI モデル マッピング」 コンフィギュレーションのデータ ソースの一覧を示す ER モデル マッピング デザイナー](./media/er-initiate-uip-data-source-value-from-source-code-2.png)
+![「ユーザー入力パラメーター」 タイプのデータ ソースを含む「BLWI モデル マッピング」 コンフィギュレーションのデータ ソースの一覧を示す ER モデル マッピング デザイナー。](./media/er-initiate-uip-data-source-value-from-source-code-2.png)
 
 ## <a name="format-components-for-inbound-electronic-documents"></a>受信電子ドキュメントの形式のコンポーネント
 
@@ -122,7 +122,7 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(formatMappingID, fileN
 
 グローバル リポジトリから、このアプリケーション クラスを使用して Finance インスタンスに呼び出される **Camt.053 形式** の ER 形式 コンフィギュレーションをインポートします。 **口座取引明細書モデル** のコンフィギュレーションは、インポートされた ER 形式のコンフィギュレーションと共に自動的にインポートされます。 さらに、アプリケーション データの更新に使用するモデル マッピングを含む **口座取引明細書のマッピング先** ER コンフィギュレーションをインポートします。
 
-![「ユーザー入力パラメーター」 タイプのデータ ソースを含む「口座取引明細書のマッピング先」コンフィギュレーションのデータ ソースの一覧を示す ER モデル マッピング デザイナー](./media/er-initiate-uip-data-source-value-from-source-code-3.png)
+![「ユーザー入力パラメーター」 タイプのデータ ソースを含む「口座取引明細書のマッピング先」コンフィギュレーションのデータ ソースの一覧を示す ER モデル マッピング デザイナー。](./media/er-initiate-uip-data-source-value-from-source-code-3.png)
 
 ## <a name="limitations"></a>制限
 実行時に使用される ER モデル マッピングでコンフィギュレーションされた *ユーザー入力パラメーター* タイプのデータ ソース値のみを開始できます。 ER 形式でコンフィギュレーションされた *ユーザー入力パラメーター* タイプのデータ ソース値は、ソース コードから開始できません。

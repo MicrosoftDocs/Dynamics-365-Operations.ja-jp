@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ee480cbf3c24477b584556822200241cf8003df5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 48e0dee32c40ae7223ce210c2b55bb9b3ecc6072
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795677"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354659"
 ---
 # <a name="create-windows-installers-for-payment-connectors"></a>支払コネクタ用の Windows インストーラーの作成
 
@@ -48,7 +48,7 @@ Microsoft Windows インストーラー (MSI) は、Microsoft Windows 用のア�
 
 次の図は、TestConnector という名前のコネクタのファイル構造を示しています。 
 
-[![TestConnector のファイル構造](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
+[![TestConnector のファイル構造。](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
 
 
 

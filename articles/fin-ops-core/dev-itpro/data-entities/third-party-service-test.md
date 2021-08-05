@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eae673ad67dd9df42be637d3b52aab43d36dfb4a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4833d1758be8239111d64605f8acc284c5187305
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749684"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348695"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
@@ -66,11 +66,11 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
     `https://login.microsoftonline.com/:tenant_id/oauth2/token` などの、**tenant\_id** 環境変数を参照する URL パラメーターを使用することができます。
 
-    ![Azure AD トークンの取得](./media/postman6.png)
+    ![Azure AD トークンを取得します。](./media/postman6.png)
 
 9. **本文** タブで、前に作成した環境変数を参照する要求パラメーターとして、本文要素を追加します。 **一括編集** を選択して、上記の表のキーを入力し、コロン (:) を入力してからキーの名前を再入力しますが、二重中かっこ ({{}}) で囲みます。 行ごとに 1 つの要求パラメーターを入力します。 たとえば、**交付\_タイプ:{{交付\_タイプ}}** を入力します。 次に例を示します。
 
-    ![本文要素](./media/postman8.png)
+    ![本文要素。](./media/postman8.png)
 
 10. **テスト** タブで、応答が妥当であることを検証し、環境変数で返される認証トークンを格納するテストを作成します。 次に例を示します。
 
@@ -83,11 +83,11 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 11. **保存** を選択し、要求の名前とコレクションを入力して、**保存** を再度選択します。
 12. **送信** を選択して承認要求を行います。 **本文** タブには、その他の応答の詳細と共に、Azure AD トークンが含まれるようになりました。
 
-    ![Azure ADトークン](./media/postman11.png)
+    ![Azure AD トークン。](./media/postman11.png)
 
 13. テスト コードのため、トークンは環境変数にあります。 **環境クイック表示** ボタン (目のボタン) を選択すると、トークンが環境変数であることがわかります。
 
-    ![環境クイック表示](./media/postman12.png)
+    ![環境クイック表示。](./media/postman12.png)
 
 14. OData サービスを介して、目的のデータ エンティティに対して作成、読み取り、更新、または削除 (CRUD) 操作を実行する要求を作成します。 必要に応じて URL を作成します。 詳細については、[データ プロトコル (OData) を開く](odata.md) を参照してください。 前に示したように、環境に格納されている変数を使用して、要求をパラメーター化することが便利であることがわかる場合があります。 次の GET クエリの例では、**Customer Account** パラメーターが使用されています。 クエリは、環境変数で指定された顧客アカウントの名前とアドレスの詳細を返します。 特殊文字は、URL に正しくエンコードされる必要があることに注意してください。
 
@@ -97,7 +97,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
 15. 以前に取得され、**bearerToken** 環境変数に格納された認証トークンを参照する認証ヘッダーを追加します。 トークンは、ヘッダーの先頭に **Bearer** を付ける必要があります。
 
-    ![ベアラー トークン](./media/postman13.png)
+    ![ベアラー トークン。](./media/postman13.png)
 
 16. 応答を検証するためのテストを作成します。 次の例では、空でない JSON 形式のデータが応答本文に返されるかどうかをテストします。
 
@@ -108,7 +108,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
 17. 要求を保存および送信し、結果を確認します。 使用するユーザー アカウントが、データを持つ既定の会社に対して設定されていることを確認する必要があります。 または、OData 要求のクエリ パラメーターとして、クロス会社 =true を指定することもできます。
 
-    ![結果](./media/postman15.png)
+    ![結果。](./media/postman15.png)
 
 ここでは、正常に認証されてから、OData サービスを使用して、顧客レコードを読み取っています。
 
@@ -128,7 +128,7 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
 
         サンプル要求の作成を選択したため、利用可能なサービス操作ごとに 1 つのサンプル要求が作成されます。
 
-        ![サンプル要求](./media/soapui3.png)
+        ![サンプル要求。](./media/soapui3.png)
 
 3. 新しいプロジェクトを右クリックし、**新しいテスト スイート** を選択してテスト スイートを作成します。 このテスト スイートは、Azure AD 認証トークンに対する POST 要求を生成します。
 4. テスト スイートを右クリックし、**新しいテスト ケース** を選択します。
@@ -152,7 +152,7 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
 
 12. SOAP 要求の準備が整いました。 **再生** を選択し、右側の結果を検証します。
 
-    ![結果の検証](./media/soapui8.png)
+    ![結果を検証します。](./media/soapui8.png)
 
 ここでは、正常に認証されてから、SOAP を介して UserSessionService を照会しています。
 

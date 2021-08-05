@@ -3,20 +3,18 @@ title: SysDa クラスを使用したデータへのアクセス
 description: このトピックでは、SysDa アプリケーションプログラミングインターフェイス (API) を使用して拡張可能なクエリおよびデータアクセスステートメントを作成する方法について説明します。
 author: RobinARH
 ms.date: 06/24/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 72211
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: faa7dedced6b38faad85895d633f1e826872fca1
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 7ad55311c991afc7c36468a9e32d3e478bcc96d7
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865843"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661366"
 ---
 # <a name="access-data-by-using-the-sysda-classes"></a>SysDa クラスを使用したデータへのアクセス
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c002e37d3c008ac6cbdd6f591308d7ed31efc93b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 28c459ec155a3a1e1af29d39238cd328fc77640e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189734"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358499"
 ---
 # <a name="toolbar-and-list-subpattern"></a>ツールバーおよびリストのサブパターン
 
@@ -37,11 +37,11 @@ ms.locfileid: "6189734"
 ## <a name="wireframes"></a>ワイヤーフレーム
 ### <a name="toolbar-and-list"></a>ツールバーおよびリスト
 
-[![ツールバーとリストのフォームのワイヤーフレーム](./media/toolbarlist1.png)](./media/toolbarlist1.png)
+[![ツールバーとリストのフォームのワイヤーフレーム。](./media/toolbarlist1.png)](./media/toolbarlist1.png)
 
 ### <a name="toolbar-and-list-double"></a>ツールバーおよびリスト (ダブル)
 
-[![ツールバーとリスト (ダブル) のフォームのワイヤーフレーム](./media/toolbarlist2.png)](./media/toolbarlist2.png)
+[![ツールバーとリスト (ダブル) のフォームのワイヤーフレーム。](./media/toolbarlist2.png)](./media/toolbarlist2.png)
 
 ## <a name="model"></a>モデル
 ### <a name="toolbar-and-list--high-level-structure"></a>ツールバーおよびリスト - 高度なレベル構造
@@ -92,13 +92,13 @@ ms.locfileid: "6189734"
 
 フォーム: **VendTable (TabCommunication)** 
 
-[![ツールバーおよびリストの例](./media/toolbarlist3.png)](./media/toolbarlist3.png)
+[![ツールバーおよびリストの例。](./media/toolbarlist3.png)](./media/toolbarlist3.png)
 
 ### <a name="toolbar-and-list-double"></a>ツールバーおよびリスト (ダブル)
 
 フォーム: **SalesQuickQuote (TabPageExistingItems)** 
 
-[![ツールバーおよびリスト (ダブル) の例](./media/toolbarlist4.png)](./media/toolbarlist4.png)
+[![ツールバーおよびリスト (ダブル) の例。](./media/toolbarlist4.png)](./media/toolbarlist4.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -124,7 +124,7 @@ ms.locfileid: "6189734"
 
 **VendTable** 
 
-[![以前のバージョンの例](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+[![以前のバージョンの例。](./media/toolbarlist5.png)](./media/toolbarlist5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 4e4f01c66ba99bb3a001ad828cbb34885e84cd7c
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 95f480656e9c610781fc6a73611ac4d814157005
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360326"
 ---
 # <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 
@@ -39,7 +39,7 @@ ms.locfileid: "5865926"
 
 次の図は、新しいリレーションを示しています。
 
-![新しい関係](media/AddRelationToExistingTable.jpg)
+![新しい関係。](media/AddRelationToExistingTable.jpg)
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

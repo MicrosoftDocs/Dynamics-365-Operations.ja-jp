@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d7ef286518fc025befb6494cb6ecfb7d702d589
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 139f76f2669413ba41e2fe079c23eba277ed7c80
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745075"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344311"
 ---
 # <a name="create-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションの作成
 
@@ -69,7 +69,7 @@ GER は、ユーザーが電子フォーマット構造を定義できるよう�
 ## <a name="basic-concepts"></a>基本概念
 ### <a name="main-data-flow"></a>主要データ フロー
 
-[![GER メイン データ フロー](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+[![GER 主要データ フロー。](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
 ### <a name="data-model-configuration-creation"></a>データ モデル コンフィギュレーションの作成
 

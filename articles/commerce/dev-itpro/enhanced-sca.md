@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7dc8e28879a7158282ab3f72349880e39db2aec9
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 3bc7afc835b156a3ca83e4cf9398d8f92eebde77
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222656"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352362"
 ---
 # <a name="enhanced-payments-in-storefront-checkout"></a>店頭会計の支払を強化
 
@@ -78,7 +78,7 @@ Commerce サイト ビルダーで強化された支払機能を有効にする�
 3. **カートとチェックアウト** まで下にスクロールし、**単一の支払承認チェックアウトを有効にする** チェック ボックスをオンにします。
 4. **保存と公開** を選択します。
 
-![Commerce サイト ビルダーでの店舗チェックアウトでの拡張支払の有効化](media/rfac.png)
+![Commerce サイト ビルダーでの店頭会計での強化された支払いを有効にする。](media/rfac.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

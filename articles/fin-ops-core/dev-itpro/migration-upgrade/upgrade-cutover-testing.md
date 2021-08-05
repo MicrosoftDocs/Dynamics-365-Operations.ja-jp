@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7149dd62623cf39119b85c68133d2a5840d70fd2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 69312da38259e66a2f8f80a4210cf1635f89aa79
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752724"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346476"
 ---
 # <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (切替モック)
 
@@ -35,7 +35,7 @@ ms.locfileid: "5752724"
 
 次の図は、実稼動環境で発生するような、切替中の全体的なプロセスを示しています。
 
-![切替プロセス](./media/cutover_1.png)
+![切替プロセス。](./media/cutover_1.png)
 
 モック カットオーバー プロセスは、サンドボックス環境での基本的なデータ アップグレードの検証と非常によく似ています。 そのプロセスを熟知していて、そのプロセスを既に実行済みであると仮定します。 切替モックは、次の点で異なります。
 

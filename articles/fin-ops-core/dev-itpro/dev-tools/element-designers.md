@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd707924e5c676bf9838f17ee1a2300b917421d5
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 5d46e91813e2c335d245c108ff087796e3f3e813
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866346"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359751"
 ---
 # <a name="element-designers"></a>要素デザイナー
 
@@ -37,11 +37,11 @@ ms.locfileid: "5866346"
 
 要素デザイナーで個々のノードを選択すると、Visual Studio の **プロパティ** ウィンドウに、そのノードのさまざまなプロパティが表示されます。 要素の特性のほとんどは、これらのプロパティによって制御されます。 たとえば、次の図は、FMCustomer テーブルの要素デザイナーを表示します。 最上位ノードが選択されていることを確認します。
 
-[![FMCustomer のノードのプロパティ](./media/18_devotoolsconcept.png)](./media/18_devotoolsconcept.png)
+[![FMCustomer のノードのプロパティ。](./media/18_devotoolsconcept.png)](./media/18_devotoolsconcept.png)
 
 次の図は、選択されているトップレベルのノードに対応する、テーブルのプロパティのセットを示しています。
 
-[![FMCustomer のプロパティ ウィンドウ](./media/19_devotoolsconcept.png)](./media/19_devotoolsconcept.png)
+[![FMCustomer のプロパティ ウィンドウ。](./media/19_devotoolsconcept.png)](./media/19_devotoolsconcept.png)
 
 各要素ノードには、適用される一連のプロパティがあります。 操作するプロパティを見つけやすいようにするには、**プロパティ** ウィンドウの上部にあるボタンを使用して、表示方法を制御します。 プロパティは、次の方法で配置できます。
 
@@ -56,7 +56,7 @@ ms.locfileid: "5866346"
 
 要素を作成または変更するとき、その要素のノードの追加または削除が必要ことがよくあります。 たとえば、テーブルにフィールドを追加するには、テーブル要素の **フィールド** ノードを右クリックして、**新規** を指し、次に追加するフィールドのタイプをクリックします。
 
-[![新しいフィールドの追加](./media/20_devotoolsconcept.png)](./media/20_devotoolsconcept.png)
+[![新しいフィールドの追加。](./media/20_devotoolsconcept.png)](./media/20_devotoolsconcept.png)
 
 ノードを削除するには、そのノードをクリックしてから、**削除** をクリックします。 ノードのために他のアクションを実行することもできます。 ノードの名前を変更したり、ノードを複製したり、ノードの一覧で、上下に移動させたりします。
 
@@ -64,7 +64,7 @@ ms.locfileid: "5866346"
 
 場合によっては、要素のノード リストが長くなるため、探している特定のノードが見つけにくくなります。 各要素デザイナーの上部に検索バーがあることを確認します。 検索する文字列を入力すると、検索文字列に一致するノードのみが含まれるようにノード リストがフィルター処理されます。 たとえば、次の図は、「電子メール」検索用語が適用された後の FMCustomer テーブルの要素デザイナーを表示します。 その検索文字列に一致する名前を持つノードのみ要素デザイナーに表示されます。
 
-[![要素の検索](./media/21_devotoolsconcept.png)](./media/21_devotoolsconcept.png)
+[![要素の検索。](./media/21_devotoolsconcept.png)](./media/21_devotoolsconcept.png)
 
 カスタマイズ要素または拡張要素を扱っている場合、検索文字列の先頭に **c:** (「カスタマイズ要素」の場合) または **e:** (「拡張要素」の場合) を付けて、カスタマイズまたは拡張機能のみをそれぞれ返すことができます。 **例**
 
@@ -77,7 +77,7 @@ ms.locfileid: "5866346"
 
 要素デザイナのノード値は、多くの場合、別の要素への参照です。 たとえば、テーブル要素内のフィールド ノードは、通常拡張データ型 (EDT) 要素に基づいています。 要素デザイナーでノードを右クリックするとき、**&lt;要素&gt;に移動** コマンドをクリックして、関連要素に移動します。 たとえば、FMVehicle テーブルのフィールドの一覧で **FuelType** ノードを右クリックするとき、**基本列挙 FMFuelType に移動する** をクリックして、フィールドを定義するために使用される基本列挙を表示します。
 
-[![要素に移動](./media/22_devotoolsconcept.png)](./media/22_devotoolsconcept.png)
+[![要素に移動する。](./media/22_devotoolsconcept.png)](./media/22_devotoolsconcept.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

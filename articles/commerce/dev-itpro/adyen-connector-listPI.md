@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 60588d687cad86b4cdebf73c0d68bc222f546350
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: fc082fa07e1d832bf356c2b41f3448441704b054
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936966"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354675"
 ---
 # <a name="saving-online-payment-instruments-with-the-adyen-connector"></a>オンライン支払手段を Adyen コネクタで保存
 
@@ -76,13 +76,13 @@ ms.locfileid: "5936966"
 
 名前付きユーザー (サインインした顧客) が、チェックアウト プロセスの支払手順に進むとリスト PI 機能を経験します。 名前付きユーザーが初めてチェックアウトしたとき、クレジットカード情報が入力されるセクションに **次回の支払のために保存する** チェック ボックスが表示されます。 
 
-![[次回の支払のために保存する] オプション](../media/Payments/Save_PI.png)
+![次回の支払のために保存するオプション。](../media/Payments/Save_PI.png)
 
 このチェックボックスが選択された場合、支払のために新しいクレジットカードを送信すると、名前付きユーザーの一意の顧客 ID が支払プロセッサに送信され、クレジットカードが安全に保存されてその一意の顧客 ID にマップされます。 
 
 同じ顧客が将来ストアフロントを訪れる際にサインインした場合、チェックアウト時の支払いに同じクレジットカードを選択ができます。 
 
-![以前に保存された支払手段](../media/Payments/Saved_PI.jpg)
+![以前に保存された支払手段。](../media/Payments/Saved_PI.jpg)
 
 ### <a name="order-fulfillment-and-processing"></a>注文のフルフィルメントと処理
 

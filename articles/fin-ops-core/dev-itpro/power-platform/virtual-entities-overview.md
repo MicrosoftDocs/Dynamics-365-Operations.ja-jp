@@ -6,15 +6,16 @@ ms.date: 05/14/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 09793e0e3212449a44116fa34f724cb9be8c5409
-ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
+ms.openlocfilehash: 47b87f136f3123c5507064838c8536d1eb4f8928
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2021
-ms.locfileid: "6048934"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346464"
 ---
 # <a name="virtual-entities-overview"></a>仮想エンティティの概要
 
@@ -37,7 +38,7 @@ Core Human Resources エンティティは、Finance and Operations エンティ
 
 仮想エンティティは、Finance and Operations アプリ以外にも有用な Dataverse の概念です。 次の図は、仮想エンティティの Finance and Operations プロバイダーを実装する方法を示しています。 6 つの主要メソッドがプロバイダーによって実装されます。 最初の 5 つのメソッドは、**Create**、**Update**、**Delete**、**Retrieve**、**RetrieveMultiple** という標準的な CRUD 操作です。 最後のメソッドである **PerformAction** は、このトピックで後述するように OData アクションを呼び出すために使用されます。 Finance and Operations 仮想エンティティ データ プロバイダー (図では 「仮想エンティティ プラグイン」 と表示) を呼び出すと、Finance and Operations アプリの CDSVirtualEntityService Web API エンドポイントに対して Secure Sockets Layer (SSL)/トランスポート層セキュリティ (TLS) 1.2 セキュア Web 呼び出しが行われます。 その後、この Web サービスは、クエリを Finance and Operations アプリ内の関連する物理エンティティへの呼び出しに変換し、それらのエンティティで CRUD 操作または OData 操作を呼び出します。 Finance and Operations エンティティはすべての操作で直接呼び出されるため、エンティティまたはバッキング テーブルのビジネス ロジックも呼び出されます。
 
-![Finance and Operations アプリの仮想エンティティのアーキテクチャ](media/image1.png)
+![Finance and Operations アプリの仮想エンティティのアーキテクチャ。](media/image1.png)
 
 呼び出し時、Dataverse から Finance and Operations アプリまで 2 つの変換点があります。 変換の最初のポイントは、エンティティの物理名などの概念を Finance and Operations エンティティ名に変換する VE プラグインにあります。 また、会社の参照などの既知の概念も変換されます。 Web サービス呼び出しでは、引き続き EntityCollection、Entity、および QueryExpression オブジェクトを使用して、実行される操作が表されます。このとき、VE プラグインから変換されたエンティティ名と概念が使用されます。 最後に、Finance and Operations アプリの CDSVirtualEntityAdapterService Web API によって、QueryExpression から QueryBuildDataSource およびその他の内部 Finance and Operations 言語構成要素への変換が完了します。
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2020-04-10
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: fb9b96bef3bd52afe758a745bf7a8705e0e21d5f
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 115aeeb9f88f8041d9e862634d1b0b07cffaaf5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936896"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354655"
 ---
 # <a name="development-and-alm-changes-from-version-10010-to-10013"></a>バージョン 10.0.10 から 10.0.13 における開発と ALM の変更
 
@@ -82,7 +82,7 @@ Microsoft は、互換性に影響する変更を含まない更新を提供す�
         4. **Microsoft.Dynamics.Framework.Tools.Installer.vsix** ファイルを検索します。 このファイルのサイズは、約 150 メガバイト (MB) にする必要があります。
         5. ファイルを右クリックして、**開く** を選択します。
 
-            ![Visual Studio 2017 Dynamics 365 拡張機能のインストーラーを開いています](media/vs2017-extensions.png)
+            ![Visual Studio 2017 Dynamics 365 拡張機能のインストーラーを開いています。](media/vs2017-extensions.png)
 
         詳細については、「[Visual Studio 開発ツールの更新](../../fin-ops-core/dev-itpro/dev-tools/update-development-tools.md)」を参照してください。
 

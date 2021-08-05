@@ -3,21 +3,16 @@ title: ControlMetadata タイプ
 description: コントロールのメタデータのインターフェイス。 コントロール メタデータをオーバーライドすると、コントロール&#x27;の外観と動作を変更できます。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a10a9f9a0264284db5173fe3be8a5db9c395e43
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 68d9f1401cba63db2eadb5fa23ce7adfa39e8646
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752696"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661496"
 ---
 # <a name="controlmetadata-type"></a>ControlMetadata タイプ
 
@@ -45,7 +40,7 @@ ControlMetadata <br>&nbsp;&nbsp;&nbsp;└─ [PageLinkMetadata](view-model-contr
 * [ラベル](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)
 * [名前](view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)
 * [注文](view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)
-* [[タイプ](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)]
+* [タイプ](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)
 
 ## <a name="properties"></a>プロパティ
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: d86dd06bf3d429006bb6a3342e75e7b9db9420c4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 850e798ec0407980fb01a8e9f7463fbd596de530
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755462"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358713"
 ---
 # <a name="create-custom-designs-for-business-documents"></a>ビジネス ドキュメントのカスタム デザインを作成する
 
@@ -29,7 +29,7 @@ ms.locfileid: "5755462"
 
 Microsoft Dynamics 365 Finance には、カスタム レポート ソリューションをサポートするためのツールの拡張セットが含まれています。 このトピックでは、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する手順について説明します。 カスタム レポート デザインをアプリケーション ドキュメントのインスタンスに関連付けるには、このトピックで後述する手順に従います。 完了したら、ユーザーは印刷管理設定を構成して、 該当するときはいつでも、カスタムのデザインを選択できます。 次の図は、一般的なアプリケーションのカスタマイズを示しています。
 
-[![extendingprintmgt](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)
+[![extendingprintmgt。](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)
 
 ## <a name="whats-important-to-know"></a>知っている必要がある重要なこと
 このソリューションを適用する前に注意すべき重要な点を次に示します。
@@ -44,13 +44,13 @@ Microsoft Dynamics 365 Finance には、カスタム レポート ソリュー�
 1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。 この例では、**アプリケーション スイート拡張子** というモデルを追加し、それはアプリケーション スイート、アプリケーション プラットフォーム、およびアプリケーション基盤パッケージを参照します。
 2. **Microsoft Visual Studio で、新しいプロジェクトを作成します。** プロジェクトが拡張モデルに関連付けられていることを確認します。 次の図はプロジェクト設定を示します。
 
-    [![Visual Studio でのプロジェクト設定](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)
+    [![Visual Studio でプロジェクト設定。](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)
 
 3. **ビジネス ドキュメントのカスタム レポートのデザインを作成します。** カスタム ソリューションが正しいレポート データ コントラクトを消費することを確認する必要があります。 アプリケーション エクスプ ローラーで、既存のアプリケーション スイート レポートを検索します。 このレポートの名前は **SalesConfirm** です。 右クリックし、**プロジェクトで複製** をクリックしてカスタム ソリューションを作成します。
 4. **レポートの名前を変更して、わかりやすい名前にします。** この例では、カスタム レポートの **SalesConfirmExt** を名前付けし、標準のソリューションと区別します。 プロジェクトをコンパイルしてレポートを展開し、変更にエラーがないことを確認します。
 5. **自由形式デザイナーを使用して、レポートのデザインをカスタマイズします。** **レポート** という名前のレポート デザインを選択し、右クリックして、精度デザイナーを開きます。 組織の業務要件を満たすように設計をカスタマイズします。 次の図は、**Sales confirmation** レポートのカスタム設計定義を示しています。
 
-    [![販売確認レポートのカスタム デザイン定義](./media/app-extension-report-designer-1024x613.png)](./media/app-extension-report-designer.png)
+    [![販売確認レポートのカスタム デザイン定義。](./media/app-extension-report-designer-1024x613.png)](./media/app-extension-report-designer.png)
 
 6. **標準のレポート コントローラーを拡張する新しい X++ クラスを追加します。** クラスに、それが既存のアプリケーション レポートのハンドラーであることを適切に表す名前を付けます。 この例では、クラスの **SalesConfirmControllerExt** の名前を変更し、他のレポート コントローラーと区別します。
 7. **拡張クラスを使用して、カスタム デザインを読み込みます。** カスタム レポート デザインを参照する **メイン** メソッドを追加します。 (標準的なソリューションから **主要な** メソッドをコピーし、新しい **コントローラー** クラスへの参照を追加することができます。) 次に、標準的なソリューションを拡張するコードを示します。
@@ -97,7 +97,7 @@ Microsoft Dynamics 365 Finance には、カスタム レポート ソリュー�
 10. **アプリケーションのレポートのメニュー項目を拡張します。** アプリケーション エクスプ ローラーで、既存のアプリケーション スイート メニュー項目を検索します。 このメニュー項目の名前は **SalesConfirmation** です。 右クリックし、**拡張子の作成** をクリックします。 デザイナーで新しい拡張オブジェクトを開いて、**オブジェクト** プロパティの値を **SalesConfirmControllerExt** に設定し、ユーザー ナビゲーションを拡張されたソリューションにリダイレクトします。
 11. **カスタム ビジネス ドキュメントを使用するため、印刷管理設定を更新してください。** この例では、**売掛金勘定** &gt; **セッテイ** &gt; **フォーム** &gt; **フォーム設定** の順に移動します。 **印刷管理** をクリックし、ドキュメントの構成設定を検索し、カスタム デザインを選択します。 次の図は、変更がコンパイルされた後の印刷管理設定を示しています。
 
-    [![コンパイル後の印刷管理設定](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
+    [![コンパイル後の印刷管理設定。](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
 
 これで、ビジネス ドキュメントのカスタマイズが完了しました。 アプリケーションでトランザクションを処理するとき、ビジネス ドキュメントのカスタム レポート デザインがユーザーに提示されるようになります。
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: 13531
+ms.custom:
+- "13531"
+- intro-internal
 ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c30704ae5ae1aa23bf212c5efbe20587786082a
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: aa49d188236365c4ba3df46658334d5a0d6a62a0
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907925"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337739"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 

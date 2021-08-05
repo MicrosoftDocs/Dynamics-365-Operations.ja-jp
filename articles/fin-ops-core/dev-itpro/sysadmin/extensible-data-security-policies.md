@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 04a2bfac48cc74d3183c6d6af1bbafead0c1b80b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 2d6e9ccbae2321f805dda2b7b01462e8f7da1e22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944667"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359737"
 ---
 # <a name="extensible-data-security-policies"></a>拡張可能なデータ セキュリティ ポリシー 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "5944667"
 
     -   **アプリケーション コンテキスト**: XDS::SetContext API を使用しているアプリケーションによって設定されたコンテキスト文字列が、ポリシーの **コンテキスト文字列** フィールドで定義した値と同じである場合に適用されます。
 
-        ![AOTXDS 概念モデル](media/c74bc4ea12f084dfbaddb024685843e8.jpg)
+        ![AOTXDS 概念モデル。](media/c74bc4ea12f084dfbaddb024685843e8.jpg)
 
 アプリケーション オブジェクト ツリー (AOT) では、ポリシーとそのコンポーネントが **セキュリティ \> ポリシー** に基づいて表示されます。
 

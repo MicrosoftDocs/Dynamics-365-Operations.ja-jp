@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 25511
+ms.custom:
+- "25511"
+- intro-internal
 ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 229e7bd27e64f19ddf8b6ae8f943e9e0554c40d8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29b938959ba1840b723bc562b852e70ae5649fac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354371"
 ---
 # <a name="office-integration-overview"></a>オフィス統合の概要
 
@@ -38,7 +40,7 @@ Microsoft Office の統合機能は、生産的環境を提供し、Office 製�
 ## <a name="excel-data-connector-add-in"></a>Excel Data Connector アドイン
 Microsoft Excel は、データを変更してすばやく分析することができます。 Excel Data Connector アプリは、公開されたデータ エンティティに作成された Excel ブックおよび OData サービスとやり取りします。 Excel Data Connector アドインを使用すると、Excel がユーザー エクスペリエンスのシームレスな部分となることができます。 Excel Data Connector アドインは、Office Web アドイン フレームワークを使用して構築されます。 アドインは作業ウィンドウで実行されます。 Office Web アドインは、埋め込み Internet Explorer ブラウザー ウィンドウ内で実行される Web アプリケーションです。 
 
-[![Excel データ コネクタ アプリのスクリーンショット](./media/1_office.png)](./media/1_office.png)
+[![Excel データ コネクタ アプリのスクリーンショット。](./media/1_office.png)](./media/1_office.png)
 
 ### <a name="dynamics-ax-2012-architecture-vs-finance-and-operations-architecture"></a>Dynamics AX 2012 アーキテクチャと Finance and Operations のアーキテクチャ
 
@@ -54,7 +56,7 @@ Excel &gt; Office Web Add-in (JS + HTML) &gt; JavaScript OData API (Olingo) &gt;
 
 ### <a name="office-add-in-explained"></a>Office アドインの説明
 
-Excel Data Connector アプリケーションは、ブックの右側にある作業ウィンドウに配置されます。 [![テーブルに対応する番号付き要素による Excel データ コネクターの場所を表示するスクリーン ショット](./media/2_office.png)](./media/2_office.png) 次の表で、アドインの各部について説明します。 数値は、前のスクリーンショットの数値に対応しています。
+Excel Data Connector アプリケーションは、ブックの右側にある作業ウィンドウに配置されます。 [![テーブルに対応する番号付き要素を含む Excel データ コネクタ アプリの場所を示すスクリーン ショット。](./media/2_office.png)](./media/2_office.png) 次の表では、アドインの各部について説明します。 数値は、前のスクリーンショットの数値に対応しています。
 
 | 数値 | 氏名                             | 説明                                                                                                                                                                                                                                                                          |
 |--------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -86,7 +88,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 ## <a name="workbook-designer"></a>ブック デザイナー
 **ブック デザイナー** ページを使用すると、エンティティおよび一連のフィールドを含む、編集可能なカスタム エクスポート ブックを設計することができます。 **ブックブック デザイナー** (**ExportToExcelWorkbookDesigner**) ページを開くには、**Common&gt;Common&gt;Office統合&gt;Excel ワークブック デザイナー** をクリックします。 データ編集を公開する前に、エンティティのすべてのキー フィールドは Excel テーブルに存在する必要があります。 キー フィールドには、それらの横に鍵の記号があります。 レコードを正常に作成または更新するには、Excel テーブルにすべての必須フィールドがなければなりません。 必須フィールドには、その横にアスタリスク (\*) があります。 
 
-[![必須項目の一覧を示すスクリーン ショット](./media/3_office.png)](./media/3_office.png) 
+[![必須項目の一覧を示すスクリーン ショット。](./media/3_office.png)](./media/3_office.png) 
 
 ブックを作成するには、アプリ バーの **ブックの作成** をクリックします。 
 
@@ -95,11 +97,11 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 ## <a name="document-management"></a>ドキュメント管理
 ドキュメントの管理は、Azure Blob storage および SharePoint Online でレコードの添付ファイルの保存をサポートします。 データベースの記憶域は非推奨です。 ドキュメントはアプリケーションを介してのみアクセスでき、データベースのパフォーマンスに悪影響を及ぼさないストレージを提供できるという利点があるため Azure Blob ストレージは、データベースのストレージと同等です。 Azure blob storage は既定でありすぐに動作します。 SharePoint テナントは自動的に検出されるため、O365 ライセンスを持っている場合 SharePoint の記憶域がすぐに機能します。例: TenantA.onmicrosoft.com O365/AAD テナントのユーザーは SharePoint サイトとして TenantA.sharepoint.com を取得します。 ユーザーがドキュメントの管理が無効になっている場合、それを有効にするには、**オプション &gt; 一般 &gt; その他** をクリックし、**ドキュメント処理の有効オプション** を **はい** に設定します。 
 
-[![Yes に設定されたドキュメント処理の有効オプションを示すスクリーン ショット](./media/4_office.png)](./media/4_office.png) 
+[![Yes に設定されたドキュメント処理の有効オプションを示すスクリーン ショット。](./media/4_office.png)](./media/4_office.png) 
 
 データを持つページでは、**添付** ボタンが右上隅に表示されます。 
 
-[![添付ボタンを表示するスクリーン ショット](./media/5_office.png)](./media/5_office.png) 
+[![添付ボタンを表示するスクリーン ショット。](./media/5_office.png)](./media/5_office.png) 
 
 **添付ファイル** ページには、前のページで選択したレコードに関連付けられている添付ファイル (ドキュメント) のビューが表示されます。 アプリ バーの **新規** ボタン (**+**) をクリックすると、レコードに新しいアタッチメントを追加することができます。 **ファイル** および **画像** ドキュメント タイプについては、関連ファイルを提供するように求められます。
 

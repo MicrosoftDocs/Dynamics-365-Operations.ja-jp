@@ -2,24 +2,24 @@
 title: Azure Data Lake へのエクスポートの構成
 description: このトピックでは、Azure Data Lake へのエクスポートの構成に関する情報を説明します。
 author: MilindaV2
-ms.date: 06/24/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.custom: 96283
 ms.assetid: ''
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform Update 33
-ms.openlocfilehash: 52f87f4effc28ae45e0d829df961fc993229284b
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: b07c9d8a68bd5b9a251e8c6dd360c02b14728a17
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304381"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309625"
 ---
 # <a name="configure-export-to-azure-data-lake"></a>Azure Data Lake へのエクスポートのコンフィギュレーション
 
@@ -28,7 +28,9 @@ ms.locfileid: "6304381"
 > [!NOTE]
 > **Data Lake へのエクスポート** 機能は、米国、カナダ、英国、ヨーロッパ、南アジア、東アジア、オーストラリア、および日本の地域でパブリック プレビューで表示されます。 Finance and Operations 環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。
 >
-> 数か月後に、Microsoft は需要に基づいて、追加の地域でこの機能を有効にします。 環境がプレビューが有効になっている地域にない場合は、[アンケートを完了し、お知らせください](https://aka.ms/FnODataLakePreviewSurvey)。 [プレビュー Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) に参加できます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。 
+> **環境のプレビュー期間中に機能が一時的に利用できない場合や、お客様の地域で利用できない場合があります。**
+> 
+> 数か月後に、Microsoft は追加の地域および環境でこの機能を有効にします。 環境がプレビューが有効になっている地域にない場合は、[アンケートを完了し、お知らせください](https://aka.ms/FnODataLakePreviewSurvey)。 [プレビュー Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all)に参加することもできます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。 
 >
 > **Data Lake へのエクスポート** 機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウド ベースの Tier 2 またはそれ以上の環境が必要です。 
 > 

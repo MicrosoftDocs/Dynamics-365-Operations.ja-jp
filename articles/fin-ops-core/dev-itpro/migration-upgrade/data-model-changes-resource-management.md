@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8b9ae3ce5c39516e9393ce08597ee618abad7ec4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8edf65d6fea00341cf9e6b26d4067c6e528f9899
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749261"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355268"
 ---
 # <a name="project-resource-scheduling-data-model"></a>プロジェクト リソースのスケジューリング データ モデル
 
@@ -29,7 +29,7 @@ ms.locfileid: "5749261"
 
 ## <a name="physical-data-model-for-project-resource-scheduling"></a>プロジェクト リソースのスケジューリングの物理データ モデル
 
-次の図は、プロジェクト リソース スケジューリング物理データ モデルのデータ設計構造を表しています。   [![リソース管理データ モデル](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
+次の図は、プロジェクト リソース スケジューリング物理データ モデルのデータ設計構造を表しています。   [![リソース管理データ モデル。](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
 
 ## <a name="tables"></a>テーブル
 次のテーブルに、リソース管理データ モデルをサポートする追加のテーブルの一覧を示します。
@@ -74,7 +74,7 @@ ms.locfileid: "5749261"
 これらのセクションには、プロジェクト リソースのスケジューリングに関連する機能の実装の一部である、テーブルおよびフィールドのコード変更に関する情報が含まれています。
 
 ### <a name="resource-scheduling"></a>リソース スケジューリング
-テーブル <strong>PSASchedEmplReservation</strong> は、リソースの予約の保存には使用されなくなりました。 その代わり、予約は <strong>ResAssignment</strong> および <strong>ResBooking **テーブルに保存されます。**活動リソース</strong> フィールドの外部キーを <strong>PSAProjSchedRole.RecId</strong> に対して使用してリソースの予約を保存します。 <strong>PSAProjSchedRole</strong> テーブルは、どのリソースがプロジェクト チームまたは見積チームのメンバーであるかを識別するために、<strong>ResourceView.RecId</strong> への <strong>Resource</strong> フィールド外部キーと <strong>CompanyInfo.RecId</strong> への <strong>ResourceLegalEntity</strong> フィールド外部キーを持つプロジェクト チーム テーブルです。 <strong>PSAProjSchedRole.Resource</strong> フィールド = 0 の場合、この活動のリソースは計画リソースとなります。 計画されているリソースは、実際のリソースではサポートされないシャドウ リソースです。 <strong>PSAProjSchedRole.ResourceCategory</strong> は、このチームメンバーのロールを格納する <strong>PSASchedRole</strong> の外部キーです。 <strong>ResourceResourceCategorySetup</strong> テーブルは、既定の時間効率の良いリソース/役割の関連付けを保存します。 ただし、<strong>ResourceResourceCategorySetup</strong> テーブルの既定のロール定義を無視し、<strong>PSAProjSchedRole.ResourceCategory</strong> により定義された任意のロールにリソースを引当できます。 WBS バージョン管理については、テーブル <strong>ProjPlanVersions</strong> および <strong>ProjPlanVersionDetails</strong> に WBS タスク バージョンが保存されます。 最初、すべての WBS タスク データは、ユーザーが WBS タスクの内容を編集しているときにこれらのテーブルに保存されます。 ユーザーが <strong>発行</strong> ボタンをクリックすると、タスクのデータは元の階層テーブルにプッシュされます (<strong>smmActivities</strong> および <strong>PSAActivitySetup</strong>) 。 リソース管理機能では、元の階層テーブルにデータが必要で、公開された WBS が必要です。
+テーブル <strong>PSASchedEmplReservation</strong> は、リソースの予約の保存には使用されなくなりました。 その代わり、予約は <strong>ResAssignment</strong> および <strong>ResBooking**テーブルに保存されます。**活動リソース</strong> フィールドの外部キーを <strong>PSAProjSchedRole.RecId</strong> に対して使用してリソースの予約を保存します。 <strong>PSAProjSchedRole</strong> テーブルは、どのリソースがプロジェクト チームまたは見積チームのメンバーであるかを識別するために、<strong>ResourceView.RecId</strong> への <strong>Resource</strong> フィールド外部キーと <strong>CompanyInfo.RecId</strong> への <strong>ResourceLegalEntity</strong> フィールド外部キーを持つプロジェクト チーム テーブルです。 <strong>PSAProjSchedRole.Resource</strong> フィールド = 0 の場合、この活動のリソースは計画リソースとなります。 計画されているリソースは、実際のリソースではサポートされないシャドウ リソースです。 <strong>PSAProjSchedRole.ResourceCategory</strong> は、このチームメンバーのロールを格納する <strong>PSASchedRole</strong> の外部キーです。 <strong>ResourceResourceCategorySetup</strong> テーブルは、既定の時間効率の良いリソース/役割の関連付けを保存します。 ただし、<strong>ResourceResourceCategorySetup</strong> テーブルの既定のロール定義を無視し、<strong>PSAProjSchedRole.ResourceCategory</strong> により定義された任意のロールにリソースを引当できます。 WBS バージョン管理については、テーブル <strong>ProjPlanVersions</strong> および <strong>ProjPlanVersionDetails</strong> に WBS タスク バージョンが保存されます。 最初、すべての WBS タスク データは、ユーザーが WBS タスクの内容を編集しているときにこれらのテーブルに保存されます。 ユーザーが <strong>発行</strong> ボタンをクリックすると、タスクのデータは元の階層テーブルにプッシュされます (<strong>smmActivities</strong> および <strong>PSAActivitySetup</strong>) 。 リソース管理機能では、元の階層テーブルにデータが必要で、公開された WBS が必要です。
 
 ### <a name="price-by-resource-and-resource-category"></a>リソースおよびリソース カテゴリ別の価格
 価格決定テーブル、**ProjCostPriceExpense**、**ProjCostSalesPrice**、および **ProjRevenueSalesPrice** には、**ResourceView.RecId** からの外部キーがあります。 テーブル **ProjHourCostPrice**、**ProjHourSalesPrice**、**ProjTransferPrice** には、**ResourceView.RecId** からの外部キーがあります。 フィールド **ResourceCategory** は、**ResourceCategoryView.RecId** の外部キーの一部です。 これは、価格設定が作業者ではなくリソースに基づいており、リソース カテゴリによる価格設定が可能になるように行われます。

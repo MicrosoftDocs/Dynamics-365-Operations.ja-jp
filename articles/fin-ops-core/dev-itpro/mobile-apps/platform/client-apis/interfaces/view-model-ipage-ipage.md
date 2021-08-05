@@ -3,21 +3,16 @@ title: ページのタイプ
 description: ページ オブジェクト タイプ。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: bdd4da5c89aadee9a542db5208f89e020029b13d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e98807c0fa640d1c0d39d1aed895d5f75bd9647a
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748177"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661468"
 ---
 # <a name="page-type"></a>ページのタイプ
 

@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a5bd42e01999bcbcef4c38766003fa562f7cdfb1
-ms.sourcegitcommit: 7c9d6be464db058511df9cb6ba162d21dc0554e8
+ms.openlocfilehash: 51db8f0a1e37dec3b8e029a30712792599aafbcc
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "6240979"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6339779"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance"></a>Dynamics 365 Finance の新機能および変更された機能 
 

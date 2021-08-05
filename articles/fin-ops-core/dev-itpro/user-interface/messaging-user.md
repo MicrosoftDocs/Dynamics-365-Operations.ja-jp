@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63cafd8becfe048a64546ca2a24c2f1b5779970e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b422a8515d8647c1778caa28c08abd947f15a583
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745708"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350112"
 ---
 # <a name="messaging-system-for-finance-and-operations-apps"></a>Finance and Operations アプリのメッセージング システム
 
@@ -59,7 +59,7 @@ The transaction on voucher do not balance.
 
 ### <a name="presentation"></a>プレゼンテーション
 
-![メッセージ バーのスクリーン ショット](./media/messaging_messagebartypes.jpg)
+![メッセージ バーのスクリーン ショット。](./media/messaging_messagebartypes.jpg)
 
 ### <a name="action-center--messages-from-asynchronous-tasks"></a>アクション センター - 非同期タスクからのメッセージ
 アクション センターは、ナビゲーション バーに配置されます。 ユーザーによる迅速なアクションを必要とせず、現在の作業を続行するために必要ではないメッセージが含まれています。 一般的な例にとしては、バッチ ジョブやレポート完了などのバック グラウンド処理からのフィードバックがあります。 アクション センターでは、**情報**、**警告**、および **エラー** の各ステータスを表示できます。 アクション センターは、開かれる前に前回開いたときから受信したメッセージの数を示します。
@@ -86,7 +86,7 @@ The transaction on voucher do not balance.
 
 ### <a name="presentation"></a>プレゼンテーション
 
-![エラー メッセージの例](./media/messaging_boxapi.jpg) 
+![エラー メッセージの例。](./media/messaging_boxapi.jpg) 
 
 **エラー** タイプのメッセージでは、メッセージを含むモーダルの「明るい色のボックス」で現在のページにオーバーレイすることでユーザーの操作をブロックします。
 
@@ -104,7 +104,7 @@ Finance and Operations アプリの以前のバージョンでは、これまで
 ## <a name="should-this-message-interrupt-the-user"></a>このメッセージがユーザーに割り込むことを確認しますか?
 (バッチ ジョブまたはその他の操作) のタスクが失敗した場合は、ユーザーに受動的に通知することが適切な場合があります。 ユーザーはいつでも問題を修正して操作を再試行できるので、すぐに通知する必要はありません。 そのような場合、**error()** API は適切であり、ユーザーは割り込みダイアログを受け取りません。 ただし、それ以外の場合、ユーザーは問題が修正されるまでは続行できません。 たとえば、まだ無効なデータを保持しているページをユーザーが保存しようとする場合、クライアントはエラー ダイアログを表すことにより、ユーザーを中断させます。 これらのケースでは、ダイアログを提示することにより、ユーザーを中断させる方が適切である場合、**ボックス::** を使用する必要があります。 
 
-![Box API の例](./media/messaging_boxapi.jpg)
+![Box API の例。](./media/messaging_boxapi.jpg)
 
 
 ## <a name="will-my-message-end-up-in-a-message-bar-or-in-the-action-center"></a>私のメッセージは最終的にメッセージ バーまたはアクション センターに表示されますか。 
@@ -153,15 +153,15 @@ UI からメッセージを削除する際に、開発者が詳細な制御を�
 ## <a name="how-to-create-a-collection-of-related-messages"></a>関連メッセージのコレクションの作成方法  
 **SetPrefix()** を使用して関連するメッセージのコレクションを作成するための詳細は、[メッセージング API](messaging-api-center-bar-details.md) を **Setprefix ()** ご覧ください。 この API は主に下位互換性がありますが、中断のない方法で表示されます。 結果ウィンドウを直接開くことはできません。代わりに、ユーザーは、結果メッセージをコレクションにグループ化するために **setprefix ()** APIを使用したタスクを開始したアクション センターメッセージまたはページ上のメッセージバーによって、受動的に通知を受け取ります。 ユーザーに対して表示されるメッセージの重大度は、コレクション内の最も重要なメッセージの重大度レベルを反映しています。 たとえば、コレクションにエラーまたは警告が含まれていない場合、メッセージ バーは **情報** タイプです。 
 
-![情報タイプ メッセージ バーの例](./media/messaging_messagedetailsmessagebar.jpg) 
+![情報タイプ メッセージ バーの例。](./media/messaging_messagedetailsmessagebar.jpg) 
 
 コレクションに 1 つまたは複数の **warning()** への呼び出しが含まれている場合、メッセージ バーは、**警告** タイプです。 
 
-![警告タイプ メッセージ バーの例](./media/messaging_messagedetailswarningmessagebar.jpg) 
+![警告タイプ メッセージ バーの例。](./media/messaging_messagedetailswarningmessagebar.jpg) 
 
 コレクションに 1 つまたは複数の **error()** への呼び出しが含まれている場合、メッセージ バーは、**エラー** タイプです。 
 
-![エラー タイプ メッセージ バーの例](./media/messaging_messagedetailserrormessagebar.jpg) 
+![エラー タイプ メッセージ バーの例。](./media/messaging_messagedetailserrormessagebar.jpg) 
 
 **SetPrefix()** の使用も確定的です。 つまり、**SetPrefix()** を使用して、ページ コンテキスト (たとえば、非同期バッチ操作) が存在しない場合、結果の通知はページに関連付けられていないアクション センターに送信されます。
 

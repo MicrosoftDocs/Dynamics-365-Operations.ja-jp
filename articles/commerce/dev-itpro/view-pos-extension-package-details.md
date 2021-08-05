@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: aaa3e9e4f9bd2ad030a247154e9a4631c83c4099
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1f6cfd0321cc8343801dcb3db1fa98fe89b2b353
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792909"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344409"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 
@@ -33,7 +33,7 @@ ms.locfileid: "5792909"
 - **失敗** – 拡張パッケージが正常に読み込まれませんでした。
 - **スキップ** – パッケージはスキップされ、読み込まれませんでした。 拡張マニフェストでパッケージが **en-fr** など特定のロケールに対して読み込まれ、他のすべてのロケールに対してはスキップするよう指定できます。
 
-[![POS 設定ビューの拡張パッケージ セクション](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
+[![POS 設定ビューの拡張パッケージ セクション。](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
 > [!NOTE]
 > クラウド POS は **POS 設定** ページの **情報** セクションの下の Customization.settings ファイルに拡張機能のバージョンを表示せず、Microsoft アプリ パッケージのバージョンのみを表示します。 拡張機能パッケージのバージョンは **拡張機能の詳細** セクションからのみ表示できます。

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2ebb234ec357338723ae7b0258a89153a562d5c0
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: b0bdf02cf1455369f19adc98f1093159555e5e4d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112549"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355284"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 
@@ -58,7 +58,7 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 
 テストの自動化については、独立したデータまたは独自のデータを作成する単体テスト (SysTest フレームワークを使用) に焦点を合わせます。 実行するテスト データに依存する少数の機能的なシナリオ テスト (タスク レコーダーに基づく) を使用します。 シナリオ テストは、維持にコストがかかります。 単体テストは任意の開発環境で簡単かつ迅速に実行できます。 [テスト自動化のピラミッド](/archive/blogs/dave_froslie/test-automation-pyramid) に関するブログ記事を確認し、 [自動化されたテストのガイダンス](/archive/blogs/axdevalm/automated-testing-guidance-for-ax-7) を参照してください。
 
-![media/testautomationpyramid1.png](media/testautomationpyramid1.png) いくつかの重要な概念に留意してください。
+![media/testautomationpyramid1.png.](media/testautomationpyramid1.png) いくつかの重要な概念に留意してください。
 
 - 独立して実行されて順番を想定しないテストを記述します。
 - タスク レコーダー テストは、機能シナリオのテストに限定する必要があります。
@@ -81,7 +81,7 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 
 ビルド環境では、このバックアップを I:\\DynamicsBackupDatabases にコピーします (環境によっては i: とは異なるドライブになる可能性があります)。 このデータベースは、すべてのビルドの開始時にリストアされます。 このステップは、**ビルドの準備** と呼ばれるビルド定義の最初のステップの一部として実行されます。
 
-![media/prepareforbuild.png](media/prepareforbuild.png)
+![media/prepareforbuild.png.](media/prepareforbuild.png)
 
 ### <a name="how-do-i-distribute-my-application-to-customers"></a>顧客にアプリケーションをどのように配布しますか。
 

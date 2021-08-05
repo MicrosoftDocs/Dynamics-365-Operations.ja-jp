@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
-ms.openlocfilehash: e001631344bf74ea9a8ccccf0f27036cb99bb6bb
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: a3ef82ca688035dcc83c2c951e547b899af29113
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923277"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349072"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-20-september-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年 9 月) の新機能および変更された機能
 
@@ -56,41 +56,41 @@ Finance and Operations Web クライアントは、Microsoft Fluent Design に�
 
     次の画像は、プラットフォーム更新プログラム 20 より前のワークスペース カードのダッシュボード上での表示方法を示しています。
 
-    ![古いダッシュボード](media/prePU20-dashboard-cropped.png  "古いダッシュボード")
+    ![古いダッシュボード。](media/prePU20-dashboard-cropped.png  "古いダッシュボード")
   
     次の画像は、プラットフォーム更新プログラム 20 以降でのワークスペース カードの表示方法を示しています。
 
-    ![新しいダッシュボード](media/postPU20-dashboard-cropped.png  "新しいダッシュボード")
+    ![新しいダッシュボード。](media/postPU20-dashboard-cropped.png  "新しいダッシュボード")
 
 -  **アクション ウィンドウ** - アクション ウィンドウには、テーマ性に優れた背景色は表示されなくなり、代わりに、アクション ウィンドウには灰色の背景色が表示されます。 これは、Fluent に対応するためだけでなく、ユーザーが背景色はっきりとした違いが原因でページの残りの部分をアクション ウィンドウに関連付けないといういくつかの操作性問題に対処するためにも行われました。
 
     次の画像は、プラットフォーム更新プログラム 20 より前のアクション ウィンドウの表示方法を示しています。
 
-    ![古い詳細ページ](media/prePU20-customers-actionpane.png  "古い詳細ページ")
+    ![古い詳細ページ。](media/prePU20-customers-actionpane.png  "古い詳細ページ")
 
     次の画像は、プラットフォーム更新プログラム 20 以降でのアクション ウィンドウの表示方法を示しています。
 
-    ![新しい詳細ページ](media/postPU20-customers-actionpane.png  "新しい詳細ページ")
+    ![新しい詳細ページ。](media/postPU20-customers-actionpane.png  "新しい詳細ページ")
 
 -  **フィルター ウィンドウ** - フィルタ ウィンドウは、明るい背景色、フィールドをフィルター処理する錠剤のような外観、ウィンドウ上部の [フィルター フィールドの追加] ボタンの位置変更によって、完全に再編成されました。
 
     次の画像は、プラットフォーム更新プログラム 20 より前のフィルター ウィンドウの表示方法を示しています。
 
-    ![古いリスト ページ](media/prePU20-customers-cropped.png  "古いリスト ページ")
+    ![古いリスト ページ。](media/prePU20-customers-cropped.png  "古いリスト ページ")
 
     次の画像は、プラットフォーム更新プログラム 20 以降でのフィルター ウィンドウの表示方法を示しています。
 
-    ![新しいリスト ページ](media/postPU20-customers-cropped.png  "新しいリスト ページ")
+    ![新しいリスト ページ。](media/postPU20-customers-cropped.png  "新しいリスト ページ")
 
 -  **情報ボックス ウィンドウ**- 情報ボックス ウィンドウも外観が変更されました。 このウィンドウは、開いたときにページの高さ全体に広がり、最も重要な点として、折りたたまれたバージョンが見つけやすくなり、右側にある見落としやすいアイコンではなく、画面の右端に沿って **関連情報** ブレードとして表示されるようになりました。  
 
     次の画像は、プラットフォーム更新プログラム 20 より前の情報ボックス ウィンドウの表示方法を示しています。
 
-    ![古い情報ボックス ウィンドウ](media/prePU20-expandedFactBox-cropped.png  "古い情報ボックス ウィンドウ")
+    ![古い情報ボックス ウィンドウ。](media/prePU20-expandedFactBox-cropped.png  "古い情報ボックス ウィンドウ")
   
     次の画像は、プラットフォーム更新プログラム 20 以降での情報ボックス ウィンドウの表示方法を示しています。  
 
-    ![新しい情報ボックス ウィンドウ](media/postPU20-expandedFactBox-cropped.png  "新しい情報ボックス ウィンドウ")
+    ![新しい情報ボックス ウィンドウ。](media/postPU20-expandedFactBox-cropped.png  "新しい情報ボックス ウィンドウ")
 
 
 ## <a name="adding-and-removing-columns-in-a-grid-is-easier"></a>グリッドでの列の追加と削除の方がより簡単に

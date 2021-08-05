@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3b71c7930a319f0b1ef09884d2e7e340afe5718b
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 446f623df3631ccbc22ac7eaa39f075d35c0679e
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216707"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337347"
 ---
 # <a name="database-movement-operations-home-page"></a>データベース移動操作ホーム ページ
 

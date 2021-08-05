@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5507485400ced669526d3a7020c8c27e8d39d827
-ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
+ms.openlocfilehash: 1e23e3f047f6b5ce003f01074ad0a1c97854af1d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2021
-ms.locfileid: "6048830"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354377"
 ---
 # <a name="integration-between-finance-and-operations-apps-and-third-party-services"></a>Finance and Operations アプリとサード パーティ サービス間の統合
 
@@ -267,7 +268,7 @@ Finance and Operations の場合:
 >
 > TLS 1.2 またはそれ以降のバージョンを使用することが原因で対象サービスを変更できない場合は、次の図に示すように、ブローカー サービスを導入して 2 ホップ コールを行うことでこの問題を回避できます。
 >
-> ![TLS の要件](./media/integration-tls.png)
+> ![TLS の要件。](./media/integration-tls.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

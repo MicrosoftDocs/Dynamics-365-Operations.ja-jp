@@ -1,7 +1,7 @@
 ---
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス
 description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
-author: jorisdg
+author: peakerbl
 ms.date: 05/08/2020
 ms.topic: article
 audience: Developer
@@ -9,15 +9,15 @@ ms.reviewer: rhaertle
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
-ms.author: jorisde
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 604d7f813b46c493560570a78030dbf8d5485f63
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 84820854dabca9b0a3d4deb70f37781f7415d51c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360834"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -71,64 +71,64 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
 1. ISV ソリューションを作成します。 Visual Studio で、**ファイル \> 新しいプロジェクト** の順番にクリックします。 **新しいプロジェクト** ダイアログ ボックスで、**インストール済 > テンプレート > Dynamics 365** をクリックします。  **財務業務** プロジェクトを作成します。 この例では、プロジェクトに **NewISVSolution** という名前を付けました。
 
-    ![ISV ソリューションを作成しています](media/isv_new_isv_project.png)
+    ![ISV ソリューションを作成しています。](media/isv_new_isv_project.png)
 
 2. リソースとしてプロジェクトに証明書の公開キー (.cer ファイル) を追加します。 テスト用の証明書を作成するには、[付録: テスト目的での自己署名証明書の作成](#appendix-create-self-signed-certificates-for-test-purposes) を参照してください。
 
     1. ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 
     2. **インストール済み \> Dynamics 365 項目** で、**ラベルとリソース** をクリックし、**リソース** を選択し ます。 リソースに名前を付けます。 この例では、リソースに **ISVCert** という名前を付けました。
 
-        ![リソースをクリックする](media/isv_new_resource.png)
+        ![リソースをクリックします。](media/isv_new_resource.png)
 
     3. **追加** をクリックし、証明書の公開キー ファイル (.cer ファイル) を選択します。
 
-        ![リソースとして証明書の公開キーを選択](media/isv_select_cer.png)
+        ![リソースとして証明書の公開キーを選択します。](media/isv_select_cer.png)
 
     4. **開く** をクリックして証明書を追加します。
 
-        ![リソースとして証明書を追加](media/isv_resource_cer.png)
+        ![リソースとして証明書を追加します。](media/isv_resource_cer.png)
 
 3. ライセンス コードを作成します。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 **インストール済み \> Dynamics 365の項目** で、**構成** を選択します。 一覧で、**ライセンス コード** を選択し、ライセンス コードに名前を付けます。 この例では、ライセンス コードに **ISVLicenseCode** という名前を付けました。 **追加** をクリックします。
 
-    ![ライセンス コードを作成しています](media/isv_new_license_code.png)
+    ![ライセンス コードを作成しています。](media/isv_new_license_code.png)
 
 4. ライセンス コードに証明書をマップします。 ライセンス コードの [プロパティ] ウィンドウで、**証明書** プロパティを証明書リソースに設定します。 この例では、**証明書** を **ISVCert** に設定します。
 
-    ![ライセンス コードへの証明書のマッピング](media/isv_map_license_cert.png)
+    ![ライセンス コードに証明書をマッピングします。](media/isv_map_license_cert.png)
 
 5. 1 つまたは複数のコンフィギュレーション キーを作成します。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 **インストール済み \> Dynamics 365の項目** で、**構成** を選択します。 一覧で、**コンフィギュレーション キー** を選択します。 キーに名前を付けて、**追加** をクリックします。 この例では、コンフィギュレーション キーに **ISVConfigurationKey1** という名前を付けました。
 
-    ![コンフィギュレーション キーを作成しています](media/isv_new_configuration_key.png)
+    ![コンフィギュレーション キーを作成しています。](media/isv_new_configuration_key.png)
 
 6. ライセンス コードをコンフィギュレーション キーに関連付けます。 ソリューション エクスプローラーで、コンフィギュレーション キーをダブルクリックして、[プロパティ] ウィンドウを開きます。 [プロパティ] ウィンドウで、**LicenseCode** プロパティをライセンス コードに設定します。 この例では、**LicenseCode** を **ISVLicenseCode** に設定します。
 
-    [![ライセンス コードとコンフィギュレーション キーの関連付け](media/isv_select_license_code.png)
+    [![ライセンス コードとコンフィギュレーション キーを関連付けます。](media/isv_select_license_code.png)
 
 7. コンフィギュレーション キーをソリューションの要素に関連付けます。 たとえば、新しいフォームを作成します。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 **インストール済み \> Dynamics 365の項目** で、**ユーザー インターフェイス** を選択します。 一覧で、**フォーム** を選択し、名前を付けます。 この例では、フォームに **ISVForm** という名前を付けました。
 
-    ![新しいフォームを作成しています](media/isv_new_form.png)
+    ![新しいフォームを作成しています。](media/isv_new_form.png)
 
 8. フォームにボタンを追加します。 ソリューション エクスプローラーで、フォームをダブルクリックします。 [デザイン] ウィンドウで右クリックし、**新規作成**、**ボタン** の順に選択します。 **テキスト** プロパティを **ISVButton** に設定します。
 
-    ![新しいフォームへのボタンの追加](media/isv_button_designtime.png)
+    ![新しいフォームにボタンを追加しています。](media/isv_button_designtime.png)
 
     実行時に、ボタンは最初はコンフィギュレーション キーで制御されていないため、表示されます。 
 
-    ![最初に追加されるときに、新しいボタンが表示されます](media/isv_button_visible_runtime.png)
+    ![最初に追加されるときに、新しいボタンが表示されます。](media/isv_button_visible_runtime.png)
 
 9.  コンフィギュレーション キーをボタンに関連付けます。 ボタンの [プロパティ] ウィンドウで、**コンフィギュレーション キー** プロパティを コンフィギュレーションに設定します。 この例では、**コンフィギュレーション キー** を **ISVConfigurationKey1** に設定します。
 
-    ![コンフィギュレーション キーとボタンの関連付け](media/isv_select_key_for_button.png) 
+    ![コンフィギュレーション キーとボタンを関連付けています。](media/isv_select_key_for_button.png) 
 
     実行時に、コンフィギュレーション キーが使用可能で有効になっている必要があるため、ボタンは表示されません。 
 
-    ![ボタンが表示されていません](media/isv_button_invisible_runtime.png)
+    ![ボタンが表示されていません。](media/isv_button_invisible_runtime.png)
 
 
 ## <a name="create-a-package-and-generate-a-customer-specific-license"></a>パッケージを作成し、顧客固有のライセンスを生成する
 1.  ライセンスを発行する顧客のテナント名と ID を収集します。 この情報については **ライセンス** タブの **設定 \> ヘルプ \& サポート \> バージョン情報** で確認できます。 
 
-    ![顧客のテナント名および ID](./media/isv_tenant_id.png)
+    ![顧客のテナント名および ID。](./media/isv_tenant_id.png)
 
 2.  顧客のライセンス (テナント ID と名前) を生成し、証明書のプライベート キーを使用してライセンスを登録します。 ライセンス ファイルを作成するには、**axutil genlicense** コマンドに、以下のパラメーターを渡す必要があります。
 
@@ -174,13 +174,13 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
 4.  対応するコンフィギュレーション キーは、**ライセンス コンフィギュレーション** ページで使用可能になり、有効になります。 既定では、コンフィギュレーションが有効です。 たとえば、次のスクリーンショットで **ISVConfigurationKey1** コンフィギュレーション キーを参照してください。 
 
-    ![ライセンス設定ページで ISVConfigurationKey1 コンフィギュレーション キーを有効にする](media/isv_license_configuration_page.png)
+    ![ライセンス設定ページで ISVConfigurationKey1 コンフィギュレーション キーを有効にします。](media/isv_license_configuration_page.png)
 
 5.  非実稼働インストールでは、Visual Studio からデータベースの同期プロセスを開始する必要があります。
 
 コンフィギュレーション キーを有効にした後、次のスクリーンショットに示すように、ボタンは表示されるようになります。 
 
-![コンフィギュレーション キーを有効にするとボタンが表示されます](media/isv_button_visible_runtime.png)
+![コンフィギュレーション キーを有効にするとボタンが表示されます。](media/isv_button_visible_runtime.png)
 
 ## <a name="protection-best-practices"></a>保護のベスト プラクティス
 ソリューションは、2つの形式で配布することができます。
@@ -190,13 +190,13 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
 構成キーとライセンス コードを保護するには、展開可能なパッケージを使用してバイナリ形式でリリースすることをお勧めします。 顧客は Visual Studio のこれらの要素をインストールして対話することができます。 顧客が配置可能パッケージ内の項目を参照することはできますが、ソース コードにアクセスしたり項目を変更することはできません。 (ただし、拡張機能を作成できます。) バイナリ形式でソリューションをリリースする機能の詳細は、すぐに利用可能になります。 配置可能パッケージ (バイナリ) には、顧客がアクセスを必要とせず、カスタマイズできないようなクラスやその他のロジックも含めることができます。 
 
-![保護されている ISV ソリューションと保護されていない ISV ソリューション](./media/isv_protected_solution.png)
+![保護されている ISV ソリューションと保護されていない ISV ソリューション。](./media/isv_protected_solution.png)
 
 ## <a name="production-environments"></a>実稼働環境
 実稼働システムに ISV ライセンスをインストールするには、LCS によって展開可能なパッケージを使用する必要があります。 コンフィギュレーション モード用テンプレート パッケージは、すべてのインストールに関して次の場所にあります: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (パッケージ フォルダーは通常次の下にあります j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
 > [!div class="mx-imgBorder"]
-> ![コンフィギュレーション モードのテンプレート パッケージの場所](media/isv_template_location.png)
+> ![コンフィギュレーション モードのテンプレート パッケージの場所。](media/isv_template_location.png)
 
 1.  パッケージ テンプレートのコピーを作成します。
 2.  パッケージ テンプレート内の次のフォルダーにライセンス ファイルを配置: ImportISVLicense.zip\\AosService\\Scripts\\License

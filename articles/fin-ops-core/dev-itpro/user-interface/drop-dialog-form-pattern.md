@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae81ee9214fe75cb343115f0df38467c06bb9722
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c0a253a1b1ded66b4fce3bc9cd96029d4b887ac0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189328"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354355"
 ---
 # <a name="drop-dialog-form-pattern"></a>ダイアログ削除のフォーム パターン
 
@@ -37,11 +37,11 @@ ms.locfileid: "6189328"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="drop-dialog-basic"></a>ドロップ ダイアログ (basic)
 
-[![基本的なドロップ ダイアログ パターン](./media/dropdialog1.png)](./media/dropdialog1.png)
+[![基本的なドロップ ダイアログ パターン。](./media/dropdialog1.png)](./media/dropdialog1.png)
 
 ### <a name="drop-dialog-read-only"></a>ドロップ ダイアログ (読み取り専用)
 
-[![読み取り専用ドロップ ダイアログ パターン](./media/dropdialog2.png)](./media/dropdialog2.png)
+[![読み取り専用ドロップ ダイアログ パターン。](./media/dropdialog2.png)](./media/dropdialog2.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -126,7 +126,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 Form: **CustCollectionsNewActivityAction** (**売掛金勘定** &gt; **共通** &gt; **コレクション** &gt; **コレクション** の順にクリックし、詳細に移動する行を選択し、**アクション** をクリックします。) 
 
-[![基本ドロップ ダイアログの例](./media/dropdialog3.png)](./media/dropdialog3.png)
+[![基本ドロップ ダイアログの例。](./media/dropdialog3.png)](./media/dropdialog3.png)
 
 ### <a name="drop-dialog-read-only"></a>ドロップ ダイアログ (読み取り専用)
 
@@ -146,7 +146,7 @@ Form: **CustCollectionsNewActivityAction** (**売掛金勘定** &gt; **共通** 
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![ドロップ ダイアログの例](./media/dropdialog4.png)](./media/dropdialog4.png)
+[![ドロップ ダイアログの例。](./media/dropdialog4.png)](./media/dropdialog4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

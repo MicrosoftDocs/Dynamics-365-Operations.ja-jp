@@ -3,20 +3,18 @@ title: 明細書の選択中
 description: このトピックでは、X++ 言語での while select ステートメントについて説明します。
 author: robinarh
 ms.date: 06/16/2020
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 20b0af87f10f0c61ac30931fc9cab0db871cac85
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d2b954afb5bd06d5f89d5c6ac95d8da3561435a6
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865908"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661410"
 ---
 # <a name="while-select-statement"></a>明細書の選択中
 

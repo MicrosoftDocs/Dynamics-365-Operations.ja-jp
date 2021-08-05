@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8e26e995e0c17cf4f3e01140b926fdd931c80a7
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: f479e13d3921c63c6140c91d51cc329fe1894f70
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866228"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360336"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 
@@ -46,7 +46,7 @@ ms.locfileid: "5866228"
 2.  **プロジェクトを開く** ダイアログ ボックスの **ファイル名** テキスト ボックスに次のパスを入力してから **Enter** キーを押します - *C:\\users\\public\\desktop\\FleetManagement*。
 3.  FleetManagement.sln というファイルを選択し、**開く** をクリックします。 ソリューション ファイルがコンピュータにない場合は、作成手順が「[チュートリアル: AOT のフリート管理モデルからフリート管理ソリューションを作成する](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)」に記載されています。
 
-    [![OpenProject\_LinqC](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
+    [![OpenProject\_LinqC.](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
 
 4.  **FleetManagement** ソリューションを右クリックし、**追加** &gt; **新しいプロジェクト** をクリックします。 **新しいプロジェクトの追加** ダイアログ ボックスが表示されます。
 5.  左ウィンドウで、**Visual C\#** をクリックしてから、中央ウィンドウで **クラス ライブラリ** をクリックします。
@@ -55,12 +55,12 @@ ms.locfileid: "5866228"
 8.  上部にあるドロップダウン リストで、プロジェクトが ".NET Framework 4.5" に設定されていることを確認します。
 9.  プロジェクトを作成するには、**OK** をクリックします。 
 
-    [![AddNewProject\_LinqC](./media/addnewproject_linqc2.png)](./media/addnewproject_linqc2.png)
+    [![AddNewProject\_LinqC.](./media/addnewproject_linqc2.png)](./media/addnewproject_linqc2.png)
 
 10. **ソリューション エクスプローラー** の DriversLicenseEvaluator プロジェクトで、ファイル名 Class1.cs を右クリックして DriversLicenseChecker.cs に名前を変更します。
 11. クラスへのすべての参照の名前を変更するか、確認するメッセージが表示されたら、**はい** をクリックします。 
 
-    [![RenameClass\_LinqC](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)
+    [![RenameClass\_LinqC.](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)
 
 ## <a name="write-a-c-method-named-checkdriverslicense"></a>CheckDriversLicense という名前で C\# メソッドを記述
 このセクションでは、CheckDriversLicense という名前のメソッドの C\# コードを追加します。 このメソッドでは、運転免許証を検証する必要があります。 これを行うには、メソッドは顧客テーブルに格納されている運転免許証番号を取得する必要があります。 このメソッドには、メソッドで必要な情報が含まれている顧客レコードの RecId値が与えられます。 C\# コードは、 LINQ プロバイダーを使用して、顧客テーブルから読み取ります。 LINQ が作動するためには、最初に LINQ アセンブリを指定している参照を追加する必要があります。 これらの参照を DriversLicenseEvaluator という名前の C\# プロジェクトに追加します。
@@ -75,7 +75,7 @@ ms.locfileid: "5866228"
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
 
-    [![SelectReferences\_LinqC](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)
+    [![SelectReferences\_LinqC.](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)
     
 4.  以下のコードで使用する共通タイプを含むサポート アセンブリも追加する必要があります。 **参照** をもう一度クリックし、フィールドに次のファイル名を入力します。
     -   Microsoft.Dynamics.AX.Xpp.Support.dll
@@ -210,19 +210,19 @@ public static void OnValidatedWriteHandler(Common table, DataEventArgs args)
 
 1.  FleetManagement Migrated プロジェクトを右クリックし、**追加** をクリックして **参照** をクリックします。 **プロジェクト** 参照タブで DriversLicenseEvaluator プロジェクトの行を選択し、**OK** をクリックします。 
 
-    ![AddReference\_LinqC](./media/addreference_linqc1.png)
+    ![AddReference\_LinqC.](./media/addreference_linqc1.png)
 
 2.  FleetManagement Migrated プロジェクトで、**References** ノードを展開すると、**DriversLicenseEvaluator** プロジェクトへの新しい参照が表示されます。
 
-    ![SolutionExplorerReferences\_LinqC](./media/solutionexplorerreferences_linqc2.png)
+    ![SolutionExplorerReferences\_LinqC.](./media/solutionexplorerreferences_linqc2.png)
 
 #### <a name="build-sequence"></a>ビルド順序
 
 C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated プロジェクトのビルド前にビルドされます。 これは、追加された参照によって、フリート プロジェクトがプロジェクトに依存するためです。 ビルド シーケンスを簡単に確認するには、FleetManagement ソリューションを右クリックし、 **プロジェクト ビルド順序** をクリックして、 **相互関係** をクリックします。
 
-![ProjectDependencies1\_LinqC](./media/projectdependencies1_linqc2.png)
+![ProjectDependencies1\_LinqC.](./media/projectdependencies1_linqc2.png)
 
-![ProjectDependencies2\_LinqC](./media/projectdependencies2_linqc1.png)
+![ProjectDependencies2\_LinqC.](./media/projectdependencies2_linqc1.png)
 
 ### <a name="add-your-event-handler-to-a-delegate"></a>委任へのイベント ハンドラーの追加
 
@@ -266,7 +266,7 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 
 このテストでは、書き込んだ C\# コードをデバッグします。 これを行うには、Visual Studio に C\# コードを含むアセンブリのシンボルを読み込むように通知する必要があります。 **Dynamics 365 &gt; オプション &gt; デバッグ** の順に移動し、 **ソリューション内の項目に対してのみシンボルを読み込む** チェック ボックスが選択されていないことを確認します。 
 
-![Options\_LinqC](./media/options_linqc2.png)
+![Options\_LinqC.](./media/options_linqc2.png)
 
 > [!TIP] 
 > C\# コードでブレークポイントに到達できない場合、**モジュール** ウィンドウ (**デバッグ&gt;ウィンドウ&gt;モジュール**) で開けて、C\# モジュールを検索し、明示的に読み込みます。
@@ -280,7 +280,7 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 7.  ブレークポイントの数行上で、変数の顧客を検索します。
 8.  顧客変数を右クリックし、**QuickWatch** をクリックします。 長整数値は、LINQ クエリが機能していることを証明します。 
 
-    ![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)
+    ![QuickWatch\_LinqC.](./media/quickwatch_linqc2.png)
 
 9.  **F5** キーを押して **保存** 操作を完了します。
 

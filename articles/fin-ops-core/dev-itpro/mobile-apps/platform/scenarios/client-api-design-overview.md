@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 255544
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 048ba404ee14d877d4cabc639391977ab70266e9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 28ae4e755b3052296180b7f6005d29eae0100023
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752686"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344846"
 ---
 # <a name="client-side-design-apis"></a>クライアント側の設計 API
 
@@ -114,7 +114,7 @@ ms.locfileid: "5752686"
 
 次の図は、前のコードで生成された顧客画像、顧客名、フォント、背景色などを示しています。
 
-![前のコードにより生成された情報を示す画像](media/detail-page.png)
+![前のコードにより生成された情報を示す画像。](media/detail-page.png)
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

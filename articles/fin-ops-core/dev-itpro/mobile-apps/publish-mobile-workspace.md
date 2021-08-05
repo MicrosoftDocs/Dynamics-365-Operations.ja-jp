@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: e65c7fe987a2c696007dac686dbea5610ce6c084
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8f7b7c34ec20beb6bea787f90f009ace676d8f35
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745633"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361308"
 ---
 # <a name="publish-mobile-workspaces"></a>モバイル ワークスペースの公開
 
@@ -37,7 +37,7 @@ ms.locfileid: "5745633"
 
 新しいワークスペースが発行された後、ユーザーはプルしてモバイル ワークスペースの一覧を更新する必要があります。 
 
-[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![プルして更新。](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 
 

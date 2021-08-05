@@ -6,18 +6,18 @@ ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 23441
+ms.custom: intro-internal
 ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fc5739fd967c98fce41666ede771eb93a9cf11b
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 9401748309fe92b3f5de431ee1f881f81ee96f88
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866328"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355276"
 ---
 # <a name="development-tools-tutorial"></a>開発ツールのチュートリアル
 
@@ -53,11 +53,11 @@ ms.locfileid: "5866328"
    - フォーム、メニュー、およびその他の GUI 要素は **ユーザー インターフェイス** にあります。
    - ビジネス インテリジェンス コンポーネントは **分析** の下にあります。
 
-       [![分析のために開かれたアプリケーションエクスプローラー](./media/aot_introvisualstudio.png)](./media/aot_introvisualstudio.png)
+       [![分析のために開かれたアプリケーション エクスプローラー。](./media/aot_introvisualstudio.png)](./media/aot_introvisualstudio.png)
 
 2. **アプリケーション エクスプローラー** で、**AOT** を右クリックしてから **モデル ビュー** をクリックします。
 
-   [![フリート管理のモデル ビューを開く](./media/filterquery_introvisualstudio.png)](./media/filterquery_introvisualstudio.png)
+   [![フリート管理のモデル ビューを開く。](./media/filterquery_introvisualstudio.png)](./media/filterquery_introvisualstudio.png)
 
    モデル ビューでは、そのモデルに従って、プログラム可能なオブジェクトを整理します。 これらのチュートリアルでは、アプリケーション スイート モデルが削除されました。 コアの基盤とプラットフォームのコンポーネントは、アプリケーション スイートから分離されています。 この分離により、アプリケーション スイート モデルの削除が可能になります。
 3. モデル ツリー ノードを展開するには **Fleet Management** をダブルクリックまたは矢印をクリックします。 モデル ビューは、一連のプログラム可能なオブジェクトを操作する使いやすい方法を提供します。 クラシック ビューでの表示と似ていますが、ツリーに特定のモデルの一部であるオブジェクトのみが表示されます。
@@ -71,7 +71,7 @@ ms.locfileid: "5866328"
 
 このチュートリアルのこのセクションでは、フリート管理プロジェクトとその解決方法について説明します。 プロジェクトを使うと、モデル要素の作成 (コンパイル、データベースを同期、RDL ファイルの生成など)、アプリケーションのテスト、およびコードのデバッグを行うことができます。 モデル要素がプロジェクトの一部でない限り、モデル要素に変更を加えないことをお勧めします。そうでない場合、モデルの完全なビルドを実行するまで変更がコンパイルされないので、処理の時間が非常に長くなります。 **ソリューション エクスプローラー** で、**FleetManagement 割引** および **移行された FleetManagement** という名前のサンプル プロジェクトを確認できます。 これらのプロジェクトは、**FleetManagement** という名前の単一の Visual Studio ソリューションに含まれています。
 
-[![FleetManagement のソリューション エクスプローラー](./media/solutionexplorer_introvisualstudio.png)](./media/solutionexplorer_introvisualstudio.png)
+[![FleetManagement のソリューション エクスプローラー。](./media/solutionexplorer_introvisualstudio.png)](./media/solutionexplorer_introvisualstudio.png)
 
 1. **ソリューション エクスプローラー** で、**移行されたフリート管理** を右クリックしてから **プロパティ** をクリックします。
 2. **プロパティ ページ** ダイアログ ボックスで、一覧表示されたプロパティを確認します。 **スタートアップ オブジェクト** フィールドで、プロジェクトを実行またはデバッグするときに実行する最初のフォームの名前を表示することができます。 **スタートアップ オブジェクト タイプ** フィールドに **フォーム** がセットされていることがわかります。 モデル名およびそのレイヤーを表示することもできます。 プロジェクトは、常に 1 つのモデルに属しています。
@@ -86,33 +86,33 @@ ms.locfileid: "5866328"
 3. クラスの一覧で、**FMDataHelper** をダブルクリックしてコード エディターを開きます。 ここで、**FMDataHelper** X++ クラスの実装が表示されます。
 4. コードを下にスクロールして **main** メソッドを見つけます。 **ヒント**: また、コード エディタ ウィンドウの右上にあるメソッド ナビゲーション メニューを使用してメイン メソッドに移動することもできます。
 
-    [![ソース メニュー](./media/main_introvisualstudio.png)](./media/main_introvisualstudio.png)
+    [![ソース メニュー。](./media/main_introvisualstudio.png)](./media/main_introvisualstudio.png)
 
     このクラスは、プロジェクトのスタートアップ オブジェクトとして設定されている場合、プロジェクトを実行またはデバッグするときに、**メイン** メソッドは実行のエントリ ポイントになります。
 
-    [![FmDataHelper のソース コード](./media/fmdatahelper_introvisualstudio.png)](./media/fmdatahelper_introvisualstudio.png)
+    [![FmDataHelper のソース コード。](./media/fmdatahelper_introvisualstudio.png)](./media/fmdatahelper_introvisualstudio.png)
 
 5. Windows で、**ファイル エクスプローラー** を開いてから、C:\\Packages\\FleetManagement\\FleetManagement\\AxClass のフォルダーを参照します。
 6. FMDataHelper.xml という名前のファイルをダブルクリックします。 ファイルを開くプログラムを選択するように求められた場合、**その他のオプション** をクリックし、**Internet Explorer** をクリックします。 それ以外の場合、メモ帳で開きます。
 
-    [![ソース コードのブラウザー ビュー](./media/notepad_introvisualstudio.png)](./media/notepad_introvisualstudio.png)
+    [![ソース コードのブラウザー ビュー。](./media/notepad_introvisualstudio.png)](./media/notepad_introvisualstudio.png)
 
     このファイルでは、**FMDataHelper** クラスを記述するメタデータを含む XML コードを表示できます。 たとえば、**FMDataHelper** という名前のクラスにメソッドのセットが含まれていることを表示できます。 XML 要素に含まれる、**intializeNumberSequence** メソッドなどを実装するコードを表示することができます。 &lt;!\[CDATA\]&gt; タグは、含まれているテキストが XML パーサーにより解釈または変更されないことを確証します。 このメタデータには、Visual Studio のコード ウィンドウで表示したソース コードが含まれています。 ソリューションを開発するときは、XML として格納されているコードを常に操作します。 つまり、コード ファイルはデータベースではなくコンピューターに保存されます。 アプリケーションの開発中は、Application Object Server (AOS) へのアクティブな接続がありません。 データの損失を避けるために、Visual Studio Team Foundation Server などのソースコード管理システムでプロジェクト ファイルを管理することをお勧めします。 ソース コード ファイルの格納方法と保管場所を知るのに役立ちますが、XML ファイルを直接変更しないでください。 **常に Visual Studio を使用して、プロジェクトのソース コードを変更します。**
 7. **FMDataHelper.xml** ファイルのウィンドウを閉じます。
 8. **ソリューション エクスプローラー** で、**移行された FleetManagement** プロジェクトの **ラベル ファイル** をダブルクリックしてフォルダーを開き、プロジェクトのラベルを表示してから、**FLM\_en-US** ノードをクリックしてラベル エディターを開きます。
 
-    [![ラベル ファイル](./media/flm_en-us_introvisualstudio.png)](./media/flm_en-us_introvisualstudio.png)
+    [![ラベル ファイル。](./media/flm_en-us_introvisualstudio.png)](./media/flm_en-us_introvisualstudio.png)
 
     ラベル エディターの **検索** ボックスに、「レンタル」と入力します。 入力すると、「レンタル」という単語が含まれているフリート管理のサンプルのラベル一覧が表示されます。 編集可能ないずれかのセルをダブルクリックしてコンテンツを変更し、ラベル ファイルを保存することができます。
 
-    [![ラベルの一覧](./media/search-rental_introvisualstudio.png)](./media/search-rental_introvisualstudio.png)
+    [![ラベルの一覧。](./media/search-rental_introvisualstudio.png)](./media/search-rental_introvisualstudio.png)
 
 ## <a name="build-the-fleetmanagement-migrated-project"></a>FleetManagement 移行プロジェクトの構築
 
 1. **ソリューション エクスプローラー** で、**移行されたフリート管理** を右クリックしてから **リビルド** をクリックします。
 2. **出力** ウィンドウの **出力元の表示** リストで、**ビルド** をクリックします。 コンパイル エラーなしにビルドが完了したことを確認します。 ビルドの完了を待ちます。 **出力** ウィンドウの最終ビルド メッセージには、「...ビルドが完了しました」と表示されます。 状態バー (Visual Studio の左下隅) 内の最終ビルド メッセージは "Ready" と表示します。
 
-    [![ビルド出力](./media/output_introvisualstudio.png)](./media/output_introvisualstudio.png)
+    [![ビルド出力。](./media/output_introvisualstudio.png)](./media/output_introvisualstudio.png)
 
 3. **表示** メニューで、**エラー リスト** をクリックして、ベスト プラクティス警告のリストを表示します。 この機能を示すために、ビルドにいくつかの警告を意図的に残しました。
 4. 警告メッセージをダブルクリックして、警告の原因となったコードまたはリソースを表示します。

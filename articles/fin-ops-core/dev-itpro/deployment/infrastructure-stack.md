@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: c199868851a64dfedabf42ea6e55e33d6f0d2661
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: a2663b33579f844b998acef702c53b440f14f1dd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303428"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351702"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 
@@ -37,18 +38,18 @@ ms.locfileid: "6303428"
 
 - 配置はセルフサービスであり、環境のタイプ (サンドボックスまたは生産) に応じて、平均 1 ~ 2時間以内に完了できます。 配置のリード タイムや待機時間はなくなります。 いつ配置するかを制御し、環境が展開されていることを確認できます。 このエクスペリエンスは、現在のエクスペリエンスと同じです。 詳細については、 [セルフサービス配置の FAQ](deploymentFAQ.md) を参照してください。
 
-   ![配置設定](media/deployment-settings.png)
+   ![配置設定。](media/deployment-settings.png)
 
 - レベル 2 以上のサンドボックス環境へのリモート デスクトップ アクセスがなくなります。 リモート デスクトップ アクセスが必要なすべての操作は、セルフ サービス アクションとして使用可能になりました。 次の図に、環境の **メンテナンス** \> **データベース メニューの移動** オプションにおける操作の一部を示します。 詳細については、[配置のメンテナンス操作](maintenanceoperationsguide-newinfrastructure.md)を参照してください。
 
     > [!IMPORTANT]
     > リモート デスクトップ アクセスは、セルフ サービス展開を使用して配置された環境にのみ制限されます。 既存の環境または既存の顧客に変更はありません。 
 
-   ![セルフ サービス アクション](media/Self-service-actions.png)
+   ![セルフサービス アクション。](media/Self-service-actions.png)
 
 - 診断機能は、同じままです。リモート デスクトップ アクセスなしでトラブルシューティングが可能になります。 詳細については、[セルフサービス配置で配置された環境のトラブルシューティング](troubleshoot-newinfrastructure.md)を参照してください。 
 
-   ![環境の監視](media/environment-monitoring.png)
+   ![環境の監視。](media/environment-monitoring.png)
 
 - レベル 2 以上では SQL Server アクセスはありません。 Just-In-Time アクセスを使用して SQL データベース アクセスすることは引き続きできます。
 

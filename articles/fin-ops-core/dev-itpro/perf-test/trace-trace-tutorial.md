@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea3e6ccd89afd18f6accdc76f684227f5166b0f7
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 87ba6d3b52b03810ec9dd0ec7475089145f55560
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866130"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357494"
 ---
 # <a name="take-traces-by-using-trace-parser"></a>Trace Parser を使用してトレースを実行
 
@@ -55,7 +55,7 @@ ms.locfileid: "5866130"
 1. ユーザーにトレースをキャプチャする権利を与えるには、 **システム管理&gt; ユーザー &gt;ユーザー** を参照してください。
 2. ユーザーを選択し、**システム追跡ユーザー** ロールを割り当てます。 
 
-    [![ユーザーへのトレース権限の割り当ての例](./media/trace2-284x300.jpg)](./media/trace2.jpg)
+    [![ユーザーへのトレース権限の割り当ての例。](./media/trace2-284x300.jpg)](./media/trace2.jpg)
 
     ユーザーが不要なトレースを回避するために追跡を行ったら、ユーザー ロールを削除します。
 

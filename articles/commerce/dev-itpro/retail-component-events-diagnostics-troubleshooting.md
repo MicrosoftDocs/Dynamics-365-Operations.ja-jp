@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cae52c1f9be92847f250b8c221a07c9944509bd
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e7ec51d15817a4338937bd3adcbe66affa803e13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019525"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358749"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
@@ -45,7 +45,7 @@ ms.locfileid: "6019525"
 
 コンピューターでイベント ビューアを起動するには、**開始** ボタンをクリックし、**イベント ビューア** をクリックします。
 
-[![スタート ボタンのショートカット メニューのイベント ビューアー コマンド](./media/launch-event-viewer.png)](./media/launch-event-viewer.png)
+[![スタート ボタンのショートカット メニューのイベント ビューアー コマンド。](./media/launch-event-viewer.png)](./media/launch-event-viewer.png)
 
 すべてのコマース固有イベント ログにはイベント ビューアーで次のパスを確認できます。アプリケーションおよびサービス ログ \\Microsoft\\Dynamics 以下のコマース固有のイベント ログを提供します。
 
@@ -59,7 +59,7 @@ ms.locfileid: "6019525"
 
 - デバッグ ログを右クリックし、**ログの有効化** をクリックします。
 
-![デバッグ ログのショートカット メニューでログ コマンドを有効にする](./media/enable-debugging-log.png)
+![デバッグ ログのショートカット メニューでログ コマンドを有効にします。](./media/enable-debugging-log.png)
 
 ## <a name="viewing-events-by-using-the-f12-browser-developer-tools-console"></a>(F12) ブラウザー開発者ツール コンソールを使用してイベントを表示
 
@@ -71,7 +71,7 @@ Retail Cloud POS と e コマース モジュールはブラウザー ベース�
 2. F12 キーを押し、**コンソール** タブをクリックします。
 3. Retail Cloud POS または e コマース Web サイトの操作を実行する際に、イベントはコンソールに記録されます。 イベント重要度でフィルター処理して、異なる重要度レベルのイベントを表示することができます。
 
-[![ブラウザー開発者ツールのコンソール タブ](./media/browser-console-1024x522.png)](./media/browser-console.png)
+[![ブラウザー開発者ツールのコンソール タブ。](./media/browser-console-1024x522.png)](./media/browser-console.png)
 
 ## <a name="correlating-events"></a>関連のイベント
 
@@ -97,7 +97,7 @@ POS クライアントが Commerce Scale Unit を呼び出すときはいつで�
 
 Commerce Scale Unit 要求の一部として記録されるすべてのイベントは、最初の受信要求イベント用に記録された初期イベントと同じ ActivityID を持ちます (イベント ID 5000)。 これらのイベントは、イベント ビューアーと LCS ログ検索の両方で利用できます。
 
-[![POS クライアントと Commerce Scale Unit 間のデータ フロー](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
+[![POS クライアントと Commerce Scale Unit 間のデータ フロー。](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
 
 ### <a name="finding-retail-modern-pos-events-in-event-viewer"></a>イベント ビューアーでの Retail Modern POS イベントの検索
 
@@ -108,7 +108,7 @@ Retail Modern POS によってが記録されたすべてのイベントには�
 
 AppSessionID 値および UserSessionID 値は、Retail Modern POS がインストールされているマシン上のイベント ビューアーの **詳細** タブで見つけることができます。
 
-[![イベント ビューアーの詳細タブ](./media/correlation-1024x672.png)](./media/correlation.png)
+[![イベント ビューアーの詳細タブ。](./media/correlation-1024x672.png)](./media/correlation.png)
 
 ### <a name="finding-incoming-commerce-scale-unit-request-events-in-event-viewer"></a>イベント ビューアーで、受信する Commerce Scale Unit 要求のイベントを検索
 
@@ -163,7 +163,7 @@ LCS ログ検索にアクセスするには、次の手順を実行します。
 - POS ユーザー セッション ID
 - 重大度
 
-![環境監視ページの検索結果](./media/log-search-results.png)
+![環境監視ページの検索結果。](./media/log-search-results.png)
 
 ### <a name="e-commerce-events"></a>E コマース イベント
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 51017bd0b64a2c7f46da6ed6642c9fa7c5b7e4a6
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: e52c2f6ead8e344add500682478ae771f7916e86
+ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039757"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "6538905"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -62,10 +62,9 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | StockCountDetailsView           | なし                            | あり                          | あり                                   |
 | ResumeCartView                  | なし                            | あり                          | あり                                    |
 | InventoryLookupMatrixView       | なし                            | なし                           | はい                                   |
-| SuspendTransactionView          | 無                            | 有                          | 無                               |   
-| ManageShiftView                 | 無                            | 無                           | あり                               |  
+| SuspendTransactionView          | 無                            | あり                          | なし                               |   
+| ManageShiftView                 | なし                            | なし                           | あり                               |  
 | ReportDetailsView               | なし                            | なし                           | あり                               |
-| SearchReceiptsView              | なし                            | なし                           | あり                               |
 | TransferOrderDetailsView        | なし                            | なし                           | あり                               |
 | FulfillmentLineView             | いいえ                            | はい                          | はい                               |
 | ReturnTransactionView           | いいえ                            | はい                          | はい                               |
@@ -75,6 +74,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | SalesInvoicesView (10.0.11) | 無                            | 有                          | 無           |
 | InventoryDocumentShippingAndReceivingView (10.0.13) | なし                            | なし                          | あり           |
 | InventoryDocumentListView  | なし                            | はい (10.0.15)                          | はい (10.0.13)          |
+| ManageShiftsView  | なし                            | はい (10.0.21)                          | なし          |
 
 
 

@@ -6,18 +6,18 @@ ms.date: 10/16/2019
 ms.topic: index-page
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 189643
+ms.custom: intro-internal
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b43263dbd86e0205d6c9e9fba0f7645717c3d81
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: b37af7285909077351b81332be68c0fb9d6a113b
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189539"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338521"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 

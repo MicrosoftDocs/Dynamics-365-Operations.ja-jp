@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 23710b9558ce295e16d382819e273c60090b02e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2b5ba11313f697db2dc9d2815200eb60ab602487
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748161"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357566"
 ---
 # <a name="form-design-requirements"></a>フォーム デザインの要件
 
@@ -38,7 +38,7 @@ ms.locfileid: "5748161"
 -   各フォームでは、データ ソース フィルターを作業する必要があります。
     -   Web クライアントでフォームを開いた後、**フィルターの表示** ボタンを使用してフィルター ウィンドウを開きます。 
     
-        ![フィルター ボタンを表示](media/filterpane.png) 
+        ![フィルター ボタンを表示する。](media/filterpane.png) 
         
         その後 **フィルター フィールドの追加** をクリックして、マスター ルート データ ソースが、使用可能なフィールドの一覧にあるフィールドのテーブルとして表示されることを確認します。 他のテーブルも表示されますが、マスター ルート データ ソースがこの一覧に表示される **必要があります**。 それ以外の場合、モバイル アプリケーションは、コンテキストを使用する検索とナビゲーションを有効にしません。
     -   検索中: モバイル アプリケーションは、バックグラウンドでフィルター フレームワークを使用してデータに対してオンライン検索を行います。

@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 6bb549a0bcb705dd56f89bb6a705bf9c8d1ae56b
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: eb551cd29070c831d93abf88a3cb858d2f588681
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921411"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359741"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
@@ -42,7 +43,7 @@ ms.locfileid: "5921411"
 
 顧客はビジネスの制約に基づいて保守時間枠を選択できます。 Microsoft Dynamics Lifecycle Services (LCS) で、次の図に示すように **プロジェクト設定** ページの **設定の更新** タブで **実稼働環境の更新頻度** にあるフィールドを使用します。 今後の計画を立てるには次回の更新のカレンダーを利用できます。
 
-[![プロジェクト設定ページの更新設定タブ](./media/UpdateSettings-ConfigureUpdates.JPG)](./media/UpdateSettings-ConfigureUpdates.JPG)
+[![プロジェクト設定ページの更新設定タブ。](./media/UpdateSettings-ConfigureUpdates.JPG)](./media/UpdateSettings-ConfigureUpdates.JPG)
 
 ユーザーは新機能をオプトインして有効にする必要があります。 すべての更新プログラムは最初にユーザー受け入れテスト (UAT) 環境に適用され、それから実稼働環境に適用されます。 したがって、顧客が必要な検証を行う時間があります。 顧客は更新される環境を選択できます。 最大で 3 か月まで更新プログラムを一時停止することもできます。
 
@@ -52,9 +53,9 @@ ms.locfileid: "5921411"
 
 さらに、通知電子メールが 5 日前に送信され、次の図に示すように更新の直前に通知が LCS に表示されます。
 
-[![LCS の次回の更新プログラムの通知](./media/Notification-bar.png)](./media/Notification-bar.png)
+[![LCS の次回の更新プログラムの通知。](./media/Notification-bar.png)](./media/Notification-bar.png)
 
-## <a name="update"></a>更新
+## <a name="update"></a>Update
 
 通知が送信された後、Microsoft は指定された保守時間枠で更新 (**自動更新**) を適用します。 この操作が完了した後、更新の状態を示す通知電子メールが送信されます。 LCS の標準的な更新エクスペリエンスを使用することで **自己更新** も可能になります。 詳細については、[クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)を参照してください。 
 
@@ -62,13 +63,13 @@ ms.locfileid: "5921411"
 
 次の図に示すように、LCS の標準的な更新エクスペリエンスを使用することで **自己更新** も可能になります。
 
-[![LCS の管理メニューで更新コマンドを適用する](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
+[![LCS の管理メニューで更新コマンドを適用します。](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
 
 ## <a name="validate"></a>検証
 
 UAT 環境で更新が完了したら、基本的なビジネス プロセス テストを実行して環境を検証できます。 次の図に示すように、この作業量をサポートするビジネス プロセス テスト用のコードなし自動化テスト ツールを利用できます。 詳細については、 [ユーザー受け入れテストの作成と自動化](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) を参照してください。 
 
-[![Regression Suite Automation Tool](./media/TestAutomation.png)](./media/TestAutomation.png)
+[![Regression Suite Automation Tool.](./media/TestAutomation.png)](./media/TestAutomation.png)
 
 一部の顧客は外部データ統合と内部データ統合の両方があります。 これらの顧客はテストに [データ タスクの自動化ツール](../data-entities/data-task-automation.md) を使用することをお勧めします。
 

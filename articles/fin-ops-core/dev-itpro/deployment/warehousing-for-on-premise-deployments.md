@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0950cac351773f36077a7e726c1e0c6f6c0eb80c
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1aca330a14f6d310128c80092be5d593886942be
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923253"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350114"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
@@ -71,7 +71,7 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
     
     c.  例のスクリーンショットに示されているように、倉庫モバイル デバイス ユーザー ロールを割り当てます。
 
-    ![ユーザーの作成およびコンフィギュレーション](media/wmapp-users.png)
+    ![ユーザーを作成およびコンフィギュレーションします。](media/wmapp-users.png)
 
 2.  AD FS アプリケーションと倉庫保管アプリ ユーザーを関連付けます。
 
@@ -81,7 +81,7 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
     
     c.  AD FS でアプリケーション エントリを作成したときに取得したクライアント ID を入力します (「AD FS でのアプリケーション エントリの作成」の手順 2)。 名前を入力し、倉庫管理アプリ ユーザーを選択します。
 
-    ![Azure Active Drectory アプリケーション ](media/azure-active-directory.png)
+    ![Azure Active Drectory アプリケーション。](media/azure-active-directory.png)
 
 ## <a name="certificates"></a>証明書 
 

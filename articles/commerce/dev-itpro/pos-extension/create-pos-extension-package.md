@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: b6e97a2939aeaea0480f49ca680e495fc570d8dc
-ms.sourcegitcommit: d84329f903d359ae042e8c0a4594982a7e06756f
+ms.openlocfilehash: c46888c0236513bd451665676b992e9dd495cef4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5984234"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355432"
 ---
 # <a name="create-a-pos-extension-package-project"></a>POS 拡張機能パッケージ プロジェクトの作成
 
@@ -95,7 +95,7 @@ ms.locfileid: "5984234"
     2. **json** を検索し、**TypeScript JSON 構成ファイル** を選択します。
     3. ファイルを **tsconfig.json** に名前を付けて、**追加** を選択します。
 
-        ![tsconfig.json ファイルを追加](media/json-file.png)
+        ![tsconfig.json ファイルを追加します。](media/json-file.png)
 
     4. すべてのフィールドを JavaScript Object Notation (JSON) から削除し、**拡張** フィールドを追加して **pos-tsconfig-base.json** ファイルからファイルを拡張します。 完了すると、XML ファイルは次の例のようになります。
 

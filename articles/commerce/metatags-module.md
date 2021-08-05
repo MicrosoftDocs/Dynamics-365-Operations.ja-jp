@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 034ebbaf4f6fd2924e31cc54f0239d67079583a9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ee6111b20a46294468b08bce26731b4b1002467e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021504"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345122"
 ---
 # <a name="metatags-module"></a>メタタグ モジュール
 
@@ -35,7 +35,7 @@ ms.locfileid: "6021504"
 
 次の図は、メタ タグモジュールがテンプレートの **HTML ヘッド** スロットに追加された例を示しています。
 
-![テンプレートの HTML ヘッド スロットに含まれるメタタグ モジュール](media/metatags-module-1.png)
+![テンプレートの HTML ヘッド スロットに含まれるメタタグ モジュール。](media/metatags-module-1.png)
 
 ## <a name="metatags-module-properties"></a>メタタグ モジュールのプロパティ
 
@@ -51,11 +51,11 @@ ms.locfileid: "6021504"
 1. テンプレートを選択し、**編集** を選択します。
 1. **HTML ヘッド** スロットで省略 (**...**) を選択し、**モジュールの追加** を選択します。
 
-    ![新しいモジュールの追加](media/metatags-module-2.png)
+    ![新しいモジュールの追加。](media/metatags-module-2.png)
 
 1. **モジュールの追加** ダイアログ ボックスで、**メタタグ** モジュールを選択して、**OK** を選択します。
 
-    ![メタタグ モジュールの追加](media/metatags-module-3.png)
+    ![メタタグ モジュールを追加します。](media/metatags-module-3.png)
 
 1. メタ タグを追加するには **メタタグ** スロットを選択します。 次に、モジュールのプロパティ ウィンドウで、**メタ タグの追加** を選択して各メタ タグを追加します。 上矢印ボタンと下矢印ボタンを使用して、メタ タグの順序を変更できます。
 1. テンプレートの編集が完了したら、**保存** を選択し、**編集の完了** を選択して、**発行** を選択して公開します。

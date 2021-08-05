@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 40a72fdb6e75da3d5435b98b4935bb419ed45cdb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f5dd199db986070aba4c15ecdcea1875e128dbaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022850"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353842"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 
@@ -93,7 +93,7 @@ POS またはネットワーク通信が回復した後は、レジ担当者が�
 - 取引を無効化しようとします。
 - 取引を停止しますか?
 
-![支払の回復](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
+![支払を回復します。](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
 レジ担当者が **OK** をクリックすると、支払が復旧し、支払明細行として買い物カゴに追加されます。
 
@@ -115,7 +115,7 @@ POS またはネットワーク通信が回復した後は、レジ担当者が�
 
     回復した支払が使用可能であることを示す新しいダイアログ ボックスが表示されます。 **無視** をクリックして復元した支払をスキップします。
 
-![支払の回復をスキップします](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
+![支払の回復をスキップします。](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
 ### <a name="what-to-do-if-the-customer-leaves-the-store"></a>顧客が店舗を出てしまった場合にすること
 

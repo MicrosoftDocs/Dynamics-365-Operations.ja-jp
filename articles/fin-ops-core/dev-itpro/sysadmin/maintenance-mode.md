@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6abc6b175973547dffa06f00b4a3d3a0bc8a2b2c
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 415afbc9cdcfe74a280c82e1013779bff3c5edd6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881022"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359733"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
@@ -83,7 +83,7 @@ ms.locfileid: "5881022"
 
 Application Object Server (AOS) のインスタンスを再起動すると、システムはメンテナンス モードになります。 次のスクリーンショットに示すように、構成キーを有効にすることができます。 
 
-[![メンテナンス モード以外のライセンス コンフィギュレーション ページ](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 
+[![メンテナンス モード以外のライセンス コンフィギュレーション ページ。](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 
 
 メンテナンス モードになっている際にシステムへアクセスしようとすると、システム管理者または **メンテナンス モード ユーザー** ロールを持つユーザーではない人が、Finance and Operations にアクセスしようとすると、エラー メッセージが表示されることがあります。 
 

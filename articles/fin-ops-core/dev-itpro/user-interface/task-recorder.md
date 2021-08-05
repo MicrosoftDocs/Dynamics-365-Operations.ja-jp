@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2372eab4ac0d8c534fdd0543d20e0e015df0316
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 14a9568d15296bfb17bdcc2eef230737f92ec878
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193448"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358919"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -109,7 +109,7 @@ Finance and Operations アプリのタスク レコーダーは、高い応答�
 
 **停止** は記録セッションを終了するのに使用します。 この操作は元に戻せないため、**停止** をクリックする前に、記録が完了していることを確認します。 **停止** をクリックすると、ダウンロード オプション画面に移動します。
 
-[![コントロールの停止](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
+[![コントロールの停止。](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
 ### <a name="startend-sub-task"></a>サブ タスクの開始/終了
 
@@ -210,7 +210,7 @@ Finance and Operations アプリのタスク レコーダーは、高い応答�
 ## <a name="options-after-a-recording-is-completed"></a>記録完了後のオプション
 **停止** をクリックして記録セッションを終了すると、いくつかのオプションが、完了した記録に関連するファイルを保存するために表示されます。 **この PC に保存** をクリックし、タスク記録パッケージをデスクトップに保存します。 このファイルは後で使用します。
 
-[![記録が終了した後に、記録をダウンロードまたは保存するためのオプション](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
+[![記録が終了した後に、記録をダウンロードまたは保存するためのオプション。](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
 ### <a name="save-to-this-pc"></a>この PC に保存
 
@@ -273,11 +273,11 @@ LCS ライブラリに記録を保存すると、BPM ライブラリの指定さ
  
     タスク レコーダーがステップを挿入するには、正しいページを開いておく必要があります。 新しいステップが発生するページが正しいページです。 タスク レコーダーには、アクティブなページが何であるかを判断するメカニズムがあり、正しいページが開かれていない場合は、機能が無効になります。 
 
-    [![ステップ機能の挿入](./media/taskguide1.png)](./media/taskguide1.png)
+    [![ステップ機能を挿入。](./media/taskguide1.png)](./media/taskguide1.png)
 
     正しいページを開いている場合は、**ステップの挿入** が利用可能になります。
 
-    [![適切なページで使用可能なステップの挿入](./media/taskguide2-231x300.png)](./media/taskguide2.png)
+    [![適切なページに使用可能なステップを挿入する。](./media/taskguide2-231x300.png)](./media/taskguide2.png)
 
 2.  **ステップの挿入** をクリックします。
 
@@ -297,7 +297,7 @@ LCS ライブラリに記録を保存すると、BPM ライブラリの指定さ
 
 2.  **ステップを後に移動** をクリックします。 このコマンドにアクセスするには、省略符号 (**...**) ボタンを選択する必要がある場合があります。
 
-    [![ステップを後に移動の例](./media/taskguide3.png)](./media/taskguide3.png)
+    [![ステップを後に移動の例。](./media/taskguide3.png)](./media/taskguide3.png)
 
 3.  ステップまたはサブタスク ステップを移動した後に移動するステップまたはサブタスク ステップを選択します。 タスク レコーダーはステップを移動します。
 
@@ -311,7 +311,7 @@ LCS ライブラリに記録を保存すると、BPM ライブラリの指定さ
 
 **記録の名前** と **記録の説明** フィールドの値を調整できます。 さらにステップをタスク レコーダー編集ウィンドウに表示する場合は、記録の名前と説明を表示するセクションを折りたたむこともできます。
 
-[![記録の名前と説明の展開と折りたたみ](./media/taskguide4-300x252.png)](./media/taskguide4.png)
+[![記録の名前と説明の展開と折りたたみ。](./media/taskguide4-300x252.png)](./media/taskguide4.png)
 
 ## <a name="playing-a-task-guide"></a>タスク ガイドの再生
 
@@ -432,7 +432,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 5.  新しいプロジェクトの作成時に、プロジェクトのモデルを選択します。 生成された X++ テストがこのモデルに配置されます。 モデルは、生成されたテストを正常にビルトするには、モデルには **TestEssentials** モデルへの参照が必要です。
 6.  **インポート** をクリックします。
 
-    [![インポート タスク記録 ダイアログ ボックス](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
+    [![インポート タスク記録ダイアログ ボックス。](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
 
 7.  **新しいプロジェクト** ダイアログ ボックスで、プロジェクトの名前を指定します。
 8.  プロジェクトが作成されると、ユーザーは生成されたコードを開き検査することができます。

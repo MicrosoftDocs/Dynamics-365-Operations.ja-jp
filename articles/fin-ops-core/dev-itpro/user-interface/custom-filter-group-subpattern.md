@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f9e9430dd51d0810b38a75105c20a6c88a431a8
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 5a6676aeb000b59735de816b501121c0f512602a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189920"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354363"
 ---
 # <a name="custom-filter-group-subpattern"></a>カスタム フィルター グループのサブパターン
 
@@ -44,11 +44,11 @@ ms.locfileid: "6189920"
 ## <a name="wireframes"></a>ワイヤーフレーム
 ### <a name="custom-filters"></a>カスタム フィルター
 
-[![カスタム フィルター グループ 1](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+[![カスタム フィルター グループ 1。](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### <a name="custom-and-quick-filters"></a>カスタムおよびクイック フィルター
 
-![カスタムおよびクイック フィルター グループ 2 をクリックする](./media/customfiltergroup2.png)
+![カスタムおよびクイック フィルター グループ 2 をクリックします。](./media/customfiltergroup2.png)
 
 ## <a name="model"></a>モデル
 ### <a name="custom-filters--high-level-structure"></a>カスタム フィルタ – 高度なレベル構造
@@ -105,13 +105,13 @@ None
 
 フォーム: **LedgerJournalTable (TopFields)** 
 
-![カスタム フィルター グループ 3](./media/customfiltergroup3.png)
+![カスタム フィルター グループ 3 です。](./media/customfiltergroup3.png)
 
 ### <a name="custom-and-quick-filters"></a>カスタムおよびクイック フィルター
 
 フォーム: **CustTable** **(CustomFilterGroup)** 
 
-[![カスタムおよびクイック フィルター グループ 4 をクリックする](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
+[![カスタムおよびクイック フィルター グループ 4。](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-form-patterns"></a>通常、フォームのパターンによって使用される
@@ -149,7 +149,7 @@ None
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
-[![例](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
+[![例。](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

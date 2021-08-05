@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ec9ed420cef8c604348337327d9678b716e1e2d
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 9468d93d803ccf8bd976060047f175ab3fa55423
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866098"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359345"
 ---
 # <a name="x-and-debugger-features"></a>X++ およびデバッガーの機能
 
@@ -488,7 +488,7 @@ value = round(value, 2);
 
 文字列の切り捨ては、新しい機能ではありません。 ただし、コードが以前のバージョンの IL で実行されると、ここで説明されている自動文字列の切り捨ては行われません。 文字列値は、最大文字数を格納するために X++ で宣言できます。 これは通常、以下に示すように、この情報を拡張データ型でエンコードすることによって実現されます。クレジット カード番号は 20 文字を超えることはできません。
 
-![FMCreditCardNum 文字列のサイズ](./media/stringtruncationsolutionexplorer_debugfeatures.png)
+![FMCreditCardNum 文字列のサイズ。](./media/stringtruncationsolutionexplorer_debugfeatures.png)
 
 X++構文では、長さの制約を直接指定することも可能です。
 
@@ -510,7 +510,7 @@ creditCardNumber = "12345678901234567890Excess string";
 
 X++ の以前のバージョンは、型キャストの処理で、非常に少ない制限でした。 アップキャストとダウンキャストの両方が、プログラマの介在なしに許可されています。 レガシ X++ で許可されるキャストの一部は、.NET ランタイム環境の範囲に実装することはできません。 X++ を含む、オブジェクト指向のプログラミング言語では、キャストは宣言された型が両方同じ継承チェーンにある変数間の代入を表します。 キャストはダウン キャストまたはアップ キャストのいずれかです。 この議論の準備段階として、いくつかのクラス階層をご案内します:
 
-![Animal と MotorVehicle のクラス階層](./media/casting_debugfeatures.png)
+![Animal と MotorVehicle のクラス階層。](./media/casting_debugfeatures.png)
 
 ご覧の通り、MotorVehicle クラスには Animal クラスとの関連がありません。 **up-cast** は派生型の式を基本型に割り当てる場合に発生します。
 
@@ -684,11 +684,11 @@ class MyClass
 
 デバッガーを使用すると、アプリケーションの状態の特定の部分にアクセスできます。 この情報は、現在の会社、パーティション、トランザクション レベル、および現在のユーザー ID が一覧表示される [自動] ウィンドウで使用できます。
 
-![自動ウィンドウ](./media/autos_debugfeatures.png)
+![自動ウィンドウ。](./media/autos_debugfeatures.png)
 
 また、Infolog に書き込まれるデータを表示するウィンドウもあります。
 
-![情報ログ ウィンドウ](./media/infolog_debugfeatures.png)
+![情報ログ ウィンドウ。](./media/infolog_debugfeatures.png)
 
 ### <a name="new-breakpoint-features"></a>新しいブレークポイント機能
 

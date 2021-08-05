@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5c7f83158a0366ff292c4c3f56df2084884bee4e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6699a4e55a46d56e150f0c896a64d205a23716df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018795"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344030"
 ---
 # <a name="configure-high-availability-for-sql-server-reporting-services-ssrs-nodes"></a>SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "6018795"
 
 クラスターの設定後に、インストールを構成できます。 以下の例は、次の図に表示される情報に基づいています。
 
-![Windows フェールオーバー クラスター構成の例](./media/WFC.png)
+![Windows フェールオーバー クラスター構成の例。](./media/WFC.png)
 
 1. 構成ファイル (**ConfigTemplate.xml**) を更新します。
 

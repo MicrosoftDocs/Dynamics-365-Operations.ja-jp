@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 7c35eded0e83c8a0dda9ab55ce67a5104379d9a9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c34dc43d129a9688aeeb512d6a6ebc83aef5850d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940916"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356281"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 
@@ -50,7 +51,7 @@ ms.locfileid: "5940916"
 
 ビジネス イベント カタログは、配置時のデータベースの同期中に作成されます。 したがって、ユーザーは、カタログでビジネス イベントの完全な一覧を確認することになります。 ただし、カタログの明示的な更新が必要な場合は、**管理 \> 再構築ビジネス イベント カタログ** を選択します。
 
-![ビジネス イベント カタログ](../media/businesseventscatalog.png)
+![ビジネス イベント カタログ。](../media/businesseventscatalog.png)
 
 各ビジネス イベントについて、ビジネス イベント カタログは説明を表示します。 この説明は、ビジネス イベントおよびビジネス プロセス内のコンテキストを理解するのに役立ちます。 カタログには、イベントに送信されるデータ フィールドの一覧も表示されます。
 
@@ -90,41 +91,41 @@ Azure ベースのエンドポイントは、顧客の Azure サブスクリプ�
 
 アプリケーションがエンドポイントを準備しません。 用意されているイベントをエンドポイントに送信するだけです。 顧客が Azure サブスクリプションでこれらのエンドポイントを使用している場合、追加費用が発生する可能性があります。
 
-![ビジネス イベントのエンドポイント](../media/businesseventsendpoint.png)
+![ビジネス イベントのエンドポイント。](../media/businesseventsendpoint.png)
 
 ### <a name="create-an-azure-service-bus-queue-endpoint"></a>Azure Service Bus キュー エンドポイントの作成
 
 新しいエンドポイントを作成するには、**新規作成** を選択します。 次に、**エンドポイントの種類** フィールドで、適切なエンドポイントの種類を選択します。 Service Bus キューにエンドポイントを作成するには、**Azure Service Busキュー** を選択します。
 
-![Service Bus キューにエンドポイントを作成するには、**Azure Service Bus キュー**を選択します](../media/businesseventsnewendpoint1.png)
+![Service Bus キューにエンドポイントを作成するには、**Azure Service Bus キュー**を選択します。](../media/businesseventsnewendpoint1.png)
 
 **次へ** を選択し、エンドポイントおよび Service Busキューの名前を指定します。 また、Azure メッセージング リソースにシークレットを提供するために、Azure Key Vault を設定する必要があります。 また、Azure Active Directory (Azure AD) アプリケーション ID およびアプリケーション シークレットを設定する必要があります。
 
-![エンドポイントおよび Service Bus キューの名前を指定](../media/businesseventsnewendpoint2.png)
+![エンドポイントおよび Service Bus キューの名前を指定します。](../media/businesseventsnewendpoint2.png)
 
 **キュー名** フィールドに、Azure の Azure Service Bus キューの構成で作成した **Azure Service Bus キュー** 名を入力します。  
 
-![Azure の Azure Service Bus キュー構成で作成した **Azure Service Bus キュー**名を入力](../media/BusinessEventsSBQueueName.PNG)
+![Azure の Azure Service Bus キュー構成で作成した **Azure Service Bus キュー**名を入力する。](../media/BusinessEventsSBQueueName.PNG)
 
 **Azure Active Directory アプリケーションID** フィールドに、Azure ポータルの Azure AD で作成されたアプリケーションIDを入力します。
 
-![Azure ポータル の Azure ADで作成されたアプリケーション ID を入力](../media/businesseventsaad1.png)
+![Azure ポータル の Azure AD で作成されたアプリケーション ID を入力する。](../media/businesseventsaad1.png)
 
 **Azure アプリケーション シークレット** フィールドに、アプリケーションのシークレット値を入力します。
 
-![アプリケーションのシークレットの値を入力](../media/businesseventsaad2.png)
+![アプリケーションのシークレットの値を入力する。](../media/businesseventsaad2.png)
 
 **Key Vault DNS 名** フィールドに、Key Vault設定名を入力します。
 
-![Key Vault の設定から名前を入力](../media/businesseventskeyvault1.png)
+![Key Vault の設定から名前を入力する。](../media/businesseventskeyvault1.png)
 
 **Key Vault シークレット名** フィールドに、Key Vaultに作成する必要があるエンドポイント リソースのシークレット名を入力します。
 
-![Key Vault で作成されたエンドポイント リソースのシークレット名を入力](../media/businesseventskeyvault2.png)
+![Key Vault で作成する必要があるエンドポイント リソースのシークレット名を入力する。](../media/businesseventskeyvault2.png)
 
 Azure では、**Key Vault シークレット** の値は Azure Service Busの **プライマリ接続文字列** の値になります。 この値は **共有アクセス ポリシー > RootManagedSharedAccessKey** で構成した Azure Service Bus で確認できます。
 
-![ビジネス イベントの Azure Key Vault のキー値](../media/BusinessEventsKVSValue.PNG)
+![ビジネス イベントの Azure Key Vault のキー値。](../media/BusinessEventsKVSValue.PNG)
 
 > [!IMPORTANT]
 > また、登録された Azure アプリケーションは、Key Vault のアクセス ポリシーで設定された Key Vault に追加する必要があります。 この設定を完了するには、**キー、シークレット、および証明書の管理** テンプレートを選択し、アプリケーションを **プリンシパル** として選択します。
@@ -140,11 +141,11 @@ Service Bus トピックにエンドポイントを作成するには、**新規
 > [!IMPORTANT]
 > また、登録された Azure アプリケーションは、Key Vault のアクセス ポリシーで設定された Key Vault に追加する必要があります。 この設定を完了するには、**キー、シークレット、および証明書の管理** テンプレートを選択し、アプリケーションを **プリンシパル** として選択します。
 
-![ビジネス イベントのイベント グリッド エンドポイントの値](../media/BusinessEventsEGTopicsEndpoint.PNG)
+![ビジネス イベントのイベント グリッド エンドポイントの値。](../media/BusinessEventsEGTopicsEndpoint.PNG)
 
 Key Vault の情報は、Azure Service Bus キュー エンドポイントの設定と同じ方法で設定されますが、Key Vault シークレットだけはService Bus 接続文字列ではなく、イベント グリッドの資格情報に設定する必要があります。  イベント グリッドの資格情報は、設定セクションの **Access Keys** で作成されたイベント グリッドで確認できます。 
 
-![ビジネス イベントのイベント グリッド資格情報の値](../media/BusinessEventsEGKeyValue.PNG)
+![ビジネス イベントのイベント グリッド資格情報の値。](../media/BusinessEventsEGKeyValue.PNG)
 
 必要なエンドポイントを作成したら、次に、ビジネス イベントを有効にします。
 
@@ -153,7 +154,7 @@ Key Vault の情報は、Azure Service Bus キュー エンドポイントの設
 
 既定では、ビジネス イベント カタログのビジネス イベントは有効ではありません。 カタログから必要なビジネス イベントを有効化することができます。 1つまたは複数のビジネス イベントを選択し、**有効化** を選択します。
 
-![ビジネス イベントの有効化](../media/businesseventsactivation.png)
+![ビジネス イベントの有効化。](../media/businesseventsactivation.png)
 
 ビジネス イベントは、すべての法人または特定の法人のいずれかで有効化できます。 **法人** フィールドを空白のままにすると、選択したビジネス イベントは *すべて* の法人で有効化されます。 ビジネス イベントが特定の法人に対してのみ必要な場合は、法人ごとに個別に構成する必要があります。
 
@@ -163,13 +164,13 @@ Key Vault の情報は、Azure Service Bus キュー エンドポイントの設
 
 ビジネス イベントが有効化されると、**有効なイベント** タブに表示されます。
 
-![有効なビジネス イベント](../media/businesseventsactivetab.png)
+![有効なビジネス イベント。](../media/businesseventsactivetab.png)
 
 **の有効なイベント** タブで、ビジネス イベントを無効にできます。 システムは、無効化されたイベントには発信処理を行いません。
 
 ビジネス イベントが無効化されると、 それらは **無効なイベント** タブに表示されます。
 
-![無効なビジネス イベント](../media/businesseventsinactivetab.png)
+![無効なビジネス イベント。](../media/businesseventsinactivetab.png)
 
 統合環境におけるシステムの管理活動のためにビジネス イベントの処理をある期間停止する必要がある場合、ビジネス イベントを無効にできます。
 

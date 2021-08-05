@@ -3,21 +3,16 @@ title: フィールド モジュール
 description: フィールドのランタイムのインスタンスを表します。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: c19b35dd1594438a2a2e10f338babce6d04d7ba7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 889608ffa8149154e85f3e0cca5bab859669bcf6
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754856"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661454"
 ---
 # <a name="field-module"></a>フィールド モジュール
 
@@ -135,7 +130,7 @@ ms.locfileid: "5754856"
 | [ReferenceAppId](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#referenceappid) |ReferenceAppId: 文字列 (オプション)  <br>|フィールド コントロールが存在するアプリの ID。<br>  |
 | [ReferencePageId](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#referencepageid) |ReferencePageId: 文字列 (オプション)  <br>|フィールド コントロールが存在するページの ID。<br>  |
 | [スタイル](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#style) |スタイル: 文字列 (省略可)  <br>|タイプ「日時」または「日付」のフィールドをスタイル設定します。<br>  |
-| [[タイプ](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
+| [タイプ](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
 | [UnWrapText](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#unwraptext) |UnWrapText: ブール値 (オプション)  <br>|既定で False -- ページのテキストが折り返されます。<br>  |
 | [WrapText](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#wraptext) |WrapText: ブール値 (オプション)  <br>|True の場合、フィールド コントロールのテキストは、次の行に折り返されます。<br>  |
 

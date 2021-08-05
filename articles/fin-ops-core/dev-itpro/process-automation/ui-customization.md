@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea66188b067f502e813816b3fed2d7d819f8e966
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d7b6b9ec62031edea7c02897ed7818dcb5745c00
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866114"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344004"
 ---
 # <a name="customize-the-user-interface"></a>ユーザー インターフェイスのカスタマイズ
 
@@ -40,7 +40,7 @@ ms.locfileid: "5866114"
 
 **ProcessScheduleOccurrenceCard** クラスを使用すると、カレンダー表示に表示されるオカレンス カードの外観をカスタマイズできます。 最初の 2 行はプロセス自動化フレームワークによって制御されており、変更することはできません。 次の図では、サブヘッダーは **完了した** フェーズで、ステータス メッセージは **完了** という言葉の背景が青色であることを示しています。
 
-![ステータスと時間を表示する既定のオカレンス カード](media/uptake-schedule.png)
+![ステータスと時間を表示する既定のオカレンス カード。](media/uptake-schedule.png)
 
 | メソッド | 説明 |
 |---|---|

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65dad1b3efcc17d0ad065859d32df12eb503ae6b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: b6ce0c8367e4a4117e1421618d8699e213811b84
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190325"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345664"
 ---
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 
@@ -33,15 +33,15 @@ ms.locfileid: "6190325"
 
 アプリケーション エクスプ ローラーのコンテンツは、2 つの方法で整理できます。 *クラシック ビュー* で、すべてのモデルのすべての要素が型に従ってグループ化されます。 このビューは、AOT が Dynamics AX 2012 で編成される方法に似ています。 次の図は、クラシック ビューを示しています。 
 
-[![アプリケーション エクスプローラー](./media/6_devotoolsconcepts.png)](./media/6_devotoolsconcepts.png) 
+[![アプリケーション エクスプローラー。](./media/6_devotoolsconcepts.png)](./media/6_devotoolsconcepts.png) 
 
 2 番目のビューは、*モデル ビュー* と呼ばれます。 このビューでは、各モデルが個別に一覧表示されます。 クラシック ビューのように、各モデル内の要素がグループ化されています。 次の図は、モデル ビューを示しています。 フリート管理モデル用のノードが展開され、クラシック ビューのようにモデル内の要素が配置されていることを確認します。 
 
-[![フリート管理を使用したアプリケーション エクスプローラー](./media/7_devotoolsconcept.png)](./media/7_devotoolsconcept.png) 
+[![フリート管理を使用したアプリケーション エクスプローラー。](./media/7_devotoolsconcept.png)](./media/7_devotoolsconcept.png) 
 
 モデル ビューに切り替えるには、**AOT** ノードを右クリックしてから **モデル ビュー** をクリックします。 クラシック表示に戻すには、**AOT** ノードを右クリックし、**クラシック ビュー** をクリックします。 
 
-[![モデル ビューのオプション](./media/8_devotoolsconcept.png)](./media/8_devotoolsconcept.png)
+[![モデル ビューのオプション。](./media/8_devotoolsconcept.png)](./media/8_devotoolsconcept.png)
 
 ### <a name="working-with-elements"></a>要素での作業
 
@@ -53,7 +53,7 @@ ms.locfileid: "6190325"
 
 要素を選択した後、選択を右クリックし実行可能なアクションを表示します。 次の図は、フォーム要素で使用できるアクションを示しています。 
 
-[![アプリケーション エクスプローラーのコンテキスト メニュー オプション](./media/9_devotoolsconcept.png)](./media/9_devotoolsconcept.png) 
+[![アプリケーション エクスプローラーのコンテキスト メニュー オプション。](./media/9_devotoolsconcept.png)](./media/9_devotoolsconcept.png) 
 
 使用可能なアクションは、選択した要素によって異なります。 次は、アプリケーション エクスプローラーの要素に対して実行できる一般的なアクションの一部です。 **注記:** 選択したノードが複数のモデルに存在する要素である場合 (オーバーレイされたカスタマイズの場合)、選択した要素は Application Explorer が現在存在するビューに依存します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "6190325"
 
 一部の要素には、その要素のタイプのアクションを実行できるようにする固有のコマンドがあります。 たとえば、テーブル要素には、テーブルに関する追加情報を提供する 2 つのコマンドがあります。 最初は、**階層の表示** コマンドです。 テーブル要素を右クリックしてこのコマンドをクリックすると、テーブルが属するテーブル階層のグラフィカル表示が表示されます。 たとえば、次の図は、FMVehicle テーブルのテーブル階層を表示します。 
 
-[![FMVehicle テーブルのテーブル階層](./media/10_devotoolsconcept.png)](./media/10_devotoolsconcept.png) 
+[![FMVehicle テーブルのテーブル階層。](./media/10_devotoolsconcept.png)](./media/10_devotoolsconcept.png) 
 
 クラスには類似の階層ツールが用意されています。 2 番目のコマンドは **テーブル ブラウザーを開く** です。 このコマンドをクリックすると、テーブルからのデータがプログラム内の一覧として表示されます。  
 
@@ -86,11 +86,11 @@ ms.locfileid: "6190325"
 
 アプリケーション エクスプローラーには、非常に多数の要素を含めることができます。 これにより、作業したい特定の要素を見つけることが難しくなります。 ただし、アプリケーション エクスプ ローラーは供給するクエリに基づいて要素をフィルター処理できます。 表示される要素をフィルター処理するには、アプリケーション エクスプローラーの上部にある検索バーにクエリを入力します。 
 
-[![アプリケーション エクスプローラーを使用してフィルター処理](./media/12_devotoolsconcept.png)](./media/12_devotoolsconcept.png) 
+[![アプリケーション エクスプローラーを使用してフィルター処理。](./media/12_devotoolsconcept.png)](./media/12_devotoolsconcept.png) 
 
 単純なフィルターを適用するには、フフィルター処理するテキストを入力し、検索バーの最後にある **フィルター** ボタンをクリックします。 たとえば、「レンタル」という単語を含む名前を持つすべての要素を検索する場合、検索用語として **レンタル** を入力します。 
 
-[![レンタルのフィルター処理](./media/13_devotoolsconcept.png)](./media/13_devotoolsconcept.png) 
+[![レンタルのフィルター処理。](./media/13_devotoolsconcept.png)](./media/13_devotoolsconcept.png) 
 
 フィルターをクリアして完全なビューに戻るには、クリックして、[検索] バーの **フィルターをクリア** ボタンをクリックします。 検索バーの最後にあるドロップダウンの矢印を確認します。 この矢印をクリックすると、フィルターを調整するために使用できるフィルター オプションの一覧が表示されます。
 
@@ -102,7 +102,7 @@ ms.locfileid: "6190325"
 
 これらのオプションのいずれかを選択すると、事前に定義された条件が検索バーに追加されます。 基準としての特定の値を入力します。 この機能は強力な検索機能を提供できます。 たとえば、特定の期間内に変更された要素を検索する場合、**更新日別フィルター** を選択し、開始日および終了日を指定します。 
 
-[![日付によるフィルター処理](./media/14_devotoolsconcept.png)](./media/14_devotoolsconcept.png) 
+[![日付によるフィルター処理。](./media/14_devotoolsconcept.png)](./media/14_devotoolsconcept.png) 
 
 以前は、使用されるフィルターは、検索バーの終わりのドロップダウン リストに表示されました。 また、アプリケーション エクスプ ローラーに表示されるフィルター処理結果上でアクションを実行することもできます。 **AOT** ノードを右クリックし、次のいずれかの操作を選択して結果で実行します。
 

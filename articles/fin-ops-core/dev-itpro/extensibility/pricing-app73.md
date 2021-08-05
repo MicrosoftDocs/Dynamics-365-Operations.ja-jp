@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: ea7d6136a38acd332449c7ffef141f2e4c3a37d9
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 54d4223b1aa541f991817e90c3ff5e25a3b362d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865940"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355274"
 ---
 # <a name="price-and-discount-extensibility"></a>価格と割引の拡張性
 
@@ -36,7 +36,7 @@ Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 以�
 
 次の図は、実装を強調表示しています。 メソッドはサブクラスを 1 つだけ示すことに注意してください。 実装は、各サブクラスにする必要があります。 
 
-![PriceGroupTypeTradeAgreementMapping](media/PricingFall20171.png)
+![PriceGroupTypeTradeAgreementMapping.](media/PricingFall20171.png)
 
 ## <a name="pricedisc-class"></a>PriceDisc クラス
 
@@ -46,17 +46,17 @@ Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 以�
 
 次の図では、どのように **PriceDisc** クラスを拡張して、既存の検索を変更したり、拡張された **PriceType** 列挙値に対応する新しい検索メソッドを追加したりできるかを確認できます。
 
-![PriceDiscClass](media/PricingFall20172.png)
+![PriceDiscClass.](media/PricingFall20172.png)
 
 ## <a name="add-a-new-price-search"></a>新しい価格検索の追加
 
 このシナリオでは、**PriceGroupType** 列挙を新しい値 **PriceGroupTypeISVExtension**、および 2 つの対応する **PriceType** 列挙値である **ISVPurchPriceType** と **ISVSalesPriceType** で拡張しました。 
 
-![WalkThrough1](media/PricingFall20173.png)
+![WalkThrough1.](media/PricingFall20173.png)
 
 次の図は、**PriceType** 値および **PriceGroupType** 値に対して新しい価格検索を追加する方法を示しています
 
-![WalkThrough2](media/PricingFall20174.png)
+![WalkThrough2.](media/PricingFall20174.png)
 
 以下に例を示します。
 

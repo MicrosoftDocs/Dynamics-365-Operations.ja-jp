@@ -3,20 +3,18 @@ title: select ステートメントを式として記述
 description: このトピックでは、select ステートメントを式として使用する方法について説明します。
 author: robinarh
 ms.date: 06/16/2020
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 9daf5040e415576e5c415a8e748274c85770fab3
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 6ed67712544f691ba624c017f2dadd099035a46b
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865965"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661336"
 ---
 # <a name="write-select-statements-as-expressions"></a>select ステートメントを式として記述
 

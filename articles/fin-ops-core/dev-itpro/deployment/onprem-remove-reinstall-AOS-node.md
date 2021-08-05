@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 3d522fcb3a3f3572a771dc762076d151981e67ce
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: cd566c9a30b5c90785c3ac67a52e3ea80e45b91d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923263"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351700"
 ---
 # <a name="remove-and-reinstall-or-add-an-aos-node"></a>AOS ノードの削除と再インストール、または追加
 
@@ -33,11 +33,11 @@ ms.locfileid: "5923263"
 
 1. Service Fabric エクスプローラー で、**クラスター** を選択し、Microsoft Service Fabric Cluster のバージョンをメモします。 この例では、クラスター バージョンが **6.5.676.9590** となっています。
 
-    ![クラスター バージョン](media/fe0c857aefd3a1174df38f8e0c644667.png)
+    ![クラスター バージョン。](media/fe0c857aefd3a1174df38f8e0c644667.png)
 
 2. いずれかのオーケストレータノード ノードで、ファイル エクスプローラーを開きます。 **表示** タブの、**表示/非表示** グループで、**ファイル名の拡張子** と **非表示項目** の各チェック ボックスがオンになっていることを確認します。
 
-    ![オプションの表示](media/bb83d249cdce333bdbb2e276ebce559c.png)
+    ![オプションを表示します。](media/bb83d249cdce333bdbb2e276ebce559c.png)
 
 3. ドライブ C を展開し、次のフォルダにドリル ダウンします。 （パスの太字部分は、ノード名と設定によって異なることに注意してください）
 
@@ -45,16 +45,16 @@ ms.locfileid: "5923263"
 
     このフォルダーには、Microsoft Service Fabric のさまざまなバージョンのフォルダがリスト表示されます。 次に例を示します。
 
-    ![131811633624852852 フォルダの内容](media/f843b5ceda67f767f54333851f5deeec.png)
+    ![131811633624852852 フォルダーのコンテンツ。](media/f843b5ceda67f767f54333851f5deeec.png)
 
 5. 前述の手順でメモした Microsoft Service Fabric Cluster のバージョンと同じ名前のフォルダーを開きます。 この例では、フォルダの名称が **6.5.676.9590** となっています。
 6. フォルダ内に .cab ファイルが表示されています。
 
-    ![6.5.676.9590 フォルダの内容](media/fd04e00bc3d940f5637900e46db8f134.png)
+    ![6.5.676.9590 フォルダーのコンテンツ。](media/fd04e00bc3d940f5637900e46db8f134.png)
 
 7. .Cab ファイルを C:\\Temp にコピーし、コピーしたファイルを **MicrosoftAzureServiceFabric.cab** に変更します。 （Temp フォルダーがない場合は作成してください）
 
-    ![Temp フォルダーにコピーされて名前変更されたファイル](media/e146a300f030d0695be858d8c7261486.png)
+    ![Temp フォルダーにコピーされて名前変更されたファイル。](media/e146a300f030d0695be858d8c7261486.png)
 
 8. Windows PowerShell のコマンドプロンプトを管理者として開きます。
 9. 次のコマンドを実行して、Service Fabric Cluster に接続します。
@@ -64,7 +64,7 @@ ms.locfileid: "5923263"
     Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
     ```
 
-    ![接続コマンドと結果](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
+    ![接続コマンドと結果。](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
 
 10. 次のコマンドを実行して、構成ファイルを C:\\Temp\\ClusterConfig.json に保存します。 （C:\\Temp のパスが存在することを確認してください）
 
@@ -149,7 +149,7 @@ ms.locfileid: "5923263"
 
     "UpgradePhase: PreUpgradeSafetyCheck," でアップグレードが応答しなくなった場合は、**NodeName** の値をメモして、Service Fabric エクスプローラー からそのノードを再起動してください。 以下の図では、アップグレードが応答を停止しています。 ノード BI1 では同じ状態のままで、50分間実行されていました。
 
-    ![応答が停止したアップグレード](media/c9a57cd8a5828a63a010d829eaab597c.png)
+    ![応答が停止したアップグレード。](media/c9a57cd8a5828a63a010d829eaab597c.png)
 
     クラスタ構成のアップグレード中に、**Add-ServiceFabricNode** コマンドを使用して既にノードが追加されているというエラーメッセージが表示された場合は、バージョン番号以外の構成ファイルを変更せずに構成のアップグレードを実行する必要があります。 この目的では、**Get-ServiceFabricClusterConfiguration** と **Start-ServiceFabricClusterConfigurationUpgrade** コマンドを使用することができます。
 
@@ -157,26 +157,26 @@ ms.locfileid: "5923263"
 
     また、 Service Fabric エクスプローラー で進行状況を確認することもできます。
 
-    ![Service Fabric エクスプローラー の進行状況に関する情報](media/99c6321f9da950d91a1709cae2473d97.png)
+    ![Service Fabric エクスプローラーの進捗情報。](media/99c6321f9da950d91a1709cae2473d97.png)
 
 ### <a name="option-2-use-service-fabric-explorer"></a>オプション 2：Service Fabric エクスプローラー の使用
 
 1. Service Fabric エクスプローラーにログインします。
 2. **設定** ボタン (歯車記号) を選択し、**詳細** モードがオンになっていることを確認します。
 
-    ![詳細モードがオンになっている場合](media/bc25caaed54da595a3c75429faaf73cb.png)
+    ![詳細モードがオンになっています。](media/bc25caaed54da595a3c75429faaf73cb.png)
 
 3. **ノード** を展開し、省略記号（**...**）ボタンをクリックし、**非アクティブ化（データの削除）** を選択します。 このオプションは、ノードがすでにダウンしている場合 (ノード サーバーが起動できない場合など) には使用できないことに注意してください。
 
-    ![データの無効化（データの削除）コマンド](media/6865310acd6150cc81ee4a56aaeeed3f.png)
+    ![無効化 (データの削除) コマンド。](media/6865310acd6150cc81ee4a56aaeeed3f.png)
 
 4. 無効化の確認が求められた際は、ノードの名前を入力し、**非アクティブ化（データの削除）** を選択します。
 
-    ![ノードの無効化を確認する](media/49486a44d04b7a91431f18beebda43e8.png)
+    ![ノードの無効化の確認。](media/49486a44d04b7a91431f18beebda43e8.png)
 
     ノードが非アクティブ化されると、状態が **無効** と表示されます。
 
-    ![無効な状態のノード](media/4dba61b4c22966cb4098cf832a4e5e90.png)
+    ![無効な状態のノード。](media/4dba61b4c22966cb4098cf832a4e5e90.png)
 
 5. サーバーがまだ有効でドメインに接続されている場合、無効化されたノードを新しいサーバーに置き換える場合は、以下の手順を実行することが必要な場合があります。
 
@@ -188,15 +188,15 @@ ms.locfileid: "5923263"
 
 6. サーバーのシャットダウンの完了後、または既にダウンしていた場合は、Service Fabric エクスプローラーの状態が反映されます。 省略符号（**...**）ボタンを再度クリックし、**ノードの状態を削除する** を選択します。
 
-    ![ノードの状態を削除するコマンド](media/e0460a280693cdf13896731aa7f2377f.png)
+    ![ノードの状態を削除するコマンド。](media/e0460a280693cdf13896731aa7f2377f.png)
 
 7. ノードを削除することを確認します。
 
-    ![ノードの削除を確認します](media/a711e04b14b8adddc5d3941f010b32e0.png)
+    ![ノードの削除を確認。](media/a711e04b14b8adddc5d3941f010b32e0.png)
 
     ノードが削除されると、状態が **無効** と表示されます。
 
-    ![無効な状態のノード](media/c3f8dc79d51e535074e89dfca04006b8.png)
+    ![無効な状態のノード。](media/c3f8dc79d51e535074e89dfca04006b8.png)
 
 8. ノードの名前とタイプをメモします。 この例では、ノード名は **AOS1** で、タイプは **AOSNodeType** です。 ノード名がネットワーク名と一致しない可能性があることに注意してください。 また、**ドメインのアップグレード** と **障害ドメイン** の設定、およびIPアドレスについてもメモしておきます。 上記の図にはこれらの値がすべて表示されています。
 
@@ -246,7 +246,7 @@ ms.locfileid: "5923263"
     Get-ADServiceAccount -Identity svc-AXSF -properties PrincipalsAllowedToRetrieveManagedPassword
     ```
 
-    ![コマンドと結果の取得](media/525f31b6281e87fd58075f2101f75118.png)
+    ![Get コマンドと結果。](media/525f31b6281e87fd58075f2101f75118.png)
 
     **svc-AXFS\$** gMSA のパスワードを取得するにあたって、アクセス許可が与えられているサーバーの一覧が表示されます。 削除されたサーバーのグローバル一意識別子 (GUID) 値が表示される場合は、無視します。
 
@@ -256,11 +256,11 @@ ms.locfileid: "5923263"
     Set-ADServiceAccount -Identity svc-AXSF -PrincipalsAllowedToRetrieveManagedPassword  "CN=AOS1,CN=Computers,DC=contoso,DC=com","CN=AOS2,CN=Computers,DC=contoso,DC=com","CN=AOS3,CN=Computers,DC=contoso,DC=com"
     ```
 
-    ![コマンドの設定](media/ff652391b87c72cacd318b588758e4fc.png)
+    ![Set コマンド。](media/ff652391b87c72cacd318b588758e4fc.png)
 
 11. 元 **Get** コマンドを実行して、新たな AOS ノードが再度追加されたことを確認します。 （この後の例では、AOS1 が PrincipalsAllowedToRetrieveManagedPassword の一覧に追加されていることが確認できます）
 
-    ![元の Get コマンドと結果](media/17b9c379b6328ed506d16270280146f4.png)
+    ![元の Get コマンドと結果。](media/17b9c379b6328ed506d16270280146f4.png)
 
 12. 次のスクリプトを実行して VM のセットアップを検証します。
 
@@ -273,11 +273,11 @@ ms.locfileid: "5923263"
 13. 続行する前に、検証スクリプトの一環として失敗する箇所を修正してください。
 14. Service Fabric エクスプローラー で、**クラスター** を選択し、Microsoft Service Fabric Cluster のバージョンをメモします。 この例では、クラスター バージョンが **6.5.676.9590** となっています。
 
-    ![クラスター バージョン](media/fe0c857aefd3a1174df38f8e0c644667.png)
+    ![クラスター バージョン。](media/fe0c857aefd3a1174df38f8e0c644667.png)
 
 15. いずれかのオーケストレータノード ノードで、ファイル エクスプローラーを開きます。 **表示** タブの、**表示/非表示** グループで、**ファイル名の拡張子** と **非表示項目** の各チェック ボックスがオンになっていることを確認します。
 
-    ![オプションの表示](media/bb83d249cdce333bdbb2e276ebce559c.png)
+    ![オプションを表示します。](media/bb83d249cdce333bdbb2e276ebce559c.png)
 
 16. ドライブ C を展開し、次のフォルダにドリル ダウンします。 （パスの太字部分は、ノード名と設定によって異なることに注意してください）
 
@@ -285,16 +285,16 @@ ms.locfileid: "5923263"
 
     このフォルダーには、Service Fabric のさまざまなバージョンのフォルダがリスト表示されます。 次に例を示します。
 
-    ![131811633624852852 フォルダの内容](media/f843b5ceda67f767f54333851f5deeec.png)
+    ![131811633624852852 フォルダーのコンテンツ。](media/f843b5ceda67f767f54333851f5deeec.png)
 
 17. 前述の手順でメモした Microsoft Service Fabric Cluster のバージョンと同じ名前のフォルダーを開きます。 この例では、フォルダの名称が **6.5.676.9590** となっています。
 18. フォルダ内に .cab ファイルが表示されています。
 
-    ![6.5.676.9590 フォルダの内容](media/fd04e00bc3d940f5637900e46db8f134.png)
+    ![6.5.676.9590 フォルダーのコンテンツ。](media/fd04e00bc3d940f5637900e46db8f134.png)
 
 19. .Cab ファイルを C:\\Temp にコピーし、コピーしたファイルを **MicrosoftAzureServiceFabric.cab** に変更します。 （Temp フォルダーがない場合は作成してください）
 
-    ![Temp フォルダーにコピーされて名前変更されたファイル](media/e146a300f030d0695be858d8c7261486.png)
+    ![Temp フォルダーにコピーされて名前変更されたファイル。](media/e146a300f030d0695be858d8c7261486.png)
 
 20. Windows PowerShell のコマンドプロンプトを管理者として開きます。
 21. 次のコマンドを実行して、Service Fabric Cluster に接続します。 （必要に応じてコマンドを編集します）
@@ -304,7 +304,7 @@ ms.locfileid: "5923263"
     Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
     ```
 
-    ![接続コマンドと結果](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
+    ![接続コマンドと結果。](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
 
 22. 次のコマンドを実行して、ノードを追加し直します。 実行前に、**NodeName**、**IPAddress**、**UpgradeDomain**、**FaultDomain** パラメータに対して必要な編集を行ってください。 （既存のサーバーを置き換えている場合は、元の値をメモしておく必要があります）
 
@@ -312,7 +312,7 @@ ms.locfileid: "5923263"
     Add-ServiceFabricNode -NodeName "AOS1" -NodeType "AOSNodeType" -IpAddressOrFQDN "10.0.0.9" -UpgradeDomain "ud0" -FaultDomain "fd:/fd0" -FabricRuntimePackagePath "C:\Temp\MicrosoftAzureServiceFabric.cab"
     ```
 
-    ![コマンドと結果の追加](media/e8c153c1b8aa06af684a307f443c9b7b.png)
+    ![コマンドと結果を追加します。](media/e8c153c1b8aa06af684a307f443c9b7b.png)
 
 23. ノードを再追加した後は、Service Fabric エクスプローラーに戻り、アプリケーションの展開の状態を確認します。 すべての復元された AOS アプリケーション（**AXBootstrapperAppType**、**AXSFType**、**RTGatewayAppType**、**LBDTelemetryType-<envname\>** 、**MonitoringAgentAppType**）がプッシュ アウトされ、ノードにインストールされるには数分を要します。
 

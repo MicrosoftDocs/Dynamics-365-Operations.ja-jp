@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 84681
+ms.custom:
+- "84681"
+- intro-internal
 ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1624933c6d29acd5af7129b0365f93c3e632d05
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fbd46c5894d382dd79780c9d8cc4d9b9fcbd50fe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750250"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350720"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>パートナー向け Finance and Operations アプリの Lifecycle Services (LCS)
 
@@ -40,7 +42,7 @@ Finance and Operations のパートナーは、 [プレビュー サブスクリ
 
 利用可能なビジネス プロセスの理解を助け、自分のサブスクリプションの必要に関する評価を助ける新しいプロセスで作業します。 パートナーだけが新しいクラウド環境をプロビジョニングできることに注意してください。 
 
-![見込みプリセールス プロジェクト](https://msdnshared.blob.core.windows.net/media/2016/05/27-1024x514.png)
+![見込みプリセールス プロジェクト。](https://msdnshared.blob.core.windows.net/media/2016/05/27-1024x514.png)
 
 #### <a name="migrate-create-solutions-and-learn-the-project-for-finance-and-operations-apps"></a>移行、ソリューションの作成、Finance and Operations アプリのプロジェクトについて学ぶ 
 

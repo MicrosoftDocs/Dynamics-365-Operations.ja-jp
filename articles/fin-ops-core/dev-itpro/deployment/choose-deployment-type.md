@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 518edf7c54cff11ea7cdbc071e9718a0b1c9090f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a3856a6be7326e546223702a69e04b52b614bd3f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748801"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351708"
 ---
 # <a name="deployment-options"></a>配置オプション
 
@@ -31,7 +31,7 @@ ms.locfileid: "5748801"
 
 次のテーブルは、2 つの配置オプションによって提供される機能の比較を示しています。
 
-[![配置オプション テーブル](./media/deployment-options.png)](./media/deployment-options.png)
+[![配置オプション テーブル。](./media/deployment-options.png)](./media/deployment-options.png)
 
 
 ## <a name="why-cloud"></a>クラウドを使用する理由

@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 60373
+ms.custom:
+- "60373"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: bd30a8906b09f899a30c9b069dc0b76c84bf5c1c
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: b944b8872bfd87162bfa00efb0adb7282ded59dd
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216600"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336798"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 

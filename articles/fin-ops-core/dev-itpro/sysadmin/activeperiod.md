@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: fe58fb5b0701e61a74863669d47cb9a52d92151b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e63f4bf0f711d0c24b070c012439acc4f1cc53ec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751340"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344000"
 ---
 # <a name="active-batch-periods"></a>有効なバッチ期間
 
@@ -39,7 +39,7 @@ ms.locfileid: "5751340"
 2.  バッチ ジョブの名前を入力し、バッチ ジョブが有効な開始日と終了日を指定します。 
 4.  **保存** をクリックします。
 
-![有効期間フォーム](./media/active-periods.png)
+![有効期間フォーム。](./media/active-periods.png)
 
 ## <a name="assign-active-periods-to-batch-jobs"></a>バッチ ジョブの有効期間の割り当て
 
@@ -47,7 +47,7 @@ ms.locfileid: "5751340"
 2.  期間を割り当てるバッチ ジョブを選択し、**編集** をクリックします。
 3.  **有効期間** フィールドで、割り当てる有効期間を選択し、**保存** をクリックします。
 
-![有効期間の割り当て](./media/assign-active-period.png)
+![有効期間の割り当て。](./media/assign-active-period.png)
  
 
 

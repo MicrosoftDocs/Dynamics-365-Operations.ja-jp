@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 820410933035d80b137fe4415bfb2c2be49d6588
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 96675e4d5e0803dd2aa294a909b2c779461dbf30
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193688"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355434"
 ---
 # <a name="create-an-appx-file-for-a-modern-pos-extension-package"></a>Modern POS 拡張パッケージの .appx ファイルの作成
 
@@ -59,7 +59,7 @@ ms.locfileid: "6193688"
     3. **有効なソリューション プラットフォーム** メニューで、**編集** を選択します。
     4. **x86** を除くすべてのプラットフォームを削除します。
 
-    ![プラットフォーム コンフィギュレーション](media/platform.png)
+    ![プラットフォーム コンフィギュレーション。](media/platform.png)
 
 6. サポートされていないプラットフォーム コンフィギュレーションを削除するには、JavaScript プロジェクト ファイル (.jsproj ファイル) を編集してください。
 

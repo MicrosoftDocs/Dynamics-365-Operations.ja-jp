@@ -76,8 +76,6 @@
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (2021 年 6 月)
                       href: get-started/whats-new-scm-10-0-19.md
-                    - name: Supply Chain Management 10.0.18 (2021 年 5 月)
-                      href: get-started/whats-new-scm-10-0-18.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -2001,9 +1999,7 @@
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: 一時仕入先に対する発注書の作成
                   href: procurement/tasks/create-purchase-order-one-time-supplier.md
-                - name: 発注書の作成時に購買リリース注文を作成
-                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-                - name: 購買契約書からの購買リリース注文の作成
+                - name: 発注書の作成時に購買契約書を適用する
                   href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
                 - name: 購買返品注文の作成
                   href: procurement/tasks/create-purchase-return-order.md

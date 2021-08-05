@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf20030fe904c81b2653030ef34601514049bfd
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 66a559ad38724f9b6f5059becf62bee08182d0af
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941097"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350899"
 ---
 # <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 
@@ -41,22 +41,22 @@ ms.locfileid: "5941097"
 
 2. **テーブル マッピング** タブで、Finance and Operations アプリまたは Dataverse から新しい列またはカスタム列を選択して、フィールドをカスタマイズできます。
 
-    ![列のカスタマイズ](media/customize-a-field.png)
+    ![列のカスタマイズ。](media/customize-a-field.png)
 
 3. 同期の方向 (単一方向または双方向) をカスタマイズし、マップの種類を選択して変換を追加できます。
 
-    ![同期の方向のカスタマイズと変換の追加](media/customize-sync-direction.png)
+    ![同期の方向のカスタマイズと変換の追加。](media/customize-sync-direction.png)
 
     次の表で、使用可能な同期の方向について説明します。
 
     | 記号 | 説明 |
     |---|---|
-    | ![等号](media/equal-symbol.png) | 双方向の列の割り当て |
-    | ![大なり/小なり記号](media/greater-less-symbol.png) | 変換を使用する双方向の列の割り当て |
-    | ![大なり記号](media/greater-than-symbol.png) | 単一方向の列の割り当て (左から右) |
-    | ![小なり記号](media/less-than-symbol.png) | 単一方向の列の割り当て (右から左) |
-    | ![右矢印キー](media/right-arrow-symbol.png) | 変換を使用する単一方向の列の割り当て (左から右) |
-    | ![左矢印キー](media/left-arrow-symbol.png) | 変換を使用する単一方向の列の割り当て (右から左) |
+    | ![等号。](media/equal-symbol.png) | 双方向の列の割り当て |
+    | ![大なり/小なり記号。](media/greater-less-symbol.png) | 変換を使用する双方向の列の割り当て |
+    | ![大なり記号。](media/greater-than-symbol.png) | 単一方向の列の割り当て (左から右) |
+    | ![小なり記号。](media/less-than-symbol.png) | 単一方向の列の割り当て (右から左) |
+    | ![右矢印。](media/right-arrow-symbol.png) | 変換を使用する単一方向の列の割り当て (左から右) |
+    | ![左矢印キー。](media/left-arrow-symbol.png) | 変換を使用する単一方向の列の割り当て (右から左) |
 
     次の表で、使用可能な変換のタイプについて説明します。
 
@@ -69,11 +69,11 @@ ms.locfileid: "5941097"
 
     次の図は、新しい **生年月日** の列を追加する例を示しています。
 
-    ![新しい生年月日の列の追加](media/add-new-field.png)
+    ![新しい生年月日の列を追加します。](media/add-new-field.png)
 
 5. 列マッピングのカスタマイズが完了したら **保存** を選択します。 次に、プロンプトに従って、パブリッシャーとバージョン番号を指定します。
 
-    ![パブリッシャーとバージョン番号の指定](media/choose-publisher-version.png)
+    ![パブリッシャーとバージョン番号の指定。](media/choose-publisher-version.png)
 
 ### <a name="filter-your-data"></a>データのフィルタ処理
 
@@ -81,11 +81,11 @@ ms.locfileid: "5941097"
 
 1. テーブル マッピング ページで、フィルター ボタン (じょうごのアイコン) を選択します。
 
-    ![フィルター ボタン](media/select-filter-icon.png)
+    ![フィルター ボタン。](media/select-filter-icon.png)
 
 2. **クエリの編集** ダイアログボックスで、フィルターを指定します。 この例では、指定されたフィルターは、アカウント タイプが **3** であるアカウントのみを返します。
 
-    ![フィルターの指定](media/specify-filters.png)
+    ![フィルターの指定。](media/specify-filters.png)
 
     次の表に、フィルター式の例を示します。
 
@@ -106,14 +106,14 @@ Microsoft は引き続き新しいテーブルを追加していますが、標�
 
 1. Finance and Operations アプリの **二重書き込み** ページで、**テーブル マップの追加** を選択します。
 
-    ![新しいテーブル マップの追加](media/add-new-entity-map.png)
+    ![新しいテーブル マップを追加します。](media/add-new-entity-map.png)
 
     > [!NOTE]
     > これらの変更済みテーブル マップを使用する[新しいソリューションを作成する](app-lifecycle-management.md#create-new-solution) 場合は、同じパブリッシャーを指定する必要があります。
 
 2. 変更および追加したテーブル マップを確認します。 それらを有効にしてテストし、期待どおりに機能することを確認してください。
 
-    ![テーブル マップの確認](media/confirm-entity-maps.png)
+    ![テーブル マップを確認します。](media/confirm-entity-maps.png)
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.custom: 56551
+ms.custom:
+- "56551"
+- intro-internal
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ea4e14e7fb9dee1d54ddd23e7fcdeac233cb954
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: ab6b73df11d43f1e6abbdad2c4832dbfdc98c410
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923293"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348569"
 ---
 # <a name="finance-and-operations-application-architecture"></a>Finance and Operations アプリケーション アーキテクチャ
 
@@ -27,7 +29,7 @@ ms.locfileid: "5923293"
 
 Finance and Operations アプリケーション クラウド アーキテクチャには、[Microsoft クラウド製品のサブスクリプション、ライセンス、アカウント、テナント](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) で説明されているように、すべての Microsoft クラウド製品に共通する全ての要素が含まれています。 さらに、ソフトウェアの展開とプロビジョニング、運用の監視とレポート、およびシームレスなアプリケーション ライフサイクル管理を自動化するサービスが含まれます。
 
-![クラウド アーキテクチャ](./media/cloud-architecture.png)
+![クラウド アーキテクチャ。](./media/cloud-architecture.png)
 
 クラウド アーキテクチャは、これらの概念領域で構成されています。
 

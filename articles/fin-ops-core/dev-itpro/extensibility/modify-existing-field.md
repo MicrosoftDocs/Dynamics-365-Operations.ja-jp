@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: d1214cec71d48cea26646de803e83c51f2da85c6
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 81c6cb53a25f93a4a0b53871801250d8f9f3e238
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344854"
 ---
 # <a name="modify-existing-fields-in-a-table-through-extension"></a>拡張機能を使用したテーブル内の既存のフィールドの変更
 
@@ -32,7 +32,7 @@ ms.locfileid: "5865914"
 - **国地域コード**
 - **拡張データ型** - 現在選択されている EDT から派生した拡張データ型 (EDT) のみを選択できます。 プロパティ シートのルックアップはフィルタリングされ、それらの EDT のみが表示されます。 たとえば、InventTable 上のテーブルの **幅** フィールドで EDT を編集する場合は、 **BOMMeasureWidth** を基にして EDT を作成することができます。次に、 **InventTable** 拡張子の **幅** フィールドで、 **拡張データ型** プロパティを変更します。 この方法で、新しいパッケージが配置されるときに、ユーザー インターフェイスで **幅** フィールドの外観を変更できます。
 
-![既存のフィールドの変更](media/modify-table-property.jpg) 
+![既存のフィールドを変更します。](media/modify-table-property.jpg) 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

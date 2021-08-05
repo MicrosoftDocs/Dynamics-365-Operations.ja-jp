@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e947b0c3986ed5ad70458fb95ec66cb84f3a341
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: d04c08fe2ee748b4cd5a48df16a39032312c4e58
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893064"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358657"
 ---
 # <a name="help-prevent-long-running-reports-from-timing-out"></a>実行時間の長いレポートがタイムアウトしないようにする
 
@@ -32,7 +32,7 @@ ms.locfileid: "5893064"
 ## <a name="preprocess-the-data-source"></a>データ ソースの前処理
 レポートでレポートのデータ プロバイダー (RDP) を使用してデータを取得している場合、レポートは、事前処理 RDP クラスをデータ ソースとして使用するために変更される必要があります。 この方法では、処理ロジックが Reporting Services に対して呼び出しが行われる前に呼び出されます。 RDP クラスの詳細については、[レポート データにアクセスするレポートのデータ プロバイダー クラスを使用する](/dynamicsax-2012/appuser-itpro/using-report-data-provider-classes-to-access-report-data) および [レポートのプログラム ガイド](/dynamicsax-2012/appuser-itpro/report-programming-guide) を参照してください。
 
-[![レポート タイムアウト](./media/report-timeouts.png)](./media/report-timeouts.png)
+[![レポート タイムアウト。](./media/report-timeouts.png)](./media/report-timeouts.png)
 
 ## <a name="how-do-i-migrate-a-regular-rdp-to-a-pre-process-data-access-solution-by-using-tempdb"></a>TempDB を使用して、通常の RDP を事前処理されたデータ アクセス ソリューションに移行するにはどうすればよいですか。
 

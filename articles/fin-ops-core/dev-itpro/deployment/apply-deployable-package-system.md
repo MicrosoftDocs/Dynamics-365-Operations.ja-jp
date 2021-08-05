@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 88398d0a524aae4e47dd8c918c78d99d903cebd2
-ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
+ms.openlocfilehash: 31294000fb384128c5adff78e9e96f9c2677746e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "6224524"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360836"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
@@ -123,11 +123,11 @@ Lifecycle Services を介して配置された顧客管理環境および Micros
 
 **配置可能パッケージ** - 配置可能パッケージとは、環境に適用できる配置の単位です。 デプロイ可能なパッケージは、プラットフォームまたは他のランタイム コンポーネント、更新されたアプリケーション (AOT) パッケージ、または新しいアプリケーション (AOT) パッケージのバイナリ更新です。 LCS からダウンロードした、または開発環境で作成した配置可能なパッケージは、製品タイプ間では適用できません。 たとえば、Finance の展開可能なパッケージはコマース アプリ環境に適用することができず、その逆も同様です。 コマース アプリと互換性のある Finance and Operations アプリの既存のカスタマイズを持ち、それをコマース 環境に適用する場合、コマース 開発環境でソース コードを再パッケージする必要があり、逆の方向に移動させている場合は逆コンパイルする必要があります。   
 
-[![配置可能なパッケージの例](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
+[![配置可能なパッケージの例。](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 
 **Runbook** – 展開 runbook は展開可能なパッケージを対象となる環境に適用させるために生成される一連の手順です。 一部のステップは自動化され、一部のステップは手動です。 AXUpdateInstaller は、これらの手順を一度に 1 つずつ正しい順序で実行できます。
 
-[![展開 runbook の例](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
+[![展開 runbook の例。](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
 
 **AXUpdateInstaller** - Microsoft Visual Studio または Microsoft バイナリ更新プログラムからカスタマイズ パッケージを作成すると、インストーラの実行可能ファイルが配置可能パッケージと共にバンドルされます。 インストーラーは、指定したトポロジの Runbook を生成します。 インストーラーは、特定のトポロジの Runbook に従って、手順を順番に実行することもできます。
 

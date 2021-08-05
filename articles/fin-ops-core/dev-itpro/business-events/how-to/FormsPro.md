@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 7358fd3dc3010cabed6499a7850c1d92de5f39c8
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 81956e84922346377fc567731d69b1eae2b43371
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356279"
 ---
 # <a name="business-events-and-microsoft-forms-pro"></a>ビジネス イベントおよび Microsoft Forms Pro
 
@@ -33,15 +33,15 @@ Forms Pro を使用したことがない場合は、まず [Forms Pro のドキ�
 
 1. 調査の作成 調査に入力したタイトルに基づいて Forms Pro はアンケートの質問を提案します。
 
-    ![Forms Pro が提案する調査の質問](../../media/Forms_Pro1.png)
+    ![Forms Pro で推奨される調査の質問。](../../media/Forms_Pro1.png)
 
 2. 販売注文は出荷を追跡します。 製品が出荷されると、販売注文のステータスが **配送済** に変更されます。
 
-    ![ステータスが「配送済」の販売注文](../../media/SalesOrder1.png)
+    ![ステータスが配送済となっている販売注文。](../../media/SalesOrder1.png)
 
     そのため、**ステータス** フィールドの値が変更されるたびにアラートを作成するように、販売注文でアラートを構成します。 アラートがビジネス イベントとして送信されるように、必ず **外部に送信** オプションを **はい** に設定してください。
 
-    ![警告](../../media/Alerts1.png)
+    ![警告。](../../media/Alerts1.png)
 
 3. 販売注文のステータスが更新されるたびにビジネス イベントにトリガーされるフローを設定します (次のステップの図を参照してください)。 トリガーされた後、フローはフォーム コネクタを使用して、販売注文に登録されている顧客の電子メール アドレスに調査を送信します。
 
@@ -49,15 +49,15 @@ Forms Pro を使用したことがない場合は、まず [Forms Pro のドキ�
 
 4. このシナリオの調整には Microsoft Power Automate が使用されるため、アプリケーションで **変更ベースのアラートが発生した場合** ビジネス イベントを有効化しないでください。 代わりに、ビジネス イベントを直接サブスクライブするように Power Automate を設定します。
 
-    ![Flow](../../media/Flow1.png)
+    ![フロー。](../../media/Flow1.png)
 
 5. フローは設定が完了するとトリガーされ、販売注文のステータスが更新されるたびに調査が送信されます。
 
-    ![調査](../../media/Survey1.png)
+    ![調査。](../../media/Survey1.png)
 
     ユーザーが調査に入力して送信すると Forms Pro に分析が表示されます。
 
-    ![Forms Pro の調査分析](../../media/Forms_Pro2.png)
+    ![Forms Pro の調査分析。](../../media/Forms_Pro2.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

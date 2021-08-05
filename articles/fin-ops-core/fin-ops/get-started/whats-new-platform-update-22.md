@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
-ms.openlocfilehash: be68e47186b4fdb2750a5083c1f27ad7fd7affe4
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: f798122dd0e00d9286cae320b7102463e4007a9a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923327"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357484"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-22-december-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
 
@@ -60,11 +60,11 @@ Excel へのエクスポート機能は、Finance and Operations のグリッド
 
 次の画像は、プラットフォーム更新 22 より前の個人用設定ツールバーの表示を示しています。
 
-![プラットフォーム更新 22 より前の個人用設定ツールバー](media/oldPersonalizationToolbar.png "プラットフォーム更新 22 より前の個人用設定ツールバー")
+![プラットフォーム更新 22 より前の個人用設定ツールバー。](media/oldPersonalizationToolbar.png "プラットフォーム更新 22 より前の個人用設定ツールバー")
 
 次の画像は、プラットフォーム更新 22 以降の個人用設定ツールバーの表示を示しています。
 
-![プラットフォーム更新 22 以降の個人用設定ツールバー](media/restyledPersonalizationToolbar.png "プラットフォーム更新 22 以降の個人用設定ツールバー]")
+![プラットフォーム更新 22 以降の個人用設定ツールバー。](media/restyledPersonalizationToolbar.png "プラットフォーム更新 22 以降の個人用設定ツールバー]")
 
 ## <a name="optimized-is-one-of-filtering-experience"></a>最適化された "次の値のいずれか" のフィルタリング結果
 

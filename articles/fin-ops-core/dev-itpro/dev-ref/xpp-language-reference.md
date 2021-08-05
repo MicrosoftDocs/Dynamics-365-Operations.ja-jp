@@ -3,20 +3,19 @@ title: X++ 言語リファレンス
 description: このトピックでは、X++ のプログラミング ガイドを提供します。
 author: RobinARH
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
+ms.custom: intro-internal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a42af1740352119481698b3278ab7e239bee5042
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: bf729b8bc5543a51c99c60ae35e029dedb7ac5f8
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866290"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661556"
 ---
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 

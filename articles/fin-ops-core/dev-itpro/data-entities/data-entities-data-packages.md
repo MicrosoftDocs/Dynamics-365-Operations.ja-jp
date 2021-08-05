@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 96283
+ms.custom:
+- "96283"
+- intro-internal
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: baea5e04ed638aa144e6c24a00dde426ec3cbcde
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: f097a9b2805adf23e69ea479da91394a8b1f68f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937344"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351037"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
@@ -108,7 +110,7 @@ ms.locfileid: "5937344"
 
 2. シーケンスを表示または編集するには、データ プロジェクトのアクション ウィンドウにある **エンティティのシーケンス** ボタンをクリックします。
 
-    ![エンティティ シーケンス](./media/dataentitiesdatapackages01.png)
+    ![エンティティ シーケンス。](./media/dataentitiesdatapackages01.png)
 
 3. 定義グループ エンティティの順序で、実行単位と順序を表示できます。 一覧からデータ エンティティを選択して、異なる実行単位またはシーケンスを等しく設定してから、**選択対象の更新** をクリックすることにより、シーケンスを変更することができます。 **選択対象の更新** をクリックした後、エンティティはエンティティの一覧で上または下に移動します。
 
@@ -116,7 +118,7 @@ ms.locfileid: "5937344"
 
 次のスクリーンショットは、消費税 CodeGroups データ パッケージに設定されているエンティティの順序を示しています。
 
-![売上税 CodeGroups データ パッケージの順序](./media/dataentitiesdatapackages02.png)
+![売上税 CodeGroups データ パッケージの順序。](./media/dataentitiesdatapackages02.png)
 
 売上税コードとグループを正常にインポートするためには、最初に売上税コードおよび詳細を読み込んでから、売上税グループをインポートする必要があります。 売上税コードとグループがすべて実行単位 = 1 になっていますが、シーケンスはインポートされる順序になっています。 読み込まれる他のデータ エンティティに依存していないその他の関連する売上税エンティティは、パッケージに含まれます。 たとえば、消費税非課税番号が独自の実行単位 = 2 に設定されます。 このデータ エンティティは、直前に読み込んでいる他のエンティティに依存しないため、すぐに読み込みを開始します。
 
@@ -131,19 +133,19 @@ ms.locfileid: "5937344"
 
 **モジュール番号**
 
-[![モジュール地域番号](./media/dataentitiesdatapackages03.png)](./media/dataentitiesdatapackages03.png)
+[![モジュール地域番号。](./media/dataentitiesdatapackages03.png)](./media/dataentitiesdatapackages03.png)
 
 **データ型の数**
 
-[![データ型番号](./media/dataentitiesdatapackages04.png)](./media/dataentitiesdatapackages04.png)
+[![データ型番号。](./media/dataentitiesdatapackages04.png)](./media/dataentitiesdatapackages04.png)
 
-**番号順序**
+**連番**
 
-[![番号順序](./media/dataentitiesdatapackages05.png)](./media/dataentitiesdatapackages05.png)
+[![シーケンス番号。](./media/dataentitiesdatapackages05.png)](./media/dataentitiesdatapackages05.png)
 
 データ パッケージは、シーケンス番号に続いて、モジュールの省略形、記述の順に続きます。 次の例は、総勘定元帳 データ パッケージを示しています。
 
-[![番号付けの例](./media/dataentitiesdatapackages06.png)](./media/dataentitiesdatapackages06.png)
+[![番号付けの例。](./media/dataentitiesdatapackages06.png)](./media/dataentitiesdatapackages06.png)
 
 ## <a name="mapping"></a>マッピング
 データ エンティティを使用するときは、ソースへのエンティティのマッピングは自動です。 必要な場合は、フィールドの自動マッピングを上書きできます。
@@ -157,7 +159,7 @@ ms.locfileid: "5937344"
 
 ソースからステージングへのフィールド マッピングも、同じプロセスを使用してインポートした後で編集できます。
 
-[![マッピングの視覚化](./media/dataentitiesdatapackages07.png)](./media/dataentitiesdatapackages07.png)
+[![マッピングの視覚化。](./media/dataentitiesdatapackages07.png)](./media/dataentitiesdatapackages07.png)
 
 ### <a name="regenerate-a-map"></a>マップを再生成
 エンティティ (追加済みフィールド) を拡張する場合、または自動マッピングが不適切であると表示された場合は、エンティティのマッピングを **マッピング** フォームで再生成できます。
@@ -171,31 +173,31 @@ ms.locfileid: "5937344"
 ### <a name="generate-data"></a>データの生成
 エンティティに、インポート時にデータを生成するフィールドがある場合は、ソース ファイルにデータを提供する代わりに、エンティティのマッピングの詳細で自動生成された機能を使用できます。 たとえば、顧客および顧客の住所情報をインポートしても、住所情報がグローバル アドレス帳エンティティで以前にインポートされなかった場合、インポート上の関係者番号を自動生成するエンティティを持つことができ、GAB 情報が作成されます。 この機能にアクセスするには、エンティティのマップを表示し、**マッピング詳細** タブをクリックします。自動生成するフィールドを選択します。 これにより、ソース フィールドが **自動** に変更されます。
 
-[![データの生成](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
+[![データの生成。](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
 
 ### <a name="turn-off-automatically-generated-number-sequences"></a>自動的に生成される番号シーケンスをオフにする
 多くのエンティティは、番号順序の設定に基づく ID の自動生成をサポートしています。 たとえば、製品を作成するときに、製品番号は自動で生成され、フォームで値を手動で編集することはできません。
 
-[![自動番号 sequence.png](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
+[![自動番号 sequence.png。](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
 
 特定のエンティティに対する番号順序の手動割り当てを有効にできます。
 
-[![手動番号順序を有効化](./media/dataentitiesdatapackages16-300x153.png)](./media/dataentitiesdatapackages16.png)
+[![手動番号順序を有効化。](./media/dataentitiesdatapackages16-300x153.png)](./media/dataentitiesdatapackages16.png)
 
 手動割り当てを有効にした後、代わりに手動で割り当てられた番号を指定できます。
 
-[![番号シーケンスの提供](./media/dataentitiesdatapackages17-300x214.png)](./media/dataentitiesdatapackages17.png)
+[![番号シーケンスの提供。](./media/dataentitiesdatapackages17-300x214.png)](./media/dataentitiesdatapackages17.png)
 
 ## <a name="export"></a>輸出
 エキスポートは、データ エンティティを使用してシステムからデータを取得するプロセスです。 エクスポート プロセスは、プロジェクトを通じて行われます。 エクスポートするとき、エクスポート プロジェクトの定義方法に関して、多くの柔軟性があります。 エクスポートするデータ エンティティ、エンティティ数、使用するファイル形式 (エクスポートのために選択できる 14 の形式があります)、を選択して、各エンティティにフィルターを適用してエクスポート対象を制限することができます。 データ エンティティがプロジェクトを取り出した後、前述されたシーケンスとマッピングは、各エクスポート プロジェクトに対して実行できます。
 
-[![ページのエクスポート](./media/dataentitiesdatapackages08-1024x400.png)](./media/dataentitiesdatapackages08.png)
+[![ページのエクスポート。](./media/dataentitiesdatapackages08-1024x400.png)](./media/dataentitiesdatapackages08.png)
 
 プロジェクトが作成され保存された後は、プロジェクトをエクスポートし、ジョブを作成することができます。 エクスポート プロセス中に、ジョブのステータスとレコード数をグラフィカルに表示できます。 このビューには複数のレコードが表示されるので、実際のファイルをダウンロードする前に各レコードの状態を確認できます。
 
-[![実行の要約](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)
+[![実行の要約。](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)
 
-[![レコードのカウント](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png)
+[![レコード数。](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png)
 
 ジョブが完了した後、ファイルのダウンロード方法を選択できます。各データ エンティティは別々のファイルにすることも、ファイルをパッケージにまとめることもできます。 ジョブに複数のデータ エンティティがある場合は、パッケージ オプションを選択すると、アップロードのプロセス速度が上がります。 パッケージは zip ファイルであり、各エンティティのデータ ファイルとパッケージ ヘッダーとマニフェストを含んでいます。 これらの追加のドキュメントは、データ ファイルを正しいデータ エンティティに追加してインポート プロセスを順序付けるために、インポート時に使用されます。
 
@@ -212,7 +214,7 @@ ms.locfileid: "5937344"
     2. **ソース データ形式** フィールドで、**パッケージ** を選択します。
     3. **アップロード** ボタンをクリックし、インポートするデータの場所から適切なパッケージ ファイルを選択します。 これにより、パッケージからすべてのファイルがインポートされます。
 
-        [![パッケージファイルを選択する](./media/dataentitiesdatapackages12-1024x555.png)](./media/dataentitiesdatapackages12.png)
+        [![パッケージファイルを選択。](./media/dataentitiesdatapackages12-1024x555.png)](./media/dataentitiesdatapackages12.png)
 
     4. **保存** をクリックし、**インポート** をクリックします。
 
@@ -222,7 +224,7 @@ ms.locfileid: "5937344"
 - 各パッケージの新しいジョブを作成し、上記の手順 4(a) から 4(d) をパッケージごとに繰り返します。 
 - 1 つのジョブを作成して、複数のパッケージをシーケンス内にインポートします。 インポートする必要があるすべてのパッケージで上記の手順 4(a) ～ 4(c) を繰り返します。 パッケージを選択した後に、ステップ 4 (d) を実行し選択したデータ パッケージから単一のジョブでデータをインポートします。
 
-    [![複数のデータ パッケージ](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)
+    [![複数のデータ パッケージ。](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)
 
 **インポート** をクリックした後、ステージング テーブルを使用してデータがインポートされます。 インポートの進行状況は、画面の右上にある **更新** ボタンを使用して追跡できます。
 

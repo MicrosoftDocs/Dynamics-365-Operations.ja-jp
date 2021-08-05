@@ -3,20 +3,18 @@ title: X++ 属性クラス
 description: このトピックでは、X++ での属性の使用について説明します。
 author: pvillads
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150243
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1ace0374f20849c61198e2c9c3370712ffd4d6a
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: b10b6160bae0f7622eadfb38e834b4192f6528dc
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866031"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661452"
 ---
 # <a name="x-attribute-classes"></a>X++ 属性クラス
 

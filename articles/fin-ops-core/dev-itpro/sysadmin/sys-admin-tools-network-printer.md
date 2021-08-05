@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7934a73b54a2a370e9cddbff7c7c363cce0a44aa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b881a55da29bf8ee9a28c332af4192d7de54033c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745901"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359343"
 ---
 # <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 
@@ -37,7 +37,7 @@ ms.locfileid: "5745901"
 ## <a name="access-the-feature"></a>機能にアクセスする
 機能がオンになると、**ネットワーク プリンターの管理** ページのアクション ウィンドウの **オプション** タブに **プレビュー** グループが表示されます。
 
-![アクション ペインのプレビュー グループ](./media/network-printer-01.png)
+![アクション ウィンドウのプレビュー グループ。](./media/network-printer-01.png)
 
 1. **組織管理** > **設定** > **ネットワーク プリンター** の順に選択します。
 2. アクション ウィンドウの **プレビュー** グループで、**システム ネットワーク プリンター** を選択します。

@@ -3,20 +3,18 @@ title: データの挿入
 description: このトピックでは、X++ を使用してテーブルにデータを挿入する方法について説明します。
 author: robinarh
 ms.date: 06/16/2020
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: c5994dd05f95ed19ee5bac9a10fb4353859521c6
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: eec876d6ae964f93299ce4624b398b69bf3a12f5
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923245"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661356"
 ---
 # <a name="insert-data"></a>データの挿入
 

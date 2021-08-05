@@ -3,21 +3,16 @@ title: PageLinkMetadata タイプ
 description: ページ リンク メタデータ タイプ。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: ddd7d1705d7b9a265c2f6cef3fe696c4704c7e2b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3161b5771fb563d531418fb06d505b3a57347622
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908694"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661524"
 ---
 # <a name="pagelinkmetadata-type"></a>PageLinkMetadata タイプ
 

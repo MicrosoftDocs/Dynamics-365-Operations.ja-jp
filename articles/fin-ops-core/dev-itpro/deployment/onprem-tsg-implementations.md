@@ -2,7 +2,7 @@
 title: オンプレミス環境の問題を解決するためのスクリプト
 description: このトピックは、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。
 author: faix
-ms.date: 04/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30]
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 25338f2bf9c339a3cce56eefb1f161521186ca18
-ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
+ms.openlocfilehash: 95e60ff270f182b4d9dbbf9379d80f6bd0028836
+ms.sourcegitcommit: 41a5d18552bcc94cb1ddbbe3f3278eaf9d05f418
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5924389"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "6617032"
 ---
 # <a name="scripts-for-resolving-issues-in-on-premises-environments"></a>オンプレミス環境の問題を解決するためのスクリプト
 [!include [banner](../includes/banner.md)]
@@ -337,6 +337,11 @@ foreach ($component in $configJson.components)
     {
         $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
         $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
+    }
+
+    if($component.name -eq "ReportingServices")
+    {
+        $component.parameters.accountListToAccessReports.value = $gmsaAccount
     }
 
     $updatedComponents += $component

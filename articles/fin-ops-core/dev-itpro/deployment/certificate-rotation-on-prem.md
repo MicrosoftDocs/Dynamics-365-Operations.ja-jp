@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: e7df0b98559aecd9dac914b5a6cccb397ad98a87
-ms.sourcegitcommit: 55ca275705a624d446d2abb60b5d676b86fe7240
+ms.openlocfilehash: 6362ec5c646e6afa911d2400617f7dcfbd60a7f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "6306792"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351710"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -321,19 +321,19 @@ ms.locfileid: "6306792"
 
 2. **管理** を選択し、**更新の設定** を選択します。
 
-    ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
+    ![更新設定を適用します。](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. 以前にコンフィギュレーションした新しいサムプリントにサムプリントを変更します。 これらは、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルで検索できます。
 
-    ![配置設定のサムプリント画像 1](media/07da4d7e02f11878ee91c61b4f561a50.png)
+    ![配置設定のサムプリント画像 1。](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-    ![配置設定のサムプリント画像 2](media/785caaf4ee652d66c0d88cf615a57e26.png)
+    ![配置設定のサムプリント画像 2。](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. **準備** を選択します。
 
 5. ダウンロードおよび準備が完了すると、**環境の更新** ボタンが表示されます。
 
-    ![環境の更新ボタン](media/0a9d43044593450f1a828c0dd7698024.png)
+    ![環境の更新ボタン。](media/0a9d43044593450f1a828c0dd7698024.png)
 
 6. **環境の更新** を選択して、環境の更新を開始します。
 
@@ -343,9 +343,9 @@ ms.locfileid: "6306792"
 
     次の例では、同じ拇印の名前がいくらか異なっている例の一部です。
 
-    ![配置設定におけるサムプリントの例 1](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+    ![配置設定におけるサムプリントの例 1。](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-    ![配置設定におけるサムプリントの例 2](media/642f6434da9cdeac3651b765acca08fa.png)
+    ![配置設定におけるサムプリントの例 2。](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## <a name="update-other-certificates-as-needed"></a>必要に応じて他の証明書を更新する
 

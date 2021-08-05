@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f233dfea619ffa6734824ea521135293fea9894a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0af9a1a7f6146d4b0b7f6a674450cd2b544a8832
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793007"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353846"
 ---
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "5793007"
 ## <a name="overview"></a>概要
 次の図は、POS を介した支払ターミナルの統合の概要を示しています。 この図では、ローカルのハードウェア ステーションを使用して支払端末と通信を使用することを前提にしていますが、同じパターンを共有のハードウェア ステーションにも適用できます。
 
-![支払コネクタ統合の概要](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
+![支払コネクタ統合の概要。](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
 
 このトピックでは、支払端末のエンド・ツー・エンド支払統合を作成するために必要な以下の手順について説明します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "5793007"
 ### <a name="understanding-the-payment-flows"></a>支払フローを理解する
 次の図は、POS、ハードウェア ステーション、および支払コネクタ全体にわたるいくつかの支払フロー (トランザクションの開始、カート ラインの更新、承認、キャプチャ、および終了トランザクション) の概要を示しています。
 
-![支払フローの概要](media/PAYMENTS/PAYMENT-TERMINAL/PaymentFlow.jpg)
+![支払フローの概要。](media/PAYMENTS/PAYMENT-TERMINAL/PaymentFlow.jpg)
 
 ### <a name="implement-a-payment-connector"></a>支払コネクタの実装
 次のこのセクションでは、新しい支払コネクタを実装する方法について説明します。 ここに示す例は、Retailソフトウェアの開発キット (SDK) の **SampleExtensions\HardwareStation\Extension.PaymentSample** フォルダーにある **PaymentDeviceSample** クラスにあります。
@@ -619,7 +619,7 @@ public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, Extens
 ### <a name="configure-the-payment-connector-on-the-pos-hardware-profile-page-in-the-client"></a>クライアントの POS ハードウェア プロファイル ページで支払コネクタをコンフィギュレーションする
 POS にロードする正しい支払コネクタを決定するには、次の図に示すように、クライアントの **POS ハードウェア プロファイル** ページの **PIN パッド** クイック タブで、**デバイス名** フィールドの **PaymentTerminalDevice** プロパティの値を設定する必要があります。
 
-![クライアントの POS ハードウェア プロファイル ページで支払コネクタをコンフィギュレーションする](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
+![クライアントの POS ハードウェア プロファイル ページでの支払コネクタのコンフィギュレーション。](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
 
 ## <a name="write-a-payment-processor"></a>支払プロセッサの記述
 通常は、支払ゲートウェイへの直接接続が確立された場合にのみ、支払プロセスが使用されます。 このシナリオは、カードが存在しない販売取引またはより複雑なカードが存在するシナリオで最も頻繁に発生します。 また、支払プロセッサは、クライアントの **POS ハードウェア プロファイル** ページを使用してコンフィギュレーションされている商社プロパティを処理するために使用されます。
@@ -633,12 +633,12 @@ POS にロードする正しい支払コネクタを決定するには、次の�
 #### <a name="set-merchant-properties-on-the-pos-hardware-profile-page-in-the-client"></a>クライアントの POS ハードウェア プロファイル ページで商社プロパティを設定
 次の図は、クライアントの **POS ハードウェア プロファイル** ページで商社プロパティを設定する方法を示しています。 マーチャントプロパティを設定するには、**IPaymentProcessor** ライブラリで定義されている **Microsoft.Dynamics.Retail.PaymentSDK** インターフェイスを実装する必要があります。 **GetMerchantAccountPropertyMetadata** と **ValidateMerchantAccount** の 2 つのインターフェイス メソッドが必要です。
 
-![クライアントの POS ハードウェア プロファイル ページで商社プロパティを設定する](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
+![クライアントの POS ハードウェア プロファイル ページで商社プロパティを設定する。](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
 
 #### <a name="set-merchant-properties-on-payment-connector-during-pos-sales-transaction"></a>POS 販売トランザクションの間に支払コネクタで商社プロパティを設定
 次の図は、**BeginTransactionPaymentTerminalDeviceRequest** 要求の間に Commerce Scale Unit を介してデータベースから商社プロパティを取得して支払コネクタに渡す仕組みを示しています。
 
-![POS 支払フロー時に支払コネクタに商社プロパティを設定](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
+![POS 支払フロー時に支払コネクタに商社プロパティを設定する。](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
 
 ### <a name="implement-the-ipaymentprocessor-interface"></a>IPaymentProcessor インターフェイスの実装
 支払フローに関連するマーチャント プロパティを処理するには、**Microsoft.Dynamics.Retail.PaymentSDK** ライブラリで定義されている **IPaymentProcessor** インターフェイスを実装する必要があります。 次の例は、2 つの必須インターフェイス メソッド、**GetMerchantAccountPropertyMetadata** と **ValidateMerchantAccount** を実装する方法を示しています。. 他のインターフェイス メソッドは、空白にできます (たとえば、**FeatureNotSupportedException** を返すことができます)。

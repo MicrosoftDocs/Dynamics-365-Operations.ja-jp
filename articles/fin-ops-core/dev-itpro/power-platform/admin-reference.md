@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 41d21d291040a4b72a7eadbbcb1b0d9cbe73b8cc
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: ba77abfecb6c5143e0ea8ff02af12969ba1989ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189806"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357490"
 ---
 # <a name="finance-and-operations-and-dataverse-admin-reference"></a>Finance and Operations および Dataverse 管理リファレンス
 
@@ -134,13 +134,13 @@ Finance and Operations には多数の OData 対応エンティティが含ま�
 
 2. [利用可能な Finance and Operations エンティティ] を探して、**結果** を選択します。
 
-![カタログ](../media/fovecatalog.png)
+![カタログ。](../media/fovecatalog.png)
 
 3. 有効にするエンティティを検索して開きます。
 
 4. **表示** を **はい** に設定して保存します。 これにより、仮想エンティティが生成され、[高度な検索] ダイアログ ボックスなどの適切なすべてのメニューに表示されるようになります。
 
-![VE の有効化](../media/foveenable.png)
+![VE を有効にします。](../media/foveenable.png)
 
 ## <a name="refreshing-virtual-entity-metadata"></a>仮想エンティティ メタデータの更新
 
@@ -160,7 +160,7 @@ Finance and Operations には多数の OData 対応エンティティが含ま�
 
 開発ツールから、フォームなどの既存の要素を仮想エンティティに対して変更することができます。 また、新しいフォーム、ビュー、およびその他の要素を追加することもできます。
 
-![ソリューション](../media/fovesolution.png)
+![ソリューション。](../media/fovesolution.png)
 
 ソリューションをエクスポートすると、MicrosoftOperationsERPVE ソリューションで生成された仮想エンティティへのハード依存関係が含められます。
 

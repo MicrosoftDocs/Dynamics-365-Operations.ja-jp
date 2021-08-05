@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01bae17883fa103195a8ffacbd050e431aac09b8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1030328961b3337b8abb008560a113a0a5ed81f4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753978"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358577"
 ---
 # <a name="super-types-and-sub-types"></a>スーパー タイプおよびサブ タイプ
 
@@ -33,13 +33,13 @@ ms.locfileid: "5753978"
 
 - **データ ソースとしてのリーフ/具象型:** 具象型をデータソースとして使用すると、基本型と現在の型の両方のフィールドが表示されます。 たとえば、次のスクリーン ショットでは、DirPerson がデータ ソースである場合、DirPerson および DirPartytable の両方からのデータ ソース フィールドを表示します。
 
-    [![sub1](./media/sub1.png)](./media/sub1.png)
+    [![sub1.](./media/sub1.png)](./media/sub1.png)
 
-    [![sub2](./media/sub2-419x1024.png)](./media/sub2.png)
+    [![sub2.](./media/sub2-419x1024.png)](./media/sub2.png)
 
 - **データ ソースとしての抽象タイプ/非リーフ:** 非リーフ タイプをデータ ソースとして使用する場合、基準タイプと現在のタイプの両方にフィールドが表示されますが、派生型のフィールドは表示されません。 次のスクリーン ショットに示すように、派生型からのフィールドは派生データ ソースから追加される必要があります。
 
-    [![sub3](./media/sub3.png)](./media/sub3.png)
+    [![sub3.](./media/sub3.png)](./media/sub3.png)
 
 ## <a name="data-entity-view-wizard"></a>データ エンティティの表示ウィザード
 **データ エンティティ ビュー** ウィザードを使用すると、継承に含まれるテーブルがプライマリ データ ソース (および追加データ ソース) である場所で、データ エンティティを作成することができます。
@@ -49,15 +49,15 @@ ms.locfileid: "5753978"
 
 次のスクリーン ショットは、DirPartyTable がプライマリ データ ソースである、ウィザードを使用して作成されたデータ エンティティを示しています。
 
-[![sub4](./media/sub4.png)](./media/sub4.png)
+[![sub4.](./media/sub4.png)](./media/sub4.png)
 
 1. データ ソース テーブルを **DirPartyTabl** に更新します。
 
-    [![sub5](./media/sub5.png)](./media/sub5.png)
+    [![sub5.](./media/sub5.png)](./media/sub5.png)
 
 2. データ ソース テーブルを **DirPartyTable** に更新します。
 
-    [![sub6](./media/sub6.png)](./media/sub6.png)
+    [![sub6.](./media/sub6.png)](./media/sub6.png)
 
 ## <a name="run-time"></a>実行時間
 継承に関連するエンティティの実行時動作があります。
@@ -66,9 +66,9 @@ ms.locfileid: "5753978"
 
 この例では、個別の **個人** および **組織** エンティティを作成します。 **担当者** エンティティのプライマリ データ ソースは DirPerson で、**組織** エンティティのプライマリ データ ソースは DirOrganization です。 この方法は、次のスクリーン ショットに反映されていますが、特別なランタイム コードを記述する必要はありません。
 
-[![sub7](./media/sub7.png)](./media/sub7.png)
+[![sub7.](./media/sub7.png)](./media/sub7.png)
 
-[![sub8](./media/sub8-419x1024.png)](./media/sub8.png)
+[![sub8.](./media/sub8-419x1024.png)](./media/sub8.png)
 
 ### <a name="creating-entities-for-generalized-types"></a>一般化されたタイプのエンティティを作成しています
 
@@ -78,15 +78,15 @@ ms.locfileid: "5753978"
 - **個人の固有の属性** – **性別**、**配偶者の有無** など。 これらのフィールドは、派生データ ソース DirPartyTable\_DirPerson にマップされます。
 - **組織に固有の属性** – **OrgNumber**、**ABC** などです。 これらのフィールドは、派生データ ソース DirPartyTable\_DirOrganization にマップされます。
 
-[![sub9](./media/sub9.png)](./media/sub9.png)
+[![sub9.](./media/sub9.png)](./media/sub9.png)
 
 デザイン時のタスクとして、ひとつのデータエンティティで基本型と複数の派生型のフィールドをマッピングします。 ただし、実行時に、各派生型が作成されるときを指定する必要があります。 これは、**InstanceRelationType** などのフィールドに基づいても、異なるタイプを表す **String** を使用するように計算カラムを作成もできます。 **関係者** エンティティの例で、**PartyType** 計算列を作成して **個人** および **組織** の派生型を表すことができます。 次のコード スニペットは、このアプローチを示しています。
 
-[![sub10](./media/sub10.png)](./media/sub10.png)
+[![sub10.](./media/sub10.png)](./media/sub10.png)
 
 この例では、**関係者** タイプは DirPartyTable の **InstanceRelationType** 列を使用して計算されます。 この方法は、データを読み取るために機能します。 ただし、**作成** または **更新** 操作を行うには、タイプに基づいて、データ エンティティの **initializeEntityDataSource** メソッドを上書きするコードを記述する必要があり、およびデータ ソースの実行時コンテキスト バッファに対する派生型の正しいインスタンスを設定する必要があります。
 
-[![sub11](./media/sub11.png)](./media/sub11.png)
+[![sub11.](./media/sub11.png)](./media/sub11.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

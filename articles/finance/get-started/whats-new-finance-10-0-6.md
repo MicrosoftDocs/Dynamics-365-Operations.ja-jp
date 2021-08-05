@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d3c0e0f7089a82aa9e8f7cad45af1a7b3c6c7cc1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e412d9630c21963c2ba6c246aa0b0b6afb19ec12
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893858"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356640"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-1006-november-2019"></a>Dynamics 365 Finance 10.0.6 (2019 年 11 月) の新機能および変更された機能
 
@@ -63,21 +63,21 @@ ms.locfileid: "5893858"
 ## <a name="revenue-pricing"></a>収益価格設定
 ユーザーは、顧客に請求するのとは異なって認識される価格を入力することができます。
 
-[![収益価格設定のスクリーンショット](../accounts-receivable/media/rev-rec-whats-new-1-revenue-pricing.png)](../accounts-receivable/media/rev-rec-whats-new-1-revenue-pricing.png)
+[![収益価格設定のスクリーンショット。](../accounts-receivable/media/rev-rec-whats-new-1-revenue-pricing.png)](../accounts-receivable/media/rev-rec-whats-new-1-revenue-pricing.png)
 
 ## <a name="revenue-schedules"></a>収益スケジュール
 収益スケジュールによって、収益遅延の月数が決まります。 その月の実際の日付に基づいて、月に均等配分、または発生した回数に基づいてスケジュールを作成するオプションがあります。
 
-[![収益スケジュールのスクリーンショット](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)
+[![収益スケジュールのスクリーンショット。](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)
 
 ## <a name="multiple-sales-order-reallocation"></a>複数の販売注文の再配賦
 
-[![複数の販売注文の再配賦のスクリーンショット](../accounts-receivable/media/rev-rec-whats-new-3-multiple-sales-order-reallocation.png)](../accounts-receivable/media/rev-rec-whats-new-3-multiple-sales-order-reallocation.png)
+[![複数の販売注文の再配賦のスクリーンショット。](../accounts-receivable/media/rev-rec-whats-new-3-multiple-sales-order-reallocation.png)](../accounts-receivable/media/rev-rec-whats-new-3-multiple-sales-order-reallocation.png)
 
 ## <a name="workspace"></a>ワークスペース 
 新しいワークスペースは、繰延収益に対して作成された収益スケジュール レコードのステータスを確認するために使用されます。
 
-[![収益認識ワークスペースのスクリーンショット](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)
+[![収益認識ワークスペースのスクリーンショット。](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)
 
 ## <a name="project-contract-committed-detail"></a>プロジェクト契約の確定済詳細
 プロジェクト契約の資金調達ソースで確定された金額の詳細にドリルダウンして、確定された金額を構成する活動をユーザーが簡単に確認できるようになりました。

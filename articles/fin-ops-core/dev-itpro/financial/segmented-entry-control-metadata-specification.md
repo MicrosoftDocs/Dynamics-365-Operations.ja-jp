@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3426b1d37ff2b873642c2eddb0d880609b41469
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: b2916ba5828abeaeef8676aaa7f26a988ff37dc2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111590"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359745"
 ---
 # <a name="design-time-metadata-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのためのデザイン時メタデータ
 
@@ -29,7 +29,7 @@ ms.locfileid: "6111590"
 
 セグメント化エントリ コントロールのカスタム プロパティは、コントローラー グループの下にあります。 次に例を示します。
 
-[![SEC プロパティ シート例](./media/10.jpg)](./media/10.jpg)
+[![SEC プロパティ シート例。](./media/10.jpg)](./media/10.jpg)
 
 一部のプロパティは、選択されたコントローラ クラスに基づいて編集できない場合があります。 これは、特定のプロパティのみがさまざまなコントローラー クラスのそれぞれに関連するためです。  詳細については、[有効なプロパティ](#valid-properties) を参照してください。
 

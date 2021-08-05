@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 21311
+ms.custom:
+- "21311"
+- intro-internal
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96c57fd1f1a72aa679b5312cbe4780cf3cd5ae5a
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 243867e1b1f9a7c7519c873147f9ab9383c337ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941009"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344860"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -63,11 +65,11 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 次の図は、認証コードの付与フローに対して認証を設定する方法について説明します。
 
-![認証コードの付与フロー](./media/services-authentication.png)
+![認証コードの付与フロー。](./media/services-authentication.png)
 
 以下の図では、クライアントの資格情報 (共有秘密または証明書) を使用したサービス間の呼び出し承認の仕組みを説明します。
 
-![クライアントの資格情報を使用したサービス間呼び出し](./media/S2SAuth.jpg)
+![クライアントの資格情報を使用したサービス間呼び出し。](./media/S2SAuth.jpg)
 
 ### <a name="register-a-web-application-with-aad"></a>AAD に Web アプリケーションを登録する
 

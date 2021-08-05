@@ -2,7 +2,7 @@
 title: Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 description: このトピックでは、クラウドでホストされているコマース チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
 author: AamirAllaq
-ms.date: 07/28/2020
+ms.date: 07/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 31440c7f1b71637b645ee37de4c51fe11389c3f1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6b2d694bbc39e61f7a4ba993457973846418272b
+ms.sourcegitcommit: 7c7edd4aea2dc418a8a7ffe42fcb2183eb086853
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748253"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "6635893"
 ---
 # <a name="apply-updates-and-extensions-to-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 
@@ -61,6 +61,9 @@ CSU を更新するには、それぞれについて、次の手順を実行し�
 ## <a name="view-history"></a>履歴の表示
 最新の操作履歴をスケールユニットで表示するには、**アクション** タブの **履歴** を選択し、**スケール ユニットの履歴** ページを開きます。 このページでは、初期化、サービス更新、品質更新、バージョン、拡張機能の詳細、その他の関連情報など、最近の操作を表示できます。
 
+## <a name="restart-commerce-scale-unit"></a>Commerce Scale Unit を再起動する
+トラブルシューティングの際に、Commerce Scale Unit はサービスのセルフサービス再起動を許可します。 Commerce Scale Unit の再起動は、サービスの信頼性やパフォーマンスに関する問題を解決するのに役立ちます。 Commerce Scale Unit を再起動するには、Scale Unit を選択し、**再起動** を選択します。 ダイアログ ボックスが表示されます。 **再起動** を選択すると、サービスが再開されます。 Commerce Scale Unit を再起動すると、再起動する前にすべての有効な接続が閉じられます。 **強制再起動** オプションを選択して、直ちに再起動することもできます。 これにより、直ちにすべての有効な接続が閉じられ、再起動が開始されます。
+
 ## <a name="csu-auto-update-sequence"></a>CSU の自動更新順序
 
 > [!NOTE]
@@ -68,7 +71,7 @@ CSU を更新するには、それぞれについて、次の手順を実行し�
 
 CSU は、Microsoft によって自動更新された後、次の順序で実行されます。
 
-![CSU の自動更新順序](./media/CSU-auto-update-timeline.png)
+![CSU の自動更新順序。](./media/CSU-auto-update-timeline.png)
 
 
 

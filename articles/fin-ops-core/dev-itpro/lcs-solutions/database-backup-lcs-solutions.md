@@ -12,12 +12,12 @@ ms.custom: 196833
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: b7edc94ea71c2a72a064c100db2590b23df20f8e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d83a9824515bb3d5cb7cd0a00a579c4fe2b30956
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750354"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360272"
 ---
 # <a name="back-up-the-databases-for-finance-and-operations-apps"></a>Finance and Operations アプリのデータベースのバックアップ
 
@@ -29,13 +29,13 @@ Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケー�
 
 Microsoft SQL Server Management Studio で、データベースのバックアップを圧縮するには、**データベースのバックアップ** ページの **バックアップ圧縮を設定** フィールドで、**バックアップの圧縮** を選択します。
 
-[![セット バックアップ圧縮フィールドで選択されたバックアップを圧縮](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
+[![セット バックアップ圧縮フィールドで選択されたバックアップを圧縮。](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
 
 デモまたは開発環境では、データベースは通常 AXDBRain と呼ばれます。 データベースのバックアップは、15 ギガバイト (GB) 未満にする必要があります。 データベースが大きい場合、Lifecycle Services (LCS) のアセットライブラリにデータベースをアップロードする際に、タイムアウトエラーが発生することがあります。 
   
 SQL Server Management Studio で、データベースのバックアップを圧縮するには、 **データベースのバックアップ** ページの **バックアップ圧縮を設定する** フィールドで、 **バックアップを圧縮する** を選択します。 
 
-[![databasebackup01](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
+[![databasebackup01。](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
 
 ## <a name="additional-resources"></a>追加リソース
 

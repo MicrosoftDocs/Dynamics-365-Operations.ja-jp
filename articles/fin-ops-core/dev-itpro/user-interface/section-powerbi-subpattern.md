@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daedefc3491b18bde9a3838a09ce4bfed59b8710
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: ce2350ba17000f4a8ac92b71ff897f1ab1cf3ae6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189294"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350104"
 ---
 # <a name="section-power-bi-subpattern"></a>セクション Power BI のサブパターン
 
@@ -32,7 +32,7 @@ ms.locfileid: "6189294"
 セクション PowerBI サブパターンは、PowerBI コントロールを含むパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![Section PowerBI のワイヤーフレーム](./media/sectionpowerbiwireframe.png)](./media/sectionpowerbiwireframe.png)
+[![セクション PowerBI のワイヤーフレーム。](./media/sectionpowerbiwireframe.png)](./media/sectionpowerbiwireframe.png)
 
 ## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。

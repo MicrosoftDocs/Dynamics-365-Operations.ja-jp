@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c70e35cd1175943dc40c0aea87b0c9e0abcbccfd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b0e050242d7fccea4d321e6007eebcefbfddabbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753856"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345648"
 ---
 # <a name="configure-the-azure-devops-mapping-during-code-migration"></a>コード移行中の Azure DevOps マッピングのコンフィギュレーション
 
@@ -36,7 +36,7 @@ LCS コードのアップグレード サービスでは、Azure DevOps にア�
 ## <a name="key-concepts"></a>重要な概念
 - **Export** は、Microsoft Dynamics AX 2012 からのエクスポート後、XML ファイルを含んでいるプロジェクトです。 このプロジェクトは、アップグレード前の XML 形式のメタデータです。 このプロジェクトは、Dynamics AX 2012 からアップグレードする場合にのみ関係があります。
 - **メタデータ** は、アップグレード済のコードです (メタデータ XML ファイル)。
-- **プロジェクト** は、アップグレード中に使用できる 2 つのソリューションです。 1 つのソリューションである CodeMergeSolution は、競合し、また解決する必要がある要素を伴うプロジェクトを含むソリューションです。 もう 1 つのソリューション、UpgradedSolution には、アップグレードされたモデルごとに 1 つのプロジェクトのコレクションが含まれています。 たとえば、Azure DevOps で、以下の構造のようなものを表示します。 [![プロジェクト](./media/filestructure_configuringyourvsosolution.png)](./media/filestructure_configuringyourvsosolution.png)
+- **プロジェクト** は、アップグレード中に使用できる 2 つのソリューションです。 1 つのソリューションである CodeMergeSolution は、競合し、また解決する必要がある要素を伴うプロジェクトを含むソリューションです。 もう 1 つのソリューション、UpgradedSolution には、アップグレードされたモデルごとに 1 つのプロジェクトのコレクションが含まれています。 たとえば、Azure DevOps で、以下の構造のようなものを表示します。 [![プロジェクト。](./media/filestructure_configuringyourvsosolution.png)](./media/filestructure_configuringyourvsosolution.png)
 
 ## <a name="map-azure-devops-to-your-development-box"></a>Azure DevOps の開発ボックスへのマップ
 1.  Visual Studio で、**チーム エクスプローラー &gt; チーム プロジェクトの選択 &gt; サーバー &gt; 追加** と進んでアカウントに接続します。
@@ -53,9 +53,9 @@ LCS コードのアップグレード サービスでは、Azure DevOps にア�
             -   Dynamics AX 2012 R3 またはそれ以前のバージョンから移行する場合は、**メイン** 分岐の下のメタデータ フォルダにマッピングします。
             -   2 つの製品バージョン間で移行する場合は、**リリース** の分岐の下のメタデータ フォルダーにマッピングします。
 
-[![vstsmapping](./media/vstsmapping.png)](./media/vstsmapping.png) 
+[![vstsmapping。](./media/vstsmapping.png)](./media/vstsmapping.png) 
 
-これらのフォルダーをマップした後、ローカル ボックスにコードを同期させることができます。 **メタデータ** を右クリックし、**最新バージョンを取得** を選択します。 同様に、プロジェクト フォルダーを同期します。 メタデータ フォルダーを同期した後、**Finance and Operations** &gt; **モデル管理** &gt; **モデルの更新** から Visual Studio でモデルを更新します。 [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) これで、プロジェクトを立ち上げ、競合を解決し、コードの移行を構築、テスト、および実行する準備が整いました。
+これらのフォルダーをマップした後、ローカル ボックスにコードを同期させることができます。 **メタデータ** を右クリックし、**最新バージョンを取得** を選択します。 同様に、プロジェクト フォルダーを同期します。 メタデータ フォルダーを同期した後、**Finance and Operations** &gt; **モデル管理** &gt; **モデルの更新** から Visual Studio でモデルを更新します。 [![VSRefreshModels。](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) これで、プロジェクトの立ち上げ、競合の解決、コードの移行の構築、テスト、および実行を行う準備が整いました。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

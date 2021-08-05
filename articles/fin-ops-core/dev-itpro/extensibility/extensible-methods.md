@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 7541a773526ae9262655fa9e21c6df886bd90783
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 932c3989dcc6d396efa0f13b42d6bb6cfc88348e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866041"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349148"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 
@@ -72,11 +72,11 @@ ms.locfileid: "5866041"
 
     **while ループ内でのリファクタリング ロジック**
 
-    ![while ブロックのリファクタリング (以前)](media/ExtensibleMethods1.png)
+    ![while ブロックのリファクタリング (リファクタリング前)。](media/ExtensibleMethods1.png)
 
     **リファクタリング後の拡張可能メソッド**
 
-    ![while ブロックのリファクタリング (以後)](media/ExtensibleMethods2.png)
+    ![while ブロックのリファクタリング (リファクタリング後)。](media/ExtensibleMethods2.png)
 
 + **If..else ステートメント**
 
@@ -98,11 +98,11 @@ ms.locfileid: "5866041"
 
     **条件が保護されているメソッドにリファクタリングされる場合**
 
-    ![スロー (前)](media/ExtensibleMethods3.png)
+    ![スロー (スロー前)。](media/ExtensibleMethods3.png)
 
     **リファクタリング後の拡張可能メソッド**
 
-    ![スロー (後)](media/ExtensibleMethods4.png)
+    ![スロー (スロー後)。](media/ExtensibleMethods4.png)
 
 + **作成、読み取り、更新、および削除 (CRUD) ステートメント**
 

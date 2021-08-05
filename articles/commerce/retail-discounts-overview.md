@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.custom: 16181
+ms.custom:
+- "16181"
+- intro-internal
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 9dfef70f3a30b1d4f25d62aaf5a6825f771e991b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7f7c4b38deadcba1b23d1ba10db3812ec9162fd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792013"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345070"
 ---
 # <a name="retail-discounts"></a>小売割引
 
@@ -50,7 +52,7 @@ ms.locfileid: "5792013"
 
 割引を管理するときは、各割引オプションを個別に理解することが重要ですが、どのオプションが互いにどのような影響を与えるかを理解しておくことも同じように重要です。 割引の一般的な設定は、2 つのカテゴリに分類されます。 最初の分類は、考慮すべき割引をフィルター処理する設定です。 例としては、**ステータス**、**通貨**、および **測定単位** です。 2 番目のカテゴリの設定は、複数の割引が考慮されて適用される順序を制御します。 例としては、**割引同時実行モード** および **価格決定の優先順位** があります。 次の図は、割引の各種プロパティを示しています。
 
-![割引プロパティ](./media/discount-properties.png "割引プロパティ")
+![割引プロパティ。](./media/discount-properties.png "割引プロパティ")
 
 ### <a name="discount-id"></a>割引 ID
 

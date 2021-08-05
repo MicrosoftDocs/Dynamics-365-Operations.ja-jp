@@ -3,21 +3,16 @@ title: FieldDesign タイプ
 description: フィールド コントロール用のデザイン オブジェクト インターフェイス。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3eb79f19df1473fd096d354f54571fe7d74eefbc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 30367b78c416349ddc5c06800a56c2451caead19
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746031"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661422"
 ---
 # <a name="fielddesign-type"></a>FieldDesign タイプ
 
@@ -97,7 +92,7 @@ color: string (optional)
 この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。<br>
 注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。<br>
 使用可能な色は次のとおりです。 <br>
-![使用可能な色の画像](../../../media/colors.PNG)
+![使用可能な色の画像。](../../../media/colors.PNG)
 
 > [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color) から継承
 

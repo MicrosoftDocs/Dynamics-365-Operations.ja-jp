@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b38d6ec657dec37737cc345cb9ea872fd78791fc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b56bc3fc26f0c5fefc5a04e77b28acae718057fe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018594"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344970"
 ---
 # <a name="external-and-inline-script-modules"></a>外部およびインライン スクリプト モジュール
 
@@ -31,7 +31,7 @@ ms.locfileid: "6018594"
 
 次の図は、外部およびインライン スクリプト モジュールが、テンプレートでサポートされているさまざまなスロットに追加された例を示しています。
 
-![テンプレートのさまざまなスロットのスクリプト モジュール](media/script-modules-1.png)
+![テンプレートのさまざまなスロットのスクリプト モジュール。](media/script-modules-1.png)
 
 ## <a name="external-script-module-properties"></a>外部スクリプト モジュールのプロパティ
 
@@ -59,15 +59,15 @@ ms.locfileid: "6018594"
 1. テンプレートを選択し、**編集** を選択します。
 1. **本文の開始** スロットで、省略記号ボタン (**...**) を選択し、**モジュールの追加** を選択します。
 
-    ![新しいモジュールの追加](media/script-modules-2.png)
+    ![新しいモジュールの追加。](media/script-modules-2.png)
 
 1. **モジュールの追加** ダイアログ ボックスで、**外部スクリプト** モジュールまたは **インライン スクリプト** モジュールを選択し、**OK** を選択します。
 
-    ![スクリプト モジュールの追加](media/script-modules-3.png)
+    ![スクリプト モジュールの追加。](media/script-modules-3.png)
 
 スクリプト モジュールを追加した後、次の図の例のようになります。 これでモジュールが構成され、テンプレートを保存および公開できます。
 
-![追加された内部スクリプト モジュール](media/script-modules-4.png)
+![追加された内部スクリプト モジュール。](media/script-modules-4.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

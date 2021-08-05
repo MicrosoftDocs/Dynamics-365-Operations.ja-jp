@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 435cf2c9c1323fe70954813f0c0f1f212d9abe3a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fb0147fd0969c01d1400d1c85eb9099037676a54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752660"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354365"
 ---
 # <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
 
@@ -59,20 +59,20 @@ ms.locfileid: "5752660"
 ## <a name="example"></a>例 
 新しいワークスペースに使用される次のイメージ/アイコンを検討します。 
 
-[![新しいワークスペースに使用されるアイコン](./media/newlogo3.png)](./media/newlogo3.png) 
+[![新しいワークスペースに使用されるアイコン。](./media/newlogo3.png)](./media/newlogo3.png) 
 
 
 このアイコンは、 **白い背景と透明性のあるコンテンツを持つ** 画像に変換され、アイコンは以下の図のように大きなイメージキャンバスの中央に配置されます。  
 
-![新しいガイダンスに従った ワークスペース アイコン](./media/baseIcon_img_PU29.png) 
+![新しいガイダンスに従った ワークスペース アイコンです。](./media/baseIcon_img_PU29.png) 
 
 これが推奨サイズ設定とどのように関連しているかを理解するには、以下の新しい推奨サイズ設定を合成したワークスペース アイコンを参照してください。   
 
-![新しい推奨サイズ設定のワークスペース アイコン](./media/baseIcon_Guides_PU29.png) 
+![新しい推奨サイズ設定のワークスペース アイコンです。](./media/baseIcon_Guides_PU29.png) 
 
 この画像をワークスペース タイルで使用すると、ダッシュ ボードには次の結果が得られます。 
 
-[![ワークスペース タイルで画像を使用するときのダッシュボードでの結果](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
+[![ワークスペース タイルで画像を使用するときのダッシュボードでの結果。](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
 
 
 

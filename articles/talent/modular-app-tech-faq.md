@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.openlocfilehash: 229cd09656b527f881055ea2c7a37a716fdcc681
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 8a50292c58d004fb3dcb676532b80fc31479c5ad
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058140"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353878"
 ---
 #  <a name="provision-onboard"></a>オンボード プロビジョニング
 
@@ -38,7 +38,7 @@ Onboard アプリは、対応する国または地域でのみで提供してい
 
 以下の図では、スタンドアロンの Onboard アプリを提供するにあたって使用されているロジックを示しています。
 
-[![国/地域にもとづいた、スタンドアロン Onboardアプリの プロビジョニングプロセス](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
+[![国/地域に基づいた、スタンドアロン Onboard アプリのプロビジョニング プロセス。](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
 完全版の Talent とは異なり、スタンドアロンの Onboard アプリ では、各ユーザーがアクセス可能となる環境の一覧を管理していません。 ユーザーは、最後に使用した環境に自動的にサインインします。 **設定** ボタン (ギヤ記号) を使用して、さまざまな環境を選択できます。
 

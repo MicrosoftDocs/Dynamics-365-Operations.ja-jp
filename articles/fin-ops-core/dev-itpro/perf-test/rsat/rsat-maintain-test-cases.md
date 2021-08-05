@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ccfd1e3e55c70fc70af8cc595ef48008600a1c2a
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 7bf2c8c522dc0cfcc1fe993726b6babe7102c0c5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936042"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357538"
 ---
 # <a name="maintain-test-cases-in-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) でのテスト ケースの管理
 
@@ -34,15 +34,15 @@ Regression suite automation tool (RSAT) のバージョン 2.2 以降を使用�
 
 1. **テスト ケース** グリッドで、関連するテスト ケースを検索し、省略記号ボタン (**...**) が **タイトル** 列と **パラメーター ファイル** 列の間で表示されるまで行をポイントします。
 
-    ![テスト ケース グリッドの省略記号ボタン](media/test-case-details.PNG)
+    ![テスト ケース グリッドの省略記号ボタン。](media/test-case-details.PNG)
 
 2. 省略記号ボタンを選択します。 表示されるメニューには、**テスト ケースを開く** および **テストケースを削除する** という 2 つのコマンドがあります。
 
-    ![省略記号ボタン メニューのコマンド](media/test-case-details-context.PNG)
+    ![省略記号ボタン メニューのコマンド。](media/test-case-details-context.PNG)
 
 3. **テスト ケースを開く** を選択すると、**テスト ケース情報** ダイアログ ボックスが開きます。
 
-    ![テスト ケース情報ダイアログ ボックス](media/test-case-information.PNG)
+    ![テスト ケース情報ダイアログ ボックス。](media/test-case-information.PNG)
 
 **テスト ケース情報** ダイアログ ボックスに、テスト ケースに関する以下の情報が表示されます。
 
@@ -56,12 +56,12 @@ Regression suite automation tool (RSAT) のバージョン 2.2 以降を使用�
 
 1. (この例では、**仕入から支払 – v2**) に新しいテスト ケースを追加するテスト スイートを選択します。 その後 **テスト ケース** を選択して開くと、**テスト ケース情報** ダイアログ ボックスが開きます。
 
-    ![新しいテスト ケース ボタン](media/test-case-add.PNG)
+    ![新しいテスト ケース ボタン。](media/test-case-add.PNG)
 
 2. テスト ケースの名前を入力し、添付ファイルを追加します。 これらのファイルには、テスト ケースの手順を含む記録 XML ファイルが含まれます。 添付ファイルを追加するには、**追加** を選択し、ダイアログ ボックスでそのファイルが表示され、そのファイルを選択して添付ファイルとして追加します。
 3. 完了したら、**保存** を選択して新しいテスト ケースを保存するか、または **キャンセル** を選択してそれを破棄します。
 
-    ![追加ボタンと保存ボタン](media/add-test-case.PNG)
+    ![追加ボタンと保存ボタン。](media/add-test-case.PNG)
 
 新しいテスト ケースを保存する場合、選択した添付ファイルが、RSAT によってローカルの RSAT 作業ディレクトリにコピーされます。 コピーは、テスト ケースで使用できるような方法で保持されます。
 
@@ -81,7 +81,7 @@ Regression suite automation tool (RSAT) のバージョン 2.2 以降を使用�
 
 - **テスト ケース情報** ダイアログ ボックスで、添付ファイル用の行を選択したまま (または右クリック) にして、**削除** を選択します。
 
-    ![削除ボタン](media/remove-attachment.PNG)
+    ![削除ボタン。](media/remove-attachment.PNG)
 
 記録 XML ファイルを編集し、新しいバージョンをテスト ケースにアップロードする場合も、この手順を使用できます。 この場合、まず既存のファイルを削除してから、新しいファイルを追加する必要があります。
 
@@ -92,7 +92,7 @@ Regression suite automation tool (RSAT) のバージョン 2.2 以降を使用�
 1. **テスト ケース** グリッドで、関連するテスト ケースを検索し、省略記号ボタン (**...**) が **タイトル** 列と **パラメーター ファイル** 列の間で表示されるまで行をポイントします。
 2. 省略記号ボタンを選択し、メニューの **テスト ケースの削除** を選択します。
 
-    ![テスト ケースの削除のコマンド](media/delete-test-case.PNG)
+    ![テスト ケースの削除のコマンド。](media/delete-test-case.PNG)
 
 3. テスト ケースを削除することを確認し、必要に応じて削除の理由を指定します。
 

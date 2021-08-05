@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 46cb08ba53b64a0a4a2e9eef18d991f4896fa280
-ms.sourcegitcommit: 4fc5c8b278b2b492eea5a0bb136019d4c1eaceef
+ms.openlocfilehash: f815f05b14f9287c801f8a6b6abaffb9cf703f4d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "6191366"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357502"
 ---
 # <a name="single-user-testing-using-performance-sdk-and-task-recorder"></a>パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 
@@ -61,7 +61,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
 4. **PerfSDK** フォルダ配下に、 **Common\\External\\Selenium** というフォルダを作成します。
 
-    [![新規PerfSDKフォルダ](./media/single-user-test-03.png)](./media/single-user-test-03.png)
+    [![新しい PerfSDK フォルダー。](./media/single-user-test-03.png)](./media/single-user-test-03.png)
 
 5. 次のファイルをコピーして、上記の手順で作成したフォルダー **Common\\External\\Selenium** に保存します。
 
@@ -76,11 +76,11 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 1. 開発環境では、Microsoft Visual Studio を管理者権限で開きます。
 2. **PerfSDK** フォルダから、 **PerfSDKSample** ソリューションを開きます。 Tier1 サンドボックス、またはクラウドホスト環境では、PerfSDKフォルダは一般的に \<Service volumne\>:\\PerfSDK\\PerfSDKLocalDirectory にあります。
 
-    [![PerfSDKディレクトリ](./media/single-user-test-05.png)](./media/single-user-test-05.png)
+    [![PerfSDK ディレクトリ。](./media/single-user-test-05.png)](./media/single-user-test-05.png)
 
 3. Common\\External\\Selenium フォルダー内の WebDriver.dll への参照を追加します。
 
-    [![PerfSDKSample 参照](./media/single-user-test-06.png)](./media/single-user-test-06.png)
+    [![PerfSDKSample 参照。](./media/single-user-test-06.png)](./media/single-user-test-06.png)
 
 4. **Dynamics 365** メニューにて **アドイン** を指定し、 **記録から C\# パフォーマンステストを作成** を選択します。
 5. **タスクの記録をインポートする** ダイアログ ボックスで、以下の必要な詳細を入力します:
@@ -91,7 +91,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
     
 6. 完了後、 **インポート** を選択します。 PerfSDKSample プロジェクトの **生成された** フォルダ配下に新しいC\# クラスが作成されます。
 
-    [![生成されたフォルダ内の新しいC#クラス](./media/single-user-test-09.png)](./media/single-user-test-09.png)
+    [![生成されたフォルダ内の新しい C# クラス。](./media/single-user-test-09.png)](./media/single-user-test-09.png)
 
 7. ソリューションをビルドします。
 
@@ -104,7 +104,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
     - **AuthenticatorConfigurationCollection** 要素の配下にある **AuthenticatorConfiguration** の各要素を **AadAuthenticator** を **selfmintedtokenauthenticator** に置き換えます。
     - **AzureActiveDirectoryConfiguration** 要素と **KeyVaultConfigurations** 要素をコメント行にします。
 
-    [![更新およびコメント化されたコードのサンプル](./media/single-user-test-10.png)](./media/single-user-test-10.png)
+    [![更新およびコメントされたコードのサンプル。](./media/single-user-test-10.png)](./media/single-user-test-10.png)
 
 2. Visual Studioの **テスト** メニューにて、 **Windows** を指定し、 **テストエクスプローラー** を選択します。
 3. 実施したテストケースを右クリックし、 **選択したテストの実行** を選択します。

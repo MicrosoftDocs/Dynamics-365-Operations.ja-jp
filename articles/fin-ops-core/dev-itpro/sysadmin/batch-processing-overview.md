@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: 62333
+ms.custom:
+- "62333"
+- intro-internal
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10b741525dfc2b2e5f4fe19cd95876279424fd6a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b2f9cd870e229954ac4d8e203c1b0dab1937eab3
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746023"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336758"
 ---
 # <a name="batch-processing-overview"></a>バッチ処理の概要
 

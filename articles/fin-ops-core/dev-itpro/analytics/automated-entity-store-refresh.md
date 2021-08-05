@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30a4013b7a8fcbade9921ad183b1923cd5399645
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9d31ae5497ea087395282312020067bf958c0c72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754532"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354429"
 ---
 # <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
 
@@ -44,7 +44,7 @@ ms.locfileid: "5754532"
 
 新しいエクスペリエンスが表示されます。
 
-![新しい UI エクスペリエンス](./media/entity-store-data-lake-3.JPG)
+![新しい UI エクスペリエンス。](./media/entity-store-data-lake-3.JPG)
 
 新しいエクスペリエンスをオンにすると、それぞれの集計の測定で更新を定義できます。 次の更新オプションを選択できます。
 

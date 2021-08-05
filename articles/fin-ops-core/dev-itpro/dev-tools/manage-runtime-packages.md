@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c7ce2d04e2488635afbf5ed27988ff94267a03
-ms.sourcegitcommit: 5e7a918c9b7074916e350bf06518b89afaf2af18
+ms.openlocfilehash: 068d194e16c467a72629a0cd45ef91824ebe466c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "5873198"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345654"
 ---
 # <a name="manage-third-party-models-and-runtime-packages-by-using-source-control"></a>ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 
@@ -39,7 +39,7 @@ ms.locfileid: "5873198"
 3. **AOT** ルート ノードを右クリックし、、**モデル ビュー** をクリックします。
 4. モデルの一覧で、インストールした新しいモデルを検索します。 モデルを含むパッケージの名前をメモしておきます。 パッケージ名はモデル名の後にかっこ付きで表示されます。 たとえば、次の図では、**税帳簿**、**税エンジン コンフィギュレーション**、および **税エンジン インターフェイス** モデルはすべて **TaxEngine** という名前のパッケージに属します。
 
-    ![各モデルのパッケージ名](media/appexplorer_modelpackagename.png)
+    ![各モデルのパッケージ名。](media/appexplorer_modelpackagename.png)
 
 5. **表示** > **その他の Windows** > **ソース管理エクスプローラー** をクリックして、ソース管理エクスプローラーを開きます
 6. **MyProject/Trunk/Main/Metadata** など、この開発 VM にマップされているメタデータ フォルダーに移動します。

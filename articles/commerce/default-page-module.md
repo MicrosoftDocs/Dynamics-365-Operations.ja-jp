@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 18be8e54cd85c3443bd53c928280e623c517b374
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3abb76273bd83cd418f69bb5b34490909347f62f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020693"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349590"
 ---
 # <a name="default-page-module"></a>既定のページ モジュール
 
@@ -29,7 +29,7 @@ ms.locfileid: "6020693"
 
 既定のページ モジュールは、ページのルート コンテナーとなる特別なモジュールで、テンプレートの **本文** スロットにのみ追加できます。 既定のページ モジュールは、次の例に示すように、コマース サイト ビルダ ページ エディターに表示されるコア スロット (**ヘッダー スロット**、**サブ ヘッダー スロット**、**メイン スロット**、**サブフッター スロット**、および **フッター スロット**) を定義します。
 
-![ページ モジュール スロット](media/page-module-1.png)
+![ページ モジュール スロット。](media/page-module-1.png)
 
 コマース モジュール ライブラリは、既定のページ モジュールの 1 つのタイプのみを提供します。 ただし、 [コマース オンライン チャンネル機能拡張ソフトウェア開発キット (SDK)](e-commerce-extensibility/overview.md) を使用して、必要に応じて追加のカスタムの既定のページ モジュールを作成できます。
 
@@ -49,15 +49,15 @@ ms.locfileid: "6020693"
 1. テンプレートを選択し、**編集** を選択します。
 1. **本文** スロットで、省略記号 (**...**) を選択し、**モジュールの追加** を選択します。
 
-    ![新しいモジュールの追加](media/page-module-2.png)
+    ![新しいモジュールの追加。](media/page-module-2.png)
 
 1. **モジュールの追加** ダイアログ ボックスで、**規定のページ** モジュールを選択して、**OK** を選択します。
 
-    ![既定のページ モジュールの追加](media/page-module-3.png)
+    ![既定のページ モジュールを追加します。](media/page-module-3.png)
 
 既定のページ モジュールを追加した後、次の図の例のようになります。 これでモジュールが構成され、テンプレートを保存および公開できます。
 
-![既定のページ モジュールが追加された](media/page-module-4.png)
+![既定のページ モジュールが追加されました。](media/page-module-4.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cd4bcc2da0ab211283169fc4eb541f6dcc6a03d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8f5fc0b8800e5bd3c4a5daa64562dd68755afab4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753104"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347856"
 ---
 # <a name="features-available-through-the-power-bi-integration"></a>Power BI の統合によって使用できる機能
 
@@ -31,7 +31,7 @@ Microsoft Power BI は、データを分析して情報を共有できる一連�
 ## <a name="data-exploration-through-power-bi"></a>Power BI を使用しデータを検索
 レポートにはさまざまなタイプがあります。
 
-![データ検索](./media/data-exploration.png)
+![データ検索。](./media/data-exploration.png)
 
 Chart コントロールは、ビジュアルを必要とする埋め込みエクスペリエンスをビルドするために使用されます。
 

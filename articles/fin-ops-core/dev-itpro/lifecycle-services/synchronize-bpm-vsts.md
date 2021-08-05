@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: e86b88d74c28fa78f2f194c61d77e49946795db6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6b16b973ed203212520b3bebb8dc68d47f061052
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748423"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357570"
 ---
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 
@@ -60,7 +60,7 @@ Azure DevOps プロジェクトに接続するために、LCS は個人用アク
 4. Azure DevOps プロジェクトを選択します。
 5. LCS/BPM 項目と関連付けられている Azure DevOps 作業項目の種類の間のマッピングを指定します。
 
-    ![作業項目タイプ マッピング](./media/newbpm_BlogPost24.png)
+    ![作業項目タイプ マッピング。](./media/newbpm_BlogPost24.png)
 
 6. **続行** を選択して変更内容を確認し、**保存** を選択します。
 
@@ -80,11 +80,11 @@ LCS プロジェクトおよび Azure DevOps プロジェクト間の接続を�
 
 BPM ライブラリを Azure DevOps プロジェクトと同期させるには、**業務プロセス ライブラリ** ページで、同期するライブラリのタイルの省略記号ボタン (...) を選択し、**Azure DevOps 同期** を選択します。
 
-![ライブラリのタイルから Azure DevOps 同期を開始](./media/newbpm_BlogPost25.png)
+![ライブラリのタイルから Azure DevOps 同期を開始。](./media/newbpm_BlogPost25.png)
 
 また、BPM ライブラリ内のツールバーから Azure DevOps 同期を開始することができます。 省略記号ボタン (...) を選択し、**Azure DevOps の同期** を選択します。
 
-![ライブラリのツール バーから Azure DevOps 同期を開始](./media/newbpm_BlogPost26.png)
+![ライブラリのツール バーから Azure DevOps 同期を開始。](./media/newbpm_BlogPost26.png)
 
 > [!NOTE]
 > BPM ローカライズはサポートされません。 EN-US 以外の言語で新しい BPM クライアントを編集すると、変更が加えられた言語で BPM を表示したときのみ変更が表示されます。 EN-US で行われた変更を表示するには、変更が表示される前に、Visual Studio Team Server と同期する必要があります。
@@ -108,7 +108,7 @@ BPM ライブラリを Azure DevOps プロジェクトと同期させるには�
    - **黄色の円** – プロセスおよびその子プロセスは部分的に確認されています。
    - **赤いダッシュ** – プロセスとその子プロセスは確認されていません。
 
-![レビュー列の例](./media/newbpm_BlogPost28.png)
+![レビュー列の例。](./media/newbpm_BlogPost28.png)
 
 Azure DevOps に接続されている業務プロセスを確認するとき、Azure DevOps プロジェクトに要求を直接追加することができます。
 
@@ -124,7 +124,7 @@ Azure DevOps に接続されている業務プロセスを確認するとき、A
 
 BPM から Azure DevOps への同期が失敗した場合、失敗したプロセス名、作業項目の種類、およびエラー メッセージが表示されます。 
 
-![BPM 同期エラー](./media/BPMsyncError.jpg)
+![BPM 同期エラー。](./media/BPMsyncError.jpg)
 
 ここでいくつか一般的な原因と、エラーを解決するために推奨するアクションを示します。
 

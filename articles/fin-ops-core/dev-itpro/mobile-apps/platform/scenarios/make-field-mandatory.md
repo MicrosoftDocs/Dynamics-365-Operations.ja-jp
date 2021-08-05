@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: a6634017a94d03ee8bae9d2836e3ee4998e016e4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3a9af58ccc6a0f5bded3188e1d43e245b7c0a041
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745213"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360756"
 ---
 # <a name="make-fields-mandatory-by-using-workspace-classes"></a>ワークスペースのクラスを使用してフィールドを必須にする
 
@@ -27,9 +27,9 @@ ms.locfileid: "5745213"
 
 モバイル アプリ デザイナーを使用してアクション用のフィールドを選択するとき、一部のプロパティは推定できます。 これらのプロパティには、フィールドの長さ、タイプ、フィールドが必須かどうかが含まれます。 これらのプロパティを更新するには、ワークスペース クラスを使用します。 たとえば、次の図に示すように、顧客レコードが作成されると **名前** フィールドが必須になるよう指定する場合があります。
 
-![アクションおよびフィールド](media/workspace-api/MarkFieldAsMandatoryDesigner.png)
+![アクションおよびフィールド。](media/workspace-api/MarkFieldAsMandatoryDesigner.png)
 
-![必須フィールドがマークされているアクション](media/workspace-api/MarkFieldAsMandatoryAction.png)
+![必須フィールドがマークされているアクション。](media/workspace-api/MarkFieldAsMandatoryAction.png)
 
 ワークスペース クラスを使用して **配送条件** フィールドを必須にするには、これらの手順に従います。
 
@@ -56,7 +56,7 @@ ms.locfileid: "5745213"
 
 **配送条件** フィールドは、次の図に示すように **必須** としてマークされるようになりました。
 
-![配信条件フィールドは必須とマークされています](media/workspace-api/MarkFieldAsMandatoryFinal.png)
+![配送条件フィールドは必須とマークされています。](media/workspace-api/MarkFieldAsMandatoryFinal.png)
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

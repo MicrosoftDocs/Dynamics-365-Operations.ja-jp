@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 51ff9d9d0091d06960625efe23b70eb411c5b516
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1ed028a68d9772eab67f83d9380d36355ca6b6cb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744755"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350724"
 ---
 # <a name="create-edit-and-browse-business-process-modeler-bpm-libraries"></a>ビジネス プロセス モデラー (BPM) のライブラリを作成、編集、および参照
 
@@ -36,37 +36,37 @@ BPM ライブラリを作成する方法はいくつかあります。 クライ
 ### <a name="use-the-bpm-client"></a>BPM クライアントの使用 
 
 1. **業務プロセス ライブラリ** ページで、**新しいライブラリ** を選択します。
-     ![Select_new_library](./media/Select_new_library.PNG "新しいライブラリ")
+     ![Select_new_library.](./media/Select_new_library.PNG "新しいライブラリ")
 2. 新しいライブラリ名を入力し、**作成** を選択します。
-     ![Create_new_library](./media/Create_new_library.PNG "新しいライブラリの作成")
+     ![Create_new_library.](./media/Create_new_library.PNG "新しいライブラリの作成")
     
 ### <a name="use-excel-import"></a>Excel のインポートを使用
 
 1. **業務プロセス ライブラリ** ページで、**Excel からインポート** を選択します。
-     ![Import_from_Excel](./media/Import_from_Excel.PNG "Excel からインポート")
+     ![Import_from_Excel.](./media/Import_from_Excel.PNG "Excel からインポート")
 2. ウィンドウから **ダウンロード テンプレート** を選択します。 ダウンロードしたら、ファイルを開きます。
 3. テンプレートにはいくつかの列があり、最も重要なのは **Id** および **Parent Id** です。各行を新しい ID 番号に関連付けます。行を子項目にする場合は、親 ID 列に追加する行の ID を追加します。 the 
 4. 完了したら、テンプレートを保存して BPM に戻ります。
 5. インポート ウィンドウを使用して、**参照** を選択して、更新済のテンプレートをアップロードし、新しいライブラリの名前を入力し、**インポート** を選択します。 
-    ![Download_template](./media/Download_template.PNG "テンプレートのダウンロード")
+    ![Download_template.](./media/Download_template.PNG "テンプレートのダウンロード")
  
 ### <a name="copy-a-library"></a>ライブラリのコピー 
 
 1. **業務プロセス ライブラリ** ページを開きます。 
 2. コピーするライブラリのタイルで、省略記号ボタン (...) を選択し、**コピー** を選択します。
-    ![Copy_a_library](./media/Copy_a_library.PNG "ライブラリのコピー")   
+    ![Copy_a_library.](./media/Copy_a_library.PNG "ライブラリのコピー")   
 3. ライブラリ名を入力し、**作成** をクリックします。
-    ![Create a_copied_library](./media/Create_a_copied_library.PNG "ライブラリのコピーを作成")
+    ![Create a_copied_library.](./media/Create_a_copied_library.PNG "ライブラリのコピーを作成")
 
 
 ## <a name="import-a-sections-of-another-library"></a>別のライブラリのセクションのインポート
 1. **業務プロセス ライブラリ** ページを開いて、編集するライブラリを開きます。 
 2. インポートする明細行に移動して **インポート** を選択します。
-     ![Select_import](./media/Select_import.PNG "インポートの選択")
+     ![Select_import.](./media/Select_import.PNG "インポートの選択")
 3. **子として** または **兄弟として** を選択します。
-     ![Select_child_or_sibling](./media/Select_child_or_sibling.PNG "子または兄弟を選択")
+     ![Select_child_or_sibling.](./media/Select_child_or_sibling.PNG "子または兄弟を選択")
 4. ウィンドウで、インポートするライブラリを選択して **インポート** をクリックします。
-     ![Choose_library](./media/Choose_library.PNG "ライブラリを選択")
+     ![Choose_library.](./media/Choose_library.PNG "ライブラリを選択")
 
 
 ## <a name="add-a-new-process"></a>新しいプロセスの追加
@@ -74,7 +74,7 @@ BPM ライブラリを作成する方法はいくつかあります。 クライ
 1. BPM ライブラリで、既存のプロセスを選択します。
 2. **プロセスの追加** を選択します。 または選択したプロセス ノードの子または兄弟としてプロセスを追加することを選択することができます。 この方法で、業務プロセスの意味的な階層を作成できます。
 
-    ![プロセスを追加する](./media/NEWBPM_BlogPost06.png "プロセスの追加")
+    ![プロセスを追加します。](./media/NEWBPM_BlogPost06.png "プロセスの追加")
 
 ## <a name="edit-the-properties-of-a-process"></a>プロセスのプロパティを編集
 
@@ -83,7 +83,7 @@ BPM ライブラリを作成する方法はいくつかあります。 クライ
 3. プロセス ノードの名前と説明を入力します。
 4. プロセスが適用される業界と国または地域を選択します。 また、キーワードおよびリンクを追加することもできます。 キーワードでカテゴリ、認定作業、またはその他のメタデータを定義できます。 リンク (URL) を使用して、外部サイトまたはドキュメントを参照できます。
 
-    ![プロパティの処理](./media/NEWBPM_BlogPost08-194x300.png "プロセスの詳細")
+    ![プロパティの処理。](./media/NEWBPM_BlogPost08-194x300.png "プロセスの詳細")
 
 5. プロパティの編集を完了したら、**保存** をクリックします。
 
@@ -93,7 +93,7 @@ BPM ライブラリを作成する方法はいくつかあります。 クライ
 
 1. 移動するをプロセス ノードを選択し、**プロセスの移動** をクリックします。 プロセスを上下に移動を選択するか、**移動** を選択してさらにオプションを表示することができます。
 
-    ![プロセスを移動する](./media/NEWBPM_BlogPost09.png "プロセスの移動")
+    ![プロセスを移動します。](./media/NEWBPM_BlogPost09.png "プロセスの移動")
 
 2. **移動** を選択した場合は、階層を参照し、プロセスの移動先のノードを選択し、**子として移動** または **兄弟として移動** を選択します。 移動操作をキャンセルするには、**キャンセル** をクリックします。
 
@@ -110,11 +110,11 @@ BPM ライブラリを作成する方法はいくつかあります。 クライ
 1. **業務プロセス ライブラリ** ページで、参照するライブラリのタイルをダブルクリックします。
 2. BPM ライブラリで、プロセスを選択してそのサブステップを表示します。
 
-    ![プロセスとそのサブステップ](./media/2.PNG "プロセスとそのサブステップ")
+    ![プロセスとそのサブステップ。](./media/2.PNG "プロセスとそのサブステップ")
 
 3. ツールバーのボタンを使用して、プロセスを子プロセスまたは兄弟プロセスとして追加、削除、またはインポートします。 また、**すべて折りたたみ** を選択して親プロセスのみを表示することができます。 
 
-    ![ツール バー](./media/3.PNG "ツール バー")
+    ![ツール バー。](./media/3.PNG "ツール バー")
 
 ## <a name="search-a-bpm-library"></a>BPM ライブラリを検索
 
@@ -127,7 +127,7 @@ BPM ライブラリ内で語または語句を検索することができます�
 
 - ライブラリ内にあり、タスク記録の一部である、アプリケーション オブジェクト ツリー (AOT) 要素を検索することもできます。 通常、これらの AOT 要素はページまたはメニュー項目の名前です。 AOT 要素を検索するとき、それにドル記号 ($) の接頭語を付けます。 たとえば、検索ボックスで **$CustTable** を入力します。
 
-![検索ボックス](./media/searching.png "検索ボックス")
+![検索ボックス。](./media/searching.png "検索ボックス")
 
    
 

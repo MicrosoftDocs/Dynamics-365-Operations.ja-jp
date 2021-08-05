@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c6496e4308eb0013aff32ff245a9f4163fd8de2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e866ab1d7458798ab012066a8d95f1351255ead0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752350"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356277"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
@@ -91,18 +91,18 @@ FMLabCustomerEntity
     > [!NOTE]
     > エンティティの名前に '\_' や数字 (0...9) を使用することはできません。 これらの文字を使用すると、後でマッピング エラーが発生することがあります。
 
-    [![データ エンティティ ウィザード](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
+    [![データ エンティティ ウィザード。](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
 5. **次へ** をクリックします。 各プロパティ機能の詳細については、 [データ エンティティ の概要](data-entities.md) 内の「エンティティのカテゴリ」および「エンティティの作成」を参照してください。
 6. 次の図に示すように、データ ソースから新しいエンティティにフィールドを追加します。 主要なデータ ソース、**FMCustomer** からフィールドを追加することができます。 このエンティティについては、テストを効率化するため **画像** および **LicenseImage** コンテナー タイプのチェック ボックスをオフにします。
 7. データ エンティティのフィールドの名前を、パブリック データ コントラクト標準を反映するように変更するか、**ラベルをフィールド名に変換** をクリックして既存のラベルから名前を生成します。
 8. **DriverLicense** フィールドの行で、**必須** チェック ボックスを選択します。 このフィールドはエンティティのナチュラル キーとして使用されます。
 
-    [![データ エンティティ ウィザード 2](./media/data-entity-wizard-2.png)](./media/data-entity-wizard-2.png)
+    [![データ エンティティ ウィザード 2。](./media/data-entity-wizard-2.png)](./media/data-entity-wizard-2.png)
 
 9. **データ ソース** フィールドで、**PrimaryAddress** を選択します。 **AddressID** の自動拡張または代理外部キー交換のため、**PrimaryAddress** データ ソースが自動的に追加されることに注意します。
 
-    [![手順およびフィールドの追加](./media/steps-and-add-fields.png)](./media/steps-and-add-fields.png)
+    [![手順およびフィールドの追加。](./media/steps-and-add-fields.png)](./media/steps-and-add-fields.png)
 
 10. エンティティの一部にする **PrimaryAddress** データ ソースからフィールドを選択します。 また、次のフィールドの名前を変更して、適切な公開データ契約の名前付けを反映します。
 
@@ -113,11 +113,11 @@ FMLabCustomerEntity
     - PrimaryAddress \_ZipCode &gt; ZipCode
     - PrimaryAddress \_Country &gt; Country
 
-    ![データ エンティティ ウィザード](./media/data-entity-wizard-3.png)
+    ![データ エンティティ ウィザード。](./media/data-entity-wizard-3.png)
 
 11. **完了** をクリックします。 データ エンティティの品目およびステージング テーブルは、プロジェクトに追加されます。
 
-    [![ソリューション エクスプローラー](./media/solution-explorer.png)](./media/solution-explorer.png)
+    [![ソリューション エクスプローラー。](./media/solution-explorer.png)](./media/solution-explorer.png)
 
 ### <a name="build-your-project"></a>プロジェクトの構築
 
@@ -127,7 +127,7 @@ FMLabCustomerEntity
     > [!NOTE]
     > エンティティが Microsoft SQL Server のビューとして作成され、ステージング テーブルが追加されます。 したがって、エンティティを作成するときにデータベースを同期する必要があります。
 
-    ![プロパティ ページ](./media/property-pages.png)
+    ![プロパティ ページ。](./media/property-pages.png)
 
 3. Visual Studio ツールバーで、**構築** &gt; **ソリューションの構築** の順にクリックしてプロジェクトを構築します。
 4. ビルドにエラーが含まれていないことを確認します。 この時点でチュートリアルは警告が許可されています。
@@ -138,24 +138,24 @@ FMLabCustomerEntity
 2. **FMLabCustomerEntity** エンティティのプロパティを検証します。 ソリューション エクスプ ローラーでエンティティを選択し、**プロパティ** ウィンドウの値と次の図を比較します。
 3. **ラベル** プロパティを **フリート ラボ顧客** に設定します。
 
-    [![FMLabCustomerEntity - プロパティ](./media/fmlabcustomerentity-properties.png)](./media/fmlabcustomerentity-properties.png)
+    [![FMLabCustomerEntity - プロパティ。](./media/fmlabcustomerentity-properties.png)](./media/fmlabcustomerentity-properties.png)
 
 4. 左ウィンドウで、**データ ソース** &gt; **FMCustomer** &gt; **データ ソース** &gt; **FMAddressTable** をクリックします。
 5. **読み取り専用** プロパティを **いいえ** に変更します。 これは、既知の問題です。 最終的に、この値は結合のタイプに基づき、自動的に **はい** または **いいえ** に設定されます。 合成シナリオの場合、値は **Yes**、アソシエーションの場合、値は **No** にしてください (代理外部キー拡張)。 このプロパティを使用すると、データ ソースを読み取り/書き込みをすることができます。
 
-    [![FMLabCustomerEntity - プロパティ 2](./media/fmlabcustomerentity-properties2.png)](./media/fmlabcustomerentity-properties2.png)
+    [![FMLabCustomerEntity - プロパティ 2。](./media/fmlabcustomerentity-properties2.png)](./media/fmlabcustomerentity-properties2.png)
 
 6. **FMLabCustomerEntity** デザイナーで、**キー** &gt; **EntityKey** とクリックしてから **フィールド** ノードを展開します。 フィールドの一覧が次の図と一致していることを確認します。
 
-    [![FMLabCustomerEntity](./media/fmlabcustomerentity.png)](./media/fmlabcustomerentity.png)
+    [![FMLabCustomerEntity。](./media/fmlabcustomerentity.png)](./media/fmlabcustomerentity.png)
 
 7. インポート/エクスポートに使用するステージング テーブルを視覚的に検証するには、デザイナーの **FMLabCustomerStaging** テーブルを開き、**FMLabCustomerStaging** ノードを選択します。
 
-    [![fMLabCustomerStaging - プロパティ](./media/fmlabcustomerstaging-properties.png)](./media/fmlabcustomerstaging-properties.png)
+    [![fMLabCustomerStaging - プロパティ。](./media/fmlabcustomerstaging-properties.png)](./media/fmlabcustomerstaging-properties.png)
 
 8. **FMLabCustomerStaging** &gt; **フィールド** とクリックします。 次の図では、ステージング テーブルの標準フィールドが選択されています。 すべてのエンティティ ステージング テーブルにはこれらの標準的なフィールドがあります。 図には、このデー タエンティティに属するデータ フィールドも表示されます。
 
-    [![FMLabCustomerStaging](./media/fmlabcustomerstaging.png)](./media/fmlabcustomerstaging.png)
+    [![FMLabCustomerStaging。](./media/fmlabcustomerstaging.png)](./media/fmlabcustomerstaging.png)
 
 9. ソリューション エクスプローラーで、プロジェクトを右クリックしてから、**再構築** を選択して、プロジェクトを再構築して同期します。
 
@@ -220,7 +220,7 @@ FMLabCustomerEntity
 3. **データ管理** ワークスペースで、**インポート** タイルをクリックします。
 4. **インポート** ページで、次の図に表示されるインポートの詳細を入力します。
 
-    ![新しいレコードのインポート](./media/import-new-record.png)
+    ![新しいレコードのインポート。](./media/import-new-record.png)
 
 5. **エンティティ ファイルのアップロード** フィールドの隣にある **データのアップロード** ボタンをクリックし、作成した CSV ファイルを選択します。
 6. ファイルがアップロードされると、エンティティが中間セクションに追加された事が表示されます。 また、マッピングが無効であることを示すエラーが表示されます。 いくつかのフィールドは、ソース ファイルとターゲット エンティティの間で正しくマップされていません。
@@ -230,11 +230,11 @@ FMLabCustomerEntity
     - AddressLine1 – Address1
     - AddressLine2 – Address2
 
-    [![ソースをステージングにマップ](./media/map-source-to-staging.png)](./media/map-source-to-staging.png)
+    [![ソースをステージングにマップ。](./media/map-source-to-staging.png)](./media/map-source-to-staging.png)
 
 9. ブラウザーの **戻る** ボタンをクリックして、**インポート ジョブ** ページに戻ります。 エンティティ リストのチェック マークは、エンティティがインポートの準備ができていることを示します。
 
-    [![新規レコード 2 のインポート](./media/import-new-record-2.png)](./media/import-new-record-2.png)
+    [![新規レコード 2 のインポート。](./media/import-new-record-2.png)](./media/import-new-record-2.png)
 
 10. **今すぐインポート** をクリックします。 インポートが完了したら、ジョブ ステータス ページが開きます。
 
@@ -283,7 +283,7 @@ FMLabCustomerEntity
 
     Visual Studio でのリレーションを次の図に示します。
 
-    [![FMRentalEntity - ソリューション エクスプローラー](./media/fmrentalentity-solution-explorer.png)](./media/fmrentalentity-solution-explorer.png)
+    [![FMRentalEntity - ソリューション エクスプローラー。](./media/fmrentalentity-solution-explorer.png)](./media/fmrentalentity-solution-explorer.png)
 
 13. **ビルド** メニューで、**ソリューションのビルド** をクリックして変更を保存し、プロジェクトをビルドします。 **出力** ウィンドウでビルドの進行状況を表示できます。
 14. OData エンドポイントをこの変更と併せて更新するには、**iisreset** コマンドを実行する必要があります。 管理者として **コマンド プロンプト** ウィンドウを開き、**iisreset** と入力します。
@@ -308,7 +308,7 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 
 2. ブラウザーで **FleetRental** を検索します。 次の図は、**FleetRental** エンティティのメタデータと、新しいリレーションシップ **NavigationProperty** を示しています。
 
-    [![FleetRental メタデータ](./media/fleetrental-metadata.png)](./media/fleetrental-metadata.png)
+    [![FleetRental メタデータ。](./media/fleetrental-metadata.png)](./media/fleetrental-metadata.png)
 
 3. フリート管理アプリケーションのすべての顧客を JSON 形式で表示するには、ブラウザーのアドレス バーに \[baseURL\]/data/FleetCustomer の URL を入力します。
 
@@ -398,11 +398,11 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 
     1. Internet Explorer を起動して、アドレス バーに URL \[baseURL\]/?mi=FMRental を入力します。**FMRental**  ページにレンタルの一覧が表示されます。
 
-        [![レンタル リスト](./media/rental-list.png)](./media/rental-list.png)
+        [![レンタル リスト。](./media/rental-list.png)](./media/rental-list.png)
 
     2. リストの下部にある **次へ** をクリックして、次のページを表示します。 このページで、追加された新しい顧客の予約が作成されたことを確認できます。
 
-        [![顧客引当](./media/customer-reservation.png)](./media/customer-reservation.png)
+        [![顧客引当。](./media/customer-reservation.png)](./media/customer-reservation.png)
 
 これで、OData エンドポイントを使用して フリート管理モデルと対話する外部クライアントを見たウォークスルーは完了です。
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 067d0c3c05e93f8696405d2e3893f78300e6722c
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: a82c4837ed79bd583b17e04aabf95252e39ac734
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103611"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357253"
 ---
 # <a name="human-resources-virtual-tables-faq"></a>Human Resources 仮想テーブルに関するよく寄せられる質問
 
@@ -118,7 +118,7 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 
 インストールには数分かかります。 完了すると **Finance and Operations 仮想データ ソースの構成** エンティティをこの環境で生成されます。
 
-![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストールします](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストールします。](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
 ### <a name="can-i-generate-virtual-tables-for-hr-from-my-power-apps-environment"></a>HR の仮想テーブルを自分の Power Apps 環境から生成できますか?
 

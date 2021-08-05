@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a106e9806fa5b6e3a18e0a96a96b4e632cd35bcb
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9f9cae27f076840950963ca999cbfa1ec2ef47c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189318"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354341"
 ---
 # <a name="fill-text-subpattern"></a>テキスト入力のサブパターン
 
@@ -33,7 +33,7 @@ ms.locfileid: "6189318"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![テキスト入力のサブパターンのワイヤーフレーム](./media/filltext1.png)](./media/filltext1.png)
+[![テキスト入力のサブパターンのワイヤーフレーム。](./media/filltext1.png)](./media/filltext1.png)
 
 ## <a name="model"></a>モデル
 ### <a name="high-level-structure"></a>高レベル構造体
@@ -56,7 +56,7 @@ None
 ## <a name="examples"></a>例
 フォーム: **FmRental (Notes)** 
 
-[![テキスト入力のサブパターンの例](./media/filltext2.png)](./media/filltext2.png)
+[![テキスト入力のサブパターンの例。](./media/filltext2.png)](./media/filltext2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される

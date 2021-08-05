@@ -3,21 +3,16 @@ title: HyperLinkDesign タイプ
 description: Hyperlink デザイン オブジェクトの種類。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7fb0fff4406fc1ab5e18da4a3f3824e3fd8bc5c2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63bfb5526c9ac15a5d90e239b6516e229e5d3f81
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754866"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661378"
 ---
 # <a name="hyperlinkdesign-type"></a>HyperLinkDesign タイプ
 
@@ -97,7 +92,7 @@ color: string (optional)
 この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。<br>
 注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。<br>
 使用可能な色は次のとおりです。 <br>
-![使用可能な色の画像](../../../media/colors.PNG)
+![使用可能な色の画像。](../../../media/colors.PNG)
 
 > [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color) から継承
 

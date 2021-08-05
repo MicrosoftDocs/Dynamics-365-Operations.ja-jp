@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 269bef0d5809c9718ae020597c3fa3a8f753bcaa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 68f6e1fb0405e360c8cc5ce0634b09aeb2cda26a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749271"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347850"
 ---
 # <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 
@@ -33,7 +33,7 @@ ms.locfileid: "5749271"
 
 LCS の監視および診断ポータルの基礎となるテレメトリ データには、監視、診断、分析の 3 つの主要なユース ケースがあります。 
 
-[![モニタリング、診断、分析](./media/monitoringanddiagnostics01.png)](./media/monitoringanddiagnostics01.png)
+[![モニタリング、診断、分析。](./media/monitoringanddiagnostics01.png)](./media/monitoringanddiagnostics01.png)
 
 ### <a name="monitoring"></a>監視
 
@@ -60,7 +60,7 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 2. **環境** セクションで、表示する環境を選択してから **完全な詳細** を選択します。
 3. 環境の詳細ページで、**環境の監視** を選択して、監視および診断ポータルを開きます。 
 
-[![環境の詳細](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
+[![環境の詳細。](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
 
 ## <a name="tools"></a>ツール
 
@@ -118,7 +118,7 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 
 **環境の監視** ページで、**活動** タブを選択して、活動監視ツールを使用します。 このツールは、お客様または別のユーザーが特定の期間に実行する内容を表示するストーリー ボード ビューを提供します。 
 
-[![活動タブ](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
+[![活動タブ。](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
 
 - **ユーザー操作** の図は、環境および SQL 使用率の傾向でさまざまなコンピューターにおけるユーザーの活動を示しています。
 - **ユーザー負荷** セクションは、すべてのシステム ユーザーを示しています。 各グラフには、ユーザーが特定のマシンに費やした時間が示されます。

@@ -3,20 +3,18 @@ title: X++ イベントの用語およびキーワード
 description: このトピックでは、X++ のイベント用語とキーワードについて説明します。
 author: robinarh
 ms.date: 06/18/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150303
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26707cdb07d3a20d999f52d6bab72a89a7a9a14d
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 112f6d43ac2e9e2e579293ccf768e116e03d1dad
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865902"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661376"
 ---
 # <a name="x-event-terminology-and-keywords"></a>X++ イベントの用語およびキーワード
 

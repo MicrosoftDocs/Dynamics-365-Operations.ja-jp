@@ -3,21 +3,16 @@ title: 画像タイプ
 description: モバイル アプリ内のイメージを表すためのイメージ コントロール インターフェイス。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2fb5e558a5fa3014bcca77e3e02339879db86354
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 687dc975485040e966aace17eafc09c574813389
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754864"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661590"
 ---
 # <a name="image-type"></a>画像タイプ
 

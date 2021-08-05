@@ -3,21 +3,16 @@ title: グループ タイプ
 description: グループ コンテナーのコントロール タイプ。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0e6b7e0eeb36f0675bb1e0e8dba462ea841b1f5d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8a12cc3929536eb21d0ff54260632fd15cac5f3d
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754876"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661392"
 ---
 # <a name="group-type"></a>グループ タイプ
 

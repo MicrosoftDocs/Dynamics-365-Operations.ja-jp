@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5fb03772301c682d9bc0818d4bfeda7e5fcc9f39
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9800283c04a3a1804ed33b5ae0996e5fc602af9b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793021"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354657"
 ---
 # <a name="commerce-data-exchange-and-commerce-channel-communications"></a>Commerce Data Exchange とコマース チャネルのコミュニケーション
 
@@ -34,7 +34,7 @@ Commerce Data Exchange は、オンライン ストアまたは従来型の店�
 
 Commerce データベースの Microsoft SQL Server 変更追跡は、チャネルに送信する必要のあるデータの変更内容を特定するのに使用されます。 配送スケジュールに基づいて、バックオフィスはそのデータをパッケージングして中央の保存場所 (Azure Blob Storage) に保存します。 別のバッチ処理は、このデータ パッケージをチャネルのデータベースに挿入するために Commerce Data Exchange: Async Client ライブラリを使用します。 
 
-[![非同期サービス](./media/async-300x239.png)](./media/async.png)
+[![非同期サービス。](./media/async-300x239.png)](./media/async.png)
 
 ### <a name="commerce-scheduler"></a>コマース スケジューラ
 
@@ -58,7 +58,7 @@ Commerce Data Exchange: リアルタイム サービスは、バックオフィ�
 - 棚卸資産会計の実行
 - 店舗間から販売トランザクションを取得し、返品トランザクションを完了します
 
-[![Real-time Service](./media/rts.png)](./media/rts.png) 
+[![リアルタイム サービス。](./media/rts.png)](./media/rts.png) 
 
 定義済の Real-time Service プロファイルが作成されます。
 

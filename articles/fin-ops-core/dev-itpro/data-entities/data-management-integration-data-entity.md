@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 26441
+ms.custom:
+- "26441"
+- intro-internal
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f30afe7df45485ad268b2900b2867faaf0672e8b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c3e7bf257e1879e25bbe813753d13dc21639d16b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750986"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351005"
 ---
 # <a name="data-management-and-integration-by-using-data-entities-overview"></a>データ エンティティを使用したデータの管理と統合についての概要
 
@@ -48,7 +50,7 @@ ms.locfileid: "5750986"
 
 次の図は、着信フローを示しています。
 
-![受信フロー](./media/over6.png)
+![受信フロー。](./media/over6.png)
 
 ## <a name="known-limitations-in-data-importexport"></a>データのインポート/エクスポートにおける既知の制限
 テキスト ファイルをインポートするとき、文字列サイズは 32,768 文字に限定されます。 文字列がこれより大きい場合は、インポートされた文字列が切り捨てられます。 これは、基本的な実装の制限であり、SQL Server Integration Services (SSIS) によるものです。

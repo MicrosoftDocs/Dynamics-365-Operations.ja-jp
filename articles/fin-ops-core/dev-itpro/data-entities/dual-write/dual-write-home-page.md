@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 21311
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36ba04b68d02756b14bc52d81c739127a029a534
-ms.sourcegitcommit: 8c57c1b7968ea5542c241b15c85fb3d40e706ac5
+ms.openlocfilehash: 41aed28dd9f92b9a79edf552becae0f7992b91b7
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "6308309"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542479"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -66,7 +66,7 @@ ms.locfileid: "6308309"
 
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング
 
-このトピックでは、Finance and Operations アプリケーションの概念と Microsoft Dynamics 365 のモデル駆動型アプリの概念間のマッピングについて説明します。
+このトピックでは、Finance and Operations アプリケーションの概念と顧客エンゲージメント アプリケーションの概念の間のマッピングについて説明します。
 
 + [統合された顧客マスター](customer-mapping.md)
 + [統合された仕入先マスター](vendor-mapping.md)
@@ -97,7 +97,7 @@ ms.locfileid: "6308309"
 + [作業者、職務、および職位の統合](integrated-hr.md)
 + [当事者およびグローバル アドレス帳](party-gab.md)
 
-    + [Power Portal を当事者のデータ モデルで使用する](party-gab-portal.md)
+    + [関係者データ モデルで Microsoft Power Apps ポータルを使用](party-gab-portal.md)
     + [当事者およびグローバル アドレス帳モデルへのアップグレード](upgrade-party-gab.md)
 
 + [注記の統合](notes-integration.md)
@@ -118,6 +118,5 @@ ms.locfileid: "6308309"
 + [ソリューションの認識に関する問題のトラブルシューティング](dual-write-troubleshooting-solution-awareness.md)
 + [Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング](dual-write-troubleshooting-finops-upgrades.md)
 + [一般的なトラブルシューティング](dual-write-troubleshooting.md)
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

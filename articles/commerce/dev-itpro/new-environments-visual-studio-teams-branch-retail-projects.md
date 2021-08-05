@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 8652f7273970e8b9f8cc550ea374690deaf1ae20
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: b25c230dbc9bea6c1ae1b528ec9629f58f3e2cf7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937142"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355468"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-projects"></a>プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
@@ -96,7 +96,7 @@ Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境
 
 次の図は、3 つのコード ブランチを示しています: Dev、Main、および ProdRel1。 数字は、セットアップの順序を示します。
 
-![分岐の作成](./media/1-Three-Code-Branch.png)
+![分岐の作成。](./media/1-Three-Code-Branch.png)
 
 設定の説明は以下の通りです。 かっこ内の数字は、前の図の番号を参照してください。
 
@@ -104,7 +104,7 @@ Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境
 - **Main** ブランチ \[1\] は、品質基準を達成し、他のユーザーによるテストへの準備に向けた変更を扱います。 このテストには、ユーザー承認テスト、パフォーマンス テスト、統合テスト、および修正プログラム後のサニティ テストが含まれる場合があります。 この分岐の配置可能パッケージは、ビルド環境で作成する必要があります。 ベスト プラクティスとして、レベル 1 環境で X++ パッケージを生成し、それらのパッケージを公式テストまたは実稼動環境に配置するべきではありません。 それ以外の場合は、コミットされていないソースの変更が含まれる可能性があります。 適切なアプローチは、常に正式なビルド環境でビルドされたパッケージを展開します。
 - **ProdRel1** ブランチ \[3\] は、任意の時点で実稼働環境に配備された、全てのソース コードを保持します。 ビルド環境で使用できますが、必須ではありません。 Main ブランチからのパッケージが実稼働環境に配置されている場合、運用配置後に (Main から ProdRel1 へ) コードをマージする必要があります。 生産用分岐を用意することで、ビルドが必要な場合に、後で公式ビルドを生成することができます。
 - 3つの分岐は、 X++ コード (メタデータのフォルダー内の拡張機能および修正プログラム)、および Retail ソフトウェア開発キット (SDK) のコピーの両方を **RetailSdk** のフォルダー \[5, 6, 7\]  内に保持しています。 Retail SDKには、基準の Microsoft コードおよびコードの拡張子が含まれています。 この基本コードとコードの拡張機能は、各分岐で異なります。
-- **RetailSdk-mirror** フォルダー \[4\] は、Microsoftの修正を Retail SDK に適用するために使用されます。 開発またはビルドの目的で使用されていません。 新しいバージョンまたは修正プログラムを使用する場合にのみ更新する必要があります。 プロセスの詳細については、この[チート シート](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/)を参照してください。
+- **RetailSdk-mirror** フォルダー \[4\] は、Microsoftの修正を Retail SDK に適用するために使用されます。 開発またはビルドの目的で使用されていません。 新しいバージョンまたは修正プログラムを使用する場合にのみ更新する必要があります。
 
 小規模な売プロジェクトでは、分岐が 2 つしかなくても構いません (メイン = 開発分岐)。 ただし、コード送信はテスト ビルドの品質に即座に影響を与える可能性があるため、開発者は規範を守らなければなりません。 
 
@@ -130,31 +130,31 @@ LCS のポータルを使用して、新しいビルド環境を配置します�
 
 未所持の場合は、新しい Azure DevOps プロジェクトを作成して開始します。 Azure DevOps アカウントで、**新しいプロジェクト** を選択します。
 
-![VSTS プロジェクト](./media/2-VSTS-project.png)
+![VSTS プロジェクト。](./media/2-VSTS-project.png)
 
 新規 Azure DevOps プロジェクトが作成した後で、Azure DevOps へのアクセスを許可する必要があります。 最初に、Azure DevOps アカウントに新しい個人用のアクセス トークンを作成します。 次に、正しい URL と個人用アクセス トークンで LCS プロジェクトをコンフィギュレーションします。
 
-![LCS プロジェクト](./media/3-LCS-project.png)
+![LCS プロジェクト。](./media/3-LCS-project.png)
 
 LCS プロジェクトが Azure DevOps にリンクされたら、配置の準備ができています。
 
 新しい環境を追加、バージョンを選択、**DEVTEST** をトポロジとして追加、およびビルド環境を選択します。 次のページで、意味のある環境名を入力します。 次に、ビルド エージェントの類似の名前を入力します。
 
-![ビルド エージェント](./media/4-build-agent.png)
+![ビルド エージェント。](./media/4-build-agent.png)
 
 次に、 **仮想マシン名をカスタマイズ** 配下で、一意の名前を入力し、VMを配置します。
 
 以下の図に示されているように、ビルド ボックスは配置され、ビルド定義および Main ブランチが作成されます。 このプロセスには数時間かかる場合があります。
 
-![ビルド ボックス Main ブランチ](./media/5-build-box-main-branch.png)
+![ビルド ボックス Main ブランチ。](./media/5-build-box-main-branch.png)
 
 ビルド定義の一覧にビルドが表示されます。
 
-![ビルド定義](./media/19-build-definitions.png)
+![ビルド定義。](./media/19-build-definitions.png)
 
 ビルド定義は、 **Agents for pool Default** のグリッドに に表示されます。
 
-![既定プールのエージェント](./media/20-agents-for-pool-default.png)
+![既定プールのエージェント。](./media/20-agents-for-pool-default.png)
 
 ## <a name="deploy-a-development-environment"></a>開発環境の配置
 
@@ -169,7 +169,7 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 
 前述のように、変更が頻繁に行われるが、あまりテストされないブランチがある必要があります。 生産のソース コードを格納するブランチも必要です。 次の図は、予期される階層を示しています。
 
-![Main ブランチ階層](./media/6-main-branch-hierarchy.png)
+![Main ブランチ階層。](./media/6-main-branch-hierarchy.png)
 
 分岐を作成するには、次の手順に従います。
 
@@ -185,7 +185,7 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 
 この時点で、 Visual Studio の Source Depot エクスプローラーは以下の図のようになります。
 
-![Source Depot エクスプローラー](./media/7-source-depot-explorer.png)
+![Source Depot エクスプローラー。](./media/7-source-depot-explorer.png)
 
 ## <a name="add-the-retail-sdk"></a>Retail SDK を追加
 
@@ -197,14 +197,14 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 
 1. 開発を開始する正確なバージョンのある変更していない Retail SDK を検索します。 この Retail SDK は、サービス ドライブ上のすべての開発マシン、またはダウンロードされたすべての修正プログラムに表示されます。 Microsoft-version.txt ファイルを調べることによって、Retail SDK のバージョンを一意に識別することができます。 このファイルは、Retail SDK ミラー フォルダへの更新以外は変更しないでください。
 
-    ![Retail SDK](./media/8-retail-sdk.png)
+    ![Retail SDK。](./media/8-retail-sdk.png)
 
 2. ソース管理エクスプローラーでは、**トランク** フォルダーを右クリックし、**フォルダーへの品目の追加** を選択します。
 3. 小売 SDK でトップ フォルダーを選択し、**次へ** を選択します。
 4. Visual Studio は、追加されるファイルの数を示します。 **RetailSdk** フォルダーが **トランク** フォルダーの下にあることを確認してください。
 5. 項目を選択してから、**項目を含む** を選択して、除外されたアイテムが 0 (ゼロ) であることを確認してください。
 
-    ![ソース管理](./media/9-source-control.png)
+    ![ソース管理。](./media/9-source-control.png)
 
 6. **完了** を選択します。 このプロセスには数分かかる場合があります。
 7. 処理が完了したら、フォルダーの名前を **RetailSdk-mirror** に変更します。
@@ -214,7 +214,7 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 1. ミラー分岐のフォルダーを選択し、右クリックして、**分岐とマージ** \> **分岐** を選択します。
 2. **開発** 分岐に移動し、**/RetailSdk** を名前に追加し、それから **OK** を選択します。
 
-    ![分岐の変更](./media/10-branch-change.png)
+    ![分岐の変更。](./media/10-branch-change.png)
 
 3. **保留中の変更** を使用し、変更内容を送信します。
 4. 同様の手順に従って、**開発** ブランチの **RetailSdk** フォルダを **Main** ブランチに分岐します。
@@ -222,7 +222,7 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 
 この時点で、 X++ およびコマース拡張機能設定のコード ブランチとコード場所があります。 ソース管理エクスプローラーでは、ファイル構造は次の図のようになります。
 
-![ソース管理エクスプローラー](./media/11-source-control-explorer.png)
+![ソース管理エクスプローラー。](./media/11-source-control-explorer.png)
 
 コマース カスタマイズのバージョンを変更する必要もあります。 このバージョンは、Dev、Main、および ProdRel1 の分岐で異なっている必要があります。 Customization.settings ファイルを変更するか、**RetailSdk\\BuildTools** フォルダーに新しい global.props ファイルを追加してください。 たとえば、Dev に 1.0.0.x、Main に 1.0.1.x、ProdRel1 に 1.0.2.x と番号を付けることができます。
 
@@ -235,7 +235,7 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 
 X++ および Retail SDK をマッピングするには、現在のワークスペースを編集する必要があります。 **保留中の変更** \> **操作** \> **ワークスペース** を選択し、現在のワークスペースを次の図のように更新します。 前述のように、分岐のメタデータ フォルダを PackagesLocalDirectory フォルダに、RetailSdk を選択した短縮フォルダにマッピングする必要があります。
 
-![現在のワークスペースの編集](./media/12-edit-current-workspace.png)
+![現在のワークスペースを編集します。](./media/12-edit-current-workspace.png)
 
 ファイルのダウンロードには数分かかります。
 
@@ -297,15 +297,15 @@ X++ および Retail SDK をマッピングするには、現在のワークス�
 
 最初に新しい Azure DevOps エージェント キューを作成してください。
 
-![VSTS エージェント キュー](./media/13-VSTS-agent-queue.png)
+![VSTS エージェント キュー。](./media/13-VSTS-agent-queue.png)
 
 LCS から配置する際、**PRODREL1** をエージェント プールの名前として使用してください。
 
-![LCS のキュー名](./media/14-queue-name-lcs.png)
+![LCS のキュー名。](./media/14-queue-name-lcs.png)
 
 次に、 **仮想マシン名をカスタマイズ** タブで、一意の名前を入力してから新規ビルドを配置します。 新しいビルドの展開およびエージェント キューの作成にかかるプロセスは、数時間かかります。
 
-![新しいエージェント キュー](./media/15-new-agent-queue.png)
+![新しいエージェント キュー。](./media/15-new-agent-queue.png)
 
 ## <a name="prepare-the-build-definitions"></a>ビルド定義の準備
 

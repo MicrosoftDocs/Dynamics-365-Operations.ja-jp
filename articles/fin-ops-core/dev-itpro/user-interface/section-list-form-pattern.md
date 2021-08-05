@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7168179dfd64173516e07396378f813a34e8559
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: f9f032f25f28059bad8610198d32dde59a8e846b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189910"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347822"
 ---
 # <a name="form-part-section-list-form-patterns"></a>フォーム パターン セクション リストのフォーム パターン
 
@@ -37,11 +37,11 @@ ms.locfileid: "6189910"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="form-part-section-list"></a>フォーム パート セクション リスト
 
-[![フォーム パターン セクション リストのフォーム パターンのワイヤーフレーム](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
+[![フォーム パターン セクション リストのフォーム パターンのワイヤーフレーム。](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
 
 ### <a name="form-part-section-list---double"></a>フォーム パート セクション リスト - ダブル
 
-[![フォーム パターン セクション リスト -- ダブル のフォーム パターンのワイヤーフレーム](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
+[![フォーム パターン セクション リスト -- ダブル のフォーム パターンのワイヤーフレーム。](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
 ## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations 用のパターンの変更
 これらのパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
@@ -106,13 +106,13 @@ ms.locfileid: "6189910"
 
 フォーム: **PurchOrderProcessReceiptsWorkspace** &gt; **PurchOrdersWithDelayedReceiptsPart** (**すべてのワークスペース** &gt; **発注書入庫とフォローアップ**) 
 
-[![フォーム パート セクション リストの例](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
+[![フォーム パート セクション リストの例。](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
 
 ### <a name="form-part-section-list---double"></a>フォーム パート セクション リスト - ダブル
 
 フォーム: **BudgetTrackingWorkspace** &gt; **BudgetTransactionPart** (**すべてのワークスペース** &gt; **元帳予算および予測**) 
 
-[![フォーム パート セクション リスト -- ダブルの例](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
+[![フォーム パート セクション リスト -- ダブルの例。](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

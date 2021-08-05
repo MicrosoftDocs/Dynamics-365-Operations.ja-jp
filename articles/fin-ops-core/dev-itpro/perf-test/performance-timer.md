@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae509a7055fd2f95f1a1f1809b11223d10c22f5e
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 531507c5ea4002e83d9f82bd60281493dda38cde
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866318"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360238"
 ---
 # <a name="performance-timer"></a>パフォーマンス タイマー
 
@@ -29,11 +29,11 @@ ms.locfileid: "5866318"
 
 パフォーマンス タイマーを開くには、追加パラメーター debug=develop: https://<em>yoursite</em>.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop を使用して Web ページを開きます。注: デバッグ モードで実行すると、パフォーマンスが低下することがわかります。 F12 キーを押して、ブラウザーで使用可能なデバッグ ツールを使用し、パフォーマンスの大半の問題の概要を素早く取得することができます。 タイマーはここで表示されます。 
 
-[![画面上部に配置されたタイマーの例](./media/timer.png)](./media/timer.png) 
+[![画面上部に配置されたタイマーの例。](./media/timer.png)](./media/timer.png) 
 
 発注書一覧ページなどの一覧ページを開くには、[パフォーマンス タイマー] をクリックします。 次のスクリーン ショットは、クライアント時間とサーバー時間の区切り、および合計時間を示しています。 また、一連のパフォーマンス カウンターと高価なサーバー呼び出しを確認できます。 
 
-[![サーバー パフォーマンス カウンターを示すスクリーン ショット](./media/2_timer.png)](./media/2_timer.png) 
+[![サーバー パフォーマンス カウンターを示すスクリーン ショット。](./media/2_timer.png)](./media/2_timer.png) 
 
 サーバー パフォーマンス カウンターの詳細については、リンクのいずれかをクリックします。
 
@@ -44,7 +44,7 @@ ms.locfileid: "5866318"
 
 詳細については、リンクをクリックしてください。 次の画面で、個別の呼び出しによってトリガーされた SQL クエリの数、および価値が高い SQL クエリを表示できます。 
 
-[![呼び出しによってトリガーされた SQL クエリのリストの例](./media/3_timer.png)](./media/3_timer.png) 
+[![呼び出しによってトリガーされた SQL クエリのリストの例。](./media/3_timer.png)](./media/3_timer.png) 
 
 この情報は、トレースする内容とトラブルシューティングの開始場所の理解に役立ちます。 
 

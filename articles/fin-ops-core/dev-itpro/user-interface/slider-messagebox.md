@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aorth
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2b19984dcb1c0d7593d7e4fd241533948fa141e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0cbf2b731408c7e13caaacd44461e9709972fb3f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749594"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350088"
 ---
 # <a name="slider-and-messagebox-dialogs"></a>スライダー ダイアログとメッセージ ボックス ダイアログ
 
@@ -37,7 +37,7 @@ ms.locfileid: "5749594"
 ## <a name="slider"></a>スライダー
 スライダーまたはスライダー ダイアログは、画面の右端からアクティブなページのコンテンツの上に「スライド」するダイアログ ボックスです。 次のスクリーン ショットでは、スライダーはウィンドウの右側の **レンタル開始** というキャプションがある白い領域です。 ユーザーがスライダーの下にあるページは操作できないことを理解できるように、スライダーの左側の領域がグレー表示になっていることに注意します。 
 
-[![スライダー ダイアログ ボックスのスクリーン ショット](./media/slidermessagebox.png)](./media/slidermessagebox.png) 
+[![スライダー ダイアログ ボックスのスクリーン ショット。](./media/slidermessagebox.png)](./media/slidermessagebox.png) 
 
 スライダーを開いた後、ユーザーは 2 つの方法で閉じることができます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "5749594"
 ## <a name="messagebox"></a>MessageBox
 MessageBox は、既存のページ上に「ライト ボックス」として表示されるダイアログのタイプです。 MessageBox は全幅モーダル ポップアップとして表示されます。 次のスクリーン ショットは、メッセージ ボックスの例を示しています。 
 
-[![メッセージ ボックス ダイアログの例](./media/2_dialog.png)](./media/2_dialog.png) 
+[![メッセージ ボックス ダイアログの例。](./media/2_dialog.png)](./media/2_dialog.png) 
 
 MessageBox は、重要な状況について通知するためユーザーを中断させる必要がある場合に使用する正しいメカニズムです。 たとえば、ユーザーにメッセージ センターのエラー メッセージを表示するため、メッセージ ボックスが使用されます。 MessageBox はモーダルなので、ユーザーはその MessageBox が処理されるか、または却下されるまで MessageBox の下のページとやりとりができません。 前のスクリーン ショットで、ページが MessageBox によって見えづらくなっていることを確認します。 また、メッセージ ボックスの上下にある領域は、ページが現在インタラクションのために使用可能でないことをユーザーが理解するのを助けるために影付きで表示されます。 スライダーとは異なり、ユーザーは斜線領域の外側をクリックして MessageBox を閉じることはできません。 MessageBox は、Box アプリケーション プログラミング インターフェイス (API)、またはエラーの表示をトリガーするために前述したメソッドのいずれかを使用してトリガーできます。 詳細については、[メッセージ API: メッセージ センター、メッセージ バー、メッセージの詳細](messaging-api-center-bar-details.md) を参照してください。
 

@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (2021 年 6 月)
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: Finance 10.0.18 (2021 年 5 月)
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -1566,6 +1564,8 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: 国境を越えたサービスのレポート
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: 仕入関税
+                  href: localizations/emea-aut-purchase-duties.md
             - name: バーレーン
               items:
                 - name: バーレーンの概要
@@ -1992,6 +1992,10 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: EU イントラスタット申告の生成
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: フランスのイントラスタット
+                      href: localizations/emea-fra-intrastat.md
+                    - name: イタリアのイントラスタット
+                      href: localizations/emea-ita-intrastat.md
                 - name: 在庫仕訳レポート
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: 請求書発行の期限
@@ -2968,6 +2972,12 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
                 - name: レジスターを使用した VAT 申告 (JPK_V7M、VDEK)
                   href: localizations/emea-pol-vdek.md
+                - name: JPK-V7M レポートの準備
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: JPK-V7M レポート
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: JPK-V7M レポートの特定のビジネス シナリオの詳細
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: カタール
               items:
                 - name: カタールの概要
@@ -3204,6 +3214,8 @@
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: 売掛金勘定の貸倒損失引当
                       href: localizations/rus-bad-debts.md
+                    - name: 税資産および未払税金の登録の計算
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: サウジアラビア
               items:
                 - name: サウジアラビアの概要
@@ -3997,6 +4009,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: 画像が埋め込まれた Office 形式でレポートを生成する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: ER 形式をデザインして、ページのヘッダーまたはフッターに画像が埋め込まれた Excel でレポートを生成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: 生成されたファイルの BOM 文字を非表示にする

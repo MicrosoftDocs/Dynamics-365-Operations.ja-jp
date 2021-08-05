@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08cc5a7c73ed62e7a5c81f2f6598507e1f5d47e5
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 1e993ecdde65fe2b1e945e9ea516c807931aa32b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193059"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354357"
 ---
 # <a name="dialog-form-pattern"></a>ダイアログのフォーム パターン
 
@@ -49,19 +49,19 @@ ms.locfileid: "6193059"
 
 ### <a name="dialog"></a>ダイアログ
 
-[![ダイアログのワイヤーフレーム](./media/dialogform1.png)](./media/dialogform1.png)
+[![ダイアログのワイヤーフレーム。](./media/dialogform1.png)](./media/dialogform1.png)
 
 ### <a name="dialog-wtabs-and-dialog-wfasttabs"></a>タブ付きダイアログおよびクイック タブ付きダイアログ
 
-[![タブとクイックタブによるダイアログのワイヤフレーム](./media/dialogform2.png)](./media/dialogform2.png)
+[![タブとクイックタブによるダイアログのワイヤフレーム。](./media/dialogform2.png)](./media/dialogform2.png)
 
 ### <a name="dialog-wdouble-tabs"></a>二重タブ付きダイアログ
 
-[![ダブル タブによるダイアログのワイヤフレーム](./media/dialogform3.png)](./media/dialogform3.png)
+[![ダブル タブによるダイアログのワイヤフレーム。](./media/dialogform3.png)](./media/dialogform3.png)
 
 ### <a name="dialog-read-only"></a>ダイアログ (読み取り専用)
 
-[![ダイアログのワイヤーフレーム (読み取り専用)](./media/dialogform4.png)](./media/dialogform4.png)
+[![ダイアログのワイヤーフレーム (読み取り専用)。](./media/dialogform4.png)](./media/dialogform4.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -199,31 +199,31 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 フォーム: **ProjTableCreate** (**プロジェクト管理と会計** &gt; **共通** &gt; **プロジェクト** &gt; **すべてのプロジェクト** の順にクリックし、**新規** をクリックします。) 
 
-[![基本ダイアログの例](./media/dialogform5.png)](./media/dialogform5.png)
+[![基本ダイアログの例。](./media/dialogform5.png)](./media/dialogform5.png)
 
 ### <a name="dialog-wtabs"></a>タブ付きダイアログ
 
 フォーム: **CaseDetailCreate** (**共通** &gt; **共通** &gt; **ケース** &gt; **すべてのケース** の順にクリックして、**新規** をクリックします。) 
 
-[![タブによるダイアログの例](./media/dialogform6.png)](./media/dialogform6.png)
+[![タブによるダイアログの例。](./media/dialogform6.png)](./media/dialogform6.png)
 
 ### <a name="dialog-wfasttabs"></a>クイック タブ付きダイアログ
 
 この例では、このパターンを使用するフォームの例は現在含まれていないため、**CaseDetailCreate** フォームの修正バージョンを示しています。 
 
-[![クイックタブによるダイアログの例](./media/dialogform7.png)](./media/dialogform7.png)
+[![クイックタブによるダイアログの例。](./media/dialogform7.png)](./media/dialogform7.png)
 
 ### <a name="dialog-wdouble-tabs"></a>二重タブ付きダイアログ
 
 フォーム: **PurchTableReferences** (**買掛金勘定** &gt; **共通** &gt; **発注書** &gt; **すべての発注書** の順にクリックし、**一般** &gt; **関連情報** &gt; **関連する注文** の順にクリックします。) 
 
-[![ダブル タブによるダイアログの例](./media/dialogform8.png)](./media/dialogform8.png)
+[![ダブル タブによるダイアログの例。](./media/dialogform8.png)](./media/dialogform8.png)
 
 ### <a name="dialog-read-only"></a>ダイアログ (読み取り専用)
 
 フォーム: **SalesTablePostings** (**売掛金勘定** &gt; **共通** &gt; **販売注文** &gt; **すべての販売注文** の順にクリックし、**一般** &gt; **関連情報** &gt; **転記** の順にクリックします。) 
 
-[![ダイアログの例 (読み取り専用)](./media/dialogform9.png)](./media/dialogform9.png)
+[![ダイアログの例 (読み取り専用)。](./media/dialogform9.png)](./media/dialogform9.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -254,7 +254,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![以前のバージョン コンテンツ](./media/dialogform10.png)](./media/dialogform10.png)
+[![以前のバージョン コンテンツ。](./media/dialogform10.png)](./media/dialogform10.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

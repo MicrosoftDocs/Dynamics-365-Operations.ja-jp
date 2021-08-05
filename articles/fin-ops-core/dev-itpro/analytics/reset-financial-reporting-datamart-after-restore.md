@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ae2328fe101a1286ea8790aeff8dd2472f47337
-ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
+ms.openlocfilehash: e71a47620df36fa9c1d1dc250dcd4bad4d77195e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "6224576"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350120"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
@@ -40,7 +40,7 @@ ms.locfileid: "6224576"
 
 レポート デザイナーでデータマートをリセットするには、 以下の図に示されているように、 **ツール** メニューで **データマートのリセット** を選択します。 表示されるダイアログ ボックスには2つのセクションがあります: **統計** および **リセット**。
 
-[![データ マートのダイアログ ボックスをリセットします](./media/Reset-72.jpg)](./media/Reset-72.jpg)
+[![データ マートのダイアログ ボックスをリセットします。](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>統合試行回数
 
@@ -62,7 +62,7 @@ ms.locfileid: "6224576"
 - **データベースの復元** – データベースが復元されましたが、財務報告のデータ マートのデータベースは復元されませんでした。
 - **その他** – 別の理由によりデータ マートをリセットしています。 問題があることを懸念する場合は、識別のためにサポートに問い合わせてください。
 
-[![データ マートのリセット](./media/Integration.png)](./media/Integration.png)
+[![データ マートをリセットします。](./media/Integration.png)](./media/Integration.png)
 
 > [!NOTE]
 > リセットを開始する前に、すべてのデータ マート リセット タスクが初回の読み込みを完了したことを確認します。 **ツール** &gt; **統合の状態** を選択して、前回のランタイム列で値を探すことにより、これを確定できます。
@@ -75,7 +75,7 @@ ms.locfileid: "6224576"
 
 統合の状態を確認する場合は、**ツール** &gt; **統合の状態** を選択し、統合が最後に実行された時刻と状態を表示します。
 
-[![統合のステータスを表示](./media/New-integration.PNG)](./media/New-integration.PNG)
+[![統合のステータスを表示します。](./media/New-integration.PNG)](./media/New-integration.PNG)
 
 > [!NOTE]
 > すべてのマッピングの状態が **RanToCompletion** と表示され、 **統合の状態** ダイアログボックスの左下隅に「統合が完了しました」というメッセージが表示されたら、リセットは完了です。

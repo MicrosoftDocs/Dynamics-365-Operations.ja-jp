@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 71ae8b2ae984fe9251d4befb411549d60d127272
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5eb9d5b88efdfb9e682c8097c96986c30fd81fb8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890371"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361300"
 ---
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 
@@ -29,10 +29,10 @@ ms.locfileid: "5890371"
 
 次の表に、Go-Live プロセスのフェーズ、各フェーズが予想される期間に適用される環境タイプ、アクションを実行する担当者の一覧を示します。
 
-![Go-live プロセス](./media/go-live-process.PNG)
+![Go-live プロセス。](./media/go-live-process.PNG)
 
 
-| フェーズ  | アクション | 環境タイプ | 期間/時 | 誰 | 摘要 |
+| フェーズ  | 操作 | 環境タイプ | 期間/時 | 誰 | 摘要 |
 |-|-|-|-|-|-|
 | 1 | LCS での運用日付の更新 | 両方 | 遅くとも 2 ～ 3 か月前に | 顧客/パートナー | マイルストーンの日付は、継続的に最新のものにする必要があります。 |
 | 2 | Go-Live 前チェックリストの完了と送信 | 両方 | ユーザー受け入れテスト (UAT) が完了した後 | 顧客/パートナー | このトピックの後半の "FastTrack Go live 評価" セクションの指示に従います。 |
@@ -93,7 +93,7 @@ UAT フェーズ中に、実装したすべてのビジネス プロセスおよ
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack Go-live 評価
 
-すべての顧客は、実稼働環境を展開する前に Microsoft FastTrack チームとの Go-live レビューを完了する必要があります。 運用環境を要求する前に、この評価を正常に完了する必要があります。 Microsoft FastTrack に馴染みがない場合は、[FastTrack for Dynamics 365 ホーム ページ](/dynamics365/fasttrack/) を参照してください。
+すべての顧客は、実稼働環境を展開する前に Microsoft FastTrack チームとの Go-live レビューを完了する必要があります。 運用環境を要求する前に、この評価を正常に完了する必要があります。 Microsoft FastTrack に馴染みがない場合は、[FastTrack for Dynamics 365 ホームページ](/dynamics365/fasttrack/)を参照してください。
 
 Go-Live の約 8 週間前に、FastTrack チームが Go-Live チェックリストへの記入を求めます。 
 

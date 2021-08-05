@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 65f9a6c6b73ce0b64a314cea52c8cfc8955f8484
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29fd34068a7974bc779070d23d7d0578427b3e40
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752232"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350118"
 ---
 # <a name="configure-workspaces-by-using-the-sysappworkspace-class"></a>SysAppWorkspace クラスを使用してワークスペースを構成する
 
@@ -45,13 +45,13 @@ ms.locfileid: "5752232"
 
 1. ワークスペース用の新しいクラスを作成し、それを **SysAppWorkspace** クラスから拡張します。
 
-    ![ワークスペース クラス](media/workspace-api/WorkspaceClass.png)
+    ![ワークスペース クラス。](media/workspace-api/WorkspaceClass.png)
 
 2. 新しいクラスに **SysAppWorkspaceAttribute** 属性を追加し、ワークスペースの **AppID** 値を指定します。 アプリ用アプリ ID はモバイル アプリ デザイナー内の **概要** ページで見つけることができます。
 
-    ![ワークスペース概要のアプリ ID](media/workspace-api/workspaceSummary.png)
+    ![ワークスペース概要のアプリ ID。](media/workspace-api/workspaceSummary.png)
 
-    ![ワークスペース クラスの AppID 値](media/workspace-api/WorkspaceClassWithAppId.png)
+    ![ワークスペース クラスの AppID 値。](media/workspace-api/WorkspaceClassWithAppId.png)
 
 3. オプション: ワークスペースがアプリケーション オブジェクト ツリー (AOT) リソースの場合、AOT リソースの名前を **SysAppWorkspaceAttribute** コンストラクターの 2 番目のパラメーターとして指定します。
 
@@ -64,32 +64,32 @@ AOT リソースとして存在するワークスペースを公開するには�
 
 1. データベースに格納されるワークスペースを作成するとき、AOT リソースとして保存できるように、それをモバイル アプリ デザイナーからエクスポートする必要があります。 ワークスペースは XML ファイル形式でエクスポートされます。
 
-    ![ワークスペースをエクスポート](media/workspace-api/ExportWorkspace.png)
+    ![ワークスペースをエクスポートします。](media/workspace-api/ExportWorkspace.png)
 
 2. モバイル アプリのデザイナーからワークスペースを削除します。 それを後で AOT リソースから読み込みます。
 
-    ![ワークスペースの削除](media/workspace-api/DeleteWorkspace.png)
+    ![ワークスペースを削除します。](media/workspace-api/DeleteWorkspace.png)
 
 3. 新しい AOT リソースを作成し、リソースのエクスポートされたワークスペースを選択します。
 
-    ![リソースとしてのワークスペース](media/workspace-api/WorkspaceAsResource.png)
+    ![リソースとしてのワークスペース。](media/workspace-api/WorkspaceAsResource.png)
 
 4. ワークスペース用の新しいクラスを作成します。 このクラスは、**SysAppWorkspace** を拡張する必要があります。 **SysAppWorkspaceAttribute** 属性をクラスに適用し、リソースを含むアプリ ID と AOT リソース名を指定します。
 
-    ![新しいワークスペース クラス](media/workspace-api/NewWorkspaceClass.png)
+    ![新しいワークスペース クラス。](media/workspace-api/NewWorkspaceClass.png)
 
 5. クラスをビルドして、モバイル アプリ デザイナーを再オープンします。
 
     ワークスペースが公開されました。 これはデザイナーに表示されますが、編集または削除できません。 ワークスペースがメタデータから読み込まれることに注意してください。
 
-    ![メタデータ内のワークスペース](media/workspace-api/WorkspaceInMetadata.png)
+    ![メタデータ内のワークスペース。](media/workspace-api/WorkspaceInMetadata.png)
 
 ## <a name="update-a-workspace-that-has-already-been-published"></a>発行済みワークスペースの更新
 ワークスペースが AOT リソースの一部である場合、モバイル アプリ デザイナーを使用して編集することはできません。 次の例では、**MyWorkspace** というワークスペースが AOT に存在し、そこには **WorkspaceInAOT** というバッキング クラスがあります。
 
-![AOT 内のワークスペース](media/workspace-api/UpdateWorkspaceInAOT.png)
+![AOT 内のワークスペース。](media/workspace-api/UpdateWorkspaceInAOT.png)
 
-![AOT 内にある公開済みのワークスペース](media/workspace-api/UpdateWorkspaceInAOTAndPublished.png)
+![AOT 内にある公開済みのワークスペース。](media/workspace-api/UpdateWorkspaceInAOTAndPublished.png)
 
 ワークスペースを編集するには、これらの手順に従います。
 
@@ -99,13 +99,13 @@ AOT リソースとして存在するワークスペースを公開するには�
    1. オプション: 名前を変更します。新たに追加されたワークスペースを他のワークスペースと区別できるようにします。
    2. 新しく作成したワークスペースのアプリ ID をコピーします。
 
-      ![データベースの新しいワークスペース](media/workspace-api/UpdateWorkspaceNewWorkspace.png)
+      ![データベースの新しいワークスペース。](media/workspace-api/UpdateWorkspaceNewWorkspace.png)
 
-      ![新しいワークスペースの詳細](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png)
+      ![新しいワークスペースの詳細。](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png)
 
 3. バッキング クラスを拡張し、**SysAppWorkspaceAttribute** 属性を適用し、新しいアプリ ID を指定する新しいクラスを作成します。
 
-    ![メタデータ内のワークスペース](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png)
+    ![メタデータ内のワークスペース。](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png)
 
 新しいワークスペースおよびバッキング クラスでの作業を続行することができるようになりました。 変更を行なった後、AOT ベース ワークスペースとそれらをマージできます。
 
@@ -114,17 +114,17 @@ AOT リソースとして存在するワークスペースを公開するには�
 
 1. ワークスペースを含む AOT リソースを削除します。
 
-    ![削除するワークスペース](media/workspace-api/WorkspaceAsResourceToBeDeleted.png)
+    ![削除するワークスペース。](media/workspace-api/WorkspaceAsResourceToBeDeleted.png)
 
 2. ワークスペース用に作成されたワークスペース クラスを削除します。
 
-    ![削除するワークスペース クラス](media/workspace-api/WorkspaceClassToBeDeleted.png)
+    ![削除するワークスペース クラス。](media/workspace-api/WorkspaceClassToBeDeleted.png)
 
 3. AOT リソースおよびクラスを含む完全なモデル ビルドを実行します。 次の図は、アプリケーション基準モデルの完全なビルドを示しています。 アプリケーション基盤モデルには、AOT リソースとワークスペース クラスも含まれます。 フルビルドをスピードアップするには、**オプション** タブですべての選択をクリアします。
 
-    ![完全なビルド メニュー項目](media/workspace-api/FullBuildMenuItem.png)
+    ![完全なビルド メニュー項目。](media/workspace-api/FullBuildMenuItem.png)
 
-    ![完全なビルド](media/workspace-api/FullBuild.png)
+    ![完全なビルド。](media/workspace-api/FullBuild.png)
 
 4. ビルドが完了したら、モバイル アプリ デザイナーを再オープンして、ワークスペースが存在しないことを確認します。
 

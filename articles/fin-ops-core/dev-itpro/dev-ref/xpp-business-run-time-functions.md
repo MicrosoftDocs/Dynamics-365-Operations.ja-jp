@@ -3,20 +3,18 @@ title: X++ ビジネス ランタイム関数
 description: このトピックでは、ビジネス ランタイム関数について説明します。
 author: RobinARH
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31281
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 739b37cd94e5938a4123b6f13974cdf2f40e4471
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: ccb41c09f8694bb68b649fe4abca3cb844b52140
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866027"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661448"
 ---
 # <a name="x-business-runtime-functions"></a>X++ ビジネス ランタイム関数
 

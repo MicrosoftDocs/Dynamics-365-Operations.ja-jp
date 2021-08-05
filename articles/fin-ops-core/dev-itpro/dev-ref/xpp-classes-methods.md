@@ -3,20 +3,18 @@ title: クラスおよびメソッド
 description: このトピックでは、X++ でクラスを作成および使用する方法について説明します。
 author: RobinARH
 ms.date: 06/17/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150303
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 671267558606d4aa5f81b76293919dc93f92e011
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d1ff33d2e8b6b7f770d5fef5a9f4deda3c569f1b
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866029"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661446"
 ---
 # <a name="classes-and-methods"></a>クラスおよびメソッド
 
@@ -286,7 +284,7 @@ ReturnType = *データ型*  **| void | anytype**
 
 MethodName = *識別子* 
 
-パラメーター リスト = **\[** *パラメーター* **{、***パラメーター* **}\]** 
+パラメーター リスト = **\[** *パラメーター*  **{、**  *パラメーター*  **}\]** 
 
 パラメーター = *データ型* *変数識別子* **\[ =**  *式*  **\]** 
 

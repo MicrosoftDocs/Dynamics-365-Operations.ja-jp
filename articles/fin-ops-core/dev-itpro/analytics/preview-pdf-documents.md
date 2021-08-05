@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6de5dd4cce65a328dfbd5390ac709bcf66dbac9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 8fe24af700c74f9f07af331ca23c731730af1528
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892475"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358683"
 ---
 # <a name="preview-pdf-documents-using-a-pdf-viewer"></a>PDF ビューアを使用した PDF ドキュメントのプレビュー
 
@@ -28,7 +28,7 @@ ms.locfileid: "5892475"
 埋め込みのビューアーを使うと、画面条の表示内容と印刷された内容に整合性を持たせることができます。 加えて、従来の操作と比較してレポートの表示時間が大幅に短縮されます。 Preview オプションは対応するすべての機器での使用が可能であり、サードパーティ製のソフトウェアを追加する必要はありません。 組み込みのビューア ツールバー オプションを使用すると、ドキュメントのダウンロードおよび閲覧が簡単になります。
 
 次の図は、最新のビジネスドキュメントをプレビューした例です。
-![PDFプレビュー フォーム](./media/pdf-document-preview.png)
+![PDF プレビュー フォーム。](./media/pdf-document-preview.png)
 
 従来のHTMLベースのプレビューは、実物のドキュメントに即したプレビューへと取って代わります。 最新のPDFプレビュー機能には、いくつかの重要な特徴があります。 以下のような特徴を持っています:
 

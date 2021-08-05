@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: 6c487064e65d4d1c0b4607853e14a84957f7c0d4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9b06cee31ab8932c6ae4ce05c0a5396f71cea59f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744753"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350722"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
@@ -66,7 +66,7 @@ Activities that can appear in flowcharts are described in the following table.
 
 1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** をクリックします。
 2.  **プロジェクト ライブラリ** セクションで、表示するライブラリを選択します。 
-3.  業務プロセス ライブラリを展開し、関連付けられたフローチャート アイコンを持つライブラリ ノードをクリックします: [![フローチャート BPM トピック 1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
+3.  業務プロセス ライブラリを展開し、関連付けられたフローチャート アイコンを持つライブラリ ノードをクリックします: [![フローチャート BPM トピック 1。](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
 
     フローチャートが表示されます。 プロセスの各活動は、図の形によって表されます。 プロセス ステップが右のウィンドウに表示されます。 
 
@@ -144,7 +144,7 @@ Visio のダイアグラムなどの未接続のフローチャートは、Finan
 <!--
 ### View an unconnected flowchart
 
-A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
+A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2.](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
 --->

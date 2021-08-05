@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 39ffe349239b232636a9362e18bcff4f324337a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 971af78444a78f09d139d66ddceae53bd813059b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830750"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346470"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 
@@ -52,7 +52,7 @@ ms.locfileid: "5830750"
 
 ロイヤルティ契約は、**ロイヤリティ契約** ページで登録されます。 **ロイヤルティ契約** ページを開くには、**買掛金勘定 \> ブローカーおよびロイヤルティ \> ロイヤルティ契約** を選びます。
 
-![ロイヤルティ契約ページ](./media/royalty-contract-management-royalty-agreements-page.png "ロイヤルティ契約ページ")
+![ロイヤルティ契約ページ。](./media/royalty-contract-management-royalty-agreements-page.png "ロイヤルティ契約ページ")
 
 ページの下の部分の **選択** タブは、ロイヤリティ手数料の対象製品を示しています。
 
@@ -73,7 +73,7 @@ ms.locfileid: "5830750"
 
 販売注文明細行がロイヤリティ手数料の対象となるかどうかを確認するには、**販売注文明細行 \> 表示 \> 価格の詳細** を選択します。 **価格の詳細** ページで、**ロイヤルティ** クイックタブを選択します。
 
-![価格の詳細ページのロイヤルティ クイック タブ](./media/royalty-contract-management-price-details.png "価格の詳細ページのロイヤルティ クイック タブ")
+![価格の詳細ページのロイヤルティ クイック タブ。](./media/royalty-contract-management-price-details.png "価格の詳細ページのロイヤルティ クイック タブ")
 
 **ロイヤリティ** クイック タブは、明細行に適用される有効な契約コードからのロイヤリティ手数料を示しています。 また、**詳細** クイック タブの **利益見積** にある **ロイヤリティ金額** フィールドは、製品単位あたりのロイヤリティ手数料を指定します。
 

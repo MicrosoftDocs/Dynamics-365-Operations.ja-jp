@@ -3,20 +3,18 @@ title: X++ プリミティブ データ型
 description: このトピックでは、X++のプリミティブ データ型について説明します。
 author: RobinARH
 ms.date: 06/17/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150183
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c6a03cb65406f6f5c945ed658c61e6483c6d0f8
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: b0cd0941b194ac5aabf37cf057455cb7bd8d6888
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866011"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661478"
 ---
 # <a name="x-primitive-data-types"></a>X++ プリミティブ データ型
 

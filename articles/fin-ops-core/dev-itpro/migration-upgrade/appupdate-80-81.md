@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: ad2673af08d08427ad3c2f7fdcbac0e3a50bd0f9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 79707ce398eed15d0800e28fec7047854cde70fe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745251"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345650"
 ---
 # <a name="update-environments-from-version-80-to-100x"></a>バージョン 8.0 から 10.0.X への環境の更新
 
@@ -60,12 +60,12 @@ Lifecycle Services で、手順 1 で配置した **ビルド サーバー** に
 ## <a name="begin-branch-work-for-version-control-and-remove-any-application-hotfixes"></a>バージョン管理の分岐作業を開始し、アプリケーション修正プログラムを削除
 新しい環境が展開されるとき、更新の分岐作業を開始します。 例として、バージョン管理での次の分岐構造を使用します。  分岐の設計は顧客ごとに異なりますので、分岐の設定に基づき、それに応じてステップを調整するように注意してください。
 
-[![VersionControl](./media/VersionControl.png)](./media/VersionControl.png)
+[![VersionControl。](./media/VersionControl.png)](./media/VersionControl.png)
 
 ### <a name="prepare-using-visual-studio"></a>Visual Studio を使用する準備
 その他の開発コンピューター (展開される新規コンピューター以外) で、Visual Studio を開き、ソース管理エクスプローラーに移動します。 10.0.X 更新用に分離される新しい分岐を作成します。
 
-[![BranchFor81](./media/BranchFor81.png)](./media/BranchFor81.png)
+[![BranchFor81。](./media/BranchFor81.png)](./media/BranchFor81.png)
 
 次に、この分岐で Microsoft パッケージ フォルダーを削除します。 削除する必要のある 8.0 での修正プログラムの適用するからチェックインした、ApplicationSuite などのパッケージがあります。 カスタム パッケージまたは ISV が残っているときのみ、分岐にこれらの変更をチェックインします。
 

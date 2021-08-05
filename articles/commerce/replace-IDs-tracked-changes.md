@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0a0a9e778e3dbcf86029e5df5811c3a3fe4a4913
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 080a97e4fa436392680a62ea232f9881a17c452e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792063"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345096"
 ---
 # <a name="replace-user-ids-associated-with-tracked-content-changes"></a>追跡しているコンテンツの変更に関連付いたユーザー ID の置換
 
@@ -36,12 +36,12 @@ Dynamics 365 Commerce では、サイト ビルダー オーサリング ツー�
 1. サイトの **ホーム** ページに移動します。
 1. 左のナビゲーション ウィンドウで、**テナントの設定** を展開し、**コンテンツ変更の追跡** を選択します。
 
-    ![選択したコンテンツ変更の追跡](./media/TrackingContentChanges.png)
+    ![選択したコンテンツ変更の追跡。](./media/TrackingContentChanges.png)
 
 1. **コンテンツ変更の追跡** ページで、**管理** を選択します。
 1. **電子メール アドレスの置換** フィールドに、変更追跡ログから削除するユーザー ID の電子メール アドレスを入力し、**置換** を選択します。 (**置換** を選択する前に、複数の電子メール アドレスを入力することができます。)
 
-    ![[電子メール アドレスの管理] ダイアログ ボックスに入力された電子メール アドレス](./media/ReplaceEmailAddress.png)
+    ![[電子メール アドレスの管理] ダイアログ ボックスに入力された電子メール アドレス。](./media/ReplaceEmailAddress.png)
 
 1. **OK** を選択してから、**保存** を選択します。 メッセージ ボックスに、入力したユーザー ID のレコードが更新されたことが通知されます。
 

@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 218654
+ms.custom:
+- "218654"
+- intro-internal
 ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
 ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 35d00d59f961c1eef2f148da433a72ba34016a19
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 656416ca9efecc45241f5d56c9d67bcbfca777df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795679"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354663"
 ---
 # <a name="commerce-runtime-crt-architecture-and-configuration"></a>Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 
@@ -31,7 +33,7 @@ ms.locfileid: "5795679"
 
 次の図は、Microsoft Dynamics 365 Commerce Runtime (CRT) のコンポーネントを示しています。 
 
-[![Commerce Runtime コンポーネント](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
+[![Commerce Runtime のコンポーネント。](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
 
 ### <a name="data-access"></a>データ アクセス
 

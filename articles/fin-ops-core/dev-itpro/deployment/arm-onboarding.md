@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 751de21b403105640978b2da590c1edc15ceeead
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e428e8c1af06ac7181259dad27a3a0cbd1d51e45
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748805"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358965"
 ---
 # <a name="complete-the-azure-resource-manager-arm-onboarding-process"></a>Azure Resource Manager (ARM) の研修プロセスを完了します。
 
@@ -66,7 +66,7 @@ Azure サブスクリプションで動作するよう LCS DSU を承認する�
     > [!NOTE]
     > 一部の Azure サブスクリプションには **アクセス制御 (IAM)** セクションではなく **ユーザー** セクションがあります。 この場合、**ユーザーの追加** ダイアログ ボックスの **選択** フィールドに、**Dynamics 配置サービス \[wsfed 有効\]** と入力して **選択** を選択します。
     
-[![Dynamics 配置サービス \[wsfed 有効\]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
+[![Dynamics 配置サービス \[wsfed 有効\.\]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
 
 3.  **ロールの割り当て** タブで、アプリは **貢献者** として割り当てられます。 
     > [!NOTE]

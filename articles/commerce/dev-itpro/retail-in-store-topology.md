@@ -13,12 +13,12 @@ ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 71d5cc9e35288c5b627475fce8fdafa0878bfddc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1f7c2778a135cf6fc96107a8827e18b0a802fe8f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019519"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358745"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 
@@ -26,7 +26,7 @@ ms.locfileid: "6019519"
 
 このトピックでは、様々な Dynamics 365 Commerce の実店舗構成図の概要を提供します。 
 
-<a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![右側の店舗の構成図を選択する](media/CHANNEL/INSTORE/Topology.jpg)</a>
+<a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![適切な店舗トポロジを選択します。](media/CHANNEL/INSTORE/Topology.jpg)</a>
 
 ## <a name="supported-capabilities-when-connectivity-is-lost"></a>接続が失われたときにサポートしている機能
 | 操作 | Commerce Scale Unit への接続がされていないとき<br>MPOS オフライン モード | 本部への接続がされていないとき<br>(Commerce Scale Unit (自己ホスト)) |

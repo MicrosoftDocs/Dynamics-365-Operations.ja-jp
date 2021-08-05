@@ -3,21 +3,16 @@ title: MultiLookupMetadata タイプ
 description: 複数ルックアップ メタデータの種類。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3308fa842a8c3c5ab47e1762046a239da79d1204
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fede842f59524db1ea2008b6d5b47c19948573e1
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750928"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661532"
 ---
 # <a name="multilookupmetadata-type"></a>MultiLookupMetadata タイプ
 
@@ -53,7 +48,7 @@ ms.locfileid: "5750928"
 * [ReferenceAppId](view-model-control-lookup-imultilookup-imultilookupmetadata.md#referenceappid)
 * [ReverseLookupRelation](view-model-control-lookup-imultilookup-imultilookupmetadata.md#reverselookuprelation)
 * [ShowPending](view-model-control-lookup-imultilookup-imultilookupmetadata.md#showpending)
-* [[タイプ](view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)]
+* [タイプ](view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)
 
 ### <a name="events"></a>イベント
 

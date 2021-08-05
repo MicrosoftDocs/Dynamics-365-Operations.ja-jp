@@ -3,21 +3,16 @@ title: サービス モジュール
 description: クライアントの実行時に、アプリケーションで使用できるさまざまなサービス。
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 187a4dfc0e24464bac4fefb5dcc742b7b7af1fd5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7ac66a9e05c234c7ef4246b3829eea65c5c63eee
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750530"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661482"
 ---
 # <a name="services-module"></a>サービス モジュール
 

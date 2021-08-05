@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 346f894637dd0ad10ae65d39551004e3c9be4fe1
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 8e9e45e646d707bec81779b06902a5f5494f0c7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936694"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353876"
 ---
 # <a name="dynamics-365-fraud-protection-integration-with-dynamics-365-commerce"></a>Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
 
@@ -76,7 +76,7 @@ Fraud Protection から最初に使用可能な一般的なオファリングは
 
 Fraud Protection 購入保護が注文の中止をおこなった場合は、ユーザーは次のメッセージを受信します : 「このオーダーは現時点では処理できません 後でもう一度お試しください。」
 
-![参照となる店舗から拒否された注文の例](../media/Payments/SampleDFPReject.png)
+![参照となる店舗から拒否された注文の例。](../media/Payments/SampleDFPReject.png)
 
 あるいは、マーチャント ルールがこの注文は承認されるべきと判断した場合は、不正スコアと Fraud Protection で判定された理由コードを含む回答が店舗へ送信されます。 初期統合では、Fraud Protection 評価はどちらにしても使われておらず、承認と拒否の両セクションの回答は保存されません。
 
@@ -107,16 +107,16 @@ Key Vault に保管されている Fraud Protection 証明書は、Commerce の�
 #### <a name="commerce-parameters-setup"></a>コマース パラメーターの設定
 
 1. **Retail とコマース** \> **バックオフィスの設定** \> **パラメーター** \> **コマース パラメーター** の順に移動します。
-2. **Dynamics Fraud Protection** タブで、**Dynamics Fraud Protection 統合を有効にする** オプションを **はい** に設定します。
+2. **Dynamics Fraud Protection** タブで、**Dynamics Fraud Protection 統合を有効化** オプションを **はい** に設定します。
 3. **構成** ファストタブで、Azure Active Directory (Azure AD) クライアント ID を追加し、その後、前に構成した Key Vault シークレットの名前を選択します。
 
     規定では、**評価の種類** フィールドは **評価** に設定します。 この場合は、Fraud Protection は不正の注文を従順にチェックしますが、積極的に注文の拒否はしません。 従って、マーチャントは Fraud Protection のリスク評価を自分たちの不正ツールと比較をし、承諾レートで Fraud Protection の影響を理解することができます。
 
     または、**評価の種類** フィールドは **保護** に設定できます。 この場合、Fraud Protection は「拒否」評価を返答し、承認に送信またはバック オフィスで作成される前に、不正な注文は中止されます。
 
-4. **Dynamics Fraud Protection エンドポイント URL** フィールドは設定する必要があります。 この URL は Fraud Protection から提供され、ユーザー受け入れテスト (UAT) と運用環境に渡り異なります。
+4. **Dynamics Fraud Protection エンドポイント URL** フィールドを設定する必要があります。 この URL は Fraud Protection から提供され、ユーザー受け入れテスト (UAT) と運用環境に渡り異なります。
 
-![Retail パラメーターでの Fraud Protection 設定](../media/Payments/DFPSetupParams1.png)
+![Retail パラメーターでの Fraud Protection 設定。](../media/Payments/DFPSetupParams1.png)
 
 > [!NOTE]
 > Key Vault 設定と Fraud Protection 設定は会社固有です。 Fraud Protection を運用環境に対して有効にするには、ユーザーインターフェイス (UI) を通して Azure AD クライアント ID は入力しません。 その代わり、[サービス要求](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) を作成および提出する必要があります。 要求のタイトルには、この要求が運用版 Commerce または Retail のための Fraud Protection 購入保護を構成するためであることを明確に示します。

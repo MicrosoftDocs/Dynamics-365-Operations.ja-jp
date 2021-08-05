@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 6154
+ms.custom:
+- "6154"
+- intro-internal
 ms.assetid: ejchoGIT
 ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd954f58b764c031432da0eb204590b3082c3189
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 78e064812cf2359a4cee10dddc14770e32ce4cbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349134"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service の概要
 
@@ -31,7 +33,7 @@ DTS は、翻訳出力の品質を最大限に高めるために [Microsoft 一�
 
 次の図は、サービスが、高レベルで、どのように機能するかを示しています。
 
-![DTS のしくみ](./media/dts-overview.png "DTS のしくみ")
+![DTS のしくみ。](./media/dts-overview.png "DTS のしくみ")
 
 ## <a name="recycling-existing-translations"></a>既存の翻訳をリサイクル
 既存の言語資産は、ローカライズ交換ファイル形式 (XLIFF) を使用する翻訳メモリ (TM) ファイルを含む zip ファイルに資産がアップロードされた場合にのみ再利用できます。 詳細については、[翻訳メモリ ファイル](./use-translation-service-tm.md) を参照してください。
@@ -70,7 +72,7 @@ LCS のホーム ページから DTS にアクセスして、翻訳要求を作�
 
 次の図は、LCS のホームページから開いた DTS ダッシュボードの例を示しています。
 
-![LCS のホーム ページから開いた DTS ダッシュ ボード](./media/dts-home-dashboard.png "LCS のホーム ページから開いた DTS ダッシュ ボード")
+![LCS のホーム ページから開いた DTS ダッシュ ボード。](./media/dts-home-dashboard.png "LCS のホーム ページから開いた DTS ダッシュ ボード")
 
 LCS プロジェクトは常に製品に関連付けられているため、プロジェクトから送信する翻訳要求にはプロジェクトの製品タイプとバージョン情報が自動的に含まれます。 要求では異なる製品を選択することはできません。
 
@@ -78,7 +80,7 @@ LCS プロジェクトでは、プロジェクト所有者とユーザーに、D
 
 次の図は、LCS プロジェクト内から開いた DTS ダッシュボードの例を示しています。
 
-![プロジェクト内から開いた DTS ダッシュ ボード](./media/dts-project-dashboard.png "プロジェクト内から開いた DTS ダッシュ ボード")
+![プロジェクト内から開いた DTS ダッシュ ボード。](./media/dts-project-dashboard.png "プロジェクト内から開いた DTS ダッシュ ボード")
 
 ## <a name="glossary"></a>用語集
 

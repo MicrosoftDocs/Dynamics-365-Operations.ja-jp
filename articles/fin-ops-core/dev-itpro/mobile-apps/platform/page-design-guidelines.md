@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 6848f8480ad6e68dbf0899c9fe4b581a62ecee10
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 33392480797ecc6320f0ddd5a159a20754f075f3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752688"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344848"
 ---
 # <a name="page-design-guidelines"></a>ページ デザインのガイドライン
 
@@ -58,7 +58,7 @@ ms.locfileid: "5752688"
 3.  詳細ビューで使用されるフォームが、フィルター ウィンドウを使用して固有のキー フィールドでフィルターできることを確認します。
 4.  デザイナーで、リスト ビュー ページが詳細表示ページにリンクされていることを確認します。 リストをクリックしてプロパティを開き、ルックアップを使用して詳細表示ページを設定します。 
 
-    ![詳細ビュー ページへのリスト ビュー ページのリンク](media/listtodetailsdesigner.png)
+    ![リスト ビュー ページを詳細ビュー ページにリンクします。](media/listtodetailsdesigner.png)
 
 ### <a name="how-do-i-add-a-reference-field-that-enables-navigation-to-a-related-entity"></a>ナビゲーションを有効にする参照フィールドを関連するエンティティに追加する方法はありますか。
 
@@ -66,13 +66,13 @@ ms.locfileid: "5752688"
 2.  ページに参照されているエンティティから参照フィールドが含まれていることを確認します。
 3.  参照先のフィールドが参照先のエンティティのデータ ソースにバインドされており、参照先のエンティティが参照を含むエンティティのデータ ソースに *外部結合*(1-0..1) または *内部結合*(1-1) されていることを確認します。 たとえば、次の図では、FMRental は参照を含むエンティティで、FMVehicle は参照されたエンティティです。
 
-    ![参照フィールドを参照されるエンティティのデータ ソースにバインドする](media/relatedentityform.png)
+    ![参照フィールドを参照されるエンティティのデータ ソースにバインドします。](media/relatedentityform.png)
 
 4.  参照されているエンティティに対して個別の詳細ビュー ページを作成したことを確認します。
 5.  参照フィールドがページに追加されたことを確認します。
 6.  デザイナーで、参照フィールドが参照されているエンティティの詳細表示にリンクされていることを確認します。 たとえば、次の図では、車両詳細は参照されたエンティティの詳細ビュー ページです。
 
-     ![参照フィールドの参照先のエンティティの詳細ビューへのリンク](media/referencepagedesigner.png)
+     ![参照フィールドを、参照先エンティティの詳細ビューにリンクします。](media/referencepagedesigner.png)
 
 ### <a name="how-do-i-add-a-list-that-contains-items-from-a-related-entity-to-a-details-view-page"></a>関連するエンティティからの品目を含む一覧を、詳細ビュー ページに追加する方法はありますか。
 

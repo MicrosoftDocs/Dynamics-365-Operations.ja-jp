@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b21b24255474a11c5f41e9382636f57cda6054
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 26302762a90ced5a976391daa95b175d905077d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111712"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347232"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
@@ -39,7 +39,7 @@ ms.locfileid: "6111712"
 ## <a name="conceptualclass-model"></a>概念/クラス モデル
 次の図は、為替レート プロバイダーのフレームワークを構成する主なインターフェイスとクラス、およびそれらの関係を示しています。 新しい為替レート プロバイダーは、**IExchangeRateProvider** インターフェイスから派生している必要があります。 為替レート プロバイダーは、X++ で記述されます。 X++ は .NET 言語なので、プロバイダーで簡単に Microsoft .NET Framework を使用できます。 
 
-[![為替レート プロバイダー フレームワークの概念/クラス モデル](./media/exchangerates.png)](./media/exchangerates.png) 
+[![為替レート プロバイダー フレームワークの概念/クラス モデル。](./media/exchangerates.png)](./media/exchangerates.png) 
 
 図で表示されるインターフェイスおよびクラスを次に示します。
 
@@ -47,7 +47,7 @@ ms.locfileid: "6111712"
 - **IExchangeRateProviderFrameworkFactory** – このインターフェイスにより、為替レート プロバイダーは、図の中のいくつかのインターフェイスを表す様々なタイプのプロバイダー フレームワーク クラスを作成することができます。
 - **IExchangeRateProviderSupportedOptions** – 為替レート プロバイダーは、レートをインポートする際にいくつかのオプションをサポートします。 為替レート プロバイダーは、このインターフェイスを使用して、サポートするオプションについてフレームワークに通知します。
 - **IExchangeRateProviderConfig** – 各為替レート プロバイダーは、固有のコンフィギュレーションを持つことができます。 このインターフェイスにより、プロバイダーはこの構成を取得できます。
-- <strong>IExchangeRateProviderConfigDefaults</strong> - 為替レート プロバイダーは、コンフィギュレーションのデフォルト値を作成して提供できます。 ユーザーは、<strong>為替レート プロバイダーのコンフィギュレーション</strong> ページ (<strong>一般会計</strong> &gt; <strong>通貨 **&gt; **為替レート プロバイダーのコンフィギュレーション</strong> でこれらの値を変更できます)。
+- <strong>IExchangeRateProviderConfigDefaults</strong> - 為替レート プロバイダーは、コンフィギュレーションのデフォルト値を作成して提供できます。 ユーザーは、<strong>為替レート プロバイダーのコンフィギュレーション</strong> ページ (<strong>一般会計</strong> &gt; <strong>通貨 **&gt;**為替レート プロバイダーのコンフィギュレーション</strong>でこれらの値を変更できます)。
 - **IExchangeRateRequest** – このインターフェイスは、為替レートのインポートを要求する固有のデータを表します。 このデータには、日付範囲、オプション、レートを取得するための通貨ペアが含まれます。
 - **IExchangeRateCalendar** – このインターフェイスは、次の作業日 (月曜日から金曜日まで) を取得する場合に使用される為替レート カレンダーを表します。
 - **IExchangeRateResponse** – 為替レート プロバイダーでは、このインターフェイスを使用して、通貨のペアや、サービスから返される為替レートを格納します。

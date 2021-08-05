@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 5657c6e6bf99aef28c05448c811f24bb7cf1b802
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 366821f8c776430f8c7caee9b0d045a8a203833c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019527"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345148"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -73,25 +73,25 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 
 テスト レコーダーを開くには、Cloud POS にログインしてから、**設定** ページの **タスクとテスト レコーダー** セクションで、**テスト レコーダーを開く** を選択します。
 
-[![タスクおよびテスト レコーダー](./media/CreateTest.png)](./media/CreateTest.png)
+[![タスクおよびテスト レコーダー。](./media/CreateTest.png)](./media/CreateTest.png)
 
 ### <a name="stop-a-recording-session"></a>記録セッションの停止
 
 記録セッションを終了するには、**停止** を選択します。 終了後に記録セッションを再起動することはできません。 そのため、記録セッションが完了したことを確認してから終了してください。
 
-[![テスト レコーダーの停止ボタン](./media/Stop.png)](./media/Stop.png)
+[![テスト レコーダーの停止ボタン。](./media/Stop.png)](./media/Stop.png)
 
 ### <a name="pause-a-recording-session"></a>記録セッションの一時停止
 
 記録セッションを一時的に停止 (一時停止) するには、**一時停止** を選択します。 **一時停止** を選択した後で実行するステップは記録されません。
 
-[![テスト レコーダーの一時停止ボタン](./media/Pause.png)](./media/Pause.png)
+[![テスト レコーダーの一時停止ボタン。](./media/Pause.png)](./media/Pause.png)
 
 ### <a name="continue-a-recording-session"></a>記録セッションの続行
 
 一時停止後に記録セッションを再開するには、**記録** を選択します。
 
-[![テスト レコーダーの記録ボタン](./media/Recording.png)](./media/Recording.png)
+[![テスト レコーダーの記録ボタン。](./media/Recording.png)](./media/Recording.png)
 
 ### <a name="start-and-end-a-task"></a>タスクの開始と終了
 
@@ -100,19 +100,19 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 タスクはその他のタスク内で入れ子にすることができます。 この方法を使用すると、非常に長く複雑な業務プロセスをさらに上手に整理できます。
 
 > [!div class="mx-imgBorder"]
-> [![タスク](./media/StartTask.png)](./media/Recording.png)
+> [![タスク。](./media/StartTask.png)](./media/Recording.png)
 
 ### <a name="add-a-new-task"></a>新しいタスクの追加
 
 > [!div class="mx-imgBorder"]
-> [![新しいタスク](./media/NewTask.png)](./media/NewTask.png)
+> [![新しいタスク。](./media/NewTask.png)](./media/NewTask.png)
 
 ### <a name="add-an-annotation"></a>注釈の追加
 
 注釈は、記録でステップに追加するテキストです。 たとえば、注釈を使用して、詳細なコンテキストや指示をユーザーに与えることができます。 ステップの右側にある **編集** ボタン (鉛筆のアイコン) を選択して、任意のステップに注釈を追加できます。
 
 > [!div class="mx-imgBorder"]
-> [![テスト レコーダーの注釈鉛筆ボタン](./media/Annotation.png)](./media/Annotation.png)
+> [![テスト レコーダーの注釈鉛筆ボタン。](./media/Annotation.png)](./media/Annotation.png)
 
 ### <a name="add-text-and-notes"></a>テキストとメモの追加
 
@@ -126,20 +126,20 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 記録セッション中に入力されたユーザー入力値を変更できます。 たとえば、記録セッション中に製品 0005 を追加した場合、既定では、製品 ID は Recording.xml ファイルに格納されます。 別の製品 ID を指定する場合は、ここで値を変更できます。 この値は、ユーザー入力がある場合のみ表示されます。
 
 > [!div class="mx-imgBorder"]
-> [![値と注釈の編集](./media/EditAnnotation.png)](./media/EditAnnotation.png)
+> [![値と注釈を編集する。](./media/EditAnnotation.png)](./media/EditAnnotation.png)
 
 ### <a name="hide-the-test-recorder-pane"></a>テスト レコーダー ウィンドウの非表示
 
 記録セッション中にテスト レコーダー ウィンドウの非表示と表示を切り替えるには、折りたたみボタンを選択します。
 
 > [!div class="mx-imgBorder"]
-> [![折りたたみボタン](./media/Hide.png)](./media/Hide.png)
+> [![折りたたみボタン。](./media/Hide.png)](./media/Hide.png)
 
 ### <a name="test-recorder-floating-control"></a>テスト レコーダーのフローティング コントロール
 
 テスト レコーダーのフローティング コントロールは、記録セッション中にテスト レコーダー ウィンドウが非表示になっている場合に役立ちます。 テスト レコーダー ウィンドウは、エラーのないダイアログ ボックスや POS ビューの一部をオーバーライドします。 したがって、ダイアログ ボックスで検証を追加したり、コントロールを選択したりするために、ウィンドウを非表示にすることが必要な場合があります。 テスト レコーダー ウィンドウが非表示になっていても、テスト記録機能にアクセスする必要がある場合 (たとえば、検証モードをオンにしたり、記録セッションを一時停止または続行する必要がある場合)、このフローティング コントロールを使用できます。
 
-[![フローティング コントロール](./media/Floatter.png)](./media/Floatter.png)
+[![フローティング コントロール。](./media/Floatter.png)](./media/Floatter.png)
 
 次のセクションでは、フローティング コントロール上のコントロールについて説明します。
 
@@ -174,12 +174,12 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 
 3. **設定** ページの **タスクとテスト レコーダー** セクションで、**テスト レコーダーを開く** を選択します。
 
-    [![タスクおよびテスト レコーダー](./media/CreateTest.png)](./media/CreateTest.png)
+    [![タスクおよびテスト レコーダー。](./media/CreateTest.png)](./media/CreateTest.png)
 
 4. **新しい記録の作成** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > [![新しい記録の作成](./media/NewTest.png)](./media/Newtest.png)
+    > [![新しい記録を作成する。](./media/NewTest.png)](./media/Newtest.png)
 
 5. 記録の名前と説明を入力し、**開始** を選択します。
 
@@ -192,7 +192,7 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 6. POS ユーザー インターフェイスで必要なアクションを実行します。
 
     > [!div class="mx-imgBorder"]
-    > [![テスト レコーダーのステップ](./media/Steps.png)](./media/Steps.png)
+    > [![テスト レコーダーのステップ。](./media/Steps.png)](./media/Steps.png)
 
 ### <a name="validation-mode"></a>検証モード
 
@@ -204,7 +204,7 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
     > [!NOTE]
     > 検証モードがオンになっている場合、テスト レコーダーは一時停止状態になります。 検証ステップが追加されるのみとなります。POS は検証ステップの追加以外のユーザー アクションには応答しません。 たとえば、検証モードでは、異なる POS ビューを開いたり、POS 機能を使用したりすることはできません。 記録セッションを続行するには、**検証モードの有効化** オプションを **いいえ** に設定して、検証モードをオフにする必要があります。
 
-    [![テスト レコーダーの検証](./media/Validation.png)](./media/Validation.png)
+    [![テスト レコーダーの検証。](./media/Validation.png)](./media/Validation.png)
 
 3. 記録セッションを終了するには、**停止** を選択します。
 
@@ -213,7 +213,7 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 記録セッションを終了した後、**このPC に保存** を選択することにより、記録をダウンロードできます。
 
 > [!div class="mx-imgBorder"]
-> ![テスト レコーダーの出力ファイルの保存](media/Save.png)
+> ![テスト レコーダーの出力ファイルの保存。](media/Save.png)
 
 .axtr ファイルは、ローカル ファイル システムに保存されます。 このファイルを LCS または Azure DevOps に手動でアップロードしてから、ファイル システムから削除するか、セキュリティで保護する必要があります。 
 
@@ -250,7 +250,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
    + **デバイス** - テストを実行するデバイスの ID を入力します。
    + **既定の待機時間** - いずれの要素も見つからなかった場合に、テスト ケースが失敗するまでの待機時間を秒単位で入力します。 テストの実行中、再生エンジンは、既定の待機時間が経過するまで要素の検索を試行し続けます。 その後、テスト ケースに失敗し、記録されていた要素が見つからなかったか、再生用に読み込まれなかったことを通知します。
 
-    [![再生環境](./media/Settings.PNG)](./media/Settings.PNG)
+    [![再生環境。](./media/Settings.PNG)](./media/Settings.PNG)
 
 5. **POS ログイン資格情報** タブを選択します。
 
@@ -258,11 +258,11 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
     
     したがって、**POS ログイン資格情報** タブでは、記録セッション中に使用されたすべてのユーザー名とパスワードの情報を入力して、テストの実行中にパスワードを取得できるようにする必要があります。 入力しない場合、テストの実行は失敗し、サインインの詳細が見つからなかったことが通知されます。
 
-    [![POS ログインの資格情報](./media/PosLogin.png)](./media/PosLogin.png)
+    [![POS ログインの資格情報。](./media/PosLogin.png)](./media/PosLogin.png)
 
 6. **新規** を選択します。
 
-    [![POS ユーザー](./media/EditPosUser.png)](./media/EditPosUser.png)
+    [![POS ユーザー。](./media/EditPosUser.png)](./media/EditPosUser.png)
 
 7. **ユーザー名** フィールドに、POS へのサインイン用のユーザー名を入力します。
 8. **パスワード** フィールドに、POS へのサインイン用のパスワードを入力します。
@@ -281,7 +281,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 
 RSAT で、**読み込み** を選択して、テスト ケースとテスト ケース自動化ファイルを Azure DevOps からダウンロードします。 **設定** ダイアログ ボックスで指定されたテスト計画に属する、すべてのテスト ケースがダウンロードされます。
 
-![貨物](./media/RSATLoad.png)
+![読み込み。](./media/RSATLoad.png)
 
 テスト ケースは、共通のテスト計画の下にあるテスト スイート別にまとめられています。 テスト スイートは、Azure DevOps プロジェクトで作成したテスト スイートです。 RSAT を使用することにより、一度に 1 つのテスト スイートを操作できます。 RSAT でテスト ケースを読み込むことができない場合は、Azure DevOps でテスト計画が正しく作成されていること、および必要なテスト スイートとテスト ケースが含まれていることを確認します。
 
@@ -294,11 +294,11 @@ RSAT で、**読み込み** を選択して、テスト ケースとテスト �
 
 **新規** を選択すると、テスト自動化ファイルが作業ディレクトリに生成されます。 Excel テスト パラメーター ファイルは、グリッドの **パラメーター ファイル** 列に表示されます。
 
-![パラメーター ファイル列のテスト パラメーター ファイル](./media/RSATParameter.png)
+![パラメーター ファイル列のテスト パラメーター ファイル。](./media/RSATParameter.png)
 
 テストの記録ファイルの場合、**テストの実行ファイルのみを生成** オプションは使用できません。 Cloud POS は、Selenium WebDriver を直接使用して再生を実行するため、追加のスクリプト ファイルを生成する必要はありません。
 
-![利用不可のテスト実行ファイルのみ生成オプション](./media/RSATNewOption.png)
+![利用不可のテスト実行ファイルのみ生成オプション。](./media/RSATNewOption.png)
 
 ### <a name="modify-test-parameters-and-validation-values"></a>テスト パラメーターおよび検証値の変更
 
@@ -328,7 +328,7 @@ POS のテストケース間で変数または値を渡すには、RSAT ツー�
 
 記録セッション中に、検証モードをオンにします。 次に、テスト レコーダーが記録している間に、検証する必要があるフィールドをすべて選択します。 このアクションが RSAT で使用できる検証ステップになります。 検証値は、入力された順に、Excel ファイルの **変数** タブに表示されます。 その後、テストの実行前に Excel ファイルの値を変更し、テストの実行中に新しい値を使用してデータの入力および検証を行うことができます。
 
-![値の編集](./media/RSATExcel.png)
+![値を編集します。](./media/RSATExcel.png)
 
 ### <a name="run"></a>実行
 

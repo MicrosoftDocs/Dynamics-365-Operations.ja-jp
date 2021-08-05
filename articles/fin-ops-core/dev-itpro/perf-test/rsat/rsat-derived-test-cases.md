@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1202991f22f084e6e12b28d7ab159092b0916fe8
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 225736ba9bbe058de3a2345602d114e0e16b5fb7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865944"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346467"
 ---
 # <a name="derived-test-cases"></a>派生テスト ケース
 
@@ -28,11 +28,11 @@ Regression Suite Automation Tool (RSAT) を使用すると、複数のテスト 
 
 次の図では、**販売注文の作成と検証 - v2** という名前のテスト ケースからの派生テスト ケースが作成されています。 (Azure DevOps の) 派生テスト ケースに **販売注文の作成と検証 - v2 (検証に失敗)** という名前が付けられています。
 
-![派生テスト ケースの例](media/derived-test-case.png)
+![派生テスト ケースの例。](media/derived-test-case.png)
 
 Azure DevOps において、派生テスト ケースは **販売注文の作成と検証 - v2** テスト ケースの子項目であり、特別なキーワード **RSAT:DerivedTestSteps** でタグ付けされています。
 
-![自動的に作成された派生テスト ケースの例](media/derived-1.png)
+![自動的に作成された派生テスト ケースの例。](media/derived-1.png)
 
 派生テスト ケースを実行すると、親テスト ケースの記録と Excel パラメーター ファイルのコピーが使用されます。 これにより、複数の記録を維持することなく、異なるパラメーターで同じテストを実行できます。
 

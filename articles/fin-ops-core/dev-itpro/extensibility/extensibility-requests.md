@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 51384548775563df07c37c4a514583dd68ecaae6
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: cde30874f8ff1ae27628270adcb37bab14cc0c29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866055"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347852"
 ---
 # <a name="extensibility-requests"></a>拡張性の要求
 
@@ -48,7 +48,7 @@ LCS の特定のプロジェクトを使用して、拡張機能の要求が記�
 
 ページの上部にある LCS プロジェクトで、ハンバーガー アイコンを選択し **サポート** メニュー項目をクリックします。
 
-![拡張機能のサポート リクエスト](media/extensibility-support-requests.png)
+![拡張機能のサポート リクエスト。](media/extensibility-support-requests.png)
 
 ログ出力された拡張性サポート要求のリストとその状態を表示できます。 ログに記録された要求の詳細を確認するには、要求 ID をクリックします。 
 
@@ -68,7 +68,7 @@ Microsoft 追跡データベースに要求がコピーされる間に、ログ�
   > Microsoft は指定された日付によりすべての要求が指定されるよう保証していないことに注意してください。 ただし、必要な日時は、Microsoft の要求を計画する際に考慮されるインジケータを提供します。
 
 
-![拡張機能サポート オプションを管理します。](media/extensibility-options.png)
+![拡張機能サポート オプションの管理。](media/extensibility-options.png)
 
 サポート オプションの拡張機能は、要求が作成された後のすべての変更を反映するように更新できます。 要求に更新プログラムを完了した後、**更新** をクリックし、変更内容をマイクロソフトに通知します。
 
@@ -83,7 +83,7 @@ Microsoft ではインライン デリゲートを追加することにより要
 
 要求に添付できるドキュメントをアップロードするには、**コンピュータからの添付ファイル** をクリックします。 添付ファイルを使用して、要求の追加の詳細を提供するコード スニペットを提供することができます。 できるだけ具体的なものにすることをお勧めします。
 
-![拡張機能のサポート リクエストの作成](media/create-extensibility-request.png)
+![拡張機能のサポート リクエストの作成。](media/create-extensibility-request.png)
 
 各インスタンスの要求を記録します。 複数の要求を 1 つにバンドルしないでください。 複数の要求が関連付けられている場合は、リクエスト ID を含むドキュメントまたは説明を追加することを検討して、要求に関する作業がコンテキスト内で考慮されるようにします。
 

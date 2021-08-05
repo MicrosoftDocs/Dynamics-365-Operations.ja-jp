@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8dede6c73a493e3864b0601b1695009fd3e995eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: f2dbdeda7db879f050e11da8ee9883b244cc9055
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937000"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346022"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
 
@@ -49,7 +49,7 @@ ms.locfileid: "5937000"
 
 次の図は、N-1 手順の高レベル概要を示しています。
 
-![段階的なロールアウト (N-1) アーキテクチャ](media/CDX/N-1/Overview.jpg)
+![段階的なロールアウト (N-1) アーキテクチャ。](media/CDX/N-1/Overview.jpg)
 
 ## <a name="verify-that-the-n-1-license-key-is-turned-on"></a>N-1 ライセンス キーが有効であることを確認します。
 
@@ -333,7 +333,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 
 次の図は、これらの手順のビジュアル表示です。
 
-![段階的なロールアウト (N-1) アーキテクチャの概要](media/CDX/N-1/Cutover.jpg)
+![段階的なロールアウト (N-1) アーキテクチャの概要。](media/CDX/N-1/Cutover.jpg)
 
 ## <a name="troubleshooting-steps"></a>トラブルシューティングの手順
 

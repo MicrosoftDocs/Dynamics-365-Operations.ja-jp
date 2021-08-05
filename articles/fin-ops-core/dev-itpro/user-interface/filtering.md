@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4659953bca838b7cc86f947be6ec68fa8b772d13
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c2181de78e1388144bc7a94652a9cd32a4d41243
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189316"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354342"
 ---
 # <a name="filtering-options"></a>フィルター処理のオプション
 
@@ -118,7 +118,7 @@ Finance and Operations アプリでのフィルター処理と Dynamics AX 2012 
 フィルタ ウィンドウは、単純で簡単に使用できます。 最初に、各フィルター フィールドに関連付けられているリストで、フィルター演算子を選択します。 表示される演算子のセットは、フィールドのデータ型によって異なることに注意してください。 フィルター条件に適切な値を入力して **適用** をクリックします。 フォームは、指定したフィルター基準に基づいて更新されます。
 
 ## <a name="quickfilter"></a>QuickFilter
-Dynamics AX 2012 では、QuickFilter がリスト ページにのみ自動的に追加されるフレームワーク コントロールでした。 Finance and Operations アプリでは、QuickFilter はシステム内で任意のグリッドに関連付けることができるモデル化されたコントロールになっています。 ユーザーが入力を開始すると、列セレクター ドロップダウンが表示され、フィルターが適用される列に向かってユーザーがガイドされます。 開発者は QuickFilter の既定の列も指定できます。 開発者によって列が指定されていない場合は、グリッドにフィルター処理される最初のフィールドが既定の列です。 [![QuickFilter コントロール](./media/3_filter.png)](./media/3_filter.png)
+Dynamics AX 2012 では、QuickFilter がリスト ページにのみ自動的に追加されるフレームワーク コントロールでした。 Finance and Operations アプリでは、QuickFilter はシステム内で任意のグリッドに関連付けることができるモデル化されたコントロールになっています。 ユーザーが入力を開始すると、列セレクター ドロップダウンが表示され、フィルターが適用される列に向かってユーザーがガイドされます。 開発者は QuickFilter の既定の列も指定できます。 開発者によって列が指定されていない場合は、グリッドにフィルター処理される最初のフィールドが既定の列です。 [![QuickFilter コントロール。](./media/3_filter.png)](./media/3_filter.png)
 
 ### <a name="why-dont-i-have-a-column-selector-in-my-quickfilter"></a>自分の QuickFilter 内に列セレクターがないのはなぜですか。
 
@@ -133,7 +133,7 @@ Dynamics AX 2012 では、QuickFilter がリスト ページにのみ自動的�
 -   目的のフィルター処理を実行するためメソッド内にコードを記述します。
 
 ## <a name="grid-column-header-filteringsorting"></a>グリッド列のヘッダーのフィルター処理/並べ替え
-Finance and Operations アプリでは、グリッド フィルター エクスペリエンスは Microsoft Excel での体験により近く調整されています。 ユーザーが列のヘッダーをクリックするとき (フィルター処理できる列の場合) 、ドロップ ダイアログが表示され、ユーザーはそのダイアログを使用して列をフィルター処理できます。 ここでのフィルタリング経験は、フィルター ウィンドウでのフィルタリング経験を模倣します。 また、現在選択されている列に基づくグリッドをソートするオプションがあります。 [![グリッド フィルタのスクリーン ショット](./media/4_filter.png)](./media/4_filter.png)
+Finance and Operations アプリでは、グリッド フィルター エクスペリエンスは Microsoft Excel での体験により近く調整されています。 ユーザーが列のヘッダーをクリックするとき (フィルター処理できる列の場合) 、ドロップ ダイアログが表示され、ユーザーはそのダイアログを使用して列をフィルター処理できます。 ここでのフィルタリング経験は、フィルター ウィンドウでのフィルタリング経験を模倣します。 また、現在選択されている列に基づくグリッドをソートするオプションがあります。 [![グリッド フィルターのスクリーン ショット。](./media/4_filter.png)](./media/4_filter.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

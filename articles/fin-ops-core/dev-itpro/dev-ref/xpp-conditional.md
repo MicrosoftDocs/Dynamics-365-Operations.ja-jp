@@ -3,20 +3,18 @@ title: X++ 条件付きステートメント
 description: このトピックでは、X++の条件付きステートメントについて説明します。
 author: RobinARH
 ms.date: 06/17/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150213
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc70031ab0984545f1641cb8b8536e37549365b8
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 580b91930b16c80fe800503f9a5b4b35e8abf334
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866021"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661444"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 

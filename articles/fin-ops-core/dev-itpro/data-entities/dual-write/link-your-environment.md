@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef9afa7ecb3e1228fd0db27ee45283e37accb6c3
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: b999b66cc32469914ccf231269552faf7adac1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103614"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358631"
 ---
 # <a name="use-the-dual-write-wizard-to-link-your-environments"></a>二重書き込みウィザードを使用して環境をリンクする
 
@@ -31,22 +31,22 @@ ms.locfileid: "6103614"
 1. Dataverse 環境にリンクする Finance and Operations アプリ環境にサインインします。
 2. **ワークスペース \> データ管理** に移動して、**デュアル書き込み** のタイルを選択します。
 
-    ![二重書き込みタイル](media/navigate-to-data-management.png)
+    ![二重書き込みタイル。](media/navigate-to-data-management.png)
 
 3. **環境への新しいリンク** を選択して、**Dataverse へのリンク設定** ウィザードを開きます。
 4. **環境の選択** ページには、サインインしたユーザーが環境管理者であるすべての Dataverse 環境が一覧表示されます。リンク先の Dataverse 環境を選択し、**次へ** を選択します。
 
-    ![環境ページを選択する](media/data-service-environment.png)
+    ![環境ページを選択します。](media/data-service-environment.png)
 
 5. 法人を選択して、**次へ** を選択します。
 
-    ![法人の選択手順](media/select-legal-entities.png)
+    ![法人の手順を選択します。](media/select-legal-entities.png)
 
     正常性チェックを実行し、システムが二重書き込みを有効にするための要件を満たしていることを確認します。 正常性チェックでは、すべての前提条件が完了していることも確認します。 いずれかの正常性チェックが失敗した場合は、次の手順に進む前に、すべての前提条件を完了していることを確認してください。
 
     次の例では、アプリを接続するためのアクセスが許可されているかどうかのテストが失敗しました。 この場合、最初に適切なアプリケーション ID を作成して、アプリを接続するためのアクセス許可を付与する必要があります。 その後、ウィザードを再実行する必要があります。
 
-    ![正常性チェック ページ](media/health-check.png)
+    ![正常性チェック ページ。](media/health-check.png)
 
 6. 概要、プライバシー通知、同意を確認し、**作成** を選択します。
 
@@ -59,11 +59,11 @@ Finance and Operations アプリを Dataverse 環境にリンクしました。
 
     Finance and Operations アプリの **二重書き込み** ページで、**ソリューションの適用** を選択し、ダウンロードしてインストールしたテーブル マップを適用します。 ソリューションを適用すると、既定のテーブル マップが公開されていることが確認できます。
 
-     ![テーブル マップを適用する](media/apply-entity-maps.png)
+     ![テーブル マップを適用します。](media/apply-entity-maps.png)
 
 Microsoft が公開した二重書き込みテーブル マップ ソリューションを環境に正常にインポートして適用しました。
 
-![テーブル マップは正常にリンクされました](media/entity-maps-linked.png)
+![テーブル マップは正常にリンクされました。](media/entity-maps-linked.png)
 
 
 ## <a name="next-steps"></a>次のステップ

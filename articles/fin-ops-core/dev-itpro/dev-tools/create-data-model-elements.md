@@ -6,18 +6,18 @@ ms.date: 07/23/2019
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 23421
+ms.custom: intro-internal
 ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5b63d0cd0c995e06f42ce998893ad8f38ab61e
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 47e40436c43457fc3b06e2d1ff6da98fd0173cac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866005"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355286"
 ---
 # <a name="create-models-and-data-model-elements-overview"></a>モデルとデータ モデル要素の作成の概要
 
@@ -55,12 +55,12 @@ ms.locfileid: "5866005"
 
 4. **次へ** をクリックして次のページに移動し、次に **新しいパッケージの作成** を選択します。 作成しているモデルは独自のパッケージを持ち、独自の .NET アセンブリを構築します。
 
-    [![パッケージを選択](./media/package_datamodel.png)](./media/package_datamodel.png)
+    [![パッケージを選択。](./media/package_datamodel.png)](./media/package_datamodel.png)
 
 5. **次へ** をクリックし、**参照モデルを選択** ステップに進みます。
 6. 参照されるモデルとして **アプリケーション プラットフォーム** および **アプリケーション基盤** を選択します。
 
-    [![参照モデルを選択](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png)
+    [![参照モデルを選択。](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png)
 
     > [!IMPORTANT]
     > 正しい参照モデルを選択していることを確認します。
@@ -68,7 +68,7 @@ ms.locfileid: "5866005"
 7. **次へ** をクリックし、**概要** ステップに進みます。
 8. 概要ページの情報を確認してから、**新規プロジェクトの作成** および **これを新規プロジェクトの自分の既定のモデルにする** チェック ボックスを選択します。
 
-    [![データ モデルの概要](./media/summary_datamodel.png)](./media/summary_datamodel.png)
+    [![データ モデルの概要。](./media/summary_datamodel.png)](./media/summary_datamodel.png)
 
 9. **完了** をクリックします。 **新しいプロジェクト** ダイアログ ボックスが開きます。
 10. **テンプレート** で、**Dynamics 365** を選択します。
@@ -81,7 +81,7 @@ ms.locfileid: "5866005"
     | **保管場所** | C:\\FMLab       |
     | **ソリューション** | ソリューションへの追加 |
 
-    [![新しいプロジェクト ダイアログ](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)
+    [![新しいプロジェクト ダイアログ。](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)
 
 13. プロジェクトを作成するには、**OK** をクリックします。
 
@@ -92,11 +92,11 @@ ms.locfileid: "5866005"
 3. **EDT 文字列** をクリックし、を新しい項目の種類を選択します。
 4. **名前** フィールドに、**FMTAddress** と入力してから **追加** をクリックします。
 
-    [![新しいデータ タイプの追加](./media/newitem_datamodel.png)](./media/newitem_datamodel.png)
+    [![新しいデータ タイプの追加。](./media/newitem_datamodel.png)](./media/newitem_datamodel.png)
 
     これにより、新しい EDT モデル要素をプロジェクトに追加され、次の図に示すように、新しい要素の EDT デザイナーを開きます。
 
-    [![追加されたFMTAddress](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)
+    [![追加された FMTAddress。](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)
 
 5. デザイナーで **FMTAddress** ルート ノードを選択します。
 6. **プロパティ** ウィンドウの **外観セクション** で、次のプロパティを設定します。
@@ -107,7 +107,7 @@ ms.locfileid: "5866005"
     | **ラベル**       | 住所            |
     | **文字列サイズ** | 75                 |
 
-    [![FMTAddress のプロパティ ウィンドウ](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)
+    [![FMTAddress のプロパティ ウィンドウ。](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)
 
 7. **Ctrl+S** キーを押して EDT を保存します。
 
@@ -118,7 +118,7 @@ ms.locfileid: "5866005"
 1. **ソリューション エクスプローラー** で、**FMTDataModel** を右クリックして **追加** をポイントしてから **既存の項目** をクリックします。
 2. C:\\FMLab\\EDT\\ を参照します。
 
-    [![既存の品目を追加](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)
+    [![既存の品目を追加。](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)
 
 3. **Ctrl+A** を押してすべてのファイルを選択し、**追加** をクリックします。
 
@@ -129,13 +129,13 @@ ms.locfileid: "5866005"
 3. アーティファクトの一覧で **テーブル** を選択します。
 4. **名前** フィールドに、**FMTCustomer** と入力してから **追加** をクリックします。 テーブル デザイナーが開きます。
 
-   [![データ モデルにテーブルを追加](./media/add_datamodel.png)](./media/add_datamodel.png)
+   [![データ モデルにテーブルを追加。](./media/add_datamodel.png)](./media/add_datamodel.png)
 
 ### <a name="add-fields-to-the-fmtcustomer-table"></a>FMTCustomer テーブルへのフィールドの追加
 
 FMTCustomer のテーブル デザイナーで、テーブルに複数のフィールドを追加します。
 
-[![テーブルにフィールドを追加](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)
+[![テーブルにフィールドを追加。](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)
 
 1. 各フィールドを追加するには、**フィールド** を右クリックし、**新規** をクリックして、タイプを選択します。 各フィールドを追加すると、次の表に示すように、**プロパティ** ウィンドウでフィールド名とその他の特定の値を指定する必要があります。
 
@@ -155,7 +155,7 @@ FMTCustomer のテーブル デザイナーで、テーブルに複数のフィ�
     > [!TIP]
     > EDT を参照するテーブル内のすべての新しいフィールドでは、**ソリューション エクスプローラー** または **アプリケーション エクスプローラー** から EDT エレメントをドラッグし、デザイナーの **FMTCustomer** テーブルの **フィールド** ノードをドロップするだけで、フィールドを作成できます。
 
-    [![データ モデルを使用したソリューション エクスプローラー](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)
+    [![データ モデルを使用したソリューション エクスプローラー。](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)
 
 2. **Ctrl+S** キーを押して、テーブルに新しいフィールドを保存します。
 
@@ -200,7 +200,7 @@ FMTCustomer のテーブル デザイナーで、テーブルに複数のフィ�
 3. **EDT デザイナー** で、**FMTAddress** を選択します。
 4. **プロパティ** ウィンドウの **参照テーブル** フィールドで、**FMTCustomer** を選択します。 **ヒント:** ドロップダウン リストをクリックし、検索ボックスに、接頭語「FMT」を入力します。 これにより、名前に「FMT」が含まれている表のみが表示されるように、ドロップダウン リストがフィルター処理されます。 フィルター処理されたエントリの一覧から **FMTCustomer** テーブルを選択します。
 
-    [![プロパティ ウィンドウで FMTAddress EDT を更新する](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
+    [![プロパティ ウィンドウで FMTAddress EDT を更新する。](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
 
 5. EDT を保存します。
 

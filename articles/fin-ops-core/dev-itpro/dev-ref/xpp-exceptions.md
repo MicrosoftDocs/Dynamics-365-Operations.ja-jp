@@ -3,20 +3,18 @@ title: X++ 例外処理
 description: このトピックでは、X++の例外処理について説明します。
 author: RobinARH
 ms.date: 11/01/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150213
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f4efe8bd7bc17d7b2b5ab4edf5b9426df4359c1
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: f05311999e873c7bf80c94e95938bc6c3316e3e0
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865900"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661562"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 

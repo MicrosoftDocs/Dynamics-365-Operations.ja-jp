@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c8545a70bca7f3f8e98128e7c4ca3abca274b0b7
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 89556b030fbb87ae3af2aa983806843b278dec2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111644"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359747"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]
@@ -37,48 +37,48 @@ ms.locfileid: "6111644"
 ## <a name="create-a-basic-entity"></a>基本エンティティの作成
 最初のステップは、**新しい品目** を選択して、プロジェクト内に新しい要素を作成することです。. 
 
-[![新しい項目](./media/fd-basic.png)](./media/fd-basic.png)
+[![新しい項目。](./media/fd-basic.png)](./media/fd-basic.png)
 
 開いているフォームで、データ モデルの **データ エンティティ** 要素のタイプを選択します。
 
-[![データ要素](./media/fd-element.png)](./media/fd-element.png)
+[![データ要素。](./media/fd-element.png)](./media/fd-element.png)
 
 > [!NOTE] 
 > 後で名前を変更できないためエンティティに名前を付けるときは注意が必要です。
 
 次に、データ エンティティ ウィザードで、適切なプライマリ データ ソースを選択します。 シナリオでは、このデータ ソースは VendInvoiceTrans です。
 
-[![データ エンティティ ウィザード](./media/fd-wizard.png)](./media/fd-wizard.png)
+[![データ エンティティ ウィザード。](./media/fd-wizard.png)](./media/fd-wizard.png)
 
 VendInvoiceTrans の場合のように、ウィザードは自然キーを持たないテーブルを受け入れません。 したがって、次のエラー メッセージが表示される場合があります。
 
-[![ナチュラル キーのエラー](./media/fd-error.png)](./media/fd-error.png)
+[![ナチュラル キーのエラー。](./media/fd-error.png)](./media/fd-error.png)
 
 この問題を回避するには、VendGroup などの自然なキーが関連付けられている他のプライマリ データ ソースを選択します。
 
 このデータ ソースは実際には必要ないので、フィールドも必要ありません。 したがって、**すべて選択** チェック ボックスをオフにします。
 
-[![すべての選択を解除](./media/fd-wizard2.png)](./media/fd-wizard2.png)
+[![すべての選択を解除。](./media/fd-wizard2.png)](./media/fd-wizard2.png)
 
 最後に、**完了** をクリックして、エンティティのテンプレートを作成します。
 
 ## <a name="customize-the-basic-entity"></a>基本的なエンティティをカスタマイズします。
 エンティティ、ステージング テーブル、およびセキュリティ資産が作成され、カスタム エンティティを作成できるようになりました。 プロジェクトでは、デザイナーで VendorInvoiceTransactionDetailsEntity エンティティを開きます。 
 
-[![デザイナーの VendorInvoiceTransactionDetailsEntity](./media/fd-designer.png)](./media/fd-designer.png)
+[![デザイナーの VendorInvoiceTransactionDetailsEntity。](./media/fd-designer.png)](./media/fd-designer.png)
 
 デザイナーで、ウィザードに適用したダミー テーブル (VendGroup) を、トランザクション テーブル VendInvoiceTrans に変えます。 フィールドの追加を選択しなかったため、エンティティのフィールドを削除する必要はありません。
 
-[![データ エンティティのタイプ](./media/fd-menu.png)](./media/fd-menu.png)
+[![データ エンティティのタイプ。](./media/fd-menu.png)](./media/fd-menu.png)
 
 > [!NOTE] 
 > このエンティティを使用してトランザクション データを公開するため、エンティティを読み取り専用としてマークすることが重要です。 そのため、トップ ノードで **Is read only** プロパティを **Yes** に設定します。 勘定配布はバージョン管理されているため、クエリを実行するときに現在のバージョンのみが返されることが重要です。 したがって、この部分を複数のエンティティ間で簡単に再利用できるようにするビューを作成します。 
 
-[![VendInvoiceTrans と置き換え](./media/fd-menu2.png)](./media/fd-menu2.png)
+[![VendInvoiceTrans と置き換える。](./media/fd-menu2.png)](./media/fd-menu2.png)
 
 プロパティで、**ReferenceDistribution** に **0** の範囲フィルター値、**ReferenceRole** に **1** の範囲フィルター値を代入します。 AccountDistributionReverse データ ソースの結合モード プロパティは、**NoExistsJoin** である必要があります。 新しいビューを配置した後、現在作成している VendorInvoiceTransactionDetailsEntity エンティティに追加できます。 
 
-[![VendorInvoiceTransactionDetailsEntity の追加](./media/fd-menu3.png)](./media/fd-menu3.png)
+[![VendorInvoiceTransactionDetailsEntity に追加する。](./media/fd-menu3.png)](./media/fd-menu3.png)
 
 ## <a name="expose-financial-dimensions-as-fields"></a>財務分析コードをフィールドとして公開
 次の重要なステップは、財務分析コードをエンティティ上の異なるフィールドとして公開することです。 シナリオは転記済トランザクションの上に構築されるため、フィールドを DimensionCombinationentity エンティティに追加する必要があります。 拡張機能による方法を使用して復元力のある方法で調整を行います。これにより、コード ベースを新しいバージョンに今後アップグレードするとき、必要なメンテナンスは最小限になります。
@@ -123,7 +123,7 @@ VendInvoiceTrans の場合のように、ウィザードは自然キーを持た
 
 これらのメソッドを参照するカスタム フィールドを使用して、新たに作成されたエンティティ拡張機能にフィールドを追加しました。 
 
-[![フィールドの追加](./media/fd-menu4.png)](./media/fd-menu4.png)
+[![フィールドを追加します。](./media/fd-menu4.png)](./media/fd-menu4.png)
 
 次に、フィールドがマップされておらず、拡張機能クラスに対して作成したコードを通じて取得する必要があることを反映するためにプロパティ値を設定します。 リレーションを作成するとき、次の値も設定します。
 
@@ -132,30 +132,30 @@ VendInvoiceTrans の場合のように、ウィザードは自然キーを持た
 -   関連データ エンティティ カーディナリティ: **ZeroOne**
 -   関係タイプ: **関連**
 
-[![関係の作成](./media/fd-menu5.png)](./media/fd-menu5.png)
+[![関係を作成する。](./media/fd-menu5.png)](./media/fd-menu5.png)
 
 > [!Note]
 > クラス名でデータ メソッドを完全に修飾する必要があります。 
 
 新しい VendInvoiceTransactionentity エンティティに DimensionCombinationentity エンティティを追加する準備が整いました。 
 
-[![DimensionCombinationentity の追加](./media/fd-menu6.png)](./media/fd-menu6.png)
+[![DimensionCombinationentity を追加する。](./media/fd-menu6.png)](./media/fd-menu6.png)
 
 AccountingDistributionCurrent と DimensionCombinationentity エンティティの両方が外部結合であることに注意します。 
 
-[![外部結合](./media/fd-menu7.png)](./media/fd-menu7.png)
+[![外部結合。](./media/fd-menu7.png)](./media/fd-menu7.png)
 
 ここで、新しいエンティティで必須フィールドをさまざまなデータ ソースから **フィールド** ノード (つまり、新たに作成された ProductLine) にドラッグする必要があります。 
 
-[![ProductLine にドラッグ](./media/fd-menu8.png)](./media/fd-menu8.png)
+[![ProductLine にドラッグする。](./media/fd-menu8.png)](./media/fd-menu8.png)
 
 エクスポートの構成時に差分更新機能を有効にするために、エンティティにキーを追加する必要があります。 したがって、VendInvoiceTrans データ ソースの RecId が、たとえば VendInvoiceTransRecId と名付けられたフィールドの一部であることを確認する必要があります。 フィールドがフィールドリストに入った後、フィールドを **EntityKey** ノードにドラッグできます。 
 
-[![EntityKey にドラッグ](./media/fd-menu9.png)](./media/fd-menu9.png)
+[![EntityKey にドラッグする。](./media/fd-menu9.png)](./media/fd-menu9.png)
 
 ステージング テーブルが完全に構成されたエンティティに関連付けられていることを確認するには、ステージング テーブルを更新する必要があります。 エンティティのコンテキスト メニューで、**ステージング テーブルの更新** を選択します。 
 
-[![ステージング テーブルの更新](./media/fd-menu10.png)](./media/fd-menu10.png)
+[![ステージング テーブルを更新する。](./media/fd-menu10.png)](./media/fd-menu10.png)
 
 エンティティの作業が完了したら、それを構築することができます。 
 

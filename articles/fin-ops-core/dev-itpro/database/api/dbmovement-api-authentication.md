@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: c9e610f203c120f841b5929c28c3e1def6381a85
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 402282036c6704f08bb30fafb7c504e2c943c9c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940896"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359347"
 ---
 # <a name="database-movement-api---authentication"></a>データベース移動 API - 認証
 
@@ -74,7 +74,7 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
 5. **API アクセス許可** で、**アクセス許可の追加** を選択します。 次に、**自分の組織が使用する API** タブで、**Dynamics Lifecycle services** サービスを検索し、アプリに **ユーザー\_偽装** のアクセス許可を追加します。
 6. **登録** を選択します。
 
-[![Azure ポータルで新しいアプリに登録する](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
+[![Azure ポータルで新しいアプリに登録する。](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
 
 Azure AD は、アプリに固有のアプリケーション ID (クライアント ID) を割り当て、アプリの **概要** ページが表示されます。 アプリに複数の機能を追加するには、他のコンフィギュレーション オプション (ブランド化のオプションや証明書とシークレットのオプションなど) を選択できます。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1f0ecf0d9d178ad693d28090d897b1106ceeeb0
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c24e7a02554cd1ef3baeba4371a8c68bdbb3588e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189216"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357488"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 
@@ -37,7 +37,7 @@ ms.locfileid: "6189216"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-![簡易リストと詳細パターンのワイヤーフレーム](./media/nestedsimplelistanddetails1.png)
+![簡易リストと詳細パターンのワイヤーフレーム。](./media/nestedsimplelistanddetails1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -91,7 +91,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   レコードが追加されるとき、フォーカスは詳細セクションの最初のフィールドに移動するはずです。
 
 ## <a name="examples"></a>例
-フォーム: **HcmJob** (**TaskTabPage**) [![入れ子になった簡易リストおよび詳細サブパターンの例](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
+フォーム: **HcmJob** (**TaskTabPage**) [![入れ子になった簡易リストおよび詳細サブパターンの例。](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -113,7 +113,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![例](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
+[![例。](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

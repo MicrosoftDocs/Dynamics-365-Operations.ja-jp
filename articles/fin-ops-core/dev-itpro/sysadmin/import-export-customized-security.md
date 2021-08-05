@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8f3d81526cee4371a59b9bbf6ef70a43547abaed
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dfcca9f1797adba3ab43c0b317f718f34d06e89d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745977"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359727"
 ---
 # <a name="import-or-export-a-customized-security-configuration-by-using-data-management"></a>データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする 
 
@@ -38,7 +38,7 @@ ms.locfileid: "5745977"
 3. **グループ名** フィールドに、グループの名前を入力します。
 4. **データ パッケージの生成** オプションを **はい** に設定します。
 
-    ![データ パッケージの生成オプションを設定](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
+    ![データ パッケージの生成オプションの設定。](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
 
 5. **複数追加** をクリックして、ドロップダウン ダイアログ ボックスを開きます。
 6. 次のフィールドを設定して、エンティティをフィルタ処理します。

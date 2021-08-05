@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 4cc16e86d3c323ee549f9944d21e703d0c1eec71
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: c6d731148af3955262cb97c337f1caaa6f213a81
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923265"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344028"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -90,7 +90,7 @@ LCS の詳細については、 [Lifecycle Services のリソース](../lifecycl
 
 次の図は、Service Fabric スタンドアロン クラスターに配置されたノード タイプを示しています。
 
-![Service Fabric スタンドアロン クラスターに配置されるノード タイプ](media/on-premises-overview-01.png)
+![Service Fabric スタンドアロン クラスターに配置されるノード タイプ。](media/on-premises-overview-01.png)
 
 ### <a name="service-fabric-resources"></a>Service Fabric リソース
 Service Fabric の詳細については、次のトピックを参照してください。
@@ -115,7 +115,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 
 より詳細なデータを収集するほど、正確にサイジングを見積もることができます。 ハードウェアのサイジングは、データをサポートしていないため、不正確になる可能性があります。 収集する必要のある最小限のデータは、1 時間あたりのトランザクション明細行のピーク負荷です。 サイズ変更に影響する要因を次の図に示します。
 
-![サイズ変更要因](media/sizing-factors.png)
+![サイズ変更要因。](media/sizing-factors.png)
 
 左から右に、サイジングを正確に推定するために必要な最初の最も重要な要素は、トランザクション プロファイルまたはトランザクション特性です。 1 時間あたりのピーク トランザクション量を検索することは重要です。 複数のピーク期間がある場合は、これらの期間を正確に定義する必要があります。
 

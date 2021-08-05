@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 64cefcc2468e0fcb2a1d412f943eaf07062b0ce9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 8401b216a5068f34ef65c8fd36483f791532f1b5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940918"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356283"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "5940918"
 
 ワークフロー ビジネス イベントには 5 つの異なるカテゴリがあります。 カテゴリが Microsoft Power Automate に表示され、イベントを選択できます。
 
-![Microsoft Power Automate でのビジネス イベント カテゴリ](media/Business-event-category.png  "Microsoft Power Automate でのビジネス イベント カテゴリ")
+![Microsoft Power Automate でのビジネス イベント カテゴリ。](media/Business-event-category.png  "Microsoft Power Automate でのビジネス イベント カテゴリ")
 - **カテゴリ: ワークフロー タイプ** 
      - これらのイベントは、開始および完了などのワークフロー イベントで発生します。 すべてのワークフロー インスタンスはこのカテゴリに相当します。
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID、たとえば、"Workflow_BudgetPlanReview_000002"

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f7b433d742989cf641af0bef706f65a994e71b1
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: a416065f3799452ad66713b9e8d41a2385c39e9a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866086"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361312"
 ---
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 
@@ -31,17 +31,17 @@ ms.locfileid: "5866086"
 
 メタデータ検索ツール ウィンドウには **Dynamics 365 &gt; メタデータ検索** メニュー コマンドからアクセスすることができます。 検索クエリを入力して検索を開始します。 結果は、入力と同時にウィンドウへの入力が非同期で開始されます。 任意の結果行をダブルクリックして、検索クエリに一致する、対応する X++ コードまたはメタデータに移動することができます。
 
-[![メタデータ検索ツール ウィンドウ](./media/posted_metasearch.png)](./media/posted_metasearch.png)
+[![メタデータ検索ツール ウィンドウ。](./media/posted_metasearch.png)](./media/posted_metasearch.png)
 
 また、1 つまたは複数の結果を選択して、右クリックし、これらの要素をプロジェクトに追加することができます。 検索結果とやりとりを開始するまで、検索の完了を待機する必要はありません。
 
-[![メタデータ検索から新しいプロジェクトへの追加](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
+[![メタデータ検索から新しいプロジェクトに追加します。](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
 
 ## <a name="navigate-to-window"></a>ウィンドウへの移動
 
 **移動先** ウィンドウは、**Ctrl + ','** (コンマ区切り記号) ショートカット キーを使用して呼び出されます。 **Ctrl+‘,’** キーを押すと、Visual Studio の主要なドキュメント ウィンドウの右上隅にクエリ エントリ ボックスが表示されます。 また、Visual Studio の **編集** メニューから **移動先** ウィンドウにアクセスすることができます。 クエリを検索し、入力時に結果が表示されることを確認します。 検索が完了したら、進行状況インジケーターが停止します。 結果とやりとりを開始するために、検索の完了を待機する必要はありません。
 
-[![ウィンドウへの移動](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
+[![ウィンドウに移動します。](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
 
 ## <a name="search-query-syntax"></a>クエリ構文を検索
 
@@ -70,7 +70,7 @@ ms.locfileid: "5866086"
 
 検索ボックスで使用可能なドロップダウンリスト メニューを開いて、フィルターおよびフィルター構文の使用に関するヘルプを取得することができます。
 
-[![メタデータ検索フィルター ボタン](./media/metadatasearchfilter.jpg)]
+[![メタデータ検索フィルター ボタン。](./media/metadatasearchfilter.jpg)]
 
 ## <a name="examples"></a>例
 

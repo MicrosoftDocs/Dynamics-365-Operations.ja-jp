@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 530b0656af60a904746f3222390eb346dcf12959
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7aff8cc89793cc1dd0a3a6fc1e2829e277868dd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801905"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354627"
 ---
 # <a name="manage-content-security-policy-csp"></a>コンテンツ セキュリティ ポリシー (CSP) の管理
 
@@ -45,7 +45,7 @@ CSP がサイトにポリシーが適用しないようにするには、サイ�
 1. **サイト設定** を選択し、**拡張** タブを選択します。
 1. **コンテンツ セキュリティ ポリシー** タブで、**コンテンツ セキュリティ ポリシーを無効にする** チェック ボックスを選択します。
 
-    ![Content Security Policy タブで、コンテンツ セキュリティ ポリシーを無効にする](media/content-security-policy-disable.png)
+    ![Content Security Policy タブで、コンテンツ セキュリティ ポリシーを無効にします。](media/content-security-policy-disable.png)
 
 1. **保存と公開** を選択します。
 
@@ -95,7 +95,7 @@ Nonce を有効にするには、次の手順に従います。
 1. **サイト設定** を選択し、**拡張** タブを選択します。
 1. **コンテンツ セキュリティ ポリシー** タブの、**script-src** で **追加** を選択し、呼び出す外部スクリプトの完全な URL を入力します。
 
-    ![Content Security Policy タブの外部スクリプト用 URL](media/content-security-policy.png)
+    ![Content Security Policy タブの外部スクリプト用 URL。](media/content-security-policy.png)
 
 1. **保存と公開** を選択します。
 
@@ -105,7 +105,7 @@ Nonce を有効にするには、次の手順に従います。
 
 次の図では、Web ブラウザーの開発ツールにおける CSP エラーの例を示しています。
 
-![Web ブラウザーの開発者ツールにおける CSP エラー](media/content-security-policy-errors.png)
+![Web ブラウザーの開発者ツールにおける CSP エラー。](media/content-security-policy-errors.png)
 
 この例では、次の 2 つの CSP エラーがあります。
 
@@ -114,7 +114,7 @@ Nonce を有効にするには、次の手順に従います。
 
 次のスクリーンショットでは、コマースにて **Content Security Policy** タブの固定設定がどのように表示されるか示します。
 
-![Content Security Policy タブの固定設定](media/content-security-policy-fixed.png)
+![Content Security Policy タブの固定設定。](media/content-security-policy-fixed.png)
 
 ## <a name="update-page-mocks-that-use-csp"></a>CSP を使用するページ モックの更新
 

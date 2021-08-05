@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: d79104de03cfafc72292cdc2c9a8bbc1c5ac5889
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 47b8abbfd5f7d5a7d756bba145ad656fa88a6606
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189924"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347216"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
@@ -27,7 +27,7 @@ ms.locfileid: "6189924"
 
 このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations アプリケーションのエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
 
-エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。 エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update)」を参照してください。 [![Power BI アークテクチャ ダイアグラム](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
+エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。 エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update)」を参照してください。 [![Power BI アーキテクチャ ダイアグラム。](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
 ## <a name="new-power-bi-features-included-in-the-may-2016-and-november-2016-updates"></a>2016 年 5 月および 2016 年 11 月の更新プログラムに含まれる Power BI の新機能
 このチュートリアルでは、Dynamics 365 for Operations の 2016 年 5 月以降の更新プログラムが必要です。 このチュートリアルでは、次の新しい機能を使用します。
@@ -114,7 +114,7 @@ ms.locfileid: "6189924"
 
 3.  完了すると、式は次のようになるはずです。
 
-    [![Power BI フォーミュラ](./media/powerbiformula.png)](./media/powerbiformula.png)
+    [![Power BI 式。](./media/powerbiformula.png)](./media/powerbiformula.png)
 
 4.  新しいフィールド **FKCustomer** が **SalesCubeV2\_CustomerInvoices** テーブルのフィールドの一覧に表示されていることに注意します。 このフィールドは 2 つのテーブルを関連付けるために使用されるので、フィールドを右クリックして **非表示** オプションを選択するとエンド ユーザーから非表示にすることができます。
 5.  次に、**SalesCubeV2\_Customer** テーブルに類似したフィールドを作成します。 **SalesCubeV2\_Customer** エンティティの横にある省略記号 (...) アイコンを選択します。 右クリックし、**新しい列** を選択します。
@@ -142,7 +142,7 @@ ms.locfileid: "6189924"
 1.  顧客グループによる売上を示すレポートを作成するには、**SalesCubeV2\_CustomerIncoices** テーブルから **CustomerInvoiceAmountAccountingCurrency** フィールドをドラッグして、Power BI デスクトップ キャンバスにドロップします。 次に、**SalesCubeV2\_Customer** テーブルの **CustomerGroupName** フィールドを同じグリッドにドラッグします。
 2.  グラフの種類をドーナツ グラフに変更します。 次のようなレポートが表示されます。
 
-    [![Power BI ドーナツ グラフ](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
+    [![Power BI ドーナツ グラフ。](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
 
 3.  Power BI デスクトップを使用して、追加のビジュアルを作成することができます。 保存するとき、ファイルに **PBIX** 拡張子が付いていることがわかります。
 4.  レポートをデスクトップに保存します。

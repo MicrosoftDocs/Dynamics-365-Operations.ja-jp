@@ -6,17 +6,17 @@ ms.date: 04/27/2020
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 21631
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4657ae53908e8588bf78168adefb28ed4ae137ba
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 4922f5bc2d4e6ea633798d567bdcbaa55f4cb28d
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881386"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338517"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 

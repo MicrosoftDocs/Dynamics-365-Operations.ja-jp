@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60b2d0940041e191f7ea1ef535935314a8624d18
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 71c0e1bc2f106babbd8c5639b4d06131d4e94a20
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866226"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360338"
 ---
 # <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 
@@ -70,22 +70,22 @@ ISV または ISP レイヤーでソリューションを開発するサード �
 1. Azure DevOps で、**ビルドおよびリリース** ページの **ビルド** にある **すべての定義** タブでビルド定義を検索します。 
 1. 省略記号 (...)、**編集** の順にクリックします。
 
-    ![ビルド定義を編集](media/builddef_edit.png)
+    ![ビルド定義を編集します。](media/builddef_edit.png)
 
 1. **タスク** タブで、ページの下部にある **+ タスクの追加** をクリックします。
 1. ページの右側にある **タスクの追加** ウィンドウの **ユーティリティ** タブで、下にスクロールして **PowerShell** タスクを表示します。 
 1. マウス ポインタをタスク上にポイントして、表示する **追加** ボタンをクリックします。
 
-    ![PowerShell タスクの追加](media/builddef_addpowershelltask.png)
+    ![PowerShell タスクを追加します。](media/builddef_addpowershelltask.png)
 
 1. ページの左側にあるタスクの一覧で、追加される **PowerShell スクリプト** タスクをクリックして選択します。
 1. ページの右側で、**表示名**、**スクリプト パス**、および **引数** プロパティを変更して必要な設定を反映します。
 
-    ![モデル バージョンの設定作業のプロパティを設定](media/builddef_setmodelversions_settings.png)
+    ![モデル バージョンの設定タスクのプロパティを設定します。](media/builddef_setmodelversions_settings.png)
 
 1. ページの左側にあるタスクの一覧で、**モデル バージョンの設定** タスクを、**ビルドの準備** と **ソリューションのビルド** タスクの間にドラッグします。
 
-    ![モデル バージョンの設定作業の順序を設定](media/builddef_setmodelversions_order.png)
+    ![モデル バージョン設定タスクの順序を設定します。](media/builddef_setmodelversions_order.png)
 
 1. **変数** タブで、変数のリストの下部にある **+ 追加** をクリックします。 最初の列で、**名前** の変数に **ModelVersionExclusions** と入力します。
 1. 新しいタスクを保存するには、**保存** をクリックします。

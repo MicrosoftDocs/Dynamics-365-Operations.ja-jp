@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f2e7ccce81ed1b7670c91416a66e2272df89fb1
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: e0d3c9856cf41e84f97820fdd0176b325271a50e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866003"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353704"
 ---
 # <a name="deploy-and-use-a-continuous-build-and-test-automation-environment"></a>継続的なビルドおよびテストの自動化環境の配置と使用
 
@@ -35,7 +35,7 @@ ms.locfileid: "5866003"
 
 Microsoft Dynamics Lifecycle Services (LCS) で Azure DevOps サブスクリプションを構成した後、LCS を使用して開発者 VM やビルド / テスト VM を配置できます。 LCS は開発 VM を構成し、それは Azure DevOps プロジェクトにマップされます。 LCS は、ビルド VM も構成します。ビルド VM は、自動的に Azure DevOps プロジェクトにマップされ、Azure DevOps プロジェクトのモジュールを構成するビルド エージェント / コントローラーを持ち、妥当性確認のための外部エンドポイントを持つ自動化テストを実行します。 次の図は通常のワークフローを示します。
 
-![LCS、Azure DevOps、および VM の関係](./media/deploy-build-test.png)
+![LCS、Azure DevOps、および VM の関係。](./media/deploy-build-test.png)
 
 このワークフローには、Azure の開発者 VM とビルド / テスト VM の LCS 配置が含まれています。
 
@@ -85,7 +85,7 @@ LCS では、開発およびビルド / テスト環境を展開するオプシ�
 
 コードの移行プロセスまたは開発活動の一環として、モデル ソース ファイルと関連するテスト モデル ソース ファイルを Azure DevOps にチェックインすることをお勧めします。 LCS 移行サービスを使用してコードを移行した場合、自動的に行われます。 Azure DevOps にコードをチェックインせずに直接チェックインする場合は、Azure DevOps フォルダ構造の特定のガイドラインに従う必要があります。 これは、適切なビルド定義の設定に役立ちます。 すべてのモジュールをルート フォルダー **メタデータ** に追加する必要があります。 各モジュールにはフォルダーが 2 つ必要です。 1 つのフォルダーには、すべてのモデルが含まれています。 他のフォルダーには、そのモジュールの記述子 XML が含まれている必要があります。 
 
-![Azure DevOps フォルダー構造](media/build-trunk-main-metadata.png)
+![Azure DevOps フォルダー構造。](media/build-trunk-main-metadata.png)
 
 ### <a name="deploy-a-build-environment"></a>ビルド環境の展開
 
@@ -114,35 +114,35 @@ LCS を通じて開発者トポロジにビルド VM が配置されると、そ
 
 ビルド VM には、**Azure DevOps** の一部としてリリースされた vNext ビルド エージェントが含まれています。 ビルド VM を配置するときは、既定では Azure DevOps プロジェクトと接続して同期するようにビルド エージェントが構成されます。 ビルド VM 構成の一部として、以下に示すようにデフォルトのビルド定義も作成および構成されます。 
 
-[![既定のビルド定義](./media/build1-1024x488.jpg)](./media/build1.jpg) 
+[![既定のビルド定義。](./media/build1-1024x488.jpg)](./media/build1.jpg) 
 
 既定のビルド定義には、以下で説明するように、特定の操作を実行する複数のタスクが含まれています。
 
 1.  ビルドに渡す事前定義済の変数パラメータをコンフィギュレーションします。 ビルド実行ごとにクリーンなデータベースを設定するには、**DatabaseBackupToRestore** 変数のデータベース バックアップ ファイルの名前を指定します。 パッケージ フォルダーは、すべてのビルド時にクリーン パッケージ フォルダーのコピーで復元されます。
 
-    [![定義済み変数ウィンドウ一覧](./media/build2-1024x678.jpg)](./media/build2.jpg)
+    [![定義済み変数ウィンドウ一覧。](./media/build2-1024x678.jpg)](./media/build2.jpg)
 
 2.  以下のように、「トランク/メイン」ブランチにあるすべてのモジュールを検出して構築するためにソリューションをビルドします。
 
-    [![ソリューション ウィンドウ を ビルド します。](./media/build3-1024x456.jpg)](./media/build3.jpg)
+    [![ソリューション ウィンドウをビルドします。](./media/build3-1024x456.jpg)](./media/build3.jpg)
 
 3.  「レポートの展開」タスクを使用して、レポートを生成し、ビルド VM に展開します。
 4.  「データベース同期」タスクを使用して、データベースをビルド VM 上のローカル SQL に同期させます。
 5.  ビルドが成功した後、サンドボックス/ステージング環境を更新するために使用できる配置可能なパッケージを作成します。
 
-    [![パッケージ ウィンドウ を生成します](./media/build4-1024x462.jpg)](./media/build4.jpg)
+    [![パッケージ ウィンドウを生成します。](./media/build4-1024x462.jpg)](./media/build4.jpg)
 
 6.  「ビルド コンポーネントのコピーと発行」は、配置可能パッケージを Azure DevOps コンポーネントの場所にアップロードします。
 
-    [![成果物ウィンドウを公開する](./media/build5-1024x439.jpg)](./media/build5.jpg)
+    [![成果物ウィンドウを公開します。](./media/build5-1024x439.jpg)](./media/build5.jpg)
 
 7.  テストの実行については、3 つの既定のタスク「テスト設定」、「テストの実行」、および「テストの終了」があります。
 
-    [![テスト実行ウィンドウ](./media/build7-1024x457.jpg)](./media/build7.jpg)
+    [![テスト ウィンドウを実行します。](./media/build7-1024x457.jpg)](./media/build7.jpg)
 
 8.  既定のビルドでは毎日午後 5 時に開始される予定です。 チームの必要性に従って、各チェックインでトリガーを「継続」に変更することができます。
 
-    [![既定のビルド スケジュール](./media/build8-1024x491.jpg)](./media/build8.jpg)
+    [![既定のビルド スケジュール。](./media/build8-1024x491.jpg)](./media/build8.jpg)
 
 既定の構成に変更を加えて、そのビルド VM がビルドをトリガーできるようにすることができます。
 
@@ -158,13 +158,13 @@ LCS を通じて開発者トポロジにビルド VM が配置されると、そ
 
 次の例に示すように、ビルドの成功または失敗が表示されます。 すべてのビルドを表示します。 
 
-[![ビルドの成功または失敗を表示](./media/build9-1024x443.jpg)](./media/build9.jpg) 
+[![ビルドの成功または失敗を表示。](./media/build9-1024x443.jpg)](./media/build9.jpg) 
 
 特定の完了したビルドとビューの成功/失敗の詳細を選択します。 
 
-[![ビルドの成功または失敗の詳細を表示する](./media/build10-1024x446.jpg)](./media/build10.jpg) テストのリンクをクリックすると、テストの実行の失敗が表示されます。 
+[![ビルドの成功または失敗の詳細を表示。](./media/build10-1024x446.jpg)](./media/build10.jpg) テストリンクをクリックして、テスト実行の失敗を視覚化します。 
 
-[![テスト実行エラーの可視化](./media/build11-1024x455.jpg)](./media/build11.jpg)
+[![テスト実行エラーの可視化。](./media/build11-1024x455.jpg)](./media/build11.jpg)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

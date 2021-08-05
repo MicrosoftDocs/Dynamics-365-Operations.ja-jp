@@ -3,20 +3,18 @@ title: 演算子の優先順位
 description: このトピックでは、演算子の優先順位について説明します。
 author: pvillads
 ms.date: 07/01/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 6174
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448faf36f1735d67dfb9225ef771c037c0046eca
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 3b583f221baef6fad1cff09e4f779a08c0d4cdc9
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865851"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661548"
 ---
 # <a name="operator-precedence"></a>演算子の優先順位
 

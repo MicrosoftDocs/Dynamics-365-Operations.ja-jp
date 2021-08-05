@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4bd903f0f725c985b1d59571e220d3814353416
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01b063d3f371ff0c43cd28a92bf46b77220f47df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752672"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352898"
 ---
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 
@@ -43,7 +43,7 @@ ms.locfileid: "5752672"
 - ビジュアル効果を提供します。
 - 最小限の COGS と迅速な応答時間をもたらす規範的なパターンとベスト プラクティスを使用して構築します。
 
-[![ワークスペースの例](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
+[![ワークスペースの例。](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
 
 これらの目標を達成するため、工程ワークスペース パターンが開発されました。
 

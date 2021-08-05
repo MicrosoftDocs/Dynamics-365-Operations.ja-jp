@@ -3,20 +3,18 @@ title: X++ 変換ランタイム関数
 description: このトピックでは、変換ランタイム関数について説明します。
 author: RobinARH
 ms.date: 06/26/2018
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31321
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8378eb745df6d88573bcbf1f451e9c76503e52a9
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 3b1f7f65559fb0345fb211fc17a48b4adbb3b02e
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188111"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661440"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 

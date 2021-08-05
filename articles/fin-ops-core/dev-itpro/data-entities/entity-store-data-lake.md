@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: 41f3db7495693dd1b974b0632de4c67a09d6da58
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 78be1cceb7513856cad51a9912e983ad484f0841
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750578"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352926"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 
@@ -49,7 +49,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 
 新しいエクスペリエンスが表示されます。
 
-![新しい UI エクスペリエンス](./media/entity-store-data-lake-03.png)
+![新しい UI エクスペリエンス。](./media/entity-store-data-lake-03.png)
 
 新しいエクスペリエンスをオンにすると、それぞれの集計の測定で更新を定義できます。 次の更新オプションを選択できます。
 
@@ -130,7 +130,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 4. **キーのアクセス許可** フィールドで、**取得** および **リスト** のアクセス許可を選択します。
 5. **シークレットのアクセス許可** フィールドで、**取得** および **リスト** のアクセス許可を選択します。
 
-    ![取得およびリストのアクセス許可](./media/entity-store-data-lake-05.png)
+    ![取得および一覧のアクセス許可。](./media/entity-store-data-lake-05.png)
 
 6. **保存** を選択します。
 
@@ -144,7 +144,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
     - **DNS 名:** Key Vault の DNS 名を入力します。
     - **シークレット名:** 接続文字列情報と共に Key Vault に追加したシークレットの名前を入力します。
 
-    ![[システム パラメーター] ページの [データ接続] タブ](./media/entity-store-data-lake-04.png)
+    ![システム パラメーター ページのデータ接続タブ。](./media/entity-store-data-lake-04.png)
 
 3. **Azure Key Vault のテスト** および **Azure Storage のテスト** リンクを選択し、指定した構成情報にシステムがアクセスできることを検証します。
 4. **データ接続を有効にする** チェック ボックスをオンにします。

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47d157b5034fee499e1c92b31b129c6ee8deb704
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6bae0b7fdd0fd8513a62ade98e90b37e8b15c302
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754280"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344034"
 ---
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 
@@ -79,7 +79,7 @@ Power BI レポート フィルターと **フィルター** ウィンドウは�
 1. レポートまたは適切なタブのメニュー項目を追加します。既定では、その他のタブが選択されていない場合、レポートの最初のタブが表示されます。
 2. メニュー項目を **PowerBIEmbedded\_App** コンフィギュレーション キーにリンクします。
 
-    ![メニュー項目の PowerBIEmbedded_App コンフィギュレーション キーへのリンク](media/secure-workspace-key.png)
+    ![メニュー項目を PowerBIEmbedded_App コンフィギュレーション キーにリンクします。](media/secure-workspace-key.png)
 
 このメニュー項目は、Power BI Embedded サービスの可用性に関連付けられています。 サービスを使用できない場合は、アプリケーションからメニュー項目のリンクが削除されます。
 
@@ -92,7 +92,7 @@ Power BI ワークスペースとレポートは会社が保護できます (た
 2. **モデリング** タブで、**ロールの管理** をクリックします。
 3. **会社** フィールドを含むデータ モデル内の列に対して新しいロールを作成します。 新しいロールに **CompanyFilter** と名前を付けます。 会社によるアクセスを制限するために、データ モデルに **会社** フィールドが必要です。
 
-    ![新しいロールの作成](media/secure-workspace-filter.png)
+    ![新しいロールを作成します。](media/secure-workspace-filter.png)
 
 4. **テーブル フィルターの DAX 式** フィールドに、**\[COMPANY\]=username()** と入力します。
 5. ルールが機能することを確認するには、**モデリング** タブで **ロールとして表示** をクリックします。 ダイアログ ボックスで、次のフィールドを設定します。

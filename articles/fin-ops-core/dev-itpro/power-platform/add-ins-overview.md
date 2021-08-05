@@ -10,16 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2fc191f3506e9179932a58b3b20a8524fb0cf042
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 4a656ffdcda59f4cb38977e93ff446ec7075409a
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103644"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6335635"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 

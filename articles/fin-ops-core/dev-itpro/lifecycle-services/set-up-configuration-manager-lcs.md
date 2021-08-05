@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7122dea86619e390d9c0e2e2891f0b94bfdc1920
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3aca71a9fd05dac7226648d1e0d8f53a00ce8f03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920645"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357578"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 
@@ -75,7 +75,7 @@ ms.locfileid: "5920645"
    |     <strong>言語ロケール</strong>      |     EN-US      |
    | <strong>複数値の区切り</strong> |       ;        |
 
-   ![構成マネージャーの DIXF 設定](./media/dixfconfigurationmanager.png)
+   ![構成マネージャーの DIXF 設定。](./media/dixfconfigurationmanager.png)
 
 5. 構成のインポート先の環境で、この手順を繰り返します。
 
@@ -121,7 +121,7 @@ ms.locfileid: "5920645"
     </tbody>
     </table>
 
-    ![構成マネージャーのシステム診断の検出](./media/systemdiagnosticconfigurationmanagerdiscoverysettings.png)
+    ![構成マネージャーのシステム診断の検出。](./media/systemdiagnosticconfigurationmanagerdiscoverysettings.png)
 
 5.  構成のインポート先の環境で、この手順を繰り返します。
 

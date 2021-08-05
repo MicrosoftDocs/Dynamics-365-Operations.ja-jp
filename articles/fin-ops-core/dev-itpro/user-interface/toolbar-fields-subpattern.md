@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c23f81c93d3b7276ab703b5c1a9850352b58b0a
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 3a36fdc5bd02c3f06c93ae1a1dc9a5ec0c425c5a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358527"
 ---
 # <a name="toolbar-and-fields-subpattern"></a>ツールバーおよびフィールドのサブパターン
 
@@ -33,7 +33,7 @@ ms.locfileid: "6189736"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ツール バーおよびフィールドのサブパターンのワイヤーフレーム](./media/toolbarfields1.png)](./media/toolbarfields1.png)
+[![ツール バーおよびフィールドのサブパターンのワイヤーフレーム。](./media/toolbarfields1.png)](./media/toolbarfields1.png)
 
 ## <a name="model"></a>モデル
 ### <a name="high-level-structure"></a>高レベル構造体
@@ -75,7 +75,7 @@ ms.locfileid: "6189736"
 
 フォーム: **HcmPosition** **(WorkerAssignmentTabPage)** 
 
-[![ツール バーおよびフィールドのサブパターンの例](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
+[![ツール バーおよびフィールドのサブパターンの例。](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -99,7 +99,7 @@ ms.locfileid: "6189736"
 
 **HcmPosition** 
 
-![以前のバージョンのツール バーおよびフィールド](./media/toolbarfields3.png)
+![以前のバージョンのツール バーおよびフィールド。](./media/toolbarfields3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

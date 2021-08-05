@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 for Finance and Operations
-ms.openlocfilehash: 8b34896224c47064c997ebe34ecc19be452512a0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bf5455d92a2932ee0fe4e0542cfc12b8eb297d09
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754586"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354431"
 ---
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 
@@ -100,24 +100,24 @@ LedgerActivityMeasure\_DimensionCombination テーブルには、次の新しい
 
 4. **販売** および **YearName** フィールドを使用するマトリックス レポートを作成します。 レポートは次の例のようになります。
 
-    ![販売および YearName フィールドを使用するマトリックス レポートの例](media/d1d0e190896bec3a755b9b586a3cb657.png)
+    ![販売および YearName フィールドを使用するマトリックス レポートの例。](media/d1d0e190896bec3a755b9b586a3cb657.png)
 
     次に、財務分析コード値を追加します。
 
 5. Power BI デスクトップのフィールドの一覧で、**LedgerActivityMeasure\_DimensionCombination** テーブルを展開します。 次のように、分析コード フィールドの一覧がテーブル フィールドに拡張されていることを確認します。
 
-    ![テーブル フィールドに拡張された分析コード フィールドのリスト](media/b5099b0c03fa16f0c2ab70943c7cce8b.png)
+    ![テーブル フィールドに拡張された分析コード フィールドのリスト。](media/b5099b0c03fa16f0c2ab70943c7cce8b.png)
 
 6. レポートに **BusinessUnit\_Description** フィールドを含めます。 これで、レポートに、次の例のように、業務単位ごとの販売が表示されます。
 
-    ![事業単位ごとの販売を示すレポート](media/c39e94631896301db6675d36fc9d3886.png)
+    ![事業単位ごとの販売を示すレポート。](media/c39e94631896301db6675d36fc9d3886.png)
 
     **BusinessUnit\_description** フィールドおよび **BusinessUnit\_Value** フィールドがあることを確認します。 値フィールドを使用すると、列のソートに使用できる数値を取得できます。
 
 7. 新しい財務分析コードを定義し、エンティティ ストアを更新します。 
 8. 更新が完了したら、**LedgerActivityMeasure\_DimensionCombination** テーブルを右クリックして、**データの更新** を選択します。 定義した新しい財務分析コードが、レポートに使用できるフィールドの一覧に反映されていることを確認します。
 
-    ![データの更新](media/6d345e2f68dfb0413daebfd5f469db2c.png)
+    ![データの更新。](media/6d345e2f68dfb0413daebfd5f469db2c.png)
 
 9. 新しい財務分析コード フィールドをレポートに含めることができます。
 
@@ -156,7 +156,7 @@ LedgerActivityMeasure\_DimensionCombination テーブルには、次の新しい
 
 LedgerActivityMeasure 集計の測定の次の例を考慮してください。
 
-![LedgerActivityMeasure 集計の DimensionCombination 集計ディメンション](media/08437296a512478e99b3c377170edeee.png)
+![LedgerActivityMeasure 集計測定の DimensionCombination 集計分析コード。](media/08437296a512478e99b3c377170edeee.png)
 
 DimensionCombination は、DimensionAttributeValueCombination ベース テーブルを使用してモデル化される集計分析コードです。 この場合、開発者は LedgerActivityMeasureGroup メジャー グループを使用して集計分析コードを参照しました。
 
@@ -168,7 +168,7 @@ DimensionCombination は、DimensionAttributeValueCombination ベース テー�
 
 基本勘定と相手勘定の両方がトランザクション データに関連付けられている必要があります。 したがって、基本勘定と相手勘定の両方の財務分析コード フィールドを拡張する必要があります。 ここで、この要件をどのように満たすことができるかを確認します。 以下の例について考えます。
 
-![ロール プレイの分析コード例](media/062a0d860fe1633a6616bca6e871f95e.png)
+![ロール プレイの分析コードの例。](media/062a0d860fe1633a6616bca6e871f95e.png)
 
 LedgerActivityMeaureGroup の 2 つの分析コード参照をモデル化しました。 最初の参照、DimensionCombinationは、**LedgerDimension** フィールドを使用して結合されます。 このトピックの前のところでこのパターンを確認しました。
 

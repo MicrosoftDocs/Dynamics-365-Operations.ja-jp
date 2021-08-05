@@ -8,16 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
+ms.custom:
+- intro-internal
+- NotInToc
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 0d3d31ade617f45d0a890e9eaf9a7a3fca292aff
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 12bac49799a0811e8522b0bc57deafcf6f20e77a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940906"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353716"
 ---
 # <a name="azure-data-lake-overview"></a>Azure Data Lake の概要
 
@@ -79,7 +82,7 @@ Finance and Operationsアプリケーションなど Dynamics 365 製品では�
 
 - クラウド型サービスを使用することで、パワーユーザーと開発者の両方がこのデータを利用できます。
 
-    ![パワーユーザーと開発者が Data Lake を使用する方法](./media/PowerUsers-Developers-LoveThis-PPT.png)
+    ![パワー ユーザーと開発者が Data Lake を使用する方法。](./media/PowerUsers-Developers-LoveThis-PPT.png)
 
 ## <a name="common-data-model-folders"></a>一般的なデータモデルのフォルダ
 
@@ -91,7 +94,7 @@ Finance and Operationsアプリケーションなど Dynamics 365 製品では�
 
 以下の図は、 Finance and Operations アプリの共通データモデルのフォルダ構造を示しています。
 
-![Finance and Operations における共通データモデルのフォルダ構造](./media/FnO-CDM-Folder-Structure.png)
+![Finance and Operations における共通データモデルのフォルダ構造。](./media/FnO-CDM-Folder-Structure.png)
 
 Data Lake の共通データモデルに関する詳細については、 [共通データモデルを使用して Azure Data Lake Storage Gen2 を最適化する](/common-data-model/data-lake) を参照してください。
 
@@ -164,7 +167,7 @@ Data Lake 統合では、既定のレポートのオプションとして、*ウ
 
 Microsoft、パートナー、独立系ソフトウェアベンダー（ISV）の既製の分析ワークスペースを出発点として利用することができます。 または、BYOD や独自のデータウェアハウスを利用した Power BI ベースの分析レポートを構築している場合は、分析ワークスペースにピン留めすることができます。 いずれの場合も、アクションを実行するコンテキストのレポートを作成することにより、業務プロセスを拡充できます。
 
-![分析ワークスペース](./media/Customers-Love-analyticalWorkspaces.png)
+![分析ワークスペース。](./media/Customers-Love-analyticalWorkspaces.png)
 
 コア Finance and Operations アプリ (またはISV拡張機能の一部) に含まれる既製の分析ワークスペースには、エンティティストアを使用して作成されたレポートが含まれています。 エンティティストアには、*集約された測定値* （つまり、ファクト テーブルやディメンションなどの簡略化されたデータ構造）が格納されています。
 
@@ -188,7 +191,7 @@ Data Lake からオンプレミスのデータ ウェアハウスに Finance and
 
 次の図に示すように、Data Lake への移行を複数のステージに計画することができます。 各ステージでは、それだけで正当化できる業務上の利点を提供しています。 ここに表示しているステージは、計画のガイドラインとして利用することができます。
 
-![Data Lake への移行計画](./media/ADLS-rollout-roadmap.png)
+![Data Lake への移行計画。](./media/ADLS-rollout-roadmap.png)
 
 1. **現在の状況:** すでにエンティティ ストアをベースにした BYOD や分析ワークスペースを利用している場合もあります。
 2. **データへの簡単なアクセス：** Data Lake のテーブル、エンティティ、および集計測定にアクセスできるようになると、BYOD を廃止して、すぐに使用できるデータを利用できるようになります。 したがって、前述のとおり、管理の労力とコストを削減することができます。 既存の下流のデータ ウェアハウスやパイプラインを維持して、プロジェクトのスコープと予算を管理することができます。

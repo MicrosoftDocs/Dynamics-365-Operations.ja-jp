@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7eae44671af9d4fd48ff28604858c5de05d3205d
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: a827ad440239519b7887d84c47e9393de1d767fe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941266"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345668"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -121,7 +121,7 @@ OData サービスでは、バッチ要求がサポートされています。 �
 
 /data/$ メタデータは、注釈を提供します。 EnumType は、$metadata でサポートされます。
 
-![EnumType メタデータ](./media/metadata.png)
+![EnumType メタデータ。](./media/metadata.png)
 
 ### <a name="cross-company-behavior"></a>会社間動作
 

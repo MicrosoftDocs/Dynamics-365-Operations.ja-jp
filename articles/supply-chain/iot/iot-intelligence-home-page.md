@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: ''
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1482c38de9d91fe256f2a1b28959ebcb0202295d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8efa5b2110e14d0f0ce1be2045edd87ac0088ea0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814864"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353578"
 ---
 # <a name="iot-intelligence-home-page"></a>IoT インテリジェンスのホーム ページ
 
@@ -43,9 +43,9 @@ IoT インテリジェンスにより、次のシナリオがサポートされ�
 
 次の図は、Azure IoT Hub、IoT インテリジェンス、Supply Chain Management の相互作用を示しています。
 
-![IoT Hub、IoT インテリジェンス、Supply Chain Management](media/iot_intelligence.png)
+![IoT Hub、IoT インテリジェンス、Supply Chain Management。](media/iot_intelligence.png)
 
-## <a name="setup"></a>セットアップ
+## <a name="setup"></a>段取り
 
 コードを記述することなく、IoT インテリジェンスを設定およびコンフィギュレーションすることができます。 基本的な手順は次のとおりです。
 

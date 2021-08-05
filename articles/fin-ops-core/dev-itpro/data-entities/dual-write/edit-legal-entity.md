@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d8452adf4401e4b62eb4b5387cde9cad202c9e1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9445003ed936e59fa90dc96f3100c0de966aabd7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752780"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350728"
 ---
 # <a name="edit-a-legal-entity-after-dual-write-setup"></a>二重書き込み設定後に法人を編集する 
 
@@ -40,19 +40,19 @@ ms.locfileid: "5752780"
 
 1. **二重書き込みテーブル マップ** リスト ページで、**環境の詳細** ボタンを選択します。
 
-![環境の詳細ボタンを選択する](media/select-environment-details.png)
+![環境の詳細ボタンを選択します。](media/select-environment-details.png)
 
 2. **法人** タブには、環境をリンクするための二重書き込みウィザードで選択した会社が表示されます。 この例では、会社は USMF です。
 
-![選択した会社が表示されている法人タブ](media/legal-entities.png)
+![選択した会社が表示されている法人タブ。](media/legal-entities.png)
 
 3. **法人を追加** を選択して、1 つ以上の会社を二重書き込みに追加します。 この例では、GBSI です。 **保存** を選択します。
 
-![新しい法人の追加](media/add-legal-entity.png)
+![新しい法人を追加します。](media/add-legal-entity.png)
 
   この時点で、法人は更新を開始します。 現在実行中または一時停止中のテーブル マップは、既存のデータをコピーすることによって初期書き込みプロセスを実行します。 プロセスが完了するまでは、テーブル マップを変更するアクションは実行しないことをお勧めします。 
 
-![法人の更新が進行中](media/update-progress.png)
+![法人の更新が進行中です。](media/update-progress.png)
 
   >[!NOTE]
   > この操作は、次のいずれかの条件に当てはまる場合に失敗することがあります。 
@@ -63,7 +63,7 @@ ms.locfileid: "5752780"
 
 4. プロセスが完了すると、法人が正常に更新されたことを示すバナーが表示されます。 これで、テーブル マップの更新を再開することができます。 
 
-![法人の更新に成功しました](media/legal-entities-updated.png)
+![法人の更新に成功しました。](media/legal-entities-updated.png)
 
 
 

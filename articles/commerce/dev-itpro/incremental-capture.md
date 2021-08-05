@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 56a60e88293d1c75ceb04b435c3395b23f91eb81
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 0631c47512ace05000c31f71bc405a11b8919ce9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937080"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346736"
 ---
 # <a name="incremental-capture-for-order-invoicing"></a>注文請求の増分取得
 
@@ -40,7 +40,7 @@ ms.locfileid: "5937080"
 
 次の図は、1 つの承認に対して複数回の取得が行われる場合の、さまざまな支払取得フレームワークの違いを示しています。
 
-![現在の支払取得フレームワーク対増分取得](../dev-itpro/media/INC_DIFF.png)
+![現在の支払取得フレームワーク対増分取得。](../dev-itpro/media/INC_DIFF.png)
 
 本社請求 (つまり、本社での注文処理の一部として発生する請求) の増分取得のサポートは、Commerce バージョン 10.0.13 の支払 SDK に最初に追加されました。 Commerce バージョン 10.0.18 では、SDK による増分取得サポートが本社の外部のチャネルに拡張されています。 店舗、Modern POS、およびコール センターでは、この拡張サポートによって、新しい注文に対して作成された承認を **SupportsMultipleCaptures** としてマークすることができます。 これらの注文に対して本社または Modern POS で後で請求を行う場合、支払が取得され、以降の請求書で支払が取得されるときに元の承認が保持および参照されます。 
 

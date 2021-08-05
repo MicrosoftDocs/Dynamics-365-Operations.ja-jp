@@ -3,20 +3,18 @@ title: F クラス
 description: 文字 F で始まるシステム API クラス。
 author: RobinARH
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 47561
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81051f74eddae2275680206bfc4686434bd6c847
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 56b91899375dab23cd38bf9c612b39c2dbd5bf30
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923251"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661372"
 ---
 # <a name="f-classes"></a>F クラス
 
