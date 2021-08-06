@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e00748fc9629d7ecfa91701002d3d2d7dda0a86f
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056327"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639417"
 ---
 # <a name="request-a-leave-of-absence"></a>休暇を申請する
 
@@ -48,6 +48,10 @@ ms.locfileid: "6056327"
 1. **従業員セルフサービス** ワークスペースで、**休暇残日数** タイルの **詳細** (...) を選択します。
 
 2. 休暇申請を表示するには、**休暇申請の表示** を選択します。
+
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>他のシステムまたは古いシステムからの休暇申請のインポート
+
+別のシステムから休暇要求をインポートするには、通常のワークフローを実行して適切な休暇トランザクションを作成する必要があります。 また、休暇バンク トランザクションおよび完了した状態での休暇要求をインポートできます。 休暇要求のみをインポートする場合、休暇バンク トランザクションは自動的に作成されません。
 
 ## <a name="see-also"></a>参照
 

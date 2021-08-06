@@ -2,7 +2,7 @@
 title: 顧客支払予測の使用 (プレビュー)
 description: このトピックでは、Finance 分析情報の試用版を使用するために必要な前提条件と手順について説明します。
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 144de66678beea64b9f96239b519a19926d87ab5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355630"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638321"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>顧客支払予測の使用 (プレビュー)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、顧客支払予測の使用方法について説明します。 この機能を使用する前に、そのためのセットアップ手順が完了していることを確認してください。 詳細については、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md)を参照してください。
 

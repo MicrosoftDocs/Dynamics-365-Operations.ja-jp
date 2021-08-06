@@ -2,7 +2,7 @@
 title: チャネルの返品と払戻のポリシーを作成および更新する
 description: このトピックでは、チャネルに対する返品と払戻のポリシーを設定する方法について説明します。
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345111"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558300"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>チャネルの返品と払戻のポリシーを作成および更新する
 
@@ -36,12 +36,21 @@ Dynamics 365 Commerce のチャネルの返品ポリシーでは、小売業者�
 
 ## <a name="enable-return-policy"></a>返品ポリシーの有効化
 
-チャネル返品ポリシー機能を有効にするには、次の操作を実行します。
+Commerce 本社で、チャネル返品ポリシー機能を有効にするには、次の手順を実行します。
 
 1. Dynamics 365 Commerce の **機能管理** ワークスペースに移動します。
 1. 機能名のリストで、**チャネル返品ポリシーの有効化** 機能を検索します。
 1. **直ちに有効化** を選択します。
-1. **配送スケジュール** ページで、**1110** (グローバル コンフィギュレーション) ジョブを実行して機能の変更を配布します。 
+1. **配送スケジュール** ページで、**1110** (グローバル コンフィギュレーション) ジョブを実行して機能の変更を配布します。
+
+## <a name="initialize-the-commerce-scheduler"></a>Commerce スケジューラの初期化
+
+**チャネル返品ポリシーの有効化** 機能を有効にした後、Commerce スケジューラを初期化して、Commerce Data Exchange (CDX) 同期を介して新しい機能データベースの変更が追加されるようにします。 
+
+Commerce 本社で Commerce スケジューラを初期化するには、次の手順に従います。
+
+- **Retail とコマース \> バックオフィスの設定 \> コマース スケジューラ \> コマース スケジューラの初期化** の順に移動します。 または、"Commerce スケジューラの初期化" を検索できます。
+- **コマース スケジューラの初期化** ダイアログ ボックスで、**既存のコンフィギュレーションの削除** オプションが **いいえ** に設定されていることを確認し、**OK** を選択します。
 
 ## <a name="configure-return-policy"></a>返品ポリシーのコンフィギュレーション
 

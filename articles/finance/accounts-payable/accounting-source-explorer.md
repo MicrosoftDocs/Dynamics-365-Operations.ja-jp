@@ -1,7 +1,7 @@
 ---
 title: 会計ソース エクスプローラー
 description: この記事は、総勘定元帳の勘定項目の背後にあるソース情報の詳細分析に使用できる会計のソース エクスプローラに関する情報を提供します。
-author: ShylaThompson
+author: rcarlson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4624a740538493c247b6c3a0f051ed6208c52504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f1ab7cb7f8f9a42d5f311f8760ff2463055dc178
+ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820934"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661040"
 ---
 # <a name="accounting-source-explorer"></a>会計ソース エクスプローラー
 
@@ -46,8 +46,10 @@ ms.locfileid: "5820934"
 
 これらのドキュメントでは、会計のソース エクスプローラーから実際の元伝票に移動できます。
 
-
-
-
+> [!NOTE]
+> バージョン 10.0.20 では、**更新** ボタンは 2 つの追加の範囲を提供し、ページ上のデータの入力が実行される最初のクエリを制限します。 これらの追加の範囲は、バージョン 10.0.19 でもサービス更新の一環として使用できます。 次のフィールドが追加されました。
+>
+> - 伝票から、伝票へ
+> - 主勘定から、主勘定へ
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

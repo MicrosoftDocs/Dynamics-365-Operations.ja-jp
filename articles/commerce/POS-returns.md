@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c7be9e2d32384df23a4609d82216804fc945061a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 53cad70e2c4866a18427157bc8b7fa1c3fda4daa
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345187"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638148"
 ---
 # <a name="create-returns-in-pos"></a>POS での返品の作成
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) アプリで、現金払いトランザクションまたは顧客注文に対して返品を開始する方法について説明します。
 

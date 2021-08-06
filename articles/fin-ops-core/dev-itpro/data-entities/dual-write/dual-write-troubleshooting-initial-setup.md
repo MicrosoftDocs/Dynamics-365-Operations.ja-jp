@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350839"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542418"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>初期セットアップ中の問題のトラブルシューティング
 
@@ -71,7 +71,7 @@ Finance and Operations アプリで **Dataverseへのリンク** を開いた際
 
 デュアル書き込みが正常に機能するように、設定時に選択した会社は Dataverse 環境で作成されます。 既定では、これらの会社は読み取り専用となっており、**IsDualWriteEnable** プロパティは **True** に設定されています。 さらに、既定の所有権を持つ業務部門の所有者とチームが作成され、会社名が含まれます。 マッピングを有効にする前に、既定のチームの所有者が指定されていることを確認してください。 **会社 (CDM\_Company)** テーブルを検索するには、次の手順に従います。
 
-1. Dynamics 365 のモデル駆動型のアプリで、右上隅のフィルターを選択します。
+1. Customer Engagement アプリで、右上隅のフィルターを選択します。
 2. ドロップダウン リストにて、**会社** を選択します。
 3. 結果を表示するには、**実行** を選択します。
 4. デュアル書き込みの構成時にリンクしていた会社を選択します。

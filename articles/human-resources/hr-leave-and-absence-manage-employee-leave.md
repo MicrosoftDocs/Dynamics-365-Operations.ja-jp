@@ -2,7 +2,7 @@
 title: 従業員の休暇の管理
 description: Dynamics 365 Human Resources で従業員の休暇を管理する。
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c161e324a1ebe5b30c95d6d3e0468da671a7c2de
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055631"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639465"
 ---
 # <a name="manage-employee-leave"></a>従業員の休暇の管理
 
@@ -44,12 +44,11 @@ ms.locfileid: "6055631"
 
 従業員の休暇残高を調整する際には、理由コードとコメントを含めることができます。 
 
->[!IMPORTANT]
->休暇残高に関する他の情報は、プレビューで表示します。 **サンドボックス** 環境で有効にする必要があります。 プレビュー機能を有効にする方法については、[機能の管理](hr-admin-manage-features.md) を参照してください。<br>
->休暇残高の上にポインターを移動すると、次が表示されます。<br>
->- **可能な休暇残高**: 今年度の合計 - 今年取得した休暇
->- **今年度の合計**: 年度のすべての見越計上、調整、および繰り越し
->- **今年取得した休暇**: すべての承認済休暇
+これで、休暇残数にカーソルを合わせると、次の情報が表示されます。
+
+- **利用可** – **今年度の合計** 値から、**今年度の取得** 金額を差し引いた値。
+- **今年度の合計** – 年度のすべての見越計上、調整、および繰り越し。
+- **今年取得した休暇** – すべての承認済休暇。
 
 ## <a name="see-also"></a>参照
 

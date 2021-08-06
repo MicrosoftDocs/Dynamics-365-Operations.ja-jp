@@ -2,7 +2,7 @@
 title: データ マートのリセットに関する FAQ
 description: このトピックでは、データ マートのリセットに関してよくある質問に対する回答を示します。
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266612"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638270"
 ---
 # <a name="data-mart-resets-faq"></a>データ マートのリセットに関する FAQ
 
@@ -37,6 +37,9 @@ ms.locfileid: "6266612"
 
 - アプリケーション データベースが復元されました。
 - サポート チケットを開いて、サポート エンジニアから、トラブルシューティングの手順の一環としてデータ マートをリセットするように指示されました。
+ 
+> [!NOTE]
+> データ マートのリセットのプロセスは、データベースの総勘定元帳と予算トランザクションの数によって影響されます。 システムのトランザクション数によっては、データ マートのリセットをわずか 15 分で完了することも、4 時間かかることもあります。 ただし、リセットの所要時間が 4 時間を超える場合は、サポートに問い合わせることをお勧めします。
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>データ マートのリセットが不適切なのはいつですか?
 

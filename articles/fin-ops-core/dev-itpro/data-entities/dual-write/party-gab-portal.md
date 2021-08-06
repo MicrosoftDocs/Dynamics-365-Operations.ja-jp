@@ -1,6 +1,6 @@
 ---
-title: Power Portal を当事者のデータ モデルで使用する
-description: このトピックでは、二重書き込みの当事者データ モデルに対する Power Portal Web ロールの変更について説明します。
+title: Microsoft Power Apps ポータルを当事者のデータ モデルで使用する
+description: このトピックでは、二重書き込みの当事者データ モデルによる、Microsoft Power Apps ポータルのロールの変更について説明します。
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358620"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542566"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>Power Portal を当事者のデータ モデルで使用する
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Microsoft Power Apps ポータルを当事者のデータ モデルで使用する
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ ms.locfileid: "6358620"
 
     新しいアクセス許可を 3 つ作成する必要があります。
 
-    + 連絡先から当事者への接続
-    + 当事者からアカウントへの接続
-    + アカウントから注文への接続
+    + **連絡先** から **当事者** テーブルへの接続
+    + **当事者** から **アカウント** テーブルへの接続
+    + **アカウント** から **注文** テーブルへの接続
 
 4. 次のパラメーターを設定して、連絡先から当事者との接続に対する新しいアクセス許可を作成して保存します。
 
-    + **名前**: 当事者からアカウントへの接続 (または選択した項目)
+    + **名前**: **当事者** から **アカウント** テーブルへの接続 (または選択した項目)
     + **テーブル名**: msdyn_contactforparty
     + **Web サイト**: 顧客ポータル
     + **範囲**: 連絡先

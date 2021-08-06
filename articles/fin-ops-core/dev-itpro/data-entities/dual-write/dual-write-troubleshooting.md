@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b4de461d26fc6d5c39c1ac0c49201f265f562f5a
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350743"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542494"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -61,14 +61,14 @@ Package Deployer ツールをインストールした後、次の手順に従っ
 
 トレース ログを有効にするには、次の手順に従います。
 
-1. Dynamics 365 のモデル駆動型アプリにサインインし、**システム** 配下の **設定** ページを開き、 **管理** を選択します。
+1. Customer Engagement アプリにログインし、**設定** ページを開いてから、**システム** で **管理者** を選択します。
 2. **管理者** ページで、**システム管理** を選択します。
 3. **カスタマイズ** タブの **プラグインおよびユーザー定義ワークフロー活動の追跡** 列で、**すべて** を選択してプラグインのトレース ログを有効にします。 例外が発生したときにのみトレースログを記録する場合は **例外** を選択します。
 
 
 トレースログを確認にするには、次の手順に従います。
 
-1. Dynamics 365 のモデル駆動型アプリにサインインし、**カスタマイズ** 配下の **設定** ページを開き、 **プラグイン トレース ログ** を選択します。
+1. Customer Engagement アプリにログインし **設定** ページを開いてから、**カスタマイズ** で **プラグイン トレース ログ** を選択します。
 2. **タイプ名** 列が **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** に設定されているトレース ログを検索します。
 3. 完全なログを表示するには、項目をダブルクリックし、**実行** ファストタブで **メッセージ ブロック** のテキストを確認します。
 

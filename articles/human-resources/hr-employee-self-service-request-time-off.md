@@ -2,7 +2,7 @@
 title: 休暇の申請
 description: Dynamics 365 Human Resources で休暇を申請します。
 author: andreabichsel
-ms.date: 04/21/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86a0c659c8b586912ee848aa5f233f2e16f05fd4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: da04e3f93f381fbe25c7e1ed117b7ce10e8b04e9
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357194"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639561"
 ---
 # <a name="request-time-off"></a>休暇の申請
 
@@ -41,6 +41,8 @@ Dynamics 365 Human Resources において、休暇申請の送信や、休暇残
 5. 必要に応じて **コメント** に情報を入力します。
 
 6. 申請を送信する準備ができたら、**送信** を選択します。 それ以外の場合は、**下書きの保存** を選択します。
+
+新しい休暇申請を提出する従業員は、さまざまな休暇タイプを選択して休暇要求を作成できます。 ただし、単一の休暇申請の一部として選択される休暇タイプはすべて同じ休暇単位である必要があります。 従業員は、休暇タイプごとの休暇単位を **休暇申請** フォームで確認できます。
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>既存の申請に添付ファイルを追加
 

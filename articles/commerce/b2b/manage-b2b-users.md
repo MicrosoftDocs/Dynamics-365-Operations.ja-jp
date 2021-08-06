@@ -2,24 +2,24 @@
 title: B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理
 description: このトピックでは、管理者が企業間 (B2B) の e コマース Web サイトに関するビジネス パートナー ユーザーを追加、編集、削除する方法について説明します。
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 88f613be59a0c7b0d5efcdc0bef2c5a54506f9eb
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936659"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655609"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理
 
@@ -67,7 +67,7 @@ Commerce 本部でビジネス パートナーの管理者ユーザーを承認�
 
 1. **小売およびコマース IT \> 配送スケジュール** に移動し、**1010** (**顧客**) ジョブを実行し、新規作際された顧客と顧客の階層レコードをチャネル データベースに プッシュします。
 
-リクエストが承認され、顧客と顧客階層レコードがチャネルデータベースに同期されると、申請者は、リクエストを送信した際に提供されたメールアドレスを使用して、B2B e コマース Web サイトにサインインすることができます。 ユーザーは、登録フローを使用してアカウントのパスワードを定義できます。
+リクエストが承認され、顧客と顧客階層レコードがチャネルデータベースに同期されると、申請者は、リクエストを送信した際に提供されたメールアドレスを使用して、B2B e コマース Web サイトにサインインすることができます。 ユーザーは、登録フローを使用してアカウントのパスワードを定義できます。 ID プロバイダー (Azure AD B2C) レコードを、登録またはサインイン時に作成された B2B 顧客レコードにリンクするには、[ID レコードの顧客アカウントへの自動リンクを有効にする](../identity-record-linking.md)の手順に従います。
 
 ## <a name="onboard-additional-business-partner-users"></a>追加の取引先ユーザーをオンボードする
 
@@ -83,7 +83,7 @@ Commerce 本部でビジネス パートナーの管理者ユーザーを承認�
 
 1. **1010** (**顧客**) ジョブを実行して 、新しい取引先ユーザーをチャンネル データベースに同期します。
 
-顧客レコードが同期された後、B2B e コマース Web サイトのユーザーの状態が **有効** に設定され、新しいユーザーはメール アドレスを使用して B2B e コマース Web サイトにログインできます。 ユーザーは、登録フローを使用してアカウントのパスワードを定義できます。
+顧客レコードが同期された後、B2B e コマース Web サイトのユーザーの状態が **有効** に設定され、新しいユーザーはメール アドレスを使用して B2B e コマース Web サイトにログインできます。 ユーザーは、登録フローを使用してアカウントのパスワードを定義できます。 ID プロバイダー (Azure AD B2C) レコードを、登録またはサインイン時に作成された B2B 顧客レコードにリンクするには、[ID レコードの顧客アカウントへの自動リンクを有効にする](../identity-record-linking.md)の手順に従います。
 
 ## <a name="edit-business-partner-user-details"></a>取引先のユーザー詳細情報を編集する
 

@@ -4,24 +4,17 @@ description: このトピックでは、二重書き込みでの顧客ロイヤ�
 author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: d2c3845c1a7371d9e992495246e8dd0eb8631020
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d70fc6fea0e4e4e8f4ad73de5699b6b3fd481613
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747990"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542616"
 ---
 # <a name="customer-loyalty-cards-and-reward-points"></a>顧客ロイヤルティ カードと報酬ポイント
 
@@ -33,16 +26,10 @@ ms.locfileid: "5747990"
 
 ## <a name="templates"></a>テンプレート
 
-| Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ | 説明 |
+Finance and Operations アプリ | Customer Engagement アプリ     | 説明
 |-----------------------------|-----------------------------------|-------------|
-| ロイヤルティ カード                | msdyn\_loyaltycards               | このテンプレートは、顧客のロイヤリティ カードに関する情報を同期します。 |
-| ロイヤルティ報酬ポイント       | msdyn\_loyaltyrewardpoints        | このテンプレートは、顧客の報酬ポイントに関する情報を同期します。 |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
-
-[!include [mapping reward points](includes/LoyaltyRewardPoints-msdyn-loyaltyrewardpoints.md)]
-
+[ロイヤルティ カード](mapping-reference.md#149) | msdyn_loyaltycards | このテンプレートは、顧客のロイヤリティ カードに関する情報を同期します。 |
+[ロイヤルティ レベル](mapping-reference.md#226) | msdyn_loyaltylevels | このテンプレートは、顧客の報酬ポイントに関する情報を同期します。 |
+[ロイヤルティ報酬ポイント](mapping-reference.md#150) | msdyn_loyaltyrewardpoints | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

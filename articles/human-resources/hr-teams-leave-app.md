@@ -2,7 +2,7 @@
 title: Teams での休暇要求の管理
 description: このトピックでは、Microsoft Teams で Dynamics 365 Human Resources アプリを使用して休暇を申請する方法について説明します。
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2a74b895052d017ccbe397bfb9a45609646b2f93
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356515"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639441"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -166,6 +166,10 @@ Dynamics 365 Human Resources Teams アプリへのサインインまたは使用
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリにサインインできない
 
 アプリにサインインできない場合は、Microsoft Teams へのサインインに使用しているアカウントが Dynamics 365 Human Resources の従業員レコードに関連付けられていない可能性があります。 システム管理者に連絡して、従業員レコードが正しく関連付けられていることを確認してください。
+
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>設定で Dynamics 365 Human Resources 環境が見つらない
+
+正しい Dynamics 365 環境を選択できない場合、ユーザー レコードが正しく同期されていない可能性があります。 システム管理者に問い合わせて、ユーザー レコードを再作成し、そのユーザー資格情報を関連付けしてください。 次に、数分後に Microsoft Teams の Human Resources アプリケーションにログインしてください。
 
 ### <a name="translations-dont-display-correctly"></a>翻訳が正しく表示されない
 

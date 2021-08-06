@@ -2,7 +2,7 @@
 title: ヘルプ システム
 description: このトピックでは、Finance and Operations  アプリのヘルプ システムの概要を説明します。
 author: edupont04
-ms.date: 04/14/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f4c9ad36eb2f1abfc9225f1e62e635cebacd47
-ms.sourcegitcommit: 42a93a96565c56c9c64642ed6e6e302b3fbfcd85
+ms.openlocfilehash: e0ba083c64c840e17bf2fba982b2686c8a47e097
+ms.sourcegitcommit: 5c9a5bfef507ed36f0f849ab56fa0aa8abb78d54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "6373370"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6646516"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -30,7 +30,7 @@ ms.locfileid: "6373370"
 
 以下のアプリのユーザーは、同じヘルプ システムをベースにした状況依存型のヘルプ、またはその他のコンテンツにアクセスできます。
 
-- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
@@ -48,23 +48,23 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](/dynamics365/)) 
 
 docs.microsoft.com のコンテンツは、任意の検索エンジンを使用して検索できます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: **site:docs.microsoft.com dynamics 365 "検索する語句"**。
 
-<!--## Get notified about changes through an RSS feed
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>RSS フィードを通じて変更の通知を受け取る
 
-To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
+Finance and Operations アプリ全体で docs.microsoft.com のコンテンツに加えられたすべての更新の RSS フィードを購読するには、次のリンクを使用します。
 
-[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
+[RSS フィード](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
 > [!NOTE]
-> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+> RSS フィードは、最新更新された 100 トピックの一覧が返されます。 リストは、日付ごとに並べ替えられません。  
 
-Alternatively, you can subscribe to an RSS feed by app:
+また、アプリケーションで RSS フィードを購読することもできます。
 
 - [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
 - [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
 - [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
-- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
-- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
-COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
+- [サプライ チェーン](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [人材](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+
 ### <a name="leave-us-feedback"></a>フィードバックをお送りください
 
 フィードバックまたはトピックに関するご質問がある場合は、ページ下部にコメントを記入してください。

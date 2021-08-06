@@ -2,7 +2,7 @@
 title: Adventure Works テーマの概要
 description: このトピックでは、Adventure Works テーマの概要を示し、Microsoft Dynamics 365 Commerce のサイト ページに適用する方法を説明します。
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,36 +14,48 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7557a36a948de5ae877d74bbbdea78821099b82
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c8183d09e15f83606d84fddd02cb2dfb9b2fb528
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479488"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655635"
 ---
 # <a name="adventure-works-theme-overview"></a>Adventure Works テーマの概要
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Adventure Works テーマの概要を示し、Microsoft Dynamics 365 Commerce のサイト ページに適用する方法を説明します。
 
 Dynamics 365 Commerce には、Adventure Works という名前の eコマースのテーマがあります。 Adventure Works テーマは、スポーツとスポーツに関連する製品を紹介し、豊富で強化された釣り合い体験のために最適化されます。 これは、最新の外観、新しいレイアウト、およびアニメーション効果を提供し、eコマース顧客に対するオンライン買い物の経験を提供します。
 
-Adventure Works テーマは、次の新しいワークフローを提供します。
+## <a name="trial-environments-in-commerce"></a>Commerce での試用環境
 
-- ビデオ プレーヤー モジュールは、追加のオプションでヘッダー、段落、およびリンク機能をサポートします。
-- カートに追加アクションは、通知を提供する代わりにミニ カートを呼び出します。
+Adventure Works テーマが企業と顧客間 (B2C) サイトおよび企業間 (B2B) サイトに配置された場合にどのようになるかを確認するには、次の試用版サイトを参照してください。
+
+- [Adventure Works B2C サイト](https://www.adventure-works.com/)
+- [Adventure Works B2B サイト](https://www.adventure-works.com/business)
+
+## <a name="theme-capabilities"></a>テーマの機能
+
+Adventure Works テーマは、次の新しい機能を提供します。
+
+- ビデオ プレーヤー モジュールは、追加のストーリーテリングのためにヘッダー、段落、およびリンク機能をサポートします。
+- アニメーションを通じてコンテンツの切り替えが可能になります。
+- 「カートに追加」 アクションは、通知を提供する代わりにミニ カートを呼び出します。
 - クイック ビュー モジュールは、デスクトップ ビューポートとモバイル ビューポートの両方にスライドするウィンドウです。
-- 空の買い物カゴでプロモーションを紹介することができます。
+- サイト ページには新しいレイアウトがあります。 
+- マーケティング コンテンツは、空の場合にカートおよびミニ カートに対してコンフィギュレーションできます。
+- このミニ カートには、「50 ドルを超える注文で送料無料」 などのプロモーション メッセージが表示される
+- 説明カードは、検索ページとカテゴリ ページに表示されます。
 
-Adventure Works テーマには、Commerce モジュール ライブラリに次のモジュールが含まれています:
+Adventure Works テーマには、Commerce モジュール ライブラリに次のストーリーテリング モジュールが含まれています。
 
-- タイル リスト モジュール
-- 対話型フィーチャー モジュール
-- モジュールを登録する
-- 有効な画像モジュール
-- イメージ リスト モジュール
+- [タイトル リスト モジュール](tile-list-module.md)
+- [対話型機能モジュール](interactive-feature-module.md)
+- [有効な画像モジュール](active-image-module.md)
+- [購読モジュール](subscribe-module.md)
+- [画像リスト モジュール](image-list-module.md)
 
 Adventure Works テーマは完全に応答可能であり、デスクトップ、モバイル、およびタブレットのビューポートに最適化されたエクスペリエンスを提供します。
 
@@ -78,11 +90,15 @@ Adventure Works テーマには、**表示拡張** および **モジュール�
 
 テーマ拡張機能の詳細については、[テーマ拡張](e-commerce-extensibility/theme-module-extensions.md) を参照してください。
 
+## <a name="install-the-adventure-works-theme"></a>Adventure Works テーマのインストール
+
+Adventure Works テーマのインストール方法については、[Adventure Works テーマのインストール](install-adventure-works.md) を参照してください。
+
 ## <a name="additional-resources"></a>追加リソース
 
 [モジュール ライブラリの概要](starter-kit-overview.md)
 
-[タイル リスト モジュール](tile-list-module.md)
+[タイトル リスト モジュール](tile-list-module.md)
 
 [対話型フィーチャー モジュール](interactive-feature-module.md)
 

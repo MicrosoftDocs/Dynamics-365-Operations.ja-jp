@@ -2,7 +2,7 @@
 title: キャッシュ フローの予測 (プレビュー版)
 description: このトピックでは、キャッシュ フローの予測機能について説明します。
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3f16c8471123969443af52ff9bed7fc017b8e9c2
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f4b48122ea54c201888d71afb5fb731ebcab230d
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339218"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638779"
 ---
 # <a name="cash-flow-forecast-preview"></a>キャッシュ フローの予測 (プレビュー版)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 キャッシュ フローは、すべての業務にとって重要です。 利益を上げている企業でも、差し迫った要求に合わせたキャッシュ フローを維持できなければ、債務超過に陥る可能性があります。 Finance Insights のキャッシュ フロー予測機能を使用すると、現金残高を効果的に監視および管理する際に役立ちます。 この機能は、機械学習を利用して、企業がキャッシュ フローを従来よりも正確に予測できるようにするものです。 また、経営者が現在のキャッシュ ポジションのコンテキストの中で機会を最適化する意思決定を行う場合にも役立ちます。 
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8f80458de69a77846259c9a0707c05098d13e12a
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: ecffbfa00aee1dd3197aeeab3b292aba8aafd82f
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115076"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641159"
 ---
 # <a name="product-readiness"></a>製品準備完了
 
@@ -177,8 +177,6 @@ ms.locfileid: "6115076"
 <a name="standard-products"></a>
 
 ## <a name="readiness-checks-on-standard-products"></a>標準製品の準備完了チェック
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 機能管理の *製品の準備完了チェック* 機能を有効にすることで、標準 (非エンジニアリング) 製品に対して製品の準備完了チェックを有効にできます。 この機能は、準備完了チェック システムにいくつかの小さな変更を加え、標準製品をサポートするようになります。
 

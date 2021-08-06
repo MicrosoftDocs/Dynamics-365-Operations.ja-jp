@@ -15,17 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d6854c11822e07ff06426b7a35eac86cdc0e9b06
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 43f402c62cd7c9aab184152820e4fac9499c6f20
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356905"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638172"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>製品分析コードの表示設定を適用する
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 このトピックでは、商品の分析コードの表示設定と、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f9cd8846688e6b70f3ac2034caa1a9e3015355e
+ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815719"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6645375"
 ---
 # <a name="fixed-asset-transaction-options"></a>固定資産トランザクションのオプション
 
@@ -46,7 +46,7 @@ ms.locfileid: "5815719"
 ## <a name="general-ledger"></a>総勘定元帳
 すべての固定資産トランザクション タイプは [一般仕訳帳] ページで転記できます。 また、固定資産の仕訳帳を使用して、固定資産トランザクションを転記できます。
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>固定資産トランザクション タイプの入力のためのオプション
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>固定資産トランザクション タイプの入力のためのオプション
 
 
 | トランザクション タイプ                    | モジュール                   | オプション                                   |
@@ -61,10 +61,20 @@ ms.locfileid: "5815719"
 | ** **                               | 一般会計           | 一般仕訳帳                           |
 | ** **                               | 売掛金管理      | 自由書式の請求書                         |
 
-
 減価償却トランザクション タイプの仕訳帳明細行がデータ エンティティを通じて手動で作成またはインポートされた場合、固定資産の減価償却期間の残存価額は更新されません。 この値は、減価償却提案プロセスを使用して仕訳帳明細行を作成したときに更新されます。
 
 詳細については、「[固定資産の統合](fixed-asset-integration.md)」を参照してください。
 
+### <a name="transactions-that-require-different-voucher-numbers"></a>異なる伝票番号が必要なトランザクション
+
+次の固定資産トランザクションでは、異なる伝票番号が使用されます。
+
+- 資産の追加取得が行われ、減価償却の「遡及」が計算されます。
+- 資産が分割されます。
+- 処分時の減価償却を計算するためのパラメーターは有効になり、資産が処分されます。
+- 資産利用開始日は、取得日付より前になります。 したがって、減価償却調整額が転記されます。
+
+> [!NOTE]
+> トランザクションを入力するときは、すべてのトランザクションが同じ固定資産に適用されることを確認します。 **新しい伝票** フィールドが、一般会計の **仕訳帳名** ページで **1 つの伝票番号のみ** に設定されている場合でも、複数の固定資産が含まれていると、伝票は転記されません。 伝票に複数の固定資産を含めると、「1 つの伝票に対して指定できる固定資産トランザクションは 1 つのみです」というメッセージを受け取り、伝票を転記することはできません。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

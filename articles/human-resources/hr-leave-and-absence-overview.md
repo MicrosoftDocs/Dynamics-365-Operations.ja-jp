@@ -2,7 +2,7 @@
 title: 休暇の概要
 description: Dynamics 365 Human Resources では、休暇および欠勤ワークスペースは、新しい休暇計画を作成するための柔軟なフレームワークを提供します。 また、申請の管理に使用するワークフロー、および従業員が休暇の申請に使用する直観的なセルフサービス ページも用意されています。
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b41838b447dcbffc656ab759fcc4746abb620661
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 7a3c305910f41ebd775292dee91a6044c2cdb244
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339718"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639489"
 ---
 # <a name="leave-and-absence-overview"></a>休暇の概要
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources は、従業員に休暇による大きな益を与える助けになります。 **休暇および欠勤** ワークスペースは、新しい休暇計画の作成に使用できる柔軟なフレームワークを提供します。 また、申請の管理に使用するワークフローと従業員が休暇の申請に使用する直観的なセルフサービス ページも用意されています。 分析では、組織が休暇残日数および休暇計画の用途を測定および監視するのに役立ちます。
+Dynamics 365 Human Resources は、従業員に休暇による大きな益を与える助けになります。 **休暇および欠勤** ワークスペースは、新しい休暇計画の作成に使用できる柔軟なフレームワークを提供します。 また、申請の管理に使用するワークフロー、および従業員が休暇の申請に使用する直観的なセルフサービス ページも用意されています。 分析では、組織が休暇残日数および休暇計画の用途を測定および監視するのに役立ちます。
 
 ## <a name="set-up-leave-and-absence"></a>休暇の設定
 
@@ -35,6 +35,7 @@ Dynamics 365 Human Resources は、従業員に休暇による大きな益を与
 - [休暇パラメーターのコンフィギュレーション](hr-leave-and-absence-parameters.md)
 - [作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)
 - [休暇申請ワークフローの作成](hr-leave-and-absence-workflow.md)
+- [休暇マネージャー ロールの構成](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>休暇計画を作成および管理する
 
@@ -50,8 +51,9 @@ Dynamics 365 Human Resources は、従業員に休暇による大きな益を与
 
 **従業員セルフ サービス** ワークスペースで、従業員が休暇申請を送信したり、組織がその申請を管理することができます。
 
-[休暇の申請](hr-employee-self-service-request-time-off.md)
-[休暇と欠勤申請の管理](hr-employee-self-service-manage-requests.md)
+- [休暇申請](hr-employee-self-service-request-time-off.md)
+- [休暇および欠勤要求の管理](hr-employee-self-service-manage-requests.md)
+- [休暇マネージャー ロールの構成](hr-configure-absence-manager.md)
 
 
 

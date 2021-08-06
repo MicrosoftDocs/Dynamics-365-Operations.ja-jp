@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a0a14c87af7f0d2372d752233f21d9accbca58a8
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350791"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542518"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>ライブ同期に関する問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 このトピックでは、Finance and Operations アプリと Dataverse 間のデュアル書き込み統合に関するトラブルシューティングの情報を提供します。 このトピックでは、ライブ同期の問題修正に役立つトラブルシューティングに特化した情報を提供します。
 
@@ -81,7 +79,7 @@ Finance and Operationsアプリでデータを作成する際に、次のよう�
 
     ![組織のマッピング。](media/mapped_business_unit.png)
 
-2. Dynamics 365 のモデル駆動型アプリケーションの環境にログインし、**設定 \> セキュリティ** に移動し、マッピングされた事業単位のチームを検索します。
+2. Customer Engagement アプリの環境にログインし、**設定 \> セキュリティ** の順に移動し、マッピングされた事業単位のチームを検索します。
 
     ![マッピングされた事業単位のチーム。](media/setting_security_page.png)
 
@@ -99,7 +97,7 @@ Finance and Operations アプリでデータを作成した際に、次のエラ
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**エンティティ CustCustomerV3Entity のペイロードを生成できません。**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":" ペイロードの作成に失敗しました。エラー 無効な URI です：URI が入力されていません。}\],"isErrorCountUpdated":true}*
 
-Dynamics 365 のモデル駆動アプリでは、次のようにエラーが表示されます：
+以下に Customer Engagement アプリでエラーがどのように表示されるかを示します。
 
 *ISV コードに起因する予期しないエラーが発生しました。（ErrorType = ClientError）プラグイン（実行）に起因する予期しない例外が発生しました。Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: エンティティ アカウントの処理に失敗しました ―（接続先が一定期間応答しなかったために接続に失敗したか、接続ホストが応答しなかったために確立された接続が失敗しました*
 
@@ -125,6 +123,5 @@ Dynamics 365 のモデル駆動アプリでは、次のようにエラーが表�
 
 3. **externalenvironmentURL** の列に、正しい Dataverse またはアプリの URL が設定されていることを確認してください。 誤った Dataverse の URL を指している重複行を削除します。 DUALWRITEPROJECTFIELDCONFIGURATION テーブルと DUALWRITEPROJECTCONFIGURATION テーブルにて該当する行を削除します。
 4. テーブルのマッピングを停止して、再起動してください
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

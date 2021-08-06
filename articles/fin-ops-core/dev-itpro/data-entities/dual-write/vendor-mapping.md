@@ -4,24 +4,17 @@ description: このトピックでは、Finance and Operations アプリと Data
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 36cfed92535c1df3ba55fd56bc8aa2f9eccf3003
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346499"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542442"
 ---
 # <a name="integrated-vendor-master"></a>統合された仕入先マスター
 
@@ -29,9 +22,7 @@ ms.locfileid: "6346499"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
-*仕入先* という用語は、サプライヤー組織、または会社に商品やサービスを提供している唯一の個人事業主を指します。 *仕入先* は、Microsoft Dynamics 365 Supply Chain Management で確立されていますが、Dynamics 365 のモデル駆動型アプリには仕入先の概念は存在しません。 ただし、**取引先企業/連絡先** テーブルをオーバーロードして、仕入先情報を格納することができます。 この統合型仕入先マスターは、Dynamics 365のモデル駆動アプリケーションで明示的なベンダー概念を導入します。 新しい仕入先設計を使用するか、仕入先データを **取引先企業/連絡先** テーブルに格納することができます。 デュアル書き込みでは、両方の手法がサポートされます。
+*仕入先* という用語は、サプライヤー組織、または会社に商品やサービスを提供している唯一の個人事業主を指します。 *仕入先* は、Microsoft Dynamics 365 Supply Chain Management で確立されていますが、Customer Engagement アプリには仕入先の概念は存在しません。 ただし、**取引先企業/連絡先** テーブルをオーバーロードして、仕入先情報を格納することができます。 この統合型仕入先マスターは、Customer Engagement アプリで明示的なベンダー概念を導入します。 新しい仕入先設計を使用するか、仕入先データを **取引先企業/連絡先** テーブルに格納することができます。 デュアル書き込みでは、両方の手法がサポートされます。
 
 どちらの手法でも、仕入先データは Dynamics 365 Supply Chain Management、Dynamics 365 Sales、Dynamics 365 Field Service、および Power Apps の各ポータル間で統合されます。 Supply Chain Management では、購買要求や発注書などのワークフローでデータを使用できます。
 
@@ -52,27 +43,17 @@ ms.locfileid: "6346499"
 
 仕入先データには、仕入先グループ、住所、連絡先情報、支払プロファイル、請求書プロファイル、およびロイヤルティ ステータスなど、仕入先に関するすべての情報が含まれます。 次の表に示すように、テーブル マップのコレクションは、仕入先データの操作中に連携して動作します。
 
-Finance and Operations アプリ | その他の Dynamics 365 アプリ     | 説明
+Finance and Operations アプリ | Customer Engagement アプリ     | 説明
 ----------------------------|-----------------------------|------------
-仕入先 V2                   | 口座                     | 取引先企業テーブルを使用して仕入先情報を格納する企業は、引き続き同じ方法で使用できます。 また、Finance and Operations アプリ統合により、明示的な仕入先機能を利用することもできます。
-仕入先 V2                   | Msdyn\_vendors              | 仕入先向けのカスタム ソリューションを使用する企業は、Finance and Operations アプリ統合による Dataverse で導入されている直定の仕入先概念を利用できます。 
-仕入先グループ               | msdyn\_vendorgroups         | このテンプレートは、仕入先グループ情報を同期します。
-仕入先支払方法       | msdyn\_vendorpaymentmethods | このテンプレートは、仕入先支払方法に関する情報を同期します。
-CDS 連絡先 V2             | 連絡先                    | [連絡先](customer-mapping.md#cds-contacts-v2-to-contacts) テンプレートでは、顧客と仕入先の両方について、基本、二次、三次の連絡先情報がすべて同期されます。
-支払スケジュール行      | msdyn\_paymentschedulelines | [支払スケジュール行](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) テンプレートは、顧客および仕入先の参照データを同期します。
-支払スケジュール            | msdyn\_paymentschedules     | [支払スケジュール](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) テンプレートは、顧客および仕入先の支払スケジュールに関する参照データを同期します。
-支払期日明細行 CDS V2    | msdyn\_paymentdaylines      | [支払期日明細行](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) テンプレートは、顧客および仕入先の支払期日明細行に関する参照データを同期します。
-支払期日 CDS            | msdyn\_paymentdays          | [支払期日](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) テンプレートは、顧客および仕入先の支払期日に関する参照データを同期します。
-支払条件            | msdyn\_paymentterms         | [支払条件](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) テンプレートは、顧客および仕入先の支払条件に関する参照データを同期します。
-名前の接辞                | msdyn\_nameaffixes          | [名前の接辞](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) テンプレートは、顧客および仕入先の名前の接辞に関する参照データを同期します。
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [Vendors](includes/VendorsV2-msdyn-vendors.md)]
-
-[!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
-
-[!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
+[CDS 連絡先 V2](mapping-reference.md#115) | 連絡先 | このテンプレートでは、顧客と仕入先の両方について、基本、二次、三次の連絡先情報がすべて同期されます。
+[名前の接辞](mapping-reference.md#155) | msdyn_nameaffixes | このテンプレートは、顧客および仕入先の名前の接辞に関する参照データを同期します。
+[支払期日明細行 CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | このテンプレートは、顧客および仕入先の支払期日明細行に関する参照データを同期します。
+[支払期日 CDS](mapping-reference.md#158) | msdyn_paymentdays | このテンプレートは、顧客および仕入先の支払期日に関する参照データを同期します。
+[支払スケジュール行](mapping-reference.md#159) | msdyn_paymentschedulelines | 顧客および仕入先の支払スケジュール明細行に関する参照データを同期します。
+[支払スケジュール](mapping-reference.md#160) | msdyn_paymentschedules | このテンプレートは、顧客および仕入先の支払スケジュールに関する参照データを同期します。
+[支払条件](mapping-reference.md#161) | msdyn_paymentterms | このテンプレートは、顧客および仕入先の支払条件 (支払に関する条件) に関する参照データを同期します。
+[仕入先 V2](mapping-reference.md#202) | msdyn_vendors | 仕入先向けのカスタム ソリューションを使用する企業は、Finance and Operations アプリ統合による Dataverse で導入されている直定の仕入先概念を利用できます。
+[仕入先グループ](mapping-reference.md#200) | msdyn_vendorgroups | このテンプレートは、仕入先グループ情報を同期します。
+[仕入先支払方法](mapping-reference.md#201) | msdyn_vendorpaymentmethods | このテンプレートは、仕入先支払方法に関する情報を同期します。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

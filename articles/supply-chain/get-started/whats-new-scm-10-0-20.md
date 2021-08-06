@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.20 のプレビュー (2021 年 8 月)
+title: Dynamics 365 Supply Chain Management 10.0.20 (2021 年 8 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.20 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,30 +10,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301749"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641059"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Management 10.0.20 のプレビュー (2021 年 8 月)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Management 10.0.20 (2021 年 8 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、バージョン 10.0.20 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.886 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.20 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.886 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 5 月
 - **リリースの一般提供 (手動更新):** 2021 年 7 月
 - **リリースの一般提供 (自動更新):** 2021 年 8 月
 
-
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
 次の表に、このリリースに含まれる機能の一覧を示します。 *機能* 列には、[リリース計画](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクがあり、各機能の公式リリース日を確認できます。 *詳細情報* 列には、詳細情報や関連ドキュメントへのリンクが表示されます。
 
-これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。
+これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 | 機能領域 | 機能 | 詳細 |
 |---|---|---|
@@ -49,7 +47,7 @@ ms.locfileid: "6301749"
 
 | 機能領域 | 機能&nbsp;管理の機能&nbsp;名&nbsp; | 詳細 |
 |---|---|---|
-| マスター プラン | 計画の最適化のマイナス在庫日数 | このプレビュー機能により、計画の最適化では、補充グループで定義された **マイナス在庫日数** パラメーターに基づいて遅延許容範囲を考慮できます。 |
+| マスター プラン | 計画の最適化のマイナス在庫日数 | この機能により、計画の最適化では、補充グループで定義された **マイナス在庫日数** パラメーターに基づいて遅延許容範囲を考慮できます。 |
 | マスター プラン | 調整された需要予測の並列承認 | この機能により、**調整された需要予測** ページから調整済需要予測を並行して承認できます。 この機能の目的は、多数の予測が承認されている場合のパフォーマンスを向上させることです。 承認時に、ユーザーは、承認するダイアログで **スレッド数** を指定できます。 |
 | マスター プラン | (プレビュー) 計画バルク オーダーおよび梱包バッチ オーダーのバッチ処理可能な確定と連結 | この機能を使用すると、バッチ ジョブを使用して、計画バルク オーダーと梱包オーダーを確定および連結できます。 |
 | 生産管理 | 汎用工順のコピー | この機能により、工順コピー機能が強化され、ユーザーは品目固有ではない工順をコピーできます。 工順コピー機能を使用して品目にまだ割り当てられていない工順を上書きした後で、システムはすべての関連情報 (サイト、工順グループ、リソース要件、各種の時間など) を更新できます。 |
@@ -75,7 +73,7 @@ ms.locfileid: "6301749"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 7 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md) を参照してください。 <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 7 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

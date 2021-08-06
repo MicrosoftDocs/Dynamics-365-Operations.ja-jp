@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6fb4e91f00163f5280d2c767843afd5c7a33712d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 951136a6a5197d2ec081b325df2980ad2fcf6e42
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350888"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542715"
 ---
 # <a name="dual-write-overview"></a>二重書き込みの概要
 
@@ -84,7 +84,7 @@ ms.locfileid: "6350888"
 
 二重書き込みにより、Microsoft Dynamics 365 アプリケーション間でデータの統合が提供されます。 この信頼性の高いフレームワークでは、環境をリンクして、さまざまなビジネス アプリケーションを連携させることができます。 二重書き込みを使用する必要がある主な理由は次のとおりです。
 
-+ 二重書き込みは、Finance and Operations アプリと Dynamics 365 の モデル駆動型アプリの間で密結合、ほぼリアルタイム、および双方向の統合を提供します。 この統合により、すべてのビジネスソリューションに対して、1 つの停止ショップとして Microsoft Dynamics 365 が作成されます。 Dynamics 365 Finance と Dynamics 365 Supply Chain Management を使用しているが、顧客関係管理 (CRM) に対して Microsoft 以外のソリューションを使用している顧客は、二重書き込みをサポートするために Dynamics 365 に移行しています。
++ 二重書き込みは、Finance and Operations アプリと Customer Engagement アプリの間で密結合された、ほぼリアルタイムの、および双方向の統合を提供します。 この統合により、すべてのビジネスソリューションに対して、1 つの停止ショップとして Microsoft Dynamics 365 が作成されます。 Dynamics 365 Finance と Dynamics 365 Supply Chain Management を使用しているが、顧客関係管理 (CRM) に対して Microsoft 以外のソリューションを使用している顧客は、二重書き込みをサポートするために Dynamics 365 に移行しています。
 + 顧客、製品、工程、プロジェクト、およびインターネット オブ シングス (IoT) のデータは、自動的に二重書き込みによって Dataverse にフローします。 この接続は、Power Platform の展開に関心のある企業にとって便利です。
 + 二重書き込みインフラストラクチャは、コードなし/ロー コード原則に従います。 標準のテーブルからテーブルへのマップを拡張したり、カスタム マップを含めたりするには、最小限のエンジニアリング実績が要求されます。
 + 二重書き込みでは、オンライン モードとオフライン モードの両方がサポートされます。 Microsoft は、オンラインとオフライン モードのサポートを提供している唯一の会社です。
