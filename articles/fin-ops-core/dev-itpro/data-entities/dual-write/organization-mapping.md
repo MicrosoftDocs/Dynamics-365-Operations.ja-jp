@@ -4,24 +4,17 @@ description: このトピックでは、Finance and Operations アプリと Data
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d1ad3bc4eef1650b927d9f6dd699f788994c7e87
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355301"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542590"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Dataverse の組織階層
 
@@ -45,32 +38,17 @@ Finance and Operations アプリと Dataverse を構成するビジネス エコ
 
 製品情報には、製品分析コードや追跡、保管分析コードなど、製品とその定義に関連するすべての情報が含まれます。 次のテーブルが示すように、製品と関連する情報を同期するためにテーブル マップのコレクションが作成されます。
 
-Finance and Operations アプリ | その他の Dynamics 365 アプリ | 説明
+Finance and Operations アプリ | Customer Engagement アプリ     | 説明
 -----------------------|--------------------------------|---
-組織階層の目的 | msdyn_internalorganizationhierarchypurposes | このテンプレートでは、組織階層目的テーブルの一方向の同期を行うことができます。
-組織階層タイプ | msdyn_internalorganizationhierarchytypes | このテンプレートでは、組織階層タイプ テーブルの一方向の同期を行うことができます。
-組織階層 - 公開済み | msdyn_internalorganizationhierarchies | このテンプレートでは、組織階層の公開済みテーブルの一方向の同期を行うことができます。
-作業単位 | msdyn_internalorganizations |
-法人 | msdyn_internalorganizations |
-法人 | cdm_companies | 法人 (会社) 情報の双方向の同期を提供します。
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
-
-[!include [Organization hierarchy type](includes/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
-
-[!include [Organization hierarchy - published](includes/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
+[法人](mapping-reference.md#102) | cdm_companies | 法人 (会社) 情報の双方向の同期を提供します。
+[法人](mapping-reference.md#142) | msdyn_internalorganizations |
+[作業単位](mapping-reference.md#143) | msdyn_internalorganizations |
+[組織階層 - 公開済み](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | このテンプレートでは、組織階層の公開済みテーブルの一方向の同期を行うことができます。
+[組織階層の目的](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | このテンプレートでは、組織階層目的テーブルの一方向の同期を行うことができます。
+[組織階層タイプ](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | このテンプレートでは、組織階層タイプ テーブルの一方向の同期を行うことができます。
 
 ## <a name="internal-organization"></a>内部組織
 
 Dataverse の内部組織情報は、**作業単位** と **法人エンティティ** の 2 つのテーブルから来ています。
-
-[!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-Companies.md)]
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

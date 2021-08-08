@@ -2,7 +2,7 @@
 title: 概要
 description: Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定、従業員の報酬と福利厚生の設定、および従業員の管理について説明します。
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8595bbbce9ab39893b67ee142bcb71996ccd6994
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 8b03865c1e53f943989437ed4839474e37419f2e
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338057"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639513"
 ---
 # <a name="overview"></a>概要
 
@@ -100,8 +100,9 @@ Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定
 [休暇および欠勤計画の見越計上](hr-leave-and-absence-accrue.md)</br>
 [休暇および欠勤の分析の表示](hr-leave-and-absence-analytics.md)</br>
 [休暇および欠勤要求の管理](hr-employee-self-service-manage-requests.md)</br>
-[要求時間オフ](hr-employee-self-service-request-time-off.md)</br>
+[休暇申請](hr-employee-self-service-request-time-off.md)</br>
 [チームおよび会社のカレンダーの表示](hr-employee-self-service-calendar.md)</br>
+[休暇マネージャー ロールの構成](hr-configure-absence-manager.md)</br>
 
 ## <a name="develop-employees"></a>従業員の育成
 

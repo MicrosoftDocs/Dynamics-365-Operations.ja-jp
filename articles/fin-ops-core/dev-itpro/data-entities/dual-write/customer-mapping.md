@@ -4,24 +4,17 @@ description: このトピックでは、Finance and Operations と Dataverse 間
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5af584eb0bdb65942921847219b46b8f93dae79d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8f85759f650e1c0e2a1d228b6429d218edac8ef4
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350914"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542542"
 ---
 # <a name="integrated-customer-master"></a>統合された顧客マスター
 
@@ -29,8 +22,7 @@ ms.locfileid: "6350914"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-顧客データは、複数の Dynamics 365 アプリケーションでマスターできます。 たとえば、顧客行は Dynamics 365 Sales (Dynamics 365のモデル駆動型アプリ) の営業活動から発生する場合があり、行は Dynamics 365 Commerce ( Finance and Operationsアプリの) 小売活動を通じて発生する場合があります。 顧客データの発生元の場所を問わず、バックグラウンドで統合されます。 統合された顧客マスターを使用すると、任意の Dynamics 365 アプリケーションに顧客データをマスタに分配することができ、Dynamics 365 application スイートを介して顧客の包括的なビューを表示できます。
+顧客データは、複数の Dynamics 365 アプリケーションでマスターできます。 たとえば、顧客行は Dynamics 365 sales (Customer Engagement アプリ) の営業活動から発生する場合があり、または行が Dynamics 365 Commerce (Finance and Operations アプリ) の小売活動を通じて発生する場合があります。 顧客データの発生元の場所を問わず、バックグラウンドで統合されます。 統合された顧客マスターを使用すると、任意の Dynamics 365 アプリケーションに顧客データをマスタに分配することができ、Dynamics 365 application スイートを介して顧客の包括的なビューを表示できます。
 
 ## <a name="customer-data-flow"></a>顧客データ フロー
 
@@ -50,43 +42,18 @@ Dataverse では、商取引/組織の顧客はアカウント テーブルで�
 
 顧客データには、顧客グループ、住所、連絡先情報、支払プロファイル、請求書プロファイル、およびロイヤルティ ステータスなど、顧客に関するすべての情報が含まれます。 次の表に示すように、テーブル マップのコレクションは、顧客データ操作中に連携して動作します。
 
-Finance and Operations アプリ | その他の Dynamics 365 アプリ         | 説明
+Finance and Operations アプリ | Customer Engagement アプリ         | 説明
 ----------------------------|---------------------------------|------------
-CDS 連絡先 V2             | 連絡先                        | このテンプレートでは、顧客と仕入先の両方について、基本、二次、三次の連絡先情報がすべて同期されます。
-顧客グループ             | msdyn_customergroups            | このテンプレートは、顧客グループ情報を同期します。
-顧客支払方法     | msdyn_customerpaymentmethods    | このテンプレートは、顧客支払方法に関する情報を同期します。
-顧客 V3                | 勘定                        | このテンプレートは、商業および組織顧客の顧客マスター情報を同期します。
-顧客 V3                | 連絡先                        | このテンプレートは、消費者およびエンド ユーザーの顧客マスター データを同期します。
-名前の接辞                | msdyn_nameaffixes               | このテンプレートは、顧客および仕入先の名前の接辞に関する参照データを同期します。
-支払期日明細行 CDS V2    | msdyn_paymentdaylines           | このテンプレートは、顧客および仕入先の支払期日明細行に関する参照データを同期します。
-支払期日 CDS            | msdyn_paymentdays               | このテンプレートは、顧客および仕入先の支払期日に関する参照データを同期します。
-支払スケジュール行      | msdyn_paymentschedulelines      | 顧客および仕入先の支払スケジュール明細行に関する参照データを同期します。
-支払スケジュール            | msdyn_paymentschedules          | このテンプレートは、顧客および仕入先の支払スケジュールに関する参照データを同期します。
-支払条件            | msdyn_paymentterms              | このテンプレートは、顧客および仕入先の支払条件 (支払に関する条件) に関する参照データを同期します。
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [mapping contacts contacts](includes/CDSContactsV2-contacts.md)]
-
-[!include [mapping customer group](includes/CustCustomerGroup-msdyn-customergroups.md)]
-
-[!include [mapping customer payment method](includes/CustomerPaymentMethod-msdyn-customerpaymentmethods.md)]
-
-[!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
-
-[!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
-
-[!include [mapping payment day lines](includes/PaymentDayLinesCdsV2-msdyn-paymentdaylines.md)]
-
-[!include [mapping payment days](includes/PaymentDaysCds-msdyn-paymentdays.md)]
-
-[!include [mapping payment schedule lines](includes/PaymentScheduleLines-msdyn-paymentschedulelines.md)]
-
-[!include [mapping payment schedules](includes/PaymentSchedules-msdyn-paymentschedules.md)]
-
-[!include [mapping terms of payment](includes/TermsofPayment-msdyn-paymentterms.md)]
-
+[CDS 連絡先 V2](mapping-reference.md#115) | 連絡先 | このテンプレートでは、顧客と仕入先の両方について、基本、二次、三次の連絡先情報がすべて同期されます。
+[顧客グループ](mapping-reference.md#126) | msdyn_customergroups | このテンプレートは、顧客グループ情報を同期します。
+[顧客支払方法](mapping-reference.md#127) | msdyn_customerpaymentmethods | このテンプレートは、顧客支払方法に関する情報を同期します。
+[顧客 V3](mapping-reference.md#101) | 勘定 | このテンプレートは、商業および組織顧客の顧客マスター情報を同期します。
+[顧客 V3](mapping-reference.md#116) | 連絡先 | このテンプレートは、消費者およびエンド ユーザーの顧客マスター データを同期します。
+[名前の接辞](mapping-reference.md#155) | msdyn_nameaffixes | このテンプレートは、顧客および仕入先の名前の接辞に関する参照データを同期します。
+[支払期日明細行 CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | このテンプレートは、顧客および仕入先の支払期日明細行に関する参照データを同期します。
+[支払期日 CDS](mapping-reference.md#158) | msdyn_paymentdays | このテンプレートは、顧客および仕入先の支払期日に関する参照データを同期します。
+[支払スケジュール行](mapping-reference.md#159) | msdyn_paymentschedulelines | 顧客および仕入先の支払スケジュール明細行に関する参照データを同期します。
+[支払スケジュール](mapping-reference.md#160) | msdyn_paymentschedules | このテンプレートは、顧客および仕入先の支払スケジュールに関する参照データを同期します。
+[支払条件](mapping-reference.md#161) | msdyn_paymentterms | このテンプレートは、顧客および仕入先の支払条件 (支払に関する条件) に関する参照データを同期します。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

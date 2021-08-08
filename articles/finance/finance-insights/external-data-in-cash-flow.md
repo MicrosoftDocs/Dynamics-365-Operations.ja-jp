@@ -2,7 +2,7 @@
 title: キャッシュ フロー予測に外部データを使用する (プレビュー)
 description: このトピックでは、外部データを入力したり、キャッシュフロー予測にインポートしたりするために実行する必要がある設定ステップについて説明します。
 author: rcarlson
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 66bdb8bd638859bb4fc5565e3f12a8f671addcff
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: b728314f4c4e18543e4f3b75fe1e7dcddc448ea0
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186693"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638539"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>キャッシュ フロー予測に外部データを使用する (プレビュー)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 外部データを入力したり、キャッシュフロー予測にインポートしたりできます。 このトピックでは、外部データの使用に固有であり、外部データをキャッシュ フロー予測に含められるようにするための設定ステップについて説明します。
 

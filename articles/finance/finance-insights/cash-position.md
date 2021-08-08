@@ -2,7 +2,7 @@
 title: キャッシュ ポジション (プレビュー版)
 description: このトピックでは、キャッシュフロー予測機能が特定の時間における組織のキャッシュ ポジションの予測を行う方法について説明します。 また、異なる期間の予測の表示に使用できるオプションについても説明します。
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 1935be3b2d52e19b764e6afdf00a8bc546f801df
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186495"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638755"
 ---
 # <a name="cash-position-preview"></a>キャッシュ ポジション (プレビュー版)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 キャッシュ ポジションとは、キャッシュフローのプロジェクションであり、近い将来の予測を意味します。 これは、未払いの請求書や注文を支払う顧客からの現金収入の予測に基づくものであり、また購入の請求書や注文のために仕入先に支払われる現金支出の予測に基づくものです。
 

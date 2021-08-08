@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c53d28192c5bf673baccd76e4cfb6e0453fe29d
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: e155263daf2f33531abefdc45c5046a5ab5bca11
+ms.sourcegitcommit: 787c94b35f343f4c38fc8efaaa0cfaf20a846368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337932"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "6647209"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>調達ホーム ページ
 
@@ -78,9 +78,8 @@ ms.locfileid: "6337932"
 -   [一時仕入先に対する発注書の作成](tasks/create-purchase-order-one-time-supplier.md)
 -   [配送スケジュールと発注書の作成](tasks/create-purchase-order-delivery-schedule.md)
 -   [購買返品注文の作成](tasks/create-purchase-return-order.md)
--   [購買契約書からの購買リリース注文の作成](tasks/create-purchase-release-order-purchase-agreement.md)
--   [発注書の作成時に購買リリース注文を作成](tasks/create-purchase-release-order-creating-purchase-order.md)
--   [ 委託販売補充注文の作成](../inventory/tasks/create-consignment-replenishment-order.md)
+-   [発注書の作成時に購買契約書を適用する](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [委託販売補充注文の作成](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>価格と割引
 -   [購買契約](purchase-agreements.md)
