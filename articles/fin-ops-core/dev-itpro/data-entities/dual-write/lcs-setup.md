@@ -1,8 +1,8 @@
 ---
 title: Lifecycle Services からの二重書き込みの設定
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS). からデュアル書き込み接続を設定する方法について説明します。
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359366"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729046"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Lifecycle Services からの二重書き込みの設定
 
@@ -66,5 +66,18 @@ Power Platform の統合を完了する必要があります。次のトピッ�
 
 > [!NOTE]
 > LCS を使用して環境のリンクを解除することはできません。 環境のリンクを解除するには、Finance and Operations 環境の **データ統合** ワークスペースを開き、**リンク解除** を選択します。
+
+## <a name="linking-mismatch"></a>リンクの不一致
+
+LCS 環境を 1 つの Dataverse インスタンスにリンクする一方で、二重書き込み環境を別の Dataverse インスタンスにリンクすることができます。 このリンクの不一致により予期しない動作が発生し、最終的に誤った環境にデータが送信される場合があります。 二重書き込みに使用される推奨環境は、Power Platform 統合の一部として作成されたもので、長期的には、環境間のリンクを確立する唯一の方法となります。
+
+お使いの環境にリンクの不一致がある場合、LCS は環境の詳細ページに「Microsoft は環境が二重書き込みを介して Power Platform 統合で指定されているのとは異なる行先にリンクされているのを検出しましたが、これは推奨されていません」のような警告を表示します。
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform 統合のリンクの不一致。":::
+
+このエラーが表示される場合、ニーズに応じて次の 2 つのオプションがあります。
+
++ LCS 環境の詳細ページに指定されているように[二重書き込み環境のリンク解除および再リンクを行います (リンクのリセットまたは変更)](relink-environments.md#scenario-reset-or-change-linking)。 これは、Microsoft サポートなしで実行できるので、理想的なオプションです。  
++ リンクを二重書き込みで維持する場合は、前のセクションに記載されているように Power Platform 統合を変更して既存の Dataverse 環境を使用するために Microsoft サポートに相談することができます。  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

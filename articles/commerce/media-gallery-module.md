@@ -2,7 +2,7 @@
 title: メディア ギャラリー モジュール
 description: このトピックでは、メディア ギャラリー モジュールを取り上げ、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346719"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733200"
 ---
 # <a name="media-gallery-module"></a>メディア ギャラリー モジュール
 
@@ -56,6 +56,10 @@ ms.locfileid: "6346719"
 | 画像 | サイト ビルダーのメディア ライブラリーから選択された画像 | 製品からレンダリングするだけでなく、メディア ギャラリー モジュール用に画像を精選することもできます。 これらの画像は、使用可能な製品画像に追加されます。 この機能は、Commerce バージョン 10.0.12 で使用できます。 |
 | サムネイルの向き | **垂直** または **水平** | このプロパティでは、サムネイル画像を垂直ストリップと水平ストリップのどちらで表示するかを指定します。 |
 | バリアントのマスター製品画像を非表示にする | **True** または **False** | このプロパティが **True** に設定されている場合、バリアントが選択されると、バリアントに画像がない限り、マスター製品画像は非表示になります。 このプロパティは、バリアントがない製品には影響しません。 |
+| 分析コードの選択に関するメディアの更新 | **True** または **False** | プロパティが **True** に設定されている場合、いずれかの分析コード (色、スタイル、サイズ) が選択されており、画像が利用可能な場合にメディアの画像は更新されます。 対応する画像を更新するためにすべての製品バリアント分析コードを選択する必要はないので、このプロパティを使用するとブラウジング エクスペリエンスを簡略化できます。 このプロパティは、**詳細** タブで使用できます。 |
+
+> [!IMPORTANT]
+> **分析コードの選択に関するメディアの更新** プロパティは、Commerce バージョン 10.0.21 リリースで利用可能です。 Commerce モジュール ライブラリ パッケージのバージョン 9.31 をインストールする必要があります。
 
 次の図は、全画面およびズーム オプションが使用できるメディア ギャラリー モジュールの例を示しています。
 

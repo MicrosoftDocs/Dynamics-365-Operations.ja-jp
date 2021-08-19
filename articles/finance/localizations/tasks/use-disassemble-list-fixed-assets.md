@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2498b2d16b9982bd4467dc22b9248c4088393aed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d293274c85457dc8ef4218dee78fac2faf38ee82faddb1d195dae4353ca9a99b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730456"
 ---
 # <a name="use-disassemble-list-for-fixed-assets"></a>固定資産の分解一覧の使用
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d668238378e41287c7a9f845ae3e67078fc7776a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 9c6761c549aaa38d16616f3e9e9084cbff7c93d9350f8adc50720d263efaff25
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732780"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>すべての会社に対する給付金の管理と従業員セルフサービス パラメータの設定
 
