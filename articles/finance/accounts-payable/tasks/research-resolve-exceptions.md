@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: abc8dc112ab577ddcbd208f898a8d4e487bc2998
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d35504ab2fe6b8143d040bda505a904ab179b6137472073d788515f392faaef9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827773"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722890"
 ---
 # <a name="research-or-resolve-exceptions"></a>例外の調査または解決
 
@@ -62,7 +62,7 @@ ms.locfileid: "5827773"
 3. [名前] フィールドに値を入力します。
 4. [説明] フィールドに値を入力します。
 5. [ポリシーの組織] のセクションを展開または折りたたみます。
-6. ツリーで、「Contoso Entertainment System USA」を選択します。
+6. ツリーで、「Contoso エンターテインメント システム USA」を選択します。
 7. [追加] をクリックします。
 8. [ポリシー ルール] のセクションを展開または折りたたみます。
 9. [ポリシー ルールの作成] をクリックします。

@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 460c804b410a020ae03645f3d89298b3e209f500
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d9d6623d13dd94c9e197a96e3af1f410db8dec5861ad0f573182f86752882e0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727935"
 ---
 # <a name="set-up-consolidated-invoices"></a>月次締め請求書の設定
 
