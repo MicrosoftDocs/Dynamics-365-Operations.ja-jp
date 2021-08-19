@@ -8,12 +8,12 @@ audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: rhaertle
-ms.openlocfilehash: 9e6e65b2b8ec8241bc2082b30ae641692c31afdd
-ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
+ms.openlocfilehash: 18a95725af8014845d6fb39806917de7632ad56b92b75387cd916de927127b38
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6542664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723084"
 ---
 # <a name="integrated-ledger"></a>統合された元帳
 
