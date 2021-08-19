@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 265a54fc67fba85b23b372af3403cded29545c4f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a143f00eedc2ddb3b54f05f2475a616609af8d5a7b8a4d19d0bbcb021290dfd3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349355"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720935"
 ---
 # <a name="identify-a-hypothesis-and-determine-success-metrics-for-an-experiment"></a>仮想を識別して実験の成功メトリックを決定する
 実験ライフサイクルの第 1 フェーズでは、実験の仮想を識別して、成功を評価するために追跡するメトリックを決定することが含まれます。 次の図は、Dynamics 365 Commerce の E コマース Web サイトでの[実験の設定と実行](experimentation-overview.md)に関連するすべての手順を示しています。 追加の手順については、個別のトピックで説明します。 

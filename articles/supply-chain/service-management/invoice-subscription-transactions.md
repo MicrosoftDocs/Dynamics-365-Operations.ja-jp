@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ffe2c25df4677002f97b579e8827ebd1ac4fee47
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 22c244e6bf09bf2ec93add406ef561272aa786f17bed2175d5df1cf7ba7213ee
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720183"
 ---
 # <a name="invoice-subscription-transactions"></a>定期売買トランザクションの請求 
 

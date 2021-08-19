@@ -2,7 +2,7 @@
 title: Warehouse Management モバイル アプリの新機能または変更された機能
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能および変更された機能を一覧表示します。
 author: ivanv-microsoft
-ms.date: 06/07/2021
+ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,38 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61124728942c0b8162de9f687ae752773c47d07e
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261786"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720087"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="2070"></a>2.0.7.0
+
+### <a name="new-features-fixes-and-improvements-in-version-2070"></a>バージョン 2.0.7.0 の管理の新機能、修正、および改良点
+
+- アプリの最新リリース バージョンを確認するセクションを **詳細** ページに追加しました。
+- ページ間をフリックおよびスワイプするのが簡単になりました。
+- 作業一覧の昇順または降順ボタンのアイコンを変更しました。
+- **詳細** カードのマージンを減らして、より多くの情報を収められるようにしました。
+- さまざまなパフォーマンス向上を適用して、時間の経過とともにアプリが遅くなる問題を減らしました。
+- 画面に収まらないほど多くのコントロールがあり、ページングが発生すると、ページと同じようにスクロールできなくなりました。
+- タスク タイトルの表示よりも最後にスキャンされた値の表示を優先するため、重複する場合はタスク タイトルが切り捨てられます。
+- システムが応答を停止する原因となったさまざまな問題を修正しました。
+- さまざまな場所のテキストが、一部の言語では切り離されなくなりました。
+- 既定で、アプリは全画面モードで実行されます。
+- 特定のデバイスのメイン ページでスキャンが無視されることがある問題を修正しました。
+
+### <a name="known-issues-in-version-2070"></a>バージョン 2.0.7.0 の既知の問題
+
+- 一部のデバイスでは、アプリの起動時またはタスクを開始するときに次のエラー メッセージが表示されます: 「指定したサイズの適切なビューが見つかりません。」 いずれかのデバイスでこのエラー メッセージが表示された場合は、Warehouse Management モバイル アプリをそのデバイスでバージョン 2.0.6.0 にダウングレードし、アプリの次のバージョンがリリースされるまでアップグレードを待つ必要があります。
 
 ## <a name="version-2060"></a>バージョン 2.0.6.0
 

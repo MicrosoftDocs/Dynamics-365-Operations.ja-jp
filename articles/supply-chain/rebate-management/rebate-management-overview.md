@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 577d48e207c8ce5911d104e657101a8557100064
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 136e528093e6e73ffe090cea0c02a4cdbf787c5efc3d9c0664869c995a682daa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720255"
 ---
 # <a name="rebate-management-module-overview"></a>リベート管理モジュールの概要
 
@@ -91,10 +91,9 @@ ms.locfileid: "6339997"
 
 リベートを計算すると、転記が行われる前に確認できるトランザクションがプロセスによって作成されます。 別のプロセスは、リベート管理トランザクションを転記することです。 提案されたトランザクションへの転記時に、仕訳帳、貸方伝票、または借方トランザクションを作成できます。 レポート明細書とトランザクション リストは、コンプライアンス、有効性、透明性を確保するために取得できます。
 
-
 ## <a name="guaranteed-royalty-payments"></a>保証ロイヤリティ支払
 
-リベート管理では、最小が保証されている場合でも、自動支払生成により、ロイヤリティをすばやく簡単に処理できます。 
+リベート管理では、最小が保証されている場合でも、自動支払生成により、ロイヤリティをすばやく簡単に処理できます。
 
 ## <a name="maximizing-spend-versus-rebates"></a>支出とリベートの最大化
 
