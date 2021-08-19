@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: cdc9b6af55bcba98f5ea7607bb1847f61a707778
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: db3317c01cab2e123f3c2927c359f9e00b98bd8a2d5e851c2c20cb4763db1c49
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716786"
 ---
 # <a name="restrict-access-to-a-storefront-during-testing-or-development"></a>テストまたは開発中の店舗へのアクセスを制限する
 

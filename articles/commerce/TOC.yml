@@ -4,7 +4,7 @@
       items:
         - name: Dynamics 365 Commerce ホーム ページ
           href: index.md
-        - name: 開始する
+        - name: 使用開始
           items:
             - name: 購入する前に
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
@@ -94,6 +94,8 @@
                   items:
                     - name: Commerce の最新情報や変更事項に関するホームページ
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.21 (2021 年 10 月)
+                      href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (2021 年 6 月)
@@ -516,8 +518,16 @@
                       href: tasks/configure-credit-card-processing.md
                     - name: 'POS の [期日の変更] ダイアログボックスをスキップする'
                       href: dev-itpro/skip-change-due.md
-                    - name: Adyen 支払コネクタ
-                      href: dev-itpro/adyen-connector.md
+                    - name: Adyen 向け Dynamics 365 Payment Connector
+                      items:
+                        - name: Adyen 向け Dynamics 365 Payment Connector の概要
+                          href: dev-itpro/adyen-connector.md
+                        - name: Adyen 向け Dynamics 365 Payment Connector の設定
+                          href: dev-itpro/adyen-connector-setup.md
+                        - name: Adyen 向け Dynamics 365 Payment Connector に関するよく寄せられる質問
+                          href: dev-itpro/adyen-connector-faq.md
+                        - name: Adyen 向け Dynamics 365 Payment Connector のトラブルシューティング
+                          href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: オンライン支払手段を Adyen コネクタで保存
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Adyen コネクタを使用した強力な顧客認証 (SCA)
@@ -1182,6 +1192,10 @@
               items:
                 - name: オンライン チャネル レポートの生成
                   href: generate-reports.md
+            - name: ターゲットを設定する
+              items:
+                - name: デバイス、市場、および位置情報のターゲット設定
+                  href: targeting-overview.md
             - name: 実験
               items:
                 - name: Dynamics 365 Commerce での実験
@@ -1336,6 +1350,10 @@
               items:
                 - name: ロシア向け Commerce ローカライズ
                   href: localizations/rus-commerce-localization.md
+                - name: ロシア向け Commerce ローカライズの設定
+                  href: localizations/rus-commerce-setup.md
+                - name: ロシア向け Commerce での前払
+                  href: localizations/rus-commerce-prepayments.md
             - name: スウェーデン
               items:
                 - name: キャッシュ レジスター機能
@@ -2254,7 +2272,7 @@
               items:
                 - name: オンライン チャネルの拡張性の概要
                   href: e-commerce-extensibility/overview.md
-                - name: 開始する
+                - name: 使用開始
                   items:
                     - name: eコマース オンライン拡張機能の開発を開始する
                       href: e-commerce-extensibility/sdk-getting-started.md
@@ -2646,7 +2664,7 @@
                   href: troubleshoot/refund-declined.md
                 - name: Adyen 向け Dynamics 365 Payment Connector
                   items:
-                    - name: Adyen 向け Dynamics 365 Payment Connector のトラブルシューティング
+                    - name: Adyen 向け Dynamics 365 Payment Connector に関する問題のトラブルシューティング
                       href: troubleshoot/adyen-support.md
                     - name: '[次回の支払のために保存する] オプションが表示されない'
                       href: troubleshoot/next-payment-link-not-appearing.md

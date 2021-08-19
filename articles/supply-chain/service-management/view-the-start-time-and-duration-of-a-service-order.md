@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30d4297fa213dc83a3267eee0a5e732d106e383c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 43c866239f34ed97938eb183ad50ee411d5dbf8e8b893493dfbdaaf77c58ff4f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715653"
 ---
 # <a name="view-the-start-time-and-duration-of-a-service-order"></a>サービス注文の開始時刻と期間の表示 
 

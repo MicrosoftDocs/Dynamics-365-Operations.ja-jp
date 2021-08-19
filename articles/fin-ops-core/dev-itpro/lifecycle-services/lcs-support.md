@@ -2,7 +2,7 @@
 title: Finance and Operations アプリまたは Lifecycle Services (LCS) に関するサポートを受ける
 description: このトピックでは、Finance and Operations アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。
 author: EricMoos
-ms.date: 09/16/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b32ae88f9c4439b83ae60e6a0b5f0e16280fcf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713337"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations アプリまたは Lifecycle Services (LCS) に関するサポートを受ける
 
@@ -48,7 +48,7 @@ ms.locfileid: "5753881"
 <td><a href="https://lcs.dynamics.com/">LCS</a> で <strong>問題検索</strong> ツールを使用して、Microsoft サポート技術情報 (KB) の記事、修正プログラム、および 報告された問題の回避策をすぐに検索します。 特定の機能領域でどの報告された問題が修正処理中か、どの問題がすでに修正済みかを確認できます。 詳細については、<a href="issue-search-lcs.md">問題検索 (Lifecycle Services, LCS)</a> を参照してください。</td>
 </tr>
 <tr>
-<td>アプリ内のサポートを取得します。</td>
+<td>Finance and Operations アプリ内のサポートを利用します。</td>
 <td>アプリの右上隅にある <strong>ヘルプ</strong> ボタン (<strong>?</strong>) を選択し、<strong>サポート</strong> を選択します。 問題は LCS の <strong>アクティブな問題</strong> タブで報告されます。 そこで、管理者は社内サポートを提供するか、Microsoft に問題を送信するかを決定できます。</td>
 </tr>
 <tr>

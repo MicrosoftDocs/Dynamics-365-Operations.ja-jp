@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 937af7e24fc72b5b8bc741857913899a239a64d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8a08b1582ee5edba019031a687dba375a195d661484c0f0bdd2983fed2a0d6cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714189"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>場所のディレクティブ在庫ピッキング エイジング
 

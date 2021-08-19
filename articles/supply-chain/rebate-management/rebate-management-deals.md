@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7ba42df021eddccbae389321b38828c7a92e50c8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 5b8a1beae80ad63f26cd1b532d1d6026a5b38a8701c9c1d0aadfee5da8965477
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716495"
 ---
 # <a name="rebate-management-deals"></a>リベート管理取引
 
@@ -102,6 +102,7 @@ ms.locfileid: "6020510"
         - *すべて* – 取引明細行は、すべての品目に適用されます。
 
     - **商品関係** – **品目コード** フィールドで *テーブル* を選択した場合、取引明細行が適用される品目を選択します。 *グループ* を選択した場合は、品目グループを選択します。 *すべて* を選択した場合は、このフィールドは使用できません。
+    - **単位タイプ** – 取引明細行に適用される単位タイプ (*在庫単位* または *Catch Weight 単位*) を選択します。 古いレコードの場合、このフィールドは空白になる可能性があることに注意してください。 この場合は、*在庫単位* 値が想定されます。
     - **(在庫管理パラメーター)** – 取引明細行の残りのフィールドで、取引に含まれる品目を定義するために使用される在庫管理パラメーター (品目のサイズ、色、スタイル、サイト、倉庫など) の値を指定します。 分析コードを追加または削除するには、アクション ペインの **分析コードの表示** を選択します。
 
 1. アクション ウィンドウで、**保存** を選択します。

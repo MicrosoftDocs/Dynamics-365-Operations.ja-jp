@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8c88b742c1dccb169e47fe96a5c9d9aac35e605be685cc1a0f010826c959db5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712865"
 ---
 # <a name="put-to-wall---put-to-store"></a>壁にプット - 店舗にプット
 
@@ -42,7 +42,7 @@ ms.locfileid: "5823290"
 - **モジュール:** *倉庫管理*
 - **機能名:** *機能全体のウェーブ ステップ コード*
 
-## <a name="setup"></a>セットアップ
+## <a name="setup"></a>段取り
 
 このデモでは、標準の Contoso データと倉庫 *62* が使用されます。 また、後で説明する追加機能も使用されます。
 
