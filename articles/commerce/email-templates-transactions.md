@@ -2,7 +2,7 @@
 title: トランザクション イベント用の電子メール テンプレートの作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベント用の電子メール テンプレートの作成、アップロード、および構成する方法について説明します。
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718710"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>トランザクション イベント用の電子メール テンプレートの作成
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベント用の電子メール テンプレートの作成、アップロード、および構成する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce では、トランザクション イベントについて顧客に通知する電子メールを送信する既成のソリューションが用意されています (たとえば、注文が行われたり、注文が集配できる状態になったり、注文が出荷されたりした場合など)。 このトピックでは、トランザクション電子メールの送信に使用される電子メール テンプレートの作成、アップロード、構成をする手順について説明します。
 
@@ -79,26 +77,33 @@ Dynamics 365 Commerce では、トランザクション イベントについて
 | プレースホルダー名     | プレースホルダー値                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | 注文を行った顧客の名称です。               |
-| salesid              | 注文の販売 ID です。                                   |
-| deliveryaddress      | 出荷注文の配送先住所です。                     |
 | customeraddress      | 顧客の住所です。                                 |
 | customeremailaddress | 顧客がチェックアウト時に入力した電子メール アドレスです。     |
+| salesid              | 注文の販売 ID です。                                   |
+| orderconfirmationid  | 注文の作成時に生成されたチャンネル間 ID。 |
+| channelid            | 注文が行われた小売またはオンライン チャネルの ID。 |
+| deliveryname         | 配送先住所に指定されている名前。        |
+| deliveryaddress      | 出荷注文の配送先住所です。                     |
 | deliverydate         | 配送日です。                                           |
 | shipdate             | 出荷日です。                                               |
 | modeofdelivery       | 注文の出荷モードです。                              |
+| ordernetamount       | 注文の合計金額から税の合計を差し引いた金額です。         |
+| 割引             | 注文に対する割引の合計です。                            |
 | 請求              | 注文に対する金額の合計です。                             |
 | 税                  | 注文の税の合計です。                                 |
 | 合計                | 注文に対する金額の総計です。                              |
-| ordernetamount       | 注文の合計金額から税の合計を差し引いた金額です。         |
-| 割引             | 注文に対する割引の合計です。                            |
 | storename            | 注文を行った店舗の名称です。            |
 | storeaddress         | 注文を行った顧客の住所です。              |
 | storeopenfrom        | 注文を行った店舗の開店時間です。         |
 | storeopento          | 注文を行った店舗の閉店時間です。         |
-| pickupstorename      | 注文が受け取られる店舗の名称です。     |
-| pickupstoreaddress   | 注文がピッキングされる店舗の住所です。  |
-| pickupopenstorefrom  | 注文がピッキングされる店舗の開店時間です。 |
-| pickupopenstoreto    | 注文がピッキングされる店舗の閉店時間です。 |
+| pickupstorename      | 注文が受け取られる店舗の名称です。\* |
+| pickupstoreaddress   | 注文がピッキングされる店舗の住所です。\* |
+| pickupopenstorefrom  | 注文がピッキングされる店舗の開店時間です。\* |
+| pickupopenstoreto    | 注文がピッキングされる店舗の閉店時間です。\* |
+| pickupchannelid      | 集荷モードに指定されている店舗のチャネル ID。\* |
+| packingslipid        | 注文の明細行が梱包されたときに生成された梱包明細の ID。\* |
+
+\*これらのプレースホルダーは、**集荷準備完了** 通知タイプの注文に使用された場合にのみデータを返します。 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>注文ラインのプレースホルダー (販売ライン レベル)
 
@@ -106,7 +111,10 @@ Dynamics 365 Commerce では、トランザクション イベントについて
 
 | プレースホルダー名               | プレースホルダー値 |
 |--------------------------------|-------------------|
-| productid                      | 明細行の製品 ID です。 |
+| productid                      | <p>製品の ID。 この ID はバリアントを表しています。</p><p><strong>注 :</strong> このプレースホルダーは廃止され、**lineproductrecid** が採用されました。</p> |
+| lineproductrecid               | 製品の ID。 この ID はバリアントを表しています。 バリアント レベルで品目を一意に識別します。 |
+| lineitemid                     | 製品の製品レベルの ID。 (この ID はバリアントを考慮していません。) |
+| lineproductvariantid           | 製品バリアントの ID。 |
 | lineproductname                | 生産の名前。 |
 | lineproductdescription         | 製品の説明。 |
 | linequantity                   | ラインに発注された単位数と測定単位 (**ea**、**pair** など) です。 |
@@ -125,6 +133,8 @@ Dynamics 365 Commerce では、トランザクション イベントについて
 | linedeliverydate               | 当該ラインの配達日です。 |
 | linedeliverymode               | 当該ラインの配送モードです。 |
 | linedeliveryaddress            | 当該ラインの配達先住所です。 |
+| linepickupdate                 | 集荷モードの配送を使用する注文の場合、顧客が指定した集荷日。 |
+| linepickuptimeslot             | 集荷モードの配送を使用する注文の場合、顧客が指定した集荷時間の範囲。 |
 | giftcardnumber                 | ギフト カード タイプの製品の場合の、ギフトカード番号です。 |
 | giftcardbalance                | ギフト カード タイプの製品の場合の、ギフトカード残高です。 |
 | giftcardmessage                | ギフト カード タイプの製品の場合の、ギフトカードのメッセージです。 |

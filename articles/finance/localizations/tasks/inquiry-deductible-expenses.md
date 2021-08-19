@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5ae96d281274140b9cf864d4ef64a325eae396b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: efb8607f4510f2e4852a5e52dd6f7a6c8bed29c34d6b754d2fa1c5b4b3c36f5b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765001"
 ---
 # <a name="inquiry-on-deductible-expenses"></a>損金の照会
 

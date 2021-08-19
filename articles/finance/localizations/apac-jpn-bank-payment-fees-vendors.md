@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ae0e45d76805bc4976a228e32297d836ae1d085
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: da709b6c470d80010a1876d187383948d8008152792a817c9eb1940d3b7dba1f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770550"
 ---
 # <a name="bank-payment-fees-covered-by-vendors-in-japan"></a>仕入先負担の銀行支払手数料 (日本)
 

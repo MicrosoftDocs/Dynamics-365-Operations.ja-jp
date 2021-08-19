@@ -14,12 +14,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734c8c9bcbd1d85223bc5c02ab3105eb904c77b3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a458886c85ec859b0e8f8fed1bbecf4b1a31ccc1e17d691f77cf543d0ea2127
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815027"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725995"
 ---
 # <a name="impairment-accounting-for-fixed-assets-for-japan"></a>日本の固定資産の減損会計
 

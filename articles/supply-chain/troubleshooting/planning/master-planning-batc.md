@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: ilebedev
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: fa0b614b6710c65811add8725a0e255ce2c34b88
-ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
+ms.openlocfilehash: 9750a73f0962179512c5e21a614a276c313ff975b7494f31589ca936886ecf6e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049477"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781396"
 ---
 # <a name="you-cant-filter-master-planning-items-by-their-related-coverage-group-values"></a>マスター プランの品目を関連する補充グループ値でフィルター処理できません
 

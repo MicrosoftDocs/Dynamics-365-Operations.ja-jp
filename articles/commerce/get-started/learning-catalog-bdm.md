@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aeb2a94818e8007ba73325a34875905dc7c5aefa
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 4a75f61af39cde381ec77790a0962c355593a3b053b0903396b5315d686f8b22
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724518"
 ---
 # <a name="learning-catalog-for-business-and-technical-decision-makers-considering-dynamics-365-commerce"></a>Dynamics 365 Commerce を検討している業務および技術的な意思決定者向けラーニング カタログ
 

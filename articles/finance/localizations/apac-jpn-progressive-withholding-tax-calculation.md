@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fec1e2e278c45cd8ee85bd64e67dd4bde81b41a7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a38f4fa4dce8878cce7243a2a487035d6b503579098394b6251e0f46b10b2bc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723760"
 ---
 # <a name="progressive-withholding-tax-for-japan"></a>日本の累進的源泉徴収税
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
-ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
+ms.openlocfilehash: 20e74e97f98d0bc0fd454d54cbf969d4f1b46c7c98b2949b0ed8cfe671312dd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6538857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768194"
 ---
 # <a name="payroll-employee"></a>給与従業員
 
@@ -33,27 +33,25 @@ ms.locfileid: "6538857"
 このエンティティは、従業員に関する情報を提供します。 このエンティティを使用する前、[給与統合のパラメーター](hr-admin-integration-payroll-api-parameters.md) を設定する必要があります。
 
 >[!IMPORTANT] 
->**FirstName**、**MiddleName**、**LastName**、**NameValidFrom**、および **NameValidTo** フィールドは、このエンティティで使用できなくなります。 これは、このエンティティを裏付ける日付有効データソースが 1 つだけであることを確認するためです。それは、**EmploymentStartDate** フィールドと **EmploymentEndDate** フィールドを持つ **HcmEmployment** です。
-
->これらのフィールドは、プラットフォーム更新プログラム 43 でリリースされた **DirPersonNameHistoricalEntity** で使用できます。 **個人** フィールドに **PayrollEmployeeEntity** から **DirPersonNameHistoricalEntity** への OData 関係があります。 または、**DirPersonNameHistoricalEntity** エンティティは、パブリック名である **PersonHistoricalNames** を使用して OData を通じて直接クエリできます。
-
+>**FirstName**、**MiddleName**、**LastName**、**NameValidFrom**、および **NameValidTo** フィールドは、このエンティティで使用できなくなりました。 これにより、このエンティティを管理する有効日データ ソースは 1 つだけになります。
+>これらのフィールドは、プラットフォーム更新プログラム 43 でリリースされた **DirPersonNameHistoricalEntity** で使用できます。 **個人** フィールドに **PayrollEmployeeEntity** から **DirPersonNameHistoricalEntity** への OData リレーションシップがあります。 
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ<br>**現物名**<br>**_種類_** | 使用 | 説明 |
 | --- | --- | --- |
-| **個人番号**<br>mshr_personnelnumber<br>*文字列* | 読み取り専用<br>必須 | 従業員の一意の職員番号。 |
-| **基本フィールド**<br>mshr_primaryfield<br>*文字列* | 必須<br>システム生成 |  |
-| **法人 ID**<br>mshr_legalentityID<br>*文字列* | 読み取り専用<br>必須 | 法人 (会社) を指定します。 |
-| **種類**<br>mshr_gender<br>[mshr_hcmpersongender オプション セット](hr-admin-integration-payroll-api-gender.md) | 読み取り専用<br>必須 | 従業員の性別。 |
+| **個人番号**<br>mshr_personnelnumber<br>*文字列* | 読み取り専用 | 従業員の一意の職員番号。 |
+| **基本フィールド**<br>mshr_primaryfield<br>*文字列* | 読み取り専用<br>システム生成 |  |
+| **法人 ID**<br>mshr_legalentityID<br>*文字列* | 読み取り専用 | 法人 (会社) を指定します。 |
+| **種類**<br>mshr_gender<br>[mshr_hcmpersongender オプション セット](hr-admin-integration-payroll-api-gender.md) | 読み取り専用 | 従業員の性別。 |
 | **給与従業員エンティティ ID**<br>mshr_payrollemployeeentityid<br>*GUID* | 必須<br>システム生成 | 従業員を一意に識別するためのシステム生成の GUID 値。 |
-| **雇用開始日**<br>mshr_employmentstartdate<br>*日時オフセット* | 読み取り専用<br>必須 | 従業員の雇用開始日。 |
-| **識別タイプ ID**<br>mshr_identificationtypeid<br>*文字列* |読み取り専用<br>必須 | 従業員に対して定義される ID タイプ。 |
-| **雇用終了日**<br>mshr_employmentenddate<br>*日時オフセット* | 読み取り専用<br>必須 |従業員の雇用の終了。  |
-| **データ領域 ID**<br>mshr_dataareaid_id<br>*GUID* | 必須 <br>システム生成 | システムが生成する、法人 (会社) を識別する GUID 値です。 |
-| **失効日**<br>mshr_namevalidto<br>*日時オフセット* |  読み取り専用<br>必須 | 従業員情報が有効な日付。 |
-| **生年月日**<br>mshr_birthdate<br>*日時オフセット* | 読み取り専用 <br>必須 | 従業員の生年月日 |
-| **ID 番号**<br>mshr_identificationnumber<br>*文字列* | 読み取り専用 <br>必須 |従業員に対して定義される ID 番号。  |
+| **雇用開始日**<br>mshr_employmentstartdate<br>*日時オフセット* | 読み取り専用 | 従業員の雇用開始日。 |
+| **識別タイプ ID**<br>mshr_identificationtypeid<br>*文字列* |読み取り専用 | 従業員に対して定義される ID タイプ。 |
+| **雇用終了日**<br>mshr_employmentenddate<br>*日時オフセット* | 読み取り専用 |従業員の雇用の終了。  |
+| **データ領域 ID**<br>mshr_dataareaid_id<br>*GUID* | 読み取り専用 <br>システム生成 | システムが生成する、法人 (会社) を識別する GUID 値です。 |
+| **失効日**<br>mshr_namevalidto<br>*日時オフセット* |  読み取り専用 | 従業員情報が有効な日付。 |
+| **生年月日**<br>mshr_birthdate<br>*日時オフセット* | 読み取り専用 | 従業員の生年月日 |
+| **ID 番号**<br>mshr_identificationnumber<br>*文字列* | 読み取り専用 |従業員に対して定義される ID 番号。  |
 
 ## <a name="example-query-for-payroll-employee"></a>給与従業員のクエリの例
 

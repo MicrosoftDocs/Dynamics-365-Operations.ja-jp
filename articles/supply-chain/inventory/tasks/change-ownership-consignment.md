@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6385fba0b6288416a85f1b7de73d3bb4972a852a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f31397c980f1f46f22979cf0b754eeaf4baf3e6eb7cafc53a6a9acdc482743e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780605"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>生産需要に基づく委託販売在庫の所有権の変更
 
