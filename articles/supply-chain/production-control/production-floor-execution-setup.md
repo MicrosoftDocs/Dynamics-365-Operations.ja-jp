@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 9a5911e81547134d3034d1a47ef94c553ccbb331
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 34e29a43cebeec16357aecb036c534da35820d90ae602d67419a9606afc542ee
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735971"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを実行するデバイスを設定する
 

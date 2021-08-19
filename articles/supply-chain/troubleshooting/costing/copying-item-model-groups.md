@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6f6fdfef0bc377418ed8a9c8830e74526a0b95eb
-ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
+ms.openlocfilehash: 128caead04cf467c65a50bc6cd2f9e76e318f536b7eafa7972ffc1b5da5bceba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6026672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738846"
 ---
 # <a name="missing-field-settings-when-item-model-groups-are-copied-to-another-legal-entity"></a>品目モデル グループが別の法人にコピーされる場合のフィールド設定がありません
 

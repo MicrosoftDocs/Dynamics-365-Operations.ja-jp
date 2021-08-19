@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: angarmas
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3dfa974740420433af1e1b37630b22509510c91b
-ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
+ms.openlocfilehash: 29ee23164430f219ff3d0c94216a8be43f480ce309f6cdac3dac6ed5b6d030af
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730085"
 ---
 # <a name="youre-prompted-to-save-item-coverage-settings-even-though-you-made-no-changes"></a>変更を行っていないにもかかわらず、品目補充設定を保存するように求められます
 

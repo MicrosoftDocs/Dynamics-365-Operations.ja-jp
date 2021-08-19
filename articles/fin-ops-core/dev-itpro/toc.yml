@@ -14,6 +14,8 @@
               items:
                 - name: プラットフォーム更新プログラムの最新情報や変更事項に関するホームページ
                   href: get-started/whats-new-home-page.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.21 (2021 年 10 月)
+                  href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.20 (2021 年 8 月)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.19 (2021 年 6 月)
@@ -446,6 +448,8 @@
                       href: deployment/onprem-adfscompatibility.md
                     - name: ローカル エージェントの配置前スクリプトと配置後スクリプト
                       href: lifecycle-services/pre-post-scripts.md
+                    - name: ローカル エージェントの配置コンフィギュレーション
+                      href: deployment/onprem-localagent-options.md
                     - name: ローカル エージェントの更新
                       href: lifecycle-services/update-local-agent.md
                 - name: トラブルシューティング
@@ -1176,7 +1180,7 @@
           items:
             - name: モバイル プラットフォームのリソース
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: 開始する
+            - name: 使用開始
               items:
                 - name: モバイル プラットフォームの使用を開始する
                   href: mobile-apps/platform/mobile-platform-getting-started.md
