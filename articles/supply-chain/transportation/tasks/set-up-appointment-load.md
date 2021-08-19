@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 356a939739642dde94adca788020b7decc5345ff
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cf48c71ed99df1281d9c405a3e9094440a26dfc8fbfee568d2116f7247056049
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809017"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761689"
 ---
 # <a name="set-up-an-appointment-for-a-load"></a>積荷の予定の設定
 
