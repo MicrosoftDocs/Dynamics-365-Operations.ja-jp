@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 7 月 26 日
+          href: hr-whats-new-2021-07-26.md
         - name: 2021 年 7 月 12 日
           href: hr-whats-new-2021-07-12.md
         - name: 2021 年 6 月 22 日
@@ -27,38 +29,38 @@
           href: hr-whats-new-2021-01-28.md
         - name: 2021 年 1 月 21 日
           href: hr-whats-new-2021-01-21.md
-        - name: 2020 年 12 月 2 日
-          href: hr-whats-new-2020-12-02.md
-        - name: 2020 年 10 月 22 日
-          href: hr-whats-new-2020-10-22.md
-        - name: 2020 年 10 月 6 日
-          href: hr-whats-new-2020-10-06.md
-        - name: 2020 年 9 月 26 日
-          href: hr-whats-new-2020-09-26.md
-        - name: 2020 年 9 月 16 日
-          href: hr-whats-new-2020-09-16.md
-        - name: 2020 年 9 月 3 日
-          href: hr-whats-new-2020-09-03.md
-        - name: 2020 年 8 月 20 日
-          href: hr-whats-new-2020-08-20.md
-        - name: 2020 年 8 月 6 日
-          href: hr-whats-new-2020-08-06.md
-        - name: 2020 年 7 月 23 日
-          href: hr-whats-new-2020-07-23.md
-        - name: 2020 年 7 月 8 日
-          href: hr-whats-new-2020-07-08.md
-        - name: 2020 年 6 月 25 日
-          href: hr-whats-new-2020-06-23.md
-        - name: 2020 年 6 月 11 日
-          href: hr-whats-new-2020-06-11.md
-        - name: 2020 年 5 月 28 日
-          href: hr-whats-new-2020-05-28.md
-        - name: 2020 年 5 月 14 日
-          href: hr-whats-new-2020-05-14.md
-        - name: 2020 年 5 月 1 日
-          href: hr-whats-new-2020-05-01.md
         - name: 新機能アーカイブ 2020
           items:
+            - name: 2020 年 12 月 2 日
+              href: hr-whats-new-2020-12-02.md
+            - name: 2020 年 10 月 22 日
+              href: hr-whats-new-2020-10-22.md
+            - name: 2020 年 10 月 6 日
+              href: hr-whats-new-2020-10-06.md
+            - name: 2020 年 9 月 26 日
+              href: hr-whats-new-2020-09-26.md
+            - name: 2020 年 9 月 16 日
+              href: hr-whats-new-2020-09-16.md
+            - name: 2020 年 9 月 3 日
+              href: hr-whats-new-2020-09-03.md
+            - name: 2020 年 8 月 20 日
+              href: hr-whats-new-2020-08-20.md
+            - name: 2020 年 8 月 6 日
+              href: hr-whats-new-2020-08-06.md
+            - name: 2020 年 7 月 23 日
+              href: hr-whats-new-2020-07-23.md
+            - name: 2020 年 7 月 8 日
+              href: hr-whats-new-2020-07-08.md
+            - name: 2020 年 6 月 25 日
+              href: hr-whats-new-2020-06-23.md
+            - name: 2020 年 6 月 11 日
+              href: hr-whats-new-2020-06-11.md
+            - name: 2020 年 5 月 28 日
+              href: hr-whats-new-2020-05-28.md
+            - name: 2020 年 5 月 14 日
+              href: hr-whats-new-2020-05-14.md
+            - name: 2020 年 5 月 1 日
+              href: hr-whats-new-2020-05-01.md
             - name: 2020 年 4 月 13 日
               href: hr-whats-new-2020-04-13.md
             - name: 2020 年 4 月 3 日
@@ -473,6 +475,10 @@
                   href: hr-admin-integration-payroll-api-leave-type.md
                 - name: 休暇申請
                   href: hr-admin-integration-payroll-api-leave-request.md
+            - name: 福利厚生に関連するエンティティ
+              items:
+                - name: 給与作業者の福利厚生計画
+                  href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
             - name: オプション セット
               items:
                 - name: 性別
@@ -483,6 +489,10 @@
                   href: hr-admin-integration-payroll-api-award-type.md
                 - name: プロセスのタイプ
                   href: hr-admin-integration-payroll-api-process-type.md
+                - name: 福利厚生計画タイプの対応
+                  href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+                - name: 従業員の福利厚生計画の状態
+                  href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
     - name: ユーザー ガイド
       items:
         - name: 概要
