@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a405fee368bb1789addbdf4316a007e85616d98d
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 7cfb883ed779d25f5a05f1fc6b93530ff7c5f333744db6988072294990dc01fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737409"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>電子レポートのサンプル仕入先小切手
 

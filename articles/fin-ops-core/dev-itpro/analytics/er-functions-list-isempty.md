@@ -3,7 +3,6 @@ title: ISEMPTY ER 関数
 description: このトピックでは、ISEMPTY 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 12/12/2019
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c33e8b613bf5bf5bc17a42a7668d4cc4ee58e53
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 41d1f773e3fc2f076dbe3d826d14a364548d6656c95c03e54eb36345c004fecd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750439"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740969"
 ---
 # <a name="isempty-er-function"></a>ISEMPTY ER 関数
 

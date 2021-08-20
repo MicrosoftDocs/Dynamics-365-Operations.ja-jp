@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 725b6dea98805baaf3f4d60b3922543067a205bc7196a05f33af21a6cd680a37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740698"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
 
@@ -142,7 +142,7 @@ ms.locfileid: "6345503"
 
 - 販売注文
 - 移動の出庫
-- 補充
+- 補充 (生産用の原材料を含まない)
 - 在庫移動
 - 循環棚卸
 - 発注書 (倉庫オーダーにリンク)
@@ -298,6 +298,7 @@ ms.locfileid: "6345503"
 | 完成品と完成品のプットアウェイ レポート | あり | あり |
 | 連産物と副産物のプット アウェイ | あり | あり |
 | <p>その他、生産に関連するすべての倉庫管理プロセスを含みます。</p><li>倉庫にリリース</li><li>生産ウェーブプロセス</li><li>原材料のピッキング</li><li>かんばんのプット アウェイ</li><li>かんばんのピッキング</li><li>製造オーダーの開始</li><li>生産仕損</li><li>最後の生産パレット</li><li>材料消費の登録</li><li>空のかんばん</li></ul> | あり | なし |
+| 原材料の補充 | なし | なし |
 
 ## <a name="maintaining-scale-units-for-wes"></a>WES のスケール ユニットの管理
 

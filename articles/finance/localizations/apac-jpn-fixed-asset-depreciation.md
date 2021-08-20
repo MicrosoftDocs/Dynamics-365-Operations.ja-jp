@@ -14,12 +14,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d375a1476400f935bf180b083e5827d7df430004
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e31aabdb3b9dfe35a2a31856d8a0d4c0e902c082b7043a3d4e705f0dbefea59
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738415"
 ---
 # <a name="fixed-asset-depreciation-for-japan-faq"></a>日本の固定資産減価償却のよく寄せられる質問
 

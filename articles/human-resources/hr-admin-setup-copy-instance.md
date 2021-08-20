@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360152"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740842"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
 
@@ -52,9 +52,9 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 - Microsoft Azure Blob storage 内のドキュメントは環境間でのコピーがされません。 そのため、この ストレージ に属するドキュメントやテンプレートはコピーされず、コピー元の環境に残ります。
 
-- 管理者ユーザー、およびその他の内部サービス ユーザー アカウントを除くすべてのユーザーは使用できなくなります。 管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
+- 「システム管理者」セキュリティ ロールを持つユーザー以外のユーザー、および他の内部サービス ユーザー アカウントは使用できません。 管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
 
-- 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
+- 「システム管理者」というセキュリティ ロールを持つユーザーは、統合エンドポイントを特定のサービスや URL に再接続するなど、必要な設定変更を行う必要があります。
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources データベースのコピー
 
@@ -75,7 +75,7 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 5. **Power Platform** を選択し、 Microsoft Power Platform 管理センターにサインインします。
 
-   ![[Power Platform を選択する。](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform を選択。](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. コピーをするPower Apps 環境 を選択して、 **コピー** を選択します。
 
@@ -111,7 +111,7 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 また、インスタンスのコピー時には、次の状態変更がされます :
 
-- 管理者以外の全ユーザーが **無効化** されます。
+- 「システム管理者」セキュリティ ロールを持つユーザーを除くすべてのユーザーが **無効** に設定されます。
 
 - 一部のシステムジョブを除いた、すべてのバッチジョブが **保留** となります。
 
