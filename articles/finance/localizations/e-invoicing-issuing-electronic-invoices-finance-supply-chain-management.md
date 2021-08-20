@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 8d6ef59b64a96e13bdc2e5ddf299ef7ab98e105c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 24909c2a2505724c159e939535c1d57cb66e48629862bebb32b3d72c0eb06c97
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752129"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Finance および Supply Chain Management での電子請求書の発行
 

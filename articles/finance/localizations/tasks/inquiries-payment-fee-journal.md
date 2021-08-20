@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0b7f51bb36479c8c08f98f3a3fa23f65ebd8ffe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: efc6c081e239d9bcd3a287ae2c2d5ea72228c899f1d5b6662f0b63102b1fd0be
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752071"
 ---
 # <a name="inquiries-of-payment-fee-on-journal"></a>仕訳帳の支払手数料の照会
 
