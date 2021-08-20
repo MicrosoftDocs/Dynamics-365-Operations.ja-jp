@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: e5f9379877e77f2824cd2dec9a1e68390b4eee8ba502e4011f0a8838b1974e3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769951"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>生成されたファイルの BOM 文字を非表示にする ER 構成の設計
 

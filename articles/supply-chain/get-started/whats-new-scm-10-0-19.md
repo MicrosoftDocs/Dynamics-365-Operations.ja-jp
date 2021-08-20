@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 98f9fffcbf93871de302a0d8b4b9675889ef5e40
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773540"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Management バージョン 10.0.19 (2021 年 6 月) の新機能および変更された機能
 
@@ -35,6 +35,7 @@ ms.locfileid: "6641131"
 
 | 機能領域 | 機能 | 詳細 |
 |---|---|---|
+| 在庫&nbsp;および&nbsp;物流 | [仕入先から提出された銀行詳細の承認と保存](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | [仕入先の銀行口座情報の管理](../../finance/accounts-payable/maintain-vendor-bank-info.md) |
 | 在庫および物流 | [連絡担当者データ エンティティのエクスポートの最適化](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | この機能を有効にすると、参照データを変更しても、関連する連絡先が次の増分エクスポートに含まれることはありません。 この機能を無効にすると、参照データに変更があると、関連する連絡先が次の増分エクスポートに含まれます。 |
 | 在庫および物流 | [スケール単位を使用する倉庫の実行機能の差分機能強化](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[メッセージ プロセッサのメッセージ](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[倉庫在庫調整](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | 在庫および物流 | [販売見積ページのドキュメントの序文フィールドおよびドキュメントの結びフィールドのルックアップ機能](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | この機能により、**販売見積** ページの **ドキュメントの序文** フィールドと **ドキュメントの結び** フィールドにルックアップ機能が追加されます。<br><br>この機能は、既定で有効になっています。 |

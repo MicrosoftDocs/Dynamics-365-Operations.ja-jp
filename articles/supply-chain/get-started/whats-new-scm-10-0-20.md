@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773516"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Management 10.0.20 (2021 年 8 月) の新機能または変更された機能
 
@@ -47,7 +47,6 @@ ms.locfileid: "6641059"
 
 | 機能領域 | 機能&nbsp;管理の機能&nbsp;名&nbsp; | 詳細 |
 |---|---|---|
-| マスター プラン | 計画の最適化のマイナス在庫日数 | この機能により、計画の最適化では、補充グループで定義された **マイナス在庫日数** パラメーターに基づいて遅延許容範囲を考慮できます。 |
 | マスター プラン | 調整された需要予測の並列承認 | この機能により、**調整された需要予測** ページから調整済需要予測を並行して承認できます。 この機能の目的は、多数の予測が承認されている場合のパフォーマンスを向上させることです。 承認時に、ユーザーは、承認するダイアログで **スレッド数** を指定できます。 |
 | マスター プラン | (プレビュー) 計画バルク オーダーおよび梱包バッチ オーダーのバッチ処理可能な確定と連結 | この機能を使用すると、バッチ ジョブを使用して、計画バルク オーダーと梱包オーダーを確定および連結できます。 |
 | 生産管理 | 汎用工順のコピー | この機能により、工順コピー機能が強化され、ユーザーは品目固有ではない工順をコピーできます。 工順コピー機能を使用して品目にまだ割り当てられていない工順を上書きした後で、システムはすべての関連情報 (サイト、工順グループ、リソース要件、各種の時間など) を更新できます。 |

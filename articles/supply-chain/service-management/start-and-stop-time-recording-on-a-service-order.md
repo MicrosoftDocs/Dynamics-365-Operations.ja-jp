@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc205daa35c898147559427b071d1d2c2720de3a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 559c80b43230f14a5683558bf74b088f1d85e8ab99044425bbb0ff536fbd63ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776755"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>サービス注文の時刻記録の開始および停止 
 

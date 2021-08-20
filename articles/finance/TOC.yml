@@ -70,8 +70,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Finance の新機能および変更された機能
                   items:
-                    - name: Finance ホーム ページの新機能および変更された機能
+                    - name: Finance の最新情報や変更事項に関するホームページ
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.21 (2021 年 10 月)
+                      href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (2021 年 6 月)
@@ -1168,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Office で財務仕訳帳テンプレートを開く
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: なぜこのトランザクションを取り消せないのですか?
+                  href: general-ledger/cant-reverse-transctns.md
         - name: 財務諸表
           items:
             - name: 財務諸表の使用を開始する
@@ -1492,18 +1496,22 @@
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
                     - name: 使用状況管理ダッシュボード
                       href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
-                    - name: 開始する
+                    - name: 使用開始
                       items:
                         - name: 電子請求サービス管理の使用を開始する
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: 電子請求の使用を開始する
                           href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: 新しい電子請求機能を作成する
+                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: ブラジル用電子請求の使用を開始する
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: エジプト用電子請求の使用を開始する
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: メキシコ用電子請求の使用を開始する
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: 電子請求サービスを使用して仕入先請求書をインポートする
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: 電子請求の設定
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
                     - name: 電子請求に関するよく寄せられる質問
@@ -1514,8 +1522,12 @@
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: 税の計算の使用を開始する
                       href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                    - name: 消費税の適用と消費税グループの決定ロジック
+                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
                     - name: 移動オーダーに対する税金機能のサポート
                       href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: 価格に税金が含まれる場合の価格上の税金の計算が有効
+                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
                     - name: 税コンフィギュレーションへのデータ フィールドの追加
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: 拡張機能を使用した税統合へのデータ フィールドの追加
@@ -1528,6 +1540,10 @@
                       items:
                         - name: 複数の VAT 登録に関するレポート
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: フランスのレポート
+                          items:
+                            - name: VAT 申告
+                          href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: オランダのレポート
                           items:
                             - name: VAT 申告
@@ -1544,6 +1560,8 @@
               items:
                 - name: オーストラリアの概要
                   href: localizations/australia.md
+                - name: オーストラリアの銀行の銀行ファイル形式
+                  href: localizations/apac-aus-bank-file-formats.md
                 - name: 事業活動報告書 (BAS)
                   href: localizations/apac-aus-business-activity-statement.md
                 - name: レポート ボックスを追加し、BAS を生成する
@@ -1552,6 +1570,8 @@
                   href: localizations/apac-aus-low-value-pool-depreciation.md
                 - name: BAS の理由コードの設定
                   href: localizations/tasks/set-up-reason-codes-australia-bas.md
+                - name: 支払時間レポート スキーマ
+                  href: localizations/apac-aus-payment-times-report.md
             - name: オーストリア
               items:
                 - name: オーストリアの概要
@@ -1802,6 +1822,8 @@
                   href: localizations/china.md
                 - name: 中国で 21Vianet が運用する Finance and Operations
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+                - name: 中国の伝票タイプに対する勘定グループの選択
+                  href: localizations/apac-chn-account-groups-selection.md
                 - name: 部品表の比較
                   href: localizations/apac-chn-bom-comparison.md
                 - name: 中国の勘定科目表の階層
@@ -1870,6 +1892,10 @@
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: VAT 申告 (チェコ共和国)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: 銀行口座の銀行記号
+                  href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+                - name: EU 内 VAT
+                  href: localizations/emea-cze-intra-community-VAT.md
                 - name: 年度末決算
                   href: localizations/emea-cze-hun-year-end.md
             - name: デンマーク
@@ -1992,10 +2018,6 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: EU イントラスタット申告の生成
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-                    - name: フランスのイントラスタット
-                      href: localizations/emea-fra-intrastat.md
-                    - name: イタリアのイントラスタット
-                      href: localizations/emea-ita-intrastat.md
                 - name: 在庫仕訳レポート
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: 請求書発行の期限
@@ -2120,6 +2142,8 @@
                   href: localizations/emea-fra-derogatory-depreciation.md
                 - name: フランスの為替手形および支払手形
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+                - name: フランスのイントラスタット
+                  href: localizations/emea-fra-intrastat.md
                 - name: NAF コードと Siret 番号
                   href: localizations/emea-fra-naf-codes-siret-numbers.md
                 - name: NAF コードと Siret 番号の設定
@@ -2138,6 +2162,8 @@
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: 顧客の支払方法の更新
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: VAT 申告
+                  href: localizations/emea-fra-VAT-declaration-preview-France.md
                 - name: DAS-2 レポート
                   href: localizations/emea-fra-das2-report.md
             - name: ドイツ
@@ -2162,6 +2188,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: VAT 申告電子送信 (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: ドイツのイントラスタット
+                  href: localizations/emea-deu-intrastat.md
                 - name: ドイツの VAT 申告
                   href: localizations/emea-de-vat-declaration.md
                 - name: 顧客電子請求書レポート
@@ -2170,6 +2198,8 @@
                   href: localizations/emea-deu-journal-list-report.md
                 - name: 電子税申告の設定
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+                - name: 販売から生成されるクレジット メモの個別ラベルの印刷
+                  href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
             - name: ハンガリー
               items:
                 - name: ハンガリーの概要
@@ -2616,6 +2646,8 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: 銀行データの有用性の強化
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
+                - name: イタリアのイントラスタット
+                  href: localizations/emea-ita-intrastat.md
                 - name: イントラスタット申告でのキログラムあたりの雑費
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: 同意書 - 通常の輸出業者への請求
@@ -2832,10 +2864,12 @@
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: VAT 明細書の詳細
                   href: localizations/emea-ltu-vat-statement-details.md
-                - name: i. リトアニアに関する SAF の報告
+                - name: リトアニアの i.SAF レポート
                   href: localizations/emea-ltu-isaf.md
                 - name: リトアニアの税の標準監査ファイル (SAF-T)
                   href: localizations/emea-ltu-saf-t.md
+                - name: 社内の商品移動の移動文書の設定
+                  href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
             - name: マレーシア
               items:
                 - name: マレーシアの概要
@@ -2970,14 +3004,18 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: 買掛金勘定/売掛金勘定為替差異の分割
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: ポーランド向け PKWiU を設定して使用する
+                  href: localizations/emea-pol-pkwiu-code.md
                 - name: レジスターを使用した VAT 申告 (JPK_V7M、VDEK)
-                  href: localizations/emea-pol-vdek.md
-                - name: JPK-V7M レポートの準備
-                  href: localizations/emea-pol-vdek-setup.md
-                - name: JPK-V7M レポート
-                  href: localizations/emea-pol-vdek-reporting.md
-                - name: JPK-V7M レポートの特定のビジネス シナリオの詳細
-                  href: localizations/emea-pol-vdek-scenarios.md
+                  items:
+                    - name: レジスターを使用した VAT 申告 (JPK_V7M、VDEK) の概要
+                      href: localizations/emea-pol-vdek.md
+                    - name: JPK-V7M レポートの準備
+                      href: localizations/emea-pol-vdek-setup.md
+                    - name: JPK-V7M レポート
+                      href: localizations/emea-pol-vdek-reporting.md
+                    - name: JPK-V7M レポートの特定のビジネス シナリオの詳細
+                      href: localizations/emea-pol-vdek-scenarios.md
             - name: カタール
               items:
                 - name: カタールの概要
@@ -3200,6 +3238,8 @@
                       href: localizations/rus-reporting-deferrals.md
                 - name: 税会計
                   items:
+                    - name: 税登録および税登録仕訳帳の作成
+                      href: localizations/rus-profit-tax-registers.md
                     - name: 経費および所得コード
                       href: localizations/rus-expense-and-income-codes.md
                     - name: 資産の税登録
@@ -3216,6 +3256,10 @@
                       href: localizations/rus-bad-debts.md
                     - name: 税資産および未払税金の登録の計算
                       href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+                    - name: 商品移動税登録
+                      href: localizations/rus-goods-movement-tax-registers.md
+                    - name: その他の税登録
+                      href: localizations/rus-other-tax-registers.md
             - name: サウジアラビア
               items:
                 - name: サウジアラビアの概要
@@ -3302,10 +3346,8 @@
                   href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: 納税支店分析コード
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: 仮受 VAT レポート
+                - name: 売上 VAT レポート
                   href: localizations/apac-tha-sales-vat-report.md
-                - name: 購買トランザクションの平均 VAT
-                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: 源泉徴収税
                   href: localizations/apac-tha-withholding-tax.md
             - name: アラブ首長国連邦 (UAE)
