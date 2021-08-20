@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99a286b4e40ddeb7f4ff37c1ece3c678b26c838b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0cb052e2895cd0eb7f5c3bea9f33d988ef54dfb11e2e31c4212706b7fdaada79
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766388"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>ER 形式の出力 (パート 3 - 形式の作成) におけるドキュメント管理ファイルの使用
 

@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 024c48299583a4d1b7e3660a82844cc030995693
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4906f5b608cff2485bd4285d5f45e1e8b65711132ed7a1ced18101d7404b42c4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775864"
 ---
 # <a name="maintain-impairment-indicators-on-individual-assets"></a>個別資産の減損インジケーターの管理
 

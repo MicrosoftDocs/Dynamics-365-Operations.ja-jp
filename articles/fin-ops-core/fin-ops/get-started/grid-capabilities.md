@@ -2,7 +2,7 @@
 title: グリッド機能
 description: このトピックでは、グリッド コントロールのいくつかの強力な機能について説明します。 これらの機能にアクセスするには、新しいグリッド機能を有効にする必要があります。
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775245"
 ---
 # <a name="grid-capabilities"></a>グリッド機能
 
@@ -158,6 +158,13 @@ Finance and Operations アプリでは、すべての表形式のグリッドの
  ```this.forceLegacyGrid();```
 
 この API は、新しいグリッド コントロールが必須化される、2021 年 10 月のリリースまで受け入れられます。 この API を使用する必要がある問題がある場合は、Microsoft に報告してください。
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>以前にグリッドをオプトアウトした後、ページに新しいグリッドを使用するように強制する
+個々のページで新しいグリッドの使用をオプトアウトした場合は、根本的な問題が解決された後で、後で新しいグリッドを再度有効にすることをお勧めします。 そのためには、`forceLegacyGrid()` の呼び出しを削除するだけです。 変更は、次のいずれかが発生するまで有効になりません。
+
+- **環境の再デプロイ** : 環境が更新および再デプロイされると、新しいグリッドからオプトアウトしたページを格納するテーブル (FormControlReactGridState) が自動的にクリアされます。
+
+- **テーブルの手動クリア** : 開発シナリオでは、SQL を使用して FormControlReactGridState テーブルをクリアしてから、AOS を再起動する必要があります。 このアクションの組み合わせにより、新しいグリッドからオプトアウトしたページのキャッシュがリセットされます。  
 
 ## <a name="developer-size-to-available-width-columns"></a>[開発者] サイズから使用可能な幅の列
 開発者が、新しいグリッド内の列に対して **WidthMode** プロパティを **SizeToAvailable** に設定した場合 、これらの列は最初、プロパティが **SizeToContent** に設定された場合と同じ幅になります。 ただし、グリッド内で追加の使用可能な幅を使用するために伸縮します。 プロパティが複数の列に対して **SizeToAvailable** に設定されている場合、グリッド内で追加の使用可能な幅はすべての列で共有されます。 ただし、ユーザーが手動でこれらの列の 1 つをサイズ変更すると、列は静的になります。 それはその幅のままになり、追加の使用可能なグリッド幅を使用するために伸縮することはありません。  

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d0f644da640b56761a52baec9ff01c898e895d19
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e9c97982233b1f3dc3924fa42954b5cb8d09ffcaa07d19a3892b25737a6c29c5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778872"
 ---
 # <a name="formula-designer-for-tds-calculations"></a>TDS 計算の式デザイナー
 
@@ -44,7 +44,7 @@ ms.locfileid: "6023379"
 | 割増金 (TDS コンポーネント - 割増金)                         | 10%                                     | 総額を除く | +TDS                              |                   10000                    | 1.000        |                       |
 | PE-Cess (TDS コンポーネント - PE-Cess)                            | 2%                                      | 総額を除く | +TDS+割増金                    |                   11000                    | 220         |                       |
 | SHE Cess (TDS コンポーネント - SHE Cess)                          | 1%                                      | 総額を除く | +TDS+割増金                    |                   11000                    | 110         |                       |
-| **請求書に対して計算された TDS の合計** | **11,330**                               |                    |                                   |                                            |             |                       |
+| **請求書** **に** **対して** **計算された** **TDS** の **合計** | **11,330**                               |                    |                                   |                                            |             |                       |
 
 伝票ノ入力は次のように作成されます。
 
