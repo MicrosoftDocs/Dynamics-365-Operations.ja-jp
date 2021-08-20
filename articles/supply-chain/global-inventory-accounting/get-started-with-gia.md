@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 07d3222680d9d9bff639f34eca5fea64d753ffd1
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773299"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>グローバル在庫会計の使用を開始する
 
@@ -42,7 +42,7 @@ ms.locfileid: "6336982"
 > [!IMPORTANT]
 > グローバル在庫会計を使用するには、LCS が有効になっている高可用性環境 (OneBox 環境ではない) が必要です。 また、Supply Chain Management バージョン 10.0.19 以降を実行している必要があります。
 
-グローバル在庫会計パブリック プレビューにサインアップするには、[グローバル在庫会計チーム](mailto:GlobalInventoryAccounting@service.microsoft.com)に電子メールで LCS 環境 ID を送信します。 プログラムに承認された後、チームはグローバル在庫会計ベータ キーおよびサービス エンドポイントを含むフォローアップ電子メールを送信します。 ベータ キーを受信した後に、[アドインをインストール](#install)できます。
+グローバル在庫会計パブリック プレビューにサインアップするには、[グローバル在庫会計チーム](mailto:GlobalInvAccount@microsoft.com)に電子メールで LCS 環境 ID を送信します。 プログラムに承認された後、チームはグローバル在庫会計ベータ キーおよびサービス エンドポイントを含むフォローアップ電子メールを送信します。 ベータ キーを受信した後に、[アドインをインストール](#install)できます。
 
 ## <a name="licensing"></a>ライセンス
 

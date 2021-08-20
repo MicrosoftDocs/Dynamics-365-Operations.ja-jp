@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed1c7e5a0ea866a9d0f0520696ef675e87e45634
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 74b28d5cae89c250b2da71dd6df2f07ddee31eba1ba7a039c6d10437e800062e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757922"
 ---
 # <a name="settle-an-endorsed-bill-of-exchange"></a>裏書済受取手形の決済
 

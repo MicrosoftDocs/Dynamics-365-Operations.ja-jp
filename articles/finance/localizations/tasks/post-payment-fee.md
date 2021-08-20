@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f69694b49304c0bc53b992db2bd7ee2505280d5d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ce87dde182652dadb6da976a4063045e2cae1701e604c67f1c36a51f2660c01
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782794"
 ---
 # <a name="generate-and-post-payment-fee"></a>支払手数料の生成および転記
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780677"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>製造および倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
 
@@ -102,7 +102,7 @@ ms.locfileid: "6354812"
 > [!IMPORTANT]
 > サービスとしてのインフラストラクチャとして実行する環境タイプ (IaaS) はサポートされていません。 通常、これらの環境は、LCS で **Microsoft 管理** タイプでタグ付けされます。 このタイプの環境がある場合は、Microsoft の連絡先と連携して、**セルフサービス** タイプへの移行タイムラインについて把握する必要があります。
 
-Microsoft では、Supply Chain Management のすべてのクラウド環境を IaaS モデルから Service Fabric でホストされているトポロジに移行しています。 この移行により、スケーラビリティが向上し、サービス管理が容易になります。 したがって、配置とメンテナンスの操作が迅速になります。 同様に、サービス コンポーネントをマイクロサービスの概念に移行すると、サービス ホスティング モデルは仮想マシン (VM) モデルから、コンテナ化された軽量アーキテクチャに[移行](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) します。
+Microsoft では、Supply Chain Management のすべてのクラウド環境を IaaS モデルから Service Fabric でホストされているトポロジに移行しています。 この移行により、スケーラビリティが向上し、サービス管理が容易になります。 したがって、配置とメンテナンスの操作が迅速になります。 同様に、サービス コンポーネントをマイクロサービスの概念に移行すると、サービス ホスティング モデルは仮想マシン (VM) モデルから、コンテナ化された軽量アーキテクチャに[移行](/virtualization/windowscontainers/about/containers-vs-vm) します。
 
 最終的には、Service Fabric ベースのコンテナ化されたサービス インフラストラクチャは、インスタンスがクラウドのハブであるか、クラウドのスケール ユニットであるか、エッジであるかにかかわらず、サービスのクラウドとエッジの両方のインスタンスに対応します。
 
