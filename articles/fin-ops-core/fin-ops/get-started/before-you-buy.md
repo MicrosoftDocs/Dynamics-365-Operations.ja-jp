@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ef556c44ac0241f19e9e1891fb3ce32294667827
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0218dd93440c3cd76f16ac954dd7956998873931444fa1334e7382a177ff3fc9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757198"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
@@ -86,7 +86,7 @@ Microsoft は柔軟性の高い、業界をリードするサポート、サー�
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>ステップ 4: FastTrack について学び、展開を計画する
 
-Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 さらに、Dynamics 365 でのお客様の経験を成功させるために尽力している Microsoft エンジニアリング リソースにアクセスできます。 詳細については、 [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。
+Microsoft FastTrack for Dynamics 365 は、Dynamics 365 に円滑、かつ確実に移行できるように設計された顧客成功サービスであり、事業価値をより迅速に実現できます。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 さらに、Dynamics 365 でのお客様の経験を成功させるために尽力している Microsoft エンジニアリング リソースにアクセスできます。 詳細については、 [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>AX 2012 からアップグレードまたは AX 2009 から移行する場合
 

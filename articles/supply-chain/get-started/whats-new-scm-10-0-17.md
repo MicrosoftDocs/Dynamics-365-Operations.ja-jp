@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 67240491bba5a81455bff00be22908670880803c3e08091d76e037fa0b5f49ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935608"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760517"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management 10.0.17 の新機能または変更された機能 (2021 年 4 月)
 
@@ -52,6 +52,8 @@ ms.locfileid: "5935608"
 - [陸揚原価](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - 詳細については、[陸揚原価モジュール](../landed-cost/landed-cost-overview.md) を参照してください。
 
 - [梱包対保管分析コード](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - 詳細については、[梱包と保管へのさまざまな分析コードの設定](../warehousing/packing-vs-storage-dimensions.md) を参照してください。
+
+- [並列ウェーブ配賦](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/parallel-wave-allocation)<br> - 詳細については、[ウェーブ配賦](../warehousing/wave-allocation-method.md) を参照してください。
 
 - [在庫および物流の保存済みビュー](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - 詳細については、[Supply Chain Management の標準の保存済みビュー](saved-views-scm.md) を参照してください。
 

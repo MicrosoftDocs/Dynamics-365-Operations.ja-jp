@@ -2,7 +2,7 @@
 title: 財務諸表の概要
 description: このトピックでは、Microsoft Dynamics 365 Finance で財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。
 author: aprilolson
-ms.date: 12/04/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf07b12d83221952aefb80ab6a5b651bb4ef3762
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748213"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting の使用を開始する 
 
@@ -47,10 +47,10 @@ ms.locfileid: "6338160"
 -   勘定科目表
 -   通貨
 -   少なくともひとつの勘定への取引の転記
--   MainAccount が **総勘定元帳 > 元帳の設定 > Financial Reporting の設定** の選択された列に一覧表示されます
+-   MainAccount は、**Financial Reporting 設定** ページ (**一般会計 > 元帳の設定 > Financial Reporting の設定**) の **選択済み** 列に一覧表示されます
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Financial Reporting へのセキュリティ アクセス権限を取得する
-財務報告の機能は、セキュリティ ロールによって適切な権限、職務が割り当てられたユーザーが使用できます。 次のセクションでは、関連するロールとともにこれらの権限と職務を表示します。
+Financial Reporting の機能は、セキュリティ ロールによって適切な権限、職務が割り当てられたユーザーが使用できます。 次のセクションでは、関連するロールとともにこれらの権限と職務を表示します。
 
 ### <a name="duties"></a>職務権限
 
@@ -79,7 +79,7 @@ ms.locfileid: "6338160"
 | 財務諸表の生成            | 財務諸表の生成            | CEO、CFO、経理担当                                                            |
 | 財務諸表の表示                | 財務パフォーマンスの確認          | 未割当                                                                   |
 
-ユーザーが追加されるかロールを変更すると、ユーザーは数分以内に財務報告にアクセスできるようになります。 
+ユーザーが追加されるかロールを変更すると、ユーザーは数分以内に Financial Reporting にアクセスできるようになります。 
 
 > [!NOTE]
 > sysadmin ロールは、Financial Reporting のすべてのロールに追加されます。
@@ -160,15 +160,52 @@ ms.locfileid: "6338160"
 問題 2: ユーザーに Financial Reporting の使用に必要なアクセス許可が割り当てられていません。 
 
 * ユーザーがアクセス許可を持っていないことを確認するには、次のメッセージが表示された際に **はい** を選択してください : 「Financial Reporting サーバーに接続できません。 続けて別のサーバー アドレスを指定する場合は、[はい] を選択してください。」 続いて、**接続のテスト** を選択し ます。 アクセス許可がない場合は、次のメッセージが表示されます : 「接続の試行が失敗しました。 サーバーに接続する適切なアクセス許可がユーザーに割り当てられていません。 システム管理者に問い合わせてください。」
-* 必要となるアクセス許可は、[Financial Reporting にセキュリティ アクセス許可を付与する](#granting-security-access-to-financial-reporting) に記載されています。 Financial Reporting におけるセキュリティは、これらの権限に基づいています。 これらの権限 (またはこれらの権限を含むその他のセキュリティロール) がユーザーに割り当てられない限り、アクセス権は付与されません。 
+* 必要となるアクセス許可は、[Financial Reporting にセキュリティ アクセス許可を付与する](#granting-security-access-to-financial-reporting)に記載されています。 Financial Reporting におけるセキュリティは、これらの権限に基づいています。 これらの権限 (またはこれらの権限を含むその他のセキュリティロール) がユーザーに割り当てられない限り、アクセス権は付与されません。 
 * 統合タスク **企業向け企業ユーザー プロバイダー** (ユーザー統合を主に取り扱い、ユーザー統合機能としても知られる) は、5分間隔で実行されます。 Financial Reporting では、アクセス許可の変更が反映されるまでに最大で10分かかる場合があります。 
   別のユーザーがレポート デザイナーを開くことができる場合は、**ツール** を選択し、続いて **統合ステータス** を選択します。 Financial Reporting を使用する権限が割り当てられたため、統合マップ「企業向け企業ユーザー プロバイダー」が正常に実行されていることを確認してください。 
 * 別のエラーが発生して、**Dynamics ユーザーが Financial Reporting ユーザーの統合** を完了できない場合があります。 または、データマートのリセットが開始されたがまだ完了していない、あるいは別のシステム エラーが発生している可能性があります。 後でプロセスを再実行してください。 問題が引き続き発生する場合は、システム管理者に連絡してください。
 
-問題 3: ClickOnce レポート デザイナーのサインイン ページから先に進むことはできるが、レポート デザイナー内でのサインインが完了できません。 
+問題 3: **ClickOnce Report Designer** のサインイン ページから先に進むことはできるが、Report Designer 内でのサインインが完了できません。 
 
-* ログイン認証情報を入力に使用するローカル コンピュータに設定されている時間と、Financial Reporting サーバーの時間の差異は、5 分以内でなければなりません。 5 分以上の差がある場合、システムではサインインを許可しません。 
-* この場合は、Windows のオプションを有効にして、PC の時間を自動的に設定することをお勧めします。 
+* システムにサインインするときにローカル コンピューターに設定される時間は、Financial Reporting サーバーの時間から 5 分以内である必要があります。 5 分以上の差がある場合、システムはサインインを許可しません。 
+* コンピューターの時刻が Financial Reporting サーバーの時刻と異なる場合は、Windows オプションを有効にしてコンピューターの時刻を自動的に設定することをお勧めします。 
+
+## <a name="troubleshoot-report-designer-issues-with-event-viewer"></a>イベント ビューアに関する Report Designer の問題のトラブルシューティング
+
+イベント ビューアーを使用すると、Financial Reporting の使用時に発生する問題の一部を分析できます。 
+
+### <a name="what-happens-when-you-have-connections-issues-with-financial-reporting"></a>Financial Reporting との接続の問題があるとどうなりますか ? 
+
+Microsoft サポートとの会話をより効果的にし、より迅速な解決に導くために実行できるいくつかの手順を次に示します。 
+ 
+次の手順では、Financial Reporting 用にイベント ビューアー メッセージをオンにするプロセスについて説明します。 イベント ビューアが生成するログは、サポート エンジニアが接続の問題の原因をすばやく特定するのに役立ちます。 サポートに連絡するときは、これらのログのコピーをチケットと一緒に提出してください。
+
+> 1.    RegisterETW.zip ファイルをクライアント ワークステーション (できればデスクトップ) にコピーし、[RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster) を抽出します。
+
+> 2.    Windows イベント ビューアが閉じていることを確認してください。
+
+> 3.    管理者 PowerShell コマンドプロンプトを開き、RegisterETW.ps1 が配置されているディレクトリに移動します。
+
+> 4.    次のコマンドを実行します : .\RegisterETW.ps1
+   
+   PowerShell で正常に出力されると、**RegisterETW スクリプトが完了** というメッセージで確認されます。
+イベント ビューアを再度開くと、**Microsoft > Dynamics** の下にこれらのログが表示されます: * MR-Client * MR-DVT * MR-Integration * MR-Logger * MR-Reporting * MR_SchedulerTasks * MR-Sql * MR-TraceManager
+   
+> 5. Report Designer で問題を再現します。
+   
+> 6. イベント ビューアを使用して MR-Logger イベントをエクスポートします。
+
+## <a name="troubleshoot-issues-connecting-to-financial-reporting"></a>Financial Reporting に関連する問題のトラブルシューティング
+
+問題 : 「Financial Reporting サーバーに接続できません」というエラーが表示されます。
+
+* 問題が Chrome および Edge インターネット ブラウザーで発生したかどうかを確認します。
+* 問題が 1 つのブラウザーでのみ発生する場合は、ClickOnce の問題である可能性があります。 
+* 接続エラー メッセージが表示されたら、**テスト** を選択して接続をテストし、表示されるメッセージを確認します。 
+* この問題は、別のユーザーが Financial Reporting にアクセスできない可能性があります。 ユーザーにアクセス許可がない場合は、権限がないことを示すメッセージが表示されます。
+* 複数のブラウザーで問題が発生する場合は、ワークステーションのタイム レコーダーが自動に設定されていることを確認してください。
+* Dynamics 365 Finance のセキュリティ管理者権限とネットワーク ドメインの管理者権限を持つユーザーと協力して、ワークステーションにサインインし、接続できるかどうかを確認します。 接続できる場合、問題はネットワークのアクセス許可に関連している可能性があります。
+* ワークステーションで、ファイアウォールを一時的に無効にします。 その後、Report Designer に接続できる場合、問題はファイアウォールにあります。 組織の IT 部門と協力して、問題を解決してください。
 
 ## <a name="additional-resources"></a>追加リソース
 - [財務諸表の表示](view-financial-reports.md)
