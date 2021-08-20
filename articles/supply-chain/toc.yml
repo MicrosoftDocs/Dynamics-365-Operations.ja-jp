@@ -72,6 +72,8 @@
                   items:
                     - name: Supply Chain Management の最新情報や変更事項に関するホームページ
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.21 (2021 年 10 月)
+                      href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (2021 年 6 月)
@@ -234,7 +236,7 @@
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 使用状況管理ダッシュボード
                       href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 開始する
+                    - name: 使用開始
                       items:
                         - name: 電子請求サービス管理の使用を開始する
                           href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
@@ -1601,6 +1603,8 @@
                   href: master-planning/planning-optimization/planning-optimization-overview.md
                 - name: 計画最適化の開始
                   href: master-planning/planning-optimization/get-started.md
+                - name: 計画の最適化のリリース プロセスおよびリリース履歴
+                  href: master-planning/planning-optimization/release-process.md
                 - name: 計画最適化適合分析
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: 計画の最適化で使用されないパラメーター
@@ -1631,6 +1635,8 @@
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: 補充タイム フェンス
                   href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: 計画の最適化を使用した正味必要量およびペギング情報
+                  href: master-planning/planning-optimization/net-requirements.md
                 - name: 計画オーダーの承認
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: 計画オーダーの確定
@@ -1709,6 +1715,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: サプライ チェーンの内部顧客と共同作業する
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+                - name: 組み込みマスター プランを使用した正味必要量およびペギング情報
+                  href: master-planning/net-requirements-built-in-master-planning.md
             - name: 予測
               items:
                 - name: 需要予測と供給予測
@@ -1967,6 +1975,8 @@
                   href: procurement/request-quotations.md
                 - name: 見積依頼の作成
                   href: procurement/tasks/create-request-quotation.md
+                - name: RFQ の封緘入札
+                  href: procurement/sealed-bidding.md
                 - name: RFQ を使用する要求の作成
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: RFQ のスコア方法の作成
@@ -2281,6 +2291,8 @@
               href: engineering-change-management/product-readiness.md
             - name: リリース製品構造
               href: engineering-change-management/release-product-structure.md
+            - name: エンジニアリング製品のバリアントの生成
+              href: engineering-change-management/engineering-variants.md
             - name: エンジニアリング変更管理に関するよく寄せられる質問
               href: engineering-change-management/change-management-faq.md
         - name: 生産管理
@@ -2603,6 +2615,8 @@
               href: rebate-management/rebate-management-overview.md
             - name: リベート管理モジュールの設定とコンフィギュレーション
               items:
+                - name: システムのリベート管理モジュールを有効にする
+                  href: rebate-management/rebate-management-enable.md
                 - name: リベート管理パラメーター
                   href: rebate-management/rebate-management-parameters.md
                 - name: リベート管理取引のワークフロー
@@ -2619,6 +2633,8 @@
               href: rebate-management/rebate-management-deals.md
             - name: リベートの処理、確認、および転記
               href: rebate-management/process-review-post.md
+            - name: 控除ワークベンチを使用した控除の管理
+              href: rebate-management/deduction-workbench.md
         - name: 販売とマーケティング
           items:
             - name: 販売とマーケティングの概要
@@ -3057,6 +3073,8 @@
               href: landed-cost/in-transit-processing.md
             - name: 超過/過少トランザクションの処理
               href: landed-cost/over-under-transactions.md
+            - name: プット アウェイの更新追跡
+              href: landed-cost/update-tracking-putaway.md
             - name: 陸揚原価の照会
               href: landed-cost/landed-cost-inquiries.md
             - name: 陸揚原価レポート
@@ -3117,6 +3135,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: システム主導のクラスター ピッキング
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: 販売注文と移動オーダーの過剰ピッキング
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
                     - name: 梱包と保管へのさまざまな分析コードの設定
                       href: warehousing/packing-vs-storage-dimensions.md
                     - name: バッチおよびライセンス プレートの確認
@@ -3509,6 +3529,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: 倉庫管理
               items:
+                - name: 顧客が保留中であるため出荷を確認できない
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: 積荷明細行の数量がゼロであるため出荷を確認できない
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: リリース済数量がマイナスであるため積荷明細行を更新できない
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
                 - name: キャンセルされた製品受領書で、トランザクションの状態が登録済に更新されない
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: 物理的に更新している数量の小数丸めが間違っている

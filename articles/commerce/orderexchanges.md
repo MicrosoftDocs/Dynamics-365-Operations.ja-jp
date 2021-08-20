@@ -2,7 +2,7 @@
 title: 返品注文に対する交換のコンフィギュレーションとプロセス
 description: このトピックでは、Dynamics 365 Commerce で返品に対する交換のコンフィギュレーションを行う方法について説明します。
 author: josaw1
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46d6e912aca64951da2865f5609a9dc22fbbcbe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758339"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>返品注文に対する交換のコンフィギュレーションとプロセス
 
@@ -32,9 +32,12 @@ ms.locfileid: "5804604"
 
 ## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>返品注文での交換をサポートするように Commerce を構成する
 
-返品注文での交換をサポートするようにシステムを構成するには、次の手順を実行します。
+> [!NOTE]
+> Commerce バージョン 10.0.20以降では、[POS での統合返品処理エクスペリエンス] と呼ばれる新しい機能を利用できます。 この機能を有効にした場合、次の設定手順は必要ありません。 **返品注文を販売注文として処理する** が永久に構成された設定になり、変更できなくなります。
 
-1. **Retail と Commerce \> 本社の設定 \> パラメーター \> コマース パラメーター** の順にクリックします。 **顧客注文** クイック タブで、**返品注文を販売注文として処理する** オプションで **はい** を設定します。
+次の手順に従って、返品注文で交換をサポートするようにシステムを構成します (**POS での統合返品処理エクスペリエンス** 機能を有効にしていない場合)。
+
+1. **Retail と Commerce \> 本社の設定 \> パラメーター \> Commerce パラメーター** の順にクリックします。 **顧客注文** クイック タブで、**返品注文を販売注文として処理する** オプションで **はい** を設定します。
 2. **グローバル構成配送スケジュール** ジョブ (**1110**) を実行します。
 
 ## <a name="make-an-exchange"></a>交換を行う

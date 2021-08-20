@@ -1,8 +1,8 @@
 ---
-title: ようこそ Dynamics 365 Human Resources
+title: Human Resources ホーム ページ
 description: Dynamics 365 Human Resources は、複数の領域にわたってデータ駆動型の従業員エクスペリエンスを構築するために必要となる、従業員に関するインサイトを提供します。
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.custom:
 - intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b294cbc8d73858aeb6ab358cad608c78c911b0a
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 25b3a9271dd3a906c5077f2e509cacf37ce1eb9ccb37131bb7ea31fa72ddd57f
+ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339694"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7011982"
 ---
-# <a name="welcome-to-dynamics-365-human-resources"></a>ようこそ Dynamics 365 Human Resources
+# <a name="human-resources-home-page"></a>Human Resources ホーム ページ
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -47,45 +47,54 @@ Human Resources はユーザーや業務データを関連付けて、従業員�
 
 ## <a name="administrator-guide"></a>管理者ガイド
 
-[概要](hr-admin-overview.md)</br>
-[システム要件](hr-admin-system-requirements.md)</br>
-[インスタンスの設定と管理](hr-admin-setup-provision.md)</br>
-[データ統合の設定](hr-admin-integration-choose-technology.md)</br>
-[データ管理のコンフィギュレーション](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
-[機能の管理](hr-admin-manage-features.md)</br>
-[ユーザー インターフェイスの操作](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Teams の Human Resources アプリ](hr-admin-teams-leave-app.md)</br>
-[Go Live の準備](hr-admin-go-live-prepare.md)</br>
-[Go Live に関するよく寄せられる質問](hr-admin-go-live-faq.md)</br>
-[ドキュメント リソース](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Human Resources のトラブルシューティング](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+- [概要](hr-admin-overview.md)</br>
+- [システム要件](hr-admin-system-requirements.md)</br>
+- [インスタンスの設定と管理](hr-admin-setup-provision.md)</br>
+- [データ統合の設定](hr-admin-integration-choose-technology.md)</br>
+- [データ管理のコンフィギュレーション](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [機能の管理](hr-admin-manage-features.md)</br>
+- [ユーザー インターフェイスの操作](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Teams の Human Resources アプリ](hr-admin-teams-leave-app.md)</br>
+- [Go Live の準備](hr-admin-go-live-prepare.md)</br>
+- [Go Live に関するよく寄せられる質問](hr-admin-go-live-faq.md)</br>
+- [ドキュメント リソース](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Human Resources のトラブルシューティング](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
 
 ## <a name="developer-guide"></a>開発者ガイド
 
-[概要](hr-developer-overview.md)</br>
-[Power Apps および Power Automate での拡張](hr-developer-power-apps.md)</br>
-[Dataverse の Human Resources エンティティ](hr-developer-entities.md)</br>
-[カスタム フィールド](hr-developer-custom-fields.md)</br>
-[Dataverse テーブル](hr-developer-entities.md)</br>
-[データ統合の設定](hr-admin-integration-choose-technology.md)</br>
-[Dataverse 仮想テーブルを使用した開発のトラブルシューティング](hr-developer-optimize-virtual-table-queries.md)</br>
-[エンティティ API 照会](hr-developer-api-authentication.md)</br>
-[ATS 統合 API](hr-admin-integration-ats-api-introduction.md)</br>
-[給与統合 API](hr-admin-integration-payroll-api-introduction.md)
+- [概要](hr-developer-overview.md)</br>
+- [Power Apps および Power Automate での拡張](hr-developer-power-apps.md)</br>
+- [Dataverse の Human Resources エンティティ](hr-developer-entities.md)</br>
+- [カスタム フィールド](hr-developer-custom-fields.md)</br>
+- [Dataverse テーブル](hr-developer-entities.md)</br>
+- [データ統合の設定](hr-admin-integration-choose-technology.md)</br>
+- [Dataverse 仮想テーブルを使用した開発のトラブルシューティング](hr-developer-optimize-virtual-table-queries.md)</br>
+- [エンティティ API 照会](hr-developer-api-authentication.md)</br>
+- [ATS 統合 API](hr-admin-integration-ats-api-introduction.md)</br>
+- [給与統合 API](hr-admin-integration-payroll-api-introduction.md)
 
 ## <a name="user-guide"></a>ユーザー ガイド
 
-[概要](hr-hrpro-overview.md)</br>
-[ユーザー インターフェイスの操作](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Human Resources の設定](hr-setup-parameters.md)</br>
-[組織の設定をコンフィギュレーションする](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
-[人事管理](hr-personnel-departments-jobs-positions.md)</br>
-[報酬プランの設定](hr-compensation-overview.md)</br>
-[福利厚生の管理](hr-benefits-management-overview.md)</br>
-[休暇および欠勤の管理](hr-leave-and-absence-overview.md)</br>
-[Teams での休暇要求の管理](hr-teams-leave-app.md)</br>
-[従業員の育成](hr-develop-performance-management-overview.md)</br>
-[コースの作成](hr-learning-courses.md)</br>
-[従業員およびマネージャー セルフ サービスの設定](hr-employee-manager-self-service-overview.md)
+- [概要](hr-hrpro-overview.md)</br>
+- [ユーザー インターフェイスの操作](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Human Resources の設定](hr-setup-parameters.md)</br>
+- [組織の設定をコンフィギュレーションする](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [人事管理](hr-personnel-departments-jobs-positions.md)</br>
+- [報酬プランの設定](hr-compensation-overview.md)</br>
+- [福利厚生の管理](hr-benefits-management-overview.md)</br>
+- [休暇および欠勤の管理](hr-leave-and-absence-overview.md)</br>
+- [Teams での休暇要求の管理](hr-teams-leave-app.md)</br>
+- [従業員の育成](hr-develop-performance-management-overview.md)</br>
+- [コースの作成](hr-learning-courses.md)</br>
+- [従業員およびマネージャー セルフ サービスの設定](hr-employee-manager-self-service-overview.md)
+
+## <a name="additional-resources"></a>追加リソース
+
+### <a name="elearning-courses"></a>eLearning コース
+オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Human Resources](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) をご確認ください。
+
+### <a name="videos"></a>ビデオ
+
+[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
