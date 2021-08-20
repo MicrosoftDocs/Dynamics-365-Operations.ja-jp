@@ -3,7 +3,6 @@ title: ENDSWITH ER 関数
 description: このトピックでは、ENDSWITH 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 02/11/2021
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 1155bb5446f0370d9a5c4b035a767aaeb1d46ee1
-ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
+ms.openlocfilehash: d2fa1c0e61e964de9b7dff36fe6a8c2813802e1cc22341ce4ddd73a17751a9c7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2021
-ms.locfileid: "6048897"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771987"
 ---
 # <a name="endswith-er-function"></a>ENDSWITH ER 関数
 
