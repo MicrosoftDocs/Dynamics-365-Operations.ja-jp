@@ -2,7 +2,7 @@
 title: 電子申告 (ER) コンフィギュレーション ライフサイクルの管理
 description: このトピックでは、Dynamics 365 Finance の電子申告 (ER) コンフィギュレーションのライフ サイクルを管理する方法について説明します。
 author: NickSelin
-ms.date: 04/13/2021
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767782"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>電子申告 (ER) コンフィギュレーション ライフサイクルの管理
 
@@ -82,20 +82,34 @@ ER に関連する次の理由から、個別の Finance and Operations イン�
 
 ![ER コンフィギュレーション ライフサイクル。](./media/ger-configuration-lifecycle.png)
 
-## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" /> データ持続性の考慮事項
+## <a name="data-persistence-consideration"></a> データ持続性の考慮事項
 
 ER [コンフィギュレーション](general-electronic-reporting.md#Configuration) のさまざまな [バージョン](general-electronic-reporting.md#component-versioning) を Finance インスタンスに個別に [インポート](tasks/er-import-configuration-lifecycle-services.md) できます。 新しいバージョンの ER コンフィギュレーションをインポートするとき、システムはこのコンフィギュレーションのドラフト バージョンのコンテンツを制御します。
 
-   - インポートされたバージョンが、現在の Finance インスタンスにおけるこのコンフィギュレーションの最も新しいバージョンより低い場合、そのコンフィギュレーションのドラフト バージョンのコンテンツは変更されないままです。
-   - インポートされたバージョンが、現在の Finance インスタンスにおけるこのコンフィギュレーションのその他のバージョンより新しい場合、インポートされたバージョンのコンテンツはこのコンフィギュレーションのドラフト バージョンにコピーされ、最後に完了したバージョンの編集を続行できます。
+- インポートされたバージョンが、現在の Finance インスタンスにおけるこのコンフィギュレーションの最も新しいバージョンより低い場合、そのコンフィギュレーションのドラフト バージョンのコンテンツは変更されないままです。
+- インポートされたバージョンが、現在の Finance インスタンスにおけるこのコンフィギュレーションのその他のバージョンより新しい場合、インポートされたバージョンのコンテンツはこのコンフィギュレーションのドラフト バージョンにコピーされ、最後に完了したバージョンの編集を続行できます。
 
 このコンフィギュレーションが現在有効化されているコンフィギュレーション [プロバイダー](general-electronic-reporting.md#Provider) によって所有されている場合、このコンフィギュレーションのドラフト バージョンは、**コンフィギュレーション** ページの **バージョン** クイックタブに表示されます (**組織管理** > **電子申告** > **コンフィギュレーション**)。 関連する ER デザイナーを使用して、コンフィギュレーションのドラフト バージョンを選択し、そのコンテンツを [変更](er-quick-start2-customize-report.md#ConfigureDerivedFormat) することができます。 ER コンフィギュレーションのドラフト バージョンを編集した場合、そのコンテンツは現在の Finance インスタンスにおけるこのコンフィギュレーションの最も新しいバージョンのコンテンツとは一致しなくなります。 変更が失われるのを回避するために、システムは、このコンフィギュレーションのバージョンが現在の Finance インスタンスにおけるこのコンフィギュレーションの最も新しいバージョンよりも新しいため、インポートを続行できないというエラーを表示します。 これが発生した場合、たとえば形式コンフィギュレーション **X** を使用しているときは、**形式 'X' バージョンは完了していません** というエラーが表示されます。
 
 ドラフト バージョンで導入した変更を元に戻すには、**バージョン** クイックタブで Finance の ER コンフィギュレーションの最も新しい完了または共有バージョンを選択し、**このバージョンを取得** オプションを選択します。 選択したバージョンのコンテンツがドラフト バージョンにコピーされます。
 
+## <a name="applicability-consideration"></a>適用上の考慮事項
+
+ER 構成の新しいバージョンを設計するときに、他のソフトウェア コンポーネントへの[依存関係](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)を定義できます。 この手順は、ER リポジトリまたは外部 XML ファイルからのこの構成のバージョンのダウンロードを制御し、バージョンをさらに使用するための前提条件と見なされます。 ER 構成の新しいバージョンをインポートしようとすると、システムは構成された前提条件を使用して、バージョンをインポートできるかどうかを制御します。
+
+場合によっては、新しいバージョンの ER 構成をインポートするときに、システムが構成済みの前提条件を無視するように要求することがあります。 インポート中にシステムに前提条件を無視させるには、次の手順に従います。
+
+1. **組織管理** \> **電子申告** \> **構成** の順に移動します。
+2. **構成** ページ、アクション ウィンドウ、**構成** タブ、**詳細設定** グループで、**ユーザー パラメーター** を選択します。
+3. **インポート時に製品アップデートとバージョン前提条件のチェックをスキップする** オプションを **はい** に設定します。
+
+    > [!NOTE]
+    > このパラメーターはユーザーに固有のものまたは会社固有のものであることに注意してください。
+
 ## <a name="additional-resources"></a>追加リソース
 
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
+[他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
