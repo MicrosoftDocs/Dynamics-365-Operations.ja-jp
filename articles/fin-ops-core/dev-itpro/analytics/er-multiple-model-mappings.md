@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 595de6292b81ca78bf08a66f61850c3b5a537396
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 10363371713bd5a882b41900249e7061afc577ba6473fdb3356a822c8e48f8f3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743290"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>1 つのモデル ルートに対する複数の派生マッピングの管理
 

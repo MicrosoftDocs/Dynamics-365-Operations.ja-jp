@@ -2,7 +2,7 @@
 title: Cookie のコンプライアンス
 description: このトピックでは、Cookie のコンプライアンスおよび Microsoft Dynamics 365 Commerce に含まれる既定のポリシーに関する考慮事項について説明します。
 author: BrianShook
-ms.date: 07/01/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
-ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
+ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "6333072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747700"
 ---
 # <a name="cookie-compliance"></a>Cookie のコンプライアンス
 
@@ -54,6 +54,10 @@ Microsoft が Cookie のコンプライアンスに使用する基本原則の�
 | \_msdyn365___muid_                            | 環境で実験が有効になっている場合に使用され、実験のためのユーザー ID として使用されます。 | 1 年 |
 | \_msdyn365___exp_                             | 環境で実験が有効になっている場合に使用され、パフォーマンスの負荷分散を測定するために使用されます。         | 1 時間 |
 | d365mkt                                       | **サイト設定 \> 一般 \> 位置情報に基づく店舗の検出** の Commerce site builder で、ユーザーの IP アドレスを追跡して店舗の位置情報を提案する位置情報検出が有効になっている場合に使用します。      | 1 時間 |
+| \_msdyn365___tuid_                           | 環境に対して実験がアクティブ化された場合にのみ使用されます。ユーザー識別子として機能する GUID を生成します。 ユーザーのサインイン ステータスが変更された場合、値は変更されます。      | 1 年 |
+| \_msdyn365___aud_0                          | ターゲティングで使用されるセグメント値を格納し、サイト ユーザーが要求したページまたはフラグメントでターゲティングが構成されている場合にのみ使用されます。 Cookie は、セグメント値がサードパーティのセグメンテーション プロバイダーからのものである場合にのみ配置されます。      | 7 日間 |
+| \_msdyn365___aud_1                           | ターゲティングで使用されるセグメント値を格納し、サイト ユーザーが要求したページまたはフラグメントでターゲティングが構成されている場合にのみ使用されます。 Cookie は、セグメント値がサードパーティのセグメンテーション プロバイダーからのものである場合にのみ配置されます。      | 7 日間 |
+| \_msdyn365___aud_2                           | ターゲティングで使用されるセグメント値を格納し、サイト ユーザーが要求したページまたはフラグメントでターゲティングが構成されている場合にのみ使用されます。 Cookie は、セグメント値がサードパーティのセグメンテーション プロバイダーからのものである場合にのみ配置されます。      | 7 日間 |
 
 サイト ユーザーがサイト内のソーシャル メディア リンクを選択した場合、次の表の Cookie もユーザーのブラウザーで追跡されます。
 

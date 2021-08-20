@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c630449b8666593f69d9299ad1c0726369cc030a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f1ddf934c246e7c0e000a11e4e75259db3474263bfe2558dfd5782c49d0cf26
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834959"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746491"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>口座調整照合ルールの設定
 

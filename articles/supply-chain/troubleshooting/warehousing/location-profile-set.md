@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: shawan
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 356d2dd7853bf93250e14eb9bd28a8a145794584
-ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
+ms.openlocfilehash: 2a7345281301ee70a512dfadcd553cb4eb33003904d0dddf6967659b693f60d7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6026675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742611"
 ---
 # <a name="location-profile-disallows-negative-inventory-but-negative-on-hand-inventory-is-permitted"></a>場所プロファイルではマイナス在庫は許可されませんが、マイナス手持ち在庫は許可されます
 
