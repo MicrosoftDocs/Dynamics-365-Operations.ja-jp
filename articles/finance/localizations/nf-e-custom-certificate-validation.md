@@ -2,7 +2,7 @@
 title: NF-e カスタム証明書の検証
 description: このトピックでは、NF-e カスタム証明書の有効化と使用について説明します。
 author: gionoder
-ms.date: 10/06/2020
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,19 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 895513f51798a797ebf59f8a5be4f5cde006726d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8144e16b127bdbe954ef44f52c5ac71689a2036e6085e9a4ccc8bb17f91ae9b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755594"
 ---
 # <a name="nf-e-custom-certificate-validation"></a>NF-e カスタム証明書の検証
 
 [!include [banner](../includes/banner.md)]
 
-NF-e のカスタム証明書の検証機能を有効にすると、カスタム検証によって Web サービスとの接続が許可されます。 この接続は、NF-e を送信し、SEFAZ から認証を受信するために必要です。
+ブラジルのルート証明機関によって発行された証明書からの **サーバー認証目的** プロパティは、既定で無効になっており、手動で有効にする必要があります。 状況によっては、証明書の自動更新によって、このプロパティが有効でなくなる場合があります。 こうした状況では、TLS 接続が影響を受け、信頼されなくなる可能性があります。 ミナス ジェライス州 (MG) およびパラナ州 (PR) の実稼働環境で ブラジルの電子会計ドキュメント モデル55 (NF-e) を発行する機能も影響を受けます。
 
-認証 V5 の **サーバー認証目的** プロパティは、ブラジルのルート証明機関によって発行されます。 このプロパティは既定でオフになっているため、手動で有効にする必要があります。 状況によっては、証明書の自動更新によって、このプロパティが有効でなくなる場合があります。 こうした状況では、TLS 接続が影響を受け、信頼されなくなります。 ミナス ジェライス州 (MG) およびパラナ州 (PR) の実稼働環境で NF-e を発行する機能も影響を受けます。
-
-この更新により、証明書検証の代替ソリューションを使用できるようになります。つまり、セキュリティで保護された通信を確立することができます。
-
-
-
+**NF-e カスタム証明書の検証** の修正を有効にするには、 **機能管理** に移動します。 この機能により、V5 証明書検証および V10 証明書検証の代替ソリューションが可能になり、NF-e のセキュリティで保護された転送と SEFAZ からの認証の受取を要求する Web サービスとの信頼できる接続を許可します。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
