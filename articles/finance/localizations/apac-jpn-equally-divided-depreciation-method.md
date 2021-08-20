@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0591134845cd4a0c50fb88803ad8be26b089a57c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d49a7c191161a8f2fe8e6e10c65618b0f1b8a4ecd3ed1c0861331289d0b861cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779386"
 ---
 # <a name="equally-divided-depreciation-method-for-japan"></a>日本の均等償却方法
 

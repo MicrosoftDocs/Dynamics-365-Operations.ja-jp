@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 19853bdb3c469dbfea3a3a0165a9cb5f47e73122cc695de3535a58f6e65e7933
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759530"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>補充方法と数量変更
 

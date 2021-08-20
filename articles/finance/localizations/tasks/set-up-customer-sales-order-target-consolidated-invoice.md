@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 426149a62b4d9856140163b8334705aef1512e59
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bca275470d750a355b6a904c15c4d6b08da8969301844b2758cba361a3b641f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775860"
 ---
 # <a name="set-up-a-customer-and-sales-order-to-be-target-of-consolidated-invoice"></a>月次締め請求書の対象とする顧客および販売注文の設定
 

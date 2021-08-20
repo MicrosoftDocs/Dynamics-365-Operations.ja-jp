@@ -2,7 +2,7 @@
 title: 製品の分析コード値を見本として表示する設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce 本ブで製品分析コード値を見本として構成する方法 について説明します。
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638297"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764617"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>製品の分析コード値を見本として表示する設定
 
@@ -46,7 +46,7 @@ PDP に寸法が見本として表示されていれば、顧客は製品のバ�
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Commerce の見本として分析コード表示機能を有効にする
 
-コマース本部で分析コードを見本として表示する機能を有効化するには、**ワークスペース \> 機能管理** に移動し、**製品分析コード値の画像サポートを有効化する** 機能を有効化してください。 この機能フラグを有効にすると、Commerce 本部の適切なテーブルに、各分析コードごとに次の3つの新しいフィールドが追加されます: **Hexcode**、**URL** (画像用)、**RefinerGroup**。
+コマース本部で分析コードを見本として表示する機能を有効化するには、**ワークスペース \> 機能管理** に移動し、**メカニズムを有効にして寸法を見本として表す** 機能を有効化してください。 この機能フラグを有効にすると、Commerce 本部の適切なテーブルに、各分析コードごとに次の3つの新しいフィールドが追加されます: **Hexcode**、**URL** (画像用)、**RefinerGroup**。
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Commerce 本部での分析コード値の設定
 
@@ -125,9 +125,22 @@ PDP やリストページなど、分析コードの選択が必要な eコマ�
 
 さらに、検索結果モジュールの **検索結果に製品属性を含める** プロパティを有効にする必要があります。 サイトでカスタマイズされたカテゴリ ページを使用している場合は、そのページで使用されている検索結果モジュールを更新して、**検索結果に製品属性を含める** プロパティが有効になっている必要があります。 詳細については、[検索結果モジュール](../search-result-module.md) を参照してください。
 
+## <a name="inventory-awareness-on-swatches"></a>見本の在庫認識
+
+見本には、製品のバリエーションの色または寸法の在庫状況を表示するオプションの機能があります。 たとえば、製品が複数のサイズで販売される一方で、一部のサイズは在庫切れです。 この場合、在庫切れの商品の見本は、在庫がないことを示すために異なる方法でレンダリングされます。 この機能は、製品の可用性を判断するために必要な顧客のクリック数を減らすのに役立ちます。
+
+見本在庫の可用性機能は、PDP と、見本が表示される検索ページまたはカテゴリ リスト ページの両方で使用するように構成できます。 これをアクティブにするには、[メディア ギャラリー モジュール](../media-gallery-module.md)で **寸法選択時にメディアを更新** プロパティを **True** に設定する必要があります。 この設定により、寸法が選択されたときにメディア ギャラリーの画像を更新できます。 
+
+> [!IMPORTANT]
+> 見本の在庫状況機能は、Commerce バージョン 10.0.21 リリースから利用できます。 Commerce モジュール ライブラリ パッケージのバージョン 9.31 をインストールする必要があります。
+
+次の図は、PDP のサイズ見本の在庫認識の例を示しています。
+
+![PDP のサイズ見本に対する在庫認識の例](../dev-itpro/media/swatch_inventory.png)
+
 ## <a name="display-swatches-in-pos-and-other-channels"></a>POS および他のチャンネルの表示
 
-Commerce では現在、販売時点管理 (POS) やその他のチャネルでの見本の表示に対応できるような、既成の実装機能はありません。 しかし、見本の表示機能を拡張して、チャンネル API での見本の表示に必要な 16 進コードや画像 URL を返すように実装することはできます。
+Commerce では現在、販売時点管理 (POS) やその他のチャネルでの見本の表示に対応できるような、既成の実装機能はありません。 しかし、チャンネル API での見本の表示に必要な 16 進コードや画像 URL を返すため、見本の表示機能を拡張機能として実装できます。
 
 ## <a name="additional-resources"></a>追加リソース
 
