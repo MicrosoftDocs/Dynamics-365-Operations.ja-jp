@@ -254,9 +254,9 @@
                       href: dev-itpro/define-retail-channel-communications-cdx.md
                     - name: Commerce Data Exchange のトラブルシューティング
                       href: dev-itpro/CDX-Troubleshooting.md
-                - name: Modern POS のアーキテクチャ
+                - name: Modern POS アーキテクチャ
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: オンライン ストア チャネルの公開
+                - name: オンライン ストア カタログの公開
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI のコンテンツ
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -1268,6 +1268,26 @@
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
                   href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce に ER コンフィギュレーションをダウンロードする
+                  items:
+                    - name: RCS からコンフィギュレーションをダウンロードする
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: コンフィギュレーションを RCS からインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                - name: グローバル リポジトリ (GR)
+                  items:
+                    - name: コンフィギュレーションを GR からインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER コンフィギュレーションの更新バージョンのインポート
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
+                      href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: GR へコンフィギュレーションをアップロードする
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                    - name: GR でコンフィギュレーションを共有する
+                      href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                    - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
+                      href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: オーストリア
               items:
                 - name: オーストリア向け会計登録サービス統合のサンプル
@@ -1315,6 +1335,12 @@
                 - name: キャッシュ レジスター機能
                   href: localizations/emea-fra-cash-registers.md
                 - name: キャッシュ レジスターの配置ガイドライン
+                  href: localizations/emea-fra-fi-deployment.md
+                - name: 会計アーカイブおよびデータの整合性の検証
+                  href: localizations/emea-fra-fiscal-archive.md
+                - name: フランス向けレガシ機能からの移行
+                  href: localizations/emea-fra-fi-migration.md
+                - name: キャッシュ レジスターの配置ガイドライン (レガシ)
                   href: localizations/emea-fra-deployment.md
             - name: ドイツ
               items:
@@ -1350,6 +1376,8 @@
               items:
                 - name: ロシア向け Commerce ローカライズ
                   href: localizations/rus-commerce-localization.md
+                - name: ロシア向け Commerce POS の簡易顧客住所形式
+                  href: localizations/rus-simplified-address.md
                 - name: ロシア向け Commerce ローカライズの設定
                   href: localizations/rus-commerce-setup.md
                 - name: ロシア向け Commerce での前払
@@ -1860,30 +1888,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
                     - name: コンフィギュレーション (LBD) のインポート
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: RCS のグローバリゼーション機能
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                    - name: Commerce に ER コンフィギュレーションをダウンロードする
-                      items:
-                        - name: RCS からコンフィギュレーションをダウンロードする
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-                        - name: コンフィギュレーションを RCS からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: グローバル リポジトリ (GR)
-                      items:
-                        - name: コンフィギュレーションを GR からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: ER コンフィギュレーションの更新バージョンのインポート
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: GR へコンフィギュレーションをアップロードする
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                        - name: GR でコンフィギュレーションを共有する
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: クイック スタート ガイド
               items:
                 - name: カスタム電子ドキュメントを生成するための電子申告形式の調整
@@ -2112,7 +2116,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Excel でエンティティ データを開き、Excel アドインを使用して更新する
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: '[Excel で開く] エクスペリエンスの作成'
+            - name: '[Excel で開く] エクスペリエンスに関するよくあるご質問'
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
             - name: '[Excel で明細行を開く] メニューへのテンプレートの追加'
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
@@ -2360,6 +2364,8 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Azure Key Vault を設定してキーをセキュアに管理する
                       href: e-commerce-extensibility/set-up-key-vault.md
+                    - name: 要求パイプライン プラグイン フックを作成する
+                      href: e-commerce-extensibility/request-pipeline-hook.md
                 - name: データ アクションの開発
                   items:
                     - name: データ アクションの概要
@@ -2422,6 +2428,12 @@
                   items:
                     - name: コネクタのコンフィギュレーションと有効化
                       href: e-commerce-extensibility/connectors.md
+                - name: パフォーマンス
+                  items:
+                    - name: ページ キャッシュの構成
+                      href: e-commerce-extensibility/page-caching.md
+                    - name: データ アクション インスタンス キャッシュ
+                      href: e-commerce-extensibility/instance-cache.md
                 - name: テレメトリと分析
                   items:
                     - name: テレメトリ ロガー

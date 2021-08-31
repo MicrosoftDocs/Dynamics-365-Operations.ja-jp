@@ -1170,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Office で財務仕訳帳テンプレートを開く
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: 不均衡による仕訳帳転記の失敗
+                  href: general-ledger/posting-fail-imbalance.md
                 - name: なぜこのトランザクションを取り消せないのですか?
                   href: general-ledger/cant-reverse-transctns.md
         - name: 財務諸表
@@ -1482,6 +1484,26 @@
                       href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
+                    - name: Finance に ER コンフィギュレーションをダウンロードする
+                      items:
+                        - name: RCS からコンフィギュレーションをダウンロードする
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: コンフィギュレーションを RCS からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: グローバル リポジトリ (GR)
+                      items:
+                        - name: コンフィギュレーションを GR からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: ER コンフィギュレーションの更新バージョンのインポート
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: GR へコンフィギュレーションをアップロードする
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: GR でコンフィギュレーションを共有する
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
                 - name: 電子請求
                   items:
                     - name: 電子請求の概要
@@ -1520,40 +1542,56 @@
                   items:
                     - name: 税の計算の概要
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: 税の計算の使用を開始する
-                      href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                    - name: 消費税の適用と消費税グループの決定ロジック
-                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-                    - name: 移動オーダーに対する税金機能のサポート
-                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-                    - name: 価格に税金が含まれる場合の価格上の税金の計算が有効
-                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
-                    - name: 税コンフィギュレーションへのデータ フィールドの追加
-                      href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: 拡張機能を使用した税統合へのデータ フィールドの追加
-                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: マスター データ検索用の環境の設定
-                      href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-                    - name: 複数の VAT 登録番号
-                      href: localizations/emea-multiple-vat-registration-numbers.md
-                    - name: 複数の VAT 登録に関するレポート
+                    - name: 設定
                       items:
+                        - name: 税の計算の使用を開始する
+                          href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: マスター データ検索用の環境の設定
+                          href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: 決定
+                      items:
+                        - name: 消費税の適用と消費税グループの決定ロジック
+                          href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                    - name: 計算
+                      items:
+                        - name: 価格に税金が含まれる場合の価格上の税金の計算が有効
+                          href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+                        - name: 税計算の丸めルール
+                          href: localizations/tax-calculation-rounding-rules.md
+                    - name: 複数の VAT 登録
+                      items:
+                        - name: 複数の VAT 登録番号
+                          href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: 複数の VAT 登録に関するレポート
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
                         - name: フランスのレポート
                           items:
                             - name: VAT 申告
-                          href: localizations/emea-fra-VAT-declaration-preview-France.md
+                              href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: オランダのレポート
                           items:
                             - name: VAT 申告
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU 販売リスト
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: スイスのレポート
+                          items:
+                            - name: VAT 申告
+                              href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: イギリスのレポート
                           items:
                             - name: VAT の MTD 統合の準備
                               href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: 移動オーダーに対する税計算の有効化
+                      items:
+                        - name: 移動オーダーに対する税金機能のサポート
+                          href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: 拡張機能
+                      items:
+                        - name: 税コンフィギュレーションへのデータ フィールドの追加
+                          href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: 拡張機能を使用した税統合へのデータ フィールドの追加
+                          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
             - name: 規制の更新
               href: localizations/regulatory-updates.md
             - name: オーストラリア
@@ -1710,6 +1748,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: 会計施設の NF-e パラメーターの設定
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2020.005 – 電子会計ドキュメント内のレイアウトと検証の更新 (NF-e)
+                      href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – NF-e 向け中継販売デジタル プラットフォーム
                       href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: NT2019.001 - NF-e/NFC-e の税便益および非課税ルール
@@ -2334,8 +2374,6 @@
                               href: localizations/apac-ind-gst-reference-groups.md
                         - name: 税トランザクション
                           items:
-                            - name: 商品およびサービスの支払に関する商品及びサービス税 TDS
-                              href: localizations/ind-gst-tds-payment-goods-services.md
                             - name: 購買トランザクション
                               items:
                                 - name: 未登録仕入先からの購入
@@ -2370,7 +2408,11 @@
                                   href: localizations/apac-ind-GST-purchase-return-order.md
                                 - name: 逆請求がある仕入先の前払
                                   href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
-                            - name: 販売トランザクション
+                                - name: 商品およびサービスの支払に関する商品及びサービス税 TDS
+                                  href: localizations/ind-gst-tds-payment-goods-services.md
+                                - name: 商品およびサービスの支払に関する商品及びサービス税 TCS
+                                  href: localizations/ind-gst-tcs-payment.md
+                            - name: 販売取引
                               items:
                                 - name: 消費者への課税対象商品の販売
                                   href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
@@ -3132,14 +3174,16 @@
                           href: localizations/rus-post-budget-fixed-asset-acquisition.md
                         - name: 固定資産の移動
                           href: localizations/rus-fixed-asset-transfer.md
+                        - name: 固定資産の統一された印刷フォーム
+                          href: localizations/printing-forms-fixed-assets.md
+                        - name: 照会およびレポート
+                          href: localizations/rus-fa-inquiries-reports.md
                     - name: 価値のない固定資産と作業着
                       items:
                         - name: 価値のない固定資産 (NVFA) (ロシア)
                           href: localizations/rus-not-valuable-assets.md
                         - name: 作業着/特殊衣類の会計 (ロシア)
                           href: localizations/rus-working-clothes-instruments-accounting.md
-                        - name: 固定資産の統一された印刷フォーム
-                          href: localizations/printing-forms-fixed-assets.md
                 - name: 買掛金勘定と売掛金勘定
                   items:
                     - name: 訂正票の修正 (ロシア)
@@ -3330,6 +3374,8 @@
                   href: localizations/emea-che-esr-customer-payments-import.md
                 - name: スイスの QR コード決済
                   href: localizations/emea-che-swiss-qr-bills.md
+                - name: VAT 申告
+                  href: localizations/emea-che-VAT-declaration-Switzerland.md
             - name: タイ
               items:
                 - name: タイの概要
@@ -4101,30 +4147,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
                     - name: コンフィギュレーション (LBD) のインポート
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: RCS のグローバリゼーション機能
-                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
-                    - name: Finance に ER コンフィギュレーションをダウンロードする
-                      items:
-                        - name: RCS からコンフィギュレーションをダウンロードする
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                        - name: コンフィギュレーションを RCS からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-                    - name: グローバル リポジトリ (GR)
-                      items:
-                        - name: コンフィギュレーションを GR からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: ER コンフィギュレーションの更新バージョンのインポート
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: GR へコンフィギュレーションをアップロードする
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-                        - name: GR でコンフィギュレーションを共有する
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
-                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: クイック スタート ガイド
               items:
                 - name: カスタム電子ドキュメントを生成するための電子申告形式の調整
@@ -4355,7 +4377,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Excel でエンティティ データを開き、Excel アドインを使用して更新する
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-            - name: '[Excel で開く] エクスペリエンスの作成'
+            - name: '[Excel で開く] エクスペリエンスに関するよくあるご質問'
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
             - name: '[Excel で明細行を開く] メニューへのテンプレートの追加'
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json

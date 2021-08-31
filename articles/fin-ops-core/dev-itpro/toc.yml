@@ -332,8 +332,6 @@
                       href: database/api/v1/reference-create-export.md
                     - name: 取得操作活動の状態
                       href: database/api/v1/reference-get-status.md
-                    - name: 環境の開始と停止
-                      href: database/api/v1/reference-start-stop-environments.md
         - name: デモ データ
           items:
             - name: デモ データの概要
@@ -368,8 +366,10 @@
                       href: deployment/plannedmaintenance-selfservice.md
                     - name: 事業継続とディザスター リカバリー
                       href: sysadmin/business-continuity-disaster-recovery.md
-                - name: Azure Resource Manager オンボードの完了
+                - name: Azure Resource Manager オンボード プロセスの完了
                   href: deployment/arm-onboarding.md
+                - name: 米国政府の LCS プロジェクトに対する Azure Resource Manager オンボード プロセスを完了する
+                  href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute および Finance and Operations
                   href: deployment/expressroute.md
                 - name: Finance and Operations アーキテクチャ
@@ -944,6 +944,16 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: パートナー向け LCS
                   href: lifecycle-services/getting-started-lcs.md
+                - name: RESTful API
+                  items:
+                    - name: 環境の開始と停止
+                      href: lifecycle-services/api/v1/reference-start-stop-environments.md
+                    - name: 環境メタデータのフェッチ
+                      href: lifecycle-services/api/v1/reference-environment-metadata.md
+                    - name: 環境履歴のフェッチ
+                      href: lifecycle-services/api/v1/reference-environment-history.md
+                    - name: 環境RSAT 証明書 ZIP のフェッチ
+                      href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Lifecycle Services の新機能および変更された機能
                   href: lifecycle-services/whats-new-lcs.md
             - name: Lifecycle Services ユーザー ガイド
@@ -1138,22 +1148,24 @@
                       href: data-entities/dual-write/migrate-prospect-to-cash.md
                     - name: トラブルシューティング
                       items:
-                        - name: Finance and Operations アプリと Dataverse での二重書き込みの構成の確認
-                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: 一般的なトラブルシューティング
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                         - name: 初期セットアップ中の問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                         - name: 初期同期中の問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: Finance and Operations アプリの二重書き込みの問題のトラブルシューティング
-                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: ライブ同期の問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Finance and Operations アプリの二重書き込みの問題のトラブルシューティング
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: 当事者およびグローバル アドレス帳の問題に関するトラブルシューティング
+                          href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: ソリューションの認識に関する問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Finance and Operations アプリのアップグレードの問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: 一般的なトラブルシューティング
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Finance and Operations アプリと Dataverse での二重書き込みの構成の確認
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                 - name: 二重書き込みに関してよく寄せられる質問
                   href: data-entities/dual-write/dual-write-faq.md
             - name: 仮想エンティティ

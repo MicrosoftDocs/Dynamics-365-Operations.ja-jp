@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 8 月 9 日
+          href: hr-whats-new-2021-08-09.md
         - name: 2021 年 7 月 26 日
           href: hr-whats-new-2021-07-26.md
         - name: 2021 年 7 月 12 日
@@ -127,7 +129,7 @@
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Excel でのエンティティ データの更新
                   href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: '[Excel で開く] エクスペリエンスの作成'
+                - name: '[Excel で開く] エクスペリエンスに関するよくあるご質問'
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Office 統合のトラブルシューティング
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json

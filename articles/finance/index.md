@@ -2,7 +2,7 @@
 title: Finance ホーム ページ
 description: このトピックでは、Microsoft Dynamics 365 Finance の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: roschlom
-ms.date: 06/20/2018
+ms.date: 08/18/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85b93f43a599e2da17d873dbe5609347d53af03cbfcaaccde7963b2f1ee97f08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad6c671dd48ff482caf1b24a3842d8db0064dc18
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779425"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394566"
 ---
 # <a name="finance-home-page"></a>Finance ホーム ページ
 
@@ -35,6 +35,7 @@ ms.locfileid: "6779425"
     :::column:::
         - [買掛金勘定](accounts-payable/accounts-payable.md) 
         - [売掛金勘定](accounts-receivable/accounts-receivable.md)
+        - [資産リース](asset-leasing/asset-leasing-homepage.md)
         - [予算作成](budgeting/budgeting-overview.md) 
         - [現金および銀行管理](cash-bank-management/cash-bank-management.md)
         - [原価会計](cost-accounting/cost-accounting-home-page.md)
@@ -43,8 +44,9 @@ ms.locfileid: "6779425"
         - [経費管理](/dynamics365/project-operations/prod-exp/expense-management)
         - [財務諸表](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [固定資産](fixed-assets/fixed-assets.md)
+        - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [一般会計と財務諸表](general-ledger/general-ledger.md) 
-        - [プロジェクト管理および会計](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
+        - [プロジェクト管理と会計](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [公的機関](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -57,9 +59,6 @@ ms.locfileid: "6779425"
 - [Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
 - [Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials) 
 - [Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
-
-### <a name="task-guides"></a>タスク ガイド
-Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
 
 ### <a name="videos"></a>ビデオ
 

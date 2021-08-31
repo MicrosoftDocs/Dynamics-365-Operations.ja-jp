@@ -222,6 +222,26 @@
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER コンフィギュレーションを Supply Chain Management にダウンロードする
+                      items:
+                        - name: RCS からコンフィギュレーションをダウンロードする
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: コンフィギュレーションを RCS からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: グローバル リポジトリ (GR)
+                      items:
+                        - name: コンフィギュレーションを GR からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ER コンフィギュレーションの更新バージョンのインポート
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: GR へコンフィギュレーションをアップロードする
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: GR でコンフィギュレーションを共有する
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 電子請求
                   items:
                     - name: 電子請求の概要
@@ -1237,30 +1257,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: コンフィギュレーション (LBD) のインポート
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: RCS のグローバリゼーション機能
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: ER コンフィギュレーションを Supply Chain Management にダウンロードする
-                      items:
-                        - name: RCS からコンフィギュレーションをダウンロードする
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: コンフィギュレーションを RCS からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: グローバル リポジトリ (GR)
-                      items:
-                        - name: コンフィギュレーションを GR からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: ER コンフィギュレーションの更新バージョンのインポート
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: GR へコンフィギュレーションをアップロードする
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: GR でコンフィギュレーションを共有する
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: クイック スタート ガイド
               items:
                 - name: カスタム電子ドキュメントを生成するための電子申告形式の調整
@@ -1319,7 +1315,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
                     - name: データ ソースのデバッグ
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: バーコードを使用してバーコード イメージを生成する
+                    - name: バーコードを使用してバー コード イメージを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: モデル マッピングのコンフィギュレーション
                   items:
@@ -1573,8 +1569,20 @@
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
             - name: 在庫トランザクションのアーカイブ
               href: inventory/archive-inventory-transactions.md
-            - name: 在庫の視覚化アドイン
-              href: inventory/inventory-visibility.md
+            - name: 在庫視覚化アドイン
+              items:
+                - name: 在庫視覚化アドインの概要
+                  href: inventory/inventory-visibility.md
+                - name: 在庫視覚化の設定
+                  href: inventory/inventory-visibility-setup.md
+                - name: 在庫の視覚化のコンフィギュレーション
+                  href: inventory/inventory-visibility-configuration.md
+                - name: 在庫可視性の確保
+                  href: inventory/inventory-visibility-reservations.md
+                - name: 在庫可視性 Power App
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: 在庫可視性パブリック API
+                  href: inventory/inventory-visibility-api.md
         - name: IoT インテリジェンス
           items:
             - name: IoT インテリジェンスのホーム ページ
@@ -1607,6 +1615,8 @@
                   href: master-planning/planning-optimization/release-process.md
                 - name: 計画最適化適合分析
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: 組み込みのマスター プランと計画の最適化の違い
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 計画の最適化で使用されないパラメーター
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: 計画にフィルターを適用
@@ -1795,7 +1805,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Excel でエンティティ データを開き、Excel アドインを使用して更新する
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: '[Excel で開く] エクスペリエンスの作成'
+            - name: '[Excel で開く] エクスペリエンスに関するよくあるご質問'
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: '[Excel で明細行を開く] メニューへのテンプレートの追加'
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1975,8 +1985,6 @@
                   href: procurement/request-quotations.md
                 - name: 見積依頼の作成
                   href: procurement/tasks/create-request-quotation.md
-                - name: RFQ の封緘入札
-                  href: procurement/sealed-bidding.md
                 - name: RFQ を使用する要求の作成
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: RFQ のスコア方法の作成
@@ -2481,7 +2489,7 @@
                       href: production-control/job-scheduling.md
                 - name: かんばん作業の運営
                   items:
-                    - name: バーコード スキャナーのかんばん転送ボードのサポート
+                    - name: バー コード スキャナーのかんばん転送ボードのサポート
                       href: production-control/kanban-transfer-board-support-barcode-scanner.md
                     - name: 生産フィードバック
                       href: production-control/production-feedback.md
@@ -3301,6 +3309,8 @@
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: 倉庫アプリのインストールと接続
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: モバイル バー コードのサポート
+                      href: warehousing/mobile-barcode-support.md
                     - name: Warehouse Management モバイル アプリでカメラを使用してバーコードをスキャンする
                       href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Warehouse Management モバイル アプリの接続に関する問題のトラブルシューティング
@@ -3309,8 +3319,10 @@
                   items:
                     - name: Warehouse Management モバイル アプリのフィールドを構成する
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: 倉庫作業用のモバイル デバイスの設定
+                    - name: 倉庫作業用のモバイル デバイスを設定する
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Warehouse Management モバイル アプリのステップのタイトルと手順をカスタマイズする
+                      href: warehousing/mobile-app-titles-instructions.md
                     - name: Warehouse Management モバイル アプリで受信するライセンス プレート
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
@@ -3331,7 +3343,7 @@
                   href: warehousing/mobile-device-user-settings.md
                 - name: 倉庫アプリのイベント処理
                   href: warehousing/warehouse-app-events.md
-                - name: 倉庫アプリのカスタマイズ
+                - name: 倉庫モバイル プロセスの拡張
                   items:
                     - name: プロセス ガイドのフレームワーク
                       href: warehousing/process-guide-framework.md
@@ -3403,8 +3415,8 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: ライセンス プレート ラベルのドキュメント ルーティング レイアウト
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: モバイル バーコードのサポート
-                      href: warehousing/mobile-barcode-support.md
+                    - name: GS1 バー コードと QR コード
+                      href: warehousing/gs1-barcodes.md
                     - name: 移動オーダー用の倉庫の設定
                       href: warehousing/transfer-orders-warehouse.md
                     - name: 倉庫コンフィギュレーションのトラブルシューティング
