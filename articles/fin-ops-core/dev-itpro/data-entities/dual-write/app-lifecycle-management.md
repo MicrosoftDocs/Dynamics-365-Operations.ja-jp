@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a768a2614572d36c7c63cb098990b3832fef38fb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4db27afcd7ca9aa6caaba1821d2da98c75873a21737a06ae3017abbc4ac786a9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350977"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727449"
 ---
 # <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
 

@@ -2,24 +2,20 @@
 title: 拡張機能を使用して、テーブルのプロパティを変更する
 description: このトピックでは、拡張機能を使用してテーブルのプロパティを変更する方法について説明します。
 author: ivanv-microsoft
-ms.date: 07/10/2017
+ms.date: 08/20/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 268724
-ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 17deb284177541fd0c9abb1955e1fdde07c03e62
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ffafbd3b157eea37f326dc6bded1f33a4e06faec
+ms.sourcegitcommit: 9c007b271ba5ad5b9938fdd05776b73f6b7c9802
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344852"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "7411637"
 ---
 # <a name="modify-table-properties-through-extension"></a>拡張機能を使用して、テーブルのプロパティを変更する
 
@@ -31,15 +27,19 @@ ms.locfileid: "6344852"
 
 プロパティ シートで、次のプロパティを変更することができるようになりました。
 
++ 国地域コード
 + 作成者
 + 作成日時
-+ 修正者
++ フォーム参照
++ 変更者
 + 変更日時
-+ 国地域コード
++ プレビュー パート参照
++ タグ
++ タイトル フィールド 1
++ タイトル フィールド 2
 
 **作成者**、**作成日時**、**更新者**、または **変更日時** プロパティを **はい** に設定することにより、対応するフィールドがテーブルに追加されることを保証します。 レコードが作成または更新されると、ユーザーに関する、対応する追跡情報がテーブルに格納されます。 ベース テーブルで **はい** に設定されている場合、これらのプロパティを **いいえ** に設定することはできません。
 
 国または地域コードを一覧に追加することにより、システムが指定された国または地域のコンテキストで実行されているときに、対応するテーブルが適用されることを保証できます。
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

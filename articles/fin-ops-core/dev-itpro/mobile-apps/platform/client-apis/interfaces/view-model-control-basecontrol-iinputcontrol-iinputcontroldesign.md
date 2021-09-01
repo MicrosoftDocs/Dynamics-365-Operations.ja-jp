@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 3c42bceb75d483734e18fa2d22d0ab4b2b1f824a
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 64e184ea8acf13d4f95a2407f5286bbe891e85c224cea05e0b2c9ae3309c66cc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729007"
 ---
 # <a name="inputcontroldesign-type"></a>InputControlDesign タイプ
 

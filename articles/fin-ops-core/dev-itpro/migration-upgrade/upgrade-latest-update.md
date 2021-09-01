@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 752a984f111408296a2f9be98d3852f4e7bafdae
-ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
+ms.openlocfilehash: bf24f67495d563ad70b4c56dcfc664e8ed3250b44b1d9511d0257724682abbe2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "6224518"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751465"
 ---
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>Finance and Operations で最新の更新プログラムに移行するためのプロセス
 

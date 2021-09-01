@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 3f801176c277a815cabfea28816e0640397f5fda
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0ae895038205b7c049c5e0bcbcd3386b2553f1ecc244f94df9e8db83fef3e52f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738540"
 ---
 # <a name="database-movement-toolkit"></a>データベース移動ツールキット
 

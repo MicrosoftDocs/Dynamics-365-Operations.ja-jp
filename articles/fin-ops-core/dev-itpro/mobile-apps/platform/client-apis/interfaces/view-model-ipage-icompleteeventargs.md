@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 0f1860545fae84d0ccdec12d06cbbbb4d98ed21e
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 246bed6329684412a4b657aded745830bcbbb496eeaf45920117e0c9541719d2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766357"
 ---
 # <a name="completeeventargs-type"></a>CompleteEventArgs タイプ
 

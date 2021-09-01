@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: abed458980fe19d68e0cf65323c3ba1ff5bd5104
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 3aeda6ff8c6567e715e599bb4f9adc04f442b4d2f1e0c78f56985382cd1db147
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224048"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738534"
 ---
 # <a name="extending-decimal-point-precision-for-selected-data-types"></a>選択したデータ型の小数点以下の精度の拡張
 

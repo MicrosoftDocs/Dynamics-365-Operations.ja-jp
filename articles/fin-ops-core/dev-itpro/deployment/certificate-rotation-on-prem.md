@@ -2,7 +2,7 @@
 title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
-ms.date: 06/22/2021
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 6362ec5c646e6afa911d2400617f7dcfbd60a7f0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d8428e1103f17e9462906fe36e6d9947e8cb3ef2e377824d9120715984c03095
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767182"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -60,7 +60,7 @@ ms.locfileid: "6351710"
     > [!NOTE]
     > AD CS スクリプトは、ドメイン コントローラー、またはリモート サーバー管理ツールがインストールされている Windows Server コンピューターで実行する必要があります。
     > AD CS 機能は、インフラストラクチャ スクリプトのリリースが 2.7.0 以降である場合にのみ使用できます。 
-
+    >
     > 自己署名証明書は、実稼働環境では使用しないでください。 公開されている信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。
 
     ```powershell
@@ -119,7 +119,7 @@ ms.locfileid: "6351710"
 3. 次のコマンドを実行して、構成ファイルを C:\\Temp\\ClusterConfig.json に保存します。 （C:\\Temp のパスが存在することを確認してください）
 
     ```powershell
-    Get-ServiceFabricClusterConfiguration >C:\Temp\ClusterConfig.json
+    Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
     ``` 
 4. 編集するために **Clusterconfig.json** ファイルを開き、次のセクションを検索します。 セカンダリ サムプリントが定義されている場合は、続行する前に、[古い Service Fabric 証明書をクリーンアップ](#cleanupoldsfcerts) に移動します。
 

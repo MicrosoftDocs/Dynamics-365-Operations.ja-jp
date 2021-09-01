@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a2816e563c06d36a3103ba3eb6730831202bf4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8dbb009828ec8342fbe15d014e5758caf1dacde8759596ec7f1b44cfd40eef7b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771910"
 ---
 # <a name="plan-case-category-security-case-processes-and-case-categories"></a>ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 981ced5a2c5a06852578ec8eb3ad1bc1a2448101
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 651ad808e1f6734f87501df1fd70a89d2c9e8760dd595b4a7b9ec8ec2310ca86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761340"
 ---
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 

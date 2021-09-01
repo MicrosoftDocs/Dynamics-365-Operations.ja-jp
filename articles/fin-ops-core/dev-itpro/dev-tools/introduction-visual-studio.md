@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9401748309fe92b3f5de431ee1f881f81ee96f88
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c58fce2487e23e8649084e1db09f05823586b43c42ee579c5569ae19916fd6ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754330"
 ---
 # <a name="development-tools-tutorial"></a>開発ツールのチュートリアル
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0289eb28a1c4062c426f6a9892d9680f31bbf275
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 3e72faf444a1769ce7840878fa2398883cf65c084d2e4e5aaf5add3132f29af0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734007"
 ---
 # <a name="strong-customer-authentication-sca-using-the-adyen-connector"></a>Adyen コネクタを使用した強力な顧客認証 (Strong Customer Authentication: SCA)
 
@@ -47,7 +47,7 @@ SCA のサポートは、直ぐに使える [Adyen 向け Dynamics 365 Payment C
 
 ## <a name="setup"></a>セットアップ
 
-設定の詳細は、支払コネクタによって異なります。 標準の Adyen コネクタに関連する設定の詳細については、Adyen コネクタ トピックの [E コマース セクション](./dev-itpro/adyen-connector.md?tabs=8-1-3#e-commerce) を参照してください。 
+設定の詳細は、支払コネクタによって異なります。 標準の Adyen コネクタに関連する設定の詳細については、[Adyen コネクタの追加情報の構成](./dev-itpro/adyen-connector-setup.md#configure-additional-information-for-the-connector) を参照してください。 
 
 ## <a name="functional-experience"></a>機能のエクスペリエンス
 

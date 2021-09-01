@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0aba0f05ac8d83e8eaefed4f257d7ec3f4e0a396
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f1bd5fe52581f8e13c7739ed1271c949028b02c01c81cd468d1e8e06af7ae3fb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774395"
 ---
 # <a name="code-migration---context-menu-code"></a>コードの移行 - コンテキスト メニュー コード
 

@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b98f09b16ac27ba19f8cbb0910ba1c347c541ba6
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 6447ae98fcbafdf6a9bdd2f11bd152b94e85126cf3e39a50a72772bae2fc1d1b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748356"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 

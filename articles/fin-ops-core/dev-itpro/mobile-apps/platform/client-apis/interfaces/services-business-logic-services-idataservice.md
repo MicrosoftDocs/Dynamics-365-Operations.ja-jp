@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 98a09ecf9df9cde8e16d1d772775f6e4a0f7d989
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 4254ed9fa59d7f07e191b880226caf64d2f6a2847c2e14c3e5bb12c292e3e3a9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714571"
 ---
 # <a name="dataservice-type"></a>DataService タイプ
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a403cf72cc84adcd33fea92fc602f77f3c7ea2e
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 593e72a0711b02fae6147fe46c606b0184f15211cc068b549142202fe6b33bab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754306"
 ---
 # <a name="process-parameters"></a>プロセス パラメーター
 

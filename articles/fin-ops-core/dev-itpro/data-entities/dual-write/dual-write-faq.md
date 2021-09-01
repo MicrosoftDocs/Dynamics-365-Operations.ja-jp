@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37813f96f5eca4a77d140b800e73c5d91c6c0094
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: d313597a1e421a635990f0413a32237ffd25156341bca240ec400687b77f884b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193268"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726225"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 

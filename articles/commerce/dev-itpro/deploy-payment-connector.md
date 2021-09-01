@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 50e8aba432fe1273589d233b6b16e9202e4fd0c2
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 7a57903e983fb6ee8742c604b9eaf42ec1b05e56a8e3c711d21da743236347bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712754"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 

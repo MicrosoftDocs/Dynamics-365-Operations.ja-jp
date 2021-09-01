@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1efa69f3f44fe6d0fae0ce49ad20fb1a2f816057
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 82ca2e91812cd21a28eb090166cee3aee86db01ddbe4b89d7e9a43e902bba4bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749833"
 ---
 # <a name="wallet-payment-support"></a>Wallet 支払サポート
 
@@ -79,7 +79,7 @@ Commerce 本店でウォレット支払サポートを有効にするには、**
 ![マップ済みのプロセッサ支払方法。](media/Payments/Mapped.png)
 
 > [!NOTE]
-> **プロセッサの支払方法のマッピング** 機能により、チャネル データベースに同期する必要がある新しいテーブルを追加します。 このデータを Commerce スケジューラに追加するには、Commerceスケジューラを初期化する必要があります。 詳細については、[commerce スケジューラのコンフィギュレーションの更新](./dev-itpro/cdx-best-practices.md#updating-configurations) に関連するドキュメントを参照してください。 
+> **プロセッサの支払方法のマッピング** 機能により、チャネル データベースに同期する必要がある新しいテーブルを追加します。 このデータを Commerce スケジューラに追加するには、Commerceスケジューラを初期化する必要があります。 詳細については、[commerce スケジューラのコンフィギュレーションの更新](./dev-itpro/cdx-best-practices.md#update-configurations) に関連するドキュメントを参照してください。 
 
 ### <a name="when-not-to-use-processor-payment-method-mapping"></a>プロセッサ支払方法のマッピングを使用しない場合
 

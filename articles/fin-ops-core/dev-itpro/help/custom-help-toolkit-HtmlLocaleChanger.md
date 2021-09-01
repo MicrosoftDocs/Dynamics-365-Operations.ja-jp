@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: f01e86e1c3713e4b3f737bbf2e3737de6ec176d6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 95920f72839bc77778644170dfc2e5270c9993fdacade45630755fd41aea8b8e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752752"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754989"
 ---
 # <a name="custom-help-toolkit-the-htmllocalechanger-tool"></a>カスタム ヘルプ ツールキット: HtmlLocaleChanger ツール
 

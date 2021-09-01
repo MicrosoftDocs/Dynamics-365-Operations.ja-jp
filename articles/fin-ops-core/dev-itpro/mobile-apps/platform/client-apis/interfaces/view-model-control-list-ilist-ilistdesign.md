@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: c9fbe8136544400f44eca6278d0197e6a4072747
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: ed96668acedb659b64cb8478008ae6b206dbec456291eb37871d1567ff658851
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759966"
 ---
 # <a name="listdesign-type"></a>ListDesign タイプ
 

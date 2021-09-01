@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 452d29cfa54fa5eb30a71092c00880d167780f9b
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 1b966e8c82463af07cab2b564b67528a96afee16830ddc6c2075ba7a76e6b1d4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767128"
 ---
 # <a name="write-extensible-forms"></a>拡張可能フォームの書き込み
 

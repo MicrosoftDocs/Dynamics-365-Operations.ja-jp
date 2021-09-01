@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5312b4fb8acd58aabf1692727208200d99a0dd1e
-ms.sourcegitcommit: c1aaa0475304d239f8ad5150fdb150cf74e13c95
+ms.openlocfilehash: 1de6a3049abe465547e4853e4b6f8ab503860c0cc32ca2c319ccf1d958a0dc6e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6511659"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760888"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 

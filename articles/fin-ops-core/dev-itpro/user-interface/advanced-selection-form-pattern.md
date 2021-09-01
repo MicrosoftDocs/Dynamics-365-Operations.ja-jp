@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98ecec333c4acb9c70f41c6405a5d1d012d4b5d8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5486be8a695536dc782194f106ba119922943d8c845823a3742f824e1e5c78fa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358535"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741628"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 

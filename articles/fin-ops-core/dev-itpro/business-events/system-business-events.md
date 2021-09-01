@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d95e9436c8f1f890cf14d394651a04e7fa998c0e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 42efae33037a705f291736596e15fb6709df1bdd3ba02db3ff68450940bc7f5b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743923"
 ---
 # <a name="batch-business-events"></a>バッチ ビジネス イベント
 

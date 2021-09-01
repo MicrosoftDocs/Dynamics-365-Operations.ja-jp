@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1773a7ca07cf9af1ebb400283e653c362f574e13
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 19c2c3c330e0e4263e4b2da6316a0fccc646327e00357c470918c1ff5138c66e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750702"
 ---
 # <a name="archive-credit-card-transaction-data"></a>クレジット カード トランザクション データのアーカイブ
 

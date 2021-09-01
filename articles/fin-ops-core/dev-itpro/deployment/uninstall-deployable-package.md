@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e7b812d1a90870c66df8436cfc7b73c756215f7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 46b39c2b4f48072bd1eced44defc96c049b7408f714040586ecd2407e0518452
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763504"
 ---
 # <a name="uninstall-a-package"></a>パッケージのアンインストール
 

@@ -2,7 +2,7 @@
 title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。
 author: jasongre
-ms.date: 06/10/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 624edf2634173ea62b46e74e9d8a75ab3cd242f1
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 8b1b37a0d4285d32ec77d89e62aff0b05eee614e
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270801"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344108"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
@@ -203,6 +203,9 @@ Skype 統合は、パブリック クラウドの環境で利用できます。 
 - `https://login.windows.net`
 - `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
+
+
+**代替ソリューション:** ユーザーが Windows 10 の古いバージョン (バージョン 1909 より前) を実行している場合は、Windows 10 をバージョン 1909 以降にアップグレードしてください。 バージョン 1909 では、KB5003635 が必要となる場合があります。 詳細については、[2021 年 5 月に解決された問題](/windows/release-health/resolved-issues-windows-10-1909#1610msgdesc)を参照してください。 
 
 ### <a name="issue-the-excel-add-in-needs-an-explicit-sign-out-after-encountering-an-aadsts50058-silent-sign-in-failed-error"></a>問題: AADSTS50058 "サイレント サインインが失敗しました" エラーが発生した後に、Excelアドインで明示的にサインアウトする必要がある。
 

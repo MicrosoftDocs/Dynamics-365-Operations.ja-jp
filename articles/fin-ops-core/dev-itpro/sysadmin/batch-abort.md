@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kaelazzo
 ms.search.validFrom: 2019-05-08
 ms.dyn365.ops.version: Platform update 27
-ms.openlocfilehash: 423f56940db8ee2f27687f44a5d78515c2f7b285
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3b11b6e2cb8c6c9c430e5c24e708030bb0f2ba88edacf3d7e3b348f1212b93ee
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908680"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749636"
 ---
 # <a name="cancel-an-executing-batch-job"></a><a id="legacy-abort"></a>実行中のバッチ ジョブのキャンセル
 [!include [banner](../includes/banner.md)]

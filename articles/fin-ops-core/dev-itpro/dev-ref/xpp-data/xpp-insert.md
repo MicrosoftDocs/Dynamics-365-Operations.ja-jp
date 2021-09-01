@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: eec876d6ae964f93299ce4624b398b69bf3a12f5
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: ebd0921517eb9b768d8dd16eb71055a6bb48c16c
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661356"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394402"
 ---
 # <a name="insert-data"></a>データの挿入
 
@@ -48,8 +48,8 @@ ms.locfileid: "6661356"
 ```xpp
 CustGroup custGroup;
 ttsBegin;
-    custGroup.CustGroup = '41';
-    custGroup.insert();
+custGroup.CustGroup = '41';
+custGroup.insert();
 ttsCommit;
 ```
 
@@ -101,7 +101,7 @@ insert_recordset valueSumName (Name, ValueSum)
 
 この例では、NameValuePair テーブルに 1 つの新しいレコードが挿入されます。 このレコードの **ID** 値は **1**、**名前** の値は **Name1**、**値** の値は **1** です。
 
-```X++
+```xpp
 NameValuePair nameValuePair;
 CustTable custTable;
 
@@ -119,7 +119,7 @@ select firstonly id_var, name_var, value_var from custTable;
 
 この例では、tabEmplProj5 テーブルに対する **insert\_recordset** ステートメントがあります。 ターゲット フィールドの 1 つに **説明** という名前が付けられ、そのデータはローカル **sDescriptionVariable** 変数から取得されます。 **説明** フィールドの構成キーは無効の場合でも **insert\_recordset** ステートメントは成功します。 システムでは、**Description** フィールドと **sDescriptionVariable** 変数の両方を無視します。 したがって、このコードは *コンフィギュレーション キーの自動化* の例を提供します。 コンフィギュレーション キーの自動化は、コンフィギュレーション キーがオフになっているフィールドにデータを挿入する **insert\_ recordset** ステートメントの動作を、システムが自動的に調整できるときに発生します。
 
-```X++
+```xpp
 static void InsertJoin42Job(Args _args)
 {
     GmTabDepartment tabDept2;
@@ -127,33 +127,25 @@ static void InsertJoin42Job(Args _args)
     GmTabProject tabProj4;
     GmTabEmployeeProject tabEmplProj5;
     str 64 sDescriptionVariable = "From variable.";
-    DELETE_FROM tabEmplProj5;
-    INSERT_RECORDSET tabEmplProj5
-        (
-        Description
+    delete_from tabEmplProj5;
+    insert_recordset tabEmplProj5
+        (  Description
         , EmployeeRecId
         , ProjectRecId
         )
-    Select
-        sDescriptionVariable
-        , RecId
-    from
-        tabEmpl3
-        join
-            tabDept2
+    select sDescriptionVariable, RecId
+    from tabEmpl3
+        join tabDept2
             where tabEmpl3 .DepartmentGuid == tabDept2 .DepartmentGuid
-        join RecId
-            from tabProj4
-            where tabDept2 .DepartmentGuid == tabProj4 .DepartmentGuid
-    info(int642str(tabEmplProj5 .rowCount())
-        + " ==Number of rows inserted.");
-    WHILE SELECT *
-        from
-            tabEmplProj5
-            join tabEmpl3
-                where tabEmplProj5 .EmployeeRecId == tabEmpl3 .RecId
-            join tabProj4
-                where tabEmplProj5 .ProjectRecId == tabProj4 .RecId
+        join RecId from tabProj4
+            where tabDept2 .DepartmentGuid == tabProj4 .DepartmentGuid;
+    info(strFmt("%1 == Number of rows inserted.", tabEmplProj5.rowCount()));        
+    
+    while select tabEmplProj5
+        join tabEmpl3
+            where tabEmplProj5.EmployeeRecId == tabEmpl3.RecId
+        join tabProj4
+            where tabEmplProj5.ProjectRecId == tabProj4.RecId
     {
         info(
             tabEmpl3 .EmployeeName
@@ -183,7 +175,7 @@ Beth  --works on--  Project YY (From variable.).
 ```xpp
 static void JobDuplicKeyException44Job(Args _args)
 {
-    SourceTable sourceTable; // Must have at least one record.
+    SourceTable      sourceTable; // Must have at least one record.
     DestinationTable destinationTable;
     int countTries = 0;
     int numberAdjust = 0;
@@ -205,7 +197,8 @@ static void JobDuplicKeyException44Job(Args _args)
     {
         countTries++;
         notes += strFmt("Inside the try block, try count is %1.", countTries);
-        while select * from sourceTable order by SourceKeyField asc
+        while select sourceTable 
+            order by SourceKeyField asc
         {
             destinationTable.clear();
             newKey = sourceTable.SourceKeyField + numberAdjust;

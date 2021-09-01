@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: a2663b33579f844b998acef702c53b440f14f1dd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 30025ec4ebd0afe7acb5a72c0d2f95aafc75deacb5066a53a8186ea292cdc58c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748358"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b881a55da29bf8ee9a28c332af4192d7de54033c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: bc092a9d4be4a6cb8d01c6064c5d3306e9fc332efb1058444ae487d442f1d59a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759199"
 ---
 # <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 

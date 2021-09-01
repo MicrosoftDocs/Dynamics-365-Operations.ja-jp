@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ebb1f54d3edb55b388b5f710f8906e693c55858f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c4b77c94d52b66e86f1757c4825bdfe8d5f640b4964fb4c6f23a36cfb5c3b0f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711851"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>生産現場の実行インターフェースのスタイル
 

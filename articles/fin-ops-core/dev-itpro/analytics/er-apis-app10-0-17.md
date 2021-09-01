@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 67e13caa04e48e93f71d1dfea6afaecf2702722b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 7ada758131a44c75e698e4416ae34973d20e7b103e839fc974b0db4a10c8539e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759223"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10017"></a>Application update 10.0.17 での電子申告フレームワーク API の変更
 

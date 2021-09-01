@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 685626ae752aa32245f41f1c87da65020c3f0f5a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f0f4cbd80134feb9c49eb4fa2cf2732bd0866a16bd1d0b9593e4df4d25c7637f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764450"
 ---
 # <a name="create-or-update-methodologies"></a>方法の作成または更新
 

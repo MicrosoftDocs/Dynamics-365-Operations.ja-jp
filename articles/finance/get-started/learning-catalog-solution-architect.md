@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 77e0ea4cc0eac3946538fb1c3ea5c703951becc8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 79ed7581b4a7f21fe2fbea37214bd1d2abc2c160
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897490"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402287"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-solution-architects"></a>Dynamics 365 Finance ソリューション アーキテクトのラーニング カタログ
 
@@ -36,6 +36,7 @@ ms.locfileid: "5897490"
 | コンテンツ  | 説明   | 書式設定  | 期間 |
 |----------|---------------|---------|--------|
 | [Dynamics 365 と Power Platform のソリューション アーキテクトを目指しましょう](/learn/paths/become-solution-architect/) | ソリューション アーキテクトは、ソリューション全体の設計、実装、展開、採用を成功させる責任を負います。 ソリューション アーキテクトは、ソリューションが現在と将来において顧客のニーズを満たすことを保証します。 ソリューション アーキテクトは展開中に「ボタンをクリックする」ことはできませんが、最終的にはソリューションの責任者であり、展開チームと密接に連携して作業を行います。 | 無料の自習型オンライン学習パス | 4 時間 |
+| [Success by Design for Dynamics 365 ソリューションの使用](/learn/paths/use-success-design/) | FastTrack for Dynamics 365 は、顧客やパートナーが Dynamics 365 ソリューションを正常に配置できるよう支援するために設計されています。 このサービスを提供するために、ソリューション アーキテクトは Success by Design を使用する必要があります。 このラーニング パスでは、Success by Design の概念について説明します。 | 無料の自習型オンライン学習モジュール | 12 時間 |
 | [Finance and Operations アプリの実装](/learn/paths/implement-finance-operations/) | Finance and Operations の導入プロジェクトを成功させるために最も重要な要素とベストプラクティスを身につけましょう。 プロジェクトの方法論を計画、設計する最初のステップから、FastTrack サービスの利用、開発戦略、データ管理など、稼働開始後の運用を維持、監視するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 11.5 時間 |
 | [Go-Live 計画 (DYN458PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/go-live-planning-8-9-18) | Go-Live プロセスについて詳しく説明し、お客様、パートナー、および Microsoft にとって可能な限りスムーズにするために、どのように準備できるかについて説明します。 | Web カンファレンスの無料録画 | 60 分 |
 | [環境計画 (DYN450PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/environment-planning-may-23-2018) | 環境計画に関するこの Tech Talk にご参加ください。 標準環境、必要になる可能性のある他の環境、取得および配置のためのオプションとタイミング、および環境間で予想されるコードとデータ フローについて学習します。 | Web カンファレンスの無料録画 | 53 分 |
@@ -63,6 +64,7 @@ ms.locfileid: "5897490"
 
 | コンテンツ  | 説明   | 書式設定  | 期間 |
 |----------|---------------|---------|--------|
+| [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習モジュール | 7 時間 |
 | [Finance and Operations アプリの更新とアップグレード](/learn/modules/upgrades-updates-finance-operations-apps/) | エンタープライズ リソース プランニング (ERP) の世界は、絶えず進化しており、顧客が生産性をスケールアップし、操作を効率化するために役立ちます。 Finance and Operations の進化は以前の Microsoft Dynamics AX バージョンを Finance and Operations クラウド サービスにアップグレードすることを推奨します。 | 無料の自習型オンライン学習モジュール | 1 時間 |
 | [Finance and Operations： 7. x から 8 + へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 次回のTechTalkでは、7.X から 8.X へのアップグレード プロセスについて説明します。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオと手順について説明します。 また、拡張機能の要求のシナリオと、必要に応じてそれらを上げる方法についても説明します。 2 部構成の第 1 部 | Web カンファレンスの無料録画 | 61 分 |
 | [7.0 (RTW)/7.1 (リリース 1611) から 7.2 (2017 年 7 月) にアップグレードする方法 (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | このセッションでは、Dynamics 365 Finance and Operations アプリケーション v7.0 (RTW) および v7.1 (1611) から v7.2 (2017 年 7 月) にアップグレードする方法について説明します。 Live の顧客と進行中のプロジェクト (まだ Live ではない) を明確に区別します。 | Web カンファレンスの無料録画 | 44 分 |
@@ -80,13 +82,13 @@ ms.locfileid: "5897490"
 | [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | この講演では、Microsoft が管理する継続的な更新に関する最初の発表以来の新機能について説明します。 更新の頻度、プロセスに関する貴重なフィードバックへの対応を説明し、今後の Lifecycle Services のユーザー エクスペリエンスを確認します。これにより、更新を管理できるようになります。 | Web カンファレンスの無料録画 | 56 分 |
 | [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | ここでは、最新リリースを使用してシステムを最新の状態に保つための Microsoft の計画について説明します。 タイムライン、主要な更新プログラムと小さな更新プログラムの頻度、計画された手順、影響、および最適な結果を得るためにするべきことについて説明します。 | Web カンファレンスの無料録画 | 62 分 |
 | [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、実稼働環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「稼働停止のレポート」オプションのベスト プラクティスについて説明します。 | Web カンファレンスの無料録画 | 40 分 |
-| [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | この Tech Talk では、パンチアウト機能について説明し、購買要求シナリオを介した外部カタログの設定について扱います。 | Web カンファレンスの無料録画 | 42 分 |
+| [パンチ アウト (DYN332PAL2)](https://community.dynamics.com/365/b/techtalks/posts/punch-out-september-21-2017) | この Tech Talk では、パンチアウト機能について説明し、購買要求シナリオを介した外部カタログの設定について扱います。 | Web カンファレンスの無料録画 | 42 分 |
 
 ## <a name="testing"></a>テスト<a name="testing"></a>
 
 | コンテンツ  | 説明   | 書式設定  | 期間 |
 |----------|---------------|---------|--------|
-| [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | 構成、カスタマイズ、および統合によってすべての顧客要求が処理された後、Finance and Operations アプリでユーザー受け入れテスト (UAT) を実行してソリューションを検証する方法を理解する必要があります。 ユーザー受入テストは、本稼働の準備をする上で重要なステップです。 | 無料の自習型オンライン学習モジュール | 1 時間 |
+| [Finance and Operations アプリのユーザー受け入れテストの実行](/learn/modules/perform-uat-finance-operations) | 構成、カスタマイズ、および統合によってすべての顧客要求が処理された後、Finance and Operations アプリでユーザー受け入れテスト (UAT) を実行してソリューションを検証する方法を理解する必要があります。 ユーザー受入テストは、本稼働の準備をする上で重要なステップです。 | 無料の自習型オンライン学習モジュール | 1 時間 |
 | [Finance and Operations: Regression Suite Automation Tool - 背景と設定 (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの最初のものです。 このセッションでは、RSAT を介した自動テストを使用して、継続的な更新に対応する方法について説明します。 RSAT を使用したタスク記録の作成とテストの実行に関する学習と推奨事項については、インストールとセットアップのステップ バイ ステップ チュートリアルに従って説明します。 | Web カンファレンスの無料録画 | 70 分 |
 | [Finance and Operations: Regression Suite Automation Tool -- ライフサイクル デモのテスト (DYN647PAL)](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの 2 番目のものです。 このセッションでは、 Finance and Operations から LCS の BPM ライブラリにタスク記録を作成して保存し、Azure DevOps で BPM ライブラリを同期してテスト ケースを作成し、テスト ケースをテスト スイートにグループ化し、RSAT でテスト スイートを読み込んで実行する全サイクルのデモについて扱います。 | Web カンファレンスの無料録画 | 70 分 |
 | [Finance and Operations: Dynamics 365 のパフォーマンス ベンチマーク (DYN550PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-benchmark-for-dynamics-365-1-30-19) | この Tech Talk では、Microsoft Dynamics 365 for Finance and Operations でパフォーマンス ベンチマークを準備して提供するためのアプローチについて説明します。 簡単な事例をデモンストレーションで説明する前に、プロセス、主要な概念、およびツールを紹介します。 | Web カンファレンスの無料録画 | 68 分 |
@@ -99,6 +101,5 @@ ms.locfileid: "5897490"
 | コンテンツ | 説明  | 書式設定  |
 |---------|--------------|---------|
 | [試験 MB-700: Microsoft Dynamics 365: Finance and Operations アプリ ソリューション アーキテクト](/learn/certifications/exams/mb-700) | この試験では、次の技術的なタスクを実行できるかどうかを測定します。ソリューション要件を特定します。ソリューションコンポーネントをデザインします。ソリューションのテストと管理の戦略を定義します。 | 試験、費用は地域によって異なる |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

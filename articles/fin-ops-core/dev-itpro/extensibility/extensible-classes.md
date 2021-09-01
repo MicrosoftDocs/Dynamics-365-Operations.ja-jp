@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 30f13e228b4b37c4e20fe567c457601038933abb
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 41cfa7ffd11033c456f3441624a0301058b0129efef03b0bd44b559c5638a534
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740243"
 ---
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 

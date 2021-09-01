@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c0e50262948b10a4ccf3953a2f48f2dfc41898d4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 47b4870275eea99b8455a77ca0bcfc8c4a63514f7c725c00eb8cf0344f4987cb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345020"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715322"
 ---
 # <a name="shipping-discount-overview"></a>出荷割引の概要
 

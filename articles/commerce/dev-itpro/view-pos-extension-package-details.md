@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: 1f6cfd0321cc8343801dcb3db1fa98fe89b2b353
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c2c1d7b07875e39aa50c2cb613219db7f8daf6f478bf7936cb3f44d5b4e2d1d3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344409"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774571"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 

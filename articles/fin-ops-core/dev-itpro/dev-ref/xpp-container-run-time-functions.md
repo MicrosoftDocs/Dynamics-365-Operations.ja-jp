@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56919386b5e17dfb85a6ef7ff0a3672b8ea0c811
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: f319414f74b89229aa3a9a851912ed49d2b3e8e768a297777180cbf7f0a6114c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763472"
 ---
 # <a name="x-container-runtime-functions"></a>X++ コンテナー ランタイム関数
 

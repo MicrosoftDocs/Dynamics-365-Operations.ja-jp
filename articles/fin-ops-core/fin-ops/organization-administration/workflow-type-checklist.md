@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 9361fb4a784decd3fa4293482826496fa027506b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 87bee91a01f294cad8063f060799fc0e05c1b7ef635c5cd19202d7401801abe8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749320"
 ---
 # <a name="workflow-type-checklist"></a>ワークフロー タイプ チェックリスト
 

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2021-05-13
-ms.openlocfilehash: 7ba4c2debe84e5b634e6671561618b54e2a97280
-ms.sourcegitcommit: 5a42748d107139a6f0d138ac86cb7ff8809c8e97
+ms.openlocfilehash: 05c6a128da2dae1707c5fc49638324b845918530a523a7beefbafe6d82bdcb22
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "6032304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752327"
 ---
 # <a name="planned-maintenance-in-self-service-environments-faq"></a>セルフサービス環境の計画メンテナンスに関する FAQ
 計画されたメンテナンスとは、公開されたスケジュールまたは Microsoft から少なくとも 5 日前の通知に従って、Microsoft がお客様の環境で実行する必要がある保守活動すべてを表します。 このトピックでは、セルフサービス環境における Microsoft の計画されたメンテナンスに関するよくある質問に対する回答を示します。

@@ -1,7 +1,7 @@
 ---
 title: 定期統合
 description: このトピックでは、データ移行のプロセスや、エンタープライズ システムの内外への移動など、定期的な統合について説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 24821
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9278d65faf600b7b61826863ab624065e3a3c6fd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 3ddc0deae34805ae11bf4c859b3c519a3e1a9c08
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344864"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403936"
 ---
 # <a name="recurring-integrations"></a>定期統合
 

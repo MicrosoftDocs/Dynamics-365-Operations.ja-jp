@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 38d545b5cfdb9145817ebabbfaad8012c6027d31
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 25392dab63aa66ae1a434ef6650919836e802ab1ede184dd48c233704a760ca6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940921"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774425"
 ---
 # <a name="support-for-field-service-and-project-service-automation-solutions"></a>Field Service と Project Service Automation ソリューションのサポート
 

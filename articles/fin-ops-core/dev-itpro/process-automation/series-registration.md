@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 196fe4c787c722924c48c0bc5581c60c9a544e45
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 5102450aac7d8f45fa4ba23046258d08611e5f6bf7f46f21ee8cb2e9f3442e01
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760728"
 ---
 # <a name="series-registration"></a>シリーズ登録
 

@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 490a9bc63717082bbb62da820613c928914e49ab
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e8baaf957780c0877a9045000707b10051cee0f703684b4060315877bb418b7a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798803"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733213"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -71,7 +71,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 #### <a name="receiptsnorway-component"></a>ReceiptsNorway コンポーネント
 
 1. **Runtime.Extensions.ReceiptsNorway** プロジェクトを探して、構築します。
-2. **Extensions.ReceiptsNorway\\bin\\Debug** フォルダーで、**Contoso.Commerce.Runtime.ReceiptsNorway.dll** アセンブリファイルを検索します。
+2. **Extensions.ReceiptsNorway\\bin\\Debug** フォルダーで、**Contoso.Commerce.Runtime.ReceiptsNorway.dll** アセンブリ ファイルを検索します。
 3. アセンブリ ファイルを CRT 拡張機能フォルダーにコピーします。
 
     - **Retail Server:** アセンブリを Microsoft インターネット インフォメーション サービス (IIS) Retail Serverのサイトがある場所の下の **\\bin\\ext** フォルダーにコピーします。
@@ -169,7 +169,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 3. プロジェクトを構築します。
 4. **Extensions.SalesTransactionSignatureSample\\bin\\Debug** フォルダーで、次のファイルを検索します。
 
-    - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** アセンブリ ファイル
+    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** アセンブリ ファイル
     - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
 5. ファイルを CRT 拡張機能フォルダーにコピーします。
@@ -223,7 +223,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 3. プロジェクトを構築します。
 4. **Extensions.SalesTransactionSignatureSample\\bin\\Debug** フォルダーで、次のファイルを検索します。
 
-    - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** アセンブリ ファイル
+    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** アセンブリ ファイル
     - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
 5. ファイルを CRT 拡張機能フォルダーにコピーします。
@@ -300,7 +300,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 3. プロジェクトを構築します。
 4. **Extensions.SalesTransactionSignatureSample\\bin\\Debug** フォルダーで、次のファイルを検索します。
 
-    - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** アセンブリ ファイル
+    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** アセンブリ ファイル
     - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
 5. ファイルを CRT 拡張機能フォルダーにコピーします。
@@ -693,7 +693,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
     1. **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** フォルダーで、次のファイルを検索します。
 
-        - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** アセンブリ ファイル
+        - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** アセンブリ ファイル
         - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
     2. ファイルを、IIS Retail Server サイトがある場所の下の **\\bin** フォルダーにコピーします。
@@ -1589,7 +1589,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
 5. 拇印、保管場所、署名販売取引に使用されるべき証明書の保存名を指定して、証明書のコンフィギュレーションを変更します。 その後 **References** フォルダーにコンフィギュレーション ファイルをコピーします。
 
-    # <a name="application-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
+    # <a name="application-update-4"></a>[Application update 4](#tab/app-update-4)
 
     ファイル名は **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** で、**CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** の下にあります。
 
@@ -1603,15 +1603,15 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
     # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
-    ファイル名は **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
+    ファイル名は、**Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
 
     # <a name="retail-735-and-later"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
 
-    ファイル名は **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
+    ファイル名は、**Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
 
     # <a name="retail-811-and-later"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
 
-    ファイル名は **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
+    ファイル名は、**Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
 
     ---
 

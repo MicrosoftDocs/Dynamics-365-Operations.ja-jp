@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a8ae0ac58309abb2f86069fda3e720e04d8f0f4c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 61c27e4458ccab22d236f9bd3d9406d6b26568ec3d9975323b64f0e0f96579a8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764628"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 

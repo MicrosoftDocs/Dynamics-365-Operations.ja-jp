@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 77b36cac5ffbdb372f5cc778d58c694c37f7a45d
-ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
+ms.openlocfilehash: 3f088f2e7bc17d7c138f054766fa42a35698ab8d2f5163af9be4c4fb1f616659
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6560034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746677"
 ---
 # <a name="create-a-cloud-pos-extension-package"></a>Cloud POS 拡張機能パッケージの作成
 

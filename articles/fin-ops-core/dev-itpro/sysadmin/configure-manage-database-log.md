@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2b2cbb90198db45c842a8b41e86e8b7c18e3e89
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2801579c571bf7e65db4da146307ce227e10fed4a7d3388415307d4669e06e16
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746017"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713866"
 ---
 # <a name="configure-database-logging"></a>データベース ログの構成
 

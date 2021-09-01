@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: f39bf178069ec34ce93ceecbdda1a55ce53b02e3
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 9750d4a9597ee29396a8a5c0810fb0dbe1097c551ae87b04b5f7dddfa9a78ece
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866057"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754320"
 ---
 # <a name="whats-new-or-changed-for-extensibility"></a>拡張性の新機能および変更された機能
 

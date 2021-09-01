@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.openlocfilehash: 8a50292c58d004fb3dcb676532b80fc31479c5ad
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25aa28b9299c50907a18bca541cb737e9028a8ad0211ffd0a7780539c8a24669
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756619"
 ---
 #  <a name="provision-onboard"></a>オンボード プロビジョニング
 

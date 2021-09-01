@@ -1,33 +1,27 @@
 ---
 title: システム要件と前提条件
 description: このトピックでは、Finance and Operations アプリで二重書き込みを有効にする前に設定する必要があるシステム要件と前提条件について説明します。
-author: sabinn-msft
-ms.date: 03/20/2020
+author: NHelgren
+ms.date: 08/18/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Developer
 ms.reviewer: v-douklo
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5df7f10bc5085d87012f19d5e5c268d56ff1582
-ms.sourcegitcommit: d188d6621db8a92b59bf2b4102d573b161ad770f
+ms.openlocfilehash: 1d3747f0eead67a6fc76a0a50fd07a92e0c658fb
+ms.sourcegitcommit: 74bdfe341d7f57bf121a334247e68d930b0969a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6649559"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7394871"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
 
 ## <a name="what-regions-are-available"></a>どの地域で使用できますか?
 
@@ -43,7 +37,6 @@ ms.locfileid: "6649559"
    + アラブ首長国連邦
    + 英国
    + 米国
-
 
 ## <a name="verify-requirements-and-grant-access"></a>要件を確認し、アクセスを許可する
 
@@ -122,6 +115,11 @@ ms.locfileid: "6649559"
     7. **Dynamics 365 \> 設定 \> セキュリティ** に移動し、**チーム** を選択して、**すべての所有者チーム** にビューを変更します。
     8. **ルートの事業単位の既定のチーム** を選択し、**ロールの管理** を選択して、**チーム ロールの管理** ダイアログ ボックスで事前にコンフィギュレーションされた **セキュリティ ロール** を選択し、二重書き込みを通して統合された各テーブルの **ユーザー** スコープに対して **読み取り** 権限を付与します。 
     
+    >[!NOTE]
+    > 会社と通貨為替テーブルは本質的にグローバルであり、すべての二重書き込みユーザーにはこれら 2 つのテーブルへの読み取りアクセスが必要です。
+    > すべての二重書き込みユーザーを、**二重書き込みアプリ ユーザー** セキュリティ ロールに追加する必要があります。
+    > 管理者以外のユーザーが二重書き込みが有効なテーブルに行を作成できるようにするには、ユーザーに **二重書き込みランタイム ユーザー** セキュリティ ロールを割り当てる必要があります。
+
       セキュリティ ロールの作成方法に関する説明については、[カスタム セキュリティ ロールの作成またはコンフィギュレーション](/power-platform/admin/database-security#create-or-configure-a-custom-security-role)を参照してください。
       
       > [!NOTE]
@@ -211,6 +209,5 @@ ms.locfileid: "6649559"
 ## <a name="next-steps"></a>次のステップ
 
 [二重書き込みウィザードを使用して環境をリンクする](link-your-environment.md)
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

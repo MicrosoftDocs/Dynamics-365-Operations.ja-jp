@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 5e8ca375fc1f9966cf0bba39a7b1c5fa152f6045
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 1915417ec8b827644c3bf8b174c0702bdf281f5b2c307f2a4481614b3b4139a7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6335678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760862"
 ---
 # <a name="getting-started-with-pos-extensions"></a>POS 拡張機能の使用を開始する
 

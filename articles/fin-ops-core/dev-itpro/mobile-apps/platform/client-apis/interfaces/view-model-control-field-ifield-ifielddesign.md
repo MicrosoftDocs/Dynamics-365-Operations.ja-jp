@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 30367b78c416349ddc5c06800a56c2451caead19
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: c6cca8888037a9396b7137d2772593d34f89a2db30797ff39510f81a804c70d5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733103"
 ---
 # <a name="fielddesign-type"></a>FieldDesign タイプ
 

@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 9edaecfdddbfd0c17159da632b209e5b015eed39
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 6b78f7fe7d34d82d62ad3ebb309e42399c6c2d75240d28a55a020fdf17f8f27d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763453"
 ---
 # <a name="page-module"></a>ページ モジュール
 

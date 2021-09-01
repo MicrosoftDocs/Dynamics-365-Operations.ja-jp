@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c54d0371c6e3c94b4713620445bef9cfb764aaa
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4817cc55ff1614157a5804ad084be02a96a8d196a6d04c9787f774359d29101b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358959"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719323"
 ---
 # <a name="manage-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する
 [!include [banner](../includes/banner.md)]

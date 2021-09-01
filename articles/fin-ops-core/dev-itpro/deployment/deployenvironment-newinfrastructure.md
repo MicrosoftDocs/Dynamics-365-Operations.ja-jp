@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 4642dc4c3277e16358324d906e3a5e4fca482ff3
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: 1de1a25f691b9269c32c309af5a7eece43c2d80d0023cc28f33ae7b0a765fadd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754991"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 

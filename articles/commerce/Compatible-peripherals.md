@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: feff9c5060800715651853e1f57b68589c3924e7
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4616a1ff5a7e090e0f48f7d4066cfc2518e4164bde2d6cba08e49e924b5e63da
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714773"
 ---
 # <a name="peripheral-compatibility-for-commerce"></a>コマースの周辺機器の互換性
 

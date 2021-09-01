@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: f930e9c38a8b54d5510c462d746eabef63aed9f5
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 3614569049967eb50879dedd460412ee71ac0ef4388afd4d2139a60bd9ffca4b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752315"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 

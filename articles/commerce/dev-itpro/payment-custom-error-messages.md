@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9466cbf1ae62414488a6a05dfad3a3e5d804bfa7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c723db1bbbef85fa440daf9dc12485cb655f5022624e413d92067a2ecb06d663
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729875"
 ---
 # <a name="create-custom-localized-error-messages-for-payment-terminal-extensions"></a>支払ターミナルの拡張機能のローカライズされたカスタム エラー メッセージを作成する
 

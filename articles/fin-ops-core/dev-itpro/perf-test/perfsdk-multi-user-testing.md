@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kesaelen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 92d660d27bbacce6c8513d23fdc6da557c22c09e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: de5e296692b50b1a4044d2f21b97b0c9302bd8e9a3d90c7021e730a41291fb93
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736246"
 ---
 # <a name="run-multi-user-testing-by-using-the-performance-sdk"></a>パフォーマンス SDK によるマルチユーザー テストを実行する
 

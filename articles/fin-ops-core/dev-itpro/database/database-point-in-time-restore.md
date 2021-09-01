@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 413ae2519c48b8f884e6eb479674e9ebd3bbabcd
-ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
+ms.openlocfilehash: e53f2546fe8813c54e49acf32754c8e60fae19175ce6c569fe598cfab1344f7e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "6277395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770795"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 

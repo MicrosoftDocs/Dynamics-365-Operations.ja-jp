@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 96533bbcc22cf5e09a6b9630145870c37e50357d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2bf46777113b68cff80dc0b96599976e011669e4e88920ff02efc2931c442364
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749634"
 ---
 # <a name="copy-a-batch-job"></a>バッチ ジョブのコピー
 
