@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ebc1b9431f1b1d7cbc734e0e659e5941a46becc
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: dd39bb339a28b1ce4dea2147f273213c07c45c5516244b246b5304e82978565a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718269"
 ---
 # <a name="configure-one-box-development-environments"></a>1 ボックス開発環境の構成
 

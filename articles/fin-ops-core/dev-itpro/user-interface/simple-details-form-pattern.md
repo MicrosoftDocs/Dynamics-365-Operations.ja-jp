@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 356f9350dd4da5a2a25c2fbb2bc4ba8ebab42294
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 314cf7147b6c5538b354159cb73aa298ac96e93040a861f688e16d8e14888461
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733093"
 ---
 # <a name="simple-details-form-pattern"></a>簡易詳細のフォーム パターン
 

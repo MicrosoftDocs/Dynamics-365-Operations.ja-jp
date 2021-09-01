@@ -1,7 +1,7 @@
 ---
 title: データ プロトコル (OData) を開く
 description: このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/19/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a827ad440239519b7887d84c47e9393de1d767fe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 910db35996b7bb1e6972abb6143bab85aea420fe
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345668"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404129"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 

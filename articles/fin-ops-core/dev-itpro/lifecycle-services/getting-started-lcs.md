@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbd46c5894d382dd79780c9d8cc4d9b9fcbd50fe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 12bcabb66a7cf79de20087967863c81d69977a45b27ad95c47b73171d44594a7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350720"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775958"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>パートナー向け Finance and Operations アプリの Lifecycle Services (LCS)
 

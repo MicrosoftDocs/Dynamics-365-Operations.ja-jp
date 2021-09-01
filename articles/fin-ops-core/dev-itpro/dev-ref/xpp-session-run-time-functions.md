@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11fe4c184659b86572b266f7ad3f063a6e7b41c9
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 6362b9217d7223e15adee6832e0b5988b0b02b75e5e4b5f27de9b2370ae80086
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736264"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 

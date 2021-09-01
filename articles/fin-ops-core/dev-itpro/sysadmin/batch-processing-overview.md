@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2f9cd870e229954ac4d8e203c1b0dab1937eab3
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: a44485a8507b0796d2a7be16ec976c43b388c9774c4efdfefbd8eb9aa3b272f5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716733"
 ---
 # <a name="batch-processing-overview"></a>バッチ処理の概要
 

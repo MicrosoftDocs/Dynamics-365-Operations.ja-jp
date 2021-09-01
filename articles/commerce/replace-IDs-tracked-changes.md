@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 080a97e4fa436392680a62ea232f9881a17c452e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1bc46745431278f38246258346d50aba0fbadf1bf91c13ef91491ec4221eb92d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772266"
 ---
 # <a name="replace-user-ids-associated-with-tracked-content-changes"></a>追跡しているコンテンツの変更に関連付いたユーザー ID の置換
 

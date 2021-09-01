@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4eb2f63ee9dea74e56568627ac3f7f1390cb1056
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a2732d4f975cd13c47d3fd7cf183b020f800a1ca33ec25d43e20f6f07f505446
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729135"
 ---
 # <a name="omni-channel-commerce-order-payments"></a>オムニチャネル Commerce 注文支払
 

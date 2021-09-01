@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78e064812cf2359a4cee10dddc14770e32ce4cbb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 898c980d3a05d3a2fc4633e5d38a2caf307b79f93592ea8bbf1ec402c3f88049
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737831"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service の概要
 

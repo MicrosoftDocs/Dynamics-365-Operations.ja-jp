@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83cc3d6874a6cc4189fc39312c14bc05d62cd862
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ba8d185c8e686ca53886fcf56d995d4b48c0a6a2476f40efc9e108bf195a4f0e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712526"
 ---
 # <a name="horizontal-fields-and-buttons-group-subpattern"></a>水平フィールドおよびボタン グループのサブパターン
 

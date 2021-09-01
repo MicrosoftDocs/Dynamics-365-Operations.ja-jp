@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 56bcc7a8e4ff7c2bd85065d76b101bdc5bf2035c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d1cb87595348159e908e473f078fc7e18e96319b2bc2d6917dc911a6991fb728
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355765"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765074"
 ---
 # <a name="localize-mobile-workspaces"></a>モバイル ワークスペースのローカライズ
 

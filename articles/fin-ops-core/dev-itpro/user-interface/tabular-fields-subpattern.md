@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bff62f7584204b0079c05bc1f918a067d659507
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 82a60b2d91c6a2422a69b5c9143c888dae1e067ecf2373c846f8da2456476a2f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359725"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749618"
 ---
 # <a name="tabular-fields-subpattern"></a>表形式フィールドのサブパターン
 

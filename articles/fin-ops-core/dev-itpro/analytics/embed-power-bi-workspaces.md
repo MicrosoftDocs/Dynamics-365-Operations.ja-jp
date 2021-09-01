@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: ee7742baec0d0e3d183a8876fd4e670a46f185e5
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1b5ad514918576884bf8c30b146799028d4fdcd71016e81d8f938ccf907e1c33
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742376"
 ---
 # <a name="analytical-workspaces-using-power-bi-embedded"></a>分析ワークスペース (Power BI Embedded を使用)
 

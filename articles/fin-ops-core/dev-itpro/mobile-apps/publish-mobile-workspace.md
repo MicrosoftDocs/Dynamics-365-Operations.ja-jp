@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8f7b7c34ec20beb6bea787f90f009ace676d8f35
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae82991bb40ddb3b71ffe0e0a6295a58f704103eadeee919600e24c53dbadea7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725116"
 ---
 # <a name="publish-mobile-workspaces"></a>モバイル ワークスペースの公開
 

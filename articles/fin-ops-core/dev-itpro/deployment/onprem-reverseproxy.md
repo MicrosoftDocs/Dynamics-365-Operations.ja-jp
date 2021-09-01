@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d14d355dc3b0d0a475d74a70a431693b523adc59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fc0febb59368096d8fdf7561f2a501189ca7edc953bdd13dc2c240d0a237e3ef
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712554"
 ---
 # <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境でのプロキシのコンフィギュレーション
 

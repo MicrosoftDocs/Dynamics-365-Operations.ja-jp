@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19937cc75fec5148cb3158ebc94a320f3a5e5f3b
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: a13cdc90bf9897a0440871657f742cb87e0d8f17be0b1e79058b5c2e8177f2f1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721902"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 

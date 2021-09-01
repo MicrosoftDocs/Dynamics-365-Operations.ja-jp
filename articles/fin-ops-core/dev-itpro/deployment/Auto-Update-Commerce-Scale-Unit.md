@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2020-07-13
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: fcc043bba3a9d93f7ca0e1b100a895a4caea191e
-ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
+ms.openlocfilehash: 50ad142acf1ff67704741b3a2bf3bc75cfa2597d68413d76aea43a1ae9816f15
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6645014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725124"
 ---
 # <a name="auto-update-for-commerce-scale-unit-cloud"></a>Commerce Scale Unit の自動更新 (クラウド)
 [!include[banner](../includes/banner.md)]

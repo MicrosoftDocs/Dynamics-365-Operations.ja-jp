@@ -1,7 +1,7 @@
 ---
 title: データ移行のエンティティの開発
 description: このチュートリアルでは、Microsoft Visual Studio でデータ エンティティを開発し、データ移行に使用する方法を示します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 83692
 ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7af29ec52d3989b57ce29b9bb6af2cc1f229bc07
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 911ead0ee78d4d1cdbe079f9106462da97a9383d
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350975"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404014"
 ---
 # <a name="develop-entities-for-data-migration"></a>データ移行のエンティティの開発
 

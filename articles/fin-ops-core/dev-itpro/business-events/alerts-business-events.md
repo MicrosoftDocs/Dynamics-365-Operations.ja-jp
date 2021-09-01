@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 25
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 78e1071705d110a8cc3aea40bd67dc249c951070
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 4047a639156956c459bea77f8935aa29d400d23672996a0cd87446c60ff65c91
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757261"
 ---
 # <a name="alerts-as-business-events"></a>ビジネス イベントとしての警告
 

@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 7e5918955d25b6968d0ac9085034af5b853cbb9e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a24a24cfbf61440b038a4762fb9fc3e53323d53b1d304ba413e30699dd2cf724
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747659"
 ---
 # <a name="sample-for-pos-integration-with-control-units-for-sweden-legacy"></a>スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 
@@ -210,7 +210,7 @@ Retail POS がスウェーデンのコントロール ユニットと統合さ�
         > [!NOTE]
         > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
-    5. **Extensions.FiscalRegisterReceiptSample\\bin\\Debug** で、 **Contoso.Commerce.Runtime.FiscalRegisterReceiptSample.dll** アセンブリを検索します。
+    5. **Extensions.FiscalRegisterReceiptSample\\bin\\Debug** で、**Contoso.Commerce.Runtime.FiscalRegisterReceiptSample.dll** アセンブリ ファイルを検索します。
     6. アセンブリを CRT 拡張機能フォルダーにコピーします。
 
         - **小売りサーバー:** アセンブリを IIS Retail Server が格納されている場所の配下にある **\\bin\\ext** フォルダーにコピーします。

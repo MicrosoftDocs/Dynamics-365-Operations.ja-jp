@@ -13,12 +13,12 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 9d2bc42d4da0b13bb882b2708d6fb6944ad739cd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6acabcda2e64b780cc5b179977d8333d5c5efbd7760c6a1b0daf688cdc873ad5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792993"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746683"
 ---
 # <a name="extend-the-point-of-sale-pos-dual-display-view"></a>販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 

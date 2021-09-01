@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b17d761e9b9b21f06f1a73e87128ef370df050db
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0a411928d19787020371d6a9637fa109dc6c810fc163ccfbb725b0a7a4007057
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749321"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751479"
 ---
 # <a name="destructive-testing"></a>破壊試験 
 

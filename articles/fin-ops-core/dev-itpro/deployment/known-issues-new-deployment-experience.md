@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 513a0d4d33abf45bbb4a74e6928301acf4bdf0c4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fef14c9115655653d8d8d87a69c263d8d443aeb8f07b878efc6cfa33557f493e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741640"
 ---
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6e22267ae4d778f9bb53c7e4a3c23ee25fa40b2
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 3098df3841bcac226af7695b95c360ec73665c4ab497c11de9f54d00fb076504
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769255"
 ---
 # <a name="enable-dual-write-for-existing-finance-and-operations-apps"></a>既存の Finance and Operations アプリの二重書き込みの有効化
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 366821f8c776430f8c7caee9b0d045a8a203833c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ccb5b7cb8bff8e6c47531599c484b0d688dc4f7962bde7e9be5b8b13b169a2bc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758360"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: d41ea0b5a88d00541b5633a7d2c2997c50b3281f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 21e65625dded333cd218cfcc74c2eff6d3e2ea5cb9f7af958add1c860b6b9196
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739483"
 ---
 # <a name="add-fields-to-tables-through-extension"></a>拡張機能を使用してテーブルにフィールドを追加
 

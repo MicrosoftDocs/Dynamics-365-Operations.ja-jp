@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32e60217d9c20fbdefe2690957890e39c374741c
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 844b49fcec67c3324efc6fbd4e15785d84d7bbcd695887a45547ac81d4d95364
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765786"
 ---
 # <a name="x-variables"></a>X++ 変数
 

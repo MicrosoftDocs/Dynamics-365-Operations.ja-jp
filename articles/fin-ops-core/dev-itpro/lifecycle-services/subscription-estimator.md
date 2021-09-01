@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: b6dc7a4e3ac74f064136647b11f5a83f0ac32af6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 82c026b96a068ab3cc67f910628ff49374b34b76ad20bd7f181b9fefa5096cd7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718261"
 ---
 # <a name="subscription-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のサブスクリプション試算
 

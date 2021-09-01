@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 0cb718eaaef6f426aa7beec089278585cbf209e9
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: e3c35b84e66361244a12471cb1528b575ac176c7a285cea2e14d7ff069984d51
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866045"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713350"
 ---
 # <a name="write-extensible-enums"></a>拡張可能列挙の書き込み
 

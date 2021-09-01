@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 2dc3e13cd0b92d0ae0fd963759c6551171916656
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 2c8ef222ff053a8698b82a6c72cfed34e67fdeed634b33ee8c843db8d07c1621
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727441"
 ---
 # <a name="control-type"></a>コントロール タイプ
 

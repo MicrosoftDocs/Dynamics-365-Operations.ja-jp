@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 11334725ecf966e1ba967f6ec4f8e4feae57b043
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 06a8927f68ca59e45b481f5bf9d04ff12178f875f43691b02d4a649acd6f4436
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763506"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 

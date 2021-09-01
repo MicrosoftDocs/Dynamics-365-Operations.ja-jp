@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 5a612b5eb660f512c3c6810be9335fe49abb8ea8
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: ad4796370746572608d223bef06c7d68975b67725715a08c057b782e77161f92
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759964"
 ---
 # <a name="valuedesign-type"></a>ValueDesign タイプ
 

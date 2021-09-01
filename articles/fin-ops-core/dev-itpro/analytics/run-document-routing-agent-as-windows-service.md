@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: e195c2371430ff44aed23bd1e560a61d23cad151
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1bd5646650ca1159392637be46da2167590c86d98ac4f4becc6c131cf4fe466b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716797"
 ---
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 

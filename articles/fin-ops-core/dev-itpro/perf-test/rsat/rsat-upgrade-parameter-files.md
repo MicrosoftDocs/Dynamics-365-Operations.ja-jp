@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 118c7bf48935e48fa73a45e5baa4e64f88ce60a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48f8f6a97b96872779a84cee8393cfee524b38da11379239bbca3923eb1c639b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742262"
 ---
 # <a name="upgrade-parameter-files"></a>パラメーター ファイルのアップグレード
 

@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 0e400c8585746c1b59960716b3696dfb9c76bbc7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c85c1b885ea5d7230554864dcd5703c3c2cdc491db26ea1a88bddbc01b3783bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727435"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-4-february-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能
 

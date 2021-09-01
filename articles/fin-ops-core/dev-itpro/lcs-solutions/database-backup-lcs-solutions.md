@@ -12,12 +12,12 @@ ms.custom: 196833
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: d83a9824515bb3d5cb7cd0a00a579c4fe2b30956
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 448067f7d8c096b23023bce23036f171d7d61d21eb833b62ae75d8082672bedb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767126"
 ---
 # <a name="back-up-the-databases-for-finance-and-operations-apps"></a>Finance and Operations アプリのデータベースのバックアップ
 

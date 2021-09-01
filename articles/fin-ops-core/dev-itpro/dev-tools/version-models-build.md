@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71c0e1bc2f106babbd8c5639b4d06131d4e94a20
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 41aa9c88411a6a37f0f13866fb0e83aa1603922fb9fb754e2ec89d7494f3993c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763468"
 ---
 # <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 

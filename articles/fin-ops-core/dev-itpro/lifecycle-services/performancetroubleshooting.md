@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 33ac93cd4e6de3b25cd4fe91ddb13719a55e71e1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fb84ab39d8414dd85eb0eed9f6d88045f9a2d540d1a79b0dbe1daf50a9612efd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749265"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758170"
 ---
 # <a name="performance-troubleshooting-using-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング
 

@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: d0e054626e2a7abf80a188521ea79d7433dcda51
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3f857b5e3b1a123d7c96ec66b462cd3b1a1f43bc8c350b52b13d8ec3e7facd63
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719918"
 ---
 # <a name="deployment-guidelines-for-advance-invoice-report-printing-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
 

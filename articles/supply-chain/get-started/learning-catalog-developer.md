@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d43ab940c3fe4b513a425aad08c60cbe7215c753
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 15c858e2214c44f4cd9cef35bcb5b1faacf50c7e3aafd39038b4446830430c09
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908607"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781964"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-developers"></a>Dynamics 365 Supply Chain Management 開発者向けラーニング カタログ
 

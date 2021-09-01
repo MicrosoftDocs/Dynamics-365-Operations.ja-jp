@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 57fed79e168cf9f8b694d58e7a122bc7c01ff4aa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dd080004e8ca5b753e4e6250dc1cbff432e0ee6b26d0e3f142f370765a1cfde7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745842"
 ---
 # <a name="ax-2009-migration--create-migration-groups"></a>AX 2009 の移行 – 移行グループの作成
 

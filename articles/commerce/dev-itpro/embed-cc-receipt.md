@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3326332eab1bd0bd8adbad72ce27f598271e57ad
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 611116a2826d8bbaf2cbe9a83c306ac01ebe37468d3c7f4788179fbae6019812
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767891"
 ---
 # <a name="embed-processor-credit-card-receipts-in-customer-receipts"></a>顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 

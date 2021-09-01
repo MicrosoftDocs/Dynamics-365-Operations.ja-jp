@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 97126f5630b1a27abf8a05990e362a817d2c0094
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 80b68a65b97ebd6dff899115c68a280ce0a48c99ec2a99e299e28b90dbcf0650
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661558"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771972"
 ---
 # <a name="pagelink-module"></a>ページリンク モジュール
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2e6e7436e9d93bfe26b210185ea9a82b6b1fadef
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: bb8a2606226989fa370431d3822a5626ce4ca2f44fcbbf62aabb5e8e98ce778b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937108"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749895"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 

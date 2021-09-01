@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee324921242e00b60f86521fc5d9a6ca2c6f2eaf
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 51f659df7e4494205de2dd0805680e34cba87ecb4c2d8981a1255661d5f173dd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738532"
 ---
 # <a name="ledger-account-combinations"></a>勘定科目の組み合せ
 

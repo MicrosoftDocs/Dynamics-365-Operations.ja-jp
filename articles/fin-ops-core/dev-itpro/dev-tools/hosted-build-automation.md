@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 783433f16dbf5a09c568b7f43c4483a79cdb1290
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: f49a8a8569b857a5163cb1365d2a574104faa18c4af24a3d7497bd70f3aa4645
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712295"
 ---
 # <a name="build-automation-that-uses-microsoft-hosted-agents-and-azure-pipelines"></a>Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化
 

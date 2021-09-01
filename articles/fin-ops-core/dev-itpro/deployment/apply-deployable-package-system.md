@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 31294000fb384128c5adff78e9e96f9c2677746e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7063efc41e5ba5f3f1aec23b728e7b21661ccff6d108f573c2aa956e19f31b5c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752323"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 

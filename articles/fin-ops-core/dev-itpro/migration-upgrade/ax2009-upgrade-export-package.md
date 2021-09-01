@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 3556224ca854f4593e204af3d63c2fd694bfb7d4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 583e8ea27dfa32840e3aa066fb85995dff389771c436b05ff8ce0e5556a7ec63
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743943"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763462"
 ---
 # <a name="ax-2009-migration--export-packages"></a>AX 2009 の移行 - パッケージのエクスポート
 

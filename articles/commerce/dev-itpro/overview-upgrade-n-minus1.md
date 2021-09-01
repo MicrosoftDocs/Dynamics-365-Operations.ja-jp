@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: f6821c7cef698d18d0e62ecb71d4dd12cfda88d2
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: d925f67f227c4a1827e26e9bbb8c0b45af90c3f4e298db97b592b639830dbc87
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741127"
 ---
 # <a name="upgrade-and-n-1-support-for-commerce"></a>Commerce のアップグレードおよび N-1 のサポート
 

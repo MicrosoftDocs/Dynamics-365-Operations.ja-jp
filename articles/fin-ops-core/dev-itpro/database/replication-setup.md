@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: eccbd553702e128f8c7c8fff6177d3a81dc5c5a3
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2e8d9c4be138d198e66c472f3ef4a9e63a27178aa553d56bf58ad4411434b9b0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347858"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746576"
 ---
 # <a name="upgrade-from-ax-2012---sql-transactional-replication"></a>AX 2012 からのアップグレード - SQL トランザクション レプリケーション 
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 19a8c13a86b41ea7c545e26e3089794060211905
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 548708296bd281e9072726a1b93e8c6b7ae7b924ef306f1a4fccb66eb179b3c2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737889"
 ---
 # <a name="use-cases-for-business-events"></a>ビジネス イベントのユースケース
 

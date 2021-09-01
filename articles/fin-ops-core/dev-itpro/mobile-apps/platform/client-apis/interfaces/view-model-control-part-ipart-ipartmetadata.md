@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: a11762e0a11aeb2fd6d7d851feeee1581b341c23
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 17fc8b819591e2c304516e43966fe7225d786bea2c8143b80ab8d4c65376034e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748350"
 ---
 # <a name="partmetadata-type"></a>PartMetadata タイプ
 

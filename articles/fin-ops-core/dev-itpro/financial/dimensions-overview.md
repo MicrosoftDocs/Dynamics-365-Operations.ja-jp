@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1bbf25301b50c0c17d13c42342ba96c0c1bafea
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9ddbae9769579087f3ce473f0902285b1b19a83b8226004576eb1e12cac78f22
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729017"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 

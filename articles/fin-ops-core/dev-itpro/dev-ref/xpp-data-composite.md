@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cded71df3143ccb98de5259d007d77e80a0e161e
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: e05bb340f1ca0ad8e9ac9d62852ee23298448628ce3e57387ca68f6075af253e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718273"
 ---
 # <a name="x-composite-data-types"></a>X++ 複合データ型
 

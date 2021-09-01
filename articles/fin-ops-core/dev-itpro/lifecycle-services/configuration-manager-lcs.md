@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: fb2342355877cd9ab9d7f333cf3f91ec52984924
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 101fda96ca8aef8ec12f7e57479b306da80d72bcbacbc0e542e2f52f906aafc5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769842"
 ---
 # <a name="configuration-in-lifecycle-services-overview"></a>Lifecycle Services の設定の概要
 

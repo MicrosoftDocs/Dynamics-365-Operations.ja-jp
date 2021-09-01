@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f44f33d9e086e9b15fcc7b78ded0a042d885760
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c00c4c60c5a8912119a31dfa3e010cb2f2637668f0ffd7f9ecb9fb9ee1e474ab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756040"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 

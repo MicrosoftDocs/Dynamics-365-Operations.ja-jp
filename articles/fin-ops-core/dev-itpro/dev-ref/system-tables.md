@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80c7f6cbd4167b19a80fc200d83753473d30d8b3
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: a30e2dcb3cb44fa4a9223f8e9a60802bdc04c23569e633dea4770e86eac3f1dd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763488"
 ---
 # <a name="system-tables"></a>システム テーブル
 

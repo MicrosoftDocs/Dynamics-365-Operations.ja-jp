@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a252696a34f965810e363aab73d49717e72172f9
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: a45ed173cf2ae5fc19881ce44a71ba2708ce4acaff76dda1eed2eafafb8d168e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763492"
 ---
 # <a name="mitigate-a-sql-injection-attack"></a>SQL インジェクション攻撃の緩和
 

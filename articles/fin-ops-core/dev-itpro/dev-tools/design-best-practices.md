@@ -1,7 +1,7 @@
 ---
 title: データ エンティティに関する設計原則とベスト プラクティス
 description: この記事では、データ エンティティの設計原則について説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
@@ -9,15 +9,15 @@ ms.reviewer: rhaertle
 ms.custom: 26421
 ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10ac07774262a7b0e70deb19eb70fbc20db045e8
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 3235aaca0852a02067de964b32afd4a1cc926b4b
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188822"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404185"
 ---
 # <a name="design-principles-and-best-practices-for-data-entities"></a>データ エンティティに関する設計原則とベスト プラクティス
 

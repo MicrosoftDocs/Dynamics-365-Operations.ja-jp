@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: b004b88c11b056af897e33d50d6f4f5a5638b173
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: bedb0118267c8a08f153a6bb223f7015f59939a2d0b08f523e8397a207e01535
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753568"
 ---
 # <a name="application-lifecycle-management-for-solutions-that-use-virtual-entities"></a>仮想エンティティを使用するソリューションのアプリケーション ライフサイクル管理
 

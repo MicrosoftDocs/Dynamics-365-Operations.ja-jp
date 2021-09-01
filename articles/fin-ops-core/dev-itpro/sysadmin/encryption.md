@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18cd9a304184a4b7bae4f9cb7d2ac4ccb8e5ff31
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 32bed236e30273192a12149f30973c61255abb0194d79b7e2262c285e2ec2c69
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908483"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736236"
 ---
 # <a name="encryption-in-finance-and-operations-apps"></a>Finance and Operations アプリにおける暗号化処理
 

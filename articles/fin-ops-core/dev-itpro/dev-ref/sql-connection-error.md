@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
-ms.openlocfilehash: 3172da24473fcf1e9d60017611149712aa3b073e
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: b14de3b3f03f9b89d56196bca6802a4345cfb5935030bddc21b5cf990f948467
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763490"
 ---
 # <a name="sql-connection-error-x-exception"></a>X++ の SQL 接続エラー例外
 

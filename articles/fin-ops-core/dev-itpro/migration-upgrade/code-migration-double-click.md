@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac1c9c464a30c9d5f03e7184f1c232dd0f19bb81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9e215f57043fb04e216dd938d5047768a59334697b5932615c7e9e941d1f937d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770779"
 ---
 # <a name="code-migration---mouse-double-click-logic"></a>コードの移行 - マウス ダブルクリック ロジック
 

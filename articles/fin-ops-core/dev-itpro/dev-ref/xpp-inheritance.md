@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 222127822f564a87e73569faa180e9d264f49943
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 1308b3d95e2b38f386b35c86bc7b3c3885088052e6ed0a822f8916828c22b033
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718271"
 ---
 # <a name="x-inheritance"></a>X++ 継承
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: cb0cc2f8d3fab988f8661d4bbcbaa549bd6e5948
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3ee3d3df48b49378b1eaeae6250abf8bedd95ae0ee33c8eff3140516a3da0748
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753010"
 ---
 # <a name="copy-configurations-by-using-configuration-manager"></a>構成マネージャーを使用して構成をコピーする
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a80facfe864dca93c7b3ec1f2f13819f0ffb072
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ed762f4ee866771c03b43ad738d42372e4b63bb2b8c3ce2f656e78dda6f2428e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358567"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746565"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 

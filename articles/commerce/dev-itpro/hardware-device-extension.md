@@ -4,22 +4,18 @@ description: このトピックでは、新しいハードウェア デバイス
 author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 28021
-ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-ms.openlocfilehash: be95ac08b087accb633e77983368b7c681110210
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 308eaa6ee1bd96a84cb8bba752ad446507b19d93
+ms.sourcegitcommit: f1ef61ee3d731f68e11a5bebc154ed33a7b8eda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346792"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "7383814"
 ---
 # <a name="integrate-the-pos-with-a-new-hardware-device"></a>POS と新しいハードウェア デバイスの統合
 
@@ -258,5 +254,38 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
 
+## <a name="generate-an-extension-installer-for-the-shared-hardware-station-for-application-release-10018-or-later"></a>アプリケーション リリース 10.0.18 以降で使用する共有ハードウェア ステーションの拡張機能インストーラーの生成
+
+Dynamics 365 Commerce 10.0.18 以降では、シールド インストーラーがサポートされます。 拡張機能インストーラーは基本インストーラーとは別に生成できます。また、インストーラーは個別にインストールしてサービスを提供できます。 この機能は[シールド セルフサービス インストーラー](enhanced-mass-deployment.md)を使用している場合にのみ機能します。
+
+共有ハードウェア ステーションのシールド拡張機能インストーラーを生成するには、次の手順に従います。
+
+1. GitHub から [サンプル ハードウェア ステーション インストーラー プロジェクト](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31/src/HardwareStationSample/HardwareStation.Installer)をダウンロードして、Visual Studio で **HardwareStation.Installer.csproj** プロジェクトを開きます。
+2. ハードウェア ステーション拡張機能プロジェクトを、プロジェクト参照として **HardwareStation.Installer.csproj** インストーラー プロジェクトに追加します。 既存のサンプルのプロジェクト参照を **HardwareStation.Installer.csproj** プロジェクトから削除します。
+
+    インストーラー プロジェクトは、**Microsoft.Dynamics.Commerce.Sdk.Installers.HardwareStation** パッケージを使用して拡張機能インストーラーを生成します。 サンプル インストーラー プロジェクト クラスでは **ExtensionPackageInstallerSetup** クラスが拡張され、インストール手順が実装されます。
+
+3. インストーラー名を更新するには、サンプル コードの **InstallerName** 変数を設定します。
+4. サンプル インストーラー プロジェクトを更新して、インストール中に追加のロジックを実行できます。 たとえば、サーバーに対して ping を実行できます。 ロジックを追加するには、**HardwareStation.Installer.csproj** の **HardwareStationExtensionPackageInstallerSetup.cs** ファイルを使用します。
+5. **IExtensionInstallerStep** インターフェイスを実装すると、インストーラーに前後の手順を追加することもできます。 **TestExtensionInstallerPreInstallStep.cs** ファイル、および **HardwareStation.Installer.csproj** サンプル インストーラー プロジェクトの **TestExtensionInstallerPostInstallStep.cs** を使用して、ステップを追加します。
+6. 拡張機能 **HardwareStation.Installer.csproj** プロジェクトを構築して、共有ハードウェア ステーション拡張機能インストーラーを生成します。 プロジェクトの出力は、拡張機能インストーラーです。 ビルドの完了後、生成された拡張機能インストーラーのパスが Visual Studio 出力ウィンドウに表示されます。
+7. 販売時点管理 (POS) 用の共有ハードウェア ステーション拡張機能を配置し、シナリオでテストします。
+
+    > [!NOTE]
+    > 拡張機能インストーラーを実行する前に、シールド共有ハードウェア サーバー インストーラーをインストールする必要があります。
+
+8. コマンド プロンプトを使用して生成された拡張機能インストーラーを実行します。 管理者モードでコマンド プロンプトを開き、**install** パラメーターを指定してインストーラーを実行します。 アンインストールするには、**uninstall** パラメーターを使用して拡張機能インストーラーを実行します。 例:
+
+    ```dos
+    C:\HardwareStation.Installer\bin\Debug\net461> .\HardwareStation.Installer.exe install
+    ```
+
+9. 現在実行中の場合は、POS を閉じます。
+10. POS を開いて、共有ハードウェア ステーションを使用するように構成します。
+11. 拡張機能ハードウェア ステーションのシナリオを検証します。
+
+## <a name="generate-an-extension-installer-for-the-shared-hardware-station-for-dynamics-365-commerce-10017-or-earlier"></a>Dynamics 365 Commerce 10.0.17 またはそれ以前で使用する共有ハードウェア ステーションの拡張機能インストーラーの生成
+
+Dynamics 365 Commerce 10.0.17 またはそれ以前の共有ハードウェア ステーションに拡張機能インストーラーを生成するには、[配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)の手順に従います。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

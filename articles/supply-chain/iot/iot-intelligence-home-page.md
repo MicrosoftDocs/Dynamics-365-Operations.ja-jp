@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8efa5b2110e14d0f0ce1be2045edd87ac0088ea0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: bfa6191317ed65fb943469d84369475f41bce7e2f416522dbe20acc092eff5da
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716530"
 ---
 # <a name="iot-intelligence-home-page"></a>IoT インテリジェンスのホーム ページ
 

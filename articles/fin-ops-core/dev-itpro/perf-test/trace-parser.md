@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d47d14261a5ea444b33752b7621c92c4dfb49580
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ed0914050f58961944a863bdf23bf71f1f7850fba83122b532b8fa668d2b05bc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742248"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 
@@ -58,7 +58,7 @@ ms.locfileid: "6357496"
 
 **呼び出しツリーの表示** **呼び出しツリー** タブを選択すると、すべての X++ メソッドの呼び出しツリーが表示されます。 タブは、次に示します。 
 
-[![呼び出しツリー タブに表示される情報の例](./media/3_desktop.png)](./media/3_desktop.png) 
+[呼び出しツリー タブに表示される情報の例](./media/3_desktop.png)](./media/3_desktop.png) 
 
 デスクトップ同様に、**X++** タブを表示し、すべての X++ メソッドの一覧を表示することができます。 包括的/排他的な期間、RPC、データベース呼び出しなどのフィールドでソートされます。 これらは Trace Parser の対応するタブに類似しており、同じ動作をすることに注意してください。
 

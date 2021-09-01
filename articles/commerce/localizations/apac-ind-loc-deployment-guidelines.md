@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: jiaqia
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: bedb748838ad8fed85e3f673328a690be3d5be65
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5611043573aaf6f3deede451c3503a99b752c5b5ad8c1c6e0671c0799d154473
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798849"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730961"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 

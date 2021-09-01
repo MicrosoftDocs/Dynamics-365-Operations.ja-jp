@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 034f5d9d34395818e0837e86e9724eec88ad22a2
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: af62aac7d2cb2d6935e28d70d9e0819b19c112cafad898f55a4613216a6e97b3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767697"
 ---
 # <a name="part-module"></a>パート モジュール
 

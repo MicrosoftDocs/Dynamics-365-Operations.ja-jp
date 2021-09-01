@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a416065f3799452ad66713b9e8d41a2385c39e9a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 19a3b65b5b0c6a8632454159783eabb1d0b5a6ab68e88900306258a0755bc788
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770787"
 ---
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 

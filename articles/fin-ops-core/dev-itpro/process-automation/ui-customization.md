@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7b6b9ec62031edea7c02897ed7818dcb5745c00
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c71719da6d316b55893ad99458c59ab946fcdb522c76aa58222332a25e178e42
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763450"
 ---
 # <a name="customize-the-user-interface"></a>ユーザー インターフェイスのカスタマイズ
 

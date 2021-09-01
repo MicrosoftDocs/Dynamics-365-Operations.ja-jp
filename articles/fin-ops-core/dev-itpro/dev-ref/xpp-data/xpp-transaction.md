@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 217d08428e6c695172c1863bc9472495e1ca666f
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 617d985929778918a447009e52f9921ac5f86f5c0f0288371a89d034cc3e6673
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661488"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769846"
 ---
 # <a name="x-transactional-integrity"></a>X++ トランザクションの整合性
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1aca330a14f6d310128c80092be5d593886942be
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 3b121759d831dfa5daca63dd4e3d823a0e64f0129338f4747ddd11da9e40a514
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763500"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 

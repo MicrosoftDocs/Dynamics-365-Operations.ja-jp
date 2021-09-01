@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56e972d67e8056b9b2a41de2419f882bb7604689
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: b7f82141b6ef79c2a62710f0082b7dab73a9bc50a06b2182ab77a079e68639d4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720674"
 ---
 # <a name="eventhandlerresult-classes-in-request-or-response-scenarios"></a>要求または応答シナリオの EventHandlerResult クラス
 

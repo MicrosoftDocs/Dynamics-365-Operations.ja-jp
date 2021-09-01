@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vetric
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 92be7663e0ffd625adb55a8e5c0c4e09ff15b0fb
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3842dcb938f46e5f3beec91851093dcaf53e5d426c04c17182be17e80f3c32ce
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749638"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 

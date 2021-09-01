@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: e8931c4d1fb5589a29204ae589a08ff98e381ee8
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: ab99ffc00814a859325145dcdddbfb4c208ee5a4c32338c336a3358e202fbbd5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739515"
 ---
 # <a name="application-business-events"></a>アプリケーション ビジネス イベント
 

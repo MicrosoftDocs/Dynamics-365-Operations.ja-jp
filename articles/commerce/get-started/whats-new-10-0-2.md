@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 71d5a81c0d5cc3c63ba292575cb6fb5c6ef3efb5
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0db7d4b105d3eb7f492f872c2a433bc100616bafd03f2058d38a9041aa441fe0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762318"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-for-retail-version-1002"></a>Dynamics 365 for Retail バージョン 10.0.2 の新機能と変更点
 

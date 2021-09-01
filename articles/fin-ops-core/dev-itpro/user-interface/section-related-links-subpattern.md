@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a856c24389b320089e1fc5d107acac65d1996932
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9b5760f9d891ef7c4835563d00f9f6d95684c1935da5c35cafab8da1c0d87c33
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745096"
 ---
 # <a name="section-related-links-subpattern"></a>セクション関連リンクのサブパターン
 

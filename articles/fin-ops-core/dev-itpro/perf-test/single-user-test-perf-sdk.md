@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: f815f05b14f9287c801f8a6b6abaffb9cf703f4d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7aa463ead3cefa297791b4d05e859d01f66d1300d83dcd649d38b98d243fa23e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742258"
 ---
 # <a name="single-user-testing-using-performance-sdk-and-task-recorder"></a>パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 

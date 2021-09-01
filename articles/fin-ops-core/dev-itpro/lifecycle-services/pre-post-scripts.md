@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 2929e2ade38888ae56ffef6a6b34de324f2e2abf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dc54f99dd54ed4f01667456217758029c556fd008a3ac9289a589610dc507613
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739453"
 ---
 # <a name="local-agent-pre-deployment-and-post-deployment-scripts"></a>ローカル エージェントの配置前スクリプトおよび配置後スクリプト
 

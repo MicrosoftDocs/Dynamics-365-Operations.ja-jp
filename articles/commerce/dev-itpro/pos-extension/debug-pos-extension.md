@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: d0a1017b983bb22a390b3d975adfd0d3516a36b6
-ms.sourcegitcommit: d84329f903d359ae042e8c0a4594982a7e06756f
+ms.openlocfilehash: 1cf87f4984e95aae23a321567a96f695d193e05453e9e725bf1838d4a8f7477b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5984232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746675"
 ---
 # <a name="debug-pos-extensions"></a>POS 拡張機能のデバッグ
 

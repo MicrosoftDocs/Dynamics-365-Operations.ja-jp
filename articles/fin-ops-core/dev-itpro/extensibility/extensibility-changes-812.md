@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: App 8.1.2
-ms.openlocfilehash: 2c0691426db49205cf3705044ff682629ebb4215
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: f3ba797c9b72aaf5ff98f11a65dfa785cf979bb1cd99b7ae36a633c4c8150e51
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773776"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-812"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張機能の変更
 

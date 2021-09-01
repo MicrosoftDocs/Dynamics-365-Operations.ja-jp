@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4fd670f8b4dd3c5aca1c3df20b823bc65bfc82e2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7758eb4ee499043478cddbbdc527c2852b8f455500b42b1b1973c5d5c4dd3062
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714699"
 ---
 # <a name="support-for-tipping-in-the-payments-sdk"></a>支払 SDK でのチップのサポート
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 895b39af8c87943fb9b7b397d1bf22fd2477cbf1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: be2da376ed259484c7d751e13fc3ea59b4e6c95a053ee9c91c519ca72b9c50a5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767713"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 

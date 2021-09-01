@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3a888c2fa8f90bfb311b383f6e6b5850d49293
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e20f9e8959941f7a210d83c61cb0d00a146234ee435fc5dda80802259f4f2945
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747227"
 ---
 # <a name="asset-classifications"></a>資産分類
 

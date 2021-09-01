@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8b0578e4bdd698c557986200a1dcfff2c75cff4
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 82824c09571b74cd8a386487fe108e37e22ef6fc919a5e1d124340108da80182
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729019"
 ---
 # <a name="make-backing-tables-consumable-as-financial-dimensions"></a>財務分析コードとして使用可能なバッキング テーブルの作成
 

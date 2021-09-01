@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 8e7f605dd47f528561bc6b51a06a67643e86c586
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 79bf0c9db4531679fb21b1d31c6cd484f100d19f0f0924e2a7217bdea26bf26d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775952"
 ---
 # <a name="ax-2012-features-that-were-postponed"></a>延期された AX 2012 の機能
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 570727a69b145cdae87e3082a9c2b886f3a2d0b1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c863daf698dc25fa45ea09c3c08a10fb4a01840fe570f205ab0a848feb4b70a8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348567"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767663"
 ---
 # <a name="environment-planning"></a>環境計画
 

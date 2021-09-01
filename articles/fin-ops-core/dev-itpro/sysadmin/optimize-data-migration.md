@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: toskaue
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 24e40139b65e0a10bee41fe405880ee750aaad72
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: ef4cfb21ac8758451a980b8c75b00f35483a394acc7ec4ebaabcc5d6707c4e1d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766353"
 ---
 # <a name="optimize-data-migration-for-finance-and-operations-apps"></a>Finance and Operations アプリのデータ移行の最適化
 

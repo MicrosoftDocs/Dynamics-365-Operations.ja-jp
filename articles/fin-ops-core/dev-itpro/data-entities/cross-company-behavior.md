@@ -1,7 +1,7 @@
 ---
 title: データ エンティティの会社間動作
 description: このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 25371
 ms.assetid: f293d97a-9f70-4c45-91d4-574731892353
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1a459beabf36934b5fc41e08eab13ac3bf2de13
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0472caa8a678fe98deae892a65c0840fec19ce05
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356251"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404191"
 ---
 # <a name="cross-company-behavior-of-data-entities"></a>データ エンティティの会社間動作
 

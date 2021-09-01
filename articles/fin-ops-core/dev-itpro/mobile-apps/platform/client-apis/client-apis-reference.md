@@ -9,12 +9,12 @@ ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 08/09/2017
-ms.openlocfilehash: 86663cea01c6f367ece97ae3449b18547dbb8f5d
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: ffbfe4e556b02b3bae92824d93fe994a8eefd81ae7eb81011db6a93b6156e623
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771970"
 ---
 # <a name="client-apis-home-page"></a>クライアント API のホームページ
 

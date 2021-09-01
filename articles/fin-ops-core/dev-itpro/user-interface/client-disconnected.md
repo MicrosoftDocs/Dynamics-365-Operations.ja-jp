@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 419a87506b2a0b68bc2480432f26bef5b88fdd43
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d6b104843d8ad1651127534938476f20310fd6b2a6ee384eac2f6e292510c807
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767693"
 ---
 # <a name="client-internet-connectivity"></a>クライアントのインターネット接続
 

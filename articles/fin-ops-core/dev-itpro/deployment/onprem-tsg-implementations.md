@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30]
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 95e60ff270f182b4d9dbbf9379d80f6bd0028836
-ms.sourcegitcommit: 41a5d18552bcc94cb1ddbbe3f3278eaf9d05f418
+ms.openlocfilehash: 43f0902a733168a45bb24390c713eae6b722093ef9707b27fc571d737cd2b812
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "6617032"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765086"
 ---
 # <a name="scripts-for-resolving-issues-in-on-premises-environments"></a>オンプレミス環境の問題を解決するためのスクリプト
 [!include [banner](../includes/banner.md)]

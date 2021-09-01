@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: da890477d345b84f6c9c3fb8ae8c6c90aaa9c692
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 36507acbb4e5f54a1124da7ee606775248797b0f6c60bc9c8d64a61133f4f625
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724319"
 ---
 # <a name="genericvalue-type"></a>GenericValue タイプ
 

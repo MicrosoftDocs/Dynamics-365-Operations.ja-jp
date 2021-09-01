@@ -1,7 +1,7 @@
 ---
 title: データ タスクの自動化
 description: このトピックでは、データ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法について説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 05/06/2021
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
-ms.openlocfilehash: b0e60afbca0854444fa1af065761d4c0460b0500
-ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
+ms.openlocfilehash: 1fee40163c5f2fc8a8bcef70f532d1d570767730
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "5989030"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403908"
 ---
 # <a name="data-task-automation"></a>データ タスクの自動化
 

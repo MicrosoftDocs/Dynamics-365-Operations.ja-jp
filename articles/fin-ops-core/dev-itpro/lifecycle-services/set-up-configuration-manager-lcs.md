@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3aca71a9fd05dac7226648d1e0d8f53a00ce8f03
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 70fb8448241eff111d38e65e675eb04b96619a168699ebfa6cd90a83ed4a1b7b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745850"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 

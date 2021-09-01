@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: eb551cd29070c831d93abf88a3cb858d2f588681
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 468d409b02d152b07ed822a7d50a3b5ce1fdd5663abea2c713a7a5632c320261
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741634"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: aa50399ab488009cd77b936c2796886773cda170
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 3dc363a93dc3f74013c8184023c1dc32938866e6726a96f1cd2133bf24a3223e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738528"
 ---
 # <a name="show-counts-in-fields"></a>フィールドに数を表示
 

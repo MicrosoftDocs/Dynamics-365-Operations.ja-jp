@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 08446aba3256e662a072c03c3ffdd240839e2432
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c222d1494857b96b0b54154866aae4a18e4404d7f6218e19a54f5930ccf2268a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719948"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 

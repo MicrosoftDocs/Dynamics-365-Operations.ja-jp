@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ad1e0dfbb072c9bfa9a4674a24e2a95fada8150
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: c64cb0ae24abd5c7226816b75676178094d561540ae7f27f6ab8c43defae7bc3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746567"
 ---
 # <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]

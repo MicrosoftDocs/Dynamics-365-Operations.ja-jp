@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: c11d8a4acf3e5aaffa8ea87490410ebf04f81e13
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 03afda7286ced41f7dd2942e84b33ff09be47e50
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661394"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394476"
 ---
 # <a name="select-data"></a>データの選択
 
@@ -35,7 +35,7 @@ ms.locfileid: "6661394"
 
 ```xpp
 CustTable custTable;
-select * from custTable;
+select firstonly custTable; //this is a short notation for 'select firstonly * from custTable;'  
 info("AccountNum: " + custTable.AccountNum);
 ```
 
@@ -43,7 +43,7 @@ info("AccountNum: " + custTable.AccountNum);
 
 ```xpp
 CustTable custTable;
-while select * from custTable
+while select custTable
 {
     info("AccountNum: " + custTable.AccountNum);
 }
@@ -53,7 +53,7 @@ while select * from custTable
 
 ```xpp
 CustTable custTable;
-select * from custTable;
+select custTable;
 info("AccountNum: " + custTable.AccountNum);
 
 next custTable;

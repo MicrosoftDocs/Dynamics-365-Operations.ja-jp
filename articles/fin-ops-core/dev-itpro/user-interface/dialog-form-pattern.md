@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e993ecdde65fe2b1e945e9ea516c807931aa32b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4aa5d780d6761c01df95c97d104603db6eef8f3110f4f889d4e311a71b8cee98
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723069"
 ---
 # <a name="dialog-form-pattern"></a>ダイアログのフォーム パターン
 

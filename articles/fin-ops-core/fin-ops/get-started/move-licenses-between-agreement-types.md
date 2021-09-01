@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: d76e4c16e551830698f2775554d7c4e18524bec8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bc58fdd65daa73b37f1f02ede477bef8399ee504e8ced52364a8a21b406f0c5f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767096"
 ---
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 

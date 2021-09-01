@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 6a289bf3d7ee18af85e5e73ec02ae4bb919c89d1
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 7e5b4750cb2a0e12162a555a115b3b682e9cff58e1aa4d495d9eaf61c02ba438
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940898"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712297"
 ---
 # <a name="find-information-about-standard-data-entities"></a>標準データ エンティティに関する情報の検索
 

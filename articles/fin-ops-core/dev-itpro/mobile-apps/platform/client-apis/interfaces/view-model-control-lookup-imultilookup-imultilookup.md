@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 225d2e2b149ec07c68cd84fc8ec26e0f14755819
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 43cd86010d879c157e1fe35fa9644fd51b5a632728562002e22f4c4661a8efff
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661458"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729694"
 ---
 # <a name="multilookup-type"></a>MultiLookup タイプ
 

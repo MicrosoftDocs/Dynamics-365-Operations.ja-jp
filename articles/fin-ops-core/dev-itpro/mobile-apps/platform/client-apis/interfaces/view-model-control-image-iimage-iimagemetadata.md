@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: e17e872d534852ae1f365f82f4edb317bc02df04
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 3f914017697ac4ee8397b661bd90a8860e088b1a24612195025f6b4c9fabf0e3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661584"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743907"
 ---
 # <a name="imagemetadata-type"></a>ImageMetadata タイプ
 

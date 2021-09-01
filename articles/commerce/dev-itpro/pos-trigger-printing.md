@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 78b40e39a2eca0028c428d357fbddbc52b74873c
-ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
+ms.openlocfilehash: 0220a9319fdf89cbc6628cfdba4068291a0f095f779155fe223afbeb39206dc5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6558407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761648"
 ---
 # <a name="pos-triggers"></a>POS トリガー
 

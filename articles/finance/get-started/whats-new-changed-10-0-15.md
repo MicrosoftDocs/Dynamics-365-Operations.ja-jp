@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f56b906299521d031cd4eea438e630a1dd1e552
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a263bec1a6907c5fd84868e853dedf75f607ccd523c0894d8e8b5aea6a001dae
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721743"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10015-january-2021"></a>Dynamics 365 Finance 10.0.15 (2021 年 1 月) の新機能および変更された機能
 

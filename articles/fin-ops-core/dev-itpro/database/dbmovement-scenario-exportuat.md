@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: fb88fb0cc7a886d8434e9b4388f864c0b8b6b8b0
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: a6ebe987eaa4e04a8a83d633b1295c86992baac94f6306acac01e72f30fccc4c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753016"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 

@@ -1,7 +1,7 @@
 ---
 title: 日付の有効期間
 description: このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 12/04/2019
 ms.topic: article
 audience: Developer
@@ -9,15 +9,15 @@ ms.reviewer: rhaertle
 ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37428cead7b5922c5d4c7a41f61d44e1b622c977
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7eee858f761bf07901183a54d23c83789a60ce85
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355282"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404133"
 ---
 # <a name="date-effectivity"></a>日付の有効期間
 

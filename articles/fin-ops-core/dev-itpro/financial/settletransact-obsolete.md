@@ -1,6 +1,6 @@
 ---
 title: CustTrans::settleTransaction を使用したトランザクションの決済
-description: このトピックでは、新しいCustTrans::settleTransactionメソッドについて説明を行い、CustTrans::settleTransact には実装されていない新機能について説明します。
+description: このトピックでは、新しい CustTrans::settleTransaction メソッドについて説明を行い、CustTrans::settleTransact には実装されていない新機能について説明します。
 author: RobinARH
 ms.date: 06/01/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: markskun
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: AX 10.0.4
-ms.openlocfilehash: 5bfc178f2a7d8c86ad8e60ab38f14915afc6a6d6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 85e29a71c28b89df98b412f02eb3a964b3e39bd9
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747973"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404018"
 ---
 # <a name="settle-transactions-by-using-custtranssettletransaction"></a>CustTrans::settleTransaction を使用したトランザクションの決済
 

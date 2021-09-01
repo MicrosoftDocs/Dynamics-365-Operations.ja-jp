@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7aff8cc89793cc1dd0a3a6fc1e2829e277868dd8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 03f03b60f89f7ca994d3bddc2a7b6c65a7e1228f24f514589ceea46178827d00
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770995"
 ---
 # <a name="manage-content-security-policy-csp"></a>コンテンツ セキュリティ ポリシー (CSP) の管理
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 722c23905a96c76ea4c0aa01e0fc94f4b705789c
-ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
+ms.openlocfilehash: 543eb07c26c6dbd8480f8c728106751675fb2ab33e08edd7f727ffdc5ded1c28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6560006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751589"
 ---
 # <a name="pos-extension-basics"></a>POS 拡張機能の基本
 

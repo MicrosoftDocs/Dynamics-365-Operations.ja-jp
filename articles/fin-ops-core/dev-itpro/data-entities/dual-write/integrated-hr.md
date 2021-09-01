@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ca232aaee6f7ccd877323853515b4ccdf140be5
-ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
+ms.openlocfilehash: 45434a9a4c9184b2c85692df321fcc2b1335cc9d5b6ee646e0c03ce28cd2a8e7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6542675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762440"
 ---
 # <a name="integrated-worker-job-and-position"></a>作業者、職務、および職位の統合
 

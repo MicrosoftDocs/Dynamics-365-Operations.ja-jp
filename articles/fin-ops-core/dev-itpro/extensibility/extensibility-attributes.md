@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 705c6e16dde82771dadffcf9c057a1713fda5d14
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 52015454d6d64b7e4a6386e20c8de73e1e022258438332699d7ac2daf00eecd4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742298"
 ---
 # <a name="attributes-that-make-methods-extensible"></a>メソッドを拡張可能にする属性
 

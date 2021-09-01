@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 543fb13bf9f043d7ffbdf918507ea8552428e28d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d9a6ddd0fbd7be108b58d0b0b4c168c972effe4520f60d2f491bff54f2984928
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731705"
 ---
 # <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 

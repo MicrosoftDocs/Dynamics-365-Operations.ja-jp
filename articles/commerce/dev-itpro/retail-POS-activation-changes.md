@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 2c7583d37c927ab05edf2db17d1545f318be752a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 45ce20f09e6a116c6df5284a6dcc927292360051382c49e23b7b6364aa415d69
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750694"
 ---
 # <a name="device-activation-of-a-customized-modern-pos"></a>カスタマイズされた Modern POS のデバイスの有効化
 

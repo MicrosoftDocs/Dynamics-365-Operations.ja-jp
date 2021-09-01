@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 29ca35b0bb44a3d17ef512ef128eedc6c253919d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3835d980cd4c2eaadcb1c7f4fb9dfc9c6aac118727ce0ef2fc04a7fda42b7fb4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752325"
 ---
 # <a name="commerce-data-residency"></a>Commerce データ所在地
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: paulliew
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: 6e48143c8465a97eb9c878378b038a6042afd1d6
-ms.sourcegitcommit: 18ca2df785e9656fdd4e8c0734eca2b2624fda10
+ms.openlocfilehash: 0e1d32c715b8347537919aefeea1f58ff836ed85f4f6d934a612d83ea8a3dde0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6293958"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719317"
 ---
 # <a name="set-the-session-inactivity-timeout"></a>セッション非活動タイムアウトの設定
 

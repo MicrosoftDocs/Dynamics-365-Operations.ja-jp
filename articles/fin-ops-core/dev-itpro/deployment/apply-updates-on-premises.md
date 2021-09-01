@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 7c2394bfe6a673c15aab8122b5a5a1d7f75f6f53
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 43912155ee45d36df7378708a5643e8e74088aab234db7088bc4f9884b100b88
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750536"
 ---
 # <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置への更新プログラムの適用
 

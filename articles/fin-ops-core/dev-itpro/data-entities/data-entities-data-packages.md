@@ -1,7 +1,7 @@
 ---
 title: データ管理の概要
 description: このトピックでは、Finance and Operations のデータ管理について説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom:
 - intro-internal
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f097a9b2805adf23e69ea479da91394a8b1f68f9
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6b83637ab5edcfacbdfc6f7d3c754e50099dd32f
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351037"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403829"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 

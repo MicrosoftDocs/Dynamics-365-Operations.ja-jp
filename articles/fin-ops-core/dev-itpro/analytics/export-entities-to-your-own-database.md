@@ -1,23 +1,23 @@
 ---
 title: 自分のデータベースの持ち込み (BYOD)
 description: このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。
-author: Sunil-Garg
-ms.date: 04/20/2020
+author: peakerbl
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: ee0e73b323459b4e8e192e297e582e2613a66965
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: e040da732aa9a5249d0708f02e8776908bb3357d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345826"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344512"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
@@ -60,7 +60,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 > [!NOTE]
 > BYOD データベースは、Finance and Operations アプリからアクセスできる必要があります。 BYOD にアクセスできない問題が発生した場合は、BYOD のファイアウォール規則が適切に構成されていることを確認する必要があります。
 > 
-> Azure SQL データベースのパフォーマンス層の使用が推奨されます。 層の詳細については 、[SQL Azure層](https://docs.microsoft.com/azure/azure-sql/database/service-tiers-dtu) を参照してください。
+> Azure SQL データベースのパフォーマンス層の使用が推奨されます。 層の詳細については 、[SQL Azure層](/azure/azure-sql/database/service-tiers-dtu) を参照してください。
 
 ## <a name="configuring-the-entity-export-option"></a>エンティティのエクスポート オプションのコンフィギュレーション
 
@@ -153,7 +153,9 @@ BYOD からデータを読み取るレポート システムのシナリオで�
 
 複数のエンティティを持つデータ プロジェクトを作成することができます。 バッチ フレームワークを使用することにより、このデータ プロジェクトの実行をスケジュールすることができます。 また、**バッチ処理でのエクスポート** オプションを選択することにより、データ エクスポート ジョブを定期的に実行するようにスケジュールします。
 
-同じジョブを使用してすべての会社からデータをエクスポートすることもできます。 プラットフォーム更新プログラム 27 以前では、この機能はフライト DMFEnableAllCompanyExport を有効にすることで有効化することができます。これについては、 [データ管理の概要](../data-entities/data-entities-data-packages.md) で解説しています。 プラットフォーム更新プログラム 27 以降では、この機能はデータ管理フレームワークのパラメーターで有効にすることができます。 この機能を有効にすると、データプロジェクトにエンティティを追加する際に新しいオプションが表示されます。 このオプションを有効にすると、すべての会社から特定のエンティティのデータをエクスポートすることができます。 ジョブは順次、各会社からデータをエクスポートします。 この動作は、パフォーマンスやその他の課題のために、異なる会社からのデータの並列エクスポートを許可することで変更され、ソリューションの信頼性が低下しました。
+#### <a name="exporting-data-across-companies"></a>会社間でのデータのエクスポート
+
+バッチで実行されるジョブは、複数の会社間でデータをエクスポートする場合にも使用できます。 バージョン 10.0.16 から、既定で、会社間での実行すべては順次実行されます。 この変更により、並列実行では信頼性が低かったパフォーマンスが向上します。
 
 > [!NOTE]
 > BYOD 用のエクスポート プロジェクト に複数の エンティティ を追加する場合は、BYOD エクスポート の全体的な信頼性が損なわれないように注意して実行する必要があります。 同じプロジェクトに追加する エンティティ の数を決定する場合は、異なるパラメータを考慮する必要があります。 これらのパラメータには、エンティティの複雑度、予想されるエンティティごとのデータ量、ジョブレベルでのエクスポート完了までの全体的な時間が含まれている必要があります。 大量の エンティティ を追加することは避ける必要があるため、より少ないエンティティ数で複数のジョブを作成することを推奨します。

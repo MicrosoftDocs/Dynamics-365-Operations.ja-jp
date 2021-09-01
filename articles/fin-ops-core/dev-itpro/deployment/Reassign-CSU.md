@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 04765c4c397a5bed082b4f8ec98355a09b138f4e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a1f0ee33d0ccde6067acecd0142efbcf963b8734e1f1b26dc44674e23f2617c8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740930"
 ---
 # <a name="migrate-channels-to-a-different-commerce-scale-unit"></a>チャネルを別の Commerce Scale Unit に移行する
 

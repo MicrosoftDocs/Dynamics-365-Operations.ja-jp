@@ -1,6 +1,6 @@
 ---
-title: 事業の継続性と障害復旧
-description: このトピックでは、Azure の地域の広範囲で稼働停止が発生した場合に Microsoft が Microsoft Dynamics 365 SaaS アプリケーション の実稼働インスタンスに対して提供する、事業の継続性と障害復旧について説明します。
+title: 事業継続とディザスター リカバリー
+description: このトピックでは、Azure リージョンの広範囲で稼働停止が発生した場合に Microsoft が Microsoft Dynamics 365 SaaS アプリケーションの実稼働インスタンスに対して提供する、事業の継続性と障害復旧について説明します。
 author: MicroSri
 ms.date: 07/13/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sriknair
 ms.search.validFrom: 2021-07-31
-ms.openlocfilehash: ae0180d3ded3b66ef7f8ae201d2de481dd01336f
-ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
+ms.openlocfilehash: 7f87b293ab67a34d88a85a1317469d4bf42596d4
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2021
-ms.locfileid: "6645458"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404125"
 ---
 # <a name="business-continuity-and-disaster-recovery"></a>事業の継続性と障害復旧
 

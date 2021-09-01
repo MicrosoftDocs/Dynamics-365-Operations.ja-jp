@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e57dded887561294b10a7435baae0dfdc997b27a
-ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
+ms.openlocfilehash: 69f0d69f95f311af83f3b25d5707a8071c72a1a5d85584f1f5d51334e777abb6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "6224578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763502"
 ---
 # <a name="update-an-environment"></a>環境の更新
 

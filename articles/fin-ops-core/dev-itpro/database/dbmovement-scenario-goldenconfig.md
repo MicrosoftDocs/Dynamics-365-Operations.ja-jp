@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 24fc78ca6101b8936101e18128fb2ffc91709feb
-ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
+ms.openlocfilehash: 36a39eb064db13359204a0768f2c3d6538aa95d86c61e9de9201b50102f5f635
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6092394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749644"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 

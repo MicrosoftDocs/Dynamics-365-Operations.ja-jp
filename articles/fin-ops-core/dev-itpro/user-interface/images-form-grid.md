@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af470497bc8d533d70f06e891c4518f1bede2a74
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 03f74d86f714f014151bac8ee2ad4d1db031ae24a042c2bf132d5a199d810117
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759958"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページまたはグリッドの画像
 

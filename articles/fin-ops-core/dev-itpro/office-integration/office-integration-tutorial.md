@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 61a1d10fa0a9d92c2735523603d7abd51624073a
-ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
+ms.openlocfilehash: d7ac7dec71d4c20c40c42716c6bb12562ad425d9c6bbbc1bb9e093a8bb2d220d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6092364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742290"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 

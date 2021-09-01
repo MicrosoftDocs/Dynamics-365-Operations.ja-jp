@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 86d846c2d58c982c488c2c876ea510d6a8d0c3bd
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: f7656634f5f870b34b01e02ed1bf052caa464fd4e8307b01561b6214a1915b71
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723097"
 ---
 # <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cf2b3c4aded4184a65f196b3e634ea1b501f170
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 52a88282ad5e72e13360f3fbd0d47c97a3d1fa1466e0381be1ad836658e6dcf2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724321"
 ---
 # <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c13d4ad131b85b92fc36ba0433759191b57ab8e3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c7507ec693142923612c43739c003f6bd2c10fea0f9a85666a486150145e697a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759996"
 ---
 # <a name="separation-of-localization-models"></a>ローカライズ モデルの分類
 

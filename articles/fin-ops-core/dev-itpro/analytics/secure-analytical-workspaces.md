@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bae0b7fdd0fd8513a62ade98e90b37e8b15c302
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: fea9957810d306e3c76d20cab0ede630334d1f102d11fea9121bd55530b4e156
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721916"
 ---
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 

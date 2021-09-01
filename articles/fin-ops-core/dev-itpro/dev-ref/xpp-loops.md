@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec489e47ffe7a334781d2d503fcf1223518e3c33
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 9dc239265b83c813d2a7a17615f9f215e3dfae04
+ms.sourcegitcommit: 9c007b271ba5ad5b9938fdd05776b73f6b7c9802
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661350"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "7411636"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 
@@ -64,7 +64,7 @@ for (int i = 0; i < 10; i++)
 
 ```xpp
 container cont = ["one", "two", "three"];
-int no = 0;
+int no = 1;
 while (no <= conlen(cont))
 {
     info(conPeek(cont, no));

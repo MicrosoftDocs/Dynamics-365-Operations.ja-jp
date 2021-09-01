@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9d66937f2b2d13c9473bfb31db39d36bb5944bde
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 261b87e6b180118e926e31d1257e3c551af1a541da09c64081e155efd179009b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712750"
 ---
 # <a name="skip-change-due-dialog-box-in-pos"></a>POS の「お釣りの支払い」ダイアログ ボックスをスキップする
 

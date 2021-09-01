@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d529f59728fe034acca0f5afb80cc56923595ef6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4656356699c12ea8fa6fed3a67db7e8e6c236e54dd43eec05bfd035d324fa067
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736238"
 ---
 # <a name="log-results-and-messages"></a>結果とメッセージを記録する
 

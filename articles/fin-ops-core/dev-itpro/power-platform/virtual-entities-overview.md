@@ -10,12 +10,12 @@ ms.custom: intro-internal
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 47b87f136f3123c5507064838c8536d1eb4f8928
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ffe3a72eaa9267ae164a5ed5b02ef438aa85ee2d
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346464"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384525"
 ---
 # <a name="virtual-entities-overview"></a>仮想エンティティの概要
 
@@ -32,7 +32,7 @@ Finance and Operations アプリ内のすべての Open Data Protocol (OData) �
 
 ## <a name="virtual-entities-for-core-human-resources"></a>Core Human Resources の仮想エンティティ
 
-Core Human Resources エンティティは、Finance and Operations エンティティが行うのと同じように仮想化することもできます。 詳細については、[Core HR の仮想エンティティ](/human-resources/hr-admin-integration-common-data-service-virtual-entities)を参照してください。
+Core Human Resources エンティティは、Finance and Operations エンティティが行うのと同じように仮想化することもできます。 詳細については、[Dataverse 仮想テーブルのコンフィギュレーション](../../../human-resources/hr-admin-integration-common-data-service-virtual-entities.md)を参照してください。
 
 ## <a name="architecture"></a>アーキテクチャ
 

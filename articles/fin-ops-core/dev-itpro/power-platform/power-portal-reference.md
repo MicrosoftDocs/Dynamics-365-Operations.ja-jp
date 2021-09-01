@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 2e819a3134ccb62ad0a63b76bc72a1a3560ce091
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d8539ca7ed9b3089010b37a346d3ba821005cf2cadc59a9c321bbcaf453522aa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736242"
 ---
 # <a name="power-apps-portals-with-finance-and-operations"></a>Power Apps ポータルと Finance and Operations
 

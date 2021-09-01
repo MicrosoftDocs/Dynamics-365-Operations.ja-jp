@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 4e5c60b1e45f174fa6e6695494c8338533adf560
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3beba3ca0f6918d6c14a3ed3277580b077bee92b1147c8aacc971bd589876f66
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762685"
 ---
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 

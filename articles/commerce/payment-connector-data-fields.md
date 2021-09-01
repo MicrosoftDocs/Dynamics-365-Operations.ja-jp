@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: 59e653f51df3883aea88843ea74ab72dd98ed9eb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e1cce4e00d57eeaf3605b660610c71a4e79c77ddd919b73a3acb8342b521074d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764575"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 

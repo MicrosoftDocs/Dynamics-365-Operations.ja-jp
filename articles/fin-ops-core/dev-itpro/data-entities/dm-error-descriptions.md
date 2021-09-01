@@ -1,7 +1,7 @@
 ---
 title: データ管理エラーの説明
 description: このトピックでは、データ管理で発生する可能性があるエラー メッセージについて説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 25341
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2018-09-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 913f3af82755c0bfda6737b8d9c28be56cc157e4
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: d64f8044f71ae04af51af90beea49f2315a7be73
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940923"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404183"
 ---
 # <a name="data-management-error-descriptions"></a>データ管理エラーの説明
 

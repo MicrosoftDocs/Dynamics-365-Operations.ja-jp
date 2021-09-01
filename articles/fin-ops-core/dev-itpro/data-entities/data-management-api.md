@@ -1,23 +1,23 @@
 ---
 title: データ管理パッケージ REST API
 description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
-author: Sunil-Garg
-ms.date: 04/22/2021
+author: peakerbl
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: 0ff97aa3a26743254e10be269a303eb22171b9d8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: bef43036ac539ee78b25d50e3eb85016d81ce99c
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351007"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404057"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
@@ -374,7 +374,10 @@ HTTP/1.1 200 OK
 
 ### <a name="getexecutionsummarystatus"></a>GetExecutionSummaryStatus
 
-**GetExecutionSummaryStatus** API は、インポート ジョブとエクスポート ジョブの両方に使用されます。 これは、データ プロジェクト実行ジョブのステータスの確認に使用されます。 この API は、クラウド配置とオンプレミス配置の両方に適用されます。
+**GetExecutionSummaryStatus** API は、インポート ジョブとエクスポート ジョブの両方に使用されます。 これは、データ プロジェクト実行ジョブのステータスの確認に使用されます。 この API は、クラウド配置とオンプレミス配置の両方に適用されます。 
+
+> [!NOTE]
+> API が、*成功* など、最終実行ステータスを返すよう、パッケージを作成する必要があります。
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus

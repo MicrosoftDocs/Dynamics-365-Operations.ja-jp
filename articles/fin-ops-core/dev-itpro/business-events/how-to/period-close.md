@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 26
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 917d18aed7cc379ec5f703c0f6c68b7cd7afc135
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: aa5abeb9f28fb184e3a434331208c1a8b011ecea1ff009655a91079cd0bf1e59
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745353"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773802"
 ---
 # <a name="business-events-in-financial-period-close"></a>財務期間終了のビジネス イベント
 [!include [banner](../../includes/banner.md)]

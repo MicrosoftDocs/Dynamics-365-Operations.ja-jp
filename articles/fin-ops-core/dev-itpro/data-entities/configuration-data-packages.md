@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d73a056f22aa1557d92b95ca4beed02e3fc69c4f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3e925db47c299e66d17dd696e570bff50fcc4bfcf7385af0905a43dee2db7837
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737839"
 ---
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 

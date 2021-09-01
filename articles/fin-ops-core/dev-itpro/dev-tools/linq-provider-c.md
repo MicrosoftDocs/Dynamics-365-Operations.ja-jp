@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 494ec676902c908784b4b033d90c8440e6f92e22
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: bc3dd85fbd6ccf59dc5a3b60f77b9de822a4062991a7f795328d7d28846dea5c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776595"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C\# の統合言語クエリ (LINQ) プロバイダー
 

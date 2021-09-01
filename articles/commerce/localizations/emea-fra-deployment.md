@@ -1,8 +1,9 @@
 ---
-title: フランスのキャッシュ レジスターの配置ガイドライン
+title: フランスのキャッシュ レジスターの配置ガイドライン (レガシー)
 description: このトピックは、フランスのローカライズ用配置ガイドです。
-author: AlexChern0v
-ms.date: 10/06/2020
+author: EvgenyPopovMBS
+manager: annbe
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +14,19 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: b6559d9e94c554fa6abce3b9c31e2745dacb69a7
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 105202207fd3b151f5819566f559f1f8bfc9ef4c
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020277"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343742"
 ---
-# <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
+# <a name="deployment-guidelines-for-cash-registers-for-france-legacy"></a>フランスのキャッシュ レジスターの配置ガイドライン (レガシー)
 
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> このサンプル会計統合機能は、[会計統合フレームワーク](./fiscal-integration-for-retail-channel.md)を利用しておらず、今後の更新で非推奨になります。 代わりに、[会計統合フレームワークに基づく機能](./emea-fra-fi-deployment.md)を使用する必要があります。
 
 このトピックは、Dynamics 365 Commerce のフランスでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 フランスのローカライズの詳細については、 [フランスのキャッシュ レジスター機能](./emea-fra-cash-registers.md) を参照してください。
 
@@ -95,21 +99,19 @@ Commerce バージョン 10.0.15では、Key Vaultまたは本社が使用でき
 CRT の新しい機能を適用するには、次の手順を実行します。
 
 1. 新しい CRT 拡張機能プロジェクトを作成します (C# クラス ライブラリ プロジェクト タイプ)。 Retail ソフトウェア開発キット (SDK) からサンプル テンプレートを使用します (RetailSDK\SampleExtensions\CommerceRuntime)。
-
 2. CertificateSignatureServiceRequest のカスタム ハンドラーを SequentialSignatureRegister プロジェクトに追加します。
-
 3. シークレット呼び出しを読み取るには、プロファイスされたパラメータのあるコンストラクターを使用し、GetUserDefinedSecretCertificateServiceRequest を実行します。 これにより、証明書プロファイルの設定で機能が開始されます。 この設定に基づいて、証明書は Azure Key Vault またはローカルマシン ストレージから取得されます。
+
+    ``` csharp
+    GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
+    GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
     
-    GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);  GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
-    
-    X509Certificate2 証明書 = getUserDefinedSecretCertificateServiceResponse.Certificate;
-    
+    X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
+    ```
+
 4. 証明書が取得されたら、データ署名に進みます。
-
 5. CRT 拡張機能プロジェクトを作成します。
-
 6. 出力クラス ライブラリをコピーし、手動テスト用の ...\RetailServer\webroot\bin\Ext に貼り付けます。
-
 7. CommerceRuntime.Ext.config ファイルで、カスタム ライブラリ情報で拡張機能の合成セクションを更新します。
 
 ## <a name="specifying-application-attributes-that-will-be-printed-on-receipts"></a>レシートに印刷されるアプリケーション属性を指定します。

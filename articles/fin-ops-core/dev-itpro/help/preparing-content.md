@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: fba424452ea4d4b9c2eaac7c0d079efd53495774
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 58bcb3da7c9518fe0bd3d01a1d0b969115badb3ab447192356af74fe16df2e45
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768395"
 ---
 # <a name="prepare-content-for-use-with-the-help-pane"></a>ヘルプ ウィンドウで使用するコンテンツの準備
 

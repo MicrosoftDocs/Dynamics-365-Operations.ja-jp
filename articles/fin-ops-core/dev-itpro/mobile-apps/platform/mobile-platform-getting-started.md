@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 3044db14b3b123ce3f3df1e5029420de1b9de1c1
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: a176ce4db10414a94041aff4be8aafd29da17605a26bb17b3b66c080e2e106de
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6335647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746561"
 ---
 # <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームを使い始める
 

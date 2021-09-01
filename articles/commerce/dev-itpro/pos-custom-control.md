@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: d4d1c9d3eab92d25f40495b7b5431b9150512b18
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48917091d8e20c890da881cde0d47e03acdbb1cec377b34738ab28460440c605
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355436"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744498"
 ---
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 

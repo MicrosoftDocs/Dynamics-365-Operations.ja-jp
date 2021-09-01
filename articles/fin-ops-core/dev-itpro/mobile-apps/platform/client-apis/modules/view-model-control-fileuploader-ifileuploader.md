@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 581608f6d7acb145dce65ee35c6d264184d9653d
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 47a801e10add35c456b34925f03f0f0b22915f525d42cd61d18c1a4fca3d0d52
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661552"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752319"
 ---
 # <a name="file-uploader-module"></a>ファイル アップローダー モジュール
 

@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5543f6959f163eaa43d2f4f9e2a7d7946ace6ec9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f6d52c3c7a68f87852622cd63a22edbc35abddaedce6cc08bf5e778f8c9147e0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719944"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インド向けアップグレードと N-1 のサポート
 

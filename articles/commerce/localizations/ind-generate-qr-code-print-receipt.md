@@ -2,7 +2,7 @@
 title: QR コードの生成とレシートへの印刷
 description: このトピックでは、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
 author: prabhatb2011
-ms.date: 03/14/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6e7794e944ce2f10ae32f7bd9259899c3dae1858
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c0e924c28f35b14453a0926b3680a8a1b33804936711202b965895e63cff6dfe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346730"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725324"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts"></a>QR コードの生成とレシートへの印刷
 
@@ -164,9 +164,52 @@ QR コードの新しいカスタム レシート フィールドをサポート
           </composition>
        </commerceRuntimeExtensions>
     ```
+   
+## <a name="printing-qr-code-images-on-opos-printers"></a>OPOS プリンターで QR コードのイメージを印刷する
 
-## <a name="appendix-a"></a>付録 A
-### <a name="sample-of-a-crt-extension-class-for-printing-qr-codes"></a>QR コードを印刷するための CRT 拡張クラスのサンプル
+OPOS プリンターを使用している場合、QR コードのイメージを *png* 形式から *bmp* 形式に変換する必要がある場合があります。 この変換の例を次に示します。
+
+   ```C#
+    ...
+        var qrCodeRequest = new
+            EncodeQrCodeServiceRequest(stringBuilder.ToString())
+            {
+              Width = 150, // Replace with desired QR code width
+              Height = 150 // Replace with desired QR code width
+            };
+
+            EncodeQrCodeServiceResponse qrCodeDataResponse = await
+            request.RequestContext.ExecuteAsync<EncodeQrCodeServiceResponse>(qrCodeRequest).ConfigureAwait(false);
+
+            string qrCode = ConvertImagePNGToBMP(qrCodeDataResponse.QRcode);
+            receiptFieldValue = $"<I:{qrCode}>";
+            return receiptFieldValue;
+    ...
+    /// <summary>
+    /// Converts an image from "png" to "bmp".
+    /// </summary>
+    /// <param name="qrCode">Base64 represents the image to convert.</param>
+    /// <returns>The image as base64.</returns>
+    private static string ConvertImagePNGToBMP(string qrCode)
+    {
+        string convertedQRCode = qrCode;
+
+        byte[] imageBytes = Convert.FromBase64String(qrCode);
+        using (MemoryStream msFrom = new MemoryStream(imageBytes))
+        {
+            var image = Image.FromStream(msFrom);
+            using (MemoryStream msTo = new MemoryStream())
+            {
+                image.Save(msTo, ImageFormat.Bmp);
+                convertedQRCode = Convert.ToBase64String(msTo.ToArray());
+            }
+        }
+
+        return convertedQRCode;
+    }
+   ```
+
+## <a name="sample-of-a-crt-extension-class-for-printing-qr-codes"></a>QR コードを印刷するための CRT 拡張クラスのサンプル
 
  ```C#
 namespace Contoso
@@ -492,5 +535,4 @@ namespace Contoso
             }
         }
     }
-   ```
-   
+   ```     

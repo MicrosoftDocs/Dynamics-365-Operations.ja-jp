@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: b0979bce426c05e495a0a88e5dcaed9a859344bf
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 6e74c77e8b3fe0577222cb6af70633711c44ed671f26f7c88e4c87813e8ac885
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769359"
 ---
 # <a name="pre-extended-columns-in-the-channel-database"></a>チャネル データベースの事前拡張された列
 
@@ -162,6 +162,7 @@ namespace Contoso
 | LOGISTICSADDRESSZIPCODE       | STATE                                                                        | Nvarchar (60)  |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | ZIPCODE                                                                        | Nvarchar (60)  |                       |                                     |
 | LOGISTICSADDRESSSTATE        | STATEID                                                                        | Nvarchar (60)  |                       |                                     |
+| LOGISTICSELECTRONICADDRESS   | COUNTRYREGIONCODE                                                              | Nvarchar (10)  |   ValidateElectronicAdtronicServiceRequest                    |                                     |
 | RETAILASYNCADDRESS            | STREET                                                                        | Nvarchar (400) |                       |                                     |
 | RETAILASYNCADDRESS            | COUNTY                                                                        | Nvarchar (60)  |                       |                                     |
 | RETAILASYNCCUSTOMER           | STREET                                                                        | Nvarchar (400) |                       |                                     |

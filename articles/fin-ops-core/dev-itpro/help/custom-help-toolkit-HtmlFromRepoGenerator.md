@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 3e55b19bf0b27d7a5de1559d3cffd9c1897484e9
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: a8087351fdf1eff72ce5a2dd7670cf603b829db6a13b22b669de0df575426005
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758172"
 ---
 # <a name="custom-help-toolkit-the-htmlfromrepogenerator-tool"></a>カスタム ヘルプ ツールキット: HtmlFromRepoGenerator ツール
 

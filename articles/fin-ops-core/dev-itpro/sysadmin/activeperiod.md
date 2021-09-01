@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: e63f4bf0f711d0c24b070c012439acc4f1cc53ec
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1ea305178f2725fa55716b60e3daccf7ac7e44d531087c4b713e0da85131077b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740237"
 ---
 # <a name="active-batch-periods"></a>有効なバッチ期間
 

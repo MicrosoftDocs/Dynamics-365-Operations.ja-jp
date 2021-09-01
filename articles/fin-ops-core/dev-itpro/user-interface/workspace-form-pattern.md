@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2a6ab87b57690c25a4b16f2885a1f2bdaa5b3a1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 45a3264a0ab67b723de3c7899cec2e407c7a4eb4a408a42e88e76a67f5bb9f27
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738494"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 

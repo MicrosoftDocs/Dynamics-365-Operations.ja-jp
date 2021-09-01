@@ -2,7 +2,7 @@
 title: クラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Finance and Operations アプリのシステム要件を一覧表示します。
 author: sericks007
-ms.date: 07/16/2021
+ms.date: 08/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 601bf7666de3de89e2b2d5bfd14ba98f6133ae99
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 9c1d2080949ad268b2e058ffd5efa54249de6012
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638816"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384599"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -40,18 +40,27 @@ ms.locfileid: "6638816"
 
 > [!NOTE]
 > パフォーマンスを最適化し、最適なエクスペリエンスを提供するために、最新のブラウザ、特に Microsoft Edge の最新バージョンを使用することをお勧めします。 
+> 
+> **バージョン 10.0.21 以降:** Microsoft Edge の古いバージョンおよび Google Chrome (バージョン 83 以前) のユーザーには、ブラウザーを最新バージョンに更新するよう求めるメッセージが表示されます。
+>
+> バージョン 10.0.21 は、プレビュー リリースの一部として使用可能です。 バージョン 10.0.21 のコンテンツと機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](public-preview-releases.md) を参照してください。
 
-### <a name="internal-explorer-deprecation"></a>Internal Explorer の廃止 
+### <a name="internet-explorer-deprecation"></a>Internet Explorer の廃止
+
 2020 年 12 月に Internet Explorer 11 のサポートが廃止され、2021 年 8 月にブラウザーのサポートが終了します。 詳細については、[Internet Explorer 非推奨のお知らせ](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps) を参照してください。
 
-バージョン 10.0.20/プラットフォーム更新プログラム 44から、Internal Exploler (IE) で Finance and Operations アプリにアクセスするユーザーにそのブラウザーに対するサポートの終了に関する通知が表示されます。 2021 年 8 月 17 日より前に、複数の IE ユーザーに対して、IE サポートが間もなく終了するという情報メッセージが表示されます。 その日以降、サポートが正式に終了したという警告が IE ユーザーに表示されます。 組織は、IE がユーザーにとって必須になっている以外は、これらの通知を継続することが推奨されます。そのケースでは、**Internet Explorer のサポート終了通知** 機能を無効にし、ユーザー ベースを Microsoft Edge または他の最新のブラウザーに移行する内部プロセスに依存することによりこれらの通知の非表示を選択できます。 
+バージョン 10.0.20 から、Internet Explorer で Finance and Operations アプリにアクセスするユーザーにそのブラウザーに対するサポートの終了に関する通知が表示されます。 2021 年 8 月 17 日より前に、複数の Internet Explorer ユーザーに対して、Internet Explorer サポートが間もなく終了するという情報メッセージが表示されます。 その日以降、サポートが正式に終了したという警告が Internet Explorer ユーザーに表示されます。 組織は、Internet Explorer がユーザーにとって必須になっている以外は、これらの通知を継続することが推奨されます。そのケースでは、**Internet Explorer のサポート終了通知** 機能を無効にし、ユーザー ベースを Microsoft Edge または他の最新のブラウザーに移行する内部プロセスに依存することによりこれらの通知の非表示を選択できます。 
 
-Finance and Operations アプリ内の IE の使用をブロックするための現在の目標は 2022 年 4 月です。 組織およびユーザーがそのブロックに対応するために、2022 年 1 月以降、IE ユーザーには IE サポートが間もなくブロックされることを示す無視できないエラー メッセージが表示されます。 このエラー メッセージは **Internet Explorer のサポート終了通知** 機能によって制御 **されない** ので、組織がこのメッセージを非表示にする必要がある場合、 顧客は Microsoft サポートに連絡する必要があります。    
+Finance and Operations アプリ内の Internet Explorer の使用をブロックするための現在の目標は 2022 年 4 月です。 組織がそれ以前に Internet Explorer をブロックする必要があり、バージョン 10.0.21 以降を使用している場合は、Microsoft サポートに問い合わせてください。
+
+組織およびユーザーが今後の Internet Explorer のブロックに対応するために、2022 年 1 月以降、Internet Explorer ユーザーは Internet Explorer サポートが間もなくブロックされることを示す無視できないエラー メッセージを受信します。 このエラー メッセージは **Internet Explorer サポート終了通知** により制御 **されません**。 このメッセージを組織に対して非表示にする必要がある場合、顧客は Microsoft サポートに問い合わせる必要があります。
 
 ### <a name="special-considerations"></a>特別な注意事項
+
 - タスク レコーダーがスクリーンショットをキャプチャし、生成された Microsoft Word ドキュメントにそれらを含めるには、プレリリース版の Chrome 拡張機能をインストールする必要があります。
 - 財務報告のワークフロー エディターおよびレポート デザイナーは、ClickOnce アプリケーションとして起動されます。 それには 64 ビットの互換性のあるオペレーティング システムが必要です。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをそのままの状態でサポートします。 Chrom を使用している場合、ClickOnce アプリケーションを使用するには、[Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) などの ClickOnce 拡張をインストールする必要があります。 匿名モードで Chrome を使用する場合、ClickOnce の拡張機能が匿名モードに対しても有効化されていることを確認します。
 - PDF ファイルをプレビューするには、Windows 10 の Microsoft Edge (公開されている最新のバージョン)、もしくは Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン) などの最新のブラウザを使用することをお勧めします。
+
 ## <a name="network-requirements"></a>ネットワーク要件
 
 - アプリは、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 この待機時間は、ブラウザー クライアントからアプリをホストする Microsoft Azure データ センターまでの待機時間のことです。 [AzureSpeed.com](https://www.azurespeed.com) にてネットワークの待機時間をテストすることをお勧めします。
@@ -84,6 +93,5 @@ Finance and Operations アプリ内の IE の使用をブロックするため�
 ## <a name="additional-resources"></a>追加リソース
 
 [評価版コピーの入手](../../dev-itpro/dev-tools/get-evaluation-copy.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

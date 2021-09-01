@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a634c1da5aed4bb6b6258b2c522e6f723bb25d5b
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 834235be3ff0e9a0ccd5c8442acb6ec42aeb7be834bd6ae1236db2543104c635
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111584"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715218"
 ---
 # <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールの分析コード エントリ コントロールへの移行
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: e19f6e65b0544bd832990c581c498264ca6de71b
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 9c6410fc5a9999466637e7addedf146c447034b5d13397334e018beb0fbc6b26
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719325"
 ---
 # <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けガイドライン
 

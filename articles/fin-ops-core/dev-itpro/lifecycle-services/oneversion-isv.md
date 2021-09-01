@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f746e52da3c95e53082da471e577c9638eff2299
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5680baec144c8f8ba449449d52e8e28ceb16775948916ba2e55ae645ef591526
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759205"
 ---
 # <a name="delivering-isv-solutions-using-one-version"></a>1 つのバージョンを使用した ISV ソリューションの提供
 

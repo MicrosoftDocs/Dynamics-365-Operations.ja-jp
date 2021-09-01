@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: b9e941bbc09644059639df0005063d8cd6dfe1f8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: aaf2715729a67b15be7e591364bece366dfd02cfc505160db8f6309a53e44da8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754983"
 ---
 # <a name="server-side-development-workspace-x-apis"></a>サーバー側の開発 (ワークスペース X++ API)
 

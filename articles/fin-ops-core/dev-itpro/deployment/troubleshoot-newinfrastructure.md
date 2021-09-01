@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 997c88528fc7fc5d1d2aa02e1c12fbeb5500cea7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f4aca8e202911897f1272d409ff1da0a54ba18a4a4f95337df87c9ee8af3e772
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765084"
 ---
 # <a name="troubleshoot-environments-deployed-through-self-service-deployment"></a>セルフサービス配置で配置された環境のトラブルシューティング
 

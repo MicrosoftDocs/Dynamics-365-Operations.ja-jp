@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 397a594b96f4e11c8f58a986d6a2b7093d0618e8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 909314cfdf62ddc7e07c076453e0b324be2995f1a06ed0642358f993718b4be2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745106"
 ---
 # <a name="image-preview-subpattern"></a>画像のプレビューのサブパターン
 

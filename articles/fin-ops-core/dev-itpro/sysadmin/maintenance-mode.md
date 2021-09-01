@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 415afbc9cdcfe74a280c82e1013779bff3c5edd6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 47254584b4792d9425a6160ba61d208f1056bace
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359733"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343706"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
@@ -42,7 +42,7 @@ ms.locfileid: "6359733"
 
 サンドボックスおよび運用環境のメンテナンス モードをオン/オフにする操作と、サービス操作にとても似ています。 メンテナンス モードのオンまたはオフに失敗した場合は、**再開**、**ロールバック**、および **中止** などのオプションが表示されます。 操作に失敗した理由をトラブルシューティングするために **ログをダウンロード** するオプションもあります。
 
-## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-hosted-in-a-microsoft-subscription"></a>Microsoft サブスクリプションで動作している開発テスト環境またはデモ環境にてメンテナンス モードをオンにする/オフにする。
+## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-hosted-in-customers-subscription"></a>顧客のサブスクリプションで動作している開発テスト環境またはデモ環境にてメンテナンス モードをオンにする/オフにする
 1. 開発者のマシンに RDP の接続を確立します。
 2. 開発者のマシンで、LCS から axdbadmin ユーザーの資格情報を使用して SQL Server にサインインします。 次に、AXDB データベースに切り替えて、次のコマンドを実行します。
 
@@ -54,18 +54,17 @@ ms.locfileid: "6359733"
 4. サービスが再起動されると、システムはメンテナンス モードになります。
 5. メンテナンス モードの活動を完了したら、ステップ 2 および 3 を繰り返しますが、値はステップ 2 で 0 に設定します。
 
-## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-and-vhd-based-environments-hosted-in-customers-subscription"></a>サブスクリプションで動作しているVHDベースの環境あるいは、開発テスト環境またはデモ環境にて、メンテナンス モードをオンにする/オフにする。
+## <a name="turn-maintenance-mode-on-and-off-for-vhd-based-environments-hosted-by-customers"></a>顧客がホストする VHD ベース環境でメンテナンス モードのオン/オフを切り替える
 
 次のコマンドを実行して、メンテナンス モードをローカルでオンにすることができます。 
 
 > [!Note]
 > 一部の仮想マシン (VM) では、Deployment.Setup.exe ツールの正確な場所が異なる場合があります。 AosServiceWebRootbin を確認してください。
->
->
->    ```Console
->    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir 
->    J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
->    ```
+
+```Console
+J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
+```
+コマンドを実行した後、**World Wide Web 公開サービス** を再起動して、IIS をリセットします。 その後、システムはメンテナンス モードになります。  
 
 次のテーブルに、このコマンドで使用されるパラメーターを示します。
 
@@ -92,7 +91,7 @@ Application Object Server (AOS) のインスタンスを再起動すると、シ
 ```Console
 J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
 ```
-
+コマンドを実行した後、**World Wide Web 公開サービス** を再起動して、IIS をリセットします。 その後、システムはメンテナンス モードではなくなります。  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

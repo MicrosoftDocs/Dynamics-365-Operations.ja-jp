@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2ec1546406fe18a71ae26cd62f03fe2f0193e877
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 6c870bd55d39849a6f9e053006ad21e71bc9b64038812e320b97d11277a58e58
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865890"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730567"
 ---
 # <a name="turn-off-model-customization-and-deprecate-functionality"></a>カスタマイズをオフにして機能を廃止
 

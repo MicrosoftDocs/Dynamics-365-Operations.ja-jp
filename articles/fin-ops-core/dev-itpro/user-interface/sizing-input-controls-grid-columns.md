@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eec9186898e152f7713c56926813eccb483e0021
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 45e541f1d551239913f19d96d153a06a173ae62a91985ff55813201cd4a5af88
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188097"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766351"
 ---
 # <a name="input-controls-and-grid-column-sizes"></a>入力コントロールとグリッド列のサイズ
 

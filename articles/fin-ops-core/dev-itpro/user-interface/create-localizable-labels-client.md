@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edab8e6d19cfd29c8829acfa74e9ff9c5d99efb4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 77a7ba9765d01bf841b8021e4f94bdaaad5b814d84094c007c06ce736a3dbcf4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737825"
 ---
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 

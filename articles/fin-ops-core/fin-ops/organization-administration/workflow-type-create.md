@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 4dcda1abcd199130f8aeb578aad3b65bf82d0d65
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0e280d2f5dae948f2a6c6177f61c9509fdbe42889761d2394c33ab21c8937016
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749316"
 ---
 # <a name="create-a-workflow-type"></a>ワークフロー タイプの作成
 

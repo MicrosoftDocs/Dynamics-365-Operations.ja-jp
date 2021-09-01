@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: bcccc218cccbfb8558c3611ed3b9b963c56eae55
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9e76a5b5b6e6f3b6dfae3eb66a56d8ab810dbff25b69eef0b0202424d97cdb1c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759215"
 ---
 # <a name="extend-table-maps-that-are-used-for-versioning"></a>バージョン管理で使用されるテーブル マップの拡張
 

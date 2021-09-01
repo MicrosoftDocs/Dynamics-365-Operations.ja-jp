@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 89d664cfa207b4d32153433d2cec6e4d55f12943
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f29cc70cfa14bc05e1023bed5ba653d2e03e9039a4213989d30610a59addeea6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6352750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738283"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>LBD を使用してカスタム ハードウェアにエッジのスケール ユニットを配置する (プレビュー)
 

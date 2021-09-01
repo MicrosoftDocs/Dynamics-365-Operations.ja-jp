@@ -1,6 +1,6 @@
 ---
 title: 承認テスト ライブラリのエンティティ
-description: このトピックでは、データと関連する動作を表すテスト エンティティ クラスについて説明します。
+description: このトピックでは、データおよび関連動作を表すテスト エンティティ クラスについて説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 0931fd85d07526c257e2f2ff383001582c05e913
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 4d6daf38fc2bfad78b1798d2dd5b56648c98e727
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865884"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404093"
 ---
 # <a name="entities-in-the-acceptance-test-library"></a>承認テスト ライブラリのエンティティ
 

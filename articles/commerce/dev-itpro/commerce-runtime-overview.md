@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 656416ca9efecc45241f5d56c9d67bcbfca777df
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c9c7e4a4c91a0b5a316373ede3cdf5589e88e68a2a1332424859c227152afc32
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766473"
 ---
 # <a name="commerce-runtime-crt-architecture-and-configuration"></a>Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: 9b06cee31ab8932c6ae4ce05c0a5396f71cea59f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c656e52442a3f615f84da23cc730539b01ab60b7dbfdad8db9a4a7cb3e6326d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772893"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 

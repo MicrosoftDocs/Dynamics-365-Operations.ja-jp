@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6699a4e55a46d56e150f0c896a64d205a23716df
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7b20ed1d325b61fd5a32b0268d19d1cf7e0d44d557d20a6c6e82328c21c27faa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713878"
 ---
 # <a name="configure-high-availability-for-sql-server-reporting-services-ssrs-nodes"></a>SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
 

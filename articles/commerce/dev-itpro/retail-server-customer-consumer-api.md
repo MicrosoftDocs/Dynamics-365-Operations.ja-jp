@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bae117aa0292192753be10a709fb85cf44c01c2c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9d99fdc36ac41e21cb124483498a546dfe6ba14483be0ecd6cf3d9011ec88274
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724540"
 ---
 # <a name="commerce-scale-unit-customer-and-consumer-apis"></a>Commerce Scale Unit の顧客およびコンシューマー API
 

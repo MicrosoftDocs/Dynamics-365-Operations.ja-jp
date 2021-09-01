@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: b7ad980db3d0eafa557f0865ed12ff6ba4e87b71
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: db0fc478a31cd544c09cf57d9d194cc5567d38a0aaa166f43e025cecddd61e12
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713870"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 

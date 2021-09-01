@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcb4d87a3fcd3690d098df48b768c0d87ad5efc7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 640968da9fead7df2f5b91353d5bf92d5e950a28b8814a75f05c31533e00555f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358529"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716010"
 ---
 # <a name="build-navigation"></a>ナビゲーションの構築
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b56bc3fc26f0c5fefc5a04e77b28acae718057fe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c131c0530d6bca55b5c219c89ae4f5456fd18ab81d33d7653fc6ccbcddbe60ce
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716132"
 ---
 # <a name="external-and-inline-script-modules"></a>外部およびインライン スクリプト モジュール
 

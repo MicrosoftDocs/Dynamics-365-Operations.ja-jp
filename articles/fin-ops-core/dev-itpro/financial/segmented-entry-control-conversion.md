@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93dabe8bf6736dbf16e6a92344897b7ba335d078
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: afb265397b7073299728943d6a89dab8e4fa804a56506b9a869a97f5a138cf91
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759216"
 ---
 # <a name="migrate-segmented-entry-controls"></a>セグメント化されたエントリ コントロールの移行
 

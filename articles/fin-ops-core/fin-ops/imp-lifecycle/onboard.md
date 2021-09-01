@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9ae3853fc443285cfa8d51d4146f08dd184d3ba9
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 4d7e8a24f361145e5efa8610552e1b4383927f435cf72df8aa52b6c6495ed994
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754970"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 

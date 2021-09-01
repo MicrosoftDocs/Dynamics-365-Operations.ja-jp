@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4324ccac01bcfa5a4d1afa89882dcf7eb363137
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 03313b434ca5cad31911c5e58685fe3091705fc2b259e0d486d4db01e5d11789
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766369"
 ---
 # <a name="get-evaluation-copies"></a>ベータ評価版の入手
 

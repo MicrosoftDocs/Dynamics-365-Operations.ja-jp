@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 63bfb5526c9ac15a5d90e239b6516e229e5d3f81
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 24da610348c4a0837f3ffac97e912e71b134d983d094bbc0ff9ba5aebe51e0a1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738530"
 ---
 # <a name="hyperlinkdesign-type"></a>HyperLinkDesign タイプ
 

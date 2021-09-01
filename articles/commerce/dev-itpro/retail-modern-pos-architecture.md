@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4c108a3b7fdf15157ae97a3d7d8dbaf0045e4fa8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c73dab1769770431c6767ea3a6409b27a99c252d4aa8fbe00980c0b7ae1336fa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739549"
 ---
 # <a name="modern-pos-mpos-architecture"></a>Modern POS (MPOS) アーキテクチャ
 

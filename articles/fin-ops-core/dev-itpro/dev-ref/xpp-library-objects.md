@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1ea765a670b9691fa68e6d0c6f3f1b0a52f73e2
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: b657ca5dd7d77f1a3cce59ae45237ab1e3151db38f97c5c32635a37b8cf648a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734680"
 ---
 # <a name="x-class-library"></a>X++ クラス ライブラリ
 

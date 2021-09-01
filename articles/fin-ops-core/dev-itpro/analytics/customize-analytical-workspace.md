@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d584a2d421360ee8fb2ed1c62d59fe430872abd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5320e8fdffbd231ef63fc8a8bd05d18e2f09a3f6215fa70f40c76c02a387a6f8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724431"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 

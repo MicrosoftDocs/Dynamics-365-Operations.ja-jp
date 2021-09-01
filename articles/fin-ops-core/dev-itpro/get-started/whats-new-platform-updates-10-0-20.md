@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 621118b5ee37b2ff0864d081ba3fbe97273b8ffd
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 4b30be719f15dc906ad4d8128e8a441b5afdb93e9e4dbddce2d93676a5035219
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638281"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720664"
 ---
 # <a name="platform-updates-for-version-10020-of-finance-and-operations-apps-august-2021"></a>Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)
 

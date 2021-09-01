@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: e8b4719a5e60990bab546242c5deae6b0b2074f1
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: f4488586e160239b8357f6a45d587f24510e7e5cd3325c5bbe85ea30b5aae40d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750528"
 ---
 # <a name="image-module"></a>画像モジュール
 

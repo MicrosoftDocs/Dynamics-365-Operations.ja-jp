@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: bbcdd94c8f9575bd3c520cc4e395f988368eec34
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8dc6e83606b85b52704828ae4ef557e9b4d35cc38220f0cd104b555b3e140d30
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750526"
 ---
 # <a name="batch-manager-security-role"></a>バッチ マネージャーのセキュリティ ロール
 

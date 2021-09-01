@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e79fa89dc8565b00958c266f326643bea33b9eb
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 3814dfe2ec5d749ffbea3592c3f1f203aadedb50b72dc904ff0a9e4cbc2ac6da
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755840"
 ---
 # <a name="powerbicom-integration-with-on-premises-environments"></a>オンプレミス環境との PowerBI.com の統合
 

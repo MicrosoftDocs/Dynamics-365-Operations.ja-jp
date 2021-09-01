@@ -1,7 +1,7 @@
 ---
 title: アプリケーション コネクタ
 description: このトピックでは、Microsoft Power Automate およびロジック アプリのアプリケーション コネクタに関する情報を提供します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 9ff3ae5e65b83e60740a46a1f8b3f44db0ee820f
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 352415974cb6f5260e935e7432b9c353a43dfc92
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941011"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404020"
 ---
 # <a name="application-connector"></a>アプリケーション コネクタ
 

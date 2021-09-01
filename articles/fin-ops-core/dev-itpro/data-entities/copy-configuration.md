@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: c508e33cfc7fd58fd577adff985801d8ff5d06b5
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 5046de15cdf2bdcd362aac0a35b14a1f07283df3f18ca60b82c21bef200498ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748362"
 ---
 # <a name="copy-configuration-data-between-companies-or-legal-entities-overview"></a>企業または法人エンティティ間で行う設定データのコピーの概要
 

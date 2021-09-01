@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4922f5bc2d4e6ea633798d567bdcbaa55f4cb28d
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 28752f083247c8071389b07e92fc97871bc88d8965d4bd910e4c976423079277
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338517"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743195"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 

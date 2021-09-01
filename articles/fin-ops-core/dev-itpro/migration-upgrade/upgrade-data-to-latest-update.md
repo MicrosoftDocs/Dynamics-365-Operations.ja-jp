@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 5b29f73c5537b2ee53a1886c80474ef0ee413ce6
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 9220110340a640612d97b9a0beac87c8e6a1f7e5720b06604a2336b64c2c7448
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908250"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729009"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 

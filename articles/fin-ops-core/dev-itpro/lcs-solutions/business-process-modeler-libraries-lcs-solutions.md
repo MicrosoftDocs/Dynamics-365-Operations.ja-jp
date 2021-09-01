@@ -12,12 +12,12 @@ ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: c11cdf2e4869bf4afddc8f6f0f6d6d2bf5fec967
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8463bd9e60d685f9a5da5881b6e1908b46e1789b28e23fbbca92d8334325a3f9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754987"
 ---
 # <a name="set-up-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの設定
 

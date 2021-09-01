@@ -1,27 +1,24 @@
 ---
 title: サービス エンドポイント 概要
 description: このトピックでは、使用できるサービス エンドポイントについて説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom:
-- "21311"
-- intro-internal
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 243867e1b1f9a7c7519c873147f9ab9383c337ce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 926c76a829fc638f8c56b41d76e7d5f70c3ff5c8
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344860"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404127"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 

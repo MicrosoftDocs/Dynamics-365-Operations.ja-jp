@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 1ab0700e841870ff70b305774e5f7a3acfc241a3
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 0c74431243a160b8f3c3cf97c2e3cb5dfce73a6651b040f1391495eacd70b6e7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719804"
 ---
 # <a name="groupdesign-type"></a>GroupDesign タイプ
 

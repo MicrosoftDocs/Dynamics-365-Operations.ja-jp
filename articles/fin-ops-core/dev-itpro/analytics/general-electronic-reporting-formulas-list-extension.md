@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ad8d29dd5a59bb6be0a6b57b08452aaaf322439
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 875a3706aec781163e76f9c88b60d29c385b8b4ead22e2dd81c21e188222519f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729792"
 ---
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 

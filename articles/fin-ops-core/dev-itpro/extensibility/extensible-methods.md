@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 932c3989dcc6d396efa0f13b42d6bb6cfc88348e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: fb97342bfd71142a3e4e0fb408c8c89a1f4969ded786913ae3c9fa5791af9500
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741636"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 

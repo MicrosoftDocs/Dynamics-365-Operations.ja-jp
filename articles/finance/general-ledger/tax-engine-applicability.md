@@ -13,12 +13,12 @@ ms.search.region: India
 ms.author: pacheren
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 026274ec331782cdedbb5fee506a82ed2e1e563f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c9b2872d6edca895c668a1eebda02cd11956951959aa9202f6cf3c05743107c7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6343800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766277"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
@@ -65,10 +65,10 @@ CGST、税コンポーネント CGST を選択し、鉛筆アイコンをクリ�
 次の条件は、*課税対象文書のタイプ* を「在庫転送オーダー受信」、「在庫転送オーダー出荷」、または「在庫転送オーダー」にすることはできないことを意味します。 つまり HSN コードまたは SAC のいずれかを指定する必要があります。
 
 ```sql
-AND(Header.'Taxable Document Type'<>"Invent transfer order receive&quot;,
-    Header.'Taxable Document Type'<>&quot;Invent transfer order shipment&quot;,
-    Header.'Taxable Document Type'<>&quot;Invent transfer order&quot;, 
-    OR(NOT(Header.Lines.'HSN Code'=&quot;"), NOT(Header.Lines.SAC=""))
+AND(Header.'Taxable Document Type'<>"Invent transfer order receive",
+    Header.'Taxable Document Type'<>"Invent transfer order shipment",
+    Header.'Taxable Document Type'<>"Invent transfer order", 
+    OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
    )
 ```
 
@@ -136,9 +136,9 @@ GST のルックアップを条件に変換する場合は次のように表示�
 ```Text 
 OR(
     AND(Exempt=Exempt.No,
-        AND('Tax Direction' = "Sales tax receivable&quot;,
+        AND('Tax Direction' = "Sales tax receivable",
             'GST Composition Scheme' = NoYes.No,
-            'Party GST Registration Number' <> &quot;"
+            'Party GST Registration Number' <> ""
         ),
         AND('Tax Direction' = "Sales tax payable",
             'Export Order' = NoYes.No,

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c184bbdf5f03fd8ffea67b5dd31cbf600417e87e
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: e77807ac7daabdd72decfeb4b297b054d2dcb16a632e0790e7868978f45c5021
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755732"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1001-april-2019"></a>Finance and Operations バージョン 10.0.1 (2019 年 4 月) の新機能および変更された機能
 

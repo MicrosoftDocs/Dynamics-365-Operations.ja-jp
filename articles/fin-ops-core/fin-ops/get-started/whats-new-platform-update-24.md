@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: 9db2bc4fa5b852a24a26c5fa140863a352304588
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 961d9218f16f01c4484234f52c34c2f9d9d542708d243a9153c7d66b3237a04c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736184"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 

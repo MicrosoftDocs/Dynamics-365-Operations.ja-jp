@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 96675e4d5e0803dd2aa294a909b2c779461dbf30
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: db1581df7ea0698d32872d372fd53a5bbbe09667e9eb1443a7123e1d02c4456f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755071"
 ---
 # <a name="create-an-appx-file-for-a-modern-pos-extension-package"></a>Modern POS 拡張パッケージの .appx ファイルの作成
 

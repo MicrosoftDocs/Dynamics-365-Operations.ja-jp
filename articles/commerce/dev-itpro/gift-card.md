@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: f315a5891a116df00048b2f8935f362e24258a9f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0009b7910b70319d9ab2cb695b360ed88bcb42c6c22b015e6738258cc0b83a03
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355470"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762322"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
@@ -251,7 +251,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
 ## <a name="online-store-payments-setup"></a>オンライン ストア支払いの設定
 
-外部のギフト カードの処理に Adyen を使用するようオンライン ストアの支払口座をコンフィギュレーションするには、Adyen コネクタ用ドキュメントの [eコマース設定セクション](adyen-connector.md?tabs=8-1-3#e-commerce)を参照してください。 
+外部のギフト カードの処理に Adyen を使用するようオンライン ストアの支払口座をコンフィギュレーションするには、[Adyen コネクタのコンフィギュレーションの追加情報](adyen-connector-setup.md#configure-additional-information-for-the-connector)を参照してください。 
 
 
 #### <a name="test-connector-external-gift-card-setup"></a>テスト コネクタの外部ギフト カードの設定

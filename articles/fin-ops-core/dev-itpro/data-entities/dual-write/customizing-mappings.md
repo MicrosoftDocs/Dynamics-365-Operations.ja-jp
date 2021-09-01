@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66a559ad38724f9b6f5059becf62bee08182d0af
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 36172b658a6896304b8cd685aeb493f3562e6504
+ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350899"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7391222"
 ---
 # <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 
@@ -89,10 +89,13 @@ ms.locfileid: "6350899"
 
     次の表に、フィルター式の例を示します。
 
-    | Dataverse | Finance and Operations アプリ |
-    |---|---|
-    | Accounttype eq '3' | (accounttype == '3') |
-    | numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
+   || Dataverse | Finance and Operations アプリ |
+    |---|---|---|
+    |文字列フィールド (次を含む)| startswith(name, 'A')|(name like "A*")|
+    |文字列フィールド (次を含まない)|not contains(name, 'A')|(!(name like "*A*"))|
+    |列挙型フィールド| AccountType == '3'| (AccountType == AccountType::Customer)|
+    |日付|TransactionDate le '2021-06-23'|(TransactionDate <= 23\06\2021)|
+    |複数の条件の組み合わせ| numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
     クエリ範囲で式を使用する方法の例については、[クエリ範囲での式の使用](/dynamicsax-2012/developer/using-expressions-in-query-ranges) を参照してください。
     

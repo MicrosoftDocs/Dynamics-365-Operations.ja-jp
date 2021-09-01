@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 501b8c3cd715f3d70700714f5ce570ea0b222441
-ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
+ms.openlocfilehash: 3a8278ca75593b37d4be20b59f685f76d91e4a4c260061908a4f1098db2a0c80
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5864372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716735"
 ---
 # <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 

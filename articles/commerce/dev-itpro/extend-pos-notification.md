@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: e7e5994b67b9994c8a7e348799b27cea384879a5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6dce2afb2716f23d1b99109a2e31aabeae349d0d63639f175b6d2b55d29b68db
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742404"
 ---
 # <a name="show-custom-notifications-in-the-pos"></a>POS でカスタム通知を表示する
 

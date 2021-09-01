@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 115e2bd97f6e3b795d8596f5b0296860f8286412
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: cb4af4daa743e3f3283fb180c624a2af2481e9da42923f1c4d6263a8b77611d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741630"
 ---
 # <a name="action-controls"></a>アクション コントロール
 

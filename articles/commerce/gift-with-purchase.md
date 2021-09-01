@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 352e39f980d361f122d2c70114a24e22e262e593
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d0a284c22ef3331018557a1dee1524c0b8a67d24b06a8fbd65164fc30caf725b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751583"
 ---
 # <a name="configure-gift-with-purchase-promotions"></a>購入プロモーションでギフトを構成する
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 093894c5613ace3daf07c0052b09536bced44faf
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b0fe3396a0400cb8ca148f0168e1ba2b0da9cbcd
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360830"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343572"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
@@ -98,11 +98,11 @@ Dynamics AX 2012 ソリューションを Finance and Operations アプリに正
 ### <a name="switch-to-the-lcs-implementation-project"></a>LCS 実装プロジェクトへの切り替え
 分析フェーズに使用したパブリック プレビュー プロジェクトは役目を果たしました。 破棄して構いません。 残りのステップには、分析フェーズの最後のステップで作成したプロジェクト計画のみが必要です。
 
-サブスクリプションを購入すると、新しい LCS プロジェクトへのサインアップ方法の詳細を受け取ります。 このプロジェクトは実装プロジェクトと呼ばれ、サブスクリプションを持っている間はそのサブスクリプションの新しい永続的な LCS プロジェクトになります。 このプロジェクトは、Microsoft が管理するという点で、パブリック プレビュー プロジェクトとは異なります。 したがって、このプロジェクトには次の特徴があります。
+Finance and Operations サブスクリプションを購入すると、新しい LCS プロジェクトへのサインアップ方法の詳細を受け取ります。 このプロジェクトは実装プロジェクトと呼ばれ、サブスクリプションを持っている間はそのテナントの新しい永続的な LCS プロジェクトになります。 このプロジェクトは、Microsoft が管理するという点で、パブリック プレビュー プロジェクトとは異なります。 したがって、このプロジェクトには次の特徴があります。
 
-- プロジェクト内のすべての環境は Azure でホストされています。
-- プロジェクトに関連付けられている Azure のサブスクリプションは、Microsoft によって管理されます。 したがって、Azure コストの個別の請求はありません。 コストはサブスクリプションによってカバーされます。
-- プロジェクトにおける実稼働環境は、Microsoft が保守します。 そのため、コードの配置、アップグレード、およびインフラストラクチャの保守はお客様のスタッフではなく、直接 Microsoft が行ないます。 
+- このプロジェクトは、サンドボックスの配置および実稼働タイプの環境をサポートします。
+- サンドボックスおよび実稼働タイプの環境は、お客様のスタッフではなく、Microsoft チームによって管理され、パッチが適用されます。
+- すべての DevTest またはデモ環境は、引き続き Azure サブスクリプションに配置する必要があります。  すべての環境が、サンドボックスおよび実稼働環境として同じプロジェクトに含まれるように、これらの環境を LCS 実装プロジェクトから再配置することをお勧めします。 
 
 ### <a name="identify-the-project-as-an-ax-2012-upgrade"></a>プロジェクトを AX 2012 アップグレードとして識別する
 LCS 実装プロジェクトに初めてサインインすると、**プロジェクト オンボード** ウィザードのガイドが表示されます。 プロジェクトの **プロジェクト設定** の横にあるナビゲーション メニューを使用して、後でいつでも **プロジェクト オンボード** ウィザードにアクセスできます。

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: d6395b55469434bddfeca840c93c32588bd1af8a
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 4a4686c62a70024410e1a00505436418d7a150655b4ec5960be257471d3480b1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6335645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755870"
 ---
 # <a name="pos-extension-overview"></a>POS 拡張機能の概要
 

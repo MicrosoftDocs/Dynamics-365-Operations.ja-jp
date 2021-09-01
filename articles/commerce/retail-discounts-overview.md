@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 7f7c4b38deadcba1b23d1ba10db3812ec9162fd8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6f6c55dc7f0d4fb2bf9e1bed621798af5692857a8b74100149ac44dba3f602d3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717610"
 ---
 # <a name="retail-discounts"></a>小売割引
 

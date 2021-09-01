@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cb2b5f127a0ba20a36c0231e74dc7b74ae15bff
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dabc9db8cac7f73f91da08dcc8a6ba060ee365176cb56755f5227726d2d41ba3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733095"
 ---
 # <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 

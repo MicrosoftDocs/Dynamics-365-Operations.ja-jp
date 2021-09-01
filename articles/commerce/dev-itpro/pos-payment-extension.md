@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4322cdff4b5a416e76a11e88c89b8e65dc74184
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ab81f8a900d40db3009aa60276636b03fb5d2cb6c980040b1795c7afde909197
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735618"
 ---
 # <a name="point-of-sale-pos-payment-extension"></a>販売時点管理 (POS) 支払拡張機能
 

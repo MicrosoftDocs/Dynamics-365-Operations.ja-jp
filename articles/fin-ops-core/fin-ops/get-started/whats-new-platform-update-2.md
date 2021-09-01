@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 15305302779987241064a062b91528249457e667
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b5b97e3495449ce013fd6025cc42c52ad5561aafde0cdf8bd9edb38b017c116c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715182"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-2-august-2016"></a>Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
 

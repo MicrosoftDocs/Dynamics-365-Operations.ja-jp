@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a9568d15296bfb17bdcc2eef230737f92ec878
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5026747a1a9f8a814e13d0b2ee892dc4ed2810e16b0ac01128f14d2dfefcdab0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745092"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -382,7 +382,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 新しい (Chromium ベースの) Microsoft Edge ブラウザーと Google Chrome の両方で機能する **プレリリース** の Chromium ブラウザー拡張機能を使用することにより、タスク レコーダーは、ユーザーが業務プロセスを記録するときにブラウザーのスクリーンショットを撮影することができます。 ユーザーが記録を完了すると、タスク レコーダーはこれらのスクリーンショットを使用して Microsoft Word ドキュメントを生成できます。 この機能を有効にするには、次の手順に従って、プレリリースの Chromium 拡張機能をインストールして、記録中にタスク レコーダーがスクリーンショットを撮影できるようにします。
 
 1.  <https://github.com/Microsoft/FMLab> で、GitHub から拡張機能を含む **FMLabTaskRecorderScreenshot** フォルダをダウンロードします。
-2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。  \<hostname\> を環境のベース URL に置き換えます。
+2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 \<hostname\> を環境のベース URL に置き換えます。
 
     ```xpp
     ...

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 7984ca2663fdb23b35dd87c490fad76626bb2b71
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22f04623fabca9e4cbdaba015fc0a35e8127deb16d783b0f942780b4f13edd18
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713980"
 ---
 # <a name="add-custom-columns-to-a-point-of-sale-pos-transaction-grid"></a>販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: paulliew
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: bcaae66509b7126d744416fc9e1c0d714b62a5b3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bf99b891042b671f9bc622b74547e62fbbbd8b45ce3ebcc0cd9ea6845a571297
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728979"
 ---
 # <a name="user-session-management"></a>ユーザー セッション管理
 

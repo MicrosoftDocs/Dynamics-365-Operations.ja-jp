@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23990049a4518a1cf6dc55b645eed56716223a9d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6f6e5aa51e0de2c85f16c2b6cff4cfb9c7471f9a894e0817268baaaee5e48ea9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729878"
 ---
 # <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations のデプロイのための Commerce 支払パッケージの作成
 

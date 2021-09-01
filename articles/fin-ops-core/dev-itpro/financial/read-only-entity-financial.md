@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 89556b030fbb87ae3af2aa983806843b278dec2c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9ce62794b30a0674bc44b022a07abe107e25cff66732c57576c6e85f8f7f6bae
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736252"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]

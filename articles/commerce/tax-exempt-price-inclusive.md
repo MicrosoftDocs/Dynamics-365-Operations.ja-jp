@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c37ec0fed301b2d62c4f219c9ae98c229b3b372e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d52411557164f39b7f96568ef03067075e5ecafa7ed70f2f19c9bfcf5453bee5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718661"
 ---
 # <a name="calculation-of-tax-exemption"></a>非課税の計算
 

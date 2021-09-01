@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: c685716a66c53bd3df51b4798321ec1a592bb38f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 332d52757e82abb4c7499f48081aab762eb2ebb33432d29a79d425b3f86cc501
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777358"
 ---
 # <a name="report-a-production-outage"></a>稼働停止のレポート
 

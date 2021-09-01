@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b387166c7ab17641f7229b00bb7f659af94128b7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2c1bd7f325da4a45993df680d1fbfd9e0c0a21af93579bb6bf972f55d0e60a40
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777352"
 ---
 # <a name="control-extensibility"></a>コントロールの拡張機能
 

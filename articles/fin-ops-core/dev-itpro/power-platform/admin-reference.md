@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ba77abfecb6c5143e0ea8ff02af12969ba1989ea
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4427b41d91007536d1e1962193e102f34cfd4638fffed5bb84b20aeba1e0e493
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769836"
 ---
 # <a name="finance-and-operations-and-dataverse-admin-reference"></a>Finance and Operations および Dataverse 管理リファレンス
 

@@ -2,7 +2,7 @@
 title: Financial Reporting の通貨の機能
 description: Financial Reporting には、複雑な通貨のレポート要件をサポートする機能が含まれます。
 author: panolte
-ms.date: 07/21/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
-ms.openlocfilehash: 7fb7973b27e5a527ed41b77e2986801b82cf0f18
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 860215230427763698e2239490296eeeec31f199eb07480086afa1131a8b61d6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748968"
 ---
 # <a name="currency-capabilities-in-financial-reporting"></a>Financial Reporting の通貨の機能
 
@@ -39,6 +39,8 @@ Financial Reporting には、複雑な通貨のレポート要件をサポート
 
 - 行の定義では、属性が、制限としてリストされた通貨コードで **トランザクション通貨** に設定されている、**行のモディファイアー** を指定できます。 行を特定の通貨に設定すると、一致する通貨に対して入力されたトランザクションのみが表示されます。 これは、列を通貨に制限する場合にも当てはまります。 
 
+> [!NOTE]
+> **トランザクション通貨** 属性を使用する場合で、通貨のフィルターを指定しない場合、トランザクションを行っているすべての通貨のトランザクションがシステムに含まれます。 レポート生成時に行に意味のない集計金額が表示されるのを防ぐため、通貨のフィルターを指定することをお勧めします。
 
 ## <a name="reporting-on-currency"></a>通貨のレポート
 既定では、レポートに表示される任意の金額は、会計通貨金額として表示されます。 次のいずれかのアクションによって、いくつかのレベルの換算が行われます。

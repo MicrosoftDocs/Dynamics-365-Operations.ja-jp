@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53ae0068b9acfd4f330183d49a7267a8686963be
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 8591723fa4867409144a49bcd5d37a2909fc31daf2f4417d6013149ce8a88419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866236"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737444"
 ---
 # <a name="update-the-hosted-azure-pipeline-for-new-nuget-packages"></a>新しい NuGet パッケージ用にホストされる Azure Pipeline の更新
 

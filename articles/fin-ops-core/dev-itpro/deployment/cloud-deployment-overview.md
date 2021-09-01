@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: b944b8872bfd87162bfa00efb0adb7282ded59dd
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 502c2ff6c08e32be155a3d74f326f57c32662f92d39674a2b2222d446e741bc6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765792"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 

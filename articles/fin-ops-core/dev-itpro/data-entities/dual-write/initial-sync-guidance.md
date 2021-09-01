@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0272e1d895c5b1abee6add1bda2f89d97db4aa
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 2d5cf52b612145f4e33573a60f799bb59a158fdf
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941210"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393511"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 
@@ -83,6 +83,12 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 Finance and Operations アプリから Dataverse への初期同期を実行し、Finance and Operations のデータのエクスポートに 5 分以上かかる場合、初期同期がタイムアウトすることがあります。タイムアウトは、データ テーブルに `postLoad` メソッドの仮想列がある場合、またはエクスポート クエリが最適化されていない (たとえば、インデックスが存在しない) 場合に発生する可能性があります。
 
 このタイプの同期は、Platform update 37 (PU37) 以降でサポートされます。 したがって、Finance and Operations アプリを PU37 またはそれ以降のバージョンに更新する必要があります。
+
+### <a name="company-and-currency-exchange-tables"></a>会社と通貨為替テーブル
+
+会社と通貨為替テーブルは本質的にグローバルであり、すべての二重書き込みユーザーにはこれら 2 つのテーブルへの読み取りアクセスが必要です。 すべての二重書き込みユーザーを、**二重書き込みアプリ ユーザー** セキュリティ ロールに追加する必要があります。
+
+管理者以外のユーザーが二重書き込みが有効なテーブルに行を作成できるようにするには、ユーザーに **二重書き込みランタイム ユーザー** セキュリティ ロールを割り当てる必要があります。
 
 ### <a name="error-handling-capabilities"></a>エラー処理機能
 

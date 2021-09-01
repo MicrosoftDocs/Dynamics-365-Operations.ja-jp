@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform Update 33
-ms.openlocfilehash: b07c9d8a68bd5b9a251e8c6dd360c02b14728a17
-ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
+ms.openlocfilehash: f53d48daae0ef05a305c4575e347c99fe68be8ba1e0969ecec3718a145cc7569
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736388"
 ---
 # <a name="configure-export-to-azure-data-lake"></a>Azure Data Lake へのエクスポートのコンフィギュレーション
 

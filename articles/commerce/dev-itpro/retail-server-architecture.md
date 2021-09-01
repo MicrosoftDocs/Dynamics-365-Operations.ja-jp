@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 2846b13b735bdef081aba7cc1b44086085a691ed
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d51b0b7625c3171595a5b6f5d9b188bf0f8b3e9b0b02c949610b26e952366ebc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734005"
 ---
 # <a name="headless-commerce-architecture"></a>ヘッドレス コマースのアーキテクチャ
 

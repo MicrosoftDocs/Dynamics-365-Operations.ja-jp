@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 426fa55aa150c9475cc0b058c178e90a67a013eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d6add6debd95994a6d72041023246479a2012da67f7e96d130809f5180ab186a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726425"
 ---
 # <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジットカードの処理
 

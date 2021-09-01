@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e7ec51d15817a4338937bd3adcbe66affa803e13
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9684f955c67100113425908bbb38972c6a672c13cc72ec2cf669c98a34922965
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358749"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758354"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 

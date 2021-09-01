@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: 5b2ea805021445c8488d7d694ab17e295428bf31
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b33727a3c60739f459d11f3f7657d9e390f2754c9b9556a7710251341d7dfbe5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726453"
 ---
 # <a name="talent-updates"></a>人材の更新
 

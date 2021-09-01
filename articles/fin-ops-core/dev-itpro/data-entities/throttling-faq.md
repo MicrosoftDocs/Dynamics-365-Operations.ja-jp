@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: b24cba0e46e2a156a2a289675e10fd14c7e0e7a6
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 11153abee99865f97b778c4304d0b8dcb7f2a4372c30a8dbfbfbe077a5bb3744
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764452"
 ---
 # <a name="priority-based-throttling-faq"></a>優先順位に基づく調整に関する FAQ
 

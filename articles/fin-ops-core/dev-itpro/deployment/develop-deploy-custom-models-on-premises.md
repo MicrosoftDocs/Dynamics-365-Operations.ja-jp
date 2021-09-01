@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f34f632b7aef0bbe4c3db6b17cb17eac51559344
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ef7c9efc8441025185a58b69e0f150da03a771d49967f0b4b7d0479e6b0bc7d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351704"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748360"
 ---
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 

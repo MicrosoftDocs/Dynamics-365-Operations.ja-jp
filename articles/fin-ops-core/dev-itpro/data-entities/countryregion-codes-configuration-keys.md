@@ -1,7 +1,7 @@
 ---
 title: 国/地域コードとコンフィギュレーション キー
 description: この記事では、構成キーと国/地域の両方の実装の観点から適用できるシナリオを説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 4644
 ms.assetid: 86eda511-b1a6-46d2-bd0f-f9991b727f1a
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 757e472b23e82357ce3eccfece27ef3a2022db80
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0612457689d90927ebadd1094b92a82617f160e1
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752312"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403826"
 ---
 # <a name="countryregion-codes-and-configuration-keys"></a>国/地域コードとコンフィギュレーション キー
 

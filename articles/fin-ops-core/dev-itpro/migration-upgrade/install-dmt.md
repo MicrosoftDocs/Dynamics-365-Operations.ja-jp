@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: ecc0b64193820e6a601ae1f4035c5edbe1a917a4
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2de55922a17058aae8f2bcc9e4774affc45a66d2eb22dca8b01e979b99aca476
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775256"
 ---
 # <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 

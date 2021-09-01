@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 937da2c3cb3d3626ac45fe3ba096f970827dd75b
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 8ddf39ccb067cb3c43011c67b1a3f6bd5dba54c4aca91ca0b2747564d4c1ef83
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719329"
 ---
 # <a name="macros-in-x"></a>X++ でのマクロ
 

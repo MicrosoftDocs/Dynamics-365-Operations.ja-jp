@@ -13,12 +13,12 @@ ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 1f7c2778a135cf6fc96107a8827e18b0a802fe8f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4501c9e92b86f91748554562e2758059e15334d788fcc3cf49cb179064c2f3ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713409"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 

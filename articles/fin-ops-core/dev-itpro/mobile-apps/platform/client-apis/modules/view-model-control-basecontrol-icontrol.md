@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 6c1a7eb6cc153c98fc521bbd7797a52b2fd2e1d4
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: eb3f6ecb4f1c881c5b7e1bc4dcb85b83f6b2884cd73cdf0393424d00099347d1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769173"
 ---
 # <a name="control-module"></a>管理モジュール
 

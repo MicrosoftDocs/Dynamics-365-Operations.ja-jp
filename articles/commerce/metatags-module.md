@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ee6111b20a46294468b08bce26731b4b1002467e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: bd6661cb7e5afea7c6b073ec142f3c46df332fc38b0bb9bd2e024d0f7904bcf2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744496"
 ---
 # <a name="metatags-module"></a>メタタグ モジュール
 

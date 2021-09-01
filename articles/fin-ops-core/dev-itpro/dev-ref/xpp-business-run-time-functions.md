@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ccb41c09f8694bb68b649fe4abca3cb844b52140
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: df607fbcbb5afc0d69c4d89d8e7df3b8d728f1a0a75135e0b06796d123052afa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763482"
 ---
 # <a name="x-business-runtime-functions"></a>X++ ビジネス ランタイム関数
 

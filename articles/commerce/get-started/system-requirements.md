@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 131169b22be6a667706e8dad93dc0646dec0e402
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 358cb20d07284458bebf18e92c22fa3bed7ebf691a62f33c2121cbb1097bd004
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762312"
 ---
 # <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 

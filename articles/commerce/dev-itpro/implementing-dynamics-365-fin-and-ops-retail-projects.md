@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: f096fdd9789282ff5c8000777fece8a032996951
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: b5915f798ab0354920e1a2444c694f85fb7246064ed12904700717bd9676c81d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936910"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750696"
 ---
 # <a name="implement-commerce-projects"></a>コマース プロジェクトを実装する
 

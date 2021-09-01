@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 7c81efba2c1a03e18dc0c43b5a44ee69303ff147
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 139b1a484b167ccabc29e69986a25badf1da43ba2b06b1b7e879b8df8803a628
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726427"
 ---
 # <a name="point-of-sale-pos-apis"></a>販売時点管理 (POS) API
 [!include [banner](../includes/banner.md)]

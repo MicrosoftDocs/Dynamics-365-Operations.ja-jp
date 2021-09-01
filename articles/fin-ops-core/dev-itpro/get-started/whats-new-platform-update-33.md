@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 201ac95bca731c526f45fc7a5bd225c7eaf33600
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 19034dd116c344fc9f4e77fee14366454c65006ef59c628b7457ee963e0969e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717530"
 ---
 # <a name="whats-new-or-changed-in-platform-update-33-for-finance-and-operations-apps-april-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
 

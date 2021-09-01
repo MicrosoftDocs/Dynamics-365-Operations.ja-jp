@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: aa54d59fe62f531e58290bb2459fcd9d7237db01
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1cedbaed472e7ea7113d6e5eb3b99cd372765cdcca4d1a5505a1caf1712ef3cf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729005"
 ---
 # <a name="set-up-alerts"></a>警告の設定
 

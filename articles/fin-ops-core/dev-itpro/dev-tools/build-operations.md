@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 802b4130d51796505bec6c535e702508d1493762
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: aef40e0a12af9a9fd77277c490838488dfc54a12ece124825a34fc28296615ae
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735510"
 ---
 # <a name="build-operations"></a>ビルド操作
 

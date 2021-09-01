@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 272bc074dd194f4a03046f7b9810b50ae3b6e547
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: e61514e60a0ad01f2291c80802d3aa3edd65052e39d1be55d217e1c9d3309d48
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775964"
 ---
 # <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 

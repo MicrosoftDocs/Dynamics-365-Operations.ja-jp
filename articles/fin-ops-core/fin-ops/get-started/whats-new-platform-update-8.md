@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 37018d51347e6e785b74308e7370502a7303c94a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9dd2b75a9597c1cb6c311bce5c5a6e073489350658b9db69df43bc531bce70ef
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762202"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
 

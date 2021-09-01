@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52c6d1c1672fabf4e3f2046fa6e8943b5c2423a6
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 7409362635357bf2a80176473b431d566bceb5773a94e3d895136525eea4028f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111708"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745852"
 ---
 # <a name="parm-methods-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのための parm メソッド
 

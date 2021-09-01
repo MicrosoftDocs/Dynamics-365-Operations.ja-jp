@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 008375462939122a235a2bd252799ba6aa7b3c89
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5e846e34bd84ec2670d149bfa37f1799f8d11bea9a23ff95ec51f157a957da81
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737833"
 ---
 # <a name="convert-dynamics-ax-custom-help-for-use-in-dynamics-365"></a>Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換する
 

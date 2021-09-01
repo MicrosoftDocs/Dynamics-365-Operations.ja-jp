@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 306c1345259b8194ede71d41c1eefc60eb825bf2
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 1b6e54c35553ed22e46652981369824803d453255bfb134ecfcfd83fd886cee2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193393"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713322"
 ---
 # <a name="extensible-control-layout-guidelines"></a>拡張可能なコントロール レイアウトのガイドライン
 

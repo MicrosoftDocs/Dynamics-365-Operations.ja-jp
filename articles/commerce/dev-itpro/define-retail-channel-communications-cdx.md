@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9800283c04a3a1804ed33b5ae0996e5fc602af9b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d4b80b5e17949387a34aa5a2826be406eb61eca88c0a016c475ad6e1d18f7e1d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354657"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720947"
 ---
 # <a name="commerce-data-exchange-and-commerce-channel-communications"></a>Commerce Data Exchange とコマース チャネルのコミュニケーション
 

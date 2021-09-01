@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 28
 ms.dyn365.ops.version: 2019-07-31
-ms.openlocfilehash: ce731861e70a518d511fbd2fd0cc9bd4cb005982
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7a2ad9704b89d81498645fddba157a487415b61aaaf4c7af859eae7094e0330a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344868"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723127"
 ---
 # <a name="business-events-and-azure-event-hubs"></a>ビジネス イベント と Azure イベントのハブ
 

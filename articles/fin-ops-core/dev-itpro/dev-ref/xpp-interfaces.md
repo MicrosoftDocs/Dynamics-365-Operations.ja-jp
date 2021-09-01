@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e601582623291433943dbc4d200a9782e4221907
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: dfbe5199e684a1f5bdda5e9601ca3bc8b50f6219c0e9a17a3baf784bc42b11a0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772897"
 ---
 # <a name="x-interfaces"></a>X++ インターフェイス
 

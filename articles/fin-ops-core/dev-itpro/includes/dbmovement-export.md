@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 170fb152d002903f68b658112de38edefdc2241b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f42f9b77dc37bd039969cf4d7afb41531f223f7c0af90138390d11746488640d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716054"
 ---
 サンドボックス **環境詳細** ページで、 **管理** メニューをクリックし、 **データベースの移動** を選択します。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f5fc0b8800e5bd3c4a5daa64562dd68755afab4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c32a67cf6cbaf9ad4e3dd8804ab65fa30d0e97f2ecf0afda0ade92381941c3e0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768429"
 ---
 # <a name="features-available-through-the-power-bi-integration"></a>Power BI の統合によって使用できる機能
 

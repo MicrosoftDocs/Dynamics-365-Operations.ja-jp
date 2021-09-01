@@ -2,7 +2,7 @@
 title: Regression Suite Automation Tool のインストールと構成
 description: このトピックでは、Regression Suite Automation Tool (RSAT) のインストールと構成の方法について説明します。
 author: FrankDahl
-ms.date: 01/15/2021
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d4cede28d79d5051a0bf0a01374f273b82475fc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 49aef84f0b474ca2d7d4084f1ccdee5fbac93abf
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357540"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404123"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -65,7 +65,7 @@ RSATには、Selenium および Web ブラウザー ドライバー ライブラ
 
 ![ブラウザー ドライバー。](media/driver-2.png)
 
-RSAT は [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip) を使用します。 WebDriver ライブラリおよびブラウザー固有のドライバーは **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium** にダウンロードされます。
+RSAT は [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip) を使用します。 Web ドライバー ライブラリおよびブラウザー固有のドライバーは **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium** にダウンロードされます。
 
 ## <a name="configuration"></a>構成
 
@@ -180,7 +180,7 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 
 #### <a name="if-you-have-no-remote-desktop-access-to-the-server"></a>サーバーへのリモート デスクトップ アクセス権がない場合
 
-Microsoft が管理するサンドボックス、またはセルフ サービス タイプ サンドボックスなど、リモート デスクトップ プロトコル (RDP) アクセスが削除された場合、Microsoft は環境に応じた証明書を生成し、事前にコンフィギュレーションします。 RSAT 証明書を取得して使用するには、次の手順に従います。
+Microsoft が管理するサンドボックス、またはセルフ サービス タイプ サンドボックスなど、リモート デスクトップ プロトコル (RDP) アクセスが削除された場合、Microsoft は環境に応じた証明書を生成し、事前にコンフィギュレーションします。 次の手順に従って RSAT 証明書を取得し、LCS ユーザー インターフェイスを使用します。 自動化については、[ZIP ファイルで RSAT 証明書をフェッチする](../../lifecycle-services/api/v1/reference-download-rsat-certificate.md) API 参照ページに情報があります。
 
 1. Lifecycle Services の環境詳細ページの **管理** の下に、2 つの新しいオプションが表示されます。
 

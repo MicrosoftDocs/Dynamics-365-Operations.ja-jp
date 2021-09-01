@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7782944807a4414995da8f390fa73a530ddeae64
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 2745d6476da1a7c61f2b032f118c8785e72cc12921f360b9f358599af002399a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728147"
 ---
 # <a name="intrusive-customizations"></a>侵入的なカスタマイズ
 

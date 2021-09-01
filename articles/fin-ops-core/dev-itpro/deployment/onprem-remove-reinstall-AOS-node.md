@@ -2,7 +2,7 @@
 title: AOS ノードの削除と再インストール、または追加
 description: このトピックでは、オンプレミス環境の アプリケーション オブジェクト サーバー (AOS) ノードを削除して、障害が発生したノードの削減または交換をする方法について説明します。
 author: ttreen
-ms.date: 04/14/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: cd566c9a30b5c90785c3ac67a52e3ea80e45b91d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b4e6cce7c46d1d7bc676fc70f86d69d58ed6531279ab57d17d0bc411e0807743
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351700"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712556"
 ---
 # <a name="remove-and-reinstall-or-add-an-aos-node"></a>AOS ノードの削除と再インストール、または追加
 
@@ -69,7 +69,7 @@ ms.locfileid: "6351700"
 10. 次のコマンドを実行して、構成ファイルを C:\\Temp\\ClusterConfig.json に保存します。 （C:\\Temp のパスが存在することを確認してください）
 
     ```powershell
-    Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017 >C:\Temp\ClusterConfig.json
+    Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
     ```
 
 11. 上記の手順で保存した構成ファイルで、**fabricSettings** セクションの **設定** セクションで、**NodesToBeRemoved** パラメーターのセクションを追加します。 パラメータ値は、削除するノードの名前をカンマで区切ったリストにする必要があります。 
@@ -218,12 +218,12 @@ ms.locfileid: "6351700"
 4. それぞれのインフラストラクチャ \\VMs\<VMName\> フォルダの内容を、対応する仮想マシン (VM) にコピーします。 （リモート スクリプトを使用している場合は、コンテンツが自動的に対象のVMにコピーされます。）続いて、次の Windows PowerShell スクリプトを管理者として実行します。
 
     > [!NOTE]
-    > リモートで実行している既存のサーバーを修復する場合は、すべてのサーバーに対してファイルコピー処理が実行されるように、[インフラストラクチャ] フォルダから lbdscripts_remote_status.json ファイルを削除する必要があります。
+    > リモートで実行している既存のサーバーを修復する場合は、すべてのサーバーに対してファイル コピー処理が実行されるように、-ForcePushLBDScripts の切り替えを指定します。
 
     ```powershell
     # Install pre-req software on the VMs.
     # If Remoting, execute
-    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml
+    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
     .\Configure-PreReqs.ps1 -MSIFilePath <share folder path of the MSIs>
     ```
 
@@ -240,27 +240,12 @@ ms.locfileid: "6351700"
     .\Set-CertificateAcls.ps1
     ```
 
-9. **Add-GMSAonVM.ps1** の実行中にエラーが発生した場合は、次のコマンドを実行する必要があります。 （サービスア カウントが異なる場合は、このコマンドを編集してください。 ドル記号 \[\$\] をサービスアカウント名から削除することを忘れないでください。）
+9. **Add-GMSAonVM.ps1** の実行中にエラーが発生する場合、gMSA アカウントの更新が必要な場合があります。 インフラストラクチャ スクリプト フォルダから次のスクリプトを実行します。
 
     ```powershell
-    Get-ADServiceAccount -Identity svc-AXSF -properties PrincipalsAllowedToRetrieveManagedPassword
+    Import-Module .\D365FO-OP\D365FO-OP.psd1
+    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
-    ![Get コマンドと結果。](media/525f31b6281e87fd58075f2101f75118.png)
-
-    **svc-AXFS\$** gMSA のパスワードを取得するにあたって、アクセス許可が与えられているサーバーの一覧が表示されます。 削除されたサーバーのグローバル一意識別子 (GUID) 値が表示される場合は、無視します。
-
-10. 結果からプリンシパルの一覧をコピーし、それを使用して次のコマンドを編集または修正します。 （**Set** コマンドは付加されないため、すべての参照に再度追加する必要があります）
-
-    ```powershell
-    Set-ADServiceAccount -Identity svc-AXSF -PrincipalsAllowedToRetrieveManagedPassword  "CN=AOS1,CN=Computers,DC=contoso,DC=com","CN=AOS2,CN=Computers,DC=contoso,DC=com","CN=AOS3,CN=Computers,DC=contoso,DC=com"
-    ```
-
-    ![Set コマンド。](media/ff652391b87c72cacd318b588758e4fc.png)
-
-11. 元 **Get** コマンドを実行して、新たな AOS ノードが再度追加されたことを確認します。 （この後の例では、AOS1 が PrincipalsAllowedToRetrieveManagedPassword の一覧に追加されていることが確認できます）
-
-    ![元の Get コマンドと結果。](media/17b9c379b6328ed506d16270280146f4.png)
 
 12. 次のスクリプトを実行して VM のセットアップを検証します。
 

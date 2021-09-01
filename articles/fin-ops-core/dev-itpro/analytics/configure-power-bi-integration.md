@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 282023519a623b39308f517d25d2d272e116f75c
-ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
+ms.openlocfilehash: d3b382066bf52808af2a77a2915598a6279b73778521427ec32a38b9b50911b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6655620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717660"
 ---
 # <a name="configure-powerbicom-integration"></a>PowerBI.com 統合のコンフィギュレーション
 

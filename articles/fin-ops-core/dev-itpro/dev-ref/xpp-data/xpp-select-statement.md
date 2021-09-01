@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 49a17175fd6541e0ec00ca63f1c8c1eafc56da43
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 2284f5793296559842e570dddd9648827e5db286925273006dd274ca0226a257
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769850"
 ---
 # <a name="select-statement"></a>明細書を選択
 

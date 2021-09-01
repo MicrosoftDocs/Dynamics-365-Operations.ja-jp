@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 580b91930b16c80fe800503f9a5b4b35e8abf334
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: dc284d3acb32206b0b869bfcdf04542cd6b83f4d4086da23ab37d7ed4cd4a693
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763476"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 

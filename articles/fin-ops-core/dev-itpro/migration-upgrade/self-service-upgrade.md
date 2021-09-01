@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: d3c956fac6c57fbd655155731c1d4d10a0ec60ef
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 5d17e34190b5d88681adf6901ed022e943cda394edb04fe5f5a37ccdd2ba49b2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777356"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 

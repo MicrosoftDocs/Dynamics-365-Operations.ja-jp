@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f5dd199db986070aba4c15ecdcea1875e128dbaf
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ed0d57ed60daf89816d2e6c6e5b15353392d0cfc00f4ec69634db7d83ea3cc95
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353842"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733979"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 

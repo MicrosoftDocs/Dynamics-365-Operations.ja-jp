@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: ba8dd594800ad8e8a1ac56388ea3d06ed3791e28
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d85cb1a92f2dc9da595d0ecaa5428fafee9851bea1f30804f03f92dfa8c9dc26
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752772"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753576"
 ---
 # <a name="versioning-and-support"></a>バージョン管理とサポート
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e00998d4d2fbd42c45b9ba586bb87dc5fcfc4ca4
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: ca59b6fd828e661c53b1d9487ed5f82df0db67cdcbc6fccb1129e2f392c464ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745084"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 

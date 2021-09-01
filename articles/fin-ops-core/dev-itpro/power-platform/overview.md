@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 20fb15727448f157c747c6a5eff353029fe6433c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 007f170f08ea9a311b2c14545c450500deb8eeabb6ee90abff42f75cc2df850b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736244"
 ---
 # <a name="microsoft-power-platform-integration-with-finance-and-operations-apps"></a>Finance and Operations アプリと Microsoft Power Platform の統合
 

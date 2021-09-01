@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 7666300d3255bdf1462153d010e6e80842ad6ce6
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0bf34a68912b7f3f2a1b9bc46f12c04372170a4443c050846dab481f2e06f211
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741638"
 ---
 # <a name="language-and-locale-descriptors-in-the-product-and-in-help"></a>製品およびヘルプの言語およびロケール記述子
 

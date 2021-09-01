@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-03-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ec977c0db9529a504a85d96efb0c099b25413dd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 760aa54b55b41531845460d874e43ae49ade4cc6f3fa78d90f32f5151b927e0d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717515"
 ---
 # <a name="configure-non-administrator-users-to-use-rsat"></a>管理者以外のユーザーが RSAT を使用するように構成する
 

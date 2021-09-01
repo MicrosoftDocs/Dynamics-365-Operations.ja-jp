@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 6b16b973ed203212520b3bebb8dc68d47f061052
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ced46a910ab9ba0a834e4e252dcdbcc59cdeb71340495ce9f33d20fca843b5a7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773774"
 ---
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 

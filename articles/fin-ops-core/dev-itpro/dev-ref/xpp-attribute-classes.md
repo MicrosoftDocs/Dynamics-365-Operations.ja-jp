@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b10b6160bae0f7622eadfb38e834b4192f6528dc
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 0b67707b0c5754c82bd7ed2df285d5370bfcae8741d98b3784cc466b3012cf74
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763484"
 ---
 # <a name="x-attribute-classes"></a>X++ 属性クラス
 

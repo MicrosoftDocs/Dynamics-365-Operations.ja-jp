@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: ce8caf6fe492d5b3f52a5965e0b8d0d30c1b4dc3
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 89eac6ce951635a53c5a816f8431d2e3a1ee07bf7fb71eb67bfe51300b76d64a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752288"
 ---
 # <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
 

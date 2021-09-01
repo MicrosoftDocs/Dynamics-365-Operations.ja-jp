@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 58b5bf318954ca657c33b96b3aa813be5703d4e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2bce712fcd1e6910190d76c95f149609524848c5daf2b9331fc4f039e6f9f562
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723125"
 ---
 # <a name="business-events-and-azure-event-grid"></a>ビジネス イベントおよび Azure Event Grid
 [!include[banner](../../includes/banner.md)]

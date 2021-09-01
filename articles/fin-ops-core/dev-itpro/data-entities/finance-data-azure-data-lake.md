@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: 1eba80830b7c951c723169ee1c3d8bb26f3eac0d
-ms.sourcegitcommit: 184a00cb8bdcdd6162817256735643a42f7887a3
+ms.openlocfilehash: 645ce81913ea8edecb88e6fb6627737abda1639d13a802f0f3535700cbd22d16
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6559287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728177"
 ---
 # <a name="finance-and-operations-apps-data-in-azure-data-lake"></a>Azure Data Lake の Finance and Operations アプリ データ
 

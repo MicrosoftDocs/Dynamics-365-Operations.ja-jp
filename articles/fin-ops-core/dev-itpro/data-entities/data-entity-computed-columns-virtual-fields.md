@@ -1,7 +1,7 @@
 ---
 title: データ エンティティの列と仮想フィールドを計算する
 description: この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 17891
 ms.assetid: 88d230af-7d3d-49b3-bf19-69ecf81ed751
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e43e559d2038415e20d42f4f3548003ffa16756
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 789580d5381279543fb561c169b6e880dc829176
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351035"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404063"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 

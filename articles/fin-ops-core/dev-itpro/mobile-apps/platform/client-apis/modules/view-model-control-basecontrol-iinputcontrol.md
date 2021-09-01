@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: bfb4b485d36568e41829f4b71192fe8072d4f169
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 71df9e1dc93d50e6e86b74c48f21465f8ce09fab2941770b98f2f0e32af10ed5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761370"
 ---
 # <a name="input-module"></a>入力モジュール
 

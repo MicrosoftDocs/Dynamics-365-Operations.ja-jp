@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1ed028a68d9772eab67f83d9380d36355ca6b6cb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1d03237b8001c79cfb7dac19d1d39b2ab7abd03b347249846b92b5bc4746230b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767703"
 ---
 # <a name="create-edit-and-browse-business-process-modeler-bpm-libraries"></a>ビジネス プロセス モデラー (BPM) のライブラリを作成、編集、および参照
 

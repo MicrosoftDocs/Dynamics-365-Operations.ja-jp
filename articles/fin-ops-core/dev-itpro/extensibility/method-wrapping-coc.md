@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ad3c418b99a06e00687d2ea916d783397f8ffeb
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: f48224ca466354d745262f5f6548fe8176945aa47ab431c573fbd215b060e12d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865918"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743917"
 ---
 # <a name="class-extension---method-wrapping-and-chain-of-command"></a>クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 

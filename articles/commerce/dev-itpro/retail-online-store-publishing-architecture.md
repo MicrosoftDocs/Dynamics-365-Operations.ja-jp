@@ -1,5 +1,5 @@
 ---
-title: オンライン ストア チャネルの公開
+title: オンライン ストア カタログの公開
 description: このトピックには、Commerce モジュールからオンライン ストアにカタログを公開する方法を理解するための概念に関する情報が含まれています。
 author: mugunthanm
 ms.date: 06/20/2017
@@ -10,37 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.10
-ms.openlocfilehash: ee634cccea13ce4bfc5f1b432f2f9b537116b686
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 97ba38397c34add3a366b89477c9baa5736baceb
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186628"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402411"
 ---
-# <a name="publish-an-online-store-channel"></a>オンライン ストア チャネルの公開
+# <a name="publish-an-online-store-catalog"></a>オンライン ストア カタログの公開
 
 [!include [banner](../includes/banner.md)]
 
 このトピックには、Commerce モジュールからオンライン ストアにカタログを公開する方法を理解するための概念に関する情報が含まれています。
-
-## <a name="publish-an-online-store-channel"></a>オンライン ストア チャネルの公開
-
-Commerce オンライン店舗チャネルを公開するとき、Microsoft Dynamics 365 Commerce と SharePoint 間でオンライン ストアの基本構造をレプリケートします。 **コマース** モジュールでオンライン ストア チャネルの基本構造を作成します。 オンライン ストア チャネルを公開する前に、以下の設定タスクを実行する必要があります。
-
-1. 組織階層にオンライン ストアを追加します。
-2. オンライン ストアを作成し、プロパティをコンフィギュレーションします。
-3. サイトのカテゴリ階層をコンフィギュレーションします。
-
-これらの手順を完了した後は、オンライン ストアに製品スキーマを公開する準備ができます。
-
-1. **オンライン ストア** ページからオンライン ストアを作成して公開します。 状態は、**ドラフト** から **処理中** に変更されました。
-2. Finances and Operations は、カテゴリ階層 (コマース階層) およびプロパティのスナップショットを取得します。
-3. Commerce Data Exchange: Async Server はコマース店舗データベース内のオンライン ストア、階層、およびプロパティについての情報を読み取り、Commerce Runtime (CRT) に情報を送信します。
-4. Async Server はチャネル データベースのテーブルを同期します。
-5. コマース公開ジョブは、CRT アプリケーション プログラミング インターフェイス (API) から実行され、オンライン ストアで作成したサイトの階層を作成します。
-6. Commerce Data Exchange: Real-time Service は、CRT API から公開ジョブ アクションの状態を受け取り、状態を公開します。 状態は、**公開済** または **エラー** のいずれかになります。
-
-チャンネルを公開する特定の手順については、[オンライン ストアの設定](/dynamicsax-2012/appuser-itpro/set-up-an-online-store) を参照してください。 チャンネルを公開した後は、カタログを公開できます。
 
 ## <a name="publish-an-online-store-catalog"></a>オンライン ストア カタログの公開
 

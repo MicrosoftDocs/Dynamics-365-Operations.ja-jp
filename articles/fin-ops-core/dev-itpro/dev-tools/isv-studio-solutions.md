@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c6c39f7baa0b76492f4db85bc6f04787a487d71
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: ae47592c408c47e547359e7d87b1c87e3aab84578574b469b29344da3cff991d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768399"
 ---
 # <a name="link-x-modules-from-isv-packages-by-using-isv-studio"></a>ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
 

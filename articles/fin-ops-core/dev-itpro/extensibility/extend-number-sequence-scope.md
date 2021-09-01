@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: lgou
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: befba814042f8ecc292bb692a3a8706f0fe8bba3
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: f138de736951484602ab6b7440d322e828f95b84336ab0a641e98ae7ac0f3447
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720670"
 ---
 # <a name="extend-the-scope-of-number-sequences"></a>番号順序スコープの拡張
 

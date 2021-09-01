@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0f969d02d10075e9f91164450f277b266582f402
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: c42b14e93e3553ed178521b1a49f22771fe10a8f580066377087d366d393dca6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731533"
 ---
 # <a name="document-reporting-service-in-dynamics-365-applications"></a>Dynamics 365 アプリケーションのドキュメント レポート サービス
 

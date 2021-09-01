@@ -13,12 +13,12 @@ ms.search.region:
 ms.author: sarvanis
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 77afc315318a4f2590c14ac2f97517f3f6a7000d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 970d4ad24910dbc0a4a3281269fe7891f2027357f644c08760248e3ed9e58ccc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717608"
 ---
 # <a name="resolve-issues-after-entity-store-maintenance"></a>エンティティ ストアのメンテナンス後に問題を解決
 

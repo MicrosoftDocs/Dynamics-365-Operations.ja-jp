@@ -2,7 +2,7 @@
 title: オーストラリアのキャッシュ レジスターの配置ガイドライン
 description: このトピックは、オーストリアのローカライズ用配置ガイドです。
 author: AlexChern0v
-ms.date: ''
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ad2d9e1b76c2f86afd8041b41d1b2f91dc2f4d4e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d09b6bbe06d032b2313687072849ae96de653d8d
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798847"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402606"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
@@ -102,7 +102,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 1. **HardwareStation.Extension.EFRSample** プロジェクトを探して、構築します。
 2. **Extension.EFRSample\\bin\\Debug** フォルダーで、以下のファイルを探します。
 
-    - **Contoso.Commerce.HardwareStation.EFRSample.dll** アセンブリ
+    - The **Contoso.Commerce.HardwareStation.EFRSample.dll** アセンブリ
     - **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** アセンブリ
 
 3. アセンブリ ファイルをハードウェア ステーション拡張機能フォルダーにコピーします。

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf206dc247e0c1046594fc95d2fef98f9cd8bc3d
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: ddf7283bf4fd1f8ced5e2cac11f1c20f734bc91548910d7fe9d29f8d6a1be776
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767100"
 ---
 # <a name="process-automation-framework-development"></a>プロセスの自動化のフレームワークの開発
 

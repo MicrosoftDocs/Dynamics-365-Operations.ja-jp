@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db6b6274558eff9e100649e7b41de015d3cf744f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 74c7bbee5879c53c1022aa5841b80176f7c3b44cdb07162c31fa35747d3a2347
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765072"
 ---
 # <a name="build-the-customer-form"></a>顧客フォームの構築
 

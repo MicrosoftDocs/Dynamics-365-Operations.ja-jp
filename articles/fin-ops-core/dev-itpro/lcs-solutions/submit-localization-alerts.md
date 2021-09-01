@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ad38f211fa08e08c906135b7523772a059504d0
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 5bd7233440db5bcb007714e912c664272b04164fb44c7f9ad3c7a02ee0515364
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750532"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c1123e84616be2aab6832839b8b1619a172e33f2
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: c86deaa8d068001a20e8272e66d4ed00b8b95dba5a965a1f21f8a8df7cd21e70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638332"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731416"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10020-august-2021"></a>Dynamics 365 Finance 10.0.20 (2021 年 8 月) の機能のプレビュー
 

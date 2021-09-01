@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 28ce8757a2ee30fa77d69c393943828abd946a21
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 72f72ed34ea867faf23a6e2e70c688c2844aaa8e4522bac09dfb8857fc379c15
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759994"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 

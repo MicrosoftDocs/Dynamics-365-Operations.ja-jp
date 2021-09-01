@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5756a5024b09c29f8b081c0b4c6d07520cfb6fd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4bb69ea86f376ee290a0acde8d47d3bab0ee33f58a81cd9dabcfb8fb50ba8fae
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354349"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737821"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
@@ -119,8 +119,8 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 [![フォーム パート情報ボックス カードの例。](./media/factbox4.png)](./media/factbox4.png)
 
-## <a name="appendix&quot;></a>付録
-### <a name=&quot;frequently-asked-questions&quot;></a>よく寄せられる質問
+## <a name="appendix"></a>付録
+### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。
 
@@ -128,7 +128,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   情報ボックスの下部にある **詳細** ボタンをクリックすると、関連するレコードの完全な一覧を含むバッキング フォームに移動します。 このボタンは、次の例のように **クリック済み** メソッドをオーバーライドする通常のボタン コントロールを使用して実装する必要があります。 グリッドのデータを提供するテーブルの **TableRef** および **ListPageRef** プロパティに必ず入力してください。
 
         ```xpp
-        [Control(&quot;Button")]
+        [Control("Button")]
         class More
         {
         public void clicked()

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d2f70bfbbeed6e55cf9864eedd6cd347a5c72c
-ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
+ms.openlocfilehash: 8acbeda194625950132e5d8a99181c50fa8ebe8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6092392"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345583"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -67,6 +67,7 @@ ms.locfileid: "6092392"
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
 * [メンテナンス モード](../sysadmin/maintenance-mode.md) 設定は、ソースで有効になっていた場合でも無効になります。
+* 二重書き込みの構成。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
 
 これらの要素は、環境固有のものであるためコピーされません。 この例には、BatchServerConfigおよびSysCorpNetPrintersの各レコードが含まれます。 その他の要素は、サポート チケットのデータ量が多くなる懸念があるためコピーされません。 たとえば、簡易メール転送プロトコル (SMTP) はUAT環境でも有効になっているため、重複する電子メールが送信されてしまう可能性があります。また、バッチジョブも有効になっているため、無効な統合メッセージが送信されてしまう可能性もあるため、管理者がポストリフレッシュクリーンアップを行う前にユーザーが有効化されてしまう可能性があります。
 

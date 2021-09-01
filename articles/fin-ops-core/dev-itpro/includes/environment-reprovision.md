@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: eb5ecef9cb9b70e8395989ea271bdb717e573427
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: e65d6975201e7de58b2df5889bb8f32b2d72d5e8cd9566b874c813d409b74bd0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920495"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716020"
 ---
 > [!IMPORTANT]
 > 環境固有のレコードの中には、自動的なデータベース移動操作に含められないものがあり、その手順を追加する必要があります。 次のような役割があります。

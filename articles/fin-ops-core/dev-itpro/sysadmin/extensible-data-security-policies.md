@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 2d6e9ccbae2321f805dda2b7b01462e8f7da1e22
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9731007ae0b6d88cf192c5895a2923642af27ffb3daf025bf2ad743143ad3753
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714537"
 ---
 # <a name="extensible-data-security-policies"></a>拡張可能なデータ セキュリティ ポリシー 
 [!include [banner](../includes/banner.md)]

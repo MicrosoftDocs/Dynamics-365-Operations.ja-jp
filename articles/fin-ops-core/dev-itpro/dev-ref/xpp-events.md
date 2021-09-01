@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 112f6d43ac2e9e2e579293ccf768e116e03d1dad
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: c392acdb7d4ba4abfbdd5e1944b23de99f7bc94fa5f450847ce1931788a3b450
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760006"
 ---
 # <a name="x-event-terminology-and-keywords"></a>X++ イベントの用語およびキーワード
 

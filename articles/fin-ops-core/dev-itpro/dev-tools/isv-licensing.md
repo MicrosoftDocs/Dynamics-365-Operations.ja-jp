@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84820854dabca9b0a3d4deb70f37781f7415d51c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: fd025db36c32b96e73811a3051ad0ec64b1059b803f60b7da54f57d508ef300e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730579"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -53,10 +53,10 @@ ISV は **ブール値** および **番号** の 2 つのタイプを作成で�
 ISV ライセンスがインポート後に無効になったとき、ISV ソリューションはサーバーが再起動されるまで実行を継続します。 (サーバーの再起動後、ソリューションは無効になっています。) Application Object Server (AOS) のインスタンスの起動時にエラーがスローされます。 エラーはイベント ログに書き込まれます。
 
 ## <a name="implementing-isv-licensing-in-a-solution"></a>ソリューションへの ISV ライセンスの実装
-ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が必要です。 Microsoft が、特定の CA をお勧めすることはありません。 ただし、多くの企業がこれらの証明書を提供します。 Authenticode 証明書は、さまざまなキー サイズに役立ちます。 ISV ライセンス機能は、キー サイズが 1024 ビットと 2048 ビットの両方の証明書をサポートします。 既定では、多くのプロバイダーが 2048 ビット キー サイズを使用しており、より強固な暗号化を提供するために ISV はこのビット キー サイズを使用することをお勧めします。 ただし、ISV に既に既存の 1024 ビット キー サイズがある場合、そのキー サイズは ISV ライセンス機能で動作します。 
+ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が必要です。 Microsoft が、特定の CA をお勧めすることはありません。 ただし、多くの企業がこれらの証明書を提供します。 Authenticode 証明書は、さまざまなキー サイズに役立ちます。 ISV ライセンス機能は、キー サイズが 1024 ビットと 2048 ビットの両方の証明書をサポートします。 バージョン 10.0.20 のプラットフォーム更新プログラム以降では、3072 ビットおよび4096 ビット コード署名証明書がサポートされています。 より強力な暗号化を行うため、ISV がより大きなビット キー サイズを使用することをお勧めします。 ただし、ISV に既に有効な 1024 ビットまたは 2048 ビット キー サイズがある場合、そのキー サイズは ISV ライセンス機能で動作します。 
 
 > [!NOTE]
-> ISV ライセンス機能は、4096 ビット キー サイズをサポートしていません。 Authenticode 証明書はさまざまな暗号サービス プロバイダーを持つことができます。 ISV ライセンス機能は、Enhanced Cryptographic Provider を使います (Base Cryptographic Provider もカバーします)。 Authenticode 証明書を購入できる多くの独立したプロバイダーがあります。 Microsoft が、特定のプロバイダーをお勧めすることはありません。 頻繁に使用されるプロバイダーには、Symantec VeriSign、Thawte、Go Daddy があります。
+> Authenticode 証明書はさまざまな暗号サービス プロバイダーを持つことができます。 ISV ライセンス機能は、Enhanced Cryptographic Provider を使います (Base Cryptographic Provider もカバーします)。 Authenticode 証明書を購入できる多くの独立したプロバイダーがあります。 Microsoft が、特定のプロバイダーをお勧めすることはありません。 頻繁に使用されるプロバイダーは、Symantec VeriSign および Thawte です。
 
 ## <a name="certificate-import-and-export"></a>証明書のインポートおよびエクスポート
 証明書は、お客様のライセンス ファイルに署名し、インポート時にライセンス ファイルを検証するために使用されます。 Authenticode 証明書は、4 つのファイル形式をサポートします。 ISV ライセンス機能については、2 つの形式で証明書ファイルが必要です。

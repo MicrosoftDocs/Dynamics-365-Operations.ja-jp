@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: c93845b2f37a1b760a6fc160fe75db568d757a4f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 965337eb2c4fc4ae3c931de5ef559c1aba39e866800a2be2b7ca2336fc46fede
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190323"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714565"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 

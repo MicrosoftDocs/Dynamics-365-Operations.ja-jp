@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 3fa4eb3ebb30a4032d29c09746b43cb079c3cfe0
-ms.sourcegitcommit: 41a5d18552bcc94cb1ddbbe3f3278eaf9d05f418
+ms.openlocfilehash: 2ec97a7f98b96788b02989a937ae62e8a9a9bcaf246c22fbc4cc59fa19ae2034
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "6617058"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715224"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 

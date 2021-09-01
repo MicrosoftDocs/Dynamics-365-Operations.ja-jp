@@ -1,7 +1,7 @@
 ---
 title: データ エンティティ ウィザード ルール
 description: このトピックでは、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 6234
 ms.assetid: 551ac5d6-980c-487f-a15c-66d7ab80924a
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 558d0ab44664e632b4373c863bf97966ba6ebde1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 503b9279727d4fcfd47785af825be7e9333cf06f
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752306"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403962"
 ---
 # <a name="data-entity-wizard-rules"></a>データ エンティティ ウィザード ルール
 

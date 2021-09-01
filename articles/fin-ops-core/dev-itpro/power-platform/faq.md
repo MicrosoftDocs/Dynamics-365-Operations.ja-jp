@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4cd386f831ec03489bc7a4f18256b7c6ee5e0da2
-ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
+ms.openlocfilehash: 8c29f325ddb60abdef09a5cfb16cc85a537bf5e789639d9994186e5d43b054fa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2021
-ms.locfileid: "6048932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747217"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 

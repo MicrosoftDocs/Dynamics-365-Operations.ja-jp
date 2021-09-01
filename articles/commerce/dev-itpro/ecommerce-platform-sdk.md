@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5658092ded3ab7958359cf075eec33a1d8a6f0dc
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 649128aeb6f80e9d02ffcafeb4c6f965af5e0808b305e5121cfe2600dec3b653
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936868"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767304"
 ---
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: b0ec19d13e05b3ea1131d20e30f40ae8db66f98e
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 3414e0cf5cbf9a8764402f96ddf4cc0aed56ba64f713063cb7d85491ac885a67
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923323"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734600"
 ---
 # <a name="whats-new-or-changed-in-platform-update-30-for-finance-and-operations-apps-november-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 

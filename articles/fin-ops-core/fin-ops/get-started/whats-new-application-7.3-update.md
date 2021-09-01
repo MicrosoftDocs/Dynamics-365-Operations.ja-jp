@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6394f3d5e292e48e3eb273bd10848602226c2bf9
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9c06f3aaa2cd5f74aa474f8bb384710fb8ec2034fdfd910ae027fbc74c5a8310
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716731"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
 

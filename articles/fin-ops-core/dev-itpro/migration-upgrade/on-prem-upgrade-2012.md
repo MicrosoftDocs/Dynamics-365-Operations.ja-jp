@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: ef7ebf33fc8e230dc5c94e03eb2332d05566d716
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: fecb4bc2d714cf122eb9c29a4bea394e55f8c338a21bbacb3a5bfde7833cc4b9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731517"
 ---
 # <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 のデータ アップグレード プロセス
 

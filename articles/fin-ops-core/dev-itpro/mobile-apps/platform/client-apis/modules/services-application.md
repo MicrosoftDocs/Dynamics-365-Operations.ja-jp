@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: a8e7ce7c1af68d1b2902cad4fbe93b6cbc95b4b1
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: badfe4bb153799ff4fbf809fa12aa42fdc4781002e82ebb96e223179dabc09cc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767699"
 ---
 # <a name="application-module"></a>アプリケーション モジュール
 

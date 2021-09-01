@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 392eaf36c601e0e227113853a044362cb825de4e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 13aa8804a4325467ae0a1812319a705371d3512d3fe324feff122a50f3ced385
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344024"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719834"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
 

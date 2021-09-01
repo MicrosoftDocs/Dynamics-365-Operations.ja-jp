@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 0e24576f20b7c5d68fc6407f0a06425390eaec38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fad9276e32e2720aa434e06b121b03ea060b946bae98e5ce759d4f1d5fb00d96
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749275"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754314"
 ---
 # <a name="get-notified-about-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でサービス更新プログラムに関する通知を受け取る
 

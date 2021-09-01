@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 3c9fabe5d34268bfc7196adc2fca672cba55a97f
-ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
+ms.openlocfilehash: b3ff969839498a6a081c1a1ae554524ac59f2dbcb7fcd751141787a7a0bb32fd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6560036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746679"
 ---
 # <a name="use-pos-controls-in-extensions"></a>拡張機能での POS コントロールの使用
 

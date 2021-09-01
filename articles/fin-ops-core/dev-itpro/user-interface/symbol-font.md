@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: bensm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3535af87fa39a7a4bc91fd12ebd1eda4fc61a200
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 621d9dc2bf7becb4ba3dbb3ec26d19cb7fbe4853d62bed7d07b3a02fd1cbeee7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716008"
 ---
 # <a name="dynamics-symbol-font"></a>Dynamics Symbol フォント
 

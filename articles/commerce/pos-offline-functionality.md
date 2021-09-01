@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ed85aa5b489ed383db6a6754ed38a0496bc9f0f7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6fd7ca2f90ce07df00ac9169e07d5f66344bc98b0b92d97f7d8161b2815f2c4a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745272"
 ---
 # <a name="offline-point-of-sale-pos-functionality"></a>オフライン販売時点管理 (POS) の機能
 

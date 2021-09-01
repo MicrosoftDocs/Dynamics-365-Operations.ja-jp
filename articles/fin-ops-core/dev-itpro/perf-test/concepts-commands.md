@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 06de21bb2a8f842c3fcd397a5c834766e5a91ed5
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 3fd59eab400af6e1c603c253f7274e3dac8e392cb8a5b9a1b2462db1d679c717
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746559"
 ---
 # <a name="acceptance-test-library-commands"></a>承認テスト ライブラリのコマンド
 

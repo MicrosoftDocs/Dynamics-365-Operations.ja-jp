@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1aed9f166feb2d8a1c01dfa2feb60da85fef4dd5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5544b373ee2bc51903757ba451a40d3955d3f08bfa5b8061d7e351378cee13c8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765790"
 ---
 # <a name="ad-fs-microsoft-365-compatibility"></a>AD FS Microsoft 365 の互換性
 

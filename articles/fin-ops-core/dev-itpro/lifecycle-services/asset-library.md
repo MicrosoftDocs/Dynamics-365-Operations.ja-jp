@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 084d5330b806fc9e21b4cc58e0058d76a8755a85
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1183724aad4f6ec44d6ab1e7c8834a8636d1379bc3ce1088067ed9c2666b9834
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775268"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 

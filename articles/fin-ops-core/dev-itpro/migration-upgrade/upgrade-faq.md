@@ -2,19 +2,19 @@
 title: AX 2012 からのアップグレード - データ アップグレード FAQ
 description: このトピックでは、Microsoft Dynamics AX 2012からのアップグレードの際、データ アップグレードについてよく寄せられる質問に回答します。
 author: ttreen
-ms.date: 07/01/2021
+ms.date: 08/02/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2021-07-01
-ms.openlocfilehash: e8fefaa8fe1bbd2c8a69ca50f52c76280ebeb2b4
-ms.sourcegitcommit: 41a5d18552bcc94cb1ddbbe3f3278eaf9d05f418
+ms.openlocfilehash: 87480f756877b59acb51cbcd1418ab85621f2836438de2c70f0d9a42f6a98526
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "6617084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762402"
 ---
 # <a name="upgrade-from-ax-2012--data-upgrade-faq"></a>AX 2012 からのアップグレード – データ アップグレード FAQ
 
@@ -42,13 +42,13 @@ Dynamics 365 の AX 2012 データベース アップグレード ツールキ�
 
 いいえ。SQL BACPAC および DACPAC プロセスは、サンドボックス環境の AX 2012 データ アップグレードではサポートされなくなりました。 Dynamics 365 の AX 2012 データベース アップグレード ツールキットを使用して、サンドボックス環境でデータをアップグレードする必要があります。
 
-## <a name="ive-upgraded-an-ax-2012-database-in-a-dev-tier-1-environment-and-uploaded-the-upgraded-bacpac-file-into-lifecycle-services-however-i-receive-an-error-message-when-i-then-try-to-import-the-bacpac-file-into-a-sandbox-environment-how-do-i-fix-the-error"></a>AX 2012 のデータベースを、DEV (レベル 1) 環境にアップグレードし、アップグレードした BACPAC ファイルを Lifecycle Servicesにアップロードしました。 しかし、BACPAC ファイルをサンドボックス環境にインポートしようとすると、エラー メッセージが表示されます。 どのようにエラーを修正できますか?
+## <a name="ive-upgraded-an-ax-2012-database-in-a-cloud-hosted-environment-dev-and-uploaded-the-upgraded-bacpac-file-into-lifecycle-services-however-i-receive-an-error-message-when-i-then-try-to-import-the-bacpac-file-into-a-sandbox-environment-how-do-i-fix-the-error"></a>AX 2012 のデータベースを、にアップグレードし、クラウド ホスト環境 (dev) アップグレードした BACPAC ファイルを Lifecycle Servicesにアップロードしました。 しかし、BACPAC ファイルをサンドボックス環境にインポートしようとすると、エラー メッセージが表示されます。 どのようにエラーを修正できますか?
 
 アップグレードした BACPAC ファイルを Microsoft Dynamics Lifecycle Services (LCS) からサンドボックス環境にインポートしようとする場合、次のエラー メッセージが表示される場合があります。
 
 > インポートされたデータが失われ、環境が失敗状態になるため、Dynamics 365 環境への AX 2012 bacpac ファイルのインポートはサポートされていません。
 
-実行される検証により、プロジェクトの実装タイプが **AX2012 データ アップグレード** の場合、BACPAC ファイルはサンドボックス環境にインポートされなくなります。 データのアップグレードには、Dynamics 365 の AX 2012 データベース アップグレード ツールキットを使用する必要があります。また、データのアップグレードは、サンドボックス環境で行う必要があります。
+BACPAC ファイルがサンドボックス環境にインポートされるのを防ぐために検証を行います。 AX 2012 データベースをサンドボックス環境へアップロードするには、データの転送に SQL レプリケーションを利用する Dynamics 365 の AX 2012 データベース アップグレード ツールキットを使用する必要があります。
 
 ## <a name="can-i-filter-on-the-table-data-that-will-be-replicated-for-example-to-limit-specific-records-only-for-replication-to-the-target-database"></a>レプリケートされるテーブル データでフィルター処理できますか (例: ターゲット データベースへのレプリケーションのみに特定のレコードを制限するなど)?
 

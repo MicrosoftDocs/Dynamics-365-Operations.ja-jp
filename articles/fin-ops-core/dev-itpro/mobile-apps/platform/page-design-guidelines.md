@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 33392480797ecc6320f0ddd5a159a20754f075f3
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8648ff4b4786bba5727f39e20e3140fadb16608661811b0166240d41024e39de
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769838"
 ---
 # <a name="page-design-guidelines"></a>ページ デザインのガイドライン
 

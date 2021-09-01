@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd19ae4fc02d4cedd731d4a7e60d10c476129a7d
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d3c2c652e93a9156f992963394a16a31d599a5248878f91f6d44abb40b2a33a0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767132"
 ---
 # <a name="write-best-practice-rules"></a>ベスト プラクティス ルールを記述する
 

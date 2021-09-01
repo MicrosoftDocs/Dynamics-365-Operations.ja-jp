@@ -1,7 +1,7 @@
 ---
 title: カスタム サービスの開発
 description: このトピックでは、カスタム サービスの作成方法を説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc427694d5ae4d768cfd8b65898e2bc70e1c8419
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 42965ab7bda7d7853d04960fa3d8bc063c2fbb12
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940900"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404187"
 ---
 # <a name="custom-service-development"></a>カスタム サービスの開発
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 703cd22a5806d03c7a49d56418f11dc938985293
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 00e040cf64003269c8ed2c58ec41946d7c865dac6cc7fe94f86292d96153eb31
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775264"
 ---
 # <a name="deprecation-of-methods-and-metadata-elements"></a>方法とメタデータの要素の廃止
 

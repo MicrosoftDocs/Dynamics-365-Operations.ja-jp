@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7acc4b256e2b945f4dc06b2b1048994aadb68480
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9f9fc81fe634b250ee990ddd43e844f45bd0389217cf75bd8d3c88e88e7f4462
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749628"
 ---
 # <a name="power-apps-host-control"></a>Power Apps ホスト コントロール
 

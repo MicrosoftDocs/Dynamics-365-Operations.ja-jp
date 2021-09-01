@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4a656ffdcda59f4cb38977e93ff446ec7075409a
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 550bda67ef8a219640237b45931a58da09b71348d271b7efaa760f32db5a84a9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6335635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767098"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 

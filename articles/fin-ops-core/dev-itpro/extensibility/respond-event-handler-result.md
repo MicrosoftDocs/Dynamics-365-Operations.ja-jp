@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: c11dbc0e82c27952e0defc689d6f80bde1be235e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 5e216d7120adfd7c6d98903aad02bd352f3969fd38131fe0dc4ae0d389f44d02
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775962"
 ---
 # <a name="respond-by-using-eventhandlerresult"></a>EventHandlerResult を使用して応答
 

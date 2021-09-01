@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d352a5eb1d387733bdfd48443fdc3590895f0c8a
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 74356f68ae08b542e75ecd44d3206958ce86b90ba93eb790dbc479e5ee270afd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745192"
 ---
 # <a name="fleet-management-sample-application"></a>フリート管理のサンプル アプリケーション
 

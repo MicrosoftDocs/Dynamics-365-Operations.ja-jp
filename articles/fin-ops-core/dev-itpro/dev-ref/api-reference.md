@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e67a874a9ab6a7609b43a7c0823b0b2b5d96f81c
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: d86e08abdf73ed2df897cded9e0db87d9d1527328fc7e3a0c2189c6c3a90366f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763496"
 ---
 # <a name="api-class-and-table-resources"></a>API、クラス、テーブルのリファレンス
 

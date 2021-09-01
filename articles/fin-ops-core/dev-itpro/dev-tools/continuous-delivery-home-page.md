@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b37af7285909077351b81332be68c0fb9d6a113b
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b0261c39e2120c22c0ec2c17d99e54d0b3f4f0a9e89bc12c7aa9536ee42a45fb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718267"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 

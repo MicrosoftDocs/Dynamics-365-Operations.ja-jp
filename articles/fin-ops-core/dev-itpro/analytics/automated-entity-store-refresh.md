@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d31ae5497ea087395282312020067bf958c0c72
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 02283a983fcbda5ea7c3441a13c62e54afb641a9e90466c8578c9fdcda563b64
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733185"
 ---
 # <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
 

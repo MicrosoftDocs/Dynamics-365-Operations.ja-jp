@@ -12,12 +12,12 @@ ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 6f503499ba1b209f978f83ec67d55e29dce6f91b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1691bd11eee901472fe9f025b5088a38dd33cf96695ca4a8f08725f3ccaf5c0f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721900"
 ---
 # <a name="process-and-consume-data-packages-in-dynamics-365-finance-and-operations-apps-solution"></a>Dynamics 365 Finance and Operations アプリ ソリューションでのデータ パッケージの処理と使用
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 5d56f8bede3d312c39f0619c1969607da912e4eb
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 5400cff43aa11729f46fb31e2795af9c0fa75d9895e3cf6b2b83b6c88f4ac96d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737829"
 ---
 # <a name="preconfigured-system-accounts"></a>コンフィギュレーション済みのシステム アカウント
 

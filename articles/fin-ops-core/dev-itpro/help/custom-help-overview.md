@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: a0ff454d294f0bbd4d9bc7e51d66e8ee53dfba1b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 75ed04a18ee444e1174eb5c3e034dc130ede208cf51c248f590a8adcca0df644
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763464"
 ---
 # <a name="custom-help-overview"></a>カスタム ヘルプの概要
 

@@ -1,7 +1,7 @@
 ---
 title: ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 description: このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
-author: akviklis@microsoft.com
+author: akviklis
 ms.date: 06/10/2021
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4e1193c7c93a5f087e96e0c7cc8a0c2d3d871b26
-ms.sourcegitcommit: 3a9599e9b9458434c0e44d295eabd2304c5650be
+ms.openlocfilehash: e2416240aa3400de4710c7c42d07e2869c0a95eddc5cb303771013b2f90d5851
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "6334467"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766475"
 ---
 # <a name="set-up-and-deploy-the-dynamics-365-commerce-localization-for-brazil"></a>ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 

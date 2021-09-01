@@ -10,12 +10,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ms.date: 05/11/2020
 ms.author: edupont
-ms.openlocfilehash: ade9bc331852768177084a6ebe769ecc6c82ab7b
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: df263aedb4a23869e6a4ec040bb1f9cc971ed813cbbd4a4e1eff5429055327cc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758176"
 ---
 # <a name="extend-customize-and-collaborate-on-the-help"></a>ヘルプの拡張、カスタマイズ、および共同作業
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 16000b172bfbb7c354716dcd32059683f5b78341
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 07ca40135b5c28b1608f018fc900fe1bed961cfadb350514c5031b1bd641c6d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866138"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742254"
 ---
 # <a name="test-data-methods"></a>テスト データ メソッド
 

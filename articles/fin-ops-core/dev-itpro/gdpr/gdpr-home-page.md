@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3375c5f7b09b2c227e2f5ec0dbd2b6d061410606
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 9d312fa30cfe442264ecb60be1004428821843921f388c04dca0af6659977d86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336762"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755764"
 ---
 # <a name="respond-to-gdpr-data-requests-resources"></a>GDPR データ要求への応答のリソース
 

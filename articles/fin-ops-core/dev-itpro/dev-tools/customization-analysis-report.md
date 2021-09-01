@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b46ccb9f1705c8528e2a1ed50068dc9230ba4cb
-ms.sourcegitcommit: e9b078cea2d7953fe4efaa065480cc9e5befbec8
+ms.openlocfilehash: 7d6b8ab546e90479be9609f988e4a724460b83a8
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "6277243"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344736"
 ---
 # <a name="customization-analysis-report-car"></a>カスタマイズ分析のレポート (CAR)
 
@@ -35,6 +35,12 @@ xppbp.exe ツール、c:\\packages\\bin または I:\\AosService\\PackagesLocalD
 
 ```Console
 xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```
+
+カスタム モデルが ISV モデルを参照する場合は、次のような `-PackagesRoot` パラメータを含める必要があります。
+
+```Console
+-packagesroot=K:\AosService\PackagesLocalDirectory
 ```
 
 ### <a name="example"></a>例

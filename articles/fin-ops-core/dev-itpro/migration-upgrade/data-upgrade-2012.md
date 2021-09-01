@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 32d8a2820a6b138b703e96005a70a7162fd6053e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 398ee296927d4b98404980bf737fe353f0c4d16ab3559075af61c01217ca4087
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355266"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712291"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 

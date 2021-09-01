@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-4-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4bcba8beb8ca54bdc25db0c214840743b126c10e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce2add393bcd3adc50d023e9874fff58252d5429f609908abd1ee7fff9f5bf70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741622"
 ---
 # <a name="microsoft-dynamics-insider-program"></a>Microsoft Dynamics Insider Program
 [!include [banner](../includes/banner.md)] 

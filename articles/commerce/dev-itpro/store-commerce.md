@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-20-2020
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: ccda3518cefa47c52f616b783a65359e98fee0d8
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 671a3236353e589e828da824ffcaa0ca5ca180482ea083e8558a6799674b326b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777611"
 ---
 # <a name="store-commerce-app-in-microsoft-dynamics-365-commerce-preview"></a>Microsoft Dynamics 365 Commerce での Store Commerce アプリ (プレビュー)
 

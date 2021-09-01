@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
-ms.openlocfilehash: 65e0fbbbca916230db11686e665b4beff9b3e4a3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 675682aafd1ed862095c49df4676f2320d9ceef9838a0a20f964e3075290a9c8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765782"
 ---
 # <a name="add-links-to-your-organizations-legal-terms-and-privacy-statement"></a>組織の法律条項およびプライバシーに関する声明へのリンクの追加
 

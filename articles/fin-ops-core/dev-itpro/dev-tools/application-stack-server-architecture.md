@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 438d7bb51d19947bfb0aa3a97a1a937180952ba0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 83309ad86f899ecea9680bbc26238133eee293e51cdbf69751e705ab094fc4c4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775300"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: c46888c0236513bd451665676b992e9dd495cef4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 52bade7b98fe152792a637fdefb9fb69b08a49563abb5880447720133a948bc0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754380"
 ---
 # <a name="create-a-pos-extension-package-project"></a>POS 拡張機能パッケージ プロジェクトの作成
 

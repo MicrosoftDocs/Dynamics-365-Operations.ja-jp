@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 7fc425d2f36d440c6da710954e13347fd0bc8036
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 3adf320188eeb38410e54a260a04868a0c9a5691d844e5682b09cbf1f06c5b62
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761372"
 ---
 # <a name="asyncservice-type"></a>AsyncService タイプ
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4398f942a37d7efaff4461be2f709078613166e0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d17095ef2aa6acd1cd1aac2a5ef9c5dea6542cac89ab5df97eaf18bf4276aade
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718515"
 ---
 # <a name="implement-a-custom-destination-for-generated-documents"></a>生成されるドキュメントに対するカスタム 送信先の実装
 

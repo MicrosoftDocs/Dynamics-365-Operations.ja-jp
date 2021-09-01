@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: b9817c243fad39d4805ac69f23b4caad94002865
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 318fa1d1f5ba744723aedf926699c3d8f88920561890c136b139016061c44536
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361310"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773770"
 ---
 # <a name="help-secure-mobile-workspaces"></a>モバイル ワークスペースのセキュリティを強化する
 

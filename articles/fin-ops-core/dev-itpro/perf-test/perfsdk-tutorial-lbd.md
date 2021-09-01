@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: 48bac3c61be105fd18b1d7e9b1111bd76e46fa38
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6e5a0b191147e4f30415d4c6e9c8afafed84d362d8e1f17eaf1cd9f7f76ac7fc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724317"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 

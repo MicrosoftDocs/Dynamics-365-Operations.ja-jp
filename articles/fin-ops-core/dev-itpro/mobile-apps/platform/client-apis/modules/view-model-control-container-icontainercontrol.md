@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: c3e85377c91ebfd179863024053f9185e15f4477
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: bf320b0110a6270d5cec1580e52a0f8a59cbd694614e554339ccfb8b9e7f720d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735482"
 ---
 # <a name="container-module-client-apis"></a>コンテナー モジュール (クライアント API)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 48ad16a5b53ab3070c07721e28fbb3a640cd0ad4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 97aeff82852e1d719ca9716a1642a22a23a603e0ff08373d4d420ce44cf58182
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354671"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764630"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 

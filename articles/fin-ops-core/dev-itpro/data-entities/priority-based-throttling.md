@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 42255f78a8596523ba4989b3fe217b7a6b01d07e
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: 591fb23af3c2a26978b91fcaec5c293b6eb14badf068b1f3caac7a54857f50c2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039753"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772899"
 ---
 # <a name="priority-based-throttling"></a>優先順位に基づく調整
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 446f623df3631ccbc22ac7eaa39f075d35c0679e
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: d43685877ee4cd5155dc8076d476d2d483d70ee45b65a5ddd33de7ac24e7cf3a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721910"
 ---
 # <a name="database-movement-operations-home-page"></a>データベース移動操作ホーム ページ
 

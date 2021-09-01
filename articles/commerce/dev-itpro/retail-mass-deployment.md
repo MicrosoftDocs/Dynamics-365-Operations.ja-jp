@@ -2,7 +2,7 @@
 title: レガシ セルフサービス コンポーネントの一括配置
 description: このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。
 author: jashanno
-ms.date: 04/06/2021
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 369d60cdb1ba84c35f38e7a28c1bbac41f0a19b3
-ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
+ms.openlocfilehash: c2c253b3e31b4ee0e32d1973d889c381c92d9281715eb52b49d13343e40fd11b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5864338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757384"
 ---
 # <a name="mass-deployment-of-legacy-self-service-components"></a>レガシ セルフサービス コンポーネントの一括配置
 
@@ -32,14 +32,16 @@ ms.locfileid: "5864338"
 
 | 区切り記号                 | 説明 |
 |---------------------------|-------------|
-| -S または -サイレント             | インストーラーをサイレントで実行します。 グラフィカル ユーザー インターフェイス (GUI) を使用しません。 **-Q** および **-Quiet** 区切り記号には同じ効果があり、使用することもできます。 |
-| -C または -Config             | このインストールの一部として使用するコンフィギュレーション ファイルの場所とファイル名を指定します。 |
+| -S または --Silent             | インストーラーをサイレントで実行します。 グラフィカル ユーザー インターフェイス (GUI) を使用しません。 **-Q** および **-Quiet** 区切り記号には同じ効果があり、使用することもできます。 |
+| -C または --Config             | このインストールの一部として使用するコンフィギュレーション ファイルの場所とファイル名を指定します。 |
 | -FilePath                 | カスタム インストールの場所を指定します。<p>標準のインストールにこの区切り記号を使用することをお勧めしません。</p> |
 | -LogFile                  | インストール ログのカスタム ファイルの場所を指定します。<p>標準のインストールにこの区切り記号を使用することをお勧めしません。</p> |
 | -SkipPrerequisiteCheck    | 前提条件および必須コンポーネントのインストールのチェックをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
 | -SkipSystemInfoCollection | インストールの開始時にシステム情報を収集するプロセスをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
 | -SkipMerchantInfo         | ハードウェア ステーションのレガシ セルフサービス インストーラーの終わりにマーチャント アカウント情報のインストールをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
 | -SkipAppxInstallation     | Dynamics 365 の2018 年 10 月のリリースから、この区切り記号は APPX Retail Modern POS アプリケーションのインストールをスキップします。 この区切り記号は、システム アカウントまたはサービス アカウント (ユーザー プロファイルがないアカウント) を使用してアプリケーションのインストールを実行するために必要です。 |
+| -V または --Verbosity     | 広範囲にわたる一連の詳細を追加するために、詳細なインストール ログを生成します。 |
+
 
 ## <a name="silent-servicing"></a>サイレント サービス
 

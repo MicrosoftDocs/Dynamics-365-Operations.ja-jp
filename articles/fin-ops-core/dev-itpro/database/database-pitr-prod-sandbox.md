@@ -2,7 +2,7 @@
 title: サンドボックス環境への生産データベースのポイントインタイム復元
 description: このトピックでは、Microsoft Dynamics Lifecycle Services を使用して生産データベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 06/23/2021
+ms.date: 08/4/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 04d6d49758dcd27181a1f8e5d515e9a725cdbacb
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: fd36707ab30f18240a9b9cc406460e4fb143e514
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303426"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345592"
 ---
 # <a name="point-in-time-restore-of-the-production-database-to-a-sandbox-environment"></a>サンドボックス環境への生産データベースのポイントインタイム復元
 
@@ -60,6 +60,7 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
+* 二重書き込みの構成。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
 
 これらの要素は、環境固有のものであるためコピーされません。 この例には、BatchServerConfigおよびSysCorpNetPrintersの各レコードが含まれます。 その他の要素は、サポート チケットのデータ量が多くなる懸念があるためコピーされません。 たとえば、簡易メール転送プロトコル (SMTP) は UAT 環境でも有効になっているため、重複する電子メールが送信されてしまう可能性があります。また、バッチ ジョブも有効になっており、無効な統合メッセージが送信されてしまう可能性もあるため、管理者が更新後クリーンアップを行う前にユーザーが有効化してしまう可能性があります。
 

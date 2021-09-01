@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d24e166254ebba9dd08c52b07fe56aec0b2dd18
-ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
+ms.openlocfilehash: 85aaaafa1cec40d8f4681b9a74c3c8c11f8c10e468157c2b7343a5d20849d702
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6542601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767741"
 ---
 # <a name="dual-write-mapping-reference"></a>二重書き込みマッピングのリファレンス
 

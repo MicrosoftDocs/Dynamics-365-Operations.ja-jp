@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 463e44694707c0553fce1941fae61842e7c92b6a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 097ba5879d7210702332f0d56dea22782ce534ab70d11ad23314ad6297587759
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736248"
 ---
 # <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 

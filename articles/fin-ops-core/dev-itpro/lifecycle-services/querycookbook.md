@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b1626a2ffad571fb2fc6747b592e723e4d6f690
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4dae9b0d9b9d176134c63fcf88466f3b0abdcc0bb81cade2db076c01d4e86834
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739451"
 ---
 # <a name="query-cookbook"></a>クックブックの照会 
 

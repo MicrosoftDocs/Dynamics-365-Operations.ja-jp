@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: a0ea16941394d652b61373e23a9e54c0e70be398
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7873e1e05ee577a2bfc00332d4bae9440e8b7ddbeed5673d5f34ef5a778836b0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358993"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760014"
 ---
 # <a name="initiate-data-source-values-of-the-user-input-parameter-type-from-source-code"></a>ソース コードからユーザー入力パラメーターのデータ ソース値を開始する
 

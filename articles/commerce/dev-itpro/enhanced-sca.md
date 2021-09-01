@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3bc7afc835b156a3ca83e4cf9398d8f92eebde77
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1d021853b92819313629c8be19dcf46c20674e131af888738cfb31ba306aa7a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6352362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734931"
 ---
 # <a name="enhanced-payments-in-storefront-checkout"></a>店頭会計の支払を強化
 
@@ -67,7 +67,7 @@ ms.locfileid: "6352362"
 
 > [!IMPORTANT]
 > - Adyen コネクタ バージョン **V002** のみが、拡張 SCA をサポートします。 バージョン **V001** は、チェックアウトが拡張 SCA 用に構成されている場合でも機能します。 ただし、バックグラウンドでは、そのバージョンはまだ 2 つの呼び出しを行います。
-> - 2021 年 1 月 1 日に欧州連合 (EU) で施行された SCA 要件のため、Adyen コネクタのバージョン **V001** は使用しなくまりました。 バージョン **V002** を使用するために Adyen コネクタを構成する方法については、[新しいクレジット カード用のプロセッサの設定](adyen-connector.md?tabs=8-1-3#set-up-a-processor-for-new-credit-cards) を参照してください。
+> - 2021 年 1 月 1 日に欧州連合 (EU) で施行された SCA 要件のため、Adyen コネクタのバージョン **V001** は使用しなくまりました。 バージョン **V002** を使用するために Adyen コネクタを構成する方法については、[新しいクレジット カード用のプロセッサの設定](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards) を参照してください。
 
 ## <a name="enable-enhanced-payments-in-storefront-checkout-in-commerce-site-builder"></a>Commerce サイト ビルダーでの店舗チェックアウトでの拡張支払の有効化
 

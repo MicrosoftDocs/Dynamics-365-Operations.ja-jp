@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f2614c3535d04dd14e446e31c6542e4deb700ec
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 80f76b35b11daef1be64cb3569512ce8ecbe00df82a2126c3c3445dad04ae8d1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756335"
 ---
 # <a name="case-management-overview"></a>ケース管理の概要
 

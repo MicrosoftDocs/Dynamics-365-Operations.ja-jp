@@ -13,12 +13,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: e5293ca1a4f9fbbd410b665cee859be5defdb36e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4bf0d130ec3d251826c5d65fc9d26181f4e3cc9b280f2098e60c40c6cc4fbdde
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752598"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 

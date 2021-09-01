@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 45b767abc716b3b5d9e0a92f2c4c35881e2ca93b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e136d28cf61c49a6f036b96ad7d751476b72a2a2772bbcdc66d48a8e3a51fb2f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733723"
 ---
 # <a name="build-odata-metadata-cache-when-the-aos-starts"></a>AOS 起動時に OData メタデータ キャッシュを作成する
 

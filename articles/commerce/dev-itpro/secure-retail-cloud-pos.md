@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7a6e84b50a1b072e6cb36165a4cc32dab4d9669f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7cbe6ae450fa31d1e5b4ac5d609326f42bdbfb27de81bd641893da7fb892d7dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743446"
 ---
 # <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a>共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 

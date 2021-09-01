@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 249185ccf9ac026b2d2ec48cd7c85ff69e578bad
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b18b35911ad9cc72fd21b60a46ab35dc4b67e4d2a44016829862350fc4435343
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728145"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d61a131c15f7ae705522733ea0fad41206ddc28e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 68b875b486906c059127d44574a106a88bdeba82b3900e7717aa08be197856b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729021"
 ---
 # <a name="dimension-expression-builder-subpattern"></a>分析コード式ビルダーのサブパターン
 

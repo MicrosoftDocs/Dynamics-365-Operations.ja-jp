@@ -1,7 +1,7 @@
 ---
 title: Finance and Operations アプリとサード パーティ サービス間の統合
 description: このトピックは、設計者と開発者が統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e23e3f047f6b5ce003f01074ad0a1c97854af1d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 80e76f698d12f960d6776bc9629c7670ecf2b728
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354377"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403964"
 ---
 # <a name="integration-between-finance-and-operations-apps-and-third-party-services"></a>Finance and Operations アプリとサード パーティ サービス間の統合
 

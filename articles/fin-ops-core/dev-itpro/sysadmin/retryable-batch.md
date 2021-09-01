@@ -2,25 +2,28 @@
 title: バッチ ジョブで自動再試行を有効にする
 description: このトピックでは、障害が発生した場合にバッチ ジョブで自動再試行を有効にする方法について説明します。
 author: sarvanisathish
-ms.date: 06/10/2021
+ms.date: 06/21/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 0ded7474dd5bf0b69763f2fd45109e9ee5c3395e
-ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
+ms.openlocfilehash: 4b34ccd0c895d19c67a3e0e10666ff7f74b819e1a1c72b9c1d1146ee923d4bc7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "6224990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715212"
 ---
 # <a name="enable-automatic-retries-on-batch-jobs"></a>バッチ ジョブで自動再試行を有効にする
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Finance and Operations アプリのバッチ ジョブで再試行を実装する方法、および障害が発生した場合に自動再試行を有効にする方法について説明します。 現在、Finance and Operations アプリの Microsoft SQL Server への接続が簡単に失われると、すべてのバッチ ジョブが失敗します。 この動作により業務プロセスが中断します。 クラウド サービスでは接続が失われることは避けられないので、Microsoft はこのタイプのエラーが発生した場合の自動再試行を有効にしています。
+
+> [!IMPORTANT]
+> この機能は、バージョン 10.0.18 以降で利用できます。
 
 ## <a name="metadata"></a>メタデータ
 

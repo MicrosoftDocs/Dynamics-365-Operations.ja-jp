@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f265939239fb2c287b1086b2dbb1ebe62de23314
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 2c2efaccad50627763d1639a9589d884ae19fdf6f71244416d75bd086afce73b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777362"
 ---
 # <a name="development-and-administration-for-finance-and-operations-apps"></a>Finance and Operations アプリの開発と管理
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 05ae87badad95f57936f0811314d0f337a999880
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: e75b7410aa6a3f5f6302283abfeb466b5be49405d5b8eab58f3e33d860cf50e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921303"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754312"
 ---
 # <a name="whats-new-or-changed-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能および変更された機能
 

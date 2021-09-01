@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 136d03d58fce63bcd4cfbfc42720832d1a5cc4d0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 54ddf4e5a345d3e1bfba65b1c79732e48f2ef7a359484c68164efe6fb2aaf26c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729730"
 ---
 # <a name="extend-table-maps-that-are-used-as-interfaces"></a>インターフェイスとして使用されるテーブル マップの拡張
 

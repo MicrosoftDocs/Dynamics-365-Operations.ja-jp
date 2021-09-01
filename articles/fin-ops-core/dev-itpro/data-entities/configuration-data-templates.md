@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: c744ae61dced1b76480174b97c656a93a410ce14
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 66deb7f67b4164ee94c186c4c133d4a95d2e6a3ab567f49de71ea9b5d5661c50
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740249"
 ---
 # <a name="configuration-data-templates"></a>コンフィギュレーション データ テンプレート
 

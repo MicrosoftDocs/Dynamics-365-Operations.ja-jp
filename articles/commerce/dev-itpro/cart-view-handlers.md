@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: fb90df5bb547fdafe071e735cb5535beae345c58
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a95605f6069549eae7789250b3e18aca525b5217b75e895fa21f0afe73ab840b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765358"
 ---
 # <a name="pos-cart-view-events-and-handlers"></a>POS カートのビュー イベントとハンドラー
 

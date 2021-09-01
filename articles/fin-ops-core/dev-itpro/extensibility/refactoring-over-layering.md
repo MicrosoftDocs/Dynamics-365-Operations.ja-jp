@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: CGarty
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 44ab233c108acf5f3553a9042d3559664bd2edeb
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: ffa9eea570c0cdb972a38785491c6211bc3eb206eea4de0edc41f9b949262cf3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865938"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729728"
 ---
 # <a name="relax-model-restrictions-to-refactor-overlayering-into-extensions"></a>オーバーレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
 

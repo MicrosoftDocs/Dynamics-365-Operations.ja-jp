@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 215f5041396d53b4d08cd768de51374f54b7898b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: febdde53463d827eae6436954d27b27908dcc19232722fb9aa608134ab8eecb9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737819"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 

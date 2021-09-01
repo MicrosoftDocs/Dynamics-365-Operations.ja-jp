@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e145b940e1a7f581694be1fedd0ebb7c1b6a0429
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 329a8c48fc79a4023690c34a9992ab43ba378473
+ms.sourcegitcommit: 9c007b271ba5ad5b9938fdd05776b73f6b7c9802
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348282"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "7411635"
 ---
 # <a name="create-a-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 
@@ -211,7 +211,7 @@ public static class CommerceRoles
 
 ### <a name="support-paging-in-retail-server-apis"></a>Retail Server API のページングのサポート
 
-リリース 10.0.18 から、API にページングが必要な場合、API に **QueryResultSettings** を追加し、クライアントから値を渡すことができます。 **QueryResultSettings** には、**PagingInfo** およびレコードがフェッチまたはスキップするための他のパラメーターが含まれます。  
+リリース 10.0.19 から、API にページングが必要な場合、API に **QueryResultSettings** を追加し、クライアントから値を渡すことができます。 **QueryResultSettings** には、**PagingInfo** およびレコードがフェッチまたはスキップするための他のパラメーターが含まれます。  
 
 拡張機能は、**QueryResultSettings** を CRT 要求に渡すことができ、データベース クエリがあるときに CRT 要求で使用することができます。
 

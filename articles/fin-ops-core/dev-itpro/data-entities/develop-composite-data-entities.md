@@ -1,7 +1,7 @@
 ---
 title: 複合データ エンティティの開発
 description: 複合エンティティは、相互に関連する複数のエンティティを利用して単一のエンティティを構築できる概念です。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 18411
 ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2ec4592d0f5bde6d5b5517ca21612e614dab79a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b285e9a87477097608bff2d8384bc35e4985959f
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350979"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403910"
 ---
 # <a name="develop-composite-data-entities"></a>複合データ エンティティの開発
 

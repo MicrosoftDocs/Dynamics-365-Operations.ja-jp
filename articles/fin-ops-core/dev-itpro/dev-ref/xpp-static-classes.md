@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 461394e375626c470a5ef23286b4edd129e8dbea
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: cf3fe5867dbf8f74adfa6706b066151ae259260eb3123887b16a3825c9e27dcb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736262"
 ---
 # <a name="x-static-classes"></a>X++ 静的クラス
 

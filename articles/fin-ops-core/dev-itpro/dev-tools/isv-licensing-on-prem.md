@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 951e033e001163229c9a553e2e9b4f2200dcc9fa
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 2926460282030b42b5fb67771452c9178077b763f1f80c5d2360677bf0449797
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729738"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 

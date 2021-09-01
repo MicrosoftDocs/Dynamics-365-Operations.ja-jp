@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
-ms.openlocfilehash: a3ef82ca688035dcc83c2c951e547b899af29113
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9beab388278d19235ff68e79da07af226de01428cae5c73180eb06f76e3bdbdc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748252"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-20-september-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年 9 月) の新機能および変更された機能
 

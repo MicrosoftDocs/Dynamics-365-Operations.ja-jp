@@ -3,7 +3,7 @@ title: データベース移動の API - 参照 - v1 - ステータスの取得
 description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
 ms.date: 09/22/2020
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 57b44810be6c0d1b5d9841036bd350ec97523fce
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0359ebc1c3b646be064e6136af37b7838505a0fb
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343397"
 ---
 # <a name="get-status"></a>ステータスの取得
 

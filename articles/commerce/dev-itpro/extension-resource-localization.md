@@ -13,12 +13,12 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: bd54276e6ed9136f94251d0dc2b379e4f296e9c6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 592164eab666faa2b1d2696dd949da57745099a058bafba644d9fd29cf602d84
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715470"
 ---
 # <a name="localize-commerce-extension-resources-and-label-files"></a>コマース拡張リソースおよびラベル ファイルのローカライズ
 

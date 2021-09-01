@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7904f11cbd4a2578c1d4789b8efcb441376f7dd5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 23e1f6372fe29b97a7210ec49aa7ab3518b16c2ce87dd2a264aa652d41259031
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749277"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745164"
 ---
 # <a name="classification-of-localization-features"></a>ローカライズ機能の分類
 

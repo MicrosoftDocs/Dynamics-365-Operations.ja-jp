@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06ebb795eb34b22c62f1c977fb83e6cb25ef9c03
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b6ee8a22c126ec672de9d6d82799a606f935882aa956122566c44ef4cdf0597c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729023"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 

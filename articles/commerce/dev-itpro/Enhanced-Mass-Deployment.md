@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 861f26d4e9990ac8bb5c99b8471de98479287ac9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d7e3c77613712fdf7187995864fbb5efd95958a8666eea1271d475bbd1be3b0d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762326"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>シールされた Commerce セルフサービス コンポーネントの一括配置
 

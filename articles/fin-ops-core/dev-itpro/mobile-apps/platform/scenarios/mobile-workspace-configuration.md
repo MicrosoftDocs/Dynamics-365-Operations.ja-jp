@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 29fd34068a7974bc779070d23d7d0578427b3e40
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9f8ee349f7bfadf8fdfe16a308d2b9834fd2addb438a39d013c31af24ac5e99b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742292"
 ---
 # <a name="configure-workspaces-by-using-the-sysappworkspace-class"></a>SysAppWorkspace クラスを使用してワークスペースを構成する
 

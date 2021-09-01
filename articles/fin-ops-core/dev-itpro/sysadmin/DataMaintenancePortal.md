@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: adac907b7ecc2523c4f9642b9676b4f975365704
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 05d5ea2038f3b5bd754895cc32a87979c3a7d8f38a261371a9cce89ae86ee5d2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763448"
 ---
 # <a name="data-maintenance"></a>データ管理
 

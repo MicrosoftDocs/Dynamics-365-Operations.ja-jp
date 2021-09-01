@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0071510ab6174deaf0eb88aee1eb29037c77570b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9ddc9f47d17782ef77f5c9c05253835a5b79748ac836f8b5bd33c2328cea427
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813713"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736807"
 ---
 # <a name="set-up-metrics-for-iot-intelligence"></a>IoT インテリジェンスの指標の設定
 

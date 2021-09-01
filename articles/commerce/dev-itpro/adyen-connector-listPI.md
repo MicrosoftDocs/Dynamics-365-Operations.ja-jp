@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fc082fa07e1d832bf356c2b41f3448441704b054
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0ef22565376440986b4af408b001512dfbaada36813b9c31b178cdf27a380b18
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746687"
 ---
 # <a name="saving-online-payment-instruments-with-the-adyen-connector"></a>オンライン支払手段を Adyen コネクタで保存
 

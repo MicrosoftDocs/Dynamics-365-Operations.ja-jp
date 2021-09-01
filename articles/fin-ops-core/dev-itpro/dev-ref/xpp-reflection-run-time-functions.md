@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd86a84334798cd10f7f5587550a5dc218b5d6f1
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: cff054661928442d3f68ae581a344304d1af016d4a69db0f80089bfdbb2ff5e9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747231"
 ---
 # <a name="x-reflection-runtime-functions"></a>X++ リフレクション ランタイム関数
 

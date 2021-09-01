@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 2f023add4a6fd7eb8591f3ac38cb9e0ff6179526
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a104cd4758411eca00372a40fa87e850113f66ff8ba3b72adea93a07c44ed960
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762210"
 ---
 # <a name="table-map-extension"></a>テーブル マップ拡張
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 99fee54667715b16a793ca6e6ff554f203bbe349
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6e806055d38b0cdaa505d2695def60548bbf77faec08176562f20eed68903934
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737827"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 

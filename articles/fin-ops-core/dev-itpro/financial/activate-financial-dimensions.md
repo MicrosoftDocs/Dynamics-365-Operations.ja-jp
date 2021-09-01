@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6212547759d312f18ca38f751e0a72198fb77097
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b49ed7580bc17a78fed98da427a2c4e986b4edd381c3cc063176bd126c281af0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749640"
 ---
 # <a name="financial-dimension-activation"></a>財務分析コードの有効化
 

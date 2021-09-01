@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a7afbbc4afd79dd76bd67ec036acf0903e3e914
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: f6d5d2235fb26a3a7533806b7424b3abf3dd6937ae5fac50d5b4ade544f8e3f5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923205"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768397"
 ---
 # <a name="upload-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のアップロード
 

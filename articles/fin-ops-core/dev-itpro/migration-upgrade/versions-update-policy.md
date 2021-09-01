@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 5b3008478968adbe0dd861dcb1bf261ce410a2c4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 9d41f8dcea8000e4f1c098ee2f698b008623c36eff8cbc930743f03665d26963
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751467"
 ---
 # <a name="software-lifecycle-policy-and-cloud-releases"></a>ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b35213f2364104777465b5cb069b049ac0447c3b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b4c61467cd74ef1e85658fb2abe2134690f5e96372f1935f78ea77af68368dae
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750698"
 ---
 # <a name="commerce-data-exchange-implementation-guidance"></a>Commerce Data Exchange 実装ガイダンス
 

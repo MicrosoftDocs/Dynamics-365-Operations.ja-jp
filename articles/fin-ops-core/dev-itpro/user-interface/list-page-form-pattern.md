@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b33f9176ce50259dd7a9b1a21c30c748fde3998
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 874c600dea51c545d2ce6c97316444201d7074813a912d1a52383ee270b4e5a5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350712"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745104"
 ---
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 

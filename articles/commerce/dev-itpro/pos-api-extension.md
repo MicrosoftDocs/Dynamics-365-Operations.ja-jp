@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 1b917b4d233b157c7d4cbc23093903ea9425f10d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 29d9b177ffdd472853f0d8aa2ad6b1c6038e40ec099852df07e95ef779248bf2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719489"
 ---
 # <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 

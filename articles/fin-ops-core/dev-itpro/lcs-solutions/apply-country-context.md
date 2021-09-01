@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fc52a71037d38659d7c430e55a58c14e877df6b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 168c2e576fd09695857126f9b2c5f32158a023edcb088a8e5668620973c2f3b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718263"
 ---
 # <a name="apply-countryregion-context"></a>国/地域コンテキストの適用
 

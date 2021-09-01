@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3c1d019f01b15a9d3bfcbe67b5e893b4643fbd2c
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 5dd6f4309fbbfdca628b02c79caa6336c96eb7dd5a0d4635826f5e7cd74bcdf4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735476"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 

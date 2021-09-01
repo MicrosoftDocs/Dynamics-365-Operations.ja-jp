@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 05-17-2020
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: a8f10c26cdc28d1cab02c702838108d9e19de814
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 33efabaa86e0a7a4a80ef32bb5de9a04459a8cabc800738fab3a18a2aa46fc89
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730967"
 ---
 # <a name="set-up-a-build-pipeline-for-the-independent-packaging-sdk"></a>独立したパッケージ SDK のビルド パイプラインの設定
 

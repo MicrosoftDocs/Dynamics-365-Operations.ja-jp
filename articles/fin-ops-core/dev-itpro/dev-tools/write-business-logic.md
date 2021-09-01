@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f479e13d3921c63c6140c91d51cc329fe1894f70
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae785b794ea73c046c0f625845fcd8dd3d5477d1bfefde478761167f8fe3c00a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713876"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 

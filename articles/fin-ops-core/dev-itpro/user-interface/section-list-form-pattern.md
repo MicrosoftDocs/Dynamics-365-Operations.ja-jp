@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9f032f25f28059bad8610198d32dde59a8e846b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8d5cb21482ccf13b8fecb277bb3c186910bf01f41ea406fc48c65a718b1207bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347822"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749622"
 ---
 # <a name="form-part-section-list-form-patterns"></a>フォーム パターン セクション リストのフォーム パターン
 

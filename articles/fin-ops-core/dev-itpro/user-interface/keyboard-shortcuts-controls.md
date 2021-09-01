@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: f72a47718d19bc450a0c3cdd50fc51b22d968483
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dbcc6b4f152ba6f27c46972b5d8ce48ec9ebb2c386e6def0cb3b71203fb63dd6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745108"
 ---
 # <a name="keyboard-shortcuts-for-extensible-controls"></a>拡張可能なコントロールのキーボード ショートカット
 

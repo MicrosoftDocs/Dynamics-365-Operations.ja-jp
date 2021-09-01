@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21120942a503fd989625186364856d0dcd8072bb
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 69d0154d4f77e507fc20790e80d9abb29cc57e06b760b6c0f18bed5bc76e75d7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715220"
 ---
 # <a name="download-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のダウンロード
 

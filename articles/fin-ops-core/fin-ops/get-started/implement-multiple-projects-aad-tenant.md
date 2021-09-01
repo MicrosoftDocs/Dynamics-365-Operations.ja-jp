@@ -2,7 +2,7 @@
 title: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 description: このトピックでは、複数の LCS プロジェクトと実稼動環境を同じ Azure Active Directory テナント上に実装する方法について説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 06/21/2021
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 7a06f29b9aa253fc1341822a0be3fe9782c64584
-ms.sourcegitcommit: 34fe22eab1154e3d2f1e5070bc0e88942f197220
+ms.openlocfilehash: fad9a17e603571cadfa1be3d816fe97b5d892fdaa062df66b95c089c870332c9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6277588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728141"
 ---
 # <a name="multiple-lcs-projects-and-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 
@@ -28,9 +28,19 @@ ms.locfileid: "6277588"
 - 移住地や待機時間のデータまたはデータ量のグローバル実装の要件は、1 つのインスタンスでは満たされません。
 - 組織内の異なる部署は、製品を独立したアプリケーションとして個別に実行しています。
 
+Microsoft Dynamics サービス エンジニアリング (DSE) チームによる手動操作は、共有 Azure AD テナントで追加の LCS プロジェクトを作成するために必要になります。 このアプローチは、単一インスタンスの戦略が本当に実現可能でない場合にのみ使用する必要があります。 追加の LCS プロジェクトを作成する前に、業務の妥当性を指定し、アプローチのすべての影響を理解していることを確認する必要があります。 このプロセスは、可能な限り実装ライフサイクルの早い段階で開始する必要があります。 続行を決定した顧客は、既存の LCS プロジェクトを介してサポート チケットを開く必要があります。
+
+## <a name="licensing-requirements"></a>ライセンス要件
+
+同じ Azure AD テナント上で実行されるすべての LCS 実装プロジェクトでは、ライセンス契約の最小要件を満たす必要があります。 たとえば、同じ Azure AD テナントに 3 つの LCS 実装プロジェクトがある場合、顧客は最低限のサブスクリプション ライセンス数の 3 倍以上を購入する必要があります。 現在、ライセンスの最少要件は 20 のユーザー フルライセンスです。 したがって、同じ Azure AD テナントで 3 つの LCS 実装プロジェクトを実行するには、少なくとも 60 ライセンスを購入する必要があります。
+
+ライセンスは Azure AD テナントに関連付けられているため、付与された LCS プロジェクトは割り当てられた数量のライセンスしか使えませんが、すべての LCS プロジェクトの **利用可能なサブスクリプション** ページでは、ライセンスの総数が表示されます。 この LCS プロジェクトへのライセンス配分は、システム外で文書化する必要があります。
+
+同時に複数の環境にアクセスするユーザーは、環境ごとに個別にライセンスが必要です。 ユーザーは、各 Azure AD テナントの各製品に対して 1 つのライセンスのみを割り当てることができます。 特定のユーザーの LCS プロジェクトに対するライセンス要件の配賦は、システムの外部で文書化する必要があります。 ライセンスの詳細追加については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) をダウンロードしてください。
+
 ## <a name="disadvantages-of-multiple-lcs-projects"></a>複数の LCS プロジェクトの欠点
 
-以下は、複数の LCS プロジェクトを持つことのいくつかの欠点です。
+複数の LCS プロジェクトを持つことにはいくらかの欠点があります。 次にそのいくつかを挙げます。
 
 - マスター データは共有されません。
 - 会社間トランザクションがサポートされていません。
@@ -47,37 +57,22 @@ ms.locfileid: "6277588"
 - データ所在地の法的要件を満たすため、LCS プロジェクトごとにデータ センターを選択することができます。
 - コードの導入やアップグレードなど、サービス運用のスケジュールを立てることがより柔軟になります。
 
-## <a name="licensing-requirements"></a>ライセンス要件
+## <a name="requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant"></a>同じ Azure AD テナントで複数の LCS プロジェクトを要求します。
 
-同じ Azure AD テナント上で実行されるすべての LCS 実装プロジェクトでは、ライセンス契約の最小要件を満たす必要があります。 たとえば、同じ Azure AD テナントに 3 つの LCS 実装プロジェクトがある場合、顧客は最低限のサブスクリプション ライセンス数の 3 倍以上を購入する必要があります。 現在、ライセンスの最少要件は 20 のユーザー フルライセンスです。 したがって、同じ Azure AD テナントで 3 つの LCS 実装プロジェクトを実行するには、少なくとも 60 ライセンスを購入する必要があります。
+ソリューションに同じ Azure AD テナントで複数の LCS プロジェクトが必要になる場合、元のプロジェクトを除くすべての LCS プロジェクトは DSE チームにより必要に応じたプロビジョニングをする必要があります。 プロジェクトがオンボーディングされた時点など、できるだけ早く、この要件について DSE チームに知らせる必要があります。 詳細については、 [実装プロジェクトの研修](../imp-lifecycle/onboard.md) を参照してください。 追加の LCS 実装プロジェクトを要求するには、顧客は、LCS でサポート ポータルを使用してサポート リクエストを作成する必要があります。 この要求では、顧客は次の情報を指定する必要があります。
 
-ライセンスは Azure AD テナントに関連付けられているため、付与された LCS プロジェクトは割り当てられた数量のライセンスしか使えませんが、すべての LCS プロジェクトの **利用可能なサブスクリプション** ページでは、ライセンスの総数が表示されます。 この LCS プロジェクトへのライセンス配分は、システム外で文書化する必要があります。
+- 業務の妥当性。
+- エンタープライズおよびプロジェクト構造。 この情報には、次の詳細が含まれています。
 
-同時に複数の環境にアクセスするユーザーは、環境ごとに個別にライセンスが必要です。 ユーザーは、各 Azure AD テナントの各製品に対して 1 つのライセンスのみを割り当てることができます。 特定のユーザーの LCS プロジェクトに対するライセンス要件の配賦は、システムの外部で文書化する必要があります。 ライセンスの詳細追加については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) をダウンロードしてください。
+    - 実装プロジェクトの名前
+    - LCS プロジェクトごとのライセンスの詳細
 
-## <a name="create-multiple-lcs-projects"></a>複数の LCS プロジェクトの作成
-
-次の手順に従って、既存の組織に新しい追加の実装プロジェクトを作成します。
-
-1. LCS ホーム ページの **+** ボタンを選択します。
-    [![実装プロジェクトの作成](./media/CreateNewImplementationProject.jpg)](./media/CreateNewImplementationProject.jpg)
-2. プロジェクト タイプとして **実装** を選択します。
-    [![実装プロジェクト タイプの選択の作成](./media/CreateNewImplementationProjectDialog1.jpg)](./media/CreateNewImplementationProjectDialog1.jpg)
-3. 新しい実装プロジェクトについての情報を入力します。
-    [![実装プロジェクトの詳細ダイアログの作成](./media/CreateNewImplementationProjectDialog2.jpg)](./media/CreateNewImplementationProjectDialog2.jpg)
-4. **作成** を選択して、プロジェクトの作成を完了します。 組織に既存の実装プロジェクトがある場合は、追加の実装プロジェクトを作成することを確認するための確認ボックスが表示される場合があります。 エラーメッセージが表示された場合は、追加の実装プロジェクトをサポートするために必要な合計ライセンス数が組織にないことが原因である可能性があります。
-5. プロジェクトが作成された後、新しく作成された実装プロジェクトが表示され、ユーザーがプロジェクトの所有者になります。
-
-## <a name="edit-the-licenses-allocated-to-projects"></a>プロジェクトに割り当てられたライセンスの編集
-
-すべてのプロジェクトに割り当てられたライセンスの数が、顧客が購入した合計ライセンス数を超えないように、組織内の実装プロジェクト全体にライセンスを割り当てる方法を決定します。
-
-配賦が決定された後、各実装プロジェクトで[サブスクリプション見積](../../dev-itpro/lifecycle-services/subscription-estimator.md) ツールを使用し、有効なサブスクリプション見積を編集して、目的のライセンス割り当てをそのプロジェクトに適用します。  
+- 同じ Azure AD テナントにおける、複数の LCS プロジェクトの影響を、顧客が理解していることを確認します。
 
 ## <a name="online-deployments-in-china-sovereign-cloud"></a>中国の主権クラウドにおけるオンラインの展開
+中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン導入が 2019 年 4 月より中国本土で利用可能になったと伝えています。 詳細については、[Finance and Operations アプリ - 中国で 21Vianet が運用](../../dev-itpro/deployment/china-local-deployment.md) を参照してください。 この配置は、中国における規制要件に準拠するように設計されており、サービスには 21Vianet が運営およびトランザクション処理する別のテナント (Azure Active Directory) を持つクラウド サービスのインスタンスが、物理的に分離されています。 
 
-中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン展開は 2019 年 4 月から中国本土で利用可能になります。 詳細については、[Finance and Operations アプリ - 中国で 21Vianet が運用](../../dev-itpro/deployment/china-local-deployment.md) を参照してください。 この配置は、中国の規制要件に準拠するように設計されています。 サービスには、21Vianet によって運用および処理される異なるテナント (Azure Active Directory) を持つクラウド サービスの物理的に分離されたインスタンスが含まれます。
+これは、別のテナント (Azure Active Directory) を持つ複数のクラウドの単一組織です。 上記のように、マルチ Lifecycle Services プロジェクトまたは運用環境におけるメリットとデメリットは引き続き適用されますが、ライセンス要件と要求の手順は異なります。 あらゆるプロセス支援において、Microsoft Account Executive または実装パートナーと協力します。
 
-これは、別のテナント (Azure Active Directory) を持つ複数のクラウドの単一組織です。 上記のように、複数の Lifecycle Services プロジェクトまたは運用環境におけるメリットとデメリットは引き続き適用されますが、ライセンス要件と要求の手順は異なります。 あらゆるプロセス支援において、Microsoft Account Executive または実装パートナーと協力します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

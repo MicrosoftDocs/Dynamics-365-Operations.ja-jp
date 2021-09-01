@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c98c12812d7cb1018f58613d7e2f7f61c30cded3
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 840964b18814cfa89a839ae28b927a06feaa60f427a83fde869c0581ab80a212
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923281"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716024"
 ---
 開発環境から標準ユーザー承認テスト (UAT) まで準備されたデータベース、または UAT 環境から前回エクスポートしたデータベースをインポートするには、次のステップに従います。
 

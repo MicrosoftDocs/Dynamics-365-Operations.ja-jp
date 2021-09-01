@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a82c4837ed79bd583b17e04aabf95252e39ac734
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1c302c36d43d7a9460a4a2c50950fd07809225faaf775e34f84b47af0333c3a2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750261"
 ---
 # <a name="human-resources-virtual-tables-faq"></a>Human Resources 仮想テーブルに関するよく寄せられる質問
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a09ba4a4d34f5168aa35271a734764df181108a1
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fe69156023ec55a0c658576332be6a6739efff5d885812c8062bf4ead7796997
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751585"
 ---
 # <a name="identity-management-pages-and-modules"></a>ID 管理ページとモジュール
 

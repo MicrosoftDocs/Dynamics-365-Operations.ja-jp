@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ba09ca47da96e25acce1e86192229347285f7c15
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: b86a2037f379b1fb08f1c0cf19aa32d888aa5a2afc5858360c5203760055d337
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753566"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 

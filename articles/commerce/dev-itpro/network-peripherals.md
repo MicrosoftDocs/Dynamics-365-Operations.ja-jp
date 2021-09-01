@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ac533bef9c7d075b690250eaec6f8c35ee914f5c
-ms.sourcegitcommit: d84329f903d359ae042e8c0a4594982a7e06756f
+ms.openlocfilehash: f1a08a1ce14cdef79bc30398b0a172efb5b5676114c1677e94b9f32407412603
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5984262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758362"
 ---
 # <a name="support-for-network-peripherals"></a>ネットワーク周辺機器のサポート
 
@@ -53,7 +53,7 @@ ms.locfileid: "5984262"
 
 ### <a name="adyen-payment-terminal"></a>Adyen 支払ターミナル
 
-Adyen 支払ターミナルの設定方法については、[Adyen の Dynamics 365 支払コネクタ](./adyen-connector.md?tabs=8-1-3#pos-payment-terminal)の「POS 支払ターミナル」セクションを参照してください。
+Adyen 支払ターミナルの設定方法については、[Adyen 向け Dynamics 365 Payment Connector の設定](adyen-connector-setup.md#pos-payment-terminal)の「POS 支払ターミナル」セクションを参照してください。
 
 ### <a name="epson-or-star-micronics-receipt-printer-and-a-cash-drawer"></a>Epson または Star Micronics レシート プリンターとキャッシュ ドロワー
 

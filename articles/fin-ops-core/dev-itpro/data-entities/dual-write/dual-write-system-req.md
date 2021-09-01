@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c4bbf64f1a770858a490eefb80fc09b12181175
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 0530f17850b8f6bd6990b3b03a970b27daf9958be1a3ec7fb1feb8679f26d1fa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5940894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763512"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cadbac9d876b37b32e8ddb4768dfdcf8f685e245
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 52f7343882224a7379cf4657f839641d6710a5597104d06d0cbc97cd5d0f2166
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729013"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 

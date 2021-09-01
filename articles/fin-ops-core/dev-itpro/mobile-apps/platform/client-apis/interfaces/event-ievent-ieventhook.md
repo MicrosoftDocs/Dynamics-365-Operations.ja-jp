@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 708cfa531d189182f8425410120b5657c102d3a4
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 660c392e2725d2522760a0c24d26742e1f50ff5120a7129481bb2b901cacfb17
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712548"
 ---
 # <a name="eventhook-typelttgt"></a>EventHook タイプ&lt;T&gt;
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 14f4774481f70e43bf7dd4fe2f50171e9bbec2ba
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: b4f8c28851c8978f02efd13ff935cdcfefce1f791e5752fd075e0d620028c976
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898174"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742326"
 ---
 # <a name="supported-fonts"></a>サポートされるフォント
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 088a585c63b9915661cc863479d79ba0aa9e1331
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 46f733be3a25208c533f60043aff2cc24196ab83b21f400b0547704c1525b4ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737817"
 ---
 # <a name="fields-and-field-groups-subpattern"></a>フィールドおよびフィールド グループのサブパターン
 

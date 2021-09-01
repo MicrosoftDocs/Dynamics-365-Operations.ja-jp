@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0cd0941b194ac5aabf37cf057455cb7bd8d6888
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 8958a0fbeaf0340641bee72feb6c6337608d8ee26ef997f31e010a19eb4b2fd9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769862"
 ---
 # <a name="x-primitive-data-types"></a>X++ プリミティブ データ型
 

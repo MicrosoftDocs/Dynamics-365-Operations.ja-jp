@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: c9f2f7c32189920aeefca69c9c413fbcf2e9ff4e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 15bcbc223d0164b5ed53ad9dc2a1138dc02dd6a406db7417ad4abeb1eaf47b9c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771964"
 ---
 # <a name="axerd-page-has-been-retired"></a>AxErd ページは破棄されました
 

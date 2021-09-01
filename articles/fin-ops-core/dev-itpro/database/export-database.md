@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b54a68feb3b726fb7238b910770b253cc573ee5a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ac79a68dfcf79b34aa31478896f81979c2919315
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753044"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344738"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -77,6 +77,8 @@ GO
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、**SysEmailSMTPPassword** テーブルの **パスワード** フィールドです。
+* [メンテナンス モード](../sysadmin/maintenance-mode.md) 設定は、ソースで有効になっていた場合でも無効になります。
+* 二重書き込みの構成。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
 
 
 ### <a name="known-issues"></a>既知の問題

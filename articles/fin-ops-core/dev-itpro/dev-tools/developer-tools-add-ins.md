@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce6cab1c6af66c133b8434fad8341545e47ed106
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 225eb5b0d8268e2656458500c0f915806ab9bcc347b4d1798303334964c5cce0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743193"
 ---
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 

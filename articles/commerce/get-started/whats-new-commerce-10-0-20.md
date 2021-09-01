@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce 10.0.20 (2021 年 8 月) の機能のプレビュー
+title: Dynamics 365 Commerce 10.0.20 (2021 年 8 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.20 の新機能または変更された機能について説明します。
 author: josaw1
 ms.date: 05/27/2021
@@ -13,18 +13,18 @@ ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-04-30
-ms.dyn365.ops.version: 10.0.209
-ms.openlocfilehash: d65d40b451e7ea885520f920e15797632551984f
-ms.sourcegitcommit: d49b27df81bd30537b504a8679462b71210f4462
+ms.dyn365.ops.version: 10.0.20
+ms.openlocfilehash: f0863112f6a34b838e9256f77d43dd990444492837d96b1152f9bb237cf980b4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "6277401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749864"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10020-august-2021"></a>Dynamics 365 Commerce 10.0.20 (2021 年 8 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.20 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.886 で、次のスケジュールで使用できます。
 
@@ -42,8 +42,8 @@ ms.locfileid: "6277401"
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
 | 製品分析コード |  Commerce 本社で製品の分析コード値を見本として構成します。  |  [製品の分析コード値を見本として表示する設定](../dev-itpro/dimensions-swatch.md)|
 | 製品分析コード |  Commerce 本社での表示設定を構成します。 |  [製品の分析コードの表示設定を適用する](../dimension-settings.md) |
-| 販売時点管理 (POS) | 販売時点管理 (POS) でシリアル番号管理された製品の返品 | 返品プロセスの一部としてシリアル番号が付された品目を検証するには、この機能を使用します。 <!--[Return serial number-controlled products in point of sale (POS)](../pos-serial-returns.md)--> |
-| 販売時点管理 (POS) | 販売時点管理 (POS) での返品の作成 | この機能により、POS アプリケーションで、現金売りまたは顧客注文の返品を開始できます。 <!--[Create returns in point of sale (POS)](../pos-returns.md) --> |
+| 販売時点管理 (POS) | 販売時点管理 (POS) でシリアル番号管理された製品の返品 | [販売時点管理 (POS) でシリアル番号管理された製品の返品](../pos-serial-returns.md)|
+| 販売時点管理 (POS) | 販売時点管理 (POS) での返品の作成 | [販売時点管理 (POS) での返品の作成](../pos-returns.md) |
 | 販売時点管理 (POS) | [Chromium レンダリング エンジンおよび統合されたハードウェア サポートを含む Store Commerce アプリ](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/store-commerce-app-chromium-rendering-engine-integrated-hardware-support)  |  [Microsoft Dynamics 365 Commerce での Store Commerce アプリ (プレビュー)](../dev-itpro/store-commerce.md)  |
 | 販売時点管理 (POS)  | [POS からの在庫調整のサポート](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/support-inventory-adjustments-pos)  |   POS を使用して、在庫の出し入れの調整を行います。 |
 | 支払利息  | [ウォレット スタイルの支払方法の初期設定サポート](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/out-of-box-support-wallet-style-payment-methods)  | [Wallet 支払サポート](../wallets.md) |

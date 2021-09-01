@@ -13,12 +13,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 28deb2baf381e9f6ed431fde4b766c6f42858d3b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9ebad3918da88a0d69d17720f182edaed67cf7cb5261c0a76b652a89f49128b7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356691"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755630"
 ---
 # <a name="tax-engine-integration"></a>税エンジンの統合
 

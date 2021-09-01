@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 226cda503bdd57da8718d8ee43ec3cd735d255b7
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: f96b7968560e3dd4822e44bb716c58089a808c8339350845537e9f281cd7dbde
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719287"
 ---
 # <a name="buy-finance--operations-on-premises"></a>Finance + Operations (オンプレミス) の購入
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: df173456a9d5535342f7b89b0b7e5448d0e10ef0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b13d4cfd0603625ee1ada7917eb1daf61edc0811
+ms.sourcegitcommit: 9c007b271ba5ad5b9938fdd05776b73f6b7c9802
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354433"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "7411641"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -36,7 +36,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 > [!NOTE]
 > 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自の定期売買またはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI Desktop をインストールするには管理者権限が必要です。
 
-> レベル 1環境には、Power BI Desktop のサービス互換性があるバージョンが含まれます。 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が開発環境にプレインストールした Power BI Desktop を使用することができます。 または、Power BI Desktop の最新の互換性があるリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [Power BI Desktop の前の月次更新](/power-bi/fundamentals/desktop-latest-update-archive#power-bi-desktop-monthly-update-video-3) で Power BI Desktop の 2020 年 8 月の更新プログラムをダウンロードします。
+> レベル 1環境には、Power BI Desktop のサービス互換性があるバージョンが含まれます。 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が開発環境にプレインストールした Power BI Desktop を使用することができます。 または、Power BI Desktop の最新の互換性があるリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) > **モデル** から、Power BI Desktop 2020 年 8 月リリース版をダウンロードできます。
 
 ### <a name="step-1-populate-the-local-entity-store-database"></a>手順 1: ローカル エンティティ格納データベースに入力する
 この例では、ローカルのエンティティ ストアでコマース 分析ソリューションが消費する集計モデルをステージングします。 アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 

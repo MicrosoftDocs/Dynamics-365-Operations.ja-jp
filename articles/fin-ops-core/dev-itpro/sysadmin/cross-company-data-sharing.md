@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7a3d8d2ee6b16ffcba1192961b6074dcccbeb54e
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 828b2b9204bd3ec009410a6947af1037bcaf102c03dd4013e9388a9a6dca60a2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745838"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 

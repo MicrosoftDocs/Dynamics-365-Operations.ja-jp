@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 0f3cb175f2fca378c883d8501465c114c48e6697
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: a82dc8d8e604d030469a4bd82d62cd49b0f3f66ff10b4fe64210546bda9d1ecc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865920"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769205"
 ---
 # <a name="compatibility-checker-tool"></a>互換性チェック ツール
 

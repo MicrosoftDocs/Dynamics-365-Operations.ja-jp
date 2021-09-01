@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: fb0147fd0969c01d1400d1c85eb9099037676a54
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 64f44f9c0af2b791d32c4ac5008cfbb56286ee13172f3de95481fc233491a9a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750498"
 ---
 # <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
 

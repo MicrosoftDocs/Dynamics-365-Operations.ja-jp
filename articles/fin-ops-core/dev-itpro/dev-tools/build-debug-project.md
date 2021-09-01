@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85c6509ff9ea0e2b1252088924c8ea918c9e0ea9
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 409591dbeca3b17ec7c60753d84a4cdd674e20eb68dd924176130fff55a7b597
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762412"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 19fa06b3223a4289aa65ff3dd0ebed0990619a1b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4da02d9629333d9f51833e1a52ef05e2c7fdafda62664bf59df0428233e47be7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752760"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737835"
 ---
 # <a name="connect-a-custom-help-website-to-the-help-pane"></a>カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
 

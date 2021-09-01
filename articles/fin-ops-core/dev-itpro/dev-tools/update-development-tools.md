@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84e7ada84a157f0928f9bf04d63bcb70e67c6553
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 22b9f96d57a5332262fd0e68af4283114cd798c537dceff116e9799451f1c199
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754326"
 ---
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 

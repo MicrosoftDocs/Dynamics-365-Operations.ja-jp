@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18a001e08aabf43d51563984c7890b6d12bc19fc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: e3d49263acba48c3347cf5a330d135221b60480e6a48259152d9c8ea65c327e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736186"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 

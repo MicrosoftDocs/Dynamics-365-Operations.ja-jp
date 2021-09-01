@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68f6e1fb0405e360c8cc5ce0634b09aeb2cda26a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6746cacdf630fa7701a425c7f516f49acdec6c4755d7f63ec2bfc29007035b4e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719319"
 ---
 # <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 

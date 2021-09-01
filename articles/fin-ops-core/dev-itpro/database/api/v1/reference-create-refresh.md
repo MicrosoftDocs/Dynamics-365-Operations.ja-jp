@@ -3,7 +3,7 @@ title: データベース移動の API - 参照 - v1 - データベース更新�
 description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
 ms.date: 09/30/2019
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6e32b36097a61c0e339ce8c485bed12e0b5563a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4d7e1ca57778c294c87ba98ff53b1d16dbf27726
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744549"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343388"
 ---
 # <a name="create-a-database-refresh"></a>データベース更新の作成
 

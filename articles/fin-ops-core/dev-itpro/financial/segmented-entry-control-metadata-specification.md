@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2916ba5828abeaeef8676aaa7f26a988ff37dc2
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 61e084aa0eac6facfac12393c24be713bf9d66cf1f3b0ed8d814e4da8bb946e3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759211"
 ---
 # <a name="design-time-metadata-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのためのデザイン時メタデータ
 

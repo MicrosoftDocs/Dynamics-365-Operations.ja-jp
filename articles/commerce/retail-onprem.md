@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: 8e8e720f752e9086a36e8014a4542f8e30a0ce21
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 943a25995ccf814712df35a5aafd8e5f4b93bad6fac42ddf26627873d78c97e7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753090"
 ---
 # <a name="commerce-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できるコマースの機能
 

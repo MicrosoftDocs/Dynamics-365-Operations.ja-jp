@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 8a12cc3929536eb21d0ff54260632fd15cac5f3d
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: fe45f6829bb827cf4f3a2099a06093e90885e7d7875cc69b67b58ac4aec6e61a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714563"
 ---
 # <a name="group-type"></a>グループ タイプ
 

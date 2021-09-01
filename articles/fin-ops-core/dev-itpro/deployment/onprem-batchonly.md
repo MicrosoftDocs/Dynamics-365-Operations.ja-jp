@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 68599064707bb6c0258373fb215e544885e67941
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bc0d39411187414bb9cea73be1ca16596d5b6bb19981bbc9aaddd823994707b4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745329"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724327"
 ---
 # <a name="configure-batch-only-and-interactive-only-aos-nodes-in-on-premises-deployments"></a>オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
 

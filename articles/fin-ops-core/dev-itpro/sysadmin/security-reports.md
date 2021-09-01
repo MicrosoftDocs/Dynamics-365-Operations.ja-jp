@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 5187644b27c06ecfaa8391f29364087646ff5d30
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 37e5f79c8691d5f718ed4a25a1fc7b9750a1084b4db6e4300f7bb68428ad5040
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733097"
 ---
 # <a name="out-of-box-security-reports"></a>最初から用意されているセキュリティ レポート
 

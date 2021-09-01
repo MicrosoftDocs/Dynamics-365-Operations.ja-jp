@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc6c4e8e3456af47997db505ff5fdbe6a37ccf03
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: b3da334f41da45ea3cfdc7fa95ebec5c26208dc64c865c5d367df7cce5741918
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908684"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765070"
 ---
 # <a name="run-processes"></a>プロセスの実行
 

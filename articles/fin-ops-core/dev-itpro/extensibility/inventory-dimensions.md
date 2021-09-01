@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 10a8286ffba37d853ffb4494419ae5656396575f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: bc8437dd832f0a38056d9b9901a8da29745ce14bef52e2ed7f99041c19a89dc3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729732"
 ---
 # <a name="add-new-inventory-dimensions-through-extension"></a>拡張機能を通じた新しい在庫分析コードの追加
 

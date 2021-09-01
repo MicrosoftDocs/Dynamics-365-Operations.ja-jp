@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b2d242794368c8d2d892469cec71dfec48949bb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0fafdab1612eee6081915844f39b8e68dae156d287ac8710f87b22c3ffac0254
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772144"
 ---
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 

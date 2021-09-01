@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: a025cee65dd34e7ee3be9b48898df17d9a861c89
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: aeda39787a019c18335b79f298afce009f75f9687720c91de0a89b71ba26b825
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747655"
 ---
 # <a name="customize-app-suite-reports-by-using-extensions"></a>拡張機能を使用してアプリ スイート レポートをカスタマイズする
 

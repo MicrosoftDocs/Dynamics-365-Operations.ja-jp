@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: e35d132a486621ae614833ab18c7716afa8afe83
-ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
+ms.openlocfilehash: ba87dbf0dd31ad5bb3f1fe9968fcb9b23a8eeb46f7df893bc56897af549f56d2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6559974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753096"
 ---
 # <a name="code-signing-a-modern-pos-msix-extension-package"></a>Modern POS (MSIX) 拡張機能パッケージへのコード署名
 

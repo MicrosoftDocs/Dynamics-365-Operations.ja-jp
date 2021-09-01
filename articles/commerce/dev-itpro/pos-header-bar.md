@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2020
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: c68efaac430d937d0085f899dcbd23f93d118642
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c92ce443444c74b509813081793b7425748e3b3b033383cd15698765b1cc74b2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741798"
 ---
 # <a name="add-custom-buttons-to-the-pos-header-bar"></a>カスタム ボタンを POS ヘッダー バーに追加
 

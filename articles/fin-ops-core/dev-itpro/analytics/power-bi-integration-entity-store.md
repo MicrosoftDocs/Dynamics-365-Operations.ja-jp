@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e021f6147a647dd67d7575d4f7e6142ac0533aa7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: cb75c0d32fea142b1a52205cf3829fc5523687517819eb24590075ff2fe112e5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729790"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 

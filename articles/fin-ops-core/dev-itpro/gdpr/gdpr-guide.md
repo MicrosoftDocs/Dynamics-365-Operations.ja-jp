@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d87a60f3d0b0bc08f4b8ead44d1bd0ca5844eaf
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 01dd778bc6cccfed723370f8b086fb67a80ce8c797356229683be73c4cd1a04c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777366"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 

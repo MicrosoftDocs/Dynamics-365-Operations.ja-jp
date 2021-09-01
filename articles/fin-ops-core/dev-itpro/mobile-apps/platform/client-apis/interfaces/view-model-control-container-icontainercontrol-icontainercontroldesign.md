@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: 75754edda5296312fcdd715c1bb8cc4a235a562d
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 9ae262e3089d6f5a47f3d311c7da988a74c8a7e9c88caa1c845880584122c825
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725118"
 ---
 # <a name="containercontroldesign-type"></a>ContainerControlDesign タイプ
 

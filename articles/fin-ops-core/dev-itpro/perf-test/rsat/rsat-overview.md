@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7eafd281c872eb2ab0f075cb39dbb95dcdcab6a0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d905f72a0e82be0063a20051495b0e4be2141b920ac6dbb83be00f7fba5f1f41
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721894"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 

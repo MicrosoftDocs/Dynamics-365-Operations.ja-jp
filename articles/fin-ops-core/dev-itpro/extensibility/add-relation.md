@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 95f480656e9c610781fc6a73611ac4d814157005
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0b86ed5506fa88b0ed689793ced6a11a22a93104ea78a5662f6a77b6dc554ee1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765082"
 ---
 # <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 

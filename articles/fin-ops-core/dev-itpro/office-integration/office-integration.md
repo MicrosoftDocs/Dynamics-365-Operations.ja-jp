@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29b938959ba1840b723bc562b852e70ae5649fac
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 37cbe6e107d0184eb16b37e81229cb00c2e0f05540c563218ec5321a3c5ec6c0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761368"
 ---
 # <a name="office-integration-overview"></a>オフィス統合の概要
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 18cfe9a838526a598108dd7efb3de1f6ac7c4da5
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 3f918b990c06a78fad259129d661f9458e87a5e17bfb874c4bf5eb7d4c6c581d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753092"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 

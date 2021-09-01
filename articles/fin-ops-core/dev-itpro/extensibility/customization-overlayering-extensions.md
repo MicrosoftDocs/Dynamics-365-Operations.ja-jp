@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ec90084ffc13bdde8c2f34f4c6d7ebb30148722
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d0c22b8ede9d3b06e53ba86866acccc2adab08f0c351e0dc66bb76ee336c90a9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713874"
 ---
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能およびオーバーレイによるカスタマイズ
 

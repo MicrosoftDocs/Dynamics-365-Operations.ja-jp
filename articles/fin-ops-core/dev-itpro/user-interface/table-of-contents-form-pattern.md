@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d90e11e09d54abc82b3429fa62050d3fdf7d7c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5ff67873921dd2f9f9c0fb7793c5f3c2a3c4f10e5f7fc66e0a5163805ce7381f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358921"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768385"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 

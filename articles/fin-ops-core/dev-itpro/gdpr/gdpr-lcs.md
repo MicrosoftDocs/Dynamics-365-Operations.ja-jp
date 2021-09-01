@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02db872041b97741257fda98519d110f42f2adce
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: aaa7fbbc95f0ffc9dfc246bb328f160b11ee2e0f1fee712513f402ca29a522d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743915"
 ---
 # <a name="gdpr-data-requests-for-lifecycle-services-lcs"></a>Lifecycle Services (LCS) に対する GDPR データ要求
 

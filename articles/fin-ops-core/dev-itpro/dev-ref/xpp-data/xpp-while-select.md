@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: d2b954afb5bd06d5f89d5c6ac95d8da3561435a6
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 5f14345c2ccb7f081325b9b56bb6c94c23961ce39d50d93732cf9f9e34b67ac4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727445"
 ---
 # <a name="while-select-statement"></a>明細書の選択中
 

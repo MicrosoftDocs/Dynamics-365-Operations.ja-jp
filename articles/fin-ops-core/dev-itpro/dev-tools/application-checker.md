@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 3bdaadc43261ec9d989040522b0718ea760950ca
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 3c9551e19252c700c07ba8011b878165a7d942eace50cb374427828c0229d5f9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767709"
 ---
 # <a name="application-checker"></a>アプリケーション チェッカー
 

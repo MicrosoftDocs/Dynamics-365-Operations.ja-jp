@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 6f52269bd694d6900640e890fd57a84ca3fbe853
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9be7005d4809ba482675c7491ac798b3063819e8c611e76eb0472c1eafb49f53
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720676"
 ---
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 

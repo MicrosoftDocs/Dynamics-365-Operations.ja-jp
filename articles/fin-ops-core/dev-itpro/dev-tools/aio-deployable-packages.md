@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e1167aa3705bd9d7965c52f7bee4aec9d96cb027
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: a2e705c59eee44a6638e44367ea684c51072b87b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086977"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345581"
 ---
 # <a name="all-in-one-deployable-packages"></a>オールインワン配置可能パッケージ
 
@@ -26,7 +26,7 @@ ms.locfileid: "6086977"
 > [!IMPORTANT]
 > - オール イン ワン パッケージの適用は、フェーズで行われます。 オールインワン配置可能パッケージでは **ない** 配置可能パッケージに対するサポートを拡張する要求は、2020 年 10 月 31 日に終了しました。
 > - 現在、支払コネクタが環境に配置されている場合、[支払コネクタ パッケージを作成](../../../commerce/dev-itpro/payment-connector-package.md) して、オールインワン配置可能パッケージに含める必要があります。
-> - 現在、小売販売時点管理で Microsoft Dynamics 365 Commerce 機能を使用している場合は、[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/Synchronize-installers.md) する必要もあります。
+> - 現在、小売販売時点管理で Microsoft Dynamics 365 Commerce 機能を使用している場合は、[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/Synchronize-installers.md) する必要もあります。  Commerce Scale Unit については [CSU へのパッケージの配置](../../../commerce/dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu)を参照してください。
 
 ## <a name="what-is-an-all-in-one-deployable-package"></a>オールインワン配置可能パッケージとは何ですか?
 

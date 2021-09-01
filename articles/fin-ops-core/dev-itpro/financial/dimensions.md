@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d25c0a74958ffc5564096d3b045f5de3c8d90b0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 1a78e9214f1123af436a98908d37d4579cc5ca1a1fbeb4284b9d32626fa9319c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729015"
 ---
 # <a name="support-for-different-dimension-patterns"></a>異なるディメンション パターンをサポート
 

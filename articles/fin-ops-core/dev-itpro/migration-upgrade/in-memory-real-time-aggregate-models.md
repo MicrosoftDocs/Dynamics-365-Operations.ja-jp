@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f67e603290da1cd78daf64fe88325aaf78684af
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b5b0a2f33537c1faf0b504dc79be4a3f969a66a23ce8068afc332f065307c89e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358565"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775258"
 ---
 # <a name="transition-from-analysis-services-cubes-to-aggregate-models"></a>Analysis Services キューブから集計モデルへの移行
 

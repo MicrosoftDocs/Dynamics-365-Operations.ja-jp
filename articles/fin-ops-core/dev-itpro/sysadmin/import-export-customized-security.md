@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: dfcca9f1797adba3ab43c0b317f718f34d06e89d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 937c95bd9998537c3f6653350b6861b12fba6a8c8adafb3ad0d267d03601b89f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733725"
 ---
 # <a name="import-or-export-a-customized-security-configuration-by-using-data-management"></a>データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする 
 

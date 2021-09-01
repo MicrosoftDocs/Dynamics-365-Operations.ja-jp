@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4cf760e51758806d679c2bc825a4b8b056eba29
-ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
+ms.openlocfilehash: 5b7adae0ecd5de502a99c0896e456d29a40e956a3d99d2b91c34016d5c24bdbd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745978"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 

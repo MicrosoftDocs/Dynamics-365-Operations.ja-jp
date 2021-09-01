@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerceコンポーネント バージョンの管理要件
 description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステムのすべてのコンポーネントに対する、コンポーネント バージョン要件および依存関係の概要について説明します。
 author: rezaassadi
-ms.date: 04/16/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: d7bd5dd31afaab2ef3fea2aedd3d9de48875e38a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c042765b4bf52bdb852365d7cc9848ee28e53b28aceda2b1c9cc0b3f874c98a5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736419"
 ---
 # <a name="dynamics-365-commerce-component-versioning-requirements"></a>Dynamics 365 Commerceコンポーネント バージョンの管理要件
 
@@ -41,15 +41,15 @@ ms.locfileid: "6348721"
 
 - **コマースの本部と Finance and Operations アプリは、Commerce Scale Unit (クラウドと自己ホスト型の両方) と同じバージョンか、それよりも新しいバージョンになっている必要があります。**
 
-    たとえば、Commerce 本社および Finance and Operations アプリがバージョン 10.0.19 である場合、Commerce Scale Unit はバージョン 10.0.19 またはそれ以前 (たとえば、10.0.18 または 10.0.17) である必要があります。
+    たとえば、Commerce 本社および Finance and Operations アプリがバージョン 10.0.20 である場合、Commerce Scale Unit はバージョン 10.0.20 またはそれ以前 (10.0.19、10.0.18 など) である必要があります。
 
 - **Commerce Scale Unit は、Modern Point of Sale (POS)、Hardware Station、コマース ソフトウェア キット (SDK) と同じバージョンかそれより新しいバージョン、および関連するローカル サイト コンフィギュレーション (モジュール、データ アクション、テーマなど) でなくてはなりません。**
 
-    たとえば、Commerce Scale Unit がバージョン 10.0.19 である場合、Modern POS、Hardware Station、およびコマース ストアフロントはバージョン 10.0.19 またはそれ以前 (たとえば、10.0.18 または 10.0.17) である必要があります。
+    たとえば、Commerce Scale Unit がバージョン 10.0.20 である場合、Modern POS、Hardware Station、およびコマース ストアフロントはバージョン 10.0.20 またはそれ以前 (10.0.19、10.0.20 など) である必要があります。
 
 - **拡張機能パッケージは、拡張機能が適用されるターゲット コンポーネントと同じバージョン、またはそれより新しいバージョンに対してコンパイルする必要があります。**
 
-    たとえば、展開された Commerce Scale Unit がバージョン 10.0.19 である場合、対応する拡張パッケージをバージョン 10.0.19 またはそれ以前 (たとえば、10.0.18 または 10.0.17) に対してコンパイルする必要があります。
+    たとえば、展開された Commerce Scale Unit がバージョン 10.0.20 である場合、対応する拡張パッケージをバージョン 10.0.20 またはそれ以前 (10.0.19、10.0.18 など) に対してコンパイルする必要があります。
 
 ### <a name="quality-updates"></a>品質更新プログラム
 
@@ -57,16 +57,16 @@ ms.locfileid: "6348721"
 
 ## <a name="current-supported-versions"></a>現在サポートされているバージョン
 
-次の表では、**2021 年 4 月 16 日** 時点での各種コマース コンポーネントの現在のサポートされているバージョンを示します。
+次の表で、**2021 年 8 月 1 日** 時点で、各種 Commerce コンポーネントの現在サポートされているバージョンを示します。
 
 | コンポーネント | 利用可能な最新リリース (サンドボックス内の最初のリリース) | 利用可能な最新のコンポーネント バージョン番号 (サンドボックス内の最初のリリース) | サポートされている最も古いリリース | サポートされている最も古いコンポーネントのバージョン番号 |
 |---|---|---|---|---|
-| Finance and Operations アプリ | 10.0.19 | 10.0.19 | 10.0.15 | 10.0.15 |
-| Commerce Scale Unit (クラウド自己ホスト) | 10.0.19 | 9.29 | 10.0.15 | 9.25 |
-| Commerce モジュール ライブラリ | 10.0.19 | 9.29 | 10.0.15 | 9.25 |
-| Commerce Scale Unit (自己ホスト) | 10.0.19 | 9.29 | 10.0.11 | 9.21 |
-| Modern POS | 10.0.19 | 9.29 | 10.0.11 | 9.21 |
-| Hardware Station | 10.0.19 | 9.29 | 10.0.11 | 9.21 |
+| Finance and Operations アプリ | 10.0.20 | 10.0.20 | 10.0.16 | 10.0.16 |
+| Commerce Scale Unit (クラウド自己ホスト) | 10.0.20 | 9.30 | 10.0.16 | 9.26 |
+| Commerce モジュール ライブラリ | 10.0.20 | 9.30 | 10.0.16 | 9.26 |
+| Commerce Scale Unit (自己ホスト) | 10.0.20 | 9.30 | 10.0.12 | 9.22 |
+| Modern POS | 10.0.20 | 9.30 | 10.0.12 | 9.22 |
+| Hardware Station | 10.0.20 | 9.30 | 10.0.12 | 9.22 |
 
 ## <a name="one-version-requirements"></a>1 つのバージョン要求
 
@@ -80,7 +80,7 @@ ms.locfileid: "6348721"
 - Commerce Scale Unit (クラウド自己ホスト)
 - Commerce SDK および関連するローカル サイト コンフィギュレーション (モジュール、データア クション、テーマなど)
 
-たとえば、現在バージョン 10.0.16 を使用している顧客は、バージョン10.0.17、10.0.18、および 10.0.19 に対する更新を一時停止できます。 ただし、バージョン 10.0.20 に更新する必要があります。 このシナリオでは、バージョン 10.0.21 が使用可能になると、バージョン 10.0.16 はサポートされなくなります。
+たとえば、現在バージョン 10.0.17 を使用している顧客は、バージョン10.0.18、10.0.19、および 10.0.20 に対する更新を一時停止できます。 ただし、バージョン 10.0.21 に更新する必要があります。 このシナリオでは、バージョン 10.0.22 が使用可能になると、バージョン 10.0.17 はサポートされなくなります。
 
 ### <a name="in-store-components"></a>ストア内のコンポーネント
 
@@ -90,11 +90,11 @@ ms.locfileid: "6348721"
 - Modern POS
 - Hardware Station
 
-たとえば、現在バージョン 10.0.16 を使用している顧客は、バージョン10.0.17、10.0.18、および 10.0.19 に対する更新を一時停止できます。 ただし、バージョン 10.0.20 に更新する必要があります。 このシナリオでは、バージョン 10.0.21 が使用可能になると、バージョン 10.0.16 はサポートされなくなります。
+たとえば、現在バージョン 10.0.17 を使用している顧客は、バージョン10.0.18、10.0.19、および 10.0.20 に対する更新を一時停止できます。 ただし、バージョン 10.0.21 に更新する必要があります。 このシナリオでは、バージョン 10.0.22 が使用可能になると、バージョン 10.0.17 はサポートされなくなります。
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="one-version-service-updates"></a>One Version のサービス更新
+### <a name="one-version-service-updates"></a>1 つのバージョンのサービス更新
 
 1 つのバージョン サービスの更新詳細は、次のリソースをご覧ください。
 

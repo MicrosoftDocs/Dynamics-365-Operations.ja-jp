@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 27be73261c963506034eb9e2f026282d23bc61b8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 738da4b5250880925996a88c76c5baa206564eeb1c554c39635713f6867619f2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731707"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 

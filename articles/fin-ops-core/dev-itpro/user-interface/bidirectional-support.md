@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f01e4da5d7c03b0ade3479dc13c5dc83fba5ddf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 492c615c8de982fecb534a02beb40faaf87a4ced495c202282c681b7fb69e785
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745717"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741626"
 ---
 # <a name="right-to-left-language-support-and-bidirectional-text"></a>右から左へ読み書きする言語のサポートと双方向のテキスト
 

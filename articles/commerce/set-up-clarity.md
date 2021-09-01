@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73439e1af4ead54c298704d770404a823451a16a
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 0ecc843bb5812280efb6a1c7014aa542966dbc61f6b7b5fa66eb07da7327771a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270519"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725322"
 ---
 # <a name="set-up-microsoft-clarity-in-dynamics-365-commerce"></a>Dynamics 365 Commerce での Microsoft Clarity の設定
 

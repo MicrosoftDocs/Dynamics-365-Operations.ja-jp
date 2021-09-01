@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2181de78e1388144bc7a94652a9cd32a4d41243
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 129266bb160b07eae1660b941de5f7e85a5a144dc9c99b201f38c813a3e2d0e7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727437"
 ---
 # <a name="filtering-options"></a>フィルター処理のオプション
 

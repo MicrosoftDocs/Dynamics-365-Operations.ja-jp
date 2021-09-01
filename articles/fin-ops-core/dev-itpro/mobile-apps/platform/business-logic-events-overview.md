@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: b835445ad9b41bd7c92056487d1ae17a7d6a69d9
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 406b928b66cfc5866b37ad41551fa52bdc9bf268e90b73d38bb457c53ba14d9e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776591"
 ---
 # <a name="business-logic-events"></a>ビジネス ロジック イベント
 

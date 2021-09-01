@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: e7d3a0160dd72ba3f4a1105ea16b951b85720644
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8bb0a2a8af334e959ea28491e4c802aa35f63401a278d9ad28d8c5e40063f1bf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715186"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-12-november-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
 

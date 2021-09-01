@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 5f70027c1f460e2f606d10c6481b3867d385c955
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: fad940e880910f4ee3a6b8a4f6177b0f2a09a6ab4b9dcdf650ddedb918b3b92f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747219"
 ---
 # <a name="specification-classes"></a>詳細のクラス
 

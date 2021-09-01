@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7e5a74a8c01e7e1f4b19d268eca760288866156
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2266f81064aca54f369ab4add70168cb5077e9500692e385895c4186302bf966
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745082"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 

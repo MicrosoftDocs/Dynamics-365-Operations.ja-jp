@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2fd40063987d8f8d42beef4a8f50cd4e4cdcfca5
-ms.sourcegitcommit: 9069a8511dfe11d09a2b51d32547ba10fea48bed
+ms.openlocfilehash: 2c4bffde51f615b244064e72cca7ca3ec1c10a310c82c776023640bd690910dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "6130445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780090"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 

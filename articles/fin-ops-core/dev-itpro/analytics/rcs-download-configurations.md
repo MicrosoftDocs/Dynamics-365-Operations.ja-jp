@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 883ac4055365f0e679189617be0af07e6250cf2e
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: 3e6c9399619c5b723bde4965bc26a3b178867f2458de551b066cbc8bf4ee64a7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745926"
 ---
 # <a name="import-electronic-reporting-er-configurations-from-regulatory-configuration-services-rcs"></a>規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 

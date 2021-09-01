@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dfroslie
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 5269fc1cf673d73acbb571ebe6cd2845baad5401
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 31472cbb155639ce78e731c544283e28c9b3788240cef6a11351e20c54455d5b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753858"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760730"
 ---
 # <a name="plan-and-prepare-for-compiling-code-against-the-latest-update"></a>最新の更新プログラムに対してコードをコンパイルするための計画と準備
 

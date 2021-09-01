@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: e04645350a58c3945eca5f2ee7a73937abb38c72
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5d62ea4462a5a077fca17cc00233ef28342e47bfeb87da4866cbb5dc6f69f0f8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793033"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716264"
 ---
 # <a name="add-pos-operations-to-pos-layouts-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 

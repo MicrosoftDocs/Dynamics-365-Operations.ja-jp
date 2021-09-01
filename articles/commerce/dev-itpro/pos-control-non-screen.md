@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 104ce78877a322a8ec354d43cc646ed238cf2974
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 24d339dcfccfeda94ea544d8d6caa6186f46dd5bc8f8f69492ac1466551ce96b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719487"
 ---
 # <a name="add-custom-controls-to-non-screen-designer-based-pos-views"></a>非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
 

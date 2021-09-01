@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3df926de4920e436159e9ee85b7abda0851bb3ef
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 253690ce9bcc358f94e23133c7ab3f182c59306d3b26c0e67276f072ed14e05f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758352"
 ---
 # <a name="point-of-sale-pos-device-activation"></a>販売時点管理 (POS) デバイスのライセンス認証
 

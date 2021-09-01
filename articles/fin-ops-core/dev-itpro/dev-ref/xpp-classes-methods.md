@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1ff33d2e8b6b7f770d5fef5a9f4deda3c569f1b
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 24783456cf90b84489922cb697e7472ed9063e64a235eb4a4ac8ca5bc45ea580
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763480"
 ---
 # <a name="classes-and-methods"></a>クラスおよびメソッド
 

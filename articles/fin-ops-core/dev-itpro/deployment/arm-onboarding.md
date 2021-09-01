@@ -1,8 +1,8 @@
 ---
-title: Azure Resource Manager (ARM) の研修プロセスを完了します。
-description: このトピックでは、コネクタの Azure Resource Manager (ARM) 登録プロセスを完了する方法について説明します。
+title: Azure Resource Manager (ARM) のオンボード プロセスの実施
+description: このトピックでは、コネクタの Azure Resource Manager オンボード プロセスを実施する方法について説明します。
 author: sarvanisathish
-ms.date: 08/05/2019
+ms.date: 08/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,47 +14,47 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: e428e8c1af06ac7181259dad27a3a0cbd1d51e45
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ed591add04c5c419a8187e605dfc05e834b73f78
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358965"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394696"
 ---
-# <a name="complete-the-azure-resource-manager-arm-onboarding-process"></a>Azure Resource Manager (ARM) の研修プロセスを完了します。
+# <a name="complete-the-azure-resource-manager-onboarding-process"></a>Azure Resource Manager (ARM) のオンボード プロセスの実施
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、コネクタの Azure Resource Manager (ARM) 登録プロセスを完了する方法について説明します。 
+このトピックでは、コネクタの Microsoft Azure Resource Manager オンボード プロセスを実施する方法について説明します。 
 
-Microsoft Azure Resource Manager (ARM) トポロジを配置するには、コネクタに対して ARN 研修プロセスを完了する必要があります。 オンボード プロセスを開始するには、次の項目が必要です。
+Azure Resource Manager トポロジを配置するには、コネクタのオンボード プロセスを実施する必要があります。 オンボード プロセスを開始するには、次の項目が必要です。
 
 -   展開する Azure サブスクリプション ID
 -   Azure サブスクリプションの所有権、またはサブスクリプション所有者へのアクセス。共同作成者ワークフロー、およびアップロード管理証明書を追加できるようにします。
 -   テナント管理者が管理者同意ワークフローを実行する
 
-## <a name="arm-onboarding-process"></a>ARM 研修プロセス
-ARM オンボードは、各ステップに独自のサブ手順がある、2 ステップ手順とみなすことできます。 Microsoft Dynamics Lifecycle Services (LCS) プロジェクトに追加するすべてのサブスクリプションに対してこれらすべてのを完了する必要があります。
+## <a name="azure-resource-manager-onboarding-process"></a>Azure Resource Manager オンボード プロセス
+Azure Resource Manager オンボードは、各ステップに独自のサブ手順がある、2 ステップ手順とみなすことができます。 Microsoft Dynamics Lifecycle Services (LCS) プロジェクトに追加するすべてのサブスクリプションに対してこれらすべてのを完了する必要があります。
 
-1.  Azure サブスクリプションで作業を行う LCS 配置サービス (DSU) を承認します。
+1.  Azure サブスクリプションで作業を行う LCS 配置サービスを承認します。
     1.  ワークフローを認証します。
     2.  投稿者ワークフローを設定します。
 
-2.  ARM リソースを配置する Azure サブスクリプションを有効にします。
+2.  Azure Resource Manager リソースをデプロイする Azure サブスクリプションを有効にします。
     1.  Azure コネクタを有効にし、LCS ユーザーを追加にします。
     2.  オプション: 管理証明書をアップロードします。
     3.  配置設定をコンフィギュレーションします。
 
-### <a name="authorize-the-lcs-dsu-to-work-on-the-azure-subscription"></a>Azure サブスクリプションで作業を行う LCS DSU を承認する
+### <a name="authorize-the-lcs-deployment-service-to-work-on-the-azure-subscription"></a>Azure サブスクリプションで作業を行う LCS 配置サービスを承認する
 
-Azure サブスクリプションで動作するよう LCS DSU を承認するには、次の手順を実行します。
+Azure サブスクリプションで動作するよう LCS 配置サービスを承認するには、次の手順を実行します。
 
 #### <a name="authorize-the-workflow"></a>ワークフローを認証する
 
 テナントの管理者は、次の手順を完了する必要があります。
 
 1.  LCS で、**プロジェクト** ページの **環境** セクションにある **Microsoft Azure 設定** をクリックします。
-2.  **プロジェクト設定** ページでは、**Azure コネクタ** タブの、**組織リスト** グループで、**承認** をクリックして ARM 貢献者ワークフローを開始します。 このワークフローでは、DSU のアクセス許可が設定されるため、DSU を自分の代わりにサブスクリプションに展開できます。
+2.  **プロジェクト設定** ページでは、**Azure コネクタ** タブの、**組織リスト** グループで、**承認** をクリックして Azure Resource Manager 共同作成者ワークフローを開始します。 このワークフローでは、配置サービスのアクセス許可が設定されるため、配置サービスを自分の代わりにサブスクリプションに展開できます。
 3.  **管理者の同意の付与** ページで、**承認** をクリックします。 次に、接続する Azure サブスクリプションの管理者アカウントを使用してサインインし、**承諾** をクリックします。 これで、承認が完了として表示されます。
 
 #### <a name="set-the-contributor-workflow"></a>投稿者ワークフローを設定
@@ -66,15 +66,15 @@ Azure サブスクリプションで動作するよう LCS DSU を承認する�
     > [!NOTE]
     > 一部の Azure サブスクリプションには **アクセス制御 (IAM)** セクションではなく **ユーザー** セクションがあります。 この場合、**ユーザーの追加** ダイアログ ボックスの **選択** フィールドに、**Dynamics 配置サービス \[wsfed 有効\]** と入力して **選択** を選択します。
     
-[![Dynamics 配置サービス \[wsfed 有効\.\]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
+[![Dynamics 配置サービス \[wsfed 有効\.]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
 
 3.  **ロールの割り当て** タブで、アプリは **貢献者** として割り当てられます。 
     > [!NOTE]
     > Dynamics 配置サービス \[wsfed 有効\] が表示されない場合、承認プロセスは完了していないか、別の Azure サブスクリプションで完了しています。 
 
-### <a name="enable-the-azure-subscription-to-deploy-arm-resources"></a>ARM リソースを配置する Azure サブスクリプションの有効化
+### <a name="enable-the-azure-subscription-to-deploy-azure-resource-manager-resources"></a>Azure Resource Manager リソースをデプロイする Azure サブスクリプションを有効にする
 
-Azure サブスクリプションを有効にして ARM リソースを展開できるようにするには、次の手順を実行します。
+Azure サブスクリプションを有効にして Azure Resource Manager リソースをデプロイできるようにするには、次の手順を実行します。
 
 #### <a name="enable-the-azure-connector-and-add-an-lcs-user"></a>Azure コネクタを有効、および LCS ユーザーを追加
 
@@ -83,7 +83,7 @@ Azure コネクタを有効にし、必要に応じて LCS ユーザーを追加
 1.  LCS で、**プロジェクト** ページの **環境** セクションにある **Microsoft Azure 設定** をクリックします。
 2.  **プロジェクト設定** ページでは、**Azure コネクタ** タブで、**Azure コネクタ** の **追加** をクリックします。 
     > [!NOTE]
-    > 既存のコネクタで ARM を有効にしている場合は、**編集** をクリックします。
+    > 既存のコネクタで Azure Resource Manager を有効にしている場合は、**編集** をクリックします。
 3.  コネクタ名および配置する Azure サブスクリプション ID を入力し、**Azure Resource Manager を使用するコンフィギュレーション** オプションを **はい** に設定します。
 4.  **Azure サブスクリプション AAD テナント ドメイン** フィールドで、Azure サブスクリプション アカウント管理者のドメイン名を入力してから **次へ** をクリックします。
 5.  Azure サブスクリプションに LCS ユーザーを追加するか管理証明書を使用して、サブスクリプションへのアクセスを認証します。 **重要:** LCS ユーザーを追加する場合は、手順 6 に進みます。 管理証明書をアップロードする必要がある場合は、この手順のステップ 6 から 8 を実行しないようにします。 代わりに、「管理証明書のアップロード」という次の手順を完了します。
@@ -105,7 +105,7 @@ Azure コネクタを有効にし、必要に応じて LCS ユーザーを追加
 #### <a name="configure-deployment-settings"></a>配置設定のコンフィギュレーション
 
 1.  LCS で、**プロジェクト** ページの **環境** セクションにある **Microsoft Azure 設定** をクリックします。
-2.  **Microsoft Azure 設定** ページで、配置する地域を選択してから、**接続** をクリックします。 ARM オンボーディング フローが完了しました。 **Azure コネクタ** リストにサブスクリプションが追加されたのが確認できるはずです。 また、チェック マークは **ARM 有効** で表示されます。
+2.  **Microsoft Azure 設定** ページで、配置する地域を選択してから、**接続** をクリックします。 これで Azure Resource Manager オンボード フローは完了です。 **Azure コネクタ** リストにサブスクリプションが追加されたのが確認できるはずです。 また、チェック マークは **ARM 有効** で表示されます。
 
 
 

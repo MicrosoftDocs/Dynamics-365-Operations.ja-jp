@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a73b3ae727a9f50a39698d641f5b5fcc30d155f6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f484dac52f35f3619514a1d8deefffdd45937459c22418fb493ef406fbab4332
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712534"
 ---
 # <a name="batch-processing-and-batch-servers"></a>バッチ処理とバッチ サーバー
 

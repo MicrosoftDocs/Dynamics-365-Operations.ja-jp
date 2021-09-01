@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 183750e10c985e7e0c9206cc9c8586c2d0c43227
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50762fec74be93c71c7b3f5ea6feba7e4109c23c9e6ae5bd9085ca4871c2b2fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745323"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712552"
 ---
 # <a name="reuse-the-same-ad-fs-instance-for-multiple-environments"></a>複数の環境への同じ AD FS インスタンスの再利用
 

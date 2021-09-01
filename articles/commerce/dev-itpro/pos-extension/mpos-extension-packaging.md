@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 9e22a8a31b1fd57e6e161de8999133003dd3117a
-ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
+ms.openlocfilehash: f93b17a530dae3ea8a9f2feb2ea1c4ce9ad76ef2a31d0830c798c68a9cbfd17a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6559976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741800"
 ---
 # <a name="create-a-modern-pos-extension-package"></a>Modern POS 拡張機能パッケージの作成
 

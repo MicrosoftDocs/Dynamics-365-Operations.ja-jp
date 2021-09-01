@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 4b2c3ca5719cfd507e32a17514c36b26304e08c4
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 2be67d0136935513ecf24d7bb9df585eee3cabffc487d9cc04ac2491a011f7d4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718265"
 ---
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 

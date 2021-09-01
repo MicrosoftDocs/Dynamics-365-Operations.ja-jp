@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: d75c3455f3640b3890761e4b29817028b35ea955
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: cb9c1566a1e7d784c7a5cd1574b39b19da6bb9945276922f35d17df52bc77904
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661508"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769177"
 ---
 # <a name="cacheservice-type"></a>CacheService タイプ
 

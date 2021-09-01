@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b911e5f7e01d6ea06d8bd4220022679f5f103a6d
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: f78a1fa69073510a1bff9989ffe1ac495fe202a0ca0adf1afc98bb2d7e1ecb40
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745098"
 ---
 # <a name="lookup-controls"></a>ルックアップ コントロール
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47e40436c43457fc3b06e2d1ff6da98fd0173cac
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5432625f5e00a249b0163b5dbd37a43f0bb6e40bed87d1ff6872980332aa241f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355286"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743227"
 ---
 # <a name="create-models-and-data-model-elements-overview"></a>モデルとデータ モデル要素の作成の概要
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e3aad8a7115d78176b041bc0e31723702ac1986
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ee8474444a1f5fb04b7c2aeb66049718d085fde4ba2d02c9acd4c275559249fb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358531"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730547"
 ---
 # <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
 

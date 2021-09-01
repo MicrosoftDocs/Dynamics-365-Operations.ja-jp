@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: fa2047f619e5996ad8aae06b155e0cf8a9db5966
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0816bd0f5bac9f358931c259b81ef5a0ffbedc06126a61e179ff4030d58ff29e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719515"
 ---
 # <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>コード署名証明書を使用した MPOS appx の署名
 

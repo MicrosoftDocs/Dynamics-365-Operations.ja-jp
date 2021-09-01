@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: a09760fde5a0a10b02b79d8b6a4514713b42431f
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: f2fcc563bb58f13b2911aeabcd8312e133f643a4
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661566"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404072"
 ---
 # <a name="pagestate-enumeration"></a>PageState 列挙
 

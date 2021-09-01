@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a30c65359c7d9d27e674e37ab9d174e1a66f8d20
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: ab34b9c85610466be0586247087e2a2e256c8ef043bc70e1da3ba8db98c1a84f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747233"
 ---
 # <a name="x-operators"></a>X++ 演算子
 

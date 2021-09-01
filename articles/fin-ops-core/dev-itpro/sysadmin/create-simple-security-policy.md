@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: f3def868dc9c90829348a6607a1d1444e899795a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: aa7c4301151a013158f9fe61b95c2daec2b4e5b8708cf1ea7179f014722cb98b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769171"
 ---
 # <a name="create-a-security-policy"></a>セキュリティ ポリシーを作成する
 [!include [banner](../includes/banner.md)]

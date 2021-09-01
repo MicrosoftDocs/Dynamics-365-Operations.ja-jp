@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b8dbc790487c8cf8d7c60dc23a4447a606b10751
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b6177e3bae2f88fce8391319f3759b0fb59948236f22c0eca2c5c97f577f8a90
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730621"
 ---
 # <a name="er-framework-api-changes-for-application-update-73"></a>Application update 7.3 での ER フレームワーク API の変更
 

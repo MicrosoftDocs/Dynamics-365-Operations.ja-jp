@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6b2d694bbc39e61f7a4ba993457973846418272b
-ms.sourcegitcommit: 7c7edd4aea2dc418a8a7ffe42fcb2183eb086853
+ms.openlocfilehash: c4e5c644a27643368f76ad99070a385c518ba3cd5117c983151713bd2ed3a545
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "6635893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770791"
 ---
 # <a name="apply-updates-and-extensions-to-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 

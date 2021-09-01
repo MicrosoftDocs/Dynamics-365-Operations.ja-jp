@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 5b75e15f5638fc216f20b57dd2126b7c7a7aeaea
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7729d63bbabfd442172f2b9b44ed1dd308f3dd4b260ea57a0f0a8d7d8f351fa0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770793"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 

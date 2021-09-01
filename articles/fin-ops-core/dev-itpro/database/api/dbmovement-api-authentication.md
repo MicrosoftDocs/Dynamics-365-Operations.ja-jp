@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 402282036c6704f08bb30fafb7c504e2c943c9c1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5831ac1fc8efaff0be9fad66f78ff47faa33ca7f5687a3309c6e5508dd3766e0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753582"
 ---
 # <a name="database-movement-api---authentication"></a>データベース移動 API - 認証
 

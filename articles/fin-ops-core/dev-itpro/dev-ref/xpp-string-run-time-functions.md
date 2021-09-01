@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8ed6d1d2c17f272b081f78f720b521aa4301ac9
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 1486bebf733ec474c503d7ca98f8b2d49c52e896bf3ab880ec3b411401161d6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736260"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 

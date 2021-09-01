@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7b5accfa487594800515e1ee3bd8c1fe83e776
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d34335c2c0056ee5949d79a5b93b5eace5cbaaa536b89c64ace2f5096ed22ab7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715216"
 ---
 # <a name="dimension-entry-control-subpattern"></a>分析コード エントリ コントロールのサブパターン
 

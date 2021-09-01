@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: efaafd6f5bda97314983531e55bc74d6e4f41485
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8318bfa0e5547bd77a609a46c4e5f7527a15beef9cf89a0f166a6ce5a26ed040
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756569"
 ---
 # <a name="commerce-runtime-crt-extensibility-and-triggers"></a>Commerce Rumtime (CRT) の拡張機能とトリガー
 

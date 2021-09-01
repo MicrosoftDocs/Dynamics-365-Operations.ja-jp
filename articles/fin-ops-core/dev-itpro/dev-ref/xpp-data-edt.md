@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7d6ed3683cf1095bc6361062b0ce95db10537bc
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 381b15996d1ca21ce3c465673d5a4a796fa51a4740aae81238a71406a6500dc3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738536"
 ---
 # <a name="x-extended-data-types"></a>X++ 拡張データ型
 

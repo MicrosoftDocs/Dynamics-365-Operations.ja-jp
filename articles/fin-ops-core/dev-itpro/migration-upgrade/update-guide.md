@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: c07cc3846e14486d9e363d393b75d7253d248588
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0807b5c0a099a7e4b41b116fcbcb942b905096df5b8897c7343d13dfa846799e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716737"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>Finance and Operations の更新とカスタム コード ライフサイクルの管理
 

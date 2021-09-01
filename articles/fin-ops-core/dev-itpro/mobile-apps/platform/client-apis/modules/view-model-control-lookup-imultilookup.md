@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.openlocfilehash: ec1a00204f575eff9cb2f1136a912174e06f7b72
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: 03c4b8c77d51213953eb1937030c7597be18dd286bafe647f50f64306b502511
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730551"
 ---
 # <a name="multi-lookup-module"></a>マルチ参照モジュール
 

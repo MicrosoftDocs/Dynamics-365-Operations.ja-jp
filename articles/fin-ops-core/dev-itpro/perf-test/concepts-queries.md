@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: a98be320de889c7b34a9ee1841fc4d7666f8e975
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 9d12b7222152f5a17964bad69d6c9318f584adf71b5500a36d3488ebb7a7cd0a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768391"
 ---
 # <a name="queries-in-the-acceptance-test-library"></a>承認テスト ライブラリのクエリ
 

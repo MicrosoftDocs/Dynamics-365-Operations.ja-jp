@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01d072374d29c65e6fe1f308b94e7455fc747264
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 77e3812deca0a9bf9fdc3dba69e973333ab5d9f608a33969aa702bed47dcaa32
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753570"
 ---
 # <a name="troubleshooting-guide-for-testing-with-the-performance-sdk"></a>パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d04c08fe2ee748b4cd5a48df16a39032312c4e58
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6d39a56271f5c6ee9faa31987a837fc43c852d5e6c5f403f18289fe03fc681a9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358657"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741696"
 ---
 # <a name="help-prevent-long-running-reports-from-timing-out"></a>実行時間の長いレポートがタイムアウトしないようにする
 

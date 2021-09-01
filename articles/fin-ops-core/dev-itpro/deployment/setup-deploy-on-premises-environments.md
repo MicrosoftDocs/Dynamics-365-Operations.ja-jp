@@ -16,12 +16,12 @@ ms.custom:
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 9fe8fd9a667b9528fef39ab9f226bff548ec6378
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 0978e43963c219ab12eb2820433cee3fb0ad2140e192f97cb17653cb6710416a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731525"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-home-page"></a>オンプレミス環境の設定と配置ホーム ページ
 

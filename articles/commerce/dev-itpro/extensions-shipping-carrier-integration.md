@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 93cd8a75ee2383050da529268e29e9393862c150
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 49651179aea249266294c239fdd5c8d2b164a39bad48486c4e9f6df7d3cfe66a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733216"
 ---
 # <a name="extension-points-for-packing-slips-during-order-fulfillment"></a>注文のフルフィルメント中の梱包明細の拡張ポイント
 

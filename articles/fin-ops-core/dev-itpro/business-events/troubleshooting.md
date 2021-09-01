@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 5efa79aaef5da6449b4e84b89b71744c9efa6962
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a5b2459a7140ef3b803b9e383a5d16077463929fe240ef774b8a65c6df25bf5b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751505"
 ---
 # <a name="troubleshoot-business-events"></a>ビジネス イベントのトラブルシューティング
 

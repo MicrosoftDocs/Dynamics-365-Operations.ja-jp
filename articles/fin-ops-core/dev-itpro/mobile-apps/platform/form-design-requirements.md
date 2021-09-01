@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 2b5ba11313f697db2dc9d2815200eb60ab602487
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 11d76602c78540137926a302b09b961dc87d88aed64dbd6f20a3d8b646db2dfc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742294"
 ---
 # <a name="form-design-requirements"></a>フォーム デザインの要件
 
