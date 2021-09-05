@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773540"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384662"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Management バージョン 10.0.19 (2021 年 6 月) の新機能および変更された機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "6773540"
 | 在庫および物流 | [販売見積ページのドキュメントの序文フィールドおよびドキュメントの結びフィールドのルックアップ機能](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | この機能により、**販売見積** ページの **ドキュメントの序文** フィールドと **ドキュメントの結び** フィールドにルックアップ機能が追加されます。<br><br>この機能は、既定で有効になっています。 |
 | 在庫および物流 | [カスタム ハードウェア上のエッジのスケール ユニットを使用した倉庫の実行](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [LBD を使用してカスタム ハードウェアにエッジのスケール ユニットを配置する](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | 製造 | [カスタム ハードウェア上のエッジのスケール ユニットを使用した製造実行](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| 計画 | [計画最適化の無限キャパシティ スケジューリング](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | この機能により、計画の最適化において、無限容量を持つキャパシティ スケジューリングが有効になります。 この機能がない場合、計画製造オーダーは、スケジューリング タイム フェンスに関係なく、リリースされた製品の在庫リード タイムからリード タイムを取得します。 |
+| 計画 | [計画最適化の無限キャパシティ スケジューリング](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [無限能力を使用したスケジューリング](../master-planning/planning-optimization/infinite-capacity-planning.md) |
 | 計画 | クエリ ベースの計画オーダーの作成 | [計画オーダーの確定](../master-planning/planning-optimization/planned-order-firming.md) |
 | 製品情報管理 | [バリアント修正候補ページの改善](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [事前定義された製品バリアントの作成](../pim/tasks/create-predefined-product-variants.md) |
 

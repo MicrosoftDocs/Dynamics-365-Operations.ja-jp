@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4510ed7033e7c4e5187905906dcbef63f05a130bafcb7d9f19bbb360a7298119
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012094"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345269"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>在庫棚卸の理由コード
 
@@ -37,7 +37,7 @@ ms.locfileid: "7012094"
 - 理由コードは一部の品目に必須またはオプションですか。
 - 理由コードがいくつ必要ですか。
 - 調整のために、限定された理由コードの一覧を事前に選択する必要がありますか?
-- バーコード スキャナーのユーザーはどの理由コードを使用する必要がありますか。 理由コードは事前に選択された、必須、または編集不可能のどれであるべきですか。
+- バーコード スキャナーのユーザーはどの理由コードを使用する必要がありますか? 理由コードは事前に選択された、必須、または編集不可能のどれであるべきですか。
 - 倉庫作業者にはモバイル スキャナーでさまざまな理由コード動作が必要ですか。 答えがはいの場合は、複数のメニュー項目を作成し、さまざまな人々に割り当てることができます。
 - 理由コードは、財務相手勘定の転記を促進する必要がありますか?
 

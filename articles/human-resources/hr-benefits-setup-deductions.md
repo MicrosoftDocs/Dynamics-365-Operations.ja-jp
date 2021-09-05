@@ -1,8 +1,8 @@
 ---
 title: 控除のコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resources の控除を使用して、各給付金について従業員の給与から控除する金額 (必要な場合) を決定します。
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 914f3348982cb10874ab585badb8bbba2885ea6970fda7cbe1c73e56c8d447a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a865f109379064ae8829532af9253238e203c322
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762001"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423500"
 ---
 # <a name="configure-deductions"></a>控除のコンフィギュレーション
 
@@ -45,7 +45,7 @@ Microsoft Dynamics 365 Human Resources の控除を使用して、各給付金�
    | **金額の見出し** | 給与の給付金を処理するときに、この控除額が従業員の控除部分に使用する給与計算システムの見出しコード。 これは通常、サード パーティの給与計算プロバイダーを使用するときに使用されます。 |
    | **削除可能** | Dynamics 365 for Finance and Operations からエクスポートされた値が給与計算システムで値を削除できるかどうかを指定します。 |
    | **ペアの列** | 対になった隣接する列の見出しと控除額を給与計算システムにエクスポートするかどうかを指定します。 |
-   | **変更の有効日** | 給付控除の変更が有効になる日付。 この日付に、システムは自動的に給付控除を変更し、**控除変更の更新** 処理を実行している限り、この控除に関連するすべての給付プランを更新します。 |
+   | **変更の有効日** | 給付控除の変更が有効になる日付。 この日付に、**控除変更の更新** 処理を実行している限り、給付控除を変更し、この控除に関連するすべての給付プランを更新します。 |
    | **控除の変更が完了しています** | 控除更新の変更処理によって給付控除の変更が完了すると、**控除の変更が完了しました** チェック ボックスが自動的に選択されます。 |
    
 4. 利益率の設定に対する変更を追跡して維持するには、**アクション** を選択し、**バージョンの維持** を選択します。

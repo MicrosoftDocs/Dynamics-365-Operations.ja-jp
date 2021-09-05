@@ -2,7 +2,7 @@
 title: ER 電子メール送信先のタイプ
 description: このトピックでは、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対して電子メール送信先を構成する方法について説明します。
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769322"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343863"
 ---
 # <a name="email-er-destination-type"></a>ER 電子メール送信先のタイプ
 
@@ -53,9 +53,22 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 ## <a name="configure-an-email-destination"></a>電子メール送信先の構成
 
-電子メールの送信者と受信者を指定したり、電子メール メッセージの件名と本文を編集したりできます。 電子メールの件名および本文の定型文を設定したり、ER [フォーミュラ](er-formula-language.md)を使用して電子メールのテキストを動的に作成したりできます。
+### <a name="email-content"></a>電子メールの内容
 
-既定では、現在のユーザーに代わって電子メールが送信されます。 別の電子メールの送信者を指定するには、**送信者** フィールドを構成する必要があります。
+電子メール メッセージの件名および本文を編集できます。
+
+**件名** フィールドに、実行時に生成される電子メール メッセージの件名フィールドに表示されるメールの件名のテキストを入力します。 **本文** フィールドに、電子メール メッセージの本文フィールドに表示されるメールの本文のテキストを入力します。 電子メールの件名および本文の定型文を設定したり、ER [フォーミュラ](er-formula-language.md) を使用して実行時に電子メールのテキストを動的に作成したりできます。 構成済みのフォーミュラは、[文字列](er-formula-supported-data-types-primitive.md#string) 型の値を返す必要があります。
+
+電子メールの本文は、電子メール クライアントに応じてテキスト形式または HTML 形式で構成されます。 HTML およびインライン カスケードスタイルシート (CSS) で使用できる任意のレイアウト、スタイル、ブランディングを使用できます。
+
+> [!NOTE]
+> 電子メール クライアントにはレイアウトやスタイルの制限があり、メッセージ本文に使用するHTMLや CSS の調整が必要となる場合があります。 人気の高い電子メール クライアントによってサポートされている HTML を作成するためのベスト プラクティスについて理解しておくことをお勧めします。
+>
+> 本文の形式に応じて、正しいエンコードを使用してキャリッジ リターンを実装します。 詳細については、[文字列](er-formula-supported-data-types-primitive.md#string) データ型の説明を参照してください。
+
+### <a name="email-addresses"></a>電子メール アドレス
+
+そこで、電子メールの送信者と受信者を指定できます。 既定では、現在のユーザーに代わって電子メールが送信されます。 別の電子メールの送信者を指定するには、**送信者** フィールドを構成する必要があります。
 
 > [!NOTE]
 > 電子メールの出力先が構成されている場合は、`ERFormatDestinationSenderEmailConfigure` セキュリティ特権を持つユーザーだけが **送信者** フィールドを表示し、**ER 形式の出力先に対して送信者の電子メール アドレスを構成します**。

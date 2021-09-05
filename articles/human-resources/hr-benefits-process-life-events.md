@@ -1,8 +1,8 @@
 ---
 title: ライフ イベントのプロセス
 description: Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6bfbb9e31a7d8973c2b993f3792a7216f41924e0ff4c24b08c0dd954ab327c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 688a47d77dbd75ecd12af23f22a1d401703ed672
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775020"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417551"
 ---
 # <a name="process-life-events"></a>ライフ イベントのプロセス
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。 たとえば、結婚、雇用の変更、または被扶養/受益者の変更などです。 ライフ イベントを使用するには、給付金パラメータ フォームのライフ イベントを有効にし、ライフ イベント タイプを設定し、さらにプラン タイプのライフ イベント オプションを設定する必要があります。
+Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。 たとえば、結婚、雇用の変更、または被扶養/受益者の変更などです。 ライフ イベントを使用するには、**給付金パラメーター** ページのライフ イベントを有効にし、ライフ イベント タイプを設定し、さらにプラン タイプのライフ イベント オプションを設定する必要があります。
 
 ライフ イベントを処理するには、採用期間中に、少なくとも一度はオープン登録を実行しておく必要があります。 米国では、オープン登録を通常年に 1 回行います。 米国以外では、オープン登録は入社時に実行されます。 作業者は、処理するべきライフ イベントのために給付金プランを選択する必要はありませんが、オープン登録処理に含まれている必要があります。 
 

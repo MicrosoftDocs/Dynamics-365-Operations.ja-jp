@@ -4,24 +4,17 @@ description: このトピックでは、ライブ同期の問題修正に役立�
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c7de5e6b8c4111b13585cf0f3c58a8f78eb18f73c01294f660b106e13774848f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 2dbb32647e362df05d28bbd7d845e0e4f776d8c9
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756356"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416708"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>ライブ同期に関する問題のトラブルシューティング
 

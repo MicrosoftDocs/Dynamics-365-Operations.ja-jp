@@ -2,7 +2,7 @@
 title: 画像のアップロード
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像アップロードの方法について説明します。
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757401"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423258"
 ---
 # <a name="upload-images"></a>画像のアップロード
 
@@ -52,10 +52,17 @@ ms.locfileid: "6757401"
 - カテゴリ画像は、"**/カテゴリ/\{CategoryName\}.png**" という名前にする必要があります
 - 顧客の画像は、"**/顧客/\{CustomerNumber\}.jpg**" という名前にする必要があります
 - 従業員の画像は、"**/作業者/\{WorkerNumber\}.jpg**" という名前にする必要があります
-- 製品画像は、"**/製品/\{ProductNumber\}_000_001.png**" という名前にする必要があります
+- 製品画像は、"**/製品/\{ProductNumber\}\_000_001.png**" という名前にする必要があります
     - 001 は画像の順序で、001、002、003、004、または 005 とすることができます
 - 製品バリアントの画像は、"**/製品/\{ProductNumber\} \^ \{スタイル\} \^ \{サイズ\} \^ \{色\} \^\_000_001.png**" という名前にする必要があります
-    - 例 : 93039 \^ \^ 2 \^ Black \^_000_001.png
+    - 例: 93039 \^ &nbsp;\^ 2 \^ 黒 \^\_000_001.png
+- コンフィギュレーション分析コードの製品バリアント画像は、"**/製品/\{ProductNumber\} \^ \{コンフィギュレーション\}\_000_001.png**" という名前にする必要があります
+    - 例: 93039\^ LB8017_000_001.png
+
+> [!NOTE]
+> 製品バリアントの画像では、分析コード値が空の場合は、ファイル名のキャレットの間に空白が 2 つ必要です。
+
+上の例では、既定のコンフィギュレーションを使用します。 区切り文字と分析コードはコンフィギュレーション可能で、必要な正確な名前付けは展開によって異なる場合があります。 必要な厳密な名前付け規則を識別する方法の 1 つは、ブラウザーの開発者コンソールを使用して、ストアフロントの製品詳細ページ (PDP) で製品分析コードを変更中に製品バリアントの画像要求を検査することです。
 
 ## <a name="upload-an-image"></a>画像のアップロード
 

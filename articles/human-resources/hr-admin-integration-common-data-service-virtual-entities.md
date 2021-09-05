@@ -1,8 +1,8 @@
 ---
-title: Dataverse の仮想テーブルを構成する
-description: このトピックでは、Dynamics 365 Human Resources の仮想テーブルを構成する方法について説明します。 既存の仮想テーブルを生成・更新し、生成されたエンティティと使用可能なテーブルを分析します。
-author: andreabichsel
-ms.date: 01/25/2021
+title: Dataverse の仮想テーブルのコンフィギュレーション
+description: このトピックでは、Dynamics 365 Human Resources の既存の仮想テーブルを構成、生成、更新し、生成された利用可能なテーブルを分析する方法を示します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4461b072c12848220c48d3a711cc2d4991c98f068e1ba477becf6d0be068fca8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721610"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414667"
 ---
-# <a name="configure-dataverse-virtual-tables"></a>Dataverse の仮想テーブルを構成する
+# <a name="configure-dataverse-virtual-tables"></a>Dataverse の仮想テーブルのコンフィギュレーション
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -140,6 +140,9 @@ Power Apps 環境に Dynamics 365 HR Virtual テーブルアプリをインス�
 
      >[!NOTE]
      >URL の末尾に "**/**" 文字を挿入し、エラーを回避します。
+
+     >[!NOTE]
+     >ターゲット URL は、仮想テーブルがデータに対してポイントする Human Resources 環境を決定します。 運用環境のコピーを作成してサンドボックス環境を作成する場合は、この値を新しいサンドボックス環境の名前空間 URL に更新します。 これにより、仮想テーブルは、運用環境をポイントし続けずに、サンドボックス環境と接続できます。
 
    - **テナント ID**: Azure Active Directory (Azure AD) テナント ID。
 

@@ -2,7 +2,7 @@
 title: Finance and Operations アプリのヘルプ エクスペリエンスを構成する
 description: このトピックでは、一部の Microsoft Dynamics 365 アプリのヘルプシステムのコンポーネントに関する情報を提供します。
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8481a2ba54b88f0911436f352b901cde55924e2ccc15a381b8742abe85d972
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714526"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343815"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations アプリのヘルプ エクスペリエンスを構成する
 
@@ -54,7 +54,7 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 > [!IMPORTANT]
 > 初めて **ヘルプ** タブを開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクを選択し、接続されるまで待機します。ダイアログ ボックスを閉じ、**OK** を選択して **システム パラメーター** ページを取得します。
 >
-> [![LCS への接続](./media/connect-to-lcs-crop-1024x365.png "LCS への接続。"](./media/connect-to-lcs-crop.png)
+> [![LCS に接続](./media/connect-to-lcs-crop-1024x365.png "LCS に接続します。")](./media/connect-to-lcs-crop.png)
 
 1. 接続する Lifecycle Services プロジェクトを選択します。
 2. タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。

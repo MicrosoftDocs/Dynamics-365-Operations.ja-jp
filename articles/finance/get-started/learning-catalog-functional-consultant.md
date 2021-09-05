@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a0ea3efc08ac9305887727c57a3821c694d6b25d3355edb6a60a6348967842c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b2efa7021c302e771f36179be690fc1c8653a07
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763097"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402376"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-functional-consultants"></a>Dynamics 365 Finance 機能コンサルタント向けラーニング カタログ
 
@@ -34,6 +34,7 @@ ms.locfileid: "6763097"
 | [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか？ 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間 |
 | [Finance and Operations アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。 Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
+| [Dynamics 365 Intelligent Order Management の使用を開始する](/learn/modules/get-started-intelligent-order-management/) | Dynamics 365 Intelligent Order Management によって、顧客は注文からフルフィルメントまでのオーケストレーションを管理できます。 これらの機能により、組織はさまざまなプラットフォームおよびアプリ間で注文フローを調整できます。 | 無料の自習型オンライン学習モジュール | 30 分 |
 | [購入する前に](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Finance and Operations の購入を検討中のお客様も、購入の準備が整っているお客様も、便利なステップ バイ ステップ ガイダンスをご確認ください。 | ドキュメント | |
 | [リリース計画](/dynamics365/release-plans/) | Dynamics 365 の最新機能および機能拡張について調べる | ドキュメント | |
 
@@ -41,6 +42,7 @@ ms.locfileid: "6763097"
 
 | コンテンツ  | 説明 | 書式設定  | 期間    |
 |----------|-------------|---------|-----------|
+| [Success by Design for Dynamics 365 ソリューションの使用](/learn/paths/use-success-design/) | FastTrack for Dynamics 365 は、顧客およびパートナーが Dynamics 365 ソリューションを正常に展開できるよう支援するために設計されています。 このサービスを提供するために、ソリューション アーキテクトは Success by Design を使用する必要があります。 このラーニング パスでは、Success by Design の概念について説明します。 | 無料の自習型オンライン学習モジュール | 12 時間 |
 | [Lifecycle Services を使用して、 Finance and Operations アプリの実装を設計、計画する](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) は、顧客とそのパートナーが、Finance and Operations アプリのプロジェクトを販売前から実装フェーズ、そして最終的に実稼働環境 (クラウドまたはオンプレミス) まで管理するために使用するコラボレーション ワークスペースです。 プロジェクトの管理に役立つチェックリストとツールが用意されており、実装や定期的に更新されるサービスに役立つ事前ビルドの方法も含まれています。 | 無料の自習型オンライン学習パス | 2 時間 |
 | [Finance and Operations アプリで組織を構成する](/learn/paths/configure-your-organization-finance-ops/) | Finance and Operations アプリを使用する機能コンサルタントは、顧客向けに組織を設定する方法を理解しておく必要があります。 この学習パスでは、その他のタスクの中でも特に、法人の設定、セキュリティ設定の実装、ユーザー向けのユーザー インターフェイスのパーソナライズ、モバイル アプリの設計と構築、および共通の統合の実装の方法を示します。 | 無料の自習型オンライン学習パス | 12 時間 |
 | [データを移行して、Finance and Operations アプリの運用を開始する](/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントおよび開発者として、顧客のデータを移行用に準備し、データ管理を操作し、ユーザー受け入れテストを実行して、Finance and Operations アプリで運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
@@ -102,6 +104,5 @@ ms.locfileid: "6763097"
 | [Microsoft 認定: Dynamics 365 for Finance and Operations、財務機能コンサルタント アソシエート](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft 認定: Dynamics 365 for Finance and Operations、財務機能コンサルタントは、グローバルな財務と運用を統一し、タスクとワークフローを自動化し、顧客の注文、販売、請求、および報告を効率化します。 | 証明書、費用は地域によって異なる |
 | [試験 MB-300: Microsoft Dynamics 365 Unified Operations コア](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、一般的な機能と実装ツールの使用、セキュリティ、プロセス、およびオプションの設定、データ移行の実施、ソリューションの検証とサポートという技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [試験 MB-310: Microsoft Dynamics 365 for Finance and Operations、財務](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、財務管理の設定とコンフィギュレーション、共通プロセスの管理と適用、買掛金勘定と売掛金勘定の実装および管理、および予算作成と固定資産の管理という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

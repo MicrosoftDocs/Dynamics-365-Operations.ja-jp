@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 81aac53cca91a75cde811c314bd6f7039852d32505fe6540921e17f3d1bbc7ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739313"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345231"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>TDS の税コードを TDS 税グループに添付し、TDS の計算に使用する式を定義する
 
@@ -55,7 +55,7 @@ ms.locfileid: "6739313"
     > [!NOTE]
     > 優先 ID が **1** の TDS 税コードでは、**課税基準** フィールドを **Excl 総額** に設定できません。
 
-12. TDS の計算は、TDS の税グループにアタッチ関連付けられている各税コードの **計算式** フィールドに定義されている計算式に基づいて行われます。 プラス記号 (**+**)、マイナス記号 (**-**)、乗算記号 (**\**_)、または区分記号 (_*/**) ボタンを選択し、**計算式** フィールドに選択した TDS 税コードの計算式を入力します。
+12. TDS の計算は、TDS の税グループにアタッチ関連付けられている各税コードの **計算式** フィールドに定義されている計算式に基づいて行われます。 プラス記号 (+)、マイナス記号 (-)、乗算記号 (\*)、除算記号 (/) ボタンを選択し、選択した TDS 税コードの計算式を **計算式** 欄に入力します。
 
     > [!NOTE]
     > 優先度 ID が **1** の TDS の税コードには、計算式を定義できません。

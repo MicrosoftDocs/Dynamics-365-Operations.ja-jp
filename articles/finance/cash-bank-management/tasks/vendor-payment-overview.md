@@ -1,6 +1,6 @@
 ---
 title: 仕入先支払の概要
-description: このガイドでは、仕入先支払の作成に使用するさまざまな方法について説明します。また、支払提案の使用方法または手動で 1 回限りの支払入力方法についても説明します。
+description: この手順では、仕入先支払を作成するためのさまざまな方法を説明します。(支払提案を使用する方法や、1 回限りの支払を手動で入力する方法などを含みます。)
 author: kweekley
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 997d505cc89eaa39b2bac273a5ae381c1c892a9537cbaa9b45156ecbb6fd237c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721830"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394441"
 ---
 # <a name="vendor-payment-overview"></a>仕入先支払の概要
 
 [!include [banner](../../includes/banner.md)]
 
-このガイドでは、仕入先支払の作成に使用するさまざまな方法について説明します。また、支払提案の使用方法または手動で 1 回限りの支払入力方法についても説明します。 この手順では、USMF というデモ会社を使用します。
+この手順では、仕入先支払を作成するためのさまざまな方法を説明します。(支払提案を使用する方法や、1 回限りの支払を手動で入力する方法などを含みます。) この手順では、USMF というデモ会社を使用します。
 
 1. **ナビゲーション ウィンドウ > モジュール > 買掛金勘定 > 支払 > 支払仕訳** の順に移動します。
 2. **新規** をクリックします。
 3. 仕入先支払を保存する支払仕訳帳を選択します。 
 4. 仕訳帳を選択するか、または手動で仕訳帳を入力します。
 5. **行** をクリックします。
-6. **アクション ペイン** で、**支払提案** をクリックします。
+6. **アクション ウィンドウ** で、**支払提案** をクリックします。
 7. **支払提案の作成** をクリックします。 支払提案は、支払の請求書を選択するために使用するクエリです。 仕入先支払を作成または生成する前に、支払請求書のリストを編集できます。
 8. 期日別の請求書、現金割引、またはその両方を選択します。 
 9. 期日または現金割引と比較する日付を入力します。 

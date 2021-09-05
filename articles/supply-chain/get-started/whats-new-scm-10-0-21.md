@@ -2,7 +2,7 @@
 title: Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) のプレビュー
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.21 の新機能または変更された機能について説明します。
 author: kamaybac
-ms.date: 08/02/2021
+ms.date: 08/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 517411512760374f1d1fd3b8ea3615563c47202c2e847569d00cb17a94657630
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
+ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012040"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7391211"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) のプレビュー
 
@@ -29,17 +29,18 @@ ms.locfileid: "7012040"
 - **リリースの一般提供 (自動更新):** 2021 年 10 月
 
 ## <a name="known-deployment-issue"></a>配置に関する既知の問題
+
 IaaS にリリース 10.0.21 を配置する場合、次のような配置警告が表示される場合があります。
 
 **警告コード:** 95017
 
-**警告メッセージ:** スクリプト [SetupDiagnostics] が VM に対して実行に失敗
+**警告メッセージ :** スクリプト \[SetupDiagnostics\] が VM に対して実行に失敗
 
-警告があっても配置は機能しますが、Lifecycle Services (LCS) では次のような既知の問題が発生する可能性があります。
+警告が出ていても配置は機能します。 ただし、Lifecycle Services (LCS) では、次に示す既知の問題が発生する可能性があります。
 
--   **環境の監視** ページでは、**詳細バージョン情報の表示** リンクは表示されません。したがって、環境にインストールされているモジュールの特定のバージョンは表示されません。 このデータがないと、修正プログラムを適用するプロセスがこのデータを使用して、モジュール バージョンの前提条件が満たされていることを確認するため、後続の修正プログラムが失敗することがあります。 PEAP/プレビュー ビルドを生産で使用したり、修正プログラムを適用することができないため、影響は最小限に抑える必要があります。
--   SQL インサイトの **環境監視** ページの **パフォーマンス メトリックス** タブと **インデックス分析** タブでは、データは表示されません。 その他の **環境監視** 機能は、意図したとおりに機能します。
--   **フル システム診断** ページにはアクセスできません。 夜間のコレクター実行のステータスとそのルールによって検出された問題に関する関連データも表示されません。
+- **環境の監視** ページでは、**詳細バージョン情報の表示** リンクは表示されません。したがって、環境にインストールされているモジュールの特定のバージョンは表示されません。 このデータがないと、修正プログラムを適用するプロセスがこのデータを使用して、モジュール バージョンの前提条件が満たされていることを確認するため、後続の修正プログラムが失敗することがあります。 PEAP/プレビュー ビルドを生産で使用したり、修正プログラムを適用することができないため、影響は最小限に抑える必要があります。
+- SQL インサイトの **環境監視** ページの **パフォーマンス メトリックス** タブと **インデックス分析** タブでは、データは表示されません。 その他の **環境監視** 機能は、意図したとおりに機能します。
+- **フル システム診断** ページにはアクセスできません。 夜間のコレクター実行のステータスとそのルールによって検出された問題に関する関連データも表示されません。
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
@@ -52,10 +53,10 @@ IaaS にリリース 10.0.21 を配置する場合、次のような配置警告
 | 在庫&nbsp;および&nbsp;物流 | [Dynamics 365 Supply Chain Management のグローバル在庫会計アドイン](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [グローバル在庫会計ホーム ページ](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | 在庫&nbsp;および&nbsp;物流 | [相手勘定に接続されたコードを使用した手当調整の転記](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [在庫棚卸の理由コード](../warehousing/reason-codes-for-counting-journals.md) |
 | 在庫&nbsp;および&nbsp;物流 | [販売見積参照データ エクスポート ポリシー](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | 見積書で参照されているデータを変更すると、それらの見積書 (または明細行) が次の増分エクスポートに含まれるかどうかを選択します。 そのような見積書または明細行を含めない場合は、増分エクスポートがより迅速に実行します。<br><br>この機能は、**変更追跡中に販売見積参照データをスキップ** という設定を **売掛金勘定パラメーター** ページに追加します。 |
-| 在庫&nbsp;および&nbsp;物流 | [GS1 形式標準を使用した倉庫内のバーコードのスキャン](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | *間もなく公開*<!-- KFM: Add doc link when ready. --> |
-| 在庫&nbsp;および&nbsp;物流 | シールド入札 <!-- KFM: Add RP link when available --> | *間もなく公開*<!-- KFM: Add doc link when ready. --> |
+| 在庫&nbsp;および&nbsp;物流 | [GS1 形式標準を使用した倉庫内のバーコードのスキャン](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 バーコードと QR コード](../warehousing/gs1-barcodes.md) |
+| 在庫&nbsp;および&nbsp;物流 | [在庫の可視化アドインの仮引当](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [在庫の視覚化引当](../inventory/inventory-visibility-reservations.md) |
 | 在庫&nbsp;および&nbsp;物流 | [リベート管理の控除および Catch Weight の強化](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [控除ワークベンチを使用した控除の管理](../rebate-management/deduction-workbench.md )<br><br>[リベートの処理、確認、および転記](../rebate-management/process-review-post.md)<br><br>[リベート管理取引](../rebate-management/rebate-management-deals.md) |
-| 在庫&nbsp;および&nbsp;物流 | [倉庫アプリのステップ指示](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *間もなく公開*<!-- KFM: Add doc link when ready --> |
+| 在庫&nbsp;および&nbsp;物流 | [倉庫アプリのステップ指示](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Warehouse Management モバイル アプリのステップ タイトルと手順のカスタマイズ](../warehousing/mobile-app-titles-instructions.md) |
 | 在庫&nbsp;および&nbsp;物流 | [陸揚原価の作業の分割と追跡の更新](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [プット アウェイの更新追跡](../landed-cost/update-tracking-putaway.md )<br><br>[輸送中の商品の処理](../landed-cost/in-transit-processing.md) |
 | マスター プラン | [計画の最適化のマイナス在庫日数](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [遅延許容範囲 (マイナス日数)](../master-planning/planning-optimization/delay-tolerance.md) |
 
@@ -66,9 +67,9 @@ IaaS にリリース 10.0.21 を配置する場合、次のような配置警告
 | 機能領域 | 機能&nbsp;管理の機能&nbsp;名&nbsp; | 詳細 |
 |---|---|---|
 | 原価管理 | 在庫決算の進捗状況の詳細 | このプレビュー機能により、在庫決算の進捗を詳細に表示できます。 |
-| マスター プラン | (プレビュー) 計画最適化に対して優先順位によって推進される MRP のサポート | この計画最適化のプレビュー機能を使用すると、再発注時点での計画の優先順位によってマスター プラン駆動型を有効にできます。 強調表示される変更には、販売注文明細行、発注書明細行、需要予測、および計画オーダーの **計画の優先順位**; 再発注時点の **品目補充** フィールド; 計画の優先順位設定を制御するマスター プランの設定フォーム; および計画の優先順位を設定および適用する計画最適化計算ロジックが含まれます。 |
 | 調達 | 複数の購買要求がワークフロー内にある場合に一般予算引当の過剰消費を防止する | このプレビュー機能により、一般予算引当行の残りの残高を超える購買要求をユーザーが送信および承認する際のエラー チェックが向上します。 これにより、複数の購買要求がワークフローに含まれる場合に、一般予算引当の超過消費を防ぐのに役立ちます。 |
 | 生産管理 | 生産フロア実行インターフェイスの完全なシリアル番号、バッチ番号、ライセンス プレート番号を表示する | この機能により、生産現場の実行インターフェイスでシリアル番号、バッチ番号、およびライセンス プレート番号のリストを表示し、さらに効率が向上します。 表示は、限られた文字数のカード ビューから、完全な値を表示するのに十分なスペースを提供するリスト ビューに変わります。 このリストは、特定の番号を検索する機能も提供します。 |
+| 販売とマーケティング | 転記用に選択できる販売注文数を制限する | この機能を使用すると、販売注文リスト ページから確認書、ピッキング リスト、梱包明細、および請求書を転記する際に選択できる販売注文の最大数を定義できます。 自動的に有効になります。 この機能により、**転記用の最大販売注文数** という設定が、**売掛金勘定パラメータ** ページに追加されます。 新しい設定の既定値は *100* です。 この機能により、多数の販売注文が選択された場合に、販売注文リスト ページのパフォーマンスが向上します。 定期処理タスクで処理できる販売注文の数には影響しません。 |
 | 倉庫管理 | ASN からのプットアウェイ作業を切り離す | この機能は、スケール 単位で (分散ハイブリッド トポロジの一部として) 倉庫管理ワークロードを実行している場合に、事前出荷明細通知 (ASN)を送受信するために必要です。 また、プットアウェイ作業に関する情報を格納するための専用の新しいデータベース テーブルが追加されます。 以前は、この情報は ASN 用のテーブルに格納されていました。 |
 | 倉庫管理 | スロット混合単位 | システムでは、品目を混合ユニット (ボックスとケースの両方など) を含む場所に入れ込みます。 この機能を使用すると、スロッティングのテンプレート行ごとに、品目を混合ユニットまたは単一ユニットのどちらの場所にスロットするかを選択できます。 |
 | 倉庫管理 | 梱包ステーションでコンテナーの終了/再オープンのために高速 API を使用する | このプレビュー機能を有効にすると、コンテナーに関連する在庫トランザクションが、新しい明るいプロセスを使用して作成されます。このプロセスにより、手作業の梱包ステーションを行う際のコンテナーの決算または再オープンのパフォーマンスが向上します。 |

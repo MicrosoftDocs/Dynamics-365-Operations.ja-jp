@@ -1,5 +1,5 @@
 ---
-title: 顧客支払予測 (プレビュー)
+title: 顧客支払予測
 description: このトピックでは、顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、コレクション プロセスを開始したとしても、それ以外の状況を把握することができます。
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bfb8d307079e4cca86a34eef3f0bdd6c6a268a1038940ecb8cf46950c1f5c9e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21a773b37020aeff969469e29be68e7f7ef44d93
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713261"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386664"
 ---
-# <a name="customer-payment-predictions-preview"></a>顧客支払予測 (プレビュー)
+# <a name="customer-payment-predictions"></a>顧客支払予測
 
 [!include [banner](../includes/banner.md)]
 

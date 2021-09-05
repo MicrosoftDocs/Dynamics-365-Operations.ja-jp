@@ -1,8 +1,8 @@
 ---
 title: 福利厚生管理でアフォーダブル ケア法のレポートを生成する
-description: このトピックでは、福利厚生管理を使用して、Form1095-B および Form 1095-C でアフォーダブル ケア法 (ACA) の雇用主の命令に関して報告された情報を追跡する方法について説明します。
-author: andreabichsel
-ms.date: 12/28/2020
+description: このトピックでは、福利厚生管理が、Form1095-B および Form 1095-C でアフォーダブル ケア法 (ACA) の雇用主の命令に関して報告された情報を追跡する方法について説明します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d681514f53dbaf4aafce33722d0c1837c3d270407c19d629c3383ff1a2472d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99ac67795cd3f587e54a84361dd4744b79b4dbbd
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727068"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416257"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>福利厚生管理で ACA レポートを生成する
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-福利厚生管理を使用すると、Form1095-B および Form 1095-C でアフォーダブル ケア法 (ACA) の雇用主の命令に関して報告された情報を追跡することができます。 古い **福利厚生** ワークスペースの ACA レポート機能と同様に、この機能は米国の法人にのみ適用されるものです。
+福利厚生管理は、Form1095-B および Form 1095-C でアフォーダブル ケア法 (ACA) の雇用主の命令に関して報告された情報を追跡します。 古い **福利厚生** ワークスペースの ACA レポート機能と同様に、この機能は米国の法人にのみ適用されるものです。
 
 この機能を使用するには、最初に **高度な福利厚生管理** を有効にする必要があります。 福利厚生管理に関する重要な説明などの詳細については、[福利厚生管理の有効化または無効化](hr-admin-manage-features.md#enable-or-disable-benefits-management) を参照してください。
 
@@ -145,7 +145,7 @@ ACA の 1095-B と 1095-C を作成し、各従業員に配布することがで
 2. 必要に応じてパラメータを変更し、 **OK** を選択します。
 
     > [!NOTE]
-    > 500 人を超える従業員に From 1095-C を印刷する場合は、複数の PDF ファイルが作成されます。 **ドキュメント管理パラメーター** ページの **最大ファイル サイズ (MB)** フィールドの値を **150** にすることをお勧めします。 (このページをすぐに開くには、ナビゲーション バーの検索フィールドを使用してください。)
+    > 500 人を超える従業員に From 1095-C を印刷する場合は、複数の PDF ファイルが作成されます。 **ドキュメント管理パラメーター** ページの **最大ファイル サイズ (MB)** フィールドの値を **150** にすることをお勧めします。 (このページをすぐに開くには、ナビゲーション バーの検索フィールドを使用します。)
     >
     > ![最大ファイル サイズを変更する。](./media/hr-benefits-management-aca-maximum-file-size.png)
 

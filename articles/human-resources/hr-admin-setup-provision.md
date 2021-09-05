@@ -1,8 +1,8 @@
 ---
 title: Human Resources のプロビジョニング
-description: このトピックでは、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングについて説明します。
-author: andreabichsel
-ms.date: 06/14/2021
+description: このトピックでは、Microsoft Dynamics 365 Human Resources の新しい運用環境のプロビジョニングについて説明します。
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58ffce072c8b73f4907b18c6c60b022f9a3b55f26cb785238367254021afdc28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756151"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393526"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -28,9 +28,15 @@ ms.locfileid: "6756151"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングについて説明します。 このトピックでは、Human Resources をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 Human Resources サービス プランがすでに含まれている既存の Microsoft Dynamics 365 ライセンスがあり、この記事の手順を完了できない場合は、サポートにお問い合わせください。
+このトピックでは、Microsoft Dynamics 365 Human Resources の新しい運用環境のプロビジョニングについて説明します。 
 
-始めに、グローバル管理者は [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) にサインインし、新しい Human Resources プロジェクトを作成します。 ライセンスの問題で Human Resources プロビジョニングが妨げられない限り、サポートまたは Dynamics サービス エンジニアリング (DSE) の担当者に問い合わせる必要はありません。
+## <a name="prerequisites"></a>必要条件
+
+新しい運用環境のプロビジョニングを始める前に、次の前提条件が満たされている必要があります:
+
+- クラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して Human Resources を購入しました。 Human Resources サービス プランがすでに含まれている既存の Microsoft Dynamics 365 ライセンスがあり、このトピックの手順を完了できない場合は、サポートにお問い合わせください。
+
+- グローバル管理者は [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) にサインインし、新しい Human Resources プロジェクトを作成しました。 
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Human Resources 試用環境のプロビジョニング
 
@@ -42,7 +48,7 @@ ms.locfileid: "6756151"
 
 最初に Human Resources を作成する前に、プロジェクトに必要な環境を慎重に計画する必要があります。 人事管理への基本的なサブスクリプションには、2 つの環境 (運用環境とサンドボックス環境) が含まれます。 プロジェクトの複雑さに応じて、プロジェクト活動の対応するべく、サンドボックス環境を追加購入する必要がある場合があります。 
 
-追加の環境で考慮すべき点には、以下のようなものがありますが、これに限定されるものではありません。
+追加環境に関する考慮事項:
 
 - **データ移行** : サンドボックス環境をプロジェクト全体でテストに使用できるようにするために、データ移行活動に使用する追加環境が必要となる場合があります。 環境を追加することにより、テストと構成の活動が別の環境で同時に行われている間も、データ移行活動を継続することができます。
 - **統合** : 統合を構成してテストする際に、追加の環境が必要となる可能性があります。 これには、Ceridian Dayforce LinkedIn Talent Integrations などのネイティブ統合や、給与、申請者追跡システム、福利厚生システムやプロバイダなどのカスタム統合が含まれます。
@@ -50,10 +56,11 @@ ms.locfileid: "6756151"
 - **複数フェーズのプロジェクト** : プロジェクトの最初の移動後に計画されているプロジェクト フェーズで構成、データ移行、テスト、その他の活動に対応するにあたって、追加の環境が必要となる場合があります。
 
  > [!IMPORTANT]
- > 運用環境は、プロジェクト全体で GOLD 構成の環境として使用することをお勧めします。 サンドボックス環境は、運用環境にコピーできないため重要です。 そのため、GO-LIVE 時には GOLD 環境が運用環境となり、この環境でカットオーバー活動を完了させます。</br></br>
- > 移動前に、ひとつ以上の環境を使用して切り替えを実行しておくことをお勧めします。 これを実行するには、GOLD 構成を使用して運用環境を最新の情報に更新します。</br></br>
- > GO-LIVE のカットオーバー時には、最終データを運用環境に移行するために必要な各データ パッケージを含む、詳細なカットオーバー チェックリストを作成しておくことをお勧めします。</br></br>
- > また、プロジェクト全体でサンドボックス環境をテスト環境として使用することをお勧めします。 追加の環境が必要な場合は、組織が追加費用で購入することができます。</br></br>
+ > 環境を考慮する場合は、次の点をお勧めします:
+ > - プロジェクト全体で運用環境を GOLD 構成の環境として使用します。 サンドボックス環境は、運用環境にコピーできないため重要です。 そのため、GO-LIVE 時には GOLD 環境が運用環境となり、この環境でカットオーバー活動を完了させます。</br></br>
+ > - サンドボックスまたは別の環境を使用して、切り替えをを実行します。 これを実行するには、GOLD 構成を使用して運用環境を最新の情報に更新します。</br></br>
+ > - GO-LIVE のカットオーバー時には、最終データを運用環境に移行するために必要な各データ パッケージを含む、詳細なカットオーバー チェックリストを作成します。</br></br>
+ > - プロジェクト全体でサンドボックス環境を TEST 構成の環境として使用します。 追加の環境が必要な場合は、組織が追加費用で購入することができます。</br></br>
 
 ## <a name="create-an-lcs-project"></a>LCS プロジェクトの作成
 
@@ -86,7 +93,7 @@ LCS プロジェクトを作成した後は、環境に Human Resources をプ�
     > Human Resources インスタンス タイプは、一度設定した後で変更することはできません。 続行する前に、正しいインスタンス タイプが選択されていることを確認します。</br></br>
     > Human Resources のインスタンス タイプは、Power Apps 管理センターで設定された Microsoft Power Apps 環境のインスタンス タイプとは異なります。
     
-3. Human Resources テスト ドライブ エクスペリエンスで使用される同じデモ データ セットを環境に含める場合は、**デモ データを含む** オプションをオンにします。 デモ データは長期的なデモまたはトレーニング環境に有用ですが、稼動環境で使用するものではありません。 初期展開時にこのオプションを選択する必要があります。 既存の配置を後で更新することはできません。
+3. Human Resources 試用環境で使用される同じデモ データ セットを環境に含める場合は、**デモ データを含む** オプションをオンにします。 デモ データは長期的なデモまたはトレーニング環境に有用ですが、稼動環境で使用するものではありません。 初期展開時にこのオプションを選択する必要があります。 既存の配置を後で更新することはできません。
 
 4. Human Resources は、Microsoft Power Apps の環境に常にプロビジョニングされていて、これにより Power Apps の統合および拡張機能が有効になります。 続行する前に、この記事の「Power Apps 環境の選択」セクションを参照してください。 まだ Power Apps 環境を持っていない場合は、LCS で環境の管理を選択するか、または Power Apps 管理センターに移動します。 次に、以下の手順に従って、[Power Apps 環境を作成します](/powerapps/administrator/create-environment)。
 
@@ -115,7 +122,7 @@ Human Resources を配置する Power Apps 環境を決定する際には、次�
 
 4. サンドボックス、UAT、または生産などのデータの統合およびテスト戦略を考慮する必要があります。 Power Apps 環境にマッピングされている Human Resources 環境を後から変更することは容易ではないため、実装へのさまざまな影響について考慮することを推奨します。
 
-5. 次の Power Apps 環境を Human Resources に使用することはできません。 これらは、LCS 内の選択リストからフィルタ処理されます：
+5. 次の Power Apps 環境は Human Resources には使用できません。 これらは、LCS 内の選択リストからフィルタ処理されます：
  
     - **既定の Power Apps 環境** - 各テナントは既定の Power Apps 環境で自動的にプロビジョニングされますが、Human Resources での使用については推奨しません。 すべてのテナント ユーザーが Power Apps 環境にアクセスでき、テストや Power Apps、Power Automate 統合の際に、本番データの意図しない破損につながる可能性があります。
    
@@ -147,7 +154,7 @@ Human Resources 環境のデータは常に、Human Resources 環境が作成さ
 
 ## <a name="grant-access-to-the-environment"></a>環境へのアクセスを付与
 
-既定では、環境を作成したグローバル管理者がそこにアクセスできます。 追加のアプリケーション ユーザーに対するアクセス権を明示的に付与する必要があります。 Human Resources 環境では、ユーザーを追加し、適切な役割を割り当てる必要があります。 Human Resources を展開するグローバル管理者は、初期化を完了して、他のテナント ユーザーのアクセスを有効にするため、Attract および Onboard の両方も起動する必要があります。 これが発生するまで、他のユーザーは Attract および Onboard にアクセスすることはできませんし、アクセス違反エラーが発生します。 詳細については、[新規ユーザーの作成](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) および [ユーザーのセキュリティ ロールへの割り当て](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) を参照してください。 
+既定では、環境を作成したグローバル管理者がそこにアクセスできます。 追加のアプリケーション ユーザーに対するアクセス権を明示的に付与する必要があります。 Human Resources 環境では、ユーザーを追加し、適切な役割を割り当てる必要があります。 詳細については、[新規ユーザーの作成](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) および [ユーザーのセキュリティ ロールへの割り当て](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) を参照してください。 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

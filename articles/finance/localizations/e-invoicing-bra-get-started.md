@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fd37c98b64e6074d54b40e20f87f24912abcdd75575aa92e1e2b7345d3cce5a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ccf2a78a5ffdb95b334f751944fdd010bf8cbf01
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730480"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345200"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>ブラジル向けの電子請求を開始する 
 
@@ -55,7 +55,7 @@ Finance および Supply Chain Management に接続されたアプリケーシ�
 
 このセクションは、トピック [電子請求を開始する](e-invoicing-get-started.md)の **アプリケーション設定** セクションを補完するものです。
 
-1. RCS の **グローバリゼーション機能** ワークスペースの **機能** セクションで、 **電子請求* タイルを選択します。
+1. RCS の **グローバリゼーション機能** ワークスペースの **機能** セクションで、 **電子請求** タイルを選択します。
 2. **電子請求機能** ページで、**ブラジル NF-e (BR)** 電子請求機能が選択されていることを確認します。
 3. **バージョン** タブで、**ドラフト** バージョンが選択されている必要があります。
 4. **設定** タブで、**アプリケーション設定** を選択し、**接続済みアプリケーション** フィールドで、配置するアプリケーションを選択します。

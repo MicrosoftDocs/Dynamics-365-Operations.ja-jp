@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 3040406af731e2e35fff456804f893108e7eb896bfa0132082986c09ad128952
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777674"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344177"
 ---
 # <a name="wave-label-printing"></a>サイクル ラベル印刷
 
@@ -506,7 +506,7 @@ ms.locfileid: "6777674"
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>シナリオ 3 : 複数層のラベルのウェーブ ラベル印刷
 
-このシナリオでは、倉庫管理プロセスで複数の階層階層の出荷ラベルが必要な場合の、ウェーブ ラベル印刷機能の使用方法を解説します。 たとえば、カートンとパレットに対して別々のラベルの印刷を行い、改ラベルを出荷全体で印刷する必要がある場合があります。 改ラベルとは、出荷 ID のラベルやバーコードなど、ロールとコンテナーの間の仕切りとして使用できるセパレート タイプのラベルを意味し、印刷後のラベルの仕分けが簡単になります。
+このシナリオでは、倉庫管理プロセスで複数の階層階層の出荷ラベルが必要な場合の、ウェーブ ラベル印刷機能の使用方法を解説します。 たとえば、カートンとパレットに対して別々のラベルの印刷を行い、改ラベルを出荷全体で印刷する必要がある場合があります。 改ラベルとは、出荷 ID のラベルやバーコードなどの、ロールとコンテナーの間の仕切りとして使用できるセパレート タイプのラベルを意味し、印刷後のラベルの仕分けが簡単になります。
 
 このシナリオとシナリオ１における構成の主な相違点は、改ラベルが有効になっていることを除いて、複数のウェーブ ラベル タイプをウェーブ ラベル テンプレートと出荷単位シーケンス グループ ラインに関連付ける必要があるという点です。 この構成を実行するには、このシナリオで次の要素を設定します :
 

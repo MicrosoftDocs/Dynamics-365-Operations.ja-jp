@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 52048ea6cced6f670faf13ef07f1288183e6d9b67a016608030f9e192a98faa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751101"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344981"
 ---
 # <a name="planning-optimization-fit-analysis"></a>計画最適化適合分析
 
@@ -52,7 +52,10 @@ ms.locfileid: "6751101"
 
 以下の表では、フィット解析を行った後に表示される様々な結果を示しています。 番号記号 (_\#_) は、リストされた問題のあるレコードの数に置き換えられます。 サポートされている機能またはプレビュー内の機能は、バージョン 10.0.9 以降で使用できます ("使用可能予定" 列にバージョン番号が大きい場合を超える場合)。
 
-| 機能 | 一覧表示された問題 | 説明 | 予想される可用性 |
+> [!NOTE]
+> 一部の不整合は、計画の最適化に適合した分析では識別されません。 詳細については、[クラシック マスター計画と計画最適化の違い](planning-optimization-differences-with-built-in.md) を参照してください。
+
+| フィーチャー | 一覧表示された問題 | 説明 | 予想される可用性 |
 | --- | --- | --- | --- |
 | アクション | アクション計算が有効なカバレッジ グループ ：_\#_ | この機能は保留中です。 現在、計画の最適化が有効になっている場合は、この設定にかかわらず、マスター計画の過程でアクションが生成されません。 アクションの主な目的は、既存の注文に対する変更を提案することです。 アクションが業務プロセスの一部としてアクティブに適用されているかどうか、または注文に関連する遅延情報が十分であるかどうかを評価します。 | 2022 年 4 月 |
 | 基本カレンダー | 基準カレンダーを使用したカレンダー： _\#_ | この機能は保留中です。 現在のところ、計画の最適化が有効になっている場合、基準カレンダーは無視されます。 基準カレンダーが業務プロセスに必要かどうか、またはカレンダーの直接設定で十分かどうかを評価します。 | 2022 年 4 月 | 
@@ -106,7 +109,11 @@ ms.locfileid: "6751101"
 
 [計画最適化の開始](get-started.md)
 
-[計画の履歴と計画ログの表示](plan-history-logs.md)
+[クラシック マスター計画と計画最適化の違い](planning-optimization-differences-with-built-in.md)
+
+[計画の最適化で使用されないパラメーター](not-used-parameters.md)
+
+[計画履歴と計画ログの表示](plan-history-logs.md)
 
 [プランへのフィルターの適用](plan-filters.md)
 

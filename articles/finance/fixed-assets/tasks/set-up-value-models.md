@@ -1,8 +1,8 @@
 ---
 title: 価値モデルの設定
 description: この手順では、新しい固定資産帳簿を作成する方法およびそれを固定資産グループに関連付ける方法を説明します。
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741539"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344661"
 ---
 # <a name="set-up-value-models"></a>価値モデルの設定
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 この手順では、新しい固定資産帳簿を作成する方法およびそれを固定資産グループに関連付ける方法を説明します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。
-
 
 ## <a name="create-a-book"></a>帳簿の作成
 1. [固定資産] > [設定] > [帳簿] の順に移動します。
@@ -48,9 +49,10 @@ ms.locfileid: "6741539"
 1. [固定資産グループ] をクリックします。
 2. [固定資産グループ] フィールドで、値を入力または選択します。
 3. [耐用年数] フィールドに数値を入力します。
-    * 耐用年数を設定した後に減価償却期間が計算されることに注意してください。  
-    * 税務用の減価償却方法を必要に応じて設定できます。  
 
+  - 減価償却期間は、資産の耐用年数を入力してから計算します。  
+  - 税務上の必要に応じて減価償却方法を設定することができます。
+  - リースに関連付けられている固定資産の場合、**耐用年数** フィールドの値は、資産帳簿のリース期間または資産の耐用年数のいずれか小さい値で上書きされます。 リース帳簿の **所有権の変更** フィールドが **はい** に設定されている場合、**耐用年数** フィールドの値は常にその資産の耐用年数になります。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

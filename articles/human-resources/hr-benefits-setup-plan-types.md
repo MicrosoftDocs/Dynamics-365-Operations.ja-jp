@@ -1,8 +1,8 @@
 ---
 title: プラン タイプの概要
-description: Microsoft Dynamics 365 Human Resources のプラン タイプは、給付金の特定のタイプを高レベルにグループ化したものです。 各プラン タイプには、そのプラン タイプのルールを決定するプラン タイプ コードがあります。
-author: andreabichsel
-ms.date: 06/25/2021
+description: Microsoft Dynamics 365 Human Resources のプラン タイプは、給付金の特定のタイプを高レベルにグループ化したものです。
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8966b0aa01795ff00832e480a186c05fa129e7c728112f81cf4f78b6b0915463
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732732"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423347"
 ---
-# <a name="plan-type-overview"></a>プラン タイプの概要
+# <a name="plan-type-overview"></a>計画タイプの概要
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -32,10 +32,10 @@ ms.locfileid: "6732732"
 
 プラン タイプに連絡先が含まれている場合、そのプラン タイプは、連絡先が受益者または扶養家族であるかどうかを示します。 たとえば、基本ライフ プラン タイプには受益者が入っていますが、基本の医療プラン タイプに被扶養者が入っています。 場合によっては、プランに個人の連絡先が含まれていないことがあります。 たとえば、Flexible Spending Account または駐車許可などです。
 
-あるプラン タイプは、補償オプションを定義するかもしれません。 補償オプションは、補償オプション フォームで定義されます。 補償オプションでは、給付金額またはプラン タイプに適格な連絡先を指定できます。 たとえば、連絡先タイプが受益者である場合、補償オプションで、給付金の利用時に受益者が受け取る資格の条件を定義する必要があります。 連絡先タイプが扶養家族である場合、補償オプションで、その扶養家族と従業員の関係を定義する必要があります。 
+あるプラン タイプは、補償オプションを定義するかもしれません。 補償オプションは、**補償オプション** ページで定義されます。 補償オプションでは、給付金額またはプラン タイプに適格な連絡先を指定できます。 たとえば、連絡先タイプが受益者である場合、補償オプションで、給付金の利用時に受益者が受け取る資格の条件を定義する必要があります。 連絡先タイプが扶養家族である場合、補償オプションで、その扶養家族と従業員の関係を定義する必要があります。 
 
 > [!IMPORTANT]
-> このフォームには、新しい給付金プランを作成するときに使用できるオプションに影響する重要データが含まれています:
+> このページには、新しい給付金プランを作成するときに使用できるオプションに影響する重要データが含まれています:
 >
 > - **プラン タイプ コード** – このフィールドは、実際の給付金の設定時に **構成** タブに表示される項目に影響します。  
 > - **同時登録** – このフィールドは、複数の登録を許可するかどうかを決定します。 (医療プランの場合、このフィールドは通常 **1 つの登録** に設定されています。)

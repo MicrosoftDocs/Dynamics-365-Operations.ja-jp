@@ -2,7 +2,7 @@
 title: ユーザー エクスペリエンスのパーソナライズ
 description: このトピックでは、アプリを個人用設定する方法について説明します。
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f71a94a6a5780f8a59590008f6370cb6897fa644e7fd826bacd0fb6206d159c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344377"
 ---
 # <a name="personalize-the-user-experience"></a>ユーザー エクスペリエンスのパーソナライズ
 
@@ -169,7 +169,7 @@ ms.locfileid: "6719304"
 ダッシュボードで使用できる固有のパーソナル化機能は、タイルを追加する機能です。 
 
 - **フルページ アプリ** 機能がオフになっている場合は、ダッシュボードの要素を右クリックし、**ワークスペースの追加** を選択することにより、新しいタイルを追加します。 新しいワークスペース タイルがダッシュ ボードの下部に作成されます。 この新しいワークスペース タイルの名前は、必要に応じて変更できます。 このトピックの [ワークスペースへのリスト、タイル、またはリンクの追加](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) セクションで説明されているように、ワークスペースにリスト、タイル、リンクを追加することもできます。
-- **フルページ アプリ** 機能がオンになっている場合は、ダッシュボードの要素を右クリックし、**アプリの追加** を選択することにより、新しいタイルを追加します。 このダイアログ ボックスで、新しいワークスペースのタイルを追加するのか、または Power Apps や Web サイトからのコンテンツを含むタイルを追加するのかを選択します。 次に、選択したオプションをコンフィギュレーションする手順に従います。 新しいタイルがダッシュ ボードの下部に作成されます。 
+- **フルページ アプリ** 機能がオンになっている場合は、ダッシュボードの要素を右クリックし、**アプリの追加** を選択することにより、新しいタイルを追加します。 このダイアログ ボックスで、新しいワークスペースのタイルを追加するのか、または Power Apps や Web サイトからのコンテンツを含むタイルを追加するのかを選択します。 次に、選択したオプションをコンフィギュレーションする手順に従います。 新しいタイルがダッシュ ボードの下部に作成されます。 これらの埋め込みアプリを追加、編集、削除、および共有する方法については、[Power Apps から埋込みキャンバス アプリ](embed-power-apps.md) および[埋込み第三者アプリ](embed-website.md) を参照してください。
 
 ## <a name="sharing-personalizations"></a>個人用設定の共有
 

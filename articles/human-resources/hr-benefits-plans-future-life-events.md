@@ -1,8 +1,8 @@
 ---
 title: 将来のライフ イベントのコンフィギュレーション
-description: Dynamics 365 Human Resources 将来のライフ サイクルをスケジュールできます。
-author: andreabichsel
-ms.date: 04/06/2020
+description: このトピックでは、Dynamics 365 Human Resources で将来のライフ イベントをスケジュールする方法について説明します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25675e7704bdb3ead2618925561d1d0dded95747e0e1d6151e6ae2d714ceac43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa772f5c58e199e8786185c783db7016c8aebafd
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758667"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417585"
 ---
 # <a name="configure-future-life-events"></a>将来のライフ イベントのコンフィギュレーション
 

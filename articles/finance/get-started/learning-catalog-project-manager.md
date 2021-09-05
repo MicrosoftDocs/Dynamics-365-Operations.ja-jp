@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f9dfa54f0a2b849a38c71a041f6d72dd84c762edba3482575b0b7867b1e11a53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5055d18e57d36bc8218bb0423721056e33fc3018
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716624"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402179"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Dynamics 365 Finance を使用する実装プロジェクト マネージャー向けラーニング カタログ
 
@@ -61,7 +61,6 @@ ms.locfileid: "6716624"
 | [7.0 (RTW)/7.1 (リリース 1611) から 7.2 (2017 年 7 月) にアップグレードする方法 (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | このセッションでは、Dynamics 365 Finance and Operations アプリケーション v7.0 (RTW) および v7.1 (1611) から v7.2 (2017 年 7 月) にアップグレードする方法について説明します。 Live の顧客と進行中のプロジェクト (まだ Live ではない) を明確に区別します。 | Tech Talk (録画されたウェビナー) | 58 分 |
 | [Finance and Operations： 7. x から 8 + へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 7.X から 8.X へのアップグレード プロセスについて説明する次の Tech Talk にご参加ください。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオと手順について説明します。 また、拡張機能の要求のシナリオと、必要に応じてそれらを上げる方法についても説明します。 2 部構成の第 1 部 | Tech Talk (録画されたウェビナー) | 61 分 |
 | [AX2012 から Dynamics 365 for Operations へのアップグレード (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 for Operations にアップグレードする方法の概要を説明します。 | Tech Talk (録画されたウェビナー) | 45 分 |
-| [Dynamics 365 for Operations のレポート オプション (VIR810PAL) ](https://community.dynamics.com/365/b/techtalks/posts/reporting-options-in-dynamics-365-for-operations-february-23-2017) | このセッションでは、ドキュメント回覧エージェントのヒントとコツなど、Dynamics 365 for Operations でのさまざまな印刷のシナリオについて説明します。 | Tech Talk (録画されたウェビナー) | 60 分 |
 | [分析 & レポート オプション: 印刷とドキュメント回覧エージェント](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| 2 つの関連トピックについて、この Tech Talk にご参加ください。 最初に、Dynamics 365 for Finance and Operations、Enterprise Edition 向けの分析およびレポートのソリューション パターンとツールについて説明します。 次に、印刷のシナリオとドキュメント回覧エージェントについて説明します。 | Tech Talk (録画されたウェビナー) | 45 分 |
 | [コース MB-300T01-A: Dynamics 365 for Finance and Operations のコア共通機能](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | このコースでは、Microsoft Dynamics 365 for Finance and Operations のコア共通機能について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 | [コース MB-300T02-A: Dynamics 365 for Finance and Operations でのコア コンフィギュレーション](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | このコースでは、Microsoft Dynamics 365 for Finance and Operations のコア コンフィギュレーション タスクについて説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
@@ -93,6 +92,5 @@ ms.locfileid: "6716624"
 | [試験 MB-300: Microsoft Dynamics 365 Unified Operations コア](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、一般的な機能と実装ツールの使用、セキュリティ、プロセス、およびオプションの設定、データ移行の実施、ソリューションの検証とサポートという技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [試験 MB-310: Microsoft Dynamics 365 for Finance and Operations、財務](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、財務管理の設定とコンフィギュレーション、共通プロセスの管理と適用、買掛金勘定と売掛金勘定の実装および管理、および予算作成と固定資産の管理という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [Microsoft 認定: Dynamics 365 for Finance and Operations、財務機能コンサルタント アソシエート](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft 認定: Dynamics 365 for Finance and Operations、財務機能コンサルタントは、グローバルな財務と運用を統一し、タスクとワークフローを自動化し、顧客の注文、販売、請求、および報告を効率化します。 | 証明書、費用は地域によって異なる |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

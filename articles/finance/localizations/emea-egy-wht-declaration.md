@@ -10,20 +10,19 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 51f0ab8f76fe3bce91d6e4ed56bdfa8529c1aacbd326a8b4b3d80615f872f8c6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729554"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403894"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>エジプトの源泉徴収税申告 (EG-00005)
 
 [!include[banner](../includes/banner.md)]
-
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>概要
@@ -113,7 +112,7 @@ Microsoft Excel で WHT 申告フォーム レポートを生成するには、*
 1. **税** > **申告** > **源泉徴収税** > **源泉徴収税の支払* に移動します。
 2. 決済期間を選択し、レポートの開始日を選択します。 
 3. トランザクションの日付を入力して **OK** を選択します。
-4. 開かれているダイアログ ボックスで、1 つ以上のフォーム タイプ **フォーム ナンバー 41**、**フォーム ナンバー 11** または **なし** を選択します。 **なし** を選択すると、標準レポートが生成されます。 
+4. 開かれているダイアログ ボックスで、**フォーム No 41**、**フォーム No 11** または **なし** から 1 つ以上のフォーム タイプを選択します。 **なし** を選択すると、標準レポートが生成されます。 
 5. 言語を選択します。 すべてのレポートは、**en-us** および **ar-eg** に移動されます。
 6. 税支払が行われる銀行の支店と名前を入力します。
 7. ビジネス タイプを選択し、チェック番号および文書番号を入力します。 

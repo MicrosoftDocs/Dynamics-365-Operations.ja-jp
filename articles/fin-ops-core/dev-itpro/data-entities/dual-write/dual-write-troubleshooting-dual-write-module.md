@@ -2,26 +2,19 @@
 title: Finance and Operations アプリでのデュアル書き込み問題のトラブルシューティング
 description: このトピックでは、アプリの Finance and Operations デュアル書き込みモジュールの問題修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6689fae215937f58c93cce72df3fa0a1b5aecd3a5ac9913981b253344a1ba13f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90ff55540c153ef4f3ac07bf5316a3abb4755f2c
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720739"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380143"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Finance and Operations アプリでのデュアル書き込み問題のトラブルシューティング
 
@@ -44,8 +37,7 @@ ms.locfileid: "6720739"
 
 新しいテーブルをデュアル書き込みで構成する場合に、次のエラー メッセージが表示される場合があります。 マッピングを作成できるのは、デュアル書き込み接続を設定したユーザーだけです。
 
-*応答状態コードが成功とならない: 401 (権限なし)*
-
+*応答状態コードが成功とならない: 401 (権限なし)*。
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>デュアル書き込みのユーザー インターフェイスを開くとエラーが発生する
 
@@ -61,7 +53,11 @@ ms.locfileid: "6720739"
 
 マッピングをリンクまたは作成する際に、次のエラーが表示される場合があります。
 
-*応答状態コードが成功とならない: 403 (tokenexchange)。<br> セッション ID: \<your session id\><br> ルート アクティビティ ID: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 このエラーは、デュアル書き込みへのリンクと、マッピングを作成する十分なアクセス権限がない場合に発生する可能性があります。 このエラーは、リンク解除によるデュアル書き込みを行わずに Dataverse 環境をリセットした場合にも発生する可能性があります。 Finance and Operations アプリと Dataverse の両方でシステム管理者ロールを持つすべてのユーザーが、環境をリンクできます。 デュアル書き込み接続を設定したユーザーだけが、新しいテーブル マップを追加できます。 設定後、システム管理者のロールを持つユーザーはステータスを監視し、マッピングを編集できます。
 
@@ -75,16 +71,29 @@ ms.locfileid: "6720739"
 
 この問題を修正するには、チケットを作成してデータ統合チームに問い合わせてください。 データ統合チームがマッピンがバックエンドで **実行されていない** ことを識別できるように、ネットワークのトレースを添付してください。
 
-## <a name="error-while-trying-to-start-a-table-mapping"></a>テーブル マッピングの開始中にエラーが発生する
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>テーブル マッピングの開始中に発生するエラー
 
-マッピングの状態を **実行中** に設定しようとすると、次のようなエラーが表示される場合があります。
+### <a name="unable-to-complete-initial-data-sync"></a>初期データの同期を完了できません
+
+初期データの同期実行時に、次のようなエラーが表示される場合があります。
 
 *初期データの同期を完了できません。エラー: デュアル書き込みエラー ― プラグインの登録に失敗しました: デュアル書き込みルックアップのメタデータをビルドできません。エラーオブジェクト参照がオブジェクトのインスタンスに設定されていません。*
 
-このエラーの修正方法は、エラーの原因によって異なります。
+マッピングの状態を **実行中** に設定しようとすると、次のエラーが表示される場合があります。 エラーの原因によって修正方法は異なります。
 
 + マッピングに依存マッピングが含まれている場合は、このテーブル マッピングの依存マッピングを有効にする必要があります。
 + マッピングにソース列、または出力先の列がない可能性があります。 Finance and Operations アプリの列が存在しない場合は、[マップに存在しないテーブル列の問題](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) のセクションに記載されている手順を実行します。 Dataverse で列が表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、列が自動的にマッピングに反映されるようにします。
 
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>バージョンの不一致エラーとデュアル書き込みソリューションのアップグレード
+
+テーブルのマッピングを実行しようとすると、次のエラー メッセージが表示される場合があります。
+
++ *顧客グループ (msdyn_customergroups) : デュアル書き込みエラー - Dynamics 365 for Sales のソリューション 'Dynamics365Company' にはバージョンの不一致があります。バージョン: '2.0.2.10' 必須バージョン: '2.0.133'*
++ *Dynamics 365 for Sales のソリューション 'Dynamics365FinanceExtended' にはバージョンの不一致があります。バージョン: '1.0.0.0' 必須バージョン: '2.0.227'*
++ *Dynamics 365 for Sales のソリューション 'Dynamics365FinanceAndOperationsCommon' にはバージョンの不一致があります。バージョン: '1.0.0.0' 必須バージョン: '2.0.133'*
++ *Dynamics 365 for Sales のソリューション 'CurrencyExchangeRates' にはバージョンの不一致があります。バージョン: '1.0.0.0' 必須バージョン: '2.0.133'*
++ *Dynamics 365 for Sales のソリューション 'Dynamics365SupplyChainExtended' にはバージョンの不一致があります。バージョン: '1.0.0.0' 必須バージョン: '2.0.227'*
+
+この問題を修正するには、Dataverse でデュアル書き込みソリューションを更新します。 必要なソリューション バージョンに一致する最新のソリューションにアップグレードしてください。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -15,18 +15,23 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7caabeaf92bbce63cc30b2fb76111b33455af1910c2ea822453c550c61e02dd9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1ea35ec40ddd459e1a9e7641557147e23fe45d3e
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740887"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343217"
 ---
 # <a name="set-up-lease-journal-names"></a>リース仕訳帳名の設定
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 リース仕訳帳の名前は、資産リース トランザクションが転記される仕訳帳を指定します。 **資産リース** 仕訳帳タイプに割り当てられている仕訳帳名のみが、**資産リース パラメーター** ページの **初期認識** フィールドと **月次仕訳帳名** フィールドに表示されます。 **請求仕訳帳名** フィールドに割り当てることができるのは、**仕入先請求書記録** 仕訳帳タイプだけです。
+
+このシステムには、トランザクションとスケジュールの間に差異が生じないように、特定の財務フィールドが編集できないようロックされています。 ロックされている一部のフィールドは次のとおりです。**勘定**、**金額**、**財務分析コード**、**通貨**、**トランザクション タイプ**。 また、スケジュールとトランザクションの間に差異が発生することがあるため、資産リース仕訳入力に仕訳明細行を追加または削除することはできません。
+
 
 リース仕訳帳の名前をコンフィギュレーションするには、次の手順に従います。
 

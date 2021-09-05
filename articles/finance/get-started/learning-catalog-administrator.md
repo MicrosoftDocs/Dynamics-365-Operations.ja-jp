@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 854dc3ece8b37c134723efb817551f3f276f69ec120eb9168e5d6566f0bc5a43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 03eb04d85c854e100f6ee00583cb67e037bbf8bd
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770572"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402571"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Dynamics 365 Finance 管理者向けラーニング カタログ
 
@@ -32,6 +32,7 @@ ms.locfileid: "6770572"
 | [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間 |
 | [Finance and Operations アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。 Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
 | [Dynamics 365 Finance の使用を開始する](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance は、変化の激しいビジネス環境に適応できるようにビジネス ユーザーを支援します。 企業が財務を管理し、資金を管理するために必要なすべてのものを、財務計画と予測のための正確な情報とともに提供し、分析ツールを使用して最新の状態に保つことができます。 財務はあらゆる業務の中心であるため、Dynamics 365 Finance の機能に精通することが重要です。 | 無料の自習型オンライン学習モジュール | 1 時間 |
+| [Dynamics 365 Intelligent Order Management の使用を開始する](/learn/modules/get-started-intelligent-order-management/) | Dynamics 365 Intelligent Order Management によって、顧客は注文からフルフィルメントまでのオーケストレーションを管理できます。 これらの機能により、組織はさまざまなプラットフォームおよびアプリ間で注文フローを調整できます。 | 無料の自習型オンライン学習モジュール | 30 分 |
 | [コース MB-900T01-A: Dynamics 365 の基本](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | このコースでは、Dynamics 365の機能と事業価値について理解します。 このコースでは、Dynamics 365 アプリケーション、Power Platform、クラウドの概念、セキュリティ モデル、およびライセンスに関する考慮事項について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 | [Dynamics 365 Project Operations で 経費管理の使用を開始する](/learn/modules/get-started-expense-management/) | Dynamics 365 Project Operations の経費管理モジュールは、組織が従業員の経費を追跡し、管理することができます。 経費管理を使用すると、支払情報の保存、クレジット カード トランザクションのインポート、および従業員が組織の経費を負担した場合に使う金額を追跡できます。 また、経費ポリシーの設定、承認の自動化、Project Operations を使用することで合理化されたビジネス プロセスを提供することもできます。 | 無料の自習型オンライン学習パス | 1 時間 |
 | [Dynamics 365 の基本](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Microsoft Dynamics 365、Power Platform、クラウドの概念、ライセンス オプション、および配置とリリースのオプションを理解していることを証明します。 | 試験、費用は地域によって異なる | |
@@ -60,7 +61,7 @@ ms.locfileid: "6770572"
 
 | コンテンツ | 説明  | 書式設定 | 期間    |
 |---------|--------------|--------|-----------|
-| [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
+| [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Finance and Operations： 7. x から 8 + へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 7.X から 8.X へのアップグレード プロセスについて説明する次の Tech Talk にご参加ください。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオと手順について説明します。 また、拡張機能の要求のシナリオと、必要に応じてそれらを上げる方法についても説明します。 | Web カンファレンスの無料録画 | 61 分 |
 | [7.0 (RTW)/7.1 (リリース 1611) から 7.2 (2017 年 7 月) にアップグレードする方法 (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | このセッションでは、Dynamics 365 Finance and Operations アプリケーション v7.0 (RTW) および v7.1 (1611) から v7.2 (2017 年 7 月) にアップグレードする方法について説明します。 Live の顧客と進行中のプロジェクト (まだ Live ではない) を明確に区別します。 | Web カンファレンスの無料録画 | 58 分 |
 | [AX2012 から Dynamics 365 for Operations へのアップグレード (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 for Operations にアップグレードする方法の概要を説明します。 | Web カンファレンスの無料録画 | 45 分 |
@@ -84,6 +85,5 @@ ms.locfileid: "6770572"
 | [Finance and Operations： Regression Suite Automation Tool -- 背景と設定 (DYN646PAL) ](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの最初のものです。 このセッションでは、RSAT を介した自動テストを使用して、継続的な更新に対応する方法について説明します。 RSAT を使用したタスク記録の作成とテストの実行に関する学習と推奨事項については、インストールとセットアップのステップ バイ ステップ チュートリアルに従って説明します。 | Web カンファレンスの無料録画 | 70 分 |
 | [Finance and Operations： Regression Suite Automation Tool -- ライフサイクル デモのテスト (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの 2 番目のものです。 このセッションでは、 Finance and Operations から LCS の BPM ライブラリにタスク記録を作成して保存し、Azure DevOps で BPM ライブラリを同期してテスト ケースを作成し、テスト ケースをテスト スイートにグループ化し、RSAT でテスト スイートを読み込んで実行する全サイクルのデモについて扱います。 | Web カンファレンスの無料録画 | 70 分 |
 | [Finance and Operations：Dynamics 365 のパフォーマンス トラブルシューティング ツール (DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | この Tech Talk では、Microsoft Dynamics 365 for Finance and Operations のパフォーマンスの問題のトラブルシューティングに使用できるさまざまなツールを紹介します。 このセッションには、シナリオ ベースのデモと、一般的なパフォーマンスの問題を解決するための初期ガイダンスが含まれます。 | Web カンファレンスの無料録画 | 64 分 |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

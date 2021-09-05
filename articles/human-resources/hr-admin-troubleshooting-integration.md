@@ -1,8 +1,8 @@
 ---
 title: Finance FAQ との統合
-description: この記事では、人事管理および Finance 統合でどのデータが同期されるのかについて説明します。
-author: andreabichsel
-ms.date: 02/03/2020
+description: このトピックでは、Human Resources および Finance 統合でどのデータが同期されるのかについて説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f6a3141f1c7f4e488af0318569118be10da106a035f29e1752f0a0da5a1637f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782147"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413379"
 ---
 # <a name="integration-with-finance-faq"></a>Finance FAQ との統合
 
@@ -158,8 +158,7 @@ Dataverse で予定どおりにデータが表示されない場合は、エン�
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>雇用を同期する際、エラーが発生します。「CompanyInfo_FK が存在しません」または「フィールド '雇用終了日' の値 '12/31/2154 11:59:59 pm' が、関連するテーブル '雇用' で見つかりません。」何をする必要がありますか。
 
-正しい法人にマッピングしていることを確認します。 法人の同期は既定のテンプレートの一部ではないため、人事管理や Dataverse に存在する各法人が Finance にも存在することが予想されます。
-また、関連付けられている接続設定に対して正しい法人を選択していることを確認してください。
+正しい法人にマッピングしていることを確認します。 法人の同期は既定のテンプレートの一部ではないため、人事管理や Dataverse に存在する各法人が Finance にも存在することが予想されます。 また、関連付けられている接続設定に対して正しい法人を選択していることを確認してください。
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>プロジェクトの設定後、Finance のフィールド マッピングは空のようです。 何をする必要がありますか。
 

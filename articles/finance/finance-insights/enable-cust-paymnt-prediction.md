@@ -1,5 +1,5 @@
 ---
-title: 顧客支払予測の有効化 (プレビュー)
+title: 顧客支払予測の有効化
 description: このトピックでは、財務インサイトで顧客支払予測機能をオンにし構成する方法について説明します。
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0b945111f360838dfa35cddb916c4fb34a41f55bdd8f3095bd97c906b7dd3dd7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b324891b38f851f8cce9210e3d09a26d567a291
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768894"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386590"
 ---
-# <a name="enable-customer-payment-predictions-preview"></a>顧客支払予測の有効化 (プレビュー)
+# <a name="enable-customer-payment-predictions"></a>顧客支払予測の有効化
 
 [!include [banner](../includes/banner.md)]
 

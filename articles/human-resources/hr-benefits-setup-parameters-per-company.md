@@ -1,8 +1,8 @@
 ---
-title: 会社ごとに給付金管理パラメータを構成する
-description: Microsoft Dynamics 365 Human Resources で会社ごとの給付金管理に対するパラメーターを構成します。
-author: andreabichsel
-ms.date: 12/07/2020
+title: 会社ごとの福利厚生管理パラメーターのコンフィギュレーション
+description: このトピックでは、Microsoft Dynamics 365 Human Resources で会社ごとに給付金管理パラメーターを構成する方法について説明します。
+author: twheeloc
+ms.date: 8/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c0f9f31006ca83082ddc61da5927841855077737289e31f66708ade6d66acaf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d0bc8d511126901be09028dc3c10636f2902e79
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732804"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423308"
 ---
 # <a name="configure-benefits-management-parameters-per-company"></a>会社ごとに給付金管理パラメータを構成する
 
@@ -36,7 +36,7 @@ ms.locfileid: "6732804"
 
    | フィールド | 説明 |
    | --- | --- |
-   | **確認メールを送信する** | この機能がオンになっている場合は、従業員セルフサービスの給付金登録エクスペリエンスから確認メールが従業員に送信されます。 |
+   | **確認メールを送信する** | この機能がオンになっている場合は、**従業員セルフ サービス** の給付金登録エクスペリエンスから確認メールが従業員に送信されます。 |
    | **確認メール テンプレート** | 登録の確認を送信するときに使用する組織のメール テンプレートを選択します。 テンプレートを選択しない場合は、次の一般的なメールが送信されます。<br><br>%EmployeeFirstName%、<br><br>おめでとうございます。 給付金の登録が正常に完了しました。<br><br>よろしくお願いいたします。<br><会社/組織名> 給付金。 |
    | **既定のメール送信者アドレス** | 確認メールを送信するときに使用するメール アドレス。 |
 

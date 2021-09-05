@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da812bcc7d31db25abc0ed7e6c1a7f9e5433f80bfdfc5421e4e18d6b8af68884
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1374a451c65b4bafdc6efeb10949d1f6eceb4758
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738918"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343921"
 ---
 # <a name="lean-manufacturing-overview"></a>リーン生産の概要
 
@@ -66,7 +66,7 @@ Lean manufacturing は、かんばんルールで管理される製造および�
 次の一覧は、特殊化したかんばんボードを示しています。
 -   かんばん作業のスケジューリング – かんばん作業の概要を提供します。 ボードにはかんばん作業と 1 つまたは複数の作業セルのステータスが表示されます。 ジョブは生産フロー モデルで定義された計画期間 (日または週) に基づいて一覧表示されます。 ボードには、スケジュールされた負荷を監視できるように、各計画期間の能力消費も表示されます。 かんばん作業の状態を変更したり、異なる計画期間にかんばん作業を再スケジューリングしたり、他のタスクを実行できます。
 -   配送ジョブのかんばんボード – このボードでは、現在の配送ジョブの概要を提供します。 ピッキング リストの更新および登録、配送ジョブの開始および完了、および他のタスクを実行できます。
--   プロセス ジョブのかんばんボード – このボードは通常生産フローをサポートし、1 つまたは複数の作業セルに現在のステータスの概要を示すように設計されています。 このボードからかんばんは優先順位付け、ピッキング、または製造ができます。 かんばんボードには、かんばんをレポートするためのバーコードのスキャンをサポートするように設計されています。
+-   プロセス ジョブのかんばんボード – このボードは通常生産フローをサポートし、1 つまたは複数の作業セルに現在のステータスの概要を示すように設計されています。 このボードからかんばんは優先順位付け、ピッキング、または製造ができます。 ボードは、かんばんのレポートのためのバーコード スキャンをサポートするように設計されています。
 
 ## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>かんばん作業および Supply Chain Management プロセスとの統合
 かんばん作業は Supply Chain Management の在庫トランザクションのための現在のプロセスと完全に統合されます。

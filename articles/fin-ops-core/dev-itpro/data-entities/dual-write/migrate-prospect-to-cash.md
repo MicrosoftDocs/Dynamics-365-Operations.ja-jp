@@ -4,24 +4,17 @@ description: このトピックでは、データ統合からデュアル書き�
 author: RamaKrishnamoorthy
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2021-01-04
-ms.openlocfilehash: 46f869265e589ad8e0c94a839df70e54fe781c5a4e7f992e6534e883b21801ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: d216f1c46aa3362730c126ffc33fefdddddf1853
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733126"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416380"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>データ統合からデュアル書き込みへの見込顧客の現金データへの移行
 

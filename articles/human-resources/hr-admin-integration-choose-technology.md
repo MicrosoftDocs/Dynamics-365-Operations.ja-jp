@@ -1,8 +1,8 @@
 ---
 title: データ統合テクノロジの選択
-description: この記事では、Human Resources で管理されるデータの統合について説明します。 ニーズに最適なテクノロジを判断する際に役立つさまざまな統合テクノロジについて説明します。
-author: andreabichsel
-ms.date: 02/28/2020
+description: このトピックでは、Human Resources で管理されるデータの統合について説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720471"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414717"
 ---
 # <a name="choose-a-data-integration-technology"></a>データ統合テクノロジの選択
 
@@ -28,14 +28,13 @@ ms.locfileid: "6720471"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-この記事では、Dynamics 365 Human Resources で管理されているデータを統合するための情報を提供します。 ニーズに最適なテクノロジを判断する際に役立つさまざまな統合テクノロジについて説明します。
+このトピックでは、Dynamics 365 Human Resources で管理されているデータを統合するための情報を提供します。 ニーズに最適なテクノロジを判断する際に役立つさまざまな統合テクノロジについて説明します。
 
 ## <a name="data-integration-background"></a>データ統合の背景
 
 業務データは、会社を比類ないものにする重要な資産です。 業務データは非常に重要です。 業務全体で収集されたデータ間の関係を使用して、組織全体の業務プロセスやビジネス インテリジェンスを向上させることができます。 どのようなシステムからの業務データにも、簡単、安全、安定したアクセスを提供するよう努めています。
 
-これまで、複数のシステム間のデータの統合は困難でした。
-Microsoft はデータ統合を容易にするための措置を講じており、その目標に向けた大きな一歩は [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) によって実現されます。
+これまで、複数のシステム間のデータの統合は困難でした。 Microsoft はデータ統合を容易にするための措置を講じており、その目標に向けた大きな一歩は [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) によって実現されます。
 
 Human Resources では、Dataverse が Human Resources データの推奨パブリック インターフェイスになります。 時間の経過とともに、Human Resources によって管理されるもっとも重要なすべてのデータが Dataverse で公開される予定です。 ほとんどの統合アプリケーションにとって最適な技術として、Dataverse をお勧めします。
 

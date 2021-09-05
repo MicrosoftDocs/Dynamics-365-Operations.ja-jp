@@ -1,8 +1,8 @@
 ---
 title: 管理の概要
-description: この管理者ガイドは、Dynamics 365 Human Resources の設定、管理、およびトラブルシューティングに役立ちます。
-author: andreabichsel
-ms.date: 02/03/2020
+description: このトピックでは、Dynamics 365 Human Resources を設定、管理、およびトラブルシューティングするためのヘルプ トピックとその他のリソースの一覧を示します。
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b2cefd0281abfc94df05a1ae929e0b65bc533b292a6c4779a4fbc7ba1134a0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765617"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393574"
 ---
 # <a name="administration-overview"></a>管理の概要
 
@@ -28,11 +28,11 @@ ms.locfileid: "6765617"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-この管理者ガイドは、Dynamics 365 Human Resources の設定、管理、およびトラブルシューティングに役立ちます。
+このトピックでは、Dynamics 365 Human Resources を設定、管理、およびトラブルシューティングするためのヘルプ トピックとその他のリソースの一覧を示します。
 
 - [システム要件](hr-admin-system-requirements.md)
 
-- インスタンスの設定および管理
+- インスタンスの設定と管理
   - [Human Resources のプロビジョニング](hr-admin-setup-provision.md)
   - [インスタンスのコピー](hr-admin-setup-copy-instance.md)
   - [インスタンスの削除](hr-admin-setup-remove-instance.md)
@@ -92,9 +92,18 @@ ms.locfileid: "6765617"
   - [報酬プロセスを実行する](hr-admin-troubleshooting-compensation.md)
   - [LCS へのタスク ガイドの保存](hr-admin-troubleshooting-task-guide.md)
   - [セキュリティ ロールで個人住所にアクセスする](hr-admin-troubleshooting-private-addresses.md)
-  - [Dynamics 365 アプリで Human Resources が表示されない](hr-admin-troubleshooting-not-in-apps.md)
+  - [Human Resources が Dynamics 365アプリに表示されない](hr-admin-troubleshooting-not-in-apps.md)
   - [レポート オプション](hr-admin-troubleshooting-reporting.md)
   - [統合に関してよく寄せられる質問](hr-admin-troubleshooting-integration.md)
+
+## <a name="additional-resources"></a>追加リソース
+
+### <a name="elearning-courses"></a>eLearning コース
+オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Human Resources](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) をご確認ください。
+
+### <a name="videos"></a>ビデオ
+
+[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。
 
 ## <a name="see-also"></a>参照
 

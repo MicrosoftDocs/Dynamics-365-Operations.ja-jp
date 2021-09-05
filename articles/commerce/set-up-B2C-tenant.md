@@ -2,7 +2,7 @@
 title: B2C テナントを Commerce に 設定
 description: このトピックでは、Dynamics 365 Commerce のユーザーサイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
 author: BrianShook
-ms.date: 03/17/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 13dad5f3b82914514688bfa0c7e4f82b8b85b8dd73458618d2fcfddb169927c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772255"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344501"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
@@ -34,6 +34,9 @@ Dynamics 365 Commerce は Azure AD B2C を使用して、ユーザーの資格�
  
  > [!NOTE]
  > Commerce 評価環境には、デモ用に Azure AD B2C テナントがプリロードされています。 評価環境では、次の手順を使用して独自の Azure AD B2C テナントを読み込む必要はありません。
+
+> [!TIP]
+> Azure AD ID 保護および条件付きアクセスにより、サイト ユーザーをさらに保護し、Azure AD B2C テナントのセキュリティを強化できます。 Azure AD B2C Premium P1 テナントおよび Premium P2 テナントが利用できる機能を確認するには、[Azure AD B2C の ID 保護と条件付きアクセス](/azure/active-directory-b2c/conditional-access-identity-protection-overview) を参照してください。
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Azure ポータルでの既存の AAD B2C テナントの作成またはリンク
 

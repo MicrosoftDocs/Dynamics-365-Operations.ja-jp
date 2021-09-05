@@ -4,24 +4,17 @@ description: このトピックでは、Microsoft Dynamics 365 Commerce 価格�
 author: ShalabhjainMSFT
 ms.date: 11/19/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: shajain
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-11-03
-ms.openlocfilehash: 70282eb7856ae6b37e885eac2daf49efd971087d7c204af4b653263edb0d8fc4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: c3f1527e5f37bebba57661ca86b1a3aae7e62da0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716073"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416758"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>Dynamics 365 Sales で Dynamics 365 Commerce 価格決定エンジンを使用する
 

@@ -1,8 +1,8 @@
 ---
-title: Dayforce との統合を構成する
-description: Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統合は、この記事で説明するいくつかの構成手順に依存します。 支払の実行を処理する前に、Human Resources および Dayforce の両方で、統合を構成する必要があります。
-author: andreabichsel
-ms.date: 02/03/2020
+title: Dayforce との統合のコンフィギュレーション
+description: このトピックでは、Microsoft Dynamics 365 Human Resources および Ceridian Dayforce の統合に必要な構成手順について説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 961d3bd61e85549f4124391389682bb24aceae3e16e52dc8111a44c365a8c081
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782734"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414587"
 ---
-# <a name="configure-integration-with-dayforce"></a>Dayforce との統合を構成する
+# <a name="configure-integration-with-dayforce"></a>Dayforce との統合のコンフィギュレーション
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統合は、この記事で説明するいくつかの構成手順に依存します。 支払の実行を処理する前に、Human Resources および Dayforce の両方で、統合を構成する必要があります。
+Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統合は、このトピックで説明するいくつかのコンフィギュレーション手順に依存します。 支払の実行を処理する前に、Human Resources および Dayforce の両方で、統合を構成する必要があります。
 
 支払の実行を完了するため Dayforce などのサービスを使用する場合、Human Resources 内の統合を有効にする必要があります。 統合には Human Resources からの固有のデータが必要です。 したがって、Dayforce にマップされているデータが、統合をサポートする方法で Human Resources 内で構成されていることを確認する必要があります。 統合は次の広範なデータ カテゴリを使用します。
 
@@ -35,7 +35,7 @@ Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統�
 - 支払サイクル、支払期間、および所得コードなどの給与データ
 - 作業者データ
 
-この記事では、統合を有効にするために従う必要がある手順について説明します。 統合に必要なデータの種類およびコンフィギュレーションの詳細についても説明します。
+このトピックでは、統合を有効にするために実行する必要のある手順について説明し、統合に必要なデータの種類と構成の詳細について説明します。
 
 ## <a name="enable-the-integration"></a>統合の有効化
 
@@ -50,7 +50,7 @@ Human Resources 内で統合を有効にするには、次の手順に従いま�
 
 統合が有効な場合、データのエクスポート パッケージおよびファイルが作成され、頻度が設定されます。 必要に応じて、この頻度を変更できます。
 
-Azure Storage アカウント および Azure Storage の接続文字列の詳細については、次の Azure の記事を参照してください。
+Azure ストレージ アカウント および Azure ストレージの接続文字列の詳細については、次の Azure のトピックを参照してください。
 
 - [Azure ストレージ アカウントについて](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Azure ストレージの接続文字列のコンフィギュレーション](/azure/storage/common/storage-configure-connection-string)
@@ -122,7 +122,7 @@ Dayforce は、給付金の計画で定義される給与影響に基づいて�
 | 貢献度のみ          | 雇用主控除が作成されます。             |
 | 控除と貢献度 | 従業員および雇用主の控除が作成されます。 |
 
-給付金プログラムを定義し、管理する方法の詳細については、次の記事を参照してください。
+給付金プログラムを定義し、管理する方法の詳細については、次のトピックを参照してください。
 
 - [従業員手当プログラムの提供](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
 - [新しい給付金の作成](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
@@ -135,7 +135,7 @@ Dayforce は、給付金の計画で定義される給与影響に基づいて�
 
 Dayforce は、報酬情報を使用して、従業員の時間または年間レートを計算します。 固定報酬プランと支払レートの換算が必要です。 従業員は固定報酬プランに関連付けられている必要があります。
 
-報酬プランの詳細については、次の記事を参照してください。
+報酬プランの詳細については、次のトピックを参照してください。
 
 - [固定報酬プランの作成](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
 - [変動報酬プランの作成](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
@@ -147,10 +147,10 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 
 #### <a name="jobs"></a>職務 
 
-職務とは、職務を遂行する担当者に必要なタスクと職責の集合です。 詳細については、次の記事を参照してください。
+職務とは、職務を遂行する担当者に必要なタスクと職責の集合です。 詳細については、次のトピックを参照してください。
 
 - [職務のコンポーネントの設定](/dynamics365/unified-operations/talent/create-job)
-- [新しい職務の定義](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [新しいジョブの定義](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>職位
 
@@ -172,7 +172,7 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 
 同じ部門の複数の職位が同じジョブに関連付けられている場合、Dayforce で 1 つの職位に連結します。
 
-詳細については、次の記事を参照してください。
+詳細については、次のトピックを参照してください。
 
 - [部門、職務、職位を使用した従業員の編成](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
 - [職位の設定](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
@@ -181,7 +181,7 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 
 部門は、組織のカテゴリまたは機能領域を表す作業単位です。 部門は、販売、会計、または人事管理など、組織内の特定の領域を担当します。 機能領域の報告に部門を使用できます。 部門は損益の職責を持つ場合があります。
 
-詳細については、次の記事を参照してください。
+詳細については、次のトピックを参照してください。
 
 - [部門の作成と部門階層への関連付け](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
 - [新しい部門の定義](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)

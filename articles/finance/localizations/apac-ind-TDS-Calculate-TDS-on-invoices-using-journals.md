@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: cfe473f39ee729957924fd7c161aed01138cd507eea56766af35177891676f65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fde81efed6b8a72e2149056f0196e4f9d60e59f2
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778896"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345522"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>仕訳帳を使用して請求書の TDS を計算する
 
@@ -65,6 +65,6 @@ ms.locfileid: "6778896"
 
 8. 他に必要な詳細を入力します。 仕訳を検証して転記します。 購買請求書で計算される TDS 金額は、買掛金勘定に転記されます。 売上請求書で計算された TDS の金額は、TDS グループ内の TDS 税コードごとに定義された売掛金勘定に転記されます。 TDS 税コードの買掛金勘定や売掛金勘定は、**源泉徴収税コード** ページで定義されます。
 
-9. **転記済源泉徴収税** を選択し、**源泉徴収** **税** **トランザクション** ページを開きます。 **値** フィールドには、当該取引の TDS 計算に使用された合計パーセンテージが表示されます。
+9. **転記済源泉徴収税** を選択し、**源泉徴収税トランザクション** ページを開きます。 **値** フィールドには、当該取引の TDS 計算に使用された合計パーセンテージが表示されます。
 
    源泉徴収票ページの **概要**、**一般**、**金額** タブのフィールドには、TDS グループに属する各 TDS 税コードの計算された TDS 金額と調整された TDS 金額の詳細が表示されます。

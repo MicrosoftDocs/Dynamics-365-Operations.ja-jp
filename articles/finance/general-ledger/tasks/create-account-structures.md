@@ -1,6 +1,6 @@
 ---
 title: 勘定構造の作成
-description: このタスク ガイドでは、勘定構造の作成について説明します。
+description: この手順では、勘定構造の作成について説明します。
 author: aprilolson
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93cc2e9ceb15070491bb3d0a790367e6d5bf8c4a30cd7efa690fd825963165b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779544"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394542"
 ---
 # <a name="create-account-structures"></a>勘定構造の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このタスク ガイドでは、勘定構造の作成について説明します。 手順は、デモ データの会社 USMF を使用します。
+この手順では、勘定構造の作成について説明します。 手順は、デモ データの会社 USMF を使用します。
 
 1. **ナビゲーション ウィンドウ > モジュール > 一般会計 > 勘定科目表 > 構造 > 勘定構造の構成** の順に移動します。
 2. **アクション ウィンドウ** で、**新規** をクリックすると、ドロップ ダイアログが開きます。

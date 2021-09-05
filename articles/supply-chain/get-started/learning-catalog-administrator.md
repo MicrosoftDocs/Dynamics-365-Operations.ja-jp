@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3fee88c9822956672469968c3f4fa171a65e1cf301d61d48d5d31e08949797a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764887"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402228"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Dynamics 365 Supply Chain Management 管理者向けラーニング カタログ
 
@@ -61,6 +61,14 @@ ms.locfileid: "6764887"
 | [Finance and Operations： 7. x から 8 + へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 7.X から 8.X へのアップグレード プロセスについて説明する次の Tech Talk にご参加ください。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオと手順について説明します。 また、拡張機能の要求のシナリオと、必要に応じてそれらを上げる方法についても説明します。 | Web カンファレンスの無料録画 | 61 分 |
 | [7.0 (RTW)/7.1 (リリース 1611) から 7.2 (2017 年 7 月) にアップグレードする方法 (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | このセッションでは、Dynamics 365 Finance and Operations アプリケーション v7.0 (RTW) および v7.1 (1611) から v7.2 (2017 年 7 月) にアップグレードする方法について説明します。 Live の顧客と進行中のプロジェクト (まだ Live ではない) を明確に区別します。 | Web カンファレンスの無料録画 | 58 分 |
 | [AX2012 から Dynamics 365 for Operations へのアップグレード (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 for Operations にアップグレードする方法の概要を説明します。 | Web カンファレンスの無料録画 | 45 分 |
+| [AX2009 から Dynamics 365 for Operations への移行ツール (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | このセッションでは、AX2009 から D365 for Operations への移行を支援するための利用可能なツールについて扱います。 | Web カンファレンスの無料録画 | 55 分 |
+| [AX2009 移行ツール](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | このセッションでは、AX2009 から D365 for Operations への移行を支援するための利用可能なツールについて扱います。 | Web カンファレンスの無料録画 | 55 分 |
+
+## <a name="supply-chain-management"></a>Supply Chain Management<a name="scm"></a>
+
+| コンテンツ | 説明 | 書式設定 | 期間 |
+|---------|-------------|--------|--------|
+| [Dynamics 365 Supply Chain Management のエンジニアリング変更管理の設定](/learn/paths/set-up-engineering-change-management/) | 今日のメーカーは、短縮し続ける製品のライフサイクル、品質と信頼性の要求への高まり、および製品の安全性への高まりといった世界で成功するために強力な製品データ管理、バージョン管理、およびエンジニアリング変更管理を必要としています。 このラーニング パスでエンジニアリング変更管理を設定する方法を学びます。 | 無料の自習型オンライン学習パス | 4 時間 |
 
 ## <a name="servicing"></a>サービス<a name="servicing"></a>
 
@@ -69,6 +77,7 @@ ms.locfileid: "6764887"
 | [Finance and Operations 機能の管理 (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | 機能管理エクスペリエンスに関する技術解説。 各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 この会議に参加すると、10.0.3 で提供される内容と、今後のリリースの計画を確認できます。 | Web カンファレンスの無料録画 | 47 分 |
 | [Finance and Operations： サービス、サポート、生産管理 (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Dynamics 365 for Finance and Operations 運用環境を効率的にサポート、管理、およびサービスする方法に関する技術解説。 | Web カンファレンスの無料録画 | 53 分 |
 | [Finance And Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Finance and Operations の継続した更新スケジュールが開始されました。 この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。 | Web カンファレンスの無料録画 | 61 分 |
+| [Finance And Operations: Microsoft 管理の継続的な更新プログラム: 新機能 - 2018 年 11 月 1 日 (DYN533cust)](https://community.dynamics.com/Techtalks-FinOps-Videos/MicrosoftManagedContinuousUpdates-WhatsNew-DYN533cust.mp4) | この 1 時間の間に、Microsoft 管理の継続的な更新頻度に対する更新について説明し、Lifecycle Services におけるユーザー エクスペリエンスを確認します。 | Web カンファレンスの無料録画 | 59 分 |
 | [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | この 1 時間の間に、Microsoft 管理の継続的な更新に関する最初の発表以来の新機能について説明します。 更新の頻度、プロセスに関する貴重なフィードバックへの対応を説明し、今後の Lifecycle Services のユーザー エクスペリエンスを確認します。これにより、更新を管理できるようになります。 | Web カンファレンスの無料録画 | 56 分 |
 | [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | ここでは、最新リリースを使用してシステムを最新の状態に保つための Microsoft の計画について説明します。 タイムライン、主要な更新プログラムと小さな更新プログラムの頻度、計画された手順、影響、および最適な結果を得るためにするべきことについて説明します。 | Web カンファレンスの無料録画 | 62 分 |
 | [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、実稼働環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「稼働停止のレポート」オプションのベスト プラクティスについて説明します。 | Web カンファレンスの無料録画 | 40 分 |
@@ -86,6 +95,5 @@ ms.locfileid: "6764887"
 | コンテンツ  | 説明  | 書式設定  |
 |----------|--------------|---------|
 | [Dynamics 365 の基本](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Microsoft Dynamics 365、Power Platform、クラウドの概念、ライセンス オプション、および配置とリリースのオプションを理解していることを証明します。 | 試験、費用は地域によって異なる |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

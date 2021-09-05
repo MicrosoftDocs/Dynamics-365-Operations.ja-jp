@@ -1,8 +1,8 @@
 ---
 title: 固定資産トランザクションのオプション
 description: このトピックは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1857d68a0dfaa25386f19344e4cb3ddc9ffd39b8a75860a1642773d6bd59cce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764266"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344693"
 ---
 # <a name="fixed-asset-transaction-options"></a>固定資産トランザクションのオプション
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
 
@@ -58,14 +59,16 @@ ms.locfileid: "6764266"
 | 減価償却                        | 固定資産             | 固定資産                              |
 |                                     | 一般会計           | 一般仕訳帳                           |
 | 処分                            | 固定資産             | 固定資産                              |
-| ** **                               | 一般会計           | 一般仕訳帳                           |
-| ** **                               | 売掛金管理      | 自由書式の請求書                         |
+|                                     | 一般会計           | 一般仕訳帳                           |
+|                                     | 売掛金管理      | 自由書式の請求書                         |
 
-減価償却トランザクション タイプの仕訳帳明細行がデータ エンティティを通じて手動で作成またはインポートされた場合、固定資産の減価償却期間の残存価額は更新されません。 この値は、減価償却提案プロセスを使用して仕訳帳明細行を作成したときに更新されます。
+減価償却トランザクション タイプの仕訳帳明細行がデータ エンティティを通じて手動で作成またはインポートされた場合、固定資産の減価償却期間の残存価額は更新されません。 残存価格は、償却提案プロセスを使用して仕訳帳明細行を作成したときに更新されます。
 
 詳細については、「[固定資産の統合](fixed-asset-integration.md)」を参照してください。
 
-### <a name="transactions-that-require-different-voucher-numbers"></a>異なる伝票番号が必要なトランザクション
+システムは、同じ期間に減価償却が 2 回転記されることを防ぎます。 たとえば、2 人のユーザーが 1 月に償却提案を個別に作成した場合、最初のユーザーからの減価償却は最初の仕訳帳に転記されます。 2 人目のユーザーが 2 つ目の仕訳帳に減価償却を転記すると、システムは最後に実行された減価償却の日付を確認し、同じ期間中の 2 回目の減価償却は転記しません。
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>異なる伝票番号が必要なトランザクション
 
 次の固定資産トランザクションでは、異なる伝票番号が使用されます。
 

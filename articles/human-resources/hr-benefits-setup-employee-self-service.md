@@ -1,8 +1,8 @@
 ---
 title: 従業員セルフ サービスのコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービスでトップレベル ナビゲーション用のタイルを構成できます。
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cafd89d30ca3876953df099e2e7b7cc9c3e1fdc0f69bb039310434f8d770f6f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721586"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423321"
 ---
 # <a name="configure-employee-self-service"></a>従業員セルフ サービスのコンフィギュレーション
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービスでトップレベル ナビゲーション用のタイルを構成できます。 福利厚生計画タイルは、適格な福利厚生計画をユーザーに直接示します。
+Microsoft Dynamics 365 Human Resources では、**従業員セルフ サービス** でトップレベル ナビゲーション用のタイルを構成できます。 福利厚生計画タイルは、適格な福利厚生計画をユーザーに直接示します。
 
 ## <a name="set-up-a-benefit-plans-tile"></a>給付金計画タイルの設定
 
@@ -39,9 +39,9 @@ Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービス�
    | フィールド | 説明 |
    | --- | --- |
    | **タイル ID** | タイルの一意の識別子。 |
-   | **タイル ラベル テキスト** | セルフ サービスのタイルに表示されるテキスト。 |
+   | **タイル ラベル テキスト** | **従業員セルフ サービス** のタイルに表示されるテキスト。 |
    | **説明** | タイルの説明。 |
-   | **インターネット アドレス** | 従業員のセルフ サービス ページへの URL を入力します。 |
+   | **インターネット アドレス** | **従業員のセルフ サービス** ページへの URL を入力します。 |
    | **タイル サイズ** | タイルのサイズ: 小、中、または大。 |
    | **ターゲット** | ページを新しいウィンドウで開くか、現在のウィンドウで開くかを指定します。 |
    | **タイルの背景イメージ** | タイルに使用する画像の URL (オプション)。 |
@@ -61,9 +61,9 @@ Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービス�
    | フィールド | 説明 |
    | --- | --- |
    | **タイル ID** | タイルの一意の識別子。 |
-   | **タイル ラベル テキスト** | セルフ サービスのタイルに表示されるテキスト。 |
+   | **タイル ラベル テキスト** | **従業員セルフ サービス** のタイルに表示されるテキスト。 |
    | **説明** | タイルの説明。 |
-   | **インターネット アドレス** | 従業員のセルフ サービス ページへの URL を入力します。 |
+   | **インターネット アドレス** | **従業員のセルフ サービス** ページへの URL を入力します。 |
    | **タイル サイズ** | タイルのサイズ: 小、中、または大。 |
    | **ターゲット** | ページを新しいウィンドウで開くか、現在のウィンドウで開くかを指定します。 |
    | **タイルの背景イメージ** | タイルに使用する画像の URL (オプション)。 |

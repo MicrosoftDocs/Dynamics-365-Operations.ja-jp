@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 328791cc321eeaf8f032a1eecedbe50cf9498eccd442c718d2e44e246915bc9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2f4aeefe5fe7698d9dfaf80619102f2b753e52b
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726190"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423450"
 ---
 # <a name="unified-product-experience"></a>統一された製品経験
 
@@ -81,9 +81,9 @@ Finance and Operations アプリ | その他の Dynamics 365 アプリ | 説明
 
 ![製品のデータ モデル。](media/dual-write-product.png)
 
-デュアル書き込み機能が有効になっている場合、Finance and Operations からの製品が他の Dynamics 365 製品に **下書き** 状態で同期されます。 同期の内容は、同じ通貨の最初の価格表に追加されます。 これは、同期の内容が、製品が Finance and Operations アプリでリリースされている法人の通貨と一致する Dynamics 365 アプリの最初の価格表に追加されるという意味です。 指定した通貨の価格リストがない場合は、価格リストが自動的に作成され、製品が割り当てられます。
+デュアル書き込み機能が有効になっている場合、Finance and Operations からの製品が他の Dynamics 365 製品に **下書き** 状態で同期されます。 同期の内容は、Customer Engagement アプリで使用されているのと同じ通貨の最初の価格リストに追加され、価格リスト名でアルファベット順の並べ替えを使用して追加されます。 これは、同期の内容が、製品が Finance and Operations アプリでリリースされている法人の通貨と一致する Dynamics 365 アプリの最初の価格表に追加されるという意味です。 指定した通貨の価格リストがない場合は、価格リストが自動的に作成され、製品が割り当てられます。
 
-既定の価格リストを単位に関連付ける二重書き込みプラグインの現在の実装は、Finance and Operations アプリに関連付けられている通貨を検索し、価格リスト名でアルファベット順の並べ替えを使用して、Customer Engagement アプリの最初の価格リストを見つけます。 特定の通貨に複数の価格リストがある場合に、その通貨の既定の価格リストを設定するには、価格リストの名前を同じ通貨の他の価格リストよりもアルファベット順で早い名前に更新する必要があります。
+既定の価格リストを単位に関連付ける二重書き込みプラグインの現在の実装は、Finance and Operations アプリに関連付けられている通貨を検索し、価格リスト名でアルファベット順の並べ替えを使用して、Customer Engagement アプリの最初の価格リストを見つけます。 特定の通貨に複数の価格リストがある場合に、その通貨の既定の価格リストを設定するには、価格リストの名前を同じ通貨の他の価格リストよりもアルファベット順で早い名前に更新する必要があります。 指定した通貨の価格リストがない場合は、新しい通貨が作成されます。
 
 既定では、Finance and Operations アプリの製品は、**下書き** 状態で他の Dynamics 365 アプリに同期されます。 製品を **有効** 状態と同期して、販売注文の見積書で直接使用できるようにするには、例として、次の設定を選択する必要があります。**システム > 管理 > システム管理 > システム設定 > 販売** タブで、**有効な状態で製品を作成 = はい** を選択します。
 

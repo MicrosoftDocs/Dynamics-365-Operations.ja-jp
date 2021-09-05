@@ -1,5 +1,5 @@
 ---
-title: Finance insights のホーム ページ (プレビュー)
+title: Finance Insights ホーム ページ
 description: Finance insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8c9d5b9857e978eb5e591f4d854d687f33b438025e81fe2c827ab7ecdb2be4e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b77b7872ed163a94ab57e4efea8fe0fbca22156
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768822"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386389"
 ---
-# <a name="finance-insights-home-page-preview"></a>Finance insights のホーム ページ (プレビュー)
+# <a name="finance-insights-home-page"></a>Finance Insights ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 

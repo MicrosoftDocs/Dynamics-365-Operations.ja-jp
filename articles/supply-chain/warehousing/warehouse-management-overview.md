@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 844e54caa072eef3481e094ef296a82fa099a68bb806d763baa550b1a2226347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2bf3d41e94e741b628002768f9d6825219666ed
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762701"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343897"
 ---
 # <a name="warehouse-management-overview"></a>倉庫管理の概要
 
@@ -49,7 +49,7 @@ ms.locfileid: "6762701"
 - 完全バッチとシリアル品目サポート
 - さまざまな品目の入荷能力
 - 積荷の複数ピッキング
-- 次世代バーコード スキャナーのサポート
+- 次世代バー コード スキャナーのサポート
 - 倉庫プロセスのパレット/コンテナーのタイプ
 - 高度な棚卸能力
 - Zebra ZPL サポートでラベルの印刷およびラベル ルート指定

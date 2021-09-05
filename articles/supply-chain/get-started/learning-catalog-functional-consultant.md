@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1b4a3a63f2d097c0cb706fb4229f2dea7774bb39dfac1dd7618432216ad3e17f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7271436bd155918dfdac792486c89966e7adb18c
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724895"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402645"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Dynamics 365 Supply Chain Management 機能コンサルタント向けラーニング カタログ
 
@@ -29,22 +29,26 @@ ms.locfileid: "6724895"
 
 ## <a name="get-started"></a>はじめに<a name="get-started"></a>
 
-| コンテンツ| 説明  | 書式設定  | 期間  |
+| コンテンツ | 説明 | 書式設定  | 期間  |
 |---|---|---|---|
 | [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか？ 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間 |
 | [Finance and Operations アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。 Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
+| [Dynamics 365 Supply Chain Management の資産管理の使用を開始する](/learn/modules/get-started-asset-management/index) | 資産管理は、Dynamics 365 Supply Chain Management の資産およびメンテナンス ジョブの管理に使用するモジュールです。 資産管理を使用すると、機械、生産施設、車両など、社内のさまざまな設備の管理とサービスに関連するタスクを効率的に管理および実行できます。 資産管理は、さまざまな業界にわたるソリューションをサポートしています。 | 無料の自習型オンライン学習モジュール | 1 時間 |
+| [Dynamics 365 Supply Chain Management のエンジニアリング変更管理アドインの使用を開始する](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management は、従業員と組織が在庫、倉庫、製造、サービス、物流の統合されたビューを取得できるようにし、予測分析によりデータを洞察に変換し、より優れた戦略的決定をサポートします。 | 無料の自習型オンライン学習モジュール | 2 時間 |
+| [Dynamics 365 Intelligent Order Management の使用を開始する](/learn/modules/get-started-intelligent-order-management/) | Dynamics 365 Intelligent Order Management によって、顧客は注文からフルフィルメントまでのオーケストレーションを管理できます。 これらの機能により、組織はさまざまなプラットフォームおよびアプリ間で注文フローを調整できます。 | 無料の自習型オンライン学習モジュール | 4 時間 |
 | [購入する前に](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Finance and Operations の購入を検討中のお客様も、購入の準備が整っているお客様も、便利なステップ バイ ステップ ガイダンスをご確認ください。 | ドキュメント | |
 | [リリース計画](/dynamics365/release-plans/) | Dynamics 365 の最新機能および機能拡張について調べる | ドキュメント | |
 
 ## <a name="core-platform-knowledge"></a>コア プラットフォームの知識<a name="core-platform-knowledge"></a>
 
-| コンテンツ  | 説明 | 書式設定  | 期間    |
-|---|---|---|---|---|
+| コンテンツ | 説明 | 書式設定 | 期間 |
+|---------|-------------|--------|--------|
 | [Lifecycle Services を使用して、 Finance and Operations アプリの実装を設計、計画する](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) は、顧客とそのパートナーが、Finance and Operations アプリのプロジェクトを販売前から実装フェーズ、そして最終的に実稼働環境 (クラウドまたはオンプレミス) まで管理するために使用するコラボレーション ワークスペースです。 プロジェクトの管理に役立つチェックリストとツールが用意されており、実装や定期的に更新されるサービスに役立つ事前ビルドの方法も含まれています。 | 無料の自習型オンライン学習パス | 2 時間 |
 | [Finance and Operations アプリで組織を構成する](/learn/paths/configure-your-organization-finance-ops/) | Finance and Operations アプリを使用する機能コンサルタントは、顧客向けに組織を設定する方法を理解しておく必要があります。 この学習パスでは、その他のタスクの中でも特に、法人の設定、セキュリティ設定の実装、ユーザー向けのユーザー インターフェイスのパーソナライズ、モバイル アプリの設計と構築、および共通の統合の実装の方法を示します。 | 無料の自習型オンライン学習パス | 12 時間 |
 | [データを移行して、Finance and Operations アプリの運用を開始する](/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントおよび開発者として、顧客のデータを移行用に準備し、データ管理を操作し、ユーザー受け入れテストを実行して、Finance and Operations アプリで運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
 | [Finance and Operations アプリで Analytics とレポートを構成して作業する](/learn/paths/configure-analytics-reporting-finance-operations/) | ビジネス リーダーは、基礎となる財務データや運用データを正確に把握しているなら、会社で重要な決定を下すことができます。 また、ビジネスユーザーは、コードの記述なしで電子レポートツールを構成し、使用して、新しい規制要件を採用し、政府機関、銀行、その他の関係者と情報を電子的に交換するために必要な形式でビジネスドキュメントを生成することもできます。 | 無料の自習型オンライン学習パス | 4 時間 |
+| [Success by Design for Dynamics 365 ソリューションの使用](/learn/paths/use-success-design/) | FastTrack for Dynamics 365 は、顧客およびパートナーが Dynamics 365 ソリューションを正常に展開できるよう支援するために設計されています。 このサービスを提供するために、ソリューション アーキテクトは Success by Design を使用する必要があります。 このラーニング パスでは、Success by Design の概念について説明します。 | 無料の自習型オンライン学習パス | 12 時間 |
 | [Finance and Operations アプリの実装](/learn/paths/implement-finance-operations/) | Finance and Operations の導入プロジェクトを成功させるために最も重要な要素とベストプラクティスを身につけましょう。 プロジェクトの方法論を計画、設計する最初のステップから、FastTrack サービスの利用、開発戦略、データ管理など、稼働開始後の運用を維持、監視するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 11.5 時間 |
 | [Finance and Operations Dynamics 365 の研修 (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack では、すべての Dynamics 365 for Finance and Operations のプロジェクトに対してオンボード サービスが提供されます。 この TechTalk では、オンボード プロセスについて説明し、オンボード セッションの内容について説明します。また、近い将来、オンボードをより効率的かつ便利にする方法を明らかにします。 このセッションは、ライセンスの締結から実装プロジェクトの開始まで、プロジェクトの初期段階で顧客と関わるすべての人に特に関係があります。 | Tech Talk (録画されたウェビナー) | 62 分 |
 | [オンプレミス (ローカル ビジネス データ) 配置 (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dynamics 365 for Finance and Operations Enterprise Edition のオンプレミス配置オプションの概要については、この Tech Talk に参加してください。 このセッションでは、オンプレミス配置のソリューション アーキテクチャ、ALM の側面、システム要件、および Life Cycle Services プロジェクトをプロビジョニングする方法について説明します。 | Tech Talk (録画されたウェビナー) | 48 分 |
@@ -77,12 +81,11 @@ ms.locfileid: "6724895"
 
 ## <a name="manufacturing"></a>製造<a name="manufacturing"></a>
 
-| コンテンツ  | 説明    | 書式設定  | 期間    |
-|---|---|---|---|---|---|
+| コンテンツ | 説明 | 書式設定 | 期間 |
+|---------|-------------|--------|--------|
 | [Dynamics 365 Supply Chain Management での個別の製造のコンフィギュレーションおよび使用](/learn/paths/configure-use-discrete-manufacturing-dyn365-supply-chain-mgmt/) | 簡単な製品のみを生産する会社の場合、生産フロアに正しい時期に、適切なリソースで到着した正しい部品表 (BOM) 部品を使用して、生産を手動でスケジュールできます。 製造の機能コンサルタントとして、顧客が生産ライフサイクルを実行および制御できるように、Dynamics 365 Supply Chain Management を個別の製造用にコンフィギュレーションする方法を把握しておく必要があります。 | 無料の自習型オンライン学習パス | 16.5 時間 |
 | [Dynamics 365 Supply Chain Management でのリーン生産のコンフィギュレーションおよび使用](/learn/paths/configure-use-lean-manufacturing-dyn365-supply-chain-mgmt/) | リーン生産は、継続的な改善を続けています。 目標は、顧客が望むものを、顧客が望むときに正確に作成し、それを経済的に行うことです。 さまざまな供給品、生産、および調達の戦略を組み合わせる統合 (ミックス モード) 製造環境でリーン生産を使用できます。 これらの戦略には、製造オーダー、プロセス産業のバッチ オーダー、発注書、および転送オーダーが含まれます。 Dynamics 365 Supply Chain Management のリーン生産構造は、生産フロー、活動、およびかんばんルールで構成されます。 | 無料の自習型オンライン学習パス | 12.5 時間 |
 | [Dynamics 365 Supply Chain Management でのプロセス製造のコンフィギュレーションおよび使用](/learn/paths/configure-use-process-manufacturing-dyn365-supply-chain-mgmt/) | 個別の単位と部品表を使用する個別の製造とは対照的に、プロセス製造はフォーミュラおよび製造レシピに関連付けられています。 プロセス製造は、バッチまたは準継続的プロセスで生産が完了した製造環境で使用されます。 | 無料の自習型オンライン学習パス | 10.5 時間 |
-| [Dynamics 365 Supply Chain Management のマスター プラン](/learn/paths/master-planning-supply-chain-management/) | マスター プランを使用すると、企業は将来の目標達成のために、これから必要になる原材料と容量を判断し、双方のバランスをとれるようになります。 マスター プランでは、現在使用可能な原材料と能力を評価し、生産を完了するために必要な原材料と能力を決定します。 たとえば、生産を完了する前に、製造、購入、輸送、安全在庫用として保管しておく必要があるものなどを特定することができます。 | 無料の自習型オンライン学習パス | 5 時間 |
 | [Dynamics 365 Supply Chain Management での製造における倉庫管理の使用](/learn/paths/use-warehouse-manufacturing-dyn365-supply-chain-mgmt/) | Dynamics 365 Supply Chain Management の製造プロセスで倉庫管理を使用すると、会社のニーズに応じて、製造環境の倉庫プロセスを最適化して合理化するのに役立ちます。 | 無料の自習型オンライン学習パス | 10.5 時間 |
 | [コース MB-320T01-A: Dynamics 365 for Finance and Operations での個別の製造のコンフィギュレーションおよび使用](https://www.microsoft.com/learning/course.aspx?cid=MB-320T01) | このコースでは、Dynamics 365 for Finance and Operations での個別製造のコンフィギュレーション方法と使用方法について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 2 日間 |
 | [コース MB-320T02-A: Dynamics 365 for Finance and Operations でのリーン生産のコンフィギュレーションおよび使用](https://www.microsoft.com/learning/course.aspx?cid=MB-320T02) | このコースでは、Dynamics 365 for Finance and Operations でのリーン生産のコンフィギュレーション方法と使用方法について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
@@ -91,8 +94,8 @@ ms.locfileid: "6724895"
 
 ## <a name="supply-chain-management"></a>サプライ チェーン マネジメント<a name="supply-chain-management"></a>
 
-| コンテンツ  | 説明   | 書式設定  | 期間    |
-|---|---|---|---|---|---|
+| コンテンツ | 説明 | 書式設定 | 期間 |
+|---------|-------------|--------|--------|
 | [Dynamics 365 Supply Chain Management での製品および在庫のコンフィギュレーションと管理](/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | 製品情報は、すべての業界のサプライ チェーンと小売アプリケーションの柱です。 ビジネス ソリューションのさまざまなモジュールでは、製品、製品ファミリー、部品表、および製品カテゴリに関連する業務プロセスを管理するために製品固有の情報および構成が必要となります。 在庫レポートは、在庫の量をさまざまな方法で示し、在庫投資をより効果的に行う方法を説明しています。 基本計画は、事前に決められた要因に基づいて計画を合理化する際に役立ちます。これにより、どの資材を購入、製造する必要があるかを効率的に計画することができます。 | 無料の自習型オンライン学習パス | 14 時間 |
 | [Dynamics 365 Supply Chain Management での調達および仕入先のコンフィギュレーションと管理](/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | 仕入先の検索と作業、製品の購入、商品とサービスの品質を保証するプロセスはすべて、会社の評判と成功に影響を与える重要な要素です。 | 無料の自習型オンライン学習パス | 14 時間 |
 | [Dynamics 365 Supply Chain Management で売上および顧客を構成して使用する](/learn/paths/configure-manage-sales-customers-dyn365-supply-chain-mgmt/) | 顧客との関わり方、販売プロセスのライフ サイクルの理解、販売契約の設定などは、企業の成功を左右する重要な要素です。 | 無料の自習型オンライン学習パス | 7 時間 |
@@ -109,15 +112,16 @@ ms.locfileid: "6724895"
 | [コース MB-330T03-A: Dynamics 365 for Finance and Operations での倉庫および輸送管理のコンフィギュレーションおよび使用](https://www.microsoft.com/learning/course.aspx?cid=MB-330T03) | このコースでは、Dynamics 365 for Finance and Operations での倉庫および輸送管理のコンフィギュレーション方法および使用方法について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 | [Dynamics 365 Supply Chain Management の資産管理を構成する](/learn/paths/configure-asset-management-dyn365-supply-chain-mgmt/) | 資産管理は、会社の日常業務で使用する資産を管理に使用する Dynamics 365 Supply Chain Management のアドインです。 このタイプの資産の例としては、機械、生産設備、フォーク リフトなどがあります。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Dynamics 365 Supply Chain Management の資産管理で作業する](/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | 資産管理は、会社の日常業務で使用する資産を管理に使用する Dynamics 365 Supply Chain Management のアドインです。 このタイプの資産の例としては、機械、生産設備、フォーク リフトなどがあります。 | 無料の自習型オンライン学習パス | 12.5 時間 |
+| [Dynamics 365 Supply Chain Management の製品バージョン情報の管理](/learn/paths/manage-product-version-engineering-change-management/) | Dynamics 365 Supply Chain Management のエンジニアリング変更管理アドインは、エンジニアリング製品のライフ サイクルにおいて、製品のバージョン情報を管理するための構造化されたプロセスを提供するものです。 | 無料の自習型オンライン学習パス | 4 時間 |
+| [Dynamics 365 Supply Chain Management のエンジニアリング変更管理の設定](/learn/paths/set-up-engineering-change-management/) | 今日のメーカーは、短縮し続ける製品のライフサイクル、品質と信頼性の要求への高まり、および製品の安全性への高まりといった世界で成功するために強力な製品データ管理、バージョン管理、およびエンジニアリング変更管理を必要としています。 このラーニング パスでエンジニアリング変更管理を設定する方法を学びます。 | 無料の自習型オンライン学習パス | 4 時間 |
 | [Microsoft 認定: Dynamics 365 for Finance and Operations、Supply Chain Management 機能コンサルタント アソシエート](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft認定: Dynamics 365 for Finance and Operations、Supply Chain Management 機能コンサルタントは、顧客の原価会計、在庫管理、マスター プラン、倉庫管理を合理化します。 | 証明書、費用は地域によって異なる | |
 
 ## <a name="exams"></a>試験<a name="exams"></a>
 
-| コンテンツ  | 説明  | 書式設定  |
-|---|---|---|---|---|
+| コンテンツ | 説明 | 書式設定 |
+|---------|-------------|--------|
 | [試験 MB-300: Microsoft Dynamics 365 Unified Operations コア](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、一般的な機能と実装ツールの使用、セキュリティ、プロセス、およびオプションの設定、データ移行の実施、ソリューションの検証とサポートという技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [試験 MB-330: Microsoft Dynamics 365 for Finance and Operations、Supply Chain Management](/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、製品情報管理の実装、在庫管理の実装、サプライ チェーン プロセスの実装および管理、倉庫管理と輸送管理の実装および業務プロセスの実行という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [試験 MB-320: Microsoft Dynamics 365 for Finance and Operations、製造](https://www.microsoft.com/learning/exam-MB-320.aspx) | この試験では、製造の設定とコンフィギュレーション、生産とリーンの注文の作成および管理、生産バッチ オーダーの作成、処理、および管理という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

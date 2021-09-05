@@ -1,6 +1,6 @@
 ---
 title: 督促状順序の作成
-description: このタスク ガイドを使用し、督促状順序を作成します。
+description: この手順を使用して、督促状順序を作成します。
 author: mikefalkner
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 64d23d0875c5bb93ebe54fd40367f89574da87c72e90daab25a8828ec2158abb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b3062390da10f344c354cd2cc5cd7fb73623570
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740077"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394685"
 ---
 # <a name="create-a-collection-letter-sequence"></a>督促状順序の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このタスク ガイドを使用し、督促状順序を作成します。 このタスクでは、USMF というデモ会社を使用します。
+この手順を使用して、督促状順序を作成します。 このタスクでは、USMF というデモ会社を使用します。
 
 1. ナビゲーション ウィンドウで、**モジュール > クレジットおよびコレクション > 設定 > 督促状順序の設定** に移動します。
 2. **新規** をクリックします。

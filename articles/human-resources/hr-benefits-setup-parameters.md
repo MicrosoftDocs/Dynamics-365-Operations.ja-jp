@@ -1,8 +1,8 @@
 ---
-title: すべての会社に対する給付金の管理と従業員セルフサービス パラメータの設定
-description: Microsoft Dynamics 365 Human Resources で給付金の管理と従業員セルフサービスのパラメータを構成する。
-author: andreabichsel
-ms.date: 12/07/2020
+title: すべての会社に対する給付金の管理と従業員のセルフ サービス パラメーターを設定する
+description: Microsoft Dynamics 365 Human Resources で給付金管理と従業員のセルフ サービスのパラメーターを構成します。
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9c6761c549aaa38d16616f3e9e9084cbff7c93d9350f8adc50720d263efaff25
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cdda08ad2debe6ffe40f1f3fd2ac84ce9fc1d620
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732780"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423426"
 ---
-# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>すべての会社に対する給付金の管理と従業員セルフサービス パラメータの設定
+# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>すべての会社に対する給付金の管理と従業員のセルフ サービス パラメーターを設定する
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Human Resources で給付金計画を設定する前に�
 
 3. **保存** を選択します。
 
-## <a name="configure-employee-self-service-parameters"></a>従業員のセルフサービス パラメーターをコンフィグレーションする
+## <a name="configure-employee-self-service-parameters"></a>従業員のセルフ サービス パラメーターをコンフィグレーションする
 
 1. **福利厚生管理** ワークスペースの **設定** で、**人事管理パラメーター** を選択します。
 
@@ -61,7 +61,7 @@ Microsoft Dynamics 365 Human Resources で給付金計画を設定する前に�
 
    | フィールド | 説明 |
    | --- | --- |
-   | **給付金の検証** | セルフサービス給与金のチェックアウト中に使用する検証テキスト。 |
+   | **給付金の検証** | セルフ サービス給付金のチェックアウト中に使用する検証テキスト。 |
    | **被指名人の自動選択** | 計画オプションに対する適格性に基づいて被扶養者と受益者を自動的に選択するかどうかを指定します。 |
 
 3. **保存** を選択します。

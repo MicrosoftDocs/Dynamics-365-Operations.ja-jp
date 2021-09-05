@@ -4,24 +4,17 @@ description: このトピックでは、 初めて同期をする際に発生す
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736377"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416984"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>初めて同期をする際に発生する問題のトラブルシューティング
 
@@ -46,7 +39,7 @@ ms.locfileid: "6736377"
 
 マッピングと初回の同期実行時に、次のメッセージが表示される場合があります。
 
-*(\[要求が不正です\]、リモート サーバーからエラーが返されました: (400) 要求が不正です)、AX のエクスポート中にエラーが発生しました*
+*(\[要求が不正です\]、リモート サーバーからエラーが返されました: (400) 要求が不正です。)、AX のエクスポート中にエラーが発生しました。*
 
 次に、完全なエラー メッセージの例を示します。
 
@@ -198,7 +191,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
         ![CustomerAccount と ContactPersonId を更新するためのデータ統合プロジェクト。](media/cust_selfref6.png)
 
-    2. Finance and Operations アプリではフィルター基準と一致する行のみが更新されるため、Dataverse 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] ボタンを選択します。 その後、**クエリの編集** ダイアログ ボックスで、**\_msdyn\_company\_value eq '\<guid\>'** のようなフィルター クエリを追加できます。 
+    2. Finance and Operations アプリではフィルター基準と一致する行のみが更新されるため、Dataverse 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] ボタンを選択します。 その後、**クエリの編集** ダイアログ ボックスで、**\_msdyn\_company\_value eq '\<guid\>'** のようなフィルター クエリを追加できます。
 
         > [注記] フィルタ― ボタンが表示されない場合は、サポート チケットを作成して、データ統合チームにテナントのフィルター機能を有効にするよう依頼します。
 
@@ -210,5 +203,36 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 8. Finance and Operations アプリで、**顧客 V3** テーブルの Change Tracking をオンにし直します。
 
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>10 以上のルックアップ フィールドを持つマップでの初期同期に失敗した場合
+
+**顧客 V3 - アカウント**、**販売注文**、または 10 以上のルックアップ フィールドを持つマップで初期同期を実行しようとする場合、失敗して次のエラー メッセージが表示される場合があります:
+
+*CRMExport: パッケージの実行が完了しました。エラーの説明5 https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc からデータを取得しようとしましたが失敗しました。*
+
+クエリのルックアップの制限により、エンティティ マッピングに 10 件以上のルックアップが含まれている場合、初期同期が失敗します。 詳細については、[クエリで関連エンティティ レコードを取得する](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query)を参照してください。
+
+この問題を解決するには、次の手順に従います:
+
+1. ルックアップの数が 10 以下になるように、オプションのルックアップ フィールドを二重書き込みエンティティ マップから削除します。
+2. マップを保存し、初期同期を実行します。
+3. 最初の手順の初期同期が正常に完了したら、残りのルックアップ フィールドを追加し、最初の手順で同期したルックアップ フィールドを削除します。 ルックアップ フィールドの数が 10 以下であることを確認します。 マップを保存し、初期同期を実行します。
+4. すべてのルックアップ フィールドが同期されるまで、これらの手順を繰り返します。
+5. すべてのルックアップ フィールドをマップに戻し、マップを保存し、**初期同期をスキップ** してマップを実行します。
+
+このプロセスにより、マップでライブ同期モードが有効になります。
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>当事者郵便番号と当事者電子住所の初期同期中の既知の問題
+
+当事者の郵便番号と当事者の電子住所の初期同期を実行しようとする場合に、以下のエラー メッセージが表示される場合があります:
+
+*当事者番号が Dataverse で見つかりませんでした。*
+
+**個人** と **組織** タイプの当事者をフィルタ処理するため、Finance and Operations アプリで **DirPartyCDSEntity** に範囲が指定されています。 その結果、**CDS 当事者 - msdyn_parties** マッピングの初期同期は、**法人** や **作業単位** など、他のタイプの当事者とは同期しません。 **CDS 関係者の郵便番号 (msdyn_partypostaladdresses)** または **関係者の連絡先V3 (msdyn_partyelectronicaddresses)** で初期同期を実行するとき、エラーを受け取る可能性があります。
+
+すべてのタイプの関係者が Dataverse に正常に同期するために、Finance and Operations エンティティで当事者タイプの範囲を削除するよう修正中です。
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>顧客または連絡先データの初期同期を実行する際のパフォーマンスに問題がありますか?
+
+**顧客** データの初期同期を実行し、**顧客** マップを実行中で、**連絡先** データの初期同期を実行しているなら、**顧客** 住所の **LogisticsPostalAddress** や **LogisticsElectronicAddress** テーブルへの挿入および更新時にパフォーマンスに問題が発生する可能性があります。 **CustCustomerV3Entity** と **VendVendorV2Entity** では同じグローバル郵便住所と電子アドレス テーブルが追跡されており、二重書き込みによって、データを他方の側に書き込むクエリをさらに作成しようとします。 **顧客** の初期同期を既に実行している場合は、**連絡先** データの初期同期を実行している間は対応するマップを停止してください。 同じ作業を **仕入先** データに行います。 初期同期が完了したら、すべてのマップを初期同期をスキップして実行できます。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

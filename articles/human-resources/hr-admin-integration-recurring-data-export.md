@@ -1,8 +1,8 @@
 ---
-title: 定期的なデータ エクスポートのアプリの作成
-description: この記事では Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。
-author: andreabichsel
-ms.date: 02/03/2020
+title: 定期的なデータ エクスポート アプリの作成
+description: このトピックでは Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cef9e7f78646a4a5794eb14a9f1ad355768480644504c548afbb32e23fff4cd5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ce9fe4e77fa968463052e037ca767ed38e72796
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744873"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414765"
 ---
-# <a name="create-a-recurring-data-export-app"></a>定期的なデータ エクスポートのアプリの作成
+# <a name="create-a-recurring-data-export-app"></a>定期的なデータ エクスポート アプリの作成
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-この記事では Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。 このチュートリアルでは Human Resources の DMF パッケージ REST アプリケーション プログラミング インターフェイス (API) を利用して、データをエクスポートします。 データがエクスポートされた後、ロジック アプリはエクスポートされたデータ パッケージを Microsoft OneDrive for Business のフォルダーに保存します。
+このトピックでは Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。 このチュートリアルでは Human Resources の DMF パッケージ REST アプリケーション プログラミング インターフェイス (API) を利用して、データをエクスポートします。 データがエクスポートされた後、ロジック アプリはエクスポートされたデータ パッケージを Microsoft OneDrive for Business のフォルダーに保存します。
 
 ## <a name="business-scenario"></a>ビジネス シナリオ
 

@@ -1,7 +1,7 @@
 ---
 title: インポート ジョブで日時を同期する
 description: インポート ジョブで UTC タイム ゾーンを使用して、タイム ゾーンの変換に関する問題を回避します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f677767e12de3a1706bc4b956a70afe0d941caa0c70366fc47c6c136e617cd46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c76eadc5839785ba1624ee3894ef1d0872369aa9
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770812"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403844"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>インポート ジョブで日時を同期する
 

@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resources インフラストラクチャ統合 FAQ
 description: このトピックでは、Microsoft Dynamics 365 Human Resources および Finance and Operations アプリのインフラストラクチャの統合に関してよく寄せられる質問に回答します。
-author: rachel-profitt
-ms.date: 07/14/2021
+author: twheeloc
+ms.date: 08/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: raprofit
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 537917e9a987d701a0c96dfb7592e124e09bb748e4f2f52d39f8d97000c70ae3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ae2896eda98a8f9545d465e941d5b50065ae94b
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712004"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386542"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Dynamics 365 Human Resources インフラストラクチャ統合 FAQ
 
@@ -38,12 +38,12 @@ Dynamics 365 Human Resources は、Dynamics 365 Finance、Dynamics 365 Supply Ch
 
 ### <a name="my-organization-uses-dynamics-365-human-resources-to-manage-its-hr-operations-what-benefits-will-we-see-from-these-changes"></a>組織で Dynamics 365 Human Resources を使用して HR 操作を管理しています。 これらの変更からどのようなメリットがありますか ?
 
-- これらの変更により、Dynamics 365 の Human Resources (HR) 機能の複数のセットが削除されます。
+- これらの変更により、Dynamics 365 の Human Resources (HR) 機能の複数のセットが原因で発生する混乱が削除されます。
 - これらは、Microsoft Power Platform の拡張性と、ビジネス ロジックおよび機能オプションを拡張する方法の両方を提供します。
 - これらは、アプリケーション ライフサイクル管理 (ALM)、Microsoft Dynamics Lifecycle Services (LCS)、地理的な可用性、拡張性などの点で、Dynamics 365 Human Resources と Finance and Operations アプリの間に一貫性をもたらします。
 - 共有サービスや工具を利用してコストを削減できます。
 
-### <a name="my-organization-uses-dynamics-365-human-resources-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>組織では、Dynamics 365 Finance、Supply Chain Management、Commerce、または Project Operations で Dynamics 365 Human Resources を使用しています。 これらの変更からどのようなメリットがありますか ?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>組織では、Dynamics 365 Finance、Supply Chain Management、Commerce、または Project Operations で Human Resources モジュールを使用します。 これらの変更からどのようなメリットがありますか ?
 
 Dynamics 365 Human Resources で行われた機能と投資は、Dynamics 365 Finance で HR モジュールを使用している顧客が利用できるようになります。 これらの機能には、休暇および欠勤管理、福利厚生管理、タスク管理などの機能があります。
 
@@ -67,21 +67,27 @@ Dynamics 365 Human Resources と Dynamics 365 Finance の HR モジュール間�
 
 さらに、運用環境を移行する前に、移行プロセスをテストし、データとエクスペリエンスを検証できるツールが開始されます。
 
-組織で Dynamics 365 Human Resources とその他の Finance and Operations アプリの両方を使用している場合は、データが新しい環境に正しく移行されることを確認するために、検証のためにより多くの時間を計画する必要があります。 新しいインフラストラクチャへの移行によって、Human Resources 環境のデータが Finance and Operations 環境に統合されます。 ツールでは、データ結合プロセスをできる限り自動化する必要があります。 ただし、競合するデータのインスタンスでは、競合の解決方法を定義するためにユーザー入力が必要です。 ユーザーと管理者は、競合するデータ マッピングを管理し、運用環境を移行する前にサンドボックス環境で移行をテストする必要があります。
+組織で Dynamics 365 Human Resources とその他の Finance and Operations アプリの両方を使用している場合は、データが新しい環境に正しく移行されることを確認するために、検証のためにより多くの時間を計画する必要があります。 新しいインフラストラクチャへの移行によって、Human Resources 環境のデータが Finance and Operations 環境に統合されます。 競合するデータでは、競合の解決方法を特定するためにユーザー入力が必要です。 ユーザーと管理者は、競合するデータ マッピングを管理し、運用環境を移行する前にサンドボックス環境で移行をテストする必要があります。
 
-### <a name="my-organization-uses-dynamics-365-human-resources-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>組織では、Dynamics 365 Finance、Supply Chain Management、Commerce、または Project Operations で Dynamics 365 Human Resources を使用しています。 新しいエクスペリエンスに移行する場合、どのような計画を立てる必要がありますか ?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>組織では、Dynamics 365 Finance、Supply Chain Management、Commerce、または Project Operations で Human Resources モジュールを使用します。 新しいエクスペリエンスに移行する場合、どのような計画を立てる必要がありますか ?
 
-Finance and Operations アプリで HR モジュールを使用している組織の場合、Dynamics 365 Human Resources の新機能は、標準の 1 つのバージョン更新プロセスを通じて環境に適用されます。 各更新で使用可能になると、環境に新しい機能が表示される可能性があります。 機能管理を使用して新しい機能を有効にできます。 ただし、これらの機能を検証する必要があります。 環境に対する他の更新を検証するために、設定されているプロセスに従います。 Finance and Operations アプリに更新を適用する方法の詳細については、[1 つのバージョンの概要](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)を参照してください。
+Finance and Operations アプリで HR モジュールを使用している組織の場合、Dynamics 365 Human Resources の新機能は、標準の 1 つのバージョン更新プロセスを通じて環境に適用されます。 各更新で使用可能になると、環境に新しい機能が表示される可能性があります。 機能管理を使用して新しい機能を有効にできますが、これらの機能を検証する必要があります。 環境に対する他の更新を検証するために、設定されているプロセスに従います。 Finance and Operations アプリに更新を適用する方法の詳細については、[1 つのバージョンの概要](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)を参照してください。
 
 ### <a name="when-will-my-organization-be-migrated"></a>組織はいつ移行されますか ?
 
 各組織の移行は、その現在の構成と、新しいインフラストラクチャに移行する準備が完了している場合に依存します。 これらの日付は変更される可能性があります。
 
-- 現在、Finance and Operations アプリで HR モジュールを使用している組織は、通常の 1 バージョン更新プロセスの一環として Dynamics 365 Human Resources の HR 機能を受け取ります。 新しい機能が 2021 年 10 月から一般に利用できる予定です。
-- 現在 Dynamics 365 Human Resources のみを使用している組織は、移行ツールにアクセスできるため、2022 年半ばからテストを開始して移行を開始できます。 新しいインフラストラクチャへの移行を完了する必要がある日付はまだ決定されていません。 ただし、移行ツールが使用可能になる日付から少なくとも 1 年後になります。
-- 現在 Dynamics 365 Human Resources と その他の Finance and Operations アプリの両方を使用している組織は、移行ツールにアクセスできるため、2022 年後半からテストを開始して移行を開始できます。 新しいインフラストラクチャへの移行を完了する必要がある日付はまだ決定されていません。 ただし、移行ツールが使用可能になる日付から少なくとも 1 年後になります。
+- Finance and Operations アプリで HR モジュールを使用している組織は、通常の 1 バージョン更新プロセスの一環として Dynamics 365 Human Resources の HR 機能を受け取ります。 新しい機能が 2022 年 1 月から一般に利用できる予定です。
+- Dynamics 365 Human Resources のみを使用している組織は、移行ツールにアクセスできるため、2022 年半ばからテストを開始して移行を開始できます。 新しいインフラストラクチャへの移行を完了する必要がある日付はまだ決定されていません。 ただし、移行ツールが使用可能になる日付から少なくとも 1 年後になります。
+- Dynamics 365 Human Resources とその他の Finance and Operations アプリの両方を使用している組織は、移行ツールにアクセスできるため、2022 年後半からテストを開始して移行を開始できます。 新しいインフラストラクチャへの移行を完了する必要がある日付はまだ決定されていません。 ただし、移行ツールが使用可能になる日付から少なくとも 1 年後になります。
 
 Dynamics 365 Human Resources の新機能の詳細については、[Human Resources の新機能または変更点](./hr-admin-whats-new.md)を参照してください。
+
+### <a name="my-organization-has-not-yet-gone-live-on-dynamics-365-human-resources-should-we-go-live-with-the-human-resources-module-in-the-finance-and-operations-apps-or-with-the-dynamics-365-human-resources-app-on-the-legacy-infrastructure"></a>組織が Dynamics 365 Human Resources でまだ稼働していません。 Finance and Operations アプリの Human Resources モジュール、またはレガシ インフラストラクチャの Dynamics 365 Human Resources アプリを使用して稼働する必要がありますか?
+
+考慮すべき重要な項目は、どの HR 機能が必要で、いつ新しいインフラストラクチャで使用できるかという点です。 組織が人員管理のコア機能を必要とする場合、この機能は現在、新しいインフラストラクチャの Finance and Operations アプリの HR モジュールで使用できます。 Finance and Operations アプリの HR モジュールと Dynamics 365 Human Resources アプリの間の機能パリティは、10.0.25 リリース版に含まれる予定で、2022 年 3 月には一般公開される予定です。 チーム アプリや Dataverse エンティティ統合のような統合機能は、後のリリース版で使用できます。
+
+組織の HR 機能のニーズが、組織が稼働する時間枠内に新しいインフラストラクチャで使用できる場合は、Finance and Operations アプリの Human Resources モジュールで稼働する方が簡単な場合があります。 その結果、Dynamics 365 Human Resources アプリケーションへの標準のアプリケーション アップグレードが行われ、顧客は既に新しいインフラストラクチャに存在するので移行が容易になります。 組織が、レガシ インフラストラクチャの Dynamics 365 Human Resources アプリケーションで稼働することにした場合は、新しいインフラストラクチャに移行するために環境の移行が必要になります。 これは、新しいインフラストラクチャで稼働することにより回避できます。
 
 ### <a name="i-am-using-new-capabilities-that-are-available-only-in-dynamics-365-human-resources-such-as-leave-and-absence-and-benefits-management-will-these-capabilities-now-be-available-in-the-human-resources-module-on-the-finance-and-operations-infrastructure-too"></a>Dynamics 365 Human Resources (**休暇および欠勤**、**給付金管理** など) でのみ利用できる新機能を使用しています。 これらの機能を、Finance and Operations インフラストラクチャの Human Resources モジュールでも利用できるようになりますか ?
 
@@ -97,7 +103,7 @@ Dynamics 365 Human Resources の新機能の詳細については、[Human Resou
 
 ### <a name="my-organization-uses-linkedin-talent-hub-integration-with-dynamics-365-human-resources-will-this-integration-continue-to-work-after-the-infrastructure-change-is-completed"></a>組織では、LinkedIn Talent Hub と Dynamics 365 Human Resources の統合を使用しています。 インフラストラクチャの変更が完了した後も、この統合は引き続き機能しますか ?
 
-はい、LinkedIn Talent Hub 統合は、新しいインフラストラクチャへの移行後も引き続き機能します。
+いいえ、LinkedIn タレント ハブの統合は、新しいインフラストラクチャへの移行後は機能しません。 LinkedIn タレント ハブの統合サービスは、レガシ Dynamics 365 Human Resources インフラストラクチャと破棄されます。
 
 ### <a name="my-organization-uses-the-human-resources-app-for-teams-will-the-app-continue-to-work-after-the-infrastructure-change-is-completed"></a>組織では、Teams の Human Resources アプリを使用しています。 インフラストラクチャの変更が完了した後も、アプリは引き続き機能しますか ?
 
@@ -109,13 +115,13 @@ Dynamics 365 Human Resources の新機能の詳細については、[Human Resou
 
 ### <a name="we-are-using-data-integrator-to-move-data-between-dynamics-365-human-resources-and-finance-and-operations-apps-how-will-the-data-that-is-currently-being-integrated-be-affected"></a>データ の統合機能を使用して、Dynamics 365 Human Resources アプリと Finance and Operations アプリの間でデータを移動しています。 現在統合されているデータはどのように影響を受けますか ?
 
-Dynamics 365 Human Resources で現在マスターされている HR データは、Dataverse と同期されます。 その後、データ インテグレーターを使用して、Finance and Operations アプリとの一方向の同期を行うことができます。 新しいインフラストラクチャへの移行後、HR データは Finance and Operations アプリにネイティブになります。 データの統合機能は、Finance and Operations アプリと Human Resources の間でデータを同期する必要がなくなります。
+現在 Dynamics 365 Human Resources にある HR データは、Dataverse と同期されます。 その後、データ インテグレーターを使用して、Finance and Operations アプリとの一方向の同期を行うことができます。 新しいインフラストラクチャへの移行後、HR データは Finance and Operations アプリにネイティブになります。 データの統合機能は、Finance and Operations アプリと Human Resources の間でデータを同期する必要がなくなります。
 
 Human Resources の現在の Dataverse ネイティブ データ テーブルは、新しいインフラストラクチャ上の環境からのデータを引き続き同期します。 エンティティは、二重書き込みをサポートするように変換されます。 他の Dynamics 365 アプリ用にこれらのテーブルに対してデータ統合を介して構成されたその他のデータ統合は、現在構成されているとおりに引き続き機能します。
 
 ### <a name="we-are-using-dual-write-to-move-hr-data-between-dataverse-and-other-finance-and-operations-apps-how-will-the-data-that-is-currently-being-integrated-be-affected-by-the-migration-to-the-new-infrastructure"></a>二重書き込みを使用して、Dataverse と他の Finance and Operations アプリ間で HR データを移動しています。 現在統合中のデータが、新しいインフラストラクチャへの移行によってどのような影響を受けますか ?
 
-HR データは、新しいインフラストラクチャ上の環境の Finance and Operations アプリにネイティブになります。 次に、二重書き込みを使用して、HR データを新しい環境と Dataverse 環境の間で移動します。
+HR データは、新しいインフラストラクチャ上の環境の Finance and Operations アプリにネイティブになります。 二重書き込みを使用して、HR データを新しい環境と Dataverse 環境の間で移動します。
 
 ### <a name="we-have-built-custom-integrations-from-dynamics-365-human-resources-to-one-or-more-external-systems-will-we-have-to-develop-new-integrations-after-the-infrastructure-change-is-completed"></a>Dynamics 365 Human Resources から 1 つ以上の外部システムへのカスタム統合を構築しました。 インフラストラクチャの変更が完了した後、新しい統合を開発する必要がありますか ?
 
@@ -123,15 +129,15 @@ HR データは、新しいインフラストラクチャ上の環境の Finance
 
 ### <a name="we-have-extended-dataverse-for-dynamics-365-human-resources-will-these-extensions-be-migrated-automatically"></a>Dynamics 365 Human Resources の Dataverse を拡張しました。 これらの拡張機能は自動的に移行されますか ?
 
-新しいインフラストラクチャ上の環境に参加する Dynamics 365 Human Resources と Finance and Operations 環境が同じ Dataverse 環境に接続されている場合、2 つのアプリは移行後も同じ Dataverse 環境に接続されたままになります。 したがって、Dataverse 拡張機能に移行は必要ありません。
+新しいインフラストラクチャ上の環境に参加する Dynamics 365 Human Resources と Finance and Operations 環境が同じ Dataverse 環境に接続されている場合、2 つのアプリは移行後も同じ Dataverse 環境に接続されたままになります。 Dataverse 拡張機能に対する移行は必要ありません。
 
-ただし、Dynamics 365 Human Resources および Finance and Operations 環境が現在別々の Dataverse 環境に接続されている場合は、2 つの Dataverse 環境を組み合わせて、新しいインフラストラクチャ上の単一の環境に接続する必要があります。 この Dataverse 移行では、Human Resources ソリューションの標準である Dataverse テーブルを、新しい Dataverse 環境に接続して再同期することができます。 ただし、Dataverse 環境に対する拡張機能は自動的に移行されませんが、新しい環境に再配置する必要があります。 Dataverse 拡張機能を管理するには、管理ソリューションを使用することをお勧めします。 詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/developer/data-platform/introduction-solutions)を参照してください。
+ただし、Dynamics 365 Human Resources および Finance and Operations 環境が現在別々の Dataverse 環境に接続されている場合は、2 つの Dataverse 環境を組み合わせて、新しいインフラストラクチャ上の単一の環境に接続する必要があります。 この Dataverse 移行では、Human Resources ソリューションの標準である Dataverse テーブルを、新しい Dataverse 環境に接続して再同期することができます。 Dataverse 環境に対する拡張機能は自動的に移行しませんが、新しい環境に再配置する必要があります。 Dataverse 拡張機能を管理するには、管理ソリューションを使用することをお勧めします。 詳細については、[ソリューションの概要](/powerapps/developer/data-platform/introduction-solutions)を参照してください。
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Dynamics 365 Human Resources と連携するように Microsoft Power Automate フローや Microsoft Power Apps を構成しました。 これらの Microsoft Power Platform コンポーネントは移行され、インフラストラクチャの変更が完了した後に自動的に機能しますか ?
 
 Power Apps、Power Automate フロー、およびその他の Microsoft Power Platform のカスタマイズは、 Dataverse 拡張機能に似ています。 新しいインフラストラクチャへの移行後に自動的に機能するかどうかは、移行前に Human Resources アプリと Finance and Operations アプリが同じ Power Apps 環境に接続されているかどうかによって異なります。
 
-アプリが現在同じ Power Apps 環境に接続されている場合、新しいインフラストラクチャに移行した後も、アプリは引き続きその Power Apps 環境に接続されます。 この場合、Power Apps、Power Automate フロー、およびその他の Microsoft Power Platform のカスタマイズは、追加の構成なしで引き続き機能します。 管理ソリューションを使用して、Dataverse 上のアプリケーション拡張機能を管理することをお勧めします。 詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/developer/data-platform/introduction-solutions)を参照してください。
+アプリが現在同じ Power Apps 環境に接続されている場合、新しいインフラストラクチャに移行した後も、アプリは引き続きその Power Apps 環境に接続されます。 この場合、Power Apps、Power Automate フロー、およびその他の Microsoft Power Platform のカスタマイズは、追加の構成なしで引き続き機能します。 管理ソリューションを使用して、Dataverse 上のアプリケーション拡張機能を管理することをお勧めします。 詳細については、[ソリューションの概要](/powerapps/developer/data-platform/introduction-solutions)を参照してください。
 
 ただし、Human Resources アプリと Finance and Operations アプリが別々の Power Apps 環境に接続されている場合は、移行の一環としてそれらを組み合わせる必要があります。 このタスクでは、Power Apps およびその他のカスタマイズを新しい環境に再配置する必要があります。
 
@@ -149,7 +155,7 @@ Power Apps、Power Automate フロー、およびその他の Microsoft Power Pl
 
 ### <a name="is-there-an-impact-on-the-azure-region-when-my-environment-is-migrated"></a>環境を移行すると、Azure リージョンに影響はありますか ?
 
-通常、移行中、HumanResources 環境は同じ Azure リージョンにとどまることが予想されます。 唯一の例外は、Human Resources 環境が別のリージョンにある Finance and Operations と統合される場合に発生します。 この場合、Human Resources 環境は、Finance and Operations 環境の Azure リージョンに移行されます。
+通常、移行中、HumanResources 環境は同じ Azure リージョンにとどまることが予想されます。 唯一の例外は、Human Resources 環境が別のリージョンにある Finance and Operations 環境と統合される場合です。 この場合、Human Resources 環境は、Finance and Operations 環境の Azure リージョンに移行されます。
 
 ### <a name="my-organization-depends-on-workflows-in-dynamics-365-human-resources-for-one-or-more-business-processes-will-the-workflows-be-migrated-automatically"></a>組織は、1 つ以上のビジネス プロセスを Dynamics 365 Human Resources のワークフローに依存しています。 ワークフローは自動的に移行されますか ?
 
@@ -173,7 +179,7 @@ Ceridian との統合は、給与 API ベースの統合に移行されます。
 
 ### <a name="how-will-the-migration-affect-my-lcs-project-for-dynamics-365-human-resources"></a>移行は、Dynamics 365 Human Resources の LCS プロジェクトにどのように影響しますか ?
 
-新しいインフラストラクチャへの移行により、Dynamics 365 Human Resources 環境の管理が LCS 実装プロジェクトに移行します。 移行によって Dynamics 365 Human Resources が既存の Finance and Operations 環境に統合される場合、Human Resources LCS プロジェクトは Finance and Operations アプリの LCS 実装プロジェクトに統合されます。 現在 Dynamics 365 Human Resources のみを使用している場合は、新しい LCS 実装プロジェクトが作成され、既存の Human Resources LCS プロジェクトが新しいプロジェクトに移行されます。
+新しいインフラストラクチャへの移行により、Dynamics 365 Human Resources 環境の管理が LCS の Finance and Operations 実装プロジェクトに移行されます。 移行によって Dynamics 365 Human Resources が既存の Finance and Operations 環境に統合される場合、Human Resources LCS プロジェクトは Finance and Operations アプリの LCS 実装プロジェクトに統合されます。 現在 Dynamics 365 Human Resources のみを使用している場合は、新しい LCS 実装プロジェクトが作成され、既存の Human Resources LCS プロジェクトが新しいプロジェクトに移行されます。
 
 新しいプロジェクトは、Finance and Operations アプリが使用するするのと同じタイプのプロジェクトになります。 環境管理と同じ機能を備えています。 詳細については、[Lifecycle Services のリソース](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)を参照してください。
 
@@ -217,7 +223,7 @@ Finance and Operations アプリで Azure Data Lake Storage 用に現在構成�
 
 Dynamics 365 Human Resources ライセンスを購入した顧客は影響を受けません。 これらの顧客にライセンス移行はありません。 Human Resources に固有の追加のサンドボックス最小在庫管理単位 (SKU) は適用されなくなります。 この場合、顧客は少しだけ低い費用で Finance and Operations アプリ Tier 2 サンドボックスを購入することを選択できます。 Human Resources サンドボックスを購入した既存の顧客は、追加費用なしで Finance and Operations の Tier 2 サンドボックスに移行されます。
 
-### <a name="my-organization-uses-dynamics-365-human-resources-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>組織では、Dynamics 365 Finance、Supply Chain Management、Commerce、または Project Operations で Dynamics 365 Human Resources を使用しています。 ライセンスやコストは変わりますか ?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>組織では、Dynamics 365 Finance、Supply Chain Management、Commerce、または Project Operations で Human Resources モジュールを使用します。 ライセンスやコストは変わりますか ?
 
 Dynamics 365 アプリの既存のユーザーとスタンド アロンの Dynamics 365 Finance、Supply Chain Management、Commerce、および Project Operations のユーザーは、2025 年 2 月まで、または現在のライセンス契約の期限が切れるまで、これらのライセンスの一部として Human Resources にアクセスできます。 コスト削減に役立つ場合は、早期に Human Resources ライセンスに移行することができます。 2025 年 2 月以降、既存の CSP および EA のすべての顧客は、HR モジュールをロール オフし、Human Resources ライセンスを購入して、Finance and Operations アプリに導入される新機能を利用する必要があります。
 

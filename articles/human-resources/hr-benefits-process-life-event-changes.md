@@ -1,8 +1,8 @@
 ---
-title: ライフ イベントの変更を処理
-description: ライフ イベント変更における Microsoft Dynamics 365 Human Resourcesのライフ イベント 変更の処理を行います。
-author: andreabichsel
-ms.date: 04/06/2020
+title: ライフ イベントの変更の処理
+description: このトピックでは、Microsoft Dynamics 365 Human Resources でライフ イベントの変更を処理する方法について説明します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6bc8f02b32d7c66d045015d07b8cb1f1e958d8b13b1c9b5a6d7aa5bda300da89
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30834b685c535d464dbe016d92579752fac4b7fa
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750247"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417464"
 ---
-# <a name="process-life-event-changes"></a>ライフ イベントの変更を処理
+# <a name="process-life-event-changes"></a>ライフ イベントの変更の処理
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

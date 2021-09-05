@@ -4,24 +4,17 @@ description: このトピックでは、デュアル書き込みでサポート�
 author: RamaKrishnamoorthy
 ms.date: 04/06/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 1bfb719b20694db9af8a2a013786b8309c23c9d963c8746346930bbde96e9bbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 62b24da65bfef64d54552e4a098941fee8c9bfd4
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725139"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416734"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>デュアル書き込みの通貨データ タイプの移行
 

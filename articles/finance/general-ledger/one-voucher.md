@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720529"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344061"
 ---
 # <a name="one-voucher"></a>1 つの伝票
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>1 つの伝票とは？
@@ -81,7 +82,7 @@ ms.locfileid: "6720529"
 
 次のシナリオは、1 つの伝票機能を使用することによってのみ実行できます。 組織にこれらのシナリオがある場合には、**総勘定元帳パラメーター** ページの、**1 つの伝票内で複数のトランザクションを許可する** パラメーターの設定を変更し、伝票に複数のトランザクションを入力できるようにする必要があります。 これらの機能のギャップは、以降にリリースされる他の機能によって解決されます。
 
-> [!Note]
+> [!NOTE]
 > [次の各シナリオでは、**一般会計パラメーター** ページの **一般** クイック タブで、バウチャー内の **1つの伝票内の複数のトランザクションを許可する** フィールドを はいに設定する必要があります。]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>銀行口座に要約形式で仕入先または顧客支払を転記
@@ -115,15 +116,7 @@ ms.locfileid: "6720529"
 売掛金勘定モジュールから払い戻し定期処理タスクを実行すると、顧客から仕入先に残高を移動するトランザクションが作成されます。 このシナリオでは、顧客への払戻しに 1 つの伝票を使用する必要があります。
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>固定資産の保守: 減価償却の遡及、資産の分割、処分時の減価償却の計算
-以下の固定資産トランザクションでは、単一の伝票内に複数のトランザクションも作成されます。
-
-- 資産の追加取得が行われ、減価償却の「遡及」が計算されます。
-- 資産が分割されます。
-- 処分時の減価償却を計算するためのパラメーターは有効になり、資産が処分されます。
-- 資産利用開始日は、取得日付より前になります。 したがって、減価償却調整額が転記されます。
-
-> [!Note]
-> トランザクションを入力するときは、すべてのトランザクションが同じ固定資産に適用されることを確認します。 **新しい伝票** フィールドが、一般会計の **仕訳帳名** ページでのみ 1 つの伝票番号に設定されている場合でも、複数の固定資産が含まれていると、伝票は転記されません。 伝票に複数の固定資産を含めると、**1 つの伝票に対して指定できる固定資産トランザクションは 1 つのみです** というメッセージが表示され、伝票を転記することはできません。  
+バージョン 10.0.21 以降では、キャッチアップ減価償却の固定資産取引、資産の分割、および資産処分の減価償却の計算は、異なる伝票番号を使用して作成されます。
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a>為替手形および約束手形
 支払の状態に基づいて、トランザクションは顧客または仕入先残高を 1 つの売掛金/買掛金元帳口座から別の口座に移動するために、為替手形および約束手形は、1 つの伝票を使用する必要があります。

@@ -1,8 +1,8 @@
 ---
 title: 福利厚生の管理の概要
-description: Dynamics 365 Human Resources の福利厚生の管理機能の概要。 使いやすいオンライン エクスペリエンスで、従業員に拡張された給付金オプションを提供します。
-author: andreabichsel
-ms.date: 07/13/2021
+description: このトピックでは、Dynamics 365 Human Resources の給付金の管理機能の概要を示します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719146"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417412"
 ---
-# <a name="benefits-management-overview"></a>給付金管理の概要
+# <a name="benefits-management-overview"></a>福利厚生の管理の概要
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-競争力を維持するには、最高の従業員を獲得し維持するために、充実したメリットを提供する必要があります。 医療や歯科などの標準的な利点に加えて、採用支援、レクリエーション プログラム、および衣料手当などの拡張サービスを提供することもできます。 Microsoft Dynamics 365 Human Resources の福利厚生の管理には、さまざまな福利厚生オプションをサポートする柔軟なソリューションが用意されています。 人事管理では、製品を紹介するための使いやすい従業員エクスペリエンスも含まれています。
+競争力を維持するには、最高の従業員を獲得し維持するために、充実したメリットを提供する必要があります。 医療や歯科などの標準的な利点に加えて、採用支援、レクリエーション プログラム、および衣料手当などの拡張サービスを提供することもできます。 Microsoft Dynamics 365 Human Resources の給付金の管理には、さまざまな給付金オプションをサポートする柔軟なソリューションが用意されています。 人事管理では、製品を紹介するための使いやすい従業員エクスペリエンスも含まれています。
 
 - 拡張された給付金プランを使用すると、独自の給付金プランを作成および管理し、複雑な給付金のレート テーブルとネストされた階層をサポートできます。 より簡単な従業員エクスペリエンスのために、給付金プログラム、バンドル、および自動登録ルールを容易に作成できます。
 - レックス クレジット プログラムでは、退職やその他のライフ イベントをサポートします。
@@ -37,13 +37,13 @@ ms.locfileid: "6719146"
 デモ データにアクセスする場合は、サンドボックス環境を再配置する必要があります。
 
 > [!NOTE]
-> これで、給付金管理フォームをカスタマイズできます。 補償レートに関連するカスタム フィールドを、給付金計画の **補償オプション** フォームに追加できます。 カスタム フィールドの操作についての詳細については、[カスタム フィールド](hr-developer-custom-fields.md) を参照してください。
+> これで、給付金管理ページをカスタマイズできます。 補償レートに関連するカスタム フィールドを、給付金計画の **補償オプション** ページに追加できます。 カスタム フィールドの操作についての詳細については、[カスタム フィールド](hr-developer-custom-fields.md) を参照してください。
 >
 > ![給付金管理カスタム フィールド](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>給付金管理を有効にする
 
-このトピックでは、Human Resources の機能を有効にする方法について説明します。 また、Human Resources の既存の機能が福利厚生の管理に置き換えられているか、福利厚生の管理を有効にした後に無効になっている機能も示されます。
+このトピックでは、Human Resources の機能を有効にする方法について説明します。 また、Human Resources の既存の機能が給付金の管理に置き換えられているか、給付金の管理を有効にした後に無効になっている機能についても説明します。
 
 > [!IMPORTANT]
 > **実稼働** 環境で福利厚生の管理を有効にした後、無効にすることはできません。 **実稼働** 環境で有効にする前に、**サンドボックス** 環境で福利厚生の管理を有効にしてテストすることをお勧めします。 従来の福利厚生機能と新しい福利厚生の管理機能には大きな違いがあり、追加の設定が必要であり、実稼働前にテストする必要があります。

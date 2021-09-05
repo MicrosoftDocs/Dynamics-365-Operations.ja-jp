@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 958c7a8853e5ef0d7fb211225796d7808e4e7ae1afaf861cc6746157225c0dbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721466"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345302"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード
 
@@ -44,7 +44,7 @@ ms.locfileid: "6721466"
 
 次の図に示すように、製造ライフサイクルは、*計画*、*実行*、*確定* の 3 つのフェーズに分かれています。
 
-[![単一の環境が使用される場合の製造実行フェーズ](media/mes-phases.png "単一の環境が使用される場合の製造実行フェーズ。"](media/mes-phases-large.png)
+[![単一の環境を使用する場合の製造実行フェーズ](media/mes-phases.png "単一の環境を使用する場合の製造実行フェーズ。")](media/mes-phases-large.png)
 
 _計画_ フェーズには、製品定義、計画、注文の作成、スケジューリング、リリースが含まれます。 このリリース手順は、_計画_ フェーズから _実行_ フェーズへの移行を示します。 製造オーダーをリリースすると、製造オーダー ジョブが生産現場に表示され、実行できるようになります。
 
@@ -54,7 +54,7 @@ _計画_ フェーズには、製品定義、計画、注文の作成、スケ�
 
 次の図に示すように、スケール ユニットを使用すると、_実行_ フェーズが別のワークロードとして分割されます。
 
-[![スケール ユニットが使用される場合の製造実行フェーズ](media/mes-phases-workloads.png "スケール ユニットが使用される場合の製造実行フェーズ。"](media/mes-phases-workloads-large.png)
+[![スケール ユニットが使用されている場合の製造実行フェーズ](media/mes-phases-workloads.png "スケール ユニットが使用されている場合の製造実行フェーズ。")](media/mes-phases-workloads-large.png)
 
 このモデルでは、シングル インスタンス インストールから、ハブとスケール ユニットに基づくモデルに移動します。 _計画_ フェーズと _確定_ フェーズは、ハブ上のバックオフィス動作として実行し、製造実行ワークロードはスケール ユニット上で実行します。 データは、ハブとスケール ユニットの間で非同期に転送されます。
 

@@ -1,5 +1,5 @@
 ---
-title: モバイル バーコードのサポート
+title: モバイル バー コードのサポート
 description: このトピックでは、Android 対応デバイスで倉庫モバイル スキャン アプリを処理する方法について説明します。
 author: Mirzaab
 ms.date: 05/26/2017
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4110be6123c8b4b373a067601a515b4e1187ca63d060fab0a85ba98d8f3c3843
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b29720f3c5dbe0ec9e0370afc6b00529aca6769
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769446"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343456"
 ---
-# <a name="mobile-barcode-support"></a>モバイル バーコードのサポート
+# <a name="mobile-bar-code-support"></a>モバイル バー コードのサポート
 
 [!include [banner](../includes/banner.md)]
 

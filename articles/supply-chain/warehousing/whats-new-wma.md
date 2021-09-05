@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720087"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386102"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
@@ -23,7 +23,23 @@ ms.locfileid: "6720087"
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
 
-## <a name="2070"></a>2.0.7.0
+## <a name="version-2090"></a>バージョン 2.0.9.0
+
+このバージョンでは、ユーザーが一覧のページ上部からページを上に移動した場合に、アプリが応答を停止する問題が修正されます。
+
+## <a name="version-2080"></a>バージョン 2.0.8.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- Supply Chain Management のバージョン 10.0.21 で導入された、[ステップの指示機能](mobile-app-titles-instructions.md) のサポートが追加されました。
+- 下にスワイプすることでオーバーレイを閉じることができることを示すヒント アニメーションを追加しました。
+- アクション リストおよびメニューのファンクション キーのサポートを追加しました。 任意のファンクション キーを 3 秒間長押しすると、利用可能なコマンドの一覧が表示されます。
+- 一部のデバイスで、「指定したサイズでは適切なビューが見つかりません。」というエラー メッセージが表示される問題を修正しました。
+- スクリーン キーボードを使用しているときに、フルスクリーン モードが機能しないことがある問題を修正しました。
+- Windows デバイスでページをスワイプできないことがある問題を修正しました。
+- システムが応答を停止する原因となったさまざまな問題を修正しました。
+
+## <a name="version-2070"></a>バージョン 2.0.7.0
 
 ### <a name="new-features-fixes-and-improvements-in-version-2070"></a>バージョン 2.0.7.0 の管理の新機能、修正、および改良点
 

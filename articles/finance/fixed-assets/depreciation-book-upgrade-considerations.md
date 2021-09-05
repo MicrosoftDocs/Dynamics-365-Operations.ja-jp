@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 757c8b9f2b57374e4b6d35c9be95b9e1dfe7f249c9ea903009cc26e16711bead
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713807"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344717"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>減価償却簿のアップグレードの概要
 
@@ -42,19 +42,19 @@ ms.locfileid: "6713807"
     -   定数名: **NumberSequenceDefaultParameterPrefix**
     -   既定値: 「FADBUpgr」
 -   **英数字の長さ** – 番号順序の英数字区分の長さ。
-    -   定数名: **NumberSequenceDefaultParameterAlpanumericLength **
+    -   定数名: **NumberSequenceDefaultParameterAlpanumericLength**
     -   既定値: 9
 -   **開始番号** - 番号順序で使用される最初の番号。
-    -   定数名: **NumberSequenceDefaultParameterStartNumber **
+    -   定数名: **NumberSequenceDefaultParameterStartNumber**
     -   既定値: 1
 
 オプション 2: **既存のユーザー定義の番号順序** - このオプションは、アップグレードに使用する番号順序を定義できます。 高度な番号順序のコンフィギュレーションが必要な場合はこのオプションの使用を検討してください。 番号順序を使用するには、アップグレード クラス「ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans」を次の情報で変更する必要があります:
 
 -   **番号順序コード** – 番号順序のコード。
-    -   定数名: **NumberSequenceExistingCode **
+    -   定数名: **NumberSequenceExistingCode**
     -   既定値: 既定値はありません、番号順序コードを更新する必要があります。
 -   **共有番号順序** – 番号順序のスコープを識別するブール値。 すべての会社間の共有番号順序には「true」を使用し、企業固有のスコープには「false」を使用します。 「false」を使用する場合、指定された名前の番号順序が、減価償却簿トランザクションを含むすべての会社に存在する必要があります。 減価償却簿トランザクションを含むすべてのパーティションには、共有番号順序が存在します。
-    -   定数名: **NumberSequenceExistingIsShared **
+    -   定数名: **NumberSequenceExistingIsShared**
     -   既定値: 「true」
 
 パラメーターは、「ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans」クラスの先頭にあります。 

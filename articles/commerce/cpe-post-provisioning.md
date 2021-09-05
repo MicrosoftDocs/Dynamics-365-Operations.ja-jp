@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 評価環境のコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニング後に構成する方法について説明します。
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87933c57ee5f626b224b1edc92da13906e3edc2613f61c5b4a917d8cc5d1dcd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742443"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416482"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のコンフィギュレーション
 
@@ -128,7 +128,7 @@ LCS のクラウド POS を有効にするには、LCS で次の手順を実行�
 サイトでテスト トランザクションを実行するには、次のテスト クレジット カード情報を使用できます。
 
 - **カード番号:** 4111-1111-1111-1111
-- **有効期限:** 10/20
+- **有効期限:** 10/30
 - **カード検証値 (CVV) コード:** 737
 
 > [!IMPORTANT]
@@ -139,6 +139,9 @@ LCS のクラウド POS を有効にするには、LCS で次の手順を実行�
 プロビジョニングと構成の手順が完了したら、評価環境を使用することができます。 コマース サイト ビルダーの URL を使用して、作成エクスペリエンスに移動します。 コマース サイトの URL を使用して、小売顧客サイト エクスペリエンスに移動します。
 
 コマースの評価環境のオプション機能を構成するには、[コマース評価環境のオプション機能を構成する](cpe-optional-features.md) を参照してください。
+
+> [!NOTE]
+> コマースの評価環境には、デモ用に Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントがプリロードされています。 評価環境では、独自の Azure AD B2C テナントを構成する必要はありません。 ただし、評価環境で独自の Azure AD B2C テナントを使用するように構成している場合は、Azure ポータルを介して Azure AD B2C アプリケーションに返信用 URL である ``https://login.commerce.dynamics.com/_msdyn365/authresp`` を追加したことを確認してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -159,6 +162,8 @@ LCS のクラウド POS を有効にするには、LCS で次の手順を実行�
 [Microsoft Azure ポータル](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce Web サイト](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Commerce での B2C テナントの設定](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

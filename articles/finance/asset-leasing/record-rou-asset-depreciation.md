@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 40af957582f9cdf4e1caf3ab03ead41f2823b42d59d427c7e7623cd8688e1827
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778365"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345373"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>使用権資産減価償却の記録 (プレビュー)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 組織の貸借対照表に表示されているリースについては、使用権 (ROU) 資産が月ごとに償却されます。 このトピックでは、償却のための仕訳入力方法について説明します。 転記プロファイルの設定とリース タイプに基づいて、償却によって経費勘定科目の借方に転記され、減価償却累計額の勘定科目は貸方に転記されます。 これらのエントリは、各リースに対して作成することも、バッチ仕訳機能を使用して複数のリースに対して作成することもできます。
 
@@ -36,6 +38,9 @@ ms.locfileid: "6778365"
 
 2. 減価償却期間を選択し、**仕訳帳の作成** を選択します。 減価償却の作成を記録するために使用する仕訳帳が作成されたことを示すメッセージが表示されます。
 3. **仕訳帳 \> 資産リース仕訳帳** の順に選択し、**資産リース仕訳帳** ページを開きます。このページでは、作成した減価償却経費仕訳帳エントリが表示されます。
+
+   このシステムには、トランザクションとスケジュールの間に差異が生じないように、特定の財務フィールドが編集できないようロックされています。 ロックされている一部のフィールドは次のとおりです。**勘定**、**金額**、**財務分析コード**、**通貨**、**トランザクション タイプ**。 また、スケジュールとトランザクションの間に差異が発生することがあるため、資産リース仕訳入力に仕訳明細行を追加または削除することはできません。
+
 4. [仕訳入力] を選択し、**転記** を選択すると、減価償却エントリが一般会計に記録されます。
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>オペレーティング リースにおける使用権資産の償却経費の計算

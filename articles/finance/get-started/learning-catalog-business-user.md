@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 75fbf177cd74739b35e72f2cae56a6c46fe69540145f16c80766b3ec260e8d0b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc4067ff395042ec30bdb6a846d12509a1436256
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713759"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402547"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Dynamics 365 Finance のユーザー向けラーニング カタログ
 
@@ -32,6 +32,7 @@ ms.locfileid: "6713759"
 | [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか？ 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。 | 無料の自習型オンライン学習パス | 8 時間 |
 | [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間   |
 | [Finance and Operations アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。   Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
+| [Dynamics 365 Intelligent Order Management の使用を開始する](/learn/modules/get-started-intelligent-order-management/) | Dynamics 365 Intelligent Order Management によって、顧客は注文からフルフィルメントまでのオーケストレーションを管理できます。 これらの機能により、組織はさまざまなプラットフォームおよびアプリ間で注文フローを調整できます。 | 無料の自習型オンライン学習モジュール | 30 分 |
 | [コース MB-900T01-A: Dynamics 365 の基本](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | このコースでは、Dynamics 365の機能と事業価値について理解します。 このコースでは、Dynamics 365 アプリケーション、Power Platform、クラウドの概念、セキュリティ モデル、およびライセンスに関する考慮事項について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 
 ## <a name="core-platform-knowledge"></a>コア プラットフォームの知識<a name="core-platform-knowledge"></a>

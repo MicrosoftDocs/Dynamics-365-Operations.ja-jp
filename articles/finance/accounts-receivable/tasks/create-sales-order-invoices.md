@@ -1,6 +1,6 @@
 ---
 title: 販売注文請求書の作成
-description: このタスク ガイドでは、販売注文の請求操作について説明します。請求書の結合やバッチ処理も含みます。
+description: このトピックでは、請求書の結合やバッチ処理を含む、販売注文の請求方法について説明します。
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a6556838a2843f961e1538947a6eda090b94894ed4df8476ea60abeda8056b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771827"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394613"
 ---
 # <a name="create-sales-order-invoices"></a>販売注文請求書の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このタスク ガイドでは、販売注文の請求操作について説明します。請求書の結合やバッチ処理も含みます。 この手順では、USMF というデモ会社を使用します。
+このトピックでは、請求書の結合やバッチ処理を含む、販売注文の請求方法について説明します。 この手順では、USMF というデモ会社を使用します。
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>販売注文から請求書を作成します。
 1. **ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 注文 > 出荷済で未請求の販売注文** の順に移動します。
 2. 一覧で販売注文を選択します。 
-3. **アクション ウィンドウ** で、**請求書 > 生成 > 請求書** をクリックします。 この販売注文に関連付けられる複数の梱包明細があることに注意してください。 この場合、梱包明細番号ではなく <multiple> という表示になります。  
+3. **アクション ウィンドウ** で、**請求書 > 生成 > 請求書** をクリックします。 この販売注文に関連付けられる複数の梱包明細があることに注意してください。 この場合、梱包明細番号ではなく *複数* という表示になります。  
 4. **パラメーター** セクションを展開します。
     - 請求書に転記するには、転記を「オン」に設定する必要があります。 また、転記をオフにし、請求書の印刷のみを行うことができます。 ただし、請求書のほかに、見積請求書の作成でも同じ操作を実行できます。  
     - このオプションはバッチ ジョブに使用されます。 クエリは、バッチ ジョブの実行時に実行されます。

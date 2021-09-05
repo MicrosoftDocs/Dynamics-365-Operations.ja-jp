@@ -2,7 +2,7 @@
 title: 財務分析
 description: 財務分析は、Microsoft Power BI を使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4937235dddaf5c1c8d6d504542f161fa232c86213eb6ac4274349e02d18fb8b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767830"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416308"
 ---
 # <a name="financial-analysis"></a>財務分析
 
@@ -36,9 +36,9 @@ ms.locfileid: "6767830"
 > - **ページ** – 単一の .pbix ファイル内のタブ。 各ページには、1 つ以上のビジュアルを含めることができます。
 > - **ビジュアル** – カード、KPI、チャート、グラフ、マトリックス、または財務諸表などの単一のデータのソース。 ビジュアルとして財務諸表のあるページは、報告されているデータのサイズがあるため、その他のビジュアルを持つことはできません。
 
-現在、**財務分析** は、有効な法人またはすべての法人のいずれかのデータを表示するために使用されます。 将来のリリースでは、ワークスペースは編集およびビジュアルを作成する Power BI を使用できるところにまで進歩します。
+**財務分析** ワークスペースは、既存のレポートのデータを表示およびフィルター処理することに焦点を合わせています。 **財務分析** ワークスペースに新しいビジュアルを追加することができます。 **財務分析** ワークスペースは、現在の会社の他にすべての会社で利用でき、ロールがアクセスできる法人かどうかにかかわらずすべての法人のデータを表示します。
 
-**CFOの概要** ワークスペースは **財務分析** として同じビジュアルを表示しますが、既存のレポートでデータを表示およびフィルター処理することに焦点を合わせています。 将来のリリースでは、**財務分析** ワークスペースに新しいビジュアルを追加することができます。 新しいビジュアルは、プロジェクト マネージャーまたは買掛金勘定マネージャーなどの、他のロールに焦点を合わせているワークスペースでも使用できる可能性があります。 **CFO の概要** ワークスペースは、ロールがアクセスする法人に関係なく、すべての法人のデータを表示し続けます。
+- [ダッシュボードでの Power BI ビジュアル化の追加または編集](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance の設定
 **一般会計**

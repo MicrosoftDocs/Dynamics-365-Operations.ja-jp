@@ -1,8 +1,8 @@
 ---
 title: 職位階層でテキストの一部が切り捨てられないようにし、Visio にエクスポートする
-description: この記事では、顧客が Microsoft Dynamics 365 Human Resources で職位階層を表示したときに、個人名と職位の名前が切り捨てられる問題を解決する方法について説明します。 テキストの切り捨ては、スクリーン ショットを取ったり、階層を印刷するのを難しくする可能性があります。
-author: andreabichsel
-ms.date: 02/03/2020
+description: このトピックでは、Microsoft Dynamics 365 Human Resources の職位階層で、切り捨てられる個人名と職位の名前の問題を解決する方法について説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,17 +11,17 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36fc7684cf0351a10ab5910d46f6d56d46d78921143c537269699c11a38ae12b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a9a8d22df0416ef417a6216c3131bfb6d40d200
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779329"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413538"
 ---
-# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>職位階層および Visio へのエクスポートでのテキストの切り捨てを回避します。
+# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>職位階層でテキストの一部が切り捨てられないようにし、Visio にエクスポートする
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -43,7 +43,7 @@ Visio にエクスポートするには、次の手順を実行します。
 
 1. 人事管理で、**職位** リスト ページを開きます。
 
-    組織構造図に詳細情報を含めるには、**職位** リストにフィールドを追加して、この手順の後半でウィザードを使用するときに利用できるようにします。
+    組織構造図に詳細情報を含めるには、**職位** リストにフィールドを追加して、この手順の後半で **組織図のウィザード** を使用するときに利用できるようにします。
 
 2. アクション ウィンドウで、**Microsoft Office で開く** ボタンを選択し、次に **Excel にエクスポート** で、**職位** を選択します。 または、Ctrl + T キーを押します。
 

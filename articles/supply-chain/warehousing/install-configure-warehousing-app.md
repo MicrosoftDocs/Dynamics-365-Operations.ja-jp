@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8386adc3f0e9c9a782e6cd5d4ba770f9650583b8ff3f32c3ac23478475d085ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 094d7f0f5642653c6e059952783041b1430e98d6
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753798"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384638"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>倉庫アプリのインストールと接続
 
@@ -136,7 +136,7 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 | ConnectionName | 接続設定の名前を入力します。 最大 20 文字まで指定できます。 この値は、接続設定の固有の ID てあるため、リスト内で一意となっていることを確認してください。 デバイスに同じ名前の接続が既に存在する場合、インポートされたファイル設定によって上書きされます。 |
 | ActiveDirectoryClientAppId | [Azure Active Directory で Web サービス アプリケーションを作成する](#create-service) セクションの Azure AD の設定でメモしたクライアント ID を入力します。 |
 | ActiveDirectoryResource | Supply Chain Management のルート URL を入力します。 |
-| ActiveDirectoryTenant | Supply Chain Management サーバーで使用する Azure AD テナントを入力します。 この値は次のような形式です: `https://login.windows.net/<your-Azure-AD-tenant-ID>` 次に例を示します: `https://login.windows.net/contosooperations.onmicrosoft.com`。 |
+| ActiveDirectoryTenant | Supply Chain Management サーバーで使用する Azure AD ドメイン名を入力します。 この値は次のような形式です: `https://login.windows.net/<your-Azure-AD-domain-name>` 次に例を示します: `https://login.windows.net/contosooperations.onmicrosoft.com`。 Azure AD ドメイン名を確認する方法の詳細については、[ユーザーの重要な ID を検索する](/partner-center/find-ids-and-domain-names) を参照してください。 |
 | 法人 | アプリケーションが接続する Supply Chain Management の法人を入力します。 |
 | ConnectionType | (オプション) 接続設定で、環境に接続する際に証明書を使用するか、クライアント シークレットを使用するかを指定します。 有効な値は、*certificate* および *clientsecret* です。 既定値は *certificate* です。<p>**注意 :** クライアント シークレットはインポートできません。</p> |
 | IsEditable | (オプション) アプリのユーザーが接続設定を編集できるようにするかどうかを指定します。 有効な値は、*true* および *false* です。 既定値は *true* です。 |
@@ -248,7 +248,7 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
         > [!NOTE]
         > この値の末尾には、スラッシュ (/) を入力しないでください。
 
-    - **アクティブ ディレクトリ テナント** - Supply Chain Management サーバーで使用している Azure AD のテナントを入力してください 。 この値は次のような形式です: `https://login.windows.net/<your-Azure-AD-tenant-ID>` 次に例を示します: `https://login.windows.net/contosooperations.onmicrosoft.com`。
+    - **Active Directory テナント** - Supply Chain Management サーバーで使用している Azure AD のドメイン名を入力します。 この値は次のような形式です: `https://login.windows.net/<your-Azure-AD-domain-name>` 次に例を示します: `https://login.windows.net/contosooperations.onmicrosoft.com`。 Azure AD ドメイン名を確認する方法の詳細については、[ユーザーの重要な ID を検索する](/partner-center/find-ids-and-domain-names) を参照してください。
 
         > [!NOTE]
         > この値の末尾には、スラッシュ (/) を入力しないでください。

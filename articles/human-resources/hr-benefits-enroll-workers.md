@@ -1,8 +1,8 @@
 ---
 title: 作業者の福利厚生の登録および削除
-description: この手順では、1 人の作業者が 1 つ以上の福利厚生に登録する方法、および複数の作業者が 1 つの福利厚生に登録する方法を示します。
-author: andreabichsel
-ms.date: 02/03/2020
+description: この手順では、1 人の作業者が 1 つ以上の給付金に登録する方法、および複数の作業者が 1 つの給付金に登録する方法を示します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, H
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 0e508a0a4d89f91ef76cbf2724c7b77510a8ef028dde0c4e1c2a4200b96e39fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb9baef543e2d8e069c3e7ea667e3fdf0811fe10
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727140"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416458"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>作業者の福利厚生の登録および削除
 
@@ -26,7 +26,7 @@ ms.locfileid: "6727140"
 
 
 
-この手順では、1 人の作業者が 1 つ以上の福利厚生に登録する方法、および複数の作業者が 1 つの福利厚生に登録する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。
+この手順では、1 人の作業者が 1 つ以上の給付金に登録する方法、および複数の作業者が 1 つの給付金に登録する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。
 
 
 ## <a name="enroll-a-single-worker-in-benefits"></a>福利厚生に単一の作業者を登録
