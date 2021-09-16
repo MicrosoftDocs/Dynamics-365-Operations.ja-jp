@@ -4,8 +4,10 @@
       items:
         - name: Dynamics 365 Commerce ホーム ページ
           href: index.md
-        - name: 使用開始
+        - name: はじめに
           items:
+            - name: サービスの説明
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
             - name: 購入する前に
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
             - name: 1 つのバージョンのサービス更新
@@ -92,8 +94,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce の新機能および変更された機能
                   items:
-                    - name: Commerce の最新情報や変更事項に関するホームページ
+                    - name: Commerce の新機能や変更された機能に関するホーム ページ
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.22 (2021 年 11 月)
+                      href: get-started/whats-new-commerce-10-0-22.md
                     - name: Commerce 10.0.21 (2021 年 10 月)
                       href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (2021 年 8 月)
@@ -254,8 +258,12 @@
                       href: dev-itpro/define-retail-channel-communications-cdx.md
                     - name: Commerce Data Exchange のトラブルシューティング
                       href: dev-itpro/CDX-Troubleshooting.md
-                - name: Modern POS アーキテクチャ
+                    - name: Commerce Data Exchange パッケージをプライマリ インデックスで並べ替える
+                      href: CDX-package-sort.md
+                - name: Modern POS のアーキテクチャ
                   href: dev-itpro/retail-modern-pos-architecture.md
+                - name: Commerce のオフライン実装とトラブルシューティング
+                  href: dev-itpro/implementation-considerations-offline.md
                 - name: オンライン ストア カタログの公開
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI のコンテンツ
@@ -700,15 +708,19 @@
                   href: opt-in-ratings-reviews.md
                 - name: 評価とレビューの管理
                   href: manage-reviews.md
-                - name: 評価とレビューのコンフィギュレーション
+                - name: 評価とレビューの構成
                   href: configure-ratings-reviews.md
                 - name: 製品評価の同期
                   href: sync-product-ratings.md
+                - name: モデレーターによる評価とレビューの手動公開を有効化する
+                  href: manual-publish-rating-reviews.md
+                - name: 評価とレビューに関してよくあるご質問
+                  href: ratings-reviews-faq.md
             - name: 在庫の管理
               items:
                 - name: 在庫
                   items:
-                    - name: 店舗在庫管理
+                    - name: 店舗在庫の管理
                       href: work-with-store-inventory.md
                     - name: 在庫バッファーと在庫レベルのコンフィギュレーション
                       href: inventory-buffers-levels.md
@@ -754,11 +766,13 @@
                   href: multiple-pickup-modes.md
                 - name: POS での顧客注文集荷の処理
                   href: process-order-pickup-POS.md
+                - name: ゲスト清算の注文検索を有効にする
+                  href: order-lookup-guest.md
             - name: 販売注文
               items:
                 - name: コール センター注文の作成
                   href: tasks/create-call-center-orders.md
-                - name: 配送モードによるトランザクション メールのカスタマイズ
+                - name: 配送方法ごとにトランザクション メールをカスタマイズする
                   href: customize-email-delivery-mode.md
                 - name: POS での配送モードの変更
                   href: POS-change-delivery-mode.md
@@ -1146,7 +1160,9 @@
                       href: order-confirmation-module.md
                     - name: ギフト カード モジュール
                       href: add-giftcard.md
-                - name: 店舗ファインダー モジュール
+                    - name: 注文検索モジュール
+                      href: order-lookup-module.md
+                - name: 店舗検索モジュール
                   items:
                     - name: 地図モジュール
                       href: map-module.md
@@ -1174,6 +1190,8 @@
                       href: nav-menu-module.md
                     - name: サイト セレクター モジュール
                       href: site-selector.md
+                    - name: 国/地域の選択モジュール
+                      href: country-region-picker-module.md
                 - name: 検索モジュール
                   items:
                     - name: 検索結果モジュール
@@ -1192,10 +1210,12 @@
               items:
                 - name: オンライン チャネル レポートの生成
                   href: generate-reports.md
-            - name: ターゲットを設定する
+            - name: ターゲット設定
               items:
                 - name: デバイス、市場、および位置情報のターゲット設定
                   href: targeting-overview.md
+                - name: 地域の検出とリダイレクトを設定する
+                  href: geo-detection-redirection.md
             - name: 実験
               items:
                 - name: Dynamics 365 Commerce での実験
@@ -1258,15 +1278,15 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: 小売店舗のユーザー定義の証明書プロファイル
               href: localizations/certificate-profiles-for-retail-stores.md
-            - name: Regulatory Configuration Service
+            - name: Regulatory Configuration Service (RCS)
               items:
-                - name: Regulatory Configuration Service の概要
+                - name: Regulatory Configuration Service (RCS) の概要
                   href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service - グローバリゼーション機能
+                - name: (RCS) Regulatory Configuration Service (RCS) - グローバリゼーション機能
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
+                - name: Regulatory Configuration Service (RCS) で ER 構成を作成し、グローバル リポジトリにアップロードする
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service – Lifecycle Services ストレージの廃止
+                - name: Regulatory Configuration Service (RCS) – Lifecycle Services ストレージの廃止
                   href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce に ER コンフィギュレーションをダウンロードする
                   items:
@@ -1274,20 +1294,20 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
                     - name: コンフィギュレーションを RCS からインポートする
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                - name: グローバル リポジトリ (GR)
-                  items:
-                    - name: コンフィギュレーションを GR からインポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                    - name: ER コンフィギュレーションの更新バージョンのインポート
-                      href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                    - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
-                      href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                    - name: GR へコンフィギュレーションをアップロードする
-                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                    - name: GR でコンフィギュレーションを共有する
-                      href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                    - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
-                      href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: グローバル リポジトリ (GR)
+                      items:
+                        - name: コンフィギュレーションを GR からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: ER コンフィギュレーションの更新バージョンのインポート
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR へコンフィギュレーションをアップロードする
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR でコンフィギュレーションを共有する
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: オーストリア
               items:
                 - name: オーストリア向け会計登録サービス統合のサンプル
@@ -1888,6 +1908,30 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
                     - name: コンフィギュレーション (LBD) のインポート
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service (RCS)
+                  items:
+                    - name: Regulatory Configuration Service (RCS) の概要
+                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                    - name: Commerce に ER コンフィギュレーションをダウンロードする
+                      items:
+                        - name: RCS からコンフィギュレーションをダウンロードする
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                        - name: コンフィギュレーションを RCS からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                    - name: グローバル リポジトリ (GR)
+                      items:
+                        - name: コンフィギュレーションを GR からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: ER コンフィギュレーションの更新バージョンのインポート
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR へコンフィギュレーションをアップロードする
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR でコンフィギュレーションを共有する
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: クイック スタート ガイド
               items:
                 - name: カスタム電子ドキュメントを生成するための電子申告形式の調整
@@ -1944,13 +1988,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
                         - name: ドキュメント管理ファイルを使用するための形式を変更して実行する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
+                    - name: バーコードを使用してバーコード イメージを生成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER アプリケーション固有のパラメータを使用するルックアップ データ ソースを構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER 形式でデータ収集データ ソースを使用する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: データ ソースのデバッグ
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: バーコードを使用してバーコード イメージを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: モデル マッピングのコンフィギュレーション
+                - name: モデル マッピングを構成する
                   items:
-                    - name: 国のコンテキスト依存 ER モデル マッピングのコンフィギュレーション
+                    - name: 国のコンテキストに依存する ER モデル マッピングを構成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
                     - name: 個別の ER コンフィギュレーションで ER モデル マッピングを管理する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
@@ -2010,11 +2060,13 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/commerce/toc.json
                         - name: 画面出力先
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/commerce/toc.json
-                    - name: 行先のコンフィギュレーション
+                    - name: 送信先を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
-                    - name: アクションに依存する行先のコンフィギュレーション
+                    - name: アクションに依存する送信先を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/commerce/toc.json
-                - name: 電子申告形式への参照の設定
+                    - name: 印刷管理レコード固有の ER 送信先を構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/commerce/toc.json
+                - name: ER 形式への参照を設定する
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
                 - name: 生成されたレポートの自動検証
                   items:
@@ -2056,13 +2108,15 @@
                   items:
                     - name: Application update 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
-                    - name: Application update 10.0.11
+                    - name: アプリケーション更新プログラム 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
-                    - name: Application update 10.0.17
+                    - name: アプリケーション更新プログラム 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
-                    - name: Application update 10.0.19
+                    - name: アプリケーション更新プログラム 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
-                - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
+                    - name: アプリケーション更新プログラム 10.0.21
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.jso
+                - name: 生成されるドキュメントに対するカスタムの保存場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
@@ -2070,8 +2124,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
                 - name: 生成されるドキュメントに対するカスタム送信先の実装
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
-                - name: USER INPUT PARAMETER タイプのデータ ソース値をソースコードから開始する
+                - name: USER INPUT PARAMETER タイプのデータ ソース値をソース コードから開始する
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
+                - name: コードを変更して、ユーザーが名前付き送信先を構成して使用できるようにする
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations (Dynamics 365) モバイル アプリ
           items:
             - name: モバイル アプリのホーム ページ
@@ -2454,12 +2510,8 @@
                       href: e-commerce-extensibility/debugging-best-practices.md
             - name: Retail SDK
               items:
-                - name: Retail SDK アーキテクチャ
+                - name: Retail SDK のアーキテクチャ
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Retail SDK の今後の変更
-                  href: dev-itpro/UpcomingSDKChanges.md
-                - name: バージョン 10.0.10 から 10.0.13 における開発と ALM の変更
-                  href: dev-itpro/dev-changes-10-13.md
                 - name: 独立したパッケージ SDK のビルド パイプラインの設定
                   href: dev-itpro/build-pipeline.md
                 - name: Commerce および Finance and Operations のビルド システムのマージ
@@ -2586,8 +2638,6 @@
                   href: dev-itpro/retail-server-customer-consumer-api.md
                 - name: Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
                   href: dev-itpro/retail-server-icontroller-extension.md
-                - name: 新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以前)
-                  href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript と C# プロキシ
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: 外部アプリケーションでの Retail Server API の使用
@@ -2702,11 +2752,13 @@
                   href: troubleshoot/pickup-store-link-missing.md
                 - name: 小売店舗が店舗リストに表示されない
                   href: troubleshoot/pickup-store-missing.md
-                - name: 在庫のない品目をチェックアウトできる
+                - name: 在庫のない品目を清算できる
                   href: troubleshoot/items-without-inventory-checked-out.md
+                - name: 評価とレビューのソリューションが有効になっていないと、検索結果とカテゴリ ページに評価の絞り込み機能が表示される
+                  href: troubleshoot/hide-ratings-refiner.md
             - name: SDK のトラブルシューティング
               items:
-                - name: レベル 1 Retail Server 仮想マシンに対するデバッグの eコマース開発環境の設定
+                - name: e コマース開発環境をセットアップしてレベル 1 Retail Server 仮想マシンにデバッグを実行する
                   href: troubleshoot/set-up-dev-environment-debugging.md
     - name: Finance and Operations アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md

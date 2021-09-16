@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0fc784c3d0a1df7984761c95b5f6955cc1b441e7a51ac75eecd971a42a47a317
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ac5a8005851dc2894a0fbed74f47be6e1e14b58
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743605"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416554"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
@@ -80,10 +80,10 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
   - [Overview of Cost management (原価管理の概要)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
 - **マスター プラン:**
   - [Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-  - [Master planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)](https://youtu.be/7v8BPmEs9Dg)
-  - [Help! MRP is slow! (MRP の処理に時間がかかる!)](https://youtu.be/RLXybx20B5o)
+  - [マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ](https://youtu.be/7v8BPmEs9Dg)
+  - [MRP パフォーマンス チューニング](https://youtu.be/RLXybx20B5o)
 - **製品情報管理:**
-  - [Product configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)](https://youtu.be/zotrj3SbCl4)
+  - [Microsoft Dynamics AX の製品コンフィギュレーター](https://youtu.be/zotrj3SbCl4)
 - **倉庫管理:**
   - [倉庫管理システムを最大限に活用する](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
   - [Dynamics AX 2012 R3: 高度な倉庫管理 - プロセス製造の日常](https://www.youtube.com/embed/QUxXUrN-7n4)

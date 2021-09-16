@@ -14,6 +14,8 @@
               items:
                 - name: プラットフォーム更新プログラムの最新情報や変更事項に関するホームページ
                   href: get-started/whats-new-home-page.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.22 (2021 年 11 月)
+                  href: get-started/whats-new-platform-updates-10-0-22.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.21 (2021 年 10 月)
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.20 (2021 年 8 月)
@@ -590,24 +592,22 @@
                   href: dev-tools/update-development-tools.md
             - name: X++ プログラミング言語
               items:
-                - name: X++ およびデバッガーの機能
-                  href: dev-tools/new-x-debugger-features.md
-                - name: X++ の Visual Studio 2017 の要件
-                  href: dev-tools/developer-tools-vs2017.md
-                - name: X++ コードのデバッグ
-                  href: dev-tools/debug-xpp.md
-                - name: 要求または応答シナリオの EventHandlerResult クラス
-                  href: dev-tools/event-handler-result-class.md
-                - name: C# および X++ ソース コードを使用したビジネス ロジックの記述
-                  href: dev-tools/write-business-logic.md
-                - name: X++ と X++ コンパイラの変更
-                  href: dev-tools/programming-language-support.md
-                - name: C# の LINQ プロバイダー
-                  href: dev-tools/linq-provider-c.md
-                - name: ベスト プラクティス ルールの記述
-                  href: dev-tools/author-best-practice-rules.md
-                - name: アプリケーション エクスプローラーのプロパティ
-                  href: dev-ref/application-explorer-aot-properties.md
+                - name: X++ 言語サポート
+                  items:
+                    - name: X++ の Visual Studio 2017 の要件
+                      href: dev-tools/developer-tools-vs2017.md
+                    - name: X++ コードのデバッグ
+                      href: dev-tools/debug-xpp.md
+                    - name: 要求または応答シナリオの EventHandlerResult クラス
+                      href: dev-tools/event-handler-result-class.md
+                    - name: C# および X++ ソース コードを使用したビジネス ロジックの記述
+                      href: dev-tools/write-business-logic.md
+                    - name: C# の LINQ プロバイダー
+                      href: dev-tools/linq-provider-c.md
+                    - name: ベスト プラクティス ルールの記述
+                      href: dev-tools/author-best-practice-rules.md
+                    - name: アプリケーション エクスプローラーのプロパティ
+                      href: dev-ref/application-explorer-aot-properties.md
                 - name: X++ 言語リファレンス
                   items:
                     - name: X++ 言語リファレンスの概要
@@ -652,7 +652,7 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: ライブラリ
                           href: dev-ref/xpp-library-objects.md
-                        - name: イベント
+                        - name: イベントと代表者
                           href: dev-ref/xpp-events.md
                     - name: X++ データの選択と操作
                       items:
@@ -906,6 +906,8 @@
               href: dev-tools/date-effectivity.md
             - name: 独立系ソフトウェア ベンダーのための開発
               items:
+                - name: ISV 開発のホーム ページ
+                  href: dev-tools/isv-dev-home-page.md
                 - name: ISV Studio を使用した X++ モジュールのパッケージへのリンク
                   href: dev-tools/isv-studio-solutions.md
                 - name: ISV ライセンス
@@ -1018,6 +1020,8 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: クックブックの照会
               href: lifecycle-services/querycookbook.md
+            - name: サブスクリプションの期限切れとデータ削除
+              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
                 - name: Dynamics 365 Translation Service の概要
@@ -1048,6 +1052,8 @@
                       href: data-entities/dual-write/connection-setup.md
                     - name: 初期同期に関する考慮事項
                       href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: ライブ同期に関する制限事項
+                      href: data-entities/dual-write/sync-limits.md
                     - name: Lifecycle Services からの二重書き込みの設定
                       href: data-entities/dual-write/lcs-setup.md
                     - name: 既存の Finance and Operations アプリの二重書き込みの有効化
