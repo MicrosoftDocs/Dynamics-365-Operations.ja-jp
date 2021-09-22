@@ -1,8 +1,8 @@
 ---
 title: MPOS およびクラウド POS の拡張ログオン機能の設定
 description: このトピックでは、Cloud POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。
-author: rubencdelgado
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45284ddb3ec082e3bac8a95ed3ba7901cbce2bf303a8523b9c0a7af56938d560
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748549"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478674"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>MPOS および Cloud POS の拡張ログオン機能の設定
 
@@ -58,6 +58,8 @@ ms.locfileid: "6748549"
 作業者に割り当てられている拡張ログオンを削除するには、**拡張ログオン** 操作にて作業者を検索します。 作業者を選択し、**割り当て解除** をクリックします。 その作業者と関連付けられるすべての拡張ログオン資格情報が削除されます。
 
 ## <a name="extending-extended-logon"></a>拡張ログオンの拡張
+
+拡張ログオンでは、すぐに利用できる 5 つの重要な文字だけが固有識別子になります。 たとえば、「1234567」と「1234578」という ID を持つ 2 つのカードを構成した場合、両方とも「12345」と見なされます。 より多くの文字をサポートする拡張機能をビルドできます。 詳細な指示については、[MPOS および Cloud POS の拡張ログオン機能を拡張する](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/)を確認してください。
 
 ログオン サービスはパーム スキャナーなどの追加ログオン デバイスをサポートするために、拡張できます。 詳細については、POS 拡張ドキュメントを参照してください。
 

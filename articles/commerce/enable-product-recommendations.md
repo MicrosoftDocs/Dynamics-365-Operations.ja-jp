@@ -2,7 +2,7 @@
 title: 製品推奨事項の有効化
 description: このトピックでは、Microsoft Dynamics 365 Commerce の顧客が使用できる人為知能の機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。
 author: bebeale
-ms.date: 08/18/2020
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bfecc53a17eb44c5726103b4df738d6c6b0311aec07ad8eab55fa9c94787957a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4a7be82b3a40aba621693f080ff41767fdaea474
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752486"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466319"
 ---
 # <a name="enable-product-recommendations"></a>製品推奨事項の有効化
 
@@ -31,32 +31,28 @@ ms.locfileid: "6752486"
 
 ## <a name="recommendations-pre-check"></a>推奨事項のプレチェック
 
-有効にする前に、製品の推奨事項は、Azure Data Lake Storage を使用するようにストレージを移行した Commerce の顧客に対してのみサポートされていることに注意してください。 
+1. Dynamics 365 Commerce Recommendations の有効なライセンス持っていることを確認します。
+1. エンティティ格納が顧客所有の Azure Data Lake Storage Gen2 アカウントに接続されていることを確認します。 詳細については、[Azure Data Lake Storage が購入され、環境内で正常に検証されていることを確認する](enable-ADLS-environment.md) を参照してください。
+1. Azure AD ID コンフィギュレーションに推奨事項のエントリが含まれていることを確認します。 このアクションを実行する方法の詳細については、以下を参照してください。
+1. エンティティ格納が毎日、Azure Data Lake Storage Gen2 に更新されるようスケジュールされていることを確認します。 詳細については、[エンティティ格納の更新が自動化されていることを確認する](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md) を参照してください。
+1. エンティティ格納の RetailSale の測定を有効にします。 このプロセスの設定に関する詳細については、[測定の使用](/dynamics365/ai/customer-insights/pm-measures)を参照してください。
 
-推奨事項を有効にするには、次のコンフィギュレーションをバック オフィスで有効にする必要があります。
-
-1. Azure Data Lake Storage が購入され、環境内で正常に検証されていることを確認します。 詳細については、[Azure Data Lake Storage が購入され、環境内で正常に検証されていることを確認する](enable-ADLS-environment.md) を参照してください。
-2. エンティティ格納の更新が自動化されていることを確認します。 詳細については、[エンティティ格納の更新が自動化されていることを確認する](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md) を参照してください。
-3. Azure AD ID コンフィギュレーションに推奨事項のエントリが含まれていることを確認します。 このアクションを実行する方法の詳細については、以下を参照してください。
-
-さらに、RetailSale の測定が有効になっていることを確認します。 この設定プロセスの詳細については、[測定の使用](/dynamics365/ai/customer-insights/pm-measures) を参照してください。
+上記の手順が完了した後、推奨事項を有効にすることができます。
 
 ## <a name="azure-ad-identity-configuration"></a>Azure AD ID コンフィギュレーション
 
-この手順は、サービス (IaaS) コンフィギュレーションとしてのインフラストラクチャを実行するすべての顧客に必要です。 Service Fabric (SF) で実行している顧客については、この手順が自動的に行われ、設定が予想どおりに構成されていることを確認することをお勧めします。
+この手順は、サービス (IaaS) コンフィギュレーションとしてのインフラストラクチャを実行する顧客のみ必要です。 Azure AD ID コンフィギュレーションは、Azure Service Fabric 上で実行している顧客に対しては自動的に行われますが、設定が予想どおりに構成されていることを確認することをお勧めします。
 
-### <a name="setup"></a>セットアップ
+### <a name="setup"></a>設定
 
-1. バック オフィスから、**Azure Active Directory アプリケーション** ページを検索します。
-2. "RecommendationSystemApplication-1" のエントリが存在するかどうかを確認します。
+1. Commerce 本社で、**Azure Active Directory アプリケーション** ページを検索します。
+1. **RecommendationSystemApplication-1** のエントリが存在するかどうかを確認します。 エントリが存在しない場合、次の情報を使用して作成します。
 
-エントリが存在しない場合は、次の情報を含む新しいエントリを追加します:
+    - **クライアント ID**: d37b07e8-dd1c-4514-835d-8b918e6f9727
+    - **名前**: RecommendationSystemApplication-1
+    - **ユーザー ID**: RetailServiceAccount
 
-- **クライアント ID** - d37b07e8-dd1c-4514-835d-8b918e6f9727
-- **名前** - RecommendationSystemApplication-1
-- **ユーザー ID** - RetailServiceAccount
-
-ページを保存して閉じる。 
+1. ページを保存して閉じる。 
 
 ## <a name="turn-on-recommendations"></a>推奨事項を有効にする
 
@@ -71,15 +67,20 @@ ms.locfileid: "6752486"
 ![推奨事項の有効化。](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
-> この手順では、製品推奨リストを生成するプロセスを開始します。 リストが有効になり、販売時点管理 (POS) または Dynamics 365 Commerce で表示できるようになるまでに、数時間かかる場合があります。
+> - 上記の手順により、製品推奨リストを生成するプロセスを開始します。 リストが有効になり、販売時点管理 (POS) または Dynamics 365 Commerce で表示できるようになるまでに、数時間かかる場合があります。
+> - この構成により、すべての推奨事項機能が有効になるわけではありません。 「同じような商品を探す」および「同じような説明を探す」といったカスタマイズされた推奨事項などのより高度な機能は、専用の機能管理エントリによって制御されます。 Commerce 本社でこれらの機能を有効にする方法の詳細については、[パーソナライズされた推奨事項の有効化](personalized-recommendations.md)、["同じような商品を探す" 推奨事項の有効化](shop-similar-looks.md)、および ["同じような説明を探す" 推奨事項の有効化](shop-similar-description.md)を参照してください。
 
 ## <a name="configure-recommendation-list-parameters"></a>推奨リスト パラメーターのコンフィギュレーション
 
 既定では、AI-ML ベースの製品推奨リストは推奨値を提供します。 業務の流れに合わせて、既定の推奨値を変更できます。 既定のパラメーターを変更する方法の詳細については、[AI-ML ベースの製品推奨事項結果の管理](modify-product-recommendation-results.md)を参照してください。
 
+## <a name="include-recommendations-in-e-commerce-experiences"></a>e コマースのエクスペリエンスに推奨事項を含める
+
+Commerce 本社で推奨事項を有効にした後、e コマース エクスペリエンスの推奨事項の結果を表示するために使用される Commerce モジュールが構成されます。 詳細については、[製品収集モジュール](product-collection-module-overview.md)を参照してください。
+
 ## <a name="show-recommendations-on-pos-devices"></a>POS デバイスの推奨事項を表示する
 
-Commerce バック オフィスで推奨事項を有効にした後、レイアウト ツールを使用して、推奨事項パネルをコントロール POS 画面に追加する必要があります。 このプロセスの詳細については、[POS デバイスのトランザクション画面への推奨設定コントロールの追加](add-recommendations-control-pos-screen.md) を参照してください。 
+Commerce 本社で推奨事項を有効にした後、レイアウト ツールを使用して、推奨事項パネルをコントロール POS 画面に追加する必要があります。 このプロセスの詳細については、[POS デバイスのトランザクション画面への推奨設定コントロールの追加](add-recommendations-control-pos-screen.md) を参照してください。 
 
 ## <a name="enable-personalized-recommendations"></a>カスタマイズされた推奨事項の有効化
 

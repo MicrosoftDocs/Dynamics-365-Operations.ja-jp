@@ -1,8 +1,8 @@
 ---
 title: 理由コードの設定
 description: Dynamics 365 Human Resources は、理由コードを使用して、従業員の給付金が変化する理由を説明します。
-author: andreabichsel
-ms.date: 01/25/2021
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd7c5a35a6d4b40eb376eee2580af681f7bfd7f8f93aab8aad67f238fc40470b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f89d6158f351e30376fc3f80c793f29734cdcbb
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732684"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431345"
 ---
 # <a name="set-up-reason-codes"></a>理由コードの設定
 
@@ -29,11 +29,11 @@ ms.locfileid: "6732684"
 Dynamics 365 Human Resources は、理由コードを使用して、従業員の給付金が変化する理由を説明します。
 
 > [!NOTE]
-> 2021 年 1 月時点で、理由コードは、**従業員管理ワーク** スペースに移行されているため、**福利厚生管理** ワークスペースでは　ご利用いただけません。 詳細については、[従業員管理に理由コードを手動で移行する](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management)を参照してください。
+> 2021 年 1 月時点で、理由コードは、**従業員管理** ワークスペースに移行されたため、**福利厚生管理** ワークスペースではご利用いただけません。 詳細については、[従業員管理に理由コードを手動で移行する](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management)を参照してください。
 
 ## <a name="create-reason-codes"></a>理由コードの作成
 
-1. **Human Resources** ワークスペース (または理由コードがまだ移行されていない場合は **福利厚生管理** ワークスペース) で、**リンク** を選択し、**理由コード** を選択します。
+1. **従業員管理** ワークスペース (または理由コードがまだ移行されていない場合は **福利厚生管理** ワークスペース) で、**リンク** を選択し、**理由コード** を選択します。
 
 2. **新規** を選択します。
 
@@ -44,13 +44,13 @@ Dynamics 365 Human Resources は、理由コードを使用して、従業員の
    | **理由コード** | 従業員が給付金プランの登録を変更する理由を識別する一意の名前。 |
    | **説明** | 理由コードの説明。 |
 
-4. **該当するシナリオ** で、**福利厚生管理** を **はい** に 設定します。 (理由コードがまだ **担当者管理** ワークスペースに移行していない場合は、適用されません。)
+4. **該当するシナリオ** で、**福利厚生管理** を **はい** に 設定します。 (理由コードがまだ **従業員管理** ワークスペースに移行していない場合は、適用されません。)
 
 5. **保存** を選択します。
 
 ## <a name="manually-migrate-reason-codes-to-personnel-management"></a>従業員管理に理由コードを手動で移行する
 
-2021 年 1 月時点で、理由コードは、**従業員管理** ワークスペースに移行されているため、**福利厚生管理** ワークスペースではご利用いただけません。 ほとんどの理由コード データは、環境内で自動的に移行されます。 一部の理由コード データは移行されない場合があります。 たとえば、理由コードの最大文字数が15文字となった場合、15文字を超える理由コードは自動的に移行されません。
+2021 年 1 月時点で、理由コードは、**従業員管理** ワークスペースに移行されたため、**福利厚生管理** ワークスペースではご利用いただけません。 ほとんどの理由コード データは、環境内で自動的に移行されます。 一部の理由コード データは移行されない場合があります。 たとえば、理由コードの最大文字数が15文字となった場合、15文字を超える理由コードは自動的に移行されません。
 
 **福利厚生管理** ワークスペースの **リンク** ページにバナーが表示され、移行に関する情報やコードが移行されなかった理由が通知されます。
 

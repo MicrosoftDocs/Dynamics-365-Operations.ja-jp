@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 67240491bba5a81455bff00be22908670880803c3e08091d76e037fa0b5f49ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef6b7c619cfce70c2f0b3f676d3cae988674c858
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760517"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474606"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management 10.0.17 の新機能または変更された機能 (2021 年 4 月)
 
@@ -99,10 +99,6 @@ ms.locfileid: "6760517"
 
 次のヘルプ トピックが最近追加されたか大幅に更新されました。 前のセクションに示したように、このリリースで追加された新しい機能に関連するとは限りませんが、既存の機能をさらに活用するために役立つ場合があります。
 
-### <a name="cost-management"></a>原価管理
-
-- [コスト管理のトラブルシューティング](../cost-management/troubleshoot-costmanagement.md)
-
 ### <a name="asset-management"></a>資産管理
 
 - [資産管理モバイル ワークスペースの設定](../asset-management/set-up-asset-management-mobile.md)
@@ -114,8 +110,6 @@ ms.locfileid: "6760517"
 - [部分的な場所の循環棚卸](../warehousing/partial-location-cycle-counting.md)
 
 - [ピッキング行のグループ化](../warehousing/pick-line-grouping.md)
-
-- [在庫操作のトラブルシューティング](../inventory/troubleshoot-inventory-operations.md)
 
 - [倉庫のスロッティング](../warehousing/warehouse-slotting.md)
 

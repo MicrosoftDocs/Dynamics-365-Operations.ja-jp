@@ -1,5 +1,5 @@
 ---
-title: 在庫視覚化を設定する
+title: Inventory Visibility Add-in をインストールする
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の在庫視覚化アドインのインストールの方法を説明します。
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8573fe01abb1c6092012baf85e8b7df40b74a31f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343587"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474823"
 ---
-# <a name="set-up-inventory-visibility"></a>在庫視覚化を設定する
+# <a name="install-and-set-up-inventory-visibility"></a>在庫視覚化のインストールと設定
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -41,7 +41,7 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
     - `Inventory Visibility Integration.zip` (実行している Supply Chain Management がバージョン 10.0.18 より以前のバージョンの場合)
 
 > [!NOTE]
-> 現在サポートされている国と地域には、カナダ (CCA、ECA)、米国 (WUS、EUS)、欧州連合 (NEU、WEU)、英国 (SUK、 WUK)、オーストラリア (EAU、SEAU) があります。
+> 現在サポートされている国と地域には、カナダ (CCA、ECA)、米国 (WUS、EUS)、欧州連合 (NEU、WEU)、英国 (SUK、 WUK)、オーストラリア (EAU、SEAU)、日本 (EJP、WJP)、ブラジル (SBR、SCUS) があります。
 
 これらの前提条件についてご不明な点がありましたら、在庫可視化製品チームにお問い合わせください。
 
@@ -119,6 +119,9 @@ Dataverse を在庫可視化で使用できるよう設定するため、Package
 1. **使用条件** チェック ボックスを選択して、使用条件に同意します。
 1. **インストール** を選択します。 アドインの状態は、**インストール中** として表示されます。 インストールが完了したら、ページを更新します。 状態は **インストール済** に変更されます。
 
+> [!IMPORTANT]
+> 複数の LCS 環境を使用する場合は、環境ごとに異なる Azure AD アプリケーションを作成します。 同じアプリケーション ID とテナント ID を使用して異なる環境の在庫視覚化アドインをインストールした場合、古い環境ではトークンの問題が発生します。 最後にインストールされたものだけが有効になります。
+
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>在庫可視化アドインをアンインストールする
 
 在庫可視化アドインをアンインストールするには、LCS ページで **アンインストール** を選択します。 アンインストール プロセスは、在庫可視化アドインを終了させ、LCS からアドインの登録を解除し、在庫可視化アドイン データ キャッシュに保存されている一時的なデータが削除されます。 ただし、Dataverse 定期購読に保存されている基本在庫データは削除されません。
@@ -133,7 +136,7 @@ Dataverse 定期購読に保存されている在庫データをアンインス�
 
 これらのソリューションを削除すると、テーブルに保存されているデータも削除されます。
 
-## <a name="set-up-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Supply Chain Management を設定する
+## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Supply Chain Management における在庫視覚化の設定
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>在庫の視覚化統合パッケージの配置
 
@@ -153,8 +156,23 @@ Supply Chain Management 環境で次の機能が有効になっていること�
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Inventory Visibility 統合の設定
 
-1. Supply Chain Management で、**[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ワークスペースを開き、在庫の可視性の *在庫の視覚化統合* 機能を有効にします。
-1. **在庫管理 \> 設定 \>在庫の視覚化統合パラメーター** の順に移動し、実行している在庫の視覚化で環境の URL を入力します。 詳細については、[サービス エンドポイントの検索](inventory-visibility-power-platform.md#get-service-endpoint) を参照してください。
+アドインをインストールしたら、次の手順に従って Supply Chain Management システムを動作させる準備をします。
+
+1. Supply Chain Management で、**[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ワークスペースを開き、以下の機能を有効にします。
+    - *在庫視覚化統合* – 必須です。
+    - *引当相殺と在庫視覚化の統合* – 推奨されますが、オプションです。 バージョン 10.0.22 またはそれ以降が必要です。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。
+
+1. **在庫管理 \> 設定 \> 在庫視覚化統合パラメーター** の順に移動します。
+1. **一般** タブを開き、次の設定を行います。
+    - **在庫視覚化エンドポイント** – 在庫視覚化を実行している環境の URLを入力します。 詳細については、[サービス エンドポイントの検索](inventory-visibility-configuration.md#get-service-endpoint) を参照してください。
+    - **1つの要求の最大レコード数** – 1 つの要求に含める レコードの最大数を設定します。 1000 以下の正の整数を入力する必要があります。 既定値は 512 です。 Microsoft サポートからアドバイスを受けた場合や、変更が必要だと確信した場合を除き、デフォルト値のままにしておくことを強くお勧めします。
+
+1. オプションの *引当相殺と在庫視覚化の統合* 機能を有効にしている場合は、**引当相殺** タブを開き、次の設定を行います。
+    - **引当相殺を有効にする** – *はい* に設定し、この機能を有効にします。
+    - **引当相殺モディファイア** – 在庫視覚化に対して行われた引当を相殺する在庫トランザクション状態を選択します。 この設定は、相殺をトリガーする注文処理ステージを決定します。 ステージは、注文の在庫トランザクション状態によって追跡されます。 次のいずれかを選択します : 
+        - *受注中* – *トランザクション中* の状態では、注文が作成されると相殺要求を送信します。 相殺数量は作成された注文の数量になります。
+        - *引当* – *引当注文済トランザクション* 状態では、注文が引当、ピッキング、梱包明細の転記、または請求を行った際に相殺要求を送信します。 要求は前述のプロセスが発生したときの最初のステップに対して、1 度だけトリガーされます。 相殺数量は注文明細行の在庫トランザクション状態が *受注中* から *引当済注文* (またはそれ以降の状態) に変更された数量となります。
+
 1. **在庫管理 \> 定期処理 \> 在庫の視覚化統合** の順に移動し、ジョブを有効します。 Supply Chain Management からのすべての在庫変更イベントが在庫の視覚化に転記されるようになります。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

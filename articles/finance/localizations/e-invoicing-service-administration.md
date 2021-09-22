@@ -2,7 +2,7 @@
 title: 電子請求管理コンポーネント
 description: このトピックでは、電子請求の管理に関連するコンポーネントについて説明します。
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6582a0a9eda19fe69ead853ea5d79d763afcb8a468717fde84a32146fd0f79af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d187e8a03552258099d7021ff056d0726ea60ca1
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721729"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463884"
 ---
 # <a name="electronic-invoicing-administration-components"></a>電子請求管理コンポーネント
 
@@ -31,14 +31,14 @@ ms.locfileid: "6721729"
 
 ## <a name="azure"></a>Azure
 
-Microsoft Azure を使用して、Key Vault およびストレージ アカウントのシークレットを作成します。 このシークレットを、電子請求の構成で使用します。
+Microsoft Azure を使用して、Key Vault のシークレットを作成し、ストレージ アカウントを設定します。 その後、電子請求の構成で、Key Vault シークレットとストレージ アカウントの SAS トークンを使用します。
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用して、LCS デプロイ プロジェクトのマイクロサービスを有効にします。
+Microsoft Dynamics Lifecycle Services (LCS) を使用して、LCS 配置プロジェクトの電子請求アドインを有効にします。
 
 > [!NOTE]
-> LCS にマイクロサービスをインストールするには、少なくとも Tier 2 以上の仮想マシンが必要です。 環境計画に関する詳細については、[環境計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
+> LCS にアドインをインストールするには、少なくとも **Tier 2 以上の環境** が必要です。 環境計画に関する詳細については、[環境計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
  
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
@@ -53,20 +53,21 @@ RCS の詳細については、[Regulatory Configuration Services (RCS) - グロ
 
 RCS を使用して電子請求書を構成するには、電子請求との通信を許可するために、RCS を構成する必要があります。 **電子申告パラメーター** ページの **電子請求** タブでこの構成を完了します。
 
-#### <a name="service-endpoint"></a>サービス エンドポイント
+#### <a name="service-endpoint"></a><a id='svc-endpoint-uris'></a>サービス エンドポイント
 
 電子請求は、いくつかの Azure データセンターの地域で使用できます。 次の表に、地域ごとの可用性の一覧を示します。
 
-| Azure データ センターの地域 |
-|----------------------------|
-| 米国              |
-| ヨーロッパ                     |
-| 英国             |
-| アジア                       |
+
+| Azure geography データ センター | サービス エンドポイント URI                                                       |
+|----------------------------|----------------------------------------------------------------------------|
+| 米国              | <p>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing</p> |
+| ヨーロッパ                     | <p>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| 英国             | <p>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| アジア                       | <p>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
 
 ### <a name="service-environments"></a>サービス環境
 
-サービス環境は、電子請求における電子請求機能の実行をサポートするために作成される論理パーティションです。 セキュリティのシークレットや電子証明書、ガバナンス (アクセス権限) は、サービス環境レベルで構成する必要があります。
+サービス環境は、電子請求におけるグローバリゼーション機能の実行をサポートするために作成される論理パーティションです。 セキュリティのシークレットや電子証明書、ガバナンス (アクセス権限) は、サービス環境レベルで構成する必要があります。
 
 顧客は、必要な数のサービス環境を作成できます。 顧客が作成するサービス環境は互いに依存するものではありません。
 
@@ -84,8 +85,8 @@ RCS を使用して電子請求書を構成するには、電子請求との通�
 
 電子請求サービスは、企業が所有する Azure リソースにすべてのビジネス データを保存する役割を果たします。 サービスが正常に動作し、電子請求で必要とされ生成されるすべてのビジネス データに適切にアクセスできるようにするためには、2 つの主要な Azure リソースを作成する必要があります。
 
-- 電子請求書を格納する Azure ストレージ アカウント (Blob ストレージ)
-- 証明書とストレージ アカウントの Uniform Resource Identifier (URI) を格納する Azure Key Vault
+- 電子請求書、ドキュメント変換の結果、および外部 Web サービスからの応答を含め、電子ドキュメントを格納する Azure ストレージ アカウント (Blob ストレージ)。
+- 証明書とストレージ アカウントの Uniform Resource Identifier (URI) を格納する Azure Key Vault (SAS トークン)。
 
 
 電子請求で使用するには、専用の Key Vault のリソースと顧客のストレージ アカウントを特別に割り当てる必要があります。 詳細については、[Azure ストレージ アカウント と Key Vault の作成](e-invoicing-create-azure-storage-account-key-vault.md) を参照してください。
@@ -122,13 +123,13 @@ Finance および Supply Chain Management と電子請求の間の通信を有�
 
 サービス エンドポイントは、電子請求が位置する URL です。 サービスとの通信を可能にするには、電子請求書を発行する前にサービスのエンドポイントを Finance と Supply Chain Management に構成する必要があります。
 
-サービス エンドポイントを構成するには、**組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動し、**送信サービス** タブの **電子請求 URL** フィールドに、**サービス エンドポイント** のセクションで説明されている表に従って URL を入力します。
+サービス エンドポイントを構成するには、**組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動し、**電子請求** タブの **エンドポイント URL** フィールドに、このトピックで前述した[サービス エンドポイント](#svc-endpoint-uris)のセクションにある表から適切な URL を入力します。
 
 #### <a name="environments"></a>環境
 
 Finance および Supply Chain Management に入力された環境名は、RCS で作成され、電子請求に公開されている環境名を指します。
 
-環境は、電子請求書を発行するすべての要求に、電子請求がどの電子請求機能が要求を処理する必要があるかどうかを決定できる環境を含むように、**電子ドキュメント パラメータ** ページの **送信サービス** タブで構成する必要があります。
+**電子ドキュメント パラメーター** ページの **電子請求** タブで環境を構成する必要があります。 このように、すべての電子請求書発行の要求には、要求を処理する必要がある電子請求を決定する電子請求の環境が含まれています。
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56c253d8ef2c8114edbd7098c29464d83086b2db
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748213"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441218"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting の使用を開始する 
 
@@ -180,7 +180,7 @@ Microsoft サポートとの会話をより効果的にし、より迅速な解�
  
 次の手順では、Financial Reporting 用にイベント ビューアー メッセージをオンにするプロセスについて説明します。 イベント ビューアが生成するログは、サポート エンジニアが接続の問題の原因をすばやく特定するのに役立ちます。 サポートに連絡するときは、これらのログのコピーをチケットと一緒に提出してください。
 
-> 1.    RegisterETW.zip ファイルをクライアント ワークステーション (できればデスクトップ) にコピーし、[RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster) を抽出します。
+> 1.    RegisterETW.zip ファイルをクライアント ワークステーション (できればデスクトップ) にコピーし、[RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122) を抽出します。
 
 > 2.    Windows イベント ビューアが閉じていることを確認してください。
 

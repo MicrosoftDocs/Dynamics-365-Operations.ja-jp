@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: defbcdc7ada4471345f8c728522e15f16a8bec8f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 644eb0d682c35bd604c188aa02e4a6c69b3ff209
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344291"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474991"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>在庫の可視化アドイン概要
 
@@ -31,22 +31,20 @@ Microsoft Dataverse に構築されるマイクロサービスとして、在庫
 
 標準化された在庫分析コードの構成オプションを設定し、トランザクション タイプを設定することにより、在庫の可視化を複数のサードパーティ システムと統合できます。 在庫の可視化では、構成できる計算済の数量によってカスタマイズされた拡張性もサポートされます。
 
-## <a name="supported-features"></a>サポートされる機能
+## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management を使用した在庫の可視化統合
 
-### <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management を使用した在庫の可視化統合
+統合ソリューションは、Dynamics 365 Supply Chain Management から在庫データを取得し、在庫変更を継続的に追跡します。 詳細については、[在庫視覚化統合のインストールと設定](inventory-visibility-setup.md)および[在庫視覚化のコンフィギュレーション](inventory-visibility-configuration.md)を参照してください。
 
-統合ソリューションは、Dynamics 365 Supply Chain Management から在庫データを取得し、在庫変更を継続的に追跡します。 詳細については、[在庫の可視化の設定](inventory-visibility-setup.md) を参照してください。
+## <a name="get-a-global-view-of-inventory"></a>在庫のグローバル表示の取得
 
-### <a name="get-a-global-view-of-inventory"></a>在庫のグローバル表示の取得
-
-統合ソリューションを使用すると、独自のデータ ソースを定義し、在庫データを集中管理できます。 詳細については、[在庫の視覚化構成](inventory-visibility-configuration.md) を参照してください。
+統合ソリューションを使用すると、独自のデータ ソースを定義し、在庫データを集中管理できます。 詳細については、[在庫視覚化のコンフィギュレーション](inventory-visibility-configuration.md)を参照してください。
 
 在庫を表示するには 2 つの方法があります。
 
 - 高性能な API を使用してクエリを送信します。 この API は、凖リアルタイムの在庫データをキャッシュされたインスタンスから直接返します。 契約およびサンプルは、[在庫の可視化のパブリック API](inventory-visibility-api.md) で確認できます。
 - 手持在庫リストを表示します。 このリストは、定期的にキャッシュされたインスタンスと同期され、Dataverse で表示されます。 詳細については、[在庫の可視化アプリ](inventory-visibility-power-platform.md) を参照してください。
 
-### <a name="soft-reservations"></a>仮引当
+## <a name="soft-reservations"></a>仮引当
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

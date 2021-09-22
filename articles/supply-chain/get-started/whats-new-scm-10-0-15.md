@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: da097f99eda239377b56e9ad35f658b3b408b5d588d82e0ec2759e6fbe72b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751149"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471815"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Dynamics 365 Supply Chain Management 10.0.15 (2021 年 1 月) の新機能および変更された機能
 
@@ -35,7 +35,7 @@ ms.locfileid: "6751149"
 
 このリリースでは次の機能が含まれています。 [リリース計画](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクに従って、各機能の公式リリース日を確認してください。
 
-- 製造と倉庫の実行ワークロードを使用したクラウドおよびエッジ スケールのユニット管理<br> - 詳細については、[製造および倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット](../cloud-edge/cloud-edge-landing-page.md)を参照してください。
+- 製造と倉庫の実行ワークロードを使用したクラウドおよびエッジ スケールのユニット管理<br> - 詳細については、[分散ハイブリッド トポロジのスケール ユニット](../cloud-edge/cloud-edge-landing-page.md) を参照してください。
 
 - [倉庫アプリからの移動オーダーを作成および処理します](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - 詳細については、[倉庫アプリからの移動オーダーの作成](../warehousing/create-transfer-order-from-warehouse-app.md) を参照してください。
 

@@ -1,8 +1,8 @@
 ---
 title: 個人情報の編集
-description: この記事では、従業員およびマネージャ セルフ サービスで個人情報を編集する方法について説明します。
-author: andreabichsel
-ms.date: 03/19/2020
+description: この記事では、従業員およびマネージャー セルフ サービスで個人情報を編集する方法について説明します。
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80b4537601491c97c24cfa1fef5088cbf1ac276df76534034117161b0fe79dc2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715898"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431465"
 ---
 # <a name="edit-personal-information"></a>個人情報の編集
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-個人情報は、**従業員セルフサービス ワークスペース** の Dynamics 365 Human Resources で編集できます。
+個人情報は、**従業員セルフ サービス** ワークスペース の Dynamics 365 Human Resources で編集できます。
 
 編集できる個人情報には、次のものが含まれます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "6715898"
 >[!NOTE]
 >ビジネス用連絡先の詳細など、特定のタイプの個人情報を編集できない場合があります。 詳細については、[個人情報の編集の制限](hr-employee-self-service-restrict-editing.md)を参照してください。
 
-グローバル アドレス帳で設定されたパラメータによって、個人情報を参照できるロールが決まります。
+**グローバル アドレス帳パラメーター** ページで設定されたパラメーターによって、個人情報を参照できるロールが決まります。
 
 1. Human Resources で、**従業員セルフサービス** を選択します。
 

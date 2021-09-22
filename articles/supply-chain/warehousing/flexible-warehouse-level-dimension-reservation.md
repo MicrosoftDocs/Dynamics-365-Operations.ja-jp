@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 32beabd40aa62cce832505edd56d92a8a8f12192b821f075e9b1f058d52bf8d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733447"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474943"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>柔軟な倉庫レベル分析コードの引当ポリシー
 
@@ -856,9 +856,7 @@ ms.locfileid: "6733447"
 
 - [倉庫管理のバッチ番号](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
 - [販売注文に対する同じバッチの引当](../sales-marketing/reserve-same-batch-sales-order.md)
-- [モバイル デバイスで最も古いバッチをピッキング](pick-oldest-batch.md)
+- [モバイル デバイスで最も古いバッチをピッキングする](pick-oldest-batch.md)
 - [バッチおよびライセンス プレートの確認](batch-and-license-plate-confirmation.md)
-- [倉庫管理での引当のトラブルシューティング](troubleshoot-warehouse-reservations.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

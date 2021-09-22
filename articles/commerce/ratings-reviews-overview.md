@@ -15,21 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8b8d8e838b3c42f7dd02ce4adabcb1f412a3834006ad913e8f40191da751c08d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3c5db01b00390179c2dffcbec50343d7b7101d96
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765244"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473480"
 ---
 # <a name="ratings-and-reviews-overview"></a>評価とレビューの概要
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の評価とレビューについて説明します。
-
-## <a name="overview"></a>概要
 
 評価とレビューは、他の顧客が製品をどのように認識しているかを知りたい E コマースの顧客にとって非常に重要です。 また、消費者が購買決定を行うのに役立ちます。 Dynamics 365 Commerce において、評価とレビューのソリューションにより、小売業者は製品に対する顧客からのレビューと評価を把握できます。 小売業者は、E コマース Web サイト間での平均評価とレビュー情報を表示することができます。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393526"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441168"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -42,7 +42,12 @@ ms.locfileid: "7393526"
 
 最初のサンドボックス環境または運用環境をプロビジョニングする前に、[Human Resources 試用環境](https://go.microsoft.com/fwlink/p/?LinkId=2115962)をプロビジョニングして、Human Resources の機能を検証することができます。 試用環境には、安全にプログラムを活用するために使用する架空のデータが含まれます。 試用環境は要求したユーザーにより所有されていますが、人事管理のシステム管理経験を通じて他のユーザーも招待できます。 
 
-使用環境は実稼動環境として使用するものではありません。 60 日間のトライアル期間に限定されています。 試用期限が切れると、環境とその中にあるすべてのデータが削除されて、復元できないことに注意してください。 環境をサンドボックスや運用環境に変換することはできません。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
+試用環境は実稼動環境として使用するものではありません。 60 日間のトライアル期間に限定されています。 試用期限が切れると、環境とその中にあるすべてのデータが削除されて、復元できないことに注意してください。 環境をサンドボックスや運用環境に変換することはできません。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
+
+Human Resources 試用環境を作成すると、テナントに Power Apps 試用環境も作成され、Human Resources 環境にリンクされます。 「TestDrive」という名前の Power Apps 環境には、Human Resources 環境と同じ試用期間があります。
+
+> [!NOTE]
+> 認証されたユーザーに Power Apps 試用環境を作成するアクセス許可が与えられていない場合、Human Resources 試用環境のプロビジョニングは失敗します。 ユーザーは、Power Platform 管理センターで、試用環境を作成できるユーザー グループに含まれている必要があります。 詳細については、[Power Platform 管理センターでの環境の作成と管理を行うユーザーの制御](//power-platform/admin/control-environment-creation)を参照してください。
 
 ## <a name="plan-human-resources-environments"></a>Human Resources の環境を計画する
 
@@ -69,7 +74,7 @@ Human Resources 環境を管理するために LCS を使用するには、最�
 1. Human Resources をサブスクライブするために使用したアカウントを使用して [LCS](https://lcs.dynamics.com/Logon/Index) にサインインします。
 
    > [!NOTE]
-   > プロビジョニングを成功させるためには、Human Resources 環境のプロビジョニングに使用するアカウントが、Human Resources 環境に関連する Power Apps 環境の **システム管理者** または **システム カスタマイザー** のいずれかのロールに割り当てられている必要があります。 セキュリティ ロールを Power Platform 内のユーザーに割り当てる方法の詳細については、「[リソースに対するユーザー セキュリティの構成](/power-platform/admin/database-security)」を参照してください。
+   > プロビジョニングを成功させるためには、Human Resources 環境のプロビジョニングに使用するアカウントが、Human Resources 環境に関連する Power Apps 環境の **システム管理者** または **システム カスタマイザー** のいずれかのロールに割り当てられている必要があります。 Power Platform でユーザーにセキュリティ ロールを割り当てる方法の詳細については、[リソースに対するユーザー セキュリティの構成](/power-platform/admin/database-security)を参照してください。
 
 2. プラス記号 (**+**) を選択してプロジェクトを作成します。
 

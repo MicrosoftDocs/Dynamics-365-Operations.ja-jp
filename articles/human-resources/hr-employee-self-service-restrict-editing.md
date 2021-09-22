@@ -1,8 +1,8 @@
 ---
 title: 個人情報の編集の制限
 description: Dynamics 365 Human Resources で連絡先情報を編集する従業員を制限します。
-author: andreabichsel
-ms.date: 03/03/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87977ff004e0785ec1d31fe3abac2728f87e7083348895b58e58f46cd3e79925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c4a13818103434df5005ad2805ac2ea7495bb767
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748886"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431408"
 ---
 # <a name="restrict-editing-of-personal-information"></a>個人情報の編集の制限
 
@@ -54,7 +54,7 @@ ms.locfileid: "6748886"
 
 従業員が連絡先情報を追加または編集するのを制限した後、従業員は情報を表示できますが、変更はできません。
 
-この例では、従業員が **ビジネス** の連絡先情報を編集するのを制限されている場合でも、従業員セルフ サービスの情報を表示できます。
+この例では、従業員が **ビジネス** の連絡先情報を編集するのを制限されている場合でも、**従業員セルフ サービス** の情報を表示できます。
 
 ![ビジネスの連絡先情報の表示。](./media/hr-employee-self-service-restrict-view.png)
 

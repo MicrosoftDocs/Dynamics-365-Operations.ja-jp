@@ -2,7 +2,7 @@
 title: エンジニアリング変更管理の概要
 description: このトピックでは、製品のバージョン管理の計画と管理を支援し、製品のライフサイクルとエンジニアリング変更を管理するエンジニアリング変更管理の概要を説明します。
 author: t-benebo
-ms.date: 11/11/2020
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8f2d577d9e48ced9d4c516a66e4f53671417875cbfb51bd6bdc2cb0938d83c01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Release 10.0.21
+ms.openlocfilehash: b4fe2d62bc8084cf8c0d10b7bcb94f08cc618900
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714959"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467401"
 ---
 # <a name="engineering-change-management-overview"></a>エンジニアリング変更管理の概要
 
@@ -43,9 +43,11 @@ ms.locfileid: "6714959"
 
 前のビデオ ([Dynamics 365 Supply Chain Management の変更管理機能](https://youtu.be/N313FqvRuBc)) は、YouTube で利用可能な [Finance and Operations 再生リスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。
 
-## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>システムに対するエンジニアリング変更管理およびバージョン分析コード機能の有効
+## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>システムのエンジニアリング変更管理機能を有効にする
 
-エンジニアリング変更管理を使用する前に、*エンジニアリング変更管理* 機能とそのコンフィギュレーション キーの両方を有効にする必要があります。 トランザクション内の製品のバージョン分析コードも追跡する場合 (オプション)、*製品バージョン分析コード* 機能とそのコンフィギュレーション キーも有効にする必要があります。
+エンジニアリング変更管理を使用する前に、*エンジニアリング変更管理* 機能とそのコンフィギュレーション キーの両方を有効にする必要があります。 トランザクション内の製品のバージョン分析コードも追跡する場合 (オプション)、*製品バージョン分析コード* 機能とそのコンフィギュレーション キーの両方を有効にする必要があります。 これらの前提条件が必要に応じて設定された後、エンジニアリング変更管理のための追加のオプション機能を有効にできます。
+
+### <a name="turn-on-the-basic-engineering-change-management-features"></a>基本のエンジニアリング変更管理機能を有効にする
 
 まず、次の手順に従って機能をオンにします。
 
@@ -53,6 +55,8 @@ ms.locfileid: "6714959"
 1. 更新プログラムを確認します。
 1. *エンジニアリング変更管理* という機能を有効にします。
 1. それを使用する場合は、*製品分析コード バージョン* という名前の機能も有効にします。
+
+### <a name="turn-on-the-required-configuration-keys"></a>必要なコンフィギュレーション キーを有効にする
 
 次に、次の手順に従ってコンフィギュレーション キーをオンにします。
 
@@ -70,5 +74,18 @@ ms.locfileid: "6714959"
 
 > [!IMPORTANT]
 > 2022 年 4 月から、**エンジニアリング変更管理** および **製品分析コード - バージョン** の両方のライセンス キーがすべての新規インストールで既定で有効になりますが、必要に応じて無効にすることもできます。
+
+### <a name="turn-on-additional-engineering-change-management-features"></a>追加のエンジニアリング変更管理機能を有効にする
+
+基本のエンジニアリング変更管理機能をオンにしてコンフィギュレーション キーを有効にした後、追加およびオプションのエンジニアリング変更管理機能が機能管理に追加されます。 これらの機能は、それぞれ **エンジニアリング変更管理** モジュールの下に一覧表示されます。 次の表では、オプションの各機能について説明し、詳細についてのリンクを提供します。
+
+| 機能管理の機能名 | 説明 |
+|---|---|
+| 既存の製品の変更管理の有効化 | <p>この機能を使用すると、既存の製品をエンジニアリング製品に変換し、エンジニアリング変更管理を使用して管理を開始できます。</p><p>詳細については、[既存の製品の変更管理を有効にする](change-management-existing-products.md)を参照してください。</p> |
+| 生産向けのエンジニアリング通知 | <p>製品がエンジニアリングで変更された場合、その変更を生産に通知することが重要な場合があります。 このようにして、生産作業者は、コンポーネントの代替、部品表 (BOM) 交換、ルート交換などの適切なアクションを実行できます。 この機能を使用すると、生産されている製品の変更を生産に通知できます。</p><p>詳細については、[エンジニアリング製品に対する変更の管理](engineering-change-management.md) を参照してください。</p> |
+| エンジニアリング変更管理の属性継承の改善 | <p>この機能により、完成品または中間品目の属性管理が簡略化されます。 この機能を有効にすると、品目に属するすべての属性を識別しやすくなり、その品目から親品目に反映する属性を選択できるようになります。 この機能は、たとえば、完成品の 1 つのコンポーネントが割れ物、有害物質、または可燃性である場合に役立ちます。割れ物、有害物質、または可燃性の属性を簡単に識別し、完成品に反映できるためです。</p><p>詳細については、[エンジニアリング属性とエンジニアリング属性の検索](engineering-attributes-and-search.md)を参照してください。</p> |
+| 製品準備完了チェック | <p>この機能を使用すると、標準 (非エンジニアリング) 製品の準備完了チェックを設定できます。 製品準備完了チェックを使用して、製品が使用可能になりトランザクションで使用される前に、各製品が完全に定義され、必要なポリシーすべてが構成されていることを確認できます。 この機能をしばらく使用した後に無効にすると、標準製品の既存の準備完了チェックがすべて削除されます。</p><p>詳細については、[製品準備](product-readiness.md) を参照してください。</p> |
+| フォーミュラとその成分に対する変更の管理 | <p>この機能を使用すると、フォーミュラ構成要素、連産品、および副産物の変更を追跡できます。</p><p>詳細については、[フォーミュラとその成分の変更の管理](manage-formula-changes.md) を参照してください。</p> |
+| エンジニアリング製品のバリアントの生成 | <p>この機能により、使用可能な分析コード値に基づいて、エンジニアリング製品のバリアントを生成できます。</p><p>詳細については、[エンジニアリング製品のバリアントの生成](engineering-variants.md)を参照してください。</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

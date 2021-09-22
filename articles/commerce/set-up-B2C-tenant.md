@@ -2,7 +2,7 @@
 title: B2C テナントを Commerce に 設定
 description: このトピックでは、Dynamics 365 Commerce のユーザーサイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
 author: BrianShook
-ms.date: 08/11/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344501"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466271"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
@@ -37,6 +37,26 @@ Dynamics 365 Commerce は Azure AD B2C を使用して、ユーザーの資格�
 
 > [!TIP]
 > Azure AD ID 保護および条件付きアクセスにより、サイト ユーザーをさらに保護し、Azure AD B2C テナントのセキュリティを強化できます。 Azure AD B2C Premium P1 テナントおよび Premium P2 テナントが利用できる機能を確認するには、[Azure AD B2C の ID 保護と条件付きアクセス](/azure/active-directory-b2c/conditional-access-identity-protection-overview) を参照してください。
+
+## <a name="dynamics-environment-prerequisites"></a>Dynamics 環境の前提条件
+
+始める前に、次の前提条件を満たすことによって、Dynamics 365 Commerce 環境と e コマース チャネルが適切に構成されていることを確認してください。
+
+- POS 操作の **AllowHtnymousAccess** の値を Commerce Headquarters で "1" に設定します。
+    1. **POS 操作** に移動します。
+    1. 操作グリッドで右クリックし、**パーソナライズ** を選択します。
+    1. **フィールドを追加** を選択します。
+    1. 使用可能な列の一覧で **AllowAnonymousAccess** 列を選択して追加します。
+    1. **更新プログラム** を選択します。
+    1. **612** の "顧客の追加" 操作の場合は、**AllowAnonymousAccess** を "1" に変更します。
+    1. **1090 (レジスター)** ジョブを実行します。
+- Commerce 本社で、番号順序の顧客勘定の **手動** 属性を **いいえ** に設定します。
+    1. **Retail と Commerce \> 本社の設定 \> パラメーター \> 売掛金勘定パラメーター** の順に移動します。
+    1. **番号順序** を選択します。
+    1. **顧客勘定** 行で、**番号順序コード** 値をダブルクリックします。
+    1. 番号順序の **一般** クイック タブで、**手動** を **いいえ** に設定します。
+
+Dynamics 365 Commerce 環境を配置した後で、環境内の [シード データを初期化](enable-configure-retail-functionality.md) することもお勧めします。
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Azure ポータルでの既存の AAD B2C テナントの作成またはリンク
 

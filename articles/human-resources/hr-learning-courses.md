@@ -1,8 +1,8 @@
 ---
 title: トレーニング コースの設定
 description: 人事管理の管理者とマネージャーは、作業者に提供されるトレーニングに関する情報を管理するためにコース機能を使用できます。
-author: andreabichsel
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1182935dbdf774b89f2c3635bdb18f45f99dc1ddadb398f226672b7b5b9e31de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5923da86459e02013b1b05e3d814e963d77925d3
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727044"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465152"
 ---
 # <a name="set-up-training-courses"></a>トレーニング コースの設定
 
@@ -80,7 +80,7 @@ ms.locfileid: "6727044"
 - 参加者の最小数と最大数の定義
 - コースの開催場所と教室の割り当て
 - コース参加者へのホテルの推奨
-- コースの説明の作成 (作成後は従業員セルフ サービスで通知することが可能)
+- コースの説明の作成 (作成後は **従業員セルフ サービス** で通知することが可能)
 
   >**注記** 登録者がいない場合のみコースを削除できます。 
 

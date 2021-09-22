@@ -2,7 +2,7 @@
 title: 固定報酬の報酬計画
 description: このトピックでは、Dynamics 365 Human Resources における固定報酬の報酬計画エンティティに対するクエリの詳細および例を示します。
 author: jcart
-ms.date: 04/07/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f1e5345d9f27106bdf3a3a60cb0480a9b072e340c01236e4d48c5e2ae592ddbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738394"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429235"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>固定報酬の報酬計画
 
@@ -34,18 +34,27 @@ ms.locfileid: "6738394"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ<br>**現物名**<br>**_種類_** | 使用 | 説明 |
+| プロパティ</br>**現物名**</br>**_種類_** | 使用 | 説明 |
 | --- | --- | --- |
-| **従業員 ID**<br>mshr_fk_employee_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー: mshr_payrollemployeeentity エンティティの mshr_Employee_id  | 従業員 ID |
-| **支払レート**<br>mshr_payrate<br>*実数* | 読み取り専用<br>必須 | 固定報酬計画で定義された支払レート。 |
-| **計画 ID**<br>mshr_planid<br>*文字列* | 読み取り専用<br>必須 |報酬計画を指定します。  |
-| **発効日**<br>mshr_validfrom<br>*日時オフセット* |  読み取り専用<br>必須 |従業員の固定報酬が有効になる日付。  |
-| **固定報酬の報酬計画エンティティ**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | 必須<br>システム生成 | システムで生成する、報酬計画を一意に識別する GUID 値です。 |
-| **支払頻度**<br>mshr_payfrequency<br>*文字列* | 読み取り専用<br>必須 |従業員に支払われる頻度。  |
-| **失効日**<br>mshr_validto<br>*日時オフセット* | 読み取り専用 <br>必須 | 従業員の固定報酬が有効な日付。 |
-| **職位 ID**<br>mshr_positionid<br>*文字列* | 読み取り専用 <br>必須 | 従業員および固定報酬計画の登録に関連付けられた職位 ID。 |
-| **通貨**<br>mshr_currency<br>*文字列* | 読み取り専用 <br>必須 |固定報酬計画に定義されている通貨   |
-| **個人番号**<br>mshr_personnelnumber<br>*文字列* | 読み取り専用<br>必須 |従業員の一意の職員番号。  |
+| **計画 ID**</br>mshr_planid</br>*文字列* | 読み取り専用 | 報酬計画を指定します。  |
+| **個人番号**</br>mshr_personnelnumber</br>*文字列* | 読み取り専用 | 従業員の一意の職員番号。 |
+| **支払レート**</br>mshr_payrate</br>*小数* | 読み取り専用 | 固定報酬計画で定義された支払レート。 |
+| **職位 ID**</br>mshr_positionid</br>*文字列* | 読み取り専用 | 従業員および固定報酬計画の登録に関連付けられた職位 ID。 |
+| **発効日**</br>mshr_validfrom</br>*日時オフセット* |  読み取り専用 | 従業員の固定報酬が有効になる日付。  |
+| **失効日**</br>mshr_validto</br>*日時オフセット* | 読み取り専用 | 従業員の固定報酬が有効な日付。 |
+| **支払頻度**</br>mshr_payfrequency</br>*文字列* | 読み取り専用 | 従業員に支払われる頻度。  |
+| **通貨**</br>mshr_currency</br>*文字列* | 読み取り専用 | 固定報酬計画に定義されている通貨。 |
+| **固定報酬の報酬計画エンティティ**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | システム生成 | システムで生成する、報酬計画を一意に識別する GUID 値です。 |
+
+## <a name="relations"></a>リレーション
+
+|プロパティ値 | 関連するエンティティ | ナビゲーション プロパティ | コレクション タイプ |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
+| _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
+| _mshr_fk_payrollposition_id_value | [mshr_payrollpositionentity](hr-admin-integration-payroll-api-payroll-position.md) | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
+| _mshr_fk_plan_id_value | mshr_hcmcompfixedplantableentity | mshr_FK_Plan_id | - |
+| _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
 
 ## <a name="example-query"></a>クエリの例
 

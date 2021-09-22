@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 58a69907bdd1b03ea2e025b736dbbf84eed73c76d54bd5c93386ba8a627f095f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712052"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474919"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Management 10.0.16 の新機能および変更された機能 (2021 年 2 月)
 
@@ -56,30 +56,6 @@ ms.locfileid: "6712052"
 - [危険物の概要](../pim/hazmat-overview.md) (および関連トピック)
 - [マスター プランの計画最適化への移行](../master-planning/new-master-planning-engine.md)
 - [cXML 拡張機能の購入](../procurement/purchasing-cxml-enhancements.md)
-- [コスト管理のトラブルシューティング](../cost-management/troubleshoot-costmanagement.md)
-- [入庫倉庫操作のトラブルシューティング](../warehousing/troubleshoot-warehouse-inbound.md)
-- [積荷構築と出荷のトラブルシューティング](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [マスター プランのトラブルシューティング](../master-planning/troubleshoot-masterplanning.md)
-- [出庫倉庫操作のトラブルシューティング](../warehousing/troubleshoot-warehouse-outbound.md)
-- [部分的なリリースと部分的な出荷に関するトラブルシューティング](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [製品コンフィギュレーターのトラブルシューティング](../pim/troubleshooting-productconfigurator.md)
-- [製品情報のトラブルシューティング](../pim/troubleshooting-productinformation.md)
-- [調達ワークフローのトラブルシューティング](../procurement/troubleshoot-procurementworkflows.md)
-- [発注書のトラブルシューティング](../procurement/troubleshoot-purchaseorders.md)
-- [価格、割引、契約、リベートのトラブルシューティング](../procurement/troubleshooting-pricediscountagreements.md)
-- [製品受領書と請求書のトラブルシューティング](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [個別製造のトラブルシューティング](../production-control/troubleshoot-discretemanufacturing.md)
-- [ピッキングと梱包のトラブルシューティング](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [プロセス製造のトラブルシューティング](../production-control/troubleshoot-processmanufacturing.md)
-- [倉庫管理での引当のトラブルシューティング](../warehousing/troubleshoot-warehouse-reservations.md)
-- [販売注文のトラブルシューティング](../sales-marketing/troubleshooting-sales.md)
-- [販売見積のトラブルシューティング](../sales-marketing/troubleshooting-salesquotation.md)
-- [高度な倉庫管理へのアップグレードおよび移行のトラブルシューティング](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [倉庫管理モバイル アプリの接続に関する問題のトラブルシューティング](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [倉庫コンフィギュレーションのトラブルシューティング](../warehousing/troubleshoot-warehouse-configuration.md)
-- [倉庫の補充のトラブルシューティング](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [倉庫の設定のトラブルシューティング](../warehousing/troubleshoot-warehouse-setup.md)
-- [倉庫作業のトラブルシューティング](../warehousing/troubleshoot-warehouse-work.md)
 - [プットアウェイ クラスター](../warehousing/putaway-clusters.md)
 - [補充戦略](../warehousing/replenishment-strategies.md)
 - [作業の分割](../warehousing/work-split.md)

@@ -2,7 +2,7 @@
 title: 電子申告における多言語レポートの設計
 description: このトピックでは、電子申告 (ER) ラベルを使用して多言語レポートをデザインおよび生成する方法について説明します。
 author: NickSelin
-ms.date: 04/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86facc26f57b3ab166d6274689d774adbac50e46aa7759cfd079a0ef5a45456e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e199b350101e10ba3e424894f4dc9881d05c9558
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718432"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473408"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>電子申告における多言語レポートの設計
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>概要
 
@@ -229,10 +231,14 @@ ER バージョン管理では、ER コンポーネント内の任意の属性�
 - **ラベル** 属性にリンクされている ER ラベルの値は、返された レコードの **ラベル** フィールドに格納されます。
 - **説明** 属性にリンクされている ER ラベルの値は、返された レコードの **説明** フィールドに格納されます。
 
+## <a name="performance"></a><a name=performance></a>業績
+
+ER 形式のコンポーネンを構成してユーザーの優先 [言語](#language)でレポートを生成する場合、またはコンテンツが優先言語で解析される受信ドキュメントをインポートする場合、[機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースで **ER を実行している現在のユーザーの優先言語をキャッシュする** の機能を有効にすることをお勧めします。 特に ER フォーミュラとバインディングのラベルおよび多くの[検証](general-electronic-reporting-formula-designer.md#TestFormula)ルールへの複数の参照を含む ER 形式のコンポーネントがユーザーの優先言語でユーザー メッセージを生成する場合、この機能によりパフォーマンスが向上します。
+
 ## <a name="additional-resources"></a>追加リソース
 
 - [電子申告の概要](general-electronic-reporting.md)
-- [電子申告機能](er-formula-language.md#functions)
+- [電子申告機能](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

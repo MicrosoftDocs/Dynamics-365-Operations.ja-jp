@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7bd5a64553afa04517633ed03d8bbd6077208c0b511d8fa131dc9a2849998708
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774412"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463629"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -32,7 +32,29 @@ ms.locfileid: "6774412"
 
 Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
-## <a name="feature-deprecation-notice-effective-may-2021"></a>2021 年 5 月からの機能非推奨の通知
+## <a name="feature-deprecation-effective-august-2021"></a>2021 年 8 月に廃止される機能
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure Lifecycle Services (LCS) の SQL レポート
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | LCS の一部の SQL レポートは非推奨になりました。 この機能は他のサービスによって置き換えられたので、レポートを監視する必要はなくなりました。 |
+| **別の機能で置き換えられているか?**   | なし |
+| **影響を受ける製品領域**         | SQL レポート: 現在の DTU、現在の DTU の詳細、ロックの詳細の取得、現在のプラン ガイドの一覧、クエリ ID のリストの取得、特定プラン ID の SQL クエリ プランの取得、クエリ プランおよび実行状態の取得、スロット コンフィギュレーションの取得、待機統計の取得、最も高価なクエリのリスト |
+| **配置オプション**              | クラウド配置: Microsoft によって管理される運用環境およびレベル 2 からレベル 5 のサンドボックス環境に影響します。 |
+| **状態**                         | 非推奨: 2021 年 10 月に削除予定。 |
+
+### <a name="azure-sql-actions-in-lcs"></a>LCS での Azure SQL アクション
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | LCS の一部の SQL アクションは非推奨になりました。  |
+| **別の機能で置き換えられているか?**   | なし |
+| **影響を受ける製品領域**         | SQL アクション: プラン ID を強制するプラン ガイドの作成、テーブル ヒントを追加するプラン ガイドの作成、プラン ガイドの削除、ページ ロックおよびロック エスカレーションの無効化/有効化、エスカレーションのロック、テーブルでの統計の更新、インデックスの再構築、インデックスの作成 |
+| **配置オプション**              | クラウド配置: Microsoft によって管理される運用環境およびレベル 2 からレベル 5 のサンドボックス環境に影響します。 |
+| **状態**                         | 非推奨: 2021 年 10 月に削除予定。 |
+
+## <a name="feature-deprecation-effective-may-2021"></a>2021 年 5 月に廃止される機能
 
 ### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のグローバリゼーション ポータル
 

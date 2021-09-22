@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4a77b157e9dd5ee1f551cbb59abbc89aaa28d325cc74a77e6624f25902c5b19e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731892"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471695"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
 
@@ -27,16 +27,18 @@ ms.locfileid: "6731892"
 
 ## <a name="what-are-warehouse-orders"></a>倉庫オーダーとは何ですか?
 
-*倉庫オーダー* は、ハブやスケール ユニットの倉庫展開をサポートするために作成されたオーダーの一種です。 これにより、スケール ユニットで倉庫ワークロードを実行しているときに、在庫を受け入れできます。 現在は、発注書でのみ使用されています。
+*倉庫オーダー* は、ハブやスケール ユニットの倉庫展開をサポートするために使用される注文タイプです。 これにより、スケール ユニットで倉庫ワークロードを実行しているときに、在庫を入庫および出庫できます。
 
-倉庫オーダーは、入庫発注書の処理時に倉庫管理モバイルアプリを使用して現物手持在庫を登録する場合など、倉庫管理処理の一部として使用されます。 倉庫オーダーは、スケール ユニットの倉庫と倉庫管理プロセスの使用が可能な品目を指定する、発注書に使用できる *倉庫へのリリース* プロセスの一部として作成されます。
+倉庫オーダーは、入庫/出庫の倉庫管理処理の一部として使用されます。 これらは、ハブで初期化される *倉庫へのリリース* プロセスの一部として作成されます。
+入庫処理の場合、Warehouse Mobile App は、入庫注文の処理中に現物手持在庫を登録するために使用されます。これは、スケール ユニット倉庫と倉庫管理プロセスで使用できる品目を指定する発注書と製造オーダーで使用できます。
+出庫倉庫オーダーは、移動オーダーおよび販売注文の出荷ウェーブ処理の一部として使用されます。
 
 > [!IMPORTANT]
 > 倉庫オーダーは、[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](cloud-edge-workload-warehousing.md) を使用する展開でのみ使用できます。
 
-## <a name="create-a-warehouse-order"></a>倉庫オーダーの作成
+## <a name="create-an-inbound-warehouse-order"></a>入庫倉庫オーダーを作成する
 
-倉庫オーダーを作成するには、次の手順に従います。
+発注書プロセスに対して入庫倉庫オーダーを作成するには、次の手順に従います。
 
 1. ハブで実行されている Microsoft Dynamics 365 Supply Chain Management のインスタンスにサインインします。 (ハブにサインインしている間に、*倉庫へのリリース* プロセスを開始する必要があります。)
 1. **調達 \> 発注書 \> すべての発注書** に移動します。

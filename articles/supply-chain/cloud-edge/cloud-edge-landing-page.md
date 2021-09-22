@@ -1,5 +1,5 @@
 ---
-title: 製造と倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
+title: 分散ハイブリッド トポロジのスケール ユニット
 description: このトピックでは、製造および倉庫管理のワークロードのクラウドおよびエッジのスケール ユニットに関する情報を提供します。
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780677"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471743"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>製造および倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>分散ハイブリッド トポロジのスケール ユニット
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780677"
 >
 > クラウドおよびエッジのスケール ユニットを有効にする際、クラウドおよびエッジのスケール ユニットの構成と処理に関連するデータが米国にあるデータ センターに保存されることを理解できることを確認するよう求められます。 クラウドおよびエッジのスケール ユニットのデータ処理の詳細については、このトピックの後半の[スケール ユニットの管理中のデータ処理](#data-processing-management) セクションを参照してください。
 
-## <a name="core-value-proposition-for-scale-units"></a>スケール ユニットの主な価値提案
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>分散ハイブリッド トポロジの主な価値提案
 
-製造と流通が行われる会社は、重要な業務プロセスを年中無休 24 時間対応で実行でき、中断や規模の変更を行うことはできません。 クラウドおよびエッジのスケール ユニットを使用すると、ネットワーク接続や待機時間の問題が発生した場合でも、業務上不可欠な製造および倉庫の主要なプロセスを中断することなく実行できます。
+製造と流通が行われる会社は、重要な業務プロセスを年中無休 24 時間対応で実行でき、中断や規模の変更を行うことはできません。 分散ハイブリッド トポロジを使用すると、ネットワーク接続や待機時間の問題が発生した場合でも、業務上不可欠な製造および倉庫の主要なプロセスを中断することなく実行できます。
 
-クラウドおよびエッジのスケール ユニットによって、作業現場と倉庫の実行ワークロードを異なる環境間で配分できるようになります。 この機能は、パフォーマンスの向上、サービス中断の防止、アップタイムの最大化に役立ちます。 スケール ユニットは、Supply Chain Management サブスクリプションの次のアドインを通じて提供されます。
+分散ハイブリッド トポロジでは *スケール ユニット* の概念が導入されており、作業現場と倉庫の実行ワークロードを異なる環境間で配分できるようになります。 この機能は、パフォーマンスの向上、サービス中断の防止、アップタイムの最大化に役立ちます。 スケール ユニットは、Supply Chain Management サブスクリプションの次のアドインを通じて提供されます。
 
 - Dynamics 365 Supply Chain Management のクラウド スケール ユニットのアドイン (*2021 年 4 月より利用可能*)
 - Dynamics 365 Supply Chain Management のエッジ スケール ユニットのアドイン (*まもなく利用できます*)

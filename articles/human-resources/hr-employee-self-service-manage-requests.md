@@ -1,8 +1,8 @@
 ---
 title: 休暇申請の管理
 description: Dynamics 365 Human Resources で、休暇申請を表示および承認します。
-author: andreabichsel
-ms.date: 04/21/2021
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 46b26a3c4f6594bf1e471f241307c2da55d805c65b038233520003db952a2f4e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0033196c445a59482798e89913bbb40303462e2b
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769662"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431293"
 ---
 # <a name="manage-leave-and-absence-requests"></a>休暇および欠勤要求の管理
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-休暇申請の管理は、Dynamics 365 Human Resources の **従業員セルフサービス** ワークスペースから行えます。 申請は、単純な 1 日申請、または複数の休暇タイプを含む複数日申請が可能です。 ワークフローが有効でない場合は、申請は自動的に承認されます。 ワークフローを有効にすると、ワークフローの構成に応じて、承認を自動化したり、サインオフを要求したりすることができます。
+休暇申請の管理は、Dynamics 365 Human Resources の **従業員セルフ サービス** ワークスペースから行えます。 申請は、1 日だけの申請、または複数の休暇タイプの複数日申請が可能です。 ワークフローが有効でない場合は、申請は自動的に承認されます。 ワークフローを有効にすると、ワークフローの構成に応じて、承認を自動化したり、サインオフを要求したりすることができます。
 
 1. **従業員セルフサービス** ワークスペースで、**自分のチーム** を選択します。
 
