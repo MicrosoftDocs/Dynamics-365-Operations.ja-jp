@@ -1,6 +1,6 @@
 ---
-title: POS 拡張機能での Knockout.js の使用
-description: このトピックでは、販売時点管理 (POS) 拡張機能での Knockout.js の使用方法について説明します。
+title: POS 拡張機能で Knockout.js のような外部またはサード パーティー ライブラリを使用する方法
+description: このトピックでは、販売時点管理 (POS) 拡張機能で Knockout.js のような外部またはサード パーティー ライブラリを使用する方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 1bc7d8559d935fa836076de2a2f3131b340807aa8ce38f024323d1468ea1156f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2ae1b3a417f45bd766583a8009ab73edaa1e9c6f
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724542"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485895"
 ---
-# <a name="use-knockoutjs-in-pos-extensions"></a>POS 拡張機能での Knockout.js の使用
+# <a name="consume-external-or-third-party-libraries-like-knockoutjs-in-pos-extensions"></a>POS 拡張機能で Knockout.js のような外部またはサード パーティー ライブラリを使用する
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) 拡張機能での **Knockout.js** を使用した基本的な作業について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
+このトピックでは、販売時点管理 (POS) 拡張機能で **Knockout.js** を使用する方法に関するいくつかの基本的な手順を示します。同じパターンを、他の外部ライブラリまたはサード パーティー ライブラリに適用できます。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
 
 1. **Knockout.js** ライブラリの NuGet パッケージ参照を、**Pos.Extensions** プロジェクトに追加します。
 2. MSBuild ターゲットを追加して、ビルド中に knockout ライブラリをプロジェクト ディレクトリにコピーし、パッケージに含めます。 次の例は、XML を示しています。
@@ -53,6 +53,8 @@ ms.locfileid: "6724542"
         }
     ]
     ```
+> [!NOTE]
+> 外部ライブラリが他のライブラリに依存している場合は、依存関係をコピーするために、パッケージ マニフェストと msbuild ターゲットにすべての依存ライブラリを含めます。
 
 4. **Pos.Extensions** プロジェクトファイルを更新して、**Knockout.js** タイプの宣言を含めます。
 

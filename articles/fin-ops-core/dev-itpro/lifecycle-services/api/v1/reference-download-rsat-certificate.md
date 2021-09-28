@@ -2,19 +2,19 @@
 title: ZIP ファイルで RSAT 証明書をフェッチする
 description: このトピックでは、LCS 環境 API 経由で Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境の Regression Suite Automation Tool (RSAT) 証明書バンドルをフェッチする方法について説明します。
 author: jorichar
-ms.date: 08/19/2021
+ms.date: 08/24/2021
 ms.topic: reference
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jorichar
 ms.search.validFrom: 2021-08-12
-ms.openlocfilehash: 6bd068cc8826ae2acb824241be42565e2af6e7a2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 49c7f5884e2e977628b75f5deeee51b71a2bfe80
+ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404447"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7415309"
 ---
 # <a name="fetch-an-environments-rsat-certificate-in-a-zip-file"></a>ZIP ファイルで RSAT 証明書をフェッチする
 
@@ -46,7 +46,7 @@ LCS では、API OAuth 認証で使用するユーザーをプロジェクト所
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /environmentinfo/v1/rsatdownload/project/{projectId}/
+GET /environmentinfo/v1/rsatdownload/project/{projectId}/environment/{environmentId}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー

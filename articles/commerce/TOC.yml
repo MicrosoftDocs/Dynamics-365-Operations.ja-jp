@@ -102,8 +102,6 @@
                       href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-commerce-10-0-20.md
-                    - name: Commerce 10.0.19 (2021 年 6 月)
-                      href: get-started/whats-new-commerce-10-0-19.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -668,6 +666,8 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: カテゴリの価格決定ルールを使用した売買契約の作成
                   href: tasks/category-pricing-rules-trade-agreements.md
+                - name: 正確な価格と割引の計算を遅延する
+                  href: delayed-price-calculation.md
             - name: 推奨事項
               items:
                 - name: 製品推奨事項の概要
@@ -1328,6 +1328,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Commerce 本社の小売明細書によるブラジルの会計ドキュメントの転記
                   href: localizations/latam-bra-retail-statements.md
+                - name: ブラジル向け Commerce POS が搭載する Adyen に対応した Dynamics 365 Payment Connector
+                  href: localizations/latam-bra-adyen.md
             - name: 東ヨーロッパ
               items:
                 - name: 共通
@@ -2436,7 +2438,7 @@
                       href: e-commerce-extensibility/event-based-data-actions.md
                     - name: コア データ アクション
                       href: e-commerce-extensibility/core-data-actions.md
-                    - name: Retail Server API の呼び出し
+                    - name: Commerce Scale Unit API の呼び出し
                       href: e-commerce-extensibility/call-retail-server-apis.md
                     - name: Retail Server 拡張 API の呼び出し
                       href: e-commerce-extensibility/call-retail-extension-api.md
@@ -2514,8 +2516,6 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: 独立したパッケージ SDK のビルド パイプラインの設定
                   href: dev-itpro/build-pipeline.md
-                - name: Commerce および Finance and Operations のビルド システムのマージ
-                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行
                   href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: Retail SDK の拡張機能サンプル
@@ -2628,8 +2628,6 @@
                               href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Hardware Station の拡張機能
               items:
-                - name: Hardware Station および拡張機能
-                  href: dev-itpro/hardware-station-extensibility.md
                 - name: POS と新しいハードウェア デバイスの統合
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server の拡張機能

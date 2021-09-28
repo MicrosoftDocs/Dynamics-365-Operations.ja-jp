@@ -1,25 +1,21 @@
 ---
 title: HierarchyViewer コントロール
 description: この記事では、HierarchyViewer コントロールについて説明します。このコントロールを使用して、人、製品、または組織の階層関係を表現できます。
-author: RobinARH
-ms.date: 06/20/2017
+author: jasongre
+ms.date: 08/25/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31081
-ms.assetid: 09358d27-6edc-420a-a7b6-83785b8ba0c6
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 244343a52ab29f7abe7d92aec4fdede4233759a97b5927f22e5f45ee5735e1a0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 326e09c5ddbe5297d292e871f7928f8e9d21dea5
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733649"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472186"
 ---
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 
@@ -31,9 +27,12 @@ ms.locfileid: "6733649"
 
 HierarchyViewer コントロールを使用して、人、製品、または組織の階層関係を表現できます。 これは主に、従来の上から順の階層構造の関係を理解するのに役立つ視覚的な方法、およびフォーカスされたノードで表されるエンティティに移動する方法として使用されます。 HierarchyViewer コントロールを使用すると、わずかなスペースで深く入れ子になった複数レベルの内容を精査できます。 コントロールは、表示されているツリー構造の部分を制御するために、ノードを展開したり折りたたんだりします。 非連結コントロールであるため、HierarchyViewer データは抽象化クラスによって管理され、主に単純なツリー リレーションシップでデータを視覚化する方法として使用されます。 従来のツリーでの階層データについては、標準のツリー コントロールがあります。 
 
-[![HierarchyViewer コントロールのツリー構造を示す図。](./media/hierarchyviewer_page.png)](./media/hierarchyviewer_page.png) 
+![HierarchyViewer コントロールのツリー構造を示す図。](./media/hierarchyViewer_refresh.png)
 
-HierarchyViewer コントロールは、常に単一ブランチで最大 3 つのレベルを示します。 階層リンク証跡は、現在のツリーの分岐下にある親のパスを示します。 最上位レベルは現在の上位ノードを示し、常に 1 つのメンバーを持ちます。 このメンバーは必ずしも root である必要はありません。 第 2 レベルである子ノードは、不定数のメンバー ノードを有することができます。 既定では、これらのメンバー ノードの 3 つは各ページに表示されます。 表示されるメンバー ノードの数は、**子供の数** プロパティを使用して設定できます。 コントロールは、子レベルのメンバーの右と左に表示されます。 最後のレベルである孫ノードは、不定数のメンバー ノードを持つことができます。 可視メンバー ノードの数は、**孫の数** プロパティによって制御されます。 HierarchyViewer コントロールは、孫レベルのメンバーの上と下に表示されます。 ノードの対話型の表示にはビジネス ロジックは必要ありません。
+> [!NOTE]
+> このビジュアルは、[Finance and Operations のバージョン 10.0.22 のプラットフォーム更新プログラム](../get-started/whats-new-platform-updates-10-0-22.md) から使用可能です。
+
+HierarchyViewer コントロールは、常に 4 つのレベルの情報を表示します。 現在のノードはツリーの現在のフォーカスであり、必ずしもルート ノードである必要はありません。 現在のノードは、現在のビューで最大の物理ノードで表され、左側に色付きバーが表示されます。 現在のノードの上には、ルート ノードから現在のノードまで小さい親ノードの軌跡があります。 現在のノードの下には子ノードのレベルがあり、このレベルでは無数のノードが存在する可能性があります。 既定では、各ページで一度に 3 つの子ノードが表示されますが、**子供の数** プロパティを調整することで変更できます。 **次へ** および **前に** リンク ボタンを使用すると、ユーザーは子レベルで他のノードにページングできます。 最後に、各子ノードに対して表示される孫ノードのレベルがあります。 各子には、無数の孫ノードがあります。また、各子ノードに対して一度に表示される孫の数は、**孫の数** プロパティによって制御されます。 ユーザーは、**次へ** および **前へ** 矢印ボタンを使用して、孫レベルでメンバを通じてページ を上または下に移動できます。 ノードの対話型の表示にはビジネス ロジックは必要ありません。
 
 ## <a name="business-logic-interaction"></a>ビジネス ロジック インタラクション
 HierarchyViewer コントロールは、データの視覚化とナビゲーションを提供します。 HierarchyViewer コントロールは、読み取り専用のコントロールです。 エンティティ (従業員、製品、または組織) を選択するために使用でき、HierarchyViewer コントロール外のフォームのその他の表示および入力フィールドで、対応するデータを管理できます。 これは、各ノードの各ユーザーのフォーカスで発生する選択イベントによって実行されます。
@@ -101,10 +100,6 @@ protected void loadNodeDescendants(HcmPositionNode _node, int _depth, Common _co
 ```
 
 ## <a name="changing-node-visuals"></a>ノード ビジュアルの変更
-ノードのビジュアルを変更することはできません。 **ExtendedStyle** プロパティを使用して操作することができる既定のレイアウトを持つ一連のバインドされていないコントロールをコントロールが提供して、作成者が選択できる既定の代替セットを提供することが設計の目的です。
-
-
-
-
+ノードのビジュアルを変更することはできません。 このデザインは、一貫したビジュアルおよびユーザー操作を示します。 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

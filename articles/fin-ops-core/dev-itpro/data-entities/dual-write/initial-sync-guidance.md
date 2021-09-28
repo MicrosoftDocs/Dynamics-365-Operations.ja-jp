@@ -4,23 +4,18 @@ description: このトピックでは、制約、既知の問題、およびデ�
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d5cf52b612145f4e33573a60f799bb59a158fdf
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: d04732b2b6c2422278005758b8d3b64f92ff35b2
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393511"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416391"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 

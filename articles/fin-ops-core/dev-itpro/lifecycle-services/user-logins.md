@@ -1,7 +1,7 @@
 ---
 title: ユーザー サインインの追跡
 description: このトピックでは、Finance and Operations アプリにサインインして使用するユーザーの監査ログを作成する方法について説明します。
-author: manalidongre
+author: angelmarshall
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: tsmarsha
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 69c05c0046db94894b0422325082d14cd52c7d1b
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 14be9297515c8ced2ed188fffe75050948e82d28
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404059"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500491"
 ---
 # <a name="track-user-sign-ins"></a>ユーザー サインインの追跡 
  

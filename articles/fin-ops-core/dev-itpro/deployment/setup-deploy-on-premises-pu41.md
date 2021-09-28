@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 07/01/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 2ec97a7f98b96788b02989a937ae62e8a9a9bcaf246c22fbc4cc59fa19ae2034
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 24ffd111fe49a2ddd140f884c2614a62b6f204c9
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715224"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500543"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
@@ -300,9 +300,9 @@ Finance + Operations を機能させるために、いくつかのユーザー �
 | 財務レポート クリック ワンス デザイナー サービス アカウント | gMSA | | Contoso\\svc-FRCO$ |
 | AOS サービス アカウント                                     | gMSA | 将来校正するためにこのユーザーを作成する必要があります。 Microsoft は今後のリリースで、AOS を gMSA と連携させる予定です。 このユーザーを設定時に作成することで、gMSA へのシームレスな移行を確実にすることができます。\* | Contoso\\svc-AXSF$ |
 | SSRS ブートストラッパー サービス アカウント                       | gMSA | レポート サービス ブートストラッパーは、このアカウントを使用して SSRS サービスをコンフィギュレーションします。 | Contoso\\svc-ReportSvc$ |
-| AOS サービス アカウント                                     | ドメイン アカウント | AOS は、一般提供 (GA) リリースでこのユーザーを使用します。\* | Contoso\\ AXServiceUser |
+| AOS サービス アカウント                                     | ドメイン アカウント | AOS は、一般提供 (GA) リリースでこのユーザーを使用します。\* | Contoso\\AXServiceUser |
 | AOS SQL DB 管理者ユーザー                                   | SQL ユーザー | Finance + Operations は、このユーザーを使用して SQL\*\* を認証します。 このユーザーは、今後のリリース \*\*\* で gMSA ユーザーにも置き換えられます。 | AXDBAdmin |
-| ローカル配置エージェント サービス アカウント                  | gMSA | ローカル エージェントはこのアカウントを使用して、さまざまなノードでの展開を調整します。 | Contoso\\ Svc-LocalAgent$ |
+| ローカル配置エージェント サービス アカウント                  | gMSA | ローカル エージェントはこのアカウントを使用して、さまざまなノードでの展開を調整します。 | Contoso\\Svc-LocalAgent$ |
 
 \* これらのアカウントでは、地域の設定を変更しないでください。 既定の EN-US リージョン設定が必要です。 
 
@@ -323,7 +323,7 @@ DNS は AD DS と統合されており、ネットワーク内のリソースを
 2. コンソール ツリーでドメイン コントローラー名を右クリックし、**新しいゾーン** \> **次へ** の順に選択します。
 3. **プライマリ ゾーン** を選択します。
 4. **Active Directory にゾーンを保存 (DNS サーバーが書き込み可能なドメイン コントローラーの場合にのみ使用可能)** が選択されたままの状態で、**次へ** を選択します。
-5. **このドメインのドメイン コントローラーで実行されているすべての DNS サーバーに対して : Contoso.com** を選択し、**次へ** を選択します。
+5. **このドメイン (Contoso.com) のドメイン コントローラーで実行されているすべての DNS サーバーに対して** を選択し、**次へ** を選択します。
 6. **前方参照ゾーン** を選択し、**次へ** を選択します。
 7. 設定するゾーン名を入力し、**次へ** をクリックします。 たとえば、**d365ffo.onprem.contoso.com** と入力します。
 8. **動的更新を許可しない** を選択し、**次へ** を選択します。
@@ -712,7 +712,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
     ```powershell
     #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
+    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ClusterConfigFilePath .\ClusterConfig.json
 
     .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
     ```
@@ -721,7 +721,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
     ```powershell
     #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
+    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser -ClusterConfigFilePath .\ClusterConfig.json
 
     .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
     ```

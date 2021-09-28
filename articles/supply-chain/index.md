@@ -2,7 +2,7 @@
 title: Supply Chain Management ホーム ページ
 description: このページでは、Supply Chain Management 機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: kamaybac
-ms.date: 01/08/2021
+ms.date: 09/15/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ac5a8005851dc2894a0fbed74f47be6e1e14b58
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416554"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487867"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
@@ -60,9 +60,8 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 
 - [Field Service と Finance and Operations の間の作業指示書の同期](https://youtu.be/hAB4TDVMjxU)
 
-これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 (2017 年 12 月) に追加された新しい Supply Chain Management 機能を要約しています。
+これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 (2017 年 12 月) に追加された新しい Supply Chain Management 機能の概要をご紹介します。
 
-- [Prospect to cash integration (見込顧客リストの現金化への統合)](https://youtu.be/AVV9x5x-XCg) 
 - [最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration (倉庫テンプレートを使用したコンフィギュレーションのコピー)](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 

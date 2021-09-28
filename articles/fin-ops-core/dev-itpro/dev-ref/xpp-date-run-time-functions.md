@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a13cdc90bf9897a0440871657f742cb87e0d8f17be0b1e79058b5c2e8177f2f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 319cf64c2ce3d77451a3d6816ad53700eee6e07d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721902"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463542"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 
@@ -185,7 +185,7 @@ endMth(0221989); //Returns the date 2821989.
 ```
 
 ## <a name="mkdate"></a>mkDate
-日、月、および年を示す 3 つの整数に基づいて日付を作成します。
+日、月、および年を示す 3 つの整数に基づいて日付を作成します。 "y" など、年の引数の "短縮形" 値はサポートされていません。
 
 ```xpp
 date mkDate(int day, int month, int year)
@@ -195,7 +195,7 @@ date mkDate(int day, int month, int year)
 
 | パラメーター | 説明                                                               |
 |-----------|---------------------------------------------------------------------------|
-| 日       | 月の日を表す整数。                          |
+| 曜日       | 月の日を表す整数。                          |
 | 月     | 年の月を表す整数。                         |
 | 年      | 1900 年から 2154 年の間で必要とする年を表す整数。 |
 

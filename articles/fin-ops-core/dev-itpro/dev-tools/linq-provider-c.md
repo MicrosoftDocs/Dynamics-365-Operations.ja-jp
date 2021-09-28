@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3dd85fbd6ccf59dc5a3b60f77b9de822a4062991a7f795328d7d28846dea5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5a8ec1ef1221c9b1a45b873c4bb9bc8da79209d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776595"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463546"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C\# の統合言語クエリ (LINQ) プロバイダー
 
@@ -176,12 +176,5 @@ private IEnumerable RichCustomers(bool orderByName)
 ### <a name="set-based-operations-with-linq"></a>LINQ を使ったセットに基づく操作
 
 LINQ クエリは、CRUD 操作に対して適用できます。 ただし、レコードの更新、削除、挿入のモデルはセット ベース操作の式には役に立ちません。 現在、セットベース操作に変換される LINQ モデルに追加する拡張機能に取り組んできます。
-
-## <a name="additional-resources"></a>追加リソース
-
-[X++ と X++ コンパイラの変更](programming-language-support.md)
-
-[開発およびカスタマイズのホーム ページ](developer-home-page.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

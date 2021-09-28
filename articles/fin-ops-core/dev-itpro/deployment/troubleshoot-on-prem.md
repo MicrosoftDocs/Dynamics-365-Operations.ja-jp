@@ -2,7 +2,7 @@
 title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
-ms.date: 04/28/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 06a8927f68ca59e45b481f5bf9d04ff12178f875f43691b02d4a649acd6f4436
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39cecf4f1e6d185851f22275260bae17aaf919a2
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763506"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441253"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -1053,7 +1053,7 @@ Test-D365FOConfiguration.ps1 を実行時に 「証明書を検出できませ�
 
 クライアントとサーバーが疎通できない場合は双方のアルゴリズムが異なることが原因です。作成した証明書が指定したプロバーダーを使用しているか確認をしてください。これについては"Plan and acquire your certificates" の項目で解説しています。ご利用の環境に応じた適切な設定と配置を行ってください。
 
-- [プラットフォームの更新 41 以降](setup-deploy-on-premises-pu41.md#plancert)
+- [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#plancert)
 - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#plancert)
 
 ## <a name="find-a-list-of-group-managed-service-accounts"></a>グループ管理サービス アカウント の一覧の検索
@@ -1100,7 +1100,7 @@ AOS ユーザーはローカル管理者グループに属しておらず、ユ�
 
 1. 環境の適切な設定および配置トピックの「VMs とドメインを結合」のセクションで説明されているように、ローカル管理者として AOS ユーザーを追加します。
 
-    - [プラットフォームの更新 41 以降](setup-deploy-on-premises-pu41.md#joindomain)
+    - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#joindomain)
     - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#joindomain)
  
 2. すべての AOS コンピューターで、**Config-PreReq** スクリプトを実行します。
@@ -1569,5 +1569,80 @@ System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name,
 
 **解決策:** SSMS バージョン 17.9.1 をインストールします。
 
+## <a name="report-deployment-fails-on-version-10019-and-later"></a>レポートの配置はバージョン 10.0.19 以降で失敗する
+
+**問題:** 配置中にレポートの配置が失敗します。 レポート配置ログに表示されるエラーは次のとおりです。
+
+```stacktrace
+Publish-AXReport : Value cannot be null.
+Parameter name: The value supplied for parameter 'serviceName' cannot be null or empty.
+At C:\ProgramData\SF\AOS12\Fabric\work\Applications\AXSFType_App110\AXSF.Scripts.1.0.20210617153432\Reporting.psm1:492 char:9
++         Publish-AXReport -MaxDegreeOfParallelism 1 -ErrorAction Conti ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ CategoryInfo          : OpenError: (Microsoft.Dynam...shReportCommand:PublishReportCommand) [Publish-AXReport], ArgumentNullException
++ FullyQualifiedErrorId : Value cannot be null.
+Parameter name: The value supplied for parameter 'serviceName' cannot be null or empty.
+Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
+```
+
+**理由:** AOS は BI ノードで実行されているサービスの一覧を取得して、現在インストールされている SSRS のバージョンを探す必要があります。 AOS を実行するアカウントには、サービスの一覧を取得するための適切なアクセス許可が付与されていないので、失敗して serviceName を取得できません。
+
+**解決策:** LCS の共有資産ライブラリから使用できるインフラストラクチャ スクリプトのバージョン 2.11.0 がリリースされ、これらのアクセス許可が反映され、serviceName が取得可能になります。
+
+#### <a name="automatically-add-these-permissions"></a>次のアクセス許可を自動的に追加します。
+1. LCS の共有アセット ライブラリから最新のインフラストラクチャ スクリプトをダウンロードします。
+1. 必要に応じて ConfigTemplate.xml を移行します。
+1. 管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+    
+1. リモート処理スクリプトを使用しない場合に、生成した VM フォルダを BI ノードにコピーします。
+1. 管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    # If remoting, execute
+    # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+    .\Complete-PreReqs.ps1
+    ```
+    
+1. 設定を確認するために、管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    # If Remoting, execute
+    # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Test-D365FOConfiguration.ps1
+    ```
+
+> [!IMPORTANT]
+> リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[手順 20. リモート処理が使用された場合、CredSSP を終了処理する](./setup-deploy-on-premises-pu41.md#teardowncredssp) を参照してください。
+
+#### <a name="manually-add-these-permissions"></a>次のアクセス許可を手動で追加します。
+1. BI ノードに移動します。
+1. lusrmgr.msc (ローカル ユーザーとグループ) を開きます。
+1. **Dynamics365ReadServices** という新しいグループを作成します。
+1. (axserviceuser、svc-AXSF$ など) で AOS を実行するアカウントを、上で作成したグループに追加します。
+1. LCS の共有アセット ライブラリから最新のインフラストラクチャ スクリプトをダウンロードします。
+1. インフラストラクチャ スクリプトをBI (SSRS) ノードにコピーします。
+1. 次のコンテンツを含む scmgroups.csv ファイルを作成します。
+
+    ```text
+    "Name"
+    "Dynamics365ReadServices"
+    ```
+    
+1. 管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    .\Set-ServiceControlManagerPermissions.ps1
+    ```
+    
+1. 設定を確認するために、管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    .\Set-ServiceControlManagerPermissions.ps1 -Test
+    ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: jasongre
-ms.date: 06/28/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2ffd926749d7b4e628e26dd03697a5090dfc1e8c389503e6ae146571963c3550
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04619d8e1f9a8dd2fe0b5b4e98975ccd45dcc48c
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768379"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431328"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -73,7 +73,7 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 
 - Microsoft 365 ライセンスが、ユーザーのアカウントに関連付けられています。
 - ユーザーは、外部ユーザーではなくテナントの一般的なユーザーです (別のテナントのユーザーなど)。
-- テナント用の SharePoint サイト (たとえば、 Contoso.SharePoint.com など) が存在します。
+- テナント用の SharePoint サイト (たとえば、Contoso.SharePoint.com など) が存在します。
 - SharePoint サイトでは、**このサイトが検索結果として表示されるのを許可** するように構成されています。
 - ユーザーは、ドキュメントが格納されているフォルダにアクセスできます。
 
@@ -317,5 +317,12 @@ Azure Blob Storage に格納されている添付ファイルが誤って削除�
 
 ファイルは、WOPI サービスによって現在のユーザーのアクセス許可を使用して SharePoint から取得されます。 これらのファイルは、ドキュメント プレビューを表示するために HTML で表示されます。 つまり、現在のユーザーは、ファイルをプレビューしたり開いたりするためにファイルにアクセスできる必要があります。
 
+## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
+
+### <a name="issue-when-interacting-with-document-management-or-electronic-reporting-users-receive-an-error-similar-to-invalid-length-for-a-base-64-char-array-or-string"></a>問題: ドキュメント管理または電子レポートと対話する場合、ユーザーに「Base-64 の文字配列または文字列の長さが無効です」のようなエラーが表示されます
+
+**説明**: 通常、この問題は Office Web Apps サーバー用のトークンが無効になったためです。  
+
+**修正**: 管理者は、**全般** タブの **ドキュメント管理パラメーター** ページで、**Office Web App サーバー** フィールドの右側の **トークンの更新** ボタンを選択する必用があります。  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

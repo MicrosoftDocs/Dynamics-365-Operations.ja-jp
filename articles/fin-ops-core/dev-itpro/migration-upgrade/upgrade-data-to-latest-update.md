@@ -2,7 +2,7 @@
 title: 開発環境またはデモ環境でデータをアップグレードする
 description: このトピックでは、Finance and Operations アプリケーション リリースのアップグレードについて説明します。
 author: laneswenka
-ms.date: 06/29/2020
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 9220110340a640612d97b9a0beac87c8e6a1f7e5720b06604a2336b64c2c7448
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12959f1561b04cc80bc7294cad15701fae3538fe
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729009"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487034"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
@@ -50,12 +50,6 @@ ms.locfileid: "6729009"
 
      Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
      ```
-
-1. Microsoft Dynamics AX 2012 からアップグレードする場合は、データ アップグレードを実行する前に、移行先の環境に次のアプリケーション X++ 修正プログラムをインストールします:
-
-    - KB 4033183 - Dynamics AX 2012 R2 または Dynamics AX 2012 R3 Pre-CU8 non-retail アップグレードは、dbo.RETAILTILLLAYOUTZONE のオブジェクトが存在しないため失敗しました。
-    - KB 4040692 - Microsoft Dynamics 365 for Operations 7.2 への Dynamics AX 2012 R3 のアップグレードは、SalesLineIdx に RetailSalesLine の重複インデックスが存在するため失敗しました。
-    - KB 4035490 - GeneralJournalAccountEntry MainAccount フィールドのアップグレード スクリプトに関するパフォーマンスの問題。
 
 1. Dynamics 365 Finance バージョン 10.0.9 または 10.0.10 にアップグレードする場合、データのアップグレードを実行する前に、品質更新プログラムを移行先の環境にインストールします。
 1. 標準デモ データのデータベースとして開始されるデータベースをアップグレードする場合も、次のスクリプトも実行する必要があります。 このステップは、デモ データにカーネル X++ クラスの不適切なレコードが含まれているため必要です。

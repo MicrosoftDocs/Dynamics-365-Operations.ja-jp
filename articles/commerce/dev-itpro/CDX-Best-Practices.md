@@ -2,7 +2,7 @@
 title: Commerce Data Exchange のベスト プラクティス
 description: このトピックでは、Microsoft Dynamics 365 Commerce 環境の Commerce Data Exchange (CDX) によるデータ同期について説明します。
 author: jashanno
-ms.date: 07/15/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 1600675a553f7fbba114a4be78747a8d325eda211661d07d6f86c1a3945ecf54
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 489dfaac4e61b06a1523ff3717f1fa819a48f232
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720000"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441327"
 ---
 # <a name="commerce-data-exchange-best-practices"></a>Commerce Data Exchange のベスト プラクティス
 
@@ -41,7 +41,7 @@ ms.locfileid: "6720000"
 
 次のコンフィギュレーションがリリースされましたが、一部の使用シナリオでは役に立たない可能性のあるロジックが変更されます。 これらの機能はテスト済ですが、完全に検証されていないシナリオもあります。 次の表では、機能の信頼性に関する情報を提供するために満期がリスト化されています。
 
-機能は月によって変化しますので、特定の機能の満期や新しい機能が追加されたかどうかに関して、もう一度確認する価値があります。 次の機能のいずれかを適用するには、**Retail と Commerce > 本社の設定 > パラメーター > コマース パラメーター** の順に移動します。  左端のメニューで、**コンフィギュレーション パラメーター** を選択します。  表示されるページで、**名前** フィールドにキー (下の表に示す) を入力し、既定値を (下の表の **説明** 列に示す) を **値** フィールドに入力します。
+機能は月によって変化しますので、特定の機能の満期や新しい機能が追加されたかどうかに関して、もう一度確認する価値があります。 次の機能のいずれかを適用するには、**Retail と Commerce > 本社の設定 > パラメーター > コマース共有パラメーター** の順に移動します。  左端のメニューで、**コンフィギュレーション パラメーター** を選択します。  表示されるページで、**名前** フィールドにキー (下の表に示す) を入力し、既定値を (下の表の **説明** 列に示す) を **値** フィールドに入力します。
 
 | 機能 | キー | 説明 |  満期 |
 |------------------|---------------------|------------------------------|-----------------------------------|
@@ -115,8 +115,9 @@ ALTER INDEX [IX_INVENTDIM_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WIT
 
 - [Commerce Data Exchange のトラブルシューティング](CDX-Troubleshooting.md)
 - [Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md)
+- [Commerce のオフライン実装とトラブルシューティング](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce アーキテクチャの概要](../commerce-architecture.md)
-- [ストア内トポロジの選択](retail-in-store-topology.md)
+- [店舗内トポロジの選択](retail-in-store-topology.md)
 - [デバイス管理実装ガイダンス](../implementation-considerations-devices.md)
 - [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md)
 - [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)

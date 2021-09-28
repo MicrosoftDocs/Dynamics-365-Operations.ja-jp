@@ -2,24 +2,21 @@
 title: IT プロおよび開発者向けコマース
 description: このページには、IT プロとコマースをサポートする開発者が利用できるリソースが一覧表示されています。
 author: RobinARH
-ms.date: 06/02/2020
+ms.date: 08/26/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
 ms.custom: intro-internal
-ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1de6a3049abe465547e4853e4b6f8ab503860c0cc32ca2c319ccf1d958a0dc6e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba5ad53652ed15cf650ffb2e1aca57b8e05ee242
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760888"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500318"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -113,7 +110,6 @@ ms.locfileid: "6760888"
 ## <a name="hardware-station"></a>Hardware station
 
 - [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md)
-- [Hardware Station の拡張機能](hardware-station-extensibility.md)
 - [POS と新しいハードウェア デバイスの統合](hardware-device-extension.md)
 
 ## <a name="commerce-runtime"></a>Commerce Runtime
@@ -129,11 +125,8 @@ ms.locfileid: "6760888"
 ## <a name="retail-sdk"></a>Retail SDK
 
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)
-- [Retail SDK の今後の変更](UpcomingSDKChanges.md)
-- [バージョン 10.0.10 から 10.0.13 における開発と ALM の変更](dev-changes-10-13.md)
-- [独立したパッケージ SDK ビルド パイプラインの設定](build-pipeline.md)
+- [独立したパッケージ SDK のビルド パイプラインの設定](build-pipeline.md)
 - [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
-- [コマースおよび Finance のビルド システムのマージ](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行](retail-sdk/migrate-sdk.md)
 - [Retail ソフトウェア開発キット (SDK) のサンプル](retail-sdk/retail-sdk-samples.md)
 - [GitHub および NuGet からサンプルとパッケージのダウンロード](retail-sdk/sdk-github.md)
@@ -155,7 +148,6 @@ ms.locfileid: "6760888"
 - [Commerce SDK ビルド パイプラインの設定](retail-sdk/SDK-build-pipeline.md)
 - [Retail SDK FAQ](retail-sdk/sdk-faq.md)
 - [Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)](retail-server-icontroller-extension.md)
-- [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以前)](retail-server-extension.md)
 - [外部アプリケーションでの Retail Server API の使用](consume-retail-server-api.md)
 
 ## <a name="ecommerce"></a>eCommerce

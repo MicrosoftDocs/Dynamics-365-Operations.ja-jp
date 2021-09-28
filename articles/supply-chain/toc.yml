@@ -80,8 +80,6 @@
                       href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-scm-10-0-20.md
-                    - name: Supply Chain Management 10.0.19 (2021 年 6 月)
-                      href: get-started/whats-new-scm-10-0-19.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -1669,6 +1667,8 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: 無限能力を使用したスケジューリング
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: 能力に基づいたリソース選択でスケジュールする
+                  href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: 計画最適化を使用した在庫マーキング
                   href: master-planning/planning-optimization/marking.md
                 - name: 会社間計画
@@ -2017,6 +2017,8 @@
                   href: procurement/request-quotations.md
                 - name: 見積依頼の作成
                   href: procurement/tasks/create-request-quotation.md
+                - name: RFQ の封緘入札
+                  href: procurement/sealed-bidding.md
                 - name: RFQ を使用する要求の作成
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: RFQ のスコア方法の作成

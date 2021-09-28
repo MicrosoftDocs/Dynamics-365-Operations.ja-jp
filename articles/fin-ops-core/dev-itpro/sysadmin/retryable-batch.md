@@ -1,20 +1,20 @@
 ---
 title: バッチ ジョブで自動再試行を有効にする
 description: このトピックでは、障害が発生した場合にバッチ ジョブで自動再試行を有効にする方法について説明します。
-author: sarvanisathish
-ms.date: 06/21/2021
+author: matapg007
+ms.date: 09/09/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: matgupta
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 4b34ccd0c895d19c67a3e0e10666ff7f74b819e1a1c72b9c1d1146ee923d4bc7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4bf537579fc6bcb2dbc6906f3a885f89fc7a14b9
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715212"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486883"
 ---
 # <a name="enable-automatic-retries-on-batch-jobs"></a>バッチ ジョブで自動再試行を有効にする
 
@@ -92,3 +92,13 @@ class TestBatchJob extends SysOperationServiceController implements BatchRetryab
 ### <a name="what-does-idempotent-mean-for-a-batch-job"></a>バッチ ジョブのべき等とは何ですか?
 
 このコンテキストでは、*べき等* とはつまり再試行によって結果全体が変更されたり、影響を受けないことです。 たとえば、あるものは 1 回だけ操作を実行する必要があり、1 回以上は実行しません。 そのため、元の実行で実行されたあるものは再試行の際に再度実行されません。
+
+### <a name="what-is-the-maximum-number-of-retries-that-batchretryable-supports-and-what-is-the-retry-interval"></a>BatchRetryable がサポートする再試行の最大回数と、再試行の間隔はどれくらいか?
+
+**MaxRetryCount** は、発生する例外のタイプにかかわらず、タスクに適用される再試行回数を指定します。 タスクが失敗した場合、バッチ プラットフォームは再試行された回数を評価します。 数字が **MaxRetryCount** の値より小さい場合、タスクは準備完了状態に戻り、再び取得することができます。
+
+**BatchRetryable** インターフェイスは 5 秒後に開始し、間隔の時間が 5 分に達した後、再試行を停止します。 (間隔の時間は次のように増加します: 5、8、16、32 など。)
+
+### <a name="can-i-change-the-maximum-number-of-retries-and-the-retry-interval"></a>再試行の最大回数と再試行間隔は変更できますか?
+
+**BatchRetryable** インターフェイスにより、一時的な SQL 接続の問題を処理できるようになります。 主にフレームワークによって制御します。 再試行の最大回数や再試行間隔など、**BatchRetryable** の設定を顧客が更新することはできません。

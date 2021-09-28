@@ -1,21 +1,21 @@
 ---
 title: ユーザー指定のチームの所有者
 description: このトピックでは、既定のチーム所有者を使用する代わりに、ユーザー指定のチーム所有者を設定する方法について説明します。
-author: sabinn-msft
+author: nhelgren
 ms.date: 04/26/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2021-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f93c9a77bd86d28a7bdfb23e70d9f782dc69612708221d10f96bf1867eddb4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea76efa34b5fd301be1a731e311dcc202238e353
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750538"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416393"
 ---
 # <a name="user-specified-team-owner"></a>ユーザー指定のチームの所有者
 

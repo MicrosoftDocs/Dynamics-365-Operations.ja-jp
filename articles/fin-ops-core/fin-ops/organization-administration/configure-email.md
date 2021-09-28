@@ -2,7 +2,7 @@
 title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: jasongre
-ms.date: 06/28/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b732df22650c3222d478f1fe5b579a77a128c5c9a738cdc7b01b8450ba08fdd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 084fe5ffd30d4e3eaf0585f755d31e1a299b7088
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754968"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431330"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -307,11 +307,26 @@ Microsoft 365 管理センターで、電子メールの送信に使用される
 #### <a name="verify-user-mailboxes"></a>ユーザー メールボックスを確認
 影響を受ける (またはすべての) ユーザー メールボックスにサインインして、それらが有効であり、サインインを使用してアクセスできることを確認します。
 
+### <a name="specific-exchange-email-issues"></a>特定の交換メールの問題
+
+#### <a name="issue-401-unauthorized-error-in-combination-with-using-exchange-email"></a>問題: 交換メールを使用する場合と組み合わせて 401 の無許可エラー 
+
+**問題**: メールの送信に交換を使用すると、ユーザーに 401 の無許可エラーが表示されます。 
+
+**説明**: この問題は、 Office 365 にて無効または無効な設定が原因で発生する可能性があります。 特定エラーの詳細を得るには、次の操作を行います。
+
+1.  **メール履歴** ページへ移動します。
+2.  フィルターを **失敗** メールの **メール ステータス** フィールドへ追加します。 
+3.  交換が示しているユーザーが Office 365 のメールボックスの有効なユーザーでは無いので、**メールの送信者** フィールド値に注意してください。 
+4.  該当するメールについて、**失敗について** セクションの **最後のメールの失敗メッセージ** フィールドを調べてください。
+
+**修正**: この問題を解決するには、指定したユーザーが Office 365 で有効なメールボックスを所持し、サイン インが有効かを確認してください。
+
 ### <a name="specific-smtp-email-issues"></a>特定の SMTP 電子メールの問題 
 
 電子メールが SMTP を介して送信されたときに引き続き問題が発生する場合は、以下の特定のエラーのいずれかが発生している可能性があります。 そうでない場合は、[SMTPer.net](https://www.smtper.net/) などのツールに SMTP アカウント情報を入力して、SMTP サーバーとアカウントが有効で正しく機能していることを確認します。
 
-### <a name="smtp-emails-fail-to-send-with-if-your-smtp-server-doesnt-support-authentication-please-clear-the-smtp-user-name-and-password"></a>SMTP メールは、「SMTP サーバーが認証をサポートしていない場合は、SMTP ユーザー名とパスワードをクリアしてください」と送信できません
+### <a name="issue-smtp-emails-fail-to-send-with-if-your-smtp-server-doesnt-support-authentication-please-clear-the-smtp-user-name-and-password"></a>問題: SMTP メールは、「SMTP サーバーが認証をサポートしていない場合は、SMTP ユーザー名とパスワードをクリアしてください」にて、送信できません
 
 **問題:** バージョン 10.0.19/Platform update 39 以降に移行すると、SMTP メールの送信に失敗し、「SMTP サーバーが認証をサポートしていない場合は、SMTP ユーザー名とパスワードをクリアしてください」というメッセージが添付されます
 
@@ -319,7 +334,7 @@ Microsoft 365 管理センターで、電子メールの送信に使用される
 
 **修正:** ユーザーは **電子メール パラメーター** ページ (**システム管理 > 設定 > 電子メール** の下部) に移動し、**SMTP 設定** タブ ページで **ユーザー名** および **パスワード** フィールドをクリアする必要があります。
 
-### <a name="smtp-emails-fail-to-send-with-5757-smtp-error-or-an-indication-that-youre-not-authenticated-or-authentication-is-required"></a>SMTP メールは、「5.7.57 SMTP」エラーが送信されないか、認証されていない、または認証が必要というメッセージが表示される
+### <a name="issue-smtp-emails-fail-to-send-with-5757-smtp-error-or-an-indication-that-youre-not-authenticated-or-authentication-is-required"></a>問題: SMTP メールは、「5.7.57 SMTP」エラーにて送信されないか、認証されていないか、または認証が必要というメッセージが表示される
 
 **問題:** SMTP を介して送信された電子メールは、次のいずれかの理由で送信できません。 
 -  「5.5.57 SMTP」例外
@@ -330,7 +345,7 @@ Microsoft 365 管理センターで、電子メールの送信に使用される
 
 **修正:** SMTP ユーザーの資格情報が正しいか確認します。  
 
-### <a name="smtp-emails-fail-to-send-with-microsoftdynamicsaxxppsecuritycryptoencryptionexception-encryption-error-occurred-with-exception"></a>SMTP メールは「Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: 暗号化エラーが例外で発生しました」で送信に失敗します
+### <a name="issue-smtp-emails-fail-to-send-with-microsoftdynamicsaxxppsecuritycryptoencryptionexception-encryption-error-occurred-with-exception"></a>問題: SMTP メールは「Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: 暗号化エラーが例外で発生しました」にて、送信できません
 
 **問題:** SMTP を介して送信された電子メールが送信に失敗し、次の例外をトリガーします: 「Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: 暗号化エラーが例外で発生しました」
 
@@ -338,7 +353,7 @@ Microsoft 365 管理センターで、電子メールの送信に使用される
 
 **修正:** **電子メール パラメーター** ページの [SMTP 設定タブ](#smtp-settings-tab) で SMTP パスワードをクリアして再入力します。 
 
-### <a name="smtp-emails-fail-to-send-with-client-does-not-have-permissions-to-send-as-this-sender"></a>SMTP メールは「クライアントにこの送信者として送信するアクセス許可がありません」と送信できません
+### <a name="issue-smtp-emails-fail-to-send-with-client-does-not-have-permissions-to-send-as-this-sender"></a>問題: SMTP メールは「クライアントにこの送信者として送信するアクセス許可がありません」にて、送信できません
 
 **問題:** SMTP を使用してメールを送信すると、「クライアントにこの送信者として送信するアクセス許可がありません」というエラーで送信に失敗する場合があります。  
 

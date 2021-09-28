@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c86deaa8d068001a20e8272e66d4ed00b8b95dba5a965a1f21f8a8df7cd21e70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 823bb8230ac351deed5b1c64fc74844001e812b5
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731416"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486857"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10020-august-2021"></a>Dynamics 365 Finance 10.0.20 (2021 年 8 月) の機能のプレビュー
 
@@ -42,8 +42,10 @@ ms.locfileid: "6731416"
 | 財務分析情報 | [キャッシュ フロー予測の外部データ](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/external-data-cash-forecasting) | [キャッシュ フロー予測に外部データを使用する](../finance-insights/external-data-in-cash-flow.md) |
 | 財務分析情報 | [予測銀行残高](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/forecast-bank-balance) | [キャッシュ フロー予測](../finance-insights/cash-flow-forecast-intro.md) |
 | 財務分析情報 | [インテリジェントな予算案](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/intelligent-budget-proposal) | [予算案](../finance-insights/budget-proposals.md) |
-| 財務分析情報 | [会計登録者ワークスペース](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/treasurer-workspace) | [現金持高](../finance-insights/cash-position.md) |
+| Finance Insights | [会計登録者ワークスペース](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/treasurer-workspace) | [現金持高](../finance-insights/cash-position.md) |
 
+> [!Note]
+> **機能管理** ワークスペースで Finance Insights を有効にする前に、Lifecycle Services (LCS) から Finance Insights アドインをインストールする必要があります。 
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
 
@@ -60,7 +62,7 @@ ms.locfileid: "6731416"
 Dynamics 365 Finance 10.0.20 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.20 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md) を参照してください。 
 
 ### <a name="bug-fixes"></a>バグ修正 
-この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8) を参照してください。
+この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にログインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8) を参照してください。
 
 ### <a name="regulatory-updates"></a>規制の更新
 Finance and Operations アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md)を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 

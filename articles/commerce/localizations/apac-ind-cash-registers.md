@@ -2,7 +2,7 @@
 title: インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 description: このトピックでは、インドで使用可能なキャッシュ レジスター機能の概要を示します。 また、機能を設定するためのガイドラインを示します。
 author: EvgenyPopovMBS
-ms.date: 09/17/2019
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: f79e71edff2ca8f78480af00d302e5636dc44f6a29287db94fe55bd4a2962401
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5c856e5e6971df3cba1b616577872f48e4d66e7
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731607"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478711"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
@@ -427,10 +427,10 @@ GSTR レポートに正しく反映されるためには、売上訂正票に元
 
 ## <a name="manage-customer-registration-numbers-from-pos"></a>POS からの顧客登録番号の管理
 
-> [!NOTE]
-> この機能は、アプリケーション更新プログラム 10.0.6 以降で使用可能です。
-
 顧客マスター レコードおよび顧客住所レコードを POS で作成または編集する場合、GSTIN、VAT 番号 (TIN)、および PAN 番号などの顧客登録番号を指定することができます。 顧客登録番号は領収書に印刷されるか、POS で顧客を検索するために使用されます。
+
+> [!NOTE]
+> **非同期モードの顧客を作成** が POS 機能プロファイルで有効になっている時は、POS の顧客登録番号を指定できません。 今後の更新に追加される可能性がある非同期顧客作成モードをサポートします。
 
 ### <a name="configure-printing-customer-registration-numbers-in-receipts"></a>領収書の顧客登録番号印刷のコンフィギュレーション
 

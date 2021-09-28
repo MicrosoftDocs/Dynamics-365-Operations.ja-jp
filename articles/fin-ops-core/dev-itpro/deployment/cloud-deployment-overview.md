@@ -2,7 +2,7 @@
 title: クラウド展開の概要
 description: このトピックでは、クラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および管理する必要があるデータとカスタマイズについて説明します。
 author: LaneSwenka
-ms.date: 06/04/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 502c2ff6c08e32be155a3d74f326f57c32662f92d39674a2b2222d446e741bc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c553624210bb7e38ed4ed029c4b0d498658ba250
+ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765792"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "7496581"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -91,7 +91,7 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > - 既定では、レベル 1 - 5 のすべてのサンドボックスで自動 Windows の更新が有効になっているため、無効にしないでください。 これにより、Microsoft がセキュリティまたは重大なインフラストラクチャの更新を自分の環境にプッシュするたびに、環境に最新の更新プログラムが適用され、毎月 Microsoft からリリースされたオペレーティング システムの修正プログラムが更新されます。  
 > - これらの環境の管理者パスワードは、変更しないでください。 変更済管理者パスワードをもつ環境では、Microsoft がフラグを設定します。 Microsoft は、管理者パスワードをリセットする権利を保有し、実際にリセットします。  
 > - Microsoft 管理対象 VM に新しいユーザー アカウントを追加することは、許可されていません。 Microsoft は、通知することなく新しく追加されたユーザー アカウントを削除する権利を保有し、実際に削除します。
-
+>
 > Finance and Operations は、現時点では FedRAMP ATO の対象外です。 Finance and Operations を米国でプロビジョニングする場合、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations) で説明されているように、顧客の保存データは米国のデータ センターで保管されます。 Finance and Operations では、その他の Dynamics 365 US Government や Microsoft 365 GCC コンプライアンス属性 (米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) には対応していません。 
 
 ## <a name="remote-desktop"></a>リモート デスクトップ
@@ -112,11 +112,11 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > - Azure データセンター IP アドレス範囲を追加しないでください。
 > - コーヒー店の場所などで、パブリック IP アドレスを追加しないでください。     
 > - 使用されていない IP セーフ リストのルールは削除する必要があります。 環境 IP におけるセーフ リストのルールを定期的に確認することを推奨します。
-
+>
 > Microsoft は Microsoft 管理環境で定期的なテストを実行して、環境が十分に制限されていることを検証します。
 > Microsoft は、上記のガイドラインに違反した IP アドレスのセーフ リストのルールを、通知することなく直ちに削除する権利を保有しています。
  
-### <a name="partnercustomer-managed-environments"></a>パートナー/お客様の管理環境 
+### <a name="customer-managedtier-1-environments"></a>顧客管理またはレベル -1 環境 
 既定では、Microsoft によって管理されていないすべての環境でリモート デスクトップが有効になります。 顧客は自分たちのサブスクリプションに所属している環境へのアクセスを制限することをお勧めします。 これは、Azure ポータルの環境でネットワーク セキュリティ グループのルールを直接設定することで実行できます。
 
 ## <a name="windows-remoting-winrm"></a>Windows Remoting (WinRM)
@@ -144,7 +144,7 @@ Microsoft 管理対象環境またはセルフサービスの階層 2 ~ 5 環境
 プライマリのデータ格納場所のみレプリケーションがサポートされます。 Financial Reporting サービスおよびエンティティ格納データベースは、プライマリ データベースから変換されたデータを使用し、リカバリ サイトの設定および Finance and Operations サービスの開始後に生成する必要があります。 
 
 ## <a name="service-availability-in-azure-regions"></a>Azure リージョンにおけるサービスの可用性
-Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ センターのサブセットに Finance and Operations アプリを展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations アプリでは、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[サービス説明のホワイト ペーパー](https://aka.ms/D365-Cloud-Service-Operations)をご覧ください。
+Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ センターのサブセットに Finance and Operations アプリを展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations アプリでは、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[Finance and Operations アプリ用サービスの説明](../../fin-ops/get-started/service-description.md) を参照してください。
 
 > [!IMPORTANT]
 > 顧客データがどこに格納されているかに関係なく、マイクロソフトは顧客またはエンドユーザーがアクセスできる場所を管理したり制限したりしません。
@@ -186,10 +186,10 @@ Dynamics 365 または Power Platform ファミリーの一部ではないが、
 カスタマイズを開発からサンドボックスまたは実稼動環境に移行する方法については、 [配置可能なモデルのパッケージの作成](../deployment/create-apply-deployable-package.md) を参照してください。
 
 ### <a name="can-i-bring-my-own-domain-name"></a>所有のドメイン名を使用することができますか。
-Azure Active Directory (AAD) が実行中で、AAD インスタンスの管理者が Finance and Operations アプリを AAD を使用して有効にした場合、自分のドメイン名を使用することができます。 これは通常、ライセンスを購入した後、オフィスの電子メールで行われます。 オファーを承諾するリンクをクリックすると、AAD がユーザーに対して設定されます。
+Azure Active Directory (Azure AD) が実行中で、Azure AD インスタンスの管理者が Azure AD 内で Finance and Operations アプリ有効にした場合、自分のドメイン名を使用することができます。 これは通常、ライセンスを購入した後、オフィスの電子メールで行われます。 オファーを承諾するリンクをクリックすると、Azure AD がユーザーに対して設定されます。
 
-### <a name="can-i-add-guest-aad-accounts-as-users"></a>ゲスト AAD アカウントをユーザーとして追加できますか。
-Azure Active Directory 内で適切に AAD アカウントを構成して、AAD 内で Finance and Operations アプリを有効にした場合は、ゲストの AAD アカウントを追加することができます。 
+### <a name="can-i-add-guest-azure-ad-accounts-as-users"></a>ゲスト Azure AD アカウントをユーザーとして追加できますか?
+Azure AD 内で適切に ゲスト Azure AD アカウントを構成し、Azure AD 内で Finance and Operations アプリを有効にした場合は、ゲスト アカウントを追加することができます。 
 
 ### <a name="why-am-i-no-longer-able-to-see-the-private-aos-machines-in-one-or-more-of-my-tier-2-through-tier-5-sandbox-environments"></a>プライベート AOS マシンを 階層 2 から階層 5 のサンドボックス環境の 1 つ以上で表示できなくなったのはなぜですか?
 Private AOS VM は、かつて AOS と BI コンピューター間の通信を保護する必要があったため、環境構成の一部でした。 最新の更新プログラムでは、AOS と BI マシン間のすべての通信は直接セキュリティで保護され、中間プライベート AOS 機械は不要になりました。 したがって、プライベート AOS マシンを削除する段階にあります。 バッチでマシンを削除しているので、環境の一部だけがプライベート AOS 機械を削除したことが判明することがあります。 この変更は、機能性やセキュリティにいかなる影響も及ぼさず、お客様には透明になります。
@@ -209,8 +209,10 @@ Microsoft が管理する階層 1 から階層 5 のサンドボックス環境�
 - 米国東部
 - 米国西部
 - 米国中部
- > [!IMPORTANT]
- > 米国中部は、2021 年 4 月 1 日から始まるセルフサービス移行のオプションではなくなりました。
+
+    > [!IMPORTANT]
+    > 米国中部は、2021 年 4 月 1 日から始まるセルフサービス移行のオプションではなくなりました。
+
 -   米国東部 2
 -   米国西部 2
 -   西中央アメリカ

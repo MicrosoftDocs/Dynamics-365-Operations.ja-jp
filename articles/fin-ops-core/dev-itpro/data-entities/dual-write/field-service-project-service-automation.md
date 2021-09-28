@@ -4,22 +4,18 @@ description: このトピックでは、 Field Service ソリューション と
 author: RamaKrishnamoorthy
 ms.date: 01/09/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 21311
-ms.assetid: ''
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25392dab63aa66ae1a434ef6650919836e802ab1ede184dd48c233704a760ca6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74cb96f4a36f67bb680caa4c0d8babb36decb8c1
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774425"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416665"
 ---
 # <a name="support-for-field-service-and-project-service-automation-solutions"></a>Field Service と Project Service Automation ソリューションのサポート
 

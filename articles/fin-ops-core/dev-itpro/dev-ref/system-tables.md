@@ -9,18 +9,21 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a30e2dcb3cb44fa4a9223f8e9a60802bdc04c23569e633dea4770e86eac3f1dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e630e68b66c1cd2c6e2f35835001537518ff3fac
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763488"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431252"
 ---
 # <a name="system-tables"></a>システム テーブル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、システム テーブルについて説明します。
+このトピックには、システム クラスで使用できるドキュメントが含まれています。 
+
+> [!NOTE]
+> このトピックは、システム テーブル メンバーの完全な一覧ではありません。 テーブルとそのメンバーの完全な一覧は、アプリケーション エクスプローラーで確認できます。
 
 ## <a name="common"></a>共通
 

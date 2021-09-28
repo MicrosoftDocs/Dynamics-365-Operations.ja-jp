@@ -1,7 +1,7 @@
 ---
 title: オンプレミス環境の再配置
 description: このトピックでは、オンプレミス環境の再展開について説明します。
-author: sarvanisathish
+author: PeterRFriis
 ms.date: 10/14/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 450d8883841c8bc94aa36488cb0ff95244aa7756d771400a3d8130a994ac0246
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 952c0e4bd841ddc4f079e90b47cbe9d41cf82191
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725122"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500541"
 ---
 # <a name="redeploy-on-premises-environments"></a>オンプレミス環境の再配置
 

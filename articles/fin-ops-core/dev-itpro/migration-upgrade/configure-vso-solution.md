@@ -2,24 +2,20 @@
 title: コード移行中の Azure DevOps マッピングのコンフィギュレーション
 description: このチュートリアルでは、LCS コードのアップグレード サービスが完了した後、開発ボックスを Azure DevOps プロジェクトにマップする方法を示します。
 author: RobinARH
-ms.date: 06/20/2017
+ms.date: 08/26/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 25951
-ms.assetid: 60b8c895-0d5d-4d6b-8e32-e9c2f688ca69
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9f302fa68a49e92dccbe0e945e1915d6fffd113412536ae6d683fc729af031e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e83df93d803073d190b16f3263d2e15e840460a
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760732"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474603"
 ---
 # <a name="configure-the-azure-devops-mapping-during-code-migration"></a>コード移行中の Azure DevOps マッピングのコンフィギュレーション
 
@@ -36,10 +32,10 @@ LCS コードのアップグレード サービスでは、Azure DevOps にア�
 ## <a name="key-concepts"></a>重要な概念
 - **Export** は、Microsoft Dynamics AX 2012 からのエクスポート後、XML ファイルを含んでいるプロジェクトです。 このプロジェクトは、アップグレード前の XML 形式のメタデータです。 このプロジェクトは、Dynamics AX 2012 からアップグレードする場合にのみ関係があります。
 - **メタデータ** は、アップグレード済のコードです (メタデータ XML ファイル)。
-- **プロジェクト** は、アップグレード中に使用できる 2 つのソリューションです。 1 つのソリューションである CodeMergeSolution は、競合し、また解決する必要がある要素を伴うプロジェクトを含むソリューションです。 もう 1 つのソリューション、UpgradedSolution には、アップグレードされたモデルごとに 1 つのプロジェクトのコレクションが含まれています。 たとえば、Azure DevOps で、以下の構造のようなものを表示します。 [![プロジェクト。](./media/filestructure_configuringyourvsosolution.png)](./media/filestructure_configuringyourvsosolution.png)
+- **プロジェクト** は、アップグレード中に使用できるソリューションです。 1 つのソリューションである CodeMergeSolution は、競合し、また解決する必要がある要素を伴うプロジェクトを含むソリューションです。 もう 1 つのソリューション、UpgradedSolution には、アップグレードされたモデルごとに 1 つのプロジェクトのコレクションが含まれています。
 
 ## <a name="map-azure-devops-to-your-development-box"></a>Azure DevOps の開発ボックスへのマップ
-1.  Visual Studio で、**チーム エクスプローラー &gt; チーム プロジェクトの選択 &gt; サーバー &gt; 追加** と進んでアカウントに接続します。
+1.  Visual Studio で、**チーム エクスプローラー &gt; チーム プロジェクトの選択 &gt; サーバー &gt; 追加。** と進んでアカウントに接続
 2.  チーム プロジェクトに URL を入力します。 **閉じる** を選択します。
 3.  Azure DevOps アカウントが表示されることを確認します。 右側で、作業するプロジェクトを選択します。 **接続** を選択します。
 4.  ここで、ワークスペースを Azure DevOps フォルダーにマップする必要があります。 **ソース コード エクスプ ローラ** に移動し、このマッピングを行います。

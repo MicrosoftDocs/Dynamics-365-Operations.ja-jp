@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae47592c408c47e547359e7d87b1c87e3aab84578574b469b29344da3cff991d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e87c87070da1ad813c112cdd99bf15317548ebb0
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768399"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414702"
 ---
 # <a name="link-x-modules-from-isv-packages-by-using-isv-studio"></a>ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
 
@@ -39,7 +39,7 @@ https://partner.microsoft.com/dashboard/commercial-marketplace/offers/<product-I
 
 ## <a name="update-your-x-model-descriptors"></a>X++ モデル記述子の更新
 
-ソリューションを構成するすべてのモデルについて、記述子 XML ファイルを検索します。 ソリューションに属しているすべての記述子で、パートナー センターの製品 ID を使用して `SolutionId` タグを更新します。
+ソリューションを構成するすべてのモデルについて、記述子 XML ファイルを検索します。 ソリューションに属しているすべての記述子で、パートナー センターの製品 ID を使用して `SolutionId` タグを更新します。 予期される結果を取得するには、要素の順序が次の例と一致している必要があります。
 
 :::code language="xml" source="code/descriptor.xml" highlight="19,20":::
 

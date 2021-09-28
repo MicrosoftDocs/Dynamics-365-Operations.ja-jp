@@ -4,22 +4,18 @@ description: このトピックでは、二重書き込みについてよく寄�
 author: robinarh
 ms.date: 07/21/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 21311
-ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d313597a1e421a635990f0413a32237ffd25156341bca240ec400687b77f884b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d8e307f786def39a378d9c9d9727b203cd46e315
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726225"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417045"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 

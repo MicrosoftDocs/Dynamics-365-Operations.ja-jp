@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.author: jorisde
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea4052272dd042080244fa0c9d0a387994274b0a037077320381597f4eea3c16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba791d5b7b948c9265758b138cbe1ce33c066b56
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743191"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431148"
 ---
 # <a name="visual-studio-2017-requirements-for-x"></a>X++ の Visual Studio 2017 の要件
 
@@ -51,4 +51,4 @@ Visual Studio のサポートされているエディションは次のとおり
 コマースおよび Visual Studio 2017 の詳細については、次のトピックを参照してください。
 
 - [Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行](../../../commerce/dev-itpro/retail-sdk/migrate-sdk.md)
-- [バージョン 10.0.10 から 10.0.13 における開発と ALM の変更](../../../commerce/dev-itpro/dev-changes-10-13.md)
+

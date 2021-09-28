@@ -1,26 +1,21 @@
 ---
 title: 複数のテーブル マップの管理
 description: このトピックでは、テーブル マップの選択、依存テーブル マップの一覧表示、テーブル マップとそれに関連するすべてのテーブルの有効化、および既存のデータをコピーする方法について説明します。
-author: sabinn-msft
+author: nhelgren
 ms.date: 08/12/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Developer
-ms.reviewer: v-douklo
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c403fba47aeba90f2889b00164309d77b3dfa08442b8b4a0bfa5404ca103395
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83ff241b57e1500507e8fdc43aba4b8608a94de3
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733111"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416217"
 ---
 # <a name="manage-multiple-table-maps"></a>複数のテーブル マップの管理
 

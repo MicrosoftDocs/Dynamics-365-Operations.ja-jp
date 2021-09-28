@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49aef84f0b474ca2d7d4084f1ccdee5fbac93abf
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 57a49544d2d9c1870662be95ba888fea16e3b49e
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404123"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413575"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -90,7 +90,7 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
     > [!NOTE]
     > Azure DevOps サーバーを使用している場合は、**/DefaultCollection** を Azure DevOps URL の末尾に追加します。
 
-+ **アクセス トークン** - ツールが Azure DevOps に接続できるようにするアクセス トークン。 個人用アクセス トークンを作成するか、保存した既存のアクセス トークンを使用する必要があります。 詳細については、[個人用アクセス トークンを使用したアクセスの認証](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) を参照してください。
++ **アクセス トークン** - ツールが Azure DevOps に接続できるようにするアクセス トークン。 個人用アクセス トークンを作成するか、保存した既存のアクセス トークンを使用する必要があります。 フル アクセスとして選択したスコープで作成することをお勧めします。 詳細については、[個人用アクセス トークンを使用したアクセスの認証](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) を参照してください。
 + **プロジェクト名** - Azure DevOps プロジェクトの名前。 RSATでは、指定された Azure DevOps URLに基づいて、使用可能なプロジェクト名とテスト プランを自動的に検出します。 その後、テスト プロジェクトおよびテスト計画を選択できます。
 + **テスト計画** - テスト ケースを含む Azure DevOps テスト計画 詳細については[テスト計画およびテスト スイートの作成](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan) を参照してください。
 
@@ -206,7 +206,7 @@ Microsoft が管理するサンドボックス、またはセルフ サービス
 6. 証明書ファイルをダブルクリックして、開きます。 **詳細** タブを参照し、**拇印** セクションが表示されるまで下にスクロールします。 **拇印** を選択し、テキスト ボックスの ID に注意します。 この捺印を選択するか、RSAT 設定に貼り付けます。
 ![拇印の設定。](media/rsat-lcs4.png)
 
-これで、この証明書を使用して環境に対してテストを実行できます。 証明書は期限が切れる前に Microsoft によって自動的にローテーションされます。その後、上記の手順 1 からこの証明書の新しいバージョンをダウンロードする必要があります。 セルフ サービス環境では、有効期限に最も近いダウンタイム ウィンドウで 90 日ごとにローテーションされます。 これらのダウンタイム ウィンドウには、顧客が開始したパッケージ展開、および環境を対象とするデータベース移動操作が含まれます。
+これで、この証明書を使用して環境に対してテストを実行できます。 証明書は期限が切れる前に Microsoft によって自動的にローテーションされます。その後、上記の手順 1 からこの証明書の新しいバージョンをダウンロードする必要があります。 セルフ サービス環境では、有効期限に最も近いダウンタイム ウィンドウで 60 日ごとにローテーションされます。 これらのダウンタイム ウィンドウには、顧客が開始したパッケージ展開、および環境を対象とするデータベース移動操作が含まれます。
 
 ## <a name="manual-configuration-of-authentication-certificates"></a>認証証明書の手動構成
 

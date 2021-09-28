@@ -1,20 +1,20 @@
 ---
 title: AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 description: このトピックでは、セルフサービス環境で Microsoft Dynamics AX 2012 からデータ アップグレードを行う方法について説明します。
-author: sarvanisathish
+author: rashmansur
 ms.date: 08/18/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2021-06-30
-ms.openlocfilehash: f15a8af561e2717c7dae2460ef3f923d484af589
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: a527a247b30e423c10004d84886137c27043b61e
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394526"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500489"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-self-service-environments"></a>AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 

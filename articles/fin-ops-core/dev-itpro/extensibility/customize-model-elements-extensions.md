@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7508d3c847c1d626521bc3aa00672c01a8fd7863a7a34164b9be769f0f92e744
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b283815884c6510eae3305869903fe330ac44ad
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720672"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463543"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 
@@ -197,7 +197,7 @@ ms.locfileid: "6720672"
 このクラスには、**FMRentalCharge** テーブルの **更新** および **挿入** イベントに登録するイベント ハンドラーの実装が含まれています。 Microsoft Dynamics AX では、テーブルおよび他の種類で発生する可能性のあるデータ イベントが導入されます。 基本 X++ コードをオーバーレイせずにビジネス ロジックを拡張するアプリケーションを有効にする、テーブルのデータ イベントを申し込むことができます。 このチュートリアルの後半で、簡単にテーブル イベントをサブスクライブする方法について説明します。
 
 > [!NOTE]
-> このクラスが拡張クラス ( \_拡張子の接尾辞によって示される) であることを確認します。 任意のクラスでイベント ハンドラーを作成することができます。このクラスは拡張クラスである必要はありません。 拡張子クラスは、拡張メソッドを作成するために必要です。 拡張メソッドの詳細については、[X++ デバッガーの機能](../dev-tools/new-x-debugger-features.md) 記事の「拡張メソッド」セクションを参照してください。
+> このクラスが拡張クラス ( \_拡張子の接尾辞によって示される) であることを確認します。 任意のクラスでイベント ハンドラーを作成することができます。このクラスは拡張クラスである必要はありません。 拡張子クラスは、拡張メソッドを作成するために必要です。 拡張メソッドの詳細については、[拡張メソッド](../dev-ref/xpp-classes-methods.md#extension-methods) 記事の「拡張メソッド」セクションを参照してください。
 
 ### <a name="view-the-plug-in-classes"></a>プラグイン クラスの表示
 
@@ -463,5 +463,5 @@ public static class FMVehicle_Extension
 
 [FMLab サンプル コードをダウンロードする](https://github.com/Microsoft/FMLab)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

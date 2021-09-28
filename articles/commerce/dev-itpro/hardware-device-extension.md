@@ -1,6 +1,6 @@
 ---
-title: POS と新しいハードウェア デバイスの統合
-description: このトピックでは、新しいハードウェア デバイスに販売時点管理 (POS) を統合する方法について説明します。
+title: POS を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成
+description: このトピックでは、販売時点管理 (POS) を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成する方法について説明します。
 author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
@@ -10,20 +10,45 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-ms.openlocfilehash: 308eaa6ee1bd96a84cb8bba752ad446507b19d93
-ms.sourcegitcommit: f1ef61ee3d731f68e11a5bebc154ed33a7b8eda5
+ms.openlocfilehash: b9c6058b7042d5472e120d2e77604ca77575a867
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "7383814"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500139"
 ---
-# <a name="integrate-the-pos-with-a-new-hardware-device"></a>POS と新しいハードウェア デバイスの統合
+# <a name="integrate-the-pos-with-a-new-hardware-device-and-generate-the-extension-installer"></a>POS を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、新しいハードウェア デバイスに販売時点管理 (POS) を統合する方法について説明します。 
+このトピックでは、販売時点管理 (POS) を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成する方法について説明します。 
 
-POS からハードウェア ステーションを呼び出すには、要求と応答を使用する必要があります。
+## <a name="hardware-station-overview"></a>Hardware Station の概要
+
+Hardware Station は、プリンター、キャッシュ ドロワー、スキャナー、および支払ターミナルなどのハードウェア周辺機器に接続するために Modern POS および Cloud POS で使用されます。 
+
+![HWS-Local-Traditional](media/hws-local.png)
+
+![共有 ハードウェア ステーション](media/hws-shared.png)
+
+## <a name="hardware-station-setup"></a>Hardware Station 設定
+
+開始する前に、 [Retail ハードウェア ステーションのコンフィギュレーションとインストール](../retail-hardware-station-configuration-installation.md) の情報を使用してハードウェア ステーションをインストールし、ハードウェアがどのようなものでインストールがどのようにされているかを知ることができます。
+
+## <a name="hardware-station-architecture"></a>Hardware Station アーキテクチャ
+
+ハードウェア ステーションは、ハードウェア ステーション アプリケーション プログラミング インターフェイス (API) 用の Web API を公開します。 新しいデバイス (たとえば、現金自動支払機) の新しいコントローラーを実装するか、または既存のデバイス タイプ (たとえば、新しいオーディオ ジャック磁気ストライプ リーダー (MSR) の実装) の既存のコント ローラーを上書きするかのいずれかによって、ハードウェア ステーションを拡張できます。
+
+![ハードウェア ステーション アーキテクチャ](media/hardware-station-architecture-1024x764.png)
+
+## <a name="hardware-station-extensibility-scenarios"></a>Hardware Station 拡張性シナリオ
+
+.NTE にサポートされている [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/) を使用して、ハードウェア ステーションの拡張性が獲得されます。 **拡張性の規定:** 拡張機能アセンブリで、常に、拡張機能の書き込みをします。 そのようにして、実際の拡張機能を記述し、アップグレードがかなり簡単になります。 拡張のための 2 つの基本的なシナリオがあります。
+
+-   **新しいデバイスを追加する** - 最初から用意されているハードウェア ステーションはデバイス (現金自動支払機など) をまだサポートしていません。 したがって、ハードウェア ステーションで新しいデバイスのサポートを追加する必要があります。
+-   **既存のデバイスに対する新しいデバイス タイプを追加する** - 最初から用意されているハードウェア ステーションの実装ではすでにデバイス (MSR など) がサポートされていますが、特定のデバイス タイプ (オーディオ ジャック MSR 実装) のサポートを追加する必要があります。
+
+POS からハードウェア ステーション API を呼び出すには、要求と応答を使用する必要があります。
 
 + **HardwareStationDeviceActionRequest** – POS からハードウェア ステーションに送信される要求。
 + **HardwareStationDeviceActionResponse** – ハードウェア ステーションから POS が受信した要求。
@@ -31,7 +56,6 @@ POS からハードウェア ステーションを呼び出すには、要求と
 拡張するクラスは、使用している Retail ソフトウェア開発キット (SDK) のバージョンによって異なります。
 
 + Retail SDK バージョン 10.0.11 以降では、**IController** インターフェイスを拡張します。
-+ バージョン 10.0.11 以前の Retail SDK バージョンでは、**HardwareStationController** および **IHardwareStationController** のクラスを拡張します。
 
 ## <a name="hardwarestationdeviceactionrequest"></a>HardwareStationDeviceActionRequest
 
@@ -199,50 +223,6 @@ namespace Contoso
 }
 ```
 
-## <a name="sample-code-for-retail-sdk-versions-before-version-10011"></a>Retail SDK バージョン 10.0.11 以前のサンプル コード
-
-```csharp
-namespace Contoso
-{
-    namespace Commerce.HardwareStation.ISVExtensionDevice
-    {
-        using System;
-        using System.Composition;
-        using System.Web.Http;
-        using Microsoft.Dynamics.Commerce.HardwareStation;
-
-        /// <summary>;
-        /// Fiscal register peripheral web API controller class.
-        /// </summary>
-
-        [Export("ISVEXTENSIONDEVICE", typeof(IHardwareStationController))]
-        [Authorize]
-        public class ISVExtensionDeviceController : HardwareStationController, IHardwareStationController
-        {
-            /// <summary>
-            /// Sample.
-            /// </summary>
-            /// <param name="request">Custom request.<param>
-            /// <returns>Result of Custom response.</returns>
-
-            [HttpPost]
-            public CustomResponse Sample(CustomRequest request)
-            {
-                ThrowIf.Null(request, "request");
-                try
-                {
-                    return null;
-                }
-                catch (Exception ex)
-                {
-                    throw ex;
-                }
-            }
-        }
-    }
-}
-```
-
 ## <a name="sample-pos-code-to-call-the-hardware-station-extension"></a>ハードウェア ステーション拡張機能を呼び出すためのサンプル POS コード
 
 POS 拡張機能から、次のパターンを使用してハードウェア ステーションを呼び出します。
@@ -254,11 +234,23 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
 
-## <a name="generate-an-extension-installer-for-the-shared-hardware-station-for-application-release-10018-or-later"></a>アプリケーション リリース 10.0.18 以降で使用する共有ハードウェア ステーションの拡張機能インストーラーの生成
+> [!NOTE]
+> 独立した POS 梱包 SDK またはシールド HWS インストーラーを使用していない場合は、[配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md) の手順に従って、配置用のパッケージを生成します。
 
-Dynamics 365 Commerce 10.0.18 以降では、シールド インストーラーがサポートされます。 拡張機能インストーラーは基本インストーラーとは別に生成できます。また、インストーラーは個別にインストールしてサービスを提供できます。 この機能は[シールド セルフサービス インストーラー](enhanced-mass-deployment.md)を使用している場合にのみ機能します。
+## <a name="package-the-hws-extension-with-modern-pos-to-use-local-hws"></a>ローカル HWS を使用するには、HWS 拡張機能を Modern POS にパッケージ化する
 
-共有ハードウェア ステーションのシールド拡張機能インストーラーを生成するには、次の手順に従います。
+> [!NOTE]
+> このセクションは、バージョン 10.0.22 以降の Finance and Operations アプリで POS 独立パッケージ SDK を使用している場合に適用 できます。
+ 
+ローカル HWS を使用するために HWS 拡張機能を Modern POS にパッケージ化するには、HWS 拡張機能を POS にパッケージ化する必要があります。 Modern POS JavaScript プロジェクトで、HWS プロジェクトへの参照を追加します。 次に、POS インストーラー プロジェクトを使用して拡張機能インストーラーを作成します。 詳細については、[Dynamics365Commerce.InStore/src/PosSample/ModernPos/ModernPos.jsproj GitHub リポジトリ](https://github.com/microsoft/Dynamics365Commerce.InStore) で、サンプル JavaScript プロジェクトを参照してください。
+
+HWS 拡張機能しかない場合は、サンプルから他の不要なプロジェクト参照をすべて削除してください。 **ModernPos.jsproj** プロジェクトは、**msix** インストーラーを作成し、インストーラ プロジェクトで消費して、**exe** インストーラーを作成します。 HWS 拡張機能は UWP アプリ拡張機能として配置されます。
+
+## <a name="generate-an-extension-installer-for-the-hardware-station"></a>ハードウェア ステーションの拡張機能インストーラーの生成
+
+Dynamics 365 Commerce 10.0.18 以降では、シールド インストーラーがサポートされます。 拡張機能インストーラーは基本インストーラーとは別に生成できます。また、インストーラーは個別にインストールしてサービスを提供できます。 この機能は[シールド セルフサービス インストーラー](enhanced-mass-deployment.md)を使用している場合にのみ機能します。 
+
+ハードウェア ステーションのシールド拡張機能インストーラーを生成するには、次の手順に従います。
 
 1. GitHub から [サンプル ハードウェア ステーション インストーラー プロジェクト](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31/src/HardwareStationSample/HardwareStation.Installer)をダウンロードして、Visual Studio で **HardwareStation.Installer.csproj** プロジェクトを開きます。
 2. ハードウェア ステーション拡張機能プロジェクトを、プロジェクト参照として **HardwareStation.Installer.csproj** インストーラー プロジェクトに追加します。 既存のサンプルのプロジェクト参照を **HardwareStation.Installer.csproj** プロジェクトから削除します。
@@ -283,9 +275,5 @@ Dynamics 365 Commerce 10.0.18 以降では、シールド インストーラー�
 9. 現在実行中の場合は、POS を閉じます。
 10. POS を開いて、共有ハードウェア ステーションを使用するように構成します。
 11. 拡張機能ハードウェア ステーションのシナリオを検証します。
-
-## <a name="generate-an-extension-installer-for-the-shared-hardware-station-for-dynamics-365-commerce-10017-or-earlier"></a>Dynamics 365 Commerce 10.0.17 またはそれ以前で使用する共有ハードウェア ステーションの拡張機能インストーラーの生成
-
-Dynamics 365 Commerce 10.0.17 またはそれ以前の共有ハードウェア ステーションに拡張機能インストーラーを生成するには、[配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)の手順に従います。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

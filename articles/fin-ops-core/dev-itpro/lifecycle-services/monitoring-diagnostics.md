@@ -2,7 +2,7 @@
 title: Lifecycle Services (LCS) の監視および診断ツール
 description: このトピックでは、環境の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services が提供するツールについて説明します。
 author: angelmarshall
-ms.date: 08/03/2020
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6746cacdf630fa7701a425c7f516f49acdec6c4755d7f63ec2bfc29007035b4e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fdc800bef61ad74eb3958038a052d513b289c26a
+ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719319"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "7496588"
 ---
 # <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 
@@ -145,6 +145,8 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 - デッドロック
 - クラッシュ
 - 財務諸表の問題
+
+Azure Data Explorer を生の情報ログで使用する方法の詳細については、[Azure Data Explorer を使用した生の情報ログのクエリ](azure-data-explorer.md) を参照してください。
 
 ### <a name="sql-insights"></a>SQL インサイト
 

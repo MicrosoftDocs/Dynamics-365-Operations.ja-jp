@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: d0a284c22ef3331018557a1dee1524c0b8a67d24b06a8fbd65164fc30caf725b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04e2af67d14240142890edfcd2e4f6ea07e84050
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751583"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500259"
 ---
 # <a name="configure-gift-with-purchase-promotions"></a>購入プロモーションでギフトを構成する
 
@@ -35,6 +35,9 @@ ms.locfileid: "6751583"
 Commerce Version 10.0.19 のリリース以降、コマース本社 (**Retail と Commerce \> 価格決定と割引 \> しきい値割引**) で **しきい値割引** ページの **しきい値層** クイック タブの **割引方法** フィールドで新しい **割引明細行** 値を選択できるようになりました。 **割引明細行** 割引方法が選択されている場合は、**しきい値割引明細行** という名前の新しいクイック タブがページの下部に表示されます。 
 
 **しきい値割引** ページの **明細行** クイック タブに一覧表示される品目は、プロモーションの対象品目と見なす必要がありますが、**しきい値割明細行** クイック タブに一覧表示されている品目は割引品目と見なす必要があります。 **明細行** クイック タブで指定されたしきい値は、しきい値に達しているかどうかを判断するために、特定の明細行と比較して確認されます。 しきい値に達した場合、割引は **しきい値割引明細行** クイック タブに一覧表示されている品目に適用されます。 
+
+> [!NOTE]
+> 割引品目は、対象品目に含まれるべきでは *ありません*。 割引計算の観点から、それらの品目はギフトとは見なされません。
 
 ## <a name="promotion-configuration-examples"></a>プロモーション コンフィギュレーションの例
 

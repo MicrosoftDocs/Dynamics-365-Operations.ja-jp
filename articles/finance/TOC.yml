@@ -80,8 +80,6 @@
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (2021 年 8 月)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (2021 年 6 月)
-                      href: get-started/whats-new-changed-10-0-19.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -446,10 +444,12 @@
                   href: accounts-receivable/accounts-receivables-set-up-overview.md
                 - name: 与信および回収の設定
                   href: accounts-receivable/set-up-collections.md
-                - name: 取立情報の確認
+                - name: 回収情報の確認
                   href: accounts-receivable/tasks/review-collections-information.md
                 - name: 回収プロセスの自動化
                   href: accounts-receivable/collections-process-automate.md
+                - name: 回収プロセス自動化のパラメーターを構成する
+                  href: accounts-receivable/config-paramtrs-collections-proc-automate.md
                 - name: 与信管理設定
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: 与信管理設定情報
@@ -478,7 +478,7 @@
               href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: 利息の処理
               href: accounts-receivable/tasks/process-interest.md
-            - name: 取立情報の確認
+            - name: 回収情報の確認
               href: accounts-receivable/tasks/review-collections-information.md
             - name: 督促状順序の作成
               href: accounts-receivable/tasks/create-collection-letter-sequence.md
@@ -1635,7 +1635,9 @@
                 - name: VAT 明細書
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: 国境を越えたサービスのレポート
-                  href: localizations/emea-aut-cross-border-services-report.md
+                  href: localizations/emea-aut-vat-statement-details.md
+                - name: イントラスタット レポート
+                  href: localizations/emea-aut-intrastat.md
                 - name: 仕入関税
                   href: localizations/emea-aut-purchase-duties.md
             - name: バーレーン
@@ -1668,6 +1670,8 @@
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: PRODCOM の設定と管理
                   href: localizations/emea-bel-prodcom-report.md
+                - name: 国内販売の年次 VAT リスト
+                  href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
             - name: ブラジル
               items:
                 - name: ブラジルの概要
@@ -2974,6 +2978,8 @@
                   href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
                 - name: 電子請求書
                   href: localizations/latam-mex-CFDI-electronic-invoices.md
+                - name: 貨物運送状 (Carta de Porte) の補足 (バージョン1.0)
+                  href: localizations/latam-mex-carta-de-porte.md
                 - name: 電子元帳計算書
                   href: localizations/latam-mex-electronic-ledger-accounting-statements.md
                 - name: メキシコの法人の税登録 ID の入力
@@ -2994,12 +3000,6 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: 仕入先登録 ID
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: オマーン
-              items:
-                - name: オマーンの概要
-                  href: localizations/oman.md
-                - name: オマーンの VAT 申告 (OM-00003)
-                  href: localizations/emea-oma-vat-declaration.md
             - name: オランダ
               items:
                 - name: オランダの概要
@@ -3016,6 +3016,10 @@
                   href: localizations/emea-nl-vat-declaration-netherlands.md
                 - name: EU 販売リスト
                   href: localizations/emea-nl-EU-sales-list.md
+            - name: ニュージーランド
+              items:
+                - name: ニュージーランド (NZ-00003) の販売税申告フォーム GST101A
+                  href: localizations/apac-nzl-gst-declaration.md
             - name: ノルウェー
               items:
                 - name: ノルウェーの概要
@@ -3032,6 +3036,12 @@
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: ノルウェーの顧客電子請求書
                   href: localizations/emea-nor-e-invoices.md
+            - name: オマーン
+              items:
+                - name: オマーンの概要
+                  href: localizations/oman.md
+                - name: オマーンの VAT 申告 (OM-00003)
+                  href: localizations/emea-oma-vat-declaration.md
             - name: ポーランド
               items:
                 - name: ポーランドの概要
@@ -3448,22 +3458,22 @@
                       items:
                         - name: 英国における税のデジタル化 (MTD) VAT 還付申請
                           href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: HMRC の VAT Web サービスとの相互運用を行う環境の準備
+                        - name: HMRC の MTD VAT Web サービスとの相互運用を行う環境の準備
                           href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: HMRC の MTD Web サービスと相互運用を行うための Finance 環境の承認
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: MTD VAT サンドボックスとの相互運用テスト
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: HMRC の MTD Web サービスに VAT 還付を申請する
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: MTD VAT 用の電子メッセージのセットアップのチェックリスト
                           href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: VAT 申告を用紙形式で生成する (VAT 100 レポート)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
-                        - name: 英国での VAT 申告に関する VAT 設定の詳細
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: MTD VAT サンドボックスとの相互運用テスト
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: HMRC の MTD Web サービスと相互運用を行うための Finance 環境の承認
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: HMRC の MTD Web サービスに VAT 還付を申請する
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: VAT の支払および負債に関する情報を HMRC から取得する
                           href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                        - name: 英国での VAT 申告に関する VAT 設定の詳細
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: VAT 申告を用紙形式で生成する (VAT 100 レポート)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: 支払プラクティス レポートの統計
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: 米国
@@ -4119,6 +4129,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                         - name: Excel レポートに列を動的に追加するための形式を実行する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                    - name: Excel で生成したドキュメントをページ割付する ER 形式を設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Word 形式のレポートを生成するためのコンフィギュレーションを設計する
                   items:
                     - name: Word 形式のレポートを生成するための新しい ER コンフィギュレーションを設計する

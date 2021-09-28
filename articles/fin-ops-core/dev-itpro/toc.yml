@@ -1004,13 +1004,17 @@
                   href: lifecycle-services/cloud-operations-servicing.md
                 - name: Dynamics サービス エンジニアリング チームへのサービス要求の送信
                   href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-                - name: 予定された保守ウィンドウに関するよく寄せられる質問
+                - name: 計画メンテナンス ウィンドウに関するよく寄せられる質問
                   href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: モニタリングおよび診断
-              href: lifecycle-services/monitoring-diagnostics.md
-            - name: 環境サービスの再開
+            - name: 監視と診断
+              items:
+                - name: 監視と診断のツール
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Azure Data Explorer を使用して生の情報ログをクエリする
+                  href: lifecycle-services/azure-data-explorer.md
+            - name: 環境サービスを再開する
               href: lifecycle-services/restart-environment-services.md
-            - name: 稼働停止をレポート
+            - name: 稼働停止をレポートする
               href: lifecycle-services/report-production-outage.md
             - name: ユーザー サインインの追跡
               href: lifecycle-services/user-logins.md
@@ -1584,7 +1588,7 @@
                   href: sysadmin/optimization-advisor-overview.md
                 - name: 最適化アドバイザーのルールの作成
                   href: sysadmin/create-rules-optimization-advisor.md
-            - name: 稼働停止をレポート
+            - name: 稼働停止をレポートする
               href: lifecycle-services/report-production-outage.md
             - name: データベース ログの構成と管理
               href: sysadmin/configure-manage-database-log.md

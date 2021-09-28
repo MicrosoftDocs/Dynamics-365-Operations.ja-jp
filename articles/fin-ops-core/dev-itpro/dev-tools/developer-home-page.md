@@ -2,7 +2,7 @@
 title: ホームページの開発とカスタマイズ
 description: このトピックでは、開発に関するトピックへのリンクを提供します。
 author: RobinARH
-ms.date: 04/27/2020
+ms.date: 08/27/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28752f083247c8071389b07e92fc97871bc88d8965d4bd910e4c976423079277
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72d3f43d36e01650458108f8ba3070fdd7b0d6ad
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743195"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463537"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -26,7 +26,7 @@ ms.locfileid: "6743195"
 
 ## <a name="overview"></a>概要
 
-Finance and Operations アプリケーションは、Microsoft が提供する次世代エンタープライズ リソース プランニング (ERP) を表します。 このアプリでは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体の ERP アプリケーション スイートを有効できます。 このアプリは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 開発経験には次のものが含まれます。
+Finance and Operations アプリは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体のエンタープライズ リソース プランニング (ERP) アプリケーション スイートを有効にします。 このアプリは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 開発経験には次のものが含まれます。
 
 - 実行環境から切り離された開発ツール。 オンライン データベースではなく、ローカルの XML ベースのファイルに対して作成します。
 - Microsoft Visual Studio が開発環境です。 Visual Studio 環境は、円滑で慣れ親しんだエクスペリエンスを提供するようにカスタマイズされています。
@@ -95,23 +95,21 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 
 ## <a name="x-programming-language"></a>X++ プログラミング言語
 
+### <a name="reference"></a>参照
+
+- [X++ 言語リファレンス](../dev-ref/xpp-language-reference.md)
+
 ### <a name="overviews"></a>概要
 
-- [X++ およびデバッガーの機能](new-x-debugger-features.md)
 - [C\# と X++ ソース コードを使用してビジネス ロジックを記述する](write-business-logic.md)
 - [X++ の Visual Studio 2017 の要件](developer-tools-vs2017.md)
 
 ### <a name="language-support"></a>言語サポート
 
-- [X++ と X++ コンパイラの変更](programming-language-support.md)
 - [要求または応答シナリオの EventHandlerResult クラス](event-handler-result-class.md)
 - [Visual Studioのデバッガーを使用して  X++ コードをデバッグする](debug-xpp.md)
 - [C\# の統合言語クエリ (LINQ) プロバイダー](linq-provider-c.md)
 - [ベスト プラクティス ルールの記述](author-best-practice-rules.md)
-
-### <a name="reference"></a>参照
-
-- [X++ 言語リファレンス](../dev-ref/xpp-language-reference.md)
 
 ## <a name="customize-with-extensions-and-overlayering"></a>拡張機能およびオーバーレイによってカスタマイズする
 
@@ -175,9 +173,7 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 
 ## <a name="development-for-independent-software-vendors"></a>独立系ソフトウェア ベンダーのための開発
 
-- [ISV Studio を使用した X++ モジュールのパッケージへのリンク](isv-studio-solutions.md)
-- [ISV ライセンス](isv-licensing.md)
-- [オンプレミスの ISV ライセンス](isv-licensing-on-prem.md)
+- [独立系ソフトウェア ベンダー (ISV) 開発のホーム ページ](isv-dev-home-page.md)
 
 ## <a name="supply-chain-management"></a>Supply Chain Management
 
@@ -187,6 +183,5 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 ## <a name="additional-resources"></a>その他のリソース
 
 [開発のための内部者向けヒント](https://community.dynamics.com/ax/b/newdynamicsax)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

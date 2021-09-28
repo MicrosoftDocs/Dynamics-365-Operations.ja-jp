@@ -1,8 +1,8 @@
 ---
 title: Azure Resource Manager (ARM) のオンボード プロセスの実施
 description: このトピックでは、コネクタの Azure Resource Manager オンボード プロセスを実施する方法について説明します。
-author: sarvanisathish
-ms.date: 08/18/2021
+author: saurabhsurana
+ms.date: 08/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 141093
 ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: sasurana
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: ed591add04c5c419a8187e605dfc05e834b73f78
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: e28501d31dd3cd901183d5d3500c853fba1b26d2
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394696"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463552"
 ---
 # <a name="complete-the-azure-resource-manager-onboarding-process"></a>Azure Resource Manager (ARM) のオンボード プロセスの実施
 
@@ -63,12 +63,14 @@ Azure サブスクリプションで動作するよう LCS 配置サービスを
 
 1.  [Azure ポータル](https://portal.azure.com)の **サブスクリプション** タブで、Azure サブスクリプションを選択してから **アクセス制御 (IAM)** 行項目をクリックします。
 2.  **Add** をクリックして **ロール割り当ての追加** を選択します。 ダイアログ ボックスで、**ロール** を **貢献者** に、**アクセス権の割り当て先** を **Azure AD ユーザー、グループ、サービス プリンシパル** に設定します。 **選択** フィールドで **Dynamics 配置サービス \[wsfed 有効\]** を検索して選択します。 **保存** を選択します。 
+
     > [!NOTE]
     > 一部の Azure サブスクリプションには **アクセス制御 (IAM)** セクションではなく **ユーザー** セクションがあります。 この場合、**ユーザーの追加** ダイアログ ボックスの **選択** フィールドに、**Dynamics 配置サービス \[wsfed 有効\]** と入力して **選択** を選択します。
     
-[![Dynamics 配置サービス \[wsfed 有効\.]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
+[![Dynamics 配置サービス \[wsfed 有効\.\]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
 
 3.  **ロールの割り当て** タブで、アプリは **貢献者** として割り当てられます。 
+
     > [!NOTE]
     > Dynamics 配置サービス \[wsfed 有効\] が表示されない場合、承認プロセスは完了していないか、別の Azure サブスクリプションで完了しています。 
 
@@ -82,14 +84,17 @@ Azure コネクタを有効にし、必要に応じて LCS ユーザーを追加
 
 1.  LCS で、**プロジェクト** ページの **環境** セクションにある **Microsoft Azure 設定** をクリックします。
 2.  **プロジェクト設定** ページでは、**Azure コネクタ** タブで、**Azure コネクタ** の **追加** をクリックします。 
+
     > [!NOTE]
     > 既存のコネクタで Azure Resource Manager を有効にしている場合は、**編集** をクリックします。
+    
 3.  コネクタ名および配置する Azure サブスクリプション ID を入力し、**Azure Resource Manager を使用するコンフィギュレーション** オプションを **はい** に設定します。
 4.  **Azure サブスクリプション AAD テナント ドメイン** フィールドで、Azure サブスクリプション アカウント管理者のドメイン名を入力してから **次へ** をクリックします。
 5.  Azure サブスクリプションに LCS ユーザーを追加するか管理証明書を使用して、サブスクリプションへのアクセスを認証します。 **重要:** LCS ユーザーを追加する場合は、手順 6 に進みます。 管理証明書をアップロードする必要がある場合は、この手順のステップ 6 から 8 を実行しないようにします。 代わりに、「管理証明書のアップロード」という次の手順を完了します。
 6.  [Azure ポータル](https://portal.azure.com)の **サブスクリプション** タブで、Azure サブスクリプションを選択してから **アクセス制御 (IAM)** 行項目をクリックします。
 7.  **アクセス制御 (IAM)** ダイアログ ボックスで、**追加** をクリックし、**寄稿者** を選択してから、**OK** をクリックします。
 8.  **ユーザーの追加** ダイアログ ボックスの **選択** フィールドで、LCS ユーザーを入力してから Enter キーを押します。 
+
     > [!NOTE]
     > ユーザーを明確に入力する必要があります。 ユーザーがメンバーであるグループを追加することはできません。 **ユーザー** ページが開いたとき、ユーザーが **寄稿者** として割り当てられていることを確認できます。
 

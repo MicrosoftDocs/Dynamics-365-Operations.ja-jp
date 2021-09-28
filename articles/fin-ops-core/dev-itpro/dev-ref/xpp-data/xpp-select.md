@@ -2,19 +2,19 @@
 title: データの選択
 description: このトピックでは、X++ 言語での select ステートメントについて説明します。
 author: robinarh
-ms.date: 06/16/2020
+ms.date: 08/27/2021
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 03afda7286ced41f7dd2942e84b33ff09be47e50
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 97a3b9b7933fb4fa0e60afe09e0d284d1f5d7661
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394476"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463541"
 ---
 # <a name="select-data"></a>データの選択
 
@@ -61,6 +61,5 @@ info("AccountNum: " + custTable.AccountNum);
 ```
 
 詳細については、[select ステートメント](xpp-select-statement.md)を参照してください。
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Android および iOS での POS ハイブリッド アプリのセットアップ
 description: このトピックでは、Android および iOS で POS ハイブリッド アプリをセットアップする方法を説明します。
 author: mugunthanm
-ms.date: 05/18/2020
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: e541257c1e71740697d4a37cd08ad618d75466c3b7e6368a2ccdb2e48b72e8af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6278cfbc4dd5d1cd698486565950a8b28431546
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762316"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488069"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -95,12 +95,18 @@ iOS で Xamarin をインストールに関する詳しい手順については�
   3.  MPOS アプリを起動します。 ログインして、デバイスをアクティブにすることができます。
 
 
-## <a name="hybrid-app-distribution"></a>ハイブリッド アプリの配布
+## <a name="hybrid-app-signing-and-distribution"></a>ハイブリッド アプリの署名と配布
 
-Android および iOS アプリを配布するには、Android および iOS アプリ チームによって推奨された次の配布オプションを参照してください。
+Android および iOS アプリに署名および 配布するには、次のオプションを参照してください。
 
+**Android**
+- [Android アプリケーション パッケージに署名](https://docs.microsoft.com/xamarin/android/deploy-test/signing/?tabs=windows)
 - [Android アプリの配布](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
+
+**iOS**
+- [iOS コード署名](https://developer.apple.com/support/code-signing/)
 - [iOS アプリの配布](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
+
 
   
 ## <a name="dedicated-hardware-station-support-for-the-hybrid-android-app"></a>ハイブリッド Android アプリケーションに対応した専用ハードウェアステーション

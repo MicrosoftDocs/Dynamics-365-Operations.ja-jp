@@ -2,7 +2,7 @@
 title: Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 description: このトピックでは、Retail SDK バージョン 10.0.11 以降を使用して新しい Retail Server API を作成する方法について説明します。
 author: mugunthanm
-ms.date: 02/17/2021
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 329a8c48fc79a4023690c34a9992ab43ba378473
-ms.sourcegitcommit: 9c007b271ba5ad5b9938fdd05776b73f6b7c9802
+ms.openlocfilehash: be7937fb5cf07647cb3056f75711789049e4f407
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "7411635"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485868"
 ---
 # <a name="create-a-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 
@@ -63,7 +63,10 @@ Retail SDK には、Commerce Runtime (CRT) を含む、エンドツーエンド�
     [RoutePrefix("SimpleExtension")]
     ```
 
-8. コントローラー クラスで **BindEntity** 属性を追加します。 この属性は、新しいコントローラーを作成してエンティティを公開する場合に必要です。
+> [!NOTE]
+> RoutePrefix 属性の追加はオプションです。 **RoutePrefix** 属性を追加する場合、カスタム エンティティのみを含む **BindEntity** 属性を追加する必要があります。 すぐに利用できる **RoutePrefix** (顧客および製品など) の追加、およびすぐに利用できるエンティティ (製品、買い物カゴ、および顧客など) の追加はサポートされていません。 **RoutePrefix** および **顧客** カスタム エンティティのみを追加することができます。
+
+8. コントローラー クラスで **BindEntity** 属性を追加します。 この手順はオプションです。 **RoutePrefix** を追加し、カスタム エンティティを返す場合のみ属性を追加します。
 
 ```csharp
 [BindEntity(typeof(SimpleEntity))]
@@ -77,7 +80,7 @@ Retail SDK には、Commerce Runtime (CRT) を含む、エンドツーエンド�
 ### <a name="sample-code-for-a-controller-class-bounded-to-a-custom-entity"></a>カスタム エンティティにバインドされるコントローラ クラスのサンプルコード
 
 > [!NOTE]
-> 拡張コードは、顧客や製品などの既存の OOB エンティティにバインドしてはいけません。
+> 拡張コードは、顧客、買い物カゴ、または製品などの既存のエンティティにバインドしてはいけません。 API がコレクションを返す場合、`IEnumerable<T>` 型のみを返す必要があり、`Dictionary <String, String>` のような他の型を返すことはサポートされていません。 結果として、`System.Collections.Generic.Dictionary2[System.String,System.String] is not supported.` などのエラーが表示されることがあります。コレクションを返すには、Commerce API で `PageResult<T>` を使用し、`IEnumerable<T>` を実装します。 このパターンに従い、コレクションを返します。
 
 ```csharp
 // New extended controller.

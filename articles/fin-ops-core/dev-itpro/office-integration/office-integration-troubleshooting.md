@@ -2,7 +2,7 @@
 title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。
 author: jasongre
-ms.date: 08/12/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b1b37a0d4285d32ec77d89e62aff0b05eee614e
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 84ae32d2b8f66fd68fd260b18301e8d6d5a32f76
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344108"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431200"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
@@ -88,7 +88,7 @@ Excel からエクスポートするには時間がかかることがあるた�
 
 ### <a name="why-is-the-publish-button-in-the-excel-add-in-unavailable"></a>Excel アドインで公開ボタンが利用できないのはなぜですか。 
 
-エンティティにデータを公開するには、すべてのキーおよび必須フィールドが存在する必要があります。 バインドにフィールドを追加するようにデザインを編集してみてください。 
+**発行** ボタンをポイントし、現在公開がサポートされていない理由に関する詳細を取得します。 通常、これが発生するのは、エンティティにデータを公開し返すためにすべてのキー フィールドと必須フィールドが存在する必要があるためです。この場合、デザイナを開いて、すべてのキー フィールドがバインドされている必要があります。  
 
 ### <a name="why-are-the-excel-add-in-the-word-add-in-and-the-open-in-excel-options-only-available-when-the-internet-is-available"></a>Excel アドイン、Word アドイン、および Excel で開くオプションは、インターネットが利用可能な場合にのみ利用できます。
 
@@ -135,6 +135,23 @@ Skype 統合は、パブリック クラウドの環境で利用できます。 
 
 ## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
 
+### <a name="issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane"></a>問題: Excel アドインを読み込むが、データが表示される代わりに、作業ウィンドウに「アプレットの読み込み」と表示される 
+
+**問題:** Excel アドインを読み込みますが、データが表示される代わりに、作業ウィンドウに「アプレットの読み込み」と表示されます。 
+
+**説明:** この問題は、通常、次のいずれかの理由によって発生します。
+
+-   サインインが正しくない
+-   環境でアドインの登録データが初期化されていない
+-   OData の問題 
+
+**固定:** 
+-  **サインインが正しくない**: この問題の原因として最も考えられるのは、ユーザーが間違ったユーザーとしてサインインしている可能性があります。 これは、ユーザーが複数のアカウントを使用し、ブラウザーが間違ったユーザー コンテキストを使用している場合に発生する可能性があります。 他の修正を試す前に、右上隅のユーザー メニューを使用してアドインからサインアウトしてから、アドインに再度サインインします。 問題が引き続き発生する場合は、次の修正に記載されているように、登録データが適切に初期化されていることを確認してください。 
+
+-  **登録データが初期化されない**: アドインに再度サインインしても問題が解決されなかった場合、別の潜在的な原因は、環境でアドイン データがまだ初期化されていないことです。 これを確認するために、管理者は **Office アプリ パラメーター** ページに移動できます。 そのページの各 **アプリ パラメータ**、**登録アプレット**、および **登録リソース** タブについて、各タブにデータが入力されていることを確認します。いずれかのタブに空のグリッドがある場合は、そのタブで適切な **初期化** ボタンを選択します。 
+
+-  **OData の問題**: 前の 2 つの修正を試みても問題が解決しない場合、この問題の最終的な原因は、アドインが Finance and Operations と通信する OData サービスが、登録データをアドインに返すことができないことである可能性があります。 そのデータがない場合、アドインは、アプレットの読み込みに失敗します。 この段階で、失敗したセッションの Excel アドインの **アプリケーション相関関係 ID** からの情報を Microsoft サポートに連絡する必要があります。 このフィールドは **オプション** で見つけることができます。
+
 ### <a name="issue-during-sign-in-to-the-excel-add-in-users-receive-an-error-message-saying-they-cannot-access-the-application-2bc50526-cdc3-4e36-a970-c284c34cbd6e-in-that-tenant"></a>問題: Excel アドインへのサインイン中、ユーザーに「テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e にアクセスできません」というエラー メッセージが表示される
 
 **問題:** Excel アドインへのサインイン中、ユーザーに次のようなエラーが表示される。 
@@ -170,6 +187,17 @@ Skype 統合は、パブリック クラウドの環境で利用できます。 
 **回避策:** Microsoft Edge または別の最新のブラウザを使用することをお勧めします。 これらのブラウザは、既定でファイルをダウンロード フォルダーに保存する傾向があるため、問題が軽減されます。 現在非推奨となっている Internet Explorer を使用している場合は、ブックを開くときに、最初に **保存** を選択してから、**開く** を選択します。 ファイルはダウンロード フォルダーから開かれます。  
 
 **長期的な修正プログラム:** Office チームと協力してこの問題を理解し、Excel で解決できるようにしています。
+
+### <a name="issue-vpn-users-see-a-blank-authentication-screen-when-trying-to-sign-into-the-excel-add-in"></a>問題: Excel アドインにサインインしようとする場合、VPN ユーザーに空白の認証画面が表示される
+
+**問題**: 仮想プライベート ネットワーク (VPN) を使用しているユーザーは、認証ダイアログが空白で表示されるか、テキストが表示されないので、アドインにサインインできません。  
+
+**修正**: VPN で実行しているときの VPN ソフトウェアまたはブラウザの設定により、マシンがリソースを取得したり、それらのリソースを正しく解釈したりできないため、この問題は顧客側から解決する必要があります。
+
+VPN に関する一般的な解決策を次に示します。
+-  ユーザーが次の場所にアクセスできることを確認します: [問題: Excel アドインが正しく実行されないか、サインインが有効にならない](#fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in)。
+-  ブラウザが Microsoft Edge (または Internet Explorer 11) の「互換性表示でイントラネット サイトを表示する」に設定されていないことを確認します。 これは組織ポリシーによって構成できます。 
+-  影響を受けるユーザーに、VPN および Edge/IE ブラウザーの設定を影響を受けていない他のユーザーと比較してもらいます。
 
 ### <a name="fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in"></a>\[固定\] 問題: Excel アドインが正しく実行されず、サインインが有効にならない
 

@@ -5,17 +5,17 @@ author: NHelgren
 ms.date: 08/18/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: v-douklo
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d3747f0eead67a6fc76a0a50fd07a92e0c658fb
-ms.sourcegitcommit: 74bdfe341d7f57bf121a334247e68d930b0969a7
+ms.openlocfilehash: 7f2c173c6073c9db52cff13f576cf60859b54ad8
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7394871"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416292"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 

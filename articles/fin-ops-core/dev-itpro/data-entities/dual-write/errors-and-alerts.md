@@ -1,21 +1,21 @@
 ---
 title: エラー管理と警告通知
 description: このトピックでは、問題のトラブルシューティングに役立つエラー ログと警告通知について説明します。
-author: sabinn-msft
+author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: v-douklo
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7aadd20b8ba21fbd6530fa7dfa654a58af8f7b6fd792aea44ea7d9e2ad7fcde
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c23789fbf3c66ff1dd93dc6b20805b9c5864366
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760010"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416967"
 ---
 # <a name="error-management-and-alert-notifications"></a>エラー管理と警告通知
 

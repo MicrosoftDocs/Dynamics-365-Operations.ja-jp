@@ -1,7 +1,7 @@
 ---
 title: エンティティ ストアのメンテナンス後に問題を解決
 description: このトピックでは、エンティティ ストアのメンテナンス後に完了する必要のある手順について説明します。
-author: sarvanisathish
+author: MilindaV2
 ms.date: 04/09/2021
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ audience: IT Pro
 ms.reviewer: kfend
 ms.search.region:
 - Global for most topics. Set Country/Region name for localizations
-ms.author: sarvanis
+ms.author: milindav
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 970d4ad24910dbc0a4a3281269fe7891f2027357f644c08760248e3ed9e58ccc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d7cdb2120e45ce14b253861a30c9f4a85477f7
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717608"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500571"
 ---
 # <a name="resolve-issues-after-entity-store-maintenance"></a>エンティティ ストアのメンテナンス後に問題を解決
 

@@ -4,22 +4,18 @@ description: このトピックでは、デュアル書き込みの接続設定�
 author: RamaKrishnamoorthy
 ms.date: 01/14/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 21311
-ms.assetid: ''
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0530f17850b8f6bd6990b3b03a970b27daf9958be1a3ec7fb1feb8679f26d1fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 262b192534511393262c3a2b04cecbde49a15f4d
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763512"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417019"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f051d47da8d13208a1f0ba855b31623973ae35e
-ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
+ms.openlocfilehash: 6108b1271a78e8bf90da46be83e8d1729199482e
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7380226"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472133"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -39,6 +39,7 @@ ms.locfileid: "7380226"
 + [二重書き込みのシステム要件](dual-write-system-req.md)
 + [二重書き込みの設定方法に関するガイダンス](connection-setup.md)
 + [初期同期に関する考慮事項](initial-sync-guidance.md)
++ [ライブ同期に関する二重書き込みの制限](sync-limits.md)
 + [Lifecycle Services からの二重書き込みの設定](lcs-setup.md)
 + 既存の Finance and Operations アプリの二重書き込みの有効化
 
@@ -112,7 +113,7 @@ ms.locfileid: "7380226"
 + [初期同期中の問題のトラブルシューティング](dual-write-troubleshooting-initial-sync.md)
 + [ライブ同期の問題のトラブルシューティング](dual-write-troubleshooting-live-sync.md)
 + [Finance and Operations アプリでの二重書き込み問題のトラブルシューティング](dual-write-troubleshooting-dual-write-module.md)
-+ [当事者およびグローバル アドレス帳の問題のトラブルシューティング](dual-write-troubleshooting-party-gab.md)
++ [当事者およびグローバル アドレス帳の問題に関するトラブルシューティング](dual-write-troubleshooting-party-gab.md)
 + [ソリューションの認識に関する問題のトラブルシューティング](dual-write-troubleshooting-solution-awareness.md)
 + [Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング](dual-write-troubleshooting-finops-upgrades.md)
 + [Finance and Operations アプリと Dataverse での二重書き込み構成の確認](dual-write-troubleshooting-verify-config.md)

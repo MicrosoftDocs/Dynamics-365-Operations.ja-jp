@@ -1,26 +1,21 @@
 ---
 title: 二重書き込み設定後に法人を編集する
 description: このトピックでは、二重書き込みの設定後に、会社または法人を追加または削除する方法について説明します。
-author: sabinn-msft
+author: nhelgren
 ms.date: 07/21/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Developer
-ms.reviewer: v-douklo
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f592eff11870f06417cea7c556da8f589a8d981170912e8e50f3e0d5b87eabe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ad991ba994928085035c785db648176e68a3d3a
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766373"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416669"
 ---
 # <a name="edit-a-legal-entity-after-dual-write-setup"></a>二重書き込み設定後に法人を編集する 
 

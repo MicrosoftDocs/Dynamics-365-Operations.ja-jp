@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0261c39e2120c22c0ec2c17d99e54d0b3f4f0a9e89bc12c7aa9536ee42a45fb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 678f9b819f61df2974bc9376d46a48421b6c5330
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718267"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500266"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 
@@ -33,7 +33,7 @@ ms.locfileid: "6718267"
 - [継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md)
 - [Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化](hosted-build-automation.md)
 - [テストと検証](../perf-test/testing-validation.md)
-- [コマースおよび Finance のビルド システムのマージ](../../../commerce/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [POS を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成](../../../commerce/dev-itpro/hardware-device-extension.md)
 - [クラスおよびメソッドの属性を使用した SysTest フィルター処理](../perf-test/systest-filtering.md)
 - [承認テスト ライブラリのリソース](../perf-test/acceptance-test-library.md)
 

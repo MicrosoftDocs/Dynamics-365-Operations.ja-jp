@@ -2,7 +2,7 @@
 title: オンプレミス配置のシステム要件
 description: このトピックでは、オンプレミス配置のシステム要件を一覧表示します。
 author: PeterRFriis
-ms.date: 08/13/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 60b35eb5a4fbc3c16b7cdb188fb13dab3901f04c
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 738743da6022919d359595627b243d32a1df31c6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384673"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488327"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、現在のバージョンの Microsoft Dynamics 365 Finance + Operations (オンプレミス) 配置のシステム要件を一覧表示します。 インストールする前に、このステップが適切な場合、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証します。
+このトピックは、現在のバージョンの Microsoft Dynamics 365 Finance + Operations (オンプレミス) 配置のシステム要件を一覧表示します。 作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを確認します。
 
 > [!IMPORTANT]
 > Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
@@ -283,8 +283,6 @@ SQL Server のハードウェア要件については、[SQL Server インスト
 > パフォーマンスを最適化し、最適なエクスペリエンスを提供するために、最新のブラウザ、特に Microsoft Edge の最新バージョンを使用することをお勧めします。 
 > 
 > **バージョン 10.0.21 以降:** Microsoft Edge の古いバージョンおよび Google Chrome (バージョン 83 以前) のユーザーには、ブラウザーを最新バージョンに更新するよう求めるメッセージが表示されます。 
->
-> バージョン 10.0.21 は、プレビュー リリースの一部として使用可能です。 バージョン 10.0.21 のコンテンツと機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](public-preview-releases.md) を参照してください。
 
 ### <a name="internet-explorer-deprecation"></a>Internet Explorer の廃止
 

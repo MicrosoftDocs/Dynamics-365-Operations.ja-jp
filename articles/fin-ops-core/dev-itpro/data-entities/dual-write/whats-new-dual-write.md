@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 137e90956814bc78fed73c7064c51eeae297285f
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 6c7191c4e16debc52c96dc1982f9ddb29ae9369e
+ms.sourcegitcommit: 65cf260f3e3e17c1a49accf399b0c6a6c74c03de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386424"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471586"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -33,7 +33,7 @@ ms.locfileid: "7386424"
 
 ## <a name="august-2021-release"></a>2021 年 8 月リリース
 
-2021 年 8 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service)は、[二重書き込みコア ソリューション バージョン 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.3.0.15](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) の 2021 年 8 月リリースは、[二重書き込みコア ソリューション バージョン 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
 
 このリリースには、次の表に記載されている機能とバグ修正が含まれています。
 
@@ -41,6 +41,21 @@ ms.locfileid: "7386424"
 |------|---------|-------|
 |バグ修正 | 二重書き込み警告の送信に失敗した場合の問題が修正されます。 |   一般提供 |
 | システム テーブル |   システム テーブルの二重書き込みを有効にするためのサポートが追加されます。 |   一般提供 |
+|バグ修正 | 一部のクライアント API は非推奨になり、新しい API に置き換えられました。 二重書き込みオーケストレーション パッケージの JavaScript コードが、新しいクライアント API を使用するためにアップグレードされました。|     一般提供 |
+|バグ修正 | 二重書き込みはオフライン モードをサポートしていないため、会社名に既定値が自動的に含まれることはありません。 会社を手動で選択する必要があります。|     一般提供 |
+ |バグ修正 | **勘定** フォームの **仕入先** グループ フィールドでは、値は選択した会社に基づいてフィルター処理されません。|  一般提供 |
+|バグ修正 | **仕入先** レコードを Finance and Operations アプリに保存すると失敗し、*リテラル「」を予測されるタイプ「Edm.Int32」に変換できません* というエラー メッセージが表示されます。 |  一般提供 |
+|バグ修正 | **仕入先支払方法** マップでの変換には、更新が必要でした。 **PAYMENTSTATUS** フィールドの列挙が正しくない場合、*リテラル 'Confirmed' を予測されるタイプ 'Edm.Int32' に変換できません* というエラー メッセージが表示されます。 |  一般提供 |
+|バグ修正 | **販売注文ヘッダー** および **販売注文行** マップが、**プロジェクト契約ヘッダー** および **プロジェクト契約行** マップと競合します。 両方を同時に有効にできませんでした。|    一般提供 |
+|バグ修正 | **出荷先の国/地域** が **販売注文** および **発注書** で必須項目であるという、エラー メッセージを作成します。|    一般提供 |
+|バグ修正 | Dynamics 365 Sales で販売注文が作成される場合は常に、**顧客請求書** の規定値は、**潜在顧客** の **請求先アカウント** 値に基づいています。|     一般提供 |
+|バグ修正 | **価格変更** フィールドを true または false に切り替える機能。 |   一般提供 |
+
+このリリースには、次のマップ変更が含まれます。
++ [CDS 販売見積明細行] - [quotedetails] マップ バージョン 1.0.0.1
++ [CDS 販売注文明細行] - [salesorderdetails] マップ バージョン 1.0.0.1
++ [仕入先 V2] - [msdyn_vendors] マップ バージョン 1.0.0.3
++ [仕入先支払方法] - [msdyn_vendorpaymentmethods] マップ バージョン 1.0.0.1
 
 ## <a name="august-2021-release-of-party-and-global-address-book"></a>2021 年 8 月リリースの当事者およびグローバル アドレス帳 
 
@@ -58,6 +73,7 @@ ms.locfileid: "7386424"
 | バグ修正| 電話番号を携帯電話として識別します。 | 一般提供 |
 | バグ修正| 表示名を **関係者電子アドレス** テーブルから **当事者電子アドレス** テーブルに更新します。 | 一般提供 |
 | 当事者電子アドレス | 潜在顧客認定プロセス、勘定、および連絡先作成プロセスから当事者電子アドレスに基本電子アドレス データを同期します。その逆も可能です。 | 一般提供 |
+
 
 ## <a name="july-2021-release"></a>2021 年 7 月リリース
 

@@ -2,7 +2,7 @@
 title: コメント、使用、および印刷ステートメント
 description: このトピックでは、X++のステートメントについて説明します。
 author: robinarh
-ms.date: 12/02/2019
+ms.date: 08/27/2021
 audience: Developer
 ms.devlang: xpp
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fa4e69ee541609ffe3dab7f43d5dedc174ff8edb3950613a7cc0b9f15f67e0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd2beb17a56815b071324bce843ba6156c9acce0
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736258"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463544"
 ---
 # <a name="comments-using-and-print-statements"></a>コメント、使用、および印刷ステートメント
 
@@ -39,7 +39,7 @@ ms.locfileid: "6736258"
 | 機能   | print ステートメント    | 情報メソッド  |
 |-----------|--------------------|--------------|
 | 呼び出し易さ                        | **print** ステートメントは、さまざまなデータ型を自動的に文字列に変換します。 1 つの呼び出しで複数のデータ型を変換できます。       | **info** メソッドでは、入力パラメーターを文字列にする必要があります。     |
-| クリップボードにコンテンツをコピーする機能 | テキストは、**出力** ウィンドウからクリップボードに簡単にコピーできます。            | テキストは、**情報ログ** ウィンドウからクリップボードに簡単にコピーできます。 |
+| クリップボードにコンテンツをコピーする機能 | テキストは、**出力** ウィンドウからクリップボードに簡単にコピーできます。            | テキストは **情報ログ** ウィンドウからクリップボードに容易にコピーされます。 |
 | 一般的な使用                             | **print** ステートメントは、テスト時に使用すると便利です。 正式なデバッガーを実行する必要なく、小さな問題をデバッグすることができます。 | **info** メソッドは、生産での使用に適しています。     |
 
 ### <a name="example-of-a-print-statement"></a>印刷明細書の例
@@ -60,7 +60,7 @@ print hello, " -- ", fortytwo, " -- ", now, " -- ", dialog;
 
 // int2Str converter is needed when using info().
 info("Hello");
-info(int2Str(fortytwo)); 
+info(int2Str(fortytwo));
 
 // Output to Infolog window:
 // Hello
@@ -68,7 +68,8 @@ info(int2Str(fortytwo));
 ```
 
 ## <a name="todo-comments"></a>TODO コメント
-コンパイラは、コメントの先頭に **仕事** という文字列があると認識します。 **TODO** 文字列は、Microsoft Visual Studio の **タスク一覧** ウィンドウでコメント テキストの残りの部分を報告するようにコンパイラに求めます。 **タスク一覧** ウィンドウを開くには、**表示** を選択し、**タスク ウィンドウ** を選択します。 **タスク ウィンドウ** は、明細行番号を報告します。**TODO** コメントがコード内にあります。 
+
+コンパイラは、コメントの先頭に **仕事** という文字列があると認識します。 **TODO** 文字列は、Microsoft Visual Studio の **タスク一覧** ウィンドウでコメント テキストの残りの部分を報告するようにコンパイラに求めます。 **タスク一覧** ウィンドウを開くには、**表示** を選択し、**タスク ウィンドウ** を選択します。 **タスク ウィンドウ** は、明細行番号を報告します。**TODO** コメントがコード内にあります。
 
 コメントで **TODO** を使用するためのルールを次に示します。
 
@@ -88,7 +89,7 @@ info(int2Str(fortytwo));
 // An example of using TODO in the // style of comment.
 public boolean isLate()
 {
-    // TODO: Finish this stub. 
+    // TODO: Finish this stub.
     return true;
 }
 
@@ -104,8 +105,13 @@ public boolean isLate()
 
 **changeSite**、**pause**、**window** キーワードは、X++ 言語の一部ではなくなりました。 これらのキーワードを使用すると、コンパイル エラーが発生します。
 
+## <a name="ignored-statements-server-and-client"></a>無視されたステートメント: サーバーおよびクライアント
+
+以前のバージョン (AX2012 以前) では、クライアントまたはサーバーのいずれかで実行するメソッドを指定することができました。 すべての X++ コードは、サーバー上で .NET CIL として実行されるため、これは使用できなくなりました。 `client` および `server` キーワードは無視されます。 コンパイル エラーは発生しませんが、新しい X++ コードのいずれでも使用しないでください。
+
 ## <a name="using-clauses"></a>句の使用
-タイプの完全修飾名を指定する必要がないように、**using** 句を使用します。 **using** 句は、適用されるクラスの前に配置する必要があり、適用先のすべてのソース ファイルに必要です。 すべての **using** 句は通常、ソース ファイルの先頭に配置します。 完全修飾名の短縮名を導入するエイリアスを提供することもできます。 エイリアスは名前空間またはクラスを示すことができます。 
+
+タイプの完全修飾名を指定する必要がないように、**using** 句を使用します。 **using** 句は、適用されるクラスの前に配置する必要があり、適用先のすべてのソース ファイルに必要です。 すべての **using** 句は通常、ソース ファイルの先頭に配置します。 完全修飾名の短縮名を導入するエイリアスを提供することもできます。 エイリアスは名前空間またはクラスを示すことができます。
 
 次の例では、**using** 句、名前空間エイリアス、およびクラス エイリアスを示しています。
 
@@ -127,6 +133,7 @@ class UsingClass
 ```
 
 ## <a name="using-statements"></a>ステートメントの使用
+
 **using** ステートメントは、**IDisposable** を実行するオブジェクトが正しく破棄されることを保証するのに役立ちます。 原則として、**IDisposable** オブジェクトを使用する場合は、**using** ステートメントで、そのオブジェクトを宣言し、インスタンスを作成する必要があります。 **using** ステートメントは、オブジェクトのメソッドを呼び出すときに例外が発生した場合でも、正しい方法でオブジェクトの **Dispose** メソッドを呼び出します。 オブジェクトを **try** ブロック内に配置してから **finally** ブロック内で **Dispose** を明示的に呼び出すことにより、同じ結果を達成することができます。 **using** ステートメントは構文を簡素化し、オブジェクトを正しく破棄します。 **using** ステートメントの構文を次に示します。
 
 **(** *式* **) を使用して {** *ステートメント* **}**
@@ -143,6 +150,5 @@ static void AnotherMethod()
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

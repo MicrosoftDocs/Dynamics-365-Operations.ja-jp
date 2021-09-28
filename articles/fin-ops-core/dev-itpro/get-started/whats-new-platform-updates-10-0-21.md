@@ -2,7 +2,7 @@
 title: Finance and Operations アプリ バージョン 10.0.21 のプラットフォーム更新プログラム (2021 年 10 月)
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.21 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 28d41c83094572a315512febc4c3c07832a8f592
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 02456e4875d4f579d35974bdbef536fbd99db7f7
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344592"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487977"
 ---
 # <a name="platform-updates-for-version-10021-of-finance-and-operations-apps-october-2021"></a>Finance and Operations アプリ バージョン 10.0.21 のプラットフォーム更新プログラム (2021 年 10 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリ バージョン 10.0.21 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6129 で、次のスケジュールで使用できます。
 
@@ -55,7 +54,8 @@ IaaS にリリース 10.0.21 を配置する場合、次のような配置警告
 | 機能領域   | フィーチャー                                                  | 詳細                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
 | クライアント機能 | [保存したビューに対する法人サポートの改善](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/improved-legal-entity-support-saved-views)  | [保存されているビュー](../../fin-ops/get-started/saved-views.md) |
-| システム管理 | **機能管理の完全な機能ライフサイクルに対する強化されたサポート**<br><br>Microsoft では **既定で有効** にするオプション機能の状態を更新できるようになります。 以前は、機能がリリースされた後にライフサイクルを進行するための唯一のオプションは、機能をオフすることを許可しない **必須** に直接移行することでした。 機能を **既定で有効** にする機能が追加され、リリースされる機能と必須になる機能との中間のステップが提供されます。<br><br>**既定で有効** の機能は自動的に有効になりますが、検証にさらに時間が必要な場合、組織はこれらの機能を無効にできます。 機能管理ワークスペースのグリッドも、新しい **機能の状態** 列の機能の状態 (**プレビュー**、**リリース済**、**既定で有効**、または **必須**) を明確に表示するために変更されました。<br><br>リリース後に機能が状態間で移行すると予想される時期を予測できるように、ドキュメント化された機能のライフサイクルと、機能管理の機能の対応するタイムラインにいくつかの変更を加えました。 詳細については、[機能管理の概要](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)を参照してください。 このトピックには、機能がデフォルトで **リリース済** から **既定で有効**、**必須** へと進む場合の一般的なタイムラインの例も含まれています。| [機能管理の概要](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| システム管理 | [機能管理の完全な機能ライフサイクルに対する強化されたサポート](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/enhanced-support-full-feature-lifecycle-feature-management)| [機能管理の概要](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| 可用性の監視 | **可用性の問題に対する強化された自動監視**<br><br>Microsoft は、統合的な監視を通じて、API モニターを継続的に監視し、顧客が自身で問題を見つける前に API 問題を事前に可視化できるようになります。 この追加により、ビルドアウト展開を検証する調査の設定、サービス展開サイクルに依存しないサービス/シナリオの監視、依存関係の可用性テストなど、特定のシナリオでのエンド ツー エンド補充ができます。 <br><br> 顧客は、Azure Active Directory アプリケーション (監視アプリ)、Microsoft 管理のユーザー アカウント (アプリ ユーザーの監視)、アプリ ユーザーを監視するためのセキュリティ ロールとセキュリティ職務権限、OData エンティティ (/data/SysMonDatas) など、一部の新しい要素が環境に追加されたことがわかります。 <br><br>必要な唯一のアクション項目は、可用性の監視が意図したとおりに機能するよう、これらの任意の要素を削除または変更してはならない点です。 | 適用できません | 
 | 開発者ツール | Visual Studio 2019 が正式にサポートされるようになりました。 | [Visual Studioの開発ツール](../dev-tools/development-tools-overview.md) |
 
 ## <a name="additional-resources"></a>追加リソース

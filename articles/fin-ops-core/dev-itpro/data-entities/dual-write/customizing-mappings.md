@@ -1,34 +1,27 @@
 ---
 title: テーブル マッピングと列マッピングのカスタマイズ
 description: このトピックでは、テーブル マッピングと列マッピングをカスタマイズする方法について説明します。
-author: sabinn-msft
+author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Developer
-ms.reviewer: v-douklo
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36172b658a6896304b8cd685aeb493f3562e6504
-ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
+ms.openlocfilehash: 90f760d750e95417df3d387fa4eea54c19e528c6
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7391222"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416719"
 ---
 # <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 標準のテーブル マップには、2 つのアプリ間のデータ フローを可能にする事前定義されたテーブル マッピングおよび列マッピングがあります。 このように、それらは "青写真" として機能します。 ただし、ビジネスごとに異なるため、既定のテーブル マップでは不十分な場合があります。 したがって、二重書き込みはテーブル マップおよび列マッピングを変更する方法を提供することにより、カスタマイズを完全にサポートします。
 
@@ -89,7 +82,7 @@ ms.locfileid: "7391222"
 
     次の表に、フィルター式の例を示します。
 
-   || Dataverse | Finance and Operations アプリ |
+    | フィルター | Dataverse | Finance and Operations アプリ |
     |---|---|---|
     |文字列フィールド (次を含む)| startswith(name, 'A')|(name like "A*")|
     |文字列フィールド (次を含まない)|not contains(name, 'A')|(!(name like "*A*"))|
@@ -98,9 +91,9 @@ ms.locfileid: "7391222"
     |複数の条件の組み合わせ| numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
     クエリ範囲で式を使用する方法の例については、[クエリ範囲での式の使用](/dynamicsax-2012/developer/using-expressions-in-query-ranges) を参照してください。
-    
+
     現時点では、二重書き込みソース フィルターでのネストされたルックアップはサポートされていません。 テーブル列に対して直接、標準のフィルタ演算子のみがサポートされています。 例については、[標準フィルタ演算子](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) を参照してください。
-    
+
 ## <a name="add-new-table-maps"></a>新しいテーブル マップの追加
 
 Microsoft は引き続き新しいテーブルを追加していますが、標準またはカスタムのテーブル マップを追加することもできます。

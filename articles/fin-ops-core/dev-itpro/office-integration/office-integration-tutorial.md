@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7ac7dec71d4c20c40c42716c6bb12562ad425d9c6bbbc1bb9e093a8bb2d220d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 184d79042516a4da13008993dd55cb8c4a2e7f8f
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742290"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441151"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 
@@ -319,7 +319,7 @@ Word エクスペリエンスへのエクスポートは、簡易レポートに
 Microsoft Dynamics App for Office は、Word で実行でき、ドキュメントの生成のために使用できるテンプレートの作成を可能にします。
 
 1.  空白の文書の作成
-    1.  **共通** &gt; **コメント** &gt; **Excel ブック デザイナー** に移動します。 
+    1.  **共通** &gt; **共通** &gt; **Excel ブック デザイナー** に移動します。 
     2.  **空白のドキュメントの作成** を選択します。
     3.  生成されたドキュメントをダウンロードして開きます。
 

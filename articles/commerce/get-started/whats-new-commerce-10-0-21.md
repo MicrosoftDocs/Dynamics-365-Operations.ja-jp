@@ -1,8 +1,8 @@
 ---
-title: Dynamics 365 Commerce 10.0.21 の機能のプレビュー (2021 年 10 月)
+title: Dynamics 365 Commerce 10.0.21 (2021 年 10 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.21 のプレビュー リリースの新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 08/02/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 744c76e064f735e9d39751bc0731440bc6378b1a
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 8b653c8f6f5788f3ccbf4f92cd3a5e88efecc4da
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345106"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487942"
 ---
 # <a name="preview-features-in-in-dynamics-365-commerce-10021-october-2021"></a>Dynamics 365 Commerce 10.0.21 の機能のプレビュー (2021 年 10 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.21 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.960 で、次のスケジュールで使用できます。
 
@@ -66,6 +66,7 @@ IaaS にリリース 10.0.21 を配置する場合、次のような配置警告
 |   ターゲットを設定する   |  [顧客区分とターゲット接地](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting.md)  |  [デバイス、市場、および位置情報のターゲット設定](../targeting-overview.md)    |
 |  業績  | [パフォーマンスへの影響による、小売トランザクション テーブルに対するカスタム クエリ変更追跡コンフィギュレーションの適用](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts.md)   | この機能により、小売トランザクション テーブルで変更追跡機能とデータ管理エクスポート フレームワークを組み合わせて使用すると、Commerce のパフォーマンスが向上します。  |
 | E コマース   |   [e コマースの再注文に関する拡張エクスペリエンス](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce.md)  |   この機能により、e コマース サイトの既存の再注文 (「再購入」) の機能が拡張されます。   |
+| 販売時点管理 (POS) オフライン   |   Modern POS オフライン監視ダッシュボード、シームレスなオフライン弾力性、および信頼性の向上   |   この機能セットは、10.0.20 リリースに追加でバックポートされています。  詳細については、[Commerce のオフライン データベース実装とトラブルシューティング](../dev-itpro/implementation-considerations-offline.md) ドキュメントを参照してください。   |
 
 
 ## <a name="additional-resources"></a>追加リソース

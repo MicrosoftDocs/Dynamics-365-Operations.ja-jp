@@ -6,17 +6,16 @@ ms.date: 04/07/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: ''
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 28ab28ac4ff71c5178145c90f4b9a45c015273681f4102276631e80e379246f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b9d72313a962725c429c2d234d94a3545ab4391
+ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726175"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "7496644"
 ---
 # <a name="unlink-and-relink-dual-write-environments"></a>二重書き込み環境のリンク解除および再リンク
 
@@ -39,7 +38,6 @@ ms.locfileid: "6726175"
     - **DualWriteProjectConfiguration**
     - **DualWriteFieldConfiguration**
     - **BusinessEventsDefinition**
-    - **二重書き込みランタイムのコンフィギュレーション**
 
 4. Dataverse UAT 環境に対して、Finance and Operations UAT 環境を再リンクすることが必要な場合があります。 
 5. マッピングを有効にします。
@@ -49,12 +47,7 @@ Dataverse でバックアップおよび復元のプロセスが実行されて�
 1. Finance and Operations UAT 環境にサイン インします。
 2. すべてのテーブル マップを停止します。
 3. Dataverse UAT 環境が Finance and Operations 運用環境を指すように、二重書き込み接続を解除します。
-4. Dataverse でキー テーブルからデータを削除します。
-
-    - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
-    - **BusinessEventsDefinition**
-
+4. Dataverse の **二重書き込みランタイムのコンフィギュレーション** テーブルからデータを削除します。
 5. Dataverse UAT 環境に対して、Finance and Operations UAT 環境を再リンクすることが必要な場合があります。
 6. マッピングを有効にします。
 

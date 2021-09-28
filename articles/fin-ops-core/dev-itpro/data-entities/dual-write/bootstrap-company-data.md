@@ -4,21 +4,18 @@ description: このトピックでは、デュアル書き込み接続を有効�
 author: RamaKrishnamoorthy
 ms.date: 12/01/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31301
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c894285e729429bb539632e48ed66f85d67e20c17185adfa1481c4ea46d6c285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f01bc1b12d186ea317305f66b77de6eca40619b
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716183"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416793"
 ---
 # <a name="initialize-company-data"></a>会社データの初期化
 

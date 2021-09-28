@@ -2,19 +2,19 @@
 title: 明細書を選択
 description: このトピックでは、X++ 言語での select ステートメントについて説明します。
 author: robinarh
-ms.date: 06/16/2020
+ms.date: 08/27/2021
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 2284f5793296559842e570dddd9648827e5db286925273006dd274ca0226a257
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a986480dfc9e1021593151295cce7799bffcf796
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769850"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463545"
 ---
 # <a name="select-statement"></a>明細書を選択
 
@@ -99,7 +99,7 @@ ttsCommit;
 + **\[\]** – かっこはオプションの要素を囲みます。
 + **{}** – 中かっこは、0 回以上含めることができる要素を囲みます。
 + **\+** – プラス記号は、1回以上含めることができる要素を示します。
-+ **|** – バーはオプションを示します。 
++ **|** – バーはオプションを示します。
 
 | 記号                | &nbsp;  | 式 |
 |-----------------------|---|------------|
@@ -257,6 +257,32 @@ CustTable custTable;
 container conCompanies = ['dat','dmo'];
 select crossCompany :conCompanies
     * from custTable;
+```
+
+### <a name="crosscompany-clause-can-contain-arbitrary-expressions"></a>crossCompany 句には任意の式を含めることができます
+
+**crossCompany** 句は、検索ステートメントを考慮する必要のある会社を示すために **select** ステートメントで使用できます。 構文は、コンテナー型の変数である単一の識別子ではなく、コンテナー型の任意の式を許可するように拡張されています。
+
+このコード例では、会社を含むコンテナーを作成します。
+
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: mycompanies t;
+}
+```
+
+このコードでは、変数の代わりに式を使用します。
+
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: (['dat'] + ['dmo']) t;
+}
 ```
 
 ## <a name="desc-keyword"></a>降順キーワード
@@ -736,6 +762,5 @@ select * from custTable
     where custTable.accountNum > "100";
 info("AccountNum: " + custTable.AccountNum);
 ```
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
