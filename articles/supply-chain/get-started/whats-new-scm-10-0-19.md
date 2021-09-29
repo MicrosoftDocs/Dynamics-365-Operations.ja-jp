@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 86735065864149df27cd3d8b03451ace773af048
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474895"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506858"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Management バージョン 10.0.19 (2021 年 6 月) の新機能および変更された機能
 
@@ -40,8 +40,7 @@ ms.locfileid: "7474895"
 | 在庫および物流 | [スケール単位を使用する倉庫の実行機能の差分機能強化](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[メッセージ プロセッサのメッセージ](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[倉庫在庫調整](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | 在庫および物流 | [販売見積ページのドキュメントの序文フィールドおよびドキュメントの結びフィールドのルックアップ機能](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | この機能により、**販売見積** ページの **ドキュメントの序文** フィールドと **ドキュメントの結び** フィールドにルックアップ機能が追加されます。<br><br>この機能は、既定で有効になっています。 |
 | 在庫および物流 | [カスタム ハードウェア上のエッジのスケール ユニットを使用した倉庫の実行](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [LBD を使用してカスタム ハードウェアにエッジのスケール ユニットを配置する](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| 製造 | [カスタム ハードウェア上のエッジのスケール ユニットを使用した製造実行](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| 計画 | [計画最適化の無限キャパシティ スケジューリング](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [無限能力を使用したスケジューリング](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| 製造 | [カスタム ハードウェア上のエッジのスケール ユニットを使用した製造実行](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [LBD を使用してカスタム ハードウェアにエッジのスケール ユニットを配置する](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | 計画 | クエリ ベースの計画オーダーの作成 | [計画オーダーの確定](../master-planning/planning-optimization/planned-order-firming.md) |
 | 製品情報管理 | [バリアント修正候補ページの改善](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [事前定義された製品バリアントの作成](../pim/tasks/create-predefined-product-variants.md) |
 

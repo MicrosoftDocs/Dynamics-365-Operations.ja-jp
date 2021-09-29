@@ -2,7 +2,7 @@
 title: ビデオ
 description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
 author: sericks007
-ms.date: 04/12/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 1fa07f8a021bb5b4138b833ce8a7ff68c6f06d2f9eae560f776b220195213658
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777341"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487994"
 ---
 # <a name="videos"></a>ビデオ 
 
@@ -34,7 +34,6 @@ ms.locfileid: "6777341"
 
 ### <a name="data-integration"></a>データ統合
 
-- [Prospect to cash integration (見込顧客リストの現金化への統合)](https://youtu.be/AVV9x5x-XCg)
 - [Dynamics 365 for Field Service と Finance and Operations アプリ間で作業指示を同期させる](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>データ管理

@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 4a85520c0911bb7eed5842b3fd5bd706009351e5
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7475039"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500358"
 ---
 # <a name="inventory-visibility-reservations"></a>在庫視覚化引当
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 このトピックでは、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除するために引当機能を設定する方法について説明します。

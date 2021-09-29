@@ -1,27 +1,39 @@
 ---
 title: Warehouse Management モバイル アプリの新機能または変更された機能
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能および変更された機能を一覧表示します。
-author: ivanv-microsoft
-ms.date: 07/30/2021
+author: MarkusFogelberg
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: ivanv
+ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
-ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
+ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386102"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485625"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20100"></a>バージョン 2.0.10.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- リストとページを読み取る際に追加されたアニメーション。
+- 接続エラー ページでテキストが正しく折り返されるようになりました。
+- 既定値を持たないコンボ ボックスが正しく表示されるようになりました。
+- サブヘッダー領域の情報が、詳細ページにのみ表示されるようになりました。
+- 空の入力フィールドが詳細カードに表示されなくなりました。
+- 確認用の値が詳細カードに重複して表示されなくなりました。
+- システムが応答を停止する原因となったさまざまな問題を修正しました。
 
 ## <a name="version-2090"></a>バージョン 2.0.9.0
 

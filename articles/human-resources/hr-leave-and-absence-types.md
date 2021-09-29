@@ -1,8 +1,8 @@
 ---
 title: 休暇タイプのコンフィギュレーション
 description: Dynamics 365 Human Resources で、従業員が使用できる休暇のタイプを設定します。
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b616d1f2c8b0bc8131045424b01dbfaa82f41f84
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730421"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485810"
 ---
 # <a name="configure-leave-and-absence-types"></a>休暇タイプのコンフィギュレーション
 
@@ -65,9 +65,9 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 
 1. 休暇タイプの丸めオプションを設定します。 オプションには、**なし**、**上**、**下**、**四捨五入** があります。 休暇タイプの丸めの精度を設定することもできます。
 
-2. 休暇タイプに **休日の修正** を設定します。 このオプションを選択すると、Human Resources は作業日に含まれる休日の数を使用して、休暇タイプに対する休暇の見越計上の方法を決定します。 たとえば、クリスマスの日が月曜に当たる場合、Human Resources は、見越計上を処理するときに休暇タイプから 1 日を減算します。
+2. 休暇タイプに **休日の修正** を設定します。 このオプションを選択すると、業務の日に当たる休日の数を使って、その休暇タイプの休暇の取得方法を決定します。 たとえば、クリスマスの日が月曜に当たる場合、Human Resources は、見越計上を処理するときに休暇タイプから 1 日を減算します。
 
-   休日は作業時間カレンダーで設定します。 詳細については、[作業時間カレンダーを作成する](hr-leave-and-absence-working-time-calendar.md)を参照してください
+   休日は作業時間カレンダーで設定します。 詳細については、[作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)を参照してください。
    
  3. 休暇タイプに **繰越休暇タイプ** を設定します。 このオプションを選択すると、繰越残日数は指定された休暇タイプに転送されます。 繰越休暇タイプも、休暇および不就業プランに含める必要があります。 
  
@@ -76,7 +76,7 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 ## <a name="configure-the-required-attachment-per-leave-type"></a>休暇タイプごとに必要な添付ファイルを構成する
 
 > [!NOTE]
-> **添付ファイルの必須** フィールドを使用するには、最初に、機能管理の **(プレビュー) 休暇申請に必要な添付ファイルの構成** 機能をオンにする必要があります。 プレビュー機能をオンにする方法の詳細については、[機能の管理](hr-admin-manage-features.md)を参照してください。
+> **添付ファイルの必須化** フィールドを使用するには、機能管理の **休暇申請に必要な添付ファイルの構成** 機能をオンにしておく必要があります。 プレビュー機能をオンにする方法の詳細については、[機能の管理](hr-admin-manage-features.md)を参照してください。
 
 1. **休暇および欠勤** ページの、**リンク** タブの **設定** で、**休暇と欠勤の種類** を選択します。
 
@@ -87,7 +87,7 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>休暇タイプごとに休暇単位 (時間 / 日) を構成する
 
 > [!NOTE]
-> 休暇タイプ機能ごとに休暇単位を使用するには、最初に機能管理で **(プレビュー) 休暇タイプ機能ごとに休暇単位を構成する** をオンにする必要があります。 プレビュー機能をオンにする方法の詳細については、[機能の管理](hr-admin-manage-features.md)を参照してください。
+> 休暇タイプ機能ごとに休暇単位を使用するには、機能管理で **休暇タイプ機能ごとに休暇単位を構成する** をオンにしておく必要があります。 プレビュー機能をオンにする方法の詳細については、[機能の管理](hr-admin-manage-features.md)を参照してください。
 
 > [!IMPORTANT]
 > 既定では、法人の休暇タイプでは、法人レベルの休暇パラメータの構成の休暇単位が使用されます。

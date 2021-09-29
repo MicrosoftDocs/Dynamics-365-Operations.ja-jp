@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99248a1bc231cfe58270b043827cde00a520f872658217b85dffd810bed391c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 984669d5e4bde4bd967bf0a181d1b45df16ee569
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736674"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484052"
 ---
 # <a name="demand-forecasting-overview"></a>需要予測の概要
 
@@ -34,7 +34,9 @@ ms.locfileid: "6736674"
 ベースラインの予測を生成するには、履歴トランザクション集計が Azure でホストされている Microsoft Azure Machine Learning に転送されます。 このサービスはユーザー間で共有されないため、業界固有の要件に合わせて、簡単にカスタマイズできます。 Supply Chain Management を使用して、予測を視覚化し、予測を調整し、予測精度に関する主要業績評価指標 (KPI) を表示することができます。
 
 > [!NOTE]
-> Microsoft Azure Machine Learning Studio (クラシック) は、機械学習を使った予測の生成に必要です。 2021 年 1 月現在、これは日本東部、米国中南、東南アジア、米国中央およびヨーロッパで利用可能です。 現在の可用性に関する更新情報については、[地域別 Azure 製品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=machine-learning-studio) を参照してください
+> Microsoft Azure Machine Learning Studio (クラシック) は、機械学習を使った予測の生成に必要です。 2021 年 12 月 1 日現在、新しい Machine Learning Studio (クラシック) のリソースは作成できません。 ただし、2024 年 8 月 31 日までは、引き続き既存の Machine Learning Studio (クラシック) のリソースを使用することができます。 最新の情報については [、Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio) を参照してください。
+> 
+> Dynamics 365 Supply Chain Management Version 10.0.23 以降では、新しい Azure Machine Learning Studio に対応しています。
 
 ## <a name="key-features-of-demand-forecasting"></a>需要予測の主な機能
 

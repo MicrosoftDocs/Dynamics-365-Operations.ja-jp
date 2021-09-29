@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 08/27/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463629"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500112"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -38,7 +38,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | LCS の一部の SQL レポートは非推奨になりました。 この機能は他のサービスによって置き換えられたので、レポートを監視する必要はなくなりました。 |
+| **廃止 / 削除の理由** |   すべての活動と監視は、自動化機能によってプラットフォーム内部で実施されます。 手動操作による確認は必要ありません。|
 | **別の機能で置き換えられているか?**   | なし |
 | **影響を受ける製品領域**         | SQL レポート: 現在の DTU、現在の DTU の詳細、ロックの詳細の取得、現在のプラン ガイドの一覧、クエリ ID のリストの取得、特定プラン ID の SQL クエリ プランの取得、クエリ プランおよび実行状態の取得、スロット コンフィギュレーションの取得、待機統計の取得、最も高価なクエリのリスト |
 | **配置オプション**              | クラウド配置: Microsoft によって管理される運用環境およびレベル 2 からレベル 5 のサンドボックス環境に影響します。 |
@@ -181,7 +181,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | [新しいグリッド コントロール](../..//fin-ops/get-started/grid-capabilities.md) |
 | **影響を受ける製品領域**         | Web クライアント |
 | **配置オプション**              | すべて |
-| **ステータス**                         | バージョン 10.0.13 では、新しいグリッド コントロールが一般に使用可能であり、ユーザーは必要に応じてこの機能を有効にすることができます。 新しいグリッド コントロールは、2021 年 10 月リリースで必須になります。 この新しいグリッド コントロールが必須化される場合、**forceLegacyGrid()** API は尊重されません。 |
+| **ステータス**                         | バージョン 10.0.13 では、新しいグリッド コントロールが一般に使用可能であり、ユーザーは必要に応じてこの機能を有効にすることができます。 新しいグリッド制御は、2021 年 10 月のリリースでは既定でオンになり、現在の予定では 2022 年 4 月に必須化されます。 この新しいグリッド コントロールが必須化される場合、**forceLegacyGrid()** API は尊重されません。 |
 
 ### <a name="personalization-without-saved-views"></a>保存されていないビューのないパーソナル化 
 

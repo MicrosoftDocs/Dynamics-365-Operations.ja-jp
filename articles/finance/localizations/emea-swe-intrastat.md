@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417085"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486949"
 ---
 # <a name="swedish-intrastat"></a>スウェーデンのイントラスタット
 
@@ -48,7 +48,7 @@ ms.locfileid: "7417085"
 3. **レポート形式のマッピング** フィールドで **イントラスタット レポート** を選択します。
 4. **商品コード階層** クイック タブの **カテゴリ階層** フィールドで、**イントラスタット** を選択します。
 5. **トランザクション コード** フィールドで、プロパティ転送のトランザクション コードを選択します。 このコードは、補償 (金銭的またはその他) に対する資産の実際のまたは計画された譲渡を生み出すトランザクションに使用します。 また、修正に対して使用します。 スウェーデンの会社では、1 桁のトランザクション コードを使用しています。
-6. **訂正票** フィールドで商品の返品用のトランザクション コードを選択します。 このコードは、トランザクション コードで最初に記録されたトランザクション後の、商品の返品に使用されます。 スウェーデンの会社では、1 桁のトランザクション コードを使用しています。
+6. **訂正票** フィールドで商品の返品用のトランザクション コードを選択します。
 7. **国/地域のプロパティ** タブの、**国/地域** フィールドで、会社が事業を行っているすべての国または地域を一覧表示します。 EU の加盟国ごとに、**国/地域のタイプ** フィールドで **EU** を選択して、国をイントラスタット レポートに表示します。
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>イントラスタット申告の製品パラメーターの設定

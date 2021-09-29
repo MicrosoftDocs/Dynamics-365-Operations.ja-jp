@@ -2,7 +2,7 @@
 title: 無限能力を使用したスケジューリング
 description: このトピックでは、計画最適化の無限能力のスケジューリングに関する情報を提供します。 また、現在の機能の制限について説明します。
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2e730340cddac107b04a6b5877e51b84f4dd7b21
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 9e1e423aaed06f6bb2b42e27d41c2aef46ffe104
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471671"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506810"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>無限能力を使用したスケジューリング
 
@@ -27,7 +27,12 @@ ms.locfileid: "7471671"
 
 ## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>無限能力のスケジューリング機能を有効にする
 
-このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースに移動して、*計画最適化の無限能力のスケジューリング* 機能を有効にします。
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+
+- **モジュール:** *マスター プラン*
+- **機能名:** *計画最適化のための無限キャパシティ スケジュール設定*
+
+この機能の詳細については、[能力に基づくリソース選択とスケジュール設定](capability-based-scheduling.md)参照してください。
 
 ## <a name="added-functionality"></a>追加機能
 
@@ -42,7 +47,7 @@ ms.locfileid: "7471671"
 - リソース タイプ
 - リソース
 - リソース グループ
-- 能力
+- この機能の詳細については、[能力に基づくリソース選択とスケジュール設定](capability-based-scheduling.md)参照してください。
 
 > [!NOTE]
 > スキルや証明書の要件などの人事管理に関連する要件は、まだサポートされていません。
@@ -55,7 +60,6 @@ ms.locfileid: "7471671"
 
 計画最適化のためにスケジューリングを使用する場合、次の制限が適用されます。
 
-- この機能では、ジョブのスケジューリングのみがサポートされます。 マスター プランのスケジューリング方法にかかわらず、工程のスケジューリングに関連する設定はスケジューリングの際に考慮されません。
 - この機能では、無限能力のみがサポートされます。
 - この機能では、リソース負荷機能はサポートされていません。
 - この機能では、破棄された工程は考慮されません。

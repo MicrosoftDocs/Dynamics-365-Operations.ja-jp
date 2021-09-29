@@ -2,7 +2,7 @@
 title: 保存されているビュー
 description: このトピックでは、保存されているビュー機能の使用方法について説明します。
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 9cca56a108177520f4aebea03f7f4d776f46fa3f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d6a7b1b21816db43a92364584e15ec04b891c611
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344347"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487844"
 ---
 # <a name="saved-views"></a>保存されているビュー
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>はじめに
 

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471719"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500430"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
 
@@ -32,7 +32,7 @@ ms.locfileid: "7471719"
 
 ## <a name="warehouse-execution-on-scale-units"></a>スケール ユニットでの倉庫の実行
 
-Warehouse Management ワークロードにより、クラウドおよびエッジのスケール ユニットは、倉庫管理機能から選択されたプロセスを実行できます。
+倉庫管理ワークロードにより、クラウドおよびエッジのスケール ユニットは、倉庫管理機能から選択されたプロセスを実行できます。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -157,6 +157,7 @@ Warehouse Management ワークロードにより、クラウドおよびエッ�
 
 - 積荷に割り当てられた発注書明細行の入庫処理。
 - プロジェクトに対する発注書の入庫処理。
+- 陸揚げコストの管理、航海の使用、輸送中の商品の追跡。
 - 有効な追跡用分析コード (**所有者** または **シリアル番号**、あるいはその両方) がある品目の入庫および出庫処理。
 - ブロッキング ステータス値を持つ在庫の処理。
 - 作業移動プロセス中の在庫状態の変更。
@@ -187,7 +188,8 @@ Warehouse Management ワークロードにより、クラウドおよびエッ�
 |--------------------------------------------------------------|-----|------------------------------|
 | 元伝票の処理                                   | あり | なし |
 | 積荷および輸送管理の処理                | あり。ただし、積荷計画プロセスのみです。 輸送管理プロセスはサポートされていません  | なし |
-| 倉庫にリリース                                         | あり | なし |
+| 陸揚げコストと輸送中の商品の受領                                         | あり | なし |
+| 倉庫へのリリース                                         | あり | なし |
 | 計画済クロスドッキング                                        | なし  | なし |
 | 出荷の連結                                       | あり。積荷計画を使用する場合です | あり |
 | 出荷ウェーブ処理                                     | なし  |あり。**積荷構築と並べ替え** を除きます |

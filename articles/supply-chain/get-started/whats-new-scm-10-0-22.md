@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 6fc4b9d0a0f5319c8a75e7d687ee82ea81497844
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c4aac62b36cd271e1c5fc3bcbbfdd785963fc368
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471863"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484075"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Management 10.0.22 のプレビュー (2021 年 11 月)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7471863"
 
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
-| 計画 | [機能ベースのリソース割り当ての最適化サポート計画](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [無限能力を使用したスケジューリング](../master-planning/planning-optimization/infinite-capacity-planning.md) | 機能管理 (*計画最適化の無限能力のスケジューリング*) |
+| 計画 | [機能ベースのリソース割り当ての最適化サポート計画](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [能力に基づいたリソースの選択を使用したスケジュール設定](../master-planning/planning-optimization/capability-based-scheduling.md) | 機能管理 (*計画最適化の無限能力のスケジューリング*) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
 

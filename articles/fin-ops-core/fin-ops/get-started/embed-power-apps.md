@@ -2,7 +2,7 @@
 title: Power Apps からキャンバス アプリを埋め込む
 description: このトピックでは、Microsoft Power Apps のキャンバス アプリをクライアントに埋め込み、製品の機能を拡張する方法について説明します。
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344532"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488057"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Power Apps からキャンバス アプリを埋め込む
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps は開発者と技術者以外のユーザーがコードを記述せずにモバイル デバイス、タブレット、および Web 用のカスタム ビジネス アプリを構築できるようにするサービスです。 Finance and Operations アプリは Power Apps との統合をサポートします。 ユーザー、組織、またはより幅広いエコシステムが開発するキャンバス アプリは、製品の機能を拡張するために Finance and Operations アプリに組み込むことができます。 たとえば、別のシステムから取得した情報で Finance and Operations アプリを補完するために、Power Apps からキャンバス アプリを構築できます。
 

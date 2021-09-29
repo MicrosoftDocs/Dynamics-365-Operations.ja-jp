@@ -2,7 +2,7 @@
 title: 構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 description: このトピックでは、構成済み電子レポート (ER) コンポーネントを検査して、発生する可能性のあるランタイムの問題を回避する方法について説明します。
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718626"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488117"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 
@@ -229,6 +229,12 @@ ER では、次のカテゴリを使用して、整合性チェック検査を�
 <p>ヘッダー/フッター (&lt;コンポーネント タイプ: ヘッダーまたはフッター&gt;) に不整合がある</p>
 <p><b>ランタイム:</b> 最後の構成済コンポーネントが、構成済の電子申告形式の下書きバージョンを実行する場合に、実行時に使用されます。</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>ページ コンポーネントの設定における不整合</a></td>
+<td>データの整合性</td>
+<td>エラー</td>
+<td>レプリケーションのない範囲のコンポーネントが複数あります。 不必要なコンポーネントを削除してください。</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Excel テンプレートを使用して送信ドキュメントを生成する�
 #### <a name="option-2"></a>オプション 2
 
 不整合な **Excel\\ヘッダー** または **Excel\\フッター** コンポーネントのいずれかに対して **ヘッダー/フッター外観** プロパティの値を変更します。
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>ページ コンポーネントの設定における不整合
+
+Excel テンプレートを使用して送信ドキュメントを生成するように ER フォーマット コンポーネントを [構成](er-fillable-excel.md)した場合、生成されたドキュメントに ER の数式を使用してページ付けするための **Excel\\ページ** コンポーネントを追加できます。 **Excel\\コンポーネント** を追加するたびに、入れ子になった[範囲](er-fillable-excel.md#range-component)コンポーネントを多数追加しても、以下の[構造](er-fillable-excel.md#page-component-structure)に準拠することができます:
+
+- 最初に **入れ子** の範囲コンポーネントは、**レプリケーション方向** プロパティが **レプリケーションなし** に設定されるように構成することができます。 この範囲は、生成されるドキュメントのページ ヘッダーを作成する目的で使用されます。
+- **レプリケーション方向** のプロパティが **縦** に設定されている場合、他の多くのネストされた **範囲** コンポーネントを追加することができます。 これらの範囲は、生成されるドキュメントを入力する目的で使用されます。
+- 最期の **入れ子** の範囲コンポーネントは、**レプリケーション方向** プロパティが **レプリケーションなし** に設定されるように構成することができます。 この範囲は、生成されるドキュメントのページ フッターを作成し、必要な改ページを追加する目的で使用されます。
+
+設計時に ER フォーマット デザイナーで ER フォーマットのこの構造に従わない場合は、次のようなエラー メッセージで検証エラーが発生します: 「複数のレプリケーションのない範囲コンポーネントがあります。 不必要なコンポーネントを削除してください。」
+
+### <a name="automatic-resolution"></a>自動解決
+
+この問題を自動的に修正するオプションはありません。
+
+### <a name="manual-resolution"></a>手動解決
+
+#### <a name="option-1"></a>オプション 1
+
+一貫性のない **Excel\\範囲** コンポーネントの **レプリケーション方向** プロパティを変更して、設定されたフォーマットを変更します。
 
 ## <a name="additional-resources"></a>追加リソース
 

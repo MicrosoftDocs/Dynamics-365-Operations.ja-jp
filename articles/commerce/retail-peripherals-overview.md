@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715337"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500306"
 ---
 # <a name="peripherals"></a>周辺機器
 
@@ -562,7 +562,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 > デバイスが異なるハードウェア ステーションをしばしば使用する場合、支払/入金プロセスを開始するときにレジ担当者がハードウェア ステーションを選択するよう促すようにように Modern POS を設定することをお勧めします。 **Retail と Commerce** &gt; **チャネル設定** &gt; **POS 設定** &gt; **レジスター** の順にクリックします。 レジスターを選択し、**支払/入金での選択** オプションを **はい** に設定します。 チャンネル データベースへの同期変更に、**1090** 配送スケジュールを使用します。
 
 ## <a name="extensibility"></a>拡張性
-ハードウェア ステーションの拡張性のシナリオの情報については [ハードウェア ステーションの拡張](dev-itpro/hardware-station-extensibility.md) を参照してください。
+ハードウェア障害の拡張機能のシナリオについては、[POS を新たなハードウェア デバイスと統合し、拡張機能インストーラーを生成する](dev-itpro/hardware-device-extension.md)を参照してください。
 
 ## <a name="security"></a>セキュリティ
 現在のセキュリティ基準によると、実稼動環境で次の設定をする必要があります。 

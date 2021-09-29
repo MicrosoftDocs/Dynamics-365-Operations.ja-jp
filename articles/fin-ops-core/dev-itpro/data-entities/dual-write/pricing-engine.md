@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
-ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
+ms.openlocfilehash: 4467d313aa2518b23434ec05989eb3e87cd35dfa
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7481318"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485737"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Supply Chain Management の価格決定エンジンとのオンデマンド同期
 
@@ -60,6 +60,7 @@ Sales の列が入力されている場合は、次の制限事項が適用さ�
 + Supply Chain Management での請求金額と請求金額配賦の設定は、Sales ではレプリケートされません。
 + 価格決定では、Supply Chain Management の販売注文行ページの **小売チャネル** 列で指定された特別な小売価格は考慮しません。
 + Supply Chain Management の **取引手当管理** セクションで定義されている割引は考慮されません。
++ 価格では販売契約が考慮されます。
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

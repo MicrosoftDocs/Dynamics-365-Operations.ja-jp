@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) のプレビュー
+title: Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.21 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
-ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
+ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7391211"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500558"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) のプレビュー
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、バージョン 10.0.21 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.960 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.21 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.960 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 8 月
 - **リリースの一般提供 (手動更新):** 2021 年 9 月
@@ -46,13 +45,14 @@ IaaS にリリース 10.0.21 を配置する場合、次のような配置警告
 
 次の表に、このリリースに含まれる機能の一覧を示します。 *機能* 列には、[リリース計画](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features) へのリンクがあり、各機能の公式リリース日を確認できます。 *詳細情報* 列には、詳細情報や関連ドキュメントへのリンクが表示されます。
 
-これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。
+これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-| 機能領域 | 機能 | 詳細 |
+| 機能領域 | フィーチャー | 詳細 |
 |---|---|---|
-| 在庫&nbsp;および&nbsp;物流 | [Dynamics 365 Supply Chain Management のグローバル在庫会計アドイン](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [グローバル在庫会計ホーム ページ](../global-inventory-accounting/global-inventory-accounting-home.md) |
+| 在庫&nbsp;および&nbsp;物流 | [Dynamics 365 Supply Chain Management のグローバル在庫会計アドイン](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [グローバル在庫会計ホーム ページ](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | 在庫&nbsp;および&nbsp;物流 | [相手勘定に接続されたコードを使用した手当調整の転記](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [在庫棚卸の理由コード](../warehousing/reason-codes-for-counting-journals.md) |
 | 在庫&nbsp;および&nbsp;物流 | [販売見積参照データ エクスポート ポリシー](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | 見積書で参照されているデータを変更すると、それらの見積書 (または明細行) が次の増分エクスポートに含まれるかどうかを選択します。 そのような見積書または明細行を含めない場合は、増分エクスポートがより迅速に実行します。<br><br>この機能は、**変更追跡中に販売見積参照データをスキップ** という設定を **売掛金勘定パラメーター** ページに追加します。 |
+| 在庫&nbsp;および&nbsp;物流 | シールド入札 <!-- KFM: Add RP link when available --> | [RFQ の封緘入札](../procurement/sealed-bidding.md) |
 | 在庫&nbsp;および&nbsp;物流 | [GS1 形式標準を使用した倉庫内のバーコードのスキャン](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 バーコードと QR コード](../warehousing/gs1-barcodes.md) |
 | 在庫&nbsp;および&nbsp;物流 | [在庫の可視化アドインの仮引当](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [在庫の視覚化引当](../inventory/inventory-visibility-reservations.md) |
 | 在庫&nbsp;および&nbsp;物流 | [リベート管理の控除および Catch Weight の強化](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [控除ワークベンチを使用した控除の管理](../rebate-management/deduction-workbench.md )<br><br>[リベートの処理、確認、および転記](../rebate-management/process-review-post.md)<br><br>[リベート管理取引](../rebate-management/rebate-management-deals.md) |

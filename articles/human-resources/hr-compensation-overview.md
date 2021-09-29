@@ -1,8 +1,8 @@
 ---
 title: 報酬プラン
-description: 報酬と給付金マネージャーは、報酬管理を使用して、組織の従業員の固定報酬プランおよび変動報酬プランを管理し、処理できます。
-author: andreabichsel
-ms.date: 06/20/2017
+description: このトピックでは、報酬管理を使用した報酬プランの管理と処理方法について説明します。
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dafba542ec1421a6ef3437d9c2f22e0c363e557d7f5b6410af36fc7cb8d4be7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64169ebc5bbd2f0a9b4be3d4ec076c8814e6eb97
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732444"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483832"
 ---
 # <a name="compensation-plans"></a>報酬プラン
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-報酬と給付金マネージャーは、報酬管理を使用して、組織の従業員の固定報酬プランおよび変動報酬プランを管理し、処理できます。
+報酬・福利厚生マネージャーは、**報酬管理** を使用して、組織の従業員に対する固定報酬プランと変動報酬プランの管理と処理をすることができます。
 
 ### <a name="introduction"></a>はじめに
 
@@ -89,10 +89,10 @@ ms.locfileid: "6732444"
 </tr>
 <tr class="even">
 <td>標準職務給</td>
-<td>標準職務給は、ある報酬レベルにおける、すべての従業員に対して最適だと考える支払レートを定義します。 通常、段階的なプラン構造の場合、範囲の中間点が標準職務給になります。 バンド構造では、標準職務給はほとんど使用されません。 [固定報酬プラン] フォームで、固定報酬プランの標準職務給を指定できます。</td>
+<td>標準職務給は、ある報酬レベルにおける、すべての従業員に対して最適だと考える支払レートを定義します。 通常、段階的なプラン構造の場合、範囲の中間点が標準職務給になります。 バンド構造では、標準職務給はほとんど使用されません。 **固定報酬プラン** ページで、固定報酬プランの標準職務給を指定できます。</td>
 </tr>
 <tr class="odd">
-<td>ジョブ機能</td>
+<td>職務機能</td>
 <td>職務権限は、特定の職務に対する報酬プランの分類やフィルタ処理に使用されます。</td>
 </tr>
 <tr class="even">

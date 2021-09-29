@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a102f1d77362f650c060ce5d0aee5b62d2102532
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 63f3bc6cb7563ee6ff719272a0795efffcb40bc8
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344957"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500199"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>組み込みマスター計画と計画最適化の違い
 
@@ -33,6 +33,8 @@ ms.locfileid: "7344957"
 | コピーの計画、計画の削除、および計画バージョン クリーンアップ | <p>次の項目は、ナビゲーション ウィンドウの **マスター計画 \> マスター計画 \> 計画の維持** で無効になっています。</p><ul><li>コピーの計画</li><li>計画の削除</li><li>計画バージョンのクリーンアップ</li></ul> |
 | 返品注文 | 返品注文は考慮されません。 |
 | 関連機能のスケジューリング | 詳細については、[無限能力を使用したスケジューリング](infinite-capacity-planning.md#limitations) を参照してください。 |
+| 安全在庫フルフィルメント | 計画の最適化では、**品目補充** ページの **実行最小** フィールドに、常に *今日の日付＋調達時間* のオプションが使用されます。 これは、安全在庫に調達時間が含まれてい場合、手持ち在庫が少ない場合に作成された計画的な注文が、このリードタイムが原因で常に遅延するため、不要な計画的注文などを防ぐことができます。 |
+| 安全在庫のペギングと正味必要量 | *安全在庫* の必要量は含まれておらず、**正味必要量** ページにも表示されません。 安全在庫は需要を表すものではなく、要求日も関連付けられていません。 その代わりに、常にどれだけの在庫を保持していなければならないかという制約を設けます。 ただし、**最小** のフィールド値は、マスタープランで計画された注文を計算する際にも考慮されます。 **正味必要量** ページの **累計数量** 列を検査し、この値が考慮されていることを確認してください。 |
 | 配送カレンダー | **出荷のモード** ページで **配送カレンダー** 列の値は無視されます。 |
 
 ## <a name="additional-resources"></a>追加リソース

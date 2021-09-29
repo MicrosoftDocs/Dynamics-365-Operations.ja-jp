@@ -2,7 +2,7 @@
 title: サードパーティ製アプリの埋め込み
 description: このトピックでは、サードパーティー製アプリを埋め込んで、製品の機能を拡張する方法について説明します。
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345413"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488237"
 ---
 # <a name="embed-third-party-apps"></a>サードパーティ製アプリの埋め込み
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 多くの顧客は、さまざまなアプリケーションを使用して業務を行っています。 これらのアプリケーションの一部は、Finance and Operations アプリと連携して動作するサードパーティの Web アプリです。 よりシームレスなユーザー エクスペリエンスを提供するには、**フル ページ アプリ** 機能を使用して、それらのサードパーティ製アプリを Finance and Operations アプリに直接埋め込むことができます (サードパーティ製アプリが埋め込みを許可している場合)。 これにより、ユーザーはタブやウィンドウを切り替えることなく、必要な Web サイトやアプリにアクセスすることができます。
 

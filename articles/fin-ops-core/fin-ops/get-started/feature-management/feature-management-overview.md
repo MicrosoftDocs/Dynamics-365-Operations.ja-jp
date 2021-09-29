@@ -2,7 +2,7 @@
 title: 機能管理の概要
 description: このトピックでは、機能管理の機能および使用方法について説明します。
 author: Peakerbl
-ms.date: 07/30/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,17 +16,16 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 9b51e848a965589ef0a14e5b880f213d18abc53097c18eed51320d7443a3b5f0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1318093d66cfc30a04815311cce332df010d4b69
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741611"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488181"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../../includes/preview-banner.md)]
 
 機能は、すべてのリリースで追加および更新されます 機能管理エクスペリエンスは、各リリースで提供されている機能のリストを表示できるワークスペースを提供します。 その後、ワークスペースを使用して機能のドキュメントを表示したり、機能を有効または無効にできます。
 

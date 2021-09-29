@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af7ac416053a90766138f999ce69d9993ee2ff6c
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744801"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500282"
 ---
 # <a name="goods-in-transit-processing"></a>輸送中の商品の処理
 
@@ -148,8 +148,6 @@ ms.locfileid: "6744801"
 陸揚費用は、*輸送中の商品* という名前の新しい作業指示書タイプを **作業テンプレート** ページに追加します。 この作業指示書タイプは、[発注書の作業テンプレート](/dynamicsax-2012/appuser-itpro/create-a-work-template)と同じ方法で構成する必要があります 。
 
 #### <a name="work-header-breaks"></a>作業ヘッダーの分割
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 *輸送中の商品* という作業指示書タイプを持つ作業テンプレートは、作業ヘッダーを分割するように構成できます。 **作業テンプレート** ページで、次の手順のいずれかを実行します。
 

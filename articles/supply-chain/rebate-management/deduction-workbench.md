@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 04d7c1de85978f7915246fd835a0866cefb6de310bba240ebcadc57089e10521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735114"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500405"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>控除ワークベンチを使用した控除の管理
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 このトピックでは、控除を含む顧客支払を処理できるように、控除ワークベンチを使用する方法について説明します。
 

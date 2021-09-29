@@ -2,7 +2,7 @@
 title: 計画最適化リリース プロセスおよびリリース履歴
 description: このトピックでは、計画最適化のリリース プロセスおよびリリース履歴に関する情報を提供します。
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 1bf08fc75aa2c05b2f2974ee46ec16609505f696
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474703"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506786"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>計画最適化リリース プロセスおよびリリース履歴
 
@@ -33,6 +33,7 @@ Microsoft は、計画最適化を月ごとに更新します。 ただし、業
 
 | 変更 | 機能管理の詳細 | リリース日 |
 |---|---|---|
+| <p>**スケジュール設定の方法** が *運用スケジュール* に設定されている マスタ プランのサポートが追加されました。</p><p>**ルートグループ** ページで、**ルート/ジョブタイプ** が *設定* または *プロセス* となっている行の **アクティブ化**、**作業時間**、**容量** のチェック ボックスの設定を確認します。 </p><p>一般的なパフォーマンス、品質、および安定性の向上。 | <p>オペレーションのスケジュール設定は、バージョン 10.0.20 の機能管理で使用できます。</p><p>機能名: *計画最適化の無限能力のスケジューリング*</p>  | 2021 年 9 月 9 日 - 17 日 |
 | 一般的なパフォーマンス、品質、および安定性の向上。 | 機能管理は必要ありません。 | 2021 年 8 月 25–30 日 |
 | <p>計画オーダーに追加された **リード タイム** フィールド。</p><p>一般的なパフォーマンス、品質、および安定性の向上。</p> | 機能管理は必要ありません。 | 2021 年 8 月 12–17 日 |
 | <p>無限能力のスケジューリングのリソース タイプ要件の追加。</p><p>無限能力スケジューリングのためのリソース効率とカレンダー効率の向上。</p><p>詳細については、[無限能力を使用したスケジューリング](infinite-capacity-planning.md) を参照してください。 | <p>バージョン 10.0.20 の機能管理で使用できます。</p><p>機能名: *計画最適化の無限能力のスケジューリング*</p> | 2021 年 7 月 6–12 日 |

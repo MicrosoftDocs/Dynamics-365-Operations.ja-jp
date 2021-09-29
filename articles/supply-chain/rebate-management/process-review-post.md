@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729413"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500478"
 ---
 # <a name="process-review-and-post-rebates"></a>リベートの処理、確認、および転記
 
@@ -43,8 +43,6 @@ ms.locfileid: "6729413"
 **リベート 管理 \> 定期タスク \> FIFO 購買価格の計算** に移動します。 表示されるダイアログ ボックスで、**OK** を選択して計算を実行します。
 
 ## <a name="create-source-transactions"></a>ソース トランザクションを作成する
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 適用されるリベート管理取引を作成する前または作成した後に、ソース トランザクションを含む販売注文または発注書を作成できます。
 
@@ -158,8 +156,6 @@ ms.locfileid: "6729413"
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>リベート ワークベンチを使用した取引の処理
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 特定の取引や取引明細行を処理する代わりに、*リベート ワークベンチ* を使用して複数の取引を同時に処理することができます。 必要に応じて、レコード フィルターの適用や、定期的なスケジュールの設定を行います。 行を選択する必要はありません。 システムは、設定した日付とフィルターの要件を満たすすべての明細行を処理します。
 
 リベート ワークベンチを使用して取引を処理するには、次の手順に従います。
@@ -213,8 +209,6 @@ ms.locfileid: "6729413"
 > 請求プロセスを使用している場合、次の期間を処理すると、トランザクション リストには、以前の転記で未請求であったトランザクションと、選択した期間の新しいトランザクションが含まれます。
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>リベート ワークベンチを使用したリベート管理トランザクションの表示と編集
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 リベート ワークベンチを使用したリベート管理トランザクションを表示および編集するには、次の手順を実行します。
 
@@ -295,8 +289,6 @@ ms.locfileid: "6729413"
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>リベート ワークベンチを使用したトランザクションの転記
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 プロビジョニング、リベート、または損金処理トランザクションを処理した後、次の手順に従って、リベート ワークベンチを使用し、すべての取引の 1 つ以上の特定のトランザクション明細行に対して生成されたトランザクションを確認および転記します。
 
 1. **リベート管理 \> リベート管理取引 \> リベート ワークベンチ** に移動します。
@@ -332,8 +324,6 @@ ms.locfileid: "6729413"
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>リベート ワークベンチを使用した仕訳帳を確認する
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 リベート ワークベンチを使用して仕訳帳を確認するには、次の手順に従います。
 
 1. **リベート管理 \> リベート管理取引 \> リベート ワークベンチ** に移動します。
@@ -342,8 +332,6 @@ ms.locfileid: "6729413"
 1. 関連する仕訳帳、ドキュメント、品目の一覧が表示されます。 仕訳帳、ドキュメント、品目に関する詳細情報を表示するには、その行を選択し、アクション ペインで **詳細の表示** を選択します。
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>控除ワークベンチに対するリベート管理トランザクション
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 次の **支払タイプ** のいずれかの値を持つリベート管理トランザクションを転記すると、システムは関連する顧客アカウントの顧客控除仕訳帳または自由書式の請求書を作成します。
 
@@ -358,8 +346,6 @@ ms.locfileid: "6729413"
 
 ## <a name="purge-unposted-transactions"></a>未転記トランザクションを削除する
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 プロビジョニング、リベート、または損金処理トランザクションを処理した後は、次の手順に従って、選択した未転記トランザクションを削除します。
 
 1. **リベート管理 \> リベート管理取引 \> リベート ワークベンチ** に移動します。
@@ -368,8 +354,6 @@ ms.locfileid: "6729413"
 4. **OK** を選択して、未転記トランザクションを削除します。
 
 ## <a name="cancel-a-posted-provision"></a>転記された規定のキャンセル
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 プロビジョニングを処理して転記した後、次の手順に従って、転記されたプロビジョニング トランザクションをキャンセルします。
 

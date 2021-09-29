@@ -1,8 +1,8 @@
 ---
 title: 報酬の構造の作成
-description: この記事では、固定報酬プランを作成する方法、および適格性ルールで計画に従業員を登録する有効にする方法について説明します。
-author: andreabichsel
-ms.date: 02/10/2020
+description: このトピックでは、固定報酬プランを作成し、適格性ルールを介して従業員をプランに登録する方法を説明します。
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,21 @@ ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPar
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2649a392b5c8bb2482622eba22b0b2f458058314dce25a8b9032eb2ef518240c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec30d6259b755bf7c304e8796b32d373027ce7ff
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732372"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483955"
 ---
 # <a name="develop-a-compensation-structure"></a>報酬の構造の作成
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-この記事では、固定報酬プランを作成する方法、および適格性ルールで計画に従業員を登録する有効にする方法について説明します。 この記事は、USMF のデモ データを使用し、報酬と給付金マネージャーに適用されます。
+このトピックでは、固定報酬プランの作成と、適格性ルールによる従業員の登録について説明します。 このトピックでは、USMF のデモ データを使用し、報酬と福利厚生マネージャーに適用されます。
 
 ## <a name="create-a-fixed-compensation-plan"></a>固定報酬プランの作成
 
@@ -42,7 +42,7 @@ ms.locfileid: "6732372"
 
 7. **タイプ** フィールドで、固定報酬プランが **バンド**、**等級**、**ステップ** 計画のいずれであるかを選択します。
 
-8. **許可された報酬認定** チェック ボックスは、プロセス イベントでこの計画に追加されたアクションの既定値として機能します。 報酬認定を許可すると、報酬を処理するときに計算された規定額を上書きすることができます。
+8. **推奨の許可** チェック ボックスは、プロセス イベントでこのプランに追加されたアクションの既定の値になります。 報酬認定を許可すると、報酬を処理するときに計算された規定額を上書きすることができます。
 
 9. **許容範囲外** フィールドでは、特定のレベルに対して、指定の報酬構造の範囲外になる報酬額をどのように処理するかを指定することができます。 **許容範囲外** フィールドを **なし** に設定すると、任意の報酬額を使用できます。 **ソフトの許容範囲** では、報酬額がそのレベルの最小基準点の金額より少ない場合、または最大金額を超える場合に、ユーザーに警告します。 ユーザーは警告を無視して操作を継続できます。 **ハードの許容範囲** では、従業員の報酬額がそのレベルの最小または最大の基準点の範囲外の場合にエラーを生成します。また、従業員の報酬が範囲内になるように自動的に調整します。
 

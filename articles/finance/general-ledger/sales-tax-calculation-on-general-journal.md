@@ -1,7 +1,7 @@
 ---
 title: 一般仕訳帳明細行での消費税計算
 description: このトピックでは、一般仕訳帳明細行のさまざまなタイプの勘定 (仕入先、顧客、元帳、およびプロジェクト) に対する消費税がどのように計算されるかについて説明します。
-author: EricWang
+author: EricWangChen
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: EricWang
+ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 96a87e5de3fb247e4554a64ecff3a4c63477b6a70f7a969b80f538601cda08bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746371"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488314"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>一般仕訳帳明細行での消費税計算
 [!include [banner](../includes/banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "6746371"
 
 •   消費税コードが免税である場合、消費税提示方法は免税仕入になります。
 
-それ以外は、仕訳帳金額が借方 (正) の場合、消費税提示方法は消費税収入になります。仕訳帳金額が貸方 (負) の場合、消費税提示方法は消費税支払になります。
+それ以外は、仕訳帳金額が借方 (正) の場合、消費税提示方法は消費税収入になります。仕訳帳金額が貸方 (負) の場合、消費税提示方法は消費税支払となります。
 
 次の図では、ルールをグラフィック表示しています。
 
