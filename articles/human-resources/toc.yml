@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 9 月 20 日
+          href: hr-whats-new-2021-09-20.md
         - name: 2021 年 9 月 6 日
           href: hr-whats-new-2021-09-06.md
         - name: 2021 年 8 月 23 日
@@ -291,6 +293,8 @@
               href: hr-admin-troubleshooting-batch-history.md
             - name: 行き詰まったバッチ ジョブのリセット
               href: hr-admin-troubleshooting-batch-execution.md
+            - name: Dataverse 同期のリセット
+              href: hr-admin-troubleshooting-dataverse-sync.md
             - name: 分析レポートが更新されない
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Power Apps 管理センターで環境を作成できない
@@ -485,6 +489,12 @@
               items:
                 - name: 給与作業者の福利厚生計画
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: その他のエンティティ
+              items:
+                - name: 氏名の履歴
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: 変換率
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
             - name: オプション セット
               items:
                 - name: 性別
@@ -543,7 +553,9 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: グローバル アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-                - name: アドレス帳に関するよく寄せられる質問
+                - name: 住所の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
+                - name: アドレス帳に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
@@ -781,6 +793,8 @@
                       href: hr-benefits-process-rate-changes.md
                 - name: ACA 報告書
                   href: hr-benefits-management-aca-reports.md
+                - name: 福利厚生の明細書
+                  href: hr-benefits-statement.md
             - name: 福利厚生プログラムの定義および管理
               href: hr-benefits-manage-program.md
             - name: 給付金適格性ポリシー

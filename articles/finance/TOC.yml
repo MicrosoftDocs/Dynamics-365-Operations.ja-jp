@@ -284,6 +284,8 @@
               href: accounts-payable/broker-contract.md
             - name: ロイヤルティ契約管理
               href: accounts-payable/royalty-contract.md
+            - name: 訂正票での元の請求書の参照 (仕入先請求書)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: 支払と決済
               items:
                 - name: 買掛金勘定の集中支払
@@ -1272,6 +1274,8 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: スナップショットの概要
                   href: finance-insights/payment-snapshots.md
+            - name: Finance Insights のトラブルシューティングに関してよくあるご質問
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: プロジェクト管理および会計
           items:
             - name: プロジェクト管理および会計の概要
@@ -1574,7 +1578,11 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: 複数の VAT 登録に関するレポート
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
-                        - name: フランスのレポート
+                        - name: オーストリアの申告
+                          items:
+                            - name: VAT 申告
+                              href: localizations/emea-aut-vat-declaration-austria.md
+                        - name: フランスの申告
                           items:
                             - name: VAT 申告
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: 国境を越えたサービスのレポート
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: イントラスタット レポート
+                - name: オーストリアのイントラスタット
                   href: localizations/emea-aut-intrastat.md
                 - name: 仕入関税
                   href: localizations/emea-aut-purchase-duties.md
+                - name: VAT 申告
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: バーレーン
               items:
                 - name: バーレーンの概要
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: 四半期 VAT 通信レポート
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: ブラック リスト レポート
-                  href: localizations/emea-ita-black-list-report.md
                 - name: 報告日と会計仕訳帳
                   href: localizations/emea-ita-competence-date.md
                 - name: 固定資産の減価償却
@@ -3801,11 +3809,13 @@
           items:
             - name: 電子申告の概要
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: コンフィギュレーション
+            - name: 電子申告コンポーネント
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
+            - name: 構成
               items:
-                - name: コンフィギュレーションの作成
+                - name: 構成の作成
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
-                - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
+                - name: 他のコンポーネントに対する電子申告構成の依存関係を定義する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
@@ -4509,7 +4519,9 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: グローバル アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
-                - name: アドレス帳に関するよく寄せられる質問
+                - name: 住所の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
+                - name: アドレス帳に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/finance/toc.json

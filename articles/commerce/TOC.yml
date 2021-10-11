@@ -1398,12 +1398,16 @@
               items:
                 - name: ロシア向け Commerce ローカライズ
                   href: localizations/rus-commerce-localization.md
-                - name: ロシア向け Commerce POS の簡易顧客住所形式
-                  href: localizations/rus-simplified-address.md
                 - name: ロシア向け Commerce ローカライズの設定
                   href: localizations/rus-commerce-setup.md
                 - name: ロシア向け Commerce での前払
                   href: localizations/rus-commerce-prepayments.md
+                - name: ロシア向け Commerce POS の簡易顧客住所形式
+                  href: localizations/rus-simplified-address.md
+                - name: ロシア向け会計プリンター統合サンプル
+                  href: localizations/rus-fpi-sample.md
+                - name: ロシアの顧客情報管理
+                  href: localizations/rus-customer-information.md
             - name: スウェーデン
               items:
                 - name: キャッシュ レジスター機能
@@ -1512,11 +1516,11 @@
           items:
             - name: 電子申告の概要
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: コンフィギュレーション
+            - name: 構成
               items:
-                - name: コンフィギュレーションの作成
+                - name: 構成の作成
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
-                - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
+                - name: 他のコンポーネントに対する電子申告構成の依存関係を定義する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
@@ -2220,7 +2224,9 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: グローバル アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
-                - name: アドレス帳に関するよく寄せられる質問
+                - name: 住所の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
+                - name: アドレス帳に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/commerce/toc.json
@@ -2328,8 +2334,12 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
         - name: 拡張性
           items:
-            - name: Commerce 開発と拡張性
-              href: dev-itpro/dev-retail-home-page.md
+            - name: Commerce の開発と拡張性
+              items:
+                - name: IT プロおよび開発者向け Commerce
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: ローカル開発環境の設定
+                  href: dev-itpro/setup-local-dev-env.md
             - name: オンライン チャネルの拡張性
               items:
                 - name: オンライン チャネルの拡張性の概要

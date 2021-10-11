@@ -859,11 +859,11 @@
           items:
             - name: 電子申告の概要
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: コンフィギュレーション
+            - name: 構成
               items:
-                - name: コンフィギュレーションの作成
+                - name: 構成の作成
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
+                - name: 他のコンポーネントに対する電子申告構成の依存関係を定義する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
@@ -1651,6 +1651,8 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 計画の最適化で使用されないパラメーター
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: 供給スケジュール
+                  href: master-planning/supply-schedule.md
                 - name: 計画にフィルターを適用
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: 需要予測を使用したマスター プラン
@@ -1759,8 +1761,6 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: 出庫の計画企業内需要を表示する
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: サプライ チェーンの内部顧客と共同作業する
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: 組み込みマスター プランを使用した正味必要量およびペギング情報
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: 予測
@@ -1885,7 +1885,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: グローバル アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
-                - name: アドレス帳に関するよく寄せられる質問
+                - name: アドレス帳に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
@@ -2037,8 +2037,12 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: 発注書承認モバイル ワークスペース
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: 内部で使用される会社間発注書の作成および請求
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: 会社間注文価格の不一致をチェック
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: 発注書に記載されている商品の受取の記録
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
             - name: 発注書の作成
               items:
                 - name: 発注書の手動作成
@@ -2729,6 +2733,62 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: 販売見積の作成および編集
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: 会社間取引
+              items:
+                - name: 会社間取引の設定
+                  items:
+                    - name: 会社間取引の設定
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: 会社間パラメーター
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 会社間取引のための仕入先、顧客、および品目の設定
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: 会社間注文の雑費を設定
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: 会社間注文を転記するパラメーターの設定
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: 会社間情報の同期
+                  items:
+                    - name: 会社間価格と割引の同期
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: 会社間雑費の同期
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: 会社間顧客情報の同期
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: 会社間廃棄コードの同期
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: 会社間販売注文書と請求書
+                  items:
+                    - name: 多数の会社での会社間発注書および会社間販売注文書の作成
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: 会社間の注文と返品注文
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: 内部で使用される会社間販売注文書の作成
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: 外部顧客の会社間販売注文書の作成および請求
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: 会社間引当
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: 元の会社間販売注文書の変更または削除
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: 会社間注文の変更
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: 会社間のバッチ番号とシリアル番号
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: 会社間梱包明細
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: 会社間顧客請求書に対する支払の自動登録
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: 会社間発注書
+                  items:
+                    - name: 内部で使用される会社間発注書の作成および請求
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: 会社間注文価格の不一致をチェック
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: 会社基本通貨換算
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: 会社間マスター スケジューリング
+                  href: sales-marketing/intercompany-master-scheduling.md
             - name: 返品
               items:
                 - name: 販売返品
@@ -3065,8 +3125,10 @@
               href: landed-cost/landed-cost-overview.md
             - name: 陸揚原価と輸送管理の比較
               href: landed-cost/landed-cost-vs-tms.md
-            - name: 陸揚原価モジュールの設定とコンフィギュレーション
+            - name: 陸揚原価モジュールの設定と構成
               items:
+                - name: システムの陸揚原価モジュールを有効にする
+                  href: landed-cost/landed-cost-enable.md
                 - name: 陸揚原価パラメーター
                   href: landed-cost/landed-cost-parameters.md
                 - name: 陸揚原価の調達パラメーター
@@ -3185,6 +3247,8 @@
                       href: warehousing/warehouse-slotting.md
                     - name: 場所のディレクティブ在庫ピッキング エイジング
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: アンカー設定
+                      href: warehousing/anchoring.md
                     - name: 出庫の並べ替え
                       href: warehousing/outbound-sorting.md
                     - name: 壁にプット - 店舗にプット
@@ -3341,6 +3405,8 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: モバイル デバイスで最も古いバッチをピッキングする
                       href: warehousing/pick-oldest-batch.md
+                - name: グローバル モバイル デバイス パラメーター
+                  href: warehousing/mobile-device-parameters.md
                 - name: モバイル デバイスのユーザー設定
                   href: warehousing/mobile-device-user-settings.md
                 - name: 倉庫アプリのイベント処理
