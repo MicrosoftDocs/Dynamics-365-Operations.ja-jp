@@ -1,7 +1,7 @@
 ---
 title: 顧客サービスの処理の概要
 description: 顧客サービスは、専門的なサービスベースの企業および製造サービス組織をサポートします。
-author: ShylaThompson
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb9331ac4d22f87ca0b2e6f2dcdac1aafe25849bc44e06e7cb2d91b7af125f87
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e88014c34591dad678b9491076f339396fa3822
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745457"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566074"
 ---
 # <a name="work-with-customer-service-overview"></a>顧客サービスの処理の概要
 

@@ -1,7 +1,7 @@
 ---
 title: 購買入庫におけるプロジェクト費用の発生
 description: このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 Finance で追跡する方法について説明します。
-author: ShylaThompson
+author: sunfzam
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca04760c682969a409943e66f246dfa8a3bf2872183a0197c8c460cf4398c483
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ae2f57e0104a30492363f1576962d36a2a1b04b
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737286"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595233"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>購買入庫におけるプロジェクト費用の発生
 

@@ -1,7 +1,7 @@
 ---
 title: 銀行仕訳帳の複合エンティティの更新
-description: 追加のBankTransactionType フィールドに複合 BankJournalEntity を追加するには以下の手順が必要です。
-author: ShylaThompson
+description: このトピックでは、追加の BankTransactionType フィールドを複合 BankJournalEntity に追加するために必要な手順を示します。
+author: panolte
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cd6a1f9d7ba36e591d7e558956297781c346635c30c10d588c0dbe6d73301030
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d4334e9aa333aad116f0a0291d9175268661f11
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733056"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595437"
 ---
 # <a name="update-the-bank-journal-composite-entity"></a>銀行仕訳帳の複合エンティティの更新
 
 [!include [banner](../includes/banner.md)]
 
-追加のBankTransactionType フィールドに複合 BankJournalEntity を追加するには以下の手順が必要です。
+このトピックでは、追加の BankTransactionType フィールドを複合 BankJournalEntity に追加するために必要な手順を示します。
 
 次の手順を使用して、複合の BankJournalEntity に追加の BankTransactionType フィールドを追加します。
 

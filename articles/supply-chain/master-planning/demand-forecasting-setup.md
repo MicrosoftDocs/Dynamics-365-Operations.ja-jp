@@ -1,7 +1,7 @@
 ---
 title: 需要予測の設定
 description: このトピックでは、需要予測の準備として実行する必要のある設定タスクについて説明します。
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81fec20130a1621d4cb55394db75a7ac0a16fdf3
-ms.sourcegitcommit: 4fbf031319109660c0462a800f85848571eb040d
+ms.openlocfilehash: 6f71d7a1ef2e8b6a113124d3fb17f1681d62aed9
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7471338"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575755"
 ---
 # <a name="demand-forecasting-setup"></a>需要予測の設定
 

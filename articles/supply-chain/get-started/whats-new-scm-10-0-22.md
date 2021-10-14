@@ -4,18 +4,18 @@ description: このトピックでは、Microsoft Dynamics 365 Supply Chain Mana
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c4aac62b36cd271e1c5fc3bcbbfdd785963fc368
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 3f5166338aebe784fe7f95372a437d4ed660de77
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484075"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579715"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Management 10.0.22 のプレビュー (2021 年 11 月)
 

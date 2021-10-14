@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474823"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581868"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>在庫視覚化のインストールと設定
 
@@ -35,63 +35,11 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 
 - 少なくとも 1 つの環境が展開されている LCS 実装プロジェクトを取得します。
 - アドインを設定するための前提条件が完了していることを確認します。 これらの前提条件の詳細については、[アドインの概要](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md)を参照してください。 在庫の視覚化にデュアル書き込みリンクは必要ありません。
-- 以下の必要なファイルを入手するため、[inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) の在庫視覚化製品チームにお問い合わせください。
-
-    - `InventoryServiceApplication.PackageDeployer.zip`
-    - `Inventory Visibility Integration.zip` (実行している Supply Chain Management がバージョン 10.0.18 より以前のバージョンの場合)
 
 > [!NOTE]
 > 現在サポートされている国と地域には、カナダ (CCA、ECA)、米国 (WUS、EUS)、欧州連合 (NEU、WEU)、英国 (SUK、 WUK)、オーストラリア (EAU、SEAU)、日本 (EJP、WJP)、ブラジル (SBR、SCUS) があります。
 
-これらの前提条件についてご不明な点がありましたら、在庫可視化製品チームにお問い合わせください。
-
-## <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Dataverse を設定する
-
-Dataverse を在庫可視化で使用できるよう設定するため、Package Deployer ツールを使用して、在庫可視化パッケージを展開します。 次のサブセクションでは、これらの各タスクの完了方法について説明します。
-
-> [!NOTE]
-> 現在、LCSを使用して作成された Dataverse の環境のみがサポートされています。 Dataverse 環境が何らかの別の方法で作成されている場合 (たとえば、Power Apps 管理者センターを使用している場合)、および Supply Chain Management 環境にリンクされている場合は、まず在庫可視化製品チームに問い合わせ、マッピングの問題を解決する必要があります。 その後、在庫可視化をインストールできます。
-
-### <a name="migrate-from-an-old-version-of-the-dataverse-solution"></a>Dataverse ソリューションの古いバージョンから移行する
-
-在庫可視化 Dataverse ソリューションの古いバージョンをインストールしてある場合は、次の手順に従ってバージョン を更新してください。 2 つのケースがあります。
-
-- **ケース 1:** Dataverse を手動で設定する場合は、`Inventory Visibility Dataverse Solution_1_0_0_2_managed.zip` ソリューションをインポートし、次の手順に従います。
-
-    1. 次の 3 つのファイルをダウンロードしてください。
-
-        - `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip`
-        - `InventoryServiceBase_managed.cab`
-        - `InventoryServiceApplication.PackageDeployer.zip`
-
-    1. 次の手順に従って、`Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip` および `InventoryServiceBase_managed.cab` を Dataverse に手動でインポートします。
-
-        1. Dataverse 環境の URLを開きます。
-        1. **ソリューション** ページを開きます。
-        1. **インポート** を選択します。
-
-    1. package deployer ツールを使用して `InventoryServiceApplication.PackageDeployer.zip` パッケージを展開します。 手順については、このトピックで後述する [package deployer ツールを使用してパッケージを展開する](#deploy-package)セクションを参照してください。
-
-- **ケース 2 :** package deployer ツールを使用して Dataverse を設定する場合、古い `.*PackageDeployer.zip` パッケージをインストールする前に、`InventoryServiceApplication.PackageDeployer.zip` をダウンロードして更新を行ってください。 手順については、[package deployer ツールを使用してパッケージを展開する](#deploy-package)セクションを参照してください。
-
-### <a name="use-the-package-deployer-tool-to-deploy-the-package"></a><a name="deploy-package"></a>package deployer ツールを使用してパッケージを展開する
-
-1. [NuGet からツールをダウンロードする](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget)に従って、開発者ツールをインストールします。
-1. 次の手順に従って、チーム グループからダウンロードした `InventoryServiceApplication.PackageDeployer.zip` ファイルのブロックを解除します。
-
-    1. ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。
-    1. **プロパティ** ダイアログ ボックスの **一般** タブで、**セキュリティ** セクションを検索し、**ブロック解除** を選択して変更を適用します。 **セキュリティ** セクションが **一般** タブにない場合、ファイルはブロックされません。 この場合は、次のステップに進みます。
-
-    ![ダウンロードしたファイルのブロック解除](media/unblock-file.png "ダウンロードしたファイルのブロック解除")
-
-1. `InventoryServiceApplication.PackageDeployer.zip` を解凍し、次の品目を探します。
-
-    - `InventoryServiceApplication` フォルダー
-    - `[Content_Types].xml` ファイル
-    - `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll` ファイル
-
-1. これらの各品目を `.\Tools\PackageDeployment` ディレクトリにコピーします。 (このディレクトリは、開発者ツールのインストール時に作成されました。)
-1. `.\Tools\PackageDeployment\PackageDeployer.exe` を実行し、画面の指示に従ってソリューションをインポートします。
+これらの前提条件について質問がある場合は、在庫可視化製品チーム ([inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com)) にお問い合せください。
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Inventory Visibility Add-in をインストールする
 
@@ -102,7 +50,11 @@ Dataverse を在庫可視化で使用できるよう設定するため、Package
 1. [LCS](https://lcs.dynamics.com/Logon/Index) にサインインします。
 1. ホーム ページで、環境が展開されているプロジェクトを選択します。
 1. プロジェクト ページで、アドインをインストールする環境を選択します。
-1. 環境ページの **Power Platform 統合** セクションで、**環境アドイン** セクションが表示されるまで下にスクロール ダウンします。 この場所に Dataverse 環境名が表示されます。
+1. 環境ページの **Power Platform 統合** セクションで、**環境アドイン** セクションが表示されるまで下にスクロール ダウンします。 この場所に Dataverse 環境名が表示されます。 Dataverse 環境名が在庫可視化に使用する名前であることを確認します。
+
+    > [!NOTE]
+    > 現在、LCSを使用して作成された Dataverse の環境のみがサポートされています。 Dataverse 環境が何らかの別の方法 (例えば、Power Apps 管理センターを使用して) で作成され、Supply Chain Management 環境にリンクされている場合は、まず在庫可視化製品チーム ([inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com)) にお問い合わせいただき、マッピングの問題を解決する必要があります。 その後、在庫可視化をインストールできます。
+
 1. **環境アドイン** セクションで、**新しいアドインのインストール** を選択します。
 
     ![LCS の環境ページ](media/inventory-visibility-environment.png "LCS の環境ページ")
@@ -118,6 +70,7 @@ Dataverse を在庫可視化で使用できるよう設定するため、Package
 
 1. **使用条件** チェック ボックスを選択して、使用条件に同意します。
 1. **インストール** を選択します。 アドインの状態は、**インストール中** として表示されます。 インストールが完了したら、ページを更新します。 状態は **インストール済** に変更されます。
+1. Dataverse で、左ナビゲーションの **アプリ** セクションを選択し、**在庫可視化** Power Apps が正常にインストールされていることを確認します。 **アプリ** セクションが存在しない場合は、在庫可視化製品チーム ([inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com)) にお問い合わせください。
 
 > [!IMPORTANT]
 > 複数の LCS 環境を使用する場合は、環境ごとに異なる Azure AD アプリケーションを作成します。 同じアプリケーション ID とテナント ID を使用して異なる環境の在庫視覚化アドインをインストールした場合、古い環境ではトークンの問題が発生します。 最後にインストールされたものだけが有効になります。
@@ -126,13 +79,13 @@ Dataverse を在庫可視化で使用できるよう設定するため、Package
 
 在庫可視化アドインをアンインストールするには、LCS ページで **アンインストール** を選択します。 アンインストール プロセスは、在庫可視化アドインを終了させ、LCS からアドインの登録を解除し、在庫可視化アドイン データ キャッシュに保存されている一時的なデータが削除されます。 ただし、Dataverse 定期購読に保存されている基本在庫データは削除されません。
 
-Dataverse 定期購読に保存されている在庫データをアンインストールするには、[Power Apps](https://make.powerapps.com) を開き、ナビゲーション バーの **環境** を選択し、LCS 環境と連携している Dataverse 環境を選択します。 次に、**ソリューション** に移動 し、次の 5 つのソリューションを削除します。
+Dataverse 定期購読に保存されている在庫データをアンインストールするには、[Power Apps](https://make.powerapps.com) を開き、ナビゲーション バーの **環境** を選択し、LCS 環境と連携している Dataverse 環境を選択します。 次に、**ソリューション** に移動し、次の 5 つのソリューションをこの順序で削除します:
 
-- Dynamics 365 ソリューションが含む在庫品目一覧アプリケーションのアンカー ソリューション。
-- Dynamics 365 FNO SCM Inventory Visibility アプリケーション ソリューション
-- 在庫サービス コンフィギュレーション
-- 在庫品目一覧スタンドアロン
-- Dynamics 365 FNO SCM Inventory Visibility の基準ソリューション
+1. Dynamics 365 ソリューションが含む在庫品目一覧アプリケーションのアンカー ソリューション。
+1. Dynamics 365 FNO SCM Inventory Visibility アプリケーション ソリューション
+1. 在庫サービス コンフィギュレーション
+1. 在庫品目一覧スタンドアロン
+1. Dynamics 365 FNO SCM Inventory Visibility の基準ソリューション
 
 これらのソリューションを削除すると、テーブルに保存されているデータも削除されます。
 

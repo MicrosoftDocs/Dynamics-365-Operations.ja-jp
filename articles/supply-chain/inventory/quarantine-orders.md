@@ -1,7 +1,7 @@
 ---
 title: 検査指示
 description: このトピックは、検査指示を使用して在庫をブロックする方法について説明します。
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7676c6520fd7ed6e66dad11b23fae23f15ecba53c8bc4b62c193ee3643fb798e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5cf0ec8f9f4d862724cb8ab72b48771ed68eaf39
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718038"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568786"
 ---
 # <a name="quarantine-orders"></a>検査指示
 

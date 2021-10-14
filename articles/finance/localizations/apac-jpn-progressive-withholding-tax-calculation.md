@@ -1,7 +1,7 @@
 ---
 title: 日本の累進的源泉徴収税
 description: このトピックでは、日本の累進的源泉徴収税に関する情報を提供します。
-author: yijialuan
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 265164
 ms.assetid: 5ee3e381-31c4-48ac-9488-0eb1bc524cf5
 ms.search.region: Japan
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9a38f4fa4dce8878cce7243a2a487035d6b503579098394b6251e0f46b10b2bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fca4966b0bd3e41e3852b876487c6a73d2395656
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723760"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592467"
 ---
 # <a name="progressive-withholding-tax-for-japan"></a>日本の累進的源泉徴収税
 

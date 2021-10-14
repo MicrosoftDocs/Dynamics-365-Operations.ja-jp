@@ -1,7 +1,7 @@
 ---
 title: 新しい売買契約の作成
 description: この手順は、特定の顧客と合意した新しい製品販売価格を登録する売買契約の作成方法を示します。
-author: omulvad
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4319f6b117df38379c88aa8fa06c0f93b3eb917852af3c6461c1d12ead11ecc0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a16a39d95605900be0fa1e339b8cd0755ba85189
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773156"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573420"
 ---
 # <a name="create-a-new-trade-agreement"></a>新しい売買契約の作成
 

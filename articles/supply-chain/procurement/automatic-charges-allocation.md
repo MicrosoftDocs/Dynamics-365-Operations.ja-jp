@@ -1,23 +1,23 @@
 ---
 title: 請求金額の自動配賦
 description: Microsoft Dynamics 365 Supply Chain Management の請求機能を使用すると、発注書または販売注文に請求金額を自動的に割り当てることができます。
-author: dasani-madipalli
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 04e17947073fca63ab68f0b5d0d72eb8366a1600117f61851179e8b0ed2c8184
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753942"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592543"
 ---
 # <a name="automatic-allocation-of-charges"></a>請求金額の自動配賦
 
@@ -26,6 +26,16 @@ ms.locfileid: "6753942"
 担当している顧客または販売している品目に基づいて、特定の追加請求金額を適用することができます。 Microsoft Dynamics 365 Supply Chain Management の *請求* 機能を使用すると、発注書または販売注文に請求金額を自動的に割り当てることができます。
 
 自動請求と呼ばれる自動請求は、販売注文または発注書の作成時に自動的に適用されます。 特定の仕入先、顧客、仕入先のグループ、または品目に自動請求を定義できます。 また、すべての仕入先、顧客、または品目に適用する自動請求を定義することもできます。
+
+## <a name="set-up-parameters"></a>パラメーターの設定
+
+**調達パラメーターとソーシング パラメーター** ページには、特に料金の自動割り当てに関連したいくつかの設定があります。 この設定を完了するには、次の手順に従います。
+
+1. **調達 \> セットアップ \> 調達パラメーター** の順に移動します。
+1. **価格** タブを開きます。
+1. **価格** クイック タブで、次の設定を行います。
+    - **ヘッダーの自動請求を検索** - 発注書ヘッダーに対して費用を自動的 に割り当てるかどうかを指定します。 費用の自動配 賦を使用するには、これを *はい* に設定します。
+    - **明細行の自動請求を検索** - 発注書明細に対して費用を自動的 に割り当てるかどうかを指定します。 費用の自動配 賦を使用するには、これを *はい* に設定します。
 
 ## <a name="set-up-charges-codes"></a>諸費用コードの設定
 

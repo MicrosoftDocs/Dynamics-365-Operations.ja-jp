@@ -1,7 +1,7 @@
 ---
 title: 委託販売補充注文の作成
 description: このトピックでは、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。
-author: sherry-zheng
+author: yufeihuang
 ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d18d0bcd5b12548aaf2c9f73afb9ab8766d3dd652bbb444fa7c643913e012b0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9076207b73c6c76cfc44e1e02b21aad4e3f321f8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759602"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574596"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>委託販売補充注文の作成
 

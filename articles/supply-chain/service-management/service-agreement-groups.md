@@ -1,7 +1,7 @@
 ---
 title: サービス契約の概要
-description: サービス契約グループは、サービス契約の並べ替えやフィルタ処理に便利です。
-author: ShylaThompson
+description: このトピックでは、サービス契約の仕組みについて説明します。
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3baaccf490af8231ca4389fa409b71f6286ff8d37bdcde78d8af95916d55cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82cb77dbeb03a2d43ec5a6f797d11984a33b6698
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734094"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578707"
 ---
 # <a name="service-agreements-overview"></a>サービス契約の概要
 
@@ -32,9 +32,9 @@ ms.locfileid: "6734094"
 
 ## <a name="example"></a>例
 
--  提供するサービスのレベルに従って、サービス合意をグループ化することができます。 
--  勤務先の会社にあなたが設定した 3 つの契約グループは、Gold、Silver、Bronze です。
--  勤務先の会社に、新しいサービス アカウント マネージャーが採用されました。 サービス マネージャーは、Gold 契約グループのすべてのクライアントの対応を担当します。 Gold 契約グループの契約レコードをフィルター処理して、担当者として新しいサービス マネージャーを指定する必要があるすべての契約を検索することができます。
+- 提供するサービスのレベルに従って、サービス合意をグループ化することができます。
+- 勤務先の会社にあなたが設定した 3 つの契約グループは、Gold、Silver、Bronze です。
+- 勤務先の会社に、新しいサービス アカウント マネージャーが採用されました。 サービス マネージャーは、Gold 契約グループのすべてのクライアントの対応を担当します。 Gold 契約グループの契約レコードをフィルター処理して、担当者として新しいサービス マネージャーを指定する必要があるすべての契約を検索することができます。
 
 ## <a name="related-topics"></a>関連トピック
 

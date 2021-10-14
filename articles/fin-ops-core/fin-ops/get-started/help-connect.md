@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343815"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594860"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations アプリのヘルプ エクスペリエンスを構成する
 
@@ -30,7 +30,7 @@ ms.locfileid: "7343815"
 
 ## <a name="help-architecture"></a>ヘルプ アーキテクチャ
 
-Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365](/dynamics365/) サイトにて公開されている概要やその他のトピックが含まれています。 このコンテンツには、製品内の **ヘルプ** ウィンドウからアクセスできます。 次の図は、ヘルプ システムの一部を示します。
+Finance and Operations アプリには、[Microsoft Dynamics 365 ドキュメント](/dynamics365/) サイトにて公開されている概要やその他のトピックが含まれています。 このコンテンツには、製品内の **ヘルプ** ウィンドウからアクセスできます。 次の図は、ヘルプ システムの一部を示します。
 
 [![ヘルプ アーキテクチャ。](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -39,7 +39,7 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 ## <a name="adding-task-guides"></a>タスク ガイドの追加
 
 > [!NOTE]
-> 現時点では、**タスク ガイド** タブは人事管理やコマースでは使用できません。 <!--We are currently working to enable this functionality in a future release.--> しかし、人事管理内の [はじめに] のタスク ガイドは、基本機能の一環として利用可能となっています。 [https://docs.microsoft.com/dynamics365](/dynamics365/) 上の手順ガイドは、コマースおよび人事管理の両方で利用可能です。
+> 現時点では、**タスク ガイド** タブは人事管理やコマースでは使用できません。 <!--We are currently working to enable this functionality in a future release.--> しかし、人事管理内の [はじめに] のタスク ガイドは、基本機能の一環として利用可能となっています。 コマースおよび人事管理のの手順ガイドは、[Microsoft Dynamics 365 ドキュメント](/dynamics365/) サイトで利用可能です。
 
 **システム パラメーター** ページでは、システム管理者は、実装に関連するタスク ガイド ライブラリへのアクセスを構成できます。
 

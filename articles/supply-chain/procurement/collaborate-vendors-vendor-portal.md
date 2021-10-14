@@ -1,7 +1,7 @@
 ---
 title: 仕入先ポータルを使用して、仕入先と連携
 description: このトピックでは、購買担当者が仕入先ポータルを使用して、発注書の確認プロセス中に外部仕入先と連携して作業する方法について説明します。 この情報は、2016 年 2 月 &amp; 2016 年 5 月バージョン Dynamics AX にのみ適用されます。
-author: kamaybac
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9504cd02cc2b9e0495cffc950a0c014d3694dc2a9b74772b8ab0fb40c5a88618
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e691d0e2e4260e75b70e22d94486afdb779871f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780557"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568067"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>仕入先ポータルを使用した仕入先とのコラボレーション
 

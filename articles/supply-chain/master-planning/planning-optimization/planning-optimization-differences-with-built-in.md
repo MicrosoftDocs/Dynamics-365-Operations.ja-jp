@@ -1,7 +1,7 @@
 ---
 title: 組み込みマスター計画と計画最適化の違い
 description: このトピックでは、計画の最適化がまだサポートしていない機能と、そのプログラムを計画の最適化に合わせて分析ページに示していない機能の一覧を示します。
-author: crytt
+author: ChristianRytt
 ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 63f3bc6cb7563ee6ff719272a0795efffcb40bc8
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 9972c5761a8445c6802f58b0ffad6226cf8ee38c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500199"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568690"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>組み込みマスター計画と計画最適化の違い
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 28a5451f4932669fb66d5e47fd2f574eb3648428
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 0b16cfdce801e8a63b47397526b47995018b99c9
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386341"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594834"
 ---
 # <a name="model-management-lifecycle"></a>モデル管理ライフサイクル
 
@@ -32,4 +32,4 @@ AI モデルをサンドボックス環境でトレーニングしてから、�
 
 AI モデルは利用可能な請求書や顧客データに基づいているため、サンドボックス環境には生産データの最新のコピーがあることが重要です。 [顧客支払予測の使用](use-customer-payment-predictions.md) の手順に従ってモデルのトレーニングを開始できます。 モデルが再トレーニングされた後で、[初期の顧客支払予測モデルを評価する](evaluate-payment-prediction.md) の記載に従って結果を評価します。 [予測モデルの改善](improve-model.md) の情報を使用して、モデルの改善に役立つ機能とフィルターの組み合わせを実験します。
 
-トレーニングの結果に問題がなければ、[AI モデルを配布する](https://docs.microsoft.com/ai-builder/distribute-model) の手順に従って、モデルを運用環境に移行します。
+トレーニングの結果に問題がなければ、[AI モデルを配布する](/ai-builder/distribute-model) の手順に従って、モデルを運用環境に移行します。

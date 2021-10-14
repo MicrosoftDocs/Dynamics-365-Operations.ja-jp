@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767954"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592631"
 ---
 # <a name="confirm-and-transfer"></a>確認および転送
 
@@ -45,8 +45,8 @@ ms.locfileid: "6767954"
 
 - ピッキング済の数量が 1 つ以上、積荷明細行に含まれています。
 - 積荷状態は積載済よりも小さくなっています。
-- 積荷明細行データがありません。 (このデータは、ステージング場所でのライセンス プレートの結合を通して作成され、*確認および転送* 機能は、ライセンス プレートの結合をサポートしていません。)
-- 現在、梱包場所に梱包待ちの在庫はありません。 (*確認および転送* 機能は、梱包ステーションにピッキングされているが、まだ梱包されていない在庫はサポートしていません。)
+- 積荷明細行データがありません。 (このデータは、ステージング場所でのライセンス プレートの結合を通して作成され、確認および転送機能は、ライセンス プレートの結合をサポートしていません。)
+- 現在、梱包場所に梱包待ちの在庫はありません。 *確認および転送* 機能は、パックステーションにピッキングされたものの、まだパックされていない在庫には対応していません。ただし、パック済みコンテナがステージング ロケーションに置かれ、出荷作業が作成されている場合はこの限りではありません。
 
 > [!NOTE]
 > この機能は、ピッキング前に積荷を計画および作成することはできず、ピッキング完了後に使用可能な輸送スペースを積載する倉庫で使用する必要がある輸送積載機能とは異なります。

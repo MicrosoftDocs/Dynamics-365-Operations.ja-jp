@@ -1,7 +1,7 @@
 ---
 title: 日本の固定資産配賦ルール
 description: この記事は、日本の固定資産配賦ルールについてよく寄せられる質問に回答します。
-author: yijialuan
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.custom: 10194
 ms.search.region: Japan
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2efa239943958fe893f2fbcbf538f013692572af570b1cd859e5ddad1c6a36e3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ffe44f73fb8033c570a309538ab327074c8ba99c
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770552"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592520"
 ---
 # <a name="fixed-asset-allocation-rules-for-japan"></a>日本の固定資産配賦ルール
 

@@ -2,19 +2,19 @@
 title: Finance and Operations アプリのサービス説明
 description: このトピックでは、Finance and Operations アプリのサービス説明を示します。
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472508"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581819"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations アプリのサービス説明
 
@@ -28,7 +28,7 @@ Finance and Operations アプリは、[Microsoft Azure](https://azure.microsoft.
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-これらのアプリケーションは、[ビジネス インテリジェンス](/power-bi/fundamentals/power-bi-service-overview)、[インフラストラクチャ](https://azure.microsoft.com/global-infrastructure/)、[コンピューティング](/azure/service-fabric/service-fabric-overview)、[データベース サービス](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) とともに、組織が業界固有の運用業務プロセスを実行できます。 実装パートナーによってサポートされている顧客は、固有のビジネス プロセスに最適な業務アプリケーション ロジックのコンフィギュレーションを決定します。 機能および業務プロセスは、次のソリューションの 1 つまたは組み合わせによって強化または拡張できます。
+これらのアプリケーションは、[ビジネス インテリジェンス](/power-bi/fundamentals/power-bi-service-overview)、[インフラストラクチャ](https://azure.microsoft.com/global-infrastructure/)、[コンピューティング](/azure/service-fabric/service-fabric-overview)、[データベース サービス](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) とともに、組織が業界固有の運用業務プロセスを実行できます。 実装パートナーによってサポートされている顧客は、固有のビジネス プロセスに最適な業務アプリケーション ロジックのコンフィギュレーションを決定します。 機能および業務プロセスは、次のソリューションの 1 つまたは組み合わせによって強化または拡張できます。
 
 - 組み込みの [個人用設定のエクスペリエンス](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) ツール
@@ -197,17 +197,17 @@ SaaS サブスクリプションの Finance and Operations 環境のデーター
 | すべての実稼働インスタンスと非実稼働インスタンスをプロビジョニングします。 | X | |
 | 配置された実稼働インスタンスと非実稼働インスタンスを検証します。 | | X |
 | **サービスの更新** | |
-| Microsoft は、指定された非実稼働インスタンスおよび実稼働インスタンスにサービスの更新を適用します。 | X | X |
-| LCS から更新をダウンロードし、更新を定義、開発、およびテストして、コード更新パッケージを LCS に提供します。 | | X |
-| 拡張機能の更新を実稼働インスタンスに適用するように要求します。 | | X |
+| 指定された非実稼働インスタンスおよび実稼働インスタンスにサービス更新を適用します。 | X | |
+| LCS からサンドボックス インスタンスにサービス更新を手動で適用します。 更新を定義、開発、テストし、コード更新パッケージを LCS に提供します。 | | X |
+| 要求およびスケジュールの拡張機能の更新が実稼働インスタンスに適用されます。 | | X |
 | 更新が適用される前に、実稼働インスタンスのコードとデータのバックアップを作成します。 | X | |
 | 障害が発生した場合は、実稼働インスタンスをコードおよびデータのバックアップにロールバックします。 | X | |
 | **データ管理 (バックアップ、復元、更新)** | | |
 | データベースをバックアップします。 | X | |
 | 高可用性と障害復旧計画を決定します。 | X | |
-| 実稼働インスタンス データベースのパフォーマンスを監視します。 | X | X |
-| パフォーマンスの実稼働インスタンス データベースを調整します。 | X | X |
-| 実稼働インスタンス データベースの非実稼働インスタンスへのコピーを開始します。 | | X |
+| 実稼働インスタンス データベースのパフォーマンスを監視します。 | X | |
+| パフォーマンスの実稼働インスタンス データベースを調整します。 | X | |
+| 実稼働インスタンス データベースのポイントインタイム更新を非実稼働インスタンスに対して実行します。 | | X |
 | **インフラストラクチャの更新** | | |
 | 定期的なインフラストラクチャの更新をスケジュールします。 | X | |
 | **スケール アップとスケール ダウン (ユーザー、ストレージ、インスタンス)** | | |
@@ -215,7 +215,7 @@ SaaS サブスクリプションの Finance and Operations 環境のデーター
 | LCS サブスクリプション見積もりツールの使用状況の変更を更新します。 | | X |
 | サービスの使用に影響を与える重要なパフォーマンスの問題を報告します。 | | X |
 | 該当するサービスに必要なリソースを事前に管理します。 | X | |
-| インシデントを調査し、トラブルシューティングを行います。 | X | X |
+| インシデントを調査し、トラブルシューティングを行います。 | X | |
 | **セキュリティ (ユーザー アクセス)** | | |
 | サービスへのユーザー アクセスを提供します。 | | X |
 | LCS を介して配置されたインスタンスの管理と運用のために LCS プロジェクトのアクセスを提供します。 | | X |

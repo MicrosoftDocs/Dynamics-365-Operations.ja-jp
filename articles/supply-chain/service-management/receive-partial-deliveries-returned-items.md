@@ -1,7 +1,7 @@
 ---
 title: 返品品目の分納の受取
 description: 分納は、返品注文の出荷ではなく返品注文明細行に対して定義されます。
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cff714de8b06142fe4c6911db110d707ba7f86584793c73fa54dddf23498f41
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db02356afe06244f062f4e7c67a5db0a36900469
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721226"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566170"
 ---
 # <a name="receive-partial-deliveries-of-returned-items"></a>返品品目の分納の受取    
 

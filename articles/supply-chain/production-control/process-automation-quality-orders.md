@@ -1,21 +1,21 @@
 ---
 title: プロセス自動化フローを呼び出して品質指示を作成する
 description: このトピックでは、Power Automate を使用して業務プロセスを自動化するためのリソースを品質指示の例を使用して示します。
-author: cabeln
+author: johanhoffmann
 ms.date: 05/28/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: cabeln
+ms.author: johanho
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 00c0753990c06e75fff2f78425f1230c84a01c5085d0c295d1534e508fa29496
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 131d88c51755a433a874ac0fe086b3eaa48f161c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765445"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572796"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>プロセス自動化フローを呼び出して品質指示を作成する
 

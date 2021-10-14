@@ -1,7 +1,7 @@
 ---
 title: Field Service から Supply Chain Management への在庫振替および在庫調整の同期
 description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫調整と振替を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f1fc4b65fefcc050591f721cf5271fdd79f1b648d992be988af7ac02e220850c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83ab46904815b177640c87fef58ce208d00d800a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717894"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566386"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Field Service から Supply Chain Management への在庫振替および在庫調整の同期
 
@@ -72,12 +72,12 @@ ms.locfileid: "6717894"
 
 ### <a name="inventory-adjustment-field-service-to-supply-chain-management-inventory-adjustment"></a>在庫調整 (Field Service から Supply Chain Management): 在庫調整
 
-[![データ統合のテンプレートのマッピング。](./media/FSAdj1.png)](./media/FSAdj1.png)
+[![データ統合のテンプレート マッピング、在庫調整 (Field Service から Supply Chain Management): 在庫調整。](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>在庫振替 (Field Service から Supply Chain Management): 在庫振替
 
-[![データ統合のテンプレートのマッピング。](./media/FSTrans1.png)](./media/FSTrans1.png)
+[![データ統合のテンプレート マッピング、在庫移動 (Field Service から Supply Chain Management): 在庫移動。](./media/FSTrans1.png)](./media/FSTrans1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

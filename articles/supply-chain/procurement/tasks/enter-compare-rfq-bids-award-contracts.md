@@ -1,7 +1,7 @@
 ---
 title: RFQ 入札価格の入力と比較および契約の授与
 description: このトピックは、見積依頼 (RFQ) への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに契約を授与する方法を説明します。
-author: kamaybac
+author: Henrikan
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0f1028211f3c9cc0082e127a24d10cd2fe9ab5ac903570664233b10e5737bee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717151"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579475"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>RFQ 入札価格の入力と比較および契約の授与
 

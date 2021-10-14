@@ -16,14 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f32c3fd523c3272665b4b45b6d3e136591d12cda191766970ebfaf74b81f0558
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32bf890d1ff74155a75862afd6b0e861fbfc10e2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726862"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567322"
 ---
 # <a name="coverage-time-fences"></a>補充タイム フェンス
+
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、計画の最適化を使用している場合に *補充タイム フェンス* を設定する方法について説明します。 プランナーは、計画期間 (日数で表した補充タイム フェンス) を定義し、その期間を超える需要と供給を除外できます。 そのため、補充タイム フェンスを使用すると、何か月も対応する必要のない供給提案によって発生する "雑音" を防ぐのに役立ちます。 たとえば、通常のリード タイムをはるかに超えた来年の予測注文や顧客注文などです。
 

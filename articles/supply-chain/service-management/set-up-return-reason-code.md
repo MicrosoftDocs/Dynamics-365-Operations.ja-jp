@@ -1,7 +1,7 @@
 ---
 title: 返品理由コードの設定
 description: 返品理由コード グループを設定します。
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f07c777c485f1add92ea0ec1baf752c1d9e36b583ff65cb64f8dc52b1069b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc857f7c2e8bbcf396e6bd7eaa7478f12b26ac12
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771206"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573180"
 ---
 # <a name="set-up-return-reason-codes"></a>返品理由コードの設定   
 

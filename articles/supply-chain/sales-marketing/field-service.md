@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dynamics 365 Field Service との統合の概要
 description: このトピックでは、Microsoft Dynamics 365 Field Service との統合の概要を提供します。
-author: ChristianRytt
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ecfd19cf79b9547c67b5bb90cef451d4aeab8f5ee775e50578161783e370462f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23661bca91ccd7b7a04c763e60cfca9a99d62bfa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761761"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566458"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Microsoft Dynamics 365 Field Service との統合の概要
 
@@ -58,7 +58,7 @@ Field Service および Supply Chain Management 間のワーク オーダーを�
 - Dynamics 365 Field Service ワーク オーダーに関連付けられた Supply Chain Management のプロジェクト
 - Supply Chain Management プロジェクトへのリンクを含む Dynamics 365 Field Service ワーク オーダーは、このプロジェクト番号を販売注文に適用して、プロジェクトからの請求を可能にします。 
 
-![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSv2overview.png)
+![在庫やプロジェクト情報など、Supply Chain Management と Field Service 間のビジネス プロセスを同期します。](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Field Service および Supply Chain Management 統合の第 2 のフェーズは、次のテンプレートとの同期を有効にします:
 - 倉庫 (Supply Chain Management から Field Service) - Supply Chain Management の倉庫から Field Service [高度なクエリ] 

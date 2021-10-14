@@ -1,7 +1,7 @@
 ---
 title: サービス対象の関係
 description: サービス対象とサービス合意またはサービス注文の間に、サービス対象の関係を作成できます。
-author: ShylaThompson
+author: kamaybac
 ms.date: 02/21/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f69d9a73f5d6858c2e898999d068c5f7c7ada68812d3cf5f9557fe6ed9765b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5b185ca2ef5903eb1739edfdd7b60749babd4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767978"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576355"
 ---
 # <a name="service-object-relations"></a>サービス対象の関係 
 
