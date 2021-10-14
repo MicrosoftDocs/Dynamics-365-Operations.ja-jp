@@ -1,7 +1,7 @@
 ---
 title: BOM バージョンの決定
 description: 需要の展開中に、品目の既定のオーダー タイプが生産になっている場合、計画エンジンはサイトに基づいて有効な BOM バージョンを探します。
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 2534
 ms.assetid: a5b64301-a011-4469-afaf-e4c9164ef9c6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91a55bfcd10ee0efbbf1170ad29194c17ea72d62cf5516e2661b43bad7446808
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 370091eed4ee050031d5d135aa7b1d8d0fe82491
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766077"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570972"
 ---
 # <a name="determine-the-bom-version"></a>BOM バージョンの決定
 

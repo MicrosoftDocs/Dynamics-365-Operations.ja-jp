@@ -1,7 +1,7 @@
 ---
 title: 品目の配送制約の設定
 description: この手順では、選択した品目が選択したハブを通じて配送されないよう配送制約を設定します。
-author: ShylaThompson
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ac72a1a0e4595f1767f6df8aabae52e062a794b1f3e16027af91dabc81d324ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4fab138e1509b1a1266f683d070eab5a967fb9ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750981"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580171"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>品目の配送制約の設定
 

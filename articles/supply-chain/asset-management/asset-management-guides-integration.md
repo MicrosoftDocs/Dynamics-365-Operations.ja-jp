@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Supply Chain Management（資産管理）と Dynamics 365 Guides を統合する
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の資産管理モジュールを Dynamics 365 Guides に統合して、日々のサービスやメンテナンスのワークフローで Mixed Reality ガイドを活用する方法について説明します。
-author: kamaybac
+author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,19 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 94d98aa011d0db3991c14596f5d6bdecc0fb6c831915ae124f623fa57277fcfe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721538"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568258"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Dynamics 365 Supply Chain Management（資産管理）と Dynamics 365 Guides を統合する
+
+[!include [banner](../includes/banner.md)]
 
 Dynamics 365 Supply Chain Management の **資産管理** モジュールを Microsoft Dynamics 365 Guides に統合することで、日々のサービスやメンテナンスのワークフローで、Mixed Reality ガイドを活用することができます。 ガイドが資産管理の作業指示に関連付けられている場合、Supply Chain Management（Dynamics 365）モバイル アプリで作業指示のメンテナンス チェック リストを開いた作業員は、ガイドが利用可能であることを確認してください。 続いて、作業者は Dynamics 365 Guides HoloLens アプリでガイドを検索して開いてください。
 

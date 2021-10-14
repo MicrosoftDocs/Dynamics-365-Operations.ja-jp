@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0115d58c059724fddc3d6232d341e10630229fa394e462af96176e75a2a8f86c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 08e44b4e37f28ec91eeb8e53930de5133607bd66
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773132"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574740"
 ---
 # <a name="advanced-load-building-during-wave"></a>ウェーブ中の高度な積荷構築
 

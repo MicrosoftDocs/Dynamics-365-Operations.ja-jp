@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 803b4d8b287f2b0dc523654e3e1852209f4ea039
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500478"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573540"
 ---
 # <a name="process-review-and-post-rebates"></a>リベートの処理、確認、および転記
 

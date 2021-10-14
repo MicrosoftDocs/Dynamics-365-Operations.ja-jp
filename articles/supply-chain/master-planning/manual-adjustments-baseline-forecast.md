@@ -1,7 +1,7 @@
 ---
 title: ベースライン予測に対して手動調整を行う
 description: このトピックでは、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e506f6c14de71406516b7a6fc4d7bcf46b7a68c61c78db7afc2f65973609dcf0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741336"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579643"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 

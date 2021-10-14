@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483785"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559610"
 ---
 # <a name="ready-to-pay"></a>支払準備完了
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > 従業員に支払準備完了をマークしたい場合は、まず機能管理で **(プレビュー) 給与統合** 機能を有効にする必要があります。 プレビュー機能を有効にする方法については、[機能の管理](hr-admin-manage-features.md)を参照してください。
@@ -72,10 +70,9 @@ ms.locfileid: "7483785"
 
 **支払準備完了** フィールドが **いいえ** の場合、作業者プロファイルを完全にするためにアクションを実行する必要があることを示します。 これによって、どのデータ エンティティへのデータ公開も停止されることはありません。 
 
-## <a name="known-issues"></a>既知の問題
+## <a name="process-automation"></a>プロセスの自動化
 
-- 機能管理の **合理化された従業員の入力** 機能を無効にする必要があります。 この機能を使用すると、報酬管理ワークスペースのタイルは正常に機能しません。
-- **休業員** ページの **給与タブ** と **支払準備完了** グループは、どのユーザー ロールでも使用できます。 
+[プロセス オートメーション](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation)を使用すると、すべての従業員の検証を自動化できます 。 **報酬管理** ワークスペースで、**リンク**\>**パラメーター**\>**プロセス の自動化** に移動します。
 
 ## <a name="see-also"></a>参照
 

@@ -1,7 +1,7 @@
 ---
 title: 倉庫内の現物在庫の移動
 description: この手順では、倉庫内の場所間で行われる品目の移動を登録する在庫振替仕訳帳を作成して転記するプロセスを説明します。
-author: MarkusFogelberg
+author: yufeihuang
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9557187d0c9f322729bbdd707525e18b54df34cd27aeed09adf4820e3c3d0f3d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cf5a3711cfcd6e5a2ddce09af8569ea26c3502c8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754014"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580795"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>倉庫内の現物在庫の移動
 

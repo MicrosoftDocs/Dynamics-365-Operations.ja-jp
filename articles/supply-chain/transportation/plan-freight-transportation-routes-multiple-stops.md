@@ -1,7 +1,7 @@
 ---
 title: 複数の立ち寄りを伴なう貨物輸送ルートを計画する
 description: この記事では、Dynamics 365 Supply Chain Management で輸送ルートを計画するために使用するさまざまな要素について説明します。
-author: MarkusFogelberg
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 90013
 ms.assetid: 50d6f58c-f1c8-4321-9e83-8445cec57a85
 ms.search.region: Global
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d5c51650bdc1d391d868a353f886e62683c40ba8ec80deeb67191666646dcd1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eff1efd7530c410b392646e39325b58cbd8bcf78
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778533"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571236"
 ---
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>複数の立ち寄りを伴なう貨物輸送ルートを計画する
 

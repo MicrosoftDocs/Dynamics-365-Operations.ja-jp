@@ -1,7 +1,7 @@
 ---
 title: リーン生産でのかんばん作業のスケジューリング
 description: この記事は、かんばん作業のスケジューリングにおける視覚コントロールおよびさまざまな方法に関する情報を提供します。
-author: cvocph
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 52961
 ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27a82ebb87c76a2c028d02da5389d195614aaa6ab84887ebd1cb4e443b5bda49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f70c3cf44ce90b13250836013636920267d2016d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778628"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570228"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>リーン生産でのかんばん作業のスケジューリング
 

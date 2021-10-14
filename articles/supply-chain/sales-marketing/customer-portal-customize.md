@@ -1,7 +1,7 @@
 ---
 title: 顧客ポータルをカスタマイズして使用する
 description: このトピックでは、顧客ポータルをシステムに追加した後でカスタマイズする方法について説明します。
-author: dasani-madipalli
+author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
@@ -9,18 +9,19 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: db087fdfe27a32e3368002e193fdcd4e5d5c253821cd5e00dad8fe59be4461bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 548a81d8145d6762508163f17ca7367cb5ecd849
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776827"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579019"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>顧客ポータルをカスタマイズして使用する
 
+[!include [banner](../includes/banner.md)]
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、顧客ポータルで使用できるさまざまなページについて説明します。 ここでは、ページの機能とカスタマイズ方法について説明します。

@@ -1,7 +1,7 @@
 ---
 title: BOM デザイナーの機能
 description: このトピックは、[BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。
-author: cvocph
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a1d17ac01919edad15cb249764381fbe941cff0893c336125014c0491ac86ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c068e7f5f4f36663766e21e14cf8e75cf1442f50
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757665"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577987"
 ---
 # <a name="bom-designer-functionality"></a>BOM デザイナーの機能
 

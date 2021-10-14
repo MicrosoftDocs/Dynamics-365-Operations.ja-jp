@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386744"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559562"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -36,6 +36,18 @@ ms.locfileid: "7386744"
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Commerce 10.0.21 リリースの削除済みまたは非推奨の機能
 
 [!include [banner](../includes/preview-banner.md)]
+
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Commerce パラメーターでの重複割引処理の設定
+
+**Commerce パラメーター** ページの **重複割引処理** 設定は、Commerce バージョン 10.0.21 のリリースで非推奨になりました。 今後、Commerce 価格決定エンジンは単一のアルゴリズムを使用して、重複する割引の最適な組み合わせを決定します。
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | <p>Commerce パラメーターの **重複割引処理** の設定は、Commerce の価格設定エンジンがどのように重複する割引の最適な組み合わせを検索および決定するかを制御します。 現在、次の 3 つのオプションがあります:<p><ul><li> **最適なパフォーマンス** – このオプションは、高度なヒューリスティック アルゴリズムと [基準額のランキング](../optimal-combination-overlapping-discounts.md) の方法を使用して、最適な割引の組み合わせを適切な方法で優先順位付け、評価、および決定します。</li><li>**バランス計算** – 現在のコード ベースでは、このオプションは **最適なパフォーマンス** オプションと同様に機能します。 したがって、これは基本的に重複したオプションです。</li><li>**包括的な計算** – このオプションでは、価格計算中にすべての可能な割引の組み合わせを調べる古いアルゴリズムを使用します。 このオプションは、明細行と数量が大きい注文では、パフォーマンス上の問題が発生する可能性があります。</li></ul><p>設定を簡素化し、パフォーマンスを向上させ、古いアルゴリズムによって発生するインシデントを削減するために、**重複割引処理** の設定を完全に削除し、 Commerce の価格設定エンジンの内部ロジックを更新して、高度なアルゴリズム (つまり、**最適なパフォーマンス** オプションのアルゴリズム) のみを使用するようにします。</p> |
+| **別の機能で置き換えられているか?**   | いいえ。 この機能を削除する前に、**バランス計算** または **包括的な計算** オプションを使用している組織では、**最適なパフォーマンス** オプションに切り替えることをお勧めします。 |
+| **影響を受ける製品領域**         | 価格決定と割引 |
+| **配置オプション**              | すべて |
+| **状態**                         | 10.0.21 リリースでは、2022 年 10 月に **重複割引処理** の設定が Commerce パラメーターから削除されます。 |
 
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Lifecycle Services を使用して配布された Retail SDK
 
@@ -100,11 +112,11 @@ ModernPos.sln、CloudPOs.sln、POS.Extension.csproj、および POS フォルダ
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
+| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月を過ぎると、Internet Explorer 11 はサポートされません。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
 | **影響を受ける製品領域**         | すべての Dynamics 365 製品 |
-| **配置オプション**              | All|
-| **ステータス**                         | 非推奨。 2021 年 8 月以降は、Internet Explorer 11 はサポートされません。|
+| **配置オプション**              | すべて|
+| **状態**                         | 非推奨。 2021 年 8 月を過ぎると、Internet Explorer 11 はサポートされません。|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Commerce 10.0.11 リリースの削除済みまたは非推奨の機能
 ### <a name="data-action-hooks"></a>データ アクションのフック

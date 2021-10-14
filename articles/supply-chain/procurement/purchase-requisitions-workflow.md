@@ -1,7 +1,7 @@
 ---
 title: 購買要求ワークフロー
 description: ワークフロー プロセスは、レビュー プロセスを介し、[ドラフト] の状態から [承認済] の最終状態へ購買要求を移動します。 購買要求が作成されレビュー用に送信されると、ワークフロー プロセスが開始されます。 購買要求が承認されると、発注書が購買要求明細行に対して生成され、仕入先に注文処理のために送信されます。
-author: kamaybac
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c512fff1c20fbe539e98a6da02a9a4362c3753b0897b48ee5c6a785d8893bbe9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717241"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569460"
 ---
 # <a name="purchase-requisition-workflow"></a>購買要求ワークフロー
 

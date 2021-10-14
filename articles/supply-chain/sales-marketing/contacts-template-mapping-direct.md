@@ -1,7 +1,7 @@
 ---
 title: Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期
 description: このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に連絡先 (連絡先) エンティティと連絡先 (顧客) エンティティを同期するために使用されるテンプレートと基本的なタスクについて説明します。
-author: ChristianRytt
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 084030ab6ff06a1140621bb91435edf6cff4f82cc4bbc13813ab46f76e42174d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef51a97c38f446cd267ac8a621ce2a1f66efad18
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756850"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579043"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期
 
@@ -117,13 +117,13 @@ Sales の統合ソリューションが適用されている場合、アップ�
 > [!NOTE]
 > マッピングは、Sales から Supply Chain Management にどの列情報を同期するかを表示します。
 
-### <a name="contact-to-contact"></a>連絡先から連絡先へ
+### <a name="contact-to-contact-example"></a>[連絡先から連絡先へ] の例
 
-![データ インテグレーターのテンプレート マッピング。](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![データ インテグレーターの [連絡先から連絡先へ] のテンプレート。](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### <a name="contact-to-customer"></a>連絡先から顧客へ
+### <a name="contact-to-customer-example"></a>[連絡先から顧客へ] の例
 
-![データ インテグレーターのテンプレート マッピング。](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![データ インテグレーターの [連絡先から顧客へ] のテンプレート。](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>関連トピック

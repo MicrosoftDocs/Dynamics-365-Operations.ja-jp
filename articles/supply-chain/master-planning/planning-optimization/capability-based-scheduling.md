@@ -1,7 +1,7 @@
 ---
 title: 能力に基づいたリソースの選択を使用したスケジュール設定
 description: このトピックでは、無限大のキャパシティを持つスケジュール設定において、オペレーションのリソース要件として能力を指定した場合のリソース選択について説明します。
-author: crytt
+author: ChristianRytt
 ms.date: 9/3/2021
 ms.topic: article
 ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c1c5289c23528bc3b2946506fa384b9ee7193ace
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 1fcea155f330fa1eced8035f11f7cf204d3b2de8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484335"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575706"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>能力に基づいたリソースの選択を使用したスケジュール設定
 

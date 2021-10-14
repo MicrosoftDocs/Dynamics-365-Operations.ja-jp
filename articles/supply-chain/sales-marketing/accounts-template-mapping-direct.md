@@ -1,7 +1,7 @@
 ---
 title: Supply Chain Management の顧客への Sales の勘定の直接同期
 description: このトピックでは、Dynamics 365 Sales から Supply Chain Management に勘定を同期するために使用されるテンプレートと基本的なタスクについて説明します。
-author: ChristianRytt
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7948a87c6e40a4d45a23265bbb98a9bef2296974164fc65119b4b6596c81b139
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f6f5662427be92ad57def2af772dd69abd575b81
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756874"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566506"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Supply Chain Management の顧客への Sales の勘定の直接同期
 

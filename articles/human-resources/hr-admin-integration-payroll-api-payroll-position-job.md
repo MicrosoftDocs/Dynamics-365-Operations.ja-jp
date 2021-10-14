@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d5f84a1a6ff794cdc8b4b81e8518983789a0b33f1708719906f6ad094d9c4285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0b70411e6535b22d698545438dcb0b16935e731
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722634"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559586"
 ---
 # <a name="payroll-position-job"></a>給与職位職務
 
@@ -34,16 +34,22 @@ ms.locfileid: "6722634"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ<br>**現物名**<br>**_種類_** | 使用 | 説明 |
+| プロパティ</br>**現物名**</br>**_種類_** | 使用 | 説明 |
 | --- | --- | --- |
-| **ジョブ ID**<br>mshr_jobid<br>*文字列* | 読み取り専用<br>必須 |ジョブの ID。 |
-| **発効日**<br>mshr_validto<br>*日時オフセット* | 読み取り専用 <br>必須 | 職位と職務の関係が有効になる日付。 |
-| **失効日**<br>mshr_validto<br>*日時オフセット* | 読み取り専用 <br>必須 | 職位とジョブの関係が有効である日付。  |
-| **職位 ID**<br>mshr_positionid<br>*文字列* | 読み取り専用<br>必須 | 職位の ID。 |
-| **基本フィールド**<br>mshr_primaryfield<br>*文字列* | 必須<br>システム生成 |  |
-| **職位職務 ID の値**<br>_mshr_fk_positionjob_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー: mshr_payrollpositionjobentity の mshr_PayrollPositionJobEntity |この職位に関連付けられているジョブの ID です。|
-| **固定報酬の報酬計画 ID 値**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー: mshr_payrollfixedcompensationplanentity の mshr_FixedCompPlan_id  | この職位に関連付けられている固定報酬計画の ID です。 |
-| **給与職位職務エンティティ ID**<br>mshr_payrollpositionjobentityid<br>*Guid* | 必須<br>システム生成。 | システムで生成する、ジョブを一意に識別する GUID 値です。  |
+| **職位 ID**</br>mshr_positionid</br>*文字列* | 読み取り専用 | 職位の ID。 |
+| **発効日**</br>mshr_validto</br>*日時オフセット* | 読み取り専用 | 役職や職務関係が有効となる日付。 |
+| **失効日**</br>mshr_validto</br>*日時オフセット* | 読み取り専用 | 職位とジョブの関係が有効な日付。 |
+| **ジョブ ID**</br>mshr_jobid</br>*文字列* | 読み取り専用 | ジョブの ID。 |
+| **基本フィールド**</br>mshr_primaryfield</br>*文字列* | システム生成 | プライマリ フィールド。 |
+| **給与職位職務エンティティ ID**</br>mshr_payrollpositionjobentityid</br>*Guid* | システム生成。 | 職務を一意に識別するための、システムが生成したグローバルに一意な識別子 (GUID) の値です。 |
+
+## <a name="relations"></a>リレーション
+
+| プロパティ値 | 関連するエンティティ | ナビゲーション プロパティ | コレクション タイプ |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | 該当なし |
+| _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## <a name="example-query"></a>クエリの例
 

@@ -1,27 +1,27 @@
 ---
 title: 危険物
 description: このトピックでは、環境に保存されている危険物ドキュメントおよび情報に関する情報を提供します。
-author: lachlancashMS
+author: t-benebo
 ms.date: 01/10/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: kamaybac
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b64ee1e0fb9a21dfcbdb283dc7a458171150c0f8d5dadd19102c0a788b8badc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38e06931b67e53ce37c3228d6ba3db38c0f39f2d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777890"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569724"
 ---
 # <a name="hazardous-materials"></a>危険物
 

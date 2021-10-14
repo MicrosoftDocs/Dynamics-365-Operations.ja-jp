@@ -1,7 +1,7 @@
 ---
 title: 一括引き落とし原価計算
 description: このトピックでは、リーン生産に使用される一括引き落とし原価計算の概念について説明します。
-author: cvocph
+author: AndersGirke
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: ef8241424d3f512378849f820202b842b6c61ac208edd1d1e8e6a7efa06e9615
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d158908182a35b7b4cbf0ad8a5d1fc7df37815d3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725845"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579835"
 ---
 # <a name="backflush-costing"></a>一括引き落とし原価計算
 

@@ -1,7 +1,7 @@
 ---
 title: 倉庫の在庫棚卸
 description: このトピックでは、倉庫内のある場所にある特定の品目を棚卸しするために、在庫棚卸仕訳帳を作成して転記するプロセスを示します。
-author: MarkusFogelberg
+author: yufeihuang
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1cc89e3773005502c193364a721a835fe01dde9f1f22046e9c10c7d186b508d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4b7dd3788d3cbf80bfba373f5b6ce9d2e0ca0c07
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768146"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578419"
 ---
 # <a name="count-inventory-in-a-warehouse"></a>倉庫の在庫棚卸
 
