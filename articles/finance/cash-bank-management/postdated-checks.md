@@ -1,7 +1,7 @@
 ---
 title: 先日付小切手
 description: この記事は、Microsoft Dynamics 365 Finance の先日付小切手のサポートについて説明します。 先日付小切手とは、将来の日付で支払を履行または受け取るために発行される小切手です。 したがって、小切手は、特定の日付まで清算できません。
-author: ShylaThompson
+author: panolte
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dc29d11b61bf794fe5afc8e0def61a89065a5ef1dea81e3384c1f5a950af281
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f5c4d641a3d3ccc326ee56ce7bd05c891b3fa8a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749007"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595465"
 ---
 # <a name="postdated-checks"></a>先日付小切手
 

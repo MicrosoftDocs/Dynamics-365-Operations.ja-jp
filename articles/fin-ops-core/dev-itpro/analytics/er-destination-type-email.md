@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343863"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595206"
 ---
 # <a name="email-er-destination-type"></a>ER 電子メール送信先のタイプ
 
@@ -75,7 +75,7 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 >
 > 電子メールの宛先が [実行時](electronic-reporting-destinations.md#security-considerations)に変更のために提供される場合、**差出人** フィールドは、`ERFormatDestinationSenderEmailMaintain` セキュリティ特権を持つユーザーにのみ表示されます。**ER 形式の宛先の送信者の電子メール アドレスを維持します**。
 >
-> **差出人** フィールドが現在のユーザー以外のメール アドレスを使用するように構成されている場合は、**送信者** または **代理送信** のいずれかのアクセス許可を事前に正しく[設定](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide)する必要があります。 それ以外の場合は、実行時に次の例外がスローされます。「\<current user account\> アカウントから \<from email account\> として電子メールを送信できません。\<from email account\> からの「送信」権限を確認してください。」
+> **差出人** フィールドが現在のユーザー以外のメール アドレスを使用するように構成されている場合は、**送信者** または **代理送信** のいずれかのアクセス許可を事前に正しく[設定](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group)する必要があります。 それ以外の場合は、実行時に次の例外がスローされます。「\<current user account\> アカウントから \<from email account\> として電子メールを送信できません。\<from email account\> からの「送信」権限を確認してください。」
 
 **送信元** フィールドで複数のメール アドレスを返す場合に使用できます。 この場合、リストの最初のアドレスが電子メールの送信者アドレスとして使用されます。
 

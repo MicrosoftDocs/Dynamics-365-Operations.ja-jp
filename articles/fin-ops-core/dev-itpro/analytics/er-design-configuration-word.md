@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7040a74fbb08bed0b0c2808784d9c0b70f2adf96bef28783102c7eb117eeb851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a351567e0ed61fac040a6209a221833ab73a242a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718360"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595265"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための新しい ER 構成を設計する
 
@@ -46,7 +46,7 @@ Word ドキュメントを Word 形式のレポートのテンプレートとし
 
 ![形式デザイナー ページで入れ子になった要素を追加。](./media/er-design-configuration-word-image4.gif)
 
-ER 形式への変更をデザイン時に保存すると、階層形式の構造は、添付された Word テンプレートに、**レポート** という名前の [カスタム XML パーツ](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) として保存されます。 変更したテンプレートにアクセスし、Finance からダウンロードして、ローカルに保存して、Word デスクトップ アプリケーションで開く必要があります。 次の図は、**レポート** カスタム XML パーツを含む管理レポートのローカルに保存されているサンプル テンプレートを示します。
+ER 形式への変更をデザイン時に保存すると、階層形式の構造は、添付された Word テンプレートに、**レポート** という名前の [カスタム XML パーツ](/visualstudio/vsto/custom-xml-parts-overview) として保存されます。 変更したテンプレートにアクセスし、Finance からダウンロードして、ローカルに保存して、Word デスクトップ アプリケーションで開く必要があります。 次の図は、**レポート** カスタム XML パーツを含む管理レポートのローカルに保存されているサンプル テンプレートを示します。
 
 ![Word デスクトップ アプリケーションでサンプル レポート テンプレートをプレビュー。](./media/er-design-configuration-word-image5.gif)
 
