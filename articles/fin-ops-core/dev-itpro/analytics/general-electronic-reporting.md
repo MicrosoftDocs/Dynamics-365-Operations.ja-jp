@@ -2,7 +2,7 @@
 title: 電子申告 (ER) の概要
 description: このトピックでは、電子申告 (ER) ツールの概要について説明します。 重要な概念、サポートされているシナリオ、ソリューションの一部である形式について説明します。
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9bb0b427f4fe30ab95efabf8ab9871b681e35d51c0fbaf5a162235640d2f376
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f0fd83c787be4d9de151d2727384d07bc209e33f
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723168"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562179"
 ---
 # <a name="electronic-reporting-er-overview"></a>電子申告 (ER) の概要
 
@@ -50,7 +50,14 @@ ER エンジンには次の機能があります :
 
 ### <a name="components"></a>コンポーネント
 
-ER では **データ モデル** および **形式** の 2 つのコンポーネントのタイプがサポートされます。
+ER は、次のタイプのコンポーネントをサポートしています。
+
+- データ モデル
+- モデル マッピング
+- 書式設定
+- メタデータ
+
+詳細については、[電子レポート コンポーネントの概要](er-overview-components.md)を参照してください。
 
 #### <a name="data-model-and-model-mapping-components"></a>データ モデルおよびモデル マッピング コンポーネント
 

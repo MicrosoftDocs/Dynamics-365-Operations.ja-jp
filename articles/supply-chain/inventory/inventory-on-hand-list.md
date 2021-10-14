@@ -1,7 +1,7 @@
 ---
 title: 手持在庫リスト
 description: このトピックでは、[手持在庫リスト] ページを使用して手持在庫の詳細を検査する方法について説明します。 さまざまなフィルタ処理オプションと並べ替えオプションが連動するいくつかの方法と、これらのオプションを組み合わせたときに予期しない結果が生じる可能性があることを示しています。
-author: sherry-zheng
+author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cd90b3c8b84aa969f93015f8c953105db1636902c7dcf1d3150356284efa302b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780225"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573924"
 ---
 # <a name="inventory-on-hand-list"></a>手持在庫リスト
 

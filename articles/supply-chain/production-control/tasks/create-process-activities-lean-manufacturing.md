@@ -1,7 +1,7 @@
 ---
 title: リーン生産のプロセス活動の作成
 description: リーン生産のプロセス活動を作成します。
-author: cvocph
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33006e86830314a1c92e3ac4ee2ceb2ffb9e362a18066e7300d2608ad215be2f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 214e54cc93379948e4c25b3b28d835bbbbd40b72
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751077"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570156"
 ---
 # <a name="create-process-activities-for-lean-manufacturing"></a>リーン生産のプロセス活動の作成
 

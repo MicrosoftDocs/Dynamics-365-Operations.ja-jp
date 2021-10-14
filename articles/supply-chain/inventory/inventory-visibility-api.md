@@ -2,7 +2,7 @@
 title: 在庫の可視化パブリック API
 description: このトピックでは、在庫の可視化によって提供されるパブリック API について説明します。
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474655"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592491"
 ---
 # <a name="inventory-visibility-public-apis"></a>在庫の可視化パブリック API
 
@@ -82,6 +82,8 @@ Microsoftでは、Power Apps にユーザー インターフェイス (UI) を�
 
 プラットフォーム セキュリティ トークンは、在庫の視覚化パブリック API を呼び出すために使用されます。 したがって、Azure AD アプリケーションを使用して _Azure Active Directory (Azure AD) トークン_ を生成する必要があります。 その後、この Azure AD トークンを使用して、セキュリティ サービスから _アクセス トークン_ を取得する必要があります。
 
+Microsoft では、すぐに利用できる *Postman* get トークン コレクションを提供しています。 次の共有リンクを使用して、*Postman* ソフトウェアにこのコレクションをインポートできます: <https://www.getpostman.com/collections/496645018f96b3f0455e>。
+
 セキュリティ サービス トークンを取得するには、次の手順を行います。
 
 1. Azure ポータルにサインインし、このサインインを使用して Dynamics 365 Supply Chain Management アプリの `clientId` と `clientSecret` の値を検索します。
@@ -131,7 +133,7 @@ Microsoftでは、Power Apps にユーザー インターフェイス (UI) を�
    - `context` 値は、アドインを配置する LCS 環境 ID である必要があります。
    - 例に示すように、他のすべての値を設定します。
 
-1. 次のプロパティを持つ HTTP 要求を送信します。
+1. 次のプロパティを持つ HTTP 要求を送信することにより、アクセス トークン (`access_token`) を取得します。
 
    - **URL:** `https://securityservice.operations365.dynamics.com/token`
    - **メソッド:** `POST`
@@ -148,7 +150,8 @@ Microsoftでは、Power Apps にユーザー インターフェイス (UI) を�
    }
    ```
 
-後のセクションでは、最後の手順でフェッチされたトークンを表すための `$access_token` を使用します。
+> [!IMPORTANT]
+> *Postman* 要求コレクションを使用して在庫可視化のパブリック API を呼び出す場合は、各要求に対してベアラー トークンを追加する必要があります。 ベアラー トークンを見つけるには、要求 URL の下の **認証** タブを選択し、**ベアラー トークン** のタイプを選択して、最後の手順で取得したアクセス トークンをコピーします。 このトピックの後半セクションでは、最後の手順で取得したトークンを表すために `$access_token` を使用します。
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a> 手持在庫変更のイベントの作成
 
@@ -508,7 +511,7 @@ Body:
 
 - `organizationId` には 1 つの値だけが含まれる必要がありますが、それはまだ配列になっています。
 - `productId` には 1 つ以上の値が含まれます。 空の配列であれば、すべての製品が返されます。
-- `siteId` および `locationId` は、パーティション用の在庫視覚化で使用されます。
+- `siteId` と `locationId` は、在庫可視化でのパーティション分割に使用されます。 *手持在庫をクエリする* 要求では、複数の `siteId` と `locationId` の値を指定できます。 現在のリリースでは、`siteId` と `locationId` の両方の値を指定する必要があります。
 
 `groupByValues` パラメーターは、インデックス用の構成に従います。 詳細については、[製品インデックス階層の構成](./inventory-visibility-configuration.md#index-configuration)を参照してください。
 

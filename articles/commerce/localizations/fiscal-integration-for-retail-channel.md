@@ -3,7 +3,7 @@ title: コマース チャネルの会計統合の概要
 description: このトピックでは、Dynamics 365 Commerce で使用できる会計統合の機能の概要を提供します。
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/10/2021
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 323d9f4816a4f622143692ead3d1871980b19b52
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343290"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512583"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>コマース チャネルの会計統合の概要
 
@@ -141,6 +141,7 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 - [チェコ共和国向け会計登録サービス統合サンプル](./emea-cze-fi-sample.md)
 - [スウェーデン向け制御ユニットの統合サンプル](./emea-swe-fi-sample.md)
 - [ドイツ向け会計登録サービス統合サンプル](./emea-deu-fi-sample.md)
+- [ロシア向け会計プリンター統合サンプル](./rus-fpi-sample.md)
 
 会計統合フレームワークを使用して次の会計統合機能も実装されますが、この機能はそのまま使用でき、Commerce SDK には含まれていません。
 

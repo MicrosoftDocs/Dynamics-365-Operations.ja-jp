@@ -1,7 +1,7 @@
 ---
 title: 外注
 description: このトピックは、Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。
-author: christophernread
+author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: josaw
+ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 678256a301a34f354a1fbf7844f5e3de0ad7e882b5d68c5d0310abcdea4a97de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778605"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579355"
 ---
 # <a name="subcontracting"></a>外注
 

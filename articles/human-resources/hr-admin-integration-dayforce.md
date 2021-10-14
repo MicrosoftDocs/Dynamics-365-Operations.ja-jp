@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f92850a741f2a0d4d1c2636cbbdf21fe95f307df
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414587"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559464"
 ---
 # <a name="configure-integration-with-dayforce"></a>Dayforce との統合のコンフィギュレーション
 
@@ -64,7 +64,6 @@ Azure ストレージ アカウント および Azure ストレージの接続�
 
 > [!NOTE]
 > SFTP エンドポイントに転送されるデータ パッケージは、そのパッケージに固有のキーを使用して暗号化されます。 キーは、Ceridian によってのみアクセス可能な Azure Key Vault にあります。 データ パッケージの内容を復号化して確認することはできません。 データ パッケージの内容を確認する必要がある場合は、"給与統合エクスポート" データ プロジェクトを手動でエクスポートし、ダウンロードしてから、それを開く必要があります。 手動エクスポートでは、暗号化が適用されないか、またはパッケージが転送されません。
-> 統合ファイルが Dynamics 365 Human Resources UAT またはサンドボックス環境から Ceridian Dayforce Test 環境に送信される場合は、次のキー コンテナー URL を使用できます: https://payrollintegrationprod.vault.azure.net。
 
 ## <a name="configure-your-data"></a>データのコンフィギュレーション 
 

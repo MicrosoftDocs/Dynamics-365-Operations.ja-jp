@@ -1,7 +1,7 @@
 ---
 title: サービス注文の自動作成
 description: 1 つのサービス契約または複数のサービス契約に対して、サービス注文を作成できます。
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6536e684b097d6fc53bcff52866dc1a4aabab88f373d541cd0aa086f4da9f90
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8fc63a720dd06c85be17ca61de1fe7c25f1cf3f7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776245"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571548"
 ---
 # <a name="create-service-orders-automatically"></a>サービス注文の自動作成    
 

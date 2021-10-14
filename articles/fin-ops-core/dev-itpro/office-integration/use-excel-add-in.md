@@ -2,7 +2,7 @@
 title: Excel でのエンティティ データの表示および更新
 description: このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Excel アドインを使用してそのデータを表示、更新、また編集する方法を説明します。
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefebe094a0429f22a1a7038a55ab2190e41da6348447850148b8b98e082e743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761357"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592668"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Excel でのエンティティ データの表示および更新 
 
@@ -60,7 +60,7 @@ Excel アドインが、選択したエンティティのデータを自動的�
 
 6. **OK** を選択してから **はい** を選択し、変更を確認します。 Excel アドインが再開しメタデータを読み込みます。
 
-    **デザイン** ボタンが使用できるようになりました。 Excel アドインに **アプレットの読み込み** ボタンがある場合は、正しいユーザーとしてサインインしていない可能性があります。 詳細については、このトピックの「トラブルシューティング」セクションにある「[アプレットの読み込みボタンが表示される](../office-integration/use-excel-add-in.md#troubleshooting)」を参照してください。
+    **デザイン** ボタンが使用できるようになりました。 Excel アドインに **アプレットの読み込み** リンクがある場合は、正しいユーザーとしてサインインしていない可能性があります。 この問題への対処の詳細については、[アプレットの読み込み](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) のトラブルシューティング エントリを参照してください。
 
 7. **デザイン** を選択します。 Excel アドインがエンティティ メタデータを取得します。
 8. **テーブルの追加** を選択します。 エンティティの一覧が表示されます。 エンティティは「名前 - ラベル」形式で一覧表示されます。
@@ -136,7 +136,7 @@ Excel ワークブック テンプレートの作成者は、テンプレート�
 ## <a name="troubleshooting"></a>トラブルシューティング
 生じる問題のいくつかは簡単なステップで解決できます。
 
-- **アプレットのロードボタンが表示されます** – サインイン後に Excel アドインに **アプレットの読み込み** ボタンがある場合は、正しいユーザーとしてサインインしていない可能性があります。 この問題を解決するために、Excel アドインの右上隅に正しいユーザー名が表示されることを確認します。 正しくないユーザー名が表示されている場合は、それを選択し、サインアウトしてから再度サインインします。
+- **"アプレットの読み込み" リンクが表示される** – この問題の詳細については、[アプレットの読み込み](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) のトラブルシューティング エントリを参照してください。 
 - **禁止されたメッセージを受信する** - Excel アドインのメタデータの読み込み中に「禁止された」メッセージを受信する場合、Excel アドインにサインインしているアカウントには、対象のサービス、インスタンス、またはデータベースを使用するためのアクセス許可がありません。 この問題を解決するために、Excel アドインの右上隅に正しいユーザー名が表示されることを確認します。 正しくないユーザー名が表示されている場合は、それを選択し、サインアウトしてから再度サインインします。
 - **Excel 上に空白の Web ページが表示される** – サインイン プロセス中に空白の Web ページが開く場合、そのアカウントには AD FS が必要ですが、Excel のアドインを実行している Excel のバージョンがサインイン ダイアログ ボックスを読み込めるほど新しくありません。 この問題を解決するには、使用している Excel のバージョンを更新します。 繰延チャンネルの企業にいる場合に Excel のバージョンを更新するには、[繰延チャンネルから現在のチャンネルに移動する](/deployoffice/overview-update-channels) ために [Office 配置ツール](/deployoffice/overview-office-deployment-tool) を使用します。
 - **データの変更を公開する際にタイム アウトが返されます** - データ変更をエンティティに公開しようとしている間にタイム アウト メッセージを受信する場合は、影響を受けるワークブックのバッチ サイズを減らすことを検討してください。 レコードの変更で大量のロジックをトリガするエンティティは、タイム アウトを防ぐため、より小さいバッチで更新を送信する必要がある場合があります。

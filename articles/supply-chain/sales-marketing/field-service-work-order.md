@@ -1,7 +1,7 @@
 ---
 title: Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 description: このトピックでは、Field Service の作業オーダーを Supply Chain Management の販売注文に同期するために使用されるテンプレートと基本的なタスクについて説明します。
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7d7688e757a3ab9746ae0307a7c15f0624c1d8aceeb0dc935b0da32d3ab2994b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c54f5eaec1ae453ba9e55ef54d47c8591276ec89
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752685"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568378"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 
@@ -245,31 +245,31 @@ Field Service および Supply Chain Management の統合をサポートする�
 
 フィルター: (msdyn_systemstatus ne 690970005) および (msdyn_systemstatus ne 690970000) および (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderHeader。](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderServiceLineEstimate
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および (msdyn_linestatus eq 690970000) および (msdynce_headersystemstatus ne 690970004)
 
-[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderServiceLineEstimate。](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderServiceLineUsed
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および ((msdyn_linestatus eq 690970001) または(msdynce_headersystemstatus eq 690970004))
 
-[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderServiceLineUsed。](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderProductLineEstimate
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および (msdyn_linestatus eq 690970000) および (msdynce_headersystemstatus ne 690970004) および (msdyn_allocated eq true)
 
-[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderProductLineEstimate。](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderProductLineUsed
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および ((msdyn_linestatus eq 690970001) または (msdynce_headersystemstatus eq 690970004) または (msdyn_allocated ne true))
 
-[![データ統合のテンプレートのマッピング。](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderProductLineUsed。](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

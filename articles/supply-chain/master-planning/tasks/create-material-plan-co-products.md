@@ -1,7 +1,7 @@
 ---
 title: 連産品の材料計画の作成
 description: 生産計画担当者は、フォーミュラ連産品である品目の材料要求を計画します。
-author: ShylaThompson
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrde
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d829687521c002a84de8f88caff22a8f0362c75e91ac355fd0b5002d0bd981c2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: deae0d7e0295aa02f5ad512f67e9e3d2148c2e33
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768074"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578299"
 ---
 # <a name="create-a-material-plan-for-co-products"></a>連産品の材料計画の作成
 

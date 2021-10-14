@@ -1,7 +1,7 @@
 ---
 title: 予算計画
 description: このラボの目的は、予算計画領域で、Microsoft Dynamics 365 Finance 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。
-author: ShylaThompson
+author: panolte
 ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e995a3fb7f87db2aed676d12ca4b4732eb3e96c5e52b702890d53cd1840d7cb1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0420887c35bbb07aaf8cce05a68173ab6c534f92
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775197"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595337"
 ---
 # <a name="budget-planning"></a>予算計画
 
@@ -36,7 +36,7 @@ ms.locfileid: "6775197"
 
 ## <a name="prerequisites"></a>必要条件 
 
-このチュートリアルでは、Contoso のデモ データがある Microsoft Dynamics 365 Finance 環境にアクセスし、そのインスタンスの管理者としてプロビジョニングされる必要があります。 このラボにおいてプライベート ブラウザー モードを使用しないでください - 必要に応じてブラウザーの他のどのアカウントからもサインアウトし、管理者認証情報を使用してサインインしてください。 サインインする時には、「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 これは、Excel のアプリが現在必要な永続する Cookie を作成します。 IE 以外のブラウザーを使用してアプリケーションにサインインする場合、Excel のアプリでサインインするように求めるメッセージが表示されます。 Excel のアプリで「サインイン」をクリックすると、IE のポップアップ ウィンドウが開きます。「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 Excel のアプリで「サインイン」をクリックしても何も表示されない場合、IE の Cookie キャッシュを削除する必要があります。
+このチュートリアルでは、Contoso のデモ データ環境を使用する Microsoft Dynamics 365 Finance にアクセスする必要があり、インスタンスの管理者としてプロビジョニングされます。 このラボにおいてプライベート ブラウザー モードを使用しないでください - 必要に応じてブラウザーの他のどのアカウントからもサインアウトし、管理者認証情報を使用してサインインしてください。 サインインする時には、「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 これは、Excel のアプリが現在必要な永続する Cookie を作成します。 IE 以外のブラウザーを使用してアプリケーションにサインインする場合、Excel のアプリでサインインするように求めるメッセージが表示されます。 Excel のアプリで「サインイン」をクリックすると、IE のポップアップ ウィンドウが開きます。「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 Excel のアプリで「サインイン」をクリックしても何も表示されない場合、IE の Cookie キャッシュを削除する必要があります。
 
 ## <a name="scenario-overview"></a>**シナリオの概要**
 ジュリアは、ドイツ (DEMF) の Contoso Entertainment Systems の財務マネージャーとして勤務しています。 FY2016 が近づき、翌年の会社の予算を設定する業務を行う必要があります。 予算の設定は次のようになります。

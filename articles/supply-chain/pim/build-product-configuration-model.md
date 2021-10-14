@@ -1,7 +1,7 @@
 ---
 title: 製品コンフィギュレーションの概要
 description: 特別な条件を満たすために製品をコンフィギュレーションする必要は、企業間および企業と顧客間の関係、両方において例外ではなくルールになってきました。
-author: cvocph
+author: t-benebo
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e973b05b6e501288b4a0cee1fdc068aca78227425ae70c5d37cdfcd24f8cf5db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ceeb90fc85a966183726d8c2f0dd8b0c8bf2719
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773252"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570853"
 ---
 # <a name="product-configuration-overview"></a>製品コンフィギュレーションの概要
 

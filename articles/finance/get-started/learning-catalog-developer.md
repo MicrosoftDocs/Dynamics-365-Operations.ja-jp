@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e4e190f8d1fd14f809802ef4ba031efe48067e61c04ea45d7a9d0361d9b6e68e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a09fe4bfe53730a6a5230b47f513a6063d0fe720
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774284"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594964"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Dynamics 365 Finance 開発者向けラーニング カタログ
 
@@ -31,18 +31,18 @@ ms.locfileid: "6774284"
 
 | コンテンツ | 説明 | 書式設定 | 期間 |
 |---------|-------------|--------|--------|
-| [Finance and Operations アプリの使用を開始する](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。 Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2.2 時間 |
-| [Dynamics 365 Finance の使用を開始する](https://docs.microsoft.com/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance は、変化の激しいビジネス環境に適応できるようにビジネス ユーザーを支援します。 企業が財務を管理し、資金を管理するために必要なすべてのものを、財務計画と予測のための正確な情報とともに提供し、分析ツールを使用して最新の状態に保つことができます。 財務はあらゆる業務の中心であるため、Dynamics 365 Finance の機能に精通することが重要です。 | 無料の自習型オンライン学習モジュール | 1 時間 |
+| [Finance and Operations アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。 Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2.2 時間 |
+| [Dynamics 365 Finance の使用を開始する](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance は、変化の激しいビジネス環境に適応できるようにビジネス ユーザーを支援します。 企業が財務を管理し、資金を管理するために必要なすべてのものを、財務計画と予測のための正確な情報とともに提供し、分析ツールを使用して最新の状態に保つことができます。 財務はあらゆる業務の中心であるため、Dynamics 365 Finance の機能に精通することが重要です。 | 無料の自習型オンライン学習モジュール | 1 時間 |
 
 ## <a name="core-development-concepts"></a>コア開発の概念<a name="core-development-concepts"></a>
 
 | コンテンツ | 説明 | 書式設定 | 期間 |
 |---------|-------------|--------|--------|
-| [ Finance and Operations アプリを使用した開発の概要](https://docs.microsoft.com/learn/paths/introduction-develop-finance-operations/) | Finance and Operations アプリを扱う開発者は、Dynamics 365 のエコシステムや Finance and Operations アプリの主要なアーキテクチャの構成要素をしっかりと把握しておくことが重要です。 技術力、ソース コード、テスト フレームワーク、レポート ツールなど、コアとなる開発者の考え方を知っておくことで、Finance and Operations アプリに活かせる開発スキルを身につけるための更なる努力をサポートします。 | 無料の自習型オンライン学習パス | 7.75 時間 |
-| [Finance and Operations アプリのビルド](https://docs.microsoft.com/learn/paths/build-finance-operations/) | Finance and Operations アプリでの開発には、新しい要素の構築や Finance and Operations アプリのカスタマイズに必要なタスクの基本的な理解が必要です。 タスクには、X++ コードおよび Visual Studio の理解と共に、システムの基本要素を作成および変更できることが含まれます。 | 無料の自習型オンライン学習パス | 13 時間 |
-| [Finance and Operations アプリの拡張](https://docs.microsoft.com/learn/paths/extending-finance-operations/) | 拡張機能を使用すると、開発者は、基本コードに影響しないコードに変更を加えることによって、Finance and Operations アプリでのユーザー エクスペリエンスを変更することができます。 他の利点の中でも拡張機能は、開発者がビジネス プロセスや必要な変更に合わせて Finance and Operations アプリを更新することができます。 | 無料の自習型オンライン学習パス | 2.5 時間 |
-| [Finance and Operations アプリに接続する](https://docs.microsoft.com/learn/paths/connect-finance-operations/) | 統合および Finance and Operations アプリのデータにアクセスする機能は、重要な機能です。 Finance and Operations アプリでコードの構築や拡張を身につけた開発者は、データの統合やデータとの接続がどのようにユーザーに良い影響を与えるのかを学ぶことで、開発の知識を高めることができます。 | 無料の自習型オンライン学習パス | 5.75 時間 |
-| [データを移行して、Finance and Operations アプリの運用を開始する](https://docs.microsoft.com/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントおよび開発者として、顧客のデータを移行用に準備し、データ管理を操作し、ユーザー受け入れテストを実行して、Finance and Operations アプリで運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
+| [ Finance and Operations アプリを使用した開発の概要](/learn/paths/introduction-develop-finance-operations/) | Finance and Operations アプリを扱う開発者は、Dynamics 365 のエコシステムや Finance and Operations アプリの主要なアーキテクチャの構成要素をしっかりと把握しておくことが重要です。 技術力、ソース コード、テスト フレームワーク、レポート ツールなど、コアとなる開発者の考え方を知っておくことで、Finance and Operations アプリに活かせる開発スキルを身につけるための更なる努力をサポートします。 | 無料の自習型オンライン学習パス | 7.75 時間 |
+| [Finance and Operations アプリのビルド](/learn/paths/build-finance-operations/) | Finance and Operations アプリでの開発には、新しい要素の構築や Finance and Operations アプリのカスタマイズに必要なタスクの基本的な理解が必要です。 タスクには、X++ コードおよび Visual Studio の理解と共に、システムの基本要素を作成および変更できることが含まれます。 | 無料の自習型オンライン学習パス | 13 時間 |
+| [Finance and Operations アプリの拡張](/learn/paths/extending-finance-operations/) | 拡張機能を使用すると、開発者は、基本コードに影響しないコードに変更を加えることによって、Finance and Operations アプリでのユーザー エクスペリエンスを変更することができます。 他の利点の中でも拡張機能は、開発者がビジネス プロセスや必要な変更に合わせて Finance and Operations アプリを更新することができます。 | 無料の自習型オンライン学習パス | 2.5 時間 |
+| [Finance and Operations アプリに接続する](/learn/paths/connect-finance-operations/) | 統合および Finance and Operations アプリのデータにアクセスする機能は、重要な機能です。 Finance and Operations アプリでコードの構築や拡張を身につけた開発者は、データの統合やデータとの接続がどのようにユーザーに良い影響を与えるのかを学ぶことで、開発の知識を高めることができます。 | 無料の自習型オンライン学習パス | 5.75 時間 |
+| [データを移行して、Finance and Operations アプリの運用を開始する](/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントおよび開発者として、顧客のデータを移行用に準備し、データ管理を操作し、ユーザー受け入れテストを実行して、Finance and Operations アプリで運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
 | [Finance and Operations：開発 ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | この Tech Talk に是非ご参加ください。ここでは、開発アプリケーション ライフ サイクル管理の概念、ツール、および推奨されるベスト プラクティスについて説明します。 Lifecycle Services、Visual Studio、Azure DevOps がどのように連携して、ソリューションのコードベースのビジネスプロセスに焦点を当てた継続的な配信を可能にし、お客様の環境にサービスを提供するかについて扱っています。 | Web カンファレンスの無料録画 | 52 分 |
 | [Finance and Operations: PowerApps で Dynamics 365 for Finance and Operations を拡張する (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Microsoft PowerApps のシンプルさを理解し、 Dynamics 365 for Finance and Operations とどのように融合してビジネスをデジタル化し、ユーザーの生産性を向上させるのかを理解しましょう。 | Web カンファレンスの無料録画 | 43 分 |
 | [Finance and Operations：拡張性 (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Microsoft の機能拡張計画について概要および更新について説明します。 ソリューションを拡張するさまざまな方法、メタデータ拡張性機能の詳細、および強力なコマンド チェーン機能経由を含むコードの補強および拡張機能について詳しく説明します。 | Web カンファレンスの無料録画 | 50 分 |
@@ -70,7 +70,7 @@ ms.locfileid: "6774284"
 
 | コンテンツ | 説明 | 書式設定 | 期間 |
 |---------|-------------|--------|--------|
-| [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
+| [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションを Finance and Operations アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Finance and Operations： 7. x から 8 + へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 7.X から 8.X へのアップグレード プロセスについて説明する次の Tech Talk にご参加ください。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオと手順について説明します。 また、拡張機能の要求シナリオと、必要に応じてそれらを上げる方法についても説明します。 2 部構成の第 1 部 | Web カンファレンスの無料録画 | 61 分 |
 | [AX2012 から Dynamics 365 for Operations へのアップグレード (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 for Operations にアップグレードする方法の概要を説明します。 | Web カンファレンスの無料録画 | 45 分 |
 | [AX2009 から Dynamics 365 for Operations への移行ツール (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | このセッションでは、AX2009 から D365 for Operations への移行を支援するための利用可能なツールについて扱います。 | Web カンファレンスの無料録画 | 55 分 |
@@ -92,6 +92,6 @@ ms.locfileid: "6774284"
 
 | コンテンツ | 説明 | 書式設定 |
 |---------|-------------|--------|
-|[試験 MB-500: Microsoft Dynamics 365: Finance and Operations アプリ開発者](https://docs.microsoft.com/learn/certifications/exams/mb-500) | この試験では、次の技術的タスクを遂行する能力を評価します: アーキテクチャとソリューション設計の計画; 開発者ツールの適用; AOT要素の設計・開発; コードの開発とテスト; レポートの実装; データ ソリューションの統合および管理; セキュリティの実装とパフォーマンスの最適化。 | 試験、費用は地域によって異なる |
+|[試験 MB-500: Microsoft Dynamics 365: Finance and Operations アプリ開発者](/learn/certifications/exams/mb-500) | この試験では、次の技術的タスクを遂行する能力を評価します: アーキテクチャとソリューション設計の計画; 開発者ツールの適用; AOT要素の設計・開発; コードの開発とテスト; レポートの実装; データ ソリューションの統合および管理; セキュリティの実装とパフォーマンスの最適化。 | 試験、費用は地域によって異なる |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

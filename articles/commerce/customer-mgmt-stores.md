@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 09caa7fa8f10d1afc44bb9343550bc633b8ec99a
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 4fd6039843be09ec706e45746d5724faa99a95e6
+ms.sourcegitcommit: 3f59b15ba7b4c3050f95f2b32f5ae6d7b96e1392
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472228"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7563064"
 ---
 # <a name="customer-management-in-stores"></a>店舗での顧客管理
 
@@ -45,7 +45,8 @@ ms.locfileid: "7472228"
 
 ## <a name="sync-customers-and-async-customers"></a>顧客の同期と顧客の非同期
 
-> [重要] POS がオフラインになると、非同期顧客作成モードが無効になっている場合でも、システムは自動的に顧客を非同期で作成します。 したがって、同期顧客または非同期顧客の作成の選択にかかわらず、Commerce 本社の管理者は、**P ジョブ**、**非同期モードから顧客とビジネス パートナーを同期する** ジョブ  (旧 **非同期モードから顧客とビジネス パートナーを同期する** ジョブ)、および **1010** ジョブに対して定期的なバッチ ジョブを作成しスケジュールする必要があります。これにより、非同期顧客は Commerce 本社で同期顧客に変換されます。
+> [!IMPORTANT]
+> POS がオフラインになると、非同期顧客作成モードが無効になっている場合でも、システムは自動的に顧客を非同期で作成します。 したがって、同期顧客または非同期顧客の作成の選択にかかわらず、Commerce 本社の管理者は、**P ジョブ**、**非同期モードから顧客とビジネス パートナーを同期する** ジョブ  (旧 **非同期モードから顧客とビジネス パートナーを同期する** ジョブ)、および **1010** ジョブに対して定期的なバッチ ジョブを作成しスケジュールする必要があります。これにより、非同期顧客は Commerce 本社で同期顧客に変換されます。
 
 Commerce には、同期と非同期の 2 つの顧客作成モードがあります。 既定では、顧客は同期的に作成されます。 つまり、これらはリアルタイムに Commerce 本社に作成されます。 同期顧客作成モードは、新しい顧客をチャネル間で検索するのに役立ちます。 ただし、欠点もあります。 Commerce 本社への [Commerce Data Exchange: リアルタイム サービス](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service)呼び出しを生成するため、多数の顧客作成呼び出しが同時に行われると、パフォーマンスに影響を与える可能性があります。
 

@@ -1,7 +1,7 @@
 ---
 title: サービス対象関係の作成
 description: このトピックでは、サービス契約またはサービス注文のサービス対象の関係を作成する方法について説明します。
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a83ffa562a62eafe60de3f235354bd2dea1a740de4b1b5adc9c61cc311bd9ad3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a558d513ba97d7df72ee785704b84dd38a5929b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778581"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569122"
 ---
 # <a name="create-service-object-relations"></a>サービス対象関係の作成 
 

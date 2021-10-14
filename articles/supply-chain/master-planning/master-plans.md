@@ -1,7 +1,7 @@
 ---
 title: マスター プランの概要
 description: 会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
@@ -15,46 +15,40 @@ ms.custom:
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 022b5dcab8ef431edbed308660f92b841eb972cdb7a53095f057e6718880ceed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75f18d708bf71a7bec1d8a5bd95008aaa2ec4d90
+ms.sourcegitcommit: 2084fc166d027f8192a08cd5c00169c448869ac8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759554"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7582543"
 ---
 # <a name="master-plans-overview"></a>マスター プランの概要
 
 [!include [banner](../includes/banner.md)]
 
-会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。 
+会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。
 
 **マスター プラン** ページでマスター プランを構成することができます。
 
 プランには次の 2 つのタイプがあります。
--   **静的マスター プラン**: マスター プランの計算では、現在のデータを使用して正味必要量プランが生成されます。 このプランは、次回のマスター プランを実行するか、手動でプランを変更するまで変わりません。 これは、購買担当者や生産計画担当者など、さまざまな従業員が意思決定の基準として使用し、日々の活動を遂行するための業務プランです。
--   **動的マスタ プラン**: このプランは、マスター プランによって生成された同じ正味必要量プランで開始されます。 ただし、マスター データが変更されるたびに動的プランを更新できます。 これは、新しい販売注文を作成した場合などです。 これにより、他のユーザーがそれぞれの作業過程で使用している静的マスタ プランには影響を与えずに、注文のネットワークの変化や品目の在庫状態を監視することができます。
+
+- **静的マスター プラン**: マスター プランの計算では、現在のデータを使用して正味必要量プランが生成されます。 このプランは、次回のマスター プランを実行するか、手動でプランを変更するまで変わりません。 これは、購買担当者や生産計画担当者など、さまざまな従業員が意思決定の基準として使用し、日々の活動を遂行するための業務プランです。
+- **動的マスタ プラン**: このプランは、マスター プランによって生成された同じ正味必要量プランで開始されます。 ただし、マスター データが変更されるたびに動的プランを更新できます。 これは、新しい販売注文を作成した場合などです。 これにより、他のユーザーがそれぞれの作業過程で使用している静的マスタ プランには影響を与えずに、注文のネットワークの変化や品目の在庫状態を監視することができます。
 
 会社で動的マスター プランのみを使用する場合もあれば、静的マスター プランと動的マスター プランの両方を使用する場合もあります。 また、特定の戦略の反映や特定の問題への対処を目的として任意のマスタ プランをコンフィギュレーションすることもできます。 例は次のとおりです。
--   欠品を防ぐために在庫レベルの設定を高くする。
--   信頼できない仕入先への対策として安全マージンを長めに設定する。
+
+- 欠品を防ぐために在庫レベルの設定を高くする。
+- 信頼できない仕入先への対策として安全マージンを長めに設定する。
 
 このほか、マスター プランを実行するたびに新しい必要量プランを使用して更新されるように、初期動的マスター プランを設定することもできます。 **マスター プラン パラメータ** ページでこれらの設定を指定できます。
 
-
-
 ## <a name="additional-resources"></a>その他のリソース
 
-[補充設定](coverage-settings.md)
-
-[マスター スケジューリングの戦術的な計画と実施計画の分割](https://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
-
-[マスター プラン: 静的および動的マスター プランまたは 1 つの計画のどちらを使用するか。](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
-
-
-
-
+- [補充設定](coverage-settings.md)
+- [マスター スケジューリングの戦術的な計画と実施計画の分割](https://community.dynamics.com/ax/b/dynamicsaxmanufacturingrdteamblog/posts/separating-tactical-and-operative-planning-for-master-scheduling)
+- [マスター プラン: 静的および動的マスター プランまたは 1 つの計画のどちらを使用するか。](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

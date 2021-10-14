@@ -1,7 +1,7 @@
 ---
 title: 修復管理
 description: 過去に役立った解決策の提案により、問題を体系的にまとめます。
-author: ShylaThompson
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa739685791596fe1a3dce3abff344b21b8d7f6dd5cefc525c7e749a75138a9b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1456c65f28d2a1d06497ddde81c9e68cc078c061
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774684"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567922"
 ---
 # <a name="repair-management"></a>修復管理       
 

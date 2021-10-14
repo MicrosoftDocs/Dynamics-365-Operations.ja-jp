@@ -12,14 +12,16 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4158fa93d9e424e796c038d0c907ea155868440bfcb79666c3e13fa997d4834b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e5faf8e4544b2bcb58f3c578789b2bd379a27b0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774732"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572364"
 ---
 # <a name="container-packing-strategies"></a>コンテナー梱包計画
+
+[!include [banner](../includes/banner.md)]
 
 *コンテナー梱包計画* は、コンテナー間で品目配賦を定義するために使用できる計画です。 このトピックでは、*オープンのコンテナーすべてに梱包* 計画と *現在のコンテナーにのみ梱包* 計画の違いについて説明します。
 

@@ -1,6 +1,6 @@
 ---
 title: 原価オブジェクトごとの在庫明細書および KPI の表示
-description: この手順の作成に使用するデモ データの会社は USMF です。
+description: このトピックでは、原価オブジェクト別に在庫明細書と KPI を表示する方法を示します。
 author: AndersGirke
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,13 +13,13 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6bc60baa723cee91b219bc078f4486e971d2c99fc89b9c42e2d4472d161a163
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f813b0e04a2450cb64e92128d36495a483ad14e1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721347"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568162"
 ---
 # <a name="view-inventory-statement-and-kpi-by-cost-object"></a>原価オブジェクトごとの在庫明細書および KPI の表示
 
@@ -27,14 +27,14 @@ ms.locfileid: "6721347"
 
 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、原価の管理者を対象としています。
 
-1. [原価管理] をクリックします。
-2. [リリース済製品] をクリックします。
-3. クイック フィルターを使用して、レコードを見つけます。 たとえば、「d0005」という値を含む [品目番号] フィールドをフィルターします。
-4. [アクション] ペインで [原価の管理] をクリックします。
-5. [原価オブジェクト] をクリックします。
-6. [在庫明細書および KPI] をクリックします。
-7. [開始日] フィールドに日付を入力します。
-8. [終了日] フィールドで、日付を入力します。
+1. **原価管理** を選択します。
+2. **リリース済製品** を選択します。
+3. クイック フィルターを使用して、レコードを見つけます。 たとえば、*d0005* の値を含む **品目番号** フィールドをフィルターします。
+4. アクション ペインで **原価の管理** を選択します。
+5. **原価オブジェクト** を選択します。
+6. **在庫明細書および KPI** を選択します。
+7. **開始日** フィールドに日付を入力します。
+8. **終了日** フィールドに、日付を入力します。
 
 
 

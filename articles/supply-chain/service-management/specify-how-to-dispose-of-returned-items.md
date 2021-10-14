@@ -1,7 +1,7 @@
 ---
 title: 返品品目の廃棄方法の指定
 description: 返品品目の廃棄方法を指定します。
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 594832f4d89a630bd88b18f665a6afbc7a918f0e5c9627f835f18d4b1a4d2cab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e609c1c285b34a5416a2058809b2fc4fafb73fca
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722250"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571332"
 ---
-# <a name="specify-how-to-dispose-of-returned-items"></a>返品品目の廃棄方法の指定 
+# <a name="specify-how-to-dispose-of-returned-items"></a>返品品目の廃棄方法の指定
 
 [!include [banner](../includes/banner.md)]
-
 
 返品注文を処理する場合、製品が返品されている理由を識別する返品理由コードを指定する必要があります。 返品製品自体に何が実行されたかを特定する廃棄コード、および処分アクションも指定する必要があります。
 
@@ -35,9 +34,9 @@ ms.locfileid: "6722250"
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -125,8 +124,8 @@ ms.locfileid: "6722250"
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -162,24 +161,15 @@ ms.locfileid: "6722250"
 </tbody>
 </table>
 
-
 ## <a name="select-a-disposition-code-for-a-quarantine-order"></a>検査指示の廃棄コードの選択
 
-1.  **在庫管理** \> **定期処理** \> **品質管理** \> **検査指示** の順にクリックします。
-
-2.  既存の検査指示に対して、**概要** タブの **廃棄コード** フィールドからアクションを選択します。
-
-
+1. **在庫管理** \> **定期処理** \> **品質管理** \> **検査指示** の順に移動します。
+1. 既存の検査指示に対して、**概要** タブの **廃棄コード** フィールドからアクションを選択します。
 
 ## <a name="see-also"></a>参照
 
 [検査指示 (フォーム)](/dynamicsax-2012//quarantine-order-form)
 
 [廃棄コード (フォーム)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

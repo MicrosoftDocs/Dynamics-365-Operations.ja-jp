@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: de753eda43cb358dfa9edc76f102d4b268291b4e
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386441"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595040"
 ---
 # <a name="improve-the-prediction-model"></a>予測モデルの改善
 
@@ -75,6 +75,6 @@ ms.locfileid: "7386441"
 
 トレーニングに使用される請求書をフィルター処理するには、請求書または顧客テーブルのフィールドでフィルター規準を設定します。 たとえば、合計が特定の金額以上の請求書のみを含むしきい値を設定できます。 また、特定の顧客グループの顧客に関連付けられている請求書を除外できます。
 
-データのフィルター処理の詳細については、[予測モデルの作成](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data) を参照してください。
+データのフィルター処理の詳細については、[予測モデルの作成](/ai-builder/prediction-create-model#filter-your-data) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

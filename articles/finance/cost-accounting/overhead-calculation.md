@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 98fd0b4a18b02ed58034ec6e22763ed7c66f567f5c9eeeed124996757470c419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 60bce611ae1f6ed5d63860793cd5d1da3c421a9e
+ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766292"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "7551807"
 ---
 # <a name="overhead-calculation"></a>間接費の計算
 
@@ -1328,83 +1328,12 @@ ms.locfileid: "6766292"
 ## <a name="conclusion"></a>まとめ
 財務会計では、電気のコスト 10,000.00 がダミーのコスト センター ID に転記されます。 したがって、コスト経理担当者はこのコストが配賦される必要があることが分かります。 コスト会計では、コストは、適用されているポリシーおよびルールに基づいて、組織単位およびレベルをフローします。 各コストは、コスト配賦の最善の評価を提供する配賦基準に関連付けられています。
 
-<table>
-<thead>
-<tr>
-<th colspan="2" rowspan="2">原価要素</th>
-<th colspan="9">原価オブジェクト</th>
-<th rowspan="2">小計</th>
-</tr>
-<tr>
-<th>CC099</th>
-<th>CC001</th>
-<th>CC002</th>
-<th>CC003</th>
-<th>CC004</th>
-<th>プロジェクト 1</th>
-<th>プロジェクト 2</th>
-<th>製品 1</th>
-<th>製品 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2">10001 電気</td>
-<td style="text-align: right;"><strong>0.00</strong></td>
-<td style="text-align: right;"><strong>0.00</strong></td>
-<td style="text-align: right;"><strong>0.00</strong></td>
-<td style="text-align: right;"><strong>0.00</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"><strong>30.00</strong></td>
-<td style="text-align: right;"><strong>10.00</strong></td>
-<td style="text-align: right;"><strong>7,770.57</strong></td>
-<td style="text-align: right;"><strong>2,189.43</strong></td>
-<td style="text-align: right;"><strong>10,000.00</strong></td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align: left;">未分類</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: left;">固定費</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">776.36</td>
-<td style="text-align: right;">223.64</td>
-<td style="text-align: right;"><strong>1,000.00</strong></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: left;">変動費</td>
-<td style="text-align: right;">000</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">30.00</td>
-<td style="text-align: right;">10.00</td>
-<td style="text-align: right;">6,994.21</td>
-<td style="text-align: right;">1,965.79</td>
-<td style="text-align: right;"><strong>9,000.00</strong></td>
-</tr>
-</tbody>
-</table>
+原価要素 | 原価オブジェクト<br>CC099 | 原価オブジェクト<br>CC001 | 原価オブジェクト<br>CC002 | 原価オブジェクト<br>CC003 | 原価オブジェクト<br>CC004 | 原価オブジェクト<br>プロジェクト 1 | 原価オブジェクト<br>プロジェクト 2 | 原価オブジェクト<br>製品 1 | 原価オブジェクト<br>製品 2 | 合計
+---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
+10001 電気 | 0.00 | 0.00 | 0.00 | 0.00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
+未分類 | 0.00 |  |  |  |  |  |  |  |  |  |
+固定費 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |  |  | 776.36 | 223.64 | 1,000.00 |
+変動費 | 000 | 0.00 | 0.00 | 0.00 | 0.00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
 > このトピックでは、主要コスト要素である 10001 電気がどのようにコスト オブジェクトをフローするかを示します。 したがって、この間接費は組織の最下位レベルに配賦されます。 つまり、最下位レベルのコスト オブジェクトがそのコストを負担します。 コスト オブジェクト間のコストの視覚的なフローが必要な場合は、コスト ロールアップ ポリシー ルールを使用して、コストのフローを視覚化できます。 詳細については、[原価ロールアップ ポリシーおよび間接費の計算](cost-rollup.md) を参照してください。

@@ -1,7 +1,7 @@
 ---
 title: 商品の品質の調査
 description: このトピックでは、品質指示を処理する方法について示します。
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ceb5547b6c1d4c44e53faba0d6e2c1f0368fb95768a2520ecc39066ff73a03d2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755370"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575851"
 ---
 # <a name="inspect-the-quality-of-goods"></a>商品の品質の調査
 

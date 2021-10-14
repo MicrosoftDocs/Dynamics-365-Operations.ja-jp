@@ -1,7 +1,7 @@
 ---
 title: 販売注文に対する同一バッチの引当
 description: この記事では、在庫の単一のバッチに対して在庫引当を許可する製品の設定方法を説明します。
-author: omulvad
+author: Henrikan
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9bb3eb067e7e9f8a9108da05602fc6771e7dd12c47be44f989ded53ff7c9d250
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d4f3ee5d99648155e663c9ad0849b0b9ae3f80e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754515"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576619"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>販売注文に対する同一バッチの引当
 

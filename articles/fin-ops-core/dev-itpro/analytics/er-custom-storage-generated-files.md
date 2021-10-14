@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 83b2d3c35e3e68aaad22bc03a46b17abc1526073895057717fd055dacdfbee5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718480"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594912"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>生成されるドキュメントに対するカスタム ストレージの場所を指定する
 
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. 既存の `AssetRollForwardService` クラスを変更し、レポート ランナーのカスタム送信先ファクトリを設定するコードを記述します。 カスタムの送信先ファクトリが構築されるときに、ターゲット フォルダーを指定するアプリケーション駆動型のパラメーターが渡されることに注意してください。 これにより、そのターゲット フォルダーは、生成されたファイルを保存するために使用されます。
 
     > [!NOTE] 
-    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したフォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) 例外が実行時にスローされます。
+    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したフォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) 例外が実行時にスローされます。
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

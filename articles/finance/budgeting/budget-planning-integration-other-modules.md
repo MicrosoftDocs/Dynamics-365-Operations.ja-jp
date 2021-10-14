@@ -1,7 +1,7 @@
 ---
 title: 他のモジュールとの予算計画の統合
 description: 予算計画はいくつかの異なるリソースから生成することもできます。 定期的なプロセスの基本要素は、すべてのリソースと同じです。
-author: ShylaThompson
+author: panolte
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a5841fe48ddf18e3966e25333c5e578912fa0c43c2a7cb27ad24fadd9ad8fb5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceae7296ef6d8a0f181c306bd533694c0219e467
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762367"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594745"
 ---
 # <a name="budget-planning-integration-with-other-modules"></a>他のモジュールとの予算計画の統合
 

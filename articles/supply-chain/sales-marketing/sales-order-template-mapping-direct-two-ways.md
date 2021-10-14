@@ -1,7 +1,7 @@
 ---
 title: 販売注文の Sales と Supply Chain Management の間の直接同期
 description: このトピックでは、Dynamics 365 Sales と Dynamics 365 Supply Chain Management の間での販売注文の直接同期の実行に使用されるテンプレートと基本的なタスクについて説明します。
-author: ChristianRytt
+author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 9e95ba361bddf4e43b205fe580bb6f4a91dd88248a0c059ad65e66ef07de83c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad23190433b2843ec5063b5fa5b30351fcd86390
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753231"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566434"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>販売注文の Sales と Supply Chain Management の間の直接同期
 
@@ -189,19 +189,19 @@ Sales での割引計算モデルは、Supply Chain Management の割引計算�
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>販売注文 (Supply Chain Management から Sales) - 直接: OrderHeader
 
-[![データ統合のテンプレートのマッピング。](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![データ統合のテンプレート マッピング、販売注文 (Supply Chain Management から Sales) - 直接: OrderHeader。](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>販売注文 (Supply Chain Management から Sales) - 直接: OrderLine
 
-[![データ統合のテンプレートのマッピング。](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![データ統合のテンプレート マッピング、販売注文 (Supply Chain Management から Sales) - 直接: OrderLine。](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>販売注文 (Sales から Supply Chain Management) - 直接: OrderHeader
 
-[![データ統合のテンプレートのマッピング。](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![データ統合のテンプレート マッピング、販売注文 (Sales から Supply Chain Management) - 直接: OrderHeader。](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>販売注文 (Sales から Supply Chain Management) - 直接: OrderLine
 
-[![データ統合のテンプレートのマッピング。](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![データ統合のテンプレート マッピング、販売注文 (Sales から Supply Chain Management) - 直接: OrderLine。](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>関連トピック
 

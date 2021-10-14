@@ -1,7 +1,7 @@
 ---
 title: マスター プラン - サイトの補充、倉庫は必須ではない
 description: このトピックでは、サイト分析コードを品目補充用に持つ品目の計画方法について説明します。
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 2474
 ms.assetid: 316da918-67ae-43c5-baea-00ae559e29b0
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3650eaf11ecf75c39bfaa5ce4cce7fe03b861c60df72a898cfd7dfc57f062470
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 484b178f3ac43f727fd6acb5deb40b7907c931ec
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768122"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579619"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>マスター プラン - サイトの補充、倉庫は必須ではない
 

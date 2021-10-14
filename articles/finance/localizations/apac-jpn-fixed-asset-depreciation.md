@@ -1,7 +1,7 @@
 ---
 title: 日本の固定資産減価償却のよく寄せられる質問
 description: この記事は、日本の固定資産の減価償却についてよく寄せられる質問に回答します。
-author: yijialuan
+author: EricWangChen
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.custom: 10294
 ms.search.region: Japan
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e31aabdb3b9dfe35a2a31856d8a0d4c0e902c082b7043a3d4e705f0dbefea59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4edec8e9247a5896a7164f3625f89f558ea709
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738415"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592647"
 ---
 # <a name="fixed-asset-depreciation-for-japan-faq"></a>日本の固定資産減価償却のよく寄せられる質問
 

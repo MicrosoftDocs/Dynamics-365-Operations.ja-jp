@@ -1,22 +1,22 @@
 ---
 title: RFQ の封緘入札
 description: このトピックでは、購入担当者が開封するまで仕入先の入札応答を秘密にしておくために、封緘された入札を設定する方法について説明します。
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500637"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578083"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>RFQ の封緘入札
 
@@ -53,7 +53,11 @@ ms.locfileid: "7500637"
 Supply Chain Management では、暗号化キーを使用して、すべての封緘された入札を保護し、適切な時まで秘密にしておきます。 Key Vault の機能を利用して、必要なキーを生成および管理します。 したがって、システムを有効にするには、Supply Chain Management からキー コンテナーへの接続を設定する必要があります。
 
 > [!IMPORTANT]
-> このキー コンテナーは、組織が所有する Azure サブスクリプション に作成する必要があります (Supply Chain Managementを実行しているサブスクリプションは作成されません)。
+> 封緘入札に使用するキー コンテナーは、次の要件を満たす必要があります。
+>
+> - 開発とテストにサンドボックスを使用する場合は、サンドボックス用に専用のキー コンテナーを 1 つと、実稼働用に別のキー コンテナーを用意する必要があります。
+> - 各キー コンテナーは、組織が所有する Azure サブスクリプション で作成する必要があります (Supply Chain Management を実行しているサブスクリプションではありません)。
+> - 各キー コンテナーは、封緘入札専用に使用される必要があります。 その他の用途には、封緘入札キー コンテナーを使用することはできません。
 
 すべての入札は、独自の秘密キーを取得します。 このキーは、ユーザーが入札を表示、更新、または封緘を開くたびに使用されます。
 
