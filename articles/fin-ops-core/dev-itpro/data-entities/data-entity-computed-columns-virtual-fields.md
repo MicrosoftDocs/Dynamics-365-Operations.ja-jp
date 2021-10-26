@@ -1,8 +1,8 @@
 ---
 title: データ エンティティの列と仮想フィールドを計算する
 description: この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。
-author: peakerbl
-ms.date: 06/20/2017
+author: jaredha
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 17891
 ms.assetid: 88d230af-7d3d-49b3-bf19-69ecf81ed751
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: jaredha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 789580d5381279543fb561c169b6e880dc829176
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: fcf515372b69db9f9a80f6c045b8af5f55dd6a5b
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404063"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7638457"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 
@@ -52,6 +52,7 @@ ms.locfileid: "7404063"
 - カスタム X++ コードによって制御されます。
 - 読み取り/書き込みは、カスタム X++ コードを通じて発生します。
 - 仮想フィールドは 通常X++ コードを使用して計算される入力値に使用され、計算された列に置き換わることはできません。
+- 仮想フィールドでの検索およびフィルター処理はサポートされていません。
 
 ### <a name="properties-of-unmapped-fields"></a>マップされていないフィールドのプロパティ
 

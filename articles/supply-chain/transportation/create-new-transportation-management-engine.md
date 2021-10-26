@@ -1,7 +1,7 @@
 ---
 title: 新しい輸送管理エンジンの作成
 description: このトピックでは、Dynamics 365 Supply Chain Management で新しい輸送管理エンジンを作成する方法について説明します。
-author: MarkusFogelberg
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 51661
 ms.assetid: 0473acef-755e-4b42-acf5-5e5aa902dc0e
 ms.search.region: Global
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c00c4c60c5a8912119a31dfa3e010cb2f2637668f0ffd7f9ecb9fb9ee1e474ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 745353af4517c88c3fc0ed94fde777e40f0d4f2a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756040"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574943"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 

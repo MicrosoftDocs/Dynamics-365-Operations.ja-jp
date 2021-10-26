@@ -2,7 +2,7 @@
 title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: faix
-ms.date: 08/03/2021
+ms.date: 10/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,23 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4ee2d94673658aca3009094a79646f82e3e17a63798e7f9dfa5044c34184e28b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 619f288826d1a3c625df4842514d281e916da8e4
+ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751473"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "7612342"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンはバージョン 2.7.0 で、2021 年 8 月にリリースされました。
+このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2021 年 10 月にリリースされたバージョン 2.7.1 です。
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|
-| 2.7.0               | このバージョンでは、Microsoft SQL Server 2019 と一部のバグ修正プログラムがある環境への配置が可能です。 |
+| 2.7.1               | このバージョンでは、新しい展開オプションが導入され、展開オプションによるバグが修正されます。 |
+| 2.7.0               | 10.0.21 以降のバージョンへの展開または更新を有効にします。 さらに、このバージョンでは Microsoft SQL Server 2019 と一部のバグ修正プログラムがある環境への配置が有効になります。 |
 | 2.6.0               | このバージョンは、Service Fabric SDK をアップグレードし、更新状態のバグを修正して、アプリケーション プロビジョニングのタイムアウトを増やします。 |
 | 2.5.0               | このバージョンは依存関係を更新し、クリーンアップ バグを修正します。 |
 | 2.4.0               | このバージョンでは、展開の問題が修正され、ローカル エージェントのランタイムがアップグレードされます。 |
@@ -44,14 +45,20 @@ ms.locfileid: "6751473"
 | 1.0.0               | このバージョンでは、展開が失敗した場合のために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になります。 |
 | Null                | この初期バージョンでは、Platform update 8 が導入されています。 |
 
+## <a name="whats-new-in-local-agent-271"></a>ローカル エージェント 2.7.1 の新機能
+
+- ローカル エージェント 2.7.1では、新しい展開オプションが[証明書の証明書失効リストのチェックをスキップするように指定する](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-checking-the-certificate-revocation-list-of-a-certificate-should-be-skipped)に導入されます。
+- このリリースでは、**office365AdfsCompatibility** deploymentOption が正しく設定されなかった場合のバグに対処します。
 
 ## <a name="whats-new-in-local-agent-270"></a>ローカル エージェント 2.7.0 の新機能
 
-- ローカル エージェント 2.7.0 を使用すると、環境に固有の配置オプションを指定する、限定された一連の配置オプションを指定できます。 特に、このリリースでは Microsoft SQL Server 2019 を使用する環境への配置が可能になります。 すべての有効なコンフィギュレーションについては、[ローカル エージェントの配置コンフィギュレーション](../../dev-itpro/deployment/onprem-localagent-options.md)を参照してください。
-- このリリースは、ローカル エージェントが実行する gMSA アカウントが、一部の証明書のプライベート キーへのアクセス許可を失う問題に対処します。
+- Local agent 2.7.0 は、10.0.21 以降のリリースを展開または更新する前提条件となるものです。 
+- このリリースを使用すると、環境に固有の配置オプションに対する、限定された一連の配置オプションを指定できます。 特に、このリリースでは Microsoft SQL Server 2019 を使用する環境への配置が可能になります。 すべての有効なコンフィギュレーションについては、[ローカル エージェントの配置コンフィギュレーション](../../dev-itpro/deployment/onprem-localagent-options.md)を参照してください。
+- さらに、このリリースは、ローカル エージェントが実行する gMSA アカウントが、一部の証明書のプライベート キーへのアクセス許可を失う問題に対処します。
 - イベント ビューアーが開いている場合でも、LBDTelemetry-Agent アプリケーションを正常に開始できます。 
 
 > [!IMPORTANT]
+> このリリースは、10.0.21 以降のリリースを配置または更新するために **使用する必要があります**。
 > このリリースでは、LCS から新しいローカル エージェント構成ファイルをダウンロードする必要があります。 問題が発生した場合は、[オンプレミス配置のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md)を参照してください。 
 
 ## <a name="whats-new-in-local-agent-260"></a>ローカル エージェント 2.6.0 の新機能

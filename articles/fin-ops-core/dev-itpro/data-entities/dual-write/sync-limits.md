@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bed5162c684530ab897c5a51fc93d5713a47cea2
-ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
+ms.openlocfilehash: 09e754cc6473b8d1feee27f44476317c2b090783
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485560"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581799"
 ---
 # <a name="dual-write-limits-for-live-synchronization"></a>ライブ同期に関する二重書き込みの制限
 
@@ -26,6 +26,9 @@ ms.locfileid: "7485560"
 より一貫した可用性とパフォーマンスのために、二重書き込みを使用して Finance and Operations アプリと Microsoft Dataverse にデータを書き込む際に制限が適用されます。 これらの制限は、二重書き込みのトランザクションをコントロールし、プラットフォーム レベルで適用されます。 シームレスな書き込みを確認し、エラーを最小限にするように設計されています。
 
 Finance and Operations アプリおよび Dataverse には、多数のレコードと複雑な複数テーブルのトランザクションにまたがる多くのプロセスが含まれています。 各環境には、トランザクションの数、トランザクションごとのレコード数、およびトランザクション時間 (つまり、トランザクションの処理に必要な時間) に制限があります。 これらの制限および二重書き込みの Live 同期機能に対する影響を理解することは重要です。
+
+## <a name="legal-entities"></a>法人
+ライブ同期では、トランザクションごとに最大 250 の法人をサポートします。 これは、大きなデータ量および関連する操作によって 40 の法人のみがサポートされる初期同期とは異なります。
 
 ## <a name="transaction-patterns"></a>トランザクションのパターン
 

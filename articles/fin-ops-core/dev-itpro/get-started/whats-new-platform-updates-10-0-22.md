@@ -2,19 +2,19 @@
 title: Finance and Operations アプリ (2021 年 11 月) のバージョン 10.0.22 のプラットフォーム更新プログラム
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.22 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-08-31
-ms.openlocfilehash: 256340ba1ae2ef73936362b7529bb3483b36d8c3
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 6f2de86259c808eabbc80427ffa12e4aafd1b7b1
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472520"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581050"
 ---
 # <a name="platform-updates-for-version-10022-of-finance-and-operations-apps-november-2021"></a>Finance and Operations アプリ (2021 年 11 月) のバージョン 10.0.22 のプラットフォーム更新プログラム
 
@@ -31,10 +31,10 @@ ms.locfileid: "7472520"
 
 このリリースでは次の機能が含まれています。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。 各機能の公式リリース日については、[リリース計画](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features)を参照してください。
 
-| 機能領域    | フィーチャー | 詳細 | 機能を有効にする方法 |
+| 機能領域    | フィーチャー | 詳細 |  に  によって有効化|
 |-----------------|---------|------------------|---------------------------|
-| クライアント機能 | <p>**オープンソース ソフトウェア更新: Moment のアップグレードと jqWidgets の削除**</p><p>この機能により、Moment.js がバージョン (2.22.2 から) 2.29.1 にアップグレードされ、Finance and Operations アプリから jQWidgets ライブラリが削除されます。 現在 jQWidgets を使用している唯一のコア コントロールは、HTML エディター コントロールとカラー ピッカーです。 これらの両方のコントロールを jqWidgets 以外のコントロールにアップグレードするには、新しい HTML エディター コントロールと新しいカラー ピッカー コントロール機能を使用します。</p><p>**重要:** この機能を有効にする前に、任意の拡張可能なコントロールまたはカスタム JavaScript コード、特に、jQWidgets または Moment アプリケーション プログラミング インターフェイス (API) を使用するコントロールとコードをテストする必要があります。 この機能は、2022 年 4 月リリースで必須となる予定です。 ただし、影響を受ける API の移行期間のため、現在はオプションです。</p> | 適用できません | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| クライアント機能 | <p>**新しいカラー ピッカー コントロール**</p><p>この機能は、既存のカラー ピッカー コントロールを [Fluent ColorPicker コントロール](https://developer.microsoft.com/fluentui#/controls/web/colorpicker)に置き換えて、他の Microsoft 製品とのエクスペリエンスを調整します。</p> | 適用できません | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| クライアント機能 | [オープンソース ソフトウェア更新 – Moment のアップグレードと jQWidgets の削除](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/open-source-software-update-upgrade-moment-remove-jqwidgets)| 該当なし | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| クライアント機能 | [新しいカラー ピッカー コントロール](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-color-picker-control) | 該当なし | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | クライアント機能 | <p>**階層ビューアー コントロールへの視覚的な更新**</p><p>特に 400% ズーム シナリオでは、アクセシビリティを向上させるために HierarchyViewer コントロールに変更が加えられました。 これらの変更には、すべてのズーム レベルでのコントロールの可読性を高めるために、コントロールを再スタイルして Fluent デザイン言語で合わせることが含まれます。 | [HierarchyViewer コントロール](../user-interface/hierarchy-viewer-control.md) | 既定 |
 
 ## <a name="additional-resources"></a>追加リソース

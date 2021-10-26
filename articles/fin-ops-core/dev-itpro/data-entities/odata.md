@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 910db35996b7bb1e6972abb6143bab85aea420fe
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: b32a7edf0610c7a2cd988423dd9fa407f8354834
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404129"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595165"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -40,8 +40,8 @@ OData の詳細については、次の Web ページを参照してください
 
 | トピック                                                               | Webpage                                                 |
 |---------------------------------------------------------------------|---------------------------------------------------------|
-| OData 標準                                                     | <https://www.odata.org/documentation/>                   |
-| OData: Web、クラウド、モバイル デバイスなどのデータ アクセス | <https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/>    |
+| OData 標準                                                     | [OData バージョン 4.01 のドキュメント](https://www.odata.org/documentation/) |
+| OData: Web、クラウド、モバイル デバイスなどのデータ アクセス | [ASP.NET Web API の OData](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/) |
 
 パブリック OData サービス エンドポイントにより、幅広いクライアントにわたって、一貫した方法でデータにアクセスできるようになります。 公開されているすべてのエンティティの一覧を表示するには、OData サービスのルート URLを開きます。 システムのサービス ルートの URL の形式は **\[お客様の組織のルート URL\]/data** です。
 

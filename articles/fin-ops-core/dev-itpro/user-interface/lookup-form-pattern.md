@@ -4,22 +4,18 @@ description: このトピックでは、ルックアップ フォームのパタ
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 12911
-ms.assetid: 0bc7bde2-6150-4a80-8738-9a5201b51df2
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c563e1e53b1401222c316050defb3d7facf675d4cd2386c9954108ffa8fb9f17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52ebf7b16f4de180f48ac78fe765c7c429f9601f
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745100"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594847"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 
@@ -128,13 +124,13 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 
 フォーム: **CaseCategoryLookup** (**共通** &gt; **共通** &gt; **ケース** &gt; **すべてのケース** の順にクリックして、詳細に移動するケースを選択します。) 
 
-![タブ付きルックアップ フォームの例。](./media/lookupform5.png)
+![CaseCategoryLookup のタブ付きルックアップ フォームの例。](./media/lookupform5.png)
 
 ### <a name="lookup-with-preview"></a>プレビューによるルックアップ
 
 フォーム: **HcmWorkerLookup** (**人事管理** &gt; **共通** &gt; **組織** &gt; **職位** &gt; **職位** の順にクリックし、詳細に移動するレコードをクリックします。 **作業者の割り当て** FastTab を展開し、**新規** をクリックして、次に **ワーカー** フィールドにドロップダウンの矢印をクリックします。 
 
-[![プレビューによるルックアップ フォームの例。](./media/lookupform6.png)](./media/lookupform6.png)
+[![HcmWorkerLookup のプレビューによるルックアップ フォームの例。](./media/lookupform6.png)](./media/lookupform6.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: fecb4bc2d714cf122eb9c29a4bea394e55f8c338a21bbacb3a5bfde7833cc4b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 37ad4788226c1fa9d9c62c72780e30501699448b
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731517"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595502"
 ---
 # <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 のデータ アップグレード プロセス
 
@@ -44,7 +44,7 @@ ms.locfileid: "6731517"
 1. 各 AX 2012 リリースについては、Finance + Operations アプリケーションの最新リリースにアップグレードする前に、利用可能な最新の累積更新プログラムに更新します。
 1. アップグレード前のチェックリストをインストールします。 詳細については、[インストール](prepare-data-upgrade.md#installation) を参照してください。
 1. データ アップグレードの準備手順を実行します。 「ユーザー マッピングの設定」の手順はスキップできます。 この手順は、クラウドでホストされているアップグレードのみ関連しています。
-1. データベースのバックアップを作成します (MicrosoftDynamicsAX)。 詳細については、「[フル データベース バックアップの作成](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016)」を参照してください。
+1. データベースのバックアップを作成します (MicrosoftDynamicsAX)。 詳細については、「[フル データベース バックアップの作成](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)」を参照してください。
 1. LCS で、ページの右側にあるタイルを選択して、共有アセット ライブラリに移動します。 **資産タイプの選択** の下の **ダウンロード可能な VHD** を選択し、オンプレミス環境でアップグレードするバージョンに最も適合する VHD パッケージ全体をダウンロードします。 画像は大量のディスク容量を必要とします。 したがって、十分な空き領域のあるドライブでパッケージをダウンロードし、展開する必要があります。 
 1. ダウンロードしたファイルは、自己展開する zip ファイルです。 十分な空き容量が確保されている場所に VHD を展開してください。
 1. Hyper-V を使用して、仮想マシン (VM) を開始し、VHD を接続します。 (VM はジェネレーション 1 である必要があります。)
@@ -58,7 +58,7 @@ ms.locfileid: "6731517"
 
 ### <a name="upgrade-from-inside-the-vhd"></a>VHD 内からアップグレードする
 
-1. Onebox VM に作成したバックアップを復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016)」を参照してください。
+1. Onebox VM に作成したバックアップを復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 1. オプション: 復元したデータベースの名前が **axdb** でない場合、管理者として Windows PowerShell を開き、次のスクリプトを実行します。
 
     ```powershell
@@ -86,7 +86,7 @@ ms.locfileid: "6731517"
 
         1. LCS では、共有アセット ライブラリに移動します。
         1. **資産タイプの選択** の下で、**モデル** を選択し、**Dynamics 365 Finance + Operations オンプレミスのバージョン 10.0.x デモ データ** をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
-        1. このファイルから新しいデータベースを作成するのには、SQL Server に対して復元バックアップ オプションを使用します。 (通常、このデータベースには **AXDB** という名前が付けられます。) 詳細については、[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017) を参照してください。
+        1. このファイルから新しいデータベースを作成するのには、SQL Server に対して復元バックアップ オプションを使用します。 (通常、このデータベースには **AXDB** という名前が付けられます。) 詳細については、[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms) を参照してください。
         1. デモ データベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
         1. LCS で新しい環境を設定し、バージョン 10.0.x で配置します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 環境を配置する場合、事前に作成したデータベースの名前 (通常は **AXDB**) を指定する必要があります。
         1. 新たに作成した 10.0.x 環境と ISV および VAR モジュールにカスタマイズを適用します。 それ以外の場合、この環境が最初にデータベースと同期される時、カスタマイズ関連または拡張機能関連のデータが削除されます。
@@ -105,8 +105,8 @@ ms.locfileid: "6731517"
 
 ### <a name="upgrade-where-the-vhd-points-to-your-database"></a>VHD がデータベースをポイントする場所でアップグレードする
 
-1. オンプレミス環境 (通常は **AXDB**) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成 (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016)」を参照してください。
-1. 先ほど作成したバックアップをデータベース サーバーを復元し、別の名前 (**AXDBtoupgrade** など) を付けます。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016)」を参照してください。
+1. オンプレミス環境 (通常は **AXDB**) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成 (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)」を参照してください。
+1. 先ほど作成したバックアップをデータベース サーバーを復元し、別の名前 (**AXDBtoupgrade** など) を付けます。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 1. 管理者として Windows PowerShell を開き、次のスクリプトを実行します。
 
     ```powershell
@@ -115,7 +115,7 @@ ms.locfileid: "6731517"
 
     > [!NOTE]
     > - **\<DB-name\>**、**\<SqlServerName\>**、**\<User\>**、および **\<Password\>** を必要な値に置換します。
-    > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2016)」を参照してください。
+    > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](/sql/relational-databases/security/authentication-access/create-a-database-user)」を参照してください。
     > - SQL Server 証明書に署名した証明機関の証明書を、OneBox VHD の信頼された証明機関ストアに追加する必要があります。 詳細については、「[信頼されたルート証明書をインストールする](/skype-sdk/sdn/articles/installing-the-trusted-root-certificate)」を参照します。
     > - 使用するデータベースのユーザーに、**sysadmin** サーバー ロールが割り当てられているか、またはアップグレードするデータベースに少なくとも **すべての特権** があるかを確認します。 また、ユーザーに tempDB にアクセスするためのアクセス許可があることを確認します。 これらの条件を満たしていない場合、アップグレード プロセスのステップ 6 は失敗します。
     > - 証明機関の証明書を OneBox VHD にインストールする場合、そこに表示されるデータベースへ接続するには完全修飾ドメイン名 (FQDN) または IP アドレスを使用してください。 サーバーを指していないため、ドメイン名を使用してデータベースにアクセスできない場合は、ホスト ファイルを編集して FQDN が解決する必要がある FQDN と IP アドレスを追加します。
@@ -137,7 +137,7 @@ ms.locfileid: "6731517"
 
         1. LCS では、共有アセット ライブラリに移動します。
         1. **資産タイプの選択** の下で、**モデル** を選択し、**Dynamics 365 Finance + Operations オンプレミスのバージョン 10.0.x デモ データ** をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
-        1. SQL Server に対して復元バックアップ オプションを使用して、このファイルから新しいデータベース (通常は **AXDB**) を作成します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016)」を参照してください。
+        1. SQL Server に対して復元バックアップ オプションを使用して、このファイルから新しいデータベース (通常は **AXDB**) を作成します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
         1. デモ データベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
         1. LCS にて、新たな環境を設定し、バージョン 10.0.x (再展開) を展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 環境を配置する場合、事前にコンフィギュレーションしたデータベースの名前 (通常は **AXDB**) を指定する必要があります。
         1. 新たに作成した 10.0.x 環境と ISV および VAR モジュールにカスタマイズを適用します。 それ以外の場合、この環境が最初にデータベースと同期される時、カスタマイズ関連または拡張機能関連のデータが削除されます。

@@ -4,22 +4,18 @@ description: この記事では、タスク レコーダー メニュー内の�
 author: RobinARH
 ms.date: 12/01/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 31141
-ms.assetid: 8536e688-33f1-4f0c-a402-b1de2d253fbc
 ms.search.region: global
-ms.author: sericks
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e558684465b7d84360c2bc61ca15c721036d4c24e60090c91fc7853dfac4431
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e55070660c76c1bdc6e6a063a1ff210d6669dbde
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719315"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595133"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 
@@ -57,7 +53,7 @@ ms.locfileid: "6719315"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td> <a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
+<td> <a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Update recording steps." class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Recording is ready." class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">開く/保存/この PC に</h3>
 これらのオプションを使用すると、コンピューターに保存されている記録を開くか、コンピューターに記録を保存できます。
 <h3 id="opensave-fromto-lcs">Lifecycle Services を開き保存する</h3>
@@ -122,7 +118,7 @@ ms.locfileid: "6719315"
 これにより、記録されたステップの数が記録されます。 これには、再生コントロールを使用して実行されるステップと、クライアントで実行するアクションによって記録されたステップが含まれます。
 
 ### <a name="pending-step"></a>保留中のステップ
-<img src="media/pending-step.png" alt="Pending-step"/>
+<img src="media/pending-step.png" alt="Click Usage data."/>
 
 この記号は、保留中でまだ記録されていないステップを表します。 保留中の手順は、再生コントロールを使用して再生できます。 保留中のステップが正常に再生されたとき、そのステップが記録され、シンボルが適切に更新されます。 <em>保留中のステップは、記録を保存するときに記録に含まれません。</em> 記録できるように、保留中のステップを最初に再生する必要があります。 手順が再生され、正常に記録されている場合、手順は記録の保存時に含まれます。
 
@@ -132,7 +128,7 @@ ms.locfileid: "6719315"
 この記号は、次の保留中のステップを表します。 再生を開始する場合、これが再生される最初の手順になります。
 
 ### <a name="queued-pending-step"></a>キューに入っている保留中のステップ
-<img src="media/queued-pending-step.png" alt="Queued pending step"/>
+<img src="media/queued-pending-step.png" alt="Close the page."/>
 
 この記号は再生待ちの保留中のステップを表します。 再生が一時停止されるとき、またはキューに入っている保留中のステップが再生されるとき、この記号は更新されます。
 

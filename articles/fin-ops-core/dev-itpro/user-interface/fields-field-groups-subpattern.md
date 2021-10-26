@@ -4,22 +4,18 @@ description: このトピックでは、フィールドおよびフィールド 
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 12384
-ms.assetid: f3bf8d00-8e6d-4af7-ab7e-3ff47fce9e21
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46f733be3a25208c533f60043aff2cc24196ab83b21f400b0547704c1525b4ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eed4d9b320720156598b3da5a0e1587e9e5b4c4a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737817"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594729"
 ---
 # <a name="fields-and-field-groups-subpattern"></a>フィールドおよびフィールド グループのサブパターン
 
@@ -82,7 +78,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   すべてのフィールドがラベルを持つグループにあるか、またはグループ ラベルを表示しないかです。
 
 ## <a name="examples"></a>例
-フォーム: **InventLocation (LocationNames)** [![フォームの例。](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
+フォーム: **InventLocation (LocationNames)** [![InventLocation フォームの例。](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される

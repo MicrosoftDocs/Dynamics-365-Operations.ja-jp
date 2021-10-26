@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 2e8d9c4be138d198e66c472f3ef4a9e63a27178aa553d56bf58ad4411434b9b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cced99baf9a53b9e771702cd7a3251bb31a4aa43
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746576"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595248"
 ---
 # <a name="upgrade-from-ax-2012---sql-transactional-replication"></a>AX 2012 からのアップグレード - SQL トランザクション レプリケーション 
 
@@ -46,7 +46,7 @@ ms.locfileid: "6746576"
     SELECT @installed; 
      ```
      
-    レプリケーション コンポーネントがインストールされていない場合は、[SQL Server レプリケーションのインストール](/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15) の手順に従います。 
+    レプリケーション コンポーネントがインストールされていない場合は、[SQL Server レプリケーションのインストール](/sql/database-engine/install-windows/install-sql-server-replication) の手順に従います。 
 
 -   SQL Agent をソース データベース サーバーで実行する必要があります。
 
@@ -194,5 +194,6 @@ SQL Server Management Studio を使用してレプリケーション ステー�
 | サブスクリプションは無効とマークされ、再初期化する必要があります。 NoSync サブスクリプションは削除して再作成する必要があります。 (Source: MSSQLServer, Error number: 21074) | 1) 次のクエリを使用してソース データベースのステータスを確認し、ステータスを特定のパブリケーションのために &quot;2&quot; に更新する</br><em><br>ステータスを確認して、この出力クエリから srvname を取得できる</em></br>**select** * **from** syssubscriptions **WHERE** status != 2</br><em><br>ステータスが !=2 の場合のみ更新</em></br>**Update** syssubscriptions **SET** status = 2 **where** srvname = 'your target server name'</br><br>2) 次のクエリを使用してディストリビューター データベースのステータスを確認し、ステータスを特定のパブリケーションのために &quot;2&quot; に更新する</br><em><br>publication_id を取得するために、次のクエリを使用し、自分のパブリケーション名と一致させる</em></br>**SELECT** * **FROM** MSpublications</br><em><br>次のクエリを使用してステータスを確認する</em></br>**SELECT** * **FROM** MSsubscriptions **WHERE** status !=2 publication_id = &lt;@publicationId&gt;</br><em><br>特定の publication_id に対するステータスが !-2 の時に更新</em></br>**Update** MSsubscriptions **SET** status = 2 **where** publication_id = &lt;@publicationId&gt; |
 | エラー メッセージ:</br><em><br>このプロセスでは、「replicationsrv\MSSQLSERVER2016」 に対して 「sp_replcmds」 が実行できませんでした。 (Source: MSSQL_REPL, Error number: MSSQL_REPL20011)</em></br><em>ヘルプ: http://help/MSSQL_REPL20011</em></br><em><br>プリンシパル &quot; dbo &quot; は存在しておらず、このタイプのプリンシパルはアクセス許可を借用できないかまたはアクセス許可がないために、データベース プリンシパルとして実行することができません。 (Source: MSSQLServer, Error number: 15517)</em></br><em>ヘルプの取得: http://help/15517</em></br><em><br>このプロセスでは、「replicationsrv\MSSQLSERVER2016」 に対して 「sp_replcmds」 が実行できませんでした。 (Source: MSSQL_REPL, Error number: MSSQL_REPL22037)</em></br><em>ヘルプの取得: http://help/MSSQL_REPL22037</em> | ソース データベースでこれを実行し、パブリケーションの作成に使用した資格情報でサインインする</br>**EXEC** sp_changedbowner 'sa' |
 | パブリケーションを削除するには | このストアド プロシージャをソース データベースで実行する;</br><em><br>サブスクリプションをクリーンアップする:</em></br>**exec** sp_subscription_cleanup @publisher = @publisherServer, @publisher_db = @publisherDb, @publication = @publicationName</br><em><br>サブスクリプションを削除する:</em></br>**exec** sp_dropsubscription @publication = @publicationName, @subscriber = N'all', @article = N'all'</br><em><br>パブリケーションを削除する:</em></br>**exec** sp_droppublication @publication = @publicationName |
-| パブリケーションから記事を削除するには、[sp_dropsubscription (Transact-SQL)](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-dropsubscription-transact-sql?view=sql-server-ver15) を参照する | このストアド プロシージャをソース データベースで実行する:<br><br>**EXEC** sp_dropsubscription</br>@publication = @publication、</br>@article = N'All',</br>@subscriber = @subscriber;</br><em><br>例: </em></br>**EXEC** sp_dropsubscription @publication = N'OtherObjects_sp', @article = N'MaintainShipCarrierRole', @subscriber = N'SPARTAN-SRV-NAM-D365OPSDEV-D5E38124F9F8.DATABASE.WINDOWS.NET'; |
+| パブリケーションから記事を削除するには、[sp_dropsubscription (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-dropsubscription-transact-sql) を参照する | このストアド プロシージャをソース データベースで実行する:<br><br>**EXEC** sp_dropsubscription</br>@publication = @publication、</br>@article = N'All',</br>@subscriber = @subscriber;</br><em><br>例: </em></br>**EXEC** sp_dropsubscription @publication = N'OtherObjects_sp', @article = N'MaintainShipCarrierRole', @subscriber = N'SPARTAN-SRV-NAM-D365OPSDEV-D5E38124F9F8.DATABASE.WINDOWS.NET'; |
+
 

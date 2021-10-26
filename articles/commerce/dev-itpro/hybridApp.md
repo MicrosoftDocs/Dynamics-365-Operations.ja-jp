@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: b6278cfbc4dd5d1cd698486565950a8b28431546
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9e9cee3b86c1f2434976da5f147ea5ed96283800
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488069"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594791"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -100,7 +100,7 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 Android および iOS アプリに署名および 配布するには、次のオプションを参照してください。
 
 **Android**
-- [Android アプリケーション パッケージに署名](https://docs.microsoft.com/xamarin/android/deploy-test/signing/?tabs=windows)
+- [Android アプリケーション パッケージに署名](/xamarin/android/deploy-test/signing/?tabs=windows)
 - [Android アプリの配布](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
 
 **iOS**

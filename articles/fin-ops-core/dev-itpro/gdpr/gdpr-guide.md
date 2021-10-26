@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01dd778bc6cccfed723370f8b086fb67a80ce8c797356229683be73c4cd1a04c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6dc285eeb2bbcc7b57411327442398e381b9bf58
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777366"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594789"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -329,11 +329,11 @@ Finance and Operations には共通の [グローバル アドレス帳](../../f
 
 Finance and Operations アプリを使用する場合は、複数のデータ ストアに存在する大量のデータを生成または収集する必要があるかもしれません。 データの格納場所を理解するのに役立つように、データ ストア内のデータごとにデータ マーカーを導入しました。 このマーカーは「資産分類」と呼ばれ、個人データの識別や追跡に使用できます。 収集するデータは「顧客コンテンツ」として説明されています。 一部の顧客コンテンツには個人データが含まれていることがあり、一部の顧客コンテンツはビジネス データを含む場合があります。 顧客のすべてのコンテンツを個人データとして処理することを選択、または「個人データ」であるとみなす任意のデータを識別して追跡できるように分類を自分で変更することができます。 Microsoft は既定の分類のセットで指定されてはいますが、選択した分類や識別子を自由に使用できます。
 
+<!--
 <Link to documentation on how to modify asset classifications>
-
 <Asset Classification table>
-
 <Link to form that prints the full inventory>
+-->
 
 ![プロパティの AssetClassification フィールドを示すソリューション エクスプローラー。](../media/gdpr-asset-classification-detail-invent-section.jpg)
 
@@ -345,7 +345,7 @@ Microsoft は、個人データが収集される Microsoft ソフトウェア�
 
 ### <a name="what-is-this-feature"></a>これはどういう機能ですか ?
 
-サービスのテナント管理者としては、Azure AD 年齢ゲーティングまたは MSA 年齢ゲーティングを設定する必要があります。 <link to azure doc>
+サービスのテナント管理者としては、Azure AD 年齢ゲーティングまたは MSA 年齢ゲーティングを設定する必要があります。
 
 Azure 年齢ゲーティングを使用して設定されていないユーザーは、ユーザーがマイナーでない場合でも、サービスの使用を制限されます。 年齢ゲーティングをコンフィギュレーションする必要があります。
 

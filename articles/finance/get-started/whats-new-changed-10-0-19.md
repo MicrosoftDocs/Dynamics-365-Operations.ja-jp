@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f60bb284038566e5052b6de610868438fe573d956848d34e69f267f3df3ba026
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca2b7e926cef0de759f1b0c326ffc538e3f5dcb0
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746308"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595250"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10019-june-2021"></a>Dynamics 365 Finance 10.0.19 (2021 年 6 月) の新機能または変更された機能
 
@@ -35,22 +35,22 @@ ms.locfileid: "6746308"
 
 このリリースでは次の機能が含まれています。 一覧表示された機能の一部はプレビューのままですが、他の機能はすでに一般提供されている可能性があります。 各機能の公式リリース日については、[リリース計画](/dynamics365/release-plans/) を参照してください。
 
-- [仕入先コラボレーションの銀行の変更](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes)
+- [仕入先コラボレーションの銀行の変更](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes)
 
 ## <a name="globalization-changes"></a>グローバリゼーションの変更
 
-- [税務サービス – 複数の VAT ID をサポート (プレビュー)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-multiple-vat-id-preview)
-- [税務サービス – 移動オーダーのサポート税 (プレビュー)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-tax-transfer-order-preview)
-- [税サービス (プレビュー)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview)
-- [電子請求– コンフィギュレーション可能なオーストリアの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-austrian-electronic-invoice)
-- [電子請求– コンフィギュレーション可能なベルギーの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-belgian-electronic-invoice)
-- [電子請求– コンフィギュレーション可能なデンマークの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-danish-electronic-invoice)
-- [電子請求 – コンフィギュレーション可能なオランダの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-dutch-electronic-invoice)
-- [電子請求– コンフィギュレーション可能なエストニアの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-estonian-electronic-invoice)
-- [電子請求 – コンフィギュレーション可能なフランスの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-french-electronic-invoice)
-- [電子請求– コンフィギュレーション可能なドイツの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-german-electronic-invoice)
-- [電子請求– コンフィギュレーション可能なノルウェーの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-norwegian-electronic-invoice)
-- [電子請求– コンフィギュレーション可能なスペインの電子請求書](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-spanish-electronic-invoice)
+- [税務サービス – 複数の VAT ID をサポート (プレビュー)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-multiple-vat-id-preview)
+- [税務サービス – 移動オーダーのサポート税 (プレビュー)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-tax-transfer-order-preview)
+- [税サービス (プレビュー)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview)
+- [電子請求– コンフィギュレーション可能なオーストリアの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-austrian-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なベルギーの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-belgian-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なデンマークの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-danish-electronic-invoice)
+- [電子請求 – コンフィギュレーション可能なオランダの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-dutch-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なエストニアの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-estonian-electronic-invoice)
+- [電子請求 – コンフィギュレーション可能なフランスの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-french-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なドイツの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-german-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なノルウェーの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-norwegian-electronic-invoice)
+- [電子請求– コンフィギュレーション可能なスペインの電子請求書](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-spanish-electronic-invoice)
 
 ## <a name="additional-resources"></a>追加リソース
 

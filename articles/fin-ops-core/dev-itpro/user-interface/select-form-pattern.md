@@ -4,22 +4,18 @@ description: このトピックでは、移行するフォームに最適なフ�
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 28681
-ms.assetid: 09a51876-8c9d-41ed-ab81-b780894a4281
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dabc9db8cac7f73f91da08dcc8a6ba060ee365176cb56755f5227726d2d41ba3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80ae32b851fc47080c024af17d424ecddde29e42
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733095"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594732"
 ---
 # <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 
@@ -120,17 +116,17 @@ ms.locfileid: "6733095"
 
 フォーム: CustTable 
 
-![詳細マスター フォーム。](./media/image001.jpg)
+![CustTable の詳細ビュー。](./media/image001.jpg)
 
-![詳細マスター フォーム。](./media/image002.jpg)
+![CustTable のグリッド ビュー。](./media/image002.jpg)
 
 [詳細マスター / 標準タブ](details-master-form-pattern.md) フォームに多数のクイック タブ (>15) があり、カテゴリにグループ化できる場合は、この詳細マスター バリアントを使用します。
 
 フォーム: HcmWorker 
 
-[![標準タブ フォーム付きの詳細マスター。](./media/image003.jpg)](./media/image003.jpg)
+[![HcmWorker の詳細ビュー。](./media/image003.jpg)](./media/image003.jpg)
 
-[![標準タブ フォーム付きの詳細マスター。](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)
+[![HcmWorker のテーブル ビュー。](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)
 
 
 
@@ -140,9 +136,9 @@ ms.locfileid: "6733095"
 
 フォーム: SalesTable 
 
-[![詳細トランザクション フォーム。](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)
+[![詳細トランザクションの詳細ビュー。](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)
 
-[![詳細トランザクション フォーム。](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)
+[![詳細トランザクションのグリッド ビュー。](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)
 
 
 

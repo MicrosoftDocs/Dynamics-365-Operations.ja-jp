@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d04732b2b6c2422278005758b8d3b64f92ff35b2
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 4223760cb5b3f7c7e2a7cecb99f55f19d35a367a
+ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416391"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "7612345"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 
@@ -79,11 +79,13 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 
 このタイプの同期は、Platform update 37 (PU37) 以降でサポートされます。 したがって、Finance and Operations アプリを PU37 またはそれ以降のバージョンに更新する必要があります。
 
-### <a name="company-and-currency-exchange-tables"></a>会社と通貨為替テーブル
+### <a name="security-role-for-write-access"></a>書き込みアクセス用のセキュリティ ロール
 
-会社と通貨為替テーブルは本質的にグローバルであり、すべての二重書き込みユーザーにはこれら 2 つのテーブルへの読み取りアクセスが必要です。 すべての二重書き込みユーザーを、**二重書き込みアプリ ユーザー** セキュリティ ロールに追加する必要があります。
+二重書き込みを使用する Customer Engagement 組織のすべてのユーザーは、**二重書き込みランタイム ユーザー** ロールに追加する必要があります。 このロールがない場合、ユーザーは、Customer Engagement 組織のテーブルに行を作成することはできません。
 
-管理者以外のユーザーが二重書き込みが有効なテーブルに行を作成できるようにするには、ユーザーに **二重書き込みランタイム ユーザー** セキュリティ ロールを割り当てる必要があります。
+### <a name="company-and-currency-exchange-tables-required-security-role"></a>会社および通貨為替テーブルに必要なセキュリティ ロール
+
+会社と通貨為替テーブルは本質的にグローバルであり、すべての二重書き込みユーザーにはこれら 2 つのテーブルへの読み取りアクセスが必要です。 アクセスを提供するため、すべての二重書き込みユーザーを、**二重書き込みアプリ ユーザー** セキュリティ ロールに追加する必要があります。 ユーザーにこのセキュリティ ロールが割り当てられていない場合、会社と通貨の値を含むテーブルを読み取ることができません。
 
 ### <a name="error-handling-capabilities"></a>エラー処理機能
 

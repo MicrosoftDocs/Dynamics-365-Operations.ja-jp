@@ -1,24 +1,24 @@
 ---
 title: 税エンジン インポート コンフィギュレーション
 description: このトピックでは、輸入税エンジンのコンフィギュレーションについて説明します。
-author: yijialuan
+author: kailiang
 ms.date: 10/15/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE
 audience: IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: India
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ec7db4caf10db2e33507d9692480b80f54d7ba36462c6255c51978c0c797e141
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 49681ad5238e2a9f92fff149b4663f6d16673dcd
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758065"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605144"
 ---
 # <a name="tax-engine-import-configuration"></a>税エンジン インポート コンフィギュレーション
 
@@ -30,7 +30,7 @@ ms.locfileid: "6758065"
 1. **組織管理** > **ワークスペース** > **電子申告** の順に移動します。
 2. **コンフィギュレーション プロバイダー** セクションで、**Microsoft** プロバイダー タイルの **リポジトリ** をクリックします。
 
-![コンフィギュレーションを読み込みます。](media/gte-extension-repositories.png)
+![リポジトリ リンクが強調表示されたコンフィギュレーション プロバイダー タイル。](media/gte-extension-repositories.png)
 
 3. **追加** をクリックします。 
 4. **LCS** オプションを選択します。 
@@ -45,7 +45,7 @@ ms.locfileid: "6758065"
 5. ツリーで、最新の税務書類を選択します (たとえば、**税 (インド GST)** を選択)。
 6. **バージョン** セクションで、**インポート** をクリックします。
 
-![コンフィギュレーションを読み込みます。](media/gte-extension-import-configurations.png)
+![レポジトリ ページの構成](media/gte-extension-import-configurations.png)
 
 7. **はい** をクリックして、インポートを確認します。
 

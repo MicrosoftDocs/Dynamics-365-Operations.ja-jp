@@ -1,7 +1,7 @@
 ---
 title: 有効なバッチ期間における夏時間のサポート
 description: このトピックでは、有効なバッチ期間における夏時間のサポートに関する情報を提供します。
-author: karimelazzouni
+author: Peakerbl
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: kfend
 ms.custom: NotInToc
 ms.assetid: a6685c6f-74bf-4f09-a19d-76130d7ce2da
 ms.search.region: Global
-ms.author: kaelazzo
+ms.author: peakerbl
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 4b82b1ecb8b4e16b27911e0e2aee17fdf7ab96bfa9ad0d14044473b817580f28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e94c91285d931d410037ab2f2aa0b1fa407c6996
+ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729692"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7644515"
 ---
 # <a name="daylight-saving-time-support-for-active-batch-periods"></a>有効なバッチ期間における夏時間のサポート
 

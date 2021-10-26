@@ -4,22 +4,18 @@ description: このラボでは、マスター詳細フォームを作成し、�
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 20401
-ms.assetid: 78199ae8-0631-4cf4-b206-b952f09b92a9
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74c7bbee5879c53c1022aa5841b80176f7c3b44cdb07162c31fa35747d3a2347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75f9147deec37292db9c323234bc4e6330015733
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765072"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595103"
 ---
 # <a name="build-the-customer-form"></a>顧客フォームの構築
 
@@ -37,6 +33,7 @@ ms.locfileid: "6765072"
 [![FmtCustomer 開始コンポーネントのスクリーン ショット。](./media/custform1.png)](./media/custform1.png)
 
 ## <a name="key-concepts"></a>重要な概念
+
 -   マスター詳細フォームを作成します。
 -   フォームにフォーム パターンを適用します。
 -   Visual Studio のパターン アドインを使用して、フォーム/モデル パターンのカバレッジに関する情報を取得します。
@@ -45,6 +42,7 @@ ms.locfileid: "6765072"
 -   モデル内で残っているパターンの作業の量を決定します。
 
 ## <a name="setup"></a>セットアップ
+
 ### <a name="import-the-tutorial-project-and-transactional-data"></a>チュートリアル プロジェクトおよびトランザクション データのインポート
 
 Visual Studio を使用してチュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、FMTDataHelper クラスを使用します。 これが作業する最初のチュートリアルである場合は、[アクセス インスタンス](../dev-tools/access-instances.md)を確認し、ローカル VM で作業している場合に、管理者ユーザーを提供するかどうかを確認します。
@@ -123,7 +121,7 @@ Visual Studio を使用して **FmtCustomer** フォームを作成します。 
 1.  **ソリューション エクスプローラー** で、**FmtCustomer** を右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
 2.  **Ctrl+F5** キーを押します。 グリッド ビューは、次の図のように表示する必要があります。 
 
-    [![グリッド ビューの図。](./media/custform4-1024x567.png)](./media/custform4.png)
+    [![顧客とのグリッド ビューの説明。](./media/custform4-1024x567.png)](./media/custform4.png)
 
 3.  アプリケーション バーで、**Microsoft Office を開く** &gt; **Excel にエクスポート &gt; 顧客** をクリックして、グリッド ビューの情報を Microsoft Excel スプレッドシートに送信します。 (ページを終了するかどうかを確認するダイアログが表示されたら、「このページを終了」をクリックします。) 求められたら、**開く** をクリックして Excel でデータを表示します。
 4.  Excel を閉じます。
@@ -131,6 +129,7 @@ Visual Studio を使用して **FmtCustomer** フォームを作成します。 
 6.  **閉じる** またはブラウザーの 戻る ボタンをクリックすると、グリッド ビューに戻ります。
 
 ## <a name="apply-a-pattern-to-the-form"></a>フォームにパターンを適用します
+
 Visual Studio を使用して **顧客** フォームに Master Details のフォーム パターンを適用します。 フォーム パターンを適用すると、フォームに期待される構造が確実に適用されます。 また、パターンの一部であるノードでプロパティの値を自動的に設定することでデザイン体験を簡素化します。
 
 1.  **デザイン** を右クリックして **パターンの適用** をポイントし、**詳細マスター** をクリックします。
@@ -186,9 +185,9 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 
 7.  **SidePanel** をクリックします。 **パターン情報パネル** は、このサブツリーのコントロールがパターンに完全に準拠していることを示しています。
 
-    ![パターン情報パネル。](./media/custform12.png)
+    ![パターン情報パネル、デザイン。](./media/custform12.png)
 
-    ![パターン情報パネル。](./media/custform13.png)
+    ![パターン情報パネル、ナビゲーション リスト。](./media/custform13.png)
 
 8.  **デザイン** &gt; **GridDetailsTab** とクリックします。 サブノードの周りの黄色のハイライトは、フォーム パターンが正常に適用される前に両方のノードの下で解決する必要のある問題があることを示します。
 
@@ -199,7 +198,7 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 9.  パターンは **グリッド パネル** が **詳細パネル** の後に配置されることを期待します。 **TabPageGrid** をクリックし、**Alt + ↓** キーを押してそのタブを **詳細パネル** の下に移動します。
 10. **GridDetailsTab** をクリックします。 **TabPageDetails** タブ ページはパターンに準拠するようになりました。 ただし、**TabPageGrid** タブ ページには更なる注意が必要です。
 
-    [![GridDetailsTab。](./media/custform16.png)](./media/custform16.png)
+    [![デザインの GridDetailsTab.](./media/custform16.png)](./media/custform16.png)
 
     [![TabPageGrid タブ ページには更なる注意が必要です。](./media/custform17.png)](./media/custform17.png)
 

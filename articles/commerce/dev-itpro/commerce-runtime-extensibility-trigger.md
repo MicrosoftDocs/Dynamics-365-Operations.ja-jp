@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8318bfa0e5547bd77a609a46c4e5f7527a15beef9cf89a0f166a6ce5a26ed040
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b8925f802b54bdb62448ec220558d3418d00c2bf
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756569"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595167"
 ---
 # <a name="commerce-runtime-crt-extensibility-and-triggers"></a>Commerce Rumtime (CRT) の拡張機能とトリガー
 
@@ -95,7 +95,10 @@ Commerce Runtime (CRT) トリガーによって CRT のワークフローを拡�
 ### <a name="register-the-extension"></a>拡張機能の登録
 
 拡張ライブラリを **...\RetailServer\webroot\bin\ext フォルダー** にコピーして貼り付け、構成セクションのカスタム拡張ライブラリ情報を含む **commerceRuntime.ext.config** ファイルを更新します。 この例では、**Contoso.Commerce.Runtime.Services** はカスタムの拡張機能名です。
-    <add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
+
+```xml
+<add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
+```
 
 CRT 拡張機能がオフライン モードで動作するためには、構成セクションの下にある拡張ライブラリ情報で、**...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** を更新してください。 次に、拡張ライブラリを **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext** にコピーし貼り付けます。
 

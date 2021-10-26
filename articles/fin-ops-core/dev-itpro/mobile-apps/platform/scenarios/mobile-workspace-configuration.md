@@ -4,22 +4,18 @@ description: このトピックでは、SysAppWorkspace クラスを使用して
 author: robinarh
 ms.date: 10/09/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 255544
-ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 9f8ee349f7bfadf8fdfe16a308d2b9834fd2addb438a39d013c31af24ac5e99b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f6def0026ac461c61abceeff17dc6776dfae7630
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742292"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595163"
 ---
 # <a name="configure-workspaces-by-using-the-sysappworkspace-class"></a>SysAppWorkspace クラスを使用してワークスペースを構成する
 
@@ -105,7 +101,7 @@ AOT リソースとして存在するワークスペースを公開するには�
 
 3. バッキング クラスを拡張し、**SysAppWorkspaceAttribute** 属性を適用し、新しいアプリ ID を指定する新しいクラスを作成します。
 
-    ![メタデータ内のワークスペース。](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png)
+    ![SysAppWorkspaceAttribute を使用したコード エディター。](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png)
 
 新しいワークスペースおよびバッキング クラスでの作業を続行することができるようになりました。 変更を行なった後、AOT ベース ワークスペースとそれらをマージできます。
 

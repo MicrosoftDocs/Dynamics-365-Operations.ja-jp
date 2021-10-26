@@ -4,22 +4,18 @@ description: このトピックでは、さまざまな役割で利用可能で�
 author: mugunthanm
 ms.date: 06/02/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 84383
-ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d99fdc36ac41e21cb124483498a546dfe6ba14483be0ecd6cf3d9011ec88274
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cf9b1c26f3408fb3f17006a809e0b48b6ae4e98
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724540"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559401"
 ---
 # <a name="commerce-scale-unit-customer-and-consumer-apis"></a>Commerce Scale Unit の顧客およびコンシューマー API
 
@@ -84,6 +80,13 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 | GetSalesOrderDetailsBy- TransactionId                    | transactionId string型, searchLocationValue int型                                                                                                      | 販売注文                     | 従業員、顧客        | 取引IDごとの販売注文の詳細を取得します。                                                         |
 | GetSalesOrderDetailsBy- SalesId                          | salesId string型                                                                                                                                     | 販売注文                     | 従業員、顧客        | 販売IDごとの販売注文の詳細を取得します。                                                               |
 | GetSalesOrderDetailsBy- QuotationId                      | quotationId string型                                                                                                                                 | 販売注文                     | 従業員、顧客        | 見積書IDごとの販売注文の詳細を取得します。                                                           |
+| GetEntityByKey                     | 文字列 transactionId                                                                                                                                | 販売注文                     | 従業員        | トランザクション識別子と一致する販売注文を取得します。                                                          |
+| CreateEntity                      | SalesOrder エンティティ                                                                                                                                 | 販売注文                     | 従業員、アプリケーション        | 支払/入金明細行を含む予約された販売注文をアップロードします。                                                          |
+| CheckInForOrderPickup                      | long channelId、文字列 packingSlipId、文字列 channelReferenceId、IEnumerable\<CommerceProperty\> extensionProperties                                                                                                                                | CheckInForOrderPickupConfirmation                     | 匿名、顧客        | 注文集荷のチェックイン操作。                                                           |
+| GetInvoiceDetails                      | InvoiceDetailsSearchCriteria invoiceDetailsSearchCriteria                                                                                                                                | SalesInvoice                     | 従業員、顧客、アプリケーション        | 請求書の検索条件によって請求書の詳細 (明細行、請求、税金) を取得します。                                                          |
+| SearchSalesTransactionsByReceiptId                      | 文字列 receiptId、QueryResultSettings settings                                                                                                                                | PagedResult\<SalesOrder\>                     | 従業員        | レシート識別子から販売トランザクションを検索します。                                                           |
+| SendReceipt                      | SearchReceiptCriteria searchReceiptCriteria、IEnumerable\<ElectronicAddress\> recipientAddresses                                                                                                                               | NullResponse                    | 従業員        | 指定された条件を満たす取引レシートを最大 3 つの指定された電子アドレスに送信します。
+  | GetOrderByChannelReferenceLookupCriteria                      | ChannelReferenceLookupCriteria channelReferenceLookupCriteria                                                                                                                               | 販売注文                    | 従業員、顧客、アプリケーション、匿名       | 特定のチャンネル参照 ID と追加のルックアップ基準に対する販売注文を取得します。   |
 
 ## <a name="cart-controller"></a>カートのコントロール
 
@@ -393,6 +396,22 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 | GetProductRatings                 | IEnumerable\<long\> productIds, QueryResultSettings 設定                                                                                                                                                                                                            | PageResult\<ProductRating\>            | 従業員、顧客、匿名、アプリケーション              | 製品識別子に基づく製品評価を取得します。                                                                        |
 | GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | 従業員、顧客、匿名、アプリケーション               | 検索基準に基づいて、製品の在庫状況を予測します。                                                                                               |
 | GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | 従業員、顧客、匿名、アプリケーション               | 特定の製品倉庫のペアに対して、予想される製品の在庫状況を取得します。                                                                                               |
+
+## <a name="product-lists-controller"></a>製品リストのコントローラー
+
+| API                        | パラメーター                               | 戻り値                             | 対応している商取引上の役割 | 説明                                   |
+|----------------------------|-----------------------------------------|------------------------------------------|--------------------------|-----------------------------------------------|
+| 検索     | ProductListSearchCriteria productListSearchCriteria、QueryResultSettings queryResultSettings               | PagedResult\<ProductList\>                          | 従業員、顧客、匿名                 | 検索基準でフィルター処理された製品リストを取得します。                  |
+| AddProductListLines | 文字列 productListId、IEnumerable\<ProductListLine\> productListLines | PagedResult\<ProductListLine\> | 従業員、顧客、匿名                 | 製品リストの製品リスト明細行を作成します。 |
+| UpdateProductListLines | 文字列 productListId、IEnumerable\<ProductListLine\> productListLines | PageResult\<ProductListLine\> | 従業員、顧客、匿名                 | 製品リスト明細行を更新します。 |
+| GetProductListLines | 文字列 productListId,、文字列 searchText、QueryResultSettings queryResultSettings | PagedResult\<ProductListLine\> | 従業員、顧客、匿名            | 製品リスト明細行を取得します。 |
+| RemoveProductListLines | 文字列 productListId、IEnumerable\<ProductListLine\> 明細行| NullResponse | 従業員、顧客、匿名                 | 製品リストから明細行を削除します。 |
+| CopyCartToProductList | 文字列 cartId、文字列 destinationProductListId、bool isRewrite、bool isQuantityAggregate | ProductList | 従業員、顧客                 | 製品リスト明細行にカートの内容をコピーします。 |
+| GetEntityByKey | 文字列 productListId    | ProductList  | 従業員、顧客                 | ID 別の 1 つの製品リストを取得します。 |
+| CreateEntity   | ProductList productList | ProductList  | 従業員、顧客                 | 製品リストを作成します。 |
+| PatchEntity    | ProductList productList | ProductList  | 従業員、顧客                 | 製品リストプロパティを更新します。 部分的な更新に使用されます。|
+| UpdateEntity   | ProductList productList | ProductList  | 従業員、顧客                 | 製品リストプロパティを更新します。 部分的な更新に使用されます。 |
+| DeleteEntity   | 文字列 productListId    | NullResponse | 従業員、顧客                | 製品リストを削除します。 |
 
 ## <a name="sales-orders-fulfillment-controller"></a>販売注文履行 コントロール
 

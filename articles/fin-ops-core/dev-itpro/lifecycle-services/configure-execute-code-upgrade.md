@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11644cb4a6d2e67a6ae92b9ef66d2971920294aa10746c06225342d562a741a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6accc387100d3333664b81ed3ce14825a6c7d5a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777360"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595246"
 ---
 # <a name="configure-the-code-upgrade-service-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
 
@@ -40,8 +40,8 @@ Dynamics 365 for Finance and Operations バージョン 8.0 およびそれ以�
 
 ソース コードを識別するコード アップグレード サービスについては、Azure DevOps プロジェクトには Team Foundation バージョン管理 (TFVC) コード リポジトリが含まれている必要があります。 さらに、コード リポジトリ フォルダー構造は、次の厳密なパターンに準拠している必要があります。 
 
- - コードおよびメタデータ: /<DevOps project name>/Trunk/Main/Metadata
- - Visual Studio プロジェクトおよびソリューション ファイル: /<DevOps project name>/Trunk/Main/Projects
+ - コードおよびメタデータの場合: `/<DevOps project name>/Trunk/Main/Metadata`
+ - Visual Studio プロジェクトおよびソリューション ファイルの場合: `/<DevOps project name>/Trunk/Main/Projects`
  
  新しいフォルダーは、Azure DevOps Web インターフェイスの **リポジトリ** で直接作成できます。
  

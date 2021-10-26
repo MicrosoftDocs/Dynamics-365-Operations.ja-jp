@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: v-petbal
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 876cfd9ac589ee8c0a41f3b5e9bd3381876329f4340eecff01b433d318677f8b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b8caf569cb397525572b22d098e66d2a3abc863
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751436"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594727"
 ---
 # <a name="production-support-and-monitoring"></a>運用サポートと監視
 
@@ -99,7 +99,7 @@ Microsoft のツールおよびサポートは、インフラストラクチャ�
 
 選択できる複数の[サポート計画](https://go.microsoft.com/fwlink/?LinkId=871952) があります。 したがって、すべてのビジネスでは、そのニーズを満たす計画を見つける必要があります。
 
-サポートを要求する前に、重要度の適切なレベルを選択することが重要です。 適切な重要度レベルを識別し、要求の最初の応答時間を見積もる方法の詳細については、[サポート概要](https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) および[業務停止のレポート](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) を参照してください。
+サポートを要求する前に、重要度の適切なレベルを選択することが重要です。 適切な重要度レベルを識別し、要求の最初の応答時間を見積もる方法の詳細については、[サポート概要](/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) および[業務停止のレポート](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) を参照してください。
 
 ## <a name="monitoring-elements"></a>監視の要素
 
@@ -121,7 +121,7 @@ Microsoft 365 サービスの問題が発生しているのに、**サービス�
 
 ### <a name="environment-monitoring"></a>環境の監視
 
-環境の監視とは、[LCS を経由した環境の正常性のトラブルシューティング](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics) と監視に役立つ一連のツールです。
+環境の監視とは、[LCS を経由した環境の正常性のトラブルシューティング](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics) と監視に役立つ一連のツールです。
 
 プロジェクトの特定の環境ページの **監視** セクションには、**環境監視ダッシュボード** に移動できる **環境の監視** リンクが含まれています 。
 
@@ -152,7 +152,7 @@ Microsoft 365 サービスの問題が発生しているのに、**サービス�
 
 #### <a name="sql-insights"></a>SQL インサイト
 
-SQL インサイトは、パフォーマンス分析を有効にする高度な SQL トラブルシューティング ツールを提供します。 これらのツールの一部は、Microsoft Dynamics AX 2012 での SQL トラブルシューティングに使用されていた DynPerf ツールと類似しています。 詳細については、 [Lifecycle Services (LCS) 内のツールを使用したパフォーマンスのトラブルシューティング](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) および[パフォーマンスのトラブルシューティング ツール TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) を参照してください。
+SQL インサイトは、パフォーマンス分析を有効にする高度な SQL トラブルシューティング ツールを提供します。 これらのツールの一部は、Microsoft Dynamics AX 2012 での SQL トラブルシューティングに使用されていた DynPerf ツールと類似しています。 詳細については、 [Lifecycle Services (LCS) 内のツールを使用したパフォーマンスのトラブルシューティング](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) および[パフォーマンスのトラブルシューティング ツール TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) を参照してください。
 
 SQL インサイトは、要求されるパフォーマンス測定方法を収集する信頼性の高い方法です。 これにより、顧客やパートナーは、サンドボックスまたは生産環境での問題を軽減するために使用できる事前定義された一連のアクションを実行できます。 これは直接 SQL Server をクエリするため、ほぼリアルタイムでクエリ ストア指標が取得されます。
 

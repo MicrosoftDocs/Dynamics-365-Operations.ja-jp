@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 97aeff82852e1d719ca9716a1642a22a23a603e0ff08373d4d420ce44cf58182
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43dfe4a0c1a79a396372a70ca3476cf87806afd5
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764630"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595159"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -321,7 +321,7 @@ Retail SDK のサンプル CDX リソース ファイルには、追加のカス
 
 OverrideTarget が "true" に設定されている場合、TargetTableName で定義されたテーブルはサブジョブのプライマリ テーブルをオーバーライドします (プル ジョブでは既定値フィールドが省略され、拡張フィールドのみが考慮されます)。 たとえば、このサンプルでは、この値を true に設定する場合は、これは ax.RetailTransactionTable からデータをアップロードするのではなく、CDX は ext.CONTOSORETAILTRANSACTIONTABLE からのデータのみをアップロードすることを意味します。
 
-指定されたサブジョブがシンクとして使用する **AxTableName** 値をフレームワークが既に判断できるので、**AxTableName** 属性は指定されません。 RetailCDXSeedDataAX7 リソースをカスタマイズする場合は、相違点を指定するだけで済みます。 フレームワークが推定できるすべてのデータは、拡張機能により追加する必要はありません。 同様に、<AXFields></AXFields? セクションでは、カスタム フィールドまたは新しいフィールドのみ指定されているのがわかります。拡張フレームワークにより、指定されたサブジョブ ID からの残りのフィールドのリストが決まるためです。
+指定されたサブジョブがシンクとして使用する **AxTableName** 値をフレームワークが既に判断できるので、**AxTableName** 属性は指定されません。 RetailCDXSeedDataAX7 リソースをカスタマイズする場合は、相違点を指定するだけで済みます。 フレームワークが推定できるすべてのデータは、拡張機能により追加する必要はありません。 同様に、`<AXFields></AXFields?` セクションでは、カスタム フィールドまたは新しいフィールドのみ指定されているのがわかります。拡張フレームワークにより、指定されたサブジョブ ID から残りのフィールドのリストが決まるためです。
 
 + CDX カスタマイズ リソースを持つ CDX モジュールが更新されます。 RetailCDXSeedDataAX7_ContosoRetailExtensionで指定されているカスタマイズを適用するには、registerCDXSeedDataExtension デリゲートを購読する必要があります。 このイベントをサブスクライブすることで、CDX シード データの初期化が実行されるときにカスタマイズが適用されることを保証できます。
 

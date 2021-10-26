@@ -2,7 +2,7 @@
 title: Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされるソフトウェア
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) と互換性のあるソフトウェア コンポーネントのバージョンについて説明します。
 author: faix
-ms.date: 08/03/2021
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Platform update 44
-ms.openlocfilehash: fa74ec194b6f39a5c692bc48db4dc5a50731b35bf833b0c8072234970617238d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9450f48125d1e3954e17bf5e1887d19a9a6bdb4d
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729031"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603112"
 ---
 # <a name="microsoft-dynamics-365-finance--operations-on-premises-supported-software"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされるソフトウェア
 
@@ -55,6 +55,19 @@ Microsoft SQL Server Standard Edition と Enterprise Edition の両方がサポ�
 
 > [!IMPORTANT]
 > 単一の環境での Microsoft SQL Serverの複数のバージョンの使用はサポートされていません。
+
+## <a name="active-directory-federation-services-ad-fs"></a>Active Directory フェデレーション サービス (AD FS)
+
+Active Directory フェデレーション サービス (AD FS) は、Windows Server を実行しているマシンにインストールできるサーバー ロールです。 
+
+| バージョン                                                     | サポート開始  | 有効期間   |
+|-------------------------------------------------------------|------------------|---------------|
+| Windows Server 2019 での Active Directory フェデレーション サービス (AD FS) | 10.0.17          | 使用不可 |
+| Windows Server 2016 での Active Directory フェデレーション サービス (AD FS) | 元のリリース | 10.0.26       |
+
+> [!IMPORTANT]
+> - Windows Server 2016 の AD FS は、Azure Active Directory 認証ライブラリ (ADAL) を介した認証のみをサポートします。
+> - 今後の Microsoft 認証ライブラリへの移行を受け入れるには、AD FS を Windows Server 2019 (MSAL) に展開する必要があります。 詳細については、[アプリケーションを Microsoft 認証ライブラリ (MSAL) に移行する](/azure/active-directory/develop/msal-migration) を参照してください。
 
 ## <a name="minimum-azure-service-fabric-runtime"></a>最小 Azure Service Fabric 実行時間
 

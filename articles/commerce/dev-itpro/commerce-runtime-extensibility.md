@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5b7adae0ecd5de502a99c0896e456d29a40e956a3d99d2b91c34016d5c24bdbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9c2cc5bd058f9e635b91112a05ecbaff7faf95c
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745978"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594819"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 
@@ -148,7 +148,7 @@ Commerce Data Exchange - リアル タイム サービスを拡張する方法�
 <add source="assembly" value="your custom library name" />
 ```
 
-たとえば、カスタム ライブラリの名前が **Contoso.Commerce.Runtime.CustomerSearchSample** の場合、**合成** セクションに次の行を追加します。
+たとえば、カスタム ライブラリの名前が **Contoso.Commerce.Runtime.CustomerSearchSample** の場合、**構成** セクションに次の行を追加します。
 
 ```xml
 <add source="assembly" value="Contoso.Commerce.Runtime.CustomerSearchSample" />
@@ -403,7 +403,7 @@ namespace Contoso
 
 また、**commerceRuntime.ext.Config** ファイルの登録は、上書きすべきサービスの登録より前にする必要があります。 この登録順序は、Managed Extensibility Framework (MEF) が拡張ダイナミック リンク ライブラリ (DLL) を読み込む方法のために重要です。 ファイルより高いタイプが優先されます。
 
-ハンドラーを上書きするには、ハンドラー名に基づいてハンドラーを実行する場合に **SingleAsyncRequestHandler<TRequest>** または **INamedRequestHandlerAsync** を実装します。
+ハンドラーを上書きするには、ハンドラー名に基づいてハンドラーを実行する場合に `SingleAsyncRequestHandler<TRequest>` または **INamedRequestHandlerAsync** を実装します。
 
 ### <a name="sample-code-that-shows-how-to-override-createorupdatecustomerdatarequest-using-the-singleasyncrequesthandler"></a>SingleAsyncRequestHandler を使用した CreateOrUpdateCustomerDataRequestを 上書きする方法を示すサンプル コード 
 

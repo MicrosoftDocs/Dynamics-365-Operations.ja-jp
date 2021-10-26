@@ -4,22 +4,18 @@ description: この記事では、イメージ プレビュー フォームの�
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 12444
-ms.assetid: ac176ec7-7f14-47b8-908c-d2175a29fc5c
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 909314cfdf62ddc7e07c076453e0b324be2995f1a06ed0642358f993718b4be2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee344437179698fe4163316219fcd94d86c43c72
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745106"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594671"
 ---
 # <a name="image-preview-subpattern"></a>画像のプレビューのサブパターン
 
@@ -87,7 +83,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **RetailVisualProfile** **(ログイン)** 
 
-[![画像プレビューの例。](./media/imagepreview2.png)](./media/imagepreview2.png)
+[![RetailVisualProfile の画像のプレビューの例。](./media/imagepreview2.png)](./media/imagepreview2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される

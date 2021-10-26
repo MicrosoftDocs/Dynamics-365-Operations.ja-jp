@@ -2,7 +2,7 @@
 title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。
 author: jasongre
-ms.date: 08/26/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ae32d2b8f66fd68fd260b18301e8d6d5a32f76
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 19d6c9b59f61c7cf84e09763872843e0fdf3b265
+ms.sourcegitcommit: b4d9f42c26f6dabdffee687671b254c901c54f1f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431200"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7646758"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
@@ -43,7 +43,7 @@ Microsoft Excel アドインと Microsoft Word アドインは、Office Web/Java
 
 ### <a name="does-the-excel-add-in-support-office-for-mac"></a>Excel アドインは Mac のために Office をサポートしますか。
 
-No. Apple Mac および iOS のサポートは、現在開発中です。 Office JavaScript (JS) API は、特に認証に関しては、Apple Safari と Microsoft Edge/Internet Explorer で動作が異なります。 Office JS API のプラットフォーム サポートの詳細については、[Office アドイン ホストおよびプラットフォームの可用性](/office/dev/add-ins/overview/office-add-in-availability) を参照してください。
+いいえ。 Office JavaScript (JS) API は、特に認証に関しては、Apple Safari と Microsoft Edge/Internet Explorer で動作が異なります。 Office JS API のプラットフォーム サポートの詳細については、[Office アドイン ホストおよびプラットフォームの可用性](/office/dev/add-ins/overview/office-add-in-availability) を参照してください。
 
 ### <a name="what-version-of-office-is-required-for-the-excel-add-in-to-support-ad-fs"></a>Excel アドインが AD FS をサポートするために必要な Office のバージョンとは
 

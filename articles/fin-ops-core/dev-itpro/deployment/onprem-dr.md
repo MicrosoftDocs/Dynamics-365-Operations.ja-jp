@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ad129bdbfbedf6300c3104148d7cafd127e6a8fb994cae0b5993c734d4fc73ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5de9376a989a9e7c9dd99290733a3d6a36457d08
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719333"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594705"
 ---
 # <a name="on-premises-disaster-recovery-configuration"></a>オンプレミス障害復旧コンフィギュレーション
 ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
@@ -100,7 +100,7 @@ Finance and Operations AOS ノードと SQL Server は、同じデータセン�
 
 ## <a name="sql-server-always-on-availability-configuration"></a>SQL Server の常時可用性を構成する
 
-ビジネス データ データベース (AXDB) は、通常は SQL Server の常時可用性グループ機能を使用して、セカンダリ データセンターに複製する必要があります。 詳細については、[常時可用性グループ](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)を参照してください。
+ビジネス データ データベース (AXDB) は、通常は SQL Server の常時可用性グループ機能を使用して、セカンダリ データセンターに複製する必要があります。 詳細については、[常時可用性グループ](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)を参照してください。
 
 | データベース | レプリケート済 |
 |----------|------------|

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 084fe5ffd30d4e3eaf0585f755d31e1a299b7088
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: f014763d4e32ff835eafd458ea2e2f9886f3f865
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431330"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595131"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -302,7 +302,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 2.  **メール ステータス** が **エラー** となっているメールに対しては、**エラー詳細** タブでエラー メッセージをレビューして、必要な処置を取るべきかどうかを決定します。 これらのエラーについては、このトピックで後ほど詳しく説明します。  
 
 #### <a name="verify-all-email-accounts-have-appropriate-send-as-permissions"></a>すべての電子メール アカウントに適切な送信アクセス許可があることを確認する
-Microsoft 365 管理センターで、電子メールの送信に使用されるすべてのユーザー メール アカウントに、構成された SMTP アカウントに対する **送信者** と **代理送信** アクセス許可があることを確認します。 詳細については、[Microsoft 365 の別のユーザーにメールボックスのアクセス許可を与える](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) を参照してください。
+Microsoft 365 管理センターで、電子メールの送信に使用されるすべてのユーザー メール アカウントに、構成された SMTP アカウントに対する **送信者** と **代理送信** アクセス許可があることを確認します。 詳細については、[Microsoft 365 の別のユーザーにメールボックスのアクセス許可を与える](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) を参照してください。
 
 #### <a name="verify-user-mailboxes"></a>ユーザー メールボックスを確認
 影響を受ける (またはすべての) ユーザー メールボックスにサインインして、それらが有効であり、サインインを使用してアクセスできることを確認します。

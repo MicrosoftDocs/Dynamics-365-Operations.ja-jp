@@ -4,23 +4,19 @@ description: このトピックでは、タスク レコーダーを使用して
 author: jasongre
 ms.date: 09/11/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: SysTaskRecorderPane
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 24271
-ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5026747a1a9f8a814e13d0b2ee892dc4ed2810e16b0ac01128f14d2dfefcdab0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d178f525f0a8f1bf25f69352dacd7192e2c384e
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745092"
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556779"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -406,9 +402,6 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
     ```
 4.  最新の Microsoft Edge ブラウザーまたは Google Chrome を開きます。
 5.  Microsoft Edge で **設定とその他 &gt; 拡張機能** (または Google Chrome で **Google Chrome のカスタマイズと制御 &gt; その他のツール &gt; 拡張機能**) を選択します。
-
-    ![このイメージは、Google Chrome の拡張機能メニューの場所を示しています。](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
-
 6.  **開発者モード** を選択します。
 7.  **展開された拡張子の読み込み** をクリックします。
 8.  パス **FMLab-master \> FMLab \> TaskRecorderScreenshot** を使用してタスク レコーダー拡張子を含むフォルダーを参照してから、**フォルダーの選択** を選択します。

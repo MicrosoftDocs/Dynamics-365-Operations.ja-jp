@@ -1,24 +1,24 @@
 ---
 title: 税エンジンの統合
 description: このトピックでは、税エンジンの統合について説明します。
-author: yijialuan
+author: kailiang
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: India
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9ebad3918da88a0d69d17720f182edaed67cf7cb5261c0a76b652a89f49128b7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 324bac132e0fb8880793cb150c6f3732346ad195
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755630"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601479"
 ---
 # <a name="tax-engine-integration"></a>税エンジンの統合
 
@@ -390,8 +390,8 @@ TaxableDocVendInvoiceInfoTableRowDP は **TaxableDocPurchTableRowDataProvider** 
 | 構成スキーム             | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
 | 顧客タイプ                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | 有                          | なし |
 | 仮評価         | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
-| 外部関係者                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
-| 評価の種類              | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 法人 |
+| 外部関係者                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | なし                           | なし |
+| 評価の種類              | TaxableDocumentRowDataProviderHeader.fillInFields                           | なし                           | 会社 |
 | 優先的関係者            | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
 | GTA 商業仕入先          | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
 | 元帳通貨                | TaxableDocumentRowDataProviderHeader.fillInFields                           | 有                          | |

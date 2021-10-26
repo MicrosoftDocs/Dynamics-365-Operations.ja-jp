@@ -2,7 +2,7 @@
 title: シールド Commerce セルフサービス コンポーネントの一括配置
 description: このトピックでは、セルフサービス コンポーネント インストーラーのフレームワークを使用してサイレント インストールおよびサービス配置の方法について説明します。
 author: jashanno
-ms.date: 04/21/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,20 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d7e3c77613712fdf7187995864fbb5efd95958a8666eea1271d475bbd1be3b0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ddb1b951f93ab3a1cd6245f92de71d82b0c04747
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762326"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592524"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>シールされた Commerce セルフサービス コンポーネントの一括配置
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、共有アセット ライブラリの Lifecycle Services (LCS) で 10.0.18 リリース以降毎月リリースされる、シールド フレームワークとコンポーネント インストーラーに対応しています。 レガシ インストーラーは 2022 年 4 月に非推奨になる予定です。 このトピックでは、これらのインストーラーを使用して、サイレント インストールおよびコマンド ライン引数によるサービスの更新を実行する方法について説明します。 これらの引数を使用すると、さまざまな方法で一括配置を実行できます。
+このトピックは、共有アセット ライブラリの Microsoft Dynamics Lifecycle Services (LCS) で使用可能で、 10.0.18 リリース以降毎月リリースされる、シールド フレームワークとコンポーネント インストーラーに適用されます。 これらの新しいインストーラーの最初のいくつかのリリースが **(プレビュー)** として指定されることに注意してください。 ただし、この指定の唯一の目的は、新しいインストーラーを区別し、Microsoft が新しい機能要件を使用するかどうかを決定するために行います。 これは、インストーラーが生産に対して有効ではないという意味ではありません。 これらの新しいインストーラーのリリースに基づいて、Microsoft は 2022 年 4 月に古い (レガシ) インストーラーを廃止する予定です。 
+
+このトピックでは、新しいインストーラーを使用して、サイレント インストールおよびコマンド ライン引数によるサービスの更新を実行する方法について説明します。 これらの引数を使用すると、さまざまな方法で一括配置を行うことができます。
 
 > [!NOTE]
 > 新しいセルフサービスのシールド インストーラーは本社では使用できず、LCS によってのみダウンロードできます。

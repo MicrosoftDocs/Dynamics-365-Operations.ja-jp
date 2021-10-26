@@ -802,6 +802,8 @@
                   href: POS-serial-returns.md
                 - name: リンクされた払戻
                   href: dev-itpro/linked-refunds.md
+                - name: Adyen に対応した Dynamics 365 Commerce Payment Connector でリンク済みの払戻を処理する
+                  href: dev-itpro/unlinked-refunds.md
                 - name: 店舗の品揃えに含まれない製品の販売と返品
                   href: sell-return-outside-assortments.md
                 - name: 返品注文に対する交換のコンフィギュレーションとプロセス

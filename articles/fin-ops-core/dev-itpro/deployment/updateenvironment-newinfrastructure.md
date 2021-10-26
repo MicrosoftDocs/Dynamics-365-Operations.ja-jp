@@ -2,7 +2,7 @@
 title: 環境の更新
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境を、更新する方法について説明します。
 author: laneswenka
-ms.date: 06/08/2021
+ms.date: 09/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 69f0d69f95f311af83f3b25d5707a8071c72a1a5d85584f1f5d51334e777abb6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd4b2ac90478afc892652bbbd8b32859d19a2b78
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763502"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581801"
 ---
 # <a name="update-an-environment"></a>環境の更新
 
@@ -111,7 +111,10 @@ Lifecycle Services (LCS) を通じて配置されたレベル 1 サンドボッ�
 > [!NOTE]
 > 環境内で進行中の操作がある場合、または環境が同じバージョンまたはそれ以降のバージョンで既に実行されている場合、スケジュールされた更新は取り消されます。 予定された更新プログラムがキャンセルされると、すべてのプロジェクト関係者に電子メール通知が送信されます。 また、環境の詳細 ページで **キャンセル** を選択することにより、更新プログラムを取り消すこともできます。 顧客が更新を再スケジューリングしたり変更したりする場合は、現在の工程をキャンセルして、新しい更新をスケジュールすることができます。
 
-> 最新のインフラストラクチャ スタックに配置されている環境では、サービスが失敗した場合、その環境は自動的にロールバックされます。 工程が失敗した理由については、環境履歴ページからログをダウンロードできます。
+### <a name="rollback"></a>ロールバック
+最新のインフラストラクチャ スタックに配置されている環境では、サービスが失敗した場合、その環境はほとんどの場合に自動的にロールバックされます。 工程が失敗した理由については、環境履歴ページからログをダウンロードできます。
 
+> [!NOTE]
+> データベース サイズが大きいときなど、ロールバックによってダウンタイムが延長する環境の小さなサブセットの場合、環境は失敗した状態で、ロールバックを実行しないようにアクションを実行できるかどうかを判断できます。 失敗した工程から先に進めない場合は、通常のロールバック プロセスが開始されます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 40e3ceded680e15afdb7c5b953ab079cf67c7c7adac46903ed6cd73d6b39b30d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a50a8d9124ccf20a1d0f7d77c710b338ab153a3
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776062"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594897"
 ---
 # <a name="install-network-printer-devices-in-on-premises-environments"></a>オンプレミス環境でのネットワーク プリンター デバイスのインストール
 
@@ -61,7 +61,7 @@ AXService が gMSA で実行されているノードにプリンターをイン�
 
 > [!IMPORTANT]
 > このセクションには、少なくともバージョン 2.9.0 のインフラストラクチャ スクリプトが必要です。
-> また 、[SysInternals Suite](https://docs.microsoft.com/sysinternals/downloads/) をダウンロードする必要があります 。
+> また 、[SysInternals Suite](/sysinternals/downloads/) をダウンロードする必要があります 。
 
 1. AOS が使用可能になる各プリンタのネットワーク上の場所を追加して、Printers.json ファイルを更新します。 例のエントリを必ず削除してください。 
 2. インフラストラクチャ スクリプト フォルダから次のコマンドを実行します。

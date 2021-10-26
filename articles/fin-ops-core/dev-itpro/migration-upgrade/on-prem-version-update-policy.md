@@ -2,7 +2,7 @@
 title: ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) リリースにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 author: cabeln
-ms.date: 02/22/2021
+ms.date: 09/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 4804c4560c471e975901118293e9624850a257d854c1ca944a2b1c2ff8d8ef69
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8caec120ee7c76b80ace5bd7f47dd50f0e21f84
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757257"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599362"
 ---
 # <a name="software-lifecycle-policy-for-microsoft-dynamics-365-finance--operations-on-premises"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) のソフトウェアのライフサイクル ポリシー
 
@@ -66,14 +66,16 @@ Microsoft は、このポリシーに従って配置されたソフトウェア�
 | 品目 | 配置オプション | 申請バージョン | プラットフォームのリリース | リリース日または有効期限|
 |--------|--------|----|----|--------|
 | ... |
-| Finance + Operations | 基本配置 + サービス更新 | 10.0.20 | PU44 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | サービスの更新 | 10.0.19 | PU43 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | サービスの更新 | 10.0.18 | PU42 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | 基本配置 + サービス更新 | 10.0.17 | PU41 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | サービスの更新 | 10.0.16 | PU40 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | サービスの更新 | 10.0.15 | PU39 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | 基本配置 + サービス更新 | 10.0.14* |  PU38 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | サービスの更新 | 10.0.13* | PU37 |[1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | 基本配置 + サービス更新 | 10.0.26 | バージョン 10.0.26 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | サービスの更新 | 10.0.25 | バージョン 10.0.25 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | サービスの更新 | 10.0.24 | バージョン 10.0.24 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | 基本配置 + サービス更新 | 10.0.23 | バージョン 10.0.23 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | サービスの更新 | 10.0.22 | バージョン 10.0.22 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | 基本配置 + サービス更新 | 10.0.21 | バージョン 10.0.21 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | 基本配置 + サービス更新 | 10.0.20 | バージョン 10.0.20 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | サービスの更新 | 10.0.19 | バージョン 10.0.19 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | サービスの更新 | 10.0.18* | バージョン 10.0.18 のプラットフォーム更新プログラム | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | 基本配置 + サービス更新 | 10.0.17* | PU41 | [1 つのバージョンのスケジュール](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 
 \* 期限切れのバージョン。 すべての顧客は、[Modern Lifecycle ポリシー](https://support.microsoft.com/help/30881/modern-lifecycle-policy)に従って、最新バージョンの Finance + Operations を使用している必要があります。
 

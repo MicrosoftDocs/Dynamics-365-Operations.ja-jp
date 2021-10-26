@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 13aa8804a4325467ae0a1812319a705371d3512d3fe324feff122a50f3ced385
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ac33ec5ae68a035e376a4b57f6421ef81258dc88
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719834"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595001"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
 
@@ -258,7 +258,7 @@ Finance + Operations を機能させるために、いくつかのユーザー �
 | 財務レポート プロセス サービス アカウント             | gMSA           |         | Contoso\\svc-FRPS$ |
 | 財務レポート クリック ワンス デザイナー サービス アカウント | gMSA           |         | Contoso\\svc-FRCO$ |
 | AOS サービス アカウント                                     | gMSA           | このユーザーは、将来校正するために作成する必要があります。 今後のリリースでは、AOS を gMSA と連携させる予定です。 このユーザーを設定時に作成することで、gMSA へのシームレスな移行を確実にすることができます。\* | Contoso\\svc-AXSF$ |
-| AOS サービス アカウント                                     | ドメイン アカウント | AOS は、一般提供 (GA) リリースでこのユーザーを使用します。 | Contoso\\ AXServiceUser |
+| AOS サービス アカウント                                     | ドメイン アカウント | AOS は、一般提供 (GA) リリースでこのユーザーを使用します。 | Contoso\\AXServiceUser |
 | AOS SQL DB 管理者ユーザー                                   | SQL ユーザー       | Finance + Operations は、このユーザーを使用して SQL\*\* を認証します。 このユーザーは、今後のリリース \*\*\* で gMSA ユーザーにも置き換えられます。 | AXDBAdmin |
 | ローカル配置エージェント サービス アカウント                  | gMSA           | このアカウントは、ローカル エージェントによって、さまざまなノードでの展開を調整するために使用されます。 | Contoso\\Svc-LocalAgent$ |
 
@@ -283,7 +283,7 @@ DNS ゾーンを追加するには、次の手順を実行します。
 2. コンソール ツリーでドメイン コントローラー名を右クリックし、**新しいゾーン** \> **次へ** の順に選択します。
 3. **プライマリ ゾーン** を選択します。
 4. **Active Directory にゾーンを保存 (DNS サーバーが書き込み可能なドメイン コントローラーの場合にのみ使用可能)** のチェック ボックスが選択されたままの状態で、**次へ** を選択します。
-5. **このドメインのドメイン コントローラーで実行されているすべての DNS サーバーに対して : Contoso.com** を選択し、**次へ** を選択します。
+5. **このドメイン (Contoso.com) のドメイン コントローラーで実行されているすべての DNS サーバーに対して** を選択し、**次へ** を選択します。
 6. **前方参照ゾーン** を選択し、**次へ** を選択します。
 7. 設定するゾーン名を入力し、**次へ** をクリックします。 たとえば、**d365ffo.onprem.contoso.com** と入力します。
 8. **動的更新を許可しない** を選択し、**次へ** を選択します。
@@ -387,7 +387,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
     
 
 
-4. AOS サービス アカウントの **Contoso\svc-AXSF$** および **Contoso\AXServiceUser** をすべての AOS マシンのローカル管理者グループへ追加します。 詳細については、「[ローカル グループへのメンバーの追加](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772524(v=ws.11))」を参照してください。
+4. AOS サービス アカウントの **Contoso\svc-AXSF$** および **Contoso\AXServiceUser** をすべての AOS マシンのローカル 管理者グループへ追加します。 詳細については、「[ローカル グループへのメンバーの追加](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772524(v=ws.11))」を参照してください。
 
 5. アカウントまたはマシンを変更する必要がある場合は、元の **インフラストラクチャ** フォルダーの ConfigTemplate.xml ファイルを更新し、このマシンにコピーしてから次のスクリプトを実行します。
 
@@ -554,7 +554,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 ### <a name="11-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a> 11. テナント用 LCS 接続のコンフィギュレーション
 
-Finance + Operations の展開とサービスは、オンプレミスのローカル エージェントを使用して LCS を通じて調整されます。 LCS から Finance + Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、Contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする認定資格を構成する必要があります。
+Finance + Operations の展開とサービスは、オンプレミスのローカル エージェントを使用して LCS を通じて調整されます。 LCS から Finance + Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、Contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする証明書をコンフィギュレーションする必要があります。
 
 証明機関から取得したオンプレミス エージェントの証明書またはスクリプトを使用して生成した自己署名証明書を使用します。
 
@@ -1069,7 +1069,10 @@ Service Fabric Cluster のすべてのマシンでコンピューター ポリ�
 このエラーは D365FO-OP-ADFSApplicationGroup で必要とされる OpenID スコープ **allatclaims** が原因で表示されます。ただし、一部の Windows Server 2016 インストールでは表示されないことがあります。 このエラーを回避するには、AD FS Management\Service\Scope Descriptions を使用してスコープの説明 **allatclaims** を追加します。
 
 ### <a name="error-admin0077-access-control-policy-does-not-exist-permit-everyone-when-running-the-publish-adfsapplicationgroup-cmdlet"></a>Publish-ADFSApplicationGroup cmdletを実行した際のエラー、「ADMIN0077: アクセス制御ポリシーが存在しません: すべてのユーザーを許可」
-英語以外のバージョンの Windows Server 2016 と共に AD FS をインストールすると、すべてのユーザーのアクセス許可のアクセス許可ポリシーがローカル言語で作成されます。 AccessControlPolicyName パラメーターを指定することによりコマンドレットを呼び出します: .\Publish-ADFSApplicationGroup.ps1 - HostUrl 'https://ax.d365ffo.onprem.contoso.com' - AccessControlPolicyName '<Permit everyone access control policy in your language>'。 
+英語以外のバージョンの Windows Server 2016 と共に AD FS をインストールすると、すべてのユーザーのアクセス許可のアクセス許可ポリシーがローカル言語で作成されます。 AccessControlPolicyName パラメーターを指定することによりコマンドレットを呼び出します:  
 
+```powershell
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

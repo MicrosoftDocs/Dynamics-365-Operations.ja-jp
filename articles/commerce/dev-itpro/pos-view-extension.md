@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 16a9dbb4e1e694371aee51065032d8689365e7ad0455eb8bec384ebf219c11e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7db3b2736ba25759a6e46e4c6344356fa0736d68
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758358"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581127"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -72,7 +72,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | PickingAndReceivingDetailsView (高度な倉庫)  | 無                            | 有                          | 有           |
 | SalesInvoiceDetailsView (10.0.11) | 無                            | 無                          | 有           |
 | SalesInvoicesView (10.0.11) | 無                            | 有                          | 無           |
-| InventoryDocumentShippingAndReceivingView (10.0.13) | なし                            | なし                          | あり           |
+| InventoryDocumentShippingAndReceivingView (10.0.13) | なし                            | はい (10.0.23)                          | あり           |
 | InventoryDocumentListView  | なし                            | はい (10.0.15)                          | はい (10.0.13)          |
 | ManageShiftsView  | なし                            | はい (10.0.21)                          | なし          |
 
@@ -81,12 +81,11 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 > [!NOTE]
 > 上記に表示される表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。 旧バージョンでは、これらの拡張ポイントの一部は使用できません。
 
-> [!NOTE]
-> 仕訳帳の表示 (行グリッド) と 返品トランザクション ビューのカスタム列は、行サブ フィールドの使用をサポートしています。 これらのサブ フィールドは、情報コード メッセージ、シリアル番号、割引の値などのように、列ではなく行として表示されます。
+> 仕訳帳の表示 (行グリッド) と 返品トランザクション ビューでは、行サブ フィールドを使用してカスタム列をサポートしています。 これらのサブ フィールドは、情報コード メッセージ、シリアル番号、割引の値などのように、列ではなく行として表示されます。
 
 ## <a name="custom-filter-extension"></a>カスタム フィルターの拡張機能
 
-カスタム フィルターの拡張機能は **仕訳帳表示ビュー**、**注文検索ビュー**、および **FulfillmentLine ビュー** でサポートされます。 **注文検索ビュー** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、店舗検索において既定のパラメーターを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
+カスタム フィルターの拡張機能は **仕訳帳表示ビュー**、**注文検索ビュー**、**FulfillmentLine ビュー**、および **在庫ドキュメント出荷および入荷ビュー** でサポートされます。 **注文検索ビュー** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、店舗検索において既定のパラメーターを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
 
 カスタム フィルターの拡張機能のサンプル コードは、Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts) で使用可能です。
 

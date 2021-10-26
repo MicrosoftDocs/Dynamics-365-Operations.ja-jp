@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.x
-ms.openlocfilehash: 5a57a3f7ff16336c50fecfbcdd06907759a0ded219463bf2375fcd611b352f56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3331f41dde31ebe6dbb9403bcf06aa2756d3993f
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743911"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594679"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -80,7 +80,7 @@ ms.locfileid: "6743911"
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
-    > (たとえば、AXDB などの) 適切な値に <DB-Name> を置き換えます。 値をさらに編集する場合は、このトピックの付録を参照します。
+    > (たとえば、AXDB などの) 適切な値に `<DB-Name>` を置き換えます。 値をさらに編集する場合は、このトピックの付録を参照します。
 
     スクリプトは、データベース接続のテストを実行し、入力した情報が有効であることを確認します。
 

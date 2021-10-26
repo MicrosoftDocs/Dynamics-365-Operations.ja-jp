@@ -2813,6 +2813,8 @@
               href: sales-marketing/trade-allowance.md
             - name: 新しい売買契約の作成
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: 販売履歴クリーンアップのパフォーマンス向上
+              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: サービス管理
           items:
             - name: サービス管理の概要
@@ -3707,10 +3709,12 @@
                   href: troubleshooting/production/the-warehouse-in-pic.md
             - name: リベート管理
               items:
-                - name: 品目リベート グループを使用した顧客リベートの累積が失敗する
+                - name: 品目リベート グループを使用した顧客リベートの累計が失敗する
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: 販売とマーケティング
               items:
+                - name: 販売更新履歴のクリーンアップ ジョブが失敗するか、またはパフォーマンスに問題がある
+                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
                 - name: バンドル品目が、会社間プロセスではサポートされていない
                   href: troubleshooting/sales/bundle-item-intercompany-process.md
                 - name: 販売注文にリンクされている会社間発注書をキャンセルできない

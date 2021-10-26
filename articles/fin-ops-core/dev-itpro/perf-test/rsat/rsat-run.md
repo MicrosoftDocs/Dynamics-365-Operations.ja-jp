@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f96b27b97fa7fbb2d8ad969a72cfae86e596cfc37d780a4087e14d9a4761182
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eaacd9a791d7e88f8c4dd0f8d9cac0f617a9302e
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721890"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595051"
 ---
 # <a name="use-the-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) の使用
 
@@ -157,7 +157,7 @@ Azure DevOps で入手できる追加の調査詳細。 この情報を表示す
 
 ![エラー メッセージの情報。](media/error-message.png)
 
-すべてのエラー メッセージは、**C:\Users\$YourUserName\AppData\Roaming\regressionTool\errormsg-<TestCaseId>.txt** でローカルでも利用可能です。
+すべてのエラー メッセージは、`C:\Users\$YourUserName\AppData\Roaming\regressionTool\errormsg-<TestCaseId>.txt` でローカルでも利用可能です。
 
 ### <a name="test-response-times"></a>応答時間のテスト
 

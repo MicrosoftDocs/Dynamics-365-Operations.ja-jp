@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 840964b18814cfa89a839ae28b927a06feaa60f427a83fde869c0581ab80a212
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83ee0defbc96c9f44d1f2e431d78442edf06491c
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716024"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594783"
 ---
 開発環境から標準ユーザー承認テスト (UAT) まで準備されたデータベース、または UAT 環境から前回エクスポートしたデータベースをインポートするには、次のステップに従います。
 
@@ -21,7 +21,7 @@ ms.locfileid: "6716024"
 - 必要な場合は、後で戻すことができるように、既存の AxDB データベースのコピーを保持します。
 - **AxDB\_fromProd** などの新しい名前の下に新しいデータベースをインポートします。
 
-最良のパフォーマンスを確実にするためには、\*.bacpac ファイルをインポート元のコンピューターにコピーします。 sqlpackage .NET Core for Windows を [Get sqlpackage .NET Core for Windows](/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows) からダウンロードします。 **コマンド プロンプト** ウィンドウを開き、sqlpackage .NET Core フォルダーから次のコマンドを実行します。
+最良のパフォーマンスを確実にするためには、\*.bacpac ファイルをインポート元のコンピューターにコピーします。 sqlpackage .NET Core for Windows を [Get sqlpackage .NET Core for Windows](/sql/tools/sqlpackage-download#get-sqlpackage-net-core-for-windows) からダウンロードします。 **コマンド プロンプト** ウィンドウを開き、sqlpackage .NET Core フォルダーから次のコマンドを実行します。
 
 ```
 

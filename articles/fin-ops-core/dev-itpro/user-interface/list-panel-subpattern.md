@@ -4,22 +4,18 @@ description: この記事では、リスト パネル フォームのサブパ�
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 12433
-ms.assetid: 81df4016-d7b9-4376-8a78-bdd435d686f6
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68fa70b0841c0e94d75934cf316485746786febb0aae67eb505ba30d8da890b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 001676defe3f77749c124f6cc5402a3b4868eeb1
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745102"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594677"
 ---
 # <a name="list-panel-subpattern"></a>リスト パネルのサブパターン
 
@@ -94,7 +90,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **SalesSummaryParameters (GroupQuotation)** 
 
-[![リスト パネルの例。](./media/listpanel3.png)](./media/listpanel3.png)
+[![SalesSummaryParameters のリスト パネルの例。](./media/listpanel3.png)](./media/listpanel3.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される

@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 09/17/2021
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 24ffd111fe49a2ddd140f884c2614a62b6f204c9
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2d7fe698dbfba7a6d59f6752eaf021ca4c58f0fc
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500543"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641175"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
@@ -209,19 +209,19 @@ Finance + Operations のインフラストラクチャを設定するには、�
 | ノード タイプ | コンポーネント | 細目 |
 |-----------|-----------|---------|
 | AOS       | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) |
-| AOS       | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true) |
+| AOS       | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) |
 | AOS       | Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | AOS       | Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
 | AOS       | Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
 | AOS       | Microsoft Internet Information Services (IIS) | **Windows の機能:** WAS、WAS-Process-Model、WAS-NET-Environment、WAS-Config-APIs、Web-Server、Web-WebServer、Web-Security、Web-Filtering、Web-App-Dev、Web-Net-Ext、Web-Mgmt-Tools、Web-Mgmt-Console |
-| AOS       | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms?view=sql-server-ver15#1791&preserve-view=true) |
+| AOS       | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
 | AOS       | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> |
 | AOS       | Microsoft Visual Studio 2017 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://lcs.dynamics.com/V2/SharedAssetLibrary>に移動して、資産タイプとして **モデル** を選択して、**VC++ 17 再配布可能ファイル** を選択します。 |
 | AOS       | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | BI        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
 | BI        | .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
-| BI        | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms?view=sql-server-ver15#1791&preserve-view=true) |
+| BI        | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
 | MR        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | MR        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
 | MR        | .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
@@ -472,7 +472,54 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="step-9-set-up-vms"></a><a name="setupvms"></a>手順 9、 VMs を設定する
+### <a name="step-9-set-up-ssis"></a><a name="setupssis"></a>手順 9、 SSIS の設定
+
+データ管理と SSIS ワークロードを有効にするには、各 AOS VM に SSIS をインストールする必要があります。 各 AOS VM で、次の手順に従います。
+
+1. コンピューターに SSIS インストールへのアクセス許可があることを確認し、**SSIS セットアップ** ウィザードを開きます。
+2. **機能の選択** ページの **機能** ウィンドウで、**Integration Services** および **SQL クライアント接続 SDK** のチェックボックスをオンにします。
+3. セットアップを完了し、インストールが正常に完了したことを確認します。
+
+詳細については、[統合サービス (SSIS) のインストール](/sql/integration-services/install-windows/install-integration-services)を参照してください。
+
+### <a name="step-10-set-up-ssrs"></a><a name="setupssrs"></a>手順 10、 SSRS の設定
+
+複数の SSRS ノードを構成できます。 詳細については、[SSRS ノードの高可用性の構成](./onprem-SSRSHA.md)を参照してください。
+
+1. 開始する前に、このトピックの冒頭に記載されている[前提条件](#prerequisites)が満たされていることを確認します。
+
+    > [!IMPORTANT]
+    > - SSRS のインストール時にデータベース エンジンをインストールする必要があります。
+    > - SSRS インスタンスを構成 **しない** でください。 レポート サービスは、すべてを自動的に構成されます。
+    > - Platform update 41 より古い基準トポロジが配置されている環境では、次の手順を実行する必要はありません。 このような環境では、[オンプレミス配置の SQL Server Reporing Services のコンフィギュレーション](../analytics/configure-ssrs-on-premises.md) に従って SSSR を手動で構成する必要があります。
+
+1. 各 BI ノードについては、次の手順を実行します。
+
+    1. **インフラストラクチャ** フォルダーをコピーします。 次に、管理者特権モードで Windows PowerShell を開き、フォルダーに移動します。
+    1. 次のコマンドを実行します。
+
+        ```powershell
+        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
+        .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
+        ```
+
+        Initialize-Database.ps1 スクリプトは、gMSA を次のデータベースおよびロールにマップします。
+
+        | ユーザー           |  データベース | データベース ロール |
+        |----------------|----------|---------------|
+        | svc-ReportSvc$ | マスター   | db\_owner |
+        | svc-ReportSvc$ | msdb     | db\_datareader、db\_datawriter、db\_securityadmin |
+
+        Configure-Database.ps1 スクリプトは、以下のアクションを実行します:
+
+        - **CREATE ANY DATABASE** 権限を **\[contoso\\svc-ReportSvc$\]** に付与します。
+    
+    > [!NOTE]
+    > これらのスクリプトは SSRS を構成 **できません**。 配置中に、そのノードに配置されたService Fabric サービス (ReportingService) によって SSRS が構成されます。
+    > 
+    > 代わりに、これらのスクリプトは、Service Fabric サービス (ReportingService) が必要なコンフィギュレーションを実行するために必要なアクセス許可を付与します。
+
+### <a name="step-11-set-up-vms"></a><a name="setupvms"></a>手順 11、 VMs の設定
 
 1. 次のコマンドを実行して、各 VM で実行する必要があるスクリプトをエクスポートします。
 
@@ -486,8 +533,8 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
     | コンポーネント | リンクのダウンロード | 必要なファイル名 |
     |-----------|---------------|--------------------|
     | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | Msodbcsql .msi |
-    | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true) | msodbcsql\_17.msi |
-    | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms?view=sql-server-ver15#1791&preserve-view=true) | SSMS-Setup-\*.exe |
+    | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) | msodbcsql\_17.msi |
+    | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) | SSMS-Setup-\*.exe |
     | Microsoft Visual Studio 2013 用 Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual Studio 2017 用 Visual C++ 再頒布可能パッケージ | <https://lcs.dynamics.com/V2/SharedAssetLibrary>に移動して、資産タイプとして **モデル** を選択して、**VC++ 17 再配布可能ファイル** を選択します。 | vc\_redist.x64\_14\_16\_27024.exe |
     | Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
@@ -541,7 +588,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 > [!IMPORTANT]
 > リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[手順 20、リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
 
-### <a name="step-10-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a>手順 10、 スタンドアロン Service Fabric クラスターの設定
+### <a name="step-12-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a>手順 12、 スタンドアロン Service Fabric クラスターの設定
 
 1. [Service Fabric スタンドアロン インストール パッケージ](https://go.microsoft.com/fwlink/?LinkId=730690) を Service Fabric ノードのいずれかにダウンロードします。
 2. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
@@ -581,7 +628,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
     > - クライアント コンピューターがサーバー コンピューター (たとえば、Windows Server 2019 を実行しているコンピューター) である場合は、**Service Fabric Explorer** ページにアクセスするときに Internet Explorer のセキュリティ強化の構成をオフにする必要があります。
     > - 任意のウィルス対策ソフトウェアをインストールする場合は、除外を設定してください。 [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) ドキュメントのガイダンスに従ってください。
 
-### <a name="step-11-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a>手順 11、 テナント用 LCS 接続の構成
+### <a name="step-13-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a>手順 13、 テナント用 LCS 接続の構成
 
 オンプレミスのローカル エージェントは、LCS を通じて Finance + Operations の展開とサービスを調整するために使用されます。 LCS から Finance + Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする証明書をコンフィギュレーションする必要があります。
 
@@ -621,7 +668,7 @@ CA から取得したオンプレミス エージェントの証明書または�
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
 
-### <a name="step-12-set-up-file-storage"></a><a name="setupfile"></a>手順 12、 ファイル ストレージの設定
+### <a name="step-14-set-up-file-storage"></a><a name="setupfile"></a>手順 14、 ファイル ストレージの設定
 
 以下の SMB 3.0 ファイル共有を設定する必要があります。
 
@@ -654,6 +701,8 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
     > [!NOTE]
     > コンピュータを追加するには、**オブジェクト タイプ** で **コンピューター** を有効にする場合があります。 サービス アカウントを追加するには、**オブジェクト タイプ** で **サービス アカウント** を有効にする場合があります。
+    > 
+    > ドメイン ユーザーの代わりに gMSA アカウントが使用される最新の基本配置で配置する場合は、ファイル共有 ACL への **AOSDomainUser** アカウントの追加を省略できます。
 
 3. **\\\\DAX7SQLAOFILE1\\agent** ファイル共有を設定します。
 
@@ -691,7 +740,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     Set-Acl $AgentFolder.FullName $Acl;
     ```
 
-### <a name="step-13-set-up-sql-server"></a><a name="setupsql"></a>手順 13、 SQL Server の設定
+### <a name="step-15-set-up-sql-server"></a><a name="setupsql"></a>手順 15、 SQL Server の設定
 
 1. SQL Server のインスタンスが 1 つでも十分なサンドボックス環境に展開する場合を除いて、高可用性を備えた SQL Server をインストールします。 (ただし、高可用性シナリオをテストするため、サンドボックス環境に高可用性を備えた SQL Server をインストールすることもできます。)
 
@@ -712,7 +761,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
     ```powershell
     #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ClusterConfigFilePath .\ClusterConfig.json
+    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
 
     .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
     ```
@@ -721,7 +770,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
     ```powershell
     #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser -ClusterConfigFilePath .\ClusterConfig.json
+    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
 
     .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
     ```
@@ -761,7 +810,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 > [!IMPORTANT]
 > リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[手順 20、リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
 
-### <a name="step-14-configure-the-databases"></a><a name="configuredb"></a>手順 14、 データベースを構成する
+### <a name="step-16-configure-the-databases"></a><a name="configuredb"></a>手順 16、 データベースを構成する
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
 1. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
@@ -864,7 +913,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
         | svc-FRPS$       | gMSA | db\_owner     |
         | svc-FRAS$       | gMSA | db\_owner     |
 
-### <a name="step-15-encrypt-credentials"></a><a name="encryptcred"></a>手順 15、 資格情報の暗号化
+### <a name="step-17-encrypt-credentials"></a><a name="encryptcred"></a>手順 17、 資格情報の暗号化
 
 1. 任意のクライアント コンピューターで、**LocalMachine\\My** 証明書ストアに暗号化証明書をインストールします。
 2. 現在のユーザーにこの証明書の秘密キーへの **読み取り** アクセスを許可します。
@@ -883,6 +932,8 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     ```
 
     - **AccountPassword** – AOS ドメインユーザー (**contoso\\axserviceuser**) の暗号化されたドメイン ユーザー パスワード。
+    > [!NOTE]
+    > ドメイン ユーザーの代わりに gMSA アカウントが使用される最新の基本配置で配置する場合は、**AccountPassword** フィールドを空白のままにします。 ただし、インストーラーは引き続きこのフィールドを検索するため、存在していることを確認する必要があります。 この点については、今後のアップデートで対応する予定です。
     - **SqlUser** – Finance + Operations データベース (**AXDB**) にアクセス権限が付与されている暗号化された SQL ユーザー (**axdbadmin**)
     - **SqlPassword** – 暗号化された SQL パスワード。
 
@@ -900,53 +951,6 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
     > [!WARNING]
     > すべての **ServiceFabricEncryptText** コマンドの起動が完了したら、Windows PowerShell の履歴を削除することを忘れないでください。 それ以外の場合は、暗号化されていない資格情報が表示されます。
-
-### <a name="step-16-set-up-ssis"></a><a name="setupssis"></a>手順 16、 SSIS を設定する
-
-データ管理と SSIS ワークロードを有効にするには、各 AOS VM に SSIS をインストールする必要があります。 各 AOS VM で、次の手順に従います。
-
-1. コンピューターに SSIS インストールへのアクセス許可があることを確認し、**SSIS セットアップ** ウィザードを開きます。
-2. **機能の選択** ページの **機能** ウィンドウで、**Integration Services** および **SQL クライアント接続 SDK** のチェックボックスをオンにします。
-3. セットアップを完了し、インストールが正常に完了したことを確認します。
-
-詳細については、[統合サービス (SSIS) のインストール](/sql/integration-services/install-windows/install-integration-services)を参照してください。
-
-### <a name="step-17-set-up-ssrs"></a><a name="setupssrs"></a>手順 17、 SSRS を設定する
-
-複数の SSRS ノードを構成できます。 詳細については、[SSRS ノードの高可用性の構成](./onprem-SSRSHA.md)を参照してください。
-
-1. 開始する前に、このトピックの冒頭に記載されている[前提条件](#prerequisites)が満たされていることを確認します。
-
-    > [!IMPORTANT]
-    > - SSRS のインストール時にデータベース エンジンをインストールする必要があります。
-    > - SSRS インスタンスを構成 **しない** でください。 レポート サービスは、すべてを自動的に構成されます。
-    > - Platform update 41 より古い基準トポロジが配置されている環境では、次の手順を実行する必要はありません。 このような環境では、[オンプレミス配置の SQL Server Reporing Services のコンフィギュレーション](../analytics/configure-ssrs-on-premises.md) に従って SSSR を手動で構成する必要があります。
-
-1. 各 BI ノードについては、次の手順を実行します。
-
-    1. **インフラストラクチャ** フォルダーをコピーします。 次に、管理者特権モードで Windows PowerShell を開き、フォルダーに移動します。
-    1. 次のコマンドを実行します。
-
-        ```powershell
-        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
-        .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
-        ```
-
-        Initialize-Database.ps1 スクリプトは、gMSA を次のデータベースおよびロールにマップします。
-
-        | ユーザー           |  データベース | データベース ロール |
-        |----------------|----------|---------------|
-        | svc-ReportSvc$ | マスター   | db\_owner |
-        | svc-ReportSvc$ | msdb     | db\_datareader、db\_datawriter、db\_securityadmin |
-
-        Configure-Database.ps1 スクリプトは、以下のアクションを実行します:
-
-        - **CREATE ANY DATABASE** 権限を **\[contoso\\svc-ReportSvc$\]** に付与します。
-    
-    > [!NOTE]
-    > これらのスクリプトは SSRS を構成 **できません**。 配置中に、そのノードに配置されたService Fabric サービス (ReportingService) によって SSRS が構成されます。
-    > 
-    > 代わりに、これらのスクリプトは、Service Fabric サービス (ReportingService) が必要なコンフィギュレーションを実行するために必要なアクセス許可を付与します。
 
 ### <a name="step-18-configure-ad-fs"></a><a name="configureadfs"></a>手順 18、 AD FS のコンフィギュレーション
 

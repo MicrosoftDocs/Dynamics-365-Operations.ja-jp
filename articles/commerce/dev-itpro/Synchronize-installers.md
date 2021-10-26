@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce のセルフサービス インストーラーの同期
 description: このトピックでは、標準のセルフサービス ダウンロード メカニズムで使用できるように、セルフサービス インストーラーをアップロードおよび同期する方法について説明します。
 author: jashanno
-ms.date: 07/01/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 99b165d32bf8f3c7429eb11e9062fb54c5cf2bac7aac8cc6b578e77330bb21b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72a662d2a90b86a0562e46ca77ab9d4e28e3880e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756567"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592516"
 ---
 # <a name="synchronize-self-service-installers-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のセルフサービス インストーラーの同期
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Headquarters でアセット ライブラリと共有アセット ライブラリを使用して、セルフサービス インストーラーをアップロードおよび同期し、標準セルフサービス ダウンロード メカニズムで使用できるようにする方法について説明します。
+このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Headquarters でアセット ライブラリと共有アセット ライブラリを使用して、セルフサービス インストーラーをアップロードおよび同期し、標準セルフサービス ダウンロード メカニズムで使用できるようにする方法について説明します。 この機能は、Microsoft によって継続的に管理される環境にのみ適用されることに注意してください。 また、オンプレミス環境や仮想ハード ディスク (VHD) などの他の環境については、現在発行されている LCS から直接インストーラーをダウンロードして使用することを強くお勧めします。
 
 > [!IMPORTANT]
 > セルフサービス パッケージをアップロードする以前の方法は、現在もサポートされています。 ただし、これは廃止され、今後削除される予定です。

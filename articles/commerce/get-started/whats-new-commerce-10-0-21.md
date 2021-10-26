@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.21 (2021 年 10 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.21 のプレビュー リリースの新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 08/27/2021
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8b653c8f6f5788f3ccbf4f92cd3a5e88efecc4da
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 00935dc74afc5904cf8eae91069d895600b31261
+ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487942"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "7551762"
 ---
 # <a name="preview-features-in-in-dynamics-365-commerce-10021-october-2021"></a>Dynamics 365 Commerce 10.0.21 の機能のプレビュー (2021 年 10 月)
 
@@ -32,19 +32,6 @@ ms.locfileid: "7487942"
 - **リリースの一般提供 (手動更新):** 2021 年 9 月
 - **リリースの一般提供 (自動更新):** 2021 年 10 月
 
-## <a name="known-deployment-issue"></a>配置に関する既知の問題
-IaaS にリリース 10.0.21 を配置する場合、次のような配置警告が表示される場合があります。
-
-**警告コード:** 95017
-
-**警告メッセージ:** スクリプト [SetupDiagnostics] が VM に対して実行に失敗
-
-警告があっても配置は機能しますが、Lifecycle Services (LCS) では次のような既知の問題が発生する可能性があります。
-
--   **環境の監視** ページでは、**詳細バージョン情報の表示** リンクは表示されません。したがって、環境にインストールされているモジュールの特定のバージョンは表示されません。 このデータがないと、修正プログラムを適用するプロセスがこのデータを使用して、モジュール バージョンの前提条件が満たされていることを確認するため、後続の修正プログラムが失敗することがあります。 PEAP/プレビュー ビルドを生産で使用したり、修正プログラムを適用することができないため、影響は最小限に抑える必要があります。
--   SQL インサイトの **環境監視** ページの **パフォーマンス メトリックス** タブと **インデックス分析** タブでは、データは表示されません。 その他の **環境監視** 機能は、意図したとおりに機能します。
--   **フル システム診断** ページにはアクセスできません。 夜間のコレクター実行のステータスとそのルールによって検出された問題に関する関連データも表示されません。
-
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
@@ -54,18 +41,18 @@ IaaS にリリース 10.0.21 を配置する場合、次のような配置警告
 
 | 機能領域   | フィーチャー                                                  | 詳細                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-|  B2B           |   [B2B e コマース ビジネス パートナー ユーザー管理者権限の付与と取り消し](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/grant-revoke-b2b-e-commerce-business-partner-user-admin-privileges.md)    |   [B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理](../b2b/manage-b2b-users.md)   |
-|  B2B          |  [e コマースチャネルのカタログのサポート](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-catalogs-e-commerce-channel.md)   |  パートナーと交渉した製品および特別価格を反映する、パートナー固有のカタログを作成します。   |
+|  B2B           |   [B2B e コマース ビジネス パートナー ユーザー管理者権限の付与と取り消し](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/grant-revoke-b2b-e-commerce-business-partner-user-admin-privileges)    |   [B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理](../b2b/manage-b2b-users.md)   |
+|  B2B          |  [e コマースチャネルのカタログのサポート](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-catalogs-e-commerce-channel)   |  パートナーと交渉した製品および特別価格を反映する、パートナー固有のカタログを作成します。   |
 |  配置   |   Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用  |  [Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用](../../fin-ops-core/dev-itpro/deployment/Update-retail-channel.md)     |
 |  拡張性  |  Cloud Scale Unit 拡張機能の削除   |  [Cloud Scale Unit 拡張機能の削除](../dev-itpro/retail-sdk/remove-csu-package.md)      |
 |  販売時点管理 (POS)  |  意図しない商取引注文の価格計算を禁止する     |  [販売時点管理 (POS) の顧客注文](../customer-orders-overview.md)           |
-|  販売時点管理 (POS)  |   [POS による店舗内の場所での在庫移動のサポート](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-inventory-movement-between-in-store-locations-pos.md)   |  POS から直接、店舗内の場所での在庫移動を有効にできます。   |
+|  販売時点管理 (POS)  |   [POS による店舗内の場所での在庫移動のサポート](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-inventory-movement-between-in-store-locations-pos)   |  POS から直接、店舗内の場所での在庫移動を有効にできます。   |
 |  グローバリゼーション        |   ロシア向け Dynamics 365 Commerce での前払            |  [ロシア向け Dynamics 365 Commerce での前払](../localizations/rus-commerce-prepayments.md)   |
 |  グローバリゼーション  |   ロシア向け Dynamics 365 Commerce ローカライズの設定       |   [ロシア向け Dynamics 365 Commerce ローカライズの設定](../localizations/rus-commerce-setup.md)  |
 |   販売促進   |  見本の在庫認識  |  [製品分析コード値を見本として表示するように構成する](../dev-itpro/dimensions-swatch.md)    |
-|   ターゲットを設定する   |  [顧客区分とターゲット接地](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting.md)  |  [デバイス、市場、および位置情報のターゲット設定](../targeting-overview.md)    |
-|  業績  | [パフォーマンスへの影響による、小売トランザクション テーブルに対するカスタム クエリ変更追跡コンフィギュレーションの適用](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts.md)   | この機能により、小売トランザクション テーブルで変更追跡機能とデータ管理エクスポート フレームワークを組み合わせて使用すると、Commerce のパフォーマンスが向上します。  |
-| E コマース   |   [e コマースの再注文に関する拡張エクスペリエンス](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce.md)  |   この機能により、e コマース サイトの既存の再注文 (「再購入」) の機能が拡張されます。   |
+|   ターゲットを設定する   |  [顧客区分とターゲット接地](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting)  |  [デバイス、市場、および位置情報のターゲット設定](../targeting-overview.md)    |
+|  業績  | [パフォーマンスへの影響による、小売トランザクション テーブルに対するカスタム クエリ変更追跡コンフィギュレーションの適用](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts)   | この機能により、小売トランザクション テーブルで変更追跡機能とデータ管理エクスポート フレームワークを組み合わせて使用すると、Commerce のパフォーマンスが向上します。  |
+| E コマース   |   [e コマースの再注文に関する拡張エクスペリエンス](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce)  |   この機能により、e コマース サイトの既存の再注文 (「再購入」) の機能が拡張されます。   |
 | 販売時点管理 (POS) オフライン   |   Modern POS オフライン監視ダッシュボード、シームレスなオフライン弾力性、および信頼性の向上   |   この機能セットは、10.0.20 リリースに追加でバックポートされています。  詳細については、[Commerce のオフライン データベース実装とトラブルシューティング](../dev-itpro/implementation-considerations-offline.md) ドキュメントを参照してください。   |
 
 

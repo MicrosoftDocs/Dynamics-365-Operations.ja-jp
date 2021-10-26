@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 6e806055d38b0cdaa505d2695def60548bbf77faec08176562f20eed68903934
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 62ed2e0c187ee18ed2ac3506cee0ca63d5c4b663
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737827"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594895"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 
@@ -106,7 +106,7 @@ ms.locfileid: "6737827"
 
 Finance and Operations アプリの購入方法とライセンスの詳細については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
 
-Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) を参照してください。
+Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](/microsoft-365/admin/manage/assign-licenses-to-users) を参照してください。
 
 同じテナントに複数の実装プロジェクトが存在する場合は、追加のユーザー ライセンスが必要です。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#licensing-requirements) を参照してください。
 

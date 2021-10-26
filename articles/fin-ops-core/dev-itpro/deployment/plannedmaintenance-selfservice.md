@@ -2,19 +2,19 @@
 title: セルフサービス環境の計画メンテナンスに関する FAQ
 description: このトピックでは、セルフサービス環境における Microsoft の計画されたメンテナンスに関するよくある質問に対する回答を示します。
 author: rashmansur
-ms.date: 09/08/2021
+ms.date: 09/21/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2021-05-13
-ms.openlocfilehash: 8851c0004ea5defa1a64ed399d4cbcc918b4391a
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: f87559662fd88b8a11005f528d221f880ff67d15
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500037"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506869"
 ---
 # <a name="planned-maintenance-in-self-service-environments-faq"></a>セルフサービス環境の計画メンテナンスに関する FAQ
 計画されたメンテナンスとは、公開されたスケジュールに従って Microsoft がお客様の環境で実行する必要がある保守活動すべてを表します。 このトピックでは、セルフサービス環境における Microsoft の計画されたメンテナンスに関するよくある質問に対する回答を示します。
@@ -40,9 +40,9 @@ Microsoft が実行する予定された共通のメンテナンス活動の一�
 | 2021 年 9 月 | 2021 年 9 月 26 日 | 2021 年 9 月 25 日 | 2021 年 9 月 25 日 |
 | 2021 年 10 月 | 2021 年 10 月 24 日 | 2021 年 10 月 23 日 | 2021 年 10 月 23 日 |
 | 2021 年 11 月 | 2021 年 12 月 5 日 | 2021 年 12 月 4 日 | 2021 年 12 月 4 日 |
-| 2021 年 12 月 | 2021 年 1 月 9 日 | 2021 年 1 月 8 日 | 2022 年 1 月 8 日 |
-| 2022 年 1 月 | 2021 年 1 月 23 日 | 2021 年 1 月 22 日 | 2021 年 1 月 22 日 |
-| 2022 年 2 月 | 2021 年 2 月 20 日 | 2021 年 2 月 19 日 | 2021 年 2 月 19 日 |
+| 2021 年 12 月 | 2022 年 1 月 9 日 | 2022 年 1 月 8 日 | 2022 年 1 月 8 日 |
+| 2022 年 1 月 | 2022 年 1 月 23 日 | 2022 年 1 月 22 日 | 2022 年 1 月 22 日 |
+| 2022 年 2 月 | 2022 年 2 月 20 日 | 2022 年 2 月 19 日 | 2022 年 2 月 19 日 |
 
 ## <a name="how-are-operating-system-maintenance-updates-applied"></a>オペレーティング システムの保守の更新はどのように適用されるのか?
 このサービス メンテナンスは、環境に影響が及ぶ可能性を最小限にするため、通常の営業時間外に計画されます。 世界の他の地域にユーザーがいる環境の場合、「通常の営業時間外」が異なる影響を与えることがあることを認識しています。 Microsoft Dynamics 365 を改善し、将来、これらメンテナンス ウィンドウの影響を最小限にできるように取り組んでいます。 今後、インフラストラクチャのメンテナンス スケジュールはここで転記され、インフラストラクチャ メンテナンスに関する将来の通知は受信されません。

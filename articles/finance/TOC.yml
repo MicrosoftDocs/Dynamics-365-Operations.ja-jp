@@ -1194,6 +1194,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
             - name: 財務諸表の通貨機能
               href: general-ledger/financial-reporting-currency-capability.md
+            - name: 財務諸表の利益剰余金計算
+              href: general-ledger/retained-earnings-enhancements.md
             - name: 貸借対照表の財務諸表
               href: general-ledger/balance-sheet-financial-reports.md
             - name: 財務諸表の生成

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sasurana
 ms.search.validFrom: 2021-07-31
-ms.openlocfilehash: a1f296ab4c46c4e4ea1dff93830b3b12ae30d8f4
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b7552633ddb3a2b046e68d2227304e8e0b6621d8
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386755"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594787"
 ---
 # <a name="complete-the-azure-resource-manager-onboarding-process-for-us-government-lifecycle-services-projects"></a>米国政府の Lifecycle Services プロジェクトに対する Azure Resource Manager オンボード プロセスの実行
 
@@ -53,7 +53,7 @@ Azure サブスクリプションで動作するよう LCS 配置サービスを
 
 #### <a name="authorize-the-workflow"></a>ワークフローを認証する
 
-Azure Active Directory (Azure AD) PowerShell コマンドレットがインストールされていることを確認してください。 詳細については [Graph 用 Azure Active Directory PowerShell のインストール](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)を参照してください。
+Azure Active Directory (Azure AD) PowerShell コマンドレットがインストールされていることを確認してください。 詳細については [Graph 用 Azure Active Directory PowerShell のインストール](/powershell/azure/active-directory/install-adv2)を参照してください。
 
 次の 2 つのアプリ ID が Azure AD テナントで承認されている必要があります。
 

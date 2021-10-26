@@ -2,7 +2,7 @@
 title: Commerce のオフライン実装とトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Commerce オフライン実装に関する考慮事項とトラブルシューティングの概要を説明します。
 author: jashanno
-ms.date: 08/24/2021
+ms.date: 10/01/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2021-08-31
-ms.openlocfilehash: a26aa2c4d9bc8967837e192d4c58f7ab52ee00a1
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 5e3cae2b623074d5383789331851765523aec8a1
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441522"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595415"
 ---
 # <a name="commerce-offline-implementation-and-troubleshooting"></a>Commerce のオフライン実装とトラブルシューティング
 
@@ -53,7 +53,7 @@ ms.locfileid: "7441522"
 このセクションでは、オフラインで機能しているときに POS 使用シナリオの計画を開始するときに考慮する必要があるオフラインのさまざまな側面と構成について説明します。 ここで説明する機能は、データ管理、オフライン使用およびデータ構成に関連しています。 ここに記載されているガイダンスを読む前に、これらの概念を理解することを強くお勧めします。 追加情報を取得するために、[Commerce Data Exchange ベスト プラクティス](CDX-Best-Practices.md) を読むことをお勧めします。
 
 ### <a name="sql-server-versions-and-licenses"></a>SQL Server のバージョンとライセンス 
-SQL Server には、さまざまなバージョン (SQL Server 2017 や SQL Server 2019 など) やエディション (SQL Standard や SQL Express など) があります。 これらのバージョンの詳細な情報については、[SQL Server 2019 (15.x) のエディションとサポートされている機能](/sql/sql-server/editions-and-components-of-sql-server-version-15?view=sql-server-ver15#Cross-BoxScaleLimits)を参照してください。 このトピックの下部にある[追加のリソース](implementation-considerations-offline.md#additional-resources) も参照してください。
+SQL Server には、さまざまなバージョン (SQL Server 2017 や SQL Server 2019 など) やエディション (SQL Standard や SQL Express など) があります。 これらのバージョンの詳細な情報については、[SQL Server 2019 (15.x) のエディションとサポートされている機能](/sql/sql-server/editions-and-components-of-sql-server-version-15#Cross-BoxScaleLimits)を参照してください。 このトピックの下部にある[追加のリソース](implementation-considerations-offline.md#additional-resources) も参照してください。
 
 SQL Server のバージョンについては、現在メインストリーム サポートの期間内にあるバージョンの使用のみをお勧めします。 サポート日は、[製品とサービス ライフサイクル情報](/lifecycle/products/)という記事で製品ごとに検索できます。
 
@@ -65,6 +65,31 @@ SQL Server のバージョンについては、現在メインストリーム �
 | 速達 | オフライン データベースの SQL Server バージョンとして SQLServer Express を使用する場合、CPU コア数や RAM 使用など、いくつかの制限があることを理解することが重要です。 最大の制限の要因は、10 GB のデータベース サイズ制限です。 このバージョンを自由に使用できる機能を与えられた Express は、多くの場合、CSU (セルフホスト) チャネル データベースではなく、Modern POS オフライン データベースに使用されます。 Express Edition を CSU (自己ホスト) に使用する場合、データベースが 10 GB の最大サイズ制限に達するとデータ同期に問題が生じ、データの損失などの問題が発生する可能性があります。 Express Edition を使用する場合は、圧縮と Dynamics 365 Commerce 機能を使用して、オフライン データベースからデータを除外することが重要です。 SQL 圧縮の詳細については、[Commerce Data Exchange のベスト プラクティス](CDX-Best-Practices.md#enable-table-and-index-compression)を参照してください。 データベースのサイズは 8 GB 以下で管理することをお勧めします。 |
 | 標準 | SQL Server Standard は多くの場合、CSU (自己ホスト) チャネル データベースで使用されます。  これにより、一般に 1 つ以上の小売店舗の場所で CSU (自己ホスト) チャネル データベースを処理するのに十分なサイズとシステム使用率が提供されます。 一般的ではありませんが、Standard バージョンは、オフライン データベースで制限を取り除き、オフライン パフォーマンスを最大化するために使用されることがあります。 さらに、設定された数の Modern POS レジスターのみが完全な Standard バージョンを利用し、他のレジスターが Express バージョンを利用する (またはオフライン データベースがない可能性があり、Modern POS の代わりに Cloud POSを使用する) 場合は、よりハイブリッドな方法を使用できます。 |
 | 企業 | SQL Server Enterprise の必要はほとんどありませんが、価値のあるシナリオがあります。 たとえば、データセンター VM で CSU (自己ホスト) をホストして、多くのデバイスの広い領域で使用する場合、パフォーマンス機能を最大限にするには、制限を取り除くことが重要です。 |
+
+### <a name="offline-testing"></a>オフライン テスト
+更新を実行する場合、Modern POS (MPOS) とオフライン機能を徹底的にテストすることが重要です。 正しい機能を確認するために、オフライン中にテストする必要がある機能の包括的ではないリストを示します。
+
+-   レジ担当者とマネージャーがサインインをテストします。
+-   シフトの開始と終了をテストします。
+-   カテゴリを使用して製品閲覧をテストします。
+-   検索バーを使用して製品の検索をテストします。
+-   現金売りトランザクションをテストします。
+-   ブラインド返品をテストします。
+-   割引をテストします。
+-   測定単位の変更をテストします。
+-   支払機能をテストします。 オフライン時には、以下のすべての支払タイプが機能し、使用可能である必要があります。
+    -   現金
+    - 通貨
+    - 検査
+    -   ロイヤルティ
+    -   カード
+    -   顧客 ID
+    -   ギフト カード
+-   **仕訳帳の表示** をテストします。
+-   オンライン モード中にトランザクションを開始します。 次に、強制的にオフライン モードに切り替え (つまり、手動でオフライン モードに切り替える代わりに、システムをインターネットから切断)、精算を続行します。
+-   たとえば、オフライン データベースに顧客の最新データ (欠落) またはカート内の製品 (欠落) がない場合は、前のテストを実行します。 この場合、レジ担当者は警告またはエラー メッセージを受信しますが、オフライン モードで MPOS を引き続き使用して、新しい現金売りトランザクションを実行できることが期待されます。
+-   オフライン中に 1 つ以上のトランザクションを実行します。 その後、オンライン モードに切り替え、トランザクションがアップロード済みであることを確認します。
+
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6108b1271a78e8bf90da46be83e8d1729199482e
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: ad2844b17a8cc9914a6c7c17ecd8c9126e5bb1a4
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472133"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512597"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -32,7 +32,7 @@ ms.locfileid: "7472133"
     - [二重書き込みは、Customer Engagement アプリの開発者と設計者に取って何を意味しますか?](dual-write-overview.md#developer-architect)
 
 + [二重書き込みの新機能および変更された機能](whats-new-dual-write.md)
-+ [よく寄せられる質問](dual-write-faq.md)    
++ [よく寄せられる質問](dual-write-faq.md)
 
 ## <a name="dual-write-setup"></a>二重書き込みの設定
 
@@ -55,6 +55,7 @@ ms.locfileid: "7472133"
 ## <a name="managing-dual-write-after-setup"></a>設定後の二重書き込みを管理
 
 + [テーブル マッピングと列マッピングのカスタマイズ](customizing-mappings.md)
++ [二重書き込みのカスタマイズに関するガイダンス](custom-best-practices.md)
 + [複数のテーブル マップの処理](multiple-entity-maps.md)
 + [二重書き込み設定後に法人を編集する](edit-legal-entity.md)
 + [エラー管理と警告通知](errors-and-alerts.md)

@@ -2,7 +2,7 @@
 title: データベースのエクスポート
 description: このトピックでは、Finance and Operations のデータベースをエクスポートする方法について説明します。
 author: LaneSwenka
-ms.date: 12/02/2020
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ac79a68dfcf79b34aa31478896f81979c2919315
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: c5e794baaca80b4e5b591f36a6ba0fe72a51e861
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344738"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547869"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -33,9 +33,11 @@ ms.locfileid: "7344738"
 LCS からデータベースのエクスポートを実行するシステムを維持するために、最大 bacpac サイズの制限が設定されています。 この制限は、エクスポートする bacpac ごとに、50 GB に設定されます。 この制限の理由は次のとおりです。 
 
 - 一元化されたシステムでは、同じ地域の複数の顧客に対してエクスポートを実行しています。このシステムは、ディスク領域に制限があります。  
-- Azure SQL は、データを bacpac 形式で適切に圧縮します。多くの場合、顧客が 50 GB を超えると、カスタマイズ、またはバイナリ データがバックアップ ファイルのサイズは大幅に増加します。  
+- Azure SQL は、データを bacpac 形式で適切に圧縮します。多くの場合、顧客が 50 GB を超えると、カスタマイズ、またはバイナリ データがバックアップ ファイルのサイズは大幅に増加します。 
 
-出力される bacpac のサイズが 50 GB を超えるためにエクスポートに失敗した場合、次の SQL スクリプトをサンドボックス データベースに対して実行して、上位 15 テーブルをメガバイト単位で特定してください。  データ エンティティのステージングに使用するすべてのテーブル (テーブル名の最後に「ステージング」が割り当てられます) は、切り捨てることができます。 バイナリまたは BLOB データを格納しているテーブル (JSON/XML/binary) はすべて切り捨てられるか、フィールドのコンテンツを削除して領域を解放する必要があります。 バイナリ データは圧縮できないので、データベース自体に大量のデータを格納すると、すぐに 50 GBの制限に達することになります。
+データベースのサイズを小きくする必要がある場合は、[クリーンアップ ルーチン](../sysadmin/cleanuproutines.md) に従います。
+
+上記のクリーンアップ ルーチンによって bacpac ファイルのサイズが 50 GB 以下にならなかった場合、次の SQL スクリプトをサンドボックス データベースに対して実行して、上位 15 テーブルをメガバイト単位で特定してください。 データ エンティティのステージングに使用するすべてのテーブル (テーブル名の最後に「staging」が付く) は、切り捨てることができます。 バイナリまたは BLOB データを格納しているテーブル (JSON/XML/binary) はすべて切り捨てるか、フィールドのコンテンツを削除して領域を解放する必要があります。 バイナリ データは圧縮できないので、データベース自体に大量のデータを格納すると、すぐに 50 GBの制限に達することになります。
 
 ```sql
 USE [YourDBName] -- replace your dbname

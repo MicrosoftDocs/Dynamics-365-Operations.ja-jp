@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2021-08-16
-ms.openlocfilehash: 1097c1f237d08fb9d2ce79de976e8fea5cd5e3a4
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 7d7421ce8308ebb4e900bbe3ed827c542bc8bcf7
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441523"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595244"
 ---
 # <a name="expired-subscriptions-and-data-deletion"></a>サブスクリプションの期限切れとデータ削除
 
@@ -68,6 +68,6 @@ LCS 実装プロジェクトを削除した後に、顧客所有の Azure サブ
 
 ## <a name="related-topics"></a>関連トピック
 
-[Microsoft 365 でのデータの保持、削除、破棄](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview?view=o365-worldwide)
+[Microsoft 365 でのデータの保持、削除、破棄](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)
 
 [サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問](../../fin-ops/get-started/subscription-overview.md)

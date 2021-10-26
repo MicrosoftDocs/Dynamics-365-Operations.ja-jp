@@ -2,7 +2,7 @@
 title: ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 description: このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
 author: akviklis
-ms.date: 06/10/2021
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e2416240aa3400de4710c7c42d07e2869c0a95eddc5cb303771013b2f90d5851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 55414479a61273ac63283aef276d1ceb286a7ca3
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766475"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605345"
 ---
 # <a name="set-up-and-deploy-the-dynamics-365-commerce-localization-for-brazil"></a>ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 
@@ -190,20 +190,22 @@ Commerce 本社で小売店舗を設定するには、次の手順を実行し�
 
 Commerce 本社で会計登録プロセスを設定するには、次の手順を実行します。 詳細情報については、[コマース チャネルの会計統合の設定](./setting-up-fiscal-integration-for-retail-channel.md) を参照してください。
 
+1. Commerce SDK から会計ドキュメント プロバイダーと会計コネクタのコンフィギュレーション ファイルをダウンロードします。
+    1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) レポジトリ を開きます。
+    1. 使用可能な最後のリリース ブランチ (例えば、[リリース/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31) を開きます)。
+    1. **src \> FiscalIntegration \> ElectronicFiscalDocumentsBrazil** を開きます。
+    1. **構成 \> コネクタ** (例えば、[リリース/9.31 のファイル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/Connectors)): で会計コネクタ コンフィギュレーション ファイルをダウンロードします。
+        - SubmitConnector.xml
+        - SatConnector.xml
+        - ContingencyConnector.xml
+    1. **構成 \> DocumentProviders** (例えば、[リリース/9.31 のファイル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)): で会計ドキュメント プロバイダー コンフィギュレーション ファイルをダウンロードします。
+        - SubmitProvider.xml
+        - SatProvider.xml
+        - ContingencyProvider.xml
 1. **Retail とコマース \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順に移動します。
 1. **一般** タブで、**会計統合の有効化** オプションを **はい** に設定します。
-1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計コネクタ** の順に移動します。
-1. [Commerce 会計統合リポジトリ (repo)](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations) からコネクタ構成を読み込みます。 [**Configurations\\Connectors**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FConnectors) には次のファイルがあります。
-
-    - SubmitConnector.xml
-    - ContingencyConnector.xml
-
-1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計ドキュメント プロバイダー** の順に移動します。
-1. [Commerce 会計統合リポジトリ (repo)](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations) からドキュメント プロバイダー コンフィギュレーションを読み込みます。 [**Configurations\\DocumentProviders**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FDocumentProviders) には次の構成ファイルがあります。
-
-    - SubmitProvider.xml
-    - ContingencyProvider.xml
-
+1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計コネクタ** に移動し、先ほどダウンロードした会計コネクタ コンフィギュレーション ファイルを読み込みます。
+1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計ドキュメント プロバイダー** に移動し、先ほどダウンロードした会計ドキュメント プロバイダー コンフィギュレーション ファイルを読み込みます。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> コネクタ機能プロファイル** の順に移動します。
 1. コンフィギュレーションを読み込んだばかりのドキュメント プロバイダーごとに、コネクタ機能プロファイルを作成し、既にコンフィギュレーションを読み込んだ会計コネクタを選択します。 必要に応じて、データ マッピング設定を更新します。
 1. **Retail とコマース \> チャネル設定 \> 会計統合 \> コネクタ技術プロファイル** の順に移動します。
@@ -342,6 +344,20 @@ CRT 拡張コンポーネントを構成するには、次の手順に従いま�
 
 > [!WARNING]
 > **Commerceruntime.config** および **CommerceRuntime.MPOSOffline.config** ファイルを編集してはいけません。 これらのファイルはカスタマイズのためのものではありません。
+
+7. Modern POS の Retail プロキシの拡張コンフィギュレーション ファイルを検索します。
+
+    - **Modern POS の Retail プロキシ:** ファイル名は **RetailProxy.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーの場所にあります。
+
+8. 拡張コンフィギュレーション ファイルで Modern POS の Retail プロキシの変更を登録します。
+
+ ```xml
+        <retailProxyExtensions>
+          <composition>
+            <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.ElectronicFiscalDocumentBrazil" />
+          </composition>
+        </retailProxyExtensions>
+ ```
  
 ### <a name="enable-modern-pos-extension-components"></a>Modern POS 拡張コンポーネントの有効化
 

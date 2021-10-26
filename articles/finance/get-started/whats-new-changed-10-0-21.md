@@ -2,7 +2,7 @@
 title: Dynamics 365 Finance 10.0.21 (2021 年 10 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.21 プレビュー リリースの新機能または変更された機能について説明します。
 author: kfend
-ms.date: 09/09/2021
+ms.date: 09/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6efc421122938ca271dd8f10232bd69c4adb42e9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 8565d182679e9b6a3d1c36f0d432d9086c3b28f1
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487032"
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556753"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10021-october-2021"></a>Dynamics 365 Finance 10.0.21 の機能のプレビュー (2021 年 10 月)
 
@@ -32,20 +32,6 @@ ms.locfileid: "7487032"
 - **リリースのプレビュー**: 2021 年 8 月
 - **リリースの一般提供 (手動更新)**: 2021 年 9 月
 - **リリースの一般提供 (自動更新)**: 2021 年 10 月
-
-## <a name="known-deployment-issue"></a>配置に関する既知の問題
-IaaS にリリース 10.0.21 を配置する場合、次のような配置警告が表示される場合があります。
-
-**警告コード:** 95017
-
-**警告メッセージ:** スクリプト [SetupDiagnostics] が VM に対して実行に失敗
-
-警告が出ていても配置は機能します。 ただし、Lifecycle Services (LCS) では、次に示す既知の問題が発生する可能性があります。
-
--   **環境の監視** ページでは、**詳細バージョン情報の表示** リンクは表示されません。したがって、環境にインストールされているモジュールの特定のバージョンは表示されません。 このデータがないと、修正プログラムを適用するプロセスがこのデータを使用して、モジュール バージョンの前提条件が満たされていることを確認するため、後続の修正プログラムが失敗することがあります。 PEAP/プレビュー ビルドを生産で使用したり、修正プログラムを適用することができないため、影響は最小限に抑える必要があります。
--   SQL インサイトの **環境監視** ページの **パフォーマンス メトリックス** タブと **インデックス分析** タブでは、データは表示されません。 その他の **環境監視** 機能は、意図したとおりに機能します。
--   **フル システム診断** ページにはアクセスできません。 夜間のコレクター実行のステータスとそのルールによって検出された問題に関する関連データも表示されません。
-
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 

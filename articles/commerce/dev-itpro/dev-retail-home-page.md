@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ba5ad53652ed15cf650ffb2e1aca57b8e05ee242
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: e5df18154a447a9a7dc40b51fe458d3e179c0c34
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500318"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581805"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -35,6 +35,10 @@ ms.locfileid: "7500318"
 - [ヘッドレス コマース エンジンのアーキテクチャ](retail-server-architecture.md)
 - [オンライン ストア チャネルの公開](retail-online-store-publishing-architecture.md)
 - [小売チャネルの実績 PowerBI.com ソリューション](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+
+## <a name="development"></a>開発
+
+- [ローカル開発環境の設定](setup-local-dev-env.md)
 
 ## <a name="deployment"></a>配置
 

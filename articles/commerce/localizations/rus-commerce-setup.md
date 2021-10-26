@@ -2,7 +2,7 @@
 title: ロシア向け Dynamics 365 Commerce ローカライズの設定
 description: このトピックでは、ロシア向け Microsoft Dynamics 365 Commerce ローカライズの設定方法を説明します。
 author: akviklis
-ms.date: 08/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: 07/01/2021
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 36236736c06b761f1d589eb9cbc6fb7ae837c141b20b3889e3f549e14705f672
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f8df17f5927a6d35ea3332b1bd4824bd46aa0da
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770082"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512518"
 ---
 # <a name="set-up-the-dynamics-365-commerce-localization-for-russia"></a>ロシア向け Dynamics 365 Commerce ローカライズの設定
 
@@ -62,6 +62,9 @@ Modern POS 拡張コンポーネントを有効にするには、次の手順に
         "extensionPackages": [
             {
                 "baseUrl": "Microsoft/Addresses.RU"
+            },
+            {
+                "baseUrl": "Microsoft/FiscalCustomer.RU"
             }
         ]
     }
@@ -82,6 +85,9 @@ Cloud POS の拡張機能コンポーネントを **extensions.json** ファイ�
     "extensionPackages": [
         {
             "baseUrl": "Microsoft/Addresses.RU"
+        },
+        {
+            "baseUrl": "Microsoft/FiscalCustomer.RU"
         }
     ]
 }

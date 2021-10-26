@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 10 月 5 日
+          href: hr-whats-new-2021-10-04.md
         - name: 2021 年 9 月 20 日
           href: hr-whats-new-2021-09-20.md
         - name: 2021 年 9 月 6 日
@@ -405,7 +407,7 @@
                   href: hr-admin-integration-ats-api-certificate-type.md
                 - name: 当事者の連絡先
                   href: hr-admin-integration-ats-api-party-contact.md
-                - name: 名前
+                - name: 個人
                   href: hr-admin-integration-ats-api-person.md
                 - name: 住所
                   href: hr-admin-integration-ats-api-person-address.md

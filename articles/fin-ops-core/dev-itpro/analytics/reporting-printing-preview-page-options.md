@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2020-06-21
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 7cd5bf174c4ba59f2e13ca71ec55275845e6339535204a90b408ef1fbc6edcb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b9c27b9316c291e3b03f3a4c836d2d98dabd977b
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747555"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595413"
 ---
 # <a name="document-reporting-preview-options"></a>ドキュメント レポートのプレビュー オプション
 
@@ -34,7 +34,7 @@ Finance and Operations アプリは、埋め込み PDF ビューアーでのド�
 ドキュメントすべての相互作用のほぼ半数は、画面プレビューに関連しています。 使用可能なツールバー オプションは、サポートされているすべてのデバイスに対応しており、Finance and Operations アプリケーションによって表示されるドキュメントをエクスポートおよび印刷するためのシンプルで直観的なソリューションを提供します。
 
 ## <a name="file-export"></a>ファイルのエクスポート
-追加のユーザー オプションは、HTML ベースの **レポート ビューワー** コントロールで以前提供されていた機能に取って代わります。 これらのツールバー オプションを使用して、サポートされているさまざまな形式のファイルをエクスポートできます。 これには、Microsoft Word、Excel、HTML、CSV などが含まれます。 プリンター出力と一貫したレイアウトにするために、新しいモダン エクスペリエンスでは PDF ページネーション ルールを使用したドキュメントが表示されます。 詳細については、[レポートでのページネーション](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver15)を参照してください。
+追加のユーザー オプションは、HTML ベースの **レポート ビューワー** コントロールで以前提供されていた機能に取って代わります。 これらのツールバー オプションを使用して、サポートされているさまざまな形式のファイルをエクスポートできます。 これには、Microsoft Word、Excel、HTML、CSV などが含まれます。 プリンター出力と一貫したレイアウトにするために、新しいモダン エクスペリエンスでは PDF ページネーション ルールを使用したドキュメントが表示されます。 詳細については、[レポートでのページネーション](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)を参照してください。
 
 ## <a name="network-printing"></a>ネットワーク印刷
 **印刷** ボタンを使用してローカルに接続されたデバイスに印刷するか、またはツールバー オプションを使用してドキュメントをネットワーク プリンターに直接送信するかを選択できます。 ネットワーク印刷 オプションを使用すると、携帯電話などのインターネットに接続されたほとんどのデバイスからリモートでの作業中に、ネットワーク接続されたプリンターに対して印刷手順を開始できます。

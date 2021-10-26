@@ -4,22 +4,18 @@ description: この記事では、ダッシュボード、新しいナビゲー�
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 105091
-ms.assetid: 26f373fa-13b7-4f1b-ad16-95499d19874f
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f8dd7dfa401a85d09894914a5003e83bd7db63c626223c93720ff9438ff824f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee311e3521d15a7592a5a43702d8fdfb55c3090c
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749630"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595500"
 ---
 # <a name="navigation-concepts"></a>ナビゲーション概念
 
@@ -107,9 +103,10 @@ Windows 8 ではタイルの概念が導入され、クライアントで使用�
 -   指定したイメージのサイズはありません。 そのため、適切なサイズのイメージを作成して、タイルが正しく塗りつぶされるようにする必要があります。 現在、標準サイズタイルはそれぞれの側に 130 ピクセルの正方形です。
 
 ## <a name="navigation-search"></a>ナビゲーション検索
+
 ナビゲーション ウィンドウとダッシュボードに表示されるフォームやワークスペースを検索してナビゲートするための、便利な検索メカニズムがあります。 たとえば、キーワード「すべての販売注文」の検索は、これらのキーワードに一致するナビゲーション要素の一覧を返します。 
 
-[![キーワード検索の例。](./media/navsearchexample.png)](./media/navsearchexample.png) 
+[![「すべての販売注文」を使用したキーワード検索の例。](./media/navsearchexample.png)](./media/navsearchexample.png) 
 
 検索キーワードは、ナビゲーション要素のキャプションだけでなく、対応するパスにも一致します。 たとえば、キーワード「ven bal レポート」の検索は、キャプションで「仕入先残高」およびパスで「レポート」に一致する結果を返します。 
 

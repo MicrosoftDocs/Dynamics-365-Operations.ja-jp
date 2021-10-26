@@ -2,7 +2,7 @@
 title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
-ms.date: 08/27/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 39cecf4f1e6d185851f22275260bae17aaf919a2
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 7801a4833d0cad639a5919d86221f7b36bfa6d63
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441253"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599393"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -1587,7 +1587,10 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 
 **理由:** AOS は BI ノードで実行されているサービスの一覧を取得して、現在インストールされている SSRS のバージョンを探す必要があります。 AOS を実行するアカウントには、サービスの一覧を取得するための適切なアクセス許可が付与されていないので、失敗して serviceName を取得できません。
 
-**解決策:** LCS の共有資産ライブラリから使用できるインフラストラクチャ スクリプトのバージョン 2.11.0 がリリースされ、これらのアクセス許可が反映され、serviceName が取得可能になります。
+**解決策:** LCS の共有資産ライブラリから使用できるインフラストラクチャ スクリプトのバージョン 2.11.1 がリリースされ、これらのアクセス許可が反映され、serviceName が取得可能になります。
+
+> [!NOTE]
+> 2.11.0 のインフラストラクチャ スクリプトを使用した場合は、最新バージョンをダウンロードし、次の手順を再度実行します。
 
 #### <a name="automatically-add-these-permissions"></a>次のアクセス許可を自動的に追加します。
 1. LCS の共有アセット ライブラリから最新のインフラストラクチャ スクリプトをダウンロードします。
