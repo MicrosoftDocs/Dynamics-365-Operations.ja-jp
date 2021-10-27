@@ -1,6 +1,6 @@
 ---
 title: プロジェクト請求書の支払伝票形式の設定
-description: 通常、企業は、顧客に役立つように印刷した支払伝票を請求書に添付し、転記および決済用に支払参照を提供します。
+description: このトピックでは、印刷した支払伝票をプロジェクトの請求書に添付し、転記および決済用に支払参照を提供する方法について説明します。
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb0d1d95013b3eac3131064992920da5fa9bea5a1f6d554e6be1d5006a9b21fb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88bdce7697e47fc49b6ffb2fe6a8a468860f41f3
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732903"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601503"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>プロジェクト請求書の支払伝票形式の設定
 

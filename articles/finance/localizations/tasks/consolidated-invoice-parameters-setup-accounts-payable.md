@@ -1,6 +1,6 @@
 ---
 title: 月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定
-description: 日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。
+description: このトピックでは、月次締め請求書の設定と構成について説明します。
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cafd2a35ac52c9a932c9f5d987085cf9db7b340ae113dfa1b92f395891c74ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f2dfe2e571772f0418cd4a84fd1114fd6c54920
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753460"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601468"
 ---
 # <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable"></a>月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定
 

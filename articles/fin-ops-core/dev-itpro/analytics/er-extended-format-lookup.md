@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 59b2cc1dae5774322d47f76e1213f0e8c8a0b8b244a68c113e34484c1e59b209
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 395282eb267e7e356fca6087f99c6f193741ac9d
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767221"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605160"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>ユーザーがグローバル リポジトリから形式を照会する ER 形式の参照を設定できるようにする
 
@@ -34,27 +34,27 @@ ms.locfileid: "6767221"
 
 現在の Finance インスタンスにイントラスタット業務プロセスに関連する ER 形式が含まれていない場合、このルックアップ フィールドは空になります。
 
-[![対外貿易パラメーターのページ。](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![対外貿易パラメータ ページ (空のレポート形式のマッピング フィールド)。](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 現在の Finance インスタンスにイントラスタット業務プロセスに関連する ER 形式が含まれている場合、このルックアップ フィールドでは ER 形式が提供されます。
 
-[![対外貿易パラメーターのページ。](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![対外貿易パラメータ ページ (オプションを表示したレポート形式マッピング フィールド)。](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 このルックアップでは、現在の Finance インスタンスに既にインポートされている ER 形式のみが提供されます。 ER ソリューションを現在の Finance インスタンスに [インポート](./tasks/er-import-configuration-lifecycle-services.md) するには、ER 形式を含む ER ソリューションの [ライフサイクル](general-electronic-reporting-manage-configuration-lifecycle.md) をサポートする ER フレームワークの適切な機能を実行するためのアクセス許可を持っている必要があります。
 
 Finance 10.0.9 (2020 年 4 月リリース) 以降では、ER フレームワーク API を使用して実装される ER 形式検索のユーザー インターフェイスが拡張されました。 **形式のコンフィギュレーションの選択** クイックタブで既存の ER 形式を選択することもできます。 さらに、拡張検索は、グローバル レポジトリ (GR) を検索して特定の ER 形式を見つけるための新しいオプションを提供します。 GR のすべての ER 形式は、**グローバル リポジトリからのインポート** クイックタブで提供されます。
 
-[![対外貿易パラメーターのページ。](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![対外貿易パラメータ ページ ( グローバル リポジトリからインポート FastTab)。](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 **形式のコンフィギュレーションの選択** クイックタブと同様に、**グローバル リポジトリからのインポート** クイックタブには、このルックアップ フィールドで ER 形式が選択されている業務プロセスに適用される ER 形式のみが表示されます。 この例では、イントラスタット申告の生成です。 ER 形式は、会社の国コンテキストに応じて、ユーザーが現在ログインしている会社に対して適用されます。
 
 **グローバル リポジトリからのインポート** クイックタブで ER 形式を選択した場合、選択した ER 形式 [コンフィギュレーション](general-electronic-reporting.md#Configuration) は GR から現在の Finance インスタンスにインポートされます。
 
-[![対外貿易パラメーターのページ。](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![対外貿易パラメータ ページ (処理操作の注意点)。](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 インポートが正常に完了すると、インポートされた ER 形式への参照が、このルックアップ フィールドに格納されます。 初めて GR にアクセスする場合、提供されたリンクに従って、GR ストレージへのアクセスを管理するために使用される [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) にサインアップする必要があります。
 
-[![対外貿易パラメーターのページ。](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![対外貿易パラメータ ページ (RCS に登録するリンク)。](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 既定では、**グローバル リポジトリからのインポート** クイックタブには、パフォーマンス向上のために GR コンテンツに基づいて自動的に作成される一時的な記憶域から ER 形式のリストが表示されます。 これは、**グローバル リポジトリからのインポート** クイックタブを初めて開いた時に発生し、数秒かかることがあります。
 

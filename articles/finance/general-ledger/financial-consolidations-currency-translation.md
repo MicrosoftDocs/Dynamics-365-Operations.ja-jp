@@ -1,8 +1,8 @@
 ---
 title: 財務連結および通貨換算の概要
 description: このトピックでは、一般会計での財務連結と為替換算について説明します。
-author: aprilolson
-ms.date: 07/25/2019
+author: jiwo
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0df16db842c159b4db469139a0b5463a82e3fe07b4e23f8f7cf0272caaf23602
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
+ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748983"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7615938"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>財務連結および通貨換算の概要
 
@@ -182,5 +182,17 @@ ms.locfileid: "6748983"
 ## <a name="generating-consolidated-financial-statements"></a>連結された財務諸表の生成
 連結財務諸表を生成するシナリオの詳細については、[連結財務諸表の生成](./generating-consolidated-financial-statements.md) を参照してください。
 
+## <a name="performance-enhancement-for-large-consolidations"></a>大規模な連結のためのパフォーマンスの向上
+
+総勘定元帳のトランザクションが多い環境では、最適な動作速度よりも遅くなる可能性があります。 この問題を解決するには、ユーザーが定義した日付の数を使用するバッチの並列処理を設定します。 ソリューションが意図したとおりに動作することを確認するには、連結に拡張ポイントを追加して、日付範囲のコンテナを返すようにします。 ベースとなる実装では、連結の開始状態と終了日に使用する 1 つの日付範囲を含む必要があります。 基本実装の日付範囲は、ギャップや重複がないかどうかが検証されます。 この日付範囲は、会社ごとの並列バッチバンドルを作成するために使用されます。
+
+日付範囲の数は、組織の要件を満たわせてカスタマイズできます。 日付範囲の数をカスタマイズすると、配賦ロジックがないため、テストを簡素化することができ、既存のコードへの影響を最小限に抑えることができます。 新たに必要となるテストは、バッチバンドルの作成、日付範囲の検証、日付範囲のサブセットのテストです。これにより、最終的なバッチタスクに向けてバッチをまとめることができるかどうかを検証します。 
+
+この機能により、プロセスをバッチで実行すると、総勘定元帳の連結プロセスが強化されます。 この機能拡張により、連結を並行して処理できる複数のタスクに連結を分割することで、総勘定元帳連結プロセスのパフォーマンスを向上させました。 連結の既定の実行方法では、各タスクで 8 日間分の総勘定元帳活動を処理します。 一方で、拡張ポイントが追加されており、作成されるタスクの数をカスタマイズできるようになりました。
+
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、**機能の管理** ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
+
+- **モジュール:**  一般会計
+- **機能名:** 大規模な連結に向けたパフォーマンスの向上
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

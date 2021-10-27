@@ -1,6 +1,6 @@
 ---
 title: 仕入先月次締め請求書の再オープンと編集
-description: 日本では、連結プロセス中に請求書を見逃した場合、月次締め請求書を再オープンしてその請求書を追加する必要があります。
+description: このトピックでは、確認済の仕入先月次締め請求書を再度開いて変更する方法について説明します。
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9d9aebe2c9611c75bce3a2aec5d3ca232a14e43d9121afd4aae246547dd5816a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be15b40ba760cbeba083c4581ce5e7396bebe12a
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779775"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601431"
 ---
 # <a name="reopen-and-edit-a-vendor-consolidated-invoice"></a>仕入先月次締め請求書の再オープンと編集
 

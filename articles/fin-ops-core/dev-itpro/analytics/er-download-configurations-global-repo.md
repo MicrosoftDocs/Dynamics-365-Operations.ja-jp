@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6923954e2d287a16425a9f823e8f8800503735ec0b3837cff764cf8d6e752039
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724420"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605334"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする
 
@@ -63,7 +63,7 @@ ms.locfileid: "6724420"
     > [!NOTE]
     > **インポート** ボタンは、現在の Finance インスタンスにある ER コンフィギュレーション バージョンでは使用できません。
 
-    ![コンフィギュレーション レポジトリ ページ。](./media/er-download-configurations-global-repo-repository-content.png)
+    ![構成リポジトリ ページ (構成 FastTab)。](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>フィルター処理されたコンフィギュレーションをインポートする
 
@@ -77,7 +77,7 @@ ms.locfileid: "6724420"
 4. **コンフィギュレーション** クイック タブで、**インポート** を選択し、フィルタ処理されたコンフィギュレーションをグローバル リポジトリから現在のインスタンスにダウンロードします。
 5. **コンフィギュレーション** クイック タブで、**フィルタのリセット** を選択し、指定された選択条件をクリーンアップします。
 
-    ![コンフィギュレーション レポジトリ ページ。](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![構成リポジトリ ページ (Versions FastTab、インポート ボタン)。](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。 不整合の問題が検出されると、通知を受け取る場合があります。 インポートしたコンフィギュレーションのバージョンを使用する前に、問題を解決する必要があります。 詳細については、このトピックの関連リソースの一覧を参照してください。

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
+ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488086"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7644530"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -49,7 +49,7 @@ ms.locfileid: "7488086"
 Human Resources 試用環境を作成すると、テナントに Power Apps 試用環境も作成され、Human Resources 環境にリンクされます。 「TestDrive」という名前の Power Apps 環境には、Human Resources 環境と同じ試用期間があります。
 
 > [!NOTE]
-> 認証されたユーザーに Power Apps 試用環境を作成するアクセス許可が与えられていない場合、Human Resources 試用環境のプロビジョニングは失敗します。 ユーザーは、Power Platform 管理センターで、試用環境を作成できるユーザー グループに含まれている必要があります。 詳細については、[Power Platform 管理センターでの環境の作成と管理を行うユーザーの制御](//power-platform/admin/control-environment-creation)を参照してください。
+> 認証されたユーザーに Power Apps 試用環境を作成するアクセス許可が与えられていない場合、Human Resources 試用環境のプロビジョニングは失敗します。 ユーザーは、Power Platform 管理センターで、試用環境を作成できるユーザー グループに含まれている必要があります。 詳細については、[Power Platform 管理センターでの環境の作成と管理を行うユーザーの制御](/power-platform/admin/control-environment-creation)を参照してください。
 
 ## <a name="plan-human-resources-environments"></a>Human Resources の環境を計画する
 

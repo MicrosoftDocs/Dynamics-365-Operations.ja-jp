@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770023"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605233"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER 形式を調整してカスタム電子ドキュメントを生成
 
@@ -160,7 +160,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
     - **支払モデルのマッピング 1611** – このコンフィギュレーションには、実行時にデータ モデルがアプリケーション データが格納される方法を記述する[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components) ER コンポーネントが含まれています。
     - **BACS (英国)** – このコンフィギュレーションには、[形式](general-electronic-reporting.md#FormatComponentOutbound) と形式マッピング ER コンポーネントが含まれています。 形式コンポーネントは、レポートのレイアウトを指定します。 形式マッピング コンポーネントには、モデル データソースが含まれており、実行時にこのデータソースを使用することによってレポートのレイアウトがどのように入力されるかを指定します。
 
-![構成ページ。](./media/er-quick-start2-imported-solution1.png)
+![ツリーで利用可能な指定された ER の構成を表示する構成ページ。](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a> 処理用仕入先支払の準備
 
@@ -222,7 +222,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
 4. **ファイル形式** のクイックタブで、**一般的なエクスポート形式** のオプションを **はい** に設定します。
 5. **形式の構成のエクスポート** フィールドで、**BACS (英国)** 形式コンフィグレーションを選択します。
 
-    ![支払方法 - 仕入先ページ。](./media/er-quick-start2-method-of-payment1.png)
+    ![支払方法 - 標準形式を使用して仕入先の支払いを処理するための電子決済方法を設定する、仕入先ページ。](./media/er-quick-start2-method-of-payment1.png)
 
 6. **保存** を選択します。
 
@@ -273,7 +273,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
 
 **BACS (英国カスタム)** ER 形式コンフィギュレーションのバージョン 1.1.1 が作成されます。 このバージョンは **ドラフト** の[状態](general-electronic-reporting.md#component-versioning) で、編集することができます。 カスタム ER 形式の現在の内容は、Microsoft が提供する形式の内容と一致しています。
 
-![構成ページ。](./media/er-quick-start2-derived-format-configuration1.png)
+![BACS (英国カスタム) ER 形式のコ構成バージョン 1.1.1 の構成ページ。](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a> カスタム形式の編集
 
@@ -349,7 +349,7 @@ ER 形式のドラフト バージョンを使用するには、ER 形式を明�
 4. **ファイル形式** クイック タブで、**一般的な電子エクスポート形式** オプションを **はい** に設定します。
 5. **形式の構成のエクスポート** フィールドで、**BACS (英国カスタム)** 形式コンフィグレーションを選択します。
 
-    ![支払方法 - 仕入先ページ。](./media/er-quick-start2-method-of-payment2.png)
+    ![支払方法 - カスタム形式を使用して仕入先の支払いを処理するための電子決済方法を設定する、仕入先ページ。](./media/er-quick-start2-method-of-payment2.png)
 
 6. **保存** を選択します。
 
@@ -378,7 +378,7 @@ ER 形式のドラフト バージョンを使用するには、ER 形式を明�
 
         カスタム ER 形式の構造に従って、生成されたファイルの支払明細行は、支払が処理された仕入先の銀行アカウントに対して[入力](#DefineSWIFTCode) された SWIFT コードで[開始](#PositionSWIFTCode) されることに注意してください。
 
-        ![TXT 形式の支払ファイル。](./media/er-quick-start2-payment-file2.png)
+        ![仕入先の支払い処理に使用する TXT 形式の支払いファイル。](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a> 標準 ER 形式コンフィギュレーションの新バージョンをインポート
 
@@ -395,7 +395,7 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
 5. **バージョン** クイック タブで、選択した ER 形式コンフィギュレーションのバージョン **3.3** を選択します。
 6. **インポート** を選択して、グローバル リポジトリから現在の Finance インスタンスに選択したバージョンをダウンロードします。
 
-![コンフィギュレーション レポジトリ ページ。](./media/er-quick-start2-import-solution2.png)
+![構成リポジトリ ページ (Versions FastTab、インポート ボタン)。](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > [グローバル化 リポジトリ](er-download-configurations-global-repo.md) のアクセスに問題がある場合は、代わりに LCS から[コンフィグレーションをダウンロード](download-electronic-reporting-configuration-lcs.md) できます。
@@ -507,7 +507,7 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
 
         生成されたファイルの支払明細行は、支払が処理された仕入先の銀行アカウントに対して入力 された SWIFT コードで開始 されることに注意してください。
 
-        ![TXT 形式の支払ファイル。](./media/er-quick-start2-payment-file3.png)
+        ![再設定した ER 形式を使用して仕入先への支払い処理使用する TXT 形式の支払いファイル。](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>追加リソース
 

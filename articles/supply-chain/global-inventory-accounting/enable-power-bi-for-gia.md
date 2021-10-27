@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 562b56a85ad2f40cb673f8f2101bf92c39853d1f1a087d0498b6f7d19d1cca01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b00de29a4f12719e469c063861b52e0fc20c5f1
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773348"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641114"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>グローバル在庫会計の Power BI を有効にする
 
@@ -49,7 +49,10 @@ Power BI 統合を設定するには、次の手順に従います。
 1. 次の手順に従って **グローバル在庫会計** Power BI レポートを構成します。
 
     1. **マイ ワークスペース** に移動し、グローバル在庫会計のデータセットを検索してから **オプション** メニューで **設定** を選択します。
-    1. **グローバル在庫会計の設定** で、**パラメーター** を展開し、必要に応じてすべてのパラメーターを更新します。
+    1. **グローバル在庫会計の設定** で、**パラメーター** を展開し、必要に応じてすべてのパラメーターを更新します。 特に、次の設定を確認してください:
+        1. 既定の **Dataverse Url** と **環境 Id** の値を、LCS (**Power Platform の統合** セクション内) の **環境の詳細** ページにある値で上書きします。
+        1. **データ ソースの資格情報** セクションの **Cds** ラベルの **横の資格情報の編集** リンクを選択します。 続いて、**OAuth2** の認証方式を使用してで Dataverse アカウントにサインインします。
+    1. **マイ ワークスペース \> レポート \> グローバル在庫会計** にある Power BI レポートが正しく動作し、システムのコンテンツが表示されていることを確認します。
 
 1. [PowerBI.com 統合のコンフィギュレーション](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process) で説明されているようにアプリケーションを登録します。
 1. 次の手順に従って、**グローバル在庫会計** Power BI レポート ファイルを Dynamics 365 Supply Chain Management に統合します。

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9972c5761a8445c6802f58b0ffad6226cf8ee38c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 14f0e07913af708e9eb3491ab4bc99e85462e5dd
+ms.sourcegitcommit: fcb1aa39e933216dea9e586b552bce6057f416a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568690"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645809"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>組み込みマスター計画と計画最適化の違い
 
@@ -29,7 +29,7 @@ ms.locfileid: "7568690"
 | 拡張可能な分析コード | 計画オーダーで拡張分析コードは、**分析コードによる補充計画** チェックボックスが **保管分析コード グループ** または **追跡分析コード グループ** ページで、選択されている場合でも空です。 |
 | フィルター処理された生産実行 | 詳細については、[生産計画 - フィルター](production-planning.md#filters) を参照してください。 |
 | 予測計画 | 予測計画はサポートされていません。 予測モデルをマスター プランに割り当てる場合は、マスター プランを使用することをお勧めします。 |
-| 計画されたオーダーの番号シーケンス | 計画されたオーダーに対する番号シーケンスはサポートされていません。 サービス側で計画されたオーダー番号が生成されます。 |
+| 計画されたオーダーの番号シーケンス | 計画されたオーダーに対する番号シーケンスはサポートされていません。 サービス側で計画されたオーダー番号が生成されます。 通常、計画オーダー番号は 10 桁で表示されますが、実際には 20 文字で構成され、計画の実行カウントには 10 桁が割り当て、計画オーダー カウントの他の 10 桁が割り当てられます。 |
 | コピーの計画、計画の削除、および計画バージョン クリーンアップ | <p>次の項目は、ナビゲーション ウィンドウの **マスター計画 \> マスター計画 \> 計画の維持** で無効になっています。</p><ul><li>コピーの計画</li><li>計画の削除</li><li>計画バージョンのクリーンアップ</li></ul> |
 | 返品注文 | 返品注文は考慮されません。 |
 | 関連機能のスケジューリング | 詳細については、[無限能力を使用したスケジューリング](infinite-capacity-planning.md#limitations) を参照してください。 |

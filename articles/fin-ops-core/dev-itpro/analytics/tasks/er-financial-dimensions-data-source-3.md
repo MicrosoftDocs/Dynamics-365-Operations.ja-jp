@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 548eec45739a52d4eb168a80660540196225b2ed482d2104a4cd0d00503109dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773791"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605188"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
 
@@ -92,7 +92,7 @@ ms.locfileid: "6773791"
 59. [属性を加える] をクリックします。
 60. [名称] フィールドに説明を入力します。
 61. [OK] をクリックします。
-![ER Operations デザイナーのページ。](../media/er-financial-dimensions-guides-format1.png)
+![形式デザイナー ページ ツリー。](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>レポートエレメントをデータソースにマッピングする
 1. [マッピング] タブをクリックします。
@@ -141,7 +141,7 @@ ms.locfileid: "6773791"
 44. [バインド] をクリックします。
 45. 保存 をクリックします。
 46. ページを閉じます。
-![ER Operations デザイナーのページ。](../media/er-financial-dimensions-guides-format2.png)
+![形式デザイナー ページ (データソースにマッピングされたレポート要素)。](../media/er-financial-dimensions-guides-format2.png)
 
 
 

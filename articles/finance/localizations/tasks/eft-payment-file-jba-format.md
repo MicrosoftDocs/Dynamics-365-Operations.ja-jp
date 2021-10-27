@@ -1,6 +1,6 @@
 ---
 title: JBA 形式で EFT 支払ファイルを生成
-description: 日本では一般的に、銀行間の電子資金決済 (EFT) には全国銀行協会 (JBA) のファイル形式が使用されています。
+description: このトピックでは、JBA 形式の EFT ファイルを生成する方法を説明します。
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ecef07dbac62607afac653721673f450c67a4183716af29f893740201562e5ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee72ee3e327ef2e499cfc29acdf0e8ce9abfbbe
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782800"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601507"
 ---
 # <a name="generate-eft-payment-file-with-jba-format"></a>JBA 形式で EFT 支払ファイルを生成
 
