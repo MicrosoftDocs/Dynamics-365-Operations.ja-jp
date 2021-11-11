@@ -1,7 +1,7 @@
 ---
 title: 固定資産ホーム ページ
-description: 固定資産は、個人または組織が所有する、価値のある品目です。 品目には、建物、車両、土地、設備が含まれます。
-author: ShylaThompson
+description: このトピックでは、Microsoft Dynamics 365 Finance で固定資産を扱う際に役立つリソースをご案内します。
+author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,21 +14,21 @@ ms.custom:
 - intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
-ms.author: roschlom
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c483073c924a9a881a3d2668d41614703046f718746f5f439accc3646f6f822
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753555"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674854"
 ---
 # <a name="fixed-assets-home-page"></a>固定資産ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-固定資産は、個人または組織が所有する、価値のある品目です。 品目には、建物、車両、土地、設備が含まれます。 
+このトピックでは、Microsoft Dynamics 365 Finance で固定資産を扱う際に役立つリソースをご案内します。 固定資産は、個人または組織が所有する、価値のある品目です。 品目には、建物、車両、土地、設備が含まれます。 
 
 固定資産の取得情報を設定して入力した後、減価償却を行い、減価償却を判断するための資本化のしきい値を設定することによって資産を管理できます。 固定資産の調整を算出し、さらに処分することもできます。 固定資産と一般会計を併せて使用すると、すべての固定資産の現在の価値を表示できます。 固定資産を処理する方法は、国際会計基準およびそれぞれの国や地域の会計法の両方に準拠する必要があります。 要件として、取得と処分のトランザクション、減価償却、有効期間、固定資産の帳簿価格引上と償却の記録方法などがあります。 固定資産の機能は、これらの標準とルールの多くを取り入れています。
 

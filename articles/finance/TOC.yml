@@ -74,12 +74,12 @@
                   items:
                     - name: Finance の新機能や変更された機能に関するホーム ページ
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.23
+                      href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (2021 年 11 月)
                       href: get-started/whats-new-changed-10-0-22.md
                     - name: Finance 10.0.21 (2021 年 10 月)
                       href: get-started/whats-new-changed-10-0-21.md
-                    - name: Finance 10.0.20 (2021 年 8 月)
-                      href: get-started/whats-new-changed-10-0-20.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -240,7 +240,11 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: 仕入先請求書の自動化の設定オプション
                   href: accounts-payable/vnd-invoice-set-up-options.md
-                - name: ワークフロー システムに請求書を送信し、製品受領書行を照合
+                - name: 仕入先請求書の概要に、前払を自動で適用する
+                  href: accounts-payable/apply-prepymnts-overview.md
+                - name: 仕入先請求書のインポート時に請求書明細行を生成する
+                  href: accounts-payable/auto-create-invc-lines-at-import.md
+                - name: ワークフロー システムに請求書を送信し、製品受領明細行と照合する
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: 仕入先請求書の自動化の結果を表示
                   href: accounts-payable/view-automated-vendor-invoice.md
@@ -272,6 +276,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: 仕入先転記プロファイル
               href: accounts-payable/vendor-posting-profiles.md
+            - name: 仕入先請求書の日付
+              href: accounts-payable/vendor-invoice-dates.md
             - name: 買掛金勘定と売掛金勘定の外貨再評価
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: モバイルによる請求書承認
@@ -384,27 +390,27 @@
               href: accounts-receivable/set-up-bills-exchange.md
             - name: 売掛金勘定の決算
               href: accounts-receivable/close-accounts-receivable.md
-            - name: 収益認識基準
+            - name: 売上認識基準
               items:
-                - name: 収益認識の概要
+                - name: 売上認識の概要
                   href: accounts-receivable/revenue-recognition-overview.md
-                - name: 収益認識の設定
+                - name: 売上認識の設定
                   href: accounts-receivable/revenue-recognition-setup.md
-                - name: 繰延収益の認識
+                - name: 繰延売上の認識
                   href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
-                - name: 販売注文の収益認識
+                - name: 販売注文の売上認識
                   href: accounts-receivable/revenue-recognition-so-basics.md
-                - name: 収益認識のバンドル
+                - name: 売上認識のバンドル
                   href: accounts-receivable/rev-rec-bundles.md
-                - name: 収益認識の再配賦
+                - name: 売上認識の再配賦
                   href: accounts-receivable/rev-rec-reallocation.md
-                - name: 収益認識の再配賦 – シナリオ 1
+                - name: 売上認識の再配賦 – シナリオ 1
                   href: accounts-receivable/rev-rec-reallocation-scenario-1.md
-                - name: 収益認識の再配賦 – シナリオ 2
+                - name: 売上認識の再配賦 – シナリオ 2
                   href: accounts-receivable/rev-rec-reallocation-scenario-2.md
-                - name: 収益認識の再配賦 – シナリオ 3
+                - name: 売上認識の再配賦 – シナリオ 3
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
-                - name: 収益認識の再配賦 – シナリオ 4
+                - name: 売上認識の再配賦 – シナリオ 4
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
             - name: 支払と決済
               items:
@@ -624,7 +630,7 @@
               href: cost-accounting/cost-accounting-home-page.md
             - name: 原価会計用語
               href: cost-accounting/terms-cost-accounting.md
-            - name: 会計カレンダー、会計年度、および会計年度期間
+            - name: 会計カレンダー、会計年度、および会計期間
               href: budgeting/fiscal-calendars-fiscal-years-periods.md
             - name: 財務分析コード
               href: general-ledger/financial-dimensions.md
@@ -990,6 +996,8 @@
                   href: general-ledger/tasks/create-main-account.md
                 - name: 勘定科目表の計画
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: ローカル勘定科目表の計画
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: 勘定科目間でのトランザクションの決済
                   href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
                 - name: 勘定科目のエイリアスの設定
@@ -1010,7 +1018,7 @@
                   href: budgeting/consolidation-account-groups-consolidation-accounts.md
                 - name: 連結と削除の概要
                   href: budgeting/consolidation-elimination-overview.md
-                - name: 会計カレンダー、会計年度、および会計年度期間
+                - name: 会計カレンダー、会計年度、および会計期間
                   href: budgeting/fiscal-calendars-fiscal-years-periods.md
                 - name: 勘定構造のコンフィギュレーション
                   href: general-ledger/configure-account-structures.md
@@ -1104,6 +1112,8 @@
                   href: general-ledger/enable-delayed-tax-calculation.md
                 - name: 消費税支払の作成
                   href: general-ledger/tasks/create-sales-tax-payment.md
+                - name: カスタマイズした通貨の小数点以下の桁数に基づく税決済の丸め
+                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
                 - name: ドキュメントの消費税トランザクションの作成
                   href: general-ledger/tasks/create-sales-tax-transactions-documents.md
                 - name: 消費税の元帳転記グループの設定
@@ -1546,6 +1556,8 @@
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: メキシコ用電子請求の使用を開始する
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: サウジアラビア用電子請求の使用を開始する
+                          href: localizations/e-invoicing-sa-get-started.md
                         - name: 電子請求サービスを使用して仕入先請求書をインポートする
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: 電子請求の設定
@@ -1568,6 +1580,8 @@
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: 消費税の適用と消費税グループの決定ロジック
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                        - name: 現金割引の計算設定で税務署パラメーターを使用する
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
                     - name: 計算
                       items:
                         - name: 価格に税金が含まれる場合の価格上の税金の計算が有効
@@ -1594,6 +1608,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU 販売リスト
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: スペインの申告
+                          items:
+                            - name: 'VAT に関する情報の即時提供 (Suministro Inmediato de Información del IVA, SII)'
+                              href: localizations/emea-esp-sii-spain.md
                         - name: スウェーデンの申告
                           items:
                             - name: VAT 申告
@@ -1604,25 +1622,31 @@
                               href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: イギリスの申告
                           items:
-                            - name: VAT の MTD 統合の準備
-                              href: localizations/emea-gbr-mtd-vat-integration.md
+                            - name: VAT 申告
+                              href: localizations/emea-gbr-vat-declaration.md
                     - name: 移動オーダーに対する税計算の有効化
                       items:
                         - name: 移動オーダーに対する税金機能のサポート
                           href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                        - name: 移動オーダー ドキュメントに税情報を印刷する
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
                     - name: 拡張機能
                       items:
                         - name: 税コンフィギュレーションへのデータ フィールドの追加
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: 拡張機能を使用した税統合へのデータ フィールドの追加
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                        - name: マスター データ検索に使用する税構成のカスタマイズ
+                          href: localizations/customize-tax-configurations-master-data-lookup.md
+                    - name: 税計算に関するよく寄せられる質問
+                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: 規制の更新
               href: localizations/regulatory-updates.md
             - name: オーストラリア
               items:
                 - name: オーストラリアの概要
                   href: localizations/australia.md
-                - name: オーストラリアの銀行の銀行ファイル形式
+                - name: オーストラリアの銀行で使用する銀行ファイル形式
                   href: localizations/apac-aus-bank-file-formats.md
                 - name: 事業活動報告書 (BAS)
                   href: localizations/apac-aus-business-activity-statement.md
@@ -1684,6 +1708,8 @@
                   href: localizations/emea-bel-prodcom-report.md
                 - name: 国内販売の年次 VAT リスト
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+                - name: ベルギーのイントラスタット
+                  href: localizations/emea-bel-intrastat.md
             - name: ブラジル
               items:
                 - name: ブラジルの概要
@@ -2312,6 +2338,8 @@
                   href: localizations/apac-ind-scope.md
                 - name: インドのローカライズに関する新機能および変更された機能
                   items:
+                    - name: 10.0.20 - 10.0.22 の新機能または変更された機能
+                      href: localizations/ind-news-letter-10-0-20-22.md
                     - name: 10.0.15 - 10.0.19 の新機能または変更された機能
                       href: localizations/ind-news-letter-10-0-15-19.md
                     - name: 10.0.14 の新機能または変更された機能
@@ -2680,6 +2708,12 @@
                           href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
                         - name: TDS トランザクションの証明書の番号と日付の更新
                           href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+            - name: インドネシア
+              items:
+                - name: インドネシアの概要
+                  href: localizations/indonesia.md
+                - name: インドネシアの VAT 申告
+                  href: localizations/apac-idn-ppn-declaration.md
             - name: イタリア
               items:
                 - name: イタリアの概要
@@ -3024,6 +3058,8 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: VAT 申告 (オランダ)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: オランダのイントラスタット
+                  href: localizations/emea-nl-intrastat.md
                 - name: EU 販売リスト
                   href: localizations/emea-nl-EU-sales-list.md
             - name: ニュージーランド
@@ -3352,6 +3388,8 @@
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: 銀行ドキュメントの諸費用の出荷への割り当て
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+                - name: サウジアラビアの顧客電子請求書
+                  href: localizations/emea-sau-e-invoices.md
             - name: シンガポール
               items:
                 - name: シンガポールの概要
@@ -3378,6 +3416,8 @@
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
                 - name: EU 内 VAT
                   href: localizations/emea-esp-intra-community-vat.md
+                - name: スペインのイントラスタット
+                  href: localizations/emea-esp-intrastat.md
                 - name: 一時顧客
                   href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
                 - name: スペインのレイアウトでの小切手の印刷
@@ -3458,32 +3498,30 @@
                       href: localizations/tasks/gb-00002-sales-order.md
                     - name: 受取人払い VAT の品目消費税グループの設定
                       href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                    - name: 受取人払い VAT の品目グループ、ルール、およびパラメーターの設定
+                    - name: 受取人払い VAT 品目のグループ、ルール、およびパラメーターの設定
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: 受取人払い VAT の消費税グループの設定
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: イギリスの申告
+                - name: VAT に関する税のデジタル化 (MTD)
                   items:
-                    - name: VAT に関する税のデジタル化 (MTD)
-                      items:
-                        - name: 英国における税のデジタル化 (MTD) VAT 還付申請
-                          href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: HMRC の MTD VAT Web サービスとの相互運用を行う環境の準備
-                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: MTD VAT 用の電子メッセージのセットアップのチェックリスト
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: MTD VAT サンドボックスとの相互運用テスト
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: HMRC の MTD Web サービスと相互運用を行うための Finance 環境の承認
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: HMRC の MTD Web サービスに VAT 還付を申請する
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: VAT の支払および負債に関する情報を HMRC から取得する
-                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-                        - name: 英国での VAT 申告に関する VAT 設定の詳細
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                        - name: VAT 申告を用紙形式で生成する (VAT 100 レポート)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                    - name: 英国における税のデジタル化 (MTD) VAT 還付申請
+                      href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: HMRC の MTD VAT Web サービスとの相互運用を行う環境の準備
+                      href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                    - name: MTD VAT 用の電子メッセージのセットアップのチェックリスト
+                      href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                    - name: MTD VAT サンドボックスとの相互運用テスト
+                      href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                    - name: HMRC の MTD Web サービスと相互運用を行うための Finance 環境の承認
+                      href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                    - name: HMRC の MTD Web サービスに VAT 還付を申請する
+                      href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                    - name: VAT の支払および負債に関する情報を HMRC から取得する
+                      href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                    - name: 英国での VAT 申告に関する VAT 設定の詳細
+                      href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                    - name: VAT 申告を用紙形式で生成する (VAT 100 レポート)
+                      href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: 支払プラクティス レポートの統計
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: 米国
@@ -3725,7 +3763,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: 採用
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: 販売と収益性のパフォーマンス
+                - name: 販売と売上性のパフォーマンス
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: 仕入先支払
                   href: accounts-payable/Vendor-payments-workspace.md
@@ -3877,6 +3915,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
                         - name: DateTimeFormat
@@ -4003,9 +4043,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/finance/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                        - name: 連結
+                        - name: Concatenate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/finance/toc.json
-                        - name: 形式
+                        - name: Format
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
@@ -4021,6 +4061,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
                         - name: NumeralsToText
@@ -4421,7 +4463,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                     - name: アプリケーション更新プログラム 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
-                - name: 生成されるドキュメントに対するカスタムの保存場所を指定する
+                    - name: アプリケーション更新プログラム 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
+                - name: 生成したドキュメントに対してカスタム保存場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
@@ -4431,8 +4475,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: USER INPUT PARAMETER タイプのデータ ソース値をソース コードから開始する
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
-                - name: コードを変更して、ユーザーが名前付き送信先を構成して使用できるようにする
+                - name: コードを変更して、ユーザーが名前付き送信先を構成して使用可能にする
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                - name: 受信したドキュメントのカスタム ER ソースを実装する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: モバイル アプリ
           items:
             - name: モバイル アプリのホーム ページ
@@ -4673,7 +4719,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-track-time-for-fmla.md
             - name: 給与処理のタスク
               items:
-                - name: 収益および利益生成に関するよく寄せられる質問
+                - name: 売上および利益生成に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-earnings-generation-process.md
                 - name: 作業者の所得の生成
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-earnings.md
