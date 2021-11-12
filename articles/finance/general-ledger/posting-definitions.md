@@ -1,7 +1,7 @@
 ---
 title: 転記の定義
-description: この記事では、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。 サポートされている転記タイプと文書については、転記プロファイルの代わりに転記の定義を使用して、勘定項目の主勘定および財務分析コードを分類できます。
-author: ShylaThompson
+description: このトピックでは、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。 サポートされている転記タイプと文書については、転記プロファイルの代わりに転記の定義を使用して、勘定項目の主勘定および財務分析コードを分類できます。
+author: kweekley
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 15741
 ms.assetid: 1495e7e0-2e39-464c-8da9-f55b1ca1c6bb
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22a261c1ac139d5caa51e05ff90675eca89e40fd804ff7e87a7c69a18c1f3e4e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d409f154823a74e032adb71253ce97f8e3b2f101
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753507"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726969"
 ---
 # <a name="posting-definitions"></a>転記の定義
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。
+このトピックでは、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。
 サポートされている転記タイプと文書については、転記プロファイルの代わりに転記の定義を使用して、勘定項目の主勘定および財務分析コードを分類できます。 サポートされる文書および転記タイプは、**トランザクションの転記の定義** ページで表示できます。 
 
 転記の定義の使用を開始するには、**総勘定元帳パラメーター** ページで **転記の定義の使用** オプションを選択します。 転記の定義を使用する場合でも、元のエントリの転記プロファイルと、サポートされない転記タイプとドキュメントを定義する必要があります。 

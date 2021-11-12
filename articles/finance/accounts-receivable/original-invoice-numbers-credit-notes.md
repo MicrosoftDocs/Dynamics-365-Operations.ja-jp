@@ -2,7 +2,7 @@
 title: 貸方票での元の請求書への参照
 description: このトピックでは、元の請求書番号を関連する貸方表に設定・印刷する方法について説明します。
 author: ilkond
-ms.date: 01/12/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6a5ac50c996f92f5cfa569ad00fa4b911827fd4ec8bddb2442bbd6ac67d1f33f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7147c5bea5273f385b004effe0844b5f4541a881
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723850"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700358"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>貸方票での元の請求書への参照
 
@@ -95,5 +95,10 @@ ms.locfileid: "6723850"
 > [!NOTE]
 > 請求書の原本への参照が印刷されることを前提として、文書の印刷可能な形式が正しく設定されていることを確認してください。
 
+## <a name="references-to-original-invoices-in-debit-notes"></a>借方票での元の請求書への参照
+
+既定では、元の請求書への参照を訂正票に入力できます。 たとえば、元の請求書に対してマイナス (減少) 修正を行う場合に参照を入力できます。
+
+元の請求書に対してプラス (増加) 修正を行う場合に参照を入力するには、**機能管理** ワークスペースで **借方票での元の請求書への参照** 機能を有効にする必要があります。  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

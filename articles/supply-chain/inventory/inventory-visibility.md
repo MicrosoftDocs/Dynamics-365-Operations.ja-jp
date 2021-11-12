@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dfc1bc0d457d0b0b2632aa2e2e5ba6a3c2f3fae7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1ea1d8c1b0e8c996ead8461005960fa756ce6ca7
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575174"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678912"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>在庫の可視化アドイン概要
 
@@ -45,8 +45,6 @@ Microsoft Dataverse に構築されるマイクロサービスとして、在庫
 - 手持在庫リストを表示します。 このリストは、定期的にキャッシュされたインスタンスと同期され、Dataverse で表示されます。 詳細については、[在庫の可視化アプリ](inventory-visibility-power-platform.md) を参照してください。
 
 ## <a name="soft-reservations"></a>仮引当
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 仮引当は、過剰販売を回避する販売注文のフルフィルメントなど、サポートする特定の数量の製品をビジネスが引当する必要がある場合に適用されます。 Supply Chain Management または他の注文管理システムで販売注文が作成および確認されると、数量を引当する要求が在庫の可視化に送信されます。 在庫の可視化により、分析コードの詳細および特定の在庫トランザクション タイプを持つ製品の引当を行うことができます。 (詳細については、[在庫の可視化アプリ](inventory-visibility-power-platform.md) を参照してください。) 数量が正常に引当されると、引当 ID が返されます。 この引当 ID を使用して、Supply Chain Management または他の注文管理システムの元の注文にリンクすることができます。
 

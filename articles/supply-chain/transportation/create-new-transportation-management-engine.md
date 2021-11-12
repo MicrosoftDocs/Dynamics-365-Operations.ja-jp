@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TMSGenericEngine, TMSRateEngine, TMSMileageEngine, TMSEngineParameters
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.custom: 51661
 ms.assetid: 0473acef-755e-4b42-acf5-5e5aa902dc0e
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 745353af4517c88c3fc0ed94fde777e40f0d4f2a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 88661b6a974e2bd60f78e38d49a08d3290008b8b
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574943"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651547"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 

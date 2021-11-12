@@ -6,19 +6,19 @@ ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 4bf0d130ec3d251826c5d65fc9d26181f4e3cc9b280f2098e60c40c6cc4fbdde
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ecf4bf884bca80cabb066ae43d38cd9c0e159216
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752598"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651545"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 

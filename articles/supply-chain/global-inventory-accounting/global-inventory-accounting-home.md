@@ -10,17 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3e1dbb97ba56b5910dda368b9ec15e27a683dde5
-ms.sourcegitcommit: 5c0a0adeb859cc1ade6f067444f3bf08a895b35a
+ms.openlocfilehash: 954a3bcdf6ad163afd2596227ce2c8548fe37027
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7557395"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678498"
 ---
 # <a name="global-inventory-accounting-home-page"></a>グローバル在庫会計ホーム ページ
 
-[!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 国際的な組織は、当局からのローカルおよびグローバルの会計基準に準拠する必要性が高まっています。 在庫の評価は、コンプライアンスを保証する上で重要な役割を果たします。 Microsoft Dynamics 365 Supply Chain Management 用のグローバル在庫会計アドインは、組織 (特に国際的な組織) が複数の原価元帳を使用して在庫会計を行うことを可能にする包括的なソリューションを提供します。 したがって、それらの組織は複数の会計基準と内部管理会計とに同時に準拠できます。
 

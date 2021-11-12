@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: fa61a20ffd9a31f800c48b71832be7547952119f
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 0ae5c8a2eea84a9aa707f7c2f6f29950f2f48faa
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472637"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675120"
 ---
 # <a name="order-lookup-module"></a>注文検索モジュール
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、注文検索モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 
@@ -34,11 +33,11 @@ ms.locfileid: "7472637"
 
 ![ページ上の注文検索モジュールのフォーム。](./media/OrderLookup_module.PNG)
 
-## <a name="order-lookup-module-properties&quot;></a>注文検索モジュールのプロパティ
+## <a name="order-lookup-module-properties"></a>注文検索モジュールのプロパティ
 
 | プロパティ名     | 先頭値     | 説明 |
 |-------------------|-----------|-------------|
-| ヘッダー           | テキスト      | フォームの上部に表示されるヘッダー (たとえば、&quot;注文の検索")。 |
+| ヘッダー           | テキスト      | フォームの上部に表示されるヘッダー (たとえば、"注文の検索")。 |
 | リッチ テキスト         | リッチ テキスト | ヘッダーの下部にオプションで表示される説明。 |
 | 注文のステータス タイプ | Enum      | <p>注文確認 ID に加えて、フォームから顧客に要求される情報のタイプを選択します。 次の値が現在サポートされています:</p><ul><li><b>電子メール</b> – このフォームには、顧客が注文を行った際に使用した電子メール アドレスを入力できるフィールドが含まれます。</li><li><b>なし</b> – このフォームでは、注文確認 ID 以外の情報は要求されません。</li></ul> |
 

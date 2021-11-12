@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: db1d9d2cddfab5ca5abb50cc3ecb9c841e06b8b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580987"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647317"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Management 10.0.20 (2021 年 8 月) の新機能または変更された機能
 
@@ -46,7 +46,7 @@ ms.locfileid: "7580987"
 
 次の表に、このリリースに含まれる機能拡張の一覧を示します。 これらの機能は、それぞれ既存の機能を段階的に改善します。 これらは拡張機能にすぎないため、[リリース計画](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) には記載されません。 ただし、これらの拡張機能が既存のカスタマイズや基本設定と競合しないように、各機能は (特に断りのない限り) 既定でオフになっています。 これらの機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で明示的にそれらを有効にする必要があります。
 
-| 機能領域 | 機能&nbsp;管理の機能&nbsp;名&nbsp; | 詳細 |
+| モジュール | 機能&nbsp;管理の機能&nbsp;名&nbsp; | 詳細 |
 |---|---|---|
 | マスター プラン | 調整された需要予測の並列承認 | この機能により、**調整された需要予測** ページから調整済需要予測を並行して承認できます。 この機能の目的は、多数の予測が承認されている場合のパフォーマンスを向上させることです。 承認時に、ユーザーは、承認するダイアログで **スレッド数** を指定できます。 |
 | マスター プラン | (プレビュー) 計画バルク オーダーおよび梱包バッチ オーダーのバッチ処理可能な確定と連結 | この機能を使用すると、バッチ ジョブを使用して、計画バルク オーダーと梱包オーダーを確定および連結できます。 |

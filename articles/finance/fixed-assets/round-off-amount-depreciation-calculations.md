@@ -1,7 +1,7 @@
 ---
 title: 減価償却計算の丸め金額
-description: この記事は、帳簿設定ページの [減価償却の丸め] フィールドについて説明します。
-author: ShylaThompson
+description: このトピックでは、帳簿設定ページの [減価償却の丸め] フィールドについて説明します。
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13931
 ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a99a55e58294f765b606aaabb373cc3f72415ef4ed94c213ebc8cd58af6157ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3df48fc7bb092b0257c4652a8c67d1d740dbcfe
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719759"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674336"
 ---
 # <a name="round-off-amount-for-depreciation-calculations"></a>減価償却計算の丸め金額
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、帳簿設定ページの [減価償却の丸め] フィールドについて説明します。
+このトピックでは、**帳簿設定** ページにある **減価償却の丸め** フィールドについて説明します。
 
 減価償却の丸め金額は各帳簿で設定されます。 減価償却の丸め金額は、固定資産の将来の減価償却と価値を示す固定資産減価償却プロファイルで使用されます。 この帳簿で許可される減価償却の最小金額を入力します。 
 

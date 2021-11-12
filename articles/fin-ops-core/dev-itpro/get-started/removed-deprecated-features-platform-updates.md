@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
+ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595148"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7725052"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -31,6 +31,64 @@ ms.locfileid: "7595148"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="feature-removal-effective-october-2021"></a>2021 年 10 月に機能削除
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure Lifecycle Services (LCS) の SQL レポート
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | すべての活動と監視は、自動化機能によってプラットフォーム内部で実施されます。 手動操作による確認は必要ありません。|
+| **別の機能で置き換えられているか?**   | はい、現在では自動化されたシステムがあるため、これらの機能は廃止されています。 |
+| **影響を受ける製品領域**         | SQL レポート: 現在の DTU、現在の DTU の詳細、ロックの詳細の取得、現在のプラン ガイドの一覧、クエリ ID のリストの取得、特定プラン ID の SQL クエリ プランの取得、クエリ プランおよび実行状態の取得、スロット コンフィギュレーションの取得、待機統計の取得、最も高価なクエリのリスト |
+| **配置オプション**              | クラウド配置: Microsoft によって管理される運用環境およびレベル 2 からレベル 5 のサンドボックス環境に影響します。 |
+| **状態**                         | 削除済 |
+
+### <a name="azure-sql-actions-in-lcs"></a>LCS での Azure SQL アクション
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | LCS の一部の SQL アクションは非推奨になりました。 すべての活動と監視は、自動化機能によってプラットフォーム内部で実施されます。 手動操作による確認は必要ありません。 |
+| **別の機能で置き換えられているか?**   | はい、現在では自動化されたシステムがあるため、これらの機能は廃止されています。 |
+| **影響を受ける製品領域**         | SQL アクション: プラン ID を強制するプラン ガイドの作成、テーブル ヒントを追加するプラン ガイドの作成、プラン ガイドの削除、ページ ロックおよびロック エスカレーションの無効化/有効化、エスカレーションのロック、テーブルでの統計の更新、インデックスの再構築、インデックスの作成 |
+| **配置オプション**              | クラウド配置: Microsoft によって管理される運用環境およびレベル 2 からレベル 5 のサンドボックス環境に影響します。 |
+| **状態**                         | 削除済 |
+
+
+## <a name="feature-deprecation-effective-october-2021"></a>2021 年 10 月に廃止される機能
+
+### <a name="show-related-document-attachments-feature"></a>「関連するドキュメントの添付ファイルの表示」機能
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | この機能は予期しない結果を返していました。 |
+| **別の機能で置き換えられているか?**   | いいえ。 この機能に関する今後の計画については、標準リリース サイクルの開示プロセスを通じて通知されます。 |
+| **影響を受ける製品領域**         | Web クライアント - ドキュメント添付ファイルのエクスペリエンス |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨  |
+
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.23 に対する Platform update
+
+### <a name="ondbsynchronize-event"></a>OnDBSynchronize イベント
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | このイベントを実行するコントロールはありません。 |
+| **別の機能で置き換えられているか?**   | はい、**OnDBSynchronzie** イベントによってサブスクライブされた既存のメソッドを SysSetup 拡張クラスに移動します。 |
+| **影響を受ける製品領域**         | データベース同期 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨。 削除予定日は 2022 年 10 月です。 |
+
+
+### <a name="systemnotificationsmanageraddnotification-api"></a>SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Microsoft では、通知を追加するときに追加のパラメータが必要です。 |
+| **別の機能で置き換えられているか?**   | はい、**SystemNotificationsManager.AddSystemNotification()** API です。 この API では、生成される通知に ExpirationDateTime および RuleID を明示的に設定する必要があります。 |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨。 削除予定日は 2023 年 4 月です。 |
 
 ## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.21 に対する Platform update
 
@@ -54,7 +112,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | はい、現在では自動化されたシステムがあるため、これらの機能は廃止されています。 |
 | **影響を受ける製品領域**         | SQL レポート: 現在の DTU、現在の DTU の詳細、ロックの詳細の取得、現在のプラン ガイドの一覧、クエリ ID のリストの取得、特定プラン ID の SQL クエリ プランの取得、クエリ プランおよび実行状態の取得、スロット コンフィギュレーションの取得、待機統計の取得、最も高価なクエリのリスト |
 | **配置オプション**              | クラウド配置: Microsoft によって管理される運用環境およびレベル 2 からレベル 5 のサンドボックス環境に影響します。 |
-| **状態**                         | 非推奨: 2021 年 10 月に削除予定。 |
+| **状態**                         | 非推奨: 削除予定日は 2021 年 10 月です。 |
 
 ### <a name="azure-sql-actions-in-lcs"></a>LCS での Azure SQL アクション
 
@@ -64,7 +122,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | はい、現在では自動化されたシステムがあるため、これらの機能は廃止されています。 |
 | **影響を受ける製品領域**         | SQL アクション: プラン ID を強制するプラン ガイドの作成、テーブル ヒントを追加するプラン ガイドの作成、プラン ガイドの削除、ページ ロックおよびロック エスカレーションの無効化/有効化、エスカレーションのロック、テーブルでの統計の更新、インデックスの再構築、インデックスの作成 |
 | **配置オプション**              | クラウド配置: Microsoft によって管理される運用環境およびレベル 2 からレベル 5 のサンドボックス環境に影響します。 |
-| **状態**                         | 非推奨: 2021 年 10 月に削除予定。 |
+| **状態**                         | 非推奨: 削除予定日は 2021 年 10 月です。 |
 
 ## <a name="feature-deprecation-effective-may-2021"></a>2021 年 5 月に廃止される機能
 
@@ -76,7 +134,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | はい、この機能は LCS [問題検索](../lifecycle-services/issue-search-lcs.md) と [Dynamics 規制警告送信サービス](../lcs-solutions/submit-localization-alerts.md) に置き換えられます。 |
 | **影響を受ける製品領域**         | LCS のグローバリゼーション ポータル|
 | **配置オプション**              | クラウド配置 |
-| **状態**                         | 非推奨: 2022 年 5 月に削除予定。 |
+| **状態**                         | 非推奨: 削除予定日は 2022 年 5 月です。 |
 
 
 ## <a name="feature-removed-effective-january-28-2021"></a>機能が 2021 年 1 月 28 日に削除済み

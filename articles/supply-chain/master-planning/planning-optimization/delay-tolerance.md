@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cb03ccb208f19f540fefafd9964f74309736dc05
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ccf827983694eab2037c73aa3251846b051e66f1
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577483"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678570"
 ---
 # <a name="delay-tolerance-negative-days"></a>遅延許容範囲 (マイナス在庫日数)
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 遅延許容範囲機能を使用すると、計画の最適化により、補償グループに設定されている **マイナス在庫日数** の値を考慮できます。 これは、マスター プランの際に適用される遅延許容範囲の期間を拡張するために使用されます。 このようにして、既存の供給が短期間の遅延後に需要を満たすことができる場合は、新しい供給注文の作成を回避できます。 この機能の目的は、特定の需要に対して新しい供給注文を作成する意味があるかどうかを決定することです。
 

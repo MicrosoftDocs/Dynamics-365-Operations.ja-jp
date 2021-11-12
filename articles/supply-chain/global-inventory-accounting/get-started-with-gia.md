@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfba2b8320399cc2eb3f2231e8a172d902633f16
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773299"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678862"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>グローバル在庫会計の使用を開始する
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 グローバル在庫会計を利用することで、設定したグローバル在庫会計元帳の中で複数の在庫会計を行うことができます。 各グローバル在庫会計元帳を *規則* に関連付ける必要があります。 規則とは、次のタイプの会計ポリシーの集合です。
 
@@ -60,9 +60,9 @@ ms.locfileid: "6773299"
 1. **Power Platform環境の設定** ダイアログ ボックスでチェック ボックスをオンにし、**設定** を選択します。 通常、設定には 60分 から 90分かかります。
 1. Microsoft Power Platform 環境の設定が完了すると、環境の名前がページに表示されます。 また、**Power Platform 統合セクション** に、「Power Platform 環境の設定が完了しました」と表示されます。 グローバル在庫会計に、二重書き込みアプリケーションは必要ではありません。
 
-詳細については、[環境配置後の設定](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment)を参照してください。
+詳細については、[環境のデプロイ後の有効化](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy)を参照してください。
 
-### <a name="set-up-dataverse"></a>Dataverse の設定
+### <a name="set-up-dataverse"></a>Dataverse を設定する
 
 Dataverse を設定する前に、次の手順に従って、グローバル在庫会計サービス プリンシプルをテナントに追加します。
 

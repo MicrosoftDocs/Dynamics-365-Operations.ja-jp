@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 563ac90dc8c037066b8ccd6d8986e089a66245af
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: d4eeee3c1228b278fea07464f35946c295c5aea8
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641470"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7679058"
 ---
 # <a name="saleshistorycleanupperformanceimprovements"></a>販売履歴クリーンアップ パフォーマンスの改善
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!-- GA with 10.0.24 -->
 
 **販売更新履歴のクリーンアップ** の定期的なバッチ ジョブは、大量の販売更新がある環境で頻繁に実行されないと、時間がかかることがあります。 このような場合は、*販売履歴クリーンアップのパフォーマンス改善* を使用すると、実行期間の短縮と信頼性の改善に役立ちます。
 

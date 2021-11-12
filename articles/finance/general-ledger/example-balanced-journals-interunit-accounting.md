@@ -1,7 +1,7 @@
 ---
 title: 単位間会計のバランス仕訳帳
 description: この記事は、差引勘定する財務分析コードを [元帳] ページで選択したときに仕訳帳がどのように自動的に差引勘定されるかを示します。
-author: ShylaThompson
+author: kweekley
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 15791
 ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92bc11b605f7061263b6cd783a4718a11d8d9b5796797b83104c3aba6e340e10
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f6ffccb2ee504f182250dbf6d316823efafddf5
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779887"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726897"
 ---
 # <a name="balanced-journals-for-interunit-accounting"></a>単位間会計のバランス仕訳帳
 

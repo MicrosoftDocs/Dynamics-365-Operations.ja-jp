@@ -6,18 +6,18 @@ ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 865e922df523c10131fe92a44be8c2874c5711d8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 32e49458f6ea7c484bc4200e414d930381b31891
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569301"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651531"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>生産現場の実行インターフェースのスタイル
 
@@ -243,7 +243,7 @@ ms.locfileid: "7569301"
 クイック フィルター コントロールによって、ページに検索フィールドが追加されます。 次の要件が満たされている場合、クイック フィルターにスタイルを適用できます。
 
 - クイック フィルターはフォーム グループに含まれています。
-- グループ名は **SearchInput** で始まります。
+- グループ名は **SearchInputGroup** で始まります。
 - グループ内で、最初のコントロールは **QuickFilter** コントロールです。 (これはユーザーが検索文字列を入力する場所です。)
 - 2 つ目のコントロールは **FormStaticTextControl** で、名前は **NumberOfResults** で始まります。 (これはオプションで、検出された品目の数が含まれている場合は表示されます。)
 - 3 つ目のコントロールは **CommonButton** コントロールで、名前は **ClearButton** で始まります。

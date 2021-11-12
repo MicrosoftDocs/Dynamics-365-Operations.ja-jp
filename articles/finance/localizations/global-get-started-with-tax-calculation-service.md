@@ -2,7 +2,7 @@
 title: 税の計算の使用を開始する
 description: このトピックでは、税の計算を設定する方法について説明します。
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562129"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647437"
 ---
 # <a name="get-started-with-tax-calculation"></a>税の計算の使用を開始する
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、税の計算の使用を開始する方法を説明します。 まず、Microsoft Dynamics Lifecycle Services (LCS)、Regulatory Configuration Service (RCS)、Dynamics 365 Finance および Dynamics 365 Supply Chain Management の構成手順について説明します。 次に、Finance および Supply Chain Management トランザクションで税計算機能を使用する一般的なプロセスをレビューします。
 
@@ -41,29 +39,10 @@ ms.locfileid: "7562129"
 
 このトピックの手順を完了する前に、各環境タイプに対する前提条件を満たす必要があります。
 
-### <a name="for-a-production-environment"></a>実稼働環境の場合
-
-実稼働環境の場合、次の前提条件を満たす必要があります。
+以下の前提条件を満たす必要があります:
 
 - LCS アカウントにアクセスし、Dynamics 365 バージョン 10.0.21 以降を実行する第 2 層以上の環境を持つ LCS プロジェクトを展開する必要があります。
 - 組織に対する RCS 環境を作成し、アカウントにアクセスする必要があります。 RCS 環境の作成方法の詳細については、[Regulatory Configuration Service の概要](rcs-overview.md) を参照してください。
-- 次の機能は、業務ニーズに基づいて、展開された Finance または Supply Chain Management の **機能管理** ワークスペースで有効になっている必要があります。
-
-    - 税計算サービス
-    - 複数の VAT 登録番号のサポート
-    - 移動オーダーの税機能
-
-- 次の機能は、展開された RCS 環境の **機能管理** ワークスペースで有効になっている必要があります。
-
-    - グローバリゼーション機能
-
-### <a name="for-a-test-environment-public-preview"></a>テスト環境の場合 (パブリック プレビュー)
-
-テスト環境の場合、次の前提条件を満たす必要があります。
-
-- LCS アカウントにアクセスし、Dynamics 365 バージョン 10.0.21 以降を実行するレベル 2 以上の環境を持つ LCS プロジェクトを展開する必要があります。
-- 組織に対する RCS 環境を作成し、アカウントにアクセスする必要があります。 RCS 環境の作成方法の詳細については、[Regulatory Configuration Service の概要](rcs-overview.md) を参照してください。
-- <taxcalc@microsoft.com> にメールを送信して Microsoft に連絡し、展開されている Finance または Supply Chain Management 環境でフライティングを有効にする必要があります。
 - 次の機能は、業務ニーズに基づいて、展開された Finance または Supply Chain Management の **機能管理** ワークスペースで有効になっている必要があります。
 
     - 税計算サービス

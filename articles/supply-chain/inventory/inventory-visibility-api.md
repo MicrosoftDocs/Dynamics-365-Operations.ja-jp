@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592491"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678790"
 ---
 # <a name="inventory-visibility-public-apis"></a>在庫の可視化パブリック API
 
@@ -374,8 +374,6 @@ Body:
 ```
 
 ## <a name="create-reservation-events"></a>予約イベントの作成
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 *予約* API を使用するには、予約機能を開いて、予約の構成を完了する必要があります。 詳細については、[予約の構成 (オプション)](inventory-visibility-configuration.md#reservation-configuration) を参照してください。
 

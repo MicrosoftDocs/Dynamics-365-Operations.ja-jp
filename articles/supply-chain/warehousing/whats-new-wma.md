@@ -10,18 +10,31 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
-ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
+ms.openlocfilehash: 6ab5f6887cb60d3d0434b59cda82b44eca272d7e
+ms.sourcegitcommit: 60ade60f72fd0fa0683f7a3eaf93439d10cf3373
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485625"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655388"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20110"></a>バージョン 2.0.11.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- プロモートされたフィールドに対するサポートが追加されました。
+- ハードウェア キーボード ナビゲーションのサポートが追加されました。
+- アクセシビリティが向上しました。
+- 詳細カードが強化されました。
+- メニュー項目のステップのための迂回路が強化されました。
+- ユーザー インターフェイスのマイナー修正。
+- バーコードのスキャン時にアプリのクラッシュを発生することがある問題を修正しました。
+- システムが応答を停止する原因となり得るさまざまな問題を修正しました。
 
 ## <a name="version-20100"></a>バージョン 2.0.10.0
 

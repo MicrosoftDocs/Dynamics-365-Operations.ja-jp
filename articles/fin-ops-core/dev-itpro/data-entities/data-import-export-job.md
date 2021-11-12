@@ -2,7 +2,7 @@
 title: データ インポートおよびエクスポート ジョブの概要
 description: データ管理ワークスペースを使用して、データ インポート/エクスポート ジョブを作成して管理します。
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 51c7d678017bdd9388767500735e21e5374c9f29
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612367"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675372"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>データ インポート/エクスポート ジョブの概要
 
@@ -68,6 +68,9 @@ ms.locfileid: "7612367"
 | Excel                  | Excel                                      | \-NA-                     |
 | XML                    | \-NA-                                      | XML-要素 XML-属性 |
 | 区切り、固定幅 | コンマ、セミコロン、タブ、縦棒、コロン | \-NA-                     |
+
+> [!NOTE]
+> **ファイル形式** のオプションが **区切り** に設定されている場合は、**行区切り**、**列区切り**、**テキスト修飾子** に正しい値を選択することが重要です。 区切り記号や修飾子として使用されている文字がデータに含まれていないことを確認してください。これらの文字が含まれていると、インポートおよびエクスポート時にエラーが発生する可能性があります。
 
 ### <a name="sequence-the-entities"></a>エンティティに順序付けをする
 データ テンプレート、またはインポート/エクスポート ジョブで、エンティティに順序付けをすることができます。 1 つ以上のデータ エンティティが含まれるジョブを実行する場合、データ エンティティが正しく順序付けされていることを確認する必要があります。 主にエンティティ間の機能依存関係に合うように、エンティティに順序付けします。 エンティティに機能依存関係がない場合は、並行インポートまたはエクスポートにスケジューリングできます。

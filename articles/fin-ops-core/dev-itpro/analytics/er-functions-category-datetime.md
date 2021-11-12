@@ -2,7 +2,7 @@
 title: 日付と時刻のカテゴリ内の ER 関数のリスト
 description: このトピックでは、電子申告 (ER) でサポートされる日時の関数について説明します。
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f0f421afcaf720366c76c2728721598540a37f0b627123b3386a3174c039a96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760053"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647266"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>日付と時刻のカテゴリ内の ER 関数のリスト
 
@@ -31,8 +31,9 @@ ms.locfileid: "6760053"
 
 | 職務 | 説明 |
 |----------|-------------|
-| [AddDays](er-functions-datetime-adddays.md) | この関数は、指定された開始日前後の指定された日数の *日時* 値を返します。 |
-| [DateFormat](er-functions-datetime-dateformat.md) | この関数は、特定の日付値を指定された形式およびオプションで指定されたカルチャのテキストとして表す *文字列* の値を返します。 |
+| [AddDays](er-functions-datetime-adddays.md) | この関数は、指定された開始日の前または後の指定された日数分の *[DateTime](er-formula-supported-data-types-primitive.md#datetime)* 値を返します。 |
+| [ChangeTimeZone](er-functions-datetime-changetimezone.md) | この関数は、他のタイムゾーンの指定された日付/時刻の値を別のタイムゾーンの日付/時刻の値に変換した *DateTime* 値を返します。 |
+| [DateFormat](er-functions-datetime-dateformat.md) | この関数は、指定された日付の値を、指定された書式と任意に指定された文化でテキストとして表示する *[文字列](er-formula-supported-data-types-primitive.md#string)* 値を返します。 |
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | この関数は、特定の日付/時刻値を指定された形式およびオプションで指定されたカルチャのテキストとして表す *文字列* の値を返します。 |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | この関数は、指定された形式およびオプションで指定されたカルチャの特定のテキスト値から日付/時刻値に変換される *日時* 値を返します。 |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | この関数は、特定の日付値から協定世界時 (グリニッジ標準時 \[GMT\]) の日付/時刻値に変換された *日時* 値を返します。 |

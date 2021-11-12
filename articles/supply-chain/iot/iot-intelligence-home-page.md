@@ -6,19 +6,19 @@ ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
 ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfa6191317ed65fb943469d84369475f41bce7e2f416522dbe20acc092eff5da
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f32cb5578f3c15a10f863980491a687f64312cd
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716530"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651530"
 ---
 # <a name="iot-intelligence-home-page"></a>IoT インテリジェンスのホーム ページ
 

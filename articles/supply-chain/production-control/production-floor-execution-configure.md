@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 15fcfd72027e081e633fe68209cf85f528ff02d7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576931"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647192"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
@@ -74,6 +74,12 @@ ms.locfileid: "7576931"
 この機能により、ジョブ リストに検索フィールドを追加できます。 作業者は、ジョブ ID を入力して特定のジョブを検索したり、注文 ID を入力して特定の注文のすべてのジョブを検索できます。 作業員は、キーパッドを使用するか、バーコードをスキャンして ID を入力できます。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
 
 - 生産現場の実行インターフェイスのジョブ検索
+
+### <a name="enable-reporting-on-co-products-and-by-products"></a>連産物および副産物に関するレポートの有効化
+
+この機能により、作業者は生産現場の実行インターフェイスを使用して、バッチ オーダーの進捗状況を報告できます。 このレポートには、連産物および副産物に関するレポートが含まれます。 この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
+
+- 生産現場の実行インターフェースの連産品と副産物に関するレポート
 
 ## <a name="work-with-production-floor-execution-configurations"></a>生産現場の実行構成を使って作業する
 

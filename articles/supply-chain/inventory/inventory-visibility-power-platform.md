@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a60fc00642a77d3dc595a6222727637f0d7cd588
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 0457190f2fc8cd0ed39e109e6720509b77b83566
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7475063"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678522"
 ---
 # <a name="use-the-inventory-visibility-app"></a>在庫視覚化アプリの使用
 
@@ -63,8 +63,6 @@ ms.locfileid: "7475063"
 ![手持在庫クエリの設定](media/inventory-visibility-query-settings.png "手持在庫クエリの設定")
 
 ### <a name="reservation-posting"></a>引当の転記
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 **引当の転記** タブを使用して、引当要求を転記します。 引当要求を転記する前に、*OnHandReservation* 機能を有効にする必要があります。 この機能の詳細については、[在庫可視性の確保](inventory-visibility-reservations.md)を参照してください。
 

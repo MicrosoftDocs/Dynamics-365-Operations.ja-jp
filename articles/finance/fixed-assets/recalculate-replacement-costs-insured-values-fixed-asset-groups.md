@@ -1,7 +1,7 @@
 ---
 title: 固定資産グループの交換費用と保証金額の再計算
-description: この記事は、固定資産の交換費用と保証金額を更新するプロセスを説明します。
-author: ShylaThompson
+description: このトピックでは、固定資産の交換費用と保証金額を更新するプロセスを説明します。
+author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.reviewer: roschlom
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 074a976e3d815211f4a4fe24268ffc7ac7e9c4f4b4449167d288876a93749e1a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 33d3dba59e459193798d790e64d2493c244d49a3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763145"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674879"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>固定資産グループの交換費用と保証金額の再計算
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、固定資産の交換費用と保証金額を更新するプロセスを説明します。
+このトピックでは、固定資産の交換費用と保証金額を更新するプロセスを説明します。
 
 定期的に、特定の固定資産を交換または保証する費用が変化したことが通知される場合があります。 たとえば、前年が 3 パーセントのインフレであったため、すべての固定資産の交換費用を 3 パーセントだけ増やす必要があるという連絡を、マネージャから受け取る場合などです。 
 

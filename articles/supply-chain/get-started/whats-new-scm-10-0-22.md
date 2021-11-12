@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.22 のプレビュー (2021 年 11 月)
+title: Dynamics 365 Supply Chain Management 10.0.22 (2021 年 11 月) の新機能および変更された機能
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.22 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3f5166338aebe784fe7f95372a437d4ed660de77
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579715"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678838"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Management 10.0.22 のプレビュー (2021 年 11 月)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Management 10.0.22 (2021 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、バージョン 10.0.22 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.995 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.22 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.995 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 9 月
 - **リリースの一般提供 (手動更新):** 2021 年 10 月
@@ -40,13 +39,12 @@ ms.locfileid: "7579715"
 
 次の表に、このリリースに含まれる機能拡張の一覧を示します。 これらの機能拡張は、それぞれ既存の機能を段階的に改善します。 これらは拡張機能にすぎないため、[リリース計画](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features) には記載されません。 ただし、これらの拡張機能が既存のカスタマイズや基本設定と競合しないように、各機能は (特に断りのない限り) 既定でオフになっています。 これらの機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で明示的にそれらを有効にする必要があります。
 
-| 機能領域 | 機能管理の機能名 | 詳細 |
+| モジュール | 機能管理の機能名 | 詳細 |
 |---|---|---|
 | 原価管理 | 標準原価丸め再評価の関連伝票の作成 | <p>在庫財務転記 (販売注文請求書や在庫トランザクションなど) を作成すると、この機能によって、関連する標準原価の丸め再評価用の別の伝票が作成され、それを関連する伝票として財務転記伝票に関連付けられます。</p><p>この機能がない場合は、同じ伝票転記の標準原価丸め再評価が記録されます。 再評価ではセッションまたはシステムの日付が使用されるのに対し、財務転記では転記日付が使用されるため、その動作により日付情報が競合する場合があります。</p> |
 | 配分済みハイブリッド トポロジ | *(機能管理は必要ありません。)* | <p>このリリースでは、クラウドおよびエッジのスケール ユニットの倉庫管理ワークロードに対する出庫積荷計画機能が展開されます。</p><p>詳細については、[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](../cloud-edge/cloud-edge-workload-warehousing.md) を参照してください。</p> |
 | エンジニアリング変更管理 | エンジニアリング製品のバリアントの生成 | <p>この機能により、エンジニアリング製品に対して、その色、サイズ、スタイル、またはコンフィギュレーションの分析コードに基づいて複数のバリアントを生成できます。</p><p>詳細については、[エンジニアリング製品のバリアントの生成](../engineering-change-management/engineering-variants.md) を参照してください。</p> |
 | 在庫および倉庫管理 | 引当相殺との在庫品目一覧の統合 | <p>この機能を有効にできるのは、*在庫の視覚化統合* 機能を有効にした後のみです。 在庫の視覚化で作成された引当を相殺する機能を提供します。</p><p>詳細については、[在庫の視覚化引当](../inventory/inventory-visibility-reservations.md) を参照してください。</p> |
-| 販売とマーケティング | 転記用に選択できる販売注文数を制限する | <p>この機能は、自動的に有効になります。 この機能により、**転記用の最大販売注文数** フィールドが、**売掛金勘定パラメータ** ページに追加されます。 このフィールドを使用すると、販売注文リスト ページから確認書、ピッキング リスト、梱包明細、および請求書を転記する際に選択できる販売注文の最大数を定義できます。 既定値は *100* です。</p><p>この機能により、多数の販売注文が選択された場合に、販売注文リスト ページのパフォーマンスが向上します。 定期処理タスクで処理できる販売注文の数には影響しません。</p> |
 
 ## <a name="new-and-updated-documentation-resources"></a>新しいドキュメント リソースおよび更新されたドキュメント リソース
 
@@ -63,7 +61,7 @@ ms.locfileid: "7579715"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.22 (2021 年 11 月) のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md) を参照してください。 <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.22 (2021 年 11 月) のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

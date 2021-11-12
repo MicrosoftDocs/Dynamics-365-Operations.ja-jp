@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0b39c3eee84a66082f1785f7f4d8a6d7dd96b63d
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7638473"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647218"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Management バージョン 10.0.19 (2021 年 6 月) の新機能および変更された機能
 
@@ -48,7 +48,7 @@ ms.locfileid: "7638473"
 
 次の表に、このリリースに含まれる機能拡張の一覧を示します。 これらの機能は、それぞれ既存の機能を段階的に改善します。 これらは拡張機能にすぎないため、[リリース計画](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) には記載されません。 ただし、これらの拡張機能が既存のカスタマイズや基本設定と競合しないように、各機能は (特に断りのない限り) 既定でオフになっています。 これらの機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で明示的にそれらを有効にする必要があります。
 
-| 機能領域 | 機能&nbsp;管理の機能&nbsp;名&nbsp; | 詳細 |
+| モジュール | 機能&nbsp;管理の機能&nbsp;名&nbsp; | 詳細 |
 |---|---|---|
 | 販売とマーケティング | 販売履歴クリーンアップ パフォーマンスの向上 | 販売履歴のクリーンアップは、大量の販売更新がある環境で頻繁に実行されない場合、時間がかかることがあります。 時間を短縮し、信頼性を向上させるために、この機能では、限られた期間で実行されるバッチにクリーンアップを分割します。 可能であれば、データベース機能を活用して、ロックを最小限にし、クリーンアップ中にトランザクション テーブルが結合しないようにします。 詳細については、[Sales の履歴クリーンアップ パフォーマンスの改善](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) を参照してください。 |
 | 販売とマーケティング | 入荷希望日を会社間注文の確認日で更新する | この機能により、会社間直納を使用する場合に、販売日フィールドおよび購入日フィールドの値に何が起こるかを管理できます。 システムが要求日を更新するか、更新をスキップするかを選択できます。 更新をスキップした場合、要求日は顧客が要求したものを表します。 更新を有効にした場合、(配送日管理を使用している場合) 要求日は、最初に顧客が要求したものだけを表します。 配送日管理は、*なし* 以外の場合、最初に要求されたものを変更します。 このオプションは、会社間仕入先または顧客設定で新しい **入荷希望日を確定日で更新** 設定を使用して設定できます。<br><br>この機能が無効の場合、システムは元の販売注文で入荷希望日を配送日管理ルールに基づいて上書きしますが、要求出荷日はそのままです。 |

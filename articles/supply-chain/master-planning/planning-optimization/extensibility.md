@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: cff95cf28bea8981a99097f7dda8f0f855691abb5f8fc15af878fef05b1f2101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e18801a02ae9e904eb5bc597f9f61ed42c537ab9
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778664"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651534"
 ---
 # <a name="planning-optimization-extensibility"></a>計画最適化の拡張機能
 

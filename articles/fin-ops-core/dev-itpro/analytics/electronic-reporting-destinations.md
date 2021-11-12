@@ -2,7 +2,7 @@
 title: 電子申告 (ER) の送信先
 description: このトピックでは、電子申告の送信先の管理、サポートされている送信先のタイプ、およびセキュリティ上の注意事項について説明します。
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743314"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647096"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -164,12 +164,12 @@ PDF への変換オプションを使用して、Microsoft Office (Excel また�
 
 ### <a name="applicability"></a>適用性
 
-PDF への変換オプションは、Office (Excel または Word) 形式 (**Excel ファイル**) で出力を生成するのに使用されるファイル コンポーネントに対してのみ有効にすることができます。 このオプションをオンにすると、Office 形式で生成された出力は自動的に PDF 形式に変換されます。 **バージョン 10.0.18 より前** の Finance では、[Excel](er-fillable-excel.md) または [Word](er-design-configuration-word.md) 形式で出力を生成するために使用される **Excel\\File** タイプのコンポーネントに対してのみこのオプションをオンにできます。 ただし、**バージョン 10.0.18 以降** では、**Common\\File** タイプのコンポーネントに対してのみこのオプションをオンにすることもできます。
+**バージョン 10.0.18** より前の Finance では、PDF 変換オプションは Office (Excel または Word) 形式で出力の生成に使用する **Excel\\File** コンポーネントに対してのみ有効化できます。 このオプションをオンにすると、Office 形式で生成された出力は自動的に PDF 形式に変換されます。 ただし、**バージョン 10.0.18 以降** では、**Common\\File** タイプのコンポーネントに対してのみこのオプションをオンにすることもできます。
 
 > [!NOTE]
 > **Common\\File** タイプの ER コンポーネントの PDF 変換オプションをオンすると表示される警告メッセージに注意してください。 このメッセージは、選択したファイル コンポーネントが実行時に PDF 形式のコンテンツまたは PDF に変換可能なコンテンツを公開することを設計時に保証する方法がないことを通知します。 したがって、選択したファイル コンポーネントが実行時に PDF 形式または PDF に変換可能なコンテンツを公開する場合にのみ、このオプションをオンにする必要があります。
 > 
-> **Excel\\File** タイプのコンポーネントの PDF 変換オプションをオンにした場合、そのコンポーネントが PDF 以外の形式でコンテンツを公開し、公開されたコンテンツを PDF 形式に変換できない場合は、実行時に例外が発生します。 受信したメッセージは、生成されたコンテンツを PDF 形式に変換できないことを通知します。
+> フォーマット コンポーネントの PDF 変換オプションをオンにした場合、そのコンポーネントが PDF 以外の形式でコンテンツを公開し、公開されたコンテンツを PDF 形式に変換できない場合は、実行時に例外が発生します。 受信したメッセージは、生成されたコンテンツを PDF 形式に変換できないことを通知します。
 
 ### <a name="limitations"></a>制限
 
@@ -193,12 +193,22 @@ ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、
 
 [![PDF 変換の対象とするページの方向を選択する。](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> PDF の印刷の向きを選択するオプションを使用するには、Finance バージョン 10.0.10 以降をインストールする必要があります。
->
-> 選択したページの向きは、Excel 形式で生成され、PDF 形式に変換されたすべての ER の構成に適用されます。
->
-> Word 形式の ER 構成を PDF 形式に変換する場合、PDF ドキュメントの印刷の向きは、Word ドキュメントから取得されます。
+PDF の印刷の向きを選択するオプションを使用するには、Finance バージョン 10.0.10 以降のインストールが必要となります。 Finance の **バージョン 10.0.23 以前** では、このオプションでは、次のページの向きが選択できます。
+
+- 縦
+- 横
+
+Excel 形式で作成され、PDF 形式に変換された送信文書のすべてのページに、選択したページの向きが適用されます。
+
+ただし、**バージョン 10.0.23** 以降では、ページ方向のオプションの一覧が次のように拡張されています:
+
+- 縦
+- 横
+- ワークシートに固有
+
+**ワークシート固有** のオプションを選択すると、生成された Excel ブックのすべてのワークシートが、使用する Excel テンプレートのこのワークシート用に構成されたページの向きを使用してPDFに 変換されます。 そのため、最終的には縦長のページと横長のページを含む PDF 文書が作成されます。 
+
+Word 形式の ER 構成を PDF 形式に変換した場合、PDF 文書のページの向きは常に Word 文書のものが採用されます。
 
 ## <a name="output-unfolding"></a>結果の展開
 

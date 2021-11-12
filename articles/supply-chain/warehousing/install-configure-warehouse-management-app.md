@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384614"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647623"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションのインストールと接続
 
@@ -109,7 +109,7 @@ Azure ADでの web サービス アプリケーションの設定方法の詳細
     - [クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)
     - [ポータルを使用して、リソースにアクセスできる Azure AD アプリケーションとサービス プリンシパルを作成する](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Supply Chain Management でユーザー アカウントを作成および設定する
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Supply Chain Management でユーザー アカウントを作成および設定する
 
 Supply Chain Management を有効にして Azure AD アプリケーションを使用するには、次の手順に従います。
 
@@ -117,17 +117,24 @@ Supply Chain Management を有効にして Azure AD アプリケーションを�
 
     1. Supply Chain Management で、**システム管理 \> ユーザー \> ユーザー** に移動します。
     1. ユーザーを作成します。
-    1. 倉庫のモバイル デバイス ユーザーを割り当てます。
+    1. ユーザーに *倉庫のモバイル デバイス ユーザー* のロールを割り当てます。
 
     ![倉庫のモバイル デバイス ユーザーを割り当てます。](media/app-connect-app-users.png "倉庫モバイル デバイスのユーザーを割り当てる")
 
 1. Azure AD アプリケーションと倉庫管理モバイル アプリのユーザーを関連付けます。
 
     1. **システム管理 \> 設定 \> Azure Active Directory アプリケーション** の順に移動します。
-    1. 行の作成を行います。
-    1. 前述のセクションでメモしたクライアント ID を入力し、名前を付けて、作成したユーザーを選択します。 すべてのデバイスにタグ付けすることをお勧めします。 デバイスを損失した場合は、このページから Supply Chain Management へのアクセス権を簡単に削除できます。
+    1. アクション ペインで **新規** を選択して、明細行を作成します。
+    1. **クライアント ID** フィールドで、前のセクションでメモしたクライアント ID を入力します。
+    1. **名前** フィールドに、名前を入力します。
+    1. **ユーザー ID** フィールドで、作成したユーザー ID を選択します。
 
     ![Azure Active Directory アプリケーション。](media/app-connect-aad-apps.png "Azure Active Directory アプリケーション")
+
+> [!TIP]
+> これらの設定を利用する 1 つの方法として、物理デバイスごとに Azure でクライアント ID を作成し、各クライアント ID を **Azure Active Directory アプリケーション** ページに追加します。 また、デバイスを紛失した場合は、そのデバイスのクライアント ID を削除することで、Supply Chain Management へのアクセスを簡単に解除することができます。 (この方法が有効なのは、後述するように、各デバイスに保存されている接続認証情報にクライアント ID が指定されているためです)。
+>
+> また、各クライアント ID の既定の言語、数値フォーマット、タイムゾーンの設定は、ここにマッピングされている **ユーザー ID** の値に設定されている環境設定によって確立されます。 そのため、これらの環境設定を利用して、クライアント ID に基づいて、各デバイスやデバイスのコレクションの既定の設定を設定できます。 ただし、これらの既定の設定は、作業者がデバイスにサインインする際に使用する *倉庫アプリのユーザー アカウント* にも定義されている場合は、上書きされます。 (詳細については、[作業者のモバイル デバイスのユーザー アカウント](mobile-device-work-users.md)を参照してください。)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>証明書またはクライアント シークレットを使用した認証
 

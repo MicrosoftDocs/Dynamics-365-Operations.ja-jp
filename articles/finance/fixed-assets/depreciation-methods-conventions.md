@@ -1,7 +1,7 @@
 ---
 title: 減価償却方法
 description: この記事は、Microsoft Dynamics 365 Finance でサポートされている減価償却方法および減価償却方式の概要を提供します。
-author: ShylaThompson
+author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daa8f70e12a8c837a599ead5ef8b98aaf13e8cc827853de8b0332611ed2e257e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6abf98b4c1eee3657960a1912445171acc0686a
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713237"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674529"
 ---
 # <a name="depreciation-methods-and-conventions"></a>減価償却方法
 
@@ -32,7 +32,7 @@ ms.locfileid: "6713237"
 
 減価償却法を使用している場合、ある資産の最後の減価償却日を変更すると、一部の減価償却がスキップされ、最終年度の減価償却が予定よりも多くなったり少なくなったりすることがあります。 減価償却は、最後の減価償却日の変更によって影響される減価償却期間の数で調整されます。
 
-たとえば、[半年] の減価償却方法を 3 年以上採用している場合、通常は 3 年半にわたって減価償却が行われます。 この 3 年半の間に最後の減価償却日を変更すると、その変更の影響を受ける期間の数だけ最終年度の減価償却が移動します。 最後の減価償却日を 3 か月先送りした場合、通常であれば 6 か月分である最終年度の減価償却が 9 か月分になります。
+たとえば、半年の減価償却方法を 3 年以上採用している場合、通常は 3 年半にわたって減価償却が行われます。 この 3 年半の間に最後の減価償却日を変更すると、その変更の影響を受ける期間の数だけ最終年度の減価償却が移動します。 最後の減価償却日を 3 か月先送りした場合、通常であれば 6 か月分である最終年度の減価償却が 9 か月分になります。
 
 次のいずれかの減価償却方法を選択できます。
 
@@ -48,9 +48,9 @@ ms.locfileid: "6713237"
 減価償却方法は次の中から選択できます。
 -   定額法耐用年数
 -   逓減残高
--   マニュアル
+-   手動
 -   係数
--   消耗
+-   消費量
 -   定額法残余耐用年数
 -   200% 逓減残高
 -   175% 逓減残高
@@ -61,7 +61,7 @@ ms.locfileid: "6713237"
 
 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [固定資産の減価償却](fixed-asset-depreciation.md)
 
@@ -73,7 +73,7 @@ ms.locfileid: "6713237"
 
 [係数減価償却](factor-depreciation.md)
 
-[消費減価償却](consumption-depreciation.md)
+[消費償却](consumption-depreciation.md)
 
 [直線償却耐用年数](straight-line-life-remaining-depreciation.md)
 

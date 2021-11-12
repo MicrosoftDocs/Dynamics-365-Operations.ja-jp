@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) 記憶域の廃止
 description: このトピックでは、Regulatory Configuration Service (RCS) グローバル リポジトリの機能拡張の一部として計画されている Microsoft Dynamics Lifecycle Services (LCS) 記憶域の廃止に関する情報を提供します。
 author: JaneA07
-ms.date: 05/25/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 7a738af04da4425e76bd3b224400f91bc4eb8364d323da67ea457eaba9e65643
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
+ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782201"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7715233"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止
 
@@ -38,8 +38,9 @@ Electronic Reporting (ER) コンフィギュレーションの記憶域リポジ
 
 ## <a name="key-features"></a>主な機能
 
-- RCS を使用してコンフィギュレーションを作成および編集できます。 その後、これらのコンフィギュレーションをデザイナーから接続されたアプリケーションに直接プッシュできます。 そのため、コンフィギュレーションをすばやく変更およびテストできます。
-- グローバル リポジトリは、すべての ER コンフィギュレーション用の集中記憶域です。
+- RCS を使用して、ER コンフィギュレーションおよびグローバリゼーションの機能を作成および編集できます。
+- RCS デザイナーから Dynamics 365 Finance 環境などの接続されたアプリケーションにコンフィギュレーションを直接プッシュすることで、コンフィギュレーションの変更やテストを迅速に行うことができます。
+- グローバル リポジトリの一元的なストレージで、ER コンフィギュレーションおよびグローバリゼーションの機能の両方のライフサイクルを一元的に保存、共有、および管理します。
 
 ## <a name="guidance-for-one-time-and-ongoing-actions"></a>1 回および進行中のアクションのガイダンス
 
@@ -53,11 +54,20 @@ LCS から RCS に必要なすべてのコンフィギュレーションをイ�
 2. プロビジョニングされた RCS インスタンスでは、派生 ER コンフィギュレーションを含む資産ライブラリ内のすべての LCS プロジェクトに対して、適切な LCS リポジトリを登録します。
 3. LCS から RCS に ER コンフィギュレーションをインポートします。 詳細については、[LCS からコンフィギュレーションをインポートする](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md)を参照してください。
 4. グローバル リポジトリに自動的に提供されていない場合は、RCS に登録します。
-5. 現在の RCS インスタンスからすべての派生コンフィギュレーションをグローバル リポジトリにアップロードします。 **ユーザーが 1 回の操作ですべてのコンフィギュレーションを GR にアップロードできるコンフィギュレーション パッケージ** 機能を使用 して、アップロードを支援します。 詳細については、[RCS グローバル リポジトリのアップロード](rcs-global-repo-upload.md)を参照してください。
+5. 現在の RCS インスタンスからすべての派生コンフィギュレーションをグローバル リポジトリにアップロードします。 **コンフィギュレーション パッケージ** 機能を使用して、アップロードを支援します。 詳細については、[RCS グローバル リポジトリのアップロード](rcs-global-repo-upload.md)を参照してください。
 
 ### <a name="going-forward"></a>今後の手順
 
-すべての新しいコンフィギュレーションを作成するには、RCS のビジュアル デザイナーを使用します。 次に、コンフィギュレーションをグローバル リポジトリにアップロードして保存します。 詳細については、[RCS に ER コンフィギュレーションを作成してグローバル リポジトリへアップロードする](rcs-global-repo-upload.md)を参照してください。
+次の目的で RCS のビジュアル デザイナーを使用します:
+
+- Microsoft が提供するテンプレートを拡張する。
+- 組織が必要とする新しいコンフィギュレーションを作成する。
+- 電子請求および税計算サービス用のグローバリゼーション機能をカスタマイズする。
+
+次の目的でグローバリゼーション リポジトリを使用します:
+
+- Microsoft が生成したコンフィギュレーションおよびグローバリゼーションの機能にアクセスする。
+- 作成または拡張したコンフィギュレーションを、記憶域用のグローバル リポジトリにアップロードし、組織の Dynamics 365 アプリケーション環境全体または外部組織と共有します。 詳細については、[RCS に ER コンフィギュレーションを作成してグローバル リポジトリへアップロードする](rcs-global-repo-upload.md)を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -76,3 +86,22 @@ RCS は、*接続されたアプリケーション* の概念を使用します�
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>設定と管理の例を示す例がありますか。
 
 例はありません。ただし、このトピックで説明した手順を実行して、コンフィギュレーションを RCS グローバル リポジトリに移行できます。
+
+### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>RCS は電子申告を構成するための前提条件ですか?
+
+はい。 RCS には、電子請求や税計算サービスなどのグローバリゼーション サービスで使用されるグローバリゼーション機能の設定をサポートする機能が含まれています。 ただし、このサービスには、ER コンフィギュレーションを拡張または新規作成するための、同じビジュアル デザイナー機能があります。 また、RCS は、ER コンフィギュレーションとグローバリゼーションの機能の両方のライフサイクル管理も提供します。
+
+### <a name="which-regions-can-rcs-be-deployed-in"></a>どの地域で RCS を展開できますか?
+
+RCS は以下の Azure リージョンで利用できます:
+
+- 米国
+- インド
+- フランス
+- ヨーロッパ
+
+製品サポートの詳細については、[Dynamics グローバリゼーション サービスの概要](globalization-services-overview.md) を参照してください。 地理的なサポートについては [Dynamics 365 および Power Platform: 使用可能性、データの場所、言語、およびローカライズ](https://aka.ms/rcs/D365Productavailabilityguide) を参照してください。
+
+### <a name="whats-the-cost-of-using-rcs"></a>RCS を使用するためのコストはいくらですか?
+
+RCS およびグローバリゼーション リポジトリは、既存の Finance and Operations アプリ ライセンスの一部として無料で提供されます。 グローバル リポジトリでの RCS デザイン サービスの使用やコンフィギュレーションの保存に関連する個別のコストはありません。 現在、コンフィギュレーションまたは接続されているアプリケーションの数に制限はありません。

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474679"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678474"
 ---
 # <a name="configure-inventory-visibility"></a>在庫の視覚化のコンフィギュレーション
 
@@ -366,16 +366,12 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>引当の構成 (オプション)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 仮引当機能を使用する場合は、引当の構成が必要です。 構成は 2 つの基本的な部分で構成されています。
 
 - 仮引当マッピング
 - 仮引当階層
 
 ### <a name="soft-reservation-mapping"></a>仮引当マッピング
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 引当を行う際に、手持在庫が現在引当可能であるかどうかについて知りたい場合があります。 検証は、物理的測定の組み合わせの計算式を表す計算メジャーにリンクされます。
 
@@ -446,8 +442,6 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 > 引当 API を呼び出す際に、要求本文のブール値 `ifCheckAvailForReserv` パラメーターを指定することで、引当の検証を制御できます。 `True` という値は検証が必要であることを意味するのに対し、`False` という値は検証が必要ないことを意味します。 既定値は [`True`] です。
 
 ### <a name="soft-reservation-hierarchy"></a>仮引当階層
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 引当階層は、引当の際に指定する必要がある分析コードの順序を表します。 これは、手持在庫クエリに対して製品インデックス階層が機能するのと同じように機能します。
 
@@ -747,8 +741,6 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 このセクションでは、既定引当の構成について説明します。
 
 #### <a name="reservation-mapping"></a>引当マッピング
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 次の表に、既定の引当マッピングを示します。
 

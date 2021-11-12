@@ -2,7 +2,7 @@
 title: B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理
 description: このトピックでは、管理者が企業間 (B2B) の e コマース Web サイトに関するビジネス パートナー ユーザーを追加、編集、削除する方法について説明します。
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734946"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713696"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理
 
@@ -68,6 +68,18 @@ Commerce 本部でビジネス パートナーの管理者ユーザーを承認�
 1. **小売およびコマース IT \> 配送スケジュール** に移動し、**1010** (**顧客**) ジョブを実行し、新規作際された顧客と顧客の階層レコードをチャネル データベースに プッシュします。
 
 リクエストが承認され、顧客と顧客階層レコードがチャネルデータベースに同期されると、申請者は、リクエストを送信した際に提供されたメールアドレスを使用して、B2B e コマース Web サイトにサインインすることができます。 ユーザーは、登録フローを使用してアカウントのパスワードを定義できます。 ID プロバイダー (Azure AD B2C) レコードを、登録またはサインイン時に作成された B2B 顧客レコードにリンクするには、[ID レコードの顧客アカウントへの自動リンクを有効にする](../identity-record-linking.md)の手順に従います。
+
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>承認または却下された場合に B2B 見込顧客に通知する
+
+B2B 見込顧客のオンボード要求を承認または却下すると、見込顧客にメール通知を自動的に送信できます。 
+
+B2B 見込顧客の承認通知タイプまたは B2B 見込顧客の却下通知タイプのイベントについて、Commerce 本部 でメール通知を設定するには、次の手順に従います。
+
+1. B2B 見込顧客の承認通知タイプまたは B2B 見込顧客の却下通知タイプがトリガーされた場合に、見込顧客に送信されるメールのメール テンプレートを作成します。
+
+    B2B 見込顧客の承認通知タイプまたは B2B 見込顧客の却下通知タイプがサポートするプレースホルダーについては、[通知タイプ](../email-templates-transactions.md#notification-types) を参照してください。 メール テンプレートの作成方法については、[メール テンプレートを作成する](../email-templates-transactions.md#create-an-email-template) を参照してください。 
+
+1. B2B 見込顧客の承認通知タイプおよび B2B 見込顧客の却下通知タイプをメール通知プロファイルに追加し、作成したメール テンプレートにマップします。 通知プロファイルについては、[メール通知プロファイルの設定](../email-notification-profiles.md) を参照してください。 
 
 ## <a name="onboard-additional-business-partner-users"></a>追加の取引先ユーザーをオンボードする
 

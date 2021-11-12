@@ -6,19 +6,19 @@ ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9ddc9f47d17782ef77f5c9c05253835a5b79748ac836f8b5bd33c2328cea427
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f623e49422dfb238415ae450fd0ab354b68c38b
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736807"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651537"
 ---
 # <a name="set-up-metrics-for-iot-intelligence"></a>IoT インテリジェンスの指標の設定
 

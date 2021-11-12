@@ -1,8 +1,8 @@
 ---
-title: 売上税の支払と丸めのルール
-description: この記事は、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
-author: ShylaThompson
-ms.date: 04/20/2020
+title: 消費税支払と丸めルール
+description: このトピックでは、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
+author: kailiang
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: pacheren
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1838666b57bf2ce4eb78f5d3486c03e4c2447646a121a537efd6bffa0019b96f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a75d41195875c5ed48cbe8ce5f5e448f173e718
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760689"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726803"
 ---
-# <a name="sales-tax-payments-and-rounding-rules"></a>売上税の支払と丸めのルール
+# <a name="sales-tax-payments-and-rounding-rules"></a>消費税支払と丸めルール
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
+このトピックでは、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
 
-定期的に、売上税は税務当局に報告し、支払を行う必要があります。 これは、[売上税] ページの売上税の決済と転記のプロセスで実行できます。 ある期間の売上税は売上税勘定に対して決済し、売上税残高は売上税支払決済勘定に転記します。 売上税決済決済勘定に転記されている売上税残高は、売上税所轄官庁の要件に応じて [売上税] ページの丸めルールの設定によって丸めることができます。 
+定期的に、売上税は税務当局に報告し、支払を行う必要があります。 このアクションは、**売上税** ページで売上税の決済と転記のプロセスを実行することで完了できます。 ある期間の売上税は売上税勘定に対して決済し、売上税残高は売上税決済勘定に転記します。 売上税決済勘定に転記されている売上税残高は、税務当局の要件に応じて **売上税** ページの丸めルールの設定によって丸めることができます。 
 
 丸め誤差は、[総勘定元帳] の [自動トランザクションの勘定] フィールドで選択されている、売上税の丸め勘定に転記されます。
 
@@ -63,19 +63,19 @@ ms.locfileid: "6760689"
 
 ### <a name="normal-round-and-round-precision-is-001"></a>通常の丸め、および丸め精度は 0.01
 
-<table>
+```<table>
   <tr>
-    <td>丸めています
+    <td>Rounding
     </td>
-    <td>計算プロセス
+    <td>Calculation process
     </td>
   </tr>
     <tr>
-    <td>丸め (1.015, 0.01) = 1.02
+    <td>round(1.015, 0.01) = 1.02
     </td>
     <td>
       <ol>
-        <li>丸め (1.015 / 0.01, 0) = 丸め (101.5, 0) = 102
+        <li>round(1.015 / 0.01, 0) = round(101.5, 0) = 102
         </li>
         <li>102 * 0.01 = 1.02
         </li>
@@ -83,10 +83,10 @@ ms.locfileid: "6760689"
     </td>
   </tr>
     <tr>
-    <td>丸め (1.014, 0.01) = 1.01
+    <td>round(1.014, 0.01) = 1.01
     </td>
     <td> <ol>
-        <li>丸め (1.014 / 0.01, 0) = 丸め (101.4, 0) = 101
+        <li>round(1.014 / 0.01, 0) = round(101.4, 0) = 101
         </li>
         <li>101 * 0.01 = 1.01
         </li>
@@ -94,10 +94,10 @@ ms.locfileid: "6760689"
     </td>
   </tr>
     <tr>
-    <td>丸め (1.011, 0.02) = 1.02
+    <td>round(1.011, 0.02) = 1.02
     </td>
     <td> <ol>
-        <li>丸め (1.011 / 0.02, 0) = 丸め (50.55, 0) = 51
+        <li>round(1.011 / 0.02, 0) = round(50.55, 0) = 51
         </li>
         <li>51 * 0.02 = 1.02
         </li>
@@ -105,10 +105,10 @@ ms.locfileid: "6760689"
     </td>
   </tr>
     <tr>
-    <td>丸め (1.009, 0.02) = 1.00
+    <td>round(1.009, 0.02) = 1.00
     </td>
     <td> <ol>
-        <li>丸め (1.009 / 0.02, 0) = 丸め (50.45, 0) = 50
+        <li>round(1.009 / 0.02, 0) = round(50.45, 0) = 50
         </li>
         <li>50 * 0.02 = 1.00
         </li>
@@ -116,6 +116,7 @@ ms.locfileid: "6760689"
     </td>
   </tr>
 </table>
+```
 
 > [!NOTE]                                                                                  
 > [自社の利益] を選択した場合、丸めは常に、法人の利益になります。 

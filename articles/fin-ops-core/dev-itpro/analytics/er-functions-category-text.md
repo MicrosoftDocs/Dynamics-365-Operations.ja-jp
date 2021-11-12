@@ -2,7 +2,7 @@
 title: テキスト カテゴリ内の ER 関数のリスト
 description: このトピックでは、電子申告 (ER) でサポートされるテキスト関数について説明します。
 author: NickSelin
-ms.date: 04/02/2020
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b51fc00ba512677ccac9fcfbd26d2b0650f36f3b42eb81fc07d37417fb6d4d4d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741017"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647563"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>テキスト カテゴリ内の ER 関数のリスト
 
@@ -40,7 +40,8 @@ ms.locfileid: "6741017"
 | [左](er-functions-text-left.md) | この関数は、指定された文字列の冒頭から指定された数の文字を表す *文字列* 値を返します。 |
 | [Len](er-functions-text-len.md) | この関数は、指定された文字列の文字数を表す *整数* 値を返します。 |
 | [Lower](er-functions-text-lower.md) | この関数は、小文字に変換した後の *文字列* 値として指定されたテキスト返します。 |
-| [Mid](er-functions-text-mid.md) | この関数は、指定された位置から始まる指定された文字列から、指定された数の文字を表す *文字列* 値を返します。 |
+| [Mid](er-functions-text-mid.md) | この関数は、指定された位置から始まる指定された文字列から、指定された数の文字を表す *[文字列](er-formula-supported-data-types-primitive.md#string)* 値を返します。 |
+| [NewGUID](er-functions-text-newguid.md) | この関数は、新しく生成された *[GUID](er-formula-supported-data-types-primitive.md#guid)* 値を返します。 |
 | [NumberFormat](er-functions-text-numberformat.md) | この関数は、指定された形式およびオプションで指定されたカルチャで指定された数を表す、*文字列* 値を返します。 |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | この関数は、指定された言語で綴らた (つまり、テキスト文字列に変換された) 後、*文字列* 値として指定された数を返します。 |
 | [PadLeft](er-functions-text-padleft.md) | この関数は、指定された長さの *文字列* 値を返します。指定された文字列の先頭には、指定された文字のインスタンスが 1 つ以上パディングされます。 |

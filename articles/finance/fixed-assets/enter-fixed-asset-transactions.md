@@ -1,6 +1,6 @@
 ---
 title: 固定資産トランザクションのオプション
-description: このトピックは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
+description: このトピックでは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
@@ -12,22 +12,22 @@ ms.reviewer: roschlom
 ms.custom: 23061
 ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 129f88037691096c22478e4f186667a502e394ec
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344693"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674477"
 ---
 # <a name="fixed-asset-transaction-options"></a>固定資産トランザクションのオプション
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
+このトピックでは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
 
 買掛金勘定、売掛金勘定、調達、および一般会計との統合のために、固定資産を設定できます。 また、これらの項目を内部で使用する場合は、在庫管理の品目を固定資産に転送できます。
 

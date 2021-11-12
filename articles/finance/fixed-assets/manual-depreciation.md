@@ -1,7 +1,7 @@
 ---
 title: 手動減価償却
 description: この記事は、手動減価償却方法の減価償却の概要を示します。
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 444506bdbf33cb1bd05ae7b55f2059e0eb1ab5b136e8fb1adb6f9e5f53b7067c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5b62bbdd5d745bc9d0745cc6fa6d6e8034a61e3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743028"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674830"
 ---
 # <a name="manual-depreciation"></a>手動減価償却
 
@@ -30,11 +30,11 @@ ms.locfileid: "6743028"
 
 固定資産減価償却プロファイルを設定し、**減価償却プロファイル** ページの **メソッド** フィールドで **マニュアル** を選択すると、この減価償却プロファイルに割り当てられる固定資産の減価償却は、暦年内の期間ごとに入力した比率によって決定されることになります。 比率を設定した期間は、**減価償却プロファイル** ページの **一般** クイック タブにある **期間の頻度** フィールドで選択した値に従って転記されます。 選択できる値は次のとおりです。
 
--   年 1 回
--   毎月
--   四半期に 1 回
--   半期に 1 回
--   毎日
+- 年 1 回
+- 毎月
+- 四半期に 1 回
+- 半期に 1 回
+- 毎日
 
 期間の頻度を選択したら、**手動のスケジュール** をクリックし、転記期間ごとに比率を設定します。 手動のスケジュールと転記期間は、この記事の後半にある例が示すように、減価償却額を一緒に定義します。 手動減価償却は、常に取得価格の比率として計算されます。 手動減価償却については、減価償却期間に入力した割合は合計すると 100 パーセントになる必要はありません。 手動減価償却とは、特別な目的 (たとえば、税金など) のための非期間原価焼却などの、特別な減価償却プロファイルを **帳簿** ページで定義するためにしばしば使用される柔軟な減価償却方法です。
 

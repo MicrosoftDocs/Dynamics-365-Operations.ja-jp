@@ -4,23 +4,23 @@ description: このトピックでは、カスタム ハードウェアとロー
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f29cc70cfa14bc05e1023bed5ba653d2e03e9039a4213989d30610a59addeea6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ebbdaab9d6f040497d3158db2712e102b6e9aa8
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738283"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678984"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>LBD を使用してカスタム ハードウェアにエッジのスケール ユニットを配置する (プレビュー)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 エッジ スケール ユニットは、Supply Chain Management の分散ハイブリッド トポロジで重要な役割を果たします。 ハイブリッド トポロジでは、Supply Chain Management のクラウド ハブとクラウド内またはエッジ上の追加のスケール ユニットとの間でワークロードを配布できます。
 

@@ -2,7 +2,7 @@
 title: 税の計算の概要
 description: このトピックでは、税計算機能の全体的な範囲と機能について説明します。
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394589"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647060"
 ---
 # <a name="tax-calculation-overview"></a>税の計算の概要
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 税計算は、Global Tax Engine によって税の決定と計算プロセスを自動化および簡素化できる、超スケーラブルなマルチテナント サービスです。 税エンジンは完全にコンフィギュレーション可能です。 設定できる要素には、課税対象データ モデル、税コード、課税適用マトリックス、および税金計算式が含まれますが、これに限定されません。 税エンジンは  Microsoft Azureコア サービス プラットフォームで実行され、最新のテクノロジと指数関数的なスケーラビリティを提供します。
 
@@ -120,6 +118,10 @@ ms.locfileid: "7394589"
     - 移動オーダー - 出荷
     - 移動オーダー - 入庫
 
+次のトランザクションは、バージョン 10.0.23 でサポートされています: 
+
+- 自由書式の請求書
+
 ## <a name="supported-countriesregions"></a>サポートされる国/地域
 
 税計算は法人によって有効にできます。 
@@ -143,8 +145,30 @@ ms.locfileid: "7394589"
 - ポーランド
 - スウェーデン
 - スイス
-- 英国
+- イギリス
 - 米国
+
+法人の基本住所に対する次の国/地域は、バージョン 10.0.22 でサポートされています:
+
+- オーストラリア
+- バーレーン
+- カナダ
+- エジプト
+- 香港特別行政区
+- クウェート
+- ニュージーランド
+- オマーン
+- カタール
+- サウジアラビア語
+- 南アフリカ
+- アラブ首長国連邦
+
+法人の基本住所に対する次の国/地域は、バージョン 10.0.23 でサポートされています:
+
+- タイ
+- 日本
+- マレーシア
+- シンガポール
 
 ## <a name="related-resources"></a>関連するリソース
 

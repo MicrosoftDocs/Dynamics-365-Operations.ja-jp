@@ -6,19 +6,19 @@ ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d31c8fd300350d679db55ad93fa8753dc2102824fbc706e7118e0e12fb9c01b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ecf4a70d69d24ea75f5448339057e7017cb93af
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736781"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651536"
 ---
 # <a name="schema-formats-for-iot-hub-messages"></a>IoT ハブ メッセージのスキーマ形式
 
