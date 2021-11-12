@@ -14,12 +14,12 @@
               items:
                 - name: プラットフォーム更新プログラムの最新情報や変更事項に関するホームページ
                   href: get-started/whats-new-home-page.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.23
+                  href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.22 (2021 年 11 月)
                   href: get-started/whats-new-platform-updates-10-0-22.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.21 (2021 年 10 月)
                   href: get-started/whats-new-platform-updates-10-0-21.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.20 (2021 年 8 月)
-                  href: get-started/whats-new-platform-updates-10-0-20.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -32,42 +32,6 @@
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-        - name: ビジネス イベント
-          items:
-            - name: ビジネス イベントの概要
-              href: business-events/home-page.md
-            - name: アプリケーション ビジネス イベント
-              href: business-events/app-business-events.md
-            - name: ワークフロー ビジネス イベント
-              href: business-events/business-events-workflow.md
-            - name: バッチ ビジネス イベント
-              href: business-events/system-business-events.md
-            - name: ビジネス イベントとしての警告
-              href: business-events/alerts-business-events.md
-            - name: Microsoft Flow 内のビジネス イベント
-              href: business-events/business-events-flow.md
-            - name: ビジネス イベント開発者ドキュメント
-              href: business-events/business-events-dev-doc.md
-            - name: ビジネス イベントのトラブルシューティング
-              href: business-events/troubleshooting.md
-            - name: ビジネス イベントのユースケース
-              href: business-events/potential-use-cases.md
-            - name: チュートリアル
-              items:
-                - name: ビジネス イベントおよび Microsoft Flow
-                  href: business-events/how-to/how-to-flow.md
-                - name: ビジネス イベントおよび Azure Event Grid
-                  href: business-events/how-to/how-to-eventgrid.md
-                - name: ビジネス イベントおよび Azure Service Bus
-                  href: business-events/how-to/how-to-servicebus.md
-                - name: ビジネス イベントおよびワークフローの承認
-                  href: business-events/how-to/how-to-workflow.md
-                - name: ビジネス イベントおよび Microsoft Forms Pro
-                  href: business-events/how-to/FormsPro.md
-                - name: ビジネス イベントおよび Azure Event Hubs
-                  href: business-events/how-to/event-hub.md
-                - name: 財務期間終了時のビジネス イベント
-                  href: business-events/how-to/period-close.md
         - name: 継続的デリバリー
           items:
             - name: 継続的デリバリーのホーム ページ
@@ -592,7 +556,7 @@
               items:
                 - name: X++ 言語サポート
                   items:
-                    - name: X++ の Visual Studio 2017 の要件
+                    - name: Visual Studio で X++ を使用する要件
                       href: dev-tools/developer-tools-vs2017.md
                     - name: X++ コードのデバッグ
                       href: dev-tools/debug-xpp.md
@@ -606,6 +570,8 @@
                       href: dev-tools/author-best-practice-rules.md
                     - name: アプリケーション エクスプローラーのプロパティ
                       href: dev-ref/application-explorer-aot-properties.md
+                    - name: SysSetupConfigAttribute 属性
+                      href: dev-tools/syssetupconfigattribute.md
                 - name: X++ 言語リファレンス
                   items:
                     - name: X++ 言語リファレンスの概要
@@ -1038,6 +1004,10 @@
           items:
             - name: Finance and Operations と Microsoft Power Platform の統合
               href: power-platform/overview.md
+            - name: Power Platform 統合の有効化
+              href: power-platform/enable-power-platform-integration.md
+            - name: 認証と承認
+              href: power-platform/authentication-and-authorization.md
             - name: 二重書き込み
               items:
                 - name: 二重書き込みのホームページ
@@ -1084,6 +1054,8 @@
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: 二重書き込み設定後に法人を編集する
                       href: data-entities/dual-write/edit-legal-entity.md
+                    - name: メンテナンス時に二重書き込みを一時停止する
+                      href: data-entities/dual-write/pause-for-maintenance.md
                     - name: エラー管理と警告通知
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: アプリケーション ライフサイクル管理
@@ -1174,8 +1146,10 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Finance and Operations アプリのアップグレードの問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Finance and Operations アプリと Dataverse での二重書き込みの構成の確認
+                        - name: Finance and Operations アプリと Dataverse で二重書き込みの構成を確認する
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: テーブル マップ正常性確認のエラー コード
+                          href: data-entities/dual-write/table-map-health-check.md
                 - name: 二重書き込みに関してよく寄せられる質問
                   href: data-entities/dual-write/dual-write-faq.md
             - name: 仮想エンティティ
@@ -1186,12 +1160,52 @@
                   href: power-platform/entity-modeling.md
                 - name: アプリケーション ライフサイクル管理
                   href: power-platform/application-lifecycle-management.md
-                - name: Finance and Operations および Dataverse 管理リファレンス
+                - name: Dataverse 仮想エンティティの構成
                   href: power-platform/admin-reference.md
+                - name: Dataverse 仮想エンティティを有効化する
+                  href: power-platform/enable-virtual-entities.md
                 - name: Power Apps ポータルと Finance and Operations
                   href: power-platform/power-portal-reference.md
                 - name: Finance and Operations 仮想エンティティに関するよく寄せられる質問
                   href: power-platform/faq.md
+            - name: ビジネス イベント
+              items:
+                - name: ビジネス イベントの概要
+                  href: business-events/home-page.md
+                - name: アプリケーション ビジネス イベント
+                  href: business-events/app-business-events.md
+                - name: ワークフロー ビジネス イベント
+                  href: business-events/business-events-workflow.md
+                - name: バッチ ビジネス イベント
+                  href: business-events/system-business-events.md
+                - name: ビジネス イベントとしての警告
+                  href: business-events/alerts-business-events.md
+                - name: データ イベント
+                  href: business-events/data-events.md
+                - name: Power Automate のビジネス イベント
+                  href: business-events/business-events-flow.md
+                - name: ビジネス イベント開発者ドキュメント
+                  href: business-events/business-events-dev-doc.md
+                - name: ビジネス イベントのトラブルシューティング
+                  href: business-events/troubleshooting.md
+                - name: ビジネス イベントのユースケース
+                  href: business-events/potential-use-cases.md
+                - name: チュートリアル
+                  items:
+                    - name: ビジネス イベントおよび Power Automate
+                      href: business-events/how-to/how-to-flow.md
+                    - name: ビジネス イベントおよび Azure Event Grid
+                      href: business-events/how-to/how-to-eventgrid.md
+                    - name: ビジネス イベントおよび Azure Service Bus
+                      href: business-events/how-to/how-to-servicebus.md
+                    - name: ビジネス イベントおよびワークフローの承認
+                      href: business-events/how-to/how-to-workflow.md
+                    - name: ビジネス イベントおよび Microsoft Forms Pro
+                      href: business-events/how-to/FormsPro.md
+                    - name: ビジネス イベントおよび Azure Event Hubs
+                      href: business-events/how-to/event-hub.md
+                    - name: 財務期間終了時のビジネス イベント
+                      href: business-events/how-to/period-close.md
             - name: アドイン
               items:
                 - name: アドインの概要
@@ -1582,11 +1596,13 @@
                   href: sysadmin/batch-history-cleanup.md
                 - name: 実行中のバッチ ジョブのキャンセル
                   href: sysadmin/batch-abort.md
+                - name: バッチ OData API
+                  href: sysadmin/batch-odata-api.md
             - name: 最適化アドバイザー
               items:
                 - name: 最適化アドバイザーの概要
                   href: sysadmin/optimization-advisor-overview.md
-                - name: 最適化アドバイザーのルールの作成
+                - name: 最適化アドバイザーのルールを作成する
                   href: sysadmin/create-rules-optimization-advisor.md
             - name: 稼働停止をレポートする
               href: lifecycle-services/report-production-outage.md

@@ -74,12 +74,12 @@
                   items:
                     - name: Supply Chain Management の新機能や変更された機能に関するホーム ページ
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.23
+                      href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (2021 年 11 月)
                       href: get-started/whats-new-scm-10-0-22.md
                     - name: Supply Chain Management 10.0.21 (2021 年 10 月)
                       href: get-started/whats-new-scm-10-0-21.md
-                    - name: Supply Chain Management 10.0.20 (2021 年 8 月)
-                      href: get-started/whats-new-scm-10-0-20.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能のホーム ページ
@@ -553,7 +553,7 @@
               href: ../finance/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: 原価会計用語
               href: ../finance/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 会計カレンダー、会計年度、および会計年度期間
+            - name: 会計カレンダー、会計年度、および会計期間
               href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/dynamics365/supply-chain/toc.json
             - name: 財務分析コード
               href: ../finance/general-ledger/financial-dimensions.md?toc=/dynamics365/supply-chain/toc.json
@@ -1049,7 +1049,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: 連結
+                        - name: Concatenate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 形式
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/supply-chain/toc.json
@@ -1463,7 +1463,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                     - name: アプリケーション更新プログラム 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 生成されるドキュメントに対するカスタムの保存場所を指定する
+                - name: 生成したドキュメントに対してカスタム保存場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
@@ -1473,7 +1473,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
                 - name: USER INPUT PARAMETER タイプのデータ ソース値をソース コードから開始する
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
-                - name: コードを変更して、ユーザーが名前付き送信先を構成して使用できるようにする
+                - name: コードを変更して、ユーザーが名前付き送信先を構成して使用可能にする
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
         - name: 在庫管理
           items:
@@ -1659,6 +1659,8 @@
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: 購買の売買契約を使用したマスター プラン
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: 計画の最適化で使用する日時パラメーター
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: 安全マージン
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: 遅延許容範囲 (マイナス日数)
@@ -1885,6 +1887,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: グローバル アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 住所の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: アドレス帳に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: アドレス帳の構成
@@ -2427,18 +2431,6 @@
                       href: production-control/release-production-orders.md
                     - name: 製造オーダーを完了として報告する
                       href: production-control/report-production-orders-as-finished.md
-                    - name: 生産現場の実行インターフェースを設定して使用する
-                      items:
-                        - name: 生産現場の実行インターフェースを構成する
-                          href: production-control/production-floor-execution-configure.md
-                        - name: 生産現場の実行インターフェースをデザインする
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: 生産現場の実行インターフェイスを実行するデバイスを設定する
-                          href: production-control/production-floor-execution-setup.md
-                        - name: 生産現場の実行インターフェイスを作業者が使用する方法
-                          href: production-control/production-floor-execution-use.md
-                        - name: 生産現場の実行インターフェースのスタイルを作成する
-                          href: production-control/production-floor-execution-styles.md
                     - name: デバイスのジョブ カードのコンフィギュレーション
                       href: production-control/config-job-card-device.md
                     - name: ジョブ カード デバイスからの完了レポート
@@ -2645,6 +2637,18 @@
                       href: production-control/consumption.md
                     - name: 生産の転記
                       href: cost-management/production-posting.md
+            - name: 生産現場の実行インターフェースを設定して使用する
+              items:
+                - name: 生産現場の実行インターフェースを構成する
+                  href: production-control/production-floor-execution-configure.md
+                - name: 生産現場の実行インターフェースをデザインする
+                  href: production-control/production-floor-execution-tabs.md
+                - name: 生産現場の実行インターフェイスを実行するデバイスを設定する
+                  href: production-control/production-floor-execution-setup.md
+                - name: 生産現場の実行インターフェイスを作業者が使用する方法
+                  href: production-control/production-floor-execution-use.md
+                - name: 生産現場の実行インターフェースのスタイルを作成する
+                  href: production-control/production-floor-execution-styles.md
         - name: リベート管理
           items:
             - name: リベート管理モジュールの概要
@@ -3043,7 +3047,7 @@
                           href: service-management/cancel-service-orders.md
                         - name: サービス注文の手動作成
                           href: service-management/create-service-orders-manually.md
-                        - name: 未収の定期売買収益
+                        - name: 未収の定期売買売上
                           href: service-management/accrue-subscription-revenue.md
                         - name: サービス注文の削除
                           href: service-management/delete-service-orders.md
@@ -3391,6 +3395,10 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Warehouse Management モバイル アプリのステップのタイトルと手順をカスタマイズする
                       href: warehousing/mobile-app-titles-instructions.md
+                    - name: モバイル デバイスのステップで昇格済みフィールドを構成する
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: モバイル デバイスのメニュー項目でステップの迂回を構成する
+                      href: warehousing/warehouse-app-detours.md
                     - name: Warehouse Management モバイル アプリで受信するライセンス プレート
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
@@ -3409,6 +3417,8 @@
                       href: warehousing/pick-oldest-batch.md
                 - name: グローバル モバイル デバイス パラメーター
                   href: warehousing/mobile-device-parameters.md
+                - name: モバイル デバイスのユーザー アカウント
+                  href: warehousing/mobile-device-work-users.md
                 - name: モバイル デバイスのユーザー設定
                   href: warehousing/mobile-device-user-settings.md
                 - name: 倉庫アプリのイベント処理
@@ -3733,10 +3743,16 @@
                   href: troubleshooting/sales/system-administrator.md
             - name: 輸送管理
               items:
-                - name: 調整理由により、主勘定を貸方勘定としてしか追加できない
+                - name: 調整理由により貸方勘定として主勘定のみ追加できる
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: 倉庫管理
               items:
+                - name: Warehouse Mobile App
+                  items:
+                    - name: アプリの接続設定時に、証明書パスのトラスト アンカーが見つからない
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: WMS の更新や WMS への移行時に、証明書パスのトラスト アンカーが見つからない
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: 利用可能な在庫がある場合でも、バッチ番号の自動予約のプロンプトが表示される
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: 補充作業が完了していないため、ピッキング作業のブロック解除ができない
@@ -3747,8 +3763,6 @@
                   href: troubleshooting/warehousing/cant-move-license-plate.md
                 - name: ライセンス プレートで管理されている場所に在庫を移動できない
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: アプリの接続設定時に、証明書パスのトラスト アンカーが見つからない
-                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
                 - name: クラスタ プロファイルが見つからない
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
                 - name: 納品書の修正が処理されない
@@ -3815,12 +3829,10 @@
                   href: troubleshooting/warehousing/slotting-templates-inventory-batch-above.md
                 - name: バッチ-上の予約階層を使用して部分的な数量に対して積荷をリリースできない
                   href: troubleshooting/warehousing/specify-dimensions-above-location.md
-                - name: 製品受領書の更新を実行した後に、未確定の販売注文が確定される
+                - name: 製品受領書の更新を実行した後に、未確定の発注書が確定される
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
                 - name: 販売注文明細行の在庫を引当解除できない
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: WMS の更新や WMS への移行時に、証明書パスのトラスト アンカーが見つからない
-                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: 顧客が保留中であるため出荷を確認できない
                   href: troubleshooting/warehousing/customer-is-on-hold.md
                 - name: 積荷明細行の数量がゼロであるため出荷を確認できない
